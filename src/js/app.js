@@ -52,6 +52,8 @@ class CCLPronunciationTrainer {
 
     updateCategoryDisplay() {
         const categorySelect = document.getElementById('categorySelect');
+        const categoryDisplay = document.getElementById('categoryDisplay');
+        
         if (!categorySelect || !this.categoryCounts) return;
 
         const categoryLabels = {
@@ -79,6 +81,12 @@ class CCLPronunciationTrainer {
                 option.textContent = `${label} (${count} ${suffix})`;
             }
         });
+        
+        // Update the context bar display with current category name
+        if (categoryDisplay) {
+            const currentCategoryName = categoryLabels[this.currentCategory] || this.currentCategory;
+            categoryDisplay.textContent = currentCategoryName;
+        }
     }
 
     init() {
@@ -131,7 +139,7 @@ class CCLPronunciationTrainer {
             this.currentDifficulty = e.target.value;
             console.log(`Difficulty changed to: ${this.currentDifficulty}`);
             this.filterByDifficulty();
-            this.updateCategoryDisplay(); // Update counts in category selector
+            this.updateCategoryDisplay(); // Update counts in category selector and context bar
         });
 
         // Control buttons
@@ -213,19 +221,10 @@ class CCLPronunciationTrainer {
         }
         
         // Update category display in context bar
-        const categoryDisplay = document.getElementById('categoryDisplay');
-        if (categoryDisplay) {
-            const updateCategoryText = () => {
-                const categorySelect = document.getElementById('categorySelect');
-                const selectedText = categorySelect.options[categorySelect.selectedIndex].text;
-                // Extract just the category name (before the parentheses)
-                const categoryName = selectedText.split('(')[0].trim();
-                categoryDisplay.textContent = categoryName;
-            };
-            
-            document.getElementById('categorySelect').addEventListener('change', updateCategoryText);
-            updateCategoryText(); // Initial update
-        }
+        document.getElementById('categorySelect').addEventListener('change', () => {
+            this.updateCategoryDisplay();
+        });
+        this.updateCategoryDisplay(); // Initial update
 
         // Keyboard shortcuts
         document.addEventListener('keydown', (e) => {
@@ -244,6 +243,9 @@ class CCLPronunciationTrainer {
 
     loadCategory(category) {
         this.currentCategory = category;
+        
+        // Update the category display in real-time
+        this.updateCategoryDisplay();
         
         try {
             // Check if vocabularyData is available
@@ -601,12 +603,6 @@ class CCLPronunciationTrainer {
         const categorySelect = document.getElementById('categorySelect');
         if (categorySelect) {
             categorySelect.value = nextCategory;
-            
-            // Update category display in context bar
-            const categoryDisplay = document.getElementById('categoryDisplay');
-            if (categoryDisplay) {
-                categoryDisplay.textContent = nextCategoryName;
-            }
         }
         
         // Wait 2 seconds, then load next category

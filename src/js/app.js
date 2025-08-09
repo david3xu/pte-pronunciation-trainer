@@ -117,28 +117,46 @@ class CCLPronunciationTrainer {
             voiceSelect.removeChild(voiceSelect.lastChild);
         }
         
-        // Filter for English voices only
-        const englishVoices = voices.filter(v => v.lang.startsWith('en')).sort((a, b) => {
-            // Sort by language then name
-            if (a.lang !== b.lang) return a.lang.localeCompare(b.lang);
-            return a.name.localeCompare(b.name);
-        });
+        // Curated static voice presets - always available
+        const curatedVoices = [
+            // Male voices (2-3 options)
+            { name: 'Microsoft James - English (Australia)', fallbacks: ['Microsoft James', 'James'], flag: '🇦🇺', gender: '♂️' },
+            { name: 'Google UK English Male', fallbacks: ['Google UK English Male'], flag: '🇬🇧', gender: '♂️' },
+            { name: 'Alex (Enhanced)', fallbacks: ['Alex'], flag: '🇺🇸', gender: '♂️' },
+            
+            // Female voices (2-3 options)  
+            { name: 'Microsoft Catherine - English (Australia)', fallbacks: ['Microsoft Catherine', 'Catherine'], flag: '🇦🇺', gender: '♀️' },
+            { name: 'Google UK English Female', fallbacks: ['Google UK English Female'], flag: '🇬🇧', gender: '♀️' },
+            { name: 'Karen (Enhanced)', fallbacks: ['Karen'], flag: '🇦🇺', gender: '♀️' }
+        ];
         
-        englishVoices.forEach(voice => {
+        // Add curated voices to dropdown
+        curatedVoices.forEach(curatedVoice => {
+            // Try to find the actual voice
+            let actualVoice = null;
+            for (const name of [curatedVoice.name, ...curatedVoice.fallbacks]) {
+                actualVoice = voices.find(v => v.name === name || v.name.includes(name));
+                if (actualVoice) break;
+            }
+            
+            // Add option even if voice not found (will fallback to auto selection)
             const option = document.createElement('option');
-            option.value = voice.name;
+            option.value = curatedVoice.name;
+            option.textContent = `${curatedVoice.gender} ${curatedVoice.name.split(' - ')[0]} ${curatedVoice.flag}`;
             
-            // Format voice display name
-            let displayName = voice.name;
-            if (voice.lang === 'en-AU') displayName += ' 🇦🇺';
-            else if (voice.lang === 'en-GB') displayName += ' 🇬🇧'; 
-            else if (voice.lang === 'en-US') displayName += ' 🇺🇸';
+            // Mark as available or unavailable
+            if (actualVoice) {
+                option.style.fontWeight = 'normal';
+            } else {
+                option.style.fontWeight = 'lighter';
+                option.style.color = '#999';
+                option.textContent += ' (fallback)';
+            }
             
-            option.textContent = displayName;
             voiceSelect.appendChild(option);
         });
         
-        console.log(`Populated ${englishVoices.length} English voices in dropdown`);
+        console.log('Populated curated voice presets');
     }
 
     syncRepeatModeFromHTML() {
@@ -887,63 +905,73 @@ class CCLPronunciationTrainer {
     }
 
     selectBestVoiceMatch(voices, lang) {
-        // Check if user has selected a preferred voice
+        // Check if user has selected a preferred voice from curated list
         if (this.preferredVoice) {
-            const selectedVoice = voices.find(v => v.name === this.preferredVoice);
+            // Try exact match first
+            let selectedVoice = voices.find(v => v.name === this.preferredVoice);
+            
+            // If not found, try fallback names for the selected voice
+            if (!selectedVoice) {
+                const curatedVoice = this.getCuratedVoiceInfo(this.preferredVoice);
+                if (curatedVoice) {
+                    for (const fallbackName of curatedVoice.fallbacks) {
+                        selectedVoice = voices.find(v => v.name === fallbackName || v.name.includes(fallbackName));
+                        if (selectedVoice) break;
+                    }
+                }
+            }
+            
             if (selectedVoice) {
                 console.log(`Using user-selected voice: ${selectedVoice.name}`);
                 return selectedVoice;
             }
         }
         
-        // Based on analysis of user's voice sample, select the most similar TTS voice
-        const australianEnglishVoices = voices.filter(v => 
-            v.lang === 'en-AU' || v.lang === 'en-GB' || v.lang === 'en-US'
-        );
-        
-        // Voice preferences based on similarity to user sample:
+        // Auto mode: prefer Microsoft James (user's favorite) as default
         const voicePreferences = [
-            // Male Australian/British voices (closest to user's characteristics)
-            'Google UK English Male',
-            'Microsoft David - English (Australia)', 
             'Microsoft James - English (Australia)',
-            'Daniel (Enhanced)', // macOS Australian male
-            'Google Australian English Male',
-            
-            // Backup options - still good matches
-            'Alex (Enhanced)', // macOS US male with clear pronunciation
-            'Microsoft Mark - English (Australia)',
-            'Google US English Male',
-            
-            // Female alternatives if male voices unavailable
+            'Microsoft James',
+            'James',
+            'Google UK English Male',
+            'Alex (Enhanced)',
+            'Alex',
+            'Microsoft Catherine - English (Australia)', 
+            'Microsoft Catherine',
             'Google UK English Female',
-            'Microsoft Catherine - English (Australia)',
-            'Karen (Enhanced)', // macOS Australian female
+            'Karen (Enhanced)',
+            'Karen'
         ];
         
         // Try to find preferred voices in order
         for (const preferredName of voicePreferences) {
-            const voice = australianEnglishVoices.find(v => 
-                v.name.includes(preferredName) || v.name === preferredName
+            const voice = voices.find(v => 
+                v.name === preferredName || v.name.includes(preferredName)
             );
             if (voice) {
-                console.log(`Selected preferred voice: ${voice.name} (${voice.lang})`);
+                console.log(`Auto-selected voice: ${voice.name} (${voice.lang})`);
                 return voice;
             }
         }
         
-        // Fallback: any Australian English voice
-        const fallbackVoice = australianEnglishVoices.find(v => v.lang === 'en-AU') ||
-                             australianEnglishVoices.find(v => v.lang === 'en-GB') ||
-                             australianEnglishVoices[0];
-        
-        if (fallbackVoice) {
-            console.log(`Using fallback voice: ${fallbackVoice.name} (${fallbackVoice.lang})`);
-            return fallbackVoice;
-        }
-        
         // Last resort: any English voice
-        return voices.find(v => v.lang.startsWith('en'));
+        const fallbackVoice = voices.find(v => v.lang.startsWith('en'));
+        if (fallbackVoice) {
+            console.log(`Using fallback voice: ${fallbackVoice.name}`);
+        }
+        return fallbackVoice;
+    }
+
+    getCuratedVoiceInfo(voiceName) {
+        const curatedVoices = [
+            { name: 'Microsoft James - English (Australia)', fallbacks: ['Microsoft James', 'James'] },
+            { name: 'Google UK English Male', fallbacks: ['Google UK English Male'] },
+            { name: 'Alex (Enhanced)', fallbacks: ['Alex'] },
+            { name: 'Microsoft Catherine - English (Australia)', fallbacks: ['Microsoft Catherine', 'Catherine'] },
+            { name: 'Google UK English Female', fallbacks: ['Google UK English Female'] },
+            { name: 'Karen (Enhanced)', fallbacks: ['Karen'] }
+        ];
+        
+        return curatedVoices.find(v => v.name === voiceName);
     }
 
     showTTSFallback(text) {

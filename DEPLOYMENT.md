@@ -52,9 +52,10 @@ npm run build                 # Create optimized production build
 - 🔊 **Australian English pronunciation** (en-AU TTS)
 - 🎓 **Difficulty-based learning** (Easy/Normal/Hard)
 - ⚡ **2x repeat mode** (fixed - no more 4x bug!)
-- 📱 **Mobile responsive** design
-- ⏮️ **Previous/Next navigation** buttons
-- 🎨 **Clean, professional interface**
+- 📱 **Mobile responsive** design with improved button layout
+- ⏮️ **Previous/Next navigation** buttons with smart grouping
+- 🎨 **Enhanced UI** - Better typography, spacing, and visual hierarchy
+- ⚡ **2 seconds default pause** between words for faster learning
 
 ### Troubleshooting
 

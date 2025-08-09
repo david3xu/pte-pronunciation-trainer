@@ -85,6 +85,7 @@ class CCLPronunciationTrainer {
         // Update the context bar display with current category name
         if (categoryDisplay) {
             const currentCategoryName = categoryLabels[this.currentCategory] || this.currentCategory;
+            console.log(`Updating context bar display: ${this.currentCategory} → ${currentCategoryName}`);
             categoryDisplay.textContent = currentCategoryName;
         }
     }
@@ -242,10 +243,8 @@ class CCLPronunciationTrainer {
     }
 
     loadCategory(category) {
+        console.log(`Loading category: ${category}`);
         this.currentCategory = category;
-        
-        // Update the category display in real-time
-        this.updateCategoryDisplay();
         
         try {
             // Check if vocabularyData is available
@@ -607,12 +606,14 @@ class CCLPronunciationTrainer {
         
         // Wait 2 seconds, then load next category
         setTimeout(() => {
+            console.log(`Advancing to next topic: ${nextCategory}`);
             this.loadCategory(nextCategory);
             
             // Continue playing if we were in auto-play mode
             if (this.isPlaying) {
                 // Small delay to ensure category is loaded
                 setTimeout(() => {
+                    console.log(`Continuing auto-play in ${nextCategory}`);
                     this.continueAutoPlay();
                 }, 500);
             }

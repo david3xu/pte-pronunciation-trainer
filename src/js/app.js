@@ -709,38 +709,26 @@ class CCLPronunciationTrainer {
         // Ensure we have vocabulary loaded
         const hasVocabulary = this.currentWords && this.currentWords.length > 0;
 
+        // Always show all three buttons for consistent layout
+        if (nextBtn) {
+            nextBtn.style.display = 'inline-block';
+            nextBtn.disabled = !hasVocabulary;
+            nextBtn.style.opacity = hasVocabulary ? '1' : '0.5';
+        }
+        if (prevBtn) {
+            prevBtn.style.display = 'inline-block';
+            prevBtn.disabled = !hasVocabulary;
+            prevBtn.style.opacity = hasVocabulary ? '1' : '0.5';
+        }
+
         if (this.isPlaying && hasVocabulary) {
             if (startBtn) startBtn.style.display = 'none';
             if (pauseBtn) pauseBtn.style.display = 'inline-block';
-            if (nextBtn) {
-                nextBtn.style.display = 'inline-block';
-                nextBtn.disabled = false;
-                nextBtn.style.opacity = '1';
-            }
-            if (prevBtn) {
-                prevBtn.style.display = 'inline-block';
-                prevBtn.disabled = false;
-                prevBtn.style.opacity = '1';
-            }
         } else {
             if (startBtn) startBtn.style.display = 'inline-block';
             if (pauseBtn) pauseBtn.style.display = 'none';
-            if (nextBtn) {
-                nextBtn.style.display = hasVocabulary ? 'inline-block' : 'none';
-                if (hasVocabulary) {
-                    nextBtn.disabled = false;
-                    nextBtn.style.opacity = '1';
-                }
-            }
-            if (prevBtn) {
-                prevBtn.style.display = hasVocabulary ? 'inline-block' : 'none';
-                if (hasVocabulary) {
-                    prevBtn.disabled = false;
-                    prevBtn.style.opacity = '1';
-                }
-            }
             
-            // Disable start button if no vocabulary
+            // Update start button state
             if (startBtn) {
                 startBtn.disabled = !hasVocabulary;
                 startBtn.style.opacity = hasVocabulary ? '1' : '0.5';
@@ -748,10 +736,16 @@ class CCLPronunciationTrainer {
             }
         }
 
-        // Keep PREV button always enabled (it loops to last word when at first word)
-        if (prevBtn && hasVocabulary) {
-            prevBtn.disabled = false;
-            prevBtn.style.opacity = '1';
+        // Override: Keep navigation buttons enabled when vocabulary is loaded
+        if (hasVocabulary) {
+            if (prevBtn) {
+                prevBtn.disabled = false;
+                prevBtn.style.opacity = '1';
+            }
+            if (nextBtn) {
+                nextBtn.disabled = false;
+                nextBtn.style.opacity = '1';
+            }
         }
     }
 

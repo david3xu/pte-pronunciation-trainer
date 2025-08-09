@@ -13,6 +13,7 @@ class CCLPronunciationTrainer {
         this.currentDifficulty = 'all';
         this.allWords = []; // Store unfiltered words
         this.categoryCounts = {}; // Store counts per category per difficulty
+        this.preferredVoice = null; // User's selected voice preference
         
         this.init();
     }
@@ -103,6 +104,41 @@ class CCLPronunciationTrainer {
         this.loadCategory(this.currentCategory);
         this.updateUI();
         console.log('CCL Pronunciation Trainer initialized');
+    }
+
+    populateVoiceOptions() {
+        const voiceSelect = document.getElementById('voiceSelect');
+        if (!voiceSelect) return;
+
+        const voices = speechSynthesis.getVoices();
+        
+        // Clear existing options except the first "Auto" option
+        while (voiceSelect.children.length > 1) {
+            voiceSelect.removeChild(voiceSelect.lastChild);
+        }
+        
+        // Filter for English voices only
+        const englishVoices = voices.filter(v => v.lang.startsWith('en')).sort((a, b) => {
+            // Sort by language then name
+            if (a.lang !== b.lang) return a.lang.localeCompare(b.lang);
+            return a.name.localeCompare(b.name);
+        });
+        
+        englishVoices.forEach(voice => {
+            const option = document.createElement('option');
+            option.value = voice.name;
+            
+            // Format voice display name
+            let displayName = voice.name;
+            if (voice.lang === 'en-AU') displayName += ' 🇦🇺';
+            else if (voice.lang === 'en-GB') displayName += ' 🇬🇧'; 
+            else if (voice.lang === 'en-US') displayName += ' 🇺🇸';
+            
+            option.textContent = displayName;
+            voiceSelect.appendChild(option);
+        });
+        
+        console.log(`Populated ${englishVoices.length} English voices in dropdown`);
     }
 
     syncRepeatModeFromHTML() {
@@ -203,6 +239,12 @@ class CCLPronunciationTrainer {
                     this.updateStatus('Playing...');
                 }
             }
+        });
+
+        // Voice selection
+        document.getElementById('voiceSelect').addEventListener('change', (e) => {
+            this.preferredVoice = e.target.value === 'auto' ? null : e.target.value;
+            console.log(`Voice preference changed to: ${this.preferredVoice || 'auto'}`);
         });
 
         // Settings panel toggle
@@ -423,11 +465,12 @@ class CCLPronunciationTrainer {
             utterance.volume = 1.0;
             utterance.pitch = 1.0;
             
-            // Try to find appropriate voice
+            // Try to find the best voice match for user's practice
             const voices = speechSynthesis.getVoices();
-            const voice = voices.find(v => v.lang.startsWith(lang.split('-')[0]));
+            const voice = this.selectBestVoiceMatch(voices, lang);
             if (voice) {
                 utterance.voice = voice;
+                console.log(`Using voice: ${voice.name} (${voice.lang}) - closest match to user voice`);
             }
 
             utterance.onend = () => resolve();
@@ -843,6 +886,66 @@ class CCLPronunciationTrainer {
         this.updateStatus(`Error: ${message}`);
     }
 
+    selectBestVoiceMatch(voices, lang) {
+        // Check if user has selected a preferred voice
+        if (this.preferredVoice) {
+            const selectedVoice = voices.find(v => v.name === this.preferredVoice);
+            if (selectedVoice) {
+                console.log(`Using user-selected voice: ${selectedVoice.name}`);
+                return selectedVoice;
+            }
+        }
+        
+        // Based on analysis of user's voice sample, select the most similar TTS voice
+        const australianEnglishVoices = voices.filter(v => 
+            v.lang === 'en-AU' || v.lang === 'en-GB' || v.lang === 'en-US'
+        );
+        
+        // Voice preferences based on similarity to user sample:
+        const voicePreferences = [
+            // Male Australian/British voices (closest to user's characteristics)
+            'Google UK English Male',
+            'Microsoft David - English (Australia)', 
+            'Microsoft James - English (Australia)',
+            'Daniel (Enhanced)', // macOS Australian male
+            'Google Australian English Male',
+            
+            // Backup options - still good matches
+            'Alex (Enhanced)', // macOS US male with clear pronunciation
+            'Microsoft Mark - English (Australia)',
+            'Google US English Male',
+            
+            // Female alternatives if male voices unavailable
+            'Google UK English Female',
+            'Microsoft Catherine - English (Australia)',
+            'Karen (Enhanced)', // macOS Australian female
+        ];
+        
+        // Try to find preferred voices in order
+        for (const preferredName of voicePreferences) {
+            const voice = australianEnglishVoices.find(v => 
+                v.name.includes(preferredName) || v.name === preferredName
+            );
+            if (voice) {
+                console.log(`Selected preferred voice: ${voice.name} (${voice.lang})`);
+                return voice;
+            }
+        }
+        
+        // Fallback: any Australian English voice
+        const fallbackVoice = australianEnglishVoices.find(v => v.lang === 'en-AU') ||
+                             australianEnglishVoices.find(v => v.lang === 'en-GB') ||
+                             australianEnglishVoices[0];
+        
+        if (fallbackVoice) {
+            console.log(`Using fallback voice: ${fallbackVoice.name} (${fallbackVoice.lang})`);
+            return fallbackVoice;
+        }
+        
+        // Last resort: any English voice
+        return voices.find(v => v.lang.startsWith('en'));
+    }
+
     showTTSFallback(text) {
         this.updateStatus(`🔊 Please read aloud: "${text}"`);
         setTimeout(() => {
@@ -936,4 +1039,5 @@ function initApp() {
     window.cclApp = new CCLPronunciationTrainer();
     window.cclApp.calculateCategoryCounts();
     window.cclApp.updateCategoryDisplay();
+    window.cclApp.populateVoiceOptions();
 }

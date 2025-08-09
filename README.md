@@ -95,12 +95,15 @@ http://localhost:3000
 ```
 ccl-pronunciation-trainer/
 ├── src/                    # Source code
-│   ├── js/                # JavaScript modules
-│   ├── css/               # Stylesheets
-│   └── components/        # UI components
-├── data/                  # Vocabulary data
+│   ├── js/                # Refactored modular JavaScript
+│   │   ├── core/          # App coordinator & data management
+│   │   ├── audio/         # TTS & voice functionality  
+│   │   ├── ui/            # Interface & settings
+│   │   └── utils/         # EventBus & storage utilities
+│   └── css/               # Modular stylesheets
+├── data/                  # Vocabulary data (1,618 terms)
 │   └── vocabulary/        # Markdown source files
-├── scripts/               # Build scripts
+├── scripts/               # Build & validation scripts
 ├── docs/                  # Documentation
 └── dist/                  # Production build
 ```

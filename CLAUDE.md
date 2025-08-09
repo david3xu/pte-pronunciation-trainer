@@ -19,12 +19,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `package.json` - Complete build system with all scripts
 - Server running on `http://localhost:3000` ✅
 
-### Source Code (All Implemented)
-- `src/js/app.js` - Main application class (CCLPronunciationTrainer)
-- `src/js/pronunciation.js` - PronunciationEngine with Web Speech API
-- `src/js/vocabulary.js` - VocabularyManager with search/navigation
-- `src/js/storage.js` - StorageManager with progress persistence
-- `src/components/` - PlayerComponent, ProgressComponent, SettingsComponent
+### Source Code (Refactored Modular Architecture)
+- `src/js/core/App.js` - Main application coordinator (< 200 lines)
+- `src/js/core/VocabularyManager.js` - Word loading, filtering, navigation logic
+- `src/js/core/ProgressTracker.js` - Learning progress and statistics tracking
+- `src/js/audio/TTSEngine.js` - Text-to-speech synthesis functionality
+- `src/js/audio/VoiceSelector.js` - Voice selection and curated voice management
+- `src/js/audio/AudioControls.js` - Play/pause/repeat functionality and timing
+- `src/js/ui/UIController.js` - DOM manipulation and event handling
+- `src/js/ui/SettingsPanel.js` - Settings management and persistence
+- `src/js/utils/EventBus.js` - Inter-module communication system
+- `src/js/utils/Storage.js` - LocalStorage utilities and data persistence
 - `src/css/` - Modular CSS (style.css, components.css, responsive.css)
 
 ### Data Management

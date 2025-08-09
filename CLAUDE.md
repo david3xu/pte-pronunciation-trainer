@@ -217,17 +217,20 @@ window.addEventListener('term:pronounced', (e) => updateProgress(e.detail));
 - Australian English (en-AU) pronunciation with TTS optimization
 - Difficulty-based learning system (🟢 Easy 55%, 🟡 Normal 31%, 🔴 Hard 14%)
 - Smart vocabulary classification using multiple complexity factors
-- Auto-play mode with configurable timing and individual word repetition
+- Auto-play mode with configurable timing (2-5 seconds, 2s default) and individual word repetition
+- **Fixed 2x repeat mode** - no more 4x repetition bug
 - Progress tracking with localStorage persistence  
+- **Previous/Next navigation** buttons with smart mobile grouping
 - Keyboard shortcuts (Space, arrows, R)
-- Mobile-responsive design (320px to 1400px+)
+- **Enhanced mobile-responsive design** with improved button layout
+- **Better typography and visual hierarchy** for word display
 - Settings import/export for device sync
 - Celebration effects for completed categories
 - Theme support (light/dark/auto)
 - Study statistics and streak tracking
 - Robust error handling with graceful TTS fallbacks
 
-**Status**: Ready for production deployment 🚀
+**Status**: Production deployment ready with enhanced UI 🚀
 
 ## Troubleshooting Common Issues
 

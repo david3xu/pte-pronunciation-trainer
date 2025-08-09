@@ -12,7 +12,8 @@
     "validate": "node scripts/validate.js",
     "clean": "rm -rf dist/ data/generated/",
     "start": "npm run convert && npm run dev",
-    "deploy": "npm run build && npm run validate"
+    "deploy": "npm run build && npm run validate",
+    "vercel-build": "npm run convert && npm run build"
   },
   "keywords": [
     "ccl",

@@ -81,13 +81,24 @@ async function build() {
         fs.writeFileSync(path.join(distDir, 'css', 'app.min.css'), minifiedCSS);
         console.log(`   ✅ Created app.min.css (${Math.round(minifiedCSS.length / 1024)}KB)\n`);
         
-        // Build JavaScript
+        // Build JavaScript - Refactored modular structure
         console.log('📦 Building JavaScript files...');
         const jsFiles = [
-            path.join(srcDir, 'js', 'storage.js'),
-            path.join(srcDir, 'js', 'vocabulary.js'),
-            path.join(srcDir, 'js', 'pronunciation.js'),
-            path.join(srcDir, 'js', 'app.js')
+            // Utility modules first
+            path.join(srcDir, 'js', 'utils', 'EventBus.js'),
+            path.join(srcDir, 'js', 'utils', 'Storage.js'),
+            // Core modules
+            path.join(srcDir, 'js', 'core', 'VocabularyManager.js'),
+            path.join(srcDir, 'js', 'core', 'ProgressTracker.js'),
+            // Audio modules
+            path.join(srcDir, 'js', 'audio', 'TTSEngine.js'),
+            path.join(srcDir, 'js', 'audio', 'VoiceSelector.js'),
+            path.join(srcDir, 'js', 'audio', 'AudioControls.js'),
+            // UI modules
+            path.join(srcDir, 'js', 'ui', 'UIController.js'),
+            path.join(srcDir, 'js', 'ui', 'SettingsPanel.js'),
+            // Main app coordinator last
+            path.join(srcDir, 'js', 'core', 'App.js')
         ];
         
         let combinedJS = '';
@@ -123,9 +134,9 @@ async function build() {
         const optimizedHTML = htmlContent
             .replace('src/css/style.css', 'css/app.min.css')
             .replace('data/generated/vocabulary-data.js', 'data/vocabulary-data.min.js')
-            .replace('src/js/app.js', 'js/app.min.js')
-            // Remove other individual JS includes since they're bundled
-            .replace(/<script src="src\/js\/(pronunciation|vocabulary|storage)\.js"><\/script>\s*/g, '')
+            // Remove all individual module script tags and replace with single bundled file
+            .replace(/<!-- Utility Modules -->[\s\S]*?<!-- Main App Coordinator -->\s*<script src="src\/js\/core\/App\.js\?v=\d+"><\/script>/g, 
+                     '<!-- Bundled JavaScript -->\n    <script src="js/app.min.js"></script>')
             // Add meta tags for production
             .replace('<head>', `<head>
     <meta name="description" content="CCL Pronunciation Trainer - NAATI CCL exam preparation with 1,618 vocabulary terms">

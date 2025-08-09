@@ -66,7 +66,9 @@ body {
 }
 
 .main-content {
-    padding: 20px;
+    padding: 25px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .progress-bar {
@@ -116,22 +118,32 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+    margin: 40px 0;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .english-word {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
     color: #2d3748;
     line-height: 1.3;
-    margin-bottom: 15px;
+    margin: 0;
+    word-wrap: break-word;
 }
 
 .chinese-word {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 500;
     color: #e53e3e;
     line-height: 1.3;
+    margin: 0;
+    word-wrap: break-word;
 }
 
 .word-meta {
@@ -187,23 +199,29 @@ body {
 
 .controls-main {
     display: flex;
-    gap: 8px;
+    gap: 12px;
     justify-content: center;
-    margin: 20px 0;
-    flex-wrap: nowrap;
+    align-items: center;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn-primary {
     background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
     color: white;
     border: none;
-    padding: 16px 32px;
+    padding: 14px 28px;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s ease;
-    min-width: 180px;
+    min-width: 140px;
+    flex: 1 1 auto;
+    max-width: 200px;
 }
 
 .btn-primary:hover {
@@ -215,12 +233,14 @@ body {
     background: #6c757d;
     color: white;
     border: none;
-    padding: 12px 24px;
+    padding: 12px 20px;
     border-radius: 20px;
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s ease;
+    min-width: 100px;
+    flex: 0 0 auto;
 }
 
 .btn-secondary:hover {
@@ -299,11 +319,36 @@ body {
     .controls-main {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
+        margin: 25px 0;
     }
     
     .btn-primary {
         width: 100%;
         max-width: 280px;
+        margin-bottom: 10px;
+    }
+    
+    .btn-secondary {
+        width: 45%;
+        min-width: 120px;
+    }
+    
+    /* Secondary buttons in a row on mobile */
+    .controls-main {
+        align-items: stretch;
+    }
+    
+    .btn-secondary-group {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .controls-main .btn-secondary {
+        flex: 1;
+        max-width: 140px;
     }
     
     .setting-row {

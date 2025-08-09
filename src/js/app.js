@@ -524,6 +524,7 @@ class CCLPronunciationTrainer {
         const pauseBtn = document.getElementById('pauseBtn');
         const nextBtn = document.getElementById('nextBtn');
         const prevBtn = document.getElementById('prevBtn');
+        const btnGroup = document.querySelector('.btn-secondary-group');
         
         // Ensure we have vocabulary loaded
         const hasVocabulary = this.currentWords && this.currentWords.length > 0;
@@ -531,13 +532,11 @@ class CCLPronunciationTrainer {
         if (this.isPlaying && hasVocabulary) {
             startBtn.style.display = 'none';
             pauseBtn.style.display = 'inline-block';
-            nextBtn.style.display = 'inline-block';
-            prevBtn.style.display = 'inline-block';
+            if (btnGroup) btnGroup.style.display = 'flex';
         } else {
             startBtn.style.display = 'inline-block';
             pauseBtn.style.display = 'none';
-            nextBtn.style.display = hasVocabulary ? 'inline-block' : 'none';
-            prevBtn.style.display = hasVocabulary ? 'inline-block' : 'none';
+            if (btnGroup) btnGroup.style.display = hasVocabulary ? 'flex' : 'none';
             
             // Disable start button if no vocabulary
             if (startBtn) {

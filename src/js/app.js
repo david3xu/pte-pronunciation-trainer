@@ -531,7 +531,15 @@ class CCLPronunciationTrainer {
 
         this.currentIndex--;
         if (this.currentIndex < 0) {
-            this.currentIndex = this.currentWords.length - 1;
+            // At beginning of current category - check if we can go to previous topic
+            const prevCategory = this.getPreviousCategory();
+            if (prevCategory) {
+                this.advanceToPreviousTopic(prevCategory);
+            } else {
+                // Only "all-categories" reaches here - loop within same category
+                this.currentIndex = this.currentWords.length - 1;
+            }
+            return;
         }
         this.updateProgress();
         this.displayWord(this.currentWords[this.currentIndex]);
@@ -564,6 +572,35 @@ class CCLPronunciationTrainer {
         }
         
         return categoryOrder[0]; // Fallback to first category
+    }
+
+    getPreviousCategory() {
+        // Skip if already on "all-categories" - it contains all words mixed already
+        if (this.currentCategory === 'all-categories') {
+            return null;
+        }
+
+        // Category progression order - INFINITE CIRCLE 🔄
+        const categoryOrder = [
+            'social-welfare',
+            'education', 
+            'legal-government',
+            'business-finance',
+            'medical-healthcare',
+            'travel-immigration'
+        ];
+
+        const currentIndex = categoryOrder.indexOf(this.currentCategory);
+        if (currentIndex >= 0) {
+            // If at first category, loop back to last category (INFINITE CIRCLE)
+            if (currentIndex === 0) {
+                return categoryOrder[categoryOrder.length - 1]; // Social Welfare → Travel & Immigration
+            } else {
+                return categoryOrder[currentIndex - 1]; // Normal backward progression
+            }
+        }
+        
+        return categoryOrder[categoryOrder.length - 1]; // Fallback to last category
     }
 
     getCategoryDisplayName(category) {
@@ -617,6 +654,47 @@ class CCLPronunciationTrainer {
                     this.continueAutoPlay();
                 }, 500);
             }
+        }, 2000);
+    }
+
+    advanceToPreviousTopic(prevCategory) {
+        const currentCategoryName = this.getCategoryDisplayName(this.currentCategory);
+        const prevCategoryName = this.getCategoryDisplayName(prevCategory);
+        
+        // Check if we're completing a full reverse circle
+        const isFullReverseCircle = this.currentCategory === 'social-welfare' && prevCategory === 'travel-immigration';
+        
+        if (isFullReverseCircle) {
+            // Show completion of full reverse circle
+            this.updateStatus(`🔄 Reverse circle complete! Going back to ${prevCategoryName}...`);
+            document.getElementById('englishWord').textContent = `🔄 Full Reverse Circle!`;
+            document.getElementById('chineseWord').textContent = `Going back: ${prevCategoryName}`;
+        } else {
+            // Show normal backward topic transition
+            this.updateStatus(`⬅️ Moving back from ${currentCategoryName} to ${prevCategoryName}...`);
+            document.getElementById('englishWord').textContent = `⬅️ Going Back`;
+            document.getElementById('chineseWord').textContent = `From ${currentCategoryName} to ${prevCategoryName}`;
+        }
+        
+        // Update category selector
+        const categorySelect = document.getElementById('categorySelect');
+        if (categorySelect) {
+            categorySelect.value = prevCategory;
+        }
+        
+        // Wait 2 seconds, then load previous category
+        setTimeout(() => {
+            console.log(`Going back to previous topic: ${prevCategory}`);
+            this.loadCategory(prevCategory);
+            
+            // Set to last word of the previous category
+            setTimeout(() => {
+                if (this.currentWords.length > 0) {
+                    this.currentIndex = this.currentWords.length - 1;
+                    this.updateProgress();
+                    this.displayWord(this.currentWords[this.currentIndex]);
+                }
+            }, 100);
         }, 2000);
     }
 

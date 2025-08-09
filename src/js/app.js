@@ -196,6 +196,37 @@ class CCLPronunciationTrainer {
             }
         });
 
+        // Settings panel toggle
+        const settingsBtn = document.getElementById('settingsBtn');
+        const settingsPanel = document.getElementById('settingsPanel');
+        if (settingsBtn && settingsPanel) {
+            settingsBtn.addEventListener('click', () => {
+                settingsPanel.classList.toggle('collapsed');
+            });
+            
+            // Close settings when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!settingsPanel.contains(e.target) && !settingsBtn.contains(e.target)) {
+                    settingsPanel.classList.add('collapsed');
+                }
+            });
+        }
+        
+        // Update category display in context bar
+        const categoryDisplay = document.getElementById('categoryDisplay');
+        if (categoryDisplay) {
+            const updateCategoryText = () => {
+                const categorySelect = document.getElementById('categorySelect');
+                const selectedText = categorySelect.options[categorySelect.selectedIndex].text;
+                // Extract just the category name (before the parentheses)
+                const categoryName = selectedText.split('(')[0].trim();
+                categoryDisplay.textContent = categoryName;
+            };
+            
+            document.getElementById('categorySelect').addEventListener('change', updateCategoryText);
+            updateCategoryText(); // Initial update
+        }
+
         // Keyboard shortcuts
         document.addEventListener('keydown', (e) => {
             if (e.code === 'Space' && !e.target.matches('input, textarea, select')) {
@@ -344,7 +375,31 @@ class CCLPronunciationTrainer {
         try {
             // Play English only (cleaned for better TTS)
             const cleanText = this.cleanTextForTTS(word.english);
-            await this.speak(cleanText, 'en-AU');
+            
+            // PROGRESSIVE PRONUNCIATION LEARNING:
+            // 1st time: SLOW & CLEAR (for learning correct pronunciation)
+            // 2nd time: NORMAL SPEED (for practicing fluency) 
+            // 3rd time: FAST SPEED (for advanced fluency - intensive mode only)
+            let pronunciationRate;
+            let statusMessage;
+            
+            if (this.currentRepeatCount === 0) {
+                // First pronunciation: SLOW & CLEAR
+                pronunciationRate = Math.max(0.6, this.speechRate * 0.7);
+                statusMessage = `Learning... (1/${this.targetRepeats}) - SLOW & CLEAR`;
+            } else if (this.currentRepeatCount === 1) {
+                // Second pronunciation: NORMAL SPEED
+                pronunciationRate = this.speechRate;
+                statusMessage = `Practicing... (2/${this.targetRepeats}) - NORMAL SPEED`;
+            } else {
+                // Third pronunciation (intensive mode): FAST SPEED
+                pronunciationRate = Math.min(1.5, this.speechRate * 1.3); // Max 1.5x for comprehension
+                statusMessage = `Mastering... (3/${this.targetRepeats}) - FAST & FLUENT`;
+            }
+            
+            this.updateStatus(statusMessage);
+            
+            await this.speak(cleanText, 'en-AU', pronunciationRate);
         } catch (error) {
             console.warn('Speech error:', error);
             // Don't show error to user - fallback is already handled in speak()
@@ -352,7 +407,7 @@ class CCLPronunciationTrainer {
         }
     }
 
-    speak(text, lang = 'en-AU') {
+    speak(text, lang = 'en-AU', customRate = null) {
         return new Promise((resolve, reject) => {
             if (!('speechSynthesis' in window)) {
                 this.showTTSFallback(text);
@@ -362,7 +417,8 @@ class CCLPronunciationTrainer {
 
             const utterance = new SpeechSynthesisUtterance(text);
             utterance.lang = lang;
-            utterance.rate = this.speechRate;
+            // Use custom rate if provided, otherwise use default speechRate
+            utterance.rate = customRate !== null ? customRate : this.speechRate;
             utterance.volume = 1.0;
             utterance.pitch = 1.0;
             
@@ -447,10 +503,18 @@ class CCLPronunciationTrainer {
         this.currentIndex++;
         if (this.currentIndex >= this.currentWords.length) {
             if (this.repeatMode === 'loop') {
+                // Loop current category infinitely
                 this.currentIndex = 0;
             } else {
-                this.pauseAutoPlay();
-                this.updateStatus('Completed');
+                // Always advance to next topic in INFINITE CIRCLE
+                const nextCategory = this.getNextCategory();
+                if (nextCategory) {
+                    this.advanceToNextTopic(nextCategory);
+                } else {
+                    // Only "all-categories" reaches here - loop within same category
+                    this.currentIndex = 0;
+                    this.showCategoryLoop();
+                }
                 return;
             }
         }
@@ -472,51 +536,172 @@ class CCLPronunciationTrainer {
         this.displayWord(this.currentWords[this.currentIndex]);
     }
 
+    getNextCategory() {
+        // Skip if already on "all-categories" - it contains all words mixed already
+        if (this.currentCategory === 'all-categories') {
+            return null;
+        }
+
+        // Category progression order - INFINITE CIRCLE 🔄
+        const categoryOrder = [
+            'social-welfare',
+            'education', 
+            'legal-government',
+            'business-finance',
+            'medical-healthcare',
+            'travel-immigration'
+        ];
+
+        const currentIndex = categoryOrder.indexOf(this.currentCategory);
+        if (currentIndex >= 0) {
+            // If at last category, loop back to first category (INFINITE CIRCLE)
+            if (currentIndex === categoryOrder.length - 1) {
+                return categoryOrder[0]; // Travel & Immigration → Social Welfare
+            } else {
+                return categoryOrder[currentIndex + 1]; // Normal progression
+            }
+        }
+        
+        return categoryOrder[0]; // Fallback to first category
+    }
+
+    getCategoryDisplayName(category) {
+        const categoryNames = {
+            'social-welfare': 'Social Welfare',
+            'education': 'Education',
+            'legal-government': 'Legal & Government', 
+            'business-finance': 'Business & Finance',
+            'medical-healthcare': 'Medical & Healthcare',
+            'travel-immigration': 'Travel & Immigration',
+            'all-categories': 'All Categories'
+        };
+        return categoryNames[category] || category;
+    }
+
+    advanceToNextTopic(nextCategory) {
+        const currentCategoryName = this.getCategoryDisplayName(this.currentCategory);
+        const nextCategoryName = this.getCategoryDisplayName(nextCategory);
+        
+        // Check if we're completing a full circle
+        const isFullCircle = this.currentCategory === 'travel-immigration' && nextCategory === 'social-welfare';
+        
+        if (isFullCircle) {
+            // Show completion of full circle
+            this.updateStatus(`🔄 Full circle complete! Starting over with ${nextCategoryName}...`);
+            document.getElementById('englishWord').textContent = `🔄 Full Circle Complete!`;
+            document.getElementById('chineseWord').textContent = `Starting over: ${nextCategoryName}`;
+        } else {
+            // Show normal topic transition
+            this.updateStatus(`🎉 ${currentCategoryName} completed! Moving to ${nextCategoryName}...`);
+            document.getElementById('englishWord').textContent = `🎉 ${currentCategoryName} Complete!`;
+            document.getElementById('chineseWord').textContent = `Next: ${nextCategoryName}`;
+        }
+        
+        // Update category selector
+        const categorySelect = document.getElementById('categorySelect');
+        if (categorySelect) {
+            categorySelect.value = nextCategory;
+            
+            // Update category display in context bar
+            const categoryDisplay = document.getElementById('categoryDisplay');
+            if (categoryDisplay) {
+                categoryDisplay.textContent = nextCategoryName;
+            }
+        }
+        
+        // Wait 2 seconds, then load next category
+        setTimeout(() => {
+            this.loadCategory(nextCategory);
+            
+            // Continue playing if we were in auto-play mode
+            if (this.isPlaying) {
+                // Small delay to ensure category is loaded
+                setTimeout(() => {
+                    this.continueAutoPlay();
+                }, 500);
+            }
+        }, 2000);
+    }
+
+    showCategoryLoop() {
+        // For "All Categories" mode - simple restart message
+        this.updateStatus(`🔄 All words completed! Starting over...`);
+        document.getElementById('englishWord').textContent = `🔄 Starting Over`;
+        document.getElementById('chineseWord').textContent = `All 1,618 words completed - repeating!`;
+        
+        // Brief pause, then continue
+        setTimeout(() => {
+            if (this.isPlaying) {
+                this.continueAutoPlay();
+            } else {
+                this.updateProgress();
+                this.displayWord(this.currentWords[this.currentIndex]);
+            }
+        }, 1500);
+    }
+
+    showFinalCompletion() {
+        const totalWordsLearned = Object.values(this.categoryCounts)
+            .reduce((total, counts) => total + (counts[this.currentDifficulty] || counts.all || 0), 0);
+            
+        this.updateStatus(`🏆 All topics completed! ${totalWordsLearned} words mastered!`);
+        
+        // Display final celebration
+        document.getElementById('englishWord').textContent = `🏆 Congratulations!`;
+        document.getElementById('chineseWord').textContent = `All CCL topics completed! ${totalWordsLearned} words mastered!`;
+        
+        const difficultyBadge = document.getElementById('difficultyBadge');
+        if (difficultyBadge) difficultyBadge.style.display = 'none';
+        
+        // Confetti celebration (optional enhancement)
+        console.log('🎊 FINAL COMPLETION CELEBRATION! 🎊');
+    }
+
     displayWord(word) {
         document.getElementById('englishWord').textContent = word.english;
         document.getElementById('chineseWord').textContent = word.chinese;
         
-        // Update difficulty badge
+        // Update difficulty badge (only show when needed)
         const difficultyBadge = document.getElementById('difficultyBadge');
-        const termCounter = document.getElementById('termCounter');
         
-        if (word.difficulty) {
+        if (difficultyBadge && word.difficulty) {
             const difficultyEmojis = {
                 'easy': '🟢',
                 'normal': '🟡', 
                 'hard': '🔴'
             };
             
-            difficultyBadge.textContent = `${difficultyEmojis[word.difficulty]} ${word.difficulty.toUpperCase()}`;
+            difficultyBadge.textContent = `${difficultyEmojis[word.difficulty]} ${word.difficulty.charAt(0).toUpperCase() + word.difficulty.slice(1)}`;
             difficultyBadge.className = `difficulty-badge ${word.difficulty}`;
+            difficultyBadge.style.display = 'inline-block';
+        } else if (difficultyBadge) {
+            difficultyBadge.style.display = 'none';
         }
-        
-        // Update term counter
-        termCounter.textContent = `Term ${this.currentIndex + 1}/${this.currentWords.length}`;
     }
 
     updateUI() {
         this.updateProgress();
         if (this.currentWords.length > 0) {
             this.displayWord(this.currentWords[this.currentIndex]);
-            document.querySelector('.word-meta').style.display = 'flex';
         } else {
             document.getElementById('englishWord').textContent = 'No vocabulary found for this difficulty level';
             document.getElementById('chineseWord').textContent = '此难度级别未找到词汇';
-            document.querySelector('.word-meta').style.display = 'none';
+            const difficultyBadge = document.getElementById('difficultyBadge');
+            if (difficultyBadge) difficultyBadge.style.display = 'none';
         }
     }
 
     updateProgress() {
-        const progress = this.currentWords.length > 0 
-            ? Math.round(((this.currentIndex + 1) / this.currentWords.length) * 100)
-            : 0;
-        
-        const progressFill = document.getElementById('progressFill');
         const progressText = document.getElementById('progressText');
         
-        progressFill.style.width = `${progress}%`;
-        progressText.textContent = `${this.currentIndex + 1} / ${this.currentWords.length} (${progress}%)`;
+        if (progressText) {
+            if (this.currentWords.length > 0) {
+                // Simple progress: "5 of 20" format for better UX
+                progressText.textContent = `${this.currentIndex + 1} of ${this.currentWords.length}`;
+            } else {
+                progressText.textContent = 'Ready to start';
+            }
+        }
     }
 
     updateButtons() {
@@ -524,40 +709,64 @@ class CCLPronunciationTrainer {
         const pauseBtn = document.getElementById('pauseBtn');
         const nextBtn = document.getElementById('nextBtn');
         const prevBtn = document.getElementById('prevBtn');
-        const btnGroup = document.querySelector('.btn-secondary-group');
         
         // Ensure we have vocabulary loaded
         const hasVocabulary = this.currentWords && this.currentWords.length > 0;
 
         if (this.isPlaying && hasVocabulary) {
-            startBtn.style.display = 'none';
-            pauseBtn.style.display = 'inline-block';
-            if (btnGroup) btnGroup.style.display = 'flex';
+            if (startBtn) startBtn.style.display = 'none';
+            if (pauseBtn) pauseBtn.style.display = 'inline-block';
+            if (nextBtn) {
+                nextBtn.style.display = 'inline-block';
+                nextBtn.disabled = false;
+                nextBtn.style.opacity = '1';
+            }
+            if (prevBtn) {
+                prevBtn.style.display = 'inline-block';
+                prevBtn.disabled = false;
+                prevBtn.style.opacity = '1';
+            }
         } else {
-            startBtn.style.display = 'inline-block';
-            pauseBtn.style.display = 'none';
-            if (btnGroup) btnGroup.style.display = hasVocabulary ? 'flex' : 'none';
+            if (startBtn) startBtn.style.display = 'inline-block';
+            if (pauseBtn) pauseBtn.style.display = 'none';
+            if (nextBtn) {
+                nextBtn.style.display = hasVocabulary ? 'inline-block' : 'none';
+                if (hasVocabulary) {
+                    nextBtn.disabled = false;
+                    nextBtn.style.opacity = '1';
+                }
+            }
+            if (prevBtn) {
+                prevBtn.style.display = hasVocabulary ? 'inline-block' : 'none';
+                if (hasVocabulary) {
+                    prevBtn.disabled = false;
+                    prevBtn.style.opacity = '1';
+                }
+            }
             
             // Disable start button if no vocabulary
             if (startBtn) {
                 startBtn.disabled = !hasVocabulary;
                 startBtn.style.opacity = hasVocabulary ? '1' : '0.5';
-                startBtn.textContent = hasVocabulary ? '▶️ START' : '❌ NO VOCABULARY';
+                startBtn.textContent = hasVocabulary ? '▶️ PLAY' : '❌ NO VOCABULARY';
             }
         }
 
-        // Disable previous button if at first word
+        // Keep PREV button always enabled (it loops to last word when at first word)
         if (prevBtn && hasVocabulary) {
-            prevBtn.disabled = (this.currentIndex === 0);
-            prevBtn.style.opacity = (this.currentIndex === 0) ? '0.5' : '1';
+            prevBtn.disabled = false;
+            prevBtn.style.opacity = '1';
         }
     }
 
     updateStatus(status) {
-        const statusDisplay = document.querySelector('.current-status');
+        // Update screen reader status
+        const statusDisplay = document.getElementById('statusDisplay');
         if (statusDisplay) {
             statusDisplay.textContent = status;
         }
+        // Also log to console for debugging
+        console.log('Status:', status);
     }
 
     showError(message) {

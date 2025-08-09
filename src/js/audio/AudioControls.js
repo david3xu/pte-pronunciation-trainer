@@ -184,8 +184,46 @@ class AudioControls {
     }
 
     handleAllCategoriesCompleted() {
+        // Check if this is "all-categories" mode which should loop
+        if (window.vocabularyManager.currentCategory === 'all-categories') {
+            this.showCategoryLoop();
+        } else {
+            this.showFinalCompletion();
+        }
+    }
+
+    showCategoryLoop() {
+        // For "All Categories" mode - simple restart message
+        window.progressTracker.updateStatus(`🔄 All words completed! Starting over...`);
+        document.getElementById('englishWord').textContent = `🔄 Starting Over`;
+        document.getElementById('chineseWord').textContent = `All 1,618 words completed - repeating!`;
+        
+        // Brief pause, then continue
+        setTimeout(() => {
+            if (this.isPlaying) {
+                this.currentIndex = 0;
+                this.playCurrentWord();
+            } else {
+                window.progressTracker.updateProgress(0, window.vocabularyManager.getTotalWords());
+                const firstWord = window.vocabularyManager.getCurrentWord(0);
+                if (firstWord) {
+                    window.eventBus.emit('word:display', { word: firstWord, index: 0 });
+                }
+            }
+        }, 1500);
+    }
+
+    showFinalCompletion() {
         const totalWords = window.vocabularyManager.getTotalWords();
         window.progressTracker.updateStatus(`🏆 All topics completed! ${totalWords} words mastered!`);
+        
+        // Display final celebration
+        document.getElementById('englishWord').textContent = `🏆 Congratulations!`;
+        document.getElementById('chineseWord').textContent = `All CCL topics completed! ${totalWords} words mastered!`;
+        
+        const difficultyBadge = document.getElementById('difficultyBadge');
+        if (difficultyBadge) difficultyBadge.style.display = 'none';
+        
         this.isPlaying = false;
         this.showPausedUI();
         
@@ -193,6 +231,9 @@ class AudioControls {
         window.eventBus.emit('audioControls:allCategoriesCompleted', {
             totalWords
         });
+        
+        // Confetti celebration (optional enhancement)
+        console.log('🎊 FINAL COMPLETION CELEBRATION! 🎊');
     }
 
     nextWord() {
@@ -274,11 +315,17 @@ class AudioControls {
     showPlayingUI() {
         document.getElementById('startBtn').style.display = 'none';
         document.getElementById('pauseBtn').style.display = 'inline-block';
+        if (window.uiController) {
+            window.uiController.updateButtons();
+        }
     }
 
     showPausedUI() {
         document.getElementById('startBtn').style.display = 'inline-block';
         document.getElementById('pauseBtn').style.display = 'none';
+        if (window.uiController) {
+            window.uiController.updateButtons();
+        }
     }
 
     setDelay(delay) {

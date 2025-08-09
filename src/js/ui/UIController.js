@@ -9,10 +9,12 @@ class UIController {
         // Listen for vocabulary events
         window.eventBus.on('vocabulary:categoryLoaded', (data) => {
             this.updateCategoryDisplay();
+            this.updateButtons();
         });
 
         window.eventBus.on('vocabulary:difficultyFiltered', (data) => {
             this.updateCategoryDisplay();
+            this.updateButtons();
         });
 
         // Listen for word display events
@@ -178,6 +180,9 @@ class UIController {
         
         // Set initial UI state
         window.audioControls.showPausedUI();
+        
+        // Update button states
+        this.updateButtons();
     }
 
     syncRepeatModeFromHTML() {
@@ -185,6 +190,55 @@ class UIController {
         if (repeatSelect) {
             window.audioControls.setRepeatMode(repeatSelect.value);
             console.log(`Repeat mode synced from HTML: ${repeatSelect.value}`);
+        }
+    }
+
+    updateButtons() {
+        const startBtn = document.getElementById('startBtn');
+        const pauseBtn = document.getElementById('pauseBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const prevBtn = document.getElementById('prevBtn');
+        
+        // Ensure we have vocabulary loaded
+        const hasVocabulary = window.vocabularyManager.getTotalWords() > 0;
+
+        // Always show all three buttons for consistent layout
+        if (nextBtn) {
+            nextBtn.style.display = 'inline-block';
+            nextBtn.disabled = !hasVocabulary;
+            nextBtn.style.opacity = hasVocabulary ? '1' : '0.5';
+        }
+        if (prevBtn) {
+            prevBtn.style.display = 'inline-block';
+            prevBtn.disabled = !hasVocabulary;
+            prevBtn.style.opacity = hasVocabulary ? '1' : '0.5';
+        }
+
+        if (window.audioControls.isPlaying && hasVocabulary) {
+            if (startBtn) startBtn.style.display = 'none';
+            if (pauseBtn) pauseBtn.style.display = 'inline-block';
+        } else {
+            if (startBtn) startBtn.style.display = 'inline-block';
+            if (pauseBtn) pauseBtn.style.display = 'none';
+            
+            // Update start button state
+            if (startBtn) {
+                startBtn.disabled = !hasVocabulary;
+                startBtn.style.opacity = hasVocabulary ? '1' : '0.5';
+                startBtn.textContent = hasVocabulary ? '▶️ PLAY' : '❌ NO VOCABULARY';
+            }
+        }
+
+        // Override: Keep navigation buttons enabled when vocabulary is loaded
+        if (hasVocabulary) {
+            if (prevBtn) {
+                prevBtn.disabled = false;
+                prevBtn.style.opacity = '1';
+            }
+            if (nextBtn) {
+                nextBtn.disabled = false;
+                nextBtn.style.opacity = '1';
+            }
         }
     }
 

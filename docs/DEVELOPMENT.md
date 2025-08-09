@@ -183,117 +183,155 @@ displayWord(word) {
 - **Abbreviation expansion**: "sth" → "something", "sb" → "somebody"
 - **Robust error handling**: Graceful fallbacks for TTS issues
 
-## Architecture Patterns
+## Refactored Modular Architecture
 
-### Module Pattern
+### Module Structure
 
-Each JavaScript module is implemented as a class with global export:
+The application follows a clean modular architecture with separated concerns:
 
-```javascript
-// pronunciation.js
-class PronunciationEngine {
-  constructor() {
-    this.isSupported = "speechSynthesis" in window;
-    this.settings = { rate: 1.0, pitch: 1.0, volume: 1.0 };
-  }
-
-  async speak(text, lang = "en-AU") {
-    /* Implementation */
-  }
-  getVoiceForLanguage(lang) {
-    /* Implementation */
-  }
-}
-
-// Export as global for browser use
-window.PronunciationEngine = PronunciationEngine;
+```
+src/js/
+├── 🏗️ core/           # Core application logic
+│   ├── App.js          # Main coordinator (< 200 lines)
+│   ├── VocabularyManager.js # Word management
+│   └── ProgressTracker.js   # Progress tracking
+├── 🔊 audio/           # Audio functionality
+│   ├── TTSEngine.js    # Text-to-speech synthesis
+│   ├── VoiceSelector.js # Voice selection
+│   └── AudioControls.js # Play/pause controls
+├── 🖥️ ui/             # User interface
+│   ├── UIController.js # DOM manipulation
+│   └── SettingsPanel.js # Settings management
+└── 🛠️ utils/          # Utilities
+    ├── EventBus.js     # Inter-module communication
+    └── Storage.js      # localStorage utilities
 ```
 
 ### Event-Driven Architecture
 
-Components communicate via custom events:
+Modules communicate via a centralized EventBus:
 
 ```javascript
-// Dispatch event
-window.dispatchEvent(
-  new CustomEvent("term:pronounced", {
-    detail: { term, timestamp },
-  })
-);
+// utils/EventBus.js - Central communication hub
+class EventBus {
+  on(event, callback) { /* Subscribe to events */ }
+  emit(event, data) { /* Emit events to subscribers */ }
+  off(event, callback) { /* Unsubscribe */ }
+}
 
-// Listen for event
-window.addEventListener("term:pronounced", (e) => {
-  updateProgress(e.detail);
-});
+// Example usage across modules
+window.eventBus.emit('vocabulary:categoryLoaded', { category, totalWords });
+window.eventBus.on('vocabulary:categoryLoaded', (data) => updateUI(data));
 ```
 
-### State Management
+### Module Pattern
 
-Centralized state with immutable updates:
+Each module is a focused class with single responsibility:
 
 ```javascript
-// State store
-const store = {
-  vocabulary: [],
-  currentIndex: 0,
-  settings: {},
-  progress: {},
-};
+// audio/TTSEngine.js - Speech synthesis only
+class TTSEngine {
+  async pronounceWord(word, repeatCount = 0) {
+    // Speech synthesis logic only
+    await this.speak(word.english, 'en-AU');
+    window.eventBus.emit('tts:speakingCompleted', { word });
+  }
+}
 
-// State update
-function updateState(updates) {
-  Object.assign(store, updates);
-  render();
+// core/VocabularyManager.js - Data management only  
+class VocabularyManager {
+  loadCategory(category) {
+    // Vocabulary loading logic only
+    this.currentWords = vocabularyData[category];
+    window.eventBus.emit('vocabulary:categoryLoaded', { category });
+  }
+}
+```
+
+### Coordinator Pattern
+
+App.js orchestrates modules without containing business logic:
+
+```javascript
+// core/App.js - Lightweight coordinator
+class CCLPronunciationTrainer {
+  initializeModules() {
+    // Initialize modules in correct order
+    window.vocabularyManager.calculateCategoryCounts();
+    window.uiController.bindEventListeners();
+    window.audioControls.setupKeyboardShortcuts();
+  }
+  
+  // Public API methods delegate to appropriate modules
+  play() { window.audioControls.startAutoPlay(); }
+  loadCategory(cat) { window.vocabularyManager.loadCategory(cat); }
 }
 ```
 
 ## Adding New Features
 
-### 1. Create Feature Module
+### 1. Choose Appropriate Module Directory
+
+```
+src/js/
+├── core/     # For data/logic features
+├── audio/    # For speech/sound features  
+├── ui/       # For interface features
+└── utils/    # For shared utilities
+```
+
+### 2. Create Focused Module
 
 ```javascript
-// src/js/features/newFeature.js
-class NewFeatureComponent {
-  constructor(container) {
-    this.container = container;
-    this.init();
+// src/js/ui/NewFeaturePanel.js
+class NewFeaturePanel {
+  constructor() {
+    this.isActive = false;
+    this.setupEventListeners();
   }
 
-  init() {
-    this.render();
-    this.bindEvents();
+  setupEventListeners() {
+    // Listen for relevant events
+    window.eventBus.on('feature:activated', (data) => {
+      this.handleActivation(data);
+    });
+  }
+
+  activate() {
+    this.isActive = true;
+    window.eventBus.emit('feature:activated', { timestamp: Date.now() });
   }
 }
 
-window.NewFeatureComponent = NewFeatureComponent;
+// Global instance
+window.newFeaturePanel = new NewFeaturePanel();
 ```
 
-### 2. Integrate in Main App
+### 3. Integrate via EventBus
 
 ```javascript
-// src/js/app.js - in CCLPronunciationTrainer class
-init() {
-  // Existing initialization
-  this.newFeature = new NewFeatureComponent(document.getElementById('feature-container'));
-}
+// No need to modify App.js directly - use events
+window.eventBus.on('app:initialized', () => {
+  if (window.newFeaturePanel) {
+    console.log('New feature panel initialized');
+  }
+});
 ```
 
-### 3. Add Styles
-
-```css
-/* src/css/components.css */
-.new-feature {
-  /* Feature styles */
-}
-```
-
-### 4. Update HTML
+### 4. Add Module to HTML
 
 ```html
-<!-- index.html -->
-<section class="new-feature" id="new-feature">
-  <!-- Feature markup -->
-</section>
+<!-- index.html - Add to module loading section -->
+<script src="src/js/ui/NewFeaturePanel.js?v=1"></script>
+```
+
+### 5. Update Styles
+
+```css
+/* src/css/style.css */
+.new-feature-panel {
+  /* Feature styles following BEM convention */
+}
 ```
 
 ## Testing

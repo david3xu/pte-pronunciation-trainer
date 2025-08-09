@@ -13,11 +13,21 @@ ccl-pronunciation-trainer/
 │
 ├── src/                     # Source code
 │   ├── js/                  # JavaScript modules
-│   │   ├── app.js          # Main application logic
-│   │   ├── pronunciation.js # Text-to-speech engine
-│   │   ├── vocabulary.js   # Vocabulary data management
-│   │   ├── ui.js           # User interface handlers
-│   │   └── storage.js      # LocalStorage management
+│   │   ├── core/           # Core application logic
+│   │   │   ├── App.js      # Main application coordinator
+│   │   │   ├── VocabularyManager.js # Vocabulary loading/filtering
+│   │   │   └── ProgressTracker.js   # Progress tracking/stats
+│   │   ├── audio/          # Audio/speech functionality
+│   │   │   ├── TTSEngine.js     # Text-to-speech engine
+│   │   │   ├── VoiceSelector.js # Voice selection/management
+│   │   │   └── AudioControls.js # Play/pause/repeat controls
+│   │   ├── ui/             # User interface management
+│   │   │   ├── UIController.js  # DOM updates/event handling
+│   │   │   ├── SettingsPanel.js # Settings management
+│   │   │   └── ProgressDisplay.js # Progress/status display
+│   │   └── utils/          # Utility modules
+│   │       ├── Storage.js  # LocalStorage utilities
+│   │       └── EventBus.js # Inter-module communication
 │   │
 │   ├── css/                # Stylesheets
 │   │   ├── style.css       # Main application styles
@@ -77,11 +87,26 @@ ccl-pronunciation-trainer/
 ### Core Application Files
 
 - **index.html**: Single-page application shell, loads all resources
-- **src/js/app.js**: Application initialization and main logic
-- **src/js/pronunciation.js**: Web Speech API integration for TTS
-- **src/js/vocabulary.js**: Vocabulary data loading and management
-- **src/js/ui.js**: DOM manipulation and event handlers
-- **src/js/storage.js**: Progress persistence using localStorage
+- **src/js/core/App.js**: Main application coordinator (< 200 lines)
+- **src/js/core/VocabularyManager.js**: Word loading, filtering, navigation logic
+- **src/js/core/ProgressTracker.js**: Learning progress and statistics tracking
+
+### Audio/Speech Modules
+
+- **src/js/audio/TTSEngine.js**: Web Speech API integration and speech synthesis
+- **src/js/audio/VoiceSelector.js**: Voice selection and curated voice management
+- **src/js/audio/AudioControls.js**: Play/pause/repeat functionality and timing
+
+### User Interface Modules
+
+- **src/js/ui/UIController.js**: DOM manipulation and event handling
+- **src/js/ui/SettingsPanel.js**: Settings management and persistence
+- **src/js/ui/ProgressDisplay.js**: Progress updates and status messages
+
+### Utility Modules
+
+- **src/js/utils/Storage.js**: LocalStorage utilities and data persistence  
+- **src/js/utils/EventBus.js**: Inter-module communication system
 
 ### Data Management
 
@@ -104,15 +129,21 @@ ccl-pronunciation-trainer/
 ## Module Dependencies
 
 ```
-app.js
-  ├── pronunciation.js (TTS engine)
-  ├── vocabulary.js (data management)
-  ├── ui.js (interface updates)
-  ├── storage.js (persistence)
-  └── components/
-      ├── player.js
-      ├── progress.js
-      └── settings.js
+core/App.js (Main Coordinator)
+  ├── core/
+  │   ├── VocabularyManager.js (word management)
+  │   └── ProgressTracker.js (learning stats)
+  ├── audio/
+  │   ├── TTSEngine.js (speech synthesis)
+  │   ├── VoiceSelector.js (voice management)
+  │   └── AudioControls.js (play/pause logic)
+  ├── ui/
+  │   ├── UIController.js (DOM updates)
+  │   ├── SettingsPanel.js (settings UI)
+  │   └── ProgressDisplay.js (status updates)
+  └── utils/
+      ├── Storage.js (localStorage)
+      └── EventBus.js (module communication)
 ```
 
 ## Data Flow
@@ -120,9 +151,30 @@ app.js
 1. **Source Data**: Markdown vocabulary files in `data/vocabulary/`
 2. **Conversion**: `scripts/convert-vocab.js` processes markdown
 3. **Generated Data**: JavaScript objects in `data/generated/`
-4. **Runtime**: `vocabulary.js` loads and manages data
-5. **Presentation**: `ui.js` displays terms, `pronunciation.js` speaks them
-6. **Persistence**: `storage.js` saves progress to localStorage
+4. **Runtime**: `VocabularyManager.js` loads and manages data
+5. **Presentation**: `UIController.js` displays terms, `TTSEngine.js` speaks them
+6. **Persistence**: `Storage.js` saves progress to localStorage
+7. **Communication**: `EventBus.js` coordinates between modules
+
+## Refactored Architecture Benefits
+
+### Code Organization
+- **Separation of Concerns**: Each module has a single responsibility
+- **Maintainable Size**: Files under 300 lines each (vs 1000+ line monolith)
+- **Clear Dependencies**: Explicit module relationships via EventBus
+- **Easy Testing**: Individual modules can be tested in isolation
+
+### Module Responsibilities
+- **Core**: Application logic and data management
+- **Audio**: All speech/pronunciation functionality
+- **UI**: Interface updates and user interaction
+- **Utils**: Shared utilities and cross-module communication
+
+### Development Benefits
+- **Feature Isolation**: Add voice features without touching vocabulary logic
+- **Bug Isolation**: Issues contained within specific modules
+- **Team Development**: Multiple developers can work on different modules
+- **Code Reuse**: Utilities can be shared across modules
 
 ## Difficulty Classification System
 

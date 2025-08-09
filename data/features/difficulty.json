@@ -1,0 +1,37 @@
+{
+  "comment": "Manual difficulty classifications for CCL vocabulary terms",
+  "classification_rules": {
+    "easy": "Single words, common terms, basic concepts",
+    "normal": "2-3 word phrases, intermediate government/medical terms", 
+    "hard": "Complex multi-word terms, technical specialties, legal procedures"
+  },
+  "manual_overrides": {
+    "Form marriage": "normal",
+    "Social security appeals tribunal": "hard",
+    "Department of human services": "normal",
+    "A means test=an assets and income test": "hard",
+    "Authorised review officer": "hard",
+    "ADHD(Attention Deficit Hyperactivity Disorder)": "hard",
+    "ENT(ear, nose and throat) specialist/surgeon": "hard",
+    "GP(general practitioner)": "normal",
+    "Acupuncturist": "hard",
+    "Anaesthetist": "hard",
+    "Cardiologist": "hard",
+    "Dermatologist": "hard",
+    "Neurologist": "hard",
+    "Gynaecologist": "hard",
+    "Obstetrician": "hard",
+    "Ophthalmologist": "hard",
+    "Paediatrician": "hard",
+    "Gerontologist": "hard",
+    "Pathologist": "hard",
+    "Chiropractor": "hard"
+  },
+  "default_rules": {
+    "single_word_common": "easy",
+    "two_word_basic": "normal", 
+    "three_plus_words": "normal",
+    "technical_medical": "hard",
+    "legal_complex": "hard"
+  }
+}

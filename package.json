@@ -1,0 +1,88 @@
+{
+  "name": "ccl-pronunciation-trainer",
+  "version": "1.0.0",
+  "description": "A web-based pronunciation training application for NAATI CCL exam preparation",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 3000",
+    "convert": "node scripts/build-vocabulary.js",
+    "build": "node scripts/build.js",
+    "test": "jest",
+    "lint": "eslint src/js/**/*.js && stylelint src/css/**/*.css",
+    "validate": "node scripts/validate.js",
+    "clean": "rm -rf dist/ data/generated/",
+    "start": "npm run convert && npm run dev",
+    "deploy": "npm run build && npm run validate"
+  },
+  "keywords": [
+    "ccl",
+    "naati",
+    "pronunciation",
+    "vocabulary",
+    "language-learning",
+    "text-to-speech",
+    "chinese",
+    "english",
+    "exam-preparation"
+  ],
+  "author": "CCL Pronunciation Trainer Team",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.45.0",
+    "stylelint": "^15.10.0",
+    "jest": "^29.6.0",
+    "uglify-js": "^3.17.0",
+    "cssnano": "^6.0.1",
+    "html-minifier": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/ccl-pronunciation-trainer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/ccl-pronunciation-trainer/issues"
+  },
+  "homepage": "https://github.com/your-username/ccl-pronunciation-trainer#readme",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": [
+    "Chrome >= 90",
+    "Firefox >= 88",
+    "Safari >= 14",
+    "Edge >= 90"
+  ],
+  "jest": {
+    "testEnvironment": "jsdom",
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": ["eslint:recommended"],
+    "parserOptions": {
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-unused-vars": "error",
+      "no-console": "warn",
+      "semi": ["error", "always"]
+    }
+  },
+  "stylelint": {
+    "extends": ["stylelint-config-standard"],
+    "rules": {
+      "indentation": 2,
+      "string-quotes": "single"
+    }
+  }
+}

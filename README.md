@@ -1,24 +1,42 @@
 # CCL Pronunciation Trainer
 
-A web-based pronunciation training application for NAATI CCL (Credentialed Community Language) exam preparation, featuring 1,618 essential English-Chinese vocabulary terms with automatic text-to-speech pronunciation.
+A comprehensive web-based pronunciation training application for NAATI CCL (Credentialed Community Language) exam preparation. Choose between two powerful vocabulary sets:
+
+- **📚 Specialized Terms (1,618)** - Domain-specific CCL vocabulary  
+- **💬 Conversation-Based (1,600)** - Practical terms from real CCL exam dialogues with 100% sentence examples
 
 ## Features ✅ Fully Implemented
 
-- 🎯 **1,618 CCL Vocabulary Terms** across 6 domains (validated)
-- 🔊 **Automatic Pronunciation** with Australian English (en-AU) TTS
-- 🎓 **Difficulty-Based Learning** - Easy (55%), Normal (31%), Hard (14%) classification
-- 📱 **Mobile-Responsive Design** (320px to 1400px+) with improved button layout
-- 💾 **Progress Tracking** with localStorage persistence and study streaks
-- ⚡ **Auto-Play Mode** with configurable timing (2-5 second intervals, 2s default)
-- ⌨️ **Keyboard Shortcuts** - Space (play/pause), arrows (navigate), R (repeat)
-- ⏮️ **Previous/Next Navigation** - Manual control with smart button grouping
-- 🎨 **Enhanced Interface** - Better typography, spacing, and visual hierarchy
-- 🎉 **Celebration Effects** for completed categories with confetti animations
-- 🌙 **Theme Support** - Light, dark, and auto themes
-- 📊 **Study Statistics** - Session time, terms studied, accuracy tracking
-- 🔄 **Settings Import/Export** for backup and device sync
-- 📝 **Data Validation** with comprehensive error reporting
-- 🚀 **Production Ready** with minified build pipeline (~192KB total)
+### 🎯 Dual Vocabulary System (NEW!)
+- **📚 Specialized Terms (1,618)** - Domain-specific CCL vocabulary across 6 domains
+- **💬 Conversation-Based (1,600)** - Practical terms extracted from real CCL conversations
+- **🔄 Instant Switching** - Toggle between vocabulary sets in settings
+- **📊 Smart Statistics** - Real-time coverage and example availability stats
+
+### 🔊 Advanced Pronunciation Training
+- **Australian English (en-AU) TTS** - Optimized for CCL exam context  
+- **🎓 Difficulty-Based Learning** - Easy (55%), Normal (31%), Hard (14%) classification
+- **⚡ Auto-Play Mode** with configurable timing (2-5 second intervals, 2s default)
+- **🔄 Repeat Modes** - 1x, 2x (Slow+Normal), 3x (Slow+Normal+Fast), Loop
+
+### 📱 Modern User Experience
+- **Mobile-Responsive Design** (320px to 1400px+) with optimized touch interface
+- **⌨️ Keyboard Shortcuts** - Space (play/pause), arrows (navigate), R (repeat), Esc (settings)
+- **🎨 Enhanced Interface** - Better typography, spacing, and visual hierarchy
+- **🌙 Theme Support** - Light, dark, and auto themes with system preference detection
+
+### 💾 Smart Progress & Data Management  
+- **Progress Tracking** with localStorage persistence and study streaks
+- **📊 Study Statistics** - Session time, terms studied, accuracy tracking
+- **🔄 Settings Import/Export** for backup and device sync
+- **🎉 Celebration Effects** for completed categories with confetti animations
+- **📝 Comprehensive Data Validation** with detailed error reporting
+
+### 🚀 Production Features
+- **Custom Build Pipeline** with minification (~175KB total)
+- **Advanced Data Processing** - Multiple vocabulary extraction algorithms
+- **Comprehensive Analytics** - Usage statistics and vocabulary analysis tools
+- **Demo Mode** - Interactive vocabulary selector demonstration
 
 ## Quick Start ✅ Tested
 
@@ -27,8 +45,14 @@ A web-based pronunciation training application for NAATI CCL (Credentialed Commu
 git clone https://github.com/your-username/ccl-pronunciation-trainer.git
 cd ccl-pronunciation-trainer
 
-# Generate vocabulary data (1,618 terms)
+# Install dependencies
+npm install
+
+# Generate vocabulary data (1,618 specialized terms)
 npm run convert
+
+# Extract conversation-based vocabulary (1,600 practical terms)
+npm run extract-vocab-from-conversations
 
 # Start development server (Python HTTP server)
 npm run dev
@@ -38,6 +62,30 @@ http://localhost:3000
 ```
 
 **Ready to use!** All features are implemented and tested.
+
+## Available Commands
+
+### Core Development
+```bash
+npm start                     # Convert + Dev (full setup)
+npm run dev                   # Start development server
+npm run convert               # Generate specialized vocabulary
+npm run validate              # Validate all data integrity
+```
+
+### Advanced Data Processing
+```bash
+npm run extract-conversations        # Extract conversation dialogues (2,018 sentences)
+npm run extract-vocab-from-conversations  # Generate conversation-based vocabulary
+npm run analyze-vocabulary          # Advanced vocabulary-conversation analysis
+```
+
+### Production & Build
+```bash
+npm run build                # Production build with minification
+npm run deploy               # Full deployment pipeline
+npm run clean                # Clean generated files
+```
 
 ## Vocabulary Domains
 

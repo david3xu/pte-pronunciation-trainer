@@ -19,6 +19,7 @@
             <div class="word-display">
                 <div class="english-word" id="englishWord">Press PLAY to start learning</div>
                 <div class="chinese-word" id="chineseWord">按播放开始学习</div>
+                <div class="example-sentence" id="exampleSentence" style="display: none;">Example sentence will appear here</div>
                 <div class="simple-progress" id="progressText">Ready to start</div>
                 <div class="difficulty-badge" id="difficultyBadge" style="display: none;">🟢 Easy</div>
             </div>
@@ -41,6 +42,14 @@
         <!-- Collapsible settings panel -->
         <div class="settings-panel collapsed" id="settingsPanel">
             <div class="settings-grid">
+                <div class="setting-item">
+                    <label for="vocabularySourceSelect">Vocabulary Set:</label>
+                    <select id="vocabularySourceSelect">
+                        <option value="specialized" selected>📚 Specialized Terms (1,618)</option>
+                        <option value="conversation">💬 Conversation-Based (1,600)</option>
+                    </select>
+                    <small class="setting-description">Choose your vocabulary source</small>
+                </div>
                 <div class="setting-item">
                     <label for="categorySelect">Category:</label>
                     <select id="categorySelect">
@@ -101,22 +110,23 @@
     <div class="sr-only" id="statusDisplay" aria-live="polite"></div>
 
     <script src="data/generated/vocabulary-data.js?v=2"></script>
+    <script src="data/generated/conversation-vocabulary-data.js?v=1"></script>
     
     <!-- Utility Modules -->
     <script src="src/js/utils/EventBus.js?v=1"></script>
     <script src="src/js/utils/Storage.js?v=1"></script>
     
     <!-- Core Logic Modules -->
-    <script src="src/js/core/VocabularyManager.js?v=1"></script>
+    <script src="src/js/core/VocabularyManager.js?v=2"></script>
     <script src="src/js/core/ProgressTracker.js?v=1"></script>
     
     <!-- Audio Modules -->
-    <script src="src/js/audio/TTSEngine.js?v=1"></script>
+    <script src="src/js/audio/TTSEngine.js?v=2"></script>
     <script src="src/js/audio/VoiceSelector.js?v=1"></script>
     <script src="src/js/audio/AudioControls.js?v=2"></script>
     
     <!-- UI Modules -->
-    <script src="src/js/ui/UIController.js?v=2"></script>
+    <script src="src/js/ui/UIController.js?v=3"></script>
     <script src="src/js/ui/SettingsPanel.js?v=1"></script>
     
     <!-- Main App Coordinator -->

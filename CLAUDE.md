@@ -4,257 +4,208 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-✅ **FULLY IMPLEMENTED** - This is a complete CCL (Community Credentialed Language) pronunciation training web application for the NAATI CCL (Credentialed Community Language) exam preparation. The repository contains:
+✅ **FULLY IMPLEMENTED** - Advanced CCL (NAATI Credentialed Community Language) pronunciation training web application with:
 
-- **1,618 vocabulary terms** across 6 domains in structured markdown files
-- **Complete web application** with Text-to-Speech pronunciation training
-- **Modular architecture** with separate JS modules and UI components
-- **Production build system** with validation and deployment pipeline
-- **Comprehensive documentation** and testing
+### 🎯 Dual Vocabulary System
+- **📚 Specialized Terms (1,618)** - Domain-specific CCL vocabulary across 6 domains  
+- **💬 Conversation-Based (1,600)** - Practical terms from 2,018 real CCL exam sentences
+- **🔄 Instant Switching** - Users can toggle between vocabulary sets in settings
+- **📊 Advanced Analytics** - Multi-strategy matching and comprehensive reporting
 
-## Repository Structure ✅ Complete Implementation
+### 🏗️ Architecture & Technology
+- **Text-to-Speech pronunciation** with Australian English (en-AU) focus
+- **Modular vanilla JavaScript** architecture - no bundlers, direct browser loading
+- **Advanced data processing** - Separate data-processing module with multiple algorithms
+- **Production-ready** with build system, validation, and deployment pipeline
 
-### Core Application
-- `index.html` - Main application entry point (optimized for production)
-- `package.json` - Complete build system with all scripts
-- Server running on `http://localhost:3000` ✅
+## Critical Commands
 
-### Source Code (Refactored Modular Architecture)
-- `src/js/core/App.js` - Main application coordinator (< 200 lines)
-- `src/js/core/VocabularyManager.js` - Word loading, filtering, navigation logic
-- `src/js/core/ProgressTracker.js` - Learning progress and statistics tracking
-- `src/js/audio/TTSEngine.js` - Text-to-speech synthesis functionality
-- `src/js/audio/VoiceSelector.js` - Voice selection and curated voice management
-- `src/js/audio/AudioControls.js` - Play/pause/repeat functionality and timing
-- `src/js/ui/UIController.js` - DOM manipulation and event handling
-- `src/js/ui/SettingsPanel.js` - Settings management and persistence
-- `src/js/utils/EventBus.js` - Inter-module communication system
-- `src/js/utils/Storage.js` - LocalStorage utilities and data persistence
-- `src/css/` - Modular CSS (style.css, components.css, responsive.css)
+```bash
+# ALWAYS run these first when working with vocabulary:
+npm run convert                        # Generate specialized vocabulary (1,618 terms)
+npm run extract-conversations          # Extract conversation dialogues (2,018 sentences)
+npm run extract-vocab-from-conversations  # Generate conversation vocabulary (1,600 terms)
 
-### Data Management
-- `data/vocabulary/` - 6 vocabulary markdown files (1,618 terms total)
-- `data/generated/vocabulary-data.js` - Auto-generated JavaScript data with difficulty classification ✅
-- `scripts/convert-vocab.js` - Basic markdown to JS converter ✅
-- `scripts/build-vocabulary.js` - Feature-based vocabulary builder with manual classifications ✅
-- `scripts/build.js` - Production build system ✅  
-- `scripts/validate.js` - Data validation with reporting ✅
+# Development:
+npm run dev                # Start server at http://localhost:3000
+npm start                  # Alias: convert + dev
 
-### Documentation (Complete)
-- `README.md` - User documentation with complete feature list
-- `docs/PROJECT_STRUCTURE.md` - Architecture overview with implementation status
-- `docs/DEVELOPMENT.md` - Development guide with tested commands
-- `docs/API.md` - Complete API documentation for all classes
-- `docs/DEPLOYMENT.md` - Production deployment guide
+# Advanced Analysis:
+npm run analyze-vocabulary    # Advanced vocabulary-conversation analysis with multiple strategies
 
-## File Format Standards
+# Build & Deploy:
+npm run build      # Production build with minification
+npm run validate   # Validate all vocabulary data
+npm run deploy     # Full pipeline: build + validate
 
-All vocabulary files follow this structure:
+# Direct Script Access:
+node scripts/validate.js                    # Data validation only
+node data-processing/analyzers/vocabulary-conversation-analyzer.js  # Advanced analysis
+node data-processing/extractors/conversation-vocabulary-extractor.js # Extract vocabulary
+python3 -m http.server 3000 --directory .   # Start server manually
+```
+
+## High-Level Architecture
+
+### Data Pipeline (Critical Path)
+```
+data/vocabulary/*.md → scripts/build-vocabulary.js → data/generated/vocabulary-data.js → Browser
+```
+**⚠️ The app CANNOT function without generated JS. Always run `npm run convert` after markdown changes.**
+
+### Module Architecture Pattern
+```javascript
+// Vanilla JS with global exports for browser compatibility
+class VocabularyManager { ... }
+window.vocabularyManager = new VocabularyManager();
+
+// Event-driven communication between modules
+window.eventBus.emit('vocabulary:loaded', data);
+window.eventBus.on('vocabulary:loaded', handler);
+```
+
+### Key Architectural Decisions
+1. **No bundler** - Direct browser loading via `<script>` tags in index.html
+2. **Coordinator pattern** - App.js orchestrates but doesn't contain business logic
+3. **Event-driven** - Modules communicate via EventBus, not direct references
+4. **Feature-based difficulty** - JSON rules in data/features/ classify vocabulary complexity
+5. **Australian English focus** - en-AU TTS voices prioritized for NAATI CCL context
+
+## Project Structure
+
+### Main Application
+```
+src/js/
+├── core/           # Business logic
+│   ├── App.js             # Main coordinator (< 250 lines)
+│   ├── VocabularyManager.js  # Dual vocabulary system (specialized + conversation)
+│   └── ProgressTracker.js    # Learning progress and statistics
+├── audio/          # TTS functionality  
+│   ├── TTSEngine.js       # Speech synthesis with en-AU focus
+│   ├── VoiceSelector.js   # Voice management
+│   └── AudioControls.js   # Play/pause/repeat controls
+├── ui/             # User interface
+│   ├── UIController.js    # DOM manipulation and events
+│   └── SettingsPanel.js   # Settings with vocabulary selector
+└── utils/          # Shared utilities
+    ├── EventBus.js        # Inter-module communication
+    └── Storage.js         # LocalStorage wrapper
+```
+
+### Clean Directory Structure ✅
+**Essential Build Tools** (`scripts/`) - 4 core files only:
+- `build-vocabulary.js` - Generate specialized vocabulary data
+- `extract-conversations.js` - Process conversation files
+- `validate.js` - Data integrity validation  
+- `build.js` - Production build system
+  
+**Current Analysis Reports** (`reports/`) - 7 active files:
+- `advanced-vocabulary-analysis.*` - Latest multi-strategy analysis
+- `vocabulary-extraction-comparison.md` - Approach comparison
+- `conversation-extraction-report.*` - Processing statistics
+- `validation-report.json` - Data validation results
+
+**Outdated Files Removed** ❌:
+- Legacy analysis scripts moved to `data-processing/`
+- Duplicate/outdated reports cleaned up
+- Demo file moved to `docs/` directory
+
+### Advanced Data Processing
+```
+data-processing/
+├── analyzers/      # Analysis tools
+│   └── vocabulary-conversation-analyzer.js  # Multi-strategy matching analysis
+├── extractors/     # Data extraction
+│   └── conversation-vocabulary-extractor.js # Generate vocabulary from conversations
+├── matchers/       # Matching algorithms
+│   └── vocabulary-matcher.js               # Advanced matching with confidence scoring
+├── config/         # Configuration
+│   └── matching-config.js                  # Matching strategies and thresholds
+└── utils/          # Processing utilities
+    └── text-utils.js                       # Text normalization and analysis
+```
+
+## Vocabulary Data Structure
+
+### Source Format (Markdown)
 ```markdown
 # CCL-[Domain] 词汇表 (CCL-[Domain] Vocabulary)
-
 ## Terms in this set ([number])
 
-| English                                 | Chinese                    |
-| --------------------------------------- | -------------------------- |
-| Term in English                         | 中文翻译                   |
+| English                    | Chinese          |
+| -------------------------- | ---------------- |
+| Social welfare payment     | 社会福利金        |
 ```
 
-Key formatting requirements:
-- Markdown tables with two columns: English | Chinese
-- Column separators using pipe characters (|)
-- Header row with language labels
-- Separator row with dashes (---)
-- Terms grouped logically but not explicitly numbered in the table
-- File header includes total term count
-
-## Content Organization by Domain
-
-### Social Welfare (201 terms)
-- Social Welfare Basics and Eligibility (1-50)
-- Family Support and Crisis Services (51-100)
-- Immigration and Legal Matters (101-150)
-- Employment and Training (151-201)
-
-### Education (308 terms)
-- Student Behavior and Discipline (1-50)
-- Special Needs and Interventions (51-100)
-- Academic Assessment and School Types (101-150)
-- Educational Programs and Qualifications (151-200)
-- School Staff and Facilities (201-250)
-- Curriculum and Teaching Methods (251-308)
-
-### Legal & Government (300 terms)
-- Government Structure and Elections (1-50)
-- Court System and Legal Procedures (51-100)
-- Legal Professionals and Court Proceedings (101-150)
-- Criminal Law and Offenses (151-200)
-- Traffic and Regulatory Offenses (201-250)
-- Sentencing and Penalties (251-300)
-
-### Medical & Healthcare (346 terms)
-- Medical professionals and specialists
-- Medical procedures and tests
-- Healthcare systems and services
-- Medical conditions and treatments
-
-### Business & Finance (200 terms)
-- Banking and financial services
-- Business operations and management
-- Investment and trading
-- Consumer rights and warranties
-
-### Travel & Immigration (263 terms)
-- Air travel and airports
-- Immigration procedures
-- Customs and quarantine
-- Travel documentation
-
-## Working with Vocabulary Files
-
-When modifying vocabulary files:
-1. Preserve the exact table format with proper markdown syntax
-2. Maintain English in left column, Chinese (Simplified) in right column
-3. Keep terms contextually grouped within logical sections
-4. Update the total term count in the file header if adding/removing terms
-5. Ensure Chinese translations are in Simplified Chinese characters
-6. Maintain consistency in terminology across related files
-
-## Australian Context
-
-These vocabularies specifically target Australian institutional contexts:
-- Australian government services and departments
-- Medicare and Australian healthcare system
-- Australian legal and court systems
-- Australian education framework
-- Australian immigration procedures
-
-The terms are selected for their relevance to community interpreting scenarios commonly encountered in NAATI CCL examinations.
-
-## Implementation Status Summary
-
-✅ **PROJECT COMPLETE** - All planned features implemented and tested:
-
-- **Data Pipeline**: 1,618 terms converted and validated
-- **Web Application**: Fully functional with TTS pronunciation  
-- **UI Components**: All modular components implemented
-- **Build System**: Production build with minification (~175KB total)
-- **Documentation**: Complete API docs and guides
-- **Testing**: Server running, validation passing, all features verified
-
-## Available Commands (All Tested)
-
-### Core Development Workflow
-```bash
-npm run convert    # Generate vocabulary data from markdown (required before dev)
-npm run dev        # Start Python HTTP server on port 3000
-npm run validate   # Comprehensive data validation with reporting
-npm start          # Alias: npm run convert && npm run dev
-```
-
-### Production & Build
-```bash
-npm run build      # Production build with minification (~175KB total)
-npm run deploy     # Full deployment pipeline (build + validate)
-npm run clean      # Clean dist/ and generated/ directories
-```
-
-### Quality Assurance
-```bash
-npm test           # Run Jest test suite (when configured)
-npm run lint       # ESLint + Stylelint validation
-```
-
-### Single Test Commands
-```bash
-# For testing specific functionality during development
-node scripts/validate.js                    # Run just data validation
-python3 -m http.server 3000 --directory .   # Start server manually  
-node scripts/build-vocabulary.js            # Rebuild vocabulary data only
-node scripts/build.js                       # Run production build only
-```
-
-**Note:** Always run `npm run convert` first when working with vocabulary data, as the app requires `data/generated/vocabulary-data.js` to function.
-
-## Code Architecture & Patterns
-
-### Module System
-- **Vanilla JavaScript** with ES6+ classes exported as globals for browser compatibility
-- Each module is a class: `CCLPronunciationTrainer`, `PronunciationEngine`, `VocabularyManager`, `StorageManager`
-- Global exports: `window.ClassName = ClassName` for cross-module communication
-
-### Event-Driven Communication
+### Generated Format (JavaScript)
 ```javascript
-// Standard pattern for component communication
-window.dispatchEvent(new CustomEvent('term:pronounced', { detail: { term, timestamp } }));
-window.addEventListener('term:pronounced', (e) => updateProgress(e.detail));
+window.vocabularyData = {
+  categories: {
+    "social-welfare": {
+      name: "Social Welfare",
+      words: [
+        { english: "Social welfare payment", chinese: "社会福利金", difficulty: "easy" }
+      ]
+    }
+  }
+}
 ```
 
-### State Management
-- Centralized state in main app class with immutable updates
-- LocalStorage persistence for user progress and settings
-- Custom events for state changes across components
+### Difficulty Classification
+- **🟢 Easy (55%)**: Single words, common terms
+- **🟡 Normal (31%)**: 2-3 word phrases, government terminology
+- **🔴 Hard (14%)**: Complex multi-word terms, technical specialties
 
-### Data Pipeline
-1. **Markdown Source** (`data/vocabulary/*.md`) → 2. **Convert Script** (`scripts/build-vocabulary.js`) → 3. **Generated JS** (`data/generated/vocabulary-data.js`) → 4. **App Consumption**
+## Common Issues & Solutions
 
-**Critical:** The app loads vocabulary from the generated JS file, not directly from markdown. Always run conversion after markdown changes.
+| Issue | Solution |
+|-------|----------|
+| "No vocabulary loaded" | Run `npm run convert` to generate data/generated/vocabulary-data.js |
+| Server won't start | Ensure Python 3 installed, or use `python3 -m http.server 3000` |
+| TTS not working | Use Chrome/Edge for best support, check browser audio permissions |
+| Build failures | Run `npm install`, ensure Node.js >= 16.0.0 |
+| File:// protocol errors | Must use HTTP server, not direct file opening |
 
-### Vocabulary Processing Details
-- **Feature-based classification**: Uses JSON rules in `data/features/` for difficulty assignment
-- **Manual overrides**: Specific terms can be manually classified in `data/features/difficulty.json`
-- **Validation**: Comprehensive data integrity checks ensure all 1,618 terms are properly formatted
-- **Build output**: Single JavaScript file with global `vocabularyData` object containing all terms
+## Key Features Implementation
 
-### Build & Development Workflow
-- **No bundler required** - Direct browser loading of modules via script tags in `index.html`
-- **Python HTTP Server** for development (avoids CORS issues with file:// protocol)
-- **Custom build script** (`scripts/build.js`) for production minification without external dependencies
-- **Validation pipeline** ensures data integrity across 1,618 vocabulary terms
+### 🎯 Dual Vocabulary System
+- **Settings Panel Integration**: Vocabulary selector in main settings UI
+- **Dynamic Category Updates**: Categories change automatically when switching vocabulary sources
+- **Real-time Statistics**: Shows coverage percentages and example availability
+- **Persistent Settings**: User choice saved and restored across sessions
 
-### CSS Architecture
-- **BEM methodology** for component naming (`.vocab-card`, `.vocab-card__title`, `.vocab-card--active`)
-- **CSS Custom Properties** for theming and responsive design
-- **Mobile-first** responsive design (320px to 1400px+)
+### 📊 Advanced Analytics
+- **Multi-strategy Matching**: Exact phrase, keyword overlap, partial match, semantic similarity
+- **Confidence Scoring**: Each match gets quality assessment (0.0-1.0)
+- **Comprehensive Reporting**: JSON, Markdown, and CSV outputs for analysis
+- **Performance Metrics**: Processing time and match quality statistics
 
-## Key Features Implemented
+### 🔧 Data Processing Pipeline
+```
+Specialized Path:    data/vocabulary/*.md → scripts/build-vocabulary.js → vocabulary-data.js
+Conversation Path:   data/conversation/*.md → scripts/extract-conversations.js → conversation-data.js
+                     → data-processing/extractors/conversation-vocabulary-extractor.js → conversation-vocabulary-data.js
+Analysis Pipeline:   Both vocabularies → data-processing/analyzers/vocabulary-conversation-analyzer.js → comprehensive reports
+```
 
-- Australian English (en-AU) pronunciation with TTS optimization
-- Difficulty-based learning system (🟢 Easy 55%, 🟡 Normal 31%, 🔴 Hard 14%)
-- Smart vocabulary classification using multiple complexity factors
-- Auto-play mode with configurable timing (2-5 seconds, 2s default) and individual word repetition
-- **Fixed 2x repeat mode** - no more 4x repetition bug
-- Progress tracking with localStorage persistence  
-- **Previous/Next navigation** buttons with smart mobile grouping
-- Keyboard shortcuts (Space, arrows, R)
-- **Enhanced mobile-responsive design** with improved button layout
-- **Better typography and visual hierarchy** for word display
-- Settings import/export for device sync
-- Celebration effects for completed categories
-- Theme support (light/dark/auto)
-- Study statistics and streak tracking
-- Robust error handling with graceful TTS fallbacks
+## Generated Files Organization
 
-**Status**: Production deployment ready with enhanced UI 🚀
+### Core Data Files
+- `data/generated/vocabulary-data.js` - Specialized vocabulary (1,618 terms)
+- `data/generated/conversation-data.js` - Extracted conversations (126 conversations, 2,018 sentences)  
+- `data/generated/conversation-vocabulary-data.js` - Conversation-based vocabulary (1,600 terms)
 
-## Troubleshooting Common Issues
+### Analysis Reports
+- `reports/advanced-vocabulary-analysis.md` - Multi-strategy analysis results
+- `reports/vocabulary-extraction-comparison.md` - Comparison between vocabulary approaches
+- `reports/conversation-extraction-report.md` - Conversation processing statistics
+- `reports/vocabulary-matches.csv` - Spreadsheet export for detailed analysis
 
-### Data Not Loading
-- **Problem**: Application shows "No vocabulary loaded"
-- **Solution**: Run `npm run convert` to generate `data/generated/vocabulary-data.js`
-- **Verify**: Check that the generated file exists and contains the global `vocabularyData` object
+## Important Constraints
 
-### Server Won't Start
-- **Problem**: `npm run dev` fails or server not accessible
-- **Solution**: Ensure Python 3 is installed, try alternative: `python3 -m http.server 3000`
-- **Note**: File:// protocol won't work due to CORS restrictions
-
-### TTS Not Working
-- **Problem**: No audio or pronunciation errors
-- **Solution**: Use Chrome/Edge (best Web Speech API support), check browser permissions
-- **Fallback**: Application gracefully handles TTS failures with visual feedback
-
-### Build Issues
-- **Problem**: `npm run build` fails or missing dependencies
-- **Solution**: Run `npm install` to ensure dev dependencies are available
-- **Check**: Verify Node.js version >= 16.0.0
+1. **Australian Context**: All vocabulary targets Australian institutional contexts (Medicare, NAATI, Australian government)
+2. **Simplified Chinese Only**: All Chinese translations must use Simplified characters
+3. **No External Dependencies**: Vanilla JS only, no frameworks or bundlers in runtime
+4. **Mobile-First**: Must work on devices 320px to 1400px+ width
+5. **Browser Support**: Chrome 90+, Firefox 88+, Safari 14+, Edge 90+
+6. **Data Processing Separation**: Keep data processing tools in separate directory from main app

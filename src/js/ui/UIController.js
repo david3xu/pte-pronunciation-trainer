@@ -148,7 +148,7 @@ class UIController {
         // Update Chinese word display
         const chineseElement = document.getElementById('chineseWord');
         if (chineseElement) {
-            chineseElement.textContent = word.chinese;
+            chineseElement.textContent = word.chinese || 'Translation not available';
             chineseElement.classList.add('word-change');
             
             // Remove animation class after animation completes
@@ -157,11 +157,58 @@ class UIController {
             }, 500);
         }
 
+        // Update example sentence display (for conversation vocabulary)
+        const exampleElement = document.getElementById('exampleSentence');
+        if (exampleElement && word.examples && word.examples.length > 0) {
+            // Get a clean example sentence (remove speaker prefixes like "Jenny:", "Officer:", etc.)
+            const rawExample = word.examples[0].text;
+            const cleanExample = this.cleanExampleSentence(rawExample);
+            
+            exampleElement.textContent = cleanExample;
+            exampleElement.style.display = 'block';
+            exampleElement.classList.add('word-change');
+            
+            setTimeout(() => {
+                exampleElement.classList.remove('word-change');
+            }, 500);
+        } else if (exampleElement) {
+            exampleElement.style.display = 'none';
+        }
+
         // Update progress display
         const totalWords = window.vocabularyManager.getTotalWords();
         window.progressTracker.updateProgress(index, totalWords, word);
 
-        console.log(`Displayed word ${index + 1}/${totalWords}: "${word.english}" - "${word.chinese}"`);
+        console.log(`Displayed word ${index + 1}/${totalWords}: "${word.english}" - "${word.chinese || 'No translation'}"`);
+    }
+
+    cleanExampleSentence(rawSentence) {
+        // Remove speaker prefixes and conversation metadata
+        let cleaned = rawSentence
+            // Remove speaker names followed by colon (e.g., "Jenny:", "Officer:", "Doctor:")
+            .replace(/^[A-Z][a-z]*\s*[：:]\s*/g, '')
+            // Remove numbered dialogue markers (e.g., "1. ", "2. ")
+            .replace(/^\d+\.\s*/g, '')
+            // Remove Chinese text in parentheses (translations)
+            .replace(/（[^）]*）/g, '')
+            .replace(/\([^)]*\)/g, '')
+            // Remove markdown image references
+            .replace(/\\n!\[Image\]/g, '')
+            // Remove extra whitespace and clean up
+            .replace(/\s+/g, ' ')
+            .trim();
+        
+        // If the sentence is too long, take the first complete sentence
+        if (cleaned.length > 150) {
+            const sentences = cleaned.split(/[.!?]+/);
+            if (sentences.length > 1 && sentences[0].length > 30) {
+                cleaned = sentences[0] + '.';
+            } else {
+                cleaned = cleaned.substring(0, 150) + '...';
+            }
+        }
+        
+        return cleaned;
     }
 
     updateUI() {

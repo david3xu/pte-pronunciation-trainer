@@ -3,12 +3,13 @@ class VocabularyManager {
     constructor() {
         this.currentCategory = 'social-welfare';
         this.currentDifficulty = 'all';
+        this.currentVocabularySource = 'specialized'; // 'specialized' or 'conversation'
         this.currentWords = [];
         this.allWords = []; // Store unfiltered words
         this.categoryCounts = {}; // Store counts per category per difficulty
         
-        // Category labels mapping
-        this.categoryLabels = {
+        // Category labels mapping for specialized vocabulary
+        this.specializedCategoryLabels = {
             'all-categories': '🌟 All Categories',
             'social-welfare': 'Social Welfare',
             'education': 'Education', 
@@ -17,22 +18,52 @@ class VocabularyManager {
             'medical-healthcare': 'Medical & Healthcare',
             'travel-immigration': 'Travel & Immigration'
         };
+        
+        // Category labels mapping for conversation-based vocabulary
+        this.conversationCategoryLabels = {
+            'all-categories': '🌟 All Categories',
+            'business': 'Business',
+            'medical': 'Medical',
+            'legal': 'Legal',
+            'education': 'Education',
+            'social-welfare': 'Social Welfare',
+            'housing': 'Housing',
+            'immigration': 'Immigration',
+            'general': 'General'
+        };
+        
+        this.categoryLabels = this.specializedCategoryLabels; // Default to specialized
     }
 
     calculateCategoryCounts() {
-        if (typeof vocabularyData === 'undefined') return;
+        const currentData = this.getCurrentVocabularyData();
+        if (!currentData) return;
         
         this.categoryCounts = {};
         
-        // Calculate individual category counts
-        Object.keys(vocabularyData).forEach(category => {
-            this.categoryCounts[category] = {
-                all: vocabularyData[category].length,
-                easy: vocabularyData[category].filter(word => word.difficulty === 'easy').length,
-                normal: vocabularyData[category].filter(word => word.difficulty === 'normal').length,
-                hard: vocabularyData[category].filter(word => word.difficulty === 'hard').length
-            };
-        });
+        if (this.currentVocabularySource === 'conversation') {
+            // Handle conversation-based vocabulary structure
+            if (currentData.vocabulary) {
+                Object.keys(currentData.vocabulary).forEach(category => {
+                    this.categoryCounts[category] = {
+                        all: currentData.vocabulary[category].length,
+                        easy: currentData.vocabulary[category].filter(item => item.difficulty === 'easy').length,
+                        normal: currentData.vocabulary[category].filter(item => item.difficulty === 'normal').length,
+                        hard: currentData.vocabulary[category].filter(item => item.difficulty === 'hard').length
+                    };
+                });
+            }
+        } else {
+            // Handle specialized vocabulary structure
+            Object.keys(currentData).forEach(category => {
+                this.categoryCounts[category] = {
+                    all: currentData[category].length,
+                    easy: currentData[category].filter(word => word.difficulty === 'easy').length,
+                    normal: currentData[category].filter(word => word.difficulty === 'normal').length,
+                    hard: currentData[category].filter(word => word.difficulty === 'hard').length
+                };
+            });
+        }
         
         // Calculate total counts across all categories
         this.categoryCounts['all-categories'] = {
@@ -42,19 +73,91 @@ class VocabularyManager {
             hard: 0
         };
         
-        Object.keys(vocabularyData).forEach(category => {
-            this.categoryCounts['all-categories'].all += this.categoryCounts[category].all;
-            this.categoryCounts['all-categories'].easy += this.categoryCounts[category].easy;
-            this.categoryCounts['all-categories'].normal += this.categoryCounts[category].normal;
-            this.categoryCounts['all-categories'].hard += this.categoryCounts[category].hard;
+        Object.keys(this.categoryCounts).forEach(category => {
+            if (category !== 'all-categories') {
+                this.categoryCounts['all-categories'].all += this.categoryCounts[category].all;
+                this.categoryCounts['all-categories'].easy += this.categoryCounts[category].easy;
+                this.categoryCounts['all-categories'].normal += this.categoryCounts[category].normal;
+                this.categoryCounts['all-categories'].hard += this.categoryCounts[category].hard;
+            }
         });
         
-        console.log('Category counts calculated:', this.categoryCounts);
+        console.log('Category counts calculated for', this.currentVocabularySource, ':', this.categoryCounts);
+    }
+
+    getCurrentVocabularyData() {
+        if (this.currentVocabularySource === 'conversation') {
+            return typeof conversationVocabularyData !== 'undefined' ? conversationVocabularyData : null;
+        } else {
+            return typeof vocabularyData !== 'undefined' ? vocabularyData : null;
+        }
+    }
+
+    switchVocabularySource(source) {
+        this.currentVocabularySource = source;
+        
+        // Update category labels
+        if (source === 'conversation') {
+            this.categoryLabels = this.conversationCategoryLabels;
+            // Reset to a valid category for conversation data
+            this.currentCategory = 'business';
+        } else {
+            this.categoryLabels = this.specializedCategoryLabels;
+            // Reset to a valid category for specialized data
+            this.currentCategory = 'social-welfare';
+        }
+        
+        this.calculateCategoryCounts();
+        this.updateCategoryOptions();
+        this.loadCategory(this.currentCategory);
+        
+        // Emit event for other components to react
+        window.eventBus.emit('vocabulary:sourceChanged', {
+            source: source,
+            category: this.currentCategory,
+            availableCategories: Object.keys(this.categoryLabels)
+        });
+    }
+
+    updateCategoryOptions() {
+        const categorySelect = document.getElementById('categorySelect');
+        if (!categorySelect) return;
+        
+        // Clear existing options
+        categorySelect.innerHTML = '';
+        
+        // Add new options based on current vocabulary source
+        Object.entries(this.categoryLabels).forEach(([value, label]) => {
+            const option = document.createElement('option');
+            option.value = value;
+            option.textContent = label;
+            if (value === this.currentCategory) {
+                option.selected = true;
+            }
+            categorySelect.appendChild(option);
+        });
     }
 
     loadCategory(category) {
-        if (!vocabularyData || !vocabularyData[category]) {
-            console.error(`Category '${category}' not found`);
+        const currentData = this.getCurrentVocabularyData();
+        let categoryWords = null;
+        
+        if (this.currentVocabularySource === 'conversation') {
+            if (!currentData || !currentData.vocabulary || !currentData.vocabulary[category]) {
+                console.error(`Conversation category '${category}' not found`);
+                return;
+            }
+            categoryWords = currentData.vocabulary[category];
+        } else {
+            if (!currentData || !currentData[category]) {
+                console.error(`Specialized category '${category}' not found`);
+                return;
+            }
+            categoryWords = currentData[category];
+        }
+        
+        if (!categoryWords) {
+            console.error(`No words found for category '${category}'`);
             return;
         }
 
@@ -64,16 +167,23 @@ class VocabularyManager {
         if (category === 'all-categories') {
             // Combine all categories
             this.allWords = [];
-            Object.keys(vocabularyData).forEach(cat => {
-                this.allWords.push(...vocabularyData[cat]);
-            });
+            const currentData = this.getCurrentVocabularyData();
+            if (this.currentVocabularySource === 'conversation') {
+                Object.keys(currentData.vocabulary).forEach(cat => {
+                    this.allWords.push(...currentData.vocabulary[cat]);
+                });
+            } else {
+                Object.keys(currentData).forEach(cat => {
+                    this.allWords.push(...currentData[cat]);
+                });
+            }
             // Shuffle for variety when combining all categories
             if (this.allWords.length > 0) {
                 this.shuffleArray(this.allWords);
             }
         } else {
             // Load specific category
-            this.allWords = [...vocabularyData[category]];
+            this.allWords = [...categoryWords];
         }
 
         console.log(`Loaded category: ${category} (${this.allWords.length} words)`);

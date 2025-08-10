@@ -30,6 +30,8 @@ class TTSEngine {
 
             // Add visual feedback during speech
             const englishWordElement = document.getElementById('englishWord');
+            const exampleElement = document.getElementById('exampleSentence');
+            
             if (englishWordElement) {
                 englishWordElement.classList.add('speaking');
             }
@@ -41,7 +43,31 @@ class TTSEngine {
                 rate: pronunciationRate
             });
 
+            // Speak the term first
             await this.speak(cleanText, 'en-AU', pronunciationRate);
+            
+            // For conversation vocabulary with examples, also speak the example sentence
+            if (word.examples && word.examples.length > 0 && exampleElement && exampleElement.style.display !== 'none') {
+                // Add small pause between term and sentence
+                await new Promise(resolve => setTimeout(resolve, 800));
+                
+                // Highlight example sentence during speech
+                if (exampleElement) {
+                    exampleElement.classList.add('speaking');
+                }
+                
+                // Get cleaned example sentence (same as UIController)
+                const rawExample = word.examples[0].text;
+                const cleanExample = this.cleanExampleSentenceForTTS(rawExample);
+                
+                // Speak example sentence at normal rate
+                await this.speak(cleanExample, 'en-AU', this.speechRate);
+                
+                // Remove example highlighting
+                if (exampleElement) {
+                    exampleElement.classList.remove('speaking');
+                }
+            }
             
             // Remove visual feedback
             if (englishWordElement) {
@@ -131,6 +157,38 @@ class TTSEngine {
             .replace(/([a-z])([A-Z])/g, '$1 $2'); // Add space between camelCase
         
         return cleanText;
+    }
+
+    cleanExampleSentenceForTTS(rawSentence) {
+        // Remove speaker prefixes and conversation metadata for TTS
+        let cleaned = rawSentence
+            // Remove speaker names followed by colon (e.g., "Jenny:", "Officer:", "Doctor:")
+            .replace(/^[A-Z][a-z]*\s*[：:]\s*/g, '')
+            // Remove numbered dialogue markers (e.g., "1. ", "2. ")
+            .replace(/^\d+\.\s*/g, '')
+            // Remove Chinese text in parentheses (translations)
+            .replace(/（[^）]*）/g, '')
+            .replace(/\([^)]*\)/g, '')
+            // Remove markdown image references
+            .replace(/\\n!\[Image\]/g, '')
+            // Remove conversation metadata phrases
+            .replace(/- (Legal|Medical|Business|Immigration|Education) Briefing.*$/gi, '')
+            // Remove extra whitespace and clean up
+            .replace(/\s+/g, ' ')
+            .trim();
+        
+        // If the sentence is too long for comfortable TTS, take the first complete sentence
+        if (cleaned.length > 120) {
+            const sentences = cleaned.split(/[.!?]+/);
+            if (sentences.length > 1 && sentences[0].length > 20 && sentences[0].length <= 120) {
+                cleaned = sentences[0] + '.';
+            } else {
+                cleaned = cleaned.substring(0, 120) + '...';
+            }
+        }
+        
+        // Apply general TTS cleaning
+        return this.cleanTextForTTS(cleaned);
     }
 
     setSpeechRate(rate) {

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Selector Demo - CCL Pronunciation Trainer</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8fafc;
+        }
+        
+        .demo-container {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #1f2937;
+            margin-bottom: 20px;
+        }
+        
+        .vocabulary-selector {
+            margin-bottom: 30px;
+        }
+        
+        .setting-item {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .setting-item label {
+            font-size: 14px;
+            font-weight: 500;
+            color: #4A5568;
+        }
+        
+        .setting-item select {
+            padding: 12px 16px;
+            border: 2px solid #E2E8F0;
+            border-radius: 8px;
+            background: white;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .setting-item select:focus {
+            outline: none;
+            border-color: #3182CE;
+            box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+        }
+        
+        .setting-description {
+            font-size: 12px;
+            color: #718096;
+            font-style: italic;
+            margin-top: 4px;
+            line-height: 1.3;
+        }
+        
+        .stats-display {
+            background: #f7fafc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 24px;
+            font-weight: 600;
+            color: #2d3748;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: #718096;
+            margin-top: 4px;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .comparison-table th {
+            background: #f7fafc;
+            font-weight: 600;
+            color: #2d3748;
+        }
+        
+        .highlight {
+            background: #e6fffa;
+            color: #065f46;
+            font-weight: 600;
+        }
+        
+        .example-words {
+            background: #fff5f5;
+            border-left: 4px solid #f56565;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        
+        .example-words h4 {
+            margin-top: 0;
+            color: #c53030;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <h1>🎯 Vocabulary Selection Feature Demo</h1>
+        
+        <div class="vocabulary-selector">
+            <div class="setting-item">
+                <label for="vocabularySourceSelect">Vocabulary Set:</label>
+                <select id="vocabularySourceSelect">
+                    <option value="specialized" selected>📚 Specialized Terms (1,618)</option>
+                    <option value="conversation">💬 Conversation-Based (1,600)</option>
+                </select>
+                <small class="setting-description" id="vocabularyDescription">
+                    Specialized domain terms - 14.3% have examples
+                </small>
+            </div>
+        </div>
+        
+        <div class="stats-display" id="statsDisplay">
+            <h3>Current Vocabulary Statistics</h3>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" id="totalTerms">1,618</div>
+                    <div class="stat-label">Total Terms</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="withExamples">232</div>
+                    <div class="stat-label">With Examples</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="coveragePercent">14.3%</div>
+                    <div class="stat-label">Coverage</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="sourceType">Specialized</div>
+                    <div class="stat-label">Source Type</div>
+                </div>
+            </div>
+        </div>
+        
+        <h3>📊 Vocabulary Comparison</h3>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Specialized Vocabulary</th>
+                    <th>Conversation-Based</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Total Terms</strong></td>
+                    <td>1,618 terms</td>
+                    <td>1,600 terms</td>
+                </tr>
+                <tr>
+                    <td><strong>With Examples</strong></td>
+                    <td>232 terms (14.3%)</td>
+                    <td class="highlight">1,600 terms (100%)</td>
+                </tr>
+                <tr>
+                    <td><strong>Focus</strong></td>
+                    <td>Domain-specific terminology</td>
+                    <td class="highlight">Natural conversational usage</td>
+                </tr>
+                <tr>
+                    <td><strong>Learning Style</strong></td>
+                    <td>Academic/Professional</td>
+                    <td class="highlight">Contextual/Practical</td>
+                </tr>
+                <tr>
+                    <td><strong>Difficulty Assessment</strong></td>
+                    <td>Based on domain complexity</td>
+                    <td class="highlight">Based on usage frequency</td>
+                </tr>
+                <tr>
+                    <td><strong>Best For</strong></td>
+                    <td>Advanced learners, specialized domains</td>
+                    <td class="highlight">All levels, practical communication</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="example-words">
+            <h4>💡 Example Terms Preview</h4>
+            <div id="exampleTerms">
+                <strong>Specialized:</strong> "Contributory parent visa", "Pathology report", "Adverse drug reaction"<br>
+                <strong>Conversation-Based:</strong> "How can I help", "Make an appointment", "Fill out this form"
+            </div>
+        </div>
+        
+        <h3>🚀 Integration in Pronunciation Trainer</h3>
+        <p>This vocabulary selector has been integrated into the main app's settings panel. Users can:</p>
+        <ul>
+            <li>✅ <strong>Switch between vocabulary sets</strong> instantly</li>
+            <li>✅ <strong>See real-time statistics</strong> about coverage and examples</li>
+            <li>✅ <strong>Settings persist</strong> across sessions</li>
+            <li>✅ <strong>Categories update automatically</strong> based on selected vocabulary</li>
+            <li>✅ <strong>Smooth transitions</strong> with no page reload needed</li>
+        </ul>
+        
+        <p><strong>🎯 Recommendation:</strong> Start with <em>Conversation-Based vocabulary</em> for practical pronunciation training, then advance to <em>Specialized terms</em> for domain-specific learning.</p>
+    </div>
+    
+    <script>
+        // Demo functionality
+        const vocabularySourceSelect = document.getElementById('vocabularySourceSelect');
+        const vocabularyDescription = document.getElementById('vocabularyDescription');
+        const totalTerms = document.getElementById('totalTerms');
+        const withExamples = document.getElementById('withExamples');
+        const coveragePercent = document.getElementById('coveragePercent');
+        const sourceType = document.getElementById('sourceType');
+        
+        const vocabularyData = {
+            specialized: {
+                totalTerms: '1,618',
+                withExamples: '232',
+                coveragePercent: '14.3%',
+                sourceType: 'Specialized',
+                description: 'Specialized domain terms - 14.3% have examples'
+            },
+            conversation: {
+                totalTerms: '1,600',
+                withExamples: '1,600',
+                coveragePercent: '100%',
+                sourceType: 'Conversation',
+                description: 'Practical terms from real conversations - 100% have examples'
+            }
+        };
+        
+        vocabularySourceSelect.addEventListener('change', (e) => {
+            const source = e.target.value;
+            const data = vocabularyData[source];
+            
+            // Update statistics display
+            totalTerms.textContent = data.totalTerms;
+            withExamples.textContent = data.withExamples;
+            coveragePercent.textContent = data.coveragePercent;
+            sourceType.textContent = data.sourceType;
+            vocabularyDescription.textContent = data.description;
+            
+            // Add visual feedback
+            document.querySelector('.stats-display').style.transform = 'scale(1.02)';
+            setTimeout(() => {
+                document.querySelector('.stats-display').style.transform = 'scale(1)';
+            }, 200);
+            
+            console.log(`Demo: Switched to ${source} vocabulary`);
+        });
+        
+        // Add smooth transition effects
+        document.querySelector('.stats-display').style.transition = 'transform 0.2s ease';
+    </script>
+</body>
+</html>

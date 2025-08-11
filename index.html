@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CCL Pronunciation Trainer</title>
     <link rel="icon" href="data:,">
-    <link rel="stylesheet" href="src/css/style.css?v=6">
+    <link rel="stylesheet" href="src/css/style.css?v=7">
 </head>
 <body>
     <div class="app-layout-grid">
@@ -46,7 +46,6 @@
                     <label for="vocabularySourceSelect">Vocabulary Set:</label>
                     <select id="vocabularySourceSelect">
                         <option value="specialized" selected>📚 Specialized Terms (1,618)</option>
-                        <option value="conversation">💬 Conversation-Based (1,600)</option>
                     </select>
                     <small class="setting-description">Choose your vocabulary source</small>
                 </div>
@@ -110,14 +109,13 @@
     <div class="sr-only" id="statusDisplay" aria-live="polite"></div>
 
     <script src="data/generated/vocabulary-data.js?v=2"></script>
-    <script src="data/generated/conversation-vocabulary-data.js?v=1"></script>
     
     <!-- Utility Modules -->
     <script src="src/js/utils/EventBus.js?v=1"></script>
     <script src="src/js/utils/Storage.js?v=1"></script>
     
     <!-- Core Logic Modules -->
-    <script src="src/js/core/VocabularyManager.js?v=2"></script>
+    <script src="src/js/core/VocabularyManager.js?v=7"></script>
     <script src="src/js/core/ProgressTracker.js?v=1"></script>
     
     <!-- Audio Modules -->
@@ -126,7 +124,7 @@
     <script src="src/js/audio/AudioControls.js?v=2"></script>
     
     <!-- UI Modules -->
-    <script src="src/js/ui/UIController.js?v=3"></script>
+    <script src="src/js/ui/UIController.js?v=8"></script>
     <script src="src/js/ui/SettingsPanel.js?v=1"></script>
     
     <!-- Main App Coordinator -->

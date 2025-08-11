@@ -100,6 +100,8 @@ class SettingsPanel {
         if (description) {
             if (source === 'conversation') {
                 description.textContent = 'Practical terms from real conversations - 100% have examples';
+            } else if (source === 'sequential') {
+                description.textContent = 'One term per sentence from dialogues 70241→70102 - 100% have examples';
             } else {
                 description.textContent = 'Specialized domain terms - 14.3% have examples';
             }

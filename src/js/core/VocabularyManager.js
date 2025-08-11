@@ -19,18 +19,6 @@ class VocabularyManager {
             'travel-immigration': 'Travel & Immigration'
         };
         
-        // Category labels mapping for conversation-based vocabulary
-        this.conversationCategoryLabels = {
-            'all-categories': '🌟 All Categories',
-            'business': 'Business',
-            'medical': 'Medical',
-            'legal': 'Legal',
-            'education': 'Education',
-            'social-welfare': 'Social Welfare',
-            'housing': 'Housing',
-            'immigration': 'Immigration',
-            'general': 'General'
-        };
         
         this.categoryLabels = this.specializedCategoryLabels; // Default to specialized
     }
@@ -41,21 +29,36 @@ class VocabularyManager {
         
         this.categoryCounts = {};
         
-        if (this.currentVocabularySource === 'conversation') {
-            // Handle conversation-based vocabulary structure
-            if (currentData.vocabulary) {
-                Object.keys(currentData.vocabulary).forEach(category => {
-                    this.categoryCounts[category] = {
-                        all: currentData.vocabulary[category].length,
-                        easy: currentData.vocabulary[category].filter(item => item.difficulty === 'easy').length,
-                        normal: currentData.vocabulary[category].filter(item => item.difficulty === 'normal').length,
-                        hard: currentData.vocabulary[category].filter(item => item.difficulty === 'hard').length
+        if (this.currentVocabularySource === 'sequential') {
+            // Handle sequential vocabulary structure (flat array by domain)
+            if (currentData.vocabulary && Array.isArray(currentData.vocabulary)) {
+                // Group by domain and count
+                const domainGroups = {};
+                currentData.vocabulary.forEach(item => {
+                    const domain = item.domain;
+                    if (!domainGroups[domain]) {
+                        domainGroups[domain] = [];
+                    }
+                    domainGroups[domain].push(item);
+                });
+                
+                // Calculate counts for each domain
+                Object.keys(domainGroups).forEach(domain => {
+                    const items = domainGroups[domain];
+                    this.categoryCounts[domain] = {
+                        all: items.length,
+                        easy: items.filter(item => item.difficulty === 'easy').length,
+                        normal: items.filter(item => item.difficulty === 'normal').length,
+                        hard: items.filter(item => item.difficulty === 'hard').length
                     };
                 });
             }
         } else {
             // Handle specialized vocabulary structure
             Object.keys(currentData).forEach(category => {
+                // Skip metadata and other non-array properties
+                if (!Array.isArray(currentData[category])) return;
+                
                 this.categoryCounts[category] = {
                     all: currentData[category].length,
                     easy: currentData[category].filter(word => word.difficulty === 'easy').length,
@@ -86,8 +89,8 @@ class VocabularyManager {
     }
 
     getCurrentVocabularyData() {
-        if (this.currentVocabularySource === 'conversation') {
-            return typeof conversationVocabularyData !== 'undefined' ? conversationVocabularyData : null;
+        if (this.currentVocabularySource === 'sequential') {
+            return typeof cleanSequentialVocabularyData !== 'undefined' ? cleanSequentialVocabularyData : null;
         } else {
             return typeof vocabularyData !== 'undefined' ? vocabularyData : null;
         }
@@ -97,10 +100,10 @@ class VocabularyManager {
         this.currentVocabularySource = source;
         
         // Update category labels
-        if (source === 'conversation') {
-            this.categoryLabels = this.conversationCategoryLabels;
-            // Reset to a valid category for conversation data
-            this.currentCategory = 'business';
+        if (source === 'sequential') {
+            this.categoryLabels = this.specializedCategoryLabels; // Use same labels as specialized
+            // Reset to a valid category for sequential data
+            this.currentCategory = 'business-finance'; // Sequential data uses business-finance format
         } else {
             this.categoryLabels = this.specializedCategoryLabels;
             // Reset to a valid category for specialized data
@@ -142,12 +145,13 @@ class VocabularyManager {
         const currentData = this.getCurrentVocabularyData();
         let categoryWords = null;
         
-        if (this.currentVocabularySource === 'conversation') {
-            if (!currentData || !currentData.vocabulary || !currentData.vocabulary[category]) {
-                console.error(`Conversation category '${category}' not found`);
+        if (this.currentVocabularySource === 'sequential') {
+            if (!currentData || !currentData.vocabulary || !Array.isArray(currentData.vocabulary)) {
+                console.error(`Sequential vocabulary data not found or not an array`);
                 return;
             }
-            categoryWords = currentData.vocabulary[category];
+            // Filter vocabulary array by domain
+            categoryWords = currentData.vocabulary.filter(item => item.domain === category);
         } else {
             if (!currentData || !currentData[category]) {
                 console.error(`Specialized category '${category}' not found`);
@@ -168,13 +172,18 @@ class VocabularyManager {
             // Combine all categories
             this.allWords = [];
             const currentData = this.getCurrentVocabularyData();
-            if (this.currentVocabularySource === 'conversation') {
+            if (this.currentVocabularySource === 'sequential') {
+                // For flat array structure, just use all vocabulary
+                this.allWords = [...currentData.vocabulary];
+            } else if (this.currentVocabularySource === 'conversation') {
                 Object.keys(currentData.vocabulary).forEach(cat => {
                     this.allWords.push(...currentData.vocabulary[cat]);
                 });
             } else {
                 Object.keys(currentData).forEach(cat => {
-                    this.allWords.push(...currentData[cat]);
+                    if (Array.isArray(currentData[cat])) {
+                        this.allWords.push(...currentData[cat]);
+                    }
                 });
             }
             // Shuffle for variety when combining all categories

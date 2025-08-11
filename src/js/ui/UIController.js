@@ -198,13 +198,61 @@ class UIController {
             .replace(/\s+/g, ' ')
             .trim();
         
-        // If the sentence is too long, take the first complete sentence
-        if (cleaned.length > 150) {
+        // Smart sentence splitting - ensure the vocabulary term appears in the displayed sentence
+        console.log('Original sentence length:', cleaned.length, '- Content:', cleaned);
+        
+        // Get the current vocabulary term to ensure it's included in the displayed sentence
+        const currentWord = window.vocabularyManager?.currentWords?.[window.vocabularyManager?.currentIndex]?.english;
+        console.log('Current vocabulary term:', currentWord);
+        
+        if (cleaned.length > 50) {
             const sentences = cleaned.split(/[.!?]+/);
-            if (sentences.length > 1 && sentences[0].length > 30) {
-                cleaned = sentences[0] + '.';
+            console.log('Split into sentences:', sentences);
+            
+            if (sentences.length > 1) {
+                // Find the shortest sentence that contains the vocabulary term
+                let selectedSentence = sentences[0]; // Default to first
+                let bestSentence = null;
+                let shortestLength = Infinity;
+                
+                if (currentWord) {
+                    // Look for the vocabulary term in each sentence
+                    for (let i = 0; i < sentences.length; i++) {
+                        const sentence = sentences[i].trim();
+                        if (sentence.toLowerCase().includes(currentWord.toLowerCase())) {
+                            console.log(`Found term "${currentWord}" in sentence ${i + 1}: "${sentence}"`);
+                            // Pick the shortest sentence that contains the term
+                            if (sentence.length < shortestLength) {
+                                bestSentence = sentence;
+                                shortestLength = sentence.length;
+                            }
+                        }
+                    }
+                    
+                    if (bestSentence) {
+                        selectedSentence = bestSentence;
+                        console.log(`Using shortest sentence containing term: "${selectedSentence}"`);
+                    }
+                }
+                
+                // Clean up the selected sentence
+                selectedSentence = selectedSentence.trim();
+                if (selectedSentence.length > 15) {
+                    if (!/[.!?]$/.test(selectedSentence)) {
+                        cleaned = selectedSentence + '.';
+                    } else {
+                        cleaned = selectedSentence;
+                    }
+                    console.log('Using selected sentence:', cleaned);
+                } else {
+                    // Fallback: use first two sentences if selected is too short
+                    cleaned = (sentences[0] + '. ' + sentences[1]).trim() + '.';
+                    console.log('Using first two sentences as fallback:', cleaned);
+                }
             } else {
-                cleaned = cleaned.substring(0, 150) + '...';
+                // No clear sentence breaks, truncate at word boundary
+                cleaned = cleaned.substring(0, 80).replace(/\s+\w+$/, '') + '...';
+                console.log('Truncated at word boundary:', cleaned);
             }
         }
         

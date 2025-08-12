@@ -27,23 +27,36 @@ class VoiceSelector {
             }
         }
         
-        // Auto mode: prefer Microsoft James (user's favorite) as default
-        const voicePreferences = [
+        // ONLY MALE VOICES - NO FEMALE VOICES ALLOWED
+        const maleVoicePreferences = [
+            // Primary: Microsoft James variants
             'Microsoft James - English (Australia)',
+            'Microsoft James Online (Natural) - English (Australia)',
             'Microsoft James',
             'James',
+            
+            // Secondary: Other Australian male voices
+            'Google Australian English Male',
+            'Australian Male',
+            
+            // Tertiary: English male voices
             'Google UK English Male',
+            'UK English Male',
             'Alex (Enhanced)',
             'Alex',
-            'Microsoft Catherine - English (Australia)', 
-            'Microsoft Catherine',
-            'Google UK English Female',
-            'Karen (Enhanced)',
-            'Karen'
+            'Daniel (Enhanced)',
+            'Daniel',
+            'Tom',
+            'David',
+            'William',
+            'Michael',
+            
+            // Any other male voices
+            'Male'
         ];
         
-        // Try to find preferred voices in order
-        for (const preferredName of voicePreferences) {
+        // Try to find MALE voices in order - NO FEMALE VOICES
+        for (const preferredName of maleVoicePreferences) {
             const voice = voices.find(v => 
                 v.name === preferredName || v.name.includes(preferredName)
             );
@@ -53,22 +66,51 @@ class VoiceSelector {
             }
         }
         
-        // Last resort: any English voice
-        const fallbackVoice = voices.find(v => v.lang.startsWith('en'));
-        if (fallbackVoice) {
-            console.log(`Using fallback voice: ${fallbackVoice.name}`);
+        // Aggressive male voice search - ABSOLUTELY NO FEMALE VOICES
+        const maleIndicators = ['male', 'man', 'boy', 'james', 'daniel', 'alex', 'david', 'william', 'tom', 'michael', 'robert'];
+        const femaleIndicators = ['female', 'woman', 'girl', 'kate', 'susan', 'karen', 'catherine', 'samantha', 'helen', 'sarah', 'maria', 'anna'];
+        
+        // Filter out ALL female voices and find any male voice
+        const maleVoices = voices.filter(v => {
+            const nameLower = v.name.toLowerCase();
+            const isFemale = femaleIndicators.some(indicator => nameLower.includes(indicator));
+            const isMale = maleIndicators.some(indicator => nameLower.includes(indicator));
+            const isEnglish = v.lang.startsWith('en');
+            
+            // Must be English, must not be female, prefer if explicitly male
+            return isEnglish && !isFemale;
+        });
+        
+        // Find the best male voice
+        if (maleVoices.length > 0) {
+            // Prefer explicitly male voices
+            const explicitlyMale = maleVoices.find(v => 
+                maleIndicators.some(indicator => v.name.toLowerCase().includes(indicator))
+            );
+            
+            if (explicitlyMale) {
+                console.log(`Found male voice via filtering: ${explicitlyMale.name}`);
+                return explicitlyMale;
+            } else {
+                // Use first non-female English voice
+                console.log(`Using non-female English voice: ${maleVoices[0].name}`);
+                return maleVoices[0];
+            }
         }
-        return fallbackVoice;
+        
+        // ABSOLUTE LAST RESORT: If no non-female voices found, return null (NO AUDIO)
+        console.error('NO MALE VOICES FOUND - REFUSING TO USE FEMALE VOICE');
+        return null;
     }
 
     getCuratedVoiceInfo(voiceName) {
+        // ONLY MALE VOICES - NO FEMALE VOICES ALLOWED
         const curatedVoices = [
             { name: 'Microsoft James - English (Australia)', fallbacks: ['Microsoft James', 'James'] },
             { name: 'Google UK English Male', fallbacks: ['Google UK English Male'] },
             { name: 'Alex (Enhanced)', fallbacks: ['Alex'] },
-            { name: 'Microsoft Catherine - English (Australia)', fallbacks: ['Microsoft Catherine', 'Catherine'] },
-            { name: 'Google UK English Female', fallbacks: ['Google UK English Female'] },
-            { name: 'Karen (Enhanced)', fallbacks: ['Karen'] }
+            { name: 'Daniel (Enhanced)', fallbacks: ['Daniel'] }
+            // REMOVED ALL FEMALE VOICES: Catherine, Karen, etc.
         ];
         
         return curatedVoices.find(v => v.name === voiceName);
@@ -85,17 +127,13 @@ class VoiceSelector {
             voiceSelect.removeChild(voiceSelect.lastChild);
         }
         
-        // Curated static voice presets - always available
+        // ONLY MALE VOICES - NO FEMALE VOICES IN DROPDOWN
         const curatedVoices = [
-            // Male voices (2-3 options)
             { name: 'Microsoft James - English (Australia)', fallbacks: ['Microsoft James', 'James'], flag: '🇦🇺', gender: '♂️' },
             { name: 'Google UK English Male', fallbacks: ['Google UK English Male'], flag: '🇬🇧', gender: '♂️' },
             { name: 'Alex (Enhanced)', fallbacks: ['Alex'], flag: '🇺🇸', gender: '♂️' },
-            
-            // Female voices (2-3 options)  
-            { name: 'Microsoft Catherine - English (Australia)', fallbacks: ['Microsoft Catherine', 'Catherine'], flag: '🇦🇺', gender: '♀️' },
-            { name: 'Google UK English Female', fallbacks: ['Google UK English Female'], flag: '🇬🇧', gender: '♀️' },
-            { name: 'Karen (Enhanced)', fallbacks: ['Karen'], flag: '🇦🇺', gender: '♀️' }
+            { name: 'Daniel (Enhanced)', fallbacks: ['Daniel'], flag: '🇺🇸', gender: '♂️' }
+            // REMOVED ALL FEMALE VOICES FROM DROPDOWN
         ];
         
         // Add curated voices to dropdown

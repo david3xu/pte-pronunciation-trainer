@@ -113,12 +113,17 @@ class TTSEngine {
             utterance.volume = 1.0;
             utterance.pitch = 1.0;
             
-            // Try to find the best voice match for user's practice
+            // Try to find the best voice match for user's practice - ONLY MALE VOICES
             const voices = speechSynthesis.getVoices();
             const voice = window.voiceSelector ? window.voiceSelector.selectBestVoiceMatch(voices, lang) : null;
             if (voice) {
                 utterance.voice = voice;
-                console.log(`Using voice: ${voice.name} (${voice.lang}) - closest match to user voice`);
+                console.log(`Using voice: ${voice.name} (${voice.lang}) - MALE VOICE SELECTED`);
+            } else {
+                console.error('NO MALE VOICE AVAILABLE - SPEECH CANCELLED TO AVOID FEMALE VOICE');
+                this.showTTSFallback(text);
+                resolve();
+                return;
             }
 
             utterance.onend = () => resolve();

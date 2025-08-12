@@ -117,14 +117,26 @@ async function build() {
         // Copy and optimize vocabulary data
         console.log('📚 Copying vocabulary data...');
         const vocabDataFile = path.join(dataDir, 'generated', 'vocabulary-data.js');
+        const conversationDataFile = path.join(dataDir, 'generated', 'conversation-vocabulary-data.js');
+        
         if (fs.existsSync(vocabDataFile)) {
             const vocabContent = fs.readFileSync(vocabDataFile, 'utf8');
             const minifiedVocab = minifyJS(vocabContent);
             fs.writeFileSync(path.join(distDir, 'data', 'vocabulary-data.min.js'), minifiedVocab);
-            console.log(`   ✅ Created vocabulary-data.min.js (${Math.round(minifiedVocab.length / 1024)}KB)\n`);
+            console.log(`   ✅ Created vocabulary-data.min.js (${Math.round(minifiedVocab.length / 1024)}KB)`);
         } else {
-            console.warn('   ⚠️  Vocabulary data not found. Run "npm run convert" first.\n');
+            console.warn('   ⚠️  Vocabulary data not found. Run "npm run convert" first.');
         }
+        
+        if (fs.existsSync(conversationDataFile)) {
+            const conversationContent = fs.readFileSync(conversationDataFile, 'utf8');
+            const minifiedConversation = minifyJS(conversationContent);
+            fs.writeFileSync(path.join(distDir, 'data', 'conversation-vocabulary-data.min.js'), minifiedConversation);
+            console.log(`   ✅ Created conversation-vocabulary-data.min.js (${Math.round(minifiedConversation.length / 1024)}KB)`);
+        } else {
+            console.warn('   ⚠️  Conversation vocabulary data not found. Run "npm run extract-conversations" first.');
+        }
+        console.log();
         
         // Build HTML
         console.log('🔧 Building HTML...');
@@ -133,13 +145,14 @@ async function build() {
         // Update HTML to use minified files
         const optimizedHTML = htmlContent
             .replace('src/css/style.css', 'css/app.min.css')
-            .replace('data/generated/vocabulary-data.js', 'data/vocabulary-data.min.js')
+            .replace(/data\/generated\/vocabulary-data\.js\?v=\d+(&t=\d+)?/g, 'data/vocabulary-data.min.js')
+            .replace(/data\/generated\/conversation-vocabulary-data\.js\?v=\d+(&t=\d+)?/g, 'data/conversation-vocabulary-data.min.js')
             // Remove all individual module script tags and replace with single bundled file
             .replace(/<!-- Utility Modules -->[\s\S]*?<!-- Main App Coordinator -->\s*<script src="src\/js\/core\/App\.js\?v=\d+"><\/script>/g, 
                      '<!-- Bundled JavaScript -->\n    <script src="js/app.min.js"></script>')
             // Add meta tags for production
             .replace('<head>', `<head>
-    <meta name="description" content="CCL Pronunciation Trainer - NAATI CCL exam preparation with 1,618 vocabulary terms">
+    <meta name="description" content="CCL Pronunciation Trainer - NAATI CCL exam preparation with 2,180 conversation vocabulary terms">
     <meta name="keywords" content="CCL, NAATI, pronunciation, vocabulary, Chinese, English, exam preparation">
     <meta name="author" content="CCL Pronunciation Trainer">
     <meta name="robots" content="index, follow">`);
@@ -169,6 +182,10 @@ async function build() {
         
         if (fs.existsSync(path.join(distDir, 'data', 'vocabulary-data.min.js'))) {
             buildInfo.files['data/vocabulary-data.min.js'] = fs.statSync(path.join(distDir, 'data', 'vocabulary-data.min.js')).size;
+        }
+        
+        if (fs.existsSync(path.join(distDir, 'data', 'conversation-vocabulary-data.min.js'))) {
+            buildInfo.files['data/conversation-vocabulary-data.min.js'] = fs.statSync(path.join(distDir, 'data', 'conversation-vocabulary-data.min.js')).size;
         }
         
         fs.writeFileSync(

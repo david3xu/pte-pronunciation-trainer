@@ -195,7 +195,7 @@ class SettingsPanel {
         this.applySettingToElement('speedSelect', savedSettings.speechRate);
         this.applySettingToElement('delaySelect', savedSettings.delay);
         this.applySettingToElement('repeatSelect', savedSettings.repeatMode);
-        this.applySettingToElement('voiceSelect', savedSettings.preferredVoice || 'auto');
+        this.applySettingToElement('voiceSelect', savedSettings.preferredVoice || 'Microsoft James - English (Australia)');
 
         // Apply vocabulary source setting first
         if (window.vocabularyManager && savedSettings.vocabularySource) {
@@ -208,9 +208,9 @@ class SettingsPanel {
         window.ttsEngine.setSpeechRate(savedSettings.speechRate);
         window.audioControls.setDelay(savedSettings.delay);
         window.audioControls.setRepeatMode(savedSettings.repeatMode);
-        if (savedSettings.preferredVoice) {
-            window.voiceSelector.setPreferredVoice(savedSettings.preferredVoice);
-        }
+        // Always set voice preference - default to Microsoft James if none saved
+        const voicePreference = savedSettings.preferredVoice || 'Microsoft James - English (Australia)';
+        window.voiceSelector.setPreferredVoice(voicePreference);
 
         console.log('Settings loaded:', savedSettings);
     }

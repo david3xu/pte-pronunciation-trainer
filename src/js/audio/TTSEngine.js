@@ -46,8 +46,9 @@ class TTSEngine {
             // Speak the term first
             await this.speak(cleanText, 'en-AU', pronunciationRate);
             
-            // For conversation vocabulary with examples, also speak the example sentence
-            if (word.examples && word.examples.length > 0 && exampleElement && exampleElement.style.display !== 'none') {
+            // For vocabulary with examples, also speak the example sentence
+            const hasExample = (word.examples && word.examples.length > 0) || word.example;
+            if (hasExample && exampleElement && exampleElement.style.display !== 'none') {
                 // Add small pause between term and sentence
                 await new Promise(resolve => setTimeout(resolve, 800));
                 
@@ -56,12 +57,22 @@ class TTSEngine {
                     exampleElement.classList.add('speaking');
                 }
                 
-                // Get cleaned example sentence (same as UIController)
-                const rawExample = word.examples[0].text;
-                const cleanExample = this.cleanExampleSentenceForTTS(rawExample);
+                // Get example text from either format
+                let rawExample;
+                if (word.example) {
+                    // Conversation vocabulary format
+                    rawExample = word.example;
+                } else if (word.examples && word.examples.length > 0) {
+                    // Specialized vocabulary format
+                    rawExample = word.examples[0].text;
+                }
                 
-                // Speak example sentence at normal rate
-                await this.speak(cleanExample, 'en-AU', this.speechRate);
+                if (rawExample) {
+                    const cleanExample = this.cleanExampleSentenceForTTS(rawExample);
+                    
+                    // Speak example sentence at normal rate
+                    await this.speak(cleanExample, 'en-AU', this.speechRate);
+                }
                 
                 // Remove example highlighting
                 if (exampleElement) {

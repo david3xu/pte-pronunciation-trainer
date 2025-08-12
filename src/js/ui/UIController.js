@@ -154,12 +154,26 @@ class UIController {
         // Update Chinese word display
         const chineseElement = document.getElementById('chineseWord');
         if (chineseElement) {
-            chineseElement.textContent = word.chinese || 'Translation not available';
+            // Handle conversation vocabulary differently - they don't have individual translations
+            if (word.chinese) {
+                chineseElement.textContent = word.chinese;
+            } else if (word.example && word.exampleChinese) {
+                // For conversation vocabulary, show that Chinese is available in context
+                chineseElement.textContent = 'See context below';
+                chineseElement.style.fontStyle = 'italic';
+                chineseElement.style.opacity = '0.7';
+            } else {
+                chineseElement.textContent = 'Translation not available';
+            }
+            
             chineseElement.classList.add('word-change');
             
             // Remove animation class after animation completes
             setTimeout(() => {
                 chineseElement.classList.remove('word-change');
+                // Reset styles
+                chineseElement.style.fontStyle = 'normal';
+                chineseElement.style.opacity = '1';
             }, 500);
         }
 

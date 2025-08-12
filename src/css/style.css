@@ -85,6 +85,21 @@ body {
     border-radius: 12px;
     border-left: 4px solid #3182CE;
     font-style: italic;
+}
+
+.example-english {
+    font-size: 20px;
+    color: #2D3748;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.example-chinese {
+    font-size: 18px;
+    color: #718096;
+    font-style: normal;
+    font-weight: 400;
+}
     word-wrap: break-word;
     /* Subtle styling to distinguish from main content */
 }

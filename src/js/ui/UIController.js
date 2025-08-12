@@ -17,6 +17,12 @@ class UIController {
             this.updateButtons();
         });
 
+        window.eventBus.on('vocabulary:sourceChanged', (data) => {
+            this.updateCategoryDisplay();
+            this.updateButtons();
+            this.displayFirstWord();
+        });
+
         // Listen for word display events
         window.eventBus.on('word:display', (data) => {
             this.displayWord(data.word, data.index);
@@ -159,12 +165,21 @@ class UIController {
 
         // Update example sentence display (for conversation vocabulary)
         const exampleElement = document.getElementById('exampleSentence');
-        if (exampleElement && word.examples && word.examples.length > 0) {
-            // Get a clean example sentence (remove speaker prefixes like "Jenny:", "Officer:", etc.)
-            const rawExample = word.examples[0].text;
-            const cleanExample = this.cleanExampleSentence(rawExample);
+        console.log('Example debug - word.example:', word.example ? 'EXISTS' : 'MISSING');
+        console.log('Example debug - word keys:', Object.keys(word));
+        
+        if (exampleElement && word.example) {
+            // Clean example sentence (remove speaker prefixes like "Jenny:", "Officer:", etc.)
+            const cleanExample = this.cleanExampleSentence(word.example);
+            console.log('Showing example sentence:', cleanExample);
             
-            exampleElement.textContent = cleanExample;
+            // Display both English and Chinese examples
+            let displayContent = `<div class="example-english">${cleanExample}</div>`;
+            if (word.exampleChinese) {
+                displayContent += `<div class="example-chinese">${word.exampleChinese}</div>`;
+            }
+            
+            exampleElement.innerHTML = displayContent;
             exampleElement.style.display = 'block';
             exampleElement.classList.add('word-change');
             
@@ -172,6 +187,7 @@ class UIController {
                 exampleElement.classList.remove('word-change');
             }, 500);
         } else if (exampleElement) {
+            console.log('Hiding example sentence - no word.example found');
             exampleElement.style.display = 'none';
         }
 
@@ -180,6 +196,14 @@ class UIController {
         window.progressTracker.updateProgress(index, totalWords, word);
 
         console.log(`Displayed word ${index + 1}/${totalWords}: "${word.english}" - "${word.chinese || 'No translation'}"`);
+    }
+
+    displayFirstWord() {
+        // Display the first word when vocabulary source changes
+        const firstWord = window.vocabularyManager.getCurrentWord(0);
+        if (firstWord) {
+            this.displayWord(firstWord, 0);
+        }
     }
 
     cleanExampleSentence(rawSentence) {

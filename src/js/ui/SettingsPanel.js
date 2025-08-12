@@ -100,10 +100,8 @@ class SettingsPanel {
         if (description) {
             if (source === 'conversation') {
                 description.textContent = 'Practical terms from real conversations - 100% have examples';
-            } else if (source === 'sequential') {
-                description.textContent = 'One term per sentence from dialogues 70241→70102 - 100% have examples';
             } else {
-                description.textContent = 'Specialized domain terms - 14.3% have examples';
+                description.textContent = 'Specialized domain terms across 6 categories';
             }
         }
     }
@@ -115,6 +113,24 @@ class SettingsPanel {
         }
         
         this.updateVocabularyStats(data.source);
+        
+        // Update category dropdown to reflect new categories
+        const categorySelect = document.getElementById('categorySelect');
+        if (categorySelect && data.availableCategories) {
+            // Clear and repopulate category options
+            categorySelect.innerHTML = '';
+            
+            // Add available categories for this vocabulary source
+            data.availableCategories.forEach(categoryKey => {
+                const option = document.createElement('option');
+                option.value = categoryKey;
+                option.textContent = window.vocabularyManager.getCategoryLabel(categoryKey);
+                if (categoryKey === data.category) {
+                    option.selected = true;
+                }
+                categorySelect.appendChild(option);
+            });
+        }
         
         console.log(`Switched to ${data.source} vocabulary with ${data.availableCategories.length} categories`);
     }
@@ -163,8 +179,8 @@ class SettingsPanel {
     loadSettings() {
         // Load and apply saved settings
         const savedSettings = {
-            vocabularySource: window.storage.getItem('vocabularySource') || 'specialized',
-            category: window.storage.getItem('category') || 'social-welfare',
+            vocabularySource: window.storage.getItem('vocabularySource') || 'conversation',
+            category: window.storage.getItem('category') || 'all-categories',
             difficulty: window.storage.getItem('difficulty') || 'all',
             speechRate: window.storage.getItem('speechRate') || 1.0,
             delay: window.storage.getItem('delay') || 2000,

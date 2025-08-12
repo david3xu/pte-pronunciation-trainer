@@ -11,13 +11,15 @@ CCL (NAATI Credentialed Community Language) pronunciation training web applicati
 ```bash
 # Data Generation (REQUIRED before running):
 npm run convert                          # Generate specialized vocabulary (1,618 terms)
-npm run extract-conversations            # Extract conversation dialogues (2,018 sentences)
-npm run extract-vocab-from-conversations # Generate conversation vocabulary (1,600 terms)
-npm run extract-smart-vocab              # Smart vocabulary extraction algorithm
+npm run extract-vocab-from-conversations # Generate conversation vocabulary (1,624 terms)
 
 # Development:
 npm run dev                   # Start server at http://localhost:3000
 npm start                     # Alias: convert + dev
+
+# Optional Data Processing:
+npm run extract-conversations            # Extract conversation dialogues (raw data exists)
+npm run extract-smart-vocab              # Smart vocabulary extraction (alternative approach)
 
 # Quality & Testing:
 npm run lint                  # ESLint for JS + Stylelint for CSS
@@ -41,9 +43,9 @@ npm run analyze-vocabulary    # Advanced vocabulary-conversation analysis
 ### Data Pipeline (Critical)
 ```
 data/vocabulary/*.md → scripts/build-vocabulary.js → data/generated/vocabulary-data.js → Browser
-data/conversation/*.md → scripts/extract-conversations.js → data/generated/conversation-data.js
+data-processing/extractors/*.md → scripts/conversation-vocabulary-extractor.js → data/generated/conversation-vocabulary-data.js → Browser
 ```
-**⚠️ App requires generated JS files. Always run `npm run convert` after markdown changes.**
+**⚠️ App requires generated JS files. Run both `npm run convert` and `npm run extract-vocab-from-conversations` to enable dual vocabulary system.**
 
 ### Module Pattern
 ```javascript
@@ -74,10 +76,11 @@ scripts/            # Build tools (4 files)
 ## Key Features
 
 ### Dual Vocabulary System
-- **Specialized Terms**: 1,618 domain-specific terms from markdown files
-- **Conversation-Based**: 1,600 terms extracted from 2,018 real CCL sentences
-- **Settings Toggle**: Users switch between vocabularies in settings panel
-- **Persistent Choice**: Saved in localStorage
+- **Specialized Terms**: 1,618 domain-specific terms from markdown files across 6 domains
+- **Conversation-Based**: 1,624 terms extracted from real CCL conversation dialogues across 8 domains
+- **Settings Toggle**: Users can switch between vocabulary sources in settings panel
+- **Contextual Examples**: Conversation vocabulary includes example sentences from source dialogues
+- **Persistent Choice**: Vocabulary source preference saved in localStorage
 
 ### Text-to-Speech
 - Australian English (en-AU) voices prioritized for NAATI context
@@ -127,7 +130,7 @@ Tests located in `tests/` directory, using jsdom environment.
 
 | Issue | Solution |
 |-------|----------|
-| "No vocabulary loaded" | Run `npm run convert` to generate vocabulary-data.js |
+| "No vocabulary loaded" | Run `npm run convert` and `npm run extract-vocab-from-conversations` |
 | Server won't start | Ensure Python 3 installed, or use `python3 -m http.server 3000` |
 | TTS not working | Use Chrome/Edge, check browser audio permissions |
 | Build failures | Run `npm install`, ensure Node.js >= 16.0.0 |

@@ -51,15 +51,40 @@ class CCLPronunciationTrainer {
     }
 
     initializeVoices() {
+        const initVoices = () => {
+            window.voiceSelector.populateVoiceOptions();
+            
+            // Force Microsoft James selection after voices are loaded
+            const currentVoice = window.storage.getSetting('preferredVoice');
+            if (!currentVoice) {
+                // Set Microsoft James as default and save it
+                const defaultVoice = 'Microsoft James - English (Australia)';
+                window.voiceSelector.setPreferredVoice(defaultVoice);
+                window.storage.saveSetting('preferredVoice', defaultVoice);
+                console.log('Forced default voice to Microsoft James for mobile compatibility');
+                
+                // Update the UI selector
+                const voiceSelect = document.getElementById('voiceSelect');
+                if (voiceSelect) {
+                    voiceSelect.value = defaultVoice;
+                }
+            }
+        };
+        
         // Populate voice options when voices are available
         if (speechSynthesis.getVoices().length > 0) {
-            window.voiceSelector.populateVoiceOptions();
+            initVoices();
         } else {
             // Wait for voices to load
-            speechSynthesis.addEventListener('voiceschanged', () => {
-                window.voiceSelector.populateVoiceOptions();
-            }, { once: true });
+            speechSynthesis.addEventListener('voiceschanged', initVoices, { once: true });
         }
+        
+        // Additional safety check for mobile - retry after delay
+        setTimeout(() => {
+            if (speechSynthesis.getVoices().length > 0) {
+                initVoices();
+            }
+        }, 1000);
     }
 
     setupKeyboardShortcuts() {

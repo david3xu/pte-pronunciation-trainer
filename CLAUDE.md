@@ -36,6 +36,11 @@ npm run clean                 # Remove dist/ and data/generated/
 
 # Analysis:
 npm run analyze-vocabulary    # Advanced vocabulary-conversation analysis
+
+# Single Test:
+npm run test -- --testNamePattern="specific test"   # Run specific test
+npm run test -- --watch       # Watch mode
+npm run test -- --coverage    # Coverage report
 ```
 
 ## Architecture
@@ -66,11 +71,14 @@ src/js/
 ├── ui/             # UIController, SettingsPanel (vocabulary switcher)
 └── utils/          # EventBus, Storage (localStorage wrapper)
 
-scripts/            # Build tools (4 files)
+scripts/            # Build tools (7 files)
 ├── build-vocabulary.js     # Generate specialized vocabulary
-├── extract-conversations.js # Process conversation files
+├── conversation-vocabulary-extractor.js # Extract vocabulary from conversations
+├── extract-conversations.js # Process conversation dialogues
 ├── validate.js             # Data integrity checks
-└── build.js               # Production build with minification
+├── build.js               # Production build with minification
+├── use-manual-conversation-data.js # Manual conversation data handling
+└── manual-conversation-processor.js # Manual conversation processing
 ```
 
 ## Key Features
@@ -84,8 +92,15 @@ scripts/            # Build tools (4 files)
 
 ### Text-to-Speech
 - Australian English (en-AU) voices prioritized for NAATI context
-- Multiple playback speeds and repeat modes
-- Auto-play with configurable intervals (2-5 seconds)
+- Multiple playback speeds (slow → normal → fast progression)
+- Repeat modes with configurable intervals (2-5 seconds)
+- Auto-play functionality for hands-free practice
+
+### Keyboard Shortcuts
+- Space: Play/Pause pronunciation
+- Arrow keys: Navigate between words
+- R: Repeat current word
+- Esc: Close settings panel
 
 ### Difficulty Classification
 - Easy (55%): Single words, common terms
@@ -103,6 +118,8 @@ scripts/            # Build tools (4 files)
 ```
 
 ### Output (JavaScript)
+
+Specialized Vocabulary:
 ```javascript
 window.vocabularyData = {
   categories: {
@@ -113,6 +130,23 @@ window.vocabularyData = {
       ]
     }
   }
+}
+```
+
+Conversation Vocabulary:
+```javascript
+window.conversationVocabularyData = {
+  vocabulary: [
+    {
+      english: "drop by to visit the site",
+      chinese: "",
+      difficulty: "hard",
+      example: "Hey, the office mentioned you'd drop by to visit the site again today.",
+      exampleChinese: "嗨，办公室那边说你今天要再来工地一趟",
+      category: "business-finance",
+      conversationId: "70241"
+    }
+  ]
 }
 ```
 
@@ -136,6 +170,19 @@ Tests located in `tests/` directory, using jsdom environment.
 | Build failures | Run `npm install`, ensure Node.js >= 16.0.0 |
 | Lint errors | Run `npm run lint` to check, follow ESLint/Stylelint rules |
 
+## Deployment Configuration
+
+### Vercel Deployment
+The project includes `vercel.json` configuration:
+- Build command: `npm run convert && npm run build`
+- Output directory: `dist/`
+- Static site deployment with pre-generated vocabulary data
+
+### Local Development Server
+- Default: Python 3 HTTP server on port 3000
+- Alternative: `python3 -m http.server 3000` if npm script fails
+- All assets served from project root
+
 ## Constraints
 
 1. **No frameworks/bundlers**: Vanilla JS only, direct browser loading
@@ -143,3 +190,32 @@ Tests located in `tests/` directory, using jsdom environment.
 3. **Simplified Chinese**: All translations use Simplified characters
 4. **Mobile-first**: 320px to 1400px+ responsive design
 5. **Browser support**: Chrome 90+, Firefox 88+, Safari 14+, Edge 90+
+6. **Web Speech API required**: TTS functionality depends on browser support
+
+## Important Development Notes
+
+### Module Loading Order
+Modules must be loaded in this specific order in index.html:
+1. EventBus and Storage (utils)
+2. Core modules (VocabularyManager, ProgressTracker) 
+3. Audio modules (TTSEngine, VoiceSelector, AudioControls)
+4. UI modules (UIController, SettingsPanel)
+5. App coordinator (App.js) - must be last
+
+### Global Window Objects
+All modules attach to window for cross-module communication:
+- `window.eventBus` - Central event system
+- `window.vocabularyManager` - Data management
+- `window.audioControls` - Playback control
+- `window.ttsEngine` - Speech synthesis
+- `window.cclApp` - Main app instance
+
+### Required Data Generation
+The app will NOT work without these files in data/generated/:
+- `vocabulary-data.js` (from `npm run convert`)
+- `conversation-vocabulary-data.js` (from `npm run extract-vocab-from-conversations`)
+
+### Testing Setup
+- Tests use jsdom environment (configured in package.json)
+- No test files exist yet but Jest is configured
+- Test directory should be `/tests/` when created

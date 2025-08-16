@@ -28,7 +28,7 @@ npm run validate              # Validate all vocabulary data
 # Production:
 npm run build                 # Minify and build for production
 npm run deploy                # Full pipeline: build + validate
-npm run vercel-build          # Vercel deployment: convert + build
+npm run vercel-build          # Vercel deployment: convert + extract + build
 
 # Cleanup:
 npm run clean                 # Remove dist/ and data/generated/
@@ -70,13 +70,12 @@ src/js/
 ├── ui/             # UIController, SettingsPanel (vocabulary switcher)
 └── utils/          # EventBus, Storage (localStorage wrapper)
 
-scripts/            # Build tools (6 files) 
+scripts/            # Build tools (5 files) 
 ├── build-vocabulary.js     # Generate specialized vocabulary from markdown
 ├── conversation-vocabulary-extractor.js # Extract _xxx_ highlighted terms from merged file
-├── extract-conversations.js # Legacy: Process individual conversation files
+├── extract-conversations.js # Legacy: Process individual conversation files  
 ├── validate.js             # Data integrity validation
-├── build.js               # Production build with minification
-└── use-manual-conversation-data.js # Switch to manual conversation data (Vercel)
+└── build.js               # Production build with minification
 ```
 
 ## Key Features

@@ -15,7 +15,7 @@
     "clean": "rm -rf dist/ data/generated/",
     "start": "npm run convert && npm run dev",
     "deploy": "npm run build && npm run validate",
-    "vercel-build": "npm run convert && node scripts/use-manual-conversation-data.js && npm run build"
+    "vercel-build": "npm run convert && npm run extract-vocab-from-conversations && npm run build"
   },
   "keywords": [
     "ccl",

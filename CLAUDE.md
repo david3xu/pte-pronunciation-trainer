@@ -18,8 +18,7 @@ npm run dev                   # Start server at http://localhost:3000
 npm start                     # Alias: convert + dev
 
 # Optional Data Processing:
-npm run extract-conversations            # Extract conversation dialogues (raw data exists)
-npm run extract-smart-vocab              # Smart vocabulary extraction (alternative approach)
+npm run extract-conversations            # Extract conversation dialogues (legacy - raw data exists)
 
 # Quality & Testing:
 npm run lint                  # ESLint for JS + Stylelint for CSS
@@ -48,7 +47,7 @@ npm run test -- --coverage    # Coverage report
 ### Data Pipeline (Critical)
 ```
 data/vocabulary/*.md → scripts/build-vocabulary.js → data/generated/vocabulary-data.js → Browser
-data-processing/extractors/*.md → scripts/conversation-vocabulary-extractor.js → data/generated/conversation-vocabulary-data.js → Browser
+data-processing/extractors/merged-70241-70158.md (with _xxx_ highlights) → scripts/conversation-vocabulary-extractor.js → data/generated/conversation-vocabulary-data.js → Browser
 ```
 **⚠️ App requires generated JS files. Run both `npm run convert` and `npm run extract-vocab-from-conversations` to enable dual vocabulary system.**
 
@@ -71,23 +70,22 @@ src/js/
 ├── ui/             # UIController, SettingsPanel (vocabulary switcher)
 └── utils/          # EventBus, Storage (localStorage wrapper)
 
-scripts/            # Build tools (7 files)
-├── build-vocabulary.js     # Generate specialized vocabulary
-├── conversation-vocabulary-extractor.js # Extract vocabulary from conversations
-├── extract-conversations.js # Process conversation dialogues
-├── validate.js             # Data integrity checks
+scripts/            # Build tools (6 files) 
+├── build-vocabulary.js     # Generate specialized vocabulary from markdown
+├── conversation-vocabulary-extractor.js # Extract _xxx_ highlighted terms from merged file
+├── extract-conversations.js # Legacy: Process individual conversation files
+├── validate.js             # Data integrity validation
 ├── build.js               # Production build with minification
-├── use-manual-conversation-data.js # Manual conversation data handling
-└── manual-conversation-processor.js # Manual conversation processing
+└── use-manual-conversation-data.js # Switch to manual conversation data (Vercel)
 ```
 
 ## Key Features
 
 ### Dual Vocabulary System
 - **Specialized Terms**: 1,618 domain-specific terms from markdown files across 6 domains
-- **Conversation-Based**: 1,624 terms extracted from real CCL conversation dialogues across 8 domains
+- **Conversation-Based**: Terms extracted from manually highlighted (_xxx_) key phrases in real CCL conversations
 - **Settings Toggle**: Users can switch between vocabulary sources in settings panel
-- **Contextual Examples**: Conversation vocabulary includes example sentences from source dialogues
+- **Contextual Examples**: Conversation vocabulary includes bilingual example sentences from source dialogues
 - **Persistent Choice**: Vocabulary source preference saved in localStorage
 
 ### Text-to-Speech
@@ -138,11 +136,11 @@ Conversation Vocabulary:
 window.conversationVocabularyData = {
   vocabulary: [
     {
-      english: "drop by to visit the site",
-      chinese: "",
-      difficulty: "hard",
-      example: "Hey, the office mentioned you'd drop by to visit the site again today.",
-      exampleChinese: "嗨，办公室那边说你今天要再来工地一趟",
+      english: "crew",
+      chinese: "施工队",
+      difficulty: "easy",
+      example: "The crew has now finished the walls, floors, and doors.",
+      exampleChinese: "施工队/工人们现在已经做完墙壁、地板和门了。",
       category: "business-finance",
       conversationId: "70241"
     }

@@ -35,6 +35,7 @@ npm run clean                 # Remove dist/ and data/generated/
 
 # Analysis:
 npm run analyze-vocabulary    # Advanced vocabulary-conversation analysis
+npm run extract-smart-vocab   # Additional vocabulary processing script
 
 # Single Test:
 npm run test -- --testNamePattern="specific test"   # Run specific test
@@ -171,9 +172,11 @@ Tests located in `tests/` directory, using jsdom environment.
 
 ### Vercel Deployment
 The project includes `vercel.json` configuration:
-- Build command: `npm run convert && npm run build`
+- Build command: `npm run convert && npm run build` (automatically runs both data generation steps)
+- Uses `@vercel/static-build` buildpack
 - Output directory: `dist/`
 - Static site deployment with pre-generated vocabulary data
+- Production build pipeline: `npm run vercel-build` (convert + extract + build)
 
 ### Local Development Server
 - Default: Python 3 HTTP server on port 3000
@@ -214,5 +217,8 @@ The app will NOT work without these files in data/generated/:
 
 ### Testing Setup
 - Tests use jsdom environment (configured in package.json)
-- No test files exist yet but Jest is configured
-- Test directory should be `/tests/` when created
+- Test directory: `/tests/` (currently empty - no test files exist yet)
+- Coverage collection from `src/**/*.js`
+- Jest configuration includes test pattern matching for `**/tests/**/*.test.js`
+- ESLint configuration: ES2021, browser environment, semicolons required
+- Stylelint configuration: Standard config, 2-space indentation, single quotes

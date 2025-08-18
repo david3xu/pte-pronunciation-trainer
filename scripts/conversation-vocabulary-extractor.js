@@ -90,12 +90,15 @@ class ConversationVocabularyExtractor {
 
     /**
      * Extract highlighted terms from English/Chinese sentence pair
+     * Rule 1: Split by "|" for both English and Chinese - use corresponding parts as examples
+     * Rule 2: If a part contains multiple _xxx_ terms, extract each term but use same example part
      */
     extractTermsFromSentencePair(englishLine, chineseLine, conversation, sentenceNumber) {
         // Split both lines by | to get corresponding parts
-        const englishParts = englishLine.split('|');
+        const englishParts = englishLine.replace(/^\d+\.\s*/, '').split('|');
         const chineseParts = chineseLine.split('|');
         
+        // Process each part separately
         for (let i = 0; i < englishParts.length; i++) {
             const englishPart = englishParts[i];
             const chinesePart = chineseParts[i] || ''; // Fallback if Chinese parts don't match
@@ -104,14 +107,15 @@ class ConversationVocabularyExtractor {
             const highlightedTerms = englishPart.match(/_([^_]+)_/g);
             
             if (highlightedTerms) {
+                // Get the clean example sentence for this part (remove highlighting)
+                const partExample = englishPart.replace(/_([^_]+)_/g, '$1').trim();
+                const partExampleChinese = chinesePart.trim();
+                
+                // Extract each term but use the same part example
                 for (const highlighted of highlightedTerms) {
                     const term = highlighted.replace(/_/g, '').trim();
                     
                     if (term && term.length > 1) {
-                        // Get the full sentence for context (remove highlighting for example)
-                        const fullSentence = englishPart.replace(/^\d+\.\s*/, '').replace(/_([^_]+)_/g, '$1').trim();
-                        const fullChineseSentence = chinesePart.trim();
-                        
                         // Try to extract Chinese translation for the specific term
                         const chineseTranslation = this.extractChineseForTerm(term, englishPart, chinesePart);
                         
@@ -119,8 +123,8 @@ class ConversationVocabularyExtractor {
                             english: term,
                             chinese: chineseTranslation,
                             difficulty: this.classifyDifficulty(term),
-                            example: fullSentence,
-                            exampleChinese: fullChineseSentence,
+                            example: partExample,           // Part-specific example
+                            exampleChinese: partExampleChinese, // Part-specific Chinese
                             category: conversation.category,
                             conversationId: conversation.id,
                             conversationTitle: conversation.title,

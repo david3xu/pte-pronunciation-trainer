@@ -12,12 +12,13 @@ const fs = require('fs');
 const path = require('path');
 
 class ConversationVocabularyExtractor {
-    constructor() {
-        this.mergedFile = path.join(__dirname, '../data-processing/extractors/merged-70241-70158.md');
+    constructor(inputFile = null) {
+        this.inputFile = inputFile || path.join(__dirname, '../data-processing/extractors/merged-70241-70158.md');
         this.outputDir = path.join(__dirname, '../data/generated');
         this.reportsDir = path.join(__dirname, '../reports');
         this.vocabularyItems = [];
         this.conversationData = [];
+        this.dialoguesWithTerms = new Set(); // Track dialogues that contain highlighted terms
         
         // Ensure output directories exist
         [this.outputDir, this.reportsDir].forEach(dir => {
@@ -43,12 +44,21 @@ class ConversationVocabularyExtractor {
 
     /**
      * Parse the merged conversation file and extract highlighted terms
+     * Only process dialogues that contain _xxx_ highlighted terms
      */
-    async processMergedFile() {
-        console.log('📋 Processing merged conversation file with highlighted terms...');
+    async processConversationFile() {
+        console.log(`📋 Processing conversation file: ${path.basename(this.inputFile)}`);
         
-        const content = fs.readFileSync(this.mergedFile, 'utf-8');
+        if (!fs.existsSync(this.inputFile)) {
+            throw new Error(`Input file not found: ${this.inputFile}`);
+        }
+        
+        const content = fs.readFileSync(this.inputFile, 'utf-8');
         const lines = content.split('\n');
+        
+        // First pass: identify dialogues with highlighted terms
+        const dialoguesWithHighlights = this.identifyDialoguesWithHighlights(lines);
+        console.log(`📊 Found ${dialoguesWithHighlights.size} dialogues with highlighted terms`);
         
         let currentConversation = null;
         let sentenceNumber = 0;
@@ -57,16 +67,23 @@ class ConversationVocabularyExtractor {
         for (let i = 0; i < lines.length; i++) {
             const trimmed = lines[i].trim();
             
-            // Parse conversation header: #70241. Suite Bathroom Design Clarification–Business
-            const conversationMatch = trimmed.match(/^#(\d+)\.\s*(.+?)–(.+)$/);
+            // Parse conversation header: #70241. Suite Bathroom Design Clarification–Business or - Business
+            const conversationMatch = trimmed.match(/^#(\d+)\.\s*(.+?)[-–](.+)$/);
             if (conversationMatch) {
-                currentConversation = {
-                    id: conversationMatch[1],
-                    title: conversationMatch[2].trim(),
-                    domain: conversationMatch[3].trim().toLowerCase(),
-                    category: this.mapCategory(conversationMatch[3].trim().toLowerCase())
-                };
-                sentenceNumber = 0;
+                const conversationId = conversationMatch[1];
+                
+                // Only process if this dialogue contains highlighted terms
+                if (dialoguesWithHighlights.has(conversationId)) {
+                    currentConversation = {
+                        id: conversationId,
+                        title: conversationMatch[2].trim(),
+                        domain: conversationMatch[3].trim().toLowerCase(),
+                        category: this.mapCategory(conversationMatch[3].trim().toLowerCase())
+                    };
+                    sentenceNumber = 0;
+                } else {
+                    currentConversation = null; // Skip this dialogue
+                }
                 continue;
             }
             
@@ -85,7 +102,33 @@ class ConversationVocabularyExtractor {
             }
         }
         
-        console.log(`✅ Extracted ${this.vocabularyItems.length} highlighted terms from conversations`);
+        console.log(`✅ Extracted ${this.vocabularyItems.length} highlighted terms from ${this.dialoguesWithTerms.size} conversations`);
+    }
+
+    /**
+     * First pass: identify which dialogues contain highlighted terms _xxx_
+     */
+    identifyDialoguesWithHighlights(lines) {
+        const dialoguesWithHighlights = new Set();
+        let currentDialogueId = null;
+        
+        for (const line of lines) {
+            const trimmed = line.trim();
+            
+            // Check for conversation header
+            const conversationMatch = trimmed.match(/^#(\d+)\.\s*(.+?)[-–](.+)$/);
+            if (conversationMatch) {
+                currentDialogueId = conversationMatch[1];
+                continue;
+            }
+            
+            // Check if this line contains highlighted terms
+            if (currentDialogueId && trimmed.includes('_') && trimmed.match(/_[^_]+_/)) {
+                dialoguesWithHighlights.add(currentDialogueId);
+            }
+        }
+        
+        return dialoguesWithHighlights;
     }
 
     /**
@@ -118,6 +161,9 @@ class ConversationVocabularyExtractor {
                     if (term && term.length > 1) {
                         // Try to extract Chinese translation for the specific term
                         const chineseTranslation = this.extractChineseForTerm(term, englishPart, chinesePart);
+                        
+                        // Track that this dialogue contains highlighted terms
+                        this.dialoguesWithTerms.add(conversation.id);
                         
                         this.addVocabularyItem({
                             english: term,
@@ -210,9 +256,9 @@ class ConversationVocabularyExtractor {
         const data = {
             generatedAt: new Date().toISOString(),
             totalTerms: this.vocabularyItems.length,
-            totalConversations: new Set(this.vocabularyItems.map(item => item.conversationId)).size,
+            totalConversations: this.dialoguesWithTerms.size, // Only count dialogues with highlighted terms
             extractionMethod: 'highlighted-terms',
-            sourceFile: 'merged-70241-70158.md',
+            sourceFile: path.basename(this.inputFile),
             vocabulary: this.vocabularyItems
         };
 
@@ -253,7 +299,7 @@ window.conversationVocabularyData = ${JSON.stringify(data, null, 2)};
 ## Summary
 - **Generated**: ${data.generatedAt}
 - **Method**: Manually highlighted terms extraction
-- **Source**: merged-70241-70158.md
+- **Source**: ${data.sourceFile}
 - **Total Terms**: ${data.totalTerms}
 - **Total Conversations**: ${data.totalConversations}
 
@@ -306,7 +352,7 @@ ${this.generateSampleTerms()}
         try {
             console.log('🚀 Starting highlighted terms vocabulary extraction...');
             
-            await this.processMergedFile();
+            await this.processConversationFile();
             await this.generateOutputFiles();
             
             console.log('✅ Extraction completed successfully!');
@@ -319,7 +365,16 @@ ${this.generateSampleTerms()}
 
 // Run if called directly
 if (require.main === module) {
-    const extractor = new ConversationVocabularyExtractor();
+    // Check for command line argument for input file
+    const inputFile = process.argv[2] || null;
+    
+    if (inputFile && !fs.existsSync(inputFile)) {
+        console.error(`❌ Input file not found: ${inputFile}`);
+        console.log('Usage: node conversation-vocabulary-extractor.js [input-file.md]');
+        process.exit(1);
+    }
+    
+    const extractor = new ConversationVocabularyExtractor(inputFile);
     extractor.run();
 }
 

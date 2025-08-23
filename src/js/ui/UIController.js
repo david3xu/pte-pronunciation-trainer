@@ -17,12 +17,6 @@ class UIController {
             this.updateButtons();
         });
 
-        window.eventBus.on('vocabulary:sourceChanged', (data) => {
-            this.updateCategoryDisplay();
-            this.updateButtons();
-            this.displayFirstWord();
-        });
-
         // Listen for word display events
         window.eventBus.on('word:display', (data) => {
             this.displayWord(data.word, data.index);

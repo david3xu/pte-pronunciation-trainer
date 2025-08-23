@@ -30,9 +30,6 @@ class SettingsPanel {
 
         // Listen for settings changes to persist them
         this.setupSettingsPersistence();
-        
-        // Setup vocabulary source selector
-        this.setupVocabularySourceSelector();
     }
 
     setupSettingsPersistence() {
@@ -65,75 +62,6 @@ class SettingsPanel {
         });
     }
 
-    setupVocabularySourceSelector() {
-        const vocabularySourceSelect = document.getElementById('vocabularySourceSelect');
-        if (!vocabularySourceSelect) return;
-        
-        vocabularySourceSelect.addEventListener('change', (e) => {
-            const selectedSource = e.target.value;
-            console.log('Vocabulary source changed to:', selectedSource);
-            
-            // Save the setting
-            this.saveSetting('vocabularySource', selectedSource);
-            
-            // Switch vocabulary source in the manager
-            if (window.vocabularyManager) {
-                window.vocabularyManager.switchVocabularySource(selectedSource);
-            }
-            
-            // Update stats display
-            this.updateVocabularyStats(selectedSource);
-        });
-        
-        // Listen for vocabulary source changes to update UI
-        window.eventBus.on('vocabulary:sourceChanged', (data) => {
-            this.updateVocabularySourceUI(data);
-        });
-    }
-
-    updateVocabularyStats(source) {
-        // Find and update the description text
-        const vocabularySourceSelect = document.getElementById('vocabularySourceSelect');
-        if (!vocabularySourceSelect) return;
-        
-        const description = vocabularySourceSelect.parentElement.querySelector('.setting-description');
-        if (description) {
-            if (source === 'conversation') {
-                description.textContent = 'Practical terms from real conversations - 100% have examples';
-            } else {
-                description.textContent = 'Specialized domain terms across 6 categories';
-            }
-        }
-    }
-
-    updateVocabularySourceUI(data) {
-        const vocabularySourceSelect = document.getElementById('vocabularySourceSelect');
-        if (vocabularySourceSelect) {
-            vocabularySourceSelect.value = data.source;
-        }
-        
-        this.updateVocabularyStats(data.source);
-        
-        // Update category dropdown to reflect new categories
-        const categorySelect = document.getElementById('categorySelect');
-        if (categorySelect && data.availableCategories) {
-            // Clear and repopulate category options
-            categorySelect.innerHTML = '';
-            
-            // Add available categories for this vocabulary source
-            data.availableCategories.forEach(categoryKey => {
-                const option = document.createElement('option');
-                option.value = categoryKey;
-                option.textContent = window.vocabularyManager.getCategoryLabel(categoryKey);
-                if (categoryKey === data.category) {
-                    option.selected = true;
-                }
-                categorySelect.appendChild(option);
-            });
-        }
-        
-        console.log(`Switched to ${data.source} vocabulary with ${data.availableCategories.length} categories`);
-    }
 
     togglePanel() {
         const settingsPanel = document.getElementById('settingsPanel');
@@ -179,7 +107,6 @@ class SettingsPanel {
     loadSettings() {
         // Load and apply saved settings
         const savedSettings = {
-            vocabularySource: window.storage.getItem('vocabularySource') || 'conversation',
             category: window.storage.getItem('category') || 'all-categories',
             difficulty: window.storage.getItem('difficulty') || 'all',
             speechRate: window.storage.getItem('speechRate') || 1.0,
@@ -189,7 +116,6 @@ class SettingsPanel {
         };
 
         // Apply settings to UI elements
-        this.applySettingToElement('vocabularySourceSelect', savedSettings.vocabularySource);
         this.applySettingToElement('categorySelect', savedSettings.category);
         this.applySettingToElement('difficultySelect', savedSettings.difficulty);
         this.applySettingToElement('speedSelect', savedSettings.speechRate);
@@ -197,12 +123,7 @@ class SettingsPanel {
         this.applySettingToElement('repeatSelect', savedSettings.repeatMode);
         this.applySettingToElement('voiceSelect', savedSettings.preferredVoice || 'Microsoft James - English (Australia)');
 
-        // Apply vocabulary source setting first
-        if (window.vocabularyManager && savedSettings.vocabularySource) {
-            window.vocabularyManager.switchVocabularySource(savedSettings.vocabularySource);
-        }
-
-        // Apply other settings to modules
+        // Apply settings to modules
         window.vocabularyManager.currentCategory = savedSettings.category;
         window.vocabularyManager.currentDifficulty = savedSettings.difficulty;
         window.ttsEngine.setSpeechRate(savedSettings.speechRate);

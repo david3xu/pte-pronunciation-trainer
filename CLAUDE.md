@@ -10,15 +10,11 @@ CCL (NAATI Credentialed Community Language) pronunciation training web applicati
 
 ```bash
 # Data Generation (REQUIRED before running):
-npm run convert                          # Generate specialized vocabulary (1,618 terms)
-npm run extract-vocab-from-conversations # Generate conversation vocabulary (1,624 terms)
+npm run extract-vocab                    # Generate conversation vocabulary (937 terms)
 
 # Development:
 npm run dev                   # Start server at http://localhost:3000
-npm start                     # Alias: convert + dev
-
-# Optional Data Processing:
-npm run extract-conversations            # Extract conversation dialogues (legacy - raw data exists)
+npm start                     # Alias: extract-vocab + dev
 
 # Quality & Testing:
 npm run lint                  # ESLint for JS + Stylelint for CSS
@@ -28,14 +24,10 @@ npm run validate              # Validate all vocabulary data
 # Production:
 npm run build                 # Minify and build for production
 npm run deploy                # Full pipeline: build + validate
-npm run vercel-build          # Vercel deployment: convert + extract + build
+npm run vercel-build          # Vercel deployment: extract-vocab + build
 
 # Cleanup:
 npm run clean                 # Remove dist/ and data/generated/
-
-# Analysis:
-npm run analyze-vocabulary    # Advanced vocabulary-conversation analysis
-npm run extract-smart-vocab   # Additional vocabulary processing script
 
 # Single Test:
 npm run test -- --testNamePattern="specific test"   # Run specific test
@@ -47,10 +39,9 @@ npm run test -- --coverage    # Coverage report
 
 ### Data Pipeline (Critical)
 ```
-data/vocabulary/*.md → scripts/build-vocabulary.js → data/generated/vocabulary-data.js → Browser
 data-processing/extractors/merged-70241-70158.md (with _xxx_ highlights) → scripts/conversation-vocabulary-extractor.js → data/generated/conversation-vocabulary-data.js → Browser
 ```
-**⚠️ App requires generated JS files. Run both `npm run convert` and `npm run extract-vocab-from-conversations` to enable dual vocabulary system.**
+**⚠️ App requires generated JS files. Run `npm run extract-vocab` before starting.**
 
 ### Module Pattern
 ```javascript
@@ -71,22 +62,19 @@ src/js/
 ├── ui/             # UIController, SettingsPanel (vocabulary switcher)
 └── utils/          # EventBus, Storage (localStorage wrapper)
 
-scripts/            # Build tools (5 files) 
-├── build-vocabulary.js     # Generate specialized vocabulary from markdown
+scripts/            # Build tools (3 files) 
 ├── conversation-vocabulary-extractor.js # Extract _xxx_ highlighted terms from merged file
-├── extract-conversations.js # Legacy: Process individual conversation files  
 ├── validate.js             # Data integrity validation
 └── build.js               # Production build with minification
 ```
 
 ## Key Features
 
-### Dual Vocabulary System
-- **Specialized Terms**: 1,618 domain-specific terms from markdown files across 6 domains
-- **Conversation-Based**: Terms extracted from manually highlighted (_xxx_) key phrases in real CCL conversations
-- **Settings Toggle**: Users can switch between vocabulary sources in settings panel
-- **Contextual Examples**: Conversation vocabulary includes bilingual example sentences from source dialogues
-- **Persistent Choice**: Vocabulary source preference saved in localStorage
+### Conversation-Based Vocabulary
+- **Practical Terms**: 937 terms extracted from manually highlighted (_xxx_) key phrases in real CCL conversations
+- **Contextual Examples**: All vocabulary includes bilingual example sentences from source dialogues  
+- **Real-world Usage**: Terms selected from actual NAATI CCL test scenarios
+- **Category Organization**: Organized across 6 domains (social-welfare, education, legal-government, business-finance, medical-healthcare, travel-immigration)
 
 ### Text-to-Speech
 - Australian English (en-AU) voices prioritized for NAATI context
@@ -116,22 +104,6 @@ scripts/            # Build tools (5 files)
 ```
 
 ### Output (JavaScript)
-
-Specialized Vocabulary:
-```javascript
-window.vocabularyData = {
-  categories: {
-    "social-welfare": {
-      name: "Social Welfare",
-      words: [
-        { english: "Social welfare payment", chinese: "社会福利金", difficulty: "easy" }
-      ]
-    }
-  }
-}
-```
-
-Conversation Vocabulary:
 ```javascript
 window.conversationVocabularyData = {
   vocabulary: [
@@ -162,7 +134,7 @@ Tests located in `tests/` directory, using jsdom environment.
 
 | Issue | Solution |
 |-------|----------|
-| "No vocabulary loaded" | Run `npm run convert` and `npm run extract-vocab-from-conversations` |
+| "No vocabulary loaded" | Run `npm run extract-vocab` |
 | Server won't start | Ensure Python 3 installed, or use `python3 -m http.server 3000` |
 | TTS not working | Use Chrome/Edge, check browser audio permissions |
 | Build failures | Run `npm install`, ensure Node.js >= 16.0.0 |
@@ -172,11 +144,11 @@ Tests located in `tests/` directory, using jsdom environment.
 
 ### Vercel Deployment
 The project includes `vercel.json` configuration:
-- Build command: `npm run convert && npm run build` (automatically runs both data generation steps)
+- Build command: `npm run extract-vocab && npm run build`
 - Uses `@vercel/static-build` buildpack
 - Output directory: `dist/`
 - Static site deployment with pre-generated vocabulary data
-- Production build pipeline: `npm run vercel-build` (convert + extract + build)
+- Production build pipeline: `npm run vercel-build` (extract-vocab + build)
 
 ### Local Development Server
 - Default: Python 3 HTTP server on port 3000
@@ -211,9 +183,8 @@ All modules attach to window for cross-module communication:
 - `window.cclApp` - Main app instance
 
 ### Required Data Generation
-The app will NOT work without these files in data/generated/:
-- `vocabulary-data.js` (from `npm run convert`)
-- `conversation-vocabulary-data.js` (from `npm run extract-vocab-from-conversations`)
+The app will NOT work without this file in data/generated/:
+- `conversation-vocabulary-data.js` (from `npm run extract-vocab`)
 
 ### Testing Setup
 - Tests use jsdom environment (configured in package.json)

@@ -5,17 +5,15 @@
   "main": "index.html",
   "scripts": {
     "dev": "python3 -m http.server 3000",
-    "convert": "node scripts/build-vocabulary.js",
-    "extract-conversations": "node scripts/extract-conversations.js",
-    "extract-vocab-from-conversations": "node scripts/conversation-vocabulary-extractor.js",
+    "extract-vocab": "node scripts/conversation-vocabulary-extractor.js",
     "build": "node scripts/build.js",
     "test": "jest",
     "lint": "eslint src/js/**/*.js && stylelint src/css/**/*.css",
     "validate": "node scripts/validate.js",
     "clean": "rm -rf dist/ data/generated/",
-    "start": "npm run convert && npm run dev",
+    "start": "npm run extract-vocab && npm run dev",
     "deploy": "npm run build && npm run validate",
-    "vercel-build": "npm run convert && npm run extract-vocab-from-conversations && npm run build"
+    "vercel-build": "npm run extract-vocab && npm run build"
   },
   "keywords": [
     "ccl",

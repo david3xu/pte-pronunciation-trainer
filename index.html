@@ -42,14 +42,7 @@
         <!-- Collapsible settings panel -->
         <div class="settings-panel collapsed" id="settingsPanel">
             <div class="settings-grid">
-                <div class="setting-item">
-                    <label for="vocabularySourceSelect">Vocabulary Set:</label>
-                    <select id="vocabularySourceSelect">
-                        <option value="specialized">📚 Specialized Terms (1,618)</option>
-                        <option value="conversation" selected>💬 Conversation-Based (2,691)</option>
-                    </select>
-                    <small class="setting-description">Choose between specialized vocabulary or conversation-extracted terms</small>
-                </div>
+                <!-- Vocabulary source removed - only using conversation-based -->
                 <div class="setting-item">
                     <label for="categorySelect">Category:</label>
                     <select id="categorySelect">
@@ -109,32 +102,28 @@
     <!-- Status display for screen readers -->
     <div class="sr-only" id="statusDisplay" aria-live="polite"></div>
 
-    <script src="data/generated/vocabulary-data.js?v=5&t=1723418900"></script>
-    <script src="data/generated/conversation-vocabulary-data.js?v=7&t=1734121200"></script>
+    <!-- Only load conversation vocabulary -->
+    <script src="data/generated/conversation-vocabulary-data.js?v=8"></script>
     
-    <!-- Debug script to verify data loading (v2) -->  
+    <!-- Debug script to verify data loading -->  
     <script>
         console.log('=== Data Loading Check ===');
-        console.log('Specialized vocabulary loaded:', typeof vocabularyData !== 'undefined');
         console.log('Conversation vocabulary loaded:', typeof conversationVocabularyData !== 'undefined');
         if (typeof conversationVocabularyData !== 'undefined') {
-            console.log('Conversation data structure:', Object.keys(conversationVocabularyData));
-            console.log('Conversation vocabulary is array:', Array.isArray(conversationVocabularyData.vocabulary));
-            console.log('Total conversation terms:', conversationVocabularyData.vocabulary?.length || 0);
-            console.log('Available domains:', conversationVocabularyData.domains);
+            console.log('Total terms:', conversationVocabularyData.totalTerms);
+            console.log('Vocabulary array length:', conversationVocabularyData.vocabulary?.length || 0);
+            console.log('Data structure:', Object.keys(conversationVocabularyData));
         }
         
         // Debug functions for console testing
         window.debugVocab = {
             checkData: function() {
                 console.log('=== Debug Vocabulary Check ===');
-                console.log('Current source:', window.vocabularyManager?.currentVocabularySource);
-                console.log('Specialized loaded:', typeof vocabularyData !== 'undefined');
                 console.log('Conversation loaded:', typeof conversationVocabularyData !== 'undefined');
                 
                 if (typeof conversationVocabularyData !== 'undefined') {
-                    console.log('Conversation total terms:', conversationVocabularyData.totalTerms);
-                    console.log('Conversation vocabulary is array:', Array.isArray(conversationVocabularyData.vocabulary));
+                    console.log('Total terms:', conversationVocabularyData.totalTerms);
+                    console.log('Vocabulary array:', Array.isArray(conversationVocabularyData.vocabulary));
                     console.log('Array length:', conversationVocabularyData.vocabulary?.length || 0);
                     console.log('Sample first item:', conversationVocabularyData.vocabulary?.[0]);
                 }
@@ -143,26 +132,6 @@
                     console.log('Current words count:', window.vocabularyManager.getTotalWords());
                     console.log('Category counts:', window.vocabularyManager.getCategoryCounts());
                 }
-            },
-            
-            switchToConversation: function() {
-                console.log('=== Switching to conversation vocabulary ===');
-                window.vocabularyManager?.switchVocabularySource('conversation');
-                this.checkData();
-                
-                // Test first word structure
-                const firstWord = window.vocabularyManager?.getCurrentWord(0);
-                if (firstWord) {
-                    console.log('First word structure:', firstWord);
-                    console.log('Has example property:', !!firstWord.example);
-                    console.log('Example content:', firstWord.example);
-                }
-            },
-            
-            switchToSpecialized: function() {
-                console.log('=== Switching to specialized vocabulary ===');
-                window.vocabularyManager?.switchVocabularySource('specialized');
-                this.checkData();
             }
         };
     </script>

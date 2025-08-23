@@ -18,8 +18,8 @@ cd ccl-pronunciation-trainer
 # Install dependencies (optional - pure vanilla JS)
 npm install
 
-# Generate vocabulary data
-npm run convert
+# Generate conversation vocabulary data
+npm run extract-vocab
 
 # Start development server
 npm run dev
@@ -31,19 +31,19 @@ npm run dev
 
 ```bash
 # Core Development
-npm run dev        # Start Python HTTP server on port 3000
-npm run convert    # Convert markdown vocabulary to JavaScript with difficulty classification
-npm run validate   # Comprehensive data validation with reporting
+npm run dev          # Start Python HTTP server on port 3000
+npm run extract-vocab # Extract conversation vocabulary with difficulty classification
+npm run validate     # Comprehensive data validation with reporting
 
 # Production Build
-npm run build      # Bundle and minify for production
-npm run clean      # Clean dist/ and generated/ directories
-npm run deploy     # Full build pipeline with validation
+npm run build        # Bundle and minify for production
+npm run clean        # Clean dist/ and generated/ directories
+npm run deploy       # Full build pipeline with validation
 
 # Development Utilities
-npm start          # Alias for convert + dev
-npm test           # Run test suite (when implemented)
-npm run lint       # Lint JavaScript and CSS (when configured)
+npm start            # Alias for extract-vocab + dev
+npm test             # Run test suite (when implemented)
+npm run lint         # Lint JavaScript and CSS
 ```
 
 ### Docker Commands (Workspace-wide)
@@ -82,7 +82,7 @@ make reset          # Complete cleanup and rebuild
 ✅ **All modules implemented and tested**
 
 - Server running on `http://localhost:3000`
-- 1,618 vocabulary terms loaded and validated
+- 937 conversation vocabulary terms loaded and validated
 - All UI components functional with keyboard shortcuts
 - Progress tracking and settings persistence working
 - Mobile-responsive design verified

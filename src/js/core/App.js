@@ -26,8 +26,8 @@ class CCLPronunciationTrainer {
     }
 
     initializeModules() {
-        // 1. Initialize core data management
-        window.vocabularyManager.calculateCategoryCounts();
+        // 1. Initialize vocabulary manager (loads conversation data)
+        window.vocabularyManager.initialize();
         
         // 2. Initialize UI controller and bind events
         window.uiController.bindEventListeners();
@@ -35,16 +35,13 @@ class CCLPronunciationTrainer {
         // 3. Sync settings from HTML
         window.uiController.syncRepeatModeFromHTML();
         
-        // 4. Load initial category
-        window.vocabularyManager.loadCategory(window.vocabularyManager.currentCategory);
-        
-        // 5. Update initial UI state
+        // 4. Update initial UI state
         window.uiController.updateUI();
         
-        // 6. Populate voice options when available
+        // 5. Populate voice options when available
         this.initializeVoices();
         
-        // 7. Setup keyboard shortcuts
+        // 6. Setup keyboard shortcuts
         this.setupKeyboardShortcuts();
         
         console.log('All modules initialized successfully');

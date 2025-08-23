@@ -1,17 +1,16 @@
 # CCL Pronunciation Trainer
 
-A comprehensive web-based pronunciation training application for NAATI CCL (Credentialed Community Language) exam preparation. Choose between two powerful vocabulary sets:
+A comprehensive web-based pronunciation training application for NAATI CCL (Credentialed Community Language) exam preparation, featuring conversation-based vocabulary with real-world context.
 
-- **📚 Specialized Terms (1,618)** - Domain-specific CCL vocabulary  
-- **💬 Conversation-Based (1,600)** - Practical terms from real CCL exam dialogues with 100% sentence examples
+- **💬 Conversation-Based (937 terms)** - Practical terms from real CCL exam dialogues with 100% contextual examples
 
 ## Features ✅ Fully Implemented
 
-### 🎯 Dual Vocabulary System (NEW!)
-- **📚 Specialized Terms (1,618)** - Domain-specific CCL vocabulary across 6 domains
-- **💬 Conversation-Based (1,600)** - Practical terms extracted from real CCL conversations
-- **🔄 Instant Switching** - Toggle between vocabulary sets in settings
-- **📊 Smart Statistics** - Real-time coverage and example availability stats
+### 🎯 Conversation-Based Vocabulary System
+- **💬 Real CCL Terms (937)** - Practical vocabulary extracted from actual NAATI CCL test conversations
+- **📝 100% Contextual Examples** - Every term includes bilingual example sentences from source dialogues
+- **🏷️ Smart Categorization** - Organized across 6 domains (social-welfare, education, legal-government, business-finance, medical-healthcare, travel-immigration)
+- **📊 Intelligent Classification** - Difficulty-based learning with Easy/Normal/Hard progression
 
 ### 🔊 Advanced Pronunciation Training
 - **Australian English (en-AU) TTS** - Optimized for CCL exam context  
@@ -33,10 +32,9 @@ A comprehensive web-based pronunciation training application for NAATI CCL (Cred
 - **📝 Comprehensive Data Validation** with detailed error reporting
 
 ### 🚀 Production Features
-- **Custom Build Pipeline** with minification (~175KB total)
-- **Advanced Data Processing** - Multiple vocabulary extraction algorithms
+- **Custom Build Pipeline** with minification (~120KB total)
+- **Conversation Data Processing** - Advanced vocabulary extraction from highlighted conversation terms
 - **Comprehensive Analytics** - Usage statistics and vocabulary analysis tools
-- **Demo Mode** - Interactive vocabulary selector demonstration
 
 ## Quick Start ✅ Tested
 
@@ -48,11 +46,8 @@ cd ccl-pronunciation-trainer
 # Install dependencies
 npm install
 
-# Generate vocabulary data (1,618 specialized terms)
-npm run convert
-
-# Extract conversation-based vocabulary (1,600 practical terms)
-npm run extract-vocab-from-conversations
+# Generate conversation-based vocabulary (937 practical terms)
+npm run extract-vocab
 
 # Start development server (Python HTTP server)
 npm run dev
@@ -63,21 +58,68 @@ http://localhost:3000
 
 **Ready to use!** All features are implemented and tested.
 
+## Updating Vocabulary Data
+
+### 📝 Adding New Terms from Conversations
+
+When you have new CCL conversation data to add:
+
+```bash
+# 1. Update the main conversation file with highlighted terms
+# Edit: data-processing/extractors/merged-70241-70158.md
+# Use _term_ syntax to highlight new vocabulary (e.g., _insurance claim_)
+
+# 2. Test locally - regenerate vocabulary from updated conversations
+npm run extract-vocab
+
+# 3. Test in development server
+npm run dev
+
+# 4. Deploy to production - commit and push ONLY the raw data
+git add data-processing/extractors/merged-70241-70158.md
+git commit -m "Add new CCL vocabulary terms from conversations"
+git push origin main
+
+# Note: Generated files (data/generated/, reports/) are automatically 
+# created by Vercel during build - no need to commit them!
+```
+
+### 🔍 Highlighting Syntax
+
+In `data-processing/extractors/merged-70241-70158.md`, mark important terms with underscores:
+
+```markdown
+Speaker: The _insurance claim_ was processed quickly, and the _settlement amount_ was fair.
+翻译：保险理赔处理得很快，理赔金额也很公平。
+```
+
+The extraction script will automatically:
+- Extract highlighted terms: "insurance claim", "settlement amount" 
+- Include bilingual context sentences
+- Categorize by conversation domain (business-finance in this case)
+- Assign difficulty levels based on term complexity
+
+### 🚀 Deployment Considerations
+
+**For Vercel/Production deployments:**
+- **Only commit raw conversation data** (`merged-70241-70158.md`)
+- **Generated files are ignored by Git** (`data/generated/`, `reports/`)
+- **Vercel automatically runs** `npm run extract-vocab && npm run build` during deployment
+- **Fresh vocabulary is generated** from source conversations on each deploy
+
+**For manual deployments:**
+```bash
+npm run vercel-build    # Runs extract-vocab + build for production
+```
+
 ## Available Commands
 
 ### Core Development
 ```bash
-npm start                     # Convert + Dev (full setup)
+npm start                     # Extract vocabulary + Dev server (full setup)
 npm run dev                   # Start development server
-npm run convert               # Generate specialized vocabulary
+npm run extract-vocab         # Generate conversation-based vocabulary (937 terms)
 npm run validate              # Validate all data integrity
-```
-
-### Advanced Data Processing
-```bash
-npm run extract-conversations        # Extract conversation dialogues (2,018 sentences)
-npm run extract-vocab-from-conversations  # Generate conversation-based vocabulary
-npm run analyze-vocabulary          # Advanced vocabulary-conversation analysis
 ```
 
 ### Production & Build
@@ -87,34 +129,35 @@ npm run deploy               # Full deployment pipeline
 npm run clean                # Clean generated files
 ```
 
-## Vocabulary Domains
+## Vocabulary Domains (Conversation-Based)
 
 | Domain                   | Terms | Focus Areas                                           |
 | ------------------------ | ----- | ----------------------------------------------------- |
-| **Social Welfare**       | 201   | Government services, benefits, employment support     |
-| **Education**            | 308   | School systems, student behavior, academic assessment |
-| **Legal & Government**   | 300   | Court systems, legal procedures, criminal law         |
-| **Business & Finance**   | 200   | Banking, financial services, business operations      |
-| **Medical & Healthcare** | 346   | Medical specialties, procedures, healthcare systems   |
-| **Travel & Immigration** | 263   | Travel procedures, immigration, customs               |
+| **Business & Finance**   | 712   | Banking, financial services, business operations      |
+| **Social Welfare**       | 95    | Government services, benefits, employment support     |
+| **Legal & Government**   | 93    | Court systems, legal procedures, criminal law         |
+| **Medical & Healthcare** | 19    | Medical specialties, procedures, healthcare systems   |
+| **Education**            | 18    | School systems, student behavior, academic assessment |
+
+*All terms extracted from real CCL conversation scenarios with contextual examples.*
 
 ## Usage
 
 ### Difficulty-Based Learning
 
-**🟢 Easy Level (897 terms)**
-- Basic vocabulary: "card", "form", "help", "aged"
-- Single words and common phrases
+**🟢 Easy Level**
+- Basic vocabulary from conversations: "crew", "payment", "appointment"
+- Single words and common phrases from real dialogues
 - Perfect for beginners building confidence
 
-**🟡 Normal Level (500 terms)**
-- Intermediate terms: "eligibility", "assessment", "allowance"
-- 2-3 word phrases and government terminology
+**🟡 Normal Level**
+- Intermediate terms: "be pleased with the progress", "insurance claim"
+- 2-3 word phrases from actual CCL conversations
 - Standard CCL vocabulary complexity
 
-**🔴 Hard Level (227 terms)**
-- Advanced terms: "anaesthetist", "social security appeals tribunal"
-- Technical specialties and complex multi-word phrases
+**🔴 Hard Level**
+- Advanced terms: "drop by to visit the site", "comprehensive report"
+- Complex multi-word phrases from professional conversations
 - Challenge mode for advanced learners
 
 ### Auto-Play Mode
@@ -143,15 +186,17 @@ npm run clean                # Clean generated files
 ```
 ccl-pronunciation-trainer/
 ├── src/                    # Source code
-│   ├── js/                # Refactored modular JavaScript
-│   │   ├── core/          # App coordinator & data management
+│   ├── js/                # Modular JavaScript
+│   │   ├── core/          # App coordinator & vocabulary management
 │   │   ├── audio/         # TTS & voice functionality  
 │   │   ├── ui/            # Interface & settings
 │   │   └── utils/         # EventBus & storage utilities
 │   └── css/               # Modular stylesheets
-├── data/                  # Vocabulary data (1,618 terms)
-│   └── vocabulary/        # Markdown source files
-├── scripts/               # Build & validation scripts
+├── data/                  # Conversation vocabulary data (937 terms)
+│   ├── conversation/      # Raw conversation data
+│   └── generated/         # Generated vocabulary files
+├── data-processing/       # Source conversation files (117 conversations)
+├── scripts/               # Build & validation scripts (3 files)
 ├── docs/                  # Documentation
 └── dist/                  # Production build
 ```
@@ -162,15 +207,15 @@ See [DEVELOPMENT.md](docs/DEVELOPMENT.md) for detailed instructions.
 
 ```bash
 # Core Commands (all tested and working)
-npm run dev        # Start development server on port 3000
-npm run convert    # Generate vocabulary data from markdown
-npm run validate   # Comprehensive data validation
-npm run build      # Production build with minification
-npm run deploy     # Full deployment pipeline
+npm run dev          # Start development server on port 3000
+npm run extract-vocab # Generate conversation vocabulary (937 terms)
+npm run validate     # Comprehensive data validation
+npm run build        # Production build with minification
+npm run deploy       # Full deployment pipeline
 
 # Additional Commands
-npm start          # Convert + dev server
-npm run clean      # Clean dist/ and generated/ directories
+npm start            # Extract vocabulary + dev server
+npm run clean        # Clean dist/ and generated/ directories
 ```
 
 **Implementation Status:** All modules completed and tested ✅

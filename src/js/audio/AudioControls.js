@@ -20,13 +20,6 @@ class AudioControls {
         this.isPlaying = true;
         this.showPlayingUI();
         
-        // Update status based on repeat mode
-        if (this.repeatMode === 'individual' || this.repeatMode === 'intensive') {
-            window.progressTracker.updateStatus(`Playing... (1/${window.ttsEngine.getTargetRepeats()})`);
-        } else {
-            window.progressTracker.updateStatus('Playing...');
-        }
-        
         console.log(`Starting auto-play from index ${this.currentIndex}`);
         
         // Emit auto-play start event
@@ -77,7 +70,7 @@ class AudioControls {
                 index: this.currentIndex
             });
 
-            // Update display for current word
+            // Update display for current word - this maintains the term index
             window.eventBus.emit('word:display', {
                 word: currentWord,
                 index: this.currentIndex
@@ -101,12 +94,7 @@ class AudioControls {
         for (let repeatCount = 0; repeatCount < targetRepeats; repeatCount++) {
             if (!this.isPlaying) break;
             
-            // Update status to show current repetition
-            if (targetRepeats > 1) {
-                const statusMessage = `Playing... (${repeatCount + 1}/${targetRepeats})`;
-                window.progressTracker.updateStatus(statusMessage);
-            }
-            
+            // Don't update status - let the term index display remain visible
             await window.ttsEngine.pronounceWord(word, repeatCount);
             
             // Add delay between repetitions (except after last repetition)

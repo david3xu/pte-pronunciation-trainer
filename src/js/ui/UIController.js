@@ -74,15 +74,7 @@ class UIController {
             
             console.log(`Repeat mode changed to: ${e.target.value}`);
             
-            // Update status if currently playing
-            if (window.audioControls.isPlaying) {
-                const targetRepeats = window.ttsEngine.getTargetRepeats();
-                if (e.target.value === 'individual' || e.target.value === 'intensive') {
-                    window.progressTracker.updateStatus(`Playing... (1/${targetRepeats})`);
-                } else {
-                    window.progressTracker.updateStatus('Playing...');
-                }
-            }
+            // Don't override the progress display during auto-play
         });
 
         // Voice selection

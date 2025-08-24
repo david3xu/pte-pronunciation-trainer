@@ -67,6 +67,16 @@ class Storage {
         keys.forEach(key => this.removeItem(key));
         return keys.length;
     }
+
+    // Get a setting value (alias for getItem)
+    getSetting(key) {
+        return this.getItem(key);
+    }
+
+    // Save a setting value (alias for setItem)
+    saveSetting(key, value) {
+        return this.setItem(key, value);
+    }
 }
 
 // Global storage instance

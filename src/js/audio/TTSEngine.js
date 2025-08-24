@@ -46,9 +46,12 @@ class TTSEngine {
             // Speak the term first
             await this.speak(cleanText, 'en-AU', pronunciationRate);
             
-            // For vocabulary with examples, also speak the example sentence
+            // For vocabulary with examples, optionally speak the example sentence based on repeat mode
             const hasExample = (word.examples && word.examples.length > 0) || word.example;
-            if (hasExample && exampleElement && exampleElement.style.display !== 'none') {
+            const shouldSpeakExample = window.audioControls && 
+                (window.audioControls.repeatMode === 'intensive' || window.audioControls.repeatMode === 'loop');
+            
+            if (hasExample && shouldSpeakExample && exampleElement && exampleElement.style.display !== 'none') {
                 // Add small pause between term and sentence
                 await new Promise(resolve => setTimeout(resolve, 800));
                 

@@ -186,9 +186,15 @@ All modules attach to window for cross-module communication:
 The app will NOT work without this file in data/generated/:
 - `conversation-vocabulary-data.js` (from `npm run extract-vocab`)
 
+# important-instruction-reminders
+Do what has been asked; nothing more, nothing less.
+NEVER create files unless they're absolutely necessary for achieving your goal.
+ALWAYS prefer editing an existing file to creating a new one.
+NEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User.
+
 ### Testing Setup
 - Tests use jsdom environment (configured in package.json)
-- Test directory: `/tests/` (currently empty - no test files exist yet)
+- Test directory: `/tests/` (directory does not exist yet - no test files written)
 - Coverage collection from `src/**/*.js`
 - Jest configuration includes test pattern matching for `**/tests/**/*.test.js`
 - ESLint configuration: ES2021, browser environment, semicolons required

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pronunciation Test</title>
+</head>
+<body>
+    <h1>UK Pronunciation Test</h1>
+    <div id="results"></div>
+    
+    <script src="src/js/data/pronunciations.js"></script>
+    <script>
+        // Test terms from the vocabulary
+        const testTerms = [
+            'crew',
+            'supplier',
+            'plumber',
+            'medicare',
+            'social welfare payment',
+            'drop by to visit the site',
+            'be pleased with the progress',
+            'have gone up',
+            'go over the plans',
+            'double-check',
+            'include a shower'
+        ];
+        
+        const results = document.getElementById('results');
+        let html = '<h2>Test Results:</h2><ul>';
+        
+        testTerms.forEach(term => {
+            const pronunciation = window.pronunciationDB.getUKPronunciation(term);
+            html += `<li><strong>${term}</strong>: ${pronunciation}</li>`;
+        });
+        
+        html += '</ul>';
+        results.innerHTML = html;
+    </script>
+</body>
+</html>

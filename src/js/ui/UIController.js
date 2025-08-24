@@ -144,8 +144,11 @@ class UIController {
             if (word.chinese) {
                 chineseElement.textContent = word.chinese;
             } else if (word.example && word.exampleChinese) {
-                // For conversation vocabulary, show that Chinese is available in context
-                chineseElement.textContent = 'See context below';
+                // For conversation vocabulary, show UK pronunciation
+                const pronunciation = window.pronunciationDB ? 
+                    window.pronunciationDB.getUKPronunciation(word.english) : 
+                    'Pronunciation not available';
+                chineseElement.textContent = pronunciation;
                 chineseElement.style.fontStyle = 'italic';
                 chineseElement.style.opacity = '0.7';
             } else {

@@ -87,6 +87,8 @@ async function build() {
             // Utility modules first
             path.join(srcDir, 'js', 'utils', 'EventBus.js'),
             path.join(srcDir, 'js', 'utils', 'Storage.js'),
+            // Data modules
+            path.join(srcDir, 'js', 'data', 'pronunciations.js'),
             // Core modules
             path.join(srcDir, 'js', 'core', 'VocabularyManager.js'),
             path.join(srcDir, 'js', 'core', 'ProgressTracker.js'),

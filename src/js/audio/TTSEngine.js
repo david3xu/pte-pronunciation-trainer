@@ -121,9 +121,9 @@ class TTSEngine {
             const voice = window.voiceSelector ? window.voiceSelector.selectBestVoiceMatch(voices, lang) : null;
             if (voice) {
                 utterance.voice = voice;
-                console.log(`Using voice: ${voice.name} (${voice.lang}) - MALE VOICE SELECTED`);
+                console.log(`Using voice: ${voice.name} (${voice.lang})`);
             } else {
-                console.error('NO MALE VOICE AVAILABLE - SPEECH CANCELLED TO AVOID FEMALE VOICE');
+                console.error('No voice available for text-to-speech');
                 this.showTTSFallback(text);
                 resolve();
                 return;

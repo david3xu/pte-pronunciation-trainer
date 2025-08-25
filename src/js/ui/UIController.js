@@ -137,22 +137,38 @@ class UIController {
             }, 500);
         }
 
-        // Update Chinese word display
+        // Update phonetic pronunciation display
+        const pronunciationElement = document.getElementById('pronunciationText');
+        if (pronunciationElement) {
+            // Debug: Check if pronunciationDB exists
+            if (!window.pronunciationDB) {
+                console.error('pronunciationDB not loaded!');
+                pronunciationElement.textContent = 'Pronunciation database not loaded';
+            } else {
+                const pronunciation = window.pronunciationDB.getUKPronunciation(word.english);
+                console.log(`Pronunciation for "${word.english}": ${pronunciation}`);
+                pronunciationElement.textContent = pronunciation || 'Pronunciation not available';
+            }
+            pronunciationElement.classList.add('word-change');
+            
+            // Remove animation class after animation completes
+            setTimeout(() => {
+                pronunciationElement.classList.remove('word-change');
+            }, 500);
+        }
+        
+        // Update Chinese translation display
         const chineseElement = document.getElementById('chineseWord');
         if (chineseElement) {
-            // Handle conversation vocabulary differently - they don't have individual translations
-            if (word.chinese) {
+            // Show Chinese translation if available, otherwise show a message
+            if (word.chinese && word.chinese.trim()) {
                 chineseElement.textContent = word.chinese;
-            } else if (word.example && word.exampleChinese) {
-                // For conversation vocabulary, show UK pronunciation
-                const pronunciation = window.pronunciationDB ? 
-                    window.pronunciationDB.getUKPronunciation(word.english) : 
-                    'Pronunciation not available';
-                chineseElement.textContent = pronunciation;
-                chineseElement.style.fontStyle = 'italic';
-                chineseElement.style.opacity = '0.7';
+                chineseElement.style.fontStyle = 'normal';
+                chineseElement.style.opacity = '1';
             } else {
-                chineseElement.textContent = 'Translation not available';
+                chineseElement.textContent = '(No translation available)';
+                chineseElement.style.fontStyle = 'italic';
+                chineseElement.style.opacity = '0.6';
             }
             
             chineseElement.classList.add('word-change');

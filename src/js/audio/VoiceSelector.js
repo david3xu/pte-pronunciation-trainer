@@ -98,8 +98,20 @@ class VoiceSelector {
             }
         }
         
-        // ABSOLUTE LAST RESORT: If no non-female voices found, return null (NO AUDIO)
-        console.error('NO MALE VOICES FOUND - REFUSING TO USE FEMALE VOICE');
+        // Last resort: Use any English voice available
+        const anyEnglishVoice = voices.find(v => v.lang.startsWith('en'));
+        if (anyEnglishVoice) {
+            console.log(`Using fallback English voice: ${anyEnglishVoice.name}`);
+            return anyEnglishVoice;
+        }
+        
+        // Final fallback: Use first available voice
+        if (voices.length > 0) {
+            console.log(`Using first available voice: ${voices[0].name}`);
+            return voices[0];
+        }
+        
+        console.error('No voices available at all');
         return null;
     }
 

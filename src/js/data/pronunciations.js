@@ -230,6 +230,54 @@
         'draw': '/drɔː/',
         'choose': '/tʃuːz/',
         
+        // Banking and financial terms
+        'banking': '/ˈbæŋkɪŋ/',
+        'systems': '/ˈsɪstəmz/',
+        'system': '/ˈsɪstəm/',
+        'accounts': '/əˈkaʊnts/',
+        'transactions': '/trænˈzækʃənz/',
+        'transfer': '/ˈtrænsfɜː/',
+        'deposit': '/dɪˈpɒzɪt/',
+        'withdrawal': '/wɪðˈdrɔːəl/',
+        'statement': '/ˈsteɪtmənt/',
+        'balance': '/ˈbæləns/',
+        'savings': '/ˈseɪvɪŋz/',
+        'loan': '/ləʊn/',
+        'mortgage': '/ˈmɔːɡɪdʒ/',
+        'interest': '/ˈɪntrəst/',
+        'credit': '/ˈkredɪt/',
+        'debit': '/ˈdebɪt/',
+        'card': '/kɑːd/',
+        'pin': '/pɪn/',
+        'atm': '/ˌeɪtiːˈem/',
+        'branch': '/brɑːntʃ/',
+        'online': '/ˈɒnlaɪn/',
+        'mobile': '/ˈməʊbaɪl/',
+        'app': '/æp/',
+        'security': '/sɪˈkjʊərəti/',
+        'fraud': '/frɔːd/',
+        'verification': '/ˌverɪfɪˈkeɪʃən/',
+        'identity': '/aɪˈdentəti/',
+        'password': '/ˈpɑːswɜːd/',
+        'username': '/ˈjuːzəneɪm/',
+        'login': '/ˈlɒɡɪn/',
+        'logout': '/ˈlɒɡaʊt/',
+        'session': '/ˈseʃən/',
+        'timeout': '/ˈtaɪmaʊt/',
+        'expired': '/ɪkˈspaɪəd/',
+        'invalid': '/ɪnˈvælɪd/',
+        'error': '/ˈerə/',
+        'successful': '/səkˈsesfəl/',
+        'failed': '/feɪld/',
+        'pending': '/ˈpendɪŋ/',
+        'processing': '/ˈprəʊsesɪŋ/',
+        'complete': '/kəmˈpliːt/',
+        'completed': '/kəmˈpliːtɪd/',
+        'cancelled': '/ˈkænsəld/',
+        'rejected': '/rɪˈdʒektɪd/',
+        'approved': '/əˈpruːvd/',
+        'declined': '/dɪˈklaɪnd/',
+        
         // Common compound words
         'double': '/ˈdʌbəl/',
         'social': '/ˈsəʊʃəl/',
@@ -314,12 +362,54 @@
             if (wordPronunciations[cleanWord]) {
                 pronunciations.push(wordPronunciations[cleanWord]);
             } else {
-                // For unknown words, return a placeholder or attempt basic phonetic rules
-                pronunciations.push(`[${cleanWord}]`);
+                // For unknown words, attempt basic phonetic patterns
+                pronunciations.push(attemptPhoneticGuess(cleanWord));
             }
         }
         
         return pronunciations.join(' ');
+    }
+    
+    /**
+     * Attempt to guess phonetic pronunciation for unknown words
+     * @param {string} word - The word to guess pronunciation for
+     * @returns {string} - Guessed IPA pronunciation
+     */
+    function attemptPhoneticGuess(word) {
+        // Common endings and their typical pronunciations
+        const endings = {
+            'ing': 'ɪŋ',
+            'tion': 'ʃən',
+            'sion': 'ʒən',
+            'ment': 'mənt',
+            'ness': 'nəs',
+            'ful': 'fʊl',
+            'less': 'ləs',
+            'ly': 'li',
+            'er': 'ə',
+            'or': 'ə',
+            'ed': 'd',
+            'es': 'z',
+            's': 's'
+        };
+        
+        // If we can't guess, show the word with tentative marker
+        let guess = word;
+        
+        // Check for common endings
+        for (const [ending, sound] of Object.entries(endings)) {
+            if (word.endsWith(ending)) {
+                const stem = word.slice(0, -ending.length);
+                // Check if we know the stem
+                const cleanStem = stem.replace(/[.,!?;:'"]/g, '');
+                if (wordPronunciations[cleanStem]) {
+                    return wordPronunciations[cleanStem].slice(0, -1) + sound + '/';
+                }
+            }
+        }
+        
+        // If still unknown, return with question mark to indicate uncertainty
+        return `/ˈ${guess}?/`;
     }
     
     /**
@@ -347,4 +437,6 @@
         getUKPronunciation: getUKPronunciation,
         wordPronunciations: wordPronunciations
     };
+    
+    console.log('Pronunciation database loaded with', Object.keys(wordPronunciations).length, 'words');
 })();

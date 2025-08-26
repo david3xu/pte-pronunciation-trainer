@@ -13,7 +13,7 @@ const path = require('path');
 
 class ConversationVocabularyExtractor {
     constructor(inputFile = null) {
-        this.inputFile = inputFile || path.join(__dirname, '../data-processing/extractors/merged-70241-70158.md');
+        this.inputFile = inputFile || path.join(__dirname, '../data-processing/extractors/merged-70245-70158.md');
         this.outputDir = path.join(__dirname, '../data/generated');
         this.reportsDir = path.join(__dirname, '../reports');
         this.vocabularyItems = [];

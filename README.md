@@ -66,7 +66,7 @@ When you have new CCL conversation data to add:
 
 ```bash
 # 1. Update the main conversation file with highlighted terms
-# Edit: data-processing/extractors/merged-70241-70158.md
+# Edit: data-processing/extractors/merged-70245-70158.md
 # Use _term_ syntax to highlight new vocabulary (e.g., _insurance claim_)
 
 # 2. Test locally - regenerate vocabulary from updated conversations
@@ -76,7 +76,7 @@ npm run extract-vocab
 npm run dev
 
 # 4. Deploy to production - commit and push ONLY the raw data
-git add data-processing/extractors/merged-70241-70158.md
+git add data-processing/extractors/merged-70245-70158.md
 git commit -m "Add new CCL vocabulary terms from conversations"
 git push origin main
 
@@ -86,7 +86,7 @@ git push origin main
 
 ### 🔍 Highlighting Syntax
 
-In `data-processing/extractors/merged-70241-70158.md`, mark important terms with underscores:
+In `data-processing/extractors/merged-70245-70158.md`, mark important terms with underscores:
 
 ```markdown
 Speaker: The _insurance claim_ was processed quickly, and the _settlement amount_ was fair.
@@ -102,7 +102,7 @@ The extraction script will automatically:
 ### 🚀 Deployment Considerations
 
 **For Vercel/Production deployments:**
-- **Only commit raw conversation data** (`merged-70241-70158.md`)
+- **Only commit raw conversation data** (`merged-70245-70158.md`)
 - **Generated files are ignored by Git** (`data/generated/`, `reports/`)
 - **Vercel automatically runs** `npm run extract-vocab && npm run build` during deployment
 - **Fresh vocabulary is generated** from source conversations on each deploy

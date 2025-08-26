@@ -39,7 +39,7 @@ npm run test -- --coverage    # Coverage report
 
 ### Data Pipeline (Critical)
 ```
-data-processing/extractors/merged-70241-70158.md (with _xxx_ highlights) → scripts/conversation-vocabulary-extractor.js → data/generated/conversation-vocabulary-data.js → Browser
+data-processing/extractors/merged-70245-70158.md (with _xxx_ highlights) → scripts/conversation-vocabulary-extractor.js → data/generated/conversation-vocabulary-data.js → Browser
 ```
 **⚠️ App requires generated JS files. Run `npm run extract-vocab` before starting.**
 

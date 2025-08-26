@@ -88,16 +88,24 @@ class ConversationVocabularyExtractor {
             }
             
             // Parse sentence lines with | delimiter and highlighted terms
-            if (trimmed.match(/^\d+\.\s+/) && trimmed.includes('|') && currentConversation) {
+            if (trimmed.match(/^\d+\.\s+/) && currentConversation) {
                 sentenceNumber++;
-                pendingEnglishLine = trimmed;
                 
-                // Look for the next line which should be Chinese translation
-                const nextLine = lines[i + 1];
-                if (nextLine && nextLine.trim() && !nextLine.trim().match(/^\d+\./)) {
-                    const chineseLine = nextLine.trim();
-                    this.extractTermsFromSentencePair(pendingEnglishLine, chineseLine, currentConversation, sentenceNumber);
-                    pendingEnglishLine = null;
+                // Check if this is an English line (odd number) or Chinese line (even number)
+                const lineNumber = parseInt(trimmed.match(/^(\d+)\./)[1]);
+                const isEnglishLine = lineNumber % 2 === 1; // Odd = English, Even = Chinese
+                
+                // Only process English lines with highlights
+                if (isEnglishLine && trimmed.includes('_')) {
+                    pendingEnglishLine = trimmed;
+                    
+                    // Look for the next line which should be Chinese translation
+                    const nextLine = lines[i + 1];
+                    if (nextLine && nextLine.trim() && !nextLine.trim().match(/^\d+\./)) {
+                        const chineseLine = nextLine.trim();
+                        this.extractTermsFromSentencePair(pendingEnglishLine, chineseLine, currentConversation, sentenceNumber);
+                        pendingEnglishLine = null;
+                    }
                 }
             }
         }
@@ -106,7 +114,7 @@ class ConversationVocabularyExtractor {
     }
 
     /**
-     * First pass: identify which dialogues contain highlighted terms _xxx_
+     * First pass: identify which dialogues contain highlighted terms _xxx_ in English lines only
      */
     identifyDialoguesWithHighlights(lines) {
         const dialoguesWithHighlights = new Set();
@@ -122,9 +130,16 @@ class ConversationVocabularyExtractor {
                 continue;
             }
             
-            // Check if this line contains highlighted terms
-            if (currentDialogueId && trimmed.includes('_') && trimmed.match(/_[^_]+_/)) {
-                dialoguesWithHighlights.add(currentDialogueId);
+            // Check if this is a numbered line
+            const numberedLineMatch = trimmed.match(/^(\d+)\.\s+/);
+            if (numberedLineMatch && currentDialogueId) {
+                const lineNumber = parseInt(numberedLineMatch[1]);
+                const isEnglishLine = lineNumber % 2 === 1; // Odd = English, Even = Chinese
+                
+                // Only check for highlights in English lines
+                if (isEnglishLine && trimmed.includes('_') && trimmed.match(/_[^_]+_/)) {
+                    dialoguesWithHighlights.add(currentDialogueId);
+                }
             }
         }
         

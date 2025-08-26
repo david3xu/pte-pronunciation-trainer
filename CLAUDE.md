@@ -4,13 +4,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-CCL (NAATI Credentialed Community Language) pronunciation training web application with dual vocabulary system and Australian English text-to-speech focus.
+CCL (NAATI Credentialed Community Language) pronunciation training web application with conversation-based vocabulary system and Australian English text-to-speech focus.
 
 ## Essential Commands
 
 ```bash
 # Data Generation (REQUIRED before running):
-npm run extract-vocab                    # Generate conversation vocabulary (937 terms)
+npm run extract-vocab         # Generate conversation vocabulary (937 terms)
 
 # Development:
 npm run dev                   # Start server at http://localhost:3000
@@ -39,9 +39,10 @@ npm run test -- --coverage    # Coverage report
 
 ### Data Pipeline (Critical)
 ```
-data-processing/extractors/merged-70245-70158.md (with _xxx_ highlights) → scripts/conversation-vocabulary-extractor.js → data/generated/conversation-vocabulary-data.js → Browser
+data-processing/extractors/merged-70245-70158.md (with _xxx_ highlights for English terms) → scripts/conversation-vocabulary-extractor.js → data/generated/conversation-vocabulary-data.js → Browser
 ```
 **⚠️ App requires generated JS files. Run `npm run extract-vocab` before starting.**
+**Note**: Only English text from `_xxx_` highlights is used for UI terms (Chinese translations are separate)
 
 ### Module Pattern
 ```javascript
@@ -63,7 +64,7 @@ src/js/
 └── utils/          # EventBus, Storage (localStorage wrapper)
 
 scripts/            # Build tools (3 files) 
-├── conversation-vocabulary-extractor.js # Extract _xxx_ highlighted terms from merged file
+├── conversation-vocabulary-extractor.js # Extract English from _xxx_ highlights in merged file
 ├── validate.js             # Data integrity validation
 └── build.js               # Production build with minification
 ```
@@ -71,7 +72,7 @@ scripts/            # Build tools (3 files)
 ## Key Features
 
 ### Conversation-Based Vocabulary
-- **Practical Terms**: 937 terms extracted from manually highlighted (_xxx_) key phrases in real CCL conversations
+- **Practical Terms**: 937 English terms extracted from `_xxx_` highlighted phrases (English part only) in real CCL conversations
 - **Contextual Examples**: All vocabulary includes bilingual example sentences from source dialogues  
 - **Real-world Usage**: Terms selected from actual NAATI CCL test scenarios
 - **Category Organization**: Organized across 6 domains (social-welfare, education, legal-government, business-finance, medical-healthcare, travel-immigration)

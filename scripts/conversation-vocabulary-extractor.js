@@ -90,22 +90,21 @@ class ConversationVocabularyExtractor {
             // Parse sentence lines with | delimiter and highlighted terms
             if (trimmed.match(/^\d+\.\s+/) && currentConversation) {
                 sentenceNumber++;
+                pendingEnglishLine = trimmed;
                 
-                // Check if this is an English line (odd number) or Chinese line (even number)
-                const lineNumber = parseInt(trimmed.match(/^(\d+)\./)[1]);
-                const isEnglishLine = lineNumber % 2 === 1; // Odd = English, Even = Chinese
-                
-                // Only process English lines with highlights
-                if (isEnglishLine && trimmed.includes('_')) {
-                    pendingEnglishLine = trimmed;
+                // Look for the next line which should be translation
+                const nextLine = lines[i + 1];
+                if (nextLine && nextLine.trim() && !nextLine.trim().match(/^\d+\./)) {
+                    const translationLine = nextLine.trim();
                     
-                    // Look for the next line which should be Chinese translation
-                    const nextLine = lines[i + 1];
-                    if (nextLine && nextLine.trim() && !nextLine.trim().match(/^\d+\./)) {
-                        const chineseLine = nextLine.trim();
-                        this.extractTermsFromSentencePair(pendingEnglishLine, chineseLine, currentConversation, sentenceNumber);
-                        pendingEnglishLine = null;
+                    // Extract from both the main line and translation line if they have highlights
+                    if (trimmed.includes('_')) {
+                        this.extractTermsFromSentencePair(pendingEnglishLine, translationLine, currentConversation, sentenceNumber);
                     }
+                    if (translationLine.includes('_')) {
+                        this.extractTermsFromSentencePair(translationLine, pendingEnglishLine, currentConversation, sentenceNumber);
+                    }
+                    pendingEnglishLine = null;
                 }
             }
         }
@@ -114,14 +113,14 @@ class ConversationVocabularyExtractor {
     }
 
     /**
-     * First pass: identify which dialogues contain highlighted terms _xxx_ in English lines only
+     * First pass: identify which dialogues contain highlighted terms _xxx_
      */
     identifyDialoguesWithHighlights(lines) {
         const dialoguesWithHighlights = new Set();
         let currentDialogueId = null;
         
-        for (const line of lines) {
-            const trimmed = line.trim();
+        for (let i = 0; i < lines.length; i++) {
+            const trimmed = lines[i].trim();
             
             // Check for conversation header
             const conversationMatch = trimmed.match(/^#(\d+)\.\s*(.+?)[-–](.+)$/);
@@ -130,14 +129,16 @@ class ConversationVocabularyExtractor {
                 continue;
             }
             
-            // Check if this is a numbered line
-            const numberedLineMatch = trimmed.match(/^(\d+)\.\s+/);
-            if (numberedLineMatch && currentDialogueId) {
-                const lineNumber = parseInt(numberedLineMatch[1]);
-                const isEnglishLine = lineNumber % 2 === 1; // Odd = English, Even = Chinese
-                
-                // Only check for highlights in English lines
-                if (isEnglishLine && trimmed.includes('_') && trimmed.match(/_[^_]+_/)) {
+            // Check if this line contains highlighted terms (numbered line or its translation)
+            if (currentDialogueId && trimmed.match(/^\d+\.\s+/)) {
+                // Check main line
+                if (trimmed.includes('_') && trimmed.match(/_[^_]+_/)) {
+                    dialoguesWithHighlights.add(currentDialogueId);
+                }
+                // Check translation line
+                const nextLine = lines[i + 1];
+                if (nextLine && nextLine.trim() && !nextLine.trim().match(/^\d+\./) && 
+                    nextLine.includes('_') && nextLine.match(/_[^_]+_/)) {
                     dialoguesWithHighlights.add(currentDialogueId);
                 }
             }
@@ -173,7 +174,8 @@ class ConversationVocabularyExtractor {
                 for (const highlighted of highlightedTerms) {
                     const term = highlighted.replace(/_/g, '').trim();
                     
-                    if (term && term.length > 1) {
+                    // Only process English terms (skip Chinese terms)
+                    if (term && term.length > 1 && this.isEnglishTerm(term)) {
                         // Try to extract Chinese translation for the specific term
                         const chineseTranslation = this.extractChineseForTerm(term, englishPart, chinesePart);
                         
@@ -195,6 +197,15 @@ class ConversationVocabularyExtractor {
                 }
             }
         }
+    }
+
+    /**
+     * Check if a term is in English (not Chinese)
+     */
+    isEnglishTerm(term) {
+        // Check if term contains Chinese characters (Unicode range for Chinese)
+        const chineseRegex = /[\u4e00-\u9fff\u3400-\u4dbf]/;
+        return !chineseRegex.test(term);
     }
 
     /**

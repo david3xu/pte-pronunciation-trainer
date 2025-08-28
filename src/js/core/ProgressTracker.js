@@ -23,7 +23,8 @@ class ProgressTracker {
                 // Find the position of current dialogue in the sorted list
                 const dialogueIndex = allDialogueIds.indexOf(currentWord.conversationId);
                 const dialogueNumber = dialogueIndex !== -1 ? dialogueIndex + 1 : 1;
-                progressElement.textContent = `${dialogueNumber}/${totalDialogues}`;
+                // Show both dialogue ID and progress: "Dialogue 70245 (1/56)"
+                progressElement.textContent = `Dialogue ${currentWord.conversationId} (${dialogueNumber}/${totalDialogues})`;
             } else {
                 progressElement.textContent = `${currentIndex + 1} of ${totalWords}`;
             }

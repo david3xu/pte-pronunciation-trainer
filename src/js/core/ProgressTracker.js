@@ -14,18 +14,21 @@ class ProgressTracker {
 
         const progressElement = document.getElementById('progressText');
         if (progressElement) {
-            // Show dialogue progress in reverse order (245/245, 244/245, etc.)
+            // Show dialogue ID and sentence progress within the dialogue (e.g., 70245 (3/56))
             if (currentWord && currentWord.conversationId) {
-                // Get total number of dialogues from the data
                 // Get all unique dialogue IDs and sort them in descending order
                 const allDialogueIds = [...new Set(window.conversationVocabularyData.vocabulary.map(item => item.conversationId))].sort((a, b) => parseInt(b) - parseInt(a));
                 const totalDialogues = allDialogueIds.length;
-                // Find the position of current dialogue in the sorted list
-                const dialogueIndex = allDialogueIds.indexOf(currentWord.conversationId);
-                const dialogueNumber = dialogueIndex !== -1 ? dialogueIndex + 1 : 1;
 
-                // Show both dialogue ID and progress: "Dialogue 70245 (1/X)" where X is dynamic
-                progressElement.textContent = `Dialogue ${currentWord.conversationId} (${dialogueNumber}/${totalDialogues})`;
+                // Determine current sentence number within the dialogue
+                const sentenceNumber = (
+                    (typeof currentWord.sentenceNumber !== 'undefined' && currentWord.sentenceNumber) ||
+                    (typeof currentWord.sentence_id !== 'undefined' && currentWord.sentence_id) ||
+                    1
+                );
+
+                // Show dialogue ID with sentence number over total dialogues
+                progressElement.textContent = `Dialogue ${currentWord.conversationId} (${sentenceNumber}/${totalDialogues})`;
             } else {
                 progressElement.textContent = `${currentIndex + 1} of ${totalWords}`;
             }

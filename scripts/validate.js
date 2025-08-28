@@ -32,7 +32,7 @@ class DataValidator {
 
     async validate() {
         console.log('🔍 Starting data validation...\n');
-        
+
         try {
             // Check if vocabulary data exists
             const vocabPath = 'data/generated/vocabulary-data.js';
@@ -47,18 +47,18 @@ class DataValidator {
 
             // Validate structure
             await this.validateStructure(vocabularyData);
-            
+
             // Validate each category
             for (const [category, terms] of Object.entries(vocabularyData)) {
                 await this.validateCategory(category, terms);
             }
-            
+
             // Check for global duplicates
             await this.checkGlobalDuplicates(vocabularyData);
-            
+
             // Generate report
             this.generateReport();
-            
+
         } catch (error) {
             console.error('❌ Validation failed:', error.message);
             process.exit(1);
@@ -67,18 +67,22 @@ class DataValidator {
 
     async validateStructure(data) {
         console.log('🏗️  Validating data structure...');
-        
+
         if (!data || typeof data !== 'object') {
             throw new ValidationError('Vocabulary data must be an object');
         }
 
         const expectedCategories = [
+            'housing',
             'social-welfare',
-            'education', 
-            'legal-government',
-            'business-finance',
-            'medical-healthcare',
-            'travel-immigration'
+            'legal',
+            'immigration',
+            'business',
+            'medical',
+            'education',
+            'tourism',
+            'social',
+            'all-categories'
         ];
 
         this.stats.totalCategories = Object.keys(data).length;
@@ -102,7 +106,7 @@ class DataValidator {
 
     async validateCategory(category, terms) {
         console.log(`📚 Validating ${category}...`);
-        
+
         if (!Array.isArray(terms)) {
             this.errors.push(new ValidationError(
                 `Category ${category} must contain an array of terms`,
@@ -192,7 +196,7 @@ class DataValidator {
 
         // Validate English content
         this.validateEnglishTerm(term.english, category, index);
-        
+
         // Validate Chinese content
         this.validateChineseTerm(term.chinese, category, index);
     }
@@ -228,7 +232,7 @@ class DataValidator {
 
     async checkGlobalDuplicates(vocabularyData) {
         console.log('🔍 Checking for global duplicates...');
-        
+
         const globalTerms = new Map();
         let globalDuplicates = 0;
 
@@ -260,7 +264,7 @@ class DataValidator {
     generateReport() {
         console.log('\n📋 Validation Report');
         console.log('='.repeat(50));
-        
+
         // Statistics
         console.log('\n📊 Statistics:');
         console.log(`   Total categories: ${this.stats.totalCategories}`);
@@ -273,7 +277,7 @@ class DataValidator {
         if (this.errors.length > 0) {
             console.log('\n❌ Errors:');
             this.errors.forEach((error, index) => {
-                const location = error.category ? 
+                const location = error.category ?
                     ` (${error.category}${error.index !== undefined ? `[${error.index}]` : ''})` : '';
                 console.log(`   ${index + 1}. ${error.message}${location}`);
             });
@@ -285,7 +289,7 @@ class DataValidator {
             this.warnings.slice(0, 20).forEach((warning, index) => {
                 console.log(`   ${index + 1}. ${warning}`);
             });
-            
+
             if (this.warnings.length > 20) {
                 console.log(`   ... and ${this.warnings.length - 20} more warnings`);
             }
@@ -323,7 +327,7 @@ class DataValidator {
         if (!fs.existsSync(reportsDir)) {
             fs.mkdirSync(reportsDir, { recursive: true });
         }
-        
+
         const reportPath = path.join(reportsDir, 'validation-report.json');
         fs.writeFileSync(reportPath, JSON.stringify(report, null, 2));
         console.log(`\n📄 Detailed report saved to ${reportPath}`);

@@ -7,28 +7,31 @@ class VocabularyManager {
         this.allWords = []; // Store unfiltered words
         this.categoryCounts = {}; // Store counts per category per difficulty
         this.currentIndex = 0;
-        
-        // Category labels for conversation vocabulary
+
+        // Category labels for conversation vocabulary (corrected based on raw.md)
         this.categoryLabels = {
             'all-categories': '🌟 All Categories',
+            'housing': '🏠 Housing',
             'social-welfare': '🤝 Social Welfare',
-            'education': '🎓 Education', 
-            'legal-government': '⚖️ Legal & Government',
-            'business-finance': '💼 Business & Finance',
-            'medical-healthcare': '🏥 Medical & Healthcare',
-            'travel-immigration': '✈️ Travel & Immigration'
+            'legal': '⚖️ Legal',
+            'immigration': '🛂 Immigration',
+            'business': '💼 Business',
+            'medical': '🏥 Medical',
+            'education': '🎓 Education',
+            'tourism': '✈️ Tourism',
+            'social': '👥 Social'
         };
     }
 
     calculateCategoryCounts() {
         const data = this.getVocabularyData();
         if (!data || !data.vocabulary) return;
-        
+
         // Initialize categories with zero counts
         this.categoryCounts = {
             'all-categories': { all: 0, easy: 0, normal: 0, hard: 0 }
         };
-        
+
         // Count items by category and difficulty
         data.vocabulary.forEach(item => {
             const category = item.category || 'uncategorized';
@@ -40,7 +43,7 @@ class VocabularyManager {
             this.categoryCounts['all-categories'].all++;
             this.categoryCounts['all-categories'][item.difficulty]++;
         });
-        
+
         console.log('Category counts calculated:', this.categoryCounts);
     }
 
@@ -57,10 +60,10 @@ class VocabularyManager {
     updateCategoryOptions() {
         const categorySelect = document.getElementById('categorySelect');
         if (!categorySelect) return;
-        
+
         // Clear existing options
         categorySelect.innerHTML = '';
-        
+
         // Add options based on available categories
         Object.entries(this.categoryLabels).forEach(([value, label]) => {
             const option = document.createElement('option');
@@ -81,7 +84,7 @@ class VocabularyManager {
         }
 
         this.currentCategory = category;
-        
+
         // Filter vocabulary by category
         if (category === 'all-categories') {
             this.allWords = [...data.vocabulary];
@@ -138,14 +141,14 @@ class VocabularyManager {
         if (index !== null) {
             this.currentIndex = index;
         }
-        
+
         if (this.currentWords.length === 0) {
             return null;
         }
-        
+
         // Ensure index is within bounds
         this.currentIndex = Math.max(0, Math.min(this.currentIndex, this.currentWords.length - 1));
-        
+
         return this.currentWords[this.currentIndex];
     }
 
@@ -184,7 +187,7 @@ class VocabularyManager {
         this.calculateCategoryCounts();
         this.updateCategoryOptions();
         this.loadCategory(this.currentCategory);
-        
+
         // Emit initialization complete
         window.eventBus.emit('vocabulary:initialized', {
             totalTerms: this.categoryCounts['all-categories']?.all || 0,

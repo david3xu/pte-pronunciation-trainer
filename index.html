@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="src/css/style.css?v=7">
 </head>
+
 <body>
     <div class="app-layout-grid">
         <!-- Minimalist header - hidden on mobile -->
@@ -20,7 +22,8 @@
                 <div class="english-word" id="englishWord">Press PLAY to start learning</div>
                 <div class="pronunciation" id="pronunciationText"></div>
                 <div class="chinese-word" id="chineseWord">按播放开始学习</div>
-                <div class="example-sentence" id="exampleSentence" style="display: none;">Example sentence will appear here</div>
+                <div class="example-sentence" id="exampleSentence" style="display: none;">Example sentence will appear
+                    here</div>
                 <div class="simple-progress" id="progressText">Ready to start</div>
                 <div class="difficulty-badge" id="difficultyBadge" style="display: none;">🟢 Easy</div>
             </div>
@@ -47,13 +50,16 @@
                 <div class="setting-item">
                     <label for="categorySelect">Category:</label>
                     <select id="categorySelect">
-                        <option value="social-welfare" selected>Social Welfare</option>
-                        <option value="education">Education</option>
-                        <option value="legal-government">Legal & Government</option>
-                        <option value="business-finance">Business & Finance</option>
-                        <option value="medical-healthcare">Medical & Healthcare</option>
-                        <option value="travel-immigration">Travel & Immigration</option>
-                        <option value="all-categories">All Categories</option>
+                        <option value="housing" selected>🏠 Housing</option>
+                        <option value="social-welfare">🤝 Social Welfare</option>
+                        <option value="legal">⚖️ Legal</option>
+                        <option value="immigration">🛂 Immigration</option>
+                        <option value="business">💼 Business</option>
+                        <option value="medical">🏥 Medical</option>
+                        <option value="education">🎓 Education</option>
+                        <option value="tourism">✈️ Tourism</option>
+                        <option value="social">👥 Social</option>
+                        <option value="all-categories">🌟 All Categories</option>
                     </select>
                 </div>
                 <div class="setting-item">
@@ -105,8 +111,8 @@
 
     <!-- Only load conversation vocabulary -->
     <script src="data/generated/conversation-vocabulary-data.js?v=8"></script>
-    
-    <!-- Debug script to verify data loading -->  
+
+    <!-- Debug script to verify data loading -->
     <script>
         console.log('=== Data Loading Check ===');
         console.log('Conversation vocabulary loaded:', typeof conversationVocabularyData !== 'undefined');
@@ -115,20 +121,20 @@
             console.log('Vocabulary array length:', conversationVocabularyData.vocabulary?.length || 0);
             console.log('Data structure:', Object.keys(conversationVocabularyData));
         }
-        
+
         // Debug functions for console testing
         window.debugVocab = {
-            checkData: function() {
+            checkData: function () {
                 console.log('=== Debug Vocabulary Check ===');
                 console.log('Conversation loaded:', typeof conversationVocabularyData !== 'undefined');
-                
+
                 if (typeof conversationVocabularyData !== 'undefined') {
                     console.log('Total terms:', conversationVocabularyData.totalTerms);
                     console.log('Vocabulary array:', Array.isArray(conversationVocabularyData.vocabulary));
                     console.log('Array length:', conversationVocabularyData.vocabulary?.length || 0);
                     console.log('Sample first item:', conversationVocabularyData.vocabulary?.[0]);
                 }
-                
+
                 if (window.vocabularyManager) {
                     console.log('Current words count:', window.vocabularyManager.getTotalWords());
                     console.log('Category counts:', window.vocabularyManager.getCategoryCounts());
@@ -136,28 +142,29 @@
             }
         };
     </script>
-    
+
     <!-- Utility Modules -->
     <script src="src/js/utils/EventBus.js?v=1"></script>
     <script src="src/js/utils/Storage.js?v=1"></script>
-    
+
     <!-- Core Logic Modules -->
     <script src="src/js/core/VocabularyManager.js?v=12&t=1734054000"></script>
     <script src="src/js/core/ProgressTracker.js?v=1"></script>
-    
+
     <!-- Pronunciation Database -->
     <script src="src/js/data/pronunciations.js?v=1"></script>
-    
+
     <!-- Audio Modules -->
     <script src="src/js/audio/TTSEngine.js?v=2"></script>
     <script src="src/js/audio/VoiceSelector.js?v=1"></script>
     <script src="src/js/audio/AudioControls.js?v=2"></script>
-    
+
     <!-- UI Modules -->
     <script src="src/js/ui/UIController.js?v=10&t=1734053400"></script>
     <script src="src/js/ui/SettingsPanel.js?v=3&t=1734054000"></script>
-    
+
     <!-- Main App Coordinator -->
     <script src="src/js/core/App.js?v=2"></script>
 </body>
+
 </html>

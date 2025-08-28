@@ -6,7 +6,7 @@ class ProgressTracker {
 
     updateProgress(currentIndex, totalWords, currentWord = null) {
         this.currentIndex = currentIndex;
-        
+
         if (totalWords === 0) {
             this.updateStatus('No words available');
             return;
@@ -14,7 +14,16 @@ class ProgressTracker {
 
         const progressElement = document.getElementById('progressText');
         if (progressElement) {
-            progressElement.textContent = `${currentIndex + 1} of ${totalWords}`;
+            // Show dialogue progress in reverse order (245/245, 244/245, etc.)
+            if (currentWord && currentWord.conversationId) {
+                // Get total number of dialogues from the data
+                const totalDialogues = window.conversationVocabularyData?.totalConversations || 56;
+                // Calculate reverse dialogue number (245 - current + 1)
+                const reverseDialogueNumber = 245 - parseInt(currentWord.conversationId) + 1;
+                progressElement.textContent = `${reverseDialogueNumber}/${totalDialogues}`;
+            } else {
+                progressElement.textContent = `${currentIndex + 1} of ${totalWords}`;
+            }
         }
 
         // Update difficulty badge if current word provided
@@ -23,16 +32,16 @@ class ProgressTracker {
             if (difficultyBadge && currentWord.difficulty) {
                 difficultyBadge.style.display = 'inline-block';
                 difficultyBadge.className = `difficulty-badge ${currentWord.difficulty}`;
-                
+
                 const difficultyEmoji = {
                     'easy': '🟢',
-                    'normal': '🟡', 
+                    'normal': '🟡',
                     'hard': '🔴'
                 }[currentWord.difficulty] || '';
-                
-                const difficultyLabel = currentWord.difficulty.charAt(0).toUpperCase() + 
-                                       currentWord.difficulty.slice(1);
-                
+
+                const difficultyLabel = currentWord.difficulty.charAt(0).toUpperCase() +
+                    currentWord.difficulty.slice(1);
+
                 difficultyBadge.textContent = `${difficultyEmoji} ${difficultyLabel}`;
             }
         }
@@ -51,9 +60,9 @@ class ProgressTracker {
         if (progressElement) {
             progressElement.textContent = status;
         }
-        
+
         console.log('Status:', status);
-        
+
         // Emit status event for other modules
         window.eventBus.emit('status:updated', { status });
     }
@@ -61,9 +70,9 @@ class ProgressTracker {
     showError(message) {
         console.error(message);
         this.updateStatus(`Error: ${message}`);
-        
+
         // Emit error event for other modules
-        window.eventBus.emit('error:occurred', { 
+        window.eventBus.emit('error:occurred', {
             message,
             timestamp: new Date().toISOString()
         });
@@ -72,7 +81,7 @@ class ProgressTracker {
     showCompletionMessage(categoryName, totalWords) {
         const message = `🎉 ${categoryName} completed! ${totalWords} words mastered!`;
         this.updateStatus(message);
-        
+
         // Emit completion event
         window.eventBus.emit('category:completed', {
             categoryName,
@@ -85,7 +94,7 @@ class ProgressTracker {
         const symbol = isCircular ? '🔄' : '➡️';
         const message = `${symbol} Moving from ${fromCategory} to ${toCategory}...`;
         this.updateStatus(message);
-        
+
         // Emit transition event
         window.eventBus.emit('category:transitioned', {
             fromCategory,
@@ -102,9 +111,9 @@ class ProgressTracker {
         if (accuracy !== null) {
             statsMessage += ` (${accuracy}% accuracy)`;
         }
-        
+
         this.updateStatus(statsMessage);
-        
+
         // Emit stats event
         window.eventBus.emit('stats:updated', {
             wordsCompleted,

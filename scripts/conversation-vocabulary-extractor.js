@@ -83,7 +83,7 @@ class ConversationVocabularyExtractor {
 
                 // Only process if this dialogue contains highlighted terms
                 if (dialoguesWithHighlights.has(conversationId)) {
-                                        currentConversation = {
+                    currentConversation = {
                         id: conversationId,
                         title: conversationMatch[2].trim(),
                         domain: conversationMatch[3].trim().toLowerCase(),

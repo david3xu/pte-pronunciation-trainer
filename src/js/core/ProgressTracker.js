@@ -18,9 +18,12 @@ class ProgressTracker {
             if (currentWord && currentWord.conversationId) {
                 // Get total number of dialogues from the data
                 const totalDialogues = window.conversationVocabularyData?.totalConversations || 56;
-                // Calculate reverse dialogue number (245 - current + 1)
-                const reverseDialogueNumber = 245 - parseInt(currentWord.conversationId) + 1;
-                progressElement.textContent = `${reverseDialogueNumber}/${totalDialogues}`;
+                // Get all unique dialogue IDs and sort them in descending order
+                const allDialogueIds = [...new Set(window.conversationVocabularyData.vocabulary.map(item => item.conversationId))].sort((a, b) => parseInt(b) - parseInt(a));
+                // Find the position of current dialogue in the sorted list
+                const dialogueIndex = allDialogueIds.indexOf(currentWord.conversationId);
+                const dialogueNumber = dialogueIndex !== -1 ? dialogueIndex + 1 : 1;
+                progressElement.textContent = `${dialogueNumber}/${totalDialogues}`;
             } else {
                 progressElement.textContent = `${currentIndex + 1} of ${totalWords}`;
             }

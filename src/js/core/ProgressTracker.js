@@ -14,21 +14,27 @@ class ProgressTracker {
 
         const progressElement = document.getElementById('progressText');
         if (progressElement) {
-            // Show dialogue ID and sentence progress within the dialogue (e.g., 70245 (3/56))
+            // Show dialogue ID and TOKEN progress within the dialogue (e.g., 70245 (3/56))
             if (currentWord && currentWord.conversationId) {
                 // Get all unique dialogue IDs and sort them in descending order
                 const allDialogueIds = [...new Set(window.conversationVocabularyData.vocabulary.map(item => item.conversationId))].sort((a, b) => parseInt(b) - parseInt(a));
                 const totalDialogues = allDialogueIds.length;
 
-                // Determine current sentence number within the dialogue
-                const sentenceNumber = (
-                    (typeof currentWord.sentenceNumber !== 'undefined' && currentWord.sentenceNumber) ||
-                    (typeof currentWord.sentence_id !== 'undefined' && currentWord.sentence_id) ||
-                    1
-                );
+                // Determine current TOKEN index within this dialogue
+                const allTokens = window.conversationVocabularyData.vocabulary;
+                const tokensInDialogue = allTokens.filter(item => item.conversationId === currentWord.conversationId);
+                // Try to find the token index by strict reference first, then by fields
+                let tokenIndex = tokensInDialogue.indexOf(currentWord);
+                if (tokenIndex === -1) {
+                    tokenIndex = tokensInDialogue.findIndex(t => (
+                        t.english === currentWord.english &&
+                        (t.sentenceNumber === currentWord.sentenceNumber || t.sentence_id === currentWord.sentence_id)
+                    ));
+                }
+                const tokenNumber = tokenIndex !== -1 ? tokenIndex + 1 : 1;
 
-                // Show dialogue ID with sentence number over total dialogues
-                progressElement.textContent = `Dialogue ${currentWord.conversationId} (${sentenceNumber}/${totalDialogues})`;
+                // Show dialogue ID with token number over total dialogues
+                progressElement.textContent = `Dialogue ${currentWord.conversationId} (${tokenNumber}/${totalDialogues})`;
             } else {
                 progressElement.textContent = `${currentIndex + 1} of ${totalWords}`;
             }

@@ -49,7 +49,8 @@ class ProgressTracker {
                 }
 
                 const tokenNumber = tokenIndex !== -1 ? tokenIndex + 1 : 1;
-                progressElement.textContent = `Dialogue ${currentWord.conversationId} (${tokenNumber}/${totalDialogues || 0})`;
+                const totalTermsInDialogue = tokensInDialogue ? tokensInDialogue.length : 0;
+                progressElement.textContent = `Dialogue ${currentWord.conversationId} (${tokenNumber}/${totalTermsInDialogue})`;
             } else {
                 progressElement.textContent = `${currentIndex + 1} of ${totalWords}`;
             }

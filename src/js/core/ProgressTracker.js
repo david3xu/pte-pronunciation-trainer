@@ -16,25 +16,40 @@ class ProgressTracker {
         if (progressElement) {
             // Show dialogue ID and TOKEN progress within the dialogue (e.g., 70245 (3/56))
             if (currentWord && currentWord.conversationId) {
-                // Get all unique dialogue IDs and sort them in descending order
-                const allDialogueIds = [...new Set(window.conversationVocabularyData.vocabulary.map(item => item.conversationId))].sort((a, b) => parseInt(b) - parseInt(a));
-                const totalDialogues = allDialogueIds.length;
+                // Prefer the structured dataset via DialogueDataLoader if available and loaded
+                const loader = window.dialogueDataLoader;
+                let totalDialogues = 0;
+                let tokensInDialogue = [];
 
-                // Determine current TOKEN index within this dialogue
-                const allTokens = window.conversationVocabularyData.vocabulary;
-                const tokensInDialogue = allTokens.filter(item => item.conversationId === currentWord.conversationId);
-                // Try to find the token index by strict reference first, then by fields
-                let tokenIndex = tokensInDialogue.indexOf(currentWord);
-                if (tokenIndex === -1) {
-                    tokenIndex = tokensInDialogue.findIndex(t => (
-                        t.english === currentWord.english &&
-                        (t.sentenceNumber === currentWord.sentenceNumber || t.sentence_id === currentWord.sentence_id)
-                    ));
+                if (loader && typeof loader.isDataLoaded === 'function' && loader.isDataLoaded()) {
+                    // Use new structured dataset
+                    totalDialogues = loader.getTotalDialogueCount();
+                    tokensInDialogue = loader.getVocabularyByDialogue(currentWord.conversationId) || [];
+                } else if (window.conversationVocabularyData && Array.isArray(window.conversationVocabularyData.vocabulary)) {
+                    // Fallback to legacy generated dataset (still dynamic, no hardcodes)
+                    const allTokens = window.conversationVocabularyData.vocabulary;
+                    const allDialogueIds = [...new Set(allTokens.map(item => item.conversationId))].sort((a, b) => parseInt(b) - parseInt(a));
+                    totalDialogues = allDialogueIds.length;
+                    tokensInDialogue = allTokens.filter(item => item.conversationId === currentWord.conversationId);
                 }
-                const tokenNumber = tokenIndex !== -1 ? tokenIndex + 1 : 1;
 
-                // Show dialogue ID with token number over total dialogues
-                progressElement.textContent = `Dialogue ${currentWord.conversationId} (${tokenNumber}/${totalDialogues})`;
+                // Determine current TOKEN index within this dialogue using robust matching
+                let tokenIndex = -1;
+                if (tokensInDialogue && tokensInDialogue.length) {
+                    // Match by identity or by key fields (term/english + sentence id)
+                    tokenIndex = tokensInDialogue.indexOf(currentWord);
+                    if (tokenIndex === -1) {
+                        tokenIndex = tokensInDialogue.findIndex(t => {
+                            const tEnglish = t.english || t.term;
+                            const tSentence = typeof t.sentenceNumber !== 'undefined' ? t.sentenceNumber : t.sentence_id;
+                            const cSentence = typeof currentWord.sentenceNumber !== 'undefined' ? currentWord.sentenceNumber : currentWord.sentence_id;
+                            return tEnglish === currentWord.english && tSentence === cSentence;
+                        });
+                    }
+                }
+
+                const tokenNumber = tokenIndex !== -1 ? tokenIndex + 1 : 1;
+                progressElement.textContent = `Dialogue ${currentWord.conversationId} (${tokenNumber}/${totalDialogues || 0})`;
             } else {
                 progressElement.textContent = `${currentIndex + 1} of ${totalWords}`;
             }

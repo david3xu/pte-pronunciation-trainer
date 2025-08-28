@@ -14,7 +14,7 @@ class ProgressTracker {
 
         const progressElement = document.getElementById('progressText');
         if (progressElement) {
-                        // Show dialogue progress in reverse order (245/245, 244/245, etc.)
+            // Show dialogue progress in reverse order (245/245, 244/245, etc.)
             if (currentWord && currentWord.conversationId) {
                 // Get total number of dialogues from the data
                 // Get all unique dialogue IDs and sort them in descending order
@@ -23,7 +23,7 @@ class ProgressTracker {
                 // Find the position of current dialogue in the sorted list
                 const dialogueIndex = allDialogueIds.indexOf(currentWord.conversationId);
                 const dialogueNumber = dialogueIndex !== -1 ? dialogueIndex + 1 : 1;
-                
+
                 // Show both dialogue ID and progress: "Dialogue 70245 (1/X)" where X is dynamic
                 progressElement.textContent = `Dialogue ${currentWord.conversationId} (${dialogueNumber}/${totalDialogues})`;
             } else {

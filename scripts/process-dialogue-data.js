@@ -221,42 +221,52 @@ class DialogueDataProcessor {
             const sentenceMatch = line.match(/^(\d+)\.\s*(.+)$/);
             if (sentenceMatch) {
                 sentenceNumber++;
-                const englishText = sentenceMatch[2].trim();
+                const firstLine = sentenceMatch[2].trim();
 
-                // Find Chinese translation (usually on next line or same line)
+                // Check if this line contains English text (has underscores for highlighted terms)
+                const hasHighlightedTerms = firstLine.includes('_');
+
+                let englishText = '';
                 let chineseText = '';
 
-                // Look for Chinese text in the next few lines
-                for (let j = 1; j <= 3 && (i + j) < lines.length; j++) {
-                    const nextLine = lines[i + j].trim();
-                    if (nextLine && /[\u4e00-\u9fff]/.test(nextLine)) {
-                        chineseText = nextLine;
-                        break;
-                    }
-                }
+                if (hasHighlightedTerms) {
+                    // This line contains English text with highlighted terms
+                    englishText = firstLine;
 
-                // If no Chinese found, check if it's on the same line
-                if (!chineseText && /[\u4e00-\u9fff]/.test(englishText)) {
-                    // Split English and Chinese if they're on the same line
-                    const parts = englishText.split(/[\u4e00-\u9fff]/);
-                    if (parts.length >= 2) {
-                        const englishPart = parts[0].trim();
-                        const chinesePart = englishText.substring(englishText.indexOf(parts[1]));
-                        if (englishPart && chinesePart) {
-                            englishText = englishPart;
-                            chineseText = chinesePart;
+                    // Look for Chinese translation on the next line
+                    if (i + 1 < lines.length) {
+                        const nextLine = lines[i + 1].trim();
+                        if (nextLine && !nextLine.match(/^\d+\./) && !nextLine.startsWith('---')) {
+                            chineseText = nextLine;
+                        }
+                    }
+                } else {
+                    // This line contains Chinese text, English text should be on the next line
+                    chineseText = firstLine;
+
+                    // Look for English text with highlighted terms on the next line
+                    if (i + 1 < lines.length) {
+                        const nextLine = lines[i + 1].trim();
+                        if (nextLine && nextLine.includes('_') && !nextLine.match(/^\d+\./) && !nextLine.startsWith('---')) {
+                            englishText = nextLine;
                         }
                     }
                 }
 
-                const sentence = {
-                    id: sentenceNumber,
-                    english: englishText,
-                    chinese: chineseText,
-                    vocabulary: this.extractVocabularyFromSentence(englishText, sentenceNumber)
-                };
+                // Only create sentence if we have both English and Chinese text
+                if (englishText && chineseText) {
+                    const sentence = {
+                        id: sentenceNumber,
+                        english: englishText,
+                        chinese: chineseText,
+                        vocabulary: this.extractVocabularyFromSentence(englishText, sentenceNumber)
+                    };
 
-                sentences.push(sentence);
+                    sentences.push(sentence);
+                } else {
+                    // Log warning for incomplete sentences
+                    this.warnings.push(`Dialogue sentence ${sentenceNumber}: Missing English or Chinese text`);
+                }
             }
         }
 

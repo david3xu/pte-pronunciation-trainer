@@ -1,386 +1,435 @@
 {
   "summary": {
-    "totalDialogues": 52,
-    "totalVocabularyTerms": 2182,
-    "processedAt": "2025-08-29T02:34:51.040Z",
+    "totalDialogues": 59,
+    "totalVocabularyTerms": 4682,
+    "processedAt": "2025-08-29T02:48:54.205Z",
     "sourceFile": "merged-70245-70186.md",
-    "processingErrors": 7,
-    "processingWarnings": 6
+    "processingErrors": 0,
+    "processingWarnings": 11
   },
   "categoryDistribution": {
-    "business": 29,
-    "social": 18,
+    "business": 31,
+    "social": 23,
     "medical": 2,
     "legal": 3
   },
   "difficultyDistribution": {
-    "hard": 1058,
-    "normal": 1050,
-    "easy": 74
+    "hard": 2394,
+    "normal": 1886,
+    "easy": 402
   },
   "dialogueList": [
     {
       "id": "70245",
       "title": "ABN and Business Structure Questions",
       "category": "business",
-      "vocabularyCount": 32,
+      "vocabularyCount": 59,
       "sentenceCount": 14
     },
     {
       "id": "70244",
       "title": "Seeking Advice After Workplace Layoffs",
       "category": "business",
-      "vocabularyCount": 29,
+      "vocabularyCount": 58,
       "sentenceCount": 14
     },
     {
       "id": "70243",
       "title": "Urgent Lawyer Appointment for Job Contract Review",
       "category": "social",
-      "vocabularyCount": 32,
+      "vocabularyCount": 64,
       "sentenceCount": 14
     },
     {
       "id": "70242",
       "title": "New Council Employee Helps Community Centre",
       "category": "social",
-      "vocabularyCount": 32,
+      "vocabularyCount": 65,
       "sentenceCount": 14
     },
     {
       "id": "70241",
       "title": "Suite Bathroom Design Clarification",
       "category": "social",
-      "vocabularyCount": 30,
+      "vocabularyCount": 66,
       "sentenceCount": 14
     },
     {
       "id": "70240",
       "title": "A New Creamy Leather Lounge Chair",
       "category": "social",
-      "vocabularyCount": 27,
+      "vocabularyCount": 59,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70239",
+      "title": "Light-Filled Home Office Plans",
+      "category": "social",
+      "vocabularyCount": 90,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70238",
+      "title": "Ordering Oat Milk in a Small Town",
+      "category": "social",
+      "vocabularyCount": 88,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70237",
+      "title": "New Immigrant's Banking Adjustment",
+      "category": "social",
+      "vocabularyCount": 99,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70236",
+      "title": "Shed to Park: Planting Volunteers",
+      "category": "social",
+      "vocabularyCount": 83,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70235",
+      "title": "Late Fee and Direct Debit",
+      "category": "social",
+      "vocabularyCount": 97,
       "sentenceCount": 14
     },
     {
       "id": "70234",
       "title": "Small Town Doctor & Grocer",
       "category": "social",
-      "vocabularyCount": 46,
+      "vocabularyCount": 98,
       "sentenceCount": 14
     },
     {
       "id": "70233",
       "title": "Excavator Theft",
       "category": "business",
-      "vocabularyCount": 33,
+      "vocabularyCount": 71,
       "sentenceCount": 14
     },
     {
       "id": "70232",
       "title": "Ceiling Leak Emergency Report",
       "category": "social",
-      "vocabularyCount": 32,
+      "vocabularyCount": 64,
       "sentenceCount": 14
     },
     {
       "id": "70231",
       "title": "Designing a Relaxing Indoor-Outdoor Space",
       "category": "business",
-      "vocabularyCount": 37,
+      "vocabularyCount": 77,
       "sentenceCount": 14
     },
     {
       "id": "70230",
       "title": "Support for Aging Parents",
       "category": "social",
-      "vocabularyCount": 36,
+      "vocabularyCount": 62,
       "sentenceCount": 14
     },
     {
       "id": "70229",
       "title": "Getting Insured After Moving Out",
       "category": "business",
-      "vocabularyCount": 37,
+      "vocabularyCount": 73,
       "sentenceCount": 14
     },
     {
       "id": "70228",
       "title": "First-Day Onboarding with HR",
       "category": "business",
-      "vocabularyCount": 35,
+      "vocabularyCount": 61,
       "sentenceCount": 14
     },
     {
       "id": "70227",
       "title": "Handmade Sausage Rolls and Pies for Café Menu",
       "category": "business",
-      "vocabularyCount": 32,
+      "vocabularyCount": 62,
       "sentenceCount": 14
     },
     {
       "id": "70226",
       "title": "Retail & Hospitality Jobs for New Migrant",
       "category": "business",
-      "vocabularyCount": 37,
+      "vocabularyCount": 63,
       "sentenceCount": 14
     },
     {
       "id": "70225",
       "title": "Over-the-Counter Drugs for Indigestion",
       "category": "medical",
-      "vocabularyCount": 34,
+      "vocabularyCount": 60,
       "sentenceCount": 14
     },
     {
       "id": "70224",
       "title": "Kitchen Cabinet Hinge Repair",
       "category": "business",
-      "vocabularyCount": 32,
+      "vocabularyCount": 55,
       "sentenceCount": 14
     },
     {
       "id": "70223",
       "title": "Discovering the Neighbourhood Post Office",
       "category": "business",
-      "vocabularyCount": 27,
+      "vocabularyCount": 55,
       "sentenceCount": 14
     },
     {
       "id": "70222",
       "title": "Bystander Assistance to Paramedic",
       "category": "medical",
-      "vocabularyCount": 28,
+      "vocabularyCount": 49,
       "sentenceCount": 14
     },
     {
       "id": "70221",
       "title": "Friendly Support for the New Town Doctor",
       "category": "social",
-      "vocabularyCount": 35,
+      "vocabularyCount": 67,
       "sentenceCount": 14
     },
     {
       "id": "70220",
       "title": "Tenant Requests Pest Control",
       "category": "business",
-      "vocabularyCount": 35,
+      "vocabularyCount": 60,
       "sentenceCount": 14
     },
     {
       "id": "70219",
       "title": "Understanding Bill Payment Delays",
       "category": "business",
-      "vocabularyCount": 27,
+      "vocabularyCount": 60,
       "sentenceCount": 14
     },
     {
       "id": "70218",
       "title": "Van Theft Report and Insurance Steps",
       "category": "legal",
-      "vocabularyCount": 36,
+      "vocabularyCount": 62,
       "sentenceCount": 14
     },
     {
       "id": "70217",
       "title": "Clarifying Local Dog Leash Rules",
       "category": "legal",
-      "vocabularyCount": 40,
+      "vocabularyCount": 89,
       "sentenceCount": 14
     },
     {
       "id": "70216",
       "title": "Resident Alerts Police to Speeding Driver",
       "category": "legal",
-      "vocabularyCount": 38,
+      "vocabularyCount": 83,
       "sentenceCount": 14
     },
     {
       "id": "70215",
       "title": "Inspecting An Off-Market Property",
       "category": "business",
-      "vocabularyCount": 46,
+      "vocabularyCount": 90,
       "sentenceCount": 14
     },
     {
       "id": "70214",
       "title": "Customer Calls About Faulty Washer",
       "category": "business",
-      "vocabularyCount": 47,
+      "vocabularyCount": 98,
       "sentenceCount": 14
     },
     {
       "id": "70213",
       "title": "Strategies for School Band Fundraising",
       "category": "business",
-      "vocabularyCount": 46,
+      "vocabularyCount": 95,
       "sentenceCount": 14
     },
     {
       "id": "70212",
       "title": "Newcomer Navigates Waste Sorting and Gardening",
       "category": "business",
-      "vocabularyCount": 41,
+      "vocabularyCount": 86,
       "sentenceCount": 14
     },
     {
       "id": "70211",
       "title": "Puppy Course: Commands & Grooming",
       "category": "business",
-      "vocabularyCount": 48,
+      "vocabularyCount": 91,
       "sentenceCount": 14
     },
     {
       "id": "70210",
       "title": "Making Use of a Spare Skip Bin",
       "category": "business",
-      "vocabularyCount": 34,
+      "vocabularyCount": 73,
       "sentenceCount": 14
     },
     {
       "id": "70209",
       "title": "New Neighbour's Dog Barking",
       "category": "social",
-      "vocabularyCount": 35,
+      "vocabularyCount": 64,
       "sentenceCount": 14
     },
     {
       "id": "70208",
       "title": "Car Insurance Claim After Accident",
       "category": "business",
-      "vocabularyCount": 49,
+      "vocabularyCount": 79,
       "sentenceCount": 15
     },
     {
       "id": "70207",
       "title": "Restaurant Reservation for Large Group",
       "category": "business",
-      "vocabularyCount": 50,
+      "vocabularyCount": 90,
       "sentenceCount": 17
     },
     {
       "id": "70206",
       "title": "Job Interview for Teaching Position",
       "category": "business",
-      "vocabularyCount": 43,
+      "vocabularyCount": 90,
       "sentenceCount": 16
+    },
+    {
+      "id": "70205",
+      "title": "Buying a Used Car from Private Seller",
+      "category": "business",
+      "vocabularyCount": 86,
+      "sentenceCount": 17
     },
     {
       "id": "70204",
       "title": "Reporting a Lost Credit Card",
       "category": "business",
-      "vocabularyCount": 49,
+      "vocabularyCount": 89,
       "sentenceCount": 18
+    },
+    {
+      "id": "70203",
+      "title": "Applying for a Library Card",
+      "category": "business",
+      "vocabularyCount": 100,
+      "sentenceCount": 21
     },
     {
       "id": "70202",
       "title": "Ordering Takeaway Food",
       "category": "business",
-      "vocabularyCount": 48,
+      "vocabularyCount": 75,
       "sentenceCount": 18
     },
     {
       "id": "70201",
       "title": "Asking for Directions to Tourist Attractions",
       "category": "social",
-      "vocabularyCount": 37,
+      "vocabularyCount": 78,
       "sentenceCount": 16
     },
     {
       "id": "70200",
       "title": "Discussing Weather and Seasonal Activities",
       "category": "social",
-      "vocabularyCount": 48,
+      "vocabularyCount": 83,
       "sentenceCount": 16
     },
     {
       "id": "70199",
       "title": "Booking a Doctor's Appointment",
       "category": "business",
-      "vocabularyCount": 49,
+      "vocabularyCount": 83,
       "sentenceCount": 18
     },
     {
       "id": "70198",
       "title": "Discussing Hobbies and Interests",
       "category": "social",
-      "vocabularyCount": 58,
+      "vocabularyCount": 103,
       "sentenceCount": 18
     },
     {
       "id": "70197",
       "title": "Renting an Apartment",
       "category": "business",
-      "vocabularyCount": 53,
+      "vocabularyCount": 88,
       "sentenceCount": 18
     },
     {
       "id": "70196",
       "title": "Making Small Talk at a Party",
       "category": "social",
-      "vocabularyCount": 50,
+      "vocabularyCount": 92,
       "sentenceCount": 18
     },
     {
       "id": "70195",
       "title": "Shopping for Groceries",
       "category": "business",
-      "vocabularyCount": 57,
+      "vocabularyCount": 90,
       "sentenceCount": 19
     },
     {
       "id": "70194",
       "title": "Discussing Weekend Plans",
       "category": "social",
-      "vocabularyCount": 60,
+      "vocabularyCount": 98,
       "sentenceCount": 18
     },
     {
       "id": "70193",
       "title": "Ordering Coffee at a Café",
       "category": "business",
-      "vocabularyCount": 55,
+      "vocabularyCount": 86,
       "sentenceCount": 19
     },
     {
       "id": "70192",
       "title": "Asking for Help with Homework",
       "category": "social",
-      "vocabularyCount": 52,
+      "vocabularyCount": 95,
       "sentenceCount": 19
     },
     {
       "id": "70191",
       "title": "Discussing Travel Plans",
       "category": "social",
-      "vocabularyCount": 58,
+      "vocabularyCount": 101,
       "sentenceCount": 20
     },
     {
       "id": "70190",
       "title": "Ordering Pizza Delivery",
       "category": "business",
-      "vocabularyCount": 52,
+      "vocabularyCount": 85,
       "sentenceCount": 19
     },
     {
       "id": "70189",
       "title": "Discussing Movies and Entertainment",
       "category": "social",
-      "vocabularyCount": 57,
+      "vocabularyCount": 97,
       "sentenceCount": 20
     },
     {
       "id": "70187",
       "title": "Discussing Food and Cooking",
       "category": "social",
-      "vocabularyCount": 63,
+      "vocabularyCount": 112,
       "sentenceCount": 20
     },
     {
       "id": "70186",
       "title": "Ordering Food at a Restaurant",
       "category": "business",
-      "vocabularyCount": 58,
+      "vocabularyCount": 86,
       "sentenceCount": 19
     }
   ]

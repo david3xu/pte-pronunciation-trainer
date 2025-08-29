@@ -14,7 +14,7 @@ class DialogueDataProcessor {
         this.vocabulary = [];
         this.errors = [];
         this.warnings = [];
-        
+
         // Predefined categories with proper mapping
         this.categories = {
             'business': {
@@ -95,21 +95,21 @@ class DialogueDataProcessor {
     processMarkdownFile(inputFile) {
         console.log(`\n🚀 Starting CCL Dialogue Data Processing...`);
         console.log(`📁 Input file: ${inputFile}`);
-        
+
         if (!fs.existsSync(inputFile)) {
             throw new Error(`❌ Input file not found: ${inputFile}`);
         }
 
         const content = fs.readFileSync(inputFile, 'utf8');
         console.log(`📄 File size: ${(content.length / 1024).toFixed(2)} KB`);
-        
+
         const dialogueBlocks = this.extractDialogueBlocks(content);
         console.log(`🔍 Found ${dialogueBlocks.length} dialogue blocks`);
-        
+
         if (dialogueBlocks.length === 0) {
             throw new Error('❌ No dialogue blocks found in the file');
         }
-        
+
         // Process each dialogue block
         for (const block of dialogueBlocks) {
             console.log(`\n📝 Processing dialogue ${block.id}: ${block.title}`);
@@ -149,7 +149,7 @@ class DialogueDataProcessor {
 
     extractDialogueBlocks(content) {
         console.log(`🔍 Extracting dialogue blocks...`);
-        
+
         // Split content by dialogue headers (#70245., #70244., etc.)
         const dialogueRegex = /^#(\d+)\.\s*(.+?)\s*[-–]\s*([^-–]+)$/gm;
         const blocks = [];
@@ -158,11 +158,11 @@ class DialogueDataProcessor {
         while ((match = dialogueRegex.exec(content)) !== null) {
             const startIndex = match.index;
             const endIndex = content.indexOf('#', startIndex + 1);
-            
-            const blockContent = endIndex !== -1 
+
+            const blockContent = endIndex !== -1
                 ? content.substring(startIndex, endIndex)
                 : content.substring(startIndex);
-            
+
             blocks.push({
                 header: match[0],
                 id: match[1],
@@ -174,10 +174,10 @@ class DialogueDataProcessor {
 
         // Sort blocks by ID (descending order: 70245, 70244, 70243, etc.)
         blocks.sort((a, b) => parseInt(b.id) - parseInt(a.id));
-        
+
         console.log(`   • Extracted ${blocks.length} dialogue blocks`);
         console.log(`   • ID range: ${blocks[blocks.length - 1]?.id} to ${blocks[0]?.id}`);
-        
+
         return blocks;
     }
 
@@ -185,12 +185,12 @@ class DialogueDataProcessor {
         try {
             const sentences = this.extractSentences(block.content);
             const briefing = this.extractBriefing(block.content);
-            
+
             if (sentences.length === 0) {
                 this.warnings.push(`Dialogue ${block.id}: No sentences found`);
                 return null;
             }
-            
+
             return {
                 id: block.id,
                 title: block.title,
@@ -198,7 +198,7 @@ class DialogueDataProcessor {
                 briefing: briefing,
                 sentences: sentences,
                 metadata: {
-                    source_file: 'merged-70245-70158.md',
+                    source_file: 'merged-70245-70186.md',
                     extraction_date: new Date().toISOString(),
                     total_vocabulary_terms: sentences.reduce((sum, s) => sum + s.vocabulary.length, 0)
                 }
@@ -216,16 +216,16 @@ class DialogueDataProcessor {
 
         for (let i = 0; i < lines.length; i++) {
             const line = lines[i].trim();
-            
+
             // Look for numbered sentences (1., 2., 3., etc.)
             const sentenceMatch = line.match(/^(\d+)\.\s*(.+)$/);
             if (sentenceMatch) {
                 sentenceNumber++;
                 const englishText = sentenceMatch[2].trim();
-                
+
                 // Find Chinese translation (usually on next line or same line)
                 let chineseText = '';
-                
+
                 // Look for Chinese text in the next few lines
                 for (let j = 1; j <= 3 && (i + j) < lines.length; j++) {
                     const nextLine = lines[i + j].trim();
@@ -255,7 +255,7 @@ class DialogueDataProcessor {
                     chinese: chineseText,
                     vocabulary: this.extractVocabularyFromSentence(englishText, sentenceNumber)
                 };
-                
+
                 sentences.push(sentence);
             }
         }
@@ -265,15 +265,15 @@ class DialogueDataProcessor {
 
     extractVocabularyFromSentence(sentence, sentenceId) {
         const vocabulary = [];
-        
+
         // Find highlighted terms (_term_)
         const termRegex = /_([^_]+)_/g;
         let match;
-        
+
         while ((match = termRegex.exec(sentence)) !== null) {
             const term = match[1];
             const difficulty = this.assessDifficulty(term);
-            
+
             vocabulary.push({
                 term: term,
                 difficulty: difficulty,
@@ -281,7 +281,7 @@ class DialogueDataProcessor {
                 context: sentence
             });
         }
-        
+
         return vocabulary;
     }
 
@@ -312,22 +312,22 @@ class DialogueDataProcessor {
             'healthcare': 'medical',
             'government': 'legal'
         };
-        
+
         const normalized = category.toLowerCase().trim();
         const mappedCategory = categoryMap[normalized];
-        
+
         if (!mappedCategory) {
             this.warnings.push(`Unknown category: "${category}" - defaulting to "social"`);
             return 'social';
         }
-        
+
         return mappedCategory;
     }
 
     assessDifficulty(term) {
         const wordCount = term.split(' ').length;
         const hasComplexWords = /(government|business|cooperation|structure|certificate|application|registration|compliance|regulation)/i.test(term);
-        
+
         if (wordCount >= 4 || hasComplexWords) return 'hard';
         if (wordCount >= 2) return 'normal';
         return 'easy';
@@ -359,7 +359,7 @@ class DialogueDataProcessor {
 
     saveProcessedData(data, outputDir) {
         console.log(`\n💾 Saving processed data...`);
-        
+
         if (!fs.existsSync(outputDir)) {
             fs.mkdirSync(outputDir, { recursive: true });
             console.log(`   • Created output directory: ${outputDir}`);
@@ -382,13 +382,13 @@ class DialogueDataProcessor {
 
         // Generate summary report
         this.generateReport(data, outputDir);
-        
+
         console.log(`✅ All data files saved successfully!`);
     }
 
     generateReport(data, outputDir) {
         console.log(`\n📊 Generating processing report...`);
-        
+
         const report = {
             summary: {
                 totalDialogues: data.metadata.totalDialogues,
@@ -484,7 +484,7 @@ class DialogueDataProcessor {
 
     validateData(data) {
         console.log(`\n🔍 Validating processed data...`);
-        
+
         let isValid = true;
         const validationErrors = [];
 
@@ -533,32 +533,32 @@ class DialogueDataProcessor {
 // Main execution
 if (require.main === module) {
     const processor = new DialogueDataProcessor();
-    
+
     try {
-        const inputFile = path.join(__dirname, '..', 'data-processing', 'extractors', 'merged-70245-70158.md');
+        const inputFile = path.join(__dirname, '..', 'data-processing', 'extractors', 'merged-70245-70186.md');
         const outputDir = path.join(__dirname, '..', 'data', 'processed');
-        
+
         console.log('🚀 Starting CCL Dialogue Data Processing...\n');
-        
+
         // Process the markdown file
         const data = processor.processMarkdownFile(inputFile);
-        
+
         // Validate the processed data
         if (processor.validateData(data)) {
             // Save the processed data
             processor.saveProcessedData(data, outputDir);
-            
+
             console.log('\n🎉 Processing completed successfully!');
             console.log(`📊 Final Summary:`);
             console.log(`   • Dialogues: ${data.metadata.totalDialogues}`);
             console.log(`   • Vocabulary Terms: ${data.metadata.totalVocabularyTerms}`);
             console.log(`   • Categories: ${Object.keys(data.categories).length}`);
             console.log(`   • Output Directory: ${outputDir}`);
-            
+
             if (data.metadata.processingErrors > 0) {
                 console.log(`⚠️  ${data.metadata.processingErrors} errors occurred - check logs above`);
             }
-            
+
             if (data.metadata.processingWarnings > 0) {
                 console.log(`⚠️  ${data.metadata.processingWarnings} warnings occurred - check logs above`);
             }
@@ -566,7 +566,7 @@ if (require.main === module) {
             console.log('\n❌ Data validation failed - not saving files');
             process.exit(1);
         }
-        
+
     } catch (error) {
         console.error('\n💥 Processing failed:', error.message);
         console.error('\nStack trace:', error.stack);

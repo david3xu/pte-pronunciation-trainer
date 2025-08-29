@@ -1,420 +1,387 @@
 {
   "summary": {
-    "totalDialogues": 56,
-    "totalVocabularyTerms": 2235,
-    "processedAt": "2025-08-28T06:41:14.093Z",
-    "sourceFile": "merged-70245-70158.md",
-    "processingErrors": 0,
-    "processingWarnings": 2
+    "totalDialogues": 52,
+    "totalVocabularyTerms": 2182,
+    "processedAt": "2025-08-29T02:34:51.040Z",
+    "sourceFile": "merged-70245-70186.md",
+    "processingErrors": 7,
+    "processingWarnings": 6
   },
   "categoryDistribution": {
-    "business": 21,
-    "social": 6,
-    "housing": 12,
-    "medical": 5,
-    "tourism": 2,
-    "legal": 3,
-    "education": 5,
-    "social-welfare": 1,
-    "immigration": 1
+    "business": 29,
+    "social": 18,
+    "medical": 2,
+    "legal": 3
   },
   "difficultyDistribution": {
-    "hard": 1010,
-    "easy": 301,
-    "normal": 924
+    "hard": 1058,
+    "normal": 1050,
+    "easy": 74
   },
   "dialogueList": [
     {
       "id": "70245",
       "title": "ABN and Business Structure Questions",
       "category": "business",
-      "vocabularyCount": 34,
+      "vocabularyCount": 32,
       "sentenceCount": 14
     },
     {
       "id": "70244",
       "title": "Seeking Advice After Workplace Layoffs",
       "category": "business",
-      "vocabularyCount": 32,
+      "vocabularyCount": 29,
       "sentenceCount": 14
     },
     {
       "id": "70243",
       "title": "Urgent Lawyer Appointment for Job Contract Review",
       "category": "social",
-      "vocabularyCount": 33,
+      "vocabularyCount": 32,
       "sentenceCount": 14
     },
     {
       "id": "70242",
       "title": "New Council Employee Helps Community Centre",
       "category": "social",
-      "vocabularyCount": 31,
+      "vocabularyCount": 32,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70241",
+      "title": "Suite Bathroom Design Clarification",
+      "category": "social",
+      "vocabularyCount": 30,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70240",
+      "title": "A New Creamy Leather Lounge Chair",
+      "category": "social",
+      "vocabularyCount": 27,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70234",
+      "title": "Small Town Doctor & Grocer",
+      "category": "social",
+      "vocabularyCount": 46,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70233",
+      "title": "Excavator Theft",
+      "category": "business",
+      "vocabularyCount": 33,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70232",
+      "title": "Ceiling Leak Emergency Report",
+      "category": "social",
+      "vocabularyCount": 32,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70231",
+      "title": "Designing a Relaxing Indoor-Outdoor Space",
+      "category": "business",
+      "vocabularyCount": 37,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70230",
+      "title": "Support for Aging Parents",
+      "category": "social",
+      "vocabularyCount": 36,
       "sentenceCount": 14
     },
     {
       "id": "70229",
-      "title": "Getting Insured After Moving Out - Business",
+      "title": "Getting Insured After Moving Out",
       "category": "business",
       "vocabularyCount": 37,
       "sentenceCount": 14
     },
     {
       "id": "70228",
-      "title": "First-Day Onboarding with HR - Business",
-      "category": "housing",
-      "vocabularyCount": 32,
+      "title": "First-Day Onboarding with HR",
+      "category": "business",
+      "vocabularyCount": 35,
       "sentenceCount": 14
     },
     {
       "id": "70227",
-      "title": "Handmade Sausage Rolls and Pies for Café Menu - Business",
+      "title": "Handmade Sausage Rolls and Pies for Café Menu",
       "category": "business",
       "vocabularyCount": 32,
       "sentenceCount": 14
     },
     {
       "id": "70226",
-      "title": "Retail & Hospitality Jobs for New Migrant - Business",
+      "title": "Retail & Hospitality Jobs for New Migrant",
       "category": "business",
-      "vocabularyCount": 42,
+      "vocabularyCount": 37,
       "sentenceCount": 14
     },
     {
       "id": "70225",
-      "title": "Over-the-Counter Drugs for Indigestion - Medical",
+      "title": "Over-the-Counter Drugs for Indigestion",
       "category": "medical",
       "vocabularyCount": 34,
       "sentenceCount": 14
     },
     {
       "id": "70224",
-      "title": "Kitchen Cabinet Hinge Repair - Business",
+      "title": "Kitchen Cabinet Hinge Repair",
       "category": "business",
-      "vocabularyCount": 33,
+      "vocabularyCount": 32,
       "sentenceCount": 14
     },
     {
       "id": "70223",
-      "title": "Discovering the Neighbourhood Post Office - Business",
+      "title": "Discovering the Neighbourhood Post Office",
       "category": "business",
       "vocabularyCount": 27,
       "sentenceCount": 14
     },
     {
       "id": "70222",
-      "title": "Bystander Assistance to Paramedic - Medical",
+      "title": "Bystander Assistance to Paramedic",
       "category": "medical",
-      "vocabularyCount": 25,
+      "vocabularyCount": 28,
       "sentenceCount": 14
     },
     {
       "id": "70221",
-      "title": "Friendly Support for the New Town Doctor - Social",
-      "category": "medical",
+      "title": "Friendly Support for the New Town Doctor",
+      "category": "social",
       "vocabularyCount": 35,
       "sentenceCount": 14
     },
     {
       "id": "70220",
-      "title": "Tenant Requests Pest Control - Business",
-      "category": "housing",
-      "vocabularyCount": 29,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70199",
-      "title": "Parent's Call for Disability Holiday Program Details - Social",
-      "category": "tourism",
-      "vocabularyCount": 41,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70198",
-      "title": "Flight Change Request After New Job Start - Tourism+Business",
-      "category": "tourism",
-      "vocabularyCount": 41,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70197",
-      "title": "Police Call About House Invasion - Legal",
-      "category": "housing",
-      "vocabularyCount": 41,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70196",
-      "title": "Pharmacist Advice for Flu-Like Symptoms - Medical",
-      "category": "medical",
-      "vocabularyCount": 45,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70195",
-      "title": "Office Meeting on Remote Work Challenges - Business",
+      "title": "Tenant Requests Pest Control",
       "category": "business",
-      "vocabularyCount": 42,
+      "vocabularyCount": 35,
       "sentenceCount": 14
     },
     {
-      "id": "70194",
-      "title": "Phone Inquiry about Electric Bike Rules - Legal+Business",
+      "id": "70219",
+      "title": "Understanding Bill Payment Delays",
+      "category": "business",
+      "vocabularyCount": 27,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70218",
+      "title": "Van Theft Report and Insurance Steps",
       "category": "legal",
-      "vocabularyCount": 44,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70193",
-      "title": "Talking Through a Retirement Plan - Business",
-      "category": "business",
-      "vocabularyCount": 47,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70192",
-      "title": "Discussing a Film Festival with the City Council - Social",
-      "category": "social",
-      "vocabularyCount": 40,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70191",
-      "title": "Navigating Customer Service Challenges - Business",
-      "category": "business",
-      "vocabularyCount": 44,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70190",
-      "title": "From Crib to Platform Bed - Social+Business",
-      "category": "housing",
-      "vocabularyCount": 39,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70189",
-      "title": "Helping Hands for a Neighbourhood Park - Social",
-      "category": "social",
-      "vocabularyCount": 48,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70188",
-      "title": "A Low-score University Assignment - Education",
-      "category": "education",
       "vocabularyCount": 36,
       "sentenceCount": 14
     },
     {
-      "id": "70187",
-      "title": "Social Worker Directories - Social",
-      "category": "housing",
-      "vocabularyCount": 44,
+      "id": "70217",
+      "title": "Clarifying Local Dog Leash Rules",
+      "category": "legal",
+      "vocabularyCount": 40,
       "sentenceCount": 14
     },
     {
-      "id": "70186",
-      "title": "Discussing the Upcoming Museum Visit - Education",
-      "category": "education",
-      "vocabularyCount": 43,
+      "id": "70216",
+      "title": "Resident Alerts Police to Speeding Driver",
+      "category": "legal",
+      "vocabularyCount": 38,
       "sentenceCount": 14
     },
     {
-      "id": "70185",
-      "title": "Trauma Insurance 101 - Business",
+      "id": "70215",
+      "title": "Inspecting An Off-Market Property",
       "category": "business",
       "vocabularyCount": 46,
       "sentenceCount": 14
     },
     {
-      "id": "70184",
-      "title": "Tax Deadlines and Accounting Solutions - Business",
+      "id": "70214",
+      "title": "Customer Calls About Faulty Washer",
       "category": "business",
-      "vocabularyCount": 52,
+      "vocabularyCount": 47,
       "sentenceCount": 14
     },
     {
-      "id": "70183",
-      "title": "Packing Up and Selling - Business",
-      "category": "housing",
-      "vocabularyCount": 44,
+      "id": "70213",
+      "title": "Strategies for School Band Fundraising",
+      "category": "business",
+      "vocabularyCount": 46,
       "sentenceCount": 14
     },
     {
-      "id": "70182",
-      "title": "Promotion and Transition - Business",
+      "id": "70212",
+      "title": "Newcomer Navigates Waste Sorting and Gardening",
       "category": "business",
       "vocabularyCount": 41,
       "sentenceCount": 14
     },
     {
-      "id": "70181",
-      "title": "From Clinic to Home - Medical",
-      "category": "medical",
-      "vocabularyCount": 42,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70180",
-      "title": "Downsizing After 15 Years - Business",
-      "category": "housing",
-      "vocabularyCount": 44,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70179",
-      "title": "Stolen Tools Report - Legal",
+      "id": "70211",
+      "title": "Puppy Course: Commands & Grooming",
       "category": "business",
-      "vocabularyCount": 36,
+      "vocabularyCount": 48,
       "sentenceCount": 14
     },
     {
-      "id": "70178",
-      "title": "Settling In and Planting Seeds - Social",
-      "category": "housing",
-      "vocabularyCount": 30,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70177",
-      "title": "Booking a 100th Birthday Shoot - Business",
+      "id": "70210",
+      "title": "Making Use of a Spare Skip Bin",
       "category": "business",
-      "vocabularyCount": 39,
+      "vocabularyCount": 34,
       "sentenceCount": 14
     },
     {
-      "id": "70176",
-      "title": "Birthday Party Venue Planning - Social",
+      "id": "70209",
+      "title": "New Neighbour's Dog Barking",
       "category": "social",
-      "vocabularyCount": 30,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70175",
-      "title": "Drainage Concerns - Business",
-      "category": "housing",
-      "vocabularyCount": 33,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70174",
-      "title": "Getting a Quote for Boat Insurance - Business",
-      "category": "business",
-      "vocabularyCount": 36,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70173",
-      "title": "Water Restrictions in Australia - Social+Legal",
-      "category": "housing",
       "vocabularyCount": 35,
       "sentenceCount": 14
     },
     {
-      "id": "70172",
-      "title": "Looking for a Foster Pet - Social",
-      "category": "housing",
+      "id": "70208",
+      "title": "Car Insurance Claim After Accident",
+      "category": "business",
+      "vocabularyCount": 49,
+      "sentenceCount": 15
+    },
+    {
+      "id": "70207",
+      "title": "Restaurant Reservation for Large Group",
+      "category": "business",
+      "vocabularyCount": 50,
+      "sentenceCount": 17
+    },
+    {
+      "id": "70206",
+      "title": "Job Interview for Teaching Position",
+      "category": "business",
+      "vocabularyCount": 43,
+      "sentenceCount": 16
+    },
+    {
+      "id": "70204",
+      "title": "Reporting a Lost Credit Card",
+      "category": "business",
+      "vocabularyCount": 49,
+      "sentenceCount": 18
+    },
+    {
+      "id": "70202",
+      "title": "Ordering Takeaway Food",
+      "category": "business",
+      "vocabularyCount": 48,
+      "sentenceCount": 18
+    },
+    {
+      "id": "70201",
+      "title": "Asking for Directions to Tourist Attractions",
+      "category": "social",
       "vocabularyCount": 37,
-      "sentenceCount": 14
+      "sentenceCount": 16
     },
     {
-      "id": "70171",
-      "title": "Enrol to Vote - Legal",
-      "category": "legal",
-      "vocabularyCount": 29,
-      "sentenceCount": 12
+      "id": "70200",
+      "title": "Discussing Weather and Seasonal Activities",
+      "category": "social",
+      "vocabularyCount": 48,
+      "sentenceCount": 16
     },
     {
-      "id": "70170",
-      "title": "Home-based Bakery Business - Business",
+      "id": "70199",
+      "title": "Booking a Doctor's Appointment",
       "category": "business",
-      "vocabularyCount": 14,
-      "sentenceCount": 14
+      "vocabularyCount": 49,
+      "sentenceCount": 18
     },
     {
-      "id": "70169",
-      "title": "Bedroom Furniture Payment Plan - Business",
+      "id": "70198",
+      "title": "Discussing Hobbies and Interests",
+      "category": "social",
+      "vocabularyCount": 58,
+      "sentenceCount": 18
+    },
+    {
+      "id": "70197",
+      "title": "Renting an Apartment",
       "category": "business",
-      "vocabularyCount": 42,
-      "sentenceCount": 12
+      "vocabularyCount": 53,
+      "sentenceCount": 18
     },
     {
-      "id": "70168",
-      "title": "Inquiring About Spanish Lessons - Education",
-      "category": "education",
-      "vocabularyCount": 45,
-      "sentenceCount": 14
+      "id": "70196",
+      "title": "Making Small Talk at a Party",
+      "category": "social",
+      "vocabularyCount": 50,
+      "sentenceCount": 18
     },
     {
-      "id": "70167",
-      "title": "Discussing an engagement Party - Social+Business",
+      "id": "70195",
+      "title": "Shopping for Groceries",
+      "category": "business",
+      "vocabularyCount": 57,
+      "sentenceCount": 19
+    },
+    {
+      "id": "70194",
+      "title": "Discussing Weekend Plans",
+      "category": "social",
+      "vocabularyCount": 60,
+      "sentenceCount": 18
+    },
+    {
+      "id": "70193",
+      "title": "Ordering Coffee at a Café",
+      "category": "business",
+      "vocabularyCount": 55,
+      "sentenceCount": 19
+    },
+    {
+      "id": "70192",
+      "title": "Asking for Help with Homework",
+      "category": "social",
+      "vocabularyCount": 52,
+      "sentenceCount": 19
+    },
+    {
+      "id": "70191",
+      "title": "Discussing Travel Plans",
+      "category": "social",
+      "vocabularyCount": 58,
+      "sentenceCount": 20
+    },
+    {
+      "id": "70190",
+      "title": "Ordering Pizza Delivery",
       "category": "business",
       "vocabularyCount": 52,
-      "sentenceCount": 14
+      "sentenceCount": 19
     },
     {
-      "id": "70166",
-      "title": "Fundraising Event Planning - Social+Business",
-      "category": "social-welfare",
-      "vocabularyCount": 73,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70165",
-      "title": "Working Holiday Visa Inquiry - Immigration",
-      "category": "immigration",
-      "vocabularyCount": 50,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70164",
-      "title": "Resignations and Terminations - Legal",
-      "category": "business",
-      "vocabularyCount": 76,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70163",
-      "title": "Guiding a Daughter's School Transition - Social+Education",
-      "category": "education",
-      "vocabularyCount": 58,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70162",
-      "title": "Planning a Neighborhood Gathering - Social",
+      "id": "70189",
+      "title": "Discussing Movies and Entertainment",
       "category": "social",
-      "vocabularyCount": 61,
-      "sentenceCount": 14
+      "vocabularyCount": 57,
+      "sentenceCount": 20
     },
     {
-      "id": "70161",
-      "title": "Legal Consultation for Selling a Small Business - Legal",
-      "category": "legal",
-      "vocabularyCount": 55,
-      "sentenceCount": 14
+      "id": "70187",
+      "title": "Discussing Food and Cooking",
+      "category": "social",
+      "vocabularyCount": 63,
+      "sentenceCount": 20
     },
     {
-      "id": "70160",
-      "title": "Rental Inquiry at the Council Office - Business",
-      "category": "housing",
-      "vocabularyCount": 29,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70159",
-      "title": "A Lonely Transfer Student - Education",
-      "category": "education",
-      "vocabularyCount": 27,
-      "sentenceCount": 14
-    },
-    {
-      "id": "70158",
-      "title": "Catering Business Ideas - Business",
+      "id": "70186",
+      "title": "Ordering Food at a Restaurant",
       "category": "business",
-      "vocabularyCount": 28,
-      "sentenceCount": 14
+      "vocabularyCount": 58,
+      "sentenceCount": 19
     }
   ]
 }

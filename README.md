@@ -66,7 +66,7 @@ When you have new CCL conversation data to add:
 
 ```bash
 # 1. Update the main conversation file with highlighted terms
-# Edit: data-processing/extractors/merged-70245-70158.md
+# Edit: data-processing/extractors/merged-conversations.md
 # Use _term_ syntax to highlight new vocabulary (e.g., _insurance claim_)
 
 # 2. Test locally - regenerate vocabulary from updated conversations

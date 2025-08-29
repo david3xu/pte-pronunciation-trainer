@@ -176,7 +176,7 @@ class DialogueDataProcessor {
         blocks.sort((a, b) => parseInt(b.id) - parseInt(a.id));
 
         console.log(`   • Extracted ${blocks.length} dialogue blocks`);
-        console.log(`   • ID range: ${blocks[blocks.length - 1]?.id} to ${blocks[0]?.id}`);
+        console.log(`   • ID range: ${blocks[blocks.length - 1] && blocks[blocks.length - 1].id} to ${blocks[0] && blocks[0].id}`);
 
         return blocks;
     }
@@ -198,7 +198,7 @@ class DialogueDataProcessor {
                 briefing: briefing,
                 sentences: sentences,
                 metadata: {
-                    source_file: 'merged-70245-70186.md',
+                    source_file: 'merged-conversations.md',
                     extraction_date: new Date().toISOString(),
                     total_vocabulary_terms: sentences.reduce((sum, s) => sum + s.vocabulary.length, 0)
                 }
@@ -545,7 +545,7 @@ if (require.main === module) {
     const processor = new DialogueDataProcessor();
 
     try {
-        const inputFile = path.join(__dirname, '..', 'data-processing', 'extractors', 'merged-70245-70186.md');
+        const inputFile = path.join(__dirname, '..', 'data-processing', 'extractors', 'merged-conversations.md');
         const outputDir = path.join(__dirname, '..', 'data', 'processed');
 
         console.log('🚀 Starting CCL Dialogue Data Processing...\n');

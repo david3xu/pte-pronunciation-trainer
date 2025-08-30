@@ -47,7 +47,7 @@ cd ccl-pronunciation-trainer
 npm install
 
 # Generate complete dialogue dataset (7,072 comprehensive terms)
-npm run extract-vocab
+npm run process-data
 
 # Start development server (Python HTTP server)
 npm run dev
@@ -70,8 +70,8 @@ When you have new CCL conversation data to add:
 # Use _term_ syntax to highlight vocabulary (e.g., _insurance claim_)
 
 # 2. Regenerate complete dataset and vocabulary 
-npm run extract-vocab          # Generate vocabulary terms
-node scripts/process-dialogue-data.js  # Generate structured dataset
+npm run process-data                   # Generate structured dataset (primary)
+npm run extract-vocab                  # Generate vocabulary for backward compatibility
 
 # 3. Test in development server
 npm run dev
@@ -106,8 +106,8 @@ The processing scripts will automatically:
 **For Vercel/Production deployments:**
 - **Only commit raw conversation data** (`merged-conversations.md`)
 - **Generated files are ignored by Git** (`data/generated/`, `data/processed/`)
-- **Vercel automatically runs** `npm run extract-vocab && npm run build` during deployment
-- **Complete dataset generated** from source conversations on each deploy (91 dialogues → 7,072 terms)
+- **Vercel automatically runs** `npm run vercel-build` during deployment
+- **Frontend loads complete dataset directly** from `/data/processed/complete-dataset.json` (91 dialogues → 7,072 terms)
 
 **For manual deployments:**
 ```bash
@@ -118,10 +118,17 @@ npm run vercel-build    # Runs extract-vocab + build for production
 
 ### Core Development
 ```bash
-npm start                     # Extract vocabulary + Dev server (full setup)
+npm start                     # Process complete dataset + Dev server (full setup)
 npm run dev                   # Start development server  
-npm run extract-vocab         # Generate conversation vocabulary (7,072 terms)
+npm run process-data          # Generate complete dataset (7,072 terms - primary)
+npm run extract-vocab         # Generate vocabulary files (for backward compatibility)
 npm run validate              # Validate all data integrity
+```
+
+### Data Processing
+```bash
+npm run process-data                     # Generate complete dataset (primary data source)
+npm run extract-vocab                    # Generate simple vocabulary (legacy support)
 ```
 
 ### Production & Build
@@ -212,7 +219,7 @@ See [DEVELOPMENT.md](docs/DEVELOPMENT.md) for detailed instructions.
 ```bash
 # Core Commands (all tested and working)
 npm run dev          # Start development server on port 3000
-npm run extract-vocab # Generate conversation vocabulary (7,072 terms)  
+npm run process-data # Generate complete dataset (7,072 terms - primary)  
 npm run validate     # Comprehensive data validation
 npm run build        # Production build with minification
 npm run deploy       # Full deployment pipeline

@@ -2,15 +2,15 @@
 
 A comprehensive web-based pronunciation training application for NAATI CCL (Credentialed Community Language) exam preparation, featuring conversation-based vocabulary with real-world context.
 
-- **💬 Conversation-Based (937 terms)** - Practical terms from real CCL exam dialogues with 100% contextual examples
+- **💬 Conversation-Based (7,072 terms)** - Comprehensive vocabulary from 91 real CCL exam dialogues with contextual examples and dialogue structure
 
 ## Features ✅ Fully Implemented
 
-### 🎯 Conversation-Based Vocabulary System
-- **💬 Real CCL Terms (937)** - Practical vocabulary extracted from actual NAATI CCL test conversations
-- **📝 100% Contextual Examples** - Every term includes bilingual example sentences from source dialogues
-- **🏷️ Smart Categorization** - Organized across 6 domains (social-welfare, education, legal-government, business-finance, medical-healthcare, travel-immigration)
-- **📊 Intelligent Classification** - Difficulty-based learning with Easy/Normal/Hard progression
+### 🎯 Complete Dialogue-Based Vocabulary System
+- **💬 Comprehensive CCL Terms (7,072)** - Extensive vocabulary extracted from 91 complete NAATI CCL conversations  
+- **📝 Full Contextual Learning** - Every term includes original sentence context, dialogue flow, and conversation structure
+- **🏷️ Smart Categorization** - Organized across 9 domains with conversation-aware classification
+- **📊 Enhanced Metadata** - Difficulty levels, phonetic transcriptions, and dialogue relationships
 
 ### 🔊 Advanced Pronunciation Training
 - **Australian English (en-AU) TTS** - Optimized for CCL exam context  
@@ -46,7 +46,7 @@ cd ccl-pronunciation-trainer
 # Install dependencies
 npm install
 
-# Generate conversation-based vocabulary (937 practical terms)
+# Generate complete dialogue dataset (7,072 comprehensive terms)
 npm run extract-vocab
 
 # Start development server (Python HTTP server)
@@ -65,47 +65,49 @@ http://localhost:3000
 When you have new CCL conversation data to add:
 
 ```bash
-# 1. Update the main conversation file with highlighted terms
+# 1. Update the main conversation file with highlighted terms  
 # Edit: data-processing/extractors/merged-conversations.md
-# Use _term_ syntax to highlight new vocabulary (e.g., _insurance claim_)
+# Use _term_ syntax to highlight vocabulary (e.g., _insurance claim_)
 
-# 2. Test locally - regenerate vocabulary from updated conversations
-npm run extract-vocab
+# 2. Regenerate complete dataset and vocabulary 
+npm run extract-vocab          # Generate vocabulary terms
+node scripts/process-dialogue-data.js  # Generate structured dataset
 
 # 3. Test in development server
 npm run dev
 
-# 4. Deploy to production - commit and push ONLY the raw data
-git add data-processing/extractors/merged-70245-70158.md
-git commit -m "Add new CCL vocabulary terms from conversations"
+# 4. Deploy to production - commit and push conversation data
+git add data-processing/extractors/merged-conversations.md
+git commit -m "Add new CCL vocabulary terms from conversations"  
 git push origin main
 
-# Note: Generated files (data/generated/, reports/) are automatically 
-# created by Vercel during build - no need to commit them!
+# Note: Generated files (data/generated/, data/processed/) are automatically 
+# created by Vercel during build from the complete dataset!
 ```
 
 ### 🔍 Highlighting Syntax
 
-In `data-processing/extractors/merged-70245-70158.md`, mark important terms with underscores:
+In `data-processing/extractors/merged-conversations.md`, mark important terms with underscores:
 
 ```markdown
 Speaker: The _insurance claim_ was processed quickly, and the _settlement amount_ was fair.
 翻译：保险理赔处理得很快，理赔金额也很公平。
 ```
 
-The extraction script will automatically:
-- Extract highlighted terms: "insurance claim", "settlement amount" 
-- Include bilingual context sentences
-- Categorize by conversation domain (business-finance in this case)
-- Assign difficulty levels based on term complexity
+The processing scripts will automatically:
+- Extract highlighted terms: "insurance claim", "settlement amount"  
+- Include full sentence context and dialogue structure
+- Generate phonetic transcriptions and difficulty classifications
+- Create structured dataset with conversation relationships
+- Maintain dialogue flow for conversation-based learning
 
 ### 🚀 Deployment Considerations
 
 **For Vercel/Production deployments:**
-- **Only commit raw conversation data** (`merged-70245-70158.md`)
-- **Generated files are ignored by Git** (`data/generated/`, `reports/`)
+- **Only commit raw conversation data** (`merged-conversations.md`)
+- **Generated files are ignored by Git** (`data/generated/`, `data/processed/`)
 - **Vercel automatically runs** `npm run extract-vocab && npm run build` during deployment
-- **Fresh vocabulary is generated** from source conversations on each deploy
+- **Complete dataset generated** from source conversations on each deploy (91 dialogues → 7,072 terms)
 
 **For manual deployments:**
 ```bash
@@ -117,8 +119,8 @@ npm run vercel-build    # Runs extract-vocab + build for production
 ### Core Development
 ```bash
 npm start                     # Extract vocabulary + Dev server (full setup)
-npm run dev                   # Start development server
-npm run extract-vocab         # Generate conversation-based vocabulary (937 terms)
+npm run dev                   # Start development server  
+npm run extract-vocab         # Generate conversation vocabulary (7,072 terms)
 npm run validate              # Validate all data integrity
 ```
 
@@ -129,17 +131,18 @@ npm run deploy               # Full deployment pipeline
 npm run clean                # Clean generated files
 ```
 
-## Vocabulary Domains (Conversation-Based)
+## Vocabulary Domains (Complete Dialogue Dataset)
 
 | Domain                   | Terms | Focus Areas                                           |
 | ------------------------ | ----- | ----------------------------------------------------- |
-| **Business & Finance**   | 712   | Banking, financial services, business operations      |
-| **Social Welfare**       | 95    | Government services, benefits, employment support     |
-| **Legal & Government**   | 93    | Court systems, legal procedures, criminal law         |
-| **Medical & Healthcare** | 19    | Medical specialties, procedures, healthcare systems   |
-| **Education**            | 18    | School systems, student behavior, academic assessment |
+| **Business & Finance**   | 3,286 | Banking, financial services, business operations, employment |
+| **Social Welfare**       | 2,676 | Government services, community support, social interactions |
+| **Legal & Government**   | 610   | Court systems, legal procedures, regulatory compliance |
+| **Education**            | 210   | School systems, academic programs, educational support |
+| **Medical & Healthcare** | 191   | Medical consultations, healthcare services, treatments |
+| **Immigration**          | 99    | Visa processes, residency, citizenship applications |
 
-*All terms extracted from real CCL conversation scenarios with contextual examples.*
+*All terms extracted from 91 complete CCL conversation scenarios with full dialogue context.*
 
 ## Usage
 
@@ -192,11 +195,12 @@ ccl-pronunciation-trainer/
 │   │   ├── ui/            # Interface & settings
 │   │   └── utils/         # EventBus & storage utilities
 │   └── css/               # Modular stylesheets
-├── data/                  # Conversation vocabulary data (937 terms)
-│   ├── conversation/      # Raw conversation data
-│   └── generated/         # Generated vocabulary files
-├── data-processing/       # Source conversation files (117 conversations)
-├── scripts/               # Build & validation scripts (3 files)
+├── data/                  # Complete dialogue dataset (7,072 terms)
+│   ├── conversation/      # Raw conversation data  
+│   ├── generated/         # Generated vocabulary files
+│   └── processed/         # Structured dialogue dataset
+├── data-processing/       # Source conversation files (91 dialogues)
+├── scripts/               # Build & validation scripts
 ├── docs/                  # Documentation
 └── dist/                  # Production build
 ```
@@ -208,7 +212,7 @@ See [DEVELOPMENT.md](docs/DEVELOPMENT.md) for detailed instructions.
 ```bash
 # Core Commands (all tested and working)
 npm run dev          # Start development server on port 3000
-npm run extract-vocab # Generate conversation vocabulary (937 terms)
+npm run extract-vocab # Generate conversation vocabulary (7,072 terms)  
 npm run validate     # Comprehensive data validation
 npm run build        # Production build with minification
 npm run deploy       # Full deployment pipeline

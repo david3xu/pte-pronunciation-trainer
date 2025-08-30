@@ -1,57 +1,59 @@
 {
   "summary": {
-    "totalDialogues": 62,
-    "totalVocabularyTerms": 4694,
-    "processedAt": "2025-08-29T11:27:16.836Z",
+    "totalDialogues": 91,
+    "totalVocabularyTerms": 7072,
+    "processedAt": "2025-08-30T06:59:42.610Z",
     "sourceFile": "merged-conversations.md",
     "processingErrors": 0,
-    "processingWarnings": 13
+    "processingWarnings": 18
   },
   "categoryDistribution": {
-    "social": 25,
-    "business": 32,
-    "medical": 2,
-    "legal": 3
+    "social": 33,
+    "business": 44,
+    "medical": 3,
+    "legal": 7,
+    "education": 3,
+    "immigration": 1
   },
   "difficultyDistribution": {
-    "hard": 2719,
-    "normal": 1652,
-    "easy": 323
+    "hard": 3754,
+    "normal": 2284,
+    "easy": 1034
   },
   "dialogueList": [
     {
       "id": "70248",
       "title": "New Council Employee Helps Community Centre 2",
       "category": "social",
-      "vocabularyCount": 64,
+      "vocabularyCount": 62,
       "sentenceCount": 14
     },
     {
       "id": "70247",
       "title": "Suite Bathroom Design Clarification 2",
       "category": "business",
-      "vocabularyCount": 74,
+      "vocabularyCount": 69,
       "sentenceCount": 14
     },
     {
       "id": "70246",
       "title": "A New Creamy Leather Lounge Chair 2",
       "category": "social",
-      "vocabularyCount": 62,
+      "vocabularyCount": 60,
       "sentenceCount": 14
     },
     {
       "id": "70245",
       "title": "ABN and Business Structure Questions",
       "category": "business",
-      "vocabularyCount": 59,
+      "vocabularyCount": 58,
       "sentenceCount": 14
     },
     {
       "id": "70244",
       "title": "Seeking Advice After Workplace Layoffs",
       "category": "business",
-      "vocabularyCount": 56,
+      "vocabularyCount": 54,
       "sentenceCount": 14
     },
     {
@@ -212,7 +214,7 @@
       "id": "70221",
       "title": "Friendly Support for the New Town Doctor",
       "category": "social",
-      "vocabularyCount": 66,
+      "vocabularyCount": 84,
       "sentenceCount": 14
     },
     {
@@ -233,7 +235,7 @@
       "id": "70218",
       "title": "Van Theft Report and Insurance Steps",
       "category": "legal",
-      "vocabularyCount": 62,
+      "vocabularyCount": 81,
       "sentenceCount": 14
     },
     {
@@ -268,7 +270,7 @@
       "id": "70213",
       "title": "Strategies for School Band Fundraising",
       "category": "business",
-      "vocabularyCount": 90,
+      "vocabularyCount": 92,
       "sentenceCount": 14
     },
     {
@@ -440,6 +442,13 @@
       "sentenceCount": 20
     },
     {
+      "id": "70188",
+      "title": "A Low-score University Assignment",
+      "category": "education",
+      "vocabularyCount": 76,
+      "sentenceCount": 14
+    },
+    {
       "id": "70187",
       "title": "Discussing Food and Cooking",
       "category": "social",
@@ -452,6 +461,202 @@
       "category": "business",
       "vocabularyCount": 86,
       "sentenceCount": 19
+    },
+    {
+      "id": "70185",
+      "title": "Trauma Insurance 101",
+      "category": "business",
+      "vocabularyCount": 89,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70184",
+      "title": "Tax Deadlines and Accounting Solutions",
+      "category": "business",
+      "vocabularyCount": 104,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70183",
+      "title": "Packing Up and Selling",
+      "category": "business",
+      "vocabularyCount": 82,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70182",
+      "title": "Promotion and Transition",
+      "category": "business",
+      "vocabularyCount": 74,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70181",
+      "title": "From Clinic to Home",
+      "category": "medical",
+      "vocabularyCount": 81,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70180",
+      "title": "Downsizing After 15 Years",
+      "category": "business",
+      "vocabularyCount": 81,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70179",
+      "title": "Stolen Tools Report",
+      "category": "legal",
+      "vocabularyCount": 72,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70178",
+      "title": "Settling In and Planting Seeds",
+      "category": "social",
+      "vocabularyCount": 69,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70177",
+      "title": "Booking a 100th Birthday Shoot",
+      "category": "business",
+      "vocabularyCount": 80,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70176",
+      "title": "Birthday Party Venue Planning",
+      "category": "social",
+      "vocabularyCount": 68,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70175",
+      "title": "Drainage Concerns",
+      "category": "business",
+      "vocabularyCount": 72,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70174",
+      "title": "Getting a Quote for Boat Insurance",
+      "category": "business",
+      "vocabularyCount": 64,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70173",
+      "title": "Water Restrictions in Australia",
+      "category": "social",
+      "vocabularyCount": 69,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70172",
+      "title": "Looking for a Foster Pet",
+      "category": "social",
+      "vocabularyCount": 73,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70171",
+      "title": "Enrol to Vote",
+      "category": "legal",
+      "vocabularyCount": 62,
+      "sentenceCount": 12
+    },
+    {
+      "id": "70170",
+      "title": "Home-based Bakery Business",
+      "category": "business",
+      "vocabularyCount": 67,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70169",
+      "title": "Bedroom Furniture Payment Plan",
+      "category": "business",
+      "vocabularyCount": 71,
+      "sentenceCount": 12
+    },
+    {
+      "id": "70168",
+      "title": "Inquiring About Spanish Lessons",
+      "category": "education",
+      "vocabularyCount": 71,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70167",
+      "title": "Discussing an engagement Party",
+      "category": "social",
+      "vocabularyCount": 87,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70166",
+      "title": "Fundraising Event Planning",
+      "category": "social",
+      "vocabularyCount": 108,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70165",
+      "title": "Working Holiday Visa Inquiry",
+      "category": "immigration",
+      "vocabularyCount": 99,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70164",
+      "title": "Resignations and Terminations",
+      "category": "legal",
+      "vocabularyCount": 124,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70163",
+      "title": "Guiding a Daughter's School Transition",
+      "category": "social",
+      "vocabularyCount": 99,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70162",
+      "title": "Planning a Neighborhood Gathering",
+      "category": "social",
+      "vocabularyCount": 111,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70161",
+      "title": "Legal Consultation for Selling a Small Business",
+      "category": "legal",
+      "vocabularyCount": 100,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70160",
+      "title": "Rental Inquiry at the Council Office",
+      "category": "business",
+      "vocabularyCount": 65,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70159",
+      "title": "A Lonely Transfer Student",
+      "category": "education",
+      "vocabularyCount": 63,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70158",
+      "title": "Catering Business Ideas",
+      "category": "business",
+      "vocabularyCount": 70,
+      "sentenceCount": 14
     }
   ]
 }

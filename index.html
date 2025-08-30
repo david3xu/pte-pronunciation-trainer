@@ -46,6 +46,14 @@
         <!-- Collapsible settings panel -->
         <div class="settings-panel collapsed" id="settingsPanel">
             <div class="settings-grid">
+                <!-- Learning Mode Selection -->
+                <div class="setting-item">
+                    <label for="learningModeSelect">Mode:</label>
+                    <select id="learningModeSelect">
+                        <option value="vocabulary" selected>📚 Vocabulary Focus</option>
+                        <option value="dialogue">💬 Dialogue Practice</option>
+                    </select>
+                </div>
                 <!-- Vocabulary source removed - only using conversation-based -->
                 <div class="setting-item">
                     <label for="categorySelect">Category:</label>
@@ -109,30 +117,20 @@
     <!-- Status display for screen readers -->
     <div class="sr-only" id="statusDisplay" aria-live="polite"></div>
 
-    <!-- Only load conversation vocabulary -->
-    <script src="data/generated/conversation-vocabulary-data.js?v=8"></script>
-
     <!-- Debug script to verify data loading -->
     <script>
-        console.log('=== Data Loading Check ===');
-        console.log('Conversation vocabulary loaded:', typeof conversationVocabularyData !== 'undefined');
-        if (typeof conversationVocabularyData !== 'undefined') {
-            console.log('Total terms:', conversationVocabularyData.totalTerms);
-            console.log('Vocabulary array length:', conversationVocabularyData.vocabulary?.length || 0);
-            console.log('Data structure:', Object.keys(conversationVocabularyData));
-        }
-
         // Debug functions for console testing
         window.debugVocab = {
             checkData: function () {
                 console.log('=== Debug Vocabulary Check ===');
-                console.log('Conversation loaded:', typeof conversationVocabularyData !== 'undefined');
+                console.log('DialogueDataLoader loaded:', typeof DialogueDataLoader !== 'undefined');
+                console.log('Dialogue data loader instance:', typeof window.dialogueDataLoader !== 'undefined');
 
-                if (typeof conversationVocabularyData !== 'undefined') {
-                    console.log('Total terms:', conversationVocabularyData.totalTerms);
-                    console.log('Vocabulary array:', Array.isArray(conversationVocabularyData.vocabulary));
-                    console.log('Array length:', conversationVocabularyData.vocabulary?.length || 0);
-                    console.log('Sample first item:', conversationVocabularyData.vocabulary?.[0]);
+                if (window.dialogueDataLoader && window.dialogueDataLoader.isLoaded) {
+                    console.log('Data loaded:', window.dialogueDataLoader.isLoaded);
+                    console.log('Total dialogues:', window.dialogueDataLoader.data?.dialogues?.length || 0);
+                    console.log('Total vocabulary terms:', window.dialogueDataLoader.data?.metadata?.totalVocabularyTerms || 0);
+                    console.log('Sample dialogue:', window.dialogueDataLoader.data?.dialogues?.[0]?.title);
                 }
 
                 if (window.vocabularyManager) {
@@ -146,6 +144,9 @@
     <!-- Utility Modules -->
     <script src="src/js/utils/EventBus.js?v=1"></script>
     <script src="src/js/utils/Storage.js?v=1"></script>
+
+    <!-- Data Loading Module -->
+    <script src="src/js/data/DialogueDataLoader.js?v=1"></script>
 
     <!-- Core Logic Modules -->
     <script src="src/js/core/VocabularyManager.js?v=12&t=1734054000"></script>

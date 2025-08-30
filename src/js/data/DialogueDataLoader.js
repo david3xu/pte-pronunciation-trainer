@@ -3,6 +3,8 @@
  * Part of Phase 2: Frontend Preparation
  */
 
+console.log('🔄 Loading DialogueDataLoader.js...');
+
 class DialogueDataLoader {
     constructor() {
         this.data = null;
@@ -412,4 +414,7 @@ if (typeof module !== 'undefined' && module.exports) {
 // Make available globally for browser usage
 if (typeof window !== 'undefined') {
     window.DialogueDataLoader = DialogueDataLoader;
+    console.log('✅ DialogueDataLoader loaded and available globally');
+} else {
+    console.warn('⚠️  Window object not available - DialogueDataLoader not exposed globally');
 }

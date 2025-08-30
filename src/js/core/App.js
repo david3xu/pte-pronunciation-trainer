@@ -21,13 +21,15 @@ class CCLPronunciationTrainer {
         // Emit app initialization event
         window.eventBus.emit('app:initialized', {
             timestamp: new Date().toISOString(),
-            version: '2.0-refactored'
+            version: '2.0-complete-dataset'
         });
     }
 
-    initializeModules() {
-        // 1. Initialize vocabulary manager (loads conversation data)
-        window.vocabularyManager.initialize();
+    async initializeModules() {
+        console.log('🚀 Starting module initialization...');
+        
+        // 1. Initialize vocabulary manager (loads conversation data asynchronously)
+        await window.vocabularyManager.initialize();
         
         // 2. Initialize UI controller and bind events
         window.uiController.bindEventListeners();
@@ -44,7 +46,7 @@ class CCLPronunciationTrainer {
         // 6. Setup keyboard shortcuts
         this.setupKeyboardShortcuts();
         
-        console.log('All modules initialized successfully');
+        console.log('✅ All modules initialized successfully');
     }
 
     initializeVoices() {

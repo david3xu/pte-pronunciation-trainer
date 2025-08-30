@@ -1,37 +1,39 @@
 # CCL Dialogue Data Processing Report
 
-**Generated:** 2025-08-29T11:27:16.836Z
+**Generated:** 2025-08-30T06:59:42.610Z
 **Source File:** merged-conversations.md
-**Total Dialogues:** 62
-**Total Vocabulary Terms:** 4694
+**Total Dialogues:** 91
+**Total Vocabulary Terms:** 7072
 **Processing Errors:** 0
-**Processing Warnings:** 13
+**Processing Warnings:** 18
 
 ## Category Distribution
 
-- **👥 social**: 25 dialogues
-- **💼 business**: 32 dialogues
-- **🏥 medical**: 2 dialogues
-- **⚖️ legal**: 3 dialogues
+- **👥 social**: 33 dialogues
+- **💼 business**: 44 dialogues
+- **🏥 medical**: 3 dialogues
+- **⚖️ legal**: 7 dialogues
+- **🎓 education**: 3 dialogues
+- **🛂 immigration**: 1 dialogues
 
 ## Difficulty Distribution
 
-- **🔴 hard**: 2719 terms
-- **🟡 normal**: 1652 terms
-- **🟢 easy**: 323 terms
+- **🔴 hard**: 3754 terms
+- **🟡 normal**: 2284 terms
+- **🟢 easy**: 1034 terms
 
 ## Dialogue List
 
 - **👥 70248**: New Council Employee Helps Community Centre 2 (social)
-  - Sentences: 14, Vocabulary: 64
-- **💼 70247**: Suite Bathroom Design Clarification 2 (business)
-  - Sentences: 14, Vocabulary: 74
-- **👥 70246**: A New Creamy Leather Lounge Chair 2 (social)
   - Sentences: 14, Vocabulary: 62
+- **💼 70247**: Suite Bathroom Design Clarification 2 (business)
+  - Sentences: 14, Vocabulary: 69
+- **👥 70246**: A New Creamy Leather Lounge Chair 2 (social)
+  - Sentences: 14, Vocabulary: 60
 - **💼 70245**: ABN and Business Structure Questions (business)
-  - Sentences: 14, Vocabulary: 59
+  - Sentences: 14, Vocabulary: 58
 - **💼 70244**: Seeking Advice After Workplace Layoffs (business)
-  - Sentences: 14, Vocabulary: 56
+  - Sentences: 14, Vocabulary: 54
 - **👥 70243**: Urgent Lawyer Appointment for Job Contract Review (social)
   - Sentences: 14, Vocabulary: 61
 - **👥 70242**: New Council Employee Helps Community Centre (social)
@@ -77,13 +79,13 @@
 - **🏥 70222**: Bystander Assistance to Paramedic (medical)
   - Sentences: 14, Vocabulary: 49
 - **👥 70221**: Friendly Support for the New Town Doctor (social)
-  - Sentences: 14, Vocabulary: 66
+  - Sentences: 14, Vocabulary: 84
 - **💼 70220**: Tenant Requests Pest Control (business)
   - Sentences: 14, Vocabulary: 60
 - **💼 70219**: Understanding Bill Payment Delays (business)
   - Sentences: 14, Vocabulary: 59
 - **⚖️ 70218**: Van Theft Report and Insurance Steps (legal)
-  - Sentences: 14, Vocabulary: 62
+  - Sentences: 14, Vocabulary: 81
 - **⚖️ 70217**: Clarifying Local Dog Leash Rules (legal)
   - Sentences: 14, Vocabulary: 87
 - **⚖️ 70216**: Resident Alerts Police to Speeding Driver (legal)
@@ -93,7 +95,7 @@
 - **💼 70214**: Customer Calls About Faulty Washer (business)
   - Sentences: 14, Vocabulary: 93
 - **💼 70213**: Strategies for School Band Fundraising (business)
-  - Sentences: 14, Vocabulary: 90
+  - Sentences: 14, Vocabulary: 92
 - **💼 70212**: Newcomer Navigates Waste Sorting and Gardening (business)
   - Sentences: 14, Vocabulary: 82
 - **💼 70211**: Puppy Course: Commands & Grooming (business)
@@ -142,12 +144,70 @@
   - Sentences: 19, Vocabulary: 72
 - **👥 70189**: Discussing Movies and Entertainment (social)
   - Sentences: 20, Vocabulary: 97
+- **🎓 70188**: A Low-score University Assignment (education)
+  - Sentences: 14, Vocabulary: 76
 - **👥 70187**: Discussing Food and Cooking (social)
   - Sentences: 20, Vocabulary: 112
 - **💼 70186**: Ordering Food at a Restaurant (business)
   - Sentences: 19, Vocabulary: 86
+- **💼 70185**: Trauma Insurance 101 (business)
+  - Sentences: 14, Vocabulary: 89
+- **💼 70184**: Tax Deadlines and Accounting Solutions (business)
+  - Sentences: 14, Vocabulary: 104
+- **💼 70183**: Packing Up and Selling (business)
+  - Sentences: 14, Vocabulary: 82
+- **💼 70182**: Promotion and Transition (business)
+  - Sentences: 14, Vocabulary: 74
+- **🏥 70181**: From Clinic to Home (medical)
+  - Sentences: 14, Vocabulary: 81
+- **💼 70180**: Downsizing After 15 Years (business)
+  - Sentences: 14, Vocabulary: 81
+- **⚖️ 70179**: Stolen Tools Report (legal)
+  - Sentences: 14, Vocabulary: 72
+- **👥 70178**: Settling In and Planting Seeds (social)
+  - Sentences: 14, Vocabulary: 69
+- **💼 70177**: Booking a 100th Birthday Shoot (business)
+  - Sentences: 14, Vocabulary: 80
+- **👥 70176**: Birthday Party Venue Planning (social)
+  - Sentences: 14, Vocabulary: 68
+- **💼 70175**: Drainage Concerns (business)
+  - Sentences: 14, Vocabulary: 72
+- **💼 70174**: Getting a Quote for Boat Insurance (business)
+  - Sentences: 14, Vocabulary: 64
+- **👥 70173**: Water Restrictions in Australia (social)
+  - Sentences: 14, Vocabulary: 69
+- **👥 70172**: Looking for a Foster Pet (social)
+  - Sentences: 14, Vocabulary: 73
+- **⚖️ 70171**: Enrol to Vote (legal)
+  - Sentences: 12, Vocabulary: 62
+- **💼 70170**: Home-based Bakery Business (business)
+  - Sentences: 14, Vocabulary: 67
+- **💼 70169**: Bedroom Furniture Payment Plan (business)
+  - Sentences: 12, Vocabulary: 71
+- **🎓 70168**: Inquiring About Spanish Lessons (education)
+  - Sentences: 14, Vocabulary: 71
+- **👥 70167**: Discussing an engagement Party (social)
+  - Sentences: 14, Vocabulary: 87
+- **👥 70166**: Fundraising Event Planning (social)
+  - Sentences: 14, Vocabulary: 108
+- **🛂 70165**: Working Holiday Visa Inquiry (immigration)
+  - Sentences: 14, Vocabulary: 99
+- **⚖️ 70164**: Resignations and Terminations (legal)
+  - Sentences: 14, Vocabulary: 124
+- **👥 70163**: Guiding a Daughter's School Transition (social)
+  - Sentences: 14, Vocabulary: 99
+- **👥 70162**: Planning a Neighborhood Gathering (social)
+  - Sentences: 14, Vocabulary: 111
+- **⚖️ 70161**: Legal Consultation for Selling a Small Business (legal)
+  - Sentences: 14, Vocabulary: 100
+- **💼 70160**: Rental Inquiry at the Council Office (business)
+  - Sentences: 14, Vocabulary: 65
+- **🎓 70159**: A Lonely Transfer Student (education)
+  - Sentences: 14, Vocabulary: 63
+- **💼 70158**: Catering Business Ideas (business)
+  - Sentences: 14, Vocabulary: 70
 
 ## Processing Warnings
 
-⚠️  13 warnings occurred during processing.
+⚠️  18 warnings occurred during processing.
 These are non-critical issues that don't prevent data generation.

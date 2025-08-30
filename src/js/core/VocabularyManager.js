@@ -7,6 +7,8 @@ class VocabularyManager {
         this.allWords = []; // Store unfiltered words
         this.categoryCounts = {}; // Store counts per category per difficulty
         this.currentIndex = 0;
+        this.dataLoader = null;
+        this.isInitialized = false;
 
         // Category labels for conversation vocabulary (corrected based on raw.md)
         this.categoryLabels = {
@@ -24,8 +26,8 @@ class VocabularyManager {
     }
 
     calculateCategoryCounts() {
-        const data = this.getVocabularyData();
-        if (!data || !data.vocabulary) return;
+        const vocabularyData = this.getVocabularyFromDataLoader();
+        if (!vocabularyData || vocabularyData.length === 0) return;
 
         // Initialize categories with zero counts
         this.categoryCounts = {
@@ -33,28 +35,79 @@ class VocabularyManager {
         };
 
         // Count items by category and difficulty
-        data.vocabulary.forEach(item => {
+        vocabularyData.forEach(item => {
             const category = item.category || 'uncategorized';
             if (!this.categoryCounts[category]) {
                 this.categoryCounts[category] = { all: 0, easy: 0, normal: 0, hard: 0 };
             }
             this.categoryCounts[category].all++;
-            this.categoryCounts[category][item.difficulty]++;
+            this.categoryCounts[category][item.difficulty || 'normal']++;
             this.categoryCounts['all-categories'].all++;
-            this.categoryCounts['all-categories'][item.difficulty]++;
+            this.categoryCounts['all-categories'][item.difficulty || 'normal']++;
         });
 
-        console.log('Category counts calculated:', this.categoryCounts);
+        console.log('Category counts calculated from complete dataset:', this.categoryCounts);
+    }
+
+    getVocabularyFromDataLoader() {
+        if (!this.dataLoader || !this.dataLoader.isLoaded) {
+            console.warn('DialogueDataLoader not ready yet');
+            return [];
+        }
+
+        const data = this.dataLoader.data;
+        if (!data || !data.dialogues) {
+            console.error('No dialogue data available');
+            return [];
+        }
+
+        // Extract all vocabulary terms from all dialogues
+        const allVocabulary = [];
+        data.dialogues.forEach(dialogue => {
+            if (dialogue.sentences) {
+                dialogue.sentences.forEach(sentence => {
+                    if (sentence.vocabulary) {
+                        sentence.vocabulary.forEach(vocabItem => {
+                            // Convert complete dataset structure to vocabulary manager format
+                            allVocabulary.push({
+                                english: vocabItem.term,
+                                chinese: sentence.chinese || '', // Use sentence Chinese as context
+                                difficulty: vocabItem.difficulty || 'normal',
+                                example: vocabItem.context || sentence.english,
+                                exampleChinese: sentence.chinese || '',
+                                category: dialogue.category,
+                                conversationId: dialogue.id,
+                                conversationTitle: dialogue.title,
+                                sentenceNumber: sentence.id,
+                                phonetic: vocabItem.phonetic || ''
+                            });
+                        });
+                    }
+                });
+            }
+        });
+
+        console.log(`Extracted ${allVocabulary.length} vocabulary terms from complete dataset`);
+        return allVocabulary;
     }
 
     getVocabularyData() {
-        const available = typeof conversationVocabularyData !== 'undefined';
-        if (available) {
-            console.log('Conversation vocabulary loaded:', conversationVocabularyData.totalTerms, 'terms');
-        } else {
-            console.error('Conversation vocabulary not loaded!');
+        // For backward compatibility, return a structure similar to conversationVocabularyData
+        const vocabulary = this.getVocabularyFromDataLoader();
+        
+        if (!this.dataLoader || !this.dataLoader.isLoaded) {
+            console.error('DialogueDataLoader not loaded!');
+            return null;
         }
-        return available ? conversationVocabularyData : null;
+
+        console.log('Complete dataset vocabulary loaded:', vocabulary.length, 'terms');
+        
+        return {
+            vocabulary: vocabulary,
+            totalTerms: vocabulary.length,
+            generatedAt: this.dataLoader.data?.metadata?.processedAt,
+            sourceFile: 'complete-dataset.json'
+        };
     }
 
     updateCategoryOptions() {
@@ -183,16 +236,38 @@ class VocabularyManager {
     }
 
     // Initialize vocabulary on load
-    initialize() {
-        this.calculateCategoryCounts();
-        this.updateCategoryOptions();
-        this.loadCategory(this.currentCategory);
+    async initialize() {
+        console.log('🔄 Initializing VocabularyManager with complete dataset...');
+        
+        // Initialize DialogueDataLoader if not already done
+        if (!this.dataLoader) {
+            this.dataLoader = new DialogueDataLoader();
+            window.dialogueDataLoader = this.dataLoader; // Make available globally for debugging
+        }
 
-        // Emit initialization complete
-        window.eventBus.emit('vocabulary:initialized', {
-            totalTerms: this.categoryCounts['all-categories']?.all || 0,
-            categories: Object.keys(this.categoryLabels)
-        });
+        try {
+            // Load the complete dataset
+            await this.dataLoader.loadData();
+            console.log('✅ Complete dataset loaded successfully');
+
+            // Now calculate counts and initialize
+            this.calculateCategoryCounts();
+            this.updateCategoryOptions();
+            this.loadCategory(this.currentCategory);
+            this.isInitialized = true;
+
+            // Emit initialization complete
+            window.eventBus.emit('vocabulary:initialized', {
+                totalTerms: this.categoryCounts['all-categories']?.all || 0,
+                categories: Object.keys(this.categoryLabels),
+                dataSource: 'complete-dataset'
+            });
+
+            console.log('🎉 VocabularyManager initialized with complete dataset');
+        } catch (error) {
+            console.error('❌ Failed to initialize VocabularyManager:', error);
+            // Could fall back to old method here if needed
+        }
     }
 }
 

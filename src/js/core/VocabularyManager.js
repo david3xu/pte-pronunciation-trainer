@@ -239,6 +239,11 @@ class VocabularyManager {
     async initialize() {
         console.log('🔄 Initializing VocabularyManager with complete dataset...');
         
+        // Check if DialogueDataLoader is available
+        if (typeof DialogueDataLoader === 'undefined') {
+            throw new Error('DialogueDataLoader not found. Make sure DialogueDataLoader.js is loaded before VocabularyManager.js');
+        }
+        
         // Initialize DialogueDataLoader if not already done
         if (!this.dataLoader) {
             this.dataLoader = new DialogueDataLoader();

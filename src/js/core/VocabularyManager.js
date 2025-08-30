@@ -101,8 +101,8 @@ class VocabularyManager {
         // For backward compatibility, return a structure similar to conversationVocabularyData
         const vocabulary = this.getVocabularyFromDataLoader();
         
-        if (!this.dataLoader || !this.dataLoader.isLoaded) {
-            console.error('DialogueDataLoader not loaded!');
+        if (!this.extractedVocabulary) {
+            console.error('Complete dataset not loaded yet!');
             return null;
         }
 
@@ -111,7 +111,7 @@ class VocabularyManager {
         return {
             vocabulary: vocabulary,
             totalTerms: vocabulary.length,
-            generatedAt: this.dataLoader.data?.metadata?.processedAt,
+            generatedAt: new Date().toISOString(),
             sourceFile: 'complete-dataset.json'
         };
     }
@@ -136,12 +136,19 @@ class VocabularyManager {
     }
 
     loadCategory(category) {
+        console.log('🔄 loadCategory called with:', category);
+        console.log('🔍 extractedVocabulary available:', !!this.extractedVocabulary);
+        console.log('🔍 extractedVocabulary length:', this.extractedVocabulary?.length || 0);
+        
         const data = this.getVocabularyData();
         if (!data || !data.vocabulary) {
-            console.error('No vocabulary data available');
+            console.error('❌ No vocabulary data available in loadCategory');
+            console.log('Debug - data:', data);
+            console.log('Debug - extractedVocabulary:', this.extractedVocabulary?.length || 'none');
             return;
         }
 
+        console.log('✅ Vocabulary data available:', data.vocabulary.length, 'terms');
         this.currentCategory = category;
 
         // Filter vocabulary by category
@@ -151,8 +158,12 @@ class VocabularyManager {
             this.allWords = data.vocabulary.filter(item => item.category === category);
         }
 
+        console.log(`📊 Filtered ${this.allWords.length} words for category: ${category}`);
+
         // Apply difficulty filter
         this.applyDifficultyFilter();
+
+        console.log(`🎯 After difficulty filter: ${this.currentWords.length} words available`);
 
         // Emit event
         window.eventBus.emit('vocabulary:categoryLoaded', {

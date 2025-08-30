@@ -1,12 +1,14 @@
 {
-  "builds": [
+  "buildCommand": "npm run vercel-build",
+  "outputDirectory": ".",
+  "routes": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "buildCommand": "npm run extract-vocab && npm run build",
-        "outputDirectory": "dist"
-      }
+      "src": "/data/processed/(.*)",
+      "dest": "/data/processed/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }

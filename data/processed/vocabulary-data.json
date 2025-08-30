@@ -28900,23 +28900,13 @@
     "example_chinese": "一定会的！社区委员会办事效率很高。| 我们很快就能睡个好觉了。"
   },
   {
-    "term": "Good morning",
+    "term": "Good morning, sir",
     "conversation_id": "70208",
     "sentence_id": 1,
     "difficulty": "normal",
     "category": "business",
-    "phonetic": "UK /'good? 'morning?/",
-    "example": "_Good morning_, _sir_. | _Thank you for calling_ _our insurance company_. | _How can I assist you today_?",
-    "example_chinese": "早上好，先生。感谢您致电我们保险公司。今天有什么可以为您效劳的吗？"
-  },
-  {
-    "term": "sir",
-    "conversation_id": "70208",
-    "sentence_id": 1,
-    "difficulty": "easy",
-    "category": "business",
-    "phonetic": "UK /'sir?/",
-    "example": "_Good morning_, _sir_. | _Thank you for calling_ _our insurance company_. | _How can I assist you today_?",
+    "phonetic": "UK /'good? 'morning,? 'sir?/",
+    "example": "_Good morning, sir_. | _Thank you for calling_ _our insurance company_. | _How can I assist you today_?",
     "example_chinese": "早上好，先生。感谢您致电我们保险公司。今天有什么可以为您效劳的吗？"
   },
   {
@@ -28926,7 +28916,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /'thank? 'you? 'for? 'calling?/",
-    "example": "_Good morning_, _sir_. | _Thank you for calling_ _our insurance company_. | _How can I assist you today_?",
+    "example": "_Good morning, sir_. | _Thank you for calling_ _our insurance company_. | _How can I assist you today_?",
     "example_chinese": "早上好，先生。感谢您致电我们保险公司。今天有什么可以为您效劳的吗？"
   },
   {
@@ -28936,7 +28926,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /'our? 'insurance? 'company?/",
-    "example": "_Good morning_, _sir_. | _Thank you for calling_ _our insurance company_. | _How can I assist you today_?",
+    "example": "_Good morning, sir_. | _Thank you for calling_ _our insurance company_. | _How can I assist you today_?",
     "example_chinese": "早上好，先生。感谢您致电我们保险公司。今天有什么可以为您效劳的吗？"
   },
   {
@@ -28946,7 +28936,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /'how? 'can? 'i? 'assist? 'you? 'today?/",
-    "example": "_Good morning_, _sir_. | _Thank you for calling_ _our insurance company_. | _How can I assist you today_?",
+    "example": "_Good morning, sir_. | _Thank you for calling_ _our insurance company_. | _How can I assist you today_?",
     "example_chinese": "早上好，先生。感谢您致电我们保险公司。今天有什么可以为您效劳的吗？"
   },
   {
@@ -29210,13 +29200,13 @@
     "example_chinese": "我在十字路口等红灯时，| 后面的车追尾了。| 我的车被撞得很严重，| 后保险杠完全变形了。"
   },
   {
-    "term": "I understand",
+    "term": "I understand that",
     "conversation_id": "70208",
     "sentence_id": 7,
     "difficulty": "normal",
     "category": "business",
-    "phonetic": "UK /'i? 'understand?/",
-    "example": "_I understand_. | _Do you have_ _a police report_ _or any photos_ _of the damage_? | _This will help_ _with the claim process_.",
+    "phonetic": "UK /'i? 'understand? 'that?/",
+    "example": "_I understand that_. | _Do you have_ _a police report_ _or any photos_ _of the damage_? | _This will help_ _with the claim process_.",
     "example_chinese": "我明白了。您有警方报告或损坏的照片吗？这将有助于理赔流程。"
   },
   {
@@ -29226,7 +29216,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /'do? 'you? 'have?/",
-    "example": "_I understand_. | _Do you have_ _a police report_ _or any photos_ _of the damage_? | _This will help_ _with the claim process_.",
+    "example": "_I understand that_. | _Do you have_ _a police report_ _or any photos_ _of the damage_? | _This will help_ _with the claim process_.",
     "example_chinese": "我明白了。您有警方报告或损坏的照片吗？这将有助于理赔流程。"
   },
   {
@@ -29236,7 +29226,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /'a? 'police? 'report?/",
-    "example": "_I understand_. | _Do you have_ _a police report_ _or any photos_ _of the damage_? | _This will help_ _with the claim process_.",
+    "example": "_I understand that_. | _Do you have_ _a police report_ _or any photos_ _of the damage_? | _This will help_ _with the claim process_.",
     "example_chinese": "我明白了。您有警方报告或损坏的照片吗？这将有助于理赔流程。"
   },
   {
@@ -29246,7 +29236,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /'or? 'any? 'photos?/",
-    "example": "_I understand_. | _Do you have_ _a police report_ _or any photos_ _of the damage_? | _This will help_ _with the claim process_.",
+    "example": "_I understand that_. | _Do you have_ _a police report_ _or any photos_ _of the damage_? | _This will help_ _with the claim process_.",
     "example_chinese": "我明白了。您有警方报告或损坏的照片吗？这将有助于理赔流程。"
   },
   {
@@ -29256,7 +29246,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /'of? 'the? 'damage?/",
-    "example": "_I understand_. | _Do you have_ _a police report_ _or any photos_ _of the damage_? | _This will help_ _with the claim process_.",
+    "example": "_I understand that_. | _Do you have_ _a police report_ _or any photos_ _of the damage_? | _This will help_ _with the claim process_.",
     "example_chinese": "我明白了。您有警方报告或损坏的照片吗？这将有助于理赔流程。"
   },
   {
@@ -29266,7 +29256,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /'this? 'will? 'help?/",
-    "example": "_I understand_. | _Do you have_ _a police report_ _or any photos_ _of the damage_? | _This will help_ _with the claim process_.",
+    "example": "_I understand that_. | _Do you have_ _a police report_ _or any photos_ _of the damage_? | _This will help_ _with the claim process_.",
     "example_chinese": "我明白了。您有警方报告或损坏的照片吗？这将有助于理赔流程。"
   },
   {
@@ -29276,7 +29266,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /'with? 'the? 'claim? 'process?/",
-    "example": "_I understand_. | _Do you have_ _a police report_ _or any photos_ _of the damage_? | _This will help_ _with the claim process_.",
+    "example": "_I understand that_. | _Do you have_ _a police report_ _or any photos_ _of the damage_? | _This will help_ _with the claim process_.",
     "example_chinese": "我明白了。您有警方报告或损坏的照片吗？这将有助于理赔流程。"
   },
   {
@@ -29366,7 +29356,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /'okay,? 'i'll? 'send? 'the? 'email? 'right? 'away?/",
-    "example": "_Okay, I'll send the email right away_. | _I also have_ _the other driver's information_, | _including name_, _phone_, _and license plate_.",
+    "example": "_Okay, I'll send the email right away_. | _I also have_ _the other driver's information_, | _including name, phone, and license plate_.",
     "example_chinese": "好的，我马上发邮件。| 对方司机的信息我也有，| 包括姓名、电话和车牌号。"
   },
   {
@@ -29376,7 +29366,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /'i? 'also? 'have?/",
-    "example": "_Okay, I'll send the email right away_. | _I also have_ _the other driver's information_, | _including name_, _phone_, _and license plate_.",
+    "example": "_Okay, I'll send the email right away_. | _I also have_ _the other driver's information_, | _including name, phone, and license plate_.",
     "example_chinese": "好的，我马上发邮件。| 对方司机的信息我也有，| 包括姓名、电话和车牌号。"
   },
   {
@@ -29386,37 +29376,17 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /'the? 'other? 'driver's? 'information?/",
-    "example": "_Okay, I'll send the email right away_. | _I also have_ _the other driver's information_, | _including name_, _phone_, _and license plate_.",
+    "example": "_Okay, I'll send the email right away_. | _I also have_ _the other driver's information_, | _including name, phone, and license plate_.",
     "example_chinese": "好的，我马上发邮件。| 对方司机的信息我也有，| 包括姓名、电话和车牌号。"
   },
   {
-    "term": "including name",
+    "term": "including name, phone, and license plate",
     "conversation_id": "70208",
     "sentence_id": 10,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /'including? 'name?/",
-    "example": "_Okay, I'll send the email right away_. | _I also have_ _the other driver's information_, | _including name_, _phone_, _and license plate_.",
-    "example_chinese": "好的，我马上发邮件。| 对方司机的信息我也有，| 包括姓名、电话和车牌号。"
-  },
-  {
-    "term": "phone",
-    "conversation_id": "70208",
-    "sentence_id": 10,
-    "difficulty": "easy",
-    "category": "business",
-    "phonetic": "UK /'phone?/",
-    "example": "_Okay, I'll send the email right away_. | _I also have_ _the other driver's information_, | _including name_, _phone_, _and license plate_.",
-    "example_chinese": "好的，我马上发邮件。| 对方司机的信息我也有，| 包括姓名、电话和车牌号。"
-  },
-  {
-    "term": "and license plate",
-    "conversation_id": "70208",
-    "sentence_id": 10,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /'and? 'license? 'plate?/",
-    "example": "_Okay, I'll send the email right away_. | _I also have_ _the other driver's information_, | _including name_, _phone_, _and license plate_.",
+    "phonetic": "UK /'including? 'name,? 'phone,? 'and? 'license? 'plate?/",
+    "example": "_Okay, I'll send the email right away_. | _I also have_ _the other driver's information_, | _including name, phone, and license plate_.",
     "example_chinese": "好的，我马上发邮件。| 对方司机的信息我也有，| 包括姓名、电话和车牌号。"
   },
   {
@@ -29470,13 +29440,13 @@
     "example_chinese": "很好。现在让我再问几个问题。当时您车里还有其他人吗？"
   },
   {
-    "term": "No, just me",
+    "term": "No, just me alone",
     "conversation_id": "70208",
     "sentence_id": 12,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /'no,? 'just? 'me?/",
-    "example": "_No, just me_. | _I was wearing a seatbelt_, | _so I wasn't injured_.",
+    "phonetic": "UK /'no,? 'just? 'me? 'alone?/",
+    "example": "_No, just me alone_. | _I was wearing a seatbelt_, | _so I wasn't injured_.",
     "example_chinese": "没有，就我一个人。| 我系了安全带，| 所以没有受伤。"
   },
   {
@@ -29486,7 +29456,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /'i? 'was? 'wearing? 'a? 'seatbelt?/",
-    "example": "_No, just me_. | _I was wearing a seatbelt_, | _so I wasn't injured_.",
+    "example": "_No, just me alone_. | _I was wearing a seatbelt_, | _so I wasn't injured_.",
     "example_chinese": "没有，就我一个人。| 我系了安全带，| 所以没有受伤。"
   },
   {
@@ -29496,7 +29466,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /'so? 'i? 'wasn't? 'injured?/",
-    "example": "_No, just me_. | _I was wearing a seatbelt_, | _so I wasn't injured_.",
+    "example": "_No, just me alone_. | _I was wearing a seatbelt_, | _so I wasn't injured_.",
     "example_chinese": "没有，就我一个人。| 我系了安全带，| 所以没有受伤。"
   },
   {
@@ -29660,23 +29630,13 @@
     "example_chinese": "只要保留所有与事故相关的费用收据。我们会报销合理的费用。感谢您选择我们保险公司。"
   },
   {
-    "term": "Good afternoon",
+    "term": "Good afternoon, welcome to",
     "conversation_id": "70207",
     "sentence_id": 1,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /'good? 'afternoon?/",
-    "example": "_Good afternoon_, _welcome to_ _Golden Dragon Restaurant_. | _How may I help you today_?",
-    "example_chinese": "下午好，欢迎光临金龙餐厅。今天有什么可以为您效劳的吗？"
-  },
-  {
-    "term": "welcome to",
-    "conversation_id": "70207",
-    "sentence_id": 1,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /'welcome? 'to?/",
-    "example": "_Good afternoon_, _welcome to_ _Golden Dragon Restaurant_. | _How may I help you today_?",
+    "phonetic": "UK /'good? 'afternoon,? 'welcome? 'to?/",
+    "example": "_Good afternoon, welcome to_ _Golden Dragon Restaurant_. | _How may I help you today_?",
     "example_chinese": "下午好，欢迎光临金龙餐厅。今天有什么可以为您效劳的吗？"
   },
   {
@@ -29686,7 +29646,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /'golden? 'dragon? 'restaurant?/",
-    "example": "_Good afternoon_, _welcome to_ _Golden Dragon Restaurant_. | _How may I help you today_?",
+    "example": "_Good afternoon, welcome to_ _Golden Dragon Restaurant_. | _How may I help you today_?",
     "example_chinese": "下午好，欢迎光临金龙餐厅。今天有什么可以为您效劳的吗？"
   },
   {
@@ -29696,7 +29656,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /'how? 'may? 'i? 'help? 'you? 'today?/",
-    "example": "_Good afternoon_, _welcome to_ _Golden Dragon Restaurant_. | _How may I help you today_?",
+    "example": "_Good afternoon, welcome to_ _Golden Dragon Restaurant_. | _How may I help you today_?",
     "example_chinese": "下午好，欢迎光临金龙餐厅。今天有什么可以为您效劳的吗？"
   },
   {
@@ -30006,17 +29966,17 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /'perfect!? 'then? 'we'll? 'book?/",
-    "example": "_Perfect! Then we'll book_ _this room_. | _Do we need to pay_ _a deposit_? | _How much is it_?",
+    "example": "_Perfect! Then we'll book_ _this private room_. | _Do we need to pay_ _a deposit_? | _How much is it_?",
     "example_chinese": "完美！那我们就订这个包间。| 需要付订金吗？| 大概多少钱？"
   },
   {
-    "term": "this room",
+    "term": "this private room",
     "conversation_id": "70207",
     "sentence_id": 8,
     "difficulty": "normal",
     "category": "business",
-    "phonetic": "UK /'this? 'room?/",
-    "example": "_Perfect! Then we'll book_ _this room_. | _Do we need to pay_ _a deposit_? | _How much is it_?",
+    "phonetic": "UK /'this? 'private? 'room?/",
+    "example": "_Perfect! Then we'll book_ _this private room_. | _Do we need to pay_ _a deposit_? | _How much is it_?",
     "example_chinese": "完美！那我们就订这个包间。| 需要付订金吗？| 大概多少钱？"
   },
   {
@@ -30026,7 +29986,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /'do? 'we? 'need? 'to? 'pay?/",
-    "example": "_Perfect! Then we'll book_ _this room_. | _Do we need to pay_ _a deposit_? | _How much is it_?",
+    "example": "_Perfect! Then we'll book_ _this private room_. | _Do we need to pay_ _a deposit_? | _How much is it_?",
     "example_chinese": "完美！那我们就订这个包间。| 需要付订金吗？| 大概多少钱？"
   },
   {
@@ -30036,7 +29996,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /'a? 'deposit?/",
-    "example": "_Perfect! Then we'll book_ _this room_. | _Do we need to pay_ _a deposit_? | _How much is it_?",
+    "example": "_Perfect! Then we'll book_ _this private room_. | _Do we need to pay_ _a deposit_? | _How much is it_?",
     "example_chinese": "完美！那我们就订这个包间。| 需要付订金吗？| 大概多少钱？"
   },
   {
@@ -30046,7 +30006,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /'how? 'much? 'is? 'it?/",
-    "example": "_Perfect! Then we'll book_ _this room_. | _Do we need to pay_ _a deposit_? | _How much is it_?",
+    "example": "_Perfect! Then we'll book_ _this private room_. | _Do we need to pay_ _a deposit_? | _How much is it_?",
     "example_chinese": "完美！那我们就订这个包间。| 需要付订金吗？| 大概多少钱？"
   },
   {
@@ -30056,7 +30016,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /'yes,? 'we? 'require?/",
-    "example": "_Yes, we require_ _a 20% deposit_ _to confirm the booking_. | _For 15 people_, _that would be_ _approximately $300_.",
+    "example": "_Yes, we require_ _a 20% deposit_ _to confirm the booking_. | _For 15 people, that would be_ _approximately $300_.",
     "example_chinese": "是的，我们需要20%的订金来确认预订。15个人大概需要300美元。"
   },
   {
@@ -30066,7 +30026,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /'a? '20%? 'deposit?/",
-    "example": "_Yes, we require_ _a 20% deposit_ _to confirm the booking_. | _For 15 people_, _that would be_ _approximately $300_.",
+    "example": "_Yes, we require_ _a 20% deposit_ _to confirm the booking_. | _For 15 people, that would be_ _approximately $300_.",
     "example_chinese": "是的，我们需要20%的订金来确认预订。15个人大概需要300美元。"
   },
   {
@@ -30076,27 +30036,17 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /'to? 'confirm? 'the? 'booking?/",
-    "example": "_Yes, we require_ _a 20% deposit_ _to confirm the booking_. | _For 15 people_, _that would be_ _approximately $300_.",
+    "example": "_Yes, we require_ _a 20% deposit_ _to confirm the booking_. | _For 15 people, that would be_ _approximately $300_.",
     "example_chinese": "是的，我们需要20%的订金来确认预订。15个人大概需要300美元。"
   },
   {
-    "term": "For 15 people",
+    "term": "For 15 people, that would be",
     "conversation_id": "70207",
     "sentence_id": 9,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /'for? '15? 'people?/",
-    "example": "_Yes, we require_ _a 20% deposit_ _to confirm the booking_. | _For 15 people_, _that would be_ _approximately $300_.",
-    "example_chinese": "是的，我们需要20%的订金来确认预订。15个人大概需要300美元。"
-  },
-  {
-    "term": "that would be",
-    "conversation_id": "70207",
-    "sentence_id": 9,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /'that? 'would? 'be?/",
-    "example": "_Yes, we require_ _a 20% deposit_ _to confirm the booking_. | _For 15 people_, _that would be_ _approximately $300_.",
+    "phonetic": "UK /'for? '15? 'people,? 'that? 'would? 'be?/",
+    "example": "_Yes, we require_ _a 20% deposit_ _to confirm the booking_. | _For 15 people, that would be_ _approximately $300_.",
     "example_chinese": "是的，我们需要20%的订金来确认预订。15个人大概需要300美元。"
   },
   {
@@ -30106,7 +30056,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /'approximately? '$300?/",
-    "example": "_Yes, we require_ _a 20% deposit_ _to confirm the booking_. | _For 15 people_, _that would be_ _approximately $300_.",
+    "example": "_Yes, we require_ _a 20% deposit_ _to confirm the booking_. | _For 15 people, that would be_ _approximately $300_.",
     "example_chinese": "是的，我们需要20%的订金来确认预订。15个人大概需要300美元。"
   },
   {
@@ -30270,13 +30220,13 @@
     "example_chinese": "我叫李明，| 电话是0412-345-678。| 如果有什么变化，请及时联系我。"
   },
   {
-    "term": "Perfect, Mr. Li",
+    "term": "Perfect, Mr. Li Ming",
     "conversation_id": "70207",
     "sentence_id": 13,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /'perfect,? 'mr.? 'li?/",
-    "example": "_Perfect, Mr. Li_. | _I'll confirm your booking_ _for next Friday_ _at 7 PM_. | _You'll receive_ _a confirmation email_ _shortly_.",
+    "phonetic": "UK /'perfect,? 'mr.? 'li? 'ming?/",
+    "example": "_Perfect, Mr. Li Ming_. | _I'll confirm your booking_ _for next Friday_ _at 7 PM_. | _You'll receive a confirmation email shortly_.",
     "example_chinese": "很好，李先生。我会确认您下周五晚上7点的预订。您很快就会收到确认邮件。"
   },
   {
@@ -30286,7 +30236,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /'i'll? 'confirm? 'your? 'booking?/",
-    "example": "_Perfect, Mr. Li_. | _I'll confirm your booking_ _for next Friday_ _at 7 PM_. | _You'll receive_ _a confirmation email_ _shortly_.",
+    "example": "_Perfect, Mr. Li Ming_. | _I'll confirm your booking_ _for next Friday_ _at 7 PM_. | _You'll receive a confirmation email shortly_.",
     "example_chinese": "很好，李先生。我会确认您下周五晚上7点的预订。您很快就会收到确认邮件。"
   },
   {
@@ -30296,7 +30246,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /'for? 'next? 'friday?/",
-    "example": "_Perfect, Mr. Li_. | _I'll confirm your booking_ _for next Friday_ _at 7 PM_. | _You'll receive_ _a confirmation email_ _shortly_.",
+    "example": "_Perfect, Mr. Li Ming_. | _I'll confirm your booking_ _for next Friday_ _at 7 PM_. | _You'll receive a confirmation email shortly_.",
     "example_chinese": "很好，李先生。我会确认您下周五晚上7点的预订。您很快就会收到确认邮件。"
   },
   {
@@ -30306,37 +30256,17 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /'at? '7? 'pm?/",
-    "example": "_Perfect, Mr. Li_. | _I'll confirm your booking_ _for next Friday_ _at 7 PM_. | _You'll receive_ _a confirmation email_ _shortly_.",
+    "example": "_Perfect, Mr. Li Ming_. | _I'll confirm your booking_ _for next Friday_ _at 7 PM_. | _You'll receive a confirmation email shortly_.",
     "example_chinese": "很好，李先生。我会确认您下周五晚上7点的预订。您很快就会收到确认邮件。"
   },
   {
-    "term": "You'll receive",
+    "term": "You'll receive a confirmation email shortly",
     "conversation_id": "70207",
     "sentence_id": 13,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /'you'll? 'receive?/",
-    "example": "_Perfect, Mr. Li_. | _I'll confirm your booking_ _for next Friday_ _at 7 PM_. | _You'll receive_ _a confirmation email_ _shortly_.",
-    "example_chinese": "很好，李先生。我会确认您下周五晚上7点的预订。您很快就会收到确认邮件。"
-  },
-  {
-    "term": "a confirmation email",
-    "conversation_id": "70207",
-    "sentence_id": 13,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /'a? 'confirmation? 'email?/",
-    "example": "_Perfect, Mr. Li_. | _I'll confirm your booking_ _for next Friday_ _at 7 PM_. | _You'll receive_ _a confirmation email_ _shortly_.",
-    "example_chinese": "很好，李先生。我会确认您下周五晚上7点的预订。您很快就会收到确认邮件。"
-  },
-  {
-    "term": "shortly",
-    "conversation_id": "70207",
-    "sentence_id": 13,
-    "difficulty": "easy",
-    "category": "business",
-    "phonetic": "UK /'shortly?/",
-    "example": "_Perfect, Mr. Li_. | _I'll confirm your booking_ _for next Friday_ _at 7 PM_. | _You'll receive_ _a confirmation email_ _shortly_.",
+    "phonetic": "UK /'you'll? 'receive? 'a? 'confirmation? 'email? 'shortly?/",
+    "example": "_Perfect, Mr. Li Ming_. | _I'll confirm your booking_ _for next Friday_ _at 7 PM_. | _You'll receive a confirmation email shortly_.",
     "example_chinese": "很好，李先生。我会确认您下周五晚上7点的预订。您很快就会收到确认邮件。"
   },
   {
@@ -33060,23 +32990,13 @@
     "example_chinese": "不客气，张先生。今天还有其他我可以帮助您的吗？"
   },
   {
-    "term": "No, that's all",
+    "term": "No, that's all, thank you",
     "conversation_id": "70204",
     "sentence_id": 18,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /'no,? 'that's? 'all?/",
-    "example": "_No, that's all_, _thank you_. | _Have a great day_.",
-    "example_chinese": "没有了，谢谢您。| 祝您有愉快的一天。"
-  },
-  {
-    "term": "thank you",
-    "conversation_id": "70204",
-    "sentence_id": 18,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /'thank? 'you?/",
-    "example": "_No, that's all_, _thank you_. | _Have a great day_.",
+    "phonetic": "UK /'no,? 'that's? 'all,? 'thank? 'you?/",
+    "example": "_No, that's all, thank you_. | _Have a great day_.",
     "example_chinese": "没有了，谢谢您。| 祝您有愉快的一天。"
   },
   {
@@ -33086,7 +33006,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /'have? 'a? 'great? 'day?/",
-    "example": "_No, that's all_, _thank you_. | _Have a great day_.",
+    "example": "_No, that's all, thank you_. | _Have a great day_.",
     "example_chinese": "没有了，谢谢您。| 祝您有愉快的一天。"
   },
   {
@@ -43540,23 +43460,13 @@
     "example_chinese": "谢谢你的建议！| 我真的很期待这次旅行。"
   },
   {
-    "term": "Good evening",
+    "term": "Good evening, welcome to",
     "conversation_id": "70190",
     "sentence_id": 1,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /'good? 'evening?/",
-    "example": "_Good evening_, _welcome to_ _Pizza Palace_. | _How may I help you today_?",
-    "example_chinese": "晚上好，欢迎光临披萨宫殿。今天有什么可以为您效劳的吗？"
-  },
-  {
-    "term": "welcome to",
-    "conversation_id": "70190",
-    "sentence_id": 1,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /'welcome? 'to?/",
-    "example": "_Good evening_, _welcome to_ _Pizza Palace_. | _How may I help you today_?",
+    "phonetic": "UK /'good? 'evening,? 'welcome? 'to?/",
+    "example": "_Good evening, welcome to_ _Pizza Palace_. | _How may I help you today_?",
     "example_chinese": "晚上好，欢迎光临披萨宫殿。今天有什么可以为您效劳的吗？"
   },
   {
@@ -43566,7 +43476,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /'pizza? 'palace?/",
-    "example": "_Good evening_, _welcome to_ _Pizza Palace_. | _How may I help you today_?",
+    "example": "_Good evening, welcome to_ _Pizza Palace_. | _How may I help you today_?",
     "example_chinese": "晚上好，欢迎光临披萨宫殿。今天有什么可以为您效劳的吗？"
   },
   {
@@ -43576,7 +43486,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /'how? 'may? 'i? 'help? 'you? 'today?/",
-    "example": "_Good evening_, _welcome to_ _Pizza Palace_. | _How may I help you today_?",
+    "example": "_Good evening, welcome to_ _Pizza Palace_. | _How may I help you today_?",
     "example_chinese": "晚上好，欢迎光临披萨宫殿。今天有什么可以为您效劳的吗？"
   },
   {
@@ -49407,7 +49317,7 @@
     "category": "business",
     "phonetic": "UK /'其实?/",
     "example": "_其实_，_还真的有_。| _对于我来说_，_目前最紧急的事情_ _就是所得税的申报_。| _还有两天_ _就要截止了_。",
-    "example_chinese": "_Actually_，_yes_. | _Right now_，_my biggest concern_ _is filing my income tax_. | _The deadline is_ _in two days_."
+    "example_chinese": "_Actually，yes. Right now_，_my biggest concern_ _is filing my income tax_. | _The deadline is_ _in two days_."
   },
   {
     "term": "还真的有",
@@ -49417,7 +49327,7 @@
     "category": "business",
     "phonetic": "UK /'还真的有?/",
     "example": "_其实_，_还真的有_。| _对于我来说_，_目前最紧急的事情_ _就是所得税的申报_。| _还有两天_ _就要截止了_。",
-    "example_chinese": "_Actually_，_yes_. | _Right now_，_my biggest concern_ _is filing my income tax_. | _The deadline is_ _in two days_."
+    "example_chinese": "_Actually，yes. Right now_，_my biggest concern_ _is filing my income tax_. | _The deadline is_ _in two days_."
   },
   {
     "term": "对于我来说",
@@ -49427,7 +49337,7 @@
     "category": "business",
     "phonetic": "UK /'对于我来说?/",
     "example": "_其实_，_还真的有_。| _对于我来说_，_目前最紧急的事情_ _就是所得税的申报_。| _还有两天_ _就要截止了_。",
-    "example_chinese": "_Actually_，_yes_. | _Right now_，_my biggest concern_ _is filing my income tax_. | _The deadline is_ _in two days_."
+    "example_chinese": "_Actually，yes. Right now_，_my biggest concern_ _is filing my income tax_. | _The deadline is_ _in two days_."
   },
   {
     "term": "目前最紧急的事情",
@@ -49437,7 +49347,7 @@
     "category": "business",
     "phonetic": "UK /'目前最紧急的事情?/",
     "example": "_其实_，_还真的有_。| _对于我来说_，_目前最紧急的事情_ _就是所得税的申报_。| _还有两天_ _就要截止了_。",
-    "example_chinese": "_Actually_，_yes_. | _Right now_，_my biggest concern_ _is filing my income tax_. | _The deadline is_ _in two days_."
+    "example_chinese": "_Actually，yes. Right now_，_my biggest concern_ _is filing my income tax_. | _The deadline is_ _in two days_."
   },
   {
     "term": "就是所得税的申报",
@@ -49447,7 +49357,7 @@
     "category": "business",
     "phonetic": "UK /'就是所得税的申报?/",
     "example": "_其实_，_还真的有_。| _对于我来说_，_目前最紧急的事情_ _就是所得税的申报_。| _还有两天_ _就要截止了_。",
-    "example_chinese": "_Actually_，_yes_. | _Right now_，_my biggest concern_ _is filing my income tax_. | _The deadline is_ _in two days_."
+    "example_chinese": "_Actually，yes. Right now_，_my biggest concern_ _is filing my income tax_. | _The deadline is_ _in two days_."
   },
   {
     "term": "还有两天",
@@ -49457,7 +49367,7 @@
     "category": "business",
     "phonetic": "UK /'还有两天?/",
     "example": "_其实_，_还真的有_。| _对于我来说_，_目前最紧急的事情_ _就是所得税的申报_。| _还有两天_ _就要截止了_。",
-    "example_chinese": "_Actually_，_yes_. | _Right now_，_my biggest concern_ _is filing my income tax_. | _The deadline is_ _in two days_."
+    "example_chinese": "_Actually，yes. Right now_，_my biggest concern_ _is filing my income tax_. | _The deadline is_ _in two days_."
   },
   {
     "term": "就要截止了",
@@ -49467,7 +49377,7 @@
     "category": "business",
     "phonetic": "UK /'就要截止了?/",
     "example": "_其实_，_还真的有_。| _对于我来说_，_目前最紧急的事情_ _就是所得税的申报_。| _还有两天_ _就要截止了_。",
-    "example_chinese": "_Actually_，_yes_. | _Right now_，_my biggest concern_ _is filing my income tax_. | _The deadline is_ _in two days_."
+    "example_chinese": "_Actually，yes. Right now_，_my biggest concern_ _is filing my income tax_. | _The deadline is_ _in two days_."
   },
   {
     "term": "Don't worry",

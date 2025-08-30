@@ -1,9 +1,9 @@
 # CCL Dialogue Data Processing Report
 
-**Generated:** 2025-08-30T06:59:42.610Z
+**Generated:** 2025-08-30T08:23:08.614Z
 **Source File:** merged-conversations.md
 **Total Dialogues:** 91
-**Total Vocabulary Terms:** 7072
+**Total Vocabulary Terms:** 7063
 **Processing Errors:** 0
 **Processing Warnings:** 18
 
@@ -18,9 +18,9 @@
 
 ## Difficulty Distribution
 
-- **🔴 hard**: 3754 terms
-- **🟡 normal**: 2284 terms
-- **🟢 easy**: 1034 terms
+- **🔴 hard**: 3762 terms
+- **🟡 normal**: 2270 terms
+- **🟢 easy**: 1031 terms
 
 ## Dialogue List
 
@@ -105,15 +105,15 @@
 - **👥 70209**: New Neighbour's Dog Barking (social)
   - Sentences: 14, Vocabulary: 63
 - **💼 70208**: Car Insurance Claim After Accident (business)
-  - Sentences: 15, Vocabulary: 76
+  - Sentences: 15, Vocabulary: 73
 - **💼 70207**: Restaurant Reservation for Large Group (business)
-  - Sentences: 17, Vocabulary: 88
+  - Sentences: 17, Vocabulary: 84
 - **💼 70206**: Job Interview for Teaching Position (business)
   - Sentences: 16, Vocabulary: 87
 - **💼 70205**: Buying a Used Car from Private Seller (business)
   - Sentences: 17, Vocabulary: 80
 - **💼 70204**: Reporting a Lost Credit Card (business)
-  - Sentences: 18, Vocabulary: 88
+  - Sentences: 18, Vocabulary: 87
 - **💼 70203**: Applying for a Library Card (business)
   - Sentences: 21, Vocabulary: 89
 - **💼 70202**: Ordering Takeaway Food (business)
@@ -141,7 +141,7 @@
 - **👥 70191**: Discussing Travel Plans (social)
   - Sentences: 20, Vocabulary: 87
 - **💼 70190**: Ordering Pizza Delivery (business)
-  - Sentences: 19, Vocabulary: 72
+  - Sentences: 19, Vocabulary: 71
 - **👥 70189**: Discussing Movies and Entertainment (social)
   - Sentences: 20, Vocabulary: 97
 - **🎓 70188**: A Low-score University Assignment (education)

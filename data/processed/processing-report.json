@@ -1,8 +1,8 @@
 {
   "summary": {
     "totalDialogues": 91,
-    "totalVocabularyTerms": 7072,
-    "processedAt": "2025-08-30T06:59:42.610Z",
+    "totalVocabularyTerms": 7063,
+    "processedAt": "2025-08-30T08:23:08.614Z",
     "sourceFile": "merged-conversations.md",
     "processingErrors": 0,
     "processingWarnings": 18
@@ -16,9 +16,9 @@
     "immigration": 1
   },
   "difficultyDistribution": {
-    "hard": 3754,
-    "normal": 2284,
-    "easy": 1034
+    "hard": 3762,
+    "normal": 2270,
+    "easy": 1031
   },
   "dialogueList": [
     {
@@ -305,14 +305,14 @@
       "id": "70208",
       "title": "Car Insurance Claim After Accident",
       "category": "business",
-      "vocabularyCount": 76,
+      "vocabularyCount": 73,
       "sentenceCount": 15
     },
     {
       "id": "70207",
       "title": "Restaurant Reservation for Large Group",
       "category": "business",
-      "vocabularyCount": 88,
+      "vocabularyCount": 84,
       "sentenceCount": 17
     },
     {
@@ -333,7 +333,7 @@
       "id": "70204",
       "title": "Reporting a Lost Credit Card",
       "category": "business",
-      "vocabularyCount": 88,
+      "vocabularyCount": 87,
       "sentenceCount": 18
     },
     {
@@ -431,7 +431,7 @@
       "id": "70190",
       "title": "Ordering Pizza Delivery",
       "category": "business",
-      "vocabularyCount": 72,
+      "vocabularyCount": 71,
       "sentenceCount": 19
     },
     {

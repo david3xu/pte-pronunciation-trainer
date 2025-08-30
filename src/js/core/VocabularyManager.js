@@ -50,8 +50,14 @@ class VocabularyManager {
     }
 
     getVocabularyFromDataLoader() {
+        // Use extracted vocabulary if available (new direct loading method)
+        if (this.extractedVocabulary) {
+            return this.extractedVocabulary;
+        }
+
+        // Fallback to old DialogueDataLoader method (if available)
         if (!this.dataLoader || !this.dataLoader.isLoaded) {
-            console.warn('DialogueDataLoader not ready yet');
+            console.warn('No vocabulary data available yet');
             return [];
         }
 
@@ -239,20 +245,27 @@ class VocabularyManager {
     async initialize() {
         console.log('🔄 Initializing VocabularyManager with complete dataset...');
         
-        // Check if DialogueDataLoader is available
-        if (typeof DialogueDataLoader === 'undefined') {
-            throw new Error('DialogueDataLoader not found. Make sure DialogueDataLoader.js is loaded before VocabularyManager.js');
-        }
-        
-        // Initialize DialogueDataLoader if not already done
-        if (!this.dataLoader) {
-            this.dataLoader = new DialogueDataLoader();
-            window.dialogueDataLoader = this.dataLoader; // Make available globally for debugging
-        }
-
+        // Load complete dataset directly via fetch instead of DialogueDataLoader
         try {
-            // Load the complete dataset
-            await this.dataLoader.loadData();
+            console.log('📥 Loading complete dataset...');
+            const response = await fetch('/data/processed/complete-dataset.json');
+            
+            if (!response.ok) {
+                throw new Error(`Failed to load data: ${response.status} ${response.statusText}`);
+            }
+            
+            const completeData = await response.json();
+            console.log('✅ Complete dataset loaded successfully');
+            console.log(`📊 Loaded ${completeData.dialogues?.length} dialogues with vocabulary`);
+            
+            this.completeDataset = completeData;
+            this.isInitialized = true;
+            
+            // Extract vocabulary for compatibility with existing methods
+            this.extractVocabularyFromDataset();
+            // Extract vocabulary for compatibility with existing methods
+            this.extractVocabularyFromDataset();
+            
             console.log('✅ Complete dataset loaded successfully');
 
             // Now calculate counts and initialize
@@ -273,6 +286,40 @@ class VocabularyManager {
             console.error('❌ Failed to initialize VocabularyManager:', error);
             // Could fall back to old method here if needed
         }
+    }
+
+    /**
+     * Extract vocabulary from complete dataset for compatibility
+     */
+    extractVocabularyFromDataset() {
+        if (!this.completeDataset || !this.completeDataset.dialogues) {
+            console.warn('No complete dataset available for vocabulary extraction');
+            return;
+        }
+
+        const vocabulary = [];
+        
+        this.completeDataset.dialogues.forEach(dialogue => {
+            dialogue.sentences.forEach(sentence => {
+                sentence.vocabulary.forEach(vocabItem => {
+                    vocabulary.push({
+                        english: vocabItem.term,
+                        chinese: '',
+                        difficulty: vocabItem.difficulty || 'normal',
+                        example: vocabItem.context || sentence.english,
+                        exampleChinese: sentence.chinese || '',
+                        category: dialogue.category,
+                        conversationId: dialogue.id,
+                        conversationTitle: dialogue.title,
+                        sentenceNumber: sentence.id
+                    });
+                });
+            });
+        });
+
+        // Store extracted vocabulary for backward compatibility
+        this.extractedVocabulary = vocabulary;
+        console.log(`📚 Extracted ${vocabulary.length} vocabulary terms from complete dataset`);
     }
 }
 

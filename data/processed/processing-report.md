@@ -1,9 +1,9 @@
 # CCL Dialogue Data Processing Report
 
-**Generated:** 2025-08-30T08:23:08.614Z
+**Generated:** 2025-08-30T09:42:03.576Z
 **Source File:** merged-conversations.md
 **Total Dialogues:** 91
-**Total Vocabulary Terms:** 7063
+**Total Vocabulary Terms:** 6975
 **Processing Errors:** 0
 **Processing Warnings:** 18
 
@@ -18,9 +18,9 @@
 
 ## Difficulty Distribution
 
-- **🔴 hard**: 3762 terms
-- **🟡 normal**: 2270 terms
-- **🟢 easy**: 1031 terms
+- **🔴 hard**: 4094 terms
+- **🟡 normal**: 2601 terms
+- **🟢 easy**: 280 terms
 
 ## Dialogue List
 
@@ -43,15 +43,15 @@
 - **👥 70240**: A New Creamy Leather Lounge Chair (social)
   - Sentences: 14, Vocabulary: 57
 - **👥 70239**: Light-Filled Home Office Plans (social)
-  - Sentences: 14, Vocabulary: 89
+  - Sentences: 14, Vocabulary: 64
 - **👥 70238**: Ordering Oat Milk in a Small Town (social)
-  - Sentences: 14, Vocabulary: 91
+  - Sentences: 14, Vocabulary: 71
 - **👥 70237**: New Immigrant's Banking Adjustment (social)
-  - Sentences: 14, Vocabulary: 101
+  - Sentences: 14, Vocabulary: 81
 - **👥 70236**: Shed to Park: Planting Volunteers (social)
-  - Sentences: 14, Vocabulary: 86
+  - Sentences: 14, Vocabulary: 76
 - **👥 70235**: Late Fee and Direct Debit (social)
-  - Sentences: 14, Vocabulary: 97
+  - Sentences: 14, Vocabulary: 81
 - **👥 70234**: Small Town Doctor & Grocer (social)
   - Sentences: 14, Vocabulary: 92
 - **💼 70233**: Excavator Theft (business)
@@ -153,33 +153,33 @@
 - **💼 70185**: Trauma Insurance 101 (business)
   - Sentences: 14, Vocabulary: 89
 - **💼 70184**: Tax Deadlines and Accounting Solutions (business)
-  - Sentences: 14, Vocabulary: 104
+  - Sentences: 14, Vocabulary: 99
 - **💼 70183**: Packing Up and Selling (business)
-  - Sentences: 14, Vocabulary: 82
+  - Sentences: 14, Vocabulary: 88
 - **💼 70182**: Promotion and Transition (business)
-  - Sentences: 14, Vocabulary: 74
+  - Sentences: 14, Vocabulary: 78
 - **🏥 70181**: From Clinic to Home (medical)
-  - Sentences: 14, Vocabulary: 81
+  - Sentences: 14, Vocabulary: 86
 - **💼 70180**: Downsizing After 15 Years (business)
-  - Sentences: 14, Vocabulary: 81
+  - Sentences: 14, Vocabulary: 85
 - **⚖️ 70179**: Stolen Tools Report (legal)
-  - Sentences: 14, Vocabulary: 72
+  - Sentences: 14, Vocabulary: 66
 - **👥 70178**: Settling In and Planting Seeds (social)
-  - Sentences: 14, Vocabulary: 69
+  - Sentences: 14, Vocabulary: 71
 - **💼 70177**: Booking a 100th Birthday Shoot (business)
   - Sentences: 14, Vocabulary: 80
 - **👥 70176**: Birthday Party Venue Planning (social)
   - Sentences: 14, Vocabulary: 68
 - **💼 70175**: Drainage Concerns (business)
-  - Sentences: 14, Vocabulary: 72
-- **💼 70174**: Getting a Quote for Boat Insurance (business)
-  - Sentences: 14, Vocabulary: 64
-- **👥 70173**: Water Restrictions in Australia (social)
   - Sentences: 14, Vocabulary: 69
+- **💼 70174**: Getting a Quote for Boat Insurance (business)
+  - Sentences: 14, Vocabulary: 67
+- **👥 70173**: Water Restrictions in Australia (social)
+  - Sentences: 14, Vocabulary: 68
 - **👥 70172**: Looking for a Foster Pet (social)
-  - Sentences: 14, Vocabulary: 73
+  - Sentences: 14, Vocabulary: 71
 - **⚖️ 70171**: Enrol to Vote (legal)
-  - Sentences: 12, Vocabulary: 62
+  - Sentences: 12, Vocabulary: 59
 - **💼 70170**: Home-based Bakery Business (business)
   - Sentences: 14, Vocabulary: 67
 - **💼 70169**: Bedroom Furniture Payment Plan (business)
@@ -197,9 +197,9 @@
 - **👥 70163**: Guiding a Daughter's School Transition (social)
   - Sentences: 14, Vocabulary: 99
 - **👥 70162**: Planning a Neighborhood Gathering (social)
-  - Sentences: 14, Vocabulary: 111
+  - Sentences: 14, Vocabulary: 109
 - **⚖️ 70161**: Legal Consultation for Selling a Small Business (legal)
-  - Sentences: 14, Vocabulary: 100
+  - Sentences: 14, Vocabulary: 101
 - **💼 70160**: Rental Inquiry at the Council Office (business)
   - Sentences: 14, Vocabulary: 65
 - **🎓 70159**: A Lonely Transfer Student (education)

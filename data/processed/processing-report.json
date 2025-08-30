@@ -1,8 +1,8 @@
 {
   "summary": {
     "totalDialogues": 91,
-    "totalVocabularyTerms": 7063,
-    "processedAt": "2025-08-30T08:23:08.614Z",
+    "totalVocabularyTerms": 6975,
+    "processedAt": "2025-08-30T09:42:03.576Z",
     "sourceFile": "merged-conversations.md",
     "processingErrors": 0,
     "processingWarnings": 18
@@ -16,9 +16,9 @@
     "immigration": 1
   },
   "difficultyDistribution": {
-    "hard": 3762,
-    "normal": 2270,
-    "easy": 1031
+    "hard": 4094,
+    "normal": 2601,
+    "easy": 280
   },
   "dialogueList": [
     {
@@ -88,35 +88,35 @@
       "id": "70239",
       "title": "Light-Filled Home Office Plans",
       "category": "social",
-      "vocabularyCount": 89,
+      "vocabularyCount": 64,
       "sentenceCount": 14
     },
     {
       "id": "70238",
       "title": "Ordering Oat Milk in a Small Town",
       "category": "social",
-      "vocabularyCount": 91,
+      "vocabularyCount": 71,
       "sentenceCount": 14
     },
     {
       "id": "70237",
       "title": "New Immigrant's Banking Adjustment",
       "category": "social",
-      "vocabularyCount": 101,
+      "vocabularyCount": 81,
       "sentenceCount": 14
     },
     {
       "id": "70236",
       "title": "Shed to Park: Planting Volunteers",
       "category": "social",
-      "vocabularyCount": 86,
+      "vocabularyCount": 76,
       "sentenceCount": 14
     },
     {
       "id": "70235",
       "title": "Late Fee and Direct Debit",
       "category": "social",
-      "vocabularyCount": 97,
+      "vocabularyCount": 81,
       "sentenceCount": 14
     },
     {
@@ -473,49 +473,49 @@
       "id": "70184",
       "title": "Tax Deadlines and Accounting Solutions",
       "category": "business",
-      "vocabularyCount": 104,
+      "vocabularyCount": 99,
       "sentenceCount": 14
     },
     {
       "id": "70183",
       "title": "Packing Up and Selling",
       "category": "business",
-      "vocabularyCount": 82,
+      "vocabularyCount": 88,
       "sentenceCount": 14
     },
     {
       "id": "70182",
       "title": "Promotion and Transition",
       "category": "business",
-      "vocabularyCount": 74,
+      "vocabularyCount": 78,
       "sentenceCount": 14
     },
     {
       "id": "70181",
       "title": "From Clinic to Home",
       "category": "medical",
-      "vocabularyCount": 81,
+      "vocabularyCount": 86,
       "sentenceCount": 14
     },
     {
       "id": "70180",
       "title": "Downsizing After 15 Years",
       "category": "business",
-      "vocabularyCount": 81,
+      "vocabularyCount": 85,
       "sentenceCount": 14
     },
     {
       "id": "70179",
       "title": "Stolen Tools Report",
       "category": "legal",
-      "vocabularyCount": 72,
+      "vocabularyCount": 66,
       "sentenceCount": 14
     },
     {
       "id": "70178",
       "title": "Settling In and Planting Seeds",
       "category": "social",
-      "vocabularyCount": 69,
+      "vocabularyCount": 71,
       "sentenceCount": 14
     },
     {
@@ -536,35 +536,35 @@
       "id": "70175",
       "title": "Drainage Concerns",
       "category": "business",
-      "vocabularyCount": 72,
+      "vocabularyCount": 69,
       "sentenceCount": 14
     },
     {
       "id": "70174",
       "title": "Getting a Quote for Boat Insurance",
       "category": "business",
-      "vocabularyCount": 64,
+      "vocabularyCount": 67,
       "sentenceCount": 14
     },
     {
       "id": "70173",
       "title": "Water Restrictions in Australia",
       "category": "social",
-      "vocabularyCount": 69,
+      "vocabularyCount": 68,
       "sentenceCount": 14
     },
     {
       "id": "70172",
       "title": "Looking for a Foster Pet",
       "category": "social",
-      "vocabularyCount": 73,
+      "vocabularyCount": 71,
       "sentenceCount": 14
     },
     {
       "id": "70171",
       "title": "Enrol to Vote",
       "category": "legal",
-      "vocabularyCount": 62,
+      "vocabularyCount": 59,
       "sentenceCount": 12
     },
     {
@@ -627,14 +627,14 @@
       "id": "70162",
       "title": "Planning a Neighborhood Gathering",
       "category": "social",
-      "vocabularyCount": 111,
+      "vocabularyCount": 109,
       "sentenceCount": 14
     },
     {
       "id": "70161",
       "title": "Legal Consultation for Selling a Small Business",
       "category": "legal",
-      "vocabularyCount": 100,
+      "vocabularyCount": 101,
       "sentenceCount": 14
     },
     {

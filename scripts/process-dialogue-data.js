@@ -226,11 +226,16 @@ class DialogueDataProcessor {
                 // Check if this line contains English text (has underscores for highlighted terms)
                 const hasHighlightedTerms = firstLine.includes('_');
 
+                // Determine which line contains English (with underscores) vs Chinese
                 let englishText = '';
                 let chineseText = '';
 
-                if (hasHighlightedTerms) {
-                    // This line contains English text with highlighted terms
+                // Check if first line contains mainly English (has underscores and little/no Chinese)
+                const firstLineHasChinese = /[\u4e00-\u9fff]/.test(firstLine);
+                const firstLineHasEnglish = hasHighlightedTerms && !firstLineHasChinese;
+
+                if (firstLineHasEnglish) {
+                    // First line is English with highlighted terms
                     englishText = firstLine;
 
                     // Look for Chinese translation on the next line
@@ -240,14 +245,15 @@ class DialogueDataProcessor {
                             chineseText = nextLine;
                         }
                     }
-                } else {
-                    // This line contains Chinese text, English text should be on the next line
+                } else if (firstLineHasChinese) {
+                    // First line is Chinese, look for English on next line
                     chineseText = firstLine;
 
                     // Look for English text with highlighted terms on the next line
                     if (i + 1 < lines.length) {
                         const nextLine = lines[i + 1].trim();
-                        if (nextLine && nextLine.includes('_') && !nextLine.match(/^\d+\./) && !nextLine.startsWith('---')) {
+                        const nextLineHasEnglish = nextLine.includes('_') && !/[\u4e00-\u9fff]/.test(nextLine);
+                        if (nextLineHasEnglish && !nextLine.match(/^\d+\./) && !nextLine.startsWith('---')) {
                             englishText = nextLine;
                         }
                     }
@@ -282,6 +288,12 @@ class DialogueDataProcessor {
 
         while ((match = termRegex.exec(sentence)) !== null) {
             const term = match[1];
+            
+            // Skip terms that contain Chinese characters
+            if (/[\u4e00-\u9fff]/.test(term)) {
+                continue;
+            }
+            
             const difficulty = this.assessDifficulty(term);
 
             vocabulary.push({

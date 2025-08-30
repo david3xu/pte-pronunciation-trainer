@@ -16,15 +16,17 @@ class ProgressTracker {
         if (progressElement) {
             // Show dialogue ID and TOKEN progress within the dialogue (e.g., 70245 (3/56))
             if (currentWord && currentWord.conversationId) {
-                // Prefer the structured dataset via DialogueDataLoader if available and loaded
-                const loader = window.dialogueDataLoader;
+                // Use VocabularyManager's complete dataset
+                const vocabularyManager = window.vocabularyManager;
                 let totalDialogues = 0;
                 let tokensInDialogue = [];
 
-                if (loader && typeof loader.isDataLoaded === 'function' && loader.isDataLoaded()) {
-                    // Use new structured dataset
-                    totalDialogues = loader.getTotalDialogueCount();
-                    tokensInDialogue = loader.getVocabularyByDialogue(currentWord.conversationId) || [];
+                if (vocabularyManager && vocabularyManager.extractedVocabulary) {
+                    // Use complete dataset from VocabularyManager
+                    const allTokens = vocabularyManager.extractedVocabulary;
+                    const allDialogueIds = [...new Set(allTokens.map(item => item.conversationId))].sort((a, b) => parseInt(b) - parseInt(a));
+                    totalDialogues = allDialogueIds.length;
+                    tokensInDialogue = allTokens.filter(item => item.conversationId === currentWord.conversationId);
                 } else if (window.conversationVocabularyData && Array.isArray(window.conversationVocabularyData.vocabulary)) {
                     // Fallback to legacy generated dataset (still dynamic, no hardcodes)
                     const allTokens = window.conversationVocabularyData.vocabulary;

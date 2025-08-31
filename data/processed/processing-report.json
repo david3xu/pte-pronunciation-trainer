@@ -1,8 +1,8 @@
 {
   "summary": {
     "totalDialogues": 91,
-    "totalVocabularyTerms": 6975,
-    "processedAt": "2025-08-30T09:42:03.576Z",
+    "totalVocabularyTerms": 6967,
+    "processedAt": "2025-08-31T06:13:31.066Z",
     "sourceFile": "merged-conversations.md",
     "processingErrors": 0,
     "processingWarnings": 18
@@ -16,8 +16,8 @@
     "immigration": 1
   },
   "difficultyDistribution": {
-    "hard": 4094,
-    "normal": 2601,
+    "hard": 4093,
+    "normal": 2594,
     "easy": 280
   },
   "dialogueList": [
@@ -39,7 +39,7 @@
       "id": "70246",
       "title": "A New Creamy Leather Lounge Chair 2",
       "category": "social",
-      "vocabularyCount": 60,
+      "vocabularyCount": 58,
       "sentenceCount": 14
     },
     {
@@ -109,7 +109,7 @@
       "id": "70236",
       "title": "Shed to Park: Planting Volunteers",
       "category": "social",
-      "vocabularyCount": 76,
+      "vocabularyCount": 75,
       "sentenceCount": 14
     },
     {
@@ -123,7 +123,7 @@
       "id": "70234",
       "title": "Small Town Doctor & Grocer",
       "category": "social",
-      "vocabularyCount": 92,
+      "vocabularyCount": 88,
       "sentenceCount": 14
     },
     {
@@ -242,7 +242,7 @@
       "id": "70217",
       "title": "Clarifying Local Dog Leash Rules",
       "category": "legal",
-      "vocabularyCount": 87,
+      "vocabularyCount": 86,
       "sentenceCount": 14
     },
     {

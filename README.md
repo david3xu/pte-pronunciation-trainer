@@ -2,12 +2,12 @@
 
 A comprehensive web-based pronunciation training application for NAATI CCL (Credentialed Community Language) exam preparation, featuring conversation-based vocabulary with real-world context.
 
-- **💬 Conversation-Based (7,072 terms)** - Comprehensive vocabulary from 91 real CCL exam dialogues with contextual examples and dialogue structure
+- **💬 Conversation-Based (6,967 terms)** - Comprehensive vocabulary from 91 real CCL exam dialogues with contextual examples and dialogue structure
 
 ## Features ✅ Fully Implemented
 
 ### 🎯 Complete Dialogue-Based Vocabulary System
-- **💬 Comprehensive CCL Terms (7,072)** - Extensive vocabulary extracted from 91 complete NAATI CCL conversations  
+- **💬 Comprehensive CCL Terms (6,967)** - Extensive vocabulary extracted from 91 complete NAATI CCL conversations  
 - **📝 Full Contextual Learning** - Every term includes original sentence context, dialogue flow, and conversation structure
 - **🏷️ Smart Categorization** - Organized across 9 domains with conversation-aware classification
 - **📊 Enhanced Metadata** - Difficulty levels, phonetic transcriptions, and dialogue relationships
@@ -40,13 +40,13 @@ A comprehensive web-based pronunciation training application for NAATI CCL (Cred
 
 ```bash
 # Clone repository
-git clone https://github.com/your-username/ccl-pronunciation-trainer.git
+git clone https://github.com/david3xu/ccl-pronunciation-trainer.git
 cd ccl-pronunciation-trainer
 
 # Install dependencies
 npm install
 
-# Generate complete dialogue dataset (7,072 comprehensive terms)
+# Generate complete dialogue dataset (6,967 comprehensive terms)
 npm run process-data
 
 # Start development server (Python HTTP server)
@@ -76,13 +76,12 @@ npm run extract-vocab                  # Generate vocabulary for backward compat
 # 3. Test in development server
 npm run dev
 
-# 4. Deploy to production - commit and push conversation data
-git add data-processing/extractors/merged-conversations.md
+# 4. Deploy to production - commit and push all changes
+git add data-processing/extractors/merged-conversations.md data/processed/
 git commit -m "Add new CCL vocabulary terms from conversations"  
 git push origin main
 
-# Note: Generated files (data/generated/, data/processed/) are automatically 
-# created by Vercel during build from the complete dataset!
+# Note: Both source data and processed files are committed for reliable deployment
 ```
 
 ### 🔍 Highlighting Syntax
@@ -104,10 +103,9 @@ The processing scripts will automatically:
 ### 🚀 Deployment Considerations
 
 **For Vercel/Production deployments:**
-- **Only commit raw conversation data** (`merged-conversations.md`)
-- **Generated files are ignored by Git** (`data/generated/`, `data/processed/`)
-- **Vercel automatically runs** `npm run vercel-build` during deployment
-- **Frontend loads complete dataset directly** from `/data/processed/complete-dataset.json` (91 dialogues → 7,072 terms)
+- **Commit both source data and processed files** for immediate deployment
+- **Vercel automatically runs** `npm run vercel-build` during deployment  
+- **Frontend loads complete dataset directly** from `/data/processed/complete-dataset.json` (91 dialogues → 6,967 terms)
 
 **For manual deployments:**
 ```bash
@@ -120,7 +118,7 @@ npm run vercel-build    # Runs extract-vocab + build for production
 ```bash
 npm start                     # Process complete dataset + Dev server (full setup)
 npm run dev                   # Start development server  
-npm run process-data          # Generate complete dataset (7,072 terms - primary)
+npm run process-data          # Generate complete dataset (6,967 terms - primary)
 npm run extract-vocab         # Generate vocabulary files (for backward compatibility)
 npm run validate              # Validate all data integrity
 ```
@@ -143,10 +141,10 @@ npm run clean                # Clean generated files
 | Domain                   | Terms | Focus Areas                                           |
 | ------------------------ | ----- | ----------------------------------------------------- |
 | **Business & Finance**   | 3,286 | Banking, financial services, business operations, employment |
-| **Social Welfare**       | 2,676 | Government services, community support, social interactions |
-| **Legal & Government**   | 610   | Court systems, legal procedures, regulatory compliance |
+| **Social Welfare**       | 2,575 | Government services, community support, social interactions |
+| **Legal & Government**   | 601   | Court systems, legal procedures, regulatory compliance |
 | **Education**            | 210   | School systems, academic programs, educational support |
-| **Medical & Healthcare** | 191   | Medical consultations, healthcare services, treatments |
+| **Medical & Healthcare** | 196   | Medical consultations, healthcare services, treatments |
 | **Immigration**          | 99    | Visa processes, residency, citizenship applications |
 
 *All terms extracted from 91 complete CCL conversation scenarios with full dialogue context.*
@@ -202,7 +200,7 @@ ccl-pronunciation-trainer/
 │   │   ├── ui/            # Interface & settings
 │   │   └── utils/         # EventBus & storage utilities
 │   └── css/               # Modular stylesheets
-├── data/                  # Complete dialogue dataset (7,072 terms)
+├── data/                  # Complete dialogue dataset (6,967 terms)
 │   ├── conversation/      # Raw conversation data  
 │   ├── generated/         # Generated vocabulary files
 │   └── processed/         # Structured dialogue dataset

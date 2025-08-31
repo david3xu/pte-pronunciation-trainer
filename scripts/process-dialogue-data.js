@@ -287,10 +287,13 @@ class DialogueDataProcessor {
         let match;
 
         while ((match = termRegex.exec(sentence)) !== null) {
-            const term = match[1];
+            let term = match[1];
             
-            // Skip terms that contain Chinese characters
-            if (/[\u4e00-\u9fff]/.test(term)) {
+            // Clean up the term: remove punctuation, pipes, and extra whitespace
+            term = term.replace(/[|,.!?;:]+/g, '').trim();
+            
+            // Skip empty terms, terms with only spaces, or terms that contain Chinese characters
+            if (!term || term.length === 0 || /^\s*$/.test(term) || /[\u4e00-\u9fff]/.test(term)) {
                 continue;
             }
             
@@ -357,8 +360,11 @@ class DialogueDataProcessor {
 
     generatePhonetic(term) {
         // Simple phonetic generation - in real implementation, you'd use a proper phonetic library
-        const words = term.toLowerCase().split(' ');
-        const phonetic = words.map(word => `'${word}?`).join(' ');
+        const words = term.toLowerCase().trim().split(/\s+/);
+        const phonetic = words
+            .filter(word => word.length > 0) // Remove empty words
+            .map(word => `ˈ${word}`)
+            .join(' ');
         return `UK /${phonetic}/`;
     }
 

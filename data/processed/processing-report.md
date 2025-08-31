@@ -1,9 +1,9 @@
 # CCL Dialogue Data Processing Report
 
-**Generated:** 2025-08-30T09:42:03.576Z
+**Generated:** 2025-08-31T06:13:31.066Z
 **Source File:** merged-conversations.md
 **Total Dialogues:** 91
-**Total Vocabulary Terms:** 6975
+**Total Vocabulary Terms:** 6967
 **Processing Errors:** 0
 **Processing Warnings:** 18
 
@@ -18,8 +18,8 @@
 
 ## Difficulty Distribution
 
-- **🔴 hard**: 4094 terms
-- **🟡 normal**: 2601 terms
+- **🔴 hard**: 4093 terms
+- **🟡 normal**: 2594 terms
 - **🟢 easy**: 280 terms
 
 ## Dialogue List
@@ -29,7 +29,7 @@
 - **💼 70247**: Suite Bathroom Design Clarification 2 (business)
   - Sentences: 14, Vocabulary: 69
 - **👥 70246**: A New Creamy Leather Lounge Chair 2 (social)
-  - Sentences: 14, Vocabulary: 60
+  - Sentences: 14, Vocabulary: 58
 - **💼 70245**: ABN and Business Structure Questions (business)
   - Sentences: 14, Vocabulary: 58
 - **💼 70244**: Seeking Advice After Workplace Layoffs (business)
@@ -49,11 +49,11 @@
 - **👥 70237**: New Immigrant's Banking Adjustment (social)
   - Sentences: 14, Vocabulary: 81
 - **👥 70236**: Shed to Park: Planting Volunteers (social)
-  - Sentences: 14, Vocabulary: 76
+  - Sentences: 14, Vocabulary: 75
 - **👥 70235**: Late Fee and Direct Debit (social)
   - Sentences: 14, Vocabulary: 81
 - **👥 70234**: Small Town Doctor & Grocer (social)
-  - Sentences: 14, Vocabulary: 92
+  - Sentences: 14, Vocabulary: 88
 - **💼 70233**: Excavator Theft (business)
   - Sentences: 14, Vocabulary: 69
 - **👥 70232**: Ceiling Leak Emergency Report (social)
@@ -87,7 +87,7 @@
 - **⚖️ 70218**: Van Theft Report and Insurance Steps (legal)
   - Sentences: 14, Vocabulary: 81
 - **⚖️ 70217**: Clarifying Local Dog Leash Rules (legal)
-  - Sentences: 14, Vocabulary: 87
+  - Sentences: 14, Vocabulary: 86
 - **⚖️ 70216**: Resident Alerts Police to Speeding Driver (legal)
   - Sentences: 14, Vocabulary: 84
 - **💼 70215**: Inspecting An Off-Market Property (business)

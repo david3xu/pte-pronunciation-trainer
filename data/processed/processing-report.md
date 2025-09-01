@@ -1,9 +1,9 @@
 # CCL Dialogue Data Processing Report
 
-**Generated:** 2025-08-31T06:13:31.066Z
+**Generated:** 2025-09-01T21:52:56.382Z
 **Source File:** merged-conversations.md
 **Total Dialogues:** 91
-**Total Vocabulary Terms:** 6967
+**Total Vocabulary Terms:** 6972
 **Processing Errors:** 0
 **Processing Warnings:** 18
 
@@ -18,8 +18,8 @@
 
 ## Difficulty Distribution
 
-- **🔴 hard**: 4093 terms
-- **🟡 normal**: 2594 terms
+- **🔴 hard**: 4097 terms
+- **🟡 normal**: 2595 terms
 - **🟢 easy**: 280 terms
 
 ## Dialogue List
@@ -53,7 +53,7 @@
 - **👥 70235**: Late Fee and Direct Debit (social)
   - Sentences: 14, Vocabulary: 81
 - **👥 70234**: Small Town Doctor & Grocer (social)
-  - Sentences: 14, Vocabulary: 88
+  - Sentences: 14, Vocabulary: 93
 - **💼 70233**: Excavator Theft (business)
   - Sentences: 14, Vocabulary: 69
 - **👥 70232**: Ceiling Leak Emergency Report (social)

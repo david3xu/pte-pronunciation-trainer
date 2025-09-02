@@ -1,9 +1,9 @@
 # CCL Dialogue Data Processing Report
 
-**Generated:** 2025-09-01T21:52:56.382Z
+**Generated:** 2025-09-02T04:35:35.460Z
 **Source File:** merged-conversations.md
 **Total Dialogues:** 91
-**Total Vocabulary Terms:** 6972
+**Total Vocabulary Terms:** 6928
 **Processing Errors:** 0
 **Processing Warnings:** 18
 
@@ -18,8 +18,8 @@
 
 ## Difficulty Distribution
 
-- **🔴 hard**: 4097 terms
-- **🟡 normal**: 2595 terms
+- **🔴 hard**: 4119 terms
+- **🟡 normal**: 2529 terms
 - **🟢 easy**: 280 terms
 
 ## Dialogue List
@@ -27,7 +27,7 @@
 - **👥 70248**: New Council Employee Helps Community Centre 2 (social)
   - Sentences: 14, Vocabulary: 62
 - **💼 70247**: Suite Bathroom Design Clarification 2 (business)
-  - Sentences: 14, Vocabulary: 69
+  - Sentences: 14, Vocabulary: 70
 - **👥 70246**: A New Creamy Leather Lounge Chair 2 (social)
   - Sentences: 14, Vocabulary: 58
 - **💼 70245**: ABN and Business Structure Questions (business)
@@ -85,15 +85,15 @@
 - **💼 70219**: Understanding Bill Payment Delays (business)
   - Sentences: 14, Vocabulary: 59
 - **⚖️ 70218**: Van Theft Report and Insurance Steps (legal)
-  - Sentences: 14, Vocabulary: 81
+  - Sentences: 14, Vocabulary: 72
 - **⚖️ 70217**: Clarifying Local Dog Leash Rules (legal)
-  - Sentences: 14, Vocabulary: 86
+  - Sentences: 14, Vocabulary: 85
 - **⚖️ 70216**: Resident Alerts Police to Speeding Driver (legal)
-  - Sentences: 14, Vocabulary: 84
+  - Sentences: 14, Vocabulary: 78
 - **💼 70215**: Inspecting An Off-Market Property (business)
-  - Sentences: 14, Vocabulary: 83
+  - Sentences: 14, Vocabulary: 69
 - **💼 70214**: Customer Calls About Faulty Washer (business)
-  - Sentences: 14, Vocabulary: 93
+  - Sentences: 14, Vocabulary: 78
 - **💼 70213**: Strategies for School Band Fundraising (business)
   - Sentences: 14, Vocabulary: 92
 - **💼 70212**: Newcomer Navigates Waste Sorting and Gardening (business)

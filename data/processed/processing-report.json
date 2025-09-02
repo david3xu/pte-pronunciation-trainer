@@ -1,8 +1,8 @@
 {
   "summary": {
     "totalDialogues": 91,
-    "totalVocabularyTerms": 6972,
-    "processedAt": "2025-09-01T21:52:56.382Z",
+    "totalVocabularyTerms": 6928,
+    "processedAt": "2025-09-02T04:35:35.460Z",
     "sourceFile": "merged-conversations.md",
     "processingErrors": 0,
     "processingWarnings": 18
@@ -16,8 +16,8 @@
     "immigration": 1
   },
   "difficultyDistribution": {
-    "hard": 4097,
-    "normal": 2595,
+    "hard": 4119,
+    "normal": 2529,
     "easy": 280
   },
   "dialogueList": [
@@ -32,7 +32,7 @@
       "id": "70247",
       "title": "Suite Bathroom Design Clarification 2",
       "category": "business",
-      "vocabularyCount": 69,
+      "vocabularyCount": 70,
       "sentenceCount": 14
     },
     {
@@ -235,35 +235,35 @@
       "id": "70218",
       "title": "Van Theft Report and Insurance Steps",
       "category": "legal",
-      "vocabularyCount": 81,
+      "vocabularyCount": 72,
       "sentenceCount": 14
     },
     {
       "id": "70217",
       "title": "Clarifying Local Dog Leash Rules",
       "category": "legal",
-      "vocabularyCount": 86,
+      "vocabularyCount": 85,
       "sentenceCount": 14
     },
     {
       "id": "70216",
       "title": "Resident Alerts Police to Speeding Driver",
       "category": "legal",
-      "vocabularyCount": 84,
+      "vocabularyCount": 78,
       "sentenceCount": 14
     },
     {
       "id": "70215",
       "title": "Inspecting An Off-Market Property",
       "category": "business",
-      "vocabularyCount": 83,
+      "vocabularyCount": 69,
       "sentenceCount": 14
     },
     {
       "id": "70214",
       "title": "Customer Calls About Faulty Washer",
       "category": "business",
-      "vocabularyCount": 93,
+      "vocabularyCount": 78,
       "sentenceCount": 14
     },
     {

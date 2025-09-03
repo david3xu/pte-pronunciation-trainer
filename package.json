@@ -14,7 +14,7 @@
     "clean": "rm -rf dist/ data/generated/",
     "start": "npm run process-data && npm run dev",
     "deploy": "npm run build && npm run validate",
-    "vercel-build": "npm run extract-vocab && npm run process-data && npm run build"
+    "vercel-build": "npm run extract-vocab && npm run process-data && node scripts/process-unfamiliar-words.js && npm run build"
   },
   "keywords": [
     "ccl",

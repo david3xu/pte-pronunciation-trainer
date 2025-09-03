@@ -40,6 +40,13 @@ class UIController {
             this.updateCategoryDisplay(); // Update counts in category selector and context bar
         });
 
+        // Learning mode selection
+        document.getElementById('learningModeSelect').addEventListener('change', (e) => {
+            window.vocabularyManager.setLearningMode(e.target.value);
+            this.updateCategoryDisplay(); // Update UI for new mode
+            console.log(`Learning mode changed to: ${e.target.value}`);
+        });
+
         // Control buttons
         document.getElementById('startBtn').addEventListener('click', () => {
             window.audioControls.startAutoPlay();

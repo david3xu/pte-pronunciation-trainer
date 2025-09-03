@@ -1,9 +1,9 @@
 # CCL Dialogue Data Processing Report
 
-**Generated:** 2025-09-03T02:45:01.565Z
+**Generated:** 2025-09-03T07:06:56.392Z
 **Source File:** merged-conversations.md
 **Total Dialogues:** 91
-**Total Vocabulary Terms:** 6922
+**Total Vocabulary Terms:** 6896
 **Processing Errors:** 0
 **Processing Warnings:** 18
 
@@ -18,9 +18,9 @@
 
 ## Difficulty Distribution
 
-- **🔴 hard**: 4118 terms
-- **🟡 normal**: 2524 terms
-- **🟢 easy**: 280 terms
+- **🔴 hard**: 4141 terms
+- **🟡 normal**: 2478 terms
+- **🟢 easy**: 277 terms
 
 ## Dialogue List
 
@@ -51,13 +51,13 @@
 - **👥 70236**: Shed to Park: Planting Volunteers (social)
   - Sentences: 14, Vocabulary: 75
 - **👥 70235**: Late Fee and Direct Debit (social)
-  - Sentences: 14, Vocabulary: 81
+  - Sentences: 14, Vocabulary: 78
 - **👥 70234**: Small Town Doctor & Grocer (social)
-  - Sentences: 14, Vocabulary: 93
+  - Sentences: 14, Vocabulary: 92
 - **💼 70233**: Excavator Theft (business)
   - Sentences: 14, Vocabulary: 69
 - **👥 70232**: Ceiling Leak Emergency Report (social)
-  - Sentences: 14, Vocabulary: 64
+  - Sentences: 14, Vocabulary: 65
 - **💼 70231**: Designing a Relaxing Indoor-Outdoor Space (business)
   - Sentences: 14, Vocabulary: 77
 - **👥 70230**: Support for Aging Parents (social)
@@ -85,21 +85,21 @@
 - **💼 70219**: Understanding Bill Payment Delays (business)
   - Sentences: 14, Vocabulary: 59
 - **⚖️ 70218**: Van Theft Report and Insurance Steps (legal)
-  - Sentences: 14, Vocabulary: 72
+  - Sentences: 14, Vocabulary: 71
 - **⚖️ 70217**: Clarifying Local Dog Leash Rules (legal)
-  - Sentences: 14, Vocabulary: 85
+  - Sentences: 14, Vocabulary: 80
 - **⚖️ 70216**: Resident Alerts Police to Speeding Driver (legal)
-  - Sentences: 14, Vocabulary: 78
+  - Sentences: 14, Vocabulary: 74
 - **💼 70215**: Inspecting An Off-Market Property (business)
-  - Sentences: 14, Vocabulary: 69
+  - Sentences: 14, Vocabulary: 68
 - **💼 70214**: Customer Calls About Faulty Washer (business)
-  - Sentences: 14, Vocabulary: 78
+  - Sentences: 14, Vocabulary: 77
 - **💼 70213**: Strategies for School Band Fundraising (business)
   - Sentences: 14, Vocabulary: 92
 - **💼 70212**: Newcomer Navigates Waste Sorting and Gardening (business)
   - Sentences: 14, Vocabulary: 82
 - **💼 70211**: Puppy Course: Commands & Grooming (business)
-  - Sentences: 14, Vocabulary: 90
+  - Sentences: 14, Vocabulary: 79
 - **💼 70210**: Making Use of a Spare Skip Bin (business)
   - Sentences: 14, Vocabulary: 72
 - **👥 70209**: New Neighbour's Dog Barking (social)

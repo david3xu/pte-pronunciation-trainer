@@ -1,15 +1,20 @@
 // VocabularyManager - Handles conversation vocabulary loading, filtering, and navigation
-// Updated: Sep 2025 - Dialogue-based categories implemented
+// Updated: Sep 2025 - Dialogue-based categories and Unfamiliar Words mode implemented
 class VocabularyManager {
     constructor() {
         this.currentCategory = 'all-categories';
         this.currentDifficulty = 'all';
+        this.currentLearningMode = 'vocabulary'; // vocabulary, dialogue, unfamiliar
         this.currentWords = [];
         this.allWords = []; // Store unfiltered words
         this.categoryCounts = {}; // Store counts per category per difficulty
         this.currentIndex = 0;
         this.dataLoader = null;
         this.isInitialized = false;
+        
+        // Store different datasets
+        this.completeDataset = null;
+        this.unfamiliarWordsDataset = null;
 
         // Dialogue-based category labels (groups of 10 dialogues from highest to lowest) - Sept 16, 2025
         this.categoryLabels = {
@@ -128,7 +133,19 @@ class VocabularyManager {
         return allVocabulary;
     }
 
-    getVocabularyData() {
+    async getVocabularyData() {
+        // Return data based on current learning mode
+        if (this.currentLearningMode === 'unfamiliar') {
+            return await this.getUnfamiliarWordsData();
+        } else if (this.currentLearningMode === 'dialogue') {
+            return this.getDialogueData();
+        } else {
+            // Default: vocabulary mode
+            return this.getStandardVocabularyData();
+        }
+    }
+
+    getStandardVocabularyData() {
         // For backward compatibility, return a structure similar to conversationVocabularyData
         const vocabulary = this.getVocabularyFromDataLoader();
         
@@ -145,6 +162,45 @@ class VocabularyManager {
             generatedAt: new Date().toISOString(),
             sourceFile: 'complete-dataset.json'
         };
+    }
+
+    async getUnfamiliarWordsData() {
+        const dataset = await this.loadUnfamiliarWordsDataset();
+        if (!dataset) {
+            console.error('Unfamiliar words dataset not available!');
+            return null;
+        }
+
+        // Convert unfamiliar words format to vocabulary format
+        const vocabulary = dataset.words.map(word => ({
+            english: word.term,
+            chinese: '',
+            difficulty: word.difficulty,
+            example: word.example || '',
+            exampleChinese: word.exampleChinese || '',
+            category: word.category,
+            conversationId: word.dialogueId,
+            conversationTitle: word.dialogueTitle,
+            sentenceNumber: word.sentenceId,
+            phonetic: word.phonetic || '',
+            source: 'unfamiliar-words'
+        }));
+
+        console.log('Unfamiliar words vocabulary loaded:', vocabulary.length, 'terms');
+        
+        return {
+            vocabulary: vocabulary,
+            totalTerms: vocabulary.length,
+            generatedAt: new Date().toISOString(),
+            sourceFile: 'unfamiliar-words-dataset.json'
+        };
+    }
+
+    getDialogueData() {
+        // TODO: Implement dialogue practice mode
+        // This would return full sentences instead of individual vocabulary
+        console.log('Dialogue practice mode not yet implemented');
+        return this.getStandardVocabularyData();
     }
 
     updateCategoryOptions() {
@@ -178,12 +234,47 @@ class VocabularyManager {
         });
     }
 
-    loadCategory(category) {
-        console.log('🔄 loadCategory called with:', category);
+    setLearningMode(mode) {
+        console.log('🎯 Setting learning mode to:', mode);
+        this.currentLearningMode = mode;
+        
+        // Emit learning mode change event
+        window.eventBus.emit('vocabulary:learningModeChanged', {
+            mode: this.currentLearningMode
+        });
+        
+        // Reload current category with new mode
+        this.loadCategory(this.currentCategory);
+    }
+
+    async loadUnfamiliarWordsDataset() {
+        if (this.unfamiliarWordsDataset) {
+            return this.unfamiliarWordsDataset;
+        }
+        
+        try {
+            console.log('📥 Loading unfamiliar words dataset...');
+            const response = await fetch('/data/processed/unfamiliar-words-dataset.json');
+            
+            if (!response.ok) {
+                throw new Error(`Failed to load unfamiliar words: ${response.status} ${response.statusText}`);
+            }
+            
+            this.unfamiliarWordsDataset = await response.json();
+            console.log('✅ Unfamiliar words dataset loaded:', this.unfamiliarWordsDataset.words.length, 'terms');
+            return this.unfamiliarWordsDataset;
+        } catch (error) {
+            console.error('❌ Failed to load unfamiliar words dataset:', error);
+            return null;
+        }
+    }
+
+    async loadCategory(category) {
+        console.log('🔄 loadCategory called with:', category, 'mode:', this.currentLearningMode);
         console.log('🔍 extractedVocabulary available:', !!this.extractedVocabulary);
         console.log('🔍 extractedVocabulary length:', this.extractedVocabulary?.length || 0);
         
-        const data = this.getVocabularyData();
+        const data = await this.getVocabularyData();
         if (!data || !data.vocabulary) {
             console.error('❌ No vocabulary data available in loadCategory');
             console.log('Debug - data:', data);
@@ -194,20 +285,39 @@ class VocabularyManager {
         console.log('✅ Vocabulary data available:', data.vocabulary.length, 'terms');
         this.currentCategory = category;
 
-        // Filter vocabulary by dialogue group
-        if (category === 'all-categories') {
-            this.allWords = [...data.vocabulary];
-        } else {
-            // Get dialogue IDs for this group
-            const dialogueIds = this.dialogueGroups[category];
-            if (dialogueIds) {
-                this.allWords = data.vocabulary.filter(item => {
-                    const conversationId = parseInt(item.conversationId);
-                    return dialogueIds.includes(conversationId);
-                });
+        // Filter vocabulary based on learning mode and category
+        if (this.currentLearningMode === 'unfamiliar') {
+            // For unfamiliar words, filter by dialogue group
+            if (category === 'all-categories') {
+                this.allWords = [...data.vocabulary];
             } else {
-                console.warn(`Unknown dialogue group: ${category}`);
-                this.allWords = [];
+                const dialogueIds = this.dialogueGroups[category];
+                if (dialogueIds) {
+                    this.allWords = data.vocabulary.filter(item => {
+                        const conversationId = parseInt(item.conversationId);
+                        return dialogueIds.includes(conversationId);
+                    });
+                } else {
+                    console.warn(`Unknown dialogue group: ${category}`);
+                    this.allWords = [];
+                }
+            }
+        } else {
+            // Standard vocabulary mode filtering
+            if (category === 'all-categories') {
+                this.allWords = [...data.vocabulary];
+            } else {
+                // Get dialogue IDs for this group
+                const dialogueIds = this.dialogueGroups[category];
+                if (dialogueIds) {
+                    this.allWords = data.vocabulary.filter(item => {
+                        const conversationId = parseInt(item.conversationId);
+                        return dialogueIds.includes(conversationId);
+                    });
+                } else {
+                    console.warn(`Unknown dialogue group: ${category}`);
+                    this.allWords = [];
+                }
             }
         }
 

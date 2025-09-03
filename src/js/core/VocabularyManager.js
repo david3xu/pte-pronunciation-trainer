@@ -1,4 +1,5 @@
 // VocabularyManager - Handles conversation vocabulary loading, filtering, and navigation
+// Updated: Sep 2025 - Dialogue-based categories implemented
 class VocabularyManager {
     constructor() {
         this.currentCategory = 'all-categories';

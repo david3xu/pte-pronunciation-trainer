@@ -301,6 +301,30 @@ class VocabularyManager {
         return Object.keys(this.categoryLabels);
     }
 
+    getNextCategory() {
+        const categories = this.getAllCategories();
+        const currentIndex = categories.indexOf(this.currentCategory);
+        
+        // If we're at the last category, don't advance (or could loop back to first)
+        if (currentIndex >= categories.length - 1) {
+            return null; // No next category
+        }
+        
+        return categories[currentIndex + 1];
+    }
+
+    getPreviousCategory() {
+        const categories = this.getAllCategories();
+        const currentIndex = categories.indexOf(this.currentCategory);
+        
+        // If we're at the first category, don't go back (or could loop to last)
+        if (currentIndex <= 0) {
+            return null; // No previous category
+        }
+        
+        return categories[currentIndex - 1];
+    }
+
     resetToFirstWord() {
         this.currentIndex = 0;
     }

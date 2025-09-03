@@ -1,8 +1,8 @@
 {
   "summary": {
     "totalDialogues": 91,
-    "totalVocabularyTerms": 6924,
-    "processedAt": "2025-09-03T02:29:13.590Z",
+    "totalVocabularyTerms": 6922,
+    "processedAt": "2025-09-03T02:45:01.565Z",
     "sourceFile": "merged-conversations.md",
     "processingErrors": 0,
     "processingWarnings": 18
@@ -17,7 +17,7 @@
   },
   "difficultyDistribution": {
     "hard": 4118,
-    "normal": 2526,
+    "normal": 2524,
     "easy": 280
   },
   "dialogueList": [
@@ -67,7 +67,7 @@
       "id": "70242",
       "title": "New Council Employee Helps Community Centre",
       "category": "social",
-      "vocabularyCount": 64,
+      "vocabularyCount": 62,
       "sentenceCount": 14
     },
     {

@@ -1,9 +1,9 @@
 # CCL Dialogue Data Processing Report
 
-**Generated:** 2025-09-03T02:29:13.590Z
+**Generated:** 2025-09-03T02:45:01.565Z
 **Source File:** merged-conversations.md
 **Total Dialogues:** 91
-**Total Vocabulary Terms:** 6924
+**Total Vocabulary Terms:** 6922
 **Processing Errors:** 0
 **Processing Warnings:** 18
 
@@ -19,7 +19,7 @@
 ## Difficulty Distribution
 
 - **🔴 hard**: 4118 terms
-- **🟡 normal**: 2526 terms
+- **🟡 normal**: 2524 terms
 - **🟢 easy**: 280 terms
 
 ## Dialogue List
@@ -37,7 +37,7 @@
 - **👥 70243**: Urgent Lawyer Appointment for Job Contract Review (social)
   - Sentences: 14, Vocabulary: 61
 - **👥 70242**: New Council Employee Helps Community Centre (social)
-  - Sentences: 14, Vocabulary: 64
+  - Sentences: 14, Vocabulary: 62
 - **👥 70241**: Suite Bathroom Design Clarification (social)
   - Sentences: 14, Vocabulary: 64
 - **👥 70240**: A New Creamy Leather Lounge Chair (social)

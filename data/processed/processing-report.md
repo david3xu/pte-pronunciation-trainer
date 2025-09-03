@@ -1,9 +1,9 @@
 # CCL Dialogue Data Processing Report
 
-**Generated:** 2025-09-03T07:06:56.392Z
+**Generated:** 2025-09-03T21:29:42.007Z
 **Source File:** merged-conversations.md
 **Total Dialogues:** 91
-**Total Vocabulary Terms:** 6896
+**Total Vocabulary Terms:** 6864
 **Processing Errors:** 0
 **Processing Warnings:** 18
 
@@ -18,14 +18,14 @@
 
 ## Difficulty Distribution
 
-- **🔴 hard**: 4141 terms
-- **🟡 normal**: 2478 terms
-- **🟢 easy**: 277 terms
+- **🔴 hard**: 4151 terms
+- **🟡 normal**: 2438 terms
+- **🟢 easy**: 275 terms
 
 ## Dialogue List
 
 - **👥 70248**: New Council Employee Helps Community Centre 2 (social)
-  - Sentences: 14, Vocabulary: 62
+  - Sentences: 14, Vocabulary: 63
 - **💼 70247**: Suite Bathroom Design Clarification 2 (business)
   - Sentences: 14, Vocabulary: 70
 - **👥 70246**: A New Creamy Leather Lounge Chair 2 (social)
@@ -35,7 +35,7 @@
 - **💼 70244**: Seeking Advice After Workplace Layoffs (business)
   - Sentences: 14, Vocabulary: 54
 - **👥 70243**: Urgent Lawyer Appointment for Job Contract Review (social)
-  - Sentences: 14, Vocabulary: 61
+  - Sentences: 14, Vocabulary: 60
 - **👥 70242**: New Council Employee Helps Community Centre (social)
   - Sentences: 14, Vocabulary: 62
 - **👥 70241**: Suite Bathroom Design Clarification (social)
@@ -103,13 +103,13 @@
 - **💼 70210**: Making Use of a Spare Skip Bin (business)
   - Sentences: 14, Vocabulary: 72
 - **👥 70209**: New Neighbour's Dog Barking (social)
-  - Sentences: 14, Vocabulary: 63
+  - Sentences: 14, Vocabulary: 55
 - **💼 70208**: Car Insurance Claim After Accident (business)
   - Sentences: 15, Vocabulary: 73
 - **💼 70207**: Restaurant Reservation for Large Group (business)
-  - Sentences: 17, Vocabulary: 84
+  - Sentences: 17, Vocabulary: 65
 - **💼 70206**: Job Interview for Teaching Position (business)
-  - Sentences: 16, Vocabulary: 87
+  - Sentences: 16, Vocabulary: 82
 - **💼 70205**: Buying a Used Car from Private Seller (business)
   - Sentences: 17, Vocabulary: 80
 - **💼 70204**: Reporting a Lost Credit Card (business)

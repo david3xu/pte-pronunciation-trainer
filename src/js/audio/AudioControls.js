@@ -70,12 +70,7 @@ class AudioControls {
                 index: this.currentIndex
             });
 
-            // Update display for current word - this maintains the term index
-            window.eventBus.emit('word:display', {
-                word: currentWord,
-                index: this.currentIndex
-            });
-
+            // Start TTS - display will be updated when speech actually begins
             await this.handleWordRepetition(currentWord);
             
             if (this.isPlaying) {

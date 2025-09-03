@@ -8,7 +8,14 @@ class CacheMigration {
         this.categoryMigrations = {
             'group-1': 'group-240s',
             'group-2': 'group-230s', 
-            'group-3': 'group-220s'
+            'group-3': 'group-220s',
+            'group-4': 'group-210s',
+            'group-5': 'group-200s',
+            'group-6': 'group-190s',
+            'group-7': 'group-180s',
+            'group-8': 'group-170s',
+            'group-9': 'group-160s',
+            'group-10': 'group-150s'
         };
     }
 
@@ -28,10 +35,16 @@ class CacheMigration {
     migrateToDecadeGroups() {
         const currentCategory = window.storage.getItem('category');
         
-        if (currentCategory && this.categoryMigrations[currentCategory]) {
-            const newCategory = this.categoryMigrations[currentCategory];
-            window.storage.setItem('category', newCategory);
-            console.log(`Migrated category from '${currentCategory}' to '${newCategory}'`);
+        if (currentCategory) {
+            if (this.categoryMigrations[currentCategory]) {
+                const newCategory = this.categoryMigrations[currentCategory];
+                window.storage.setItem('category', newCategory);
+                console.log(`Migrated category from '${currentCategory}' to '${newCategory}'`);
+            } else if (currentCategory.startsWith('group-') && !currentCategory.includes('s')) {
+                // Handle any other old group-X pattern by defaulting to all-categories
+                window.storage.setItem('category', 'all-categories');
+                console.log(`Unknown old category '${currentCategory}' reset to 'all-categories'`);
+            }
         }
     }
 

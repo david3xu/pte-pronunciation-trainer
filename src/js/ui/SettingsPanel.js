@@ -33,33 +33,30 @@ class SettingsPanel {
     }
 
     setupSettingsPersistence() {
-        // Load saved settings on initialization
-        this.loadSettings();
+                // Load saved settings or defaults
+        const savedSettings = {
+            category: window.storage.getItem('category') || 'all-categories',
+            difficulty: window.storage.getItem('difficulty') || 'all',
+            speechRate: window.storage.getItem('speechRate') || 1.0,
+            delay: window.storage.getItem('delay') || 2000,
+            repeatMode: window.storage.getItem('repeatMode') || 'individual',
+            preferredVoice: window.storage.getItem('preferredVoice') || null
+        };
 
-        // Save settings when they change
-        window.eventBus.on('tts:rateChanged', (data) => {
-            this.saveSetting('speechRate', data.rate);
-        });
+        // Migrate old category names if needed
+        savedSettings.category = window.vocabularyManager.migrateOldGroupName(savedSettings.category);
+        
+        // Apply settings to UI elements
+        this.applySettingToElement('categorySelect', savedSettings.category);
+        this.applySettingToElement('difficultySelect', savedSettings.difficulty);
+        this.applySettingToElement('speedSelect', savedSettings.speechRate);
+        this.applySettingToElement('delaySelect', savedSettings.delay);
+        this.applySettingToElement('repeatSelect', savedSettings.repeatMode);
+        this.applySettingToElement('voiceSelect', savedSettings.preferredVoice || 'Microsoft James - English (Australia)');
 
-        window.eventBus.on('audioControls:delayChanged', (data) => {
-            this.saveSetting('delay', data.delay);
-        });
-
-        window.eventBus.on('audioControls:repeatModeChanged', (data) => {
-            this.saveSetting('repeatMode', data.mode);
-        });
-
-        window.eventBus.on('voice:preferenceChanged', (data) => {
-            this.saveSetting('preferredVoice', data.voiceName);
-        });
-
-        window.eventBus.on('vocabulary:difficultyFiltered', (data) => {
-            this.saveSetting('difficulty', data.difficulty);
-        });
-
-        window.eventBus.on('vocabulary:categoryLoaded', (data) => {
-            this.saveSetting('category', data.category);
-        });
+        // Apply settings to modules
+        window.vocabularyManager.currentCategory = savedSettings.category;
+        window.vocabularyManager.currentDifficulty = savedSettings.difficulty;
     }
 
 

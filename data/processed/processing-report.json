@@ -1,8 +1,8 @@
 {
   "summary": {
     "totalDialogues": 91,
-    "totalVocabularyTerms": 6928,
-    "processedAt": "2025-09-02T04:35:35.460Z",
+    "totalVocabularyTerms": 6924,
+    "processedAt": "2025-09-03T02:29:13.590Z",
     "sourceFile": "merged-conversations.md",
     "processingErrors": 0,
     "processingWarnings": 18
@@ -16,8 +16,8 @@
     "immigration": 1
   },
   "difficultyDistribution": {
-    "hard": 4119,
-    "normal": 2529,
+    "hard": 4118,
+    "normal": 2526,
     "easy": 280
   },
   "dialogueList": [
@@ -67,7 +67,7 @@
       "id": "70242",
       "title": "New Council Employee Helps Community Centre",
       "category": "social",
-      "vocabularyCount": 65,
+      "vocabularyCount": 64,
       "sentenceCount": 14
     },
     {
@@ -88,14 +88,14 @@
       "id": "70239",
       "title": "Light-Filled Home Office Plans",
       "category": "social",
-      "vocabularyCount": 64,
+      "vocabularyCount": 63,
       "sentenceCount": 14
     },
     {
       "id": "70238",
       "title": "Ordering Oat Milk in a Small Town",
       "category": "social",
-      "vocabularyCount": 71,
+      "vocabularyCount": 69,
       "sentenceCount": 14
     },
     {

@@ -1,8 +1,8 @@
 {
   "summary": {
     "totalDialogues": 91,
-    "totalVocabularyTerms": 6896,
-    "processedAt": "2025-09-03T07:06:56.392Z",
+    "totalVocabularyTerms": 6864,
+    "processedAt": "2025-09-03T21:29:42.007Z",
     "sourceFile": "merged-conversations.md",
     "processingErrors": 0,
     "processingWarnings": 18
@@ -16,16 +16,16 @@
     "immigration": 1
   },
   "difficultyDistribution": {
-    "hard": 4141,
-    "normal": 2478,
-    "easy": 277
+    "hard": 4151,
+    "normal": 2438,
+    "easy": 275
   },
   "dialogueList": [
     {
       "id": "70248",
       "title": "New Council Employee Helps Community Centre 2",
       "category": "social",
-      "vocabularyCount": 62,
+      "vocabularyCount": 63,
       "sentenceCount": 14
     },
     {
@@ -60,7 +60,7 @@
       "id": "70243",
       "title": "Urgent Lawyer Appointment for Job Contract Review",
       "category": "social",
-      "vocabularyCount": 61,
+      "vocabularyCount": 60,
       "sentenceCount": 14
     },
     {
@@ -298,7 +298,7 @@
       "id": "70209",
       "title": "New Neighbour's Dog Barking",
       "category": "social",
-      "vocabularyCount": 63,
+      "vocabularyCount": 55,
       "sentenceCount": 14
     },
     {
@@ -312,14 +312,14 @@
       "id": "70207",
       "title": "Restaurant Reservation for Large Group",
       "category": "business",
-      "vocabularyCount": 84,
+      "vocabularyCount": 65,
       "sentenceCount": 17
     },
     {
       "id": "70206",
       "title": "Job Interview for Teaching Position",
       "category": "business",
-      "vocabularyCount": 87,
+      "vocabularyCount": 82,
       "sentenceCount": 16
     },
     {

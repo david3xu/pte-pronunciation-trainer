@@ -1,10 +1,29 @@
 {
   "buildCommand": "npm run vercel-build",
   "outputDirectory": ".",
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "headers": [
+    {
+      "source": "/data/processed/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=300, s-maxage=300"
+        }
+      ]
+    }
+  ],
   "routes": [
     {
       "src": "/data/processed/(.*)",
-      "dest": "/data/processed/$1"
+      "dest": "/data/processed/$1",
+      "headers": {
+        "Cache-Control": "public, max-age=300"
+      }
     },
     {
       "src": "/(.*)",

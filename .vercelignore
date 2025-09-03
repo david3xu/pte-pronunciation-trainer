@@ -1,0 +1,13 @@
+# Don't ignore processed data files - they should be deployed
+!data/processed/
+!data/generated/
+
+# Ignore development files
+node_modules/
+.env
+.env.local
+*.log
+
+# Ignore build artifacts that aren't needed
+dist/
+reports/

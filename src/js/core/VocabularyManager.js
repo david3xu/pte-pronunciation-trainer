@@ -10,18 +10,33 @@ class VocabularyManager {
         this.dataLoader = null;
         this.isInitialized = false;
 
-        // Category labels for conversation vocabulary (corrected based on raw.md)
+        // Dialogue-based category labels (groups of 10 dialogues from highest to lowest)
         this.categoryLabels = {
-            'all-categories': '🌟 All Categories',
-            'housing': '🏠 Housing',
-            'social-welfare': '🤝 Social Welfare',
-            'legal': '⚖️ Legal',
-            'immigration': '🛂 Immigration',
-            'business': '💼 Business',
-            'medical': '🏥 Medical',
-            'education': '🎓 Education',
-            'tourism': '✈️ Tourism',
-            'social': '👥 Social'
+            'all-categories': '🌟 All Categories (6928 words)',
+            'group-1': '📚 Group 1: 70248-70239 (Latest)',
+            'group-2': '📚 Group 2: 70238-70229',
+            'group-3': '📚 Group 3: 70228-70219',
+            'group-4': '📚 Group 4: 70218-70209',
+            'group-5': '📚 Group 5: 70208-70199',
+            'group-6': '📚 Group 6: 70198-70189',
+            'group-7': '📚 Group 7: 70188-70179',
+            'group-8': '� Group 8: 70178-70169',
+            'group-9': '📚 Group 9: 70168-70159',
+            'group-10': '� Group 10: 70158 (Earliest)'
+        };
+
+        // Dialogue range mapping for each group
+        this.dialogueGroups = {
+            'group-1': [70248, 70247, 70246, 70245, 70244, 70243, 70242, 70241, 70240, 70239],
+            'group-2': [70238, 70237, 70236, 70235, 70234, 70233, 70232, 70231, 70230, 70229],
+            'group-3': [70228, 70227, 70226, 70225, 70224, 70223, 70222, 70221, 70220, 70219],
+            'group-4': [70218, 70217, 70216, 70215, 70214, 70213, 70212, 70211, 70210, 70209],
+            'group-5': [70208, 70207, 70206, 70205, 70204, 70203, 70202, 70201, 70200, 70199],
+            'group-6': [70198, 70197, 70196, 70195, 70194, 70193, 70192, 70191, 70190, 70189],
+            'group-7': [70188, 70187, 70186, 70185, 70184, 70183, 70182, 70181, 70180, 70179],
+            'group-8': [70178, 70177, 70176, 70175, 70174, 70173, 70172, 70171, 70170, 70169],
+            'group-9': [70168, 70167, 70166, 70165, 70164, 70163, 70162, 70161, 70160, 70159],
+            'group-10': [70158]
         };
     }
 
@@ -34,14 +49,29 @@ class VocabularyManager {
             'all-categories': { all: 0, easy: 0, normal: 0, hard: 0 }
         };
 
-        // Count items by category and difficulty
+        // Count items by dialogue group and difficulty
         vocabularyData.forEach(item => {
-            const category = item.category || 'uncategorized';
-            if (!this.categoryCounts[category]) {
-                this.categoryCounts[category] = { all: 0, easy: 0, normal: 0, hard: 0 };
+            const conversationId = parseInt(item.conversationId);
+            
+            // Find which group this dialogue belongs to
+            let dialogueGroup = null;
+            for (const [groupKey, dialogueIds] of Object.entries(this.dialogueGroups)) {
+                if (dialogueIds.includes(conversationId)) {
+                    dialogueGroup = groupKey;
+                    break;
+                }
             }
-            this.categoryCounts[category].all++;
-            this.categoryCounts[category][item.difficulty || 'normal']++;
+            
+            // Count in the appropriate group
+            if (dialogueGroup) {
+                if (!this.categoryCounts[dialogueGroup]) {
+                    this.categoryCounts[dialogueGroup] = { all: 0, easy: 0, normal: 0, hard: 0 };
+                }
+                this.categoryCounts[dialogueGroup].all++;
+                this.categoryCounts[dialogueGroup][item.difficulty || 'normal']++;
+            }
+            
+            // Always count in all-categories
             this.categoryCounts['all-categories'].all++;
             this.categoryCounts['all-categories'][item.difficulty || 'normal']++;
         });
@@ -123,11 +153,23 @@ class VocabularyManager {
         // Clear existing options
         categorySelect.innerHTML = '';
 
-        // Add options based on available categories
+        // Add options based on available categories with word counts
         Object.entries(this.categoryLabels).forEach(([value, label]) => {
             const option = document.createElement('option');
             option.value = value;
-            option.textContent = label;
+            
+            // Add word count to label if available
+            const count = this.categoryCounts && this.categoryCounts[value] 
+                ? this.categoryCounts[value].all 
+                : 0;
+            
+            // Update label with count for non-all categories
+            if (value === 'all-categories') {
+                option.textContent = `🌟 All Categories (${count} words)`;
+            } else {
+                const baseLabel = label.replace(' words)', '').replace(/\(\d+ words\)/, '');
+                option.textContent = `${baseLabel} (${count} words)`;
+            }
             if (value === this.currentCategory) {
                 option.selected = true;
             }
@@ -151,11 +193,21 @@ class VocabularyManager {
         console.log('✅ Vocabulary data available:', data.vocabulary.length, 'terms');
         this.currentCategory = category;
 
-        // Filter vocabulary by category
+        // Filter vocabulary by dialogue group
         if (category === 'all-categories') {
             this.allWords = [...data.vocabulary];
         } else {
-            this.allWords = data.vocabulary.filter(item => item.category === category);
+            // Get dialogue IDs for this group
+            const dialogueIds = this.dialogueGroups[category];
+            if (dialogueIds) {
+                this.allWords = data.vocabulary.filter(item => {
+                    const conversationId = parseInt(item.conversationId);
+                    return dialogueIds.includes(conversationId);
+                });
+            } else {
+                console.warn(`Unknown dialogue group: ${category}`);
+                this.allWords = [];
+            }
         }
 
         console.log(`📊 Filtered ${this.allWords.length} words for category: ${category}`);

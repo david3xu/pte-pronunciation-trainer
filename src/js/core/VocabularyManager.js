@@ -11,7 +11,7 @@ class VocabularyManager {
         this.dataLoader = null;
         this.isInitialized = false;
 
-        // Dialogue-based category labels (groups of 10 dialogues from highest to lowest) - Updated Sept 2025
+        // Dialogue-based category labels (groups of 10 dialogues from highest to lowest) - Sept 16, 2025
         this.categoryLabels = {
             'all-categories': '🌟 All Categories (6928 words)',
             'group-1': '📚 Group 1: 70248-70239 (Latest)',

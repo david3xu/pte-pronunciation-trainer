@@ -1356,7 +1356,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈyeah ˈit's ˈbeen ˈages/",
-    "example": "_Yeah, it's been ages_ _since we last sat down_ | _to enjoy coffee and chat_. _Right, we haven't had a chance_ _to relax over coffee and talk_ _in so long_.",
+    "example": "_Yeah, it's been ages_ _since we last sat down_ | _to enjoy coffee and chat_. _Right, we haven't had a chance_ _to relax over coffee and talk in so long_.",
     "example_chinese": "对啊，咱们好久没坐下来| 慢慢喝咖啡聊聊天了。"
   },
   {
@@ -1366,7 +1366,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈsince ˈwe ˈlast ˈsat ˈdown/",
-    "example": "_Yeah, it's been ages_ _since we last sat down_ | _to enjoy coffee and chat_. _Right, we haven't had a chance_ _to relax over coffee and talk_ _in so long_.",
+    "example": "_Yeah, it's been ages_ _since we last sat down_ | _to enjoy coffee and chat_. _Right, we haven't had a chance_ _to relax over coffee and talk in so long_.",
     "example_chinese": "对啊，咱们好久没坐下来| 慢慢喝咖啡聊聊天了。"
   },
   {
@@ -1376,7 +1376,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈto ˈenjoy ˈcoffee ˈand ˈchat/",
-    "example": "_Yeah, it's been ages_ _since we last sat down_ | _to enjoy coffee and chat_. _Right, we haven't had a chance_ _to relax over coffee and talk_ _in so long_.",
+    "example": "_Yeah, it's been ages_ _since we last sat down_ | _to enjoy coffee and chat_. _Right, we haven't had a chance_ _to relax over coffee and talk in so long_.",
     "example_chinese": "对啊，咱们好久没坐下来| 慢慢喝咖啡聊聊天了。"
   },
   {
@@ -1386,27 +1386,17 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈright ˈwe ˈhaven't ˈhad ˈa ˈchance/",
-    "example": "_Yeah, it's been ages_ _since we last sat down_ | _to enjoy coffee and chat_. _Right, we haven't had a chance_ _to relax over coffee and talk_ _in so long_.",
+    "example": "_Yeah, it's been ages_ _since we last sat down_ | _to enjoy coffee and chat_. _Right, we haven't had a chance_ _to relax over coffee and talk in so long_.",
     "example_chinese": "对啊，咱们好久没坐下来| 慢慢喝咖啡聊聊天了。"
   },
   {
-    "term": "to relax over coffee and talk",
+    "term": "to relax over coffee and talk in so long",
     "conversation_id": "70246",
     "sentence_id": 2,
     "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈto ˈrelax ˈover ˈcoffee ˈand ˈtalk/",
-    "example": "_Yeah, it's been ages_ _since we last sat down_ | _to enjoy coffee and chat_. _Right, we haven't had a chance_ _to relax over coffee and talk_ _in so long_.",
-    "example_chinese": "对啊，咱们好久没坐下来| 慢慢喝咖啡聊聊天了。"
-  },
-  {
-    "term": "in so long",
-    "conversation_id": "70246",
-    "sentence_id": 2,
-    "difficulty": "normal",
-    "category": "social",
-    "phonetic": "UK /ˈin ˈso ˈlong/",
-    "example": "_Yeah, it's been ages_ _since we last sat down_ | _to enjoy coffee and chat_. _Right, we haven't had a chance_ _to relax over coffee and talk_ _in so long_.",
+    "phonetic": "UK /ˈto ˈrelax ˈover ˈcoffee ˈand ˈtalk ˈin ˈso ˈlong/",
+    "example": "_Yeah, it's been ages_ _since we last sat down_ | _to enjoy coffee and chat_. _Right, we haven't had a chance_ _to relax over coffee and talk in so long_.",
     "example_chinese": "对啊，咱们好久没坐下来| 慢慢喝咖啡聊聊天了。"
   },
   {
@@ -1626,27 +1616,17 @@
     "difficulty": "normal",
     "category": "social",
     "phonetic": "UK /ˈi ˈknow ˈthat/",
-    "example": "_I know that_. | _Using lay-by only costs_ _a few dollars_, | _and I'm not in a hurry_ _to take the sofa home_.",
+    "example": "_I know that_. | _Using lay-by only costs a few dollars_, | _and I'm not in a hurry_ _to take the sofa home_.",
     "example_chinese": "我知道。| 预留商品并且分期付款的话，| 只要几块钱。| 而且，我也不急着| 把沙发带回家。"
   },
   {
-    "term": "Using lay-by only costs",
+    "term": "Using lay-by only costs a few dollars",
     "conversation_id": "70246",
     "sentence_id": 8,
     "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈusing ˈlay-by ˈonly ˈcosts/",
-    "example": "_I know that_. | _Using lay-by only costs_ _a few dollars_, | _and I'm not in a hurry_ _to take the sofa home_.",
-    "example_chinese": "我知道。| 预留商品并且分期付款的话，| 只要几块钱。| 而且，我也不急着| 把沙发带回家。"
-  },
-  {
-    "term": "a few dollars",
-    "conversation_id": "70246",
-    "sentence_id": 8,
-    "difficulty": "normal",
-    "category": "social",
-    "phonetic": "UK /ˈa ˈfew ˈdollars/",
-    "example": "_I know that_. | _Using lay-by only costs_ _a few dollars_, | _and I'm not in a hurry_ _to take the sofa home_.",
+    "phonetic": "UK /ˈusing ˈlay-by ˈonly ˈcosts ˈa ˈfew ˈdollars/",
+    "example": "_I know that_. | _Using lay-by only costs a few dollars_, | _and I'm not in a hurry_ _to take the sofa home_.",
     "example_chinese": "我知道。| 预留商品并且分期付款的话，| 只要几块钱。| 而且，我也不急着| 把沙发带回家。"
   },
   {
@@ -1656,7 +1636,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈand ˈi'm ˈnot ˈin ˈa ˈhurry/",
-    "example": "_I know that_. | _Using lay-by only costs_ _a few dollars_, | _and I'm not in a hurry_ _to take the sofa home_.",
+    "example": "_I know that_. | _Using lay-by only costs a few dollars_, | _and I'm not in a hurry_ _to take the sofa home_.",
     "example_chinese": "我知道。| 预留商品并且分期付款的话，| 只要几块钱。| 而且，我也不急着| 把沙发带回家。"
   },
   {
@@ -1666,7 +1646,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈto ˈtake ˈthe ˈsofa ˈhome/",
-    "example": "_I know that_. | _Using lay-by only costs_ _a few dollars_, | _and I'm not in a hurry_ _to take the sofa home_.",
+    "example": "_I know that_. | _Using lay-by only costs a few dollars_, | _and I'm not in a hurry_ _to take the sofa home_.",
     "example_chinese": "我知道。| 预留商品并且分期付款的话，| 只要几块钱。| 而且，我也不急着| 把沙发带回家。"
   },
   {
@@ -1706,17 +1686,37 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈno ˈnot ˈbad ˈat ˈall/",
-    "example": "_No, not bad at all_. | _Compared with paying in one lump sum/_paying all at once_, | _small installment payments_ _are much simpler/easier_.",
+    "example": "_No, not bad at all_. | _Compared with paying all at once_, | _small installment payments_ _are much simpler_.",
     "example_chinese": "不，一点也不。| 相比一次性付款，| 小额分期付款要简单得多。"
   },
   {
-    "term": "Compared with paying in one lump sum/",
+    "term": "Compared with paying all at once",
     "conversation_id": "70246",
     "sentence_id": 10,
     "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈcompared ˈwith ˈpaying ˈin ˈone ˈlump ˈsum//",
-    "example": "_No, not bad at all_. | _Compared with paying in one lump sum/_paying all at once_, | _small installment payments_ _are much simpler/easier_.",
+    "phonetic": "UK /ˈcompared ˈwith ˈpaying ˈall ˈat ˈonce/",
+    "example": "_No, not bad at all_. | _Compared with paying all at once_, | _small installment payments_ _are much simpler_.",
+    "example_chinese": "不，一点也不。| 相比一次性付款，| 小额分期付款要简单得多。"
+  },
+  {
+    "term": "small installment payments",
+    "conversation_id": "70246",
+    "sentence_id": 10,
+    "difficulty": "normal",
+    "category": "social",
+    "phonetic": "UK /ˈsmall ˈinstallment ˈpayments/",
+    "example": "_No, not bad at all_. | _Compared with paying all at once_, | _small installment payments_ _are much simpler_.",
+    "example_chinese": "不，一点也不。| 相比一次性付款，| 小额分期付款要简单得多。"
+  },
+  {
+    "term": "are much simpler",
+    "conversation_id": "70246",
+    "sentence_id": 10,
+    "difficulty": "normal",
+    "category": "social",
+    "phonetic": "UK /ˈare ˈmuch ˈsimpler/",
+    "example": "_No, not bad at all_. | _Compared with paying all at once_, | _small installment payments_ _are much simpler_.",
     "example_chinese": "不，一点也不。| 相比一次性付款，| 小额分期付款要简单得多。"
   },
   {
@@ -1776,7 +1776,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈi ˈagree ˈi'll ˈcarefully ˈcompare ˈthem ˈtonight/",
-    "example": "_I agree. I'll carefully compare them tonight_ | _and decide at the store tomorrow_. | _I bet/think that sofa_ _would look fantastic_ _in the living room_.",
+    "example": "_I agree. I'll carefully compare them tonight_ | _and decide at the store tomorrow_. | _I think that sofa_ _would look fantastic_ _in the living room_.",
     "example_chinese": "我也这么觉得。| 我今晚好好比对一下，| 再明天去店里决定。| 我觉得这沙发放客厅| 肯定很棒。"
   },
   {
@@ -1786,17 +1786,17 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈand ˈdecide ˈat ˈthe ˈstore ˈtomorrow/",
-    "example": "_I agree. I'll carefully compare them tonight_ | _and decide at the store tomorrow_. | _I bet/think that sofa_ _would look fantastic_ _in the living room_.",
+    "example": "_I agree. I'll carefully compare them tonight_ | _and decide at the store tomorrow_. | _I think that sofa_ _would look fantastic_ _in the living room_.",
     "example_chinese": "我也这么觉得。| 我今晚好好比对一下，| 再明天去店里决定。| 我觉得这沙发放客厅| 肯定很棒。"
   },
   {
-    "term": "I bet/think that sofa",
+    "term": "I think that sofa",
     "conversation_id": "70246",
     "sentence_id": 12,
     "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈi ˈbet/think ˈthat ˈsofa/",
-    "example": "_I agree. I'll carefully compare them tonight_ | _and decide at the store tomorrow_. | _I bet/think that sofa_ _would look fantastic_ _in the living room_.",
+    "phonetic": "UK /ˈi ˈthink ˈthat ˈsofa/",
+    "example": "_I agree. I'll carefully compare them tonight_ | _and decide at the store tomorrow_. | _I think that sofa_ _would look fantastic_ _in the living room_.",
     "example_chinese": "我也这么觉得。| 我今晚好好比对一下，| 再明天去店里决定。| 我觉得这沙发放客厅| 肯定很棒。"
   },
   {
@@ -1806,7 +1806,7 @@
     "difficulty": "normal",
     "category": "social",
     "phonetic": "UK /ˈwould ˈlook ˈfantastic/",
-    "example": "_I agree. I'll carefully compare them tonight_ | _and decide at the store tomorrow_. | _I bet/think that sofa_ _would look fantastic_ _in the living room_.",
+    "example": "_I agree. I'll carefully compare them tonight_ | _and decide at the store tomorrow_. | _I think that sofa_ _would look fantastic_ _in the living room_.",
     "example_chinese": "我也这么觉得。| 我今晚好好比对一下，| 再明天去店里决定。| 我觉得这沙发放客厅| 肯定很棒。"
   },
   {
@@ -1816,7 +1816,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈin ˈthe ˈliving ˈroom/",
-    "example": "_I agree. I'll carefully compare them tonight_ | _and decide at the store tomorrow_. | _I bet/think that sofa_ _would look fantastic_ _in the living room_.",
+    "example": "_I agree. I'll carefully compare them tonight_ | _and decide at the store tomorrow_. | _I think that sofa_ _would look fantastic_ _in the living room_.",
     "example_chinese": "我也这么觉得。| 我今晚好好比对一下，| 再明天去店里决定。| 我觉得这沙发放客厅| 肯定很棒。"
   },
   {
@@ -2756,7 +2756,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈoh ˈif ˈthat ˈhad ˈbeen ˈthe ˈcase/",
-    "example": "_Oh, if that had been the case_, _it would have been fine_. | _It was worse, the company_ _laid off several people_ | _but didn't hire new people_ _to replace them_.",
+    "example": "_Oh, if that had been the case_, _it would have been fine_. | _It was worse_, _the company laid off several people_ | _but didn't hire new people_ _to replace them_.",
     "example_chinese": "噢，如果那样还好。情况更糟糕，| 公司开除了几个人，但没有招新的人来替代他们。"
   },
   {
@@ -2766,27 +2766,27 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈit ˈwould ˈhave ˈbeen ˈfine/",
-    "example": "_Oh, if that had been the case_, _it would have been fine_. | _It was worse, the company_ _laid off several people_ | _but didn't hire new people_ _to replace them_.",
+    "example": "_Oh, if that had been the case_, _it would have been fine_. | _It was worse_, _the company laid off several people_ | _but didn't hire new people_ _to replace them_.",
     "example_chinese": "噢，如果那样还好。情况更糟糕，| 公司开除了几个人，但没有招新的人来替代他们。"
   },
   {
-    "term": "It was worse the company",
+    "term": "It was worse",
+    "conversation_id": "70244",
+    "sentence_id": 8,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈit ˈwas ˈworse/",
+    "example": "_Oh, if that had been the case_, _it would have been fine_. | _It was worse_, _the company laid off several people_ | _but didn't hire new people_ _to replace them_.",
+    "example_chinese": "噢，如果那样还好。情况更糟糕，| 公司开除了几个人，但没有招新的人来替代他们。"
+  },
+  {
+    "term": "the company laid off several people",
     "conversation_id": "70244",
     "sentence_id": 8,
     "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈit ˈwas ˈworse ˈthe ˈcompany/",
-    "example": "_Oh, if that had been the case_, _it would have been fine_. | _It was worse, the company_ _laid off several people_ | _but didn't hire new people_ _to replace them_.",
-    "example_chinese": "噢，如果那样还好。情况更糟糕，| 公司开除了几个人，但没有招新的人来替代他们。"
-  },
-  {
-    "term": "laid off several people",
-    "conversation_id": "70244",
-    "sentence_id": 8,
-    "difficulty": "hard",
-    "category": "business",
-    "phonetic": "UK /ˈlaid ˈoff ˈseveral ˈpeople/",
-    "example": "_Oh, if that had been the case_, _it would have been fine_. | _It was worse, the company_ _laid off several people_ | _but didn't hire new people_ _to replace them_.",
+    "phonetic": "UK /ˈthe ˈcompany ˈlaid ˈoff ˈseveral ˈpeople/",
+    "example": "_Oh, if that had been the case_, _it would have been fine_. | _It was worse_, _the company laid off several people_ | _but didn't hire new people_ _to replace them_.",
     "example_chinese": "噢，如果那样还好。情况更糟糕，| 公司开除了几个人，但没有招新的人来替代他们。"
   },
   {
@@ -2796,7 +2796,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈbut ˈdidn't ˈhire ˈnew ˈpeople/",
-    "example": "_Oh, if that had been the case_, _it would have been fine_. | _It was worse, the company_ _laid off several people_ | _but didn't hire new people_ _to replace them_.",
+    "example": "_Oh, if that had been the case_, _it would have been fine_. | _It was worse_, _the company laid off several people_ | _but didn't hire new people_ _to replace them_.",
     "example_chinese": "噢，如果那样还好。情况更糟糕，| 公司开除了几个人，但没有招新的人来替代他们。"
   },
   {
@@ -2806,7 +2806,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈto ˈreplace ˈthem/",
-    "example": "_Oh, if that had been the case_, _it would have been fine_. | _It was worse, the company_ _laid off several people_ | _but didn't hire new people_ _to replace them_.",
+    "example": "_Oh, if that had been the case_, _it would have been fine_. | _It was worse_, _the company laid off several people_ | _but didn't hire new people_ _to replace them_.",
     "example_chinese": "噢，如果那样还好。情况更糟糕，| 公司开除了几个人，但没有招新的人来替代他们。"
   },
   {
@@ -4206,27 +4206,17 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈthat's ˈgood ˈto ˈknow/",
-    "example": "_That's good to know_, _once I am_ _all familiar with everything_ _the center does_, | _I'm sure I'll be able to_ _come up with some ideas_.",
+    "example": "_That's good to know_, _once I am all familiar with everything_ _the center does_, | _I'm sure I'll be able to_ _come up with some ideas_.",
     "example_chinese": "真好。等我把中心的各项工作都熟悉了，| 我肯定能想出一些点子。"
   },
   {
-    "term": "once I am",
-    "conversation_id": "70242",
-    "sentence_id": 13,
-    "difficulty": "normal",
-    "category": "social",
-    "phonetic": "UK /ˈonce ˈi ˈam/",
-    "example": "_That's good to know_, _once I am_ _all familiar with everything_ _the center does_, | _I'm sure I'll be able to_ _come up with some ideas_.",
-    "example_chinese": "真好。等我把中心的各项工作都熟悉了，| 我肯定能想出一些点子。"
-  },
-  {
-    "term": "all familiar with everything",
+    "term": "once I am all familiar with everything",
     "conversation_id": "70242",
     "sentence_id": 13,
     "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈall ˈfamiliar ˈwith ˈeverything/",
-    "example": "_That's good to know_, _once I am_ _all familiar with everything_ _the center does_, | _I'm sure I'll be able to_ _come up with some ideas_.",
+    "phonetic": "UK /ˈonce ˈi ˈam ˈall ˈfamiliar ˈwith ˈeverything/",
+    "example": "_That's good to know_, _once I am all familiar with everything_ _the center does_, | _I'm sure I'll be able to_ _come up with some ideas_.",
     "example_chinese": "真好。等我把中心的各项工作都熟悉了，| 我肯定能想出一些点子。"
   },
   {
@@ -4236,7 +4226,7 @@
     "difficulty": "normal",
     "category": "social",
     "phonetic": "UK /ˈthe ˈcenter ˈdoes/",
-    "example": "_That's good to know_, _once I am_ _all familiar with everything_ _the center does_, | _I'm sure I'll be able to_ _come up with some ideas_.",
+    "example": "_That's good to know_, _once I am all familiar with everything_ _the center does_, | _I'm sure I'll be able to_ _come up with some ideas_.",
     "example_chinese": "真好。等我把中心的各项工作都熟悉了，| 我肯定能想出一些点子。"
   },
   {
@@ -4246,7 +4236,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈi'm ˈsure ˈi'll ˈbe ˈable ˈto/",
-    "example": "_That's good to know_, _once I am_ _all familiar with everything_ _the center does_, | _I'm sure I'll be able to_ _come up with some ideas_.",
+    "example": "_That's good to know_, _once I am all familiar with everything_ _the center does_, | _I'm sure I'll be able to_ _come up with some ideas_.",
     "example_chinese": "真好。等我把中心的各项工作都熟悉了，| 我肯定能想出一些点子。"
   },
   {
@@ -4256,7 +4246,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈcome ˈup ˈwith ˈsome ˈideas/",
-    "example": "_That's good to know_, _once I am_ _all familiar with everything_ _the center does_, | _I'm sure I'll be able to_ _come up with some ideas_.",
+    "example": "_That's good to know_, _once I am all familiar with everything_ _the center does_, | _I'm sure I'll be able to_ _come up with some ideas_.",
     "example_chinese": "真好。等我把中心的各项工作都熟悉了，| 我肯定能想出一些点子。"
   },
   {
@@ -5876,7 +5866,17 @@
     "difficulty": "normal",
     "category": "social",
     "phonetic": "UK /ˈthose ˈmassive ˈwindows/",
-    "example": "_Those massive windows_ must give amazing natural light! | _Perfect for an office_. _Have you_ _picked out a desk_ yet?",
+    "example": "_Those massive windows_ _must give amazing natural light!_ | _Perfect for an office_. _Have you picked out a desk yet_?",
+    "example_chinese": "_大窗户_，_采光肯定_ _超棒_！_做办公室绝了_。_桌子选好了吗_？"
+  },
+  {
+    "term": "must give amazing natural light",
+    "conversation_id": "70239",
+    "sentence_id": 9,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈmust ˈgive ˈamazing ˈnatural ˈlight/",
+    "example": "_Those massive windows_ _must give amazing natural light!_ | _Perfect for an office_. _Have you picked out a desk yet_?",
     "example_chinese": "_大窗户_，_采光肯定_ _超棒_！_做办公室绝了_。_桌子选好了吗_？"
   },
   {
@@ -5886,27 +5886,17 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈperfect ˈfor ˈan ˈoffice/",
-    "example": "_Those massive windows_ must give amazing natural light! | _Perfect for an office_. _Have you_ _picked out a desk_ yet?",
+    "example": "_Those massive windows_ _must give amazing natural light!_ | _Perfect for an office_. _Have you picked out a desk yet_?",
     "example_chinese": "_大窗户_，_采光肯定_ _超棒_！_做办公室绝了_。_桌子选好了吗_？"
   },
   {
-    "term": "Have you",
-    "conversation_id": "70239",
-    "sentence_id": 9,
-    "difficulty": "normal",
-    "category": "social",
-    "phonetic": "UK /ˈhave ˈyou/",
-    "example": "_Those massive windows_ must give amazing natural light! | _Perfect for an office_. _Have you_ _picked out a desk_ yet?",
-    "example_chinese": "_大窗户_，_采光肯定_ _超棒_！_做办公室绝了_。_桌子选好了吗_？"
-  },
-  {
-    "term": "picked out a desk",
+    "term": "Have you picked out a desk yet",
     "conversation_id": "70239",
     "sentence_id": 9,
     "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈpicked ˈout ˈa ˈdesk/",
-    "example": "_Those massive windows_ must give amazing natural light! | _Perfect for an office_. _Have you_ _picked out a desk_ yet?",
+    "phonetic": "UK /ˈhave ˈyou ˈpicked ˈout ˈa ˈdesk ˈyet/",
+    "example": "_Those massive windows_ _must give amazing natural light!_ | _Perfect for an office_. _Have you picked out a desk yet_?",
     "example_chinese": "_大窗户_，_采光肯定_ _超棒_！_做办公室绝了_。_桌子选好了吗_？"
   },
   {
@@ -5946,27 +5936,17 @@
     "difficulty": "normal",
     "category": "social",
     "phonetic": "UK /ˈvery ˈgood ˈcall/",
-    "example": "_Very good call_! | _Making sure you are happy with it_ _for years is important_! | _You don't want to_ _redecorate again too soon_.",
+    "example": "_Very good call_! | _Making sure you are happy with it for years is important_! | _You don't want to_ _redecorate again too soon_.",
     "example_chinese": "_明智的选择_！| _确保这个装修_ _能让你喜欢_ _很多年_ _是很重要的_，| _谁都不想_ _太快重新装修一遍_。"
   },
   {
-    "term": "Making sure you are happy with it",
+    "term": "Making sure you are happy with it for years is important",
     "conversation_id": "70239",
     "sentence_id": 11,
     "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈmaking ˈsure ˈyou ˈare ˈhappy ˈwith ˈit/",
-    "example": "_Very good call_! | _Making sure you are happy with it_ _for years is important_! | _You don't want to_ _redecorate again too soon_.",
-    "example_chinese": "_明智的选择_！| _确保这个装修_ _能让你喜欢_ _很多年_ _是很重要的_，| _谁都不想_ _太快重新装修一遍_。"
-  },
-  {
-    "term": "for years is important",
-    "conversation_id": "70239",
-    "sentence_id": 11,
-    "difficulty": "hard",
-    "category": "social",
-    "phonetic": "UK /ˈfor ˈyears ˈis ˈimportant/",
-    "example": "_Very good call_! | _Making sure you are happy with it_ _for years is important_! | _You don't want to_ _redecorate again too soon_.",
+    "phonetic": "UK /ˈmaking ˈsure ˈyou ˈare ˈhappy ˈwith ˈit ˈfor ˈyears ˈis ˈimportant/",
+    "example": "_Very good call_! | _Making sure you are happy with it for years is important_! | _You don't want to_ _redecorate again too soon_.",
     "example_chinese": "_明智的选择_！| _确保这个装修_ _能让你喜欢_ _很多年_ _是很重要的_，| _谁都不想_ _太快重新装修一遍_。"
   },
   {
@@ -5976,7 +5956,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈyou ˈdon't ˈwant ˈto/",
-    "example": "_Very good call_! | _Making sure you are happy with it_ _for years is important_! | _You don't want to_ _redecorate again too soon_.",
+    "example": "_Very good call_! | _Making sure you are happy with it for years is important_! | _You don't want to_ _redecorate again too soon_.",
     "example_chinese": "_明智的选择_！| _确保这个装修_ _能让你喜欢_ _很多年_ _是很重要的_，| _谁都不想_ _太快重新装修一遍_。"
   },
   {
@@ -5986,7 +5966,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈredecorate ˈagain ˈtoo ˈsoon/",
-    "example": "_Very good call_! | _Making sure you are happy with it_ _for years is important_! | _You don't want to_ _redecorate again too soon_.",
+    "example": "_Very good call_! | _Making sure you are happy with it for years is important_! | _You don't want to_ _redecorate again too soon_.",
     "example_chinese": "_明智的选择_！| _确保这个装修_ _能让你喜欢_ _很多年_ _是很重要的_，| _谁都不想_ _太快重新装修一遍_。"
   },
   {
@@ -6196,7 +6176,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈhello ˈyes ˈi've ˈnever ˈlived ˈin/",
-    "example": "_Hello, yes, I've never lived in_ _such a small place_, | _and it's quite a distance from the city_. | _But the neighbours have been_ _really welcoming_.",
+    "example": "_Hello, yes, I've never lived in_ _such a small place_, | _and it's quite a distance from the city_. | _But the neighbours have been really welcoming_.",
     "example_chinese": "_你好_！_是的_，_我从来没住过_ _这么小的地方_，| _而且这儿离城里_ _又很远_。| _不过邻居们_ _都特别热情_。"
   },
   {
@@ -6206,7 +6186,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈsuch ˈa ˈsmall ˈplace/",
-    "example": "_Hello, yes, I've never lived in_ _such a small place_, | _and it's quite a distance from the city_. | _But the neighbours have been_ _really welcoming_.",
+    "example": "_Hello, yes, I've never lived in_ _such a small place_, | _and it's quite a distance from the city_. | _But the neighbours have been really welcoming_.",
     "example_chinese": "_你好_！_是的_，_我从来没住过_ _这么小的地方_，| _而且这儿离城里_ _又很远_。| _不过邻居们_ _都特别热情_。"
   },
   {
@@ -6216,27 +6196,17 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈand ˈit's ˈquite ˈa ˈdistance ˈfrom ˈthe ˈcity/",
-    "example": "_Hello, yes, I've never lived in_ _such a small place_, | _and it's quite a distance from the city_. | _But the neighbours have been_ _really welcoming_.",
+    "example": "_Hello, yes, I've never lived in_ _such a small place_, | _and it's quite a distance from the city_. | _But the neighbours have been really welcoming_.",
     "example_chinese": "_你好_！_是的_，_我从来没住过_ _这么小的地方_，| _而且这儿离城里_ _又很远_。| _不过邻居们_ _都特别热情_。"
   },
   {
-    "term": "But the neighbours have been",
+    "term": "But the neighbours have been really welcoming",
     "conversation_id": "70238",
     "sentence_id": 2,
     "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈbut ˈthe ˈneighbours ˈhave ˈbeen/",
-    "example": "_Hello, yes, I've never lived in_ _such a small place_, | _and it's quite a distance from the city_. | _But the neighbours have been_ _really welcoming_.",
-    "example_chinese": "_你好_！_是的_，_我从来没住过_ _这么小的地方_，| _而且这儿离城里_ _又很远_。| _不过邻居们_ _都特别热情_。"
-  },
-  {
-    "term": "really welcoming",
-    "conversation_id": "70238",
-    "sentence_id": 2,
-    "difficulty": "normal",
-    "category": "social",
-    "phonetic": "UK /ˈreally ˈwelcoming/",
-    "example": "_Hello, yes, I've never lived in_ _such a small place_, | _and it's quite a distance from the city_. | _But the neighbours have been_ _really welcoming_.",
+    "phonetic": "UK /ˈbut ˈthe ˈneighbours ˈhave ˈbeen ˈreally ˈwelcoming/",
+    "example": "_Hello, yes, I've never lived in_ _such a small place_, | _and it's quite a distance from the city_. | _But the neighbours have been really welcoming_.",
     "example_chinese": "_你好_！_是的_，_我从来没住过_ _这么小的地方_，| _而且这儿离城里_ _又很远_。| _不过邻居们_ _都特别热情_。"
   },
   {
@@ -6246,7 +6216,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈit ˈis ˈit ˈtakes ˈa ˈwhile/",
-    "example": "_It is. It takes a while_ _to get to the city_ _and time to get used_ _to everything here_. | _I hope the sense of community_ _can make up for it_.",
+    "example": "_It is. It takes a while_ _to get to the city_ _and time to get used to everything here_. | _I hope the sense of community_ _can make up for it_.",
     "example_chinese": "_确实_，_去城里要花点时间_，_这里的生活节奏_ _也要慢慢适应_。| _我希望这里的_ _社区氛围_ _能弥补这些不便_。"
   },
   {
@@ -6256,27 +6226,17 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈto ˈget ˈto ˈthe ˈcity/",
-    "example": "_It is. It takes a while_ _to get to the city_ _and time to get used_ _to everything here_. | _I hope the sense of community_ _can make up for it_.",
+    "example": "_It is. It takes a while_ _to get to the city_ _and time to get used to everything here_. | _I hope the sense of community_ _can make up for it_.",
     "example_chinese": "_确实_，_去城里要花点时间_，_这里的生活节奏_ _也要慢慢适应_。| _我希望这里的_ _社区氛围_ _能弥补这些不便_。"
   },
   {
-    "term": "and time to get used",
+    "term": "and time to get used to everything here",
     "conversation_id": "70238",
     "sentence_id": 3,
     "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈand ˈtime ˈto ˈget ˈused/",
-    "example": "_It is. It takes a while_ _to get to the city_ _and time to get used_ _to everything here_. | _I hope the sense of community_ _can make up for it_.",
-    "example_chinese": "_确实_，_去城里要花点时间_，_这里的生活节奏_ _也要慢慢适应_。| _我希望这里的_ _社区氛围_ _能弥补这些不便_。"
-  },
-  {
-    "term": "to everything here",
-    "conversation_id": "70238",
-    "sentence_id": 3,
-    "difficulty": "normal",
-    "category": "social",
-    "phonetic": "UK /ˈto ˈeverything ˈhere/",
-    "example": "_It is. It takes a while_ _to get to the city_ _and time to get used_ _to everything here_. | _I hope the sense of community_ _can make up for it_.",
+    "phonetic": "UK /ˈand ˈtime ˈto ˈget ˈused ˈto ˈeverything ˈhere/",
+    "example": "_It is. It takes a while_ _to get to the city_ _and time to get used to everything here_. | _I hope the sense of community_ _can make up for it_.",
     "example_chinese": "_确实_，_去城里要花点时间_，_这里的生活节奏_ _也要慢慢适应_。| _我希望这里的_ _社区氛围_ _能弥补这些不便_。"
   },
   {
@@ -6286,7 +6246,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈi ˈhope ˈthe ˈsense ˈof ˈcommunity/",
-    "example": "_It is. It takes a while_ _to get to the city_ _and time to get used_ _to everything here_. | _I hope the sense of community_ _can make up for it_.",
+    "example": "_It is. It takes a while_ _to get to the city_ _and time to get used to everything here_. | _I hope the sense of community_ _can make up for it_.",
     "example_chinese": "_确实_，_去城里要花点时间_，_这里的生活节奏_ _也要慢慢适应_。| _我希望这里的_ _社区氛围_ _能弥补这些不便_。"
   },
   {
@@ -6296,7 +6256,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈcan ˈmake ˈup ˈfor ˈit/",
-    "example": "_It is. It takes a while_ _to get to the city_ _and time to get used_ _to everything here_. | _I hope the sense of community_ _can make up for it_.",
+    "example": "_It is. It takes a while_ _to get to the city_ _and time to get used to everything here_. | _I hope the sense of community_ _can make up for it_.",
     "example_chinese": "_确实_，_去城里要花点时间_，_这里的生活节奏_ _也要慢慢适应_。| _我希望这里的_ _社区氛围_ _能弥补这些不便_。"
   },
   {

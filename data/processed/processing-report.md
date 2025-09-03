@@ -1,9 +1,9 @@
 # CCL Dialogue Data Processing Report
 
-**Generated:** 2025-09-02T04:35:35.460Z
+**Generated:** 2025-09-03T02:29:13.590Z
 **Source File:** merged-conversations.md
 **Total Dialogues:** 91
-**Total Vocabulary Terms:** 6928
+**Total Vocabulary Terms:** 6924
 **Processing Errors:** 0
 **Processing Warnings:** 18
 
@@ -18,8 +18,8 @@
 
 ## Difficulty Distribution
 
-- **🔴 hard**: 4119 terms
-- **🟡 normal**: 2529 terms
+- **🔴 hard**: 4118 terms
+- **🟡 normal**: 2526 terms
 - **🟢 easy**: 280 terms
 
 ## Dialogue List
@@ -37,15 +37,15 @@
 - **👥 70243**: Urgent Lawyer Appointment for Job Contract Review (social)
   - Sentences: 14, Vocabulary: 61
 - **👥 70242**: New Council Employee Helps Community Centre (social)
-  - Sentences: 14, Vocabulary: 65
+  - Sentences: 14, Vocabulary: 64
 - **👥 70241**: Suite Bathroom Design Clarification (social)
   - Sentences: 14, Vocabulary: 64
 - **👥 70240**: A New Creamy Leather Lounge Chair (social)
   - Sentences: 14, Vocabulary: 57
 - **👥 70239**: Light-Filled Home Office Plans (social)
-  - Sentences: 14, Vocabulary: 64
+  - Sentences: 14, Vocabulary: 63
 - **👥 70238**: Ordering Oat Milk in a Small Town (social)
-  - Sentences: 14, Vocabulary: 71
+  - Sentences: 14, Vocabulary: 69
 - **👥 70237**: New Immigrant's Banking Adjustment (social)
   - Sentences: 14, Vocabulary: 81
 - **👥 70236**: Shed to Park: Planting Volunteers (social)

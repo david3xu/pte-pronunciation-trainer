@@ -32,6 +32,16 @@ class UIController {
             this.displayWord(data.word, data.index);
         });
 
+        // Listen for TTS speaking started to sync display with actual speech
+        window.eventBus.on('tts:speakingStarted', (data) => {
+            // Get current word and index from audio controls for accurate sync
+            const currentIndex = window.audioControls.getCurrentIndex();
+            const currentWord = window.vocabularyManager.getCurrentWord(currentIndex);
+            if (currentWord) {
+                this.displayWord(currentWord, currentIndex);
+            }
+        });
+
         // Listen for progress events
         window.eventBus.on('progress:updated', (data) => {
             // Progress display is handled by ProgressTracker

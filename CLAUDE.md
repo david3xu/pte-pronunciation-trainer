@@ -72,10 +72,16 @@ scripts/            # Build tools (3 files)
 ## Key Features
 
 ### Conversation-Based Vocabulary
-- **Practical Terms**: 937 English terms extracted from `_xxx_` highlighted phrases (English part only) in real CCL conversations
+- **Comprehensive Terms**: 6,967 English terms extracted from `_xxx_` highlighted phrases in 91 real CCL conversations
+- **Unfamiliar Words Focus**: 944 curated challenging terms for advanced practice
 - **Contextual Examples**: All vocabulary includes bilingual example sentences from source dialogues  
 - **Real-world Usage**: Terms selected from actual NAATI CCL test scenarios
-- **Category Organization**: Organized across 6 domains (social-welfare, education, legal-government, business-finance, medical-healthcare, travel-immigration)
+- **Category Organization**: Organized across 9 domains (business, social, legal, medical, education, immigration)
+
+### Three Learning Modes
+- **📚 Vocabulary Focus**: Complete vocabulary from all dialogues (6,967 terms)
+- **💬 Dialogue Practice**: Full conversation sentences with contextual flow
+- **🔥 Unfamiliar Words**: Curated challenging vocabulary for advanced study (944 terms)
 
 ### Text-to-Speech
 - Australian English (en-AU) voices prioritized for NAATI context

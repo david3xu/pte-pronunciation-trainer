@@ -3,14 +3,21 @@
 A comprehensive web-based pronunciation training application for NAATI CCL (Credentialed Community Language) exam preparation, featuring conversation-based vocabulary with real-world context.
 
 - **💬 Conversation-Based (6,967 terms)** - Comprehensive vocabulary from 91 real CCL exam dialogues with contextual examples and dialogue structure
+- **🔥 Unfamiliar Words (944 terms)** - Curated challenging vocabulary for advanced learners
 
 ## Features ✅ Fully Implemented
 
 ### 🎯 Complete Dialogue-Based Vocabulary System
 - **💬 Comprehensive CCL Terms (6,967)** - Extensive vocabulary extracted from 91 complete NAATI CCL conversations  
-- **📝 Full Contextual Learning** - Every term includes original sentence context, dialogue flow, and conversation structure
+- **� Unfamiliar Words Focus (944 terms)** - Curated challenging vocabulary from actual CCL conversations for targeted practice
+- **�📝 Full Contextual Learning** - Every term includes original sentence context, dialogue flow, and conversation structure
 - **🏷️ Smart Categorization** - Organized across 9 domains with conversation-aware classification
 - **📊 Enhanced Metadata** - Difficulty levels, phonetic transcriptions, and dialogue relationships
+
+### 🎓 Three Learning Modes
+- **📚 Vocabulary Focus** - Complete vocabulary from all 91 dialogues (6,967 terms)
+- **💬 Dialogue Practice** - Full conversation sentences with contextual flow
+- **🔥 Unfamiliar Words** - Curated challenging terms for advanced study (944 terms)
 
 ### 🔊 Advanced Pronunciation Training
 - **Australian English (en-AU) TTS** - Optimized for CCL exam context  
@@ -69,20 +76,51 @@ When you have new CCL conversation data to add:
 # Edit: data-processing/extractors/merged-conversations.md
 # Use _term_ syntax to highlight vocabulary (e.g., _insurance claim_)
 
-# 2. Regenerate complete dataset and vocabulary 
+# 2. Update unfamiliar words for challenging vocabulary
+# Edit: data-processing/extractors/unfamilar-words.md
+# Add dialogue numbers and challenging terms (line-separated)
+
+# 3. Regenerate complete dataset and vocabulary 
 npm run process-data                   # Generate structured dataset (primary)
 npm run extract-vocab                  # Generate vocabulary for backward compatibility
+node scripts/process-unfamiliar-words.js  # Generate unfamiliar words dataset
 
-# 3. Test in development server
+# 4. Test in development server
 npm run dev
 
-# 4. Deploy to production - commit and push all changes
-git add data-processing/extractors/merged-conversations.md data/processed/
-git commit -m "Add new CCL vocabulary terms from conversations"  
+# 5. Deploy to production - commit and push all changes
+git add data-processing/extractors/ data/processed/
+git commit -m "Add new CCL vocabulary terms and unfamiliar words"  
 git push origin main
 
 # Note: Both source data and processed files are committed for reliable deployment
 ```
+
+### 🔥 Unfamiliar Words Format
+
+Add challenging vocabulary to `data-processing/extractors/unfamilar-words.md`:
+
+```
+70248
+community center 
+diverse 
+older people
+new migrants
+variety
+come up 
+
+70247
+drop by 
+swing by 
+delayed
+nowadays
+```
+
+**Format Rules:**
+- Dialogue number on its own line (e.g., `70248`)
+- One challenging term per line
+- Terms will be matched with complete dataset for context
+- Unmatched terms will be logged as warnings
 
 ### 🔍 Highlighting Syntax
 
@@ -127,6 +165,7 @@ npm run validate              # Validate all data integrity
 ```bash
 npm run process-data                     # Generate complete dataset (primary data source)
 npm run extract-vocab                    # Generate simple vocabulary (legacy support)
+node scripts/process-unfamiliar-words.js # Generate unfamiliar words dataset (944 terms)
 ```
 
 ### Production & Build
@@ -150,6 +189,26 @@ npm run clean                # Clean generated files
 *All terms extracted from 91 complete CCL conversation scenarios with full dialogue context.*
 
 ## Usage
+
+### Learning Modes
+
+**📚 Vocabulary Focus**
+- Complete vocabulary from all 91 dialogues (6,967 terms)
+- Individual word and phrase pronunciation practice
+- Organized by dialogue groups (Groups 1-10, latest to earliest)
+- Full difficulty filtering (Easy/Normal/Hard)
+
+**💬 Dialogue Practice** 
+- Full conversation sentences with contextual flow
+- Focus on conversational patterns and dialogue structure
+- Practice natural speech rhythm and intonation
+- Coming soon: Enhanced dialogue features
+
+**🔥 Unfamiliar Words** 
+- Curated challenging vocabulary (944 terms)
+- Hand-selected difficult terms from actual CCL conversations  
+- Perfect for advanced learners and exam preparation
+- Organized by dialogue groups with full context
 
 ### Difficulty-Based Learning
 

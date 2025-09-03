@@ -1,8 +1,8 @@
 {
   "summary": {
     "totalDialogues": 91,
-    "totalVocabularyTerms": 6922,
-    "processedAt": "2025-09-03T02:45:01.565Z",
+    "totalVocabularyTerms": 6896,
+    "processedAt": "2025-09-03T07:06:56.392Z",
     "sourceFile": "merged-conversations.md",
     "processingErrors": 0,
     "processingWarnings": 18
@@ -16,9 +16,9 @@
     "immigration": 1
   },
   "difficultyDistribution": {
-    "hard": 4118,
-    "normal": 2524,
-    "easy": 280
+    "hard": 4141,
+    "normal": 2478,
+    "easy": 277
   },
   "dialogueList": [
     {
@@ -116,14 +116,14 @@
       "id": "70235",
       "title": "Late Fee and Direct Debit",
       "category": "social",
-      "vocabularyCount": 81,
+      "vocabularyCount": 78,
       "sentenceCount": 14
     },
     {
       "id": "70234",
       "title": "Small Town Doctor & Grocer",
       "category": "social",
-      "vocabularyCount": 93,
+      "vocabularyCount": 92,
       "sentenceCount": 14
     },
     {
@@ -137,7 +137,7 @@
       "id": "70232",
       "title": "Ceiling Leak Emergency Report",
       "category": "social",
-      "vocabularyCount": 64,
+      "vocabularyCount": 65,
       "sentenceCount": 14
     },
     {
@@ -235,35 +235,35 @@
       "id": "70218",
       "title": "Van Theft Report and Insurance Steps",
       "category": "legal",
-      "vocabularyCount": 72,
+      "vocabularyCount": 71,
       "sentenceCount": 14
     },
     {
       "id": "70217",
       "title": "Clarifying Local Dog Leash Rules",
       "category": "legal",
-      "vocabularyCount": 85,
+      "vocabularyCount": 80,
       "sentenceCount": 14
     },
     {
       "id": "70216",
       "title": "Resident Alerts Police to Speeding Driver",
       "category": "legal",
-      "vocabularyCount": 78,
+      "vocabularyCount": 74,
       "sentenceCount": 14
     },
     {
       "id": "70215",
       "title": "Inspecting An Off-Market Property",
       "category": "business",
-      "vocabularyCount": 69,
+      "vocabularyCount": 68,
       "sentenceCount": 14
     },
     {
       "id": "70214",
       "title": "Customer Calls About Faulty Washer",
       "category": "business",
-      "vocabularyCount": 78,
+      "vocabularyCount": 77,
       "sentenceCount": 14
     },
     {
@@ -284,7 +284,7 @@
       "id": "70211",
       "title": "Puppy Course: Commands & Grooming",
       "category": "business",
-      "vocabularyCount": 90,
+      "vocabularyCount": 79,
       "sentenceCount": 14
     },
     {

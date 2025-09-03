@@ -8820,23 +8820,13 @@
     "example_chinese": "_原来如此_。_那我以后_ _得提前几天付款了_。| _不过这次_ _逾期费用_ _能给我免掉吗_？| _毕竟我确实_ _在截止日期前_ _付了款_。"
   },
   {
-    "term": "I can definitely help you",
+    "term": "I can definitely help you with that",
     "conversation_id": "70235",
     "sentence_id": 9,
     "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈi ˈcan ˈdefinitely ˈhelp ˈyou/",
-    "example": "_I can definitely help you_ _with that_. | _Since you made the payment_ _before the due date_, _I'll waive the late fee_. | _I'll also set up_ _direct debit for you_ _to avoid this in the future_.",
-    "example_chinese": "_我肯定能帮您_ _解决这个问题_。| _既然您在截止日期前_ _付了款_，_我会给您免掉逾期费用_。| _我还会帮您开通_ _自动扣款_，_避免以后_ _再出现这种情况_。"
-  },
-  {
-    "term": "with that",
-    "conversation_id": "70235",
-    "sentence_id": 9,
-    "difficulty": "normal",
-    "category": "social",
-    "phonetic": "UK /ˈwith ˈthat/",
-    "example": "_I can definitely help you_ _with that_. | _Since you made the payment_ _before the due date_, _I'll waive the late fee_. | _I'll also set up_ _direct debit for you_ _to avoid this in the future_.",
+    "phonetic": "UK /ˈi ˈcan ˈdefinitely ˈhelp ˈyou ˈwith ˈthat/",
+    "example": "_I can definitely help you with that_. | _Since you made the payment_ _before the due date_, _I'll waive the late fee_. | _I'll also set up_ _direct debit for you_ _to avoid this in the future_.",
     "example_chinese": "_我肯定能帮您_ _解决这个问题_。| _既然您在截止日期前_ _付了款_，_我会给您免掉逾期费用_。| _我还会帮您开通_ _自动扣款_，_避免以后_ _再出现这种情况_。"
   },
   {
@@ -8846,7 +8836,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈsince ˈyou ˈmade ˈthe ˈpayment/",
-    "example": "_I can definitely help you_ _with that_. | _Since you made the payment_ _before the due date_, _I'll waive the late fee_. | _I'll also set up_ _direct debit for you_ _to avoid this in the future_.",
+    "example": "_I can definitely help you with that_. | _Since you made the payment_ _before the due date_, _I'll waive the late fee_. | _I'll also set up_ _direct debit for you_ _to avoid this in the future_.",
     "example_chinese": "_我肯定能帮您_ _解决这个问题_。| _既然您在截止日期前_ _付了款_，_我会给您免掉逾期费用_。| _我还会帮您开通_ _自动扣款_，_避免以后_ _再出现这种情况_。"
   },
   {
@@ -8856,7 +8846,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈbefore ˈthe ˈdue ˈdate/",
-    "example": "_I can definitely help you_ _with that_. | _Since you made the payment_ _before the due date_, _I'll waive the late fee_. | _I'll also set up_ _direct debit for you_ _to avoid this in the future_.",
+    "example": "_I can definitely help you with that_. | _Since you made the payment_ _before the due date_, _I'll waive the late fee_. | _I'll also set up_ _direct debit for you_ _to avoid this in the future_.",
     "example_chinese": "_我肯定能帮您_ _解决这个问题_。| _既然您在截止日期前_ _付了款_，_我会给您免掉逾期费用_。| _我还会帮您开通_ _自动扣款_，_避免以后_ _再出现这种情况_。"
   },
   {
@@ -8866,7 +8856,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈi'll ˈwaive ˈthe ˈlate ˈfee/",
-    "example": "_I can definitely help you_ _with that_. | _Since you made the payment_ _before the due date_, _I'll waive the late fee_. | _I'll also set up_ _direct debit for you_ _to avoid this in the future_.",
+    "example": "_I can definitely help you with that_. | _Since you made the payment_ _before the due date_, _I'll waive the late fee_. | _I'll also set up_ _direct debit for you_ _to avoid this in the future_.",
     "example_chinese": "_我肯定能帮您_ _解决这个问题_。| _既然您在截止日期前_ _付了款_，_我会给您免掉逾期费用_。| _我还会帮您开通_ _自动扣款_，_避免以后_ _再出现这种情况_。"
   },
   {
@@ -8876,7 +8866,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈi'll ˈalso ˈset ˈup/",
-    "example": "_I can definitely help you_ _with that_. | _Since you made the payment_ _before the due date_, _I'll waive the late fee_. | _I'll also set up_ _direct debit for you_ _to avoid this in the future_.",
+    "example": "_I can definitely help you with that_. | _Since you made the payment_ _before the due date_, _I'll waive the late fee_. | _I'll also set up_ _direct debit for you_ _to avoid this in the future_.",
     "example_chinese": "_我肯定能帮您_ _解决这个问题_。| _既然您在截止日期前_ _付了款_，_我会给您免掉逾期费用_。| _我还会帮您开通_ _自动扣款_，_避免以后_ _再出现这种情况_。"
   },
   {
@@ -8886,7 +8876,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈdirect ˈdebit ˈfor ˈyou/",
-    "example": "_I can definitely help you_ _with that_. | _Since you made the payment_ _before the due date_, _I'll waive the late fee_. | _I'll also set up_ _direct debit for you_ _to avoid this in the future_.",
+    "example": "_I can definitely help you with that_. | _Since you made the payment_ _before the due date_, _I'll waive the late fee_. | _I'll also set up_ _direct debit for you_ _to avoid this in the future_.",
     "example_chinese": "_我肯定能帮您_ _解决这个问题_。| _既然您在截止日期前_ _付了款_，_我会给您免掉逾期费用_。| _我还会帮您开通_ _自动扣款_，_避免以后_ _再出现这种情况_。"
   },
   {
@@ -8896,7 +8886,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈto ˈavoid ˈthis ˈin ˈthe ˈfuture/",
-    "example": "_I can definitely help you_ _with that_. | _Since you made the payment_ _before the due date_, _I'll waive the late fee_. | _I'll also set up_ _direct debit for you_ _to avoid this in the future_.",
+    "example": "_I can definitely help you with that_. | _Since you made the payment_ _before the due date_, _I'll waive the late fee_. | _I'll also set up_ _direct debit for you_ _to avoid this in the future_.",
     "example_chinese": "_我肯定能帮您_ _解决这个问题_。| _既然您在截止日期前_ _付了款_，_我会给您免掉逾期费用_。| _我还会帮您开通_ _自动扣款_，_避免以后_ _再出现这种情况_。"
   },
   {
@@ -9006,7 +8996,7 @@
     "difficulty": "normal",
     "category": "social",
     "phonetic": "UK /ˈthat ˈsounds ˈgood/",
-    "example": "_That sounds good_. | _Do I need to_ _fill out any forms_? | _Or can I do it_ _online_?",
+    "example": "_That sounds good_. | _Do I need to_ _fill out any forms_? | _Or can I do it online_?",
     "example_chinese": "_听起来不错_。| _那我需要_ _填写什么表格吗_？| _还是可以在_ _网上操作_？"
   },
   {
@@ -9016,7 +9006,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈdo ˈi ˈneed ˈto/",
-    "example": "_That sounds good_. | _Do I need to_ _fill out any forms_? | _Or can I do it_ _online_?",
+    "example": "_That sounds good_. | _Do I need to_ _fill out any forms_? | _Or can I do it online_?",
     "example_chinese": "_听起来不错_。| _那我需要_ _填写什么表格吗_？| _还是可以在_ _网上操作_？"
   },
   {
@@ -9026,47 +9016,27 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈfill ˈout ˈany ˈforms/",
-    "example": "_That sounds good_. | _Do I need to_ _fill out any forms_? | _Or can I do it_ _online_?",
+    "example": "_That sounds good_. | _Do I need to_ _fill out any forms_? | _Or can I do it online_?",
     "example_chinese": "_听起来不错_。| _那我需要_ _填写什么表格吗_？| _还是可以在_ _网上操作_？"
   },
   {
-    "term": "Or can I do it",
+    "term": "Or can I do it online",
     "conversation_id": "70235",
     "sentence_id": 12,
     "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈor ˈcan ˈi ˈdo ˈit/",
-    "example": "_That sounds good_. | _Do I need to_ _fill out any forms_? | _Or can I do it_ _online_?",
+    "phonetic": "UK /ˈor ˈcan ˈi ˈdo ˈit ˈonline/",
+    "example": "_That sounds good_. | _Do I need to_ _fill out any forms_? | _Or can I do it online_?",
     "example_chinese": "_听起来不错_。| _那我需要_ _填写什么表格吗_？| _还是可以在_ _网上操作_？"
   },
   {
-    "term": "online",
-    "conversation_id": "70235",
-    "sentence_id": 12,
-    "difficulty": "easy",
-    "category": "social",
-    "phonetic": "UK /ˈonline/",
-    "example": "_That sounds good_. | _Do I need to_ _fill out any forms_? | _Or can I do it_ _online_?",
-    "example_chinese": "_听起来不错_。| _那我需要_ _填写什么表格吗_？| _还是可以在_ _网上操作_？"
-  },
-  {
-    "term": "You can do it",
+    "term": "You can do it entirely online",
     "conversation_id": "70235",
     "sentence_id": 13,
     "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈyou ˈcan ˈdo ˈit/",
-    "example": "_You can do it_ _entirely online_ _through our website_. | _I'll send you_ _a link to the direct debit form_. | _It only takes_ _a few minutes to set up_.",
-    "example_chinese": "_您完全可以在_ _我们的网站上_ _在线操作_。| _我会给您发送_ _自动扣款表格的链接_。| _设置只需要_ _几分钟时间_。"
-  },
-  {
-    "term": "entirely online",
-    "conversation_id": "70235",
-    "sentence_id": 13,
-    "difficulty": "normal",
-    "category": "social",
-    "phonetic": "UK /ˈentirely ˈonline/",
-    "example": "_You can do it_ _entirely online_ _through our website_. | _I'll send you_ _a link to the direct debit form_. | _It only takes_ _a few minutes to set up_.",
+    "phonetic": "UK /ˈyou ˈcan ˈdo ˈit ˈentirely ˈonline/",
+    "example": "_You can do it entirely online_ _through our website_. | _I'll send you_ _a link to the direct debit form_. | _It only takes_ _a few minutes to set up_.",
     "example_chinese": "_您完全可以在_ _我们的网站上_ _在线操作_。| _我会给您发送_ _自动扣款表格的链接_。| _设置只需要_ _几分钟时间_。"
   },
   {
@@ -9076,7 +9046,7 @@
     "difficulty": "normal",
     "category": "social",
     "phonetic": "UK /ˈthrough ˈour ˈwebsite/",
-    "example": "_You can do it_ _entirely online_ _through our website_. | _I'll send you_ _a link to the direct debit form_. | _It only takes_ _a few minutes to set up_.",
+    "example": "_You can do it entirely online_ _through our website_. | _I'll send you_ _a link to the direct debit form_. | _It only takes_ _a few minutes to set up_.",
     "example_chinese": "_您完全可以在_ _我们的网站上_ _在线操作_。| _我会给您发送_ _自动扣款表格的链接_。| _设置只需要_ _几分钟时间_。"
   },
   {
@@ -9086,7 +9056,7 @@
     "difficulty": "normal",
     "category": "social",
     "phonetic": "UK /ˈi'll ˈsend ˈyou/",
-    "example": "_You can do it_ _entirely online_ _through our website_. | _I'll send you_ _a link to the direct debit form_. | _It only takes_ _a few minutes to set up_.",
+    "example": "_You can do it entirely online_ _through our website_. | _I'll send you_ _a link to the direct debit form_. | _It only takes_ _a few minutes to set up_.",
     "example_chinese": "_您完全可以在_ _我们的网站上_ _在线操作_。| _我会给您发送_ _自动扣款表格的链接_。| _设置只需要_ _几分钟时间_。"
   },
   {
@@ -9096,7 +9066,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈa ˈlink ˈto ˈthe ˈdirect ˈdebit ˈform/",
-    "example": "_You can do it_ _entirely online_ _through our website_. | _I'll send you_ _a link to the direct debit form_. | _It only takes_ _a few minutes to set up_.",
+    "example": "_You can do it entirely online_ _through our website_. | _I'll send you_ _a link to the direct debit form_. | _It only takes_ _a few minutes to set up_.",
     "example_chinese": "_您完全可以在_ _我们的网站上_ _在线操作_。| _我会给您发送_ _自动扣款表格的链接_。| _设置只需要_ _几分钟时间_。"
   },
   {
@@ -9106,7 +9076,7 @@
     "difficulty": "normal",
     "category": "social",
     "phonetic": "UK /ˈit ˈonly ˈtakes/",
-    "example": "_You can do it_ _entirely online_ _through our website_. | _I'll send you_ _a link to the direct debit form_. | _It only takes_ _a few minutes to set up_.",
+    "example": "_You can do it entirely online_ _through our website_. | _I'll send you_ _a link to the direct debit form_. | _It only takes_ _a few minutes to set up_.",
     "example_chinese": "_您完全可以在_ _我们的网站上_ _在线操作_。| _我会给您发送_ _自动扣款表格的链接_。| _设置只需要_ _几分钟时间_。"
   },
   {
@@ -9116,7 +9086,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈa ˈfew ˈminutes ˈto ˈset ˈup/",
-    "example": "_You can do it_ _entirely online_ _through our website_. | _I'll send you_ _a link to the direct debit form_. | _It only takes_ _a few minutes to set up_.",
+    "example": "_You can do it entirely online_ _through our website_. | _I'll send you_ _a link to the direct debit form_. | _It only takes_ _a few minutes to set up_.",
     "example_chinese": "_您完全可以在_ _我们的网站上_ _在线操作_。| _我会给您发送_ _自动扣款表格的链接_。| _设置只需要_ _几分钟时间_。"
   },
   {
@@ -9866,7 +9836,7 @@
     "difficulty": "normal",
     "category": "social",
     "phonetic": "UK /ˈyou're ˈso ˈthoughtful/",
-    "example": "_You're so thoughtful_! _The people in town_ _are really wonderful too_! | _Just the night before last_, _there was a small issue_ _at the clinic_, | _and several neighbors_ _came over immediately_ _to help_. | _It really touched me_.",
+    "example": "_You're so thoughtful_! _The people in town_ _are really wonderful too_! | _Just the night before last_, _there was a small issue_ _at the clinic_, | _and several neighbors_ _came over immediately to help_. | _It really touched me_.",
     "example_chinese": "你真是太贴心了！小镇的人也都很好！| 前天晚上，诊所有个小状况，| 镇上几位邻居马上就来帮忙了，让我特别感动。"
   },
   {
@@ -9876,7 +9846,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈthe ˈpeople ˈin ˈtown/",
-    "example": "_You're so thoughtful_! _The people in town_ _are really wonderful too_! | _Just the night before last_, _there was a small issue_ _at the clinic_, | _and several neighbors_ _came over immediately_ _to help_. | _It really touched me_.",
+    "example": "_You're so thoughtful_! _The people in town_ _are really wonderful too_! | _Just the night before last_, _there was a small issue_ _at the clinic_, | _and several neighbors_ _came over immediately to help_. | _It really touched me_.",
     "example_chinese": "你真是太贴心了！小镇的人也都很好！| 前天晚上，诊所有个小状况，| 镇上几位邻居马上就来帮忙了，让我特别感动。"
   },
   {
@@ -9886,7 +9856,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈare ˈreally ˈwonderful ˈtoo/",
-    "example": "_You're so thoughtful_! _The people in town_ _are really wonderful too_! | _Just the night before last_, _there was a small issue_ _at the clinic_, | _and several neighbors_ _came over immediately_ _to help_. | _It really touched me_.",
+    "example": "_You're so thoughtful_! _The people in town_ _are really wonderful too_! | _Just the night before last_, _there was a small issue_ _at the clinic_, | _and several neighbors_ _came over immediately to help_. | _It really touched me_.",
     "example_chinese": "你真是太贴心了！小镇的人也都很好！| 前天晚上，诊所有个小状况，| 镇上几位邻居马上就来帮忙了，让我特别感动。"
   },
   {
@@ -9896,7 +9866,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈjust ˈthe ˈnight ˈbefore ˈlast/",
-    "example": "_You're so thoughtful_! _The people in town_ _are really wonderful too_! | _Just the night before last_, _there was a small issue_ _at the clinic_, | _and several neighbors_ _came over immediately_ _to help_. | _It really touched me_.",
+    "example": "_You're so thoughtful_! _The people in town_ _are really wonderful too_! | _Just the night before last_, _there was a small issue_ _at the clinic_, | _and several neighbors_ _came over immediately to help_. | _It really touched me_.",
     "example_chinese": "你真是太贴心了！小镇的人也都很好！| 前天晚上，诊所有个小状况，| 镇上几位邻居马上就来帮忙了，让我特别感动。"
   },
   {
@@ -9906,7 +9876,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈthere ˈwas ˈa ˈsmall ˈissue/",
-    "example": "_You're so thoughtful_! _The people in town_ _are really wonderful too_! | _Just the night before last_, _there was a small issue_ _at the clinic_, | _and several neighbors_ _came over immediately_ _to help_. | _It really touched me_.",
+    "example": "_You're so thoughtful_! _The people in town_ _are really wonderful too_! | _Just the night before last_, _there was a small issue_ _at the clinic_, | _and several neighbors_ _came over immediately to help_. | _It really touched me_.",
     "example_chinese": "你真是太贴心了！小镇的人也都很好！| 前天晚上，诊所有个小状况，| 镇上几位邻居马上就来帮忙了，让我特别感动。"
   },
   {
@@ -9916,7 +9886,7 @@
     "difficulty": "normal",
     "category": "social",
     "phonetic": "UK /ˈat ˈthe ˈclinic/",
-    "example": "_You're so thoughtful_! _The people in town_ _are really wonderful too_! | _Just the night before last_, _there was a small issue_ _at the clinic_, | _and several neighbors_ _came over immediately_ _to help_. | _It really touched me_.",
+    "example": "_You're so thoughtful_! _The people in town_ _are really wonderful too_! | _Just the night before last_, _there was a small issue_ _at the clinic_, | _and several neighbors_ _came over immediately to help_. | _It really touched me_.",
     "example_chinese": "你真是太贴心了！小镇的人也都很好！| 前天晚上，诊所有个小状况，| 镇上几位邻居马上就来帮忙了，让我特别感动。"
   },
   {
@@ -9926,27 +9896,17 @@
     "difficulty": "normal",
     "category": "social",
     "phonetic": "UK /ˈand ˈseveral ˈneighbors/",
-    "example": "_You're so thoughtful_! _The people in town_ _are really wonderful too_! | _Just the night before last_, _there was a small issue_ _at the clinic_, | _and several neighbors_ _came over immediately_ _to help_. | _It really touched me_.",
+    "example": "_You're so thoughtful_! _The people in town_ _are really wonderful too_! | _Just the night before last_, _there was a small issue_ _at the clinic_, | _and several neighbors_ _came over immediately to help_. | _It really touched me_.",
     "example_chinese": "你真是太贴心了！小镇的人也都很好！| 前天晚上，诊所有个小状况，| 镇上几位邻居马上就来帮忙了，让我特别感动。"
   },
   {
-    "term": "came over immediately",
+    "term": "came over immediately to help",
     "conversation_id": "70234",
     "sentence_id": 12,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈcame ˈover ˈimmediately/",
-    "example": "_You're so thoughtful_! _The people in town_ _are really wonderful too_! | _Just the night before last_, _there was a small issue_ _at the clinic_, | _and several neighbors_ _came over immediately_ _to help_. | _It really touched me_.",
-    "example_chinese": "你真是太贴心了！小镇的人也都很好！| 前天晚上，诊所有个小状况，| 镇上几位邻居马上就来帮忙了，让我特别感动。"
-  },
-  {
-    "term": "to help",
-    "conversation_id": "70234",
-    "sentence_id": 12,
-    "difficulty": "normal",
-    "category": "social",
-    "phonetic": "UK /ˈto ˈhelp/",
-    "example": "_You're so thoughtful_! _The people in town_ _are really wonderful too_! | _Just the night before last_, _there was a small issue_ _at the clinic_, | _and several neighbors_ _came over immediately_ _to help_. | _It really touched me_.",
+    "phonetic": "UK /ˈcame ˈover ˈimmediately ˈto ˈhelp/",
+    "example": "_You're so thoughtful_! _The people in town_ _are really wonderful too_! | _Just the night before last_, _there was a small issue_ _at the clinic_, | _and several neighbors_ _came over immediately to help_. | _It really touched me_.",
     "example_chinese": "你真是太贴心了！小镇的人也都很好！| 前天晚上，诊所有个小状况，| 镇上几位邻居马上就来帮忙了，让我特别感动。"
   },
   {
@@ -9956,7 +9916,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈit ˈreally ˈtouched ˈme/",
-    "example": "_You're so thoughtful_! _The people in town_ _are really wonderful too_! | _Just the night before last_, _there was a small issue_ _at the clinic_, | _and several neighbors_ _came over immediately_ _to help_. | _It really touched me_.",
+    "example": "_You're so thoughtful_! _The people in town_ _are really wonderful too_! | _Just the night before last_, _there was a small issue_ _at the clinic_, | _and several neighbors_ _came over immediately to help_. | _It really touched me_.",
     "example_chinese": "你真是太贴心了！小镇的人也都很好！| 前天晚上，诊所有个小状况，| 镇上几位邻居马上就来帮忙了，让我特别感动。"
   },
   {
@@ -11330,23 +11290,33 @@
     "example_chinese": "谢谢。维修需要我清空衣帽间吗？| 我的衣服才刚刚按照颜色整理好啊。"
   },
   {
-    "term": "remove all bedding",
+    "term": "You just need to",
     "conversation_id": "70232",
     "sentence_id": 13,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈremove ˈall ˈbedding/",
-    "example": "You just need to _remove all bedding_ temporarily. | _Protective covers_ will be used during repairs.",
+    "phonetic": "UK /ˈyou ˈjust ˈneed ˈto/",
+    "example": "_You just need to_ _remove all bedding temporarily_. | _Protective covers will be used during repairs_.",
     "example_chinese": "就暂时移开床上用品就行。| 施工时会铺防护罩的。"
   },
   {
-    "term": "Protective covers",
+    "term": "remove all bedding temporarily",
     "conversation_id": "70232",
     "sentence_id": 13,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈprotective ˈcovers/",
-    "example": "You just need to _remove all bedding_ temporarily. | _Protective covers_ will be used during repairs.",
+    "phonetic": "UK /ˈremove ˈall ˈbedding ˈtemporarily/",
+    "example": "_You just need to_ _remove all bedding temporarily_. | _Protective covers will be used during repairs_.",
+    "example_chinese": "就暂时移开床上用品就行。| 施工时会铺防护罩的。"
+  },
+  {
+    "term": "Protective covers will be used during repairs",
+    "conversation_id": "70232",
+    "sentence_id": 13,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈprotective ˈcovers ˈwill ˈbe ˈused ˈduring ˈrepairs/",
+    "example": "_You just need to_ _remove all bedding temporarily_. | _Protective covers will be used during repairs_.",
     "example_chinese": "就暂时移开床上用品就行。| 施工时会铺防护罩的。"
   },
   {
@@ -12110,23 +12080,23 @@
     "example_chinese": "我喜欢这个方案！素色底配亮色点缀永不过时。| 真期待等你完工后去参观。"
   },
   {
-    "term": "I can't wait to show",
-    "conversation_id": "70231",
-    "sentence_id": 14,
-    "difficulty": "hard",
-    "category": "business",
-    "phonetic": "UK /ˈi ˈcan't ˈwait ˈto ˈshow/",
-    "example": "_I can't wait to show_ _you around either_. | _But I still need to_ _set up the lighting_ _and small decorations_, | _so it'll probably_ _be another couple of weeks_.",
-    "example_chinese": "我也迫不及待想带你参观啦。| 不过还得等我把灯光和小配饰都摆好，| 大概要过两周。"
-  },
-  {
-    "term": "you around either",
+    "term": "I can't wait",
     "conversation_id": "70231",
     "sentence_id": 14,
     "difficulty": "normal",
     "category": "business",
-    "phonetic": "UK /ˈyou ˈaround ˈeither/",
-    "example": "_I can't wait to show_ _you around either_. | _But I still need to_ _set up the lighting_ _and small decorations_, | _so it'll probably_ _be another couple of weeks_.",
+    "phonetic": "UK /ˈi ˈcan't ˈwait/",
+    "example": "_I can't wait_ _to show you around either_. | _But I still need to_ _set up the lighting_ _and small decorations_, | _so it'll probably_ _be another couple of weeks_.",
+    "example_chinese": "我也迫不及待想带你参观啦。| 不过还得等我把灯光和小配饰都摆好，| 大概要过两周。"
+  },
+  {
+    "term": "to show you around either",
+    "conversation_id": "70231",
+    "sentence_id": 14,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈto ˈshow ˈyou ˈaround ˈeither/",
+    "example": "_I can't wait_ _to show you around either_. | _But I still need to_ _set up the lighting_ _and small decorations_, | _so it'll probably_ _be another couple of weeks_.",
     "example_chinese": "我也迫不及待想带你参观啦。| 不过还得等我把灯光和小配饰都摆好，| 大概要过两周。"
   },
   {
@@ -12136,7 +12106,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈbut ˈi ˈstill ˈneed ˈto/",
-    "example": "_I can't wait to show_ _you around either_. | _But I still need to_ _set up the lighting_ _and small decorations_, | _so it'll probably_ _be another couple of weeks_.",
+    "example": "_I can't wait_ _to show you around either_. | _But I still need to_ _set up the lighting_ _and small decorations_, | _so it'll probably_ _be another couple of weeks_.",
     "example_chinese": "我也迫不及待想带你参观啦。| 不过还得等我把灯光和小配饰都摆好，| 大概要过两周。"
   },
   {
@@ -12146,7 +12116,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈset ˈup ˈthe ˈlighting/",
-    "example": "_I can't wait to show_ _you around either_. | _But I still need to_ _set up the lighting_ _and small decorations_, | _so it'll probably_ _be another couple of weeks_.",
+    "example": "_I can't wait_ _to show you around either_. | _But I still need to_ _set up the lighting_ _and small decorations_, | _so it'll probably_ _be another couple of weeks_.",
     "example_chinese": "我也迫不及待想带你参观啦。| 不过还得等我把灯光和小配饰都摆好，| 大概要过两周。"
   },
   {
@@ -12156,7 +12126,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈand ˈsmall ˈdecorations/",
-    "example": "_I can't wait to show_ _you around either_. | _But I still need to_ _set up the lighting_ _and small decorations_, | _so it'll probably_ _be another couple of weeks_.",
+    "example": "_I can't wait_ _to show you around either_. | _But I still need to_ _set up the lighting_ _and small decorations_, | _so it'll probably_ _be another couple of weeks_.",
     "example_chinese": "我也迫不及待想带你参观啦。| 不过还得等我把灯光和小配饰都摆好，| 大概要过两周。"
   },
   {
@@ -12166,7 +12136,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈso ˈit'll ˈprobably/",
-    "example": "_I can't wait to show_ _you around either_. | _But I still need to_ _set up the lighting_ _and small decorations_, | _so it'll probably_ _be another couple of weeks_.",
+    "example": "_I can't wait_ _to show you around either_. | _But I still need to_ _set up the lighting_ _and small decorations_, | _so it'll probably_ _be another couple of weeks_.",
     "example_chinese": "我也迫不及待想带你参观啦。| 不过还得等我把灯光和小配饰都摆好，| 大概要过两周。"
   },
   {
@@ -12176,7 +12146,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈbe ˈanother ˈcouple ˈof ˈweeks/",
-    "example": "_I can't wait to show_ _you around either_. | _But I still need to_ _set up the lighting_ _and small decorations_, | _so it'll probably_ _be another couple of weeks_.",
+    "example": "_I can't wait_ _to show you around either_. | _But I still need to_ _set up the lighting_ _and small decorations_, | _so it'll probably_ _be another couple of weeks_.",
     "example_chinese": "我也迫不及待想带你参观啦。| 不过还得等我把灯光和小配饰都摆好，| 大概要过两周。"
   },
   {
@@ -19826,7 +19796,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈit's ˈnot ˈan ˈemergency/",
-    "example": "_It's not an emergency_, _it's just that_ | _my van was stolen_. | _It was stolen from_ | _where I was_ | _working yesterday_. | _But I'm physically fine_.",
+    "example": "_It's not an emergency_, _it's just that_ | _my van was stolen_. | _It was stolen from_ | _where I was working yesterday_. | _But I'm physically fine_.",
     "example_chinese": "不是紧急的，就是我的面包车被偷了。| 是在我昨天工作的地方被偷的。| 不过我人没事。"
   },
   {
@@ -19836,7 +19806,7 @@
     "difficulty": "normal",
     "category": "legal",
     "phonetic": "UK /ˈit's ˈjust ˈthat/",
-    "example": "_It's not an emergency_, _it's just that_ | _my van was stolen_. | _It was stolen from_ | _where I was_ | _working yesterday_. | _But I'm physically fine_.",
+    "example": "_It's not an emergency_, _it's just that_ | _my van was stolen_. | _It was stolen from_ | _where I was working yesterday_. | _But I'm physically fine_.",
     "example_chinese": "不是紧急的，就是我的面包车被偷了。| 是在我昨天工作的地方被偷的。| 不过我人没事。"
   },
   {
@@ -19846,7 +19816,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈmy ˈvan ˈwas ˈstolen/",
-    "example": "_It's not an emergency_, _it's just that_ | _my van was stolen_. | _It was stolen from_ | _where I was_ | _working yesterday_. | _But I'm physically fine_.",
+    "example": "_It's not an emergency_, _it's just that_ | _my van was stolen_. | _It was stolen from_ | _where I was working yesterday_. | _But I'm physically fine_.",
     "example_chinese": "不是紧急的，就是我的面包车被偷了。| 是在我昨天工作的地方被偷的。| 不过我人没事。"
   },
   {
@@ -19856,27 +19826,17 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈit ˈwas ˈstolen ˈfrom/",
-    "example": "_It's not an emergency_, _it's just that_ | _my van was stolen_. | _It was stolen from_ | _where I was_ | _working yesterday_. | _But I'm physically fine_.",
+    "example": "_It's not an emergency_, _it's just that_ | _my van was stolen_. | _It was stolen from_ | _where I was working yesterday_. | _But I'm physically fine_.",
     "example_chinese": "不是紧急的，就是我的面包车被偷了。| 是在我昨天工作的地方被偷的。| 不过我人没事。"
   },
   {
-    "term": "where I was",
+    "term": "where I was working yesterday",
     "conversation_id": "70218",
     "sentence_id": 4,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "legal",
-    "phonetic": "UK /ˈwhere ˈi ˈwas/",
-    "example": "_It's not an emergency_, _it's just that_ | _my van was stolen_. | _It was stolen from_ | _where I was_ | _working yesterday_. | _But I'm physically fine_.",
-    "example_chinese": "不是紧急的，就是我的面包车被偷了。| 是在我昨天工作的地方被偷的。| 不过我人没事。"
-  },
-  {
-    "term": "working yesterday",
-    "conversation_id": "70218",
-    "sentence_id": 4,
-    "difficulty": "normal",
-    "category": "legal",
-    "phonetic": "UK /ˈworking ˈyesterday/",
-    "example": "_It's not an emergency_, _it's just that_ | _my van was stolen_. | _It was stolen from_ | _where I was_ | _working yesterday_. | _But I'm physically fine_.",
+    "phonetic": "UK /ˈwhere ˈi ˈwas ˈworking ˈyesterday/",
+    "example": "_It's not an emergency_, _it's just that_ | _my van was stolen_. | _It was stolen from_ | _where I was working yesterday_. | _But I'm physically fine_.",
     "example_chinese": "不是紧急的，就是我的面包车被偷了。| 是在我昨天工作的地方被偷的。| 不过我人没事。"
   },
   {
@@ -19886,7 +19846,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈbut ˈi'm ˈphysically ˈfine/",
-    "example": "_It's not an emergency_, _it's just that_ | _my van was stolen_. | _It was stolen from_ | _where I was_ | _working yesterday_. | _But I'm physically fine_.",
+    "example": "_It's not an emergency_, _it's just that_ | _my van was stolen_. | _It was stolen from_ | _where I was working yesterday_. | _But I'm physically fine_.",
     "example_chinese": "不是紧急的，就是我的面包车被偷了。| 是在我昨天工作的地方被偷的。| 不过我人没事。"
   },
   {
@@ -20406,7 +20366,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈhello ˈi ˈwant ˈto ˈask ˈabout ˈthe/",
-    "example": "_Hello, I want to ask about the_ _dog-walking regulations here. | _I heard some neighbours_ _get really startled_ when they see dogs_, | _so I'd like to_ _know the rules first_.",
+    "example": "_Hello, I want to ask about the_ _dog-walking regulations here_. | _I heard some neighbours_ _get really startled_ _when they see dogs_, | _so I'd like to_ _know the rules first_.",
     "example_chinese": "你好，我想咨询一下这里遛狗的法律法规。| 听说有些邻居看到狗就吓一跳，| 所以我想先搞清楚规矩。"
   },
   {
@@ -20416,7 +20376,27 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈdog-walking ˈregulations ˈhere/",
-    "example": "_Hello, I want to ask about the_ _dog-walking regulations here. | _I heard some neighbours_ _get really startled_ when they see dogs_, | _so I'd like to_ _know the rules first_.",
+    "example": "_Hello, I want to ask about the_ _dog-walking regulations here_. | _I heard some neighbours_ _get really startled_ _when they see dogs_, | _so I'd like to_ _know the rules first_.",
+    "example_chinese": "你好，我想咨询一下这里遛狗的法律法规。| 听说有些邻居看到狗就吓一跳，| 所以我想先搞清楚规矩。"
+  },
+  {
+    "term": "I heard some neighbours",
+    "conversation_id": "70217",
+    "sentence_id": 2,
+    "difficulty": "hard",
+    "category": "legal",
+    "phonetic": "UK /ˈi ˈheard ˈsome ˈneighbours/",
+    "example": "_Hello, I want to ask about the_ _dog-walking regulations here_. | _I heard some neighbours_ _get really startled_ _when they see dogs_, | _so I'd like to_ _know the rules first_.",
+    "example_chinese": "你好，我想咨询一下这里遛狗的法律法规。| 听说有些邻居看到狗就吓一跳，| 所以我想先搞清楚规矩。"
+  },
+  {
+    "term": "get really startled",
+    "conversation_id": "70217",
+    "sentence_id": 2,
+    "difficulty": "normal",
+    "category": "legal",
+    "phonetic": "UK /ˈget ˈreally ˈstartled/",
+    "example": "_Hello, I want to ask about the_ _dog-walking regulations here_. | _I heard some neighbours_ _get really startled_ _when they see dogs_, | _so I'd like to_ _know the rules first_.",
     "example_chinese": "你好，我想咨询一下这里遛狗的法律法规。| 听说有些邻居看到狗就吓一跳，| 所以我想先搞清楚规矩。"
   },
   {
@@ -20426,7 +20406,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈwhen ˈthey ˈsee ˈdogs/",
-    "example": "_Hello, I want to ask about the_ _dog-walking regulations here. | _I heard some neighbours_ _get really startled_ when they see dogs_, | _so I'd like to_ _know the rules first_.",
+    "example": "_Hello, I want to ask about the_ _dog-walking regulations here_. | _I heard some neighbours_ _get really startled_ _when they see dogs_, | _so I'd like to_ _know the rules first_.",
     "example_chinese": "你好，我想咨询一下这里遛狗的法律法规。| 听说有些邻居看到狗就吓一跳，| 所以我想先搞清楚规矩。"
   },
   {
@@ -20436,7 +20416,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈso ˈi'd ˈlike ˈto/",
-    "example": "_Hello, I want to ask about the_ _dog-walking regulations here. | _I heard some neighbours_ _get really startled_ when they see dogs_, | _so I'd like to_ _know the rules first_.",
+    "example": "_Hello, I want to ask about the_ _dog-walking regulations here_. | _I heard some neighbours_ _get really startled_ _when they see dogs_, | _so I'd like to_ _know the rules first_.",
     "example_chinese": "你好，我想咨询一下这里遛狗的法律法规。| 听说有些邻居看到狗就吓一跳，| 所以我想先搞清楚规矩。"
   },
   {
@@ -20446,7 +20426,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈknow ˈthe ˈrules ˈfirst/",
-    "example": "_Hello, I want to ask about the_ _dog-walking regulations here. | _I heard some neighbours_ _get really startled_ when they see dogs_, | _so I'd like to_ _know the rules first_.",
+    "example": "_Hello, I want to ask about the_ _dog-walking regulations here_. | _I heard some neighbours_ _get really startled_ _when they see dogs_, | _so I'd like to_ _know the rules first_.",
     "example_chinese": "你好，我想咨询一下这里遛狗的法律法规。| 听说有些邻居看到狗就吓一跳，| 所以我想先搞清楚规矩。"
   },
   {
@@ -20456,7 +20436,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈabsolutely ˈhaving ˈa ˈdog ˈmeans/",
-    "example": "_Absolutely! Having a dog means_ _following rules_. | _We've got_ _straightforward regulations_ _to keep everyone safe_. | _Have you had a chance_ _to check any local regulations_?",
+    "example": "_Absolutely! Having a dog means_ _following rules_. | _We've got straightforward regulations_ _to keep everyone safe_. | _Have you had a chance_ _to check any local regulations_?",
     "example_chinese": "当然可以！养狗意味着要守规矩。| 我们有明文规定来保障每个人的安全。| 您有看过本地的相关法规吗？"
   },
   {
@@ -20466,27 +20446,17 @@
     "difficulty": "normal",
     "category": "legal",
     "phonetic": "UK /ˈfollowing ˈrules/",
-    "example": "_Absolutely! Having a dog means_ _following rules_. | _We've got_ _straightforward regulations_ _to keep everyone safe_. | _Have you had a chance_ _to check any local regulations_?",
+    "example": "_Absolutely! Having a dog means_ _following rules_. | _We've got straightforward regulations_ _to keep everyone safe_. | _Have you had a chance_ _to check any local regulations_?",
     "example_chinese": "当然可以！养狗意味着要守规矩。| 我们有明文规定来保障每个人的安全。| 您有看过本地的相关法规吗？"
   },
   {
-    "term": "We've got",
-    "conversation_id": "70217",
-    "sentence_id": 3,
-    "difficulty": "normal",
-    "category": "legal",
-    "phonetic": "UK /ˈwe've ˈgot/",
-    "example": "_Absolutely! Having a dog means_ _following rules_. | _We've got_ _straightforward regulations_ _to keep everyone safe_. | _Have you had a chance_ _to check any local regulations_?",
-    "example_chinese": "当然可以！养狗意味着要守规矩。| 我们有明文规定来保障每个人的安全。| 您有看过本地的相关法规吗？"
-  },
-  {
-    "term": "straightforward regulations",
+    "term": "We've got straightforward regulations",
     "conversation_id": "70217",
     "sentence_id": 3,
     "difficulty": "hard",
     "category": "legal",
-    "phonetic": "UK /ˈstraightforward ˈregulations/",
-    "example": "_Absolutely! Having a dog means_ _following rules_. | _We've got_ _straightforward regulations_ _to keep everyone safe_. | _Have you had a chance_ _to check any local regulations_?",
+    "phonetic": "UK /ˈwe've ˈgot ˈstraightforward ˈregulations/",
+    "example": "_Absolutely! Having a dog means_ _following rules_. | _We've got straightforward regulations_ _to keep everyone safe_. | _Have you had a chance_ _to check any local regulations_?",
     "example_chinese": "当然可以！养狗意味着要守规矩。| 我们有明文规定来保障每个人的安全。| 您有看过本地的相关法规吗？"
   },
   {
@@ -20496,7 +20466,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈto ˈkeep ˈeveryone ˈsafe/",
-    "example": "_Absolutely! Having a dog means_ _following rules_. | _We've got_ _straightforward regulations_ _to keep everyone safe_. | _Have you had a chance_ _to check any local regulations_?",
+    "example": "_Absolutely! Having a dog means_ _following rules_. | _We've got straightforward regulations_ _to keep everyone safe_. | _Have you had a chance_ _to check any local regulations_?",
     "example_chinese": "当然可以！养狗意味着要守规矩。| 我们有明文规定来保障每个人的安全。| 您有看过本地的相关法规吗？"
   },
   {
@@ -20506,7 +20476,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈhave ˈyou ˈhad ˈa ˈchance/",
-    "example": "_Absolutely! Having a dog means_ _following rules_. | _We've got_ _straightforward regulations_ _to keep everyone safe_. | _Have you had a chance_ _to check any local regulations_?",
+    "example": "_Absolutely! Having a dog means_ _following rules_. | _We've got straightforward regulations_ _to keep everyone safe_. | _Have you had a chance_ _to check any local regulations_?",
     "example_chinese": "当然可以！养狗意味着要守规矩。| 我们有明文规定来保障每个人的安全。| 您有看过本地的相关法规吗？"
   },
   {
@@ -20516,7 +20486,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈto ˈcheck ˈany ˈlocal ˈregulations/",
-    "example": "_Absolutely! Having a dog means_ _following rules_. | _We've got_ _straightforward regulations_ _to keep everyone safe_. | _Have you had a chance_ _to check any local regulations_?",
+    "example": "_Absolutely! Having a dog means_ _following rules_. | _We've got straightforward regulations_ _to keep everyone safe_. | _Have you had a chance_ _to check any local regulations_?",
     "example_chinese": "当然可以！养狗意味着要守规矩。| 我们有明文规定来保障每个人的安全。| 您有看过本地的相关法规吗？"
   },
   {
@@ -20870,33 +20840,23 @@
     "example_chinese": "如果违反规定，| 比如在禁止区域不牵绳，| 就可能被罚款。| 罚金数额取决于违规的严重程度。"
   },
   {
-    "term": "My dog's so friendly—always",
+    "term": "My dog's so friendly",
     "conversation_id": "70217",
     "sentence_id": 10,
     "difficulty": "hard",
     "category": "legal",
-    "phonetic": "UK /ˈmy ˈdog's ˈso ˈfriendly—always/",
-    "example": "_My dog's so friendly—always_ _jumps on everyone_ _it meets_. | _I really need to_ _pay extra attention_. | _Any other dog-walking dos and don'ts_ _I need to look out for_?",
+    "phonetic": "UK /ˈmy ˈdog's ˈso ˈfriendly/",
+    "example": "_My dog's so friendly_—_always jumps on everyone it meets_. | _I really need to_ _pay extra attention_. | _Any other dog-walking dos and don'ts_ _I need to look out for_?",
     "example_chinese": "我的狗狗很热情，见人就扑，| 我还真的要多留意。| 还有什么其他遛狗时要注意的吗？"
   },
   {
-    "term": "jumps on everyone",
+    "term": "always jumps on everyone it meets",
     "conversation_id": "70217",
     "sentence_id": 10,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "legal",
-    "phonetic": "UK /ˈjumps ˈon ˈeveryone/",
-    "example": "_My dog's so friendly—always_ _jumps on everyone_ _it meets_. | _I really need to_ _pay extra attention_. | _Any other dog-walking dos and don'ts_ _I need to look out for_?",
-    "example_chinese": "我的狗狗很热情，见人就扑，| 我还真的要多留意。| 还有什么其他遛狗时要注意的吗？"
-  },
-  {
-    "term": "it meets",
-    "conversation_id": "70217",
-    "sentence_id": 10,
-    "difficulty": "normal",
-    "category": "legal",
-    "phonetic": "UK /ˈit ˈmeets/",
-    "example": "_My dog's so friendly—always_ _jumps on everyone_ _it meets_. | _I really need to_ _pay extra attention_. | _Any other dog-walking dos and don'ts_ _I need to look out for_?",
+    "phonetic": "UK /ˈalways ˈjumps ˈon ˈeveryone ˈit ˈmeets/",
+    "example": "_My dog's so friendly_—_always jumps on everyone it meets_. | _I really need to_ _pay extra attention_. | _Any other dog-walking dos and don'ts_ _I need to look out for_?",
     "example_chinese": "我的狗狗很热情，见人就扑，| 我还真的要多留意。| 还有什么其他遛狗时要注意的吗？"
   },
   {
@@ -20906,7 +20866,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈi ˈreally ˈneed ˈto/",
-    "example": "_My dog's so friendly—always_ _jumps on everyone_ _it meets_. | _I really need to_ _pay extra attention_. | _Any other dog-walking dos and don'ts_ _I need to look out for_?",
+    "example": "_My dog's so friendly_—_always jumps on everyone it meets_. | _I really need to_ _pay extra attention_. | _Any other dog-walking dos and don'ts_ _I need to look out for_?",
     "example_chinese": "我的狗狗很热情，见人就扑，| 我还真的要多留意。| 还有什么其他遛狗时要注意的吗？"
   },
   {
@@ -20916,7 +20876,7 @@
     "difficulty": "normal",
     "category": "legal",
     "phonetic": "UK /ˈpay ˈextra ˈattention/",
-    "example": "_My dog's so friendly—always_ _jumps on everyone_ _it meets_. | _I really need to_ _pay extra attention_. | _Any other dog-walking dos and don'ts_ _I need to look out for_?",
+    "example": "_My dog's so friendly_—_always jumps on everyone it meets_. | _I really need to_ _pay extra attention_. | _Any other dog-walking dos and don'ts_ _I need to look out for_?",
     "example_chinese": "我的狗狗很热情，见人就扑，| 我还真的要多留意。| 还有什么其他遛狗时要注意的吗？"
   },
   {
@@ -20926,7 +20886,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈany ˈother ˈdog-walking ˈdos ˈand ˈdon'ts/",
-    "example": "_My dog's so friendly—always_ _jumps on everyone_ _it meets_. | _I really need to_ _pay extra attention_. | _Any other dog-walking dos and don'ts_ _I need to look out for_?",
+    "example": "_My dog's so friendly_—_always jumps on everyone it meets_. | _I really need to_ _pay extra attention_. | _Any other dog-walking dos and don'ts_ _I need to look out for_?",
     "example_chinese": "我的狗狗很热情，见人就扑，| 我还真的要多留意。| 还有什么其他遛狗时要注意的吗？"
   },
   {
@@ -20936,7 +20896,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈi ˈneed ˈto ˈlook ˈout ˈfor/",
-    "example": "_My dog's so friendly—always_ _jumps on everyone_ _it meets_. | _I really need to_ _pay extra attention_. | _Any other dog-walking dos and don'ts_ _I need to look out for_?",
+    "example": "_My dog's so friendly_—_always jumps on everyone it meets_. | _I really need to_ _pay extra attention_. | _Any other dog-walking dos and don'ts_ _I need to look out for_?",
     "example_chinese": "我的狗狗很热情，见人就扑，| 我还真的要多留意。| 还有什么其他遛狗时要注意的吗？"
   },
   {
@@ -21000,53 +20960,23 @@
     "example_chinese": "没错，记得清理狗狗的排泄物。| 没有清理也意味着被罚款。| 我们在大多数公园里都设有垃圾箱。"
   },
   {
-    "term": "I'll definitely",
+    "term": "I'll definitely clean up after my dog",
     "conversation_id": "70217",
     "sentence_id": 12,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "legal",
-    "phonetic": "UK /ˈi'll ˈdefinitely/",
-    "example": "_I'll definitely_ _clean up_ _after my dog_. | _Thanks for your_ _explanation_! | _If you hadn't mentioned it_, | _I wouldn't have noticed_ _those details_.",
+    "phonetic": "UK /ˈi'll ˈdefinitely ˈclean ˈup ˈafter ˈmy ˈdog/",
+    "example": "_I'll definitely clean up after my dog_. | _Thanks for your explanation_! | _If you hadn't mentioned it_, | _I wouldn't have noticed those details_.",
     "example_chinese": "我一定会清理狗狗的粪便的。| 谢谢你的解答！| 要不是你提醒，| 我还真没注意这些细节呢。"
   },
   {
-    "term": "clean up",
+    "term": "Thanks for your explanation",
     "conversation_id": "70217",
     "sentence_id": 12,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "legal",
-    "phonetic": "UK /ˈclean ˈup/",
-    "example": "_I'll definitely_ _clean up_ _after my dog_. | _Thanks for your_ _explanation_! | _If you hadn't mentioned it_, | _I wouldn't have noticed_ _those details_.",
-    "example_chinese": "我一定会清理狗狗的粪便的。| 谢谢你的解答！| 要不是你提醒，| 我还真没注意这些细节呢。"
-  },
-  {
-    "term": "after my dog",
-    "conversation_id": "70217",
-    "sentence_id": 12,
-    "difficulty": "normal",
-    "category": "legal",
-    "phonetic": "UK /ˈafter ˈmy ˈdog/",
-    "example": "_I'll definitely_ _clean up_ _after my dog_. | _Thanks for your_ _explanation_! | _If you hadn't mentioned it_, | _I wouldn't have noticed_ _those details_.",
-    "example_chinese": "我一定会清理狗狗的粪便的。| 谢谢你的解答！| 要不是你提醒，| 我还真没注意这些细节呢。"
-  },
-  {
-    "term": "Thanks for your",
-    "conversation_id": "70217",
-    "sentence_id": 12,
-    "difficulty": "normal",
-    "category": "legal",
-    "phonetic": "UK /ˈthanks ˈfor ˈyour/",
-    "example": "_I'll definitely_ _clean up_ _after my dog_. | _Thanks for your_ _explanation_! | _If you hadn't mentioned it_, | _I wouldn't have noticed_ _those details_.",
-    "example_chinese": "我一定会清理狗狗的粪便的。| 谢谢你的解答！| 要不是你提醒，| 我还真没注意这些细节呢。"
-  },
-  {
-    "term": "explanation",
-    "conversation_id": "70217",
-    "sentence_id": 12,
-    "difficulty": "easy",
-    "category": "legal",
-    "phonetic": "UK /ˈexplanation/",
-    "example": "_I'll definitely_ _clean up_ _after my dog_. | _Thanks for your_ _explanation_! | _If you hadn't mentioned it_, | _I wouldn't have noticed_ _those details_.",
+    "phonetic": "UK /ˈthanks ˈfor ˈyour ˈexplanation/",
+    "example": "_I'll definitely clean up after my dog_. | _Thanks for your explanation_! | _If you hadn't mentioned it_, | _I wouldn't have noticed those details_.",
     "example_chinese": "我一定会清理狗狗的粪便的。| 谢谢你的解答！| 要不是你提醒，| 我还真没注意这些细节呢。"
   },
   {
@@ -21056,27 +20986,17 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈif ˈyou ˈhadn't ˈmentioned ˈit/",
-    "example": "_I'll definitely_ _clean up_ _after my dog_. | _Thanks for your_ _explanation_! | _If you hadn't mentioned it_, | _I wouldn't have noticed_ _those details_.",
+    "example": "_I'll definitely clean up after my dog_. | _Thanks for your explanation_! | _If you hadn't mentioned it_, | _I wouldn't have noticed those details_.",
     "example_chinese": "我一定会清理狗狗的粪便的。| 谢谢你的解答！| 要不是你提醒，| 我还真没注意这些细节呢。"
   },
   {
-    "term": "I wouldn't have noticed",
+    "term": "I wouldn't have noticed those details",
     "conversation_id": "70217",
     "sentence_id": 12,
     "difficulty": "hard",
     "category": "legal",
-    "phonetic": "UK /ˈi ˈwouldn't ˈhave ˈnoticed/",
-    "example": "_I'll definitely_ _clean up_ _after my dog_. | _Thanks for your_ _explanation_! | _If you hadn't mentioned it_, | _I wouldn't have noticed_ _those details_.",
-    "example_chinese": "我一定会清理狗狗的粪便的。| 谢谢你的解答！| 要不是你提醒，| 我还真没注意这些细节呢。"
-  },
-  {
-    "term": "those details",
-    "conversation_id": "70217",
-    "sentence_id": 12,
-    "difficulty": "normal",
-    "category": "legal",
-    "phonetic": "UK /ˈthose ˈdetails/",
-    "example": "_I'll definitely_ _clean up_ _after my dog_. | _Thanks for your_ _explanation_! | _If you hadn't mentioned it_, | _I wouldn't have noticed_ _those details_.",
+    "phonetic": "UK /ˈi ˈwouldn't ˈhave ˈnoticed ˈthose ˈdetails/",
+    "example": "_I'll definitely clean up after my dog_. | _Thanks for your explanation_! | _If you hadn't mentioned it_, | _I wouldn't have noticed those details_.",
     "example_chinese": "我一定会清理狗狗的粪便的。| 谢谢你的解答！| 要不是你提醒，| 我还真没注意这些细节呢。"
   },
   {
@@ -21146,7 +21066,7 @@
     "difficulty": "normal",
     "category": "legal",
     "phonetic": "UK /ˈgreat ˈi'll/",
-    "example": "_Great, I'll_ _check the map on the website_ _right away_. | _I'll take my dog down to_ _the south end of the beach_ _this weekend_. | _Thanks again_ _for your help_!",
+    "example": "_Great, I'll_ _check the map on the website_ _right away_. | _I'll take my dog down to_ _the south end of the beach_ _this weekend_. | _Thanks again for your help_!",
     "example_chinese": "太好了，我这就去看一下网站上的地图。| 这周末我就带它去那个海滩的南边。再次感谢你的帮助！"
   },
   {
@@ -21156,7 +21076,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈcheck ˈthe ˈmap ˈon ˈthe ˈwebsite/",
-    "example": "_Great, I'll_ _check the map on the website_ _right away_. | _I'll take my dog down to_ _the south end of the beach_ _this weekend_. | _Thanks again_ _for your help_!",
+    "example": "_Great, I'll_ _check the map on the website_ _right away_. | _I'll take my dog down to_ _the south end of the beach_ _this weekend_. | _Thanks again for your help_!",
     "example_chinese": "太好了，我这就去看一下网站上的地图。| 这周末我就带它去那个海滩的南边。再次感谢你的帮助！"
   },
   {
@@ -21166,7 +21086,7 @@
     "difficulty": "normal",
     "category": "legal",
     "phonetic": "UK /ˈright ˈaway/",
-    "example": "_Great, I'll_ _check the map on the website_ _right away_. | _I'll take my dog down to_ _the south end of the beach_ _this weekend_. | _Thanks again_ _for your help_!",
+    "example": "_Great, I'll_ _check the map on the website_ _right away_. | _I'll take my dog down to_ _the south end of the beach_ _this weekend_. | _Thanks again for your help_!",
     "example_chinese": "太好了，我这就去看一下网站上的地图。| 这周末我就带它去那个海滩的南边。再次感谢你的帮助！"
   },
   {
@@ -21176,7 +21096,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈi'll ˈtake ˈmy ˈdog ˈdown ˈto/",
-    "example": "_Great, I'll_ _check the map on the website_ _right away_. | _I'll take my dog down to_ _the south end of the beach_ _this weekend_. | _Thanks again_ _for your help_!",
+    "example": "_Great, I'll_ _check the map on the website_ _right away_. | _I'll take my dog down to_ _the south end of the beach_ _this weekend_. | _Thanks again for your help_!",
     "example_chinese": "太好了，我这就去看一下网站上的地图。| 这周末我就带它去那个海滩的南边。再次感谢你的帮助！"
   },
   {
@@ -21186,7 +21106,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈthe ˈsouth ˈend ˈof ˈthe ˈbeach/",
-    "example": "_Great, I'll_ _check the map on the website_ _right away_. | _I'll take my dog down to_ _the south end of the beach_ _this weekend_. | _Thanks again_ _for your help_!",
+    "example": "_Great, I'll_ _check the map on the website_ _right away_. | _I'll take my dog down to_ _the south end of the beach_ _this weekend_. | _Thanks again for your help_!",
     "example_chinese": "太好了，我这就去看一下网站上的地图。| 这周末我就带它去那个海滩的南边。再次感谢你的帮助！"
   },
   {
@@ -21196,27 +21116,17 @@
     "difficulty": "normal",
     "category": "legal",
     "phonetic": "UK /ˈthis ˈweekend/",
-    "example": "_Great, I'll_ _check the map on the website_ _right away_. | _I'll take my dog down to_ _the south end of the beach_ _this weekend_. | _Thanks again_ _for your help_!",
+    "example": "_Great, I'll_ _check the map on the website_ _right away_. | _I'll take my dog down to_ _the south end of the beach_ _this weekend_. | _Thanks again for your help_!",
     "example_chinese": "太好了，我这就去看一下网站上的地图。| 这周末我就带它去那个海滩的南边。再次感谢你的帮助！"
   },
   {
-    "term": "Thanks again",
+    "term": "Thanks again for your help",
     "conversation_id": "70217",
     "sentence_id": 14,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "legal",
-    "phonetic": "UK /ˈthanks ˈagain/",
-    "example": "_Great, I'll_ _check the map on the website_ _right away_. | _I'll take my dog down to_ _the south end of the beach_ _this weekend_. | _Thanks again_ _for your help_!",
-    "example_chinese": "太好了，我这就去看一下网站上的地图。| 这周末我就带它去那个海滩的南边。再次感谢你的帮助！"
-  },
-  {
-    "term": "for your help",
-    "conversation_id": "70217",
-    "sentence_id": 14,
-    "difficulty": "normal",
-    "category": "legal",
-    "phonetic": "UK /ˈfor ˈyour ˈhelp/",
-    "example": "_Great, I'll_ _check the map on the website_ _right away_. | _I'll take my dog down to_ _the south end of the beach_ _this weekend_. | _Thanks again_ _for your help_!",
+    "phonetic": "UK /ˈthanks ˈagain ˈfor ˈyour ˈhelp/",
+    "example": "_Great, I'll_ _check the map on the website_ _right away_. | _I'll take my dog down to_ _the south end of the beach_ _this weekend_. | _Thanks again for your help_!",
     "example_chinese": "太好了，我这就去看一下网站上的地图。| 这周末我就带它去那个海滩的南边。再次感谢你的帮助！"
   },
   {
@@ -21266,7 +21176,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈhi ˈthere ˈi'd ˈlike/",
-    "example": "_Hi there, I'd like_ _to report a driver_ _in our apartment complex_ _who keeps speeding_. | _We all think_ _it's really dangerous_. | _Also, the car's engine_ _seems really powerful_ _and super loud_.",
+    "example": "_Hi there, I'd like_ _to report a driver_ _in our apartment complex_ _who keeps speeding_. | _We all think_ _it's really dangerous_. | _Also, the car's engine_ _seems really powerful and super loud_.",
     "example_chinese": "您好，我要投诉我们公寓小区里有位司机开车一直超速。| 我们都觉得很危险。| 而且感觉车子发动机很强，非常吵。"
   },
   {
@@ -21276,7 +21186,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈto ˈreport ˈa ˈdriver/",
-    "example": "_Hi there, I'd like_ _to report a driver_ _in our apartment complex_ _who keeps speeding_. | _We all think_ _it's really dangerous_. | _Also, the car's engine_ _seems really powerful_ _and super loud_.",
+    "example": "_Hi there, I'd like_ _to report a driver_ _in our apartment complex_ _who keeps speeding_. | _We all think_ _it's really dangerous_. | _Also, the car's engine_ _seems really powerful and super loud_.",
     "example_chinese": "您好，我要投诉我们公寓小区里有位司机开车一直超速。| 我们都觉得很危险。| 而且感觉车子发动机很强，非常吵。"
   },
   {
@@ -21286,7 +21196,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈin ˈour ˈapartment ˈcomplex/",
-    "example": "_Hi there, I'd like_ _to report a driver_ _in our apartment complex_ _who keeps speeding_. | _We all think_ _it's really dangerous_. | _Also, the car's engine_ _seems really powerful_ _and super loud_.",
+    "example": "_Hi there, I'd like_ _to report a driver_ _in our apartment complex_ _who keeps speeding_. | _We all think_ _it's really dangerous_. | _Also, the car's engine_ _seems really powerful and super loud_.",
     "example_chinese": "您好，我要投诉我们公寓小区里有位司机开车一直超速。| 我们都觉得很危险。| 而且感觉车子发动机很强，非常吵。"
   },
   {
@@ -21296,7 +21206,7 @@
     "difficulty": "normal",
     "category": "legal",
     "phonetic": "UK /ˈwho ˈkeeps ˈspeeding/",
-    "example": "_Hi there, I'd like_ _to report a driver_ _in our apartment complex_ _who keeps speeding_. | _We all think_ _it's really dangerous_. | _Also, the car's engine_ _seems really powerful_ _and super loud_.",
+    "example": "_Hi there, I'd like_ _to report a driver_ _in our apartment complex_ _who keeps speeding_. | _We all think_ _it's really dangerous_. | _Also, the car's engine_ _seems really powerful and super loud_.",
     "example_chinese": "您好，我要投诉我们公寓小区里有位司机开车一直超速。| 我们都觉得很危险。| 而且感觉车子发动机很强，非常吵。"
   },
   {
@@ -21306,7 +21216,7 @@
     "difficulty": "normal",
     "category": "legal",
     "phonetic": "UK /ˈwe ˈall ˈthink/",
-    "example": "_Hi there, I'd like_ _to report a driver_ _in our apartment complex_ _who keeps speeding_. | _We all think_ _it's really dangerous_. | _Also, the car's engine_ _seems really powerful_ _and super loud_.",
+    "example": "_Hi there, I'd like_ _to report a driver_ _in our apartment complex_ _who keeps speeding_. | _We all think_ _it's really dangerous_. | _Also, the car's engine_ _seems really powerful and super loud_.",
     "example_chinese": "您好，我要投诉我们公寓小区里有位司机开车一直超速。| 我们都觉得很危险。| 而且感觉车子发动机很强，非常吵。"
   },
   {
@@ -21316,7 +21226,7 @@
     "difficulty": "normal",
     "category": "legal",
     "phonetic": "UK /ˈit's ˈreally ˈdangerous/",
-    "example": "_Hi there, I'd like_ _to report a driver_ _in our apartment complex_ _who keeps speeding_. | _We all think_ _it's really dangerous_. | _Also, the car's engine_ _seems really powerful_ _and super loud_.",
+    "example": "_Hi there, I'd like_ _to report a driver_ _in our apartment complex_ _who keeps speeding_. | _We all think_ _it's really dangerous_. | _Also, the car's engine_ _seems really powerful and super loud_.",
     "example_chinese": "您好，我要投诉我们公寓小区里有位司机开车一直超速。| 我们都觉得很危险。| 而且感觉车子发动机很强，非常吵。"
   },
   {
@@ -21326,27 +21236,17 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈalso ˈthe ˈcar's ˈengine/",
-    "example": "_Hi there, I'd like_ _to report a driver_ _in our apartment complex_ _who keeps speeding_. | _We all think_ _it's really dangerous_. | _Also, the car's engine_ _seems really powerful_ _and super loud_.",
+    "example": "_Hi there, I'd like_ _to report a driver_ _in our apartment complex_ _who keeps speeding_. | _We all think_ _it's really dangerous_. | _Also, the car's engine_ _seems really powerful and super loud_.",
     "example_chinese": "您好，我要投诉我们公寓小区里有位司机开车一直超速。| 我们都觉得很危险。| 而且感觉车子发动机很强，非常吵。"
   },
   {
-    "term": "seems really powerful",
+    "term": "seems really powerful and super loud",
     "conversation_id": "70216",
     "sentence_id": 2,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "legal",
-    "phonetic": "UK /ˈseems ˈreally ˈpowerful/",
-    "example": "_Hi there, I'd like_ _to report a driver_ _in our apartment complex_ _who keeps speeding_. | _We all think_ _it's really dangerous_. | _Also, the car's engine_ _seems really powerful_ _and super loud_.",
-    "example_chinese": "您好，我要投诉我们公寓小区里有位司机开车一直超速。| 我们都觉得很危险。| 而且感觉车子发动机很强，非常吵。"
-  },
-  {
-    "term": "and super loud",
-    "conversation_id": "70216",
-    "sentence_id": 2,
-    "difficulty": "normal",
-    "category": "legal",
-    "phonetic": "UK /ˈand ˈsuper ˈloud/",
-    "example": "_Hi there, I'd like_ _to report a driver_ _in our apartment complex_ _who keeps speeding_. | _We all think_ _it's really dangerous_. | _Also, the car's engine_ _seems really powerful_ _and super loud_.",
+    "phonetic": "UK /ˈseems ˈreally ˈpowerful ˈand ˈsuper ˈloud/",
+    "example": "_Hi there, I'd like_ _to report a driver_ _in our apartment complex_ _who keeps speeding_. | _We all think_ _it's really dangerous_. | _Also, the car's engine_ _seems really powerful and super loud_.",
     "example_chinese": "您好，我要投诉我们公寓小区里有位司机开车一直超速。| 我们都觉得很危险。| 而且感觉车子发动机很强，非常吵。"
   },
   {
@@ -21416,7 +21316,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈactually ˈevery ˈday ˈwhen ˈi/",
-    "example": "_Actually, every day when I_ _take my kid to school_, | _I see him_ _speeding past_ _in his car_. | _The most recent time_ _was around 7:30 this morning_, | _right at the entrance_ _of our apartment complex_.",
+    "example": "_Actually, every day when I_ _take my kid to school_, | _I see him_ _speeding past in his car_. | _The most recent time_ _was around 7:30 this morning_, | _right at the entrance_ _of our apartment complex_.",
     "example_chinese": "其实，我每天送孩子去学校的时候，| 都看到他车子飞速开过去。| 最近的一次发生在今天早上七点半左右，| 就在我们公寓小区门口。"
   },
   {
@@ -21426,7 +21326,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈtake ˈmy ˈkid ˈto ˈschool/",
-    "example": "_Actually, every day when I_ _take my kid to school_, | _I see him_ _speeding past_ _in his car_. | _The most recent time_ _was around 7:30 this morning_, | _right at the entrance_ _of our apartment complex_.",
+    "example": "_Actually, every day when I_ _take my kid to school_, | _I see him_ _speeding past in his car_. | _The most recent time_ _was around 7:30 this morning_, | _right at the entrance_ _of our apartment complex_.",
     "example_chinese": "其实，我每天送孩子去学校的时候，| 都看到他车子飞速开过去。| 最近的一次发生在今天早上七点半左右，| 就在我们公寓小区门口。"
   },
   {
@@ -21436,27 +21336,17 @@
     "difficulty": "normal",
     "category": "legal",
     "phonetic": "UK /ˈi ˈsee ˈhim/",
-    "example": "_Actually, every day when I_ _take my kid to school_, | _I see him_ _speeding past_ _in his car_. | _The most recent time_ _was around 7:30 this morning_, | _right at the entrance_ _of our apartment complex_.",
+    "example": "_Actually, every day when I_ _take my kid to school_, | _I see him_ _speeding past in his car_. | _The most recent time_ _was around 7:30 this morning_, | _right at the entrance_ _of our apartment complex_.",
     "example_chinese": "其实，我每天送孩子去学校的时候，| 都看到他车子飞速开过去。| 最近的一次发生在今天早上七点半左右，| 就在我们公寓小区门口。"
   },
   {
-    "term": "speeding past",
+    "term": "speeding past in his car",
     "conversation_id": "70216",
     "sentence_id": 4,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "legal",
-    "phonetic": "UK /ˈspeeding ˈpast/",
-    "example": "_Actually, every day when I_ _take my kid to school_, | _I see him_ _speeding past_ _in his car_. | _The most recent time_ _was around 7:30 this morning_, | _right at the entrance_ _of our apartment complex_.",
-    "example_chinese": "其实，我每天送孩子去学校的时候，| 都看到他车子飞速开过去。| 最近的一次发生在今天早上七点半左右，| 就在我们公寓小区门口。"
-  },
-  {
-    "term": "in his car",
-    "conversation_id": "70216",
-    "sentence_id": 4,
-    "difficulty": "normal",
-    "category": "legal",
-    "phonetic": "UK /ˈin ˈhis ˈcar/",
-    "example": "_Actually, every day when I_ _take my kid to school_, | _I see him_ _speeding past_ _in his car_. | _The most recent time_ _was around 7:30 this morning_, | _right at the entrance_ _of our apartment complex_.",
+    "phonetic": "UK /ˈspeeding ˈpast ˈin ˈhis ˈcar/",
+    "example": "_Actually, every day when I_ _take my kid to school_, | _I see him_ _speeding past in his car_. | _The most recent time_ _was around 7:30 this morning_, | _right at the entrance_ _of our apartment complex_.",
     "example_chinese": "其实，我每天送孩子去学校的时候，| 都看到他车子飞速开过去。| 最近的一次发生在今天早上七点半左右，| 就在我们公寓小区门口。"
   },
   {
@@ -21466,7 +21356,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈthe ˈmost ˈrecent ˈtime/",
-    "example": "_Actually, every day when I_ _take my kid to school_, | _I see him_ _speeding past_ _in his car_. | _The most recent time_ _was around 7:30 this morning_, | _right at the entrance_ _of our apartment complex_.",
+    "example": "_Actually, every day when I_ _take my kid to school_, | _I see him_ _speeding past in his car_. | _The most recent time_ _was around 7:30 this morning_, | _right at the entrance_ _of our apartment complex_.",
     "example_chinese": "其实，我每天送孩子去学校的时候，| 都看到他车子飞速开过去。| 最近的一次发生在今天早上七点半左右，| 就在我们公寓小区门口。"
   },
   {
@@ -21476,7 +21366,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈwas ˈaround ˈ730 ˈthis ˈmorning/",
-    "example": "_Actually, every day when I_ _take my kid to school_, | _I see him_ _speeding past_ _in his car_. | _The most recent time_ _was around 7:30 this morning_, | _right at the entrance_ _of our apartment complex_.",
+    "example": "_Actually, every day when I_ _take my kid to school_, | _I see him_ _speeding past in his car_. | _The most recent time_ _was around 7:30 this morning_, | _right at the entrance_ _of our apartment complex_.",
     "example_chinese": "其实，我每天送孩子去学校的时候，| 都看到他车子飞速开过去。| 最近的一次发生在今天早上七点半左右，| 就在我们公寓小区门口。"
   },
   {
@@ -21486,7 +21376,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈright ˈat ˈthe ˈentrance/",
-    "example": "_Actually, every day when I_ _take my kid to school_, | _I see him_ _speeding past_ _in his car_. | _The most recent time_ _was around 7:30 this morning_, | _right at the entrance_ _of our apartment complex_.",
+    "example": "_Actually, every day when I_ _take my kid to school_, | _I see him_ _speeding past in his car_. | _The most recent time_ _was around 7:30 this morning_, | _right at the entrance_ _of our apartment complex_.",
     "example_chinese": "其实，我每天送孩子去学校的时候，| 都看到他车子飞速开过去。| 最近的一次发生在今天早上七点半左右，| 就在我们公寓小区门口。"
   },
   {
@@ -21496,7 +21386,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈof ˈour ˈapartment ˈcomplex/",
-    "example": "_Actually, every day when I_ _take my kid to school_, | _I see him_ _speeding past_ _in his car_. | _The most recent time_ _was around 7:30 this morning_, | _right at the entrance_ _of our apartment complex_.",
+    "example": "_Actually, every day when I_ _take my kid to school_, | _I see him_ _speeding past in his car_. | _The most recent time_ _was around 7:30 this morning_, | _right at the entrance_ _of our apartment complex_.",
     "example_chinese": "其实，我每天送孩子去学校的时候，| 都看到他车子飞速开过去。| 最近的一次发生在今天早上七点半左右，| 就在我们公寓小区门口。"
   },
   {
@@ -21546,27 +21436,17 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈit's ˈa ˈsilver ˈcar/",
-    "example": "_It's a silver car_. | _I didn't catch_ _the license plate number_, | _but it's driven by_ _a young person_ _who lives in our complex_. | _And he always has_ _this cocky look_ _on his face_.",
+    "example": "_It's a silver car_. | _I didn't catch the license plate number_, | _but it's driven by_ _a young person_ _who lives in our complex_. | _And he always has_ _this cocky look_ _on his face_.",
     "example_chinese": "是辆银色的车。| 车牌号我没看清，| 是我们小区一位年轻人开的。| 表情还非常嚣张呢。"
   },
   {
-    "term": "I didn't catch",
-    "conversation_id": "70216",
-    "sentence_id": 6,
-    "difficulty": "normal",
-    "category": "legal",
-    "phonetic": "UK /ˈi ˈdidn't ˈcatch/",
-    "example": "_It's a silver car_. | _I didn't catch_ _the license plate number_, | _but it's driven by_ _a young person_ _who lives in our complex_. | _And he always has_ _this cocky look_ _on his face_.",
-    "example_chinese": "是辆银色的车。| 车牌号我没看清，| 是我们小区一位年轻人开的。| 表情还非常嚣张呢。"
-  },
-  {
-    "term": "the license plate number",
+    "term": "I didn't catch the license plate number",
     "conversation_id": "70216",
     "sentence_id": 6,
     "difficulty": "hard",
     "category": "legal",
-    "phonetic": "UK /ˈthe ˈlicense ˈplate ˈnumber/",
-    "example": "_It's a silver car_. | _I didn't catch_ _the license plate number_, | _but it's driven by_ _a young person_ _who lives in our complex_. | _And he always has_ _this cocky look_ _on his face_.",
+    "phonetic": "UK /ˈi ˈdidn't ˈcatch ˈthe ˈlicense ˈplate ˈnumber/",
+    "example": "_It's a silver car_. | _I didn't catch the license plate number_, | _but it's driven by_ _a young person_ _who lives in our complex_. | _And he always has_ _this cocky look_ _on his face_.",
     "example_chinese": "是辆银色的车。| 车牌号我没看清，| 是我们小区一位年轻人开的。| 表情还非常嚣张呢。"
   },
   {
@@ -21576,7 +21456,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈbut ˈit's ˈdriven ˈby/",
-    "example": "_It's a silver car_. | _I didn't catch_ _the license plate number_, | _but it's driven by_ _a young person_ _who lives in our complex_. | _And he always has_ _this cocky look_ _on his face_.",
+    "example": "_It's a silver car_. | _I didn't catch the license plate number_, | _but it's driven by_ _a young person_ _who lives in our complex_. | _And he always has_ _this cocky look_ _on his face_.",
     "example_chinese": "是辆银色的车。| 车牌号我没看清，| 是我们小区一位年轻人开的。| 表情还非常嚣张呢。"
   },
   {
@@ -21586,7 +21466,7 @@
     "difficulty": "normal",
     "category": "legal",
     "phonetic": "UK /ˈa ˈyoung ˈperson/",
-    "example": "_It's a silver car_. | _I didn't catch_ _the license plate number_, | _but it's driven by_ _a young person_ _who lives in our complex_. | _And he always has_ _this cocky look_ _on his face_.",
+    "example": "_It's a silver car_. | _I didn't catch the license plate number_, | _but it's driven by_ _a young person_ _who lives in our complex_. | _And he always has_ _this cocky look_ _on his face_.",
     "example_chinese": "是辆银色的车。| 车牌号我没看清，| 是我们小区一位年轻人开的。| 表情还非常嚣张呢。"
   },
   {
@@ -21596,7 +21476,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈwho ˈlives ˈin ˈour ˈcomplex/",
-    "example": "_It's a silver car_. | _I didn't catch_ _the license plate number_, | _but it's driven by_ _a young person_ _who lives in our complex_. | _And he always has_ _this cocky look_ _on his face_.",
+    "example": "_It's a silver car_. | _I didn't catch the license plate number_, | _but it's driven by_ _a young person_ _who lives in our complex_. | _And he always has_ _this cocky look_ _on his face_.",
     "example_chinese": "是辆银色的车。| 车牌号我没看清，| 是我们小区一位年轻人开的。| 表情还非常嚣张呢。"
   },
   {
@@ -21606,7 +21486,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈand ˈhe ˈalways ˈhas/",
-    "example": "_It's a silver car_. | _I didn't catch_ _the license plate number_, | _but it's driven by_ _a young person_ _who lives in our complex_. | _And he always has_ _this cocky look_ _on his face_.",
+    "example": "_It's a silver car_. | _I didn't catch the license plate number_, | _but it's driven by_ _a young person_ _who lives in our complex_. | _And he always has_ _this cocky look_ _on his face_.",
     "example_chinese": "是辆银色的车。| 车牌号我没看清，| 是我们小区一位年轻人开的。| 表情还非常嚣张呢。"
   },
   {
@@ -21616,7 +21496,7 @@
     "difficulty": "normal",
     "category": "legal",
     "phonetic": "UK /ˈthis ˈcocky ˈlook/",
-    "example": "_It's a silver car_. | _I didn't catch_ _the license plate number_, | _but it's driven by_ _a young person_ _who lives in our complex_. | _And he always has_ _this cocky look_ _on his face_.",
+    "example": "_It's a silver car_. | _I didn't catch the license plate number_, | _but it's driven by_ _a young person_ _who lives in our complex_. | _And he always has_ _this cocky look_ _on his face_.",
     "example_chinese": "是辆银色的车。| 车牌号我没看清，| 是我们小区一位年轻人开的。| 表情还非常嚣张呢。"
   },
   {
@@ -21626,7 +21506,7 @@
     "difficulty": "normal",
     "category": "legal",
     "phonetic": "UK /ˈon ˈhis ˈface/",
-    "example": "_It's a silver car_. | _I didn't catch_ _the license plate number_, | _but it's driven by_ _a young person_ _who lives in our complex_. | _And he always has_ _this cocky look_ _on his face_.",
+    "example": "_It's a silver car_. | _I didn't catch the license plate number_, | _but it's driven by_ _a young person_ _who lives in our complex_. | _And he always has_ _this cocky look_ _on his face_.",
     "example_chinese": "是辆银色的车。| 车牌号我没看清，| 是我们小区一位年轻人开的。| 表情还非常嚣张呢。"
   },
   {
@@ -21740,23 +21620,13 @@
     "example_chinese": "好多邻居都看到过呢，| 对他都快闻风丧胆了。| 他开车像疯了一样快，| 我们都很担心孩子们的安全。"
   },
   {
-    "term": "I understand I'll dispatch",
+    "term": "I understand I'll dispatch a patrol car",
     "conversation_id": "70216",
     "sentence_id": 9,
     "difficulty": "hard",
     "category": "legal",
-    "phonetic": "UK /ˈi ˈunderstand ˈi'll ˈdispatch/",
-    "example": "_I understand. I'll dispatch_ _a patrol car_ _to monitor the area_ _at those times_, | _and if we can pinpoint the driver_, | _we'll have a word with him_.",
-    "example_chinese": "我明白。我会在那个时段派巡逻警车去监控那个区域，| 如果我们能确认司机身份，| 我们会跟他谈谈的。"
-  },
-  {
-    "term": "a patrol car",
-    "conversation_id": "70216",
-    "sentence_id": 9,
-    "difficulty": "normal",
-    "category": "legal",
-    "phonetic": "UK /ˈa ˈpatrol ˈcar/",
-    "example": "_I understand. I'll dispatch_ _a patrol car_ _to monitor the area_ _at those times_, | _and if we can pinpoint the driver_, | _we'll have a word with him_.",
+    "phonetic": "UK /ˈi ˈunderstand ˈi'll ˈdispatch ˈa ˈpatrol ˈcar/",
+    "example": "_I understand. I'll dispatch a patrol car_ _to monitor the area_ _at those times_, | _and if we can pinpoint the driver_, | _we'll have a word with him_.",
     "example_chinese": "我明白。我会在那个时段派巡逻警车去监控那个区域，| 如果我们能确认司机身份，| 我们会跟他谈谈的。"
   },
   {
@@ -21766,7 +21636,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈto ˈmonitor ˈthe ˈarea/",
-    "example": "_I understand. I'll dispatch_ _a patrol car_ _to monitor the area_ _at those times_, | _and if we can pinpoint the driver_, | _we'll have a word with him_.",
+    "example": "_I understand. I'll dispatch a patrol car_ _to monitor the area_ _at those times_, | _and if we can pinpoint the driver_, | _we'll have a word with him_.",
     "example_chinese": "我明白。我会在那个时段派巡逻警车去监控那个区域，| 如果我们能确认司机身份，| 我们会跟他谈谈的。"
   },
   {
@@ -21776,7 +21646,7 @@
     "difficulty": "normal",
     "category": "legal",
     "phonetic": "UK /ˈat ˈthose ˈtimes/",
-    "example": "_I understand. I'll dispatch_ _a patrol car_ _to monitor the area_ _at those times_, | _and if we can pinpoint the driver_, | _we'll have a word with him_.",
+    "example": "_I understand. I'll dispatch a patrol car_ _to monitor the area_ _at those times_, | _and if we can pinpoint the driver_, | _we'll have a word with him_.",
     "example_chinese": "我明白。我会在那个时段派巡逻警车去监控那个区域，| 如果我们能确认司机身份，| 我们会跟他谈谈的。"
   },
   {
@@ -21786,7 +21656,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈand ˈif ˈwe ˈcan ˈpinpoint ˈthe ˈdriver/",
-    "example": "_I understand. I'll dispatch_ _a patrol car_ _to monitor the area_ _at those times_, | _and if we can pinpoint the driver_, | _we'll have a word with him_.",
+    "example": "_I understand. I'll dispatch a patrol car_ _to monitor the area_ _at those times_, | _and if we can pinpoint the driver_, | _we'll have a word with him_.",
     "example_chinese": "我明白。我会在那个时段派巡逻警车去监控那个区域，| 如果我们能确认司机身份，| 我们会跟他谈谈的。"
   },
   {
@@ -21796,7 +21666,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈwe'll ˈhave ˈa ˈword ˈwith ˈhim/",
-    "example": "_I understand. I'll dispatch_ _a patrol car_ _to monitor the area_ _at those times_, | _and if we can pinpoint the driver_, | _we'll have a word with him_.",
+    "example": "_I understand. I'll dispatch a patrol car_ _to monitor the area_ _at those times_, | _and if we can pinpoint the driver_, | _we'll have a word with him_.",
     "example_chinese": "我明白。我会在那个时段派巡逻警车去监控那个区域，| 如果我们能确认司机身份，| 我们会跟他谈谈的。"
   },
   {
@@ -22336,7 +22206,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈwe'd ˈlike ˈan ˈempty ˈproperty/",
-    "example": "_We'd like an empty property_ | _— that keeps things simple_. | _I don't like houses_ _cluttered with_ _furniture and stuff_; | _I don't think we could_ _move into one like that_.",
+    "example": "_We'd like an empty property_ | _— that keeps things simple_. | _I don't like houses_ _cluttered with furniture and stuff_; | _I don't think we could_ _move into one like that_.",
     "example_chinese": "我们希望能买一套空房子，| 这样一切都简单。| 我不喜欢到处堆满家具和杂物的房子。| 我觉得我们没办法搬进那样的房子。"
   },
   {
@@ -22346,7 +22216,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈ— ˈthat ˈkeeps ˈthings ˈsimple/",
-    "example": "_We'd like an empty property_ | _— that keeps things simple_. | _I don't like houses_ _cluttered with_ _furniture and stuff_; | _I don't think we could_ _move into one like that_.",
+    "example": "_We'd like an empty property_ | _— that keeps things simple_. | _I don't like houses_ _cluttered with furniture and stuff_; | _I don't think we could_ _move into one like that_.",
     "example_chinese": "我们希望能买一套空房子，| 这样一切都简单。| 我不喜欢到处堆满家具和杂物的房子。| 我觉得我们没办法搬进那样的房子。"
   },
   {
@@ -22356,27 +22226,17 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈi ˈdon't ˈlike ˈhouses/",
-    "example": "_We'd like an empty property_ | _— that keeps things simple_. | _I don't like houses_ _cluttered with_ _furniture and stuff_; | _I don't think we could_ _move into one like that_.",
+    "example": "_We'd like an empty property_ | _— that keeps things simple_. | _I don't like houses_ _cluttered with furniture and stuff_; | _I don't think we could_ _move into one like that_.",
     "example_chinese": "我们希望能买一套空房子，| 这样一切都简单。| 我不喜欢到处堆满家具和杂物的房子。| 我觉得我们没办法搬进那样的房子。"
   },
   {
-    "term": "cluttered with",
+    "term": "cluttered with furniture and stuff",
     "conversation_id": "70215",
     "sentence_id": 8,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈcluttered ˈwith/",
-    "example": "_We'd like an empty property_ | _— that keeps things simple_. | _I don't like houses_ _cluttered with_ _furniture and stuff_; | _I don't think we could_ _move into one like that_.",
-    "example_chinese": "我们希望能买一套空房子，| 这样一切都简单。| 我不喜欢到处堆满家具和杂物的房子。| 我觉得我们没办法搬进那样的房子。"
-  },
-  {
-    "term": "furniture and stuff",
-    "conversation_id": "70215",
-    "sentence_id": 8,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /ˈfurniture ˈand ˈstuff/",
-    "example": "_We'd like an empty property_ | _— that keeps things simple_. | _I don't like houses_ _cluttered with_ _furniture and stuff_; | _I don't think we could_ _move into one like that_.",
+    "phonetic": "UK /ˈcluttered ˈwith ˈfurniture ˈand ˈstuff/",
+    "example": "_We'd like an empty property_ | _— that keeps things simple_. | _I don't like houses_ _cluttered with furniture and stuff_; | _I don't think we could_ _move into one like that_.",
     "example_chinese": "我们希望能买一套空房子，| 这样一切都简单。| 我不喜欢到处堆满家具和杂物的房子。| 我觉得我们没办法搬进那样的房子。"
   },
   {
@@ -22386,7 +22246,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈi ˈdon't ˈthink ˈwe ˈcould/",
-    "example": "_We'd like an empty property_ | _— that keeps things simple_. | _I don't like houses_ _cluttered with_ _furniture and stuff_; | _I don't think we could_ _move into one like that_.",
+    "example": "_We'd like an empty property_ | _— that keeps things simple_. | _I don't like houses_ _cluttered with furniture and stuff_; | _I don't think we could_ _move into one like that_.",
     "example_chinese": "我们希望能买一套空房子，| 这样一切都简单。| 我不喜欢到处堆满家具和杂物的房子。| 我觉得我们没办法搬进那样的房子。"
   },
   {
@@ -22396,7 +22256,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈmove ˈinto ˈone ˈlike ˈthat/",
-    "example": "_We'd like an empty property_ | _— that keeps things simple_. | _I don't like houses_ _cluttered with_ _furniture and stuff_; | _I don't think we could_ _move into one like that_.",
+    "example": "_We'd like an empty property_ | _— that keeps things simple_. | _I don't like houses_ _cluttered with furniture and stuff_; | _I don't think we could_ _move into one like that_.",
     "example_chinese": "我们希望能买一套空房子，| 这样一切都简单。| 我不喜欢到处堆满家具和杂物的房子。| 我觉得我们没办法搬进那样的房子。"
   },
   {
@@ -23330,23 +23190,13 @@
     "example_chinese": "这一套操作下来大概要多久？| 希望能快点修好。| 我在家等着的时候，要准备些什么吗？| 比如螺丝刀？"
   },
   {
-    "term": "The basic check",
+    "term": "The basic check usually takes",
     "conversation_id": "70214",
     "sentence_id": 13,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈthe ˈbasic ˈcheck/",
-    "example": "_The basic check_ _usually takes_ _about half an hour_, | _and if we need to_ _open it up_ _for a motor inspection_, | _it will be around sixty minutes_. | _You don't have to_ _get any tools ready_.",
-    "example_chinese": "整套流程大概半小时，| 如果需要拆机检查电机，| 会大概 60 分钟。| 你不需要准备任何工具。"
-  },
-  {
-    "term": "usually takes",
-    "conversation_id": "70214",
-    "sentence_id": 13,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /ˈusually ˈtakes/",
-    "example": "_The basic check_ _usually takes_ _about half an hour_, | _and if we need to_ _open it up_ _for a motor inspection_, | _it will be around sixty minutes_. | _You don't have to_ _get any tools ready_.",
+    "phonetic": "UK /ˈthe ˈbasic ˈcheck ˈusually ˈtakes/",
+    "example": "_The basic check usually takes_ _about half an hour_, | _and if we need to_ _open it up_ _for a motor inspection_, | _it will be around sixty minutes_. | _You don't have to_ _get any tools ready_.",
     "example_chinese": "整套流程大概半小时，| 如果需要拆机检查电机，| 会大概 60 分钟。| 你不需要准备任何工具。"
   },
   {
@@ -23356,7 +23206,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈabout ˈhalf ˈan ˈhour/",
-    "example": "_The basic check_ _usually takes_ _about half an hour_, | _and if we need to_ _open it up_ _for a motor inspection_, | _it will be around sixty minutes_. | _You don't have to_ _get any tools ready_.",
+    "example": "_The basic check usually takes_ _about half an hour_, | _and if we need to_ _open it up_ _for a motor inspection_, | _it will be around sixty minutes_. | _You don't have to_ _get any tools ready_.",
     "example_chinese": "整套流程大概半小时，| 如果需要拆机检查电机，| 会大概 60 分钟。| 你不需要准备任何工具。"
   },
   {
@@ -23366,7 +23216,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈand ˈif ˈwe ˈneed ˈto/",
-    "example": "_The basic check_ _usually takes_ _about half an hour_, | _and if we need to_ _open it up_ _for a motor inspection_, | _it will be around sixty minutes_. | _You don't have to_ _get any tools ready_.",
+    "example": "_The basic check usually takes_ _about half an hour_, | _and if we need to_ _open it up_ _for a motor inspection_, | _it will be around sixty minutes_. | _You don't have to_ _get any tools ready_.",
     "example_chinese": "整套流程大概半小时，| 如果需要拆机检查电机，| 会大概 60 分钟。| 你不需要准备任何工具。"
   },
   {
@@ -23376,7 +23226,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈopen ˈit ˈup/",
-    "example": "_The basic check_ _usually takes_ _about half an hour_, | _and if we need to_ _open it up_ _for a motor inspection_, | _it will be around sixty minutes_. | _You don't have to_ _get any tools ready_.",
+    "example": "_The basic check usually takes_ _about half an hour_, | _and if we need to_ _open it up_ _for a motor inspection_, | _it will be around sixty minutes_. | _You don't have to_ _get any tools ready_.",
     "example_chinese": "整套流程大概半小时，| 如果需要拆机检查电机，| 会大概 60 分钟。| 你不需要准备任何工具。"
   },
   {
@@ -23386,7 +23236,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈfor ˈa ˈmotor ˈinspection/",
-    "example": "_The basic check_ _usually takes_ _about half an hour_, | _and if we need to_ _open it up_ _for a motor inspection_, | _it will be around sixty minutes_. | _You don't have to_ _get any tools ready_.",
+    "example": "_The basic check usually takes_ _about half an hour_, | _and if we need to_ _open it up_ _for a motor inspection_, | _it will be around sixty minutes_. | _You don't have to_ _get any tools ready_.",
     "example_chinese": "整套流程大概半小时，| 如果需要拆机检查电机，| 会大概 60 分钟。| 你不需要准备任何工具。"
   },
   {
@@ -23396,7 +23246,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈit ˈwill ˈbe ˈaround ˈsixty ˈminutes/",
-    "example": "_The basic check_ _usually takes_ _about half an hour_, | _and if we need to_ _open it up_ _for a motor inspection_, | _it will be around sixty minutes_. | _You don't have to_ _get any tools ready_.",
+    "example": "_The basic check usually takes_ _about half an hour_, | _and if we need to_ _open it up_ _for a motor inspection_, | _it will be around sixty minutes_. | _You don't have to_ _get any tools ready_.",
     "example_chinese": "整套流程大概半小时，| 如果需要拆机检查电机，| 会大概 60 分钟。| 你不需要准备任何工具。"
   },
   {
@@ -23406,7 +23256,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈyou ˈdon't ˈhave ˈto/",
-    "example": "_The basic check_ _usually takes_ _about half an hour_, | _and if we need to_ _open it up_ _for a motor inspection_, | _it will be around sixty minutes_. | _You don't have to_ _get any tools ready_.",
+    "example": "_The basic check usually takes_ _about half an hour_, | _and if we need to_ _open it up_ _for a motor inspection_, | _it will be around sixty minutes_. | _You don't have to_ _get any tools ready_.",
     "example_chinese": "整套流程大概半小时，| 如果需要拆机检查电机，| 会大概 60 分钟。| 你不需要准备任何工具。"
   },
   {
@@ -23416,7 +23266,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈget ˈany ˈtools ˈready/",
-    "example": "_The basic check_ _usually takes_ _about half an hour_, | _and if we need to_ _open it up_ _for a motor inspection_, | _it will be around sixty minutes_. | _You don't have to_ _get any tools ready_.",
+    "example": "_The basic check usually takes_ _about half an hour_, | _and if we need to_ _open it up_ _for a motor inspection_, | _it will be around sixty minutes_. | _You don't have to_ _get any tools ready_.",
     "example_chinese": "整套流程大概半小时，| 如果需要拆机检查电机，| 会大概 60 分钟。| 你不需要准备任何工具。"
   },
   {
@@ -25706,27 +25556,17 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈwell ˈour ˈcourse ˈis/",
-    "example": "_Well, our course is_ _a perfect fit_ _then_! | _The course also includes_ _socialization training_. | _We'll teach your pup_ _how to interact with_ _people and other animals_.",
+    "example": "_Well, our course is_ _a perfect fit then_! | _The course also includes_ _socialization training_. | _We'll teach your pup_ _how to interact with_ _people and other animals_.",
     "example_chinese": "嗯，那我们的课程就正合适啦。| 我们的课程还包社交训练，| 会教你家小狗怎么跟人和其他动物相处。"
   },
   {
-    "term": "a perfect fit",
+    "term": "a perfect fit then",
     "conversation_id": "70211",
     "sentence_id": 9,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈa ˈperfect ˈfit/",
-    "example": "_Well, our course is_ _a perfect fit_ _then_! | _The course also includes_ _socialization training_. | _We'll teach your pup_ _how to interact with_ _people and other animals_.",
-    "example_chinese": "嗯，那我们的课程就正合适啦。| 我们的课程还包社交训练，| 会教你家小狗怎么跟人和其他动物相处。"
-  },
-  {
-    "term": "then",
-    "conversation_id": "70211",
-    "sentence_id": 9,
-    "difficulty": "easy",
-    "category": "business",
-    "phonetic": "UK /ˈthen/",
-    "example": "_Well, our course is_ _a perfect fit_ _then_! | _The course also includes_ _socialization training_. | _We'll teach your pup_ _how to interact with_ _people and other animals_.",
+    "phonetic": "UK /ˈa ˈperfect ˈfit ˈthen/",
+    "example": "_Well, our course is_ _a perfect fit then_! | _The course also includes_ _socialization training_. | _We'll teach your pup_ _how to interact with_ _people and other animals_.",
     "example_chinese": "嗯，那我们的课程就正合适啦。| 我们的课程还包社交训练，| 会教你家小狗怎么跟人和其他动物相处。"
   },
   {
@@ -25736,7 +25576,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈthe ˈcourse ˈalso ˈincludes/",
-    "example": "_Well, our course is_ _a perfect fit_ _then_! | _The course also includes_ _socialization training_. | _We'll teach your pup_ _how to interact with_ _people and other animals_.",
+    "example": "_Well, our course is_ _a perfect fit then_! | _The course also includes_ _socialization training_. | _We'll teach your pup_ _how to interact with_ _people and other animals_.",
     "example_chinese": "嗯，那我们的课程就正合适啦。| 我们的课程还包社交训练，| 会教你家小狗怎么跟人和其他动物相处。"
   },
   {
@@ -25746,7 +25586,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈsocialization ˈtraining/",
-    "example": "_Well, our course is_ _a perfect fit_ _then_! | _The course also includes_ _socialization training_. | _We'll teach your pup_ _how to interact with_ _people and other animals_.",
+    "example": "_Well, our course is_ _a perfect fit then_! | _The course also includes_ _socialization training_. | _We'll teach your pup_ _how to interact with_ _people and other animals_.",
     "example_chinese": "嗯，那我们的课程就正合适啦。| 我们的课程还包社交训练，| 会教你家小狗怎么跟人和其他动物相处。"
   },
   {
@@ -25756,7 +25596,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈwe'll ˈteach ˈyour ˈpup/",
-    "example": "_Well, our course is_ _a perfect fit_ _then_! | _The course also includes_ _socialization training_. | _We'll teach your pup_ _how to interact with_ _people and other animals_.",
+    "example": "_Well, our course is_ _a perfect fit then_! | _The course also includes_ _socialization training_. | _We'll teach your pup_ _how to interact with_ _people and other animals_.",
     "example_chinese": "嗯，那我们的课程就正合适啦。| 我们的课程还包社交训练，| 会教你家小狗怎么跟人和其他动物相处。"
   },
   {
@@ -25766,7 +25606,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈhow ˈto ˈinteract ˈwith/",
-    "example": "_Well, our course is_ _a perfect fit_ _then_! | _The course also includes_ _socialization training_. | _We'll teach your pup_ _how to interact with_ _people and other animals_.",
+    "example": "_Well, our course is_ _a perfect fit then_! | _The course also includes_ _socialization training_. | _We'll teach your pup_ _how to interact with_ _people and other animals_.",
     "example_chinese": "嗯，那我们的课程就正合适啦。| 我们的课程还包社交训练，| 会教你家小狗怎么跟人和其他动物相处。"
   },
   {
@@ -25776,7 +25616,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈpeople ˈand ˈother ˈanimals/",
-    "example": "_Well, our course is_ _a perfect fit_ _then_! | _The course also includes_ _socialization training_. | _We'll teach your pup_ _how to interact with_ _people and other animals_.",
+    "example": "_Well, our course is_ _a perfect fit then_! | _The course also includes_ _socialization training_. | _We'll teach your pup_ _how to interact with_ _people and other animals_.",
     "example_chinese": "嗯，那我们的课程就正合适啦。| 我们的课程还包社交训练，| 会教你家小狗怎么跟人和其他动物相处。"
   },
   {
@@ -25830,23 +25670,13 @@
     "example_chinese": "太好啦。课程的价格是多少？| 课程会包含小狗笼养训练和上厕所训练吗？"
   },
   {
-    "term": "Rest assured the course",
+    "term": "Rest assured the course covers everything",
     "conversation_id": "70211",
     "sentence_id": 11,
     "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈrest ˈassured ˈthe ˈcourse/",
-    "example": "_Rest assured, the course_ _covers everything_! | _You're in good hands_! | _It's 200 dollars_ _for six weeks_. _By the way, is your pup_ _up to date_ _on all his shots_?",
-    "example_chinese": "放心吧，课程内容全包的。| 交给我们绝对靠谱的。| 课程价格是六周 200 澳币。对了，你的小狗疫苗打全了吗？"
-  },
-  {
-    "term": "covers everything",
-    "conversation_id": "70211",
-    "sentence_id": 11,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /ˈcovers ˈeverything/",
-    "example": "_Rest assured, the course_ _covers everything_! | _You're in good hands_! | _It's 200 dollars_ _for six weeks_. _By the way, is your pup_ _up to date_ _on all his shots_?",
+    "phonetic": "UK /ˈrest ˈassured ˈthe ˈcourse ˈcovers ˈeverything/",
+    "example": "_Rest assured, the course covers everything_! | _You're in good hands_! | _It's 200 dollars for six weeks_. _By the way, is your pup_ _up to date_ _on all his shots_?",
     "example_chinese": "放心吧，课程内容全包的。| 交给我们绝对靠谱的。| 课程价格是六周 200 澳币。对了，你的小狗疫苗打全了吗？"
   },
   {
@@ -25856,27 +25686,17 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈyou're ˈin ˈgood ˈhands/",
-    "example": "_Rest assured, the course_ _covers everything_! | _You're in good hands_! | _It's 200 dollars_ _for six weeks_. _By the way, is your pup_ _up to date_ _on all his shots_?",
+    "example": "_Rest assured, the course covers everything_! | _You're in good hands_! | _It's 200 dollars for six weeks_. _By the way, is your pup_ _up to date_ _on all his shots_?",
     "example_chinese": "放心吧，课程内容全包的。| 交给我们绝对靠谱的。| 课程价格是六周 200 澳币。对了，你的小狗疫苗打全了吗？"
   },
   {
-    "term": "It's 200 dollars",
+    "term": "It's 200 dollars for six weeks",
     "conversation_id": "70211",
     "sentence_id": 11,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈit's ˈ200 ˈdollars/",
-    "example": "_Rest assured, the course_ _covers everything_! | _You're in good hands_! | _It's 200 dollars_ _for six weeks_. _By the way, is your pup_ _up to date_ _on all his shots_?",
-    "example_chinese": "放心吧，课程内容全包的。| 交给我们绝对靠谱的。| 课程价格是六周 200 澳币。对了，你的小狗疫苗打全了吗？"
-  },
-  {
-    "term": "for six weeks",
-    "conversation_id": "70211",
-    "sentence_id": 11,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /ˈfor ˈsix ˈweeks/",
-    "example": "_Rest assured, the course_ _covers everything_! | _You're in good hands_! | _It's 200 dollars_ _for six weeks_. _By the way, is your pup_ _up to date_ _on all his shots_?",
+    "phonetic": "UK /ˈit's ˈ200 ˈdollars ˈfor ˈsix ˈweeks/",
+    "example": "_Rest assured, the course covers everything_! | _You're in good hands_! | _It's 200 dollars for six weeks_. _By the way, is your pup_ _up to date_ _on all his shots_?",
     "example_chinese": "放心吧，课程内容全包的。| 交给我们绝对靠谱的。| 课程价格是六周 200 澳币。对了，你的小狗疫苗打全了吗？"
   },
   {
@@ -25886,7 +25706,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈby ˈthe ˈway ˈis ˈyour ˈpup/",
-    "example": "_Rest assured, the course_ _covers everything_! | _You're in good hands_! | _It's 200 dollars_ _for six weeks_. _By the way, is your pup_ _up to date_ _on all his shots_?",
+    "example": "_Rest assured, the course covers everything_! | _You're in good hands_! | _It's 200 dollars for six weeks_. _By the way, is your pup_ _up to date_ _on all his shots_?",
     "example_chinese": "放心吧，课程内容全包的。| 交给我们绝对靠谱的。| 课程价格是六周 200 澳币。对了，你的小狗疫苗打全了吗？"
   },
   {
@@ -25896,7 +25716,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈup ˈto ˈdate/",
-    "example": "_Rest assured, the course_ _covers everything_! | _You're in good hands_! | _It's 200 dollars_ _for six weeks_. _By the way, is your pup_ _up to date_ _on all his shots_?",
+    "example": "_Rest assured, the course covers everything_! | _You're in good hands_! | _It's 200 dollars for six weeks_. _By the way, is your pup_ _up to date_ _on all his shots_?",
     "example_chinese": "放心吧，课程内容全包的。| 交给我们绝对靠谱的。| 课程价格是六周 200 澳币。对了，你的小狗疫苗打全了吗？"
   },
   {
@@ -25906,67 +25726,37 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈon ˈall ˈhis ˈshots/",
-    "example": "_Rest assured, the course_ _covers everything_! | _You're in good hands_! | _It's 200 dollars_ _for six weeks_. _By the way, is your pup_ _up to date_ _on all his shots_?",
+    "example": "_Rest assured, the course covers everything_! | _You're in good hands_! | _It's 200 dollars for six weeks_. _By the way, is your pup_ _up to date_ _on all his shots_?",
     "example_chinese": "放心吧，课程内容全包的。| 交给我们绝对靠谱的。| 课程价格是六周 200 澳币。对了，你的小狗疫苗打全了吗？"
   },
   {
-    "term": "The price sounds",
+    "term": "The price sounds very reasonable",
     "conversation_id": "70211",
     "sentence_id": 12,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈthe ˈprice ˈsounds/",
-    "example": "_The price sounds_ _very reasonable_. | _Can we join_ _the next session_? | _The puppy's got_ _all his shots_. | _The vet gave me_ _his vaccination certificate_.",
+    "phonetic": "UK /ˈthe ˈprice ˈsounds ˈvery ˈreasonable/",
+    "example": "_The price sounds very reasonable_. | _Can we join the next session_? | _The puppy's got all his shots_. | _The vet gave me_ _his vaccination certificate_.",
     "example_chinese": "课程价格挺合理的。| 下一期课我们能参加吗？小狗的疫苗都打过了。兽医给我疫苗证明了。"
   },
   {
-    "term": "very reasonable",
+    "term": "Can we join the next session",
     "conversation_id": "70211",
     "sentence_id": 12,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈvery ˈreasonable/",
-    "example": "_The price sounds_ _very reasonable_. | _Can we join_ _the next session_? | _The puppy's got_ _all his shots_. | _The vet gave me_ _his vaccination certificate_.",
+    "phonetic": "UK /ˈcan ˈwe ˈjoin ˈthe ˈnext ˈsession/",
+    "example": "_The price sounds very reasonable_. | _Can we join the next session_? | _The puppy's got all his shots_. | _The vet gave me_ _his vaccination certificate_.",
     "example_chinese": "课程价格挺合理的。| 下一期课我们能参加吗？小狗的疫苗都打过了。兽医给我疫苗证明了。"
   },
   {
-    "term": "Can we join",
+    "term": "The puppy's got all his shots",
     "conversation_id": "70211",
     "sentence_id": 12,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈcan ˈwe ˈjoin/",
-    "example": "_The price sounds_ _very reasonable_. | _Can we join_ _the next session_? | _The puppy's got_ _all his shots_. | _The vet gave me_ _his vaccination certificate_.",
-    "example_chinese": "课程价格挺合理的。| 下一期课我们能参加吗？小狗的疫苗都打过了。兽医给我疫苗证明了。"
-  },
-  {
-    "term": "the next session",
-    "conversation_id": "70211",
-    "sentence_id": 12,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /ˈthe ˈnext ˈsession/",
-    "example": "_The price sounds_ _very reasonable_. | _Can we join_ _the next session_? | _The puppy's got_ _all his shots_. | _The vet gave me_ _his vaccination certificate_.",
-    "example_chinese": "课程价格挺合理的。| 下一期课我们能参加吗？小狗的疫苗都打过了。兽医给我疫苗证明了。"
-  },
-  {
-    "term": "The puppy's got",
-    "conversation_id": "70211",
-    "sentence_id": 12,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /ˈthe ˈpuppy's ˈgot/",
-    "example": "_The price sounds_ _very reasonable_. | _Can we join_ _the next session_? | _The puppy's got_ _all his shots_. | _The vet gave me_ _his vaccination certificate_.",
-    "example_chinese": "课程价格挺合理的。| 下一期课我们能参加吗？小狗的疫苗都打过了。兽医给我疫苗证明了。"
-  },
-  {
-    "term": "all his shots",
-    "conversation_id": "70211",
-    "sentence_id": 12,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /ˈall ˈhis ˈshots/",
-    "example": "_The price sounds_ _very reasonable_. | _Can we join_ _the next session_? | _The puppy's got_ _all his shots_. | _The vet gave me_ _his vaccination certificate_.",
+    "phonetic": "UK /ˈthe ˈpuppy's ˈgot ˈall ˈhis ˈshots/",
+    "example": "_The price sounds very reasonable_. | _Can we join the next session_? | _The puppy's got all his shots_. | _The vet gave me_ _his vaccination certificate_.",
     "example_chinese": "课程价格挺合理的。| 下一期课我们能参加吗？小狗的疫苗都打过了。兽医给我疫苗证明了。"
   },
   {
@@ -25976,7 +25766,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈthe ˈvet ˈgave ˈme/",
-    "example": "_The price sounds_ _very reasonable_. | _Can we join_ _the next session_? | _The puppy's got_ _all his shots_. | _The vet gave me_ _his vaccination certificate_.",
+    "example": "_The price sounds very reasonable_. | _Can we join the next session_? | _The puppy's got all his shots_. | _The vet gave me_ _his vaccination certificate_.",
     "example_chinese": "课程价格挺合理的。| 下一期课我们能参加吗？小狗的疫苗都打过了。兽医给我疫苗证明了。"
   },
   {
@@ -25986,7 +25776,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈhis ˈvaccination ˈcertificate/",
-    "example": "_The price sounds_ _very reasonable_. | _Can we join_ _the next session_? | _The puppy's got_ _all his shots_. | _The vet gave me_ _his vaccination certificate_.",
+    "example": "_The price sounds very reasonable_. | _Can we join the next session_? | _The puppy's got all his shots_. | _The vet gave me_ _his vaccination certificate_.",
     "example_chinese": "课程价格挺合理的。| 下一期课我们能参加吗？小狗的疫苗都打过了。兽医给我疫苗证明了。"
   },
   {
@@ -25996,107 +25786,57 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈperfect ˈlet's ˈget/",
-    "example": "_Perfect! Let's get_ _the little guy_ _signed up now_. | _Don't forget_ _his shot records_ _when you attend_ _the first lesson_!",
+    "example": "_Perfect! Let's get_ _the little guy signed up now_. | _Don't forget his shot records_ _when you attend the first lesson_!",
     "example_chinese": "太棒啦！咱们现在就给小家伙报名吧。| 第一堂课别忘了带好所有疫苗证明哟！"
   },
   {
-    "term": "the little guy",
+    "term": "the little guy signed up now",
     "conversation_id": "70211",
     "sentence_id": 13,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈthe ˈlittle ˈguy/",
-    "example": "_Perfect! Let's get_ _the little guy_ _signed up now_. | _Don't forget_ _his shot records_ _when you attend_ _the first lesson_!",
+    "phonetic": "UK /ˈthe ˈlittle ˈguy ˈsigned ˈup ˈnow/",
+    "example": "_Perfect! Let's get_ _the little guy signed up now_. | _Don't forget his shot records_ _when you attend the first lesson_!",
     "example_chinese": "太棒啦！咱们现在就给小家伙报名吧。| 第一堂课别忘了带好所有疫苗证明哟！"
   },
   {
-    "term": "signed up now",
+    "term": "Don't forget his shot records",
     "conversation_id": "70211",
     "sentence_id": 13,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈsigned ˈup ˈnow/",
-    "example": "_Perfect! Let's get_ _the little guy_ _signed up now_. | _Don't forget_ _his shot records_ _when you attend_ _the first lesson_!",
+    "phonetic": "UK /ˈdon't ˈforget ˈhis ˈshot ˈrecords/",
+    "example": "_Perfect! Let's get_ _the little guy signed up now_. | _Don't forget his shot records_ _when you attend the first lesson_!",
     "example_chinese": "太棒啦！咱们现在就给小家伙报名吧。| 第一堂课别忘了带好所有疫苗证明哟！"
   },
   {
-    "term": "Don't forget",
+    "term": "when you attend the first lesson",
     "conversation_id": "70211",
     "sentence_id": 13,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈdon't ˈforget/",
-    "example": "_Perfect! Let's get_ _the little guy_ _signed up now_. | _Don't forget_ _his shot records_ _when you attend_ _the first lesson_!",
+    "phonetic": "UK /ˈwhen ˈyou ˈattend ˈthe ˈfirst ˈlesson/",
+    "example": "_Perfect! Let's get_ _the little guy signed up now_. | _Don't forget his shot records_ _when you attend the first lesson_!",
     "example_chinese": "太棒啦！咱们现在就给小家伙报名吧。| 第一堂课别忘了带好所有疫苗证明哟！"
   },
   {
-    "term": "his shot records",
-    "conversation_id": "70211",
-    "sentence_id": 13,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /ˈhis ˈshot ˈrecords/",
-    "example": "_Perfect! Let's get_ _the little guy_ _signed up now_. | _Don't forget_ _his shot records_ _when you attend_ _the first lesson_!",
-    "example_chinese": "太棒啦！咱们现在就给小家伙报名吧。| 第一堂课别忘了带好所有疫苗证明哟！"
-  },
-  {
-    "term": "when you attend",
-    "conversation_id": "70211",
-    "sentence_id": 13,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /ˈwhen ˈyou ˈattend/",
-    "example": "_Perfect! Let's get_ _the little guy_ _signed up now_. | _Don't forget_ _his shot records_ _when you attend_ _the first lesson_!",
-    "example_chinese": "太棒啦！咱们现在就给小家伙报名吧。| 第一堂课别忘了带好所有疫苗证明哟！"
-  },
-  {
-    "term": "the first lesson",
-    "conversation_id": "70211",
-    "sentence_id": 13,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /ˈthe ˈfirst ˈlesson/",
-    "example": "_Perfect! Let's get_ _the little guy_ _signed up now_. | _Don't forget_ _his shot records_ _when you attend_ _the first lesson_!",
-    "example_chinese": "太棒啦！咱们现在就给小家伙报名吧。| 第一堂课别忘了带好所有疫苗证明哟！"
-  },
-  {
-    "term": "Perfect No worries",
-    "conversation_id": "70211",
-    "sentence_id": 14,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /ˈperfect ˈno ˈworries/",
-    "example": "_Perfect! No worries_, _I'll bring them_. | _Hope we can raise_ _a well-behaved_, _non-mischievous puppy_!",
-    "example_chinese": "太好啦。放心，我会带着的。希望能培养出一只听话不捣蛋的小狗！"
-  },
-  {
-    "term": "I'll bring them",
-    "conversation_id": "70211",
-    "sentence_id": 14,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /ˈi'll ˈbring ˈthem/",
-    "example": "_Perfect! No worries_, _I'll bring them_. | _Hope we can raise_ _a well-behaved_, _non-mischievous puppy_!",
-    "example_chinese": "太好啦。放心，我会带着的。希望能培养出一只听话不捣蛋的小狗！"
-  },
-  {
-    "term": "Hope we can raise",
+    "term": "Perfect No worries I'll bring them",
     "conversation_id": "70211",
     "sentence_id": 14,
     "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈhope ˈwe ˈcan ˈraise/",
-    "example": "_Perfect! No worries_, _I'll bring them_. | _Hope we can raise_ _a well-behaved_, _non-mischievous puppy_!",
+    "phonetic": "UK /ˈperfect ˈno ˈworries ˈi'll ˈbring ˈthem/",
+    "example": "_Perfect! No worries, I'll bring them_. | _Hope we can raise a well-behaved_, _non-mischievous puppy_!",
     "example_chinese": "太好啦。放心，我会带着的。希望能培养出一只听话不捣蛋的小狗！"
   },
   {
-    "term": "a well-behaved",
+    "term": "Hope we can raise a well-behaved",
     "conversation_id": "70211",
     "sentence_id": 14,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈa ˈwell-behaved/",
-    "example": "_Perfect! No worries_, _I'll bring them_. | _Hope we can raise_ _a well-behaved_, _non-mischievous puppy_!",
+    "phonetic": "UK /ˈhope ˈwe ˈcan ˈraise ˈa ˈwell-behaved/",
+    "example": "_Perfect! No worries, I'll bring them_. | _Hope we can raise a well-behaved_, _non-mischievous puppy_!",
     "example_chinese": "太好啦。放心，我会带着的。希望能培养出一只听话不捣蛋的小狗！"
   },
   {
@@ -26106,7 +25846,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈnon-mischievous ˈpuppy/",
-    "example": "_Perfect! No worries_, _I'll bring them_. | _Hope we can raise_ _a well-behaved_, _non-mischievous puppy_!",
+    "example": "_Perfect! No worries, I'll bring them_. | _Hope we can raise a well-behaved_, _non-mischievous puppy_!",
     "example_chinese": "太好啦。放心，我会带着的。希望能培养出一只听话不捣蛋的小狗！"
   },
   {

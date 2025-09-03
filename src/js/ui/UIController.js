@@ -17,6 +17,16 @@ class UIController {
             this.updateButtons();
         });
 
+        // Listen for learning mode changes
+        window.eventBus.on('vocabulary:learningModeChanged', (data) => {
+            console.log('UIController: Learning mode changed to:', data.mode);
+            // Reset audio position to first word
+            window.audioControls.setCurrentIndex(0);
+            this.updateCategoryDisplay();
+            this.updateButtons();
+            this.displayFirstWord(); // Show first word of new mode
+        });
+
         // Listen for word display events
         window.eventBus.on('word:display', (data) => {
             this.displayWord(data.word, data.index);

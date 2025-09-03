@@ -85,6 +85,61 @@ class VocabularyManager {
         console.log('Category counts calculated from complete dataset:', this.categoryCounts);
     }
 
+    async recalculateCountsForMode(mode) {
+        console.log('🔄 Recalculating counts for mode:', mode);
+        
+        // Get vocabulary data for the specified mode
+        const previousMode = this.currentLearningMode;
+        this.currentLearningMode = mode; // Temporarily set mode for data retrieval
+        
+        const data = await this.getVocabularyData();
+        
+        this.currentLearningMode = previousMode; // Restore original mode
+        
+        if (!data || !data.vocabulary) {
+            console.error('❌ No vocabulary data available for mode:', mode);
+            return;
+        }
+
+        const vocabularyData = data.vocabulary;
+
+        // Initialize categories with zero counts
+        this.categoryCounts = {
+            'all-categories': { all: 0, easy: 0, normal: 0, hard: 0 }
+        };
+
+        // Initialize all dialogue groups
+        Object.keys(this.dialogueGroups).forEach(groupKey => {
+            this.categoryCounts[groupKey] = { all: 0, easy: 0, normal: 0, hard: 0 };
+        });
+
+        // Count items by dialogue group and difficulty
+        vocabularyData.forEach(item => {
+            const conversationId = parseInt(item.conversationId);
+            
+            // Find which group this dialogue belongs to
+            let dialogueGroup = null;
+            for (const [groupKey, dialogueIds] of Object.entries(this.dialogueGroups)) {
+                if (dialogueIds.includes(conversationId)) {
+                    dialogueGroup = groupKey;
+                    break;
+                }
+            }
+            
+            // Count in the appropriate group
+            if (dialogueGroup) {
+                this.categoryCounts[dialogueGroup].all++;
+                this.categoryCounts[dialogueGroup][item.difficulty || 'normal']++;
+            }
+            
+            // Always count in all-categories
+            this.categoryCounts['all-categories'].all++;
+            this.categoryCounts['all-categories'][item.difficulty || 'normal']++;
+        });
+
+        console.log(`✅ Category counts recalculated for mode ${mode}:`, this.categoryCounts);
+    }
+
     getVocabularyFromDataLoader() {
         // Use extracted vocabulary if available (new direct loading method)
         if (this.extractedVocabulary) {
@@ -237,6 +292,12 @@ class VocabularyManager {
     setLearningMode(mode) {
         console.log('🎯 Setting learning mode to:', mode);
         this.currentLearningMode = mode;
+        
+        // Recalculate category counts for the new mode
+        this.recalculateCountsForMode(mode);
+        
+        // Update category options with new counts
+        this.updateCategoryOptions();
         
         // Emit learning mode change event
         window.eventBus.emit('vocabulary:learningModeChanged', {

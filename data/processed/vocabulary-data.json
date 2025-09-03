@@ -70,23 +70,23 @@
     "example_chinese": "我一直很期待这次见面，| 我很乐意介绍我们社区中心的工作。"
   },
   {
-    "term": "I appreciate that I have only",
+    "term": "I appreciate that",
     "conversation_id": "70248",
     "sentence_id": 3,
-    "difficulty": "hard",
+    "difficulty": "normal",
     "category": "social",
-    "phonetic": "UK /ˈi ˈappreciate ˈthat ˈi ˈhave ˈonly/",
-    "example": "_I appreciate that, I have only_ _been working at the council_ | _for a few weeks_. | _So I have a lot to learn_ _about the center_.",
+    "phonetic": "UK /ˈi ˈappreciate ˈthat/",
+    "example": "_I appreciate that_, _I have only been working at the council_ | _for a few weeks_. | _So I have a lot to learn_ _about the center_.",
     "example_chinese": "谢谢。我在市政厅才工作了几个星期，| 所以这个中心还有很多需要我学习的内容。"
   },
   {
-    "term": "been working at the council",
+    "term": "I have only been working at the council",
     "conversation_id": "70248",
     "sentence_id": 3,
     "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈbeen ˈworking ˈat ˈthe ˈcouncil/",
-    "example": "_I appreciate that, I have only_ _been working at the council_ | _for a few weeks_. | _So I have a lot to learn_ _about the center_.",
+    "phonetic": "UK /ˈi ˈhave ˈonly ˈbeen ˈworking ˈat ˈthe ˈcouncil/",
+    "example": "_I appreciate that_, _I have only been working at the council_ | _for a few weeks_. | _So I have a lot to learn_ _about the center_.",
     "example_chinese": "谢谢。我在市政厅才工作了几个星期，| 所以这个中心还有很多需要我学习的内容。"
   },
   {
@@ -96,7 +96,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈfor ˈa ˈfew ˈweeks/",
-    "example": "_I appreciate that, I have only_ _been working at the council_ | _for a few weeks_. | _So I have a lot to learn_ _about the center_.",
+    "example": "_I appreciate that_, _I have only been working at the council_ | _for a few weeks_. | _So I have a lot to learn_ _about the center_.",
     "example_chinese": "谢谢。我在市政厅才工作了几个星期，| 所以这个中心还有很多需要我学习的内容。"
   },
   {
@@ -106,7 +106,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈso ˈi ˈhave ˈa ˈlot ˈto ˈlearn/",
-    "example": "_I appreciate that, I have only_ _been working at the council_ | _for a few weeks_. | _So I have a lot to learn_ _about the center_.",
+    "example": "_I appreciate that_, _I have only been working at the council_ | _for a few weeks_. | _So I have a lot to learn_ _about the center_.",
     "example_chinese": "谢谢。我在市政厅才工作了几个星期，| 所以这个中心还有很多需要我学习的内容。"
   },
   {
@@ -116,7 +116,7 @@
     "difficulty": "normal",
     "category": "social",
     "phonetic": "UK /ˈabout ˈthe ˈcenter/",
-    "example": "_I appreciate that, I have only_ _been working at the council_ | _for a few weeks_. | _So I have a lot to learn_ _about the center_.",
+    "example": "_I appreciate that_, _I have only been working at the council_ | _for a few weeks_. | _So I have a lot to learn_ _about the center_.",
     "example_chinese": "谢谢。我在市政厅才工作了几个星期，| 所以这个中心还有很多需要我学习的内容。"
   },
   {
@@ -4016,7 +4016,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈthat's ˈa ˈgreat ˈidea ˈi ˈam ˈsure/",
-    "example": "_That's a great idea, I am sure_ _I can help organize that for you_. | _Sounds like it was_ _a popular program_.",
+    "example": "_That's a great idea, I am sure_ _I can help organize that for you_. | _Sounds like it was a popular program_.",
     "example_chinese": "这是个好主意。我相信我可以帮你组织。| 听起来这项目很受欢迎啊。"
   },
   {
@@ -4026,27 +4026,17 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈi ˈcan ˈhelp ˈorganize ˈthat ˈfor ˈyou/",
-    "example": "_That's a great idea, I am sure_ _I can help organize that for you_. | _Sounds like it was_ _a popular program_.",
+    "example": "_That's a great idea, I am sure_ _I can help organize that for you_. | _Sounds like it was a popular program_.",
     "example_chinese": "这是个好主意。我相信我可以帮你组织。| 听起来这项目很受欢迎啊。"
   },
   {
-    "term": "Sounds like it was",
+    "term": "Sounds like it was a popular program",
     "conversation_id": "70242",
     "sentence_id": 9,
     "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈsounds ˈlike ˈit ˈwas/",
-    "example": "_That's a great idea, I am sure_ _I can help organize that for you_. | _Sounds like it was_ _a popular program_.",
-    "example_chinese": "这是个好主意。我相信我可以帮你组织。| 听起来这项目很受欢迎啊。"
-  },
-  {
-    "term": "a popular program",
-    "conversation_id": "70242",
-    "sentence_id": 9,
-    "difficulty": "normal",
-    "category": "social",
-    "phonetic": "UK /ˈa ˈpopular ˈprogram/",
-    "example": "_That's a great idea, I am sure_ _I can help organize that for you_. | _Sounds like it was_ _a popular program_.",
+    "phonetic": "UK /ˈsounds ˈlike ˈit ˈwas ˈa ˈpopular ˈprogram/",
+    "example": "_That's a great idea, I am sure_ _I can help organize that for you_. | _Sounds like it was a popular program_.",
     "example_chinese": "这是个好主意。我相信我可以帮你组织。| 听起来这项目很受欢迎啊。"
   },
   {
@@ -4056,7 +4046,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈyes ˈit ˈgot ˈa ˈgreat ˈresponse/",
-    "example": "_Yes, it got a great response_. | _We decided to try it once_ _in the summer, and bookings were huge_. | _We could run it almost_ _every day_.",
+    "example": "_Yes, it got a great response_. | _We decided to try it once_ _in the summer, and bookings were huge_. | _We could run it almost every day_.",
     "example_chinese": "是的，反响很好。我们当时决定在夏天试办一次。| 结果预约的人特别多。几乎天天都能举办。"
   },
   {
@@ -4066,7 +4056,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈwe ˈdecided ˈto ˈtry ˈit ˈonce/",
-    "example": "_Yes, it got a great response_. | _We decided to try it once_ _in the summer, and bookings were huge_. | _We could run it almost_ _every day_.",
+    "example": "_Yes, it got a great response_. | _We decided to try it once_ _in the summer, and bookings were huge_. | _We could run it almost every day_.",
     "example_chinese": "是的，反响很好。我们当时决定在夏天试办一次。| 结果预约的人特别多。几乎天天都能举办。"
   },
   {
@@ -4076,27 +4066,17 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈin ˈthe ˈsummer ˈand ˈbookings ˈwere ˈhuge/",
-    "example": "_Yes, it got a great response_. | _We decided to try it once_ _in the summer, and bookings were huge_. | _We could run it almost_ _every day_.",
+    "example": "_Yes, it got a great response_. | _We decided to try it once_ _in the summer, and bookings were huge_. | _We could run it almost every day_.",
     "example_chinese": "是的，反响很好。我们当时决定在夏天试办一次。| 结果预约的人特别多。几乎天天都能举办。"
   },
   {
-    "term": "We could run it almost",
+    "term": "We could run it almost every day",
     "conversation_id": "70242",
     "sentence_id": 10,
     "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈwe ˈcould ˈrun ˈit ˈalmost/",
-    "example": "_Yes, it got a great response_. | _We decided to try it once_ _in the summer, and bookings were huge_. | _We could run it almost_ _every day_.",
-    "example_chinese": "是的，反响很好。我们当时决定在夏天试办一次。| 结果预约的人特别多。几乎天天都能举办。"
-  },
-  {
-    "term": "every day",
-    "conversation_id": "70242",
-    "sentence_id": 10,
-    "difficulty": "normal",
-    "category": "social",
-    "phonetic": "UK /ˈevery ˈday/",
-    "example": "_Yes, it got a great response_. | _We decided to try it once_ _in the summer, and bookings were huge_. | _We could run it almost_ _every day_.",
+    "phonetic": "UK /ˈwe ˈcould ˈrun ˈit ˈalmost ˈevery ˈday/",
+    "example": "_Yes, it got a great response_. | _We decided to try it once_ _in the summer, and bookings were huge_. | _We could run it almost every day_.",
     "example_chinese": "是的，反响很好。我们当时决定在夏天试办一次。| 结果预约的人特别多。几乎天天都能举办。"
   },
   {
@@ -4106,7 +4086,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈmaybe ˈwe ˈcan ˈconsider/",
-    "example": "_Maybe we can consider_ _holding it twice a week_. | _I remember how helpful the local_ _play group was when my_ _children were small_.",
+    "example": "_Maybe we can consider_ _holding it twice a week_. | _I remember how helpful_ _the local play group was_ _when my children were small_.",
     "example_chinese": "也许我们可以考虑每周办两次。| 我记得我的孩子们还小的时候，本地的游戏活动小组特别有帮助。"
   },
   {
@@ -4116,37 +4096,37 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈholding ˈit ˈtwice ˈa ˈweek/",
-    "example": "_Maybe we can consider_ _holding it twice a week_. | _I remember how helpful the local_ _play group was when my_ _children were small_.",
+    "example": "_Maybe we can consider_ _holding it twice a week_. | _I remember how helpful_ _the local play group was_ _when my children were small_.",
     "example_chinese": "也许我们可以考虑每周办两次。| 我记得我的孩子们还小的时候，本地的游戏活动小组特别有帮助。"
   },
   {
-    "term": "I remember how helpful the local",
+    "term": "I remember how helpful",
     "conversation_id": "70242",
     "sentence_id": 11,
     "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈi ˈremember ˈhow ˈhelpful ˈthe ˈlocal/",
-    "example": "_Maybe we can consider_ _holding it twice a week_. | _I remember how helpful the local_ _play group was when my_ _children were small_.",
+    "phonetic": "UK /ˈi ˈremember ˈhow ˈhelpful/",
+    "example": "_Maybe we can consider_ _holding it twice a week_. | _I remember how helpful_ _the local play group was_ _when my children were small_.",
     "example_chinese": "也许我们可以考虑每周办两次。| 我记得我的孩子们还小的时候，本地的游戏活动小组特别有帮助。"
   },
   {
-    "term": "play group was when my",
+    "term": "the local play group was",
     "conversation_id": "70242",
     "sentence_id": 11,
     "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈplay ˈgroup ˈwas ˈwhen ˈmy/",
-    "example": "_Maybe we can consider_ _holding it twice a week_. | _I remember how helpful the local_ _play group was when my_ _children were small_.",
+    "phonetic": "UK /ˈthe ˈlocal ˈplay ˈgroup ˈwas/",
+    "example": "_Maybe we can consider_ _holding it twice a week_. | _I remember how helpful_ _the local play group was_ _when my children were small_.",
     "example_chinese": "也许我们可以考虑每周办两次。| 我记得我的孩子们还小的时候，本地的游戏活动小组特别有帮助。"
   },
   {
-    "term": "children were small",
+    "term": "when my children were small",
     "conversation_id": "70242",
     "sentence_id": 11,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈchildren ˈwere ˈsmall/",
-    "example": "_Maybe we can consider_ _holding it twice a week_. | _I remember how helpful the local_ _play group was when my_ _children were small_.",
+    "phonetic": "UK /ˈwhen ˈmy ˈchildren ˈwere ˈsmall/",
+    "example": "_Maybe we can consider_ _holding it twice a week_. | _I remember how helpful_ _the local play group was_ _when my children were small_.",
     "example_chinese": "也许我们可以考虑每周办两次。| 我记得我的孩子们还小的时候，本地的游戏活动小组特别有帮助。"
   },
   {
@@ -4706,7 +4686,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈi ˈreally ˈenjoy ˈsoaking ˈin ˈthe ˈbath/",
-    "example": "_I really enjoy soaking in the bath_, | _so I absolutely don't want a shower_ _in my suite's bathroom_. | _Our master bathroom already has_ _a shower stall_.",
+    "example": "_I really enjoy soaking in the bath_, | _so I absolutely don't want a shower_ _in my suite's bathroom_. | _Our master bathroom_ _already has a shower stall_.",
     "example_chinese": "我很喜欢泡澡，| 所以我绝对不想在套间的浴室装淋浴。| 我们的主浴室已有一个淋浴间了。"
   },
   {
@@ -4716,7 +4696,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈso ˈi ˈabsolutely ˈdon't ˈwant ˈa ˈshower/",
-    "example": "_I really enjoy soaking in the bath_, | _so I absolutely don't want a shower_ _in my suite's bathroom_. | _Our master bathroom already has_ _a shower stall_.",
+    "example": "_I really enjoy soaking in the bath_, | _so I absolutely don't want a shower_ _in my suite's bathroom_. | _Our master bathroom_ _already has a shower stall_.",
     "example_chinese": "我很喜欢泡澡，| 所以我绝对不想在套间的浴室装淋浴。| 我们的主浴室已有一个淋浴间了。"
   },
   {
@@ -4726,27 +4706,27 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈin ˈmy ˈsuite's ˈbathroom/",
-    "example": "_I really enjoy soaking in the bath_, | _so I absolutely don't want a shower_ _in my suite's bathroom_. | _Our master bathroom already has_ _a shower stall_.",
+    "example": "_I really enjoy soaking in the bath_, | _so I absolutely don't want a shower_ _in my suite's bathroom_. | _Our master bathroom_ _already has a shower stall_.",
     "example_chinese": "我很喜欢泡澡，| 所以我绝对不想在套间的浴室装淋浴。| 我们的主浴室已有一个淋浴间了。"
   },
   {
-    "term": "Our master bathroom already has",
-    "conversation_id": "70241",
-    "sentence_id": 10,
-    "difficulty": "hard",
-    "category": "social",
-    "phonetic": "UK /ˈour ˈmaster ˈbathroom ˈalready ˈhas/",
-    "example": "_I really enjoy soaking in the bath_, | _so I absolutely don't want a shower_ _in my suite's bathroom_. | _Our master bathroom already has_ _a shower stall_.",
-    "example_chinese": "我很喜欢泡澡，| 所以我绝对不想在套间的浴室装淋浴。| 我们的主浴室已有一个淋浴间了。"
-  },
-  {
-    "term": "a shower stall",
+    "term": "Our master bathroom",
     "conversation_id": "70241",
     "sentence_id": 10,
     "difficulty": "normal",
     "category": "social",
-    "phonetic": "UK /ˈa ˈshower ˈstall/",
-    "example": "_I really enjoy soaking in the bath_, | _so I absolutely don't want a shower_ _in my suite's bathroom_. | _Our master bathroom already has_ _a shower stall_.",
+    "phonetic": "UK /ˈour ˈmaster ˈbathroom/",
+    "example": "_I really enjoy soaking in the bath_, | _so I absolutely don't want a shower_ _in my suite's bathroom_. | _Our master bathroom_ _already has a shower stall_.",
+    "example_chinese": "我很喜欢泡澡，| 所以我绝对不想在套间的浴室装淋浴。| 我们的主浴室已有一个淋浴间了。"
+  },
+  {
+    "term": "already has a shower stall",
+    "conversation_id": "70241",
+    "sentence_id": 10,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈalready ˈhas ˈa ˈshower ˈstall/",
+    "example": "_I really enjoy soaking in the bath_, | _so I absolutely don't want a shower_ _in my suite's bathroom_. | _Our master bathroom_ _already has a shower stall_.",
     "example_chinese": "我很喜欢泡澡，| 所以我绝对不想在套间的浴室装淋浴。| 我们的主浴室已有一个淋浴间了。"
   },
   {

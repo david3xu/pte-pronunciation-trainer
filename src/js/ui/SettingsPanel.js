@@ -43,9 +43,6 @@ class SettingsPanel {
             preferredVoice: window.storage.getItem('preferredVoice') || null
         };
 
-        // Migrate old category names if needed
-        savedSettings.category = window.vocabularyManager.migrateOldGroupName(savedSettings.category);
-        
         // Apply settings to UI elements
         this.applySettingToElement('categorySelect', savedSettings.category);
         this.applySettingToElement('difficultySelect', savedSettings.difficulty);

@@ -46,24 +46,6 @@ class VocabularyManager {
         };
     }
 
-    // Migration function to handle old group names
-    migrateOldGroupName(oldGroupName) {
-        const groupMigrationMap = {
-            'group-1': 'group-240s',
-            'group-2': 'group-230s', 
-            'group-3': 'group-220s',
-            'group-4': 'group-210s',
-            'group-5': 'group-200s',
-            'group-6': 'group-190s',
-            'group-7': 'group-180s',
-            'group-8': 'group-170s',
-            'group-9': 'group-160s',
-            'group-10': 'group-150s'
-        };
-        
-        return groupMigrationMap[oldGroupName] || oldGroupName;
-    }
-
     calculateCategoryCounts() {
         const vocabularyData = this.getVocabularyFromDataLoader();
         if (!vocabularyData || vocabularyData.length === 0) return;
@@ -349,9 +331,6 @@ class VocabularyManager {
     }
 
     async loadCategory(category) {
-        // Migrate old group names to new ones
-        category = this.migrateOldGroupName(category);
-        
         console.log('🔄 loadCategory called with:', category, 'mode:', this.currentLearningMode);
         console.log('🔍 extractedVocabulary available:', !!this.extractedVocabulary);
         console.log('🔍 extractedVocabulary length:', this.extractedVocabulary?.length || 0);

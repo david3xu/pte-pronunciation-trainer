@@ -12,22 +12,18 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=300, s-maxage=300"
+          "value": "public, max-age=60, s-maxage=60"
         }
       ]
-    }
-  ],
-  "routes": [
-    {
-      "src": "/data/processed/(.*)",
-      "dest": "/data/processed/$1",
-      "headers": {
-        "Cache-Control": "public, max-age=300"
-      }
     },
     {
-      "src": "/(.*)",
-      "dest": "/$1"
+      "source": "/src/js/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=0"
+        }
+      ]
     }
   ]
 }

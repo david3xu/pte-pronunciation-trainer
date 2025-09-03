@@ -13,6 +13,9 @@ class CCLPronunciationTrainer {
         }
         this.initialized = true;
         
+        // Run cache migration before any module initialization
+        window.cacheMigration.checkAndMigrate();
+        
         // Initialize all modules in correct order
         this.initializeModules();
         

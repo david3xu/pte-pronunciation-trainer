@@ -1,8 +1,8 @@
 {
   "summary": {
     "totalDialogues": 91,
-    "totalVocabularyTerms": 6864,
-    "processedAt": "2025-09-03T21:29:42.007Z",
+    "totalVocabularyTerms": 6765,
+    "processedAt": "2025-09-04T21:34:19.802Z",
     "sourceFile": "merged-conversations.md",
     "processingErrors": 0,
     "processingWarnings": 18
@@ -16,9 +16,9 @@
     "immigration": 1
   },
   "difficultyDistribution": {
-    "hard": 4151,
-    "normal": 2438,
-    "easy": 275
+    "hard": 4190,
+    "normal": 2314,
+    "easy": 261
   },
   "dialogueList": [
     {
@@ -214,7 +214,7 @@
       "id": "70221",
       "title": "Friendly Support for the New Town Doctor",
       "category": "social",
-      "vocabularyCount": 84,
+      "vocabularyCount": 68,
       "sentenceCount": 14
     },
     {
@@ -235,7 +235,7 @@
       "id": "70218",
       "title": "Van Theft Report and Insurance Steps",
       "category": "legal",
-      "vocabularyCount": 71,
+      "vocabularyCount": 70,
       "sentenceCount": 14
     },
     {
@@ -263,7 +263,7 @@
       "id": "70214",
       "title": "Customer Calls About Faulty Washer",
       "category": "business",
-      "vocabularyCount": 77,
+      "vocabularyCount": 76,
       "sentenceCount": 14
     },
     {
@@ -466,28 +466,28 @@
       "id": "70185",
       "title": "Trauma Insurance 101",
       "category": "business",
-      "vocabularyCount": 89,
+      "vocabularyCount": 71,
       "sentenceCount": 14
     },
     {
       "id": "70184",
       "title": "Tax Deadlines and Accounting Solutions",
       "category": "business",
-      "vocabularyCount": 99,
+      "vocabularyCount": 67,
       "sentenceCount": 14
     },
     {
       "id": "70183",
       "title": "Packing Up and Selling",
       "category": "business",
-      "vocabularyCount": 88,
+      "vocabularyCount": 62,
       "sentenceCount": 14
     },
     {
       "id": "70182",
       "title": "Promotion and Transition",
       "category": "business",
-      "vocabularyCount": 78,
+      "vocabularyCount": 73,
       "sentenceCount": 14
     },
     {

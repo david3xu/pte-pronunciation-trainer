@@ -1,9 +1,9 @@
 # CCL Dialogue Data Processing Report
 
-**Generated:** 2025-09-03T21:29:42.007Z
+**Generated:** 2025-09-04T21:34:19.802Z
 **Source File:** merged-conversations.md
 **Total Dialogues:** 91
-**Total Vocabulary Terms:** 6864
+**Total Vocabulary Terms:** 6765
 **Processing Errors:** 0
 **Processing Warnings:** 18
 
@@ -18,9 +18,9 @@
 
 ## Difficulty Distribution
 
-- **🔴 hard**: 4151 terms
-- **🟡 normal**: 2438 terms
-- **🟢 easy**: 275 terms
+- **🔴 hard**: 4190 terms
+- **🟡 normal**: 2314 terms
+- **🟢 easy**: 261 terms
 
 ## Dialogue List
 
@@ -79,13 +79,13 @@
 - **🏥 70222**: Bystander Assistance to Paramedic (medical)
   - Sentences: 14, Vocabulary: 49
 - **👥 70221**: Friendly Support for the New Town Doctor (social)
-  - Sentences: 14, Vocabulary: 84
+  - Sentences: 14, Vocabulary: 68
 - **💼 70220**: Tenant Requests Pest Control (business)
   - Sentences: 14, Vocabulary: 60
 - **💼 70219**: Understanding Bill Payment Delays (business)
   - Sentences: 14, Vocabulary: 59
 - **⚖️ 70218**: Van Theft Report and Insurance Steps (legal)
-  - Sentences: 14, Vocabulary: 71
+  - Sentences: 14, Vocabulary: 70
 - **⚖️ 70217**: Clarifying Local Dog Leash Rules (legal)
   - Sentences: 14, Vocabulary: 80
 - **⚖️ 70216**: Resident Alerts Police to Speeding Driver (legal)
@@ -93,7 +93,7 @@
 - **💼 70215**: Inspecting An Off-Market Property (business)
   - Sentences: 14, Vocabulary: 68
 - **💼 70214**: Customer Calls About Faulty Washer (business)
-  - Sentences: 14, Vocabulary: 77
+  - Sentences: 14, Vocabulary: 76
 - **💼 70213**: Strategies for School Band Fundraising (business)
   - Sentences: 14, Vocabulary: 92
 - **💼 70212**: Newcomer Navigates Waste Sorting and Gardening (business)
@@ -151,13 +151,13 @@
 - **💼 70186**: Ordering Food at a Restaurant (business)
   - Sentences: 19, Vocabulary: 86
 - **💼 70185**: Trauma Insurance 101 (business)
-  - Sentences: 14, Vocabulary: 89
+  - Sentences: 14, Vocabulary: 71
 - **💼 70184**: Tax Deadlines and Accounting Solutions (business)
-  - Sentences: 14, Vocabulary: 99
+  - Sentences: 14, Vocabulary: 67
 - **💼 70183**: Packing Up and Selling (business)
-  - Sentences: 14, Vocabulary: 88
+  - Sentences: 14, Vocabulary: 62
 - **💼 70182**: Promotion and Transition (business)
-  - Sentences: 14, Vocabulary: 78
+  - Sentences: 14, Vocabulary: 73
 - **🏥 70181**: From Clinic to Home (medical)
   - Sentences: 14, Vocabulary: 86
 - **💼 70180**: Downsizing After 15 Years (business)

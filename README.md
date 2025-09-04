@@ -159,6 +159,20 @@ npm run dev                   # Start development server
 npm run process-data          # Generate complete dataset (6,967 terms - primary)
 npm run extract-vocab         # Generate vocabulary files (for backward compatibility)
 npm run validate              # Validate all data integrity
+
+
+
+
+# 1. Update unfamiliar words file ✅ (you've done this)
+# Edit: data-processing/extractors/unfamilar-words.md
+
+# 2. Process the data - ONLY need these two:
+npm run process-data                     # Generate complete-dataset.json (primary)
+node scripts/process-unfamiliar-words.js # Generate unfamiliar words dataset
+
+# 3. Test and deploy
+npm run dev                              # Test locally
+git add . && git commit && git push     # Deploy
 ```
 
 ### Data Processing

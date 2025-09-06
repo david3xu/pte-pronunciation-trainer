@@ -1,9 +1,9 @@
 # CCL Dialogue Data Processing Report
 
-**Generated:** 2025-09-04T21:34:19.802Z
+**Generated:** 2025-09-06T04:19:27.808Z
 **Source File:** merged-conversations.md
 **Total Dialogues:** 91
-**Total Vocabulary Terms:** 6765
+**Total Vocabulary Terms:** 6002
 **Processing Errors:** 0
 **Processing Warnings:** 18
 
@@ -18,9 +18,9 @@
 
 ## Difficulty Distribution
 
-- **🔴 hard**: 4190 terms
-- **🟡 normal**: 2314 terms
-- **🟢 easy**: 261 terms
+- **🔴 hard**: 4501 terms
+- **🟡 normal**: 1343 terms
+- **🟢 easy**: 158 terms
 
 ## Dialogue List
 
@@ -83,99 +83,99 @@
 - **💼 70220**: Tenant Requests Pest Control (business)
   - Sentences: 14, Vocabulary: 60
 - **💼 70219**: Understanding Bill Payment Delays (business)
-  - Sentences: 14, Vocabulary: 59
+  - Sentences: 14, Vocabulary: 58
 - **⚖️ 70218**: Van Theft Report and Insurance Steps (legal)
-  - Sentences: 14, Vocabulary: 70
+  - Sentences: 14, Vocabulary: 65
 - **⚖️ 70217**: Clarifying Local Dog Leash Rules (legal)
-  - Sentences: 14, Vocabulary: 80
+  - Sentences: 14, Vocabulary: 78
 - **⚖️ 70216**: Resident Alerts Police to Speeding Driver (legal)
-  - Sentences: 14, Vocabulary: 74
+  - Sentences: 14, Vocabulary: 70
 - **💼 70215**: Inspecting An Off-Market Property (business)
   - Sentences: 14, Vocabulary: 68
 - **💼 70214**: Customer Calls About Faulty Washer (business)
-  - Sentences: 14, Vocabulary: 76
+  - Sentences: 14, Vocabulary: 70
 - **💼 70213**: Strategies for School Band Fundraising (business)
-  - Sentences: 14, Vocabulary: 92
-- **💼 70212**: Newcomer Navigates Waste Sorting and Gardening (business)
-  - Sentences: 14, Vocabulary: 82
-- **💼 70211**: Puppy Course: Commands & Grooming (business)
   - Sentences: 14, Vocabulary: 79
-- **💼 70210**: Making Use of a Spare Skip Bin (business)
+- **💼 70212**: Newcomer Navigates Waste Sorting and Gardening (business)
+  - Sentences: 14, Vocabulary: 67
+- **💼 70211**: Puppy Course: Commands & Grooming (business)
   - Sentences: 14, Vocabulary: 72
-- **👥 70209**: New Neighbour's Dog Barking (social)
-  - Sentences: 14, Vocabulary: 55
-- **💼 70208**: Car Insurance Claim After Accident (business)
-  - Sentences: 15, Vocabulary: 73
-- **💼 70207**: Restaurant Reservation for Large Group (business)
-  - Sentences: 17, Vocabulary: 65
-- **💼 70206**: Job Interview for Teaching Position (business)
-  - Sentences: 16, Vocabulary: 82
-- **💼 70205**: Buying a Used Car from Private Seller (business)
-  - Sentences: 17, Vocabulary: 80
-- **💼 70204**: Reporting a Lost Credit Card (business)
-  - Sentences: 18, Vocabulary: 87
-- **💼 70203**: Applying for a Library Card (business)
-  - Sentences: 21, Vocabulary: 89
-- **💼 70202**: Ordering Takeaway Food (business)
-  - Sentences: 18, Vocabulary: 65
-- **👥 70201**: Asking for Directions to Tourist Attractions (social)
-  - Sentences: 16, Vocabulary: 72
-- **👥 70200**: Discussing Weather and Seasonal Activities (social)
-  - Sentences: 16, Vocabulary: 76
-- **💼 70199**: Booking a Doctor's Appointment (business)
-  - Sentences: 18, Vocabulary: 77
-- **👥 70198**: Discussing Hobbies and Interests (social)
-  - Sentences: 18, Vocabulary: 98
-- **💼 70197**: Renting an Apartment (business)
-  - Sentences: 18, Vocabulary: 80
-- **👥 70196**: Making Small Talk at a Party (social)
-  - Sentences: 18, Vocabulary: 88
-- **💼 70195**: Shopping for Groceries (business)
-  - Sentences: 19, Vocabulary: 79
-- **👥 70194**: Discussing Weekend Plans (social)
-  - Sentences: 18, Vocabulary: 90
-- **💼 70193**: Ordering Coffee at a Café (business)
-  - Sentences: 19, Vocabulary: 70
-- **👥 70192**: Asking for Help with Homework (social)
-  - Sentences: 19, Vocabulary: 74
-- **👥 70191**: Discussing Travel Plans (social)
-  - Sentences: 20, Vocabulary: 87
-- **💼 70190**: Ordering Pizza Delivery (business)
-  - Sentences: 19, Vocabulary: 71
-- **👥 70189**: Discussing Movies and Entertainment (social)
-  - Sentences: 20, Vocabulary: 97
-- **🎓 70188**: A Low-score University Assignment (education)
-  - Sentences: 14, Vocabulary: 76
-- **👥 70187**: Discussing Food and Cooking (social)
-  - Sentences: 20, Vocabulary: 112
-- **💼 70186**: Ordering Food at a Restaurant (business)
-  - Sentences: 19, Vocabulary: 86
-- **💼 70185**: Trauma Insurance 101 (business)
-  - Sentences: 14, Vocabulary: 71
-- **💼 70184**: Tax Deadlines and Accounting Solutions (business)
-  - Sentences: 14, Vocabulary: 67
-- **💼 70183**: Packing Up and Selling (business)
-  - Sentences: 14, Vocabulary: 62
-- **💼 70182**: Promotion and Transition (business)
-  - Sentences: 14, Vocabulary: 73
-- **🏥 70181**: From Clinic to Home (medical)
-  - Sentences: 14, Vocabulary: 86
-- **💼 70180**: Downsizing After 15 Years (business)
-  - Sentences: 14, Vocabulary: 85
-- **⚖️ 70179**: Stolen Tools Report (legal)
-  - Sentences: 14, Vocabulary: 66
-- **👥 70178**: Settling In and Planting Seeds (social)
-  - Sentences: 14, Vocabulary: 71
-- **💼 70177**: Booking a 100th Birthday Shoot (business)
-  - Sentences: 14, Vocabulary: 80
-- **👥 70176**: Birthday Party Venue Planning (social)
-  - Sentences: 14, Vocabulary: 68
-- **💼 70175**: Drainage Concerns (business)
+- **💼 70210**: Making Use of a Spare Skip Bin (business)
   - Sentences: 14, Vocabulary: 69
+- **👥 70209**: New Neighbour's Dog Barking (social)
+  - Sentences: 14, Vocabulary: 54
+- **💼 70208**: Car Insurance Claim After Accident (business)
+  - Sentences: 15, Vocabulary: 60
+- **💼 70207**: Restaurant Reservation for Large Group (business)
+  - Sentences: 17, Vocabulary: 61
+- **💼 70206**: Job Interview for Teaching Position (business)
+  - Sentences: 16, Vocabulary: 67
+- **💼 70205**: Buying a Used Car from Private Seller (business)
+  - Sentences: 17, Vocabulary: 62
+- **💼 70204**: Reporting a Lost Credit Card (business)
+  - Sentences: 18, Vocabulary: 67
+- **💼 70203**: Applying for a Library Card (business)
+  - Sentences: 21, Vocabulary: 68
+- **💼 70202**: Ordering Takeaway Food (business)
+  - Sentences: 18, Vocabulary: 50
+- **👥 70201**: Asking for Directions to Tourist Attractions (social)
+  - Sentences: 16, Vocabulary: 55
+- **👥 70200**: Discussing Weather and Seasonal Activities (social)
+  - Sentences: 16, Vocabulary: 59
+- **💼 70199**: Booking a Doctor's Appointment (business)
+  - Sentences: 18, Vocabulary: 55
+- **👥 70198**: Discussing Hobbies and Interests (social)
+  - Sentences: 18, Vocabulary: 69
+- **💼 70197**: Renting an Apartment (business)
+  - Sentences: 18, Vocabulary: 63
+- **👥 70196**: Making Small Talk at a Party (social)
+  - Sentences: 18, Vocabulary: 60
+- **💼 70195**: Shopping for Groceries (business)
+  - Sentences: 19, Vocabulary: 62
+- **👥 70194**: Discussing Weekend Plans (social)
+  - Sentences: 18, Vocabulary: 55
+- **💼 70193**: Ordering Coffee at a Café (business)
+  - Sentences: 19, Vocabulary: 46
+- **👥 70192**: Asking for Help with Homework (social)
+  - Sentences: 19, Vocabulary: 47
+- **👥 70191**: Discussing Travel Plans (social)
+  - Sentences: 20, Vocabulary: 67
+- **💼 70190**: Ordering Pizza Delivery (business)
+  - Sentences: 19, Vocabulary: 49
+- **👥 70189**: Discussing Movies and Entertainment (social)
+  - Sentences: 20, Vocabulary: 60
+- **🎓 70188**: A Low-score University Assignment (education)
+  - Sentences: 14, Vocabulary: 61
+- **👥 70187**: Discussing Food and Cooking (social)
+  - Sentences: 20, Vocabulary: 76
+- **💼 70186**: Ordering Food at a Restaurant (business)
+  - Sentences: 19, Vocabulary: 48
+- **💼 70185**: Trauma Insurance 101 (business)
+  - Sentences: 14, Vocabulary: 64
+- **💼 70184**: Tax Deadlines and Accounting Solutions (business)
+  - Sentences: 14, Vocabulary: 65
+- **💼 70183**: Packing Up and Selling (business)
+  - Sentences: 14, Vocabulary: 60
+- **💼 70182**: Promotion and Transition (business)
+  - Sentences: 14, Vocabulary: 59
+- **🏥 70181**: From Clinic to Home (medical)
+  - Sentences: 14, Vocabulary: 60
+- **💼 70180**: Downsizing After 15 Years (business)
+  - Sentences: 14, Vocabulary: 57
+- **⚖️ 70179**: Stolen Tools Report (legal)
+  - Sentences: 14, Vocabulary: 59
+- **👥 70178**: Settling In and Planting Seeds (social)
+  - Sentences: 14, Vocabulary: 51
+- **💼 70177**: Booking a 100th Birthday Shoot (business)
+  - Sentences: 14, Vocabulary: 63
+- **👥 70176**: Birthday Party Venue Planning (social)
+  - Sentences: 14, Vocabulary: 48
+- **💼 70175**: Drainage Concerns (business)
+  - Sentences: 14, Vocabulary: 42
 - **💼 70174**: Getting a Quote for Boat Insurance (business)
-  - Sentences: 14, Vocabulary: 67
+  - Sentences: 14, Vocabulary: 46
 - **👥 70173**: Water Restrictions in Australia (social)
-  - Sentences: 14, Vocabulary: 68
+  - Sentences: 14, Vocabulary: 60
 - **👥 70172**: Looking for a Foster Pet (social)
   - Sentences: 14, Vocabulary: 71
 - **⚖️ 70171**: Enrol to Vote (legal)

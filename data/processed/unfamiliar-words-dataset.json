@@ -3,7 +3,7 @@
     "name": "Unfamiliar Words Dataset",
     "description": "Curated challenging vocabulary from CCL conversations",
     "source": "unfamiliar-words.md",
-    "generatedAt": "2025-09-06T04:19:48.196Z",
+    "generatedAt": "2025-09-06T07:59:42.383Z",
     "totalTerms": 1474,
     "dialogues": 52,
     "categories": [
@@ -8084,6 +8084,20 @@
       "source": "unfamiliar-words",
       "context": "_Those are excellent skills_ _for retail and hospitality_! | _Customer service experience_ _is highly valued here_. | _Do you speak English well_?",
       "note": "Fuzzy matched with: for retail and hospitality"
+    },
+    {
+      "term": "retail positions available",
+      "dialogueId": "70226",
+      "dialogueTitle": "Retail & Hospitality Jobs for New Migrant",
+      "category": "business",
+      "difficulty": "hard",
+      "phonetic": "UK /retail positions available/",
+      "example": "_It depends on several factors_, | _but with your experience_, | _I'd say within a few weeks_. | _We have many retail positions_ _available_.",
+      "exampleChinese": "这取决于几个因素，| 但以你的经验，| 我想说几周内吧。| 我们有很多零售职位空缺。",
+      "sentenceId": 9,
+      "source": "unfamiliar-words",
+      "context": "_It depends on several factors_, | _but with your experience_, | _I'd say within a few weeks_. | _We have many retail positions_ _available_.",
+      "note": "Fuzzy matched with: available"
     },
     {
       "term": "retail work",
@@ -16755,19 +16769,6 @@
       "source": "unfamiliar-words",
       "context": "_I understand that_. | _Do you have a police report_ _or any photos of the damage_? | _This will help with the claim process_.",
       "note": "Fuzzy matched with: This will help with the claim process"
-    },
-    {
-      "term": "How can I assist you today",
-      "dialogueId": "70208",
-      "dialogueTitle": "Car Insurance Claim After Accident",
-      "category": "business",
-      "difficulty": "hard",
-      "phonetic": "UK /ˈhow ˈcan ˈi ˈassist ˈyou ˈtoday/",
-      "example": "_Good morning, sir_. | _Thank you for calling_ _our insurance company_. | _How can I assist you today_?",
-      "exampleChinese": "早上好，先生。感谢您致电我们保险公司。今天有什么可以为您效劳的吗？",
-      "sentenceId": 1,
-      "source": "unfamiliar-words",
-      "context": "_Good morning, sir_. | _Thank you for calling_ _our insurance company_. | _How can I assist you today_?"
     },
     {
       "term": "I had a car accident",

@@ -1,11 +1,11 @@
 {
   "summary": {
     "totalDialogues": 91,
-    "totalVocabularyTerms": 6002,
-    "processedAt": "2025-09-06T04:19:27.808Z",
+    "totalVocabularyTerms": 5473,
+    "processedAt": "2025-09-06T07:59:28.808Z",
     "sourceFile": "merged-conversations.md",
     "processingErrors": 0,
-    "processingWarnings": 18
+    "processingWarnings": 17
   },
   "categoryDistribution": {
     "social": 33,
@@ -16,9 +16,9 @@
     "immigration": 1
   },
   "difficultyDistribution": {
-    "hard": 4501,
-    "normal": 1343,
-    "easy": 158
+    "hard": 4451,
+    "normal": 997,
+    "easy": 25
   },
   "dialogueList": [
     {
@@ -550,112 +550,112 @@
       "id": "70173",
       "title": "Water Restrictions in Australia",
       "category": "social",
-      "vocabularyCount": 60,
+      "vocabularyCount": 46,
       "sentenceCount": 14
     },
     {
       "id": "70172",
       "title": "Looking for a Foster Pet",
       "category": "social",
-      "vocabularyCount": 71,
+      "vocabularyCount": 51,
       "sentenceCount": 14
     },
     {
       "id": "70171",
       "title": "Enrol to Vote",
       "category": "legal",
-      "vocabularyCount": 59,
+      "vocabularyCount": 40,
       "sentenceCount": 12
     },
     {
       "id": "70170",
       "title": "Home-based Bakery Business",
       "category": "business",
-      "vocabularyCount": 67,
+      "vocabularyCount": 44,
       "sentenceCount": 14
     },
     {
       "id": "70169",
       "title": "Bedroom Furniture Payment Plan",
       "category": "business",
-      "vocabularyCount": 71,
+      "vocabularyCount": 39,
       "sentenceCount": 12
     },
     {
       "id": "70168",
       "title": "Inquiring About Spanish Lessons",
       "category": "education",
-      "vocabularyCount": 71,
+      "vocabularyCount": 41,
       "sentenceCount": 14
     },
     {
       "id": "70167",
       "title": "Discussing an engagement Party",
       "category": "social",
-      "vocabularyCount": 87,
+      "vocabularyCount": 57,
       "sentenceCount": 14
     },
     {
       "id": "70166",
       "title": "Fundraising Event Planning",
       "category": "social",
-      "vocabularyCount": 108,
+      "vocabularyCount": 66,
       "sentenceCount": 14
     },
     {
       "id": "70165",
       "title": "Working Holiday Visa Inquiry",
       "category": "immigration",
-      "vocabularyCount": 99,
+      "vocabularyCount": 54,
       "sentenceCount": 14
     },
     {
       "id": "70164",
       "title": "Resignations and Terminations",
       "category": "legal",
-      "vocabularyCount": 124,
+      "vocabularyCount": 66,
       "sentenceCount": 14
     },
     {
       "id": "70163",
       "title": "Guiding a Daughter's School Transition",
       "category": "social",
-      "vocabularyCount": 99,
+      "vocabularyCount": 56,
       "sentenceCount": 14
     },
     {
       "id": "70162",
       "title": "Planning a Neighborhood Gathering",
       "category": "social",
-      "vocabularyCount": 109,
+      "vocabularyCount": 50,
       "sentenceCount": 14
     },
     {
       "id": "70161",
       "title": "Legal Consultation for Selling a Small Business",
       "category": "legal",
-      "vocabularyCount": 101,
+      "vocabularyCount": 44,
       "sentenceCount": 14
     },
     {
       "id": "70160",
       "title": "Rental Inquiry at the Council Office",
       "category": "business",
-      "vocabularyCount": 65,
+      "vocabularyCount": 49,
       "sentenceCount": 14
     },
     {
       "id": "70159",
       "title": "A Lonely Transfer Student",
       "category": "education",
-      "vocabularyCount": 63,
+      "vocabularyCount": 47,
       "sentenceCount": 14
     },
     {
       "id": "70158",
       "title": "Catering Business Ideas",
       "category": "business",
-      "vocabularyCount": 70,
+      "vocabularyCount": 45,
       "sentenceCount": 14
     }
   ]

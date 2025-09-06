@@ -1,11 +1,11 @@
 # CCL Dialogue Data Processing Report
 
-**Generated:** 2025-09-06T04:19:27.808Z
+**Generated:** 2025-09-06T07:59:28.808Z
 **Source File:** merged-conversations.md
 **Total Dialogues:** 91
-**Total Vocabulary Terms:** 6002
+**Total Vocabulary Terms:** 5473
 **Processing Errors:** 0
-**Processing Warnings:** 18
+**Processing Warnings:** 17
 
 ## Category Distribution
 
@@ -18,9 +18,9 @@
 
 ## Difficulty Distribution
 
-- **🔴 hard**: 4501 terms
-- **🟡 normal**: 1343 terms
-- **🟢 easy**: 158 terms
+- **🔴 hard**: 4451 terms
+- **🟡 normal**: 997 terms
+- **🟢 easy**: 25 terms
 
 ## Dialogue List
 
@@ -175,39 +175,39 @@
 - **💼 70174**: Getting a Quote for Boat Insurance (business)
   - Sentences: 14, Vocabulary: 46
 - **👥 70173**: Water Restrictions in Australia (social)
-  - Sentences: 14, Vocabulary: 60
+  - Sentences: 14, Vocabulary: 46
 - **👥 70172**: Looking for a Foster Pet (social)
-  - Sentences: 14, Vocabulary: 71
+  - Sentences: 14, Vocabulary: 51
 - **⚖️ 70171**: Enrol to Vote (legal)
-  - Sentences: 12, Vocabulary: 59
+  - Sentences: 12, Vocabulary: 40
 - **💼 70170**: Home-based Bakery Business (business)
-  - Sentences: 14, Vocabulary: 67
+  - Sentences: 14, Vocabulary: 44
 - **💼 70169**: Bedroom Furniture Payment Plan (business)
-  - Sentences: 12, Vocabulary: 71
+  - Sentences: 12, Vocabulary: 39
 - **🎓 70168**: Inquiring About Spanish Lessons (education)
-  - Sentences: 14, Vocabulary: 71
+  - Sentences: 14, Vocabulary: 41
 - **👥 70167**: Discussing an engagement Party (social)
-  - Sentences: 14, Vocabulary: 87
+  - Sentences: 14, Vocabulary: 57
 - **👥 70166**: Fundraising Event Planning (social)
-  - Sentences: 14, Vocabulary: 108
+  - Sentences: 14, Vocabulary: 66
 - **🛂 70165**: Working Holiday Visa Inquiry (immigration)
-  - Sentences: 14, Vocabulary: 99
+  - Sentences: 14, Vocabulary: 54
 - **⚖️ 70164**: Resignations and Terminations (legal)
-  - Sentences: 14, Vocabulary: 124
+  - Sentences: 14, Vocabulary: 66
 - **👥 70163**: Guiding a Daughter's School Transition (social)
-  - Sentences: 14, Vocabulary: 99
+  - Sentences: 14, Vocabulary: 56
 - **👥 70162**: Planning a Neighborhood Gathering (social)
-  - Sentences: 14, Vocabulary: 109
+  - Sentences: 14, Vocabulary: 50
 - **⚖️ 70161**: Legal Consultation for Selling a Small Business (legal)
-  - Sentences: 14, Vocabulary: 101
+  - Sentences: 14, Vocabulary: 44
 - **💼 70160**: Rental Inquiry at the Council Office (business)
-  - Sentences: 14, Vocabulary: 65
+  - Sentences: 14, Vocabulary: 49
 - **🎓 70159**: A Lonely Transfer Student (education)
-  - Sentences: 14, Vocabulary: 63
+  - Sentences: 14, Vocabulary: 47
 - **💼 70158**: Catering Business Ideas (business)
-  - Sentences: 14, Vocabulary: 70
+  - Sentences: 14, Vocabulary: 45
 
 ## Processing Warnings
 
-⚠️  18 warnings occurred during processing.
+⚠️  17 warnings occurred during processing.
 These are non-critical issues that don't prevent data generation.

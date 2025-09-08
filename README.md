@@ -8,7 +8,7 @@ A comprehensive web-based pronunciation training application for NAATI CCL (Cred
 ## Features ✅ Fully Implemented
 
 ### 🎯 Complete Dialogue-Based Vocabulary System
-- **💬 Comprehensive CCL Terms (6,967)** - Extensive vocabulary extracted from 91 complete NAATI CCL conversations  
+- **💬 Comprehensive CCL Terms (6,967)** - Extensive vocabulary extracted from 91 complete NAATI CCL conversations
 - **� Unfamiliar Words Focus (944 terms)** - Curated challenging vocabulary from actual CCL conversations for targeted practice
 - **�📝 Full Contextual Learning** - Every term includes original sentence context, dialogue flow, and conversation structure
 - **🏷️ Smart Categorization** - Organized across 9 domains with conversation-aware classification
@@ -20,7 +20,7 @@ A comprehensive web-based pronunciation training application for NAATI CCL (Cred
 - **🔥 Unfamiliar Words** - Curated challenging terms for advanced study (944 terms)
 
 ### 🔊 Advanced Pronunciation Training
-- **Australian English (en-AU) TTS** - Optimized for CCL exam context  
+- **Australian English (en-AU) TTS** - Optimized for CCL exam context
 - **🎓 Difficulty-Based Learning** - Easy (55%), Normal (31%), Hard (14%) classification
 - **⚡ Auto-Play Mode** with configurable timing (2-5 second intervals, 2s default)
 - **🔄 Repeat Modes** - 1x, 2x (Slow+Normal), 3x (Slow+Normal+Fast), Loop
@@ -31,7 +31,7 @@ A comprehensive web-based pronunciation training application for NAATI CCL (Cred
 - **🎨 Enhanced Interface** - Better typography, spacing, and visual hierarchy
 - **🌙 Theme Support** - Light, dark, and auto themes with system preference detection
 
-### 💾 Smart Progress & Data Management  
+### 💾 Smart Progress & Data Management
 - **Progress Tracking** with localStorage persistence and study streaks
 - **📊 Study Statistics** - Session time, terms studied, accuracy tracking
 - **🔄 Settings Import/Export** for backup and device sync
@@ -72,7 +72,7 @@ http://localhost:3000
 When you have new CCL conversation data to add:
 
 ```bash
-# 1. Update the main conversation file with highlighted terms  
+# 1. Update the main conversation file with highlighted terms
 # Edit: data-processing/extractors/merged-conversations.md
 # Use _term_ syntax to highlight vocabulary (e.g., _insurance claim_)
 
@@ -80,7 +80,7 @@ When you have new CCL conversation data to add:
 # Edit: data-processing/extractors/unfamilar-words.md
 # Add dialogue numbers and challenging terms (line-separated)
 
-# 3. Regenerate complete dataset and vocabulary 
+# 3. Regenerate complete dataset and vocabulary
 npm run process-data                   # Generate structured dataset (primary)
 npm run extract-vocab                  # Generate vocabulary for backward compatibility
 node scripts/process-unfamiliar-words.js  # Generate unfamiliar words dataset
@@ -90,7 +90,8 @@ npm run dev
 
 # 5. Deploy to production - commit and push all changes
 git add data-processing/extractors/ data/processed/
-git commit -m "Add new CCL vocabulary terms and unfamiliar words"  
+git add .
+git commit -m "Add new CCL vocabulary terms and unfamiliar words"
 git push origin main
 
 # Note: Both source data and processed files are committed for reliable deployment
@@ -102,16 +103,16 @@ Add challenging vocabulary to `data-processing/extractors/unfamilar-words.md`:
 
 ```
 70248
-community center 
-diverse 
+community center
+diverse
 older people
 new migrants
 variety
-come up 
+come up
 
 70247
-drop by 
-swing by 
+drop by
+swing by
 delayed
 nowadays
 ```
@@ -132,7 +133,7 @@ Speaker: The _insurance claim_ was processed quickly, and the _settlement amount
 ```
 
 The processing scripts will automatically:
-- Extract highlighted terms: "insurance claim", "settlement amount"  
+- Extract highlighted terms: "insurance claim", "settlement amount"
 - Include full sentence context and dialogue structure
 - Generate phonetic transcriptions and difficulty classifications
 - Create structured dataset with conversation relationships
@@ -142,7 +143,7 @@ The processing scripts will automatically:
 
 **For Vercel/Production deployments:**
 - **Commit both source data and processed files** for immediate deployment
-- **Vercel automatically runs** `npm run vercel-build` during deployment  
+- **Vercel automatically runs** `npm run vercel-build` during deployment
 - **Frontend loads complete dataset directly** from `/data/processed/complete-dataset.json` (91 dialogues → 6,967 terms)
 
 **For manual deployments:**
@@ -155,7 +156,7 @@ npm run vercel-build    # Runs extract-vocab + build for production
 ### Core Development
 ```bash
 npm start                     # Process complete dataset + Dev server (full setup)
-npm run dev                   # Start development server  
+npm run dev                   # Start development server
 npm run process-data          # Generate complete dataset (6,967 terms - primary)
 npm run extract-vocab         # Generate vocabulary files (for backward compatibility)
 npm run validate              # Validate all data integrity
@@ -212,15 +213,15 @@ npm run clean                # Clean generated files
 - Organized by dialogue groups (Groups 1-10, latest to earliest)
 - Full difficulty filtering (Easy/Normal/Hard)
 
-**💬 Dialogue Practice** 
+**💬 Dialogue Practice**
 - Full conversation sentences with contextual flow
 - Focus on conversational patterns and dialogue structure
 - Practice natural speech rhythm and intonation
 - Coming soon: Enhanced dialogue features
 
-**🔥 Unfamiliar Words** 
+**🔥 Unfamiliar Words**
 - Curated challenging vocabulary (944 terms)
-- Hand-selected difficult terms from actual CCL conversations  
+- Hand-selected difficult terms from actual CCL conversations
 - Perfect for advanced learners and exam preparation
 - Organized by dialogue groups with full context
 
@@ -269,12 +270,12 @@ ccl-pronunciation-trainer/
 ├── src/                    # Source code
 │   ├── js/                # Modular JavaScript
 │   │   ├── core/          # App coordinator & vocabulary management
-│   │   ├── audio/         # TTS & voice functionality  
+│   │   ├── audio/         # TTS & voice functionality
 │   │   ├── ui/            # Interface & settings
 │   │   └── utils/         # EventBus & storage utilities
 │   └── css/               # Modular stylesheets
 ├── data/                  # Complete dialogue dataset (6,967 terms)
-│   ├── conversation/      # Raw conversation data  
+│   ├── conversation/      # Raw conversation data
 │   ├── generated/         # Generated vocabulary files
 │   └── processed/         # Structured dialogue dataset
 ├── data-processing/       # Source conversation files (91 dialogues)
@@ -290,7 +291,7 @@ See [DEVELOPMENT.md](docs/DEVELOPMENT.md) for detailed instructions.
 ```bash
 # Core Commands (all tested and working)
 npm run dev          # Start development server on port 3000
-npm run process-data # Generate complete dataset (7,072 terms - primary)  
+npm run process-data # Generate complete dataset (7,072 terms - primary)
 npm run validate     # Comprehensive data validation
 npm run build        # Production build with minification
 npm run deploy       # Full deployment pipeline

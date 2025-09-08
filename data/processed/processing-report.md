@@ -1,26 +1,26 @@
 # CCL Dialogue Data Processing Report
 
-**Generated:** 2025-09-06T07:59:28.808Z
+**Generated:** 2025-09-08T08:37:40.508Z
 **Source File:** merged-conversations.md
 **Total Dialogues:** 91
-**Total Vocabulary Terms:** 5473
+**Total Vocabulary Terms:** 5717
 **Processing Errors:** 0
-**Processing Warnings:** 17
+**Processing Warnings:** 26
 
 ## Category Distribution
 
-- **👥 social**: 33 dialogues
-- **💼 business**: 44 dialogues
+- **👥 social**: 36 dialogues
+- **💼 business**: 37 dialogues
 - **🏥 medical**: 3 dialogues
-- **⚖️ legal**: 7 dialogues
-- **🎓 education**: 3 dialogues
+- **⚖️ legal**: 9 dialogues
+- **🎓 education**: 5 dialogues
 - **🛂 immigration**: 1 dialogues
 
 ## Difficulty Distribution
 
-- **🔴 hard**: 4451 terms
-- **🟡 normal**: 997 terms
-- **🟢 easy**: 25 terms
+- **🔴 hard**: 4686 terms
+- **🟡 normal**: 992 terms
+- **🟢 easy**: 39 terms
 
 ## Dialogue List
 
@@ -37,7 +37,7 @@
 - **👥 70243**: Urgent Lawyer Appointment for Job Contract Review (social)
   - Sentences: 14, Vocabulary: 60
 - **👥 70242**: New Council Employee Helps Community Centre (social)
-  - Sentences: 14, Vocabulary: 62
+  - Sentences: 14, Vocabulary: 61
 - **👥 70241**: Suite Bathroom Design Clarification (social)
   - Sentences: 14, Vocabulary: 64
 - **👥 70240**: A New Creamy Leather Lounge Chair (social)
@@ -51,9 +51,9 @@
 - **👥 70236**: Shed to Park: Planting Volunteers (social)
   - Sentences: 14, Vocabulary: 75
 - **👥 70235**: Late Fee and Direct Debit (social)
-  - Sentences: 14, Vocabulary: 78
+  - Sentences: 14, Vocabulary: 72
 - **👥 70234**: Small Town Doctor & Grocer (social)
-  - Sentences: 14, Vocabulary: 92
+  - Sentences: 14, Vocabulary: 90
 - **💼 70233**: Excavator Theft (business)
   - Sentences: 14, Vocabulary: 69
 - **👥 70232**: Ceiling Leak Emergency Report (social)
@@ -61,27 +61,27 @@
 - **💼 70231**: Designing a Relaxing Indoor-Outdoor Space (business)
   - Sentences: 14, Vocabulary: 77
 - **👥 70230**: Support for Aging Parents (social)
-  - Sentences: 14, Vocabulary: 62
+  - Sentences: 14, Vocabulary: 70
 - **💼 70229**: Getting Insured After Moving Out (business)
-  - Sentences: 14, Vocabulary: 71
-- **💼 70228**: First-Day Onboarding with HR (business)
-  - Sentences: 14, Vocabulary: 65
+  - Sentences: 14, Vocabulary: 70
+- **👥 70228**: First-Day Onboarding with HR (social)
+  - Sentences: 14, Vocabulary: 67
 - **💼 70227**: Handmade Sausage Rolls and Pies for Café Menu (business)
-  - Sentences: 14, Vocabulary: 64
-- **💼 70226**: Retail & Hospitality Jobs for New Migrant (business)
   - Sentences: 14, Vocabulary: 63
+- **👥 70226**: Retail & Hospitality Jobs for New Migrant (social)
+  - Sentences: 14, Vocabulary: 66
 - **🏥 70225**: Over-the-Counter Drugs for Indigestion (medical)
-  - Sentences: 14, Vocabulary: 61
-- **💼 70224**: Kitchen Cabinet Hinge Repair (business)
-  - Sentences: 14, Vocabulary: 53
+  - Sentences: 14, Vocabulary: 57
+- **👥 70224**: Kitchen Cabinet Hinge Repair (social)
+  - Sentences: 14, Vocabulary: 58
 - **💼 70223**: Discovering the Neighbourhood Post Office (business)
-  - Sentences: 14, Vocabulary: 56
-- **🏥 70222**: Bystander Assistance to Paramedic (medical)
+  - Sentences: 14, Vocabulary: 55
+- **👥 70222**: Bystander Assistance to Paramedic (social)
   - Sentences: 14, Vocabulary: 49
 - **👥 70221**: Friendly Support for the New Town Doctor (social)
   - Sentences: 14, Vocabulary: 68
 - **💼 70220**: Tenant Requests Pest Control (business)
-  - Sentences: 14, Vocabulary: 60
+  - Sentences: 14, Vocabulary: 59
 - **💼 70219**: Understanding Bill Payment Delays (business)
   - Sentences: 14, Vocabulary: 58
 - **⚖️ 70218**: Van Theft Report and Insurance Steps (legal)
@@ -102,54 +102,54 @@
   - Sentences: 14, Vocabulary: 72
 - **💼 70210**: Making Use of a Spare Skip Bin (business)
   - Sentences: 14, Vocabulary: 69
-- **👥 70209**: New Neighbour's Dog Barking (social)
-  - Sentences: 14, Vocabulary: 54
-- **💼 70208**: Car Insurance Claim After Accident (business)
-  - Sentences: 15, Vocabulary: 60
-- **💼 70207**: Restaurant Reservation for Large Group (business)
-  - Sentences: 17, Vocabulary: 61
-- **💼 70206**: Job Interview for Teaching Position (business)
-  - Sentences: 16, Vocabulary: 67
-- **💼 70205**: Buying a Used Car from Private Seller (business)
-  - Sentences: 17, Vocabulary: 62
-- **💼 70204**: Reporting a Lost Credit Card (business)
-  - Sentences: 18, Vocabulary: 67
-- **💼 70203**: Applying for a Library Card (business)
-  - Sentences: 21, Vocabulary: 68
-- **💼 70202**: Ordering Takeaway Food (business)
-  - Sentences: 18, Vocabulary: 50
-- **👥 70201**: Asking for Directions to Tourist Attractions (social)
-  - Sentences: 16, Vocabulary: 55
-- **👥 70200**: Discussing Weather and Seasonal Activities (social)
-  - Sentences: 16, Vocabulary: 59
-- **💼 70199**: Booking a Doctor's Appointment (business)
-  - Sentences: 18, Vocabulary: 55
-- **👥 70198**: Discussing Hobbies and Interests (social)
-  - Sentences: 18, Vocabulary: 69
-- **💼 70197**: Renting an Apartment (business)
-  - Sentences: 18, Vocabulary: 63
-- **👥 70196**: Making Small Talk at a Party (social)
-  - Sentences: 18, Vocabulary: 60
-- **💼 70195**: Shopping for Groceries (business)
-  - Sentences: 19, Vocabulary: 62
-- **👥 70194**: Discussing Weekend Plans (social)
-  - Sentences: 18, Vocabulary: 55
-- **💼 70193**: Ordering Coffee at a Café (business)
-  - Sentences: 19, Vocabulary: 46
-- **👥 70192**: Asking for Help with Homework (social)
-  - Sentences: 19, Vocabulary: 47
-- **👥 70191**: Discussing Travel Plans (social)
-  - Sentences: 20, Vocabulary: 67
-- **💼 70190**: Ordering Pizza Delivery (business)
-  - Sentences: 19, Vocabulary: 49
-- **👥 70189**: Discussing Movies and Entertainment (social)
-  - Sentences: 20, Vocabulary: 60
+- **👥 70209**: Birthday Book Dilemma (social)
+  - Sentences: 14, Vocabulary: 69
+- **💼 70208**: Resolving Off-Plan Apartment Concerns (business)
+  - Sentences: 14, Vocabulary: 63
+- **💼 70207**: Pitching Baked Goods to a Café (business)
+  - Sentences: 14, Vocabulary: 60
+- **🎓 70206**: Easy Ways to Pick Up Our Kids (education)
+  - Sentences: 14, Vocabulary: 66
+- **💼 70205**: Fixing a Faulty Laptop Under Warranty (business)
+  - Sentences: 14, Vocabulary: 62
+- **👥 70204**: Using Media and Web to Boost Food Donations (social)
+  - Sentences: 14, Vocabulary: 63
+- **⚖️ 70203**: Government Legal Helpline for Fence Dispute (legal)
+  - Sentences: 14, Vocabulary: 63
+- **💼 70202**: Soap Business Marketing Discussion (business)
+  - Sentences: 14, Vocabulary: 63
+- **💼 70201**: Truck Driver Job Interview (business)
+  - Sentences: 14, Vocabulary: 69
+- **💼 70200**: Social Media Strategies for Selling Art (business)
+  - Sentences: 14, Vocabulary: 72
+- **👥 70199**: Parent's Call for Disability Holiday Program Details (social)
+  - Sentences: 14, Vocabulary: 78
+- **👥 70198**: Flight Change Request After New Job Start (social)
+  - Sentences: 14, Vocabulary: 66
+- **⚖️ 70197**: Police Call About House Invasion (legal)
+  - Sentences: 14, Vocabulary: 75
+- **🏥 70196**: Pharmacist Advice for Flu-Like Symptoms (medical)
+  - Sentences: 14, Vocabulary: 72
+- **💼 70195**: Office Meeting on Remote Work Challenges (business)
+  - Sentences: 14, Vocabulary: 72
+- **👥 70194**: Phone Inquiry about Electric Bike Rules (social)
+  - Sentences: 14, Vocabulary: 80
+- **💼 70193**: Talking Through a Retirement Plan (business)
+  - Sentences: 14, Vocabulary: 85
+- **👥 70192**: Discussing a Film Festival with the City Council (social)
+  - Sentences: 15, Vocabulary: 70
+- **💼 70191**: Navigating Customer Service Challenges (business)
+  - Sentences: 14, Vocabulary: 75
+- **👥 70190**: From Crib to Platform Bed (social)
+  - Sentences: 14, Vocabulary: 77
+- **👥 70189**: Helping Hands for a Neighbourhood Park (social)
+  - Sentences: 14, Vocabulary: 70
 - **🎓 70188**: A Low-score University Assignment (education)
   - Sentences: 14, Vocabulary: 61
-- **👥 70187**: Discussing Food and Cooking (social)
-  - Sentences: 20, Vocabulary: 76
-- **💼 70186**: Ordering Food at a Restaurant (business)
-  - Sentences: 19, Vocabulary: 48
+- **👥 70187**: Social Worker Directories (social)
+  - Sentences: 14, Vocabulary: 64
+- **🎓 70186**: Discussing the Upcoming Museum Visit (education)
+  - Sentences: 14, Vocabulary: 69
 - **💼 70185**: Trauma Insurance 101 (business)
   - Sentences: 14, Vocabulary: 64
 - **💼 70184**: Tax Deadlines and Accounting Solutions (business)
@@ -209,5 +209,5 @@
 
 ## Processing Warnings
 
-⚠️  17 warnings occurred during processing.
+⚠️  26 warnings occurred during processing.
 These are non-critical issues that don't prevent data generation.

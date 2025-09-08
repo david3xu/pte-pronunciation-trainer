@@ -1,24 +1,24 @@
 {
   "summary": {
     "totalDialogues": 91,
-    "totalVocabularyTerms": 5473,
-    "processedAt": "2025-09-06T07:59:28.808Z",
+    "totalVocabularyTerms": 5717,
+    "processedAt": "2025-09-08T08:37:40.508Z",
     "sourceFile": "merged-conversations.md",
     "processingErrors": 0,
-    "processingWarnings": 17
+    "processingWarnings": 26
   },
   "categoryDistribution": {
-    "social": 33,
-    "business": 44,
+    "social": 36,
+    "business": 37,
     "medical": 3,
-    "legal": 7,
-    "education": 3,
+    "legal": 9,
+    "education": 5,
     "immigration": 1
   },
   "difficultyDistribution": {
-    "hard": 4451,
-    "normal": 997,
-    "easy": 25
+    "hard": 4686,
+    "normal": 992,
+    "easy": 39
   },
   "dialogueList": [
     {
@@ -67,7 +67,7 @@
       "id": "70242",
       "title": "New Council Employee Helps Community Centre",
       "category": "social",
-      "vocabularyCount": 62,
+      "vocabularyCount": 61,
       "sentenceCount": 14
     },
     {
@@ -116,14 +116,14 @@
       "id": "70235",
       "title": "Late Fee and Direct Debit",
       "category": "social",
-      "vocabularyCount": 78,
+      "vocabularyCount": 72,
       "sentenceCount": 14
     },
     {
       "id": "70234",
       "title": "Small Town Doctor & Grocer",
       "category": "social",
-      "vocabularyCount": 92,
+      "vocabularyCount": 90,
       "sentenceCount": 14
     },
     {
@@ -151,62 +151,62 @@
       "id": "70230",
       "title": "Support for Aging Parents",
       "category": "social",
-      "vocabularyCount": 62,
+      "vocabularyCount": 70,
       "sentenceCount": 14
     },
     {
       "id": "70229",
       "title": "Getting Insured After Moving Out",
       "category": "business",
-      "vocabularyCount": 71,
+      "vocabularyCount": 70,
       "sentenceCount": 14
     },
     {
       "id": "70228",
       "title": "First-Day Onboarding with HR",
-      "category": "business",
-      "vocabularyCount": 65,
+      "category": "social",
+      "vocabularyCount": 67,
       "sentenceCount": 14
     },
     {
       "id": "70227",
       "title": "Handmade Sausage Rolls and Pies for Café Menu",
       "category": "business",
-      "vocabularyCount": 64,
+      "vocabularyCount": 63,
       "sentenceCount": 14
     },
     {
       "id": "70226",
       "title": "Retail & Hospitality Jobs for New Migrant",
-      "category": "business",
-      "vocabularyCount": 63,
+      "category": "social",
+      "vocabularyCount": 66,
       "sentenceCount": 14
     },
     {
       "id": "70225",
       "title": "Over-the-Counter Drugs for Indigestion",
       "category": "medical",
-      "vocabularyCount": 61,
+      "vocabularyCount": 57,
       "sentenceCount": 14
     },
     {
       "id": "70224",
       "title": "Kitchen Cabinet Hinge Repair",
-      "category": "business",
-      "vocabularyCount": 53,
+      "category": "social",
+      "vocabularyCount": 58,
       "sentenceCount": 14
     },
     {
       "id": "70223",
       "title": "Discovering the Neighbourhood Post Office",
       "category": "business",
-      "vocabularyCount": 56,
+      "vocabularyCount": 55,
       "sentenceCount": 14
     },
     {
       "id": "70222",
       "title": "Bystander Assistance to Paramedic",
-      "category": "medical",
+      "category": "social",
       "vocabularyCount": 49,
       "sentenceCount": 14
     },
@@ -221,7 +221,7 @@
       "id": "70220",
       "title": "Tenant Requests Pest Control",
       "category": "business",
-      "vocabularyCount": 60,
+      "vocabularyCount": 59,
       "sentenceCount": 14
     },
     {
@@ -296,150 +296,150 @@
     },
     {
       "id": "70209",
-      "title": "New Neighbour's Dog Barking",
+      "title": "Birthday Book Dilemma",
       "category": "social",
-      "vocabularyCount": 54,
+      "vocabularyCount": 69,
       "sentenceCount": 14
     },
     {
       "id": "70208",
-      "title": "Car Insurance Claim After Accident",
+      "title": "Resolving Off-Plan Apartment Concerns",
       "category": "business",
-      "vocabularyCount": 60,
-      "sentenceCount": 15
+      "vocabularyCount": 63,
+      "sentenceCount": 14
     },
     {
       "id": "70207",
-      "title": "Restaurant Reservation for Large Group",
+      "title": "Pitching Baked Goods to a Café",
       "category": "business",
-      "vocabularyCount": 61,
-      "sentenceCount": 17
+      "vocabularyCount": 60,
+      "sentenceCount": 14
     },
     {
       "id": "70206",
-      "title": "Job Interview for Teaching Position",
-      "category": "business",
-      "vocabularyCount": 67,
-      "sentenceCount": 16
+      "title": "Easy Ways to Pick Up Our Kids",
+      "category": "education",
+      "vocabularyCount": 66,
+      "sentenceCount": 14
     },
     {
       "id": "70205",
-      "title": "Buying a Used Car from Private Seller",
+      "title": "Fixing a Faulty Laptop Under Warranty",
       "category": "business",
       "vocabularyCount": 62,
-      "sentenceCount": 17
+      "sentenceCount": 14
     },
     {
       "id": "70204",
-      "title": "Reporting a Lost Credit Card",
-      "category": "business",
-      "vocabularyCount": 67,
-      "sentenceCount": 18
+      "title": "Using Media and Web to Boost Food Donations",
+      "category": "social",
+      "vocabularyCount": 63,
+      "sentenceCount": 14
     },
     {
       "id": "70203",
-      "title": "Applying for a Library Card",
-      "category": "business",
-      "vocabularyCount": 68,
-      "sentenceCount": 21
+      "title": "Government Legal Helpline for Fence Dispute",
+      "category": "legal",
+      "vocabularyCount": 63,
+      "sentenceCount": 14
     },
     {
       "id": "70202",
-      "title": "Ordering Takeaway Food",
+      "title": "Soap Business Marketing Discussion",
       "category": "business",
-      "vocabularyCount": 50,
-      "sentenceCount": 18
+      "vocabularyCount": 63,
+      "sentenceCount": 14
     },
     {
       "id": "70201",
-      "title": "Asking for Directions to Tourist Attractions",
-      "category": "social",
-      "vocabularyCount": 55,
-      "sentenceCount": 16
+      "title": "Truck Driver Job Interview",
+      "category": "business",
+      "vocabularyCount": 69,
+      "sentenceCount": 14
     },
     {
       "id": "70200",
-      "title": "Discussing Weather and Seasonal Activities",
-      "category": "social",
-      "vocabularyCount": 59,
-      "sentenceCount": 16
+      "title": "Social Media Strategies for Selling Art",
+      "category": "business",
+      "vocabularyCount": 72,
+      "sentenceCount": 14
     },
     {
       "id": "70199",
-      "title": "Booking a Doctor's Appointment",
-      "category": "business",
-      "vocabularyCount": 55,
-      "sentenceCount": 18
+      "title": "Parent's Call for Disability Holiday Program Details",
+      "category": "social",
+      "vocabularyCount": 78,
+      "sentenceCount": 14
     },
     {
       "id": "70198",
-      "title": "Discussing Hobbies and Interests",
+      "title": "Flight Change Request After New Job Start",
       "category": "social",
-      "vocabularyCount": 69,
-      "sentenceCount": 18
+      "vocabularyCount": 66,
+      "sentenceCount": 14
     },
     {
       "id": "70197",
-      "title": "Renting an Apartment",
-      "category": "business",
-      "vocabularyCount": 63,
-      "sentenceCount": 18
+      "title": "Police Call About House Invasion",
+      "category": "legal",
+      "vocabularyCount": 75,
+      "sentenceCount": 14
     },
     {
       "id": "70196",
-      "title": "Making Small Talk at a Party",
-      "category": "social",
-      "vocabularyCount": 60,
-      "sentenceCount": 18
+      "title": "Pharmacist Advice for Flu-Like Symptoms",
+      "category": "medical",
+      "vocabularyCount": 72,
+      "sentenceCount": 14
     },
     {
       "id": "70195",
-      "title": "Shopping for Groceries",
+      "title": "Office Meeting on Remote Work Challenges",
       "category": "business",
-      "vocabularyCount": 62,
-      "sentenceCount": 19
+      "vocabularyCount": 72,
+      "sentenceCount": 14
     },
     {
       "id": "70194",
-      "title": "Discussing Weekend Plans",
+      "title": "Phone Inquiry about Electric Bike Rules",
       "category": "social",
-      "vocabularyCount": 55,
-      "sentenceCount": 18
+      "vocabularyCount": 80,
+      "sentenceCount": 14
     },
     {
       "id": "70193",
-      "title": "Ordering Coffee at a Café",
+      "title": "Talking Through a Retirement Plan",
       "category": "business",
-      "vocabularyCount": 46,
-      "sentenceCount": 19
+      "vocabularyCount": 85,
+      "sentenceCount": 14
     },
     {
       "id": "70192",
-      "title": "Asking for Help with Homework",
+      "title": "Discussing a Film Festival with the City Council",
       "category": "social",
-      "vocabularyCount": 47,
-      "sentenceCount": 19
+      "vocabularyCount": 70,
+      "sentenceCount": 15
     },
     {
       "id": "70191",
-      "title": "Discussing Travel Plans",
-      "category": "social",
-      "vocabularyCount": 67,
-      "sentenceCount": 20
+      "title": "Navigating Customer Service Challenges",
+      "category": "business",
+      "vocabularyCount": 75,
+      "sentenceCount": 14
     },
     {
       "id": "70190",
-      "title": "Ordering Pizza Delivery",
-      "category": "business",
-      "vocabularyCount": 49,
-      "sentenceCount": 19
+      "title": "From Crib to Platform Bed",
+      "category": "social",
+      "vocabularyCount": 77,
+      "sentenceCount": 14
     },
     {
       "id": "70189",
-      "title": "Discussing Movies and Entertainment",
+      "title": "Helping Hands for a Neighbourhood Park",
       "category": "social",
-      "vocabularyCount": 60,
-      "sentenceCount": 20
+      "vocabularyCount": 70,
+      "sentenceCount": 14
     },
     {
       "id": "70188",
@@ -450,17 +450,17 @@
     },
     {
       "id": "70187",
-      "title": "Discussing Food and Cooking",
+      "title": "Social Worker Directories",
       "category": "social",
-      "vocabularyCount": 76,
-      "sentenceCount": 20
+      "vocabularyCount": 64,
+      "sentenceCount": 14
     },
     {
       "id": "70186",
-      "title": "Ordering Food at a Restaurant",
-      "category": "business",
-      "vocabularyCount": 48,
-      "sentenceCount": 19
+      "title": "Discussing the Upcoming Museum Visit",
+      "category": "education",
+      "vocabularyCount": 69,
+      "sentenceCount": 14
     },
     {
       "id": "70185",

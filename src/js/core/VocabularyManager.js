@@ -15,6 +15,7 @@ class VocabularyManager {
         // Store different datasets
         this.completeDataset = null;
         this.unfamiliarWordsDataset = null;
+        this.wordsDataset = null; // Dataset for words.md mode
 
         // Dialogue-based category labels (groups by decade endings 0-9) - Sept 3, 2025
         this.categoryLabels = {
@@ -194,6 +195,8 @@ class VocabularyManager {
             return await this.getUnfamiliarWordsData();
         } else if (this.currentLearningMode === 'dialogue') {
             return this.getDialogueData();
+        } else if (this.currentLearningMode === 'words') {
+            return await this.getWordsData();
         } else {
             // Default: vocabulary mode
             return this.getStandardVocabularyData();
@@ -256,6 +259,53 @@ class VocabularyManager {
         // This would return full sentences instead of individual vocabulary
         console.log('Dialogue practice mode not yet implemented');
         return this.getStandardVocabularyData();
+    }
+
+    async loadWordsDataset() {
+        if (this.wordsDataset) return this.wordsDataset;
+        try {
+            console.log('📥 Loading words dataset (from words.md)...');
+            const response = await fetch('/data/processed/words-dataset.json');
+            if (!response.ok) {
+                throw new Error(`Failed to load words dataset: ${response.status} ${response.statusText}`);
+            }
+            this.wordsDataset = await response.json();
+            console.log('✅ Words dataset loaded:', this.wordsDataset.words?.length || 0, 'terms');
+            return this.wordsDataset;
+        } catch (error) {
+            console.error('❌ Failed to load words dataset:', error);
+            return null;
+        }
+    }
+
+    async getWordsData() {
+        const dataset = await this.loadWordsDataset();
+        if (!dataset || !Array.isArray(dataset.words)) {
+            console.error('Words dataset not available or invalid');
+            return { vocabulary: [], totalTerms: 0, generatedAt: new Date().toISOString(), sourceFile: 'words-dataset.json' };
+        }
+
+        // Map to standard vocabulary shape, preserving original order
+        const vocabulary = dataset.words.map((w) => ({
+            english: w.term,
+            chinese: '',
+            difficulty: w.difficulty || 'normal',
+            example: '',
+            exampleChinese: '',
+            category: w.category || 'unknown',
+            conversationId: String(w.dialogueId || w.conversationId || w.groupId || ''),
+            conversationTitle: w.dialogueTitle || '',
+            sentenceNumber: w.sentenceId || 0,
+            phonetic: w.phonetic || '',
+            source: 'words-md'
+        }));
+
+        return {
+            vocabulary,
+            totalTerms: vocabulary.length,
+            generatedAt: new Date().toISOString(),
+            sourceFile: 'words-dataset.json'
+        };
     }
 
     updateCategoryOptions() {

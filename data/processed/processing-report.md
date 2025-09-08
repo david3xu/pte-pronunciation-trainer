@@ -1,9 +1,9 @@
 # CCL Dialogue Data Processing Report
 
-**Generated:** 2025-09-08T08:37:40.508Z
+**Generated:** 2025-09-08T13:02:01.114Z
 **Source File:** merged-conversations.md
 **Total Dialogues:** 91
-**Total Vocabulary Terms:** 5717
+**Total Vocabulary Terms:** 5708
 **Processing Errors:** 0
 **Processing Warnings:** 26
 
@@ -18,9 +18,9 @@
 
 ## Difficulty Distribution
 
-- **🔴 hard**: 4686 terms
-- **🟡 normal**: 992 terms
-- **🟢 easy**: 39 terms
+- **🔴 hard**: 4690 terms
+- **🟡 normal**: 986 terms
+- **🟢 easy**: 32 terms
 
 ## Dialogue List
 
@@ -119,15 +119,15 @@
 - **💼 70202**: Soap Business Marketing Discussion (business)
   - Sentences: 14, Vocabulary: 63
 - **💼 70201**: Truck Driver Job Interview (business)
-  - Sentences: 14, Vocabulary: 69
+  - Sentences: 14, Vocabulary: 64
 - **💼 70200**: Social Media Strategies for Selling Art (business)
-  - Sentences: 14, Vocabulary: 72
+  - Sentences: 14, Vocabulary: 71
 - **👥 70199**: Parent's Call for Disability Holiday Program Details (social)
-  - Sentences: 14, Vocabulary: 78
+  - Sentences: 14, Vocabulary: 77
 - **👥 70198**: Flight Change Request After New Job Start (social)
   - Sentences: 14, Vocabulary: 66
 - **⚖️ 70197**: Police Call About House Invasion (legal)
-  - Sentences: 14, Vocabulary: 75
+  - Sentences: 14, Vocabulary: 73
 - **🏥 70196**: Pharmacist Advice for Flu-Like Symptoms (medical)
   - Sentences: 14, Vocabulary: 72
 - **💼 70195**: Office Meeting on Remote Work Challenges (business)

@@ -1,8 +1,8 @@
 {
   "summary": {
     "totalDialogues": 91,
-    "totalVocabularyTerms": 5717,
-    "processedAt": "2025-09-08T08:37:40.508Z",
+    "totalVocabularyTerms": 5708,
+    "processedAt": "2025-09-08T13:02:01.114Z",
     "sourceFile": "merged-conversations.md",
     "processingErrors": 0,
     "processingWarnings": 26
@@ -16,9 +16,9 @@
     "immigration": 1
   },
   "difficultyDistribution": {
-    "hard": 4686,
-    "normal": 992,
-    "easy": 39
+    "hard": 4690,
+    "normal": 986,
+    "easy": 32
   },
   "dialogueList": [
     {
@@ -354,21 +354,21 @@
       "id": "70201",
       "title": "Truck Driver Job Interview",
       "category": "business",
-      "vocabularyCount": 69,
+      "vocabularyCount": 64,
       "sentenceCount": 14
     },
     {
       "id": "70200",
       "title": "Social Media Strategies for Selling Art",
       "category": "business",
-      "vocabularyCount": 72,
+      "vocabularyCount": 71,
       "sentenceCount": 14
     },
     {
       "id": "70199",
       "title": "Parent's Call for Disability Holiday Program Details",
       "category": "social",
-      "vocabularyCount": 78,
+      "vocabularyCount": 77,
       "sentenceCount": 14
     },
     {
@@ -382,7 +382,7 @@
       "id": "70197",
       "title": "Police Call About House Invasion",
       "category": "legal",
-      "vocabularyCount": 75,
+      "vocabularyCount": 73,
       "sentenceCount": 14
     },
     {

@@ -11,7 +11,7 @@ class VocabularyManager {
         this.currentIndex = 0;
         this.dataLoader = null;
         this.isInitialized = false;
-        
+
         // Store different datasets
         this.completeDataset = null;
         this.unfamiliarWordsDataset = null;
@@ -59,7 +59,7 @@ class VocabularyManager {
         // Count items by dialogue group and difficulty
         vocabularyData.forEach(item => {
             const conversationId = parseInt(item.conversationId);
-            
+
             // Find which group this dialogue belongs to
             let dialogueGroup = null;
             for (const [groupKey, dialogueIds] of Object.entries(this.dialogueGroups)) {
@@ -68,7 +68,7 @@ class VocabularyManager {
                     break;
                 }
             }
-            
+
             // Count in the appropriate group
             if (dialogueGroup) {
                 if (!this.categoryCounts[dialogueGroup]) {
@@ -77,7 +77,7 @@ class VocabularyManager {
                 this.categoryCounts[dialogueGroup].all++;
                 this.categoryCounts[dialogueGroup][item.difficulty || 'normal']++;
             }
-            
+
             // Always count in all-categories
             this.categoryCounts['all-categories'].all++;
             this.categoryCounts['all-categories'][item.difficulty || 'normal']++;
@@ -88,15 +88,15 @@ class VocabularyManager {
 
     async recalculateCountsForMode(mode) {
         console.log('🔄 Recalculating counts for mode:', mode);
-        
+
         // Get vocabulary data for the specified mode
         const previousMode = this.currentLearningMode;
         this.currentLearningMode = mode; // Temporarily set mode for data retrieval
-        
+
         const data = await this.getVocabularyData();
-        
+
         this.currentLearningMode = previousMode; // Restore original mode
-        
+
         if (!data || !data.vocabulary) {
             console.error('❌ No vocabulary data available for mode:', mode);
             return;
@@ -117,7 +117,7 @@ class VocabularyManager {
         // Count items by dialogue group and difficulty
         vocabularyData.forEach(item => {
             const conversationId = parseInt(item.conversationId);
-            
+
             // Find which group this dialogue belongs to
             let dialogueGroup = null;
             for (const [groupKey, dialogueIds] of Object.entries(this.dialogueGroups)) {
@@ -126,13 +126,13 @@ class VocabularyManager {
                     break;
                 }
             }
-            
+
             // Count in the appropriate group
             if (dialogueGroup) {
                 this.categoryCounts[dialogueGroup].all++;
                 this.categoryCounts[dialogueGroup][item.difficulty || 'normal']++;
             }
-            
+
             // Always count in all-categories
             this.categoryCounts['all-categories'].all++;
             this.categoryCounts['all-categories'][item.difficulty || 'normal']++;
@@ -206,14 +206,14 @@ class VocabularyManager {
     getStandardVocabularyData() {
         // For backward compatibility, return a structure similar to conversationVocabularyData
         const vocabulary = this.getVocabularyFromDataLoader();
-        
+
         if (!this.extractedVocabulary) {
             console.error('Complete dataset not loaded yet!');
             return null;
         }
 
         console.log('Complete dataset vocabulary loaded:', vocabulary.length, 'terms');
-        
+
         return {
             vocabulary: vocabulary,
             totalTerms: vocabulary.length,
@@ -245,7 +245,7 @@ class VocabularyManager {
         }));
 
         console.log('Unfamiliar words vocabulary loaded:', vocabulary.length, 'terms');
-        
+
         return {
             vocabulary: vocabulary,
             totalTerms: vocabulary.length,
@@ -319,12 +319,12 @@ class VocabularyManager {
         Object.entries(this.categoryLabels).forEach(([value, label]) => {
             const option = document.createElement('option');
             option.value = value;
-            
+
             // Add word count to label if available
-            const count = this.categoryCounts && this.categoryCounts[value] 
-                ? this.categoryCounts[value].all 
+            const count = this.categoryCounts && this.categoryCounts[value]
+                ? this.categoryCounts[value].all
                 : 0;
-            
+
             // Update label with count for non-all categories
             if (value === 'all-categories') {
                 option.textContent = `🌟 All Categories (${count} words)`;
@@ -342,18 +342,18 @@ class VocabularyManager {
     setLearningMode(mode) {
         console.log('🎯 Setting learning mode to:', mode);
         this.currentLearningMode = mode;
-        
+
         // Recalculate category counts for the new mode
         this.recalculateCountsForMode(mode);
-        
+
         // Update category options with new counts
         this.updateCategoryOptions();
-        
+
         // Emit learning mode change event
         window.eventBus.emit('vocabulary:learningModeChanged', {
             mode: this.currentLearningMode
         });
-        
+
         // Reload current category with new mode
         this.loadCategory(this.currentCategory);
     }
@@ -362,15 +362,15 @@ class VocabularyManager {
         if (this.unfamiliarWordsDataset) {
             return this.unfamiliarWordsDataset;
         }
-        
+
         try {
             console.log('📥 Loading unfamiliar words dataset...');
             const response = await fetch('/data/processed/unfamiliar-words-dataset.json');
-            
+
             if (!response.ok) {
                 throw new Error(`Failed to load unfamiliar words: ${response.status} ${response.statusText}`);
             }
-            
+
             this.unfamiliarWordsDataset = await response.json();
             console.log('✅ Unfamiliar words dataset loaded:', this.unfamiliarWordsDataset.words.length, 'terms');
             return this.unfamiliarWordsDataset;
@@ -384,7 +384,7 @@ class VocabularyManager {
         console.log('🔄 loadCategory called with:', category, 'mode:', this.currentLearningMode);
         console.log('🔍 extractedVocabulary available:', !!this.extractedVocabulary);
         console.log('🔍 extractedVocabulary length:', this.extractedVocabulary?.length || 0);
-        
+
         const data = await this.getVocabularyData();
         if (!data || !data.vocabulary) {
             console.error('❌ No vocabulary data available in loadCategory');
@@ -525,24 +525,24 @@ class VocabularyManager {
     getNextCategory() {
         const categories = this.getAllCategories();
         const currentIndex = categories.indexOf(this.currentCategory);
-        
+
         // If we're at the last category, don't advance (or could loop back to first)
         if (currentIndex >= categories.length - 1) {
             return null; // No next category
         }
-        
+
         return categories[currentIndex + 1];
     }
 
     getPreviousCategory() {
         const categories = this.getAllCategories();
         const currentIndex = categories.indexOf(this.currentCategory);
-        
+
         // If we're at the first category, don't go back (or could loop to last)
         if (currentIndex <= 0) {
             return null; // No previous category
         }
-        
+
         return categories[currentIndex - 1];
     }
 
@@ -553,28 +553,28 @@ class VocabularyManager {
     // Initialize vocabulary on load
     async initialize() {
         console.log('🔄 Initializing VocabularyManager with complete dataset...');
-        
+
         // Load complete dataset directly via fetch instead of DialogueDataLoader
         try {
             console.log('📥 Loading complete dataset...');
             const response = await fetch('/data/processed/complete-dataset.json');
-            
+
             if (!response.ok) {
                 throw new Error(`Failed to load data: ${response.status} ${response.statusText}`);
             }
-            
+
             const completeData = await response.json();
             console.log('✅ Complete dataset loaded successfully');
             console.log(`📊 Loaded ${completeData.dialogues?.length} dialogues with vocabulary`);
-            
+
             this.completeDataset = completeData;
             this.isInitialized = true;
-            
+
             // Extract vocabulary for compatibility with existing methods
             this.extractVocabularyFromDataset();
             // Extract vocabulary for compatibility with existing methods
             this.extractVocabularyFromDataset();
-            
+
             console.log('✅ Complete dataset loaded successfully');
 
             // Now calculate counts and initialize
@@ -607,7 +607,7 @@ class VocabularyManager {
         }
 
         const vocabulary = [];
-        
+
         this.completeDataset.dialogues.forEach(dialogue => {
             dialogue.sentences.forEach(sentence => {
                 sentence.vocabulary.forEach(vocabItem => {

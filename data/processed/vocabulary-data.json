@@ -30930,23 +30930,13 @@
     "example_chinese": "一定要，请你一定要加上。这会很有帮助。我还有很多事要做。"
   },
   {
-    "term": "Come in",
+    "term": "Come in Have a seat",
     "conversation_id": "70201",
     "sentence_id": 1,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈcome ˈin/",
-    "example": "_Come in_. | _Have a seat_. | _Thank you for coming_ _to the interview_. | _Are you interested_ _in joining us_?",
-    "example_chinese": "请进。坐吧。谢谢你来面试。你有兴趣加入我们吗？"
-  },
-  {
-    "term": "Have a seat",
-    "conversation_id": "70201",
-    "sentence_id": 1,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /ˈhave ˈa ˈseat/",
-    "example": "_Come in_. | _Have a seat_. | _Thank you for coming_ _to the interview_. | _Are you interested_ _in joining us_?",
+    "phonetic": "UK /ˈcome ˈin ˈhave ˈa ˈseat/",
+    "example": "_Come in. |Have a seat_. | _Thank you for coming_ _to the interview_. | _Are you interested in joining us_?",
     "example_chinese": "请进。坐吧。谢谢你来面试。你有兴趣加入我们吗？"
   },
   {
@@ -30956,7 +30946,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈthank ˈyou ˈfor ˈcoming/",
-    "example": "_Come in_. | _Have a seat_. | _Thank you for coming_ _to the interview_. | _Are you interested_ _in joining us_?",
+    "example": "_Come in. |Have a seat_. | _Thank you for coming_ _to the interview_. | _Are you interested in joining us_?",
     "example_chinese": "请进。坐吧。谢谢你来面试。你有兴趣加入我们吗？"
   },
   {
@@ -30966,47 +30956,27 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈto ˈthe ˈinterview/",
-    "example": "_Come in_. | _Have a seat_. | _Thank you for coming_ _to the interview_. | _Are you interested_ _in joining us_?",
+    "example": "_Come in. |Have a seat_. | _Thank you for coming_ _to the interview_. | _Are you interested in joining us_?",
     "example_chinese": "请进。坐吧。谢谢你来面试。你有兴趣加入我们吗？"
   },
   {
-    "term": "Are you interested",
+    "term": "Are you interested in joining us",
     "conversation_id": "70201",
     "sentence_id": 1,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈare ˈyou ˈinterested/",
-    "example": "_Come in_. | _Have a seat_. | _Thank you for coming_ _to the interview_. | _Are you interested_ _in joining us_?",
+    "phonetic": "UK /ˈare ˈyou ˈinterested ˈin ˈjoining ˈus/",
+    "example": "_Come in. |Have a seat_. | _Thank you for coming_ _to the interview_. | _Are you interested in joining us_?",
     "example_chinese": "请进。坐吧。谢谢你来面试。你有兴趣加入我们吗？"
   },
   {
-    "term": "in joining us",
-    "conversation_id": "70201",
-    "sentence_id": 1,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /ˈin ˈjoining ˈus/",
-    "example": "_Come in_. | _Have a seat_. | _Thank you for coming_ _to the interview_. | _Are you interested_ _in joining us_?",
-    "example_chinese": "请进。坐吧。谢谢你来面试。你有兴趣加入我们吗？"
-  },
-  {
-    "term": "Thanks",
-    "conversation_id": "70201",
-    "sentence_id": 2,
-    "difficulty": "easy",
-    "category": "business",
-    "phonetic": "UK /ˈthanks/",
-    "example": "_Thanks_. | _I really want to work here_. | _Your company has a very good reputation_.",
-    "example_chinese": "谢谢。我很想在这里工作。贵公司有很好的声誉。"
-  },
-  {
-    "term": "I really want to work here",
+    "term": "Thanks I really want to work here",
     "conversation_id": "70201",
     "sentence_id": 2,
     "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈi ˈreally ˈwant ˈto ˈwork ˈhere/",
-    "example": "_Thanks_. | _I really want to work here_. | _Your company has a very good reputation_.",
+    "phonetic": "UK /ˈthanks ˈi ˈreally ˈwant ˈto ˈwork ˈhere/",
+    "example": "_Thanks. I really want to work here_. | _Your company has a very good reputation_.",
     "example_chinese": "谢谢。我很想在这里工作。贵公司有很好的声誉。"
   },
   {
@@ -31016,7 +30986,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈyour ˈcompany ˈhas ˈa ˈvery ˈgood ˈreputation/",
-    "example": "_Thanks_. | _I really want to work here_. | _Your company has a very good reputation_.",
+    "example": "_Thanks. I really want to work here_. | _Your company has a very good reputation_.",
     "example_chinese": "谢谢。我很想在这里工作。贵公司有很好的声誉。"
   },
   {
@@ -31130,23 +31100,13 @@
     "example_chinese": "如果我能得到这份工作就太好了。我想我一定会在这里工作得很开心。但是我知道你们对这份工作有一些法律要求。"
   },
   {
-    "term": "Yes",
-    "conversation_id": "70201",
-    "sentence_id": 5,
-    "difficulty": "easy",
-    "category": "business",
-    "phonetic": "UK /ˈyes/",
-    "example": "_Yes_. | _We currently have license requirements_. | _We need you to have_ _the correct license_ _before offering you this job_.",
-    "example_chinese": "是的。目前我们对驾照有要求。在聘用您之前，我们需要您持有合适的驾照。"
-  },
-  {
-    "term": "We currently have license requirements",
+    "term": "Yes We currently have license requirements",
     "conversation_id": "70201",
     "sentence_id": 5,
     "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈwe ˈcurrently ˈhave ˈlicense ˈrequirements/",
-    "example": "_Yes_. | _We currently have license requirements_. | _We need you to have_ _the correct license_ _before offering you this job_.",
+    "phonetic": "UK /ˈyes ˈwe ˈcurrently ˈhave ˈlicense ˈrequirements/",
+    "example": "_Yes. We currently have license requirements_. | _We need you to have_ _the correct license_ _before offering you this job_.",
     "example_chinese": "是的。目前我们对驾照有要求。在聘用您之前，我们需要您持有合适的驾照。"
   },
   {
@@ -31156,7 +31116,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈwe ˈneed ˈyou ˈto ˈhave/",
-    "example": "_Yes_. | _We currently have license requirements_. | _We need you to have_ _the correct license_ _before offering you this job_.",
+    "example": "_Yes. We currently have license requirements_. | _We need you to have_ _the correct license_ _before offering you this job_.",
     "example_chinese": "是的。目前我们对驾照有要求。在聘用您之前，我们需要您持有合适的驾照。"
   },
   {
@@ -31166,7 +31126,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈthe ˈcorrect ˈlicense/",
-    "example": "_Yes_. | _We currently have license requirements_. | _We need you to have_ _the correct license_ _before offering you this job_.",
+    "example": "_Yes. We currently have license requirements_. | _We need you to have_ _the correct license_ _before offering you this job_.",
     "example_chinese": "是的。目前我们对驾照有要求。在聘用您之前，我们需要您持有合适的驾照。"
   },
   {
@@ -31176,7 +31136,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈbefore ˈoffering ˈyou ˈthis ˈjob/",
-    "example": "_Yes_. | _We currently have license requirements_. | _We need you to have_ _the correct license_ _before offering you this job_.",
+    "example": "_Yes. We currently have license requirements_. | _We need you to have_ _the correct license_ _before offering you this job_.",
     "example_chinese": "是的。目前我们对驾照有要求。在聘用您之前，我们需要您持有合适的驾照。"
   },
   {
@@ -31240,23 +31200,13 @@
     "example_chinese": "我明白了。我知道你们要检查驾照和驾驶记录。我开车很多年了，记录很好，从来没有任何罚单和事故。"
   },
   {
-    "term": "Excellent",
-    "conversation_id": "70201",
-    "sentence_id": 7,
-    "difficulty": "easy",
-    "category": "business",
-    "phonetic": "UK /ˈexcellent/",
-    "example": "_Excellent_. | _That's good_. | _We prefer our drivers_ _to have some driving experience_, | _and we only hire drivers_ _with clean records_.",
-    "example_chinese": "太好了。这很好。我们偏好有驾驶经验的司机，而且只雇用记录良好的司机。"
-  },
-  {
-    "term": "That's good",
+    "term": "Excellent That's good",
     "conversation_id": "70201",
     "sentence_id": 7,
     "difficulty": "normal",
     "category": "business",
-    "phonetic": "UK /ˈthat's ˈgood/",
-    "example": "_Excellent_. | _That's good_. | _We prefer our drivers_ _to have some driving experience_, | _and we only hire drivers_ _with clean records_.",
+    "phonetic": "UK /ˈexcellent ˈthat's ˈgood/",
+    "example": "_Excellent. That's good_. | _We prefer our drivers_ _to have some driving experience_, | _and we only hire drivers_ _with clean records_.",
     "example_chinese": "太好了。这很好。我们偏好有驾驶经验的司机，而且只雇用记录良好的司机。"
   },
   {
@@ -31266,7 +31216,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈwe ˈprefer ˈour ˈdrivers/",
-    "example": "_Excellent_. | _That's good_. | _We prefer our drivers_ _to have some driving experience_, | _and we only hire drivers_ _with clean records_.",
+    "example": "_Excellent. That's good_. | _We prefer our drivers_ _to have some driving experience_, | _and we only hire drivers_ _with clean records_.",
     "example_chinese": "太好了。这很好。我们偏好有驾驶经验的司机，而且只雇用记录良好的司机。"
   },
   {
@@ -31276,7 +31226,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈto ˈhave ˈsome ˈdriving ˈexperience/",
-    "example": "_Excellent_. | _That's good_. | _We prefer our drivers_ _to have some driving experience_, | _and we only hire drivers_ _with clean records_.",
+    "example": "_Excellent. That's good_. | _We prefer our drivers_ _to have some driving experience_, | _and we only hire drivers_ _with clean records_.",
     "example_chinese": "太好了。这很好。我们偏好有驾驶经验的司机，而且只雇用记录良好的司机。"
   },
   {
@@ -31286,7 +31236,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈand ˈwe ˈonly ˈhire ˈdrivers/",
-    "example": "_Excellent_. | _That's good_. | _We prefer our drivers_ _to have some driving experience_, | _and we only hire drivers_ _with clean records_.",
+    "example": "_Excellent. That's good_. | _We prefer our drivers_ _to have some driving experience_, | _and we only hire drivers_ _with clean records_.",
     "example_chinese": "太好了。这很好。我们偏好有驾驶经验的司机，而且只雇用记录良好的司机。"
   },
   {
@@ -31296,7 +31246,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈwith ˈclean ˈrecords/",
-    "example": "_Excellent_. | _That's good_. | _We prefer our drivers_ _to have some driving experience_, | _and we only hire drivers_ _with clean records_.",
+    "example": "_Excellent. That's good_. | _We prefer our drivers_ _to have some driving experience_, | _and we only hire drivers_ _with clean records_.",
     "example_chinese": "太好了。这很好。我们偏好有驾驶经验的司机，而且只雇用记录良好的司机。"
   },
   {
@@ -31650,23 +31600,23 @@
     "example_chinese": "你好！欢迎参加我们的生意支持开放日，我今天有什么可以帮你的吗？"
   },
   {
-    "term": "Hi",
-    "conversation_id": "70200",
-    "sentence_id": 2,
-    "difficulty": "easy",
-    "category": "business",
-    "phonetic": "UK /ˈhi/",
-    "example": "_Hi_. | _I'm an artist and I've come here today_ | _looking for advice on how to broaden_ _my sales channels_.",
-    "example_chinese": "你好。我是一名画家。我今天过来是想获得一些怎么拓宽销售渠道的建议。"
-  },
-  {
-    "term": "I'm an artist and I've come here today",
+    "term": "Hi I'm an artist",
     "conversation_id": "70200",
     "sentence_id": 2,
     "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈi'm ˈan ˈartist ˈand ˈi've ˈcome ˈhere ˈtoday/",
-    "example": "_Hi_. | _I'm an artist and I've come here today_ | _looking for advice on how to broaden_ _my sales channels_.",
+    "phonetic": "UK /ˈhi ˈi'm ˈan ˈartist/",
+    "example": "_Hi. I'm an artist_ _and I've come here today_  _looking for advice on how to broaden_ _my sales channels_.",
+    "example_chinese": "你好。我是一名画家。我今天过来是想获得一些怎么拓宽销售渠道的建议。"
+  },
+  {
+    "term": "and I've come here today",
+    "conversation_id": "70200",
+    "sentence_id": 2,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈand ˈi've ˈcome ˈhere ˈtoday/",
+    "example": "_Hi. I'm an artist_ _and I've come here today_  _looking for advice on how to broaden_ _my sales channels_.",
     "example_chinese": "你好。我是一名画家。我今天过来是想获得一些怎么拓宽销售渠道的建议。"
   },
   {
@@ -31676,7 +31626,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈlooking ˈfor ˈadvice ˈon ˈhow ˈto ˈbroaden/",
-    "example": "_Hi_. | _I'm an artist and I've come here today_ | _looking for advice on how to broaden_ _my sales channels_.",
+    "example": "_Hi. I'm an artist_ _and I've come here today_  _looking for advice on how to broaden_ _my sales channels_.",
     "example_chinese": "你好。我是一名画家。我今天过来是想获得一些怎么拓宽销售渠道的建议。"
   },
   {
@@ -31686,7 +31636,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈmy ˈsales ˈchannels/",
-    "example": "_Hi_. | _I'm an artist and I've come here today_ | _looking for advice on how to broaden_ _my sales channels_.",
+    "example": "_Hi. I'm an artist_ _and I've come here today_  _looking for advice on how to broaden_ _my sales channels_.",
     "example_chinese": "你好。我是一名画家。我今天过来是想获得一些怎么拓宽销售渠道的建议。"
   },
   {
@@ -31720,23 +31670,13 @@
     "example_chinese": "太好了！您已经在市面上出售作品了吗？"
   },
   {
-    "term": "Yes",
-    "conversation_id": "70200",
-    "sentence_id": 4,
-    "difficulty": "easy",
-    "category": "business",
-    "phonetic": "UK /ˈyes/",
-    "example": "_Yes_. | _I usually set up a stall_ _at the local market_ _to sell my work_, | _but my sales are quite inconsistent_.",
-    "example_chinese": "是的，我一般会在本地集市摆摊卖画，不过销售情况时好时坏。"
-  },
-  {
-    "term": "I usually set up a stall",
+    "term": "Yes I usually set up a stall",
     "conversation_id": "70200",
     "sentence_id": 4,
     "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈi ˈusually ˈset ˈup ˈa ˈstall/",
-    "example": "_Yes_. | _I usually set up a stall_ _at the local market_ _to sell my work_, | _but my sales are quite inconsistent_.",
+    "phonetic": "UK /ˈyes ˈi ˈusually ˈset ˈup ˈa ˈstall/",
+    "example": "_Yes. I usually set up a stall_ _at the local market_ _to sell my work_, | _but my sales are quite inconsistent_.",
     "example_chinese": "是的，我一般会在本地集市摆摊卖画，不过销售情况时好时坏。"
   },
   {
@@ -31746,7 +31686,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈat ˈthe ˈlocal ˈmarket/",
-    "example": "_Yes_. | _I usually set up a stall_ _at the local market_ _to sell my work_, | _but my sales are quite inconsistent_.",
+    "example": "_Yes. I usually set up a stall_ _at the local market_ _to sell my work_, | _but my sales are quite inconsistent_.",
     "example_chinese": "是的，我一般会在本地集市摆摊卖画，不过销售情况时好时坏。"
   },
   {
@@ -31756,7 +31696,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈto ˈsell ˈmy ˈwork/",
-    "example": "_Yes_. | _I usually set up a stall_ _at the local market_ _to sell my work_, | _but my sales are quite inconsistent_.",
+    "example": "_Yes. I usually set up a stall_ _at the local market_ _to sell my work_, | _but my sales are quite inconsistent_.",
     "example_chinese": "是的，我一般会在本地集市摆摊卖画，不过销售情况时好时坏。"
   },
   {
@@ -31766,7 +31706,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈbut ˈmy ˈsales ˈare ˈquite ˈinconsistent/",
-    "example": "_Yes_. | _I usually set up a stall_ _at the local market_ _to sell my work_, | _but my sales are quite inconsistent_.",
+    "example": "_Yes. I usually set up a stall_ _at the local market_ _to sell my work_, | _but my sales are quite inconsistent_.",
     "example_chinese": "是的，我一般会在本地集市摆摊卖画，不过销售情况时好时坏。"
   },
   {
@@ -32340,23 +32280,13 @@
     "example_chinese": "谢谢你的夸奖！今天你给了我很多可行的思路和信心，真的是帮了我大忙！"
   },
   {
-    "term": "Hi",
+    "term": "Hi You have reached",
     "conversation_id": "70199",
     "sentence_id": 1,
-    "difficulty": "easy",
+    "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈhi/",
-    "example": "_Hi_. | _You have reached_ _the Disability Support Program hotline_. | _How may I assist you today_?",
-    "example_chinese": "下午好，您已拨通残疾人支持项目热线，请问今天有什么我可以帮忙的吗？"
-  },
-  {
-    "term": "You have reached",
-    "conversation_id": "70199",
-    "sentence_id": 1,
-    "difficulty": "normal",
-    "category": "social",
-    "phonetic": "UK /ˈyou ˈhave ˈreached/",
-    "example": "_Hi_. | _You have reached_ _the Disability Support Program hotline_. | _How may I assist you today_?",
+    "phonetic": "UK /ˈhi ˈyou ˈhave ˈreached/",
+    "example": "_Hi. You have reached_ _the Disability Support Program hotline_. | _How may I assist you today_?",
     "example_chinese": "下午好，您已拨通残疾人支持项目热线，请问今天有什么我可以帮忙的吗？"
   },
   {
@@ -32366,7 +32296,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈthe ˈdisability ˈsupport ˈprogram ˈhotline/",
-    "example": "_Hi_. | _You have reached_ _the Disability Support Program hotline_. | _How may I assist you today_?",
+    "example": "_Hi. You have reached_ _the Disability Support Program hotline_. | _How may I assist you today_?",
     "example_chinese": "下午好，您已拨通残疾人支持项目热线，请问今天有什么我可以帮忙的吗？"
   },
   {
@@ -32376,7 +32306,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈhow ˈmay ˈi ˈassist ˈyou ˈtoday/",
-    "example": "_Hi_. | _You have reached_ _the Disability Support Program hotline_. | _How may I assist you today_?",
+    "example": "_Hi. You have reached_ _the Disability Support Program hotline_. | _How may I assist you today_?",
     "example_chinese": "下午好，您已拨通残疾人支持项目热线，请问今天有什么我可以帮忙的吗？"
   },
   {
@@ -32480,23 +32410,23 @@
     "example_chinese": "我很乐意帮忙，我是这个项目的协调员之一。请问您是怎么得知这个项目的呢？"
   },
   {
-    "term": "My son is currently taking part",
+    "term": "My son is currently taking part in",
     "conversation_id": "70199",
     "sentence_id": 4,
     "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈmy ˈson ˈis ˈcurrently ˈtaking ˈpart/",
-    "example": "_My son is currently taking part_ _in sports training at a hospital_, | _and just this week_, | _I noticed a poster_ _on the hospital notice board_ | _about your holiday program_.",
+    "phonetic": "UK /ˈmy ˈson ˈis ˈcurrently ˈtaking ˈpart ˈin/",
+    "example": "_My son is currently taking part in_ _sports training at a hospital_, | _and just this week_, | _I noticed a poster_ _on the hospital notice board_ | _about your holiday program_.",
     "example_chinese": "我儿子在一家医院参加体育训练。就在这个礼拜，我在医院的公告板上注意到了一张你们介绍这个假期项目的海报。"
   },
   {
-    "term": "in sports training at a hospital",
+    "term": "sports training at a hospital",
     "conversation_id": "70199",
     "sentence_id": 4,
     "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈin ˈsports ˈtraining ˈat ˈa ˈhospital/",
-    "example": "_My son is currently taking part_ _in sports training at a hospital_, | _and just this week_, | _I noticed a poster_ _on the hospital notice board_ | _about your holiday program_.",
+    "phonetic": "UK /ˈsports ˈtraining ˈat ˈa ˈhospital/",
+    "example": "_My son is currently taking part in_ _sports training at a hospital_, | _and just this week_, | _I noticed a poster_ _on the hospital notice board_ | _about your holiday program_.",
     "example_chinese": "我儿子在一家医院参加体育训练。就在这个礼拜，我在医院的公告板上注意到了一张你们介绍这个假期项目的海报。"
   },
   {
@@ -32506,7 +32436,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈand ˈjust ˈthis ˈweek/",
-    "example": "_My son is currently taking part_ _in sports training at a hospital_, | _and just this week_, | _I noticed a poster_ _on the hospital notice board_ | _about your holiday program_.",
+    "example": "_My son is currently taking part in_ _sports training at a hospital_, | _and just this week_, | _I noticed a poster_ _on the hospital notice board_ | _about your holiday program_.",
     "example_chinese": "我儿子在一家医院参加体育训练。就在这个礼拜，我在医院的公告板上注意到了一张你们介绍这个假期项目的海报。"
   },
   {
@@ -32516,7 +32446,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈi ˈnoticed ˈa ˈposter/",
-    "example": "_My son is currently taking part_ _in sports training at a hospital_, | _and just this week_, | _I noticed a poster_ _on the hospital notice board_ | _about your holiday program_.",
+    "example": "_My son is currently taking part in_ _sports training at a hospital_, | _and just this week_, | _I noticed a poster_ _on the hospital notice board_ | _about your holiday program_.",
     "example_chinese": "我儿子在一家医院参加体育训练。就在这个礼拜，我在医院的公告板上注意到了一张你们介绍这个假期项目的海报。"
   },
   {
@@ -32526,7 +32456,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈon ˈthe ˈhospital ˈnotice ˈboard/",
-    "example": "_My son is currently taking part_ _in sports training at a hospital_, | _and just this week_, | _I noticed a poster_ _on the hospital notice board_ | _about your holiday program_.",
+    "example": "_My son is currently taking part in_ _sports training at a hospital_, | _and just this week_, | _I noticed a poster_ _on the hospital notice board_ | _about your holiday program_.",
     "example_chinese": "我儿子在一家医院参加体育训练。就在这个礼拜，我在医院的公告板上注意到了一张你们介绍这个假期项目的海报。"
   },
   {
@@ -32536,7 +32466,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈabout ˈyour ˈholiday ˈprogram/",
-    "example": "_My son is currently taking part_ _in sports training at a hospital_, | _and just this week_, | _I noticed a poster_ _on the hospital notice board_ | _about your holiday program_.",
+    "example": "_My son is currently taking part in_ _sports training at a hospital_, | _and just this week_, | _I noticed a poster_ _on the hospital notice board_ | _about your holiday program_.",
     "example_chinese": "我儿子在一家医院参加体育训练。就在这个礼拜，我在医院的公告板上注意到了一张你们介绍这个假期项目的海报。"
   },
   {
@@ -33780,23 +33710,13 @@
     "example_chinese": "好的，我会上网查一下怎么处理，权衡权衡这些选择。谢谢你的帮助！"
   },
   {
-    "term": "Hi",
-    "conversation_id": "70197",
-    "sentence_id": 1,
-    "difficulty": "easy",
-    "category": "legal",
-    "phonetic": "UK /ˈhi/",
-    "example": "_Hi_. | _You've reached_ _the Australian Police Assistance Hotline_. | _This is Officer Williams speaking_. | _How may I be of service today_?",
-    "example_chinese": "你好，你已拨通澳大利亚警察求助热线，我是警官威廉姆斯。今天有什么可以为你效劳的吗？"
-  },
-  {
-    "term": "You've reached",
+    "term": "Hi You've reached",
     "conversation_id": "70197",
     "sentence_id": 1,
     "difficulty": "normal",
     "category": "legal",
-    "phonetic": "UK /ˈyou've ˈreached/",
-    "example": "_Hi_. | _You've reached_ _the Australian Police Assistance Hotline_. | _This is Officer Williams speaking_. | _How may I be of service today_?",
+    "phonetic": "UK /ˈhi ˈyou've ˈreached/",
+    "example": "_Hi. You've reached_ _the Australian Police Assistance Hotline_. | _This is Officer Williams speaking_. | _How may I be of service today_?",
     "example_chinese": "你好，你已拨通澳大利亚警察求助热线，我是警官威廉姆斯。今天有什么可以为你效劳的吗？"
   },
   {
@@ -33806,7 +33726,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈthe ˈaustralian ˈpolice ˈassistance ˈhotline/",
-    "example": "_Hi_. | _You've reached_ _the Australian Police Assistance Hotline_. | _This is Officer Williams speaking_. | _How may I be of service today_?",
+    "example": "_Hi. You've reached_ _the Australian Police Assistance Hotline_. | _This is Officer Williams speaking_. | _How may I be of service today_?",
     "example_chinese": "你好，你已拨通澳大利亚警察求助热线，我是警官威廉姆斯。今天有什么可以为你效劳的吗？"
   },
   {
@@ -33816,7 +33736,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈthis ˈis ˈofficer ˈwilliams ˈspeaking/",
-    "example": "_Hi_. | _You've reached_ _the Australian Police Assistance Hotline_. | _This is Officer Williams speaking_. | _How may I be of service today_?",
+    "example": "_Hi. You've reached_ _the Australian Police Assistance Hotline_. | _This is Officer Williams speaking_. | _How may I be of service today_?",
     "example_chinese": "你好，你已拨通澳大利亚警察求助热线，我是警官威廉姆斯。今天有什么可以为你效劳的吗？"
   },
   {
@@ -33826,7 +33746,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈhow ˈmay ˈi ˈbe ˈof ˈservice ˈtoday/",
-    "example": "_Hi_. | _You've reached_ _the Australian Police Assistance Hotline_. | _This is Officer Williams speaking_. | _How may I be of service today_?",
+    "example": "_Hi. You've reached_ _the Australian Police Assistance Hotline_. | _This is Officer Williams speaking_. | _How may I be of service today_?",
     "example_chinese": "你好，你已拨通澳大利亚警察求助热线，我是警官威廉姆斯。今天有什么可以为你效劳的吗？"
   },
   {
@@ -33980,23 +33900,13 @@
     "example_chinese": "目前家里已经没有人了。我刚到家时发现房里空荡荡的没人，但明显看得出之前有人来过。太吓人了。"
   },
   {
-    "term": "I see",
-    "conversation_id": "70197",
-    "sentence_id": 5,
-    "difficulty": "normal",
-    "category": "legal",
-    "phonetic": "UK /ˈi ˈsee/",
-    "example": "_I see_. | _Please try to keep calm_ | _and start from the beginning_. | _Can you explain what happened_?",
-    "example_chinese": "我明白。请尽量保持冷静，从头开始跟我说说到底发生了什么？"
-  },
-  {
-    "term": "Please try to keep calm",
+    "term": "I see Please try to keep calm",
     "conversation_id": "70197",
     "sentence_id": 5,
     "difficulty": "hard",
     "category": "legal",
-    "phonetic": "UK /ˈplease ˈtry ˈto ˈkeep ˈcalm/",
-    "example": "_I see_. | _Please try to keep calm_ | _and start from the beginning_. | _Can you explain what happened_?",
+    "phonetic": "UK /ˈi ˈsee ˈplease ˈtry ˈto ˈkeep ˈcalm/",
+    "example": "_I see. Please try to keep calm_ | _and start from the beginning_. | _Can you explain what happened_?",
     "example_chinese": "我明白。请尽量保持冷静，从头开始跟我说说到底发生了什么？"
   },
   {
@@ -34006,7 +33916,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈand ˈstart ˈfrom ˈthe ˈbeginning/",
-    "example": "_I see_. | _Please try to keep calm_ | _and start from the beginning_. | _Can you explain what happened_?",
+    "example": "_I see. Please try to keep calm_ | _and start from the beginning_. | _Can you explain what happened_?",
     "example_chinese": "我明白。请尽量保持冷静，从头开始跟我说说到底发生了什么？"
   },
   {
@@ -34016,7 +33926,7 @@
     "difficulty": "hard",
     "category": "legal",
     "phonetic": "UK /ˈcan ˈyou ˈexplain ˈwhat ˈhappened/",
-    "example": "_I see_. | _Please try to keep calm_ | _and start from the beginning_. | _Can you explain what happened_?",
+    "example": "_I see. Please try to keep calm_ | _and start from the beginning_. | _Can you explain what happened_?",
     "example_chinese": "我明白。请尽量保持冷静，从头开始跟我说说到底发生了什么？"
   },
   {

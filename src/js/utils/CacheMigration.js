@@ -3,11 +3,11 @@ class CacheMigration {
     constructor() {
         this.currentVersion = 2; // Version 2 uses decade-based groups
         this.versionKey = 'cache-version';
-        
+
         // Mapping of old categories to new ones
         this.categoryMigrations = {
             'group-1': 'group-240s',
-            'group-2': 'group-230s', 
+            'group-2': 'group-230s',
             'group-3': 'group-220s',
             'group-4': 'group-210s',
             'group-5': 'group-200s',
@@ -22,7 +22,7 @@ class CacheMigration {
     // Check if migration is needed and perform it
     checkAndMigrate() {
         const currentVersion = window.storage.getItem(this.versionKey) || 1;
-        
+
         if (currentVersion < this.currentVersion) {
             console.log(`Migrating cache from version ${currentVersion} to ${this.currentVersion}`);
             this.migrateToDecadeGroups();
@@ -34,7 +34,7 @@ class CacheMigration {
     // Migrate old group categories to new decade-based ones
     migrateToDecadeGroups() {
         const currentCategory = window.storage.getItem('category');
-        
+
         if (currentCategory) {
             // Always default to all-categories for better user experience
             window.storage.setItem('category', 'all-categories');

@@ -1,8 +1,8 @@
 {
   "summary": {
     "totalDialogues": 91,
-    "totalVocabularyTerms": 5696,
-    "processedAt": "2025-09-09T02:38:36.562Z",
+    "totalVocabularyTerms": 5695,
+    "processedAt": "2025-09-09T04:53:01.192Z",
     "sourceFile": "merged-conversations.md",
     "processingErrors": 0,
     "processingWarnings": 26
@@ -17,7 +17,7 @@
   },
   "difficultyDistribution": {
     "hard": 4691,
-    "normal": 979,
+    "normal": 978,
     "easy": 26
   },
   "dialogueList": [
@@ -228,7 +228,7 @@
       "id": "70219",
       "title": "Understanding Bill Payment Delays",
       "category": "business",
-      "vocabularyCount": 59,
+      "vocabularyCount": 58,
       "sentenceCount": 14
     },
     {

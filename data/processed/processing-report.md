@@ -1,9 +1,9 @@
 # CCL Dialogue Data Processing Report
 
-**Generated:** 2025-09-09T02:38:36.562Z
+**Generated:** 2025-09-09T04:53:01.192Z
 **Source File:** merged-conversations.md
 **Total Dialogues:** 91
-**Total Vocabulary Terms:** 5696
+**Total Vocabulary Terms:** 5695
 **Processing Errors:** 0
 **Processing Warnings:** 26
 
@@ -19,7 +19,7 @@
 ## Difficulty Distribution
 
 - **🔴 hard**: 4691 terms
-- **🟡 normal**: 979 terms
+- **🟡 normal**: 978 terms
 - **🟢 easy**: 26 terms
 
 ## Dialogue List
@@ -83,7 +83,7 @@
 - **💼 70220**: Tenant Requests Pest Control (business)
   - Sentences: 14, Vocabulary: 59
 - **💼 70219**: Understanding Bill Payment Delays (business)
-  - Sentences: 14, Vocabulary: 59
+  - Sentences: 14, Vocabulary: 58
 - **⚖️ 70218**: Van Theft Report and Insurance Steps (legal)
   - Sentences: 14, Vocabulary: 65
 - **⚖️ 70217**: Clarifying Local Dog Leash Rules (legal)

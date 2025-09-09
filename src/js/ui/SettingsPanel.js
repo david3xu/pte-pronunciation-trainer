@@ -9,12 +9,12 @@ class SettingsPanel {
         // Settings panel toggle
         const settingsBtn = document.getElementById('settingsBtn');
         const settingsPanel = document.getElementById('settingsPanel');
-        
+
         if (settingsBtn && settingsPanel) {
             settingsBtn.addEventListener('click', () => {
                 this.togglePanel();
             });
-            
+
             // Close settings when clicking outside
             document.addEventListener('click', (e) => {
                 if (!settingsPanel.contains(e.target) && !settingsBtn.contains(e.target)) {
@@ -33,7 +33,7 @@ class SettingsPanel {
     }
 
     setupSettingsPersistence() {
-                // Load saved settings or defaults
+        // Load saved settings or defaults
         const savedSettings = {
             category: window.storage.getItem('category') || 'all-categories',
             difficulty: window.storage.getItem('difficulty') || 'all',
@@ -62,7 +62,7 @@ class SettingsPanel {
         if (!settingsPanel) return;
 
         this.isOpen = !this.isOpen;
-        
+
         if (this.isOpen) {
             this.openPanel();
         } else {
@@ -76,7 +76,7 @@ class SettingsPanel {
             settingsPanel.classList.remove('collapsed');
             this.isOpen = true;
             console.log('Settings panel opened');
-            
+
             // Emit panel opened event
             window.eventBus.emit('settings:panelOpened', {
                 timestamp: new Date().toISOString()
@@ -90,7 +90,7 @@ class SettingsPanel {
             settingsPanel.classList.add('collapsed');
             this.isOpen = false;
             console.log('Settings panel closed');
-            
+
             // Emit panel closed event
             window.eventBus.emit('settings:panelClosed', {
                 timestamp: new Date().toISOString()
@@ -166,16 +166,16 @@ class SettingsPanel {
         const dataStr = JSON.stringify(settings, null, 2);
         const dataBlob = new Blob([dataStr], { type: 'application/json' });
         const url = URL.createObjectURL(dataBlob);
-        
+
         const link = document.createElement('a');
         link.href = url;
         link.download = 'ccl-trainer-settings.json';
         link.click();
-        
+
         URL.revokeObjectURL(url);
-        
+
         console.log('Settings exported');
-        
+
         // Emit export event
         window.eventBus.emit('settings:exported', {
             settingsCount: Object.keys(settings).length - 2, // Exclude exportDate and version
@@ -186,7 +186,7 @@ class SettingsPanel {
     importSettings(settingsData) {
         try {
             const settings = typeof settingsData === 'string' ? JSON.parse(settingsData) : settingsData;
-            
+
             // Validate settings structure
             if (!settings || typeof settings !== 'object') {
                 throw new Error('Invalid settings format');
@@ -201,15 +201,15 @@ class SettingsPanel {
 
             // Reload settings to apply them
             this.loadSettings();
-            
+
             console.log('Settings imported successfully');
-            
+
             // Emit import event
             window.eventBus.emit('settings:imported', {
                 settingsCount: Object.keys(settings).length - 2,
                 timestamp: new Date().toISOString()
             });
-            
+
             return true;
         } catch (error) {
             console.error('Settings import failed:', error);
@@ -221,12 +221,12 @@ class SettingsPanel {
     resetSettings() {
         // Clear all stored settings
         window.storage.clear();
-        
+
         // Reload page to reset to defaults
         window.location.reload();
-        
+
         console.log('Settings reset to defaults');
-        
+
         // Emit reset event
         window.eventBus.emit('settings:reset', {
             timestamp: new Date().toISOString()

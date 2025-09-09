@@ -12,16 +12,16 @@ class CCLPronunciationTrainer {
             return;
         }
         this.initialized = true;
-        
+
         // Run cache migration before any module initialization
         // Force clear cache to ensure clean initialization
         window.cacheMigration.checkAndMigrate(true);
-        
+
         // Initialize all modules in correct order
         this.initializeModules();
-        
+
         console.log('CCL Pronunciation Trainer initialized');
-        
+
         // Emit app initialization event
         window.eventBus.emit('app:initialized', {
             timestamp: new Date().toISOString(),
@@ -31,32 +31,32 @@ class CCLPronunciationTrainer {
 
     async initializeModules() {
         console.log('🚀 Starting module initialization...');
-        
+
         // 1. Initialize vocabulary manager (loads conversation data asynchronously)
         await window.vocabularyManager.initialize();
-        
+
         // 2. Initialize UI controller and bind events
         window.uiController.bindEventListeners();
-        
+
         // 3. Sync settings from HTML
         window.uiController.syncRepeatModeFromHTML();
-        
+
         // 4. Update initial UI state
         window.uiController.updateUI();
-        
+
         // 5. Populate voice options when available
         this.initializeVoices();
-        
+
         // 6. Setup keyboard shortcuts
         this.setupKeyboardShortcuts();
-        
+
         console.log('✅ All modules initialized successfully');
     }
 
     initializeVoices() {
         const initVoices = () => {
             window.voiceSelector.populateVoiceOptions();
-            
+
             // Force Microsoft James selection after voices are loaded
             const currentVoice = window.storage.getSetting('preferredVoice');
             if (!currentVoice) {
@@ -65,7 +65,7 @@ class CCLPronunciationTrainer {
                 window.voiceSelector.setPreferredVoice(defaultVoice);
                 window.storage.saveSetting('preferredVoice', defaultVoice);
                 console.log('Forced default voice to Microsoft James for mobile compatibility');
-                
+
                 // Update the UI selector
                 const voiceSelect = document.getElementById('voiceSelect');
                 if (voiceSelect) {
@@ -73,7 +73,7 @@ class CCLPronunciationTrainer {
                 }
             }
         };
-        
+
         // Populate voice options when voices are available
         if (speechSynthesis.getVoices().length > 0) {
             initVoices();
@@ -81,7 +81,7 @@ class CCLPronunciationTrainer {
             // Wait for voices to load
             speechSynthesis.addEventListener('voiceschanged', initVoices, { once: true });
         }
-        
+
         // Additional safety check for mobile - retry after delay
         setTimeout(() => {
             if (speechSynthesis.getVoices().length > 0) {
@@ -140,17 +140,17 @@ class CCLPronunciationTrainer {
     async repeatCurrentWord() {
         const currentIndex = window.audioControls.getCurrentIndex();
         const currentWord = window.vocabularyManager.getCurrentWord(currentIndex);
-        
+
         if (currentWord) {
             // Pause auto-play if running
             const wasPlaying = window.audioControls.isPlaying;
             if (wasPlaying) {
                 window.audioControls.pauseAutoPlay();
             }
-            
+
             // Pronounce current word
             await window.ttsEngine.pronounceWord(currentWord, 0);
-            
+
             // Resume auto-play if it was running
             if (wasPlaying) {
                 setTimeout(() => {

@@ -22,7 +22,7 @@ class CacheMigration {
     // Check if migration is needed and perform it
     checkAndMigrate(forceClear = false) {
         const currentVersion = window.storage.getItem(this.versionKey) || 1;
-        
+
         if (forceClear || currentVersion < this.currentVersion) {
             if (forceClear) {
                 console.log('Force clearing all cache data...');
@@ -31,7 +31,7 @@ class CacheMigration {
                 console.log(`Migrating cache from version ${currentVersion} to ${this.currentVersion}`);
                 this.migrateToDecadeGroups();
             }
-            
+
             // Set default values for clean initialization
             this.setDefaultValues();
             window.storage.setItem(this.versionKey, this.currentVersion);
@@ -43,19 +43,19 @@ class CacheMigration {
     setDefaultValues() {
         // Set default category to all-categories
         window.storage.setItem('category', 'all-categories');
-        
+
         // Set default difficulty to all
         window.storage.setItem('difficulty', 'all');
-        
+
         // Set default learning mode to vocabulary
         window.storage.setItem('learningMode', 'vocabulary');
-        
+
         // Set default repeat mode
         window.storage.setItem('repeatMode', '1x');
-        
+
         // Set default pause duration
         window.storage.setItem('pauseDuration', 2);
-        
+
         console.log('Default values set for clean initialization');
     }
 

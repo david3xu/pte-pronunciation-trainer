@@ -84,6 +84,7 @@ When you have new CCL conversation data to add:
 npm run process-data                   # Generate structured dataset (powers ALL modes: Vocabulary, Dialogue, Words)
 npm run extract-vocab                  # Generate vocabulary for backward compatibility
 node scripts/process-unfamiliar-words.js  # Generate unfamiliar words dataset
+npm run generate-words-dataset         # Generate words dataset from words.md
 
 # 4. Test in development server
 npm run dev
@@ -159,6 +160,7 @@ npm start                     # Process complete dataset + Dev server (full setu
 npm run dev                   # Start development server
 npm run process-data          # Generate complete dataset (5,695 terms - primary)
 npm run extract-vocab         # Generate vocabulary files (for backward compatibility)
+npm run generate-words-dataset # Generate words dataset from words.md (2,524 terms)
 npm run validate              # Validate all data integrity
 
 
@@ -180,6 +182,7 @@ git add . && git commit && git push     # Deploy
 ```bash
 npm run process-data                     # Generate complete dataset (primary data source)
 npm run extract-vocab                    # Generate simple vocabulary (legacy support)
+npm run generate-words-dataset           # Generate words dataset from words.md (2,524 terms)
 node scripts/process-unfamiliar-words.js # Generate unfamiliar words dataset (944 terms)
 ```
 

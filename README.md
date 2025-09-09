@@ -81,10 +81,7 @@ When you have new CCL conversation data to add:
 # Add dialogue numbers and challenging terms (line-separated)
 
 # 3. Regenerate complete dataset and vocabulary
-npm run process-data                   # Generate structured dataset (powers ALL modes: Vocabulary, Dialogue, Words)
-npm run extract-vocab                  # Generate vocabulary for backward compatibility
-node scripts/process-unfamiliar-words.js  # Generate unfamiliar words dataset
-npm run generate-words-dataset         # Generate words dataset from words.md
+npm run process-all-data              # Generate ALL datasets (complete, vocabulary, unfamiliar words, words)
 
 # 4. Test in development server
 npm run dev
@@ -158,6 +155,7 @@ npm run vercel-build    # Runs extract-vocab + build for production
 ```bash
 npm start                     # Process complete dataset + Dev server (full setup)
 npm run dev                   # Start development server
+npm run process-all-data      # Generate ALL datasets (complete, vocabulary, unfamiliar words, words)
 npm run process-data          # Generate complete dataset (5,695 terms - primary)
 npm run extract-vocab         # Generate vocabulary files (for backward compatibility)
 npm run generate-words-dataset # Generate words dataset from words.md (2,524 terms)
@@ -180,9 +178,10 @@ git add . && git commit && git push     # Deploy
 
 ### Data Processing
 ```bash
-npm run process-data                     # Generate complete dataset (primary data source)
-npm run extract-vocab                    # Generate simple vocabulary (legacy support)
-npm run generate-words-dataset           # Generate words dataset from words.md (2,524 terms)
+npm run process-all-data               # Generate ALL datasets (recommended)
+npm run process-data                   # Generate complete dataset (primary data source)
+npm run extract-vocab                  # Generate simple vocabulary (legacy support)
+npm run generate-words-dataset        # Generate words dataset from words.md (2,524 terms)
 node scripts/process-unfamiliar-words.js # Generate unfamiliar words dataset (944 terms)
 ```
 

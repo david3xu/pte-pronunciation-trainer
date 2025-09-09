@@ -63,7 +63,7 @@ src/js/
 ├── ui/             # UIController, SettingsPanel (vocabulary switcher)
 └── utils/          # EventBus, Storage (localStorage wrapper)
 
-scripts/            # Build tools (3 files) 
+scripts/            # Build tools (3 files)
 ├── conversation-vocabulary-extractor.js # Extract English from _xxx_ highlights in merged file
 ├── validate.js             # Data integrity validation
 └── build.js               # Production build with minification
@@ -72,14 +72,14 @@ scripts/            # Build tools (3 files)
 ## Key Features
 
 ### Conversation-Based Vocabulary
-- **Comprehensive Terms**: 6,967 English terms extracted from `_xxx_` highlighted phrases in 91 real CCL conversations
+- **Comprehensive Terms**: 5,695 English terms extracted from `_xxx_` highlighted phrases in 91 real CCL conversations
 - **Unfamiliar Words Focus**: 944 curated challenging terms for advanced practice
-- **Contextual Examples**: All vocabulary includes bilingual example sentences from source dialogues  
+- **Contextual Examples**: All vocabulary includes bilingual example sentences from source dialogues
 - **Real-world Usage**: Terms selected from actual NAATI CCL test scenarios
 - **Category Organization**: Organized across 9 domains (business, social, legal, medical, education, immigration)
 
 ### Three Learning Modes
-- **📚 Vocabulary Focus**: Complete vocabulary from all dialogues (6,967 terms)
+- **📚 Vocabulary Focus**: Complete vocabulary from all dialogues (5,695 terms)
 - **💬 Dialogue Practice**: Full conversation sentences with contextual flow
 - **🔥 Unfamiliar Words**: Curated challenging vocabulary for advanced study (944 terms)
 
@@ -97,7 +97,7 @@ scripts/            # Build tools (3 files)
 
 ### Difficulty Classification
 - Easy (55%): Single words, common terms
-- Normal (31%): 2-3 word phrases, government terminology  
+- Normal (31%): 2-3 word phrases, government terminology
 - Hard (14%): Complex multi-word terms, technical specialties
 
 ## Data Formats
@@ -176,7 +176,7 @@ The project includes `vercel.json` configuration:
 ### Module Loading Order
 Modules must be loaded in this specific order in index.html:
 1. EventBus and Storage (utils)
-2. Core modules (VocabularyManager, ProgressTracker) 
+2. Core modules (VocabularyManager, ProgressTracker)
 3. Audio modules (TTSEngine, VoiceSelector, AudioControls)
 4. UI modules (UIController, SettingsPanel)
 5. App coordinator (App.js) - must be last

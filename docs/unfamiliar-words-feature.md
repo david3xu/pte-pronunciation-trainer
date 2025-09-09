@@ -34,13 +34,13 @@
 **Data Format**:
 ```
 70248
-community center 
-diverse 
+community center
+diverse
 older people
 
 70247
-drop by 
-swing by 
+drop by
+swing by
 delayed
 ```
 
@@ -60,4 +60,4 @@ delayed
 
 ---
 
-*This feature complements the existing Vocabulary Focus (6,967 terms) and Dialogue Practice modes, giving users three distinct learning approaches for comprehensive CCL preparation.*
+*This feature complements the existing Vocabulary Focus (5,695 terms) and Dialogue Practice modes, giving users three distinct learning approaches for comprehensive CCL preparation.*

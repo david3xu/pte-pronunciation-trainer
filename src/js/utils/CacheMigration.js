@@ -1,7 +1,7 @@
 // Cache migration utility for updating old localStorage data
 class CacheMigration {
     constructor() {
-        this.currentVersion = 2; // Version 2 uses decade-based groups
+        this.currentVersion = 3; // Version 3 forces clean initialization
         this.versionKey = 'cache-version';
 
         // Mapping of old categories to new ones
@@ -20,26 +20,43 @@ class CacheMigration {
     }
 
     // Check if migration is needed and perform it
-    checkAndMigrate() {
+    checkAndMigrate(forceClear = false) {
         const currentVersion = window.storage.getItem(this.versionKey) || 1;
-
-        if (currentVersion < this.currentVersion) {
-            console.log(`Migrating cache from version ${currentVersion} to ${this.currentVersion}`);
-            this.migrateToDecadeGroups();
+        
+        if (forceClear || currentVersion < this.currentVersion) {
+            if (forceClear) {
+                console.log('Force clearing all cache data...');
+                this.clearAllCache();
+            } else {
+                console.log(`Migrating cache from version ${currentVersion} to ${this.currentVersion}`);
+                this.migrateToDecadeGroups();
+            }
+            
+            // Set default values for clean initialization
+            this.setDefaultValues();
             window.storage.setItem(this.versionKey, this.currentVersion);
             console.log('Cache migration completed');
         }
     }
 
-    // Migrate old group categories to new decade-based ones
-    migrateToDecadeGroups() {
-        const currentCategory = window.storage.getItem('category');
-
-        if (currentCategory) {
-            // Always default to all-categories for better user experience
-            window.storage.setItem('category', 'all-categories');
-            console.log(`Migrated category from '${currentCategory}' to 'all-categories' (default)`);
-        }
+    // Set default values for clean initialization
+    setDefaultValues() {
+        // Set default category to all-categories
+        window.storage.setItem('category', 'all-categories');
+        
+        // Set default difficulty to all
+        window.storage.setItem('difficulty', 'all');
+        
+        // Set default learning mode to vocabulary
+        window.storage.setItem('learningMode', 'vocabulary');
+        
+        // Set default repeat mode
+        window.storage.setItem('repeatMode', '1x');
+        
+        // Set default pause duration
+        window.storage.setItem('pauseDuration', 2);
+        
+        console.log('Default values set for clean initialization');
     }
 
     // Clear all cache data (emergency reset)

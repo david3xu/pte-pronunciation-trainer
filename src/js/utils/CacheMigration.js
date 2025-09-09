@@ -54,7 +54,7 @@ class CacheMigration {
         window.storage.setItem('repeatMode', '1x');
 
         // Set default pause duration
-        window.storage.setItem('pauseDuration', 2);
+        window.storage.setItem('delay', 1000);
 
         console.log('Default values set for clean initialization');
     }

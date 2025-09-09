@@ -35160,23 +35160,13 @@
     "example_chinese": "非常感谢你的帮助。生病真是太麻烦了，总让人觉得特别难受，我真心希望能尽快恢复正常。"
   },
   {
-    "term": "Good morning",
-    "conversation_id": "70195",
-    "sentence_id": 1,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /ˈgood ˈmorning/",
-    "example": "_Good morning_. | _I really appreciate you_ _taking the time_ _to come to the office_ _to meet me today_.",
-    "example_chinese": "早上好。感谢你今天抽空来办公室和我见面。"
-  },
-  {
-    "term": "I really appreciate you",
+    "term": "Good morning I really appreciate you",
     "conversation_id": "70195",
     "sentence_id": 1,
     "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈi ˈreally ˈappreciate ˈyou/",
-    "example": "_Good morning_. | _I really appreciate you_ _taking the time_ _to come to the office_ _to meet me today_.",
+    "phonetic": "UK /ˈgood ˈmorning ˈi ˈreally ˈappreciate ˈyou/",
+    "example": "_Good morning. I really appreciate you_ _taking the time_ _to come to the office_ _to meet me today_.",
     "example_chinese": "早上好。感谢你今天抽空来办公室和我见面。"
   },
   {
@@ -35186,7 +35176,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈtaking ˈthe ˈtime/",
-    "example": "_Good morning_. | _I really appreciate you_ _taking the time_ _to come to the office_ _to meet me today_.",
+    "example": "_Good morning. I really appreciate you_ _taking the time_ _to come to the office_ _to meet me today_.",
     "example_chinese": "早上好。感谢你今天抽空来办公室和我见面。"
   },
   {
@@ -35196,7 +35186,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈto ˈcome ˈto ˈthe ˈoffice/",
-    "example": "_Good morning_. | _I really appreciate you_ _taking the time_ _to come to the office_ _to meet me today_.",
+    "example": "_Good morning. I really appreciate you_ _taking the time_ _to come to the office_ _to meet me today_.",
     "example_chinese": "早上好。感谢你今天抽空来办公室和我见面。"
   },
   {
@@ -35206,27 +35196,17 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈto ˈmeet ˈme ˈtoday/",
-    "example": "_Good morning_. | _I really appreciate you_ _taking the time_ _to come to the office_ _to meet me today_.",
+    "example": "_Good morning. I really appreciate you_ _taking the time_ _to come to the office_ _to meet me today_.",
     "example_chinese": "早上好。感谢你今天抽空来办公室和我见面。"
   },
   {
-    "term": "Good morning",
+    "term": "Good morning It's okay",
     "conversation_id": "70195",
     "sentence_id": 2,
-    "difficulty": "normal",
+    "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈgood ˈmorning/",
-    "example": "_Good morning_. | _It's okay_. | _I'm really glad to see you_ | _and the other members of the team_.",
-    "example_chinese": "早上好啊。没事的。能见到你和团队的其他人，我很开心。"
-  },
-  {
-    "term": "It's okay",
-    "conversation_id": "70195",
-    "sentence_id": 2,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /ˈit's ˈokay/",
-    "example": "_Good morning_. | _It's okay_. | _I'm really glad to see you_ | _and the other members of the team_.",
+    "phonetic": "UK /ˈgood ˈmorning ˈit's ˈokay/",
+    "example": "_Good morning. It's okay_. | _I'm really glad to see you_ | _and the other members of the team_.",
     "example_chinese": "早上好啊。没事的。能见到你和团队的其他人，我很开心。"
   },
   {
@@ -35236,7 +35216,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈi'm ˈreally ˈglad ˈto ˈsee ˈyou/",
-    "example": "_Good morning_. | _It's okay_. | _I'm really glad to see you_ | _and the other members of the team_.",
+    "example": "_Good morning. It's okay_. | _I'm really glad to see you_ | _and the other members of the team_.",
     "example_chinese": "早上好啊。没事的。能见到你和团队的其他人，我很开心。"
   },
   {
@@ -35246,7 +35226,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈand ˈthe ˈother ˈmembers ˈof ˈthe ˈteam/",
-    "example": "_Good morning_. | _It's okay_. | _I'm really glad to see you_ | _and the other members of the team_.",
+    "example": "_Good morning. It's okay_. | _I'm really glad to see you_ | _and the other members of the team_.",
     "example_chinese": "早上好啊。没事的。能见到你和团队的其他人，我很开心。"
   },
   {
@@ -35700,23 +35680,13 @@
     "example_chinese": "我了解了。我们会给你更换一台新的网络设备，并且帮你升级到一个更高级的套餐。"
   },
   {
-    "term": "Okay",
-    "conversation_id": "70195",
-    "sentence_id": 12,
-    "difficulty": "easy",
-    "category": "business",
-    "phonetic": "UK /ˈokay/",
-    "example": "_Okay_. | _I'm starting to worry_ | _that these issues will affect_ _my work efficiency and workload_; | _technical glitches are such a headache_!",
-    "example_chinese": "好的。我都开始担心这些问题会影响我的工作效率和工作量了，技术故障真是让人头疼啊！"
-  },
-  {
-    "term": "I'm starting to worry",
+    "term": "Okay I'm starting to worry",
     "conversation_id": "70195",
     "sentence_id": 12,
     "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈi'm ˈstarting ˈto ˈworry/",
-    "example": "_Okay_. | _I'm starting to worry_ | _that these issues will affect_ _my work efficiency and workload_; | _technical glitches are such a headache_!",
+    "phonetic": "UK /ˈokay ˈi'm ˈstarting ˈto ˈworry/",
+    "example": "_Okay. I'm starting to worry_ | _that these issues will affect_ _my work efficiency and workload_; | _technical glitches are such a headache_!",
     "example_chinese": "好的。我都开始担心这些问题会影响我的工作效率和工作量了，技术故障真是让人头疼啊！"
   },
   {
@@ -35726,7 +35696,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈthat ˈthese ˈissues ˈwill ˈaffect/",
-    "example": "_Okay_. | _I'm starting to worry_ | _that these issues will affect_ _my work efficiency and workload_; | _technical glitches are such a headache_!",
+    "example": "_Okay. I'm starting to worry_ | _that these issues will affect_ _my work efficiency and workload_; | _technical glitches are such a headache_!",
     "example_chinese": "好的。我都开始担心这些问题会影响我的工作效率和工作量了，技术故障真是让人头疼啊！"
   },
   {
@@ -35736,7 +35706,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈmy ˈwork ˈefficiency ˈand ˈworkload/",
-    "example": "_Okay_. | _I'm starting to worry_ | _that these issues will affect_ _my work efficiency and workload_; | _technical glitches are such a headache_!",
+    "example": "_Okay. I'm starting to worry_ | _that these issues will affect_ _my work efficiency and workload_; | _technical glitches are such a headache_!",
     "example_chinese": "好的。我都开始担心这些问题会影响我的工作效率和工作量了，技术故障真是让人头疼啊！"
   },
   {
@@ -35746,7 +35716,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈtechnical ˈglitches ˈare ˈsuch ˈa ˈheadache/",
-    "example": "_Okay_. | _I'm starting to worry_ | _that these issues will affect_ _my work efficiency and workload_; | _technical glitches are such a headache_!",
+    "example": "_Okay. I'm starting to worry_ | _that these issues will affect_ _my work efficiency and workload_; | _technical glitches are such a headache_!",
     "example_chinese": "好的。我都开始担心这些问题会影响我的工作效率和工作量了，技术故障真是让人头疼啊！"
   },
   {
@@ -36270,23 +36240,13 @@
     "example_chinese": "电动自行车和普通自行车一样，都适用一般的道路规则。不过它们也有一些专门的规定。"
   },
   {
-    "term": "I see",
-    "conversation_id": "70194",
-    "sentence_id": 8,
-    "difficulty": "normal",
-    "category": "social",
-    "phonetic": "UK /ˈi ˈsee/",
-    "example": "_I see_. | _I'm not sure if my son_ _needs to get a driver license_ | _to ride an electric bike_, | _just like riding a motorcycle_.",
-    "example_chinese": "原来是这样。我不太清楚，我儿子骑电动自行车的话，是不是要像骑摩托车那样，需要考驾照。"
-  },
-  {
-    "term": "I'm not sure if my son",
+    "term": "I see I'm not sure if my son",
     "conversation_id": "70194",
     "sentence_id": 8,
     "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈi'm ˈnot ˈsure ˈif ˈmy ˈson/",
-    "example": "_I see_. | _I'm not sure if my son_ _needs to get a driver license_ | _to ride an electric bike_, | _just like riding a motorcycle_.",
+    "phonetic": "UK /ˈi ˈsee ˈi'm ˈnot ˈsure ˈif ˈmy ˈson/",
+    "example": "_I see. I'm not sure if my son_ _needs to get a driver license_ | _to ride an electric bike_, | _just like riding a motorcycle_.",
     "example_chinese": "原来是这样。我不太清楚，我儿子骑电动自行车的话，是不是要像骑摩托车那样，需要考驾照。"
   },
   {
@@ -36296,7 +36256,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈneeds ˈto ˈget ˈa ˈdriver ˈlicense/",
-    "example": "_I see_. | _I'm not sure if my son_ _needs to get a driver license_ | _to ride an electric bike_, | _just like riding a motorcycle_.",
+    "example": "_I see. I'm not sure if my son_ _needs to get a driver license_ | _to ride an electric bike_, | _just like riding a motorcycle_.",
     "example_chinese": "原来是这样。我不太清楚，我儿子骑电动自行车的话，是不是要像骑摩托车那样，需要考驾照。"
   },
   {
@@ -36306,7 +36266,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈto ˈride ˈan ˈelectric ˈbike/",
-    "example": "_I see_. | _I'm not sure if my son_ _needs to get a driver license_ | _to ride an electric bike_, | _just like riding a motorcycle_.",
+    "example": "_I see. I'm not sure if my son_ _needs to get a driver license_ | _to ride an electric bike_, | _just like riding a motorcycle_.",
     "example_chinese": "原来是这样。我不太清楚，我儿子骑电动自行车的话，是不是要像骑摩托车那样，需要考驾照。"
   },
   {
@@ -36316,7 +36276,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈjust ˈlike ˈriding ˈa ˈmotorcycle/",
-    "example": "_I see_. | _I'm not sure if my son_ _needs to get a driver license_ | _to ride an electric bike_, | _just like riding a motorcycle_.",
+    "example": "_I see. I'm not sure if my son_ _needs to get a driver license_ | _to ride an electric bike_, | _just like riding a motorcycle_.",
     "example_chinese": "原来是这样。我不太清楚，我儿子骑电动自行车的话，是不是要像骑摩托车那样，需要考驾照。"
   },
   {
@@ -36680,23 +36640,13 @@
     "example_chinese": "太感谢了。警察同志，你真的是帮了我大忙。我非常感激你的耐心解答。这次通话解决了我的很多疑问。"
   },
   {
-    "term": "Morning",
-    "conversation_id": "70193",
-    "sentence_id": 1,
-    "difficulty": "easy",
-    "category": "business",
-    "phonetic": "UK /ˈmorning/",
-    "example": "_Morning!_ | _Thanks a lot for calling in_. | _What can I help you with today_?",
-    "example_chinese": "早上好，谢谢你打电话来。我今天能帮你点什么？"
-  },
-  {
-    "term": "Thanks a lot for calling in",
+    "term": "Morning Thanks a lot for calling in",
     "conversation_id": "70193",
     "sentence_id": 1,
     "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈthanks ˈa ˈlot ˈfor ˈcalling ˈin/",
-    "example": "_Morning!_ | _Thanks a lot for calling in_. | _What can I help you with today_?",
+    "phonetic": "UK /ˈmorning ˈthanks ˈa ˈlot ˈfor ˈcalling ˈin/",
+    "example": "_Morning! Thanks a lot for calling in_. | _What can I help you with today_?",
     "example_chinese": "早上好，谢谢你打电话来。我今天能帮你点什么？"
   },
   {
@@ -36706,27 +36656,17 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈwhat ˈcan ˈi ˈhelp ˈyou ˈwith ˈtoday/",
-    "example": "_Morning!_ | _Thanks a lot for calling in_. | _What can I help you with today_?",
+    "example": "_Morning! Thanks a lot for calling in_. | _What can I help you with today_?",
     "example_chinese": "早上好，谢谢你打电话来。我今天能帮你点什么？"
   },
   {
-    "term": "Hey there",
-    "conversation_id": "70193",
-    "sentence_id": 2,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /ˈhey ˈthere/",
-    "example": "_Hey there!_ | _I was hoping to talk_ _about my retirement plan_—| _if that's okay_? | _It's just something_ _that's been on my mind lately_.",
-    "example_chinese": "你好呀，我想聊聊我的退休计划，可以吗？我最近一直在考虑这个问题。"
-  },
-  {
-    "term": "I was hoping to talk",
+    "term": "Hey there I was hoping to talk",
     "conversation_id": "70193",
     "sentence_id": 2,
     "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈi ˈwas ˈhoping ˈto ˈtalk/",
-    "example": "_Hey there!_ | _I was hoping to talk_ _about my retirement plan_—| _if that's okay_? | _It's just something_ _that's been on my mind lately_.",
+    "phonetic": "UK /ˈhey ˈthere ˈi ˈwas ˈhoping ˈto ˈtalk/",
+    "example": "_Hey there! I was hoping to talk_ _about my retirement plan_—| _if that's okay_? | _It's just something_ _that's been on my mind lately_.",
     "example_chinese": "你好呀，我想聊聊我的退休计划，可以吗？我最近一直在考虑这个问题。"
   },
   {
@@ -36736,7 +36676,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈabout ˈmy ˈretirement ˈplan/",
-    "example": "_Hey there!_ | _I was hoping to talk_ _about my retirement plan_—| _if that's okay_? | _It's just something_ _that's been on my mind lately_.",
+    "example": "_Hey there! I was hoping to talk_ _about my retirement plan_—| _if that's okay_? | _It's just something_ _that's been on my mind lately_.",
     "example_chinese": "你好呀，我想聊聊我的退休计划，可以吗？我最近一直在考虑这个问题。"
   },
   {
@@ -36746,7 +36686,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈif ˈthat's ˈokay/",
-    "example": "_Hey there!_ | _I was hoping to talk_ _about my retirement plan_—| _if that's okay_? | _It's just something_ _that's been on my mind lately_.",
+    "example": "_Hey there! I was hoping to talk_ _about my retirement plan_—| _if that's okay_? | _It's just something_ _that's been on my mind lately_.",
     "example_chinese": "你好呀，我想聊聊我的退休计划，可以吗？我最近一直在考虑这个问题。"
   },
   {
@@ -36756,7 +36696,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈit's ˈjust ˈsomething/",
-    "example": "_Hey there!_ | _I was hoping to talk_ _about my retirement plan_—| _if that's okay_? | _It's just something_ _that's been on my mind lately_.",
+    "example": "_Hey there! I was hoping to talk_ _about my retirement plan_—| _if that's okay_? | _It's just something_ _that's been on my mind lately_.",
     "example_chinese": "你好呀，我想聊聊我的退休计划，可以吗？我最近一直在考虑这个问题。"
   },
   {
@@ -36766,27 +36706,17 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈthat's ˈbeen ˈon ˈmy ˈmind ˈlately/",
-    "example": "_Hey there!_ | _I was hoping to talk_ _about my retirement plan_—| _if that's okay_? | _It's just something_ _that's been on my mind lately_.",
+    "example": "_Hey there! I was hoping to talk_ _about my retirement plan_—| _if that's okay_? | _It's just something_ _that's been on my mind lately_.",
     "example_chinese": "你好呀，我想聊聊我的退休计划，可以吗？我最近一直在考虑这个问题。"
   },
   {
-    "term": "Of course",
-    "conversation_id": "70193",
-    "sentence_id": 3,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /ˈof ˈcourse/",
-    "example": "_Of course!_ | _That's exactly what I do_. | _I help people_ _with retirement planning_. | _It's super important_ _to have enough saved up_ | _so you can live comfortably_ | _once you stop working_.",
-    "example_chinese": "当然可以啦，我专门做这个的。我帮大家做退休规划。存够钱很重要，这样退休后才能过得舒舒服服的。"
-  },
-  {
-    "term": "That's exactly what I do",
+    "term": "Of course That's exactly what I do",
     "conversation_id": "70193",
     "sentence_id": 3,
     "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈthat's ˈexactly ˈwhat ˈi ˈdo/",
-    "example": "_Of course!_ | _That's exactly what I do_. | _I help people_ _with retirement planning_. | _It's super important_ _to have enough saved up_ | _so you can live comfortably_ | _once you stop working_.",
+    "phonetic": "UK /ˈof ˈcourse ˈthat's ˈexactly ˈwhat ˈi ˈdo/",
+    "example": "_Of course! That's exactly what I do_. | _I help people_ _with retirement planning_. | _It's super important_ _to have enough saved up_ | _so you can live comfortably_ | _once you stop working_.",
     "example_chinese": "当然可以啦，我专门做这个的。我帮大家做退休规划。存够钱很重要，这样退休后才能过得舒舒服服的。"
   },
   {
@@ -36796,7 +36726,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈi ˈhelp ˈpeople/",
-    "example": "_Of course!_ | _That's exactly what I do_. | _I help people_ _with retirement planning_. | _It's super important_ _to have enough saved up_ | _so you can live comfortably_ | _once you stop working_.",
+    "example": "_Of course! That's exactly what I do_. | _I help people_ _with retirement planning_. | _It's super important_ _to have enough saved up_ | _so you can live comfortably_ | _once you stop working_.",
     "example_chinese": "当然可以啦，我专门做这个的。我帮大家做退休规划。存够钱很重要，这样退休后才能过得舒舒服服的。"
   },
   {
@@ -36806,7 +36736,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈwith ˈretirement ˈplanning/",
-    "example": "_Of course!_ | _That's exactly what I do_. | _I help people_ _with retirement planning_. | _It's super important_ _to have enough saved up_ | _so you can live comfortably_ | _once you stop working_.",
+    "example": "_Of course! That's exactly what I do_. | _I help people_ _with retirement planning_. | _It's super important_ _to have enough saved up_ | _so you can live comfortably_ | _once you stop working_.",
     "example_chinese": "当然可以啦，我专门做这个的。我帮大家做退休规划。存够钱很重要，这样退休后才能过得舒舒服服的。"
   },
   {
@@ -36816,7 +36746,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈit's ˈsuper ˈimportant/",
-    "example": "_Of course!_ | _That's exactly what I do_. | _I help people_ _with retirement planning_. | _It's super important_ _to have enough saved up_ | _so you can live comfortably_ | _once you stop working_.",
+    "example": "_Of course! That's exactly what I do_. | _I help people_ _with retirement planning_. | _It's super important_ _to have enough saved up_ | _so you can live comfortably_ | _once you stop working_.",
     "example_chinese": "当然可以啦，我专门做这个的。我帮大家做退休规划。存够钱很重要，这样退休后才能过得舒舒服服的。"
   },
   {
@@ -36826,7 +36756,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈto ˈhave ˈenough ˈsaved ˈup/",
-    "example": "_Of course!_ | _That's exactly what I do_. | _I help people_ _with retirement planning_. | _It's super important_ _to have enough saved up_ | _so you can live comfortably_ | _once you stop working_.",
+    "example": "_Of course! That's exactly what I do_. | _I help people_ _with retirement planning_. | _It's super important_ _to have enough saved up_ | _so you can live comfortably_ | _once you stop working_.",
     "example_chinese": "当然可以啦，我专门做这个的。我帮大家做退休规划。存够钱很重要，这样退休后才能过得舒舒服服的。"
   },
   {
@@ -36836,7 +36766,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈso ˈyou ˈcan ˈlive ˈcomfortably/",
-    "example": "_Of course!_ | _That's exactly what I do_. | _I help people_ _with retirement planning_. | _It's super important_ _to have enough saved up_ | _so you can live comfortably_ | _once you stop working_.",
+    "example": "_Of course! That's exactly what I do_. | _I help people_ _with retirement planning_. | _It's super important_ _to have enough saved up_ | _so you can live comfortably_ | _once you stop working_.",
     "example_chinese": "当然可以啦，我专门做这个的。我帮大家做退休规划。存够钱很重要，这样退休后才能过得舒舒服服的。"
   },
   {
@@ -36846,7 +36776,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈonce ˈyou ˈstop ˈworking/",
-    "example": "_Of course!_ | _That's exactly what I do_. | _I help people_ _with retirement planning_. | _It's super important_ _to have enough saved up_ | _so you can live comfortably_ | _once you stop working_.",
+    "example": "_Of course! That's exactly what I do_. | _I help people_ _with retirement planning_. | _It's super important_ _to have enough saved up_ | _so you can live comfortably_ | _once you stop working_.",
     "example_chinese": "当然可以啦，我专门做这个的。我帮大家做退休规划。存够钱很重要，这样退休后才能过得舒舒服服的。"
   },
   {
@@ -36906,27 +36836,17 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈyeah ˈtotally/",
-    "example": "_Yeah, totally_. | _The earlier you plan_, | _the better_. | _Plus, it's better_ _to keep checking in_ _on your plan_, | _because your situation and needs_ | _are always changing_.",
+    "example": "_Yeah, totally_. | _The earlier you plan, the better_. | _Plus, it's better_ _to keep checking in_ _on your plan_, | _because your situation and needs_ | _are always changing_.",
     "example_chinese": "没错，越早开始规划越好。而且，最好时不时检查一下计划，因为你的情况和需求一直会变。"
   },
   {
-    "term": "The earlier you plan",
+    "term": "The earlier you plan the better",
     "conversation_id": "70193",
     "sentence_id": 5,
     "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈthe ˈearlier ˈyou ˈplan/",
-    "example": "_Yeah, totally_. | _The earlier you plan_, | _the better_. | _Plus, it's better_ _to keep checking in_ _on your plan_, | _because your situation and needs_ | _are always changing_.",
-    "example_chinese": "没错，越早开始规划越好。而且，最好时不时检查一下计划，因为你的情况和需求一直会变。"
-  },
-  {
-    "term": "the better",
-    "conversation_id": "70193",
-    "sentence_id": 5,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /ˈthe ˈbetter/",
-    "example": "_Yeah, totally_. | _The earlier you plan_, | _the better_. | _Plus, it's better_ _to keep checking in_ _on your plan_, | _because your situation and needs_ | _are always changing_.",
+    "phonetic": "UK /ˈthe ˈearlier ˈyou ˈplan ˈthe ˈbetter/",
+    "example": "_Yeah, totally_. | _The earlier you plan, the better_. | _Plus, it's better_ _to keep checking in_ _on your plan_, | _because your situation and needs_ | _are always changing_.",
     "example_chinese": "没错，越早开始规划越好。而且，最好时不时检查一下计划，因为你的情况和需求一直会变。"
   },
   {
@@ -36936,7 +36856,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈplus ˈit's ˈbetter/",
-    "example": "_Yeah, totally_. | _The earlier you plan_, | _the better_. | _Plus, it's better_ _to keep checking in_ _on your plan_, | _because your situation and needs_ | _are always changing_.",
+    "example": "_Yeah, totally_. | _The earlier you plan, the better_. | _Plus, it's better_ _to keep checking in_ _on your plan_, | _because your situation and needs_ | _are always changing_.",
     "example_chinese": "没错，越早开始规划越好。而且，最好时不时检查一下计划，因为你的情况和需求一直会变。"
   },
   {
@@ -36946,7 +36866,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈto ˈkeep ˈchecking ˈin/",
-    "example": "_Yeah, totally_. | _The earlier you plan_, | _the better_. | _Plus, it's better_ _to keep checking in_ _on your plan_, | _because your situation and needs_ | _are always changing_.",
+    "example": "_Yeah, totally_. | _The earlier you plan, the better_. | _Plus, it's better_ _to keep checking in_ _on your plan_, | _because your situation and needs_ | _are always changing_.",
     "example_chinese": "没错，越早开始规划越好。而且，最好时不时检查一下计划，因为你的情况和需求一直会变。"
   },
   {
@@ -36956,7 +36876,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈon ˈyour ˈplan/",
-    "example": "_Yeah, totally_. | _The earlier you plan_, | _the better_. | _Plus, it's better_ _to keep checking in_ _on your plan_, | _because your situation and needs_ | _are always changing_.",
+    "example": "_Yeah, totally_. | _The earlier you plan, the better_. | _Plus, it's better_ _to keep checking in_ _on your plan_, | _because your situation and needs_ | _are always changing_.",
     "example_chinese": "没错，越早开始规划越好。而且，最好时不时检查一下计划，因为你的情况和需求一直会变。"
   },
   {
@@ -36966,7 +36886,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈbecause ˈyour ˈsituation ˈand ˈneeds/",
-    "example": "_Yeah, totally_. | _The earlier you plan_, | _the better_. | _Plus, it's better_ _to keep checking in_ _on your plan_, | _because your situation and needs_ | _are always changing_.",
+    "example": "_Yeah, totally_. | _The earlier you plan, the better_. | _Plus, it's better_ _to keep checking in_ _on your plan_, | _because your situation and needs_ | _are always changing_.",
     "example_chinese": "没错，越早开始规划越好。而且，最好时不时检查一下计划，因为你的情况和需求一直会变。"
   },
   {
@@ -36976,27 +36896,17 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈare ˈalways ˈchanging/",
-    "example": "_Yeah, totally_. | _The earlier you plan_, | _the better_. | _Plus, it's better_ _to keep checking in_ _on your plan_, | _because your situation and needs_ | _are always changing_.",
+    "example": "_Yeah, totally_. | _The earlier you plan, the better_. | _Plus, it's better_ _to keep checking in_ _on your plan_, | _because your situation and needs_ | _are always changing_.",
     "example_chinese": "没错，越早开始规划越好。而且，最好时不时检查一下计划，因为你的情况和需求一直会变。"
   },
   {
-    "term": "I hadn't really thought",
+    "term": "I hadn't really thought about this before",
     "conversation_id": "70193",
     "sentence_id": 6,
     "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈi ˈhadn't ˈreally ˈthought/",
-    "example": "_I hadn't really thought_ _about this before_. | _But as I get closer_ _to retirement age_, | _I think it's time_ _to revisit my plan_.",
-    "example_chinese": "我以前确实没太考虑这些事。不过，现在离退休不远了。我觉得要重新整理一下了。"
-  },
-  {
-    "term": "about this before",
-    "conversation_id": "70193",
-    "sentence_id": 6,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /ˈabout ˈthis ˈbefore/",
-    "example": "_I hadn't really thought_ _about this before_. | _But as I get closer_ _to retirement age_, | _I think it's time_ _to revisit my plan_.",
+    "phonetic": "UK /ˈi ˈhadn't ˈreally ˈthought ˈabout ˈthis ˈbefore/",
+    "example": "_I hadn't really thought about this before_. | _But as I get closer_ _to retirement age_, | _I think it's time_ _to revisit my plan_.",
     "example_chinese": "我以前确实没太考虑这些事。不过，现在离退休不远了。我觉得要重新整理一下了。"
   },
   {
@@ -37006,7 +36916,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈbut ˈas ˈi ˈget ˈcloser/",
-    "example": "_I hadn't really thought_ _about this before_. | _But as I get closer_ _to retirement age_, | _I think it's time_ _to revisit my plan_.",
+    "example": "_I hadn't really thought about this before_. | _But as I get closer_ _to retirement age_, | _I think it's time_ _to revisit my plan_.",
     "example_chinese": "我以前确实没太考虑这些事。不过，现在离退休不远了。我觉得要重新整理一下了。"
   },
   {
@@ -37016,7 +36926,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈto ˈretirement ˈage/",
-    "example": "_I hadn't really thought_ _about this before_. | _But as I get closer_ _to retirement age_, | _I think it's time_ _to revisit my plan_.",
+    "example": "_I hadn't really thought about this before_. | _But as I get closer_ _to retirement age_, | _I think it's time_ _to revisit my plan_.",
     "example_chinese": "我以前确实没太考虑这些事。不过，现在离退休不远了。我觉得要重新整理一下了。"
   },
   {
@@ -37026,7 +36936,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈi ˈthink ˈit's ˈtime/",
-    "example": "_I hadn't really thought_ _about this before_. | _But as I get closer_ _to retirement age_, | _I think it's time_ _to revisit my plan_.",
+    "example": "_I hadn't really thought about this before_. | _But as I get closer_ _to retirement age_, | _I think it's time_ _to revisit my plan_.",
     "example_chinese": "我以前确实没太考虑这些事。不过，现在离退休不远了。我觉得要重新整理一下了。"
   },
   {
@@ -37036,7 +36946,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈto ˈrevisit ˈmy ˈplan/",
-    "example": "_I hadn't really thought_ _about this before_. | _But as I get closer_ _to retirement age_, | _I think it's time_ _to revisit my plan_.",
+    "example": "_I hadn't really thought about this before_. | _But as I get closer_ _to retirement age_, | _I think it's time_ _to revisit my plan_.",
     "example_chinese": "我以前确实没太考虑这些事。不过，现在离退休不远了。我觉得要重新整理一下了。"
   },
   {
@@ -38580,23 +38490,13 @@
     "example_chinese": "没错。就算生意的运营流程很好，还是会出现问题。一旦有问题，顾客往往会更不高兴。你遇到过难处理的情况吗？"
   },
   {
-    "term": "Yeah",
-    "conversation_id": "70191",
-    "sentence_id": 8,
-    "difficulty": "easy",
-    "category": "business",
-    "phonetic": "UK /ˈyeah/",
-    "example": "_Yeah_. | _Someone charged a customer_ _full price for something_ | _that was supposed to be discounted_. | _The customer didn't realize it_ | _until she got home_, | _and she was really upset_.",
-    "example_chinese": "是的。有人把本该打折的商品按原价卖给了顾客。那位女士回家后才发现，她非常郁闷。"
-  },
-  {
-    "term": "Someone charged a customer",
+    "term": "Yeah Someone charged a customer",
     "conversation_id": "70191",
     "sentence_id": 8,
     "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈsomeone ˈcharged ˈa ˈcustomer/",
-    "example": "_Yeah_. | _Someone charged a customer_ _full price for something_ | _that was supposed to be discounted_. | _The customer didn't realize it_ | _until she got home_, | _and she was really upset_.",
+    "phonetic": "UK /ˈyeah ˈsomeone ˈcharged ˈa ˈcustomer/",
+    "example": "_Yeah. Someone charged a customer_ _full price for something_ | _that was supposed to be discounted_. | _The customer didn't realize it_ | _until she got home_, | _and she was really upset_.",
     "example_chinese": "是的。有人把本该打折的商品按原价卖给了顾客。那位女士回家后才发现，她非常郁闷。"
   },
   {
@@ -38606,7 +38506,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈfull ˈprice ˈfor ˈsomething/",
-    "example": "_Yeah_. | _Someone charged a customer_ _full price for something_ | _that was supposed to be discounted_. | _The customer didn't realize it_ | _until she got home_, | _and she was really upset_.",
+    "example": "_Yeah. Someone charged a customer_ _full price for something_ | _that was supposed to be discounted_. | _The customer didn't realize it_ | _until she got home_, | _and she was really upset_.",
     "example_chinese": "是的。有人把本该打折的商品按原价卖给了顾客。那位女士回家后才发现，她非常郁闷。"
   },
   {
@@ -38616,7 +38516,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈthat ˈwas ˈsupposed ˈto ˈbe ˈdiscounted/",
-    "example": "_Yeah_. | _Someone charged a customer_ _full price for something_ | _that was supposed to be discounted_. | _The customer didn't realize it_ | _until she got home_, | _and she was really upset_.",
+    "example": "_Yeah. Someone charged a customer_ _full price for something_ | _that was supposed to be discounted_. | _The customer didn't realize it_ | _until she got home_, | _and she was really upset_.",
     "example_chinese": "是的。有人把本该打折的商品按原价卖给了顾客。那位女士回家后才发现，她非常郁闷。"
   },
   {
@@ -38626,7 +38526,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈthe ˈcustomer ˈdidn't ˈrealize ˈit/",
-    "example": "_Yeah_. | _Someone charged a customer_ _full price for something_ | _that was supposed to be discounted_. | _The customer didn't realize it_ | _until she got home_, | _and she was really upset_.",
+    "example": "_Yeah. Someone charged a customer_ _full price for something_ | _that was supposed to be discounted_. | _The customer didn't realize it_ | _until she got home_, | _and she was really upset_.",
     "example_chinese": "是的。有人把本该打折的商品按原价卖给了顾客。那位女士回家后才发现，她非常郁闷。"
   },
   {
@@ -38636,7 +38536,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈuntil ˈshe ˈgot ˈhome/",
-    "example": "_Yeah_. | _Someone charged a customer_ _full price for something_ | _that was supposed to be discounted_. | _The customer didn't realize it_ | _until she got home_, | _and she was really upset_.",
+    "example": "_Yeah. Someone charged a customer_ _full price for something_ | _that was supposed to be discounted_. | _The customer didn't realize it_ | _until she got home_, | _and she was really upset_.",
     "example_chinese": "是的。有人把本该打折的商品按原价卖给了顾客。那位女士回家后才发现，她非常郁闷。"
   },
   {
@@ -38646,7 +38546,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈand ˈshe ˈwas ˈreally ˈupset/",
-    "example": "_Yeah_. | _Someone charged a customer_ _full price for something_ | _that was supposed to be discounted_. | _The customer didn't realize it_ | _until she got home_, | _and she was really upset_.",
+    "example": "_Yeah. Someone charged a customer_ _full price for something_ | _that was supposed to be discounted_. | _The customer didn't realize it_ | _until she got home_, | _and she was really upset_.",
     "example_chinese": "是的。有人把本该打折的商品按原价卖给了顾客。那位女士回家后才发现，她非常郁闷。"
   },
   {
@@ -38980,23 +38880,13 @@
     "example_chinese": "明白了。要是没处理好，可能会影响不好。我很高兴我现在知道该怎么给客户多多提供帮助了。"
   },
   {
-    "term": "Hey",
-    "conversation_id": "70190",
-    "sentence_id": 1,
-    "difficulty": "easy",
-    "category": "social",
-    "phonetic": "UK /ˈhey/",
-    "example": "_Hey!_ | _It's so nice to see you again_. | _It feels like forever_ | _since we last caught up_. | _How have you been_?",
-    "example_chinese": "嗨！再见到你真好。感觉我们很久没聊天了，你最近怎么样？"
-  },
-  {
-    "term": "It's so nice to see you again",
+    "term": "Hey It's so nice to see you again",
     "conversation_id": "70190",
     "sentence_id": 1,
     "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈit's ˈso ˈnice ˈto ˈsee ˈyou ˈagain/",
-    "example": "_Hey!_ | _It's so nice to see you again_. | _It feels like forever_ | _since we last caught up_. | _How have you been_?",
+    "phonetic": "UK /ˈhey ˈit's ˈso ˈnice ˈto ˈsee ˈyou ˈagain/",
+    "example": "_Hey! It's so nice to see you again_. | _It feels like forever_ | _since we last caught up_. | _How have you been_?",
     "example_chinese": "嗨！再见到你真好。感觉我们很久没聊天了，你最近怎么样？"
   },
   {
@@ -39006,7 +38896,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈit ˈfeels ˈlike ˈforever/",
-    "example": "_Hey!_ | _It's so nice to see you again_. | _It feels like forever_ | _since we last caught up_. | _How have you been_?",
+    "example": "_Hey! It's so nice to see you again_. | _It feels like forever_ | _since we last caught up_. | _How have you been_?",
     "example_chinese": "嗨！再见到你真好。感觉我们很久没聊天了，你最近怎么样？"
   },
   {
@@ -39016,7 +38906,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈsince ˈwe ˈlast ˈcaught ˈup/",
-    "example": "_Hey!_ | _It's so nice to see you again_. | _It feels like forever_ | _since we last caught up_. | _How have you been_?",
+    "example": "_Hey! It's so nice to see you again_. | _It feels like forever_ | _since we last caught up_. | _How have you been_?",
     "example_chinese": "嗨！再见到你真好。感觉我们很久没聊天了，你最近怎么样？"
   },
   {
@@ -39026,7 +38916,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈhow ˈhave ˈyou ˈbeen/",
-    "example": "_Hey!_ | _It's so nice to see you again_. | _It feels like forever_ | _since we last caught up_. | _How have you been_?",
+    "example": "_Hey! It's so nice to see you again_. | _It feels like forever_ | _since we last caught up_. | _How have you been_?",
     "example_chinese": "嗨！再见到你真好。感觉我们很久没聊天了，你最近怎么样？"
   },
   {
@@ -41420,23 +41310,13 @@
     "example_chinese": "谢谢你。有了社工名录的帮助，事情会容易很多。要不然，我真不知道该从哪里开始。"
   },
   {
-    "term": "Yes",
-    "conversation_id": "70187",
-    "sentence_id": 9,
-    "difficulty": "easy",
-    "category": "social",
-    "phonetic": "UK /ˈyes/",
-    "example": "_Yes_. | _Since these are professional organizations_, | _you can find their names_ _listed in directories_. | _Elder care is a sensitive matter_, | _so it's important to find someone qualified_.",
-    "example_chinese": "是的。由于这些是专业机构，你可以在名录上查到他们的名字。养老问题很敏感，所以找到有资质的人很重要。"
-  },
-  {
-    "term": "Since these are professional organizations",
+    "term": "Yes Since these are professional organizations",
     "conversation_id": "70187",
     "sentence_id": 9,
     "difficulty": "hard",
     "category": "social",
-    "phonetic": "UK /ˈsince ˈthese ˈare ˈprofessional ˈorganizations/",
-    "example": "_Yes_. | _Since these are professional organizations_, | _you can find their names_ _listed in directories_. | _Elder care is a sensitive matter_, | _so it's important to find someone qualified_.",
+    "phonetic": "UK /ˈyes ˈsince ˈthese ˈare ˈprofessional ˈorganizations/",
+    "example": "_Yes. Since these are professional organizations_, | _you can find their names_ _listed in directories_. | _Elder care is a sensitive matter_, | _so it's important to find someone qualified_.",
     "example_chinese": "是的。由于这些是专业机构，你可以在名录上查到他们的名字。养老问题很敏感，所以找到有资质的人很重要。"
   },
   {
@@ -41446,7 +41326,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈyou ˈcan ˈfind ˈtheir ˈnames/",
-    "example": "_Yes_. | _Since these are professional organizations_, | _you can find their names_ _listed in directories_. | _Elder care is a sensitive matter_, | _so it's important to find someone qualified_.",
+    "example": "_Yes. Since these are professional organizations_, | _you can find their names_ _listed in directories_. | _Elder care is a sensitive matter_, | _so it's important to find someone qualified_.",
     "example_chinese": "是的。由于这些是专业机构，你可以在名录上查到他们的名字。养老问题很敏感，所以找到有资质的人很重要。"
   },
   {
@@ -41456,7 +41336,7 @@
     "difficulty": "normal",
     "category": "social",
     "phonetic": "UK /ˈlisted ˈin ˈdirectories/",
-    "example": "_Yes_. | _Since these are professional organizations_, | _you can find their names_ _listed in directories_. | _Elder care is a sensitive matter_, | _so it's important to find someone qualified_.",
+    "example": "_Yes. Since these are professional organizations_, | _you can find their names_ _listed in directories_. | _Elder care is a sensitive matter_, | _so it's important to find someone qualified_.",
     "example_chinese": "是的。由于这些是专业机构，你可以在名录上查到他们的名字。养老问题很敏感，所以找到有资质的人很重要。"
   },
   {
@@ -41466,7 +41346,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈelder ˈcare ˈis ˈa ˈsensitive ˈmatter/",
-    "example": "_Yes_. | _Since these are professional organizations_, | _you can find their names_ _listed in directories_. | _Elder care is a sensitive matter_, | _so it's important to find someone qualified_.",
+    "example": "_Yes. Since these are professional organizations_, | _you can find their names_ _listed in directories_. | _Elder care is a sensitive matter_, | _so it's important to find someone qualified_.",
     "example_chinese": "是的。由于这些是专业机构，你可以在名录上查到他们的名字。养老问题很敏感，所以找到有资质的人很重要。"
   },
   {
@@ -41476,7 +41356,7 @@
     "difficulty": "hard",
     "category": "social",
     "phonetic": "UK /ˈso ˈit's ˈimportant ˈto ˈfind ˈsomeone ˈqualified/",
-    "example": "_Yes_. | _Since these are professional organizations_, | _you can find their names_ _listed in directories_. | _Elder care is a sensitive matter_, | _so it's important to find someone qualified_.",
+    "example": "_Yes. Since these are professional organizations_, | _you can find their names_ _listed in directories_. | _Elder care is a sensitive matter_, | _so it's important to find someone qualified_.",
     "example_chinese": "是的。由于这些是专业机构，你可以在名录上查到他们的名字。养老问题很敏感，所以找到有资质的人很重要。"
   },
   {
@@ -42230,23 +42110,13 @@
     "example_chinese": "我很期待这次旅行，看看学生们能从中学到什么。而且，能看到他们在课堂外积极参与也会很有趣。"
   },
   {
-    "term": "Yes",
-    "conversation_id": "70186",
-    "sentence_id": 12,
-    "difficulty": "easy",
-    "category": "education",
-    "phonetic": "UK /ˈyes/",
-    "example": "_Yes!_ | _Hopefully, they can learn_ _and have fun at the same time_. | _They always look forward to class trips_ | _and are eager to explore_ _beyond the classroom_.",
-    "example_chinese": "是啊，希望他们既能学到知识，又能玩得开心。他们每次都特别期待班级旅行，总想着能走出教室看看外面的世界。"
-  },
-  {
-    "term": "Hopefully they can learn",
+    "term": "Yes Hopefully they can learn",
     "conversation_id": "70186",
     "sentence_id": 12,
     "difficulty": "hard",
     "category": "education",
-    "phonetic": "UK /ˈhopefully ˈthey ˈcan ˈlearn/",
-    "example": "_Yes!_ | _Hopefully, they can learn_ _and have fun at the same time_. | _They always look forward to class trips_ | _and are eager to explore_ _beyond the classroom_.",
+    "phonetic": "UK /ˈyes ˈhopefully ˈthey ˈcan ˈlearn/",
+    "example": "_Yes! Hopefully, they can learn_ _and have fun at the same time_. | _They always look forward to class trips_ | _and are eager to explore_ _beyond the classroom_.",
     "example_chinese": "是啊，希望他们既能学到知识，又能玩得开心。他们每次都特别期待班级旅行，总想着能走出教室看看外面的世界。"
   },
   {
@@ -42256,7 +42126,7 @@
     "difficulty": "hard",
     "category": "education",
     "phonetic": "UK /ˈand ˈhave ˈfun ˈat ˈthe ˈsame ˈtime/",
-    "example": "_Yes!_ | _Hopefully, they can learn_ _and have fun at the same time_. | _They always look forward to class trips_ | _and are eager to explore_ _beyond the classroom_.",
+    "example": "_Yes! Hopefully, they can learn_ _and have fun at the same time_. | _They always look forward to class trips_ | _and are eager to explore_ _beyond the classroom_.",
     "example_chinese": "是啊，希望他们既能学到知识，又能玩得开心。他们每次都特别期待班级旅行，总想着能走出教室看看外面的世界。"
   },
   {
@@ -42266,7 +42136,7 @@
     "difficulty": "hard",
     "category": "education",
     "phonetic": "UK /ˈthey ˈalways ˈlook ˈforward ˈto ˈclass ˈtrips/",
-    "example": "_Yes!_ | _Hopefully, they can learn_ _and have fun at the same time_. | _They always look forward to class trips_ | _and are eager to explore_ _beyond the classroom_.",
+    "example": "_Yes! Hopefully, they can learn_ _and have fun at the same time_. | _They always look forward to class trips_ | _and are eager to explore_ _beyond the classroom_.",
     "example_chinese": "是啊，希望他们既能学到知识，又能玩得开心。他们每次都特别期待班级旅行，总想着能走出教室看看外面的世界。"
   },
   {
@@ -42276,7 +42146,7 @@
     "difficulty": "hard",
     "category": "education",
     "phonetic": "UK /ˈand ˈare ˈeager ˈto ˈexplore/",
-    "example": "_Yes!_ | _Hopefully, they can learn_ _and have fun at the same time_. | _They always look forward to class trips_ | _and are eager to explore_ _beyond the classroom_.",
+    "example": "_Yes! Hopefully, they can learn_ _and have fun at the same time_. | _They always look forward to class trips_ | _and are eager to explore_ _beyond the classroom_.",
     "example_chinese": "是啊，希望他们既能学到知识，又能玩得开心。他们每次都特别期待班级旅行，总想着能走出教室看看外面的世界。"
   },
   {
@@ -42286,7 +42156,7 @@
     "difficulty": "normal",
     "category": "education",
     "phonetic": "UK /ˈbeyond ˈthe ˈclassroom/",
-    "example": "_Yes!_ | _Hopefully, they can learn_ _and have fun at the same time_. | _They always look forward to class trips_ | _and are eager to explore_ _beyond the classroom_.",
+    "example": "_Yes! Hopefully, they can learn_ _and have fun at the same time_. | _They always look forward to class trips_ | _and are eager to explore_ _beyond the classroom_.",
     "example_chinese": "是啊，希望他们既能学到知识，又能玩得开心。他们每次都特别期待班级旅行，总想着能走出教室看看外面的世界。"
   },
   {
@@ -43296,7 +43166,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈit's ˈactually ˈnot ˈhard ˈto ˈprevent ˈthat/",
-    "example": "_It's actually not hard to prevent that_. | _A professional accountant_ _can ensure_ _your accounts are all in order_. | _Do you have any urgent matters_ _that need to be handled ight now_?",
+    "example": "_It's actually not hard to prevent that_. | _A professional accountant_ _can ensure_ _your accounts are all in order_. | _Do you have any urgent matters_ _that need to be handled right now_?",
     "example_chinese": "_其实_，_这并不难避免_。| _专业会计可以帮你_ _把账目整理好_。| _你现在有什么_ _特别紧急的事_ _需要处理吗_？"
   },
   {
@@ -43306,7 +43176,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈa ˈprofessional ˈaccountant/",
-    "example": "_It's actually not hard to prevent that_. | _A professional accountant_ _can ensure_ _your accounts are all in order_. | _Do you have any urgent matters_ _that need to be handled ight now_?",
+    "example": "_It's actually not hard to prevent that_. | _A professional accountant_ _can ensure_ _your accounts are all in order_. | _Do you have any urgent matters_ _that need to be handled right now_?",
     "example_chinese": "_其实_，_这并不难避免_。| _专业会计可以帮你_ _把账目整理好_。| _你现在有什么_ _特别紧急的事_ _需要处理吗_？"
   },
   {
@@ -43316,7 +43186,7 @@
     "difficulty": "normal",
     "category": "business",
     "phonetic": "UK /ˈcan ˈensure/",
-    "example": "_It's actually not hard to prevent that_. | _A professional accountant_ _can ensure_ _your accounts are all in order_. | _Do you have any urgent matters_ _that need to be handled ight now_?",
+    "example": "_It's actually not hard to prevent that_. | _A professional accountant_ _can ensure_ _your accounts are all in order_. | _Do you have any urgent matters_ _that need to be handled right now_?",
     "example_chinese": "_其实_，_这并不难避免_。| _专业会计可以帮你_ _把账目整理好_。| _你现在有什么_ _特别紧急的事_ _需要处理吗_？"
   },
   {
@@ -43326,7 +43196,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈyour ˈaccounts ˈare ˈall ˈin ˈorder/",
-    "example": "_It's actually not hard to prevent that_. | _A professional accountant_ _can ensure_ _your accounts are all in order_. | _Do you have any urgent matters_ _that need to be handled ight now_?",
+    "example": "_It's actually not hard to prevent that_. | _A professional accountant_ _can ensure_ _your accounts are all in order_. | _Do you have any urgent matters_ _that need to be handled right now_?",
     "example_chinese": "_其实_，_这并不难避免_。| _专业会计可以帮你_ _把账目整理好_。| _你现在有什么_ _特别紧急的事_ _需要处理吗_？"
   },
   {
@@ -43336,17 +43206,17 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈdo ˈyou ˈhave ˈany ˈurgent ˈmatters/",
-    "example": "_It's actually not hard to prevent that_. | _A professional accountant_ _can ensure_ _your accounts are all in order_. | _Do you have any urgent matters_ _that need to be handled ight now_?",
+    "example": "_It's actually not hard to prevent that_. | _A professional accountant_ _can ensure_ _your accounts are all in order_. | _Do you have any urgent matters_ _that need to be handled right now_?",
     "example_chinese": "_其实_，_这并不难避免_。| _专业会计可以帮你_ _把账目整理好_。| _你现在有什么_ _特别紧急的事_ _需要处理吗_？"
   },
   {
-    "term": "that need to be handled ight now",
+    "term": "that need to be handled right now",
     "conversation_id": "70184",
     "sentence_id": 7,
     "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈthat ˈneed ˈto ˈbe ˈhandled ˈight ˈnow/",
-    "example": "_It's actually not hard to prevent that_. | _A professional accountant_ _can ensure_ _your accounts are all in order_. | _Do you have any urgent matters_ _that need to be handled ight now_?",
+    "phonetic": "UK /ˈthat ˈneed ˈto ˈbe ˈhandled ˈright ˈnow/",
+    "example": "_It's actually not hard to prevent that_. | _A professional accountant_ _can ensure_ _your accounts are all in order_. | _Do you have any urgent matters_ _that need to be handled right now_?",
     "example_chinese": "_其实_，_这并不难避免_。| _专业会计可以帮你_ _把账目整理好_。| _你现在有什么_ _特别紧急的事_ _需要处理吗_？"
   },
   {

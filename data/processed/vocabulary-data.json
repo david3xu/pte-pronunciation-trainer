@@ -18880,23 +18880,13 @@
     "example_chinese": "谢谢你的帮助，崔西。| 我真的希望这个问题能尽快解决。"
   },
   {
-    "term": "Good morning",
-    "conversation_id": "70219",
-    "sentence_id": 1,
-    "difficulty": "normal",
-    "category": "business",
-    "phonetic": "UK /ˈgood ˈmorning/",
-    "example": "_Good morning_. | _Thanks for reaching our bank_. | _This is Ryan from the Customer Service Team_. | _What brings your call today_?",
-    "example_chinese": "早上好，感谢致电我们银行。| 我是客服部的瑞安。| 您今天打电话过来是想咨询什么呢？"
-  },
-  {
-    "term": "Thanks for reaching our bank",
+    "term": "Good morning Thanks for reaching our bank",
     "conversation_id": "70219",
     "sentence_id": 1,
     "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈthanks ˈfor ˈreaching ˈour ˈbank/",
-    "example": "_Good morning_. | _Thanks for reaching our bank_. | _This is Ryan from the Customer Service Team_. | _What brings your call today_?",
+    "phonetic": "UK /ˈgood ˈmorning ˈthanks ˈfor ˈreaching ˈour ˈbank/",
+    "example": "_Good morning. Thanks for reaching our bank_. | _This is Ryan from the Customer Service Team_. | _What brings your call today_?",
     "example_chinese": "早上好，感谢致电我们银行。| 我是客服部的瑞安。| 您今天打电话过来是想咨询什么呢？"
   },
   {
@@ -18906,7 +18896,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈthis ˈis ˈryan ˈfrom ˈthe ˈcustomer ˈservice ˈteam/",
-    "example": "_Good morning_. | _Thanks for reaching our bank_. | _This is Ryan from the Customer Service Team_. | _What brings your call today_?",
+    "example": "_Good morning. Thanks for reaching our bank_. | _This is Ryan from the Customer Service Team_. | _What brings your call today_?",
     "example_chinese": "早上好，感谢致电我们银行。| 我是客服部的瑞安。| 您今天打电话过来是想咨询什么呢？"
   },
   {
@@ -18916,7 +18906,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈwhat ˈbrings ˈyour ˈcall ˈtoday/",
-    "example": "_Good morning_. | _Thanks for reaching our bank_. | _This is Ryan from the Customer Service Team_. | _What brings your call today_?",
+    "example": "_Good morning. Thanks for reaching our bank_. | _This is Ryan from the Customer Service Team_. | _What brings your call today_?",
     "example_chinese": "早上好，感谢致电我们银行。| 我是客服部的瑞安。| 您今天打电话过来是想咨询什么呢？"
   },
   {
@@ -43686,17 +43676,17 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈoh ˈno ˈi'm ˈonly ˈmoving/",
-    "example": "_Oh no, I'm only moving_ _to the neighbouring district_ – | _I thought I mentioned it_. | _My landlord sold the house_, _so I have to move_.",
+    "example": "_Oh no, I'm only moving_ _to the neighbouring distsomerict_ – | _I thought I mentioned it_. | _My landlord sold the house_, _so I have to move_.",
     "example_chinese": "_不会的_，_我就搬到隔壁区_，| _我以为我跟你说过了_。| _我的房东_ _把房子卖了_，_我不得不搬家_。"
   },
   {
-    "term": "to the neighbouring district",
+    "term": "to the neighbouring distsomerict",
     "conversation_id": "70183",
     "sentence_id": 4,
     "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈto ˈthe ˈneighbouring ˈdistrict/",
-    "example": "_Oh no, I'm only moving_ _to the neighbouring district_ – | _I thought I mentioned it_. | _My landlord sold the house_, _so I have to move_.",
+    "phonetic": "UK /ˈto ˈthe ˈneighbouring ˈdistsomerict/",
+    "example": "_Oh no, I'm only moving_ _to the neighbouring distsomerict_ – | _I thought I mentioned it_. | _My landlord sold the house_, _so I have to move_.",
     "example_chinese": "_不会的_，_我就搬到隔壁区_，| _我以为我跟你说过了_。| _我的房东_ _把房子卖了_，_我不得不搬家_。"
   },
   {
@@ -43706,7 +43696,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈi ˈthought ˈi ˈmentioned ˈit/",
-    "example": "_Oh no, I'm only moving_ _to the neighbouring district_ – | _I thought I mentioned it_. | _My landlord sold the house_, _so I have to move_.",
+    "example": "_Oh no, I'm only moving_ _to the neighbouring distsomerict_ – | _I thought I mentioned it_. | _My landlord sold the house_, _so I have to move_.",
     "example_chinese": "_不会的_，_我就搬到隔壁区_，| _我以为我跟你说过了_。| _我的房东_ _把房子卖了_，_我不得不搬家_。"
   },
   {
@@ -43716,7 +43706,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈmy ˈlandlord ˈsold ˈthe ˈhouse/",
-    "example": "_Oh no, I'm only moving_ _to the neighbouring district_ – | _I thought I mentioned it_. | _My landlord sold the house_, _so I have to move_.",
+    "example": "_Oh no, I'm only moving_ _to the neighbouring distsomerict_ – | _I thought I mentioned it_. | _My landlord sold the house_, _so I have to move_.",
     "example_chinese": "_不会的_，_我就搬到隔壁区_，| _我以为我跟你说过了_。| _我的房东_ _把房子卖了_，_我不得不搬家_。"
   },
   {
@@ -43726,7 +43716,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈso ˈi ˈhave ˈto ˈmove/",
-    "example": "_Oh no, I'm only moving_ _to the neighbouring district_ – | _I thought I mentioned it_. | _My landlord sold the house_, _so I have to move_.",
+    "example": "_Oh no, I'm only moving_ _to the neighbouring distsomerict_ – | _I thought I mentioned it_. | _My landlord sold the house_, _so I have to move_.",
     "example_chinese": "_不会的_，_我就搬到隔壁区_，| _我以为我跟你说过了_。| _我的房东_ _把房子卖了_，_我不得不搬家_。"
   },
   {
@@ -47136,7 +47126,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈi ˈthink ˈit's ˈgreat/",
-    "example": "_I think it's great_ _to work with a photographer long-term_. | _I believe working with someoneover time_ is really beneficial_. | _Photos are so important_ — _without them, it's hard to remember_ _many of life's important moments_.",
+    "example": "_I think it's great_ _to work with a photographer long-term_. | _I believe working with someone over time_ is really beneficial_. | _Photos are so important_ — _without them, it's hard to remember_ _many of life's important moments_.",
     "example_chinese": "我觉得和一个摄影师长期合作是很好的。| 我认为和别人一起工作一段时间也是很好的。| 照片很重要，没有照片的话，很难记住很多人生重要时刻。"
   },
   {
@@ -47146,17 +47136,17 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈto ˈwork ˈwith ˈa ˈphotographer ˈlong-term/",
-    "example": "_I think it's great_ _to work with a photographer long-term_. | _I believe working with someoneover time_ is really beneficial_. | _Photos are so important_ — _without them, it's hard to remember_ _many of life's important moments_.",
+    "example": "_I think it's great_ _to work with a photographer long-term_. | _I believe working with someone over time_ is really beneficial_. | _Photos are so important_ — _without them, it's hard to remember_ _many of life's important moments_.",
     "example_chinese": "我觉得和一个摄影师长期合作是很好的。| 我认为和别人一起工作一段时间也是很好的。| 照片很重要，没有照片的话，很难记住很多人生重要时刻。"
   },
   {
-    "term": "I believe working with someoneover time",
+    "term": "I believe working with someone over time",
     "conversation_id": "70177",
     "sentence_id": 4,
     "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈi ˈbelieve ˈworking ˈwith ˈsomeoneover ˈtime/",
-    "example": "_I think it's great_ _to work with a photographer long-term_. | _I believe working with someoneover time_ is really beneficial_. | _Photos are so important_ — _without them, it's hard to remember_ _many of life's important moments_.",
+    "phonetic": "UK /ˈi ˈbelieve ˈworking ˈwith ˈsomeone ˈover ˈtime/",
+    "example": "_I think it's great_ _to work with a photographer long-term_. | _I believe working with someone over time_ is really beneficial_. | _Photos are so important_ — _without them, it's hard to remember_ _many of life's important moments_.",
     "example_chinese": "我觉得和一个摄影师长期合作是很好的。| 我认为和别人一起工作一段时间也是很好的。| 照片很重要，没有照片的话，很难记住很多人生重要时刻。"
   },
   {
@@ -47166,7 +47156,7 @@
     "difficulty": "easy",
     "category": "business",
     "phonetic": "UK /ˈ—/",
-    "example": "_I think it's great_ _to work with a photographer long-term_. | _I believe working with someoneover time_ is really beneficial_. | _Photos are so important_ — _without them, it's hard to remember_ _many of life's important moments_.",
+    "example": "_I think it's great_ _to work with a photographer long-term_. | _I believe working with someone over time_ is really beneficial_. | _Photos are so important_ — _without them, it's hard to remember_ _many of life's important moments_.",
     "example_chinese": "我觉得和一个摄影师长期合作是很好的。| 我认为和别人一起工作一段时间也是很好的。| 照片很重要，没有照片的话，很难记住很多人生重要时刻。"
   },
   {

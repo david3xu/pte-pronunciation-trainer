@@ -2,20 +2,20 @@
 
 A comprehensive web-based pronunciation training application for NAATI CCL (Credentialed Community Language) exam preparation, featuring conversation-based vocabulary with real-world context.
 
-- **💬 Conversation-Based (6,967 terms)** - Comprehensive vocabulary from 91 real CCL exam dialogues with contextual examples and dialogue structure
+- **💬 Conversation-Based (5,695 terms)** - Comprehensive vocabulary from 91 real CCL exam dialogues with contextual examples and dialogue structure
 - **🔥 Unfamiliar Words (944 terms)** - Curated challenging vocabulary for advanced learners
 
 ## Features ✅ Fully Implemented
 
 ### 🎯 Complete Dialogue-Based Vocabulary System
-- **💬 Comprehensive CCL Terms (6,967)** - Extensive vocabulary extracted from 91 complete NAATI CCL conversations
+- **💬 Comprehensive CCL Terms (5,695)** - Extensive vocabulary extracted from 91 complete NAATI CCL conversations
 - **� Unfamiliar Words Focus (944 terms)** - Curated challenging vocabulary from actual CCL conversations for targeted practice
 - **�📝 Full Contextual Learning** - Every term includes original sentence context, dialogue flow, and conversation structure
 - **🏷️ Smart Categorization** - Organized across 9 domains with conversation-aware classification
 - **📊 Enhanced Metadata** - Difficulty levels, phonetic transcriptions, and dialogue relationships
 
 ### 🎓 Three Learning Modes
-- **📚 Vocabulary Focus** - Complete vocabulary from all 91 dialogues (6,967 terms)
+- **📚 Vocabulary Focus** - Complete vocabulary from all 91 dialogues (5,695 terms)
 - **💬 Dialogue Practice** - Full conversation sentences with contextual flow
 - **🔥 Unfamiliar Words** - Curated challenging terms for advanced study (944 terms)
 
@@ -53,7 +53,7 @@ cd ccl-pronunciation-trainer
 # Install dependencies
 npm install
 
-# Generate complete dialogue dataset (6,967 comprehensive terms)
+# Generate complete dialogue dataset (5,695 comprehensive terms)
 npm run process-data
 
 # Start development server (Python HTTP server)
@@ -144,7 +144,7 @@ The processing scripts will automatically:
 **For Vercel/Production deployments:**
 - **Commit both source data and processed files** for immediate deployment
 - **Vercel automatically runs** `npm run vercel-build` during deployment
-- **Frontend loads complete dataset directly** from `/data/processed/complete-dataset.json` (91 dialogues → 6,967 terms)
+- **Frontend loads complete dataset directly** from `/data/processed/complete-dataset.json` (91 dialogues → 5,695 terms)
 
 **For manual deployments:**
 ```bash
@@ -157,7 +157,7 @@ npm run vercel-build    # Runs extract-vocab + build for production
 ```bash
 npm start                     # Process complete dataset + Dev server (full setup)
 npm run dev                   # Start development server
-npm run process-data          # Generate complete dataset (6,967 terms - primary)
+npm run process-data          # Generate complete dataset (5,695 terms - primary)
 npm run extract-vocab         # Generate vocabulary files (for backward compatibility)
 npm run validate              # Validate all data integrity
 
@@ -208,7 +208,7 @@ npm run clean                # Clean generated files
 ### Learning Modes
 
 **📚 Vocabulary Focus**
-- Complete vocabulary from all 91 dialogues (6,967 terms)
+- Complete vocabulary from all 91 dialogues (5,695 terms)
 - Individual word and phrase pronunciation practice
 - Organized by dialogue groups (Groups 1-10, latest to earliest)
 - Full difficulty filtering (Easy/Normal/Hard)
@@ -274,7 +274,7 @@ ccl-pronunciation-trainer/
 │   │   ├── ui/            # Interface & settings
 │   │   └── utils/         # EventBus & storage utilities
 │   └── css/               # Modular stylesheets
-├── data/                  # Complete dialogue dataset (6,967 terms)
+├── data/                  # Complete dialogue dataset (5,695 terms)
 │   ├── conversation/      # Raw conversation data
 │   ├── generated/         # Generated vocabulary files
 │   └── processed/         # Structured dialogue dataset

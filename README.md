@@ -81,7 +81,7 @@ When you have new CCL conversation data to add:
 # Add dialogue numbers and challenging terms (line-separated)
 
 # 3. Regenerate complete dataset and vocabulary
-npm run process-data                   # Generate structured dataset (primary)
+npm run process-data                   # Generate structured dataset (powers ALL modes: Vocabulary, Dialogue, Words)
 npm run extract-vocab                  # Generate vocabulary for backward compatibility
 node scripts/process-unfamiliar-words.js  # Generate unfamiliar words dataset
 

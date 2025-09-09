@@ -24,19 +24,19 @@ class UnfamiliarWordsProcessor {
 
     async process() {
         console.log('🔥 Processing Unfamiliar Words Dataset...');
-        
+
         // Load complete dataset for matching vocabulary details
         await this.loadCompleteDataset();
-        
+
         // Parse unfamiliar words file
         this.parseUnfamiliarWords();
-        
+
         // Match with complete dataset to get phonetics, examples, etc.
         this.matchWithCompleteDataset();
-        
+
         // Generate output
         this.generateOutput();
-        
+
         console.log(`✅ Unfamiliar words dataset created: ${this.matchedCount}/${this.processedCount} terms matched`);
     }
 
@@ -55,21 +55,21 @@ class UnfamiliarWordsProcessor {
         try {
             const content = fs.readFileSync(unfamiliarWordsPath, 'utf8');
             const lines = content.split('\n');
-            
+
             let currentDialogue = null;
-            
+
             for (const line of lines) {
                 const trimmed = line.trim();
-                
+
                 // Check for dialogue number (e.g., "70248")
                 if (/^\d{5}$/.test(trimmed)) {
                     currentDialogue = trimmed;
                     continue;
                 }
-                
+
                 // Skip empty lines
                 if (!trimmed || !currentDialogue) continue;
-                
+
                 // Process vocabulary term
                 this.unfamiliarWords.push({
                     term: trimmed,
@@ -79,7 +79,7 @@ class UnfamiliarWordsProcessor {
                 });
                 this.processedCount++;
             }
-            
+
             console.log(`📝 Parsed ${this.processedCount} unfamiliar words from ${new Set(this.unfamiliarWords.map(w => w.dialogueId)).size} dialogues`);
         } catch (error) {
             console.error('❌ Failed to parse unfamiliar words:', error.message);
@@ -89,10 +89,10 @@ class UnfamiliarWordsProcessor {
 
     matchWithCompleteDataset() {
         console.log('🔍 Matching unfamiliar words with complete dataset...');
-        
+
         // Create a lookup map for fast searching
         const vocabularyMap = new Map();
-        
+
         for (const dialogue of this.completeDataset.dialogues) {
             for (const sentence of dialogue.sentences) {
                 for (const vocab of sentence.vocabulary) {
@@ -109,69 +109,154 @@ class UnfamiliarWordsProcessor {
                 }
             }
         }
-        
+
         // Match unfamiliar words
         const matched = [];
         const unmatched = [];
-        
+
         for (const unfamiliarWord of this.unfamiliarWords) {
             const key = unfamiliarWord.term.toLowerCase().trim();
-            const match = vocabularyMap.get(key);
-            
-            if (match && match.dialogueId === unfamiliarWord.dialogueId) {
-                // Perfect match: same term in same dialogue
+            let match = null;
+            let matchType = '';
+
+            // Strategy 1: Exact match in same dialogue
+            const exactMatch = vocabularyMap.get(key);
+            if (exactMatch && exactMatch.dialogueId === unfamiliarWord.dialogueId) {
+                match = exactMatch;
+                matchType = 'exact';
+            }
+
+            // Strategy 2: Fuzzy matching within same dialogue
+            if (!match) {
+                const dialogueMatches = Array.from(vocabularyMap.values())
+                    .filter(v => v.dialogueId === unfamiliarWord.dialogueId);
+
+                // Try various fuzzy matching strategies
+                const fuzzyMatch = dialogueMatches.find(v => {
+                    const vocabTerm = v.term.toLowerCase();
+                    const searchTerm = key;
+
+                    // Strategy 2a: Contains match (either direction)
+                    if (vocabTerm.includes(searchTerm) || searchTerm.includes(vocabTerm)) {
+                        return true;
+                    }
+
+                    // Strategy 2b: Word boundary match (for multi-word terms)
+                    const vocabWords = vocabTerm.split(/\s+/);
+                    const searchWords = searchTerm.split(/\s+/);
+
+                    // Check if all search words exist in vocab term
+                    if (searchWords.every(word => vocabWords.some(vWord => vWord.includes(word) || word.includes(vWord)))) {
+                        return true;
+                    }
+
+                    // Strategy 2c: Levenshtein distance for close matches
+                    if (this.calculateSimilarity(vocabTerm, searchTerm) > 0.8) {
+                        return true;
+                    }
+
+                    return false;
+                });
+
+                if (fuzzyMatch) {
+                    match = fuzzyMatch;
+                    matchType = 'fuzzy';
+                }
+            }
+
+            // Strategy 3: Cross-dialogue match (if no match in same dialogue)
+            if (!match) {
+                const crossDialogueMatch = Array.from(vocabularyMap.values())
+                    .find(v => {
+                        const vocabTerm = v.term.toLowerCase();
+                        const searchTerm = key;
+
+                        // Exact cross-dialogue match
+                        if (vocabTerm === searchTerm) {
+                            return true;
+                        }
+
+                        // High similarity cross-dialogue match
+                        if (this.calculateSimilarity(vocabTerm, searchTerm) > 0.9) {
+                            return true;
+                        }
+
+                        return false;
+                    });
+
+                if (crossDialogueMatch) {
+                    match = crossDialogueMatch;
+                    matchType = 'cross-dialogue';
+                }
+            }
+
+            if (match) {
                 matched.push({
-                    term: match.term,
-                    dialogueId: match.dialogueId,
+                    term: unfamiliarWord.term, // Use original term from unfamiliar words
+                    dialogueId: unfamiliarWord.dialogueId, // Keep original dialogue ID
                     dialogueTitle: match.dialogueTitle,
                     category: match.category,
-                    difficulty: 'hard', // Force hard difficulty for unfamiliar words
-                    phonetic: match.phonetic || '',
+                    difficulty: 'hard',
+                    phonetic: match.phonetic || this.generatePhonetic(unfamiliarWord.term),
                     example: match.example,
                     exampleChinese: match.exampleChinese,
                     sentenceId: match.sentenceId,
                     source: 'unfamiliar-words',
-                    context: match.context || match.example
+                    context: match.example,
+                    matchType: matchType,
+                    note: matchType !== 'exact' ? `Matched with: ${match.term} (${match.dialogueId})` : undefined
                 });
                 this.matchedCount++;
             } else {
-                // Try fuzzy matching within the same dialogue
-                const dialogueMatches = Array.from(vocabularyMap.values())
-                    .filter(v => v.dialogueId === unfamiliarWord.dialogueId);
-                
-                const fuzzyMatch = dialogueMatches.find(v => 
-                    v.term.toLowerCase().includes(key) || 
-                    key.includes(v.term.toLowerCase())
-                );
-                
-                if (fuzzyMatch) {
-                    matched.push({
-                        term: unfamiliarWord.term, // Use original term from unfamiliar words
-                        dialogueId: fuzzyMatch.dialogueId,
-                        dialogueTitle: fuzzyMatch.dialogueTitle,
-                        category: fuzzyMatch.category,
-                        difficulty: 'hard',
-                        phonetic: this.generatePhonetic(unfamiliarWord.term),
-                        example: fuzzyMatch.example,
-                        exampleChinese: fuzzyMatch.exampleChinese,
-                        sentenceId: fuzzyMatch.sentenceId,
-                        source: 'unfamiliar-words',
-                        context: fuzzyMatch.example,
-                        note: `Fuzzy matched with: ${fuzzyMatch.term}`
-                    });
-                    this.matchedCount++;
-                } else {
-                    unmatched.push(unfamiliarWord);
-                }
+                unmatched.push(unfamiliarWord);
             }
         }
-        
+
         this.unfamiliarWords = matched;
-        
+
         if (unmatched.length > 0) {
             console.log(`⚠️  ${unmatched.length} terms could not be matched:`);
             unmatched.slice(0, 10).forEach(w => console.log(`  - ${w.term} (${w.dialogueId})`));
         }
+    }
+
+    calculateSimilarity(str1, str2) {
+        // Simple Levenshtein distance-based similarity
+        const longer = str1.length > str2.length ? str1 : str2;
+        const shorter = str1.length > str2.length ? str2 : str1;
+
+        if (longer.length === 0) return 1.0;
+
+        const distance = this.levenshteinDistance(longer, shorter);
+        return (longer.length - distance) / longer.length;
+    }
+
+    levenshteinDistance(str1, str2) {
+        const matrix = [];
+
+        for (let i = 0; i <= str2.length; i++) {
+            matrix[i] = [i];
+        }
+
+        for (let j = 0; j <= str1.length; j++) {
+            matrix[0][j] = j;
+        }
+
+        for (let i = 1; i <= str2.length; i++) {
+            for (let j = 1; j <= str1.length; j++) {
+                if (str2.charAt(i - 1) === str1.charAt(j - 1)) {
+                    matrix[i][j] = matrix[i - 1][j - 1];
+                } else {
+                    matrix[i][j] = Math.min(
+                        matrix[i - 1][j - 1] + 1,
+                        matrix[i][j - 1] + 1,
+                        matrix[i - 1][j] + 1
+                    );
+                }
+            }
+        }
+
+        return matrix[str2.length][str1.length];
     }
 
     generatePhonetic(term) {
@@ -203,19 +288,19 @@ class UnfamiliarWordsProcessor {
 
         // Write to file
         fs.writeFileSync(outputPath, JSON.stringify(output, null, 2), 'utf8');
-        
+
         // Generate summary
         const categoryCounts = {};
         for (const word of this.unfamiliarWords) {
             categoryCounts[word.category] = (categoryCounts[word.category] || 0) + 1;
         }
-        
+
         console.log('\n📊 Unfamiliar Words Dataset Summary:');
         console.log(`Total Terms: ${this.unfamiliarWords.length}`);
         console.log(`Dialogues: ${[...new Set(this.unfamiliarWords.map(w => w.dialogueId))].length}`);
         console.log('Categories:');
         Object.entries(categoryCounts)
-            .sort(([,a], [,b]) => b - a)
+            .sort(([, a], [, b]) => b - a)
             .forEach(([category, count]) => {
                 console.log(`  ${category}: ${count} terms`);
             });

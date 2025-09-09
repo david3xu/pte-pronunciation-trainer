@@ -1,9 +1,9 @@
 # CCL Dialogue Data Processing Report
 
-**Generated:** 2025-09-08T13:02:01.114Z
+**Generated:** 2025-09-09T02:17:28.979Z
 **Source File:** merged-conversations.md
 **Total Dialogues:** 91
-**Total Vocabulary Terms:** 5708
+**Total Vocabulary Terms:** 5695
 **Processing Errors:** 0
 **Processing Warnings:** 26
 
@@ -18,9 +18,9 @@
 
 ## Difficulty Distribution
 
-- **🔴 hard**: 4690 terms
-- **🟡 normal**: 986 terms
-- **🟢 easy**: 32 terms
+- **🔴 hard**: 4691 terms
+- **🟡 normal**: 978 terms
+- **🟢 easy**: 26 terms
 
 ## Dialogue List
 
@@ -131,25 +131,25 @@
 - **🏥 70196**: Pharmacist Advice for Flu-Like Symptoms (medical)
   - Sentences: 14, Vocabulary: 72
 - **💼 70195**: Office Meeting on Remote Work Challenges (business)
-  - Sentences: 14, Vocabulary: 72
+  - Sentences: 14, Vocabulary: 69
 - **👥 70194**: Phone Inquiry about Electric Bike Rules (social)
-  - Sentences: 14, Vocabulary: 80
+  - Sentences: 14, Vocabulary: 79
 - **💼 70193**: Talking Through a Retirement Plan (business)
-  - Sentences: 14, Vocabulary: 85
+  - Sentences: 14, Vocabulary: 80
 - **👥 70192**: Discussing a Film Festival with the City Council (social)
   - Sentences: 15, Vocabulary: 70
 - **💼 70191**: Navigating Customer Service Challenges (business)
-  - Sentences: 14, Vocabulary: 75
+  - Sentences: 14, Vocabulary: 74
 - **👥 70190**: From Crib to Platform Bed (social)
-  - Sentences: 14, Vocabulary: 77
+  - Sentences: 14, Vocabulary: 76
 - **👥 70189**: Helping Hands for a Neighbourhood Park (social)
   - Sentences: 14, Vocabulary: 70
 - **🎓 70188**: A Low-score University Assignment (education)
   - Sentences: 14, Vocabulary: 61
 - **👥 70187**: Social Worker Directories (social)
-  - Sentences: 14, Vocabulary: 64
+  - Sentences: 14, Vocabulary: 63
 - **🎓 70186**: Discussing the Upcoming Museum Visit (education)
-  - Sentences: 14, Vocabulary: 69
+  - Sentences: 14, Vocabulary: 68
 - **💼 70185**: Trauma Insurance 101 (business)
   - Sentences: 14, Vocabulary: 64
 - **💼 70184**: Tax Deadlines and Accounting Solutions (business)

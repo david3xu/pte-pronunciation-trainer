@@ -1,8 +1,8 @@
 {
   "summary": {
     "totalDialogues": 91,
-    "totalVocabularyTerms": 5708,
-    "processedAt": "2025-09-08T13:02:01.114Z",
+    "totalVocabularyTerms": 5695,
+    "processedAt": "2025-09-09T02:17:28.979Z",
     "sourceFile": "merged-conversations.md",
     "processingErrors": 0,
     "processingWarnings": 26
@@ -16,9 +16,9 @@
     "immigration": 1
   },
   "difficultyDistribution": {
-    "hard": 4690,
-    "normal": 986,
-    "easy": 32
+    "hard": 4691,
+    "normal": 978,
+    "easy": 26
   },
   "dialogueList": [
     {
@@ -396,21 +396,21 @@
       "id": "70195",
       "title": "Office Meeting on Remote Work Challenges",
       "category": "business",
-      "vocabularyCount": 72,
+      "vocabularyCount": 69,
       "sentenceCount": 14
     },
     {
       "id": "70194",
       "title": "Phone Inquiry about Electric Bike Rules",
       "category": "social",
-      "vocabularyCount": 80,
+      "vocabularyCount": 79,
       "sentenceCount": 14
     },
     {
       "id": "70193",
       "title": "Talking Through a Retirement Plan",
       "category": "business",
-      "vocabularyCount": 85,
+      "vocabularyCount": 80,
       "sentenceCount": 14
     },
     {
@@ -424,14 +424,14 @@
       "id": "70191",
       "title": "Navigating Customer Service Challenges",
       "category": "business",
-      "vocabularyCount": 75,
+      "vocabularyCount": 74,
       "sentenceCount": 14
     },
     {
       "id": "70190",
       "title": "From Crib to Platform Bed",
       "category": "social",
-      "vocabularyCount": 77,
+      "vocabularyCount": 76,
       "sentenceCount": 14
     },
     {
@@ -452,14 +452,14 @@
       "id": "70187",
       "title": "Social Worker Directories",
       "category": "social",
-      "vocabularyCount": 64,
+      "vocabularyCount": 63,
       "sentenceCount": 14
     },
     {
       "id": "70186",
       "title": "Discussing the Upcoming Museum Visit",
       "category": "education",
-      "vocabularyCount": 69,
+      "vocabularyCount": 68,
       "sentenceCount": 14
     },
     {

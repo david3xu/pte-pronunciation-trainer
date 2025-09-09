@@ -7,6 +7,7 @@
     "dev": "python3 -m http.server 3000",
     "extract-vocab": "node scripts/conversation-vocabulary-extractor.js",
     "process-data": "node scripts/process-dialogue-data.js",
+    "generate-words-dataset": "node scripts/generate-words-dataset.js",
     "build": "node scripts/build.js",
     "test": "jest",
     "lint": "eslint src/js/**/*.js && stylelint src/css/**/*.css",

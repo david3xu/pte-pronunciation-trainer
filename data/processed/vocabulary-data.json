@@ -18880,13 +18880,23 @@
     "example_chinese": "谢谢你的帮助，崔西。| 我真的希望这个问题能尽快解决。"
   },
   {
-    "term": "Good morning Thanks for reaching our bank",
+    "term": "Good morning",
+    "conversation_id": "70219",
+    "sentence_id": 1,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈgood ˈmorning/",
+    "example": "_Good morning_. | _Thanks for reaching our bank_. | _This is Ryan from the Customer Service Team_. | _What brings your call today_?",
+    "example_chinese": "早上好，感谢致电我们银行。| 我是客服部的瑞安。| 您今天打电话过来是想咨询什么呢？"
+  },
+  {
+    "term": "Thanks for reaching our bank",
     "conversation_id": "70219",
     "sentence_id": 1,
     "difficulty": "hard",
     "category": "business",
-    "phonetic": "UK /ˈgood ˈmorning ˈthanks ˈfor ˈreaching ˈour ˈbank/",
-    "example": "_Good morning. Thanks for reaching our bank_. | _This is Ryan from the Customer Service Team_. | _What brings your call today_?",
+    "phonetic": "UK /ˈthanks ˈfor ˈreaching ˈour ˈbank/",
+    "example": "_Good morning_. | _Thanks for reaching our bank_. | _This is Ryan from the Customer Service Team_. | _What brings your call today_?",
     "example_chinese": "早上好，感谢致电我们银行。| 我是客服部的瑞安。| 您今天打电话过来是想咨询什么呢？"
   },
   {
@@ -18896,7 +18906,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈthis ˈis ˈryan ˈfrom ˈthe ˈcustomer ˈservice ˈteam/",
-    "example": "_Good morning. Thanks for reaching our bank_. | _This is Ryan from the Customer Service Team_. | _What brings your call today_?",
+    "example": "_Good morning_. | _Thanks for reaching our bank_. | _This is Ryan from the Customer Service Team_. | _What brings your call today_?",
     "example_chinese": "早上好，感谢致电我们银行。| 我是客服部的瑞安。| 您今天打电话过来是想咨询什么呢？"
   },
   {
@@ -18906,7 +18916,7 @@
     "difficulty": "hard",
     "category": "business",
     "phonetic": "UK /ˈwhat ˈbrings ˈyour ˈcall ˈtoday/",
-    "example": "_Good morning. Thanks for reaching our bank_. | _This is Ryan from the Customer Service Team_. | _What brings your call today_?",
+    "example": "_Good morning_. | _Thanks for reaching our bank_. | _This is Ryan from the Customer Service Team_. | _What brings your call today_?",
     "example_chinese": "早上好，感谢致电我们银行。| 我是客服部的瑞安。| 您今天打电话过来是想咨询什么呢？"
   },
   {

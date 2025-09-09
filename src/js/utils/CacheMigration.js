@@ -36,15 +36,9 @@ class CacheMigration {
         const currentCategory = window.storage.getItem('category');
         
         if (currentCategory) {
-            if (this.categoryMigrations[currentCategory]) {
-                const newCategory = this.categoryMigrations[currentCategory];
-                window.storage.setItem('category', newCategory);
-                console.log(`Migrated category from '${currentCategory}' to '${newCategory}'`);
-            } else if (currentCategory.startsWith('group-') && !currentCategory.includes('s')) {
-                // Handle any other old group-X pattern by defaulting to all-categories
-                window.storage.setItem('category', 'all-categories');
-                console.log(`Unknown old category '${currentCategory}' reset to 'all-categories'`);
-            }
+            // Always default to all-categories for better user experience
+            window.storage.setItem('category', 'all-categories');
+            console.log(`Migrated category from '${currentCategory}' to 'all-categories' (default)`);
         }
     }
 

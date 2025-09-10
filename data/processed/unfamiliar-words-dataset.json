@@ -3,7 +3,7 @@
     "name": "Unfamiliar Words Dataset",
     "description": "Curated challenging vocabulary from CCL conversations",
     "source": "unfamiliar-words.md",
-    "generatedAt": "2025-09-09T04:53:11.226Z",
+    "generatedAt": "2025-09-10T09:26:22.237Z",
     "totalTerms": 1506,
     "dialogues": 60,
     "categories": [
@@ -11,6 +11,7 @@
       "business",
       "medical",
       "legal",
+      "immigration",
       "education"
     ],
     "version": "1.0.0"
@@ -450,14 +451,14 @@
       "dialogueTitle": "Suite Bathroom Design Clarification 2",
       "category": "business",
       "difficulty": "hard",
-      "phonetic": "UK /ˈfor ˈa ˈlonger ˈone/",
-      "example": "_I think so too_, _but the benchtop is too short_, | _so I'll change it back_ _for a longer one_.",
-      "exampleChinese": "我也这么认为，| 但台面太短了，| 那我换成更长的。",
-      "sentenceId": 9,
+      "phonetic": "UK /ˈit ˈstruck ˈme ˈas ˈa ˈbit ˈstrange ˈthis ˈmorning/",
+      "example": "_It struck me as a bit strange this morning_. | _That's why I inspect_ _the site every day_.",
+      "exampleChinese": "我今早上看着| 就突然觉得有点怪/不对劲，| 这也是为什么我每天| 都要到工地检查的原因。",
+      "sentenceId": 11,
       "source": "unfamiliar-words",
-      "context": "_I think so too_, _but the benchtop is too short_, | _so I'll change it back_ _for a longer one_.",
+      "context": "_It struck me as a bit strange this morning_. | _That's why I inspect_ _the site every day_.",
       "matchType": "fuzzy",
-      "note": "Matched with: for a longer one (70247)"
+      "note": "Matched with: It struck me as a bit strange this morning (70247)"
     },
     {
       "term": "delivered",
@@ -13727,17 +13728,17 @@
     {
       "term": "how may i assist you today",
       "dialogueId": "70216",
-      "dialogueTitle": "Flight Change Request After New Job Start",
-      "category": "social",
+      "dialogueTitle": "Working Holiday Visa Inquiry",
+      "category": "immigration",
       "difficulty": "hard",
-      "phonetic": "UK /ˈhow ˈmay ˈi ˈassist ˈyou ˈtoday/",
-      "example": "_Good afternoon, thank you for calling_ _our Airline Customer Service_. | _How may I assist you today_?",
-      "exampleChinese": "下午好，感谢您致电我们航司客服部，今天有什么可以帮您的吗？",
-      "sentenceId": 1,
+      "phonetic": "UK /ˈhow ˈcan ˈi ˈassist ˈyou ˈtoday/",
+      "example": "_A lot of people on short-term visas_ _feel the same way_. | _I'm glad you are enjoying Australia_. | _How can I assist you today_?",
+      "exampleChinese": "很多持短期签证的人| 都有同样的感受。| 我很高兴| 您喜欢澳大利亚。| 今天我能如何帮助您？",
+      "sentenceId": 5,
       "source": "unfamiliar-words",
-      "context": "_Good afternoon, thank you for calling_ _our Airline Customer Service_. | _How may I assist you today_?",
+      "context": "_A lot of people on short-term visas_ _feel the same way_. | _I'm glad you are enjoying Australia_. | _How can I assist you today_?",
       "matchType": "cross-dialogue",
-      "note": "Matched with: How may I assist you today (70198)"
+      "note": "Matched with: How can I assist you today (70165)"
     },
     {
       "term": "I didn't catch",
@@ -18017,17 +18018,17 @@
     {
       "term": "how can I assist you today",
       "dialogueId": "70208",
-      "dialogueTitle": "Flight Change Request After New Job Start",
-      "category": "social",
+      "dialogueTitle": "Working Holiday Visa Inquiry",
+      "category": "immigration",
       "difficulty": "hard",
-      "phonetic": "UK /ˈhow ˈmay ˈi ˈassist ˈyou ˈtoday/",
-      "example": "_Good afternoon, thank you for calling_ _our Airline Customer Service_. | _How may I assist you today_?",
-      "exampleChinese": "下午好，感谢您致电我们航司客服部，今天有什么可以帮您的吗？",
-      "sentenceId": 1,
+      "phonetic": "UK /ˈhow ˈcan ˈi ˈassist ˈyou ˈtoday/",
+      "example": "_A lot of people on short-term visas_ _feel the same way_. | _I'm glad you are enjoying Australia_. | _How can I assist you today_?",
+      "exampleChinese": "很多持短期签证的人| 都有同样的感受。| 我很高兴| 您喜欢澳大利亚。| 今天我能如何帮助您？",
+      "sentenceId": 5,
       "source": "unfamiliar-words",
-      "context": "_Good afternoon, thank you for calling_ _our Airline Customer Service_. | _How may I assist you today_?",
+      "context": "_A lot of people on short-term visas_ _feel the same way_. | _I'm glad you are enjoying Australia_. | _How can I assist you today_?",
       "matchType": "cross-dialogue",
-      "note": "Matched with: How may I assist you today (70198)"
+      "note": "Matched with: How can I assist you today (70165)"
     },
     {
       "term": "I had a car accident",

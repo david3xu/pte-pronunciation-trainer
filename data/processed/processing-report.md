@@ -1,16 +1,16 @@
 # CCL Dialogue Data Processing Report
 
-**Generated:** 2025-09-09T04:53:01.192Z
+**Generated:** 2025-09-10T09:26:11.807Z
 **Source File:** merged-conversations.md
-**Total Dialogues:** 91
-**Total Vocabulary Terms:** 5695
+**Total Dialogues:** 96
+**Total Vocabulary Terms:** 5977
 **Processing Errors:** 0
-**Processing Warnings:** 26
+**Processing Warnings:** 27
 
 ## Category Distribution
 
-- **👥 social**: 36 dialogues
-- **💼 business**: 37 dialogues
+- **💼 business**: 40 dialogues
+- **👥 social**: 38 dialogues
 - **🏥 medical**: 3 dialogues
 - **⚖️ legal**: 9 dialogues
 - **🎓 education**: 5 dialogues
@@ -18,12 +18,22 @@
 
 ## Difficulty Distribution
 
-- **🔴 hard**: 4691 terms
-- **🟡 normal**: 978 terms
+- **🔴 hard**: 4932 terms
+- **🟡 normal**: 1019 terms
 - **🟢 easy**: 26 terms
 
 ## Dialogue List
 
+- **💼 70253**: Inquiring About House Extension Approval (business)
+  - Sentences: 14, Vocabulary: 53
+- **💼 70252**: Suite Bathroom Design Clarification 3 (business)
+  - Sentences: 14, Vocabulary: 67
+- **👥 70251**: In-home support program for the elderly (social)
+  - Sentences: 14, Vocabulary: 53
+- **👥 70250**: A New Creamy Leather Lounge Chair 3 (social)
+  - Sentences: 14, Vocabulary: 57
+- **💼 70249**: Wire Transfer and Foreign Currency Account (business)
+  - Sentences: 14, Vocabulary: 52
 - **👥 70248**: New Council Employee Helps Community Centre 2 (social)
   - Sentences: 14, Vocabulary: 63
 - **💼 70247**: Suite Bathroom Design Clarification 2 (business)
@@ -209,5 +219,5 @@
 
 ## Processing Warnings
 
-⚠️  26 warnings occurred during processing.
+⚠️  27 warnings occurred during processing.
 These are non-critical issues that don't prevent data generation.

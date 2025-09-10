@@ -1,5 +1,2825 @@
 [
   {
+    "term": "Good morning Welcome to the council planning office",
+    "conversation_id": "70253",
+    "sentence_id": 1,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈgood ˈmorning ˈwelcome ˈto ˈthe ˈcouncil ˈplanning ˈoffice/",
+    "example": "_Good morning. Welcome to the council planning office_. | _How can I help you today_?",
+    "example_chinese": "早上好，欢迎来到市政规划办公室。我今天能帮您什么吗？"
+  },
+  {
+    "term": "How can I help you today",
+    "conversation_id": "70253",
+    "sentence_id": 1,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈhow ˈcan ˈi ˈhelp ˈyou ˈtoday/",
+    "example": "_Good morning. Welcome to the council planning office_. | _How can I help you today_?",
+    "example_chinese": "早上好，欢迎来到市政规划办公室。我今天能帮您什么吗？"
+  },
+  {
+    "term": "Hello I just moved here from overseas",
+    "conversation_id": "70253",
+    "sentence_id": 2,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈhello ˈi ˈjust ˈmoved ˈhere ˈfrom ˈoverseas/",
+    "example": "_Hello, I just moved here from overseas_. | _I want to renovate my house_, | _but I'm not sure if it needs approval_.",
+    "example_chinese": "你好，我刚从海外搬来这里。| 我想对我的房子进行改造，| 但是我不知道这需不需要批准。"
+  },
+  {
+    "term": "I want to renovate my house",
+    "conversation_id": "70253",
+    "sentence_id": 2,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi ˈwant ˈto ˈrenovate ˈmy ˈhouse/",
+    "example": "_Hello, I just moved here from overseas_. | _I want to renovate my house_, | _but I'm not sure if it needs approval_.",
+    "example_chinese": "你好，我刚从海外搬来这里。| 我想对我的房子进行改造，| 但是我不知道这需不需要批准。"
+  },
+  {
+    "term": "but I'm not sure if it needs approval",
+    "conversation_id": "70253",
+    "sentence_id": 2,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈbut ˈi'm ˈnot ˈsure ˈif ˈit ˈneeds ˈapproval/",
+    "example": "_Hello, I just moved here from overseas_. | _I want to renovate my house_, | _but I'm not sure if it needs approval_.",
+    "example_chinese": "你好，我刚从海外搬来这里。| 我想对我的房子进行改造，| 但是我不知道这需不需要批准。"
+  },
+  {
+    "term": "It depends on your project",
+    "conversation_id": "70253",
+    "sentence_id": 3,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈit ˈdepends ˈon ˈyour ˈproject/",
+    "example": "_It depends on your project_. | _You don't need council approval_ _if you are just updating your bathroom_. | _However, you do need approval_ _if it is a major building work_.",
+    "example_chinese": "这取决于您的项目。| 如果只是翻新浴室，不需要市政批准。| 但如果是重大建筑工程，就确实需要批准。"
+  },
+  {
+    "term": "You don't need council approval",
+    "conversation_id": "70253",
+    "sentence_id": 3,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈyou ˈdon't ˈneed ˈcouncil ˈapproval/",
+    "example": "_It depends on your project_. | _You don't need council approval_ _if you are just updating your bathroom_. | _However, you do need approval_ _if it is a major building work_.",
+    "example_chinese": "这取决于您的项目。| 如果只是翻新浴室，不需要市政批准。| 但如果是重大建筑工程，就确实需要批准。"
+  },
+  {
+    "term": "if you are just updating your bathroom",
+    "conversation_id": "70253",
+    "sentence_id": 3,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈif ˈyou ˈare ˈjust ˈupdating ˈyour ˈbathroom/",
+    "example": "_It depends on your project_. | _You don't need council approval_ _if you are just updating your bathroom_. | _However, you do need approval_ _if it is a major building work_.",
+    "example_chinese": "这取决于您的项目。| 如果只是翻新浴室，不需要市政批准。| 但如果是重大建筑工程，就确实需要批准。"
+  },
+  {
+    "term": "However you do need approval",
+    "conversation_id": "70253",
+    "sentence_id": 3,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈhowever ˈyou ˈdo ˈneed ˈapproval/",
+    "example": "_It depends on your project_. | _You don't need council approval_ _if you are just updating your bathroom_. | _However, you do need approval_ _if it is a major building work_.",
+    "example_chinese": "这取决于您的项目。| 如果只是翻新浴室，不需要市政批准。| 但如果是重大建筑工程，就确实需要批准。"
+  },
+  {
+    "term": "if it is a major building work",
+    "conversation_id": "70253",
+    "sentence_id": 3,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈif ˈit ˈis ˈa ˈmajor ˈbuilding ˈwork/",
+    "example": "_It depends on your project_. | _You don't need council approval_ _if you are just updating your bathroom_. | _However, you do need approval_ _if it is a major building work_.",
+    "example_chinese": "这取决于您的项目。| 如果只是翻新浴室，不需要市政批准。| 但如果是重大建筑工程，就确实需要批准。"
+  },
+  {
+    "term": "I want to extend my house and add a few rooms",
+    "conversation_id": "70253",
+    "sentence_id": 4,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi ˈwant ˈto ˈextend ˈmy ˈhouse ˈand ˈadd ˈa ˈfew ˈrooms/",
+    "example": "_I want to extend my house and add a few rooms_, | _so the space will be bigger_. | _It looks like these changes need approval_.",
+    "example_chinese": "我想要扩建自己的房子，| 增加几个房间，这样空间就会更大。| 这样看来，这些改动需要批准啊。"
+  },
+  {
+    "term": "so the space will be bigger",
+    "conversation_id": "70253",
+    "sentence_id": 4,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈso ˈthe ˈspace ˈwill ˈbe ˈbigger/",
+    "example": "_I want to extend my house and add a few rooms_, | _so the space will be bigger_. | _It looks like these changes need approval_.",
+    "example_chinese": "我想要扩建自己的房子，| 增加几个房间，这样空间就会更大。| 这样看来，这些改动需要批准啊。"
+  },
+  {
+    "term": "It looks like these changes need approval",
+    "conversation_id": "70253",
+    "sentence_id": 4,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈit ˈlooks ˈlike ˈthese ˈchanges ˈneed ˈapproval/",
+    "example": "_I want to extend my house and add a few rooms_, | _so the space will be bigger_. | _It looks like these changes need approval_.",
+    "example_chinese": "我想要扩建自己的房子，| 增加几个房间，这样空间就会更大。| 这样看来，这些改动需要批准啊。"
+  },
+  {
+    "term": "Yes definitely It is a big project",
+    "conversation_id": "70253",
+    "sentence_id": 5,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈyes ˈdefinitely ˈit ˈis ˈa ˈbig ˈproject/",
+    "example": "_Yes, definitely. It is a big project_. | _You need to submit a development application_ _to the council_. | _It should include the architectural drawings_ _and site plans_.",
+    "example_chinese": "是的，肯定需要。这是个大工程。| 您需要向市政提交开发申请，| 申请里应包括建筑图纸和场地平面图/规划图。"
+  },
+  {
+    "term": "You need to submit a development application",
+    "conversation_id": "70253",
+    "sentence_id": 5,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈyou ˈneed ˈto ˈsubmit ˈa ˈdevelopment ˈapplication/",
+    "example": "_Yes, definitely. It is a big project_. | _You need to submit a development application_ _to the council_. | _It should include the architectural drawings_ _and site plans_.",
+    "example_chinese": "是的，肯定需要。这是个大工程。| 您需要向市政提交开发申请，| 申请里应包括建筑图纸和场地平面图/规划图。"
+  },
+  {
+    "term": "to the council",
+    "conversation_id": "70253",
+    "sentence_id": 5,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈto ˈthe ˈcouncil/",
+    "example": "_Yes, definitely. It is a big project_. | _You need to submit a development application_ _to the council_. | _It should include the architectural drawings_ _and site plans_.",
+    "example_chinese": "是的，肯定需要。这是个大工程。| 您需要向市政提交开发申请，| 申请里应包括建筑图纸和场地平面图/规划图。"
+  },
+  {
+    "term": "It should include the architectural drawings",
+    "conversation_id": "70253",
+    "sentence_id": 5,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈit ˈshould ˈinclude ˈthe ˈarchitectural ˈdrawings/",
+    "example": "_Yes, definitely. It is a big project_. | _You need to submit a development application_ _to the council_. | _It should include the architectural drawings_ _and site plans_.",
+    "example_chinese": "是的，肯定需要。这是个大工程。| 您需要向市政提交开发申请，| 申请里应包括建筑图纸和场地平面图/规划图。"
+  },
+  {
+    "term": "and site plans",
+    "conversation_id": "70253",
+    "sentence_id": 5,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈand ˈsite ˈplans/",
+    "example": "_Yes, definitely. It is a big project_. | _You need to submit a development application_ _to the council_. | _It should include the architectural drawings_ _and site plans_.",
+    "example_chinese": "是的，肯定需要。这是个大工程。| 您需要向市政提交开发申请，| 申请里应包括建筑图纸和场地平面图/规划图。"
+  },
+  {
+    "term": "Okay I will do that",
+    "conversation_id": "70253",
+    "sentence_id": 6,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈokay ˈi ˈwill ˈdo ˈthat/",
+    "example": "_Okay, I will do that_. | _How long does the approval process usually take_? | _I want to start the extension as soon as possible_.",
+    "example_chinese": "好的，我会这么做的。| 批准程序一般需要多长时间？| 我希望能尽快开始扩建。"
+  },
+  {
+    "term": "How long does the approval process usually take",
+    "conversation_id": "70253",
+    "sentence_id": 6,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈhow ˈlong ˈdoes ˈthe ˈapproval ˈprocess ˈusually ˈtake/",
+    "example": "_Okay, I will do that_. | _How long does the approval process usually take_? | _I want to start the extension as soon as possible_.",
+    "example_chinese": "好的，我会这么做的。| 批准程序一般需要多长时间？| 我希望能尽快开始扩建。"
+  },
+  {
+    "term": "I want to start the extension as soon as possible",
+    "conversation_id": "70253",
+    "sentence_id": 6,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi ˈwant ˈto ˈstart ˈthe ˈextension ˈas ˈsoon ˈas ˈpossible/",
+    "example": "_Okay, I will do that_. | _How long does the approval process usually take_? | _I want to start the extension as soon as possible_.",
+    "example_chinese": "好的，我会这么做的。| 批准程序一般需要多长时间？| 我希望能尽快开始扩建。"
+  },
+  {
+    "term": "Council approval can take several months",
+    "conversation_id": "70253",
+    "sentence_id": 7,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈcouncil ˈapproval ˈcan ˈtake ˈseveral ˈmonths/",
+    "example": "_Council approval can take several months_, | _depending on the complexity of your project_. | _It also depends on whether there are objections_ _from your neighbors_.",
+    "example_chinese": "市政批准可能需要几个月时间，| 取决于您的项目复杂程度，| 也取决于您的邻居是否会反对。"
+  },
+  {
+    "term": "depending on the complexity of your project",
+    "conversation_id": "70253",
+    "sentence_id": 7,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈdepending ˈon ˈthe ˈcomplexity ˈof ˈyour ˈproject/",
+    "example": "_Council approval can take several months_, | _depending on the complexity of your project_. | _It also depends on whether there are objections_ _from your neighbors_.",
+    "example_chinese": "市政批准可能需要几个月时间，| 取决于您的项目复杂程度，| 也取决于您的邻居是否会反对。"
+  },
+  {
+    "term": "It also depends on whether there are objections",
+    "conversation_id": "70253",
+    "sentence_id": 7,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈit ˈalso ˈdepends ˈon ˈwhether ˈthere ˈare ˈobjections/",
+    "example": "_Council approval can take several months_, | _depending on the complexity of your project_. | _It also depends on whether there are objections_ _from your neighbors_.",
+    "example_chinese": "市政批准可能需要几个月时间，| 取决于您的项目复杂程度，| 也取决于您的邻居是否会反对。"
+  },
+  {
+    "term": "from your neighbors",
+    "conversation_id": "70253",
+    "sentence_id": 7,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈfrom ˈyour ˈneighbors/",
+    "example": "_Council approval can take several months_, | _depending on the complexity of your project_. | _It also depends on whether there are objections_ _from your neighbors_.",
+    "example_chinese": "市政批准可能需要几个月时间，| 取决于您的项目复杂程度，| 也取决于您的邻居是否会反对。"
+  },
+  {
+    "term": "It seems this process is quite complicated",
+    "conversation_id": "70253",
+    "sentence_id": 8,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈit ˈseems ˈthis ˈprocess ˈis ˈquite ˈcomplicated/",
+    "example": "_It seems this process is quite complicated_. | _I didn't expect the council's review_ _to take this long_, | _and I didn't expect the neighbors might complain_.",
+    "example_chinese": "这样看来，这个程序很复杂啊。| 我没想过市政厅的审核要这么久，| 我也没想过邻居会投诉。"
+  },
+  {
+    "term": "I didn't expect the council's review",
+    "conversation_id": "70253",
+    "sentence_id": 8,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi ˈdidn't ˈexpect ˈthe ˈcouncil's ˈreview/",
+    "example": "_It seems this process is quite complicated_. | _I didn't expect the council's review_ _to take this long_, | _and I didn't expect the neighbors might complain_.",
+    "example_chinese": "这样看来，这个程序很复杂啊。| 我没想过市政厅的审核要这么久，| 我也没想过邻居会投诉。"
+  },
+  {
+    "term": "to take this long",
+    "conversation_id": "70253",
+    "sentence_id": 8,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈto ˈtake ˈthis ˈlong/",
+    "example": "_It seems this process is quite complicated_. | _I didn't expect the council's review_ _to take this long_, | _and I didn't expect the neighbors might complain_.",
+    "example_chinese": "这样看来，这个程序很复杂啊。| 我没想过市政厅的审核要这么久，| 我也没想过邻居会投诉。"
+  },
+  {
+    "term": "and I didn't expect the neighbors might complain",
+    "conversation_id": "70253",
+    "sentence_id": 8,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈand ˈi ˈdidn't ˈexpect ˈthe ˈneighbors ˈmight ˈcomplain/",
+    "example": "_It seems this process is quite complicated_. | _I didn't expect the council's review_ _to take this long_, | _and I didn't expect the neighbors might complain_.",
+    "example_chinese": "这样看来，这个程序很复杂啊。| 我没想过市政厅的审核要这么久，| 我也没想过邻居会投诉。"
+  },
+  {
+    "term": "The neighbors usually only complain",
+    "conversation_id": "70253",
+    "sentence_id": 9,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈthe ˈneighbors ˈusually ˈonly ˈcomplain/",
+    "example": "_The neighbors usually only complain_ _if what you build affects their privacy_ | _or how they use the backyard_. | _Not all complaints will be upheld though_.",
+    "example_chinese": "邻居通常只有在您的建筑影响到他们的隐私| 或影响他们使用后院时才会投诉。| 不过，并不是所有投诉都会被采纳/都会成立。"
+  },
+  {
+    "term": "if what you build affects their privacy",
+    "conversation_id": "70253",
+    "sentence_id": 9,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈif ˈwhat ˈyou ˈbuild ˈaffects ˈtheir ˈprivacy/",
+    "example": "_The neighbors usually only complain_ _if what you build affects their privacy_ | _or how they use the backyard_. | _Not all complaints will be upheld though_.",
+    "example_chinese": "邻居通常只有在您的建筑影响到他们的隐私| 或影响他们使用后院时才会投诉。| 不过，并不是所有投诉都会被采纳/都会成立。"
+  },
+  {
+    "term": "or how they use the backyard",
+    "conversation_id": "70253",
+    "sentence_id": 9,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈor ˈhow ˈthey ˈuse ˈthe ˈbackyard/",
+    "example": "_The neighbors usually only complain_ _if what you build affects their privacy_ | _or how they use the backyard_. | _Not all complaints will be upheld though_.",
+    "example_chinese": "邻居通常只有在您的建筑影响到他们的隐私| 或影响他们使用后院时才会投诉。| 不过，并不是所有投诉都会被采纳/都会成立。"
+  },
+  {
+    "term": "Not all complaints will be upheld though",
+    "conversation_id": "70253",
+    "sentence_id": 9,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈnot ˈall ˈcomplaints ˈwill ˈbe ˈupheld ˈthough/",
+    "example": "_The neighbors usually only complain_ _if what you build affects their privacy_ | _or how they use the backyard_. | _Not all complaints will be upheld though_.",
+    "example_chinese": "邻居通常只有在您的建筑影响到他们的隐私| 或影响他们使用后院时才会投诉。| 不过，并不是所有投诉都会被采纳/都会成立。"
+  },
+  {
+    "term": "Okay I don't think the neighbors will complain",
+    "conversation_id": "70253",
+    "sentence_id": 10,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈokay ˈi ˈdon't ˈthink ˈthe ˈneighbors ˈwill ˈcomplain/",
+    "example": "_Okay, I don't think the neighbors will complain_. | _There's a park behind my house_, | _so the extension won't affect anyone's privacy_.",
+    "example_chinese": "好的，我觉得邻居应该不会抱怨，| 我的房子后面是一个公园，| 所以扩建不会影响到任何人的隐私。"
+  },
+  {
+    "term": "There's a park behind my house",
+    "conversation_id": "70253",
+    "sentence_id": 10,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈthere's ˈa ˈpark ˈbehind ˈmy ˈhouse/",
+    "example": "_Okay, I don't think the neighbors will complain_. | _There's a park behind my house_, | _so the extension won't affect anyone's privacy_.",
+    "example_chinese": "好的，我觉得邻居应该不会抱怨，| 我的房子后面是一个公园，| 所以扩建不会影响到任何人的隐私。"
+  },
+  {
+    "term": "so the extension won't affect anyone's privacy",
+    "conversation_id": "70253",
+    "sentence_id": 10,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈso ˈthe ˈextension ˈwon't ˈaffect ˈanyone's ˈprivacy/",
+    "example": "_Okay, I don't think the neighbors will complain_. | _There's a park behind my house_, | _so the extension won't affect anyone's privacy_.",
+    "example_chinese": "好的，我觉得邻居应该不会抱怨，| 我的房子后面是一个公园，| 所以扩建不会影响到任何人的隐私。"
+  },
+  {
+    "term": "That will help",
+    "conversation_id": "70253",
+    "sentence_id": 11,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈthat ˈwill ˈhelp/",
+    "example": "_That will help_. | _The council will either approve the application_ _or reject it_. | _If it's rejected, you can make changes_ _and submit again_.",
+    "example_chinese": "这会有帮助。| 市政会批准或拒绝申请。| 如果被拒，您可以修改后再次提交。"
+  },
+  {
+    "term": "The council will either approve the application",
+    "conversation_id": "70253",
+    "sentence_id": 11,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈthe ˈcouncil ˈwill ˈeither ˈapprove ˈthe ˈapplication/",
+    "example": "_That will help_. | _The council will either approve the application_ _or reject it_. | _If it's rejected, you can make changes_ _and submit again_.",
+    "example_chinese": "这会有帮助。| 市政会批准或拒绝申请。| 如果被拒，您可以修改后再次提交。"
+  },
+  {
+    "term": "or reject it",
+    "conversation_id": "70253",
+    "sentence_id": 11,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈor ˈreject ˈit/",
+    "example": "_That will help_. | _The council will either approve the application_ _or reject it_. | _If it's rejected, you can make changes_ _and submit again_.",
+    "example_chinese": "这会有帮助。| 市政会批准或拒绝申请。| 如果被拒，您可以修改后再次提交。"
+  },
+  {
+    "term": "If it's rejected you can make changes",
+    "conversation_id": "70253",
+    "sentence_id": 11,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈif ˈit's ˈrejected ˈyou ˈcan ˈmake ˈchanges/",
+    "example": "_That will help_. | _The council will either approve the application_ _or reject it_. | _If it's rejected, you can make changes_ _and submit again_.",
+    "example_chinese": "这会有帮助。| 市政会批准或拒绝申请。| 如果被拒，您可以修改后再次提交。"
+  },
+  {
+    "term": "and submit again",
+    "conversation_id": "70253",
+    "sentence_id": 11,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈand ˈsubmit ˈagain/",
+    "example": "_That will help_. | _The council will either approve the application_ _or reject it_. | _If it's rejected, you can make changes_ _and submit again_.",
+    "example_chinese": "这会有帮助。| 市政会批准或拒绝申请。| 如果被拒，您可以修改后再次提交。"
+  },
+  {
+    "term": "It's great to know this",
+    "conversation_id": "70253",
+    "sentence_id": 12,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈit's ˈgreat ˈto ˈknow ˈthis/",
+    "example": "_It's great to know this_. | _I hope the project will be approved smoothly_, | _and hopefully without any changes_, | _so it won't cause any more delays_.",
+    "example_chinese": "了解这些太好了。| 我希望项目可以顺利批准，| 而且最好不需要修改，| 这样就不会再耽误时间了。"
+  },
+  {
+    "term": "I hope the project will be approved smoothly",
+    "conversation_id": "70253",
+    "sentence_id": 12,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi ˈhope ˈthe ˈproject ˈwill ˈbe ˈapproved ˈsmoothly/",
+    "example": "_It's great to know this_. | _I hope the project will be approved smoothly_, | _and hopefully without any changes_, | _so it won't cause any more delays_.",
+    "example_chinese": "了解这些太好了。| 我希望项目可以顺利批准，| 而且最好不需要修改，| 这样就不会再耽误时间了。"
+  },
+  {
+    "term": "and hopefully without any changes",
+    "conversation_id": "70253",
+    "sentence_id": 12,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈand ˈhopefully ˈwithout ˈany ˈchanges/",
+    "example": "_It's great to know this_. | _I hope the project will be approved smoothly_, | _and hopefully without any changes_, | _so it won't cause any more delays_.",
+    "example_chinese": "了解这些太好了。| 我希望项目可以顺利批准，| 而且最好不需要修改，| 这样就不会再耽误时间了。"
+  },
+  {
+    "term": "so it won't cause any more delays",
+    "conversation_id": "70253",
+    "sentence_id": 12,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈso ˈit ˈwon't ˈcause ˈany ˈmore ˈdelays/",
+    "example": "_It's great to know this_. | _I hope the project will be approved smoothly_, | _and hopefully without any changes_, | _so it won't cause any more delays_.",
+    "example_chinese": "了解这些太好了。| 我希望项目可以顺利批准，| 而且最好不需要修改，| 这样就不会再耽误时间了。"
+  },
+  {
+    "term": "It is also a good idea",
+    "conversation_id": "70253",
+    "sentence_id": 13,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈit ˈis ˈalso ˈa ˈgood ˈidea/",
+    "example": "_It is also a good idea_ _to check the application carefully_ _before you submit_. | _You definitely don't want any delays_ _because of any missing information_.",
+    "example_chinese": "在提交之前仔细检查申请也是个很好的主意。| 您肯定不想因为缺了什么信息而延误。"
+  },
+  {
+    "term": "to check the application carefully",
+    "conversation_id": "70253",
+    "sentence_id": 13,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈto ˈcheck ˈthe ˈapplication ˈcarefully/",
+    "example": "_It is also a good idea_ _to check the application carefully_ _before you submit_. | _You definitely don't want any delays_ _because of any missing information_.",
+    "example_chinese": "在提交之前仔细检查申请也是个很好的主意。| 您肯定不想因为缺了什么信息而延误。"
+  },
+  {
+    "term": "before you submit",
+    "conversation_id": "70253",
+    "sentence_id": 13,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈbefore ˈyou ˈsubmit/",
+    "example": "_It is also a good idea_ _to check the application carefully_ _before you submit_. | _You definitely don't want any delays_ _because of any missing information_.",
+    "example_chinese": "在提交之前仔细检查申请也是个很好的主意。| 您肯定不想因为缺了什么信息而延误。"
+  },
+  {
+    "term": "You definitely don't want any delays",
+    "conversation_id": "70253",
+    "sentence_id": 13,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈyou ˈdefinitely ˈdon't ˈwant ˈany ˈdelays/",
+    "example": "_It is also a good idea_ _to check the application carefully_ _before you submit_. | _You definitely don't want any delays_ _because of any missing information_.",
+    "example_chinese": "在提交之前仔细检查申请也是个很好的主意。| 您肯定不想因为缺了什么信息而延误。"
+  },
+  {
+    "term": "because of any missing information",
+    "conversation_id": "70253",
+    "sentence_id": 13,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈbecause ˈof ˈany ˈmissing ˈinformation/",
+    "example": "_It is also a good idea_ _to check the application carefully_ _before you submit_. | _You definitely don't want any delays_ _because of any missing information_.",
+    "example_chinese": "在提交之前仔细检查申请也是个很好的主意。| 您肯定不想因为缺了什么信息而延误。"
+  },
+  {
+    "term": "Thank you for your help",
+    "conversation_id": "70253",
+    "sentence_id": 14,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈthank ˈyou ˈfor ˈyour ˈhelp/",
+    "example": "_Thank you for your help_. | _I'd better start preparing the application now_, | _or I won't be able to build anything_.",
+    "example_chinese": "谢谢你的帮助，| 我最好现在就开始准备申请，| 不然，我什么都建不了。"
+  },
+  {
+    "term": "I'd better start preparing the application now",
+    "conversation_id": "70253",
+    "sentence_id": 14,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi'd ˈbetter ˈstart ˈpreparing ˈthe ˈapplication ˈnow/",
+    "example": "_Thank you for your help_. | _I'd better start preparing the application now_, | _or I won't be able to build anything_.",
+    "example_chinese": "谢谢你的帮助，| 我最好现在就开始准备申请，| 不然，我什么都建不了。"
+  },
+  {
+    "term": "or I won't be able to build anything",
+    "conversation_id": "70253",
+    "sentence_id": 14,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈor ˈi ˈwon't ˈbe ˈable ˈto ˈbuild ˈanything/",
+    "example": "_Thank you for your help_. | _I'd better start preparing the application now_, | _or I won't be able to build anything_.",
+    "example_chinese": "谢谢你的帮助，| 我最好现在就开始准备申请，| 不然，我什么都建不了。"
+  },
+  {
+    "term": "Hey the office mentioned",
+    "conversation_id": "70252",
+    "sentence_id": 1,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈhey ˈthe ˈoffice ˈmentioned/",
+    "example": "_Hey, the office mentioned_ _you'd drop by_ _to visit the site again today_. | _I bet you'll be pleased_ _with the progress_.",
+    "example_chinese": "嗨，办公室那边说| 你今天要再来工地一趟。| 我相信你会对进度满意的。"
+  },
+  {
+    "term": "you'd drop by",
+    "conversation_id": "70252",
+    "sentence_id": 1,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈyou'd ˈdrop ˈby/",
+    "example": "_Hey, the office mentioned_ _you'd drop by_ _to visit the site again today_. | _I bet you'll be pleased_ _with the progress_.",
+    "example_chinese": "嗨，办公室那边说| 你今天要再来工地一趟。| 我相信你会对进度满意的。"
+  },
+  {
+    "term": "to visit the site again today",
+    "conversation_id": "70252",
+    "sentence_id": 1,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈto ˈvisit ˈthe ˈsite ˈagain ˈtoday/",
+    "example": "_Hey, the office mentioned_ _you'd drop by_ _to visit the site again today_. | _I bet you'll be pleased_ _with the progress_.",
+    "example_chinese": "嗨，办公室那边说| 你今天要再来工地一趟。| 我相信你会对进度满意的。"
+  },
+  {
+    "term": "I bet you'll be pleased",
+    "conversation_id": "70252",
+    "sentence_id": 1,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi ˈbet ˈyou'll ˈbe ˈpleased/",
+    "example": "_Hey, the office mentioned_ _you'd drop by_ _to visit the site again today_. | _I bet you'll be pleased_ _with the progress_.",
+    "example_chinese": "嗨，办公室那边说| 你今天要再来工地一趟。| 我相信你会对进度满意的。"
+  },
+  {
+    "term": "with the progress",
+    "conversation_id": "70252",
+    "sentence_id": 1,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈwith ˈthe ˈprogress/",
+    "example": "_Hey, the office mentioned_ _you'd drop by_ _to visit the site again today_. | _I bet you'll be pleased_ _with the progress_.",
+    "example_chinese": "嗨，办公室那边说| 你今天要再来工地一趟。| 我相信你会对进度满意的。"
+  },
+  {
+    "term": "Yeah I work nearby",
+    "conversation_id": "70252",
+    "sentence_id": 2,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈyeah ˈi ˈwork ˈnearby/",
+    "example": "_Yeah, I work nearby_ | _so it's easy to swing by_. | _I'm thrilled watching my new house take shape_. / _I'm so excited watching_ _the new house being built little by little_!",
+    "example_chinese": "对啊，我就在附近上班，| 顺路过来看看挺方便的。| 看着新房子一点点盖起来，我超激动的。"
+  },
+  {
+    "term": "so it's easy to swing by",
+    "conversation_id": "70252",
+    "sentence_id": 2,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈso ˈit's ˈeasy ˈto ˈswing ˈby/",
+    "example": "_Yeah, I work nearby_ | _so it's easy to swing by_. | _I'm thrilled watching my new house take shape_. / _I'm so excited watching_ _the new house being built little by little_!",
+    "example_chinese": "对啊，我就在附近上班，| 顺路过来看看挺方便的。| 看着新房子一点点盖起来，我超激动的。"
+  },
+  {
+    "term": "I'm thrilled watching my new house take shape",
+    "conversation_id": "70252",
+    "sentence_id": 2,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi'm ˈthrilled ˈwatching ˈmy ˈnew ˈhouse ˈtake ˈshape/",
+    "example": "_Yeah, I work nearby_ | _so it's easy to swing by_. | _I'm thrilled watching my new house take shape_. / _I'm so excited watching_ _the new house being built little by little_!",
+    "example_chinese": "对啊，我就在附近上班，| 顺路过来看看挺方便的。| 看着新房子一点点盖起来，我超激动的。"
+  },
+  {
+    "term": "I'm so excited watching",
+    "conversation_id": "70252",
+    "sentence_id": 2,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi'm ˈso ˈexcited ˈwatching/",
+    "example": "_Yeah, I work nearby_ | _so it's easy to swing by_. | _I'm thrilled watching my new house take shape_. / _I'm so excited watching_ _the new house being built little by little_!",
+    "example_chinese": "对啊，我就在附近上班，| 顺路过来看看挺方便的。| 看着新房子一点点盖起来，我超激动的。"
+  },
+  {
+    "term": "the new house being built little by little",
+    "conversation_id": "70252",
+    "sentence_id": 2,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈthe ˈnew ˈhouse ˈbeing ˈbuilt ˈlittle ˈby ˈlittle/",
+    "example": "_Yeah, I work nearby_ | _so it's easy to swing by_. | _I'm thrilled watching my new house take shape_. / _I'm so excited watching_ _the new house being built little by little_!",
+    "example_chinese": "对啊，我就在附近上班，| 顺路过来看看挺方便的。| 看着新房子一点点盖起来，我超激动的。"
+  },
+  {
+    "term": "The crew has now finished",
+    "conversation_id": "70252",
+    "sentence_id": 3,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈthe ˈcrew ˈhas ˈnow ˈfinished/",
+    "example": "_The crew has now finished_ _the walls, floors, and doors_. | _The supplier has finally_ _delivered the materials_ _early last week_.",
+    "example_chinese": "施工队/工人们现在已经| 做完墙壁、地板和门了。| 上周早些时候，| 供应商总算把材料送到了。"
+  },
+  {
+    "term": "the walls floors and doors",
+    "conversation_id": "70252",
+    "sentence_id": 3,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈthe ˈwalls ˈfloors ˈand ˈdoors/",
+    "example": "_The crew has now finished_ _the walls, floors, and doors_. | _The supplier has finally_ _delivered the materials_ _early last week_.",
+    "example_chinese": "施工队/工人们现在已经| 做完墙壁、地板和门了。| 上周早些时候，| 供应商总算把材料送到了。"
+  },
+  {
+    "term": "The supplier has finally",
+    "conversation_id": "70252",
+    "sentence_id": 3,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈthe ˈsupplier ˈhas ˈfinally/",
+    "example": "_The crew has now finished_ _the walls, floors, and doors_. | _The supplier has finally_ _delivered the materials_ _early last week_.",
+    "example_chinese": "施工队/工人们现在已经| 做完墙壁、地板和门了。| 上周早些时候，| 供应商总算把材料送到了。"
+  },
+  {
+    "term": "delivered the materials",
+    "conversation_id": "70252",
+    "sentence_id": 3,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈdelivered ˈthe ˈmaterials/",
+    "example": "_The crew has now finished_ _the walls, floors, and doors_. | _The supplier has finally_ _delivered the materials_ _early last week_.",
+    "example_chinese": "施工队/工人们现在已经| 做完墙壁、地板和门了。| 上周早些时候，| 供应商总算把材料送到了。"
+  },
+  {
+    "term": "early last week",
+    "conversation_id": "70252",
+    "sentence_id": 3,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈearly ˈlast ˈweek/",
+    "example": "_The crew has now finished_ _the walls, floors, and doors_. | _The supplier has finally_ _delivered the materials_ _early last week_.",
+    "example_chinese": "施工队/工人们现在已经| 做完墙壁、地板和门了。| 上周早些时候，| 供应商总算把材料送到了。"
+  },
+  {
+    "term": "That was quick",
+    "conversation_id": "70252",
+    "sentence_id": 4,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈthat ˈwas ˈquick/",
+    "example": "_That was quick_! | _Since the material delivery was delayed_, | _I thought it would take longer_. | _Nowadays it seems really hard_ _to get materials_, | _and shipping is so slow too_.",
+    "example_chinese": "速度真快！| 因为材料送过来的时间延期了，| 我本来还以为需要更长的时间呢。| 现在材料好像都很难买，| 运输也很慢。"
+  },
+  {
+    "term": "Since the material delivery was delayed",
+    "conversation_id": "70252",
+    "sentence_id": 4,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈsince ˈthe ˈmaterial ˈdelivery ˈwas ˈdelayed/",
+    "example": "_That was quick_! | _Since the material delivery was delayed_, | _I thought it would take longer_. | _Nowadays it seems really hard_ _to get materials_, | _and shipping is so slow too_.",
+    "example_chinese": "速度真快！| 因为材料送过来的时间延期了，| 我本来还以为需要更长的时间呢。| 现在材料好像都很难买，| 运输也很慢。"
+  },
+  {
+    "term": "I thought it would take longer",
+    "conversation_id": "70252",
+    "sentence_id": 4,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi ˈthought ˈit ˈwould ˈtake ˈlonger/",
+    "example": "_That was quick_! | _Since the material delivery was delayed_, | _I thought it would take longer_. | _Nowadays it seems really hard_ _to get materials_, | _and shipping is so slow too_.",
+    "example_chinese": "速度真快！| 因为材料送过来的时间延期了，| 我本来还以为需要更长的时间呢。| 现在材料好像都很难买，| 运输也很慢。"
+  },
+  {
+    "term": "Nowadays it seems really hard",
+    "conversation_id": "70252",
+    "sentence_id": 4,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈnowadays ˈit ˈseems ˈreally ˈhard/",
+    "example": "_That was quick_! | _Since the material delivery was delayed_, | _I thought it would take longer_. | _Nowadays it seems really hard_ _to get materials_, | _and shipping is so slow too_.",
+    "example_chinese": "速度真快！| 因为材料送过来的时间延期了，| 我本来还以为需要更长的时间呢。| 现在材料好像都很难买，| 运输也很慢。"
+  },
+  {
+    "term": "to get materials",
+    "conversation_id": "70252",
+    "sentence_id": 4,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈto ˈget ˈmaterials/",
+    "example": "_That was quick_! | _Since the material delivery was delayed_, | _I thought it would take longer_. | _Nowadays it seems really hard_ _to get materials_, | _and shipping is so slow too_.",
+    "example_chinese": "速度真快！| 因为材料送过来的时间延期了，| 我本来还以为需要更长的时间呢。| 现在材料好像都很难买，| 运输也很慢。"
+  },
+  {
+    "term": "and shipping is so slow too",
+    "conversation_id": "70252",
+    "sentence_id": 4,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈand ˈshipping ˈis ˈso ˈslow ˈtoo/",
+    "example": "_That was quick_! | _Since the material delivery was delayed_, | _I thought it would take longer_. | _Nowadays it seems really hard_ _to get materials_, | _and shipping is so slow too_.",
+    "example_chinese": "速度真快！| 因为材料送过来的时间延期了，| 我本来还以为需要更长的时间呢。| 现在材料好像都很难买，| 运输也很慢。"
+  },
+  {
+    "term": "True and material prices",
+    "conversation_id": "70252",
+    "sentence_id": 5,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈtrue ˈand ˈmaterial ˈprices/",
+    "example": "_True, and material prices_ _have gone up too_. | _Since you're here_, | _I'd like to go over_ _the plans with you_.",
+    "example_chinese": "没错，材料现在也涨价了。| 既然你来了，| 我想和你一起过一下图纸。"
+  },
+  {
+    "term": "have gone up too",
+    "conversation_id": "70252",
+    "sentence_id": 5,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈhave ˈgone ˈup ˈtoo/",
+    "example": "_True, and material prices_ _have gone up too_. | _Since you're here_, | _I'd like to go over_ _the plans with you_.",
+    "example_chinese": "没错，材料现在也涨价了。| 既然你来了，| 我想和你一起过一下图纸。"
+  },
+  {
+    "term": "Since you're here",
+    "conversation_id": "70252",
+    "sentence_id": 5,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈsince ˈyou're ˈhere/",
+    "example": "_True, and material prices_ _have gone up too_. | _Since you're here_, | _I'd like to go over_ _the plans with you_.",
+    "example_chinese": "没错，材料现在也涨价了。| 既然你来了，| 我想和你一起过一下图纸。"
+  },
+  {
+    "term": "I'd like to go over",
+    "conversation_id": "70252",
+    "sentence_id": 5,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi'd ˈlike ˈto ˈgo ˈover/",
+    "example": "_True, and material prices_ _have gone up too_. | _Since you're here_, | _I'd like to go over_ _the plans with you_.",
+    "example_chinese": "没错，材料现在也涨价了。| 既然你来了，| 我想和你一起过一下图纸。"
+  },
+  {
+    "term": "the plans with you",
+    "conversation_id": "70252",
+    "sentence_id": 5,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈthe ˈplans ˈwith ˈyou/",
+    "example": "_True, and material prices_ _have gone up too_. | _Since you're here_, | _I'd like to go over_ _the plans with you_.",
+    "example_chinese": "没错，材料现在也涨价了。| 既然你来了，| 我想和你一起过一下图纸。"
+  },
+  {
+    "term": "No problem",
+    "conversation_id": "70252",
+    "sentence_id": 6,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈno ˈproblem/",
+    "example": "_No problem_. | _I feel like I check_ _the construction plans/blueprints_ | _every night when I get home_. | _So, I know exactly_ _what each room will look like_.",
+    "example_chinese": "没问题。| 我感觉我每天晚上回家| 都会看施工图纸。| 所以每个房间具体会是什么样子的，| 我都清清楚楚。"
+  },
+  {
+    "term": "I feel like I check",
+    "conversation_id": "70252",
+    "sentence_id": 6,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi ˈfeel ˈlike ˈi ˈcheck/",
+    "example": "_No problem_. | _I feel like I check_ _the construction plans/blueprints_ | _every night when I get home_. | _So, I know exactly_ _what each room will look like_.",
+    "example_chinese": "没问题。| 我感觉我每天晚上回家| 都会看施工图纸。| 所以每个房间具体会是什么样子的，| 我都清清楚楚。"
+  },
+  {
+    "term": "the construction plans/blueprints",
+    "conversation_id": "70252",
+    "sentence_id": 6,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈthe ˈconstruction ˈplans/blueprints/",
+    "example": "_No problem_. | _I feel like I check_ _the construction plans/blueprints_ | _every night when I get home_. | _So, I know exactly_ _what each room will look like_.",
+    "example_chinese": "没问题。| 我感觉我每天晚上回家| 都会看施工图纸。| 所以每个房间具体会是什么样子的，| 我都清清楚楚。"
+  },
+  {
+    "term": "every night when I get home",
+    "conversation_id": "70252",
+    "sentence_id": 6,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈevery ˈnight ˈwhen ˈi ˈget ˈhome/",
+    "example": "_No problem_. | _I feel like I check_ _the construction plans/blueprints_ | _every night when I get home_. | _So, I know exactly_ _what each room will look like_.",
+    "example_chinese": "没问题。| 我感觉我每天晚上回家| 都会看施工图纸。| 所以每个房间具体会是什么样子的，| 我都清清楚楚。"
+  },
+  {
+    "term": "So I know exactly",
+    "conversation_id": "70252",
+    "sentence_id": 6,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈso ˈi ˈknow ˈexactly/",
+    "example": "_No problem_. | _I feel like I check_ _the construction plans/blueprints_ | _every night when I get home_. | _So, I know exactly_ _what each room will look like_.",
+    "example_chinese": "没问题。| 我感觉我每天晚上回家| 都会看施工图纸。| 所以每个房间具体会是什么样子的，| 我都清清楚楚。"
+  },
+  {
+    "term": "what each room will look like",
+    "conversation_id": "70252",
+    "sentence_id": 6,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈwhat ˈeach ˈroom ˈwill ˈlook ˈlike/",
+    "example": "_No problem_. | _I feel like I check_ _the construction plans/blueprints_ | _every night when I get home_. | _So, I know exactly_ _what each room will look like_.",
+    "example_chinese": "没问题。| 我感觉我每天晚上回家| 都会看施工图纸。| 所以每个房间具体会是什么样子的，| 我都清清楚楚。"
+  },
+  {
+    "term": "I know you were debating between",
+    "conversation_id": "70252",
+    "sentence_id": 7,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi ˈknow ˈyou ˈwere ˈdebating ˈbetween/",
+    "example": "_I know you were debating between_ _the light-colored timber flooring_ _and the tiles for the living room and kitchen_. | _Have you changed your mind_?",
+    "example_chinese": "我知道你之前就在客厅和厨房的浅色木地板和瓷砖之间犹豫。| 你改主意了吗？"
+  },
+  {
+    "term": "the light-colored timber flooring",
+    "conversation_id": "70252",
+    "sentence_id": 7,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈthe ˈlight-colored ˈtimber ˈflooring/",
+    "example": "_I know you were debating between_ _the light-colored timber flooring_ _and the tiles for the living room and kitchen_. | _Have you changed your mind_?",
+    "example_chinese": "我知道你之前就在客厅和厨房的浅色木地板和瓷砖之间犹豫。| 你改主意了吗？"
+  },
+  {
+    "term": "and the tiles for the living room and kitchen",
+    "conversation_id": "70252",
+    "sentence_id": 7,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈand ˈthe ˈtiles ˈfor ˈthe ˈliving ˈroom ˈand ˈkitchen/",
+    "example": "_I know you were debating between_ _the light-colored timber flooring_ _and the tiles for the living room and kitchen_. | _Have you changed your mind_?",
+    "example_chinese": "我知道你之前就在客厅和厨房的浅色木地板和瓷砖之间犹豫。| 你改主意了吗？"
+  },
+  {
+    "term": "Have you changed your mind",
+    "conversation_id": "70252",
+    "sentence_id": 7,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈhave ˈyou ˈchanged ˈyour ˈmind/",
+    "example": "_I know you were debating between_ _the light-colored timber flooring_ _and the tiles for the living room and kitchen_. | _Have you changed your mind_?",
+    "example_chinese": "我知道你之前就在客厅和厨房的浅色木地板和瓷砖之间犹豫。| 你改主意了吗？"
+  },
+  {
+    "term": "No I'm sure I want tiles",
+    "conversation_id": "70252",
+    "sentence_id": 8,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈno ˈi'm ˈsure ˈi ˈwant ˈtiles/",
+    "example": "_No, I'm sure I want tiles_. | _I haven't changed my mind_ _since I made the decision_. | _After all, it took me a long time_ _to make it_.",
+    "example_chinese": "不，我确信我要用瓷砖。| 在我做出决定之后，| 我就没改变过主意，| 毕竟，做这个决定花了我很长时间。"
+  },
+  {
+    "term": "I haven't changed my mind",
+    "conversation_id": "70252",
+    "sentence_id": 8,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi ˈhaven't ˈchanged ˈmy ˈmind/",
+    "example": "_No, I'm sure I want tiles_. | _I haven't changed my mind_ _since I made the decision_. | _After all, it took me a long time_ _to make it_.",
+    "example_chinese": "不，我确信我要用瓷砖。| 在我做出决定之后，| 我就没改变过主意，| 毕竟，做这个决定花了我很长时间。"
+  },
+  {
+    "term": "since I made the decision",
+    "conversation_id": "70252",
+    "sentence_id": 8,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈsince ˈi ˈmade ˈthe ˈdecision/",
+    "example": "_No, I'm sure I want tiles_. | _I haven't changed my mind_ _since I made the decision_. | _After all, it took me a long time_ _to make it_.",
+    "example_chinese": "不，我确信我要用瓷砖。| 在我做出决定之后，| 我就没改变过主意，| 毕竟，做这个决定花了我很长时间。"
+  },
+  {
+    "term": "After all it took me a long time",
+    "conversation_id": "70252",
+    "sentence_id": 8,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈafter ˈall ˈit ˈtook ˈme ˈa ˈlong ˈtime/",
+    "example": "_No, I'm sure I want tiles_. | _I haven't changed my mind_ _since I made the decision_. | _After all, it took me a long time_ _to make it_.",
+    "example_chinese": "不，我确信我要用瓷砖。| 在我做出决定之后，| 我就没改变过主意，| 毕竟，做这个决定花了我很长时间。"
+  },
+  {
+    "term": "to make it",
+    "conversation_id": "70252",
+    "sentence_id": 8,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈto ˈmake ˈit/",
+    "example": "_No, I'm sure I want tiles_. | _I haven't changed my mind_ _since I made the decision_. | _After all, it took me a long time_ _to make it_.",
+    "example_chinese": "不，我确信我要用瓷砖。| 在我做出决定之后，| 我就没改变过主意，| 毕竟，做这个决定花了我很长时间。"
+  },
+  {
+    "term": "Oh dear I was afraid of that",
+    "conversation_id": "70252",
+    "sentence_id": 9,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈoh ˈdear ˈi ˈwas ˈafraid ˈof ˈthat/",
+    "example": "_Oh dear! I was afraid of that_. | _We must have mixed up the order_. | _The supplier has delivered_ _the timber flooring_.",
+    "example_chinese": "哎呀！我就怕是这样。| 我们肯定是把订单搞混了。| 供应商已经把木地板送来了。"
+  },
+  {
+    "term": "We must have mixed up the order",
+    "conversation_id": "70252",
+    "sentence_id": 9,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈwe ˈmust ˈhave ˈmixed ˈup ˈthe ˈorder/",
+    "example": "_Oh dear! I was afraid of that_. | _We must have mixed up the order_. | _The supplier has delivered_ _the timber flooring_.",
+    "example_chinese": "哎呀！我就怕是这样。| 我们肯定是把订单搞混了。| 供应商已经把木地板送来了。"
+  },
+  {
+    "term": "The supplier has delivered",
+    "conversation_id": "70252",
+    "sentence_id": 9,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈthe ˈsupplier ˈhas ˈdelivered/",
+    "example": "_Oh dear! I was afraid of that_. | _We must have mixed up the order_. | _The supplier has delivered_ _the timber flooring_.",
+    "example_chinese": "哎呀！我就怕是这样。| 我们肯定是把订单搞混了。| 供应商已经把木地板送来了。"
+  },
+  {
+    "term": "the timber flooring",
+    "conversation_id": "70252",
+    "sentence_id": 9,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈthe ˈtimber ˈflooring/",
+    "example": "_Oh dear! I was afraid of that_. | _We must have mixed up the order_. | _The supplier has delivered_ _the timber flooring_.",
+    "example_chinese": "哎呀！我就怕是这样。| 我们肯定是把订单搞混了。| 供应商已经把木地板送来了。"
+  },
+  {
+    "term": "Wood flooring isn't a bad idea",
+    "conversation_id": "70252",
+    "sentence_id": 10,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈwood ˈflooring ˈisn't ˈa ˈbad ˈidea/",
+    "example": "_Wood flooring isn't a bad idea_, | _but I still prefer tiles_. | _I'm really glad you caught this_ _before the workers start laying it down_.",
+    "example_chinese": "用木地板也不是一个坏主意，| 但是我还是更想用瓷砖。| 我很高兴你在工人开始铺木地板之前| 就发现了这个问题。"
+  },
+  {
+    "term": "but I still prefer tiles",
+    "conversation_id": "70252",
+    "sentence_id": 10,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈbut ˈi ˈstill ˈprefer ˈtiles/",
+    "example": "_Wood flooring isn't a bad idea_, | _but I still prefer tiles_. | _I'm really glad you caught this_ _before the workers start laying it down_.",
+    "example_chinese": "用木地板也不是一个坏主意，| 但是我还是更想用瓷砖。| 我很高兴你在工人开始铺木地板之前| 就发现了这个问题。"
+  },
+  {
+    "term": "I'm really glad you caught this",
+    "conversation_id": "70252",
+    "sentence_id": 10,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi'm ˈreally ˈglad ˈyou ˈcaught ˈthis/",
+    "example": "_Wood flooring isn't a bad idea_, | _but I still prefer tiles_. | _I'm really glad you caught this_ _before the workers start laying it down_.",
+    "example_chinese": "用木地板也不是一个坏主意，| 但是我还是更想用瓷砖。| 我很高兴你在工人开始铺木地板之前| 就发现了这个问题。"
+  },
+  {
+    "term": "before the workers start laying it down",
+    "conversation_id": "70252",
+    "sentence_id": 10,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈbefore ˈthe ˈworkers ˈstart ˈlaying ˈit ˈdown/",
+    "example": "_Wood flooring isn't a bad idea_, | _but I still prefer tiles_. | _I'm really glad you caught this_ _before the workers start laying it down_.",
+    "example_chinese": "用木地板也不是一个坏主意，| 但是我还是更想用瓷砖。| 我很高兴你在工人开始铺木地板之前| 就发现了这个问题。"
+  },
+  {
+    "term": "It struck me as a bit strange this morning",
+    "conversation_id": "70252",
+    "sentence_id": 11,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈit ˈstruck ˈme ˈas ˈa ˈbit ˈstrange ˈthis ˈmorning/",
+    "example": "_It struck me as a bit strange this morning_. | _That's why I inspect_ _the site every day_.",
+    "example_chinese": "我今早上看着| 就突然觉得有点怪/不对劲，| 这也是为什么我每天| 都要到工地检查的原因。"
+  },
+  {
+    "term": "That's why I inspect",
+    "conversation_id": "70252",
+    "sentence_id": 11,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈthat's ˈwhy ˈi ˈinspect/",
+    "example": "_It struck me as a bit strange this morning_. | _That's why I inspect_ _the site every day_.",
+    "example_chinese": "我今早上看着| 就突然觉得有点怪/不对劲，| 这也是为什么我每天| 都要到工地检查的原因。"
+  },
+  {
+    "term": "the site every day",
+    "conversation_id": "70252",
+    "sentence_id": 11,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈthe ˈsite ˈevery ˈday/",
+    "example": "_It struck me as a bit strange this morning_. | _That's why I inspect_ _the site every day_.",
+    "example_chinese": "我今早上看着| 就突然觉得有点怪/不对劲，| 这也是为什么我每天| 都要到工地检查的原因。"
+  },
+  {
+    "term": "Thanks so much",
+    "conversation_id": "70252",
+    "sentence_id": 12,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈthanks ˈso ˈmuch/",
+    "example": "_Thanks so much_. | _That really puts my mind at ease_. | _It's so great you can_ _spot and fix issues promptly_.",
+    "example_chinese": "太感谢了，| 让我放心多了。| 你这么快就能发现和解决问题，| 真的太棒了。"
+  },
+  {
+    "term": "That really puts my mind at ease",
+    "conversation_id": "70252",
+    "sentence_id": 12,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈthat ˈreally ˈputs ˈmy ˈmind ˈat ˈease/",
+    "example": "_Thanks so much_. | _That really puts my mind at ease_. | _It's so great you can_ _spot and fix issues promptly_.",
+    "example_chinese": "太感谢了，| 让我放心多了。| 你这么快就能发现和解决问题，| 真的太棒了。"
+  },
+  {
+    "term": "It's so great you can",
+    "conversation_id": "70252",
+    "sentence_id": 12,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈit's ˈso ˈgreat ˈyou ˈcan/",
+    "example": "_Thanks so much_. | _That really puts my mind at ease_. | _It's so great you can_ _spot and fix issues promptly_.",
+    "example_chinese": "太感谢了，| 让我放心多了。| 你这么快就能发现和解决问题，| 真的太棒了。"
+  },
+  {
+    "term": "spot and fix issues promptly",
+    "conversation_id": "70252",
+    "sentence_id": 12,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈspot ˈand ˈfix ˈissues ˈpromptly/",
+    "example": "_Thanks so much_. | _That really puts my mind at ease_. | _It's so great you can_ _spot and fix issues promptly_.",
+    "example_chinese": "太感谢了，| 让我放心多了。| 你这么快就能发现和解决问题，| 真的太棒了。"
+  },
+  {
+    "term": "Of course I believe in",
+    "conversation_id": "70252",
+    "sentence_id": 13,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈof ˈcourse ˈi ˈbelieve ˈin/",
+    "example": "_Of course. I believe in_ _looking after my customers_, | _and I know how important it is_ _to keep track of everything_.",
+    "example_chinese": "当然。我是客户至上的/| 我坚信得把客户服务好，| 而且我也知道每件事| 都把控好/跟进好/盯紧了有多重要。"
+  },
+  {
+    "term": "looking after my customers",
+    "conversation_id": "70252",
+    "sentence_id": 13,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈlooking ˈafter ˈmy ˈcustomers/",
+    "example": "_Of course. I believe in_ _looking after my customers_, | _and I know how important it is_ _to keep track of everything_.",
+    "example_chinese": "当然。我是客户至上的/| 我坚信得把客户服务好，| 而且我也知道每件事| 都把控好/跟进好/盯紧了有多重要。"
+  },
+  {
+    "term": "and I know how important it is",
+    "conversation_id": "70252",
+    "sentence_id": 13,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈand ˈi ˈknow ˈhow ˈimportant ˈit ˈis/",
+    "example": "_Of course. I believe in_ _looking after my customers_, | _and I know how important it is_ _to keep track of everything_.",
+    "example_chinese": "当然。我是客户至上的/| 我坚信得把客户服务好，| 而且我也知道每件事| 都把控好/跟进好/盯紧了有多重要。"
+  },
+  {
+    "term": "to keep track of everything",
+    "conversation_id": "70252",
+    "sentence_id": 13,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈto ˈkeep ˈtrack ˈof ˈeverything/",
+    "example": "_Of course. I believe in_ _looking after my customers_, | _and I know how important it is_ _to keep track of everything_.",
+    "example_chinese": "当然。我是客户至上的/| 我坚信得把客户服务好，| 而且我也知道每件事| 都把控好/跟进好/盯紧了有多重要。"
+  },
+  {
+    "term": "There are so many things to do",
+    "conversation_id": "70252",
+    "sentence_id": 14,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈthere ˈare ˈso ˈmany ˈthings ˈto ˈdo/",
+    "example": "_There are so many things to do_ _when/in designing this house_! / _Designing a house involves_ _so many things to do_! | _I had no idea_ _building a house_ _could be this complicated_.",
+    "example_chinese": "设计这个房子| 有这么多的事情要做呀！| 我不知道盖一个房子| 需要这么复杂。"
+  },
+  {
+    "term": "when/in designing this house",
+    "conversation_id": "70252",
+    "sentence_id": 14,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈwhen/in ˈdesigning ˈthis ˈhouse/",
+    "example": "_There are so many things to do_ _when/in designing this house_! / _Designing a house involves_ _so many things to do_! | _I had no idea_ _building a house_ _could be this complicated_.",
+    "example_chinese": "设计这个房子| 有这么多的事情要做呀！| 我不知道盖一个房子| 需要这么复杂。"
+  },
+  {
+    "term": "Designing a house involves",
+    "conversation_id": "70252",
+    "sentence_id": 14,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈdesigning ˈa ˈhouse ˈinvolves/",
+    "example": "_There are so many things to do_ _when/in designing this house_! / _Designing a house involves_ _so many things to do_! | _I had no idea_ _building a house_ _could be this complicated_.",
+    "example_chinese": "设计这个房子| 有这么多的事情要做呀！| 我不知道盖一个房子| 需要这么复杂。"
+  },
+  {
+    "term": "so many things to do",
+    "conversation_id": "70252",
+    "sentence_id": 14,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈso ˈmany ˈthings ˈto ˈdo/",
+    "example": "_There are so many things to do_ _when/in designing this house_! / _Designing a house involves_ _so many things to do_! | _I had no idea_ _building a house_ _could be this complicated_.",
+    "example_chinese": "设计这个房子| 有这么多的事情要做呀！| 我不知道盖一个房子| 需要这么复杂。"
+  },
+  {
+    "term": "I had no idea",
+    "conversation_id": "70252",
+    "sentence_id": 14,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi ˈhad ˈno ˈidea/",
+    "example": "_There are so many things to do_ _when/in designing this house_! / _Designing a house involves_ _so many things to do_! | _I had no idea_ _building a house_ _could be this complicated_.",
+    "example_chinese": "设计这个房子| 有这么多的事情要做呀！| 我不知道盖一个房子| 需要这么复杂。"
+  },
+  {
+    "term": "building a house",
+    "conversation_id": "70252",
+    "sentence_id": 14,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈbuilding ˈa ˈhouse/",
+    "example": "_There are so many things to do_ _when/in designing this house_! / _Designing a house involves_ _so many things to do_! | _I had no idea_ _building a house_ _could be this complicated_.",
+    "example_chinese": "设计这个房子| 有这么多的事情要做呀！| 我不知道盖一个房子| 需要这么复杂。"
+  },
+  {
+    "term": "could be this complicated",
+    "conversation_id": "70252",
+    "sentence_id": 14,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈcould ˈbe ˈthis ˈcomplicated/",
+    "example": "_There are so many things to do_ _when/in designing this house_! / _Designing a house involves_ _so many things to do_! | _I had no idea_ _building a house_ _could be this complicated_.",
+    "example_chinese": "设计这个房子| 有这么多的事情要做呀！| 我不知道盖一个房子| 需要这么复杂。"
+  },
+  {
+    "term": "Good afternoon welcome to the Health Department",
+    "conversation_id": "70251",
+    "sentence_id": 1,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈgood ˈafternoon ˈwelcome ˈto ˈthe ˈhealth ˈdepartment/",
+    "example": "_Good afternoon, welcome to the Health Department_. | _How can I assist you today_?",
+    "example_chinese": "下午好，欢迎来到卫生部。我今天能帮您什么忙？"
+  },
+  {
+    "term": "How can I assist you today",
+    "conversation_id": "70251",
+    "sentence_id": 1,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈhow ˈcan ˈi ˈassist ˈyou ˈtoday/",
+    "example": "_Good afternoon, welcome to the Health Department_. | _How can I assist you today_?",
+    "example_chinese": "下午好，欢迎来到卫生部。我今天能帮您什么忙？"
+  },
+  {
+    "term": "Good afternoon I'd like to find out more about",
+    "conversation_id": "70251",
+    "sentence_id": 2,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈgood ˈafternoon ˈi'd ˈlike ˈto ˈfind ˈout ˈmore ˈabout/",
+    "example": "_Good afternoon. I'd like to find out more about_ _your in-home support program for the elderly_.",
+    "example_chinese": "下午好，我想进一步了解一下| 你们为老年人提供的居家支持项目。"
+  },
+  {
+    "term": "your in-home support program for the elderly",
+    "conversation_id": "70251",
+    "sentence_id": 2,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈyour ˈin-home ˈsupport ˈprogram ˈfor ˈthe ˈelderly/",
+    "example": "_Good afternoon. I'd like to find out more about_ _your in-home support program for the elderly_.",
+    "example_chinese": "下午好，我想进一步了解一下| 你们为老年人提供的居家支持项目。"
+  },
+  {
+    "term": "Yes of course I'm happy to provide that information",
+    "conversation_id": "70251",
+    "sentence_id": 3,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈyes ˈof ˈcourse ˈi'm ˈhappy ˈto ˈprovide ˈthat ˈinformation/",
+    "example": "_Yes, of course. I'm happy to provide that information_. | _I hope it might be a good fit for you_.",
+    "example_chinese": "好的，当然可以。我很乐意给你介绍。| 希望这个项目能适合你。"
+  },
+  {
+    "term": "I hope it might be a good fit for you",
+    "conversation_id": "70251",
+    "sentence_id": 3,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈi ˈhope ˈit ˈmight ˈbe ˈa ˈgood ˈfit ˈfor ˈyou/",
+    "example": "_Yes, of course. I'm happy to provide that information_. | _I hope it might be a good fit for you_.",
+    "example_chinese": "好的，当然可以。我很乐意给你介绍。| 希望这个项目能适合你。"
+  },
+  {
+    "term": "I'm asking on behalf of my mother not myself",
+    "conversation_id": "70251",
+    "sentence_id": 4,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈi'm ˈasking ˈon ˈbehalf ˈof ˈmy ˈmother ˈnot ˈmyself/",
+    "example": "_I'm asking on behalf of my mother, not myself_. | _She's quite old and lives alone_. | _I think she needs some extra help_ _with her daily life_.",
+    "example_chinese": "我是给我母亲问的，不是给我自己。| 她年纪很大了，一个人住。| 我觉得她需要一些额外的日常生活的帮助。"
+  },
+  {
+    "term": "She's quite old and lives alone",
+    "conversation_id": "70251",
+    "sentence_id": 4,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈshe's ˈquite ˈold ˈand ˈlives ˈalone/",
+    "example": "_I'm asking on behalf of my mother, not myself_. | _She's quite old and lives alone_. | _I think she needs some extra help_ _with her daily life_.",
+    "example_chinese": "我是给我母亲问的，不是给我自己。| 她年纪很大了，一个人住。| 我觉得她需要一些额外的日常生活的帮助。"
+  },
+  {
+    "term": "I think she needs some extra help",
+    "conversation_id": "70251",
+    "sentence_id": 4,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈi ˈthink ˈshe ˈneeds ˈsome ˈextra ˈhelp/",
+    "example": "_I'm asking on behalf of my mother, not myself_. | _She's quite old and lives alone_. | _I think she needs some extra help_ _with her daily life_.",
+    "example_chinese": "我是给我母亲问的，不是给我自己。| 她年纪很大了，一个人住。| 我觉得她需要一些额外的日常生活的帮助。"
+  },
+  {
+    "term": "with her daily life",
+    "conversation_id": "70251",
+    "sentence_id": 4,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈwith ˈher ˈdaily ˈlife/",
+    "example": "_I'm asking on behalf of my mother, not myself_. | _She's quite old and lives alone_. | _I think she needs some extra help_ _with her daily life_.",
+    "example_chinese": "我是给我母亲问的，不是给我自己。| 她年纪很大了，一个人住。| 我觉得她需要一些额外的日常生活的帮助。"
+  },
+  {
+    "term": "I understand Our service provides",
+    "conversation_id": "70251",
+    "sentence_id": 5,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈi ˈunderstand ˈour ˈservice ˈprovides/",
+    "example": "_I understand. Our service provides_ _a range of support_ | _to make sure elderly people in Australia_ _can live independently and safely_.",
+    "example_chinese": "我明白了。我们的服务提供一系列支持，| 确保澳大利亚的老年人能够独立安全地生活。"
+  },
+  {
+    "term": "a range of support",
+    "conversation_id": "70251",
+    "sentence_id": 5,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈa ˈrange ˈof ˈsupport/",
+    "example": "_I understand. Our service provides_ _a range of support_ | _to make sure elderly people in Australia_ _can live independently and safely_.",
+    "example_chinese": "我明白了。我们的服务提供一系列支持，| 确保澳大利亚的老年人能够独立安全地生活。"
+  },
+  {
+    "term": "to make sure elderly people in Australia",
+    "conversation_id": "70251",
+    "sentence_id": 5,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈto ˈmake ˈsure ˈelderly ˈpeople ˈin ˈaustralia/",
+    "example": "_I understand. Our service provides_ _a range of support_ | _to make sure elderly people in Australia_ _can live independently and safely_.",
+    "example_chinese": "我明白了。我们的服务提供一系列支持，| 确保澳大利亚的老年人能够独立安全地生活。"
+  },
+  {
+    "term": "can live independently and safely",
+    "conversation_id": "70251",
+    "sentence_id": 5,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈcan ˈlive ˈindependently ˈand ˈsafely/",
+    "example": "_I understand. Our service provides_ _a range of support_ | _to make sure elderly people in Australia_ _can live independently and safely_.",
+    "example_chinese": "我明白了。我们的服务提供一系列支持，| 确保澳大利亚的老年人能够独立安全地生活。"
+  },
+  {
+    "term": "That sounds very promising",
+    "conversation_id": "70251",
+    "sentence_id": 6,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈthat ˈsounds ˈvery ˈpromising/",
+    "example": "_That sounds very promising_. | _May I ask what specific services_ _the program provides_? | _She doesn't need advanced nursing care_ _at this stage_.",
+    "example_chinese": "这听起来很有希望啊。| 请问这个项目提供哪些具体的服务呢？| 她目前还不需要高级的医疗护理。"
+  },
+  {
+    "term": "May I ask what specific services",
+    "conversation_id": "70251",
+    "sentence_id": 6,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈmay ˈi ˈask ˈwhat ˈspecific ˈservices/",
+    "example": "_That sounds very promising_. | _May I ask what specific services_ _the program provides_? | _She doesn't need advanced nursing care_ _at this stage_.",
+    "example_chinese": "这听起来很有希望啊。| 请问这个项目提供哪些具体的服务呢？| 她目前还不需要高级的医疗护理。"
+  },
+  {
+    "term": "the program provides",
+    "conversation_id": "70251",
+    "sentence_id": 6,
+    "difficulty": "normal",
+    "category": "social",
+    "phonetic": "UK /ˈthe ˈprogram ˈprovides/",
+    "example": "_That sounds very promising_. | _May I ask what specific services_ _the program provides_? | _She doesn't need advanced nursing care_ _at this stage_.",
+    "example_chinese": "这听起来很有希望啊。| 请问这个项目提供哪些具体的服务呢？| 她目前还不需要高级的医疗护理。"
+  },
+  {
+    "term": "She doesn't need advanced nursing care",
+    "conversation_id": "70251",
+    "sentence_id": 6,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈshe ˈdoesn't ˈneed ˈadvanced ˈnursing ˈcare/",
+    "example": "_That sounds very promising_. | _May I ask what specific services_ _the program provides_? | _She doesn't need advanced nursing care_ _at this stage_.",
+    "example_chinese": "这听起来很有希望啊。| 请问这个项目提供哪些具体的服务呢？| 她目前还不需要高级的医疗护理。"
+  },
+  {
+    "term": "at this stage",
+    "conversation_id": "70251",
+    "sentence_id": 6,
+    "difficulty": "normal",
+    "category": "social",
+    "phonetic": "UK /ˈat ˈthis ˈstage/",
+    "example": "_That sounds very promising_. | _May I ask what specific services_ _the program provides_? | _She doesn't need advanced nursing care_ _at this stage_.",
+    "example_chinese": "这听起来很有希望啊。| 请问这个项目提供哪些具体的服务呢？| 她目前还不需要高级的医疗护理。"
+  },
+  {
+    "term": "Our program provides assistance like meals",
+    "conversation_id": "70251",
+    "sentence_id": 7,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈour ˈprogram ˈprovides ˈassistance ˈlike ˈmeals/",
+    "example": "_Our program provides assistance like meals_, _food preparation, bathing_, | _personal hygiene, nursing care_, | _support for people with mobility issues_, | _home modification, and cleaning_.",
+    "example_chinese": "我们的项目提供的帮助涵盖了像是餐食、食物准备、洗澡、| 个人卫生、护理、| 行动不便人士辅助、| 家居改造和清洁这些。"
+  },
+  {
+    "term": "food preparation bathing",
+    "conversation_id": "70251",
+    "sentence_id": 7,
+    "difficulty": "normal",
+    "category": "social",
+    "phonetic": "UK /ˈfood ˈpreparation ˈbathing/",
+    "example": "_Our program provides assistance like meals_, _food preparation, bathing_, | _personal hygiene, nursing care_, | _support for people with mobility issues_, | _home modification, and cleaning_.",
+    "example_chinese": "我们的项目提供的帮助涵盖了像是餐食、食物准备、洗澡、| 个人卫生、护理、| 行动不便人士辅助、| 家居改造和清洁这些。"
+  },
+  {
+    "term": "personal hygiene nursing care",
+    "conversation_id": "70251",
+    "sentence_id": 7,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈpersonal ˈhygiene ˈnursing ˈcare/",
+    "example": "_Our program provides assistance like meals_, _food preparation, bathing_, | _personal hygiene, nursing care_, | _support for people with mobility issues_, | _home modification, and cleaning_.",
+    "example_chinese": "我们的项目提供的帮助涵盖了像是餐食、食物准备、洗澡、| 个人卫生、护理、| 行动不便人士辅助、| 家居改造和清洁这些。"
+  },
+  {
+    "term": "support for people with mobility issues",
+    "conversation_id": "70251",
+    "sentence_id": 7,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈsupport ˈfor ˈpeople ˈwith ˈmobility ˈissues/",
+    "example": "_Our program provides assistance like meals_, _food preparation, bathing_, | _personal hygiene, nursing care_, | _support for people with mobility issues_, | _home modification, and cleaning_.",
+    "example_chinese": "我们的项目提供的帮助涵盖了像是餐食、食物准备、洗澡、| 个人卫生、护理、| 行动不便人士辅助、| 家居改造和清洁这些。"
+  },
+  {
+    "term": "home modification and cleaning",
+    "conversation_id": "70251",
+    "sentence_id": 7,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈhome ˈmodification ˈand ˈcleaning/",
+    "example": "_Our program provides assistance like meals_, _food preparation, bathing_, | _personal hygiene, nursing care_, | _support for people with mobility issues_, | _home modification, and cleaning_.",
+    "example_chinese": "我们的项目提供的帮助涵盖了像是餐食、食物准备、洗澡、| 个人卫生、护理、| 行动不便人士辅助、| 家居改造和清洁这些。"
+  },
+  {
+    "term": "My mother would definitely benefit",
+    "conversation_id": "70251",
+    "sentence_id": 8,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈmy ˈmother ˈwould ˈdefinitely ˈbenefit/",
+    "example": "_My mother would definitely benefit_ _from some of these services_. | _The program would greatly improve_ _her quality of life_ | _and also put my mind at ease_.",
+    "example_chinese": "我的母亲一定能从一些服务中受益的。| 这项目能大大提高她的生活质量，| 也能让我放心。"
+  },
+  {
+    "term": "from some of these services",
+    "conversation_id": "70251",
+    "sentence_id": 8,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈfrom ˈsome ˈof ˈthese ˈservices/",
+    "example": "_My mother would definitely benefit_ _from some of these services_. | _The program would greatly improve_ _her quality of life_ | _and also put my mind at ease_.",
+    "example_chinese": "我的母亲一定能从一些服务中受益的。| 这项目能大大提高她的生活质量，| 也能让我放心。"
+  },
+  {
+    "term": "The program would greatly improve",
+    "conversation_id": "70251",
+    "sentence_id": 8,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈthe ˈprogram ˈwould ˈgreatly ˈimprove/",
+    "example": "_My mother would definitely benefit_ _from some of these services_. | _The program would greatly improve_ _her quality of life_ | _and also put my mind at ease_.",
+    "example_chinese": "我的母亲一定能从一些服务中受益的。| 这项目能大大提高她的生活质量，| 也能让我放心。"
+  },
+  {
+    "term": "her quality of life",
+    "conversation_id": "70251",
+    "sentence_id": 8,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈher ˈquality ˈof ˈlife/",
+    "example": "_My mother would definitely benefit_ _from some of these services_. | _The program would greatly improve_ _her quality of life_ | _and also put my mind at ease_.",
+    "example_chinese": "我的母亲一定能从一些服务中受益的。| 这项目能大大提高她的生活质量，| 也能让我放心。"
+  },
+  {
+    "term": "and also put my mind at ease",
+    "conversation_id": "70251",
+    "sentence_id": 8,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈand ˈalso ˈput ˈmy ˈmind ˈat ˈease/",
+    "example": "_My mother would definitely benefit_ _from some of these services_. | _The program would greatly improve_ _her quality of life_ | _and also put my mind at ease_.",
+    "example_chinese": "我的母亲一定能从一些服务中受益的。| 这项目能大大提高她的生活质量，| 也能让我放心。"
+  },
+  {
+    "term": "Many people are in a similar situation",
+    "conversation_id": "70251",
+    "sentence_id": 9,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈmany ˈpeople ˈare ˈin ˈa ˈsimilar ˈsituation/",
+    "example": "_Many people are in a similar situation_. | _We've received a lot of positive feedback_ _about how the program helps them_.",
+    "example_chinese": "很多人都有类似的情况。| 我们收到了许多积极的反馈，| 说这个项目对他们有很大的帮助。"
+  },
+  {
+    "term": "We've received a lot of positive feedback",
+    "conversation_id": "70251",
+    "sentence_id": 9,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈwe've ˈreceived ˈa ˈlot ˈof ˈpositive ˈfeedback/",
+    "example": "_Many people are in a similar situation_. | _We've received a lot of positive feedback_ _about how the program helps them_.",
+    "example_chinese": "很多人都有类似的情况。| 我们收到了许多积极的反馈，| 说这个项目对他们有很大的帮助。"
+  },
+  {
+    "term": "about how the program helps them",
+    "conversation_id": "70251",
+    "sentence_id": 9,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈabout ˈhow ˈthe ˈprogram ˈhelps ˈthem/",
+    "example": "_Many people are in a similar situation_. | _We've received a lot of positive feedback_ _about how the program helps them_.",
+    "example_chinese": "很多人都有类似的情况。| 我们收到了许多积极的反馈，| 说这个项目对他们有很大的帮助。"
+  },
+  {
+    "term": "I'd like to apply for this program",
+    "conversation_id": "70251",
+    "sentence_id": 10,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈi'd ˈlike ˈto ˈapply ˈfor ˈthis ˈprogram/",
+    "example": "_I'd like to apply for this program_ _for my mother_. | _Could you please tell me how to do it_? | _I'd really appreciate your help_.",
+    "example_chinese": "我想为我的妈妈申请加入这个项目，| 请您告诉我应该怎么做呢?| 我会很感激你的帮助。"
+  },
+  {
+    "term": "for my mother",
+    "conversation_id": "70251",
+    "sentence_id": 10,
+    "difficulty": "normal",
+    "category": "social",
+    "phonetic": "UK /ˈfor ˈmy ˈmother/",
+    "example": "_I'd like to apply for this program_ _for my mother_. | _Could you please tell me how to do it_? | _I'd really appreciate your help_.",
+    "example_chinese": "我想为我的妈妈申请加入这个项目，| 请您告诉我应该怎么做呢?| 我会很感激你的帮助。"
+  },
+  {
+    "term": "Could you please tell me how to do it",
+    "conversation_id": "70251",
+    "sentence_id": 10,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈcould ˈyou ˈplease ˈtell ˈme ˈhow ˈto ˈdo ˈit/",
+    "example": "_I'd like to apply for this program_ _for my mother_. | _Could you please tell me how to do it_? | _I'd really appreciate your help_.",
+    "example_chinese": "我想为我的妈妈申请加入这个项目，| 请您告诉我应该怎么做呢?| 我会很感激你的帮助。"
+  },
+  {
+    "term": "I'd really appreciate your help",
+    "conversation_id": "70251",
+    "sentence_id": 10,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈi'd ˈreally ˈappreciate ˈyour ˈhelp/",
+    "example": "_I'd like to apply for this program_ _for my mother_. | _Could you please tell me how to do it_? | _I'd really appreciate your help_.",
+    "example_chinese": "我想为我的妈妈申请加入这个项目，| 请您告诉我应该怎么做呢?| 我会很感激你的帮助。"
+  },
+  {
+    "term": "You need to check if your mother is eligible",
+    "conversation_id": "70251",
+    "sentence_id": 11,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈyou ˈneed ˈto ˈcheck ˈif ˈyour ˈmother ˈis ˈeligible/",
+    "example": "_You need to check if your mother is eligible_ | _and arrange an in-person assessment_. | _That's the first step in the process_.",
+    "example_chinese": "您需要确认您的母亲是否符合资格，| 并安排一次面对面/现场评估。| 这是流程的第一步。"
+  },
+  {
+    "term": "and arrange an in-person assessment",
+    "conversation_id": "70251",
+    "sentence_id": 11,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈand ˈarrange ˈan ˈin-person ˈassessment/",
+    "example": "_You need to check if your mother is eligible_ | _and arrange an in-person assessment_. | _That's the first step in the process_.",
+    "example_chinese": "您需要确认您的母亲是否符合资格，| 并安排一次面对面/现场评估。| 这是流程的第一步。"
+  },
+  {
+    "term": "That's the first step in the process",
+    "conversation_id": "70251",
+    "sentence_id": 11,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈthat's ˈthe ˈfirst ˈstep ˈin ˈthe ˈprocess/",
+    "example": "_You need to check if your mother is eligible_ | _and arrange an in-person assessment_. | _That's the first step in the process_.",
+    "example_chinese": "您需要确认您的母亲是否符合资格，| 并安排一次面对面/现场评估。| 这是流程的第一步。"
+  },
+  {
+    "term": "That sounds good",
+    "conversation_id": "70251",
+    "sentence_id": 12,
+    "difficulty": "normal",
+    "category": "social",
+    "phonetic": "UK /ˈthat ˈsounds ˈgood/",
+    "example": "_That sounds good_. | _I'm not sure how to confirm_ _if my mother is eligible_. | _What conditions does she need to meet_?",
+    "example_chinese": "听起来不错。| 我不太清楚怎么样确认我母亲是否资格啊。| 她需要满足什么条件呢？"
+  },
+  {
+    "term": "I'm not sure how to confirm",
+    "conversation_id": "70251",
+    "sentence_id": 12,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈi'm ˈnot ˈsure ˈhow ˈto ˈconfirm/",
+    "example": "_That sounds good_. | _I'm not sure how to confirm_ _if my mother is eligible_. | _What conditions does she need to meet_?",
+    "example_chinese": "听起来不错。| 我不太清楚怎么样确认我母亲是否资格啊。| 她需要满足什么条件呢？"
+  },
+  {
+    "term": "if my mother is eligible",
+    "conversation_id": "70251",
+    "sentence_id": 12,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈif ˈmy ˈmother ˈis ˈeligible/",
+    "example": "_That sounds good_. | _I'm not sure how to confirm_ _if my mother is eligible_. | _What conditions does she need to meet_?",
+    "example_chinese": "听起来不错。| 我不太清楚怎么样确认我母亲是否资格啊。| 她需要满足什么条件呢？"
+  },
+  {
+    "term": "What conditions does she need to meet",
+    "conversation_id": "70251",
+    "sentence_id": 12,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈwhat ˈconditions ˈdoes ˈshe ˈneed ˈto ˈmeet/",
+    "example": "_That sounds good_. | _I'm not sure how to confirm_ _if my mother is eligible_. | _What conditions does she need to meet_?",
+    "example_chinese": "听起来不错。| 我不太清楚怎么样确认我母亲是否资格啊。| 她需要满足什么条件呢？"
+  },
+  {
+    "term": "You can find the eligibility criteria",
+    "conversation_id": "70251",
+    "sentence_id": 13,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈyou ˈcan ˈfind ˈthe ˈeligibility ˈcriteria/",
+    "example": "_You can find the eligibility criteria_ _on our website_. | _If she meets the criteria_, | _you can make an appointment_ _for an in-person assessment_.",
+    "example_chinese": "您可以在我们的网站上查看都有哪些资格要求。| 如果她符合条件，| 您可以预约一次面对面/现场评估。"
+  },
+  {
+    "term": "on our website",
+    "conversation_id": "70251",
+    "sentence_id": 13,
+    "difficulty": "normal",
+    "category": "social",
+    "phonetic": "UK /ˈon ˈour ˈwebsite/",
+    "example": "_You can find the eligibility criteria_ _on our website_. | _If she meets the criteria_, | _you can make an appointment_ _for an in-person assessment_.",
+    "example_chinese": "您可以在我们的网站上查看都有哪些资格要求。| 如果她符合条件，| 您可以预约一次面对面/现场评估。"
+  },
+  {
+    "term": "If she meets the criteria",
+    "conversation_id": "70251",
+    "sentence_id": 13,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈif ˈshe ˈmeets ˈthe ˈcriteria/",
+    "example": "_You can find the eligibility criteria_ _on our website_. | _If she meets the criteria_, | _you can make an appointment_ _for an in-person assessment_.",
+    "example_chinese": "您可以在我们的网站上查看都有哪些资格要求。| 如果她符合条件，| 您可以预约一次面对面/现场评估。"
+  },
+  {
+    "term": "you can make an appointment",
+    "conversation_id": "70251",
+    "sentence_id": 13,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈyou ˈcan ˈmake ˈan ˈappointment/",
+    "example": "_You can find the eligibility criteria_ _on our website_. | _If she meets the criteria_, | _you can make an appointment_ _for an in-person assessment_.",
+    "example_chinese": "您可以在我们的网站上查看都有哪些资格要求。| 如果她符合条件，| 您可以预约一次面对面/现场评估。"
+  },
+  {
+    "term": "for an in-person assessment",
+    "conversation_id": "70251",
+    "sentence_id": 13,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈfor ˈan ˈin-person ˈassessment/",
+    "example": "_You can find the eligibility criteria_ _on our website_. | _If she meets the criteria_, | _you can make an appointment_ _for an in-person assessment_.",
+    "example_chinese": "您可以在我们的网站上查看都有哪些资格要求。| 如果她符合条件，| 您可以预约一次面对面/现场评估。"
+  },
+  {
+    "term": "Thank you for the information",
+    "conversation_id": "70251",
+    "sentence_id": 14,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈthank ˈyou ˈfor ˈthe ˈinformation/",
+    "example": "_Thank you for the information_. | _I'll check the website now_ _to confirm if she meets the requirements_. | _Just knowing someone can help_ _is already a huge relief_.",
+    "example_chinese": "谢谢你提供的信息。| 我现在就去网站上看看，| 确认她是否符合要求。| 知道有人能帮忙，已经让我放心多了。"
+  },
+  {
+    "term": "I'll check the website now",
+    "conversation_id": "70251",
+    "sentence_id": 14,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈi'll ˈcheck ˈthe ˈwebsite ˈnow/",
+    "example": "_Thank you for the information_. | _I'll check the website now_ _to confirm if she meets the requirements_. | _Just knowing someone can help_ _is already a huge relief_.",
+    "example_chinese": "谢谢你提供的信息。| 我现在就去网站上看看，| 确认她是否符合要求。| 知道有人能帮忙，已经让我放心多了。"
+  },
+  {
+    "term": "to confirm if she meets the requirements",
+    "conversation_id": "70251",
+    "sentence_id": 14,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈto ˈconfirm ˈif ˈshe ˈmeets ˈthe ˈrequirements/",
+    "example": "_Thank you for the information_. | _I'll check the website now_ _to confirm if she meets the requirements_. | _Just knowing someone can help_ _is already a huge relief_.",
+    "example_chinese": "谢谢你提供的信息。| 我现在就去网站上看看，| 确认她是否符合要求。| 知道有人能帮忙，已经让我放心多了。"
+  },
+  {
+    "term": "Just knowing someone can help",
+    "conversation_id": "70251",
+    "sentence_id": 14,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈjust ˈknowing ˈsomeone ˈcan ˈhelp/",
+    "example": "_Thank you for the information_. | _I'll check the website now_ _to confirm if she meets the requirements_. | _Just knowing someone can help_ _is already a huge relief_.",
+    "example_chinese": "谢谢你提供的信息。| 我现在就去网站上看看，| 确认她是否符合要求。| 知道有人能帮忙，已经让我放心多了。"
+  },
+  {
+    "term": "is already a huge relief",
+    "conversation_id": "70251",
+    "sentence_id": 14,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈis ˈalready ˈa ˈhuge ˈrelief/",
+    "example": "_Thank you for the information_. | _I'll check the website now_ _to confirm if she meets the requirements_. | _Just knowing someone can help_ _is already a huge relief_.",
+    "example_chinese": "谢谢你提供的信息。| 我现在就去网站上看看，| 确认她是否符合要求。| 知道有人能帮忙，已经让我放心多了。"
+  },
+  {
+    "term": "Hey great to see you",
+    "conversation_id": "70250",
+    "sentence_id": 1,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈhey ˈgreat ˈto ˈsee ˈyou/",
+    "example": "_Hey, great to see you_! | _We've finally got a chance_ _to catch up_.",
+    "example_chinese": "嘿，好高兴见到你！| 我们终于有机会聚一聚了。"
+  },
+  {
+    "term": "We've finally got a chance",
+    "conversation_id": "70250",
+    "sentence_id": 1,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈwe've ˈfinally ˈgot ˈa ˈchance/",
+    "example": "_Hey, great to see you_! | _We've finally got a chance_ _to catch up_.",
+    "example_chinese": "嘿，好高兴见到你！| 我们终于有机会聚一聚了。"
+  },
+  {
+    "term": "to catch up",
+    "conversation_id": "70250",
+    "sentence_id": 1,
+    "difficulty": "normal",
+    "category": "social",
+    "phonetic": "UK /ˈto ˈcatch ˈup/",
+    "example": "_Hey, great to see you_! | _We've finally got a chance_ _to catch up_.",
+    "example_chinese": "嘿，好高兴见到你！| 我们终于有机会聚一聚了。"
+  },
+  {
+    "term": "Yeah it's been ages",
+    "conversation_id": "70250",
+    "sentence_id": 2,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈyeah ˈit's ˈbeen ˈages/",
+    "example": "_Yeah, it's been ages_ _since we last sat down_ | _to enjoy coffee and chat_. / _Right, we haven't had a chance_ _to relax over coffee and talk in so long_.",
+    "example_chinese": "对啊，咱们好久没坐下来| 慢慢喝咖啡聊聊天了。"
+  },
+  {
+    "term": "since we last sat down",
+    "conversation_id": "70250",
+    "sentence_id": 2,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈsince ˈwe ˈlast ˈsat ˈdown/",
+    "example": "_Yeah, it's been ages_ _since we last sat down_ | _to enjoy coffee and chat_. / _Right, we haven't had a chance_ _to relax over coffee and talk in so long_.",
+    "example_chinese": "对啊，咱们好久没坐下来| 慢慢喝咖啡聊聊天了。"
+  },
+  {
+    "term": "to enjoy coffee and chat",
+    "conversation_id": "70250",
+    "sentence_id": 2,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈto ˈenjoy ˈcoffee ˈand ˈchat/",
+    "example": "_Yeah, it's been ages_ _since we last sat down_ | _to enjoy coffee and chat_. / _Right, we haven't had a chance_ _to relax over coffee and talk in so long_.",
+    "example_chinese": "对啊，咱们好久没坐下来| 慢慢喝咖啡聊聊天了。"
+  },
+  {
+    "term": "Right we haven't had a chance",
+    "conversation_id": "70250",
+    "sentence_id": 2,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈright ˈwe ˈhaven't ˈhad ˈa ˈchance/",
+    "example": "_Yeah, it's been ages_ _since we last sat down_ | _to enjoy coffee and chat_. / _Right, we haven't had a chance_ _to relax over coffee and talk in so long_.",
+    "example_chinese": "对啊，咱们好久没坐下来| 慢慢喝咖啡聊聊天了。"
+  },
+  {
+    "term": "to relax over coffee and talk in so long",
+    "conversation_id": "70250",
+    "sentence_id": 2,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈto ˈrelax ˈover ˈcoffee ˈand ˈtalk ˈin ˈso ˈlong/",
+    "example": "_Yeah, it's been ages_ _since we last sat down_ | _to enjoy coffee and chat_. / _Right, we haven't had a chance_ _to relax over coffee and talk in so long_.",
+    "example_chinese": "对啊，咱们好久没坐下来| 慢慢喝咖啡聊聊天了。"
+  },
+  {
+    "term": "How's your day going",
+    "conversation_id": "70250",
+    "sentence_id": 3,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈhow's ˈyour ˈday ˈgoing/",
+    "example": "_How's your day going_? | _You mentioned you were browsing_ _the mall before coming here_ _to meet me_.",
+    "example_chinese": "你今天过得怎么样？| 你说你来这跟我见面之前| 还在逛商场呢。"
+  },
+  {
+    "term": "You mentioned you were browsing",
+    "conversation_id": "70250",
+    "sentence_id": 3,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈyou ˈmentioned ˈyou ˈwere ˈbrowsing/",
+    "example": "_How's your day going_? | _You mentioned you were browsing_ _the mall before coming here_ _to meet me_.",
+    "example_chinese": "你今天过得怎么样？| 你说你来这跟我见面之前| 还在逛商场呢。"
+  },
+  {
+    "term": "the mall before coming here",
+    "conversation_id": "70250",
+    "sentence_id": 3,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈthe ˈmall ˈbefore ˈcoming ˈhere/",
+    "example": "_How's your day going_? | _You mentioned you were browsing_ _the mall before coming here_ _to meet me_.",
+    "example_chinese": "你今天过得怎么样？| 你说你来这跟我见面之前| 还在逛商场呢。"
+  },
+  {
+    "term": "to meet me",
+    "conversation_id": "70250",
+    "sentence_id": 3,
+    "difficulty": "normal",
+    "category": "social",
+    "phonetic": "UK /ˈto ˈmeet ˈme/",
+    "example": "_How's your day going_? | _You mentioned you were browsing_ _the mall before coming here_ _to meet me_.",
+    "example_chinese": "你今天过得怎么样？| 你说你来这跟我见面之前| 还在逛商场呢。"
+  },
+  {
+    "term": "Yeah I just want to buy",
+    "conversation_id": "70250",
+    "sentence_id": 4,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈyeah ˈi ˈjust ˈwant ˈto ˈbuy/",
+    "example": "_Yeah, I just want to buy_ _a new lounge chair_, | _so I've been looking around/browsing the mall_ | _for one that feels really nice/for a good-quality one_.",
+    "example_chinese": "对，我就是想买把新休闲椅，| 所以一直在商场里逛，| 想挑个质感好的。"
+  },
+  {
+    "term": "a new lounge chair",
+    "conversation_id": "70250",
+    "sentence_id": 4,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈa ˈnew ˈlounge ˈchair/",
+    "example": "_Yeah, I just want to buy_ _a new lounge chair_, | _so I've been looking around/browsing the mall_ | _for one that feels really nice/for a good-quality one_.",
+    "example_chinese": "对，我就是想买把新休闲椅，| 所以一直在商场里逛，| 想挑个质感好的。"
+  },
+  {
+    "term": "so I've been looking around/browsing the mall",
+    "conversation_id": "70250",
+    "sentence_id": 4,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈso ˈi've ˈbeen ˈlooking ˈaround/browsing ˈthe ˈmall/",
+    "example": "_Yeah, I just want to buy_ _a new lounge chair_, | _so I've been looking around/browsing the mall_ | _for one that feels really nice/for a good-quality one_.",
+    "example_chinese": "对，我就是想买把新休闲椅，| 所以一直在商场里逛，| 想挑个质感好的。"
+  },
+  {
+    "term": "for one that feels really nice/for a good-quality one",
+    "conversation_id": "70250",
+    "sentence_id": 4,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈfor ˈone ˈthat ˈfeels ˈreally ˈnice/for ˈa ˈgood-quality ˈone/",
+    "example": "_Yeah, I just want to buy_ _a new lounge chair_, | _so I've been looking around/browsing the mall_ | _for one that feels really nice/for a good-quality one_.",
+    "example_chinese": "对，我就是想买把新休闲椅，| 所以一直在商场里逛，| 想挑个质感好的。"
+  },
+  {
+    "term": "That's awesome",
+    "conversation_id": "70250",
+    "sentence_id": 5,
+    "difficulty": "normal",
+    "category": "social",
+    "phonetic": "UK /ˈthat's ˈawesome/",
+    "example": "_That's awesome_. | _Big stores have loads of options_. | _But furniture can be expensive_, | _depending on what you want_.",
+    "example_chinese": "那太好了。| 大商场的选择多得很。| 不过家具可不便宜啊，| 这要看你想要什么样的了。"
+  },
+  {
+    "term": "Big stores have loads of options",
+    "conversation_id": "70250",
+    "sentence_id": 5,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈbig ˈstores ˈhave ˈloads ˈof ˈoptions/",
+    "example": "_That's awesome_. | _Big stores have loads of options_. | _But furniture can be expensive_, | _depending on what you want_.",
+    "example_chinese": "那太好了。| 大商场的选择多得很。| 不过家具可不便宜啊，| 这要看你想要什么样的了。"
+  },
+  {
+    "term": "But furniture can be expensive",
+    "conversation_id": "70250",
+    "sentence_id": 5,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈbut ˈfurniture ˈcan ˈbe ˈexpensive/",
+    "example": "_That's awesome_. | _Big stores have loads of options_. | _But furniture can be expensive_, | _depending on what you want_.",
+    "example_chinese": "那太好了。| 大商场的选择多得很。| 不过家具可不便宜啊，| 这要看你想要什么样的了。"
+  },
+  {
+    "term": "depending on what you want",
+    "conversation_id": "70250",
+    "sentence_id": 5,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈdepending ˈon ˈwhat ˈyou ˈwant/",
+    "example": "_That's awesome_. | _Big stores have loads of options_. | _But furniture can be expensive_, | _depending on what you want_.",
+    "example_chinese": "那太好了。| 大商场的选择多得很。| 不过家具可不便宜啊，| 这要看你想要什么样的了。"
+  },
+  {
+    "term": "I spotted a cream-colored",
+    "conversation_id": "70250",
+    "sentence_id": 6,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈi ˈspotted ˈa ˈcream-colored/",
+    "example": "_I spotted a cream-colored_ _leather sofa that I really like_, | _but it isn't cheap_. | _I'm not sure which payment method_ _makes the most sense_.",
+    "example_chinese": "我看上了一款奶油色皮质沙发，| 很对我胃口，可价格不算低。| 我不太确定最划算的| 付款方式是怎样的。"
+  },
+  {
+    "term": "leather sofa that I really like",
+    "conversation_id": "70250",
+    "sentence_id": 6,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈleather ˈsofa ˈthat ˈi ˈreally ˈlike/",
+    "example": "_I spotted a cream-colored_ _leather sofa that I really like_, | _but it isn't cheap_. | _I'm not sure which payment method_ _makes the most sense_.",
+    "example_chinese": "我看上了一款奶油色皮质沙发，| 很对我胃口，可价格不算低。| 我不太确定最划算的| 付款方式是怎样的。"
+  },
+  {
+    "term": "but it isn't cheap",
+    "conversation_id": "70250",
+    "sentence_id": 6,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈbut ˈit ˈisn't ˈcheap/",
+    "example": "_I spotted a cream-colored_ _leather sofa that I really like_, | _but it isn't cheap_. | _I'm not sure which payment method_ _makes the most sense_.",
+    "example_chinese": "我看上了一款奶油色皮质沙发，| 很对我胃口，可价格不算低。| 我不太确定最划算的| 付款方式是怎样的。"
+  },
+  {
+    "term": "I'm not sure which payment method",
+    "conversation_id": "70250",
+    "sentence_id": 6,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈi'm ˈnot ˈsure ˈwhich ˈpayment ˈmethod/",
+    "example": "_I spotted a cream-colored_ _leather sofa that I really like_, | _but it isn't cheap_. | _I'm not sure which payment method_ _makes the most sense_.",
+    "example_chinese": "我看上了一款奶油色皮质沙发，| 很对我胃口，可价格不算低。| 我不太确定最划算的| 付款方式是怎样的。"
+  },
+  {
+    "term": "makes the most sense",
+    "conversation_id": "70250",
+    "sentence_id": 6,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈmakes ˈthe ˈmost ˈsense/",
+    "example": "_I spotted a cream-colored_ _leather sofa that I really like_, | _but it isn't cheap_. | _I'm not sure which payment method_ _makes the most sense_.",
+    "example_chinese": "我看上了一款奶油色皮质沙发，| 很对我胃口，可价格不算低。| 我不太确定最划算的| 付款方式是怎样的。"
+  },
+  {
+    "term": "You can use a credit card",
+    "conversation_id": "70250",
+    "sentence_id": 7,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈyou ˈcan ˈuse ˈa ˈcredit ˈcard/",
+    "example": "_You can use a credit card_, | _which lets you keep your money_ _for a few weeks_ _before you have to pay_.",
+    "example_chinese": "你可以使用信用卡，| 这样在你必须付款之前，| 你的钱还能多留几周。"
+  },
+  {
+    "term": "which lets you keep your money",
+    "conversation_id": "70250",
+    "sentence_id": 7,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈwhich ˈlets ˈyou ˈkeep ˈyour ˈmoney/",
+    "example": "_You can use a credit card_, | _which lets you keep your money_ _for a few weeks_ _before you have to pay_.",
+    "example_chinese": "你可以使用信用卡，| 这样在你必须付款之前，| 你的钱还能多留几周。"
+  },
+  {
+    "term": "for a few weeks",
+    "conversation_id": "70250",
+    "sentence_id": 7,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈfor ˈa ˈfew ˈweeks/",
+    "example": "_You can use a credit card_, | _which lets you keep your money_ _for a few weeks_ _before you have to pay_.",
+    "example_chinese": "你可以使用信用卡，| 这样在你必须付款之前，| 你的钱还能多留几周。"
+  },
+  {
+    "term": "before you have to pay",
+    "conversation_id": "70250",
+    "sentence_id": 7,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈbefore ˈyou ˈhave ˈto ˈpay/",
+    "example": "_You can use a credit card_, | _which lets you keep your money_ _for a few weeks_ _before you have to pay_.",
+    "example_chinese": "你可以使用信用卡，| 这样在你必须付款之前，| 你的钱还能多留几周。"
+  },
+  {
+    "term": "I try not to use a credit card",
+    "conversation_id": "70250",
+    "sentence_id": 8,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈi ˈtry ˈnot ˈto ˈuse ˈa ˈcredit ˈcard/",
+    "example": "_I try not to use a credit card_. | _But I think it should be fine_, | _as long as I pay off the balance_ _in full by the due date_.",
+    "example_chinese": "我尽量不用信用卡。| 不过，我觉得，| 在截止日期前还清欠款，| 应该就没问题了。"
+  },
+  {
+    "term": "But I think it should be fine",
+    "conversation_id": "70250",
+    "sentence_id": 8,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈbut ˈi ˈthink ˈit ˈshould ˈbe ˈfine/",
+    "example": "_I try not to use a credit card_. | _But I think it should be fine_, | _as long as I pay off the balance_ _in full by the due date_.",
+    "example_chinese": "我尽量不用信用卡。| 不过，我觉得，| 在截止日期前还清欠款，| 应该就没问题了。"
+  },
+  {
+    "term": "as long as I pay off the balance",
+    "conversation_id": "70250",
+    "sentence_id": 8,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈas ˈlong ˈas ˈi ˈpay ˈoff ˈthe ˈbalance/",
+    "example": "_I try not to use a credit card_. | _But I think it should be fine_, | _as long as I pay off the balance_ _in full by the due date_.",
+    "example_chinese": "我尽量不用信用卡。| 不过，我觉得，| 在截止日期前还清欠款，| 应该就没问题了。"
+  },
+  {
+    "term": "in full by the due date",
+    "conversation_id": "70250",
+    "sentence_id": 8,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈin ˈfull ˈby ˈthe ˈdue ˈdate/",
+    "example": "_I try not to use a credit card_. | _But I think it should be fine_, | _as long as I pay off the balance_ _in full by the due date_.",
+    "example_chinese": "我尽量不用信用卡。| 不过，我觉得，| 在截止日期前还清欠款，| 应该就没问题了。"
+  },
+  {
+    "term": "Credit cards charge interest",
+    "conversation_id": "70250",
+    "sentence_id": 9,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈcredit ˈcards ˈcharge ˈinterest/",
+    "example": "_Credit cards charge interest_, | _so be sure to pay on time_ _to avoid extra fees_.",
+    "example_chinese": "信用卡会收利息的，| 所以务必要按时还款，| 以避免产生额外费用。"
+  },
+  {
+    "term": "so be sure to pay on time",
+    "conversation_id": "70250",
+    "sentence_id": 9,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈso ˈbe ˈsure ˈto ˈpay ˈon ˈtime/",
+    "example": "_Credit cards charge interest_, | _so be sure to pay on time_ _to avoid extra fees_.",
+    "example_chinese": "信用卡会收利息的，| 所以务必要按时还款，| 以避免产生额外费用。"
+  },
+  {
+    "term": "to avoid extra fees",
+    "conversation_id": "70250",
+    "sentence_id": 9,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈto ˈavoid ˈextra ˈfees/",
+    "example": "_Credit cards charge interest_, | _so be sure to pay on time_ _to avoid extra fees_.",
+    "example_chinese": "信用卡会收利息的，| 所以务必要按时还款，| 以避免产生额外费用。"
+  },
+  {
+    "term": "Okay If I pay by credit card",
+    "conversation_id": "70250",
+    "sentence_id": 10,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈokay ˈif ˈi ˈpay ˈby ˈcredit ˈcard/",
+    "example": "_Okay. If I pay by credit card_, | _I can also earn credits/points_ | _and redeem for other products_.",
+    "example_chinese": "好的。如果我用信用卡付款，| 还能获得积分，| 还可以兑换其他商品。"
+  },
+  {
+    "term": "I can also earn credits/points",
+    "conversation_id": "70250",
+    "sentence_id": 10,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈi ˈcan ˈalso ˈearn ˈcredits/points/",
+    "example": "_Okay. If I pay by credit card_, | _I can also earn credits/points_ | _and redeem for other products_.",
+    "example_chinese": "好的。如果我用信用卡付款，| 还能获得积分，| 还可以兑换其他商品。"
+  },
+  {
+    "term": "and redeem for other products",
+    "conversation_id": "70250",
+    "sentence_id": 10,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈand ˈredeem ˈfor ˈother ˈproducts/",
+    "example": "_Okay. If I pay by credit card_, | _I can also earn credits/points_ | _and redeem for other products_.",
+    "example_chinese": "好的。如果我用信用卡付款，| 还能获得积分，| 还可以兑换其他商品。"
+  },
+  {
+    "term": "It's smart to think about",
+    "conversation_id": "70250",
+    "sentence_id": 11,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈit's ˈsmart ˈto ˈthink ˈabout/",
+    "example": "_It's smart to think about_ _your best payment options_ _for big purchases_. | _You could save money_ _or make it easier to pay_.",
+    "example_chinese": "考虑一下大额消费的| 最佳付款方式是明智的。| 你可能可以省钱，| 或者让付款更轻松。"
+  },
+  {
+    "term": "your best payment options",
+    "conversation_id": "70250",
+    "sentence_id": 11,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈyour ˈbest ˈpayment ˈoptions/",
+    "example": "_It's smart to think about_ _your best payment options_ _for big purchases_. | _You could save money_ _or make it easier to pay_.",
+    "example_chinese": "考虑一下大额消费的| 最佳付款方式是明智的。| 你可能可以省钱，| 或者让付款更轻松。"
+  },
+  {
+    "term": "for big purchases",
+    "conversation_id": "70250",
+    "sentence_id": 11,
+    "difficulty": "normal",
+    "category": "social",
+    "phonetic": "UK /ˈfor ˈbig ˈpurchases/",
+    "example": "_It's smart to think about_ _your best payment options_ _for big purchases_. | _You could save money_ _or make it easier to pay_.",
+    "example_chinese": "考虑一下大额消费的| 最佳付款方式是明智的。| 你可能可以省钱，| 或者让付款更轻松。"
+  },
+  {
+    "term": "You could save money",
+    "conversation_id": "70250",
+    "sentence_id": 11,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈyou ˈcould ˈsave ˈmoney/",
+    "example": "_It's smart to think about_ _your best payment options_ _for big purchases_. | _You could save money_ _or make it easier to pay_.",
+    "example_chinese": "考虑一下大额消费的| 最佳付款方式是明智的。| 你可能可以省钱，| 或者让付款更轻松。"
+  },
+  {
+    "term": "or make it easier to pay",
+    "conversation_id": "70250",
+    "sentence_id": 11,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈor ˈmake ˈit ˈeasier ˈto ˈpay/",
+    "example": "_It's smart to think about_ _your best payment options_ _for big purchases_. | _You could save money_ _or make it easier to pay_.",
+    "example_chinese": "考虑一下大额消费的| 最佳付款方式是明智的。| 你可能可以省钱，| 或者让付款更轻松。"
+  },
+  {
+    "term": "I agree I'll carefully compare them tonight",
+    "conversation_id": "70250",
+    "sentence_id": 12,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈi ˈagree ˈi'll ˈcarefully ˈcompare ˈthem ˈtonight/",
+    "example": "_I agree. I'll carefully compare them tonight_ | _and decide at the store tomorrow_. | _I think that sofa_ _would look fantastic_ _in the living room_.",
+    "example_chinese": "我也这么觉得。| 我今晚好好比对一下，| 再明天去店里决定。| 我觉得这沙发放客厅| 肯定很棒。"
+  },
+  {
+    "term": "and decide at the store tomorrow",
+    "conversation_id": "70250",
+    "sentence_id": 12,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈand ˈdecide ˈat ˈthe ˈstore ˈtomorrow/",
+    "example": "_I agree. I'll carefully compare them tonight_ | _and decide at the store tomorrow_. | _I think that sofa_ _would look fantastic_ _in the living room_.",
+    "example_chinese": "我也这么觉得。| 我今晚好好比对一下，| 再明天去店里决定。| 我觉得这沙发放客厅| 肯定很棒。"
+  },
+  {
+    "term": "I think that sofa",
+    "conversation_id": "70250",
+    "sentence_id": 12,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈi ˈthink ˈthat ˈsofa/",
+    "example": "_I agree. I'll carefully compare them tonight_ | _and decide at the store tomorrow_. | _I think that sofa_ _would look fantastic_ _in the living room_.",
+    "example_chinese": "我也这么觉得。| 我今晚好好比对一下，| 再明天去店里决定。| 我觉得这沙发放客厅| 肯定很棒。"
+  },
+  {
+    "term": "would look fantastic",
+    "conversation_id": "70250",
+    "sentence_id": 12,
+    "difficulty": "normal",
+    "category": "social",
+    "phonetic": "UK /ˈwould ˈlook ˈfantastic/",
+    "example": "_I agree. I'll carefully compare them tonight_ | _and decide at the store tomorrow_. | _I think that sofa_ _would look fantastic_ _in the living room_.",
+    "example_chinese": "我也这么觉得。| 我今晚好好比对一下，| 再明天去店里决定。| 我觉得这沙发放客厅| 肯定很棒。"
+  },
+  {
+    "term": "in the living room",
+    "conversation_id": "70250",
+    "sentence_id": 12,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈin ˈthe ˈliving ˈroom/",
+    "example": "_I agree. I'll carefully compare them tonight_ | _and decide at the store tomorrow_. | _I think that sofa_ _would look fantastic_ _in the living room_.",
+    "example_chinese": "我也这么觉得。| 我今晚好好比对一下，| 再明天去店里决定。| 我觉得这沙发放客厅| 肯定很棒。"
+  },
+  {
+    "term": "Creamy leather sounds",
+    "conversation_id": "70250",
+    "sentence_id": 13,
+    "difficulty": "normal",
+    "category": "social",
+    "phonetic": "UK /ˈcreamy ˈleather ˈsounds/",
+    "example": "_Creamy leather sounds_ _a perfect choice_. | _How about we grab a slice of cake_ _with our coffee to celebrate_?",
+    "example_chinese": "奶油色的皮革，| 这选择听着太完美了。| 要不咱俩喝咖啡时| 再加块蛋糕，庆祝一下？"
+  },
+  {
+    "term": "a perfect choice",
+    "conversation_id": "70250",
+    "sentence_id": 13,
+    "difficulty": "normal",
+    "category": "social",
+    "phonetic": "UK /ˈa ˈperfect ˈchoice/",
+    "example": "_Creamy leather sounds_ _a perfect choice_. | _How about we grab a slice of cake_ _with our coffee to celebrate_?",
+    "example_chinese": "奶油色的皮革，| 这选择听着太完美了。| 要不咱俩喝咖啡时| 再加块蛋糕，庆祝一下？"
+  },
+  {
+    "term": "How about we grab a slice of cake",
+    "conversation_id": "70250",
+    "sentence_id": 13,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈhow ˈabout ˈwe ˈgrab ˈa ˈslice ˈof ˈcake/",
+    "example": "_Creamy leather sounds_ _a perfect choice_. | _How about we grab a slice of cake_ _with our coffee to celebrate_?",
+    "example_chinese": "奶油色的皮革，| 这选择听着太完美了。| 要不咱俩喝咖啡时| 再加块蛋糕，庆祝一下？"
+  },
+  {
+    "term": "with our coffee to celebrate",
+    "conversation_id": "70250",
+    "sentence_id": 13,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈwith ˈour ˈcoffee ˈto ˈcelebrate/",
+    "example": "_Creamy leather sounds_ _a perfect choice_. | _How about we grab a slice of cake_ _with our coffee to celebrate_?",
+    "example_chinese": "奶油色的皮革，| 这选择听着太完美了。| 要不咱俩喝咖啡时| 再加块蛋糕，庆祝一下？"
+  },
+  {
+    "term": "Sounds perfect",
+    "conversation_id": "70250",
+    "sentence_id": 14,
+    "difficulty": "normal",
+    "category": "social",
+    "phonetic": "UK /ˈsounds ˈperfect/",
+    "example": "_Sounds perfect_. | _I'm starving after_ _all that shopping_. | _Hope it all works out_.",
+    "example_chinese": "听起来很完美。| 我逛完这一圈，| 肚子都饿扁了。| 希望一切都顺利。"
+  },
+  {
+    "term": "I'm starving after",
+    "conversation_id": "70250",
+    "sentence_id": 14,
+    "difficulty": "normal",
+    "category": "social",
+    "phonetic": "UK /ˈi'm ˈstarving ˈafter/",
+    "example": "_Sounds perfect_. | _I'm starving after_ _all that shopping_. | _Hope it all works out_.",
+    "example_chinese": "听起来很完美。| 我逛完这一圈，| 肚子都饿扁了。| 希望一切都顺利。"
+  },
+  {
+    "term": "all that shopping",
+    "conversation_id": "70250",
+    "sentence_id": 14,
+    "difficulty": "normal",
+    "category": "social",
+    "phonetic": "UK /ˈall ˈthat ˈshopping/",
+    "example": "_Sounds perfect_. | _I'm starving after_ _all that shopping_. | _Hope it all works out_.",
+    "example_chinese": "听起来很完美。| 我逛完这一圈，| 肚子都饿扁了。| 希望一切都顺利。"
+  },
+  {
+    "term": "Hope it all works out",
+    "conversation_id": "70250",
+    "sentence_id": 14,
+    "difficulty": "hard",
+    "category": "social",
+    "phonetic": "UK /ˈhope ˈit ˈall ˈworks ˈout/",
+    "example": "_Sounds perfect_. | _I'm starving after_ _all that shopping_. | _Hope it all works out_.",
+    "example_chinese": "听起来很完美。| 我逛完这一圈，| 肚子都饿扁了。| 希望一切都顺利。"
+  },
+  {
+    "term": "Hello Welcome to our Bank",
+    "conversation_id": "70249",
+    "sentence_id": 1,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈhello ˈwelcome ˈto ˈour ˈbank/",
+    "example": "_Hello! Welcome to our Bank_. | _How can I help you today_?",
+    "example_chinese": "你好！欢迎来我们银行。今天有什么可以帮您的？"
+  },
+  {
+    "term": "How can I help you today",
+    "conversation_id": "70249",
+    "sentence_id": 1,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈhow ˈcan ˈi ˈhelp ˈyou ˈtoday/",
+    "example": "_Hello! Welcome to our Bank_. | _How can I help you today_?",
+    "example_chinese": "你好！欢迎来我们银行。今天有什么可以帮您的？"
+  },
+  {
+    "term": "Hello I'd like to ask about",
+    "conversation_id": "70249",
+    "sentence_id": 2,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈhello ˈi'd ˈlike ˈto ˈask ˈabout/",
+    "example": "_Hello, I'd like to ask about_ _how to send and receive international transfers/ payments_. / _I need some information on_ _how to make and receive international payments_.",
+    "example_chinese": "你好，我想咨询一下| 国际汇款和收款要怎么操作。"
+  },
+  {
+    "term": "how to send and receive international transfers/ payments",
+    "conversation_id": "70249",
+    "sentence_id": 2,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈhow ˈto ˈsend ˈand ˈreceive ˈinternational ˈtransfers/ ˈpayments/",
+    "example": "_Hello, I'd like to ask about_ _how to send and receive international transfers/ payments_. / _I need some information on_ _how to make and receive international payments_.",
+    "example_chinese": "你好，我想咨询一下| 国际汇款和收款要怎么操作。"
+  },
+  {
+    "term": "I need some information on",
+    "conversation_id": "70249",
+    "sentence_id": 2,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi ˈneed ˈsome ˈinformation ˈon/",
+    "example": "_Hello, I'd like to ask about_ _how to send and receive international transfers/ payments_. / _I need some information on_ _how to make and receive international payments_.",
+    "example_chinese": "你好，我想咨询一下| 国际汇款和收款要怎么操作。"
+  },
+  {
+    "term": "how to make and receive international payments",
+    "conversation_id": "70249",
+    "sentence_id": 2,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈhow ˈto ˈmake ˈand ˈreceive ˈinternational ˈpayments/",
+    "example": "_Hello, I'd like to ask about_ _how to send and receive international transfers/ payments_. / _I need some information on_ _how to make and receive international payments_.",
+    "example_chinese": "你好，我想咨询一下| 国际汇款和收款要怎么操作。"
+  },
+  {
+    "term": "Sure We have different options",
+    "conversation_id": "70249",
+    "sentence_id": 3,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈsure ˈwe ˈhave ˈdifferent ˈoptions/",
+    "example": "_Sure. We have different options_. | _Of course. We have a few ways to do that_. | _Will this be a one-time thing_, | _or would it be on a regular basis_?",
+    "example_chinese": "当然。我们有不同的选择。| 您是想办理一次性的交易，| 还是说这会是一项定期业务呢？"
+  },
+  {
+    "term": "Of course We have a few ways to do that",
+    "conversation_id": "70249",
+    "sentence_id": 3,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈof ˈcourse ˈwe ˈhave ˈa ˈfew ˈways ˈto ˈdo ˈthat/",
+    "example": "_Sure. We have different options_. | _Of course. We have a few ways to do that_. | _Will this be a one-time thing_, | _or would it be on a regular basis_?",
+    "example_chinese": "当然。我们有不同的选择。| 您是想办理一次性的交易，| 还是说这会是一项定期业务呢？"
+  },
+  {
+    "term": "Will this be a one-time thing",
+    "conversation_id": "70249",
+    "sentence_id": 3,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈwill ˈthis ˈbe ˈa ˈone-time ˈthing/",
+    "example": "_Sure. We have different options_. | _Of course. We have a few ways to do that_. | _Will this be a one-time thing_, | _or would it be on a regular basis_?",
+    "example_chinese": "当然。我们有不同的选择。| 您是想办理一次性的交易，| 还是说这会是一项定期业务呢？"
+  },
+  {
+    "term": "or would it be on a regular basis",
+    "conversation_id": "70249",
+    "sentence_id": 3,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈor ˈwould ˈit ˈbe ˈon ˈa ˈregular ˈbasis/",
+    "example": "_Sure. We have different options_. | _Of course. We have a few ways to do that_. | _Will this be a one-time thing_, | _or would it be on a regular basis_?",
+    "example_chinese": "当然。我们有不同的选择。| 您是想办理一次性的交易，| 还是说这会是一项定期业务呢？"
+  },
+  {
+    "term": "I need to make regular transfers",
+    "conversation_id": "70249",
+    "sentence_id": 4,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi ˈneed ˈto ˈmake ˈregular ˈtransfers/",
+    "example": "_I need to make regular transfers_. | _My family has business overseas_ / _My family is involved in business overseas_, | _so I often need to make international transfers_ _send money overseas_.",
+    "example_chinese": "我需要定期汇款。| 我有家族生意在海外，| 所以我经常需要往海外转账。"
+  },
+  {
+    "term": "My family has business overseas",
+    "conversation_id": "70249",
+    "sentence_id": 4,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈmy ˈfamily ˈhas ˈbusiness ˈoverseas/",
+    "example": "_I need to make regular transfers_. | _My family has business overseas_ / _My family is involved in business overseas_, | _so I often need to make international transfers_ _send money overseas_.",
+    "example_chinese": "我需要定期汇款。| 我有家族生意在海外，| 所以我经常需要往海外转账。"
+  },
+  {
+    "term": "My family is involved in business overseas",
+    "conversation_id": "70249",
+    "sentence_id": 4,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈmy ˈfamily ˈis ˈinvolved ˈin ˈbusiness ˈoverseas/",
+    "example": "_I need to make regular transfers_. | _My family has business overseas_ / _My family is involved in business overseas_, | _so I often need to make international transfers_ _send money overseas_.",
+    "example_chinese": "我需要定期汇款。| 我有家族生意在海外，| 所以我经常需要往海外转账。"
+  },
+  {
+    "term": "so I often need to make international transfers",
+    "conversation_id": "70249",
+    "sentence_id": 4,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈso ˈi ˈoften ˈneed ˈto ˈmake ˈinternational ˈtransfers/",
+    "example": "_I need to make regular transfers_. | _My family has business overseas_ / _My family is involved in business overseas_, | _so I often need to make international transfers_ _send money overseas_.",
+    "example_chinese": "我需要定期汇款。| 我有家族生意在海外，| 所以我经常需要往海外转账。"
+  },
+  {
+    "term": "send money overseas",
+    "conversation_id": "70249",
+    "sentence_id": 4,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈsend ˈmoney ˈoverseas/",
+    "example": "_I need to make regular transfers_. | _My family has business overseas_ / _My family is involved in business overseas_, | _so I often need to make international transfers_ _send money overseas_.",
+    "example_chinese": "我需要定期汇款。| 我有家族生意在海外，| 所以我经常需要往海外转账。"
+  },
+  {
+    "term": "I see There are two options",
+    "conversation_id": "70249",
+    "sentence_id": 5,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi ˈsee ˈthere ˈare ˈtwo ˈoptions/",
+    "example": "_I see. There are two options_ _for you to choose from_: | _international wire transfer_ | _or setting up a foreign currency account_.",
+    "example_chinese": "我明白了。您有两个选择：| 国际电汇| 或者开一个外币账户。"
+  },
+  {
+    "term": "for you to choose from",
+    "conversation_id": "70249",
+    "sentence_id": 5,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈfor ˈyou ˈto ˈchoose ˈfrom/",
+    "example": "_I see. There are two options_ _for you to choose from_: | _international wire transfer_ | _or setting up a foreign currency account_.",
+    "example_chinese": "我明白了。您有两个选择：| 国际电汇| 或者开一个外币账户。"
+  },
+  {
+    "term": "international wire transfer",
+    "conversation_id": "70249",
+    "sentence_id": 5,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈinternational ˈwire ˈtransfer/",
+    "example": "_I see. There are two options_ _for you to choose from_: | _international wire transfer_ | _or setting up a foreign currency account_.",
+    "example_chinese": "我明白了。您有两个选择：| 国际电汇| 或者开一个外币账户。"
+  },
+  {
+    "term": "or setting up a foreign currency account",
+    "conversation_id": "70249",
+    "sentence_id": 5,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈor ˈsetting ˈup ˈa ˈforeign ˈcurrency ˈaccount/",
+    "example": "_I see. There are two options_ _for you to choose from_: | _international wire transfer_ | _or setting up a foreign currency account_.",
+    "example_chinese": "我明白了。您有两个选择：| 国际电汇| 或者开一个外币账户。"
+  },
+  {
+    "term": "I think a foreign currency account might be better",
+    "conversation_id": "70249",
+    "sentence_id": 6,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi ˈthink ˈa ˈforeign ˈcurrency ˈaccount ˈmight ˈbe ˈbetter/",
+    "example": "_I think a foreign currency account might be better_, | _because it can receive payments automatically_. | _Wire transfers might require_ _more manual steps_.",
+    "example_chinese": "我觉得外币账户可能更好,| 因为可以自动收款。| 电汇可能需要更多人工的步骤。"
+  },
+  {
+    "term": "because it can receive payments automatically",
+    "conversation_id": "70249",
+    "sentence_id": 6,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈbecause ˈit ˈcan ˈreceive ˈpayments ˈautomatically/",
+    "example": "_I think a foreign currency account might be better_, | _because it can receive payments automatically_. | _Wire transfers might require_ _more manual steps_.",
+    "example_chinese": "我觉得外币账户可能更好,| 因为可以自动收款。| 电汇可能需要更多人工的步骤。"
+  },
+  {
+    "term": "Wire transfers might require",
+    "conversation_id": "70249",
+    "sentence_id": 6,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈwire ˈtransfers ˈmight ˈrequire/",
+    "example": "_I think a foreign currency account might be better_, | _because it can receive payments automatically_. | _Wire transfers might require_ _more manual steps_.",
+    "example_chinese": "我觉得外币账户可能更好,| 因为可以自动收款。| 电汇可能需要更多人工的步骤。"
+  },
+  {
+    "term": "more manual steps",
+    "conversation_id": "70249",
+    "sentence_id": 6,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈmore ˈmanual ˈsteps/",
+    "example": "_I think a foreign currency account might be better_, | _because it can receive payments automatically_. | _Wire transfers might require_ _more manual steps_.",
+    "example_chinese": "我觉得外币账户可能更好,| 因为可以自动收款。| 电汇可能需要更多人工的步骤。"
+  },
+  {
+    "term": "That makes sense",
+    "conversation_id": "70249",
+    "sentence_id": 7,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈthat ˈmakes ˈsense/",
+    "example": "_That makes sense_. | _Many clients prefer a foreign currency account_, | _as they can receive funds directly into it_.",
+    "example_chinese": "有道理。| 很多客户更喜欢外币账户，| 因为能直接收款到账户里。"
+  },
+  {
+    "term": "Many clients prefer a foreign currency account",
+    "conversation_id": "70249",
+    "sentence_id": 7,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈmany ˈclients ˈprefer ˈa ˈforeign ˈcurrency ˈaccount/",
+    "example": "_That makes sense_. | _Many clients prefer a foreign currency account_, | _as they can receive funds directly into it_.",
+    "example_chinese": "有道理。| 很多客户更喜欢外币账户，| 因为能直接收款到账户里。"
+  },
+  {
+    "term": "as they can receive funds directly into it",
+    "conversation_id": "70249",
+    "sentence_id": 7,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈas ˈthey ˈcan ˈreceive ˈfunds ˈdirectly ˈinto ˈit/",
+    "example": "_That makes sense_. | _Many clients prefer a foreign currency account_, | _as they can receive funds directly into it_.",
+    "example_chinese": "有道理。| 很多客户更喜欢外币账户，| 因为能直接收款到账户里。"
+  },
+  {
+    "term": "I'd like to know how the transfer fees",
+    "conversation_id": "70249",
+    "sentence_id": 8,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi'd ˈlike ˈto ˈknow ˈhow ˈthe ˈtransfer ˈfees/",
+    "example": "_I'd like to know how the transfer fees_ _conversion fees are charged_. | _I want to make my decision based on that_.",
+    "example_chinese": "我想了解一下，| 手续费都是怎么收的？| 我想根据这个来做决定。"
+  },
+  {
+    "term": "conversion fees are charged",
+    "conversation_id": "70249",
+    "sentence_id": 8,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈconversion ˈfees ˈare ˈcharged/",
+    "example": "_I'd like to know how the transfer fees_ _conversion fees are charged_. | _I want to make my decision based on that_.",
+    "example_chinese": "我想了解一下，| 手续费都是怎么收的？| 我想根据这个来做决定。"
+  },
+  {
+    "term": "I want to make my decision based on that",
+    "conversation_id": "70249",
+    "sentence_id": 8,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi ˈwant ˈto ˈmake ˈmy ˈdecision ˈbased ˈon ˈthat/",
+    "example": "_I'd like to know how the transfer fees_ _conversion fees are charged_. | _I want to make my decision based on that_.",
+    "example_chinese": "我想了解一下，| 手续费都是怎么收的？| 我想根据这个来做决定。"
+  },
+  {
+    "term": "International wire transfers incur flat fees",
+    "conversation_id": "70249",
+    "sentence_id": 9,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈinternational ˈwire ˈtransfers ˈincur ˈflat ˈfees/",
+    "example": "_International wire transfers incur flat fees_, | _while a foreign currency account charges_ | _conversion fees depending on the amounts_.",
+    "example_chinese": "国际电汇收一笔固定的手续费，| 而外币账户收的兑换费/手续费| 是根据交易金额来定的。"
+  },
+  {
+    "term": "while a foreign currency account charges",
+    "conversation_id": "70249",
+    "sentence_id": 9,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈwhile ˈa ˈforeign ˈcurrency ˈaccount ˈcharges/",
+    "example": "_International wire transfers incur flat fees_, | _while a foreign currency account charges_ | _conversion fees depending on the amounts_.",
+    "example_chinese": "国际电汇收一笔固定的手续费，| 而外币账户收的兑换费/手续费| 是根据交易金额来定的。"
+  },
+  {
+    "term": "conversion fees depending on the amounts",
+    "conversation_id": "70249",
+    "sentence_id": 9,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈconversion ˈfees ˈdepending ˈon ˈthe ˈamounts/",
+    "example": "_International wire transfers incur flat fees_, | _while a foreign currency account charges_ | _conversion fees depending on the amounts_.",
+    "example_chinese": "国际电汇收一笔固定的手续费，| 而外币账户收的兑换费/手续费| 是根据交易金额来定的。"
+  },
+  {
+    "term": "I'll see which option suits me better",
+    "conversation_id": "70249",
+    "sentence_id": 10,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi'll ˈsee ˈwhich ˈoption ˈsuits ˈme ˈbetter/",
+    "example": "_I'll see which option suits me better_. | _Is there any other information_ _I need to know_?",
+    "example_chinese": "我看看哪个选择更适合我吧。| 还有其他我需要了解的信息吗？"
+  },
+  {
+    "term": "Is there any other information",
+    "conversation_id": "70249",
+    "sentence_id": 10,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈis ˈthere ˈany ˈother ˈinformation/",
+    "example": "_I'll see which option suits me better_. | _Is there any other information_ _I need to know_?",
+    "example_chinese": "我看看哪个选择更适合我吧。| 还有其他我需要了解的信息吗？"
+  },
+  {
+    "term": "I need to know",
+    "conversation_id": "70249",
+    "sentence_id": 10,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi ˈneed ˈto ˈknow/",
+    "example": "_I'll see which option suits me better_. | _Is there any other information_ _I need to know_?",
+    "example_chinese": "我看看哪个选择更适合我吧。| 还有其他我需要了解的信息吗？"
+  },
+  {
+    "term": "Of course We have brochures here",
+    "conversation_id": "70249",
+    "sentence_id": 11,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈof ˈcourse ˈwe ˈhave ˈbrochures ˈhere/",
+    "example": "_Of course. We have brochures here_, | _and you can also check our website_ _for the latest fees_.",
+    "example_chinese": "当然。我们这里有小册子，| 您也可以在我们的网站上查看最新的费用信息。"
+  },
+  {
+    "term": "and you can also check our website",
+    "conversation_id": "70249",
+    "sentence_id": 11,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈand ˈyou ˈcan ˈalso ˈcheck ˈour ˈwebsite/",
+    "example": "_Of course. We have brochures here_, | _and you can also check our website_ _for the latest fees_.",
+    "example_chinese": "当然。我们这里有小册子，| 您也可以在我们的网站上查看最新的费用信息。"
+  },
+  {
+    "term": "for the latest fees",
+    "conversation_id": "70249",
+    "sentence_id": 11,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈfor ˈthe ˈlatest ˈfees/",
+    "example": "_Of course. We have brochures here_, | _and you can also check our website_ _for the latest fees_.",
+    "example_chinese": "当然。我们这里有小册子，| 您也可以在我们的网站上查看最新的费用信息。"
+  },
+  {
+    "term": "Thanks I'll look into it",
+    "conversation_id": "70249",
+    "sentence_id": 12,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈthanks ˈi'll ˈlook ˈinto ˈit/",
+    "example": "_Thanks, I'll look into it_. | _I'll get the information clear first_ _I'll figure all the information out first_ | _and then decide which way I need_.",
+    "example_chinese": "谢谢，我会去了解一下的。| 我先把这些信息弄明白，| 然后再决定我需要哪种方式。"
+  },
+  {
+    "term": "I'll get the information clear first",
+    "conversation_id": "70249",
+    "sentence_id": 12,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi'll ˈget ˈthe ˈinformation ˈclear ˈfirst/",
+    "example": "_Thanks, I'll look into it_. | _I'll get the information clear first_ _I'll figure all the information out first_ | _and then decide which way I need_.",
+    "example_chinese": "谢谢，我会去了解一下的。| 我先把这些信息弄明白，| 然后再决定我需要哪种方式。"
+  },
+  {
+    "term": "I'll figure all the information out first",
+    "conversation_id": "70249",
+    "sentence_id": 12,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi'll ˈfigure ˈall ˈthe ˈinformation ˈout ˈfirst/",
+    "example": "_Thanks, I'll look into it_. | _I'll get the information clear first_ _I'll figure all the information out first_ | _and then decide which way I need_.",
+    "example_chinese": "谢谢，我会去了解一下的。| 我先把这些信息弄明白，| 然后再决定我需要哪种方式。"
+  },
+  {
+    "term": "and then decide which way I need",
+    "conversation_id": "70249",
+    "sentence_id": 12,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈand ˈthen ˈdecide ˈwhich ˈway ˈi ˈneed/",
+    "example": "_Thanks, I'll look into it_. | _I'll get the information clear first_ _I'll figure all the information out first_ | _and then decide which way I need_.",
+    "example_chinese": "谢谢，我会去了解一下的。| 我先把这些信息弄明白，| 然后再决定我需要哪种方式。"
+  },
+  {
+    "term": "You can apply online",
+    "conversation_id": "70249",
+    "sentence_id": 13,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈyou ˈcan ˈapply ˈonline/",
+    "example": "_You can apply online_. | _As you are an existing customer_, | _the process will be fairly streamlined_, | _and the approval to set up the account_ _will be quick_.",
+    "example_chinese": "您可以在网上申请。| 因为您是现有客户，| 流程会很高效/简化/简单，| 开户审批也会很快。"
+  },
+  {
+    "term": "As you are an existing customer",
+    "conversation_id": "70249",
+    "sentence_id": 13,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈas ˈyou ˈare ˈan ˈexisting ˈcustomer/",
+    "example": "_You can apply online_. | _As you are an existing customer_, | _the process will be fairly streamlined_, | _and the approval to set up the account_ _will be quick_.",
+    "example_chinese": "您可以在网上申请。| 因为您是现有客户，| 流程会很高效/简化/简单，| 开户审批也会很快。"
+  },
+  {
+    "term": "the process will be fairly streamlined",
+    "conversation_id": "70249",
+    "sentence_id": 13,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈthe ˈprocess ˈwill ˈbe ˈfairly ˈstreamlined/",
+    "example": "_You can apply online_. | _As you are an existing customer_, | _the process will be fairly streamlined_, | _and the approval to set up the account_ _will be quick_.",
+    "example_chinese": "您可以在网上申请。| 因为您是现有客户，| 流程会很高效/简化/简单，| 开户审批也会很快。"
+  },
+  {
+    "term": "and the approval to set up the account",
+    "conversation_id": "70249",
+    "sentence_id": 13,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈand ˈthe ˈapproval ˈto ˈset ˈup ˈthe ˈaccount/",
+    "example": "_You can apply online_. | _As you are an existing customer_, | _the process will be fairly streamlined_, | _and the approval to set up the account_ _will be quick_.",
+    "example_chinese": "您可以在网上申请。| 因为您是现有客户，| 流程会很高效/简化/简单，| 开户审批也会很快。"
+  },
+  {
+    "term": "will be quick",
+    "conversation_id": "70249",
+    "sentence_id": 13,
+    "difficulty": "normal",
+    "category": "business",
+    "phonetic": "UK /ˈwill ˈbe ˈquick/",
+    "example": "_You can apply online_. | _As you are an existing customer_, | _the process will be fairly streamlined_, | _and the approval to set up the account_ _will be quick_.",
+    "example_chinese": "您可以在网上申请。| 因为您是现有客户，| 流程会很高效/简化/简单，| 开户审批也会很快。"
+  },
+  {
+    "term": "Thank you that's great",
+    "conversation_id": "70249",
+    "sentence_id": 14,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈthank ˈyou ˈthat's ˈgreat/",
+    "example": "_Thank you, that's great_. | _I need to get this done_ _as soon as possible_. | _You've helped me a lot_ / _You've been a great help_.",
+    "example_chinese": "谢谢，太好了。| 我需要尽快办理，| 你真是帮了我大忙。"
+  },
+  {
+    "term": "I need to get this done",
+    "conversation_id": "70249",
+    "sentence_id": 14,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈi ˈneed ˈto ˈget ˈthis ˈdone/",
+    "example": "_Thank you, that's great_. | _I need to get this done_ _as soon as possible_. | _You've helped me a lot_ / _You've been a great help_.",
+    "example_chinese": "谢谢，太好了。| 我需要尽快办理，| 你真是帮了我大忙。"
+  },
+  {
+    "term": "as soon as possible",
+    "conversation_id": "70249",
+    "sentence_id": 14,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈas ˈsoon ˈas ˈpossible/",
+    "example": "_Thank you, that's great_. | _I need to get this done_ _as soon as possible_. | _You've helped me a lot_ / _You've been a great help_.",
+    "example_chinese": "谢谢，太好了。| 我需要尽快办理，| 你真是帮了我大忙。"
+  },
+  {
+    "term": "You've helped me a lot",
+    "conversation_id": "70249",
+    "sentence_id": 14,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈyou've ˈhelped ˈme ˈa ˈlot/",
+    "example": "_Thank you, that's great_. | _I need to get this done_ _as soon as possible_. | _You've helped me a lot_ / _You've been a great help_.",
+    "example_chinese": "谢谢，太好了。| 我需要尽快办理，| 你真是帮了我大忙。"
+  },
+  {
+    "term": "You've been a great help",
+    "conversation_id": "70249",
+    "sentence_id": 14,
+    "difficulty": "hard",
+    "category": "business",
+    "phonetic": "UK /ˈyou've ˈbeen ˈa ˈgreat ˈhelp/",
+    "example": "_Thank you, that's great_. | _I need to get this done_ _as soon as possible_. | _You've helped me a lot_ / _You've been a great help_.",
+    "example_chinese": "谢谢，太好了。| 我需要尽快办理，| 你真是帮了我大忙。"
+  },
+  {
     "term": "Hi welcome to the council",
     "conversation_id": "70248",
     "sentence_id": 1,

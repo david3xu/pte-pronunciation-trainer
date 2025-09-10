@@ -1,26 +1,61 @@
 {
   "summary": {
-    "totalDialogues": 91,
-    "totalVocabularyTerms": 5695,
-    "processedAt": "2025-09-09T04:53:01.192Z",
+    "totalDialogues": 96,
+    "totalVocabularyTerms": 5977,
+    "processedAt": "2025-09-10T09:26:11.807Z",
     "sourceFile": "merged-conversations.md",
     "processingErrors": 0,
-    "processingWarnings": 26
+    "processingWarnings": 27
   },
   "categoryDistribution": {
-    "social": 36,
-    "business": 37,
+    "business": 40,
+    "social": 38,
     "medical": 3,
     "legal": 9,
     "education": 5,
     "immigration": 1
   },
   "difficultyDistribution": {
-    "hard": 4691,
-    "normal": 978,
+    "hard": 4932,
+    "normal": 1019,
     "easy": 26
   },
   "dialogueList": [
+    {
+      "id": "70253",
+      "title": "Inquiring About House Extension Approval",
+      "category": "business",
+      "vocabularyCount": 53,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70252",
+      "title": "Suite Bathroom Design Clarification 3",
+      "category": "business",
+      "vocabularyCount": 67,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70251",
+      "title": "In-home support program for the elderly",
+      "category": "social",
+      "vocabularyCount": 53,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70250",
+      "title": "A New Creamy Leather Lounge Chair 3",
+      "category": "social",
+      "vocabularyCount": 57,
+      "sentenceCount": 14
+    },
+    {
+      "id": "70249",
+      "title": "Wire Transfer and Foreign Currency Account",
+      "category": "business",
+      "vocabularyCount": 52,
+      "sentenceCount": 14
+    },
     {
       "id": "70248",
       "title": "New Council Employee Helps Community Centre 2",

@@ -1,7 +1,703 @@
 {
   "source": "words.md",
-  "generatedAt": "2025-09-09T04:53:11.393Z",
+  "generatedAt": "2025-09-10T09:26:22.403Z",
   "words": [
+    {
+      "term": "council planning office",
+      "dialogueId": 70253
+    },
+    {
+      "term": "overseas",
+      "dialogueId": 70253
+    },
+    {
+      "term": "renovate",
+      "dialogueId": 70253
+    },
+    {
+      "term": "approval",
+      "dialogueId": 70253
+    },
+    {
+      "term": "council approval",
+      "dialogueId": 70253
+    },
+    {
+      "term": "updating",
+      "dialogueId": 70253
+    },
+    {
+      "term": "bathroom",
+      "dialogueId": 70253
+    },
+    {
+      "term": "a major building work",
+      "dialogueId": 70253
+    },
+    {
+      "term": "extend",
+      "dialogueId": 70253
+    },
+    {
+      "term": "add",
+      "dialogueId": 70253
+    },
+    {
+      "term": "definitely",
+      "dialogueId": 70253
+    },
+    {
+      "term": "a big project",
+      "dialogueId": 70253
+    },
+    {
+      "term": "submit",
+      "dialogueId": 70253
+    },
+    {
+      "term": "a development application",
+      "dialogueId": 70253
+    },
+    {
+      "term": "council",
+      "dialogueId": 70253
+    },
+    {
+      "term": "architectural drawings",
+      "dialogueId": 70253
+    },
+    {
+      "term": "site plans",
+      "dialogueId": 70253
+    },
+    {
+      "term": "approval process",
+      "dialogueId": 70253
+    },
+    {
+      "term": "as soon as possible",
+      "dialogueId": 70253
+    },
+    {
+      "term": "complexity",
+      "dialogueId": 70253
+    },
+    {
+      "term": "objections",
+      "dialogueId": 70253
+    },
+    {
+      "term": "neighbors",
+      "dialogueId": 70253
+    },
+    {
+      "term": "process",
+      "dialogueId": 70253
+    },
+    {
+      "term": "complicated",
+      "dialogueId": 70253
+    },
+    {
+      "term": "the council's review",
+      "dialogueId": 70253
+    },
+    {
+      "term": "take this long",
+      "dialogueId": 70253
+    },
+    {
+      "term": "complain",
+      "dialogueId": 70253
+    },
+    {
+      "term": "affects",
+      "dialogueId": 70253
+    },
+    {
+      "term": "privacy",
+      "dialogueId": 70253
+    },
+    {
+      "term": "backyard",
+      "dialogueId": 70253
+    },
+    {
+      "term": "complaints",
+      "dialogueId": 70253
+    },
+    {
+      "term": "be upheld",
+      "dialogueId": 70253
+    },
+    {
+      "term": "though",
+      "dialogueId": 70253
+    },
+    {
+      "term": "extension",
+      "dialogueId": 70253
+    },
+    {
+      "term": "reject",
+      "dialogueId": 70253
+    },
+    {
+      "term": "make changes",
+      "dialogueId": 70253
+    },
+    {
+      "term": "smoothly",
+      "dialogueId": 70253
+    },
+    {
+      "term": "cause",
+      "dialogueId": 70253
+    },
+    {
+      "term": "delays",
+      "dialogueId": 70253
+    },
+    {
+      "term": "any missing information",
+      "dialogueId": 70253
+    },
+    {
+      "term": "debating",
+      "dialogueId": 70252
+    },
+    {
+      "term": "light-colored",
+      "dialogueId": 70252
+    },
+    {
+      "term": "timber flooring",
+      "dialogueId": 70252
+    },
+    {
+      "term": "tiles",
+      "dialogueId": 70252
+    },
+    {
+      "term": "living room",
+      "dialogueId": 70252
+    },
+    {
+      "term": "kitchen",
+      "dialogueId": 70252
+    },
+    {
+      "term": "mixed up",
+      "dialogueId": 70252
+    },
+    {
+      "term": "order",
+      "dialogueId": 70252
+    },
+    {
+      "term": "delivered",
+      "dialogueId": 70252
+    },
+    {
+      "term": "wood flooring",
+      "dialogueId": 70252
+    },
+    {
+      "term": "prefer",
+      "dialogueId": 70252
+    },
+    {
+      "term": "caught",
+      "dialogueId": 70252
+    },
+    {
+      "term": "workers",
+      "dialogueId": 70252
+    },
+    {
+      "term": "laying it down",
+      "dialogueId": 70252
+    },
+    {
+      "term": "struck",
+      "dialogueId": 70252
+    },
+    {
+      "term": "health department",
+      "dialogueId": 70251
+    },
+    {
+      "term": "in-home support program",
+      "dialogueId": 70251
+    },
+    {
+      "term": "elderly",
+      "dialogueId": 70251
+    },
+    {
+      "term": "a good fit",
+      "dialogueId": 70251
+    },
+    {
+      "term": "on behalf of",
+      "dialogueId": 70251
+    },
+    {
+      "term": "quite old",
+      "dialogueId": 70251
+    },
+    {
+      "term": "lives alone",
+      "dialogueId": 70251
+    },
+    {
+      "term": "some extra help",
+      "dialogueId": 70251
+    },
+    {
+      "term": "daily life",
+      "dialogueId": 70251
+    },
+    {
+      "term": "service",
+      "dialogueId": 70251
+    },
+    {
+      "term": "provides",
+      "dialogueId": 70251
+    },
+    {
+      "term": "a range of support",
+      "dialogueId": 70251
+    },
+    {
+      "term": "make sure",
+      "dialogueId": 70251
+    },
+    {
+      "term": "elderly people",
+      "dialogueId": 70251
+    },
+    {
+      "term": "Australia",
+      "dialogueId": 70251
+    },
+    {
+      "term": "live",
+      "dialogueId": 70251
+    },
+    {
+      "term": "independently",
+      "dialogueId": 70251
+    },
+    {
+      "term": "safely",
+      "dialogueId": 70251
+    },
+    {
+      "term": "promising",
+      "dialogueId": 70251
+    },
+    {
+      "term": "specific services",
+      "dialogueId": 70251
+    },
+    {
+      "term": "advanced nursing care",
+      "dialogueId": 70251
+    },
+    {
+      "term": "at this stage",
+      "dialogueId": 70251
+    },
+    {
+      "term": "assistance",
+      "dialogueId": 70251
+    },
+    {
+      "term": "meals",
+      "dialogueId": 70251
+    },
+    {
+      "term": "food preparation",
+      "dialogueId": 70251
+    },
+    {
+      "term": "bathing",
+      "dialogueId": 70251
+    },
+    {
+      "term": "personal hygiene",
+      "dialogueId": 70251
+    },
+    {
+      "term": "nursing care",
+      "dialogueId": 70251
+    },
+    {
+      "term": "support",
+      "dialogueId": 70251
+    },
+    {
+      "term": "mobility issues",
+      "dialogueId": 70251
+    },
+    {
+      "term": "home modification",
+      "dialogueId": 70251
+    },
+    {
+      "term": "cleaning",
+      "dialogueId": 70251
+    },
+    {
+      "term": "definitely",
+      "dialogueId": 70251
+    },
+    {
+      "term": "benefit",
+      "dialogueId": 70251
+    },
+    {
+      "term": "improve",
+      "dialogueId": 70251
+    },
+    {
+      "term": "quality of life",
+      "dialogueId": 70251
+    },
+    {
+      "term": "put my mind at ease",
+      "dialogueId": 70251
+    },
+    {
+      "term": "in a similar situation",
+      "dialogueId": 70251
+    },
+    {
+      "term": "received",
+      "dialogueId": 70251
+    },
+    {
+      "term": "positive feedback",
+      "dialogueId": 70251
+    },
+    {
+      "term": "eligible",
+      "dialogueId": 70251
+    },
+    {
+      "term": "arrange",
+      "dialogueId": 70251
+    },
+    {
+      "term": "in-person assessment",
+      "dialogueId": 70251
+    },
+    {
+      "term": "first step",
+      "dialogueId": 70251
+    },
+    {
+      "term": "in the process",
+      "dialogueId": 70251
+    },
+    {
+      "term": "confirm",
+      "dialogueId": 70251
+    },
+    {
+      "term": "conditions",
+      "dialogueId": 70251
+    },
+    {
+      "term": "meet",
+      "dialogueId": 70251
+    },
+    {
+      "term": "eligibility criteria",
+      "dialogueId": 70251
+    },
+    {
+      "term": "on our website",
+      "dialogueId": 70251
+    },
+    {
+      "term": "criteria",
+      "dialogueId": 70251
+    },
+    {
+      "term": "make an appointment",
+      "dialogueId": 70251
+    },
+    {
+      "term": "requirements",
+      "dialogueId": 70251
+    },
+    {
+      "term": "a huge relief",
+      "dialogueId": 70251
+    },
+    {
+      "term": "a credit card",
+      "dialogueId": 70250
+    },
+    {
+      "term": "keep your money",
+      "dialogueId": 70250
+    },
+    {
+      "term": "pay off",
+      "dialogueId": 70250
+    },
+    {
+      "term": "the balance",
+      "dialogueId": 70250
+    },
+    {
+      "term": "in full",
+      "dialogueId": 70250
+    },
+    {
+      "term": "due date",
+      "dialogueId": 70250
+    },
+    {
+      "term": "credit cards",
+      "dialogueId": 70250
+    },
+    {
+      "term": "charge",
+      "dialogueId": 70250
+    },
+    {
+      "term": "interest",
+      "dialogueId": 70250
+    },
+    {
+      "term": "be sure",
+      "dialogueId": 70250
+    },
+    {
+      "term": "pay on time",
+      "dialogueId": 70250
+    },
+    {
+      "term": "avoid",
+      "dialogueId": 70250
+    },
+    {
+      "term": "extra fees",
+      "dialogueId": 70250
+    },
+    {
+      "term": "earn credits",
+      "dialogueId": 70250
+    },
+    {
+      "term": "earn points",
+      "dialogueId": 70250
+    },
+    {
+      "term": "redeem for",
+      "dialogueId": 70250
+    },
+    {
+      "term": "other products",
+      "dialogueId": 70250
+    },
+    {
+      "term": "send",
+      "dialogueId": 70249
+    },
+    {
+      "term": "receive",
+      "dialogueId": 70249
+    },
+    {
+      "term": "make",
+      "dialogueId": 70249
+    },
+    {
+      "term": "international transfers",
+      "dialogueId": 70249
+    },
+    {
+      "term": "international payments",
+      "dialogueId": 70249
+    },
+    {
+      "term": "options",
+      "dialogueId": 70249
+    },
+    {
+      "term": "a few ways",
+      "dialogueId": 70249
+    },
+    {
+      "term": "a one-time thing",
+      "dialogueId": 70249
+    },
+    {
+      "term": "on a regular basis",
+      "dialogueId": 70249
+    },
+    {
+      "term": "make",
+      "dialogueId": 70249
+    },
+    {
+      "term": "regular transfers",
+      "dialogueId": 70249
+    },
+    {
+      "term": "business",
+      "dialogueId": 70249
+    },
+    {
+      "term": "overseas",
+      "dialogueId": 70249
+    },
+    {
+      "term": "involved in",
+      "dialogueId": 70249
+    },
+    {
+      "term": "international wire transfer",
+      "dialogueId": 70249
+    },
+    {
+      "term": "setting up",
+      "dialogueId": 70249
+    },
+    {
+      "term": "a foreign corrency account",
+      "dialogueId": 70249
+    },
+    {
+      "term": "payments",
+      "dialogueId": 70249
+    },
+    {
+      "term": "automatically",
+      "dialogueId": 70249
+    },
+    {
+      "term": "wire transfers",
+      "dialogueId": 70249
+    },
+    {
+      "term": "require",
+      "dialogueId": 70249
+    },
+    {
+      "term": "manual steps",
+      "dialogueId": 70249
+    },
+    {
+      "term": "clients",
+      "dialogueId": 70249
+    },
+    {
+      "term": "prefer",
+      "dialogueId": 70249
+    },
+    {
+      "term": "funds",
+      "dialogueId": 70249
+    },
+    {
+      "term": "directly",
+      "dialogueId": 70249
+    },
+    {
+      "term": "transfer fees",
+      "dialogueId": 70249
+    },
+    {
+      "term": "conversion fees",
+      "dialogueId": 70249
+    },
+    {
+      "term": "charged",
+      "dialogueId": 70249
+    },
+    {
+      "term": "make my decision",
+      "dialogueId": 70249
+    },
+    {
+      "term": "incur",
+      "dialogueId": 70249
+    },
+    {
+      "term": "flat fees",
+      "dialogueId": 70249
+    },
+    {
+      "term": "charges",
+      "dialogueId": 70249
+    },
+    {
+      "term": "conversion fees",
+      "dialogueId": 70249
+    },
+    {
+      "term": "amounts",
+      "dialogueId": 70249
+    },
+    {
+      "term": "suits",
+      "dialogueId": 70249
+    },
+    {
+      "term": "brochures",
+      "dialogueId": 70249
+    },
+    {
+      "term": "latest fees",
+      "dialogueId": 70249
+    },
+    {
+      "term": "look into it",
+      "dialogueId": 70249
+    },
+    {
+      "term": "figure all the information out first",
+      "dialogueId": 70249
+    },
+    {
+      "term": "apply online",
+      "dialogueId": 70249
+    },
+    {
+      "term": "an existing customer",
+      "dialogueId": 70249
+    },
+    {
+      "term": "process",
+      "dialogueId": 70249
+    },
+    {
+      "term": "fairly",
+      "dialogueId": 70249
+    },
+    {
+      "term": "streamlined",
+      "dialogueId": 70249
+    },
+    {
+      "term": "approval",
+      "dialogueId": 70249
+    },
+    {
+      "term": "set up the account",
+      "dialogueId": 70249
+    },
+    {
+      "term": "get this done",
+      "dialogueId": 70249
+    },
     {
       "term": "council",
       "dialogueId": 70248
@@ -131,7 +827,7 @@
       "dialogueId": 70247
     },
     {
-      "term": "the plans",
+      "term": "plans",
       "dialogueId": 70247
     },
     {
@@ -147,7 +843,7 @@
       "dialogueId": 70247
     },
     {
-      "term": "the workers",
+      "term": "workers",
       "dialogueId": 70247
     },
     {
@@ -199,7 +895,7 @@
       "dialogueId": 70247
     },
     {
-      "term": "the site",
+      "term": "site",
       "dialogueId": 70247
     },
     {
@@ -307,7 +1003,11 @@
       "dialogueId": 70245
     },
     {
-      "term": "start new business",
+      "term": "start",
+      "dialogueId": 70245
+    },
+    {
+      "term": "new business",
       "dialogueId": 70245
     },
     {
@@ -315,11 +1015,15 @@
       "dialogueId": 70245
     },
     {
-      "term": "applying for an ABN",
+      "term": "applying",
       "dialogueId": 70245
     },
     {
-      "term": "a registration number",
+      "term": "ABN",
+      "dialogueId": 70245
+    },
+    {
+      "term": "registration number",
       "dialogueId": 70245
     },
     {
@@ -359,15 +1063,15 @@
       "dialogueId": 70245
     },
     {
-      "term": "as a company",
+      "term": "company",
       "dialogueId": 70245
     },
     {
-      "term": "a sole trader",
+      "term": "sole trader",
       "dialogueId": 70245
     },
     {
-      "term": "a partnership",
+      "term": "partnership",
       "dialogueId": 70245
     },
     {
@@ -459,7 +1163,7 @@
       "dialogueId": 70243
     },
     {
-      "term": "the appointment",
+      "term": "appointment",
       "dialogueId": 70243
     },
     {
@@ -639,7 +1343,7 @@
       "dialogueId": 70241
     },
     {
-      "term": "the progress",
+      "term": "progress",
       "dialogueId": 70241
     },
     {
@@ -648,6 +1352,10 @@
     },
     {
       "term": "thrilled",
+      "dialogueId": 70241
+    },
+    {
+      "term": "watching",
       "dialogueId": 70241
     },
     {
@@ -671,7 +1379,7 @@
       "dialogueId": 70241
     },
     {
-      "term": "the materials",
+      "term": "materials",
       "dialogueId": 70241
     },
     {
@@ -703,7 +1411,7 @@
       "dialogueId": 70241
     },
     {
-      "term": "the suite bathroom",
+      "term": "suite bathroom",
       "dialogueId": 70241
     },
     {
@@ -723,7 +1431,7 @@
       "dialogueId": 70241
     },
     {
-      "term": "a beautiful vintage bathhub",
+      "term": "a beautiful vintage bathtub",
       "dialogueId": 70241
     },
     {
@@ -983,7 +1691,7 @@
       "dialogueId": 70239
     },
     {
-      "term": "taclking",
+      "term": "tackling",
       "dialogueId": 70239
     },
     {
@@ -1363,7 +2071,7 @@
       "dialogueId": 70237
     },
     {
-      "term": "lifting a finger",
+      "term": "without lifting a finger",
       "dialogueId": 70237
     },
     {
@@ -1371,15 +2079,11 @@
       "dialogueId": 70237
     },
     {
-      "term": "on my mobile banking app",
+      "term": "mobile banking app",
       "dialogueId": 70237
     },
     {
       "term": "activate",
-      "dialogueId": 70237
-    },
-    {
-      "term": "actually",
       "dialogueId": 70237
     },
     {
@@ -1403,11 +2107,15 @@
       "dialogueId": 70237
     },
     {
-      "term": "make banking way easier online payments",
+      "term": "make banking way easier",
       "dialogueId": 70237
     },
     {
-      "term": "getting more comfortable with",
+      "term": "online payments",
+      "dialogueId": 70237
+    },
+    {
+      "term": "getting more comfortable",
       "dialogueId": 70237
     },
     {
@@ -1447,7 +2155,7 @@
       "dialogueId": 70237
     },
     {
-      "term": "chatting face-to-face with",
+      "term": "chatting face-to-face",
       "dialogueId": 70237
     },
     {
@@ -1463,7 +2171,7 @@
       "dialogueId": 70237
     },
     {
-      "term": "that feeling",
+      "term": "feeling",
       "dialogueId": 70237
     },
     {
@@ -1496,10 +2204,6 @@
     },
     {
       "term": "banking questions",
-      "dialogueId": 70237
-    },
-    {
-      "term": "thanks a ton for your help",
       "dialogueId": 70237
     },
     {
@@ -2843,7 +3547,7 @@
       "dialogueId": 70231
     },
     {
-      "term": "socail groups",
+      "term": "social groups",
       "dialogueId": 70231
     },
     {
@@ -7395,7 +8099,7 @@
       "dialogueId": 70200
     },
     {
-      "term": "socail media platforms",
+      "term": "social media platforms",
       "dialogueId": 70200
     },
     {
@@ -9487,7 +10191,7 @@
       "dialogueId": 70187
     },
     {
-      "term": "socail worker associations",
+      "term": "social worker associations",
       "dialogueId": 70187
     },
     {

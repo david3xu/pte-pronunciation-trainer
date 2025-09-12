@@ -1,9 +1,9 @@
 # CCL Dialogue Data Processing Report
 
-**Generated:** 2025-09-10T09:26:11.807Z
+**Generated:** 2025-09-12T11:02:06.322Z
 **Source File:** merged-conversations.md
 **Total Dialogues:** 96
-**Total Vocabulary Terms:** 5977
+**Total Vocabulary Terms:** 5747
 **Processing Errors:** 0
 **Processing Warnings:** 27
 
@@ -18,28 +18,28 @@
 
 ## Difficulty Distribution
 
-- **🔴 hard**: 4932 terms
-- **🟡 normal**: 1019 terms
-- **🟢 easy**: 26 terms
+- **🔴 hard**: 4752 terms
+- **🟡 normal**: 970 terms
+- **🟢 easy**: 25 terms
 
 ## Dialogue List
 
 - **💼 70253**: Inquiring About House Extension Approval (business)
   - Sentences: 14, Vocabulary: 53
 - **💼 70252**: Suite Bathroom Design Clarification 3 (business)
-  - Sentences: 14, Vocabulary: 67
+  - Sentences: 4, Vocabulary: 17
 - **👥 70251**: In-home support program for the elderly (social)
   - Sentences: 14, Vocabulary: 53
 - **👥 70250**: A New Creamy Leather Lounge Chair 3 (social)
-  - Sentences: 14, Vocabulary: 57
+  - Sentences: 4, Vocabulary: 14
 - **💼 70249**: Wire Transfer and Foreign Currency Account (business)
   - Sentences: 14, Vocabulary: 52
 - **👥 70248**: New Council Employee Helps Community Centre 2 (social)
-  - Sentences: 14, Vocabulary: 63
+  - Sentences: 4, Vocabulary: 20
 - **💼 70247**: Suite Bathroom Design Clarification 2 (business)
-  - Sentences: 14, Vocabulary: 70
+  - Sentences: 4, Vocabulary: 19
 - **👥 70246**: A New Creamy Leather Lounge Chair 2 (social)
-  - Sentences: 14, Vocabulary: 58
+  - Sentences: 4, Vocabulary: 15
 - **💼 70245**: ABN and Business Structure Questions (business)
   - Sentences: 14, Vocabulary: 58
 - **💼 70244**: Seeking Advice After Workplace Layoffs (business)

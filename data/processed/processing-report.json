@@ -1,8 +1,8 @@
 {
   "summary": {
     "totalDialogues": 96,
-    "totalVocabularyTerms": 5977,
-    "processedAt": "2025-09-10T09:26:11.807Z",
+    "totalVocabularyTerms": 5747,
+    "processedAt": "2025-09-12T11:02:06.322Z",
     "sourceFile": "merged-conversations.md",
     "processingErrors": 0,
     "processingWarnings": 27
@@ -16,9 +16,9 @@
     "immigration": 1
   },
   "difficultyDistribution": {
-    "hard": 4932,
-    "normal": 1019,
-    "easy": 26
+    "hard": 4752,
+    "normal": 970,
+    "easy": 25
   },
   "dialogueList": [
     {
@@ -32,8 +32,8 @@
       "id": "70252",
       "title": "Suite Bathroom Design Clarification 3",
       "category": "business",
-      "vocabularyCount": 67,
-      "sentenceCount": 14
+      "vocabularyCount": 17,
+      "sentenceCount": 4
     },
     {
       "id": "70251",
@@ -46,8 +46,8 @@
       "id": "70250",
       "title": "A New Creamy Leather Lounge Chair 3",
       "category": "social",
-      "vocabularyCount": 57,
-      "sentenceCount": 14
+      "vocabularyCount": 14,
+      "sentenceCount": 4
     },
     {
       "id": "70249",
@@ -60,22 +60,22 @@
       "id": "70248",
       "title": "New Council Employee Helps Community Centre 2",
       "category": "social",
-      "vocabularyCount": 63,
-      "sentenceCount": 14
+      "vocabularyCount": 20,
+      "sentenceCount": 4
     },
     {
       "id": "70247",
       "title": "Suite Bathroom Design Clarification 2",
       "category": "business",
-      "vocabularyCount": 70,
-      "sentenceCount": 14
+      "vocabularyCount": 19,
+      "sentenceCount": 4
     },
     {
       "id": "70246",
       "title": "A New Creamy Leather Lounge Chair 2",
       "category": "social",
-      "vocabularyCount": 58,
-      "sentenceCount": 14
+      "vocabularyCount": 15,
+      "sentenceCount": 4
     },
     {
       "id": "70245",

@@ -277,13 +277,8 @@ class UnfamiliarWordsProcessor {
                 categories: [...new Set(this.unfamiliarWords.map(w => w.category))],
                 version: "1.0.0"
             },
-            words: this.unfamiliarWords.sort((a, b) => {
-                // Sort by dialogue ID (descending), then by term
-                if (a.dialogueId !== b.dialogueId) {
-                    return b.dialogueId.localeCompare(a.dialogueId);
-                }
-                return a.term.localeCompare(b.term);
-            })
+            // Preserve the original order from unfamilar-words.md
+            words: this.unfamiliarWords
         };
 
         // Write to file

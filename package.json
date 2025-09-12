@@ -14,9 +14,9 @@
     "lint": "eslint src/js/**/*.js && stylelint src/css/**/*.css",
     "validate": "node scripts/validate.js",
     "clean": "rm -rf dist/ data/generated/",
-    "start": "npm run process-data && npm run dev",
+    "start": "npm run process-all-data && npm run dev",
     "deploy": "npm run build && npm run validate",
-    "vercel-build": "npm run process-data && node scripts/process-unfamiliar-words.js && npm run build"
+    "vercel-build": "npm run process-all-data && npm run build"
   },
   "keywords": [
     "ccl",

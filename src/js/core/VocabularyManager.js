@@ -16,6 +16,7 @@ class VocabularyManager {
         this.completeDataset = null;
         this.unfamiliarWordsDataset = null;
         this.wordsDataset = null; // Dataset for words.md mode
+        this.chineseEnglishDataset = null; // Dataset for Chinese-English mode
 
         // Dialogue-based category labels (groups by decade endings 0-9) - Sept 3, 2025
         this.categoryLabels = {
@@ -109,34 +110,50 @@ class VocabularyManager {
             'all-categories': { all: 0, easy: 0, normal: 0, hard: 0 }
         };
 
-        // Initialize all dialogue groups
-        Object.keys(this.dialogueGroups).forEach(groupKey => {
-            this.categoryCounts[groupKey] = { all: 0, easy: 0, normal: 0, hard: 0 };
-        });
+        // For Chinese-English mode, use simplified categories
+        if (mode === 'chinese-english') {
+            this.categoryCounts['all-categories'] = { all: 0, easy: 0, normal: 0, hard: 0 };
 
-        // Count items by dialogue group and difficulty
-        vocabularyData.forEach(item => {
-            const conversationId = parseInt(item.conversationId);
+            // Count all items as 'normal' difficulty for Chinese-English pairs
+            vocabularyData.forEach(item => {
+                this.categoryCounts['all-categories'].all++;
+                this.categoryCounts['all-categories'].normal++;
+            });
 
-            // Find which group this dialogue belongs to
-            let dialogueGroup = null;
-            for (const [groupKey, dialogueIds] of Object.entries(this.dialogueGroups)) {
-                if (dialogueIds.includes(conversationId)) {
-                    dialogueGroup = groupKey;
-                    break;
+            // Update category labels for Chinese-English mode
+            this.categoryLabels = {
+                'all-categories': `🈯 All Chinese-English Pairs (${vocabularyData.length} pairs)`
+            };
+        } else {
+            // Initialize all dialogue groups for other modes
+            Object.keys(this.dialogueGroups).forEach(groupKey => {
+                this.categoryCounts[groupKey] = { all: 0, easy: 0, normal: 0, hard: 0 };
+            });
+
+            // Count items by dialogue group and difficulty
+            vocabularyData.forEach(item => {
+                const conversationId = parseInt(item.conversationId);
+
+                // Find which group this dialogue belongs to
+                let dialogueGroup = null;
+                for (const [groupKey, dialogueIds] of Object.entries(this.dialogueGroups)) {
+                    if (dialogueIds.includes(conversationId)) {
+                        dialogueGroup = groupKey;
+                        break;
+                    }
                 }
-            }
 
-            // Count in the appropriate group
-            if (dialogueGroup) {
-                this.categoryCounts[dialogueGroup].all++;
-                this.categoryCounts[dialogueGroup][item.difficulty || 'normal']++;
-            }
+                // Count in the appropriate group
+                if (dialogueGroup) {
+                    this.categoryCounts[dialogueGroup].all++;
+                    this.categoryCounts[dialogueGroup][item.difficulty || 'normal']++;
+                }
 
-            // Always count in all-categories
-            this.categoryCounts['all-categories'].all++;
-            this.categoryCounts['all-categories'][item.difficulty || 'normal']++;
-        });
+                // Always count in all-categories
+                this.categoryCounts['all-categories'].all++;
+                this.categoryCounts['all-categories'][item.difficulty || 'normal']++;
+            });
+        }
 
         console.log(`✅ Category counts recalculated for mode ${mode}:`, this.categoryCounts);
     }
@@ -197,6 +214,8 @@ class VocabularyManager {
             return this.getDialogueData();
         } else if (this.currentLearningMode === 'words') {
             return await this.getWordsData();
+        } else if (this.currentLearningMode === 'chinese-english') {
+            return await this.getChineseEnglishData();
         } else {
             // Default: vocabulary mode
             return this.getStandardVocabularyData();
@@ -278,6 +297,23 @@ class VocabularyManager {
         }
     }
 
+    async loadChineseEnglishDataset() {
+        if (this.chineseEnglishDataset) return this.chineseEnglishDataset;
+        try {
+            console.log('📥 Loading Chinese-English dataset...');
+            const response = await fetch('/data/processed/chinese-english-dataset.json');
+            if (!response.ok) {
+                throw new Error(`Failed to load Chinese-English dataset: ${response.status} ${response.statusText}`);
+            }
+            this.chineseEnglishDataset = await response.json();
+            console.log('✅ Chinese-English dataset loaded:', this.chineseEnglishDataset.wordPairs?.length || 0, 'pairs');
+            return this.chineseEnglishDataset;
+        } catch (error) {
+            console.error('❌ Failed to load Chinese-English dataset:', error);
+            return null;
+        }
+    }
+
     async getWordsData() {
         const dataset = await this.loadWordsDataset();
         if (!dataset || !Array.isArray(dataset.words)) {
@@ -305,6 +341,36 @@ class VocabularyManager {
             totalTerms: vocabulary.length,
             generatedAt: new Date().toISOString(),
             sourceFile: 'words-dataset.json'
+        };
+    }
+
+    async getChineseEnglishData() {
+        const dataset = await this.loadChineseEnglishDataset();
+        if (!dataset || !Array.isArray(dataset.wordPairs)) {
+            console.error('Chinese-English dataset not available or invalid');
+            return { vocabulary: [], totalTerms: 0, generatedAt: new Date().toISOString(), sourceFile: 'chinese-english-dataset.json' };
+        }
+
+        // Map to standard vocabulary shape, preserving original order
+        const vocabulary = dataset.wordPairs.map((pair) => ({
+            english: pair.english,
+            chinese: pair.chinese,
+            difficulty: 'normal', // Default difficulty for Chinese-English pairs
+            example: '',
+            exampleChinese: '',
+            category: 'general', // Default category for Chinese-English pairs
+            conversationId: String(pair.dialogueId || ''),
+            conversationTitle: '',
+            sentenceNumber: 0,
+            phonetic: '',
+            source: 'chinese-english'
+        }));
+
+        return {
+            vocabulary,
+            totalTerms: vocabulary.length,
+            generatedAt: new Date().toISOString(),
+            sourceFile: 'chinese-english-dataset.json'
         };
     }
 

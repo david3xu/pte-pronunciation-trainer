@@ -57,14 +57,14 @@ class CCLPronunciationTrainer {
         const initVoices = () => {
             window.voiceSelector.populateVoiceOptions();
 
-            // Force Microsoft James selection after voices are loaded
+            // Force default voice selection after voices are loaded
             const currentVoice = window.storage.getSetting('preferredVoice');
             if (!currentVoice) {
-                // Set Microsoft James as default and save it
-                const defaultVoice = 'Microsoft James - English (Australia)';
+                // Set Google UK English Male as default and save it
+                const defaultVoice = 'Google UK English Male';
                 window.voiceSelector.setPreferredVoice(defaultVoice);
                 window.storage.saveSetting('preferredVoice', defaultVoice);
-                console.log('Forced default voice to Microsoft James for mobile compatibility');
+                console.log('Forced default voice to Google UK English Male');
 
                 // Update the UI selector
                 const voiceSelect = document.getElementById('voiceSelect');

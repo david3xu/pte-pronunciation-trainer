@@ -95,12 +95,12 @@ class UIController {
 
         document.getElementById('repeatSelect').addEventListener('change', (e) => {
             window.audioControls.setRepeatMode(e.target.value);
-            
+
             // Reset repeat count when changing mode
             window.ttsEngine.currentRepeatCount = 0;
-            
+
             console.log(`Repeat mode changed to: ${e.target.value}`);
-            
+
             // Don't override the progress display during auto-play
         });
 
@@ -113,14 +113,14 @@ class UIController {
         document.getElementById('categorySelect').addEventListener('change', () => {
             this.updateCategoryDisplay();
         });
-        
+
         this.updateCategoryDisplay(); // Initial update
     }
 
     updateCategoryDisplay() {
         const categorySelect = document.getElementById('categorySelect');
         const categoryDisplay = document.getElementById('categoryDisplay');
-        
+
         if (!categorySelect || !window.vocabularyManager.categoryCounts) return;
 
         const categoryLabels = window.vocabularyManager.categoryLabels;
@@ -129,7 +129,7 @@ class UIController {
         Array.from(categorySelect.options).forEach(option => {
             const category = option.value;
             const label = categoryLabels[category];
-            
+
             if (label && window.vocabularyManager.categoryCounts[category]) {
                 const count = window.vocabularyManager.categoryCounts[category][window.vocabularyManager.currentDifficulty] || 0;
                 let suffix = 'words';
@@ -140,7 +140,7 @@ class UIController {
                 option.textContent = `${label} (${count} ${suffix})`;
             }
         });
-        
+
         // Update the context bar display with current category name
         if (categoryDisplay) {
             const currentCategoryName = categoryLabels[window.vocabularyManager.currentCategory] || window.vocabularyManager.currentCategory;
@@ -157,7 +157,7 @@ class UIController {
         if (englishElement) {
             englishElement.textContent = word.english;
             englishElement.classList.add('word-change');
-            
+
             // Remove animation class after animation completes
             setTimeout(() => {
                 englishElement.classList.remove('word-change');
@@ -172,18 +172,27 @@ class UIController {
                 console.error('pronunciationDB not loaded!');
                 pronunciationElement.textContent = 'Pronunciation database not loaded';
             } else {
-                const pronunciation = window.pronunciationDB.getUKPronunciation(word.english);
-                console.log(`Pronunciation for "${word.english}": ${pronunciation}`);
-                pronunciationElement.textContent = pronunciation || 'Pronunciation not available';
+                // Get clean UK pronunciation only
+                const ukPronunciation = window.pronunciationDB.getPronunciationFromVocabulary(word.english, 'uk');
+                console.log(`UK Pronunciation for "${word.english}":`, ukPronunciation);
+
+                if (ukPronunciation) {
+                    // Display clean IPA notation only
+                    pronunciationElement.textContent = ukPronunciation;
+                } else {
+                    // Fallback to old method
+                    const fallbackPronunciation = window.pronunciationDB.getUKPronunciation(word.english);
+                    pronunciationElement.textContent = fallbackPronunciation || 'Pronunciation not available';
+                }
             }
             pronunciationElement.classList.add('word-change');
-            
+
             // Remove animation class after animation completes
             setTimeout(() => {
                 pronunciationElement.classList.remove('word-change');
             }, 500);
         }
-        
+
         // Update Chinese translation display
         const chineseElement = document.getElementById('chineseWord');
         if (chineseElement) {
@@ -197,9 +206,9 @@ class UIController {
                 chineseElement.style.fontStyle = 'italic';
                 chineseElement.style.opacity = '0.6';
             }
-            
+
             chineseElement.classList.add('word-change');
-            
+
             // Remove animation class after animation completes
             setTimeout(() => {
                 chineseElement.classList.remove('word-change');
@@ -213,22 +222,22 @@ class UIController {
         const exampleElement = document.getElementById('exampleSentence');
         console.log('Example debug - word.example:', word.example ? 'EXISTS' : 'MISSING');
         console.log('Example debug - word keys:', Object.keys(word));
-        
+
         if (exampleElement && word.example) {
             // Clean example sentence (remove speaker prefixes like "Jenny:", "Officer:", etc.)
             const cleanExample = this.cleanExampleSentence(word.example);
             console.log('Showing example sentence:', cleanExample);
-            
+
             // Display both English and Chinese examples
             let displayContent = `<div class="example-english">${cleanExample}</div>`;
             if (word.exampleChinese) {
                 displayContent += `<div class="example-chinese">${word.exampleChinese}</div>`;
             }
-            
+
             exampleElement.innerHTML = displayContent;
             exampleElement.style.display = 'block';
             exampleElement.classList.add('word-change');
-            
+
             setTimeout(() => {
                 exampleElement.classList.remove('word-change');
             }, 500);
@@ -267,24 +276,24 @@ class UIController {
             // Remove extra whitespace and clean up
             .replace(/\s+/g, ' ')
             .trim();
-        
+
         // Smart sentence splitting - ensure the vocabulary term appears in the displayed sentence
         console.log('Original sentence length:', cleaned.length, '- Content:', cleaned);
-        
+
         // Get the current vocabulary term to ensure it's included in the displayed sentence
         const currentWord = window.vocabularyManager?.currentWords?.[window.vocabularyManager?.currentIndex]?.english;
         console.log('Current vocabulary term:', currentWord);
-        
+
         if (cleaned.length > 50) {
             const sentences = cleaned.split(/[.!?]+/);
             console.log('Split into sentences:', sentences);
-            
+
             if (sentences.length > 1) {
                 // Find the shortest sentence that contains the vocabulary term
                 let selectedSentence = sentences[0]; // Default to first
                 let bestSentence = null;
                 let shortestLength = Infinity;
-                
+
                 if (currentWord) {
                     // Look for the vocabulary term in each sentence
                     for (let i = 0; i < sentences.length; i++) {
@@ -298,13 +307,13 @@ class UIController {
                             }
                         }
                     }
-                    
+
                     if (bestSentence) {
                         selectedSentence = bestSentence;
                         console.log(`Using shortest sentence containing term: "${selectedSentence}"`);
                     }
                 }
-                
+
                 // Clean up the selected sentence
                 selectedSentence = selectedSentence.trim();
                 if (selectedSentence.length > 15) {
@@ -325,7 +334,7 @@ class UIController {
                 console.log('Truncated at word boundary:', cleaned);
             }
         }
-        
+
         return cleaned;
     }
 
@@ -333,19 +342,19 @@ class UIController {
         // Initial word display
         const currentIndex = window.audioControls.getCurrentIndex();
         const currentWord = window.vocabularyManager.getCurrentWord(currentIndex);
-        
+
         if (currentWord) {
             this.displayWord(currentWord, currentIndex);
         } else if (window.vocabularyManager.getTotalWords() === 0) {
             window.progressTracker.updateStatus('No words available');
         }
-        
+
         // Update category display
         this.updateCategoryDisplay();
-        
+
         // Set initial UI state
         window.audioControls.showPausedUI();
-        
+
         // Update button states
         this.updateButtons();
     }
@@ -363,7 +372,7 @@ class UIController {
         const pauseBtn = document.getElementById('pauseBtn');
         const nextBtn = document.getElementById('nextBtn');
         const prevBtn = document.getElementById('prevBtn');
-        
+
         // Ensure we have vocabulary loaded
         const hasVocabulary = window.vocabularyManager.getTotalWords() > 0;
 
@@ -385,7 +394,7 @@ class UIController {
         } else {
             if (startBtn) startBtn.style.display = 'inline-block';
             if (pauseBtn) pauseBtn.style.display = 'none';
-            
+
             // Update start button state
             if (startBtn) {
                 startBtn.disabled = !hasVocabulary;

@@ -3,9 +3,9 @@
  * IPA (International Phonetic Alphabet) pronunciations for vocabulary terms
  */
 
-(function() {
+(function () {
     'use strict';
-    
+
     // Common word pronunciations database
     const wordPronunciations = {
         // Common single words
@@ -33,7 +33,7 @@
         'deliver': '/dɪˈlɪvə/',
         'finish': '/ˈfɪnɪʃ/',
         'mention': '/ˈmenʃən/',
-        
+
         // Medical terms
         'medicare': '/ˈmedɪkeə/',
         'doctor': '/ˈdɒktə/',
@@ -53,7 +53,7 @@
         'diagnosis': '/ˌdaɪəɡˈnəʊsɪs/',
         'referral': '/rɪˈfɜːrəl/',
         'consultation': '/ˌkɒnsəlˈteɪʃən/',
-        
+
         // Government/Legal terms
         'welfare': '/ˈwelfeə/',
         'payment': '/ˈpeɪmənt/',
@@ -73,7 +73,7 @@
         'lawyer': '/ˈlɔːjə/',
         'judge': '/dʒʌdʒ/',
         'evidence': '/ˈevɪdəns/',
-        
+
         // Education terms
         'school': '/skuːl/',
         'university': '/ˌjuːnɪˈvɜːsəti/',
@@ -89,7 +89,7 @@
         'degree': '/dɪˈɡriː/',
         'certificate': '/səˈtɪfɪkət/',
         'qualification': '/ˌkwɒlɪfɪˈkeɪʃən/',
-        
+
         // Business/Finance terms
         'business': '/ˈbɪznəs/',
         'finance': '/ˈfaɪnæns/',
@@ -110,7 +110,7 @@
         'bank': '/bæŋk/',
         'credit': '/ˈkredɪt/',
         'debit': '/ˈdebɪt/',
-        
+
         // Travel/Immigration terms
         'passport': '/ˈpɑːspɔːt/',
         'visa': '/ˈviːzə/',
@@ -127,7 +127,7 @@
         'tourist': '/ˈtʊərɪst/',
         'embassy': '/ˈembəsi/',
         'consulate': '/ˈkɒnsjʊlət/',
-        
+
         // Common verbs
         'go': '/ɡəʊ/',
         'come': '/kʌm/',
@@ -229,7 +229,7 @@
         'catch': '/kætʃ/',
         'draw': '/drɔː/',
         'choose': '/tʃuːz/',
-        
+
         // Banking and financial terms
         'banking': '/ˈbæŋkɪŋ/',
         'systems': '/ˈsɪstəmz/',
@@ -277,7 +277,7 @@
         'rejected': '/rɪˈdʒektɪd/',
         'approved': '/əˈpruːvd/',
         'declined': '/dɪˈklaɪnd/',
-        
+
         // Common compound words
         'double': '/ˈdʌbəl/',
         'social': '/ˈsəʊʃəl/',
@@ -345,7 +345,7 @@
         'should': '/ʃʊd/',
         'now': '/naʊ/'
     };
-    
+
     /**
      * Get pronunciation for a phrase by looking up individual words
      * @param {string} phrase - The phrase to get pronunciation for
@@ -354,11 +354,11 @@
     function getPhrasePronunciation(phrase) {
         const words = phrase.toLowerCase().split(/\s+/);
         const pronunciations = [];
-        
+
         for (const word of words) {
             // Remove common punctuation
             const cleanWord = word.replace(/[.,!?;:'"]/g, '');
-            
+
             if (wordPronunciations[cleanWord]) {
                 pronunciations.push(wordPronunciations[cleanWord]);
             } else {
@@ -366,10 +366,10 @@
                 pronunciations.push(attemptPhoneticGuess(cleanWord));
             }
         }
-        
+
         return pronunciations.join(' ');
     }
-    
+
     /**
      * Attempt to guess phonetic pronunciation for unknown words
      * @param {string} word - The word to guess pronunciation for
@@ -392,10 +392,10 @@
             'es': 'z',
             's': 's'
         };
-        
+
         // If we can't guess, show the word with tentative marker
         let guess = word;
-        
+
         // Check for common endings
         for (const [ending, sound] of Object.entries(endings)) {
             if (word.endsWith(ending)) {
@@ -407,11 +407,11 @@
                 }
             }
         }
-        
+
         // If still unknown, return with question mark to indicate uncertainty
         return `/ˈ${guess}?/`;
     }
-    
+
     /**
      * Get UK pronunciation for a term
      * @param {string} term - The term to get pronunciation for
@@ -419,24 +419,100 @@
      */
     function getUKPronunciation(term) {
         if (!term) return '';
-        
+
+        // First try to get pronunciation from vocabulary data if available
+        const vocabularyPronunciation = getPronunciationFromVocabulary(term, 'uk');
+        if (vocabularyPronunciation) {
+            return vocabularyPronunciation;
+        }
+
         const lowerTerm = term.toLowerCase().trim();
-        
+
         // Check if it's a single word in our database
         if (wordPronunciations[lowerTerm]) {
             return `UK ${wordPronunciations[lowerTerm]}`;
         }
-        
+
         // Handle phrases
         const pronunciation = getPhrasePronunciation(lowerTerm);
         return `UK ${pronunciation}`;
     }
-    
+
+    /**
+     * Get pronunciation from vocabulary data if available
+     * @param {string} term - The term to get pronunciation for
+     * @param {string} region - 'uk' or 'us'
+     * @returns {string|null} - The pronunciation string or null if not found
+     */
+    function getPronunciationFromVocabulary(term, region = 'uk') {
+        // Check if we have vocabulary data available
+        if (window.vocabularyManager && window.vocabularyManager.currentWords) {
+            const currentWords = window.vocabularyManager.currentWords;
+            const vocabularyItem = currentWords.find(item =>
+                item.english && item.english.toLowerCase() === term.toLowerCase()
+            );
+
+            if (vocabularyItem && vocabularyItem.pronunciations) {
+                const pronunciation = vocabularyItem.pronunciations[region];
+                if (pronunciation && pronunciation.ipa) {
+                    // Return IPA notation with phonetic spelling (without "sounds like")
+                    if (pronunciation.phonetic) {
+                        return `/${pronunciation.ipa}/ **${pronunciation.phonetic}**`;
+                    } else {
+                        return `/${pronunciation.ipa}/`;
+                    }
+                }
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * Get US pronunciation for a term
+     * @param {string} term - The term to get pronunciation for
+     * @returns {string} - The US pronunciation with IPA notation
+     */
+    function getUSPronunciation(term) {
+        if (!term) return '';
+
+        // First try to get pronunciation from vocabulary data if available
+        const vocabularyPronunciation = getPronunciationFromVocabulary(term, 'us');
+        if (vocabularyPronunciation) {
+            return vocabularyPronunciation;
+        }
+
+        // For now, return UK pronunciation as fallback
+        // In the future, we could add US-specific fallback logic
+        return getUKPronunciation(term).replace('UK', 'US');
+    }
+
+    /**
+     * Get both UK and US pronunciations for a term
+     * @param {string} term - The term to get pronunciation for
+     * @returns {Object} Object with UK and US pronunciations
+     */
+    function getBothPronunciations(term) {
+        if (!term) return { uk: '', us: '' };
+
+        const ukPronunciation = getPronunciationFromVocabulary(term, 'uk');
+        const usPronunciation = getPronunciationFromVocabulary(term, 'us');
+
+        return {
+            uk: ukPronunciation || getUKPronunciation(term),
+            us: usPronunciation || getUSPronunciation(term),
+            hasData: !!(ukPronunciation || usPronunciation)
+        };
+    }
+
     // Export to window
     window.pronunciationDB = {
         getUKPronunciation: getUKPronunciation,
+        getUSPronunciation: getUSPronunciation,
+        getBothPronunciations: getBothPronunciations,
+        getPronunciationFromVocabulary: getPronunciationFromVocabulary,
         wordPronunciations: wordPronunciations
     };
-    
+
     console.log('Pronunciation database loaded with', Object.keys(wordPronunciations).length, 'words');
 })();

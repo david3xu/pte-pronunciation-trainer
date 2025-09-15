@@ -4,7 +4,7 @@ class VocabularyManager {
     constructor() {
         this.currentCategory = 'all-categories';
         this.currentDifficulty = 'all';
-        this.currentLearningMode = 'vocabulary'; // vocabulary, dialogue, unfamiliar
+        this.currentLearningMode = 'chinese-english'; // vocabulary, dialogue, unfamiliar, chinese-english
         this.currentWords = [];
         this.allWords = []; // Store unfiltered words
         this.categoryCounts = {}; // Store counts per category per difficulty
@@ -351,7 +351,7 @@ class VocabularyManager {
             return { vocabulary: [], totalTerms: 0, generatedAt: new Date().toISOString(), sourceFile: 'chinese-english-dataset.json' };
         }
 
-        // Map to standard vocabulary shape, preserving original order
+        // Map to standard vocabulary shape, preserving original order and pronunciation data
         const vocabulary = dataset.wordPairs.map((pair) => ({
             english: pair.english,
             chinese: pair.chinese,
@@ -363,7 +363,12 @@ class VocabularyManager {
             conversationTitle: '',
             sentenceNumber: 0,
             phonetic: '',
-            source: 'chinese-english'
+            source: 'chinese-english',
+            // Include pronunciation data if available
+            pronunciations: pair.pronunciations || null,
+            // Legacy fields for compatibility
+            term: pair.english,
+            translation: pair.chinese
         }));
 
         return {

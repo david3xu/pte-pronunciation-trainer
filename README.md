@@ -21,6 +21,8 @@ A comprehensive web-based pronunciation training application for NAATI CCL (Cred
 
 ### 🔊 Advanced Pronunciation Training
 - **Australian English (en-AU) TTS** - Optimized for CCL exam context
+- **Default Voice**: Google UK English Male (configurable in Settings)
+- **Voice Priority**: Google UK English Male → Microsoft James (en‑AU) → other available English voices exposed by the browser/OS
 - **🎓 Difficulty-Based Learning** - Easy (55%), Normal (31%), Hard (14%) classification
 - **⚡ Auto-Play Mode** with configurable timing (2-5 second intervals, 2s default)
 - **🔄 Repeat Modes** - 1x, 2x (Slow+Normal), 3x (Slow+Normal+Fast), Loop
@@ -313,6 +315,12 @@ npm run clean        # Clean dist/ and generated/ directories
 - Edge 90+
 
 Requires Web Speech API support for pronunciation features.
+
+### Notes on Voices (Platform Differences)
+- Browsers expose system voices via the Web Speech API. Availability and names vary by device.
+- Windows typically provides Microsoft voices (e.g., "Microsoft James – English (Australia)").
+- Chrome/Android exposes Google voices (e.g., "Google UK English Male").
+- iOS (all browsers) exposes Apple voices only; select a comparable Apple English voice in Settings if Google/Microsoft names are not shown.
 
 ## Contributing
 

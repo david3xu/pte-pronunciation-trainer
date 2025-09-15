@@ -152,45 +152,63 @@ class UIController {
     displayWord(word, index) {
         if (!word) return;
 
-        // Update English word display
+        // Resolve pronunciation pieces: phonetic (no asterisks) and IPA
+        let phoneticPlain = '';
+        let ipaOnly = '';
+        if (window.pronunciationDB) {
+            const ukPron = window.pronunciationDB.getPronunciationFromVocabulary(word.english, 'uk');
+            if (ukPron) {
+                const ipaMatch = ukPron.match(/\/([^\/]+)\//);
+                const phoneticMatch = ukPron.match(/\*\*([^*]+)\*\*/);
+                ipaOnly = ipaMatch ? `/${ipaMatch[1]}/` : '';
+                phoneticPlain = phoneticMatch ? phoneticMatch[1] : '';
+            }
+        }
+
+        // Update phonetic (top)
+        const phoneticElement = document.getElementById('phoneticSpelling');
+        if (phoneticElement) {
+            if (phoneticPlain) {
+                phoneticElement.textContent = phoneticPlain;
+                phoneticElement.style.display = 'block';
+            } else {
+                phoneticElement.style.display = 'none';
+            }
+            phoneticElement.classList.add('word-change');
+            setTimeout(() => {
+                phoneticElement.classList.remove('word-change');
+            }, 500);
+        }
+
+        // Update English word (middle)
         const englishElement = document.getElementById('englishWord');
         if (englishElement) {
             englishElement.textContent = word.english;
             englishElement.classList.add('word-change');
-
-            // Remove animation class after animation completes
             setTimeout(() => {
                 englishElement.classList.remove('word-change');
             }, 500);
         }
 
-        // Update phonetic pronunciation display
+        // Update IPA (bottom)
+        const ipaElement = document.getElementById('ipaNotation');
+        if (ipaElement) {
+            if (ipaOnly) {
+                ipaElement.textContent = ipaOnly;
+                ipaElement.style.display = 'block';
+            } else {
+                ipaElement.style.display = 'none';
+            }
+            ipaElement.classList.add('word-change');
+            setTimeout(() => {
+                ipaElement.classList.remove('word-change');
+            }, 500);
+        }
+
+        // Hide old combined pronunciation if present
         const pronunciationElement = document.getElementById('pronunciationText');
         if (pronunciationElement) {
-            // Debug: Check if pronunciationDB exists
-            if (!window.pronunciationDB) {
-                console.error('pronunciationDB not loaded!');
-                pronunciationElement.textContent = 'Pronunciation database not loaded';
-            } else {
-                // Get clean UK pronunciation only
-                const ukPronunciation = window.pronunciationDB.getPronunciationFromVocabulary(word.english, 'uk');
-                console.log(`UK Pronunciation for "${word.english}":`, ukPronunciation);
-
-                if (ukPronunciation) {
-                    // Display clean IPA notation only
-                    pronunciationElement.textContent = ukPronunciation;
-                } else {
-                    // Fallback to old method
-                    const fallbackPronunciation = window.pronunciationDB.getUKPronunciation(word.english);
-                    pronunciationElement.textContent = fallbackPronunciation || 'Pronunciation not available';
-                }
-            }
-            pronunciationElement.classList.add('word-change');
-
-            // Remove animation class after animation completes
-            setTimeout(() => {
-                pronunciationElement.classList.remove('word-change');
-            }, 500);
+            pronunciationElement.style.display = 'none';
         }
 
         // Update Chinese translation display

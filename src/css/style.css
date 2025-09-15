@@ -53,6 +53,25 @@ body {
     max-width: 600px;
 }
 
+/* New pronunciation layout */
+.phonetic-spelling {
+    font-size: 44px;
+    font-weight: 800;
+    color: #000000;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    word-wrap: break-word;
+}
+
+.ipa-notation {
+    font-size: 26px;
+    font-weight: 600;
+    color: #2D3748;
+    line-height: 1.2;
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+
 /* Typography - Accessibility-first hierarchy */
 .english-word {
     font-size: 40px;
@@ -319,6 +338,12 @@ body {
     .english-word {
         font-size: 28px;
     }
+    .phonetic-spelling {
+        font-size: 30px;
+    }
+    .ipa-notation {
+        font-size: 20px;
+    }
     
     .chinese-word {
         font-size: 24px;
@@ -393,6 +418,12 @@ body {
     /* Keep desktop sizes as specified in design prototype */
     .english-word {
         font-size: 40px;
+    }
+    .phonetic-spelling {
+        font-size: 44px;
+    }
+    .ipa-notation {
+        font-size: 26px;
     }
     
     .chinese-word {

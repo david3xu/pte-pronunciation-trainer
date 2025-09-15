@@ -49,7 +49,7 @@ class SettingsPanel {
         this.applySettingToElement('speedSelect', savedSettings.speechRate);
         this.applySettingToElement('delaySelect', savedSettings.delay);
         this.applySettingToElement('repeatSelect', savedSettings.repeatMode);
-        this.applySettingToElement('voiceSelect', savedSettings.preferredVoice || 'Microsoft James - English (Australia)');
+        this.applySettingToElement('voiceSelect', savedSettings.preferredVoice || 'Google UK English Male');
 
         // Apply settings to modules
         window.vocabularyManager.currentCategory = savedSettings.category;
@@ -115,7 +115,7 @@ class SettingsPanel {
         this.applySettingToElement('speedSelect', savedSettings.speechRate);
         this.applySettingToElement('delaySelect', savedSettings.delay);
         this.applySettingToElement('repeatSelect', savedSettings.repeatMode);
-        this.applySettingToElement('voiceSelect', savedSettings.preferredVoice || 'Microsoft James - English (Australia)');
+        this.applySettingToElement('voiceSelect', savedSettings.preferredVoice || 'Google UK English Male');
 
         // Apply settings to modules
         window.vocabularyManager.currentCategory = savedSettings.category;
@@ -123,8 +123,8 @@ class SettingsPanel {
         window.ttsEngine.setSpeechRate(savedSettings.speechRate);
         window.audioControls.setDelay(savedSettings.delay);
         window.audioControls.setRepeatMode(savedSettings.repeatMode);
-        // Always set voice preference - default to Microsoft James if none saved
-        const voicePreference = savedSettings.preferredVoice || 'Microsoft James - English (Australia)';
+        // Always set voice preference - default to Google UK English Male if none saved
+        const voicePreference = savedSettings.preferredVoice || 'Google UK English Male';
         window.voiceSelector.setPreferredVoice(voicePreference);
 
         console.log('Settings loaded:', savedSettings);

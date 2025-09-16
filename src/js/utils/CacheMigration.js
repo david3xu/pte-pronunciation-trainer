@@ -1,7 +1,7 @@
 // Cache migration utility for updating old localStorage data
 class CacheMigration {
     constructor() {
-        this.currentVersion = 3; // Version 3 forces clean initialization
+        this.currentVersion = 4; // Version 4 forces clean initialization with new defaults
         this.versionKey = 'cache-version';
 
         // Mapping of old categories to new ones
@@ -50,11 +50,14 @@ class CacheMigration {
         // Set default learning mode to vocabulary
         window.storage.setItem('learningMode', 'vocabulary');
 
-        // Set default repeat mode
-        window.storage.setItem('repeatMode', '1x');
+        // Set default repeat mode to 2x (individual)
+        window.storage.setItem('repeatMode', 'individual');
 
-        // Set default pause duration
-        window.storage.setItem('delay', 1000);
+        // Set default pause duration to 2 seconds
+        window.storage.setItem('delay', 2000);
+
+        // Set default speech rate to slow (0.7)
+        window.storage.setItem('speechRate', 0.7);
 
         console.log('Default values set for clean initialization');
     }

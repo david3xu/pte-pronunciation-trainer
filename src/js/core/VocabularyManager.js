@@ -415,8 +415,12 @@ class VocabularyManager {
             const numberMatch = entry.number.toString().match(/\d+/);
             const entryNumber = numberMatch ? numberMatch[0] : '0';
 
+            // Clean up the English term - if it contains slashes (like "Behave/act"), 
+            // we need to handle it specially
+            const englishTerm = parts[0] || '';
+            
             return {
-                english: parts[0] || '',
+                english: englishTerm,
                 chinese: parts[1] || '',
                 difficulty: 'normal', // Default difficulty
                 example: '',
@@ -431,7 +435,7 @@ class VocabularyManager {
                 usPronunciation: parts[3] || '',
                 source: 'vocabulary-clean',
                 // Legacy fields for compatibility
-                term: parts[0] || '',
+                term: englishTerm,
                 translation: parts[1] || ''
             };
         });

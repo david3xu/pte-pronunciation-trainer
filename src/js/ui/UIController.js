@@ -195,7 +195,16 @@ class UIController {
         // Update English word (middle)
         const englishElement = document.getElementById('englishWord');
         if (englishElement) {
-            englishElement.textContent = word.english;
+            // For vocabulary-clean entries, make sure we're using the full word
+            // and not just the phonetic representation
+            if (word.source === 'vocabulary-clean') {
+                console.log('Vocabulary word:', word);
+                // Get the first part before any '|' character
+                const fullWord = word.english.split('/')[0].trim();
+                englishElement.textContent = fullWord;
+            } else {
+                englishElement.textContent = word.english;
+            }
             englishElement.classList.add('word-change');
             setTimeout(() => {
                 englishElement.classList.remove('word-change');

@@ -37,8 +37,8 @@ class SettingsPanel {
         const savedSettings = {
             category: window.storage.getItem('category') || 'all-categories',
             difficulty: window.storage.getItem('difficulty') || 'all',
-            speechRate: window.storage.getItem('speechRate') || 1.0,
-            delay: window.storage.getItem('delay') || 1000,
+            speechRate: window.storage.getItem('speechRate') || 0.7,
+            delay: window.storage.getItem('delay') || 2000,
             repeatMode: window.storage.getItem('repeatMode') || 'individual',
             preferredVoice: window.storage.getItem('preferredVoice') || null
         };
@@ -103,8 +103,8 @@ class SettingsPanel {
         const savedSettings = {
             category: window.storage.getItem('category') || 'all-categories',
             difficulty: window.storage.getItem('difficulty') || 'all',
-            speechRate: window.storage.getItem('speechRate') || 1.0,
-            delay: window.storage.getItem('delay') || 1000,
+            speechRate: window.storage.getItem('speechRate') || 0.7,
+            delay: window.storage.getItem('delay') || 2000,
             repeatMode: window.storage.getItem('repeatMode') || 'individual',
             preferredVoice: window.storage.getItem('preferredVoice') || null
         };

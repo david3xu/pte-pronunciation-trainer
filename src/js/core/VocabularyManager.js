@@ -17,6 +17,7 @@ class VocabularyManager {
         this.unfamiliarWordsDataset = null;
         this.wordsDataset = null; // Dataset for words.md mode
         this.chineseEnglishDataset = null; // Dataset for Chinese-English mode
+        this.vocabularyCleanDataset = null; // Dataset for vocabulary-clean mode
 
         // Dialogue-based category labels (groups by decade endings 0-9) - Sept 3, 2025
         this.categoryLabels = {
@@ -216,6 +217,8 @@ class VocabularyManager {
             return await this.getWordsData();
         } else if (this.currentLearningMode === 'chinese-english') {
             return await this.getChineseEnglishData();
+        } else if (this.currentLearningMode === 'vocabulary-clean') {
+            return await this.getVocabularyCleanData();
         } else {
             // Default: vocabulary mode
             return this.getStandardVocabularyData();
@@ -314,6 +317,23 @@ class VocabularyManager {
         }
     }
 
+    async loadVocabularyCleanDataset() {
+        if (this.vocabularyCleanDataset) return this.vocabularyCleanDataset;
+        try {
+            console.log('📥 Loading Vocabulary-Clean dataset...');
+            const response = await fetch('/data/processed/vocabulary-data.json');
+            if (!response.ok) {
+                throw new Error(`Failed to load Vocabulary-Clean dataset: ${response.status} ${response.statusText}`);
+            }
+            this.vocabularyCleanDataset = await response.json();
+            console.log('✅ Vocabulary-Clean dataset loaded:', this.vocabularyCleanDataset.entries?.length || 0, 'entries');
+            return this.vocabularyCleanDataset;
+        } catch (error) {
+            console.error('❌ Failed to load Vocabulary-Clean dataset:', error);
+            return null;
+        }
+    }
+
     async getWordsData() {
         const dataset = await this.loadWordsDataset();
         if (!dataset || !Array.isArray(dataset.words)) {
@@ -376,6 +396,56 @@ class VocabularyManager {
             totalTerms: vocabulary.length,
             generatedAt: new Date().toISOString(),
             sourceFile: 'chinese-english-dataset.json'
+        };
+    }
+
+    async getVocabularyCleanData() {
+        const dataset = await this.loadVocabularyCleanDataset();
+        if (!dataset || !Array.isArray(dataset.entries)) {
+            console.error('Vocabulary-Clean dataset not available or invalid');
+            return { vocabulary: [], totalTerms: 0, generatedAt: new Date().toISOString(), sourceFile: 'vocabulary-data.json' };
+        }
+
+        // Map to standard vocabulary shape, preserving original order and pronunciation data
+        const vocabulary = dataset.entries.map((entry) => {
+            // Parse the entry format: English | Chinese | UK Pronunciation | US Pronunciation
+            const parts = entry.content.split('|').map(part => part.trim());
+
+            // Extract the number from the entry
+            const numberMatch = entry.number.toString().match(/\d+/);
+            const entryNumber = numberMatch ? numberMatch[0] : '0';
+
+            return {
+                english: parts[0] || '',
+                chinese: parts[1] || '',
+                difficulty: 'normal', // Default difficulty
+                example: '',
+                exampleChinese: '',
+                category: 'vocabulary', // Default category for vocabulary entries
+                conversationId: entryNumber,
+                conversationTitle: 'Vocabulary',
+                sentenceNumber: parseInt(entryNumber),
+                // UK pronunciation data
+                ukPronunciation: parts[2] || '',
+                // US pronunciation data
+                usPronunciation: parts[3] || '',
+                source: 'vocabulary-clean',
+                // Legacy fields for compatibility
+                term: parts[0] || '',
+                translation: parts[1] || ''
+            };
+        });
+
+        // Update category labels for vocabulary-clean mode
+        this.categoryLabels = {
+            'all-categories': `🎓 All Vocabulary Entries (${vocabulary.length} entries)`
+        };
+
+        return {
+            vocabulary,
+            totalTerms: vocabulary.length,
+            generatedAt: new Date().toISOString(),
+            sourceFile: 'vocabulary-data.json'
         };
     }
 

@@ -28,6 +28,11 @@ class TTSEngine {
                 pronunciationRate = Math.min(this.speechRate * 1.3, 2.0); // Faster for third+
             }
 
+            // For vocabulary-clean mode, use UK pronunciation for first repeat, US for second
+            if (word.source === 'vocabulary-clean' && word.ukPronunciation && word.usPronunciation) {
+                console.log('Using vocabulary-clean pronunciation data for TTS');
+            }
+
             // Add visual feedback during speech
             const englishWordElement = document.getElementById('englishWord');
             const exampleElement = document.getElementById('exampleSentence');

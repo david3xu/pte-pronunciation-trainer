@@ -155,7 +155,19 @@ class UIController {
         // Resolve pronunciation pieces: phonetic (no asterisks) and IPA
         let phoneticPlain = '';
         let ipaOnly = '';
-        if (window.pronunciationDB) {
+
+        // Check if this is from vocabulary-clean dataset with direct pronunciation data
+        if (word.source === 'vocabulary-clean' && word.ukPronunciation) {
+            // Extract IPA and phonetic from UK pronunciation field
+            const ukPron = word.ukPronunciation;
+            const ipaMatch = ukPron.match(/\/([^\/]+)\//);
+            const phoneticMatch = ukPron.match(/\*\*([^*]+)\*\*/);
+            ipaOnly = ipaMatch ? `/${ipaMatch[1]}/` : '';
+            phoneticPlain = phoneticMatch ? phoneticMatch[1] : '';
+            console.log('Using vocabulary-clean pronunciation data:', { ipaOnly, phoneticPlain });
+        }
+        // Fallback to pronunciation database
+        else if (window.pronunciationDB) {
             const ukPron = window.pronunciationDB.getPronunciationFromVocabulary(word.english, 'uk');
             if (ukPron) {
                 const ipaMatch = ukPron.match(/\/([^\/]+)\//);

@@ -1,7 +1,7 @@
-// TTSEngine - Text-to-speech synthesis functionality  
+// TTSEngine - Text-to-speech synthesis functionality
 class TTSEngine {
     constructor() {
-        this.speechRate = 1.0;
+        this.speechRate = 0.7;
         this.currentRepeatCount = 0;
         this.targetRepeats = 2;
     }
@@ -14,10 +14,10 @@ class TTSEngine {
 
         try {
             this.currentRepeatCount = repeatCount;
-            
+
             // Clean text for TTS
             const cleanText = this.cleanTextForTTS(word.english);
-            
+
             // Get pronunciation rate based on repeat count (progressive learning)
             let pronunciationRate;
             if (this.currentRepeatCount === 0) {
@@ -31,7 +31,7 @@ class TTSEngine {
             // Add visual feedback during speech
             const englishWordElement = document.getElementById('englishWord');
             const exampleElement = document.getElementById('exampleSentence');
-            
+
             if (englishWordElement) {
                 englishWordElement.classList.add('speaking');
             }
@@ -45,21 +45,21 @@ class TTSEngine {
 
             // Speak the term first
             await this.speak(cleanText, 'en-AU', pronunciationRate);
-            
+
             // For vocabulary with examples, optionally speak the example sentence based on repeat mode
             const hasExample = (word.examples && word.examples.length > 0) || word.example;
-            const shouldSpeakExample = window.audioControls && 
+            const shouldSpeakExample = window.audioControls &&
                 (window.audioControls.repeatMode === 'intensive' || window.audioControls.repeatMode === 'loop');
-            
+
             if (hasExample && shouldSpeakExample && exampleElement && exampleElement.style.display !== 'none') {
                 // Add small pause between term and sentence
                 await new Promise(resolve => setTimeout(resolve, 800));
-                
+
                 // Highlight example sentence during speech
                 if (exampleElement) {
                     exampleElement.classList.add('speaking');
                 }
-                
+
                 // Get example text from either format
                 let rawExample;
                 if (word.example) {
@@ -69,20 +69,20 @@ class TTSEngine {
                     // Specialized vocabulary format
                     rawExample = word.examples[0].text;
                 }
-                
+
                 if (rawExample) {
                     const cleanExample = this.cleanExampleSentenceForTTS(rawExample);
-                    
+
                     // Speak example sentence at normal rate
                     await this.speak(cleanExample, 'en-AU', this.speechRate);
                 }
-                
+
                 // Remove example highlighting
                 if (exampleElement) {
                     exampleElement.classList.remove('speaking');
                 }
             }
-            
+
             // Remove visual feedback
             if (englishWordElement) {
                 englishWordElement.classList.remove('speaking');
@@ -115,7 +115,7 @@ class TTSEngine {
             utterance.rate = customRate !== null ? customRate : this.speechRate;
             utterance.volume = 1.0;
             utterance.pitch = 1.0;
-            
+
             // Try to find the best voice match for user's practice - ONLY MALE VOICES
             const voices = speechSynthesis.getVoices();
             const voice = window.voiceSelector ? window.voiceSelector.selectBestVoiceMatch(voices, lang) : null;
@@ -136,7 +136,7 @@ class TTSEngine {
                     resolve(); // Just continue, this is expected
                     return;
                 }
-                
+
                 console.warn('TTS Error:', error.error);
                 // Try fallback without voice for other errors
                 if (voice && utterance.voice && error.error !== 'not-allowed') {
@@ -161,10 +161,10 @@ class TTSEngine {
 
     cleanTextForTTS(text) {
         if (!text) return '';
-        
+
         // Remove extra whitespace and normalize
         let cleanText = text.trim().replace(/\s+/g, ' ');
-        
+
         // Handle common abbreviations and symbols
         cleanText = cleanText
             .replace(/\b&\b/g, 'and')
@@ -174,7 +174,7 @@ class TTSEngine {
             .replace(/\b\+\b/g, 'plus')
             .replace(/\b-\b/g, ' ') // Replace standalone hyphens with space
             .replace(/([a-z])([A-Z])/g, '$1 $2'); // Add space between camelCase
-        
+
         return cleanText;
     }
 
@@ -195,7 +195,7 @@ class TTSEngine {
             // Remove extra whitespace and clean up
             .replace(/\s+/g, ' ')
             .trim();
-        
+
         // If the sentence is too long for comfortable TTS, take the first complete sentence
         if (cleaned.length > 120) {
             const sentences = cleaned.split(/[.!?]+/);
@@ -205,27 +205,27 @@ class TTSEngine {
                 cleaned = cleaned.substring(0, 120) + '...';
             }
         }
-        
+
         // Apply general TTS cleaning
         return this.cleanTextForTTS(cleaned);
     }
 
     setSpeechRate(rate) {
         this.speechRate = parseFloat(rate) || 1.0;
-        
+
         // Emit rate change event
-        window.eventBus.emit('tts:rateChanged', { 
-            rate: this.speechRate 
+        window.eventBus.emit('tts:rateChanged', {
+            rate: this.speechRate
         });
     }
 
     setRepeatMode(targetRepeats) {
         this.targetRepeats = parseInt(targetRepeats) || 1;
         this.currentRepeatCount = 0; // Reset count
-        
+
         // Emit repeat mode change event
-        window.eventBus.emit('tts:repeatModeChanged', { 
-            targetRepeats: this.targetRepeats 
+        window.eventBus.emit('tts:repeatModeChanged', {
+            targetRepeats: this.targetRepeats
         });
     }
 
@@ -233,13 +233,13 @@ class TTSEngine {
         if ('speechSynthesis' in window) {
             speechSynthesis.cancel();
         }
-        
+
         // Remove visual feedback
         const englishWordElement = document.getElementById('englishWord');
         if (englishWordElement) {
             englishWordElement.classList.remove('speaking');
         }
-        
+
         // Emit stop event
         window.eventBus.emit('tts:stopped', {
             timestamp: new Date().toISOString()

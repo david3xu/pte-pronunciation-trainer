@@ -472,12 +472,8 @@ class VocabularyManager {
 
         // Define category ranges based on entry numbers
         const categoryRanges = {
-            'education': { start: 1, end: 303, label: '🎓 Education' },
-            'social-welfare': { start: 304, end: 505, label: '🤝 Social Welfare' },
-            'legal': { start: 506, end: 803, label: '⚖️ Legal' },
-            'business': { start: 804, end: 1003, label: '💼 Business' },
-            'medical': { start: 1004, end: 1350, label: '🏥 Medical' },
-            'tourism': { start: 1351, end: 1608, label: '✈️ Tourism' }
+            'education': { start: 1, end: 308, label: '🎓 Education' },
+            'social-welfare': { start: 309, end: 362, label: '🤝 Social Welfare' }
         };
 
         // Map to standard vocabulary shape, preserving original order and pronunciation data
@@ -534,22 +530,14 @@ class VocabularyManager {
         this.categoryLabels = {
             'all-categories': `🌟 All Categories (${vocabulary.length} entries)`,
             'education': `${categoryRanges.education.label} (${categoryCounts.education} entries)`,
-            'social-welfare': `${categoryRanges['social-welfare'].label} (${categoryCounts['social-welfare']} entries)`,
-            'legal': `${categoryRanges.legal.label} (${categoryCounts.legal} entries)`,
-            'business': `${categoryRanges.business.label} (${categoryCounts.business} entries)`,
-            'medical': `${categoryRanges.medical.label} (${categoryCounts.medical} entries)`,
-            'tourism': `${categoryRanges.tourism.label} (${categoryCounts.tourism} entries)`
+            'social-welfare': `${categoryRanges['social-welfare'].label} (${categoryCounts['social-welfare']} entries)`
         };
 
         // Update dialogue groups to support category filtering
         this.dialogueGroups = {
             'all-categories': [],
             'education': [],
-            'social-welfare': [],
-            'legal': [],
-            'business': [],
-            'medical': [],
-            'tourism': []
+            'social-welfare': []
         };
 
         return {

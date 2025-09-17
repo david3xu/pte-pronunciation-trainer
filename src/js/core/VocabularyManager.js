@@ -318,19 +318,54 @@ class VocabularyManager {
     }
 
     async loadVocabularyCleanDataset() {
-        if (this.vocabularyCleanDataset) return this.vocabularyCleanDataset;
+        if (this.vocabularyCleanDataset) {
+            console.log('🔄 Using cached Vocabulary-Clean dataset:', this.vocabularyCleanDataset.entries?.length || 0, 'entries');
+            return this.vocabularyCleanDataset;
+        }
         try {
             console.log('📥 Loading Vocabulary-Clean dataset...');
-            const response = await fetch('/data/processed/vocabulary-data.json');
+            // Add timestamp to prevent caching issues
+            const timestamp = new Date().getTime();
+            const response = await fetch(`/data/processed/vocabulary-data.json?t=${timestamp}`);
+            
+            console.log('Response status:', response.status, response.statusText);
+            
             if (!response.ok) {
                 throw new Error(`Failed to load Vocabulary-Clean dataset: ${response.status} ${response.statusText}`);
             }
-            this.vocabularyCleanDataset = await response.json();
-            console.log('✅ Vocabulary-Clean dataset loaded:', this.vocabularyCleanDataset.entries?.length || 0, 'entries');
-            return this.vocabularyCleanDataset;
+            
+            const responseText = await response.text();
+            console.log('Response text length:', responseText.length);
+            console.log('Response text preview:', responseText.substring(0, 100));
+            
+            try {
+                this.vocabularyCleanDataset = JSON.parse(responseText);
+                console.log('✅ Vocabulary-Clean dataset loaded:', this.vocabularyCleanDataset.entries?.length || 0, 'entries');
+                return this.vocabularyCleanDataset;
+            } catch (parseError) {
+                console.error('❌ Failed to parse Vocabulary-Clean dataset JSON:', parseError);
+                return null;
+            }
         } catch (error) {
             console.error('❌ Failed to load Vocabulary-Clean dataset:', error);
-            return null;
+            console.log('Trying alternative path...');
+            
+            try {
+                // Try with a different path
+                const timestamp = new Date().getTime();
+                const altResponse = await fetch(`/ccl-pronunciation-trainer/data/processed/vocabulary-data.json?t=${timestamp}`);
+                
+                if (!altResponse.ok) {
+                    throw new Error(`Failed to load from alternative path: ${altResponse.status} ${altResponse.statusText}`);
+                }
+                
+                this.vocabularyCleanDataset = await altResponse.json();
+                console.log('✅ Vocabulary-Clean dataset loaded from alternative path:', this.vocabularyCleanDataset.entries?.length || 0, 'entries');
+                return this.vocabularyCleanDataset;
+            } catch (altError) {
+                console.error('❌ Failed to load from alternative path:', altError);
+                return null;
+            }
         }
     }
 
@@ -403,7 +438,36 @@ class VocabularyManager {
         const dataset = await this.loadVocabularyCleanDataset();
         if (!dataset || !Array.isArray(dataset.entries)) {
             console.error('Vocabulary-Clean dataset not available or invalid');
-            return { vocabulary: [], totalTerms: 0, generatedAt: new Date().toISOString(), sourceFile: 'vocabulary-data.json' };
+            console.log('Creating fallback dataset with sample entries');
+            
+            // Create a fallback dataset with a few sample entries
+            const fallbackDataset = {
+                metadata: {
+                    title: "Education Vocabulary for CCL Pronunciation Trainer (Fallback)",
+                    description: "Fallback dataset - English-Chinese word/phrase pairs for education terminology",
+                    totalEntries: 3,
+                    generatedAt: new Date().toISOString(),
+                    source: "fallback-generation"
+                },
+                entries: [
+                    {
+                        number: 1,
+                        content: "School | 学校 | /skuːl/ — sounds like **SKOOL** | /skuːl/ — sounds like **SKOOL**"
+                    },
+                    {
+                        number: 2,
+                        content: "Teacher | 老师 | /ˈtiː.tʃər/ — sounds like **TEE-chur** | /ˈtiː.tʃɚ/ — sounds like **TEE-chur**"
+                    },
+                    {
+                        number: 3,
+                        content: "Student | 学生 | /ˈstjuː.dənt/ — sounds like **STYOO-dunt** | /ˈstuː.dənt/ — sounds like **STOO-dunt**"
+                    }
+                ]
+            };
+            
+            // Store the fallback dataset
+            this.vocabularyCleanDataset = fallbackDataset;
+            return this.getVocabularyCleanData(); // Call again with the fallback dataset
         }
 
         // Map to standard vocabulary shape, preserving original order and pronunciation data
@@ -444,7 +508,7 @@ class VocabularyManager {
         this.categoryLabels = {
             'all-categories': `🎓 All Vocabulary Entries (${vocabulary.length} entries)`
         };
-        
+
         // For vocabulary-clean mode, we don't use dialogue groups
         // So we need to ensure we're not trying to filter by dialogue groups
         this.dialogueGroups = {

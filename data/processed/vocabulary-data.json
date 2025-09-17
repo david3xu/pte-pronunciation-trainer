@@ -2,14 +2,18 @@
   "metadata": {
     "title": "Education Vocabulary for CCL Pronunciation Trainer",
     "description": "English-Chinese word/phrase pairs for education terminology",
-    "totalEntries": 320,
-    "generatedAt": "2025-09-17T00:48:51.669Z",
+    "totalEntries": 326,
+    "generatedAt": "2025-09-17T02:47:22.046Z",
     "source": "vocabulary-clean.md"
   },
   "entries": [
     {
       "number": 1,
-      "content": "Behave/act | 表现 | /bɪˈheɪv/ /ækt/ — sounds like **bi-HAYV** **AKT** | /bɪˈheɪv/ /ækt/ — sounds like **bi-HAYV** **AKT**"
+      "content": "Behave | 表现 | /bɪˈheɪv/ — sounds like **bi-HAYV** | /bɪˈheɪv/ — sounds like **bi-HAYV**"
+    },
+    {
+      "number": 1,
+      "content": "Act | 表现 | /ækt/ — sounds like **AKT** | /ækt/ — sounds like **AKT**"
     },
     {
       "number": 2,
@@ -321,7 +325,11 @@
     },
     {
       "number": 72,
-      "content": "Expel/expulsion | 开除 | /ɪkˈspel/ /ɪkˈspʌl.ʃən/ — sounds like **ik-SPEL** **ik-SPUL-shuhn** | /ɪkˈspel/ /ɪkˈspʌl.ʃən/ — sounds like **ik-SPEL** **ik-SPUL-shuhn**"
+      "content": "Expel | 开除 | /ɪkˈspel/ — sounds like **ik-SPEL** | /ɪkˈspel/ — sounds like **ik-SPEL**"
+    },
+    {
+      "number": 72,
+      "content": "Expulsion | 开除 | /ɪkˈspʌl.ʃən/ — sounds like **ik-SPUL-shuhn** | /ɪkˈspʌl.ʃən/ — sounds like **ik-SPUL-shuhn**"
     },
     {
       "number": 73,
@@ -449,7 +457,11 @@
     },
     {
       "number": 104,
-      "content": "Academic result/achievement | 学习成绩 | /ˌæk.əˈdem.ɪk rɪˈzʌlt/ /əˈtʃiːv.mənt/ — sounds like **ak-uh-DEM-ik ri-ZULT** **uh-CHEEV-muhnt** | /ˌæk.əˈdem.ɪk rɪˈzʌlt/ /əˈtʃiːv.mənt/ — sounds like **ak-uh-DEM-ik ri-ZULT** **uh-CHEEV-muhnt**"
+      "content": "Academic result | 学习成绩 | /ˌæk.əˈdem.ɪk rɪˈzʌlt/ — sounds like **ak-uh-DEM-ik ri-ZULT** | /ˌæk.əˈdem.ɪk rɪˈzʌlt/ — sounds like **ak-uh-DEM-ik ri-ZULT**"
+    },
+    {
+      "number": 104,
+      "content": "Academic achievement | 学习成绩 | /ˌæk.əˈdem.ɪk əˈtʃiːv.mənt/ — sounds like **ak-uh-DEM-ik uh-CHEEV-muhnt** | /ˌæk.əˈdem.ɪk əˈtʃiːv.mənt/ — sounds like **ak-uh-DEM-ik uh-CHEEV-muhnt**"
     },
     {
       "number": 105,
@@ -645,7 +657,11 @@
     },
     {
       "number": 152,
-      "content": "Home tutor/tutoring | 家教 | /həʊm ˈtjuː.tər/ /ˈtjuː.tər.ɪŋ/ — sounds like **HOHM TYOO-tuhr** **TYOO-tuhr-ing** | /hoʊm ˈtuː.tɚ/ /ˈtuː.tɚ.ɪŋ/ — sounds like **HOHM TOO-ter** **TOO-ter-ing**"
+      "content": "Home tutor | 家教 | /həʊm ˈtjuː.tər/ — sounds like **HOHM TYOO-tuhr** | /hoʊm ˈtuː.tɚ/ — sounds like **HOHM TOO-ter**"
+    },
+    {
+      "number": 152,
+      "content": "Tutoring | 家教 | /ˈtjuː.tər.ɪŋ/ — sounds like **TYOO-tuhr-ing** | /ˈtuː.tɚ.ɪŋ/ — sounds like **TOO-ter-ing**"
     },
     {
       "number": 153,
@@ -849,7 +865,11 @@
     },
     {
       "number": 202,
-      "content": "The deputy/vice principal | 副校长 | /ðə ˈdep.jʊ.ti/ /vaɪs ˈprɪn.sɪ.pəl/ — sounds like **thuh DEP-yoo-tee** **VYSE PRIN-si-puhl** | /ðə ˈdep.jʊ.ti/ /vaɪs ˈprɪn.sɪ.pəl/ — sounds like **thuh DEP-yoo-tee** **VYSE PRIN-si-puhl**"
+      "content": "The deputy principal | 副校长 | /ðə ˈdep.jʊ.ti ˈprɪn.sɪ.pəl/ — sounds like **thuh DEP-yoo-tee PRIN-si-puhl** | /ðə ˈdep.jʊ.ti ˈprɪn.sɪ.pəl/ — sounds like **thuh DEP-yoo-tee PRIN-si-puhl**"
+    },
+    {
+      "number": 202,
+      "content": "The vice principal | 副校长 | /ðə vaɪs ˈprɪn.sɪ.pəl/ — sounds like **thuh VYSE PRIN-si-puhl** | /ðə vaɪs ˈprɪn.sɪ.pəl/ — sounds like **thuh VYSE PRIN-si-puhl**"
     },
     {
       "number": 203,
@@ -1286,6 +1306,10 @@
     {
       "number": 308,
       "content": "A dissertation | 学位论文 | /ə ˌdɪs.əˈteɪ.ʃən/ — sounds like **uh dis-uh-TAY-shuhn** | /ə ˌdɪs.ɚˈteɪ.ʃən/ — sounds like **uh dis-er-TAY-shuhn**"
+    },
+    {
+      "number": 309,
+      "content": "Aged | 老 | /eɪdʒd/ — sounds like **AYJD** | /eɪdʒd/ — sounds like **AYJD**"
     }
   ]
 }

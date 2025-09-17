@@ -444,6 +444,12 @@ class VocabularyManager {
         this.categoryLabels = {
             'all-categories': `🎓 All Vocabulary Entries (${vocabulary.length} entries)`
         };
+        
+        // For vocabulary-clean mode, we don't use dialogue groups
+        // So we need to ensure we're not trying to filter by dialogue groups
+        this.dialogueGroups = {
+            'all-categories': [] // Only use all-categories for vocabulary-clean mode
+        };
 
         return {
             vocabulary,
@@ -487,6 +493,12 @@ class VocabularyManager {
     setLearningMode(mode) {
         console.log('🎯 Setting learning mode to:', mode);
         this.currentLearningMode = mode;
+
+        // For vocabulary-clean mode, we need to set the category to all-categories
+        // since it doesn't use dialogue groups
+        if (mode === 'vocabulary-clean') {
+            this.currentCategory = 'all-categories';
+        }
 
         // Recalculate category counts for the new mode
         this.recalculateCountsForMode(mode);
@@ -542,7 +554,12 @@ class VocabularyManager {
         this.currentCategory = category;
 
         // Filter vocabulary based on learning mode and category
-        if (this.currentLearningMode === 'unfamiliar') {
+        if (this.currentLearningMode === 'vocabulary-clean') {
+            // For vocabulary-clean mode, we don't filter by dialogue groups
+            // We use all vocabulary entries
+            this.allWords = [...data.vocabulary];
+            console.log('Using vocabulary-clean mode - all entries loaded:', this.allWords.length);
+        } else if (this.currentLearningMode === 'unfamiliar') {
             // For unfamiliar words, filter by dialogue group
             if (category === 'all-categories') {
                 this.allWords = [...data.vocabulary];

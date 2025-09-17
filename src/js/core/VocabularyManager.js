@@ -327,17 +327,17 @@ class VocabularyManager {
             // Add timestamp to prevent caching issues
             const timestamp = new Date().getTime();
             const response = await fetch(`/data/processed/vocabulary-data.json?t=${timestamp}`);
-            
+
             console.log('Response status:', response.status, response.statusText);
-            
+
             if (!response.ok) {
                 throw new Error(`Failed to load Vocabulary-Clean dataset: ${response.status} ${response.statusText}`);
             }
-            
+
             const responseText = await response.text();
             console.log('Response text length:', responseText.length);
             console.log('Response text preview:', responseText.substring(0, 100));
-            
+
             try {
                 this.vocabularyCleanDataset = JSON.parse(responseText);
                 console.log('✅ Vocabulary-Clean dataset loaded:', this.vocabularyCleanDataset.entries?.length || 0, 'entries');
@@ -349,16 +349,16 @@ class VocabularyManager {
         } catch (error) {
             console.error('❌ Failed to load Vocabulary-Clean dataset:', error);
             console.log('Trying alternative path...');
-            
+
             try {
                 // Try with a different path
                 const timestamp = new Date().getTime();
                 const altResponse = await fetch(`/ccl-pronunciation-trainer/data/processed/vocabulary-data.json?t=${timestamp}`);
-                
+
                 if (!altResponse.ok) {
                     throw new Error(`Failed to load from alternative path: ${altResponse.status} ${altResponse.statusText}`);
                 }
-                
+
                 this.vocabularyCleanDataset = await altResponse.json();
                 console.log('✅ Vocabulary-Clean dataset loaded from alternative path:', this.vocabularyCleanDataset.entries?.length || 0, 'entries');
                 return this.vocabularyCleanDataset;
@@ -439,7 +439,7 @@ class VocabularyManager {
         if (!dataset || !Array.isArray(dataset.entries)) {
             console.error('Vocabulary-Clean dataset not available or invalid');
             console.log('Creating fallback dataset with sample entries');
-            
+
             // Create a fallback dataset with a few sample entries
             const fallbackDataset = {
                 metadata: {
@@ -464,7 +464,7 @@ class VocabularyManager {
                     }
                 ]
             };
-            
+
             // Store the fallback dataset
             this.vocabularyCleanDataset = fallbackDataset;
             return this.getVocabularyCleanData(); // Call again with the fallback dataset

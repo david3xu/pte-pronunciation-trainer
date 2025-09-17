@@ -40,7 +40,8 @@ class SettingsPanel {
             speechRate: window.storage.getItem('speechRate') || 0.7,
             delay: window.storage.getItem('delay') || 2000,
             repeatMode: window.storage.getItem('repeatMode') || 'individual',
-            preferredVoice: window.storage.getItem('preferredVoice') || null
+            preferredVoice: window.storage.getItem('preferredVoice') || null,
+            learningMode: window.storage.getItem('learningMode') || 'vocabulary-clean'
         };
 
         // Apply settings to UI elements
@@ -50,10 +51,12 @@ class SettingsPanel {
         this.applySettingToElement('delaySelect', savedSettings.delay);
         this.applySettingToElement('repeatSelect', savedSettings.repeatMode);
         this.applySettingToElement('voiceSelect', savedSettings.preferredVoice || 'Google UK English Male');
+        this.applySettingToElement('learningModeSelect', savedSettings.learningMode);
 
         // Apply settings to modules
         window.vocabularyManager.currentCategory = savedSettings.category;
         window.vocabularyManager.currentDifficulty = savedSettings.difficulty;
+        window.vocabularyManager.currentLearningMode = savedSettings.learningMode;
     }
 
 

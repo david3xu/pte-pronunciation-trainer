@@ -2,8 +2,8 @@
   "metadata": {
     "title": "Education Vocabulary for CCL Pronunciation Trainer",
     "description": "English-Chinese word/phrase pairs for education terminology",
-    "totalEntries": 1614,
-    "generatedAt": "2025-09-17T06:29:52.135Z",
+    "totalEntries": 1716,
+    "generatedAt": "2025-09-17T07:34:44.904Z",
     "source": "vocabulary-clean.md"
   },
   "entries": [
@@ -289,7 +289,11 @@
     },
     {
       "number": 65,
-      "content": "Reprimand/a reprimand | 申诉，谴责 | /r/e/pr/ɪ/m/æ/nd/a reprimand/ — sounds like **REPRIMANDA REPRIMAND** | /r/e/pr/ɪ/m/æ/nd/a reprimand/ — sounds like **REPRIMANDA REPRIMAND**"
+      "content": "Reprimand | 申诉，谴责 | /ˈreprɪmɑːnd/ — sounds like **REP-ri-mahnd** | /ˈrɛprəˌmænd/ — sounds like **REP-ruh-mand**"
+    },
+    {
+      "number": 65,
+      "content": "A reprimand | 申诉，谴责 | /ˈreprɪmɑːnd/ — sounds like **uh REP-ri-mahnd** | /ˈrɛprəˌmænd/ — sounds like **uh REP-ruh-mand**"
     },
     {
       "number": 66,
@@ -305,11 +309,19 @@
     },
     {
       "number": 69,
-      "content": "Suspend/suspension from school | （学校暂令）停学，被学校勒令停学 | /s/ʌ/sp/e/nd/suspens/ɪ//ɒ/n from s/tʃ/ool/ — sounds like **SUSPENDSUSPENSION FROM SCHOOL** | /s/ʌ/sp/e/nd/suspens/ɪ//ɒ/n from s/tʃ/ool/ — sounds like **SUSPENDSUSPENSION FROM SCHOOL**"
+      "content": "Suspend from school | （学校暂令）停学，被学校勒令停学 | /səˈspend frəm skuːl/ — sounds like **suh-SPEND fruhm SKOOL** | /səˈspɛnd frəm skuːl/ — sounds like **suh-SPEND fruhm SKOOL**"
+    },
+    {
+      "number": 69,
+      "content": "Suspension from school | （学校暂令）停学，被学校勒令停学 | /səˈspen.ʃən frəm skuːl/ — sounds like **suh-SPEN-shuhn fruhm SKOOL** | /səˈspɛn.ʃən frəm skuːl/ — sounds like **suh-SPEN-shuhn fruhm SKOOL**"
     },
     {
       "number": 70,
-      "content": "Expel/expulsion | 开除 | //e/xpel/exp/ʌ/l/ʒən// — sounds like **EXPELEXPULSION** | //e/xpel/exp/ʌ/l/ʒən// — sounds like **EXPELEXPULSION**"
+      "content": "Expel | 开除 | /ɪkˈspel/ — sounds like **ik-SPEL** | /ɪkˈspɛl/ — sounds like **ik-SPEL**"
+    },
+    {
+      "number": 70,
+      "content": "Expulsion | 开除 | /ɪkˈspʌl.ʃən/ — sounds like **ik-SPUL-shuhn** | /ɪkˈspʌl.ʃən/ — sounds like **ik-SPUL-shuhn**"
     },
     {
       "number": 71,
@@ -433,7 +445,11 @@
     },
     {
       "number": 101,
-      "content": "Academic result/achievement | 学习成绩 | /ˌæk.əˈdem.ɪk rɪˈzʌlt/əˈtʃiːv.mənt/ — sounds like **ak-uh-DEM-ik ri-ZULT/uh-CHEEV-muhnt** | /ˌæk.əˈdem.ɪk rɪˈzʌlt/əˈtʃiːv.mənt/ — sounds like **ak-uh-DEM-ik ri-ZULT/uh-CHEEV-muhnt**"
+      "content": "Academic result | 学习成绩 | /ˌæk.əˈdem.ɪk rɪˈzʌlt/əˈtʃiːv.mənt/ — sounds like **ak-uh-DEM-ik ri-ZULT/uh-CHEEV-muhnt** | /ˌæk.əˈdem.ɪk rɪˈzʌlt/əˈtʃiːv.mənt/ — sounds like **ak-uh-DEM-ik ri-ZULT/uh-CHEEV-muhnt**"
+    },
+    {
+      "number": 101,
+      "content": "Academic achievement | 学习成绩 | /ˌæk.əˈdem.ɪk rɪˈzʌlt/əˈtʃiːv.mənt/ — sounds like **ak-uh-DEM-ik ri-ZULT/uh-CHEEV-muhnt** | /ˌæk.əˈdem.ɪk rɪˈzʌlt/əˈtʃiːv.mənt/ — sounds like **ak-uh-DEM-ik ri-ZULT/uh-CHEEV-muhnt**"
     },
     {
       "number": 102,
@@ -617,7 +633,11 @@
     },
     {
       "number": 147,
-      "content": "Correspondence course/distance learning | 函授课程 | /ˌkɒr.ɪˈspɒn.dəns kɔːs/ˈdɪs.təns ˈlɜː.nɪŋ/ — sounds like **kor-i-SPON-duhnz KAWS/DIS-tuhnz LUR-ning** | /ˌkɔːr.əˈspɑːn.dəns kɔːrs/ˈdɪs.təns ˈlɜːr.nɪŋ/ — sounds like **kawr-uh-SPAHN-duhnz KAWRS/DIS-tuhnz LUR-ning**"
+      "content": "Correspondence course | 函授课程 | /ˌkɒr.ɪˈspɒn.dəns kɔːs/ˈdɪs.təns ˈlɜː.nɪŋ/ — sounds like **kor-i-SPON-duhnz KAWS/DIS-tuhnz LUR-ning** | /ˌkɔːr.əˈspɑːn.dəns kɔːrs/ˈdɪs.təns ˈlɜːr.nɪŋ/ — sounds like **kawr-uh-SPAHN-duhnz KAWRS/DIS-tuhnz LUR-ning**"
+    },
+    {
+      "number": 147,
+      "content": "Distance learning | 函授课程 | /ˌkɒr.ɪˈspɒn.dəns kɔːs/ˈdɪs.təns ˈlɜː.nɪŋ/ — sounds like **kor-i-SPON-duhnz KAWS/DIS-tuhnz LUR-ning** | /ˌkɔːr.əˈspɑːn.dəns kɔːrs/ˈdɪs.təns ˈlɜːr.nɪŋ/ — sounds like **kawr-uh-SPAHN-duhnz KAWRS/DIS-tuhnz LUR-ning**"
     },
     {
       "number": 148,
@@ -625,7 +645,11 @@
     },
     {
       "number": 149,
-      "content": "Home tutor/tutoring | 家教 | /həʊm ˈtjuː.tər/ˈtjuː.tər.ɪŋ/ — sounds like **HOHM TYOO-tuhr/TYOO-tuhr-ing** | /hoʊm ˈtuː.tər/ˈtuː.tər.ɪŋ/ — sounds like **HOHM TOO-tuhr/TOO-tuhr-ing**"
+      "content": "Home tutor | 家教 | /həʊm ˈtjuː.tər/ˈtjuː.tər.ɪŋ/ — sounds like **HOHM TYOO-tuhr/TYOO-tuhr-ing** | /hoʊm ˈtuː.tər/ˈtuː.tər.ɪŋ/ — sounds like **HOHM TOO-tuhr/TOO-tuhr-ing**"
+    },
+    {
+      "number": 149,
+      "content": "Home tutoring | 家教 | /həʊm ˈtjuː.tər/ˈtjuː.tər.ɪŋ/ — sounds like **HOHM TYOO-tuhr/TYOO-tuhr-ing** | /hoʊm ˈtuː.tər/ˈtuː.tər.ɪŋ/ — sounds like **HOHM TOO-tuhr/TOO-tuhr-ing**"
     },
     {
       "number": 150,
@@ -741,7 +765,11 @@
     },
     {
       "number": 178,
-      "content": "Associate degree/diploma | 副学位/文凭 | /əˈsəʊ.si.ət dɪˈɡriː/dɪˈpləʊ.mə/ — sounds like **uh-SOH-see-uht di-GREE/di-PLOH-muh** | /əˈsoʊ.si.ət dɪˈɡriː/dɪˈploʊ.mə/ — sounds like **uh-SOH-see-uht di-GREE/di-PLOH-muh**"
+      "content": "Associate degree | 副学位/文凭 | /əˈsəʊ.si.ət dɪˈɡriː/dɪˈpləʊ.mə/ — sounds like **uh-SOH-see-uht di-GREE/di-PLOH-muh** | /əˈsoʊ.si.ət dɪˈɡriː/dɪˈploʊ.mə/ — sounds like **uh-SOH-see-uht di-GREE/di-PLOH-muh**"
+    },
+    {
+      "number": 178,
+      "content": "Associate diploma | 副学位/文凭 | /əˈsəʊ.si.ət dɪˈɡriː/dɪˈpləʊ.mə/ — sounds like **uh-SOH-see-uht di-GREE/di-PLOH-muh** | /əˈsoʊ.si.ət dɪˈɡriː/dɪˈploʊ.mə/ — sounds like **uh-SOH-see-uht di-GREE/di-PLOH-muh**"
     },
     {
       "number": 179,
@@ -825,7 +853,11 @@
     },
     {
       "number": 199,
-      "content": "The deputy/vice principal | 副校长 | /ðə ˈdep.ju.ti/vaɪs ˈprɪn.sə.pəl/ — sounds like **thuh DEP-yoo-tee/VYS PRIN-suh-puhl** | /ðə ˈdep.jə.ti/vaɪs ˈprɪn.sə.pəl/ — sounds like **thuh DEP-yuh-tee/VYS PRIN-suh-puhl**"
+      "content": "The deputy principal | 副校长 | /ðə ˈdep.ju.ti/vaɪs ˈprɪn.sə.pəl/ — sounds like **thuh DEP-yoo-tee/VYS PRIN-suh-puhl** | /ðə ˈdep.jə.ti/vaɪs ˈprɪn.sə.pəl/ — sounds like **thuh DEP-yuh-tee/VYS PRIN-suh-puhl**"
+    },
+    {
+      "number": 199,
+      "content": "The vice principal | 副校长 | /ðə ˈdep.ju.ti/vaɪs ˈprɪn.sə.pəl/ — sounds like **thuh DEP-yoo-tee/VYS PRIN-suh-puhl** | /ðə ˈdep.jə.ti/vaɪs ˈprɪn.sə.pəl/ — sounds like **thuh DEP-yuh-tee/VYS PRIN-suh-puhl**"
     },
     {
       "number": 200,
@@ -913,7 +945,15 @@
     },
     {
       "number": 221,
-      "content": "Tuckshop/canteen/cafeteria | 餐厅 | /ˈtʌk.ʃɒp/kænˈtiːn/ˌkæf.əˈtɪə.ri.ə/ — sounds like **TUK-shop/kan-TEEN/kaf-uh-TEER-ee-uh** | /ˈtʌk.ʃɑːp/kænˈtiːn/ˌkæf.əˈtɪr.i.ə/ — sounds like **TUK-shahp/kan-TEEN/kaf-uh-TEER-ee-uh**"
+      "content": "Tuckshop | 餐厅 | /ˈtʌk.ʃɒp/kænˈtiːn/ˌkæf.əˈtɪə.ri.ə/ — sounds like **TUK-shop/kan-TEEN/kaf-uh-TEER-ee-uh** | /ˈtʌk.ʃɑːp/kænˈtiːn/ˌkæf.əˈtɪr.i.ə/ — sounds like **TUK-shahp/kan-TEEN/kaf-uh-TEER-ee-uh**"
+    },
+    {
+      "number": 221,
+      "content": "Canteen | 餐厅 | /ˈtʌk.ʃɒp/kænˈtiːn/ˌkæf.əˈtɪə.ri.ə/ — sounds like **TUK-shop/kan-TEEN/kaf-uh-TEER-ee-uh** | /ˈtʌk.ʃɑːp/kænˈtiːn/ˌkæf.əˈtɪr.i.ə/ — sounds like **TUK-shahp/kan-TEEN/kaf-uh-TEER-ee-uh**"
+    },
+    {
+      "number": 221,
+      "content": "Cafeteria | 餐厅 | /ˈtʌk.ʃɒp/kænˈtiːn/ˌkæf.əˈtɪə.ri.ə/ — sounds like **TUK-shop/kan-TEEN/kaf-uh-TEER-ee-uh** | /ˈtʌk.ʃɑːp/kænˈtiːn/ˌkæf.əˈtɪr.i.ə/ — sounds like **TUK-shahp/kan-TEEN/kaf-uh-TEER-ee-uh**"
     },
     {
       "number": 222,
@@ -985,7 +1025,11 @@
     },
     {
       "number": 239,
-      "content": "One's cognitive/mental development | 心智发展，认知发展 | /wʌnz ˈkɒɡ.nə.tɪv/ˈmen.təl dɪˈvel.əp.mənt/ — sounds like **WUNZ KOG-nuh-tiv/MEN-tuhl di-VEL-uhp-muhnt** | /wʌnz ˈkɑːɡ.nə.tɪv/ˈmen.təl dɪˈvel.əp.mənt/ — sounds like **WUNZ KAHG-nuh-tiv/MEN-tuhl di-VEL-uhp-muhnt**"
+      "content": "One's cognitive development | 心智发展，认知发展 | /wʌnz ˈkɒɡ.nə.tɪv/ˈmen.təl dɪˈvel.əp.mənt/ — sounds like **WUNZ KOG-nuh-tiv/MEN-tuhl di-VEL-uhp-muhnt** | /wʌnz ˈkɑːɡ.nə.tɪv/ˈmen.təl dɪˈvel.əp.mənt/ — sounds like **WUNZ KAHG-nuh-tiv/MEN-tuhl di-VEL-uhp-muhnt**"
+    },
+    {
+      "number": 239,
+      "content": "One's mental development | 心智发展，认知发展 | /wʌnz ˈkɒɡ.nə.tɪv/ˈmen.təl dɪˈvel.əp.mənt/ — sounds like **WUNZ KOG-nuh-tiv/MEN-tuhl di-VEL-uhp-muhnt** | /wʌnz ˈkɑːɡ.nə.tɪv/ˈmen.təl dɪˈvel.əp.mənt/ — sounds like **WUNZ KAHG-nuh-tiv/MEN-tuhl di-VEL-uhp-muhnt**"
     },
     {
       "number": 240,
@@ -1037,7 +1081,11 @@
     },
     {
       "number": 252,
-      "content": "A module/a course module | 单元，课程单元 | /ə ˈmɒd.juːl/ə kɔːs ˈmɒd.juːl/ — sounds like **uh MOD-yool/uh KAWS MOD-yool** | /ə ˈmɑː.dʒuːl/ə kɔːrs ˈmɑː.dʒuːl/ — sounds like **uh MAH-jool/uh KAWRS MAH-jool**"
+      "content": "A module | 单元，课程单元 | /ə ˈmɒd.juːl/ə kɔːs ˈmɒd.juːl/ — sounds like **uh MOD-yool/uh KAWS MOD-yool** | /ə ˈmɑː.dʒuːl/ə kɔːrs ˈmɑː.dʒuːl/ — sounds like **uh MAH-jool/uh KAWRS MAH-jool**"
+    },
+    {
+      "number": 252,
+      "content": "A course module | 单元，课程单元 | /ə ˈmɒd.juːl/ə kɔːs ˈmɒd.juːl/ — sounds like **uh MOD-yool/uh KAWS MOD-yool** | /ə ˈmɑː.dʒuːl/ə kɔːrs ˈmɑː.dʒuːl/ — sounds like **uh MAH-jool/uh KAWRS MAH-jool**"
     },
     {
       "number": 253,
@@ -1157,7 +1205,11 @@
     },
     {
       "number": 282,
-      "content": "Placement/ internship | 实习 | /ˈpleɪs.mənt/ˈɪn.tɜːn.ʃɪp/ — sounds like **PLAYS-muhnt/IN-turn-ship** | /ˈpleɪs.mənt/ˈɪn.tɜːrn.ʃɪp/ — sounds like **PLAYS-muhnt/IN-turn-ship**"
+      "content": "Placement | 实习 | /ˈpleɪs.mənt/ˈɪn.tɜːn.ʃɪp/ — sounds like **PLAYS-muhnt/IN-turn-ship** | /ˈpleɪs.mənt/ˈɪn.tɜːrn.ʃɪp/ — sounds like **PLAYS-muhnt/IN-turn-ship**"
+    },
+    {
+      "number": 282,
+      "content": "Internship | 实习 | /ˈpleɪs.mənt/ˈɪn.tɜːn.ʃɪp/ — sounds like **PLAYS-muhnt/IN-turn-ship** | /ˈpleɪs.mənt/ˈɪn.tɜːrn.ʃɪp/ — sounds like **PLAYS-muhnt/IN-turn-ship**"
     },
     {
       "number": 283,
@@ -1181,7 +1233,11 @@
     },
     {
       "number": 288,
-      "content": "Preface/foreword | 序文，序言，前言，绪言 | /ˈpref.əs/ˈfɔː.wɜːd/ — sounds like **PREF-uhs/FAWR-wurd** | /ˈpref.əs/ˈfɔːr.wɜːrd/ — sounds like **PREF-uhs/FAWR-wurd**"
+      "content": "Preface | 序文，序言，前言，绪言 | /ˈpref.əs/ˈfɔː.wɜːd/ — sounds like **PREF-uhs/FAWR-wurd** | /ˈpref.əs/ˈfɔːr.wɜːrd/ — sounds like **PREF-uhs/FAWR-wurd**"
+    },
+    {
+      "number": 288,
+      "content": "Foreword | 序文，序言，前言，绪言 | /ˈpref.əs/ˈfɔː.wɜːd/ — sounds like **PREF-uhs/FAWR-wurd** | /ˈpref.əs/ˈfɔːr.wɜːrd/ — sounds like **PREF-uhs/FAWR-wurd**"
     },
     {
       "number": 289,
@@ -1197,7 +1253,11 @@
     },
     {
       "number": 292,
-      "content": "Teaching method/approach | 教学方法 | /ˈtiː.tʃɪŋ ˈmeθ.əd/əˈprəʊtʃ/ — sounds like **TEE-ching METH-uhd/uh-PROHCH** | /ˈtiː.tʃɪŋ ˈmeθ.əd/əˈproʊtʃ/ — sounds like **TEE-ching METH-uhd/uh-PROHCH**"
+      "content": "Teaching method | 教学方法 | /ˈtiː.tʃɪŋ ˈmeθ.əd/əˈprəʊtʃ/ — sounds like **TEE-ching METH-uhd/uh-PROHCH** | /ˈtiː.tʃɪŋ ˈmeθ.əd/əˈproʊtʃ/ — sounds like **TEE-ching METH-uhd/uh-PROHCH**"
+    },
+    {
+      "number": 292,
+      "content": "Teaching approach | 教学方法 | /ˈtiː.tʃɪŋ ˈmeθ.əd/əˈprəʊtʃ/ — sounds like **TEE-ching METH-uhd/uh-PROHCH** | /ˈtiː.tʃɪŋ ˈmeθ.əd/əˈproʊtʃ/ — sounds like **TEE-ching METH-uhd/uh-PROHCH**"
     },
     {
       "number": 293,
@@ -1449,7 +1509,11 @@
     },
     {
       "number": 360,
-      "content": "A sight/hearing impaired person | 有视力/听力障碍的人 | /ə saɪt/ˈhɪr.ɪŋ ɪmˈperd ˈpɜːr.sən/ — sounds like **uh SYT/HIR-ing im-PERD PUR-suhn** | /ə saɪt/ˈhɪr.ɪŋ ɪmˈperd ˈpɜːr.sən/ — sounds like **uh SYT/HIR-ing im-PERD PUR-suhn**"
+      "content": "A sight impaired person | 有视力/听力障碍的人 | /ə saɪt/ˈhɪr.ɪŋ ɪmˈperd ˈpɜːr.sən/ — sounds like **uh SYT/HIR-ing im-PERD PUR-suhn** | /ə saɪt/ˈhɪr.ɪŋ ɪmˈperd ˈpɜːr.sən/ — sounds like **uh SYT/HIR-ing im-PERD PUR-suhn**"
+    },
+    {
+      "number": 360,
+      "content": "A hearing impaired person | 有视力/听力障碍的人 | /ə saɪt/ˈhɪr.ɪŋ ɪmˈperd ˈpɜːr.sən/ — sounds like **uh SYT/HIR-ing im-PERD PUR-suhn** | /ə saɪt/ˈhɪr.ɪŋ ɪmˈperd ˈpɜːr.sən/ — sounds like **uh SYT/HIR-ing im-PERD PUR-suhn**"
     },
     {
       "number": 361,
@@ -1461,7 +1525,11 @@
     },
     {
       "number": 363,
-      "content": "Guardian/custodian | 监护人 | /ˈɡɑːr.di.ən/kʌˈstoʊ.di.ən/ — sounds like **GAHR-di-uhn/kuh-STOH-di-uhn** | /ˈɡɑːr.di.ən/kʌˈstoʊ.di.ən/ — sounds like **GAHR-di-uhn/kuh-STOH-di-uhn**"
+      "content": "Guardian | 监护人 | /ˈɡɑːr.di.ən/kʌˈstoʊ.di.ən/ — sounds like **GAHR-di-uhn/kuh-STOH-di-uhn** | /ˈɡɑːr.di.ən/kʌˈstoʊ.di.ən/ — sounds like **GAHR-di-uhn/kuh-STOH-di-uhn**"
+    },
+    {
+      "number": 363,
+      "content": "Custodian | 监护人 | /ˈɡɑːr.di.ən/kʌˈstoʊ.di.ən/ — sounds like **GAHR-di-uhn/kuh-STOH-di-uhn** | /ˈɡɑːr.di.ən/kʌˈstoʊ.di.ən/ — sounds like **GAHR-di-uhn/kuh-STOH-di-uhn**"
     },
     {
       "number": 364,
@@ -1749,7 +1817,11 @@
     },
     {
       "number": 435,
-      "content": "Workplace/employment relationship | 劳资关系 | /ˈwɜːrk.pleɪs/ɪmˈplɔɪ.mənt rɪˈleɪ.ʃən.ʃɪp/ — sounds like **WURK-plays/im-PLOY-muhnt ri-LAY-shuhn-ship** | /ˈwɜːrk.pleɪs/ɪmˈplɔɪ.mənt rɪˈleɪ.ʃən.ʃɪp/ — sounds like **WURK-plays/im-PLOY-muhnt ri-LAY-shuhn-ship**"
+      "content": "Workplace relationship | 劳资关系 | /ˈwɜːrk.pleɪs/ɪmˈplɔɪ.mənt rɪˈleɪ.ʃən.ʃɪp/ — sounds like **WURK-plays/im-PLOY-muhnt ri-LAY-shuhn-ship** | /ˈwɜːrk.pleɪs/ɪmˈplɔɪ.mənt rɪˈleɪ.ʃən.ʃɪp/ — sounds like **WURK-plays/im-PLOY-muhnt ri-LAY-shuhn-ship**"
+    },
+    {
+      "number": 435,
+      "content": "Employment relationship | 劳资关系 | /ˈwɜːrk.pleɪs/ɪmˈplɔɪ.mənt rɪˈleɪ.ʃən.ʃɪp/ — sounds like **WURK-plays/im-PLOY-muhnt ri-LAY-shuhn-ship** | /ˈwɜːrk.pleɪs/ɪmˈplɔɪ.mənt rɪˈleɪ.ʃən.ʃɪp/ — sounds like **WURK-plays/im-PLOY-muhnt ri-LAY-shuhn-ship**"
     },
     {
       "number": 436,
@@ -1781,7 +1853,11 @@
     },
     {
       "number": 443,
-      "content": "Sickness payment/allowance | 生病津贴，疾病津贴 | /ˈsɪk.nəs ˈpeɪ.mənt/əˈlaʊ.əns/ — sounds like **SIK-nuhs PAY-muhnt/uh-LOW-uhns** | /ˈsɪk.nəs ˈpeɪ.mənt/əˈlaʊ.əns/ — sounds like **SIK-nuhs PAY-muhnt/uh-LOW-uhns**"
+      "content": "Sickness payment | 生病津贴，疾病津贴 | /ˈsɪk.nəs ˈpeɪ.mənt/əˈlaʊ.əns/ — sounds like **SIK-nuhs PAY-muhnt/uh-LOW-uhns** | /ˈsɪk.nəs ˈpeɪ.mənt/əˈlaʊ.əns/ — sounds like **SIK-nuhs PAY-muhnt/uh-LOW-uhns**"
+    },
+    {
+      "number": 443,
+      "content": "Sickness allowance | 生病津贴，疾病津贴 | /ˈsɪk.nəs ˈpeɪ.mənt/əˈlaʊ.əns/ — sounds like **SIK-nuhs PAY-muhnt/uh-LOW-uhns** | /ˈsɪk.nəs ˈpeɪ.mənt/əˈlaʊ.əns/ — sounds like **SIK-nuhs PAY-muhnt/uh-LOW-uhns**"
     },
     {
       "number": 444,
@@ -1797,7 +1873,11 @@
     },
     {
       "number": 447,
-      "content": "Personal/compassionate leave | 事假 | /ˈpɜːr.sə.nəl/kəmˈpæʃ.ə.nət liːv/ — sounds like **PUR-suh-nuhl/kuhm-PASH-uh-nuht LEEV** | /ˈpɜːr.sə.nəl/kəmˈpæʃ.ə.nət liːv/ — sounds like **PUR-suh-nuhl/kuhm-PASH-uh-nuht LEEV**"
+      "content": "Personal leave | 事假 | /ˈpɜːr.sə.nəl/kəmˈpæʃ.ə.nət liːv/ — sounds like **PUR-suh-nuhl/kuhm-PASH-uh-nuht LEEV** | /ˈpɜːr.sə.nəl/kəmˈpæʃ.ə.nət liːv/ — sounds like **PUR-suh-nuhl/kuhm-PASH-uh-nuht LEEV**"
+    },
+    {
+      "number": 447,
+      "content": "Compassionate leave | 事假 | /ˈpɜːr.sə.nəl/kəmˈpæʃ.ə.nət liːv/ — sounds like **PUR-suh-nuhl/kuhm-PASH-uh-nuht LEEV** | /ˈpɜːr.sə.nəl/kəmˈpæʃ.ə.nət liːv/ — sounds like **PUR-suh-nuhl/kuhm-PASH-uh-nuht LEEV**"
     },
     {
       "number": 448,
@@ -1817,7 +1897,11 @@
     },
     {
       "number": 452,
-      "content": "Rebate/refund | 返还，退款 | /ˈriː.beɪt/rɪˈfʌnd/ — sounds like **REE-bayt/ri-FUHND** | /ˈriː.beɪt/rɪˈfʌnd/ — sounds like **REE-bayt/ri-FUHND**"
+      "content": "Rebate | 返还，退款 | /ˈriː.beɪt/rɪˈfʌnd/ — sounds like **REE-bayt/ri-FUHND** | /ˈriː.beɪt/rɪˈfʌnd/ — sounds like **REE-bayt/ri-FUHND**"
+    },
+    {
+      "number": 452,
+      "content": "Refund | 返还，退款 | /ˈriː.beɪt/rɪˈfʌnd/ — sounds like **REE-bayt/ri-FUHND** | /ˈriː.beɪt/rɪˈfʌnd/ — sounds like **REE-bayt/ri-FUHND**"
     },
     {
       "number": 453,
@@ -1861,15 +1945,27 @@
     },
     {
       "number": 463,
-      "content": "Unskilled worker/labour | 低技术工人 | /ʌnˈskɪld ˈwɜːr.kər/ˈleɪ.bər/ — sounds like **uhn-SKILD WUR-ker/LAY-ber** | /ʌnˈskɪld ˈwɜːr.kər/ˈleɪ.bər/ — sounds like **uhn-SKILD WUR-ker/LAY-ber**"
+      "content": "Unskilled worker | 低技术工人 | /ʌnˈskɪld ˈwɜːr.kər/ˈleɪ.bər/ — sounds like **uhn-SKILD WUR-ker/LAY-ber** | /ʌnˈskɪld ˈwɜːr.kər/ˈleɪ.bər/ — sounds like **uhn-SKILD WUR-ker/LAY-ber**"
+    },
+    {
+      "number": 463,
+      "content": "Unskilled labour | 低技术工人 | /ʌnˈskɪld ˈwɜːr.kər/ˈleɪ.bər/ — sounds like **uhn-SKILD WUR-ker/LAY-ber** | /ʌnˈskɪld ˈwɜːr.kər/ˈleɪ.bər/ — sounds like **uhn-SKILD WUR-ker/LAY-ber**"
     },
     {
       "number": 464,
-      "content": "Casual worker/employee | 临时工 | /ˈkæʒ.u.əl ˈwɜːr.kər/ɪmˈplɔɪ.iː/ — sounds like **KAZH-oo-uhl WUR-ker/im-PLOY-ee** | /ˈkæʒ.u.əl ˈwɜːr.kər/ɪmˈplɔɪ.iː/ — sounds like **KAZH-oo-uhl WUR-ker/im-PLOY-ee**"
+      "content": "Casual worker | 临时工 | /ˈkæʒ.u.əl ˈwɜːr.kər/ɪmˈplɔɪ.iː/ — sounds like **KAZH-oo-uhl WUR-ker/im-PLOY-ee** | /ˈkæʒ.u.əl ˈwɜːr.kər/ɪmˈplɔɪ.iː/ — sounds like **KAZH-oo-uhl WUR-ker/im-PLOY-ee**"
+    },
+    {
+      "number": 464,
+      "content": "Casual employee | 临时工 | /ˈkæʒ.u.əl ˈwɜːr.kər/ɪmˈplɔɪ.iː/ — sounds like **KAZH-oo-uhl WUR-ker/im-PLOY-ee** | /ˈkæʒ.u.əl ˈwɜːr.kər/ɪmˈplɔɪ.iː/ — sounds like **KAZH-oo-uhl WUR-ker/im-PLOY-ee**"
     },
     {
       "number": 465,
-      "content": "Contractor/contract employee | 合同工 | /kənˈtræk.tər/ˈkɒn.trækt ɪmˈplɔɪ.iː/ — sounds like **kuhn-TRAK-ter/KON-trakt im-PLOY-ee** | /kənˈtræk.tər/ˈkɑːn.trækt ɪmˈplɔɪ.iː/ — sounds like **kuhn-TRAK-ter/KAHN-trakt im-PLOY-ee**"
+      "content": "Contractor | 合同工 | /kənˈtræk.tər/ˈkɒn.trækt ɪmˈplɔɪ.iː/ — sounds like **kuhn-TRAK-ter/KON-trakt im-PLOY-ee** | /kənˈtræk.tər/ˈkɑːn.trækt ɪmˈplɔɪ.iː/ — sounds like **kuhn-TRAK-ter/KAHN-trakt im-PLOY-ee**"
+    },
+    {
+      "number": 465,
+      "content": "Contract employee | 合同工 | /kənˈtræk.tər/ˈkɒn.trækt ɪmˈplɔɪ.iː/ — sounds like **kuhn-TRAK-ter/KON-trakt im-PLOY-ee** | /kənˈtræk.tər/ˈkɑːn.trækt ɪmˈplɔɪ.iː/ — sounds like **kuhn-TRAK-ter/KAHN-trakt im-PLOY-ee**"
     },
     {
       "number": 466,
@@ -1953,7 +2049,11 @@
     },
     {
       "number": 486,
-      "content": "A work-related disability/injury | 因工致残/致伤 | /ə wɜːrk rɪˈleɪ.tɪd ˌdɪs.əˈbɪl.ɪ.ti/ˈɪn.dʒə.ri/ — sounds like **uh WURK ri-LAY-tid dis-uh-BIL-i-ti/IN-juh-ri** | /ə wɜːrk rɪˈleɪ.tɪd ˌdɪs.əˈbɪl.ɪ.ti/ˈɪn.dʒə.ri/ — sounds like **uh WURK ri-LAY-tid dis-uh-BIL-i-ti/IN-juh-ri**"
+      "content": "A work-related disability | 因工致残/致伤 | /ə wɜːrk rɪˈleɪ.tɪd ˌdɪs.əˈbɪl.ɪ.ti/ˈɪn.dʒə.ri/ — sounds like **uh WURK ri-LAY-tid dis-uh-BIL-i-ti/IN-juh-ri** | /ə wɜːrk rɪˈleɪ.tɪd ˌdɪs.əˈbɪl.ɪ.ti/ˈɪn.dʒə.ri/ — sounds like **uh WURK ri-LAY-tid dis-uh-BIL-i-ti/IN-juh-ri**"
+    },
+    {
+      "number": 486,
+      "content": "A work-related injury | 因工致残/致伤 | /ə wɜːrk rɪˈleɪ.tɪd ˌdɪs.əˈbɪl.ɪ.ti/ˈɪn.dʒə.ri/ — sounds like **uh WURK ri-LAY-tid dis-uh-BIL-i-ti/IN-juh-ri** | /ə wɜːrk rɪˈleɪ.tɪd ˌdɪs.əˈbɪl.ɪ.ti/ˈɪn.dʒə.ri/ — sounds like **uh WURK ri-LAY-tid dis-uh-BIL-i-ti/IN-juh-ri**"
     },
     {
       "number": 487,
@@ -1977,15 +2077,31 @@
     },
     {
       "number": 492,
-      "content": "Be dismissed/fired/ | 被解雇，被开除 | /biː dɪsˈmɪst/faɪərd/ — sounds like **BEE dis-MIST/FY-erd** | /biː dɪsˈmɪst/faɪərd/ — sounds like **BEE dis-MIST/FY-erd**"
+      "content": "Be dismissed | 被解雇，被开除 | /biː dɪsˈmɪst/faɪərd/ — sounds like **BEE dis-MIST/FY-erd** | /biː dɪsˈmɪst/faɪərd/ — sounds like **BEE dis-MIST/FY-erd**"
+    },
+    {
+      "number": 492,
+      "content": "Be fired | 被解雇，被开除 | /biː dɪsˈmɪst/faɪərd/ — sounds like **BEE dis-MIST/FY-erd** | /biː dɪsˈmɪst/faɪərd/ — sounds like **BEE dis-MIST/FY-erd**"
     },
     {
       "number": 493,
-      "content": "Be laid off/made redundant/retrenched | 被裁员 | /biː leɪd ɒf/meɪd rɪˈdʌn.dənt/rɪˈtrentʃt/ — sounds like **BEE LAYD OF/MAYD ri-DUHN-duhnt/ri-TRENCHT** | /biː leɪd ɑːf/meɪd rɪˈdʌn.dənt/rɪˈtrentʃt/ — sounds like **BEE LAYD AHF/MAYD ri-DUHN-duhnt/ri-TRENCHT**"
+      "content": "Be laid off | 被裁员 | /biː leɪd ɒf/meɪd rɪˈdʌn.dənt/rɪˈtrentʃt/ — sounds like **BEE LAYD OF/MAYD ri-DUHN-duhnt/ri-TRENCHT** | /biː leɪd ɑːf/meɪd rɪˈdʌn.dənt/rɪˈtrentʃt/ — sounds like **BEE LAYD AHF/MAYD ri-DUHN-duhnt/ri-TRENCHT**"
+    },
+    {
+      "number": 493,
+      "content": "Be made redundant | 被裁员 | /biː leɪd ɒf/meɪd rɪˈdʌn.dənt/rɪˈtrentʃt/ — sounds like **BEE LAYD OF/MAYD ri-DUHN-duhnt/ri-TRENCHT** | /biː leɪd ɑːf/meɪd rɪˈdʌn.dənt/rɪˈtrentʃt/ — sounds like **BEE LAYD AHF/MAYD ri-DUHN-duhnt/ri-TRENCHT**"
+    },
+    {
+      "number": 493,
+      "content": "Be retrenched | 被裁员 | /biː leɪd ɒf/meɪd rɪˈdʌn.dənt/rɪˈtrentʃt/ — sounds like **BEE LAYD OF/MAYD ri-DUHN-duhnt/ri-TRENCHT** | /biː leɪd ɑːf/meɪd rɪˈdʌn.dənt/rɪˈtrentʃt/ — sounds like **BEE LAYD AHF/MAYD ri-DUHN-duhnt/ri-TRENCHT**"
     },
     {
       "number": 494,
-      "content": "Redundancy payment/payout | 裁员费，裁员补贴 | /rɪˈdʌn.dən.si ˈpeɪ.mənt/ˈpeɪ.aʊt/ — sounds like **ri-DUHN-duhn-si PAY-muhnt/PAY-owt** | /rɪˈdʌn.dən.si ˈpeɪ.mənt/ˈpeɪ.aʊt/ — sounds like **ri-DUHN-duhn-si PAY-muhnt/PAY-owt**"
+      "content": "Redundancy payment | 裁员费，裁员补贴 | /rɪˈdʌn.dən.si ˈpeɪ.mənt/ˈpeɪ.aʊt/ — sounds like **ri-DUHN-duhn-si PAY-muhnt/PAY-owt** | /rɪˈdʌn.dən.si ˈpeɪ.mənt/ˈpeɪ.aʊt/ — sounds like **ri-DUHN-duhn-si PAY-muhnt/PAY-owt**"
+    },
+    {
+      "number": 494,
+      "content": "Redundancy payout | 裁员费，裁员补贴 | /rɪˈdʌn.dən.si ˈpeɪ.mənt/ˈpeɪ.aʊt/ — sounds like **ri-DUHN-duhn-si PAY-muhnt/PAY-owt** | /rɪˈdʌn.dən.si ˈpeɪ.mənt/ˈpeɪ.aʊt/ — sounds like **ri-DUHN-duhn-si PAY-muhnt/PAY-owt**"
     },
     {
       "number": 495,
@@ -1997,7 +2113,11 @@
     },
     {
       "number": 497,
-      "content": "Quit/resign | 辞职 | /kwɪt/rɪˈzaɪn/ — sounds like **KWIT/ri-ZYN** | /kwɪt/rɪˈzaɪn/ — sounds like **KWIT/ri-ZYN**"
+      "content": "Quit | 辞职 | /kwɪt/rɪˈzaɪn/ — sounds like **KWIT/ri-ZYN** | /kwɪt/rɪˈzaɪn/ — sounds like **KWIT/ri-ZYN**"
+    },
+    {
+      "number": 497,
+      "content": "Resign | 辞职 | /kwɪt/rɪˈzaɪn/ — sounds like **KWIT/ri-ZYN** | /kwɪt/rɪˈzaɪn/ — sounds like **KWIT/ri-ZYN**"
     },
     {
       "number": 498,
@@ -2053,11 +2173,19 @@
     },
     {
       "number": 510,
-      "content": "Commonwealth/federal government | 联邦政府 | /c/ɒ/mmonw/e//æ/l/θ//federal government/ — sounds like **COMMONWEALTHFEDERAL GOVERNMENT** | /c/ɒ/mmonw/e//æ/l/θ//federal government/ — sounds like **COMMONWEALTHFEDERAL GOVERNMENT**"
+      "content": "Commonwealth government | 联邦政府 | /c/ɒ/mmonw/e//æ/l/θ//federal government/ — sounds like **COMMONWEALTHFEDERAL GOVERNMENT** | /c/ɒ/mmonw/e//æ/l/θ//federal government/ — sounds like **COMMONWEALTHFEDERAL GOVERNMENT**"
+    },
+    {
+      "number": 510,
+      "content": "Federal government | 联邦政府 | /c/ɒ/mmonw/e//æ/l/θ//federal government/ — sounds like **COMMONWEALTHFEDERAL GOVERNMENT** | /c/ɒ/mmonw/e//æ/l/θ//federal government/ — sounds like **COMMONWEALTHFEDERAL GOVERNMENT**"
     },
     {
       "number": 511,
-      "content": "Commonwealth/federal government | 联邦政府 | /ˈkɒm.ən.welθ/ˈfed.ər.əl ˈɡʌv.ərn.mənt/ — sounds like **KOM-uhn-welth/FED-er-uhl GUHV-ern-muhnt** | /ˈkɑːm.ən.welθ/ˈfed.ər.əl ˈɡʌv.ərn.mənt/ — sounds like **KAHM-uhn-welth/FED-er-uhl GUHV-ern-muhnt**"
+      "content": "Commonwealth government | 联邦政府 | /ˈkɒm.ən.welθ/ˈfed.ər.əl ˈɡʌv.ərn.mənt/ — sounds like **KOM-uhn-welth/FED-er-uhl GUHV-ern-muhnt** | /ˈkɑːm.ən.welθ/ˈfed.ər.əl ˈɡʌv.ərn.mənt/ — sounds like **KAHM-uhn-welth/FED-er-uhl GUHV-ern-muhnt**"
+    },
+    {
+      "number": 511,
+      "content": "Federal government | 联邦政府 | /ˈkɒm.ən.welθ/ˈfed.ər.əl ˈɡʌv.ərn.mənt/ — sounds like **KOM-uhn-welth/FED-er-uhl GUHV-ern-muhnt** | /ˈkɑːm.ən.welθ/ˈfed.ər.əl ˈɡʌv.ərn.mənt/ — sounds like **KAHM-uhn-welth/FED-er-uhl GUHV-ern-muhnt**"
     },
     {
       "number": 512,
@@ -2089,7 +2217,11 @@
     },
     {
       "number": 519,
-      "content": "House of senate/Upper house | 参议院，上议院 | /haʊs ʌv ˈsen.ɪt/ˈʌp.ər haʊs/ — sounds like **HOWS UHV SEN-it/UHP-er HOWS** | /haʊs ʌv ˈsen.ɪt/ˈʌp.ər haʊs/ — sounds like **HOWS UHV SEN-it/UHP-er HOWS**"
+      "content": "House of senate | 参议院，上议院 | /haʊs ʌv ˈsen.ɪt/ˈʌp.ər haʊs/ — sounds like **HOWS UHV SEN-it/UHP-er HOWS** | /haʊs ʌv ˈsen.ɪt/ˈʌp.ər haʊs/ — sounds like **HOWS UHV SEN-it/UHP-er HOWS**"
+    },
+    {
+      "number": 519,
+      "content": "Upper house | 参议院，上议院 | /haʊs ʌv ˈsen.ɪt/ˈʌp.ər haʊs/ — sounds like **HOWS UHV SEN-it/UHP-er HOWS** | /haʊs ʌv ˈsen.ɪt/ˈʌp.ər haʊs/ — sounds like **HOWS UHV SEN-it/UHP-er HOWS**"
     },
     {
       "number": 520,
@@ -2097,7 +2229,11 @@
     },
     {
       "number": 521,
-      "content": "House of representatives/Lower house | 众议院，下议院 | /haʊs ʌv ˌrep.rɪˈzen.tə.tɪvz/ˈloʊ.ər haʊs/ — sounds like **HOWS UHV rep-ri-ZEN-tuh-tivz/LOH-er HOWS** | /haʊs ʌv ˌrep.rɪˈzen.tə.tɪvz/ˈloʊ.ər haʊs/ — sounds like **HOWS UHV rep-ri-ZEN-tuh-tivz/LOH-er HOWS**"
+      "content": "House of representatives | 众议院，下议院 | /haʊs ʌv ˌrep.rɪˈzen.tə.tɪvz/ˈloʊ.ər haʊs/ — sounds like **HOWS UHV rep-ri-ZEN-tuh-tivz/LOH-er HOWS** | /haʊs ʌv ˌrep.rɪˈzen.tə.tɪvz/ˈloʊ.ər haʊs/ — sounds like **HOWS UHV rep-ri-ZEN-tuh-tivz/LOH-er HOWS**"
+    },
+    {
+      "number": 521,
+      "content": "Lower house | 众议院，下议院 | /haʊs ʌv ˌrep.rɪˈzen.tə.tɪvz/ˈloʊ.ər haʊs/ — sounds like **HOWS UHV rep-ri-ZEN-tuh-tivz/LOH-er HOWS** | /haʊs ʌv ˌrep.rɪˈzen.tə.tɪvz/ˈloʊ.ər haʊs/ — sounds like **HOWS UHV rep-ri-ZEN-tuh-tivz/LOH-er HOWS**"
     },
     {
       "number": 522,
@@ -2257,7 +2393,11 @@
     },
     {
       "number": 561,
-      "content": "Polling/voting booth | 投票站 | /ˈpoʊ.lɪŋ/ˈvoʊ.tɪŋ buːθ/ — sounds like **POH-ling/VOH-ting BOOTH** | /ˈpoʊ.lɪŋ/ˈvoʊ.tɪŋ buːθ/ — sounds like **POH-ling/VOH-ting BOOTH**"
+      "content": "Polling booth | 投票站 | /ˈpoʊ.lɪŋ/ˈvoʊ.tɪŋ buːθ/ — sounds like **POH-ling/VOH-ting BOOTH** | /ˈpoʊ.lɪŋ/ˈvoʊ.tɪŋ buːθ/ — sounds like **POH-ling/VOH-ting BOOTH**"
+    },
+    {
+      "number": 561,
+      "content": "Voting booth | 投票站 | /ˈpoʊ.lɪŋ/ˈvoʊ.tɪŋ buːθ/ — sounds like **POH-ling/VOH-ting BOOTH** | /ˈpoʊ.lɪŋ/ˈvoʊ.tɪŋ buːθ/ — sounds like **POH-ling/VOH-ting BOOTH**"
     },
     {
       "number": 562,
@@ -2405,7 +2545,11 @@
     },
     {
       "number": 598,
-      "content": "Accomplice / associates | 同案犯，同谋，同伙 | /əˈkʌm.plɪs/əˈsoʊ.ʃi.eɪts/ — sounds like **uh-KUHM-plis/uh-SOH-shi-ayts** | /əˈkʌm.plɪs/əˈsoʊ.ʃi.eɪts/ — sounds like **uh-KUHM-plis/uh-SOH-shi-ayts**"
+      "content": "Accomplice | 同案犯，同谋，同伙 | /əˈkʌm.plɪs/əˈsoʊ.ʃi.eɪts/ — sounds like **uh-KUHM-plis/uh-SOH-shi-ayts** | /əˈkʌm.plɪs/əˈsoʊ.ʃi.eɪts/ — sounds like **uh-KUHM-plis/uh-SOH-shi-ayts**"
+    },
+    {
+      "number": 598,
+      "content": "Associates | 同案犯，同谋，同伙 | /əˈkʌm.plɪs/əˈsoʊ.ʃi.eɪts/ — sounds like **uh-KUHM-plis/uh-SOH-shi-ayts** | /əˈkʌm.plɪs/əˈsoʊ.ʃi.eɪts/ — sounds like **uh-KUHM-plis/uh-SOH-shi-ayts**"
     },
     {
       "number": 599,
@@ -2469,7 +2613,11 @@
     },
     {
       "number": 614,
-      "content": "Bail/jump bail | 保释/保释中逃走 | /beɪl/dʒʌmp beɪl/ — sounds like **BAYL/JUHMP BAYL** | /beɪl/dʒʌmp beɪl/ — sounds like **BAYL/JUHMP BAYL**"
+      "content": "Bail | 保释/保释中逃走 | /beɪl/dʒʌmp beɪl/ — sounds like **BAYL/JUHMP BAYL** | /beɪl/dʒʌmp beɪl/ — sounds like **BAYL/JUHMP BAYL**"
+    },
+    {
+      "number": 614,
+      "content": "Jump bail | 保释/保释中逃走 | /beɪl/dʒʌmp beɪl/ — sounds like **BAYL/JUHMP BAYL** | /beɪl/dʒʌmp beɪl/ — sounds like **BAYL/JUHMP BAYL**"
     },
     {
       "number": 615,
@@ -2689,7 +2837,11 @@
     },
     {
       "number": 669,
-      "content": "Plea/plead | 认罪答辩，抗辩 | /pliː/pliːd/ — sounds like **PLEE/PLEED** | /pliː/pliːd/ — sounds like **PLEE/PLEED**"
+      "content": "Plea | 认罪答辩，抗辩 | /pliː/pliːd/ — sounds like **PLEE/PLEED** | /pliː/pliːd/ — sounds like **PLEE/PLEED**"
+    },
+    {
+      "number": 669,
+      "content": "Plead | 认罪答辩，抗辩 | /pliː/pliːd/ — sounds like **PLEE/PLEED** | /pliː/pliːd/ — sounds like **PLEE/PLEED**"
     },
     {
       "number": 670,
@@ -2709,11 +2861,19 @@
     },
     {
       "number": 674,
-      "content": "Summons/subpoena | 法院传票 | /ˈsʌm.ənz/səˈpiː.nə/ — sounds like **SUHM-uhnz/suh-PEE-nuh** | /ˈsʌm.ənz/səˈpiː.nə/ — sounds like **SUHM-uhnz/suh-PEE-nuh**"
+      "content": "Summons | 法院传票 | /ˈsʌm.ənz/səˈpiː.nə/ — sounds like **SUHM-uhnz/suh-PEE-nuh** | /ˈsʌm.ənz/səˈpiː.nə/ — sounds like **SUHM-uhnz/suh-PEE-nuh**"
+    },
+    {
+      "number": 674,
+      "content": "Subpoena | 法院传票 | /ˈsʌm.ənz/səˈpiː.nə/ — sounds like **SUHM-uhnz/suh-PEE-nuh** | /ˈsʌm.ənz/səˈpiː.nə/ — sounds like **SUHM-uhnz/suh-PEE-nuh**"
     },
     {
       "number": 675,
-      "content": "Serve a summons on sb./serve sb. with a summons | 送达传票 | /sɜːrv ə ˈsʌm.ənz ɒn sb./sɜːrv sb. wɪθ ə ˈsʌm.ənz/ — sounds like **SURV uh SUHM-uhnz ON sb./SURV sb. WITH uh SUHM-uhnz** | /sɜːrv ə ˈsʌm.ənz ɑːn sb./sɜːrv sb. wɪθ ə ˈsʌm.ənz/ — sounds like **SURV uh SUHM-uhnz AHN sb./SURV sb. WITH uh SUHM-uhnz**"
+      "content": "Serve a summons on sb. | 送达传票 | /sɜːrv ə ˈsʌm.ənz ɒn sb./sɜːrv sb. wɪθ ə ˈsʌm.ənz/ — sounds like **SURV uh SUHM-uhnz ON sb./SURV sb. WITH uh SUHM-uhnz** | /sɜːrv ə ˈsʌm.ənz ɑːn sb./sɜːrv sb. wɪθ ə ˈsʌm.ənz/ — sounds like **SURV uh SUHM-uhnz AHN sb./SURV sb. WITH uh SUHM-uhnz**"
+    },
+    {
+      "number": 675,
+      "content": "Serve sb. with a summons | 送达传票 | /sɜːrv ə ˈsʌm.ənz ɒn sb./sɜːrv sb. wɪθ ə ˈsʌm.ənz/ — sounds like **SURV uh SUHM-uhnz ON sb./SURV sb. WITH uh SUHM-uhnz** | /sɜːrv ə ˈsʌm.ənz ɑːn sb./sɜːrv sb. wɪθ ə ˈsʌm.ənz/ — sounds like **SURV uh SUHM-uhnz AHN sb./SURV sb. WITH uh SUHM-uhnz**"
     },
     {
       "number": 676,
@@ -2733,63 +2893,63 @@
     },
     {
       "number": 680,
-      "content": "Trial | 审判，聆讯 | /tr/ɪ//æ/l/ — sounds like **TRIAL** | /tr/ɪ//æ/l/ — sounds like **TRIAL**"
+      "content": "Trial | 审判，聆讯 | /ˈtraɪ.əl/ — sounds like **TRY-uhl** | /ˈtraɪ.əl/ — sounds like **TRY-uhl**"
     },
     {
       "number": 681,
-      "content": "Undertaking | 保证书 | //ʌ/nd/e/rt/æ/k/ɪŋ// — sounds like **UNDERTAKING** | //ʌ/nd/e/rt/æ/k/ɪŋ// — sounds like **UNDERTAKING**"
+      "content": "Undertaking | 保证书 | /ˈʌn.dəˌteɪ.kɪŋ/ — sounds like **UN-duh-tay-king** | /ˈʌn.dɚˌteɪ.kɪŋ/ — sounds like **UN-der-tay-king**"
     },
     {
       "number": 682,
-      "content": "Plainclothes police officer | 便衣警察 | /pl/æ//ɪ/ncl/ɒ//θ//e/s police offic/ər// — sounds like **PLAINCLOTHES POLICE OFFICER** | /pl/æ//ɪ/ncl/ɒ//θ//e/s police offic/ər// — sounds like **PLAINCLOTHES POLICE OFFICER**"
+      "content": "Plainclothes police officer | 便衣警察 | /ˈpleɪnˌkloʊðz pəˈliːs ˈɒf.ɪ.sər/ — sounds like **PLAYN-klohz puh-LEES OFF-i-suhr** | /ˈpleɪnˌkloʊðz pəˈliːs ˈɑːf.ɪ.sɚ/ — sounds like **PLAYN-klohz puh-LEES AWF-i-ser**"
     },
     {
       "number": 683,
-      "content": "Unrepresented | 无法律代理的 | //ʌ/nr/e/present/d// — sounds like **UNREPRESENTED** | //ʌ/nr/e/present/d// — sounds like **UNREPRESENTED**"
+      "content": "Unrepresented | 无法律代理的 | /ˌʌnˌrep.rɪˈzen.tɪd/ — sounds like **un-rep-ri-ZEN-tid** | /ˌʌnˌrep.rɪˈzen.tɪd/ — sounds like **un-rep-ri-ZEN-tid**"
     },
     {
       "number": 684,
-      "content": "Verdict | 裁决 | /v/e/rd/ɪ/ct/ — sounds like **VERDICT** | /v/e/rd/ɪ/ct/ — sounds like **VERDICT**"
+      "content": "Verdict | 裁决 | /ˈvɜːr.dɪkt/ — sounds like **VUR-dikt** | /ˈvɜːr.dɪkt/ — sounds like **VUR-dikt**"
     },
     {
       "number": 685,
-      "content": "Tribunal | 仲裁庭 | /tr/ɪ/b/ʌ/n/æ/l/ — sounds like **TRIBUNAL** | /tr/ɪ/b/ʌ/n/æ/l/ — sounds like **TRIBUNAL**"
+      "content": "Tribunal | 仲裁庭 | /traɪˈbjuː.nəl/ — sounds like **try-BYOO-nuhl** | /traɪˈbjuː.nəl/ — sounds like **try-BYOO-nuhl**"
     },
     {
       "number": 686,
-      "content": "VCAT(Victorian Civil and Administrative Tribunal) | 维多利亚民事与行政仲裁庭 | /vc/æ/t(v/ɪ/ct/ɒ/rian civil and administrativ/e/ trib/ʌ/nal)/ — sounds like **VCATVICTORIAN CIVIL AND ADMINISTRATIVE TRIBUNAL** | /vc/æ/t(v/ɪ/ct/ɒ/rian civil and administrativ/e/ trib/ʌ/nal)/ — sounds like **VCATVICTORIAN CIVIL AND ADMINISTRATIVE TRIBUNAL**"
+      "content": "VCAT(Victorian Civil and Administrative Tribunal) | 维多利亚民事与行政仲裁庭 | /ˈviː.kæt(ˌvɪkˈtɔːr.i.ən ˈsɪv.əl ænd ədˌmɪn.ɪsˈtreɪ.tɪv traɪˈbjuː.nəl)/ — sounds like **VEE-cat (vik-TOR-ee-uhn SIV-uhl and uhd-MIN-is-TRAY-tiv try-BYOO-nuhl)** | /ˈviː.kæt(ˌvɪkˈtɔːr.i.ən ˈsɪv.əl ænd ədˌmɪn.ɪsˈtreɪ.tɪv traɪˈbjuː.nəl)/ — sounds like **VEE-cat (vik-TOR-ee-uhn SIV-uhl and uhd-MIN-is-TRAY-tiv try-BYOO-nuhl)**"
     },
     {
       "number": 687,
-      "content": "MRT (Migration Review Tribunal) | 移民复议仲裁庭 | /mrt (m/ɪ/gr/æ/ti/ɒ/n r/e/view trib/ʌ/nal)/ — sounds like **MRT MIGRATION REVIEW TRIBUNAL** | /mrt (m/ɪ/gr/æ/ti/ɒ/n r/e/view trib/ʌ/nal)/ — sounds like **MRT MIGRATION REVIEW TRIBUNAL**"
+      "content": "MRT (Migration Review Tribunal) | 移民复议仲裁庭 | /ˌem.ɑːrˈtiː(ˈmaɪ.ɡreɪ.ʃən rɪˈvjuː traɪˈbjuː.nəl)/ — sounds like **em-ar-TEE (my-GRAY-shun ri-VYOO try-BYOO-nuhl)** | /ˌem.ɑːrˈtiː(ˈmaɪ.ɡreɪ.ʃən rɪˈvjuː traɪˈbjuː.nəl)/ — sounds like **em-ar-TEE (my-GRAY-shun ri-VYOO try-BYOO-nuhl)**"
     },
     {
       "number": 688,
-      "content": "Mediation | 调解 | /m/e/d/ɪ//æ//ʃən// — sounds like **MEDIATION** | /m/e/d/ɪ//æ//ʃən// — sounds like **MEDIATION**"
+      "content": "Mediation | 调解 | /ˌmiː.diˈeɪ.ʃən/ — sounds like **MEE-dee-AY-shuhn** | /ˌmiː.diˈeɪ.ʃən/ — sounds like **MEE-dee-AY-shuhn**"
     },
     {
       "number": 689,
-      "content": "Mediator | 调解员 | /m/e/d/ɪ//æ/t/ɔːr// — sounds like **MEDIATOR** | /m/e/d/ɪ//æ/t/ɔːr// — sounds like **MEDIATOR**"
+      "content": "Mediator | 调解员 | /ˈmiː.di.eɪ.tər/ — sounds like **MEE-dee-ay-ter** | /ˈmiː.di.eɪ.tər/ — sounds like **MEE-dee-ay-ter**"
     },
     {
       "number": 690,
-      "content": "Alternative Dispute Resolution (ADR) | 替代性争端解决方案 | //æ/lt/e/rnat/ɪ/ve disp/ʌ/te res/ɒ/lution (adr)/ — sounds like **ALTERNATIVE DISPUTE RESOLUTION ADR** | //æ/lt/e/rnat/ɪ/ve disp/ʌ/te res/ɒ/lution (adr)/ — sounds like **ALTERNATIVE DISPUTE RESOLUTION ADR**"
+      "content": "Alternative Dispute Resolution (ADR) | 替代性争端解决方案 | /ɔːlˈtɜː.nə.tɪv dɪˈspjuːt ˌrez.əˈluː.ʃən (ˌeɪ.diːˈɑːr)/ — sounds like **awl-TUR-nuh-tiv di-SPYOOT rez-uh-LOO-shuhn (AY-DEE-AR)** | /ɔːlˈtɝː.nə.tɪv dɪˈspjuːt ˌrez.əˈluː.ʃən (ˌeɪ.diːˈɑːr)/ — sounds like **awl-TUR-nuh-tiv di-SPYOOT rez-uh-LOO-shuhn (AY-DEE-AR)**"
     },
     {
       "number": 691,
-      "content": "Reconciliation | 和解 | /r/e/c/ɒ/nc/ɪ/li/æ//ʃən// — sounds like **RECONCILIATION** | /r/e/c/ɒ/nc/ɪ/li/æ//ʃən// — sounds like **RECONCILIATION**"
+      "content": "Reconciliation | 和解 | /ˌrek.ənˌsɪl.iˈeɪ.ʃən/ — sounds like **rek-ən-SIL-ee-AY-shuhn** | /ˌrek.ənˌsɪl.iˈeɪ.ʃən/ — sounds like **rek-ən-SIL-ee-AY-shuhn**"
     },
     {
       "number": 692,
-      "content": "Arbitration | 仲裁 | //æ/rb/ɪ/tra/ʃən// — sounds like **ARBITRATION** | //æ/rb/ɪ/tra/ʃən// — sounds like **ARBITRATION**"
+      "content": "Arbitration | 仲裁 | /ˌɑːr.bɪˈtreɪ.ʃən/ — sounds like **ahr-bi-TRAY-shuhn** | /ˌɑːr.bɪˈtreɪ.ʃən/ — sounds like **ahr-bi-TRAY-shuhn**"
     },
     {
       "number": 693,
-      "content": "Arbitrator | 仲裁员 | //æ/rb/ɪ/trat/ɔːr// — sounds like **ARBITRATOR** | //æ/rb/ɪ/trat/ɔːr// — sounds like **ARBITRATOR**"
+      "content": "Arbitrator | 仲裁员 | /ˈɑːr.bɪˌtreɪ.tər/ — sounds like **AHR-bi-tray-ter** | /ˈɑːr.bɪˌtreɪ.tər/ — sounds like **AHR-bi-tray-ter**"
     },
     {
       "number": 694,
-      "content": "Fairwork Ombudsman | 公平工作督察员/调查员 | /f/æ//ɪ/rw/ɒ/rk omb/ʌ/dsman/ — sounds like **FAIRWORK OMBUDSMAN** | /f/æ//ɪ/rw/ɒ/rk omb/ʌ/dsman/ — sounds like **FAIRWORK OMBUDSMAN**"
+      "content": "Fairwork Ombudsman | 公平工作督察员/调查员 | /ˈfeə.wɜːk ˈɒm.bʊdz.mən/ — sounds like **FAIR-wurk OM-bootz-muhn** | /ˈfer.wɝːk ˈɑːm.bʊdz.mən/ — sounds like **FAIR-wurk AHM-bootz-muhn**"
     },
     {
       "number": 695,
@@ -2801,11 +2961,19 @@
     },
     {
       "number": 697,
-      "content": "Offence/crime | 罪行 | //ɒ/ff/e/nce/cr/ɪ/me/ — sounds like **OFFENCECRIME** | //ɒ/ff/e/nce/cr/ɪ/me/ — sounds like **OFFENCECRIME**"
+      "content": "Offence | 罪行 | //ɒ/ff/e/nce/cr/ɪ/me/ — sounds like **OFFENCECRIME** | //ɒ/ff/e/nce/cr/ɪ/me/ — sounds like **OFFENCECRIME**"
+    },
+    {
+      "number": 697,
+      "content": "Crime | 罪行 | //ɒ/ff/e/nce/cr/ɪ/me/ — sounds like **OFFENCECRIME** | //ɒ/ff/e/nce/cr/ɪ/me/ — sounds like **OFFENCECRIME**"
     },
     {
       "number": 698,
-      "content": "First offence/First offender | 初犯 | /f/ɪ/rst /ɒ/ff/e/nce/first offend/ər// — sounds like **FIRST OFFENCEFIRST OFFENDER** | /f/ɪ/rst /ɒ/ff/e/nce/first offend/ər// — sounds like **FIRST OFFENCEFIRST OFFENDER**"
+      "content": "First offence | 初犯 | /f/ɪ/rst /ɒ/ff/e/nce/first offend/ər// — sounds like **FIRST OFFENCEFIRST OFFENDER** | /f/ɪ/rst /ɒ/ff/e/nce/first offend/ər// — sounds like **FIRST OFFENCEFIRST OFFENDER**"
+    },
+    {
+      "number": 698,
+      "content": "First offender | 初犯 | /f/ɪ/rst /ɒ/ff/e/nce/first offend/ər// — sounds like **FIRST OFFENCEFIRST OFFENDER** | /f/ɪ/rst /ɒ/ff/e/nce/first offend/ər// — sounds like **FIRST OFFENCEFIRST OFFENDER**"
     },
     {
       "number": 699,
@@ -2817,7 +2985,11 @@
     },
     {
       "number": 701,
-      "content": "Commit an offence/a crime | 犯罪 | /c/ɒ/mm/ɪ/t /æ/n off/e/nce/a crime/ — sounds like **COMMIT AN OFFENCEA CRIME** | /c/ɒ/mm/ɪ/t /æ/n off/e/nce/a crime/ — sounds like **COMMIT AN OFFENCEA CRIME**"
+      "content": "Commit an offence | 犯罪 | /c/ɒ/mm/ɪ/t /æ/n off/e/nce/a crime/ — sounds like **COMMIT AN OFFENCEA CRIME** | /c/ɒ/mm/ɪ/t /æ/n off/e/nce/a crime/ — sounds like **COMMIT AN OFFENCEA CRIME**"
+    },
+    {
+      "number": 701,
+      "content": "Commit a crime | 犯罪 | /c/ɒ/mm/ɪ/t /æ/n off/e/nce/a crime/ — sounds like **COMMIT AN OFFENCEA CRIME** | /c/ɒ/mm/ɪ/t /æ/n off/e/nce/a crime/ — sounds like **COMMIT AN OFFENCEA CRIME**"
     },
     {
       "number": 702,
@@ -2829,7 +3001,11 @@
     },
     {
       "number": 704,
-      "content": "Criminal record/priors | 犯罪记录 | /cr/ɪ/min/æ/l r/e/c/ɒ/rd/priors/ — sounds like **CRIMINAL RECORDPRIORS** | /cr/ɪ/min/æ/l r/e/c/ɒ/rd/priors/ — sounds like **CRIMINAL RECORDPRIORS**"
+      "content": "Criminal record | 犯罪记录 | /cr/ɪ/min/æ/l r/e/c/ɒ/rd/priors/ — sounds like **CRIMINAL RECORDPRIORS** | /cr/ɪ/min/æ/l r/e/c/ɒ/rd/priors/ — sounds like **CRIMINAL RECORDPRIORS**"
+    },
+    {
+      "number": 704,
+      "content": "Priors | 犯罪记录 | /cr/ɪ/min/æ/l r/e/c/ɒ/rd/priors/ — sounds like **CRIMINAL RECORDPRIORS** | /cr/ɪ/min/æ/l r/e/c/ɒ/rd/priors/ — sounds like **CRIMINAL RECORDPRIORS**"
     },
     {
       "number": 705,
@@ -3005,7 +3181,11 @@
     },
     {
       "number": 748,
-      "content": "Drug trafficking/dealing | 贩毒 | /dr/ʌ/g tr/æ/ff/ɪ/cki/ŋ//d/e/al/ɪŋ// — sounds like **DRUG TRAFFICKINGDEALING** | /dr/ʌ/g tr/æ/ff/ɪ/cki/ŋ//d/e/al/ɪŋ// — sounds like **DRUG TRAFFICKINGDEALING**"
+      "content": "Drug trafficking | 贩毒 | /dr/ʌ/g tr/æ/ff/ɪ/cki/ŋ//d/e/al/ɪŋ// — sounds like **DRUG TRAFFICKINGDEALING** | /dr/ʌ/g tr/æ/ff/ɪ/cki/ŋ//d/e/al/ɪŋ// — sounds like **DRUG TRAFFICKINGDEALING**"
+    },
+    {
+      "number": 748,
+      "content": "Drug dealing | 贩毒 | /dr/ʌ/g tr/æ/ff/ɪ/cki/ŋ//d/e/al/ɪŋ// — sounds like **DRUG TRAFFICKINGDEALING** | /dr/ʌ/g tr/æ/ff/ɪ/cki/ŋ//d/e/al/ɪŋ// — sounds like **DRUG TRAFFICKINGDEALING**"
     },
     {
       "number": 749,
@@ -3077,7 +3257,11 @@
     },
     {
       "number": 766,
-      "content": "Blackmail/extortion | 敲诈，勒索 | /bl/æ/ckma/ɪ/l//e/xt/ɒ/r/ʃən// — sounds like **BLACKMAILEXTORTION** | /bl/æ/ckma/ɪ/l//e/xt/ɒ/r/ʃən// — sounds like **BLACKMAILEXTORTION**"
+      "content": "Blackmail | 敲诈，勒索 | /bl/æ/ckma/ɪ/l//e/xt/ɒ/r/ʃən// — sounds like **BLACKMAILEXTORTION** | /bl/æ/ckma/ɪ/l//e/xt/ɒ/r/ʃən// — sounds like **BLACKMAILEXTORTION**"
+    },
+    {
+      "number": 766,
+      "content": "Extortion | 敲诈，勒索 | /bl/æ/ckma/ɪ/l//e/xt/ɒ/r/ʃən// — sounds like **BLACKMAILEXTORTION** | /bl/æ/ckma/ɪ/l//e/xt/ɒ/r/ʃən// — sounds like **BLACKMAILEXTORTION**"
     },
     {
       "number": 767,
@@ -3101,7 +3285,11 @@
     },
     {
       "number": 772,
-      "content": "Bribery (n.)/bribe (v.) | 行贿受贿 | /br/ɪ/b/e/ry (n.)/bribe (v.)/ — sounds like **BRIBERY NBRIBE V** | /br/ɪ/b/e/ry (n.)/bribe (v.)/ — sounds like **BRIBERY NBRIBE V**"
+      "content": "Bribery (n.) | 行贿受贿 | /br/ɪ/b/e/ry (n.)/bribe (v.)/ — sounds like **BRIBERY NBRIBE V** | /br/ɪ/b/e/ry (n.)/bribe (v.)/ — sounds like **BRIBERY NBRIBE V**"
+    },
+    {
+      "number": 772,
+      "content": "Bribe (v.) | 行贿受贿 | /br/ɪ/b/e/ry (n.)/bribe (v.)/ — sounds like **BRIBERY NBRIBE V** | /br/ɪ/b/e/ry (n.)/bribe (v.)/ — sounds like **BRIBERY NBRIBE V**"
     },
     {
       "number": 773,
@@ -3361,7 +3549,11 @@
     },
     {
       "number": 839,
-      "content": "Merge/amalgamate | 合并 | /m/e/rge//æ/malgamate/ — sounds like **MERGEAMALGAMATE** | /m/e/rge//æ/malgamate/ — sounds like **MERGEAMALGAMATE**"
+      "content": "Merge | 合并 | /m/e/rge//æ/malgamate/ — sounds like **MERGEAMALGAMATE** | /m/e/rge//æ/malgamate/ — sounds like **MERGEAMALGAMATE**"
+    },
+    {
+      "number": 839,
+      "content": "Amalgamate | 合并 | /m/e/rge//æ/malgamate/ — sounds like **MERGEAMALGAMATE** | /m/e/rge//æ/malgamate/ — sounds like **MERGEAMALGAMATE**"
     },
     {
       "number": 840,
@@ -3493,7 +3685,11 @@
     },
     {
       "number": 872,
-      "content": "Indicative price/reference price | 参考价格 | //ɪ/ndic/æ/tiv/e/ price/reference price/ — sounds like **INDICATIVE PRICEREFERENCE PRICE** | //ɪ/ndic/æ/tiv/e/ price/reference price/ — sounds like **INDICATIVE PRICEREFERENCE PRICE**"
+      "content": "Indicative price | 参考价格 | //ɪ/ndic/æ/tiv/e/ price/reference price/ — sounds like **INDICATIVE PRICEREFERENCE PRICE** | //ɪ/ndic/æ/tiv/e/ price/reference price/ — sounds like **INDICATIVE PRICEREFERENCE PRICE**"
+    },
+    {
+      "number": 872,
+      "content": "Reference price | 参考价格 | //ɪ/ndic/æ/tiv/e/ price/reference price/ — sounds like **INDICATIVE PRICEREFERENCE PRICE** | //ɪ/ndic/æ/tiv/e/ price/reference price/ — sounds like **INDICATIVE PRICEREFERENCE PRICE**"
     },
     {
       "number": 873,
@@ -3533,7 +3729,11 @@
     },
     {
       "number": 882,
-      "content": "Take/bear risk | 承担风险 | /t/æ/k/e//bear r/ɪ/sk/ — sounds like **TAKEBEAR RISK** | /t/æ/k/e//bear r/ɪ/sk/ — sounds like **TAKEBEAR RISK**"
+      "content": "Take risk | 承担风险 | /t/æ/k/e//bear r/ɪ/sk/ — sounds like **TAKEBEAR RISK** | /t/æ/k/e//bear r/ɪ/sk/ — sounds like **TAKEBEAR RISK**"
+    },
+    {
+      "number": 882,
+      "content": "Bear risk | 承担风险 | /t/æ/k/e//bear r/ɪ/sk/ — sounds like **TAKEBEAR RISK** | /t/æ/k/e//bear r/ɪ/sk/ — sounds like **TAKEBEAR RISK**"
     },
     {
       "number": 883,
@@ -3541,7 +3741,11 @@
     },
     {
       "number": 884,
-      "content": "Location/site selection | 选址 | /l/ɒ/c/æ/t/ɪ/on/sit/e/ selec/ʃən// — sounds like **LOCATIONSITE SELECTION** | /l/ɒ/c/æ/t/ɪ/on/sit/e/ selec/ʃən// — sounds like **LOCATIONSITE SELECTION**"
+      "content": "Location selection | 选址 | /l/ɒ/c/æ/t/ɪ/on/sit/e/ selec/ʃən// — sounds like **LOCATIONSITE SELECTION** | /l/ɒ/c/æ/t/ɪ/on/sit/e/ selec/ʃən// — sounds like **LOCATIONSITE SELECTION**"
+    },
+    {
+      "number": 884,
+      "content": "Site selection | 选址 | /l/ɒ/c/æ/t/ɪ/on/sit/e/ selec/ʃən// — sounds like **LOCATIONSITE SELECTION** | /l/ɒ/c/æ/t/ɪ/on/sit/e/ selec/ʃən// — sounds like **LOCATIONSITE SELECTION**"
     },
     {
       "number": 885,
@@ -3725,7 +3929,11 @@
     },
     {
       "number": 930,
-      "content": "Appraisal/evaluation | 估价 | //æ/ppra/ɪ/sal//e/val/ʌ/a/ʃən// — sounds like **APPRAISALEVALUATION** | //æ/ppra/ɪ/sal//e/val/ʌ/a/ʃən// — sounds like **APPRAISALEVALUATION**"
+      "content": "Appraisal | 估价 | //æ/ppra/ɪ/sal//e/val/ʌ/a/ʃən// — sounds like **APPRAISALEVALUATION** | //æ/ppra/ɪ/sal//e/val/ʌ/a/ʃən// — sounds like **APPRAISALEVALUATION**"
+    },
+    {
+      "number": 930,
+      "content": "Evaluation | 估价 | //æ/ppra/ɪ/sal//e/val/ʌ/a/ʃən// — sounds like **APPRAISALEVALUATION** | //æ/ppra/ɪ/sal//e/val/ʌ/a/ʃən// — sounds like **APPRAISALEVALUATION**"
     },
     {
       "number": 931,
@@ -4081,7 +4289,11 @@
     },
     {
       "number": 1019,
-      "content": "ENT(ear, nose and throat) specialist/surgeon | 耳鼻喉科医生 | //e/nt(e/æ/r, n/ɒ/se and /θ/roat) spec/ɪ/alist/s/ʌ/rgeon/ — sounds like **ENTEAR NOSE AND THROAT SPECIALISTSURGEON** | //e/nt(e/æ/r, n/ɒ/se and /θ/roat) spec/ɪ/alist/s/ʌ/rgeon/ — sounds like **ENTEAR NOSE AND THROAT SPECIALISTSURGEON**"
+      "content": "ENT(ear, nose and throat) specialist | 耳鼻喉科医生 | //e/nt(e/æ/r, n/ɒ/se and /θ/roat) spec/ɪ/alist/s/ʌ/rgeon/ — sounds like **ENTEAR NOSE AND THROAT SPECIALISTSURGEON** | //e/nt(e/æ/r, n/ɒ/se and /θ/roat) spec/ɪ/alist/s/ʌ/rgeon/ — sounds like **ENTEAR NOSE AND THROAT SPECIALISTSURGEON**"
+    },
+    {
+      "number": 1019,
+      "content": "ENT(ear, nose and throat) surgeon | 耳鼻喉科医生 | //e/nt(e/æ/r, n/ɒ/se and /θ/roat) spec/ɪ/alist/s/ʌ/rgeon/ — sounds like **ENTEAR NOSE AND THROAT SPECIALISTSURGEON** | //e/nt(e/æ/r, n/ɒ/se and /θ/roat) spec/ɪ/alist/s/ʌ/rgeon/ — sounds like **ENTEAR NOSE AND THROAT SPECIALISTSURGEON**"
     },
     {
       "number": 1020,
@@ -4097,7 +4309,11 @@
     },
     {
       "number": 1023,
-      "content": "Chinese/traditional herbalist | 中医 | //tʃ//ɪ/n/e/se/tr/æ/diti/ɒ/nal herbalist/ — sounds like **CHINESETRADITIONAL HERBALIST** | //tʃ//ɪ/n/e/se/tr/æ/diti/ɒ/nal herbalist/ — sounds like **CHINESETRADITIONAL HERBALIST**"
+      "content": "Chinese herbalist | 中医 | //tʃ//ɪ/n/e/se/tr/æ/diti/ɒ/nal herbalist/ — sounds like **CHINESETRADITIONAL HERBALIST** | //tʃ//ɪ/n/e/se/tr/æ/diti/ɒ/nal herbalist/ — sounds like **CHINESETRADITIONAL HERBALIST**"
+    },
+    {
+      "number": 1023,
+      "content": "Traditional herbalist | 中医 | //tʃ//ɪ/n/e/se/tr/æ/diti/ɒ/nal herbalist/ — sounds like **CHINESETRADITIONAL HERBALIST** | //tʃ//ɪ/n/e/se/tr/æ/diti/ɒ/nal herbalist/ — sounds like **CHINESETRADITIONAL HERBALIST**"
     },
     {
       "number": 1024,
@@ -4125,7 +4341,11 @@
     },
     {
       "number": 1030,
-      "content": "Oncologist/cancer specialist | 肿瘤专科医生 | //ɒ/ncolog/ɪ/st/c/æ/nc/e/r specialist/ — sounds like **ONCOLOGISTCANCER SPECIALIST** | //ɒ/ncolog/ɪ/st/c/æ/nc/e/r specialist/ — sounds like **ONCOLOGISTCANCER SPECIALIST**"
+      "content": "Oncologist | 肿瘤专科医生 | //ɒ/ncolog/ɪ/st/c/æ/nc/e/r specialist/ — sounds like **ONCOLOGISTCANCER SPECIALIST** | //ɒ/ncolog/ɪ/st/c/æ/nc/e/r specialist/ — sounds like **ONCOLOGISTCANCER SPECIALIST**"
+    },
+    {
+      "number": 1030,
+      "content": "Cancer specialist | 肿瘤专科医生 | //ɒ/ncolog/ɪ/st/c/æ/nc/e/r specialist/ — sounds like **ONCOLOGISTCANCER SPECIALIST** | //ɒ/ncolog/ɪ/st/c/æ/nc/e/r specialist/ — sounds like **ONCOLOGISTCANCER SPECIALIST**"
     },
     {
       "number": 1031,
@@ -4169,11 +4389,19 @@
     },
     {
       "number": 1041,
-      "content": "Matron/head nurse | 护士长 | /m/æ/tr/ɒ/n/h/e/ad n/ʌ/rse/ — sounds like **MATRONHEAD NURSE** | /m/æ/tr/ɒ/n/h/e/ad n/ʌ/rse/ — sounds like **MATRONHEAD NURSE**"
+      "content": "Matron | 护士长 | /m/æ/tr/ɒ/n/h/e/ad n/ʌ/rse/ — sounds like **MATRONHEAD NURSE** | /m/æ/tr/ɒ/n/h/e/ad n/ʌ/rse/ — sounds like **MATRONHEAD NURSE**"
+    },
+    {
+      "number": 1041,
+      "content": "Head nurse | 护士长 | /m/æ/tr/ɒ/n/h/e/ad n/ʌ/rse/ — sounds like **MATRONHEAD NURSE** | /m/æ/tr/ɒ/n/h/e/ad n/ʌ/rse/ — sounds like **MATRONHEAD NURSE**"
     },
     {
       "number": 1042,
-      "content": "Sister/nurse | 护士 | /s/ɪ/st/e/r/n/ʌ/rse/ — sounds like **SISTERNURSE** | /s/ɪ/st/e/r/n/ʌ/rse/ — sounds like **SISTERNURSE**"
+      "content": "Sister | 护士 | /s/ɪ/st/e/r/n/ʌ/rse/ — sounds like **SISTERNURSE** | /s/ɪ/st/e/r/n/ʌ/rse/ — sounds like **SISTERNURSE**"
+    },
+    {
+      "number": 1042,
+      "content": "Nurse | 护士 | /s/ɪ/st/e/r/n/ʌ/rse/ — sounds like **SISTERNURSE** | /s/ɪ/st/e/r/n/ʌ/rse/ — sounds like **SISTERNURSE**"
     },
     {
       "number": 1043,
@@ -4261,7 +4489,11 @@
     },
     {
       "number": 1064,
-      "content": "Operating room/theatre | 手术室 | //ɒ/p/e/r/æ/t/ɪ//ŋ/ room//θ/eatre/ — sounds like **OPERATING ROOMTHEATRE** | //ɒ/p/e/r/æ/t/ɪ//ŋ/ room//θ/eatre/ — sounds like **OPERATING ROOMTHEATRE**"
+      "content": "Operating room | 手术室 | //ɒ/p/e/r/æ/t/ɪ//ŋ/ room//θ/eatre/ — sounds like **OPERATING ROOMTHEATRE** | //ɒ/p/e/r/æ/t/ɪ//ŋ/ room//θ/eatre/ — sounds like **OPERATING ROOMTHEATRE**"
+    },
+    {
+      "number": 1064,
+      "content": "Operating theatre | 手术室 | //ɒ/p/e/r/æ/t/ɪ//ŋ/ room//θ/eatre/ — sounds like **OPERATING ROOMTHEATRE** | //ɒ/p/e/r/æ/t/ɪ//ŋ/ room//θ/eatre/ — sounds like **OPERATING ROOMTHEATRE**"
     },
     {
       "number": 1065,
@@ -4269,7 +4501,11 @@
     },
     {
       "number": 1066,
-      "content": "Physical examination/check-up | 体检 | /phys/ɪ/c/æ/l /e/xaminati/ɒ/n//tʃ/eck-/ʌ/p/ — sounds like **PHYSICAL EXAMINATIONCHECKUP** | /phys/ɪ/c/æ/l /e/xaminati/ɒ/n//tʃ/eck-/ʌ/p/ — sounds like **PHYSICAL EXAMINATIONCHECKUP**"
+      "content": "Physical examination | 体检 | /phys/ɪ/c/æ/l /e/xaminati/ɒ/n//tʃ/eck-/ʌ/p/ — sounds like **PHYSICAL EXAMINATIONCHECKUP** | /phys/ɪ/c/æ/l /e/xaminati/ɒ/n//tʃ/eck-/ʌ/p/ — sounds like **PHYSICAL EXAMINATIONCHECKUP**"
+    },
+    {
+      "number": 1066,
+      "content": "Physical check-up | 体检 | /phys/ɪ/c/æ/l /e/xaminati/ɒ/n//tʃ/eck-/ʌ/p/ — sounds like **PHYSICAL EXAMINATIONCHECKUP** | /phys/ɪ/c/æ/l /e/xaminati/ɒ/n//tʃ/eck-/ʌ/p/ — sounds like **PHYSICAL EXAMINATIONCHECKUP**"
     },
     {
       "number": 1067,
@@ -4401,7 +4637,15 @@
     },
     {
       "number": 1099,
-      "content": "Faeces/stool/poo | 粪便 | /f/æ//e/ces/st/ɒ/ol/poo/ — sounds like **FAECESSTOOLPOO** | /f/æ//e/ces/st/ɒ/ol/poo/ — sounds like **FAECESSTOOLPOO**"
+      "content": "Faeces | 粪便 | /f/æ//e/ces/st/ɒ/ol/poo/ — sounds like **FAECESSTOOLPOO** | /f/æ//e/ces/st/ɒ/ol/poo/ — sounds like **FAECESSTOOLPOO**"
+    },
+    {
+      "number": 1099,
+      "content": "Stool | 粪便 | /f/æ//e/ces/st/ɒ/ol/poo/ — sounds like **FAECESSTOOLPOO** | /f/æ//e/ces/st/ɒ/ol/poo/ — sounds like **FAECESSTOOLPOO**"
+    },
+    {
+      "number": 1099,
+      "content": "Poo | 粪便 | /f/æ//e/ces/st/ɒ/ol/poo/ — sounds like **FAECESSTOOLPOO** | /f/æ//e/ces/st/ɒ/ol/poo/ — sounds like **FAECESSTOOLPOO**"
     },
     {
       "number": 1100,
@@ -4413,7 +4657,11 @@
     },
     {
       "number": 1102,
-      "content": "Phlegm/ sputum | 痰 | /phl/e/gm/ sp/ʌ/tum/ — sounds like **PHLEGM SPUTUM** | /phl/e/gm/ sp/ʌ/tum/ — sounds like **PHLEGM SPUTUM**"
+      "content": "Phlegm | 痰 | /phl/e/gm/ sp/ʌ/tum/ — sounds like **PHLEGM SPUTUM** | /phl/e/gm/ sp/ʌ/tum/ — sounds like **PHLEGM SPUTUM**"
+    },
+    {
+      "number": 1102,
+      "content": "Sputum | 痰 | /phl/e/gm/ sp/ʌ/tum/ — sounds like **PHLEGM SPUTUM** | /phl/e/gm/ sp/ʌ/tum/ — sounds like **PHLEGM SPUTUM**"
     },
     {
       "number": 1103,
@@ -4429,7 +4677,15 @@
     },
     {
       "number": 1106,
-      "content": "Urine/pee/piss | 尿，小便 | //ʌ/r/ɪ/n/e//pee/piss/ — sounds like **URINEPEEPISS** | //ʌ/r/ɪ/n/e//pee/piss/ — sounds like **URINEPEEPISS**"
+      "content": "Urine | 尿，小便 | //ʌ/r/ɪ/n/e//pee/piss/ — sounds like **URINEPEEPISS** | //ʌ/r/ɪ/n/e//pee/piss/ — sounds like **URINEPEEPISS**"
+    },
+    {
+      "number": 1106,
+      "content": "Pee | 尿，小便 | //ʌ/r/ɪ/n/e//pee/piss/ — sounds like **URINEPEEPISS** | //ʌ/r/ɪ/n/e//pee/piss/ — sounds like **URINEPEEPISS**"
+    },
+    {
+      "number": 1106,
+      "content": "Piss | 尿，小便 | //ʌ/r/ɪ/n/e//pee/piss/ — sounds like **URINEPEEPISS** | //ʌ/r/ɪ/n/e//pee/piss/ — sounds like **URINEPEEPISS**"
     },
     {
       "number": 1107,
@@ -4609,7 +4865,11 @@
     },
     {
       "number": 1151,
-      "content": "Convulsion/spasm | 痉挛 | /c/ɒ/nv/ʌ/ls/ɪ/on/sp/æ/sm/ — sounds like **CONVULSIONSPASM** | /c/ɒ/nv/ʌ/ls/ɪ/on/sp/æ/sm/ — sounds like **CONVULSIONSPASM**"
+      "content": "Convulsion | 痉挛 | /c/ɒ/nv/ʌ/ls/ɪ/on/sp/æ/sm/ — sounds like **CONVULSIONSPASM** | /c/ɒ/nv/ʌ/ls/ɪ/on/sp/æ/sm/ — sounds like **CONVULSIONSPASM**"
+    },
+    {
+      "number": 1151,
+      "content": "Spasm | 痉挛 | /c/ɒ/nv/ʌ/ls/ɪ/on/sp/æ/sm/ — sounds like **CONVULSIONSPASM** | /c/ɒ/nv/ʌ/ls/ɪ/on/sp/æ/sm/ — sounds like **CONVULSIONSPASM**"
     },
     {
       "number": 1152,
@@ -4673,7 +4933,11 @@
     },
     {
       "number": 1167,
-      "content": "Haemorrhage/internal bleeding | 体内（大）出血 | /h/æ//e/m/ɒ/rrhage//ɪ/nternal bleed/ɪŋ// — sounds like **HAEMORRHAGEINTERNAL BLEEDING** | /h/æ//e/m/ɒ/rrhage//ɪ/nternal bleed/ɪŋ// — sounds like **HAEMORRHAGEINTERNAL BLEEDING**"
+      "content": "Haemorrhage | 体内（大）出血 | /h/æ//e/m/ɒ/rrhage//ɪ/nternal bleed/ɪŋ// — sounds like **HAEMORRHAGEINTERNAL BLEEDING** | /h/æ//e/m/ɒ/rrhage//ɪ/nternal bleed/ɪŋ// — sounds like **HAEMORRHAGEINTERNAL BLEEDING**"
+    },
+    {
+      "number": 1167,
+      "content": "Internal bleeding | 体内（大）出血 | /h/æ//e/m/ɒ/rrhage//ɪ/nternal bleed/ɪŋ// — sounds like **HAEMORRHAGEINTERNAL BLEEDING** | /h/æ//e/m/ɒ/rrhage//ɪ/nternal bleed/ɪŋ// — sounds like **HAEMORRHAGEINTERNAL BLEEDING**"
     },
     {
       "number": 1168,
@@ -4729,7 +4993,11 @@
     },
     {
       "number": 1181,
-      "content": "Running/runny nose | 流鼻涕 | /r/ʌ/nn/ɪ//ŋ//runny n/ɒ/s/e// — sounds like **RUNNINGRUNNY NOSE** | /r/ʌ/nn/ɪ//ŋ//runny n/ɒ/s/e// — sounds like **RUNNINGRUNNY NOSE**"
+      "content": "Running nose | 流鼻涕 | /r/ʌ/nn/ɪ//ŋ//runny n/ɒ/s/e// — sounds like **RUNNINGRUNNY NOSE** | /r/ʌ/nn/ɪ//ŋ//runny n/ɒ/s/e// — sounds like **RUNNINGRUNNY NOSE**"
+    },
+    {
+      "number": 1181,
+      "content": "Runny nose | 流鼻涕 | /r/ʌ/nn/ɪ//ŋ//runny n/ɒ/s/e// — sounds like **RUNNINGRUNNY NOSE** | /r/ʌ/nn/ɪ//ŋ//runny n/ɒ/s/e// — sounds like **RUNNINGRUNNY NOSE**"
     },
     {
       "number": 1182,
@@ -4885,7 +5153,11 @@
     },
     {
       "number": 1220,
-      "content": "A diagnosis of/be diagnosed with | 诊断为...病 | //æ/ d/ɪ/agn/ɒ/sis of/b/e/ diagnosed wi/θ// — sounds like **A DIAGNOSIS OFBE DIAGNOSED WITH** | //æ/ d/ɪ/agn/ɒ/sis of/b/e/ diagnosed wi/θ// — sounds like **A DIAGNOSIS OFBE DIAGNOSED WITH**"
+      "content": "A diagnosis of | 诊断为...病 | //æ/ d/ɪ/agn/ɒ/sis of/b/e/ diagnosed wi/θ// — sounds like **A DIAGNOSIS OFBE DIAGNOSED WITH** | //æ/ d/ɪ/agn/ɒ/sis of/b/e/ diagnosed wi/θ// — sounds like **A DIAGNOSIS OFBE DIAGNOSED WITH**"
+    },
+    {
+      "number": 1220,
+      "content": "Be diagnosed with | 诊断为...病 | //æ/ d/ɪ/agn/ɒ/sis of/b/e/ diagnosed wi/θ// — sounds like **A DIAGNOSIS OFBE DIAGNOSED WITH** | //æ/ d/ɪ/agn/ɒ/sis of/b/e/ diagnosed wi/θ// — sounds like **A DIAGNOSIS OFBE DIAGNOSED WITH**"
     },
     {
       "number": 1221,
@@ -5237,7 +5509,11 @@
     },
     {
       "number": 1308,
-      "content": "Incontinence/incontinent | 大小便失禁（...的） | //ɪ/nc/ɒ/ntin/e/nce/incontinent/ — sounds like **INCONTINENCEINCONTINENT** | //ɪ/nc/ɒ/ntin/e/nce/incontinent/ — sounds like **INCONTINENCEINCONTINENT**"
+      "content": "Incontinence | 大小便失禁（...的） | //ɪ/nc/ɒ/ntin/e/nce/incontinent/ — sounds like **INCONTINENCEINCONTINENT** | //ɪ/nc/ɒ/ntin/e/nce/incontinent/ — sounds like **INCONTINENCEINCONTINENT**"
+    },
+    {
+      "number": 1308,
+      "content": "Incontinent | 大小便失禁（...的） | //ɪ/nc/ɒ/ntin/e/nce/incontinent/ — sounds like **INCONTINENCEINCONTINENT** | //ɪ/nc/ɒ/ntin/e/nce/incontinent/ — sounds like **INCONTINENCEINCONTINENT**"
     },
     {
       "number": 1309,
@@ -5325,7 +5601,11 @@
     },
     {
       "number": 1330,
-      "content": "Glucose/blood sugar level | 血糖含量 | /gl/ʌ/c/ɒ/s/e//blood sug/æ/r level/ — sounds like **GLUCOSEBLOOD SUGAR LEVEL** | /gl/ʌ/c/ɒ/s/e//blood sug/æ/r level/ — sounds like **GLUCOSEBLOOD SUGAR LEVEL**"
+      "content": "Glucose level | 血糖含量 | /gl/ʌ/c/ɒ/s/e//blood sug/æ/r level/ — sounds like **GLUCOSEBLOOD SUGAR LEVEL** | /gl/ʌ/c/ɒ/s/e//blood sug/æ/r level/ — sounds like **GLUCOSEBLOOD SUGAR LEVEL**"
+    },
+    {
+      "number": 1330,
+      "content": "Blood sugar level | 血糖含量 | /gl/ʌ/c/ɒ/s/e//blood sug/æ/r level/ — sounds like **GLUCOSEBLOOD SUGAR LEVEL** | /gl/ʌ/c/ɒ/s/e//blood sug/æ/r level/ — sounds like **GLUCOSEBLOOD SUGAR LEVEL**"
     },
     {
       "number": 1331,
@@ -5433,15 +5713,27 @@
     },
     {
       "number": 1356,
-      "content": "An additional/extra flight | 临时航班，临时班次，附加航班 | //æ/n add/ɪ/ti/ɒ/nal//e/xtra flight/ — sounds like **AN ADDITIONALEXTRA FLIGHT** | //æ/n add/ɪ/ti/ɒ/nal//e/xtra flight/ — sounds like **AN ADDITIONALEXTRA FLIGHT**"
+      "content": "An additional flight | 临时航班，临时班次，附加航班 | //æ/n add/ɪ/ti/ɒ/nal//e/xtra flight/ — sounds like **AN ADDITIONALEXTRA FLIGHT** | //æ/n add/ɪ/ti/ɒ/nal//e/xtra flight/ — sounds like **AN ADDITIONALEXTRA FLIGHT**"
+    },
+    {
+      "number": 1356,
+      "content": "An extra flight | 临时航班，临时班次，附加航班 | //æ/n add/ɪ/ti/ɒ/nal//e/xtra flight/ — sounds like **AN ADDITIONALEXTRA FLIGHT** | //æ/n add/ɪ/ti/ɒ/nal//e/xtra flight/ — sounds like **AN ADDITIONALEXTRA FLIGHT**"
     },
     {
       "number": 1357,
-      "content": "An additional/extra flight | 临时航班，临时班次，附加航班 | //æ/n add/ɪ/ti/ɒ/nal//e/xtra flight/ — sounds like **AN ADDITIONALEXTRA FLIGHT** | //æ/n add/ɪ/ti/ɒ/nal//e/xtra flight/ — sounds like **AN ADDITIONALEXTRA FLIGHT**"
+      "content": "An additional flight | 临时航班，临时班次，附加航班 | //æ/n add/ɪ/ti/ɒ/nal//e/xtra flight/ — sounds like **AN ADDITIONALEXTRA FLIGHT** | //æ/n add/ɪ/ti/ɒ/nal//e/xtra flight/ — sounds like **AN ADDITIONALEXTRA FLIGHT**"
+    },
+    {
+      "number": 1357,
+      "content": "An extra flight | 临时航班，临时班次，附加航班 | //æ/n add/ɪ/ti/ɒ/nal//e/xtra flight/ — sounds like **AN ADDITIONALEXTRA FLIGHT** | //æ/n add/ɪ/ti/ɒ/nal//e/xtra flight/ — sounds like **AN ADDITIONALEXTRA FLIGHT**"
     },
     {
       "number": 1358,
-      "content": "A regular/scheduled flight | 定期航班 | //æ/ r/e/g/ʌ/lar/s/tʃ/eduled fl/ɪ/ght/ — sounds like **A REGULARSCHEDULED FLIGHT** | //æ/ r/e/g/ʌ/lar/s/tʃ/eduled fl/ɪ/ght/ — sounds like **A REGULARSCHEDULED FLIGHT**"
+      "content": "A regular flight | 定期航班 | //æ/ r/e/g/ʌ/lar/s/tʃ/eduled fl/ɪ/ght/ — sounds like **A REGULARSCHEDULED FLIGHT** | //æ/ r/e/g/ʌ/lar/s/tʃ/eduled fl/ɪ/ght/ — sounds like **A REGULARSCHEDULED FLIGHT**"
+    },
+    {
+      "number": 1358,
+      "content": "A scheduled flight | 定期航班 | //æ/ r/e/g/ʌ/lar/s/tʃ/eduled fl/ɪ/ght/ — sounds like **A REGULARSCHEDULED FLIGHT** | //æ/ r/e/g/ʌ/lar/s/tʃ/eduled fl/ɪ/ght/ — sounds like **A REGULARSCHEDULED FLIGHT**"
     },
     {
       "number": 1359,
@@ -5477,11 +5769,19 @@
     },
     {
       "number": 1367,
-      "content": "A baggage/luggage cart | 行李车 | //æ/ baggag/e//l/ʌ/ggage cart/ — sounds like **A BAGGAGELUGGAGE CART** | //æ/ baggag/e//l/ʌ/ggage cart/ — sounds like **A BAGGAGELUGGAGE CART**"
+      "content": "A baggage cart | 行李车 | //æ/ baggag/e//l/ʌ/ggage cart/ — sounds like **A BAGGAGELUGGAGE CART** | //æ/ baggag/e//l/ʌ/ggage cart/ — sounds like **A BAGGAGELUGGAGE CART**"
+    },
+    {
+      "number": 1367,
+      "content": "A luggage cart | 行李车 | //æ/ baggag/e//l/ʌ/ggage cart/ — sounds like **A BAGGAGELUGGAGE CART** | //æ/ baggag/e//l/ʌ/ggage cart/ — sounds like **A BAGGAGELUGGAGE CART**"
     },
     {
       "number": 1368,
-      "content": "A baggage/luggage check | 行李检查 | //æ/ baggag/e//l/ʌ/ggage /tʃ/eck/ — sounds like **A BAGGAGELUGGAGE CHECK** | //æ/ baggag/e//l/ʌ/ggage /tʃ/eck/ — sounds like **A BAGGAGELUGGAGE CHECK**"
+      "content": "A baggage check | 行李检查 | //æ/ baggag/e//l/ʌ/ggage /tʃ/eck/ — sounds like **A BAGGAGELUGGAGE CHECK** | //æ/ baggag/e//l/ʌ/ggage /tʃ/eck/ — sounds like **A BAGGAGELUGGAGE CHECK**"
+    },
+    {
+      "number": 1368,
+      "content": "A luggage check | 行李检查 | //æ/ baggag/e//l/ʌ/ggage /tʃ/eck/ — sounds like **A BAGGAGELUGGAGE CHECK** | //æ/ baggag/e//l/ʌ/ggage /tʃ/eck/ — sounds like **A BAGGAGELUGGAGE CHECK**"
     },
     {
       "number": 1369,
@@ -5513,11 +5813,19 @@
     },
     {
       "number": 1376,
-      "content": "A disembarkation card/incoming passenger card | 入境登记表 | //æ/ d/ɪ/s/e/mbarkati/ɒ/n card/incomi/ŋ/ passenger card/ — sounds like **A DISEMBARKATION CARDINCOMING PASSENGER CARD** | //æ/ d/ɪ/s/e/mbarkati/ɒ/n card/incomi/ŋ/ passenger card/ — sounds like **A DISEMBARKATION CARDINCOMING PASSENGER CARD**"
+      "content": "A disembarkation card | 入境登记表 | //æ/ d/ɪ/s/e/mbarkati/ɒ/n card/incomi/ŋ/ passenger card/ — sounds like **A DISEMBARKATION CARDINCOMING PASSENGER CARD** | //æ/ d/ɪ/s/e/mbarkati/ɒ/n card/incomi/ŋ/ passenger card/ — sounds like **A DISEMBARKATION CARDINCOMING PASSENGER CARD**"
+    },
+    {
+      "number": 1376,
+      "content": "An incoming passenger card | 入境登记表 | //æ/ d/ɪ/s/e/mbarkati/ɒ/n card/incomi/ŋ/ passenger card/ — sounds like **A DISEMBARKATION CARDINCOMING PASSENGER CARD** | //æ/ d/ɪ/s/e/mbarkati/ɒ/n card/incomi/ŋ/ passenger card/ — sounds like **A DISEMBARKATION CARDINCOMING PASSENGER CARD**"
     },
     {
       "number": 1377,
-      "content": "An embarkation card/outgoing passenger card | 出境登记表 | //æ/n /e/mbarkat/ɪ//ɒ/n card/o/ʌ/tgoi/ŋ/ passenger card/ — sounds like **AN EMBARKATION CARDOUTGOING PASSENGER CARD** | //æ/n /e/mbarkat/ɪ//ɒ/n card/o/ʌ/tgoi/ŋ/ passenger card/ — sounds like **AN EMBARKATION CARDOUTGOING PASSENGER CARD**"
+      "content": "An embarkation card | 出境登记表 | //æ/n /e/mbarkat/ɪ//ɒ/n card/o/ʌ/tgoi/ŋ/ passenger card/ — sounds like **AN EMBARKATION CARDOUTGOING PASSENGER CARD** | //æ/n /e/mbarkat/ɪ//ɒ/n card/o/ʌ/tgoi/ŋ/ passenger card/ — sounds like **AN EMBARKATION CARDOUTGOING PASSENGER CARD**"
+    },
+    {
+      "number": 1377,
+      "content": "An outgoing passenger card | 出境登记表 | //æ/n /e/mbarkat/ɪ//ɒ/n card/o/ʌ/tgoi/ŋ/ passenger card/ — sounds like **AN EMBARKATION CARDOUTGOING PASSENGER CARD** | //æ/n /e/mbarkat/ɪ//ɒ/n card/o/ʌ/tgoi/ŋ/ passenger card/ — sounds like **AN EMBARKATION CARDOUTGOING PASSENGER CARD**"
     },
     {
       "number": 1378,
@@ -5585,7 +5893,11 @@
     },
     {
       "number": 1394,
-      "content": "Excess baggage/overweight baggage | 超重行李 | //e/xcess b/æ/ggage//ɒ/verwe/ɪ/ght baggage/ — sounds like **EXCESS BAGGAGEOVERWEIGHT BAGGAGE** | //e/xcess b/æ/ggage//ɒ/verwe/ɪ/ght baggage/ — sounds like **EXCESS BAGGAGEOVERWEIGHT BAGGAGE**"
+      "content": "Excess baggage | 超重行李 | //e/xcess b/æ/ggage//ɒ/verwe/ɪ/ght baggage/ — sounds like **EXCESS BAGGAGEOVERWEIGHT BAGGAGE** | //e/xcess b/æ/ggage//ɒ/verwe/ɪ/ght baggage/ — sounds like **EXCESS BAGGAGEOVERWEIGHT BAGGAGE**"
+    },
+    {
+      "number": 1394,
+      "content": "Overweight baggage | 超重行李 | //e/xcess b/æ/ggage//ɒ/verwe/ɪ/ght baggage/ — sounds like **EXCESS BAGGAGEOVERWEIGHT BAGGAGE** | //e/xcess b/æ/ggage//ɒ/verwe/ɪ/ght baggage/ — sounds like **EXCESS BAGGAGEOVERWEIGHT BAGGAGE**"
     },
     {
       "number": 1395,
@@ -5621,7 +5933,11 @@
     },
     {
       "number": 1403,
-      "content": "Hand luggage/carry-on baggage | 手提行李 | /h/æ/nd l/ʌ/ggag/e//carry-/ɒ/n baggage/ — sounds like **HAND LUGGAGECARRYON BAGGAGE** | /h/æ/nd l/ʌ/ggag/e//carry-/ɒ/n baggage/ — sounds like **HAND LUGGAGECARRYON BAGGAGE**"
+      "content": "Hand luggage | 手提行李 | /h/æ/nd l/ʌ/ggag/e//carry-/ɒ/n baggage/ — sounds like **HAND LUGGAGECARRYON BAGGAGE** | /h/æ/nd l/ʌ/ggag/e//carry-/ɒ/n baggage/ — sounds like **HAND LUGGAGECARRYON BAGGAGE**"
+    },
+    {
+      "number": 1403,
+      "content": "Carry-on baggage | 手提行李 | /h/æ/nd l/ʌ/ggag/e//carry-/ɒ/n baggage/ — sounds like **HAND LUGGAGECARRYON BAGGAGE** | /h/æ/nd l/ʌ/ggag/e//carry-/ɒ/n baggage/ — sounds like **HAND LUGGAGECARRYON BAGGAGE**"
     },
     {
       "number": 1404,
@@ -5629,7 +5945,11 @@
     },
     {
       "number": 1405,
-      "content": "Unaccompanied/check-in baggage | 托运行李 | //ʌ/n/æ/cc/ɒ/mpan/ɪ//e/d//tʃ/eck-in baggage/ — sounds like **UNACCOMPANIEDCHECKIN BAGGAGE** | //ʌ/n/æ/cc/ɒ/mpan/ɪ//e/d//tʃ/eck-in baggage/ — sounds like **UNACCOMPANIEDCHECKIN BAGGAGE**"
+      "content": "Unaccompanied baggage | 托运行李 | //ʌ/n/æ/cc/ɒ/mpan/ɪ//e/d//tʃ/eck-in baggage/ — sounds like **UNACCOMPANIEDCHECKIN BAGGAGE** | //ʌ/n/æ/cc/ɒ/mpan/ɪ//e/d//tʃ/eck-in baggage/ — sounds like **UNACCOMPANIEDCHECKIN BAGGAGE**"
+    },
+    {
+      "number": 1405,
+      "content": "Check-in baggage | 托运行李 | //ʌ/n/æ/cc/ɒ/mpan/ɪ//e/d//tʃ/eck-in baggage/ — sounds like **UNACCOMPANIEDCHECKIN BAGGAGE** | //ʌ/n/æ/cc/ɒ/mpan/ɪ//e/d//tʃ/eck-in baggage/ — sounds like **UNACCOMPANIEDCHECKIN BAGGAGE**"
     },
     {
       "number": 1406,
@@ -5641,11 +5961,19 @@
     },
     {
       "number": 1408,
-      "content": "Land/landing | 降落，着陆 | /l/æ/nd/land/ɪŋ// — sounds like **LANDLANDING** | /l/æ/nd/land/ɪŋ// — sounds like **LANDLANDING**"
+      "content": "Land | 降落，着陆 | /l/æ/nd/land/ɪŋ// — sounds like **LANDLANDING** | /l/æ/nd/land/ɪŋ// — sounds like **LANDLANDING**"
+    },
+    {
+      "number": 1408,
+      "content": "Landing | 降落，着陆 | /l/æ/nd/land/ɪŋ// — sounds like **LANDLANDING** | /l/æ/nd/land/ɪŋ// — sounds like **LANDLANDING**"
     },
     {
       "number": 1409,
-      "content": "A passport inspection/check | 护照检查 | //æ/ passp/ɒ/rt /ɪ/nsp/e/ction//tʃ/eck/ — sounds like **A PASSPORT INSPECTIONCHECK** | //æ/ passp/ɒ/rt /ɪ/nsp/e/ction//tʃ/eck/ — sounds like **A PASSPORT INSPECTIONCHECK**"
+      "content": "A passport inspection | 护照检查 | //æ/ passp/ɒ/rt /ɪ/nsp/e/ction//tʃ/eck/ — sounds like **A PASSPORT INSPECTIONCHECK** | //æ/ passp/ɒ/rt /ɪ/nsp/e/ction//tʃ/eck/ — sounds like **A PASSPORT INSPECTIONCHECK**"
+    },
+    {
+      "number": 1409,
+      "content": "A passport check | 护照检查 | //æ/ passp/ɒ/rt /ɪ/nsp/e/ction//tʃ/eck/ — sounds like **A PASSPORT INSPECTIONCHECK** | //æ/ passp/ɒ/rt /ɪ/nsp/e/ction//tʃ/eck/ — sounds like **A PASSPORT INSPECTIONCHECK**"
     },
     {
       "number": 1410,
@@ -5689,7 +6017,11 @@
     },
     {
       "number": 1420,
-      "content": "The transit area/lounge | 过境室，中转候机厅 | //θ//e/ tr/æ/ns/ɪ/t area/l/ɒ//ʌ//ŋ/e/ — sounds like **THE TRANSIT AREALOUNGE** | //θ//e/ tr/æ/ns/ɪ/t area/l/ɒ//ʌ//ŋ/e/ — sounds like **THE TRANSIT AREALOUNGE**"
+      "content": "The transit area | 过境室，中转候机厅 | //θ//e/ tr/æ/ns/ɪ/t area/l/ɒ//ʌ//ŋ/e/ — sounds like **THE TRANSIT AREALOUNGE** | //θ//e/ tr/æ/ns/ɪ/t area/l/ɒ//ʌ//ŋ/e/ — sounds like **THE TRANSIT AREALOUNGE**"
+    },
+    {
+      "number": 1420,
+      "content": "The lounge | 过境室，中转候机厅 | //θ//e/ tr/æ/ns/ɪ/t area/l/ɒ//ʌ//ŋ/e/ — sounds like **THE TRANSIT AREALOUNGE** | //θ//e/ tr/æ/ns/ɪ/t area/l/ɒ//ʌ//ŋ/e/ — sounds like **THE TRANSIT AREALOUNGE**"
     },
     {
       "number": 1421,
@@ -5705,7 +6037,11 @@
     },
     {
       "number": 1424,
-      "content": "A B-and-B/a bed-and-breakfast | 提供住宿和次日早餐的旅馆 | //æ/ b-and-b/a b/e/d-and-breakfast/ — sounds like **A BANDBA BEDANDBREAKFAST** | //æ/ b-and-b/a b/e/d-and-breakfast/ — sounds like **A BANDBA BEDANDBREAKFAST**"
+      "content": "A B-and-B | 提供住宿和次日早餐的旅馆 | //æ/ b-and-b/a b/e/d-and-breakfast/ — sounds like **A BANDBA BEDANDBREAKFAST** | //æ/ b-and-b/a b/e/d-and-breakfast/ — sounds like **A BANDBA BEDANDBREAKFAST**"
+    },
+    {
+      "number": 1424,
+      "content": "A bed-and-breakfast | 提供住宿和次日早餐的旅馆 | //æ/ b-and-b/a b/e/d-and-breakfast/ — sounds like **A BANDBA BEDANDBREAKFAST** | //æ/ b-and-b/a b/e/d-and-breakfast/ — sounds like **A BANDBA BEDANDBREAKFAST**"
     },
     {
       "number": 1425,
@@ -5757,7 +6093,11 @@
     },
     {
       "number": 1437,
-      "content": "Make a booking/reservation | 预定 | /m/æ/k/e/ a b/ɒ/ok/ɪ//ŋ//reserva/ʃən// — sounds like **MAKE A BOOKINGRESERVATION** | /m/æ/k/e/ a b/ɒ/ok/ɪ//ŋ//reserva/ʃən// — sounds like **MAKE A BOOKINGRESERVATION**"
+      "content": "Make a booking | 预定 | /m/æ/k/e/ a b/ɒ/ok/ɪ//ŋ//reserva/ʃən// — sounds like **MAKE A BOOKINGRESERVATION** | /m/æ/k/e/ a b/ɒ/ok/ɪ//ŋ//reserva/ʃən// — sounds like **MAKE A BOOKINGRESERVATION**"
+    },
+    {
+      "number": 1437,
+      "content": "Make a reservation | 预定 | /m/æ/k/e/ a b/ɒ/ok/ɪ//ŋ//reserva/ʃən// — sounds like **MAKE A BOOKINGRESERVATION** | /m/æ/k/e/ a b/ɒ/ok/ɪ//ŋ//reserva/ʃən// — sounds like **MAKE A BOOKINGRESERVATION**"
     },
     {
       "number": 1438,
@@ -5785,11 +6125,19 @@
     },
     {
       "number": 1444,
-      "content": "A tourist attraction/place of interest | 旅游景点，旅游名胜 | //æ/ t/ɒ//ʌ/r/ɪ/st attraction/plac/e/ of interest/ — sounds like **A TOURIST ATTRACTIONPLACE OF INTEREST** | //æ/ t/ɒ//ʌ/r/ɪ/st attraction/plac/e/ of interest/ — sounds like **A TOURIST ATTRACTIONPLACE OF INTEREST**"
+      "content": "A tourist attraction | 旅游景点，旅游名胜 | //æ/ t/ɒ//ʌ/r/ɪ/st attraction/plac/e/ of interest/ — sounds like **A TOURIST ATTRACTIONPLACE OF INTEREST** | //æ/ t/ɒ//ʌ/r/ɪ/st attraction/plac/e/ of interest/ — sounds like **A TOURIST ATTRACTIONPLACE OF INTEREST**"
+    },
+    {
+      "number": 1444,
+      "content": "A place of interest | 旅游景点，旅游名胜 | //æ/ t/ɒ//ʌ/r/ɪ/st attraction/plac/e/ of interest/ — sounds like **A TOURIST ATTRACTIONPLACE OF INTEREST** | //æ/ t/ɒ//ʌ/r/ɪ/st attraction/plac/e/ of interest/ — sounds like **A TOURIST ATTRACTIONPLACE OF INTEREST**"
     },
     {
       "number": 1445,
-      "content": "Auto rental/auto hire | 租车，汽车租用 | //æ//ʌ/t/ɒ/ r/e/ntal/auto h/ɪ/re/ — sounds like **AUTO RENTALAUTO HIRE** | //æ//ʌ/t/ɒ/ r/e/ntal/auto h/ɪ/re/ — sounds like **AUTO RENTALAUTO HIRE**"
+      "content": "Auto rental | 租车，汽车租用 | //æ//ʌ/t/ɒ/ r/e/ntal/auto h/ɪ/re/ — sounds like **AUTO RENTALAUTO HIRE** | //æ//ʌ/t/ɒ/ r/e/ntal/auto h/ɪ/re/ — sounds like **AUTO RENTALAUTO HIRE**"
+    },
+    {
+      "number": 1445,
+      "content": "Auto hire | 租车，汽车租用 | //æ//ʌ/t/ɒ/ r/e/ntal/auto h/ɪ/re/ — sounds like **AUTO RENTALAUTO HIRE** | //æ//ʌ/t/ɒ/ r/e/ntal/auto h/ɪ/re/ — sounds like **AUTO RENTALAUTO HIRE**"
     },
     {
       "number": 1446,
@@ -5841,7 +6189,11 @@
     },
     {
       "number": 1458,
-      "content": "A guide/a tour guide | 导游 | //æ/ g/ʌ//ɪ/d/e//a t/ɒ/ur guide/ — sounds like **A GUIDEA TOUR GUIDE** | //æ/ g/ʌ//ɪ/d/e//a t/ɒ/ur guide/ — sounds like **A GUIDEA TOUR GUIDE**"
+      "content": "A guide | 导游 | //æ/ g/ʌ//ɪ/d/e//a t/ɒ/ur guide/ — sounds like **A GUIDEA TOUR GUIDE** | //æ/ g/ʌ//ɪ/d/e//a t/ɒ/ur guide/ — sounds like **A GUIDEA TOUR GUIDE**"
+    },
+    {
+      "number": 1458,
+      "content": "A tour guide | 导游 | //æ/ g/ʌ//ɪ/d/e//a t/ɒ/ur guide/ — sounds like **A GUIDEA TOUR GUIDE** | //æ/ g/ʌ//ɪ/d/e//a t/ɒ/ur guide/ — sounds like **A GUIDEA TOUR GUIDE**"
     },
     {
       "number": 1459,
@@ -5849,7 +6201,11 @@
     },
     {
       "number": 1460,
-      "content": "A harbour/ port | 海港，港口 | //æ/ harb/ɒ//ʌ/r/ port/ — sounds like **A HARBOUR PORT** | //æ/ harb/ɒ//ʌ/r/ port/ — sounds like **A HARBOUR PORT**"
+      "content": "A harbour | 海港，港口 | //æ/ harb/ɒ//ʌ/r/ port/ — sounds like **A HARBOUR PORT** | //æ/ harb/ɒ//ʌ/r/ port/ — sounds like **A HARBOUR PORT**"
+    },
+    {
+      "number": 1460,
+      "content": "A port | 海港，港口 | //æ/ harb/ɒ//ʌ/r/ port/ — sounds like **A HARBOUR PORT** | //æ/ harb/ɒ//ʌ/r/ port/ — sounds like **A HARBOUR PORT**"
     },
     {
       "number": 1461,
@@ -5877,7 +6233,11 @@
     },
     {
       "number": 1467,
-      "content": "A 'must see/go' place | 必看/去之地 | //æ/ 'm/ʌ/st s/e/e/g/ɒ/' place/ — sounds like **A MUST SEEGO PLACE** | //æ/ 'm/ʌ/st s/e/e/g/ɒ/' place/ — sounds like **A MUST SEEGO PLACE**"
+      "content": "A 'must see' place | 必看/去之地 | //æ/ 'm/ʌ/st s/e/e/g/ɒ/' place/ — sounds like **A MUST SEEGO PLACE** | //æ/ 'm/ʌ/st s/e/e/g/ɒ/' place/ — sounds like **A MUST SEEGO PLACE**"
+    },
+    {
+      "number": 1467,
+      "content": "A 'must go' place | 必看/去之地 | //æ/ 'm/ʌ/st s/e/e/g/ɒ/' place/ — sounds like **A MUST SEEGO PLACE** | //æ/ 'm/ʌ/st s/e/e/g/ɒ/' place/ — sounds like **A MUST SEEGO PLACE**"
     },
     {
       "number": 1468,
@@ -5901,7 +6261,11 @@
     },
     {
       "number": 1473,
-      "content": "A return/round ticket | 往返票，双程票 | //æ/ r/e/t/ʌ/rn/r/ɒ/und t/ɪ/cket/ — sounds like **A RETURNROUND TICKET** | //æ/ r/e/t/ʌ/rn/r/ɒ/und t/ɪ/cket/ — sounds like **A RETURNROUND TICKET**"
+      "content": "A return ticket | 往返票，双程票 | //æ/ r/e/t/ʌ/rn/r/ɒ/und t/ɪ/cket/ — sounds like **A RETURNROUND TICKET** | //æ/ r/e/t/ʌ/rn/r/ɒ/und t/ɪ/cket/ — sounds like **A RETURNROUND TICKET**"
+    },
+    {
+      "number": 1473,
+      "content": "A round ticket | 往返票，双程票 | //æ/ r/e/t/ʌ/rn/r/ɒ/und t/ɪ/cket/ — sounds like **A RETURNROUND TICKET** | //æ/ r/e/t/ʌ/rn/r/ɒ/und t/ɪ/cket/ — sounds like **A RETURNROUND TICKET**"
     },
     {
       "number": 1474,
@@ -5937,7 +6301,11 @@
     },
     {
       "number": 1482,
-      "content": "A double room/a room for two | 双人房 | //æ/ d/ɒ//ʌ/bl/e/ room/a room for two/ — sounds like **A DOUBLE ROOMA ROOM FOR TWO** | //æ/ d/ɒ//ʌ/bl/e/ room/a room for two/ — sounds like **A DOUBLE ROOMA ROOM FOR TWO**"
+      "content": "A double room | 双人房 | //æ/ d/ɒ//ʌ/bl/e/ room/a room for two/ — sounds like **A DOUBLE ROOMA ROOM FOR TWO** | //æ/ d/ɒ//ʌ/bl/e/ room/a room for two/ — sounds like **A DOUBLE ROOMA ROOM FOR TWO**"
+    },
+    {
+      "number": 1482,
+      "content": "A room for two | 双人房 | //æ/ d/ɒ//ʌ/bl/e/ room/a room for two/ — sounds like **A DOUBLE ROOMA ROOM FOR TWO** | //æ/ d/ɒ//ʌ/bl/e/ room/a room for two/ — sounds like **A DOUBLE ROOMA ROOM FOR TWO**"
     },
     {
       "number": 1483,
@@ -5957,7 +6325,11 @@
     },
     {
       "number": 1487,
-      "content": "Deluxe/luxury | 豪华的，奢华的 | /d/e/l/ʌ/xe/luxury/ — sounds like **DELUXELUXURY** | /d/e/l/ʌ/xe/luxury/ — sounds like **DELUXELUXURY**"
+      "content": "Deluxe | 豪华的，奢华的 | /d/e/l/ʌ/xe/luxury/ — sounds like **DELUXELUXURY** | /d/e/l/ʌ/xe/luxury/ — sounds like **DELUXELUXURY**"
+    },
+    {
+      "number": 1487,
+      "content": "Luxury | 豪华的，奢华的 | /d/e/l/ʌ/xe/luxury/ — sounds like **DELUXELUXURY** | /d/e/l/ʌ/xe/luxury/ — sounds like **DELUXELUXURY**"
     },
     {
       "number": 1488,
@@ -5977,7 +6349,11 @@
     },
     {
       "number": 1492,
-      "content": "Sightsee/sightseeing | 观光 | /s/ɪ/ghts/e/e/sightsee/ɪŋ// — sounds like **SIGHTSEESIGHTSEEING** | /s/ɪ/ghts/e/e/sightsee/ɪŋ// — sounds like **SIGHTSEESIGHTSEEING**"
+      "content": "Sightsee | 观光 | /s/ɪ/ghts/e/e/sightsee/ɪŋ// — sounds like **SIGHTSEESIGHTSEEING** | /s/ɪ/ghts/e/e/sightsee/ɪŋ// — sounds like **SIGHTSEESIGHTSEEING**"
+    },
+    {
+      "number": 1492,
+      "content": "Sightseeing | 观光 | /s/ɪ/ghts/e/e/sightsee/ɪŋ// — sounds like **SIGHTSEESIGHTSEEING** | /s/ɪ/ghts/e/e/sightsee/ɪŋ// — sounds like **SIGHTSEESIGHTSEEING**"
     },
     {
       "number": 1493,
@@ -6033,15 +6409,27 @@
     },
     {
       "number": 1506,
-      "content": "A travel document/travel papers | 旅行文件 | //æ/ trav/e/l d/ɒ/c/ʌ/ment/travel papers/ — sounds like **A TRAVEL DOCUMENTTRAVEL PAPERS** | //æ/ trav/e/l d/ɒ/c/ʌ/ment/travel papers/ — sounds like **A TRAVEL DOCUMENTTRAVEL PAPERS**"
+      "content": "A travel document | 旅行文件 | //æ/ trav/e/l d/ɒ/c/ʌ/ment/travel papers/ — sounds like **A TRAVEL DOCUMENTTRAVEL PAPERS** | //æ/ trav/e/l d/ɒ/c/ʌ/ment/travel papers/ — sounds like **A TRAVEL DOCUMENTTRAVEL PAPERS**"
+    },
+    {
+      "number": 1506,
+      "content": "Travel papers | 旅行文件 | //æ/ trav/e/l d/ɒ/c/ʌ/ment/travel papers/ — sounds like **A TRAVEL DOCUMENTTRAVEL PAPERS** | //æ/ trav/e/l d/ɒ/c/ʌ/ment/travel papers/ — sounds like **A TRAVEL DOCUMENTTRAVEL PAPERS**"
     },
     {
       "number": 1507,
-      "content": "A travel permit/pass | 旅行通行证，旅行许可 | //æ/ trav/e/l perm/ɪ/t/pass/ — sounds like **A TRAVEL PERMITPASS** | //æ/ trav/e/l perm/ɪ/t/pass/ — sounds like **A TRAVEL PERMITPASS**"
+      "content": "A travel permit | 旅行通行证，旅行许可 | //æ/ trav/e/l perm/ɪ/t/pass/ — sounds like **A TRAVEL PERMITPASS** | //æ/ trav/e/l perm/ɪ/t/pass/ — sounds like **A TRAVEL PERMITPASS**"
+    },
+    {
+      "number": 1507,
+      "content": "A travel pass | 旅行通行证，旅行许可 | //æ/ trav/e/l perm/ɪ/t/pass/ — sounds like **A TRAVEL PERMITPASS** | //æ/ trav/e/l perm/ɪ/t/pass/ — sounds like **A TRAVEL PERMITPASS**"
     },
     {
       "number": 1508,
-      "content": "Be on vacation/holiday | 放假，在度假中 | /b/e/ /ɒ/n v/æ/cat/ɪ/on/holid/eɪ// — sounds like **BE ON VACATIONHOLIDAY** | /b/e/ /ɒ/n v/æ/cat/ɪ/on/holid/eɪ// — sounds like **BE ON VACATIONHOLIDAY**"
+      "content": "Be on vacation | 放假，在度假中 | /b/e/ /ɒ/n v/æ/cat/ɪ/on/holid/eɪ// — sounds like **BE ON VACATIONHOLIDAY** | /b/e/ /ɒ/n v/æ/cat/ɪ/on/holid/eɪ// — sounds like **BE ON VACATIONHOLIDAY**"
+    },
+    {
+      "number": 1508,
+      "content": "Be on holiday | 放假，在度假中 | /b/e/ /ɒ/n v/æ/cat/ɪ/on/holid/eɪ// — sounds like **BE ON VACATIONHOLIDAY** | /b/e/ /ɒ/n v/æ/cat/ɪ/on/holid/eɪ// — sounds like **BE ON VACATIONHOLIDAY**"
     },
     {
       "number": 1509,
@@ -6341,7 +6729,11 @@
     },
     {
       "number": 1583,
-      "content": "Dual citizenship/nationality | 双重国籍 | /d/ʌ//æ/l c/ɪ/tiz/e/n/ʃ/ip/nati/ɒ/nality/ — sounds like **DUAL CITIZENSHIPNATIONALITY** | /d/ʌ//æ/l c/ɪ/tiz/e/n/ʃ/ip/nati/ɒ/nality/ — sounds like **DUAL CITIZENSHIPNATIONALITY**"
+      "content": "Dual citizenship | 双重国籍 | /d/ʌ//æ/l c/ɪ/tiz/e/n/ʃ/ip/nati/ɒ/nality/ — sounds like **DUAL CITIZENSHIPNATIONALITY** | /d/ʌ//æ/l c/ɪ/tiz/e/n/ʃ/ip/nati/ɒ/nality/ — sounds like **DUAL CITIZENSHIPNATIONALITY**"
+    },
+    {
+      "number": 1583,
+      "content": "Dual nationality | 双重国籍 | /d/ʌ//æ/l c/ɪ/tiz/e/n/ʃ/ip/nati/ɒ/nality/ — sounds like **DUAL CITIZENSHIPNATIONALITY** | /d/ʌ//æ/l c/ɪ/tiz/e/n/ʃ/ip/nati/ɒ/nality/ — sounds like **DUAL CITIZENSHIPNATIONALITY**"
     },
     {
       "number": 1584,
@@ -6361,7 +6753,11 @@
     },
     {
       "number": 1588,
-      "content": "No Bias/prejudice | 无偏见 | /n/ɒ/ b/ɪ//æ/s/pr/e/j/ʌ/dice/ — sounds like **NO BIASPREJUDICE** | /n/ɒ/ b/ɪ//æ/s/pr/e/j/ʌ/dice/ — sounds like **NO BIASPREJUDICE**"
+      "content": "No Bias | 无偏见 | /n/ɒ/ b/ɪ//æ/s/pr/e/j/ʌ/dice/ — sounds like **NO BIASPREJUDICE** | /n/ɒ/ b/ɪ//æ/s/pr/e/j/ʌ/dice/ — sounds like **NO BIASPREJUDICE**"
+    },
+    {
+      "number": 1588,
+      "content": "No prejudice | 无偏见 | /n/ɒ/ b/ɪ//æ/s/pr/e/j/ʌ/dice/ — sounds like **NO BIASPREJUDICE** | /n/ɒ/ b/ɪ//æ/s/pr/e/j/ʌ/dice/ — sounds like **NO BIASPREJUDICE**"
     },
     {
       "number": 1589,
@@ -6429,7 +6825,11 @@
     },
     {
       "number": 1605,
-      "content": "Infectious/contagious disease | 传染病 | //ɪ/nf/e/cti/ɒ//ʌ/s/cont/æ/gious disease/ — sounds like **INFECTIOUSCONTAGIOUS DISEASE** | //ɪ/nf/e/cti/ɒ//ʌ/s/cont/æ/gious disease/ — sounds like **INFECTIOUSCONTAGIOUS DISEASE**"
+      "content": "Infectious disease | 传染病 | //ɪ/nf/e/cti/ɒ//ʌ/s/cont/æ/gious disease/ — sounds like **INFECTIOUSCONTAGIOUS DISEASE** | //ɪ/nf/e/cti/ɒ//ʌ/s/cont/æ/gious disease/ — sounds like **INFECTIOUSCONTAGIOUS DISEASE**"
+    },
+    {
+      "number": 1605,
+      "content": "Contagious disease | 传染病 | //ɪ/nf/e/cti/ɒ//ʌ/s/cont/æ/gious disease/ — sounds like **INFECTIOUSCONTAGIOUS DISEASE** | //ɪ/nf/e/cti/ɒ//ʌ/s/cont/æ/gious disease/ — sounds like **INFECTIOUSCONTAGIOUS DISEASE**"
     },
     {
       "number": 1606,
@@ -6437,7 +6837,15 @@
     },
     {
       "number": 1607,
-      "content": "Immediate family/close relative/next of kin | 直系亲属 | //ɪ/mm/e/di/æ/te family/cl/ɒ/se relative/next of kin/ — sounds like **IMMEDIATE FAMILYCLOSE RELATIVENEXT OF KIN** | //ɪ/mm/e/di/æ/te family/cl/ɒ/se relative/next of kin/ — sounds like **IMMEDIATE FAMILYCLOSE RELATIVENEXT OF KIN**"
+      "content": "Immediate family | 直系亲属 | //ɪ/mm/e/di/æ/te family/cl/ɒ/se relative/next of kin/ — sounds like **IMMEDIATE FAMILYCLOSE RELATIVENEXT OF KIN** | //ɪ/mm/e/di/æ/te family/cl/ɒ/se relative/next of kin/ — sounds like **IMMEDIATE FAMILYCLOSE RELATIVENEXT OF KIN**"
+    },
+    {
+      "number": 1607,
+      "content": "Close relative | 直系亲属 | //ɪ/mm/e/di/æ/te family/cl/ɒ/se relative/next of kin/ — sounds like **IMMEDIATE FAMILYCLOSE RELATIVENEXT OF KIN** | //ɪ/mm/e/di/æ/te family/cl/ɒ/se relative/next of kin/ — sounds like **IMMEDIATE FAMILYCLOSE RELATIVENEXT OF KIN**"
+    },
+    {
+      "number": 1607,
+      "content": "Next of kin | 直系亲属 | //ɪ/mm/e/di/æ/te family/cl/ɒ/se relative/next of kin/ — sounds like **IMMEDIATE FAMILYCLOSE RELATIVENEXT OF KIN** | //ɪ/mm/e/di/æ/te family/cl/ɒ/se relative/next of kin/ — sounds like **IMMEDIATE FAMILYCLOSE RELATIVENEXT OF KIN**"
     },
     {
       "number": 1608,

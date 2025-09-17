@@ -66,7 +66,7 @@ class UIController {
             window.vocabularyManager.setLearningMode(newMode);
             this.updateCategoryDisplay(); // Update UI for new mode
             console.log(`Learning mode changed to: ${newMode}`);
-            
+
             // Save the learning mode to localStorage
             if (window.storage && window.storage.isAvailable()) {
                 window.storage.setItem('learningMode', newMode);
@@ -206,9 +206,15 @@ class UIController {
             // and not just the phonetic representation
             if (word.source === 'vocabulary-clean') {
                 console.log('Vocabulary word:', word);
-                // Get the first part before any '|' character
-                const fullWord = word.english.split('/')[0].trim();
-                englishElement.textContent = fullWord;
+                // Handle words that might contain slashes (like "Behave/act")
+                // or other special characters
+                if (word.english.includes('/')) {
+                    // Get the full phrase before any '/' character
+                    const fullWord = word.english.split('/')[0].trim();
+                    englishElement.textContent = fullWord;
+                } else {
+                    englishElement.textContent = word.english;
+                }
             } else {
                 englishElement.textContent = word.english;
             }

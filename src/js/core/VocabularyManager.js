@@ -4,7 +4,7 @@ class VocabularyManager {
     constructor() {
         this.currentCategory = 'all-categories';
         this.currentDifficulty = 'all';
-        this.currentLearningMode = 'chinese-english'; // vocabulary, dialogue, unfamiliar, chinese-english
+        this.currentLearningMode = 'vocabulary-clean'; // vocabulary, dialogue, unfamiliar, chinese-english, vocabulary-clean
         this.currentWords = [];
         this.allWords = []; // Store unfiltered words
         this.categoryCounts = {}; // Store counts per category per difficulty
@@ -415,10 +415,10 @@ class VocabularyManager {
             const numberMatch = entry.number.toString().match(/\d+/);
             const entryNumber = numberMatch ? numberMatch[0] : '0';
 
-            // Clean up the English term - if it contains slashes (like "Behave/act"), 
+            // Clean up the English term - if it contains slashes (like "Behave/act"),
             // we need to handle it specially
             const englishTerm = parts[0] || '';
-            
+
             return {
                 english: englishTerm,
                 chinese: parts[1] || '',

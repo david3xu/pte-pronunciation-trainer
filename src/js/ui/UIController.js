@@ -62,9 +62,16 @@ class UIController {
 
         // Learning mode selection
         document.getElementById('learningModeSelect').addEventListener('change', (e) => {
-            window.vocabularyManager.setLearningMode(e.target.value);
+            const newMode = e.target.value;
+            window.vocabularyManager.setLearningMode(newMode);
             this.updateCategoryDisplay(); // Update UI for new mode
-            console.log(`Learning mode changed to: ${e.target.value}`);
+            console.log(`Learning mode changed to: ${newMode}`);
+            
+            // Save the learning mode to localStorage
+            if (window.storage && window.storage.isAvailable()) {
+                window.storage.setItem('learningMode', newMode);
+                console.log(`Learning mode saved to storage: ${newMode}`);
+            }
         });
 
         // Control buttons

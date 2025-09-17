@@ -472,12 +472,12 @@ class VocabularyManager {
 
         // Define category ranges based on entry numbers
         const categoryRanges = {
-            'education': { start: 1, end: 325, label: '🎓 Education' },
-            'social-welfare': { start: 326, end: 541, label: '🤝 Social Welfare' },
-            'legal': { start: 542, end: 847, label: '⚖️ Legal' },
-            'business': { start: 848, end: 1042, label: '💼 Business' },
-            'medical': { start: 1043, end: 1392, label: '🏥 Medical' },
-            'tourism': { start: 1393, end: 1630, label: '✈️ Tourism' }
+            'education': { start: 1, end: 303, label: '🎓 Education' },
+            'social-welfare': { start: 304, end: 505, label: '🤝 Social Welfare' },
+            'legal': { start: 506, end: 803, label: '⚖️ Legal' },
+            'business': { start: 804, end: 1003, label: '💼 Business' },
+            'medical': { start: 1004, end: 1350, label: '🏥 Medical' },
+            'tourism': { start: 1351, end: 1608, label: '✈️ Tourism' }
         };
 
         // Map to standard vocabulary shape, preserving original order and pronunciation data

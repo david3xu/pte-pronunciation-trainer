@@ -470,6 +470,16 @@ class VocabularyManager {
             return this.getVocabularyCleanData(); // Call again with the fallback dataset
         }
 
+        // Define category ranges based on entry numbers
+        const categoryRanges = {
+            'education': { start: 1, end: 325, label: '🎓 Education' },
+            'social-welfare': { start: 326, end: 541, label: '🤝 Social Welfare' },
+            'legal': { start: 542, end: 847, label: '⚖️ Legal' },
+            'business': { start: 848, end: 1042, label: '💼 Business' },
+            'medical': { start: 1043, end: 1392, label: '🏥 Medical' },
+            'tourism': { start: 1393, end: 1630, label: '✈️ Tourism' }
+        };
+
         // Map to standard vocabulary shape, preserving original order and pronunciation data
         const vocabulary = dataset.entries.map((entry) => {
             // Parse the entry format: English | Chinese | UK Pronunciation | US Pronunciation
@@ -478,6 +488,16 @@ class VocabularyManager {
             // Extract the number from the entry
             const numberMatch = entry.number.toString().match(/\d+/);
             const entryNumber = numberMatch ? numberMatch[0] : '0';
+            const entryNum = parseInt(entryNumber);
+
+            // Determine category based on entry number
+            let category = 'education'; // Default
+            for (const [catKey, range] of Object.entries(categoryRanges)) {
+                if (entryNum >= range.start && entryNum <= range.end) {
+                    category = catKey;
+                    break;
+                }
+            }
 
             // Clean up the English term - if it contains slashes (like "Behave/act"),
             // we need to handle it specially
@@ -489,9 +509,9 @@ class VocabularyManager {
                 difficulty: 'normal', // Default difficulty
                 example: '',
                 exampleChinese: '',
-                category: 'vocabulary', // Default category for vocabulary entries
+                category: category,
                 conversationId: entryNumber,
-                conversationTitle: 'Vocabulary',
+                conversationTitle: categoryRanges[category]?.label || 'Vocabulary',
                 sentenceNumber: parseInt(entryNumber),
                 // UK pronunciation data
                 ukPronunciation: parts[2] || '',
@@ -504,15 +524,32 @@ class VocabularyManager {
             };
         });
 
-        // Update category labels for vocabulary-clean mode
+        // Calculate category counts
+        const categoryCounts = {};
+        Object.keys(categoryRanges).forEach(cat => {
+            categoryCounts[cat] = vocabulary.filter(v => v.category === cat).length;
+        });
+
+        // Update category labels for vocabulary-clean mode with counts
         this.categoryLabels = {
-            'all-categories': `🎓 All Vocabulary Entries (${vocabulary.length} entries)`
+            'all-categories': `🌟 All Categories (${vocabulary.length} entries)`,
+            'education': `${categoryRanges.education.label} (${categoryCounts.education} entries)`,
+            'social-welfare': `${categoryRanges['social-welfare'].label} (${categoryCounts['social-welfare']} entries)`,
+            'legal': `${categoryRanges.legal.label} (${categoryCounts.legal} entries)`,
+            'business': `${categoryRanges.business.label} (${categoryCounts.business} entries)`,
+            'medical': `${categoryRanges.medical.label} (${categoryCounts.medical} entries)`,
+            'tourism': `${categoryRanges.tourism.label} (${categoryCounts.tourism} entries)`
         };
 
-        // For vocabulary-clean mode, we don't use dialogue groups
-        // So we need to ensure we're not trying to filter by dialogue groups
+        // Update dialogue groups to support category filtering
         this.dialogueGroups = {
-            'all-categories': [] // Only use all-categories for vocabulary-clean mode
+            'all-categories': [],
+            'education': [],
+            'social-welfare': [],
+            'legal': [],
+            'business': [],
+            'medical': [],
+            'tourism': []
         };
 
         return {
@@ -558,11 +595,8 @@ class VocabularyManager {
         console.log('🎯 Setting learning mode to:', mode);
         this.currentLearningMode = mode;
 
-        // For vocabulary-clean mode, we need to set the category to all-categories
-        // since it doesn't use dialogue groups
-        if (mode === 'vocabulary-clean') {
-            this.currentCategory = 'all-categories';
-        }
+        // For vocabulary-clean mode, we can now support category filtering
+        // No need to force category to all-categories anymore
 
         // Recalculate category counts for the new mode
         this.recalculateCountsForMode(mode);
@@ -619,10 +653,14 @@ class VocabularyManager {
 
         // Filter vocabulary based on learning mode and category
         if (this.currentLearningMode === 'vocabulary-clean') {
-            // For vocabulary-clean mode, we don't filter by dialogue groups
-            // We use all vocabulary entries
-            this.allWords = [...data.vocabulary];
-            console.log('Using vocabulary-clean mode - all entries loaded:', this.allWords.length);
+            // For vocabulary-clean mode, filter by category
+            if (category === 'all-categories') {
+                this.allWords = [...data.vocabulary];
+                console.log('Using vocabulary-clean mode - all entries loaded:', this.allWords.length);
+            } else {
+                this.allWords = data.vocabulary.filter(item => item.category === category);
+                console.log(`Using vocabulary-clean mode - ${category} entries loaded:`, this.allWords.length);
+            }
         } else if (this.currentLearningMode === 'unfamiliar') {
             // For unfamiliar words, filter by dialogue group
             if (category === 'all-categories') {

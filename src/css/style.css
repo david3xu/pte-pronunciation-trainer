@@ -557,6 +557,11 @@ body {
 /* Force Dark Mode - Overrides all light mode styles */
 html {
     color-scheme: dark !important;
+    background: #1a202c !important;
+}
+
+* {
+    color-scheme: dark !important;
 }
 
 body {
@@ -573,6 +578,17 @@ body {
 .app-header {
     background: #1a202c !important;
     color: #f7fafc !important;
+}
+
+/* Fix middle content area dark mode */
+.learning-area {
+    background: #2d3748 !important;
+    color: #e2e8f0 !important;
+}
+
+.word-display {
+    background: transparent !important;
+    color: #e2e8f0 !important;
 }
 
 .english-word {
@@ -593,8 +609,42 @@ body {
     background: rgba(26, 32, 44, 0.8) !important;
 }
 
+/* Fix example sentence dark mode */
+.example-sentence {
+    background: rgba(26, 32, 44, 0.8) !important;
+    color: #cbd5e0 !important;
+    border-left-color: #4299e1 !important;
+}
+
+.example-english {
+    color: #e2e8f0 !important;
+}
+
+.example-chinese {
+    color: #a0aec0 !important;
+}
+
+.simple-progress {
+    color: #e2e8f0 !important;
+}
+
+.difficulty-badge {
+    background: rgba(26, 32, 44, 0.8) !important;
+    color: #f7fafc !important;
+    border: 1px solid #4a5568 !important;
+}
+
+.current-category {
+    color: #90cdf4 !important;
+    background: rgba(45, 55, 72, 0.6) !important;
+    padding: 4px 8px !important;
+    border-radius: 4px !important;
+    border: 1px solid #4a5568 !important;
+}
+
 .control-area {
     background: #1a202c !important;
+    border-top-color: #4a5568 !important;
 }
 
 .btn-play {
@@ -610,10 +660,35 @@ body {
 .settings-panel {
     background: #2d3748 !important;
     color: #e2e8f0 !important;
+    border-top-color: #4a5568 !important;
+}
+
+.setting-item label {
+    color: #a0aec0 !important;
 }
 
 select, input {
     background: #1a202c !important;
     color: #e2e8f0 !important;
     border: 1px solid #4a5568 !important;
+}
+
+/* Dark mode for action buttons */
+.btn-settings, .btn-fullscreen {
+    color: #e2e8f0 !important;
+    background: transparent !important;
+}
+
+.btn-settings:hover, .btn-fullscreen:hover {
+    background: #4a5568 !important;
+}
+
+/* Ensure all text elements are light colored */
+div, span, p, h1, h2, h3, h4, h5, h6, button {
+    color: inherit !important;
+}
+
+/* Override any remaining light backgrounds */
+div:not(.btn-play):not(.btn-nav) {
+    background-color: transparent !important;
 }

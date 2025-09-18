@@ -32,6 +32,9 @@ class CCLPronunciationTrainer {
     async initializeModules() {
         console.log('🚀 Starting module initialization...');
 
+        // 0. Register service worker for PWA and background operation
+        this.registerServiceWorker();
+
         // 1. Initialize vocabulary manager (loads conversation data asynchronously)
         await window.vocabularyManager.initialize();
 
@@ -51,6 +54,17 @@ class CCLPronunciationTrainer {
         this.setupKeyboardShortcuts();
 
         console.log('✅ All modules initialized successfully');
+    }
+
+    async registerServiceWorker() {
+        if ('serviceWorker' in navigator) {
+            try {
+                await navigator.serviceWorker.register('/sw.js');
+                console.log('✅ Service Worker registered for background operation');
+            } catch (error) {
+                console.warn('Service Worker registration failed:', error);
+            }
+        }
     }
 
     initializeVoices() {

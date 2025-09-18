@@ -35,28 +35,80 @@ class CCLPronunciationTrainer {
         // 0. Register service worker for PWA and background operation
         this.registerServiceWorker();
 
-        // 1. Initialize vocabulary manager (loads conversation data asynchronously)
+        // 1. Initialize state manager (must be first to restore settings)
+        this.initializeStateManager();
+
+        // 2. Initialize vocabulary manager (loads conversation data asynchronously)
         await window.vocabularyManager.initialize();
 
-        // 2. Initialize UI controller and bind events
+        // 3. Initialize UI controller and bind events
         window.uiController.bindEventListeners();
 
-        // 3. Sync settings from HTML
+        // 4. Sync settings from HTML
         window.uiController.syncRepeatModeFromHTML();
 
-        // 4. Update initial UI state
+        // 5. Update initial UI state
         window.uiController.updateUI();
 
-        // 5. Populate voice options when available
+        // 6. Populate voice options when available
         this.initializeVoices();
 
-        // 6. Setup keyboard shortcuts
+        // 7. Setup keyboard shortcuts
         this.setupKeyboardShortcuts();
 
-        // 7. Setup fullscreen functionality
+        // 8. Setup fullscreen functionality
         this.setupFullscreen();
 
+        // 9. Restore UI settings from state
+        this.restoreUIState();
+
         console.log('✅ All modules initialized successfully');
+    }
+
+    initializeStateManager() {
+        // StateManager is already initialized as a global instance
+        // Just ensure other modules can access it
+        if (window.stateManager) {
+            console.log('📂 StateManager initialized and ready');
+            
+            // Check if we're restoring a previous session
+            if (window.stateManager.hasPreviousSession()) {
+                console.log('🔄 Previous session detected - will restore state');
+            } else {
+                console.log('🆕 New session started');
+            }
+        } else {
+            console.warn('StateManager not available');
+        }
+    }
+
+    restoreUIState() {
+        // Restore UI state after all modules are initialized
+        if (window.stateManager && window.stateManager.hasPreviousSession()) {
+            const preferences = window.stateManager.getUserPreferences();
+            
+            // Apply TTS settings
+            if (window.ttsEngine && preferences.speed) {
+                window.ttsEngine.setSpeechRate(parseFloat(preferences.speed));
+            }
+            
+            // Apply audio control settings
+            if (window.audioControls) {
+                if (preferences.delay) {
+                    window.audioControls.setDelay(parseInt(preferences.delay));
+                }
+                if (preferences.repeat) {
+                    window.audioControls.setRepeatMode(preferences.repeat);
+                }
+            }
+            
+            // Apply voice preference
+            if (window.voiceSelector && preferences.voice && preferences.voice !== 'auto') {
+                window.voiceSelector.setPreferredVoice(preferences.voice);
+            }
+            
+            console.log('🎯 UI state restored from previous session');
+        }
     }
 
     async registerServiceWorker() {

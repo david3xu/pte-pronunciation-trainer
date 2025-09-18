@@ -2,10 +2,16 @@
 class SettingsPanel {
     constructor() {
         this.isOpen = false;
+        this.stateManager = null; // Will be initialized when available
         this.setupSettingsPanel();
     }
 
     setupSettingsPanel() {
+        // Initialize state manager if available
+        if (window.stateManager) {
+            this.stateManager = window.stateManager;
+        }
+
         // Settings panel toggle
         const settingsBtn = document.getElementById('settingsBtn');
         const settingsPanel = document.getElementById('settingsPanel');
@@ -33,24 +39,33 @@ class SettingsPanel {
     }
 
     setupSettingsPersistence() {
-        // Load saved settings or defaults
-        const savedSettings = {
-            category: window.storage.getItem('category') || 'all-categories',
-            difficulty: window.storage.getItem('difficulty') || 'all',
-            speechRate: window.storage.getItem('speechRate') || 0.7,
-            delay: window.storage.getItem('delay') || 2000,
-            repeatMode: window.storage.getItem('repeatMode') || 'individual',
-            preferredVoice: window.storage.getItem('preferredVoice') || null,
-            learningMode: window.storage.getItem('learningMode') || 'vocabulary-clean'
-        };
+        // Load saved settings from StateManager or legacy storage
+        let savedSettings;
+        
+        if (this.stateManager && this.stateManager.hasPreviousSession()) {
+            savedSettings = this.stateManager.getUserPreferences();
+            console.log('📂 Loading settings from StateManager:', savedSettings);
+        } else {
+            // Fallback to legacy storage
+            savedSettings = {
+                category: window.storage.getItem('category') || 'all-categories',
+                difficulty: window.storage.getItem('difficulty') || 'all',
+                speed: window.storage.getItem('speechRate') || '0.7',
+                delay: window.storage.getItem('delay') || '2000',
+                repeat: window.storage.getItem('repeatMode') || 'individual',
+                voice: window.storage.getItem('preferredVoice') || 'auto',
+                learningMode: window.storage.getItem('learningMode') || 'vocabulary-clean'
+            };
+            console.log('📂 Loading settings from legacy storage:', savedSettings);
+        }
 
         // Apply settings to UI elements
         this.applySettingToElement('categorySelect', savedSettings.category);
         this.applySettingToElement('difficultySelect', savedSettings.difficulty);
-        this.applySettingToElement('speedSelect', savedSettings.speechRate);
+        this.applySettingToElement('speedSelect', savedSettings.speed);
         this.applySettingToElement('delaySelect', savedSettings.delay);
-        this.applySettingToElement('repeatSelect', savedSettings.repeatMode);
-        this.applySettingToElement('voiceSelect', savedSettings.preferredVoice || 'Google UK English Male');
+        this.applySettingToElement('repeatSelect', savedSettings.repeat);
+        this.applySettingToElement('voiceSelect', savedSettings.voice || 'auto');
         this.applySettingToElement('learningModeSelect', savedSettings.learningMode);
 
         // Apply settings to modules
@@ -141,9 +156,18 @@ class SettingsPanel {
     }
 
     saveSetting(key, value) {
-        if (window.storage.isAvailable()) {
-            window.storage.setItem(key, value);
-            console.log(`Setting saved: ${key} = ${value}`);
+        // Save to StateManager if available, otherwise fallback to legacy storage
+        if (this.stateManager) {
+            const preferences = this.stateManager.getUserPreferences();
+            preferences[key] = value;
+            this.stateManager.saveUserPreferences(preferences);
+            console.log(`💾 Setting saved to StateManager: ${key} = ${value}`);
+        } else {
+            // Fallback to legacy storage
+            if (window.storage.isAvailable()) {
+                window.storage.setItem(key, value);
+                console.log(`💾 Setting saved to legacy storage: ${key} = ${value}`);
+            }
         }
     }
 

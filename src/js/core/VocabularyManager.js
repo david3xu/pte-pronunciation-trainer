@@ -11,6 +11,9 @@ class VocabularyManager {
         this.currentIndex = 0;
         this.dataLoader = null;
         this.isInitialized = false;
+        
+        // State management integration
+        this.stateManager = null;
 
         // Store different datasets
         this.completeDataset = null;
@@ -750,12 +753,48 @@ class VocabularyManager {
 
     getNextWord() {
         this.currentIndex = (this.currentIndex + 1) % this.currentWords.length;
+        this.saveState(); // Save state when navigating
         return this.getCurrentWord();
     }
 
     getPreviousWord() {
         this.currentIndex = (this.currentIndex - 1 + this.currentWords.length) % this.currentWords.length;
+        this.saveState(); // Save state when navigating
         return this.getCurrentWord();
+    }
+
+    // Save current state to localStorage
+    saveState() {
+        if (this.stateManager) {
+            this.stateManager.saveLearningState(
+                this.currentIndex,
+                this.currentCategory,
+                this.currentDifficulty
+            );
+        }
+    }
+
+    // Restore state from localStorage
+    restoreState() {
+        if (this.stateManager && this.stateManager.hasPreviousSession()) {
+            const learningState = this.stateManager.getLearningState();
+            console.log('📂 Restoring previous session state:', learningState);
+            
+            this.currentCategory = learningState.currentCategory || 'all-categories';
+            this.currentDifficulty = learningState.currentDifficulty || 'all';
+            
+            // Note: currentIndex will be restored after words are loaded
+            return learningState.currentWordIndex || 0;
+        }
+        return 0;
+    }
+
+    // Set current word index and save state
+    setCurrentIndex(index) {
+        if (index >= 0 && index < this.currentWords.length) {
+            this.currentIndex = index;
+            this.saveState();
+        }
     }
 
     getTotalWords() {
@@ -806,6 +845,11 @@ class VocabularyManager {
     async initialize() {
         console.log('🔄 Initializing VocabularyManager with complete dataset...');
 
+        // Initialize state manager if available
+        if (window.stateManager) {
+            this.stateManager = window.stateManager;
+        }
+
         // Load complete dataset directly via fetch instead of DialogueDataLoader
         try {
             console.log('📥 Loading complete dataset...');
@@ -820,10 +864,7 @@ class VocabularyManager {
             console.log(`📊 Loaded ${completeData.dialogues?.length} dialogues with vocabulary`);
 
             this.completeDataset = completeData;
-            this.isInitialized = true;
 
-            // Extract vocabulary for compatibility with existing methods
-            this.extractVocabularyFromDataset();
             // Extract vocabulary for compatibility with existing methods
             this.extractVocabularyFromDataset();
 
@@ -832,14 +873,26 @@ class VocabularyManager {
             // Now calculate counts and initialize
             this.calculateCategoryCounts();
             this.updateCategoryOptions();
+            
+            // Restore previous state if available
+            const restoredIndex = this.restoreState();
+            
             this.loadCategory(this.currentCategory);
+            
+            // Set the restored index after loading category
+            if (restoredIndex > 0 && restoredIndex < this.currentWords.length) {
+                this.currentIndex = restoredIndex;
+                console.log(`📍 Restored to word ${restoredIndex + 1}/${this.currentWords.length}`);
+            }
+            
             this.isInitialized = true;
 
             // Emit initialization complete
             window.eventBus.emit('vocabulary:initialized', {
                 totalTerms: this.categoryCounts['all-categories']?.all || 0,
                 categories: Object.keys(this.categoryLabels),
-                dataSource: 'complete-dataset'
+                dataSource: 'complete-dataset',
+                restoredIndex: restoredIndex
             });
 
             console.log('🎉 VocabularyManager initialized with complete dataset');

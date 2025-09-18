@@ -53,6 +53,9 @@ class CCLPronunciationTrainer {
         // 6. Setup keyboard shortcuts
         this.setupKeyboardShortcuts();
 
+        // 7. Setup fullscreen functionality
+        this.setupFullscreen();
+
         console.log('✅ All modules initialized successfully');
     }
 
@@ -140,7 +143,86 @@ class CCLPronunciationTrainer {
             }
         });
 
-        console.log('Keyboard shortcuts initialized: Space (play/pause), ← → (navigate), R (repeat), Esc (close settings)');
+        console.log('Keyboard shortcuts initialized: Space (play/pause), ← → (navigate), R (repeat), F (fullscreen), Esc (close settings)');
+    }
+
+    setupFullscreen() {
+        const fullscreenBtn = document.getElementById('fullscreenBtn');
+        if (!fullscreenBtn) return;
+
+        // Update button icon based on fullscreen state
+        const updateFullscreenIcon = () => {
+            const isFullscreen = document.fullscreenElement || 
+                                document.webkitFullscreenElement || 
+                                document.mozFullScreenElement || 
+                                document.msFullscreenElement;
+            
+            fullscreenBtn.textContent = isFullscreen ? '⛶' : '⛶';
+            fullscreenBtn.title = isFullscreen ? 'Exit Fullscreen' : 'Enter Fullscreen';
+        };
+
+        // Fullscreen toggle function
+        const toggleFullscreen = async () => {
+            try {
+                const isFullscreen = document.fullscreenElement || 
+                                    document.webkitFullscreenElement || 
+                                    document.mozFullScreenElement || 
+                                    document.msFullscreenElement;
+
+                if (isFullscreen) {
+                    // Exit fullscreen
+                    if (document.exitFullscreen) {
+                        await document.exitFullscreen();
+                    } else if (document.webkitExitFullscreen) {
+                        await document.webkitExitFullscreen();
+                    } else if (document.mozCancelFullScreen) {
+                        await document.mozCancelFullScreen();
+                    } else if (document.msExitFullscreen) {
+                        await document.msExitFullscreen();
+                    }
+                } else {
+                    // Enter fullscreen
+                    const element = document.documentElement;
+                    if (element.requestFullscreen) {
+                        await element.requestFullscreen();
+                    } else if (element.webkitRequestFullscreen) {
+                        await element.webkitRequestFullscreen();
+                    } else if (element.mozRequestFullScreen) {
+                        await element.mozRequestFullScreen();
+                    } else if (element.msRequestFullscreen) {
+                        await element.msRequestFullscreen();
+                    }
+                }
+            } catch (error) {
+                console.warn('Fullscreen toggle failed:', error);
+            }
+        };
+
+        // Event listeners
+        fullscreenBtn.addEventListener('click', toggleFullscreen);
+        
+        // Listen for fullscreen changes
+        ['fullscreenchange', 'webkitfullscreenchange', 'mozfullscreenchange', 'msfullscreenchange']
+            .forEach(event => {
+                document.addEventListener(event, updateFullscreenIcon);
+            });
+
+        // Keyboard shortcut for fullscreen (F11 alternative: F)
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'f' || e.key === 'F') {
+                // Don't interfere with input fields
+                if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT' || e.target.tagName === 'TEXTAREA') {
+                    return;
+                }
+                e.preventDefault();
+                toggleFullscreen();
+            }
+        });
+
+        // Initial icon update
+        updateFullscreenIcon();
+        
+        console.log('Fullscreen functionality initialized (Click button or press F key)');
     }
 
     togglePlayPause() {

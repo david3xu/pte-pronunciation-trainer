@@ -225,7 +225,13 @@ body {
     font-weight: 500;
 }
 
-.btn-settings {
+.action-buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.btn-settings, .btn-fullscreen {
     background: none;
     border: none;
     font-size: 20px;
@@ -235,10 +241,24 @@ body {
     min-height: 44px;
     min-width: 44px;
     transition: background 0.2s ease;
+    color: #4A5568;
 }
 
-.btn-settings:hover {
+.btn-settings:hover, .btn-fullscreen:hover {
     background: #E2E8F0;
+}
+
+.btn-fullscreen {
+    font-size: 18px;
+}
+
+/* Dark mode for action buttons */
+.btn-settings, .btn-fullscreen {
+    color: #e2e8f0 !important;
+}
+
+.btn-settings:hover, .btn-fullscreen:hover {
+    background: #4a5568 !important;
 }
 
 /* Settings Panel - Collapsible */

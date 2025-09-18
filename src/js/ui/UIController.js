@@ -52,12 +52,20 @@ class UIController {
         // Category selection
         document.getElementById('categorySelect').addEventListener('change', (e) => {
             window.vocabularyManager.loadCategory(e.target.value);
+            // Save category preference
+            if (window.settingsPanel) {
+                window.settingsPanel.saveSetting('category', e.target.value);
+            }
         });
 
         // Difficulty selection
         document.getElementById('difficultySelect').addEventListener('change', (e) => {
             window.vocabularyManager.setDifficulty(e.target.value);
             this.updateCategoryDisplay(); // Update counts in category selector and context bar
+            // Save difficulty preference
+            if (window.settingsPanel) {
+                window.settingsPanel.saveSetting('difficulty', e.target.value);
+            }
         });
 
         // Learning mode selection
@@ -94,10 +102,18 @@ class UIController {
         // Settings
         document.getElementById('speedSelect').addEventListener('change', (e) => {
             window.ttsEngine.setSpeechRate(parseFloat(e.target.value));
+            // Save speed preference
+            if (window.settingsPanel) {
+                window.settingsPanel.saveSetting('speed', e.target.value);
+            }
         });
 
         document.getElementById('delaySelect').addEventListener('change', (e) => {
             window.audioControls.setDelay(parseInt(e.target.value));
+            // Save delay preference
+            if (window.settingsPanel) {
+                window.settingsPanel.saveSetting('delay', e.target.value);
+            }
         });
 
         document.getElementById('repeatSelect').addEventListener('change', (e) => {
@@ -107,6 +123,11 @@ class UIController {
             window.ttsEngine.currentRepeatCount = 0;
 
             console.log(`Repeat mode changed to: ${e.target.value}`);
+            
+            // Save repeat preference
+            if (window.settingsPanel) {
+                window.settingsPanel.saveSetting('repeat', e.target.value);
+            }
 
             // Don't override the progress display during auto-play
         });
@@ -114,6 +135,10 @@ class UIController {
         // Voice selection
         document.getElementById('voiceSelect').addEventListener('change', (e) => {
             window.voiceSelector.setPreferredVoice(e.target.value);
+            // Save voice preference
+            if (window.settingsPanel) {
+                window.settingsPanel.saveSetting('voice', e.target.value);
+            }
         });
 
         // Update category display in context bar

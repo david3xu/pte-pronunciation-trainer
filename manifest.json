@@ -38,5 +38,16 @@
   },
   "launch_handler": {
     "client_mode": "focus-existing"
-  }
+  },
+  "background_sync": ["audio-playback"],
+  "permissions": [
+    "background-sync",
+    "notifications"
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "web+ccl",
+      "url": "/?audio=%s"
+    }
+  ]
 }

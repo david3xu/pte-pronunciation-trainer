@@ -11,7 +11,7 @@ class VocabularyManager {
         this.currentIndex = 0;
         this.dataLoader = null;
         this.isInitialized = false;
-        
+
         // State management integration
         this.stateManager = null;
 
@@ -290,15 +290,43 @@ class VocabularyManager {
         if (this.wordsDataset) return this.wordsDataset;
         try {
             console.log('📥 Loading words dataset (from words.md)...');
-            const response = await fetch('/data/processed/words-dataset.json');
+            
+            // Mobile optimization: Add timeout and retry logic
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            const timeout = isMobile ? 30000 : 10000; // 30s timeout on mobile
+            
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), timeout);
+            
+            const response = await fetch('/data/processed/words-dataset.json', {
+                signal: controller.signal,
+                headers: {
+                    'Accept': 'application/json',
+                    'Cache-Control': 'no-cache'
+                }
+            });
+            
+            clearTimeout(timeoutId);
+            
             if (!response.ok) {
                 throw new Error(`Failed to load words dataset: ${response.status} ${response.statusText}`);
             }
+            
             this.wordsDataset = await response.json();
             console.log('✅ Words dataset loaded:', this.wordsDataset.words?.length || 0, 'terms');
             return this.wordsDataset;
         } catch (error) {
             console.error('❌ Failed to load words dataset:', error);
+            
+            // Show user-friendly error message
+            if (window.progressTracker) {
+                if (error.name === 'AbortError') {
+                    window.progressTracker.showError('Loading timeout. Please check your connection and try again.');
+                } else {
+                    window.progressTracker.showError('Failed to load vocabulary data. Please refresh the page.');
+                }
+            }
+            
             return null;
         }
     }
@@ -779,10 +807,10 @@ class VocabularyManager {
         if (this.stateManager && this.stateManager.hasPreviousSession()) {
             const learningState = this.stateManager.getLearningState();
             console.log('📂 Restoring previous session state:', learningState);
-            
+
             this.currentCategory = learningState.currentCategory || 'all-categories';
             this.currentDifficulty = learningState.currentDifficulty || 'all';
-            
+
             // Note: currentIndex will be restored after words are loaded
             return learningState.currentWordIndex || 0;
         }
@@ -873,18 +901,18 @@ class VocabularyManager {
             // Now calculate counts and initialize
             this.calculateCategoryCounts();
             this.updateCategoryOptions();
-            
+
             // Restore previous state if available
             const restoredIndex = this.restoreState();
-            
+
             this.loadCategory(this.currentCategory);
-            
+
             // Set the restored index after loading category
             if (restoredIndex > 0 && restoredIndex < this.currentWords.length) {
                 this.currentIndex = restoredIndex;
                 console.log(`📍 Restored to word ${restoredIndex + 1}/${this.currentWords.length}`);
             }
-            
+
             this.isInitialized = true;
 
             // Emit initialization complete

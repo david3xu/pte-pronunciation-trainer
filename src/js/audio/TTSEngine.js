@@ -176,14 +176,14 @@ class TTSEngine {
                 }
             });
         }
-        
+
         // Set up background audio context for iOS
         if (typeof AudioContext !== 'undefined' || typeof webkitAudioContext !== 'undefined') {
             const AudioContextClass = AudioContext || webkitAudioContext;
             if (!this.audioContext) {
                 this.audioContext = new AudioContextClass();
             }
-            
+
             // Resume audio context if suspended (iOS requirement)
             if (this.audioContext.state === 'suspended') {
                 this.audioContext.resume();

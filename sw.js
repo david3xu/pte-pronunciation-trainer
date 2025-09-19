@@ -219,13 +219,26 @@ async function handleAudioPlaybackSync() {
       client.postMessage({
         type: 'AUDIO_PLAYBACK_SYNC',
         timestamp: Date.now(),
-        message: 'Audio playback maintained in background'
+        message: 'Audio playback maintained in background',
+        action: 'keep-alive'
       });
     });
 
     // Register another sync to keep it alive
     if (self.registration && self.registration.sync) {
       await self.registration.sync.register('audio-playback');
+    }
+
+    // Send notification to maintain audio session
+    if (self.registration && self.registration.showNotification) {
+      await self.registration.showNotification('CCL Trainer Audio Active', {
+        body: 'Audio playback continues in background',
+        icon: '/icon-192x192.png',
+        badge: '/icon-72x72.png',
+        tag: 'audio-playback',
+        silent: true,
+        requireInteraction: false
+      });
     }
 
   } catch (error) {

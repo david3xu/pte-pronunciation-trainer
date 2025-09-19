@@ -112,8 +112,8 @@ class TTSEngine {
     speak(text, lang = 'en-AU', customRate = null) {
         return new Promise((resolve, reject) => {
             // Check if we're on iOS and should use HTML5 Audio fallback
-            const isIOS = window.app && window.app.isMobileDevice && 
-                         /iPad|iPhone|iPod/.test(navigator.userAgent);
+            const isIOS = window.app && window.app.isMobileDevice &&
+                /iPad|iPhone|iPod/.test(navigator.userAgent);
 
             if (isIOS && this.shouldUseHTML5Audio()) {
                 return this.speakWithHTML5Audio(text, lang, customRate).then(resolve).catch(resolve);
@@ -272,7 +272,7 @@ class TTSEngine {
         }
 
         // Start playing silent audio to maintain audio session
-        this.backgroundAudioElement.play().catch(() => {});
+        this.backgroundAudioElement.play().catch(() => { });
 
         // Set up audio session for iOS
         if (navigator.mediaSession) {

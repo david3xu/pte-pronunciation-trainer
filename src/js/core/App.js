@@ -404,13 +404,13 @@ class CCLPronunciationTrainer {
     isMobileDevice() {
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
-    
+
     showMobileLoadingIndicator() {
         const loadingDiv = document.createElement('div');
         loadingDiv.id = 'mobile-loading';
         loadingDiv.innerHTML = `
-            <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
-                        background: #1a202c; color: white; display: flex; flex-direction: column; 
+            <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+                        background: #1a202c; color: white; display: flex; flex-direction: column;
                         justify-content: center; align-items: center; z-index: 9999; font-family: system-ui;">
                 <div style="font-size: 24px; margin-bottom: 20px;">📱</div>
                 <div style="font-size: 18px; margin-bottom: 10px;">Loading CCL Trainer...</div>
@@ -419,7 +419,7 @@ class CCLPronunciationTrainer {
         `;
         document.body.appendChild(loadingDiv);
     }
-    
+
     hideMobileLoadingIndicator() {
         const loadingDiv = document.getElementById('mobile-loading');
         if (loadingDiv) {

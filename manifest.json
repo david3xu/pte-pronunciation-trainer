@@ -42,7 +42,8 @@
   "background_sync": ["audio-playback"],
   "permissions": [
     "background-sync",
-    "notifications"
+    "notifications",
+    "audio-playback"
   ],
   "protocol_handlers": [
     {

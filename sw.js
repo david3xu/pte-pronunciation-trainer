@@ -101,6 +101,10 @@ self.addEventListener('sync', (event) => {
   if (event.tag === 'background-audio-sync') {
     event.waitUntil(handleBackgroundAudioSync());
   }
+  
+  if (event.tag === 'audio-playback') {
+    event.waitUntil(handleAudioPlaybackSync());
+  }
 });
 
 // Handle Background Audio Synchronization
@@ -204,6 +208,31 @@ self.addEventListener('message', (event) => {
   }
 });
 
+// Handle Audio Playback Sync for iOS Background
+async function handleAudioPlaybackSync() {
+  try {
+    console.log('[SW] Handling audio playback sync for iOS background...');
+    
+    // Keep the service worker alive for audio playback
+    const clients = await self.clients.matchAll();
+    clients.forEach(client => {
+      client.postMessage({
+        type: 'AUDIO_PLAYBACK_SYNC',
+        timestamp: Date.now(),
+        message: 'Audio playback maintained in background'
+      });
+    });
+    
+    // Register another sync to keep it alive
+    if (self.registration && self.registration.sync) {
+      await self.registration.sync.register('audio-playback');
+    }
+    
+  } catch (error) {
+    console.error('[SW] Audio playback sync failed:', error);
+  }
+}
+
 // Handle Background Audio Requests
 async function handleBackgroundAudioRequest(payload) {
   try {
@@ -213,6 +242,7 @@ async function handleBackgroundAudioRequest(payload) {
     if ('serviceWorker' in navigator && 'sync' in window.ServiceWorkerRegistration.prototype) {
       const registration = await navigator.serviceWorker.ready;
       await registration.sync.register('background-audio-sync');
+      await registration.sync.register('audio-playback');
       console.log('[SW] Background audio sync registered');
     }
     

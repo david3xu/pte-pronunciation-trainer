@@ -15,6 +15,9 @@ class TTSEngine {
         try {
             this.currentRepeatCount = repeatCount;
 
+            // Enable background audio for iOS
+            this.enableBackgroundAudio();
+
             // Clean text for TTS
             const cleanText = this.cleanTextForTTS(word.english);
 
@@ -162,6 +165,30 @@ class TTSEngine {
         setTimeout(() => {
             window.progressTracker.updateStatus('Text-to-speech not available in this browser');
         }, 3000);
+    }
+
+    enableBackgroundAudio() {
+        // Enable background audio for iOS
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.ready.then(registration => {
+                if (registration.sync) {
+                    registration.sync.register('audio-playback');
+                }
+            });
+        }
+        
+        // Set up background audio context for iOS
+        if (typeof AudioContext !== 'undefined' || typeof webkitAudioContext !== 'undefined') {
+            const AudioContextClass = AudioContext || webkitAudioContext;
+            if (!this.audioContext) {
+                this.audioContext = new AudioContextClass();
+            }
+            
+            // Resume audio context if suspended (iOS requirement)
+            if (this.audioContext.state === 'suspended') {
+                this.audioContext.resume();
+            }
+        }
     }
 
     cleanTextForTTS(text) {

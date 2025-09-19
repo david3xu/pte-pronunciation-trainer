@@ -12,6 +12,12 @@ class CCLPronunciationTrainer {
             return;
         }
         this.initialized = true;
+        
+        // Show loading indicator for mobile users
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        if (isMobile) {
+            this.showMobileLoadingIndicator();
+        }
 
         // Run cache migration before any module initialization
         // Force clear cache to ensure clean initialization
@@ -63,6 +69,9 @@ class CCLPronunciationTrainer {
         this.restoreUIState();
 
         console.log('✅ All modules initialized successfully');
+        
+        // Hide mobile loading indicator
+        this.hideMobileLoadingIndicator();
     }
 
     initializeStateManager() {
@@ -390,6 +399,46 @@ class CCLPronunciationTrainer {
 
     resetSettings() {
         window.settingsPanel.resetSettings();
+    }
+
+    // Mobile optimization methods
+    showMobileLoadingIndicator() {
+        const loadingDiv = document.createElement('div');
+        loadingDiv.id = 'mobile-loading';
+        loadingDiv.innerHTML = `
+            <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+                        background: #1a202c; color: white; display: flex; flex-direction: column; 
+                        justify-content: center; align-items: center; z-index: 9999; font-family: system-ui;">
+                <div style="font-size: 24px; margin-bottom: 20px;">📱</div>
+                <div style="font-size: 18px; margin-bottom: 10px;">Loading CCL Trainer...</div>
+                <div style="font-size: 14px; color: #a0a0a0;">This may take a moment on mobile</div>
+                <div style="margin-top: 20px; width: 200px; height: 4px; background: #333; border-radius: 2px;">
+                    <div id="loading-bar" style="width: 0%; height: 100%; background: #4CAF50; border-radius: 2px; transition: width 0.3s;"></div>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(loadingDiv);
+        
+        // Simulate loading progress
+        let progress = 0;
+        const interval = setInterval(() => {
+            progress += Math.random() * 15;
+            if (progress > 90) progress = 90;
+            document.getElementById('loading-bar').style.width = progress + '%';
+        }, 200);
+        
+        // Store interval to clear later
+        this.mobileLoadingInterval = interval;
+    }
+    
+    hideMobileLoadingIndicator() {
+        const loadingDiv = document.getElementById('mobile-loading');
+        if (loadingDiv) {
+            loadingDiv.remove();
+        }
+        if (this.mobileLoadingInterval) {
+            clearInterval(this.mobileLoadingInterval);
+        }
     }
 
     // Debug/development methods

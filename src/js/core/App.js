@@ -12,10 +12,9 @@ class CCLPronunciationTrainer {
             return;
         }
         this.initialized = true;
-        
+
         // Show loading indicator for mobile users
-        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        if (isMobile) {
+        if (this.isMobileDevice()) {
             this.showMobileLoadingIndicator();
         }
 
@@ -69,7 +68,7 @@ class CCLPronunciationTrainer {
         this.restoreUIState();
 
         console.log('✅ All modules initialized successfully');
-        
+
         // Hide mobile loading indicator
         this.hideMobileLoadingIndicator();
     }
@@ -79,7 +78,7 @@ class CCLPronunciationTrainer {
         // Just ensure other modules can access it
         if (window.stateManager) {
             console.log('📂 StateManager initialized and ready');
-            
+
             // Check if we're restoring a previous session
             if (window.stateManager.hasPreviousSession()) {
                 console.log('🔄 Previous session detected - will restore state');
@@ -95,12 +94,12 @@ class CCLPronunciationTrainer {
         // Restore UI state after all modules are initialized
         if (window.stateManager && window.stateManager.hasPreviousSession()) {
             const preferences = window.stateManager.getUserPreferences();
-            
+
             // Apply TTS settings
             if (window.ttsEngine && preferences.speed) {
                 window.ttsEngine.setSpeechRate(parseFloat(preferences.speed));
             }
-            
+
             // Apply audio control settings
             if (window.audioControls) {
                 if (preferences.delay) {
@@ -110,12 +109,12 @@ class CCLPronunciationTrainer {
                     window.audioControls.setRepeatMode(preferences.repeat);
                 }
             }
-            
+
             // Apply voice preference
             if (window.voiceSelector && preferences.voice && preferences.voice !== 'auto') {
                 window.voiceSelector.setPreferredVoice(preferences.voice);
             }
-            
+
             console.log('🎯 UI state restored from previous session');
         }
     }
@@ -213,11 +212,11 @@ class CCLPronunciationTrainer {
 
         // Update button icon based on fullscreen state
         const updateFullscreenIcon = () => {
-            const isFullscreen = document.fullscreenElement || 
-                                document.webkitFullscreenElement || 
-                                document.mozFullScreenElement || 
-                                document.msFullscreenElement;
-            
+            const isFullscreen = document.fullscreenElement ||
+                document.webkitFullscreenElement ||
+                document.mozFullScreenElement ||
+                document.msFullscreenElement;
+
             fullscreenBtn.textContent = isFullscreen ? '⛶' : '⛶';
             fullscreenBtn.title = isFullscreen ? 'Exit Fullscreen' : 'Enter Fullscreen';
         };
@@ -225,10 +224,10 @@ class CCLPronunciationTrainer {
         // Fullscreen toggle function
         const toggleFullscreen = async () => {
             try {
-                const isFullscreen = document.fullscreenElement || 
-                                    document.webkitFullscreenElement || 
-                                    document.mozFullScreenElement || 
-                                    document.msFullscreenElement;
+                const isFullscreen = document.fullscreenElement ||
+                    document.webkitFullscreenElement ||
+                    document.mozFullScreenElement ||
+                    document.msFullscreenElement;
 
                 if (isFullscreen) {
                     // Exit fullscreen
@@ -261,7 +260,7 @@ class CCLPronunciationTrainer {
 
         // Event listeners
         fullscreenBtn.addEventListener('click', toggleFullscreen);
-        
+
         // Listen for fullscreen changes
         ['fullscreenchange', 'webkitfullscreenchange', 'mozfullscreenchange', 'msfullscreenchange']
             .forEach(event => {
@@ -282,7 +281,7 @@ class CCLPronunciationTrainer {
 
         // Initial icon update
         updateFullscreenIcon();
-        
+
         console.log('Fullscreen functionality initialized (Click button or press F key)');
     }
 
@@ -402,6 +401,10 @@ class CCLPronunciationTrainer {
     }
 
     // Mobile optimization methods
+    isMobileDevice() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+    
     showMobileLoadingIndicator() {
         const loadingDiv = document.createElement('div');
         loadingDiv.id = 'mobile-loading';
@@ -412,32 +415,15 @@ class CCLPronunciationTrainer {
                 <div style="font-size: 24px; margin-bottom: 20px;">📱</div>
                 <div style="font-size: 18px; margin-bottom: 10px;">Loading CCL Trainer...</div>
                 <div style="font-size: 14px; color: #a0a0a0;">This may take a moment on mobile</div>
-                <div style="margin-top: 20px; width: 200px; height: 4px; background: #333; border-radius: 2px;">
-                    <div id="loading-bar" style="width: 0%; height: 100%; background: #4CAF50; border-radius: 2px; transition: width 0.3s;"></div>
-                </div>
             </div>
         `;
         document.body.appendChild(loadingDiv);
-        
-        // Simulate loading progress
-        let progress = 0;
-        const interval = setInterval(() => {
-            progress += Math.random() * 15;
-            if (progress > 90) progress = 90;
-            document.getElementById('loading-bar').style.width = progress + '%';
-        }, 200);
-        
-        // Store interval to clear later
-        this.mobileLoadingInterval = interval;
     }
     
     hideMobileLoadingIndicator() {
         const loadingDiv = document.getElementById('mobile-loading');
         if (loadingDiv) {
             loadingDiv.remove();
-        }
-        if (this.mobileLoadingInterval) {
-            clearInterval(this.mobileLoadingInterval);
         }
     }
 

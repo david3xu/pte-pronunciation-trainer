@@ -290,43 +290,15 @@ class VocabularyManager {
         if (this.wordsDataset) return this.wordsDataset;
         try {
             console.log('📥 Loading words dataset (from words.md)...');
-            
-            // Mobile optimization: Add timeout and retry logic
-            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-            const timeout = isMobile ? 30000 : 10000; // 30s timeout on mobile
-            
-            const controller = new AbortController();
-            const timeoutId = setTimeout(() => controller.abort(), timeout);
-            
-            const response = await fetch('/data/processed/words-dataset.json', {
-                signal: controller.signal,
-                headers: {
-                    'Accept': 'application/json',
-                    'Cache-Control': 'no-cache'
-                }
-            });
-            
-            clearTimeout(timeoutId);
-            
+            const response = await fetch('/data/processed/words-dataset.json');
             if (!response.ok) {
                 throw new Error(`Failed to load words dataset: ${response.status} ${response.statusText}`);
             }
-            
             this.wordsDataset = await response.json();
             console.log('✅ Words dataset loaded:', this.wordsDataset.words?.length || 0, 'terms');
             return this.wordsDataset;
         } catch (error) {
             console.error('❌ Failed to load words dataset:', error);
-            
-            // Show user-friendly error message
-            if (window.progressTracker) {
-                if (error.name === 'AbortError') {
-                    window.progressTracker.showError('Loading timeout. Please check your connection and try again.');
-                } else {
-                    window.progressTracker.showError('Failed to load vocabulary data. Please refresh the page.');
-                }
-            }
-            
             return null;
         }
     }

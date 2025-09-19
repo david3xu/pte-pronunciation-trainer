@@ -39,7 +39,7 @@ class CCLPronunciationTrainer {
 
         // 0. Register service worker for PWA and background operation
         this.registerServiceWorker();
-        
+
         // 0.1. Set up service worker message handling for background audio
         this.setupServiceWorkerMessageHandling();
 
@@ -434,34 +434,17 @@ class CCLPronunciationTrainer {
         // Listen for messages from service worker
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.addEventListener('message', (event) => {
-                console.log('[App] Service worker message:', event.data);
-                
                 switch (event.data.type) {
                     case 'AUDIO_PLAYBACK_SYNC':
-                        // Handle background audio sync messages
                         if (event.data.action === 'keep-alive') {
-                            console.log('[App] Audio playback sync received - maintaining background audio');
-                            
-                            // Ensure audio context is active
-                            if (window.ttsEngine && window.ttsEngine.audioContext) {
-                                if (window.ttsEngine.audioContext.state === 'suspended') {
-                                    window.ttsEngine.audioContext.resume();
-                                }
+                            // Keep audio context active
+                            if (window.ttsEngine?.audioContext?.state === 'suspended') {
+                                window.ttsEngine.audioContext.resume();
                             }
-                            
-                            // Keep background audio element playing
-                            if (window.ttsEngine && window.ttsEngine.backgroundAudioElement) {
-                                window.ttsEngine.backgroundAudioElement.play().catch(() => {});
-                            }
+                            // Keep background audio playing
+                            window.ttsEngine?.backgroundAudioElement?.play().catch(() => { });
                         }
                         break;
-                        
-                    case 'BACKGROUND_AUDIO_REQUEST':
-                        console.log('[App] Background audio request received');
-                        break;
-                        
-                    default:
-                        console.log('[App] Unknown service worker message:', event.data.type);
                 }
             });
         }

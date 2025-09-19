@@ -112,8 +112,9 @@ class TTSEngine {
     speak(text, lang = 'en-AU', customRate = null) {
         return new Promise((resolve, reject) => {
             // Check if we're on iOS and should use HTML5 Audio fallback
-            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-            
+            const isIOS = window.app && window.app.isMobileDevice && 
+                         /iPad|iPhone|iPod/.test(navigator.userAgent);
+
             if (isIOS && this.shouldUseHTML5Audio()) {
                 return this.speakWithHTML5Audio(text, lang, customRate).then(resolve).catch(resolve);
             }
@@ -169,21 +170,20 @@ class TTSEngine {
 
     shouldUseHTML5Audio() {
         // Use HTML5 Audio for background scenarios or when speech synthesis fails
-        return document.hidden || document.visibilityState === 'hidden' || 
-               !('speechSynthesis' in window) || 
-               speechSynthesis.speaking === false;
+        return document.hidden || document.visibilityState === 'hidden' ||
+            !('speechSynthesis' in window) ||
+            speechSynthesis.speaking === false;
     }
 
     speakWithHTML5Audio(text, lang = 'en-AU', customRate = null) {
         return new Promise((resolve, reject) => {
-            // For iOS background audio, we'll use a combination of techniques
-            console.log('Using HTML5 Audio fallback for iOS background playback');
-            
+            // For iOS background audio, use HTML5 Audio fallback
+
             // Create audio element for background playback
             const audio = document.createElement('audio');
             audio.preload = 'auto';
             audio.volume = 1.0;
-            
+
             // Use Web Speech API to generate audio, then play it via HTML5 Audio
             if ('speechSynthesis' in window) {
                 // Create utterance and capture audio
@@ -192,28 +192,25 @@ class TTSEngine {
                 utterance.rate = customRate !== null ? customRate : this.speechRate;
                 utterance.volume = 1.0;
                 utterance.pitch = 1.0;
-                
+
                 // Try to find voice
                 const voices = speechSynthesis.getVoices();
                 const voice = window.voiceSelector ? window.voiceSelector.selectBestVoiceMatch(voices, lang) : null;
                 if (voice) {
                     utterance.voice = voice;
                 }
-                
+
                 // For iOS background, we'll use a different approach
                 utterance.onend = () => {
                     // Keep audio session alive
                     if (this.backgroundAudioElement) {
-                        this.backgroundAudioElement.play().catch(() => {});
+                        this.backgroundAudioElement.play().catch(() => { });
                     }
                     resolve();
                 };
-                
-                utterance.onerror = (error) => {
-                    console.warn('TTS Error in background mode:', error.error);
-                    resolve(); // Don't fail, just continue
-                };
-                
+
+                utterance.onerror = () => resolve();
+
                 speechSynthesis.speak(utterance);
             } else {
                 // Fallback to text display
@@ -264,20 +261,18 @@ class TTSEngine {
             this.backgroundAudioElement.loop = true;
             this.backgroundAudioElement.volume = 0.01; // Almost silent
             this.backgroundAudioElement.preload = 'auto';
-            
+
             // Create a very short silent audio data URL
             const silentAudioData = 'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=';
             this.backgroundAudioElement.src = silentAudioData;
-            
+
             // Add to DOM (hidden)
             this.backgroundAudioElement.style.display = 'none';
             document.body.appendChild(this.backgroundAudioElement);
         }
 
         // Start playing silent audio to maintain audio session
-        this.backgroundAudioElement.play().catch(e => {
-            console.log('Background audio setup:', e.message);
-        });
+        this.backgroundAudioElement.play().catch(() => {});
 
         // Set up audio session for iOS
         if (navigator.mediaSession) {

@@ -97,11 +97,11 @@ self.addEventListener('fetch', (event) => {
 // Background Sync for Audio Playback
 self.addEventListener('sync', (event) => {
   console.log('[SW] Background sync triggered:', event.tag);
-  
+
   if (event.tag === 'background-audio-sync') {
     event.waitUntil(handleBackgroundAudioSync());
   }
-  
+
   if (event.tag === 'audio-playback') {
     event.waitUntil(handleAudioPlaybackSync());
   }
@@ -111,7 +111,7 @@ self.addEventListener('sync', (event) => {
 async function handleBackgroundAudioSync() {
   try {
     console.log('[SW] Handling background audio sync...');
-    
+
     // Notify all clients that background sync is active
     const clients = await self.clients.matchAll();
     clients.forEach(client => {
@@ -120,7 +120,7 @@ async function handleBackgroundAudioSync() {
         timestamp: Date.now()
       });
     });
-    
+
     console.log('[SW] Background audio sync completed');
   } catch (error) {
     console.error('[SW] Background sync failed:', error);
@@ -130,7 +130,7 @@ async function handleBackgroundAudioSync() {
 // Push Notifications for Background Operation
 self.addEventListener('push', (event) => {
   console.log('[SW] Push notification received for background operation');
-  
+
   const options = {
     body: 'CCL Trainer is ready for background learning!',
     icon: '/icon-192x192.png',
@@ -159,9 +159,9 @@ self.addEventListener('push', (event) => {
 // Notification Click Handler
 self.addEventListener('notificationclick', (event) => {
   console.log('[SW] Notification clicked:', event.action);
-  
+
   event.notification.close();
-  
+
   if (event.action === 'open' || !event.action) {
     event.waitUntil(
       clients.matchAll().then((clientList) => {
@@ -171,7 +171,7 @@ self.addEventListener('notificationclick', (event) => {
             return client.focus();
           }
         }
-        
+
         // Otherwise open new window
         if (clients.openWindow) {
           return clients.openWindow('/');
@@ -184,17 +184,17 @@ self.addEventListener('notificationclick', (event) => {
 // Message Handler for Background Operation Commands
 self.addEventListener('message', (event) => {
   console.log('[SW] Message received:', event.data);
-  
+
   switch (event.data.type) {
     case 'SKIP_WAITING':
       self.skipWaiting();
       break;
-      
+
     case 'BACKGROUND_AUDIO_REQUEST':
       // Handle background audio requests
       handleBackgroundAudioRequest(event.data.payload);
       break;
-      
+
     case 'KEEP_ALIVE':
       // Respond to keep-alive pings
       event.ports[0].postMessage({
@@ -202,7 +202,7 @@ self.addEventListener('message', (event) => {
         timestamp: Date.now()
       });
       break;
-      
+
     default:
       console.log('[SW] Unknown message type:', event.data.type);
   }
@@ -212,7 +212,7 @@ self.addEventListener('message', (event) => {
 async function handleAudioPlaybackSync() {
   try {
     console.log('[SW] Handling audio playback sync for iOS background...');
-    
+
     // Keep the service worker alive for audio playback
     const clients = await self.clients.matchAll();
     clients.forEach(client => {
@@ -222,12 +222,12 @@ async function handleAudioPlaybackSync() {
         message: 'Audio playback maintained in background'
       });
     });
-    
+
     // Register another sync to keep it alive
     if (self.registration && self.registration.sync) {
       await self.registration.sync.register('audio-playback');
     }
-    
+
   } catch (error) {
     console.error('[SW] Audio playback sync failed:', error);
   }
@@ -237,7 +237,7 @@ async function handleAudioPlaybackSync() {
 async function handleBackgroundAudioRequest(payload) {
   try {
     console.log('[SW] Handling background audio request:', payload);
-    
+
     // Register background sync for audio playback
     if ('serviceWorker' in navigator && 'sync' in window.ServiceWorkerRegistration.prototype) {
       const registration = await navigator.serviceWorker.ready;
@@ -245,7 +245,7 @@ async function handleBackgroundAudioRequest(payload) {
       await registration.sync.register('audio-playback');
       console.log('[SW] Background audio sync registered');
     }
-    
+
     // Notify clients of audio processing
     const clients = await self.clients.matchAll();
     clients.forEach(client => {
@@ -255,7 +255,7 @@ async function handleBackgroundAudioRequest(payload) {
         timestamp: Date.now()
       });
     });
-    
+
   } catch (error) {
     console.error('[SW] Background audio request failed:', error);
   }
@@ -265,7 +265,7 @@ async function handleBackgroundAudioRequest(payload) {
 self.addEventListener('visibilitychange', (event) => {
   if (document.hidden) {
     console.log('[SW] App moved to background - maintaining operation...');
-    
+
     // Register background sync to keep app active
     if ('serviceWorker' in navigator && 'sync' in window.ServiceWorkerRegistration.prototype) {
       navigator.serviceWorker.ready.then((registration) => {

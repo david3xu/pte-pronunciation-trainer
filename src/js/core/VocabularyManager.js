@@ -677,15 +677,15 @@ class VocabularyManager {
         });
     }
 
-    setLearningMode(mode) {
+    async setLearningMode(mode) {
         console.log('🎯 Setting learning mode to:', mode);
         this.currentLearningMode = mode;
 
         // For vocabulary-clean mode, we can now support category filtering
         // No need to force category to all-categories anymore
 
-        // Recalculate category counts for the new mode
-        this.recalculateCountsForMode(mode);
+        // Recalculate category counts for the new mode (await this async operation)
+        await this.recalculateCountsForMode(mode);
 
         // Update category options with new counts
         this.updateCategoryOptions();

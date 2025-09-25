@@ -69,9 +69,9 @@ class UIController {
         });
 
         // Learning mode selection
-        document.getElementById('learningModeSelect').addEventListener('change', (e) => {
+        document.getElementById('learningModeSelect').addEventListener('change', async (e) => {
             const newMode = e.target.value;
-            window.vocabularyManager.setLearningMode(newMode);
+            await window.vocabularyManager.setLearningMode(newMode);
             this.updateCategoryDisplay(); // Update UI for new mode
             console.log(`Learning mode changed to: ${newMode}`);
 

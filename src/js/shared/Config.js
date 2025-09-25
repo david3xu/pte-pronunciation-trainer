@@ -36,19 +36,7 @@ class AppConfig {
                     { id: 'resume-terms', label: '💼 Resume Terms Practice', dataset: 'resumeTerms' }
                 ],
                 difficulties: ['easy', 'normal', 'hard'],
-                categories: {
-                    'all-categories': '🌟 All Categories',
-                    'group-240s': '📚 70240s: 70248-70240 (Latest)',
-                    'group-230s': '📚 70230s: 70239-70230',
-                    'group-220s': '📚 70220s: 70229-70220',
-                    'group-210s': '📚 70210s: 70219-70210',
-                    'group-200s': '📚 70200s: 70209-70200',
-                    'group-190s': '📚 70190s: 70199-70190',
-                    'group-180s': '📚 70180s: 70189-70180',
-                    'group-170s': '📚 70170s: 70179-70170',
-                    'group-160s': '📚 70160s: 70169-70160',
-                    'group-150s': '📚 70150s: 70159-70150 (Earliest)'
-                }
+                categories: Constants.DIALOGUE_GROUPS.LABELS
             },
 
             // Data Sources Configuration

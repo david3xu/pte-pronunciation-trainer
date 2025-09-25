@@ -413,7 +413,18 @@ if (typeof module !== 'undefined' && module.exports) {
 
 // Make available globally for browser usage
 if (typeof window !== 'undefined') {
+    // Create instance for registration
+    const dialogueDataLoader = new DialogueDataLoader();
+
+    // Register with new namespace (if available)
+    if (window.CCLApp) {
+        window.CCLApp.registerModule('dialogueDataLoader', dialogueDataLoader);
+    }
+
+    // Legacy compatibility - maintain existing global references
     window.DialogueDataLoader = DialogueDataLoader;
+    window.dialogueDataLoader = dialogueDataLoader;
+
     console.log('✅ DialogueDataLoader loaded and available globally');
 } else {
     console.warn('⚠️  Window object not available - DialogueDataLoader not exposed globally');

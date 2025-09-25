@@ -55,6 +55,13 @@ class Category {
     }
 }
 
+// Register class with new namespace (if available)
+if (window.CCLApp) {
+    window.CCLApp.registerModule('categoryModel', Category);
+}
+
+// Legacy compatibility - maintain existing global reference (already exists)
+
 if (typeof window !== 'undefined') {
     window.Category = Category;
 }

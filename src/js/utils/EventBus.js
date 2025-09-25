@@ -41,4 +41,12 @@ class EventBus {
 }
 
 // Global event bus instance
-window.eventBus = new EventBus();
+const eventBus = new EventBus();
+
+// Register with new namespace (if available)
+if (window.CCLApp) {
+    window.CCLApp.registerModule('eventBus', eventBus);
+}
+
+// Legacy compatibility - maintain existing global reference
+window.eventBus = eventBus;

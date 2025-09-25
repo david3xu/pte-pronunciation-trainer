@@ -921,25 +921,19 @@ class VocabularyManager {
     getNextCategory() {
         const categories = this.getAllCategories();
         const currentIndex = categories.indexOf(this.currentCategory);
-
-        // If we're at the last category, don't advance (or could loop back to first)
-        if (currentIndex >= categories.length - 1) {
-            return null; // No next category
-        }
-
-        return categories[currentIndex + 1];
+        if (categories.length === 0) return null;
+        // Wrap to first when at the end
+        const nextIndex = (currentIndex + 1) % categories.length;
+        return categories[nextIndex];
     }
 
     getPreviousCategory() {
         const categories = this.getAllCategories();
         const currentIndex = categories.indexOf(this.currentCategory);
-
-        // If we're at the first category, don't go back (or could loop to last)
-        if (currentIndex <= 0) {
-            return null; // No previous category
-        }
-
-        return categories[currentIndex - 1];
+        if (categories.length === 0) return null;
+        // Wrap to last when at the beginning
+        const prevIndex = (currentIndex - 1 + categories.length) % categories.length;
+        return categories[prevIndex];
     }
 
     resetToFirstWord() {
@@ -1043,4 +1037,12 @@ class VocabularyManager {
 }
 
 // Create and expose global instance
-window.vocabularyManager = new VocabularyManager();
+const vocabularyManager = new VocabularyManager();
+
+// Register with new namespace (if available)
+if (window.CCLApp) {
+    window.CCLApp.registerModule('vocabularyManager', vocabularyManager);
+}
+
+// Legacy compatibility - maintain existing global reference
+window.vocabularyManager = vocabularyManager;

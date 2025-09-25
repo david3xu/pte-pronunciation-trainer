@@ -354,4 +354,13 @@ class AudioControls {
 }
 
 // Global audio controls instance
-window.audioControls = new AudioControls();
+// Create and expose global instance
+const audioControls = new AudioControls();
+
+// Register with new namespace (if available)
+if (window.CCLApp) {
+    window.CCLApp.registerModule('audioControls', audioControls);
+}
+
+// Legacy compatibility - maintain existing global reference
+window.audioControls = audioControls;

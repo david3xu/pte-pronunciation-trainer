@@ -127,4 +127,13 @@ class StateManager {
 }
 
 // Global state manager instance
-window.stateManager = new StateManager();
+// Create and expose global instance
+const stateManager = new StateManager();
+
+// Register with new namespace (if available)
+if (window.CCLApp) {
+    window.CCLApp.registerModule('stateManager', stateManager);
+}
+
+// Legacy compatibility - maintain existing global reference
+window.stateManager = stateManager;

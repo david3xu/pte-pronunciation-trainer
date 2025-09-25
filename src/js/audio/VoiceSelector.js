@@ -190,4 +190,13 @@ class VoiceSelector {
 }
 
 // Global voice selector instance
-window.voiceSelector = new VoiceSelector();
+// Create and expose global instance
+const voiceSelector = new VoiceSelector();
+
+// Register with new namespace (if available)
+if (window.CCLApp) {
+    window.CCLApp.registerModule('voiceSelector', voiceSelector);
+}
+
+// Legacy compatibility - maintain existing global reference
+window.voiceSelector = voiceSelector;

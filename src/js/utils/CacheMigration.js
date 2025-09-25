@@ -80,4 +80,13 @@ class CacheMigration {
 }
 
 // Global cache migration instance
-window.cacheMigration = new CacheMigration();
+// Create and expose global instance
+const cacheMigration = new CacheMigration();
+
+// Register with new namespace (if available)
+if (window.CCLApp) {
+    window.CCLApp.registerModule('cacheMigration', cacheMigration);
+}
+
+// Legacy compatibility - maintain existing global reference
+window.cacheMigration = cacheMigration;

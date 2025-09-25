@@ -505,14 +505,22 @@
         };
     }
 
-    // Export to window
-    window.pronunciationDB = {
+    // Create pronunciation database object
+    const pronunciationDB = {
         getUKPronunciation: getUKPronunciation,
         getUSPronunciation: getUSPronunciation,
         getBothPronunciations: getBothPronunciations,
         getPronunciationFromVocabulary: getPronunciationFromVocabulary,
         wordPronunciations: wordPronunciations
     };
+
+    // Register with new namespace (if available)
+    if (window.CCLApp) {
+        window.CCLApp.registerModule('pronunciations', pronunciationDB);
+    }
+
+    // Legacy compatibility - maintain existing global reference
+    window.pronunciationDB = pronunciationDB;
 
     console.log('Pronunciation database loaded with', Object.keys(wordPronunciations).length, 'words');
 })();

@@ -440,26 +440,27 @@ class VocabularyManager {
 
     async getChineseEnglishData() {
         const dataset = await this.loadChineseEnglishDataset();
-        if (!dataset || !Array.isArray(dataset.wordPairs)) {
+        if (!dataset || !Array.isArray(dataset.vocabulary)) {
             console.error('Chinese-English dataset not available or invalid');
             return { vocabulary: [], totalTerms: 0, generatedAt: new Date().toISOString(), sourceFile: 'chinese-english-dataset.json' };
         }
 
         // Map to standard vocabulary shape, preserving original order and pronunciation data
-        const vocabulary = dataset.wordPairs.map((pair) => ({
+        const vocabulary = dataset.vocabulary.map((pair) => ({
             english: pair.english,
             chinese: pair.chinese,
-            difficulty: 'normal', // Default difficulty for Chinese-English pairs
-            example: '',
-            exampleChinese: '',
-            category: 'general', // Default category for Chinese-English pairs
-            conversationId: String(pair.dialogueId || ''),
+            difficulty: pair.difficulty || 'normal',
+            example: pair.example || '',
+            exampleChinese: pair.exampleChinese || '',
+            category: pair.category || 'general',
+            conversationId: pair.conversationId || '',
             conversationTitle: '',
-            sentenceNumber: 0,
-            phonetic: '',
+            sentenceNumber: parseInt(pair.sentenceId) || 0,
+            phonetic: pair.phonetic || '',
             source: 'chinese-english',
             // Include pronunciation data if available
-            pronunciations: pair.pronunciations || null,
+            ipa: pair.ipa,
+            pronunciationGuide: pair.pronunciationGuide,
             // Legacy fields for compatibility
             term: pair.english,
             translation: pair.chinese
@@ -589,30 +590,27 @@ class VocabularyManager {
 
     async getResumeTermsData() {
         const dataset = await this.loadResumeTermsDataset();
-        if (!dataset || !Array.isArray(dataset.terms)) {
+        if (!dataset || !Array.isArray(dataset.vocabulary)) {
             console.error('Resume Terms dataset not available or invalid');
             return { vocabulary: [], totalTerms: 0, generatedAt: new Date().toISOString(), sourceFile: 'resume-terms-dataset.json' };
         }
 
         // Map to standard vocabulary shape, preserving pronunciation data
-        const vocabulary = dataset.terms.map((term) => ({
-            english: term.term,
-            chinese: '', // Resume terms are English-only
-            difficulty: 'normal', // Default difficulty for resume terms
-            example: '',
-            exampleChinese: '',
-            category: term.section || 'general',
-            conversationId: String(term.id),
-            conversationTitle: term.section || 'Resume Terms',
-            sentenceNumber: term.id,
-            phonetic: term.britishPhonetic || '',
+        const vocabulary = dataset.vocabulary.map((term) => ({
+            english: term.english,
+            chinese: term.chinese || '', // Use provided chinese translation or empty
+            difficulty: term.difficulty || 'normal',
+            example: term.example || '',
+            exampleChinese: term.exampleChinese || '',
+            category: term.category || 'general',
+            conversationId: term.conversationId || '',
+            conversationTitle: term.category || 'Resume Terms',
+            sentenceNumber: parseInt(term.sentenceId) || 0,
+            phonetic: term.phonetic || '',
             source: 'resume-terms',
             // Include pronunciation data
-            britishIPA: term.britishIPA,
-            britishPhonetic: term.britishPhonetic,
-            americanIPA: term.americanIPA,
-            americanPhonetic: term.americanPhonetic,
-            pronunciationData: term.pronunciationData
+            ipa: term.ipa,
+            pronunciationGuide: term.pronunciationGuide
         }));
 
         // Set up category labels for resume-terms mode

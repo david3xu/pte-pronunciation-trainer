@@ -161,6 +161,11 @@ class VoiceSelector {
         this.preferredVoice = voiceName === 'auto' ? null : voiceName;
         console.log(`Voice preference changed to: ${this.preferredVoice || 'auto'}`);
 
+        // Reset TTS voice cache to ensure new preference is used
+        if (window.ttsEngine && typeof window.ttsEngine.resetVoiceCache === 'function') {
+            window.ttsEngine.resetVoiceCache();
+        }
+
         // Emit voice change event
         window.eventBus.emit('voice:preferenceChanged', {
             voiceName: this.preferredVoice || 'auto'

@@ -765,6 +765,14 @@ class VocabularyManager {
                     this.allWords = [];
                 }
             }
+        } else if (this.currentLearningMode === 'resume-terms') {
+            // For resume-terms, filter by section-based categories (normalized to kebab-case)
+            const normalize = (value) => (value || '').toLowerCase().replace(/\s+/g, '-');
+            if (category === 'all-categories') {
+                this.allWords = [...data.vocabulary];
+            } else {
+                this.allWords = data.vocabulary.filter(item => normalize(item.category) === category);
+            }
         } else {
             // Standard vocabulary mode filtering
             if (category === 'all-categories') {

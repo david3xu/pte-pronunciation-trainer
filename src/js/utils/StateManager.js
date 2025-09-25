@@ -9,8 +9,8 @@ class StateManager {
             currentDifficulty: 'all',
             
             // User preferences
-            speed: '0.7',
-            delay: '2000',
+            speed: String(Constants.SPEEDS.SLOW),
+            delay: String(Constants.DELAYS.DEFAULT_PAUSE),
             repeat: 'individual',
             voice: 'auto',
             
@@ -110,8 +110,8 @@ class StateManager {
             currentWordIndex: 0,
             currentCategory: 'all-categories',
             currentDifficulty: 'all',
-            speed: '0.7',
-            delay: '2000',
+            speed: String(Constants.SPEEDS.SLOW),
+            delay: String(Constants.DELAYS.DEFAULT_PAUSE),
             repeat: 'individual',
             voice: 'auto',
             settingsPanelOpen: false,

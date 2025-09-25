@@ -2,7 +2,7 @@
 class AudioControls {
     constructor() {
         this.isPlaying = false;
-        this.delay = 2000; // Default 2 seconds pause between words
+        this.delay = Constants.DELAYS.DEFAULT_PAUSE; // Default pause between words
         this.repeatMode = 'individual';
         this.currentIndex = 0;
         this.autoPlayTimeout = null;
@@ -312,7 +312,7 @@ class AudioControls {
     }
 
     setDelay(delay) {
-        this.delay = parseInt(delay) || 2000;
+        this.delay = parseInt(delay) || Constants.DELAYS.DEFAULT_PAUSE;
         
         // Emit delay change event
         window.eventBus.emit('audioControls:delayChanged', {

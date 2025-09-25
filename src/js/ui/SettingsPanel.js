@@ -121,7 +121,7 @@ class SettingsPanel {
         const savedSettings = {
             category: window.storage.getItem('category') || 'all-categories',
             difficulty: window.storage.getItem('difficulty') || 'all',
-            speechRate: window.storage.getItem('speechRate') || 0.7,
+            speechRate: window.storage.getItem('speechRate') || Constants.SPEEDS.SLOW,
             delay: window.storage.getItem('delay') || Constants.DELAYS.DEFAULT_PAUSE,
             repeatMode: window.storage.getItem('repeatMode') || 'individual',
             preferredVoice: window.storage.getItem('preferredVoice') || null

@@ -144,7 +144,7 @@ class LegacyCompatibility {
         window.fetch = async function(url, options) {
             // Redirect old data paths to new ones
             const pathRedirects = {
-                '/data/generated/conversation-vocabulary-data.js': '/data/processed/complete-dataset.json',
+                '/data/generated/conversation-vocabulary-data.js': '/data/processed/dialogue-data.json',
                 '/data/generated/unfamiliar-words.js': '/data/processed/unfamiliar-words.json',
                 '/data/generated/vocabulary-clean.js': '/data/processed/vocabulary-clean-dataset.json'
             };

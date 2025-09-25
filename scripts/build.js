@@ -130,28 +130,44 @@ async function build() {
         fs.writeFileSync(path.join(distDir, 'js', 'app.min.js'), minifiedJS);
         console.log(`   ✅ Created app.min.js (${Math.round(minifiedJS.length / 1024)}KB)\n`);
         
-        // Copy and optimize vocabulary data
-        console.log('📚 Copying vocabulary data...');
+        // Copy processed JSON data files
+        console.log('📚 Copying processed data files...');
+        const processedDataDir = path.join(dataDir, 'processed');
+        const distDataDir = path.join(distDir, 'data', 'processed');
+
+        if (!fs.existsSync(distDataDir)) {
+            fs.mkdirSync(distDataDir, { recursive: true });
+        }
+
+        if (fs.existsSync(processedDataDir)) {
+            const dataFiles = fs.readdirSync(processedDataDir).filter(file => file.endsWith('.json'));
+            for (const dataFile of dataFiles) {
+                const srcPath = path.join(processedDataDir, dataFile);
+                const destPath = path.join(distDataDir, dataFile);
+                fs.copyFileSync(srcPath, destPath);
+                const size = Math.round(fs.statSync(srcPath).size / 1024);
+                console.log(`   ✅ Copied ${dataFile} (${size}KB)`);
+            }
+        }
+
+        // Also copy legacy JS files for compatibility
         const vocabDataFile = path.join(dataDir, 'generated', 'vocabulary-data.js');
         const conversationDataFile = path.join(dataDir, 'generated', 'conversation-vocabulary-data.js');
-        
+
         if (fs.existsSync(vocabDataFile)) {
             const vocabContent = fs.readFileSync(vocabDataFile, 'utf8');
             const minifiedVocab = minifyJS(vocabContent);
             fs.writeFileSync(path.join(distDir, 'data', 'vocabulary-data.min.js'), minifiedVocab);
             console.log(`   ✅ Created vocabulary-data.min.js (${Math.round(minifiedVocab.length / 1024)}KB)`);
-        } else {
-            console.warn('   ⚠️  Vocabulary data not found. Run "npm run convert" first.');
         }
-        
+
         if (fs.existsSync(conversationDataFile)) {
             const conversationContent = fs.readFileSync(conversationDataFile, 'utf8');
             const minifiedConversation = minifyJS(conversationContent);
             fs.writeFileSync(path.join(distDir, 'data', 'conversation-vocabulary-data.min.js'), minifiedConversation);
             console.log(`   ✅ Created conversation-vocabulary-data.min.js (${Math.round(minifiedConversation.length / 1024)}KB)`);
-        } else {
-            console.warn('   ⚠️  Conversation vocabulary data not found. Run "npm run extract-conversations" first.');
         }
+
         console.log();
         
         // Build HTML

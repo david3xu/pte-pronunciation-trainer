@@ -88,6 +88,7 @@ class Constants {
     // ===== DIALOGUE ID RANGES & CATEGORIES =====
     static DIALOGUE_GROUPS = {
         BOUNDARIES: {
+            GROUP_250S: 70250,
             GROUP_240S: 70240,
             GROUP_230S: 70230,
             GROUP_220S: 70220,
@@ -102,6 +103,7 @@ class Constants {
 
         CATEGORY_KEYS: {
             ALL: 'all-categories',
+            GROUP_250S: 'group-250s',
             GROUP_240S: 'group-240s',
             GROUP_230S: 'group-230s',
             GROUP_220S: 'group-220s',
@@ -116,6 +118,7 @@ class Constants {
 
         LABELS: {
             'all-categories': '🌟 All Categories',
+            'group-250s': '📚 70250s: 70259-70250 (Newest)',
             'group-240s': '📚 70240s: 70248-70240 (Latest)',
             'group-230s': '📚 70230s: 70239-70230',
             'group-220s': '📚 70220s: 70229-70220',
@@ -227,6 +230,7 @@ class Constants {
         const numId = parseInt(id);
         const bounds = this.DIALOGUE_GROUPS.BOUNDARIES;
 
+        if (numId >= bounds.GROUP_250S) return this.DIALOGUE_GROUPS.CATEGORY_KEYS.GROUP_250S;
         if (numId >= bounds.GROUP_240S) return this.DIALOGUE_GROUPS.CATEGORY_KEYS.GROUP_240S;
         if (numId >= bounds.GROUP_230S) return this.DIALOGUE_GROUPS.CATEGORY_KEYS.GROUP_230S;
         if (numId >= bounds.GROUP_220S) return this.DIALOGUE_GROUPS.CATEGORY_KEYS.GROUP_220S;

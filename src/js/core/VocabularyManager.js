@@ -4,7 +4,7 @@ class VocabularyManager {
     constructor() {
         this.currentCategory = 'all-categories';
         this.currentDifficulty = 'all';
-        this.currentLearningMode = 'vocabulary-clean'; // vocabulary, dialogue, unfamiliar, chinese-english, vocabulary-clean
+        this.currentLearningMode = 'vocabulary-clean'; // vocabulary, dialogue, unfamiliar, chinese-english, vocabulary-clean, resume-terms
         this.currentWords = [];
         this.allWords = []; // Store unfiltered words
         this.categoryCounts = {}; // Store counts per category per difficulty
@@ -21,6 +21,7 @@ class VocabularyManager {
         this.wordsDataset = null; // Dataset for words.md mode
         this.chineseEnglishDataset = null; // Dataset for Chinese-English mode
         this.vocabularyCleanDataset = null; // Dataset for vocabulary-clean mode
+        this.resumeTermsDataset = null; // Dataset for resume-terms mode
 
         // Dialogue-based category labels (groups by decade endings 0-9) - Sept 3, 2025
         this.categoryLabels = {
@@ -222,6 +223,8 @@ class VocabularyManager {
             return await this.getChineseEnglishData();
         } else if (this.currentLearningMode === 'vocabulary-clean') {
             return await this.getVocabularyCleanData();
+        } else if (this.currentLearningMode === 'resume-terms') {
+            return await this.getResumeTermsData();
         } else {
             // Default: vocabulary mode
             return this.getStandardVocabularyData();
@@ -369,6 +372,39 @@ class VocabularyManager {
                 console.error('❌ Failed to load from alternative path:', altError);
                 return null;
             }
+        }
+    }
+
+    async loadResumeTermsDataset() {
+        if (this.resumeTermsDataset) {
+            console.log('🔄 Using cached Resume Terms dataset:', this.resumeTermsDataset.terms?.length || 0, 'terms');
+            return this.resumeTermsDataset;
+        }
+        try {
+            console.log('📥 Loading Resume Terms dataset...');
+            const timestamp = new Date().getTime();
+            const response = await fetch(`/data/processed/resume-terms-dataset.json?t=${timestamp}`);
+
+            console.log('Response status:', response.status, response.statusText);
+
+            if (!response.ok) {
+                throw new Error(`Failed to load Resume Terms dataset: ${response.status} ${response.statusText}`);
+            }
+
+            const responseText = await response.text();
+            console.log('Response text length:', responseText.length);
+
+            try {
+                this.resumeTermsDataset = JSON.parse(responseText);
+                console.log('✅ Resume Terms dataset loaded:', this.resumeTermsDataset.terms?.length || 0, 'terms');
+                return this.resumeTermsDataset;
+            } catch (parseError) {
+                console.error('❌ Failed to parse Resume Terms dataset JSON:', parseError);
+                return null;
+            }
+        } catch (error) {
+            console.error('❌ Failed to load Resume Terms dataset:', error);
+            return null;
         }
     }
 
@@ -548,6 +584,67 @@ class VocabularyManager {
             totalTerms: vocabulary.length,
             generatedAt: new Date().toISOString(),
             sourceFile: 'vocabulary-data.json'
+        };
+    }
+
+    async getResumeTermsData() {
+        const dataset = await this.loadResumeTermsDataset();
+        if (!dataset || !Array.isArray(dataset.terms)) {
+            console.error('Resume Terms dataset not available or invalid');
+            return { vocabulary: [], totalTerms: 0, generatedAt: new Date().toISOString(), sourceFile: 'resume-terms-dataset.json' };
+        }
+
+        // Map to standard vocabulary shape, preserving pronunciation data
+        const vocabulary = dataset.terms.map((term) => ({
+            english: term.term,
+            chinese: '', // Resume terms are English-only
+            difficulty: 'normal', // Default difficulty for resume terms
+            example: '',
+            exampleChinese: '',
+            category: term.section || 'general',
+            conversationId: String(term.id),
+            conversationTitle: term.section || 'Resume Terms',
+            sentenceNumber: term.id,
+            phonetic: term.britishPhonetic || '',
+            source: 'resume-terms',
+            // Include pronunciation data
+            britishIPA: term.britishIPA,
+            britishPhonetic: term.britishPhonetic,
+            americanIPA: term.americanIPA,
+            americanPhonetic: term.americanPhonetic,
+            pronunciationData: term.pronunciationData
+        }));
+
+        // Set up category labels for resume-terms mode
+        const uniqueCategories = [...new Set(vocabulary.map(v => v.category))];
+        const categoryCounts = {};
+        uniqueCategories.forEach(cat => {
+            categoryCounts[cat] = vocabulary.filter(v => v.category === cat).length;
+        });
+
+        this.categoryLabels = {
+            'all-categories': `💼 All Resume Terms (${vocabulary.length} terms)`,
+            ...Object.fromEntries(
+                uniqueCategories.map(cat => [
+                    cat.toLowerCase().replace(/\s+/g, '-'),
+                    `${cat} (${categoryCounts[cat]} terms)`
+                ])
+            )
+        };
+
+        // Update dialogue groups to support category filtering
+        this.dialogueGroups = {
+            'all-categories': [],
+            ...Object.fromEntries(
+                uniqueCategories.map(cat => [cat.toLowerCase().replace(/\s+/g, '-'), []])
+            )
+        };
+
+        return {
+            vocabulary,
+            totalTerms: vocabulary.length,
+            generatedAt: new Date().toISOString(),
+            sourceFile: 'resume-terms-dataset.json'
         };
     }
 

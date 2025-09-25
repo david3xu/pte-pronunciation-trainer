@@ -14,10 +14,11 @@ A comprehensive web-based pronunciation training application for NAATI CCL (Cred
 - **🏷️ Smart Categorization** - Organized across 9 domains with conversation-aware classification
 - **📊 Enhanced Metadata** - Difficulty levels, phonetic transcriptions, and dialogue relationships
 
-### 🎓 Three Learning Modes
+### 🎓 Four Learning Modes
 - **📚 Vocabulary Focus** - Complete vocabulary from all 91 dialogues (5,695 terms)
 - **💬 Dialogue Practice** - Full conversation sentences with contextual flow
 - **🔥 Unfamiliar Words** - Curated challenging terms for advanced study (944 terms)
+- **💼 Resume Terms Practice** - Technical terms from resume, job descriptions, and interview preparation (456 terms)
 
 ### 🔊 Advanced Pronunciation Training
 - **Australian English (en-AU) TTS** - Optimized for CCL exam context
@@ -83,7 +84,7 @@ When you have new CCL conversation data to add:
 # Add dialogue numbers and challenging terms (line-separated)
 
 # 3. Regenerate complete dataset and vocabulary
-npm run process-all-data              # Generate ALL datasets (complete, vocabulary, unfamiliar words, words)
+npm run process-all-data              # Generate ALL datasets (complete, vocabulary, unfamiliar words, words, resume-terms)
 
 # 4. Test in development server
 npm run dev
@@ -228,6 +229,12 @@ npm run clean                # Clean generated files
 - Hand-selected difficult terms from actual CCL conversations
 - Perfect for advanced learners and exam preparation
 - Organized by dialogue groups with full context
+
+**💼 Resume Terms Practice**
+- Technical terms from resume, job descriptions, and interview preparation (456 terms)
+- Includes pronunciation guides with IPA transcriptions and phonetic spellings
+- Organized by sections: CV Technical Background, Job Requirements, Cover Letter, Interview Prep
+- Perfect for professional English pronunciation practice
 
 ### Difficulty-Based Learning
 

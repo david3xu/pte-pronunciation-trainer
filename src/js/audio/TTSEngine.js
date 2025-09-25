@@ -1,7 +1,7 @@
 // TTSEngine - Text-to-speech synthesis functionality
 class TTSEngine {
     constructor() {
-        this.speechRate = 0.7;
+        this.speechRate = Constants.SPEEDS.SLOW;
         this.currentRepeatCount = 0;
         this.targetRepeats = 2;
     }
@@ -24,11 +24,11 @@ class TTSEngine {
             // Get pronunciation rate based on repeat count for progressive learning
             let pronunciationRate;
             if (this.currentRepeatCount === 0) {
-                pronunciationRate = 0.7; // Always slow for first pronunciation
+                pronunciationRate = Constants.SPEEDS.SLOW; // Always slow for first pronunciation
             } else if (this.currentRepeatCount === 1) {
-                pronunciationRate = 1.0; // Always normal for second pronunciation
+                pronunciationRate = Constants.SPEEDS.NORMAL; // Always normal for second pronunciation
             } else {
-                pronunciationRate = 1.3; // Faster for third+ pronunciations
+                pronunciationRate = Constants.SPEEDS.FAST; // Faster for third+ pronunciations
             }
 
             // For vocabulary-clean mode, use UK pronunciation for first repeat, US for second
@@ -348,7 +348,7 @@ class TTSEngine {
     }
 
     setSpeechRate(rate) {
-        this.speechRate = parseFloat(rate) || 1.0;
+        this.speechRate = parseFloat(rate) || Constants.SPEEDS.NORMAL;
 
         // Emit rate change event
         window.eventBus.emit('tts:rateChanged', {

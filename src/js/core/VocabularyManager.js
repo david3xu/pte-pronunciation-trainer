@@ -952,7 +952,9 @@ class VocabularyManager {
         // Load complete dataset directly via fetch instead of DialogueDataLoader
         try {
             console.log('📥 Loading complete dataset...');
-            const response = await fetch('/data/processed/complete-dataset.json');
+            const dataSource = window.CCLApp?.getModule('config')?.get('dataSources.complete') || '/data/processed/dialogue-data.json';
+            console.log('🔗 Loading data from:', dataSource);
+            const response = await fetch(dataSource);
 
             if (!response.ok) {
                 throw new Error(`Failed to load data: ${response.status} ${response.statusText}`);

@@ -7,7 +7,7 @@
 class Constants {
     // ===== TIMING CONSTANTS =====
     static DELAYS = {
-        DEFAULT_PAUSE: 2000,
+        DEFAULT_PAUSE: 1000,
         SHORT_PAUSE: 1000,
         NORMAL_PAUSE: 2000,
         LONG_PAUSE: 3000,

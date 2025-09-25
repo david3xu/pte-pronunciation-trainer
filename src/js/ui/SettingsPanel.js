@@ -266,4 +266,13 @@ class SettingsPanel {
 }
 
 // Global settings panel instance
-window.settingsPanel = new SettingsPanel();
+// Create and expose global instance
+const settingsPanel = new SettingsPanel();
+
+// Register with new namespace (if available)
+if (window.CCLApp) {
+    window.CCLApp.registerModule('settingsPanel', settingsPanel);
+}
+
+// Legacy compatibility - maintain existing global reference
+window.settingsPanel = settingsPanel;

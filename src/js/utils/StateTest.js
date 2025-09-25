@@ -1,7 +1,7 @@
 // State Persistence Test & Debug Utilities
 // This file provides debugging functions to test and verify state persistence
 
-window.stateTest = {
+const stateTest = {
     // Test state saving
     testSave: function() {
         console.log('🧪 Testing state persistence...');
@@ -145,6 +145,14 @@ window.stateTest = {
         }
     }
 };
+
+// Register with new namespace (if available)
+if (window.CCLApp) {
+    window.CCLApp.registerModule('stateTest', stateTest);
+}
+
+// Legacy compatibility - maintain existing global reference
+window.stateTest = stateTest;
 
 // Automatically show state on load for debugging
 document.addEventListener('DOMContentLoaded', () => {

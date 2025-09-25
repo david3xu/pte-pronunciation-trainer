@@ -381,4 +381,13 @@ class TTSEngine {
 }
 
 // Global TTS engine instance
-window.ttsEngine = new TTSEngine();
+// Create and expose global instance
+const ttsEngine = new TTSEngine();
+
+// Register with new namespace (if available)
+if (window.CCLApp) {
+    window.CCLApp.registerModule('ttsEngine', ttsEngine);
+}
+
+// Legacy compatibility - maintain existing global reference
+window.ttsEngine = ttsEngine;

@@ -479,4 +479,13 @@ class CCLPronunciationTrainer {
 }
 
 // Global app instance
-window.cclApp = new CCLPronunciationTrainer();
+// Create and expose global instance
+const cclApp = new CCLPronunciationTrainer();
+
+// Register with new namespace (if available)
+if (window.CCLApp) {
+    window.CCLApp.registerModule('cclApp', cclApp);
+}
+
+// Legacy compatibility - maintain existing global reference
+window.cclApp = cclApp;

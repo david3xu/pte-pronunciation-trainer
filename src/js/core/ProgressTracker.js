@@ -165,4 +165,13 @@ class ProgressTracker {
 }
 
 // Global progress tracker instance
-window.progressTracker = new ProgressTracker();
+// Create and expose global instance
+const progressTracker = new ProgressTracker();
+
+// Register with new namespace (if available)
+if (window.CCLApp) {
+    window.CCLApp.registerModule('progressTracker', progressTracker);
+}
+
+// Legacy compatibility - maintain existing global reference
+window.progressTracker = progressTracker;

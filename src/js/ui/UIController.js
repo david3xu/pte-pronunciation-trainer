@@ -519,4 +519,13 @@ class UIController {
 }
 
 // Global UI controller instance
-window.uiController = new UIController();
+// Create and expose global instance
+const uiController = new UIController();
+
+// Register with new namespace (if available)
+if (window.CCLApp) {
+    window.CCLApp.registerModule('uiController', uiController);
+}
+
+// Legacy compatibility - maintain existing global reference
+window.uiController = uiController;

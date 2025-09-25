@@ -212,17 +212,7 @@ class DataSchema {
 
         // If we have conversation ID, use group-based categorization
         if (conversationId) {
-            const id = parseInt(conversationId);
-            if (id >= 70240) return 'group-240s';
-            if (id >= 70230) return 'group-230s';
-            if (id >= 70220) return 'group-220s';
-            if (id >= 70210) return 'group-210s';
-            if (id >= 70200) return 'group-200s';
-            if (id >= 70190) return 'group-190s';
-            if (id >= 70180) return 'group-180s';
-            if (id >= 70170) return 'group-170s';
-            if (id >= 70160) return 'group-160s';
-            if (id >= 70150) return 'group-150s';
+            return Constants.getCategoryFromDialogueId(conversationId);
         }
 
         // Content-based categorization

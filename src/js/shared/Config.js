@@ -8,18 +8,18 @@ class AppConfig {
         this.config = {
             // TTS Configuration
             tts: {
-                defaultVoice: 'Google UK English Male',
-                fallbackVoices: ['Microsoft James – English (Australia)', 'Google UK English Female'],
+                defaultVoice: Constants.VOICES.DEFAULT,
+                fallbackVoices: Constants.VOICES.FALLBACK_VOICES,
                 speeds: {
                     slow: 0.7,
                     normal: 1.0,
                     fast: 1.3
                 },
                 delays: {
-                    short: 1000,
-                    normal: 2000,
-                    long: 3000,
-                    extended: 4000
+                    short: Constants.DELAYS.SHORT_PAUSE,
+                    normal: Constants.DELAYS.NORMAL_PAUSE,
+                    long: Constants.DELAYS.LONG_PAUSE,
+                    extended: Constants.DELAYS.EXTENDED_PAUSE
                 },
                 repeatModes: ['once', 'individual', 'intensive', 'loop']
             },
@@ -53,12 +53,12 @@ class AppConfig {
 
             // Data Sources Configuration
             dataSources: {
-                complete: '/data/processed/dialogue-data.json',
-                unfamiliar: '/data/processed/unfamiliar-words.json',
-                words: '/data/processed/words-dataset.json',
-                chineseEnglish: '/data/processed/chinese-english-dataset.json',
-                vocabularyClean: '/data/processed/vocabulary-clean-dataset.json',
-                resumeTerms: '/data/processed/resume-terms-dataset.json',
+                complete: Constants.DATA.FULL_PATHS.COMPLETE,
+                unfamiliar: Constants.DATA.FULL_PATHS.UNFAMILIAR,
+                words: Constants.DATA.FULL_PATHS.WORDS,
+                chineseEnglish: Constants.DATA.FULL_PATHS.CHINESE_ENGLISH,
+                vocabularyClean: Constants.DATA.FULL_PATHS.VOCABULARY_CLEAN,
+                resumeTerms: Constants.DATA.FULL_PATHS.RESUME_TERMS,
                 // Legacy support
                 conversationVocabulary: '/data/generated/conversation-vocabulary-data.js'
             },

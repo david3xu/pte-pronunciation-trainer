@@ -410,24 +410,29 @@ class VocabularyManager {
 
     async getWordsData() {
         const dataset = await this.loadWordsDataset();
-        if (!dataset || !Array.isArray(dataset.words)) {
+
+        // Handle both old format (words array) and new standardized format (vocabulary array)
+        const vocabularyArray = dataset?.vocabulary || dataset?.words;
+
+        if (!dataset || !Array.isArray(vocabularyArray)) {
             console.error('Words dataset not available or invalid');
             return { vocabulary: [], totalTerms: 0, generatedAt: new Date().toISOString(), sourceFile: 'words-dataset.json' };
         }
 
         // Map to standard vocabulary shape, preserving original order
-        const vocabulary = dataset.words.map((w) => ({
-            english: w.term,
-            chinese: '',
+        // Handle both old and new data structures
+        const vocabulary = vocabularyArray.map((w) => ({
+            english: w.english || w.term,
+            chinese: w.chinese || '',
             difficulty: w.difficulty || 'normal',
-            example: '',
-            exampleChinese: '',
+            example: w.example || '',
+            exampleChinese: w.exampleChinese || '',
             category: w.category || 'unknown',
-            conversationId: String(w.dialogueId || w.conversationId || w.groupId || ''),
-            conversationTitle: w.dialogueTitle || '',
+            conversationId: String(w.conversationId || w.dialogueId || w.groupId || ''),
+            conversationTitle: w.conversationTitle || w.dialogueTitle || '',
             sentenceNumber: w.sentenceId || 0,
             phonetic: w.phonetic || '',
-            source: 'words-md'
+            source: w.source || 'words-md'
         }));
 
         return {

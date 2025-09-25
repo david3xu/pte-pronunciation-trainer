@@ -48,8 +48,10 @@ class TTSEngine {
             await this.speak(cleanText, 'en-AU', pronunciationRate);
 
             // For vocabulary with examples, optionally speak the example sentence based on repeat mode
+            // Only speak example on the LAST repetition to avoid: term+example+term+example
             const hasExample = (word.examples && word.examples.length > 0) || word.example;
-            const shouldSpeakExample = window.audioControls &&
+            const isLastRepetition = this.currentRepeatCount === (this.targetRepeats - 1);
+            const shouldSpeakExample = window.audioControls && isLastRepetition &&
                 (window.audioControls.repeatMode === 'intensive' || window.audioControls.repeatMode === 'loop');
 
             if (hasExample && shouldSpeakExample && exampleElement && exampleElement.style.display !== 'none') {

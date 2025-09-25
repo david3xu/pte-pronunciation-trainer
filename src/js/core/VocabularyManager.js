@@ -960,6 +960,15 @@ class VocabularyManager {
 
             let completeData = await response.json();
 
+            console.log('🔍 Raw data loaded:', {
+                isArray: Array.isArray(completeData),
+                type: typeof completeData,
+                hasDialogues: completeData?.dialogues !== undefined,
+                dataLength: Array.isArray(completeData) ? completeData.length : 'not array',
+                dialoguesLength: completeData?.dialogues?.length || 0,
+                firstItemSample: Array.isArray(completeData) ? Object.keys(completeData[0] || {}) : 'not array'
+            });
+
             // Handle both array format (dialogue-data.json) and object format (complete-dataset.json)
             if (Array.isArray(completeData)) {
                 console.log(`🔄 Converting dialogue array format to complete dataset format - ${completeData.length} dialogues`);
@@ -976,6 +985,12 @@ class VocabularyManager {
                     vocabulary: []
                 };
                 console.log(`✅ Converted to object format with ${completeData.dialogues.length} dialogues`);
+            } else {
+                console.log('📋 Data already in object format:', {
+                    hasDialogues: !!completeData.dialogues,
+                    dialoguesCount: completeData.dialogues?.length || 0,
+                    hasMetadata: !!completeData.metadata
+                });
             }
 
             console.log('✅ Complete dataset loaded successfully');

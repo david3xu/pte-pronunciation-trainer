@@ -133,8 +133,15 @@ class TTSEngine {
             utterance.pitch = 1.0;
 
             // Try to find the best voice match for user's practice - ONLY MALE VOICES
-            const voices = speechSynthesis.getVoices();
-            const voice = window.voiceSelector ? window.voiceSelector.selectBestVoiceMatch(voices, lang) : null;
+            // Cache the voice selection to ensure consistency across all pronunciations
+            if (!this.cachedVoice) {
+                const voices = speechSynthesis.getVoices();
+                this.cachedVoice = window.voiceSelector ? window.voiceSelector.selectBestVoiceMatch(voices, lang) : null;
+                if (this.cachedVoice) {
+                    console.log(`🎤 Locked voice for session: ${this.cachedVoice.name} (${this.cachedVoice.lang})`);
+                }
+            }
+            const voice = this.cachedVoice;
             if (voice) {
                 utterance.voice = voice;
                 console.log(`Using voice: ${voice.name} (${voice.lang})`);
@@ -193,9 +200,12 @@ class TTSEngine {
                 utterance.volume = 1.0;
                 utterance.pitch = 1.0;
 
-                // Try to find voice
-                const voices = speechSynthesis.getVoices();
-                const voice = window.voiceSelector ? window.voiceSelector.selectBestVoiceMatch(voices, lang) : null;
+                // Try to find voice - use same cached voice for consistency
+                if (!this.cachedVoice) {
+                    const voices = speechSynthesis.getVoices();
+                    this.cachedVoice = window.voiceSelector ? window.voiceSelector.selectBestVoiceMatch(voices, lang) : null;
+                }
+                const voice = this.cachedVoice;
                 if (voice) {
                     utterance.voice = voice;
                 }
@@ -377,6 +387,11 @@ class TTSEngine {
 
     getTargetRepeats() {
         return this.targetRepeats;
+    }
+
+    resetVoiceCache() {
+        this.cachedVoice = null;
+        console.log('🔄 Voice cache reset - will reselect on next pronunciation');
     }
 }
 

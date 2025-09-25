@@ -523,7 +523,33 @@ class UnifiedDataPipeline {
             if (trimmed.includes('English') && trimmed.includes('Chinese')) continue;
             if (trimmed.match(/^[\|\-\s]+$/)) continue;
 
-            // Parse table rows: | English | Chinese |
+            // Skip dialogue IDs (numbers only)
+            if (trimmed.match(/^\d+$/)) continue;
+
+            // Parse pipe-delimited format: english | chinese | uk_pronunciation | us_pronunciation
+            if (trimmed.includes(' | ')) {
+                const parts = trimmed.split(' | ');
+                if (parts.length >= 2) {
+                    const english = parts[0].trim();
+                    const chinese = parts[1].trim();
+                    const ukPronunciation = parts[2] ? parts[2].trim() : '';
+                    const usPronunciation = parts[3] ? parts[3].trim() : '';
+
+                    if (english && chinese && english !== 'English' && chinese !== 'Chinese') {
+                        pairs.push({
+                            english,
+                            chinese,
+                            ukPronunciation,
+                            usPronunciation,
+                            difficulty: this.inferDifficulty(english),
+                            category: currentCategory,
+                            source: 'chinese-english-pairs'
+                        });
+                    }
+                }
+            }
+
+            // Also support table format for backward compatibility: | English | Chinese |
             const tableMatch = trimmed.match(/^\|\s*(.+?)\s*\|\s*(.+?)\s*\|/);
             if (tableMatch) {
                 const english = tableMatch[1].trim();

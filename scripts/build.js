@@ -28,6 +28,10 @@ function minifyJS(js) {
         .replace(/\s+/g, ' ') // Replace multiple spaces with single space
         .replace(/;\s*}/g, '}') // Clean up before closing braces
         .replace(/\s*{\s*/g, '{') // Clean up around opening braces
+        .replace(/\s*,\s*/g, ',') // Clean up around commas
+        .replace(/\s*:\s*/g, ':') // Clean up around colons
+        .replace(/\s*\(\s*/g, '(') // Clean up around parentheses
+        .replace(/\s*\)\s*/g, ')') // Clean up around parentheses
         .trim();
 }
 
@@ -163,7 +167,7 @@ async function build() {
             .replace(/data\/generated\/vocabulary-data\.js\?v=\d+(&t=\d+)?/g, 'data/vocabulary-data.min.js')
             .replace(/data\/generated\/conversation-vocabulary-data\.js\?v=\d+(&t=\d+)?/g, 'data/conversation-vocabulary-data.min.js')
             // Remove all individual module script tags and replace with single bundled file
-            .replace(/<!-- Utility Modules -->[\s\S]*?<!-- Main App Coordinator -->\s*<script src="src\/js\/core\/App\.js\?v=\d+"><\/script>/g, 
+            .replace(/<!-- NEW: Shared Infrastructure[\s\S]*?<!-- Main App Coordinator -->\s*<script src="src\/js\/core\/App\.js\?v=\d+"><\/script>/g,
                      '<!-- Bundled JavaScript -->\n    <script src="js/app.min.js"></script>')
             // Add meta tags for production
             .replace('<head>', `<head>

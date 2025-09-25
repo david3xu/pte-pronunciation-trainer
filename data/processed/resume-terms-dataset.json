@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-09-25T13:33:39.300Z",
+    "generated": "2025-09-25T21:33:54.993Z",
     "totalTerms": 445,
     "source": "unified-pipeline-resume-terms",
     "description": "Professional vocabulary with pronunciation guides",
@@ -178,7 +178,7 @@
     {
       "english": "systems",
       "chinese": "",
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "from-cv---technical-background",
       "example": "",
       "exampleChinese": "",
@@ -562,7 +562,7 @@
     {
       "english": "applications",
       "chinese": "",
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "from-cv---technical-background",
       "example": "",
       "exampleChinese": "",
@@ -706,7 +706,7 @@
     {
       "english": "ability",
       "chinese": "",
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "from-cv---technical-background",
       "example": "",
       "exampleChinese": "",
@@ -778,7 +778,7 @@
     {
       "english": "complex",
       "chinese": "",
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "from-cv---technical-background",
       "example": "",
       "exampleChinese": "",
@@ -1426,7 +1426,7 @@
     {
       "english": "AI application development",
       "chinese": "",
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "from-cv---technical-background",
       "example": "",
       "exampleChinese": "",
@@ -1474,7 +1474,7 @@
     {
       "english": "FastAPI",
       "chinese": "",
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "from-cv---technical-background",
       "example": "",
       "exampleChinese": "",
@@ -1930,7 +1930,7 @@
     {
       "english": "Implementation",
       "chinese": "",
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "from-cv---technical-background",
       "example": "",
       "exampleChinese": "",
@@ -2074,7 +2074,7 @@
     {
       "english": "Next.js",
       "chinese": "",
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "from-cv---technical-background",
       "example": "",
       "exampleChinese": "",
@@ -2530,7 +2530,7 @@
     {
       "english": "documentation",
       "chinese": "",
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "from-cv---technical-background",
       "example": "",
       "exampleChinese": "",
@@ -2794,7 +2794,7 @@
     {
       "english": "convert",
       "chinese": "",
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "from-cv---technical-background",
       "example": "",
       "exampleChinese": "",
@@ -2914,7 +2914,7 @@
     {
       "english": "end-to-end",
       "chinese": "",
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "from-cv---technical-background",
       "example": "",
       "exampleChinese": "",
@@ -3610,7 +3610,7 @@
     {
       "english": "managed",
       "chinese": "",
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "from-cv---technical-background",
       "example": "",
       "exampleChinese": "",
@@ -3946,7 +3946,7 @@
     {
       "english": "mindset",
       "chinese": "",
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "from-cv---technical-background",
       "example": "",
       "exampleChinese": "",
@@ -4186,7 +4186,7 @@
     {
       "english": "documentation",
       "chinese": "",
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "from-cv---technical-background",
       "example": "",
       "exampleChinese": "",
@@ -5098,7 +5098,7 @@
     {
       "english": "produce quality documentation",
       "chinese": "",
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "from-job-description---role-requirements",
       "example": "",
       "exampleChinese": "",
@@ -5410,7 +5410,7 @@
     {
       "english": "embrace",
       "chinese": "",
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "from-job-description---role-requirements",
       "example": "",
       "exampleChinese": "",
@@ -5962,7 +5962,7 @@
     {
       "english": "sit-to-stand desks",
       "chinese": "",
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "from-job-description---role-requirements",
       "example": "",
       "exampleChinese": "",
@@ -5986,7 +5986,7 @@
     {
       "english": "end-of-trip facilities",
       "chinese": "",
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "from-job-description---role-requirements",
       "example": "",
       "exampleChinese": "",
@@ -6106,7 +6106,7 @@
     {
       "english": "Citizen",
       "chinese": "",
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "from-job-description---role-requirements",
       "example": "",
       "exampleChinese": "",
@@ -6802,7 +6802,7 @@
     {
       "english": "complete your application",
       "chinese": "",
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "from-job-description---role-requirements",
       "example": "",
       "exampleChinese": "",
@@ -6946,7 +6946,7 @@
     {
       "english": "submit your application",
       "chinese": "",
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "from-job-description---role-requirements",
       "example": "",
       "exampleChinese": "",
@@ -6970,7 +6970,7 @@
     {
       "english": "incomplete applications",
       "chinese": "",
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "from-job-description---role-requirements",
       "example": "",
       "exampleChinese": "",
@@ -8146,7 +8146,7 @@
     {
       "english": "systematic documentation practices",
       "chinese": "",
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "from-cover-letter---professional-positioning",
       "example": "",
       "exampleChinese": "",
@@ -9514,7 +9514,7 @@
     {
       "english": "my application",
       "chinese": "",
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "from-cover-letter---professional-positioning",
       "example": "",
       "exampleChinese": "",
@@ -9754,7 +9754,7 @@
     {
       "english": "Neo4j implementation",
       "chinese": "",
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "from-interview-prep---esl-strategy-terms",
       "example": "",
       "exampleChinese": "",
@@ -9898,7 +9898,7 @@
     {
       "english": "agent coordination",
       "chinese": "",
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "from-interview-prep---esl-strategy-terms",
       "example": "",
       "exampleChinese": "",
@@ -9994,7 +9994,7 @@
     {
       "english": "infrastructure as code",
       "chinese": "",
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "from-interview-prep---esl-strategy-terms",
       "example": "",
       "exampleChinese": "",
@@ -10090,7 +10090,7 @@
     {
       "english": "comprehensive documentation",
       "chinese": "",
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "from-interview-prep---esl-strategy-terms",
       "example": "",
       "exampleChinese": "",
@@ -10378,7 +10378,7 @@
     {
       "english": "research infrastructure",
       "chinese": "",
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "critical-missing-terms-from-interview-prep",
       "example": "",
       "exampleChinese": "",

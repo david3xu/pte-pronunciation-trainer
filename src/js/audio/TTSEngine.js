@@ -21,21 +21,8 @@ class TTSEngine {
             // Clean text for TTS
             const cleanText = this.cleanTextForTTS(word.english);
 
-            // Get pronunciation rate based on repeat count (progressive learning)
-            let pronunciationRate;
-            if (this.currentRepeatCount === 0) {
-                pronunciationRate = 0.7; // SLOW & CLEAR for first pronunciation
-            } else if (this.currentRepeatCount === 1) {
-                // For "individual" mode (2x), second pronunciation should be normal speed (1.0)
-                // For other modes, use user's selected speed
-                if (window.audioControls && window.audioControls.repeatMode === 'individual') {
-                    pronunciationRate = 1.0; // Fixed normal speed for progressive learning
-                } else {
-                    pronunciationRate = this.speechRate; // User's selected speed
-                }
-            } else {
-                pronunciationRate = Math.min(this.speechRate * 1.3, 2.0); // Faster for third+
-            }
+            // Get pronunciation rate - use user's selected speed for simple repetition
+            let pronunciationRate = this.speechRate;
 
             // For vocabulary-clean mode, use UK pronunciation for first repeat, US for second
             if (word.source === 'vocabulary-clean' && word.ukPronunciation && word.usPronunciation) {

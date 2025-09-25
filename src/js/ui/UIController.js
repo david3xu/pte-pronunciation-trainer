@@ -188,17 +188,30 @@ class UIController {
         let phoneticPlain = '';
         let ipaOnly = '';
 
-        // Check if this is from vocabulary-clean dataset with direct pronunciation data
-        if (word.source === 'vocabulary-clean' && word.ukPronunciation) {
+        // NEW: Use standardized pronunciationGuide structure (unified data pipeline)
+        if (word.pronunciationGuide && word.pronunciationGuide.british) {
+            const british = word.pronunciationGuide.british;
+            phoneticPlain = british.phonetic || '';
+            ipaOnly = british.ipa ? `/${british.ipa}/` : '';
+            console.log('Using pronunciationGuide (British):', { ipaOnly, phoneticPlain });
+        }
+        // NEW: Direct ipa and phonetic fields from unified pipeline
+        else if (word.ipa || word.phonetic) {
+            phoneticPlain = word.phonetic || '';
+            ipaOnly = word.ipa ? `/${word.ipa}/` : '';
+            console.log('Using direct ipa/phonetic fields:', { ipaOnly, phoneticPlain });
+        }
+        // LEGACY: Check if this is from vocabulary-clean dataset with direct pronunciation data
+        else if (word.source === 'vocabulary-clean' && word.ukPronunciation) {
             // Extract IPA and phonetic from UK pronunciation field
             const ukPron = word.ukPronunciation;
             const ipaMatch = ukPron.match(/\/([^\/]+)\//);
             const phoneticMatch = ukPron.match(/\*\*([^*]+)\*\*/);
             ipaOnly = ipaMatch ? `/${ipaMatch[1]}/` : '';
             phoneticPlain = phoneticMatch ? phoneticMatch[1] : '';
-            console.log('Using vocabulary-clean pronunciation data:', { ipaOnly, phoneticPlain });
+            console.log('Using legacy vocabulary-clean pronunciation data:', { ipaOnly, phoneticPlain });
         }
-        // Add support for resume-terms dataset (britishIPA/americanIPA + phonetics)
+        // LEGACY: Add support for resume-terms dataset (britishIPA/americanIPA + phonetics)
         else if (word.source === 'resume-terms' && (word.britishIPA || word.americanIPA)) {
             // Prefer British IPA for display; fall back to American
             if (word.britishIPA) {

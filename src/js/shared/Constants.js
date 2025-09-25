@@ -119,7 +119,7 @@ class Constants {
         LABELS: {
             'all-categories': '🌟 All Categories',
             'group-250s': '📚 70250s: 70253-70250 (Newest)',
-            'group-240s': '📚 70240s: 70248-70240 (Latest)',
+            'group-240s': '📚 70240s: 70249-70240',
             'group-230s': '📚 70230s: 70239-70230',
             'group-220s': '📚 70220s: 70229-70220',
             'group-210s': '📚 70210s: 70219-70210',

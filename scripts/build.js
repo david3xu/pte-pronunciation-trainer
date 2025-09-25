@@ -22,16 +22,13 @@ function minifyCSS(css) {
 }
 
 function minifyJS(js) {
+    // Ultra-safe minification - only remove comments and excessive whitespace
     return js
         .replace(/\/\*[\s\S]*?\*\//g, '') // Remove block comments
-        .replace(/\/\/.*$/gm, '') // Remove line comments
-        .replace(/\s+/g, ' ') // Replace multiple spaces with single space
-        .replace(/;\s*}/g, '}') // Clean up before closing braces
-        .replace(/\s*{\s*/g, '{') // Clean up around opening braces
-        .replace(/\s*,\s*/g, ',') // Clean up around commas
-        .replace(/\s*:\s*/g, ':') // Clean up around colons
-        .replace(/\s*\(\s*/g, '(') // Clean up around parentheses
-        .replace(/\s*\)\s*/g, ')') // Clean up around parentheses
+        .replace(/^\s*\/\/.*$/gm, '') // Remove line comments at start of line
+        .replace(/[ \t]+/g, ' ') // Replace multiple spaces/tabs with single space
+        .replace(/\n[ \t]*/g, '\n') // Remove indentation but keep line structure
+        .replace(/\n{3,}/g, '\n\n') // Limit consecutive newlines to 2
         .trim();
 }
 

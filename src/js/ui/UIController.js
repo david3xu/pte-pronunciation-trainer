@@ -123,7 +123,7 @@ class UIController {
             window.ttsEngine.currentRepeatCount = 0;
 
             console.log(`Repeat mode changed to: ${e.target.value}`);
-            
+
             // Save repeat preference
             if (window.settingsPanel) {
                 window.settingsPanel.saveSetting('repeat', e.target.value);
@@ -197,6 +197,17 @@ class UIController {
             ipaOnly = ipaMatch ? `/${ipaMatch[1]}/` : '';
             phoneticPlain = phoneticMatch ? phoneticMatch[1] : '';
             console.log('Using vocabulary-clean pronunciation data:', { ipaOnly, phoneticPlain });
+        }
+        // Add support for resume-terms dataset (britishIPA/americanIPA + phonetics)
+        else if (word.source === 'resume-terms' && (word.britishIPA || word.americanIPA)) {
+            // Prefer British IPA for display; fall back to American
+            if (word.britishIPA) {
+                ipaOnly = `/${word.britishIPA}/`;
+                if (word.britishPhonetic) phoneticPlain = word.britishPhonetic;
+            } else if (word.americanIPA) {
+                ipaOnly = `/${word.americanIPA}/`;
+                if (word.americanPhonetic) phoneticPlain = word.americanPhonetic;
+            }
         }
         // Fallback to pronunciation database
         else if (window.pronunciationDB) {

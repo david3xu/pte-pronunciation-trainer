@@ -747,23 +747,73 @@ class UnifiedDataPipeline {
             vocabularyArray = data.vocabulary || [];
         }
 
-        const standardize = (item) => ({
-            english: item.english || item.term || item.word || '',
-            chinese: item.chinese || item.translation || '',
-            difficulty: item.difficulty || this.inferDifficulty(item.english || item.term),
-            category: item.category || this.inferCategoryFromDialogueId(item.conversationId) || 'general',
-            example: item.example || item.sentence || '',
-            exampleChinese: item.exampleChinese || item.sentenceChinese || '',
-            conversationId: item.conversationId || item.dialogue_id || '',
-            sentenceId: item.sentenceId || '',
-            phonetic: item.phonetic || '',
-            ipa: item.ipa || '',
-            pronunciationGuide: item.pronunciationGuide || null,
-            source: source,
-            id: this.generateId(item.english || item.term || item.word)
-        });
+        const standardize = (item) => {
+            const standardized = {
+                english: item.english || item.term || item.word || '',
+                chinese: item.chinese || item.translation || '',
+                difficulty: item.difficulty || this.inferDifficulty(item.english || item.term),
+                category: item.category || this.inferCategoryFromDialogueId(item.conversationId) || 'general',
+                example: item.example || item.sentence || '',
+                exampleChinese: item.exampleChinese || item.sentenceChinese || '',
+                conversationId: item.conversationId || item.dialogue_id || '',
+                sentenceId: item.sentenceId || '',
+                phonetic: item.phonetic || '',
+                ipa: item.ipa || '',
+                pronunciationGuide: item.pronunciationGuide || null,
+                source: source,
+                id: this.generateId(item.english || item.term || item.word)
+            };
+
+            // Process Chinese-English pronunciation data if available
+            if (item.ukPronunciation || item.usPronunciation) {
+                const ukData = this.parsePronunciationString(item.ukPronunciation);
+                const usData = this.parsePronunciationString(item.usPronunciation);
+
+                standardized.pronunciationGuide = {
+                    british: ukData,
+                    american: usData
+                };
+
+                // Set primary phonetic and IPA from UK pronunciation
+                if (ukData) {
+                    standardized.ipa = ukData.ipa || '';
+                    standardized.phonetic = ukData.phonetic || '';
+                }
+            }
+
+            return standardized;
+        };
 
         return vocabularyArray.map(standardize);
+    }
+
+    /**
+     * Parse pronunciation string format: /IPA/ — sounds like **PHONETIC**
+     */
+    parsePronunciationString(pronunciationStr) {
+        if (!pronunciationStr || pronunciationStr.trim() === '') {
+            return null;
+        }
+
+        const str = pronunciationStr.trim();
+
+        // Extract IPA notation (between forward slashes)
+        const ipaMatch = str.match(/\/([^\/]+)\//);
+        const ipa = ipaMatch ? ipaMatch[1] : '';
+
+        // Extract phonetic spelling (between ** **)
+        const phoneticMatch = str.match(/\*\*([^*]+)\*\*/);
+        const phonetic = phoneticMatch ? phoneticMatch[1] : '';
+
+        // Return null if no useful data found
+        if (!ipa && !phonetic) {
+            return null;
+        }
+
+        return {
+            ipa: ipa,
+            phonetic: phonetic
+        };
     }
 
     /**

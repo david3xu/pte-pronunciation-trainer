@@ -53,7 +53,7 @@ class CacheMigration {
         // Set default repeat mode to 2x (individual)
         window.storage.setItem('repeatMode', 'individual');
 
-        // Set default pause duration
+        // Set default pause duration (2 seconds between words, 1 second between repetitions)
         window.storage.setItem('delay', Constants.DELAYS.DEFAULT_PAUSE);
 
         // Set default speech rate to slow (0.7)

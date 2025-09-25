@@ -21,8 +21,15 @@ class TTSEngine {
             // Clean text for TTS
             const cleanText = this.cleanTextForTTS(word.english);
 
-            // Get pronunciation rate - use user's selected speed for simple repetition
-            let pronunciationRate = this.speechRate;
+            // Get pronunciation rate based on repeat count for progressive learning
+            let pronunciationRate;
+            if (this.currentRepeatCount === 0) {
+                pronunciationRate = 0.7; // Always slow for first pronunciation
+            } else if (this.currentRepeatCount === 1) {
+                pronunciationRate = 1.0; // Always normal for second pronunciation
+            } else {
+                pronunciationRate = 1.3; // Faster for third+ pronunciations
+            }
 
             // For vocabulary-clean mode, use UK pronunciation for first repeat, US for second
             if (word.source === 'vocabulary-clean' && word.ukPronunciation && word.usPronunciation) {

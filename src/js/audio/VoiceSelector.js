@@ -27,21 +27,8 @@ class VoiceSelector {
             }
         }
 
-        // ONLY MALE VOICES - PRIORITIZE GOOGLE UK ENGLISH MALE, THEN AU NATURAL MALE
-        // 1) Google UK English Male
-        // 2) Microsoft James Online (Natural) - en-AU
-        // 3) Microsoft James - en-AU
-        // 4) Google Australian English Male
-        // 5) Any other en-AU male
-        // 6) Other English male voices
-        const priorityNames = [
-            'Google UK English Male',
-            'Microsoft James Online (Natural) - English (Australia)',
-            'Microsoft James - English (Australia)',
-            'Microsoft James',
-            'James',
-            'Google Australian English Male'
-        ];
+        // ONLY MALE VOICES - Use centralized priority list from Constants
+        const priorityNames = Constants.VOICES.PRIORITY_LIST;
 
         // First try exact priority by name within available voices
         for (const preferredName of priorityNames) {

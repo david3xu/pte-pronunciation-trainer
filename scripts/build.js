@@ -87,6 +87,7 @@ async function build() {
         const jsFiles = [
             // Shared infrastructure first
             path.join(srcDir, 'js', 'shared', 'AppNamespace.js'),
+            path.join(srcDir, 'js', 'shared', 'Constants.js'),
             path.join(srcDir, 'js', 'shared', 'Config.js'),
             path.join(srcDir, 'js', 'shared', 'DataSchema.js'),
             path.join(srcDir, 'js', 'shared', 'LegacyCompatibility.js'),

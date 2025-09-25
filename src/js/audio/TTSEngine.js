@@ -61,7 +61,7 @@ class TTSEngine {
 
             if (hasExample && shouldSpeakExample && exampleElement && exampleElement.style.display !== 'none') {
                 // Add small pause between term and sentence
-                await new Promise(resolve => setTimeout(resolve, 800));
+                await new Promise(resolve => setTimeout(resolve, Constants.DELAYS.TTS_VOICE_READY_DELAY));
 
                 // Highlight example sentence during speech
                 if (exampleElement) {
@@ -224,7 +224,7 @@ class TTSEngine {
         window.progressTracker.updateStatus(`🔊 Please read aloud: "${text}"`);
         setTimeout(() => {
             window.progressTracker.updateStatus('Text-to-speech not available in this browser');
-        }, 3000);
+        }, Constants.DELAYS.TTS_RESET_TIMEOUT);
     }
 
     enableBackgroundAudio() {

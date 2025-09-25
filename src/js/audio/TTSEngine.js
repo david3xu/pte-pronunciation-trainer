@@ -26,7 +26,13 @@ class TTSEngine {
             if (this.currentRepeatCount === 0) {
                 pronunciationRate = 0.7; // SLOW & CLEAR for first pronunciation
             } else if (this.currentRepeatCount === 1) {
-                pronunciationRate = this.speechRate; // Normal speed for second
+                // For "individual" mode (2x), second pronunciation should be normal speed (1.0)
+                // For other modes, use user's selected speed
+                if (window.audioControls && window.audioControls.repeatMode === 'individual') {
+                    pronunciationRate = 1.0; // Fixed normal speed for progressive learning
+                } else {
+                    pronunciationRate = this.speechRate; // User's selected speed
+                }
             } else {
                 pronunciationRate = Math.min(this.speechRate * 1.3, 2.0); // Faster for third+
             }

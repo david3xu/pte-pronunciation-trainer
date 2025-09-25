@@ -958,7 +958,24 @@ class VocabularyManager {
                 throw new Error(`Failed to load data: ${response.status} ${response.statusText}`);
             }
 
-            const completeData = await response.json();
+            let completeData = await response.json();
+
+            // Handle both array format (dialogue-data.json) and object format (complete-dataset.json)
+            if (Array.isArray(completeData)) {
+                console.log('🔄 Converting dialogue array format to complete dataset format');
+                completeData = {
+                    metadata: {
+                        generated: new Date().toISOString(),
+                        totalTerms: 0,
+                        totalConversations: completeData.length,
+                        source: 'dialogue-data-transformation',
+                        version: '2.0'
+                    },
+                    dialogues: completeData,
+                    vocabulary: []
+                };
+            }
+
             console.log('✅ Complete dataset loaded successfully');
             console.log(`📊 Loaded ${completeData.dialogues?.length} dialogues with vocabulary`);
 

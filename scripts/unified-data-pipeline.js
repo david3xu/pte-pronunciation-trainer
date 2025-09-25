@@ -9,6 +9,12 @@
 const fs = require('fs');
 const path = require('path');
 
+// Import specialized data extractors and formatters
+const PronunciationParser = require('../src/js/data/formatters/PronunciationParser');
+const VocabularyFormatter = require('../src/js/data/formatters/VocabularyFormatter');
+const ChineseEnglishExtractor = require('../src/js/data/extractors/ChineseEnglishExtractor');
+const ResumeTermsExtractor = require('../src/js/data/extractors/ResumeTermsExtractor');
+
 class UnifiedDataPipeline {
     constructor() {
         this.config = {
@@ -494,162 +500,14 @@ class UnifiedDataPipeline {
      * Extract Chinese-English pairs - FULL IMPLEMENTATION
      */
     async extractChineseEnglish(filePath) {
-        console.log('    🈯 Processing Chinese-English word pairs...');
-
-        if (!fs.existsSync(filePath)) {
-            throw new Error(`Chinese-English file not found: ${filePath}`);
-        }
-
-        const content = fs.readFileSync(filePath, 'utf-8');
-        const lines = content.split('\n');
-
-        const pairs = [];
-        let currentCategory = 'general';
-
-        for (const line of lines) {
-            const trimmed = line.trim();
-            if (!trimmed) continue;
-
-            // Category headers
-            if (trimmed.match(/^#+ .+/)) {
-                const categoryMatch = trimmed.match(/^#+\s*(.+?)(?:\s+词汇表|\s+Vocabulary)?/i);
-                if (categoryMatch) {
-                    currentCategory = this.normalizeCategory(categoryMatch[1]);
-                }
-                continue;
-            }
-
-            // Skip table headers and separators
-            if (trimmed.includes('English') && trimmed.includes('Chinese')) continue;
-            if (trimmed.match(/^[\|\-\s]+$/)) continue;
-
-            // Skip dialogue IDs (numbers only)
-            if (trimmed.match(/^\d+$/)) continue;
-
-            // Parse pipe-delimited format: english | chinese | uk_pronunciation | us_pronunciation
-            if (trimmed.includes(' | ')) {
-                const parts = trimmed.split(' | ');
-                if (parts.length >= 2) {
-                    const english = parts[0].trim();
-                    const chinese = parts[1].trim();
-                    const ukPronunciation = parts[2] ? parts[2].trim() : '';
-                    const usPronunciation = parts[3] ? parts[3].trim() : '';
-
-                    if (english && chinese && english !== 'English' && chinese !== 'Chinese') {
-                        pairs.push({
-                            english,
-                            chinese,
-                            ukPronunciation,
-                            usPronunciation,
-                            difficulty: this.inferDifficulty(english),
-                            category: currentCategory,
-                            source: 'chinese-english-pairs'
-                        });
-                    }
-                }
-            }
-
-            // Also support table format for backward compatibility: | English | Chinese |
-            const tableMatch = trimmed.match(/^\|\s*(.+?)\s*\|\s*(.+?)\s*\|/);
-            if (tableMatch) {
-                const english = tableMatch[1].trim();
-                const chinese = tableMatch[2].trim();
-
-                if (english && chinese && english !== 'English' && chinese !== 'Chinese') {
-                    pairs.push({
-                        english,
-                        chinese,
-                        difficulty: this.inferDifficulty(english),
-                        category: currentCategory,
-                        source: 'chinese-english-pairs'
-                    });
-                }
-            }
-        }
-
-        console.log(`    📊 Extracted ${pairs.length} Chinese-English pairs`);
-        return pairs;
+        return await ChineseEnglishExtractor.extract(filePath, fs);
     }
 
     /**
      * Extract resume terms with pronunciation guides - FULL IMPLEMENTATION
      */
     async extractResumeTerms(filePath) {
-        console.log('    💼 Processing resume terms with pronunciation guides...');
-
-        if (!fs.existsSync(filePath)) {
-            throw new Error(`Resume terms file not found: ${filePath}`);
-        }
-
-        const content = fs.readFileSync(filePath, 'utf-8');
-        const lines = content.split('\n');
-
-        const terms = [];
-        let currentSection = 'general';
-
-        for (const line of lines) {
-            const trimmed = line.trim();
-            if (!trimmed) continue;
-
-            // Section headers (## Section Name)
-            if (trimmed.startsWith('## ')) {
-                currentSection = trimmed.replace('## ', '').trim().toLowerCase().replace(/\s+/g, '-');
-                continue;
-            }
-
-            // Skip main title
-            if (trimmed.startsWith('# ')) continue;
-
-            // Process terms with pronunciation guides
-            // Format: term | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-            const termMatch = trimmed.match(/^([^|]+)\s*\|\s*(.+)$/);
-            if (termMatch) {
-                const term = termMatch[1].trim();
-                const pronunciationData = termMatch[2].trim();
-
-                // Parse pronunciation data
-                const pronunciationParts = pronunciationData.split('|');
-                let britishIPA = '';
-                let britishPhonetic = '';
-                let americanIPA = '';
-                let americanPhonetic = '';
-
-                // Parse British pronunciation (first part)
-                if (pronunciationParts[0]) {
-                    const britishMatch = pronunciationParts[0].match(/\/([^/]+)\/\s*—\s*sounds like \*\*([^*]+)\*\*/);
-                    if (britishMatch) {
-                        britishIPA = britishMatch[1];
-                        britishPhonetic = britishMatch[2];
-                    }
-                }
-
-                // Parse American pronunciation (second part)
-                if (pronunciationParts[1]) {
-                    const americanMatch = pronunciationParts[1].match(/\/([^/]+)\/\s*—\s*sounds like \*\*([^*]+)\*\*/);
-                    if (americanMatch) {
-                        americanIPA = americanMatch[1];
-                        americanPhonetic = americanMatch[2];
-                    }
-                }
-
-                terms.push({
-                    english: term,
-                    chinese: '', // Resume terms don't have Chinese translations
-                    difficulty: this.inferDifficulty(term),
-                    category: currentSection,
-                    phonetic: britishPhonetic || americanPhonetic,
-                    ipa: britishIPA || americanIPA,
-                    pronunciationGuide: {
-                        british: { ipa: britishIPA, phonetic: britishPhonetic },
-                        american: { ipa: americanIPA, phonetic: americanPhonetic }
-                    },
-                    source: 'resume-terms'
-                });
-            }
-        }
-
-        console.log(`    📊 Extracted ${terms.length} resume terms with pronunciation guides`);
-        return terms;
+        return await ResumeTermsExtractor.extract(filePath, fs);
     }
 
     // ===== DATASET GENERATORS =====
@@ -736,85 +594,9 @@ class UnifiedDataPipeline {
      * Standardize vocabulary format across all sources
      */
     standardizeVocabularyFormat(source, data) {
-        // Handle different data structures
-        let vocabularyArray = [];
-
-        if (Array.isArray(data)) {
-            vocabularyArray = data;
-        } else if (data.vocabulary) {
-            vocabularyArray = data.vocabulary;
-        } else if (data.conversations) {
-            vocabularyArray = data.vocabulary || [];
-        }
-
-        const standardize = (item) => {
-            const standardized = {
-                english: item.english || item.term || item.word || '',
-                chinese: item.chinese || item.translation || '',
-                difficulty: item.difficulty || this.inferDifficulty(item.english || item.term),
-                category: item.category || this.inferCategoryFromDialogueId(item.conversationId) || 'general',
-                example: item.example || item.sentence || '',
-                exampleChinese: item.exampleChinese || item.sentenceChinese || '',
-                conversationId: item.conversationId || item.dialogue_id || '',
-                sentenceId: item.sentenceId || '',
-                phonetic: item.phonetic || '',
-                ipa: item.ipa || '',
-                pronunciationGuide: item.pronunciationGuide || null,
-                source: source,
-                id: this.generateId(item.english || item.term || item.word)
-            };
-
-            // Process Chinese-English pronunciation data if available
-            if (item.ukPronunciation || item.usPronunciation) {
-                const ukData = this.parsePronunciationString(item.ukPronunciation);
-                const usData = this.parsePronunciationString(item.usPronunciation);
-
-                standardized.pronunciationGuide = {
-                    british: ukData,
-                    american: usData
-                };
-
-                // Set primary phonetic and IPA from UK pronunciation
-                if (ukData) {
-                    standardized.ipa = ukData.ipa || '';
-                    standardized.phonetic = ukData.phonetic || '';
-                }
-            }
-
-            return standardized;
-        };
-
-        return vocabularyArray.map(standardize);
+        return VocabularyFormatter.standardizeVocabularyFormat(source, data);
     }
 
-    /**
-     * Parse pronunciation string format: /IPA/ — sounds like **PHONETIC**
-     */
-    parsePronunciationString(pronunciationStr) {
-        if (!pronunciationStr || pronunciationStr.trim() === '') {
-            return null;
-        }
-
-        const str = pronunciationStr.trim();
-
-        // Extract IPA notation (between forward slashes)
-        const ipaMatch = str.match(/\/([^\/]+)\//);
-        const ipa = ipaMatch ? ipaMatch[1] : '';
-
-        // Extract phonetic spelling (between ** **)
-        const phoneticMatch = str.match(/\*\*([^*]+)\*\*/);
-        const phonetic = phoneticMatch ? phoneticMatch[1] : '';
-
-        // Return null if no useful data found
-        if (!ipa && !phonetic) {
-            return null;
-        }
-
-        return {
-            ipa: ipa,
-            phonetic: phonetic
-        };
-    }
 
     /**
      * Generate unique ID from English text

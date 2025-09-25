@@ -962,18 +962,20 @@ class VocabularyManager {
 
             // Handle both array format (dialogue-data.json) and object format (complete-dataset.json)
             if (Array.isArray(completeData)) {
-                console.log('🔄 Converting dialogue array format to complete dataset format');
+                console.log(`🔄 Converting dialogue array format to complete dataset format - ${completeData.length} dialogues`);
+                const dialoguesArray = completeData; // Store the array before reassigning
                 completeData = {
                     metadata: {
                         generated: new Date().toISOString(),
                         totalTerms: 0,
-                        totalConversations: completeData.length,
+                        totalConversations: dialoguesArray.length,
                         source: 'dialogue-data-transformation',
                         version: '2.0'
                     },
-                    dialogues: completeData,
+                    dialogues: dialoguesArray, // Use the stored array
                     vocabulary: []
                 };
+                console.log(`✅ Converted to object format with ${completeData.dialogues.length} dialogues`);
             }
 
             console.log('✅ Complete dataset loaded successfully');

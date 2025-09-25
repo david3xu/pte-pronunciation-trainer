@@ -81,14 +81,27 @@ async function build() {
         fs.writeFileSync(path.join(distDir, 'css', 'app.min.css'), minifiedCSS);
         console.log(`   ✅ Created app.min.css (${Math.round(minifiedCSS.length / 1024)}KB)\n`);
         
-        // Build JavaScript - Refactored modular structure
+        // Build JavaScript - Refactored modular structure with shared infrastructure
         console.log('📦 Building JavaScript files...');
         const jsFiles = [
-            // Utility modules first
+            // Shared infrastructure first
+            path.join(srcDir, 'js', 'shared', 'AppNamespace.js'),
+            path.join(srcDir, 'js', 'shared', 'Config.js'),
+            path.join(srcDir, 'js', 'shared', 'DataSchema.js'),
+            path.join(srcDir, 'js', 'shared', 'LegacyCompatibility.js'),
+            // Utility modules
             path.join(srcDir, 'js', 'utils', 'EventBus.js'),
             path.join(srcDir, 'js', 'utils', 'Storage.js'),
+            path.join(srcDir, 'js', 'utils', 'StateManager.js'),
+            path.join(srcDir, 'js', 'utils', 'CacheMigration.js'),
+            path.join(srcDir, 'js', 'utils', 'StateTest.js'),
             // Data modules
             path.join(srcDir, 'js', 'data', 'pronunciations.js'),
+            path.join(srcDir, 'js', 'data', 'DialogueDataLoader.js'),
+            // Models
+            path.join(srcDir, 'js', 'models', 'Vocabulary.js'),
+            path.join(srcDir, 'js', 'models', 'Category.js'),
+            path.join(srcDir, 'js', 'models', 'Dialogue.js'),
             // Core modules
             path.join(srcDir, 'js', 'core', 'VocabularyManager.js'),
             path.join(srcDir, 'js', 'core', 'ProgressTracker.js'),
@@ -168,8 +181,26 @@ async function build() {
         if (fs.existsSync(assetsDir)) {
             console.log('📁 Copying assets...');
             copyDirectory(assetsDir, path.join(distDir, 'assets'));
-            console.log('   ✅ Assets copied\n');
+            console.log('   ✅ Assets copied');
         }
+
+        // Copy images if they exist
+        const imageDir = 'image';
+        if (fs.existsSync(imageDir)) {
+            console.log('🖼️  Copying images...');
+            copyDirectory(imageDir, path.join(distDir, 'image'));
+            console.log('   ✅ Images copied');
+        }
+
+        // Copy other static files
+        const staticFiles = ['manifest.json', 'sw.js'];
+        for (const staticFile of staticFiles) {
+            if (fs.existsSync(staticFile)) {
+                fs.copyFileSync(staticFile, path.join(distDir, staticFile));
+                console.log(`   ✅ Copied ${staticFile}`);
+            }
+        }
+        console.log();
         
         // Generate build info
         const buildInfo = {

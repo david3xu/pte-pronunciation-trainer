@@ -1,6 +1,6 @@
 {
   "buildCommand": "npm run vercel-build",
-  "outputDirectory": ".",
+  "outputDirectory": "dist",
   "headers": [
     {
       "source": "/data/processed/(.*)",

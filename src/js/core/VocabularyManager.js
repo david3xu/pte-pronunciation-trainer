@@ -1027,10 +1027,21 @@ class VocabularyManager {
             return;
         }
 
+        console.log(`🔍 Starting vocabulary extraction from ${this.completeDataset.dialogues.length} dialogues`);
         const vocabulary = [];
 
-        this.completeDataset.dialogues.forEach(dialogue => {
-            dialogue.sentences.forEach(sentence => {
+        this.completeDataset.dialogues.forEach((dialogue, dialogueIndex) => {
+            if (!dialogue.sentences) {
+                console.warn(`⚠️  Dialogue ${dialogueIndex} (${dialogue.id}) has no sentences property`);
+                return;
+            }
+
+            dialogue.sentences.forEach((sentence, sentenceIndex) => {
+                if (!sentence.vocabulary) {
+                    console.warn(`⚠️  Sentence ${sentenceIndex} in dialogue ${dialogue.id} has no vocabulary property`);
+                    return;
+                }
+
                 sentence.vocabulary.forEach(vocabItem => {
                     vocabulary.push({
                         english: vocabItem.term,

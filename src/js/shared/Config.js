@@ -53,7 +53,7 @@ class AppConfig {
 
             // Data Sources Configuration
             dataSources: {
-                complete: '/data/processed/complete-dataset.json',
+                complete: '/data/processed/dialogue-data.json',
                 unfamiliar: '/data/processed/unfamiliar-words.json',
                 words: '/data/processed/words-dataset.json',
                 chineseEnglish: '/data/processed/chinese-english-dataset.json',

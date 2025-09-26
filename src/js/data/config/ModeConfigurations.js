@@ -16,8 +16,7 @@ class ModeConfigurations {
                 data: {
                     primaryDataset: 'dialogue-data.json',
                     fallbackDatasets: ['complete-dataset.json'],
-                    extractionMethod: 'extractCompleteVocabulary',
-                    expectedTerms: 2800
+                    extractionMethod: 'extractCompleteVocabulary'
                 },
 
                 // Display Configuration
@@ -55,8 +54,7 @@ class ModeConfigurations {
                 data: {
                     primaryDataset: 'chinese-english-dataset.json',
                     fallbackDatasets: [],
-                    extractionMethod: 'getChineseEnglishData',
-                    expectedTerms: 2954
+                    extractionMethod: 'getChineseEnglishData'
                 },
 
                 display: {
@@ -92,8 +90,7 @@ class ModeConfigurations {
                 data: {
                     primaryDataset: 'resume-terms-dataset.json',
                     fallbackDatasets: [],
-                    extractionMethod: 'getResumeTermsData',
-                    expectedTerms: 445
+                    extractionMethod: 'getResumeTermsData'
                 },
 
                 display: {
@@ -129,8 +126,7 @@ class ModeConfigurations {
                 data: {
                     primaryDataset: 'unfamiliar-words.json',
                     fallbackDatasets: ['unfamiliar-words-dataset.json'],
-                    extractionMethod: 'getUnfamiliarWordsData',
-                    expectedTerms: 2360
+                    extractionMethod: 'getUnfamiliarWordsData'
                 },
 
                 display: {
@@ -165,8 +161,7 @@ class ModeConfigurations {
                 data: {
                     primaryDataset: 'words-dataset.json',
                     fallbackDatasets: [],
-                    extractionMethod: 'getWordsData',
-                    expectedTerms: 2955
+                    extractionMethod: 'getWordsData'
                 },
 
                 display: {

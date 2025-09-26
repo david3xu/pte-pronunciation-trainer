@@ -209,14 +209,6 @@ class Constants {
 
     // ===== VALIDATION CONSTANTS =====
     static VALIDATION = {
-        MIN_EXPECTED_TERMS: {
-            [this.MODES.VOCABULARY]: 2800,
-            [this.MODES.UNFAMILIAR]: 2300,
-            [this.MODES.WORDS]: 2900,
-            [this.MODES.CHINESE_ENGLISH]: 2900,
-            [this.MODES.RESUME_TERMS]: 400
-        },
-
         MAX_RETRY_ATTEMPTS: 3,
         TIMEOUT_MS: 10000
     };

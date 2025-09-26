@@ -713,14 +713,14 @@ class UnifiedDataPipeline {
                 const difficultyField = item.difficulty;
 
                 if (!englishField) errors.push(`Item ${index}: Missing english/term/content field`);
-                
+
                 // Only validate source and difficulty for datasets that should have them
                 // Skip validation for vocabulary-clean format which has different structure
                 if (!filename.includes('vocabulary-data') && !filename.includes('vocabulary-clean')) {
                     if (!sourceField) errors.push(`Item ${index}: Missing source field`);
                     if (!difficultyField) errors.push(`Item ${index}: Missing difficulty field`);
                 }
-                
+
                 if (englishField && typeof englishField !== 'string') errors.push(`Item ${index}: English field must be string`);
             });
         }

@@ -25,7 +25,7 @@ class VocabularyManager {
 
         // Dialogue-based category labels (groups by decade endings 0-9) - Sept 3, 2025
         this.categoryLabels = {
-            'all-categories': '🌟 All Categories (6928 words)',
+            'all-categories': '🌟 All Categories',
             'group-240s': '📚 70240s: 70248-70240 (Latest)',
             'group-230s': '📚 70230s: 70239-70230',
             'group-220s': '📚 70220s: 70229-70220',
@@ -90,6 +90,63 @@ class VocabularyManager {
         });
 
         console.log('Category counts calculated from complete dataset:', this.categoryCounts);
+    }
+
+    /**
+     * Update mode dropdown with dynamic counts
+     */
+    async updateModeDropdownCounts() {
+        const modeSelect = document.getElementById('learningModeSelect');
+        if (!modeSelect) return;
+
+        const modeCounts = {};
+
+        // Get counts for each mode
+        const modes = ['vocabulary', 'unfamiliar', 'words', 'chinese-english', 'resume-terms'];
+
+        for (const mode of modes) {
+            try {
+                const data = await this.getVocabularyDataForMode(mode);
+                if (data && data.vocabulary) {
+                    modeCounts[mode] = data.vocabulary.length;
+                } else if (data && data.words) {
+                    modeCounts[mode] = data.words.length;
+                } else if (data && data.entries) {
+                    modeCounts[mode] = data.entries.length;
+                } else {
+                    modeCounts[mode] = 0;
+                }
+            } catch (error) {
+                console.warn(`Could not get count for mode ${mode}:`, error);
+                modeCounts[mode] = 0;
+            }
+        }
+
+        // Update dropdown options with counts
+        Array.from(modeSelect.options).forEach(option => {
+            const mode = option.value;
+            const count = modeCounts[mode];
+
+            if (count !== undefined && count > 0) {
+                const baseLabel = option.textContent.replace(/ \(\d+.*?\)$/, ''); // Remove existing count
+                option.textContent = `${baseLabel} (${count.toLocaleString()} terms)`;
+            }
+        });
+    }
+
+    /**
+     * Get vocabulary data for a specific mode without changing current mode
+     */
+    async getVocabularyDataForMode(mode) {
+        const previousMode = this.currentLearningMode;
+        this.currentLearningMode = mode;
+
+        try {
+            const data = await this.getVocabularyData();
+            return data;
+        } finally {
+            this.currentLearningMode = previousMode;
+        }
     }
 
     async recalculateCountsForMode(mode) {
@@ -1034,6 +1091,9 @@ class VocabularyManager {
             });
 
             console.log('🎉 VocabularyManager initialized with complete dataset');
+
+            // Update mode dropdown with dynamic counts
+            await this.updateModeDropdownCounts();
         } catch (error) {
             console.error('❌ Failed to initialize VocabularyManager:', error);
             // Could fall back to old method here if needed

@@ -3,6 +3,9 @@
  *
  * Converts various vocabulary data formats into a consistent structure
  */
+
+// Import Constants for Node.js environment
+const Constants = require('../../shared/Constants');
 class VocabularyFormatter {
     /**
      * Standardize vocabulary format across all sources
@@ -27,7 +30,6 @@ class VocabularyFormatter {
                 english: item.english || item.term || item.word || '',
                 chinese: item.chinese || item.translation || '',
                 difficulty: item.difficulty || this.inferDifficulty(item.english || item.term),
-                category: item.category || this.inferCategoryFromDialogueId(item.conversationId) || 'general',
                 example: item.example || item.sentence || '',
                 exampleChinese: item.exampleChinese || item.sentenceChinese || '',
                 conversationId: item.conversationId || item.dialogue_id || '',
@@ -38,6 +40,12 @@ class VocabularyFormatter {
                 source: source,
                 id: this.generateId(item.english || item.term || item.word)
             };
+
+            // Only add category if the item has one or can be inferred from dialogue
+            const inferredCategory = item.category || (item.conversationId ? this.inferCategoryFromDialogueId(item.conversationId) : null);
+            if (inferredCategory && inferredCategory !== 'general') {
+                standardized.category = inferredCategory;
+            }
 
             // Process pronunciation data if available (Node.js environment)
             if (item.ukPronunciation || item.usPronunciation) {

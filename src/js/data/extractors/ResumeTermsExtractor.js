@@ -28,7 +28,7 @@ class ResumeTermsExtractor {
 
         const lines = content.split('\n');
         const terms = [];
-        let currentSection = 'general';
+        let currentSection = null;
 
         for (const line of lines) {
             const trimmed = line.trim();
@@ -75,11 +75,10 @@ class ResumeTermsExtractor {
                     }
                 }
 
-                terms.push({
+                const termData = {
                     english: term,
                     chinese: '', // Resume terms don't have Chinese translations
                     difficulty: this.inferDifficulty(term),
-                    category: currentSection,
                     phonetic: britishPhonetic || americanPhonetic,
                     ipa: britishIPA || americanIPA,
                     pronunciationGuide: {
@@ -87,7 +86,14 @@ class ResumeTermsExtractor {
                         american: { ipa: americanIPA, phonetic: americanPhonetic }
                     },
                     source: 'resume-terms'
-                });
+                };
+
+                // Only add category if sections were found in the source
+                if (currentSection !== null) {
+                    termData.category = currentSection;
+                }
+
+                terms.push(termData);
             }
         }
 

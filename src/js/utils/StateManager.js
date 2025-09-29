@@ -11,7 +11,7 @@ class StateManager {
             // User preferences
             speed: String(Constants.SPEEDS.SLOW),
             delay: String(Constants.DELAYS.DEFAULT_PAUSE),
-            repeat: 'individual',
+            repeat: 'once',
             voice: 'auto',
             
             // UI state
@@ -112,7 +112,7 @@ class StateManager {
             currentDifficulty: 'all',
             speed: String(Constants.SPEEDS.SLOW),
             delay: String(Constants.DELAYS.DEFAULT_PAUSE),
-            repeat: 'individual',
+            repeat: 'once',
             voice: 'auto',
             settingsPanelOpen: false,
             lastSaved: Date.now()

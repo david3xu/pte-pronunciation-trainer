@@ -50,8 +50,8 @@ class CacheMigration {
         // Set default learning mode to vocabulary
         window.storage.setItem('learningMode', 'vocabulary');
 
-        // Set default repeat mode to 2x (individual)
-        window.storage.setItem('repeatMode', 'individual');
+        // Set default repeat mode to 1x (once - terms only)
+        window.storage.setItem('repeatMode', 'once');
 
         // Set default pause duration (2 seconds between words, 1 second between repetitions)
         window.storage.setItem('delay', Constants.DELAYS.DEFAULT_PAUSE);

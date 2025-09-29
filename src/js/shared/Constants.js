@@ -7,7 +7,7 @@
 class Constants {
     // ===== TIMING CONSTANTS =====
     static DELAYS = {
-        DEFAULT_PAUSE: 1000,
+        DEFAULT_PAUSE: 2000,
         SHORT_PAUSE: 1000,
         NORMAL_PAUSE: 2000,
         LONG_PAUSE: 3000,
@@ -201,7 +201,7 @@ class Constants {
 
     // ===== REPEAT MODE CONSTANTS =====
     static REPEAT_MODES = {
-        ONCE: 'individual',
+        ONCE: 'once',
         TWICE: '2x',
         THREE_TIMES: '3x',
         LOOP: 'loop'

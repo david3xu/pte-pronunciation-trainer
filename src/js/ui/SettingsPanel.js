@@ -123,7 +123,7 @@ class SettingsPanel {
             difficulty: window.storage.getItem('difficulty') || 'all',
             speechRate: window.storage.getItem('speechRate') || Constants.SPEEDS.SLOW,
             delay: window.storage.getItem('delay') || Constants.DELAYS.NORMAL_PAUSE,
-            repeatMode: window.storage.getItem('repeatMode') || 'individual',
+            repeatMode: window.storage.getItem('repeatMode') || 'once',
             preferredVoice: window.storage.getItem('preferredVoice') || null
         };
 

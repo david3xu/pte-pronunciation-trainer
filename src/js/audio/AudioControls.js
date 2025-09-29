@@ -3,7 +3,7 @@ class AudioControls {
     constructor() {
         this.isPlaying = false;
         this.delay = Constants.DELAYS.DEFAULT_PAUSE; // Default pause between words
-        this.repeatMode = 'individual';
+        this.repeatMode = 'once';
         this.currentIndex = 0;
         this.autoPlayTimeout = null;
     }

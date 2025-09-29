@@ -51,7 +51,7 @@ class SettingsPanel {
                 category: window.storage.getItem('category') || Constants.DIALOGUE_GROUPS.CATEGORY_KEYS.ALL,
                 difficulty: window.storage.getItem('difficulty') || 'all',
                 speed: window.storage.getItem('speechRate') || String(Constants.SPEEDS.SLOW),
-                delay: window.storage.getItem('delay') || String(Constants.DELAYS.DEFAULT_PAUSE),
+                delay: window.storage.getItem('delay') || String(Constants.DELAYS.NORMAL_PAUSE),
                 repeat: window.storage.getItem('repeatMode') || Constants.REPEAT_MODES.ONCE,
                 voice: window.storage.getItem('preferredVoice') || 'auto',
                 learningMode: window.storage.getItem('learningMode') || Constants.MODES.VOCABULARY_CLEAN
@@ -122,7 +122,7 @@ class SettingsPanel {
             category: window.storage.getItem('category') || 'all-categories',
             difficulty: window.storage.getItem('difficulty') || 'all',
             speechRate: window.storage.getItem('speechRate') || Constants.SPEEDS.SLOW,
-            delay: window.storage.getItem('delay') || Constants.DELAYS.DEFAULT_PAUSE,
+            delay: window.storage.getItem('delay') || Constants.DELAYS.NORMAL_PAUSE,
             repeatMode: window.storage.getItem('repeatMode') || 'individual',
             preferredVoice: window.storage.getItem('preferredVoice') || null
         };

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-09-30T01:56:58.699Z",
-    "totalTerms": 1470,
+    "generated": "2025-09-30T03:31:45.466Z",
+    "totalTerms": 1724,
     "source": "unified-pipeline-resume-terms",
     "description": "Professional vocabulary with pronunciation guides",
     "version": "2.0"
@@ -33816,6 +33816,5848 @@
       },
       "source": "resumeTerms",
       "id": "and-processing-times"
+    },
+    {
+      "english": "version control",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "VUR-shun kun-TROHL",
+      "ipa": "ˈvɜː.ʃən kənˈtrəʊl",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈvɜː.ʃən kənˈtrəʊl",
+          "phonetic": "VUR-shun kun-TROHL"
+        },
+        "american": {
+          "ipa": "ˈvɜr.ʒən kənˈtroʊl",
+          "phonetic": "VUR-zhun kun-TROHL"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "version-control"
+    },
+    {
+      "english": "and collaborative development",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and kuh-LAB-ur-uh-tiv di-VEL-up-munt",
+      "ipa": "ænd kəˈlæb.ər.ə.tɪv dɪˈvel.əp.mənt",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd kəˈlæb.ər.ə.tɪv dɪˈvel.əp.mənt",
+          "phonetic": "and kuh-LAB-ur-uh-tiv di-VEL-up-munt"
+        },
+        "american": {
+          "ipa": "ænd kəˈlæb.ɚ.ə.tɪv dɪˈvel.əp.mənt",
+          "phonetic": "and kuh-LAB-ur-uh-tiv di-VEL-up-munt"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-collaborative-development"
+    },
+    {
+      "english": "git workflows",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "GIT WURK-flohz",
+      "ipa": "ɡɪt ˈwɜːk.fləʊz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɡɪt ˈwɜːk.fləʊz",
+          "phonetic": "GIT WURK-flohz"
+        },
+        "american": {
+          "ipa": "ɡɪt ˈwɜrk.floʊz",
+          "phonetic": "GIT WURK-flohz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "git-workflows"
+    },
+    {
+      "english": "for AI projects",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "for AY EYE PROJ-ekts",
+      "ipa": "fɔːr eɪ aɪ ˈprɒdʒ.ekts",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "fɔːr eɪ aɪ ˈprɒdʒ.ekts",
+          "phonetic": "for AY EYE PROJ-ekts"
+        },
+        "american": {
+          "ipa": "fɔr eɪ aɪ ˈprɑdʒ.ekts",
+          "phonetic": "for AY EYE PRAHJ-ekts"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "for-ai-projects"
+    },
+    {
+      "english": "git version control",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "GIT VUR-shun kun-TROHL",
+      "ipa": "ɡɪt ˈvɜː.ʃən kənˈtrəʊl",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɡɪt ˈvɜː.ʃən kənˈtrəʊl",
+          "phonetic": "GIT VUR-shun kun-TROHL"
+        },
+        "american": {
+          "ipa": "ɡɪt ˈvɜr.ʒən kənˈtroʊl",
+          "phonetic": "GIT VUR-zhun kun-TROHL"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "git-version-control"
+    },
+    {
+      "english": "becomes particularly important",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "bi-KUMZ puh-TIK-yuh-luh-lee im-POR-tunt",
+      "ipa": "bɪˈkʌmz pəˈtɪk.jʊ.lə.li ɪmˈpɔː.tənt",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "bɪˈkʌmz pəˈtɪk.jʊ.lə.li ɪmˈpɔː.tənt",
+          "phonetic": "bi-KUMZ puh-TIK-yuh-luh-lee im-POR-tunt"
+        },
+        "american": {
+          "ipa": "bɪˈkʌmz pɚˈtɪk.jə.lɚ.li ɪmˈpɔr.tənt",
+          "phonetic": "bi-KUMZ pur-TIK-yuh-lur-lee im-POR-tunt"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "becomes-particularly-important"
+    },
+    {
+      "english": "in AI development",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "in AY EYE di-VEL-up-munt",
+      "ipa": "ɪn eɪ aɪ dɪˈvel.əp.mənt",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɪn eɪ aɪ dɪˈvel.əp.mənt",
+          "phonetic": "in AY EYE di-VEL-up-munt"
+        },
+        "american": {
+          "ipa": "ɪn eɪ aɪ dɪˈvel.əp.mənt",
+          "phonetic": "in AY EYE di-VEL-up-munt"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "in-ai-development"
+    },
+    {
+      "english": "where model configurations",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "wair MOD-ul kun-fig-yuh-RAY-shunz",
+      "ipa": "weər ˈmɒd.əl kənˌfɪɡ.jʊˈreɪ.ʃənz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "weər ˈmɒd.əl kənˌfɪɡ.jʊˈreɪ.ʃənz",
+          "phonetic": "wair MOD-ul kun-fig-yuh-RAY-shunz"
+        },
+        "american": {
+          "ipa": "wer ˈmɑd.əl kənˌfɪɡ.jəˈreɪ.ʃənz",
+          "phonetic": "wair MAHD-ul kun-fig-yuh-RAY-shunz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "where-model-configurations"
+    },
+    {
+      "english": "prompt templates",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "PROMPT TEM-playts",
+      "ipa": "prɒmpt ˈtem.pleɪts",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "prɒmpt ˈtem.pleɪts",
+          "phonetic": "PROMPT TEM-playts"
+        },
+        "american": {
+          "ipa": "prɑmpt ˈtem.pleɪts",
+          "phonetic": "PRAHMT TEM-playts"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "prompt-templates"
+    },
+    {
+      "english": "and training data",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and TRAY-ning DAY-tuh",
+      "ipa": "ænd ˈtreɪ.nɪŋ ˈdeɪ.tə",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd ˈtreɪ.nɪŋ ˈdeɪ.tə",
+          "phonetic": "and TRAY-ning DAY-tuh"
+        },
+        "american": {
+          "ipa": "ænd ˈtreɪ.nɪŋ ˈdeɪ.tə",
+          "phonetic": "and TRAY-ning DAY-tuh"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-training-data"
+    },
+    {
+      "english": "require careful versioning",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "ri-KWYR KAIR-ful VUR-shun-ing",
+      "ipa": "rɪˈkwaɪə ˈkeə.fəl ˈvɜː.ʃən.ɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "rɪˈkwaɪə ˈkeə.fəl ˈvɜː.ʃən.ɪŋ",
+          "phonetic": "ri-KWYR KAIR-ful VUR-shun-ing"
+        },
+        "american": {
+          "ipa": "rɪˈkwaɪɚ ˈker.fəl ˈvɜr.ʒən.ɪŋ",
+          "phonetic": "ri-KWYR KAIR-ful VUR-zhun-ing"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "require-careful-versioning"
+    },
+    {
+      "english": "and collaboration management",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and kuh-lab-uh-RAY-shun MAN-ij-munt",
+      "ipa": "ænd kəˌlæb.əˈreɪ.ʃən ˈmæn.ɪdʒ.mənt",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd kəˌlæb.əˈreɪ.ʃən ˈmæn.ɪdʒ.mənt",
+          "phonetic": "and kuh-lab-uh-RAY-shun MAN-ij-munt"
+        },
+        "american": {
+          "ipa": "ænd kəˌlæb.ɚˈeɪ.ʃən ˈmæn.ɪdʒ.mənt",
+          "phonetic": "and kuh-lab-ur-AY-shun MAN-ij-munt"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-collaboration-management"
+    },
+    {
+      "english": "branching strategies",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "BRAHN-ching STRAT-uh-jeez",
+      "ipa": "ˈbrɑːn.tʃɪŋ ˈstræt.ə.dʒiz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈbrɑːn.tʃɪŋ ˈstræt.ə.dʒiz",
+          "phonetic": "BRAHN-ching STRAT-uh-jeez"
+        },
+        "american": {
+          "ipa": "ˈbræn.tʃɪŋ ˈstræt.ə.dʒiz",
+          "phonetic": "BRAN-ching STRAT-uh-jeez"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "branching-strategies"
+    },
+    {
+      "english": "must accommodate",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "MUST uh-KOM-uh-dayt",
+      "ipa": "mʌst əˈkɒm.ə.deɪt",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "mʌst əˈkɒm.ə.deɪt",
+          "phonetic": "MUST uh-KOM-uh-dayt"
+        },
+        "american": {
+          "ipa": "mʌst əˈkɑm.ə.deɪt",
+          "phonetic": "MUST uh-KAHM-uh-dayt"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "must-accommodate"
+    },
+    {
+      "english": "experimentation",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "ik-sper-i-men-TAY-shun",
+      "ipa": "ɪkˌsper.ɪ.menˈteɪ.ʃən",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɪkˌsper.ɪ.menˈteɪ.ʃən",
+          "phonetic": "ik-sper-i-men-TAY-shun"
+        },
+        "american": {
+          "ipa": "ɪkˌsper.əˌmenˈteɪ.ʃən",
+          "phonetic": "ik-sper-uh-men-TAY-shun"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "experimentation"
+    },
+    {
+      "english": "with different models",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "with DIF-ur-unt MOD-ulz",
+      "ipa": "wɪð ˈdɪf.ər.ənt ˈmɒd.əlz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "wɪð ˈdɪf.ər.ənt ˈmɒd.əlz",
+          "phonetic": "with DIF-ur-unt MOD-ulz"
+        },
+        "american": {
+          "ipa": "wɪθ ˈdɪf.ɚ.ənt ˈmɑd.əlz",
+          "phonetic": "with DIF-ur-unt MAHD-ulz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "with-different-models"
+    },
+    {
+      "english": "prompt variations",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "PROMPT vair-ee-AY-shunz",
+      "ipa": "prɒmpt ˌveə.riˈeɪ.ʃənz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "prɒmpt ˌveə.riˈeɪ.ʃənz",
+          "phonetic": "PROMPT vair-ee-AY-shunz"
+        },
+        "american": {
+          "ipa": "prɑmpt ˌver.iˈeɪ.ʃənz",
+          "phonetic": "PRAHMT ver-ee-AY-shunz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "prompt-variations"
+    },
+    {
+      "english": "and architectural approaches",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and ar-ki-TEK-chur-ul uh-PROH-chiz",
+      "ipa": "ænd ˌɑː.kɪˈtek.tʃər.əl əˈprəʊ.tʃɪz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd ˌɑː.kɪˈtek.tʃər.əl əˈprəʊ.tʃɪz",
+          "phonetic": "and ar-ki-TEK-chur-ul uh-PROH-chiz"
+        },
+        "american": {
+          "ipa": "ænd ˌɑr.kəˈtek.tʃɚ.əl əˈproʊ.tʃəz",
+          "phonetic": "and ar-kuh-TEK-chur-ul uh-PROH-chuhz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-architectural-approaches"
+    },
+    {
+      "english": "while maintaining",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "wyl mayn-TAY-ning",
+      "ipa": "waɪl meɪnˈteɪ.nɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "waɪl meɪnˈteɪ.nɪŋ",
+          "phonetic": "wyl mayn-TAY-ning"
+        },
+        "american": {
+          "ipa": "waɪl meɪnˈteɪ.nɪŋ",
+          "phonetic": "wyl mayn-TAY-ning"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "while-maintaining"
+    },
+    {
+      "english": "stable production systems",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "STAY-bul pruh-DUK-shun SIS-tumz",
+      "ipa": "ˈsteɪ.bəl prəˈdʌk.ʃən ˈsɪs.təmz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈsteɪ.bəl prəˈdʌk.ʃən ˈsɪs.təmz",
+          "phonetic": "STAY-bul pruh-DUK-shun SIS-tumz"
+        },
+        "american": {
+          "ipa": "ˈsteɪ.bəl prəˈdʌk.ʃən ˈsɪs.təmz",
+          "phonetic": "STAY-bul pruh-DUK-shun SIS-tumz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "stable-production-systems"
+    },
+    {
+      "english": "data versioning",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "DAY-tuh VUR-shun-ing",
+      "ipa": "ˈdeɪ.tə ˈvɜː.ʃən.ɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈdeɪ.tə ˈvɜː.ʃən.ɪŋ",
+          "phonetic": "DAY-tuh VUR-shun-ing"
+        },
+        "american": {
+          "ipa": "ˈdeɪ.tə ˈvɜr.ʒən.ɪŋ",
+          "phonetic": "DAY-tuh VUR-zhun-ing"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "data-versioning"
+    },
+    {
+      "english": "extends traditional code versioning",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "ik-STENDZ truh-DISH-un-ul KOHD VUR-shun-ing",
+      "ipa": "ɪkˈstendz trəˈdɪʃ.ən.əl kəʊd ˈvɜː.ʃən.ɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɪkˈstendz trəˈdɪʃ.ən.əl kəʊd ˈvɜː.ʃən.ɪŋ",
+          "phonetic": "ik-STENDZ truh-DISH-un-ul KOHD VUR-shun-ing"
+        },
+        "american": {
+          "ipa": "ɪkˈstendz trəˈdɪʃ.ən.əl koʊd ˈvɜr.ʒən.ɪŋ",
+          "phonetic": "ik-STENDZ truh-DISH-un-ul KOHD VUR-zhun-ing"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "extends-traditional-code-versioning"
+    },
+    {
+      "english": "to handle datasets",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "tuh HAN-dul DAY-tuh-sets",
+      "ipa": "tə ˈhæn.dəl ˈdeɪ.tə.sets",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "tə ˈhæn.dəl ˈdeɪ.tə.sets",
+          "phonetic": "tuh HAN-dul DAY-tuh-sets"
+        },
+        "american": {
+          "ipa": "tu ˈhæn.dəl ˈdeɪ.tə.sets",
+          "phonetic": "too HAN-dul DAY-tuh-sets"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "to-handle-datasets"
+    },
+    {
+      "english": "model weights",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "MOD-ul WAYTS",
+      "ipa": "ˈmɒd.əl weɪts",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈmɒd.əl weɪts",
+          "phonetic": "MOD-ul WAYTS"
+        },
+        "american": {
+          "ipa": "ˈmɑd.əl weɪts",
+          "phonetic": "MAHD-ul WAYTS"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "model-weights"
+    },
+    {
+      "english": "and configuration files",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and kun-fig-yuh-RAY-shun FYLZ",
+      "ipa": "ænd kənˌfɪɡ.jʊˈreɪ.ʃən faɪlz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd kənˌfɪɡ.jʊˈreɪ.ʃən faɪlz",
+          "phonetic": "and kun-fig-yuh-RAY-shun FYLZ"
+        },
+        "american": {
+          "ipa": "ænd kənˌfɪɡ.jəˈreɪ.ʃən faɪlz",
+          "phonetic": "and kun-fig-yuh-RAY-shun FYLZ"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-configuration-files"
+    },
+    {
+      "english": "that change frequently",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "that CHAYNJ FREE-kwunt-lee",
+      "ipa": "ðæt tʃeɪndʒ ˈfriː.kwənt.li",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ðæt tʃeɪndʒ ˈfriː.kwənt.li",
+          "phonetic": "that CHAYNJ FREE-kwunt-lee"
+        },
+        "american": {
+          "ipa": "ðæt tʃeɪndʒ ˈfri.kwənt.li",
+          "phonetic": "that CHAYNJ FREE-kwunt-lee"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "that-change-frequently"
+    },
+    {
+      "english": "during AI development",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "DYOOR-ing AY EYE di-VEL-up-munt",
+      "ipa": "ˈdjʊə.rɪŋ eɪ aɪ dɪˈvel.əp.mənt",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈdjʊə.rɪŋ eɪ aɪ dɪˈvel.əp.mənt",
+          "phonetic": "DYOOR-ing AY EYE di-VEL-up-munt"
+        },
+        "american": {
+          "ipa": "ˈdʊr.ɪŋ eɪ aɪ dɪˈvel.əp.mənt",
+          "phonetic": "DOOR-ing AY EYE di-VEL-up-munt"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "during-ai-development"
+    },
+    {
+      "english": "collaboration patterns",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "kuh-lab-uh-RAY-shun PAT-unz",
+      "ipa": "kəˌlæb.əˈreɪ.ʃən ˈpæt.ənz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "kəˌlæb.əˈreɪ.ʃən ˈpæt.ənz",
+          "phonetic": "kuh-lab-uh-RAY-shun PAT-unz"
+        },
+        "american": {
+          "ipa": "kəˌlæb.ɚˈeɪ.ʃən ˈpæt.ɚnz",
+          "phonetic": "kuh-lab-ur-AY-shun PAT-urnz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "collaboration-patterns"
+    },
+    {
+      "english": "code review",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "KOHD ri-VYOO",
+      "ipa": "kəʊd rɪˈvjuː",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "kəʊd rɪˈvjuː",
+          "phonetic": "KOHD ri-VYOO"
+        },
+        "american": {
+          "ipa": "koʊd rɪˈvju",
+          "phonetic": "KOHD ri-VYOO"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "code-review"
+    },
+    {
+      "english": "requires understanding",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "ri-KWYURZ un-dur-STAN-ding",
+      "ipa": "rɪˈkwaɪəz ˌʌn.dəˈstæn.dɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "rɪˈkwaɪəz ˌʌn.dəˈstæn.dɪŋ",
+          "phonetic": "ri-KWYURZ un-dur-STAN-ding"
+        },
+        "american": {
+          "ipa": "rɪˈkwaɪɚz ˌʌn.dɚˈstæn.dɪŋ",
+          "phonetic": "ri-KWYURZ un-dur-STAN-ding"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "requires-understanding"
+    },
+    {
+      "english": "both traditional",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "bohth truh-DISH-un-ul",
+      "ipa": "bəʊθ trəˈdɪʃ.ən.əl",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "bəʊθ trəˈdɪʃ.ən.əl",
+          "phonetic": "bohth truh-DISH-un-ul"
+        },
+        "american": {
+          "ipa": "boʊθ trəˈdɪʃ.ən.əl",
+          "phonetic": "bohth truh-DISH-un-ul"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "both-traditional"
+    },
+    {
+      "english": "software engineering",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "SOFT-wair en-ji-NEER-ing",
+      "ipa": "ˈsɒft.weər ˌen.dʒɪˈnɪə.rɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈsɒft.weər ˌen.dʒɪˈnɪə.rɪŋ",
+          "phonetic": "SOFT-wair en-ji-NEER-ing"
+        },
+        "american": {
+          "ipa": "ˈsɔft.wer ˌen.dʒəˈnɪr.ɪŋ",
+          "phonetic": "SAWFT-wair en-juh-NEER-ing"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "software-engineering"
+    },
+    {
+      "english": "practices",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "PRAK-tis-iz",
+      "ipa": "ˈpræk.tɪs.ɪz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈpræk.tɪs.ɪz",
+          "phonetic": "PRAK-tis-iz"
+        },
+        "american": {
+          "ipa": "ˈpræk.tə.səz",
+          "phonetic": "PRAK-tuh-suhz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "practices"
+    },
+    {
+      "english": "and AI-specific considerations",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and AY EYE spuh-SIF-ik kun-sid-uh-RAY-shunz",
+      "ipa": "ænd eɪ aɪ spəˈsɪf.ɪk kənˌsɪd.əˈreɪ.ʃənz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd eɪ aɪ spəˈsɪf.ɪk kənˌsɪd.əˈreɪ.ʃənz",
+          "phonetic": "and AY EYE spuh-SIF-ik kun-sid-uh-RAY-shunz"
+        },
+        "american": {
+          "ipa": "ænd eɪ aɪ spəˈsɪf.ɪk kənˌsɪd.ɚˈeɪ.ʃənz",
+          "phonetic": "and AY EYE spuh-SIF-ik kun-sid-ur-AY-shunz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-aispecific-considerations"
+    },
+    {
+      "english": "like model evaluation metrics",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "lyk MOD-ul i-val-yoo-AY-shun MET-riks",
+      "ipa": "laɪk ˈmɒd.əl ɪˌvæl.juˈeɪ.ʃən ˈmet.rɪks",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "laɪk ˈmɒd.əl ɪˌvæl.juˈeɪ.ʃən ˈmet.rɪks",
+          "phonetic": "lyk MOD-ul i-val-yoo-AY-shun MET-riks"
+        },
+        "american": {
+          "ipa": "laɪk ˈmɑd.əl ɪˌvæl.juˈeɪ.ʃən ˈmet.rɪks",
+          "phonetic": "lyk MAHD-ul i-val-yoo-AY-shun MET-riks"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "like-model-evaluation-metrics"
+    },
+    {
+      "english": "and prompt effectiveness",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and PROMPT i-FEK-tiv-nus",
+      "ipa": "ænd prɒmpt ɪˈfek.tɪv.nəs",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd prɒmpt ɪˈfek.tɪv.nəs",
+          "phonetic": "and PROMPT i-FEK-tiv-nus"
+        },
+        "american": {
+          "ipa": "ænd prɑmpt əˈfek.tɪv.nəs",
+          "phonetic": "and PRAHMT uh-FEK-tiv-nus"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-prompt-effectiveness"
+    },
+    {
+      "english": "documentation standards",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "dok-yuh-men-TAY-shun STAN-dudz",
+      "ipa": "ˌdɒk.jʊ.menˈteɪ.ʃən ˈstæn.dədz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˌdɒk.jʊ.menˈteɪ.ʃən ˈstæn.dədz",
+          "phonetic": "dok-yuh-men-TAY-shun STAN-dudz"
+        },
+        "american": {
+          "ipa": "ˌdɑk.jəˌmenˈteɪ.ʃən ˈstæn.dɚdz",
+          "phonetic": "dahk-yuh-men-TAY-shun STAN-durdz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "documentation-standards"
+    },
+    {
+      "english": "become crucial",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "bi-KUM KROO-shul",
+      "ipa": "bɪˈkʌm ˈkruː.ʃəl",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "bɪˈkʌm ˈkruː.ʃəl",
+          "phonetic": "bi-KUM KROO-shul"
+        },
+        "american": {
+          "ipa": "bɪˈkʌm ˈkru.ʃəl",
+          "phonetic": "bi-KUM KROO-shul"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "become-crucial"
+    },
+    {
+      "english": "when multiple team members",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "wen MUL-ti-pul TEEM MEM-buhz",
+      "ipa": "wen ˈmʌl.tɪ.pəl tiːm ˈmem.bəz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "wen ˈmʌl.tɪ.pəl tiːm ˈmem.bəz",
+          "phonetic": "wen MUL-ti-pul TEEM MEM-buhz"
+        },
+        "american": {
+          "ipa": "wen ˈmʌl.tə.pəl tim ˈmem.bɚz",
+          "phonetic": "wen MUL-tuh-pul TEEM MEM-burz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "when-multiple-team-members"
+    },
+    {
+      "english": "need to understand",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "NEED tuh un-dur-STAND",
+      "ipa": "niːd tə ˌʌn.dəˈstænd",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "niːd tə ˌʌn.dəˈstænd",
+          "phonetic": "NEED tuh un-dur-STAND"
+        },
+        "american": {
+          "ipa": "nid tu ˌʌn.dɚˈstænd",
+          "phonetic": "NEED too un-dur-STAND"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "need-to-understand"
+    },
+    {
+      "english": "complex AI architectures",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "KOM-pleks AY EYE AR-ki-tek-chuhz",
+      "ipa": "ˈkɒm.pleks eɪ aɪ ˈɑː.kɪ.tek.tʃəz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈkɒm.pleks eɪ aɪ ˈɑː.kɪ.tek.tʃəz",
+          "phonetic": "KOM-pleks AY EYE AR-ki-tek-chuhz"
+        },
+        "american": {
+          "ipa": "ˈkɑm.pleks eɪ aɪ ˈɑr.kə.tek.tʃɚz",
+          "phonetic": "KAHM-pleks AY EYE AR-kuh-tek-churz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "complex-ai-architectures"
+    },
+    {
+      "english": "agent behaviors",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "AY-junt bi-HAYV-yuhz",
+      "ipa": "ˈeɪ.dʒənt bɪˈheɪv.jəz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈeɪ.dʒənt bɪˈheɪv.jəz",
+          "phonetic": "AY-junt bi-HAYV-yuhz"
+        },
+        "american": {
+          "ipa": "ˈeɪ.dʒənt bɪˈheɪv.jɚz",
+          "phonetic": "AY-junt bi-HAYV-yurz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "agent-behaviors"
+    },
+    {
+      "english": "and system integration patterns",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and SIS-tum in-ti-GRAY-shun PAT-unz",
+      "ipa": "ænd ˈsɪs.təm ˌɪn.tɪˈɡreɪ.ʃən ˈpæt.ənz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd ˈsɪs.təm ˌɪn.tɪˈɡreɪ.ʃən ˈpæt.ənz",
+          "phonetic": "and SIS-tum in-ti-GRAY-shun PAT-unz"
+        },
+        "american": {
+          "ipa": "ænd ˈsɪs.təm ˌɪn.təˈɡreɪ.ʃən ˈpæt.ɚnz",
+          "phonetic": "and SIS-tum in-tuh-GRAY-shun PAT-urnz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-system-integration-patterns"
+    },
+    {
+      "english": "continuous integration",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "kun-TIN-yoo-us in-ti-GRAY-shun",
+      "ipa": "kənˈtɪn.ju.əs ˌɪn.tɪˈɡreɪ.ʃən",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "kənˈtɪn.ju.əs ˌɪn.tɪˈɡreɪ.ʃən",
+          "phonetic": "kun-TIN-yoo-us in-ti-GRAY-shun"
+        },
+        "american": {
+          "ipa": "kənˈtɪn.ju.əs ˌɪn.təˈɡreɪ.ʃən",
+          "phonetic": "kun-TIN-yoo-us in-tuh-GRAY-shun"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "continuous-integration"
+    },
+    {
+      "english": "must handle model testing",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "MUST HAN-dul MOD-ul TEST-ing",
+      "ipa": "mʌst ˈhæn.dəl ˈmɒd.əl ˈtest.ɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "mʌst ˈhæn.dəl ˈmɒd.əl ˈtest.ɪŋ",
+          "phonetic": "MUST HAN-dul MOD-ul TEST-ing"
+        },
+        "american": {
+          "ipa": "mʌst ˈhæn.dəl ˈmɑd.əl ˈtest.ɪŋ",
+          "phonetic": "MUST HAN-dul MAHD-ul TEST-ing"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "must-handle-model-testing"
+    },
+    {
+      "english": "performance validation",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "pur-FAWR-muns val-i-DAY-shun",
+      "ipa": "pəˈfɔː.məns ˌvæl.ɪˈdeɪ.ʃən",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "pəˈfɔː.məns ˌvæl.ɪˈdeɪ.ʃən",
+          "phonetic": "pur-FAWR-muns val-i-DAY-shun"
+        },
+        "american": {
+          "ipa": "pɚˈfɔr.məns ˌvæl.əˈdeɪ.ʃən",
+          "phonetic": "pur-FAWR-muns val-uh-DAY-shun"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "performance-validation"
+    },
+    {
+      "english": "and integration testing",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and in-ti-GRAY-shun TEST-ing",
+      "ipa": "ænd ˌɪn.tɪˈɡreɪ.ʃən ˈtest.ɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd ˌɪn.tɪˈɡreɪ.ʃən ˈtest.ɪŋ",
+          "phonetic": "and in-ti-GRAY-shun TEST-ing"
+        },
+        "american": {
+          "ipa": "ænd ˌɪn.təˈɡreɪ.ʃən ˈtest.ɪŋ",
+          "phonetic": "and in-tuh-GRAY-shun TEST-ing"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-integration-testing"
+    },
+    {
+      "english": "across multiple AI components",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "uh-KROSS MUL-ti-pul AY EYE kum-POH-nunts",
+      "ipa": "əˈkrɒs ˈmʌl.tɪ.pəl eɪ aɪ kəmˈpəʊ.nənts",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "əˈkrɒs ˈmʌl.tɪ.pəl eɪ aɪ kəmˈpəʊ.nənts",
+          "phonetic": "uh-KROSS MUL-ti-pul AY EYE kum-POH-nunts"
+        },
+        "american": {
+          "ipa": "əˈkrɔs ˈmʌl.tə.pəl eɪ aɪ kəmˈpoʊ.nənts",
+          "phonetic": "uh-KRAWS MUL-tuh-pul AY EYE kum-POH-nunts"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "across-multiple-ai-components"
+    },
+    {
+      "english": "docker containers",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "DOK-ur kun-TAY-nuhz",
+      "ipa": "ˈdɒk.ər kənˈteɪ.nəz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈdɒk.ər kənˈteɪ.nəz",
+          "phonetic": "DOK-ur kun-TAY-nuhz"
+        },
+        "american": {
+          "ipa": "ˈdɑk.ɚ kənˈteɪ.nɚz",
+          "phonetic": "DAHK-ur kun-TAY-nurz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "docker-containers"
+    },
+    {
+      "english": "provides consistent environments",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "pruh-VYDZ kun-SIS-tunt in-VY-run-munts",
+      "ipa": "prəˈvaɪdz kənˈsɪs.tənt ɪnˈvaɪ.rən.mənts",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "prəˈvaɪdz kənˈsɪs.tənt ɪnˈvaɪ.rən.mənts",
+          "phonetic": "pruh-VYDZ kun-SIS-tunt in-VY-run-munts"
+        },
+        "american": {
+          "ipa": "prəˈvaɪdz kənˈsɪs.tənt ɪnˈvaɪ.rən.mənts",
+          "phonetic": "pruh-VYDZ kun-SIS-tunt in-VY-run-munts"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "provides-consistent-environments"
+    },
+    {
+      "english": "that often depend on",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "that OF-un di-PEND on",
+      "ipa": "ðæt ˈɒf.ən dɪˈpend ɒn",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ðæt ˈɒf.ən dɪˈpend ɒn",
+          "phonetic": "that OF-un di-PEND on"
+        },
+        "american": {
+          "ipa": "ðæt ˈɔf.ən dɪˈpend ɑn",
+          "phonetic": "that AWF-un di-PEND ahn"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "that-often-depend-on"
+    },
+    {
+      "english": "specific Python versions",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "spuh-SIF-ik PY-thun VUR-shunz",
+      "ipa": "spəˈsɪf.ɪk ˈpaɪ.θən ˈvɜː.ʃənz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "spəˈsɪf.ɪk ˈpaɪ.θən ˈvɜː.ʃənz",
+          "phonetic": "spuh-SIF-ik PY-thun VUR-shunz"
+        },
+        "american": {
+          "ipa": "spəˈsɪf.ɪk ˈpaɪ.θɑn ˈvɝ.ʒənz",
+          "phonetic": "spuh-SIF-ik PY-thahn VUR-zhunz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "specific-python-versions"
+    },
+    {
+      "english": "model libraries",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "MOD-ul LY-brur-eez",
+      "ipa": "ˈmɒd.əl ˈlaɪ.brər.iz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈmɒd.əl ˈlaɪ.brər.iz",
+          "phonetic": "MOD-ul LY-brur-eez"
+        },
+        "american": {
+          "ipa": "ˈmɑ.dəl ˈlaɪ.brer.iz",
+          "phonetic": "MAH-duhl LY-brer-eez"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "model-libraries"
+    },
+    {
+      "english": "and system configurations",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and SIS-tum kun-fig-yur-AY-shunz",
+      "ipa": "ænd ˈsɪs.təm kənˌfɪg.jʊˈreɪ.ʃənz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd ˈsɪs.təm kənˌfɪg.jʊˈreɪ.ʃənz",
+          "phonetic": "and SIS-tum kun-fig-yur-AY-shunz"
+        },
+        "american": {
+          "ipa": "ænd ˈsɪs.təm kənˌfɪg.jəˈreɪ.ʃənz",
+          "phonetic": "and SIS-tum kun-fig-yur-AY-shunz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-system-configurations"
+    },
+    {
+      "english": "containerization",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "kun-tay-nur-y-ZAY-shun",
+      "ipa": "kənˌteɪ.nər.aɪˈzeɪ.ʃən",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "kənˌteɪ.nər.aɪˈzeɪ.ʃən",
+          "phonetic": "kun-tay-nur-y-ZAY-shun"
+        },
+        "american": {
+          "ipa": "kənˌteɪ.nɚ.əˈzeɪ.ʃən",
+          "phonetic": "kun-tay-nur-uh-ZAY-shun"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "containerization"
+    },
+    {
+      "english": "ensures that applications",
+      "chinese": "",
+      "difficulty": "hard",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "in-SHOORZ that ap-li-KAY-shunz",
+      "ipa": "ɪnˈʃʊəz ðæt ˌæp.lɪˈkeɪ.ʃənz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɪnˈʃʊəz ðæt ˌæp.lɪˈkeɪ.ʃənz",
+          "phonetic": "in-SHOORZ that ap-li-KAY-shunz"
+        },
+        "american": {
+          "ipa": "ɪnˈʃʊrz ðæt ˌæp.ləˈkeɪ.ʃənz",
+          "phonetic": "in-SHOORZ that ap-luh-KAY-shunz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "ensures-that-applications"
+    },
+    {
+      "english": "work consistently",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "WURK kun-SIS-tunt-lee",
+      "ipa": "wɜːk kənˈsɪs.tənt.li",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "wɜːk kənˈsɪs.tənt.li",
+          "phonetic": "WURK kun-SIS-tunt-lee"
+        },
+        "american": {
+          "ipa": "wɝk kənˈsɪs.tənt.li",
+          "phonetic": "WURK kun-SIS-tunt-lee"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "work-consistently"
+    },
+    {
+      "english": "across development, testing",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "uh-KROSS di-VEL-up-munt, TEST-ing",
+      "ipa": "əˈkrɒs dɪˈvel.əp.mənt, ˈtest.ɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "əˈkrɒs dɪˈvel.əp.mənt, ˈtest.ɪŋ",
+          "phonetic": "uh-KROSS di-VEL-up-munt, TEST-ing"
+        },
+        "american": {
+          "ipa": "əˈkrɔs dɪˈvel.əp.mənt, ˈtest.ɪŋ",
+          "phonetic": "uh-KRAWS di-VEL-up-munt, TEST-ing"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "across-development-testing"
+    },
+    {
+      "english": "and production environments",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and pruh-DUK-shun in-VY-run-munts",
+      "ipa": "ænd prəˈdʌk.ʃən ɪnˈvaɪ.rən.mənts",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd prəˈdʌk.ʃən ɪnˈvaɪ.rən.mənts",
+          "phonetic": "and pruh-DUK-shun in-VY-run-munts"
+        },
+        "american": {
+          "ipa": "ænd prəˈdʌk.ʃən ɪnˈvaɪ.rən.mənts",
+          "phonetic": "and pruh-DUK-shun in-VY-run-munts"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-production-environments"
+    },
+    {
+      "english": "dependency management",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "di-PEN-dun-see MAN-ij-munt",
+      "ipa": "dɪˈpen.dən.si ˈmæn.ɪdʒ.mənt",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "dɪˈpen.dən.si ˈmæn.ɪdʒ.mənt",
+          "phonetic": "di-PEN-dun-see MAN-ij-munt"
+        },
+        "american": {
+          "ipa": "dɪˈpen.dən.si ˈmæn.ɪdʒ.mənt",
+          "phonetic": "di-PEN-dun-see MAN-ij-munt"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "dependency-management"
+    },
+    {
+      "english": "becomes particularly",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "bi-KUMZ puh-TIK-yuh-luh-lee",
+      "ipa": "bɪˈkʌmz pəˈtɪk.jʊ.lə.li",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "bɪˈkʌmz pəˈtɪk.jʊ.lə.li",
+          "phonetic": "bi-KUMZ puh-TIK-yuh-luh-lee"
+        },
+        "american": {
+          "ipa": "bɪˈkʌmz pɚˈtɪk.jə.lɚ.li",
+          "phonetic": "bi-KUMZ pur-TIK-yuh-lur-lee"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "becomes-particularly"
+    },
+    {
+      "english": "challenging",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "CHAL-in-jing",
+      "ipa": "ˈtʃæl.ɪn.dʒɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈtʃæl.ɪn.dʒɪŋ",
+          "phonetic": "CHAL-in-jing"
+        },
+        "american": {
+          "ipa": "ˈtʃæl.ən.dʒɪŋ",
+          "phonetic": "CHAL-un-jing"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "challenging"
+    },
+    {
+      "english": "that often require",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "that OF-un ri-KWY-ur",
+      "ipa": "ðæt ˈɒf.ən rɪˈkwaɪə",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ðæt ˈɒf.ən rɪˈkwaɪə",
+          "phonetic": "that OF-un ri-KWY-ur"
+        },
+        "american": {
+          "ipa": "ðæt ˈɔf.ən rɪˈkwaɪɚ",
+          "phonetic": "that AWF-un ri-KWY-ur"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "that-often-require"
+    },
+    {
+      "english": "specific version of",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "spuh-SIF-ik VUR-shun ov",
+      "ipa": "spəˈsɪf.ɪk ˈvɜː.ʃən ɒv",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "spəˈsɪf.ɪk ˈvɜː.ʃən ɒv",
+          "phonetic": "spuh-SIF-ik VUR-shun ov"
+        },
+        "american": {
+          "ipa": "spəˈsɪf.ɪk ˈvɝ.ʒən ʌv",
+          "phonetic": "spuh-SIF-ik VUR-zhun uhv"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "specific-version-of"
+    },
+    {
+      "english": "machine learning libraries",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "muh-SHEEN LUR-ning LY-brur-eez",
+      "ipa": "məˈʃiːn ˈlɜː.nɪŋ ˈlaɪ.brər.iz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "məˈʃiːn ˈlɜː.nɪŋ ˈlaɪ.brər.iz",
+          "phonetic": "muh-SHEEN LUR-ning LY-brur-eez"
+        },
+        "american": {
+          "ipa": "məˈʃin ˈlɝ.nɪŋ ˈlaɪ.brer.iz",
+          "phonetic": "muh-SHEEN LUR-ning LY-brer-eez"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "machine-learning-libraries"
+    },
+    {
+      "english": "model frameworks",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "MOD-ul FRAYM-wurks",
+      "ipa": "ˈmɒd.əl ˈfreɪm.wɜːks",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈmɒd.əl ˈfreɪm.wɜːks",
+          "phonetic": "MOD-ul FRAYM-wurks"
+        },
+        "american": {
+          "ipa": "ˈmɑ.dəl ˈfreɪm.wɝks",
+          "phonetic": "MAH-duhl FRAYM-wurks"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "model-frameworks"
+    },
+    {
+      "english": "and system tools",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and SIS-tum TOOLZ",
+      "ipa": "ænd ˈsɪs.təm tuːlz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd ˈsɪs.təm tuːlz",
+          "phonetic": "and SIS-tum TOOLZ"
+        },
+        "american": {
+          "ipa": "ænd ˈsɪs.təm tulz",
+          "phonetic": "and SIS-tum TOOLZ"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-system-tools"
+    },
+    {
+      "english": "docker helps",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "DOK-ur HELPS",
+      "ipa": "ˈdɒk.ər helps",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈdɒk.ər helps",
+          "phonetic": "DOK-ur HELPS"
+        },
+        "american": {
+          "ipa": "ˈdɑk.ɚ helps",
+          "phonetic": "DAHK-ur HELPS"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "docker-helps"
+    },
+    {
+      "english": "isolate",
+      "chinese": "",
+      "difficulty": "easy",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "EYE-suh-layt",
+      "ipa": "ˈaɪ.sə.leɪt",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈaɪ.sə.leɪt",
+          "phonetic": "EYE-suh-layt"
+        },
+        "american": {
+          "ipa": "ˈaɪ.sə.leɪt",
+          "phonetic": "EYE-suh-layt"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "isolate"
+    },
+    {
+      "english": "these dependencies",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "THEEZ di-PEN-dun-seez",
+      "ipa": "ðiːz dɪˈpen.dən.siz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ðiːz dɪˈpen.dən.siz",
+          "phonetic": "THEEZ di-PEN-dun-seez"
+        },
+        "american": {
+          "ipa": "ðiz dɪˈpen.dən.siz",
+          "phonetic": "THEEZ di-PEN-dun-seez"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "these-dependencies"
+    },
+    {
+      "english": "and prevent conflicts",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and pri-VENT KON-flikts",
+      "ipa": "ænd prɪˈvent ˈkɒn.flɪkts",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd prɪˈvent ˈkɒn.flɪkts",
+          "phonetic": "and pri-VENT KON-flikts"
+        },
+        "american": {
+          "ipa": "ænd prɪˈvent ˈkɑn.flɪkts",
+          "phonetic": "and pri-VENT KAHN-flikts"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-prevent-conflicts"
+    },
+    {
+      "english": "resource allocation",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "ri-ZAWRS al-uh-KAY-shun",
+      "ipa": "rɪˈzɔːs ˌæl.əˈkeɪ.ʃən",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "rɪˈzɔːs ˌæl.əˈkeɪ.ʃən",
+          "phonetic": "ri-ZAWRS al-uh-KAY-shun"
+        },
+        "american": {
+          "ipa": "rɪˈsɔrs ˌæl.əˈkeɪ.ʃən",
+          "phonetic": "ri-SAWRS al-uh-KAY-shun"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "resource-allocation"
+    },
+    {
+      "english": "through docker",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "THROO DOK-ur",
+      "ipa": "θruː ˈdɒk.ər",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "θruː ˈdɒk.ər",
+          "phonetic": "THROO DOK-ur"
+        },
+        "american": {
+          "ipa": "θru ˈdɑk.ɚ",
+          "phonetic": "THROO DAHK-ur"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "through-docker"
+    },
+    {
+      "english": "enables efficient management of",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "in-AY-bulz i-FISH-unt MAN-ij-munt ov",
+      "ipa": "ɪnˈeɪ.bəlz ɪˈfɪʃ.ənt ˈmæn.ɪdʒ.mənt ɒv",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɪnˈeɪ.bəlz ɪˈfɪʃ.ənt ˈmæn.ɪdʒ.mənt ɒv",
+          "phonetic": "in-AY-bulz i-FISH-unt MAN-ij-munt ov"
+        },
+        "american": {
+          "ipa": "ɪnˈeɪ.bəlz ɪˈfɪʃ.ənt ˈmæn.ɪdʒ.mənt ʌv",
+          "phonetic": "in-AY-bulz i-FISH-unt MAN-ij-munt uhv"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "enables-efficient-management-of"
+    },
+    {
+      "english": "computational resources",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "kom-pyoo-TAY-shun-ul ri-ZAW-siz",
+      "ipa": "ˌkɒm.pjʊˈteɪ.ʃən.əl rɪˈzɔː.sɪz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˌkɒm.pjʊˈteɪ.ʃən.əl rɪˈzɔː.sɪz",
+          "phonetic": "kom-pyoo-TAY-shun-ul ri-ZAW-siz"
+        },
+        "american": {
+          "ipa": "ˌkɑm.pjəˈteɪ.ʃən.əl rɪˈsɔr.sɪz",
+          "phonetic": "kahm-pyoo-TAY-shun-ul ri-SAWR-siz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "computational-resources"
+    },
+    {
+      "english": "particularly important",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "puh-TIK-yuh-luh-lee im-PAWR-tunt",
+      "ipa": "pəˈtɪk.jʊ.lə.li ɪmˈpɔː.tənt",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "pəˈtɪk.jʊ.lə.li ɪmˈpɔː.tənt",
+          "phonetic": "puh-TIK-yuh-luh-lee im-PAWR-tunt"
+        },
+        "american": {
+          "ipa": "pɚˈtɪk.jə.lɚ.li ɪmˈpɔr.tənt",
+          "phonetic": "pur-TIK-yuh-lur-lee im-PAWR-tunt"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "particularly-important"
+    },
+    {
+      "english": "that require GPU access",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "that ri-KWY-ur JEE PEE YOO AK-sess",
+      "ipa": "ðæt rɪˈkwaɪə dʒiː piː ˈjuː ˈæk.ses",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ðæt rɪˈkwaɪə dʒiː piː ˈjuː ˈæk.ses",
+          "phonetic": "that ri-KWY-ur JEE PEE YOO AK-sess"
+        },
+        "american": {
+          "ipa": "ðæt rɪˈkwaɪɚ dʒi pi ˈju ˈæk.ses",
+          "phonetic": "that ri-KWY-ur JEE PEE YOO AK-sess"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "that-require-gpu-access"
+    },
+    {
+      "english": "or substantial",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "awr sub-STAN-shul",
+      "ipa": "ɔː səbˈstæn.ʃəl",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɔː səbˈstæn.ʃəl",
+          "phonetic": "awr sub-STAN-shul"
+        },
+        "american": {
+          "ipa": "ɔr səbˈstæn.ʃəl",
+          "phonetic": "awr sub-STAN-shul"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "or-substantial"
+    },
+    {
+      "english": "memory allocation",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "MEM-uh-ree al-uh-KAY-shun",
+      "ipa": "ˈmem.ər.i ˌæl.əˈkeɪ.ʃən",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈmem.ər.i ˌæl.əˈkeɪ.ʃən",
+          "phonetic": "MEM-uh-ree al-uh-KAY-shun"
+        },
+        "american": {
+          "ipa": "ˈmem.ər.i ˌæl.əˈkeɪ.ʃən",
+          "phonetic": "MEM-uh-ree al-uh-KAY-shun"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "memory-allocation"
+    },
+    {
+      "english": "container orchestration",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "kun-TAY-nur awr-ki-STRAY-shun",
+      "ipa": "kənˈteɪ.nər ˌɔː.kɪˈstreɪ.ʃən",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "kənˈteɪ.nər ˌɔː.kɪˈstreɪ.ʃən",
+          "phonetic": "kun-TAY-nur awr-ki-STRAY-shun"
+        },
+        "american": {
+          "ipa": "kənˈteɪ.nɚ ˌɔr.kəˈstreɪ.ʃən",
+          "phonetic": "kun-TAY-nur awr-kuh-STRAY-shun"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "container-orchestration"
+    },
+    {
+      "english": "using tools like",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "YOO-zing TOOLZ lyk",
+      "ipa": "ˈjuː.zɪŋ tuːlz laɪk",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈjuː.zɪŋ tuːlz laɪk",
+          "phonetic": "YOO-zing TOOLZ lyk"
+        },
+        "american": {
+          "ipa": "ˈju.zɪŋ tulz laɪk",
+          "phonetic": "YOO-zing TOOLZ lyk"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "using-tools-like"
+    },
+    {
+      "english": "Docker Compose",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "DOK-ur kum-POHZ",
+      "ipa": "ˈdɒk.ər kəmˈpəʊz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈdɒk.ər kəmˈpəʊz",
+          "phonetic": "DOK-ur kum-POHZ"
+        },
+        "american": {
+          "ipa": "ˈdɑk.ɚ kəmˈpoʊz",
+          "phonetic": "DAHK-ur kum-POHZ"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "docker-compose"
+    },
+    {
+      "english": "or Kubernetes",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "awr KOO-buh-nay-teez",
+      "ipa": "ɔː ˈkuː.bəˌneɪ.tiːz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɔː ˈkuː.bəˌneɪ.tiːz",
+          "phonetic": "awr KOO-buh-nay-teez"
+        },
+        "american": {
+          "ipa": "ɔr ˈku.bɚˌneɪ.tiz",
+          "phonetic": "awr KOO-bur-nay-teez"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "or-kubernetes"
+    },
+    {
+      "english": "enables complex AI applications",
+      "chinese": "",
+      "difficulty": "hard",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "in-AY-bulz KOM-pleks AY EYE ap-li-KAY-shunz",
+      "ipa": "ɪnˈeɪ.bəlz ˈkɒm.pleks eɪ aɪ ˌæp.lɪˈkeɪ.ʃənz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɪnˈeɪ.bəlz ˈkɒm.pleks eɪ aɪ ˌæp.lɪˈkeɪ.ʃənz",
+          "phonetic": "in-AY-bulz KOM-pleks AY EYE ap-li-KAY-shunz"
+        },
+        "american": {
+          "ipa": "ɪnˈeɪ.bəlz ˈkɑm.pleks eɪ aɪ ˌæp.ləˈkeɪ.ʃənz",
+          "phonetic": "in-AY-bulz KAHM-pleks AY EYE ap-luh-KAY-shunz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "enables-complex-ai-applications"
+    },
+    {
+      "english": "with multiple services",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "with MUL-ti-pul SUR-vi-siz",
+      "ipa": "wɪð ˈmʌl.tɪ.pəl ˈsɜː.vɪ.sɪz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "wɪð ˈmʌl.tɪ.pəl ˈsɜː.vɪ.sɪz",
+          "phonetic": "with MUL-ti-pul SUR-vi-siz"
+        },
+        "american": {
+          "ipa": "wɪð ˈmʌl.tə.pəl ˈsɝ.və.səz",
+          "phonetic": "with MUL-tuh-pul SUR-vuh-suhz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "with-multiple-services"
+    },
+    {
+      "english": "to deploy and scale",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "tuh di-PLOY and SKAYL",
+      "ipa": "tə dɪˈplɔɪ ænd skeɪl",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "tə dɪˈplɔɪ ænd skeɪl",
+          "phonetic": "tuh di-PLOY and SKAYL"
+        },
+        "american": {
+          "ipa": "tu dɪˈplɔɪ ænd skeɪl",
+          "phonetic": "too di-PLOY and SKAYL"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "to-deploy-and-scale"
+    },
+    {
+      "english": "effectively",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "i-FEK-tiv-lee",
+      "ipa": "ɪˈfek.tɪv.li",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɪˈfek.tɪv.li",
+          "phonetic": "i-FEK-tiv-lee"
+        },
+        "american": {
+          "ipa": "əˈfek.tɪv.li",
+          "phonetic": "uh-FEK-tiv-lee"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "effectively"
+    },
+    {
+      "english": "environment configuration",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "in-VY-run-munt kun-fig-yur-AY-shun",
+      "ipa": "ɪnˈvaɪ.rən.mənt kənˌfɪg.jʊˈreɪ.ʃən",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɪnˈvaɪ.rən.mənt kənˌfɪg.jʊˈreɪ.ʃən",
+          "phonetic": "in-VY-run-munt kun-fig-yur-AY-shun"
+        },
+        "american": {
+          "ipa": "ɪnˈvaɪ.rən.mənt kənˌfɪg.jəˈreɪ.ʃən",
+          "phonetic": "in-VY-run-munt kun-fig-yur-AY-shun"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "environment-configuration"
+    },
+    {
+      "english": "through environment variables",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "THROO in-VY-run-munt VAIR-ee-uh-bulz",
+      "ipa": "θruː ɪnˈvaɪ.rən.mənt ˈveə.ri.ə.bəlz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "θruː ɪnˈvaɪ.rən.mənt ˈveə.ri.ə.bəlz",
+          "phonetic": "THROO in-VY-run-munt VAIR-ee-uh-bulz"
+        },
+        "american": {
+          "ipa": "θru ɪnˈvaɪ.rən.mənt ˈver.i.ə.bəlz",
+          "phonetic": "THROO in-VY-run-munt VAIR-ee-uh-bulz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "through-environment-variables"
+    },
+    {
+      "english": "and configuration files",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and kun-fig-yur-AY-shun FYLZ",
+      "ipa": "ænd kənˌfɪg.jʊˈreɪ.ʃən faɪlz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd kənˌfɪg.jʊˈreɪ.ʃən faɪlz",
+          "phonetic": "and kun-fig-yur-AY-shun FYLZ"
+        },
+        "american": {
+          "ipa": "ænd kənˌfɪg.jəˈreɪ.ʃən faɪlz",
+          "phonetic": "and kun-fig-yur-AY-shun FYLZ"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-configuration-files"
+    },
+    {
+      "english": "allows AI applications",
+      "chinese": "",
+      "difficulty": "hard",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "uh-LOWZ AY EYE ap-li-KAY-shunz",
+      "ipa": "əˈlaʊz eɪ aɪ ˌæp.lɪˈkeɪ.ʃənz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "əˈlaʊz eɪ aɪ ˌæp.lɪˈkeɪ.ʃənz",
+          "phonetic": "uh-LOWZ AY EYE ap-li-KAY-shunz"
+        },
+        "american": {
+          "ipa": "əˈlaʊz eɪ aɪ ˌæp.ləˈkeɪ.ʃənz",
+          "phonetic": "uh-LOWZ AY EYE ap-luh-KAY-shunz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "allows-ai-applications"
+    },
+    {
+      "english": "to adapt to",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "tuh uh-DAPT too",
+      "ipa": "tə əˈdæpt tuː",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "tə əˈdæpt tuː",
+          "phonetic": "tuh uh-DAPT too"
+        },
+        "american": {
+          "ipa": "tu əˈdæpt tu",
+          "phonetic": "too uh-DAPT too"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "to-adapt-to"
+    },
+    {
+      "english": "different deployment contexts",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "DIF-runt di-PLOY-munt KON-teksts",
+      "ipa": "ˈdɪf.rənt dɪˈplɔɪ.mənt ˈkɒn.teksts",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈdɪf.rənt dɪˈplɔɪ.mənt ˈkɒn.teksts",
+          "phonetic": "DIF-runt di-PLOY-munt KON-teksts"
+        },
+        "american": {
+          "ipa": "ˈdɪf.rənt dɪˈplɔɪ.mənt ˈkɑn.teksts",
+          "phonetic": "DIF-runt di-PLOY-munt KAHN-teksts"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "different-deployment-contexts"
+    },
+    {
+      "english": "while maintaining",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "wyl mayn-TAY-ning",
+      "ipa": "waɪl meɪnˈteɪ.nɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "waɪl meɪnˈteɪ.nɪŋ",
+          "phonetic": "wyl mayn-TAY-ning"
+        },
+        "american": {
+          "ipa": "waɪl meɪnˈteɪ.nɪŋ",
+          "phonetic": "wyl mayn-TAY-ning"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "while-maintaining"
+    },
+    {
+      "english": "consistent behavior",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "kun-SIS-tunt bi-HAYV-yuh",
+      "ipa": "kənˈsɪs.tənt bɪˈheɪ.vjə",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "kənˈsɪs.tənt bɪˈheɪ.vjə",
+          "phonetic": "kun-SIS-tunt bi-HAYV-yuh"
+        },
+        "american": {
+          "ipa": "kənˈsɪs.tənt bɪˈheɪ.vjɚ",
+          "phonetic": "kun-SIS-tunt bi-HAYV-yur"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "consistent-behavior"
+    },
+    {
+      "english": "health monitoring",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "HELTH MON-i-tur-ing",
+      "ipa": "helθ ˈmɒn.ɪ.tər.ɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "helθ ˈmɒn.ɪ.tər.ɪŋ",
+          "phonetic": "HELTH MON-i-tur-ing"
+        },
+        "american": {
+          "ipa": "helθ ˈmɑn.ə.tɚ.ɪŋ",
+          "phonetic": "HELTH MAHN-uh-tur-ing"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "health-monitoring"
+    },
+    {
+      "english": "for containerized AI applications",
+      "chinese": "",
+      "difficulty": "hard",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "fawr kun-TAY-nur-yzd AY EYE ap-li-KAY-shunz",
+      "ipa": "fɔː kənˈteɪ.nər.aɪzd eɪ aɪ ˌæp.lɪˈkeɪ.ʃənz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "fɔː kənˈteɪ.nər.aɪzd eɪ aɪ ˌæp.lɪˈkeɪ.ʃənz",
+          "phonetic": "fawr kun-TAY-nur-yzd AY EYE ap-li-KAY-shunz"
+        },
+        "american": {
+          "ipa": "fɔr kənˈteɪ.nɚ.aɪzd eɪ aɪ ˌæp.ləˈkeɪ.ʃənz",
+          "phonetic": "fawr kun-TAY-nur-yzd AY EYE ap-luh-KAY-shunz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "for-containerized-ai-applications"
+    },
+    {
+      "english": "requires understanding",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "ri-KWYURZ un-dur-STAN-ding",
+      "ipa": "rɪˈkwaɪəz ˌʌn.dəˈstæn.dɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "rɪˈkwaɪəz ˌʌn.dəˈstæn.dɪŋ",
+          "phonetic": "ri-KWYURZ un-dur-STAN-ding"
+        },
+        "american": {
+          "ipa": "rɪˈkwaɪɚz ˌʌn.dɚˈstæn.dɪŋ",
+          "phonetic": "ri-KWYURZ un-dur-STAN-ding"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "requires-understanding"
+    },
+    {
+      "english": "AI-specific metrics",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "AY EYE spuh-SIF-ik MET-riks",
+      "ipa": "eɪ aɪ spəˈsɪf.ɪk ˈmet.rɪks",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "eɪ aɪ spəˈsɪf.ɪk ˈmet.rɪks",
+          "phonetic": "AY EYE spuh-SIF-ik MET-riks"
+        },
+        "american": {
+          "ipa": "eɪ aɪ spəˈsɪf.ɪk ˈmet.rɪks",
+          "phonetic": "AY EYE spuh-SIF-ik MET-riks"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "aispecific-metrics"
+    },
+    {
+      "english": "model performance",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "MOD-ul pur-FAWR-muns",
+      "ipa": "ˈmɒd.əl pəˈfɔː.məns",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈmɒd.əl pəˈfɔː.məns",
+          "phonetic": "MOD-ul pur-FAWR-muns"
+        },
+        "american": {
+          "ipa": "ˈmɑ.dəl pɚˈfɔr.məns",
+          "phonetic": "MAH-duhl pur-FAWR-muns"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "model-performance"
+    },
+    {
+      "english": "response quality",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "ri-SPONS KWOL-uh-tee",
+      "ipa": "rɪˈspɒns ˈkwɒl.ə.ti",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "rɪˈspɒns ˈkwɒl.ə.ti",
+          "phonetic": "ri-SPONS KWOL-uh-tee"
+        },
+        "american": {
+          "ipa": "rɪˈspɑns ˈkwɑl.ə.ti",
+          "phonetic": "ri-SPAHNS KWAHL-uh-tee"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "response-quality"
+    },
+    {
+      "english": "research environment",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "ri-SURCH in-VY-run-munt",
+      "ipa": "rɪˈsɜːtʃ ɪnˈvaɪ.rən.mənt",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "rɪˈsɜːtʃ ɪnˈvaɪ.rən.mənt",
+          "phonetic": "ri-SURCH in-VY-run-munt"
+        },
+        "american": {
+          "ipa": "rɪˈsɝtʃ ɪnˈvaɪ.rən.mənt",
+          "phonetic": "ri-SURCH in-VY-run-munt"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "research-environment"
+    },
+    {
+      "english": "technologies",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "tek-NOL-uh-jeez",
+      "ipa": "tekˈnɒl.ə.dʒiz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "tekˈnɒl.ə.dʒiz",
+          "phonetic": "tek-NOL-uh-jeez"
+        },
+        "american": {
+          "ipa": "tekˈnɑl.ə.dʒiz",
+          "phonetic": "tek-NAHL-uh-jeez"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "technologies"
+    },
+    {
+      "english": "high-performance computing",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "HY pur-FAWR-muns kum-PYOO-ting",
+      "ipa": "haɪ pəˈfɔː.məns kəmˈpjuː.tɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "haɪ pəˈfɔː.məns kəmˈpjuː.tɪŋ",
+          "phonetic": "HY pur-FAWR-muns kum-PYOO-ting"
+        },
+        "american": {
+          "ipa": "haɪ pɚˈfɔr.məns kəmˈpju.tɪŋ",
+          "phonetic": "HY pur-FAWR-muns kum-PYOO-ting"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "highperformance-computing"
+    },
+    {
+      "english": "often available",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "OF-un uh-VAY-luh-bul",
+      "ipa": "ˈɒf.ən əˈveɪ.lə.bəl",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈɒf.ən əˈveɪ.lə.bəl",
+          "phonetic": "OF-un uh-VAY-luh-bul"
+        },
+        "american": {
+          "ipa": "ˈɔf.ən əˈveɪ.lə.bəl",
+          "phonetic": "AWF-un uh-VAY-luh-bul"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "often-available"
+    },
+    {
+      "english": "in research institutions",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "in ri-SURCH in-sti-TYOO-shunz",
+      "ipa": "ɪn rɪˈsɜːtʃ ˌɪn.stɪˈtjuː.ʃənz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɪn rɪˈsɜːtʃ ˌɪn.stɪˈtjuː.ʃənz",
+          "phonetic": "in ri-SURCH in-sti-TYOO-shunz"
+        },
+        "american": {
+          "ipa": "ɪn rɪˈsɝtʃ ˌɪn.stəˈtu.ʃənz",
+          "phonetic": "in ri-SURCH in-stuh-TOO-shunz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "in-research-institutions"
+    },
+    {
+      "english": "provide computational resources",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "pruh-VYD kom-pyoo-TAY-shun-ul ri-ZAW-siz",
+      "ipa": "prəˈvaɪd ˌkɒm.pjʊˈteɪ.ʃən.əl rɪˈzɔː.sɪz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "prəˈvaɪd ˌkɒm.pjʊˈteɪ.ʃən.əl rɪˈzɔː.sɪz",
+          "phonetic": "pruh-VYD kom-pyoo-TAY-shun-ul ri-ZAW-siz"
+        },
+        "american": {
+          "ipa": "prəˈvaɪd ˌkɑm.pjəˈteɪ.ʃən.əl rɪˈsɔr.sɪz",
+          "phonetic": "pruh-VYD kahm-pyoo-TAY-shun-ul ri-SAWR-siz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "provide-computational-resources"
+    },
+    {
+      "english": "for large-scale AI training",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "fawr LAHRJ SKAYL AY EYE TRAY-ning",
+      "ipa": "fɔː lɑːdʒ skeɪl eɪ aɪ ˈtreɪ.nɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "fɔː lɑːdʒ skeɪl eɪ aɪ ˈtreɪ.nɪŋ",
+          "phonetic": "fawr LAHRJ SKAYL AY EYE TRAY-ning"
+        },
+        "american": {
+          "ipa": "fɔr lɑrdʒ skeɪl eɪ aɪ ˈtreɪ.nɪŋ",
+          "phonetic": "fawr LAHRJ SKAYL AY EYE TRAY-ning"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "for-largescale-ai-training"
+    },
+    {
+      "english": "and inference",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and IN-fur-uns",
+      "ipa": "ænd ˈɪn.fər.əns",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd ˈɪn.fər.əns",
+          "phonetic": "and IN-fur-uns"
+        },
+        "american": {
+          "ipa": "ænd ˈɪn.fɚ.əns",
+          "phonetic": "and IN-fur-uns"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-inference"
+    },
+    {
+      "english": "understanding how to leverage",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "un-dur-STAN-ding HOW tuh LEV-ur-ij",
+      "ipa": "ˌʌn.dəˈstæn.dɪŋ haʊ tə ˈlev.ər.ɪdʒ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˌʌn.dəˈstæn.dɪŋ haʊ tə ˈlev.ər.ɪdʒ",
+          "phonetic": "un-dur-STAN-ding HOW tuh LEV-ur-ij"
+        },
+        "american": {
+          "ipa": "ˌʌn.dɚˈstæn.dɪŋ haʊ tu ˈlev.ɚ.ɪdʒ",
+          "phonetic": "un-dur-STAN-ding HOW too LEV-ur-ij"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "understanding-how-to-leverage"
+    },
+    {
+      "english": "these resources effectively",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "THEEZ ri-ZAW-siz i-FEK-tiv-lee",
+      "ipa": "ðiːz rɪˈzɔː.sɪz ɪˈfek.tɪv.li",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ðiːz rɪˈzɔː.sɪz ɪˈfek.tɪv.li",
+          "phonetic": "THEEZ ri-ZAW-siz i-FEK-tiv-lee"
+        },
+        "american": {
+          "ipa": "ðiz rɪˈsɔr.sɪz əˈfek.tɪv.li",
+          "phonetic": "THEEZ ri-SAWR-siz uh-FEK-tiv-lee"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "these-resources-effectively"
+    },
+    {
+      "english": "can dramatically",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "kan druh-MAT-ik-lee",
+      "ipa": "kæn drəˈmæt.ɪk.li",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "kæn drəˈmæt.ɪk.li",
+          "phonetic": "kan druh-MAT-ik-lee"
+        },
+        "american": {
+          "ipa": "kæn drəˈmæt.ɪk.li",
+          "phonetic": "kan druh-MAT-ik-lee"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "can-dramatically"
+    },
+    {
+      "english": "expand your capabilities",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "ik-SPAND yawr kay-puh-BIL-uh-teez",
+      "ipa": "ɪkˈspænd jɔː ˌkeɪ.pəˈbɪl.ə.tiz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɪkˈspænd jɔː ˌkeɪ.pəˈbɪl.ə.tiz",
+          "phonetic": "ik-SPAND yawr kay-puh-BIL-uh-teez"
+        },
+        "american": {
+          "ipa": "ɪkˈspænd jʊr ˌkeɪ.pəˈbɪl.ə.tiz",
+          "phonetic": "ik-SPAND yoor kay-puh-BIL-uh-teez"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "expand-your-capabilities"
+    },
+    {
+      "english": "shared data storage",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "SHAIRD DAY-tuh STAWR-ij",
+      "ipa": "ʃeəd ˈdeɪ.tə ˈstɔː.rɪdʒ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ʃeəd ˈdeɪ.tə ˈstɔː.rɪdʒ",
+          "phonetic": "SHAIRD DAY-tuh STAWR-ij"
+        },
+        "american": {
+          "ipa": "ʃerd ˈdeɪ.tə ˈstɔr.ɪdʒ",
+          "phonetic": "SHAIRD DAY-tuh STAWR-ij"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "shared-data-storage"
+    },
+    {
+      "english": "access permissions",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "AK-sess pur-MISH-unz",
+      "ipa": "ˈæk.ses pəˈmɪʃ.ənz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈæk.ses pəˈmɪʃ.ənz",
+          "phonetic": "AK-sess pur-MISH-unz"
+        },
+        "american": {
+          "ipa": "ˈæk.ses pɚˈmɪʃ.ənz",
+          "phonetic": "AK-sess pur-MISH-unz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "access-permissions"
+    },
+    {
+      "english": "backup strategies",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "BAK-up STRAT-uh-jeez",
+      "ipa": "ˈbæk.ʌp ˈstræt.ə.dʒiz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈbæk.ʌp ˈstræt.ə.dʒiz",
+          "phonetic": "BAK-up STRAT-uh-jeez"
+        },
+        "american": {
+          "ipa": "ˈbæk.ʌp ˈstræt.ə.dʒiz",
+          "phonetic": "BAK-up STRAT-uh-jeez"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "backup-strategies"
+    },
+    {
+      "english": "collaboration protocols",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "kuh-lab-uh-RAY-shun PROH-tuh-kolz",
+      "ipa": "kəˌlæb.əˈreɪ.ʃən ˈprəʊ.tə.kɒlz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "kəˌlæb.əˈreɪ.ʃən ˈprəʊ.tə.kɒlz",
+          "phonetic": "kuh-lab-uh-RAY-shun PROH-tuh-kolz"
+        },
+        "american": {
+          "ipa": "kəˌlæb.əˈreɪ.ʃən ˈproʊ.tə.kɑlz",
+          "phonetic": "kuh-lab-uh-RAY-shun PROH-tuh-kahlz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "collaboration-protocols"
+    },
+    {
+      "english": "that enable multiple researchers",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "that in-AY-bul MUL-ti-pul ri-SUR-chuz",
+      "ipa": "ðæt ɪnˈeɪ.bəl ˈmʌl.tɪ.pəl rɪˈsɜː.tʃəz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ðæt ɪnˈeɪ.bəl ˈmʌl.tɪ.pəl rɪˈsɜː.tʃəz",
+          "phonetic": "that in-AY-bul MUL-ti-pul ri-SUR-chuz"
+        },
+        "american": {
+          "ipa": "ðæt ɪnˈeɪ.bəl ˈmʌl.tə.pəl rɪˈsɝ.tʃɚz",
+          "phonetic": "that in-AY-bul MUL-tuh-pul ri-SUR-churz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "that-enable-multiple-researchers"
+    },
+    {
+      "english": "to work with common datasts",
+      "chinese": "",
+      "difficulty": "hard",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "tuh WURK with KOM-un DAY-tuh-sets",
+      "ipa": "tə wɜːk wɪð ˈkɒm.ən ˈdeɪ.tə.sets",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "tə wɜːk wɪð ˈkɒm.ən ˈdeɪ.tə.sets",
+          "phonetic": "tuh WURK with KOM-un DAY-tuh-sets"
+        },
+        "american": {
+          "ipa": "tu wɝk wɪð ˈkɑm.ən ˈdeɪ.tə.sets",
+          "phonetic": "too WURK with KAHM-un DAY-tuh-sets"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "to-work-with-common-datasts"
+    },
+    {
+      "english": "safely",
+      "chinese": "",
+      "difficulty": "easy",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "SAYF-lee",
+      "ipa": "ˈseɪf.li",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈseɪf.li",
+          "phonetic": "SAYF-lee"
+        },
+        "american": {
+          "ipa": "ˈseɪf.li",
+          "phonetic": "SAYF-lee"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "safely"
+    },
+    {
+      "english": "data provenance",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "DAY-tuh PROV-uh-nuns",
+      "ipa": "ˈdeɪ.tə ˈprɒv.ə.nəns",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈdeɪ.tə ˈprɒv.ə.nəns",
+          "phonetic": "DAY-tuh PROV-uh-nuns"
+        },
+        "american": {
+          "ipa": "ˈdeɪ.tə ˈprɑv.ə.nəns",
+          "phonetic": "DAY-tuh PRAHV-uh-nuns"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "data-provenance"
+    },
+    {
+      "english": "tracking",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "TRAK-ing",
+      "ipa": "ˈtræk.ɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈtræk.ɪŋ",
+          "phonetic": "TRAK-ing"
+        },
+        "american": {
+          "ipa": "ˈtræk.ɪŋ",
+          "phonetic": "TRAK-ing"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "tracking"
+    },
+    {
+      "english": "becomes crucial",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "bi-KUMZ KROO-shul",
+      "ipa": "bɪˈkʌmz ˈkruː.ʃəl",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "bɪˈkʌmz ˈkruː.ʃəl",
+          "phonetic": "bi-KUMZ KROO-shul"
+        },
+        "american": {
+          "ipa": "bɪˈkʌmz ˈkru.ʃəl",
+          "phonetic": "bi-KUMZ KROO-shul"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "becomes-crucial"
+    },
+    {
+      "english": "where the source",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "WAIR thuh SAWRS",
+      "ipa": "weə ðə sɔːs",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "weə ðə sɔːs",
+          "phonetic": "WAIR thuh SAWRS"
+        },
+        "american": {
+          "ipa": "wer ðə sɔrs",
+          "phonetic": "WAIR thuh SAWRS"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "where-the-source"
+    },
+    {
+      "english": "and transformation history of data",
+      "chinese": "",
+      "difficulty": "hard",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and tranz-fur-MAY-shun HIS-tur-ee uv DAY-tuh",
+      "ipa": "ænd ˌtrænz.fəˈmeɪ.ʃən ˈhɪs.tər.i əv ˈdeɪ.tə",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd ˌtrænz.fəˈmeɪ.ʃən ˈhɪs.tər.i əv ˈdeɪ.tə",
+          "phonetic": "and tranz-fur-MAY-shun HIS-tur-ee uv DAY-tuh"
+        },
+        "american": {
+          "ipa": "ænd ˌtrænz.fɚˈmeɪ.ʃən ˈhɪs.tɚ.i əv ˈdeɪ.tə",
+          "phonetic": "and tranz-fur-MAY-shun HIS-tur-ee uv DAY-tuh"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-transformation-history-of-data"
+    },
+    {
+      "english": "directly impacts",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "duh-REKT-lee IM-pakts",
+      "ipa": "dəˈrekt.li ˈɪm.pækts",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "dəˈrekt.li ˈɪm.pækts",
+          "phonetic": "duh-REKT-lee IM-pakts"
+        },
+        "american": {
+          "ipa": "dəˈrekt.li ˈɪm.pækts",
+          "phonetic": "duh-REKT-lee IM-pakts"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "directly-impacts"
+    },
+    {
+      "english": "scientific validity",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "sy-un-TIF-ik vuh-LID-uh-tee",
+      "ipa": "ˌsaɪ.ənˈtɪf.ɪk vəˈlɪd.ə.ti",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˌsaɪ.ənˈtɪf.ɪk vəˈlɪd.ə.ti",
+          "phonetic": "sy-un-TIF-ik vuh-LID-uh-tee"
+        },
+        "american": {
+          "ipa": "ˌsaɪ.ənˈtɪf.ɪk vəˈlɪd.ə.ti",
+          "phonetic": "sy-un-TIF-ik vuh-LID-uh-tee"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "scientific-validity"
+    },
+    {
+      "english": "maintain clear records",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "mayn-TAYN KLEER REK-awdz",
+      "ipa": "meɪnˈteɪn klɪər ˈrek.ɔːdz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "meɪnˈteɪn klɪər ˈrek.ɔːdz",
+          "phonetic": "mayn-TAYN KLEER REK-awdz"
+        },
+        "american": {
+          "ipa": "meɪnˈteɪn klɪr ˈrek.ɔrdz",
+          "phonetic": "mayn-TAYN KLEER REK-awrdz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "maintain-clear-records"
+    },
+    {
+      "english": "of data origins",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "uv DAY-tuh OR-i-jinz",
+      "ipa": "əv ˈdeɪ.tə ˈɒr.ɪ.dʒɪnz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "əv ˈdeɪ.tə ˈɒr.ɪ.dʒɪnz",
+          "phonetic": "uv DAY-tuh OR-i-jinz"
+        },
+        "american": {
+          "ipa": "əv ˈdeɪ.tə ˈɔr.ə.dʒɪnz",
+          "phonetic": "uv DAY-tuh AWR-uh-jinz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "of-data-origins"
+    },
+    {
+      "english": "and processing steps",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and PROH-ses-ing STEPS",
+      "ipa": "ænd ˈprəʊ.ses.ɪŋ steps",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd ˈprəʊ.ses.ɪŋ steps",
+          "phonetic": "and PROH-ses-ing STEPS"
+        },
+        "american": {
+          "ipa": "ænd ˈproʊ.ses.ɪŋ steps",
+          "phonetic": "and PROH-ses-ing STEPS"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-processing-steps"
+    },
+    {
+      "english": "reproducibility",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "ree-pruh-dyoo-suh-BIL-uh-tee",
+      "ipa": "ˌriː.prə.djuː.səˈbɪl.ə.ti",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˌriː.prə.djuː.səˈbɪl.ə.ti",
+          "phonetic": "ree-pruh-dyoo-suh-BIL-uh-tee"
+        },
+        "american": {
+          "ipa": "ˌri.prə.du.səˈbɪl.ə.ti",
+          "phonetic": "ree-pruh-doo-suh-BIL-uh-tee"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "reproducibility"
+    },
+    {
+      "english": "AI experiments can be",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "AY EYE ik-SPER-i-ments kan BEE",
+      "ipa": "eɪ aɪ ɪkˈsper.ɪ.ments kæn biː",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "eɪ aɪ ɪkˈsper.ɪ.ments kæn biː",
+          "phonetic": "AY EYE ik-SPER-i-ments kan BEE"
+        },
+        "american": {
+          "ipa": "eɪ aɪ ɪkˈsper.ə.ments kæn bi",
+          "phonetic": "AY EYE ik-SPER-uh-ments kan BEE"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "ai-experiments-can-be"
+    },
+    {
+      "english": "repeated with identical results",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "ri-PEE-tid with eye-DEN-ti-kul ri-ZULTS",
+      "ipa": "rɪˈpiː.tɪd wɪð aɪˈden.tɪ.kəl rɪˈzʌlts",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "rɪˈpiː.tɪd wɪð aɪˈden.tɪ.kəl rɪˈzʌlts",
+          "phonetic": "ri-PEE-tid with eye-DEN-ti-kul ri-ZULTS"
+        },
+        "american": {
+          "ipa": "rɪˈpi.tɪd wɪð aɪˈden.tə.kəl rɪˈzʌlts",
+          "phonetic": "ri-PEE-tid with eye-DEN-tuh-kul ri-ZULTS"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "repeated-with-identical-results"
+    },
+    {
+      "english": "careful version control of code",
+      "chinese": "",
+      "difficulty": "hard",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "KAIR-ful VUR-shun kun-TROHL uv KOHD",
+      "ipa": "ˈkeə.fəl ˈvɜː.ʃən kənˈtrəʊl əv kəʊd",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈkeə.fəl ˈvɜː.ʃən kənˈtrəʊl əv kəʊd",
+          "phonetic": "KAIR-ful VUR-shun kun-TROHL uv KOHD"
+        },
+        "american": {
+          "ipa": "ˈker.fəl ˈvɝ.ʒən kənˈtroʊl əv koʊd",
+          "phonetic": "KAIR-ful VUR-zhun kun-TROHL uv KOHD"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "careful-version-control-of-code"
+    },
+    {
+      "english": "data, model configurations",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "DAY-tuh, MOD-ul kun-fig-yur-AY-shunz",
+      "ipa": "ˈdeɪ.tə, ˈmɒd.əl kənˌfɪg.jʊˈreɪ.ʃənz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈdeɪ.tə, ˈmɒd.əl kənˌfɪg.jʊˈreɪ.ʃənz",
+          "phonetic": "DAY-tuh, MOD-ul kun-fig-yur-AY-shunz"
+        },
+        "american": {
+          "ipa": "ˈdeɪ.tə, ˈmɑ.dəl kənˌfɪg.jəˈreɪ.ʃənz",
+          "phonetic": "DAY-tuh, MAH-duhl kun-fig-yur-AY-shunz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "data-model-configurations"
+    },
+    {
+      "english": "and environmental dependencies",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and in-vy-run-MEN-tul di-PEN-dun-seez",
+      "ipa": "ænd ɪnˌvaɪ.rənˈmen.təl dɪˈpen.dən.siz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd ɪnˌvaɪ.rənˈmen.təl dɪˈpen.dən.siz",
+          "phonetic": "and in-vy-run-MEN-tul di-PEN-dun-seez"
+        },
+        "american": {
+          "ipa": "ænd ɪnˌvaɪ.rənˈmen.təl dɪˈpen.dən.siz",
+          "phonetic": "and in-vy-run-MEN-tul di-PEN-dun-seez"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-environmental-dependencies"
+    },
+    {
+      "english": "compliance",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "kum-PLY-uns",
+      "ipa": "kəmˈplaɪ.əns",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "kəmˈplaɪ.əns",
+          "phonetic": "kum-PLY-uns"
+        },
+        "american": {
+          "ipa": "kəmˈplaɪ.əns",
+          "phonetic": "kum-PLY-uns"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "compliance"
+    },
+    {
+      "english": "and ethics",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and ETH-iks",
+      "ipa": "ænd ˈeθ.ɪks",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd ˈeθ.ɪks",
+          "phonetic": "and ETH-iks"
+        },
+        "american": {
+          "ipa": "ænd ˈeθ.ɪks",
+          "phonetic": "and ETH-iks"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-ethics"
+    },
+    {
+      "english": "considerations",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "kun-sid-uh-RAY-shunz",
+      "ipa": "kənˌsɪd.əˈreɪ.ʃənz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "kənˌsɪd.əˈreɪ.ʃənz",
+          "phonetic": "kun-sid-uh-RAY-shunz"
+        },
+        "american": {
+          "ipa": "kənˌsɪd.ɚˈeɪ.ʃənz",
+          "phonetic": "kun-sid-ur-AY-shunz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "considerations"
+    },
+    {
+      "english": "in research environments",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "in ri-SURCH in-VY-run-munts",
+      "ipa": "ɪn rɪˈsɜːtʃ ɪnˈvaɪ.rən.mənts",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɪn rɪˈsɜːtʃ ɪnˈvaɪ.rən.mənts",
+          "phonetic": "in ri-SURCH in-VY-run-munts"
+        },
+        "american": {
+          "ipa": "ɪn rɪˈsɝtʃ ɪnˈvaɪ.rən.mənts",
+          "phonetic": "in ri-SURCH in-VY-run-munts"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "in-research-environments"
+    },
+    {
+      "english": "often include data privacy",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "OF-un in-KLOOD DAY-tuh PRIV-uh-see",
+      "ipa": "ˈɒf.ən ɪnˈkluːd ˈdeɪ.tə ˈprɪv.ə.si",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈɒf.ən ɪnˈkluːd ˈdeɪ.tə ˈprɪv.ə.si",
+          "phonetic": "OF-un in-KLOOD DAY-tuh PRIV-uh-see"
+        },
+        "american": {
+          "ipa": "ˈɔf.ən ɪnˈklud ˈdeɪ.tə ˈprɪv.ə.si",
+          "phonetic": "AWF-un in-KLOOD DAY-tuh PRIV-uh-see"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "often-include-data-privacy"
+    },
+    {
+      "english": "institutional review board protocols",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "in-sti-TYOO-shun-ul ri-VYOO BAWRD PROH-tuh-kolz",
+      "ipa": "ˌɪn.stɪˈtjuː.ʃən.əl rɪˈvjuː bɔːd ˈprəʊ.tə.kɒlz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˌɪn.stɪˈtjuː.ʃən.əl rɪˈvjuː bɔːd ˈprəʊ.tə.kɒlz",
+          "phonetic": "in-sti-TYOO-shun-ul ri-VYOO BAWRD PROH-tuh-kolz"
+        },
+        "american": {
+          "ipa": "ˌɪn.stəˈtu.ʃən.əl rɪˈvju bɔrd ˈproʊ.tə.kɑlz",
+          "phonetic": "in-stuh-TOO-shun-ul ri-VYOO BAWRD PROH-tuh-kahlz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "institutional-review-board-protocols"
+    },
+    {
+      "english": "and ethical AI guidelines",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and ETH-i-kul AY EYE GYD-lynz",
+      "ipa": "ænd ˈeθ.ɪ.kəl eɪ aɪ ˈɡaɪd.laɪnz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd ˈeθ.ɪ.kəl eɪ aɪ ˈɡaɪd.laɪnz",
+          "phonetic": "and ETH-i-kul AY EYE GYD-lynz"
+        },
+        "american": {
+          "ipa": "ænd ˈeθ.ə.kəl eɪ aɪ ˈɡaɪd.laɪnz",
+          "phonetic": "and ETH-uh-kul AY EYE GYD-lynz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-ethical-ai-guidelines"
+    },
+    {
+      "english": "that shape",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "that SHAYP",
+      "ipa": "ðæt ʃeɪp",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ðæt ʃeɪp",
+          "phonetic": "that SHAYP"
+        },
+        "american": {
+          "ipa": "ðæt ʃeɪp",
+          "phonetic": "that SHAYP"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "that-shape"
+    },
+    {
+      "english": "how systems can collect",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "HOW SIS-tumz kan kuh-LEKT",
+      "ipa": "haʊ ˈsɪs.təmz kæn kəˈlekt",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "haʊ ˈsɪs.təmz kæn kəˈlekt",
+          "phonetic": "HOW SIS-tumz kan kuh-LEKT"
+        },
+        "american": {
+          "ipa": "haʊ ˈsɪs.təmz kæn kəˈlekt",
+          "phonetic": "HOW SIS-tumz kan kuh-LEKT"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "how-systems-can-collect"
+    },
+    {
+      "english": "process and share information",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "PROH-sess and SHAIR in-fur-MAY-shun",
+      "ipa": "ˈprəʊ.ses ænd ʃeə ˌɪn.fəˈmeɪ.ʃən",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈprəʊ.ses ænd ʃeə ˌɪn.fəˈmeɪ.ʃən",
+          "phonetic": "PROH-sess and SHAIR in-fur-MAY-shun"
+        },
+        "american": {
+          "ipa": "ˈproʊ.ses ænd ʃer ˌɪn.fɚˈmeɪ.ʃən",
+          "phonetic": "PROH-sess and SHAIR in-fur-MAY-shun"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "process-and-share-information"
+    },
+    {
+      "english": "integration patterns",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "in-ti-GRAY-shun PAT-unz",
+      "ipa": "ˌɪn.tɪˈɡreɪ.ʃən ˈpæt.ənz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˌɪn.tɪˈɡreɪ.ʃən ˈpæt.ənz",
+          "phonetic": "in-ti-GRAY-shun PAT-unz"
+        },
+        "american": {
+          "ipa": "ˌɪn.təˈɡreɪ.ʃən ˈpæt.ɚnz",
+          "phonetic": "in-tuh-GRAY-shun PAT-urnz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "integration-patterns"
+    },
+    {
+      "english": "system design",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "SIS-tum di-ZYNE",
+      "ipa": "ˈsɪs.təm dɪˈzaɪn",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈsɪs.təm dɪˈzaɪn",
+          "phonetic": "SIS-tum di-ZYNE"
+        },
+        "american": {
+          "ipa": "ˈsɪs.təm dɪˈzaɪn",
+          "phonetic": "SIS-tum di-ZYNE"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "system-design"
+    },
+    {
+      "english": "API design",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "AY PEE EYE di-ZYNE",
+      "ipa": "eɪ piː aɪ dɪˈzaɪn",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "eɪ piː aɪ dɪˈzaɪn",
+          "phonetic": "AY PEE EYE di-ZYNE"
+        },
+        "american": {
+          "ipa": "eɪ pi aɪ dɪˈzaɪn",
+          "phonetic": "AY PEE EYE di-ZYNE"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "api-design"
+    },
+    {
+      "english": "for AI systems",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "fawr AY EYE SIS-tumz",
+      "ipa": "fɔː eɪ aɪ ˈsɪs.təmz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "fɔː eɪ aɪ ˈsɪs.təmz",
+          "phonetic": "fawr AY EYE SIS-tumz"
+        },
+        "american": {
+          "ipa": "fɔr eɪ aɪ ˈsɪs.təmz",
+          "phonetic": "fawr AY EYE SIS-tumz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "for-ai-systems"
+    },
+    {
+      "english": "requires balancing",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "ri-KWYURZ BAL-uns-ing",
+      "ipa": "rɪˈkwaɪəz ˈbæl.əns.ɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "rɪˈkwaɪəz ˈbæl.əns.ɪŋ",
+          "phonetic": "ri-KWYURZ BAL-uns-ing"
+        },
+        "american": {
+          "ipa": "rɪˈkwaɪɚz ˈbæl.ən.sɪŋ",
+          "phonetic": "ri-KWYURZ BAL-un-sing"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "requires-balancing"
+    },
+    {
+      "english": "ease of use",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "EEZ uv YOOZ",
+      "ipa": "iːz əv juːz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "iːz əv juːz",
+          "phonetic": "EEZ uv YOOZ"
+        },
+        "american": {
+          "ipa": "iz əv juz",
+          "phonetic": "EEZ uv YOOZ"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "ease-of-use"
+    },
+    {
+      "english": "with flexibility",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "with flek-suh-BIL-uh-tee",
+      "ipa": "wɪð ˌflek.səˈbɪl.ə.ti",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "wɪð ˌflek.səˈbɪl.ə.ti",
+          "phonetic": "with flek-suh-BIL-uh-tee"
+        },
+        "american": {
+          "ipa": "wɪð ˌflek.səˈbɪl.ə.ti",
+          "phonetic": "with flek-suh-BIL-uh-tee"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "with-flexibility"
+    },
+    {
+      "english": "and performance",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and pur-FAWR-muns",
+      "ipa": "ænd pəˈfɔː.məns",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd pəˈfɔː.məns",
+          "phonetic": "and pur-FAWR-muns"
+        },
+        "american": {
+          "ipa": "ænd pɚˈfɔr.məns",
+          "phonetic": "and pur-FAWR-muns"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-performance"
+    },
+    {
+      "english": "good APIs abstract",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "GOOD AY PEE EYEz AB-strakt",
+      "ipa": "ɡʊd eɪ piː aɪz ˈæb.strækt",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɡʊd eɪ piː aɪz ˈæb.strækt",
+          "phonetic": "GOOD AY PEE EYEz AB-strakt"
+        },
+        "american": {
+          "ipa": "ɡʊd eɪ pi aɪz ˈæb.strækt",
+          "phonetic": "GOOD AY PEE EYEz AB-strakt"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "good-apis-abstract"
+    },
+    {
+      "english": "complexity",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "kum-PLEK-suh-tee",
+      "ipa": "kəmˈplek.sə.ti",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "kəmˈplek.sə.ti",
+          "phonetic": "kum-PLEK-suh-tee"
+        },
+        "american": {
+          "ipa": "kəmˈplek.sə.ti",
+          "phonetic": "kum-PLEK-suh-tee"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "complexity"
+    },
+    {
+      "english": "while providing necessary control",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "wyl pruh-VY-ding NE-suh-suh-ree kun-TROHL",
+      "ipa": "waɪl prəˈvaɪ.dɪŋ ˈne.sə.sər.i kənˈtrəʊl",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "waɪl prəˈvaɪ.dɪŋ ˈne.sə.sər.i kənˈtrəʊl",
+          "phonetic": "wyl pruh-VY-ding NE-suh-suh-ree kun-TROHL"
+        },
+        "american": {
+          "ipa": "waɪl prəˈvaɪ.dɪŋ ˈne.sə.ser.i kənˈtroʊl",
+          "phonetic": "wyl pruh-VY-ding NE-suh-ser-ee kun-TROHL"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "while-providing-necessary-control"
+    },
+    {
+      "english": "over AI behavior",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "OH-vur AY EYE bi-HAYV-yur",
+      "ipa": "ˈəʊ.vər eɪ aɪ bɪˈheɪv.jər",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈəʊ.vər eɪ aɪ bɪˈheɪv.jər",
+          "phonetic": "OH-vur AY EYE bi-HAYV-yur"
+        },
+        "american": {
+          "ipa": "ˈoʊ.vɚ eɪ aɪ bɪˈheɪv.jɚ",
+          "phonetic": "OH-vur AY EYE bi-HAYV-yur"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "over-ai-behavior"
+    },
+    {
+      "english": "and configuration",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and kun-fig-yuh-RAY-shun",
+      "ipa": "ænd kənˌfɪɡ.jʊˈreɪ.ʃən",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd kənˌfɪɡ.jʊˈreɪ.ʃən",
+          "phonetic": "and kun-fig-yuh-RAY-shun"
+        },
+        "american": {
+          "ipa": "ænd kənˌfɪɡ.jəˈreɪ.ʃən",
+          "phonetic": "and kun-fig-yuh-RAY-shun"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-configuration"
+    },
+    {
+      "english": "authentication",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "aw-then-ti-KAY-shun",
+      "ipa": "ɔː.ˌθen.tɪˈkeɪ.ʃən",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɔː.ˌθen.tɪˈkeɪ.ʃən",
+          "phonetic": "aw-then-ti-KAY-shun"
+        },
+        "american": {
+          "ipa": "ɔ.ˌθen.təˈkeɪ.ʃən",
+          "phonetic": "aw-then-tuh-KAY-shun"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "authentication"
+    },
+    {
+      "english": "authorization",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "aw-thuh-ry-ZAY-shun",
+      "ipa": "ˌɔː.θər.aɪˈzeɪ.ʃən",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˌɔː.θər.aɪˈzeɪ.ʃən",
+          "phonetic": "aw-thuh-ry-ZAY-shun"
+        },
+        "american": {
+          "ipa": "ˌɔ.θɚ.əˈzeɪ.ʃən",
+          "phonetic": "aw-thur-uh-ZAY-shun"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "authorization"
+    },
+    {
+      "english": "become complex",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "bi-KUM KOM-pleks",
+      "ipa": "bɪˈkʌm ˈkɒm.pleks",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "bɪˈkʌm ˈkɒm.pleks",
+          "phonetic": "bi-KUM KOM-pleks"
+        },
+        "american": {
+          "ipa": "bɪˈkʌm ˈkɑm.pleks",
+          "phonetic": "bi-KUM KAHM-pleks"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "become-complex"
+    },
+    {
+      "english": "in multi-user research environments",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "in MUL-tee YOO-zuh ri-SURCH in-VY-run-munts",
+      "ipa": "ɪn ˈmʌl.ti ˈjuː.zə rɪˈsɜːtʃ ɪnˈvaɪ.rən.mənts",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɪn ˈmʌl.ti ˈjuː.zə rɪˈsɜːtʃ ɪnˈvaɪ.rən.mənts",
+          "phonetic": "in MUL-tee YOO-zuh ri-SURCH in-VY-run-munts"
+        },
+        "american": {
+          "ipa": "ɪn ˈmʌl.ti ˈju.zɚ rɪˈsɝtʃ ɪnˈvaɪ.rən.mənts",
+          "phonetic": "in MUL-tee YOO-zur ri-SURCH in-VY-run-munts"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "in-multiuser-research-environments"
+    },
+    {
+      "english": "where different users",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "wair DIF-runt YOO-zuhz",
+      "ipa": "weə ˈdɪf.rənt ˈjuː.zəz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "weə ˈdɪf.rənt ˈjuː.zəz",
+          "phonetic": "wair DIF-runt YOO-zuhz"
+        },
+        "american": {
+          "ipa": "wer ˈdɪf.rənt ˈju.zɚz",
+          "phonetic": "wair DIF-runt YOO-zurz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "where-different-users"
+    },
+    {
+      "english": "may have access to",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "MAY hav AK-sess too",
+      "ipa": "meɪ hæv ˈæk.ses tuː",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "meɪ hæv ˈæk.ses tuː",
+          "phonetic": "MAY hav AK-sess too"
+        },
+        "american": {
+          "ipa": "meɪ hæv ˈæk.ses tu",
+          "phonetic": "MAY hav AK-sess too"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "may-have-access-to"
+    },
+    {
+      "english": "different data sources",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "DIF-runt DAY-tuh SAWR-siz",
+      "ipa": "ˈdɪf.rənt ˈdeɪ.tə ˈsɔː.sɪz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈdɪf.rənt ˈdeɪ.tə ˈsɔː.sɪz",
+          "phonetic": "DIF-runt DAY-tuh SAWR-siz"
+        },
+        "american": {
+          "ipa": "ˈdɪf.rənt ˈdeɪ.tə ˈsɔr.səz",
+          "phonetic": "DIF-runt DAY-tuh SAWR-suz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "different-data-sources"
+    },
+    {
+      "english": "computational resources",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "kom-pyoo-TAY-shun-ul ri-ZAWR-siz",
+      "ipa": "ˌkɒm.pjʊˈteɪ.ʃən.əl rɪˈzɔː.sɪz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˌkɒm.pjʊˈteɪ.ʃən.əl rɪˈzɔː.sɪz",
+          "phonetic": "kom-pyoo-TAY-shun-ul ri-ZAWR-siz"
+        },
+        "american": {
+          "ipa": "ˌkɑm.pjəˈteɪ.ʃən.əl rɪˈsɔr.səz",
+          "phonetic": "kahm-pyoo-TAY-shun-ul ri-SAWR-suz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "computational-resources"
+    },
+    {
+      "english": "and system capabilities",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and SIS-tum kay-puh-BIL-uh-teez",
+      "ipa": "ænd ˈsɪs.təm ˌkeɪ.pəˈbɪl.ə.tiz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd ˈsɪs.təm ˌkeɪ.pəˈbɪl.ə.tiz",
+          "phonetic": "and SIS-tum kay-puh-BIL-uh-teez"
+        },
+        "american": {
+          "ipa": "ænd ˈsɪs.təm ˌkeɪ.pəˈbɪl.ə.tiz",
+          "phonetic": "and SIS-tum kay-puh-BIL-uh-teez"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-system-capabilities"
+    },
+    {
+      "english": "monitoring",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "MON-i-tur-ing",
+      "ipa": "ˈmɒn.ɪ.tər.ɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈmɒn.ɪ.tər.ɪŋ",
+          "phonetic": "MON-i-tur-ing"
+        },
+        "american": {
+          "ipa": "ˈmɑn.ə.tɚ.ɪŋ",
+          "phonetic": "MAHN-uh-tur-ing"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "monitoring"
+    },
+    {
+      "english": "alerting",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "uh-LUR-ting",
+      "ipa": "əˈlɜː.tɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "əˈlɜː.tɪŋ",
+          "phonetic": "uh-LUR-ting"
+        },
+        "american": {
+          "ipa": "əˈlɝ.tɪŋ",
+          "phonetic": "uh-LUR-ting"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "alerting"
+    },
+    {
+      "english": "track both traditional system metrics",
+      "chinese": "",
+      "difficulty": "hard",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "TRAK bohth truh-DISH-un-ul SIS-tum MET-riks",
+      "ipa": "træk bəʊθ trəˈdɪʃ.ən.əl ˈsɪs.təm ˈmet.rɪks",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "træk bəʊθ trəˈdɪʃ.ən.əl ˈsɪs.təm ˈmet.rɪks",
+          "phonetic": "TRAK bohth truh-DISH-un-ul SIS-tum MET-riks"
+        },
+        "american": {
+          "ipa": "træk boʊθ trəˈdɪʃ.ən.əl ˈsɪs.təm ˈmet.rɪks",
+          "phonetic": "TRAK bohth truh-DISH-un-ul SIS-tum MET-riks"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "track-both-traditional-system-metrics"
+    },
+    {
+      "english": "and AI-specific indicators",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and AY EYE spuh-SIF-ik IN-di-kay-tuhz",
+      "ipa": "ænd eɪ aɪ spəˈsɪf.ɪk ˈɪn.dɪ.keɪ.təz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd eɪ aɪ spəˈsɪf.ɪk ˈɪn.dɪ.keɪ.təz",
+          "phonetic": "and AY EYE spuh-SIF-ik IN-di-kay-tuhz"
+        },
+        "american": {
+          "ipa": "ænd eɪ aɪ spəˈsɪf.ɪk ˈɪn.də.keɪ.tɚz",
+          "phonetic": "and AY EYE spuh-SIF-ik IN-duh-kay-turz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-aispecific-indicators"
+    },
+    {
+      "english": "like response quality",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "lyk ri-SPONS KWOL-uh-tee",
+      "ipa": "laɪk rɪˈspɒns ˈkwɒl.ə.ti",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "laɪk rɪˈspɒns ˈkwɒl.ə.ti",
+          "phonetic": "lyk ri-SPONS KWOL-uh-tee"
+        },
+        "american": {
+          "ipa": "laɪk rɪˈspɑns ˈkwɑl.ə.ti",
+          "phonetic": "lyk ri-SPAHNS KWAHL-uh-tee"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "like-response-quality"
+    },
+    {
+      "english": "model performance",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "MOD-ul pur-FAWR-muns",
+      "ipa": "ˈmɒd.əl pəˈfɔː.məns",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈmɒd.əl pəˈfɔː.məns",
+          "phonetic": "MOD-ul pur-FAWR-muns"
+        },
+        "american": {
+          "ipa": "ˈmɑd.əl pɚˈfɔr.məns",
+          "phonetic": "MAHD-ul pur-FAWR-muns"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "model-performance"
+    },
+    {
+      "english": "and user satisfaction",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and YOO-zuh sat-is-FAK-shun",
+      "ipa": "ænd ˈjuː.zə ˌsæt.ɪsˈfæk.ʃən",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd ˈjuː.zə ˌsæt.ɪsˈfæk.ʃən",
+          "phonetic": "and YOO-zuh sat-is-FAK-shun"
+        },
+        "american": {
+          "ipa": "ænd ˈju.zɚ ˌsæt.ɪsˈfæk.ʃən",
+          "phonetic": "and YOO-zur sat-is-FAK-shun"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-user-satisfaction"
+    },
+    {
+      "english": "scalability and performance",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "skay-luh-BIL-uh-tee and pur-FAWR-muns",
+      "ipa": "ˌskeɪ.ləˈbɪl.ə.ti ænd pəˈfɔː.məns",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˌskeɪ.ləˈbɪl.ə.ti ænd pəˈfɔː.məns",
+          "phonetic": "skay-luh-BIL-uh-tee and pur-FAWR-muns"
+        },
+        "american": {
+          "ipa": "ˌskeɪ.ləˈbɪl.ə.ti ænd pɚˈfɔr.məns",
+          "phonetic": "skay-luh-BIL-uh-tee and pur-FAWR-muns"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "scalability-and-performance"
+    },
+    {
+      "english": "horizontal scaling",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "hor-i-ZON-tul SKAY-ling",
+      "ipa": "ˌhɒr.ɪˈzɒn.təl ˈskeɪ.lɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˌhɒr.ɪˈzɒn.təl ˈskeɪ.lɪŋ",
+          "phonetic": "hor-i-ZON-tul SKAY-ling"
+        },
+        "american": {
+          "ipa": "ˌhɔr.əˈzɑn.təl ˈskeɪ.lɪŋ",
+          "phonetic": "hawr-uh-ZAHN-tul SKAY-ling"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "horizontal-scaling"
+    },
+    {
+      "english": "strategies for AI applications",
+      "chinese": "",
+      "difficulty": "hard",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "STRAT-uh-jeez fawr AY EYE ap-li-KAY-shunz",
+      "ipa": "ˈstræt.ə.dʒiz fɔː eɪ aɪ ˌæp.lɪˈkeɪ.ʃənz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈstræt.ə.dʒiz fɔː eɪ aɪ ˌæp.lɪˈkeɪ.ʃənz",
+          "phonetic": "STRAT-uh-jeez fawr AY EYE ap-li-KAY-shunz"
+        },
+        "american": {
+          "ipa": "ˈstræt.ə.dʒiz fɔr eɪ aɪ ˌæp.ləˈkeɪ.ʃənz",
+          "phonetic": "STRAT-uh-jeez fawr AY EYE ap-luh-KAY-shunz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "strategies-for-ai-applications"
+    },
+    {
+      "english": "involve distributing workload",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "in-VOLV di-STRIB-yoo-ting WURK-lohd",
+      "ipa": "ɪnˈvɒlv dɪˈstrɪb.juː.tɪŋ ˈwɜːk.ləʊd",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɪnˈvɒlv dɪˈstrɪb.juː.tɪŋ ˈwɜːk.ləʊd",
+          "phonetic": "in-VOLV di-STRIB-yoo-ting WURK-lohd"
+        },
+        "american": {
+          "ipa": "ɪnˈvɑlv dɪˈstrɪb.ju.tɪŋ ˈwɝk.loʊd",
+          "phonetic": "in-VAHLV di-STRIB-yoo-ting WURK-lohd"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "involve-distributing-workload"
+    },
+    {
+      "english": "across multiple instances",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "uh-KROSS MUL-ti-pul IN-stun-siz",
+      "ipa": "əˈkrɒs ˈmʌl.tɪ.pəl ˈɪn.stən.sɪz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "əˈkrɒs ˈmʌl.tɪ.pəl ˈɪn.stən.sɪz",
+          "phonetic": "uh-KROSS MUL-ti-pul IN-stun-siz"
+        },
+        "american": {
+          "ipa": "əˈkrɔs ˈmʌl.tə.pəl ˈɪn.stən.səz",
+          "phonetic": "uh-KRAWS MUL-tuh-pul IN-stun-suz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "across-multiple-instances"
+    },
+    {
+      "english": "while managing state",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "wyl MAN-i-jing STAYT",
+      "ipa": "waɪl ˈmæn.ɪ.dʒɪŋ steɪt",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "waɪl ˈmæn.ɪ.dʒɪŋ steɪt",
+          "phonetic": "wyl MAN-i-jing STAYT"
+        },
+        "american": {
+          "ipa": "waɪl ˈmæn.ə.dʒɪŋ steɪt",
+          "phonetic": "wyl MAN-uh-jing STAYT"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "while-managing-state"
+    },
+    {
+      "english": "consistency",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "kun-SIS-tun-see",
+      "ipa": "kənˈsɪs.tən.si",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "kənˈsɪs.tən.si",
+          "phonetic": "kun-SIS-tun-see"
+        },
+        "american": {
+          "ipa": "kənˈsɪs.tən.si",
+          "phonetic": "kun-SIS-tun-see"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "consistency"
+    },
+    {
+      "english": "and resource utilization",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and ri-ZAWRS yoo-til-y-ZAY-shun",
+      "ipa": "ænd rɪˈzɔːs ˌjuː.tɪl.aɪˈzeɪ.ʃən",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd rɪˈzɔːs ˌjuː.tɪl.aɪˈzeɪ.ʃən",
+          "phonetic": "and ri-ZAWRS yoo-til-y-ZAY-shun"
+        },
+        "american": {
+          "ipa": "ænd rɪˈsɔrs ˌju.təl.əˈzeɪ.ʃən",
+          "phonetic": "and ri-SAWRS yoo-tul-uh-ZAY-shun"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-resource-utilization"
+    },
+    {
+      "english": "effectively",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "i-FEK-tiv-lee",
+      "ipa": "ɪˈfek.tɪv.li",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɪˈfek.tɪv.li",
+          "phonetic": "i-FEK-tiv-lee"
+        },
+        "american": {
+          "ipa": "əˈfek.tɪv.li",
+          "phonetic": "uh-FEK-tiv-lee"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "effectively"
+    },
+    {
+      "english": "caching strategies",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "KASH-ing STRAT-uh-jeez",
+      "ipa": "ˈkæʃ.ɪŋ ˈstræt.ə.dʒiz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈkæʃ.ɪŋ ˈstræt.ə.dʒiz",
+          "phonetic": "KASH-ing STRAT-uh-jeez"
+        },
+        "american": {
+          "ipa": "ˈkæʃ.ɪŋ ˈstræt.ə.dʒiz",
+          "phonetic": "KASH-ing STRAT-uh-jeez"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "caching-strategies"
+    },
+    {
+      "english": "can dramatically",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "kan druh-MAT-ik-lee",
+      "ipa": "kæn drəˈmæt.ɪk.li",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "kæn drəˈmæt.ɪk.li",
+          "phonetic": "kan druh-MAT-ik-lee"
+        },
+        "american": {
+          "ipa": "kæn drəˈmæt.ɪk.li",
+          "phonetic": "kan druh-MAT-ik-lee"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "can-dramatically"
+    },
+    {
+      "english": "improve performance",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "im-PROOV pur-FAWR-muns",
+      "ipa": "ɪmˈpruːv pəˈfɔː.məns",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɪmˈpruːv pəˈfɔː.məns",
+          "phonetic": "im-PROOV pur-FAWR-muns"
+        },
+        "american": {
+          "ipa": "ɪmˈpruv pɚˈfɔr.məns",
+          "phonetic": "im-PROOV pur-FAWR-muns"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "improve-performance"
+    },
+    {
+      "english": "by storing",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "by STAWR-ing",
+      "ipa": "baɪ ˈstɔː.rɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "baɪ ˈstɔː.rɪŋ",
+          "phonetic": "by STAWR-ing"
+        },
+        "american": {
+          "ipa": "baɪ ˈstɔr.ɪŋ",
+          "phonetic": "by STAWR-ing"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "by-storing"
+    },
+    {
+      "english": "frequently accessed results",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "FREE-kwunt-lee ak-SEST ri-ZULTS",
+      "ipa": "ˈfriː.kwənt.li ækˈsest rɪˈzʌlts",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈfriː.kwənt.li ækˈsest rɪˈzʌlts",
+          "phonetic": "FREE-kwunt-lee ak-SEST ri-ZULTS"
+        },
+        "american": {
+          "ipa": "ˈfri.kwənt.li ækˈsest rɪˈzʌlts",
+          "phonetic": "FREE-kwunt-lee ak-SEST ri-ZULTS"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "frequently-accessed-results"
+    },
+    {
+      "english": "pre-computed embeddings",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "pree-kum-PYOO-tid im-BED-ingz",
+      "ipa": "ˌpriː.kəmˈpjuː.tɪd ɪmˈbed.ɪŋz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˌpriː.kəmˈpjuː.tɪd ɪmˈbed.ɪŋz",
+          "phonetic": "pree-kum-PYOO-tid im-BED-ingz"
+        },
+        "american": {
+          "ipa": "ˌpri.kəmˈpju.tɪd ɪmˈbed.ɪŋz",
+          "phonetic": "pree-kum-PYOO-tid im-BED-ingz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "precomputed-embeddings"
+    },
+    {
+      "english": "and intermediate",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and in-tuh-MEE-dee-ut",
+      "ipa": "ænd ˌɪn.təˈmiː.di.ət",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd ˌɪn.təˈmiː.di.ət",
+          "phonetic": "and in-tuh-MEE-dee-ut"
+        },
+        "american": {
+          "ipa": "ænd ˌɪn.tɚˈmi.di.ət",
+          "phonetic": "and in-tur-MEE-dee-ut"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-intermediate"
+    },
+    {
+      "english": "processing results",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "PROH-ses-ing ri-ZULTS",
+      "ipa": "ˈprəʊ.ses.ɪŋ rɪˈzʌlts",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈprəʊ.ses.ɪŋ rɪˈzʌlts",
+          "phonetic": "PROH-ses-ing ri-ZULTS"
+        },
+        "american": {
+          "ipa": "ˈproʊ.ses.ɪŋ rɪˈzʌlts",
+          "phonetic": "PROH-ses-ing ri-ZULTS"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "processing-results"
+    },
+    {
+      "english": "performance optimization",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "pur-FAWR-muns op-ti-my-ZAY-shun",
+      "ipa": "pəˈfɔː.məns ˌɒp.tɪ.maɪˈzeɪ.ʃən",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "pəˈfɔː.məns ˌɒp.tɪ.maɪˈzeɪ.ʃən",
+          "phonetic": "pur-FAWR-muns op-ti-my-ZAY-shun"
+        },
+        "american": {
+          "ipa": "pɚˈfɔr.məns ˌɑp.təˈmaɪ.zeɪ.ʃən",
+          "phonetic": "pur-FAWR-muns ahp-tuh-my-ZAY-shun"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "performance-optimization"
+    },
+    {
+      "english": "requires understanding bottlenecks",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "ri-KWYURZ un-dur-STAN-ding BOT-ul-neks",
+      "ipa": "rɪˈkwaɪəz ˌʌn.dəˈstæn.dɪŋ ˈbɒt.əl.neks",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "rɪˈkwaɪəz ˌʌn.dəˈstæn.dɪŋ ˈbɒt.əl.neks",
+          "phonetic": "ri-KWYURZ un-dur-STAN-ding BOT-ul-neks"
+        },
+        "american": {
+          "ipa": "rɪˈkwaɪɚz ˌʌn.dɚˈstæn.dɪŋ ˈbɑt.əl.neks",
+          "phonetic": "ri-KWYURZ un-dur-STAN-ding BAHT-ul-neks"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "requires-understanding-bottlenecks"
+    },
+    {
+      "english": "specific to AI workloads",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "spuh-SIF-ik too AY EYE WURK-lohdz",
+      "ipa": "spəˈsɪf.ɪk tuː eɪ aɪ ˈwɜːk.ləʊdz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "spəˈsɪf.ɪk tuː eɪ aɪ ˈwɜːk.ləʊdz",
+          "phonetic": "spuh-SIF-ik too AY EYE WURK-lohdz"
+        },
+        "american": {
+          "ipa": "spəˈsɪf.ɪk tu eɪ aɪ ˈwɝk.loʊdz",
+          "phonetic": "spuh-SIF-ik too AY EYE WURK-lohdz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "specific-to-ai-workloads"
+    },
+    {
+      "english": "including model inference time",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "in-KLOO-ding MOD-ul IN-fur-uns TYM",
+      "ipa": "ɪnˈkluː.dɪŋ ˈmɒd.əl ˈɪn.fər.əns taɪm",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɪnˈkluː.dɪŋ ˈmɒd.əl ˈɪn.fər.əns taɪm",
+          "phonetic": "in-KLOO-ding MOD-ul IN-fur-uns TYM"
+        },
+        "american": {
+          "ipa": "ɪnˈklu.dɪŋ ˈmɑd.əl ˈɪn.fɚ.əns taɪm",
+          "phonetic": "in-KLOO-ding MAHD-ul IN-fur-uns TYM"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "including-model-inference-time"
+    },
+    {
+      "english": "database query performance",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "DAY-tuh-bays KWEER-ee pur-FAWR-muns",
+      "ipa": "ˈdeɪ.tə.beɪs ˈkwɪə.ri pəˈfɔː.məns",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈdeɪ.tə.beɪs ˈkwɪə.ri pəˈfɔː.məns",
+          "phonetic": "DAY-tuh-bays KWEER-ee pur-FAWR-muns"
+        },
+        "american": {
+          "ipa": "ˈdeɪ.tə.beɪs ˈkwɪr.i pɚˈfɔr.məns",
+          "phonetic": "DAY-tuh-bays KWEER-ee pur-FAWR-muns"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "database-query-performance"
+    },
+    {
+      "english": "and network latency",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and NET-wurk LAY-tun-see",
+      "ipa": "ænd ˈnet.wɜːk ˈleɪ.tən.si",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd ˈnet.wɜːk ˈleɪ.tən.si",
+          "phonetic": "and NET-wurk LAY-tun-see"
+        },
+        "american": {
+          "ipa": "ænd ˈnet.wɝk ˈleɪ.tən.si",
+          "phonetic": "and NET-wurk LAY-tun-see"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-network-latency"
+    },
+    {
+      "english": "for distributed systems",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "fawr di-STRIB-yoo-tid SIS-tumz",
+      "ipa": "fɔː dɪˈstrɪb.juː.tɪd ˈsɪs.təmz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "fɔː dɪˈstrɪb.juː.tɪd ˈsɪs.təmz",
+          "phonetic": "fawr di-STRIB-yoo-tid SIS-tumz"
+        },
+        "american": {
+          "ipa": "fɔr dɪˈstrɪb.ju.tɪd ˈsɪs.təmz",
+          "phonetic": "fawr di-STRIB-yoo-tid SIS-tumz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "for-distributed-systems"
+    },
+    {
+      "english": "integrate multiple technologies",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "IN-ti-grayt MUL-ti-pul tek-NOL-uh-jeez",
+      "ipa": "ˈɪn.tɪ.ɡreɪt ˈmʌl.tɪ.pəl tekˈnɒl.ə.dʒiz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈɪn.tɪ.ɡreɪt ˈmʌl.tɪ.pəl tekˈnɒl.ə.dʒiz",
+          "phonetic": "IN-ti-grayt MUL-ti-pul tek-NOL-uh-jeez"
+        },
+        "american": {
+          "ipa": "ˈɪn.tə.ɡreɪt ˈmʌl.tə.pəl tekˈnɑl.ə.dʒiz",
+          "phonetic": "IN-tuh-grayt MUL-tuh-pul tek-NAHL-uh-jeez"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "integrate-multiple-technologies"
+    },
+    {
+      "english": "to create comprehensive",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "too kri-AYT kom-pri-HEN-siv",
+      "ipa": "tuː kriˈeɪt ˌkɒm.prɪˈhen.sɪv",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "tuː kriˈeɪt ˌkɒm.prɪˈhen.sɪv",
+          "phonetic": "too kri-AYT kom-pri-HEN-siv"
+        },
+        "american": {
+          "ipa": "tu kriˈeɪt ˌkɑm.prɪˈhen.sɪv",
+          "phonetic": "too kri-AYT kahm-pri-HEN-siv"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "to-create-comprehensive"
+    },
+    {
+      "english": "research intelligence capabilities",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "ri-SURCH in-TEL-i-juns kay-puh-BIL-uh-teez",
+      "ipa": "rɪˈsɜːtʃ ɪnˈtel.ɪ.dʒəns ˌkeɪ.pəˈbɪl.ə.tiz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "rɪˈsɜːtʃ ɪnˈtel.ɪ.dʒəns ˌkeɪ.pəˈbɪl.ə.tiz",
+          "phonetic": "ri-SURCH in-TEL-i-juns kay-puh-BIL-uh-teez"
+        },
+        "american": {
+          "ipa": "rɪˈsɝtʃ ɪnˈtel.ə.dʒəns ˌkeɪ.pəˈbɪl.ə.tiz",
+          "phonetic": "ri-SURCH in-TEL-uh-juns kay-puh-BIL-uh-teez"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "research-intelligence-capabilities"
+    },
+    {
+      "english": "a research mapping system",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "uh ri-SURCH MAP-ing SIS-tum",
+      "ipa": "ə rɪˈsɜːtʃ ˈmæp.ɪŋ ˈsɪs.təm",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ə rɪˈsɜːtʃ ˈmæp.ɪŋ ˈsɪs.təm",
+          "phonetic": "uh ri-SURCH MAP-ing SIS-tum"
+        },
+        "american": {
+          "ipa": "ə rɪˈsɝtʃ ˈmæp.ɪŋ ˈsɪs.təm",
+          "phonetic": "uh ri-SURCH MAP-ing SIS-tum"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "a-research-mapping-system"
+    },
+    {
+      "english": "might use vector databases",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "MYT YOOZ VEK-tur DAY-tuh-bay-siz",
+      "ipa": "maɪt juːz ˈvek.tər ˈdeɪ.tə.beɪ.sɪz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "maɪt juːz ˈvek.tər ˈdeɪ.tə.beɪ.sɪz",
+          "phonetic": "MYT YOOZ VEK-tur DAY-tuh-bay-siz"
+        },
+        "american": {
+          "ipa": "maɪt juz ˈvek.tɚ ˈdeɪ.tə.beɪ.səz",
+          "phonetic": "MYT YOOZ VEK-tur DAY-tuh-bay-suz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "might-use-vector-databases"
+    },
+    {
+      "english": "to find semantically similar",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "too FYND si-MAN-tik-lee SIM-i-lur",
+      "ipa": "tuː faɪnd sɪˈmæn.tɪk.li ˈsɪm.ɪ.lər",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "tuː faɪnd sɪˈmæn.tɪk.li ˈsɪm.ɪ.lər",
+          "phonetic": "too FYND si-MAN-tik-lee SIM-i-lur"
+        },
+        "american": {
+          "ipa": "tu faɪnd səˈmæn.tɪk.li ˈsɪm.ə.lɚ",
+          "phonetic": "too FYND suh-MAN-tik-lee SIM-uh-lur"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "to-find-semantically-similar"
+    },
+    {
+      "english": "research papers",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "ri-SURCH PAY-puhz",
+      "ipa": "rɪˈsɜːtʃ ˈpeɪ.pəz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "rɪˈsɜːtʃ ˈpeɪ.pəz",
+          "phonetic": "ri-SURCH PAY-puhz"
+        },
+        "american": {
+          "ipa": "rɪˈsɝtʃ ˈpeɪ.pɚz",
+          "phonetic": "ri-SURCH PAY-purz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "research-papers"
+    },
+    {
+      "english": "knowledge graphs",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "NOL-ij GRAHFS",
+      "ipa": "ˈnɒl.ɪdʒ ɡrɑːfs",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈnɒl.ɪdʒ ɡrɑːfs",
+          "phonetic": "NOL-ij GRAHFS"
+        },
+        "american": {
+          "ipa": "ˈnɑl.ɪdʒ ɡræfs",
+          "phonetic": "NAHL-ij GRAFS"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "knowledge-graphs"
+    },
+    {
+      "english": "to represent relationships",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "too rep-ri-ZENT ri-LAY-shun-ships",
+      "ipa": "tuː ˌrep.rɪˈzent rɪˈleɪ.ʃən.ʃɪps",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "tuː ˌrep.rɪˈzent rɪˈleɪ.ʃən.ʃɪps",
+          "phonetic": "too rep-ri-ZENT ri-LAY-shun-ships"
+        },
+        "american": {
+          "ipa": "tu ˌrep.rɪˈzent rɪˈleɪ.ʃən.ʃɪps",
+          "phonetic": "too rep-ri-ZENT ri-LAY-shun-ships"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "to-represent-relationships"
+    },
+    {
+      "english": "between researchers and projects",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "bi-TWEEN ri-SUR-chuz and PROJ-ekts",
+      "ipa": "bɪˈtwiːn rɪˈsɜː.tʃəz ænd ˈprɒdʒ.ekts",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "bɪˈtwiːn rɪˈsɜː.tʃəz ænd ˈprɒdʒ.ekts",
+          "phonetic": "bi-TWEEN ri-SUR-chuz and PROJ-ekts"
+        },
+        "american": {
+          "ipa": "bɪˈtwin rɪˈsɝ.tʃɚz ænd ˈprɑdʒ.ekts",
+          "phonetic": "bi-TWEEN ri-SUR-churz and PRAHJ-ekts"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "between-researchers-and-projects"
+    },
+    {
+      "english": "multi-agent systems",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "MUL-tee AY-junt SIS-tumz",
+      "ipa": "ˌmʌl.ti ˈeɪ.dʒənt ˈsɪs.təmz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˌmʌl.ti ˈeɪ.dʒənt ˈsɪs.təmz",
+          "phonetic": "MUL-tee AY-junt SIS-tumz"
+        },
+        "american": {
+          "ipa": "ˌmʌl.ti ˈeɪ.dʒənt ˈsɪs.təmz",
+          "phonetic": "MUL-tee AY-junt SIS-tumz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "multiagent-systems"
+    },
+    {
+      "english": "to coordinate different analysis tasks",
+      "chinese": "",
+      "difficulty": "hard",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "too koh-AW-di-nayt DIF-runt uh-NAL-uh-sis TAHSKS",
+      "ipa": "tuː kəʊˈɔː.dɪ.neɪt ˈdɪf.rənt əˈnæl.ə.sɪs tɑːsks",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "tuː kəʊˈɔː.dɪ.neɪt ˈdɪf.rənt əˈnæl.ə.sɪs tɑːsks",
+          "phonetic": "too koh-AW-di-nayt DIF-runt uh-NAL-uh-sis TAHSKS"
+        },
+        "american": {
+          "ipa": "tu koʊˈɔr.də.neɪt ˈdɪf.rənt əˈnæl.ə.sɪs tæsks",
+          "phonetic": "too koh-AWR-duh-nayt DIF-runt uh-NAL-uh-sis TASKS"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "to-coordinate-different-analysis-tasks"
+    },
+    {
+      "english": "and web interfaces",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and WEB IN-tuh-fays-iz",
+      "ipa": "ænd web ˈɪn.tə.feɪs.ɪz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd web ˈɪn.tə.feɪs.ɪz",
+          "phonetic": "and WEB IN-tuh-fays-iz"
+        },
+        "american": {
+          "ipa": "ænd web ˈɪn.tɚ.feɪs.əz",
+          "phonetic": "and WEB IN-tur-fays-uz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-web-interfaces"
+    },
+    {
+      "english": "to present results to researchers",
+      "chinese": "",
+      "difficulty": "hard",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "too pri-ZENT ri-ZULTS too ri-SUR-chuz",
+      "ipa": "tuː prɪˈzent rɪˈzʌlts tuː rɪˈsɜː.tʃəz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "tuː prɪˈzent rɪˈzʌlts tuː rɪˈsɜː.tʃəz",
+          "phonetic": "too pri-ZENT ri-ZULTS too ri-SUR-chuz"
+        },
+        "american": {
+          "ipa": "tu prɪˈzent rɪˈzʌlts tu rɪˈsɝ.tʃɚz",
+          "phonetic": "too pri-ZENT ri-ZULTS too ri-SUR-churz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "to-present-results-to-researchers"
+    },
+    {
+      "english": "in intuitive formats",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "in in-TYOO-i-tiv FAWR-mats",
+      "ipa": "ɪn ɪnˈtjuː.ɪ.tɪv ˈfɔː.mæts",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɪn ɪnˈtjuː.ɪ.tɪv ˈfɔː.mæts",
+          "phonetic": "in in-TYOO-i-tiv FAWR-mats"
+        },
+        "american": {
+          "ipa": "ɪn ɪnˈtu.ə.tɪv ˈfɔr.mæts",
+          "phonetic": "in in-TOO-uh-tiv FAWR-mats"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "in-intuitive-formats"
+    },
+    {
+      "english": "the PydanticAI framework",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "thuh py-DAN-tik AY EYE FRAYM-wurk",
+      "ipa": "ðə paɪˈdæn.tɪk eɪ aɪ ˈfreɪm.wɜːk",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ðə paɪˈdæn.tɪk eɪ aɪ ˈfreɪm.wɜːk",
+          "phonetic": "thuh py-DAN-tik AY EYE FRAYM-wurk"
+        },
+        "american": {
+          "ipa": "ðə paɪˈdæn.tɪk eɪ aɪ ˈfreɪm.wɝk",
+          "phonetic": "thuh py-DAN-tik AY EYE FRAYM-wurk"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "the-pydanticai-framework"
+    },
+    {
+      "english": "would provide structured coordination",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "wood pruh-VYD STRUK-churd koh-awr-di-NAY-shun",
+      "ipa": "wʊd prəˈvaɪd ˈstrʌk.tʃəd kəʊˌɔː.dɪˈneɪ.ʃən",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "wʊd prəˈvaɪd ˈstrʌk.tʃəd kəʊˌɔː.dɪˈneɪ.ʃən",
+          "phonetic": "wood pruh-VYD STRUK-churd koh-awr-di-NAY-shun"
+        },
+        "american": {
+          "ipa": "wʊd prəˈvaɪd ˈstrʌk.tʃɚd koʊˌɔr.dəˈneɪ.ʃən",
+          "phonetic": "wood pruh-VYD STRUK-churd koh-awr-duh-NAY-shun"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "would-provide-structured-coordination"
+    },
+    {
+      "english": "across these components",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "uh-KROSS theez kum-POH-nunts",
+      "ipa": "əˈkrɒs ðiːz kəmˈpəʊ.nənts",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "əˈkrɒs ðiːz kəmˈpəʊ.nənts",
+          "phonetic": "uh-KROSS theez kum-POH-nunts"
+        },
+        "american": {
+          "ipa": "əˈkrɔs ðiz kəmˈpoʊ.nənts",
+          "phonetic": "uh-KRAWS theez kum-POH-nunts"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "across-these-components"
+    },
+    {
+      "english": "ensuring type safety",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "in-SHOOR-ing TYPE SAYF-tee",
+      "ipa": "ɪnˈʃʊə.rɪŋ taɪp ˈseɪf.ti",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɪnˈʃʊə.rɪŋ taɪp ˈseɪf.ti",
+          "phonetic": "in-SHOOR-ing TYPE SAYF-tee"
+        },
+        "american": {
+          "ipa": "ɪnˈʃʊr.ɪŋ taɪp ˈseɪf.ti",
+          "phonetic": "in-SHOOR-ing TYPE SAYF-tee"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "ensuring-type-safety"
+    },
+    {
+      "english": "and robust error handling",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and roh-BUST ER-ur HAND-ling",
+      "ipa": "ænd rəʊˈbʌst ˈer.ər ˈhænd.lɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd rəʊˈbʌst ˈer.ər ˈhænd.lɪŋ",
+          "phonetic": "and roh-BUST ER-ur HAND-ling"
+        },
+        "american": {
+          "ipa": "ænd roʊˈbʌst ˈer.ɚ ˈhænd.lɪŋ",
+          "phonetic": "and roh-BUST ER-ur HAND-ling"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-robust-error-handling"
+    },
+    {
+      "english": "as different AI agents interact with",
+      "chinese": "",
+      "difficulty": "hard",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "uz DIF-runt AY EYE AY-junts in-tur-AKT with",
+      "ipa": "əz ˈdɪf.rənt eɪ aɪ ˈeɪ.dʒənts ˌɪn.təˈrækt wɪð",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "əz ˈdɪf.rənt eɪ aɪ ˈeɪ.dʒənts ˌɪn.təˈrækt wɪð",
+          "phonetic": "uz DIF-runt AY EYE AY-junts in-tur-AKT with"
+        },
+        "american": {
+          "ipa": "əz ˈdɪf.rənt eɪ aɪ ˈeɪ.dʒənts ˌɪn.tɚˈækt wɪð",
+          "phonetic": "uz DIF-runt AY EYE AY-junts in-tur-AKT with"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "as-different-ai-agents-interact-with"
+    },
+    {
+      "english": "various data sources",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "VAIR-ee-us DAY-tuh SAWR-siz",
+      "ipa": "ˈveə.ri.əs ˈdeɪ.tə ˈsɔː.sɪz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈveə.ri.əs ˈdeɪ.tə ˈsɔː.sɪz",
+          "phonetic": "VAIR-ee-us DAY-tuh SAWR-siz"
+        },
+        "american": {
+          "ipa": "ˈver.i.əs ˈdeɪ.tə ˈsɔr.səz",
+          "phonetic": "VAIR-ee-us DAY-tuh SAWR-suz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "various-data-sources"
+    },
+    {
+      "english": "and processing systems",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and PROH-ses-ing SIS-tumz",
+      "ipa": "ænd ˈprəʊ.ses.ɪŋ ˈsɪs.təmz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd ˈprəʊ.ses.ɪŋ ˈsɪs.təmz",
+          "phonetic": "and PROH-ses-ing SIS-tumz"
+        },
+        "american": {
+          "ipa": "ænd ˈproʊ.ses.ɪŋ ˈsɪs.təmz",
+          "phonetic": "and PROH-ses-ing SIS-tumz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-processing-systems"
+    },
+    {
+      "english": "docker containers would ensure",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "DOK-ur kun-TAY-nuhz wood in-SHOOR",
+      "ipa": "ˈdɒk.ər kənˈteɪ.nəz wʊd ɪnˈʃʊə",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈdɒk.ər kənˈteɪ.nəz wʊd ɪnˈʃʊə",
+          "phonetic": "DOK-ur kun-TAY-nuhz wood in-SHOOR"
+        },
+        "american": {
+          "ipa": "ˈdɑk.ɚ kənˈteɪ.nɚz wʊd ɪnˈʃʊr",
+          "phonetic": "DAHK-ur kun-TAY-nurz wood in-SHOOR"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "docker-containers-would-ensure"
+    },
+    {
+      "english": "consistent deployment",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "kun-SIS-tunt di-PLOY-munt",
+      "ipa": "kənˈsɪs.tənt dɪˈplɔɪ.mənt",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "kənˈsɪs.tənt dɪˈplɔɪ.mənt",
+          "phonetic": "kun-SIS-tunt di-PLOY-munt"
+        },
+        "american": {
+          "ipa": "kənˈsɪs.tənt dɪˈplɔɪ.mənt",
+          "phonetic": "kun-SIS-tunt di-PLOY-munt"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "consistent-deployment"
+    },
+    {
+      "english": "across development",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "uh-KROSS di-VEL-up-munt",
+      "ipa": "əˈkrɒs dɪˈvel.əp.mənt",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "əˈkrɒs dɪˈvel.əp.mənt",
+          "phonetic": "uh-KROSS di-VEL-up-munt"
+        },
+        "american": {
+          "ipa": "əˈkrɔs dɪˈvel.əp.mənt",
+          "phonetic": "uh-KRAWS di-VEL-up-munt"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "across-development"
+    },
+    {
+      "english": "and production environments",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and pruh-DUK-shun in-VY-run-munts",
+      "ipa": "ænd prəˈdʌk.ʃən ɪnˈvaɪ.rən.mənts",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd prəˈdʌk.ʃən ɪnˈvaɪ.rən.mənts",
+          "phonetic": "and pruh-DUK-shun in-VY-run-munts"
+        },
+        "american": {
+          "ipa": "ænd prəˈdʌk.ʃən ɪnˈvaɪ.rən.mənts",
+          "phonetic": "and pruh-DUK-shun in-VY-run-munts"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-production-environments"
+    },
+    {
+      "english": "while git workflows",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "wyl GIT WURK-flohz",
+      "ipa": "waɪl ɡɪt ˈwɜːk.fləʊz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "waɪl ɡɪt ˈwɜːk.fləʊz",
+          "phonetic": "wyl GIT WURK-flohz"
+        },
+        "american": {
+          "ipa": "waɪl ɡɪt ˈwɝk.floʊz",
+          "phonetic": "wyl GIT WURK-flohz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "while-git-workflows"
+    },
+    {
+      "english": "would enable collaborative development",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "wood in-AY-bul kuh-LAB-ur-uh-tiv di-VEL-up-munt",
+      "ipa": "wʊd ɪnˈeɪ.bəl kəˈlæb.ər.ə.tɪv dɪˈvel.əp.mənt",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "wʊd ɪnˈeɪ.bəl kəˈlæb.ər.ə.tɪv dɪˈvel.əp.mənt",
+          "phonetic": "wood in-AY-bul kuh-LAB-ur-uh-tiv di-VEL-up-munt"
+        },
+        "american": {
+          "ipa": "wʊd ɪnˈeɪ.bəl kəˈlæb.ɚ.ə.tɪv dɪˈvel.əp.mənt",
+          "phonetic": "wood in-AY-bul kuh-LAB-ur-uh-tiv di-VEL-up-munt"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "would-enable-collaborative-development"
+    },
+    {
+      "english": "of increasingly",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "uv in-KREE-sing-lee",
+      "ipa": "əv ɪnˈkriː.sɪŋ.li",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "əv ɪnˈkriː.sɪŋ.li",
+          "phonetic": "uv in-KREE-sing-lee"
+        },
+        "american": {
+          "ipa": "əv ɪnˈkri.sɪŋ.li",
+          "phonetic": "uv in-KREE-sing-lee"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "of-increasingly"
+    },
+    {
+      "english": "sophisticated",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "suh-FIS-ti-kay-tid",
+      "ipa": "səˈfɪs.tɪ.keɪ.tɪd",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "səˈfɪs.tɪ.keɪ.tɪd",
+          "phonetic": "suh-FIS-ti-kay-tid"
+        },
+        "american": {
+          "ipa": "səˈfɪs.tə.keɪ.tɪd",
+          "phonetic": "suh-FIS-tuh-kay-tid"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "sophisticated"
+    },
+    {
+      "english": "AI capabilities",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "AY EYE kay-puh-BIL-uh-teez",
+      "ipa": "eɪ aɪ ˌkeɪ.pəˈbɪl.ə.tiz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "eɪ aɪ ˌkeɪ.pəˈbɪl.ə.tiz",
+          "phonetic": "AY EYE kay-puh-BIL-uh-teez"
+        },
+        "american": {
+          "ipa": "eɪ aɪ ˌkeɪ.pəˈbɪl.ə.tiz",
+          "phonetic": "AY EYE kay-puh-BIL-uh-teez"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "ai-capabilities"
+    },
+    {
+      "english": "underlying principles",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "un-dur-LY-ing PRIN-suh-pulz",
+      "ipa": "ˌʌn.dəˈlaɪ.ɪŋ ˈprɪn.sə.pəlz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˌʌn.dəˈlaɪ.ɪŋ ˈprɪn.sə.pəlz",
+          "phonetic": "un-dur-LY-ing PRIN-suh-pulz"
+        },
+        "american": {
+          "ipa": "ˌʌn.dɚˈlaɪ.ɪŋ ˈprɪn.sə.pəlz",
+          "phonetic": "un-dur-LY-ing PRIN-suh-pulz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "underlying-principles"
+    },
+    {
+      "english": "memorizing",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "MEM-uh-ry-zing",
+      "ipa": "ˈmem.ər.aɪ.zɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈmem.ər.aɪ.zɪŋ",
+          "phonetic": "MEM-uh-ry-zing"
+        },
+        "american": {
+          "ipa": "ˈmem.ɚ.aɪ.zɪŋ",
+          "phonetic": "MEM-uh-ry-zing"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "memorizing"
+    },
+    {
+      "english": "specific syntax",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "spuh-SIF-ik SIN-taks",
+      "ipa": "spəˈsɪf.ɪk ˈsɪn.tæks",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "spəˈsɪf.ɪk ˈsɪn.tæks",
+          "phonetic": "spuh-SIF-ik SIN-taks"
+        },
+        "american": {
+          "ipa": "spəˈsɪf.ɪk ˈsɪn.tæks",
+          "phonetic": "spuh-SIF-ik SIN-taks"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "specific-syntax"
+    },
+    {
+      "english": "or configurations",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "awr kun-fig-yuh-RAY-shunz",
+      "ipa": "ɔː kənˌfɪɡ.jʊˈreɪ.ʃənz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɔː kənˌfɪɡ.jʊˈreɪ.ʃənz",
+          "phonetic": "awr kun-fig-yuh-RAY-shunz"
+        },
+        "american": {
+          "ipa": "ɔr kənˌfɪɡ.jəˈreɪ.ʃənz",
+          "phonetic": "awr kun-fig-yuh-RAY-shunz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "or-configurations"
+    },
+    {
+      "english": "engage with",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "in-GAYJ with",
+      "ipa": "ɪnˈɡeɪdʒ wɪð",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɪnˈɡeɪdʒ wɪð",
+          "phonetic": "in-GAYJ with"
+        },
+        "american": {
+          "ipa": "ɪnˈɡeɪdʒ wɪð",
+          "phonetic": "in-GAYJ with"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "engage-with"
+    },
+    {
+      "english": "the conceptual foundations",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "thuh kun-SEP-choo-ul fown-DAY-shunz",
+      "ipa": "ðə kənˈsep.tʃu.əl faʊnˈdeɪ.ʃənz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ðə kənˈsep.tʃu.əl faʊnˈdeɪ.ʃənz",
+          "phonetic": "thuh kun-SEP-choo-ul fown-DAY-shunz"
+        },
+        "american": {
+          "ipa": "ðə kənˈsep.tʃu.əl faʊnˈdeɪ.ʃənz",
+          "phonetic": "thuh kun-SEP-choo-ul fown-DAY-shunz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "the-conceptual-foundations"
+    },
+    {
+      "english": "and design trade-offs",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and di-ZYNE TRAYD ofs",
+      "ipa": "ænd dɪˈzaɪn ˈtreɪd ɒfs",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd dɪˈzaɪn ˈtreɪd ɒfs",
+          "phonetic": "and di-ZYNE TRAYD ofs"
+        },
+        "american": {
+          "ipa": "ænd dɪˈzaɪn ˈtreɪd ɔfs",
+          "phonetic": "and di-ZYNE TRAYD awfs"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-design-tradeoffs"
+    },
+    {
+      "english": "prepare to discuss",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "pri-PAIR too di-SKUSS",
+      "ipa": "prɪˈpeə tuː dɪˈskʌs",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "prɪˈpeə tuː dɪˈskʌs",
+          "phonetic": "pri-PAIR too di-SKUSS"
+        },
+        "american": {
+          "ipa": "prɪˈper tu dɪˈskʌs",
+          "phonetic": "pri-PAIR too di-SKUSS"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "prepare-to-discuss"
+    },
+    {
+      "english": "how different technologies",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "HOW DIF-runt tek-NOL-uh-jeez",
+      "ipa": "haʊ ˈdɪf.rənt tekˈnɒl.ə.dʒiz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "haʊ ˈdɪf.rənt tekˈnɒl.ə.dʒiz",
+          "phonetic": "HOW DIF-runt tek-NOL-uh-jeez"
+        },
+        "american": {
+          "ipa": "haʊ ˈdɪf.rənt tekˈnɑl.ə.dʒiz",
+          "phonetic": "HOW DIF-runt tek-NAHL-uh-jeez"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "how-different-technologies"
+    },
+    {
+      "english": "complement each other",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "KOM-pli-ment EECH UH-thur",
+      "ipa": "ˈkɒm.plɪ.ment iːtʃ ˈʌð.ər",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈkɒm.plɪ.ment iːtʃ ˈʌð.ər",
+          "phonetic": "KOM-pli-ment EECH UH-thur"
+        },
+        "american": {
+          "ipa": "ˈkɑm.plə.ment itʃ ˈʌð.ɚ",
+          "phonetic": "KAHM-pluh-ment EECH UH-thur"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "complement-each-other"
+    },
+    {
+      "english": "where their limitations",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "WAIR thair lim-i-TAY-shunz",
+      "ipa": "weə ðeə ˌlɪm.ɪˈteɪ.ʃənz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "weə ðeə ˌlɪm.ɪˈteɪ.ʃənz",
+          "phonetic": "WAIR thair lim-i-TAY-shunz"
+        },
+        "american": {
+          "ipa": "wer ðer ˌlɪm.əˈteɪ.ʃənz",
+          "phonetic": "WAIR thair lim-uh-TAY-shunz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "where-their-limitations"
+    },
+    {
+      "english": "create opportunities",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "kri-AYT op-uh-TYOO-nuh-teez",
+      "ipa": "kriˈeɪt ˌɒp.əˈtjuː.nə.tiz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "kriˈeɪt ˌɒp.əˈtjuː.nə.tiz",
+          "phonetic": "kri-AYT op-uh-TYOO-nuh-teez"
+        },
+        "american": {
+          "ipa": "kriˈeɪt ˌɑp.ɚˈtu.nə.tiz",
+          "phonetic": "kri-AYT ahp-ur-TOO-nuh-teez"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "create-opportunities"
+    },
+    {
+      "english": "for hybrid approaches",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "fawr HY-brid uh-PROH-chiz",
+      "ipa": "fɔː ˈhaɪ.brɪd əˈprəʊ.tʃɪz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "fɔː ˈhaɪ.brɪd əˈprəʊ.tʃɪz",
+          "phonetic": "fawr HY-brid uh-PROH-chiz"
+        },
+        "american": {
+          "ipa": "fɔr ˈhaɪ.brɪd əˈproʊ.tʃəz",
+          "phonetic": "fawr HY-brid uh-PROH-chuz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "for-hybrid-approaches"
+    },
+    {
+      "english": "and how technical decisions",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and HOW TEK-ni-kul di-SIZH-unz",
+      "ipa": "ænd haʊ ˈtek.nɪ.kəl dɪˈsɪʒ.ənz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd haʊ ˈtek.nɪ.kəl dɪˈsɪʒ.ənz",
+          "phonetic": "and HOW TEK-ni-kul di-SIZH-unz"
+        },
+        "american": {
+          "ipa": "ænd haʊ ˈtek.nə.kəl dəˈsɪʒ.ənz",
+          "phonetic": "and HOW TEK-nuh-kul duh-SIZH-unz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-how-technical-decisions"
+    },
+    {
+      "english": "impact user experience",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "IM-pakt YOO-zur ik-SPEER-ee-uns",
+      "ipa": "ˈɪm.pækt ˈjuː.zər ɪkˈspɪə.ri.əns",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈɪm.pækt ˈjuː.zər ɪkˈspɪə.ri.əns",
+          "phonetic": "IM-pakt YOO-zur ik-SPEER-ee-uns"
+        },
+        "american": {
+          "ipa": "ˈɪm.pækt ˈju.zɚ ɪkˈspɪr.i.əns",
+          "phonetic": "IM-pakt YOO-zur ik-SPEER-ee-uns"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "impact-user-experience"
+    },
+    {
+      "english": "and system reliability",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "and SIS-tum ri-ly-uh-BIL-uh-tee",
+      "ipa": "ænd ˈsɪs.təm rɪˌlaɪ.əˈbɪl.ə.ti",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ænd ˈsɪs.təm rɪˌlaɪ.əˈbɪl.ə.ti",
+          "phonetic": "and SIS-tum ri-ly-uh-BIL-uh-tee"
+        },
+        "american": {
+          "ipa": "ænd ˈsɪs.təm rɪˌlaɪ.əˈbɪl.ə.ti",
+          "phonetic": "and SIS-tum ri-ly-uh-BIL-uh-tee"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "and-system-reliability"
+    },
+    {
+      "english": "this demonstrates",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "THIS DEM-un-strayts",
+      "ipa": "ðɪs ˈdem.ən.streɪts",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ðɪs ˈdem.ən.streɪts",
+          "phonetic": "THIS DEM-un-strayts"
+        },
+        "american": {
+          "ipa": "ðɪs ˈdem.ən.streɪts",
+          "phonetic": "THIS DEM-un-strayts"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "this-demonstrates"
+    },
+    {
+      "english": "the sophisticated",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "thuh suh-FIS-ti-kay-tid",
+      "ipa": "ðə səˈfɪs.tɪ.keɪ.tɪd",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ðə səˈfɪs.tɪ.keɪ.tɪd",
+          "phonetic": "thuh suh-FIS-ti-kay-tid"
+        },
+        "american": {
+          "ipa": "ðə səˈfɪs.tə.keɪ.tɪd",
+          "phonetic": "thuh suh-FIS-tuh-kay-tid"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "the-sophisticated"
+    },
+    {
+      "english": "technical thinking",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "TEK-ni-kul THINK-ing",
+      "ipa": "ˈtek.nɪ.kəl ˈθɪŋk.ɪŋ",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ˈtek.nɪ.kəl ˈθɪŋk.ɪŋ",
+          "phonetic": "TEK-ni-kul THINK-ing"
+        },
+        "american": {
+          "ipa": "ˈtek.nə.kəl ˈθɪŋk.ɪŋ",
+          "phonetic": "TEK-nuh-kul THINK-ing"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "technical-thinking"
+    },
+    {
+      "english": "that research environments require",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "that ri-SURCH in-VY-run-munts ri-KWYUR",
+      "ipa": "ðæt rɪˈsɜːtʃ ɪnˈvaɪ.rən.mənts rɪˈkwaɪə",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ðæt rɪˈsɜːtʃ ɪnˈvaɪ.rən.mənts rɪˈkwaɪə",
+          "phonetic": "that ri-SURCH in-VY-run-munts ri-KWYUR"
+        },
+        "american": {
+          "ipa": "ðæt rɪˈsɝtʃ ɪnˈvaɪ.rən.mənts rɪˈkwaɪɚ",
+          "phonetic": "that ri-SURCH in-VY-run-munts ri-KWYUR"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "that-research-environments-require"
+    },
+    {
+      "english": "for building systems",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "fawr BIL-ding SIS-tumz",
+      "ipa": "fɔː ˈbɪl.dɪŋ ˈsɪs.təmz",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "fɔː ˈbɪl.dɪŋ ˈsɪs.təmz",
+          "phonetic": "fawr BIL-ding SIS-tumz"
+        },
+        "american": {
+          "ipa": "fɔr ˈbɪl.dɪŋ ˈsɪs.təmz",
+          "phonetic": "fawr BIL-ding SIS-tumz"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "for-building-systems"
+    },
+    {
+      "english": "that support scientific discovery",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "that suh-PAWRT sy-un-TIF-ik dis-KUV-uh-ree",
+      "ipa": "ðæt səˈpɔːt ˌsaɪ.ənˈtɪf.ɪk dɪsˈkʌv.ər.i",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ðæt səˈpɔːt ˌsaɪ.ənˈtɪf.ɪk dɪsˈkʌv.ər.i",
+          "phonetic": "that suh-PAWRT sy-un-TIF-ik dis-KUV-uh-ree"
+        },
+        "american": {
+          "ipa": "ðæt səˈpɔrt ˌsaɪ.ənˈtɪf.ɪk dɪsˈkʌv.ɚ.i",
+          "phonetic": "that suh-PAWRT sy-un-TIF-ik dis-KUV-ur-ee"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "that-support-scientific-discovery"
+    },
+    {
+      "english": "effectively",
+      "chinese": "",
+      "difficulty": "normal",
+      "example": "",
+      "exampleChinese": "",
+      "conversationId": "",
+      "sentenceId": "",
+      "phonetic": "i-FEK-tiv-lee",
+      "ipa": "ɪˈfek.tɪv.li",
+      "pronunciationGuide": {
+        "british": {
+          "ipa": "ɪˈfek.tɪv.li",
+          "phonetic": "i-FEK-tiv-lee"
+        },
+        "american": {
+          "ipa": "əˈfek.tɪv.li",
+          "phonetic": "uh-FEK-tiv-lee"
+        }
+      },
+      "source": "resumeTerms",
+      "id": "effectively"
     }
   ]
 }

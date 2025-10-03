@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="mobile-web-app-capable" content="yes">
-    <title>CCL Pronunciation Trainer</title>
+    <title>Professional Vocabulary Pronunciation Trainer</title>
     <link rel="icon" href="data:,">
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="src/css/style.css?v=10">
@@ -19,7 +19,7 @@
     <div class="app-layout-grid">
         <!-- Minimalist header - hidden on mobile -->
         <header class="app-header">
-            <h1 class="app-title">🎧 CCL Trainer</h1>
+            <h1 class="app-title">💼 Professional Vocabulary</h1>
         </header>
 
         <!-- Main learning area (80% of screen height) -->
@@ -61,28 +61,25 @@
                 <div class="setting-item">
                     <label for="learningModeSelect">Mode:</label>
                     <select id="learningModeSelect">
-                        <option value="vocabulary" selected>📚 Vocabulary Focus</option>
-                        <option value="unfamiliar">🔥 Unfamiliar Words</option>
-                        <option value="words">📝 Words Dataset</option>
-                        <option value="chinese-english">🈯 Chinese-English Pairs</option>
-                        <option value="resume-terms">💼 Resume Terms</option>
+                        <option value="resume-terms" selected>💼 Resume Terms</option>
                         <option value="aiml-terms">🤖 AI/ML Terms</option>
-                        <option value="dialogue">💬 Dialogue Practice</option>
+                        <option value="professional-terms">🌟 All Professional Terms</option>
                     </select>
                 </div>
-                <!-- Vocabulary source removed - only using conversation-based -->
+                <!-- Professional categories -->
                 <div class="setting-item">
                     <label for="categorySelect">Category:</label>
                     <select id="categorySelect">
-                        <option value="housing" selected>🏠 Housing</option>
-                        <option value="social-welfare">🤝 Social Welfare</option>
-                        <option value="legal">⚖️ Legal</option>
-                        <option value="immigration">🛂 Immigration</option>
-                        <option value="business">💼 Business</option>
-                        <option value="medical">🏥 Medical</option>
-                        <option value="education">🎓 Education</option>
-                        <option value="tourism">✈️ Tourism</option>
-                        <option value="social">👥 Social</option>
+                        <option value="foundation-terms" selected>🧠 Foundation Terms</option>
+                        <option value="essential-production-terms">⚙️ Production Terms</option>
+                        <option value="agent-automation-terms">🤖 Agent & Automation</option>
+                        <option value="model-training-data">📊 Model Training</option>
+                        <option value="explainability-trust">🔍 Explainability & Trust</option>
+                        <option value="mlops-production">🚀 MLOps & Production</option>
+                        <option value="natural-language-processing">📝 NLP</option>
+                        <option value="computer-vision">👁️ Computer Vision</option>
+                        <option value="model-types-architectures">📐 Model Architectures</option>
+                        <option value="optimization-efficiency">⚡ Optimization</option>
                         <option value="all-categories">🌟 All Categories</option>
                     </select>
                 </div>
@@ -172,7 +169,7 @@
     <script src="src/js/utils/CacheMigration.js?v=1"></script>
 
     <!-- Core Logic Modules -->
-    <script src="src/js/core/VocabularyManager.js?v=12&t=1734054000"></script>
+    <script src="src/js/core/ResumeVocabularyManager.js?v=1"></script>
     <script src="src/js/core/ProgressTracker.js?v=1"></script>
 
     <!-- Pronunciation Database -->
@@ -188,7 +185,7 @@
     <script src="src/js/ui/SettingsPanel.js?v=3&t=1734054000"></script>
 
     <!-- Main App Coordinator -->
-    <script src="src/js/core/App.js?v=2"></script>
+    <script src="src/js/core/ResumeApp.js?v=1"></script>
 </body>
 
 </html>

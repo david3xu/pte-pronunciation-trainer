@@ -4,35 +4,34 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-CCL (NAATI Credentialed Community Language) pronunciation training web application with conversation-based vocabulary system and Australian English text-to-speech focus.
+Professional Vocabulary Pronunciation Trainer - A specialized web-based pronunciation training application for professional vocabulary and AI/ML terminology with IPA guides and text-to-speech with British/American pronunciation.
 
-**✅ FULLY REFACTORED (Dec 2024)**: Complete architectural improvements implemented with 100% backward compatibility.
+**✅ STREAMLINED (Oct 2025)**: Architecture optimized exclusively for professional vocabulary pronunciation training.
 
 ## Essential Commands
 
 ```bash
-# 🆕 UNIFIED COMMANDS (Recommended):
-npm run data                  # Single data pipeline (replaces 11 scripts)
-npm run start                 # Generate data + start server
-npm run deploy                # Generate data + build + validate
+# 🆕 RESUME-SPECIFIC COMMANDS:
+npm run data:resume           # Process only resume & AI/ML data
+npm run start:resume          # Generate resume data + start server
+npm run deploy:resume         # Generate data + build + validate
 
 # 📊 Data Generation:
-npm run data                  # NEW: Unified pipeline (0.23s, all sources)
-npm run data:legacy           # Legacy: Multiple scripts pipeline
+npm run data:resume           # Process only resume & AI/ML terms
+npm run extract-vocab         # Legacy support for backward compatibility
 
 # 🔧 Development:
 npm run dev                   # Start server at http://localhost:3000
-npm start                     # NEW: data + dev (recommended)
-npm run start:legacy          # Legacy: process-all-data + dev
+npm run start:resume          # Data + dev (recommended)
 
 # 🧪 Quality & Testing:
 npm run lint                  # ESLint for JS + Stylelint for CSS
 npm run test                  # Run Jest tests (jsdom environment)
-npm run validate              # Validate all vocabulary data
+npm run validate              # Validate vocabulary data
 
 # 🚀 Production:
 npm run build                 # Minify and build for production
-npm run vercel-build          # Vercel: data + build (auto-deploy)
+npm run vercel-build:resume   # Vercel: resume data + build (optimized)
 
 # 🧹 Cleanup:
 npm run clean                 # Remove dist/ data/generated/ data/processed/
@@ -45,13 +44,13 @@ npm run test -- --coverage
 
 ## Architecture
 
-### 🆕 Unified Data Pipeline
+### 🆕 Resume Data Pipeline
 ```
-data-processing/extractors/*.md → scripts/unified-data-pipeline.js → data/processed/*.json → Browser
+data-processing/resume-terms.md + temp.md → scripts/resume-data-pipeline.js → data/processed/*.json → Browser
 ```
-**✅ Single Command**: `npm run data` generates all datasets with validation and reporting
-**🔄 Legacy Support**: Old pipeline available via `npm run data:legacy`
-**⚡ Performance**: 0.23s processing time, 8,591+ items, 0 errors
+**✅ Focused Processing**: `npm run data:resume` processes only professional vocabulary
+**🔄 Professional Terms**: Resume terms with IPA + AI/ML technical terminology
+**⚡ Performance**: Optimized pipeline for professional vocabulary only
 
 ### 🆕 Module Architecture
 ```javascript
@@ -75,51 +74,53 @@ window.CCLApp.getModule('config').merge({ custom: { setting: 'value' } });
 ### Project Structure
 ```
 src/js/
-├── shared/         # 🆕 Infrastructure modules
-│   ├── AppNamespace.js      # Unified namespace (1 vs 15+ globals)
-│   ├── Config.js            # Centralized configuration
+├── shared/         # Infrastructure modules
+│   ├── AppNamespace.js      # Unified namespace
+│   ├── Config.js            # Centralized configuration with inline constants
 │   ├── DataSchema.js        # Standardized data formats
-│   └── LegacyCompatibility.js # 100% backward compatibility
-├── core/           # App.js coordinator, VocabularyManager, ProgressTracker
-├── audio/          # TTSEngine (en-AU focus), VoiceSelector, AudioControls
+│   └── LegacyCompatibility.js # Compatibility layer
+├── core/           # ResumeApp.js, ResumeVocabularyManager, ProgressTracker
+├── audio/          # TTSEngine (British/American focus), VoiceSelector
 ├── ui/             # UIController, SettingsPanel (vocabulary switcher)
 └── utils/          # EventBus, Storage (localStorage wrapper)
 
-scripts/            # Simplified build tools
-├── unified-data-pipeline.js # 🆕 Single data pipeline (886 lines)
-├── conversation-vocabulary-extractor.js # Legacy support
-├── build.js               # Production build with minification
-└── validate.js            # Data integrity validation
+scripts/            # Build tools
+├── resume-data-pipeline.js # Resume-specific data pipeline
+├── build.js                # Production build with minification
+└── validate.js             # Data integrity validation
 
 data/               # Organized data directories
-├── processed/      # 🆕 Standardized JSON datasets (primary)
-├── generated/      # Legacy JS data files (compatibility)
-└── conversation/   # Raw conversation data
+├── processed/      # Standardized JSON datasets (resume terms)
+├── generated/      # JS data files (compatibility)
+└── reports/        # Processing reports and validation results
+
+data-processing/    # Source data files
+├── resume-terms.md # Professional terms with IPA guides
+└── temp.md         # AI/ML terminology by category
 ```
 
 ## Key Features
 
-### Conversation-Based Vocabulary System
-- **Comprehensive**: 2,831 terms from 96 real CCL conversations
-- **Unfamiliar Words**: 2,360 curated challenging terms
-- **Resume Terms**: 445 professional terms with IPA pronunciation guides
-- **Words Dataset**: 2,955 terms from dialogue analysis
-- **Contextual Examples**: Full bilingual example sentences
-- **Category Organization**: Group-based (240s, 230s, etc.) + domain classification
+### Professional Vocabulary System
+- **Resume Terms**: 445+ professional terms with IPA pronunciation guides
+- **AI/ML Terminology**: 150+ technical terms organized by category
+- **Phonetic Guides**: Intuitive pronunciation with "sounds like" descriptions
+- **British/American Variants**: Side-by-side pronunciation comparison
+- **Technical Focus**: Specialized vocabulary for professional settings
+- **Category Organization**: Foundation Terms, MLOps, NLP, Computer Vision, etc.
 
 ### Learning Modes
-- **📚 Vocabulary Focus**: Complete vocabulary from all dialogues
-- **💬 Dialogue Practice**: Full conversation sentences with contextual flow
-- **🔥 Unfamiliar Words**: Curated challenging vocabulary for advanced study
-- **📝 Words Practice**: Dialogue-based word lists
-- **💼 Resume Terms**: Professional pronunciation with IPA guides
+- **💼 Resume Terms**: Professional vocabulary with IPA pronunciation guides
+- **🤖 AI/ML Terms**: Cutting-edge technical terminology by category
+- **🌟 All Professional Terms**: Complete professional vocabulary collection
 
 ### Text-to-Speech Engine
-- **Australian English Priority**: en-AU voices for NAATI context
-- **Voice Selection**: Google UK English Male (default) → Microsoft James (en-AU) → fallbacks
+- **British/American Focus**: UK and US voice options for professional settings
+- **Voice Selection**: Google UK English Male (primary) with multiple fallbacks
 - **Multiple Speeds**: Slow (0.7) → Normal (1.0) → Fast (1.3)
 - **Repeat Modes**: 1x, 2x (Slow+Normal), 3x (Slow+Normal+Fast), Loop
 - **Configurable Delays**: 1-4 seconds between pronunciations
+- **IPA Visualization**: International Phonetic Alphabet notation for precise pronunciation
 
 ### Keyboard Shortcuts
 - **Space**: Play/Pause pronunciation
@@ -137,13 +138,9 @@ data/               # Organized data directories
 
 ### Input Sources
 ```markdown
-# Processed by unified pipeline:
-data-processing/extractors/merged-conversations.md    # Highlighted _term_ extraction
-data-processing/extractors/unfamilar-words.md       # Dialogue ID + term lists
-data-processing/vocabulary-clean.md                 # Table format extraction
-data-processing/words.md                            # Simple word lists
-data-processing/english-chinese-word-pairs.md       # Bilingual pairs
-data-processing/resume-terms.md                     # IPA pronunciation guides
+# Processed by resume data pipeline:
+data-processing/resume-terms.md      # IPA pronunciation guides with British/American variants
+data-processing/temp.md              # AI/ML terminology by category with definitions
 ```
 
 ### Output Formats
@@ -151,23 +148,23 @@ data-processing/resume-terms.md                     # IPA pronunciation guides
 // Standardized JSON (primary)
 {
   "metadata": {
-    "generated": "2024-12-25T19:52:00Z",
-    "totalTerms": 2831,
-    "source": "unified-pipeline-conversations",
-    "version": "2.0"
+    "generated": "2025-10-04T08:45:12Z",
+    "totalTerms": 445,
+    "source": "resume-data-pipeline",
+    "version": "3.0"
   },
   "vocabulary": [
     {
-      "english": "crew",
-      "chinese": "施工队",
-      "difficulty": "easy",
-      "category": "business-finance",
-      "example": "The crew has finished the walls, floors, and doors.",
-      "exampleChinese": "施工队已经完成了墙壁、地板和门。",
-      "conversationId": "70241",
-      "sentenceId": "3",
-      "source": "conversations",
-      "id": "crew"
+      "english": "artificial intelligence",
+      "ipa_uk": "/ˌɑːtɪˈfɪʃəl ɪnˈtelɪdʒəns/",
+      "phonetic_uk": "AH-tih-FISH-uhl in-TELL-ih-juhns",
+      "ipa_us": "/ˌɑːrtɪˈfɪʃəl ɪnˈtɛlɪdʒəns/",
+      "phonetic_us": "AR-tih-FISH-uhl in-TELL-ih-juhns",
+      "difficulty": "hard",
+      "category": "foundation-terms",
+      "definition": "Field enabling computers to perform tasks requiring human intelligence",
+      "source": "resume-terms",
+      "id": "artificial-intelligence"
     }
   ]
 }
@@ -177,28 +174,28 @@ data-processing/resume-terms.md                     # IPA pronunciation guides
 
 ### Data Processing
 ```bash
-# Single command for all data sources
-npm run data
+# Process resume-specific data
+npm run data:resume
 
 # Pipeline stages:
-# 1. Extract: Parse all markdown sources
-# 2. Standardize: Convert to unified format
-# 3. Generate: Create specialized datasets
+# 1. Extract: Parse resume-terms.md and temp.md
+# 2. Process: Convert to standardized format
+# 3. Generate: Create resume-specific datasets
 # 4. Validate: Check data integrity
 # 5. Legacy: Create JS compatibility files
 ```
 
 ### Development Server
 ```bash
-npm run start    # Generate data + Python HTTP server on :3000
-npm run dev      # Server only (requires existing data)
+npm run start:resume  # Generate resume data + Python HTTP server on :3000
+npm run dev           # Server only (requires existing data)
 ```
 
 ### Production Build
 ```bash
-npm run build         # Minify JS/CSS/HTML
-npm run deploy        # Data + build + validate
-npm run vercel-build  # Optimized for Vercel deployment
+npm run build          # Minify JS/CSS/HTML
+npm run deploy:resume  # Resume data + build + validate
+npm run vercel-build:resume # Optimized for Vercel deployment
 ```
 
 ## Testing
@@ -360,7 +357,7 @@ window.vocabularyManager                      // Legacy (still works)
 
 ---
 
-**Architecture Status**: ✅ **FULLY REFACTORED**
-**Backward Compatibility**: ✅ **100% GUARANTEED**
-**Data Pipeline**: ✅ **UNIFIED & TESTED**
-**Module Registration**: ✅ **ALL 18 MODULES UPDATED**
+**Architecture Status**: ✅ **STREAMLINED FOR PROFESSIONAL VOCABULARY**
+**British/American Focus**: ✅ **DUAL PRONUNCIATION SUPPORT**
+**Data Pipeline**: ✅ **RESUME-SPECIFIC & OPTIMIZED**
+**Module Registration**: ✅ **PROFESSIONAL VOCABULARY MODULES READY**

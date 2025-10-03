@@ -1,125 +1,125 @@
-# CCL Pronunciation Trainer
+# Professional Vocabulary Pronunciation Trainer
 
-A comprehensive web-based pronunciation training application for NAATI CCL (Credentialed Community Language) exam preparation, featuring conversation-based vocabulary with real-world context.
+A specialized web-based pronunciation training application for professional vocabulary and AI/ML terminology, featuring IPA guides and text-to-speech with British and American pronunciation variants.
 
-**✅ FULLY REFACTORED (Dec 2024)** - Complete architectural improvements with 100% backward compatibility.
+**✅ FULLY REFACTORED (Oct 2025)** - Streamlined architecture focused exclusively on professional vocabulary.
 
 ## 🎯 Key Features
 
-### 📚 **Comprehensive Vocabulary System**
-- **2,831 terms** from 96 real CCL conversations with full context
-- **2,360 unfamiliar words** curated for advanced learners
-- **2,955 words** from dialogue analysis
-- **445 resume terms** with IPA pronunciation guides
-- **Contextual examples** - Every term includes bilingual sentence context
+### 📚 **Professional Vocabulary System**
+- **445+ professional terms** with detailed IPA pronunciation guides
+- **150+ AI/ML terms** organized by category (Foundation, MLOps, NLP, etc.)
+- **Phonetic spelling** for intuitive pronunciation practice
+- **British and American variants** with side-by-side comparison
+- **Technical terminology** focused on modern professional environments
 
-### 🎓 **Five Learning Modes**
-- **📚 Vocabulary Focus** - Complete vocabulary from all dialogues
-- **💬 Dialogue Practice** - Full conversation sentences with contextual flow
-- **🔥 Unfamiliar Words** - Curated challenging vocabulary for advanced study
-- **📝 Words Practice** - Dialogue-based word lists
+### 🎓 **Specialized Learning Modes**
 - **💼 Resume Terms** - Professional vocabulary with IPA pronunciation guides
+- **🤖 AI/ML Terms** - Cutting-edge technical terminology by category
+- **🌟 All Professional Terms** - Complete professional vocabulary collection
 
 ### 🔊 **Advanced Pronunciation Training**
-- **Australian English Priority** - en-AU voices optimized for NAATI CCL context
-- **Smart Voice Selection** - Google UK English Male → Microsoft James (en-AU) → fallbacks
+- **British/American Priority** - UK and US voice options for professional settings
+- **Smart Voice Selection** - Google UK English Male (primary) with multiple fallbacks
 - **Multiple Speeds** - Slow (0.7x) → Normal (1.0x) → Fast (1.3x) progression
 - **Repeat Modes** - 1x, 2x (Slow+Normal), 3x (Slow+Normal+Fast), Loop
 - **Configurable Delays** - 1-4 second intervals between pronunciations
+- **IPA Visualization** - International Phonetic Alphabet notation for precise pronunciation
 
 ### 📱 **Modern User Experience**
 - **Mobile-Responsive Design** (320px to 1400px+) with touch optimization
 - **Keyboard Shortcuts** - Space (play/pause), arrows (navigate), R (repeat), F (fullscreen)
-- **Smart Categorization** - Group-based (70240s, 70230s, etc.) + domain classification
+- **Category-Based Organization** - Foundation Terms, Production Terms, MLOps, NLP, etc.
 - **Progress Tracking** - localStorage persistence with study statistics
+- **Dark/Light Mode** - Adaptive theming for comfortable study sessions
 
-### 🚀 **Unified Architecture (New)**
-- **Single Data Pipeline** - `npm run data` processes all sources in 0.23s
+### 🚀 **Streamlined Architecture**
+- **Focused Data Pipeline** - `npm run data` processes resume-specific data
 - **Centralized Configuration** - All settings in one organized location
-- **Module Namespace** - Clean architecture with backward compatibility
-- **Comprehensive Validation** - Data integrity checks and error reporting
+- **Module Namespace** - Clean architecture with optimized code structure
+- **Built-in Validation** - Data integrity checks and error reporting
+- **Smaller Footprint** - Reduced codebase focused on professional vocabulary
 
 ## 🚀 Quick Start
 
 ### **Simple Setup**
 ```bash
 # Clone repository
-git clone https://github.com/david3xu/ccl-pronunciation-trainer.git
-cd ccl-pronunciation-trainer
+git clone https://github.com/your-username/professional-vocabulary-trainer.git
+cd professional-vocabulary-trainer
 
 # Install dependencies
 npm install
 
-# Generate all data and start (recommended)
-npm run start
+# Generate resume data and start (recommended)
+npm run start:resume
 
 # Open in browser
 http://localhost:3000
 ```
 
-**That's it!** The app is ready to use with all features implemented and tested.
+**That's it!** The app is ready to use with professional vocabulary training features.
 
-## 💻 **New Development Commands**
+## 💻 **Development Commands**
 
-### **🆕 Unified Commands (Recommended)**
+### **🆕 Resume-Specific Commands**
 ```bash
-npm run data                    # Single data pipeline (0.23s, all sources)
-npm run start                   # Generate data + start server
-npm run deploy                  # Generate data + build + validate
+npm run data:resume            # Process resume data only
+npm run start:resume           # Generate resume data + start server
+npm run deploy:resume          # Generate data + build + validate
 ```
 
 ### **📊 Data Generation**
 ```bash
-npm run data                    # NEW: Unified pipeline (replaces 11 scripts)
-npm run data:legacy             # Legacy: Multiple scripts (still works)
+npm run data:resume            # Process only resume & AI/ML terms
+npm run extract-vocab          # Legacy support for backward compatibility
 ```
 
 ### **🔧 Development**
 ```bash
-npm run dev                     # Development server only
-npm start                       # NEW: data + dev (recommended)
-npm run start:legacy            # Legacy workflow (still works)
+npm run dev                    # Development server only
+npm run start:resume           # Generate resume data + start (recommended)
 ```
 
 ### **🚀 Production**
 ```bash
-npm run build                   # Production build with minification
-npm run vercel-build            # Optimized for Vercel deployment
-npm run validate                # Data validation and integrity checks
+npm run build                  # Production build with minification
+npm run vercel-build:resume    # Optimized for Vercel deployment
+npm run validate               # Data validation and integrity checks
 ```
 
 ## 📊 **Vocabulary Statistics**
 
 | **Dataset** | **Terms** | **Source** | **Focus** |
 |-------------|-----------|------------|-----------|
-| **Complete Conversations** | 2,831 | 96 CCL dialogues | Comprehensive vocabulary with context |
-| **Unfamiliar Words** | 2,360 | Curated challenging terms | Advanced learners |
-| **Words Dataset** | 2,955 | Dialogue analysis | Word-focused practice |
-| **Resume Terms** | 445 | Professional vocabulary | IPA pronunciation guides |
-| **Total Unique** | 8,000+ | Multiple sources | Complete CCL preparation |
+| **Resume Terms** | 445+ | Professional vocabulary | IPA pronunciation guides with British/American variants |
+| **AI/ML Terms** | 150+ | Technical terminology | Organized by category with definitions |
+| **Total Unique** | 595+ | Professional sources | Complete professional vocabulary |
 
 ## 🎯 **Learning Modes Explained**
-
-### **📚 Vocabulary Focus Mode**
-Perfect for comprehensive CCL vocabulary building:
-- Terms extracted from real NAATI conversations
-- Full sentence context for every term
-- Group-based organization (70240s-70150s)
-- Difficulty progression (Easy → Normal → Hard)
-
-### **🔥 Unfamiliar Words Mode**
-Designed for advanced learners:
-- Hand-curated challenging vocabulary
-- Terms selected from actual CCL conversations
-- Focus on complex multi-word phrases
-- Advanced difficulty terms prioritized
 
 ### **💼 Resume Terms Mode**
 Professional pronunciation training:
 - Technical vocabulary with IPA transcriptions
 - Phonetic spelling guides
-- British and American pronunciations
+- Side-by-side British and American pronunciations
 - Career-focused terminology
+- Difficulty levels from easy to advanced
+
+### **🤖 AI/ML Terms Mode**
+Technical terminology for artificial intelligence and machine learning:
+- Organized by functional categories
+- Foundation terms to advanced concepts
+- Current terminology (2025 updates)
+- Clear definitions for each term
+- Essential for technical interviews
+
+### **🌟 All Professional Terms Mode**
+Complete professional vocabulary collection:
+- Combined resume terms and AI/ML terminology
+- Categorized by professional domain
+- Progress tracking across all terms
+- Comprehensive pronunciation practice
 
 ## ⌨️ **Keyboard Shortcuts**
 
@@ -195,73 +195,73 @@ window.eventBus.emit('vocabulary:loaded', data);
 ## 🔄 **Data Updates**
 
 ### **Adding New Vocabulary**
-When you have new CCL conversation data:
+When you have new professional terms to add:
 
 ```bash
-# 1. Update source files in data-processing/extractors/
-# 2. Run unified pipeline
-npm run data
+# 1. Update source files in data-processing/
+# 2. Run resume data pipeline
+npm run data:resume
 
 # 3. Verify and deploy
 npm run validate
-npm run deploy
+npm run deploy:resume
 ```
 
 **Source File Formats:**
-- **Conversations**: Use `_term_` to highlight vocabulary
-- **Unfamiliar Words**: List dialogue ID + terms
-- **Resume Terms**: Include IPA notation `| /aɪˈpiːeɪ/ — sounds like **EYE-pee-ay**`
+- **Resume Terms**: Include IPA notation `term | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**`
+- **AI/ML Terms**: Use format `**Term**: Definition`
 
 ## 🚀 **Deployment**
 
 ### **Vercel (Recommended)**
 ```bash
 # Automatic deployment
-git push origin main
-# Vercel runs: npm run vercel-build
+git push origin resume
+# Vercel runs: npm run vercel-build:resume
 ```
 
 ### **Manual Deployment**
 ```bash
-npm run deploy        # Generate data + build + validate
+npm run deploy:resume        # Generate resume data + build + validate
 # Deploy dist/ folder to your hosting service
 ```
 
 ### **Development Server**
 ```bash
-npm run dev           # Python HTTP server on :3000
+npm run dev                  # Python HTTP server on :3000
 # Alternative: python3 -m http.server 3000
 ```
 
 ## 🏗️ **Project Structure**
 
 ```
-ccl-pronunciation-trainer/
+professional-vocabulary-trainer/
 ├── src/js/
-│   ├── shared/              # 🆕 Infrastructure
-│   │   ├── AppNamespace.js  # Unified namespace
-│   │   ├── Config.js        # Centralized configuration
-│   │   └── ...              # Data schema, compatibility
-│   ├── core/                # Vocabulary, progress, app coordinator
-│   ├── audio/               # TTS engine, voice selection, controls
-│   └── ui/                  # Interface, settings panels
+│   ├── shared/                 # Infrastructure modules
+│   │   ├── AppNamespace.js     # Unified namespace
+│   │   ├── Config.js           # Centralized configuration with inline constants
+│   │   └── ...                 # Data schema, compatibility
+│   ├── core/                   # ResumeApp.js, ResumeVocabularyManager
+│   ├── audio/                  # TTS engine, voice selection, controls
+│   └── ui/                     # Interface, settings panels
 ├── scripts/
-│   ├── unified-data-pipeline.js  # 🆕 Single data processor
-│   ├── build.js                  # Production builds
-│   └── validate.js               # Data validation
+│   ├── resume-data-pipeline.js # Resume-specific data processor
+│   ├── build.js                # Production builds
+│   └── validate.js             # Data validation
 ├── data/
-│   ├── processed/                # 🆕 Standardized JSON datasets
-│   └── generated/                # Legacy JS files (compatibility)
+│   ├── processed/              # Standardized JSON datasets (resume terms)
+│   └── generated/              # Legacy JS files (compatibility)
 └── data-processing/
-    └── extractors/               # Source markdown files
+    ├── resume-terms.md         # Professional terms with IPA guides
+    └── temp.md                 # AI/ML terminology by category
 ```
 
 ## 🤝 **Contributing**
 
 1. **Fork** the repository
 2. **Create feature branch**: `git checkout -b feature-name`
-3. **Run data pipeline**: `npm run data`
-4. **Test changes**: `npm run start`
+3. **Run data pipeline**: `npm run data:resume`
+4. **Test changes**: `npm run start:resume`
 5. **Validate**: `npm run validate && npm run lint`
 6. **Submit pull request**
 
@@ -275,15 +275,15 @@ ccl-pronunciation-trainer/
 ### **First Time Setup**
 ```bash
 git clone <repository-url>
-cd ccl-pronunciation-trainer
+cd professional-vocabulary-trainer
 npm install
-npm run start           # Generates data and starts server
+npm run start:resume    # Generates resume data and starts server
 ```
 
 ### **Development Workflow**
 ```bash
 # Make changes to source files
-npm run data            # Regenerate data if needed
+npm run data:resume     # Regenerate resume data if needed
 npm run dev             # Start development server
 npm run lint            # Check code quality
 npm run test            # Run tests
@@ -293,7 +293,7 @@ npm run test            # Run tests
 
 | **Issue** | **Solution** |
 |-----------|--------------|
-| "No vocabulary loaded" | Run `npm run data` to generate datasets |
+| "No vocabulary loaded" | Run `npm run data:resume` to generate datasets |
 | Server won't start | Ensure Python 3: `python3 -m http.server 3000` |
 | TTS not working | Use Chrome/Edge, check audio permissions |
 | Build failures | Run `npm install`, check Node.js version >= 16 |
@@ -306,6 +306,6 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 **🎯 Status**: ✅ **Production Ready**
-**🏗️ Architecture**: ✅ **Fully Refactored**
-**🔄 Compatibility**: ✅ **100% Backward Compatible**
-**🚀 Performance**: ✅ **Optimized (0.23s data processing)**
+**🏗️ Architecture**: ✅ **Streamlined for Professional Vocabulary**
+**🔄 Data Pipeline**: ✅ **Resume-Specific Processing**
+**🚀 Performance**: ✅ **Optimized for Professional Terms**

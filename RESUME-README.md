@@ -1,6 +1,6 @@
-# Resume Branch - Professional Vocabulary Pronunciation Trainer
+# Professional Vocabulary Pronunciation Trainer
 
-This branch is specifically focused on professional vocabulary pronunciation training, particularly useful for job interviews, resume preparation, and professional communication.
+This specialized branch is focused exclusively on professional vocabulary pronunciation training, particularly useful for job interviews, resume preparation, technical presentations, and professional communication.
 
 ## Features
 
@@ -39,12 +39,17 @@ This branch focuses on two main data files:
 
 ## Scripts
 
-Special scripts have been added to this branch to focus on resume data:
+Special scripts have been optimized for this branch to focus on professional vocabulary:
 
-- `npm run data:resume`: Process only resume-related data files
+- `npm run data:resume`: Process only resume & AI/ML data files
 - `npm run start:resume`: Process resume data and start the server
 - `npm run deploy:resume`: Build for production with only resume data
 - `npm run vercel-build:resume`: Vercel-specific build with only resume data
+- `npm run dev`: Start the development server (3000 port)
+- `npm run build`: Build for production (after data generation)
+- `npm run validate`: Validate all vocabulary data integrity
+- `npm run lint`: Run ESLint and Stylelint for code quality
+- `npm run test`: Run Jest tests in jsdom environment
 
 ## Pronunciation Features
 

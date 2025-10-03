@@ -14,6 +14,7 @@ const PronunciationParser = require('../src/js/data/formatters/PronunciationPars
 const VocabularyFormatter = require('../src/js/data/formatters/VocabularyFormatter');
 const ChineseEnglishExtractor = require('../src/js/data/extractors/ChineseEnglishExtractor');
 const ResumeTermsExtractor = require('../src/js/data/extractors/ResumeTermsExtractor');
+const AIMLTermsExtractor = require('../src/js/data/extractors/AIMLTermsExtractor');
 
 class UnifiedDataPipeline {
     constructor() {
@@ -77,7 +78,8 @@ class UnifiedDataPipeline {
             { name: 'vocabulary', file: 'vocabulary-clean.md', processor: 'extractVocabulary' },
             { name: 'words', file: 'words.md', processor: 'extractWords' },
             { name: 'chineseEnglish', file: 'english-chinese-word-pairs.md', processor: 'extractChineseEnglish' },
-            { name: 'resumeTerms', file: 'resume-terms.md', processor: 'extractResumeTerms' }
+            { name: 'resumeTerms', file: 'resume-terms.md', processor: 'extractResumeTerms' },
+            { name: 'aimlTerms', file: 'extractors/aiml-terms.md', processor: 'extractAIMLTerms' }
         ];
 
         for (const extractor of extractors) {
@@ -141,7 +143,8 @@ class UnifiedDataPipeline {
             { name: 'vocabulary-clean-dataset.json', source: 'vocabulary', processor: 'generateVocabularyDataset' },
             { name: 'words-dataset.json', source: 'words', processor: 'generateWordsDataset' },
             { name: 'chinese-english-dataset.json', source: 'chineseEnglish', processor: 'generateChineseEnglishDataset' },
-            { name: 'resume-terms-dataset.json', source: 'resumeTerms', processor: 'generateResumeTermsDataset' }
+            { name: 'resume-terms-dataset.json', source: 'resumeTerms', processor: 'generateResumeTermsDataset' },
+            { name: 'aiml-terms-dataset.json', source: 'aimlTerms', processor: 'generateAIMLTermsDataset' }
         ];
 
         for (const dataset of datasets) {
@@ -219,7 +222,8 @@ class UnifiedDataPipeline {
         const legacyMappings = {
             'unfamiliar-words.json': 'unfamiliar-words.js',
             'vocabulary-clean-dataset.json': 'vocabulary-clean.js',
-            'words-dataset.json': 'words-dataset.js'
+            'words-dataset.json': 'words-dataset.js',
+            'aiml-terms-dataset.json': 'aiml-terms.js'
         };
 
         for (const [jsonFile, jsFile] of Object.entries(legacyMappings)) {
@@ -510,6 +514,13 @@ class UnifiedDataPipeline {
         return await ResumeTermsExtractor.extract(filePath, fs);
     }
 
+    /**
+     * Extract AI/ML terms with definitions - FULL IMPLEMENTATION
+     */
+    async extractAIMLTerms(filePath) {
+        return await AIMLTermsExtractor.extract(filePath, fs);
+    }
+
     // ===== DATASET GENERATORS =====
 
     async generateCompleteDataset(data) {
@@ -582,6 +593,19 @@ class UnifiedDataPipeline {
                 totalTerms: data.length,
                 source: 'unified-pipeline-resume-terms',
                 description: 'Professional vocabulary with pronunciation guides',
+                version: '2.0'
+            },
+            vocabulary: data
+        };
+    }
+
+    async generateAIMLTermsDataset(data) {
+        return {
+            metadata: {
+                generated: new Date().toISOString(),
+                totalTerms: data.length,
+                source: 'unified-pipeline-aiml-terms',
+                description: 'AI/ML terminology with definitions for technical learning',
                 version: '2.0'
             },
             vocabulary: data

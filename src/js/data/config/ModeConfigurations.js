@@ -186,6 +186,42 @@ class ModeConfigurations {
                     showProgress: true,
                     specialFeatures: []
                 }
+            },
+
+            'aiml-terms': {
+                id: 'aiml-terms',
+                label: '🤖 AI/ML Terms',
+                description: 'AI/ML terminology with definitions',
+
+                data: {
+                    primaryDataset: 'aiml-terms-dataset.json',
+                    fallbackDatasets: [],
+                    extractionMethod: 'getAIMLTermsData'
+                },
+
+                display: {
+                    showPronunciation: true,
+                    pronunciationPriority: ['british', 'american'],
+                    showExample: false,
+                    showCategory: true,
+                    showDifficulty: true,
+                    primaryFields: ['english', 'definition'],
+                    showDefinition: true // Special flag for showing definitions
+                },
+
+                processing: {
+                    difficultyInference: 'standard',
+                    categoryMapping: 'section', // Maps to AI/ML category sections
+                    supportedCategories: 'sections',
+                    defaultDifficulty: 'normal'
+                },
+
+                ui: {
+                    enableCategoryFilter: true,
+                    enableDifficultyFilter: true,
+                    showProgress: true,
+                    specialFeatures: ['definitionDisplay'] // Special feature for definition display
+                }
             }
         };
 
@@ -201,7 +237,8 @@ class ModeConfigurations {
             'chinese-english',
             'resume-terms',
             'unfamiliar',
-            'words'
+            'words',
+            'aiml-terms'
         ].map(modeId => this.getModeConfig(modeId));
     }
 

@@ -5,21 +5,65 @@
 
 class AppConfig {
     constructor() {
+        // Define constants inline since Constants.js was removed
+        const CONSTANTS = {
+            VOICES: {
+                DEFAULT: 'Google UK English Male',
+                FALLBACK_VOICES: [
+                    'Microsoft James (en-AU)',
+                    'Google UK English Female',
+                    'Microsoft George (en-GB)',
+                    'Google US English Female'
+                ]
+            },
+            DELAYS: {
+                SHORT_PAUSE: 1000,
+                NORMAL_PAUSE: 2000,
+                LONG_PAUSE: 3000,
+                EXTENDED_PAUSE: 4000
+            },
+            DATA: {
+                FULL_PATHS: {
+                    RESUME_TERMS: '/data/processed/resume-terms-dataset.json',
+                    AIML_TERMS: '/data/processed/aiml-terms-dataset.json',
+                    PROFESSIONAL_TERMS: '/data/processed/professional-terms-dataset.json'
+                }
+            },
+            PROFESSIONAL_CATEGORIES: {
+                'all-categories': '🌟 All Categories',
+                'foundation-terms': '🧠 Foundation Terms',
+                'essential-production-terms': '⚙️ Production Terms',
+                'agent-automation-terms': '🤖 Agent & Automation',
+                'model-training-data': '📊 Model Training',
+                'explainability-trust': '🔍 Explainability & Trust',
+                'mlops-production': '🚀 MLOps & Production',
+                'natural-language-processing': '📝 NLP',
+                'computer-vision': '👁️ Computer Vision',
+                'model-types-architectures': '📐 Model Architectures',
+                'optimization-efficiency': '⚡ Optimization',
+                'safety-governance': '🛡️ Safety & Governance',
+                'performance-metrics': '📈 Performance Metrics',
+                'infrastructure-deployment': '🏗️ Infrastructure',
+                'collaboration-development': '👥 Collaboration',
+                'current-trends': '🚀 2025 Trends'
+            }
+        };
+
         this.config = {
             // TTS Configuration
             tts: {
-                defaultVoice: Constants.VOICES.DEFAULT,
-                fallbackVoices: Constants.VOICES.FALLBACK_VOICES,
+                defaultVoice: CONSTANTS.VOICES.DEFAULT,
+                fallbackVoices: CONSTANTS.VOICES.FALLBACK_VOICES,
                 speeds: {
                     slow: 0.7,
                     normal: 1.0,
                     fast: 1.3
                 },
                 delays: {
-                    short: Constants.DELAYS.SHORT_PAUSE,
-                    normal: Constants.DELAYS.NORMAL_PAUSE,
-                    long: Constants.DELAYS.LONG_PAUSE,
-                    extended: Constants.DELAYS.EXTENDED_PAUSE
+                    short: CONSTANTS.DELAYS.SHORT_PAUSE,
+                    normal: CONSTANTS.DELAYS.NORMAL_PAUSE,
+                    long: CONSTANTS.DELAYS.LONG_PAUSE,
+                    extended: CONSTANTS.DELAYS.EXTENDED_PAUSE
                 },
                 repeatModes: ['once', 'individual', 'intensive', 'loop']
             },
@@ -27,28 +71,19 @@ class AppConfig {
             // Vocabulary Configuration
             vocabulary: {
                 learningModes: [
-                    { id: 'vocabulary', label: '📚 Vocabulary Focus', dataset: 'complete' },
-                    { id: 'dialogue', label: '💬 Dialogue Practice', dataset: 'complete' },
-                    { id: 'unfamiliar', label: '🔥 Unfamiliar Words', dataset: 'unfamiliar' },
-                    { id: 'words', label: '📝 Words (words.md)', dataset: 'words' },
-                    { id: 'chinese-english', label: '🈯 Chinese-English Match', dataset: 'chineseEnglish' },
-                    { id: 'vocabulary-clean', label: '🎓 Vocabulary Trainer', dataset: 'vocabularyClean' },
-                    { id: 'resume-terms', label: '💼 Resume Terms Practice', dataset: 'resumeTerms' }
+                    { id: 'resume-terms', label: '💼 Resume Terms', dataset: 'resumeTerms' },
+                    { id: 'aiml-terms', label: '🤖 AI/ML Terms', dataset: 'aimlTerms' },
+                    { id: 'professional-terms', label: '🌟 All Professional Terms', dataset: 'professionalTerms' }
                 ],
                 difficulties: ['easy', 'normal', 'hard'],
-                categories: Constants.DIALOGUE_GROUPS.LABELS
+                categories: CONSTANTS.PROFESSIONAL_CATEGORIES
             },
 
             // Data Sources Configuration
             dataSources: {
-                complete: Constants.DATA.FULL_PATHS.COMPLETE,
-                unfamiliar: Constants.DATA.FULL_PATHS.UNFAMILIAR,
-                words: Constants.DATA.FULL_PATHS.WORDS,
-                chineseEnglish: Constants.DATA.FULL_PATHS.CHINESE_ENGLISH,
-                vocabularyClean: Constants.DATA.FULL_PATHS.VOCABULARY_CLEAN,
-                resumeTerms: Constants.DATA.FULL_PATHS.RESUME_TERMS,
-                // Legacy support
-                conversationVocabulary: '/data/generated/conversation-vocabulary-data.js'
+                resumeTerms: CONSTANTS.DATA.FULL_PATHS.RESUME_TERMS,
+                aimlTerms: CONSTANTS.DATA.FULL_PATHS.AIML_TERMS,
+                professionalTerms: CONSTANTS.DATA.FULL_PATHS.PROFESSIONAL_TERMS
             },
 
             // UI Configuration
@@ -79,9 +114,9 @@ class AppConfig {
             // Progress Tracking
             progress: {
                 storageKeys: {
-                    vocabulary: 'ccl_vocabulary_progress',
-                    settings: 'ccl_settings',
-                    stats: 'ccl_study_stats'
+                    vocabulary: 'professional_vocabulary_progress',
+                    settings: 'professional_settings',
+                    stats: 'professional_study_stats'
                 },
                 celebrationThresholds: [10, 25, 50, 100, 250, 500]
             },
@@ -168,9 +203,21 @@ class AppConfig {
     }
 }
 
-// Initialize and register
-const appConfig = new AppConfig();
-window.CCLApp.registerModule('config', appConfig);
+// Only initialize if window is defined (for Node.js compatibility)
+if (typeof window !== 'undefined') {
+    // Initialize and register
+    const appConfig = new AppConfig();
 
-// Legacy compatibility
-window.appConfig = appConfig;
+    // Register with CCL App namespace if available
+    if (window.CCLApp) {
+        window.CCLApp.registerModule('config', appConfig);
+    }
+
+    // Legacy compatibility
+    window.appConfig = appConfig;
+}
+
+// Export for Node.js
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = AppConfig;
+}

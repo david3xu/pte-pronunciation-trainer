@@ -4,7 +4,7 @@ class VocabularyManager {
     constructor() {
         this.currentCategory = 'all-categories';
         this.currentDifficulty = 'all';
-        this.currentLearningMode = 'vocabulary-clean'; // vocabulary, dialogue, unfamiliar, chinese-english, vocabulary-clean, resume-terms
+        this.currentLearningMode = 'vocabulary-clean'; // vocabulary, dialogue, unfamiliar, chinese-english, vocabulary-clean, resume-terms, aiml-terms
         this.currentWords = [];
         this.allWords = []; // Store unfiltered words
         this.categoryCounts = {}; // Store counts per category per difficulty
@@ -22,6 +22,7 @@ class VocabularyManager {
         this.chineseEnglishDataset = null; // Dataset for Chinese-English mode
         this.vocabularyCleanDataset = null; // Dataset for vocabulary-clean mode
         this.resumeTermsDataset = null; // Dataset for resume-terms mode
+        this.aimlTermsDataset = null; // Dataset for AI/ML terms with definitions
 
         // Dialogue-based category labels (groups by decade endings 0-9) - Sept 3, 2025
         this.categoryLabels = {
@@ -282,6 +283,8 @@ class VocabularyManager {
             return await this.getVocabularyCleanData();
         } else if (this.currentLearningMode === 'resume-terms') {
             return await this.getResumeTermsData();
+        } else if (this.currentLearningMode === 'aiml-terms') {
+            return await this.getAIMLTermsData();
         } else {
             // Default: vocabulary mode
             return this.getStandardVocabularyData();
@@ -705,6 +708,114 @@ class VocabularyManager {
             totalTerms: vocabulary.length,
             generatedAt: new Date().toISOString(),
             sourceFile: 'resume-terms-dataset.json'
+        };
+    }
+
+    async loadAIMLTermsDataset() {
+        if (this.aimlTermsDataset) {
+            console.log('🔄 Using cached AI/ML Terms dataset:', this.aimlTermsDataset.vocabulary?.length || 0, 'terms');
+            return this.aimlTermsDataset;
+        }
+
+        try {
+            console.log('📥 Loading AI/ML Terms dataset...');
+            const timestamp = new Date().getTime();
+            const response = await fetch(`/data/processed/aiml-terms-dataset.json?t=${timestamp}`);
+
+            console.log('Response status:', response.status, response.statusText);
+
+            if (!response.ok) {
+                throw new Error(`Failed to load AI/ML Terms dataset: ${response.status} ${response.statusText}`);
+            }
+
+            const responseText = await response.text();
+            console.log('Response text length:', responseText.length);
+
+            try {
+                this.aimlTermsDataset = JSON.parse(responseText);
+                console.log('✅ AI/ML Terms dataset loaded:', this.aimlTermsDataset.vocabulary?.length || 0, 'terms');
+                return this.aimlTermsDataset;
+            } catch (jsonError) {
+                console.error('❌ Failed to parse AI/ML Terms dataset JSON:', jsonError);
+                throw jsonError;
+            }
+        } catch (error) {
+            console.error('❌ Failed to load AI/ML Terms dataset:', error);
+
+            // Try with a different path as fallback
+            try {
+                console.log('🔄 Trying alternative path for AI/ML Terms...');
+                const timestamp = new Date().getTime();
+                const altResponse = await fetch(`/ccl-pronunciation-trainer/data/processed/aiml-terms-dataset.json?t=${timestamp}`);
+
+                if (!altResponse.ok) {
+                    throw new Error(`Failed to load from alternative path: ${altResponse.status} ${altResponse.statusText}`);
+                }
+
+                this.aimlTermsDataset = await altResponse.json();
+                console.log('✅ AI/ML Terms dataset loaded from alternative path:', this.aimlTermsDataset.vocabulary?.length || 0, 'entries');
+                return this.aimlTermsDataset;
+            } catch (altError) {
+                console.error('❌ Failed to load from alternative path:', altError);
+                return null;
+            }
+        }
+    }
+
+    async getAIMLTermsData() {
+        const dataset = await this.loadAIMLTermsDataset();
+        if (!dataset || !Array.isArray(dataset.vocabulary)) {
+            console.error('AI/ML Terms dataset not available or invalid');
+            return { vocabulary: [], totalTerms: 0, generatedAt: new Date().toISOString(), sourceFile: 'aiml-terms-dataset.json' };
+        }
+
+        // Map to standard vocabulary shape, adding the definition field
+        const vocabulary = dataset.vocabulary.map((term) => ({
+            english: term.english,
+            chinese: term.chinese || '', // Use provided chinese translation or empty
+            difficulty: term.difficulty || 'normal',
+            example: term.example || '',
+            exampleChinese: term.exampleChinese || '',
+            category: term.category || 'AI/ML Terms',
+            conversationId: term.conversationId || '',
+            conversationTitle: term.category || 'AI/ML Terms',
+            sentenceNumber: parseInt(term.sentenceId) || 0,
+            phonetic: term.phonetic || '',
+            source: 'aiml-terms',
+            // Include the definition field
+            definition: term.definition || ''
+        }));
+
+        // Set up category labels for aiml-terms mode
+        const uniqueCategories = [...new Set(vocabulary.map(v => v.category))];
+        const categoryCounts = {};
+        uniqueCategories.forEach(cat => {
+            categoryCounts[cat] = vocabulary.filter(v => v.category === cat).length;
+        });
+
+        this.categoryLabels = {
+            'all-categories': `🤖 All AI/ML Terms (${vocabulary.length} terms)`,
+            ...Object.fromEntries(
+                uniqueCategories.map(cat => [
+                    cat.toLowerCase().replace(/\s+/g, '-'),
+                    `${cat} (${categoryCounts[cat]} terms)`
+                ])
+            )
+        };
+
+        // Update dialogue groups to support category filtering
+        this.dialogueGroups = {
+            'all-categories': [],
+            ...Object.fromEntries(
+                uniqueCategories.map(cat => [cat.toLowerCase().replace(/\s+/g, '-'), []])
+            )
+        };
+
+        return {
+            vocabulary,
+            totalTerms: vocabulary.length,
+            generatedAt: new Date().toISOString(),
+            sourceFile: 'aiml-terms-dataset.json'
         };
     }
 

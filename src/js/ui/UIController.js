@@ -322,9 +322,26 @@ class UIController {
         // Update example sentence display (for conversation vocabulary)
         const exampleElement = document.getElementById('exampleSentence');
         console.log('Example debug - word.example:', word.example ? 'EXISTS' : 'MISSING');
+        console.log('Example debug - word.definition:', word.definition ? 'EXISTS' : 'MISSING');
         console.log('Example debug - word keys:', Object.keys(word));
 
-        if (exampleElement && word.example) {
+        // Special handling for AI/ML terms with definitions
+        if (exampleElement && word.source === 'aiml-terms' && word.definition) {
+            console.log('Showing definition for AI/ML term:', word.definition);
+
+            // Display definition as the "example"
+            let displayContent = `<div class="example-english definition"><strong>Definition:</strong> ${word.definition}</div>`;
+
+            exampleElement.innerHTML = displayContent;
+            exampleElement.style.display = 'block';
+            exampleElement.classList.add('word-change');
+
+            setTimeout(() => {
+                exampleElement.classList.remove('word-change');
+            }, 500);
+        }
+        // Standard example sentence handling
+        else if (exampleElement && word.example) {
             // Clean example sentence (remove speaker prefixes like "Jenny:", "Officer:", etc.)
             const cleanExample = this.cleanExampleSentence(word.example);
             console.log('Showing example sentence:', cleanExample);
@@ -343,7 +360,7 @@ class UIController {
                 exampleElement.classList.remove('word-change');
             }, 500);
         } else if (exampleElement) {
-            console.log('Hiding example sentence - no word.example found');
+            console.log('Hiding example sentence - no word.example or definition found');
             exampleElement.style.display = 'none';
         }
 

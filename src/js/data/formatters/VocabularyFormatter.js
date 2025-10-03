@@ -29,6 +29,7 @@ class VocabularyFormatter {
             const standardized = {
                 english: item.english || item.term || item.word || '',
                 chinese: item.chinese || item.translation || '',
+                definition: item.definition || '',
                 difficulty: item.difficulty || this.inferDifficulty(item.english || item.term),
                 example: item.example || item.sentence || '',
                 exampleChinese: item.exampleChinese || item.sentenceChinese || '',

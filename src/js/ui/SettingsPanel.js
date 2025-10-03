@@ -91,6 +91,7 @@ class SettingsPanel {
     openPanel() {
         const settingsPanel = document.getElementById('settingsPanel');
         if (settingsPanel) {
+            settingsPanel.classList.add('active');
             settingsPanel.classList.remove('collapsed');
             this.isOpen = true;
             console.log('Settings panel opened');
@@ -105,6 +106,7 @@ class SettingsPanel {
     closePanel() {
         const settingsPanel = document.getElementById('settingsPanel');
         if (settingsPanel) {
+            settingsPanel.classList.remove('active');
             settingsPanel.classList.add('collapsed');
             this.isOpen = false;
             console.log('Settings panel closed');

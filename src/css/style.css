@@ -236,6 +236,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 10; /* Lower than settings panel but higher than other elements */
 }
 
 .current-category {
@@ -279,7 +281,7 @@ body {
     transition: max-height 0.3s ease-in-out;
     border-top: 1px solid #E2E8F0;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05);
-    z-index: 100;
+    z-index: 1000; /* Increased z-index to ensure it's above all other elements */
     display: flex;
     flex-direction: column;
 }
@@ -288,6 +290,11 @@ body {
     max-height: 70vh;
     /* Allow content to show but not take full screen */
     overflow-y: auto;
+}
+
+.settings-panel.collapsed {
+    max-height: 0;
+    overflow: hidden;
 }
 
 .settings-header {

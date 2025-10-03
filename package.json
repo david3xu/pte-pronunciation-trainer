@@ -8,6 +8,7 @@
 
     "data": "node scripts/unified-data-pipeline.js",
     "data:legacy": "npm run process-all-data",
+    "data:resume": "node scripts/resume-data-pipeline.js",
 
     "extract-vocab": "node scripts/conversation-vocabulary-extractor.js",
     "process-data": "node scripts/process-dialogue-data.js",
@@ -25,9 +26,12 @@
 
     "start": "npm run data && npm run dev",
     "start:legacy": "npm run process-all-data && npm run dev",
+    "start:resume": "npm run data:resume && npm run dev",
 
     "deploy": "npm run data && npm run build && npm run validate",
-    "vercel-build": "npm run data && npm run build"
+    "deploy:resume": "npm run data:resume && npm run build && npm run validate",
+    "vercel-build": "npm run data && npm run build",
+    "vercel-build:resume": "npm run data:resume && npm run build"
   },
   "keywords": [
     "ccl",

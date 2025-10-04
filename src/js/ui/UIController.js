@@ -222,6 +222,9 @@ class UIController {
             ipaOnly = ipaMatch ? `/${ipaMatch[1]}/` : '';
             phoneticPlain = phoneticMatch ? phoneticMatch[1] : '';
             console.log('Extracted pronunciation:', { ipaOnly, phoneticPlain, ipaMatch, phoneticMatch });
+
+            // Force display of pronunciation elements for AI/ML terms
+            console.log('Forcing pronunciation display for AI/ML term');
         }
         // LEGACY: Check if this is from vocabulary-clean dataset with direct pronunciation data
         else if (word.source === 'vocabulary-clean' && word.ukPronunciation) {
@@ -261,8 +264,10 @@ class UIController {
             if (phoneticPlain) {
                 phoneticElement.textContent = phoneticPlain;
                 phoneticElement.style.display = 'block';
+                console.log('Displaying phonetic:', phoneticPlain);
             } else {
                 phoneticElement.style.display = 'none';
+                console.log('No phonetic to display');
             }
             phoneticElement.classList.add('word-change');
             setTimeout(() => {
@@ -301,8 +306,10 @@ class UIController {
             if (ipaOnly) {
                 ipaElement.textContent = ipaOnly;
                 ipaElement.style.display = 'block';
+                console.log('Displaying IPA:', ipaOnly);
             } else {
                 ipaElement.style.display = 'none';
+                console.log('No IPA to display');
             }
             ipaElement.classList.add('word-change');
             setTimeout(() => {
@@ -323,7 +330,7 @@ class UIController {
         console.log('Example debug - word keys:', Object.keys(word));
 
         // Special handling for AI/ML terms with definitions
-        if (exampleElement && (word.source === 'aiml-terms' || word.source === 'ai-ml-pronunciation-terms') && word.definition) {
+        if (exampleElement && word.source === 'ai-ml-pronunciation-terms' && word.definition) {
             console.log('Showing definition for AI/ML term:', word.definition);
             console.log('Word source:', word.source);
             console.log('Word definition exists:', !!word.definition);

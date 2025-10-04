@@ -35,25 +35,23 @@ class DataValidator {
 
         try {
             // Check if vocabulary data exists
-            const vocabPath = 'data/generated/vocabulary-data.js';
+            const vocabPath = 'data/processed/professional-terms-dataset.json';
             if (!fs.existsSync(vocabPath)) {
-                throw new Error('Vocabulary data file not found. Run "npm run convert" first.');
+                throw new Error('Professional vocabulary data file not found. Run "npm run data:resume" first.');
             }
 
-            // Load vocabulary data by requiring the module
+            // Load vocabulary data from JSON file
             const fullPath = path.resolve(vocabPath);
-            delete require.cache[fullPath]; // Clear cache to get fresh data
-            const vocabularyData = require('../' + vocabPath);
+            const fileContent = fs.readFileSync(fullPath, 'utf-8');
+            const vocabularyData = JSON.parse(fileContent);
 
             // Validate structure
             await this.validateStructure(vocabularyData);
 
-            // Validate each category
-            for (const [category, terms] of Object.entries(vocabularyData)) {
-                await this.validateCategory(category, terms);
-            }
+            // Validate all terms by category
+            await this.validateCategory(vocabularyData);
 
-            // Check for global duplicates
+            // Check for global duplicates (using the same data)
             await this.checkGlobalDuplicates(vocabularyData);
 
             // Generate report
@@ -72,80 +70,77 @@ class DataValidator {
             throw new ValidationError('Vocabulary data must be an object');
         }
 
-        const expectedCategories = [
-            'housing',
-            'social-welfare',
-            'legal',
-            'immigration',
-            'business',
-            'medical',
-            'education',
-            'tourism',
-            'social',
-            'all-categories'
-        ];
-
-        this.stats.totalCategories = Object.keys(data).length;
-
-        // Check expected categories
-        for (const category of expectedCategories) {
-            if (!data[category]) {
-                this.warnings.push(`Missing expected category: ${category}`);
-            }
+        // Check for expected JSON structure
+        if (!data.metadata || !data.vocabulary) {
+            throw new ValidationError('Data must have metadata and vocabulary properties');
         }
 
-        // Check for unexpected categories
-        for (const category of Object.keys(data)) {
-            if (!expectedCategories.includes(category)) {
-                this.warnings.push(`Unexpected category found: ${category}`);
-            }
+        if (!Array.isArray(data.vocabulary)) {
+            throw new ValidationError('Vocabulary property must be an array');
         }
 
-        console.log(`   ✓ Found ${this.stats.totalCategories} categories`);
-    }
-
-    async validateCategory(category, terms) {
-        console.log(`📚 Validating ${category}...`);
-
-        if (!Array.isArray(terms)) {
-            this.errors.push(new ValidationError(
-                `Category ${category} must contain an array of terms`,
-                category
-            ));
-            return;
-        }
-
-        const categoryStats = {
-            total: terms.length,
-            empty: 0,
-            duplicates: 0,
-            invalid: 0
-        };
-
-        const seenTerms = new Set();
-
-        terms.forEach((term, index) => {
-            try {
-                this.validateTerm(term, category, index, seenTerms, categoryStats);
-            } catch (error) {
-                if (error instanceof ValidationError) {
-                    this.errors.push(error);
-                } else {
-                    this.errors.push(new ValidationError(
-                        error.message,
-                        category,
-                        index
-                    ));
-                }
+        // Extract categories from the vocabulary
+        const categories = new Set();
+        data.vocabulary.forEach(item => {
+            if (item.category) {
+                categories.add(item.category);
             }
         });
 
-        this.stats.totalTerms += categoryStats.total;
-        this.stats.emptyTerms += categoryStats.empty;
-        this.stats.duplicates += categoryStats.duplicates;
-        this.stats.invalidFormat += categoryStats.invalid;
+        this.stats.totalCategories = categories.size;
+        console.log(`   ✓ Found ${this.stats.totalCategories} categories`);
+        console.log(`   ✓ Total vocabulary items: ${data.vocabulary.length}`);
+    }
 
-        console.log(`   ✓ ${categoryStats.total} terms, ${categoryStats.empty} empty, ${categoryStats.duplicates} duplicates`);
+    async validateCategory(data) {
+        // Group items by category
+        const categorizedTerms = {};
+        const allTerms = data.vocabulary || [];
+
+        allTerms.forEach(term => {
+            const category = term.category || 'uncategorized';
+            if (!categorizedTerms[category]) {
+                categorizedTerms[category] = [];
+            }
+            categorizedTerms[category].push(term);
+        });
+
+        const seenTerms = new Set();
+
+        // Validate each category
+        for (const [category, terms] of Object.entries(categorizedTerms)) {
+            console.log(`📚 Validating ${category}...`);
+
+            const categoryStats = {
+                total: terms.length,
+                empty: 0,
+                duplicates: 0,
+                invalid: 0
+            };
+
+            terms.forEach((term, index) => {
+                try {
+                    this.validateTerm(term, category, index, seenTerms, categoryStats);
+                } catch (error) {
+                    if (error instanceof ValidationError) {
+                        this.errors.push(error);
+                    } else {
+                        this.errors.push(new ValidationError(
+                            error.message,
+                            category,
+                            index
+                        ));
+                    }
+                }
+            });
+
+            this.stats.totalTerms += categoryStats.total;
+            this.stats.emptyTerms += categoryStats.empty;
+            this.stats.duplicates += categoryStats.duplicates;
+            this.stats.invalidFormat += categoryStats.invalid;
+
+            console.log(`   ✓ ${categoryStats.total} terms, ${categoryStats.empty} empty, ${categoryStats.duplicates} duplicates`);
+        }
     }
 
     validateTerm(term, category, index, seenTerms, categoryStats) {
@@ -159,34 +154,34 @@ class DataValidator {
             );
         }
 
-        // Check required fields
-        if (!term.english || !term.chinese) {
+        // Check required fields - only english is required now
+        if (!term.english) {
             categoryStats.empty++;
             throw new ValidationError(
-                `Term at index ${index} missing english or chinese field`,
+                `Term at index ${index} missing english field`,
                 category,
                 index
             );
         }
 
         // Check field types
-        if (typeof term.english !== 'string' || typeof term.chinese !== 'string') {
+        if (typeof term.english !== 'string') {
             categoryStats.invalid++;
             throw new ValidationError(
-                `Term at index ${index} has non-string fields`,
+                `Term at index ${index} has non-string english field`,
                 category,
                 index
             );
         }
 
         // Check for empty content
-        if (!term.english.trim() || !term.chinese.trim()) {
+        if (!term.english.trim()) {
             categoryStats.empty++;
             this.warnings.push(`Empty term content in ${category} at index ${index}`);
         }
 
         // Check for duplicates within category
-        const termKey = `${term.english.toLowerCase()}:${term.chinese}`;
+        const termKey = term.english.toLowerCase();
         if (seenTerms.has(termKey)) {
             categoryStats.duplicates++;
             this.warnings.push(`Duplicate term in ${category}: "${term.english}"`);
@@ -196,9 +191,6 @@ class DataValidator {
 
         // Validate English content
         this.validateEnglishTerm(term.english, category, index);
-
-        // Validate Chinese content
-        this.validateChineseTerm(term.chinese, category, index);
     }
 
     validateEnglishTerm(english, category, index) {
@@ -218,47 +210,45 @@ class DataValidator {
         }
     }
 
-    validateChineseTerm(chinese, category, index) {
-        // Check for common issues
-        if (chinese.length > 100) {
-            this.warnings.push(`Very long Chinese term in ${category}[${index}]: "${chinese.substring(0, 20)}..."`);
-        }
+    // Chinese translation validation removed - not needed for professional vocabulary
 
-        // Check if contains Chinese characters
-        if (!/[\u4e00-\u9fff]/.test(chinese)) {
-            this.warnings.push(`Chinese term may not contain Chinese characters ${category}[${index}]: "${chinese}"`);
-        }
-    }
-
-    async checkGlobalDuplicates(vocabularyData) {
+    async checkGlobalDuplicates(data) {
         console.log('🔍 Checking for global duplicates...');
 
         const globalTerms = new Map();
         let globalDuplicates = 0;
 
-        for (const [category, terms] of Object.entries(vocabularyData)) {
-            terms.forEach((term, index) => {
-                const key = term.english.toLowerCase();
-                if (globalTerms.has(key)) {
-                    const existing = globalTerms.get(key);
-                    if (existing.chinese !== term.chinese) {
-                        globalDuplicates++;
-                        this.warnings.push(
-                            `Same English term with different Chinese: "${term.english}" ` +
-                            `in ${existing.category} ("${existing.chinese}") and ${category} ("${term.chinese}")`
-                        );
-                    }
-                } else {
-                    globalTerms.set(key, {
-                        category,
-                        index,
-                        chinese: term.chinese
-                    });
-                }
-            });
-        }
+        // Process all terms in the vocabulary array
+        const vocabulary = data.vocabulary || [];
+        vocabulary.forEach((term, index) => {
+            const key = term.english.toLowerCase();
+            const category = term.category || 'uncategorized';
 
-        console.log(`   ✓ Found ${globalDuplicates} global duplicates with different translations`);
+            if (globalTerms.has(key)) {
+                const existing = globalTerms.get(key);
+                // Check if there are conflicting definitions or properties
+                if ((term.definition && existing.definition &&
+                    term.definition !== existing.definition) ||
+                    (term.ipa_uk && existing.ipa_uk &&
+                    term.ipa_uk !== existing.ipa_uk)) {
+
+                    globalDuplicates++;
+                    this.warnings.push(
+                        `Same English term with different properties: "${term.english}" ` +
+                        `in ${existing.category} and ${category}`
+                    );
+                }
+            } else {
+                globalTerms.set(key, {
+                    category,
+                    index,
+                    definition: term.definition,
+                    ipa_uk: term.ipa_uk
+                });
+            }
+        });
+
+        console.log(`   ✓ Found ${globalDuplicates} global duplicates with different properties`);
     }
 
     generateReport() {

@@ -147,7 +147,6 @@ class AIMLTermsExtractor {
 
                 const termData = {
                     english: term,
-                    chinese: '', // AI/ML terms don't have Chinese translations initially
                     definition: definition,
                     difficulty: this.inferDifficulty(term, definition),
                     category: category,

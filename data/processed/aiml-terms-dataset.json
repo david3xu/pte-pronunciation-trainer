@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-10-04T00:03:46.192Z",
-    "totalTerms": 137,
+    "generated": "2025-10-04T00:53:38.697Z",
+    "totalTerms": 136,
     "source": "resume-data-pipeline",
     "description": "AI/ML terminology with definitions",
     "version": "2.0"
@@ -9,1099 +9,955 @@
   "vocabulary": [
     {
       "english": "Artificial Intelligence",
-      "chinese": "",
-      "definition": "Field enabling computers to perform tasks requiring human intelligence like learning, perception, and decision-making.",
+      "definition": "/ˌɑr.təˈfɪʃ.əl ɪnˈtel.ə.dʒəns/ — sounds like **AHR-tuh-FISH-ul in-TEL-uh-juns**",
       "difficulty": "normal",
       "category": "Foundation Terms (Everyone Uses These)",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Machine Learning",
-      "chinese": "",
-      "definition": "Subset of AI where computers learn patterns from data without explicit programming.",
+      "definition": "/məˈʃin ˈlɝ.nɪŋ/ — sounds like **muh-SHEEN LUR-ning**",
       "difficulty": "normal",
       "category": "Foundation Terms (Everyone Uses These)",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Deep Learning",
-      "chinese": "",
-      "definition": "Advanced ML using multi-layered neural networks to analyze complex data, inspired by human brain structure.",
+      "definition": "/dip ˈlɝ.nɪŋ/ — sounds like **DEEP LUR-ning**",
       "difficulty": "normal",
       "category": "Foundation Terms (Everyone Uses These)",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Large Language Models",
-      "chinese": "",
-      "definition": "AI models trained on vast text datasets to understand and generate human-like language (e.g., GPT, Claude, Gemini).",
+      "definition": "/lɑrdʒ ˈlæŋ.ɡwɪdʒ ˈmɑ.dəlz/ — sounds like **LAHRJ LANG-gwij MAH-duhlz**",
       "difficulty": "normal",
       "category": "Foundation Terms (Everyone Uses These)",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Neural Networks",
-      "chinese": "",
-      "definition": "Computing systems with interconnected nodes processing information, foundation of modern AI.",
+      "definition": "/ˈnʊr.əl ˈnet.wɝks/ — sounds like **NOOR-ul NET-wurks**",
       "difficulty": "normal",
       "category": "Foundation Terms (Everyone Uses These)",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Model",
-      "chinese": "",
-      "definition": "Trained algorithm that makes predictions or generates outputs; the result of training on data.",
+      "definition": "/ˈmɑ.dəl/ — sounds like **MAH-duhl**",
       "difficulty": "easy",
       "category": "Foundation Terms (Everyone Uses These)",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Training",
-      "chinese": "",
-      "definition": "Process of teaching model by exposing it to data so it learns patterns.",
+      "definition": "/ˈtreɪ.nɪŋ/ — sounds like **TRAY-ning**",
       "difficulty": "normal",
       "category": "Foundation Terms (Everyone Uses These)",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Inference",
-      "chinese": "",
-      "definition": "When trained model makes predictions on new data it hasn't seen before.",
+      "definition": "/ˈɪn.fɚ.əns/ — sounds like **IN-fur-uns**",
       "difficulty": "normal",
       "category": "Foundation Terms (Everyone Uses These)",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Parameters",
-      "chinese": "",
-      "definition": "Adjustable values in model that get tuned during training to improve performance (e.g., \"7B parameters\").",
+      "definition": "/pəˈræm.ə.tɚz/ — sounds like **puh-RAM-uh-turz**",
       "difficulty": "normal",
       "category": "Foundation Terms (Everyone Uses These)",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Fine-Tuning",
-      "chinese": "",
-      "definition": "Further training pre-trained model on specific dataset to specialize for particular task.",
+      "definition": "/faɪn ˈtu.nɪŋ/ — sounds like **FYNE TOO-ning**",
       "difficulty": "normal",
       "category": "Foundation Terms (Everyone Uses These)",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Prompt Engineering",
-      "chinese": "",
-      "definition": "Designing effective instructions to optimize AI model outputs.",
+      "definition": "/prɑmpt ˌen.dʒəˈnɪr.ɪŋ/ — sounds like **PRAHMPT en-juh-NEER-ing**",
       "difficulty": "normal",
       "category": "Essential Production Terms",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Prompt",
-      "chinese": "",
-      "definition": "Input text or instruction given to AI model to generate response.",
+      "definition": "/prɑmpt/ — sounds like **PRAHMPT**",
       "difficulty": "easy",
       "category": "Essential Production Terms",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Context Window",
-      "chinese": "",
-      "definition": "Maximum amount of text model can process in single interaction.",
+      "definition": "/ˈkɑn.tekst ˈwɪn.doʊ/ — sounds like **KAHN-tekst WIN-doh**",
       "difficulty": "normal",
       "category": "Essential Production Terms",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Token",
-      "chinese": "",
-      "definition": "Smallest unit of text model processes; models have token limits.",
+      "definition": "/ˈtoʊ.kən/ — sounds like **TOH-kun**",
       "difficulty": "easy",
       "category": "Essential Production Terms",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Hallucination",
-      "chinese": "",
-      "definition": "When AI generates false or fabricated information confidently.",
+      "definition": "/həˌlu.səˈneɪ.ʃən/ — sounds like **huh-LOO-suh-NAY-shun**",
       "difficulty": "normal",
       "category": "Essential Production Terms",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Retrieval-Augmented Generation",
-      "chinese": "",
-      "definition": "Combining information retrieval with generation to ground responses in real documents (RAG).",
+      "definition": "/rɪˈtri.vəl ɔrɡˈmen.təd ˌdʒen.ɚˈeɪ.ʃən/ — sounds like **ri-TREE-vul awrg-MEN-tud jen-ur-AY-shun**",
       "difficulty": "normal",
       "category": "Essential Production Terms",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Embedding",
-      "chinese": "",
-      "definition": "Numerical representation of text capturing semantic meaning for similarity searches.",
+      "definition": "/ɪmˈbed.ɪŋ/ — sounds like **im-BED-ing**",
       "difficulty": "normal",
       "category": "Essential Production Terms",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Vector Database",
-      "chinese": "",
-      "definition": "Database storing embeddings for efficient semantic search.",
+      "definition": "/ˈvek.tɚ ˈdeɪ.tə.beɪs/ — sounds like **VEK-tur DAY-tuh-bays**",
       "difficulty": "normal",
       "category": "Essential Production Terms",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "API",
-      "chinese": "",
-      "definition": "Application Programming Interface allowing programs to communicate with AI services.",
+      "definition": "/eɪ pi aɪ/ — sounds like **AY PEE EYE**",
       "difficulty": "easy",
       "category": "Essential Production Terms",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Endpoint",
-      "chinese": "",
-      "definition": "URL or interface where applications send requests to get AI predictions.",
+      "definition": "/ˈend.pɔɪnt/ — sounds like **END-poynt**",
       "difficulty": "normal",
       "category": "Essential Production Terms",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "AI Agent",
-      "chinese": "",
-      "definition": "Autonomous system that can reason, plan, use tools, and take actions to achieve goals.",
+      "definition": "/eɪ aɪ ˈeɪ.dʒənt/ — sounds like **AY EYE AY-junt**",
       "difficulty": "normal",
       "category": "Agent & Automation Terms",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Agentic AI",
-      "chinese": "",
-      "definition": "AI systems operating autonomously with minimal supervision to accomplish complex workflows.",
+      "definition": "/eɪˈdʒen.tɪk eɪ aɪ/ — sounds like **ay-JEN-tik AY EYE**",
       "difficulty": "normal",
       "category": "Agent & Automation Terms",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "LangChain",
-      "chinese": "",
-      "definition": "Popular framework for building LLM applications with tools for chaining prompts and managing workflows.",
+      "definition": "/læŋ tʃeɪn/ — sounds like **LANG CHAYN**",
       "difficulty": "normal",
       "category": "Agent & Automation Terms",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Tool Calling",
-      "chinese": "",
-      "definition": "Agent's ability to invoke external functions or APIs to accomplish tasks.",
+      "definition": "/tul ˈkɔ.lɪŋ/ — sounds like **TOOL KAW-ling**",
       "difficulty": "normal",
       "category": "Agent & Automation Terms",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Multi-Agent System",
-      "chinese": "",
-      "definition": "Multiple specialized AI agents collaborating to handle complex tasks.",
+      "definition": "/ˈmʌl.ti ˈeɪ.dʒənt ˈsɪs.təm/ — sounds like **MUL-tee AY-junt SIS-tum**",
       "difficulty": "normal",
       "category": "Agent & Automation Terms",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Chain-of-Thought",
-      "chinese": "",
-      "definition": "Technique where model shows step-by-step reasoning before final answer.",
+      "definition": "/tʃeɪn ʌv θɔt/ — sounds like **CHAYN uv THAWT**",
       "difficulty": "normal",
       "category": "Agent & Automation Terms",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Agent Orchestration",
-      "chinese": "",
-      "definition": "Managing coordination between multiple agents working together.",
+      "definition": "/ˈeɪ.dʒənt ˌɔr.kəˈstreɪ.ʃən/ — sounds like **AY-junt awr-kuh-STRAY-shun**",
       "difficulty": "normal",
       "category": "Agent & Automation Terms",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Dataset",
-      "chinese": "",
-      "definition": "Collection of data used to train or test models.",
+      "definition": "/ˈdeɪ.tə.set/ — sounds like **DAY-tuh-set**",
       "difficulty": "easy",
       "category": "Model Training & Data",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Training Data",
-      "chinese": "",
-      "definition": "Data used to teach model patterns and behaviors.",
+      "definition": "/ˈtreɪ.nɪŋ ˈdeɪ.tə/ — sounds like **TRAY-ning DAY-tuh**",
       "difficulty": "normal",
       "category": "Model Training & Data",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Validation Data",
-      "chinese": "",
-      "definition": "Separate data evaluating model during training to tune settings.",
+      "definition": "/ˌvæl.əˈdeɪ.ʃən ˈdeɪ.tə/ — sounds like **val-uh-DAY-shun DAY-tuh**",
       "difficulty": "normal",
       "category": "Model Training & Data",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Test Data",
-      "chinese": "",
-      "definition": "Hold-out data assessing final model performance after training.",
+      "definition": "/test ˈdeɪ.tə/ — sounds like **TEST DAY-tuh**",
       "difficulty": "normal",
       "category": "Model Training & Data",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Supervised Learning",
-      "chinese": "",
-      "definition": "Training on labeled data where correct answers are provided.",
+      "definition": "/ˈsu.pɚ.vaɪzd ˈlɝ.nɪŋ/ — sounds like **SOO-pur-vyzd LUR-ning**",
       "difficulty": "normal",
       "category": "Model Training & Data",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Unsupervised Learning",
-      "chinese": "",
-      "definition": "Finding patterns in unlabeled data without predefined outputs.",
+      "definition": "/ʌnˈsu.pɚ.vaɪzd ˈlɝ.nɪŋ/ — sounds like **un-SOO-pur-vyzd LUR-ning**",
       "difficulty": "normal",
       "category": "Model Training & Data",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Reinforcement Learning",
-      "chinese": "",
-      "definition": "Learning through trial and error with rewards for good decisions.",
+      "definition": "/ˌri.ɪnˈfɔrs.mənt ˈlɝ.nɪŋ/ — sounds like **ree-in-FAWRSS-munt LUR-ning**",
       "difficulty": "normal",
       "category": "Model Training & Data",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Overfitting",
-      "chinese": "",
-      "definition": "When model memorizes training data too well and performs poorly on new data.",
+      "definition": "/ˌoʊ.vɚˈfɪt.ɪŋ/ — sounds like **OH-vur-FIT-ing**",
       "difficulty": "normal",
       "category": "Model Training & Data",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Data Drift",
-      "chinese": "",
-      "definition": "Changes in data distribution over time affecting model performance.",
+      "definition": "/ˈdeɪ.tə drɪft/ — sounds like **DAY-tuh DRIFT**",
       "difficulty": "normal",
       "category": "Model Training & Data",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Hyperparameter",
-      "chinese": "",
-      "definition": "Configuration setting chosen before training (unlike parameters learned during training).",
+      "definition": "/ˌhaɪ.pɚˈpær.ə.mə.tɚ/ — sounds like **hy-pur-PAR-uh-muh-tur**",
       "difficulty": "normal",
       "category": "Model Training & Data",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Explainable AI",
-      "chinese": "",
-      "definition": "Methods making AI decisions transparent and understandable to humans (XAI).",
+      "definition": "/ɪkˈspleɪ.nə.bəl eɪ aɪ/ — sounds like **ik-SPLAY-nuh-bul AY EYE**",
       "difficulty": "normal",
       "category": "Explainability & Trust",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Black Box",
-      "chinese": "",
-      "definition": "Model providing outputs without revealing decision-making process.",
+      "definition": "/blæk bɑks/ — sounds like **BLAK BAHKS**",
       "difficulty": "normal",
       "category": "Explainability & Trust",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Bias",
-      "chinese": "",
-      "definition": "Systematic errors or unfair outcomes in AI systems due to training data or design.",
+      "definition": "/ˈbaɪ.əs/ — sounds like **BY-us**",
       "difficulty": "easy",
       "category": "Explainability & Trust",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Fairness",
-      "chinese": "",
-      "definition": "Ensuring AI treats different groups equitably without discrimination.",
+      "definition": "/ˈfer.nəs/ — sounds like **FAIR-nus**",
       "difficulty": "normal",
       "category": "Explainability & Trust",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "SHAP",
-      "chinese": "",
-      "definition": "Method assigning importance scores to features explaining predictions.",
+      "definition": "/ʃæp/ — sounds like **SHAP**",
       "difficulty": "easy",
       "category": "Explainability & Trust",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "LIME",
-      "chinese": "",
-      "definition": "Technique explaining individual predictions by approximating with simpler local models.",
+      "definition": "/laɪm/ — sounds like **LYME**",
       "difficulty": "easy",
       "category": "Explainability & Trust",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Feature Importance",
-      "chinese": "",
-      "definition": "Measure showing which inputs most influence model predictions.",
+      "definition": "/ˈfi.tʃɚ ɪmˈpɔr.təns/ — sounds like **FEE-chur im-PAWR-tuns**",
       "difficulty": "normal",
       "category": "Explainability & Trust",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "AI Ethics",
-      "chinese": "",
-      "definition": "Moral principles guiding responsible AI development and deployment.",
+      "definition": "/eɪ aɪ ˈeθ.ɪks/ — sounds like **AY EYE ETH-iks**",
       "difficulty": "normal",
       "category": "Explainability & Trust",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Responsible AI",
-      "chinese": "",
-      "definition": "Practices ensuring AI is safe, fair, transparent, and accountable.",
+      "definition": "/rɪˈspɑn.sə.bəl eɪ aɪ/ — sounds like **ri-SPAHN-suh-bul AY EYE**",
       "difficulty": "normal",
       "category": "Explainability & Trust",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "MLOps",
-      "chinese": "",
-      "definition": "Practices streamlining ML model development, deployment, and maintenance in production.",
+      "definition": "/em el ɑps/ — sounds like **EM EL AHPS**",
       "difficulty": "easy",
       "category": "MLOps & Production",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Model Deployment",
-      "chinese": "",
-      "definition": "Making trained model available for use in production environments.",
+      "definition": "/ˈmɑ.dəl dɪˈplɔɪ.mənt/ — sounds like **MAH-duhl di-PLOY-munt**",
       "difficulty": "normal",
       "category": "MLOps & Production",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Model Monitoring",
-      "chinese": "",
-      "definition": "Tracking model performance and behavior in production.",
+      "definition": "/ˈmɑ.dəl ˈmɑ.nə.tɚ.ɪŋ/ — sounds like **MAH-duhl MAH-nuh-tur-ing**",
       "difficulty": "normal",
       "category": "MLOps & Production",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Pipeline",
-      "chinese": "",
-      "definition": "Automated workflow connecting multiple steps (data processing, training, deployment).",
+      "definition": "/ˈpaɪp.laɪn/ — sounds like **PYPE-lyne**",
       "difficulty": "normal",
       "category": "MLOps & Production",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Continuous Training",
-      "chinese": "",
-      "definition": "Automatically retraining models with new data to maintain accuracy.",
+      "definition": "/kənˈtɪn.ju.əs ˈtreɪ.nɪŋ/ — sounds like **kun-TIN-yoo-us TRAY-ning**",
       "difficulty": "normal",
       "category": "MLOps & Production",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "A/B Testing",
-      "chinese": "",
-      "definition": "Comparing two model versions by exposing each to different user groups.",
+      "definition": "/eɪ bi ˈtest.ɪŋ/ — sounds like **AY BEE TEST-ing**",
       "difficulty": "normal",
       "category": "MLOps & Production",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Model Registry",
-      "chinese": "",
-      "definition": "Centralized storage for managing and versioning trained models.",
+      "definition": "/ˈmɑ.dəl ˈredʒ.ə.stri/ — sounds like **MAH-duhl REJ-uh-stree**",
       "difficulty": "normal",
       "category": "MLOps & Production",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Feature Store",
-      "chinese": "",
-      "definition": "Repository for storing and serving features used by ML models.",
+      "definition": "/ˈfi.tʃɚ stɔr/ — sounds like **FEE-chur STAWR**",
       "difficulty": "normal",
       "category": "MLOps & Production",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Model Versioning",
-      "chinese": "",
-      "definition": "Tracking different iterations of models for reproducibility and rollback.",
+      "definition": "/ˈmɑ.dəl ˈvɝ.ʃən.ɪŋ/ — sounds like **MAH-duhl VUR-shun-ing**",
       "difficulty": "normal",
       "category": "MLOps & Production",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Batch Inference",
-      "chinese": "",
-      "definition": "Processing multiple prediction requests together rather than individually.",
+      "definition": "/bætʃ ˈɪn.fɚ.əns/ — sounds like **BACH IN-fur-uns**",
       "difficulty": "normal",
       "category": "MLOps & Production",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Real-Time Inference",
-      "chinese": "",
-      "definition": "Providing immediate predictions as requests arrive.",
+      "definition": "/ril taɪm ˈɪn.fɚ.əns/ — sounds like **REEL TYME IN-fur-uns**",
       "difficulty": "normal",
       "category": "MLOps & Production",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Azure Machine Learning",
-      "chinese": "",
-      "definition": "Microsoft's cloud platform for full ML lifecycle.",
+      "definition": "/ˈæʒ.ɚ məˈʃin ˈlɝ.nɪŋ/ — sounds like **AZH-ur muh-SHEEN LUR-ning**",
       "difficulty": "normal",
       "category": "Popular Platforms & Tools",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Amazon SageMaker",
-      "chinese": "",
-      "definition": "AWS service for building, training, deploying ML models.",
+      "definition": "/ˈæm.ə.zən seɪdʒ ˈmeɪ.kɚ/ — sounds like **AM-uh-zun SAYJ MAY-kur**",
       "difficulty": "normal",
       "category": "Popular Platforms & Tools",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Google Vertex AI",
-      "chinese": "",
-      "definition": "Google's unified AI platform.",
+      "definition": "/ˈɡu.ɡəl ˈvɝ.teks eɪ aɪ/ — sounds like **GOO-gul VUR-teks AY EYE**",
       "difficulty": "normal",
       "category": "Popular Platforms & Tools",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "MLflow",
-      "chinese": "",
-      "definition": "Open-source platform for managing ML lifecycle including experiments and deployment.",
+      "definition": "/em el floʊ/ — sounds like **EM EL FLOH**",
       "difficulty": "easy",
       "category": "Popular Platforms & Tools",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Databricks",
-      "chinese": "",
-      "definition": "Unified analytics platform for data processing and ML.",
+      "definition": "/ˈdeɪ.tə.brɪks/ — sounds like **DAY-tuh-briks**",
       "difficulty": "normal",
       "category": "Popular Platforms & Tools",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Weights & Biases",
-      "chinese": "",
-      "definition": "Platform for experiment tracking and model collaboration.",
+      "definition": "/weɪts ænd ˈbaɪ.ə.səz/ — sounds like **WAYTS and BY-uh-suhz**",
       "difficulty": "normal",
       "category": "Popular Platforms & Tools",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "GitHub Copilot",
-      "chinese": "",
-      "definition": "AI coding assistant generating code from natural language.",
+      "definition": "/ˈɡɪt.hʌb ˈkoʊ.paɪ.lɑt/ — sounds like **GIT-hub KOH-py-laht**",
       "difficulty": "normal",
       "category": "Popular Platforms & Tools",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Docker",
-      "chinese": "",
-      "definition": "Tool for packaging applications in portable containers.",
+      "definition": "/ˈdɑ.kɚ/ — sounds like **DAH-kur**",
       "difficulty": "easy",
       "category": "Popular Platforms & Tools",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Kubernetes",
-      "chinese": "",
-      "definition": "Platform automating deployment and scaling of containerized applications.",
+      "definition": "/ˈku.bɚˌnet.iz/ — sounds like **KOO-bur-NET-iz**",
       "difficulty": "normal",
       "category": "Popular Platforms & Tools",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Natural Language Processing",
-      "chinese": "",
-      "definition": "Enabling computers to understand and generate human language (NLP).",
+      "definition": "/ˈnætʃ.ɚ.əl ˈlæŋ.ɡwɪdʒ ˈproʊ.ses.ɪŋ/ — sounds like **NACH-ur-ul LANG-gwij PROH-ses-ing**",
       "difficulty": "normal",
       "category": "Natural Language Processing",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Tokenization",
-      "chinese": "",
-      "definition": "Breaking text into smaller units (tokens) for processing.",
+      "definition": "/ˌtoʊ.kən.əˈzeɪ.ʃən/ — sounds like **toh-kun-uh-ZAY-shun**",
       "difficulty": "normal",
       "category": "Natural Language Processing",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Sentiment Analysis",
-      "chinese": "",
-      "definition": "Determining emotional tone in text.",
+      "definition": "/ˈsen.tə.mənt əˈnæl.ə.səs/ — sounds like **SEN-tuh-munt uh-NAL-uh-sus**",
       "difficulty": "normal",
       "category": "Natural Language Processing",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Named Entity Recognition",
-      "chinese": "",
-      "definition": "Identifying people, places, organizations in text.",
+      "definition": "/neɪmd ˈen.tə.ti ˌrek.əɡˈnɪʃ.ən/ — sounds like **NAYMD EN-tuh-tee rek-ug-NISH-un**",
       "difficulty": "normal",
       "category": "Natural Language Processing",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Text Classification",
-      "chinese": "",
-      "definition": "Categorizing text into predefined groups.",
+      "definition": "/tekst ˌklæs.ə.fəˈkeɪ.ʃən/ — sounds like **TEKST klas-uh-fuh-KAY-shun**",
       "difficulty": "normal",
       "category": "Natural Language Processing",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Machine Translation",
-      "chinese": "",
-      "definition": "Automatically translating between languages.",
+      "definition": "/məˈʃin trænsˈleɪ.ʃən/ — sounds like **muh-SHEEN trans-LAY-shun**",
       "difficulty": "normal",
       "category": "Natural Language Processing",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Text Generation",
-      "chinese": "",
-      "definition": "Creating human-like text from prompts or data.",
+      "definition": "/tekst ˌdʒen.ɚˈeɪ.ʃən/ — sounds like **TEKST jen-ur-AY-shun**",
       "difficulty": "normal",
       "category": "Natural Language Processing",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Computer Vision",
-      "chinese": "",
-      "definition": "Enabling computers to interpret visual information.",
+      "definition": "/kəmˈpju.tɚ ˈvɪʒ.ən/ — sounds like **kum-PYOO-tur VIZH-un**",
       "difficulty": "normal",
       "category": "Computer Vision",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Image Classification",
-      "chinese": "",
-      "definition": "Categorizing images into classes.",
+      "definition": "/ˈɪm.ɪdʒ ˌklæs.ə.fəˈkeɪ.ʃən/ — sounds like **IM-ij klas-uh-fuh-KAY-shun**",
       "difficulty": "normal",
       "category": "Computer Vision",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Object Detection",
-      "chinese": "",
-      "definition": "Identifying and locating objects in images.",
+      "definition": "/ˈɑb.dʒekt dɪˈtek.ʃən/ — sounds like **AHB-jekt di-TEK-shun**",
       "difficulty": "normal",
       "category": "Computer Vision",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Bounding Box",
-      "chinese": "",
-      "definition": "Rectangle drawn around objects to indicate location.",
+      "definition": "/ˈbaʊn.dɪŋ bɑks/ — sounds like **BOWN-ding BAHKS**",
       "difficulty": "normal",
       "category": "Computer Vision",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Facial Recognition",
-      "chinese": "",
-      "definition": "Identifying individuals from facial features.",
+      "definition": "/ˈfeɪ.ʃəl ˌrek.əɡˈnɪʃ.ən/ — sounds like **FAY-shul rek-ug-NISH-un**",
       "difficulty": "normal",
       "category": "Computer Vision",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Image Generation",
-      "chinese": "",
-      "definition": "Creating new images using AI (e.g., DALL-E, Stable Diffusion).",
+      "definition": "/ˈɪm.ɪdʒ ˌdʒen.ɚˈeɪ.ʃən/ — sounds like **IM-ij jen-ur-AY-shun**",
       "difficulty": "normal",
       "category": "Computer Vision",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Transformer",
-      "chinese": "",
-      "definition": "Neural network architecture using attention mechanisms, foundation of modern LLMs.",
+      "definition": "/trænsˈfɔr.mɚ/ — sounds like **trans-FAWR-mur**",
       "difficulty": "normal",
       "category": "Model Types & Architectures",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Attention Mechanism",
-      "chinese": "",
-      "definition": "Component allowing models to focus on relevant input parts.",
+      "definition": "/əˈten.ʃən ˈmek.ə.nə.zəm/ — sounds like **uh-TEN-shun MEK-uh-nuh-zum**",
       "difficulty": "normal",
       "category": "Model Types & Architectures",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Encoder-Decoder",
-      "chinese": "",
-      "definition": "Architecture with separate components for processing inputs and generating outputs.",
+      "definition": "/ɪnˈkoʊ.dɚ dɪˈkoʊ.dɚ/ — sounds like **in-KOH-dur di-KOH-dur**",
       "difficulty": "normal",
       "category": "Model Types & Architectures",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Convolutional Neural Network",
-      "chinese": "",
-      "definition": "Network using convolution operations, effective for images (CNN).",
+      "definition": "/ˌkɑn.vəˈlu.ʃən.əl ˈnʊr.əl ˈnet.wɝk/ — sounds like **kahn-vuh-LOO-shun-ul NOOR-ul NET-wurk**",
       "difficulty": "normal",
       "category": "Model Types & Architectures",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Recurrent Neural Network",
-      "chinese": "",
-      "definition": "Network processing sequential data by maintaining memory (RNN).",
+      "definition": "/rɪˈkɝ.ənt ˈnʊr.əl ˈnet.wɝk/ — sounds like **ri-KUR-unt NOOR-ul NET-wurk**",
       "difficulty": "normal",
       "category": "Model Types & Architectures",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Generative AI",
-      "chinese": "",
-      "definition": "AI creating new content including text, images, code, audio.",
+      "definition": "/ˈdʒen.ɚ.ə.tɪv eɪ aɪ/ — sounds like **JEN-ur-uh-tiv AY EYE**",
       "difficulty": "normal",
       "category": "Model Types & Architectures",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Diffusion Model",
-      "chinese": "",
-      "definition": "Model generating images by gradually removing noise (e.g., Stable Diffusion).",
+      "definition": "/dɪˈfju.ʒən ˈmɑ.dəl/ — sounds like **di-FYOO-zhun MAH-duhl**",
       "difficulty": "normal",
       "category": "Model Types & Architectures",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Multimodal Model",
-      "chinese": "",
-      "definition": "AI processing multiple data types simultaneously (text, images, audio).",
+      "definition": "/ˌmʌl.tiˈmoʊ.dəl ˈmɑ.dəl/ — sounds like **mul-tee-MOH-dul MAH-duhl**",
       "difficulty": "normal",
       "category": "Model Types & Architectures",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Quantization",
-      "chinese": "",
-      "definition": "Reducing numerical precision to decrease model size and increase speed.",
+      "definition": "/ˌkwɑn.təˈzeɪ.ʃən/ — sounds like **kwahn-tuh-ZAY-shun**",
       "difficulty": "normal",
       "category": "Optimization & Efficiency",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Model Compression",
-      "chinese": "",
-      "definition": "Reducing model size while maintaining performance.",
+      "definition": "/ˈmɑ.dəl kəmˈpreʃ.ən/ — sounds like **MAH-duhl kum-PRESH-un**",
       "difficulty": "normal",
       "category": "Optimization & Efficiency",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Knowledge Distillation",
-      "chinese": "",
-      "definition": "Training smaller model to mimic larger model's behavior.",
+      "definition": "/ˈnɑ.lɪdʒ ˌdɪs.təˈleɪ.ʃən/ — sounds like **NAH-lij dis-tuh-LAY-shun**",
       "difficulty": "normal",
       "category": "Optimization & Efficiency",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "LoRA",
-      "chinese": "",
-      "definition": "Low-Rank Adaptation - efficient method for fine-tuning models with minimal parameter updates.",
+      "definition": "/ˈlɔ.rə/ — sounds like **LAWR-uh**",
       "difficulty": "easy",
       "category": "Optimization & Efficiency",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Pruning",
-      "chinese": "",
-      "definition": "Removing unnecessary parameters from models to reduce size.",
+      "definition": "/ˈpru.nɪŋ/ — sounds like **PROO-ning**",
       "difficulty": "easy",
       "category": "Optimization & Efficiency",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Batch Size",
-      "chinese": "",
-      "definition": "Number of examples processed together during training.",
+      "definition": "/bætʃ saɪz/ — sounds like **BACH SYZE**",
       "difficulty": "normal",
       "category": "Optimization & Efficiency",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Learning Rate",
-      "chinese": "",
-      "definition": "How much model adjusts during each training step.",
+      "definition": "/ˈlɝ.nɪŋ reɪt/ — sounds like **LUR-ning RAYT**",
       "difficulty": "normal",
       "category": "Optimization & Efficiency",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "GPU",
-      "chinese": "",
-      "definition": "Graphics Processing Unit - hardware accelerating AI computations.",
+      "definition": "/dʒi pi ju/ — sounds like **JEE PEE YOO**",
       "difficulty": "easy",
       "category": "Optimization & Efficiency",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "AI Safety",
-      "chinese": "",
-      "definition": "Ensuring AI operates without causing unintended harm.",
+      "definition": "/eɪ aɪ ˈseɪf.ti/ — sounds like **AY EYE SAYF-tee**",
       "difficulty": "normal",
       "category": "Safety & Governance",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Prompt Injection",
-      "chinese": "",
-      "definition": "Attack manipulating model by inserting malicious instructions.",
+      "definition": "/prɑmpt ɪnˈdʒek.ʃən/ — sounds like **PRAHMPT in-JEK-shun**",
       "difficulty": "normal",
       "category": "Safety & Governance",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Content Filtering",
-      "chinese": "",
-      "definition": "Blocking harmful or inappropriate outputs.",
+      "definition": "/ˈkɑn.tent ˈfɪl.tɚ.ɪŋ/ — sounds like **KAHN-tent FIL-tur-ing**",
       "difficulty": "normal",
       "category": "Safety & Governance",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Human-in-the-Loop",
-      "chinese": "",
-      "definition": "Requiring human validation at critical decision points.",
+      "definition": "/ˈhju.mən ɪn ðə lup/ — sounds like **HYOO-mun in thuh LOOP**",
       "difficulty": "normal",
       "category": "Safety & Governance",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Red Teaming",
-      "chinese": "",
-      "definition": "Adversarial testing to find system vulnerabilities.",
+      "definition": "/red ˈti.mɪŋ/ — sounds like **RED TEE-ming**",
       "difficulty": "normal",
       "category": "Safety & Governance",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Guardrails",
-      "chinese": "",
-      "definition": "Safety mechanisms preventing unintended agent behaviors.",
+      "definition": "/ˈɡɑrd.reɪlz/ — sounds like **GAHRD-raylz**",
       "difficulty": "normal",
       "category": "Safety & Governance",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Audit Trail",
-      "chinese": "",
-      "definition": "Recorded history of system actions for accountability.",
+      "definition": "/ˈɔ.dɪt treɪl/ — sounds like **AWR-dit TRAYL**",
       "difficulty": "normal",
       "category": "Safety & Governance",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Model Card",
-      "chinese": "",
-      "definition": "Documentation providing transparency about model capabilities and limitations.",
+      "definition": "/ˈmɑ.dəl kɑrd/ — sounds like **MAH-duhl KAHRD**",
       "difficulty": "normal",
       "category": "Safety & Governance",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Accuracy",
-      "chinese": "",
-      "definition": "Percentage of correct predictions.",
+      "definition": "/ˈæk.jɚ.ə.si/ — sounds like **AK-yur-uh-see**",
       "difficulty": "normal",
       "category": "Performance & Metrics",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Precision",
-      "chinese": "",
-      "definition": "Of predicted positives, how many were actually correct.",
+      "definition": "/prɪˈsɪʒ.ən/ — sounds like **pri-SIZH-un**",
       "difficulty": "normal",
       "category": "Performance & Metrics",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Recall",
-      "chinese": "",
-      "definition": "Of actual positives, how many were correctly identified.",
+      "definition": "/rɪˈkɔl/ — sounds like **ri-KAWL**",
       "difficulty": "easy",
       "category": "Performance & Metrics",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "F1 Score",
-      "chinese": "",
-      "definition": "Balance between precision and recall.",
+      "definition": "/ef wʌn skɔr/ — sounds like **EF WUN SKAWR**",
       "difficulty": "normal",
       "category": "Performance & Metrics",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Latency",
-      "chinese": "",
-      "definition": "Time delay between request and response.",
+      "definition": "/ˈleɪ.tən.si/ — sounds like **LAY-tun-see**",
       "difficulty": "easy",
       "category": "Performance & Metrics",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Throughput",
-      "chinese": "",
-      "definition": "Amount of work processed in given time.",
+      "definition": "/ˈθru.pʊt/ — sounds like **THROO-put**",
       "difficulty": "normal",
       "category": "Performance & Metrics",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Loss Function",
-      "chinese": "",
-      "definition": "Measure of model error during training that gets minimized.",
+      "definition": "/lɑs ˈfʌŋk.ʃən/ — sounds like **LAHS FUNK-shun**",
       "difficulty": "normal",
       "category": "Performance & Metrics",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Confusion Matrix",
-      "chinese": "",
-      "definition": "Table showing correct and incorrect predictions by category.",
+      "definition": "/kənˈfju.ʒən ˈmeɪ.trɪks/ — sounds like **kun-FYOO-zhun MAY-triks**",
       "difficulty": "normal",
       "category": "Performance & Metrics",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Cloud Computing",
-      "chinese": "",
-      "definition": "Delivering computing services over internet.",
+      "definition": "/klaʊd kəmˈpju.tɪŋ/ — sounds like **KLOWD kum-PYOO-ting**",
       "difficulty": "normal",
       "category": "Infrastructure & Deployment",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Edge Computing",
-      "chinese": "",
-      "definition": "Processing data near source rather than centralized cloud.",
+      "definition": "/edʒ kəmˈpju.tɪŋ/ — sounds like **EJ kum-PYOO-ting**",
       "difficulty": "normal",
       "category": "Infrastructure & Deployment",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Containerization",
-      "chinese": "",
-      "definition": "Packaging applications with dependencies in isolated containers.",
+      "definition": "/kənˌteɪ.nɚ.əˈzeɪ.ʃən/ — sounds like **kun-TAY-nur-uh-ZAY-shun**",
       "difficulty": "normal",
       "category": "Infrastructure & Deployment",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Serverless",
-      "chinese": "",
-      "definition": "Running code without managing underlying servers.",
+      "definition": "/ˈsɝ.vɚ.ləs/ — sounds like **SUR-vur-lus**",
       "difficulty": "normal",
       "category": "Infrastructure & Deployment",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Load Balancing",
-      "chinese": "",
-      "definition": "Distributing requests across multiple servers.",
+      "definition": "/loʊd ˈbæl.əns.ɪŋ/ — sounds like **LOHD BAL-uns-ing**",
       "difficulty": "normal",
       "category": "Infrastructure & Deployment",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "API Gateway",
-      "chinese": "",
-      "definition": "Entry point managing API requests and routing.",
+      "definition": "/eɪ pi aɪ ˈɡeɪt.weɪ/ — sounds like **AY PEE EYE GAYT-way**",
       "difficulty": "normal",
       "category": "Infrastructure & Deployment",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Microservices",
-      "chinese": "",
-      "definition": "Designing applications as independent, modular services.",
+      "definition": "/ˈmaɪ.kroʊˌsɝ.və.səz/ — sounds like **MY-kroh-SUR-vuh-suhz**",
       "difficulty": "normal",
       "category": "Infrastructure & Deployment",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "CI/CD",
-      "chinese": "",
-      "definition": "Continuous Integration/Continuous Deployment - automated testing and release process.",
+      "definition": "/si aɪ si di/ — sounds like **SEE EYE SEE DEE**",
       "difficulty": "easy",
       "category": "Infrastructure & Deployment",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Jupyter Notebook",
-      "chinese": "",
-      "definition": "Interactive environment for writing code with documentation.",
+      "definition": "/ˈdʒu.pə.tɚ ˈnoʊt.bʊk/ — sounds like **JOO-puh-tur NOHT-book**",
       "difficulty": "normal",
       "category": "Collaboration & Development",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Version Control",
-      "chinese": "",
-      "definition": "Tracking changes to code over time (e.g., Git).",
+      "definition": "/ˈvɝ.ʃən kənˈtroʊl/ — sounds like **VUR-shun kun-TROHL**",
       "difficulty": "normal",
       "category": "Collaboration & Development",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Experiment Tracking",
-      "chinese": "",
-      "definition": "Recording ML experiments with parameters and results.",
+      "definition": "/ɪkˈsper.ə.mənt ˈtræk.ɪŋ/ — sounds like **ik-SPER-uh-munt TRAK-ing**",
       "difficulty": "normal",
       "category": "Collaboration & Development",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Model Artifact",
-      "chinese": "",
-      "definition": "File or object produced during ML process (weights, configs).",
+      "definition": "/ˈmɑ.dəl ˈɑr.tə.fækt/ — sounds like **MAH-duhl AHR-tuh-fakt**",
       "difficulty": "normal",
       "category": "Collaboration & Development",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Checkpoint",
-      "chinese": "",
-      "definition": "Saved state during training allowing resumption if interrupted.",
+      "definition": "/ˈtʃek.pɔɪnt/ — sounds like **CHEK-poynt**",
       "difficulty": "normal",
       "category": "Collaboration & Development",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Baseline",
-      "chinese": "",
-      "definition": "Simple model or benchmark for comparison.",
+      "definition": "/ˈbeɪs.laɪn/ — sounds like **BAYS-lyne**",
       "difficulty": "normal",
       "category": "Collaboration & Development",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Pre-Training",
-      "chinese": "",
-      "definition": "Initial training on large dataset before specialization.",
+      "definition": "/pri ˈtreɪ.nɪŋ/ — sounds like **PREE TRAY-ning**",
       "difficulty": "normal",
       "category": "Collaboration & Development",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Reasoning Model",
-      "chinese": "",
-      "definition": "LLM enhanced for logical thinking and multi-step problem solving (e.g., o1, o3).",
+      "definition": "/ˈri.zən.ɪŋ ˈmɑ.dəl/ — sounds like **REE-zun-ing MAH-duhl**",
       "difficulty": "normal",
       "category": "Current Trends (2025 Specific)",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Agentic Workflow",
-      "chinese": "",
-      "definition": "Process where agents autonomously plan, execute, and refine tasks.",
+      "definition": "/eɪˈdʒen.tɪk ˈwɝk.floʊ/ — sounds like **ay-JEN-tik WURK-floh**",
       "difficulty": "normal",
       "category": "Current Trends (2025 Specific)",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Physical AI",
-      "chinese": "",
-      "definition": "AI systems interacting with and learning from physical world.",
+      "definition": "/ˈfɪz.ə.kəl eɪ aɪ/ — sounds like **FIZ-uh-kul AY EYE**",
       "difficulty": "normal",
       "category": "Current Trends (2025 Specific)",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Vibe Coding",
-      "chinese": "",
-      "definition": "Writing code by describing problems in natural language, AI generates implementation.",
+      "definition": "/vaɪb ˈkoʊ.dɪŋ/ — sounds like **VYBE KOH-ding**",
       "difficulty": "normal",
       "category": "Current Trends (2025 Specific)",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Small Language Model",
-      "chinese": "",
-      "definition": "Compact models offering efficiency with lower resource requirements.",
+      "definition": "/smɔl ˈlæŋ.ɡwɪdʒ ˈmɑ.dəl/ — sounds like **SMAWL LANG-gwij MAH-duhl**",
       "difficulty": "normal",
       "category": "Current Trends (2025 Specific)",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Frugal AI",
-      "chinese": "",
-      "definition": "Developing efficient AI prioritizing reduced computation and energy use.",
+      "definition": "/ˈfru.ɡəl eɪ aɪ/ — sounds like **FROO-gul AY EYE**",
       "difficulty": "normal",
       "category": "Current Trends (2025 Specific)",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Digital Watermarking",
-      "chinese": "",
-      "definition": "Embedding markers identifying AI-generated content.",
+      "definition": "/ˈdɪdʒ.ə.təl ˈwɔ.tɚ.mɑr.kɪŋ/ — sounds like **DIJ-uh-tul WAWR-tur-mahr-king**",
       "difficulty": "normal",
       "category": "Current Trends (2025 Specific)",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Emergent Behavior",
-      "chinese": "",
-      "definition": "Unexpected capabilities arising from complex AI system interactions.",
+      "definition": "/ɪˈmɝ.dʒənt bɪˈheɪ.vjɚ/ — sounds like **i-MUR-junt bi-HAY-vyur**",
       "difficulty": "normal",
       "category": "Current Trends (2025 Specific)",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Model Context Protocol",
-      "chinese": "",
-      "definition": "Standard enabling agents to connect with external tools uniformly (MCP).",
+      "definition": "/ˈmɑ.dəl ˈkɑn.tekst ˈproʊ.tə.kɑl/ — sounds like **MAH-duhl KAHN-tekst PROH-tuh-kahl**",
       "difficulty": "normal",
       "category": "Current Trends (2025 Specific)",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     },
     {
       "english": "Agent-to-Agent Protocol",
-      "chinese": "",
-      "definition": "Communication standard for agents across platforms (A2A).",
+      "definition": "/ˈeɪ.dʒənt tu ˈeɪ.dʒənt ˈproʊ.tə.kɑl/ — sounds like **AY-junt TOO AY-junt PROH-tuh-kahl**",
       "difficulty": "normal",
       "category": "Current Trends (2025 Specific)",
-      "source": "ai-ml-terms"
-    },
-    {
-      "english": "Sources",
-      "chinese": "",
-      "definition": "TechCrunch AI Glossary, Google ML Glossary, InfoQ Trends Report, Zendesk AI Terms, Industry surveys (2025)",
-      "difficulty": "easy",
-      "category": "Current Trends (2025 Specific)",
-      "source": "ai-ml-terms"
+      "source": "ai-ml-pronunciation-terms"
     }
   ]
 }

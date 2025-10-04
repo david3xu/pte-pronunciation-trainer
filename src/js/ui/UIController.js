@@ -294,31 +294,6 @@ class UIController {
             pronunciationElement.style.display = 'none';
         }
 
-        // Update Chinese translation display
-        const chineseElement = document.getElementById('chineseWord');
-        if (chineseElement) {
-            // Show Chinese translation if available, otherwise show a message
-            if (word.chinese && word.chinese.trim()) {
-                chineseElement.textContent = word.chinese;
-                chineseElement.style.fontStyle = 'normal';
-                chineseElement.style.opacity = '1';
-            } else {
-                chineseElement.textContent = '(No translation available)';
-                chineseElement.style.fontStyle = 'italic';
-                chineseElement.style.opacity = '0.6';
-            }
-
-            chineseElement.classList.add('word-change');
-
-            // Remove animation class after animation completes
-            setTimeout(() => {
-                chineseElement.classList.remove('word-change');
-                // Reset styles
-                chineseElement.style.fontStyle = 'normal';
-                chineseElement.style.opacity = '1';
-            }, 500);
-        }
-
         // Update example sentence display (for conversation vocabulary)
         const exampleElement = document.getElementById('exampleSentence');
         console.log('Example debug - word.example:', word.example ? 'EXISTS' : 'MISSING');
@@ -348,9 +323,6 @@ class UIController {
 
             // Display both English and Chinese examples
             let displayContent = `<div class="example-english">${cleanExample}</div>`;
-            if (word.exampleChinese) {
-                displayContent += `<div class="example-chinese">${word.exampleChinese}</div>`;
-            }
 
             exampleElement.innerHTML = displayContent;
             exampleElement.style.display = 'block';
@@ -368,7 +340,7 @@ class UIController {
         const totalWords = window.vocabularyManager.getTotalWords();
         window.progressTracker.updateProgress(index, totalWords, word);
 
-        console.log(`Displayed word ${index + 1}/${totalWords}: "${word.english}" - "${word.chinese || 'No translation'}"`);
+        console.log(`Displayed word ${index + 1}/${totalWords}: "${word.english}"`);
     }
 
     displayFirstWord() {

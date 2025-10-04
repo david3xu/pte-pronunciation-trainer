@@ -6,6 +6,12 @@ class UIController {
     }
 
     setupEventListeners() {
+        // Listen for vocabulary loaded event
+        window.eventBus.on('vocabulary:loaded', (data) => {
+            console.log('UIController: Vocabulary loaded, updating UI');
+            this.updateUI();
+        });
+
         // Listen for vocabulary events
         window.eventBus.on('vocabulary:categoryLoaded', (data) => {
             this.updateCategoryDisplay();

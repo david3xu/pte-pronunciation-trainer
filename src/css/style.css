@@ -1,3 +1,83 @@
+/* ============================================
+   CSS VARIABLES - Light & Dark Mode
+   ============================================ */
+:root {
+    /* Background Colors */
+    --bg-body: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --bg-primary: #ffffff;
+    --bg-secondary: #F8F9FA;
+    --bg-card: #F7FAFC;
+    --bg-header: #4a5568;
+
+    /* Text Colors */
+    --text-primary: #1f2937;
+    --text-secondary: #4A5568;
+    --text-muted: #718096;
+    --text-light: #ffffff;
+
+    /* Border Colors */
+    --border-light: #E2E8F0;
+    --border-medium: #d1d5db;
+
+    /* Accent Colors */
+    --color-blue: #2B6CB0;
+    --color-blue-hover: #3182CE;
+    --color-purple: #805AD5;
+    --color-gray: #6C757D;
+    --color-gray-hover: #545B62;
+
+    /* Status Colors */
+    --color-success: #22c55e;
+    --color-success-light: #E6FFFA;
+    --color-warning: #FEFCBF;
+    --color-error: #FED7D7;
+
+    /* Shadow */
+    --shadow-sm: 0 0 20px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.15);
+    --shadow-panel: 0 -4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Dark Mode Variables */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Background Colors */
+        --bg-body: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+        --bg-primary: #2d3748;
+        --bg-secondary: #1a202c;
+        --bg-card: rgba(26, 32, 44, 0.8);
+        --bg-header: #1a202c;
+
+        /* Text Colors */
+        --text-primary: #e2e8f0;
+        --text-secondary: #cbd5e0;
+        --text-muted: #a0aec0;
+        --text-light: #f7fafc;
+
+        /* Border Colors */
+        --border-light: #4a5568;
+        --border-medium: #4a5568;
+
+        /* Accent Colors */
+        --color-blue: #90cdf4;
+        --color-blue-hover: #4299e1;
+        --color-purple: #fbb6ce;
+        --color-gray: #4a5568;
+        --color-gray-hover: #2d3748;
+
+        /* Status Colors */
+        --color-success: #22c55e;
+        --color-success-light: rgba(26, 32, 44, 0.8);
+        --color-warning: rgba(26, 32, 44, 0.8);
+        --color-error: rgba(26, 32, 44, 0.8);
+
+        /* Shadow */
+        --shadow-sm: 0 0 20px rgba(0, 0, 0, 0.5);
+        --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.3);
+        --shadow-panel: 0 -4px 6px rgba(0, 0, 0, 0.2);
+    }
+}
+
 /* Reset and base styles */
 * {
     margin: 0;
@@ -7,9 +87,9 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: var(--bg-body);
     min-height: 100vh;
-    color: #333;
+    color: var(--text-primary);
 }
 
 /* CSS Grid Layout System - Consistent alignment for all elements */
@@ -19,14 +99,14 @@ body {
     min-height: 100vh;
     max-width: 800px;
     margin: 0 auto;
-    background: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: var(--bg-primary);
+    box-shadow: var(--shadow-sm);
 }
 
 /* Header - Minimal design, hidden on small mobile */
 .app-header {
-    background: #4a5568;
-    color: white;
+    background: var(--bg-header);
+    color: var(--text-light);
     text-align: center;
     padding: 15px 20px;
 }
@@ -61,36 +141,29 @@ body {
 .english-word {
     font-size: 48px;
     font-weight: 700;
-    color: #2B6CB0;
-    /* Blue for English - Clear visual distinction */
+    color: var(--color-blue);
     margin-bottom: 20px;
     word-wrap: break-word;
     line-height: 1.2;
     letter-spacing: 0.5px;
-    /* WCAG AAA: 8.8:1 contrast ratio */
 }
 
 /* Show characters clearly for beginners */
 .phonetic-spelling {
     font-size: 24px;
-    color: #805AD5;
-    /* Purple for phonetics */
+    color: var(--color-purple);
     font-weight: 500;
     margin-bottom: 15px;
     letter-spacing: 0.8px;
-    /* WCAG AA: 7.8:1 contrast ratio */
 }
 
 .ipa-notation {
     font-size: 22px;
-    color: #718096;
-    /* Gray for IPA */
+    color: var(--text-muted);
     font-weight: 400;
     margin-bottom: 20px;
     font-family: 'Doulos SIL', 'Gentium', sans-serif;
-    /* Better IPA support */
     letter-spacing: 1px;
-    /* WCAG AAA: 9.3:1 contrast ratio */
 }
 
 /* Chinese word display - removed */
@@ -98,20 +171,19 @@ body {
 .example-sentence {
     font-size: 20px;
     font-weight: 400;
-    color: #4A5568;
+    color: var(--text-secondary);
     line-height: 1.4;
     margin-bottom: 20px;
     padding: 15px;
-    background: #F7FAFC;
+    background: var(--bg-card);
     border-radius: 12px;
-    border-left: 4px solid #3182CE;
+    border-left: 4px solid var(--color-blue-hover);
     font-style: italic;
-    /* WCAG AAA: 11:1 contrast ratio */
 }
 
 .example-english {
     font-size: 18px;
-    color: #4A5568;
+    color: var(--text-secondary);
     line-height: 1.5;
     margin-bottom: 12px;
     font-style: italic;
@@ -123,22 +195,22 @@ body {
 /* Progress Display */
 .simple-progress {
     font-size: 15px;
-    color: #4A5568;
+    color: var(--text-secondary);
     font-weight: 400;
     display: inline-flex;
     align-items: center;
-    background: #F7FAFC;
+    background: var(--bg-card);
     border-radius: 15px;
     padding: 5px 12px;
     margin-top: 15px;
-    border: 1px solid #E2E8F0;
+    border: 1px solid var(--border-light);
 }
 
 .difficulty-badge {
     display: inline-block;
     font-size: 13px;
-    background: #EDF2F7;
-    color: #4A5568;
+    background: var(--bg-card);
+    color: var(--text-secondary);
     padding: 2px 8px;
     border-radius: 10px;
     margin-left: 8px;
@@ -146,27 +218,26 @@ body {
 }
 
 .difficulty-badge.easy {
-    background: #E6FFFA;
+    background: var(--color-success-light);
     color: #234E52;
 }
 
 .difficulty-badge.normal {
-    background: #FEFCBF;
+    background: var(--color-warning);
     color: #975A16;
 }
 
 .difficulty-badge.hard {
-    background: #FED7D7;
+    background: var(--color-error);
     color: #822727;
 }
 
 /* Control Area (20% space, essential actions only) */
 .control-area {
     grid-row: 3;
-    background: #F8F9FA;
+    background: var(--bg-secondary);
     padding: 20px;
-    border-top: 1px solid #E2E8F0;
-    /* Ensure proper spacing and prevent cutoff */
+    border-top: 1px solid var(--border-light);
     min-height: 120px;
     display: flex;
     flex-direction: column;
@@ -204,8 +275,8 @@ body {
 }
 
 .btn-nav {
-    background: #6C757D;
-    color: white;
+    background: var(--color-gray);
+    color: var(--text-light);
     border: none;
     padding: 12px 24px;
     border-radius: 20px;
@@ -215,11 +286,10 @@ body {
     transition: all 0.2s ease;
     min-width: 100px;
     min-height: 44px;
-    /* iOS touch target guidelines */
 }
 
 .btn-nav:hover {
-    background: #545B62;
+    background: var(--color-gray-hover);
     transform: translateY(-1px);
 }
 
@@ -234,7 +304,7 @@ body {
 
 .current-category {
     font-size: 16px;
-    color: #4A5568;
+    color: var(--text-secondary);
     font-weight: 500;
 }
 
@@ -255,12 +325,12 @@ body {
     min-height: 44px;
     min-width: 44px;
     transition: background 0.2s ease;
-    color: #4A5568;
+    color: var(--text-secondary);
 }
 
 .btn-settings:hover,
 .btn-fullscreen:hover {
-    background: #E2E8F0;
+    background: var(--border-light);
 }
 
 /* Settings Panel Slide-Up (accessible pattern) */
@@ -271,12 +341,11 @@ body {
     width: 100%;
     max-height: 0;
     overflow: hidden;
-    background: white;
+    background: var(--bg-primary);
     transition: max-height 0.3s ease-in-out;
-    border-top: 1px solid #E2E8F0;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05);
+    border-top: 1px solid var(--border-light);
+    box-shadow: var(--shadow-panel);
     z-index: 1000;
-    /* Increased z-index to ensure it's above all other elements */
     display: flex;
     flex-direction: column;
 }
@@ -299,7 +368,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    border-bottom: 1px solid #E2E8F0;
+    border-bottom: 1px solid var(--border-light);
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
@@ -309,7 +378,7 @@ body {
 .settings-title {
     font-size: 18px;
     font-weight: 600;
-    color: #4A5568;
+    color: var(--text-secondary);
 }
 
 .btn-close-settings {
@@ -317,7 +386,7 @@ body {
     border: none;
     font-size: 20px;
     cursor: pointer;
-    color: #4A5568;
+    color: var(--text-secondary);
 }
 
 .settings-grid {
@@ -346,7 +415,7 @@ body {
 
 .setting-item label {
     font-size: 14px;
-    color: #718096;
+    color: var(--text-muted);
     font-weight: 500;
 }
 
@@ -354,28 +423,25 @@ body {
 select,
 input {
     padding: 10px;
-    border: 1px solid #E2E8F0;
+    border: 1px solid var(--border-light);
     border-radius: 8px;
-    background: white;
+    background: var(--bg-primary);
     font-size: 16px;
     max-width: 100%;
-    /* Ensure long items don't overflow */
-    color: #2D3748;
+    color: var(--text-primary);
     -webkit-appearance: none;
-    /* Remove default styling */
     -moz-appearance: none;
     appearance: none;
     background-image: url("data:image/svg+xml;utf8,<svg fill='%23718096' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
     background-repeat: no-repeat;
     background-position: right 8px top 50%;
     min-height: 44px;
-    /* iOS touch target guidelines */
 }
 
 select:focus,
 input:focus {
     outline: none;
-    border-color: #3182CE;
+    border-color: var(--color-blue-hover);
     box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.3);
 }
 
@@ -478,163 +544,4 @@ input:focus {
     }
 }
 
-/* Conditional Dark Mode - Respects user's system preference */
-@media (prefers-color-scheme: dark) {
-html {
-    color-scheme: dark;
-    background: #1a202c;
-}
-
-* {
-    color-scheme: dark;
-}
-
-body {
-    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%) !important;
-    color: #e2e8f0 !important;
-}
-
-.app-layout-grid {
-    background: #2d3748 !important;
-    color: #e2e8f0 !important;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5) !important;
-}
-
-.app-header {
-    background: #1a202c !important;
-    color: #f7fafc !important;
-}
-
-/* Fix middle content area dark mode */
-.learning-area {
-    background: #2d3748 !important;
-    color: #e2e8f0 !important;
-}
-
-.word-display {
-    background: transparent !important;
-    color: #e2e8f0 !important;
-}
-
-.english-word {
-    color: #90cdf4 !important;
-}
-
-/* Chinese word display - removed */
-
-.phonetic-spelling {
-    color: #fbb6ce !important;
-    background: rgba(45, 55, 72, 0.8) !important;
-}
-
-.ipa-notation {
-    color: #ffd89b !important;
-    background: rgba(26, 32, 44, 0.8) !important;
-}
-
-/* Fix example sentence dark mode */
-.example-sentence {
-    background: rgba(26, 32, 44, 0.8) !important;
-    color: #cbd5e0 !important;
-    border-left-color: #4299e1 !important;
-}
-
-.example-english {
-    color: #e2e8f0 !important;
-}
-
-/* Chinese example display - removed */
-
-.simple-progress {
-    color: #e2e8f0 !important;
-}
-
-.difficulty-badge {
-    background: rgba(26, 32, 44, 0.8) !important;
-    color: #f7fafc !important;
-    border: 1px solid #4a5568 !important;
-}
-
-.current-category {
-    color: #90cdf4 !important;
-    background: transparent !important;
-}
-
-.control-area {
-    background: #2d3748 !important;
-    border-top-color: #4a5568 !important;
-}
-
-.btn-play {
-    background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%) !important;
-    color: white !important;
-}
-
-.btn-nav {
-    background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%) !important;
-    color: #e2e8f0 !important;
-}
-
-.settings-panel {
-    background: #2d3748 !important;
-    color: #e2e8f0 !important;
-    border-top-color: #4a5568 !important;
-}
-
-.setting-item label {
-    color: #a0aec0 !important;
-}
-
-select,
-input {
-    background: #1a202c !important;
-    color: #e2e8f0 !important;
-    border: 1px solid #4a5568 !important;
-}
-
-/* Dark mode for action buttons */
-.btn-settings,
-.btn-fullscreen {
-    color: #e2e8f0 !important;
-    background: transparent !important;
-}
-
-.btn-settings:hover,
-.btn-fullscreen:hover {
-    background: #4a5568 !important;
-}
-
-/* Ensure all text elements are light colored */
-div,
-span,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-button {
-    color: inherit !important;
-}
-
-/* Override any remaining light backgrounds */
-div:not(.btn-play):not(.btn-nav) {
-    background-color: transparent !important;
-}
-
-/* Definition display for AI/ML terms */
-.example-english.definition {
-    font-style: normal !important;
-    color: #e2e8f0 !important;
-    line-height: 1.5 !important;
-    padding: 5px 0 !important;
-}
-
-.example-english.definition strong {
-    color: #90cdf4 !important;
-    font-weight: 600 !important;
-    padding-right: 6px !important;
-}
-
-} /* End of dark mode media query */
+/* Dark mode handled by CSS variables at top of file - no overrides needed! */

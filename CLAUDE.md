@@ -46,7 +46,7 @@ npm run test -- --coverage
 
 ### 🆕 Resume Data Pipeline
 ```
-data-processing/resume-terms.md + temp.md → scripts/resume-data-pipeline.js → data/processed/*.json → Browser
+data/source/resume-terms.md + temp.md → scripts/resume-data-pipeline.js → data/processed/*.json → Browser
 ```
 **✅ Focused Processing**: `npm run data:resume` processes only professional vocabulary
 **🔄 Professional Terms**: Resume terms with IPA + AI/ML technical terminology
@@ -92,11 +92,10 @@ scripts/            # Build tools
 data/               # Organized data directories
 ├── processed/      # Standardized JSON datasets (resume terms)
 ├── generated/      # JS data files (compatibility)
-└── reports/        # Processing reports and validation results
-
-data-processing/    # Source data files
-├── resume-terms.md # Professional terms with IPA guides
-└── temp.md         # AI/ML terminology by category
+├── reports/        # Processing reports and validation results
+└── source/         # Source data files
+    ├── resume-terms.md # Professional terms with IPA guides
+    └── temp.md         # AI/ML terminology by category
 ```
 
 ## Key Features
@@ -303,7 +302,7 @@ const words = vocab.getCurrentWords();
 | Server won't start | Ensure Python 3 installed: `python3 -m http.server 3000` |
 | TTS not working | Use Chrome/Edge, check browser audio permissions |
 | Build failures | Run `npm install`, ensure Node.js >= 16.0.0 |
-| Data pipeline errors | Check input files in `data-processing/extractors/` |
+| Data pipeline errors | Check input files in `data/source/` |
 | Module not found | Verify module loading order in `index.html` |
 
 ## Deployment

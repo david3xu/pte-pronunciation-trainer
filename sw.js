@@ -215,8 +215,6 @@ self.addEventListener('message', (event) => {
 // Handle Audio Playback Sync for iOS Background
 async function handleAudioPlaybackSync() {
   try {
-    console.log('[SW] Handling audio playback sync for iOS background...');
-
     // Keep the service worker alive for audio playback
     const clients = await self.clients.matchAll();
     clients.forEach(client => {
@@ -228,39 +226,47 @@ async function handleAudioPlaybackSync() {
       });
     });
 
-    // Register another sync to keep it alive
+    // Register another sync to keep it alive (only if supported)
     if (self.registration && self.registration.sync) {
-      await self.registration.sync.register('audio-playback');
+      try {
+        await self.registration.sync.register('audio-playback');
+      } catch (syncError) {
+        // Background Sync not supported, ignore silently
+      }
     }
 
-    // Send notification to maintain audio session
+    // Send notification to maintain audio session (only if supported)
     if (self.registration && self.registration.showNotification) {
-      await self.registration.showNotification('CCL Trainer Audio Active', {
-        body: 'Audio playback continues in background',
-        icon: '/icon-192x192.png',
-        badge: '/icon-72x72.png',
-        tag: 'audio-playback',
-        silent: true,
-        requireInteraction: false
-      });
+      try {
+        await self.registration.showNotification('CCL Trainer Audio Active', {
+          body: 'Audio playback continues in background',
+          icon: '/icon-192x192.png',
+          badge: '/icon-72x72.png',
+          tag: 'audio-playback',
+          silent: true,
+          requireInteraction: false
+        });
+      } catch (notifError) {
+        // Notifications not supported or permission denied, ignore silently
+      }
     }
 
   } catch (error) {
-    console.error('[SW] Audio playback sync failed:', error);
+    // Ignore errors silently - background sync is optional enhancement
   }
 }
 
 // Handle Background Audio Requests
 async function handleBackgroundAudioRequest(payload) {
   try {
-    console.log('[SW] Handling background audio request:', payload);
-
-    // Register background sync for audio playback
-    if ('serviceWorker' in navigator && 'sync' in window.ServiceWorkerRegistration.prototype) {
-      const registration = await navigator.serviceWorker.ready;
-      await registration.sync.register('background-audio-sync');
-      await registration.sync.register('audio-playback');
-      console.log('[SW] Background audio sync registered');
+    // Register background sync for audio playback (only if supported)
+    if (self.registration && self.registration.sync) {
+      try {
+        await self.registration.sync.register('background-audio-sync');
+        await self.registration.sync.register('audio-playback');
+      } catch (syncError) {
+        // Background Sync not supported, ignore silently
+      }
     }
 
     // Notify clients of audio processing
@@ -274,7 +280,7 @@ async function handleBackgroundAudioRequest(payload) {
     });
 
   } catch (error) {
-    console.error('[SW] Background audio request failed:', error);
+    // Ignore errors silently - background audio is optional enhancement
   }
 }
 

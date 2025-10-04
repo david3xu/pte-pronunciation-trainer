@@ -209,16 +209,19 @@ class UIController {
         }
         // AI/ML terms: Extract pronunciation from pronunciation field
         else if (word.source === 'ai-ml-pronunciation-terms' && word.pronunciation) {
+            console.log('Processing AI/ML term pronunciation:', word.pronunciation);
             // Pronunciation format: "/IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**"
             // Use US pronunciation (second part) if available, otherwise UK (first part)
             const parts = word.pronunciation.split('|');
+            console.log('Pronunciation parts:', parts);
             const usPronunciation = parts.length > 1 ? parts[1].trim() : parts[0].trim();
+            console.log('Selected pronunciation part:', usPronunciation);
 
             const ipaMatch = usPronunciation.match(/\/([^\/]+)\//);
             const phoneticMatch = usPronunciation.match(/\*\*([^*]+)\*\*/);
             ipaOnly = ipaMatch ? `/${ipaMatch[1]}/` : '';
             phoneticPlain = phoneticMatch ? phoneticMatch[1] : '';
-            console.log('Using AI/ML term pronunciation from pronunciation field:', { ipaOnly, phoneticPlain });
+            console.log('Extracted pronunciation:', { ipaOnly, phoneticPlain, ipaMatch, phoneticMatch });
         }
         // LEGACY: Check if this is from vocabulary-clean dataset with direct pronunciation data
         else if (word.source === 'vocabulary-clean' && word.ukPronunciation) {
@@ -322,6 +325,8 @@ class UIController {
         // Special handling for AI/ML terms with definitions
         if (exampleElement && (word.source === 'aiml-terms' || word.source === 'ai-ml-pronunciation-terms') && word.definition) {
             console.log('Showing definition for AI/ML term:', word.definition);
+            console.log('Word source:', word.source);
+            console.log('Word definition exists:', !!word.definition);
 
             // Definition is now clean (no pronunciation), just display it directly
             if (word.definition && word.definition.trim()) {

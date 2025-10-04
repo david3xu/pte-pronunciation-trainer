@@ -72,7 +72,7 @@ npm run deploy:resume          # Generate data + build + validate
 ### **📊 Data Generation**
 ```bash
 npm run data:resume            # Process only resume & AI/ML terms
-npm run extract-vocab          # Legacy support for backward compatibility
+npm run data                   # Alias for data:resume
 ```
 
 ### **🔧 Development**
@@ -252,8 +252,8 @@ professional-vocabulary-trainer/
     ├── processed/              # Generated JSON datasets (resume terms)
     ├── generated/              # Legacy JS files (compatibility)
     └── source/                 # Source data files
-        ├── resume-terms.md     # Professional terms with IPA guides
-        └── temp.md             # AI/ML terminology by category
+        ├── resume-terms.md              # Professional terms with IPA guides
+        └── ai-ml-pronunciation-terms.md # AI/ML terminology with IPA notation
 ```
 
 ## 🤝 **Contributing**

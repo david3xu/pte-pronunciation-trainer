@@ -49,8 +49,7 @@ class LegacyCompatibility {
             progressTracker: 'progressTracker',
             storage: 'storage',
             stateManager: 'stateManager',
-            cacheMigration: 'cacheMigration',
-            dialogueDataLoader: 'dialogueDataLoader'
+            cacheMigration: 'cacheMigration'
         };
 
         Object.keys(moduleMap).forEach(moduleKey => {

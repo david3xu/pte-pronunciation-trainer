@@ -18,7 +18,7 @@ npm run deploy:resume         # Generate data + build + validate
 
 # 📊 Data Generation:
 npm run data:resume           # Process only resume & AI/ML terms
-npm run extract-vocab         # Legacy support for backward compatibility
+npm run data                  # Alias for data:resume
 
 # 🔧 Development:
 npm run dev                   # Start server at http://localhost:3000
@@ -94,8 +94,8 @@ data/               # Organized data directories
 ├── generated/      # JS data files (compatibility)
 ├── reports/        # Processing reports and validation results
 └── source/         # Source data files
-    ├── resume-terms.md # Professional terms with IPA guides
-    └── temp.md         # AI/ML terminology by category
+    ├── resume-terms.md              # Professional terms with IPA guides
+    └── ai-ml-pronunciation-terms.md # AI/ML terminology with IPA notation
 ```
 
 ## Key Features
@@ -138,8 +138,8 @@ data/               # Organized data directories
 ### Input Sources
 ```markdown
 # Processed by resume data pipeline:
-data/source/resume-terms.md      # IPA pronunciation guides with British/American variants
-data/source/temp.md              # AI/ML terminology by category with definitions
+data/source/resume-terms.md              # IPA pronunciation guides with British/American variants
+data/source/ai-ml-pronunciation-terms.md # AI/ML terminology with IPA notation and definitions
 ```
 
 ### Output Formats
@@ -298,7 +298,7 @@ const words = vocab.getCurrentWords();
 
 | Issue | Solution |
 |-------|----------|
-| "No vocabulary loaded" | Run `npm run data` (new) or `npm run extract-vocab` (legacy) |
+| "No vocabulary loaded" | Run `npm run data:resume` to generate datasets |
 | Server won't start | Ensure Python 3 installed: `python3 -m http.server 3000` |
 | TTS not working | Use Chrome/Edge, check browser audio permissions |
 | Build failures | Run `npm install`, ensure Node.js >= 16.0.0 |
@@ -342,8 +342,8 @@ Modules must load in this specific order in `index.html`:
 ### Required Data Generation
 The app requires data generation before first run:
 ```bash
-npm run data    # Required - generates all datasets
-npm run start   # Recommended - data + server
+npm run data:resume    # Required - generates all datasets
+npm run start:resume   # Recommended - data + server
 ```
 
 ### Global Window Objects

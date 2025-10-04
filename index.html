@@ -136,19 +136,12 @@
         window.debugVocab = {
             checkData: function () {
                 console.log('=== Debug Vocabulary Check ===');
-                console.log('DialogueDataLoader loaded:', typeof DialogueDataLoader !== 'undefined');
-                console.log('Dialogue data loader instance:', typeof window.dialogueDataLoader !== 'undefined');
-
-                if (window.dialogueDataLoader && window.dialogueDataLoader.isLoaded) {
-                    console.log('Data loaded:', window.dialogueDataLoader.isLoaded);
-                    console.log('Total dialogues:', window.dialogueDataLoader.data?.dialogues?.length || 0);
-                    console.log('Total vocabulary terms:', window.dialogueDataLoader.data?.metadata?.totalVocabularyTerms || 0);
-                    console.log('Sample dialogue:', window.dialogueDataLoader.data?.dialogues?.[0]?.title);
-                }
+                console.log('VocabularyManager loaded:', typeof window.vocabularyManager !== 'undefined');
 
                 if (window.vocabularyManager) {
                     console.log('Current words count:', window.vocabularyManager.getTotalWords());
                     console.log('Category counts:', window.vocabularyManager.getCategoryCounts());
+                    console.log('Available learning modes:', window.vocabularyManager.getAvailableModes?.());
                 }
             }
         };

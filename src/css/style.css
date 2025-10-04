@@ -290,6 +290,8 @@ body {
 .settings-panel.collapsed {
     max-height: 0;
     overflow: hidden;
+    border-top: none !important;
+    box-shadow: none !important;
 }
 
 .settings-header {

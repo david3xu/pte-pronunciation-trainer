@@ -316,14 +316,17 @@ body {
 
 .settings-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 @media (min-width: 640px) {
     .settings-grid {
-        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 24px 32px;
     }
 }
 
@@ -428,9 +431,9 @@ input:focus {
     }
 
     .settings-grid {
-        grid-template-columns: repeat(5, 1fr);
-        gap: 25px;
-        padding: 35px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 24px;
+        padding: 32px 40px;
     }
 }
 

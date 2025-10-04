@@ -558,7 +558,7 @@ body {
 }
 
 .control-area {
-    background: #1a202c !important;
+    background: transparent !important;
     border-top-color: #4a5568 !important;
 }
 

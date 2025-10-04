@@ -476,14 +476,15 @@ input:focus {
     }
 }
 
-/* Force Dark Mode - Overrides all light mode styles */
+/* Conditional Dark Mode - Respects user's system preference */
+@media (prefers-color-scheme: dark) {
 html {
-    color-scheme: dark !important;
-    background: #1a202c !important;
+    color-scheme: dark;
+    background: #1a202c;
 }
 
 * {
-    color-scheme: dark !important;
+    color-scheme: dark;
 }
 
 body {
@@ -633,3 +634,5 @@ div:not(.btn-play):not(.btn-nav) {
     font-weight: 600 !important;
     padding-right: 6px !important;
 }
+
+} /* End of dark mode media query */

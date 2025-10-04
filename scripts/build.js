@@ -42,11 +42,11 @@ function minifyHTML(html) {
 
 async function build() {
     console.log('🏗️  Starting production build...\n');
-    
+
     const distDir = 'dist';
     const srcDir = 'src';
     const dataDir = 'data';
-    
+
     try {
         // Create dist directory
         if (fs.existsSync(distDir)) {
@@ -54,14 +54,14 @@ async function build() {
             const { execSync } = require('child_process');
             execSync(`rm -rf ${distDir}`);
         }
-        
+
         fs.mkdirSync(distDir);
         fs.mkdirSync(path.join(distDir, 'js'));
         fs.mkdirSync(path.join(distDir, 'css'));
         fs.mkdirSync(path.join(distDir, 'data'));
-        
+
         console.log('✅ Created dist directory structure\n');
-        
+
         // Build CSS
         console.log('🎨 Building CSS files...');
         const cssFiles = [
@@ -69,7 +69,7 @@ async function build() {
             path.join(srcDir, 'css', 'components.css'),
             path.join(srcDir, 'css', 'responsive.css')
         ];
-        
+
         let combinedCSS = '';
         for (const cssFile of cssFiles) {
             if (fs.existsSync(cssFile)) {
@@ -78,11 +78,11 @@ async function build() {
                 console.log(`   ✓ Included ${path.basename(cssFile)}`);
             }
         }
-        
+
         const minifiedCSS = minifyCSS(combinedCSS);
         fs.writeFileSync(path.join(distDir, 'css', 'app.min.css'), minifiedCSS);
         console.log(`   ✅ Created app.min.css (${Math.round(minifiedCSS.length / 1024)}KB)\n`);
-        
+
         // Build JavaScript - Refactored modular structure with shared infrastructure
         console.log('📦 Building JavaScript files...');
         const jsFiles = [
@@ -118,7 +118,7 @@ async function build() {
             // Main app coordinator last
             path.join(srcDir, 'js', 'core', 'App.js')
         ];
-        
+
         let combinedJS = '';
         for (const jsFile of jsFiles) {
             if (fs.existsSync(jsFile)) {
@@ -127,11 +127,11 @@ async function build() {
                 console.log(`   ✓ Included ${path.basename(jsFile)}`);
             }
         }
-        
+
         const minifiedJS = minifyJS(combinedJS);
         fs.writeFileSync(path.join(distDir, 'js', 'app.min.js'), minifiedJS);
         console.log(`   ✅ Created app.min.js (${Math.round(minifiedJS.length / 1024)}KB)\n`);
-        
+
         // Copy processed JSON data files
         console.log('📚 Copying processed data files...');
         const processedDataDir = path.join(dataDir, 'processed');
@@ -171,11 +171,11 @@ async function build() {
         }
 
         console.log();
-        
+
         // Build HTML
         console.log('🔧 Building HTML...');
         const htmlContent = fs.readFileSync('index.html', 'utf8');
-        
+
         // Update HTML to use minified files
         const optimizedHTML = htmlContent
             .replace('src/css/style.css', 'css/app.min.css')
@@ -183,18 +183,18 @@ async function build() {
             .replace(/data\/generated\/conversation-vocabulary-data\.js\?v=\d+(&t=\d+)?/g, 'data/conversation-vocabulary-data.min.js')
             // Remove all individual module script tags and replace with single bundled file
             .replace(/<!-- NEW: Shared Infrastructure[\s\S]*?<script src="src\/js\/core\/ResumeApp\.js\?v=\d+"><\/script>/g,
-                     '<!-- Bundled JavaScript -->\n    <script src="js/app.min.js"></script>')
+                '<!-- Bundled JavaScript -->\n    <script src="js/app.min.js"></script>')
             // Add meta tags for production
             .replace('<head>', `<head>
     <meta name="description" content="CCL Pronunciation Trainer - NAATI CCL exam preparation with 2,180 conversation vocabulary terms">
     <meta name="keywords" content="CCL, NAATI, pronunciation, vocabulary, Chinese, English, exam preparation">
     <meta name="author" content="CCL Pronunciation Trainer">
     <meta name="robots" content="index, follow">`);
-        
+
         const minifiedHTML = minifyHTML(optimizedHTML);
         fs.writeFileSync(path.join(distDir, 'index.html'), minifiedHTML);
         console.log('   ✅ Created optimized index.html\n');
-        
+
         // Copy assets if they exist
         const assetsDir = 'assets';
         if (fs.existsSync(assetsDir)) {
@@ -220,7 +220,7 @@ async function build() {
             }
         }
         console.log();
-        
+
         // Generate build info
         const buildInfo = {
             buildTime: new Date().toISOString(),
@@ -231,30 +231,30 @@ async function build() {
                 'index.html': fs.statSync(path.join(distDir, 'index.html')).size
             }
         };
-        
+
         if (fs.existsSync(path.join(distDir, 'data', 'vocabulary-data.min.js'))) {
             buildInfo.files['data/vocabulary-data.min.js'] = fs.statSync(path.join(distDir, 'data', 'vocabulary-data.min.js')).size;
         }
-        
+
         if (fs.existsSync(path.join(distDir, 'data', 'conversation-vocabulary-data.min.js'))) {
             buildInfo.files['data/conversation-vocabulary-data.min.js'] = fs.statSync(path.join(distDir, 'data', 'conversation-vocabulary-data.min.js')).size;
         }
-        
+
         fs.writeFileSync(
-            path.join(distDir, 'build-info.json'), 
+            path.join(distDir, 'build-info.json'),
             JSON.stringify(buildInfo, null, 2)
         );
-        
+
         // Calculate total size
         const totalSize = Object.values(buildInfo.files).reduce((a, b) => a + b, 0);
-        
+
         console.log('🎉 Build completed successfully!\n');
         console.log('📊 Build Summary:');
         console.log(`   Total size: ${Math.round(totalSize / 1024)}KB`);
         console.log(`   Files created: ${Object.keys(buildInfo.files).length}`);
         console.log(`   Output directory: ${distDir}/`);
         console.log('\n✨ Ready for deployment!');
-        
+
     } catch (error) {
         console.error('❌ Build failed:', error.message);
         process.exit(1);
@@ -265,12 +265,12 @@ function copyDirectory(src, dest) {
     if (!fs.existsSync(dest)) {
         fs.mkdirSync(dest, { recursive: true });
     }
-    
+
     const files = fs.readdirSync(src);
     for (const file of files) {
         const srcPath = path.join(src, file);
         const destPath = path.join(dest, file);
-        
+
         if (fs.statSync(srcPath).isDirectory()) {
             copyDirectory(srcPath, destPath);
         } else {

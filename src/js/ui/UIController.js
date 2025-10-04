@@ -207,6 +207,15 @@ class UIController {
             ipaOnly = word.ipa ? `/${word.ipa}/` : '';
             console.log('Using direct ipa/phonetic fields:', { ipaOnly, phoneticPlain });
         }
+        // AI/ML terms: Extract pronunciation from definition field
+        else if (word.source === 'ai-ml-pronunciation-terms' && word.definition) {
+            // Definition format: "/IPA/ — sounds like **PHONETIC**"
+            const ipaMatch = word.definition.match(/\/([^\/]+)\//);
+            const phoneticMatch = word.definition.match(/\*\*([^*]+)\*\*/);
+            ipaOnly = ipaMatch ? `/${ipaMatch[1]}/` : '';
+            phoneticPlain = phoneticMatch ? phoneticMatch[1] : '';
+            console.log('Using AI/ML term pronunciation from definition:', { ipaOnly, phoneticPlain });
+        }
         // LEGACY: Check if this is from vocabulary-clean dataset with direct pronunciation data
         else if (word.source === 'vocabulary-clean' && word.ukPronunciation) {
             // Extract IPA and phonetic from UK pronunciation field
@@ -307,19 +316,32 @@ class UIController {
         console.log('Example debug - word keys:', Object.keys(word));
 
         // Special handling for AI/ML terms with definitions
-        if (exampleElement && word.source === 'aiml-terms' && word.definition) {
+        if (exampleElement && (word.source === 'aiml-terms' || word.source === 'ai-ml-pronunciation-terms') && word.definition) {
             console.log('Showing definition for AI/ML term:', word.definition);
 
-            // Display definition as the "example"
-            let displayContent = `<div class="example-english definition"><strong>Definition:</strong> ${word.definition}</div>`;
+            // Strip pronunciation part (everything up to and including "— ")
+            let cleanDefinition = word.definition;
+            if (cleanDefinition.includes('— ')) {
+                cleanDefinition = cleanDefinition.split('— ')[1] || cleanDefinition;
+            }
+            // Remove "sounds like **PHONETIC**" part
+            cleanDefinition = cleanDefinition.replace(/sounds like \*\*[^*]+\*\*/g, '').trim();
 
-            exampleElement.innerHTML = displayContent;
-            exampleElement.style.display = 'block';
-            exampleElement.classList.add('word-change');
+            // If nothing left after stripping, hide the element
+            if (!cleanDefinition) {
+                exampleElement.style.display = 'none';
+            } else {
+                // Display cleaned definition as the "example"
+                let displayContent = `<div class="example-english definition">${cleanDefinition}</div>`;
 
-            setTimeout(() => {
-                exampleElement.classList.remove('word-change');
-            }, 500);
+                exampleElement.innerHTML = displayContent;
+                exampleElement.style.display = 'block';
+                exampleElement.classList.add('word-change');
+
+                setTimeout(() => {
+                    exampleElement.classList.remove('word-change');
+                }, 500);
+            }
         }
         // Standard example sentence handling
         else if (exampleElement && word.example) {

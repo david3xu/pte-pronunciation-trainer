@@ -198,14 +198,6 @@ async function build() {
             console.log('   ✅ Assets copied');
         }
 
-        // Copy images if they exist
-        const imageDir = 'image';
-        if (fs.existsSync(imageDir)) {
-            console.log('🖼️  Copying images...');
-            copyDirectory(imageDir, path.join(distDir, 'image'));
-            console.log('   ✅ Images copied');
-        }
-
         // Copy other static files
         const staticFiles = ['manifest.json', 'sw.js'];
         for (const staticFile of staticFiles) {

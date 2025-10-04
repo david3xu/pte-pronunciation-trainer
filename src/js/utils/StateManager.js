@@ -89,7 +89,9 @@ class StateManager {
             speed: this.state.speed,
             delay: this.state.delay,
             repeat: this.state.repeat,
-            voice: this.state.voice
+            voice: this.state.voice,
+            category: this.state.currentCategory,
+            difficulty: this.state.currentDifficulty
         };
     }
 

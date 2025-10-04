@@ -68,10 +68,16 @@ class SettingsPanel {
         this.applySettingToElement('voiceSelect', savedSettings.voice || 'auto');
         this.applySettingToElement('learningModeSelect', savedSettings.learningMode);
 
-        // Apply settings to modules
-        window.vocabularyManager.currentCategory = savedSettings.category;
-        window.vocabularyManager.currentDifficulty = savedSettings.difficulty;
-        window.vocabularyManager.currentLearningMode = savedSettings.learningMode;
+        // Apply settings to modules using setter methods
+        if (savedSettings.category && window.vocabularyManager.setCategory) {
+            window.vocabularyManager.setCategory(savedSettings.category);
+        }
+        if (savedSettings.difficulty && window.vocabularyManager.setDifficulty) {
+            window.vocabularyManager.setDifficulty(savedSettings.difficulty);
+        }
+        if (savedSettings.learningMode && window.vocabularyManager.setLearningMode) {
+            window.vocabularyManager.setLearningMode(savedSettings.learningMode);
+        }
     }
 
 
@@ -137,9 +143,13 @@ class SettingsPanel {
         this.applySettingToElement('repeatSelect', savedSettings.repeatMode);
         this.applySettingToElement('voiceSelect', savedSettings.preferredVoice || 'Google UK English Male');
 
-        // Apply settings to modules
-        window.vocabularyManager.currentCategory = savedSettings.category;
-        window.vocabularyManager.currentDifficulty = savedSettings.difficulty;
+        // Apply settings to modules using setter methods
+        if (savedSettings.category && window.vocabularyManager.setCategory) {
+            window.vocabularyManager.setCategory(savedSettings.category);
+        }
+        if (savedSettings.difficulty && window.vocabularyManager.setDifficulty) {
+            window.vocabularyManager.setDifficulty(savedSettings.difficulty);
+        }
         window.ttsEngine.setSpeechRate(savedSettings.speechRate);
         window.audioControls.setDelay(savedSettings.delay);
         window.audioControls.setRepeatMode(savedSettings.repeatMode);

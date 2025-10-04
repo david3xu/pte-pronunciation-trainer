@@ -1,19 +1,12 @@
 // Service Worker for Background Operation and PWA Functionality
-const CACHE_NAME = 'ccl-trainer-v1';
+const CACHE_NAME = 'ccl-trainer-v2';
 const urlsToCache = [
   '/',
   '/index.html',
-  '/src/css/style.css',
-  '/src/css/dark-mode.css',
-  '/src/js/core/App.js',
-  '/src/js/core/VocabularyManager.js',
-  '/src/js/audio/TTSEngine.js',
-  '/src/js/audio/AudioControls.js',
-  '/src/js/ui/UIController.js',
-  '/src/js/ui/SettingsPanel.js',
-  '/data/generated/conversation-vocabulary-data.json',
-  '/data/generated/pronunciation-vocabulary-data.json',
-  '/manifest.json'
+  '/css/app.min.css',
+  '/js/app.min.js',
+  '/data/processed/resume-terms-dataset.json',
+  '/data/processed/aiml-terms-dataset.json'
 ];
 
 // Install Service Worker and Cache Resources
@@ -23,11 +16,22 @@ self.addEventListener('install', (event) => {
     caches.open(CACHE_NAME)
       .then((cache) => {
         console.log('[SW] Caching app shell for offline use');
-        return cache.addAll(urlsToCache);
+        // Cache files individually to avoid failing on missing files
+        return Promise.allSettled(
+          urlsToCache.map(url =>
+            cache.add(url).catch(err => {
+              console.warn(`[SW] Failed to cache ${url}:`, err);
+              return null;
+            })
+          )
+        );
       })
       .then(() => {
         console.log('[SW] Service Worker installed successfully');
         return self.skipWaiting(); // Activate immediately
+      })
+      .catch(err => {
+        console.error('[SW] Service Worker installation failed:', err);
       })
   );
 });

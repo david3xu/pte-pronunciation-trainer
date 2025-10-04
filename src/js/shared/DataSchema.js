@@ -8,14 +8,13 @@ class DataSchema {
     constructor() {
         this.schemas = {
             vocabulary: {
-                required: ['english', 'chinese'],
-                optional: ['difficulty', 'category', 'example', 'exampleChinese', 'conversationId', 'phonetic', 'pronunciation', 'source', 'id'],
+                required: ['english'],
+                optional: ['difficulty', 'category', 'example', 'ipa_uk', 'ipa_us', 'phonetic_uk', 'phonetic_us', 'definition', 'phonetic', 'pronunciation', 'source', 'id'],
                 defaults: {
                     difficulty: 'normal',
                     category: 'general',
                     example: '',
-                    exampleChinese: '',
-                    conversationId: '',
+                    definition: '',
                     phonetic: '',
                     pronunciation: '',
                     source: 'unknown'
@@ -38,8 +37,8 @@ class DataSchema {
                 optional: ['category', 'difficulty', 'metadata'],
                 structure: {
                     sentences: {
-                        required: ['english', 'chinese'],
-                        optional: ['speaker', 'vocabulary', 'id']
+                        required: ['english'],
+                        optional: ['speaker', 'vocabulary', 'id', 'pronunciation']
                     }
                 }
             }
@@ -96,14 +95,16 @@ class DataSchema {
         // Map common field variations to standard fields
         const fieldMappings = {
             english: ['english', 'term', 'word', 'text'],
-            chinese: ['chinese', 'translation', 'meaning'],
             difficulty: ['difficulty', 'level'],
             category: ['category', 'domain', 'type'],
             example: ['example', 'sentence', 'context'],
-            exampleChinese: ['exampleChinese', 'sentenceChinese', 'contextChinese'],
-            conversationId: ['conversationId', 'dialogue_id', 'dialogueId'],
+            definition: ['definition', 'meaning', 'description'],
             phonetic: ['phonetic', 'ipa', 'pronunciation_guide'],
-            pronunciation: ['pronunciation', 'phonetic_spelling']
+            pronunciation: ['pronunciation', 'phonetic_spelling'],
+            ipa_uk: ['ipa_uk', 'british_ipa', 'uk_ipa'],
+            ipa_us: ['ipa_us', 'american_ipa', 'us_ipa'],
+            phonetic_uk: ['phonetic_uk', 'british_phonetic'],
+            phonetic_us: ['phonetic_us', 'american_phonetic']
         };
 
         // Map fields from raw data

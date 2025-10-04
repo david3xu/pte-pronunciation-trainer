@@ -75,12 +75,12 @@ class ResumeDataPipeline {
             this.stats.totalErrors++;
         }
 
-        // Process temp.md (AI/ML terms) if it exists
-        const tempFilePath = path.join(this.config.inputDir, 'temp.md');
-        if (fs.existsSync(tempFilePath)) {
+        // Process ai-ml-pronunciation-terms.md (AI/ML terms) if it exists
+        const aimlFilePath = path.join(this.config.inputDir, 'ai-ml-pronunciation-terms.md');
+        if (fs.existsSync(aimlFilePath)) {
             try {
-                // Basic extraction for AI/ML terms from temp.md
-                const content = fs.readFileSync(tempFilePath, 'utf-8');
+                // Basic extraction for AI/ML terms from ai-ml-pronunciation-terms.md
+                const content = fs.readFileSync(aimlFilePath, 'utf-8');
                 const lines = content.split('\n');
                 const terms = [];
                 let currentSection = null;
@@ -98,20 +98,36 @@ class ResumeDataPipeline {
                     // Skip main title
                     if (trimmed.startsWith('# ')) continue;
 
-                    // Process terms with definitions
+                    // Process terms with pronunciation guides and definitions
                     if (trimmed.startsWith('**')) {
-                        const match = trimmed.match(/^\*\*([^*]+)\*\*:\s*(.+)$/);
+                        // Handle format: **Term** | pronunciation | definition
+                        const match = trimmed.match(/^\*\*([^*]+)\*\*\s*\|\s*(.+)$/);
                         if (match) {
                             const term = match[1].trim();
-                            const definition = match[2].trim();
+                            const restOfLine = match[2].trim();
+
+                            // Extract definition (everything after the last pronunciation guide)
+                            // Look for the pattern: sounds like **SIMPLE-GUIDE** | sounds like **SIMPLE-GUIDE** | definition
+                            const parts = restOfLine.split('|');
+                            let definition = '';
+
+                            if (parts.length >= 3) {
+                                // Format: pronunciation1 | pronunciation2 | definition
+                                definition = parts.slice(2).join('|').trim();
+                            } else if (parts.length === 2) {
+                                // Format: pronunciation | definition
+                                definition = parts[1].trim();
+                            } else {
+                                // Fallback: use the whole rest of line as definition
+                                definition = restOfLine;
+                            }
 
                             const termData = {
                                 english: term,
-                                chinese: '', // AI/ML terms don't have Chinese translations
                                 definition: definition,
                                 difficulty: this.inferDifficulty(term),
                                 category: currentSection || 'ai-ml',
-                                source: 'ai-ml-terms'
+                                source: 'ai-ml-pronunciation-terms'
                             };
 
                             terms.push(termData);
@@ -121,9 +137,9 @@ class ResumeDataPipeline {
 
                 this.results.set('aimlTerms', terms);
                 this.stats.totalProcessed += terms.length;
-                console.log(`   ✅ Processed ${terms.length} AI/ML terms from ${tempFilePath}`);
+                console.log(`   ✅ Processed ${terms.length} AI/ML terms from ${aimlFilePath}`);
             } catch (error) {
-                console.error(`   ❌ Error processing ${tempFilePath}: ${error.message}`);
+                console.error(`   ❌ Error processing ${aimlFilePath}: ${error.message}`);
                 this.stats.totalErrors++;
             }
         }

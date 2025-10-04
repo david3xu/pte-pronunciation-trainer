@@ -77,7 +77,6 @@ class ResumeTermsExtractor {
 
                 const termData = {
                     english: term,
-                    chinese: '', // Resume terms don't have Chinese translations
                     difficulty: this.inferDifficulty(term),
                     phonetic: britishPhonetic || americanPhonetic,
                     ipa: britishIPA || americanIPA,

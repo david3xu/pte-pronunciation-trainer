@@ -10,7 +10,7 @@ class AudioControls {
 
     async startAutoPlay() {
         if (this.isPlaying) return;
-        
+
         const totalWords = window.vocabularyManager.getTotalWords();
         if (totalWords === 0) {
             window.progressTracker.showError('No words available to play');
@@ -19,35 +19,35 @@ class AudioControls {
 
         this.isPlaying = true;
         this.showPlayingUI();
-        
+
         console.log(`Starting auto-play from index ${this.currentIndex}`);
-        
+
         // Emit auto-play start event
         window.eventBus.emit('audioControls:autoPlayStarted', {
             startIndex: this.currentIndex,
             totalWords
         });
-        
+
         await this.playCurrentWord();
     }
 
     pauseAutoPlay() {
         if (!this.isPlaying) return;
-        
+
         this.isPlaying = false;
         this.showPausedUI();
-        
+
         if (this.autoPlayTimeout) {
             clearTimeout(this.autoPlayTimeout);
             this.autoPlayTimeout = null;
         }
-        
+
         // Stop any ongoing speech
         window.ttsEngine.stopSpeaking();
-        
+
         window.progressTracker.updateStatus('Paused');
         console.log('Auto-play paused');
-        
+
         // Emit auto-play pause event
         window.eventBus.emit('audioControls:autoPlayPaused', {
             currentIndex: this.currentIndex
@@ -56,7 +56,7 @@ class AudioControls {
 
     async playCurrentWord() {
         if (!this.isPlaying) return;
-        
+
         const currentWord = window.vocabularyManager.getCurrentWord(this.currentIndex);
         if (!currentWord) {
             this.handlePlaybackEnd();
@@ -72,11 +72,11 @@ class AudioControls {
 
             // Start TTS - display will be updated when speech actually begins
             await this.handleWordRepetition(currentWord);
-            
+
             if (this.isPlaying) {
                 await this.scheduleNextWord();
             }
-            
+
         } catch (error) {
             console.error('Error playing word:', error);
             window.progressTracker.showError('Error playing word');
@@ -85,13 +85,13 @@ class AudioControls {
 
     async handleWordRepetition(word) {
         const targetRepeats = window.ttsEngine.getTargetRepeats();
-        
+
         for (let repeatCount = 0; repeatCount < targetRepeats; repeatCount++) {
             if (!this.isPlaying) break;
-            
+
             // Don't update status - let the term index display remain visible
             await window.ttsEngine.pronounceWord(word, repeatCount);
-            
+
             // Add delay between repetitions (except after last repetition)
             if (repeatCount < targetRepeats - 1 && this.isPlaying) {
                 await this.wait(this.delay / 2); // Shorter delay between repetitions
@@ -101,7 +101,7 @@ class AudioControls {
 
     async scheduleNextWord() {
         if (!this.isPlaying) return;
-        
+
         // Wait for the configured delay before next word
         this.autoPlayTimeout = setTimeout(async () => {
             if (this.isPlaying) {
@@ -113,9 +113,9 @@ class AudioControls {
 
     advanceToNextWord() {
         const totalWords = window.vocabularyManager.getTotalWords();
-        
+
         this.currentIndex++;
-        
+
         if (this.currentIndex >= totalWords) {
             if (this.repeatMode === 'loop') {
                 // Loop back to beginning
@@ -131,7 +131,7 @@ class AudioControls {
 
     handleCategoryCompletion() {
         const nextCategory = window.vocabularyManager.getNextCategory();
-        
+
         if (nextCategory) {
             // Auto-advance to next category
             this.advanceToNextCategory(nextCategory);
@@ -144,20 +144,20 @@ class AudioControls {
     advanceToNextCategory(nextCategory) {
         const currentCategoryName = window.vocabularyManager.getCategoryLabel(window.vocabularyManager.currentCategory);
         const nextCategoryName = window.vocabularyManager.getCategoryLabel(nextCategory);
-        
+
         // Check for circular progression
         const isCircular = (window.vocabularyManager.currentCategory === 'travel-immigration' && nextCategory === 'social-welfare');
-        
+
         if (isCircular) {
             window.progressTracker.updateStatus(`🔄 Full circle complete! Starting over with ${nextCategoryName}...`);
         } else {
             window.progressTracker.updateStatus(`🎉 ${currentCategoryName} completed! Moving to ${nextCategoryName}...`);
         }
-        
+
         // Load next category and reset index
         window.vocabularyManager.loadCategory(nextCategory);
         this.currentIndex = 0;
-        
+
         // Continue playing with new category
         setTimeout(async () => {
             if (this.isPlaying) {
@@ -179,8 +179,7 @@ class AudioControls {
         // For "All Categories" mode - simple restart message
         window.progressTracker.updateStatus(`🔄 All words completed! Starting over...`);
         document.getElementById('englishWord').textContent = `🔄 Starting Over`;
-        document.getElementById('chineseWord').textContent = `All 1,618 words completed - repeating!`;
-        
+
         // Brief pause, then continue
         setTimeout(() => {
             if (this.isPlaying) {
@@ -199,22 +198,21 @@ class AudioControls {
     showFinalCompletion() {
         const totalWords = window.vocabularyManager.getTotalWords();
         window.progressTracker.updateStatus(`🏆 All topics completed! ${totalWords} words mastered!`);
-        
+
         // Display final celebration
         document.getElementById('englishWord').textContent = `🏆 Congratulations!`;
-        document.getElementById('chineseWord').textContent = `All CCL topics completed! ${totalWords} words mastered!`;
-        
+
         const difficultyBadge = document.getElementById('difficultyBadge');
         if (difficultyBadge) difficultyBadge.style.display = 'none';
-        
+
         this.isPlaying = false;
         this.showPausedUI();
-        
+
         // Emit completion event
         window.eventBus.emit('audioControls:allCategoriesCompleted', {
             totalWords
         });
-        
+
         // Confetti celebration (optional enhancement)
         console.log('🎊 FINAL COMPLETION CELEBRATION! 🎊');
     }
@@ -238,7 +236,7 @@ class AudioControls {
             }
             return;
         }
-        
+
         this.updateCurrentDisplay();
     }
 
@@ -261,27 +259,27 @@ class AudioControls {
             }
             return;
         }
-        
+
         this.updateCurrentDisplay();
     }
 
     advanceToPreviousCategory(prevCategory) {
         const currentCategoryName = window.vocabularyManager.getCategoryLabel(window.vocabularyManager.currentCategory);
         const prevCategoryName = window.vocabularyManager.getCategoryLabel(prevCategory);
-        
+
         // Check for circular progression (reverse)
         const isCircular = (window.vocabularyManager.currentCategory === 'social-welfare' && prevCategory === 'travel-immigration');
-        
+
         if (isCircular) {
             window.progressTracker.updateStatus(`🔄 Reverse circle complete! Going back to ${prevCategoryName}...`);
         } else {
             window.progressTracker.updateStatus(`⬅️ Moving back from ${currentCategoryName} to ${prevCategoryName}...`);
         }
-        
+
         // Load previous category and set to last word
         window.vocabularyManager.loadCategory(prevCategory);
         this.currentIndex = window.vocabularyManager.getTotalWords() - 1;
-        
+
         this.updateCurrentDisplay();
     }
 
@@ -313,7 +311,7 @@ class AudioControls {
 
     setDelay(delay) {
         this.delay = parseInt(delay) || Constants.DELAYS.DEFAULT_PAUSE;
-        
+
         // Emit delay change event
         window.eventBus.emit('audioControls:delayChanged', {
             delay: this.delay
@@ -322,7 +320,7 @@ class AudioControls {
 
     setRepeatMode(mode) {
         this.repeatMode = mode;
-        
+
         // Update TTS engine repeat settings
         const targetRepeats = {
             'once': 1,
@@ -330,9 +328,9 @@ class AudioControls {
             'intensive': 3,
             'loop': 1
         }[mode] || 1;
-        
+
         window.ttsEngine.setRepeatMode(targetRepeats);
-        
+
         // Emit repeat mode change event
         window.eventBus.emit('audioControls:repeatModeChanged', {
             mode: this.repeatMode,

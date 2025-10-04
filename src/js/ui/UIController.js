@@ -321,7 +321,7 @@ class UIController {
             const cleanExample = this.cleanExampleSentence(word.example);
             console.log('Showing example sentence:', cleanExample);
 
-            // Display both English and Chinese examples
+            // Display English examples
             let displayContent = `<div class="example-english">${cleanExample}</div>`;
 
             exampleElement.innerHTML = displayContent;
@@ -358,7 +358,7 @@ class UIController {
             .replace(/^[A-Z][a-z]*\s*[：:]\s*/g, '')
             // Remove numbered dialogue markers (e.g., "1. ", "2. ")
             .replace(/^\d+\.\s*/g, '')
-            // Remove Chinese text in parentheses (translations)
+            // Remove text in parentheses (translations)
             .replace(/（[^）]*）/g, '')
             .replace(/\([^)]*\)/g, '')
             // Remove markdown image references

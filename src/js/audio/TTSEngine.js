@@ -322,7 +322,7 @@ class TTSEngine {
             .replace(/^[A-Z][a-z]*\s*[：:]\s*/g, '')
             // Remove numbered dialogue markers (e.g., "1. ", "2. ")
             .replace(/^\d+\.\s*/g, '')
-            // Remove Chinese text in parentheses (translations)
+            // Remove text in parentheses (translations)
             .replace(/（[^）]*）/g, '')
             .replace(/\([^)]*\)/g, '')
             // Remove markdown image references

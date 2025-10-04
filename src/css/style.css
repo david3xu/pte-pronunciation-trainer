@@ -341,27 +341,32 @@ body {
     width: 100%;
     max-height: 0;
     overflow: hidden;
-    background: var(--bg-primary);
-    transition: max-height 0.3s ease-in-out;
+    background: transparent;
+    transition: max-height 0.3s ease-in-out, background 0.3s ease-in-out;
     border-top: none;
     box-shadow: none;
     z-index: 1000;
     display: flex;
     flex-direction: column;
+    visibility: hidden;
 }
 
 .settings-panel.active {
     max-height: 70vh;
     overflow-y: auto;
+    background: var(--bg-primary);
     border-top: 1px solid var(--border-light);
     box-shadow: var(--shadow-panel);
+    visibility: visible;
 }
 
 .settings-panel.collapsed {
     max-height: 0;
     overflow: hidden;
+    background: transparent;
     border-top: none;
     box-shadow: none;
+    visibility: hidden;
 }
 
 .settings-header {

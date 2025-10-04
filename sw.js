@@ -1,5 +1,5 @@
 // Service Worker for Background Operation and PWA Functionality
-const CACHE_NAME = 'ccl-trainer-v6';
+const CACHE_NAME = 'ccl-trainer-v7';
 const urlsToCache = [
   '/',
   '/index.html',

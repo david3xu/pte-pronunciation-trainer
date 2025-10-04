@@ -207,14 +207,18 @@ class UIController {
             ipaOnly = word.ipa ? `/${word.ipa}/` : '';
             console.log('Using direct ipa/phonetic fields:', { ipaOnly, phoneticPlain });
         }
-        // AI/ML terms: Extract pronunciation from definition field
-        else if (word.source === 'ai-ml-pronunciation-terms' && word.definition) {
-            // Definition format: "/IPA/ — sounds like **PHONETIC**"
-            const ipaMatch = word.definition.match(/\/([^\/]+)\//);
-            const phoneticMatch = word.definition.match(/\*\*([^*]+)\*\*/);
+        // AI/ML terms: Extract pronunciation from pronunciation field
+        else if (word.source === 'ai-ml-pronunciation-terms' && word.pronunciation) {
+            // Pronunciation format: "/IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**"
+            // Use US pronunciation (second part) if available, otherwise UK (first part)
+            const parts = word.pronunciation.split('|');
+            const usPronunciation = parts.length > 1 ? parts[1].trim() : parts[0].trim();
+
+            const ipaMatch = usPronunciation.match(/\/([^\/]+)\//);
+            const phoneticMatch = usPronunciation.match(/\*\*([^*]+)\*\*/);
             ipaOnly = ipaMatch ? `/${ipaMatch[1]}/` : '';
             phoneticPlain = phoneticMatch ? phoneticMatch[1] : '';
-            console.log('Using AI/ML term pronunciation from definition:', { ipaOnly, phoneticPlain });
+            console.log('Using AI/ML term pronunciation from pronunciation field:', { ipaOnly, phoneticPlain });
         }
         // LEGACY: Check if this is from vocabulary-clean dataset with direct pronunciation data
         else if (word.source === 'vocabulary-clean' && word.ukPronunciation) {
@@ -319,20 +323,9 @@ class UIController {
         if (exampleElement && (word.source === 'aiml-terms' || word.source === 'ai-ml-pronunciation-terms') && word.definition) {
             console.log('Showing definition for AI/ML term:', word.definition);
 
-            // Strip pronunciation part (everything up to and including "— ")
-            let cleanDefinition = word.definition;
-            if (cleanDefinition.includes('— ')) {
-                cleanDefinition = cleanDefinition.split('— ')[1] || cleanDefinition;
-            }
-            // Remove "sounds like **PHONETIC**" part
-            cleanDefinition = cleanDefinition.replace(/sounds like \*\*[^*]+\*\*/g, '').trim();
-
-            // If nothing left after stripping, hide the element
-            if (!cleanDefinition) {
-                exampleElement.style.display = 'none';
-            } else {
-                // Display cleaned definition as the "example"
-                let displayContent = `<div class="example-english definition">${cleanDefinition}</div>`;
+            // Definition is now clean (no pronunciation), just display it directly
+            if (word.definition && word.definition.trim()) {
+                let displayContent = `<div class="example-english definition"><strong>Definition:</strong> ${word.definition}</div>`;
 
                 exampleElement.innerHTML = displayContent;
                 exampleElement.style.display = 'block';
@@ -341,6 +334,9 @@ class UIController {
                 setTimeout(() => {
                     exampleElement.classList.remove('word-change');
                 }, 500);
+            } else {
+                // No definition, hide the element
+                exampleElement.style.display = 'none';
             }
         }
         // Standard example sentence handling

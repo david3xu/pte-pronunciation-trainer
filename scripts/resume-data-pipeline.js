@@ -85,7 +85,8 @@ class ResumeDataPipeline {
                 const terms = [];
                 let currentSection = null;
 
-                for (const line of lines) {
+                for (let i = 0; i < lines.length; i++) {
+                    const line = lines[i];
                     const trimmed = line.trim();
                     if (!trimmed) continue;
 
@@ -100,31 +101,29 @@ class ResumeDataPipeline {
 
                     // Process terms with pronunciation guides and definitions
                     if (trimmed.startsWith('**')) {
-                        // Handle format: **Term** | pronunciation | definition
+                        // Handle format: **Term** | UK-IPA — sounds like **UK-PHONETIC** | US-IPA — sounds like **US-PHONETIC**
                         const match = trimmed.match(/^\*\*([^*]+)\*\*\s*\|\s*(.+)$/);
                         if (match) {
                             const term = match[1].trim();
-                            const restOfLine = match[2].trim();
+                            const pronunciationLine = match[2].trim();
 
-                            // Extract definition (everything after the last pronunciation guide)
-                            // Look for the pattern: sounds like **SIMPLE-GUIDE** | sounds like **SIMPLE-GUIDE** | definition
-                            const parts = restOfLine.split('|');
-                            let definition = '';
-
-                            if (parts.length >= 3) {
-                                // Format: pronunciation1 | pronunciation2 | definition
-                                definition = parts.slice(2).join('|').trim();
-                            } else if (parts.length === 2) {
-                                // Format: pronunciation | definition
-                                definition = parts[1].trim();
-                            } else {
-                                // Fallback: use the whole rest of line as definition
-                                definition = restOfLine;
+                            // Read the next non-empty line for the actual definition
+                            let actualDefinition = '';
+                            let j = i + 1;
+                            while (j < lines.length) {
+                                const nextLine = lines[j].trim();
+                                if (nextLine && !nextLine.startsWith('**') && !nextLine.startsWith('##') && !nextLine.startsWith('#')) {
+                                    actualDefinition = nextLine;
+                                    break;
+                                }
+                                if (nextLine.startsWith('**')) break; // Stop if we hit the next term
+                                j++;
                             }
 
                             const termData = {
                                 english: term,
-                                definition: definition,
+                                pronunciation: pronunciationLine, // Store full pronunciation line
+                                definition: actualDefinition,     // Actual definition text
                                 difficulty: this.inferDifficulty(term),
                                 category: currentSection || 'ai-ml',
                                 source: 'ai-ml-pronunciation-terms'

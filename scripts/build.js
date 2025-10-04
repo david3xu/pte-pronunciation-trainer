@@ -100,13 +100,8 @@ async function build() {
             path.join(srcDir, 'js', 'utils', 'StateTest.js'),
             // Data modules
             path.join(srcDir, 'js', 'data', 'pronunciations.js'),
-            path.join(srcDir, 'js', 'data', 'DialogueDataLoader.js'),
-            // Models
-            path.join(srcDir, 'js', 'models', 'Vocabulary.js'),
-            path.join(srcDir, 'js', 'models', 'Category.js'),
-            path.join(srcDir, 'js', 'models', 'Dialogue.js'),
             // Core modules
-            path.join(srcDir, 'js', 'core', 'VocabularyManager.js'),
+            path.join(srcDir, 'js', 'core', 'ResumeVocabularyManager.js'),
             path.join(srcDir, 'js', 'core', 'ProgressTracker.js'),
             // Audio modules
             path.join(srcDir, 'js', 'audio', 'TTSEngine.js'),
@@ -116,7 +111,7 @@ async function build() {
             path.join(srcDir, 'js', 'ui', 'UIController.js'),
             path.join(srcDir, 'js', 'ui', 'SettingsPanel.js'),
             // Main app coordinator last
-            path.join(srcDir, 'js', 'core', 'App.js')
+            path.join(srcDir, 'js', 'core', 'ResumeApp.js')
         ];
 
         let combinedJS = '';

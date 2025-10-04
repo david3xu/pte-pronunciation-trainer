@@ -16,7 +16,7 @@ class ResumeDataPipeline {
         this.config = {
             inputDir: path.join(__dirname, '../data/source'),
             outputDir: path.join(__dirname, '../data'),
-            reportsDir: path.join(__dirname, '../reports')
+            reportsDir: path.join(__dirname, '../data/reports')
         };
         this.results = new Map();
         this.stats = {

@@ -297,7 +297,7 @@ npm run test            # Run tests
 | Server won't start | Ensure Python 3: `python3 -m http.server 3000` |
 | TTS not working | Use Chrome/Edge, check audio permissions |
 | Build failures | Run `npm install`, check Node.js version >= 16 |
-| Data errors | Check `reports/` directory for validation details |
+| Data errors | Check `data/reports/` directory for validation details |
 
 ## 📄 **License**
 

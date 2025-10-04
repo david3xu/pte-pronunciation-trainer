@@ -15,11 +15,19 @@ class SettingsPanel {
         // Settings panel toggle
         const settingsBtn = document.getElementById('settingsBtn');
         const settingsPanel = document.getElementById('settingsPanel');
+        const closeSettingsBtn = document.getElementById('closeSettingsBtn');
 
         if (settingsBtn && settingsPanel) {
             settingsBtn.addEventListener('click', () => {
                 this.togglePanel();
             });
+
+            // Close button handler
+            if (closeSettingsBtn) {
+                closeSettingsBtn.addEventListener('click', () => {
+                    this.closePanel();
+                });
+            }
 
             // Close settings when clicking outside
             document.addEventListener('click', (e) => {

@@ -51,7 +51,8 @@ async function build() {
         // Create dist directory
         if (fs.existsSync(distDir)) {
             console.log('🧹 Cleaning existing dist directory...');
-            fs.rmSync(distDir, { recursive: true });
+            const { execSync } = require('child_process');
+            execSync(`rm -rf ${distDir}`);
         }
         
         fs.mkdirSync(distDir);
@@ -181,7 +182,7 @@ async function build() {
             .replace(/data\/generated\/vocabulary-data\.js\?v=\d+(&t=\d+)?/g, 'data/vocabulary-data.min.js')
             .replace(/data\/generated\/conversation-vocabulary-data\.js\?v=\d+(&t=\d+)?/g, 'data/conversation-vocabulary-data.min.js')
             // Remove all individual module script tags and replace with single bundled file
-            .replace(/<!-- NEW: Shared Infrastructure[\s\S]*?<!-- Main App Coordinator -->\s*<script src="src\/js\/core\/App\.js\?v=\d+"><\/script>/g,
+            .replace(/<!-- NEW: Shared Infrastructure[\s\S]*?<script src="src\/js\/core\/ResumeApp\.js\?v=\d+"><\/script>/g,
                      '<!-- Bundled JavaScript -->\n    <script src="js/app.min.js"></script>')
             // Add meta tags for production
             .replace('<head>', `<head>

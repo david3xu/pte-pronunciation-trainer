@@ -166,6 +166,11 @@ body {
     background: #F8F9FA;
     padding: 20px;
     border-top: 1px solid #E2E8F0;
+    /* Ensure proper spacing and prevent cutoff */
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .primary-controls {
@@ -378,6 +383,9 @@ input:focus {
 
     .control-area {
         padding: 15px;
+        min-height: 100px;
+        /* Ensure buttons are not cut off on mobile */
+        padding-bottom: 20px;
     }
 
     .btn-play {

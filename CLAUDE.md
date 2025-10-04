@@ -139,8 +139,8 @@ data-processing/    # Source data files
 ### Input Sources
 ```markdown
 # Processed by resume data pipeline:
-data-processing/resume-terms.md      # IPA pronunciation guides with British/American variants
-data-processing/temp.md              # AI/ML terminology by category with definitions
+data/source/resume-terms.md      # IPA pronunciation guides with British/American variants
+data/source/temp.md              # AI/ML terminology by category with definitions
 ```
 
 ### Output Formats

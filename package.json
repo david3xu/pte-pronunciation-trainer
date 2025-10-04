@@ -6,14 +6,18 @@
   "scripts": {
     "dev": "python3 -m http.server 3000",
     "data": "node scripts/resume-data-pipeline.js",
+    "data:resume": "node scripts/resume-data-pipeline.js",
     "build": "node scripts/build.js",
     "test": "jest",
     "lint": "eslint src/js/**/*.js && stylelint src/css/**/*.css",
     "validate": "node scripts/validate.js",
     "clean": "rm -rf dist/ data/processed/",
     "start": "npm run data && npm run dev",
+    "start:resume": "npm run data:resume && npm run dev",
     "deploy": "npm run data && npm run build && npm run validate",
-    "vercel-build": "npm run data && npm run build"
+    "deploy:resume": "npm run data:resume && npm run build && npm run validate",
+    "vercel-build": "npm run data && npm run build",
+    "vercel-build:resume": "npm run data:resume && npm run build"
   },
   "keywords": [
     "pronunciation",

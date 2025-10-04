@@ -198,7 +198,7 @@ window.eventBus.emit('vocabulary:loaded', data);
 When you have new professional terms to add:
 
 ```bash
-# 1. Update source files in data-processing/
+# 1. Update source files in data/source/
 # 2. Run resume data pipeline
 npm run data:resume
 
@@ -248,12 +248,12 @@ professional-vocabulary-trainer/
 │   ├── resume-data-pipeline.js # Resume-specific data processor
 │   ├── build.js                # Production builds
 │   └── validate.js             # Data validation
-├── data/
-│   ├── processed/              # Standardized JSON datasets (resume terms)
-│   └── generated/              # Legacy JS files (compatibility)
-└── data-processing/
-    ├── resume-terms.md         # Professional terms with IPA guides
-    └── temp.md                 # AI/ML terminology by category
+└── data/
+    ├── processed/              # Generated JSON datasets (resume terms)
+    ├── generated/              # Legacy JS files (compatibility)
+    └── source/                 # Source data files
+        ├── resume-terms.md     # Professional terms with IPA guides
+        └── temp.md             # AI/ML terminology by category
 ```
 
 ## 🤝 **Contributing**

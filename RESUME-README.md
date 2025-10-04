@@ -62,12 +62,12 @@ Special scripts have been optimized for this branch to focus on professional voc
 
 To add new professional vocabulary:
 
-1. Edit `data-processing/resume-terms.md`
+1. Edit `data/source/resume-terms.md`
 2. Follow the format: `term | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**`
 3. Run `npm run data:resume` to process changes
 
 To add new AI/ML terms:
 
-1. Edit `data-processing/temp.md`
+1. Edit `data/source/temp.md`
 2. Follow the format: `**Term**: Definition`
 3. Run `npm run data:resume` to process changes

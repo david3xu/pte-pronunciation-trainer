@@ -14,7 +14,7 @@ const ResumeTermsExtractor = require('../src/js/data/extractors/ResumeTermsExtra
 class ResumeDataPipeline {
     constructor() {
         this.config = {
-            inputDir: path.join(__dirname, '../data-processing'),
+            inputDir: path.join(__dirname, '../data/source'),
             outputDir: path.join(__dirname, '../data'),
             reportsDir: path.join(__dirname, '../reports')
         };

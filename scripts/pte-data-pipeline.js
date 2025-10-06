@@ -195,15 +195,25 @@ class PTEDataPipeline {
         try {
           const inputPath = path.join(this.config.inputDir, this.config.dataSources.subdirectory, entry.input);
           let terms = [];
+          let usedFallback = false;
           try {
             terms = await PTETermsExtractor.extract(inputPath, fs);
           } catch (e) {
+            // On parser error, try fallback simple list if configured
             if (entry.fallback) {
               const fallbackPath = path.join(this.config.inputDir, this.config.dataSources.subdirectory, entry.fallback);
               terms = await this.extractPTETerms(fallbackPath);
+              usedFallback = true;
             } else {
               throw e;
             }
+          }
+
+          // If IPA extractor returned zero, attempt fallback simple list
+          if ((!terms || terms.length === 0) && entry.fallback) {
+            const fallbackPath = path.join(this.config.inputDir, this.config.dataSources.subdirectory, entry.fallback);
+            terms = await this.extractPTETerms(fallbackPath);
+            usedFallback = true;
           }
 
           const unique = this.removeDuplicates(terms);
@@ -215,7 +225,7 @@ class PTEDataPipeline {
               description: entry.description,
               version: '1.0',
               categories: [entry.category],
-              hasIPA: true
+            hasIPA: !usedFallback
             },
             vocabulary: unique
           };

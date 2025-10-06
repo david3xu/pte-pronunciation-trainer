@@ -42,6 +42,16 @@ class AppConfig {
                         description: 'PTE Beginner high-frequency vocabulary with IPA',
                         sourceType: 'pte-beginner-vocabulary-with-ipa',
                         isDefault: false
+                    },
+                    {
+                        id: 'pte-intermediate',
+                        input: 'pte-intermediate-vocabulary-with-ipa.md',
+                        fallback: 'pte-intermediate-vocabulary.md',
+                        output: 'pte-intermediate-vocabulary.json',
+                        category: 'pte-intermediate',
+                        description: 'PTE Intermediate vocabulary (simple list fallback, IPA when available)',
+                        sourceType: 'pte-intermediate-vocabulary-with-ipa',
+                        isDefault: false
                     }
                 ],
                 extraSources: [
@@ -62,7 +72,8 @@ class AppConfig {
                     dataset: '/data/processed/pte-fib-listening-dataset.json',
                     byMode: {
                         'pte-fib-listening': '/data/processed/pte-fib-listening-dataset.json',
-                        'pte-beginner': '/data/processed/pte-beginner-vocabulary.json'
+                    'pte-beginner': '/data/processed/pte-beginner-vocabulary.json',
+                    'pte-intermediate': '/data/processed/pte-intermediate-vocabulary.json'
                     },
                     source: 'data/source/pte/vocabs/',
                     processed: 'data/processed/',
@@ -71,11 +82,13 @@ class AppConfig {
                 categories: {
                     'all-categories': '🌟 All Categories',
                     'pte-fib-listening': '🎧 FIB Listening',
-                    'pte-beginner': '📗 PTE Beginner'
+                    'pte-beginner': '📗 PTE Beginner',
+                    'pte-intermediate': '📘 PTE Intermediate'
                 },
                 learningModes: [
                     { id: 'pte-fib-listening', label: '🎧 PTE FIB Listening', dataset: 'pte-fib-listening-with-ipa' },
-                    { id: 'pte-beginner', label: '📗 PTE Beginner Vocabulary', dataset: 'pte-beginner-vocabulary-with-ipa' }
+                    { id: 'pte-beginner', label: '📗 PTE Beginner Vocabulary', dataset: 'pte-beginner-vocabulary-with-ipa' },
+                    { id: 'pte-intermediate', label: '📘 PTE Intermediate Vocabulary', dataset: 'pte-intermediate-vocabulary-with-ipa' }
                 ],
                 difficulties: ['all', 'normal', 'hard', 'easy'] // All PTE terms with mixed difficulties
             },

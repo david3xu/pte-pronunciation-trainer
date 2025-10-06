@@ -1,5 +1,5 @@
 // Service Worker for Background Operation and PWA Functionality
-const CACHE_NAME = 'pte-trainer-v19';
+const CACHE_NAME = 'pte-trainer-v20';
 
 // Detect if we're in development or production mode
 const isDevelopment = self.location.hostname === 'localhost' ||
@@ -32,6 +32,7 @@ const urlsToCache = isDevelopment ? [
   '/src/js/core/PTEApp.js',
   '/data/processed/pte-fib-listening-dataset.json',
   '/data/processed/pte-beginner-vocabulary.json',
+  '/data/processed/pte-intermediate-vocabulary.json',
   '/manifest.json'
 ] : [
   // Production mode - cache existing files only
@@ -58,6 +59,7 @@ const urlsToCache = isDevelopment ? [
   '/src/js/core/PTEApp.js',
   '/data/processed/pte-fib-listening-dataset.json',
   '/data/processed/pte-beginner-vocabulary.json',
+  '/data/processed/pte-intermediate-vocabulary.json',
   '/manifest.json'
 ];
 

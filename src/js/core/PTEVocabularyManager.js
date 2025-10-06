@@ -27,6 +27,16 @@ class PTEVocabularyManager {
 
     try {
       await this.loadPTEData();
+      
+      // Also preload the intermediate dataset
+      const config = window.appConfig || new AppConfig();
+      const byMode = config.get('data.paths.byMode') || {};
+      if (byMode['pte-intermediate']) {
+        this.loadIntermediateDataset().catch(err => {
+          console.warn('⚠️ Could not preload intermediate dataset:', err);
+        });
+      }
+      
       this.isInitialized = true;
       console.log('✅ PTE Vocabulary Manager initialized successfully');
     } catch (error) {
@@ -67,6 +77,39 @@ class PTEVocabularyManager {
   }
 
   /**
+   * Load the PTE Intermediate dataset 
+   */
+  async loadIntermediateDataset() {
+    try {
+      console.log('📚 Loading PTE Intermediate data...');
+      const config = window.appConfig || new AppConfig();
+      const byMode = config.get('data.paths.byMode') || {};
+      
+      if (byMode['pte-intermediate']) {
+        const cacheBuster = `?v=${Date.now()}`;
+        const intermediateResponse = await fetch(byMode['pte-intermediate'] + cacheBuster);
+        this.pteIntermediateDataset = await intermediateResponse.json();
+        console.log(`✅ Loaded ${this.pteIntermediateDataset.vocabulary.length} PTE Intermediate terms`);
+        
+        // After loading, set the words and apply filters
+        this.allWords = this.pteIntermediateDataset.vocabulary;
+        this.applyFilters();
+        console.log(`📝 Loaded ${this.allWords.length} words for mode: pte-intermediate`);
+      } else {
+        console.error('❌ PTE Intermediate dataset path not configured');
+        this.pteIntermediateDataset = { vocabulary: [] };
+        this.allWords = [];
+        this.applyFilters();
+      }
+    } catch (error) {
+      console.error('❌ Error loading PTE Intermediate data:', error);
+      this.pteIntermediateDataset = { vocabulary: [] };
+      this.allWords = [];
+      this.applyFilters();
+    }
+  }
+
+  /**
    * Set the current learning mode
    */
   setLearningMode(mode) {
@@ -86,6 +129,14 @@ class PTEVocabularyManager {
         break;
       case 'pte-beginner':
         this.allWords = (this.pteBeginnerDataset && this.pteBeginnerDataset.vocabulary) || [];
+        break;
+      case 'pte-intermediate':
+        if (!this.pteIntermediateDataset) {
+          // Load the intermediate dataset if it hasn't been loaded yet
+          this.loadIntermediateDataset();
+          return; // The loading will continue asynchronously
+        }
+        this.allWords = (this.pteIntermediateDataset && this.pteIntermediateDataset.vocabulary) || [];
         break;
       default:
         console.warn(`Unknown learning mode: ${mode}`);

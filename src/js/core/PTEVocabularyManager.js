@@ -42,8 +42,9 @@ class PTEVocabularyManager {
       const config = window.appConfig || new AppConfig();
       const datasetPath = config.get('data.paths.dataset');
 
-      // Load PTE FIB listening dataset
-      const pteFibResponse = await fetch(datasetPath);
+      // Load PTE FIB listening dataset with cache-busting
+      const cacheBuster = `?v=${Date.now()}`;
+      const pteFibResponse = await fetch(datasetPath + cacheBuster);
       this.pteFibListeningDataset = await pteFibResponse.json();
       console.log(`✅ Loaded ${this.pteFibListeningDataset.vocabulary.length} PTE FIB listening terms`);
 

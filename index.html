@@ -13,7 +13,7 @@
     <title>PTE Vocabulary Pronunciation Trainer</title>
     <link rel="icon" href="data:,">
     <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="src/css/style.css?v=13">
+    <link rel="stylesheet" href="src/css/style.css?v=14">
 </head>
 
 <body>
@@ -68,6 +68,7 @@
                     <label for="learningModeSelect">Mode:</label>
                     <select id="learningModeSelect">
                         <option value="pte-fib-listening" selected>🎧 PTE FIB Listening</option>
+                        <option value="pte-beginner">📗 PTE Beginner Vocabulary</option>
                     </select>
                 </div>
                 <!-- PTE categories -->
@@ -76,6 +77,7 @@
                     <select id="categorySelect">
                         <option value="all-categories" selected>🌟 All Categories</option>
                         <option value="pte-fib-listening">🎧 FIB Listening</option>
+                        <option value="pte-beginner">📗 PTE Beginner</option>
                     </select>
                 </div>
                 <div class="setting-item">
@@ -105,7 +107,7 @@
                     <label for="repeatSelect">Repeat:</label>
                     <select id="repeatSelect">
                         <option value="once" selected>1x - Term Only</option>
-                        <option value="individual">2x - Slow+Normal</option>
+                        <option value="twice">2x - Slow+Normal</option>
                         <option value="intensive">3x - Slow+Normal+Fast + Example</option>
                         <option value="loop">Loop + Examples</option>
                     </select>
@@ -141,37 +143,37 @@
     </script>
 
     <!-- NEW: Shared Infrastructure (must load first) -->
-    <script src="src/js/shared/AppNamespace.js?v=1759734000"></script>
-    <script src="src/js/shared/Config.js?v=1759734000"></script>
-    <script src="src/js/shared/DataSchema.js?v=1759734000"></script>
-    <script src="src/js/shared/LegacyCompatibility.js?v=1759734000"></script>
+    <script src="src/js/shared/AppNamespace.js?v=1759740000"></script>
+    <script src="src/js/shared/Config.js?v=1759740000"></script>
+    <script src="src/js/shared/DataSchema.js?v=1759740000"></script>
+    <script src="src/js/shared/LegacyCompatibility.js?v=1759740000"></script>
 
     <!-- Utility Modules -->
-    <script src="src/js/utils/EventBus.js?v=1759734000"></script>
-    <script src="src/js/utils/Storage.js?v=1759734000"></script>
-    <script src="src/js/utils/StateManager.js?v=1759734000"></script>
-    <script src="src/js/utils/StateTest.js?v=1759734000"></script>
-    <script src="src/js/utils/CacheMigration.js?v=1759734000"></script>
+    <script src="src/js/utils/EventBus.js?v=1759740000"></script>
+    <script src="src/js/utils/Storage.js?v=1759740000"></script>
+    <script src="src/js/utils/StateManager.js?v=1759740000"></script>
+    <script src="src/js/utils/StateTest.js?v=1759740000"></script>
+    <script src="src/js/utils/CacheMigration.js?v=1759740000"></script>
 
     <!-- Core Logic Modules -->
-    <script src="src/js/core/SettingsManager.js?v=1759734000"></script>
-    <script src="src/js/core/PTEVocabularyManager.js?v=1759734000"></script>
-    <script src="src/js/core/ProgressTracker.js?v=1759734000"></script>
+    <script src="src/js/core/SettingsManager.js?v=1759740000"></script>
+    <script src="src/js/core/PTEVocabularyManager.js?v=1759740000"></script>
+    <script src="src/js/core/ProgressTracker.js?v=1759740000"></script>
 
     <!-- Data Extractors -->
-    <script src="src/js/data/extractors/PTETermsExtractor.js?v=1759734000"></script>
+    <script src="src/js/data/extractors/PTETermsExtractor.js?v=1759740000"></script>
 
     <!-- Audio Modules -->
-    <script src="src/js/audio/TTSEngine.js?v=1759734000"></script>
-    <script src="src/js/audio/VoiceSelector.js?v=1759734000"></script>
-    <script src="src/js/audio/AudioControls.js?v=1759734000"></script>
+    <script src="src/js/audio/TTSEngine.js?v=1759740000"></script>
+    <script src="src/js/audio/VoiceSelector.js?v=1759740000"></script>
+    <script src="src/js/audio/AudioControls.js?v=1759740000"></script>
 
     <!-- UI Modules -->
-    <script src="src/js/ui/UIController.js?v=1759734000"></script>
-    <script src="src/js/ui/SettingsPanel.js?v=1759734000"></script>
+    <script src="src/js/ui/UIController.js?v=1759740000"></script>
+    <script src="src/js/ui/SettingsPanel.js?v=1759740000"></script>
 
     <!-- Main App Coordinator -->
-    <script src="src/js/core/PTEApp.js?v=1759734000"></script>
+    <script src="src/js/core/PTEApp.js?v=1759740000"></script>
 </body>
 
 </html>

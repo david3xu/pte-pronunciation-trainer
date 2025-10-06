@@ -8,18 +8,21 @@
 ### Source Format (Markdown)
 - One file per dataset under `data/source/pte/vocabs/`.
 - Recommended filename: `<dataset-id>-with-ipa.md`.
-- Item structure (example):
+- Current parser expects ONE-LINE items in this exact pattern:
 
 ```markdown
-### obscure
-IPA (UK): /əbˈskjʊə/
-IPA (US): /əbˈskjʊr/
-Phonetic (UK): uhb-SKYOOR
-Phonetic (US): uhb-SKYOOR
-Category: pte-fib-listening
+1. obscure | /əbˈskjʊə/ — sounds like **uhb-SKYOOR** | /əbˈskjʊr/ — sounds like **uhb-SKYOOR**
 ```
 
-Required: english term (as heading). Optional: category, difficulty; IPA strongly recommended.
+Supported fields today (by extractor):
+- english: before the first `|`
+- pronunciation.british: `ipa` and `phonetic`
+- pronunciation.american: `ipa` and `phonetic`
+
+Notes:
+- Category is fixed to `pte-fib-listening` by code; difficulty is inferred.
+- Headers, metadata lines, and blank lines are ignored.
+- Definitions, examples, or translations are NOT parsed unless we extend the extractor.
 
 ### Config Wiring (Single Source of Truth)
 - In `src/js/shared/Config.js`:

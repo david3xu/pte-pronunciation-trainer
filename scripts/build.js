@@ -80,39 +80,19 @@ async function build() {
         }
 
         const minifiedCSS = minifyCSS(combinedCSS);
-        fs.writeFileSync(path.join(distDir, 'css', 'app.min.css'), minifiedCSS);
-        console.log(`   ✅ Created app.min.css (${Math.round(minifiedCSS.length / 1024)}KB)\n`);
+        const cssOutputPath = path.join(distDir, buildConfig.output.css);
+        fs.writeFileSync(cssOutputPath, minifiedCSS);
+        console.log(`   ✅ Created ${buildConfig.output.css} (${Math.round(minifiedCSS.length / 1024)}KB)\n`);
 
         // Build JavaScript - Refactored modular structure with shared infrastructure
         console.log('📦 Building JavaScript files...');
-        const jsFiles = [
-            // Shared infrastructure first
-            path.join(srcDir, 'js', 'shared', 'AppNamespace.js'),
-            path.join(srcDir, 'js', 'shared', 'Constants.js'),
-            path.join(srcDir, 'js', 'shared', 'Config.js'),
-            path.join(srcDir, 'js', 'shared', 'DataSchema.js'),
-            path.join(srcDir, 'js', 'shared', 'LegacyCompatibility.js'),
-            // Utility modules
-            path.join(srcDir, 'js', 'utils', 'EventBus.js'),
-            path.join(srcDir, 'js', 'utils', 'Storage.js'),
-            path.join(srcDir, 'js', 'utils', 'StateManager.js'),
-            path.join(srcDir, 'js', 'utils', 'CacheMigration.js'),
-            path.join(srcDir, 'js', 'utils', 'StateTest.js'),
-            // Data modules
-            path.join(srcDir, 'js', 'data', 'pronunciations.js'),
-            // Core modules
-            path.join(srcDir, 'js', 'core', 'ResumeVocabularyManager.js'),
-            path.join(srcDir, 'js', 'core', 'ProgressTracker.js'),
-            // Audio modules
-            path.join(srcDir, 'js', 'audio', 'TTSEngine.js'),
-            path.join(srcDir, 'js', 'audio', 'VoiceSelector.js'),
-            path.join(srcDir, 'js', 'audio', 'AudioControls.js'),
-            // UI modules
-            path.join(srcDir, 'js', 'ui', 'UIController.js'),
-            path.join(srcDir, 'js', 'ui', 'SettingsPanel.js'),
-            // Main app coordinator last
-            path.join(srcDir, 'js', 'core', 'ResumeApp.js')
-        ];
+
+        // Load centralized configuration for build files
+        const AppConfig = require('../src/js/shared/Config.js');
+        const appConfig = new AppConfig();
+        const buildConfig = appConfig.get('build');
+
+        const jsFiles = buildConfig.jsFiles.map(file => path.join(srcDir, file));
 
         let combinedJS = '';
         for (const jsFile of jsFiles) {
@@ -124,8 +104,9 @@ async function build() {
         }
 
         const minifiedJS = minifyJS(combinedJS);
-        fs.writeFileSync(path.join(distDir, 'js', 'app.min.js'), minifiedJS);
-        console.log(`   ✅ Created app.min.js (${Math.round(minifiedJS.length / 1024)}KB)\n`);
+        const jsOutputPath = path.join(distDir, buildConfig.output.js);
+        fs.writeFileSync(jsOutputPath, minifiedJS);
+        console.log(`   ✅ Created ${buildConfig.output.js} (${Math.round(minifiedJS.length / 1024)}KB)\n`);
 
         // Copy processed JSON data files
         console.log('📚 Copying processed data files...');
@@ -173,12 +154,12 @@ async function build() {
 
         // Update HTML to use minified files
         const optimizedHTML = htmlContent
-            .replace('src/css/style.css', 'css/app.min.css')
+            .replace('src/css/style.css', buildConfig.output.css)
             .replace(/data\/generated\/vocabulary-data\.js\?v=\d+(&t=\d+)?/g, 'data/vocabulary-data.min.js')
             .replace(/data\/generated\/conversation-vocabulary-data\.js\?v=\d+(&t=\d+)?/g, 'data/conversation-vocabulary-data.min.js')
             // Remove all individual module script tags and replace with single bundled file
-            .replace(/<!-- NEW: Shared Infrastructure[\s\S]*?<script src="src\/js\/core\/ResumeApp\.js\?v=\d+"><\/script>/g,
-                '<!-- Bundled JavaScript -->\n    <script src="js/app.min.js"></script>')
+            .replace(/<!-- NEW: Shared Infrastructure[\s\S]*?<script src="src\/js\/core\/PTEApp\.js\?v=\d+"><\/script>/g,
+                `<!-- Bundled JavaScript -->\n    <script src="${buildConfig.output.js}"></script>`)
             // Add meta tags for production
             .replace('<head>', `<head>
     <meta name="description" content="CCL Pronunciation Trainer - NAATI CCL exam preparation with 2,180 conversation vocabulary terms">

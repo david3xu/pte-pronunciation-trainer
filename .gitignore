@@ -14,7 +14,7 @@ data/generated/
 vocabulary-data.js
 
 # Reports
-reports/
+data/reports/
 validation-report.json
 
 # Environment variables

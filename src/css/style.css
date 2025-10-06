@@ -315,7 +315,8 @@ body {
 }
 
 .btn-settings,
-.btn-fullscreen {
+.btn-fullscreen,
+.btn-pronunciation {
     background: none;
     border: none;
     font-size: 20px;
@@ -329,7 +330,8 @@ body {
 }
 
 .btn-settings:hover,
-.btn-fullscreen:hover {
+.btn-fullscreen:hover,
+.btn-pronunciation:hover {
     background: var(--border-light);
 }
 

@@ -57,8 +57,9 @@ class UIController {
             // Progress display is handled by ProgressTracker
         });
 
-        // Listen for settings changes
-        window.eventBus.on('settings:changed', (data) => {
+        // Listen for settings changes using centralized event names
+        const settingsChangedEvent = this.config.get('settings.events.changed');
+        window.eventBus.on(settingsChangedEvent, (data) => {
             console.log('UIController: Settings changed:', data.key, '=', data.value);
             // Update UI based on settings changes
             this.handleSettingsChange(data.key, data.value);
@@ -66,22 +67,22 @@ class UIController {
     }
 
     bindEventListeners() {
-        // Category selection
+        // Category selection - use SettingsManager
         document.getElementById('categorySelect').addEventListener('change', (e) => {
             window.pteVocabularyManager.setCategory(e.target.value);
-            // Save category preference
-            if (window.settingsPanel) {
-                window.settingsPanel.saveSetting('category', e.target.value);
+            // Save category preference through SettingsManager
+            if (window.settingsManager) {
+                window.settingsManager.updateSetting('category', e.target.value);
             }
         });
 
-        // Difficulty selection
+        // Difficulty selection - use SettingsManager
         document.getElementById('difficultySelect').addEventListener('change', (e) => {
             window.pteVocabularyManager.setDifficulty(e.target.value);
             this.updateCategoryDisplay(); // Update counts in category selector and context bar
-            // Save difficulty preference
-            if (window.settingsPanel) {
-                window.settingsPanel.saveSetting('difficulty', e.target.value);
+            // Save difficulty preference through SettingsManager
+            if (window.settingsManager) {
+                window.settingsManager.updateSetting('difficulty', e.target.value);
             }
         });
 
@@ -92,10 +93,10 @@ class UIController {
             this.updateCategoryDisplay(); // Update UI for new mode
             console.log(`Learning mode changed to: ${newMode}`);
 
-            // Save the learning mode to localStorage
-            if (window.storage && window.storage.isAvailable()) {
-                window.storage.setItem('learningMode', newMode);
-                console.log(`Learning mode saved to storage: ${newMode}`);
+            // Save the learning mode through SettingsManager
+            if (window.settingsManager) {
+                window.settingsManager.updateSetting('learningMode', newMode);
+                console.log(`Learning mode saved through SettingsManager: ${newMode}`);
             }
         });
 
@@ -119,17 +120,17 @@ class UIController {
         // Settings
         document.getElementById('speedSelect').addEventListener('change', (e) => {
             window.ttsEngine.setSpeechRate(parseFloat(e.target.value));
-            // Save speed preference
-            if (window.settingsPanel) {
-                window.settingsPanel.saveSetting('speed', e.target.value);
+            // Save speed preference through SettingsManager
+            if (window.settingsManager) {
+                window.settingsManager.updateSetting('speed', e.target.value);
             }
         });
 
         document.getElementById('delaySelect').addEventListener('change', (e) => {
             window.audioControls.setDelay(parseInt(e.target.value));
-            // Save delay preference
-            if (window.settingsPanel) {
-                window.settingsPanel.saveSetting('delay', e.target.value);
+            // Save delay preference through SettingsManager
+            if (window.settingsManager) {
+                window.settingsManager.updateSetting('delay', e.target.value);
             }
         });
 
@@ -141,26 +142,43 @@ class UIController {
 
             console.log(`Repeat mode changed to: ${e.target.value}`);
 
-            // Save repeat preference
-            if (window.settingsPanel) {
-                window.settingsPanel.saveSetting('repeat', e.target.value);
+            // Save repeat preference through SettingsManager
+            if (window.settingsManager) {
+                window.settingsManager.updateSetting('repeat', e.target.value);
             }
 
             // Don't override the progress display during auto-play
         });
 
-        // Voice selection
+        // Voice selection - use SettingsManager
         document.getElementById('voiceSelect').addEventListener('change', (e) => {
             window.voiceSelector.setPreferredVoice(e.target.value);
-            // Save voice preference
-            if (window.settingsPanel) {
-                window.settingsPanel.saveSetting('voice', e.target.value);
+            // Save voice preference through SettingsManager
+            if (window.settingsManager) {
+                window.settingsManager.updateSetting('voice', e.target.value);
             }
         });
 
-        // Update category display in context bar
-        document.getElementById('categorySelect').addEventListener('change', () => {
+        // Learning mode selection - use SettingsManager
+        document.getElementById('learningModeSelect').addEventListener('change', (e) => {
+            if (window.settingsManager) {
+                window.settingsManager.updateSetting('learningMode', e.target.value);
+            }
+        });
+
+        // Category selection - use SettingsManager
+        document.getElementById('categorySelect').addEventListener('change', (e) => {
+            if (window.settingsManager) {
+                window.settingsManager.updateSetting('category', e.target.value);
+            }
             this.updateCategoryDisplay();
+        });
+
+        // Difficulty selection - use SettingsManager
+        document.getElementById('difficultySelect').addEventListener('change', (e) => {
+            if (window.settingsManager) {
+                window.settingsManager.updateSetting('difficulty', e.target.value);
+            }
         });
 
         // Pronunciation toggle button
@@ -176,7 +194,126 @@ class UIController {
             });
         }
 
+        // Initialize dropdowns based on current settings
+        this.initializeDropdowns();
         this.updateCategoryDisplay(); // Initial update
+    }
+
+    /**
+     * Initialize dropdowns based on current configuration
+     */
+    initializeDropdowns() {
+        if (window.settingsManager) {
+            // Use SettingsManager to populate ALL dropdowns consistently
+            this.populateAllDropdownsFromSettingsManager();
+        } else {
+            console.warn('⚠️ SettingsManager not available - dropdowns may not work properly');
+        }
+
+        console.log('Dropdowns initialized based on PTE data structure');
+    }
+
+    /**
+     * Populate dropdowns using SettingsManager
+     */
+    populateDropdownsFromSettingsManager() {
+        const settingsManager = window.settingsManager;
+
+        // Populate learning mode dropdown
+        const learningModeSelect = document.getElementById('learningModeSelect');
+        if (learningModeSelect) {
+            learningModeSelect.innerHTML = '';
+            const learningModes = settingsManager.getAvailableOptions('learningMode');
+            learningModes.forEach(mode => {
+                const option = document.createElement('option');
+                option.value = mode.id;
+                option.textContent = mode.label;
+                if (mode.id === 'pte-fib-listening') option.selected = true;
+                learningModeSelect.appendChild(option);
+            });
+        }
+
+        // Populate category dropdown
+        const categorySelect = document.getElementById('categorySelect');
+        if (categorySelect) {
+            categorySelect.innerHTML = '';
+            const categories = settingsManager.getAvailableOptions('category');
+            categories.forEach(category => {
+                const option = document.createElement('option');
+                option.value = category.id;
+                option.textContent = category.label;
+                if (category.id === 'all-categories') option.selected = true;
+                categorySelect.appendChild(option);
+            });
+        }
+
+        // Populate difficulty dropdown
+        const difficultySelect = document.getElementById('difficultySelect');
+        if (difficultySelect) {
+            difficultySelect.innerHTML = '';
+            const difficulties = settingsManager.getAvailableOptions('difficulty');
+            difficulties.forEach(difficulty => {
+                const option = document.createElement('option');
+                option.value = difficulty.id;
+                option.textContent = difficulty.label;
+                if (difficulty.id === 'normal') option.selected = true;
+                difficultySelect.appendChild(option);
+            });
+        }
+
+        // Populate other dropdowns
+        this.populateAudioDropdowns(settingsManager);
+    }
+
+    /**
+     * Populate ALL dropdowns using SettingsManager (unified approach)
+     */
+    populateAllDropdownsFromSettingsManager() {
+        const settingsManager = window.settingsManager;
+        if (!settingsManager) return;
+
+        // Learning mode dropdown
+        this.populateDropdown('learningModeSelect', 'learningMode', 'pte-fib-listening');
+
+        // Category dropdown
+        this.populateDropdown('categorySelect', 'category', 'all-categories');
+
+        // Difficulty dropdown
+        this.populateDropdown('difficultySelect', 'difficulty', 'normal');
+
+        // Audio dropdowns
+        this.populateDropdown('speedSelect', 'speed', '0.7');
+        this.populateDropdown('delaySelect', 'delay', '2000');
+        this.populateDropdown('repeatSelect', 'repeat', 'once');
+        this.populateDropdown('voiceSelect', 'voice', 'auto');
+    }
+
+    /**
+     * Generic dropdown population method
+     */
+    populateDropdown(elementId, settingKey, defaultValue) {
+        const element = document.getElementById(elementId);
+        if (!element) return;
+
+        const settingsManager = window.settingsManager;
+        const options = settingsManager.getAvailableOptions(settingKey);
+
+        element.innerHTML = '';
+        options.forEach(option => {
+            const optionElement = document.createElement('option');
+            optionElement.value = option.id;
+            optionElement.textContent = option.label;
+            if (option.id === defaultValue) optionElement.selected = true;
+            element.appendChild(optionElement);
+        });
+    }
+
+    /**
+     * Populate audio-related dropdowns (DEPRECATED - use populateAllDropdownsFromSettingsManager)
+     */
+    populateAudioDropdowns(settingsManager) {
+        console.log('⚠️ populateAudioDropdowns() is deprecated - use populateAllDropdownsFromSettingsManager()');
+        // This method is now redundant - use the unified approach above
     }
 
     updateCategoryDisplay() {
@@ -249,7 +386,7 @@ class UIController {
             console.log('Using direct ipa/phonetic fields:', { ipaOnly, phoneticPlain });
         }
         // Legacy support for old data formats (can be removed in future versions)
-        else if (word.source && (word.source.includes('legacy') || word.source.includes('resume') || word.source.includes('aiml'))) {
+        else if (word.source && word.source.includes('legacy')) {
             console.warn('Legacy data format detected, consider updating to PTE format');
             // Minimal fallback handling for any remaining legacy data
         }
@@ -582,7 +719,85 @@ class UIController {
     }
 
     /**
-     * Handle settings changes
+     * Update dropdowns based on learning mode selection
+     */
+    updateDropdownsForLearningMode(learningMode) {
+        console.log(`Updating dropdowns for learning mode: ${learningMode}`);
+        // Use unified approach - repopulate all dropdowns
+        this.populateAllDropdownsFromSettingsManager();
+    }
+
+    /**
+     * Update dropdowns based on category selection
+     */
+    updateDropdownsForCategory(category) {
+        console.log(`Updating dropdowns for category: ${category}`);
+        // Use unified approach - repopulate all dropdowns
+        this.populateAllDropdownsFromSettingsManager();
+    }
+
+    /**
+     * Update category dropdown options based on learning mode (DEPRECATED)
+     */
+    updateCategoryOptions(learningMode) {
+        console.log('⚠️ updateCategoryOptions() is deprecated - use populateAllDropdownsFromSettingsManager()');
+        const categorySelect = document.getElementById('categorySelect');
+        if (!categorySelect) return;
+
+        // Clear existing options
+        categorySelect.innerHTML = '';
+
+        // Get available categories from config
+        const categories = this.config.get('data.categories');
+
+        // Add options based on learning mode
+        Object.entries(categories).forEach(([key, label]) => {
+            const option = document.createElement('option');
+            option.value = key;
+            option.textContent = label;
+
+            // Set default selection
+            if (key === 'all-categories') {
+                option.selected = true;
+            }
+
+            categorySelect.appendChild(option);
+        });
+    }
+
+    /**
+     * Update difficulty dropdown options based on learning mode and category (DEPRECATED)
+     */
+    updateDifficultyOptions(learningMode = null, category = null) {
+        console.log('⚠️ updateDifficultyOptions() is deprecated - use populateAllDropdownsFromSettingsManager()');
+        const difficultySelect = document.getElementById('difficultySelect');
+        if (!difficultySelect) return;
+
+        // Clear existing options
+        difficultySelect.innerHTML = '';
+
+        // Get available difficulties from config
+        const difficulties = this.config.get('data.difficulties');
+
+        // Add options based on available difficulties
+        difficulties.forEach(difficulty => {
+            const option = document.createElement('option');
+            option.value = difficulty;
+
+            // Set appropriate labels based on our PTE data
+            if (difficulty === 'normal') {
+                option.textContent = '🟡 Normal (All PTE Terms)';
+                option.selected = true; // Default selection
+            } else {
+                option.textContent = `🟡 ${difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}`;
+            }
+
+            difficultySelect.appendChild(option);
+        });
+    }
+
+    /**
+     * Handle settings changes from SettingsManager
      */
     handleSettingsChange(key, value) {
         switch (key) {
@@ -593,6 +808,7 @@ class UIController {
                 this.updateCategoryDisplay();
                 break;
             case 'learningMode':
+                // SettingsManager handles dependencies automatically
                 this.updateCategoryDisplay();
                 break;
             case 'speed':

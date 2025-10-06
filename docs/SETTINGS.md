@@ -25,7 +25,7 @@ Controls the primary learning dataset and methodology.
 **Configuration:**
 ```javascript
 learningModes: [
-    { id: 'pte-fib-listening', label: '🎧 PTE FIB Listening', dataset: 'pteFibListening' }
+    { id: 'pte-fib-listening', label: '🎧 PTE FIB Listening', dataset: 'pte-fib-listening-with-ipa' }
 ]
 ```
 
@@ -33,6 +33,7 @@ learningModes: [
 - Determines which vocabulary dataset is loaded
 - Affects available categories and terms
 - Currently supports 885 unique PTE FIB listening terms with IPA pronunciations
+- All terms are classified as "normal" difficulty level
 
 ---
 
@@ -62,20 +63,17 @@ categories: {
 Filters vocabulary by difficulty level.
 
 **Available Options:**
-- `all` - All Levels (Default)
-- `easy` - 🟢 Easy
-- `normal` - 🟡 Normal
-- `hard` - 🔴 Hard
+- `normal` - 🟡 Normal (All PTE Terms) (Default)
 
 **Configuration:**
 ```javascript
-difficulties: ['easy', 'normal', 'hard']
+difficulties: ['normal'] // All PTE terms are currently normal difficulty
 ```
 
 **Impact:**
-- Filters terms based on complexity
-- Affects learning progression
-- Currently all 885 terms are available at all levels
+- All 885 PTE terms are classified as "normal" difficulty
+- No filtering by difficulty level (all terms available)
+- Consistent difficulty level for PTE exam preparation
 
 ---
 

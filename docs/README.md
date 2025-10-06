@@ -31,6 +31,7 @@ This directory contains comprehensive documentation for the PTE Pronunciation Tr
 | **WORKFLOW.md** | Process flows | Developers, DevOps | Data flow, class interactions |
 | **API.md** | API reference | Developers | Class methods, usage examples |
 | **SETTINGS.md** | Settings panel guide | Users, developers | Configuration options, features |
+| **SETTINGS-ARCHITECTURE.md** | Settings system design | Developers, architects | Architecture, dependencies, API |
 | **DEPLOYMENT.md** | Deployment guide | DevOps, developers | Platform deployment, CI/CD |
 | **TROUBLESHOOTING.md** | Issue resolution | Users, developers | Common problems, solutions |
 | **Data files** | Vocabulary content | Content creators | IPA pronunciations, terms |
@@ -44,8 +45,9 @@ graph TD
     A --> D[CLAUDE.md<br/>AI Guidance]
     A --> E[API.md<br/>API Reference]
     A --> F[SETTINGS.md<br/>Settings Guide]
-    A --> G[DEPLOYMENT.md<br/>Deployment Guide]
-    A --> H[TROUBLESHOOTING.md<br/>Issue Resolution]
+    A --> G[SETTINGS-ARCHITECTURE.md<br/>Settings Design]
+    A --> H[DEPLOYMENT.md<br/>Deployment Guide]
+    A --> I[TROUBLESHOOTING.md<br/>Issue Resolution]
 
     B --> H[Component Details]
     C --> I[Class Interactions]

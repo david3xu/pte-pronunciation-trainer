@@ -1,16 +1,52 @@
 // Service Worker for Background Operation and PWA Functionality
-const CACHE_NAME = 'pte-trainer-v8';
-const urlsToCache = [
+const CACHE_NAME = 'pte-trainer-v11';
+
+// Detect if we're in development or production mode
+const isDevelopment = !self.location.hostname.includes('vercel') &&
+  !self.location.hostname.includes('netlify') &&
+  !self.location.hostname.includes('github');
+
+// Cache different files based on environment
+const urlsToCache = isDevelopment ? [
+  // Development mode - cache individual source files
+  '/',
+  '/index.html',
+  '/src/css/style.css',
+  '/src/js/shared/AppNamespace.js',
+  '/src/js/shared/Config.js',
+  '/src/js/shared/DataSchema.js',
+  '/src/js/shared/LegacyCompatibility.js',
+  '/src/js/utils/EventBus.js',
+  '/src/js/utils/Storage.js',
+  '/src/js/utils/StateManager.js',
+  '/src/js/utils/CacheMigration.js',
+  '/src/js/core/PTEVocabularyManager.js',
+  '/src/js/core/ProgressTracker.js',
+  '/src/js/data/extractors/PTETermsExtractor.js',
+  '/src/js/audio/TTSEngine.js',
+  '/src/js/audio/VoiceSelector.js',
+  '/src/js/audio/AudioControls.js',
+  '/src/js/ui/UIController.js',
+  '/src/js/ui/SettingsPanel.js',
+  '/src/js/core/PTEApp.js',
+  '/data/processed/pte-fib-listening-dataset.json',
+  '/manifest.json'
+] : [
+  // Production mode - cache minified files
   '/',
   '/index.html',
   '/css/app.min.css',
   '/js/app.min.js',
-  '/data/processed/pte-fib-listening-dataset.json'
+  '/data/processed/pte-fib-listening-dataset.json',
+  '/manifest.json'
 ];
 
 // Install Service Worker and Cache Resources
 self.addEventListener('install', (event) => {
   console.log('[SW] Installing Service Worker for background operation...');
+  console.log('[SW] Environment:', isDevelopment ? 'Development' : 'Production');
+  console.log('[SW] Hostname:', self.location.hostname);
+  console.log('[SW] Files to cache:', urlsToCache.length);
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then((cache) => {

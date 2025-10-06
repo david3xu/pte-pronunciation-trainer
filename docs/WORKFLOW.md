@@ -55,6 +55,7 @@ sequenceDiagram
     participant Browser
     participant PTEApp
     participant Config
+    participant SettingsManager
     participant PTEVocabularyManager
     participant UIController
     participant TTSEngine
@@ -64,6 +65,11 @@ sequenceDiagram
     PTEApp->>Config: Initialize Configuration
     Config-->>PTEApp: Return All Settings
 
+    PTEApp->>SettingsManager: Initialize Settings
+    SettingsManager->>Config: Get Settings Configuration
+    Config-->>SettingsManager: Return Settings Config
+    SettingsManager-->>PTEApp: Settings Ready
+
     PTEApp->>PTEVocabularyManager: Initialize
     PTEVocabularyManager->>Config: Get Data Path
     Config-->>PTEVocabularyManager: Return Dataset Path
@@ -72,11 +78,18 @@ sequenceDiagram
     PTEVocabularyManager-->>PTEApp: Vocabulary Ready
 
     PTEApp->>UIController: Initialize UI
+    UIController->>SettingsManager: Get Settings Options
+    SettingsManager-->>UIController: Return Dropdown Options
     UIController->>Config: Get UI Settings
     Config-->>UIController: Return UI Configuration
     UIController-->>PTEApp: UI Ready
 
     Browser->>UIController: User Interaction
+    UIController->>SettingsManager: Update Setting
+    SettingsManager->>Config: Validate Setting
+    Config-->>SettingsManager: Return Validation Result
+    SettingsManager->>SettingsManager: Apply Dependencies
+    SettingsManager-->>UIController: Setting Updated
     UIController->>PTEVocabularyManager: Get Word Data
     PTEVocabularyManager-->>UIController: Return Word + IPA
     UIController->>TTSEngine: Pronounce Word
@@ -117,12 +130,25 @@ classDiagram
         +getCurrentWord(index: number): Object
     }
 
+    class SettingsManager {
+        +config: Object
+        +eventBus: Object
+        +settings: Object
+        +initialize(): void
+        +updateSetting(key: string, value: any): void
+        +getSetting(key: string): any
+        +getAvailableOptions(key: string): Array
+        +applyDependencies(changedKey: string, changedValue: any): void
+    }
+
     class UIController {
         +pronunciationPreference: string
         +currentWordPronunciations: Object
+        +settingsManager: Object
         +displayWord(word: Object, index: number): void
         +togglePronunciation(): string
         +updateCategoryDisplay(): void
+        +populateDropdownsFromSettingsManager(): void
     }
 
     class TTSEngine {
@@ -141,6 +167,7 @@ classDiagram
 
     AppConfig --> PTEDataPipeline : provides config
     AppConfig --> PTEVocabularyManager : provides config
+    AppConfig --> SettingsManager : provides config
     AppConfig --> UIController : provides config
     AppConfig --> TTSEngine : provides config
 
@@ -150,7 +177,11 @@ classDiagram
     PTEVocabularyManager --> AppConfig : loads data paths
     PTEVocabularyManager --> UIController : provides word data
 
+    SettingsManager --> AppConfig : loads settings config
+    SettingsManager --> UIController : provides settings options
+
     UIController --> PTEVocabularyManager : requests word data
+    UIController --> SettingsManager : updates settings
     UIController --> TTSEngine : requests pronunciation
 
     TTSEngine --> AppConfig : loads TTS settings
@@ -172,6 +203,7 @@ graph TD
 
     subgraph "🎨 Application Layer"
         APP[PTEApp]
+        SETTINGS[SettingsManager]
         VOCAB[PTEVocabularyManager]
         UI[UIController]
         TTS[TTSEngine]
@@ -186,6 +218,7 @@ graph TD
     CONFIG --> EXTRACTOR
     CONFIG --> VALIDATOR
     CONFIG --> APP
+    CONFIG --> SETTINGS
     CONFIG --> VOCAB
     CONFIG --> UI
     CONFIG --> TTS
@@ -246,6 +279,7 @@ graph LR
 | **PTEDataPipeline** | Data Processing | `run()`, `extractPTEVocabulary()` |
 | **PTETermsExtractor** | Markdown Parsing | `extract()`, `parsePTETermLine()` |
 | **PTEVocabularyManager** | Vocabulary Management | `initialize()`, `loadPTEData()` |
+| **SettingsManager** | Settings Management | `updateSetting()`, `getAvailableOptions()` |
 | **UIController** | User Interface | `displayWord()`, `togglePronunciation()` |
 | **TTSEngine** | Speech Synthesis | `pronounceWord()`, `speak()` |
 | **PTEApp** | Application Coordination | `init()`, `initializeModules()` |

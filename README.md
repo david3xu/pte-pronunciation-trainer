@@ -33,6 +33,7 @@ A specialized web-based pronunciation training application for **PTE exam prepar
 ### 🚀 **Streamlined Architecture**
 - **PTE Data Pipeline** - `npm run data:pte` processes PTE-specific data
 - **Centralized Configuration** - ALL configuration values in `src/js/shared/Config.js` - NO hardcoded values
+- **SettingsManager Module** - Centralized settings logic with dependency management
 - **Configurable Paths** - All file paths, data sources, and settings are configurable
 - **Module Namespace** - Clean architecture with optimized code structure
 - **Built-in Validation** - Data integrity checks and error reporting

@@ -20,6 +20,7 @@ graph TB
 
     subgraph "🎨 Frontend Architecture"
         APP[PTEApp.js<br/>Main Coordinator]
+        SETTINGS[SettingsManager.js<br/>Settings Logic]
         VOCAB[PTEVocabularyManager.js<br/>Data Management]
         UI[UIController.js<br/>Display Logic]
         TTS[TTSEngine.js<br/>Speech Synthesis]
@@ -36,11 +37,13 @@ graph TB
     CONFIG --> BUILD
     CONFIG --> VALIDATE
     CONFIG --> APP
+    CONFIG --> SETTINGS
 
     SOURCE --> PIPELINE
     PIPELINE --> DATASET
     DATASET --> VOCAB
     VOCAB --> UI
+    UI --> SETTINGS
     UI --> TTS
     TTS --> AUDIO
 
@@ -159,7 +162,32 @@ class PTEVocabularyManager {
 - `loadPTEData()` - Fetch dataset from configured path
 - `getCurrentWord(index)` - Get word with IPA pronunciation data
 
-### **4. User Interface Controller**
+### **4. Settings Management**
+
+#### `SettingsManager` (src/js/core/SettingsManager.js)
+```javascript
+class SettingsManager {
+    constructor() {
+        this.config = window.appConfig || new AppConfig();
+        this.eventBus = window.eventBus || new EventBus();
+        this.settings = {};
+    }
+
+    initialize() { /* Load and validate settings */ }
+    updateSetting(key, value) { /* Update setting with validation */ }
+    getSetting(key) { /* Get current setting value */ }
+    getAllSettings() { /* Get all current settings */ }
+    getAvailableOptions(key) { /* Get valid options for setting */ }
+    applyDependencies(changedKey, changedValue) { /* Handle setting dependencies */ }
+}
+```
+
+**Key Functions:**
+- `updateSetting(key, value)` - Update setting with validation and dependencies
+- `getAvailableOptions(key)` - Get valid options based on PTE data structure
+- `applyDependencies(changedKey, changedValue)` - Handle automatic dropdown updates
+
+### **5. User Interface Controller**
 
 #### `UIController` (src/js/ui/UIController.js)
 ```javascript
@@ -167,12 +195,14 @@ class UIController {
     constructor() {
         this.pronunciationPreference = 'british';
         this.currentWordPronunciations = null;
+        this.settingsManager = window.settingsManager;
     }
 
     displayWord(word, index) { /* Display word with IPA */ }
     togglePronunciation() { /* Switch British/American */ }
     updateCategoryDisplay() { /* Update category info */ }
     updateButtons() { /* Update navigation buttons */ }
+    populateDropdownsFromSettingsManager() { /* Use SettingsManager for dropdowns */ }
 }
 ```
 
@@ -180,8 +210,9 @@ class UIController {
 - `displayWord(word, index)` - Show word with IPA pronunciation
 - `togglePronunciation()` - Switch between British/American
 - `updateCategoryDisplay()` - Update category and progress info
+- `populateDropdownsFromSettingsManager()` - Use centralized settings for dropdowns
 
-### **5. Text-to-Speech Engine**
+### **6. Text-to-Speech Engine**
 
 #### `TTSEngine` (src/js/audio/TTSEngine.js)
 ```javascript
@@ -258,7 +289,7 @@ const pipeline = new PTEDataPipeline({
 
 ### **4. Clean Separation of Concerns**
 - **Data Layer**: Pipeline, Extractors, Validation
-- **Business Logic**: Vocabulary Management, Progress Tracking
+- **Business Logic**: Vocabulary Management, Progress Tracking, Settings Management
 - **Presentation Layer**: UI Controller, Settings Panel
 - **Audio Layer**: TTS Engine, Voice Selection, Audio Controls
 

@@ -326,7 +326,7 @@ class AudioControls {
         // Update TTS engine repeat settings
         const targetRepeats = {
             'once': 1,
-            'individual': 2,
+            'twice': 2,
             'intensive': 3,
             'loop': 1
         }[mode] || 1;

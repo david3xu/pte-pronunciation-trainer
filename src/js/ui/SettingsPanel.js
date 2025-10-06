@@ -2,14 +2,15 @@
 class SettingsPanel {
     constructor() {
         this.isOpen = false;
-        this.stateManager = null; // Will be initialized when available
+        this.settingsManager = null; // Will be initialized when available
+        this.config = window.appConfig || new AppConfig();
         this.setupSettingsPanel();
     }
 
     setupSettingsPanel() {
-        // Initialize state manager if available
-        if (window.stateManager) {
-            this.stateManager = window.stateManager;
+        // Initialize settings manager if available
+        if (window.settingsManager) {
+            this.settingsManager = window.settingsManager;
         }
 
         // Settings panel toggle
@@ -47,28 +48,18 @@ class SettingsPanel {
     }
 
     setupSettingsPersistence() {
-        // Load saved settings from StateManager or legacy storage
+        // Load saved settings from SettingsManager
         let savedSettings;
 
-        if (this.stateManager && this.stateManager.hasPreviousSession()) {
-            savedSettings = this.stateManager.getUserPreferences();
-            console.log('📂 Loading settings from StateManager:', savedSettings);
+        if (this.settingsManager) {
+            savedSettings = this.settingsManager.getAllSettings();
+            console.log('📂 Loading settings from SettingsManager:', savedSettings);
         } else {
-            // Fallback to legacy storage
-            const config = window.appConfig || new AppConfig();
-            savedSettings = {
-                category: window.storage.getItem('category') || 'all-categories',
-                difficulty: window.storage.getItem('difficulty') || 'all',
-                speed: window.storage.getItem('speechRate') || String(config.get('tts.speeds.slow')),
-                delay: window.storage.getItem('delay') || String(config.get('tts.delays.normal')),
-                repeat: window.storage.getItem('repeatMode') || 'once',
-                voice: window.storage.getItem('preferredVoice') || 'auto',
-                learningMode: window.storage.getItem('learningMode') || 'pte-fib-listening'
-            };
-            console.log('📂 Loading settings from legacy storage:', savedSettings);
+            console.warn('⚠️ SettingsManager not available - using fallback initialization');
+            return;
         }
 
-        // Apply settings to UI elements
+        // Apply settings to UI elements (UIController handles dropdown population)
         this.applySettingToElement('categorySelect', savedSettings.category);
         this.applySettingToElement('difficultySelect', savedSettings.difficulty);
         this.applySettingToElement('speedSelect', savedSettings.speed);
@@ -134,38 +125,11 @@ class SettingsPanel {
     }
 
     loadSettings() {
-        // Load and apply saved settings
-        const config = window.appConfig || new AppConfig();
-        const savedSettings = {
-            category: window.storage.getItem('category') || 'all-categories',
-            difficulty: window.storage.getItem('difficulty') || 'all',
-            speechRate: window.storage.getItem('speechRate') || config.get('tts.speeds.slow'),
-            delay: window.storage.getItem('delay') || config.get('tts.delays.normal'),
-            repeatMode: window.storage.getItem('repeatMode') || 'once',
-            preferredVoice: window.storage.getItem('preferredVoice') || null
-        };
+        // This method is completely redundant - SettingsManager handles all settings
+        console.log('⚠️ SettingsPanel.loadSettings() is deprecated - SettingsManager handles all settings');
+        return;
 
-        // Apply settings to UI elements
-        this.applySettingToElement('categorySelect', savedSettings.category);
-        this.applySettingToElement('difficultySelect', savedSettings.difficulty);
-        this.applySettingToElement('speedSelect', savedSettings.speechRate);
-        this.applySettingToElement('delaySelect', savedSettings.delay);
-        this.applySettingToElement('repeatSelect', savedSettings.repeatMode);
-        this.applySettingToElement('voiceSelect', savedSettings.preferredVoice || 'Google UK English Male');
-
-        // Apply settings to modules using setter methods
-        if (savedSettings.category && window.vocabularyManager.setCategory) {
-            window.vocabularyManager.setCategory(savedSettings.category);
-        }
-        if (savedSettings.difficulty && window.vocabularyManager.setDifficulty) {
-            window.vocabularyManager.setDifficulty(savedSettings.difficulty);
-        }
-        window.ttsEngine.setSpeechRate(savedSettings.speechRate);
-        window.audioControls.setDelay(savedSettings.delay);
-        window.audioControls.setRepeatMode(savedSettings.repeatMode);
-        // Always set voice preference - default to Google UK English Male if none saved
-        const voicePreference = savedSettings.preferredVoice || 'Google UK English Male';
-        window.voiceSelector.setPreferredVoice(voicePreference);
+        // All module updates are now handled by SettingsManager events
 
         console.log('Settings loaded:', savedSettings);
     }
@@ -177,21 +141,7 @@ class SettingsPanel {
         }
     }
 
-    saveSetting(key, value) {
-        // Save to StateManager if available, otherwise fallback to legacy storage
-        if (this.stateManager) {
-            const preferences = this.stateManager.getUserPreferences();
-            preferences[key] = value;
-            this.stateManager.saveUserPreferences(preferences);
-            console.log(`💾 Setting saved to StateManager: ${key} = ${value}`);
-        } else {
-            // Fallback to legacy storage
-            if (window.storage.isAvailable()) {
-                window.storage.setItem(key, value);
-                console.log(`💾 Setting saved to legacy storage: ${key} = ${value}`);
-            }
-        }
-    }
+    // This method is redundant - use the SettingsManager version below
 
     updateVoiceSelection(voiceName) {
         const voiceSelect = document.getElementById('voiceSelect');
@@ -201,16 +151,16 @@ class SettingsPanel {
     }
 
     exportSettings() {
-        const settings = {
-            category: window.storage.getItem('category'),
-            difficulty: window.storage.getItem('difficulty'),
-            speechRate: window.storage.getItem('speechRate'),
-            delay: window.storage.getItem('delay'),
-            repeatMode: window.storage.getItem('repeatMode'),
-            preferredVoice: window.storage.getItem('preferredVoice'),
-            exportDate: new Date().toISOString(),
-            version: '1.0'
-        };
+        // Use SettingsManager to get all settings - no fallback needed
+        if (!window.settingsManager) {
+            console.error('❌ SettingsManager not available - cannot export settings');
+            return;
+        }
+        const settings = window.settingsManager.getAllSettings();
+
+        // Add export metadata
+        settings.exportDate = new Date().toISOString();
+        settings.version = '1.0';
 
         const dataStr = JSON.stringify(settings, null, 2);
         const dataBlob = new Blob([dataStr], { type: 'application/json' });
@@ -248,8 +198,7 @@ class SettingsPanel {
                 }
             });
 
-            // Reload settings to apply them
-            this.loadSettings();
+            // Settings are automatically applied through SettingsManager events
 
             console.log('Settings imported successfully');
 
@@ -268,45 +217,32 @@ class SettingsPanel {
     }
 
     resetSettings() {
-        // Clear all stored settings
-        window.storage.clear();
-
-        // Reload page to reset to defaults
-        window.location.reload();
-
-        console.log('Settings reset to defaults');
-
-        // Emit reset event
-        window.eventBus.emit('settings:reset', {
-            timestamp: new Date().toISOString()
-        });
+        // Use SettingsManager to reset settings instead of direct storage access
+        if (window.settingsManager) {
+            window.settingsManager.resetSettings();
+            console.log('Settings reset through SettingsManager');
+        } else {
+            console.error('❌ SettingsManager not available - cannot reset settings');
+        }
     }
 
     isSettingsPanelOpen() {
         return this.isOpen;
     }
 
+
     /**
-     * Save a setting value
+     * Save a setting value using SettingsManager
      */
     saveSetting(key, value) {
-        // Save to legacy storage
-        window.storage.setItem(key, value);
-
-        // Save to StateManager if available
-        if (this.stateManager) {
-            this.stateManager.saveUserPreference(key, value);
+        if (this.settingsManager) {
+            // Use SettingsManager for centralized handling
+            this.settingsManager.updateSetting(key, value);
+        } else {
+            console.warn(`SettingsManager not available - cannot save setting: ${key} = ${value}`);
         }
-
-        // Emit settings changed event
-        window.eventBus.emit('settings:changed', {
-            key: key,
-            value: value,
-            timestamp: Date.now()
-        });
-
-        console.log(`Setting saved: ${key} = ${value}`);
     }
+
 }
 
 // Global settings panel instance

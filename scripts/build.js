@@ -79,6 +79,11 @@ async function build() {
             }
         }
 
+        // Load centralized configuration for build files
+        const AppConfig = require('../src/js/shared/Config.js');
+        const appConfig = new AppConfig();
+        const buildConfig = appConfig.get('build');
+
         const minifiedCSS = minifyCSS(combinedCSS);
         const cssOutputPath = path.join(distDir, buildConfig.output.css);
         fs.writeFileSync(cssOutputPath, minifiedCSS);
@@ -86,11 +91,6 @@ async function build() {
 
         // Build JavaScript - Refactored modular structure with shared infrastructure
         console.log('📦 Building JavaScript files...');
-
-        // Load centralized configuration for build files
-        const AppConfig = require('../src/js/shared/Config.js');
-        const appConfig = new AppConfig();
-        const buildConfig = appConfig.get('build');
 
         const jsFiles = buildConfig.jsFiles.map(file => path.join(srcDir, file));
 

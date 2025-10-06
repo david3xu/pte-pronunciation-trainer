@@ -41,26 +41,23 @@ class CacheMigration {
 
     // Set default values for clean initialization
     setDefaultValues() {
-        // Set default category to all-categories
-        window.storage.setItem('category', 'all-categories');
+        // Use SettingsManager to set defaults instead of direct storage access
+        if (window.settingsManager) {
+            const defaults = window.settingsManager.config.get('settings.defaults');
 
-        // Set default difficulty to all
-        window.storage.setItem('difficulty', 'all');
+            // Set all defaults through SettingsManager
+            Object.keys(defaults).forEach(key => {
+                const defaultValue = defaults[key];
+                // Resolve nested config paths if needed
+                const value = defaultValue.includes('.') ?
+                    window.settingsManager.config.get(defaultValue) : defaultValue;
+                window.settingsManager.updateSetting(key, value);
+            });
 
-        // Set default learning mode to vocabulary
-        window.storage.setItem('learningMode', 'vocabulary');
-
-        // Set default repeat mode to 1x (once - terms only)
-        window.storage.setItem('repeatMode', 'once');
-
-        // Set default pause duration (2 seconds between words, 1 second between repetitions)
-        const config = window.appConfig || new AppConfig();
-        window.storage.setItem('delay', config.get('tts.delays.normal'));
-
-        // Set default speech rate to slow
-        window.storage.setItem('speechRate', config.get('tts.speeds.slow'));
-
-        console.log('Default values set for clean initialization');
+            console.log('Default values set through SettingsManager');
+        } else {
+            console.error('❌ SettingsManager not available - cannot set default values');
+        }
     }
 
     // Clear all cache data (emergency reset)
@@ -72,11 +69,19 @@ class CacheMigration {
 
     // Get current cache info
     getCacheInfo() {
-        return {
+        const info = {
             version: window.storage.getItem(this.versionKey) || 1,
-            category: window.storage.getItem('category'),
             allKeys: window.storage.getAllKeys()
         };
+
+        // Get current category from SettingsManager if available
+        if (window.settingsManager) {
+            info.category = window.settingsManager.getSetting('category');
+        } else {
+            info.category = window.storage.getItem('category');
+        }
+
+        return info;
     }
 }
 

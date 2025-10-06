@@ -31,6 +31,7 @@ const urlsToCache = isDevelopment ? [
   '/src/js/ui/SettingsPanel.js',
   '/src/js/core/PTEApp.js',
   '/data/processed/pte-fib-listening-dataset.json',
+  '/data/processed/pte-beginner-vocabulary.json',
   '/manifest.json'
 ] : [
   // Production mode - cache existing files only
@@ -56,6 +57,7 @@ const urlsToCache = isDevelopment ? [
   '/src/js/ui/SettingsPanel.js',
   '/src/js/core/PTEApp.js',
   '/data/processed/pte-fib-listening-dataset.json',
+  '/data/processed/pte-beginner-vocabulary.json',
   '/manifest.json'
 ];
 

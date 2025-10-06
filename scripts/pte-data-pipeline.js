@@ -214,6 +214,32 @@ class PTEDataPipeline {
       this.saveDataset(this.config.outputFiles.dataset, dataset);
     }
 
+    // Also generate any extra datasets configured (e.g., beginner)
+    const extras = (this.config.extraSources || []).filter(Boolean);
+    for (const extra of extras) {
+      try {
+        const extraPath = path.join(this.config.inputDir, this.config.dataSources.subdirectory, extra.input);
+        const extraTerms = await PTETermsExtractor.extract(extraPath, fs);
+        const unique = this.removeDuplicates(extraTerms);
+        const dataset = {
+          metadata: {
+            generated: new Date().toISOString(),
+            totalTerms: unique.length,
+            source: extra.sourceType,
+            description: extra.description,
+            version: '1.0',
+            categories: [extra.category],
+            hasIPA: true
+          },
+          vocabulary: unique
+        };
+        this.saveDataset(extra.output, dataset);
+        console.log(`   ✅ Generated extra dataset: ${extra.id} (${unique.length} terms)`);
+      } catch (e) {
+        console.warn(`   ⚠️  Skipped extra dataset ${extra.id}: ${e.message}`);
+      }
+    }
+
     console.log(`\n📊 Stage 2 Summary: Generated PTE datasets\n`);
   }
 

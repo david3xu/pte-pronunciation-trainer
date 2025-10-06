@@ -23,7 +23,8 @@ class PTEDataPipeline {
       reportsDir: config.reportsDir || path.join(__dirname, '..', pipelineConfig.reportsDir),
       dataSources: config.dataSources || pipelineConfig.dataSources,
       outputFiles: config.outputFiles || pipelineConfig.outputFiles,
-      extraSources: config.extraSources || pipelineConfig.extraSources || []
+      extraSources: config.extraSources || pipelineConfig.extraSources || [],
+      registry: config.registry || pipelineConfig.registry || []
     };
     this.results = new Map();
     this.stats = {
@@ -63,7 +64,8 @@ class PTEDataPipeline {
   async extractPTEVocabulary() {
     console.log('📝 STAGE 1: Extracting PTE Vocabulary Data');
 
-    // Process ONLY the IPA version (primary source)
+    // If a centralized registry is present, just record primary extraction here.
+    // The actual per-dataset extraction happens in generatePTEDatasets() using the registry.
     const fibIpaFilePath = path.join(this.config.inputDir, this.config.dataSources.subdirectory, this.config.dataSources.primary);
     try {
       const fibIpaVocabulary = await PTETermsExtractor.extract(fibIpaFilePath, fs);
@@ -185,59 +187,92 @@ class PTEDataPipeline {
   async generatePTEDatasets() {
     console.log('📦 STAGE 2: Generating PTE Datasets');
 
-    // Generate FIB listening dataset with IPA (preferred)
-    const fibIpaTerms = this.results.get('fibIpaVocabulary') || [];
-    const fibTerms = this.results.get('fibVocabulary') || [];
+    const registry = (this.config.registry || []).filter(Boolean);
 
-    // Use IPA terms if available, otherwise fall back to basic terms
-    let finalTerms = fibIpaTerms.length > 0 ? fibIpaTerms : fibTerms;
-    const sourceType = fibIpaTerms.length > 0 ? 'pte-fib-listening-with-ipa' : 'pte-fib-listening-vocabulary';
+    if (registry.length > 0) {
+      // Centralized build path: iterate over registry entries
+      for (const entry of registry) {
+        try {
+          const inputPath = path.join(this.config.inputDir, this.config.dataSources.subdirectory, entry.input);
+          let terms = [];
+          try {
+            terms = await PTETermsExtractor.extract(inputPath, fs);
+          } catch (e) {
+            if (entry.fallback) {
+              const fallbackPath = path.join(this.config.inputDir, this.config.dataSources.subdirectory, entry.fallback);
+              terms = await this.extractPTETerms(fallbackPath);
+            } else {
+              throw e;
+            }
+          }
 
-    // Remove duplicates - keep only unique terms
-    const uniqueTerms = this.removeDuplicates(finalTerms);
-    console.log(`   🔄 Removed ${finalTerms.length - uniqueTerms.length} duplicate terms`);
-    finalTerms = uniqueTerms;
-
-    if (finalTerms.length > 0) {
-      const dataset = {
-        metadata: {
-          generated: new Date().toISOString(),
-          totalTerms: finalTerms.length,
-          source: sourceType,
-          description: 'PTE FIB Listening vocabulary for pronunciation practice with IPA guides',
-          version: '2.0',
-          categories: ['pte-fib-listening'],
-          hasIPA: fibIpaTerms.length > 0
-        },
-        vocabulary: finalTerms
-      };
-
-      this.saveDataset(this.config.outputFiles.dataset, dataset);
-    }
-
-    // Also generate any extra datasets configured (e.g., beginner)
-    const extras = (this.config.extraSources || []).filter(Boolean);
-    for (const extra of extras) {
-      try {
-        const extraPath = path.join(this.config.inputDir, this.config.dataSources.subdirectory, extra.input);
-        const extraTerms = await PTETermsExtractor.extract(extraPath, fs);
-        const unique = this.removeDuplicates(extraTerms);
+          const unique = this.removeDuplicates(terms);
+          const dataset = {
+            metadata: {
+              generated: new Date().toISOString(),
+              totalTerms: unique.length,
+              source: entry.sourceType,
+              description: entry.description,
+              version: '1.0',
+              categories: [entry.category],
+              hasIPA: true
+            },
+            vocabulary: unique
+          };
+          this.saveDataset(entry.output, dataset);
+          console.log(`   ✅ Generated dataset: ${entry.id} (${unique.length} terms)`);
+        } catch (e) {
+          console.warn(`   ⚠️  Skipped dataset ${entry.id}: ${e.message}`);
+        }
+      }
+    } else {
+      // Backward-compatible path (legacy build of FIB + extras)
+      const fibIpaTerms = this.results.get('fibIpaVocabulary') || [];
+      const fibTerms = this.results.get('fibVocabulary') || [];
+      let finalTerms = fibIpaTerms.length > 0 ? fibIpaTerms : fibTerms;
+      const sourceType = fibIpaTerms.length > 0 ? 'pte-fib-listening-with-ipa' : 'pte-fib-listening-vocabulary';
+      const uniqueTerms = this.removeDuplicates(finalTerms);
+      console.log(`   🔄 Removed ${finalTerms.length - uniqueTerms.length} duplicate terms`);
+      finalTerms = uniqueTerms;
+      if (finalTerms.length > 0) {
         const dataset = {
           metadata: {
             generated: new Date().toISOString(),
-            totalTerms: unique.length,
-            source: extra.sourceType,
-            description: extra.description,
-            version: '1.0',
-            categories: [extra.category],
-            hasIPA: true
+            totalTerms: finalTerms.length,
+            source: sourceType,
+            description: 'PTE FIB Listening vocabulary for pronunciation practice with IPA guides',
+            version: '2.0',
+            categories: ['pte-fib-listening'],
+            hasIPA: fibIpaTerms.length > 0
           },
-          vocabulary: unique
+          vocabulary: finalTerms
         };
-        this.saveDataset(extra.output, dataset);
-        console.log(`   ✅ Generated extra dataset: ${extra.id} (${unique.length} terms)`);
-      } catch (e) {
-        console.warn(`   ⚠️  Skipped extra dataset ${extra.id}: ${e.message}`);
+        this.saveDataset(this.config.outputFiles.dataset, dataset);
+      }
+
+      const extras = (this.config.extraSources || []).filter(Boolean);
+      for (const extra of extras) {
+        try {
+          const extraPath = path.join(this.config.inputDir, this.config.dataSources.subdirectory, extra.input);
+          const extraTerms = await PTETermsExtractor.extract(extraPath, fs);
+          const unique = this.removeDuplicates(extraTerms);
+          const dataset = {
+            metadata: {
+              generated: new Date().toISOString(),
+              totalTerms: unique.length,
+              source: extra.sourceType,
+              description: extra.description,
+              version: '1.0',
+              categories: [extra.category],
+              hasIPA: true
+            },
+            vocabulary: unique
+          };
+          this.saveDataset(extra.output, dataset);
+          console.log(`   ✅ Generated extra dataset: ${extra.id} (${unique.length} terms)`);
+        } catch (e) {
+          console.warn(`   ⚠️  Skipped extra dataset ${extra.id}: ${e.message}`);
+        }
       }
     }
 

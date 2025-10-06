@@ -21,6 +21,29 @@ class AppConfig {
                     dataset: 'pte-fib-listening-dataset.json',
                     report: 'pte-processing-report.json'
                 },
+                // Centralized dataset registry for the pipeline. Each entry defines a dataset to build.
+                // New books should be added here; the pipeline will iterate over this list.
+                registry: [
+                    {
+                        id: 'pte-fib-listening',
+                        input: 'pte-fib-listening-with-ipa.md',
+                        fallback: 'fib-listening-vocabulary.md',
+                        output: 'pte-fib-listening-dataset.json',
+                        category: 'pte-fib-listening',
+                        description: 'PTE FIB Listening vocabulary with IPA',
+                        sourceType: 'pte-fib-listening-with-ipa',
+                        isDefault: true
+                    },
+                    {
+                        id: 'pte-beginner',
+                        input: 'pte-beginner-vocabulary-with-ipa.md',
+                        output: 'pte-beginner-vocabulary.json',
+                        category: 'pte-beginner',
+                        description: 'PTE Beginner high-frequency vocabulary with IPA',
+                        sourceType: 'pte-beginner-vocabulary-with-ipa',
+                        isDefault: false
+                    }
+                ],
                 extraSources: [
                     {
                         id: 'pte-beginner',

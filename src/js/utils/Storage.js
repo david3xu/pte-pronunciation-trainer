@@ -73,10 +73,6 @@ class Storage {
         return this.getItem(key);
     }
 
-    // Save a setting value (alias for setItem)
-    saveSetting(key, value) {
-        return this.setItem(key, value);
-    }
 }
 
 // Global storage instance

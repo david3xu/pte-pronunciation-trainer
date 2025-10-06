@@ -36,9 +36,9 @@ class AppConfig {
                     'pte-fib-listening': '🎧 FIB Listening'
                 },
                 learningModes: [
-                    { id: 'pte-fib-listening', label: '🎧 PTE FIB Listening', dataset: 'pteFibListening' }
+                    { id: 'pte-fib-listening', label: '🎧 PTE FIB Listening', dataset: 'pte-fib-listening-with-ipa' }
                 ],
-                difficulties: ['easy', 'normal', 'hard']
+                difficulties: ['normal'] // All PTE terms are currently normal difficulty
             },
 
             // ===== TTS CONFIGURATION =====
@@ -65,7 +65,7 @@ class AppConfig {
                     voiceReady: 100,
                     resetTimeout: 5000
                 },
-                repeatModes: ['once', 'individual', 'intensive', 'loop']
+                repeatModes: ['once', 'twice', 'intensive', 'loop']
             },
 
             // ===== UI CONFIGURATION =====
@@ -87,6 +87,33 @@ class AppConfig {
                         british: '🇬🇧',
                         american: '🇺🇸'
                     }
+                }
+            },
+
+            // ===== SETTINGS CONFIGURATION =====
+            settings: {
+                storageKeys: {
+                    category: 'category',
+                    difficulty: 'difficulty',
+                    speed: 'speechRate',
+                    delay: 'delay',
+                    repeat: 'repeatMode',
+                    voice: 'preferredVoice',
+                    learningMode: 'learningMode'
+                },
+                defaults: {
+                    category: 'all-categories',
+                    difficulty: 'normal', // Match actual data - all terms are normal difficulty
+                    speed: 'tts.speeds.slow',
+                    delay: 'tts.delays.normal',
+                    repeat: 'once',
+                    voice: 'auto',
+                    learningMode: 'pte-fib-listening'
+                },
+                events: {
+                    changed: 'settings:changed',
+                    loaded: 'settings:loaded',
+                    reset: 'settings:reset'
                 }
             },
 
@@ -112,6 +139,7 @@ class AppConfig {
                     'src/js/utils/CacheMigration.js',
                     'src/js/utils/StateTest.js',
                     'src/js/data/extractors/PTETermsExtractor.js',
+                    'src/js/core/SettingsManager.js',
                     'src/js/core/PTEVocabularyManager.js',
                     'src/js/core/ProgressTracker.js',
                     'src/js/audio/TTSEngine.js',

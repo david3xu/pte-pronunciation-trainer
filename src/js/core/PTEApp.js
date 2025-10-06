@@ -50,6 +50,9 @@ class PTEVocabularyTrainer {
     // 1. Initialize state manager (must be first to restore settings)
     this.initializeStateManager();
 
+    // 1.1. Initialize settings manager (handles complex settings logic)
+    this.initializeSettingsManager();
+
     // 2. Initialize PTE vocabulary manager (loads data asynchronously)
     if (window.pteVocabularyManager) {
       await window.pteVocabularyManager.initialize();
@@ -105,6 +108,17 @@ class PTEVocabularyTrainer {
     }
   }
 
+  initializeSettingsManager() {
+    // SettingsManager is already initialized as a global instance
+    // Just ensure other modules can access it
+    if (window.settingsManager) {
+      console.log('⚙️ SettingsManager initialized and ready');
+      console.log('📊 Current settings:', window.settingsManager.getAllSettings());
+    } else {
+      console.warn('⚠️ SettingsManager not found - using legacy settings handling');
+    }
+  }
+
   registerServiceWorker() {
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js')
@@ -135,10 +149,9 @@ class PTEVocabularyTrainer {
       });
     }
 
-    // Initialize voice selector if available
+    // Voice selector is ready (no initialization needed)
     if (window.voiceSelector) {
-      window.voiceSelector.initialize();
-      console.log('🎤 Voice selector initialized');
+      console.log('🎤 Voice selector ready');
     }
   }
 
@@ -212,7 +225,7 @@ class PTEVocabularyTrainer {
   restoreUIState() {
     if (!window.stateManager) return;
 
-    const preferences = window.stateManager.getPreferences();
+    const preferences = window.stateManager.getUserPreferences();
     if (!preferences) return;
 
     console.log('🔄 Restoring UI state from previous session...');

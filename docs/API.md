@@ -99,6 +99,71 @@ const counts = vocabManager.getCategoryCounts()
 
 ---
 
+### **SettingsManager** - Settings Management
+
+#### Constructor
+```javascript
+const settingsManager = new SettingsManager();
+```
+
+#### Methods
+```javascript
+// Initialize settings system
+settingsManager.initialize()
+
+// Update a setting with validation
+settingsManager.updateSetting('category', 'pte-fib-listening')
+
+// Get current setting value
+const category = settingsManager.getSetting('category')
+
+// Get all current settings
+const allSettings = settingsManager.getAllSettings()
+
+// Get available options for a setting
+const options = settingsManager.getAvailableOptions('difficulty')
+
+// Check if setting value is valid
+const isValid = settingsManager.isValidSetting('speed', '1.0')
+
+// Apply setting dependencies
+settingsManager.applyDependencies('learningMode', 'pte-fib-listening')
+```
+
+#### Settings Structure
+```javascript
+{
+  category: 'all-categories',
+  difficulty: 'normal',
+  speed: '0.7',
+  delay: '2000',
+  repeat: 'once',
+  voice: 'auto',
+  learningMode: 'pte-fib-listening'
+}
+```
+
+#### Available Options by Setting
+```javascript
+// Learning modes
+settingsManager.getAvailableOptions('learningMode')
+// Returns: [{ id: 'pte-fib-listening', label: '🎧 PTE FIB Listening' }]
+
+// Categories
+settingsManager.getAvailableOptions('category')
+// Returns: [{ id: 'all-categories', label: '🌟 All Categories' }, ...]
+
+// Difficulties
+settingsManager.getAvailableOptions('difficulty')
+// Returns: [{ id: 'normal', label: '🟡 Normal (All PTE Terms)' }]
+
+// Speech speeds
+settingsManager.getAvailableOptions('speed')
+// Returns: [{ id: '0.7', label: 'Slow' }, { id: '1.0', label: 'Normal' }, ...]
+```
+
+---
+
 ### **UIController** - User Interface Management
 
 #### Constructor
@@ -128,6 +193,18 @@ uiController.updateButtons()
 
 // Display first word
 uiController.displayFirstWord()
+
+// Use SettingsManager for dropdowns
+uiController.populateDropdownsFromSettingsManager()
+
+// Update dropdowns based on learning mode
+uiController.updateDropdownsForLearningMode('pte-fib-listening')
+
+// Update dropdowns based on category
+uiController.updateDropdownsForCategory('all-categories')
+
+// Handle settings changes
+uiController.handleSettingsChange('category', 'pte-fib-listening')
 ```
 
 ---
@@ -266,6 +343,9 @@ window.CCLApp.getModule('audioControls')
 window.CCLApp.getModule('uiController')
 window.CCLApp.getModule('settingsPanel')
 
+// Settings modules
+window.CCLApp.getModule('settingsManager')
+
 // Utility modules
 window.CCLApp.getModule('eventBus')
 window.CCLApp.getModule('storage')
@@ -391,6 +471,20 @@ console.log('Current voice:', currentVoice)
 window.appConfig.set('tts.voices.default', 'Microsoft James (en-AU)')
 ```
 
+### **Settings Management**
+```javascript
+// Update setting through SettingsManager
+window.settingsManager.updateSetting('category', 'pte-fib-listening')
+
+// Get current settings
+const settings = window.settingsManager.getAllSettings()
+console.log('Current settings:', settings)
+
+// Get available options for dropdown
+const difficultyOptions = window.settingsManager.getAvailableOptions('difficulty')
+console.log('Difficulty options:', difficultyOptions)
+```
+
 ### **Event Handling**
 ```javascript
 // Listen for vocabulary loaded
@@ -401,6 +495,11 @@ window.eventBus.on('vocabulary:loaded', (data) => {
 // Listen for word display
 window.eventBus.on('word:display', (data) => {
   console.log(`Displaying: ${data.word.english} (${data.index + 1}/${totalWords})`)
+})
+
+// Listen for settings changes
+window.eventBus.on('settings:changed', (data) => {
+  console.log(`Setting changed: ${data.key} = ${data.value}`)
 })
 ```
 

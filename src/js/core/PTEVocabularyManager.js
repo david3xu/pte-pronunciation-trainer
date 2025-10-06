@@ -146,6 +146,13 @@ class PTEVocabularyManager {
   }
 
   /**
+   * Get total number of words
+   */
+  getTotalWords() {
+    return this.currentWords.length;
+  }
+
+  /**
    * Get word by index
    */
   getWord(index) {

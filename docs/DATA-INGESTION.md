@@ -33,6 +33,92 @@ Notes:
     - Replace `pipeline.dataSources.primary` with the new `<dataset-id>-with-ipa.md`, or
     - Extend the pipeline to accept multiple sources when creating merged modes.
 
+### Add a New Words Book (Codebase Update Steps)
+The project now supports multiple “books” (learning modes) without hardcoding. To add a new book end‑to‑end:
+
+1) Place source markdown
+- Add `<your-dataset-id>-with-ipa.md` under `data/source/pte/vocabs/` using the one-line IPA format above.
+
+2) Wire configuration in `src/js/shared/Config.js`
+- learning mode (user-facing option):
+```js
+data: {
+  learningModes: [
+    { id: 'pte-fib-listening', label: '🎧 PTE FIB Listening', dataset: 'pte-fib-listening-with-ipa' },
+    { id: 'pte-beginner',      label: '📗 PTE Beginner Vocabulary', dataset: 'pte-beginner-vocabulary-with-ipa' },
+    // Add your new mode here
+    { id: 'your-id',           label: '📘 Your Book Label',        dataset: 'your-dataset-id-with-ipa' }
+  ],
+  paths: {
+    byMode: {
+      'pte-fib-listening': '/data/processed/pte-fib-listening-dataset.json',
+      'pte-beginner':      '/data/processed/pte-beginner-vocabulary.json',
+      // Add your processed JSON path
+      'your-id':           '/data/processed/your-dataset-id.json'
+    }
+  },
+  categories: {
+    // Optional category label per book
+    'your-id': '📘 Your Book Label'
+  }
+}
+```
+
+- pipeline extra sources (to build additional datasets in one run):
+```js
+pipeline: {
+  extraSources: [
+    {
+      id: 'pte-beginner',
+      input: 'pte-beginner-vocabulary-with-ipa.md',
+      output: 'pte-beginner-vocabulary.json',
+      category: 'pte-beginner',
+      description: 'PTE Beginner high-frequency vocabulary with IPA',
+      sourceType: 'pte-beginner-vocabulary-with-ipa'
+    },
+    // Add your source here
+    {
+      id: 'your-id',
+      input: 'your-dataset-id-with-ipa.md',
+      output: 'your-dataset-id.json',
+      category: 'your-id',
+      description: 'Your book description',
+      sourceType: 'your-dataset-id-with-ipa'
+    }
+  ]
+}
+```
+
+- validation (optional but recommended):
+```js
+validation: {
+  requiredFiles: [
+    'data/processed/pte-fib-listening-dataset.json',
+    'data/processed/pte-beginner-vocabulary.json',
+    // Add your processed file
+    'data/processed/your-dataset-id.json'
+  ]
+}
+```
+
+3) Service worker caching (optional)
+- To pre-cache the new processed dataset for offline use, add its path to `sw.js` lists (both dev and prod blocks):
+```
+/data/processed/your-dataset-id.json
+```
+
+4) Build and validate
+```bash
+npm run data:pte
+npm run validate
+```
+
+5) Use the new book in the app
+- Open Settings → Learning Mode and select your new book. No UI code changes are required:
+  - `SettingsManager` auto-populates options from `data.learningModes`.
+  - `PTEVocabularyManager` fetches the dataset via `data.paths.byMode[learningMode]`.
+  - `UIController` updates automatically on settings change.
+
 ### Processing
 1) Place the markdown file(s) in `data/source/pte/vocabs/`.
 2) Run:

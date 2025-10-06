@@ -38,7 +38,7 @@ class AppConfig {
                 learningModes: [
                     { id: 'pte-fib-listening', label: '🎧 PTE FIB Listening', dataset: 'pte-fib-listening-with-ipa' }
                 ],
-                difficulties: ['normal'] // All PTE terms are currently normal difficulty
+                        difficulties: ['all', 'normal', 'hard', 'easy'] // All PTE terms with mixed difficulties
             },
 
             // ===== TTS CONFIGURATION =====
@@ -103,7 +103,7 @@ class AppConfig {
                 },
                 defaults: {
                     category: 'all-categories',
-                    difficulty: 'normal', // Match actual data - all terms are normal difficulty
+                    difficulty: 'all', // Show all difficulty levels (normal, hard, easy)
                     speed: 'tts.speeds.slow',
                     delay: 'tts.delays.normal',
                     repeat: 'once',

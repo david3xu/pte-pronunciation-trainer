@@ -279,7 +279,7 @@ class UIController {
         this.populateDropdown('categorySelect', 'category', 'all-categories');
 
         // Difficulty dropdown
-        this.populateDropdown('difficultySelect', 'difficulty', 'normal');
+        this.populateDropdown('difficultySelect', 'difficulty', 'all');
 
         // Audio dropdowns
         this.populateDropdown('speedSelect', 'speed', '0.7');

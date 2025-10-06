@@ -246,7 +246,11 @@ class SettingsManager {
       case 'difficulty':
         return this.config.get('data.difficulties').map(diff => ({
           id: diff,
-          label: diff === 'normal' ? '🟡 Normal (All PTE Terms)' : `🟡 ${diff.charAt(0).toUpperCase() + diff.slice(1)}`
+          label: diff === 'all' ? '🌟 All Difficulties' :
+                 diff === 'normal' ? '🟡 Normal (436 terms)' :
+                 diff === 'hard' ? '🔴 Hard (411 terms)' :
+                 diff === 'easy' ? '🟢 Easy (38 terms)' :
+                 `🟡 ${diff.charAt(0).toUpperCase() + diff.slice(1)}`
         }));
 
       case 'speed':

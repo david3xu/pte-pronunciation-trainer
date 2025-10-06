@@ -74,6 +74,7 @@ class UIController {
             if (window.settingsManager) {
                 window.settingsManager.updateSetting('category', e.target.value);
             }
+            this.updateCategoryDisplay();
         });
 
         // Difficulty selection - use SettingsManager
@@ -159,27 +160,8 @@ class UIController {
             }
         });
 
-        // Learning mode selection - use SettingsManager
-        document.getElementById('learningModeSelect').addEventListener('change', (e) => {
-            if (window.settingsManager) {
-                window.settingsManager.updateSetting('learningMode', e.target.value);
-            }
-        });
-
-        // Category selection - use SettingsManager
-        document.getElementById('categorySelect').addEventListener('change', (e) => {
-            if (window.settingsManager) {
-                window.settingsManager.updateSetting('category', e.target.value);
-            }
-            this.updateCategoryDisplay();
-        });
-
-        // Difficulty selection - use SettingsManager
-        document.getElementById('difficultySelect').addEventListener('change', (e) => {
-            if (window.settingsManager) {
-                window.settingsManager.updateSetting('difficulty', e.target.value);
-            }
-        });
+        // Note: Event listeners for learningMode, category, and difficulty 
+        // are already defined above - no need for duplicates
 
         // Pronunciation toggle button
         const pronunciationToggleBtn = document.getElementById('pronunciationToggleBtn');
@@ -307,14 +289,6 @@ class UIController {
             if (option.id === defaultValue) optionElement.selected = true;
             element.appendChild(optionElement);
         });
-    }
-
-    /**
-     * Populate audio-related dropdowns (DEPRECATED - use populateAllDropdownsFromSettingsManager)
-     */
-    populateAudioDropdowns(settingsManager) {
-        console.log('⚠️ populateAudioDropdowns() is deprecated - use populateAllDropdownsFromSettingsManager()');
-        // This method is now redundant - use the unified approach above
     }
 
     updateCategoryDisplay() {
@@ -740,66 +714,6 @@ class UIController {
         console.log(`Updating dropdowns for category: ${category}`);
         // Use unified approach - repopulate all dropdowns
         this.populateAllDropdownsFromSettingsManager();
-    }
-
-    /**
-     * Update category dropdown options based on learning mode (DEPRECATED)
-     */
-    updateCategoryOptions(learningMode) {
-        console.log('⚠️ updateCategoryOptions() is deprecated - use populateAllDropdownsFromSettingsManager()');
-        const categorySelect = document.getElementById('categorySelect');
-        if (!categorySelect) return;
-
-        // Clear existing options
-        categorySelect.innerHTML = '';
-
-        // Get available categories from config
-        const categories = this.config.get('data.categories');
-
-        // Add options based on learning mode
-        Object.entries(categories).forEach(([key, label]) => {
-            const option = document.createElement('option');
-            option.value = key;
-            option.textContent = label;
-
-            // Set default selection
-            if (key === 'all-categories') {
-                option.selected = true;
-            }
-
-            categorySelect.appendChild(option);
-        });
-    }
-
-    /**
-     * Update difficulty dropdown options based on learning mode and category (DEPRECATED)
-     */
-    updateDifficultyOptions(learningMode = null, category = null) {
-        console.log('⚠️ updateDifficultyOptions() is deprecated - use populateAllDropdownsFromSettingsManager()');
-        const difficultySelect = document.getElementById('difficultySelect');
-        if (!difficultySelect) return;
-
-        // Clear existing options
-        difficultySelect.innerHTML = '';
-
-        // Get available difficulties from config
-        const difficulties = this.config.get('data.difficulties');
-
-        // Add options based on available difficulties
-        difficulties.forEach(difficulty => {
-            const option = document.createElement('option');
-            option.value = difficulty;
-
-            // Set appropriate labels based on our PTE data
-            if (difficulty === 'all') {
-                option.textContent = '🌟 All Difficulties';
-                option.selected = true; // Default selection
-            } else {
-                option.textContent = `🟡 ${difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}`;
-            }
-
-            difficultySelect.appendChild(option);
-        });
     }
 
     /**

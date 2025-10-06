@@ -78,34 +78,20 @@ class AppNamespace {
 
     /**
      * Initialize all registered modules
+     * 
+     * Note: This method is provided for compatibility but is not used in the PTE branch.
+     * Initialization is handled by PTEApp.js instead to ensure proper sequencing.
      */
     async initializeAll() {
         if (this.initialized) return;
 
-        console.log('🚀 Initializing CCL App modules...');
-
-        // Initialize in dependency order
-        const initOrder = [
-            'eventBus', 'storage', 'stateManager', 'cacheMigration',
-            'vocabularyManager', 'progressTracker', 'dialogueDataLoader',
-            'ttsEngine', 'voiceSelector', 'audioControls',
-            'uiController', 'settingsPanel'
-        ];
-
-        for (const moduleName of initOrder) {
-            const module = this.modules[moduleName];
-            if (module && typeof module.initialize === 'function') {
-                try {
-                    await module.initialize();
-                    console.log(`✅ ${moduleName} initialized`);
-                } catch (error) {
-                    console.error(`❌ Failed to initialize ${moduleName}:`, error);
-                }
-            }
-        }
-
+        console.log('🚀 CCLApp namespace aware of initialization but deferring to PTEApp');
+        console.log('ℹ️ In the PTE branch, initialization is handled by PTEApp.js');
+        
+        // In the PTE branch, we don't actually initialize here
+        // This is to avoid conflicts with PTEApp.js initialization sequence
+        
         this.initialized = true;
-        console.log('✅ All CCL App modules initialized');
     }
 }
 

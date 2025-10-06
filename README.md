@@ -150,7 +150,7 @@ pte-vocabulary-trainer/
 
 - **[📋 Documentation Index](docs/README.md)** - Complete documentation overview and navigation
 - **[🏗️ Architecture & Workflow](docs/ARCHITECTURE.md)** - System design, data flow, and interaction patterns
-- **[🔄 System Workflow](docs/WORKFLOW.md)** - End-to-end workflow diagrams and class interactions
+- **[ System Workflow](docs/WORKFLOW.md)** - End-to-end workflow diagrams and class interactions
 - **[📖 API Reference](docs/API.md)** - Complete API documentation for all classes and methods
 - **[🚀 Deployment Guide](docs/DEPLOYMENT.md)** - Platform deployment and CI/CD pipeline
 - **[🔍 Troubleshooting](docs/TROUBLESHOOTING.md)** - Common issues and solutions

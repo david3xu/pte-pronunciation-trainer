@@ -3,20 +3,6 @@ class CacheMigration {
     constructor() {
         this.currentVersion = 5; // Version 5 forces clean initialization with new difficulty defaults
         this.versionKey = 'cache-version';
-
-        // Mapping of old categories to new ones
-        this.categoryMigrations = {
-            'group-1': 'group-240s',
-            'group-2': 'group-230s',
-            'group-3': 'group-220s',
-            'group-4': 'group-210s',
-            'group-5': 'group-200s',
-            'group-6': 'group-190s',
-            'group-7': 'group-180s',
-            'group-8': 'group-170s',
-            'group-9': 'group-160s',
-            'group-10': 'group-150s'
-        };
     }
 
     // Check if migration is needed and perform it
@@ -29,7 +15,7 @@ class CacheMigration {
                 this.clearAllCache();
             } else {
                 console.log(`Migrating cache from version ${currentVersion} to ${this.currentVersion}`);
-                this.migrateToDecadeGroups();
+                // Migration is handled by clearing and setting defaults
             }
 
             // Set default values for clean initialization

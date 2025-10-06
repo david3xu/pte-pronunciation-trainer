@@ -21,18 +21,24 @@ Controls the primary learning dataset and methodology.
 
 **Available Options:**
 - `pte-fib-listening` - 🎧 PTE FIB Listening (Default)
+- `pte-beginner` - 🔤 PTE Beginner
+- `pte-intermediate` - 📚 PTE Intermediate
 
 **Configuration:**
 ```javascript
 learningModes: [
-    { id: 'pte-fib-listening', label: '🎧 PTE FIB Listening', dataset: 'pte-fib-listening-with-ipa' }
+    { id: 'pte-fib-listening', label: '🎧 PTE FIB Listening', dataset: 'pte-fib-listening-with-ipa' },
+    { id: 'pte-beginner', label: '🔤 PTE Beginner', dataset: 'pte-beginner-vocabulary-with-ipa' },
+    { id: 'pte-intermediate', label: '📚 PTE Intermediate', dataset: 'pte-intermediate-vocabulary-with-ipa' }
 ]
 ```
 
 **Impact:**
 - Determines which vocabulary dataset is loaded
 - Affects available categories and terms
-- Currently supports 885 unique PTE FIB listening terms with IPA pronunciations
+- `pte-fib-listening`: 914 unique PTE FIB listening terms with IPA pronunciations
+- `pte-beginner`: Beginner-level PTE vocabulary with IPA pronunciations
+- `pte-intermediate`: Intermediate-level PTE vocabulary with IPA pronunciations
 - All terms are classified as "normal" difficulty level
 
 ---
@@ -233,10 +239,16 @@ Settings changes are communicated across modules through:
 
 2. **Direct Module Updates**
    ```javascript
-   // Update vocabulary manager
+   // Update vocabulary manager (legacy approach)
    window.pteVocabularyManager.setCategory(newCategory);
    window.pteVocabularyManager.setDifficulty(newDifficulty);
    window.pteVocabularyManager.setLearningMode(newMode);
+   
+   // Update vocabulary manager (recommended approach)
+   const vocabManager = window.CCLApp.getModule('pteVocabularyManager');
+   vocabManager.setCategory(newCategory);
+   vocabManager.setDifficulty(newDifficulty);
+   vocabManager.setLearningMode(newMode);
    ```
 
 3. **Audio System Updates**
@@ -283,13 +295,17 @@ Settings changes are communicated across modules through:
 All settings are managed through the centralized `AppConfig` system:
 
 ```javascript
-// Access configuration
+// Access configuration (legacy approach)
 const config = window.appConfig || new AppConfig();
+
+// Access configuration (recommended approach)
+const config = window.CCLApp.getModule('config');
 
 // Get setting values
 const defaultSpeed = config.get('tts.speeds.slow');
 const availableVoices = config.get('tts.voices.fallbacks');
 const repeatModes = config.get('tts.repeatModes');
+const uiElements = config.get('ui.element');
 ```
 
 ### Dynamic Configuration

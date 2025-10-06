@@ -22,7 +22,8 @@ class PTEDataPipeline {
       outputDir: config.outputDir || path.join(__dirname, '..', pipelineConfig.outputDir),
       reportsDir: config.reportsDir || path.join(__dirname, '..', pipelineConfig.reportsDir),
       dataSources: config.dataSources || pipelineConfig.dataSources,
-      outputFiles: config.outputFiles || pipelineConfig.outputFiles
+      outputFiles: config.outputFiles || pipelineConfig.outputFiles,
+      extraSources: config.extraSources || pipelineConfig.extraSources || []
     };
     this.results = new Map();
     this.stats = {

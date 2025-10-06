@@ -54,7 +54,7 @@ class AppConfig {
                     { id: 'pte-fib-listening', label: '🎧 PTE FIB Listening', dataset: 'pte-fib-listening-with-ipa' },
                     { id: 'pte-beginner', label: '📗 PTE Beginner Vocabulary', dataset: 'pte-beginner-vocabulary-with-ipa' }
                 ],
-                        difficulties: ['all', 'normal', 'hard', 'easy'] // All PTE terms with mixed difficulties
+                difficulties: ['all', 'normal', 'hard', 'easy'] // All PTE terms with mixed difficulties
             },
 
             // ===== TTS CONFIGURATION =====

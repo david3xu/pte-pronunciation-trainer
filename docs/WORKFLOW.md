@@ -54,6 +54,7 @@ graph LR
 sequenceDiagram
     participant Browser
     participant PTEApp
+    participant AppNamespace
     participant Config
     participant SettingsManager
     participant PTEVocabularyManager
@@ -62,6 +63,9 @@ sequenceDiagram
     participant Dataset
 
     Browser->>PTEApp: Load Application
+    PTEApp->>AppNamespace: Register Module
+    AppNamespace-->>PTEApp: Module Registered
+    
     PTEApp->>Config: Initialize Configuration
     Config-->>PTEApp: Return All Settings
 
@@ -71,6 +75,8 @@ sequenceDiagram
     SettingsManager-->>PTEApp: Settings Ready
 
     PTEApp->>PTEVocabularyManager: Initialize
+    PTEVocabularyManager->>AppNamespace: Register Module
+    AppNamespace-->>PTEVocabularyManager: Module Registered
     PTEVocabularyManager->>Config: Get Data Path
     Config-->>PTEVocabularyManager: Return Dataset Path
     PTEVocabularyManager->>Dataset: Load Vocabulary
@@ -78,6 +84,8 @@ sequenceDiagram
     PTEVocabularyManager-->>PTEApp: Vocabulary Ready
 
     PTEApp->>UIController: Initialize UI
+    UIController->>AppNamespace: Register Module
+    AppNamespace-->>UIController: Module Registered
     UIController->>SettingsManager: Get Settings Options
     SettingsManager-->>UIController: Return Dropdown Options
     UIController->>Config: Get UI Settings
@@ -126,6 +134,9 @@ classDiagram
         +allWords: Array
         +initialize(): Promise
         +loadPTEData(): Promise
+        +loadFIBDataset(): Promise
+        +loadBeginnerDataset(): Promise
+        +loadIntermediateDataset(): Promise
         +setLearningMode(mode: string): void
         +getCurrentWord(index: number): Object
     }
@@ -308,9 +319,10 @@ graph LR
 ```mermaid
 graph LR
     A[Add to Config.js] --> B[Update VocabularyManager]
-    B --> C[Update UI]
-    C --> D[Test Mode]
-    D --> E[Deploy]
+    B --> C[Add Dataset Loading Method]
+    C --> D[Update UI]
+    D --> E[Test Mode]
+    E --> F[Deploy]
 ```
 
 ---
@@ -318,3 +330,4 @@ graph LR
 **Workflow Status**: ✅ **COMPLETE & DOCUMENTED**
 **Architecture**: ✅ **CLEAR & MAINTAINABLE**
 **Extensibility**: ✅ **WELL-DEFINED PATTERNS**
+**Module Registration**: ✅ **STANDARDIZED WITH CCLApp NAMESPACE**

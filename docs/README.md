@@ -16,7 +16,7 @@ This directory contains comprehensive documentation for the PTE Pronunciation Tr
 - **[API.md](API.md)** - Complete API reference for all classes and methods
 - **[DEPLOYMENT.md](DEPLOYMENT.md)** - Deployment guide for various platforms
 - **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** - Common issues and solutions
- - **[DATA-INGESTION.md](DATA-INGESTION.md)** - How to add new datasets (sources, config, pipeline)
+- **[DATA-INGESTION.md](DATA-INGESTION.md)** - How to add new datasets (sources, config, pipeline)
 
 ### **📊 Data Documentation**
 - **[pte-fib-listening-with-ipa.md](../data/source/pte/vocabs/pte-fib-listening-with-ipa.md)** - Primary data source (914 terms with IPA)
@@ -28,7 +28,7 @@ This directory contains comprehensive documentation for the PTE Pronunciation Tr
 |----------|---------|----------|---------|
 | **README.md** | Project overview & quick start | Users, developers | Features, setup, commands |
 | **CLAUDE.md** | AI development guidance | AI assistants | Architecture context, commands |
-| **ARCHITECTURE.md** | System design | Developers, architects | Design patterns, components |
+| **ARCHITECTURE.md** | System design | Developers, architects | Design patterns, components, improvements |
 | **WORKFLOW.md** | Process flows | Developers, DevOps | Data flow, class interactions |
 | **API.md** | API reference | Developers | Class methods, usage examples |
 | **SETTINGS.md** | Settings panel guide | Users, developers | Configuration options, features |
@@ -50,7 +50,6 @@ graph TD
     A --> H[DEPLOYMENT.md<br/>Deployment Guide]
     A --> I[TROUBLESHOOTING.md<br/>Issue Resolution]
 
-    B --> H[Component Details]
     C --> I[Class Interactions]
     D --> J[Development Context]
     E --> K[Usage Examples]

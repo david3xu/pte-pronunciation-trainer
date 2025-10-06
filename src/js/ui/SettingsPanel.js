@@ -44,10 +44,10 @@ class SettingsPanel {
         });
 
         // Listen for settings changes to persist them
-        this.setupSettingsPersistence();
+        this.setupSettingsPersistence().catch(console.error);
     }
 
-    setupSettingsPersistence() {
+    async setupSettingsPersistence() {
         // Load saved settings from SettingsManager
         let savedSettings;
 
@@ -76,7 +76,7 @@ class SettingsPanel {
             window.pteVocabularyManager.setDifficulty(savedSettings.difficulty);
         }
         if (savedSettings.learningMode && window.pteVocabularyManager && window.pteVocabularyManager.setLearningMode) {
-            window.pteVocabularyManager.setLearningMode(savedSettings.learningMode);
+            await window.pteVocabularyManager.setLearningMode(savedSettings.learningMode);
         }
     }
 
@@ -168,7 +168,7 @@ class SettingsPanel {
 
         const link = document.createElement('a');
         link.href = url;
-            link.download = this.config.get('ui.labels.exportFilename');
+        link.download = this.config.get('ui.labels.exportFilename');
         link.click();
 
         URL.revokeObjectURL(url);

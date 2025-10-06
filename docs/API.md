@@ -40,6 +40,20 @@ appConfig.merge({ custom: { setting: 'value' } })
     voices: { default: 'Google UK English Male' },
     speeds: { slow: 0.7, normal: 1.0, fast: 1.3 }
   },
+  ui: {
+    themes: ['light', 'dark'],
+    shortcuts: {
+      playAudio: 'Space',
+      nextWord: 'ArrowRight',
+      prevWord: 'ArrowLeft'
+    },
+    element: {
+      categories: 'category-select',
+      difficulties: 'difficulty-select',
+      learningModes: 'mode-select',
+      // ... more element mappings
+    }
+  }
   // ... more configuration
 }
 ```
@@ -61,7 +75,7 @@ await vocabManager.initialize()
 // Load PTE data
 await vocabManager.loadPTEData()
 
-// Set learning mode
+// Set learning mode (supports: 'pte-fib-listening', 'pte-beginner', 'pte-intermediate')
 vocabManager.setLearningMode('pte-fib-listening')
 
 // Load category
@@ -81,6 +95,11 @@ const count = vocabManager.getTotalWordCount()
 
 // Get category counts
 const counts = vocabManager.getCategoryCounts()
+
+// Load specific datasets
+await vocabManager.loadFIBDataset()
+await vocabManager.loadBeginnerDataset()
+await vocabManager.loadIntermediateDataset()
 ```
 
 #### Word Object Structure
@@ -195,16 +214,16 @@ uiController.updateButtons()
 uiController.displayFirstWord()
 
 // Use SettingsManager for dropdowns
-uiController.populateDropdownsFromSettingsManager()
+uiController.populateAllDropdownsFromSettingsManager()
 
-// Update dropdowns based on learning mode
-uiController.updateDropdownsForLearningMode('pte-fib-listening')
-
-// Update dropdowns based on category
-uiController.updateDropdownsForCategory('all-categories')
+// Update dropdowns for a specific dropdown element
+uiController.populateDropdown('elementId', 'settingKey', 'defaultValue')
 
 // Handle settings changes
 uiController.handleSettingsChange('category', 'pte-fib-listening')
+
+// Event handler initialization (attaches all event listeners)
+uiController.initializeEventHandlers()
 ```
 
 ---
@@ -321,10 +340,24 @@ const vocab = window.CCLApp.getModule('pteVocabularyManager')
 const config = window.CCLApp.getModule('config')
 const tts = window.CCLApp.getModule('ttsEngine')
 
-// Legacy direct access (still works)
+// Legacy direct access (still works but not recommended)
 window.pteVocabularyManager
 window.appConfig
 window.ttsEngine
+```
+
+### **Standardized Module Registration**
+```javascript
+// Create module instance
+const moduleInstance = new ModuleClass();
+
+// Register with CCLApp namespace
+if (window.CCLApp) {
+  window.CCLApp.registerModule('moduleName', moduleInstance);
+}
+
+// Legacy compatibility - maintain existing global reference
+window.moduleName = moduleInstance;
 ```
 
 ### **Available Modules**
@@ -508,3 +541,17 @@ window.eventBus.on('settings:changed', (data) => {
 **API Status**: ✅ **COMPLETE & DOCUMENTED**
 **PTE Focus**: ✅ **ALL APIS PTE-SPECIFIC**
 **Backward Compatibility**: ✅ **LEGACY PATTERNS SUPPORTED**
+
+---
+
+## 📝 Changelog
+
+### July 2023
+- Added support for `pte-intermediate` learning mode in PTEVocabularyManager
+- Added loadIntermediateDataset method to PTEVocabularyManager
+- Improved module registration pattern with CCLApp namespace
+- Consolidated UI configuration in Config.js
+- Removed duplicate event handlers in UIController.js
+- Removed deprecated methods and unused code
+- Updated initialization order to address race conditions
+- Added comprehensive documentation of code improvements in CODE-IMPROVEMENTS.md

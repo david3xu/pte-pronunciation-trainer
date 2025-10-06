@@ -139,6 +139,18 @@ class AppConfig {
                         british: '🇬🇧',
                         american: '🇺🇸'
                     }
+                },
+                opacity: {
+                    enabled: '1',
+                    disabled: '0.5'
+                },
+                text: {
+                    maxLength: 50,
+                    sentenceSplitThreshold: 1
+                },
+                labels: {
+                    version: '1.0',
+                    exportFilename: 'ccl-trainer-settings.json'
                 }
             },
 
@@ -176,22 +188,6 @@ class AppConfig {
                 volumeStep: 0.1,
                 fadeInDuration: 200,
                 fadeOutDuration: 200
-            },
-
-            // ===== UI CONFIGURATION =====
-            ui: {
-                opacity: {
-                    enabled: '1',
-                    disabled: '0.5'
-                },
-                text: {
-                    maxLength: 50,
-                    sentenceSplitThreshold: 1
-                },
-                labels: {
-                    version: '1.0',
-                    exportFilename: 'ccl-trainer-settings.json'
-                }
             },
 
             // ===== DATA PROCESSING CONFIGURATION =====

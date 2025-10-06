@@ -39,7 +39,8 @@ class PTEVocabularyTrainer {
   }
 
   async initializeModules() {
-    console.log('🚀 Starting module initialization...');
+    console.log('🚀 Starting module initialization... (PTEApp is the primary initializer)');
+    console.log('ℹ️ Note: This initialization takes precedence over CCLApp.initializeAll()');
 
     // 0. Register service worker for PWA and background operation
     this.registerServiceWorker();
@@ -83,7 +84,7 @@ class PTEVocabularyTrainer {
     this.setupFullscreen();
 
     // 9. Restore UI settings from state
-    this.restoreUIState();
+    this.restoreUIState().catch(console.error);
 
     console.log('✅ All modules initialized successfully');
 
@@ -222,7 +223,7 @@ class PTEVocabularyTrainer {
     }
   }
 
-  restoreUIState() {
+  async restoreUIState() {
     if (!window.stateManager) return;
 
     const preferences = window.stateManager.getUserPreferences();
@@ -232,7 +233,7 @@ class PTEVocabularyTrainer {
 
     // Restore learning mode
     if (preferences.learningMode && window.pteVocabularyManager) {
-      window.pteVocabularyManager.setLearningMode(preferences.learningMode);
+      await window.pteVocabularyManager.setLearningMode(preferences.learningMode);
     }
 
     // Restore category
@@ -257,7 +258,7 @@ class PTEVocabularyTrainer {
 
     // Force PTE FIB listening mode
     if (window.pteVocabularyManager) {
-      window.pteVocabularyManager.setLearningMode('pte-fib-listening');
+      await window.pteVocabularyManager.setLearningMode('pte-fib-listening');
     }
 
     console.log('🎯 UI state restored from previous session');
@@ -304,12 +305,29 @@ class PTEVocabularyTrainer {
 }
 
 // Initialize the app when DOM is ready
+let pteApp;
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
-    window.pteApp = new PTEVocabularyTrainer();
+    pteApp = new PTEVocabularyTrainer();
+
+    // Register with new namespace (if available)
+    if (window.CCLApp) {
+      window.CCLApp.registerModule('pteApp', pteApp);
+    }
+
+    // Legacy compatibility - maintain existing global reference
+    window.pteApp = pteApp;
   });
 } else {
-  window.pteApp = new PTEVocabularyTrainer();
+  pteApp = new PTEVocabularyTrainer();
+
+  // Register with new namespace (if available)
+  if (window.CCLApp) {
+    window.CCLApp.registerModule('pteApp', pteApp);
+  }
+
+  // Legacy compatibility - maintain existing global reference
+  window.pteApp = pteApp;
 }
 
 // Export for module systems

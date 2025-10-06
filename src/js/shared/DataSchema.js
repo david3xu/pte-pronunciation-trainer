@@ -11,7 +11,7 @@ class DataSchema {
                 required: ['english'],
                 optional: ['difficulty', 'category', 'example', 'ipa_uk', 'ipa_us', 'phonetic_uk', 'phonetic_us', 'definition', 'phonetic', 'pronunciation', 'source', 'id'],
                 defaults: {
-                    difficulty: 'normal',
+                    difficulty: 'all',
                     category: 'general',
                     example: '',
                     definition: '',
@@ -123,7 +123,7 @@ class DataSchema {
         standardized.id = this.generateId(standardized.english);
 
         // Infer missing fields
-        if (!standardized.difficulty || standardized.difficulty === 'normal') {
+        if (!standardized.difficulty || standardized.difficulty === 'all') {
             standardized.difficulty = this.inferDifficulty(standardized.english);
         }
 

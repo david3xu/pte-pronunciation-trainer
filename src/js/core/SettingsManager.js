@@ -137,13 +137,13 @@ class SettingsManager {
         if (dependentKey === 'category') {
           return 'all-categories'; // Default category for any learning mode
         } else if (dependentKey === 'difficulty') {
-          return 'normal'; // All PTE terms are normal difficulty
+          return 'all'; // Show all difficulty levels
         }
         break;
 
       case 'category':
         if (dependentKey === 'difficulty') {
-          return 'normal'; // All PTE terms are normal difficulty
+          return 'all'; // Show all difficulty levels
         }
         break;
     }

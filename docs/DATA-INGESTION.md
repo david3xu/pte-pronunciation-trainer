@@ -29,9 +29,7 @@ Notes:
   - Add or update `data.learningModes` with a new entry:
     - `{ id, label, dataset }` where `dataset` matches the markdown base name.
   - If needed, add a label to `data.categories`.
-  - For pipeline input, either:
-    - Replace `pipeline.dataSources.primary` with the new `<dataset-id>-with-ipa.md`, or
-    - Extend the pipeline to accept multiple sources when creating merged modes.
+- Centralized dataset registry drives the pipeline build. Add entries under `pipeline.registry` only; no code changes required.
 
 ### Add a New Words Book (Codebase Update Steps)
 The project now supports multiple “books” (learning modes) without hardcoding. To add a new book end‑to‑end:
@@ -64,10 +62,20 @@ data: {
 }
 ```
 
-- pipeline extra sources (to build additional datasets in one run):
+- pipeline dataset registry (single source of truth):
 ```js
 pipeline: {
-  extraSources: [
+  registry: [
+    {
+      id: 'pte-fib-listening',
+      input: 'pte-fib-listening-with-ipa.md',
+      fallback: 'fib-listening-vocabulary.md',
+      output: 'pte-fib-listening-dataset.json',
+      category: 'pte-fib-listening',
+      description: 'PTE FIB Listening vocabulary with IPA',
+      sourceType: 'pte-fib-listening-with-ipa',
+      isDefault: true
+    },
     {
       id: 'pte-beginner',
       input: 'pte-beginner-vocabulary-with-ipa.md',
@@ -107,7 +115,7 @@ validation: {
 /data/processed/your-dataset-id.json
 ```
 
-4) Build and validate
+4) Build and validate (single command builds all registry datasets)
 ```bash
 npm run data:pte
 npm run validate
@@ -137,7 +145,7 @@ Notes:
 ### Frontend Integration
 - No code changes needed beyond `Config.js` for new modes.
 - `SettingsManager` exposes the new learning mode automatically.
-- `PTEVocabularyManager` loads the dataset path from config.
+- `PTEVocabularyManager` loads the dataset path from `data.paths.byMode[learningMode]`.
 
 ### Selecting Different “Vocabulary Books” in Settings
 In our app, each “book” maps to a `learningMode` entry in `Config.js`. To make a new book selectable:

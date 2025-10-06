@@ -1,7 +1,7 @@
 {
-  "name": "CCL Pronunciation Trainer",
-  "short_name": "CCL Trainer",
-  "description": "NAATI CCL Pronunciation Training App",
+  "name": "PTE Vocabulary Pronunciation Trainer",
+  "short_name": "PTE Trainer",
+  "description": "PTE FIB Listening Vocabulary Pronunciation Training App",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#1a202c",

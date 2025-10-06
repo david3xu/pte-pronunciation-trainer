@@ -158,9 +158,9 @@ const cleanText = ttsEngine.cleanTextForTTS("Hello, world!")
 ```
 
 #### Speech Rates
-- `Constants.SPEEDS.SLOW` (0.7)
-- `Constants.SPEEDS.NORMAL` (1.0)
-- `Constants.SPEEDS.FAST` (1.3)
+- `config.get('tts.speeds.slow')` (0.7)
+- `config.get('tts.speeds.normal')` (1.0)
+- `config.get('tts.speeds.fast')` (1.3)
 
 ---
 

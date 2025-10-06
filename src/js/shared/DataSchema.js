@@ -213,7 +213,8 @@ class DataSchema {
 
         // If we have conversation ID, use group-based categorization
         if (conversationId) {
-            return Constants.getCategoryFromDialogueId(conversationId);
+            // For PTE data, all terms are in the same category
+            return 'pte-fib-listening';
         }
 
         // Content-based categorization

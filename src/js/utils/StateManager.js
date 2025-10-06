@@ -2,25 +2,26 @@
 class StateManager {
     constructor() {
         this.storage = window.storage || new Storage();
+        this.config = window.appConfig || new AppConfig();
         this.state = {
             // Learning state
             currentWordIndex: 0,
             currentCategory: 'all-categories',
             currentDifficulty: 'all',
-            
+
             // User preferences
-            speed: String(Constants.SPEEDS.SLOW),
-            delay: String(Constants.DELAYS.DEFAULT_PAUSE),
+            speed: String(this.config.get('tts.speeds.slow')),
+            delay: String(this.config.get('tts.delays.normal')),
             repeat: 'once',
             voice: 'auto',
-            
+
             // UI state
             settingsPanelOpen: false,
-            
+
             // Session info
             lastSaved: Date.now()
         };
-        
+
         this.loadState();
     }
 
@@ -112,8 +113,8 @@ class StateManager {
             currentWordIndex: 0,
             currentCategory: 'all-categories',
             currentDifficulty: 'all',
-            speed: String(Constants.SPEEDS.SLOW),
-            delay: String(Constants.DELAYS.DEFAULT_PAUSE),
+            speed: String(this.config.get('tts.speeds.slow')),
+            delay: String(this.config.get('tts.delays.normal')),
             repeat: 'once',
             voice: 'auto',
             settingsPanelOpen: false,
@@ -125,6 +126,29 @@ class StateManager {
     // Export state for debugging
     exportState() {
         return JSON.stringify(this.state, null, 2);
+    }
+
+    /**
+     * Save a user preference
+     */
+    saveUserPreference(key, value) {
+        // Map setting keys to state properties
+        const keyMap = {
+            'category': 'currentCategory',
+            'difficulty': 'currentDifficulty',
+            'speed': 'speed',
+            'delay': 'delay',
+            'repeat': 'repeat',
+            'voice': 'voice',
+            'learningMode': 'learningMode'
+        };
+
+        const stateKey = keyMap[key];
+        if (stateKey && this.state.hasOwnProperty(stateKey)) {
+            this.state[stateKey] = value;
+            this.saveState();
+            console.log(`StateManager: Saved ${key} = ${value}`);
+        }
     }
 }
 

@@ -4,7 +4,7 @@
   "description": "A web-based pronunciation training application for PTE vocabulary",
   "main": "index.html",
   "scripts": {
-    "dev": "python3 -m http.server 3000",
+    "dev": "python3 -m http.server 3001",
     "data": "npm run data:pte",
     "data:pte": "node scripts/pte-data-pipeline.js",
     "build": "node scripts/build.js",

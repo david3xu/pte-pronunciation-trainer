@@ -56,6 +56,13 @@ class UIController {
         window.eventBus.on('progress:updated', (data) => {
             // Progress display is handled by ProgressTracker
         });
+
+        // Listen for settings changes
+        window.eventBus.on('settings:changed', (data) => {
+            console.log('UIController: Settings changed:', data.key, '=', data.value);
+            // Update UI based on settings changes
+            this.handleSettingsChange(data.key, data.value);
+        });
     }
 
     bindEventListeners() {
@@ -572,6 +579,37 @@ class UIController {
         this.setPronunciationPreference(newPreference);
         console.log(`Switched to ${newPreference} pronunciation`);
         return newPreference;
+    }
+
+    /**
+     * Handle settings changes
+     */
+    handleSettingsChange(key, value) {
+        switch (key) {
+            case 'category':
+                this.updateCategoryDisplay();
+                break;
+            case 'difficulty':
+                this.updateCategoryDisplay();
+                break;
+            case 'learningMode':
+                this.updateCategoryDisplay();
+                break;
+            case 'speed':
+                // Speed changes are handled by TTS engine
+                break;
+            case 'delay':
+                // Delay changes are handled by audio controls
+                break;
+            case 'repeat':
+                // Repeat mode changes are handled by audio controls
+                break;
+            case 'voice':
+                // Voice changes are handled by voice selector
+                break;
+            default:
+                console.log('UIController: Unknown setting changed:', key, value);
+        }
     }
 }
 

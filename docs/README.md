@@ -16,6 +16,7 @@ This directory contains comprehensive documentation for the PTE Pronunciation Tr
 - **[API.md](API.md)** - Complete API reference for all classes and methods
 - **[DEPLOYMENT.md](DEPLOYMENT.md)** - Deployment guide for various platforms
 - **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** - Common issues and solutions
+ - **[DATA-INGESTION.md](DATA-INGESTION.md)** - How to add new datasets (sources, config, pipeline)
 
 ### **📊 Data Documentation**
 - **[pte-fib-listening-with-ipa.md](../data/source/pte/vocabs/pte-fib-listening-with-ipa.md)** - Primary data source (914 terms with IPA)

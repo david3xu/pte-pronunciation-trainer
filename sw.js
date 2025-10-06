@@ -1,10 +1,10 @@
 // Service Worker for Background Operation and PWA Functionality
-const CACHE_NAME = 'pte-trainer-v11';
+const CACHE_NAME = 'pte-trainer-v12';
 
 // Detect if we're in development or production mode
-const isDevelopment = !self.location.hostname.includes('vercel') &&
-  !self.location.hostname.includes('netlify') &&
-  !self.location.hostname.includes('github');
+const isDevelopment = self.location.hostname === 'localhost' || 
+  self.location.hostname === '127.0.0.1' ||
+  self.location.hostname.includes('localhost');
 
 // Cache different files based on environment
 const urlsToCache = isDevelopment ? [
@@ -20,6 +20,7 @@ const urlsToCache = isDevelopment ? [
   '/src/js/utils/Storage.js',
   '/src/js/utils/StateManager.js',
   '/src/js/utils/CacheMigration.js',
+  '/src/js/core/SettingsManager.js',
   '/src/js/core/PTEVocabularyManager.js',
   '/src/js/core/ProgressTracker.js',
   '/src/js/data/extractors/PTETermsExtractor.js',

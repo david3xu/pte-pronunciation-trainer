@@ -638,12 +638,14 @@ class UIController {
         // Ensure we have vocabulary loaded
         const hasVocabulary = window.pteVocabularyManager.getTotalWordCount() > 0;
 
+        // Get centralized opacity values
+        const enabledOpacity = this.config.get('ui.opacity.enabled');
+        const disabledOpacity = this.config.get('ui.opacity.disabled');
+
         // Always show all three buttons for consistent layout
         if (nextBtn) {
             nextBtn.style.display = 'inline-block';
             nextBtn.disabled = !hasVocabulary;
-            const enabledOpacity = this.config.get('ui.opacity.enabled');
-            const disabledOpacity = this.config.get('ui.opacity.disabled');
             nextBtn.style.opacity = hasVocabulary ? enabledOpacity : disabledOpacity;
         }
         if (prevBtn) {

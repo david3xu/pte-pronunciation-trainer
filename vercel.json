@@ -1,6 +1,6 @@
 {
-  "buildCommand": "npm run vercel-build",
-  "outputDirectory": "dist",
+  "buildCommand": "node scripts/pte-data-pipeline.js",
+  "outputDirectory": ".",
   "headers": [
     {
       "source": "/data/processed/(.*)",

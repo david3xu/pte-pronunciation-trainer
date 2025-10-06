@@ -50,6 +50,33 @@ Notes:
 - `SettingsManager` exposes the new learning mode automatically.
 - `PTEVocabularyManager` loads the dataset path from config.
 
+### Selecting Different “Vocabulary Books” in Settings
+In our app, each “book” maps to a `learningMode` entry in `Config.js`. To make a new book selectable:
+
+1) Add a new learning mode in `src/js/shared/Config.js` under `data.learningModes`:
+```js
+// Example
+data: {
+  learningModes: [
+    { id: 'pte-fib-listening', label: '🎧 PTE FIB Listening', dataset: 'pte-fib-listening-with-ipa' },
+    { id: 'pte-fib-reading',   label: '📖 PTE FIB Reading',   dataset: 'pte-fib-reading-with-ipa' }
+  ]
+}
+```
+
+2) Ensure the dataset id corresponds to your processed markdown (the pipeline writes `data/processed/<dataset>.json`).
+
+3) The Settings dropdown will populate automatically:
+- `SettingsManager.getAvailableOptions('learningMode')` reads `data.learningModes` → populates Settings and the UI dropdown.
+- `UIController` listens to settings changes and calls `pteVocabularyManager.setLearningMode(newMode)`.
+- `PTEVocabularyManager` loads words for the selected mode and updates counts/filters.
+
+4) Optional: categories per book
+- If a book has its own category labels, add them under `data.categories` in `Config.js`.
+- The Settings panel will update category options based on the selected `learningMode` through `SettingsManager` events.
+
+That’s it: adding a `learningMode` entry is all that’s needed to make a new book appear and be selectable in Settings.
+
 ### Adding Multiple Datasets
 - Preferred: expose each dataset as its own learning mode.
 - Optional merged mode:

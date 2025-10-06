@@ -197,7 +197,8 @@ class DataSchema {
         const words = english.trim().split(/\s+/).length;
         const hasComplexTerms = /\b(comprehensive|administrative|implementation|coordination|infrastructure)\b/i.test(english);
 
-        if (words === 1 && english.length <= 8) return 'easy';
+        const easyConfig = this.config.get('dataProcessing.difficulty.easy');
+        if (words === 1 && english.length <= easyConfig.maxLength) return 'easy';
         if (words <= 2 && !hasComplexTerms) return 'easy';
         if (words <= 4 && !hasComplexTerms) return 'normal';
         return 'hard';

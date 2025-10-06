@@ -283,7 +283,8 @@ class UIController {
 
         // Audio dropdowns
         this.populateDropdown('speedSelect', 'speed', '0.7');
-        this.populateDropdown('delaySelect', 'delay', '2000');
+        const defaultDelay = this.config.get('tts.delays.normal');
+        this.populateDropdown('delaySelect', 'delay', String(defaultDelay));
         this.populateDropdown('repeatSelect', 'repeat', 'once');
         this.populateDropdown('voiceSelect', 'voice', 'auto');
     }
@@ -544,7 +545,8 @@ class UIController {
         const currentWord = window.pteVocabularyManager?.getCurrentWords()?.[window.pteVocabularyManager?.currentIndex]?.english;
         console.log('Current vocabulary term:', currentWord);
 
-        if (cleaned.length > 50) {
+        const maxLength = this.config.get('ui.text.maxLength');
+        if (cleaned.length > maxLength) {
             const sentences = cleaned.split(/[.!?]+/);
             console.log('Split into sentences:', sentences);
 
@@ -640,12 +642,14 @@ class UIController {
         if (nextBtn) {
             nextBtn.style.display = 'inline-block';
             nextBtn.disabled = !hasVocabulary;
-            nextBtn.style.opacity = hasVocabulary ? '1' : '0.5';
+            const enabledOpacity = this.config.get('ui.opacity.enabled');
+            const disabledOpacity = this.config.get('ui.opacity.disabled');
+            nextBtn.style.opacity = hasVocabulary ? enabledOpacity : disabledOpacity;
         }
         if (prevBtn) {
             prevBtn.style.display = 'inline-block';
             prevBtn.disabled = !hasVocabulary;
-            prevBtn.style.opacity = hasVocabulary ? '1' : '0.5';
+            prevBtn.style.opacity = hasVocabulary ? enabledOpacity : disabledOpacity;
         }
 
         if (window.audioControls.isPlaying && hasVocabulary) {
@@ -658,7 +662,7 @@ class UIController {
             // Update start button state
             if (startBtn) {
                 startBtn.disabled = !hasVocabulary;
-                startBtn.style.opacity = hasVocabulary ? '1' : '0.5';
+                startBtn.style.opacity = hasVocabulary ? enabledOpacity : disabledOpacity;
                 startBtn.textContent = hasVocabulary ? '▶️ PLAY' : '❌ NO VOCABULARY';
             }
         }
@@ -667,11 +671,11 @@ class UIController {
         if (hasVocabulary) {
             if (prevBtn) {
                 prevBtn.disabled = false;
-                prevBtn.style.opacity = '1';
+                prevBtn.style.opacity = enabledOpacity;
             }
             if (nextBtn) {
                 nextBtn.disabled = false;
-                nextBtn.style.opacity = '1';
+                nextBtn.style.opacity = enabledOpacity;
             }
         }
     }

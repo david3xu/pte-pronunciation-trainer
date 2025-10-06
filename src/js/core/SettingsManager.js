@@ -247,9 +247,9 @@ class SettingsManager {
         return this.config.get('data.difficulties').map(diff => ({
           id: diff,
           label: diff === 'all' ? '🌟 All Difficulties' :
-                 diff === 'normal' ? '🟡 Normal (436 terms)' :
-                 diff === 'hard' ? '🔴 Hard (411 terms)' :
-                 diff === 'easy' ? '🟢 Easy (38 terms)' :
+                 diff === 'normal' ? `🟡 Normal (${this.config.get('dataProcessing.termCounts.normal')} terms)` :
+                 diff === 'hard' ? `🔴 Hard (${this.config.get('dataProcessing.termCounts.hard')} terms)` :
+                 diff === 'easy' ? `🟢 Easy (${this.config.get('dataProcessing.termCounts.easy')} terms)` :
                  `🟡 ${diff.charAt(0).toUpperCase() + diff.slice(1)}`
         }));
 

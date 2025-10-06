@@ -126,6 +126,45 @@ class AppConfig {
                 fadeOutDuration: 200
             },
 
+            // ===== UI CONFIGURATION =====
+            ui: {
+                opacity: {
+                    enabled: '1',
+                    disabled: '0.5'
+                },
+                text: {
+                    maxLength: 50,
+                    sentenceSplitThreshold: 1
+                },
+                labels: {
+                    version: '1.0',
+                    exportFilename: 'ccl-trainer-settings.json'
+                }
+            },
+
+            // ===== DATA PROCESSING CONFIGURATION =====
+            dataProcessing: {
+                difficulty: {
+                    easy: {
+                        maxWords: 1,
+                        maxLength: 8
+                    },
+                    normal: {
+                        minWords: 2,
+                        maxWords: 3
+                    },
+                    hard: {
+                        minWords: 4
+                    }
+                },
+                termCounts: {
+                    normal: 436,
+                    hard: 411,
+                    easy: 38,
+                    total: 885
+                }
+            },
+
             // ===== BUILD CONFIGURATION =====
             build: {
                 jsFiles: [

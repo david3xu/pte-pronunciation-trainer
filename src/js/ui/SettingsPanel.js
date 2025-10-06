@@ -160,7 +160,7 @@ class SettingsPanel {
 
         // Add export metadata
         settings.exportDate = new Date().toISOString();
-        settings.version = '1.0';
+        settings.version = this.config.get('ui.labels.version');
 
         const dataStr = JSON.stringify(settings, null, 2);
         const dataBlob = new Blob([dataStr], { type: 'application/json' });
@@ -168,7 +168,7 @@ class SettingsPanel {
 
         const link = document.createElement('a');
         link.href = url;
-        link.download = 'ccl-trainer-settings.json';
+            link.download = this.config.get('ui.labels.exportFilename');
         link.click();
 
         URL.revokeObjectURL(url);

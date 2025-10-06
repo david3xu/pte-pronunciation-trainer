@@ -1,7 +1,7 @@
 // Cache migration utility for updating old localStorage data
 class CacheMigration {
     constructor() {
-        this.currentVersion = 4; // Version 4 forces clean initialization with new defaults
+        this.currentVersion = 5; // Version 5 forces clean initialization with new difficulty defaults
         this.versionKey = 'cache-version';
 
         // Mapping of old categories to new ones

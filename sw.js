@@ -1,5 +1,5 @@
 // Service Worker for Background Operation and PWA Functionality
-const CACHE_NAME = 'pte-trainer-v12';
+const CACHE_NAME = 'pte-trainer-v13';
 
 // Detect if we're in development or production mode
 const isDevelopment = self.location.hostname === 'localhost' ||
@@ -33,11 +33,28 @@ const urlsToCache = isDevelopment ? [
   '/data/processed/pte-fib-listening-dataset.json',
   '/manifest.json'
 ] : [
-  // Production mode - cache minified files
+  // Production mode - cache existing files only
   '/',
   '/index.html',
-  '/css/app.min.css',
-  '/js/app.min.js',
+  '/src/css/style.css',
+  '/src/js/shared/AppNamespace.js',
+  '/src/js/shared/Config.js',
+  '/src/js/shared/DataSchema.js',
+  '/src/js/shared/LegacyCompatibility.js',
+  '/src/js/utils/EventBus.js',
+  '/src/js/utils/Storage.js',
+  '/src/js/utils/StateManager.js',
+  '/src/js/utils/CacheMigration.js',
+  '/src/js/core/SettingsManager.js',
+  '/src/js/core/PTEVocabularyManager.js',
+  '/src/js/core/ProgressTracker.js',
+  '/src/js/data/extractors/PTETermsExtractor.js',
+  '/src/js/audio/TTSEngine.js',
+  '/src/js/audio/VoiceSelector.js',
+  '/src/js/audio/AudioControls.js',
+  '/src/js/ui/UIController.js',
+  '/src/js/ui/SettingsPanel.js',
+  '/src/js/core/PTEApp.js',
   '/data/processed/pte-fib-listening-dataset.json',
   '/manifest.json'
 ];

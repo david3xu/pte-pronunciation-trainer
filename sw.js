@@ -2,7 +2,7 @@
 const CACHE_NAME = 'pte-trainer-v12';
 
 // Detect if we're in development or production mode
-const isDevelopment = self.location.hostname === 'localhost' || 
+const isDevelopment = self.location.hostname === 'localhost' ||
   self.location.hostname === '127.0.0.1' ||
   self.location.hostname.includes('localhost');
 

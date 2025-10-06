@@ -10,6 +10,7 @@ class PTEVocabularyManager {
 
     // Store PTE datasets
     this.pteFibListeningDataset = null;
+    this.pteBeginnerDataset = null;
 
     // Initialize when DOM is ready
     if (document.readyState === 'loading') {
@@ -41,12 +42,20 @@ class PTEVocabularyManager {
       // Load configuration from centralized config
       const config = window.appConfig || new AppConfig();
       const datasetPath = config.get('data.paths.dataset');
+      const byMode = config.get('data.paths.byMode') || {};
 
       // Load PTE FIB listening dataset with cache-busting
       const cacheBuster = `?v=${Date.now()}`;
-      const pteFibResponse = await fetch(datasetPath + cacheBuster);
+      const pteFibResponse = await fetch((byMode['pte-fib-listening'] || datasetPath) + cacheBuster);
       this.pteFibListeningDataset = await pteFibResponse.json();
       console.log(`✅ Loaded ${this.pteFibListeningDataset.vocabulary.length} PTE FIB listening terms`);
+
+      // Load PTE Beginner dataset if configured
+      if (byMode['pte-beginner']) {
+        const beginnerResponse = await fetch(byMode['pte-beginner'] + cacheBuster);
+        this.pteBeginnerDataset = await beginnerResponse.json();
+        console.log(`✅ Loaded ${this.pteBeginnerDataset.vocabulary.length} PTE Beginner terms`);
+      }
 
       // Set initial learning mode and load words
       this.setLearningMode('pte-fib-listening');
@@ -74,6 +83,9 @@ class PTEVocabularyManager {
     switch (mode) {
       case 'pte-fib-listening':
         this.allWords = this.pteFibListeningDataset.vocabulary;
+        break;
+      case 'pte-beginner':
+        this.allWords = (this.pteBeginnerDataset && this.pteBeginnerDataset.vocabulary) || [];
         break;
       default:
         console.warn(`Unknown learning mode: ${mode}`);

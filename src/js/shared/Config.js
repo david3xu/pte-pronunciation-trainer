@@ -20,23 +20,39 @@ class AppConfig {
                 outputFiles: {
                     dataset: 'pte-fib-listening-dataset.json',
                     report: 'pte-processing-report.json'
-                }
+                },
+                extraSources: [
+                    {
+                        id: 'pte-beginner',
+                        input: 'pte-beginner-vocabulary-with-ipa.md',
+                        output: 'pte-beginner-vocabulary.json',
+                        category: 'pte-beginner',
+                        description: 'PTE Beginner high-frequency vocabulary with IPA',
+                        sourceType: 'pte-beginner-vocabulary-with-ipa'
+                    }
+                ]
             },
 
             // ===== DATA SOURCES CONFIGURATION =====
             data: {
                 paths: {
                     dataset: '/data/processed/pte-fib-listening-dataset.json',
+                    byMode: {
+                        'pte-fib-listening': '/data/processed/pte-fib-listening-dataset.json',
+                        'pte-beginner': '/data/processed/pte-beginner-vocabulary.json'
+                    },
                     source: 'data/source/pte/vocabs/',
                     processed: 'data/processed/',
                     reports: 'data/reports/'
                 },
                 categories: {
                     'all-categories': '🌟 All Categories',
-                    'pte-fib-listening': '🎧 FIB Listening'
+                    'pte-fib-listening': '🎧 FIB Listening',
+                    'pte-beginner': '📗 PTE Beginner'
                 },
                 learningModes: [
-                    { id: 'pte-fib-listening', label: '🎧 PTE FIB Listening', dataset: 'pte-fib-listening-with-ipa' }
+                    { id: 'pte-fib-listening', label: '🎧 PTE FIB Listening', dataset: 'pte-fib-listening-with-ipa' },
+                    { id: 'pte-beginner', label: '📗 PTE Beginner Vocabulary', dataset: 'pte-beginner-vocabulary-with-ipa' }
                 ],
                         difficulties: ['all', 'normal', 'hard', 'easy'] // All PTE terms with mixed difficulties
             },
@@ -198,7 +214,8 @@ class AppConfig {
             // ===== VALIDATION CONFIGURATION =====
             validation: {
                 requiredFiles: [
-                    'data/processed/pte-fib-listening-dataset.json'
+                    'data/processed/pte-fib-listening-dataset.json',
+                    'data/processed/pte-beginner-vocabulary.json'
                 ],
                 errorMessages: {
                     datasetNotFound: 'PTE vocabulary data file not found. Run "npm run data:pte" first.',

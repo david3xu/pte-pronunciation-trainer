@@ -124,6 +124,13 @@ class PTEDataPipeline {
         word = match[1].trim();
       }
 
+      // Remove zero-width characters and BOMs
+      word = word.replace(/[\u200B-\u200D\uFEFF]/g, '');
+
+      // Strip trailing mastery markers like "Not mastered" or "Mastered"
+      // Allow optional space or no space before the marker
+      word = word.replace(/\s*(Not\s*mastered|Mastered)$/i, '');
+
       // Skip if not a valid word (allow letters, spaces, hyphens, and apostrophes)
       if (!word || word.length < 2 || !/^[a-zA-Z\s'-]+$/.test(word)) {
         continue;

@@ -225,7 +225,7 @@ class PTEDataPipeline {
               description: entry.description,
               version: '1.0',
               categories: [entry.category],
-            hasIPA: !usedFallback
+              hasIPA: !usedFallback
             },
             vocabulary: unique
           };

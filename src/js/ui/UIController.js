@@ -256,7 +256,7 @@ class UIController {
                 const option = document.createElement('option');
                 option.value = difficulty.id;
                 option.textContent = difficulty.label;
-                if (difficulty.id === 'normal') option.selected = true;
+                if (difficulty.id === 'all') option.selected = true;
                 difficultySelect.appendChild(option);
             });
         }
@@ -785,8 +785,8 @@ class UIController {
             option.value = difficulty;
 
             // Set appropriate labels based on our PTE data
-            if (difficulty === 'normal') {
-                option.textContent = '🟡 Normal (All PTE Terms)';
+            if (difficulty === 'all') {
+                option.textContent = '🌟 All Difficulties';
                 option.selected = true; // Default selection
             } else {
                 option.textContent = `🟡 ${difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}`;

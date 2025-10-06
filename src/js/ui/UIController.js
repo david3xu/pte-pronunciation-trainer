@@ -323,7 +323,7 @@ class UIController {
 
         if (!categorySelect || !window.pteVocabularyManager) return;
 
-        const categoryLabels = window.appConfig?.config?.vocabulary?.categories || {};
+        const categoryLabels = this.config.get('data.categories') || {};
 
         // Update all option texts with current difficulty filter
         Array.from(categorySelect.options).forEach(option => {

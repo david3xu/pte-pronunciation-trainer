@@ -22,7 +22,21 @@ class StateManager {
             lastSaved: Date.now()
         };
 
+        // Check if cache migration is needed before loading state
+        this.checkCacheMigration();
         this.loadState();
+    }
+
+    // Check if cache migration is needed
+    checkCacheMigration() {
+        const currentVersion = this.storage.getItem('cache-version') || 1;
+        const requiredVersion = 5; // Match CacheMigration version
+        
+        if (currentVersion < requiredVersion) {
+            console.log('StateManager: Cache migration needed, clearing old state');
+            this.storage.removeItem('app-state');
+            this.storage.setItem('cache-version', requiredVersion);
+        }
     }
 
     // Load state from localStorage

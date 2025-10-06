@@ -31,7 +31,7 @@ class StateManager {
     checkCacheMigration() {
         const currentVersion = this.storage.getItem('cache-version') || 1;
         const requiredVersion = 5; // Match CacheMigration version
-        
+
         if (currentVersion < requiredVersion) {
             console.log('StateManager: Cache migration needed, clearing old state');
             this.storage.removeItem('app-state');

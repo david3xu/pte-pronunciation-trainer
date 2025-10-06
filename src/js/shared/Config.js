@@ -72,8 +72,8 @@ class AppConfig {
                     dataset: '/data/processed/pte-fib-listening-dataset.json',
                     byMode: {
                         'pte-fib-listening': '/data/processed/pte-fib-listening-dataset.json',
-                    'pte-beginner': '/data/processed/pte-beginner-vocabulary.json',
-                    'pte-intermediate': '/data/processed/pte-intermediate-vocabulary.json'
+                        'pte-beginner': '/data/processed/pte-beginner-vocabulary.json',
+                        'pte-intermediate': '/data/processed/pte-intermediate-vocabulary.json'
                     },
                     source: 'data/source/pte/vocabs/',
                     processed: 'data/processed/',

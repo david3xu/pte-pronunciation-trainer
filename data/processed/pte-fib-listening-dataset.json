@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generated": "2025-10-06T07:54:07.453Z",
+    "generated": "2025-10-06T13:17:58.951Z",
     "totalTerms": 885,
     "source": "pte-fib-listening-with-ipa",
-    "description": "PTE FIB Listening vocabulary for pronunciation practice with IPA guides",
-    "version": "2.0",
+    "description": "PTE FIB Listening vocabulary with IPA",
+    "version": "1.0",
     "categories": [
       "pte-fib-listening"
     ],

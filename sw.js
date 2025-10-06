@@ -5,8 +5,7 @@ const urlsToCache = [
   '/index.html',
   '/css/app.min.css',
   '/js/app.min.js',
-  '/data/processed/resume-terms-dataset.json',
-  '/data/processed/aiml-terms-dataset.json'
+  '/data/processed/pte-fib-listening-dataset.json'
 ];
 
 // Install Service Worker and Cache Resources

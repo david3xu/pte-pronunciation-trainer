@@ -1,8 +1,10 @@
 // AudioControls - Play/pause/repeat functionality and timing
 class AudioControls {
     constructor() {
+        // Load configuration from centralized config
+        this.config = window.appConfig || new AppConfig();
         this.isPlaying = false;
-        this.delay = Constants.DELAYS.DEFAULT_PAUSE; // Default pause between words
+        this.delay = this.config.get('tts.delays.normal'); // Default pause between words
         this.repeatMode = 'once';
         this.currentIndex = 0;
         this.autoPlayTimeout = null;
@@ -310,7 +312,7 @@ class AudioControls {
     }
 
     setDelay(delay) {
-        this.delay = parseInt(delay) || Constants.DELAYS.DEFAULT_PAUSE;
+        this.delay = parseInt(delay) || this.config.get('tts.delays.normal');
 
         // Emit delay change event
         window.eventBus.emit('audioControls:delayChanged', {

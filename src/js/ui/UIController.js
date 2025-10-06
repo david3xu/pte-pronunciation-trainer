@@ -2,6 +2,10 @@
 class UIController {
     constructor() {
         this.initialized = false;
+        // Load configuration from centralized config
+        this.config = window.appConfig || new AppConfig();
+        this.pronunciationPreference = 'british'; // Default to British
+        this.currentWordPronunciations = null; // Store current word's pronunciations
         this.setupEventListeners();
     }
 
@@ -42,7 +46,7 @@ class UIController {
         window.eventBus.on('tts:speakingStarted', (data) => {
             // Get current word and index from audio controls for accurate sync
             const currentIndex = window.audioControls.getCurrentIndex();
-            const currentWord = window.vocabularyManager.getCurrentWord(currentIndex);
+            const currentWord = window.pteVocabularyManager.getCurrentWord(currentIndex);
             if (currentWord) {
                 this.displayWord(currentWord, currentIndex);
             }
@@ -57,7 +61,7 @@ class UIController {
     bindEventListeners() {
         // Category selection
         document.getElementById('categorySelect').addEventListener('change', (e) => {
-            window.vocabularyManager.loadCategory(e.target.value);
+            window.pteVocabularyManager.setCategory(e.target.value);
             // Save category preference
             if (window.settingsPanel) {
                 window.settingsPanel.saveSetting('category', e.target.value);
@@ -66,7 +70,7 @@ class UIController {
 
         // Difficulty selection
         document.getElementById('difficultySelect').addEventListener('change', (e) => {
-            window.vocabularyManager.setDifficulty(e.target.value);
+            window.pteVocabularyManager.setDifficulty(e.target.value);
             this.updateCategoryDisplay(); // Update counts in category selector and context bar
             // Save difficulty preference
             if (window.settingsPanel) {
@@ -77,7 +81,7 @@ class UIController {
         // Learning mode selection
         document.getElementById('learningModeSelect').addEventListener('change', async (e) => {
             const newMode = e.target.value;
-            await window.vocabularyManager.setLearningMode(newMode);
+            await window.pteVocabularyManager.setLearningMode(newMode);
             this.updateCategoryDisplay(); // Update UI for new mode
             console.log(`Learning mode changed to: ${newMode}`);
 
@@ -152,6 +156,19 @@ class UIController {
             this.updateCategoryDisplay();
         });
 
+        // Pronunciation toggle button
+        const pronunciationToggleBtn = document.getElementById('pronunciationToggleBtn');
+        if (pronunciationToggleBtn) {
+            pronunciationToggleBtn.addEventListener('click', () => {
+                const newPreference = this.togglePronunciation();
+                // Update button icon using configurable flags
+                const britishFlag = this.config.get('ui.elements.pronunciationToggle.british');
+                const americanFlag = this.config.get('ui.elements.pronunciationToggle.american');
+                pronunciationToggleBtn.textContent = newPreference === 'british' ? britishFlag : americanFlag;
+                pronunciationToggleBtn.title = `Current: ${newPreference === 'british' ? 'British' : 'American'} pronunciation`;
+            });
+        }
+
         this.updateCategoryDisplay(); // Initial update
     }
 
@@ -159,21 +176,22 @@ class UIController {
         const categorySelect = document.getElementById('categorySelect');
         const categoryDisplay = document.getElementById('categoryDisplay');
 
-        if (!categorySelect || !window.vocabularyManager.categoryCounts) return;
+        if (!categorySelect || !window.pteVocabularyManager) return;
 
-        const categoryLabels = window.vocabularyManager.categoryLabels;
+        const categoryLabels = window.appConfig?.config?.vocabulary?.categories || {};
 
         // Update all option texts with current difficulty filter
         Array.from(categorySelect.options).forEach(option => {
             const category = option.value;
             const label = categoryLabels[category];
 
-            if (label && window.vocabularyManager.categoryCounts[category]) {
-                const count = window.vocabularyManager.categoryCounts[category][window.vocabularyManager.currentDifficulty] || 0;
+            if (label) {
+                const currentWords = window.pteVocabularyManager.getCurrentWords();
+                const count = currentWords.length;
                 let suffix = 'words';
-                if (window.vocabularyManager.currentDifficulty !== 'all') {
-                    const emoji = { easy: '🟢', normal: '🟡', hard: '🔴' }[window.vocabularyManager.currentDifficulty] || '';
-                    suffix = `${emoji} ${window.vocabularyManager.currentDifficulty}`;
+                if (window.pteVocabularyManager.getCurrentDifficulty() !== 'all') {
+                    const emoji = { easy: '🟢', normal: '🟡', hard: '🔴' }[window.pteVocabularyManager.getCurrentDifficulty()] || '';
+                    suffix = `${emoji} ${window.pteVocabularyManager.getCurrentDifficulty()}`;
                 }
                 option.textContent = `${label} (${count} ${suffix})`;
             }
@@ -181,8 +199,8 @@ class UIController {
 
         // Update the context bar display with current category name
         if (categoryDisplay) {
-            const currentCategoryName = categoryLabels[window.vocabularyManager.currentCategory] || window.vocabularyManager.currentCategory;
-            console.log(`Updating context bar display: ${window.vocabularyManager.currentCategory} → ${currentCategoryName}`);
+            const currentCategoryName = categoryLabels[window.pteVocabularyManager.getCurrentCategory()] || window.pteVocabularyManager.getCurrentCategory();
+            console.log(`Updating context bar display: ${window.pteVocabularyManager.getCurrentCategory()} → ${currentCategoryName}`);
             categoryDisplay.textContent = currentCategoryName;
         }
     }
@@ -201,62 +219,34 @@ class UIController {
             ipaOnly = british.ipa ? `/${british.ipa}/` : '';
             console.log('Using pronunciationGuide (British):', { ipaOnly, phoneticPlain });
         }
+        // PTE terms: Use pronunciation structure with British/American IPA
+        else if (word.pronunciation && word.pronunciation.british && word.pronunciation.american) {
+            const british = word.pronunciation.british;
+            const american = word.pronunciation.american;
+
+            // Check if user prefers American pronunciation
+            const useAmerican = this.getPronunciationPreference() === 'american';
+            const selected = useAmerican ? american : british;
+
+            phoneticPlain = selected.phonetic || '';
+            ipaOnly = selected.ipa ? `/${selected.ipa}/` : '';
+            console.log(`Using PTE pronunciation (${useAmerican ? 'American' : 'British'}):`, { ipaOnly, phoneticPlain, british, american });
+
+            // Store both pronunciations for toggle functionality
+            this.currentWordPronunciations = { british, american };
+        }
         // NEW: Direct ipa and phonetic fields from unified pipeline
         else if (word.ipa || word.phonetic) {
             phoneticPlain = word.phonetic || '';
             ipaOnly = word.ipa ? `/${word.ipa}/` : '';
             console.log('Using direct ipa/phonetic fields:', { ipaOnly, phoneticPlain });
         }
-        // AI/ML terms: Extract pronunciation from pronunciation field
-        else if (word.source === 'ai-ml-pronunciation-terms' && word.pronunciation) {
-            console.log('Processing AI/ML term pronunciation:', word.pronunciation);
-            // Pronunciation format: "/IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**"
-            // Use US pronunciation (second part) if available, otherwise UK (first part)
-            const parts = word.pronunciation.split('|');
-            console.log('Pronunciation parts:', parts);
-            const usPronunciation = parts.length > 1 ? parts[1].trim() : parts[0].trim();
-            console.log('Selected pronunciation part:', usPronunciation);
-
-            const ipaMatch = usPronunciation.match(/\/([^\/]+)\//);
-            const phoneticMatch = usPronunciation.match(/\*\*([^*]+)\*\*/);
-            ipaOnly = ipaMatch ? `/${ipaMatch[1]}/` : '';
-            phoneticPlain = phoneticMatch ? phoneticMatch[1] : '';
-            console.log('Extracted pronunciation:', { ipaOnly, phoneticPlain, ipaMatch, phoneticMatch });
-
-            // Force display of pronunciation elements for AI/ML terms
-            console.log('Forcing pronunciation display for AI/ML term');
+        // Legacy support for old data formats (can be removed in future versions)
+        else if (word.source && (word.source.includes('legacy') || word.source.includes('resume') || word.source.includes('aiml'))) {
+            console.warn('Legacy data format detected, consider updating to PTE format');
+            // Minimal fallback handling for any remaining legacy data
         }
-        // LEGACY: Check if this is from vocabulary-clean dataset with direct pronunciation data
-        else if (word.source === 'vocabulary-clean' && word.ukPronunciation) {
-            // Extract IPA and phonetic from UK pronunciation field
-            const ukPron = word.ukPronunciation;
-            const ipaMatch = ukPron.match(/\/([^\/]+)\//);
-            const phoneticMatch = ukPron.match(/\*\*([^*]+)\*\*/);
-            ipaOnly = ipaMatch ? `/${ipaMatch[1]}/` : '';
-            phoneticPlain = phoneticMatch ? phoneticMatch[1] : '';
-            console.log('Using legacy vocabulary-clean pronunciation data:', { ipaOnly, phoneticPlain });
-        }
-        // LEGACY: Add support for resume-terms dataset (britishIPA/americanIPA + phonetics)
-        else if (word.source === 'resume-terms' && (word.britishIPA || word.americanIPA)) {
-            // Prefer British IPA for display; fall back to American
-            if (word.britishIPA) {
-                ipaOnly = `/${word.britishIPA}/`;
-                if (word.britishPhonetic) phoneticPlain = word.britishPhonetic;
-            } else if (word.americanIPA) {
-                ipaOnly = `/${word.americanIPA}/`;
-                if (word.americanPhonetic) phoneticPlain = word.americanPhonetic;
-            }
-        }
-        // Fallback to pronunciation database
-        else if (window.pronunciationDB) {
-            const ukPron = window.pronunciationDB.getPronunciationFromVocabulary(word.english, 'uk');
-            if (ukPron) {
-                const ipaMatch = ukPron.match(/\/([^\/]+)\//);
-                const phoneticMatch = ukPron.match(/\*\*([^*]+)\*\*/);
-                ipaOnly = ipaMatch ? `/${ipaMatch[1]}/` : '';
-                phoneticPlain = phoneticMatch ? phoneticMatch[1] : '';
-            }
-        }
+        // No fallback needed - PTE dataset contains all pronunciation data
 
         // Update phonetic (top)
         const phoneticElement = document.getElementById('phoneticSpelling');
@@ -329,9 +319,9 @@ class UIController {
         console.log('Example debug - word.definition:', word.definition ? 'EXISTS' : 'MISSING');
         console.log('Example debug - word keys:', Object.keys(word));
 
-        // Special handling for AI/ML terms with definitions
-        if (exampleElement && word.source === 'ai-ml-pronunciation-terms' && word.definition) {
-            console.log('Showing definition for AI/ML term:', word.definition);
+        // Special handling for terms with definitions (PTE format)
+        if (exampleElement && word.definition) {
+            console.log('Showing definition for term:', word.definition);
             console.log('Word source:', word.source);
             console.log('Word definition exists:', !!word.definition);
 
@@ -373,7 +363,7 @@ class UIController {
         }
 
         // Update progress display
-        const totalWords = window.vocabularyManager.getTotalWords();
+        const totalWords = window.pteVocabularyManager.getTotalWordCount();
         window.progressTracker.updateProgress(index, totalWords, word);
 
         console.log(`Displayed word ${index + 1}/${totalWords}: "${word.english}"`);
@@ -381,7 +371,7 @@ class UIController {
 
     displayFirstWord() {
         // Display the first word when vocabulary source changes
-        const firstWord = window.vocabularyManager.getCurrentWord(0);
+        const firstWord = window.pteVocabularyManager.getCurrentWord(0);
         if (firstWord) {
             this.displayWord(firstWord, 0);
         }
@@ -407,7 +397,7 @@ class UIController {
         console.log('Original sentence length:', cleaned.length, '- Content:', cleaned);
 
         // Get the current vocabulary term to ensure it's included in the displayed sentence
-        const currentWord = window.vocabularyManager?.currentWords?.[window.vocabularyManager?.currentIndex]?.english;
+        const currentWord = window.pteVocabularyManager?.getCurrentWords()?.[window.pteVocabularyManager?.currentIndex]?.english;
         console.log('Current vocabulary term:', currentWord);
 
         if (cleaned.length > 50) {
@@ -467,11 +457,11 @@ class UIController {
     updateUI() {
         // Initial word display
         const currentIndex = window.audioControls.getCurrentIndex();
-        const currentWord = window.vocabularyManager.getCurrentWord(currentIndex);
+        const currentWord = window.pteVocabularyManager.getCurrentWord(currentIndex);
 
         if (currentWord) {
             this.displayWord(currentWord, currentIndex);
-        } else if (window.vocabularyManager.getTotalWords() === 0) {
+        } else if (window.pteVocabularyManager.getTotalWordCount() === 0) {
             window.progressTracker.updateStatus('No words available');
         }
 
@@ -500,7 +490,7 @@ class UIController {
         const prevBtn = document.getElementById('prevBtn');
 
         // Ensure we have vocabulary loaded
-        const hasVocabulary = window.vocabularyManager.getTotalWords() > 0;
+        const hasVocabulary = window.pteVocabularyManager.getTotalWordCount() > 0;
 
         // Always show all three buttons for consistent layout
         if (nextBtn) {
@@ -553,6 +543,35 @@ class UIController {
 
     hideLoadingState() {
         window.progressTracker.updateStatus('Ready');
+    }
+
+    /**
+     * Get pronunciation preference (british or american)
+     */
+    getPronunciationPreference() {
+        return this.pronunciationPreference || 'british';
+    }
+
+    /**
+     * Set pronunciation preference
+     */
+    setPronunciationPreference(preference) {
+        this.pronunciationPreference = preference;
+        // Update current word display if we have pronunciations available
+        if (this.currentWordPronunciations && this.currentWord) {
+            this.displayWord(this.currentWord, this.currentIndex);
+        }
+    }
+
+    /**
+     * Toggle between British and American pronunciation
+     */
+    togglePronunciation() {
+        const current = this.getPronunciationPreference();
+        const newPreference = current === 'british' ? 'american' : 'british';
+        this.setPronunciationPreference(newPreference);
+        console.log(`Switched to ${newPreference} pronunciation`);
+        return newPreference;
     }
 }
 

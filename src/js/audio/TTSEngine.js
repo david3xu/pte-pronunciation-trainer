@@ -1,7 +1,9 @@
 // TTSEngine - Text-to-speech synthesis functionality
 class TTSEngine {
     constructor() {
-        this.speechRate = Constants.SPEEDS.SLOW;
+        // Load configuration from centralized config
+        this.config = window.appConfig || new AppConfig();
+        this.speechRate = this.config.get('tts.speeds.slow');
         this.currentRepeatCount = 0;
         this.targetRepeats = 2;
     }
@@ -24,11 +26,11 @@ class TTSEngine {
             // Get pronunciation rate based on repeat count for progressive learning
             let pronunciationRate;
             if (this.currentRepeatCount === 0) {
-                pronunciationRate = Constants.SPEEDS.SLOW; // Always slow for first pronunciation
+                pronunciationRate = this.config.get('tts.speeds.slow'); // Always slow for first pronunciation
             } else if (this.currentRepeatCount === 1) {
-                pronunciationRate = Constants.SPEEDS.NORMAL; // Always normal for second pronunciation
+                pronunciationRate = this.config.get('tts.speeds.normal'); // Always normal for second pronunciation
             } else {
-                pronunciationRate = Constants.SPEEDS.FAST; // Faster for third+ pronunciations
+                pronunciationRate = this.config.get('tts.speeds.fast'); // Faster for third+ pronunciations
             }
 
             // For vocabulary-clean mode, use UK pronunciation for first repeat, US for second
@@ -63,7 +65,7 @@ class TTSEngine {
 
             if (hasExample && shouldSpeakExample && exampleElement && exampleElement.style.display !== 'none') {
                 // Add small pause between term and sentence
-                await new Promise(resolve => setTimeout(resolve, Constants.DELAYS.TTS_VOICE_READY_DELAY));
+                await new Promise(resolve => setTimeout(resolve, this.config.get('tts.delays.voiceReady')));
 
                 // Highlight example sentence during speech
                 if (exampleElement) {
@@ -236,7 +238,7 @@ class TTSEngine {
         window.progressTracker.updateStatus(`🔊 Please read aloud: "${text}"`);
         setTimeout(() => {
             window.progressTracker.updateStatus('Text-to-speech not available in this browser');
-        }, Constants.DELAYS.TTS_RESET_TIMEOUT);
+        }, this.config.get('tts.delays.resetTimeout'));
     }
 
     enableBackgroundAudio() {
@@ -348,7 +350,7 @@ class TTSEngine {
     }
 
     setSpeechRate(rate) {
-        this.speechRate = parseFloat(rate) || Constants.SPEEDS.NORMAL;
+        this.speechRate = parseFloat(rate) || this.config.get('tts.speeds.normal');
 
         // Emit rate change event
         window.eventBus.emit('tts:rateChanged', {

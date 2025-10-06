@@ -7,6 +7,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const AppConfig = require('../src/js/shared/Config.js');
 
 class ValidationError extends Error {
     constructor(message, category, index) {
@@ -19,6 +20,14 @@ class ValidationError extends Error {
 
 class DataValidator {
     constructor() {
+        // Load centralized configuration
+        const appConfig = new AppConfig();
+        this.config = {
+            requiredFiles: appConfig.get('validation.requiredFiles'),
+            errorMessages: appConfig.get('validation.errorMessages'),
+            reportsDir: appConfig.get('pipeline.reportsDir')
+        };
+
         this.errors = [];
         this.warnings = [];
         this.stats = {
@@ -34,11 +43,15 @@ class DataValidator {
         console.log('🔍 Starting data validation...\n');
 
         try {
-            // Check if vocabulary data exists
-            const vocabPath = 'data/processed/professional-terms-dataset.json';
-            if (!fs.existsSync(vocabPath)) {
-                throw new Error('Professional vocabulary data file not found. Run "npm run data:resume" first.');
+            // Check if required files exist
+            for (const filePath of this.config.requiredFiles) {
+                if (!fs.existsSync(filePath)) {
+                    throw new Error(this.config.errorMessages.datasetNotFound);
+                }
             }
+
+            // Use first required file as primary dataset
+            const vocabPath = this.config.requiredFiles[0];
 
             // Load vocabulary data from JSON file
             const fullPath = path.resolve(vocabPath);
@@ -230,7 +243,7 @@ class DataValidator {
                 if ((term.definition && existing.definition &&
                     term.definition !== existing.definition) ||
                     (term.ipa_uk && existing.ipa_uk &&
-                    term.ipa_uk !== existing.ipa_uk)) {
+                        term.ipa_uk !== existing.ipa_uk)) {
 
                     globalDuplicates++;
                     this.warnings.push(
@@ -312,8 +325,8 @@ class DataValidator {
             status: this.errors.length === 0 ? 'passed' : 'failed'
         };
 
-        // Save report in a reports directory
-        const reportsDir = 'reports';
+        // Save report using configured directory
+        const reportsDir = this.config.reportsDir;
         if (!fs.existsSync(reportsDir)) {
             fs.mkdirSync(reportsDir, { recursive: true });
         }

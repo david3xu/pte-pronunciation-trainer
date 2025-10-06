@@ -27,8 +27,9 @@ class VoiceSelector {
             }
         }
 
-        // ONLY MALE VOICES - Use centralized priority list from Constants
-        const priorityNames = Constants.VOICES.PRIORITY_LIST;
+        // ONLY MALE VOICES - Use centralized priority list from config
+        const config = window.appConfig || new AppConfig();
+        const priorityNames = [config.get('tts.voices.default'), ...config.get('tts.voices.fallbacks')];
 
         // First try exact priority by name within available voices
         for (const preferredName of priorityNames) {
@@ -97,9 +98,13 @@ class VoiceSelector {
 
     getCuratedVoiceInfo(voiceName) {
         // ONLY MALE VOICES - NO FEMALE VOICES ALLOWED
+        const config = window.appConfig || new AppConfig();
+        const defaultVoice = config.get('tts.voices.default');
+        const fallbackVoices = config.get('tts.voices.fallbacks');
+
         const curatedVoices = [
             { name: 'Microsoft James - English (Australia)', fallbacks: ['Microsoft James', 'James'] },
-            { name: 'Google UK English Male', fallbacks: ['Google UK English Male'] },
+            { name: defaultVoice, fallbacks: [defaultVoice] },
             { name: 'Alex (Enhanced)', fallbacks: ['Alex'] },
             { name: 'Daniel (Enhanced)', fallbacks: ['Daniel'] }
             // REMOVED ALL FEMALE VOICES: Catherine, Karen, etc.
@@ -120,9 +125,12 @@ class VoiceSelector {
         }
 
         // ONLY MALE VOICES - NO FEMALE VOICES IN DROPDOWN
+        const config = window.appConfig || new AppConfig();
+        const defaultVoice = config.get('tts.voices.default');
+
         const curatedVoices = [
             { name: 'Microsoft James - English (Australia)', fallbacks: ['Microsoft James', 'James'], flag: '🇦🇺', gender: '♂️' },
-            { name: 'Google UK English Male', fallbacks: ['Google UK English Male'], flag: '🇬🇧', gender: '♂️' },
+            { name: defaultVoice, fallbacks: [defaultVoice], flag: '🇬🇧', gender: '♂️' },
             { name: 'Alex (Enhanced)', fallbacks: ['Alex'], flag: '🇺🇸', gender: '♂️' },
             { name: 'Daniel (Enhanced)', fallbacks: ['Daniel'], flag: '🇺🇸', gender: '♂️' }
             // REMOVED ALL FEMALE VOICES FROM DROPDOWN

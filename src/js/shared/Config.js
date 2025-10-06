@@ -1,96 +1,78 @@
 /**
  * Centralized Configuration Management
- * Consolidates all app configuration in one place
+ * ALL configuration values in one place - NO hardcoded values elsewhere
  */
 
 class AppConfig {
     constructor() {
-        // Define constants inline since Constants.js was removed
-        const CONSTANTS = {
-            VOICES: {
-                DEFAULT: 'Google UK English Male',
-                FALLBACK_VOICES: [
-                    'Microsoft James (en-AU)',
-                    'Google UK English Female',
-                    'Microsoft George (en-GB)',
-                    'Google US English Female'
-                ]
-            },
-            DELAYS: {
-                SHORT_PAUSE: 1000,
-                NORMAL_PAUSE: 2000,
-                LONG_PAUSE: 3000,
-                EXTENDED_PAUSE: 4000
-            },
-            DATA: {
-                FULL_PATHS: {
-                    RESUME_TERMS: '/data/processed/resume-terms-dataset.json',
-                    AIML_TERMS: '/data/processed/aiml-terms-dataset.json',
-                    PROFESSIONAL_TERMS: '/data/processed/professional-terms-dataset.json'
+        // COMPREHENSIVE CONFIGURATION - ALL VALUES HERE
+        this.config = {
+            // ===== DATA PIPELINE CONFIGURATION =====
+            pipeline: {
+                inputDir: 'data/source/pte',
+                outputDir: 'data',
+                reportsDir: 'data/reports',
+                dataSources: {
+                    primary: 'pte-fib-listening-with-ipa.md',
+                    fallback: 'fib-listening-vocabulary.md',
+                    subdirectory: 'vocabs'
+                },
+                outputFiles: {
+                    dataset: 'pte-fib-listening-dataset.json',
+                    report: 'pte-processing-report.json'
                 }
             },
-            PROFESSIONAL_CATEGORIES: {
-                'all-categories': '🌟 All Categories',
-                'foundation-terms': '🧠 Foundation Terms',
-                'essential-production-terms': '⚙️ Production Terms',
-                'agent-automation-terms': '🤖 Agent & Automation',
-                'model-training-data': '📊 Model Training',
-                'explainability-trust': '🔍 Explainability & Trust',
-                'mlops-production': '🚀 MLOps & Production',
-                'natural-language-processing': '📝 NLP',
-                'computer-vision': '👁️ Computer Vision',
-                'model-types-architectures': '📐 Model Architectures',
-                'optimization-efficiency': '⚡ Optimization',
-                'safety-governance': '🛡️ Safety & Governance',
-                'performance-metrics': '📈 Performance Metrics',
-                'infrastructure-deployment': '🏗️ Infrastructure',
-                'collaboration-development': '👥 Collaboration',
-                'current-trends': '🚀 2025 Trends'
-            }
-        };
 
-        this.config = {
-            // TTS Configuration
+            // ===== DATA SOURCES CONFIGURATION =====
+            data: {
+                paths: {
+                    dataset: '/data/processed/pte-fib-listening-dataset.json',
+                    source: 'data/source/pte/vocabs/',
+                    processed: 'data/processed/',
+                    reports: 'data/reports/'
+                },
+                categories: {
+                    'all-categories': '🌟 All Categories',
+                    'pte-fib-listening': '🎧 FIB Listening'
+                },
+                learningModes: [
+                    { id: 'pte-fib-listening', label: '🎧 PTE FIB Listening', dataset: 'pteFibListening' }
+                ],
+                difficulties: ['easy', 'normal', 'hard']
+            },
+
+            // ===== TTS CONFIGURATION =====
             tts: {
-                defaultVoice: CONSTANTS.VOICES.DEFAULT,
-                fallbackVoices: CONSTANTS.VOICES.FALLBACK_VOICES,
+                voices: {
+                    default: 'Google UK English Male',
+                    fallbacks: [
+                        'Microsoft James (en-AU)',
+                        'Google UK English Female',
+                        'Microsoft George (en-GB)',
+                        'Google US English Female'
+                    ]
+                },
                 speeds: {
                     slow: 0.7,
                     normal: 1.0,
                     fast: 1.3
                 },
                 delays: {
-                    short: CONSTANTS.DELAYS.SHORT_PAUSE,
-                    normal: CONSTANTS.DELAYS.NORMAL_PAUSE,
-                    long: CONSTANTS.DELAYS.LONG_PAUSE,
-                    extended: CONSTANTS.DELAYS.EXTENDED_PAUSE
+                    short: 1000,
+                    normal: 2000,
+                    long: 3000,
+                    extended: 4000,
+                    voiceReady: 100,
+                    resetTimeout: 5000
                 },
                 repeatModes: ['once', 'individual', 'intensive', 'loop']
             },
 
-            // Vocabulary Configuration
-            vocabulary: {
-                learningModes: [
-                    { id: 'resume-terms', label: '💼 Resume Terms', dataset: 'resumeTerms' },
-                    { id: 'aiml-terms', label: '🤖 AI/ML Terms', dataset: 'aimlTerms' },
-                    { id: 'professional-terms', label: '🌟 All Professional Terms', dataset: 'professionalTerms' }
-                ],
-                difficulties: ['easy', 'normal', 'hard'],
-                categories: CONSTANTS.PROFESSIONAL_CATEGORIES
-            },
-
-            // Data Sources Configuration
-            dataSources: {
-                resumeTerms: CONSTANTS.DATA.FULL_PATHS.RESUME_TERMS,
-                aimlTerms: CONSTANTS.DATA.FULL_PATHS.AIML_TERMS,
-                professionalTerms: CONSTANTS.DATA.FULL_PATHS.PROFESSIONAL_TERMS
-            },
-
-            // UI Configuration
+            // ===== UI CONFIGURATION =====
             ui: {
                 themes: ['light', 'dark', 'auto'],
                 shortcuts: {
-                    playPause: ' ', // Space
+                    playPause: ' ',
                     previous: 'ArrowLeft',
                     next: 'ArrowRight',
                     repeat: 'r',
@@ -99,10 +81,16 @@ class AppConfig {
                 animations: {
                     duration: 300,
                     easing: 'ease-in-out'
+                },
+                elements: {
+                    pronunciationToggle: {
+                        british: '🇬🇧',
+                        american: '🇺🇸'
+                    }
                 }
             },
 
-            // Audio Configuration
+            // ===== AUDIO CONFIGURATION =====
             audio: {
                 maxRetries: 3,
                 retryDelay: 1000,
@@ -111,21 +99,45 @@ class AppConfig {
                 fadeOutDuration: 200
             },
 
-            // Progress Tracking
-            progress: {
-                storageKeys: {
-                    vocabulary: 'professional_vocabulary_progress',
-                    settings: 'professional_settings',
-                    stats: 'professional_study_stats'
-                },
-                celebrationThresholds: [10, 25, 50, 100, 250, 500]
+            // ===== BUILD CONFIGURATION =====
+            build: {
+                jsFiles: [
+                    'src/js/shared/AppNamespace.js',
+                    'src/js/shared/Constants.js',
+                    'src/js/shared/Config.js',
+                    'src/js/shared/DataSchema.js',
+                    'src/js/shared/LegacyCompatibility.js',
+                    'src/js/utils/EventBus.js',
+                    'src/js/utils/Storage.js',
+                    'src/js/utils/StateManager.js',
+                    'src/js/utils/CacheMigration.js',
+                    'src/js/utils/StateTest.js',
+                    'src/js/data/extractors/PTETermsExtractor.js',
+                    'src/js/core/PTEVocabularyManager.js',
+                    'src/js/core/ProgressTracker.js',
+                    'src/js/audio/TTSEngine.js',
+                    'src/js/audio/VoiceSelector.js',
+                    'src/js/audio/AudioControls.js',
+                    'src/js/ui/UIController.js',
+                    'src/js/ui/SettingsPanel.js',
+                    'src/js/core/PTEApp.js'
+                ],
+                output: {
+                    js: 'js/app.min.js',
+                    css: 'css/style.min.css',
+                    html: 'index.html'
+                }
             },
 
-            // Development Configuration
-            development: {
-                debug: false,
-                verbose: false,
-                mockData: false
+            // ===== VALIDATION CONFIGURATION =====
+            validation: {
+                requiredFiles: [
+                    'data/processed/pte-fib-listening-dataset.json'
+                ],
+                errorMessages: {
+                    datasetNotFound: 'PTE vocabulary data file not found. Run "npm run data:pte" first.',
+                    noTerms: 'No vocabulary terms found in dataset.'
+                }
             }
         };
     }

@@ -10,4 +10,4 @@ node_modules/
 
 # Ignore build artifacts that aren't needed
 dist/
-reports/
+data/reports/

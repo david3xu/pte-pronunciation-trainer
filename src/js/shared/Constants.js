@@ -45,35 +45,14 @@ const Constants = {
     LOOP: 'loop'
   },
 
-  MODES: {
-    VOCABULARY_CLEAN: 'resume-terms',
-    AIML_TERMS: 'aiml-terms',
-    PROFESSIONAL_TERMS: 'professional-terms'
+  // PTE-specific constants
+  PTE_MODES: {
+    FIB_LISTENING: 'pte-fib-listening'
   },
 
-  DIALOGUE_GROUPS: {
-    CATEGORY_KEYS: {
-      ALL: 'all-categories'
-    }
-  },
-
-  // Helper function for category mapping
-  getCategoryFromDialogueId: function (conversationId) {
-    // Map conversation IDs to categories
-    const categoryMap = {
-      'social-welfare': 'social-welfare',
-      'healthcare': 'healthcare',
-      'education': 'education',
-      'employment': 'employment',
-      'housing': 'housing',
-      'legal': 'legal',
-      'community': 'community',
-      'family': 'family',
-      'finance': 'finance',
-      'transport': 'transport'
-    };
-
-    return categoryMap[conversationId] || 'all-categories';
+  PTE_CATEGORIES: {
+    ALL: 'all-categories',
+    FIB_LISTENING: 'pte-fib-listening'
   }
 };
 

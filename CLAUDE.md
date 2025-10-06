@@ -4,25 +4,25 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-Professional Vocabulary Pronunciation Trainer - A specialized web-based pronunciation training application for professional vocabulary and AI/ML terminology with IPA guides and text-to-speech with British/American pronunciation.
+PTE Pronunciation Trainer - A specialized web-based pronunciation training application for PTE exam preparation with 914 FIB listening vocabulary terms, IPA guides, and text-to-speech with British/American pronunciation.
 
-**✅ STREAMLINED (Oct 2025)**: Architecture optimized exclusively for professional vocabulary pronunciation training.
+**✅ PTE-FOCUSED (Dec 2024)**: Architecture optimized exclusively for PTE vocabulary pronunciation training with centralized configuration and scalable design.
 
 ## Essential Commands
 
 ```bash
-# 🆕 RESUME-SPECIFIC COMMANDS:
-npm run data:resume           # Process only resume & AI/ML data
-npm run start:resume          # Generate resume data + start server
-npm run deploy:resume         # Generate data + build + validate
+# 🎧 PTE-SPECIFIC COMMANDS:
+npm run data:pte              # Process PTE FIB listening vocabulary
+npm run start:pte             # Generate PTE data + start server
+npm run deploy:pte            # Generate data + build + validate
 
 # 📊 Data Generation:
-npm run data:resume           # Process only resume & AI/ML terms
-npm run data                  # Alias for data:resume
+npm run data:pte              # Process PTE FIB listening vocabulary
+npm run data                  # Alias for data:pte
 
 # 🔧 Development:
 npm run dev                   # Start server at http://localhost:3000
-npm run start:resume          # Data + dev (recommended)
+npm run start:pte             # Data + dev (recommended)
 
 # 🧪 Quality & Testing:
 npm run lint                  # ESLint for JS + Stylelint for CSS
@@ -31,7 +31,7 @@ npm run validate              # Validate vocabulary data
 
 # 🚀 Production:
 npm run build                 # Minify and build for production
-npm run vercel-build:resume   # Vercel: resume data + build (optimized)
+npm run vercel-build:pte      # Vercel: PTE data + build (optimized)
 
 # 🧹 Cleanup:
 npm run clean                 # Remove dist/ data/generated/ data/processed/
@@ -44,22 +44,22 @@ npm run test -- --coverage
 
 ## Architecture
 
-### 🆕 Resume Data Pipeline
+### 🎧 PTE Data Pipeline
 ```
-data/source/resume-terms.md + temp.md → scripts/resume-data-pipeline.js → data/processed/*.json → Browser
+data/source/pte/vocabs/pte-fib-listening-with-ipa.md → scripts/pte-data-pipeline.js → data/processed/pte-fib-listening-dataset.json → Browser
 ```
-**✅ Focused Processing**: `npm run data:resume` processes only professional vocabulary
-**🔄 Professional Terms**: Resume terms with IPA + AI/ML technical terminology
-**⚡ Performance**: Optimized pipeline for professional vocabulary only
+**✅ Focused Processing**: `npm run data:pte` processes only PTE vocabulary
+**🔄 PTE Terms**: 914 FIB listening terms with British/American IPA pronunciations
+**⚡ Performance**: Optimized pipeline for PTE vocabulary only
 
 ### 🆕 Module Architecture
 ```javascript
 // NEW: Unified namespace (recommended for new code)
-const vocab = window.CCLApp.getModule('vocabularyManager');
+const vocab = window.CCLApp.getModule('pteVocabularyManager');
 const config = window.CCLApp.getModule('config').get('tts.defaultVoice');
 
 // LEGACY: Direct window access (still works, 100% backward compatible)
-window.vocabularyManager.getCurrentWords();
+window.pteVocabularyManager.getCurrentWords();
 window.eventBus.emit('vocabulary:loaded', data);
 ```
 
@@ -79,39 +79,39 @@ src/js/
 │   ├── Config.js            # Centralized configuration with inline constants
 │   ├── DataSchema.js        # Standardized data formats
 │   └── LegacyCompatibility.js # Compatibility layer
-├── core/           # ResumeApp.js, ResumeVocabularyManager, ProgressTracker
+├── core/           # PTEApp.js, PTEVocabularyManager, ProgressTracker
 ├── audio/          # TTSEngine (British/American focus), VoiceSelector
 ├── ui/             # UIController, SettingsPanel (vocabulary switcher)
 └── utils/          # EventBus, Storage (localStorage wrapper)
 
 scripts/            # Build tools
-├── resume-data-pipeline.js # Resume-specific data pipeline
+├── pte-data-pipeline.js    # PTE-specific data pipeline
 ├── build.js                # Production build with minification
 └── validate.js             # Data integrity validation
 
 data/               # Organized data directories
-├── processed/      # Standardized JSON datasets (resume terms)
+├── processed/      # Standardized JSON datasets (PTE terms)
 ├── generated/      # JS data files (compatibility)
 ├── reports/        # Processing reports and validation results
 └── source/         # Source data files
-    ├── resume-terms.md              # Professional terms with IPA guides
-    └── ai-ml-pronunciation-terms.md # AI/ML terminology with IPA notation
+    └── pte/         # PTE vocabulary data
+        └── vocabs/
+            ├── pte-fib-listening-with-ipa.md  # 914 terms with IPA
+            └── fib-listening-vocabulary.md    # Fallback terms
 ```
 
 ## Key Features
 
-### Professional Vocabulary System
-- **Resume Terms**: 445+ professional terms with IPA pronunciation guides
-- **AI/ML Terminology**: 150+ technical terms organized by category
-- **Phonetic Guides**: Intuitive pronunciation with "sounds like" descriptions
-- **British/American Variants**: Side-by-side pronunciation comparison
-- **Technical Focus**: Specialized vocabulary for professional settings
-- **Category Organization**: Foundation Terms, MLOps, NLP, Computer Vision, etc.
+### PTE Vocabulary System
+- **FIB Listening Terms**: 914 essential terms for PTE listening comprehension
+- **IPA Pronunciation Guides**: British and American pronunciations with phonetic spellings
+- **Smart Difficulty Classification**: Easy, Normal, Hard based on word complexity
+- **Exam-Focused Content**: Curated specifically for PTE FIB questions
+- **Comprehensive Coverage**: All essential vocabulary for PTE listening section
 
 ### Learning Modes
-- **💼 Resume Terms**: Professional vocabulary with IPA pronunciation guides
-- **🤖 AI/ML Terms**: Cutting-edge technical terminology by category
-- **🌟 All Professional Terms**: Complete professional vocabulary collection
+- **🎧 PTE FIB Listening**: Complete vocabulary set for listening comprehension
+- **🌟 All Categories**: Complete PTE vocabulary collection
 
 ### Text-to-Speech Engine
 - **British/American Focus**: UK and US voice options for professional settings
@@ -137,9 +137,9 @@ data/               # Organized data directories
 
 ### Input Sources
 ```markdown
-# Processed by resume data pipeline:
-data/source/resume-terms.md              # IPA pronunciation guides with British/American variants
-data/source/ai-ml-pronunciation-terms.md # AI/ML terminology with IPA notation and definitions
+# Processed by PTE data pipeline:
+data/source/pte/vocabs/pte-fib-listening-with-ipa.md  # 914 terms with British/American IPA
+data/source/pte/vocabs/fib-listening-vocabulary.md    # Fallback: Original terms
 ```
 
 ### Output Formats
@@ -147,23 +147,22 @@ data/source/ai-ml-pronunciation-terms.md # AI/ML terminology with IPA notation a
 // Standardized JSON (primary)
 {
   "metadata": {
-    "generated": "2025-10-04T08:45:12Z",
-    "totalTerms": 445,
-    "source": "resume-data-pipeline",
-    "version": "3.0"
+    "generated": "2024-12-XX",
+    "totalTerms": 914,
+    "source": "pte-data-pipeline",
+    "version": "1.0",
+    "hasIPA": true
   },
   "vocabulary": [
     {
-      "english": "artificial intelligence",
-      "ipa_uk": "/ˌɑːtɪˈfɪʃəl ɪnˈtelɪdʒəns/",
-      "phonetic_uk": "AH-tih-FISH-uhl in-TELL-ih-juhns",
-      "ipa_us": "/ˌɑːrtɪˈfɪʃəl ɪnˈtɛlɪdʒəns/",
-      "phonetic_us": "AR-tih-FISH-uhl in-TELL-ih-juhns",
-      "difficulty": "hard",
-      "category": "foundation-terms",
-      "definition": "Field enabling computers to perform tasks requiring human intelligence",
-      "source": "resume-terms",
-      "id": "artificial-intelligence"
+      "english": "obscure",
+      "pronunciation": {
+        "british": { "ipa": "əbˈskjʊə", "phonetic": "uhb-SKYOOR" },
+        "american": { "ipa": "əbˈskjʊr", "phonetic": "uhb-SKYOOR" }
+      },
+      "difficulty": "normal",
+      "category": "pte-fib-listening",
+      "source": "pte-fib-listening-with-ipa"
     }
   ]
 }
@@ -173,28 +172,28 @@ data/source/ai-ml-pronunciation-terms.md # AI/ML terminology with IPA notation a
 
 ### Data Processing
 ```bash
-# Process resume-specific data
-npm run data:resume
+# Process PTE-specific data
+npm run data:pte
 
 # Pipeline stages:
-# 1. Extract: Parse resume-terms.md and temp.md
-# 2. Process: Convert to standardized format
-# 3. Generate: Create resume-specific datasets
+# 1. Extract: Parse pte-fib-listening-with-ipa.md
+# 2. Process: Convert to standardized format with IPA
+# 3. Generate: Create PTE-specific datasets
 # 4. Validate: Check data integrity
-# 5. Legacy: Create JS compatibility files
+# 5. Report: Generate processing reports
 ```
 
 ### Development Server
 ```bash
-npm run start:resume  # Generate resume data + Python HTTP server on :3000
+npm run start:pte      # Generate PTE data + Python HTTP server on :3000
 npm run dev           # Server only (requires existing data)
 ```
 
 ### Production Build
 ```bash
 npm run build          # Minify JS/CSS/HTML
-npm run deploy:resume  # Resume data + build + validate
-npm run vercel-build:resume # Optimized for Vercel deployment
+npm run deploy:pte     # PTE data + build + validate
+npm run vercel-build:pte # Optimized for Vercel deployment
 ```
 
 ## Testing
@@ -233,9 +232,9 @@ window.moduleName = moduleInstance;
 ### Available Modules
 ```javascript
 // Core modules
-window.CCLApp.getModule('vocabularyManager')
+window.CCLApp.getModule('pteVocabularyManager')
 window.CCLApp.getModule('progressTracker')
-window.CCLApp.getModule('cclApp')
+window.CCLApp.getModule('pteApp')
 
 // Audio modules
 window.CCLApp.getModule('ttsEngine')
@@ -286,11 +285,11 @@ config.get('ui.shortcuts.playPause') // ' ' (space)
 ### Migration Strategy
 ```javascript
 // Option 1: Keep using existing patterns (no changes required)
-window.vocabularyManager.getCurrentWords();
+window.pteVocabularyManager.getCurrentWords();
 window.eventBus.emit('vocabulary:loaded', data);
 
 // Option 2: Gradually adopt new patterns (optional, when convenient)
-const vocab = window.CCLApp.getModule('vocabularyManager');
+const vocab = window.CCLApp.getModule('pteVocabularyManager');
 const words = vocab.getCurrentWords();
 ```
 
@@ -298,7 +297,7 @@ const words = vocab.getCurrentWords();
 
 | Issue | Solution |
 |-------|----------|
-| "No vocabulary loaded" | Run `npm run data:resume` to generate datasets |
+| "No vocabulary loaded" | Run `npm run data:pte` to generate datasets |
 | Server won't start | Ensure Python 3 installed: `python3 -m http.server 3000` |
 | TTS not working | Use Chrome/Edge, check browser audio permissions |
 | Build failures | Run `npm install`, ensure Node.js >= 16.0.0 |
@@ -342,21 +341,21 @@ Modules must load in this specific order in `index.html`:
 ### Required Data Generation
 The app requires data generation before first run:
 ```bash
-npm run data:resume    # Required - generates all datasets
-npm run start:resume   # Recommended - data + server
+npm run data:pte       # Required - generates all datasets
+npm run start:pte      # Recommended - data + server
 ```
 
 ### Global Window Objects
 Even with the new namespace, global references are maintained for compatibility:
 ```javascript
 // Both patterns work:
-window.CCLApp.getModule('vocabularyManager')  // New (recommended)
-window.vocabularyManager                      // Legacy (still works)
+window.CCLApp.getModule('pteVocabularyManager')  // New (recommended)
+window.pteVocabularyManager                      // Legacy (still works)
 ```
 
 ---
 
-**Architecture Status**: ✅ **STREAMLINED FOR PROFESSIONAL VOCABULARY**
+**Architecture Status**: ✅ **STREAMLINED FOR PTE VOCABULARY**
 **British/American Focus**: ✅ **DUAL PRONUNCIATION SUPPORT**
-**Data Pipeline**: ✅ **RESUME-SPECIFIC & OPTIMIZED**
-**Module Registration**: ✅ **PROFESSIONAL VOCABULARY MODULES READY**
+**Data Pipeline**: ✅ **PTE-SPECIFIC & OPTIMIZED**
+**Module Registration**: ✅ **PTE VOCABULARY MODULES READY**

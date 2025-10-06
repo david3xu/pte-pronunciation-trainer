@@ -1,0 +1,299 @@
+// PTEApp - Application coordinator for PTE branch
+class PTEVocabularyTrainer {
+  constructor() {
+    this.initialized = false;
+    this.init();
+  }
+
+  init() {
+    // Prevent multiple initialization
+    if (this.initialized) {
+      console.warn('Already initialized, skipping');
+      return;
+    }
+    this.initialized = true;
+
+    // Show loading indicator for mobile users
+    if (this.isMobileDevice()) {
+      this.showMobileLoadingIndicator();
+    }
+
+    // Run cache migration before any module initialization
+    // Force clear cache to ensure clean initialization
+    if (window.cacheMigration) {
+      window.cacheMigration.checkAndMigrate(true);
+    }
+
+    // Initialize all modules in correct order
+    this.initializeModules();
+
+    console.log('PTE Vocabulary Trainer initialized');
+
+    // Emit app initialization event
+    if (window.eventBus) {
+      window.eventBus.emit('app:initialized', {
+        timestamp: new Date().toISOString(),
+        version: '3.0-pte'
+      });
+    }
+  }
+
+  async initializeModules() {
+    console.log('🚀 Starting module initialization...');
+
+    // 0. Register service worker for PWA and background operation
+    this.registerServiceWorker();
+
+    // 0.1. Set up service worker message handling for background audio
+    this.setupServiceWorkerMessageHandling();
+
+    // 1. Initialize state manager (must be first to restore settings)
+    this.initializeStateManager();
+
+    // 2. Initialize PTE vocabulary manager (loads data asynchronously)
+    if (window.pteVocabularyManager) {
+      await window.pteVocabularyManager.initialize();
+    }
+
+    // 3. Initialize UI controller and bind events
+    if (window.uiController) {
+      window.uiController.bindEventListeners();
+    }
+
+    // 4. Sync settings from HTML
+    if (window.uiController) {
+      window.uiController.syncRepeatModeFromHTML();
+    }
+
+    // 5. Update initial UI state
+    if (window.uiController) {
+      window.uiController.updateUI();
+    }
+
+    // 6. Populate voice options when available
+    this.initializeVoices();
+
+    // 7. Setup keyboard shortcuts
+    this.setupKeyboardShortcuts();
+
+    // 8. Setup fullscreen functionality
+    this.setupFullscreen();
+
+    // 9. Restore UI settings from state
+    this.restoreUIState();
+
+    console.log('✅ All modules initialized successfully');
+
+    // Hide mobile loading indicator
+    this.hideMobileLoadingIndicator();
+  }
+
+  initializeStateManager() {
+    // StateManager is already initialized as a global instance
+    // Just ensure other modules can access it
+    if (window.stateManager) {
+      console.log('📂 StateManager initialized and ready');
+
+      // Check if we're restoring a previous session
+      if (window.stateManager.hasPreviousSession()) {
+        console.log('🔄 Previous session detected - will restore state');
+      } else {
+        console.log('🆕 Starting fresh session');
+      }
+    } else {
+      console.warn('⚠️ StateManager not found - some features may not work');
+    }
+  }
+
+  registerServiceWorker() {
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .then(registration => {
+          console.log('✅ Service Worker registered successfully:', registration.scope);
+        })
+        .catch(error => {
+          console.warn('⚠️ Service Worker registration failed:', error);
+        });
+    }
+  }
+
+  setupServiceWorkerMessageHandling() {
+    if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+      navigator.serviceWorker.addEventListener('message', event => {
+        if (event.data && event.data.type === 'AUDIO_READY') {
+          console.log('🎵 Background audio ready from service worker');
+        }
+      });
+    }
+  }
+
+  async initializeVoices() {
+    // Wait for voices to be available
+    if (speechSynthesis.getVoices().length === 0) {
+      await new Promise(resolve => {
+        speechSynthesis.addEventListener('voiceschanged', resolve, { once: true });
+      });
+    }
+
+    // Initialize voice selector if available
+    if (window.voiceSelector) {
+      window.voiceSelector.initialize();
+      console.log('🎤 Voice selector initialized');
+    }
+  }
+
+  setupKeyboardShortcuts() {
+    document.addEventListener('keydown', (event) => {
+      // Prevent shortcuts when typing in input fields
+      if (event.target.tagName === 'INPUT' || event.target.tagName === 'TEXTAREA') {
+        return;
+      }
+
+      switch (event.key) {
+        case ' ':
+          event.preventDefault();
+          if (window.uiController) {
+            window.uiController.togglePlayPause();
+          }
+          break;
+        case 'ArrowRight':
+          event.preventDefault();
+          if (window.uiController) {
+            window.uiController.nextWord();
+          }
+          break;
+        case 'ArrowLeft':
+          event.preventDefault();
+          if (window.uiController) {
+            window.uiController.previousWord();
+          }
+          break;
+        case 'r':
+        case 'R':
+          event.preventDefault();
+          if (window.uiController) {
+            window.uiController.repeatCurrentWord();
+          }
+          break;
+        case 'f':
+        case 'F':
+          event.preventDefault();
+          this.toggleFullscreen();
+          break;
+      }
+    });
+
+    console.log('⌨️ Keyboard shortcuts enabled');
+  }
+
+  setupFullscreen() {
+    // Fullscreen functionality is handled by the event listener above
+    console.log('🖥️ Fullscreen functionality ready');
+  }
+
+  toggleFullscreen() {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen().catch(err => {
+        console.warn('Could not enter fullscreen:', err);
+      });
+    } else {
+      document.exitFullscreen().catch(err => {
+        console.warn('Could not exit fullscreen:', err);
+      });
+    }
+  }
+
+  restoreUIState() {
+    if (!window.stateManager) return;
+
+    const preferences = window.stateManager.getPreferences();
+    if (!preferences) return;
+
+    console.log('🔄 Restoring UI state from previous session...');
+
+    // Restore learning mode
+    if (preferences.learningMode && window.pteVocabularyManager) {
+      window.pteVocabularyManager.setLearningMode(preferences.learningMode);
+    }
+
+    // Restore category
+    if (preferences.category && window.pteVocabularyManager) {
+      window.pteVocabularyManager.setCategory(preferences.category);
+    }
+
+    // Restore difficulty
+    if (preferences.difficulty && window.pteVocabularyManager) {
+      window.pteVocabularyManager.setDifficulty(preferences.difficulty);
+    }
+
+    // Restore repeat mode
+    if (preferences.repeatMode && window.uiController) {
+      window.uiController.setRepeatMode(preferences.repeatMode);
+    }
+
+    // Restore voice preference
+    if (window.voiceSelector && preferences.voice && preferences.voice !== 'auto') {
+      window.voiceSelector.setPreferredVoice(preferences.voice);
+    }
+
+    // Force PTE FIB listening mode
+    if (window.pteVocabularyManager) {
+      window.pteVocabularyManager.setLearningMode('pte-fib-listening');
+    }
+
+    console.log('🎯 UI state restored from previous session');
+  }
+
+  isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+
+  showMobileLoadingIndicator() {
+    // Create loading indicator for mobile
+    const loadingDiv = document.createElement('div');
+    loadingDiv.id = 'mobile-loading';
+    loadingDiv.innerHTML = `
+            <div style="
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.8);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 10000;
+                color: white;
+                font-size: 18px;
+            ">
+                <div style="text-align: center;">
+                    <div style="margin-bottom: 20px;">🎧</div>
+                    <div>Loading PTE Vocabulary Trainer...</div>
+                </div>
+            </div>
+        `;
+    document.body.appendChild(loadingDiv);
+  }
+
+  hideMobileLoadingIndicator() {
+    const loadingDiv = document.getElementById('mobile-loading');
+    if (loadingDiv) {
+      loadingDiv.remove();
+    }
+  }
+}
+
+// Initialize the app when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    window.pteApp = new PTEVocabularyTrainer();
+  });
+} else {
+  window.pteApp = new PTEVocabularyTrainer();
+}
+
+// Export for module systems
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = PTEVocabularyTrainer;
+}

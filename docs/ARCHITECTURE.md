@@ -187,7 +187,8 @@ class UIController {
 ```javascript
 class TTSEngine {
     constructor() {
-        this.speechRate = Constants.SPEEDS.SLOW;
+        this.config = window.appConfig || new AppConfig();
+        this.speechRate = this.config.get('tts.speeds.slow');
         this.currentRepeatCount = 0;
     }
 

@@ -103,7 +103,6 @@ class AppConfig {
             build: {
                 jsFiles: [
                     'src/js/shared/AppNamespace.js',
-                    'src/js/shared/Constants.js',
                     'src/js/shared/Config.js',
                     'src/js/shared/DataSchema.js',
                     'src/js/shared/LegacyCompatibility.js',

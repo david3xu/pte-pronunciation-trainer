@@ -54,10 +54,11 @@ class CacheMigration {
         window.storage.setItem('repeatMode', 'once');
 
         // Set default pause duration (2 seconds between words, 1 second between repetitions)
-        window.storage.setItem('delay', Constants.DELAYS.DEFAULT_PAUSE);
+        const config = window.appConfig || new AppConfig();
+        window.storage.setItem('delay', config.get('tts.delays.normal'));
 
         // Set default speech rate to slow
-        window.storage.setItem('speechRate', Constants.SPEEDS.SLOW);
+        window.storage.setItem('speechRate', config.get('tts.speeds.slow'));
 
         console.log('Default values set for clean initialization');
     }

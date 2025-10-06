@@ -132,6 +132,13 @@ class PTEVocabularyManager {
   }
 
   /**
+   * Get current word by index
+   */
+  getCurrentWord(index) {
+    return this.currentWords[index] || null;
+  }
+
+  /**
    * Get all words (unfiltered)
    */
   getAllWords() {

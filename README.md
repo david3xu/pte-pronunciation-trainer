@@ -85,7 +85,6 @@ pte-vocabulary-trainer/
 │   │   │   └── ProgressTracker.js     # Progress tracking
 │   │   ├── shared/     # Shared utilities and configuration
 │   │   │   ├── AppNamespace.js        # Module namespace system
-│   │   │   ├── Constants.js           # Application constants
 │   │   │   ├── Config.js              # 🎯 CENTRALIZED CONFIGURATION (ALL VALUES HERE)
 │   │   │   ├── DataSchema.js          # Data format schemas
 │   │   │   └── LegacyCompatibility.js # Backward compatibility
@@ -218,6 +217,13 @@ npm run data:pte    # Process PTE vocabulary data
 - **Easy** - Simple, common words
 - **Normal** - Standard vocabulary
 - **Hard** - Complex, advanced terms
+
+### **Settings Panel**
+- **Comprehensive Configuration** - Full control over learning experience
+- **Audio Settings** - Speed, pause, repeat modes, voice selection
+- **Content Filtering** - Category and difficulty level selection
+- **State Persistence** - Automatic saving and restoration of preferences
+- **[📖 Complete Settings Guide](docs/SETTINGS.md)** - Detailed documentation of all features
 
 ## 🎯 Usage Tips
 

@@ -180,6 +180,12 @@ class PTEVocabularyTrainer {
           event.preventDefault();
           this.toggleFullscreen();
           break;
+        case 'Escape':
+          event.preventDefault();
+          if (window.settingsPanel) {
+            window.settingsPanel.togglePanel();
+          }
+          break;
       }
     });
 

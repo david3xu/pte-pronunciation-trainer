@@ -49,20 +49,21 @@ class SettingsPanel {
     setupSettingsPersistence() {
         // Load saved settings from StateManager or legacy storage
         let savedSettings;
-        
+
         if (this.stateManager && this.stateManager.hasPreviousSession()) {
             savedSettings = this.stateManager.getUserPreferences();
             console.log('📂 Loading settings from StateManager:', savedSettings);
         } else {
             // Fallback to legacy storage
+            const config = window.appConfig || new AppConfig();
             savedSettings = {
-                category: window.storage.getItem('category') || Constants.DIALOGUE_GROUPS.CATEGORY_KEYS.ALL,
+                category: window.storage.getItem('category') || 'all-categories',
                 difficulty: window.storage.getItem('difficulty') || 'all',
-                speed: window.storage.getItem('speechRate') || String(Constants.SPEEDS.SLOW),
-                delay: window.storage.getItem('delay') || String(Constants.DELAYS.NORMAL_PAUSE),
-                repeat: window.storage.getItem('repeatMode') || Constants.REPEAT_MODES.ONCE,
+                speed: window.storage.getItem('speechRate') || String(config.get('tts.speeds.slow')),
+                delay: window.storage.getItem('delay') || String(config.get('tts.delays.normal')),
+                repeat: window.storage.getItem('repeatMode') || 'once',
                 voice: window.storage.getItem('preferredVoice') || 'auto',
-                learningMode: window.storage.getItem('learningMode') || Constants.MODES.VOCABULARY_CLEAN
+                learningMode: window.storage.getItem('learningMode') || 'pte-fib-listening'
             };
             console.log('📂 Loading settings from legacy storage:', savedSettings);
         }
@@ -77,14 +78,14 @@ class SettingsPanel {
         this.applySettingToElement('learningModeSelect', savedSettings.learningMode);
 
         // Apply settings to modules using setter methods
-        if (savedSettings.category && window.vocabularyManager.setCategory) {
-            window.vocabularyManager.setCategory(savedSettings.category);
+        if (savedSettings.category && window.pteVocabularyManager && window.pteVocabularyManager.setCategory) {
+            window.pteVocabularyManager.setCategory(savedSettings.category);
         }
-        if (savedSettings.difficulty && window.vocabularyManager.setDifficulty) {
-            window.vocabularyManager.setDifficulty(savedSettings.difficulty);
+        if (savedSettings.difficulty && window.pteVocabularyManager && window.pteVocabularyManager.setDifficulty) {
+            window.pteVocabularyManager.setDifficulty(savedSettings.difficulty);
         }
-        if (savedSettings.learningMode && window.vocabularyManager.setLearningMode) {
-            window.vocabularyManager.setLearningMode(savedSettings.learningMode);
+        if (savedSettings.learningMode && window.pteVocabularyManager && window.pteVocabularyManager.setLearningMode) {
+            window.pteVocabularyManager.setLearningMode(savedSettings.learningMode);
         }
     }
 
@@ -134,11 +135,12 @@ class SettingsPanel {
 
     loadSettings() {
         // Load and apply saved settings
+        const config = window.appConfig || new AppConfig();
         const savedSettings = {
             category: window.storage.getItem('category') || 'all-categories',
             difficulty: window.storage.getItem('difficulty') || 'all',
-            speechRate: window.storage.getItem('speechRate') || Constants.SPEEDS.SLOW,
-            delay: window.storage.getItem('delay') || Constants.DELAYS.NORMAL_PAUSE,
+            speechRate: window.storage.getItem('speechRate') || config.get('tts.speeds.slow'),
+            delay: window.storage.getItem('delay') || config.get('tts.delays.normal'),
             repeatMode: window.storage.getItem('repeatMode') || 'once',
             preferredVoice: window.storage.getItem('preferredVoice') || null
         };
@@ -282,6 +284,28 @@ class SettingsPanel {
 
     isSettingsPanelOpen() {
         return this.isOpen;
+    }
+
+    /**
+     * Save a setting value
+     */
+    saveSetting(key, value) {
+        // Save to legacy storage
+        window.storage.setItem(key, value);
+
+        // Save to StateManager if available
+        if (this.stateManager) {
+            this.stateManager.saveUserPreference(key, value);
+        }
+
+        // Emit settings changed event
+        window.eventBus.emit('settings:changed', {
+            key: key,
+            value: value,
+            timestamp: Date.now()
+        });
+
+        console.log(`Setting saved: ${key} = ${value}`);
     }
 }
 

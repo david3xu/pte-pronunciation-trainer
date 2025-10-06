@@ -1,5 +1,5 @@
 // Service Worker for Background Operation and PWA Functionality
-const CACHE_NAME = 'pte-trainer-v17';
+const CACHE_NAME = 'pte-trainer-v18';
 
 // Detect if we're in development or production mode
 const isDevelopment = self.location.hostname === 'localhost' ||

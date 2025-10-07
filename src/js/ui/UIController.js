@@ -37,6 +37,7 @@ class UIController {
         
         // Phase 2: Listen for practice mode changes
         window.eventBus.on('practice:modeChanged', (data) => {
+            console.log('[UIController] 🔄 practice:modeChanged event received:', data);
             this.handlePracticeModeChange(data.mode);
         });
 
@@ -641,14 +642,19 @@ class UIController {
      * @param {string} mode - 'vocabulary' | 'rs' | 'asq' | 'wfd'
      */
     async handlePracticeModeChange(mode) {
+        console.log(`[UIController] 🎯 handlePracticeModeChange called with mode: ${mode}`);
+        
         // Store current mode globally
         window.currentPracticeMode = mode;
+        console.log(`[UIController] Stored window.currentPracticeMode: ${window.currentPracticeMode}`);
         
         if (mode === 'vocabulary') {
+            console.log('[UIController] Switching to vocabulary mode...');
             // Show vocabulary mode - restore normal display
             this.updateCategoryDisplay();
             this.displayFirstWord();
         } else {
+            console.log(`[UIController] Switching to practice mode: ${mode}...`);
             // Practice modes (RS/ASQ/WFD) - load dataset and display first item
             await this.loadPracticeDataset(mode);
             
@@ -661,6 +667,7 @@ class UIController {
                     'wfd': '✍️ Write From Dictation'
                 };
                 categoryDisplay.textContent = modeLabels[mode] || mode.toUpperCase();
+                console.log(`[UIController] Updated category display to: ${modeLabels[mode]}`);
             }
         }
     }

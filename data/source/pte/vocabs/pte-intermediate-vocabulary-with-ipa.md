@@ -1984,50 +1984,50 @@ Co-words
 1978. n. factory | /ˈfæktəri/ — sounds like **FAK-tuh-ree** | /ˈfækt(ə)ri/ — sounds like **FAK-tə-ree**
 1979. n. performance | /pəˈfɔːməns/ — sounds like **puh-FAWM-uhns** | /pərˈfɔrməns/ — sounds like **per-FORM-əns**
 1980. v. advise | /ədˈvaɪz/ — sounds like **ud-VYZ** | /ədˈvaɪz/ — sounds like **ud-VYZ**
-1981. n. weakness
-1982. n. sky
-1983. pron. mine
-1984. n. tunnel
-1985. n. kitchen
-1986. n. breakfast
-1987. adj. seventeenth
-1988. n. immigration
-1989. v. prevent
-1990. v. finish
-1991. adj. Southern
-1992. pron. anything
-1993. n. recovery
-1994. adj. verbal
-1995. v. visit
-1996. v. click
-1997. n. leg
-1998. n. crisis
-1999. n. tradition
-2000. v. mimic
-2001. n. pollution
-2002. adj. radical
-2003. adj. organic
-2004. adv. inevitably
-2005. adv. earlier
-2006. v. suit
-2007. v. operate
-2008. n. spending
-2009. n. prescription
-2010. n. cooperation
-2011. n. wine
-2012. adj. willing
-2013. n. preschool
-2014. n. morning
-2015. n. pioneer
-2016. n. explosion
-2017. n. calendar
-2018. n. criticism
-2019. n. button
-2020. n. representative
-2021. n. sir
-2022. adj. local
-2023. n. leisure
-2024. v. translate
+1981. n. weakness | /ˈwiːknəs/ — sounds like **WEEK-nus** | /ˈwiknəs/ — sounds like **WEEK-nəs**
+1982. n. sky | /skaɪ/ — sounds like **SKY** | /skaɪ/ — sounds like **SKY**
+1983. pron. mine | /maɪn/ — sounds like **MYN** | /maɪn/ — sounds like **MYN**
+1984. n. tunnel | /ˈtʌnəl/ — sounds like **TUN-uhl** | /ˈtʌnəl/ — sounds like **TUN-əl**
+1985. n. kitchen | /ˈkɪtʃɪn/ — sounds like **KICH-in** | /ˈkɪtʃən/ — sounds like **KICH-ən**
+1986. n. breakfast | /ˈbrekfəst/ — sounds like **BREK-fust** | /ˈbrɛkfəst/ — sounds like **BREK-fəst**
+1987. adj. seventeenth | /ˌsevənˈtiːnθ/ — sounds like **SEV-uhn-TEENTH** | /ˌsɛvənˈtinθ/ — sounds like **SEV-ən-TEENTH**
+1988. n. immigration | /ˌɪmɪˈɡreɪʃən/ — sounds like **IM-i-GRAY-shun** | /ˌɪməˈɡreɪʃən/ — sounds like **IM-uh-GRAY-shən**
+1989. v. prevent | /prɪˈvent/ — sounds like **pri-VENT** | /prɪˈvɛnt/ — sounds like **pri-VENT**
+1990. v. finish | /ˈfɪnɪʃ/ — sounds like **FIN-ish** | /ˈfɪnɪʃ/ — sounds like **FIN-ish**
+1991. adj. Southern | /ˈsʌðən/ — sounds like **SUTH-uhn** | /ˈsʌðərn/ — sounds like **SUTH-ern**
+1992. pron. anything | /ˈeniθɪŋ/ — sounds like **EN-ee-thing** | /ˈɛniθɪŋ/ — sounds like **EN-ee-thing**
+1993. n. recovery | /rɪˈkʌvəri/ — sounds like **ri-KUV-uh-ree** | /rɪˈkʌvəri/ — sounds like **ri-KUV-ər-ee**
+1994. adj. verbal | /ˈvɜːbəl/ — sounds like **VER-bul** | /ˈvɝːbəl/ — sounds like **VER-bəl**
+1995. v. visit | /ˈvɪzɪt/ — sounds like **VIZ-it** | /ˈvɪzət/ — sounds like **VIZ-ət**
+1996. v. click | /klɪk/ — sounds like **KLIK** | /klɪk/ — sounds like **KLIK**
+1997. n. leg | /leɡ/ — sounds like **LEG** | /lɛɡ/ — sounds like **LEG**
+1998. n. crisis | /ˈkraɪsɪs/ — sounds like **KRY-sis** | /ˈkraɪsəs/ — sounds like **KRY-səs**
+1999. n. tradition | /trəˈdɪʃən/ — sounds like **truh-DISH-uhn** | /trəˈdɪʃən/ — sounds like **truh-DISH-ən**
+2000. v. mimic | /ˈmɪmɪk/ — sounds like **MIM-ik** | /ˈmɪmɪk/ — sounds like **MIM-ik**
+2001. n. pollution | /pəˈluːʃən/ — sounds like **puh-LOO-shun** | /pəˈluʃən/ — sounds like **puh-LOO-shən**
+2002. adj. radical | /ˈrædɪkəl/ — sounds like **RAD-ih-kul** | /ˈrædɪkəl/ — sounds like **RAD-ih-kəl**
+2003. adj. organic | /ɔːˈɡænɪk/ — sounds like **aw-GAN-ik** | /ɔrˈɡænɪk/ — sounds like **or-GAN-ik**
+2004. adv. inevitably | /ɪˈnevɪtəbli/ — sounds like **i-NEV-uh-tuh-blee** | /ɪˈnɛvətəbli/ — sounds like **i-NEV-ə-tə-blee**
+2005. adv. earlier | /ˈɜːliə/ — sounds like **UR-lee-uh** | /ˈɝːliər/ — sounds like **UR-lee-er**
+2006. v. suit | /suːt/ — sounds like **SOOT** | /sut/ — sounds like **SOOT**
+2007. v. operate | /ˈɒpəreɪt/ — sounds like **OP-uh-rayt** | /ˈɑpəˌreɪt/ — sounds like **AH-pə-rayt**
+2008. n. spending | /ˈspendɪŋ/ — sounds like **SPEN-ding** | /ˈspɛndɪŋ/ — sounds like **SPEN-ding**
+2009. n. prescription | /prɪˈskrɪpʃən/ — sounds like **pri-SKRIP-shun** | /prɪˈskrɪpʃən/ — sounds like **pri-SKRIP-shən**
+2010. n. cooperation | /kəʊˌɒpəˈreɪʃən/ — sounds like **koh-OP-uh-RAY-shun** | /koʊˌɑpəˈreɪʃən/ — sounds like **koh-AH-pə-RAY-shən**
+2011. n. wine | /waɪn/ — sounds like **WYN** | /waɪn/ — sounds like **WYN**
+2012. adj. willing | /ˈwɪlɪŋ/ — sounds like **WIL-ing** | /ˈwɪlɪŋ/ — sounds like **WIL-ing**
+2013. n. preschool | /ˈpriːskuːl/ — sounds like **PREE-skool** | /ˈpriskul/ — sounds like **PREE-skool**
+2014. n. morning | /ˈmɔːnɪŋ/ — sounds like **MAW-ning** | /ˈmɔrnɪŋ/ — sounds like **MOR-ning**
+2015. n. pioneer | /ˌpaɪəˈnɪə/ — sounds like **PY-uh-NEER** | /ˌpaɪəˈnɪr/ — sounds like **PY-uh-NEER**
+2016. n. explosion | /ɪkˈspləʊʒən/ — sounds like **ik-SPLOH-zhun** | /ɪkˈsploʊʒən/ — sounds like **ik-SPLOH-zhən**
+2017. n. calendar | /ˈkælɪndə/ — sounds like **KAL-in-duh** | /ˈkæləndɚ/ — sounds like **KAL-ən-der**
+2018. n. criticism | /ˈkrɪtɪsɪzəm/ — sounds like **KRIT-ih-siz-um** | /ˈkrɪtəˌsɪzəm/ — sounds like **KRIT-ə-siz-əm**
+2019. n. button | /ˈbʌtən/ — sounds like **BUT-uhn** | /ˈbʌtən/ — sounds like **BUT-ən**
+2020. n. representative | /ˌreprɪˈzentətɪv/ — sounds like **REP-ri-ZEN-tuh-tiv** | /ˌrɛprɪˈzɛntətɪv/ — sounds like **REP-ri-ZEN-tə-tiv**
+2021. n. sir | /sɜː/ — sounds like **SER** | /sɝː/ — sounds like **SER**
+2022. adj. local | /ˈləʊkəl/ — sounds like **LOH-kul** | /ˈloʊkəl/ — sounds like **LOH-kəl**
+2023. n. leisure | /ˈleʒə/ — sounds like **LEZH-uh** | /ˈliʒɚ/ — sounds like **LEE-zhər**
+2024. v. translate | /trænsˈleɪt/ — sounds like **trans-LAYT** | /trænsˈleɪt/ — sounds like **trans-LAYT**
 2025. adv. everywhere
 2026. n. intelligence
 2027. n. storage
@@ -2334,86 +2334,86 @@ Co-words
 2328. adj. wooden
 2329. n. center
 2330. v. listen
-2331. n. note
-2332. n. concentration
-2333. pron. nobody
-2334. v. stretch
-2335. n. limit
-2336. v. intend
-2337. n. tale
-2338. n. Mr
-2339. n. Bhutan
-2340. n. daughter
-2341. n. Jack
-2342. n. freedom
-2343. adv. exactly
-2344. v. perceive
-2345. n. laboratory
-2346. v. encounter
-2347. n. retail
-2348. adj. acceptable
-2349. n. pound
-2350. n. recession
-2351. v. appreciate
-2352. n. framework
-2353. adj. annual
-2354. adj. Spanish
-2355. n. stickleback
-2356. n. thesis
-2357. n. interior
-2358. adj. Amazonian
-2359. v. overcome
-2360. n. minority
-2361. n. court
-2362. v. hope
-2363. adj. tall
-2364. n. dean
-2365. v. pull
-2366. n. grant
-2367. n. Match
-2368. n. convention
-2369. adj. external
-2370. n. function
-2371. v. paint
-2372. adv. predominantly
-2373. interj. yes
-2374. n. presentation
-2375. n. pesticide
-2376. n. pharmacist
-2377. abbr. UN
-2378. adj. tremendous
-2379. n. driver
-2380. v. swim
-2381. n. infection
-2382. adj. successful
-2383. prep. besides
-2384. adv. finally
-2385. v. vary
-2386. n. video
-2387. adv. currently
-2388. adj. numerous
-2389. n. battery
-2390. n. choice
-2391. n. deposit
-2392. v. revise
-2393. v. feed
-2394. v. imagine
-2395. v. import
-2396. n. counter
-2397. n. grass
-2398. adj. Liberal
-2399. n. mood
-2400. n. heart
-2401. n. waste
-2402. n. advertisement
-2403. n. onion
-2404. adj. accessible
-2405. v. serve
-2406. n. desert
-2407. v. arise
-2408. n. programmer
-2409. n. block
-2410. n. preparation
+2331. n. note | /nəʊt/ — sounds like **NOHT** | /noʊt/ — sounds like **NOHT**
+2332. n. concentration | /ˌkɒnsənˈtreɪʃən/ — sounds like **kon-sun-TRAY-shun** | /ˌkɑnsənˈtreɪʃən/ — sounds like **KAHN-sən-TRAY-shən**
+2333. pron. nobody | /ˈnəʊbɒdi/ — sounds like **NOH-bod-ee** | /ˈnoʊbɑdi/ — sounds like **NOH-bah-dee**
+2334. v. stretch | /stretʃ/ — sounds like **STRECH** | /strɛtʃ/ — sounds like **STRECH**
+2335. n. limit | /ˈlɪmɪt/ — sounds like **LIM-it** | /ˈlɪmɪt/ — sounds like **LIM-it**
+2336. v. intend | /ɪnˈtend/ — sounds like **in-TEND** | /ɪnˈtɛnd/ — sounds like **in-TEND**
+2337. n. tale | /teɪl/ — sounds like **TAYL** | /teɪl/ — sounds like **TAYL**
+2338. n. Mr | /ˈmɪstə/ — sounds like **MIS-tuh** | /ˈmɪstər/ — sounds like **MIS-ter**
+2339. n. Bhutan | /buːˈtɑːn/ — sounds like **boo-TAHN** | /buːˈtɑn/ — sounds like **boo-TAHN**
+2340. n. daughter | /ˈdɔːtə/ — sounds like **DAW-tuh** | /ˈdɔtər/ — sounds like **DAW-ter**
+2341. n. Jack | /dʒæk/ — sounds like **JAK** | /dʒæk/ — sounds like **JAK**
+2342. n. freedom | /ˈfriːdəm/ — sounds like **FREE-dum** | /ˈfridəm/ — sounds like **FREE-dəm**
+2343. adv. exactly | /ɪɡˈzæktli/ — sounds like **ig-ZAKT-lee** | /ɪɡˈzæktli/ — sounds like **ig-ZAKT-lee**
+2344. v. perceive | /pəˈsiːv/ — sounds like **puh-SEEV** | /pɚˈsiv/ — sounds like **per-SEEV**
+2345. n. laboratory | /ləˈbɒrətəri/ — sounds like **luh-BOR-uh-tree** | /ˈlæbrəˌtɔri/ — sounds like **LAB-ruh-tor-ee**
+2346. v. encounter | /ɪnˈkaʊntə/ — sounds like **in-KOWN-tuh** | /ɪnˈkaʊntɚ/ — sounds like **in-KOWN-ter**
+2347. n. retail | /ˈriːteɪl/ — sounds like **REE-tail** | /ˈriˌteɪl/ — sounds like **REE-tail**
+2348. adj. acceptable | /əkˈseptəbəl/ — sounds like **uk-SEP-tuh-bul** | /ækˈsɛptəbəl/ — sounds like **ak-SEP-tuh-bəl**
+2349. n. pound | /paʊnd/ — sounds like **POWND** | /paʊnd/ — sounds like **POWND**
+2350. n. recession | /rɪˈseʃən/ — sounds like **ri-SESH-uhn** | /rɪˈsɛʃən/ — sounds like **ri-SESH-ən**
+2351. v. appreciate | /əˈpriːʃieɪt/ — sounds like **uh-PREE-shee-ayt** | /əˈpriʃiˌeɪt/ — sounds like **uh-PREE-shee-ayt**
+2352. n. framework | /ˈfreɪmwɜːk/ — sounds like **FRAYM-werk** | /ˈfreɪmˌwɝːk/ — sounds like **FRAYM-werk**
+2353. adj. annual | /ˈænjʊəl/ — sounds like **AN-yoo-uhl** | /ˈænjuəl/ — sounds like **AN-yoo-əl**
+2354. adj. Spanish | /ˈspænɪʃ/ — sounds like **SPAN-ish** | /ˈspænɪʃ/ — sounds like **SPAN-ish**
+2355. n. stickleback | /ˈstɪkəlbæk/ — sounds like **STIK-uhl-bak** | /ˈstɪkəlˌbæk/ — sounds like **STIK-əl-bak**
+2356. n. thesis | /ˈθiːsɪs/ — sounds like **THEE-sis** | /ˈθisɪs/ — sounds like **THEE-sis**
+2357. n. interior | /ɪnˈtɪəriə/ — sounds like **in-TEER-ee-uh** | /ɪnˈtɪriər/ — sounds like **in-TEER-ee-er**
+2358. adj. Amazonian | /ˌæməˈzəʊniən/ — sounds like **AM-uh-ZOH-nee-uhn** | /ˌæməˈzoʊniən/ — sounds like **AM-uh-ZOH-nee-ən**
+2359. v. overcome | /ˌəʊvəˈkʌm/ — sounds like **OH-vuh-KUM** | /ˌoʊvərˈkʌm/ — sounds like **OH-ver-KUM**
+2360. n. minority | /maɪˈnɒrəti/ — sounds like **my-NOR-uh-tee** | /məˈnɔrəti/ — sounds like **muh-NOR-ə-tee**
+2361. n. court | /kɔːt/ — sounds like **KAWT** | /kɔrt/ — sounds like **KORT**
+2362. v. hope | /həʊp/ — sounds like **HOHP** | /hoʊp/ — sounds like **HOHP**
+2363. adj. tall | /tɔːl/ — sounds like **TAWL** | /tɔl/ — sounds like **TAWL**
+2364. n. dean | /diːn/ — sounds like **DEEN** | /din/ — sounds like **DEEN**
+2365. v. pull | /pʊl/ — sounds like **PUL** | /pʊl/ — sounds like **PUL**
+2366. n. grant | /ɡrɑːnt/ — sounds like **GRAAHNT** | /ɡrænt/ — sounds like **GRANT**
+2367. n. Match | /mætʃ/ — sounds like **MACH** | /mætʃ/ — sounds like **MACH**
+2368. n. convention | /kənˈvenʃən/ — sounds like **kun-VEN-shun** | /kənˈvɛnʃən/ — sounds like **kun-VEN-shən**
+2369. adj. external | /ɪkˈstɜːnəl/ — sounds like **ik-STER-nul** | /ɪkˈstɝːnəl/ — sounds like **ik-STER-nəl**
+2370. n. function | /ˈfʌŋkʃən/ — sounds like **FUNK-shun** | /ˈfʌŋkʃən/ — sounds like **FUNK-shən**
+2371. v. paint | /peɪnt/ — sounds like **PAYNT** | /peɪnt/ — sounds like **PAYNT**
+2372. adv. predominantly | /prɪˈdɒmɪnəntli/ — sounds like **pri-DOM-i-nunt-lee** | /prɪˈdɑmənəntli/ — sounds like **pri-DAH-mə-nənt-lee**
+2373. interj. yes | /jes/ — sounds like **YES** | /jɛs/ — sounds like **YES**
+2374. n. presentation | /ˌprezənˈteɪʃən/ — sounds like **PREZ-uhn-TAY-shun** | /ˌprɛzənˈteɪʃən/ — sounds like **PREZ-ən-TAY-shən**
+2375. n. pesticide | /ˈpestɪsaɪd/ — sounds like **PES-ti-syd** | /ˈpɛstəˌsaɪd/ — sounds like **PES-tə-syd**
+2376. n. pharmacist | /ˈfɑːməsɪst/ — sounds like **FAAH-muh-sist** | /ˈfɑrməsɪst/ — sounds like **FAR-muh-sist**
+2377. abbr. UN | /ˌjuː ˈen/ — sounds like **YOO-EN** | /ˌju ˈɛn/ — sounds like **YOO-EN**
+2378. adj. tremendous | /trɪˈmendəs/ — sounds like **tri-MEN-dus** | /trɪˈmɛndəs/ — sounds like **tri-MEN-dəs**
+2379. n. driver | /ˈdraɪvə/ — sounds like **DRY-vuh** | /ˈdraɪvɚ/ — sounds like **DRY-ver**
+2380. v. swim | /swɪm/ — sounds like **SWIM** | /swɪm/ — sounds like **SWIM**
+2381. n. infection | /ɪnˈfekʃən/ — sounds like **in-FEK-shun** | /ɪnˈfɛkʃən/ — sounds like **in-FEK-shən**
+2382. adj. successful | /səkˈsesfʊl/ — sounds like **suk-SES-ful** | /səkˈsɛsfəl/ — sounds like **suk-SES-fəl**
+2383. prep. besides | /bɪˈsaɪdz/ — sounds like **bi-SYDZ** | /bɪˈsaɪdz/ — sounds like **bi-SYDZ**
+2384. adv. finally | /ˈfaɪnəli/ — sounds like **FY-nuh-lee** | /ˈfaɪnəli/ — sounds like **FY-nə-lee**
+2385. v. vary | /ˈveəri/ — sounds like **VAIR-ee** | /ˈvɛri/ — sounds like **VAIR-ee**
+2386. n. video | /ˈvɪdiəʊ/ — sounds like **VID-ee-oh** | /ˈvɪdioʊ/ — sounds like **VID-ee-oh**
+2387. adv. currently | /ˈkʌrəntli/ — sounds like **KUR-uhnt-lee** | /ˈkɝːəntli/ — sounds like **KUR-ənt-lee**
+2388. adj. numerous | /ˈnjuːmərəs/ — sounds like **NYOO-muh-rus** | /ˈnumərəs/ — sounds like **NOO-mər-əs**
+2389. n. battery | /ˈbætəri/ — sounds like **BAT-uh-ree** | /ˈbætəri/ — sounds like **BAT-ər-ee**
+2390. n. choice | /tʃɔɪs/ — sounds like **CHOYS** | /tʃɔɪs/ — sounds like **CHOYS**
+2391. n. deposit | /dɪˈpɒzɪt/ — sounds like **di-POZ-it** | /dɪˈpɑzət/ — sounds like **di-PAH-zət**
+2392. v. revise | /rɪˈvaɪz/ — sounds like **ri-VYZ** | /rɪˈvaɪz/ — sounds like **ri-VYZ**
+2393. v. feed | /fiːd/ — sounds like **FEED** | /fid/ — sounds like **FEED**
+2394. v. imagine | /ɪˈmædʒɪn/ — sounds like **i-MAJ-in** | /ɪˈmædʒən/ — sounds like **i-MAJ-ən**
+2395. v. import | /ɪmˈpɔːt/ — sounds like **im-PAWT** | /ɪmˈpɔrt/ — sounds like **im-PORT**
+2396. n. counter | /ˈkaʊntə/ — sounds like **KOWN-tuh** | /ˈkaʊntɚ/ — sounds like **KOWN-ter**
+2397. n. grass | /ɡrɑːs/ — sounds like **GRAAHS** | /ɡræs/ — sounds like **GRAS**
+2398. adj. Liberal | /ˈlɪbərəl/ — sounds like **LIB-uh-rul** | /ˈlɪbərəl/ — sounds like **LIB-ər-əl**
+2399. n. mood | /muːd/ — sounds like **MOOD** | /mud/ — sounds like **MOOD**
+2400. n. heart | /hɑːt/ — sounds like **HAHT** | /hɑrt/ — sounds like **HART**
+2401. n. waste | /weɪst/ — sounds like **WAYST** | /weɪst/ — sounds like **WAYST**
+2402. n. advertisement | /ədˈvɜːtɪsmənt/ — sounds like **ud-VUR-tis-munt** | /ˌædvɚˈtaɪzmənt/ — sounds like **AD-ver-TYZ-mənt**
+2403. n. onion | /ˈʌnjən/ — sounds like **UN-yun** | /ˈʌnjən/ — sounds like **UN-yən**
+2404. adj. accessible | /əkˈsesəbəl/ — sounds like **uk-SES-uh-bul** | /ækˈsɛsəbəl/ — sounds like **ak-SES-uh-bəl**
+2405. v. serve | /sɜːv/ — sounds like **SERV** | /sɝːv/ — sounds like **SERV**
+2406. n. desert | /ˈdezət/ — sounds like **DEZ-ut** | /ˈdɛzɚt/ — sounds like **DEZ-ert**
+2407. v. arise | /əˈraɪz/ — sounds like **uh-RYZ** | /əˈraɪz/ — sounds like **uh-RYZ**
+2408. n. programmer | /ˈprəʊɡræmə/ — sounds like **PROH-gram-uh** | /ˈproʊˌɡræmɚ/ — sounds like **PROH-gram-er**
+2409. n. block | /blɒk/ — sounds like **BLOK** | /blɑk/ — sounds like **BLAHK**
+2410. n. preparation | /ˌprepəˈreɪʃən/ — sounds like **PREP-uh-RAY-shun** | /ˌprɛpəˈreɪʃən/ — sounds like **PREP-uh-RAY-shən**
 2411. n. interpretation | /ɪnˌtɜːprɪˈteɪʃən/ — sounds like **in-TER-pri-TAY-shun** | /ɪnˌtɝːprɪˈteɪʃən/ — sounds like **in-TER-pri-TAY-shən**
 2412. adj. electronic | /ɪˌlekˈtrɒnɪk/ — sounds like **i-lek-TRON-ik** | /ɪˌlɛkˈtrɑnɪk/ — sounds like **i-lek-TRAHN-ik**
 2413. n. website | /ˈwebsaɪt/ — sounds like **WEB-syt** | /ˈwɛbˌsaɪt/ — sounds like **WEB-syt**

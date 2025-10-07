@@ -15,6 +15,10 @@ class AudioControls {
 
         // Check if we're in a practice mode or vocabulary mode
         const mode = window.currentPracticeMode || 'vocabulary';
+        console.log(`[AudioControls] 🎬 startAutoPlay called - Mode: ${mode}`);
+        console.log(`[AudioControls] window.currentPracticeMode: ${window.currentPracticeMode}`);
+        console.log(`[AudioControls] window.currentItem:`, window.currentItem);
+        console.log(`[AudioControls] window.currentDataset:`, window.currentDataset);
         
         if (mode === 'vocabulary') {
             // Vocabulary mode - use existing logic
@@ -36,11 +40,14 @@ class AudioControls {
             await this.playCurrentWord();
         } else {
             // Practice mode (RS/ASQ/WFD) - play current item
+            console.log(`[AudioControls] 🎯 Practice mode detected: ${mode}`);
             if (!window.currentItem) {
+                console.error('[AudioControls] ❌ No currentItem found!');
                 window.progressTracker.showError('No item to play');
                 return;
             }
 
+            console.log(`[AudioControls] ✅ currentItem exists, starting playback...`);
             this.isPlaying = true;
             this.showPlayingUI();
 

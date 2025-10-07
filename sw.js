@@ -2,7 +2,7 @@
 // Service Worker for PTE Pronunciation Trainer
 // Handles offline caching and background sync
 
-const CACHE_VERSION = 'v35'; // Fix: Update window.currentItem when switching modes/items
+const CACHE_VERSION = 'v36'; // Debug: Add extensive logging to startAutoPlay
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

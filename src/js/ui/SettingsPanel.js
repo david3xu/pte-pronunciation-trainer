@@ -60,6 +60,11 @@ class SettingsPanel {
         
         if (!practiceModeSelect) return; // Phase 2 not loaded
         
+        // IMPORTANT: Initialize window.currentPracticeMode from dropdown value
+        // This ensures mode is set even before settings are loaded
+        window.currentPracticeMode = practiceModeSelect.value || 'vocabulary';
+        console.log(`[SettingsPanel] Initial practice mode from dropdown: ${window.currentPracticeMode}`);
+        
         // Handle practice mode changes
         practiceModeSelect.addEventListener('change', (e) => {
             const mode = e.target.value;
@@ -115,16 +120,19 @@ class SettingsPanel {
         
         // IMPORTANT: Restore saved practice mode (vocabulary/rs/asq/wfd)
         const savedPracticeMode = savedSettings.practiceMode || 'vocabulary';
+        console.log(`[SettingsPanel] Saved practice mode from settings: ${savedPracticeMode}`);
         this.applySettingToElement('practiceModeSelect', savedPracticeMode);
         
-        // Initialize window.currentPracticeMode
+        // Update window.currentPracticeMode (may have been initialized earlier)
         window.currentPracticeMode = savedPracticeMode;
-        console.log(`[SettingsPanel] Initialized practice mode: ${savedPracticeMode}`);
+        console.log(`[SettingsPanel] Set window.currentPracticeMode to: ${savedPracticeMode}`);
         
         // If practice mode is not vocabulary, load the dataset
         if (savedPracticeMode !== 'vocabulary' && window.uiController) {
-            console.log(`[SettingsPanel] Restoring practice mode: ${savedPracticeMode}`);
+            console.log(`[SettingsPanel] Restoring practice mode: ${savedPracticeMode}, calling handlePracticeModeChange...`);
             window.uiController.handlePracticeModeChange(savedPracticeMode);
+        } else if (savedPracticeMode !== 'vocabulary') {
+            console.warn(`[SettingsPanel] ⚠️ window.uiController not available, cannot restore mode ${savedPracticeMode}`);
         }
 
         // Apply settings to modules using setter methods

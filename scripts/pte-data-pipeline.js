@@ -8,6 +8,8 @@
 const fs = require('fs');
 const path = require('path');
 const PTETermsExtractor = require('../src/js/data/extractors/PTETermsExtractor.js');
+const PTESentenceExtractor = require('../src/js/data/extractors/PTESentenceExtractor.js');
+const PTEQuestionExtractor = require('../src/js/data/extractors/PTEQuestionExtractor.js');
 const AppConfig = require('../src/js/shared/Config.js');
 
 class PTEDataPipeline {
@@ -193,44 +195,75 @@ class PTEDataPipeline {
       // Centralized build path: iterate over registry entries
       for (const entry of registry) {
         try {
-          const inputPath = path.join(this.config.inputDir, this.config.dataSources.subdirectory, entry.input);
+          // Determine which extractor to use
+          const extractorType = entry.extractorType || entry.extractor || 'PTETermsExtractor';
+          const dataType = entry.dataType || entry.type || 'vocabulary';
+          
+          // Build input path with optional subdirectory
+          const inputSubdir = entry.inputSubdir || this.config.dataSources.subdirectory;
+          const inputPath = path.join(this.config.inputDir, inputSubdir, entry.input);
+          
+          console.log(`   🔄 Processing ${entry.id} (${dataType}) using ${extractorType}...`);
+          
+          let dataset;
           let terms = [];
           let usedFallback = false;
-          try {
-            terms = await PTETermsExtractor.extract(inputPath, fs);
-          } catch (e) {
-            // On parser error, try fallback simple list if configured
-            if (entry.fallback) {
-              const fallbackPath = path.join(this.config.inputDir, this.config.dataSources.subdirectory, entry.fallback);
+
+          // Dynamic extractor loading based on type
+          if (extractorType === 'PTESentenceExtractor') {
+            // Handle sentence-based datasets (RS, WFD)
+            dataset = await PTESentenceExtractor.extract(inputPath, { type: dataType });
+            
+          } else if (extractorType === 'PTEQuestionExtractor') {
+            // Handle question-based datasets (ASQ)
+            dataset = await PTEQuestionExtractor.extract(inputPath);
+            
+          } else {
+            // Handle vocabulary-based datasets (default)
+            try {
+              terms = await PTETermsExtractor.extract(inputPath, fs);
+            } catch (e) {
+              // On parser error, try fallback simple list if configured
+              if (entry.fallback) {
+                const fallbackPath = path.join(this.config.inputDir, inputSubdir, entry.fallback);
+                terms = await this.extractPTETerms(fallbackPath);
+                usedFallback = true;
+              } else {
+                throw e;
+              }
+            }
+
+            // If IPA extractor returned zero, attempt fallback simple list
+            if ((!terms || terms.length === 0) && entry.fallback) {
+              const fallbackPath = path.join(this.config.inputDir, inputSubdir, entry.fallback);
               terms = await this.extractPTETerms(fallbackPath);
               usedFallback = true;
-            } else {
-              throw e;
             }
-          }
 
-          // If IPA extractor returned zero, attempt fallback simple list
-          if ((!terms || terms.length === 0) && entry.fallback) {
-            const fallbackPath = path.join(this.config.inputDir, this.config.dataSources.subdirectory, entry.fallback);
-            terms = await this.extractPTETerms(fallbackPath);
-            usedFallback = true;
+            const unique = this.removeDuplicates(terms);
+            dataset = {
+              metadata: {
+                generated: new Date().toISOString(),
+                totalTerms: unique.length,
+                source: entry.sourceType,
+                description: entry.description,
+                version: '1.0',
+                categories: [entry.category],
+                hasIPA: !usedFallback
+              },
+              vocabulary: unique
+            };
           }
-
-          const unique = this.removeDuplicates(terms);
-          const dataset = {
-            metadata: {
-              generated: new Date().toISOString(),
-              totalTerms: unique.length,
-              source: entry.sourceType,
-              description: entry.description,
-              version: '1.0',
-              categories: [entry.category],
-              hasIPA: !usedFallback
-            },
-            vocabulary: unique
-          };
+          
+          // Save the dataset
           this.saveDataset(entry.output, dataset);
-          console.log(`   ✅ Generated dataset: ${entry.id} (${unique.length} terms)`);
+          
+          // Get count based on dataset structure
+          const count = dataset.items ? dataset.items.length : 
+                       dataset.vocabulary ? dataset.vocabulary.length : 0;
+          
+          console.log(`   ✅ Generated dataset: ${entry.id} (${count} items)`);
+          
         } catch (e) {
           console.warn(`   ⚠️  Skipped dataset ${entry.id}: ${e.message}`);
         }
@@ -302,7 +335,12 @@ class PTEDataPipeline {
     }
 
     fs.writeFileSync(outputPath, JSON.stringify(dataset, null, 2));
-    console.log(`   ✅ Saved ${dataset.vocabulary.length} terms to ${filename}`);
+    
+    // Get count based on dataset structure
+    const count = dataset.items ? dataset.items.length : 
+                 dataset.vocabulary ? dataset.vocabulary.length : 0;
+    
+    console.log(`   ✅ Saved ${count} items to ${filename}`);
   }
 
   /**

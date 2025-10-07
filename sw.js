@@ -1,5 +1,9 @@
 // Service Worker for Background Operation and PWA Functionality
-const CACHE_NAME = 'pte-trainer-v21';
+// Service Worker for PTE Pronunciation Trainer
+// Handles offline caching and background sync
+
+const CACHE_VERSION = 'v30';
+const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode
 const isDevelopment = self.location.hostname === 'localhost' ||
@@ -11,7 +15,11 @@ const urlsToCache = isDevelopment ? [
   // Development mode - cache individual source files
   '/',
   '/index.html',
+  '/src/css/variables.css',
+  '/src/css/animations.css',
+  '/src/css/components.css',
   '/src/css/style.css',
+  '/src/css/practice-modes.css',
   '/src/js/shared/AppNamespace.js',
   '/src/js/shared/Config.js',
   '/src/js/shared/DataSchema.js',
@@ -24,21 +32,32 @@ const urlsToCache = isDevelopment ? [
   '/src/js/core/PTEVocabularyManager.js',
   '/src/js/core/ProgressTracker.js',
   '/src/js/data/extractors/PTETermsExtractor.js',
+  '/src/js/data/DatasetManager.js', // NEW: Phase 2
   '/src/js/audio/TTSEngine.js',
   '/src/js/audio/VoiceSelector.js',
   '/src/js/audio/AudioControls.js',
   '/src/js/ui/UIController.js',
   '/src/js/ui/SettingsPanel.js',
+  '/src/js/ui/PracticeModes.js', // NEW: Phase 2
   '/src/js/core/PTEApp.js',
+  // Vocabulary datasets
   '/data/processed/pte-fib-listening-dataset.json',
   '/data/processed/pte-beginner-vocabulary.json',
   '/data/processed/pte-intermediate-vocabulary.json',
+  // NEW: PTE practice datasets (Phase 2)
+  '/data/processed/pte-repeat-sentence-dataset.json',
+  '/data/processed/pte-answer-short-question-dataset.json',
+  '/data/processed/pte-write-from-dictation-dataset.json',
   '/manifest.json'
 ] : [
   // Production mode - cache existing files only
   '/',
   '/index.html',
+  '/src/css/variables.css',
+  '/src/css/animations.css',
+  '/src/css/components.css',
   '/src/css/style.css',
+  '/src/css/practice-modes.css',
   '/src/js/shared/AppNamespace.js',
   '/src/js/shared/Config.js',
   '/src/js/shared/DataSchema.js',
@@ -51,15 +70,22 @@ const urlsToCache = isDevelopment ? [
   '/src/js/core/PTEVocabularyManager.js',
   '/src/js/core/ProgressTracker.js',
   '/src/js/data/extractors/PTETermsExtractor.js',
+  '/src/js/data/DatasetManager.js', // NEW: Phase 2
   '/src/js/audio/TTSEngine.js',
   '/src/js/audio/VoiceSelector.js',
   '/src/js/audio/AudioControls.js',
   '/src/js/ui/UIController.js',
   '/src/js/ui/SettingsPanel.js',
+  '/src/js/ui/PracticeModes.js', // NEW: Phase 2
   '/src/js/core/PTEApp.js',
+  // Vocabulary datasets
   '/data/processed/pte-fib-listening-dataset.json',
   '/data/processed/pte-beginner-vocabulary.json',
   '/data/processed/pte-intermediate-vocabulary.json',
+  // NEW: PTE practice datasets (Phase 2)
+  '/data/processed/pte-repeat-sentence-dataset.json',
+  '/data/processed/pte-answer-short-question-dataset.json',
+  '/data/processed/pte-write-from-dictation-dataset.json',
   '/manifest.json'
 ];
 

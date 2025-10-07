@@ -34,6 +34,11 @@ class UIController {
             this.updateButtons();
             this.displayFirstWord(); // Show first word of new mode
         });
+        
+        // Phase 2: Listen for practice mode changes
+        window.eventBus.on('practice:modeChanged', (data) => {
+            this.handlePracticeModeChange(data.mode);
+        });
 
         // Listen for word display events
         window.eventBus.on('word:display', (data) => {
@@ -617,6 +622,119 @@ class UIController {
                 // Voice changes are handled by voice selector
                 break;
             default:
+        }
+    }
+
+    /**
+     * Phase 2: Handle practice mode changes
+     * @param {string} mode - 'vocabulary' | 'rs' | 'asq' | 'wfd'
+     */
+    async handlePracticeModeChange(mode) {
+        const wordDisplay = document.querySelector('.word-display');
+        if (!wordDisplay) return;
+
+        // Hide vocabulary display for practice modes
+        const vocabularyElements = [
+            'phoneticSpelling',
+            'englishWord', 
+            'ipaNotation',
+            'pronunciationText',
+            'exampleSentence',
+            'progressText',
+            'difficultyBadge'
+        ];
+
+        if (mode === 'vocabulary') {
+            // Show vocabulary container and elements
+            wordDisplay.style.display = '';
+            vocabularyElements.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.style.display = '';
+            });
+            
+            // Hide practice mode containers
+            if (window.practiceModes) {
+                window.practiceModes.hideAllModeContainers();
+            }
+            
+            // Update category display
+            this.updateCategoryDisplay();
+        } else {
+            // Hide vocabulary container for practice modes
+            wordDisplay.style.display = 'none';
+            
+            // Hide vocabulary elements for practice modes
+            vocabularyElements.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.style.display = 'none';
+            });
+            
+            // Show appropriate practice mode container
+            if (window.practiceModes) {
+                window.practiceModes.updateUILayout(mode);
+                
+                // Load dataset and display first item
+                await this.loadPracticeDataset(mode);
+            }
+            
+            // Update category display for practice mode
+            const categoryDisplay = document.getElementById('categoryDisplay');
+            if (categoryDisplay) {
+                const modeLabels = {
+                    'rs': '🎤 Repeat Sentence',
+                    'asq': '❓ Answer Short Question',
+                    'wfd': '✍️ Write From Dictation'
+                };
+                categoryDisplay.textContent = modeLabels[mode] || mode.toUpperCase();
+            }
+        }
+    }
+
+    /**
+     * Load dataset for practice mode and display first item
+     */
+    async loadPracticeDataset(mode) {
+        if (!window.datasetManager) {
+            console.error('❌ DatasetManager not available');
+            return;
+        }
+
+        // Map practice mode to dataset type
+        const datasetMap = {
+            'rs': 'repeat-sentence',
+            'asq': 'answer-short-question',
+            'wfd': 'write-from-dictation'
+        };
+
+        const datasetType = datasetMap[mode];
+        if (!datasetType) {
+            console.warn(`Unknown practice mode: ${mode}`);
+            return;
+        }
+
+        try {
+            console.log(`📥 Loading dataset for ${mode}...`);
+            const dataset = await window.datasetManager.loadDataset(datasetType);
+            
+            if (dataset && dataset.items && dataset.items.length > 0) {
+                console.log(`✅ Loaded ${dataset.items.length} items for ${mode}`);
+                
+                // Store dataset reference
+                if (window.practiceModes) {
+                    window.practiceModes.currentDataset = dataset;
+                    window.practiceModes.currentIndex = 0;
+                    
+                    // Display first item
+                    const firstItem = dataset.items[0];
+                    window.practiceModes.displayItem(firstItem, mode);
+                    
+                    console.log(`📄 Displaying first item:`, firstItem);
+                }
+            } else {
+                console.error(`❌ No items found in dataset for ${mode}`);
+            }
+        } catch (error) {
+            console.error(`❌ Failed to load dataset for ${mode}:`, error);
         }
     }
 }

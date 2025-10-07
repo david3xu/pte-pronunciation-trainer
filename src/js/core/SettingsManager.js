@@ -50,6 +50,19 @@ class SettingsManager {
       voice: {
         affects: [],
         validator: (voice) => voice === 'auto' || this.isValidVoice(voice)
+      },
+
+      // Practice mode settings (Phase 2)
+      practiceMode: {
+        affects: [],
+        validator: (mode) => {
+          // Accept both short codes (rs, asq, wfd) and full names
+          const validModes = [
+            'repeat-sentence', 'answer-short-question', 'write-from-dictation', 
+            'vocabulary', 'rs', 'asq', 'wfd'
+          ];
+          return validModes.includes(mode);
+        }
       }
     };
   }

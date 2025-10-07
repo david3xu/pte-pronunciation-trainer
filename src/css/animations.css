@@ -1,0 +1,95 @@
+/**
+ * Centralized Animations
+ * Single source of truth for all @keyframes to prevent name collisions
+ * @date 2025-10-07
+ */
+
+/* ==================== Keyframe Animations ==================== */
+
+/**
+ * Pulse Animation - Combined opacity + transform
+ * Used for: Speaking indicators, loading states, attention-grabbing elements
+ * Duration: Typically 1.5s-2s infinite
+ */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.02);
+    }
+}
+
+/**
+ * Fade In Up Animation
+ * Used for: Page transitions, word changes, content reveals
+ * Duration: Typically 0.3s-0.5s
+ */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/**
+ * Spin Animation
+ * Used for: Loading spinners
+ * Duration: Typically 1s infinite
+ */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/**
+ * Progress Pulse Animation
+ * Used for: Progress bars, loading indicators
+ * Duration: Typically 2s infinite
+ */
+@keyframes progress-pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+/* ==================== Utility Classes ==================== */
+
+/**
+ * Apply animations via utility classes
+ * Provides consistent animation timing across the app
+ */
+
+.pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.speaking {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.word-change {
+    animation: fadeInUp 0.5s ease;
+}
+
+.loading-spinner {
+    animation: spin 1s ease-in-out infinite;
+}
+
+.progress-pulse {
+    animation: progress-pulse 2s ease-in-out infinite;
+}

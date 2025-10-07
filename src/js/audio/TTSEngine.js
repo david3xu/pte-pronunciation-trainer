@@ -6,6 +6,138 @@ class TTSEngine {
         this.speechRate = this.config.get('tts.speeds.slow');
         this.currentRepeatCount = 0;
         this.targetRepeats = 2;
+        this.backgroundAudioEnabled = false; // Flag to prevent multiple sync registrations
+    }
+
+    /**
+     * HELPER: Add visual feedback and emit speaking started event
+     * (Eliminates duplicate visual feedback code)
+     * @private
+     */
+    _addSpeakingFeedback(elementId, eventData) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.classList.add('speaking');
+        }
+        window.eventBus.emit('tts:speakingStarted', eventData);
+        return element;
+    }
+
+    /**
+     * HELPER: Remove visual feedback and emit speaking completed event
+     * (Eliminates duplicate visual feedback code)
+     * @private
+     */
+    _removeSpeakingFeedback(element, eventData) {
+        if (element) {
+            element.classList.remove('speaking');
+        }
+        window.eventBus.emit('tts:speakingCompleted', eventData);
+    }
+
+    /**
+     * NEW: Pronounce a sentence (RS or WFD)
+     * @param {Object} sentenceItem - Sentence item from dataset
+     * @param {number} repeatCount - Current repeat iteration
+     */
+    async pronounceSentence(sentenceItem, repeatCount = 0) {
+        if (!sentenceItem || !sentenceItem.content || !sentenceItem.content.sentence) {
+            window.progressTracker.showError('No sentence to pronounce');
+            return;
+        }
+
+        try {
+            this.currentRepeatCount = repeatCount;
+            this.enableBackgroundAudio();
+
+            const sentence = sentenceItem.content.sentence;
+            const cleanText = this.cleanTextForTTS(sentence);
+
+            // Get pronunciation rate - sentences are typically slower
+            const pronunciationRate = this.currentRepeatCount === 0 
+                ? this.config.get('tts.speeds.slow')
+                : this.config.get('tts.speeds.normal');
+
+            // Add visual feedback
+            const element = this._addSpeakingFeedback('sentenceText', {
+                sentence: sentence,
+                type: sentenceItem.type,
+                repeatCount: this.currentRepeatCount,
+                rate: pronunciationRate
+            });
+
+            // Speak the sentence
+            await this.speak(cleanText, 'en-AU', pronunciationRate);
+
+            // Remove visual feedback
+            this._removeSpeakingFeedback(element, {
+                sentence: sentence,
+                type: sentenceItem.type,
+                repeatCount: this.currentRepeatCount
+            });
+
+        } catch (error) {
+            console.warn('Speech error:', error);
+            this.showTTSFallback(sentenceItem.content.sentence);
+        }
+    }
+
+    /**
+     * NEW: Pronounce a question (ASQ)
+     * @param {Object} questionItem - Question item from dataset
+     * @param {boolean} includeAnswer - Whether to speak the answer too
+     * @param {number} repeatCount - Current repeat iteration
+     */
+    async pronounceQuestion(questionItem, includeAnswer = false, repeatCount = 0) {
+        if (!questionItem || !questionItem.content || !questionItem.content.question) {
+            window.progressTracker.showError('No question to pronounce');
+            return;
+        }
+
+        try {
+            this.currentRepeatCount = repeatCount;
+            this.enableBackgroundAudio();
+
+            const question = questionItem.content.question;
+            const answer = questionItem.content.answer;
+            const cleanQuestion = this.cleanTextForTTS(question);
+            const pronunciationRate = this.config.get('tts.speeds.normal');
+
+            // Add visual feedback
+            const questionElement = this._addSpeakingFeedback('questionText', {
+                question: question,
+                type: 'asq',
+                repeatCount: this.currentRepeatCount,
+                rate: pronunciationRate
+            });
+
+            // Speak the question
+            await this.speak(cleanQuestion, 'en-AU', pronunciationRate);
+
+            // Optionally speak the answer after a pause
+            if (includeAnswer && answer) {
+                await new Promise(resolve => setTimeout(resolve, 500));
+
+                const answerElement = document.getElementById('answerText');
+                if (answerElement) answerElement.classList.add('speaking');
+
+                await this.speak(this.cleanTextForTTS(answer), 'en-AU', pronunciationRate);
+
+                if (answerElement) answerElement.classList.remove('speaking');
+            }
+
+            // Remove visual feedback
+            this._removeSpeakingFeedback(questionElement, {
+                question: question,
+                answer: includeAnswer ? answer : null,
+                type: 'asq',
+                repeatCount: this.currentRepeatCount
+            });
+
+        } catch (error) {
+            console.warn('Speech error:', error);
+            this.showTTSFallback(questionItem.content.question);
+        }
     }
 
     async pronounceWord(word, repeatCount = 0) {
@@ -239,13 +371,17 @@ class TTSEngine {
     }
 
     enableBackgroundAudio() {
-        // Enable background audio for iOS
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.ready.then(registration => {
-                if (registration.sync) {
-                    registration.sync.register('audio-playback');
-                }
-            });
+        // Only register sync once (use flag to prevent multiple registrations)
+        if (!this.backgroundAudioEnabled) {
+            // Enable background audio for iOS
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.ready.then(registration => {
+                    if (registration.sync) {
+                        registration.sync.register('audio-playback');
+                    }
+                });
+            }
+            this.backgroundAudioEnabled = true;
         }
 
         // Set up background audio context for iOS

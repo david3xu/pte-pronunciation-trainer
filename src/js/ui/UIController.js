@@ -778,7 +778,7 @@ class UIController {
                 break;
 
             case 'asq':
-                // Answer Short Question - show question
+                // Answer Short Question - show question and answer
                 if (item.content && englishWord) {
                     englishWord.textContent = item.content.question || '';
                 }
@@ -786,21 +786,31 @@ class UIController {
                 if (phoneticSpelling) phoneticSpelling.style.display = 'none';
                 if (ipaNotation) ipaNotation.style.display = 'none';
                 if (pronunciationText) pronunciationText.style.display = 'none';
-                // Hide answer initially (show after user submits)
-                if (exampleSentence) exampleSentence.style.display = 'none';
+                // Show answer in example sentence area
+                if (exampleSentence && item.content.answer) {
+                    exampleSentence.innerHTML = `<div class="example-english"><strong>Answer:</strong> ${item.content.answer}</div>`;
+                    exampleSentence.style.display = '';
+                } else if (exampleSentence) {
+                    exampleSentence.style.display = 'none';
+                }
                 break;
 
             case 'wfd':
-                // Write From Dictation - show placeholder
-                if (englishWord) {
-                    englishWord.textContent = '🎧 Listen and type the sentence';
+                // Write From Dictation - show the sentence to practice
+                if (item.content && englishWord) {
+                    englishWord.textContent = item.content.sentence || '';
                 }
                 // Hide phonetic fields
                 if (phoneticSpelling) phoneticSpelling.style.display = 'none';
                 if (ipaNotation) ipaNotation.style.display = 'none';
                 if (pronunciationText) pronunciationText.style.display = 'none';
-                // Hide sentence initially (show after user submits)
-                if (exampleSentence) exampleSentence.style.display = 'none';
+                // Show translation if available
+                if (exampleSentence && item.content.translation) {
+                    exampleSentence.textContent = item.content.translation;
+                    exampleSentence.style.display = '';
+                } else if (exampleSentence) {
+                    exampleSentence.style.display = 'none';
+                }
                 break;
         }
 

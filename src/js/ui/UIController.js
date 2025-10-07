@@ -720,6 +720,9 @@ class UIController {
     displayContent(item, mode) {
         if (!item) return;
 
+        console.log(`[UIController] 📺 displayContent() called - Mode: ${mode}`);
+        console.log(`[UIController] Item content:`, item.content);
+
         // Get DOM elements
         const phoneticSpelling = document.getElementById('phoneticSpelling');
         const englishWord = document.getElementById('englishWord');
@@ -738,6 +741,13 @@ class UIController {
         switch(mode) {
             case 'vocabulary':
                 // Vocabulary mode - show word with phonetics
+                console.log(`[Vocabulary Mode] Displaying:`, {
+                    word: item.content?.word,
+                    phoneticSpelling: item.content?.phoneticSpelling,
+                    ipa: item.content?.ipa,
+                    pronunciation: item.content?.pronunciation,
+                    example: item.content?.example
+                });
                 if (item.content) {
                     if (englishWord) englishWord.textContent = item.content.word || '';
                     if (phoneticSpelling) {
@@ -761,6 +771,10 @@ class UIController {
 
             case 'rs':
                 // Repeat Sentence - show sentence only
+                console.log(`[RS Mode] Displaying:`, {
+                    sentence: item.content?.sentence,
+                    translation: item.content?.translation
+                });
                 if (item.content && englishWord) {
                     englishWord.textContent = item.content.sentence || '';
                 }
@@ -779,6 +793,10 @@ class UIController {
 
             case 'asq':
                 // Answer Short Question - show question and answer
+                console.log(`[ASQ Mode] Displaying:`, {
+                    question: item.content?.question,
+                    answer: item.content?.answer
+                });
                 if (item.content && englishWord) {
                     englishWord.textContent = item.content.question || '';
                 }
@@ -797,6 +815,10 @@ class UIController {
 
             case 'wfd':
                 // Write From Dictation - show the sentence to practice
+                console.log(`[WFD Mode] Displaying:`, {
+                    sentence: item.content?.sentence,
+                    translation: item.content?.translation
+                });
                 if (item.content && englishWord) {
                     englishWord.textContent = item.content.sentence || '';
                 }

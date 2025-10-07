@@ -363,6 +363,13 @@ class AudioControls {
             const mode = window.currentPracticeMode;
             const item = window.currentItem;
 
+            console.log(`[AudioControls] 🎵 playCurrentItem - Mode: ${mode}`);
+            console.log(`[AudioControls] Current item:`, item);
+
+            // IMPORTANT: Refresh display when PLAY is clicked
+            // This ensures UI shows the correct content for current mode
+            window.uiController.displayContent(item, mode);
+
             // Get text to speak based on mode
             let textToSpeak = '';
             if (mode === 'rs' && item.content.sentence) {
@@ -374,6 +381,7 @@ class AudioControls {
             }
 
             if (textToSpeak) {
+                console.log(`[AudioControls] 🔊 Speaking: "${textToSpeak.substring(0, 50)}..."`);
                 // Use simplified pronounceText() method
                 await window.ttsEngine.pronounceText(textToSpeak);
             }
@@ -403,10 +411,13 @@ class AudioControls {
         window.currentDatasetIndex = window.currentDatasetIndex || 0;
         window.currentDatasetIndex++;
 
+        console.log(`[AudioControls] ⏭️ nextItem - Index: ${window.currentDatasetIndex}/${window.currentDataset.items.length}`);
+
         if (window.currentDatasetIndex >= window.currentDataset.items.length) {
             // Reached end - loop or stop
             if (this.repeatMode === 'loop') {
                 window.currentDatasetIndex = 0;
+                console.log(`[AudioControls] 🔄 Looping back to start`);
             } else {
                 this.handlePlaybackEnd();
                 return;
@@ -415,6 +426,7 @@ class AudioControls {
 
         // Display next item
         const nextItem = window.currentDataset.items[window.currentDatasetIndex];
+        console.log(`[AudioControls] Displaying next item:`, nextItem);
         window.uiController.displayContent(nextItem, window.currentPracticeMode);
     }
 
@@ -427,12 +439,16 @@ class AudioControls {
         window.currentDatasetIndex = window.currentDatasetIndex || 0;
         window.currentDatasetIndex--;
 
+        console.log(`[AudioControls] ⏮️ prevItem - Index: ${window.currentDatasetIndex}/${window.currentDataset.items.length}`);
+
         if (window.currentDatasetIndex < 0) {
             window.currentDatasetIndex = window.currentDataset.items.length - 1;
+            console.log(`[AudioControls] 🔄 Wrapping to end`);
         }
 
         // Display previous item
         const prevItem = window.currentDataset.items[window.currentDatasetIndex];
+        console.log(`[AudioControls] Displaying previous item:`, prevItem);
         window.uiController.displayContent(prevItem, window.currentPracticeMode);
     }
 

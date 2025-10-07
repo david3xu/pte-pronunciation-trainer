@@ -214,7 +214,7 @@ class AppConfig {
                     category: 'all-categories',
                     difficulty: 'all', // Show all difficulty levels (normal, hard, easy)
                     speed: 'tts.speeds.slow',
-                    delay: 'tts.delays.normal',
+                    delay: 'tts.delays.long',
                     repeat: 'once',
                     voice: 'auto',
                     learningMode: 'pte-fib-listening'

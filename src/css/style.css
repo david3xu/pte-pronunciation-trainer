@@ -138,14 +138,41 @@ body {
 }
 
 /* Clear typography hierarchy */
+.english-word-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
 .english-word {
     font-size: 48px;
     font-weight: 700;
     color: var(--color-blue);
-    margin-bottom: 20px;
     word-wrap: break-word;
     line-height: 1.2;
     letter-spacing: 0.5px;
+}
+
+/* Word type badge (n., v., adj., adv.) */
+.word-type-badge {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-purple);
+    background: var(--bg-card);
+    padding: 4px 10px;
+    border-radius: var(--radius-md);
+    border: 2px solid var(--color-purple);
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    opacity: 0.85;
+    transition: all var(--transition-fast);
+}
+
+.word-type-badge:hover {
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 /* Show characters clearly for beginners */

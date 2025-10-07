@@ -12,917 +12,917 @@ This vocabulary booklet contains the most comprehensive collection of FIB-L voca
 
 **全部**
 
-1. obscure | /əbˈskjʊə/ — sounds like **uhb-SKYOOR** | /əbˈskjʊr/ — sounds like **uhb-SKYOOR**
-2. clusters | /ˈklʌstəz/ — sounds like **KLUS-turz** | /ˈklʌstərz/ — sounds like **KLUS-turz**
-3. combination | /ˌkɒmbɪˈneɪʃən/ — sounds like **KOM-bi-NAY-shun** | /ˌkɑmbəˈneɪʃən/ — sounds like **KAHM-buh-NAY-shun**
-4. powered | /ˈpaʊəd/ — sounds like **POW-urd** | /ˈpaʊərd/ — sounds like **POW-urd**
-5. millions | /ˈmɪljənz/ — sounds like **MIL-yunz** | /ˈmɪljənz/ — sounds like **MIL-yunz**
-6. expansion | /ɪkˈspænʃən/ — sounds like **ik-SPAN-shun** | /ɪkˈspænʃən/ — sounds like **ik-SPAN-shun**
-7. prerequisite | /ˌpriːˈrekwɪzɪt/ — sounds like **PREE-REK-wi-zit** | /ˌpriˈrekwəzət/ — sounds like **PREE-REK-wuh-zut**
-8. hypothesise | /haɪˈpɒθəsaɪz/ — sounds like **hy-POTH-uh-syz** | /haɪˈpɑθəsaɪz/ — sounds like **hy-PAH-thuh-syz**
-9. summarized | /ˈsʌməraɪzd/ — sounds like **SUM-uh-ryzd** | /ˈsʌməraɪzd/ — sounds like **SUM-uh-ryzd**
-10. contents | /ˈkɒntents/ — sounds like **KON-tents** | /ˈkɑntents/ — sounds like **KAHN-tents**
-11. ocean | /ˈəʊʃən/ — sounds like **OH-shun** | /ˈoʊʃən/ — sounds like **OH-shun**
-12. search | /sɜːtʃ/ — sounds like **SURCH** | /sɝtʃ/ — sounds like **SURCH**
-13. staring | /ˈsteərɪŋ/ — sounds like **STAIR-ing** | /ˈsterɪŋ/ — sounds like **STAIR-ing**
-14. predominant | /prɪˈdɒmɪnənt/ — sounds like **pri-DOM-i-nunt** | /prɪˈdɑmənənt/ — sounds like **pri-DAH-muh-nunt**
-15. sleek | /sliːk/ — sounds like **SLEEK** | /slik/ — sounds like **SLEEK**
-16. cause | /kɔːz/ — sounds like **KAWZ** | /kɔz/ — sounds like **KAWZ**
-17. mammals | /ˈmæməlz/ — sounds like **MAM-ulz** | /ˈmæməlz/ — sounds like **MAM-ulz**
-18. socio-economic | /ˌsəʊsiəʊ ˌiːkəˈnɒmɪk/ — sounds like **SOH-see-oh EE-kuh-NOM-ik** | /ˌsoʊsioʊ ˌikəˈnɑmɪk/ — sounds like **SOH-see-oh EE-kuh-NAH-mik**
-19. native | /ˈneɪtɪv/ — sounds like **NAY-tiv** | /ˈneɪtɪv/ — sounds like **NAY-tiv**
-20. muscle | /ˈmʌsəl/ — sounds like **MUS-ul** | /ˈmʌsəl/ — sounds like **MUS-ul**
-21. right | /raɪt/ — sounds like **RYT** | /raɪt/ — sounds like **RYT**
-22. pendulum | /ˈpendjələm/ — sounds like **PEN-juh-lum** | /ˈpendjələm/ — sounds like **PEN-juh-lum**
-23. compile | /kəmˈpaɪl/ — sounds like **kum-PYL** | /kəmˈpaɪl/ — sounds like **kum-PYL**
-24. spotted | /ˈspɒtɪd/ — sounds like **SPOT-id** | /ˈspɑtəd/ — sounds like **SPAH-tud**
-25. forests | /ˈfɒrɪsts/ — sounds like **FOR-ists** | /ˈfɔrəsts/ — sounds like **FOR-usts**
-26. oceanographer | /ˌəʊʃəˈnɒɡrəfə/ — sounds like **OH-shuh-NOG-ruh-fuh** | /ˌoʊʃəˈnɑɡrəfər/ — sounds like **OH-shuh-NAH-gruh-fur**
-27. drop | /drɒp/ — sounds like **DROP** | /drɑp/ — sounds like **DRAHP**
-28. craft | /krɑːft/ — sounds like **KRAHFT** | /kræft/ — sounds like **KRAFT**
-29. countries | /ˈkʌntriz/ — sounds like **KUN-triz** | /ˈkʌntriz/ — sounds like **KUN-triz**
-30. experiencing | /ɪkˈspɪəriənsɪŋ/ — sounds like **ik-SPEER-ee-un-sing** | /ɪkˈspɪriənsɪŋ/ — sounds like **ik-SPEER-ee-un-sing**
-31. immense | /ɪˈmens/ — sounds like **i-MENS** | /ɪˈmens/ — sounds like **i-MENS**
-32. growth | /ɡrəʊθ/ — sounds like **GROHTH** | /ɡroʊθ/ — sounds like **GROHTH**
-33. vertical | /ˈvɜːtɪkəl/ — sounds like **VUR-ti-kul** | /ˈvɝtəkəl/ — sounds like **VUR-tuh-kul**
-34. nutrients | /ˈnjuːtriənts/ — sounds like **NYOO-tree-unts** | /ˈnutriənts/ — sounds like **NOO-tree-unts**
-35. mathematical | /ˌmæθəˈmætɪkəl/ — sounds like **MATH-uh-MAT-i-kul** | /ˌmæθəˈmætəkəl/ — sounds like **MATH-uh-MAT-uh-kul**
-36. access | /ˈækses/ — sounds like **AK-ses** | /ˈækses/ — sounds like **AK-ses**
-37. module | /ˈmɒdjuːl/ — sounds like **MOD-yool** | /ˈmɑdʒul/ — sounds like **MAH-jul**
-38. occurs | /əˈkɜːz/ — sounds like **uh-KURZ** | /əˈkɝz/ — sounds like **uh-KURZ**
-39. Droplets | /ˈdrɒplɪts/ — sounds like **DROP-lits** | /ˈdrɑpləts/ — sounds like **DRAHP-luts**
-40. hundred | /ˈhʌndrəd/ — sounds like **HUN-drud** | /ˈhʌndrəd/ — sounds like **HUN-drud**
-41. document | /ˈdɒkjʊmənt/ — sounds like **DOK-yuh-munt** | /ˈdɑkjəmənt/ — sounds like **DAH-kyuh-munt**
-42. wisdom | /ˈwɪzdəm/ — sounds like **WIZ-dum** | /ˈwɪzdəm/ — sounds like **WIZ-dum**
-43. widely | /ˈwaɪdli/ — sounds like **WYD-lee** | /ˈwaɪdli/ — sounds like **WYD-lee**
-44. Teamwork | /ˈtiːmwɜːk/ — sounds like **TEEM-wurk** | /ˈtimwɝk/ — sounds like **TEEM-wurk**
-45. envisions | /ɪnˈvɪʒənz/ — sounds like **in-VIZH-unz** | /ɪnˈvɪʒənz/ — sounds like **in-VIZH-unz**
-46. trajectory | /trəˈdʒektəri/ — sounds like **truh-JEK-tuh-ree** | /trəˈdʒektəri/ — sounds like **truh-JEK-tuh-ree**
-47. obesity | /əʊˈbiːsəti/ — sounds like **oh-BEE-suh-tee** | /oʊˈbisəti/ — sounds like **oh-BEE-suh-tee**
-48. allergy | /ˈælədʒi/ — sounds like **AL-ur-jee** | /ˈælərdʒi/ — sounds like **AL-ur-jee**
-49. urban | /ˈɜːbən/ — sounds like **UR-bun** | /ˈɝbən/ — sounds like **UR-bun**
-50. premium | /ˈpriːmiəm/ — sounds like **PREE-mee-um** | /ˈprimiəm/ — sounds like **PREE-mee-um**
-51. burgeon | /ˈbɜːdʒən/ — sounds like **BUR-jun** | /ˈbɝdʒən/ — sounds like **BUR-jun**
-52. incorporating | /ɪnˈkɔːpəreɪtɪŋ/ — sounds like **in-KOR-puh-ray-ting** | /ɪnˈkɔrpəreɪtɪŋ/ — sounds like **in-KOR-puh-ray-ting**
-53. navicular | /nəˈvɪkjʊlə/ — sounds like **nuh-VIK-yuh-luh** | /nəˈvɪkjələr/ — sounds like **nuh-VIK-yuh-lur**
-54. recommendations | /ˌrekəmenˈdeɪʃənz/ — sounds like **REK-uh-men-DAY-shunz** | /ˌrekəmenˈdeɪʃənz/ — sounds like **REK-uh-men-DAY-shunz**
-55. behavior | /bɪˈheɪvjə/ — sounds like **bi-HAYV-yuh** | /bɪˈheɪvjər/ — sounds like **bi-HAYV-yur**
-56. published | /ˈpʌblɪʃt/ — sounds like **PUB-lishd** | /ˈpʌblɪʃt/ — sounds like **PUB-lishd**
-57. communities | /kəˈmjuːnətiz/ — sounds like **kuh-MYOO-nuh-teez** | /kəˈmjunətiz/ — sounds like **kuh-MYOO-nuh-teez**
-58. sampling | /ˈsɑːmplɪŋ/ — sounds like **SAHM-pling** | /ˈsæmplɪŋ/ — sounds like **SAM-pling**
-59. apologize | /əˈpɒlədʒaɪz/ — sounds like **uh-POL-uh-jyz** | /əˈpɑlədʒaɪz/ — sounds like **uh-PAH-luh-jyz**
-60. climbing | /ˈklaɪmɪŋ/ — sounds like **KLY-ming** | /ˈklaɪmɪŋ/ — sounds like **KLY-ming**
-61. Phonograph | /ˈfəʊnəɡrɑːf/ — sounds like **FOH-nuh-grahf** | /ˈfoʊnəɡræf/ — sounds like **FOH-nuh-graf**
-62. stitch | /stɪtʃ/ — sounds like **STICH** | /stɪtʃ/ — sounds like **STICH**
-63. urgency | /ˈɜːdʒənsi/ — sounds like **UR-jun-see** | /ˈɝdʒənsi/ — sounds like **UR-jun-see**
-64. compossible | /kəmˈpɒsəbəl/ — sounds like **kum-POS-uh-bul** | /kəmˈpɑsəbəl/ — sounds like **kum-PAH-suh-bul**
-65. splashes | /ˈsplæʃɪz/ — sounds like **SPLASH-iz** | /ˈsplæʃəz/ — sounds like **SPLASH-uz**
-66. identity | /aɪˈdentəti/ — sounds like **eye-DEN-tuh-tee** | /aɪˈdentəti/ — sounds like **eye-DEN-tuh-tee**
-67. implement | /ˈɪmplɪmənt/ — sounds like **IM-pluh-munt** | /ˈɪmpləmənt/ — sounds like **IM-pluh-munt**
-68. obvious | /ˈɒbviəs/ — sounds like **OB-vee-us** | /ˈɑbviəs/ — sounds like **AHB-vee-us**
-69. unashamedly | /ˌʌnəˈʃeɪmɪdli/ — sounds like **UN-uh-SHAYM-id-lee** | /ˌʌnəˈʃeɪmədli/ — sounds like **UN-uh-SHAYM-ud-lee**
-70. occurrence | /əˈkʌrəns/ — sounds like **uh-KUR-uns** | /əˈkɝəns/ — sounds like **uh-KUR-uns**
-71. stable | /ˈsteɪbəl/ — sounds like **STAY-bul** | /ˈsteɪbəl/ — sounds like **STAY-bul**
-72. texture | /ˈtekstʃə/ — sounds like **TEKS-chuh** | /ˈtekstʃər/ — sounds like **TEKS-chur**
-73. creativity | /ˌkriːeɪˈtɪvəti/ — sounds like **KREE-ay-TIV-uh-tee** | /ˌkrieɪˈtɪvəti/ — sounds like **KREE-ay-TIV-uh-tee**
-74. valuable | /ˈvæljuəbəl/ — sounds like **VAL-yoo-uh-bul** | /ˈvæljəbəl/ — sounds like **VAL-yuh-bul**
-75. encyclopedia | /ɪnˌsaɪkləˈpiːdiə/ — sounds like **in-SY-kluh-PEE-dee-uh** | /ɪnˌsaɪkləˈpidiə/ — sounds like **in-SY-kluh-PEE-dee-uh**
-76. personalised | /ˈpɜːsənəlaɪzd/ — sounds like **PUR-suh-nuh-lyzd** | /ˈpɝsənəlaɪzd/ — sounds like **PUR-suh-nuh-lyzd**
-77. operation | /ˌɒpəˈreɪʃən/ — sounds like **OP-uh-RAY-shun** | /ˌɑpəˈreɪʃən/ — sounds like **AH-puh-RAY-shun**
-78. squabble | /ˈskwɒbəl/ — sounds like **SKWOB-ul** | /ˈskwɑbəl/ — sounds like **SKWAH-bul**
-79. puzzled | /ˈpʌzəld/ — sounds like **PUZ-uld** | /ˈpʌzəld/ — sounds like **PUZ-uld**
-80. editorial | /ˌedɪˈtɔːriəl/ — sounds like **ED-i-TOR-ee-ul** | /ˌedəˈtɔriəl/ — sounds like **ED-uh-TOR-ee-ul**
-81. ecological | /ˌiːkəˈlɒdʒɪkəl/ — sounds like **EE-kuh-LOJ-i-kul** | /ˌikəˈlɑdʒəkəl/ — sounds like **EE-kuh-LAH-juh-kul**
-82. resources | /rɪˈsɔːsɪz/ — sounds like **ri-SOR-siz** | /ˈrisɔrsəz/ — sounds like **REE-sor-suz**
-83. insights | /ˈɪnsaɪts/ — sounds like **IN-syts** | /ˈɪnsaɪts/ — sounds like **IN-syts**
-84. decent | /ˈdiːsənt/ — sounds like **DEE-sunt** | /ˈdisənt/ — sounds like **DEE-sunt**
-85. economic | /ˌiːkəˈnɒmɪk/ — sounds like **EE-kuh-NOM-ik** | /ˌikəˈnɑmɪk/ — sounds like **EE-kuh-NAH-mik**
-86. steady | /ˈstedi/ — sounds like **STED-ee** | /ˈstedi/ — sounds like **STED-ee**
-87. legitimate | /lɪˈdʒɪtɪmət/ — sounds like **li-JIT-uh-mut** | /ləˈdʒɪtəmət/ — sounds like **luh-JIT-uh-mut**
-88. primarily | /ˈpraɪmərəli/ — sounds like **PRY-muh-ruh-lee** | /praɪˈmerəli/ — sounds like **pry-MER-uh-lee**
-89. discuss | /dɪˈskʌs/ — sounds like **di-SKUS** | /dɪˈskʌs/ — sounds like **di-SKUS**
-90. stolen | /ˈstəʊlən/ — sounds like **STOH-lun** | /ˈstoʊlən/ — sounds like **STOH-lun**
-91. complained | /kəmˈpleɪnd/ — sounds like **kum-PLAYND** | /kəmˈpleɪnd/ — sounds like **kum-PLAYND**
-92. sources | /ˈsɔːsɪz/ — sounds like **SOR-siz** | /ˈsɔrsəz/ — sounds like **SOR-suz**
-93. confusing | /kənˈfjuːzɪŋ/ — sounds like **kun-FYOO-zing** | /kənˈfjuzɪŋ/ — sounds like **kun-FYOO-zing**
-94. rapidly | /ˈræpɪdli/ — sounds like **RAP-id-lee** | /ˈræpədli/ — sounds like **RAP-ud-lee**
-95. engine | /ˈendʒɪn/ — sounds like **EN-jin** | /ˈendʒən/ — sounds like **EN-jun**
-96. ultimately | /ˈʌltɪmətli/ — sounds like **UL-ti-mut-lee** | /ˈʌltəmətli/ — sounds like **UL-tuh-mut-lee**
-97. pragmatic | /præɡˈmætɪk/ — sounds like **prag-MAT-ik** | /præɡˈmætək/ — sounds like **prag-MAT-uk**
-98. tremendously | /trɪˈmendəsli/ — sounds like **tri-MEN-dus-lee** | /trɪˈmendəsli/ — sounds like **tri-MEN-dus-lee**
-99. promotions | /prəˈməʊʃənz/ — sounds like **pruh-MOH-shunz** | /prəˈmoʊʃənz/ — sounds like **pruh-MOH-shunz**
-100. restrict | /rɪˈstrɪkt/ — sounds like **ri-STRIKT** | /rɪˈstrɪkt/ — sounds like **ri-STRIKT**
-101. fundamental | /ˌfʌndəˈmentəl/ — sounds like **FUN-duh-MEN-tul** | /ˌfʌndəˈmentəl/ — sounds like **FUN-duh-MEN-tul**
-102. government | /ˈɡʌvənmənt/ — sounds like **GUV-urn-munt** | /ˈɡʌvərnmənt/ — sounds like **GUV-urn-munt**
-103. diseases | /dɪˈziːzɪz/ — sounds like **di-ZEE-ziz** | /dɪˈzizəz/ — sounds like **di-ZEE-zuz**
-104. leans | /liːnz/ — sounds like **LEENZ** | /linz/ — sounds like **LEENZ**
-105. ridiculous | /rɪˈdɪkjələs/ — sounds like **ri-DIK-yuh-lus** | /rɪˈdɪkjələs/ — sounds like **ri-DIK-yuh-lus**
-106. protection | /prəˈtekʃən/ — sounds like **pruh-TEK-shun** | /prəˈtekʃən/ — sounds like **pruh-TEK-shun**
-107. supplemented | /ˈsʌplɪmentɪd/ — sounds like **SUP-li-men-tid** | /ˈsʌpləmentəd/ — sounds like **SUP-luh-men-tud**
-108. expectations | /ˌekspekˈteɪʃənz/ — sounds like **EK-spek-TAY-shunz** | /ˌekspekˈteɪʃənz/ — sounds like **EK-spek-TAY-shunz**
-109. conference | /ˈkɒnfərəns/ — sounds like **KON-fuh-runs** | /ˈkɑnfərəns/ — sounds like **KAHN-fuh-runs**
-110. efficient | /ɪˈfɪʃənt/ — sounds like **i-FISH-unt** | /ɪˈfɪʃənt/ — sounds like **i-FISH-unt**
-111. saturated | /ˈsætʃəreɪtɪd/ — sounds like **SACH-uh-ray-tid** | /ˈsætʃəreɪtəd/ — sounds like **SACH-uh-ray-tud**
-112. scenario | /sɪˈnɑːriəʊ/ — sounds like **si-NAH-ree-oh** | /səˈnærioʊ/ — sounds like **suh-NAIR-ee-oh**
-113. envision | /ɪnˈvɪʒən/ — sounds like **in-VIZH-un** | /ɪnˈvɪʒən/ — sounds like **in-VIZH-un**
-114. true | /truː/ — sounds like **TROO** | /tru/ — sounds like **TROO**
-115. universe | /ˈjuːnɪvɜːs/ — sounds like **YOO-ni-vurs** | /ˈjunəvɝs/ — sounds like **YOO-nuh-vurs**
-116. adaptable | /əˈdæptəbəl/ — sounds like **uh-DAP-tuh-bul** | /əˈdæptəbəl/ — sounds like **uh-DAP-tuh-bul**
-117. robust | /rəʊˈbʌst/ — sounds like **roh-BUST** | /roʊˈbʌst/ — sounds like **roh-BUST**
-118. observe | /əbˈzɜːv/ — sounds like **ub-ZURV** | /əbˈzɝv/ — sounds like **ub-ZURV**
-119. fashions | /ˈfæʃənz/ — sounds like **FASH-unz** | /ˈfæʃənz/ — sounds like **FASH-unz**
-120. graphic | /ˈɡræfɪk/ — sounds like **GRAF-ik** | /ˈɡræfək/ — sounds like **GRAF-uk**
-121. percentage | /pəˈsentɪdʒ/ — sounds like **puh-SEN-tij** | /pərˈsentədʒ/ — sounds like **pur-SEN-tuhj**
-122. experience | /ɪkˈspɪəriəns/ — sounds like **ik-SPEER-ee-uns** | /ɪkˈspɪriəns/ — sounds like **ik-SPEER-ee-uns**
-123. some | /sʌm/ — sounds like **SUM** | /sʌm/ — sounds like **SUM**
-124. boundary | /ˈbaʊndəri/ — sounds like **BOWN-duh-ree** | /ˈbaʊndəri/ — sounds like **BOWN-duh-ree**
-125. represents | /ˌreprɪˈzents/ — sounds like **REP-ri-ZENTS** | /ˌreprəˈzents/ — sounds like **REP-ruh-ZENTS**
-126. continent | /ˈkɒntɪnənt/ — sounds like **KON-ti-nunt** | /ˈkɑntənənt/ — sounds like **KAHN-tuh-nunt**
-127. evoke | /ɪˈvəʊk/ — sounds like **i-VOHK** | /ɪˈvoʊk/ — sounds like **i-VOHK**
-128. strategy | /ˈstrætədʒi/ — sounds like **STRAT-uh-jee** | /ˈstrætədʒi/ — sounds like **STRAT-uh-jee**
-129. permanent | /ˈpɜːmənənt/ — sounds like **PUR-muh-nunt** | /ˈpɝmənənt/ — sounds like **PUR-muh-nunt**
-130. collect | /kəˈlekt/ — sounds like **kuh-LEKT** | /kəˈlekt/ — sounds like **kuh-LEKT**
-131. alliance | /əˈlaɪəns/ — sounds like **uh-LY-uns** | /əˈlaɪəns/ — sounds like **uh-LY-uns**
-132. ingredients | /ɪnˈɡriːdiənts/ — sounds like **in-GREE-dee-unts** | /ɪnˈɡridiənts/ — sounds like **in-GREE-dee-unts**
-133. statics | /ˈstætɪks/ — sounds like **STAT-iks** | /ˈstætəks/ — sounds like **STAT-uks**
-134. investigators | /ɪnˈvestɪɡeɪtəz/ — sounds like **in-VES-ti-gay-turz** | /ɪnˈvestəɡeɪtərz/ — sounds like **in-VES-tuh-gay-turz**
-135. intentional | /ɪnˈtenʃənəl/ — sounds like **in-TEN-shuh-nul** | /ɪnˈtenʃənəl/ — sounds like **in-TEN-shuh-nul**
-136. invisible | /ɪnˈvɪzəbəl/ — sounds like **in-VIZ-uh-bul** | /ɪnˈvɪzəbəl/ — sounds like **in-VIZ-uh-bul**
-137. instinct | /ˈɪnstɪŋkt/ — sounds like **IN-stingkt** | /ˈɪnstɪŋkt/ — sounds like **IN-stingkt**
-138. emphases | /ˈemfəsiːz/ — sounds like **EM-fuh-seez** | /ˈemfəsiz/ — sounds like **EM-fuh-seez**
-139. fossil | /ˈfɒsəl/ — sounds like **FOS-ul** | /ˈfɑsəl/ — sounds like **FAH-sul**
-140. extreme | /ɪkˈstriːm/ — sounds like **ik-STREEM** | /ɪkˈstrim/ — sounds like **ik-STREEM**
-141. regions | /ˈriːdʒənz/ — sounds like **REE-junz** | /ˈridʒənz/ — sounds like **REE-junz**
-142. exposure | /ɪkˈspəʊʒə/ — sounds like **ik-SPOH-zhuh** | /ɪkˈspoʊʒər/ — sounds like **ik-SPOH-zhur**
-143. creed | /kriːd/ — sounds like **KREED** | /krid/ — sounds like **KREED**
-144. expressions | /ɪkˈspreʃənz/ — sounds like **ik-SPRE-shunz** | /ɪkˈspreʃənz/ — sounds like **ik-SPRE-shunz**
-145. illusion | /ɪˈluːʒən/ — sounds like **i-LOO-zhun** | /ɪˈluʒən/ — sounds like **i-LOO-zhun**
-146. populations | /ˌpɒpjʊˈleɪʃənz/ — sounds like **POP-yoo-LAY-shunz** | /ˌpɑpjəˈleɪʃənz/ — sounds like **PAH-pyuh-LAY-shunz**
-147. reconstruction | /ˌriːkənˈstrʌkʃən/ — sounds like **REE-kun-STRUK-shun** | /ˌrikənˈstrʌkʃən/ — sounds like **REE-kun-STRUK-shun**
-148. financial | /faɪˈnænʃəl/ — sounds like **fy-NAN-shul** | /fəˈnænʃəl/ — sounds like **fuh-NAN-shul**
-149. innovator | /ˈɪnəveɪtə/ — sounds like **IN-uh-vay-tuh** | /ˈɪnəveɪtər/ — sounds like **IN-uh-vay-tur**
-150. challenge | /ˈtʃælɪndʒ/ — sounds like **CHAL-inj** | /ˈtʃæləndʒ/ — sounds like **CHAL-unj**
-151. firm | /fɜːm/ — sounds like **FURM** | /fɝm/ — sounds like **FURM**
-152. propagating | /ˈprɒpəɡeɪtɪŋ/ — sounds like **PROP-uh-gay-ting** | /ˈprɑpəɡeɪtɪŋ/ — sounds like **PRAH-puh-gay-ting**
-153. operational | /ˌɒpəˈreɪʃənəl/ — sounds like **OP-uh-RAY-shuh-nul** | /ˌɑpəˈreɪʃənəl/ — sounds like **AH-puh-RAY-shuh-nul**
-154. relatives | /ˈrelətɪvz/ — sounds like **REL-uh-tivz** | /ˈrelətəvz/ — sounds like **REL-uh-tuvz**
-155. adaptive | /əˈdæptɪv/ — sounds like **uh-DAP-tiv** | /əˈdæptəv/ — sounds like **uh-DAP-tuv**
-156. transition | /trænˈzɪʃən/ — sounds like **tran-ZISH-un** | /trænˈzɪʃən/ — sounds like **tran-ZISH-un**
-157. distribution | /ˌdɪstrɪˈbjuːʃən/ — sounds like **DIS-tri-BYOO-shun** | /ˌdɪstrəˈbjuʃən/ — sounds like **DIS-truh-BYOO-shun**
-158. gradually | /ˈɡrædʒuəli/ — sounds like **GRAJ-oo-uh-lee** | /ˈɡrædʒuəli/ — sounds like **GRAJ-oo-uh-lee**
-159. being | /ˈbiːɪŋ/ — sounds like **BEE-ing** | /ˈbiɪŋ/ — sounds like **BEE-ing**
-160. deformed | /dɪˈfɔːmd/ — sounds like **di-FORMD** | /dɪˈfɔrmd/ — sounds like **di-FORMD**
-161. empathy | /ˈempəθi/ — sounds like **EM-puh-thee** | /ˈempəθi/ — sounds like **EM-puh-thee**
-162. escape | /ɪˈskeɪp/ — sounds like **i-SKAYP** | /ɪˈskeɪp/ — sounds like **i-SKAYP**
-163. three | /θriː/ — sounds like **THREE** | /θri/ — sounds like **THREE**
-164. imaging | /ˈɪmɪdʒɪŋ/ — sounds like **IM-i-jing** | /ˈɪmədʒɪŋ/ — sounds like **IM-uh-jing**
-165. soul | /səʊl/ — sounds like **SOHL** | /soʊl/ — sounds like **SOHL**
-166. radically | /ˈrædɪkəli/ — sounds like **RAD-i-kuh-lee** | /ˈrædəkəli/ — sounds like **RAD-uh-kuh-lee**
-167. commence | /kəˈmens/ — sounds like **kuh-MENS** | /kəˈmens/ — sounds like **kuh-MENS**
-168. attuned | /əˈtjuːnd/ — sounds like **uh-TYOOND** | /əˈtund/ — sounds like **uh-TOOND**
-169. meet | /miːt/ — sounds like **MEET** | /mit/ — sounds like **MEET**
-170. incorporate | /ɪnˈkɔːpəreɪt/ — sounds like **in-KOR-puh-rayt** | /ɪnˈkɔrpəreɪt/ — sounds like **in-KOR-puh-rayt**
-171. temporary | /ˈtempərəri/ — sounds like **TEM-puh-ruh-ree** | /ˈtempəreri/ — sounds like **TEM-puh-rer-ee**
-172. approach | /əˈprəʊtʃ/ — sounds like **uh-PROHCH** | /əˈproʊtʃ/ — sounds like **uh-PROHCH**
-173. spectacle | /ˈspektəkəl/ — sounds like **SPEK-tuh-kul** | /ˈspektəkəl/ — sounds like **SPEK-tuh-kul**
-174. calories | /ˈkæləriz/ — sounds like **KAL-uh-reez** | /ˈkæləriz/ — sounds like **KAL-uh-reez**
-175. deliberately | /dɪˈlɪbərətli/ — sounds like **di-LIB-uh-rut-lee** | /dəˈlɪbərətli/ — sounds like **duh-LIB-uh-rut-lee**
-176. latter | /ˈlætə/ — sounds like **LAT-uh** | /ˈlætər/ — sounds like **LAT-ur**
-177. clot | /klɒt/ — sounds like **KLOT** | /klɑt/ — sounds like **KLAHT**
-178. shadow | /ˈʃædəʊ/ — sounds like **SHAD-oh** | /ˈʃædoʊ/ — sounds like **SHAD-oh**
-179. chairman | /ˈtʃeəmən/ — sounds like **CHAIR-mun** | /ˈtʃermən/ — sounds like **CHAIR-mun**
-180. shed | /ʃed/ — sounds like **SHED** | /ʃed/ — sounds like **SHED**
-181. ravel | /ˈrævəl/ — sounds like **RAV-ul** | /ˈrævəl/ — sounds like **RAV-ul**
-182. seemingly | /ˈsiːmɪŋli/ — sounds like **SEE-ming-lee** | /ˈsimɪŋli/ — sounds like **SEE-ming-lee**
-183. floor | /flɔː/ — sounds like **FLOR** | /flɔr/ — sounds like **FLOR**
-184. dramatically | /drəˈmætɪkəli/ — sounds like **druh-MAT-i-kuh-lee** | /drəˈmætəkəli/ — sounds like **druh-MAT-uh-kuh-lee**
-185. surfer | /ˈsɜːfə/ — sounds like **SUR-fuh** | /ˈsɝfər/ — sounds like **SUR-fur**
-186. illustrative | /ɪˈlʌstrətɪv/ — sounds like **i-LUS-truh-tiv** | /ɪˈlʌstrətəv/ — sounds like **i-LUS-truh-tuv**
-187. getting | /ˈɡetɪŋ/ — sounds like **GET-ing** | /ˈɡetɪŋ/ — sounds like **GET-ing**
-188. behavior | /bɪˈheɪvjə/ — sounds like **bi-HAYV-yuh** | /bɪˈheɪvjər/ — sounds like **bi-HAYV-yur**
-189. exploring | /ɪkˈsplɔːrɪŋ/ — sounds like **ik-SPLOR-ing** | /ɪkˈsplɔrɪŋ/ — sounds like **ik-SPLOR-ing**
-190. listed | /ˈlɪstɪd/ — sounds like **LIS-tid** | /ˈlɪstəd/ — sounds like **LIS-tud**
-191. naval | /ˈneɪvəl/ — sounds like **NAY-vul** | /ˈneɪvəl/ — sounds like **NAY-vul**
-192. route | /ruːt/ — sounds like **ROOT** | /rut/ — sounds like **ROOT**
-193. pollination | /ˌpɒləˈneɪʃən/ — sounds like **POL-uh-NAY-shun** | /ˌpɑləˈneɪʃən/ — sounds like **PAH-luh-NAY-shun**
-194. relationship | /rɪˈleɪʃənʃɪp/ — sounds like **ri-LAY-shun-ship** | /rɪˈleɪʃənʃəp/ — sounds like **ri-LAY-shun-shup**
-195. diversity | /daɪˈvɜːsəti/ — sounds like **dy-VUR-suh-tee** | /dəˈvɝsəti/ — sounds like **duh-VUR-suh-tee**
-196. vernacular | /vəˈnækjələ/ — sounds like **vuh-NAK-yuh-luh** | /vərˈnækjələr/ — sounds like **vur-NAK-yuh-lur**
-197. consecutive | /kənˈsekjətɪv/ — sounds like **kun-SEK-yuh-tiv** | /kənˈsekjətəv/ — sounds like **kun-SEK-yuh-tuv**
-198. confessed | /kənˈfest/ — sounds like **kun-FEST** | /kənˈfest/ — sounds like **kun-FEST**
-199. provides | /prəˈvaɪdz/ — sounds like **pruh-VYDZ** | /prəˈvaɪdz/ — sounds like **pruh-VYDZ**
-200. element | /ˈelɪmənt/ — sounds like **EL-uh-munt** | /ˈeləmənt/ — sounds like **EL-uh-munt**
-201. opposed | /əˈpəʊzd/ — sounds like **uh-POHZD** | /əˈpoʊzd/ — sounds like **uh-POHZD**
-202. recognition | /ˌrekəɡˈnɪʃən/ — sounds like **REK-ug-NISH-un** | /ˌrekəɡˈnɪʃən/ — sounds like **REK-ug-NISH-un**
-203. clout | /klaʊt/ — sounds like **KLOWT** | /klaʊt/ — sounds like **KLOWT**
-204. terrestrial | /təˈrestriəl/ — sounds like **tuh-RES-tree-ul** | /təˈrestriəl/ — sounds like **tuh-RES-tree-ul**
-205. determine | /dɪˈtɜːmɪn/ — sounds like **di-TUR-min** | /dəˈtɝmən/ — sounds like **duh-TUR-mun**
-206. trusted | /ˈtrʌstɪd/ — sounds like **TRUS-tid** | /ˈtrʌstəd/ — sounds like **TRUS-tud**
-207. nitrogen | /ˈnaɪtrədʒən/ — sounds like **NY-truh-jun** | /ˈnaɪtrədʒən/ — sounds like **NY-truh-jun**
-208. mysterious | /mɪˈstɪəriəs/ — sounds like **mi-STEER-ee-us** | /mɪˈstɪriəs/ — sounds like **mi-STEER-ee-us**
-209. rammer | /ˈræmə/ — sounds like **RAM-uh** | /ˈræmər/ — sounds like **RAM-ur**
-210. primary | /ˈpraɪməri/ — sounds like **PRY-muh-ree** | /ˈpraɪmeri/ — sounds like **PRY-mer-ee**
-211. alliances | /əˈlaɪənsɪz/ — sounds like **uh-LY-un-siz** | /əˈlaɪənsəz/ — sounds like **uh-LY-un-suz**
-212. theories | /ˈθɪəriz/ — sounds like **THEER-eez** | /ˈθɪriz/ — sounds like **THEER-eez**
-213. label | /ˈleɪbəl/ — sounds like **LAY-bul** | /ˈleɪbəl/ — sounds like **LAY-bul**
-214. speculate | /ˈspekjʊleɪt/ — sounds like **SPEK-yoo-layt** | /ˈspekjəleɪt/ — sounds like **SPEK-yuh-layt**
-215. percent | /pəˈsent/ — sounds like **puh-SENT** | /pərˈsent/ — sounds like **pur-SENT**
-216. assess | /əˈses/ — sounds like **uh-SES** | /əˈses/ — sounds like **uh-SES**
-217. ponds | /pɒndz/ — sounds like **PONDZ** | /pɑndz/ — sounds like **PAHNDZ**
-218. pounds | /paʊndz/ — sounds like **POWNDZ** | /paʊndz/ — sounds like **POWNDZ**
-219. debate | /dɪˈbeɪt/ — sounds like **di-BAYT** | /dəˈbeɪt/ — sounds like **duh-BAYT**
-220. ancient | /ˈeɪnʃənt/ — sounds like **AYN-shunt** | /ˈeɪnʃənt/ — sounds like **AYN-shunt**
-221. horns | /hɔːnz/ — sounds like **HORNZ** | /hɔrnz/ — sounds like **HORNZ**
-222. sequentially | /sɪˈkwenʃəli/ — sounds like **si-KWEN-shuh-lee** | /səˈkwenʃəli/ — sounds like **suh-KWEN-shuh-lee**
-223. balloons | /bəˈluːnz/ — sounds like **buh-LOONZ** | /bəˈlunz/ — sounds like **buh-LOONZ**
-224. beginning | /bɪˈɡɪnɪŋ/ — sounds like **bi-GIN-ing** | /bəˈɡɪnɪŋ/ — sounds like **buh-GIN-ing**
-225. editable | /ˈedɪtəbəl/ — sounds like **ED-i-tuh-bul** | /ˈedətəbəl/ — sounds like **ED-uh-tuh-bul**
-226. collision | /kəˈlɪʒən/ — sounds like **kuh-LIZH-un** | /kəˈlɪʒən/ — sounds like **kuh-LIZH-un**
-227. hemisphere | /ˈhemɪsfɪə/ — sounds like **HEM-is-feer** | /ˈheməsfɪr/ — sounds like **HEM-uh-sfeer**
-228. characters | /ˈkærəktəz/ — sounds like **KAR-uk-turz** | /ˈkærəktərz/ — sounds like **KAR-uk-turz**
-229. interact | /ˌɪntərˈækt/ — sounds like **IN-tur-AKT** | /ˌɪntərˈækt/ — sounds like **IN-tur-AKT**
-230. extol | /ɪkˈstəʊl/ — sounds like **ik-STOHL** | /ɪkˈstoʊl/ — sounds like **ik-STOHL**
-231. journal | /ˈdʒɜːnəl/ — sounds like **JUR-nul** | /ˈdʒɝnəl/ — sounds like **JUR-nul**
-232. region | /ˈriːdʒən/ — sounds like **REE-jun** | /ˈridʒən/ — sounds like **REE-jun**
-233. autograph | /ˈɔːtəɡrɑːf/ — sounds like **OR-tuh-grahf** | /ˈɔtəɡræf/ — sounds like **AH-tuh-graf**
-234. graphics | /ˈɡræfɪks/ — sounds like **GRAF-iks** | /ˈɡræfəks/ — sounds like **GRAF-uks**
-235. swapping | /ˈswɒpɪŋ/ — sounds like **SWOP-ing** | /ˈswɑpɪŋ/ — sounds like **SWAHP-ing**
-236. random | /ˈrændəm/ — sounds like **RAN-dum** | /ˈrændəm/ — sounds like **RAN-dum**
-237. space | /speɪs/ — sounds like **SPAYS** | /speɪs/ — sounds like **SPAYS**
-238. concussive | /kənˈkʌsɪv/ — sounds like **kun-KUS-iv** | /kənˈkʌsəv/ — sounds like **kun-KUS-uv**
-239. objective | /əbˈdʒektɪv/ — sounds like **ub-JEK-tiv** | /əbˈdʒektəv/ — sounds like **ub-JEK-tuv**
-240. qualifiers | /ˈkwɒlɪfaɪəz/ — sounds like **KWOL-i-fy-urz** | /ˈkwɑləfaɪərz/ — sounds like **KWAH-luh-fy-urz**
-241. Arctic | /ˈɑːktɪk/ — sounds like **ARK-tik** | /ˈɑrktək/ — sounds like **ARK-tuk**
-242. spreads | /spredz/ — sounds like **SPREDZ** | /spredz/ — sounds like **SPREDZ**
-243. Travel | /ˈtrævəl/ — sounds like **TRAV-ul** | /ˈtrævəl/ — sounds like **TRAV-ul**
-244. benefited | /ˈbenɪfɪtɪd/ — sounds like **BEN-i-fit-id** | /ˈbenəfətəd/ — sounds like **BEN-uh-fut-ud**
-245. representatively | /ˌreprɪˈzentətɪvli/ — sounds like **REP-ri-ZEN-tuh-tiv-lee** | /ˌreprəˈzentətəvli/ — sounds like **REP-ruh-ZEN-tuh-tuv-lee**
-246. investigate | /ɪnˈvestɪɡeɪt/ — sounds like **in-VES-ti-gayt** | /ɪnˈvestəɡeɪt/ — sounds like **in-VES-tuh-gayt**
-247. active | /ˈæktɪv/ — sounds like **AK-tiv** | /ˈæktəv/ — sounds like **AK-tuv**
-248. opening | /ˈəʊpənɪŋ/ — sounds like **OH-puh-ning** | /ˈoʊpənɪŋ/ — sounds like **OH-puh-ning**
-249. sold | /səʊld/ — sounds like **SOHLD** | /soʊld/ — sounds like **SOHLD**
-250. particles | /ˈpɑːtɪkəlz/ — sounds like **PAR-ti-kulz** | /ˈpɑrtəkəlz/ — sounds like **PAR-tuh-kulz**
-251. launching | /ˈlɔːntʃɪŋ/ — sounds like **LAWN-ching** | /ˈlɔntʃɪŋ/ — sounds like **LAHN-ching**
-252. faith | /feɪθ/ — sounds like **FAYTH** | /feɪθ/ — sounds like **FAYTH**
-253. symptom | /ˈsɪmptəm/ — sounds like **SIMP-tum** | /ˈsɪmptəm/ — sounds like **SIMP-tum**
-254. vacuum | /ˈvækjuəm/ — sounds like **VAK-yoo-um** | /ˈvækjuəm/ — sounds like **VAK-yoo-um**
-255. supermassive | /ˌsuːpəˈmæsɪv/ — sounds like **SOO-puh-MAS-iv** | /ˌsupərˈmæsəv/ — sounds like **SOO-pur-MAS-uv**
-256. propulsion | /prəˈpʌlʃən/ — sounds like **pruh-PUL-shun** | /prəˈpʌlʃən/ — sounds like **pruh-PUL-shun**
-257. discursion | /dɪˈskɜːʃən/ — sounds like **di-SKUR-shun** | /dəˈskɝʃən/ — sounds like **duh-SKUR-shun**
-258. journalism | /ˈdʒɜːnəlɪzəm/ — sounds like **JUR-nul-i-zum** | /ˈdʒɝnəlɪzəm/ — sounds like **JUR-nul-i-zum**
-259. offspring | /ˈɒfsprɪŋ/ — sounds like **OF-spring** | /ˈɑfsprɪŋ/ — sounds like **AHF-spring**
-260. dinosaurs | /ˈdaɪnəsɔːz/ — sounds like **DY-nuh-sorz** | /ˈdaɪnəsɔrz/ — sounds like **DY-nuh-sorz**
-261. steadfast | /ˈstedfɑːst/ — sounds like **STED-fahst** | /ˈstedfæst/ — sounds like **STED-fast**
-262. equally | /ˈiːkwəli/ — sounds like **EE-kwuh-lee** | /ˈikwəli/ — sounds like **EE-kwuh-lee**
-263. prosperity | /prɒˈsperəti/ — sounds like **pro-SPER-uh-tee** | /prɑˈsperəti/ — sounds like **prah-SPER-uh-tee**
-264. stretching | /ˈstretʃɪŋ/ — sounds like **STRECH-ing** | /ˈstretʃɪŋ/ — sounds like **STRECH-ing**
-265. whole | /həʊl/ — sounds like **HOHL** | /hoʊl/ — sounds like **HOHL**
-266. frontier | /ˈfrʌntɪə/ — sounds like **FRUN-teer** | /frʌnˈtɪr/ — sounds like **frun-TEER**
-267. cautionary | /ˈkɔːʃənəri/ — sounds like **KAW-shuh-nuh-ree** | /ˈkɔʃəneri/ — sounds like **KAH-shuh-ner-ee**
-268. forecast | /ˈfɔːkɑːst/ — sounds like **FOR-kahst** | /ˈfɔrkæst/ — sounds like **FOR-kast**
-269. migration | /maɪˈɡreɪʃən/ — sounds like **my-GRAY-shun** | /maɪˈɡreɪʃən/ — sounds like **my-GRAY-shun**
-270. circuit | /ˈsɜːkɪt/ — sounds like **SUR-kit** | /ˈsɝkət/ — sounds like **SUR-kut**
-271. discovery | /dɪˈskʌvəri/ — sounds like **di-SKUV-uh-ree** | /dəˈskʌvəri/ — sounds like **duh-SKUV-uh-ree**
-272. constructive | /kənˈstrʌktɪv/ — sounds like **kun-STRUK-tiv** | /kənˈstrʌktəv/ — sounds like **kun-STRUK-tuv**
-273. imagining | /ɪˈmædʒɪnɪŋ/ — sounds like **i-MAJ-i-ning** | /ɪˈmædʒənɪŋ/ — sounds like **i-MAJ-uh-ning**
-274. conversation | /ˌkɒnvəˈseɪʃən/ — sounds like **KON-vuh-SAY-shun** | /ˌkɑnvərˈseɪʃən/ — sounds like **KAHN-vur-SAY-shun**
-275. propose | /prəˈpəʊz/ — sounds like **pruh-POHZ** | /prəˈpoʊz/ — sounds like **pruh-POHZ**
-276. mentioned | /ˈmenʃənd/ — sounds like **MEN-shund** | /ˈmenʃənd/ — sounds like **MEN-shund**
-277. charity | /ˈtʃærəti/ — sounds like **CHAR-uh-tee** | /ˈtʃærəti/ — sounds like **CHAR-uh-tee**
-278. skilled | /skɪld/ — sounds like **SKILD** | /skɪld/ — sounds like **SKILD**
-279. motive | /ˈməʊtɪv/ — sounds like **MOH-tiv** | /ˈmoʊtəv/ — sounds like **MOH-tuv**
-280. assume | /əˈsjuːm/ — sounds like **uh-SYOOM** | /əˈsum/ — sounds like **uh-SOOM**
-281. circulation | /ˌsɜːkjʊˈleɪʃən/ — sounds like **SUR-kyoo-LAY-shun** | /ˌsɝkjəˈleɪʃən/ — sounds like **SUR-kyuh-LAY-shun**
-282. immune | /ɪˈmjuːn/ — sounds like **i-MYOON** | /ɪˈmun/ — sounds like **i-MOON**
-283. processes | /ˈprəʊsesɪz/ — sounds like **PROH-ses-iz** | /ˈprɑsəsəz/ — sounds like **PRAH-sus-uz**
-284. key | /kiː/ — sounds like **KEE** | /ki/ — sounds like **KEE**
-285. supplemental | /ˌsʌplɪˈmentəl/ — sounds like **SUP-li-MEN-tul** | /ˌsʌpləˈmentəl/ — sounds like **SUP-luh-MEN-tul**
-286. translocation | /ˌtrænsləʊˈkeɪʃən/ — sounds like **TRAN-sloh-KAY-shun** | /ˌtrænsloʊˈkeɪʃən/ — sounds like **TRANS-loh-KAY-shun**
-287. initially | /ɪˈnɪʃəli/ — sounds like **i-NISH-uh-lee** | /ɪˈnɪʃəli/ — sounds like **i-NISH-uh-lee**
-288. overfishing | /ˌəʊvəˈfɪʃɪŋ/ — sounds like **OH-vuh-FISH-ing** | /ˌoʊvərˈfɪʃɪŋ/ — sounds like **OH-vur-FISH-ing**
-289. productivity | /ˌprɒdʌkˈtɪvəti/ — sounds like **PROD-uk-TIV-uh-tee** | /ˌprɑdəkˈtɪvəti/ — sounds like **PRAH-duk-TIV-uh-tee**
-290. predict | /prɪˈdɪkt/ — sounds like **pri-DIKT** | /prəˈdɪkt/ — sounds like **pruh-DIKT**
-291. bounds | /baʊndz/ — sounds like **BOWNDZ** | /baʊndz/ — sounds like **BOWNDZ**
-292. grapher | /ˈɡræfə/ — sounds like **GRAF-uh** | /ˈɡræfər/ — sounds like **GRAF-ur**
-293. circular | /ˈsɜːkjʊlə/ — sounds like **SUR-kyuh-luh** | /ˈsɝkjələr/ — sounds like **SUR-kyuh-lur**
-294. principally | /ˈprɪnsɪpəli/ — sounds like **PRIN-si-puh-lee** | /ˈprɪnsəpəli/ — sounds like **PRIN-suh-puh-lee**
-295. bond | /bɒnd/ — sounds like **BOND** | /bɑnd/ — sounds like **BAHND**
-296. complex | /ˈkɒmpleks/ — sounds like **KOM-pleks** | /ˈkɑmpleks/ — sounds like **KAHM-pleks**
-297. origin | /ˈɒrɪdʒɪn/ — sounds like **OR-i-jin** | /ˈɔrədʒən/ — sounds like **OR-uh-jun**
-298. delivering | /dɪˈlɪvərɪŋ/ — sounds like **di-LIV-uh-ring** | /dəˈlɪvərɪŋ/ — sounds like **duh-LIV-uh-ring**
-299. aesthetic | /iːsˈθetɪk/ — sounds like **ees-THET-ik** | /esˈθetək/ — sounds like **es-THET-uk**
-300. technologically | /ˌteknəˈlɒdʒɪkəli/ — sounds like **TEK-nuh-LOJ-i-kuh-lee** | /ˌteknəˈlɑdʒəkəli/ — sounds like **TEK-nuh-LAH-juh-kuh-lee**
-301. sub-letting | /sʌbˈletɪŋ/ — sounds like **sub-LET-ing** | /sʌbˈletɪŋ/ — sounds like **sub-LET-ing**
-302. controversial | /ˌkɒntrəˈvɜːʃəl/ — sounds like **KON-truh-VUR-shul** | /ˌkɑntrəˈvɝʃəl/ — sounds like **KAHN-truh-VUR-shul**
-303. response | /rɪˈspɒns/ — sounds like **ri-SPONS** | /rəˈspɑns/ — sounds like **ruh-SPAHNS**
-304. bored | /bɔːd/ — sounds like **BORD** | /bɔrd/ — sounds like **BORD**
-305. acknowledge | /əkˈnɒlɪdʒ/ — sounds like **uk-NOL-ij** | /ækˈnɑlɪdʒ/ — sounds like **ak-NAH-lij**
-306. technologies | /tekˈnɒlədʒiz/ — sounds like **tek-NOL-uh-jiz** | /tekˈnɑlədʒiz/ — sounds like **tek-NAH-luh-jiz**
-307. predictable | /prɪˈdɪktəbəl/ — sounds like **pri-DIK-tuh-bul** | /prəˈdɪktəbəl/ — sounds like **pruh-DIK-tuh-bul**
-308. observable | /əbˈzɜːvəbəl/ — sounds like **ub-ZUR-vuh-bul** | /əbˈzɝvəbəl/ — sounds like **ub-ZUR-vuh-bul**
-309. thereafter | /ˌðeərˈɑːftə/ — sounds like **THAIR-AHF-tuh** | /ˌðerˈæftər/ — sounds like **THAIR-AF-tur**
-310. warmer | /ˈwɔːmə/ — sounds like **WOR-muh** | /ˈwɔrmər/ — sounds like **WOR-mur**
-311. earnestly | /ˈɜːnɪstli/ — sounds like **UR-nist-lee** | /ˈɝnəstli/ — sounds like **UR-nust-lee**
-312. tightly | /ˈtaɪtli/ — sounds like **TYT-lee** | /ˈtaɪtli/ — sounds like **TYT-lee**
-313. root | /ruːt/ — sounds like **ROOT** | /rut/ — sounds like **ROOT**
-314. consistency | /kənˈsɪstənsi/ — sounds like **kun-SIS-tun-see** | /kənˈsɪstənsi/ — sounds like **kun-SIS-tun-see**
-315. summer | /ˈsʌmə/ — sounds like **SUM-uh** | /ˈsʌmər/ — sounds like **SUM-ur**
-316. equities | /ˈekwɪtiz/ — sounds like **EK-wi-teez** | /ˈekwətiz/ — sounds like **EK-wuh-teez**
-317. predator | /ˈpredətə/ — sounds like **PRED-uh-tuh** | /ˈpredətər/ — sounds like **PRED-uh-tur**
-318. titled | /ˈtaɪtəld/ — sounds like **TY-tuld** | /ˈtaɪtəld/ — sounds like **TY-tuld**
-319. traditional | /trəˈdɪʃənəl/ — sounds like **truh-DISH-uh-nul** | /trəˈdɪʃənəl/ — sounds like **truh-DISH-uh-nul**
-320. beneath | /bɪˈniːθ/ — sounds like **bi-NEETH** | /bəˈniθ/ — sounds like **buh-NEETH**
-321. package | /ˈpækɪdʒ/ — sounds like **PAK-ij** | /ˈpækədʒ/ — sounds like **PAK-uj**
-322. electronics | /ɪlekˈtrɒnɪks/ — sounds like **i-lek-TRON-iks** | /ɪlekˈtrɑnəks/ — sounds like **i-lek-TRAH-nuks**
-323. session | /ˈseʃən/ — sounds like **SESH-un** | /ˈseʃən/ — sounds like **SESH-un**
-324. portraits | /ˈpɔːtrɪts/ — sounds like **POR-trits** | /ˈpɔrtrəts/ — sounds like **POR-truhts**
-325. photos | /ˈfəʊtəʊz/ — sounds like **FOH-tohz** | /ˈfoʊtoʊz/ — sounds like **FOH-tohz**
-326. predicament | /prɪˈdɪkəmənt/ — sounds like **pri-DIK-uh-munt** | /prəˈdɪkəmənt/ — sounds like **pruh-DIK-uh-munt**
-327. paradox | /ˈpærədɒks/ — sounds like **PAR-uh-doks** | /ˈpærədɑks/ — sounds like **PAR-uh-dahks**
-328. Tokyo | /ˈtəʊkjəʊ/ — sounds like **TOH-kyoh** | /ˈtoʊkjoʊ/ — sounds like **TOH-kyoh**
-329. popular | /ˈpɒpjʊlə/ — sounds like **POP-yuh-luh** | /ˈpɑpjələr/ — sounds like **PAH-pyuh-lur**
-330. coalition | /ˌkəʊəˈlɪʃən/ — sounds like **KOH-uh-LISH-un** | /ˌkoʊəˈlɪʃən/ — sounds like **KOH-uh-LISH-un**
-331. library | /ˈlaɪbrəri/ — sounds like **LY-bruh-ree** | /ˈlaɪbreri/ — sounds like **LY-brer-ee**
-332. complicated | /ˈkɒmplɪkeɪtɪd/ — sounds like **KOM-pli-kay-tid** | /ˈkɑmpləkeɪtəd/ — sounds like **KAHM-pluh-kay-tud**
-333. added | /ˈædɪd/ — sounds like **AD-id** | /ˈædəd/ — sounds like **AD-ud**
-334. constant | /ˈkɒnstənt/ — sounds like **KON-stunt** | /ˈkɑnstənt/ — sounds like **KAHN-stunt**
-335. confess | /kənˈfes/ — sounds like **kun-FES** | /kənˈfes/ — sounds like **kun-FES**
-336. context | /ˈkɒntekst/ — sounds like **KON-tekst** | /ˈkɑntekst/ — sounds like **KAHN-tekst**
-337. professionally | /prəˈfeʃənəli/ — sounds like **pruh-FESH-uh-nuh-lee** | /prəˈfeʃənəli/ — sounds like **pruh-FESH-uh-nuh-lee**
-338. serious | /ˈsɪəriəs/ — sounds like **SEER-ee-us** | /ˈsɪriəs/ — sounds like **SEER-ee-us**
-339. rustic | /ˈrʌstɪk/ — sounds like **RUS-tik** | /ˈrʌstək/ — sounds like **RUS-tuk**
-340. million | /ˈmɪljən/ — sounds like **MIL-yun** | /ˈmɪljən/ — sounds like **MIL-yun**
-341. sick | /sɪk/ — sounds like **SIK** | /sɪk/ — sounds like **SIK**
-342. passenger | /ˈpæsɪndʒə/ — sounds like **PAS-in-juh** | /ˈpæsəndʒər/ — sounds like **PAS-un-jur**
-343. intelligent | /ɪnˈtelɪdʒənt/ — sounds like **in-TEL-i-junt** | /ɪnˈtelədʒənt/ — sounds like **in-TEL-uh-junt**
-344. development | /dɪˈveləpmənt/ — sounds like **di-VEL-up-munt** | /dəˈveləpmənt/ — sounds like **duh-VEL-up-munt**
-345. photographs | /ˈfəʊtəɡrɑːfs/ — sounds like **FOH-tuh-grahfs** | /ˈfoʊtəɡræfs/ — sounds like **FOH-tuh-grafs**
-346. relevance | /ˈreləvəns/ — sounds like **REL-uh-vuns** | /ˈreləvəns/ — sounds like **REL-uh-vuns**
-347. ground | /ɡraʊnd/ — sounds like **GROWND** | /ɡraʊnd/ — sounds like **GROWND**
-348. overview | /ˈəʊvəvjuː/ — sounds like **OH-vuh-vyoo** | /ˈoʊvərvju/ — sounds like **OH-vur-vyoo**
-349. mutate | /mjuːˈteɪt/ — sounds like **myoo-TAYT** | /ˈmjuteɪt/ — sounds like **MYOO-tayt**
-350. separated | /ˈsepəreɪtɪd/ — sounds like **SEP-uh-ray-tid** | /ˈsepəreɪtəd/ — sounds like **SEP-uh-ray-tud**
-351. image | /ˈɪmɪdʒ/ — sounds like **IM-ij** | /ˈɪmədʒ/ — sounds like **IM-uj**
-352. competitions | /ˌkɒmpəˈtɪʃənz/ — sounds like **KOM-puh-TISH-unz** | /ˌkɑmpəˈtɪʃənz/ — sounds like **KAHM-puh-TISH-unz**
-353. autumn | /ˈɔːtəm/ — sounds like **OR-tum** | /ˈɔtəm/ — sounds like **AH-tum**
-354. Sales | /seɪlz/ — sounds like **SAYLZ** | /seɪlz/ — sounds like **SAYLZ**
-355. commonly | /ˈkɒmənli/ — sounds like **KOM-un-lee** | /ˈkɑmənli/ — sounds like **KAH-mun-lee**
-356. enormously | /ɪˈnɔːməsli/ — sounds like **i-NOR-mus-lee** | /ɪˈnɔrməsli/ — sounds like **i-NOR-mus-lee**
-357. perspective | /pəˈspektɪv/ — sounds like **puh-SPEK-tiv** | /pərˈspektəv/ — sounds like **pur-SPEK-tuv**
-358. folder | /ˈfəʊldə/ — sounds like **FOHL-duh** | /ˈfoʊldər/ — sounds like **FOHL-dur**
-359. swings | /swɪŋz/ — sounds like **SWINGZ** | /swɪŋz/ — sounds like **SWINGZ**
-360. proponent | /prəˈpəʊnənt/ — sounds like **pruh-POH-nunt** | /prəˈpoʊnənt/ — sounds like **pruh-POH-nunt**
-361. shallow | /ˈʃæləʊ/ — sounds like **SHAL-oh** | /ˈʃæloʊ/ — sounds like **SHAL-oh**
-362. pedal | /ˈpedəl/ — sounds like **PED-ul** | /ˈpedəl/ — sounds like **PED-ul**
-363. deduction | /dɪˈdʌkʃən/ — sounds like **di-DUK-shun** | /dəˈdʌkʃən/ — sounds like **duh-DUK-shun**
-364. destination | /ˌdestɪˈneɪʃən/ — sounds like **DES-ti-NAY-shun** | /ˌdestəˈneɪʃən/ — sounds like **DES-tuh-NAY-shun**
-365. genius | /ˈdʒiːniəs/ — sounds like **JEE-nee-us** | /ˈdʒinjəs/ — sounds like **JIN-yus**
-366. assumed | /əˈsjuːmd/ — sounds like **uh-SYOOMD** | /əˈsumd/ — sounds like **uh-SOOMD**
-367. baffle | /ˈbæfəl/ — sounds like **BAF-ul** | /ˈbæfəl/ — sounds like **BAF-ul**
-368. them | /ðem/ — sounds like **THEM** | /ðəm/ — sounds like **THUM**
-369. compel | /kəmˈpel/ — sounds like **kum-PEL** | /kəmˈpel/ — sounds like **kum-PEL**
-370. tension | /ˈtenʃən/ — sounds like **TEN-shun** | /ˈtenʃən/ — sounds like **TEN-shun**
-371. covert | /ˈkʌvət/ — sounds like **KUV-ut** | /ˈkoʊvɝt/ — sounds like **KOH-vurt**
-372. determination | /dɪˌtɜːmɪˈneɪʃən/ — sounds like **di-TUR-mi-NAY-shun** | /dəˌtɝməˈneɪʃən/ — sounds like **duh-TUR-muh-NAY-shun**
-373. purpose | /ˈpɜːpəs/ — sounds like **PUR-pus** | /ˈpɝpəs/ — sounds like **PUR-pus**
-374. coaching | /ˈkəʊtʃɪŋ/ — sounds like **KOH-ching** | /ˈkoʊtʃɪŋ/ — sounds like **KOH-ching**
-375. prediction | /prɪˈdɪkʃən/ — sounds like **pri-DIK-shun** | /prəˈdɪkʃən/ — sounds like **pruh-DIK-shun**
-376. consistent | /kənˈsɪstənt/ — sounds like **kun-SIS-tunt** | /kənˈsɪstənt/ — sounds like **kun-SIS-tunt**
-377. style | /staɪl/ — sounds like **STYL** | /staɪl/ — sounds like **STYL**
-378. probability | /ˌprɒbəˈbɪləti/ — sounds like **PROB-uh-BIL-uh-tee** | /ˌprɑbəˈbɪləti/ — sounds like **PRAH-buh-BIL-uh-tee**
-379. shaped | /ʃeɪpt/ — sounds like **SHAYPT** | /ʃeɪpt/ — sounds like **SHAYPT**
-380. individual | /ˌɪndɪˈvɪdʒuəl/ — sounds like **IN-di-VIJ-oo-ul** | /ˌɪndəˈvɪdʒuəl/ — sounds like **IN-duh-VIJ-oo-ul**
-381. celebrate | /ˈseləbreɪt/ — sounds like **SEL-uh-brayt** | /ˈseləbreɪt/ — sounds like **SEL-uh-brayt**
-382. dispersal | /dɪˈspɜːsəl/ — sounds like **di-SPUR-sul** | /dəˈspɝsəl/ — sounds like **duh-SPUR-sul**
-383. taught | /tɔːt/ — sounds like **TAWT** | /tɔt/ — sounds like **TAHT**
-384. force | /fɔːs/ — sounds like **FORS** | /fɔrs/ — sounds like **FORS**
-385. leading | /ˈliːdɪŋ/ — sounds like **LEE-ding** | /ˈlidɪŋ/ — sounds like **LEE-ding**
-386. graduated | /ˈɡrædʒueɪtɪd/ — sounds like **GRAJ-oo-ay-tid** | /ˈɡrædʒueɪtəd/ — sounds like **GRAJ-oo-ay-tud**
-387. sculpture | /ˈskʌlptʃə/ — sounds like **SKULP-chuh** | /ˈskʌlptʃər/ — sounds like **SKULP-chur**
-388. frequency | /ˈfriːkwənsi/ — sounds like **FREE-kwun-see** | /ˈfrikwənsi/ — sounds like **FREE-kwun-see**
-389. rash | /ræʃ/ — sounds like **RASH** | /ræʃ/ — sounds like **RASH**
-390. beleaguered | /bɪˈliːɡəd/ — sounds like **bi-LEE-gurd** | /bəˈliɡərd/ — sounds like **buh-LEE-gurd**
-391. majority | /məˈdʒɒrəti/ — sounds like **muh-JOR-uh-tee** | /məˈdʒɔrəti/ — sounds like **muh-JOR-uh-tee**
-392. forensic | /fəˈrensɪk/ — sounds like **fuh-REN-sik** | /fəˈrensək/ — sounds like **fuh-REN-suk**
-393. devastating | /ˈdevəsteɪtɪŋ/ — sounds like **DEV-uh-stay-ting** | /ˈdevəsteɪtɪŋ/ — sounds like **DEV-uh-stay-ting**
-394. boast | /bəʊst/ — sounds like **BOHST** | /boʊst/ — sounds like **BOHST**
-395. revenue | /ˈrevənjuː/ — sounds like **REV-uh-nyoo** | /ˈrevənju/ — sounds like **REV-uh-nyoo**
-396. brilliant | /ˈbrɪljənt/ — sounds like **BRIL-yunt** | /ˈbrɪljənt/ — sounds like **BRIL-yunt**
-397. lure | /lʊə/ — sounds like **LOOR** | /lʊr/ — sounds like **LOOR**
-398. enlarge | /ɪnˈlɑːdʒ/ — sounds like **in-LARJ** | /ɪnˈlɑrdʒ/ — sounds like **in-LARJ**
-399. qualitative | /ˈkwɒlɪtətɪv/ — sounds like **KWOL-i-tuh-tiv** | /ˈkwɑlətətəv/ — sounds like **KWAH-luh-tuh-tuv**
-400. conditions | /kənˈdɪʃənz/ — sounds like **kun-DISH-unz** | /kənˈdɪʃənz/ — sounds like **kun-DISH-unz**
-401. urgent | /ˈɜːdʒənt/ — sounds like **UR-junt** | /ˈɝdʒənt/ — sounds like **UR-junt**
-402. perception | /pəˈsepʃən/ — sounds like **puh-SEP-shun** | /pərˈsepʃən/ — sounds like **pur-SEP-shun**
-403. gaps | /ɡæps/ — sounds like **GAPS** | /ɡæps/ — sounds like **GAPS**
-404. articles | /ˈɑːtɪkəlz/ — sounds like **AR-ti-kulz** | /ˈɑrtəkəlz/ — sounds like **AR-tuh-kulz**
-405. light | /laɪt/ — sounds like **LYT** | /laɪt/ — sounds like **LYT**
-406. system | /ˈsɪstəm/ — sounds like **SIS-tum** | /ˈsɪstəm/ — sounds like **SIS-tum**
-407. generated | /ˈdʒenəreɪtɪd/ — sounds like **JEN-uh-ray-tid** | /ˈdʒenəreɪtəd/ — sounds like **JEN-uh-ray-tud**
-408. whatever | /wɒtˈevə/ — sounds like **wot-EV-uh** | /wɑtˈevər/ — sounds like **waht-EV-ur**
-409. swift | /swɪft/ — sounds like **SWIFT** | /swɪft/ — sounds like **SWIFT**
-410. develop | /dɪˈveləp/ — sounds like **di-VEL-up** | /dəˈveləp/ — sounds like **duh-VEL-up**
-411. incredibly | /ɪnˈkredɪbli/ — sounds like **in-KRED-i-blee** | /ɪnˈkredəbli/ — sounds like **in-KRED-uh-blee**
-412. obtaining | /əbˈteɪnɪŋ/ — sounds like **ub-TAY-ning** | /əbˈteɪnɪŋ/ — sounds like **ub-TAY-ning**
-413. proposal | /prəˈpəʊzəl/ — sounds like **pruh-POH-zul** | /prəˈpoʊzəl/ — sounds like **pruh-POH-zul**
-414. include | /ɪnˈkluːd/ — sounds like **in-KLOOD** | /ɪnˈklud/ — sounds like **in-KLOOD**
-415. diffident | /ˈdɪfɪdənt/ — sounds like **DIF-i-dunt** | /ˈdɪfədənt/ — sounds like **DIF-uh-dunt**
-416. colloquial | /kəˈləʊkwiəl/ — sounds like **kuh-LOH-kwee-ul** | /kəˈloʊkwiəl/ — sounds like **kuh-LOH-kwee-ul**
-417. essentially | /ɪˈsenʃəli/ — sounds like **i-SEN-shuh-lee** | /əˈsenʃəli/ — sounds like **uh-SEN-shuh-lee**
-418. subsidies | /ˈsʌbsɪdiz/ — sounds like **SUB-si-deez** | /ˈsʌbsədiz/ — sounds like **SUB-suh-deez**
-419. strength | /streŋθ/ — sounds like **STRENGTH** | /streŋθ/ — sounds like **STRENGTH**
-420. natural | /ˈnætʃərəl/ — sounds like **NACH-uh-rul** | /ˈnætʃərəl/ — sounds like **NACH-uh-rul**
-421. important | /ɪmˈpɔːtənt/ — sounds like **im-POR-tunt** | /ɪmˈpɔrtənt/ — sounds like **im-POR-tunt**
-422. offsetting | /ˈɒfsetɪŋ/ — sounds like **OF-set-ing** | /ˈɑfsetɪŋ/ — sounds like **AHF-set-ing**
-423. plastic | /ˈplæstɪk/ — sounds like **PLAS-tik** | /ˈplæstək/ — sounds like **PLAS-tuk**
-424. simple | /ˈsɪmpəl/ — sounds like **SIM-pul** | /ˈsɪmpəl/ — sounds like **SIM-pul**
-425. swung | /swʌŋ/ — sounds like **SWUNG** | /swʌŋ/ — sounds like **SWUNG**
-426. single | /ˈsɪŋɡəl/ — sounds like **SING-gul** | /ˈsɪŋɡəl/ — sounds like **SING-gul**
-427. process | /ˈprəʊses/ — sounds like **PROH-ses** | /ˈprɑsəs/ — sounds like **PRAH-sus**
-428. oceanologist | /ˌəʊʃəˈnɒlədʒɪst/ — sounds like **OH-shuh-NOL-uh-jist** | /ˌoʊʃəˈnɑlədʒəst/ — sounds like **OH-shuh-NAH-luh-just**
-429. substances | /ˈsʌbstənsɪz/ — sounds like **SUB-stun-siz** | /ˈsʌbstənsəz/ — sounds like **SUB-stun-suz**
-430. chef | /ʃef/ — sounds like **SHEF** | /ʃef/ — sounds like **SHEF**
-431. situation | /ˌsɪtʃuˈeɪʃən/ — sounds like **SIT-choo-AY-shun** | /ˌsɪtʃuˈeɪʃən/ — sounds like **SIT-choo-AY-shun**
-432. produce | /prəˈdjuːs/ — sounds like **pruh-DYOOS** | /prəˈdus/ — sounds like **pruh-DOOS**
-433. green | /ɡriːn/ — sounds like **GREEN** | /ɡrin/ — sounds like **GREEN**
-434. invaluable | /ɪnˈvæljuəbəl/ — sounds like **in-VAL-yoo-uh-bul** | /ɪnˈvæljəbəl/ — sounds like **in-VAL-yuh-bul**
-435. casually | /ˈkæʒuəli/ — sounds like **KAZH-oo-uh-lee** | /ˈkæʒuəli/ — sounds like **KAZH-oo-uh-lee**
-436. annotation | /ˌænəˈteɪʃən/ — sounds like **AN-uh-TAY-shun** | /ˌænəˈteɪʃən/ — sounds like **AN-uh-TAY-shun**
-437. risks | /rɪsks/ — sounds like **RISKS** | /rɪsks/ — sounds like **RISKS**
-438. irrational | /ɪˈræʃənəl/ — sounds like **i-RASH-uh-nul** | /ɪˈræʃənəl/ — sounds like **i-RASH-uh-nul**
-439. knowledge | /ˈnɒlɪdʒ/ — sounds like **NOL-ij** | /ˈnɑlɪdʒ/ — sounds like **NAH-lij**
-440. nutrition | /njuˈtrɪʃən/ — sounds like **nyoo-TRISH-un** | /nuˈtrɪʃən/ — sounds like **noo-TRISH-un**
-441. decade | /ˈdekeɪd/ — sounds like **DEK-ayd** | /ˈdekeɪd/ — sounds like **DEK-ayd**
-442. institutional | /ˌɪnstɪˈtjuːʃənəl/ — sounds like **IN-sti-TYOO-shuh-nul** | /ˌɪnstəˈtuʃənəl/ — sounds like **IN-stuh-TOO-shuh-nul**
-443. describe | /dɪˈskraɪb/ — sounds like **di-SKRYB** | /dəˈskraɪb/ — sounds like **duh-SKRYB**
-444. emulated | /ˈemjʊleɪtɪd/ — sounds like **EM-yoo-lay-tid** | /ˈemjəleɪtəd/ — sounds like **EM-yuh-lay-tud**
-445. optimizing | /ˈɒptɪmaɪzɪŋ/ — sounds like **OP-ti-myz-ing** | /ˈɑptəmaɪzɪŋ/ — sounds like **AHP-tuh-myz-ing**
-446. respondents | /rɪˈspɒndənts/ — sounds like **ri-SPON-dunts** | /rəˈspɑndənts/ — sounds like **ruh-SPAHN-dunts**
-447. confirm | /kənˈfɜːm/ — sounds like **kun-FURM** | /kənˈfɝm/ — sounds like **kun-FURM**
-448. subject | /ˈsʌbdʒekt/ — sounds like **SUB-jekt** | /ˈsʌbdʒekt/ — sounds like **SUB-jekt**
-449. socialize | /ˈsəʊʃəlaɪz/ — sounds like **SOH-shuh-lyz** | /ˈsoʊʃəlaɪz/ — sounds like **SOH-shuh-lyz**
-450. church | /tʃɜːtʃ/ — sounds like **CHURCH** | /tʃɝtʃ/ — sounds like **CHURCH**
-451. happen | /ˈhæpən/ — sounds like **HAP-un** | /ˈhæpən/ — sounds like **HAP-un**
-452. philosophy | /fɪˈlɒsəfi/ — sounds like **fi-LOS-uh-fee** | /fəˈlɑsəfi/ — sounds like **fuh-LAH-suh-fee**
-453. wondering | /ˈwʌndərɪŋ/ — sounds like **WUN-duh-ring** | /ˈwʌndərɪŋ/ — sounds like **WUN-duh-ring**
-454. stick | /stɪk/ — sounds like **STIK** | /stɪk/ — sounds like **STIK**
-455. mathematics | /ˌmæθəˈmætɪks/ — sounds like **MATH-uh-MAT-iks** | /ˌmæθəˈmætəks/ — sounds like **MATH-uh-MAT-uks**
-456. mean | /miːn/ — sounds like **MEEN** | /min/ — sounds like **MEEN**
-457. engineering | /ˌendʒɪˈnɪərɪŋ/ — sounds like **EN-ji-NEER-ing** | /ˌendʒəˈnɪrɪŋ/ — sounds like **EN-juh-NEER-ing**
-458. paddle | /ˈpædəl/ — sounds like **PAD-ul** | /ˈpædəl/ — sounds like **PAD-ul**
-459. habitat | /ˈhæbɪtæt/ — sounds like **HAB-i-tat** | /ˈhæbətæt/ — sounds like **HAB-uh-tat**
-460. dialogue | /ˈdaɪəlɒɡ/ — sounds like **DY-uh-log** | /ˈdaɪəlɔɡ/ — sounds like **DY-uh-log**
-461. problems | /ˈprɒbləmz/ — sounds like **PROB-lumz** | /ˈprɑbləmz/ — sounds like **PRAH-blumz**
-462. technician | /tekˈnɪʃən/ — sounds like **tek-NISH-un** | /tekˈnɪʃən/ — sounds like **tek-NISH-un**
-463. productive | /prəˈdʌktɪv/ — sounds like **pruh-DUK-tiv** | /prəˈdʌktəv/ — sounds like **pruh-DUK-tuv**
-464. factors | /ˈfæktəz/ — sounds like **FAK-turz** | /ˈfæktərz/ — sounds like **FAK-turz**
-465. biology | /baɪˈɒlədʒi/ — sounds like **by-OL-uh-jee** | /baɪˈɑlədʒi/ — sounds like **by-AH-luh-jee**
-466. indeed | /ɪnˈdiːd/ — sounds like **in-DEED** | /ɪnˈdid/ — sounds like **in-DEED**
-467. encouraging | /ɪnˈkʌrɪdʒɪŋ/ — sounds like **in-KUR-i-jing** | /ɪnˈkɝədʒɪŋ/ — sounds like **in-KUR-uh-jing**
-468. climate | /ˈklaɪmət/ — sounds like **KLY-mut** | /ˈklaɪmət/ — sounds like **KLY-mut**
-469. assurance | /əˈʃʊərəns/ — sounds like **uh-SHOOR-uns** | /əˈʃʊrəns/ — sounds like **uh-SHOOR-uns**
-470. spirit | /ˈspɪrɪt/ — sounds like **SPIR-it** | /ˈspɪrət/ — sounds like **SPIR-ut**
-471. stabilized | /ˈsteɪbəlaɪzd/ — sounds like **STAY-buh-lyzd** | /ˈsteɪbəlaɪzd/ — sounds like **STAY-buh-lyzd**
-472. campus | /ˈkæmpəs/ — sounds like **KAM-pus** | /ˈkæmpəs/ — sounds like **KAM-pus**
-473. admit | /ədˈmɪt/ — sounds like **ud-MIT** | /ædˈmɪt/ — sounds like **ad-MIT**
-474. intentionally | /ɪnˈtenʃənəli/ — sounds like **in-TEN-shuh-nuh-lee** | /ɪnˈtenʃənəli/ — sounds like **in-TEN-shuh-nuh-lee**
-475. want | /wɒnt/ — sounds like **WONT** | /wɑnt/ — sounds like **WAHNT**
-476. drowning | /ˈdraʊnɪŋ/ — sounds like **DROW-ning** | /ˈdraʊnɪŋ/ — sounds like **DROW-ning**
-477. dawn | /dɔːn/ — sounds like **DAWN** | /dɔn/ — sounds like **DAHN**
-478. team | /tiːm/ — sounds like **TEEM** | /tim/ — sounds like **TEEM**
-479. manufacture | /ˌmænjʊˈfæktʃə/ — sounds like **MAN-yoo-FAK-chuh** | /ˌmænjəˈfæktʃər/ — sounds like **MAN-yuh-FAK-chur**
-480. description | /dɪˈskrɪpʃən/ — sounds like **di-SKRIP-shun** | /dəˈskrɪpʃən/ — sounds like **duh-SKRIP-shun**
-481. large | /lɑːdʒ/ — sounds like **LARJ** | /lɑrdʒ/ — sounds like **LARJ**
-482. vogue | /vəʊɡ/ — sounds like **VOHG** | /voʊɡ/ — sounds like **VOHG**
-483. facilities | /fəˈsɪlətiz/ — sounds like **fuh-SIL-uh-teez** | /fəˈsɪlətiz/ — sounds like **fuh-SIL-uh-teez**
-484. salted | /ˈsɔːltɪd/ — sounds like **SAWL-tid** | /ˈsɔltəd/ — sounds like **SAHL-tud**
-485. overseeing | /ˌəʊvəˈsiːɪŋ/ — sounds like **OH-vuh-SEE-ing** | /ˌoʊvərˈsiɪŋ/ — sounds like **OH-vur-SEE-ing**
-486. shortage | /ˈʃɔːtɪdʒ/ — sounds like **SHOR-tij** | /ˈʃɔrtədʒ/ — sounds like **SHOR-tuj**
-487. appalling | /əˈpɔːlɪŋ/ — sounds like **uh-PAW-ling** | /əˈpɔlɪŋ/ — sounds like **uh-PAH-ling**
-488. component | /kəmˈpəʊnənt/ — sounds like **kum-POH-nunt** | /kəmˈpoʊnənt/ — sounds like **kum-POH-nunt**
-489. oyster | /ˈɔɪstə/ — sounds like **OY-stuh** | /ˈɔɪstər/ — sounds like **OY-stur**
-490. convincible | /kənˈvɪnsəbəl/ — sounds like **kun-VIN-suh-bul** | /kənˈvɪnsəbəl/ — sounds like **kun-VIN-suh-bul**
-491. intensity | /ɪnˈtensəti/ — sounds like **in-TEN-suh-tee** | /ɪnˈtensəti/ — sounds like **in-TEN-suh-tee**
-492. agriculture | /ˈæɡrɪkʌltʃə/ — sounds like **AG-ri-kul-chuh** | /ˈæɡrəkʌltʃər/ — sounds like **AG-ruh-kul-chur**
-493. restricted | /rɪˈstrɪktɪd/ — sounds like **ri-STRIK-tid** | /rəˈstrɪktəd/ — sounds like **ruh-STRIK-tud**
-494. originated | /əˈrɪdʒɪneɪtɪd/ — sounds like **uh-RIJ-i-nay-tid** | /əˈrɪdʒəneɪtəd/ — sounds like **uh-RIJ-uh-nay-tud**
-495. shoots | /ʃuːts/ — sounds like **SHOOTS** | /ʃuts/ — sounds like **SHOOTS**
-496. profession | /prəˈfeʃən/ — sounds like **pruh-FESH-un** | /prəˈfeʃən/ — sounds like **pruh-FESH-un**
-497. scary | /ˈskeəri/ — sounds like **SKAIR-ee** | /ˈskeri/ — sounds like **SKAIR-ee**
-498. emergency | /ɪˈmɜːdʒənsi/ — sounds like **i-MUR-jun-see** | /ɪˈmɝdʒənsi/ — sounds like **i-MUR-jun-see**
-499. ride | /raɪd/ — sounds like **RYD** | /raɪd/ — sounds like **RYD**
-500. modern | /ˈmɒdən/ — sounds like **MOD-un** | /ˈmɑdərn/ — sounds like **MAH-durn**
-501. maximize | /ˈmæksɪmaɪz/ — sounds like **MAK-si-myz** | /ˈmæksəmaɪz/ — sounds like **MAK-suh-myz**
-502. issue | /ˈɪʃuː/ — sounds like **ISH-oo** | /ˈɪʃu/ — sounds like **ISH-oo**
-503. chlorophyll | /ˈklɔːrəfɪl/ — sounds like **KLOR-uh-fil** | /ˈklɔrəfɪl/ — sounds like **KLOR-uh-fil**
-504. clothing | /ˈkləʊðɪŋ/ — sounds like **KLOH-thing** | /ˈkloʊðɪŋ/ — sounds like **KLOH-thing**
-505. accumulating | /əˈkjuːmjʊleɪtɪŋ/ — sounds like **uh-KYOO-myoo-lay-ting** | /əˈkjumjəleɪtɪŋ/ — sounds like **uh-KYOO-myuh-lay-ting**
-506. Improvements | /ɪmˈpruːvmənts/ — sounds like **im-PROOV-munts** | /ɪmˈpruvmənts/ — sounds like **im-PROOV-munts**
-507. depth | /depθ/ — sounds like **DEPTH** | /depθ/ — sounds like **DEPTH**
-508. huge | /hjuːdʒ/ — sounds like **HYOOJ** | /hjudʒ/ — sounds like **HYOOJ**
-509. understanding | /ˌʌndəˈstændɪŋ/ — sounds like **UN-duh-STAN-ding** | /ˌʌndərˈstændɪŋ/ — sounds like **UN-dur-STAN-ding**
-510. decline | /dɪˈklaɪn/ — sounds like **di-KLYN** | /dəˈklaɪn/ — sounds like **duh-KLYN**
-511. relatively | /ˈrelətɪvli/ — sounds like **REL-uh-tiv-lee** | /ˈrelətəvli/ — sounds like **REL-uh-tuv-lee**
-512. markings | /ˈmɑːkɪŋz/ — sounds like **MAR-kingz** | /ˈmɑrkɪŋz/ — sounds like **MAR-kingz**
-513. reflect | /rɪˈflekt/ — sounds like **ri-FLEKT** | /rəˈflekt/ — sounds like **ruh-FLEKT**
-514. watch | /wɒtʃ/ — sounds like **WOCH** | /wɑtʃ/ — sounds like **WAHCH**
-515. solid | /ˈsɒlɪd/ — sounds like **SOL-id** | /ˈsɑləd/ — sounds like **SAH-lud**
-516. psychological | /ˌsaɪkəˈlɒdʒɪkəl/ — sounds like **SY-kuh-LOJ-i-kul** | /ˌsaɪkəˈlɑdʒəkəl/ — sounds like **SY-kuh-LAH-juh-kul**
-517. option | /ˈɒpʃən/ — sounds like **OP-shun** | /ˈɑpʃən/ — sounds like **AHP-shun**
-518. habitant | /ˈhæbɪtənt/ — sounds like **HAB-i-tunt** | /ˈhæbətənt/ — sounds like **HAB-uh-tunt**
-519. eventually | /ɪˈventʃuəli/ — sounds like **i-VEN-choo-uh-lee** | /ɪˈventʃuəli/ — sounds like **i-VEN-choo-uh-lee**
-520. emit | /ɪˈmɪt/ — sounds like **i-MIT** | /ɪˈmɪt/ — sounds like **i-MIT**
-521. density | /ˈdensəti/ — sounds like **DEN-suh-tee** | /ˈdensəti/ — sounds like **DEN-suh-tee**
-522. billion | /ˈbɪljən/ — sounds like **BIL-yun** | /ˈbɪljən/ — sounds like **BIL-yun**
-523. cluster | /ˈklʌstə/ — sounds like **KLUS-tuh** | /ˈklʌstər/ — sounds like **KLUS-tur**
-524. managers | /ˈmænɪdʒəz/ — sounds like **MAN-i-jurz** | /ˈmænədʒərz/ — sounds like **MAN-uh-jurz**
-525. administrative | /ədˈmɪnɪstrətɪv/ — sounds like **ud-MIN-i-struh-tiv** | /ædˈmɪnəstrətəv/ — sounds like **ad-MIN-uh-struh-tuv**
-526. field | /fiːld/ — sounds like **FEELD** | /fild/ — sounds like **FEELD**
-527. partial | /ˈpɑːʃəl/ — sounds like **PAR-shul** | /ˈpɑrʃəl/ — sounds like **PAR-shul**
-528. introduced | /ˌɪntrəˈdjuːst/ — sounds like **IN-truh-DYOOST** | /ˌɪntrəˈdust/ — sounds like **IN-truh-DOOST**
-529. fears | /fɪəz/ — sounds like **FEERZ** | /fɪrz/ — sounds like **FEERZ**
-530. hire | /haɪə/ — sounds like **HY-uh** | /haɪər/ — sounds like **HY-ur**
-531. situational | /ˌsɪtʃuˈeɪʃənəl/ — sounds like **SIT-choo-AY-shuh-nul** | /ˌsɪtʃuˈeɪʃənəl/ — sounds like **SIT-choo-AY-shuh-nul**
-532. underlying | /ˌʌndəˈlaɪɪŋ/ — sounds like **UN-duh-LY-ing** | /ˌʌndərˈlaɪɪŋ/ — sounds like **UN-dur-LY-ing**
-533. common | /ˈkɒmən/ — sounds like **KOM-un** | /ˈkɑmən/ — sounds like **KAH-mun**
-534. spices | /spaɪsɪz/ — sounds like **SPY-siz** | /spaɪsəz/ — sounds like **SPY-suz**
-535. embrace | /ɪmˈbreɪs/ — sounds like **im-BRAYS** | /ɪmˈbreɪs/ — sounds like **im-BRAYS**
-536. favorite | /ˈfeɪvərɪt/ — sounds like **FAY-vuh-rit** | /ˈfeɪvərət/ — sounds like **FAY-vuh-rut**
-537. similar | /ˈsɪmɪlə/ — sounds like **SIM-i-luh** | /ˈsɪmələr/ — sounds like **SIM-uh-lur**
-538. thrown | /θrəʊn/ — sounds like **THROHN** | /θroʊn/ — sounds like **THROHN**
-539. basically | /ˈbeɪsɪkəli/ — sounds like **BAY-si-kuh-lee** | /ˈbeɪsəkəli/ — sounds like **BAY-suh-kuh-lee**
-540. boundaries | /ˈbaʊndəriz/ — sounds like **BOWN-duh-reez** | /ˈbaʊndəriz/ — sounds like **BOWN-duh-reez**
-541. pattern | /ˈpætən/ — sounds like **PAT-un** | /ˈpætərn/ — sounds like **PAT-urn**
-542. followers | /ˈfɒləʊəz/ — sounds like **FOL-oh-urz** | /ˈfɑloʊərz/ — sounds like **FAH-loh-urz**
-543. death | /deθ/ — sounds like **DETH** | /deθ/ — sounds like **DETH**
-544. dozen | /ˈdʌzən/ — sounds like **DUZ-un** | /ˈdʌzən/ — sounds like **DUZ-un**
-545. helpful | /ˈhelpfəl/ — sounds like **HELP-ful** | /ˈhelpfəl/ — sounds like **HELP-ful**
-546. inevitable | /ɪˈnevɪtəbəl/ — sounds like **i-NEV-i-tuh-bul** | /ɪˈnevətəbəl/ — sounds like **i-NEV-uh-tuh-bul**
-547. lying | /ˈlaɪɪŋ/ — sounds like **LY-ing** | /ˈlaɪɪŋ/ — sounds like **LY-ing**
-548. historian | /hɪˈstɔːriən/ — sounds like **hi-STOR-ee-un** | /hɪˈstɔriən/ — sounds like **hi-STOR-ee-un**
-549. telescopes | /ˈtelɪskəʊps/ — sounds like **TEL-i-skohps** | /ˈteləskoʊps/ — sounds like **TEL-uh-skohps**
-550. fragile | /ˈfrædʒaɪl/ — sounds like **FRAJ-yl** | /ˈfrædʒəl/ — sounds like **FRAJ-ul**
-551. everyone | /ˈevriwʌn/ — sounds like **EV-ree-wun** | /ˈevriwʌn/ — sounds like **EV-ree-wun**
-552. associated | /əˈsəʊʃieɪtɪd/ — sounds like **uh-SOH-shee-ay-tid** | /əˈsoʊʃieɪtəd/ — sounds like **uh-SOH-shee-ay-tud**
-553. gathering | /ˈɡæðərɪŋ/ — sounds like **GATH-uh-ring** | /ˈɡæðərɪŋ/ — sounds like **GATH-uh-ring**
-554. overseas | /ˌəʊvəˈsiːz/ — sounds like **OH-vuh-SEEZ** | /ˌoʊvərˈsiz/ — sounds like **OH-vur-SEEZ**
-555. camps | /kæmps/ — sounds like **KAMPS** | /kæmps/ — sounds like **KAMPS**
-556. professional | /prəˈfeʃənəl/ — sounds like **pruh-FESH-uh-nul** | /prəˈfeʃənəl/ — sounds like **pruh-FESH-uh-nul**
-557. convergence | /kənˈvɜːdʒəns/ — sounds like **kun-VUR-juns** | /kənˈvɝdʒəns/ — sounds like **kun-VUR-juns**
-558. occupies | /ˈɒkjʊpaɪz/ — sounds like **OK-yuh-pyz** | /ˈɑkjəpaɪz/ — sounds like **AH-kyuh-pyz**
-559. distinctive | /dɪˈstɪŋktɪv/ — sounds like **di-STINGK-tiv** | /dəˈstɪŋktəv/ — sounds like **duh-STINGK-tuv**
-560. author | /ˈɔːθə/ — sounds like **OR-thuh** | /ˈɔθər/ — sounds like **AH-thur**
-561. materials | /məˈtɪəriəlz/ — sounds like **muh-TEER-ee-ulz** | /məˈtɪriəlz/ — sounds like **muh-TEER-ee-ulz**
-562. individuality | /ˌɪndɪvɪdʒuˈæləti/ — sounds like **IN-di-vij-oo-AL-uh-tee** | /ˌɪndəvɪdʒuˈæləti/ — sounds like **IN-duh-vij-oo-AL-uh-tee**
-563. covered | /ˈkʌvəd/ — sounds like **KUV-ud** | /ˈkʌvərd/ — sounds like **KUV-urd**
-564. instilled | /ɪnˈstɪld/ — sounds like **in-STILD** | /ɪnˈstɪld/ — sounds like **in-STILD**
-565. constitution | /ˌkɒnstɪˈtjuːʃən/ — sounds like **KON-sti-TYOO-shun** | /ˌkɑnstəˈtuʃən/ — sounds like **KAHN-stuh-TOO-shun**
-566. classical | /ˈklæsɪkəl/ — sounds like **KLAS-i-kul** | /ˈklæsəkəl/ — sounds like **KLAS-uh-kul**
-567. pseudo | /ˈsjuːdəʊ/ — sounds like **SYOO-doh** | /ˈsudoʊ/ — sounds like **SOO-doh**
-568. protein | /ˈprəʊtiːn/ — sounds like **PROH-teen** | /ˈproʊtin/ — sounds like **PROH-teen**
-569. neighbouring | /ˈneɪbərɪŋ/ — sounds like **NAY-buh-ring** | /ˈneɪbərɪŋ/ — sounds like **NAY-buh-ring**
-570. symptomatic | /ˌsɪmptəˈmætɪk/ — sounds like **SIMP-tuh-MAT-ik** | /ˌsɪmptəˈmætək/ — sounds like **SIMP-tuh-MAT-uk**
-571. restrictions | /rɪˈstrɪkʃənz/ — sounds like **ri-STRIK-shunz** | /rəˈstrɪkʃənz/ — sounds like **ruh-STRIK-shunz**
-572. passive | /ˈpæsɪv/ — sounds like **PAS-iv** | /ˈpæsəv/ — sounds like **PAS-uv**
-573. contemporary | /kənˈtempərəri/ — sounds like **kun-TEM-puh-ruh-ree** | /kənˈtempəreri/ — sounds like **kun-TEM-puh-rer-ee**
-574. failed | /feɪld/ — sounds like **FAYLD** | /feɪld/ — sounds like **FAYLD**
-575. manipulate | /məˈnɪpjʊleɪt/ — sounds like **muh-NIP-yoo-layt** | /məˈnɪpjəleɪt/ — sounds like **muh-NIP-yuh-layt**
-576. reservoir | /ˈrezəvwɑː/ — sounds like **REZ-uh-vwahr** | /ˈrezərvwɑr/ — sounds like **REZ-ur-vwahr**
-577. sound | /saʊnd/ — sounds like **SOWND** | /saʊnd/ — sounds like **SOWND**
-578. atmosphere | /ˈætməsfɪə/ — sounds like **AT-muh-sfeer** | /ˈætməsfɪr/ — sounds like **AT-muh-sfeer**
-579. creditably | /ˈkredɪtəbli/ — sounds like **KRED-i-tuh-blee** | /ˈkredətəbli/ — sounds like **KRED-uh-tuh-blee**
-580. irrelevant | /ɪˈreləvənt/ — sounds like **i-REL-uh-vunt** | /ɪˈreləvənt/ — sounds like **i-REL-uh-vunt**
-581. different | /ˈdɪfərənt/ — sounds like **DIF-uh-runt** | /ˈdɪfərənt/ — sounds like **DIF-uh-runt**
-582. invest | /ɪnˈvest/ — sounds like **in-VEST** | /ɪnˈvest/ — sounds like **in-VEST**
-583. generation | /ˌdʒenəˈreɪʃən/ — sounds like **JEN-uh-RAY-shun** | /ˌdʒenəˈreɪʃən/ — sounds like **JEN-uh-RAY-shun**
-584. react | /riˈækt/ — sounds like **ree-AKT** | /riˈækt/ — sounds like **ree-AKT**
-585. plants | /plɑːnts/ — sounds like **PLAHNTS** | /plænts/ — sounds like **PLANTS**
-586. trickery | /ˈtrɪkəri/ — sounds like **TRIK-uh-ree** | /ˈtrɪkəri/ — sounds like **TRIK-uh-ree**
-587. curing | /ˈkjʊərɪŋ/ — sounds like **KYOOR-ing** | /ˈkjʊrɪŋ/ — sounds like **KYOOR-ing**
-588. sale | /seɪl/ — sounds like **SAYL** | /seɪl/ — sounds like **SAYL**
-589. massive | /ˈmæsɪv/ — sounds like **MAS-iv** | /ˈmæsəv/ — sounds like **MAS-uv**
-590. flame | /fleɪm/ — sounds like **FLAYM** | /fleɪm/ — sounds like **FLAYM**
-591. share | /ʃeə/ — sounds like **SHAIR** | /ʃer/ — sounds like **SHAIR**
-592. service | /ˈsɜːvɪs/ — sounds like **SUR-vis** | /ˈsɝvəs/ — sounds like **SUR-vus**
-593. colleagues | /ˈkɒliːɡz/ — sounds like **KOL-eegz** | /ˈkɑliɡz/ — sounds like **KAH-leegz**
-594. layers | /ˈleɪəz/ — sounds like **LAY-urz** | /ˈleɪərz/ — sounds like **LAY-urz**
-595. sociable | /ˈsəʊʃəbəl/ — sounds like **SOH-shuh-bul** | /ˈsoʊʃəbəl/ — sounds like **SOH-shuh-bul**
-596. underneath | /ˌʌndəˈniːθ/ — sounds like **UN-duh-NEETH** | /ˌʌndərˈniθ/ — sounds like **UN-dur-NEETH**
-597. famous | /ˈfeɪməs/ — sounds like **FAY-mus** | /ˈfeɪməs/ — sounds like **FAY-mus**
-598. promote | /prəˈməʊt/ — sounds like **pruh-MOHT** | /prəˈmoʊt/ — sounds like **pruh-MOHT**
-599. convinced | /kənˈvɪnst/ — sounds like **kun-VINST** | /kənˈvɪnst/ — sounds like **kun-VINST**
-600. career | /kəˈrɪə/ — sounds like **kuh-REER** | /kəˈrɪr/ — sounds like **kuh-REER**
-601. addition | /əˈdɪʃən/ — sounds like **uh-DISH-un** | /əˈdɪʃən/ — sounds like **uh-DISH-un**
-602. awoke | /əˈwəʊk/ — sounds like **uh-WOHK** | /əˈwoʊk/ — sounds like **uh-WOHK**
-603. relying | /rɪˈlaɪɪŋ/ — sounds like **ri-LY-ing** | /rəˈlaɪɪŋ/ — sounds like **ruh-LY-ing**
-604. five | /faɪv/ — sounds like **FYV** | /faɪv/ — sounds like **FYV**
-605. recognized | /ˈrekəɡnaɪzd/ — sounds like **REK-ug-nyzd** | /ˈrekəɡnaɪzd/ — sounds like **REK-ug-nyzd**
-606. install | /ɪnˈstɔːl/ — sounds like **in-STAWL** | /ɪnˈstɔl/ — sounds like **in-STAHL**
-607. induced | /ɪnˈdjuːst/ — sounds like **in-DYOOST** | /ɪnˈdust/ — sounds like **in-DOOST**
-608. variables | /ˈveəriəbəlz/ — sounds like **VAIR-ee-uh-bulz** | /ˈveriəbəlz/ — sounds like **VAIR-ee-uh-bulz**
-609. revolutionized | /ˌrevəˈluːʃənaɪzd/ — sounds like **REV-uh-LOO-shuh-nyzd** | /ˌrevəˈluʃənaɪzd/ — sounds like **REV-uh-LOO-shuh-nyzd**
-610. observed | /əbˈzɜːvd/ — sounds like **ub-ZURVD** | /əbˈzɝvd/ — sounds like **ub-ZURVD**
-611. radiative | /ˈreɪdieɪtɪv/ — sounds like **RAY-dee-ay-tiv** | /ˈreɪdieɪtəv/ — sounds like **RAY-dee-ay-tuv**
-612. reputation | /ˌrepjʊˈteɪʃən/ — sounds like **REP-yoo-TAY-shun** | /ˌrepjəˈteɪʃən/ — sounds like **REP-yuh-TAY-shun**
-613. double | /ˈdʌbəl/ — sounds like **DUB-ul** | /ˈdʌbəl/ — sounds like **DUB-ul**
-614. headed | /ˈhedɪd/ — sounds like **HED-id** | /ˈhedəd/ — sounds like **HED-ud**
-615. opt | /ɒpt/ — sounds like **OPT** | /ɑpt/ — sounds like **AHPT**
-616. insurance | /ɪnˈʃʊərəns/ — sounds like **in-SHOOR-uns** | /ɪnˈʃʊrəns/ — sounds like **in-SHOOR-uns**
-617. city | /ˈsɪti/ — sounds like **SIT-ee** | /ˈsɪti/ — sounds like **SIT-ee**
-618. existence | /ɪɡˈzɪstəns/ — sounds like **ig-ZIS-tuns** | /ɪɡˈzɪstəns/ — sounds like **ig-ZIS-tuns**
-619. identical | /aɪˈdentɪkəl/ — sounds like **eye-DEN-ti-kul** | /aɪˈdentəkəl/ — sounds like **eye-DEN-tuh-kul**
-620. growing | /ˈɡrəʊɪŋ/ — sounds like **GROH-ing** | /ˈɡroʊɪŋ/ — sounds like **GROH-ing**
-621. personality | /ˌpɜːsəˈnæləti/ — sounds like **PUR-suh-NAL-uh-tee** | /ˌpɝsəˈnæləti/ — sounds like **PUR-suh-NAL-uh-tee**
-622. funding | /ˈfʌndɪŋ/ — sounds like **FUN-ding** | /ˈfʌndɪŋ/ — sounds like **FUN-ding**
-623. agency | /ˈeɪdʒənsi/ — sounds like **AY-jun-see** | /ˈeɪdʒənsi/ — sounds like **AY-jun-see**
-624. Channel | /ˈtʃænəl/ — sounds like **CHAN-ul** | /ˈtʃænəl/ — sounds like **CHAN-ul**
-625. validity | /vəˈlɪdəti/ — sounds like **vuh-LID-uh-tee** | /vəˈlɪdəti/ — sounds like **vuh-LID-uh-tee**
-626. strike | /straɪk/ — sounds like **STRYK** | /straɪk/ — sounds like **STRYK**
-627. subordinated | /səˈbɔːdɪneɪtɪd/ — sounds like **suh-BOR-di-nay-tid** | /səˈbɔrdəneɪtəd/ — sounds like **suh-BOR-duh-nay-tud**
-628. implications | /ˌɪmplɪˈkeɪʃənz/ — sounds like **IM-pli-KAY-shunz** | /ˌɪmpləˈkeɪʃənz/ — sounds like **IM-pluh-KAY-shunz**
-629. practical | /ˈpræktɪkəl/ — sounds like **PRAK-ti-kul** | /ˈpræktəkəl/ — sounds like **PRAK-tuh-kul**
-630. academics | /ˌækəˈdemɪks/ — sounds like **AK-uh-DEM-iks** | /ˌækəˈdeməks/ — sounds like **AK-uh-DEM-uks**
-631. monetary | /ˈmʌnɪtəri/ — sounds like **MUN-i-tuh-ree** | /ˈmʌnəteri/ — sounds like **MUN-uh-ter-ee**
-632. hostile | /ˈhɒstaɪl/ — sounds like **HOS-tyl** | /ˈhɑstəl/ — sounds like **HAH-stul**
-633. ferry | /ˈferi/ — sounds like **FER-ee** | /ˈferi/ — sounds like **FER-ee**
-634. concentrate | /ˈkɒnsəntreɪt/ — sounds like **KON-sun-trayt** | /ˈkɑnsəntreɪt/ — sounds like **KAHN-sun-trayt**
-635. testify | /ˈtestɪfaɪ/ — sounds like **TES-ti-fy** | /ˈtestəfaɪ/ — sounds like **TES-tuh-fy**
-636. months | /mʌnθs/ — sounds like **MUNTHS** | /mʌnθs/ — sounds like **MUNTHS**
-637. distrust | /dɪsˈtrʌst/ — sounds like **dis-TRUST** | /dɪsˈtrʌst/ — sounds like **dis-TRUST**
-638. environment | /ɪnˈvaɪrənmənt/ — sounds like **in-VY-run-munt** | /ɪnˈvaɪrənmənt/ — sounds like **in-VY-run-munt**
-639. shortfall | /ˈʃɔːtfɔːl/ — sounds like **SHORT-fawl** | /ˈʃɔrtfɔl/ — sounds like **SHORT-fahl**
-640. modes | /məʊdz/ — sounds like **MOHDZ** | /moʊdz/ — sounds like **MOHDZ**
-641. section | /ˈsekʃən/ — sounds like **SEK-shun** | /ˈsekʃən/ — sounds like **SEK-shun**
-642. tiny | /ˈtaɪni/ — sounds like **TY-nee** | /ˈtaɪni/ — sounds like **TY-nee**
-643. intensive | /ɪnˈtensɪv/ — sounds like **in-TEN-siv** | /ɪnˈtensəv/ — sounds like **in-TEN-suv**
-644. special | /ˈspeʃəl/ — sounds like **SPESH-ul** | /ˈspeʃəl/ — sounds like **SPESH-ul**
-645. schedule | /ˈʃedjuːl/ — sounds like **SHED-yool** | /ˈskedʒul/ — sounds like **SKED-jul**
-646. electronically | /ɪlekˈtrɒnɪkəli/ — sounds like **i-lek-TRON-i-kuh-lee** | /ɪlekˈtrɑnəkəli/ — sounds like **i-lek-TRAH-nuh-kuh-lee**
-647. repetition | /ˌrepɪˈtɪʃən/ — sounds like **REP-i-TISH-un** | /ˌrepəˈtɪʃən/ — sounds like **REP-uh-TISH-un**
-648. send | /send/ — sounds like **SEND** | /send/ — sounds like **SEND**
-649. medium | /ˈmiːdiəm/ — sounds like **MEE-dee-um** | /ˈmidiəm/ — sounds like **MEE-dee-um**
-650. infrastructure | /ˈɪnfrəstrʌktʃə/ — sounds like **IN-fruh-struk-chuh** | /ˈɪnfrəstrʌktʃər/ — sounds like **IN-fruh-struk-chur**
-651. range | /reɪndʒ/ — sounds like **RAYNJ** | /reɪndʒ/ — sounds like **RAYNJ**
-652. wanting | /ˈwɒntɪŋ/ — sounds like **WON-ting** | /ˈwɑntɪŋ/ — sounds like **WAHN-ting**
-653. neighbor | /ˈneɪbə/ — sounds like **NAY-buh** | /ˈneɪbər/ — sounds like **NAY-bur**
-654. particularly | /pəˈtɪkjʊləli/ — sounds like **puh-TIK-yuh-luh-lee** | /pərˈtɪkjələrli/ — sounds like **pur-TIK-yuh-lur-lee**
-655. histories | /ˈhɪstəriz/ — sounds like **HIS-tuh-reez** | /ˈhɪstəriz/ — sounds like **HIS-tuh-reez**
-656. binary | /ˈbaɪnəri/ — sounds like **BY-nuh-ree** | /ˈbaɪneri/ — sounds like **BY-ner-ee**
-657. equation | /ɪˈkweɪʒən/ — sounds like **i-KWAY-zhun** | /ɪˈkweɪʒən/ — sounds like **i-KWAY-zhun**
-658. tropical | /ˈtrɒpɪkəl/ — sounds like **TROP-i-kul** | /ˈtrɑpəkəl/ — sounds like **TRAH-puh-kul**
-659. strategic | /strəˈtiːdʒɪk/ — sounds like **struh-TEE-jik** | /strəˈtidʒək/ — sounds like **struh-TEE-juk**
-660. cash | /kæʃ/ — sounds like **KASH** | /kæʃ/ — sounds like **KASH**
-661. application | /ˌæplɪˈkeɪʃən/ — sounds like **AP-li-KAY-shun** | /ˌæpləˈkeɪʃən/ — sounds like **AP-luh-KAY-shun**
-662. technological | /ˌteknəˈlɒdʒɪkəl/ — sounds like **TEK-nuh-LOJ-i-kul** | /ˌteknəˈlɑdʒəkəl/ — sounds like **TEK-nuh-LAH-juh-kul**
-663. frontiers | /ˈfrʌntɪəz/ — sounds like **FRUN-teerz** | /frʌnˈtɪrz/ — sounds like **frun-TEERZ**
-664. graduate | /ˈɡrædʒueɪt/ — sounds like **GRAJ-oo-ayt** | /ˈɡrædʒueɪt/ — sounds like **GRAJ-oo-ayt**
-665. riveting | /ˈrɪvɪtɪŋ/ — sounds like **RIV-i-ting** | /ˈrɪvətɪŋ/ — sounds like **RIV-uh-ting**
-666. board | /bɔːd/ — sounds like **BORD** | /bɔrd/ — sounds like **BORD**
-667. brought | /brɔːt/ — sounds like **BRAWT** | /brɔt/ — sounds like **BRAHT**
-668. culture | /ˈkʌltʃə/ — sounds like **KUL-chuh** | /ˈkʌltʃər/ — sounds like **KUL-chur**
-669. disappeared | /ˌdɪsəˈpɪəd/ — sounds like **DIS-uh-PEERD** | /ˌdɪsəˈpɪrd/ — sounds like **DIS-uh-PEERD**
-670. labour | /ˈleɪbə/ — sounds like **LAY-buh** | /ˈleɪbər/ — sounds like **LAY-bur**
-671. sounds | /saʊndz/ — sounds like **SOWNDZ** | /saʊndz/ — sounds like **SOWNDZ**
-672. Industrial | /ɪnˈdʌstriəl/ — sounds like **in-DUS-tree-ul** | /ɪnˈdʌstriəl/ — sounds like **in-DUS-tree-ul**
-673. chamber | /ˈtʃeɪmbə/ — sounds like **CHAYM-buh** | /ˈtʃeɪmbər/ — sounds like **CHAYM-bur**
-674. ideas | /aɪˈdɪəz/ — sounds like **eye-DEERZ** | /aɪˈdiz/ — sounds like **eye-DEEZ**
-675. exercise | /ˈeksəsaɪz/ — sounds like **EK-suh-syz** | /ˈeksərsaɪz/ — sounds like **EK-sur-syz**
-676. variety | /vəˈraɪəti/ — sounds like **vuh-RY-uh-tee** | /vəˈraɪəti/ — sounds like **vuh-RY-uh-tee**
-677. actually | /ˈæktʃuəli/ — sounds like **AK-choo-uh-lee** | /ˈæktʃuəli/ — sounds like **AK-choo-uh-lee**
-678. arbitrated | /ˈɑːbɪtreɪtɪd/ — sounds like **AR-bi-tray-tid** | /ˈɑrbətreɪtəd/ — sounds like **AR-buh-tray-tud**
-679. distinction | /dɪˈstɪŋkʃən/ — sounds like **di-STINGK-shun** | /dəˈstɪŋkʃən/ — sounds like **duh-STINGK-shun**
-680. queen | /kwiːn/ — sounds like **KWEEN** | /kwin/ — sounds like **KWEEN**
-681. concept | /ˈkɒnsept/ — sounds like **KON-sept** | /ˈkɑnsept/ — sounds like **KAHN-sept**
-682. phenomena | /fəˈnɒmɪnə/ — sounds like **fuh-NOM-i-nuh** | /fəˈnɑmənə/ — sounds like **fuh-NAH-muh-nuh**
-683. rush | /rʌʃ/ — sounds like **RUSH** | /rʌʃ/ — sounds like **RUSH**
-684. unconventional | /ˌʌnkənˈvenʃənəl/ — sounds like **UN-kun-VEN-shuh-nul** | /ˌʌnkənˈvenʃənəl/ — sounds like **UN-kun-VEN-shuh-nul**
-685. celebrated | /ˈseləbreɪtɪd/ — sounds like **SEL-uh-bray-tid** | /ˈseləbreɪtəd/ — sounds like **SEL-uh-bray-tud**
-686. computer | /kəmˈpjuːtə/ — sounds like **kum-PYOO-tuh** | /kəmˈpjutər/ — sounds like **kum-PYOO-tur**
-687. nature | /ˈneɪtʃə/ — sounds like **NAY-chuh** | /ˈneɪtʃər/ — sounds like **NAY-chur**
-688. remaining | /rɪˈmeɪnɪŋ/ — sounds like **ri-MAY-ning** | /rəˈmeɪnɪŋ/ — sounds like **ruh-MAY-ning**
-689. rules | /ruːlz/ — sounds like **ROOLZ** | /rulz/ — sounds like **ROOLZ**
-690. sediment | /ˈsedɪmənt/ — sounds like **SED-i-munt** | /ˈsedəmənt/ — sounds like **SED-uh-munt**
-691. identities | /aɪˈdentətiz/ — sounds like **eye-DEN-tuh-teez** | /aɪˈdentətiz/ — sounds like **eye-DEN-tuh-teez**
-692. circle | /ˈsɜːkəl/ — sounds like **SUR-kul** | /ˈsɝkəl/ — sounds like **SUR-kul**
-693. Shakespeare | /ˈʃeɪkspɪə/ — sounds like **SHAYK-speer** | /ˈʃeɪkspɪr/ — sounds like **SHAYK-speer**
-694. work | /wɜːk/ — sounds like **WURK** | /wɝk/ — sounds like **WURK**
-695. shelter | /ˈʃeltə/ — sounds like **SHEL-tuh** | /ˈʃeltər/ — sounds like **SHEL-tur**
-696. promotional | /prəˈməʊʃənəl/ — sounds like **pruh-MOH-shuh-nul** | /prəˈmoʊʃənəl/ — sounds like **pruh-MOH-shuh-nul**
-697. face | /feɪs/ — sounds like **FAYS** | /feɪs/ — sounds like **FAYS**
-698. prospective | /prəˈspektɪv/ — sounds like **pruh-SPEK-tiv** | /prəˈspektəv/ — sounds like **pruh-SPEK-tuv**
-699. dastard | /ˈdæstəd/ — sounds like **DAS-turd** | /ˈdæstərd/ — sounds like **DAS-turd**
-700. aggressive | /əˈɡresɪv/ — sounds like **uh-GRES-iv** | /əˈɡresəv/ — sounds like **uh-GRES-uv**
-701. training | /ˈtreɪnɪŋ/ — sounds like **TRAY-ning** | /ˈtreɪnɪŋ/ — sounds like **TRAY-ning**
-702. discovered | /dɪˈskʌvəd/ — sounds like **di-SKUV-ud** | /dəˈskʌvərd/ — sounds like **duh-SKUV-urd**
-703. suppressed | /səˈprest/ — sounds like **suh-PREST** | /səˈprest/ — sounds like **suh-PREST**
-704. frustrated | /frʌˈstreɪtɪd/ — sounds like **fruh-STRAY-tid** | /ˈfrʌstreɪtəd/ — sounds like **FRUS-tray-tud**
-705. lighting | /ˈlaɪtɪŋ/ — sounds like **LY-ting** | /ˈlaɪtɪŋ/ — sounds like **LY-ting**
-706. overlap | /ˌəʊvəˈlæp/ — sounds like **OH-vuh-LAP** | /ˌoʊvərˈlæp/ — sounds like **OH-vur-LAP**
-707. spread | /spred/ — sounds like **SPRED** | /spred/ — sounds like **SPRED**
-708. technology | /tekˈnɒlədʒi/ — sounds like **tek-NOL-uh-jee** | /tekˈnɑlədʒi/ — sounds like **tek-NAH-luh-jee**
-709. discipline | /ˈdɪsɪplɪn/ — sounds like **DIS-i-plin** | /ˈdɪsəplən/ — sounds like **DIS-uh-plun**
-710. disciplines | /ˈdɪsɪplɪnz/ — sounds like **DIS-i-plinz** | /ˈdɪsəplənz/ — sounds like **DIS-uh-plunz**
-711. conversion | /kənˈvɜːʃən/ — sounds like **kun-VUR-shun** | /kənˈvɝʃən/ — sounds like **kun-VUR-shun**
-712. synthesis | /ˈsɪnθəsɪs/ — sounds like **SIN-thuh-sis** | /ˈsɪnθəsəs/ — sounds like **SIN-thuh-sus**
-713. university | /ˌjuːnɪˈvɜːsəti/ — sounds like **YOO-ni-VUR-suh-tee** | /ˌjunəˈvɝsəti/ — sounds like **YOO-nuh-VUR-suh-tee**
-714. spreading | /ˈspredɪŋ/ — sounds like **SPRED-ing** | /ˈspredɪŋ/ — sounds like **SPRED-ing**
-715. profound | /prəˈfaʊnd/ — sounds like **pruh-FOWND** | /prəˈfaʊnd/ — sounds like **pruh-FOWND**
-716. galaxies | /ˈɡæləksiz/ — sounds like **GAL-uhk-seez** | /ˈɡæləksiz/ — sounds like **GAL-uhk-seez**
-717. emulates | /ˈemjʊleɪts/ — sounds like **EM-yoo-layts** | /ˈemjəleɪts/ — sounds like **EM-yuh-layts**
-718. impacting | /ɪmˈpæktɪŋ/ — sounds like **im-PAK-ting** | /ɪmˈpæktɪŋ/ — sounds like **im-PAK-ting**
-719. proportion | /prəˈpɔːʃən/ — sounds like **pruh-POR-shun** | /prəˈpɔrʃən/ — sounds like **pruh-POR-shun**
-720. quiet | /ˈkwaɪət/ — sounds like **KWY-ut** | /ˈkwaɪət/ — sounds like **KWY-ut**
-721. supposed | /səˈpəʊzd/ — sounds like **suh-POHZD** | /səˈpoʊzd/ — sounds like **suh-POHZD**
-722. demographic | /ˌdeməˈɡræfɪk/ — sounds like **DEM-uh-GRAF-ik** | /ˌdeməˈɡræfək/ — sounds like **DEM-uh-GRAF-uk**
-723. devolution | /ˌdiːvəˈluːʃən/ — sounds like **DEE-vuh-LOO-shun** | /ˌdevəˈluʃən/ — sounds like **DEV-uh-LOO-shun**
-724. academy | /əˈkædəmi/ — sounds like **uh-KAD-uh-mee** | /əˈkædəmi/ — sounds like **uh-KAD-uh-mee**
-725. education | /ˌedjʊˈkeɪʃən/ — sounds like **ED-yoo-KAY-shun** | /ˌedʒəˈkeɪʃən/ — sounds like **ED-juh-KAY-shun**
-726. burning | /ˈbɜːnɪŋ/ — sounds like **BUR-ning** | /ˈbɝnɪŋ/ — sounds like **BUR-ning**
-727. exhibit | /ɪɡˈzɪbɪt/ — sounds like **ig-ZIB-it** | /ɪɡˈzɪbət/ — sounds like **ig-ZIB-ut**
-728. assumption | /əˈsʌmpʃən/ — sounds like **uh-SUMP-shun** | /əˈsʌmpʃən/ — sounds like **uh-SUMP-shun**
-729. undoubtedly | /ʌnˈdaʊtɪdli/ — sounds like **un-DOW-tid-lee** | /ʌnˈdaʊtədli/ — sounds like **un-DOW-tud-lee**
-730. independence | /ˌɪndɪˈpendəns/ — sounds like **IN-di-PEN-duns** | /ˌɪndəˈpendəns/ — sounds like **IN-duh-PEN-duns**
-731. hydrogen | /ˈhaɪdrədʒən/ — sounds like **HY-druh-jun** | /ˈhaɪdrədʒən/ — sounds like **HY-druh-jun**
-732. rote | /rəʊt/ — sounds like **ROHT** | /roʊt/ — sounds like **ROHT**
-733. turned | /tɜːnd/ — sounds like **TURND** | /tɝnd/ — sounds like **TURND**
-734. dependence | /dɪˈpendəns/ — sounds like **di-PEN-duns** | /dəˈpendəns/ — sounds like **duh-PEN-duns**
-735. negative | /ˈneɡətɪv/ — sounds like **NEG-uh-tiv** | /ˈneɡətəv/ — sounds like **NEG-uh-tuv**
-736. apparent | /əˈpærənt/ — sounds like **uh-PAIR-unt** | /əˈpærənt/ — sounds like **uh-PAIR-unt**
-737. reversed | /rɪˈvɜːst/ — sounds like **ri-VURST** | /rəˈvɝst/ — sounds like **ruh-VURST**
-738. contract | /ˈkɒntrækt/ — sounds like **KON-trakt** | /ˈkɑntrækt/ — sounds like **KAHN-trakt**
-739. crises | /ˈkraɪsiːz/ — sounds like **KRY-seez** | /ˈkraɪsiz/ — sounds like **KRY-seez**
-740. objects | /ˈɒbdʒekts/ — sounds like **OB-jekts** | /ˈɑbdʒekts/ — sounds like **AHB-jekts**
-741. horror | /ˈhɒrə/ — sounds like **HOR-uh** | /ˈhɔrər/ — sounds like **HOR-ur**
-742. institutions | /ˌɪnstɪˈtjuːʃənz/ — sounds like **IN-sti-TYOO-shunz** | /ˌɪnstəˈtuʃənz/ — sounds like **IN-stuh-TOO-shunz**
-743. market | /ˈmɑːkɪt/ — sounds like **MAR-kit** | /ˈmɑrkət/ — sounds like **MAR-kut**
-744. visible | /ˈvɪzəbəl/ — sounds like **VIZ-uh-bul** | /ˈvɪzəbəl/ — sounds like **VIZ-uh-bul**
-745. incentive | /ɪnˈsentɪv/ — sounds like **in-SEN-tiv** | /ɪnˈsentəv/ — sounds like **in-SEN-tuv**
-746. relief | /rɪˈliːf/ — sounds like **ri-LEEF** | /rəˈlif/ — sounds like **ruh-LEEF**
-747. global | /ˈɡləʊbəl/ — sounds like **GLOH-bul** | /ˈɡloʊbəl/ — sounds like **GLOH-bul**
-748. departure | /dɪˈpɑːtʃə/ — sounds like **di-PAR-chuh** | /dəˈpɑrtʃər/ — sounds like **duh-PAR-chur**
-749. branding | /ˈbrændɪŋ/ — sounds like **BRAN-ding** | /ˈbrændɪŋ/ — sounds like **BRAN-ding**
-750. institution | /ˌɪnstɪˈtjuːʃən/ — sounds like **IN-sti-TYOO-shun** | /ˌɪnstəˈtuʃən/ — sounds like **IN-stuh-TOO-shun**
-751. crucial | /ˈkruːʃəl/ — sounds like **KROO-shul** | /ˈkruʃəl/ — sounds like **KROO-shul**
-752. supporting | /səˈpɔːtɪŋ/ — sounds like **suh-POR-ting** | /səˈpɔrtɪŋ/ — sounds like **suh-PORT-ting**
-753. absorb | /əbˈsɔːb/ — sounds like **ub-SORB** | /æbˈsɔrb/ — sounds like **ab-SORB**
-754. heavy | /ˈhevi/ — sounds like **HEV-ee** | /ˈhevi/ — sounds like **HEV-ee**
-755. factory | /ˈfæktəri/ — sounds like **FAK-tuh-ree** | /ˈfæktəri/ — sounds like **FAK-tuh-ree**
-756. nearest | /ˈnɪərɪst/ — sounds like **NEER-ist** | /ˈnɪrəst/ — sounds like **NEER-ust**
-757. femininity | /ˌfemɪˈnɪnəti/ — sounds like **FEM-i-NIN-uh-tee** | /ˌfeməˈnɪnəti/ — sounds like **FEM-uh-NIN-uh-tee**
-758. lenient | /ˈliːniənt/ — sounds like **LEE-nee-unt** | /ˈlinjənt/ — sounds like **LIN-yunt**
-759. results | /rɪˈzʌlts/ — sounds like **ri-ZULTS** | /rəˈzʌlts/ — sounds like **ruh-ZULTS**
-760. equations | /ɪˈkweɪʒənz/ — sounds like **i-KWAY-zhunz** | /ɪˈkweɪʒənz/ — sounds like **i-KWAY-zhunz**
-761. untraditional | /ˌʌntrəˈdɪʃənəl/ — sounds like **UN-truh-DISH-uh-nul** | /ˌʌntrəˈdɪʃənəl/ — sounds like **UN-truh-DISH-uh-nul**
-762. reactive | /riˈæktɪv/ — sounds like **ree-AK-tiv** | /riˈæktəv/ — sounds like **ree-AK-tuv**
-763. recovery | /rɪˈkʌvəri/ — sounds like **ri-KUV-uh-ree** | /rəˈkʌvəri/ — sounds like **ruh-KUV-uh-ree**
-764. crisis | /ˈkraɪsɪs/ — sounds like **KRY-sis** | /ˈkraɪsəs/ — sounds like **KRY-sus**
-765. mimic | /ˈmɪmɪk/ — sounds like **MIM-ik** | /ˈmɪmək/ — sounds like **MIM-uk**
-766. radical | /ˈrædɪkəl/ — sounds like **RAD-i-kul** | /ˈrædəkəl/ — sounds like **RAD-uh-kul**
-767. perceptions | /pəˈsepʃənz/ — sounds like **puh-SEP-shunz** | /pərˈsepʃənz/ — sounds like **pur-SEP-shunz**
-768. movements | /ˈmuːvmənts/ — sounds like **MOOV-munts** | /ˈmuvmənts/ — sounds like **MOOV-munts**
-769. emphasised | /ˈemfəsaɪzd/ — sounds like **EM-fuh-syzd** | /ˈemfəsaɪzd/ — sounds like **EM-fuh-syzd**
-770. cooperation | /kəʊˌɒpəˈreɪʃən/ — sounds like **koh-OP-uh-RAY-shun** | /koʊˌɑpəˈreɪʃən/ — sounds like **koh-AH-puh-RAY-shun**
-771. potential | /pəˈtenʃəl/ — sounds like **puh-TEN-shul** | /pəˈtenʃəl/ — sounds like **puh-TEN-shul**
-772. explosion | /ɪkˈspləʊʒən/ — sounds like **ik-SPLOH-zhun** | /ɪkˈsploʊʒən/ — sounds like **ik-SPLOH-zhun**
-773. representative | /ˌreprɪˈzentətɪv/ — sounds like **REP-ri-ZEN-tuh-tiv** | /ˌreprəˈzentətəv/ — sounds like **REP-ruh-ZEN-tuh-tuv**
-774. moderation | /ˌmɒdəˈreɪʃən/ — sounds like **MOD-uh-RAY-shun** | /ˌmɑdəˈreɪʃən/ — sounds like **MAH-duh-RAY-shun**
-775. surprised | /səˈpraɪzd/ — sounds like **suh-PRYZD** | /sərˈpraɪzd/ — sounds like **sur-PRYZD**
-776. skeptical | /ˈskeptɪkəl/ — sounds like **SKEP-ti-kul** | /ˈskeptəkəl/ — sounds like **SKEP-tuh-kul**
-777. translate | /trænsˈleɪt/ — sounds like **trans-LAYT** | /trænsˈleɪt/ — sounds like **trans-LAYT**
-778. everywhere | /ˈevriweə/ — sounds like **EV-ree-wair** | /ˈevriwer/ — sounds like **EV-ree-wair**
-779. intelligence | /ɪnˈtelɪdʒəns/ — sounds like **in-TEL-i-juns** | /ɪnˈtelədʒəns/ — sounds like **in-TEL-uh-juns**
-780. interest | /ˈɪntrəst/ — sounds like **IN-trust** | /ˈɪntrəst/ — sounds like **IN-trust**
-781. technically | /ˈteknɪkəli/ — sounds like **TEK-ni-kuh-lee** | /ˈteknəkəli/ — sounds like **TEK-nuh-kuh-lee**
-782. foundation | /faʊnˈdeɪʃən/ — sounds like **fown-DAY-shun** | /faʊnˈdeɪʃən/ — sounds like **fown-DAY-shun**
-783. tentative | /ˈtentətɪv/ — sounds like **TEN-tuh-tiv** | /ˈtentətəv/ — sounds like **TEN-tuh-tuv**
-784. dispersion | /dɪˈspɜːʃən/ — sounds like **di-SPUR-shun** | /dəˈspɝʃən/ — sounds like **duh-SPUR-shun**
-785. translated | /trænsˈleɪtɪd/ — sounds like **trans-LAY-tid** | /trænsˈleɪtəd/ — sounds like **trans-LAY-tud**
-786. science | /ˈsaɪəns/ — sounds like **SY-uns** | /ˈsaɪəns/ — sounds like **SY-uns**
-787. donor | /ˈdəʊnə/ — sounds like **DOH-nuh** | /ˈdoʊnər/ — sounds like **DOH-nur**
-788. Controversy | /ˈkɒntrəvɜːsi/ — sounds like **KON-truh-vur-see** | /ˈkɑntrəvɝsi/ — sounds like **KAHN-truh-vur-see**
-789. compatible | /kəmˈpætəbəl/ — sounds like **kum-PAT-uh-bul** | /kəmˈpætəbəl/ — sounds like **kum-PAT-uh-bul**
-790. trading | /ˈtreɪdɪŋ/ — sounds like **TRAY-ding** | /ˈtreɪdɪŋ/ — sounds like **TRAY-ding**
-791. structure | /ˈstrʌktʃə/ — sounds like **STRUK-chuh** | /ˈstrʌktʃər/ — sounds like **STRUK-chur**
-792. society | /səˈsaɪəti/ — sounds like **suh-SY-uh-tee** | /səˈsaɪəti/ — sounds like **suh-SY-uh-tee**
-793. subscribe | /səbˈskraɪb/ — sounds like **sub-SKRYB** | /səbˈskraɪb/ — sounds like **sub-SKRYB**
-794. involved | /ɪnˈvɒlvd/ — sounds like **in-VOLVD** | /ɪnˈvɑlvd/ — sounds like **in-VAHLVD**
-795. alternative | /ɔːlˈtɜːnətɪv/ — sounds like **awl-TUR-nuh-tiv** | /ɔlˈtɝnətəv/ — sounds like **ahl-TUR-nuh-tuv**
-796. potent | /ˈpəʊtənt/ — sounds like **POH-tunt** | /ˈpoʊtənt/ — sounds like **POH-tunt**
-797. emphasis | /ˈemfəsɪs/ — sounds like **EM-fuh-sis** | /ˈemfəsəs/ — sounds like **EM-fuh-sus**
-798. spinning | /ˈspɪnɪŋ/ — sounds like **SPIN-ing** | /ˈspɪnɪŋ/ — sounds like **SPIN-ing**
-799. confidence | /ˈkɒnfɪdəns/ — sounds like **KON-fi-duns** | /ˈkɑnfədəns/ — sounds like **KAHN-fuh-duns**
-800. certainly | /ˈsɜːtənli/ — sounds like **SUR-tun-lee** | /ˈsɝtənli/ — sounds like **SUR-tun-lee**
-801. research | /rɪˈsɜːtʃ/ — sounds like **ri-SURCH** | /rəˈsɝtʃ/ — sounds like **ruh-SURCH**
-802. approach | /əˈprəʊtʃ/ — sounds like **uh-PROHCH** | /əˈproʊtʃ/ — sounds like **uh-PROHCH**
-803. evidence | /ˈevɪdəns/ — sounds like **EV-i-duns** | /ˈevədəns/ — sounds like **EV-uh-duns**
-804. significant | /sɪɡˈnɪfɪkənt/ — sounds like **sig-NIF-i-kunt** | /sɪɡˈnɪfəkənt/ — sounds like **sig-NIF-uh-kunt**
-805. analysis | /əˈnæləsɪs/ — sounds like **uh-NAL-uh-sis** | /əˈnæləsəs/ — sounds like **uh-NAL-uh-sus**
-806. development | /dɪˈveləpmənt/ — sounds like **di-VEL-up-munt** | /dəˈveləpmənt/ — sounds like **duh-VEL-up-munt**
-807. information | /ˌɪnfəˈmeɪʃən/ — sounds like **IN-fuh-MAY-shun** | /ˌɪnfərˈmeɪʃən/ — sounds like **IN-fur-MAY-shun**
-808. management | /ˈmænɪdʒmənt/ — sounds like **MAN-ij-munt** | /ˈmænədʒmənt/ — sounds like **MAN-uj-munt**
-809. experience | /ɪkˈspɪəriəns/ — sounds like **ik-SPEER-ee-uns** | /ɪkˈspɪriəns/ — sounds like **ik-SPEER-ee-uns**
-810. organization | /ˌɔːɡənaɪˈzeɪʃən/ — sounds like **OR-guh-ny-ZAY-shun** | /ˌɔrɡənəˈzeɪʃən/ — sounds like **OR-guh-nuh-ZAY-shun**
-811. individual | /ˌɪndɪˈvɪdʒuəl/ — sounds like **IN-di-VIJ-oo-ul** | /ˌɪndəˈvɪdʒuəl/ — sounds like **IN-duh-VIJ-oo-ul**
-812. government | /ˈɡʌvənmənt/ — sounds like **GUV-urn-munt** | /ˈɡʌvərnmənt/ — sounds like **GUV-urn-munt**
-813. community | /kəˈmjuːnəti/ — sounds like **kuh-MYOO-nuh-tee** | /kəˈmjunəti/ — sounds like **kuh-MYOO-nuh-tee**
-814. population | /ˌpɒpjʊˈleɪʃən/ — sounds like **POP-yoo-LAY-shun** | /ˌpɑpjəˈleɪʃən/ — sounds like **PAH-pyuh-LAY-shun**
-815. education | /ˌedjʊˈkeɪʃən/ — sounds like **ED-yoo-KAY-shun** | /ˌedʒəˈkeɪʃən/ — sounds like **ED-juh-KAY-shun**
-816. technology | /tekˈnɒlədʒi/ — sounds like **tek-NOL-uh-jee** | /tekˈnɑlədʒi/ — sounds like **tek-NAH-luh-jee**
-817. environment | /ɪnˈvaɪrənmənt/ — sounds like **in-VY-run-munt** | /ɪnˈvaɪrənmənt/ — sounds like **in-VY-run-munt**
-818. economic | /ˌiːkəˈnɒmɪk/ — sounds like **EE-kuh-NOM-ik** | /ˌikəˈnɑmɪk/ — sounds like **EE-kuh-NAH-mik**
-819. political | /pəˈlɪtɪkəl/ — sounds like **puh-LIT-i-kul** | /pəˈlɪtəkəl/ — sounds like **puh-LIT-uh-kul**
-820. social | /ˈsəʊʃəl/ — sounds like **SOH-shul** | /ˈsoʊʃəl/ — sounds like **SOH-shul**
-821. cultural | /ˈkʌltʃərəl/ — sounds like **KUL-chuh-rul** | /ˈkʌltʃərəl/ — sounds like **KUL-chur-ul**
-822. historical | /hɪˈstɒrɪkəl/ — sounds like **hi-STOR-i-kul** | /hɪˈstɔrəkəl/ — sounds like **hi-STOR-uh-kul**
-823. international | /ˌɪntəˈnæʃənəl/ — sounds like **IN-tuh-NASH-uh-nul** | /ˌɪntərˈnæʃənəl/ — sounds like **IN-tur-NASH-uh-nul**
-824. national | /ˈnæʃənəl/ — sounds like **NASH-uh-nul** | /ˈnæʃənəl/ — sounds like **NASH-uh-nul**
-825. regional | /ˈriːdʒənəl/ — sounds like **REE-juh-nul** | /ˈridʒənəl/ — sounds like **REE-juh-nul**
-826. local | /ˈləʊkəl/ — sounds like **LOH-kul** | /ˈloʊkəl/ — sounds like **LOH-kul**
-827. global | /ˈɡləʊbəl/ — sounds like **GLOH-bul** | /ˈɡloʊbəl/ — sounds like **GLOH-bul**
-828. public | /ˈpʌblɪk/ — sounds like **PUB-lik** | /ˈpʌblək/ — sounds like **PUB-luk**
-829. private | /ˈpraɪvət/ — sounds like **PRY-vut** | /ˈpraɪvət/ — sounds like **PRY-vut**
-830. professional | /prəˈfeʃənəl/ — sounds like **pruh-FESH-uh-nul** | /prəˈfeʃənəl/ — sounds like **pruh-FESH-uh-nul**
-831. academic | /ˌækəˈdemɪk/ — sounds like **AK-uh-DEM-ik** | /ˌækəˈdemək/ — sounds like **AK-uh-DEM-uk**
-832. scientific | /ˌsaɪənˈtɪfɪk/ — sounds like **SY-un-TIF-ik** | /ˌsaɪənˈtɪfək/ — sounds like **SY-un-TIF-uk**
-833. medical | /ˈmedɪkəl/ — sounds like **MED-i-kul** | /ˈmedəkəl/ — sounds like **MED-uh-kul**
-834. legal | /ˈliːɡəl/ — sounds like **LEE-gul** | /ˈliɡəl/ — sounds like **LEE-gul**
-835. financial | /faɪˈnænʃəl/ — sounds like **fy-NAN-shul** | /fəˈnænʃəl/ — sounds like **fuh-NAN-shul**
-836. commercial | /kəˈmɜːʃəl/ — sounds like **kuh-MUR-shul** | /kəˈmɝʃəl/ — sounds like **kuh-MUR-shul**
-837. industrial | /ɪnˈdʌstriəl/ — sounds like **in-DUS-tree-ul** | /ɪnˈdʌstriəl/ — sounds like **in-DUS-tree-ul**
-838. agricultural | /ˌæɡrɪˈkʌltʃərəl/ — sounds like **AG-ri-KUL-chuh-rul** | /ˌæɡrəˈkʌltʃərəl/ — sounds like **AG-ruh-KUL-chur-ul**
-839. environmental | /ɪnˌvaɪrənˈmentəl/ — sounds like **in-VY-run-MEN-tul** | /ɪnˌvaɪrənˈmentəl/ — sounds like **in-VY-run-MEN-tul**
-840. psychological | /ˌsaɪkəˈlɒdʒɪkəl/ — sounds like **SY-kuh-LOJ-i-kul** | /ˌsaɪkəˈlɑdʒəkəl/ — sounds like **SY-kuh-LAH-juh-kul**
-841. sociological | /ˌsəʊsiəˈlɒdʒɪkəl/ — sounds like **SOH-see-uh-LOJ-i-kul** | /ˌsoʊsiəˈlɑdʒəkəl/ — sounds like **SOH-see-uh-LAH-juh-kul**
-842. anthropological | /ˌænθrəpəˈlɒdʒɪkəl/ — sounds like **AN-thruh-puh-LOJ-i-kul** | /ˌænθrəpəˈlɑdʒəkəl/ — sounds like **AN-thruh-puh-LAH-juh-kul**
-843. philosophical | /ˌfɪləˈsɒfɪkəl/ — sounds like **FIL-uh-SOF-i-kul** | /ˌfɪləˈsɑfəkəl/ — sounds like **FIL-uh-SAH-fuh-kul**
-844. theoretical | /ˌθɪəˈretɪkəl/ — sounds like **THEE-uh-RET-i-kul** | /ˌθiəˈretəkəl/ — sounds like **THEE-uh-RET-uh-kul**
-845. practical | /ˈpræktɪkəl/ — sounds like **PRAK-ti-kul** | /ˈpræktəkəl/ — sounds like **PRAK-tuh-kul**
-846. empirical | /ɪmˈpɪrɪkəl/ — sounds like **im-PIR-i-kul** | /ɪmˈpɪrəkəl/ — sounds like **im-PIR-uh-kul**
-847. quantitative | /ˈkwɒntɪtətɪv/ — sounds like **KWON-ti-tuh-tiv** | /ˈkwɑntətətəv/ — sounds like **KWAHN-tuh-tuh-tuv**
-848. qualitative | /ˈkwɒlɪtətɪv/ — sounds like **KWOL-i-tuh-tiv** | /ˈkwɑlətətəv/ — sounds like **KWAH-luh-tuh-tuv**
-849. comparative | /kəmˈpærətɪv/ — sounds like **kum-PAIR-uh-tiv** | /kəmˈpærətəv/ — sounds like **kum-PAIR-uh-tuv**
-850. longitudinal | /ˌlɒndʒɪˈtjuːdɪnəl/ — sounds like **LON-ji-TYOO-di-nul** | /ˌlɑndʒəˈtudənəl/ — sounds like **LAHN-juh-TOO-duh-nul**
-851. cross-sectional | /ˌkrɒsˈsekʃənəl/ — sounds like **KROS-SEK-shuh-nul** | /ˌkrɔsˈsekʃənəl/ — sounds like **KRAHS-SEK-shuh-nul**
-852. experimental | /ɪkˌsperɪˈmentəl/ — sounds like **ik-SPER-i-MEN-tul** | /ɪkˌsperəˈmentəl/ — sounds like **ik-SPER-uh-MEN-tul**
-853. observational | /ˌɒbzəˈveɪʃənəl/ — sounds like **OB-zuh-VAY-shuh-nul** | /ˌɑbzərˈveɪʃənəl/ — sounds like **AHB-zur-VAY-shuh-nul**
-854. descriptive | /dɪˈskrɪptɪv/ — sounds like **di-SKRIP-tiv** | /dəˈskrɪptəv/ — sounds like **duh-SKRIP-tuv**
-855. analytical | /ˌænəˈlɪtɪkəl/ — sounds like **AN-uh-LIT-i-kul** | /ˌænəˈlɪtəkəl/ — sounds like **AN-uh-LIT-uh-kul**
-856. critical | /ˈkrɪtɪkəl/ — sounds like **KRIT-i-kul** | /ˈkrɪtəkəl/ — sounds like **KRIT-uh-kul**
-857. systematic | /ˌsɪstəˈmætɪk/ — sounds like **SIS-tuh-MAT-ik** | /ˌsɪstəˈmætək/ — sounds like **SIS-tuh-MAT-uk**
-858. comprehensive | /ˌkɒmprɪˈhensɪv/ — sounds like **KOM-pri-HEN-siv** | /ˌkɑmprəˈhensəv/ — sounds like **KAHM-pruh-HEN-suv**
-859. extensive | /ɪkˈstensɪv/ — sounds like **ik-STEN-siv** | /ɪkˈstensəv/ — sounds like **ik-STEN-suv**
-860. intensive | /ɪnˈtensɪv/ — sounds like **in-TEN-siv** | /ɪnˈtensəv/ — sounds like **in-TEN-suv**
-861. detailed | /ˈdiːteɪld/ — sounds like **DEE-tayld** | /dɪˈteɪld/ — sounds like **di-TAYLD**
-862. thorough | /ˈθʌrə/ — sounds like **THUR-uh** | /ˈθɝoʊ/ — sounds like **THUR-oh**
-863. rigorous | /ˈrɪɡərəs/ — sounds like **RIG-uh-rus** | /ˈrɪɡərəs/ — sounds like **RIG-uh-rus**
-864. reliable | /rɪˈlaɪəbəl/ — sounds like **ri-LY-uh-bul** | /rəˈlaɪəbəl/ — sounds like **ruh-LY-uh-bul**
-865. valid | /ˈvælɪd/ — sounds like **VAL-id** | /ˈvæləd/ — sounds like **VAL-ud**
-866. accurate | /ˈækjərət/ — sounds like **AK-yuh-rut** | /ˈækjərət/ — sounds like **AK-yuh-rut**
-867. precise | /prɪˈsaɪs/ — sounds like **pri-SYS** | /prəˈsaɪs/ — sounds like **pruh-SYS**
-868. consistent | /kənˈsɪstənt/ — sounds like **kun-SIS-tunt** | /kənˈsɪstənt/ — sounds like **kun-SIS-tunt**
-869. objective | /əbˈdʒektɪv/ — sounds like **ub-JEK-tiv** | /əbˈdʒektəv/ — sounds like **ub-JEK-tuv**
-870. subjective | /səbˈdʒektɪv/ — sounds like **sub-JEK-tiv** | /səbˈdʒektəv/ — sounds like **sub-JEK-tuv**
-871. neutral | /ˈnjuːtrəl/ — sounds like **NYOO-trul** | /ˈnutrəl/ — sounds like **NOO-trul**
-872. unbiased | /ʌnˈbaɪəst/ — sounds like **un-BY-ust** | /ʌnˈbaɪəst/ — sounds like **un-BY-ust**
-873. impartial | /ɪmˈpɑːʃəl/ — sounds like **im-PAR-shul** | /ɪmˈpɑrʃəl/ — sounds like **im-PAR-shul**
-874. fair | /feə/ — sounds like **FAIR** | /fer/ — sounds like **FAIR**
-875. balanced | /ˈbælənst/ — sounds like **BAL-unst** | /ˈbælənst/ — sounds like **BAL-unst**
-876. representative | /ˌreprɪˈzentətɪv/ — sounds like **REP-ri-ZEN-tuh-tiv** | /ˌreprəˈzentətəv/ — sounds like **REP-ruh-ZEN-tuh-tuv**
-877. generalizable | /ˈdʒenərəlaɪzəbəl/ — sounds like **JEN-uh-ruh-ly-zuh-bul** | /ˈdʒenərəlaɪzəbəl/ — sounds like **JEN-uh-ruh-ly-zuh-bul**
-878. applicable | /əˈplɪkəbəl/ — sounds like **uh-PLIK-uh-bul** | /ˈæpləkəbəl/ — sounds like **AP-luh-kuh-bul**
-879. relevant | /ˈreləvənt/ — sounds like **REL-uh-vunt** | /ˈreləvənt/ — sounds like **REL-uh-vunt**
-880. significant | /sɪɡˈnɪfɪkənt/ — sounds like **sig-NIF-i-kunt** | /sɪɡˈnɪfəkənt/ — sounds like **sig-NIF-uh-kunt**
-881. meaningful | /ˈmiːnɪŋfəl/ — sounds like **MEE-ning-ful** | /ˈminɪŋfəl/ — sounds like **MIN-ing-ful**
-882. substantial | /səbˈstænʃəl/ — sounds like **sub-STAN-shul** | /səbˈstænʃəl/ — sounds like **sub-STAN-shul**
-883. considerable | /kənˈsɪdərəbəl/ — sounds like **kun-SID-uh-ruh-bul** | /kənˈsɪdərəbəl/ — sounds like **kun-SID-uh-ruh-bul**
-884. important | /ɪmˈpɔːtənt/ — sounds like **im-POR-tunt** | /ɪmˈpɔrtənt/ — sounds like **im-POR-tunt**
-885. essential | /ɪˈsenʃəl/ — sounds like **i-SEN-shul** | /əˈsenʃəl/ — sounds like **uh-SEN-shul**
-886. fundamental | /ˌfʌndəˈmentəl/ — sounds like **FUN-duh-MEN-tul** | /ˌfʌndəˈmentəl/ — sounds like **FUN-duh-MEN-tul**
-887. basic | /ˈbeɪsɪk/ — sounds like **BAY-sik** | /ˈbeɪsək/ — sounds like **BAY-suk**
-888. primary | /ˈpraɪməri/ — sounds like **PRY-muh-ree** | /ˈpraɪmeri/ — sounds like **PRY-mer-ee**
-889. secondary | /ˈsekəndəri/ — sounds like **SEK-un-duh-ree** | /ˈsekənderi/ — sounds like **SEK-un-der-ee**
-890. tertiary | /ˈtɜːʃəri/ — sounds like **TUR-shuh-ree** | /ˈtɝʃəri/ — sounds like **TUR-shuh-ree**
-891. preliminary | /prɪˈlɪmɪnəri/ — sounds like **pri-LIM-i-nuh-ree** | /prəˈlɪməneri/ — sounds like **pruh-LIM-uh-ner-ee**
-892. initial | /ɪˈnɪʃəl/ — sounds like **i-NISH-ul** | /ɪˈnɪʃəl/ — sounds like **i-NISH-ul**
-893. final | /ˈfaɪnəl/ — sounds like **FY-nul** | /ˈfaɪnəl/ — sounds like **FY-nul**
-894. ultimate | /ˈʌltɪmət/ — sounds like **UL-ti-mut** | /ˈʌltəmət/ — sounds like **UL-tuh-mut**
-895. conclusive | /kənˈkluːsɪv/ — sounds like **kun-KLOO-siv** | /kənˈklusəv/ — sounds like **kun-KLOO-suv**
-896. definitive | /dɪˈfɪnətɪv/ — sounds like **di-FIN-uh-tiv** | /dəˈfɪnətəv/ — sounds like **duh-FIN-uh-tuv**
-897. comprehensive | /ˌkɒmprɪˈhensɪv/ — sounds like **KOM-pri-HEN-siv** | /ˌkɑmprəˈhensəv/ — sounds like **KAHM-pruh-HEN-suv**
-898. complete | /kəmˈpliːt/ — sounds like **kum-PLEET** | /kəmˈplit/ — sounds like **kum-PLEET**
-899. thorough | /ˈθʌrə/ — sounds like **THUR-uh** | /ˈθɝoʊ/ — sounds like **THUR-oh**
-900. exhaustive | /ɪɡˈzɔːstɪv/ — sounds like **ig-ZAWS-tiv** | /ɪɡˈzɔstəv/ — sounds like **ig-ZAHS-tuv**
-901. inclusive | /ɪnˈkluːsɪv/ — sounds like **in-KLOO-siv** | /ɪnˈklusəv/ — sounds like **in-KLOO-suv**
-902. exclusive | /ɪkˈskluːsɪv/ — sounds like **ik-SKLOO-siv** | /ɪkˈsklusəv/ — sounds like **ik-SKLOO-suv**
-903. specific | /spəˈsɪfɪk/ — sounds like **spuh-SIF-ik** | /spəˈsɪfək/ — sounds like **spuh-SIF-uk**
-904. general | /ˈdʒenərəl/ — sounds like **JEN-uh-rul** | /ˈdʒenərəl/ — sounds like **JEN-uh-rul**
-905. universal | /ˌjuːnɪˈvɜːsəl/ — sounds like **YOO-ni-VUR-sul** | /ˌjunəˈvɝsəl/ — sounds like **YOO-nuh-VUR-sul**
-906. particular | /pəˈtɪkjʊlə/ — sounds like **puh-TIK-yuh-luh** | /pərˈtɪkjələr/ — sounds like **pur-TIK-yuh-lur**
-907. unique | /juːˈniːk/ — sounds like **yoo-NEEK** | /juˈnik/ — sounds like **yoo-NEEK**
-908. distinct | /dɪˈstɪŋkt/ — sounds like **di-STINGKT** | /dəˈstɪŋkt/ — sounds like **duh-STINGKT**
-909. separate | /ˈsepərət/ — sounds like **SEP-uh-rut** | /ˈsepərət/ — sounds like **SEP-uh-rut**
-910. individual | /ˌɪndɪˈvɪdʒuəl/ — sounds like **IN-di-VIJ-oo-ul** | /ˌɪndəˈvɪdʒuəl/ — sounds like **IN-duh-VIJ-oo-ul**
-911. collective | /kəˈlektɪv/ — sounds like **kuh-LEK-tiv** | /kəˈlektəv/ — sounds like **kuh-LEK-tuv**
-912. common | /ˈkɒmən/ — sounds like **KOM-un** | /ˈkɑmən/ — sounds like **KAH-mun**
-913. shared | /ʃeəd/ — sounds like **SHAIRD** | /ʃerd/ — sounds like **SHAIRD**
-914. mutual | /ˈmjuːtʃuəl/ — sounds like **MYOO-choo-ul** | /ˈmjutʃuəl/ — sounds like **MYOO-choo-ul**
+1. n. obscure | /əbˈskjʊə/ — sounds like **uhb-SKYOOR** | /əbˈskjʊr/ — sounds like **uhb-SKYOOR**
+2. n. clusters | /ˈklʌstəz/ — sounds like **KLUS-turz** | /ˈklʌstərz/ — sounds like **KLUS-turz**
+3. n. combination | /ˌkɒmbɪˈneɪʃən/ — sounds like **KOM-bi-NAY-shun** | /ˌkɑmbəˈneɪʃən/ — sounds like **KAHM-buh-NAY-shun**
+4. v. powered | /ˈpaʊəd/ — sounds like **POW-urd** | /ˈpaʊərd/ — sounds like **POW-urd**
+5. n. millions | /ˈmɪljənz/ — sounds like **MIL-yunz** | /ˈmɪljənz/ — sounds like **MIL-yunz**
+6. n. expansion | /ɪkˈspænʃən/ — sounds like **ik-SPAN-shun** | /ɪkˈspænʃən/ — sounds like **ik-SPAN-shun**
+7. n. prerequisite | /ˌpriːˈrekwɪzɪt/ — sounds like **PREE-REK-wi-zit** | /ˌpriˈrekwəzət/ — sounds like **PREE-REK-wuh-zut**
+8. v. hypothesise | /haɪˈpɒθəsaɪz/ — sounds like **hy-POTH-uh-syz** | /haɪˈpɑθəsaɪz/ — sounds like **hy-PAH-thuh-syz**
+9. v. summarized | /ˈsʌməraɪzd/ — sounds like **SUM-uh-ryzd** | /ˈsʌməraɪzd/ — sounds like **SUM-uh-ryzd**
+10. n. contents | /ˈkɒntents/ — sounds like **KON-tents** | /ˈkɑntents/ — sounds like **KAHN-tents**
+11. n. ocean | /ˈəʊʃən/ — sounds like **OH-shun** | /ˈoʊʃən/ — sounds like **OH-shun**
+12. n. search | /sɜːtʃ/ — sounds like **SURCH** | /sɝtʃ/ — sounds like **SURCH**
+13. v. staring | /ˈsteərɪŋ/ — sounds like **STAIR-ing** | /ˈsterɪŋ/ — sounds like **STAIR-ing**
+14. adj. predominant | /prɪˈdɒmɪnənt/ — sounds like **pri-DOM-i-nunt** | /prɪˈdɑmənənt/ — sounds like **pri-DAH-muh-nunt**
+15. n. sleek | /sliːk/ — sounds like **SLEEK** | /slik/ — sounds like **SLEEK**
+16. n. cause | /kɔːz/ — sounds like **KAWZ** | /kɔz/ — sounds like **KAWZ**
+17. n. mammals | /ˈmæməlz/ — sounds like **MAM-ulz** | /ˈmæməlz/ — sounds like **MAM-ulz**
+18. adj. socio-economic | /ˌsəʊsiəʊ ˌiːkəˈnɒmɪk/ — sounds like **SOH-see-oh EE-kuh-NOM-ik** | /ˌsoʊsioʊ ˌikəˈnɑmɪk/ — sounds like **SOH-see-oh EE-kuh-NAH-mik**
+19. adj. native | /ˈneɪtɪv/ — sounds like **NAY-tiv** | /ˈneɪtɪv/ — sounds like **NAY-tiv**
+20. n. muscle | /ˈmʌsəl/ — sounds like **MUS-ul** | /ˈmʌsəl/ — sounds like **MUS-ul**
+21. adj. right | /raɪt/ — sounds like **RYT** | /raɪt/ — sounds like **RYT**
+22. n. pendulum | /ˈpendjələm/ — sounds like **PEN-juh-lum** | /ˈpendjələm/ — sounds like **PEN-juh-lum**
+23. n. compile | /kəmˈpaɪl/ — sounds like **kum-PYL** | /kəmˈpaɪl/ — sounds like **kum-PYL**
+24. v. spotted | /ˈspɒtɪd/ — sounds like **SPOT-id** | /ˈspɑtəd/ — sounds like **SPAH-tud**
+25. n. forests | /ˈfɒrɪsts/ — sounds like **FOR-ists** | /ˈfɔrəsts/ — sounds like **FOR-usts**
+26. n. oceanographer | /ˌəʊʃəˈnɒɡrəfə/ — sounds like **OH-shuh-NOG-ruh-fuh** | /ˌoʊʃəˈnɑɡrəfər/ — sounds like **OH-shuh-NAH-gruh-fur**
+27. n. drop | /drɒp/ — sounds like **DROP** | /drɑp/ — sounds like **DRAHP**
+28. n. craft | /krɑːft/ — sounds like **KRAHFT** | /kræft/ — sounds like **KRAFT**
+29. n. countries | /ˈkʌntriz/ — sounds like **KUN-triz** | /ˈkʌntriz/ — sounds like **KUN-triz**
+30. v. experiencing | /ɪkˈspɪəriənsɪŋ/ — sounds like **ik-SPEER-ee-un-sing** | /ɪkˈspɪriənsɪŋ/ — sounds like **ik-SPEER-ee-un-sing**
+31. n. immense | /ɪˈmens/ — sounds like **i-MENS** | /ɪˈmens/ — sounds like **i-MENS**
+32. n. growth | /ɡrəʊθ/ — sounds like **GROHTH** | /ɡroʊθ/ — sounds like **GROHTH**
+33. adj. vertical | /ˈvɜːtɪkəl/ — sounds like **VUR-ti-kul** | /ˈvɝtəkəl/ — sounds like **VUR-tuh-kul**
+34. n. nutrients | /ˈnjuːtriənts/ — sounds like **NYOO-tree-unts** | /ˈnutriənts/ — sounds like **NOO-tree-unts**
+35. adj. mathematical | /ˌmæθəˈmætɪkəl/ — sounds like **MATH-uh-MAT-i-kul** | /ˌmæθəˈmætəkəl/ — sounds like **MATH-uh-MAT-uh-kul**
+36. n. access | /ˈækses/ — sounds like **AK-ses** | /ˈækses/ — sounds like **AK-ses**
+37. n. module | /ˈmɒdjuːl/ — sounds like **MOD-yool** | /ˈmɑdʒul/ — sounds like **MAH-jul**
+38. n. occurs | /əˈkɜːz/ — sounds like **uh-KURZ** | /əˈkɝz/ — sounds like **uh-KURZ**
+39. n. Droplets | /ˈdrɒplɪts/ — sounds like **DROP-lits** | /ˈdrɑpləts/ — sounds like **DRAHP-luts**
+40. v. hundred | /ˈhʌndrəd/ — sounds like **HUN-drud** | /ˈhʌndrəd/ — sounds like **HUN-drud**
+41. n. document | /ˈdɒkjʊmənt/ — sounds like **DOK-yuh-munt** | /ˈdɑkjəmənt/ — sounds like **DAH-kyuh-munt**
+42. n. wisdom | /ˈwɪzdəm/ — sounds like **WIZ-dum** | /ˈwɪzdəm/ — sounds like **WIZ-dum**
+43. adv. widely | /ˈwaɪdli/ — sounds like **WYD-lee** | /ˈwaɪdli/ — sounds like **WYD-lee**
+44. n. Teamwork | /ˈtiːmwɜːk/ — sounds like **TEEM-wurk** | /ˈtimwɝk/ — sounds like **TEEM-wurk**
+45. n. envisions | /ɪnˈvɪʒənz/ — sounds like **in-VIZH-unz** | /ɪnˈvɪʒənz/ — sounds like **in-VIZH-unz**
+46. adj. trajectory | /trəˈdʒektəri/ — sounds like **truh-JEK-tuh-ree** | /trəˈdʒektəri/ — sounds like **truh-JEK-tuh-ree**
+47. n. obesity | /əʊˈbiːsəti/ — sounds like **oh-BEE-suh-tee** | /oʊˈbisəti/ — sounds like **oh-BEE-suh-tee**
+48. n. allergy | /ˈælədʒi/ — sounds like **AL-ur-jee** | /ˈælərdʒi/ — sounds like **AL-ur-jee**
+49. n. urban | /ˈɜːbən/ — sounds like **UR-bun** | /ˈɝbən/ — sounds like **UR-bun**
+50. n. premium | /ˈpriːmiəm/ — sounds like **PREE-mee-um** | /ˈprimiəm/ — sounds like **PREE-mee-um**
+51. n. burgeon | /ˈbɜːdʒən/ — sounds like **BUR-jun** | /ˈbɝdʒən/ — sounds like **BUR-jun**
+52. v. incorporating | /ɪnˈkɔːpəreɪtɪŋ/ — sounds like **in-KOR-puh-ray-ting** | /ɪnˈkɔrpəreɪtɪŋ/ — sounds like **in-KOR-puh-ray-ting**
+53. n. navicular | /nəˈvɪkjʊlə/ — sounds like **nuh-VIK-yuh-luh** | /nəˈvɪkjələr/ — sounds like **nuh-VIK-yuh-lur**
+54. n. recommendations | /ˌrekəmenˈdeɪʃənz/ — sounds like **REK-uh-men-DAY-shunz** | /ˌrekəmenˈdeɪʃənz/ — sounds like **REK-uh-men-DAY-shunz**
+55. n. behavior | /bɪˈheɪvjə/ — sounds like **bi-HAYV-yuh** | /bɪˈheɪvjər/ — sounds like **bi-HAYV-yur**
+56. v. published | /ˈpʌblɪʃt/ — sounds like **PUB-lishd** | /ˈpʌblɪʃt/ — sounds like **PUB-lishd**
+57. n. communities | /kəˈmjuːnətiz/ — sounds like **kuh-MYOO-nuh-teez** | /kəˈmjunətiz/ — sounds like **kuh-MYOO-nuh-teez**
+58. v. sampling | /ˈsɑːmplɪŋ/ — sounds like **SAHM-pling** | /ˈsæmplɪŋ/ — sounds like **SAM-pling**
+59. v. apologize | /əˈpɒlədʒaɪz/ — sounds like **uh-POL-uh-jyz** | /əˈpɑlədʒaɪz/ — sounds like **uh-PAH-luh-jyz**
+60. v. climbing | /ˈklaɪmɪŋ/ — sounds like **KLY-ming** | /ˈklaɪmɪŋ/ — sounds like **KLY-ming**
+61. n. Phonograph | /ˈfəʊnəɡrɑːf/ — sounds like **FOH-nuh-grahf** | /ˈfoʊnəɡræf/ — sounds like **FOH-nuh-graf**
+62. n. stitch | /stɪtʃ/ — sounds like **STICH** | /stɪtʃ/ — sounds like **STICH**
+63. n. urgency | /ˈɜːdʒənsi/ — sounds like **UR-jun-see** | /ˈɝdʒənsi/ — sounds like **UR-jun-see**
+64. adj. compossible | /kəmˈpɒsəbəl/ — sounds like **kum-POS-uh-bul** | /kəmˈpɑsəbəl/ — sounds like **kum-PAH-suh-bul**
+65. n. splashes | /ˈsplæʃɪz/ — sounds like **SPLASH-iz** | /ˈsplæʃəz/ — sounds like **SPLASH-uz**
+66. n. identity | /aɪˈdentəti/ — sounds like **eye-DEN-tuh-tee** | /aɪˈdentəti/ — sounds like **eye-DEN-tuh-tee**
+67. n. implement | /ˈɪmplɪmənt/ — sounds like **IM-pluh-munt** | /ˈɪmpləmənt/ — sounds like **IM-pluh-munt**
+68. adj. obvious | /ˈɒbviəs/ — sounds like **OB-vee-us** | /ˈɑbviəs/ — sounds like **AHB-vee-us**
+69. adv. unashamedly | /ˌʌnəˈʃeɪmɪdli/ — sounds like **UN-uh-SHAYM-id-lee** | /ˌʌnəˈʃeɪmədli/ — sounds like **UN-uh-SHAYM-ud-lee**
+70. n. occurrence | /əˈkʌrəns/ — sounds like **uh-KUR-uns** | /əˈkɝəns/ — sounds like **uh-KUR-uns**
+71. adj. stable | /ˈsteɪbəl/ — sounds like **STAY-bul** | /ˈsteɪbəl/ — sounds like **STAY-bul**
+72. n. texture | /ˈtekstʃə/ — sounds like **TEKS-chuh** | /ˈtekstʃər/ — sounds like **TEKS-chur**
+73. n. creativity | /ˌkriːeɪˈtɪvəti/ — sounds like **KREE-ay-TIV-uh-tee** | /ˌkrieɪˈtɪvəti/ — sounds like **KREE-ay-TIV-uh-tee**
+74. adj. valuable | /ˈvæljuəbəl/ — sounds like **VAL-yoo-uh-bul** | /ˈvæljəbəl/ — sounds like **VAL-yuh-bul**
+75. n. encyclopedia | /ɪnˌsaɪkləˈpiːdiə/ — sounds like **in-SY-kluh-PEE-dee-uh** | /ɪnˌsaɪkləˈpidiə/ — sounds like **in-SY-kluh-PEE-dee-uh**
+76. v. personalised | /ˈpɜːsənəlaɪzd/ — sounds like **PUR-suh-nuh-lyzd** | /ˈpɝsənəlaɪzd/ — sounds like **PUR-suh-nuh-lyzd**
+77. n. operation | /ˌɒpəˈreɪʃən/ — sounds like **OP-uh-RAY-shun** | /ˌɑpəˈreɪʃən/ — sounds like **AH-puh-RAY-shun**
+78. n. squabble | /ˈskwɒbəl/ — sounds like **SKWOB-ul** | /ˈskwɑbəl/ — sounds like **SKWAH-bul**
+79. v. puzzled | /ˈpʌzəld/ — sounds like **PUZ-uld** | /ˈpʌzəld/ — sounds like **PUZ-uld**
+80. adj. editorial | /ˌedɪˈtɔːriəl/ — sounds like **ED-i-TOR-ee-ul** | /ˌedəˈtɔriəl/ — sounds like **ED-uh-TOR-ee-ul**
+81. adj. ecological | /ˌiːkəˈlɒdʒɪkəl/ — sounds like **EE-kuh-LOJ-i-kul** | /ˌikəˈlɑdʒəkəl/ — sounds like **EE-kuh-LAH-juh-kul**
+82. n. resources | /rɪˈsɔːsɪz/ — sounds like **ri-SOR-siz** | /ˈrisɔrsəz/ — sounds like **REE-sor-suz**
+83. n. insights | /ˈɪnsaɪts/ — sounds like **IN-syts** | /ˈɪnsaɪts/ — sounds like **IN-syts**
+84. adj. decent | /ˈdiːsənt/ — sounds like **DEE-sunt** | /ˈdisənt/ — sounds like **DEE-sunt**
+85. adj. economic | /ˌiːkəˈnɒmɪk/ — sounds like **EE-kuh-NOM-ik** | /ˌikəˈnɑmɪk/ — sounds like **EE-kuh-NAH-mik**
+86. adj. steady | /ˈstedi/ — sounds like **STED-ee** | /ˈstedi/ — sounds like **STED-ee**
+87. adj. legitimate | /lɪˈdʒɪtɪmət/ — sounds like **li-JIT-uh-mut** | /ləˈdʒɪtəmət/ — sounds like **luh-JIT-uh-mut**
+88. adv. primarily | /ˈpraɪmərəli/ — sounds like **PRY-muh-ruh-lee** | /praɪˈmerəli/ — sounds like **pry-MER-uh-lee**
+89. v. discuss | /dɪˈskʌs/ — sounds like **di-SKUS** | /dɪˈskʌs/ — sounds like **di-SKUS**
+90. adj. stolen | /ˈstəʊlən/ — sounds like **STOH-lun** | /ˈstoʊlən/ — sounds like **STOH-lun**
+91. adj. complained | /kəmˈpleɪnd/ — sounds like **kum-PLAYND** | /kəmˈpleɪnd/ — sounds like **kum-PLAYND**
+92. n. sources | /ˈsɔːsɪz/ — sounds like **SOR-siz** | /ˈsɔrsəz/ — sounds like **SOR-suz**
+93. adj. confusing | /kənˈfjuːzɪŋ/ — sounds like **kun-FYOO-zing** | /kənˈfjuzɪŋ/ — sounds like **kun-FYOO-zing**
+94. adv. rapidly | /ˈræpɪdli/ — sounds like **RAP-id-lee** | /ˈræpədli/ — sounds like **RAP-ud-lee**
+95. n. engine | /ˈendʒɪn/ — sounds like **EN-jin** | /ˈendʒən/ — sounds like **EN-jun**
+96. adv. ultimately | /ˈʌltɪmətli/ — sounds like **UL-ti-mut-lee** | /ˈʌltəmətli/ — sounds like **UL-tuh-mut-lee**
+97. adj. pragmatic | /præɡˈmætɪk/ — sounds like **prag-MAT-ik** | /præɡˈmætək/ — sounds like **prag-MAT-uk**
+98. adv. tremendously | /trɪˈmendəsli/ — sounds like **tri-MEN-dus-lee** | /trɪˈmendəsli/ — sounds like **tri-MEN-dus-lee**
+99. n. promotions | /prəˈməʊʃənz/ — sounds like **pruh-MOH-shunz** | /prəˈmoʊʃənz/ — sounds like **pruh-MOH-shunz**
+100. v. restrict | /rɪˈstrɪkt/ — sounds like **ri-STRIKT** | /rɪˈstrɪkt/ — sounds like **ri-STRIKT**
+101. adj. fundamental | /ˌfʌndəˈmentəl/ — sounds like **FUN-duh-MEN-tul** | /ˌfʌndəˈmentəl/ — sounds like **FUN-duh-MEN-tul**
+102. n. government | /ˈɡʌvənmənt/ — sounds like **GUV-urn-munt** | /ˈɡʌvərnmənt/ — sounds like **GUV-urn-munt**
+103. n. diseases | /dɪˈziːzɪz/ — sounds like **di-ZEE-ziz** | /dɪˈzizəz/ — sounds like **di-ZEE-zuz**
+104. v. leans | /liːnz/ — sounds like **LEENZ** | /linz/ — sounds like **LEENZ**
+105. adj. ridiculous | /rɪˈdɪkjələs/ — sounds like **ri-DIK-yuh-lus** | /rɪˈdɪkjələs/ — sounds like **ri-DIK-yuh-lus**
+106. n. protection | /prəˈtekʃən/ — sounds like **pruh-TEK-shun** | /prəˈtekʃən/ — sounds like **pruh-TEK-shun**
+107. adj. supplemented | /ˈsʌplɪmentɪd/ — sounds like **SUP-li-men-tid** | /ˈsʌpləmentəd/ — sounds like **SUP-luh-men-tud**
+108. n. expectations | /ˌekspekˈteɪʃənz/ — sounds like **EK-spek-TAY-shunz** | /ˌekspekˈteɪʃənz/ — sounds like **EK-spek-TAY-shunz**
+109. n. conference | /ˈkɒnfərəns/ — sounds like **KON-fuh-runs** | /ˈkɑnfərəns/ — sounds like **KAHN-fuh-runs**
+110. adj. efficient | /ɪˈfɪʃənt/ — sounds like **i-FISH-unt** | /ɪˈfɪʃənt/ — sounds like **i-FISH-unt**
+111. adj. saturated | /ˈsætʃəreɪtɪd/ — sounds like **SACH-uh-ray-tid** | /ˈsætʃəreɪtəd/ — sounds like **SACH-uh-ray-tud**
+112. n. scenario | /sɪˈnɑːriəʊ/ — sounds like **si-NAH-ree-oh** | /səˈnærioʊ/ — sounds like **suh-NAIR-ee-oh**
+113. v. envision | /ɪnˈvɪʒən/ — sounds like **in-VIZH-un** | /ɪnˈvɪʒən/ — sounds like **in-VIZH-un**
+114. adj. true | /truː/ — sounds like **TROO** | /tru/ — sounds like **TROO**
+115. n. universe | /ˈjuːnɪvɜːs/ — sounds like **YOO-ni-vurs** | /ˈjunəvɝs/ — sounds like **YOO-nuh-vurs**
+116. adj. adaptable | /əˈdæptəbəl/ — sounds like **uh-DAP-tuh-bul** | /əˈdæptəbəl/ — sounds like **uh-DAP-tuh-bul**
+117. adj. robust | /rəʊˈbʌst/ — sounds like **roh-BUST** | /roʊˈbʌst/ — sounds like **roh-BUST**
+118. v. observe | /əbˈzɜːv/ — sounds like **ub-ZURV** | /əbˈzɝv/ — sounds like **ub-ZURV**
+119. n. fashions | /ˈfæʃənz/ — sounds like **FASH-unz** | /ˈfæʃənz/ — sounds like **FASH-unz**
+120. adj. graphic | /ˈɡræfɪk/ — sounds like **GRAF-ik** | /ˈɡræfək/ — sounds like **GRAF-uk**
+121. n. percentage | /pəˈsentɪdʒ/ — sounds like **puh-SEN-tij** | /pərˈsentədʒ/ — sounds like **pur-SEN-tuhj**
+122. n. experience | /ɪkˈspɪəriəns/ — sounds like **ik-SPEER-ee-uns** | /ɪkˈspɪriəns/ — sounds like **ik-SPEER-ee-uns**
+123. adj. some | /sʌm/ — sounds like **SUM** | /sʌm/ — sounds like **SUM**
+124. n. boundary | /ˈbaʊndəri/ — sounds like **BOWN-duh-ree** | /ˈbaʊndəri/ — sounds like **BOWN-duh-ree**
+125. v. represents | /ˌreprɪˈzents/ — sounds like **REP-ri-ZENTS** | /ˌreprəˈzents/ — sounds like **REP-ruh-ZENTS**
+126. n. continent | /ˈkɒntɪnənt/ — sounds like **KON-ti-nunt** | /ˈkɑntənənt/ — sounds like **KAHN-tuh-nunt**
+127. v. evoke | /ɪˈvəʊk/ — sounds like **i-VOHK** | /ɪˈvoʊk/ — sounds like **i-VOHK**
+128. n. strategy | /ˈstrætədʒi/ — sounds like **STRAT-uh-jee** | /ˈstrætədʒi/ — sounds like **STRAT-uh-jee**
+129. adj. permanent | /ˈpɜːmənənt/ — sounds like **PUR-muh-nunt** | /ˈpɝmənənt/ — sounds like **PUR-muh-nunt**
+130. v. collect | /kəˈlekt/ — sounds like **kuh-LEKT** | /kəˈlekt/ — sounds like **kuh-LEKT**
+131. n. alliance | /əˈlaɪəns/ — sounds like **uh-LY-uns** | /əˈlaɪəns/ — sounds like **uh-LY-uns**
+132. n. ingredients | /ɪnˈɡriːdiənts/ — sounds like **in-GREE-dee-unts** | /ɪnˈɡridiənts/ — sounds like **in-GREE-dee-unts**
+133. n. statics | /ˈstætɪks/ — sounds like **STAT-iks** | /ˈstætəks/ — sounds like **STAT-uks**
+134. n. investigators | /ɪnˈvestɪɡeɪtəz/ — sounds like **in-VES-ti-gay-turz** | /ɪnˈvestəɡeɪtərz/ — sounds like **in-VES-tuh-gay-turz**
+135. adj. intentional | /ɪnˈtenʃənəl/ — sounds like **in-TEN-shuh-nul** | /ɪnˈtenʃənəl/ — sounds like **in-TEN-shuh-nul**
+136. adj. invisible | /ɪnˈvɪzəbəl/ — sounds like **in-VIZ-uh-bul** | /ɪnˈvɪzəbəl/ — sounds like **in-VIZ-uh-bul**
+137. n. instinct | /ˈɪnstɪŋkt/ — sounds like **IN-stingkt** | /ˈɪnstɪŋkt/ — sounds like **IN-stingkt**
+138. n. emphases | /ˈemfəsiːz/ — sounds like **EM-fuh-seez** | /ˈemfəsiz/ — sounds like **EM-fuh-seez**
+139. n. fossil | /ˈfɒsəl/ — sounds like **FOS-ul** | /ˈfɑsəl/ — sounds like **FAH-sul**
+140. n. extreme | /ɪkˈstriːm/ — sounds like **ik-STREEM** | /ɪkˈstrim/ — sounds like **ik-STREEM**
+141. n. regions | /ˈriːdʒənz/ — sounds like **REE-junz** | /ˈridʒənz/ — sounds like **REE-junz**
+142. n. exposure | /ɪkˈspəʊʒə/ — sounds like **ik-SPOH-zhuh** | /ɪkˈspoʊʒər/ — sounds like **ik-SPOH-zhur**
+143. v. creed | /kriːd/ — sounds like **KREED** | /krid/ — sounds like **KREED**
+144. n. expressions | /ɪkˈspreʃənz/ — sounds like **ik-SPRE-shunz** | /ɪkˈspreʃənz/ — sounds like **ik-SPRE-shunz**
+145. n. illusion | /ɪˈluːʒən/ — sounds like **i-LOO-zhun** | /ɪˈluʒən/ — sounds like **i-LOO-zhun**
+146. n. populations | /ˌpɒpjʊˈleɪʃənz/ — sounds like **POP-yoo-LAY-shunz** | /ˌpɑpjəˈleɪʃənz/ — sounds like **PAH-pyuh-LAY-shunz**
+147. n. reconstruction | /ˌriːkənˈstrʌkʃən/ — sounds like **REE-kun-STRUK-shun** | /ˌrikənˈstrʌkʃən/ — sounds like **REE-kun-STRUK-shun**
+148. adj. financial | /faɪˈnænʃəl/ — sounds like **fy-NAN-shul** | /fəˈnænʃəl/ — sounds like **fuh-NAN-shul**
+149. n. innovator | /ˈɪnəveɪtə/ — sounds like **IN-uh-vay-tuh** | /ˈɪnəveɪtər/ — sounds like **IN-uh-vay-tur**
+150. n. challenge | /ˈtʃælɪndʒ/ — sounds like **CHAL-inj** | /ˈtʃæləndʒ/ — sounds like **CHAL-unj**
+151. n. firm | /fɜːm/ — sounds like **FURM** | /fɝm/ — sounds like **FURM**
+152. v. propagating | /ˈprɒpəɡeɪtɪŋ/ — sounds like **PROP-uh-gay-ting** | /ˈprɑpəɡeɪtɪŋ/ — sounds like **PRAH-puh-gay-ting**
+153. adj. operational | /ˌɒpəˈreɪʃənəl/ — sounds like **OP-uh-RAY-shuh-nul** | /ˌɑpəˈreɪʃənəl/ — sounds like **AH-puh-RAY-shuh-nul**
+154. n. relatives | /ˈrelətɪvz/ — sounds like **REL-uh-tivz** | /ˈrelətəvz/ — sounds like **REL-uh-tuvz**
+155. adj. adaptive | /əˈdæptɪv/ — sounds like **uh-DAP-tiv** | /əˈdæptəv/ — sounds like **uh-DAP-tuv**
+156. n. transition | /trænˈzɪʃən/ — sounds like **tran-ZISH-un** | /trænˈzɪʃən/ — sounds like **tran-ZISH-un**
+157. n. distribution | /ˌdɪstrɪˈbjuːʃən/ — sounds like **DIS-tri-BYOO-shun** | /ˌdɪstrəˈbjuʃən/ — sounds like **DIS-truh-BYOO-shun**
+158. adv. gradually | /ˈɡrædʒuəli/ — sounds like **GRAJ-oo-uh-lee** | /ˈɡrædʒuəli/ — sounds like **GRAJ-oo-uh-lee**
+159. v. being | /ˈbiːɪŋ/ — sounds like **BEE-ing** | /ˈbiɪŋ/ — sounds like **BEE-ing**
+160. v. deformed | /dɪˈfɔːmd/ — sounds like **di-FORMD** | /dɪˈfɔrmd/ — sounds like **di-FORMD**
+161. n. empathy | /ˈempəθi/ — sounds like **EM-puh-thee** | /ˈempəθi/ — sounds like **EM-puh-thee**
+162. n. escape | /ɪˈskeɪp/ — sounds like **i-SKAYP** | /ɪˈskeɪp/ — sounds like **i-SKAYP**
+163. n. three | /θriː/ — sounds like **THREE** | /θri/ — sounds like **THREE**
+164. v. imaging | /ˈɪmɪdʒɪŋ/ — sounds like **IM-i-jing** | /ˈɪmədʒɪŋ/ — sounds like **IM-uh-jing**
+165. n. soul | /səʊl/ — sounds like **SOHL** | /soʊl/ — sounds like **SOHL**
+166. adv. radically | /ˈrædɪkəli/ — sounds like **RAD-i-kuh-lee** | /ˈrædəkəli/ — sounds like **RAD-uh-kuh-lee**
+167. n. commence | /kəˈmens/ — sounds like **kuh-MENS** | /kəˈmens/ — sounds like **kuh-MENS**
+168. v. attuned | /əˈtjuːnd/ — sounds like **uh-TYOOND** | /əˈtund/ — sounds like **uh-TOOND**
+169. n. meet | /miːt/ — sounds like **MEET** | /mit/ — sounds like **MEET**
+170. v. incorporate | /ɪnˈkɔːpəreɪt/ — sounds like **in-KOR-puh-rayt** | /ɪnˈkɔrpəreɪt/ — sounds like **in-KOR-puh-rayt**
+171. adj. temporary | /ˈtempərəri/ — sounds like **TEM-puh-ruh-ree** | /ˈtempəreri/ — sounds like **TEM-puh-rer-ee**
+172. n. approach | /əˈprəʊtʃ/ — sounds like **uh-PROHCH** | /əˈproʊtʃ/ — sounds like **uh-PROHCH**
+173. n. spectacle | /ˈspektəkəl/ — sounds like **SPEK-tuh-kul** | /ˈspektəkəl/ — sounds like **SPEK-tuh-kul**
+174. n. calories | /ˈkæləriz/ — sounds like **KAL-uh-reez** | /ˈkæləriz/ — sounds like **KAL-uh-reez**
+175. adv. deliberately | /dɪˈlɪbərətli/ — sounds like **di-LIB-uh-rut-lee** | /dəˈlɪbərətli/ — sounds like **duh-LIB-uh-rut-lee**
+176. n. latter | /ˈlætə/ — sounds like **LAT-uh** | /ˈlætər/ — sounds like **LAT-ur**
+177. n. clot | /klɒt/ — sounds like **KLOT** | /klɑt/ — sounds like **KLAHT**
+178. n. shadow | /ˈʃædəʊ/ — sounds like **SHAD-oh** | /ˈʃædoʊ/ — sounds like **SHAD-oh**
+179. n. chairman | /ˈtʃeəmən/ — sounds like **CHAIR-mun** | /ˈtʃermən/ — sounds like **CHAIR-mun**
+180. v. shed | /ʃed/ — sounds like **SHED** | /ʃed/ — sounds like **SHED**
+181. n. ravel | /ˈrævəl/ — sounds like **RAV-ul** | /ˈrævəl/ — sounds like **RAV-ul**
+182. adv. seemingly | /ˈsiːmɪŋli/ — sounds like **SEE-ming-lee** | /ˈsimɪŋli/ — sounds like **SEE-ming-lee**
+183. n. floor | /flɔː/ — sounds like **FLOR** | /flɔr/ — sounds like **FLOR**
+184. adv. dramatically | /drəˈmætɪkəli/ — sounds like **druh-MAT-i-kuh-lee** | /drəˈmætəkəli/ — sounds like **druh-MAT-uh-kuh-lee**
+185. n. surfer | /ˈsɜːfə/ — sounds like **SUR-fuh** | /ˈsɝfər/ — sounds like **SUR-fur**
+186. adj. illustrative | /ɪˈlʌstrətɪv/ — sounds like **i-LUS-truh-tiv** | /ɪˈlʌstrətəv/ — sounds like **i-LUS-truh-tuv**
+187. v. getting | /ˈɡetɪŋ/ — sounds like **GET-ing** | /ˈɡetɪŋ/ — sounds like **GET-ing**
+188. n. behavior | /bɪˈheɪvjə/ — sounds like **bi-HAYV-yuh** | /bɪˈheɪvjər/ — sounds like **bi-HAYV-yur**
+189. v. exploring | /ɪkˈsplɔːrɪŋ/ — sounds like **ik-SPLOR-ing** | /ɪkˈsplɔrɪŋ/ — sounds like **ik-SPLOR-ing**
+190. v. listed | /ˈlɪstɪd/ — sounds like **LIS-tid** | /ˈlɪstəd/ — sounds like **LIS-tud**
+191. adj. naval | /ˈneɪvəl/ — sounds like **NAY-vul** | /ˈneɪvəl/ — sounds like **NAY-vul**
+192. n. route | /ruːt/ — sounds like **ROOT** | /rut/ — sounds like **ROOT**
+193. n. pollination | /ˌpɒləˈneɪʃən/ — sounds like **POL-uh-NAY-shun** | /ˌpɑləˈneɪʃən/ — sounds like **PAH-luh-NAY-shun**
+194. n. relationship | /rɪˈleɪʃənʃɪp/ — sounds like **ri-LAY-shun-ship** | /rɪˈleɪʃənʃəp/ — sounds like **ri-LAY-shun-shup**
+195. n. diversity | /daɪˈvɜːsəti/ — sounds like **dy-VUR-suh-tee** | /dəˈvɝsəti/ — sounds like **duh-VUR-suh-tee**
+196. n. vernacular | /vəˈnækjələ/ — sounds like **vuh-NAK-yuh-luh** | /vərˈnækjələr/ — sounds like **vur-NAK-yuh-lur**
+197. adj. consecutive | /kənˈsekjətɪv/ — sounds like **kun-SEK-yuh-tiv** | /kənˈsekjətəv/ — sounds like **kun-SEK-yuh-tuv**
+198. v. confessed | /kənˈfest/ — sounds like **kun-FEST** | /kənˈfest/ — sounds like **kun-FEST**
+199. n. provides | /prəˈvaɪdz/ — sounds like **pruh-VYDZ** | /prəˈvaɪdz/ — sounds like **pruh-VYDZ**
+200. n. element | /ˈelɪmənt/ — sounds like **EL-uh-munt** | /ˈeləmənt/ — sounds like **EL-uh-munt**
+201. v. opposed | /əˈpəʊzd/ — sounds like **uh-POHZD** | /əˈpoʊzd/ — sounds like **uh-POHZD**
+202. n. recognition | /ˌrekəɡˈnɪʃən/ — sounds like **REK-ug-NISH-un** | /ˌrekəɡˈnɪʃən/ — sounds like **REK-ug-NISH-un**
+203. n. clout | /klaʊt/ — sounds like **KLOWT** | /klaʊt/ — sounds like **KLOWT**
+204. adj. terrestrial | /təˈrestriəl/ — sounds like **tuh-RES-tree-ul** | /təˈrestriəl/ — sounds like **tuh-RES-tree-ul**
+205. n. determine | /dɪˈtɜːmɪn/ — sounds like **di-TUR-min** | /dəˈtɝmən/ — sounds like **duh-TUR-mun**
+206. v. trusted | /ˈtrʌstɪd/ — sounds like **TRUS-tid** | /ˈtrʌstəd/ — sounds like **TRUS-tud**
+207. v. nitrogen | /ˈnaɪtrədʒən/ — sounds like **NY-truh-jun** | /ˈnaɪtrədʒən/ — sounds like **NY-truh-jun**
+208. adj. mysterious | /mɪˈstɪəriəs/ — sounds like **mi-STEER-ee-us** | /mɪˈstɪriəs/ — sounds like **mi-STEER-ee-us**
+209. n. rammer | /ˈræmə/ — sounds like **RAM-uh** | /ˈræmər/ — sounds like **RAM-ur**
+210. adj. primary | /ˈpraɪməri/ — sounds like **PRY-muh-ree** | /ˈpraɪmeri/ — sounds like **PRY-mer-ee**
+211. n. alliances | /əˈlaɪənsɪz/ — sounds like **uh-LY-un-siz** | /əˈlaɪənsəz/ — sounds like **uh-LY-un-suz**
+212. n. theories | /ˈθɪəriz/ — sounds like **THEER-eez** | /ˈθɪriz/ — sounds like **THEER-eez**
+213. n. label | /ˈleɪbəl/ — sounds like **LAY-bul** | /ˈleɪbəl/ — sounds like **LAY-bul**
+214. v. speculate | /ˈspekjʊleɪt/ — sounds like **SPEK-yoo-layt** | /ˈspekjəleɪt/ — sounds like **SPEK-yuh-layt**
+215. adj. percent | /pəˈsent/ — sounds like **puh-SENT** | /pərˈsent/ — sounds like **pur-SENT**
+216. n. assess | /əˈses/ — sounds like **uh-SES** | /əˈses/ — sounds like **uh-SES**
+217. n. ponds | /pɒndz/ — sounds like **PONDZ** | /pɑndz/ — sounds like **PAHNDZ**
+218. n. pounds | /paʊndz/ — sounds like **POWNDZ** | /paʊndz/ — sounds like **POWNDZ**
+219. v. debate | /dɪˈbeɪt/ — sounds like **di-BAYT** | /dəˈbeɪt/ — sounds like **duh-BAYT**
+220. adj. ancient | /ˈeɪnʃənt/ — sounds like **AYN-shunt** | /ˈeɪnʃənt/ — sounds like **AYN-shunt**
+221. n. horns | /hɔːnz/ — sounds like **HORNZ** | /hɔrnz/ — sounds like **HORNZ**
+222. adv. sequentially | /sɪˈkwenʃəli/ — sounds like **si-KWEN-shuh-lee** | /səˈkwenʃəli/ — sounds like **suh-KWEN-shuh-lee**
+223. n. balloons | /bəˈluːnz/ — sounds like **buh-LOONZ** | /bəˈlunz/ — sounds like **buh-LOONZ**
+224. v. beginning | /bɪˈɡɪnɪŋ/ — sounds like **bi-GIN-ing** | /bəˈɡɪnɪŋ/ — sounds like **buh-GIN-ing**
+225. adj. editable | /ˈedɪtəbəl/ — sounds like **ED-i-tuh-bul** | /ˈedətəbəl/ — sounds like **ED-uh-tuh-bul**
+226. n. collision | /kəˈlɪʒən/ — sounds like **kuh-LIZH-un** | /kəˈlɪʒən/ — sounds like **kuh-LIZH-un**
+227. n. hemisphere | /ˈhemɪsfɪə/ — sounds like **HEM-is-feer** | /ˈheməsfɪr/ — sounds like **HEM-uh-sfeer**
+228. n. characters | /ˈkærəktəz/ — sounds like **KAR-uk-turz** | /ˈkærəktərz/ — sounds like **KAR-uk-turz**
+229. n. interact | /ˌɪntərˈækt/ — sounds like **IN-tur-AKT** | /ˌɪntərˈækt/ — sounds like **IN-tur-AKT**
+230. n. extol | /ɪkˈstəʊl/ — sounds like **ik-STOHL** | /ɪkˈstoʊl/ — sounds like **ik-STOHL**
+231. adj. journal | /ˈdʒɜːnəl/ — sounds like **JUR-nul** | /ˈdʒɝnəl/ — sounds like **JUR-nul**
+232. n. region | /ˈriːdʒən/ — sounds like **REE-jun** | /ˈridʒən/ — sounds like **REE-jun**
+233. n. autograph | /ˈɔːtəɡrɑːf/ — sounds like **OR-tuh-grahf** | /ˈɔtəɡræf/ — sounds like **AH-tuh-graf**
+234. n. graphics | /ˈɡræfɪks/ — sounds like **GRAF-iks** | /ˈɡræfəks/ — sounds like **GRAF-uks**
+235. v. swapping | /ˈswɒpɪŋ/ — sounds like **SWOP-ing** | /ˈswɑpɪŋ/ — sounds like **SWAHP-ing**
+236. n. random | /ˈrændəm/ — sounds like **RAN-dum** | /ˈrændəm/ — sounds like **RAN-dum**
+237. n. space | /speɪs/ — sounds like **SPAYS** | /speɪs/ — sounds like **SPAYS**
+238. adj. concussive | /kənˈkʌsɪv/ — sounds like **kun-KUS-iv** | /kənˈkʌsəv/ — sounds like **kun-KUS-uv**
+239. adj. objective | /əbˈdʒektɪv/ — sounds like **ub-JEK-tiv** | /əbˈdʒektəv/ — sounds like **ub-JEK-tuv**
+240. n. qualifiers | /ˈkwɒlɪfaɪəz/ — sounds like **KWOL-i-fy-urz** | /ˈkwɑləfaɪərz/ — sounds like **KWAH-luh-fy-urz**
+241. adj. Arctic | /ˈɑːktɪk/ — sounds like **ARK-tik** | /ˈɑrktək/ — sounds like **ARK-tuk**
+242. n. spreads | /spredz/ — sounds like **SPREDZ** | /spredz/ — sounds like **SPREDZ**
+243. n. Travel | /ˈtrævəl/ — sounds like **TRAV-ul** | /ˈtrævəl/ — sounds like **TRAV-ul**
+244. v. benefited | /ˈbenɪfɪtɪd/ — sounds like **BEN-i-fit-id** | /ˈbenəfətəd/ — sounds like **BEN-uh-fut-ud**
+245. adv. representatively | /ˌreprɪˈzentətɪvli/ — sounds like **REP-ri-ZEN-tuh-tiv-lee** | /ˌreprəˈzentətəvli/ — sounds like **REP-ruh-ZEN-tuh-tuv-lee**
+246. v. investigate | /ɪnˈvestɪɡeɪt/ — sounds like **in-VES-ti-gayt** | /ɪnˈvestəɡeɪt/ — sounds like **in-VES-tuh-gayt**
+247. adj. active | /ˈæktɪv/ — sounds like **AK-tiv** | /ˈæktəv/ — sounds like **AK-tuv**
+248. v. opening | /ˈəʊpənɪŋ/ — sounds like **OH-puh-ning** | /ˈoʊpənɪŋ/ — sounds like **OH-puh-ning**
+249. n. sold | /səʊld/ — sounds like **SOHLD** | /soʊld/ — sounds like **SOHLD**
+250. n. particles | /ˈpɑːtɪkəlz/ — sounds like **PAR-ti-kulz** | /ˈpɑrtəkəlz/ — sounds like **PAR-tuh-kulz**
+251. v. launching | /ˈlɔːntʃɪŋ/ — sounds like **LAWN-ching** | /ˈlɔntʃɪŋ/ — sounds like **LAHN-ching**
+252. n. faith | /feɪθ/ — sounds like **FAYTH** | /feɪθ/ — sounds like **FAYTH**
+253. n. symptom | /ˈsɪmptəm/ — sounds like **SIMP-tum** | /ˈsɪmptəm/ — sounds like **SIMP-tum**
+254. n. vacuum | /ˈvækjuəm/ — sounds like **VAK-yoo-um** | /ˈvækjuəm/ — sounds like **VAK-yoo-um**
+255. adj. supermassive | /ˌsuːpəˈmæsɪv/ — sounds like **SOO-puh-MAS-iv** | /ˌsupərˈmæsəv/ — sounds like **SOO-pur-MAS-uv**
+256. n. propulsion | /prəˈpʌlʃən/ — sounds like **pruh-PUL-shun** | /prəˈpʌlʃən/ — sounds like **pruh-PUL-shun**
+257. n. discursion | /dɪˈskɜːʃən/ — sounds like **di-SKUR-shun** | /dəˈskɝʃən/ — sounds like **duh-SKUR-shun**
+258. n. journalism | /ˈdʒɜːnəlɪzəm/ — sounds like **JUR-nul-i-zum** | /ˈdʒɝnəlɪzəm/ — sounds like **JUR-nul-i-zum**
+259. v. offspring | /ˈɒfsprɪŋ/ — sounds like **OF-spring** | /ˈɑfsprɪŋ/ — sounds like **AHF-spring**
+260. n. dinosaurs | /ˈdaɪnəsɔːz/ — sounds like **DY-nuh-sorz** | /ˈdaɪnəsɔrz/ — sounds like **DY-nuh-sorz**
+261. n. steadfast | /ˈstedfɑːst/ — sounds like **STED-fahst** | /ˈstedfæst/ — sounds like **STED-fast**
+262. adv. equally | /ˈiːkwəli/ — sounds like **EE-kwuh-lee** | /ˈikwəli/ — sounds like **EE-kwuh-lee**
+263. n. prosperity | /prɒˈsperəti/ — sounds like **pro-SPER-uh-tee** | /prɑˈsperəti/ — sounds like **prah-SPER-uh-tee**
+264. v. stretching | /ˈstretʃɪŋ/ — sounds like **STRECH-ing** | /ˈstretʃɪŋ/ — sounds like **STRECH-ing**
+265. n. whole | /həʊl/ — sounds like **HOHL** | /hoʊl/ — sounds like **HOHL**
+266. n. frontier | /ˈfrʌntɪə/ — sounds like **FRUN-teer** | /frʌnˈtɪr/ — sounds like **frun-TEER**
+267. adj. cautionary | /ˈkɔːʃənəri/ — sounds like **KAW-shuh-nuh-ree** | /ˈkɔʃəneri/ — sounds like **KAH-shuh-ner-ee**
+268. n. forecast | /ˈfɔːkɑːst/ — sounds like **FOR-kahst** | /ˈfɔrkæst/ — sounds like **FOR-kast**
+269. n. migration | /maɪˈɡreɪʃən/ — sounds like **my-GRAY-shun** | /maɪˈɡreɪʃən/ — sounds like **my-GRAY-shun**
+270. n. circuit | /ˈsɜːkɪt/ — sounds like **SUR-kit** | /ˈsɝkət/ — sounds like **SUR-kut**
+271. n. discovery | /dɪˈskʌvəri/ — sounds like **di-SKUV-uh-ree** | /dəˈskʌvəri/ — sounds like **duh-SKUV-uh-ree**
+272. adj. constructive | /kənˈstrʌktɪv/ — sounds like **kun-STRUK-tiv** | /kənˈstrʌktəv/ — sounds like **kun-STRUK-tuv**
+273. v. imagining | /ɪˈmædʒɪnɪŋ/ — sounds like **i-MAJ-i-ning** | /ɪˈmædʒənɪŋ/ — sounds like **i-MAJ-uh-ning**
+274. n. conversation | /ˌkɒnvəˈseɪʃən/ — sounds like **KON-vuh-SAY-shun** | /ˌkɑnvərˈseɪʃən/ — sounds like **KAHN-vur-SAY-shun**
+275. n. propose | /prəˈpəʊz/ — sounds like **pruh-POHZ** | /prəˈpoʊz/ — sounds like **pruh-POHZ**
+276. v. mentioned | /ˈmenʃənd/ — sounds like **MEN-shund** | /ˈmenʃənd/ — sounds like **MEN-shund**
+277. n. charity | /ˈtʃærəti/ — sounds like **CHAR-uh-tee** | /ˈtʃærəti/ — sounds like **CHAR-uh-tee**
+278. v. skilled | /skɪld/ — sounds like **SKILD** | /skɪld/ — sounds like **SKILD**
+279. adj. motive | /ˈməʊtɪv/ — sounds like **MOH-tiv** | /ˈmoʊtəv/ — sounds like **MOH-tuv**
+280. n. assume | /əˈsjuːm/ — sounds like **uh-SYOOM** | /əˈsum/ — sounds like **uh-SOOM**
+281. n. circulation | /ˌsɜːkjʊˈleɪʃən/ — sounds like **SUR-kyoo-LAY-shun** | /ˌsɝkjəˈleɪʃən/ — sounds like **SUR-kyuh-LAY-shun**
+282. n. immune | /ɪˈmjuːn/ — sounds like **i-MYOON** | /ɪˈmun/ — sounds like **i-MOON**
+283. n. processes | /ˈprəʊsesɪz/ — sounds like **PROH-ses-iz** | /ˈprɑsəsəz/ — sounds like **PRAH-sus-uz**
+284. n. key | /kiː/ — sounds like **KEE** | /ki/ — sounds like **KEE**
+285. adj. supplemental | /ˌsʌplɪˈmentəl/ — sounds like **SUP-li-MEN-tul** | /ˌsʌpləˈmentəl/ — sounds like **SUP-luh-MEN-tul**
+286. n. translocation | /ˌtrænsləʊˈkeɪʃən/ — sounds like **TRAN-sloh-KAY-shun** | /ˌtrænsloʊˈkeɪʃən/ — sounds like **TRANS-loh-KAY-shun**
+287. adv. initially | /ɪˈnɪʃəli/ — sounds like **i-NISH-uh-lee** | /ɪˈnɪʃəli/ — sounds like **i-NISH-uh-lee**
+288. v. overfishing | /ˌəʊvəˈfɪʃɪŋ/ — sounds like **OH-vuh-FISH-ing** | /ˌoʊvərˈfɪʃɪŋ/ — sounds like **OH-vur-FISH-ing**
+289. n. productivity | /ˌprɒdʌkˈtɪvəti/ — sounds like **PROD-uk-TIV-uh-tee** | /ˌprɑdəkˈtɪvəti/ — sounds like **PRAH-duk-TIV-uh-tee**
+290. n. predict | /prɪˈdɪkt/ — sounds like **pri-DIKT** | /prəˈdɪkt/ — sounds like **pruh-DIKT**
+291. n. bounds | /baʊndz/ — sounds like **BOWNDZ** | /baʊndz/ — sounds like **BOWNDZ**
+292. n. grapher | /ˈɡræfə/ — sounds like **GRAF-uh** | /ˈɡræfər/ — sounds like **GRAF-ur**
+293. n. circular | /ˈsɜːkjʊlə/ — sounds like **SUR-kyuh-luh** | /ˈsɝkjələr/ — sounds like **SUR-kyuh-lur**
+294. adv. principally | /ˈprɪnsɪpəli/ — sounds like **PRIN-si-puh-lee** | /ˈprɪnsəpəli/ — sounds like **PRIN-suh-puh-lee**
+295. n. bond | /bɒnd/ — sounds like **BOND** | /bɑnd/ — sounds like **BAHND**
+296. n. complex | /ˈkɒmpleks/ — sounds like **KOM-pleks** | /ˈkɑmpleks/ — sounds like **KAHM-pleks**
+297. n. origin | /ˈɒrɪdʒɪn/ — sounds like **OR-i-jin** | /ˈɔrədʒən/ — sounds like **OR-uh-jun**
+298. v. delivering | /dɪˈlɪvərɪŋ/ — sounds like **di-LIV-uh-ring** | /dəˈlɪvərɪŋ/ — sounds like **duh-LIV-uh-ring**
+299. adj. aesthetic | /iːsˈθetɪk/ — sounds like **ees-THET-ik** | /esˈθetək/ — sounds like **es-THET-uk**
+300. adv. technologically | /ˌteknəˈlɒdʒɪkəli/ — sounds like **TEK-nuh-LOJ-i-kuh-lee** | /ˌteknəˈlɑdʒəkəli/ — sounds like **TEK-nuh-LAH-juh-kuh-lee**
+301. v. sub-letting | /sʌbˈletɪŋ/ — sounds like **sub-LET-ing** | /sʌbˈletɪŋ/ — sounds like **sub-LET-ing**
+302. adj. controversial | /ˌkɒntrəˈvɜːʃəl/ — sounds like **KON-truh-VUR-shul** | /ˌkɑntrəˈvɝʃəl/ — sounds like **KAHN-truh-VUR-shul**
+303. n. response | /rɪˈspɒns/ — sounds like **ri-SPONS** | /rəˈspɑns/ — sounds like **ruh-SPAHNS**
+304. v. bored | /bɔːd/ — sounds like **BORD** | /bɔrd/ — sounds like **BORD**
+305. n. acknowledge | /əkˈnɒlɪdʒ/ — sounds like **uk-NOL-ij** | /ækˈnɑlɪdʒ/ — sounds like **ak-NAH-lij**
+306. n. technologies | /tekˈnɒlədʒiz/ — sounds like **tek-NOL-uh-jiz** | /tekˈnɑlədʒiz/ — sounds like **tek-NAH-luh-jiz**
+307. adj. predictable | /prɪˈdɪktəbəl/ — sounds like **pri-DIK-tuh-bul** | /prəˈdɪktəbəl/ — sounds like **pruh-DIK-tuh-bul**
+308. adj. observable | /əbˈzɜːvəbəl/ — sounds like **ub-ZUR-vuh-bul** | /əbˈzɝvəbəl/ — sounds like **ub-ZUR-vuh-bul**
+309. n. thereafter | /ˌðeərˈɑːftə/ — sounds like **THAIR-AHF-tuh** | /ˌðerˈæftər/ — sounds like **THAIR-AF-tur**
+310. n. warmer | /ˈwɔːmə/ — sounds like **WOR-muh** | /ˈwɔrmər/ — sounds like **WOR-mur**
+311. adv. earnestly | /ˈɜːnɪstli/ — sounds like **UR-nist-lee** | /ˈɝnəstli/ — sounds like **UR-nust-lee**
+312. adv. tightly | /ˈtaɪtli/ — sounds like **TYT-lee** | /ˈtaɪtli/ — sounds like **TYT-lee**
+313. n. root | /ruːt/ — sounds like **ROOT** | /rut/ — sounds like **ROOT**
+314. n. consistency | /kənˈsɪstənsi/ — sounds like **kun-SIS-tun-see** | /kənˈsɪstənsi/ — sounds like **kun-SIS-tun-see**
+315. n. summer | /ˈsʌmə/ — sounds like **SUM-uh** | /ˈsʌmər/ — sounds like **SUM-ur**
+316. n. equities | /ˈekwɪtiz/ — sounds like **EK-wi-teez** | /ˈekwətiz/ — sounds like **EK-wuh-teez**
+317. n. predator | /ˈpredətə/ — sounds like **PRED-uh-tuh** | /ˈpredətər/ — sounds like **PRED-uh-tur**
+318. v. titled | /ˈtaɪtəld/ — sounds like **TY-tuld** | /ˈtaɪtəld/ — sounds like **TY-tuld**
+319. adj. traditional | /trəˈdɪʃənəl/ — sounds like **truh-DISH-uh-nul** | /trəˈdɪʃənəl/ — sounds like **truh-DISH-uh-nul**
+320. n. beneath | /bɪˈniːθ/ — sounds like **bi-NEETH** | /bəˈniθ/ — sounds like **buh-NEETH**
+321. n. package | /ˈpækɪdʒ/ — sounds like **PAK-ij** | /ˈpækədʒ/ — sounds like **PAK-uj**
+322. n. electronics | /ɪlekˈtrɒnɪks/ — sounds like **i-lek-TRON-iks** | /ɪlekˈtrɑnəks/ — sounds like **i-lek-TRAH-nuks**
+323. n. session | /ˈseʃən/ — sounds like **SESH-un** | /ˈseʃən/ — sounds like **SESH-un**
+324. n. portraits | /ˈpɔːtrɪts/ — sounds like **POR-trits** | /ˈpɔrtrəts/ — sounds like **POR-truhts**
+325. n. photos | /ˈfəʊtəʊz/ — sounds like **FOH-tohz** | /ˈfoʊtoʊz/ — sounds like **FOH-tohz**
+326. n. predicament | /prɪˈdɪkəmənt/ — sounds like **pri-DIK-uh-munt** | /prəˈdɪkəmənt/ — sounds like **pruh-DIK-uh-munt**
+327. n. paradox | /ˈpærədɒks/ — sounds like **PAR-uh-doks** | /ˈpærədɑks/ — sounds like **PAR-uh-dahks**
+328. n. Tokyo | /ˈtəʊkjəʊ/ — sounds like **TOH-kyoh** | /ˈtoʊkjoʊ/ — sounds like **TOH-kyoh**
+329. n. popular | /ˈpɒpjʊlə/ — sounds like **POP-yuh-luh** | /ˈpɑpjələr/ — sounds like **PAH-pyuh-lur**
+330. n. coalition | /ˌkəʊəˈlɪʃən/ — sounds like **KOH-uh-LISH-un** | /ˌkoʊəˈlɪʃən/ — sounds like **KOH-uh-LISH-un**
+331. adj. library | /ˈlaɪbrəri/ — sounds like **LY-bruh-ree** | /ˈlaɪbreri/ — sounds like **LY-brer-ee**
+332. v. complicated | /ˈkɒmplɪkeɪtɪd/ — sounds like **KOM-pli-kay-tid** | /ˈkɑmpləkeɪtəd/ — sounds like **KAHM-pluh-kay-tud**
+333. v. added | /ˈædɪd/ — sounds like **AD-id** | /ˈædəd/ — sounds like **AD-ud**
+334. adj. constant | /ˈkɒnstənt/ — sounds like **KON-stunt** | /ˈkɑnstənt/ — sounds like **KAHN-stunt**
+335. n. confess | /kənˈfes/ — sounds like **kun-FES** | /kənˈfes/ — sounds like **kun-FES**
+336. n. context | /ˈkɒntekst/ — sounds like **KON-tekst** | /ˈkɑntekst/ — sounds like **KAHN-tekst**
+337. adv. professionally | /prəˈfeʃənəli/ — sounds like **pruh-FESH-uh-nuh-lee** | /prəˈfeʃənəli/ — sounds like **pruh-FESH-uh-nuh-lee**
+338. adj. serious | /ˈsɪəriəs/ — sounds like **SEER-ee-us** | /ˈsɪriəs/ — sounds like **SEER-ee-us**
+339. adj. rustic | /ˈrʌstɪk/ — sounds like **RUS-tik** | /ˈrʌstək/ — sounds like **RUS-tuk**
+340. n. million | /ˈmɪljən/ — sounds like **MIL-yun** | /ˈmɪljən/ — sounds like **MIL-yun**
+341. n. sick | /sɪk/ — sounds like **SIK** | /sɪk/ — sounds like **SIK**
+342. n. passenger | /ˈpæsɪndʒə/ — sounds like **PAS-in-juh** | /ˈpæsəndʒər/ — sounds like **PAS-un-jur**
+343. adj. intelligent | /ɪnˈtelɪdʒənt/ — sounds like **in-TEL-i-junt** | /ɪnˈtelədʒənt/ — sounds like **in-TEL-uh-junt**
+344. n. development | /dɪˈveləpmənt/ — sounds like **di-VEL-up-munt** | /dəˈveləpmənt/ — sounds like **duh-VEL-up-munt**
+345. n. photographs | /ˈfəʊtəɡrɑːfs/ — sounds like **FOH-tuh-grahfs** | /ˈfoʊtəɡræfs/ — sounds like **FOH-tuh-grafs**
+346. n. relevance | /ˈreləvəns/ — sounds like **REL-uh-vuns** | /ˈreləvəns/ — sounds like **REL-uh-vuns**
+347. n. ground | /ɡraʊnd/ — sounds like **GROWND** | /ɡraʊnd/ — sounds like **GROWND**
+348. n. overview | /ˈəʊvəvjuː/ — sounds like **OH-vuh-vyoo** | /ˈoʊvərvju/ — sounds like **OH-vur-vyoo**
+349. v. mutate | /mjuːˈteɪt/ — sounds like **myoo-TAYT** | /ˈmjuteɪt/ — sounds like **MYOO-tayt**
+350. v. separated | /ˈsepəreɪtɪd/ — sounds like **SEP-uh-ray-tid** | /ˈsepəreɪtəd/ — sounds like **SEP-uh-ray-tud**
+351. n. image | /ˈɪmɪdʒ/ — sounds like **IM-ij** | /ˈɪmədʒ/ — sounds like **IM-uj**
+352. n. competitions | /ˌkɒmpəˈtɪʃənz/ — sounds like **KOM-puh-TISH-unz** | /ˌkɑmpəˈtɪʃənz/ — sounds like **KAHM-puh-TISH-unz**
+353. n. autumn | /ˈɔːtəm/ — sounds like **OR-tum** | /ˈɔtəm/ — sounds like **AH-tum**
+354. n. Sales | /seɪlz/ — sounds like **SAYLZ** | /seɪlz/ — sounds like **SAYLZ**
+355. adv. commonly | /ˈkɒmənli/ — sounds like **KOM-un-lee** | /ˈkɑmənli/ — sounds like **KAH-mun-lee**
+356. adv. enormously | /ɪˈnɔːməsli/ — sounds like **i-NOR-mus-lee** | /ɪˈnɔrməsli/ — sounds like **i-NOR-mus-lee**
+357. adj. perspective | /pəˈspektɪv/ — sounds like **puh-SPEK-tiv** | /pərˈspektəv/ — sounds like **pur-SPEK-tuv**
+358. n. folder | /ˈfəʊldə/ — sounds like **FOHL-duh** | /ˈfoʊldər/ — sounds like **FOHL-dur**
+359. n. swings | /swɪŋz/ — sounds like **SWINGZ** | /swɪŋz/ — sounds like **SWINGZ**
+360. adj. proponent | /prəˈpəʊnənt/ — sounds like **pruh-POH-nunt** | /prəˈpoʊnənt/ — sounds like **pruh-POH-nunt**
+361. n. shallow | /ˈʃæləʊ/ — sounds like **SHAL-oh** | /ˈʃæloʊ/ — sounds like **SHAL-oh**
+362. adj. pedal | /ˈpedəl/ — sounds like **PED-ul** | /ˈpedəl/ — sounds like **PED-ul**
+363. n. deduction | /dɪˈdʌkʃən/ — sounds like **di-DUK-shun** | /dəˈdʌkʃən/ — sounds like **duh-DUK-shun**
+364. n. destination | /ˌdestɪˈneɪʃən/ — sounds like **DES-ti-NAY-shun** | /ˌdestəˈneɪʃən/ — sounds like **DES-tuh-NAY-shun**
+365. n. genius | /ˈdʒiːniəs/ — sounds like **JEE-nee-us** | /ˈdʒinjəs/ — sounds like **JIN-yus**
+366. v. assumed | /əˈsjuːmd/ — sounds like **uh-SYOOMD** | /əˈsumd/ — sounds like **uh-SOOMD**
+367. n. baffle | /ˈbæfəl/ — sounds like **BAF-ul** | /ˈbæfəl/ — sounds like **BAF-ul**
+368. pron. them | /ðem/ — sounds like **THEM** | /ðəm/ — sounds like **THUM**
+369. n. compel | /kəmˈpel/ — sounds like **kum-PEL** | /kəmˈpel/ — sounds like **kum-PEL**
+370. n. tension | /ˈtenʃən/ — sounds like **TEN-shun** | /ˈtenʃən/ — sounds like **TEN-shun**
+371. n. covert | /ˈkʌvət/ — sounds like **KUV-ut** | /ˈkoʊvɝt/ — sounds like **KOH-vurt**
+372. n. determination | /dɪˌtɜːmɪˈneɪʃən/ — sounds like **di-TUR-mi-NAY-shun** | /dəˌtɝməˈneɪʃən/ — sounds like **duh-TUR-muh-NAY-shun**
+373. n. purpose | /ˈpɜːpəs/ — sounds like **PUR-pus** | /ˈpɝpəs/ — sounds like **PUR-pus**
+374. v. coaching | /ˈkəʊtʃɪŋ/ — sounds like **KOH-ching** | /ˈkoʊtʃɪŋ/ — sounds like **KOH-ching**
+375. n. prediction | /prɪˈdɪkʃən/ — sounds like **pri-DIK-shun** | /prəˈdɪkʃən/ — sounds like **pruh-DIK-shun**
+376. adj. consistent | /kənˈsɪstənt/ — sounds like **kun-SIS-tunt** | /kənˈsɪstənt/ — sounds like **kun-SIS-tunt**
+377. n. style | /staɪl/ — sounds like **STYL** | /staɪl/ — sounds like **STYL**
+378. n. probability | /ˌprɒbəˈbɪləti/ — sounds like **PROB-uh-BIL-uh-tee** | /ˌprɑbəˈbɪləti/ — sounds like **PRAH-buh-BIL-uh-tee**
+379. v. shaped | /ʃeɪpt/ — sounds like **SHAYPT** | /ʃeɪpt/ — sounds like **SHAYPT**
+380. adj. individual | /ˌɪndɪˈvɪdʒuəl/ — sounds like **IN-di-VIJ-oo-ul** | /ˌɪndəˈvɪdʒuəl/ — sounds like **IN-duh-VIJ-oo-ul**
+381. v. celebrate | /ˈseləbreɪt/ — sounds like **SEL-uh-brayt** | /ˈseləbreɪt/ — sounds like **SEL-uh-brayt**
+382. adj. dispersal | /dɪˈspɜːsəl/ — sounds like **di-SPUR-sul** | /dəˈspɝsəl/ — sounds like **duh-SPUR-sul**
+383. n. taught | /tɔːt/ — sounds like **TAWT** | /tɔt/ — sounds like **TAHT**
+384. n. force | /fɔːs/ — sounds like **FORS** | /fɔrs/ — sounds like **FORS**
+385. v. leading | /ˈliːdɪŋ/ — sounds like **LEE-ding** | /ˈlidɪŋ/ — sounds like **LEE-ding**
+386. v. graduated | /ˈɡrædʒueɪtɪd/ — sounds like **GRAJ-oo-ay-tid** | /ˈɡrædʒueɪtəd/ — sounds like **GRAJ-oo-ay-tud**
+387. n. sculpture | /ˈskʌlptʃə/ — sounds like **SKULP-chuh** | /ˈskʌlptʃər/ — sounds like **SKULP-chur**
+388. n. frequency | /ˈfriːkwənsi/ — sounds like **FREE-kwun-see** | /ˈfrikwənsi/ — sounds like **FREE-kwun-see**
+389. n. rash | /ræʃ/ — sounds like **RASH** | /ræʃ/ — sounds like **RASH**
+390. v. beleaguered | /bɪˈliːɡəd/ — sounds like **bi-LEE-gurd** | /bəˈliɡərd/ — sounds like **buh-LEE-gurd**
+391. n. majority | /məˈdʒɒrəti/ — sounds like **muh-JOR-uh-tee** | /məˈdʒɔrəti/ — sounds like **muh-JOR-uh-tee**
+392. adj. forensic | /fəˈrensɪk/ — sounds like **fuh-REN-sik** | /fəˈrensək/ — sounds like **fuh-REN-suk**
+393. v. devastating | /ˈdevəsteɪtɪŋ/ — sounds like **DEV-uh-stay-ting** | /ˈdevəsteɪtɪŋ/ — sounds like **DEV-uh-stay-ting**
+394. n. boast | /bəʊst/ — sounds like **BOHST** | /boʊst/ — sounds like **BOHST**
+395. n. revenue | /ˈrevənjuː/ — sounds like **REV-uh-nyoo** | /ˈrevənju/ — sounds like **REV-uh-nyoo**
+396. adj. brilliant | /ˈbrɪljənt/ — sounds like **BRIL-yunt** | /ˈbrɪljənt/ — sounds like **BRIL-yunt**
+397. n. lure | /lʊə/ — sounds like **LOOR** | /lʊr/ — sounds like **LOOR**
+398. n. enlarge | /ɪnˈlɑːdʒ/ — sounds like **in-LARJ** | /ɪnˈlɑrdʒ/ — sounds like **in-LARJ**
+399. adj. qualitative | /ˈkwɒlɪtətɪv/ — sounds like **KWOL-i-tuh-tiv** | /ˈkwɑlətətəv/ — sounds like **KWAH-luh-tuh-tuv**
+400. n. conditions | /kənˈdɪʃənz/ — sounds like **kun-DISH-unz** | /kənˈdɪʃənz/ — sounds like **kun-DISH-unz**
+401. adj. urgent | /ˈɜːdʒənt/ — sounds like **UR-junt** | /ˈɝdʒənt/ — sounds like **UR-junt**
+402. n. perception | /pəˈsepʃən/ — sounds like **puh-SEP-shun** | /pərˈsepʃən/ — sounds like **pur-SEP-shun**
+403. n. gaps | /ɡæps/ — sounds like **GAPS** | /ɡæps/ — sounds like **GAPS**
+404. n. articles | /ˈɑːtɪkəlz/ — sounds like **AR-ti-kulz** | /ˈɑrtəkəlz/ — sounds like **AR-tuh-kulz**
+405. n. light | /laɪt/ — sounds like **LYT** | /laɪt/ — sounds like **LYT**
+406. n. system | /ˈsɪstəm/ — sounds like **SIS-tum** | /ˈsɪstəm/ — sounds like **SIS-tum**
+407. v. generated | /ˈdʒenəreɪtɪd/ — sounds like **JEN-uh-ray-tid** | /ˈdʒenəreɪtəd/ — sounds like **JEN-uh-ray-tud**
+408. n. whatever | /wɒtˈevə/ — sounds like **wot-EV-uh** | /wɑtˈevər/ — sounds like **waht-EV-ur**
+409. n. swift | /swɪft/ — sounds like **SWIFT** | /swɪft/ — sounds like **SWIFT**
+410. n. develop | /dɪˈveləp/ — sounds like **di-VEL-up** | /dəˈveləp/ — sounds like **duh-VEL-up**
+411. adv. incredibly | /ɪnˈkredɪbli/ — sounds like **in-KRED-i-blee** | /ɪnˈkredəbli/ — sounds like **in-KRED-uh-blee**
+412. v. obtaining | /əbˈteɪnɪŋ/ — sounds like **ub-TAY-ning** | /əbˈteɪnɪŋ/ — sounds like **ub-TAY-ning**
+413. adj. proposal | /prəˈpəʊzəl/ — sounds like **pruh-POH-zul** | /prəˈpoʊzəl/ — sounds like **pruh-POH-zul**
+414. n. include | /ɪnˈkluːd/ — sounds like **in-KLOOD** | /ɪnˈklud/ — sounds like **in-KLOOD**
+415. adj. diffident | /ˈdɪfɪdənt/ — sounds like **DIF-i-dunt** | /ˈdɪfədənt/ — sounds like **DIF-uh-dunt**
+416. adj. colloquial | /kəˈləʊkwiəl/ — sounds like **kuh-LOH-kwee-ul** | /kəˈloʊkwiəl/ — sounds like **kuh-LOH-kwee-ul**
+417. adv. essentially | /ɪˈsenʃəli/ — sounds like **i-SEN-shuh-lee** | /əˈsenʃəli/ — sounds like **uh-SEN-shuh-lee**
+418. n. subsidies | /ˈsʌbsɪdiz/ — sounds like **SUB-si-deez** | /ˈsʌbsədiz/ — sounds like **SUB-suh-deez**
+419. n. strength | /streŋθ/ — sounds like **STRENGTH** | /streŋθ/ — sounds like **STRENGTH**
+420. adj. natural | /ˈnætʃərəl/ — sounds like **NACH-uh-rul** | /ˈnætʃərəl/ — sounds like **NACH-uh-rul**
+421. adj. important | /ɪmˈpɔːtənt/ — sounds like **im-POR-tunt** | /ɪmˈpɔrtənt/ — sounds like **im-POR-tunt**
+422. v. offsetting | /ˈɒfsetɪŋ/ — sounds like **OF-set-ing** | /ˈɑfsetɪŋ/ — sounds like **AHF-set-ing**
+423. adj. plastic | /ˈplæstɪk/ — sounds like **PLAS-tik** | /ˈplæstək/ — sounds like **PLAS-tuk**
+424. n. simple | /ˈsɪmpəl/ — sounds like **SIM-pul** | /ˈsɪmpəl/ — sounds like **SIM-pul**
+425. n. swung | /swʌŋ/ — sounds like **SWUNG** | /swʌŋ/ — sounds like **SWUNG**
+426. n. single | /ˈsɪŋɡəl/ — sounds like **SING-gul** | /ˈsɪŋɡəl/ — sounds like **SING-gul**
+427. n. process | /ˈprəʊses/ — sounds like **PROH-ses** | /ˈprɑsəs/ — sounds like **PRAH-sus**
+428. n. oceanologist | /ˌəʊʃəˈnɒlədʒɪst/ — sounds like **OH-shuh-NOL-uh-jist** | /ˌoʊʃəˈnɑlədʒəst/ — sounds like **OH-shuh-NAH-luh-just**
+429. n. substances | /ˈsʌbstənsɪz/ — sounds like **SUB-stun-siz** | /ˈsʌbstənsəz/ — sounds like **SUB-stun-suz**
+430. n. chef | /ʃef/ — sounds like **SHEF** | /ʃef/ — sounds like **SHEF**
+431. n. situation | /ˌsɪtʃuˈeɪʃən/ — sounds like **SIT-choo-AY-shun** | /ˌsɪtʃuˈeɪʃən/ — sounds like **SIT-choo-AY-shun**
+432. n. produce | /prəˈdjuːs/ — sounds like **pruh-DYOOS** | /prəˈdus/ — sounds like **pruh-DOOS**
+433. v. green | /ɡriːn/ — sounds like **GREEN** | /ɡrin/ — sounds like **GREEN**
+434. adj. invaluable | /ɪnˈvæljuəbəl/ — sounds like **in-VAL-yoo-uh-bul** | /ɪnˈvæljəbəl/ — sounds like **in-VAL-yuh-bul**
+435. adv. casually | /ˈkæʒuəli/ — sounds like **KAZH-oo-uh-lee** | /ˈkæʒuəli/ — sounds like **KAZH-oo-uh-lee**
+436. n. annotation | /ˌænəˈteɪʃən/ — sounds like **AN-uh-TAY-shun** | /ˌænəˈteɪʃən/ — sounds like **AN-uh-TAY-shun**
+437. n. risks | /rɪsks/ — sounds like **RISKS** | /rɪsks/ — sounds like **RISKS**
+438. adj. irrational | /ɪˈræʃənəl/ — sounds like **i-RASH-uh-nul** | /ɪˈræʃənəl/ — sounds like **i-RASH-uh-nul**
+439. n. knowledge | /ˈnɒlɪdʒ/ — sounds like **NOL-ij** | /ˈnɑlɪdʒ/ — sounds like **NAH-lij**
+440. n. nutrition | /njuˈtrɪʃən/ — sounds like **nyoo-TRISH-un** | /nuˈtrɪʃən/ — sounds like **noo-TRISH-un**
+441. n. decade | /ˈdekeɪd/ — sounds like **DEK-ayd** | /ˈdekeɪd/ — sounds like **DEK-ayd**
+442. adj. institutional | /ˌɪnstɪˈtjuːʃənəl/ — sounds like **IN-sti-TYOO-shuh-nul** | /ˌɪnstəˈtuʃənəl/ — sounds like **IN-stuh-TOO-shuh-nul**
+443. n. describe | /dɪˈskraɪb/ — sounds like **di-SKRYB** | /dəˈskraɪb/ — sounds like **duh-SKRYB**
+444. v. emulated | /ˈemjʊleɪtɪd/ — sounds like **EM-yoo-lay-tid** | /ˈemjəleɪtəd/ — sounds like **EM-yuh-lay-tud**
+445. v. optimizing | /ˈɒptɪmaɪzɪŋ/ — sounds like **OP-ti-myz-ing** | /ˈɑptəmaɪzɪŋ/ — sounds like **AHP-tuh-myz-ing**
+446. n. respondents | /rɪˈspɒndənts/ — sounds like **ri-SPON-dunts** | /rəˈspɑndənts/ — sounds like **ruh-SPAHN-dunts**
+447. n. confirm | /kənˈfɜːm/ — sounds like **kun-FURM** | /kənˈfɝm/ — sounds like **kun-FURM**
+448. n. subject | /ˈsʌbdʒekt/ — sounds like **SUB-jekt** | /ˈsʌbdʒekt/ — sounds like **SUB-jekt**
+449. v. socialize | /ˈsəʊʃəlaɪz/ — sounds like **SOH-shuh-lyz** | /ˈsoʊʃəlaɪz/ — sounds like **SOH-shuh-lyz**
+450. n. church | /tʃɜːtʃ/ — sounds like **CHURCH** | /tʃɝtʃ/ — sounds like **CHURCH**
+451. v. happen | /ˈhæpən/ — sounds like **HAP-un** | /ˈhæpən/ — sounds like **HAP-un**
+452. n. philosophy | /fɪˈlɒsəfi/ — sounds like **fi-LOS-uh-fee** | /fəˈlɑsəfi/ — sounds like **fuh-LAH-suh-fee**
+453. v. wondering | /ˈwʌndərɪŋ/ — sounds like **WUN-duh-ring** | /ˈwʌndərɪŋ/ — sounds like **WUN-duh-ring**
+454. n. stick | /stɪk/ — sounds like **STIK** | /stɪk/ — sounds like **STIK**
+455. n. mathematics | /ˌmæθəˈmætɪks/ — sounds like **MATH-uh-MAT-iks** | /ˌmæθəˈmætəks/ — sounds like **MATH-uh-MAT-uks**
+456. n. mean | /miːn/ — sounds like **MEEN** | /min/ — sounds like **MEEN**
+457. v. engineering | /ˌendʒɪˈnɪərɪŋ/ — sounds like **EN-ji-NEER-ing** | /ˌendʒəˈnɪrɪŋ/ — sounds like **EN-juh-NEER-ing**
+458. n. paddle | /ˈpædəl/ — sounds like **PAD-ul** | /ˈpædəl/ — sounds like **PAD-ul**
+459. n. habitat | /ˈhæbɪtæt/ — sounds like **HAB-i-tat** | /ˈhæbətæt/ — sounds like **HAB-uh-tat**
+460. n. dialogue | /ˈdaɪəlɒɡ/ — sounds like **DY-uh-log** | /ˈdaɪəlɔɡ/ — sounds like **DY-uh-log**
+461. n. problems | /ˈprɒbləmz/ — sounds like **PROB-lumz** | /ˈprɑbləmz/ — sounds like **PRAH-blumz**
+462. n. technician | /tekˈnɪʃən/ — sounds like **tek-NISH-un** | /tekˈnɪʃən/ — sounds like **tek-NISH-un**
+463. adj. productive | /prəˈdʌktɪv/ — sounds like **pruh-DUK-tiv** | /prəˈdʌktəv/ — sounds like **pruh-DUK-tuv**
+464. n. factors | /ˈfæktəz/ — sounds like **FAK-turz** | /ˈfæktərz/ — sounds like **FAK-turz**
+465. n. biology | /baɪˈɒlədʒi/ — sounds like **by-OL-uh-jee** | /baɪˈɑlədʒi/ — sounds like **by-AH-luh-jee**
+466. v. indeed | /ɪnˈdiːd/ — sounds like **in-DEED** | /ɪnˈdid/ — sounds like **in-DEED**
+467. v. encouraging | /ɪnˈkʌrɪdʒɪŋ/ — sounds like **in-KUR-i-jing** | /ɪnˈkɝədʒɪŋ/ — sounds like **in-KUR-uh-jing**
+468. v. climate | /ˈklaɪmət/ — sounds like **KLY-mut** | /ˈklaɪmət/ — sounds like **KLY-mut**
+469. n. assurance | /əˈʃʊərəns/ — sounds like **uh-SHOOR-uns** | /əˈʃʊrəns/ — sounds like **uh-SHOOR-uns**
+470. n. spirit | /ˈspɪrɪt/ — sounds like **SPIR-it** | /ˈspɪrət/ — sounds like **SPIR-ut**
+471. v. stabilized | /ˈsteɪbəlaɪzd/ — sounds like **STAY-buh-lyzd** | /ˈsteɪbəlaɪzd/ — sounds like **STAY-buh-lyzd**
+472. n. campus | /ˈkæmpəs/ — sounds like **KAM-pus** | /ˈkæmpəs/ — sounds like **KAM-pus**
+473. n. admit | /ədˈmɪt/ — sounds like **ud-MIT** | /ædˈmɪt/ — sounds like **ad-MIT**
+474. adv. intentionally | /ɪnˈtenʃənəli/ — sounds like **in-TEN-shuh-nuh-lee** | /ɪnˈtenʃənəli/ — sounds like **in-TEN-shuh-nuh-lee**
+475. adj. want | /wɒnt/ — sounds like **WONT** | /wɑnt/ — sounds like **WAHNT**
+476. v. drowning | /ˈdraʊnɪŋ/ — sounds like **DROW-ning** | /ˈdraʊnɪŋ/ — sounds like **DROW-ning**
+477. n. dawn | /dɔːn/ — sounds like **DAWN** | /dɔn/ — sounds like **DAHN**
+478. n. team | /tiːm/ — sounds like **TEEM** | /tim/ — sounds like **TEEM**
+479. n. manufacture | /ˌmænjʊˈfæktʃə/ — sounds like **MAN-yoo-FAK-chuh** | /ˌmænjəˈfæktʃər/ — sounds like **MAN-yuh-FAK-chur**
+480. n. description | /dɪˈskrɪpʃən/ — sounds like **di-SKRIP-shun** | /dəˈskrɪpʃən/ — sounds like **duh-SKRIP-shun**
+481. n. large | /lɑːdʒ/ — sounds like **LARJ** | /lɑrdʒ/ — sounds like **LARJ**
+482. n. vogue | /vəʊɡ/ — sounds like **VOHG** | /voʊɡ/ — sounds like **VOHG**
+483. n. facilities | /fəˈsɪlətiz/ — sounds like **fuh-SIL-uh-teez** | /fəˈsɪlətiz/ — sounds like **fuh-SIL-uh-teez**
+484. v. salted | /ˈsɔːltɪd/ — sounds like **SAWL-tid** | /ˈsɔltəd/ — sounds like **SAHL-tud**
+485. v. overseeing | /ˌəʊvəˈsiːɪŋ/ — sounds like **OH-vuh-SEE-ing** | /ˌoʊvərˈsiɪŋ/ — sounds like **OH-vur-SEE-ing**
+486. n. shortage | /ˈʃɔːtɪdʒ/ — sounds like **SHOR-tij** | /ˈʃɔrtədʒ/ — sounds like **SHOR-tuj**
+487. v. appalling | /əˈpɔːlɪŋ/ — sounds like **uh-PAW-ling** | /əˈpɔlɪŋ/ — sounds like **uh-PAH-ling**
+488. adj. component | /kəmˈpəʊnənt/ — sounds like **kum-POH-nunt** | /kəmˈpoʊnənt/ — sounds like **kum-POH-nunt**
+489. n. oyster | /ˈɔɪstə/ — sounds like **OY-stuh** | /ˈɔɪstər/ — sounds like **OY-stur**
+490. adj. convincible | /kənˈvɪnsəbəl/ — sounds like **kun-VIN-suh-bul** | /kənˈvɪnsəbəl/ — sounds like **kun-VIN-suh-bul**
+491. n. intensity | /ɪnˈtensəti/ — sounds like **in-TEN-suh-tee** | /ɪnˈtensəti/ — sounds like **in-TEN-suh-tee**
+492. n. agriculture | /ˈæɡrɪkʌltʃə/ — sounds like **AG-ri-kul-chuh** | /ˈæɡrəkʌltʃər/ — sounds like **AG-ruh-kul-chur**
+493. v. restricted | /rɪˈstrɪktɪd/ — sounds like **ri-STRIK-tid** | /rəˈstrɪktəd/ — sounds like **ruh-STRIK-tud**
+494. v. originated | /əˈrɪdʒɪneɪtɪd/ — sounds like **uh-RIJ-i-nay-tid** | /əˈrɪdʒəneɪtəd/ — sounds like **uh-RIJ-uh-nay-tud**
+495. n. shoots | /ʃuːts/ — sounds like **SHOOTS** | /ʃuts/ — sounds like **SHOOTS**
+496. n. profession | /prəˈfeʃən/ — sounds like **pruh-FESH-un** | /prəˈfeʃən/ — sounds like **pruh-FESH-un**
+497. adj. scary | /ˈskeəri/ — sounds like **SKAIR-ee** | /ˈskeri/ — sounds like **SKAIR-ee**
+498. n. emergency | /ɪˈmɜːdʒənsi/ — sounds like **i-MUR-jun-see** | /ɪˈmɝdʒənsi/ — sounds like **i-MUR-jun-see**
+499. n. ride | /raɪd/ — sounds like **RYD** | /raɪd/ — sounds like **RYD**
+500. n. modern | /ˈmɒdən/ — sounds like **MOD-un** | /ˈmɑdərn/ — sounds like **MAH-durn**
+501. v. maximize | /ˈmæksɪmaɪz/ — sounds like **MAK-si-myz** | /ˈmæksəmaɪz/ — sounds like **MAK-suh-myz**
+502. n. issue | /ˈɪʃuː/ — sounds like **ISH-oo** | /ˈɪʃu/ — sounds like **ISH-oo**
+503. n. chlorophyll | /ˈklɔːrəfɪl/ — sounds like **KLOR-uh-fil** | /ˈklɔrəfɪl/ — sounds like **KLOR-uh-fil**
+504. v. clothing | /ˈkləʊðɪŋ/ — sounds like **KLOH-thing** | /ˈkloʊðɪŋ/ — sounds like **KLOH-thing**
+505. v. accumulating | /əˈkjuːmjʊleɪtɪŋ/ — sounds like **uh-KYOO-myoo-lay-ting** | /əˈkjumjəleɪtɪŋ/ — sounds like **uh-KYOO-myuh-lay-ting**
+506. n. Improvements | /ɪmˈpruːvmənts/ — sounds like **im-PROOV-munts** | /ɪmˈpruvmənts/ — sounds like **im-PROOV-munts**
+507. n. depth | /depθ/ — sounds like **DEPTH** | /depθ/ — sounds like **DEPTH**
+508. n. huge | /hjuːdʒ/ — sounds like **HYOOJ** | /hjudʒ/ — sounds like **HYOOJ**
+509. v. understanding | /ˌʌndəˈstændɪŋ/ — sounds like **UN-duh-STAN-ding** | /ˌʌndərˈstændɪŋ/ — sounds like **UN-dur-STAN-ding**
+510. n. decline | /dɪˈklaɪn/ — sounds like **di-KLYN** | /dəˈklaɪn/ — sounds like **duh-KLYN**
+511. adv. relatively | /ˈrelətɪvli/ — sounds like **REL-uh-tiv-lee** | /ˈrelətəvli/ — sounds like **REL-uh-tuv-lee**
+512. n. markings | /ˈmɑːkɪŋz/ — sounds like **MAR-kingz** | /ˈmɑrkɪŋz/ — sounds like **MAR-kingz**
+513. n. reflect | /rɪˈflekt/ — sounds like **ri-FLEKT** | /rəˈflekt/ — sounds like **ruh-FLEKT**
+514. n. watch | /wɒtʃ/ — sounds like **WOCH** | /wɑtʃ/ — sounds like **WAHCH**
+515. n. solid | /ˈsɒlɪd/ — sounds like **SOL-id** | /ˈsɑləd/ — sounds like **SAH-lud**
+516. adj. psychological | /ˌsaɪkəˈlɒdʒɪkəl/ — sounds like **SY-kuh-LOJ-i-kul** | /ˌsaɪkəˈlɑdʒəkəl/ — sounds like **SY-kuh-LAH-juh-kul**
+517. n. option | /ˈɒpʃən/ — sounds like **OP-shun** | /ˈɑpʃən/ — sounds like **AHP-shun**
+518. adj. habitant | /ˈhæbɪtənt/ — sounds like **HAB-i-tunt** | /ˈhæbətənt/ — sounds like **HAB-uh-tunt**
+519. adv. eventually | /ɪˈventʃuəli/ — sounds like **i-VEN-choo-uh-lee** | /ɪˈventʃuəli/ — sounds like **i-VEN-choo-uh-lee**
+520. n. emit | /ɪˈmɪt/ — sounds like **i-MIT** | /ɪˈmɪt/ — sounds like **i-MIT**
+521. n. density | /ˈdensəti/ — sounds like **DEN-suh-tee** | /ˈdensəti/ — sounds like **DEN-suh-tee**
+522. n. billion | /ˈbɪljən/ — sounds like **BIL-yun** | /ˈbɪljən/ — sounds like **BIL-yun**
+523. n. cluster | /ˈklʌstə/ — sounds like **KLUS-tuh** | /ˈklʌstər/ — sounds like **KLUS-tur**
+524. n. managers | /ˈmænɪdʒəz/ — sounds like **MAN-i-jurz** | /ˈmænədʒərz/ — sounds like **MAN-uh-jurz**
+525. adj. administrative | /ədˈmɪnɪstrətɪv/ — sounds like **ud-MIN-i-struh-tiv** | /ædˈmɪnəstrətəv/ — sounds like **ad-MIN-uh-struh-tuv**
+526. n. field | /fiːld/ — sounds like **FEELD** | /fild/ — sounds like **FEELD**
+527. adj. partial | /ˈpɑːʃəl/ — sounds like **PAR-shul** | /ˈpɑrʃəl/ — sounds like **PAR-shul**
+528. v. introduced | /ˌɪntrəˈdjuːst/ — sounds like **IN-truh-DYOOST** | /ˌɪntrəˈdust/ — sounds like **IN-truh-DOOST**
+529. n. fears | /fɪəz/ — sounds like **FEERZ** | /fɪrz/ — sounds like **FEERZ**
+530. n. hire | /haɪə/ — sounds like **HY-uh** | /haɪər/ — sounds like **HY-ur**
+531. adj. situational | /ˌsɪtʃuˈeɪʃənəl/ — sounds like **SIT-choo-AY-shuh-nul** | /ˌsɪtʃuˈeɪʃənəl/ — sounds like **SIT-choo-AY-shuh-nul**
+532. v. underlying | /ˌʌndəˈlaɪɪŋ/ — sounds like **UN-duh-LY-ing** | /ˌʌndərˈlaɪɪŋ/ — sounds like **UN-dur-LY-ing**
+533. n. common | /ˈkɒmən/ — sounds like **KOM-un** | /ˈkɑmən/ — sounds like **KAH-mun**
+534. n. spices | /spaɪsɪz/ — sounds like **SPY-siz** | /spaɪsəz/ — sounds like **SPY-suz**
+535. n. embrace | /ɪmˈbreɪs/ — sounds like **im-BRAYS** | /ɪmˈbreɪs/ — sounds like **im-BRAYS**
+536. n. favorite | /ˈfeɪvərɪt/ — sounds like **FAY-vuh-rit** | /ˈfeɪvərət/ — sounds like **FAY-vuh-rut**
+537. n. similar | /ˈsɪmɪlə/ — sounds like **SIM-i-luh** | /ˈsɪmələr/ — sounds like **SIM-uh-lur**
+538. n. thrown | /θrəʊn/ — sounds like **THROHN** | /θroʊn/ — sounds like **THROHN**
+539. adv. basically | /ˈbeɪsɪkəli/ — sounds like **BAY-si-kuh-lee** | /ˈbeɪsəkəli/ — sounds like **BAY-suh-kuh-lee**
+540. n. boundaries | /ˈbaʊndəriz/ — sounds like **BOWN-duh-reez** | /ˈbaʊndəriz/ — sounds like **BOWN-duh-reez**
+541. n. pattern | /ˈpætən/ — sounds like **PAT-un** | /ˈpætərn/ — sounds like **PAT-urn**
+542. n. followers | /ˈfɒləʊəz/ — sounds like **FOL-oh-urz** | /ˈfɑloʊərz/ — sounds like **FAH-loh-urz**
+543. n. death | /deθ/ — sounds like **DETH** | /deθ/ — sounds like **DETH**
+544. v. dozen | /ˈdʌzən/ — sounds like **DUZ-un** | /ˈdʌzən/ — sounds like **DUZ-un**
+545. adj. helpful | /ˈhelpfəl/ — sounds like **HELP-ful** | /ˈhelpfəl/ — sounds like **HELP-ful**
+546. adj. inevitable | /ɪˈnevɪtəbəl/ — sounds like **i-NEV-i-tuh-bul** | /ɪˈnevətəbəl/ — sounds like **i-NEV-uh-tuh-bul**
+547. v. lying | /ˈlaɪɪŋ/ — sounds like **LY-ing** | /ˈlaɪɪŋ/ — sounds like **LY-ing**
+548. n. historian | /hɪˈstɔːriən/ — sounds like **hi-STOR-ee-un** | /hɪˈstɔriən/ — sounds like **hi-STOR-ee-un**
+549. n. telescopes | /ˈtelɪskəʊps/ — sounds like **TEL-i-skohps** | /ˈteləskoʊps/ — sounds like **TEL-uh-skohps**
+550. n. fragile | /ˈfrædʒaɪl/ — sounds like **FRAJ-yl** | /ˈfrædʒəl/ — sounds like **FRAJ-ul**
+551. n. everyone | /ˈevriwʌn/ — sounds like **EV-ree-wun** | /ˈevriwʌn/ — sounds like **EV-ree-wun**
+552. v. associated | /əˈsəʊʃieɪtɪd/ — sounds like **uh-SOH-shee-ay-tid** | /əˈsoʊʃieɪtəd/ — sounds like **uh-SOH-shee-ay-tud**
+553. v. gathering | /ˈɡæðərɪŋ/ — sounds like **GATH-uh-ring** | /ˈɡæðərɪŋ/ — sounds like **GATH-uh-ring**
+554. n. overseas | /ˌəʊvəˈsiːz/ — sounds like **OH-vuh-SEEZ** | /ˌoʊvərˈsiz/ — sounds like **OH-vur-SEEZ**
+555. n. camps | /kæmps/ — sounds like **KAMPS** | /kæmps/ — sounds like **KAMPS**
+556. adj. professional | /prəˈfeʃənəl/ — sounds like **pruh-FESH-uh-nul** | /prəˈfeʃənəl/ — sounds like **pruh-FESH-uh-nul**
+557. n. convergence | /kənˈvɜːdʒəns/ — sounds like **kun-VUR-juns** | /kənˈvɝdʒəns/ — sounds like **kun-VUR-juns**
+558. n. occupies | /ˈɒkjʊpaɪz/ — sounds like **OK-yuh-pyz** | /ˈɑkjəpaɪz/ — sounds like **AH-kyuh-pyz**
+559. adj. distinctive | /dɪˈstɪŋktɪv/ — sounds like **di-STINGK-tiv** | /dəˈstɪŋktəv/ — sounds like **duh-STINGK-tuv**
+560. n. author | /ˈɔːθə/ — sounds like **OR-thuh** | /ˈɔθər/ — sounds like **AH-thur**
+561. n. materials | /məˈtɪəriəlz/ — sounds like **muh-TEER-ee-ulz** | /məˈtɪriəlz/ — sounds like **muh-TEER-ee-ulz**
+562. n. individuality | /ˌɪndɪvɪdʒuˈæləti/ — sounds like **IN-di-vij-oo-AL-uh-tee** | /ˌɪndəvɪdʒuˈæləti/ — sounds like **IN-duh-vij-oo-AL-uh-tee**
+563. v. covered | /ˈkʌvəd/ — sounds like **KUV-ud** | /ˈkʌvərd/ — sounds like **KUV-urd**
+564. v. instilled | /ɪnˈstɪld/ — sounds like **in-STILD** | /ɪnˈstɪld/ — sounds like **in-STILD**
+565. n. constitution | /ˌkɒnstɪˈtjuːʃən/ — sounds like **KON-sti-TYOO-shun** | /ˌkɑnstəˈtuʃən/ — sounds like **KAHN-stuh-TOO-shun**
+566. adj. classical | /ˈklæsɪkəl/ — sounds like **KLAS-i-kul** | /ˈklæsəkəl/ — sounds like **KLAS-uh-kul**
+567. n. pseudo | /ˈsjuːdəʊ/ — sounds like **SYOO-doh** | /ˈsudoʊ/ — sounds like **SOO-doh**
+568. n. protein | /ˈprəʊtiːn/ — sounds like **PROH-teen** | /ˈproʊtin/ — sounds like **PROH-teen**
+569. v. neighbouring | /ˈneɪbərɪŋ/ — sounds like **NAY-buh-ring** | /ˈneɪbərɪŋ/ — sounds like **NAY-buh-ring**
+570. adj. symptomatic | /ˌsɪmptəˈmætɪk/ — sounds like **SIMP-tuh-MAT-ik** | /ˌsɪmptəˈmætək/ — sounds like **SIMP-tuh-MAT-uk**
+571. n. restrictions | /rɪˈstrɪkʃənz/ — sounds like **ri-STRIK-shunz** | /rəˈstrɪkʃənz/ — sounds like **ruh-STRIK-shunz**
+572. adj. passive | /ˈpæsɪv/ — sounds like **PAS-iv** | /ˈpæsəv/ — sounds like **PAS-uv**
+573. adj. contemporary | /kənˈtempərəri/ — sounds like **kun-TEM-puh-ruh-ree** | /kənˈtempəreri/ — sounds like **kun-TEM-puh-rer-ee**
+574. v. failed | /feɪld/ — sounds like **FAYLD** | /feɪld/ — sounds like **FAYLD**
+575. v. manipulate | /məˈnɪpjʊleɪt/ — sounds like **muh-NIP-yoo-layt** | /məˈnɪpjəleɪt/ — sounds like **muh-NIP-yuh-layt**
+576. n. reservoir | /ˈrezəvwɑː/ — sounds like **REZ-uh-vwahr** | /ˈrezərvwɑr/ — sounds like **REZ-ur-vwahr**
+577. n. sound | /saʊnd/ — sounds like **SOWND** | /saʊnd/ — sounds like **SOWND**
+578. n. atmosphere | /ˈætməsfɪə/ — sounds like **AT-muh-sfeer** | /ˈætməsfɪr/ — sounds like **AT-muh-sfeer**
+579. adv. creditably | /ˈkredɪtəbli/ — sounds like **KRED-i-tuh-blee** | /ˈkredətəbli/ — sounds like **KRED-uh-tuh-blee**
+580. adj. irrelevant | /ɪˈreləvənt/ — sounds like **i-REL-uh-vunt** | /ɪˈreləvənt/ — sounds like **i-REL-uh-vunt**
+581. adj. different | /ˈdɪfərənt/ — sounds like **DIF-uh-runt** | /ˈdɪfərənt/ — sounds like **DIF-uh-runt**
+582. n. invest | /ɪnˈvest/ — sounds like **in-VEST** | /ɪnˈvest/ — sounds like **in-VEST**
+583. n. generation | /ˌdʒenəˈreɪʃən/ — sounds like **JEN-uh-RAY-shun** | /ˌdʒenəˈreɪʃən/ — sounds like **JEN-uh-RAY-shun**
+584. n. react | /riˈækt/ — sounds like **ree-AKT** | /riˈækt/ — sounds like **ree-AKT**
+585. n. plants | /plɑːnts/ — sounds like **PLAHNTS** | /plænts/ — sounds like **PLANTS**
+586. n. trickery | /ˈtrɪkəri/ — sounds like **TRIK-uh-ree** | /ˈtrɪkəri/ — sounds like **TRIK-uh-ree**
+587. v. curing | /ˈkjʊərɪŋ/ — sounds like **KYOOR-ing** | /ˈkjʊrɪŋ/ — sounds like **KYOOR-ing**
+588. n. sale | /seɪl/ — sounds like **SAYL** | /seɪl/ — sounds like **SAYL**
+589. adj. massive | /ˈmæsɪv/ — sounds like **MAS-iv** | /ˈmæsəv/ — sounds like **MAS-uv**
+590. n. flame | /fleɪm/ — sounds like **FLAYM** | /fleɪm/ — sounds like **FLAYM**
+591. n. share | /ʃeə/ — sounds like **SHAIR** | /ʃer/ — sounds like **SHAIR**
+592. n. service | /ˈsɜːvɪs/ — sounds like **SUR-vis** | /ˈsɝvəs/ — sounds like **SUR-vus**
+593. n. colleagues | /ˈkɒliːɡz/ — sounds like **KOL-eegz** | /ˈkɑliɡz/ — sounds like **KAH-leegz**
+594. n. layers | /ˈleɪəz/ — sounds like **LAY-urz** | /ˈleɪərz/ — sounds like **LAY-urz**
+595. adj. sociable | /ˈsəʊʃəbəl/ — sounds like **SOH-shuh-bul** | /ˈsoʊʃəbəl/ — sounds like **SOH-shuh-bul**
+596. n. underneath | /ˌʌndəˈniːθ/ — sounds like **UN-duh-NEETH** | /ˌʌndərˈniθ/ — sounds like **UN-dur-NEETH**
+597. adj. famous | /ˈfeɪməs/ — sounds like **FAY-mus** | /ˈfeɪməs/ — sounds like **FAY-mus**
+598. n. promote | /prəˈməʊt/ — sounds like **pruh-MOHT** | /prəˈmoʊt/ — sounds like **pruh-MOHT**
+599. v. convinced | /kənˈvɪnst/ — sounds like **kun-VINST** | /kənˈvɪnst/ — sounds like **kun-VINST**
+600. n. career | /kəˈrɪə/ — sounds like **kuh-REER** | /kəˈrɪr/ — sounds like **kuh-REER**
+601. n. addition | /əˈdɪʃən/ — sounds like **uh-DISH-un** | /əˈdɪʃən/ — sounds like **uh-DISH-un**
+602. n. awoke | /əˈwəʊk/ — sounds like **uh-WOHK** | /əˈwoʊk/ — sounds like **uh-WOHK**
+603. v. relying | /rɪˈlaɪɪŋ/ — sounds like **ri-LY-ing** | /rəˈlaɪɪŋ/ — sounds like **ruh-LY-ing**
+604. adj. five | /faɪv/ — sounds like **FYV** | /faɪv/ — sounds like **FYV**
+605. v. recognized | /ˈrekəɡnaɪzd/ — sounds like **REK-ug-nyzd** | /ˈrekəɡnaɪzd/ — sounds like **REK-ug-nyzd**
+606. n. install | /ɪnˈstɔːl/ — sounds like **in-STAWL** | /ɪnˈstɔl/ — sounds like **in-STAHL**
+607. v. induced | /ɪnˈdjuːst/ — sounds like **in-DYOOST** | /ɪnˈdust/ — sounds like **in-DOOST**
+608. n. variables | /ˈveəriəbəlz/ — sounds like **VAIR-ee-uh-bulz** | /ˈveriəbəlz/ — sounds like **VAIR-ee-uh-bulz**
+609. v. revolutionized | /ˌrevəˈluːʃənaɪzd/ — sounds like **REV-uh-LOO-shuh-nyzd** | /ˌrevəˈluʃənaɪzd/ — sounds like **REV-uh-LOO-shuh-nyzd**
+610. v. observed | /əbˈzɜːvd/ — sounds like **ub-ZURVD** | /əbˈzɝvd/ — sounds like **ub-ZURVD**
+611. adj. radiative | /ˈreɪdieɪtɪv/ — sounds like **RAY-dee-ay-tiv** | /ˈreɪdieɪtəv/ — sounds like **RAY-dee-ay-tuv**
+612. n. reputation | /ˌrepjʊˈteɪʃən/ — sounds like **REP-yoo-TAY-shun** | /ˌrepjəˈteɪʃən/ — sounds like **REP-yuh-TAY-shun**
+613. n. double | /ˈdʌbəl/ — sounds like **DUB-ul** | /ˈdʌbəl/ — sounds like **DUB-ul**
+614. v. headed | /ˈhedɪd/ — sounds like **HED-id** | /ˈhedəd/ — sounds like **HED-ud**
+615. n. opt | /ɒpt/ — sounds like **OPT** | /ɑpt/ — sounds like **AHPT**
+616. n. insurance | /ɪnˈʃʊərəns/ — sounds like **in-SHOOR-uns** | /ɪnˈʃʊrəns/ — sounds like **in-SHOOR-uns**
+617. n. city | /ˈsɪti/ — sounds like **SIT-ee** | /ˈsɪti/ — sounds like **SIT-ee**
+618. n. existence | /ɪɡˈzɪstəns/ — sounds like **ig-ZIS-tuns** | /ɪɡˈzɪstəns/ — sounds like **ig-ZIS-tuns**
+619. adj. identical | /aɪˈdentɪkəl/ — sounds like **eye-DEN-ti-kul** | /aɪˈdentəkəl/ — sounds like **eye-DEN-tuh-kul**
+620. v. growing | /ˈɡrəʊɪŋ/ — sounds like **GROH-ing** | /ˈɡroʊɪŋ/ — sounds like **GROH-ing**
+621. n. personality | /ˌpɜːsəˈnæləti/ — sounds like **PUR-suh-NAL-uh-tee** | /ˌpɝsəˈnæləti/ — sounds like **PUR-suh-NAL-uh-tee**
+622. v. funding | /ˈfʌndɪŋ/ — sounds like **FUN-ding** | /ˈfʌndɪŋ/ — sounds like **FUN-ding**
+623. n. agency | /ˈeɪdʒənsi/ — sounds like **AY-jun-see** | /ˈeɪdʒənsi/ — sounds like **AY-jun-see**
+624. n. Channel | /ˈtʃænəl/ — sounds like **CHAN-ul** | /ˈtʃænəl/ — sounds like **CHAN-ul**
+625. n. validity | /vəˈlɪdəti/ — sounds like **vuh-LID-uh-tee** | /vəˈlɪdəti/ — sounds like **vuh-LID-uh-tee**
+626. n. strike | /straɪk/ — sounds like **STRYK** | /straɪk/ — sounds like **STRYK**
+627. v. subordinated | /səˈbɔːdɪneɪtɪd/ — sounds like **suh-BOR-di-nay-tid** | /səˈbɔrdəneɪtəd/ — sounds like **suh-BOR-duh-nay-tud**
+628. n. implications | /ˌɪmplɪˈkeɪʃənz/ — sounds like **IM-pli-KAY-shunz** | /ˌɪmpləˈkeɪʃənz/ — sounds like **IM-pluh-KAY-shunz**
+629. adj. practical | /ˈpræktɪkəl/ — sounds like **PRAK-ti-kul** | /ˈpræktəkəl/ — sounds like **PRAK-tuh-kul**
+630. n. academics | /ˌækəˈdemɪks/ — sounds like **AK-uh-DEM-iks** | /ˌækəˈdeməks/ — sounds like **AK-uh-DEM-uks**
+631. adj. monetary | /ˈmʌnɪtəri/ — sounds like **MUN-i-tuh-ree** | /ˈmʌnəteri/ — sounds like **MUN-uh-ter-ee**
+632. n. hostile | /ˈhɒstaɪl/ — sounds like **HOS-tyl** | /ˈhɑstəl/ — sounds like **HAH-stul**
+633. n. ferry | /ˈferi/ — sounds like **FER-ee** | /ˈferi/ — sounds like **FER-ee**
+634. v. concentrate | /ˈkɒnsəntreɪt/ — sounds like **KON-sun-trayt** | /ˈkɑnsəntreɪt/ — sounds like **KAHN-sun-trayt**
+635. v. testify | /ˈtestɪfaɪ/ — sounds like **TES-ti-fy** | /ˈtestəfaɪ/ — sounds like **TES-tuh-fy**
+636. n. months | /mʌnθs/ — sounds like **MUNTHS** | /mʌnθs/ — sounds like **MUNTHS**
+637. n. distrust | /dɪsˈtrʌst/ — sounds like **dis-TRUST** | /dɪsˈtrʌst/ — sounds like **dis-TRUST**
+638. n. environment | /ɪnˈvaɪrənmənt/ — sounds like **in-VY-run-munt** | /ɪnˈvaɪrənmənt/ — sounds like **in-VY-run-munt**
+639. n. shortfall | /ˈʃɔːtfɔːl/ — sounds like **SHORT-fawl** | /ˈʃɔrtfɔl/ — sounds like **SHORT-fahl**
+640. n. modes | /məʊdz/ — sounds like **MOHDZ** | /moʊdz/ — sounds like **MOHDZ**
+641. n. section | /ˈsekʃən/ — sounds like **SEK-shun** | /ˈsekʃən/ — sounds like **SEK-shun**
+642. n. tiny | /ˈtaɪni/ — sounds like **TY-nee** | /ˈtaɪni/ — sounds like **TY-nee**
+643. adj. intensive | /ɪnˈtensɪv/ — sounds like **in-TEN-siv** | /ɪnˈtensəv/ — sounds like **in-TEN-suv**
+644. adj. special | /ˈspeʃəl/ — sounds like **SPESH-ul** | /ˈspeʃəl/ — sounds like **SPESH-ul**
+645. n. schedule | /ˈʃedjuːl/ — sounds like **SHED-yool** | /ˈskedʒul/ — sounds like **SKED-jul**
+646. adv. electronically | /ɪlekˈtrɒnɪkəli/ — sounds like **i-lek-TRON-i-kuh-lee** | /ɪlekˈtrɑnəkəli/ — sounds like **i-lek-TRAH-nuh-kuh-lee**
+647. n. repetition | /ˌrepɪˈtɪʃən/ — sounds like **REP-i-TISH-un** | /ˌrepəˈtɪʃən/ — sounds like **REP-uh-TISH-un**
+648. n. send | /send/ — sounds like **SEND** | /send/ — sounds like **SEND**
+649. n. medium | /ˈmiːdiəm/ — sounds like **MEE-dee-um** | /ˈmidiəm/ — sounds like **MEE-dee-um**
+650. n. infrastructure | /ˈɪnfrəstrʌktʃə/ — sounds like **IN-fruh-struk-chuh** | /ˈɪnfrəstrʌktʃər/ — sounds like **IN-fruh-struk-chur**
+651. n. range | /reɪndʒ/ — sounds like **RAYNJ** | /reɪndʒ/ — sounds like **RAYNJ**
+652. v. wanting | /ˈwɒntɪŋ/ — sounds like **WON-ting** | /ˈwɑntɪŋ/ — sounds like **WAHN-ting**
+653. n. neighbor | /ˈneɪbə/ — sounds like **NAY-buh** | /ˈneɪbər/ — sounds like **NAY-bur**
+654. adv. particularly | /pəˈtɪkjʊləli/ — sounds like **puh-TIK-yuh-luh-lee** | /pərˈtɪkjələrli/ — sounds like **pur-TIK-yuh-lur-lee**
+655. n. histories | /ˈhɪstəriz/ — sounds like **HIS-tuh-reez** | /ˈhɪstəriz/ — sounds like **HIS-tuh-reez**
+656. adj. binary | /ˈbaɪnəri/ — sounds like **BY-nuh-ree** | /ˈbaɪneri/ — sounds like **BY-ner-ee**
+657. n. equation | /ɪˈkweɪʒən/ — sounds like **i-KWAY-zhun** | /ɪˈkweɪʒən/ — sounds like **i-KWAY-zhun**
+658. adj. tropical | /ˈtrɒpɪkəl/ — sounds like **TROP-i-kul** | /ˈtrɑpəkəl/ — sounds like **TRAH-puh-kul**
+659. adj. strategic | /strəˈtiːdʒɪk/ — sounds like **struh-TEE-jik** | /strəˈtidʒək/ — sounds like **struh-TEE-juk**
+660. n. cash | /kæʃ/ — sounds like **KASH** | /kæʃ/ — sounds like **KASH**
+661. n. application | /ˌæplɪˈkeɪʃən/ — sounds like **AP-li-KAY-shun** | /ˌæpləˈkeɪʃən/ — sounds like **AP-luh-KAY-shun**
+662. adj. technological | /ˌteknəˈlɒdʒɪkəl/ — sounds like **TEK-nuh-LOJ-i-kul** | /ˌteknəˈlɑdʒəkəl/ — sounds like **TEK-nuh-LAH-juh-kul**
+663. n. frontiers | /ˈfrʌntɪəz/ — sounds like **FRUN-teerz** | /frʌnˈtɪrz/ — sounds like **frun-TEERZ**
+664. v. graduate | /ˈɡrædʒueɪt/ — sounds like **GRAJ-oo-ayt** | /ˈɡrædʒueɪt/ — sounds like **GRAJ-oo-ayt**
+665. v. riveting | /ˈrɪvɪtɪŋ/ — sounds like **RIV-i-ting** | /ˈrɪvətɪŋ/ — sounds like **RIV-uh-ting**
+666. n. board | /bɔːd/ — sounds like **BORD** | /bɔrd/ — sounds like **BORD**
+667. n. brought | /brɔːt/ — sounds like **BRAWT** | /brɔt/ — sounds like **BRAHT**
+668. n. culture | /ˈkʌltʃə/ — sounds like **KUL-chuh** | /ˈkʌltʃər/ — sounds like **KUL-chur**
+669. v. disappeared | /ˌdɪsəˈpɪəd/ — sounds like **DIS-uh-PEERD** | /ˌdɪsəˈpɪrd/ — sounds like **DIS-uh-PEERD**
+670. n. labour | /ˈleɪbə/ — sounds like **LAY-buh** | /ˈleɪbər/ — sounds like **LAY-bur**
+671. n. sounds | /saʊndz/ — sounds like **SOWNDZ** | /saʊndz/ — sounds like **SOWNDZ**
+672. adj. Industrial | /ɪnˈdʌstriəl/ — sounds like **in-DUS-tree-ul** | /ɪnˈdʌstriəl/ — sounds like **in-DUS-tree-ul**
+673. n. chamber | /ˈtʃeɪmbə/ — sounds like **CHAYM-buh** | /ˈtʃeɪmbər/ — sounds like **CHAYM-bur**
+674. n. ideas | /aɪˈdɪəz/ — sounds like **eye-DEERZ** | /aɪˈdiz/ — sounds like **eye-DEEZ**
+675. v. exercise | /ˈeksəsaɪz/ — sounds like **EK-suh-syz** | /ˈeksərsaɪz/ — sounds like **EK-sur-syz**
+676. n. variety | /vəˈraɪəti/ — sounds like **vuh-RY-uh-tee** | /vəˈraɪəti/ — sounds like **vuh-RY-uh-tee**
+677. adv. actually | /ˈæktʃuəli/ — sounds like **AK-choo-uh-lee** | /ˈæktʃuəli/ — sounds like **AK-choo-uh-lee**
+678. v. arbitrated | /ˈɑːbɪtreɪtɪd/ — sounds like **AR-bi-tray-tid** | /ˈɑrbətreɪtəd/ — sounds like **AR-buh-tray-tud**
+679. n. distinction | /dɪˈstɪŋkʃən/ — sounds like **di-STINGK-shun** | /dəˈstɪŋkʃən/ — sounds like **duh-STINGK-shun**
+680. v. queen | /kwiːn/ — sounds like **KWEEN** | /kwin/ — sounds like **KWEEN**
+681. n. concept | /ˈkɒnsept/ — sounds like **KON-sept** | /ˈkɑnsept/ — sounds like **KAHN-sept**
+682. n. phenomena | /fəˈnɒmɪnə/ — sounds like **fuh-NOM-i-nuh** | /fəˈnɑmənə/ — sounds like **fuh-NAH-muh-nuh**
+683. n. rush | /rʌʃ/ — sounds like **RUSH** | /rʌʃ/ — sounds like **RUSH**
+684. adj. unconventional | /ˌʌnkənˈvenʃənəl/ — sounds like **UN-kun-VEN-shuh-nul** | /ˌʌnkənˈvenʃənəl/ — sounds like **UN-kun-VEN-shuh-nul**
+685. v. celebrated | /ˈseləbreɪtɪd/ — sounds like **SEL-uh-bray-tid** | /ˈseləbreɪtəd/ — sounds like **SEL-uh-bray-tud**
+686. n. computer | /kəmˈpjuːtə/ — sounds like **kum-PYOO-tuh** | /kəmˈpjutər/ — sounds like **kum-PYOO-tur**
+687. n. nature | /ˈneɪtʃə/ — sounds like **NAY-chuh** | /ˈneɪtʃər/ — sounds like **NAY-chur**
+688. v. remaining | /rɪˈmeɪnɪŋ/ — sounds like **ri-MAY-ning** | /rəˈmeɪnɪŋ/ — sounds like **ruh-MAY-ning**
+689. n. rules | /ruːlz/ — sounds like **ROOLZ** | /rulz/ — sounds like **ROOLZ**
+690. n. sediment | /ˈsedɪmənt/ — sounds like **SED-i-munt** | /ˈsedəmənt/ — sounds like **SED-uh-munt**
+691. n. identities | /aɪˈdentətiz/ — sounds like **eye-DEN-tuh-teez** | /aɪˈdentətiz/ — sounds like **eye-DEN-tuh-teez**
+692. n. circle | /ˈsɜːkəl/ — sounds like **SUR-kul** | /ˈsɝkəl/ — sounds like **SUR-kul**
+693. n. Shakespeare | /ˈʃeɪkspɪə/ — sounds like **SHAYK-speer** | /ˈʃeɪkspɪr/ — sounds like **SHAYK-speer**
+694. n. work | /wɜːk/ — sounds like **WURK** | /wɝk/ — sounds like **WURK**
+695. n. shelter | /ˈʃeltə/ — sounds like **SHEL-tuh** | /ˈʃeltər/ — sounds like **SHEL-tur**
+696. adj. promotional | /prəˈməʊʃənəl/ — sounds like **pruh-MOH-shuh-nul** | /prəˈmoʊʃənəl/ — sounds like **pruh-MOH-shuh-nul**
+697. n. face | /feɪs/ — sounds like **FAYS** | /feɪs/ — sounds like **FAYS**
+698. adj. prospective | /prəˈspektɪv/ — sounds like **pruh-SPEK-tiv** | /prəˈspektəv/ — sounds like **pruh-SPEK-tuv**
+699. n. dastard | /ˈdæstəd/ — sounds like **DAS-turd** | /ˈdæstərd/ — sounds like **DAS-turd**
+700. adj. aggressive | /əˈɡresɪv/ — sounds like **uh-GRES-iv** | /əˈɡresəv/ — sounds like **uh-GRES-uv**
+701. v. training | /ˈtreɪnɪŋ/ — sounds like **TRAY-ning** | /ˈtreɪnɪŋ/ — sounds like **TRAY-ning**
+702. v. discovered | /dɪˈskʌvəd/ — sounds like **di-SKUV-ud** | /dəˈskʌvərd/ — sounds like **duh-SKUV-urd**
+703. v. suppressed | /səˈprest/ — sounds like **suh-PREST** | /səˈprest/ — sounds like **suh-PREST**
+704. v. frustrated | /frʌˈstreɪtɪd/ — sounds like **fruh-STRAY-tid** | /ˈfrʌstreɪtəd/ — sounds like **FRUS-tray-tud**
+705. v. lighting | /ˈlaɪtɪŋ/ — sounds like **LY-ting** | /ˈlaɪtɪŋ/ — sounds like **LY-ting**
+706. n. overlap | /ˌəʊvəˈlæp/ — sounds like **OH-vuh-LAP** | /ˌoʊvərˈlæp/ — sounds like **OH-vur-LAP**
+707. n. spread | /spred/ — sounds like **SPRED** | /spred/ — sounds like **SPRED**
+708. n. technology | /tekˈnɒlədʒi/ — sounds like **tek-NOL-uh-jee** | /tekˈnɑlədʒi/ — sounds like **tek-NAH-luh-jee**
+709. n. discipline | /ˈdɪsɪplɪn/ — sounds like **DIS-i-plin** | /ˈdɪsəplən/ — sounds like **DIS-uh-plun**
+710. n. disciplines | /ˈdɪsɪplɪnz/ — sounds like **DIS-i-plinz** | /ˈdɪsəplənz/ — sounds like **DIS-uh-plunz**
+711. n. conversion | /kənˈvɜːʃən/ — sounds like **kun-VUR-shun** | /kənˈvɝʃən/ — sounds like **kun-VUR-shun**
+712. n. synthesis | /ˈsɪnθəsɪs/ — sounds like **SIN-thuh-sis** | /ˈsɪnθəsəs/ — sounds like **SIN-thuh-sus**
+713. n. university | /ˌjuːnɪˈvɜːsəti/ — sounds like **YOO-ni-VUR-suh-tee** | /ˌjunəˈvɝsəti/ — sounds like **YOO-nuh-VUR-suh-tee**
+714. v. spreading | /ˈspredɪŋ/ — sounds like **SPRED-ing** | /ˈspredɪŋ/ — sounds like **SPRED-ing**
+715. n. profound | /prəˈfaʊnd/ — sounds like **pruh-FOWND** | /prəˈfaʊnd/ — sounds like **pruh-FOWND**
+716. n. galaxies | /ˈɡæləksiz/ — sounds like **GAL-uhk-seez** | /ˈɡæləksiz/ — sounds like **GAL-uhk-seez**
+717. n. emulates | /ˈemjʊleɪts/ — sounds like **EM-yoo-layts** | /ˈemjəleɪts/ — sounds like **EM-yuh-layts**
+718. v. impacting | /ɪmˈpæktɪŋ/ — sounds like **im-PAK-ting** | /ɪmˈpæktɪŋ/ — sounds like **im-PAK-ting**
+719. n. proportion | /prəˈpɔːʃən/ — sounds like **pruh-POR-shun** | /prəˈpɔrʃən/ — sounds like **pruh-POR-shun**
+720. n. quiet | /ˈkwaɪət/ — sounds like **KWY-ut** | /ˈkwaɪət/ — sounds like **KWY-ut**
+721. v. supposed | /səˈpəʊzd/ — sounds like **suh-POHZD** | /səˈpoʊzd/ — sounds like **suh-POHZD**
+722. adj. demographic | /ˌdeməˈɡræfɪk/ — sounds like **DEM-uh-GRAF-ik** | /ˌdeməˈɡræfək/ — sounds like **DEM-uh-GRAF-uk**
+723. n. devolution | /ˌdiːvəˈluːʃən/ — sounds like **DEE-vuh-LOO-shun** | /ˌdevəˈluʃən/ — sounds like **DEV-uh-LOO-shun**
+724. n. academy | /əˈkædəmi/ — sounds like **uh-KAD-uh-mee** | /əˈkædəmi/ — sounds like **uh-KAD-uh-mee**
+725. n. education | /ˌedjʊˈkeɪʃən/ — sounds like **ED-yoo-KAY-shun** | /ˌedʒəˈkeɪʃən/ — sounds like **ED-juh-KAY-shun**
+726. v. burning | /ˈbɜːnɪŋ/ — sounds like **BUR-ning** | /ˈbɝnɪŋ/ — sounds like **BUR-ning**
+727. n. exhibit | /ɪɡˈzɪbɪt/ — sounds like **ig-ZIB-it** | /ɪɡˈzɪbət/ — sounds like **ig-ZIB-ut**
+728. n. assumption | /əˈsʌmpʃən/ — sounds like **uh-SUMP-shun** | /əˈsʌmpʃən/ — sounds like **uh-SUMP-shun**
+729. adv. undoubtedly | /ʌnˈdaʊtɪdli/ — sounds like **un-DOW-tid-lee** | /ʌnˈdaʊtədli/ — sounds like **un-DOW-tud-lee**
+730. n. independence | /ˌɪndɪˈpendəns/ — sounds like **IN-di-PEN-duns** | /ˌɪndəˈpendəns/ — sounds like **IN-duh-PEN-duns**
+731. v. hydrogen | /ˈhaɪdrədʒən/ — sounds like **HY-druh-jun** | /ˈhaɪdrədʒən/ — sounds like **HY-druh-jun**
+732. n. rote | /rəʊt/ — sounds like **ROHT** | /roʊt/ — sounds like **ROHT**
+733. v. turned | /tɜːnd/ — sounds like **TURND** | /tɝnd/ — sounds like **TURND**
+734. n. dependence | /dɪˈpendəns/ — sounds like **di-PEN-duns** | /dəˈpendəns/ — sounds like **duh-PEN-duns**
+735. adj. negative | /ˈneɡətɪv/ — sounds like **NEG-uh-tiv** | /ˈneɡətəv/ — sounds like **NEG-uh-tuv**
+736. adj. apparent | /əˈpærənt/ — sounds like **uh-PAIR-unt** | /əˈpærənt/ — sounds like **uh-PAIR-unt**
+737. v. reversed | /rɪˈvɜːst/ — sounds like **ri-VURST** | /rəˈvɝst/ — sounds like **ruh-VURST**
+738. n. contract | /ˈkɒntrækt/ — sounds like **KON-trakt** | /ˈkɑntrækt/ — sounds like **KAHN-trakt**
+739. n. crises | /ˈkraɪsiːz/ — sounds like **KRY-seez** | /ˈkraɪsiz/ — sounds like **KRY-seez**
+740. n. objects | /ˈɒbdʒekts/ — sounds like **OB-jekts** | /ˈɑbdʒekts/ — sounds like **AHB-jekts**
+741. n. horror | /ˈhɒrə/ — sounds like **HOR-uh** | /ˈhɔrər/ — sounds like **HOR-ur**
+742. n. institutions | /ˌɪnstɪˈtjuːʃənz/ — sounds like **IN-sti-TYOO-shunz** | /ˌɪnstəˈtuʃənz/ — sounds like **IN-stuh-TOO-shunz**
+743. n. market | /ˈmɑːkɪt/ — sounds like **MAR-kit** | /ˈmɑrkət/ — sounds like **MAR-kut**
+744. adj. visible | /ˈvɪzəbəl/ — sounds like **VIZ-uh-bul** | /ˈvɪzəbəl/ — sounds like **VIZ-uh-bul**
+745. adj. incentive | /ɪnˈsentɪv/ — sounds like **in-SEN-tiv** | /ɪnˈsentəv/ — sounds like **in-SEN-tuv**
+746. n. relief | /rɪˈliːf/ — sounds like **ri-LEEF** | /rəˈlif/ — sounds like **ruh-LEEF**
+747. adj. global | /ˈɡləʊbəl/ — sounds like **GLOH-bul** | /ˈɡloʊbəl/ — sounds like **GLOH-bul**
+748. n. departure | /dɪˈpɑːtʃə/ — sounds like **di-PAR-chuh** | /dəˈpɑrtʃər/ — sounds like **duh-PAR-chur**
+749. v. branding | /ˈbrændɪŋ/ — sounds like **BRAN-ding** | /ˈbrændɪŋ/ — sounds like **BRAN-ding**
+750. n. institution | /ˌɪnstɪˈtjuːʃən/ — sounds like **IN-sti-TYOO-shun** | /ˌɪnstəˈtuʃən/ — sounds like **IN-stuh-TOO-shun**
+751. adj. crucial | /ˈkruːʃəl/ — sounds like **KROO-shul** | /ˈkruʃəl/ — sounds like **KROO-shul**
+752. v. supporting | /səˈpɔːtɪŋ/ — sounds like **suh-POR-ting** | /səˈpɔrtɪŋ/ — sounds like **suh-PORT-ting**
+753. n. absorb | /əbˈsɔːb/ — sounds like **ub-SORB** | /æbˈsɔrb/ — sounds like **ab-SORB**
+754. n. heavy | /ˈhevi/ — sounds like **HEV-ee** | /ˈhevi/ — sounds like **HEV-ee**
+755. adj. factory | /ˈfæktəri/ — sounds like **FAK-tuh-ree** | /ˈfæktəri/ — sounds like **FAK-tuh-ree**
+756. n. nearest | /ˈnɪərɪst/ — sounds like **NEER-ist** | /ˈnɪrəst/ — sounds like **NEER-ust**
+757. n. femininity | /ˌfemɪˈnɪnəti/ — sounds like **FEM-i-NIN-uh-tee** | /ˌfeməˈnɪnəti/ — sounds like **FEM-uh-NIN-uh-tee**
+758. adj. lenient | /ˈliːniənt/ — sounds like **LEE-nee-unt** | /ˈlinjənt/ — sounds like **LIN-yunt**
+759. n. results | /rɪˈzʌlts/ — sounds like **ri-ZULTS** | /rəˈzʌlts/ — sounds like **ruh-ZULTS**
+760. n. equations | /ɪˈkweɪʒənz/ — sounds like **i-KWAY-zhunz** | /ɪˈkweɪʒənz/ — sounds like **i-KWAY-zhunz**
+761. adj. untraditional | /ˌʌntrəˈdɪʃənəl/ — sounds like **UN-truh-DISH-uh-nul** | /ˌʌntrəˈdɪʃənəl/ — sounds like **UN-truh-DISH-uh-nul**
+762. adj. reactive | /riˈæktɪv/ — sounds like **ree-AK-tiv** | /riˈæktəv/ — sounds like **ree-AK-tuv**
+763. n. recovery | /rɪˈkʌvəri/ — sounds like **ri-KUV-uh-ree** | /rəˈkʌvəri/ — sounds like **ruh-KUV-uh-ree**
+764. n. crisis | /ˈkraɪsɪs/ — sounds like **KRY-sis** | /ˈkraɪsəs/ — sounds like **KRY-sus**
+765. adj. mimic | /ˈmɪmɪk/ — sounds like **MIM-ik** | /ˈmɪmək/ — sounds like **MIM-uk**
+766. adj. radical | /ˈrædɪkəl/ — sounds like **RAD-i-kul** | /ˈrædəkəl/ — sounds like **RAD-uh-kul**
+767. n. perceptions | /pəˈsepʃənz/ — sounds like **puh-SEP-shunz** | /pərˈsepʃənz/ — sounds like **pur-SEP-shunz**
+768. n. movements | /ˈmuːvmənts/ — sounds like **MOOV-munts** | /ˈmuvmənts/ — sounds like **MOOV-munts**
+769. v. emphasised | /ˈemfəsaɪzd/ — sounds like **EM-fuh-syzd** | /ˈemfəsaɪzd/ — sounds like **EM-fuh-syzd**
+770. n. cooperation | /kəʊˌɒpəˈreɪʃən/ — sounds like **koh-OP-uh-RAY-shun** | /koʊˌɑpəˈreɪʃən/ — sounds like **koh-AH-puh-RAY-shun**
+771. adj. potential | /pəˈtenʃəl/ — sounds like **puh-TEN-shul** | /pəˈtenʃəl/ — sounds like **puh-TEN-shul**
+772. n. explosion | /ɪkˈspləʊʒən/ — sounds like **ik-SPLOH-zhun** | /ɪkˈsploʊʒən/ — sounds like **ik-SPLOH-zhun**
+773. adj. representative | /ˌreprɪˈzentətɪv/ — sounds like **REP-ri-ZEN-tuh-tiv** | /ˌreprəˈzentətəv/ — sounds like **REP-ruh-ZEN-tuh-tuv**
+774. n. moderation | /ˌmɒdəˈreɪʃən/ — sounds like **MOD-uh-RAY-shun** | /ˌmɑdəˈreɪʃən/ — sounds like **MAH-duh-RAY-shun**
+775. v. surprised | /səˈpraɪzd/ — sounds like **suh-PRYZD** | /sərˈpraɪzd/ — sounds like **sur-PRYZD**
+776. adj. skeptical | /ˈskeptɪkəl/ — sounds like **SKEP-ti-kul** | /ˈskeptəkəl/ — sounds like **SKEP-tuh-kul**
+777. v. translate | /trænsˈleɪt/ — sounds like **trans-LAYT** | /trænsˈleɪt/ — sounds like **trans-LAYT**
+778. n. everywhere | /ˈevriweə/ — sounds like **EV-ree-wair** | /ˈevriwer/ — sounds like **EV-ree-wair**
+779. n. intelligence | /ɪnˈtelɪdʒəns/ — sounds like **in-TEL-i-juns** | /ɪnˈtelədʒəns/ — sounds like **in-TEL-uh-juns**
+780. n. interest | /ˈɪntrəst/ — sounds like **IN-trust** | /ˈɪntrəst/ — sounds like **IN-trust**
+781. adv. technically | /ˈteknɪkəli/ — sounds like **TEK-ni-kuh-lee** | /ˈteknəkəli/ — sounds like **TEK-nuh-kuh-lee**
+782. n. foundation | /faʊnˈdeɪʃən/ — sounds like **fown-DAY-shun** | /faʊnˈdeɪʃən/ — sounds like **fown-DAY-shun**
+783. adj. tentative | /ˈtentətɪv/ — sounds like **TEN-tuh-tiv** | /ˈtentətəv/ — sounds like **TEN-tuh-tuv**
+784. n. dispersion | /dɪˈspɜːʃən/ — sounds like **di-SPUR-shun** | /dəˈspɝʃən/ — sounds like **duh-SPUR-shun**
+785. v. translated | /trænsˈleɪtɪd/ — sounds like **trans-LAY-tid** | /trænsˈleɪtəd/ — sounds like **trans-LAY-tud**
+786. n. science | /ˈsaɪəns/ — sounds like **SY-uns** | /ˈsaɪəns/ — sounds like **SY-uns**
+787. n. donor | /ˈdəʊnə/ — sounds like **DOH-nuh** | /ˈdoʊnər/ — sounds like **DOH-nur**
+788. n. Controversy | /ˈkɒntrəvɜːsi/ — sounds like **KON-truh-vur-see** | /ˈkɑntrəvɝsi/ — sounds like **KAHN-truh-vur-see**
+789. adj. compatible | /kəmˈpætəbəl/ — sounds like **kum-PAT-uh-bul** | /kəmˈpætəbəl/ — sounds like **kum-PAT-uh-bul**
+790. v. trading | /ˈtreɪdɪŋ/ — sounds like **TRAY-ding** | /ˈtreɪdɪŋ/ — sounds like **TRAY-ding**
+791. n. structure | /ˈstrʌktʃə/ — sounds like **STRUK-chuh** | /ˈstrʌktʃər/ — sounds like **STRUK-chur**
+792. n. society | /səˈsaɪəti/ — sounds like **suh-SY-uh-tee** | /səˈsaɪəti/ — sounds like **suh-SY-uh-tee**
+793. n. subscribe | /səbˈskraɪb/ — sounds like **sub-SKRYB** | /səbˈskraɪb/ — sounds like **sub-SKRYB**
+794. v. involved | /ɪnˈvɒlvd/ — sounds like **in-VOLVD** | /ɪnˈvɑlvd/ — sounds like **in-VAHLVD**
+795. adj. alternative | /ɔːlˈtɜːnətɪv/ — sounds like **awl-TUR-nuh-tiv** | /ɔlˈtɝnətəv/ — sounds like **ahl-TUR-nuh-tuv**
+796. adj. potent | /ˈpəʊtənt/ — sounds like **POH-tunt** | /ˈpoʊtənt/ — sounds like **POH-tunt**
+797. n. emphasis | /ˈemfəsɪs/ — sounds like **EM-fuh-sis** | /ˈemfəsəs/ — sounds like **EM-fuh-sus**
+798. v. spinning | /ˈspɪnɪŋ/ — sounds like **SPIN-ing** | /ˈspɪnɪŋ/ — sounds like **SPIN-ing**
+799. n. confidence | /ˈkɒnfɪdəns/ — sounds like **KON-fi-duns** | /ˈkɑnfədəns/ — sounds like **KAHN-fuh-duns**
+800. adv. certainly | /ˈsɜːtənli/ — sounds like **SUR-tun-lee** | /ˈsɝtənli/ — sounds like **SUR-tun-lee**
+801. n. research | /rɪˈsɜːtʃ/ — sounds like **ri-SURCH** | /rəˈsɝtʃ/ — sounds like **ruh-SURCH**
+802. n. approach | /əˈprəʊtʃ/ — sounds like **uh-PROHCH** | /əˈproʊtʃ/ — sounds like **uh-PROHCH**
+803. n. evidence | /ˈevɪdəns/ — sounds like **EV-i-duns** | /ˈevədəns/ — sounds like **EV-uh-duns**
+804. adj. significant | /sɪɡˈnɪfɪkənt/ — sounds like **sig-NIF-i-kunt** | /sɪɡˈnɪfəkənt/ — sounds like **sig-NIF-uh-kunt**
+805. n. analysis | /əˈnæləsɪs/ — sounds like **uh-NAL-uh-sis** | /əˈnæləsəs/ — sounds like **uh-NAL-uh-sus**
+806. n. development | /dɪˈveləpmənt/ — sounds like **di-VEL-up-munt** | /dəˈveləpmənt/ — sounds like **duh-VEL-up-munt**
+807. n. information | /ˌɪnfəˈmeɪʃən/ — sounds like **IN-fuh-MAY-shun** | /ˌɪnfərˈmeɪʃən/ — sounds like **IN-fur-MAY-shun**
+808. n. management | /ˈmænɪdʒmənt/ — sounds like **MAN-ij-munt** | /ˈmænədʒmənt/ — sounds like **MAN-uj-munt**
+809. n. experience | /ɪkˈspɪəriəns/ — sounds like **ik-SPEER-ee-uns** | /ɪkˈspɪriəns/ — sounds like **ik-SPEER-ee-uns**
+810. n. organization | /ˌɔːɡənaɪˈzeɪʃən/ — sounds like **OR-guh-ny-ZAY-shun** | /ˌɔrɡənəˈzeɪʃən/ — sounds like **OR-guh-nuh-ZAY-shun**
+811. adj. individual | /ˌɪndɪˈvɪdʒuəl/ — sounds like **IN-di-VIJ-oo-ul** | /ˌɪndəˈvɪdʒuəl/ — sounds like **IN-duh-VIJ-oo-ul**
+812. n. government | /ˈɡʌvənmənt/ — sounds like **GUV-urn-munt** | /ˈɡʌvərnmənt/ — sounds like **GUV-urn-munt**
+813. n. community | /kəˈmjuːnəti/ — sounds like **kuh-MYOO-nuh-tee** | /kəˈmjunəti/ — sounds like **kuh-MYOO-nuh-tee**
+814. n. population | /ˌpɒpjʊˈleɪʃən/ — sounds like **POP-yoo-LAY-shun** | /ˌpɑpjəˈleɪʃən/ — sounds like **PAH-pyuh-LAY-shun**
+815. n. education | /ˌedjʊˈkeɪʃən/ — sounds like **ED-yoo-KAY-shun** | /ˌedʒəˈkeɪʃən/ — sounds like **ED-juh-KAY-shun**
+816. n. technology | /tekˈnɒlədʒi/ — sounds like **tek-NOL-uh-jee** | /tekˈnɑlədʒi/ — sounds like **tek-NAH-luh-jee**
+817. n. environment | /ɪnˈvaɪrənmənt/ — sounds like **in-VY-run-munt** | /ɪnˈvaɪrənmənt/ — sounds like **in-VY-run-munt**
+818. adj. economic | /ˌiːkəˈnɒmɪk/ — sounds like **EE-kuh-NOM-ik** | /ˌikəˈnɑmɪk/ — sounds like **EE-kuh-NAH-mik**
+819. adj. political | /pəˈlɪtɪkəl/ — sounds like **puh-LIT-i-kul** | /pəˈlɪtəkəl/ — sounds like **puh-LIT-uh-kul**
+820. adj. social | /ˈsəʊʃəl/ — sounds like **SOH-shul** | /ˈsoʊʃəl/ — sounds like **SOH-shul**
+821. adj. cultural | /ˈkʌltʃərəl/ — sounds like **KUL-chuh-rul** | /ˈkʌltʃərəl/ — sounds like **KUL-chur-ul**
+822. adj. historical | /hɪˈstɒrɪkəl/ — sounds like **hi-STOR-i-kul** | /hɪˈstɔrəkəl/ — sounds like **hi-STOR-uh-kul**
+823. adj. international | /ˌɪntəˈnæʃənəl/ — sounds like **IN-tuh-NASH-uh-nul** | /ˌɪntərˈnæʃənəl/ — sounds like **IN-tur-NASH-uh-nul**
+824. adj. national | /ˈnæʃənəl/ — sounds like **NASH-uh-nul** | /ˈnæʃənəl/ — sounds like **NASH-uh-nul**
+825. adj. regional | /ˈriːdʒənəl/ — sounds like **REE-juh-nul** | /ˈridʒənəl/ — sounds like **REE-juh-nul**
+826. adj. local | /ˈləʊkəl/ — sounds like **LOH-kul** | /ˈloʊkəl/ — sounds like **LOH-kul**
+827. adj. global | /ˈɡləʊbəl/ — sounds like **GLOH-bul** | /ˈɡloʊbəl/ — sounds like **GLOH-bul**
+828. adj. public | /ˈpʌblɪk/ — sounds like **PUB-lik** | /ˈpʌblək/ — sounds like **PUB-luk**
+829. v. private | /ˈpraɪvət/ — sounds like **PRY-vut** | /ˈpraɪvət/ — sounds like **PRY-vut**
+830. adj. professional | /prəˈfeʃənəl/ — sounds like **pruh-FESH-uh-nul** | /prəˈfeʃənəl/ — sounds like **pruh-FESH-uh-nul**
+831. adj. academic | /ˌækəˈdemɪk/ — sounds like **AK-uh-DEM-ik** | /ˌækəˈdemək/ — sounds like **AK-uh-DEM-uk**
+832. adj. scientific | /ˌsaɪənˈtɪfɪk/ — sounds like **SY-un-TIF-ik** | /ˌsaɪənˈtɪfək/ — sounds like **SY-un-TIF-uk**
+833. adj. medical | /ˈmedɪkəl/ — sounds like **MED-i-kul** | /ˈmedəkəl/ — sounds like **MED-uh-kul**
+834. adj. legal | /ˈliːɡəl/ — sounds like **LEE-gul** | /ˈliɡəl/ — sounds like **LEE-gul**
+835. adj. financial | /faɪˈnænʃəl/ — sounds like **fy-NAN-shul** | /fəˈnænʃəl/ — sounds like **fuh-NAN-shul**
+836. adj. commercial | /kəˈmɜːʃəl/ — sounds like **kuh-MUR-shul** | /kəˈmɝʃəl/ — sounds like **kuh-MUR-shul**
+837. adj. industrial | /ɪnˈdʌstriəl/ — sounds like **in-DUS-tree-ul** | /ɪnˈdʌstriəl/ — sounds like **in-DUS-tree-ul**
+838. adj. agricultural | /ˌæɡrɪˈkʌltʃərəl/ — sounds like **AG-ri-KUL-chuh-rul** | /ˌæɡrəˈkʌltʃərəl/ — sounds like **AG-ruh-KUL-chur-ul**
+839. adj. environmental | /ɪnˌvaɪrənˈmentəl/ — sounds like **in-VY-run-MEN-tul** | /ɪnˌvaɪrənˈmentəl/ — sounds like **in-VY-run-MEN-tul**
+840. adj. psychological | /ˌsaɪkəˈlɒdʒɪkəl/ — sounds like **SY-kuh-LOJ-i-kul** | /ˌsaɪkəˈlɑdʒəkəl/ — sounds like **SY-kuh-LAH-juh-kul**
+841. adj. sociological | /ˌsəʊsiəˈlɒdʒɪkəl/ — sounds like **SOH-see-uh-LOJ-i-kul** | /ˌsoʊsiəˈlɑdʒəkəl/ — sounds like **SOH-see-uh-LAH-juh-kul**
+842. adj. anthropological | /ˌænθrəpəˈlɒdʒɪkəl/ — sounds like **AN-thruh-puh-LOJ-i-kul** | /ˌænθrəpəˈlɑdʒəkəl/ — sounds like **AN-thruh-puh-LAH-juh-kul**
+843. adj. philosophical | /ˌfɪləˈsɒfɪkəl/ — sounds like **FIL-uh-SOF-i-kul** | /ˌfɪləˈsɑfəkəl/ — sounds like **FIL-uh-SAH-fuh-kul**
+844. adj. theoretical | /ˌθɪəˈretɪkəl/ — sounds like **THEE-uh-RET-i-kul** | /ˌθiəˈretəkəl/ — sounds like **THEE-uh-RET-uh-kul**
+845. adj. practical | /ˈpræktɪkəl/ — sounds like **PRAK-ti-kul** | /ˈpræktəkəl/ — sounds like **PRAK-tuh-kul**
+846. adj. empirical | /ɪmˈpɪrɪkəl/ — sounds like **im-PIR-i-kul** | /ɪmˈpɪrəkəl/ — sounds like **im-PIR-uh-kul**
+847. adj. quantitative | /ˈkwɒntɪtətɪv/ — sounds like **KWON-ti-tuh-tiv** | /ˈkwɑntətətəv/ — sounds like **KWAHN-tuh-tuh-tuv**
+848. adj. qualitative | /ˈkwɒlɪtətɪv/ — sounds like **KWOL-i-tuh-tiv** | /ˈkwɑlətətəv/ — sounds like **KWAH-luh-tuh-tuv**
+849. adj. comparative | /kəmˈpærətɪv/ — sounds like **kum-PAIR-uh-tiv** | /kəmˈpærətəv/ — sounds like **kum-PAIR-uh-tuv**
+850. adj. longitudinal | /ˌlɒndʒɪˈtjuːdɪnəl/ — sounds like **LON-ji-TYOO-di-nul** | /ˌlɑndʒəˈtudənəl/ — sounds like **LAHN-juh-TOO-duh-nul**
+851. adj. cross-sectional | /ˌkrɒsˈsekʃənəl/ — sounds like **KROS-SEK-shuh-nul** | /ˌkrɔsˈsekʃənəl/ — sounds like **KRAHS-SEK-shuh-nul**
+852. adj. experimental | /ɪkˌsperɪˈmentəl/ — sounds like **ik-SPER-i-MEN-tul** | /ɪkˌsperəˈmentəl/ — sounds like **ik-SPER-uh-MEN-tul**
+853. adj. observational | /ˌɒbzəˈveɪʃənəl/ — sounds like **OB-zuh-VAY-shuh-nul** | /ˌɑbzərˈveɪʃənəl/ — sounds like **AHB-zur-VAY-shuh-nul**
+854. adj. descriptive | /dɪˈskrɪptɪv/ — sounds like **di-SKRIP-tiv** | /dəˈskrɪptəv/ — sounds like **duh-SKRIP-tuv**
+855. adj. analytical | /ˌænəˈlɪtɪkəl/ — sounds like **AN-uh-LIT-i-kul** | /ˌænəˈlɪtəkəl/ — sounds like **AN-uh-LIT-uh-kul**
+856. adj. critical | /ˈkrɪtɪkəl/ — sounds like **KRIT-i-kul** | /ˈkrɪtəkəl/ — sounds like **KRIT-uh-kul**
+857. adj. systematic | /ˌsɪstəˈmætɪk/ — sounds like **SIS-tuh-MAT-ik** | /ˌsɪstəˈmætək/ — sounds like **SIS-tuh-MAT-uk**
+858. adj. comprehensive | /ˌkɒmprɪˈhensɪv/ — sounds like **KOM-pri-HEN-siv** | /ˌkɑmprəˈhensəv/ — sounds like **KAHM-pruh-HEN-suv**
+859. adj. extensive | /ɪkˈstensɪv/ — sounds like **ik-STEN-siv** | /ɪkˈstensəv/ — sounds like **ik-STEN-suv**
+860. adj. intensive | /ɪnˈtensɪv/ — sounds like **in-TEN-siv** | /ɪnˈtensəv/ — sounds like **in-TEN-suv**
+861. v. detailed | /ˈdiːteɪld/ — sounds like **DEE-tayld** | /dɪˈteɪld/ — sounds like **di-TAYLD**
+862. n. thorough | /ˈθʌrə/ — sounds like **THUR-uh** | /ˈθɝoʊ/ — sounds like **THUR-oh**
+863. adj. rigorous | /ˈrɪɡərəs/ — sounds like **RIG-uh-rus** | /ˈrɪɡərəs/ — sounds like **RIG-uh-rus**
+864. adj. reliable | /rɪˈlaɪəbəl/ — sounds like **ri-LY-uh-bul** | /rəˈlaɪəbəl/ — sounds like **ruh-LY-uh-bul**
+865. n. valid | /ˈvælɪd/ — sounds like **VAL-id** | /ˈvæləd/ — sounds like **VAL-ud**
+866. v. accurate | /ˈækjərət/ — sounds like **AK-yuh-rut** | /ˈækjərət/ — sounds like **AK-yuh-rut**
+867. v. precise | /prɪˈsaɪs/ — sounds like **pri-SYS** | /prəˈsaɪs/ — sounds like **pruh-SYS**
+868. adj. consistent | /kənˈsɪstənt/ — sounds like **kun-SIS-tunt** | /kənˈsɪstənt/ — sounds like **kun-SIS-tunt**
+869. adj. objective | /əbˈdʒektɪv/ — sounds like **ub-JEK-tiv** | /əbˈdʒektəv/ — sounds like **ub-JEK-tuv**
+870. adj. subjective | /səbˈdʒektɪv/ — sounds like **sub-JEK-tiv** | /səbˈdʒektəv/ — sounds like **sub-JEK-tuv**
+871. adj. neutral | /ˈnjuːtrəl/ — sounds like **NYOO-trul** | /ˈnutrəl/ — sounds like **NOO-trul**
+872. v. unbiased | /ʌnˈbaɪəst/ — sounds like **un-BY-ust** | /ʌnˈbaɪəst/ — sounds like **un-BY-ust**
+873. adj. impartial | /ɪmˈpɑːʃəl/ — sounds like **im-PAR-shul** | /ɪmˈpɑrʃəl/ — sounds like **im-PAR-shul**
+874. n. fair | /feə/ — sounds like **FAIR** | /fer/ — sounds like **FAIR**
+875. v. balanced | /ˈbælənst/ — sounds like **BAL-unst** | /ˈbælənst/ — sounds like **BAL-unst**
+876. adj. representative | /ˌreprɪˈzentətɪv/ — sounds like **REP-ri-ZEN-tuh-tiv** | /ˌreprəˈzentətəv/ — sounds like **REP-ruh-ZEN-tuh-tuv**
+877. adj. generalizable | /ˈdʒenərəlaɪzəbəl/ — sounds like **JEN-uh-ruh-ly-zuh-bul** | /ˈdʒenərəlaɪzəbəl/ — sounds like **JEN-uh-ruh-ly-zuh-bul**
+878. adj. applicable | /əˈplɪkəbəl/ — sounds like **uh-PLIK-uh-bul** | /ˈæpləkəbəl/ — sounds like **AP-luh-kuh-bul**
+879. adj. relevant | /ˈreləvənt/ — sounds like **REL-uh-vunt** | /ˈreləvənt/ — sounds like **REL-uh-vunt**
+880. adj. significant | /sɪɡˈnɪfɪkənt/ — sounds like **sig-NIF-i-kunt** | /sɪɡˈnɪfəkənt/ — sounds like **sig-NIF-uh-kunt**
+881. adj. meaningful | /ˈmiːnɪŋfəl/ — sounds like **MEE-ning-ful** | /ˈminɪŋfəl/ — sounds like **MIN-ing-ful**
+882. adj. substantial | /səbˈstænʃəl/ — sounds like **sub-STAN-shul** | /səbˈstænʃəl/ — sounds like **sub-STAN-shul**
+883. adj. considerable | /kənˈsɪdərəbəl/ — sounds like **kun-SID-uh-ruh-bul** | /kənˈsɪdərəbəl/ — sounds like **kun-SID-uh-ruh-bul**
+884. adj. important | /ɪmˈpɔːtənt/ — sounds like **im-POR-tunt** | /ɪmˈpɔrtənt/ — sounds like **im-POR-tunt**
+885. adj. essential | /ɪˈsenʃəl/ — sounds like **i-SEN-shul** | /əˈsenʃəl/ — sounds like **uh-SEN-shul**
+886. adj. fundamental | /ˌfʌndəˈmentəl/ — sounds like **FUN-duh-MEN-tul** | /ˌfʌndəˈmentəl/ — sounds like **FUN-duh-MEN-tul**
+887. adj. basic | /ˈbeɪsɪk/ — sounds like **BAY-sik** | /ˈbeɪsək/ — sounds like **BAY-suk**
+888. adj. primary | /ˈpraɪməri/ — sounds like **PRY-muh-ree** | /ˈpraɪmeri/ — sounds like **PRY-mer-ee**
+889. adj. secondary | /ˈsekəndəri/ — sounds like **SEK-un-duh-ree** | /ˈsekənderi/ — sounds like **SEK-un-der-ee**
+890. adj. tertiary | /ˈtɜːʃəri/ — sounds like **TUR-shuh-ree** | /ˈtɝʃəri/ — sounds like **TUR-shuh-ree**
+891. adj. preliminary | /prɪˈlɪmɪnəri/ — sounds like **pri-LIM-i-nuh-ree** | /prəˈlɪməneri/ — sounds like **pruh-LIM-uh-ner-ee**
+892. adj. initial | /ɪˈnɪʃəl/ — sounds like **i-NISH-ul** | /ɪˈnɪʃəl/ — sounds like **i-NISH-ul**
+893. adj. final | /ˈfaɪnəl/ — sounds like **FY-nul** | /ˈfaɪnəl/ — sounds like **FY-nul**
+894. v. ultimate | /ˈʌltɪmət/ — sounds like **UL-ti-mut** | /ˈʌltəmət/ — sounds like **UL-tuh-mut**
+895. adj. conclusive | /kənˈkluːsɪv/ — sounds like **kun-KLOO-siv** | /kənˈklusəv/ — sounds like **kun-KLOO-suv**
+896. adj. definitive | /dɪˈfɪnətɪv/ — sounds like **di-FIN-uh-tiv** | /dəˈfɪnətəv/ — sounds like **duh-FIN-uh-tuv**
+897. adj. comprehensive | /ˌkɒmprɪˈhensɪv/ — sounds like **KOM-pri-HEN-siv** | /ˌkɑmprəˈhensəv/ — sounds like **KAHM-pruh-HEN-suv**
+898. n. complete | /kəmˈpliːt/ — sounds like **kum-PLEET** | /kəmˈplit/ — sounds like **kum-PLEET**
+899. n. thorough | /ˈθʌrə/ — sounds like **THUR-uh** | /ˈθɝoʊ/ — sounds like **THUR-oh**
+900. adj. exhaustive | /ɪɡˈzɔːstɪv/ — sounds like **ig-ZAWS-tiv** | /ɪɡˈzɔstəv/ — sounds like **ig-ZAHS-tuv**
+901. adj. inclusive | /ɪnˈkluːsɪv/ — sounds like **in-KLOO-siv** | /ɪnˈklusəv/ — sounds like **in-KLOO-suv**
+902. adj. exclusive | /ɪkˈskluːsɪv/ — sounds like **ik-SKLOO-siv** | /ɪkˈsklusəv/ — sounds like **ik-SKLOO-suv**
+903. adj. specific | /spəˈsɪfɪk/ — sounds like **spuh-SIF-ik** | /spəˈsɪfək/ — sounds like **spuh-SIF-uk**
+904. adj. general | /ˈdʒenərəl/ — sounds like **JEN-uh-rul** | /ˈdʒenərəl/ — sounds like **JEN-uh-rul**
+905. adj. universal | /ˌjuːnɪˈvɜːsəl/ — sounds like **YOO-ni-VUR-sul** | /ˌjunəˈvɝsəl/ — sounds like **YOO-nuh-VUR-sul**
+906. n. particular | /pəˈtɪkjʊlə/ — sounds like **puh-TIK-yuh-luh** | /pərˈtɪkjələr/ — sounds like **pur-TIK-yuh-lur**
+907. n. unique | /juːˈniːk/ — sounds like **yoo-NEEK** | /juˈnik/ — sounds like **yoo-NEEK**
+908. n. distinct | /dɪˈstɪŋkt/ — sounds like **di-STINGKT** | /dəˈstɪŋkt/ — sounds like **duh-STINGKT**
+909. v. separate | /ˈsepərət/ — sounds like **SEP-uh-rut** | /ˈsepərət/ — sounds like **SEP-uh-rut**
+910. adj. individual | /ˌɪndɪˈvɪdʒuəl/ — sounds like **IN-di-VIJ-oo-ul** | /ˌɪndəˈvɪdʒuəl/ — sounds like **IN-duh-VIJ-oo-ul**
+911. adj. collective | /kəˈlektɪv/ — sounds like **kuh-LEK-tiv** | /kəˈlektəv/ — sounds like **kuh-LEK-tuv**
+912. n. common | /ˈkɒmən/ — sounds like **KOM-un** | /ˈkɑmən/ — sounds like **KAH-mun**
+913. v. shared | /ʃeəd/ — sounds like **SHAIRD** | /ʃerd/ — sounds like **SHAIRD**
+914. adj. mutual | /ˈmjuːtʃuəl/ — sounds like **MYOO-choo-ul** | /ˈmjutʃuəl/ — sounds like **MYOO-choo-ul**

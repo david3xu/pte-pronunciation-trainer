@@ -57,7 +57,8 @@ class PTETermsExtractor {
 
   /**
    * Parse a single PTE term line with IPA pronunciation data
-   * Format: "1. term | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**"
+   * Format: "1. [wordType] term | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**"
+   * Example: "1. adj. structural | /ˈstrʌktʃərəl/ — sounds like **STRUHK-chuh-rul** | ..."
    */
   static parsePTETermLine(line) {
     // Match the format: number. term | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
@@ -67,7 +68,18 @@ class PTETermsExtractor {
       return null;
     }
 
-    const [, term, britishData, americanData] = match;
+    let [, termPart, britishData, americanData] = match;
+    
+    // Extract word type (n., v., adj., adv., etc.) if present
+    let wordType = null;
+    let term = termPart.trim();
+    
+    // Match word type patterns: "adj. word", "v. word", "n. word", "adv. word", etc.
+    const wordTypeMatch = term.match(/^(n\.|v\.|adj\.|adv\.|prep\.|conj\.|pron\.|interj\.)\s+(.+)$/i);
+    if (wordTypeMatch) {
+      wordType = wordTypeMatch[1].toLowerCase(); // Store as lowercase for consistency
+      term = wordTypeMatch[2].trim(); // Extract the actual word without prefix
+    }
 
     // Parse British pronunciation data
     const britishMatch = britishData.match(/^\/(.+?)\/\s*—\s*sounds\s+like\s+\*\*(.+?)\*\*$/);
@@ -80,8 +92,8 @@ class PTETermsExtractor {
     const [, britishIPA, britishPhonetic] = britishMatch;
     const [, americanIPA, americanPhonetic] = americanMatch;
 
-    return {
-      english: term.trim(),
+    const result = {
+      english: term, // Clean word without word type prefix
       pronunciation: {
         british: {
           ipa: britishIPA.trim(),
@@ -92,10 +104,17 @@ class PTETermsExtractor {
           phonetic: americanPhonetic.trim()
         }
       },
-      difficulty: this.inferDifficulty(term.trim()),
+      difficulty: this.inferDifficulty(term),
       category: 'pte-fib-listening',
       source: 'pte-fib-listening-with-ipa'
     };
+    
+    // Add wordType only if present (keeps data clean for entries without word types)
+    if (wordType) {
+      result.wordType = wordType;
+    }
+    
+    return result;
   }
 
   /**

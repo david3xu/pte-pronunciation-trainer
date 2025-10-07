@@ -210,6 +210,9 @@ class UIController {
 
         // Vocabulary book (learning mode) dropdown
         this.populateDropdown('learningModeSelect', 'learningMode', 'pte-fib-listening');
+        
+        // Practice dataset dropdown (for RS/ASQ/WFD modes)
+        this.populateDropdown('practiceDatasetSelect', 'practiceDataset', 'pte-repeat-sentence');
 
         // Difficulty dropdown
         this.populateDropdown('difficultySelect', 'difficulty', 'all');

@@ -247,6 +247,12 @@ class SettingsManager {
       case 'learningMode':
         return this.config.get('data.learningModes');
 
+      case 'practiceDataset':
+        return this.config.get('data.practiceDatasets').map(dataset => ({
+          id: dataset.id,
+          label: `${dataset.label} (${dataset.itemCount} items)`
+        }));
+
       case 'category':
         return Object.entries(this.config.get('data.categories')).map(([id, label]) => ({
           id, label

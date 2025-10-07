@@ -341,6 +341,21 @@ class UIController {
                 englishElement.classList.remove('word-change');
             }, 500);
         }
+        
+        // Update word type badge (if available) - NEW
+        const wordTypeBadge = document.getElementById('wordTypeBadge');
+        if (wordTypeBadge) {
+            if (word.wordType) {
+                wordTypeBadge.textContent = `[${word.wordType}]`;
+                wordTypeBadge.style.display = 'inline-block';
+                wordTypeBadge.classList.add('word-change');
+                setTimeout(() => {
+                    wordTypeBadge.classList.remove('word-change');
+                }, 500);
+            } else {
+                wordTypeBadge.style.display = 'none';
+            }
+        }
 
         // Update IPA (bottom)
         const ipaElement = document.getElementById('ipaNotation');

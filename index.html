@@ -63,25 +63,20 @@
                 <button class="btn-close-settings" id="closeSettingsBtn" aria-label="Close settings">✕</button>
             </div>
             <div class="settings-grid">
-                <!-- Learning Mode Selection -->
+                <!-- Learning Mode Selection (Vocabulary Book Selector) -->
                 <div class="setting-item">
-                    <label for="learningModeSelect">Mode:</label>
+                    <label for="learningModeSelect">Vocabulary Book:</label>
                     <select id="learningModeSelect">
                         <option value="pte-fib-listening" selected>🎧 PTE FIB Listening</option>
                         <option value="pte-beginner">📗 PTE Beginner Vocabulary</option>
+                        <option value="pte-intermediate">📘 PTE Intermediate Vocabulary</option>
                     </select>
                 </div>
-                <!-- PTE categories -->
+                <!-- Note: Category filter removed - each book currently contains only one category.
+                     When datasets are enhanced with subcategories (e.g., Grammar, Vocabulary, Idioms),
+                     add back: <select id="categorySelect">...</select> -->
                 <div class="setting-item">
-                    <label for="categorySelect">Category:</label>
-                    <select id="categorySelect">
-                        <option value="all-categories" selected>🌟 All Categories</option>
-                        <option value="pte-fib-listening">🎧 FIB Listening</option>
-                        <option value="pte-beginner">📗 PTE Beginner</option>
-                    </select>
-                </div>
-                <div class="setting-item">
-                    <label for="difficultySelect">Level:</label>
+                    <label for="difficultySelect">Difficulty Level:</label>
                     <select id="difficultySelect">
                         <option value="all" selected>🌟 All Difficulties</option>
                     </select>
@@ -127,26 +122,28 @@
 
     <!-- Debug script to verify data loading -->
     <script>
-        // Debug functions for console testing
-        window.debugVocab = {
-            checkData: function () {
-                console.log('=== Debug Vocabulary Check ===');
-                console.log('VocabularyManager loaded:', typeof window.vocabularyManager !== 'undefined');
+        // Debug utilities for development (remove in production build)
+        if (typeof DEBUG === 'undefined' || DEBUG) {
+            window.debugVocab = {
+                checkData: function () {
+                    console.log('=== Debug Vocabulary Check ===');
+                    console.log('PTEVocabularyManager loaded:', typeof window.pteVocabularyManager !== 'undefined');
 
-                if (window.vocabularyManager) {
-                    console.log('Current words count:', window.vocabularyManager.getTotalWords());
-                    console.log('Category counts:', window.vocabularyManager.getCategoryCounts());
-                    console.log('Available learning modes:', window.vocabularyManager.getAvailableModes?.());
+                    if (window.pteVocabularyManager) {
+                        console.log('Current words count:', window.pteVocabularyManager.getCurrentWords().length);
+                        console.log('All words count:', window.pteVocabularyManager.getAllWords().length);
+                        console.log('Current mode:', window.pteVocabularyManager.currentLearningMode);
+                        console.log('Current difficulty:', window.pteVocabularyManager.getCurrentDifficulty());
+                    }
                 }
-            }
-        };
+            };
+        }
     </script>
 
-    <!-- NEW: Shared Infrastructure (must load first) -->
-    <script src="src/js/shared/AppNamespace.js?v=1759740000"></script>
+    <!-- Shared Infrastructure (must load first) -->
     <script src="src/js/shared/Config.js?v=1759740000"></script>
     <script src="src/js/shared/DataSchema.js?v=1759740000"></script>
-    <script src="src/js/shared/LegacyCompatibility.js?v=1759740000"></script>
+    <!-- LegacyCompatibility.js removed - Phase 3 cleanup: Never initialized or used -->
 
     <!-- Utility Modules -->
     <script src="src/js/utils/EventBus.js?v=1759740000"></script>

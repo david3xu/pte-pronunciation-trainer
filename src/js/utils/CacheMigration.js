@@ -11,17 +11,14 @@ class CacheMigration {
 
         if (forceClear || currentVersion < this.currentVersion) {
             if (forceClear) {
-                console.log('Force clearing all cache data...');
                 this.clearAllCache();
             } else {
-                console.log(`Migrating cache from version ${currentVersion} to ${this.currentVersion}`);
                 // Migration is handled by clearing and setting defaults
             }
 
             // Set default values for clean initialization
             this.setDefaultValues();
             window.storage.setItem(this.versionKey, this.currentVersion);
-            console.log('Cache migration completed');
         }
     }
 
@@ -40,7 +37,6 @@ class CacheMigration {
                 window.settingsManager.updateSetting(key, value);
             });
 
-            console.log('Default values set through SettingsManager');
         } else {
             console.error('❌ SettingsManager not available - cannot set default values');
         }
@@ -49,7 +45,6 @@ class CacheMigration {
     // Clear all cache data (emergency reset)
     clearAllCache() {
         const clearedCount = window.storage.clear();
-        console.log(`Cleared ${clearedCount} cache items`);
         return clearedCount;
     }
 
@@ -72,13 +67,8 @@ class CacheMigration {
 }
 
 // Global cache migration instance
-// Create and expose global instance
+// Create global instance
 const cacheMigration = new CacheMigration();
 
-// Register with new namespace (if available)
-if (window.CCLApp) {
-    window.CCLApp.registerModule('cacheMigration', cacheMigration);
-}
-
-// Legacy compatibility - maintain existing global reference
+// Expose as global reference for PTE app
 window.cacheMigration = cacheMigration;

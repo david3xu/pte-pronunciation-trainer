@@ -78,10 +78,5 @@ class Storage {
 // Global storage instance
 const storage = new Storage();
 
-// Register with new namespace (if available)
-if (window.CCLApp) {
-    window.CCLApp.registerModule('storage', storage);
-}
-
-// Legacy compatibility - maintain existing global reference
+// Expose as global reference for PTE app
 window.storage = storage;

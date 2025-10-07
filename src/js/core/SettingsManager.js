@@ -81,7 +81,6 @@ class SettingsManager {
       };
     }
 
-    console.log('SettingsManager: Initialized with settings:', this.settings);
   }
 
   /**
@@ -106,7 +105,6 @@ class SettingsManager {
     // Emit change event
     this.emitSettingChange(key, value);
 
-    console.log(`SettingsManager: Updated ${key} = ${value}`);
     return true;
   }
 
@@ -173,19 +171,18 @@ class SettingsManager {
 
   /**
    * Persist setting to storage
+   * SettingsManager is the single source of truth for all user preferences
    */
   persistSetting(key, value) {
     const storageKeys = this.config.get('settings.storageKeys');
     const storageKey = storageKeys[key];
 
     if (storageKey) {
-      // Save to legacy storage
+      // Save to storage (single source of truth)
       window.storage.setItem(storageKey, value);
 
-      // Save to StateManager if available
-      if (this.stateManager) {
-        this.stateManager.saveUserPreference(key, value);
-      }
+      // Note: StateManager sync removed - SettingsManager is now authoritative
+      // StateManager (if needed) should be renamed to SessionManager for transient state only
     }
   }
 
@@ -227,7 +224,6 @@ class SettingsManager {
       timestamp: Date.now()
     });
 
-    console.log('SettingsManager: Reset all settings to defaults');
   }
 
   /**
@@ -288,10 +284,5 @@ class SettingsManager {
 // Global settings manager instance
 const settingsManager = new SettingsManager();
 
-// Register with new namespace (if available)
-if (window.CCLApp) {
-  window.CCLApp.registerModule('settingsManager', settingsManager);
-}
-
-// Legacy compatibility - maintain existing global reference
+// Expose as global reference for PTE app
 window.settingsManager = settingsManager;

@@ -33,7 +33,6 @@ class StateManager {
         const requiredVersion = 5; // Match CacheMigration version
 
         if (currentVersion < requiredVersion) {
-            console.log('StateManager: Cache migration needed, clearing old state');
             this.storage.removeItem('app-state');
             this.storage.setItem('cache-version', requiredVersion);
         }
@@ -45,7 +44,6 @@ class StateManager {
             const savedState = this.storage.getItem('app-state');
             if (savedState) {
                 this.state = { ...this.state, ...savedState };
-                console.log('State loaded from localStorage:', this.state);
             }
         } catch (error) {
             console.warn('Failed to load state:', error);
@@ -57,7 +55,6 @@ class StateManager {
         try {
             this.state.lastSaved = Date.now();
             this.storage.setItem('app-state', this.state);
-            console.log('State saved to localStorage');
         } catch (error) {
             console.warn('Failed to save state:', error);
         }
@@ -134,7 +131,6 @@ class StateManager {
             settingsPanelOpen: false,
             lastSaved: Date.now()
         };
-        console.log('State cleared and reset to defaults');
     }
 
     // Export state for debugging
@@ -161,19 +157,12 @@ class StateManager {
         if (stateKey && this.state.hasOwnProperty(stateKey)) {
             this.state[stateKey] = value;
             this.saveState();
-            console.log(`StateManager: Saved ${key} = ${value}`);
         }
     }
 }
 
 // Global state manager instance
-// Create and expose global instance
 const stateManager = new StateManager();
 
-// Register with new namespace (if available)
-if (window.CCLApp) {
-    window.CCLApp.registerModule('stateManager', stateManager);
-}
-
-// Legacy compatibility - maintain existing global reference
+// Expose as global reference for PTE app
 window.stateManager = stateManager;

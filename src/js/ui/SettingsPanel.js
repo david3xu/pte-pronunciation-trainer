@@ -53,14 +53,15 @@ class SettingsPanel {
 
         if (this.settingsManager) {
             savedSettings = this.settingsManager.getAllSettings();
-            console.log('📂 Loading settings from SettingsManager:', savedSettings);
         } else {
             console.warn('⚠️ SettingsManager not available - using fallback initialization');
             return;
         }
 
         // Apply settings to UI elements (UIController handles dropdown population)
-        this.applySettingToElement('categorySelect', savedSettings.category);
+        // Category dropdown removed from UI (not useful when datasets are monolithic)
+        // Category filtering still works in backend for future subcategories
+        // this.applySettingToElement('categorySelect', savedSettings.category);
         this.applySettingToElement('difficultySelect', savedSettings.difficulty);
         this.applySettingToElement('speedSelect', savedSettings.speed);
         this.applySettingToElement('delaySelect', savedSettings.delay);
@@ -100,7 +101,6 @@ class SettingsPanel {
             settingsPanel.classList.add('active');
             settingsPanel.classList.remove('collapsed');
             this.isOpen = true;
-            console.log('Settings panel opened');
 
             // Emit panel opened event
             window.eventBus.emit('settings:panelOpened', {
@@ -115,7 +115,6 @@ class SettingsPanel {
             settingsPanel.classList.remove('active');
             settingsPanel.classList.add('collapsed');
             this.isOpen = false;
-            console.log('Settings panel closed');
 
             // Emit panel closed event
             window.eventBus.emit('settings:panelClosed', {
@@ -124,24 +123,12 @@ class SettingsPanel {
         }
     }
 
-    loadSettings() {
-        // This method is completely redundant - SettingsManager handles all settings
-        console.log('⚠️ SettingsPanel.loadSettings() is deprecated - SettingsManager handles all settings');
-        return;
-
-        // All module updates are now handled by SettingsManager events
-
-        console.log('Settings loaded:', savedSettings);
-    }
-
     applySettingToElement(elementId, value) {
         const element = document.getElementById(elementId);
         if (element && value !== null && value !== undefined) {
             element.value = value;
         }
     }
-
-    // This method is redundant - use the SettingsManager version below
 
     updateVoiceSelection(voiceName) {
         const voiceSelect = document.getElementById('voiceSelect');
@@ -173,7 +160,6 @@ class SettingsPanel {
 
         URL.revokeObjectURL(url);
 
-        console.log('Settings exported');
 
         // Emit export event
         window.eventBus.emit('settings:exported', {
@@ -200,7 +186,6 @@ class SettingsPanel {
 
             // Settings are automatically applied through SettingsManager events
 
-            console.log('Settings imported successfully');
 
             // Emit import event
             window.eventBus.emit('settings:imported', {
@@ -220,7 +205,6 @@ class SettingsPanel {
         // Use SettingsManager to reset settings instead of direct storage access
         if (window.settingsManager) {
             window.settingsManager.resetSettings();
-            console.log('Settings reset through SettingsManager');
         } else {
             console.error('❌ SettingsManager not available - cannot reset settings');
         }
@@ -246,13 +230,7 @@ class SettingsPanel {
 }
 
 // Global settings panel instance
-// Create and expose global instance
 const settingsPanel = new SettingsPanel();
 
-// Register with new namespace (if available)
-if (window.CCLApp) {
-    window.CCLApp.registerModule('settingsPanel', settingsPanel);
-}
-
-// Legacy compatibility - maintain existing global reference
+// Expose as global reference for PTE app
 window.settingsPanel = settingsPanel;

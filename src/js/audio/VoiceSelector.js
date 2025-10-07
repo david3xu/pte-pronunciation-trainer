@@ -22,7 +22,6 @@ class VoiceSelector {
             }
 
             if (selectedVoice) {
-                console.log(`Using user-selected voice: ${selectedVoice.name}`);
                 return selectedVoice;
             }
         }
@@ -35,7 +34,6 @@ class VoiceSelector {
         for (const preferredName of priorityNames) {
             const voice = voices.find(v => v.name === preferredName || v.name.includes(preferredName));
             if (voice) {
-                console.log(`Auto-selected AU priority voice: ${voice.name} (${voice.lang})`);
                 return voice;
             }
         }
@@ -54,10 +52,8 @@ class VoiceSelector {
         if (enAuMaleVoices.length > 0) {
             const explicitMale = enAuMaleVoices.find(v => maleIndicators.some(ind => v.name.toLowerCase().includes(ind)));
             if (explicitMale) {
-                console.log(`Auto-selected en-AU explicit male voice: ${explicitMale.name} (${explicitMale.lang})`);
                 return explicitMale;
             }
-            console.log(`Auto-selected en-AU voice (non-female): ${enAuMaleVoices[0].name} (${enAuMaleVoices[0].lang})`);
             return enAuMaleVoices[0];
         }
 
@@ -72,23 +68,19 @@ class VoiceSelector {
         if (englishMaleVoices.length > 0) {
             const explicitMaleEn = englishMaleVoices.find(v => maleIndicators.some(ind => v.name.toLowerCase().includes(ind)));
             if (explicitMaleEn) {
-                console.log(`Auto-selected English explicit male voice: ${explicitMaleEn.name} (${explicitMaleEn.lang})`);
                 return explicitMaleEn;
             }
-            console.log(`Auto-selected English voice (non-female): ${englishMaleVoices[0].name} (${englishMaleVoices[0].lang})`);
             return englishMaleVoices[0];
         }
 
         // Last resort: Use any English voice available
         const anyEnglishVoice = voices.find(v => v.lang && v.lang.toLowerCase().startsWith('en'));
         if (anyEnglishVoice) {
-            console.log(`Using fallback English voice: ${anyEnglishVoice.name}`);
             return anyEnglishVoice;
         }
 
         // Final fallback: Use first available voice
         if (voices.length > 0) {
-            console.log(`Using first available voice: ${voices[0].name}`);
             return voices[0];
         }
 
@@ -162,12 +154,10 @@ class VoiceSelector {
             voiceSelect.appendChild(option);
         });
 
-        console.log('Populated curated voice presets');
     }
 
     setPreferredVoice(voiceName) {
         this.preferredVoice = voiceName === 'auto' ? null : voiceName;
-        console.log(`Voice preference changed to: ${this.preferredVoice || 'auto'}`);
 
         // Reset TTS voice cache to ensure new preference is used
         if (window.ttsEngine && typeof window.ttsEngine.resetVoiceCache === 'function') {
@@ -190,13 +180,7 @@ class VoiceSelector {
 }
 
 // Global voice selector instance
-// Create and expose global instance
 const voiceSelector = new VoiceSelector();
 
-// Register with new namespace (if available)
-if (window.CCLApp) {
-    window.CCLApp.registerModule('voiceSelector', voiceSelector);
-}
-
-// Legacy compatibility - maintain existing global reference
+// Expose as global reference for PTE app
 window.voiceSelector = voiceSelector;

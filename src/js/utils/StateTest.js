@@ -14,7 +14,6 @@ class StateTest {
    */
   enable() {
     this.isEnabled = true;
-    console.log('StateTest: Testing enabled');
   }
 
   /**
@@ -22,7 +21,6 @@ class StateTest {
    */
   disable() {
     this.isEnabled = false;
-    console.log('StateTest: Testing disabled');
   }
 
   /**

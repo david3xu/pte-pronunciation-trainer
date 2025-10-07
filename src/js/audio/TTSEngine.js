@@ -35,7 +35,6 @@ class TTSEngine {
 
             // For vocabulary-clean mode, use UK pronunciation for first repeat, US for second
             if (word.source === 'vocabulary-clean' && word.ukPronunciation && word.usPronunciation) {
-                console.log('Using vocabulary-clean pronunciation data for TTS');
             }
 
             // Add visual feedback during speech
@@ -142,13 +141,11 @@ class TTSEngine {
                 const voices = speechSynthesis.getVoices();
                 this.cachedVoice = window.voiceSelector ? window.voiceSelector.selectBestVoiceMatch(voices, lang) : null;
                 if (this.cachedVoice) {
-                    console.log(`🎤 Locked voice for session: ${this.cachedVoice.name} (${this.cachedVoice.lang})`);
                 }
             }
             const voice = this.cachedVoice;
             if (voice) {
                 utterance.voice = voice;
-                console.log(`Using voice: ${voice.name} (${voice.lang})`);
             } else {
                 console.error('No voice available for text-to-speech');
                 this.showTTSFallback(text);
@@ -395,18 +392,11 @@ class TTSEngine {
 
     resetVoiceCache() {
         this.cachedVoice = null;
-        console.log('🔄 Voice cache reset - will reselect on next pronunciation');
     }
 }
 
 // Global TTS engine instance
-// Create and expose global instance
 const ttsEngine = new TTSEngine();
 
-// Register with new namespace (if available)
-if (window.CCLApp) {
-    window.CCLApp.registerModule('ttsEngine', ttsEngine);
-}
-
-// Legacy compatibility - maintain existing global reference
+// Expose as global reference for PTE app
 window.ttsEngine = ttsEngine;

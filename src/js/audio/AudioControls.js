@@ -22,7 +22,6 @@ class AudioControls {
         this.isPlaying = true;
         this.showPlayingUI();
 
-        console.log(`Starting auto-play from index ${this.currentIndex}`);
 
         // Emit auto-play start event
         window.eventBus.emit('audioControls:autoPlayStarted', {
@@ -48,7 +47,6 @@ class AudioControls {
         window.ttsEngine.stopSpeaking();
 
         window.progressTracker.updateStatus('Paused');
-        console.log('Auto-play paused');
 
         // Emit auto-play pause event
         window.eventBus.emit('audioControls:autoPlayPaused', {
@@ -216,7 +214,6 @@ class AudioControls {
         });
 
         // Confetti celebration (optional enhancement)
-        console.log('🎊 FINAL COMPLETION CELEBRATION! 🎊');
     }
 
     nextWord() {
@@ -354,13 +351,7 @@ class AudioControls {
 }
 
 // Global audio controls instance
-// Create and expose global instance
 const audioControls = new AudioControls();
 
-// Register with new namespace (if available)
-if (window.CCLApp) {
-    window.CCLApp.registerModule('audioControls', audioControls);
-}
-
-// Legacy compatibility - maintain existing global reference
+// Expose as global reference for PTE app
 window.audioControls = audioControls;

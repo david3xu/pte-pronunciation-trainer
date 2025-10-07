@@ -12,7 +12,6 @@ class UIController {
     setupEventListeners() {
         // Listen for vocabulary loaded event
         window.eventBus.on('vocabulary:loaded', (data) => {
-            console.log('UIController: Vocabulary loaded, updating UI');
             this.updateUI();
         });
 
@@ -29,7 +28,6 @@ class UIController {
 
         // Listen for learning mode changes
         window.eventBus.on('vocabulary:learningModeChanged', (data) => {
-            console.log('UIController: Learning mode changed to:', data.mode);
             // Reset audio position to first word
             window.audioControls.setCurrentIndex(0);
             this.updateCategoryDisplay();
@@ -60,22 +58,14 @@ class UIController {
         // Listen for settings changes using centralized event names
         const settingsChangedEvent = this.config.get('settings.events.changed');
         window.eventBus.on(settingsChangedEvent, (data) => {
-            console.log('UIController: Settings changed:', data.key, '=', data.value);
             // Update UI based on settings changes
             this.handleSettingsChange(data.key, data.value);
         });
     }
 
     bindEventListeners() {
-        // Category selection - use SettingsManager
-        document.getElementById('categorySelect').addEventListener('change', (e) => {
-            window.pteVocabularyManager.setCategory(e.target.value);
-            // Save category preference through SettingsManager
-            if (window.settingsManager) {
-                window.settingsManager.updateSetting('category', e.target.value);
-            }
-            this.updateCategoryDisplay();
-        });
+        // Category selection removed - each vocabulary book is a single category.
+        // The learningMode (vocabulary book) selector serves this purpose.
 
         // Difficulty selection - use SettingsManager
         document.getElementById('difficultySelect').addEventListener('change', (e) => {
@@ -92,12 +82,10 @@ class UIController {
             const newMode = e.target.value;
             await window.pteVocabularyManager.setLearningMode(newMode);
             this.updateCategoryDisplay(); // Update UI for new mode
-            console.log(`Learning mode changed to: ${newMode}`);
 
             // Save the learning mode through SettingsManager
             if (window.settingsManager) {
                 window.settingsManager.updateSetting('learningMode', newMode);
-                console.log(`Learning mode saved through SettingsManager: ${newMode}`);
             }
         });
 
@@ -141,7 +129,6 @@ class UIController {
             // Reset repeat count when changing mode
             window.ttsEngine.currentRepeatCount = 0;
 
-            console.log(`Repeat mode changed to: ${e.target.value}`);
 
             // Save repeat preference through SettingsManager
             if (window.settingsManager) {
@@ -192,59 +179,6 @@ class UIController {
             console.warn('⚠️ SettingsManager not available - dropdowns may not work properly');
         }
 
-        console.log('Dropdowns initialized based on PTE data structure');
-    }
-
-    /**
-     * Populate dropdowns using SettingsManager
-     */
-    populateDropdownsFromSettingsManager() {
-        const settingsManager = window.settingsManager;
-
-        // Populate learning mode dropdown
-        const learningModeSelect = document.getElementById('learningModeSelect');
-        if (learningModeSelect) {
-            learningModeSelect.innerHTML = '';
-            const learningModes = settingsManager.getAvailableOptions('learningMode');
-            learningModes.forEach(mode => {
-                const option = document.createElement('option');
-                option.value = mode.id;
-                option.textContent = mode.label;
-                if (mode.id === 'pte-fib-listening') option.selected = true;
-                learningModeSelect.appendChild(option);
-            });
-        }
-
-        // Populate category dropdown
-        const categorySelect = document.getElementById('categorySelect');
-        if (categorySelect) {
-            categorySelect.innerHTML = '';
-            const categories = settingsManager.getAvailableOptions('category');
-            categories.forEach(category => {
-                const option = document.createElement('option');
-                option.value = category.id;
-                option.textContent = category.label;
-                if (category.id === 'all-categories') option.selected = true;
-                categorySelect.appendChild(option);
-            });
-        }
-
-        // Populate difficulty dropdown
-        const difficultySelect = document.getElementById('difficultySelect');
-        if (difficultySelect) {
-            difficultySelect.innerHTML = '';
-            const difficulties = settingsManager.getAvailableOptions('difficulty');
-            difficulties.forEach(difficulty => {
-                const option = document.createElement('option');
-                option.value = difficulty.id;
-                option.textContent = difficulty.label;
-                if (difficulty.id === 'all') option.selected = true;
-                difficultySelect.appendChild(option);
-            });
-        }
-
-        // Populate other dropdowns
-        this.populateAudioDropdowns(settingsManager);
     }
 
     /**
@@ -254,11 +188,8 @@ class UIController {
         const settingsManager = window.settingsManager;
         if (!settingsManager) return;
 
-        // Learning mode dropdown
+        // Vocabulary book (learning mode) dropdown
         this.populateDropdown('learningModeSelect', 'learningMode', 'pte-fib-listening');
-
-        // Category dropdown
-        this.populateDropdown('categorySelect', 'category', 'all-categories');
 
         // Difficulty dropdown
         this.populateDropdown('difficultySelect', 'difficulty', 'all');
@@ -292,80 +223,67 @@ class UIController {
     }
 
     updateCategoryDisplay() {
-        const categorySelect = document.getElementById('categorySelect');
         const categoryDisplay = document.getElementById('categoryDisplay');
 
-        if (!categorySelect || !window.pteVocabularyManager) return;
+        if (!window.pteVocabularyManager) return;
 
-        const categoryLabels = this.config.get('data.categories') || {};
+        const currentWords = window.pteVocabularyManager.getCurrentWords();
+        const totalWords = window.pteVocabularyManager.getAllWords().length;
+        const currentMode = window.pteVocabularyManager.currentLearningMode || 'pte-fib-listening';
 
-        // Update all option texts with current difficulty filter
-        Array.from(categorySelect.options).forEach(option => {
-            const category = option.value;
-            const label = categoryLabels[category];
+        // Get friendly name for current vocabulary book
+        const modeLabels = {
+            'pte-fib-listening': '🎧 PTE FIB Listening',
+            'pte-beginner': '📗 PTE Beginner',
+            'pte-intermediate': '📘 PTE Intermediate'
+        };
 
-            if (label) {
-                const currentWords = window.pteVocabularyManager.getCurrentWords();
-                const count = currentWords.length;
-                let suffix = 'words';
-                if (window.pteVocabularyManager.getCurrentDifficulty() !== 'all') {
-                    const emoji = { easy: '🟢', normal: '🟡', hard: '🔴' }[window.pteVocabularyManager.getCurrentDifficulty()] || '';
-                    suffix = `${emoji} ${window.pteVocabularyManager.getCurrentDifficulty()}`;
-                }
-                option.textContent = `${label} (${count} ${suffix})`;
-            }
-        });
-
-        // Update the context bar display with current category name
+        // Update context bar display with vocabulary book name and word count
         if (categoryDisplay) {
-            const currentCategoryName = categoryLabels[window.pteVocabularyManager.getCurrentCategory()] || window.pteVocabularyManager.getCurrentCategory();
-            console.log(`Updating context bar display: ${window.pteVocabularyManager.getCurrentCategory()} → ${currentCategoryName}`);
-            categoryDisplay.textContent = currentCategoryName;
+            const modeName = modeLabels[currentMode] || currentMode;
+            let displayText = `${modeName} (${currentWords.length}/${totalWords})`;
+            
+            // Add difficulty indicator if filtered
+            if (window.pteVocabularyManager.getCurrentDifficulty() !== 'all') {
+                const emoji = { easy: '🟢', normal: '🟡', hard: '🔴' }[window.pteVocabularyManager.getCurrentDifficulty()] || '';
+                displayText += ` ${emoji}`;
+            }
+            
+            categoryDisplay.textContent = displayText;
         }
     }
 
     displayWord(word, index) {
         if (!word) return;
 
-        // Resolve pronunciation pieces: phonetic (no asterisks) and IPA
+        // All PTE datasets use standardized pronunciation structure
         let phoneticPlain = '';
         let ipaOnly = '';
 
-        // NEW: Use standardized pronunciationGuide structure (unified data pipeline)
-        if (word.pronunciationGuide && word.pronunciationGuide.british) {
-            const british = word.pronunciationGuide.british;
-            phoneticPlain = british.phonetic || '';
-            ipaOnly = british.ipa ? `/${british.ipa}/` : '';
-            console.log('Using pronunciationGuide (British):', { ipaOnly, phoneticPlain });
-        }
-        // PTE terms: Use pronunciation structure with British/American IPA
-        else if (word.pronunciation && word.pronunciation.british && word.pronunciation.american) {
-            const british = word.pronunciation.british;
-            const american = word.pronunciation.american;
-
-            // Check if user prefers American pronunciation
+        // Standard PTE format: pronunciation.british / pronunciation.american
+        if (word.pronunciation && word.pronunciation.british && word.pronunciation.american) {
             const useAmerican = this.getPronunciationPreference() === 'american';
-            const selected = useAmerican ? american : british;
+            const selected = useAmerican ? word.pronunciation.american : word.pronunciation.british;
 
             phoneticPlain = selected.phonetic || '';
             ipaOnly = selected.ipa ? `/${selected.ipa}/` : '';
-            console.log(`Using PTE pronunciation (${useAmerican ? 'American' : 'British'}):`, { ipaOnly, phoneticPlain, british, american });
-
+            
             // Store both pronunciations for toggle functionality
-            this.currentWordPronunciations = { british, american };
+            this.currentWordPronunciations = {
+                british: word.pronunciation.british,
+                american: word.pronunciation.american
+            };
         }
-        // NEW: Direct ipa and phonetic fields from unified pipeline
-        else if (word.ipa || word.phonetic) {
-            phoneticPlain = word.phonetic || '';
-            ipaOnly = word.ipa ? `/${word.ipa}/` : '';
-            console.log('Using direct ipa/phonetic fields:', { ipaOnly, phoneticPlain });
+        // Fallback: pronunciation.british only (older or partial data)
+        else if (word.pronunciation && word.pronunciation.british) {
+            phoneticPlain = word.pronunciation.british.phonetic || '';
+            ipaOnly = word.pronunciation.british.ipa ? `/${word.pronunciation.british.ipa}/` : '';
+            this.currentWordPronunciations = { british: word.pronunciation.british };
         }
-        // Legacy support for old data formats (can be removed in future versions)
-        else if (word.source && word.source.includes('legacy')) {
-            console.warn('Legacy data format detected, consider updating to PTE format');
-            // Minimal fallback handling for any remaining legacy data
+        // Legacy fallback (should not occur in current PTE datasets)
+        else {
+            console.warn('Word missing standard pronunciation data:', word.english);
         }
-        // No fallback needed - PTE dataset contains all pronunciation data
 
         // Update phonetic (top)
         const phoneticElement = document.getElementById('phoneticSpelling');
@@ -373,10 +291,8 @@ class UIController {
             if (phoneticPlain) {
                 phoneticElement.textContent = phoneticPlain;
                 phoneticElement.style.display = 'block';
-                console.log('Displaying phonetic:', phoneticPlain);
             } else {
                 phoneticElement.style.display = 'none';
-                console.log('No phonetic to display');
             }
             phoneticElement.classList.add('word-change');
             setTimeout(() => {
@@ -390,11 +306,8 @@ class UIController {
             // For vocabulary-clean entries, make sure we're using the full word
             // and not just the phonetic representation
             if (word.source === 'vocabulary-clean') {
-                console.log('Vocabulary word:', word);
                 // Handle words that might contain slashes (like "Behave/act")
-                // or other special characters
                 if (word.english.includes('/')) {
-                    // Get the full phrase before any '/' character
                     const fullWord = word.english.split('/')[0].trim();
                     englishElement.textContent = fullWord;
                 } else {
@@ -415,10 +328,8 @@ class UIController {
             if (ipaOnly) {
                 ipaElement.textContent = ipaOnly;
                 ipaElement.style.display = 'block';
-                console.log('Displaying IPA:', ipaOnly);
             } else {
                 ipaElement.style.display = 'none';
-                console.log('No IPA to display');
             }
             ipaElement.classList.add('word-change');
             setTimeout(() => {
@@ -434,15 +345,9 @@ class UIController {
 
         // Update example sentence display (for conversation vocabulary)
         const exampleElement = document.getElementById('exampleSentence');
-        console.log('Example debug - word.example:', word.example ? 'EXISTS' : 'MISSING');
-        console.log('Example debug - word.definition:', word.definition ? 'EXISTS' : 'MISSING');
-        console.log('Example debug - word keys:', Object.keys(word));
 
         // Special handling for terms with definitions (PTE format)
         if (exampleElement && word.definition) {
-            console.log('Showing definition for term:', word.definition);
-            console.log('Word source:', word.source);
-            console.log('Word definition exists:', !!word.definition);
 
             // Definition is now clean (no pronunciation), just display it directly
             if (word.definition && word.definition.trim()) {
@@ -464,7 +369,6 @@ class UIController {
         else if (exampleElement && word.example) {
             // Clean example sentence (remove speaker prefixes like "Jenny:", "Officer:", etc.)
             const cleanExample = this.cleanExampleSentence(word.example);
-            console.log('Showing example sentence:', cleanExample);
 
             // Display English examples
             let displayContent = `<div class="example-english">${cleanExample}</div>`;
@@ -477,7 +381,6 @@ class UIController {
                 exampleElement.classList.remove('word-change');
             }, 500);
         } else if (exampleElement) {
-            console.log('Hiding example sentence - no word.example or definition found');
             exampleElement.style.display = 'none';
         }
 
@@ -485,7 +388,6 @@ class UIController {
         const totalWords = window.pteVocabularyManager.getTotalWordCount();
         window.progressTracker.updateProgress(index, totalWords, word);
 
-        console.log(`Displayed word ${index + 1}/${totalWords}: "${word.english}"`);
     }
 
     displayFirstWord() {
@@ -513,16 +415,12 @@ class UIController {
             .trim();
 
         // Smart sentence splitting - ensure the vocabulary term appears in the displayed sentence
-        console.log('Original sentence length:', cleaned.length, '- Content:', cleaned);
-
         // Get the current vocabulary term to ensure it's included in the displayed sentence
         const currentWord = window.pteVocabularyManager?.getCurrentWords()?.[window.pteVocabularyManager?.currentIndex]?.english;
-        console.log('Current vocabulary term:', currentWord);
 
         const maxLength = this.config.get('ui.text.maxLength');
         if (cleaned.length > maxLength) {
             const sentences = cleaned.split(/[.!?]+/);
-            console.log('Split into sentences:', sentences);
 
             if (sentences.length > 1) {
                 // Find the shortest sentence that contains the vocabulary term
@@ -535,7 +433,6 @@ class UIController {
                     for (let i = 0; i < sentences.length; i++) {
                         const sentence = sentences[i].trim();
                         if (sentence.toLowerCase().includes(currentWord.toLowerCase())) {
-                            console.log(`Found term "${currentWord}" in sentence ${i + 1}: "${sentence}"`);
                             // Pick the shortest sentence that contains the term
                             if (sentence.length < shortestLength) {
                                 bestSentence = sentence;
@@ -546,7 +443,6 @@ class UIController {
 
                     if (bestSentence) {
                         selectedSentence = bestSentence;
-                        console.log(`Using shortest sentence containing term: "${selectedSentence}"`);
                     }
                 }
 
@@ -558,16 +454,13 @@ class UIController {
                     } else {
                         cleaned = selectedSentence;
                     }
-                    console.log('Using selected sentence:', cleaned);
                 } else {
                     // Fallback: use first two sentences if selected is too short
                     cleaned = (sentences[0] + '. ' + sentences[1]).trim() + '.';
-                    console.log('Using first two sentences as fallback:', cleaned);
                 }
             } else {
                 // No clear sentence breaks, truncate at word boundary
                 cleaned = cleaned.substring(0, 80).replace(/\s+\w+$/, '') + '...';
-                console.log('Truncated at word boundary:', cleaned);
             }
         }
 
@@ -599,7 +492,6 @@ class UIController {
         const repeatSelect = document.getElementById('repeatSelect');
         if (repeatSelect) {
             window.audioControls.setRepeatMode(repeatSelect.value);
-            console.log(`Repeat mode synced from HTML: ${repeatSelect.value}`);
         }
     }
 
@@ -694,26 +586,7 @@ class UIController {
         const current = this.getPronunciationPreference();
         const newPreference = current === 'british' ? 'american' : 'british';
         this.setPronunciationPreference(newPreference);
-        console.log(`Switched to ${newPreference} pronunciation`);
         return newPreference;
-    }
-
-    /**
-     * Update dropdowns based on learning mode selection
-     */
-    updateDropdownsForLearningMode(learningMode) {
-        console.log(`Updating dropdowns for learning mode: ${learningMode}`);
-        // Use unified approach - repopulate all dropdowns
-        this.populateAllDropdownsFromSettingsManager();
-    }
-
-    /**
-     * Update dropdowns based on category selection
-     */
-    updateDropdownsForCategory(category) {
-        console.log(`Updating dropdowns for category: ${category}`);
-        // Use unified approach - repopulate all dropdowns
-        this.populateAllDropdownsFromSettingsManager();
     }
 
     /**
@@ -744,19 +617,12 @@ class UIController {
                 // Voice changes are handled by voice selector
                 break;
             default:
-                console.log('UIController: Unknown setting changed:', key, value);
         }
     }
 }
 
 // Global UI controller instance
-// Create and expose global instance
 const uiController = new UIController();
 
-// Register with new namespace (if available)
-if (window.CCLApp) {
-    window.CCLApp.registerModule('uiController', uiController);
-}
-
-// Legacy compatibility - maintain existing global reference
+// Expose as global reference for PTE app
 window.uiController = uiController;

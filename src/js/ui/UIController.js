@@ -706,6 +706,9 @@ class UIController {
                 window.currentDataset = dataset;
                 window.currentDatasetIndex = 0;
                 
+                // IMPORTANT: Update currentItem so PLAY button works
+                window.currentItem = dataset.items[0];
+                
                 // Display first item using unified method
                 this.displayContent(dataset.items[0], mode);
                 

@@ -112,6 +112,20 @@ class SettingsPanel {
         this.applySettingToElement('repeatSelect', savedSettings.repeat);
         this.applySettingToElement('voiceSelect', savedSettings.voice || 'auto');
         this.applySettingToElement('learningModeSelect', savedSettings.learningMode);
+        
+        // IMPORTANT: Restore saved practice mode (vocabulary/rs/asq/wfd)
+        const savedPracticeMode = savedSettings.practiceMode || 'vocabulary';
+        this.applySettingToElement('practiceModeSelect', savedPracticeMode);
+        
+        // Initialize window.currentPracticeMode
+        window.currentPracticeMode = savedPracticeMode;
+        console.log(`[SettingsPanel] Initialized practice mode: ${savedPracticeMode}`);
+        
+        // If practice mode is not vocabulary, load the dataset
+        if (savedPracticeMode !== 'vocabulary' && window.uiController) {
+            console.log(`[SettingsPanel] Restoring practice mode: ${savedPracticeMode}`);
+            window.uiController.handlePracticeModeChange(savedPracticeMode);
+        }
 
         // Apply settings to modules using setter methods
         if (savedSettings.category && window.pteVocabularyManager && window.pteVocabularyManager.setCategory) {

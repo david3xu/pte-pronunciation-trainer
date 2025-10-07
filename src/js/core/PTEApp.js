@@ -126,37 +126,11 @@ class PTEVocabularyTrainer {
         window.datasetManager = datasetManager;
         
         console.log('✅ DatasetManager initialized');
-        
-        // Initialize PracticeModes after DatasetManager is ready
-        this.initializePracticeModes();
       } catch (error) {
         console.warn('⚠️ DatasetManager initialization failed:', error);
       }
     } else {
       console.log('ℹ️ DatasetManager not available (Phase 2 not loaded)');
-    }
-  }
-
-  initializePracticeModes() {
-    // Initialize PracticeModes for Phase 2 practice mode UI
-    if (window.PracticeModes) {
-      try {
-        const practiceModes = new PracticeModes();
-        
-        // Set up event listeners
-        if (practiceModes.setupEventListeners) {
-          practiceModes.setupEventListeners();
-        }
-        
-        // Make globally available
-        window.practiceModes = practiceModes;
-        
-        console.log('✅ PracticeModes initialized');
-      } catch (error) {
-        console.warn('⚠️ PracticeModes initialization failed:', error);
-      }
-    } else {
-      console.log('ℹ️ PracticeModes not available (Phase 2 not loaded)');
     }
   }
 

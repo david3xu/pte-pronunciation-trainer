@@ -13,23 +13,39 @@ class AudioControls {
     async startAutoPlay() {
         if (this.isPlaying) return;
 
-        const totalWords = window.pteVocabularyManager.getTotalWords();
-        if (totalWords === 0) {
-            window.progressTracker.showError('No words available to play');
-            return;
+        // Check if we're in a practice mode or vocabulary mode
+        const mode = window.currentPracticeMode || 'vocabulary';
+        
+        if (mode === 'vocabulary') {
+            // Vocabulary mode - use existing logic
+            const totalWords = window.pteVocabularyManager.getTotalWords();
+            if (totalWords === 0) {
+                window.progressTracker.showError('No words available to play');
+                return;
+            }
+
+            this.isPlaying = true;
+            this.showPlayingUI();
+
+            // Emit auto-play start event
+            window.eventBus.emit('audioControls:autoPlayStarted', {
+                startIndex: this.currentIndex,
+                totalWords
+            });
+
+            await this.playCurrentWord();
+        } else {
+            // Practice mode (RS/ASQ/WFD) - play current item
+            if (!window.currentItem) {
+                window.progressTracker.showError('No item to play');
+                return;
+            }
+
+            this.isPlaying = true;
+            this.showPlayingUI();
+
+            await this.playCurrentItem();
         }
-
-        this.isPlaying = true;
-        this.showPlayingUI();
-
-
-        // Emit auto-play start event
-        window.eventBus.emit('audioControls:autoPlayStarted', {
-            startIndex: this.currentIndex,
-            totalWords
-        });
-
-        await this.playCurrentWord();
     }
 
     pauseAutoPlay() {
@@ -335,6 +351,89 @@ class AudioControls {
             mode: this.repeatMode,
             targetRepeats
         });
+    }
+
+    /**
+     * SIMPLIFIED: Play current item in practice mode (RS/ASQ/WFD)
+     */
+    async playCurrentItem() {
+        if (!this.isPlaying || !window.currentItem) return;
+
+        try {
+            const mode = window.currentPracticeMode;
+            const item = window.currentItem;
+
+            // Get text to speak based on mode
+            let textToSpeak = '';
+            if (mode === 'rs' && item.content.sentence) {
+                textToSpeak = item.content.sentence;
+            } else if (mode === 'asq' && item.content.question) {
+                textToSpeak = item.content.question;
+            } else if (mode === 'wfd' && item.content.sentence) {
+                textToSpeak = item.content.sentence;
+            }
+
+            if (textToSpeak) {
+                // Use simplified pronounceText() method
+                await window.ttsEngine.pronounceText(textToSpeak);
+            }
+
+            // Auto-advance to next item after delay (if in auto-play mode)
+            if (this.isPlaying) {
+                this.autoPlayTimeout = setTimeout(async () => {
+                    if (this.isPlaying) {
+                        this.nextItem();
+                        await this.playCurrentItem();
+                    }
+                }, this.delay);
+            }
+
+        } catch (error) {
+            console.error('Error playing item:', error);
+            window.progressTracker.showError('Error playing item');
+        }
+    }
+
+    /**
+     * Navigate to next item in practice mode
+     */
+    nextItem() {
+        if (!window.currentDataset) return;
+
+        window.currentDatasetIndex = window.currentDatasetIndex || 0;
+        window.currentDatasetIndex++;
+
+        if (window.currentDatasetIndex >= window.currentDataset.items.length) {
+            // Reached end - loop or stop
+            if (this.repeatMode === 'loop') {
+                window.currentDatasetIndex = 0;
+            } else {
+                this.handlePlaybackEnd();
+                return;
+            }
+        }
+
+        // Display next item
+        const nextItem = window.currentDataset.items[window.currentDatasetIndex];
+        window.uiController.displayContent(nextItem, window.currentPracticeMode);
+    }
+
+    /**
+     * Navigate to previous item in practice mode
+     */
+    prevItem() {
+        if (!window.currentDataset) return;
+
+        window.currentDatasetIndex = window.currentDatasetIndex || 0;
+        window.currentDatasetIndex--;
+
+        if (window.currentDatasetIndex < 0) {
+            window.currentDatasetIndex = window.currentDataset.items.length - 1;
+        }
+
+        // Display previous item
+        const prevItem = window.currentDataset.items[window.currentDatasetIndex];
+        window.uiController.displayContent(prevItem, window.currentPracticeMode);
     }
 
     getCurrentIndex() {

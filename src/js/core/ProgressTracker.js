@@ -93,7 +93,6 @@ class ProgressTracker {
             progressElement.textContent = status;
         }
 
-        console.log('Status:', status);
 
         // Emit status event for other modules
         window.eventBus.emit('status:updated', { status });
@@ -165,13 +164,7 @@ class ProgressTracker {
 }
 
 // Global progress tracker instance
-// Create and expose global instance
 const progressTracker = new ProgressTracker();
 
-// Register with new namespace (if available)
-if (window.CCLApp) {
-    window.CCLApp.registerModule('progressTracker', progressTracker);
-}
-
-// Legacy compatibility - maintain existing global reference
+// Expose as global reference for PTE app
 window.progressTracker = progressTracker;

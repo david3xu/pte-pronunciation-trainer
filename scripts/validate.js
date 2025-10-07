@@ -46,26 +46,29 @@ class DataValidator {
             // Check if required files exist
             for (const filePath of this.config.requiredFiles) {
                 if (!fs.existsSync(filePath)) {
-                    throw new Error(this.config.errorMessages.datasetNotFound);
+                    throw new Error(`${this.config.errorMessages.datasetNotFound}\nMissing file: ${filePath}`);
                 }
             }
 
-            // Use first required file as primary dataset
-            const vocabPath = this.config.requiredFiles[0];
+            // Validate ALL vocabulary files
+            for (const vocabPath of this.config.requiredFiles) {
+                console.log(`\n📖 Validating: ${path.basename(vocabPath)}`);
+                console.log('─'.repeat(50));
 
-            // Load vocabulary data from JSON file
-            const fullPath = path.resolve(vocabPath);
-            const fileContent = fs.readFileSync(fullPath, 'utf-8');
-            const vocabularyData = JSON.parse(fileContent);
+                // Load vocabulary data from JSON file
+                const fullPath = path.resolve(vocabPath);
+                const fileContent = fs.readFileSync(fullPath, 'utf-8');
+                const vocabularyData = JSON.parse(fileContent);
 
-            // Validate structure
-            await this.validateStructure(vocabularyData);
+                // Validate structure
+                await this.validateStructure(vocabularyData, vocabPath);
 
-            // Validate all terms by category
-            await this.validateCategory(vocabularyData);
+                // Validate all terms by category
+                await this.validateCategory(vocabularyData, vocabPath);
 
-            // Check for global duplicates (using the same data)
-            await this.checkGlobalDuplicates(vocabularyData);
+                // Check for global duplicates
+                await this.checkGlobalDuplicates(vocabularyData, vocabPath);
+            }
 
             // Generate report
             this.generateReport();
@@ -76,8 +79,9 @@ class DataValidator {
         }
     }
 
-    async validateStructure(data) {
-        console.log('🏗️  Validating data structure...');
+    async validateStructure(data, filename) {
+        const bookName = path.basename(filename, '.json');
+        console.log(`🏗️  Validating data structure for ${bookName}...`);
 
         if (!data || typeof data !== 'object') {
             throw new ValidationError('Vocabulary data must be an object');
@@ -105,7 +109,8 @@ class DataValidator {
         console.log(`   ✓ Total vocabulary items: ${data.vocabulary.length}`);
     }
 
-    async validateCategory(data) {
+    async validateCategory(data, filename) {
+        const bookName = path.basename(filename, '.json');
         // Group items by category
         const categorizedTerms = {};
         const allTerms = data.vocabulary || [];
@@ -225,8 +230,9 @@ class DataValidator {
 
     // Chinese translation validation removed - not needed for professional vocabulary
 
-    async checkGlobalDuplicates(data) {
-        console.log('🔍 Checking for global duplicates...');
+    async checkGlobalDuplicates(data, filename) {
+        const bookName = path.basename(filename, '.json');
+        console.log(`🔍 Checking for duplicates in ${bookName}...`);
 
         const globalTerms = new Map();
         let globalDuplicates = 0;

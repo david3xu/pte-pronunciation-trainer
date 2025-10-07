@@ -12,7 +12,6 @@ class PTETermsExtractor {
    * @returns {Array} - Array of PTE terms with pronunciation data
    */
   static async extract(filePath, fs = null) {
-    console.log('    🎧 Processing PTE terms with IPA pronunciation guides...');
 
     // Handle both Node.js and browser environments
     let content;
@@ -53,7 +52,6 @@ class PTETermsExtractor {
       }
     }
 
-    console.log(`    ✅ Extracted ${terms.length} PTE terms with IPA pronunciation guides`);
     return terms;
   }
 

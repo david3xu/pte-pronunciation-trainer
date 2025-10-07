@@ -247,7 +247,8 @@ class AppConfig {
             validation: {
                 requiredFiles: [
                     'data/processed/pte-fib-listening-dataset.json',
-                    'data/processed/pte-beginner-vocabulary.json'
+                    'data/processed/pte-beginner-vocabulary.json',
+                    'data/processed/pte-intermediate-vocabulary.json'
                 ],
                 errorMessages: {
                     datasetNotFound: 'PTE vocabulary data file not found. Run "npm run data:pte" first.',
@@ -332,15 +333,10 @@ class AppConfig {
 
 // Only initialize if window is defined (for Node.js compatibility)
 if (typeof window !== 'undefined') {
-    // Initialize and register
+    // Initialize config
     const appConfig = new AppConfig();
 
-    // Register with CCL App namespace if available
-    if (window.CCLApp) {
-        window.CCLApp.registerModule('config', appConfig);
-    }
-
-    // Legacy compatibility
+    // Expose as global reference for PTE app
     window.appConfig = appConfig;
 }
 

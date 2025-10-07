@@ -23,7 +23,6 @@ class PTEVocabularyManager {
   async initialize() {
     if (this.isInitialized) return;
 
-    console.log('🎧 Initializing PTE Vocabulary Manager...');
 
     try {
       await this.loadPTEData();
@@ -34,14 +33,12 @@ class PTEVocabularyManager {
       if (byMode['pte-intermediate']) {
         try {
           await this.loadIntermediateDataset();
-          console.log('✅ Intermediate dataset preloaded successfully');
         } catch (err) {
           console.warn('⚠️ Could not preload intermediate dataset:', err);
         }
       }
 
       this.isInitialized = true;
-      console.log('✅ PTE Vocabulary Manager initialized successfully');
     } catch (error) {
       console.error('❌ Error initializing PTE Vocabulary Manager:', error);
     }
@@ -49,7 +46,6 @@ class PTEVocabularyManager {
 
   // Load PTE data from JSON files
   async loadPTEData() {
-    console.log('📚 Loading PTE data...');
 
     try {
       // Load configuration from centralized config
@@ -61,13 +57,11 @@ class PTEVocabularyManager {
       const cacheBuster = `?v=${Date.now()}`;
       const pteFibResponse = await fetch((byMode['pte-fib-listening'] || datasetPath) + cacheBuster);
       this.pteFibListeningDataset = await pteFibResponse.json();
-      console.log(`✅ Loaded ${this.pteFibListeningDataset.vocabulary.length} PTE FIB listening terms`);
 
       // Load PTE Beginner dataset if configured
       if (byMode['pte-beginner']) {
         const beginnerResponse = await fetch(byMode['pte-beginner'] + cacheBuster);
         this.pteBeginnerDataset = await beginnerResponse.json();
-        console.log(`✅ Loaded ${this.pteBeginnerDataset.vocabulary.length} PTE Beginner terms`);
       }
 
       // Set initial learning mode and load words
@@ -84,21 +78,17 @@ class PTEVocabularyManager {
    */
   async loadIntermediateDataset() {
     try {
-      console.log('📚 Loading PTE Intermediate data...');
       const config = window.appConfig || new AppConfig();
       const byMode = config.get('data.paths.byMode') || {};
 
       if (byMode['pte-intermediate']) {
         const cacheBuster = `?v=${Date.now()}`;
         const url = byMode['pte-intermediate'] + cacheBuster;
-        console.log('🌐 Fetching intermediate dataset from:', url);
         const intermediateResponse = await fetch(url);
-        console.log('📡 Response status:', intermediateResponse.status, intermediateResponse.statusText);
         if (!intermediateResponse.ok) {
           throw new Error(`Failed to fetch intermediate dataset: ${intermediateResponse.status} ${intermediateResponse.statusText}`);
         }
         this.pteIntermediateDataset = await intermediateResponse.json();
-        console.log(`✅ Loaded ${this.pteIntermediateDataset.vocabulary.length} PTE Intermediate terms`);
       } else {
         console.error('❌ PTE Intermediate dataset path not configured');
         this.pteIntermediateDataset = { vocabulary: [] };
@@ -113,7 +103,6 @@ class PTEVocabularyManager {
    * Set the current learning mode
    */
   async setLearningMode(mode) {
-    console.log(`🎯 Setting learning mode to: ${mode}`);
     this.currentLearningMode = mode;
     await this.loadWordsForMode(mode);
   }
@@ -131,17 +120,13 @@ class PTEVocabularyManager {
         this.allWords = (this.pteBeginnerDataset && this.pteBeginnerDataset.vocabulary) || [];
         break;
       case 'pte-intermediate':
-        console.log('🔍 Loading intermediate mode - dataset exists:', !!this.pteIntermediateDataset);
         if (!this.pteIntermediateDataset) {
-          console.log('📥 Loading intermediate dataset...');
           // Load the intermediate dataset if it hasn't been loaded yet
           await this.loadIntermediateDataset();
           // After loading, the dataset should be available
           this.allWords = (this.pteIntermediateDataset && this.pteIntermediateDataset.vocabulary) || [];
-          console.log('📊 Intermediate dataset loaded, words count:', this.allWords.length);
         } else {
           this.allWords = (this.pteIntermediateDataset && this.pteIntermediateDataset.vocabulary) || [];
-          console.log('📊 Using existing intermediate dataset, words count:', this.allWords.length);
         }
         break;
       default:
@@ -151,7 +136,6 @@ class PTEVocabularyManager {
 
     // Apply current filters
     this.applyFilters();
-    console.log(`📝 Loaded ${this.allWords.length} words for mode: ${mode}`);
   }
 
   /**
@@ -175,7 +159,6 @@ class PTEVocabularyManager {
     }
 
     this.currentWords = filteredWords;
-    console.log(`🔍 Applied filters: ${filteredWords.length} words remaining`);
   }
 
   /**
@@ -333,12 +316,7 @@ class PTEVocabularyManager {
 // Create global instance
 const pteVocabularyManager = new PTEVocabularyManager();
 
-// Register with new namespace (if available)
-if (window.CCLApp) {
-  window.CCLApp.registerModule('pteVocabularyManager', pteVocabularyManager);
-}
-
-// Legacy compatibility - maintain existing global reference
+// Expose as global reference for PTE app
 window.pteVocabularyManager = pteVocabularyManager;
 
 // Export for module systems

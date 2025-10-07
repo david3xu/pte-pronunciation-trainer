@@ -43,10 +43,5 @@ class EventBus {
 // Global event bus instance
 const eventBus = new EventBus();
 
-// Register with new namespace (if available)
-if (window.CCLApp) {
-    window.CCLApp.registerModule('eventBus', eventBus);
-}
-
-// Legacy compatibility - maintain existing global reference
+// Expose as global reference for PTE app
 window.eventBus = eventBus;

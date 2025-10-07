@@ -27,7 +27,6 @@ class PTEVocabularyTrainer {
     // Initialize all modules in correct order
     this.initializeModules();
 
-    console.log('PTE Vocabulary Trainer initialized');
 
     // Emit app initialization event
     if (window.eventBus) {
@@ -39,8 +38,6 @@ class PTEVocabularyTrainer {
   }
 
   async initializeModules() {
-    console.log('🚀 Starting module initialization... (PTEApp is the primary initializer)');
-    console.log('ℹ️ Note: This initialization takes precedence over CCLApp.initializeAll()');
 
     // 0. Register service worker for PWA and background operation
     this.registerServiceWorker();
@@ -86,7 +83,6 @@ class PTEVocabularyTrainer {
     // 9. Restore UI settings from state
     this.restoreUIState().catch(console.error);
 
-    console.log('✅ All modules initialized successfully');
 
     // Hide mobile loading indicator
     this.hideMobileLoadingIndicator();
@@ -96,13 +92,10 @@ class PTEVocabularyTrainer {
     // StateManager is already initialized as a global instance
     // Just ensure other modules can access it
     if (window.stateManager) {
-      console.log('📂 StateManager initialized and ready');
 
       // Check if we're restoring a previous session
       if (window.stateManager.hasPreviousSession()) {
-        console.log('🔄 Previous session detected - will restore state');
       } else {
-        console.log('🆕 Starting fresh session');
       }
     } else {
       console.warn('⚠️ StateManager not found - some features may not work');
@@ -113,8 +106,6 @@ class PTEVocabularyTrainer {
     // SettingsManager is already initialized as a global instance
     // Just ensure other modules can access it
     if (window.settingsManager) {
-      console.log('⚙️ SettingsManager initialized and ready');
-      console.log('📊 Current settings:', window.settingsManager.getAllSettings());
     } else {
       console.warn('⚠️ SettingsManager not found - using legacy settings handling');
     }
@@ -124,7 +115,6 @@ class PTEVocabularyTrainer {
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js')
         .then(registration => {
-          console.log('✅ Service Worker registered successfully:', registration.scope);
         })
         .catch(error => {
           console.warn('⚠️ Service Worker registration failed:', error);
@@ -136,7 +126,6 @@ class PTEVocabularyTrainer {
     if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
       navigator.serviceWorker.addEventListener('message', event => {
         if (event.data && event.data.type === 'AUDIO_READY') {
-          console.log('🎵 Background audio ready from service worker');
         }
       });
     }
@@ -152,7 +141,6 @@ class PTEVocabularyTrainer {
 
     // Voice selector is ready (no initialization needed)
     if (window.voiceSelector) {
-      console.log('🎤 Voice selector ready');
     }
   }
 
@@ -203,12 +191,10 @@ class PTEVocabularyTrainer {
       }
     });
 
-    console.log('⌨️ Keyboard shortcuts enabled');
   }
 
   setupFullscreen() {
     // Fullscreen functionality is handled by the event listener above
-    console.log('🖥️ Fullscreen functionality ready');
   }
 
   toggleFullscreen() {
@@ -224,12 +210,12 @@ class PTEVocabularyTrainer {
   }
 
   async restoreUIState() {
-    if (!window.stateManager) return;
+    // Restore user preferences from SettingsManager (single source of truth)
+    if (!window.settingsManager) return;
 
-    const preferences = window.stateManager.getUserPreferences();
+    const preferences = window.settingsManager.getAllSettings();
     if (!preferences) return;
 
-    console.log('🔄 Restoring UI state from previous session...');
 
     // Restore learning mode
     if (preferences.learningMode && window.pteVocabularyManager) {
@@ -261,7 +247,6 @@ class PTEVocabularyTrainer {
       await window.pteVocabularyManager.setLearningMode('pte-fib-listening');
     }
 
-    console.log('🎯 UI state restored from previous session');
   }
 
   isMobileDevice() {
@@ -309,24 +294,10 @@ let pteApp;
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
     pteApp = new PTEVocabularyTrainer();
-
-    // Register with new namespace (if available)
-    if (window.CCLApp) {
-      window.CCLApp.registerModule('pteApp', pteApp);
-    }
-
-    // Legacy compatibility - maintain existing global reference
     window.pteApp = pteApp;
   });
 } else {
   pteApp = new PTEVocabularyTrainer();
-
-  // Register with new namespace (if available)
-  if (window.CCLApp) {
-    window.CCLApp.registerModule('pteApp', pteApp);
-  }
-
-  // Legacy compatibility - maintain existing global reference
   window.pteApp = pteApp;
 }
 

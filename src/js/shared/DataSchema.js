@@ -274,9 +274,8 @@ class DataSchema {
     }
 }
 
-// Initialize and register
+// Initialize and expose globally
 const dataSchema = new DataSchema();
-window.CCLApp.registerModule('dataSchema', dataSchema);
 
-// Legacy compatibility
+// Expose as global reference for PTE app
 window.dataSchema = dataSchema;

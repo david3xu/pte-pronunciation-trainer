@@ -2,7 +2,7 @@
 // Service Worker for PTE Pronunciation Trainer
 // Handles offline caching and background sync
 
-const CACHE_VERSION = 'v32'; // Simplified implementation - removed PracticeModes.js
+const CACHE_VERSION = 'v33'; // Added debug logging for mode switching
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

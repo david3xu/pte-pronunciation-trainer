@@ -135,6 +135,11 @@ class AppConfig {
                     { id: 'pte-beginner', label: '📗 PTE Beginner Vocabulary', dataset: 'pte-beginner-vocabulary-with-ipa' },
                     { id: 'pte-intermediate', label: '📘 PTE Intermediate Vocabulary', dataset: 'pte-intermediate-vocabulary-with-ipa' }
                 ],
+                practiceDatasets: [
+                    { id: 'pte-repeat-sentence', label: '🎤 Repeat Sentence', itemCount: 620, type: 'rs' },
+                    { id: 'pte-answer-short-question', label: '❓ Answer Short Question', itemCount: 692, type: 'asq' },
+                    { id: 'pte-write-from-dictation', label: '✍️ Write From Dictation', itemCount: 1195, type: 'wfd' }
+                ],
                 difficulties: ['all', 'normal', 'hard', 'easy'] // All PTE terms with mixed difficulties
             },
 

@@ -1,5 +1,5 @@
 PTE Intermediate Vocabulary
-Mastered 0/2417
+Mastered 2417/2417
 This collection includes all vocabulary words that appear 3-4 times in the PTE test bank. These are common and slightly more difficult words found in academic exams, comparable to university-level English vocabulary. Note: All words in this PTE vocabulary book are taken from the PTE test bank. We've used frequency counting to select vocabulary suitable for students at different learning stages.
 Co-words
 默认排序
@@ -1604,90 +1604,90 @@ Co-words
 1598. adj. healthy | /ˈhelθi/ — sounds like **HEL-thee** | /ˈhɛlθi/ — sounds like **HEL-thee**
 1599. v. attack | /əˈtæk/ — sounds like **uh-TAK** | /əˈtæk/ — sounds like **uh-TAK**
 1600. v. anticipate | /ænˈtɪsɪpeɪt/ — sounds like **an-TIS-i-payt** | /ænˈtɪsəˌpeɪt/ — sounds like **an-TIS-uh-payt**
-1601. democratic | /ˌdeməˈkrætɪk/ — sounds like **DEM-uh-KRAT-ik** | /ˌdɛməˈkrætɪk/ — sounds like **DEM-uh-KRAT-ik**
-1602. Florida | /ˈflɒrɪdə/ — sounds like **FLOR-i-duh** | /ˈflɔrɪdə/ — sounds like **FLOR-i-də**
-1603. blame | /bleɪm/ — sounds like **BLAYM** | /bleɪm/ — sounds like **BLAYM**
-1604. tea | /tiː/ — sounds like **TEE** | /ti/ — sounds like **TEE**
-1605. double | /ˈdʌbəl/ — sounds like **DUB-ul** | /ˈdʌbəl/ — sounds like **DUB-əl**
-1606. fairly | /ˈfeəli/ — sounds like **FAIR-lee** | /ˈfɛrli/ — sounds like **FAIR-lee**
-1607. undergraduate | /ˌʌndəˈɡrædjuət/ — sounds like **UN-duh-GRAD-yoo-uht** | /ˌʌndərˈɡrædʒuət/ — sounds like **UN-der-GRAD-joo-uht**
-1608. lower | /ˈləʊə/ — sounds like **LOH-uh** | /ˈloʊər/ — sounds like **LOH-er**
-1609. actor | /ˈæktə/ — sounds like **AK-tuh** | /ˈæktər/ — sounds like **AK-ter**
-1610. iron | /ˈaɪən/ — sounds like **EYE-uhn** | /ˈaɪərn/ — sounds like **EYE-ern**
-1611. telephone | /ˈtelɪfəʊn/ — sounds like **TEL-i-fohn** | /ˈtɛləˌfoʊn/ — sounds like **TEL-uh-fohn**
-1612. possess | /pəˈzes/ — sounds like **puh-ZES** | /pəˈzɛs/ — sounds like **puh-ZES**
-1613. stone | /stəʊn/ — sounds like **STOHN** | /stoʊn/ — sounds like **STOHN**
-1614. stop | /stɒp/ — sounds like **STOP** | /stɑp/ — sounds like **STAHP**
-1615. footprint | /ˈfʊtprɪnt/ — sounds like **FOOT-print** | /ˈfʊtˌprɪnt/ — sounds like **FOOT-print**
-1616. shift | /ʃɪft/ — sounds like **SHIFT** | /ʃɪft/ — sounds like **SHIFT**
-1617. fight | /faɪt/ — sounds like **FYT** | /faɪt/ — sounds like **FYT**
-1618. throughout | /θruːˈaʊt/ — sounds like **THROO-OWT** | /θruˈaʊt/ — sounds like **THROO-OWT**
-1619. movie | /ˈmuːvi/ — sounds like **MOO-vee** | /ˈmuvi/ — sounds like **MOO-vee**
-1620. catch | /kætʃ/ — sounds like **KATCH** | /kætʃ/ — sounds like **KATCH**
-1621. fourth | /fɔːθ/ — sounds like **FAWTH** | /fɔrθ/ — sounds like **FORTH**
-1622. existence | /ɪɡˈzɪstəns/ — sounds like **ig-ZIS-tuns** | /ɪɡˈzɪstəns/ — sounds like **ig-ZIS-təns**
-1623. stream | /striːm/ — sounds like **STREEM** | /strim/ — sounds like **STREEM**
-1624. identical | /aɪˈdentɪkəl/ — sounds like **eye-DEN-ti-kul** | /aɪˈdɛntɪkəl/ — sounds like **eye-DEN-ti-kəl**
-1625. innovation | /ˌɪnəˈveɪʃən/ — sounds like **IN-uh-VAY-shun** | /ˌɪnəˈveɪʃən/ — sounds like **IN-uh-VAY-shən**
-1626. accuracy | /ˈækjʊrəsi/ — sounds like **AK-yu-ruh-see** | /ˈækjərəsi/ — sounds like **AK-yər-ə-see**
-1627. blue | /bluː/ — sounds like **BLOO** | /blu/ — sounds like **BLOO**
-1628. bird | /bɜːd/ — sounds like **BERD** | /bɝːd/ — sounds like **BERD**
-1629. statistical | /stəˈtɪstɪkəl/ — sounds like **stuh-TIS-ti-kul** | /stəˈtɪstɪkəl/ — sounds like **stuh-TIS-ti-kəl**
-1630. personality | /ˌpɜːsəˈnæləti/ — sounds like **PER-suh-NAL-uh-tee** | /ˌpɝːsəˈnæləti/ — sounds like **PER-suh-NAL-ə-tee**
-1631. funding | /ˈfʌndɪŋ/ — sounds like **FUN-ding** | /ˈfʌndɪŋ/ — sounds like **FUN-ding**
-1632. ease | /iːz/ — sounds like **EEZ** | /iz/ — sounds like **EEZ**
-1633. transform | /trænsˈfɔːm/ — sounds like **trans-FAWM** | /trænsˈfɔrm/ — sounds like **trans-FORM**
-1634. summary | /ˈsʌməri/ — sounds like **SUM-uh-ree** | /ˈsʌməri/ — sounds like **SUM-ər-ee**
-1635. agency | /ˈeɪdʒənsi/ — sounds like **AY-jun-see** | /ˈeɪdʒənsi/ — sounds like **AY-jən-see**
-1636. female | /ˈfiːmeɪl/ — sounds like **FEE-mayl** | /ˈfimeɪl/ — sounds like **FEE-mayl**
-1637. appropriate | /əˈprəʊpriət/ — sounds like **uh-PROH-pree-uht** | /əˈproʊpriət/ — sounds like **uh-PROH-pree-uht**
-1638. possibility | /ˌpɒsəˈbɪləti/ — sounds like **POS-uh-BIL-uh-tee** | /ˌpɑsəˈbɪləti/ — sounds like **PAH-suh-BIL-ə-tee**
-1639. clock | /klɒk/ — sounds like **KLOK** | /klɑk/ — sounds like **KLAHK**
-1640. portray | /pɔːˈtreɪ/ — sounds like **paw-TRAY** | /pɔrˈtreɪ/ — sounds like **por-TRAY**
-1641. naturally | /ˈnætʃərəli/ — sounds like **NACH-uh-ruh-lee** | /ˈnætʃərəli/ — sounds like **NACH-ər-ə-lee**
-1642. likelihood | /ˈlaɪklihʊd/ — sounds like **LYKE-lee-hood** | /ˈlaɪkliˌhʊd/ — sounds like **LYKE-lee-hood**
-1643. deny | /dɪˈnaɪ/ — sounds like **di-NY** | /dɪˈnaɪ/ — sounds like **di-NY**
-1644. Indian | /ˈɪndiən/ — sounds like **IN-dee-uhn** | /ˈɪndiən/ — sounds like **IN-dee-ən**
-1645. Branch | /brɑːntʃ/ — sounds like **BRAANCH** | /bræntʃ/ — sounds like **BRANCH**
-1646. emerald | /ˈemərəld/ — sounds like **EM-uh-ruld** | /ˈɛmərəld/ — sounds like **EM-ər-əld**
-1647. assistant | /əˈsɪstənt/ — sounds like **uh-SIS-tunt** | /əˈsɪstənt/ — sounds like **uh-SIS-tənt**
-1648. Greenland | /ˈɡriːnlənd/ — sounds like **GREEN-lund** | /ˈgrinlənd/ — sounds like **GREEN-lənd**
-1649. highlight | /ˈhaɪlaɪt/ — sounds like **HY-lyt** | /ˈhaɪˌlaɪt/ — sounds like **HY-lyt**
-1650. practical | /ˈpræktɪkəl/ — sounds like **PRAK-ti-kul** | /ˈpræktɪkəl/ — sounds like **PRAK-ti-kəl**
-1651. adjustment | /əˈdʒʌstmənt/ — sounds like **uh-JUST-ment** | /əˈdʒʌstmənt/ — sounds like **uh-JUST-mənt**
-1652. concentrate | /ˈkɒnsəntreɪt/ — sounds like **KON-sun-trayt** | /ˈkɑnsənˌtreɪt/ — sounds like **KAHN-sən-trayt**
-1653. magazine | /ˌmæɡəˈziːn/ — sounds like **MAG-uh-ZEEN** | /ˌmæɡəˈzin/ — sounds like **MAG-uh-ZEEN**
-1654. marriage | /ˈmærɪdʒ/ — sounds like **MAR-ij** | /ˈmærɪdʒ/ — sounds like **MAR-ij**
-1655. integrate | /ˈɪntɪɡreɪt/ — sounds like **IN-ti-grayt** | /ˈɪntəˌɡreɪt/ — sounds like **IN-tuh-grayt**
-1656. organisation | /ˌɔːɡənaɪˈzeɪʃən/ — sounds like **AW-guh-ny-ZAY-shun** | /ˌɔrɡənəˈzeɪʃən/ — sounds like **OR-guh-nuh-ZAY-shən**
-1657. arm | /ɑːm/ — sounds like **AAHM** | /ɑrm/ — sounds like **ARM**
-1658. care | /keə/ — sounds like **KAIR** | /kɛr/ — sounds like **KAIR**
-1659. overlook | /ˌəʊvəˈlʊk/ — sounds like **OH-vuh-LOOK** | /ˌoʊvərˈlʊk/ — sounds like **OH-ver-LOOK**
-1660. survival | /səˈvaɪvəl/ — sounds like **suh-VY-vul** | /sərˈvaɪvəl/ — sounds like **ser-VY-vəl**
-1661. Italy | /ˈɪtəli/ — sounds like **IT-uh-lee** | /ˈɪtəli/ — sounds like **IT-ə-lee**
-1662. fell | /fel/ — sounds like **FEL** | /fɛl/ — sounds like **FEL**
-1663. crack | /kræk/ — sounds like **KRAK** | /kræk/ — sounds like **KRAK**
-1664. outline | /ˈaʊtlaɪn/ — sounds like **OUT-lyne** | /ˈaʊtˌlaɪn/ — sounds like **OUT-lyne**
-1665. section | /ˈsekʃən/ — sounds like **SEK-shun** | /ˈsɛkʃən/ — sounds like **SEK-shən**
-1666. tiny | /ˈtaɪni/ — sounds like **TY-nee** | /ˈtaɪni/ — sounds like **TY-nee**
-1667. Stanford | /ˈstænfəd/ — sounds like **STAN-fud** | /ˈstænfərd/ — sounds like **STAN-ferd**
-1668. construct | /kənˈstrʌkt/ — sounds like **kun-STRUKT** | /kənˈstrʌkt/ — sounds like **kun-STRUKT**
-1669. crowd | /kraʊd/ — sounds like **KROWD** | /kraʊd/ — sounds like **KROWD**
-1670. break | /breɪk/ — sounds like **BRAYK** | /breɪk/ — sounds like **BRAYK**
-1671. award | /əˈwɔːd/ — sounds like **uh-WAWD** | /əˈwɔrd/ — sounds like **uh-WORD**
-1672. layer | /ˈleɪə/ — sounds like **LAY-uh** | /ˈleɪər/ — sounds like **LAY-er**
-1673. stock | /stɒk/ — sounds like **STOK** | /stɑk/ — sounds like **STAHK**
-1674. network | /ˈnetwɜːk/ — sounds like **NET-werk** | /ˈnɛtˌwɝːk/ — sounds like **NET-werk**
-1675. bright | /braɪt/ — sounds like **BRYT** | /braɪt/ — sounds like **BRYT**
-1676. intensive | /ɪnˈtensɪv/ — sounds like **in-TEN-siv** | /ɪnˈtɛnsɪv/ — sounds like **in-TEN-siv**
-1677. primitive | /ˈprɪmɪtɪv/ — sounds like **PRIM-i-tiv** | /ˈprɪmətɪv/ — sounds like **PRIM-ə-tiv**
-1678. Christian | /ˈkrɪstʃən/ — sounds like **KRIS-chun** | /ˈkrɪstʃən/ — sounds like **KRIS-chən**
-1679. crust | /krʌst/ — sounds like **KRUST** | /krʌst/ — sounds like **KRUST**
-1680. graduation | /ˌɡrædʒuˈeɪʃən/ — sounds like **GRAJ-oo-AY-shun** | /ˌɡrædʒuˈeɪʃən/ — sounds like **GRAJ-oo-AY-shən**
-1681. special | /ˈspeʃəl/ — sounds like **SPESH-ul** | /ˈspɛʃəl/ — sounds like **SPESH-əl**
-1682. effectively | /ɪˈfektɪvli/ — sounds like **i-FEK-tiv-lee** | /ɪˈfɛktɪvli/ — sounds like **i-FEK-tiv-lee**
-1683. schedule | /ˈʃedjuːl/ — sounds like **SHED-yool** | /ˈskɛdʒul/ — sounds like **SKEJ-ool**
-1684. superior | /suːˈpɪəriə/ — sounds like **soo-PEER-ee-uh** | /səˈpɪriər/ — sounds like **suh-PEER-ee-er**
+1601. adj. democratic | /ˌdeməˈkrætɪk/ — sounds like **DEM-uh-KRAT-ik** | /ˌdɛməˈkrætɪk/ — sounds like **DEM-uh-KRAT-ik**
+1602. n. Florida | /ˈflɒrɪdə/ — sounds like **FLOR-i-duh** | /ˈflɔrɪdə/ — sounds like **FLOR-i-də**
+1603. v. blame | /bleɪm/ — sounds like **BLAYM** | /bleɪm/ — sounds like **BLAYM**
+1604. n. tea | /tiː/ — sounds like **TEE** | /ti/ — sounds like **TEE**
+1605. adj. double | /ˈdʌbəl/ — sounds like **DUB-ul** | /ˈdʌbəl/ — sounds like **DUB-əl**
+1606. adv. fairly | /ˈfeəli/ — sounds like **FAIR-lee** | /ˈfɛrli/ — sounds like **FAIR-lee**
+1607. n. undergraduate | /ˌʌndəˈɡrædjuət/ — sounds like **UN-duh-GRAD-yoo-uht** | /ˌʌndərˈɡrædʒuət/ — sounds like **UN-der-GRAD-joo-uht**
+1608. v. lower | /ˈləʊə/ — sounds like **LOH-uh** | /ˈloʊər/ — sounds like **LOH-er**
+1609. n. actor | /ˈæktə/ — sounds like **AK-tuh** | /ˈæktər/ — sounds like **AK-ter**
+1610. n. iron | /ˈaɪən/ — sounds like **EYE-uhn** | /ˈaɪərn/ — sounds like **EYE-ern**
+1611. n. telephone | /ˈtelɪfəʊn/ — sounds like **TEL-i-fohn** | /ˈtɛləˌfoʊn/ — sounds like **TEL-uh-fohn**
+1612. v. possess | /pəˈzes/ — sounds like **puh-ZES** | /pəˈzɛs/ — sounds like **puh-ZES**
+1613. n. stone | /stəʊn/ — sounds like **STOHN** | /stoʊn/ — sounds like **STOHN**
+1614. v. stop | /stɒp/ — sounds like **STOP** | /stɑp/ — sounds like **STAHP**
+1615. n. footprint | /ˈfʊtprɪnt/ — sounds like **FOOT-print** | /ˈfʊtˌprɪnt/ — sounds like **FOOT-print**
+1616. n. shift | /ʃɪft/ — sounds like **SHIFT** | /ʃɪft/ — sounds like **SHIFT**
+1617. v. fight | /faɪt/ — sounds like **FYT** | /faɪt/ — sounds like **FYT**
+1618. prep. throughout | /θruːˈaʊt/ — sounds like **THROO-OWT** | /θruˈaʊt/ — sounds like **THROO-OWT**
+1619. n. movie | /ˈmuːvi/ — sounds like **MOO-vee** | /ˈmuvi/ — sounds like **MOO-vee**
+1620. v. catch | /kætʃ/ — sounds like **KATCH** | /kætʃ/ — sounds like **KATCH**
+1621. adj. fourth | /fɔːθ/ — sounds like **FAWTH** | /fɔrθ/ — sounds like **FORTH**
+1622. n. existence | /ɪɡˈzɪstəns/ — sounds like **ig-ZIS-tuns** | /ɪɡˈzɪstəns/ — sounds like **ig-ZIS-təns**
+1623. n. stream | /striːm/ — sounds like **STREEM** | /strim/ — sounds like **STREEM**
+1624. adj. identical | /aɪˈdentɪkəl/ — sounds like **eye-DEN-ti-kul** | /aɪˈdɛntɪkəl/ — sounds like **eye-DEN-ti-kəl**
+1625. n. innovation | /ˌɪnəˈveɪʃən/ — sounds like **IN-uh-VAY-shun** | /ˌɪnəˈveɪʃən/ — sounds like **IN-uh-VAY-shən**
+1626. n. accuracy | /ˈækjʊrəsi/ — sounds like **AK-yu-ruh-see** | /ˈækjərəsi/ — sounds like **AK-yər-ə-see**
+1627. adj. blue | /bluː/ — sounds like **BLOO** | /blu/ — sounds like **BLOO**
+1628. n. bird | /bɜːd/ — sounds like **BERD** | /bɝːd/ — sounds like **BERD**
+1629. adj. statistical | /stəˈtɪstɪkəl/ — sounds like **stuh-TIS-ti-kul** | /stəˈtɪstɪkəl/ — sounds like **stuh-TIS-ti-kəl**
+1630. n. personality | /ˌpɜːsəˈnæləti/ — sounds like **PER-suh-NAL-uh-tee** | /ˌpɝːsəˈnæləti/ — sounds like **PER-suh-NAL-ə-tee**
+1631. n. funding | /ˈfʌndɪŋ/ — sounds like **FUN-ding** | /ˈfʌndɪŋ/ — sounds like **FUN-ding**
+1632. n. ease | /iːz/ — sounds like **EEZ** | /iz/ — sounds like **EEZ**
+1633. v. transform | /trænsˈfɔːm/ — sounds like **trans-FAWM** | /trænsˈfɔrm/ — sounds like **trans-FORM**
+1634. n. summary | /ˈsʌməri/ — sounds like **SUM-uh-ree** | /ˈsʌməri/ — sounds like **SUM-ər-ee**
+1635. n. agency | /ˈeɪdʒənsi/ — sounds like **AY-jun-see** | /ˈeɪdʒənsi/ — sounds like **AY-jən-see**
+1636. n. female | /ˈfiːmeɪl/ — sounds like **FEE-mayl** | /ˈfimeɪl/ — sounds like **FEE-mayl**
+1637. adj. appropriate | /əˈprəʊpriət/ — sounds like **uh-PROH-pree-uht** | /əˈproʊpriət/ — sounds like **uh-PROH-pree-uht**
+1638. n. possibility | /ˌpɒsəˈbɪləti/ — sounds like **POS-uh-BIL-uh-tee** | /ˌpɑsəˈbɪləti/ — sounds like **PAH-suh-BIL-ə-tee**
+1639. n. clock | /klɒk/ — sounds like **KLOK** | /klɑk/ — sounds like **KLAHK**
+1640. v. portray | /pɔːˈtreɪ/ — sounds like **paw-TRAY** | /pɔrˈtreɪ/ — sounds like **por-TRAY**
+1641. adv. naturally | /ˈnætʃərəli/ — sounds like **NACH-uh-ruh-lee** | /ˈnætʃərəli/ — sounds like **NACH-ər-ə-lee**
+1642. n. likelihood | /ˈlaɪklihʊd/ — sounds like **LYKE-lee-hood** | /ˈlaɪkliˌhʊd/ — sounds like **LYKE-lee-hood**
+1643. v. deny | /dɪˈnaɪ/ — sounds like **di-NY** | /dɪˈnaɪ/ — sounds like **di-NY**
+1644. adj. Indian | /ˈɪndiən/ — sounds like **IN-dee-uhn** | /ˈɪndiən/ — sounds like **IN-dee-ən**
+1645. n. Branch | /brɑːntʃ/ — sounds like **BRAANCH** | /bræntʃ/ — sounds like **BRANCH**
+1646. n. emerald | /ˈemərəld/ — sounds like **EM-uh-ruld** | /ˈɛmərəld/ — sounds like **EM-ər-əld**
+1647. n. assistant | /əˈsɪstənt/ — sounds like **uh-SIS-tunt** | /əˈsɪstənt/ — sounds like **uh-SIS-tənt**
+1648. n. Greenland | /ˈɡriːnlənd/ — sounds like **GREEN-lund** | /ˈgrinlənd/ — sounds like **GREEN-lənd**
+1649. v. highlight | /ˈhaɪlaɪt/ — sounds like **HY-lyt** | /ˈhaɪˌlaɪt/ — sounds like **HY-lyt**
+1650. adj. practical | /ˈpræktɪkəl/ — sounds like **PRAK-ti-kul** | /ˈpræktɪkəl/ — sounds like **PRAK-ti-kəl**
+1651. n. adjustment | /əˈdʒʌstmənt/ — sounds like **uh-JUST-ment** | /əˈdʒʌstmənt/ — sounds like **uh-JUST-mənt**
+1652. v. concentrate | /ˈkɒnsəntreɪt/ — sounds like **KON-sun-trayt** | /ˈkɑnsənˌtreɪt/ — sounds like **KAHN-sən-trayt**
+1653. n. magazine | /ˌmæɡəˈziːn/ — sounds like **MAG-uh-ZEEN** | /ˌmæɡəˈzin/ — sounds like **MAG-uh-ZEEN**
+1654. n. marriage | /ˈmærɪdʒ/ — sounds like **MAR-ij** | /ˈmærɪdʒ/ — sounds like **MAR-ij**
+1655. v. integrate | /ˈɪntɪɡreɪt/ — sounds like **IN-ti-grayt** | /ˈɪntəˌɡreɪt/ — sounds like **IN-tuh-grayt**
+1656. n. organisation | /ˌɔːɡənaɪˈzeɪʃən/ — sounds like **AW-guh-ny-ZAY-shun** | /ˌɔrɡənəˈzeɪʃən/ — sounds like **OR-guh-nuh-ZAY-shən**
+1657. n. arm | /ɑːm/ — sounds like **AAHM** | /ɑrm/ — sounds like **ARM**
+1658. n. care | /keə/ — sounds like **KAIR** | /kɛr/ — sounds like **KAIR**
+1659. v. overlook | /ˌəʊvəˈlʊk/ — sounds like **OH-vuh-LOOK** | /ˌoʊvərˈlʊk/ — sounds like **OH-ver-LOOK**
+1660. n. survival | /səˈvaɪvəl/ — sounds like **suh-VY-vul** | /sərˈvaɪvəl/ — sounds like **ser-VY-vəl**
+1661. n. Italy | /ˈɪtəli/ — sounds like **IT-uh-lee** | /ˈɪtəli/ — sounds like **IT-ə-lee**
+1662. v. fell | /fel/ — sounds like **FEL** | /fɛl/ — sounds like **FEL**
+1663. n. crack | /kræk/ — sounds like **KRAK** | /kræk/ — sounds like **KRAK**
+1664. n. outline | /ˈaʊtlaɪn/ — sounds like **OUT-lyne** | /ˈaʊtˌlaɪn/ — sounds like **OUT-lyne**
+1665. n. section | /ˈsekʃən/ — sounds like **SEK-shun** | /ˈsɛkʃən/ — sounds like **SEK-shən**
+1666. adj. tiny | /ˈtaɪni/ — sounds like **TY-nee** | /ˈtaɪni/ — sounds like **TY-nee**
+1667. n. Stanford | /ˈstænfəd/ — sounds like **STAN-fud** | /ˈstænfərd/ — sounds like **STAN-ferd**
+1668. v. construct | /kənˈstrʌkt/ — sounds like **kun-STRUKT** | /kənˈstrʌkt/ — sounds like **kun-STRUKT**
+1669. n. crowd | /kraʊd/ — sounds like **KROWD** | /kraʊd/ — sounds like **KROWD**
+1670. v. break | /breɪk/ — sounds like **BRAYK** | /breɪk/ — sounds like **BRAYK**
+1671. n. award | /əˈwɔːd/ — sounds like **uh-WAWD** | /əˈwɔrd/ — sounds like **uh-WORD**
+1672. n. layer | /ˈleɪə/ — sounds like **LAY-uh** | /ˈleɪər/ — sounds like **LAY-er**
+1673. n. stock | /stɒk/ — sounds like **STOK** | /stɑk/ — sounds like **STAHK**
+1674. n. network | /ˈnetwɜːk/ — sounds like **NET-werk** | /ˈnɛtˌwɝːk/ — sounds like **NET-werk**
+1675. adj. bright | /braɪt/ — sounds like **BRYT** | /braɪt/ — sounds like **BRYT**
+1676. adj. intensive | /ɪnˈtensɪv/ — sounds like **in-TEN-siv** | /ɪnˈtɛnsɪv/ — sounds like **in-TEN-siv**
+1677. adj. primitive | /ˈprɪmɪtɪv/ — sounds like **PRIM-i-tiv** | /ˈprɪmətɪv/ — sounds like **PRIM-ə-tiv**
+1678. adj. Christian | /ˈkrɪstʃən/ — sounds like **KRIS-chun** | /ˈkrɪstʃən/ — sounds like **KRIS-chən**
+1679. n. crust | /krʌst/ — sounds like **KRUST** | /krʌst/ — sounds like **KRUST**
+1680. n. graduation | /ˌɡrædʒuˈeɪʃən/ — sounds like **GRAJ-oo-AY-shun** | /ˌɡrædʒuˈeɪʃən/ — sounds like **GRAJ-oo-AY-shən**
+1681. adj. special | /ˈspeʃəl/ — sounds like **SPESH-ul** | /ˈspɛʃəl/ — sounds like **SPESH-əl**
+1682. adv. effectively | /ɪˈfektɪvli/ — sounds like **i-FEK-tiv-lee** | /ɪˈfɛktɪvli/ — sounds like **i-FEK-tiv-lee**
+1683. n. schedule | /ˈʃedjuːl/ — sounds like **SHED-yool** | /ˈskɛdʒul/ — sounds like **SKEJ-ool**
+1684. adj. superior | /suːˈpɪəriə/ — sounds like **soo-PEER-ee-uh** | /səˈpɪriər/ — sounds like **suh-PEER-ee-er**
 1685. interval | /ˈɪntəvəl/ — sounds like **IN-tuh-vul** | /ˈɪntərvəl/ — sounds like **IN-ter-vəl**
 1686. aim | /eɪm/ — sounds like **AYM** | /eɪm/ — sounds like **AYM**
 1687. radio | /ˈreɪdiəʊ/ — sounds like **RAY-dee-oh** | /ˈreɪdioʊ/ — sounds like **RAY-dee-oh**
@@ -1704,720 +1704,720 @@ Co-words
 1698. competition | /ˌkɒmpəˈtɪʃən/ — sounds like **KOM-puh-TISH-un** | /ˌkɑmpəˈtɪʃən/ — sounds like **KAHM-puh-TISH-ən**
 1699. equivalent | /ɪˈkwɪvələnt/ — sounds like **i-KWIV-uh-lunt** | /ɪˈkwɪvələnt/ — sounds like **i-KWIV-ə-lənt**
 1700. disability | /ˌdɪsəˈbɪləti/ — sounds like **dis-uh-BIL-uh-tee** | /ˌdɪsəˈbɪləti/ — sounds like **dis-uh-BIL-ə-tee**
-1701. medium | /ˈmiːdiəm/ — sounds like **MEE-dee-um** | /ˈmidiəm/ — sounds like **MEE-dee-əm**
-1702. politician | /ˌpɒləˈtɪʃən/ — sounds like **POL-uh-TISH-un** | /ˌpɑləˈtɪʃən/ — sounds like **PAH-luh-TISH-ən**
-1703. Germany | /ˈdʒɜːməni/ — sounds like **JER-muh-nee** | /ˈdʒɝːməni/ — sounds like **JER-mə-nee**
-1704. capture | /ˈkæptʃə/ — sounds like **KAP-chuh** | /ˈkæptʃər/ — sounds like **KAP-cher**
-1705. achieve | /əˈtʃiːv/ — sounds like **uh-CHEEV** | /əˈtʃiv/ — sounds like **uh-CHEEV**
-1706. infrastructure | /ˈɪnfrəˌstrʌktʃə/ — sounds like **IN-fruh-STRUK-chuh** | /ˈɪnfrəˌstrʌktʃər/ — sounds like **IN-fruh-STRUK-cher**
-1707. bronze | /brɒnz/ — sounds like **BRONZ** | /brɑnz/ — sounds like **BRAHNZ**
-1708. neighborhood | /ˈneɪbəhʊd/ — sounds like **NAY-buh-hood** | /ˈneɪbərˌhʊd/ — sounds like **NAY-ber-hood**
-1709. suitable | /ˈsuːtəbəl/ — sounds like **SOO-tuh-bul** | /ˈsutəbəl/ — sounds like **SOO-tə-bəl**
-1710. bag | /bæɡ/ — sounds like **BAG** | /bæɡ/ — sounds like **BAG**
-1711. integrity | /ɪnˈteɡrəti/ — sounds like **in-TEG-ruh-tee** | /ɪnˈtɛɡrəti/ — sounds like **in-TEG-rə-tee**
-1712. turbine | /ˈtɜːbaɪn/ — sounds like **TER-byn** | /ˈtɝːbaɪn/ — sounds like **TER-byn**
-1713. register | /ˈredʒɪstə/ — sounds like **REJ-i-stuh** | /ˈrɛdʒɪstər/ — sounds like **REJ-i-ster**
-1714. contrast | /ˈkɒntrɑːst/ — sounds like **KON-traast** | /ˈkɑntræst/ — sounds like **KAHN-trast**
-1715. piece | /piːs/ — sounds like **PEES** | /pis/ — sounds like **PEES**
-1716. examination | /ɪɡˌzæmɪˈneɪʃən/ — sounds like **ig-ZAM-i-NAY-shun** | /ɪɡˌzæməˈneɪʃən/ — sounds like **ig-ZAM-uh-NAY-shən**
-1717. particularly | /pəˈtɪkjʊləli/ — sounds like **puh-TIK-yuh-luh-lee** | /pərˈtɪkjələrli/ — sounds like **per-TIK-yuh-ler-lee**
-1718. scale | /skeɪl/ — sounds like **SKAYL** | /skeɪl/ — sounds like **SKAYL**
-1719. tropical | /ˈtrɒpɪkəl/ — sounds like **TROP-i-kul** | /ˈtrɑpɪkəl/ — sounds like **TRAH-pi-kəl**
-1720. ever | /ˈevə/ — sounds like **EV-uh** | /ˈɛvər/ — sounds like **EV-er**
-1721. snail | /sneɪl/ — sounds like **SNAYL** | /sneɪl/ — sounds like **SNAYL**
-1722. forget | /fəˈɡet/ — sounds like **fuh-GET** | /fərˈɡɛt/ — sounds like **fer-GET**
-1723. vehicle | /ˈviːɪkəl/ — sounds like **VEE-i-kul** | /ˈviɪkəl/ — sounds like **VEE-i-kəl**
-1724. subsidy | /ˈsʌbsɪdi/ — sounds like **SUB-si-dee** | /ˈsʌbsədi/ — sounds like **SUB-sə-dee**
-1725. previous | /ˈpriːviəs/ — sounds like **PREE-vee-us** | /ˈpriviəs/ — sounds like **PREE-vis-əs**
-1726. therefore | /ˈðeəfɔː/ — sounds like **THAIR-faw** | /ˈðɛrfɔr/ — sounds like **THER-for**
-1727. Washington | /ˈwɒʃɪŋtən/ — sounds like **WOSH-ing-tun** | /ˈwɑʃɪŋtən/ — sounds like **WAH-shing-tən**
-1728. conclusion | /kənˈkluːʒən/ — sounds like **kun-KLOO-zhun** | /kənˈkluʒən/ — sounds like **kun-KLOO-zhən**
-1729. cash | /kæʃ/ — sounds like **KASH** | /kæʃ/ — sounds like **KASH**
-1730. log | /lɒɡ/ — sounds like **LOG** | /lɔɡ/ — sounds like **LAWG**
-1731. tourist | /ˈtʊərɪst/ — sounds like **TOOR-ist** | /ˈtʊrɪst/ — sounds like **TOOR-ist**
-1732. bit | /bɪt/ — sounds like **BIT** | /bɪt/ — sounds like **BIT**
-1733. application | /ˌæplɪˈkeɪʃən/ — sounds like **AP-li-KAY-shun** | /ˌæpləˈkeɪʃən/ — sounds like **AP-luh-KAY-shən**
-1734. Pacific | /pəˈsɪfɪk/ — sounds like **puh-SIF-ik** | /pəˈsɪfɪk/ — sounds like **puh-SIF-ik**
-1735. advance | /ədˈvɑːns/ — sounds like **ud-VAANS** | /ədˈvæns/ — sounds like **ud-VANS**
-1736. estimate | /ˈestɪmət/ — sounds like **ES-ti-mut** | /ˈɛstəmət/ — sounds like **ES-tə-mət**
-1737. developer | /dɪˈveləpə/ — sounds like **di-VEL-uh-puh** | /dɪˈvɛləpər/ — sounds like **di-VEL-uh-per**
-1738. technological | /ˌteknəˈlɒdʒɪkəl/ — sounds like **TEK-nuh-LOJ-i-kul** | /ˌtɛknəˈlɑdʒɪkəl/ — sounds like **TEK-nuh-LAHJ-i-kəl**
-1739. graduate | /ˈɡrædjuət/ — sounds like **GRAD-yoo-uht** | /ˈɡrædʒuət/ — sounds like **GRAD-joo-uht**
-1740. seven | /ˈsevən/ — sounds like **SEV-un** | /ˈsɛvən/ — sounds like **SEV-ən**
-1741. hunt | /hʌnt/ — sounds like **HUNT** | /hʌnt/ — sounds like **HUNT**
-1742. discount | /ˈdɪskaʊnt/ — sounds like **DIS-kownt** | /ˈdɪsˌkaʊnt/ — sounds like **DIS-kownt**
-1743. Buddhist | /ˈbʊdɪst/ — sounds like **BOOD-ist** | /ˈbʊdɪst/ — sounds like **BOOD-ist**
-1744. adequate | /ˈædɪkwət/ — sounds like **AD-i-kwut** | /ˈædəkwət/ — sounds like **AD-ə-kwət**
-1745. internal | /ɪnˈtɜːnəl/ — sounds like **in-TER-nul** | /ɪnˈtɝːnəl/ — sounds like **in-TER-nəl**
-1746. humanity | /hjuːˈmænəti/ — sounds like **HYOO-MAN-uh-tee** | /hjuˈmænəti/ — sounds like **HYOO-MAN-ə-tee**
-1747. board | /bɔːd/ — sounds like **BAWD** | /bɔrd/ — sounds like **BORD**
-1748. direct | /dɪˈrekt/ — sounds like **di-REKT** | /dəˈrɛkt/ — sounds like **duh-REKT**
-1749. argument | /ˈɑːɡjʊmənt/ — sounds like **AAH-gyoo-ment** | /ˈɑrɡjəmənt/ — sounds like **AR-gyuh-ment**
-1750. artist | /ˈɑːtɪst/ — sounds like **AAH-tist** | /ˈɑrtɪst/ — sounds like **AR-tist**
-1751. delay | /dɪˈleɪ/ — sounds like **di-LAY** | /dɪˈleɪ/ — sounds like **di-LAY**
-1752. acquisition | /ˌækwɪˈzɪʃən/ — sounds like **AK-wi-ZISH-un** | /ˌækwəˈzɪʃən/ — sounds like **AK-wuh-ZISH-ən**
-1753. measurement | /ˈmeʒəmənt/ — sounds like **MEZH-uh-ment** | /ˈmɛʒərmənt/ — sounds like **MEZH-er-ment**
-1754. effective | /ɪˈfektɪv/ — sounds like **i-FEK-tiv** | /ɪˈfɛktɪv/ — sounds like **i-FEK-tiv**
-1755. maybe | /ˈmeɪbi/ — sounds like **MAY-bee** | /ˈmeɪbi/ — sounds like **MAY-bee**
-1756. hectare | /ˈhektɑː/ — sounds like **HEK-tah** | /ˈhɛktɑr/ — sounds like **HEK-tar**
-1757. wage | /weɪdʒ/ — sounds like **WAYJ** | /weɪdʒ/ — sounds like **WAYJ**
-1758. suggestion | /səˈdʒestʃən/ — sounds like **suh-JES-chun** | /səˈdʒɛstʃən/ — sounds like **suh-JES-chən**
-1759. favor | /ˈfeɪvə/ — sounds like **FAY-vuh** | /ˈfeɪvər/ — sounds like **FAY-ver**
-1760. etc | /ɪtˈsetərə/ — sounds like **it-SET-uh-ruh** | /ɪtˈsɛtərə/ — sounds like **it-SET-ər-ə**
-1761. final | /ˈfaɪnəl/ — sounds like **FY-nul** | /ˈfaɪnəl/ — sounds like **FY-nəl**
-1762. insight | /ˈɪnsaɪt/ — sounds like **IN-syt** | /ˈɪnˌsaɪt/ — sounds like **IN-syt**
-1763. labour | /ˈleɪbə/ — sounds like **LAY-buh** | /ˈleɪbər/ — sounds like **LAY-ber**
-1764. colleague | /ˈkɒliːɡ/ — sounds like **KOL-eeg** | /ˈkɑliɡ/ — sounds like **KAH-lig**
-1765. biodiversity | /ˌbaɪəʊdaɪˈvɜːsəti/ — sounds like **BY-oh-dy-VUR-suh-tee** | /ˌbaɪoʊdaɪˈvɝːsəti/ — sounds like **BY-oh-dy-VUR-sə-tee**
-1766. officer | /ˈɒfɪsə/ — sounds like **OF-i-suh** | /ˈɔfɪsər/ — sounds like **AW-fi-ser**
-1767. meal | /miːl/ — sounds like **MEEL** | /mil/ — sounds like **MEEL**
-1768. mobile | /ˈməʊbaɪl/ — sounds like **MOH-byl** | /ˈmoʊbəl/ — sounds like **MOH-bəl**
-1769. Olympic | /əˈlɪmpɪk/ — sounds like **uh-LIM-pik** | /əˈlɪmpɪk/ — sounds like **uh-LIM-pik**
-1770. originally | /əˈrɪdʒənəli/ — sounds like **uh-RIJ-uh-nuh-lee** | /əˈrɪdʒənəli/ — sounds like **uh-RIJ-ə-nə-lee**
-1771. strengthen | /ˈstreŋθən/ — sounds like **STRENGTH-uhn** | /ˈstrɛŋθən/ — sounds like **STRENGTH-ən**
-1772. deadline | /ˈdedlaɪn/ — sounds like **DED-lyne** | /ˈdɛdˌlaɪn/ — sounds like **DED-lyne**
-1773. recognize | /ˈrekəɡnaɪz/ — sounds like **REK-ug-nyz** | /ˈrɛkəɡˌnaɪz/ — sounds like **REK-ug-nyz**
-1774. pilot | /ˈpaɪlət/ — sounds like **PY-lut** | /ˈpaɪlət/ — sounds like **PY-lət**
-1775. abroad | /əˈbrɔːd/ — sounds like **uh-BRAWD** | /əˈbrɔd/ — sounds like **uh-BRAWD**
-1776. date | /deɪt/ — sounds like **DAYT** | /deɪt/ — sounds like **DAYT**
-1777. round | /raʊnd/ — sounds like **ROWND** | /raʊnd/ — sounds like **ROWND**
-1778. exceed | /ɪkˈsiːd/ — sounds like **ik-SEED** | /ɪkˈsid/ — sounds like **ik-SEED**
-1779. exercise | /ˈeksəsaɪz/ — sounds like **EK-suh-syz** | /ˈɛksərˌsaɪz/ — sounds like **EK-ser-syz**
-1780. length | /leŋθ/ — sounds like **LENGTH** | /lɛŋθ/ — sounds like **LENGTH**
-1781. variety | /vəˈraɪəti/ — sounds like **vuh-RY-uh-tee** | /vəˈraɪəti/ — sounds like **vuh-RY-ə-tee**
-1782. attend | /əˈtend/ — sounds like **uh-TEND** | /əˈtɛnd/ — sounds like **uh-TEND**
-1783. England | /ˈɪŋɡlənd/ — sounds like **ING-glund** | /ˈɪŋɡlənd/ — sounds like **ING-glənd**
-1784. opinion | /əˈpɪnjən/ — sounds like **uh-PIN-yun** | /əˈpɪnjən/ — sounds like **uh-PIN-yən**
-1785. secondly | /ˈsekəndli/ — sounds like **SEK-und-lee** | /ˈsɛkəndli/ — sounds like **SEK-ənd-lee**
-1786. lung | /lʌŋ/ — sounds like **LUNG** | /lʌŋ/ — sounds like **LUNG**
-1787. sell | /sel/ — sounds like **SELL** | /sɛl/ — sounds like **SELL**
-1788. distinction | /dɪˈstɪŋkʃən/ — sounds like **di-STINK-shun** | /dɪˈstɪŋkʃən/ — sounds like **di-STINK-shən**
-1789. unconscious | /ʌnˈkɒnʃəs/ — sounds like **un-KON-shus** | /ʌnˈkɑnʃəs/ — sounds like **un-KAHN-shəs**
-1790. concept | /ˈkɒnsept/ — sounds like **KON-sept** | /ˈkɑnsɛpt/ — sounds like **KAHN-sept**
-1791. else | /els/ — sounds like **ELS** | /ɛls/ — sounds like **ELS**
-1792. aware | /əˈweə/ — sounds like **uh-WAIR** | /əˈwɛr/ — sounds like **uh-WAIR**
-1793. successfully | /səkˈsesfəli/ — sounds like **suk-SES-fuh-lee** | /səkˈsɛsfəli/ — sounds like **suk-SES-fə-lee**
-1794. Edison | /ˈedɪsən/ — sounds like **ED-i-sun** | /ˈɛdɪsən/ — sounds like **ED-i-sən**
-1795. member | /ˈmembə/ — sounds like **MEM-buh** | /ˈmɛmbər/ — sounds like **MEM-ber**
-1796. maintenance | /ˈmeɪntənəns/ — sounds like **MAYN-tuh-nuns** | /ˈmeɪntənəns/ — sounds like **MAYN-tə-nəns**
-1797. father | /ˈfɑːðə/ — sounds like **FAAH-thuh** | /ˈfɑðər/ — sounds like **FAH-ther**
-1798. deal | /diːl/ — sounds like **DEEL** | /dil/ — sounds like **DEEL**
-1799. responsible | /rɪˈspɒnsəbəl/ — sounds like **ri-SPON-suh-bul** | /rɪˈspɑnsəbəl/ — sounds like **ri-SPAHN-sə-bəl**
-1800. exploit | /ɪkˈsplɔɪt/ — sounds like **ik-SPLOYT** | /ɪkˈsplɔɪt/ — sounds like **ik-SPLOYT**
-1801. survive | /səˈvaɪv/ — sounds like **suh-VYV** | /sərˈvaɪv/ — sounds like **ser-VYV**
-1802. disappear | /ˌdɪsəˈpɪə/ — sounds like **dis-uh-PEER** | /ˌdɪsəˈpɪr/ — sounds like **dis-uh-PEER**
-1803. speaking | /ˈspiːkɪŋ/ — sounds like **SPEE-king** | /ˈspikɪŋ/ — sounds like **SPEE-king**
-1804. govern | /ˈɡʌvən/ — sounds like **GUV-uhn** | /ˈɡʌvərn/ — sounds like **GUV-ern**
-1805. familiar | /fəˈmɪljə/ — sounds like **fuh-MIL-yuh** | /fəˈmɪljər/ — sounds like **fuh-MIL-yer**
-1806. script | /skrɪpt/ — sounds like **SKRIPT** | /skrɪpt/ — sounds like **SKRIPT**
-1807. probably | /ˈprɒbəbli/ — sounds like **PROB-uh-blee** | /ˈprɑbəbli/ — sounds like **PRAH-bə-blee**
-1808. circle | /ˈsɜːkəl/ — sounds like **SER-kul** | /ˈsɝːkəl/ — sounds like **SER-kəl**
-1809. paleolithic | /ˌpeɪliəˈlɪθɪk/ — sounds like **PAY-lee-uh-LITH-ik** | /ˌpeɪliəˈlɪθɪk/ — sounds like **PAY-lee-uh-LITH-ik**
-1810. Shakespeare | /ˈʃeɪkspɪə/ — sounds like **SHAYK-speer** | /ˈʃeɪkspɪr/ — sounds like **SHAYK-speer**
-1811. rural | /ˈrʊərəl/ — sounds like **ROOR-ul** | /ˈrʊrəl/ — sounds like **ROOR-əl**
-1812. OK | /əʊˈkeɪ/ — sounds like **oh-KAY** | /oʊˈkeɪ/ — sounds like **oh-KAY**
-1813. mouth | /maʊθ/ — sounds like **MOWTH** | /maʊθ/ — sounds like **MOWTH**
-1814. shelter | /ˈʃeltə/ — sounds like **SHEL-tuh** | /ˈʃɛltər/ — sounds like **SHEL-ter**
-1815. recipe | /ˈresɪpi/ — sounds like **RES-i-pee** | /ˈrɛsəpi/ — sounds like **RES-ə-pee**
-1816. felt | /felt/ — sounds like **FELT** | /fɛlt/ — sounds like **FELT**
-1817. territory | /ˈterɪtəri/ — sounds like **TER-i-tuh-ree** | /ˈtɛrəˌtɔri/ — sounds like **TER-uh-tor-ee**
-1818. entrepreneur | /ˌɒntrəprəˈnɜː/ — sounds like **ON-truh-pruh-NER** | /ˌɑntrəprəˈnɝː/ — sounds like **AHN-truh-pruh-NER**
-1819. pump | /pʌmp/ — sounds like **PUMP** | /pʌmp/ — sounds like **PUMP**
-1820. temple | /ˈtempəl/ — sounds like **TEM-pul** | /ˈtɛmpəl/ — sounds like **TEM-pəl**
-1821. contribute | /kənˈtrɪbjuːt/ — sounds like **kun-TRIB-yoot** | /kənˈtrɪbjut/ — sounds like **kun-TRIB-yoot**
-1822. artificial | /ˌɑːtɪˈfɪʃəl/ — sounds like **AAH-ti-FISH-ul** | /ˌɑrtəˈfɪʃəl/ — sounds like **AR-tuh-FISH-əl**
-1823. interaction | /ˌɪntərˈækʃən/ — sounds like **IN-ter-AK-shun** | /ˌɪntərˈækʃən/ — sounds like **IN-ter-AK-shən**
-1824. corn | /kɔːn/ — sounds like **KAWN** | /kɔrn/ — sounds like **KORN**
-1825. breath | /breθ/ — sounds like **BRETH** | /brɛθ/ — sounds like **BRETH**
-1826. release | /rɪˈliːs/ — sounds like **ri-LEES** | /rɪˈlis/ — sounds like **ri-LEES**
-1827. meat | /miːt/ — sounds like **MEET** | /mit/ — sounds like **MEET**
-1828. Iceland | /ˈaɪslənd/ — sounds like **EYE-slund** | /ˈaɪslənd/ — sounds like **EYE-slənd**
-1829. insufficient | /ˌɪnsəˈfɪʃənt/ — sounds like **IN-suh-FISH-unt** | /ˌɪnsəˈfɪʃənt/ — sounds like **IN-suh-FISH-ənt**
-1830. training | /ˈtreɪnɪŋ/ — sounds like **TRAY-ning** | /ˈtreɪnɪŋ/ — sounds like **TRAY-ning**
-1831. Ironbridge | /ˈaɪənbrɪdʒ/ — sounds like **EYE-uhn-bridge** | /ˈaɪərnbrɪdʒ/ — sounds like **EYE-ern-bridge**
-1832. guy | /ɡaɪ/ — sounds like **GY** | /ɡaɪ/ — sounds like **GY**
-1833. coral | /ˈkɒrəl/ — sounds like **KOR-ul** | /ˈkɔrəl/ — sounds like **KOR-əl**
-1834. nose | /nəʊz/ — sounds like **NOHZ** | /noʊz/ — sounds like **NOHZ**
-1835. continental | /ˌkɒntɪˈnentəl/ — sounds like **KON-ti-NEN-tul** | /ˌkɑntəˈnɛntəl/ — sounds like **KAHN-tuh-NEN-təl**
-1836. Lewis | /ˈluːɪs/ — sounds like **LOO-iss** | /ˈluɪs/ — sounds like **LOO-iss**
-1837. presidential | /ˌprezɪˈdenʃəl/ — sounds like **PREZ-i-DEN-shul** | /ˌprɛzəˈdɛnʃəl/ — sounds like **PREZ-uh-DEN-shəl**
-1838. PPT | /ˌpiː piː ˈtiː/ — sounds like **PEE-PEE-TEE** | /ˌpi pi ˈti/ — sounds like **pee-pee-TEE**
-1839. dynamic | /daɪˈnæmɪk/ — sounds like **dy-NAM-ik** | /daɪˈnæmɪk/ — sounds like **dy-NAM-ik**
-1840. traffic | /ˈtræfɪk/ — sounds like **TRAF-ik** | /ˈtræfɪk/ — sounds like **TRAF-ik**
-1841. steadily | /ˈstedɪli/ — sounds like **STED-i-lee** | /ˈstɛdəli/ — sounds like **STED-ə-lee**
-1842. oxygen | /ˈɒksɪdʒən/ — sounds like **OK-si-jun** | /ˈɑksɪdʒən/ — sounds like **AHK-si-jən**
-1843. impressive | /ɪmˈpresɪv/ — sounds like **im-PRES-iv** | /ɪmˈprɛsɪv/ — sounds like **im-PRES-iv**
-1844. tail | /teɪl/ — sounds like **TAYL** | /teɪl/ — sounds like **TAYL**
-1845. peanut | /ˈpiːnʌt/ — sounds like **PEE-nut** | /ˈpinʌt/ — sounds like **PEE-nut**
-1846. traveler | /ˈtrævələ/ — sounds like **TRAV-uh-luh** | /ˈtrævələr/ — sounds like **TRAV-uh-ler**
-1847. overlap | /ˌəʊvəˈlæp/ — sounds like **OH-vuh-LAP** | /ˌoʊvərˈlæp/ — sounds like **OH-ver-LAP**
-1848. spread | /spred/ — sounds like **SPRED** | /sprɛd/ — sounds like **SPRED**
-1849. bankrupt | /ˈbæŋkrʌpt/ — sounds like **BANG-krupt** | /ˈbæŋkrʌpt/ — sounds like **BANG-krupt**
-1850. outside | /ˌaʊtˈsaɪd/ — sounds like **OUT-SYD** | /ˌaʊtˈsaɪd/ — sounds like **OUT-SYD**
-1851. burn | /bɜːn/ — sounds like **BERN** | /bɝːn/ — sounds like **BERN**
-1852. curiosity | /ˌkjʊəriˈɒsəti/ — sounds like **KYOO-ree-OS-uh-tee** | /ˌkjʊriˈɑsəti/ — sounds like **KYOO-ree-AH-sə-tee**
-1853. pole | /pəʊl/ — sounds like **POHL** | /poʊl/ — sounds like **POHL**
-1854. microbe | /ˈmaɪkrəʊb/ — sounds like **MY-krohb** | /ˈmaɪkroʊb/ — sounds like **MY-krohb**
-1855. necessary | /ˈnesəsəri/ — sounds like **NES-uh-suh-ree** | /ˈnɛsəˌsɛri/ — sounds like **NES-uh-sair-ee**
-1856. mouse | /maʊs/ — sounds like **MOWS** | /maʊs/ — sounds like **MOWS**
-1857. discipline | /ˈdɪsɪplɪn/ — sounds like **DIS-i-plin** | /ˈdɪsəplɪn/ — sounds like **DIS-uh-plin**
-1858. Sydney | /ˈsɪdni/ — sounds like **SID-nee** | /ˈsɪdni/ — sounds like **SID-nee**
-1859. farm | /fɑːm/ — sounds like **FAAHM** | /fɑrm/ — sounds like **FARM**
-1860. profound | /prəˈfaʊnd/ — sounds like **pruh-FOWND** | /prəˈfaʊnd/ — sounds like **pruh-FOWND**
-1861. long-term | /ˌlɒŋ ˈtɜːm/ — sounds like **LONG TERM** | /ˌlɔŋ ˈtɝːm/ — sounds like **LAWNG TERM**
-1862. select | /sɪˈlekt/ — sounds like **si-LEKT** | /səˈlɛkt/ — sounds like **suh-LEKT**
-1863. jury | /ˈdʒʊəri/ — sounds like **JOOR-ee** | /ˈdʒʊri/ — sounds like **JOOR-ee**
-1864. Oxford | /ˈɒksfəd/ — sounds like **OKS-fud** | /ˈɑksfərd/ — sounds like **AHKS-ferd**
-1865. surely | /ˈʃʊəli/ — sounds like **SHOOR-lee** | /ˈʃʊrli/ — sounds like **SHOOR-lee**
-1866. teenager | /ˈtiːneɪdʒə/ — sounds like **TEE-nay-juh** | /ˈtineɪdʒər/ — sounds like **TEE-nay-jer**
-1867. directly | /dɪˈrektli/ — sounds like **di-REKT-lee** | /dəˈrɛktli/ — sounds like **duh-REKT-lee**
-1868. foot | /fʊt/ — sounds like **FOOT** | /fʊt/ — sounds like **FOOT**
-1869. error | /ˈerə/ — sounds like **ER-uh** | /ˈɛrər/ — sounds like **ER-er**
-1870. Chinese | /ˌtʃaɪˈniːz/ — sounds like **chy-NEEZ** | /ˌtʃaɪˈniz/ — sounds like **chy-NEEZ**
-1871. underground | /ˈʌndəɡraʊnd/ — sounds like **UN-duh-grownd** | /ˈʌndərˌɡraʊnd/ — sounds like **UN-der-grownd**
-1872. mechanism | /ˈmekənɪzəm/ — sounds like **MEK-uh-niz-um** | /ˈmɛkəˌnɪzəm/ — sounds like **MEK-uh-niz-əm**
-1873. rich | /rɪtʃ/ — sounds like **RICH** | /rɪtʃ/ — sounds like **RICH**
-1874. stuff | /stʌf/ — sounds like **STUF** | /stʌf/ — sounds like **STUF**
-1875. shopping | /ˈʃɒpɪŋ/ — sounds like **SHOP-ing** | /ˈʃɑpɪŋ/ — sounds like **SHAHP-ing**
-1876. proportion | /prəˈpɔːʃən/ — sounds like **pruh-PAW-shun** | /prəˈpɔrʃən/ — sounds like **pruh-POR-shən**
-1877. quiet | /ˈkwaɪət/ — sounds like **KWY-ut** | /ˈkwaɪət/ — sounds like **KWY-ət**
-1878. typewriter | /ˈtaɪpraɪtə/ — sounds like **TY-pry-tuh** | /ˈtaɪpˌraɪtər/ — sounds like **TY-pry-ter**
-1879. prefer | /prɪˈfɜː/ — sounds like **pri-FER** | /prɪˈfɝː/ — sounds like **pri-FER**
-1880. club | /klʌb/ — sounds like **KLUB** | /klʌb/ — sounds like **KLUB**
-1881. birth | /bɜːθ/ — sounds like **BERTH** | /bɝːθ/ — sounds like **BERTH**
-1882. transportation | /ˌtrænspɔːˈteɪʃən/ — sounds like **TRAN-spaw-TAY-shun** | /ˌtrænspɔrˈteɪʃən/ — sounds like **TRAN-spor-TAY-shən**
-1883. demographic | /ˌdeməˈɡræfɪk/ — sounds like **DEM-uh-GRAF-ik** | /ˌdɛməˈɡræfɪk/ — sounds like **DEM-uh-GRAF-ik**
-1884. television | /ˈtelɪvɪʒən/ — sounds like **TEL-i-VIH-zhun** | /ˈtɛləˌvɪʒən/ — sounds like **TEL-uh-VIH-zhən**
-1885. interpret | /ɪnˈtɜːprɪt/ — sounds like **in-TER-prit** | /ɪnˈtɝːprɪt/ — sounds like **in-TER-prit**
-1886. closer | /ˈkləʊzə/ — sounds like **KLOH-zuh** | /ˈkloʊzər/ — sounds like **KLOH-zer**
-1887. Columbus | /kəˈlʌmbəs/ — sounds like **kuh-LUM-bus** | /kəˈlʌmbəs/ — sounds like **kuh-LUM-bəs**
-1888. powerful | /ˈpaʊəfəl/ — sounds like **POW-uh-ful** | /ˈpaʊərfəl/ — sounds like **POW-er-fəl**
-1889. academy | /əˈkædəmi/ — sounds like **uh-KAD-uh-mee** | /əˈkædəmi/ — sounds like **uh-KAD-ə-mee**
-1890. cow | /kaʊ/ — sounds like **KOW** | /kaʊ/ — sounds like **KOW**
-1891. emotional | /ɪˈməʊʃənəl/ — sounds like **i-MOH-shun-ul** | /ɪˈmoʊʃənəl/ — sounds like **i-MOH-shə-nəl**
-1892. exhibit | /ɪɡˈzɪbɪt/ — sounds like **ig-ZIB-it** | /ɪɡˈzɪbɪt/ — sounds like **ig-ZIB-it**
-1893. artifact | /ˈɑːtɪfækt/ — sounds like **AAH-ti-fakt** | /ˈɑrtəˌfækt/ — sounds like **AR-tuh-fakt**
-1894. heating | /ˈhiːtɪŋ/ — sounds like **HEE-ting** | /ˈhitɪŋ/ — sounds like **HEE-ting**
-1895. fertile | /ˈfɜːtaɪl/ — sounds like **FER-tyl** | /ˈfɝːtəl/ — sounds like **FER-təl**
-1896. literacy | /ˈlɪtərəsi/ — sounds like **LIT-uh-ruh-see** | /ˈlɪtərəsi/ — sounds like **LIT-ər-ə-see**
-1897. commercial | /kəˈmɜːʃəl/ — sounds like **kuh-MER-shul** | /kəˈmɝːʃəl/ — sounds like **kuh-MER-shəl**
-1898. simply | /ˈsɪmpli/ — sounds like **SIM-plee** | /ˈsɪmpli/ — sounds like **SIM-plee**
-1899. Arabic | /ˈærəbɪk/ — sounds like **AR-uh-bik** | /ˈærəbɪk/ — sounds like **AR-ə-bik**
-1900. telescope | /ˈtelɪskəʊp/ — sounds like **TEL-i-skohp** | /ˈtɛləˌskoʊp/ — sounds like **TEL-uh-skohp**
-1901. mystery | /ˈmɪstəri/ — sounds like **MIS-tuh-ree** | /ˈmɪstəri/ — sounds like **MIS-tər-ee**
-1902. assumption | /əˈsʌmpʃən/ — sounds like **uh-SUMP-shun** | /əˈsʌmpʃən/ — sounds like **uh-SUMP-shən**
-1903. poetry | /ˈpəʊɪtri/ — sounds like **POH-i-tree** | /ˈpoʊətri/ — sounds like **POH-uh-tree**
-1904. independence | /ˌɪndɪˈpendəns/ — sounds like **IN-di-PEN-duns** | /ˌɪndəˈpɛndəns/ — sounds like **IN-duh-PEN-dəns**
-1905. hypothesis | /haɪˈpɒθəsɪs/ — sounds like **hy-POTH-uh-sis** | /haɪˈpɑθəsɪs/ — sounds like **hy-PAH-thə-sis**
-1906. locate | /ləʊˈkeɪt/ — sounds like **loh-KAYT** | /loʊˈkeɪt/ — sounds like **loh-KAYT**
-1907.melatonin
-1908.box
-1909.accelerate
-1910.engineer
-1911.candidate
-1912.draw
-1913.negative
-1914.accurate
-1915.attribute
-1916.October
-1917.observation
-1918.people watching
-1919.Hollywood
-1920.buyer
-1921.civil
-1922.USA
-1923.simulation
-1924.meaningful
-1925.chemistry
-1926.supplement
-1927.pack
-1928.fellow
-1929.bacteria
-1930.contract
-1931.canal
-1932.extract
-1933.participation
-1934.album
-1935.acquire
-1936.boat
-1937.logical
-1938.nearly
-1939.tool
-1940.full
-1941.die
-1942.sophisticated
-1943.Northern
-1944.audition
-1945.artistic
-1946.village
-1947.distant
-1948.devastate
-1949.visible
-1950.writer
-1951.studio
-1952.string
-1953.passage
-1954.mainly
-1955.incentive
-1956.Monash
-1957.bridge
-1958.police
-1959.email
-1960.interpreter
-1961.confusion
-1962.restaurant
-1963.geographic
-1964.visitor
-1965.departure
-1966.Thursday
-1967.welcome
-1968.rock
-1969.institution
-1970.conservation
-1971.crucial
-1972.ecology
-1973.dirt
-1974.absorb
-1975.writing
-1976.heavy
-1977.unknown
-1978.factory
-1979.performance
-1980.advise
-1981.weakness
-1982.sky
-1983.mine
-1984.tunnel
-1985.kitchen
-1986.breakfast
-1987.seventeenth
-1988.immigration
-1989.prevent
-1990.finish
-1991.Southern
-1992.anything
-1993.recovery
-1994.verbal
-1995.visit
-1996.click
-1997.leg
-1998.crisis
-1999.tradition
-2000.mimic
-2001.pollution
-2002.radical
-2003.organic
-2004.inevitably
-2005.earlier
-2006.suit
-2007.operate
-2008.spending
-2009.prescription
-2010.cooperation
-2011.wine
-2012.willing
-2013.preschool
-2014.morning
-2015.pioneer
-2016.explosion
-2017.calendar
-2018.criticism
-2019.button
-2020.representative
-2021.sir
-2022.local
-2023.leisure
-2024.translate
-2025.everywhere
-2026.intelligence
-2027.storage
-2028.medicine
-2029.festival
-2030.corner
-2031.smell
-2032.consequence
-2033.pass
-2034.working
-2035.agree
-2036.foundation
-2037.printed
-2038.location
-2039.December
-2040.sensor
-2041.print
-2042.hurricane
-2043.thought
-2044.donor
-2045.toward
-2046.rank
-2047.Piaget
-2048.plane
-2049.perhaps
-2050.coast
-2051.neither
-2052.deliver
-2053.circulate
-2054.reader
-2055.Chicago
-2056.marketing
-2057.hotter
-2058.plate
-2059.trading
-2060.narrative
-2061.Arab
-2062.phrase
-2063.abstract
-2064.comparable
-2065.perform
-2066.sustainability
-2067.fresh
-2068.row
-2069.centre
-2070.sport
-2071.title
-2072.highway
-2073.requirement
-2074.variable
-2075.influential
-2076.alternative
-2077.correct
-2078.doctor
-2079.concert
-2080.facility
-2081.foreigner
-2082.egg
-2083.friend
-2084.saving
-2085.publication
-2086.emphasis
-2087.knee
-2088.strict
-2089.truth
-2090.drink
-2091.emerge
-2092.mosquito
-2093.darkness
-2094.Dry
-2095.quickly
-2096.confidence
-2097.alone
-2098.dollar
-2099.paragraph
-2100.prescribe
-2101.blow
-2102.nothing
-2103.review
-2104.status
-2105.mar
-2106.certainly
-2107.carrot
-2108.nutrient
-2109.room
-2110.convey
-2111.historical
-2112.pool
-2113.invent
-2114.flat
-2115.gist
-2116.wing
-2117.intellectual
-2118.leaf
-2119.cultural
-2120.Latin
-2121.Greek
-2122.communicate
-2123.specialize
-2124.recall
-2125.resolution
-2126.code
-2127.nectar
-2128.characteristic
-2129.frequent
-2130.zone
-2131.explicit
-2132.graph
-2133.vivid
-2134.portrait
-2135.disorder
-2136.genetic
-2137.progress
-2138.clicker
-2139.participate
-2140.distance
-2141. workforce
-2142. environmentalist
-2143. category
-2144. height
-2145. largely
-2146. planning
-2147. cart
-2148. reach
-2149. farmland
-2150. heavily
-2151. submarine
-2152. monster
-2153. mostly
-2154. aviation
-2155. monkey
-2156. countryside
-2157. bully
-2158. star
-2159. General
-2160. functional
-2161. destruction
-2162. equator
-2163. wildlife
-2164. cool
-2165. internationally
-2166. ancestor
-2167. DR
-2168. staff
-2169. antibody
-2170. specialist
-2171. guideline
-2172. instructor
-2173. morris
-2174. avoid
-2175. everyday
-2176. Asda
-2177. experienced
-2178. success
-2179. indication
-2180. bone
-2181. approximately
-2182. file
-2183. textbook
-2184. increasingly
-2185. reform
-2186. unemployment
-2187. assessment
-2188. chart
-2189. burden
-2190. historic
-2191. onto
-2192. wander
-2193. educate
-2194. attractive
-2195. geography
-2196. tech
-2197. medal
-2198. secret
-2199. fill
-2200. competence
-2201. sex
-2202. sunlight
-2203. supermarket
-2204. novel
-2205. river
-2206. semester
-2207. spring
-2208. warning
-2209. winner
-2210. consume
-2211. none
-2212. finding
-2213. participant
-2214. organize
-2215. contact
-2216. fire
-2217. burger
-2218. seminar
-2219. treatment
-2220. cognitive
-2221. Andersen
-2222. software
-2223. election
-2224. French
-2225. moth
-2226. opposite
-2227. excellent
-2228.buy
-2229.forward
-2230.though
-2231.gap
-2232.scheme
-2233.complain
-2234.Brazil
-2235.poor
-2236.sentence
-2237.intervention
-2238.browser
-2239.meanwhile
-2240.sugar
-2241.oil
-2242.psychologist
-2243.volunteer
-2244.bilingual
-2245.patient
-2246.competent
-2247.explanation
-2248.metal
-2249.absolutely
-2250.chill
-2251.pressure
-2252.cataract
-2253.establishment
-2254.chronic
-2255.quote
-2256.declare
-2257.positive
-2258.archaeology
-2259.partly
-2260.minimum
-2261.virtually
-2262.curriculum
-2263.extension
-2264.enormous
-2265.fee
-2266.store
-2267.migrant
-2268.maximum
-2269.similarity
-2270.economics
-2271.hit
-2272.significant
-2273.obtain
-2274.developed
-2275.necessarily
-2276.longer
-2277.spot
-2278.port
-2279.owner
-2280.wear
-2281.depression
-2282.moderate
-2283.wave
-2284.pick
-2285.front
-2286.SpaceX
-2287.automatically
-2288.pain
-2289.consciousness
-2290.raw
-2291.talent
-2292.longitude
-2293.ensure
-2294.kill
-2295.phone
-2296.comprehensive
-2297.quantity
-2298.flow
-2299.interesting
-2300.thanks
-2301.prey
-2302.expenditure
-2303.eel
-2304.square
-2305.expertise
-2306.sustainable
-2307.mammal
-2308.essay
-2309.fertilizer
-2310.selection
-2311.cope
-2312.tone
-2313.stem
-2314.couple
-2315.user
-2316. conflict
-2317. journalist
-2318. affordable
-2319. Diaspora
-2320. diverse
-2321. constitute
-2322. carbon
-2323. conduct
-2324. volume
-2325. credit
-2326. manner
-2327. enter
-2328. wooden
-2329. center
-2330. listen
-2331. note
-2332. concentration
-2333. nobody
-2334. stretch
-2335. limit
-2336. intend
-2337. tale
-2338. Mr
-2339. Bhutan
-2340. daughter
-2341. Jack
-2342. freedom
-2343. exactly
-2344. perceive
-2345. laboratory
-2346. encounter
-2347. retail
-2348. acceptable
-2349. pound
-2350. recession
-2351. appreciate
-2352. framework
-2353. annual
-2354. Spanish
-2355. stickleback
-2356. thesis
-2357. interior
-2358. Amazonian
-2359. overcome
-2360. minority
-2361. court
-2362. hope
-2363. tall
-2364. dean
-2365. pull
-2366. grant
-2367. Match
-2368. convention
-2369. external
-2370. function
-2371. paint
-2372. predominantly
-2373. yes
-2374. presentation
-2375. pesticide
-2376. pharmacist
-2377. UN
-2378. tremendous
-2379. driver
-2380. swim
-2381. infection
-2382. successful
-2383. besides
-2384. finally
-2385. vary
-2386. video
-2387. currently
-2388. numerous
-2389. battery
-2390. choice
-2391. deposit
-2392. revise
-2393. feed
-2394. imagine
-2395. import
-2396. counter
-2397. grass
-2398. Liberal
-2399. mood
-2400. heart
-2401. waste
-2402. advertisement
-2403. onion
-2404. accessible
-2405. serve
-2406. desert
-2407. arise
-2408. programmer
-2409. block
-2410. preparation
-2411. interpretation | /ɪnˌtɜːprɪˈteɪʃən/ — sounds like **in-TER-pri-TAY-shun** | /ɪnˌtɝːprɪˈteɪʃən/ — sounds like **in-TER-pri-TAY-shən**
-2412. electronic | /ɪˌlekˈtrɒnɪk/ — sounds like **i-lek-TRON-ik** | /ɪˌlɛkˈtrɑnɪk/ — sounds like **i-lek-TRAHN-ik**
-2413. website | /ˈwebsaɪt/ — sounds like **WEB-syt** | /ˈwɛbˌsaɪt/ — sounds like **WEB-syt**
-2414. wash | /wɒʃ/ — sounds like **WOSH** | /wɑʃ/ — sounds like **WAHSH**
-2415. quite | /kwaɪt/ — sounds like **KWYT** | /kwaɪt/ — sounds like **KWYT**
-2416. facial | /ˈfeɪʃəl/ — sounds like **FAY-shul** | /ˈfeɪʃəl/ — sounds like **FAY-shəl**
-2417. meter | /ˈmiːtə/ — sounds like **MEE-tuh** | /ˈmitər/ — sounds like **MEE-ter**
+1701. n. medium | /ˈmiːdiəm/ — sounds like **MEE-dee-um** | /ˈmidiəm/ — sounds like **MEE-dee-əm**
+1702. n. politician | /ˌpɒləˈtɪʃən/ — sounds like **POL-uh-TISH-un** | /ˌpɑləˈtɪʃən/ — sounds like **PAH-luh-TISH-ən**
+1703. n. Germany | /ˈdʒɜːməni/ — sounds like **JER-muh-nee** | /ˈdʒɝːməni/ — sounds like **JER-mə-nee**
+1704. v. capture | /ˈkæptʃə/ — sounds like **KAP-chuh** | /ˈkæptʃər/ — sounds like **KAP-cher**
+1705. v. achieve | /əˈtʃiːv/ — sounds like **uh-CHEEV** | /əˈtʃiv/ — sounds like **uh-CHEEV**
+1706. n. infrastructure | /ˈɪnfrəˌstrʌktʃə/ — sounds like **IN-fruh-STRUK-chuh** | /ˈɪnfrəˌstrʌktʃər/ — sounds like **IN-fruh-STRUK-cher**
+1707. n. bronze | /brɒnz/ — sounds like **BRONZ** | /brɑnz/ — sounds like **BRAHNZ**
+1708. n. neighborhood | /ˈneɪbəhʊd/ — sounds like **NAY-buh-hood** | /ˈneɪbərˌhʊd/ — sounds like **NAY-ber-hood**
+1709. adj. suitable | /ˈsuːtəbəl/ — sounds like **SOO-tuh-bul** | /ˈsutəbəl/ — sounds like **SOO-tə-bəl**
+1710. n. bag | /bæɡ/ — sounds like **BAG** | /bæɡ/ — sounds like **BAG**
+1711. n. integrity | /ɪnˈteɡrəti/ — sounds like **in-TEG-ruh-tee** | /ɪnˈtɛɡrəti/ — sounds like **in-TEG-rə-tee**
+1712. n. turbine | /ˈtɜːbaɪn/ — sounds like **TER-byn** | /ˈtɝːbaɪn/ — sounds like **TER-byn**
+1713. v. register | /ˈredʒɪstə/ — sounds like **REJ-i-stuh** | /ˈrɛdʒɪstər/ — sounds like **REJ-i-ster**
+1714. n. contrast | /ˈkɒntrɑːst/ — sounds like **KON-traast** | /ˈkɑntræst/ — sounds like **KAHN-trast**
+1715. n. piece | /piːs/ — sounds like **PEES** | /pis/ — sounds like **PEES**
+1716. n. examination | /ɪɡˌzæmɪˈneɪʃən/ — sounds like **ig-ZAM-i-NAY-shun** | /ɪɡˌzæməˈneɪʃən/ — sounds like **ig-ZAM-uh-NAY-shən**
+1717. adv. particularly | /pəˈtɪkjʊləli/ — sounds like **puh-TIK-yuh-luh-lee** | /pərˈtɪkjələrli/ — sounds like **per-TIK-yuh-ler-lee**
+1718. n. scale | /skeɪl/ — sounds like **SKAYL** | /skeɪl/ — sounds like **SKAYL**
+1719. adj. tropical | /ˈtrɒpɪkəl/ — sounds like **TROP-i-kul** | /ˈtrɑpɪkəl/ — sounds like **TRAH-pi-kəl**
+1720. adv. ever | /ˈevə/ — sounds like **EV-uh** | /ˈɛvər/ — sounds like **EV-er**
+1721. n. snail | /sneɪl/ — sounds like **SNAYL** | /sneɪl/ — sounds like **SNAYL**
+1722. v. forget | /fəˈɡet/ — sounds like **fuh-GET** | /fərˈɡɛt/ — sounds like **fer-GET**
+1723. n. vehicle | /ˈviːɪkəl/ — sounds like **VEE-i-kul** | /ˈviɪkəl/ — sounds like **VEE-i-kəl**
+1724. n. subsidy | /ˈsʌbsɪdi/ — sounds like **SUB-si-dee** | /ˈsʌbsədi/ — sounds like **SUB-sə-dee**
+1725. adj. previous | /ˈpriːviəs/ — sounds like **PREE-vee-us** | /ˈpriviəs/ — sounds like **PREE-vis-əs**
+1726. adv. therefore | /ˈðeəfɔː/ — sounds like **THAIR-faw** | /ˈðɛrfɔr/ — sounds like **THER-for**
+1727. n. Washington | /ˈwɒʃɪŋtən/ — sounds like **WOSH-ing-tun** | /ˈwɑʃɪŋtən/ — sounds like **WAH-shing-tən**
+1728. n. conclusion | /kənˈkluːʒən/ — sounds like **kun-KLOO-zhun** | /kənˈkluʒən/ — sounds like **kun-KLOO-zhən**
+1729. n. cash | /kæʃ/ — sounds like **KASH** | /kæʃ/ — sounds like **KASH**
+1730. n. log | /lɒɡ/ — sounds like **LOG** | /lɔɡ/ — sounds like **LAWG**
+1731. n. tourist | /ˈtʊərɪst/ — sounds like **TOOR-ist** | /ˈtʊrɪst/ — sounds like **TOOR-ist**
+1732. n. bit | /bɪt/ — sounds like **BIT** | /bɪt/ — sounds like **BIT**
+1733. n. application | /ˌæplɪˈkeɪʃən/ — sounds like **AP-li-KAY-shun** | /ˌæpləˈkeɪʃən/ — sounds like **AP-luh-KAY-shən**
+1734. adj. Pacific | /pəˈsɪfɪk/ — sounds like **puh-SIF-ik** | /pəˈsɪfɪk/ — sounds like **puh-SIF-ik**
+1735. v. advance | /ədˈvɑːns/ — sounds like **ud-VAANS** | /ədˈvæns/ — sounds like **ud-VANS**
+1736. n. estimate | /ˈestɪmət/ — sounds like **ES-ti-mut** | /ˈɛstəmət/ — sounds like **ES-tə-mət**
+1737. n. developer | /dɪˈveləpə/ — sounds like **di-VEL-uh-puh** | /dɪˈvɛləpər/ — sounds like **di-VEL-uh-per**
+1738. adj. technological | /ˌteknəˈlɒdʒɪkəl/ — sounds like **TEK-nuh-LOJ-i-kul** | /ˌtɛknəˈlɑdʒɪkəl/ — sounds like **TEK-nuh-LAHJ-i-kəl**
+1739. n. graduate | /ˈɡrædjuət/ — sounds like **GRAD-yoo-uht** | /ˈɡrædʒuət/ — sounds like **GRAD-joo-uht**
+1740. n. seven | /ˈsevən/ — sounds like **SEV-un** | /ˈsɛvən/ — sounds like **SEV-ən**
+1741. v. hunt | /hʌnt/ — sounds like **HUNT** | /hʌnt/ — sounds like **HUNT**
+1742. n. discount | /ˈdɪskaʊnt/ — sounds like **DIS-kownt** | /ˈdɪsˌkaʊnt/ — sounds like **DIS-kownt**
+1743. adj. Buddhist | /ˈbʊdɪst/ — sounds like **BOOD-ist** | /ˈbʊdɪst/ — sounds like **BOOD-ist**
+1744. adj. adequate | /ˈædɪkwət/ — sounds like **AD-i-kwut** | /ˈædəkwət/ — sounds like **AD-ə-kwət**
+1745. adj. internal | /ɪnˈtɜːnəl/ — sounds like **in-TER-nul** | /ɪnˈtɝːnəl/ — sounds like **in-TER-nəl**
+1746. n. humanity | /hjuːˈmænəti/ — sounds like **HYOO-MAN-uh-tee** | /hjuˈmænəti/ — sounds like **HYOO-MAN-ə-tee**
+1747. n. board | /bɔːd/ — sounds like **BAWD** | /bɔrd/ — sounds like **BORD**
+1748. v. direct | /dɪˈrekt/ — sounds like **di-REKT** | /dəˈrɛkt/ — sounds like **duh-REKT**
+1749. n. argument | /ˈɑːɡjʊmənt/ — sounds like **AAH-gyoo-ment** | /ˈɑrɡjəmənt/ — sounds like **AR-gyuh-ment**
+1750. n. artist | /ˈɑːtɪst/ — sounds like **AAH-tist** | /ˈɑrtɪst/ — sounds like **AR-tist**
+1751. v. delay | /dɪˈleɪ/ — sounds like **di-LAY** | /dɪˈleɪ/ — sounds like **di-LAY**
+1752. n. acquisition | /ˌækwɪˈzɪʃən/ — sounds like **AK-wi-ZISH-un** | /ˌækwəˈzɪʃən/ — sounds like **AK-wuh-ZISH-ən**
+1753. n. measurement | /ˈmeʒəmənt/ — sounds like **MEZH-uh-ment** | /ˈmɛʒərmənt/ — sounds like **MEZH-er-ment**
+1754. adj. effective | /ɪˈfektɪv/ — sounds like **i-FEK-tiv** | /ɪˈfɛktɪv/ — sounds like **i-FEK-tiv**
+1755. adv. maybe | /ˈmeɪbi/ — sounds like **MAY-bee** | /ˈmeɪbi/ — sounds like **MAY-bee**
+1756. n. hectare | /ˈhektɑː/ — sounds like **HEK-tah** | /ˈhɛktɑr/ — sounds like **HEK-tar**
+1757. n. wage | /weɪdʒ/ — sounds like **WAYJ** | /weɪdʒ/ — sounds like **WAYJ**
+1758. n. suggestion | /səˈdʒestʃən/ — sounds like **suh-JES-chun** | /səˈdʒɛstʃən/ — sounds like **suh-JES-chən**
+1759. n. favor | /ˈfeɪvə/ — sounds like **FAY-vuh** | /ˈfeɪvər/ — sounds like **FAY-ver**
+1760. abbr. etc | /ɪtˈsetərə/ — sounds like **it-SET-uh-ruh** | /ɪtˈsɛtərə/ — sounds like **it-SET-ər-ə**
+1761. adj. final | /ˈfaɪnəl/ — sounds like **FY-nul** | /ˈfaɪnəl/ — sounds like **FY-nəl**
+1762. n. insight | /ˈɪnsaɪt/ — sounds like **IN-syt** | /ˈɪnˌsaɪt/ — sounds like **IN-syt**
+1763. n. labour | /ˈleɪbə/ — sounds like **LAY-buh** | /ˈleɪbər/ — sounds like **LAY-ber**
+1764. n. colleague | /ˈkɒliːɡ/ — sounds like **KOL-eeg** | /ˈkɑliɡ/ — sounds like **KAH-lig**
+1765. n. biodiversity | /ˌbaɪəʊdaɪˈvɜːsəti/ — sounds like **BY-oh-dy-VUR-suh-tee** | /ˌbaɪoʊdaɪˈvɝːsəti/ — sounds like **BY-oh-dy-VUR-sə-tee**
+1766. n. officer | /ˈɒfɪsə/ — sounds like **OF-i-suh** | /ˈɔfɪsər/ — sounds like **AW-fi-ser**
+1767. n. meal | /miːl/ — sounds like **MEEL** | /mil/ — sounds like **MEEL**
+1768. adj. mobile | /ˈməʊbaɪl/ — sounds like **MOH-byl** | /ˈmoʊbəl/ — sounds like **MOH-bəl**
+1769. adj. Olympic | /əˈlɪmpɪk/ — sounds like **uh-LIM-pik** | /əˈlɪmpɪk/ — sounds like **uh-LIM-pik**
+1770. adv. originally | /əˈrɪdʒənəli/ — sounds like **uh-RIJ-uh-nuh-lee** | /əˈrɪdʒənəli/ — sounds like **uh-RIJ-ə-nə-lee**
+1771. v. strengthen | /ˈstreŋθən/ — sounds like **STRENGTH-uhn** | /ˈstrɛŋθən/ — sounds like **STRENGTH-ən**
+1772. n. deadline | /ˈdedlaɪn/ — sounds like **DED-lyne** | /ˈdɛdˌlaɪn/ — sounds like **DED-lyne**
+1773. v. recognize | /ˈrekəɡnaɪz/ — sounds like **REK-ug-nyz** | /ˈrɛkəɡˌnaɪz/ — sounds like **REK-ug-nyz**
+1774. n. pilot | /ˈpaɪlət/ — sounds like **PY-lut** | /ˈpaɪlət/ — sounds like **PY-lət**
+1775. adv. abroad | /əˈbrɔːd/ — sounds like **uh-BRAWD** | /əˈbrɔd/ — sounds like **uh-BRAWD**
+1776. n. date | /deɪt/ — sounds like **DAYT** | /deɪt/ — sounds like **DAYT**
+1777. adj. round | /raʊnd/ — sounds like **ROWND** | /raʊnd/ — sounds like **ROWND**
+1778. v. exceed | /ɪkˈsiːd/ — sounds like **ik-SEED** | /ɪkˈsid/ — sounds like **ik-SEED**
+1779. n. exercise | /ˈeksəsaɪz/ — sounds like **EK-suh-syz** | /ˈɛksərˌsaɪz/ — sounds like **EK-ser-syz**
+1780. n. length | /leŋθ/ — sounds like **LENGTH** | /lɛŋθ/ — sounds like **LENGTH**
+1781. n. variety | /vəˈraɪəti/ — sounds like **vuh-RY-uh-tee** | /vəˈraɪəti/ — sounds like **vuh-RY-ə-tee**
+1782. v. attend | /əˈtend/ — sounds like **uh-TEND** | /əˈtɛnd/ — sounds like **uh-TEND**
+1783. n. England | /ˈɪŋɡlənd/ — sounds like **ING-glund** | /ˈɪŋɡlənd/ — sounds like **ING-glənd**
+1784. n. opinion | /əˈpɪnjən/ — sounds like **uh-PIN-yun** | /əˈpɪnjən/ — sounds like **uh-PIN-yən**
+1785. adv. secondly | /ˈsekəndli/ — sounds like **SEK-und-lee** | /ˈsɛkəndli/ — sounds like **SEK-ənd-lee**
+1786. n. lung | /lʌŋ/ — sounds like **LUNG** | /lʌŋ/ — sounds like **LUNG**
+1787. v. sell | /sel/ — sounds like **SELL** | /sɛl/ — sounds like **SELL**
+1788. n. distinction | /dɪˈstɪŋkʃən/ — sounds like **di-STINK-shun** | /dɪˈstɪŋkʃən/ — sounds like **di-STINK-shən**
+1789. adj. unconscious | /ʌnˈkɒnʃəs/ — sounds like **un-KON-shus** | /ʌnˈkɑnʃəs/ — sounds like **un-KAHN-shəs**
+1790. n. concept | /ˈkɒnsept/ — sounds like **KON-sept** | /ˈkɑnsɛpt/ — sounds like **KAHN-sept**
+1791. adv. else | /els/ — sounds like **ELS** | /ɛls/ — sounds like **ELS**
+1792. adj. aware | /əˈweə/ — sounds like **uh-WAIR** | /əˈwɛr/ — sounds like **uh-WAIR**
+1793. adv. successfully | /səkˈsesfəli/ — sounds like **suk-SES-fuh-lee** | /səkˈsɛsfəli/ — sounds like **suk-SES-fə-lee**
+1794. n. Edison | /ˈedɪsən/ — sounds like **ED-i-sun** | /ˈɛdɪsən/ — sounds like **ED-i-sən**
+1795. n. member | /ˈmembə/ — sounds like **MEM-buh** | /ˈmɛmbər/ — sounds like **MEM-ber**
+1796. n. maintenance | /ˈmeɪntənəns/ — sounds like **MAYN-tuh-nuns** | /ˈmeɪntənəns/ — sounds like **MAYN-tə-nəns**
+1797. n. father | /ˈfɑːðə/ — sounds like **FAAH-thuh** | /ˈfɑðər/ — sounds like **FAH-ther**
+1798. v. deal | /diːl/ — sounds like **DEEL** | /dil/ — sounds like **DEEL**
+1799. adj. responsible | /rɪˈspɒnsəbəl/ — sounds like **ri-SPON-suh-bul** | /rɪˈspɑnsəbəl/ — sounds like **ri-SPAHN-sə-bəl**
+1800. v. exploit | /ɪkˈsplɔɪt/ — sounds like **ik-SPLOYT** | /ɪkˈsplɔɪt/ — sounds like **ik-SPLOYT**
+1801. v. survive | /səˈvaɪv/ — sounds like **suh-VYV** | /sərˈvaɪv/ — sounds like **ser-VYV**
+1802. v. disappear | /ˌdɪsəˈpɪə/ — sounds like **dis-uh-PEER** | /ˌdɪsəˈpɪr/ — sounds like **dis-uh-PEER**
+1803. n. speaking | /ˈspiːkɪŋ/ — sounds like **SPEE-king** | /ˈspikɪŋ/ — sounds like **SPEE-king**
+1804. v. govern | /ˈɡʌvən/ — sounds like **GUV-uhn** | /ˈɡʌvərn/ — sounds like **GUV-ern**
+1805. adj. familiar | /fəˈmɪljə/ — sounds like **fuh-MIL-yuh** | /fəˈmɪljər/ — sounds like **fuh-MIL-yer**
+1806. n. script | /skrɪpt/ — sounds like **SKRIPT** | /skrɪpt/ — sounds like **SKRIPT**
+1807. adv. probably | /ˈprɒbəbli/ — sounds like **PROB-uh-blee** | /ˈprɑbəbli/ — sounds like **PRAH-bə-blee**
+1808. n. circle | /ˈsɜːkəl/ — sounds like **SER-kul** | /ˈsɝːkəl/ — sounds like **SER-kəl**
+1809. adj. paleolithic | /ˌpeɪliəˈlɪθɪk/ — sounds like **PAY-lee-uh-LITH-ik** | /ˌpeɪliəˈlɪθɪk/ — sounds like **PAY-lee-uh-LITH-ik**
+1810. n. Shakespeare | /ˈʃeɪkspɪə/ — sounds like **SHAYK-speer** | /ˈʃeɪkspɪr/ — sounds like **SHAYK-speer**
+1811. adj. rural | /ˈrʊərəl/ — sounds like **ROOR-ul** | /ˈrʊrəl/ — sounds like **ROOR-əl**
+1812. interj. OK | /əʊˈkeɪ/ — sounds like **oh-KAY** | /oʊˈkeɪ/ — sounds like **oh-KAY**
+1813. n. mouth | /maʊθ/ — sounds like **MOWTH** | /maʊθ/ — sounds like **MOWTH**
+1814. n. shelter | /ˈʃeltə/ — sounds like **SHEL-tuh** | /ˈʃɛltər/ — sounds like **SHEL-ter**
+1815. n. recipe | /ˈresɪpi/ — sounds like **RES-i-pee** | /ˈrɛsəpi/ — sounds like **RES-ə-pee**
+1816. v. felt | /felt/ — sounds like **FELT** | /fɛlt/ — sounds like **FELT**
+1817. n. territory | /ˈterɪtəri/ — sounds like **TER-i-tuh-ree** | /ˈtɛrəˌtɔri/ — sounds like **TER-uh-tor-ee**
+1818. n. entrepreneur | /ˌɒntrəprəˈnɜː/ — sounds like **ON-truh-pruh-NER** | /ˌɑntrəprəˈnɝː/ — sounds like **AHN-truh-pruh-NER**
+1819. n. pump | /pʌmp/ — sounds like **PUMP** | /pʌmp/ — sounds like **PUMP**
+1820. n. temple | /ˈtempəl/ — sounds like **TEM-pul** | /ˈtɛmpəl/ — sounds like **TEM-pəl**
+1821. v. contribute | /kənˈtrɪbjuːt/ — sounds like **kun-TRIB-yoot** | /kənˈtrɪbjut/ — sounds like **kun-TRIB-yoot**
+1822. adj. artificial | /ˌɑːtɪˈfɪʃəl/ — sounds like **AAH-ti-FISH-ul** | /ˌɑrtəˈfɪʃəl/ — sounds like **AR-tuh-FISH-əl**
+1823. n. interaction | /ˌɪntərˈækʃən/ — sounds like **IN-ter-AK-shun** | /ˌɪntərˈækʃən/ — sounds like **IN-ter-AK-shən**
+1824. n. corn | /kɔːn/ — sounds like **KAWN** | /kɔrn/ — sounds like **KORN**
+1825. n. breath | /breθ/ — sounds like **BRETH** | /brɛθ/ — sounds like **BRETH**
+1826. v. release | /rɪˈliːs/ — sounds like **ri-LEES** | /rɪˈlis/ — sounds like **ri-LEES**
+1827. n. meat | /miːt/ — sounds like **MEET** | /mit/ — sounds like **MEET**
+1828. n. Iceland | /ˈaɪslənd/ — sounds like **EYE-slund** | /ˈaɪslənd/ — sounds like **EYE-slənd**
+1829. adj. insufficient | /ˌɪnsəˈfɪʃənt/ — sounds like **IN-suh-FISH-unt** | /ˌɪnsəˈfɪʃənt/ — sounds like **IN-suh-FISH-ənt**
+1830. n. training | /ˈtreɪnɪŋ/ — sounds like **TRAY-ning** | /ˈtreɪnɪŋ/ — sounds like **TRAY-ning**
+1831. n. Ironbridge | /ˈaɪənbrɪdʒ/ — sounds like **EYE-uhn-bridge** | /ˈaɪərnbrɪdʒ/ — sounds like **EYE-ern-bridge**
+1832. n. guy | /ɡaɪ/ — sounds like **GY** | /ɡaɪ/ — sounds like **GY**
+1833. n. coral | /ˈkɒrəl/ — sounds like **KOR-ul** | /ˈkɔrəl/ — sounds like **KOR-əl**
+1834. n. nose | /nəʊz/ — sounds like **NOHZ** | /noʊz/ — sounds like **NOHZ**
+1835. adj. continental | /ˌkɒntɪˈnentəl/ — sounds like **KON-ti-NEN-tul** | /ˌkɑntəˈnɛntəl/ — sounds like **KAHN-tuh-NEN-təl**
+1836. n. Lewis | /ˈluːɪs/ — sounds like **LOO-iss** | /ˈluɪs/ — sounds like **LOO-iss**
+1837. adj. presidential | /ˌprezɪˈdenʃəl/ — sounds like **PREZ-i-DEN-shul** | /ˌprɛzəˈdɛnʃəl/ — sounds like **PREZ-uh-DEN-shəl**
+1838. abbr. PPT | /ˌpiː piː ˈtiː/ — sounds like **PEE-PEE-TEE** | /ˌpi pi ˈti/ — sounds like **pee-pee-TEE**
+1839. adj. dynamic | /daɪˈnæmɪk/ — sounds like **dy-NAM-ik** | /daɪˈnæmɪk/ — sounds like **dy-NAM-ik**
+1840. n. traffic | /ˈtræfɪk/ — sounds like **TRAF-ik** | /ˈtræfɪk/ — sounds like **TRAF-ik**
+1841. adv. steadily | /ˈstedɪli/ — sounds like **STED-i-lee** | /ˈstɛdəli/ — sounds like **STED-ə-lee**
+1842. n. oxygen | /ˈɒksɪdʒən/ — sounds like **OK-si-jun** | /ˈɑksɪdʒən/ — sounds like **AHK-si-jən**
+1843. adj. impressive | /ɪmˈpresɪv/ — sounds like **im-PRES-iv** | /ɪmˈprɛsɪv/ — sounds like **im-PRES-iv**
+1844. n. tail | /teɪl/ — sounds like **TAYL** | /teɪl/ — sounds like **TAYL**
+1845. n. peanut | /ˈpiːnʌt/ — sounds like **PEE-nut** | /ˈpinʌt/ — sounds like **PEE-nut**
+1846. n. traveler | /ˈtrævələ/ — sounds like **TRAV-uh-luh** | /ˈtrævələr/ — sounds like **TRAV-uh-ler**
+1847. v. overlap | /ˌəʊvəˈlæp/ — sounds like **OH-vuh-LAP** | /ˌoʊvərˈlæp/ — sounds like **OH-ver-LAP**
+1848. v. spread | /spred/ — sounds like **SPRED** | /sprɛd/ — sounds like **SPRED**
+1849. adj. bankrupt | /ˈbæŋkrʌpt/ — sounds like **BANG-krupt** | /ˈbæŋkrʌpt/ — sounds like **BANG-krupt**
+1850. adv. outside | /ˌaʊtˈsaɪd/ — sounds like **OUT-SYD** | /ˌaʊtˈsaɪd/ — sounds like **OUT-SYD**
+1851. v. burn | /bɜːn/ — sounds like **BERN** | /bɝːn/ — sounds like **BERN**
+1852. n. curiosity | /ˌkjʊəriˈɒsəti/ — sounds like **KYOO-ree-OS-uh-tee** | /ˌkjʊriˈɑsəti/ — sounds like **KYOO-ree-AH-sə-tee**
+1853. n. pole | /pəʊl/ — sounds like **POHL** | /poʊl/ — sounds like **POHL**
+1854. n. microbe | /ˈmaɪkrəʊb/ — sounds like **MY-krohb** | /ˈmaɪkroʊb/ — sounds like **MY-krohb**
+1855. adj. necessary | /ˈnesəsəri/ — sounds like **NES-uh-suh-ree** | /ˈnɛsəˌsɛri/ — sounds like **NES-uh-sair-ee**
+1856. n. mouse | /maʊs/ — sounds like **MOWS** | /maʊs/ — sounds like **MOWS**
+1857. n. discipline | /ˈdɪsɪplɪn/ — sounds like **DIS-i-plin** | /ˈdɪsəplɪn/ — sounds like **DIS-uh-plin**
+1858. n. Sydney | /ˈsɪdni/ — sounds like **SID-nee** | /ˈsɪdni/ — sounds like **SID-nee**
+1859. n. farm | /fɑːm/ — sounds like **FAAHM** | /fɑrm/ — sounds like **FARM**
+1860. adj. profound | /prəˈfaʊnd/ — sounds like **pruh-FOWND** | /prəˈfaʊnd/ — sounds like **pruh-FOWND**
+1861. adj. long-term | /ˌlɒŋ ˈtɜːm/ — sounds like **LONG TERM** | /ˌlɔŋ ˈtɝːm/ — sounds like **LAWNG TERM**
+1862. v. select | /sɪˈlekt/ — sounds like **si-LEKT** | /səˈlɛkt/ — sounds like **suh-LEKT**
+1863. n. jury | /ˈdʒʊəri/ — sounds like **JOOR-ee** | /ˈdʒʊri/ — sounds like **JOOR-ee**
+1864. n. Oxford | /ˈɒksfəd/ — sounds like **OKS-fud** | /ˈɑksfərd/ — sounds like **AHKS-ferd**
+1865. adv. surely | /ˈʃʊəli/ — sounds like **SHOOR-lee** | /ˈʃʊrli/ — sounds like **SHOOR-lee**
+1866. n. teenager | /ˈtiːneɪdʒə/ — sounds like **TEE-nay-juh** | /ˈtineɪdʒər/ — sounds like **TEE-nay-jer**
+1867. adv. directly | /dɪˈrektli/ — sounds like **di-REKT-lee** | /dəˈrɛktli/ — sounds like **duh-REKT-lee**
+1868. n. foot | /fʊt/ — sounds like **FOOT** | /fʊt/ — sounds like **FOOT**
+1869. n. error | /ˈerə/ — sounds like **ER-uh** | /ˈɛrər/ — sounds like **ER-er**
+1870. adj. Chinese | /ˌtʃaɪˈniːz/ — sounds like **chy-NEEZ** | /ˌtʃaɪˈniz/ — sounds like **chy-NEEZ**
+1871. adj. underground | /ˈʌndəɡraʊnd/ — sounds like **UN-duh-grownd** | /ˈʌndərˌɡraʊnd/ — sounds like **UN-der-grownd**
+1872. n. mechanism | /ˈmekənɪzəm/ — sounds like **MEK-uh-niz-um** | /ˈmɛkəˌnɪzəm/ — sounds like **MEK-uh-niz-əm**
+1873. adj. rich | /rɪtʃ/ — sounds like **RICH** | /rɪtʃ/ — sounds like **RICH**
+1874. n. stuff | /stʌf/ — sounds like **STUF** | /stʌf/ — sounds like **STUF**
+1875. n. shopping | /ˈʃɒpɪŋ/ — sounds like **SHOP-ing** | /ˈʃɑpɪŋ/ — sounds like **SHAHP-ing**
+1876. n. proportion | /prəˈpɔːʃən/ — sounds like **pruh-PAW-shun** | /prəˈpɔrʃən/ — sounds like **pruh-POR-shən**
+1877. adj. quiet | /ˈkwaɪət/ — sounds like **KWY-ut** | /ˈkwaɪət/ — sounds like **KWY-ət**
+1878. n. typewriter | /ˈtaɪpraɪtə/ — sounds like **TY-pry-tuh** | /ˈtaɪpˌraɪtər/ — sounds like **TY-pry-ter**
+1879. v. prefer | /prɪˈfɜː/ — sounds like **pri-FER** | /prɪˈfɝː/ — sounds like **pri-FER**
+1880. n. club | /klʌb/ — sounds like **KLUB** | /klʌb/ — sounds like **KLUB**
+1881. n. birth | /bɜːθ/ — sounds like **BERTH** | /bɝːθ/ — sounds like **BERTH**
+1882. n. transportation | /ˌtrænspɔːˈteɪʃən/ — sounds like **TRAN-spaw-TAY-shun** | /ˌtrænspɔrˈteɪʃən/ — sounds like **TRAN-spor-TAY-shən**
+1883. adj. demographic | /ˌdeməˈɡræfɪk/ — sounds like **DEM-uh-GRAF-ik** | /ˌdɛməˈɡræfɪk/ — sounds like **DEM-uh-GRAF-ik**
+1884. n. television | /ˈtelɪvɪʒən/ — sounds like **TEL-i-VIH-zhun** | /ˈtɛləˌvɪʒən/ — sounds like **TEL-uh-VIH-zhən**
+1885. v. interpret | /ɪnˈtɜːprɪt/ — sounds like **in-TER-prit** | /ɪnˈtɝːprɪt/ — sounds like **in-TER-prit**
+1886. adj. closer | /ˈkləʊzə/ — sounds like **KLOH-zuh** | /ˈkloʊzər/ — sounds like **KLOH-zer**
+1887. n. Columbus | /kəˈlʌmbəs/ — sounds like **kuh-LUM-bus** | /kəˈlʌmbəs/ — sounds like **kuh-LUM-bəs**
+1888. adj. powerful | /ˈpaʊəfəl/ — sounds like **POW-uh-ful** | /ˈpaʊərfəl/ — sounds like **POW-er-fəl**
+1889. n. academy | /əˈkædəmi/ — sounds like **uh-KAD-uh-mee** | /əˈkædəmi/ — sounds like **uh-KAD-ə-mee**
+1890. n. cow | /kaʊ/ — sounds like **KOW** | /kaʊ/ — sounds like **KOW**
+1891. adj. emotional | /ɪˈməʊʃənəl/ — sounds like **i-MOH-shun-ul** | /ɪˈmoʊʃənəl/ — sounds like **i-MOH-shə-nəl**
+1892. v. exhibit | /ɪɡˈzɪbɪt/ — sounds like **ig-ZIB-it** | /ɪɡˈzɪbɪt/ — sounds like **ig-ZIB-it**
+1893. n. artifact | /ˈɑːtɪfækt/ — sounds like **AAH-ti-fakt** | /ˈɑrtəˌfækt/ — sounds like **AR-tuh-fakt**
+1894. n. heating | /ˈhiːtɪŋ/ — sounds like **HEE-ting** | /ˈhitɪŋ/ — sounds like **HEE-ting**
+1895. adj. fertile | /ˈfɜːtaɪl/ — sounds like **FER-tyl** | /ˈfɝːtəl/ — sounds like **FER-təl**
+1896. n. literacy | /ˈlɪtərəsi/ — sounds like **LIT-uh-ruh-see** | /ˈlɪtərəsi/ — sounds like **LIT-ər-ə-see**
+1897. adj. commercial | /kəˈmɜːʃəl/ — sounds like **kuh-MER-shul** | /kəˈmɝːʃəl/ — sounds like **kuh-MER-shəl**
+1898. adv. simply | /ˈsɪmpli/ — sounds like **SIM-plee** | /ˈsɪmpli/ — sounds like **SIM-plee**
+1899. adj. Arabic | /ˈærəbɪk/ — sounds like **AR-uh-bik** | /ˈærəbɪk/ — sounds like **AR-ə-bik**
+1900. n. telescope | /ˈtelɪskəʊp/ — sounds like **TEL-i-skohp** | /ˈtɛləˌskoʊp/ — sounds like **TEL-uh-skohp**
+1901. n. mystery | /ˈmɪstəri/ — sounds like **MIS-tuh-ree** | /ˈmɪstəri/ — sounds like **MIS-tər-ee**
+1902. n. assumption | /əˈsʌmpʃən/ — sounds like **uh-SUMP-shun** | /əˈsʌmpʃən/ — sounds like **uh-SUMP-shən**
+1903. n. poetry | /ˈpəʊɪtri/ — sounds like **POH-i-tree** | /ˈpoʊətri/ — sounds like **POH-uh-tree**
+1904. n. independence | /ˌɪndɪˈpendəns/ — sounds like **IN-di-PEN-duns** | /ˌɪndəˈpɛndəns/ — sounds like **IN-duh-PEN-dəns**
+1905. n. hypothesis | /haɪˈpɒθəsɪs/ — sounds like **hy-POTH-uh-sis** | /haɪˈpɑθəsɪs/ — sounds like **hy-PAH-thə-sis**
+1906. v. locate | /ləʊˈkeɪt/ — sounds like **loh-KAYT** | /loʊˈkeɪt/ — sounds like **loh-KAYT**
+1907. n. melatonin | /ˌmeləˈtəʊnɪn/ — sounds like **MEL-uh-TOH-nin** | /ˌmɛləˈtoʊnɪn/ — sounds like **MEL-uh-TOH-nin**
+1908. n. box | /bɒks/ — sounds like **BOX** | /bɑks/ — sounds like **BAHKS**
+1909. v. accelerate | /əkˈseləreɪt/ — sounds like **uk-SEL-uh-rayt** | /ækˈsɛləˌreɪt/ — sounds like **ak-SEL-uh-rayt**
+1910. n. engineer | /ˌendʒɪˈnɪə/ — sounds like **en-ji-NEER** | /ˌendʒəˈnɪr/ — sounds like **en-juh-NEER**
+1911. n. candidate | /ˈkændɪdeɪt/ — sounds like **KAN-di-dayt** | /ˈkændəˌdeɪt/ — sounds like **KAN-duh-dayt**
+1912. v. draw | /drɔː/ — sounds like **DRAW** | /drɔ/ — sounds like **DRAW**
+1913. adj. negative | /ˈneɡətɪv/ — sounds like **NEG-uh-tiv** | /ˈnɛɡətɪv/ — sounds like **NEG-uh-tiv**
+1914. adj. accurate | /ˈækjʊrət/ — sounds like **AK-yuh-rit** | /ˈækjərət/ — sounds like **AK-yur-ət**
+1915. n. attribute | /ˈætrɪbjuːt/ — sounds like **AT-ri-byoot** | /ˈætrɪˌbjut/ — sounds like **AT-ri-byoot**
+1916. n. October | /ɒkˈtəʊbə/ — sounds like **ok-TOH-buh** | /ɑkˈtoʊbɚ/ — sounds like **ok-TOH-ber**
+1917. n. observation | /ˌɒbzəˈveɪʃən/ — sounds like **ob-zuh-VAY-shun** | /ˌɑbzɚˈveɪʃən/ — sounds like **ob-zur-VAY-shən**
+1918. n. people watching | /ˈpiːpəl ˈwɒtʃɪŋ/ — sounds like **PEE-pul WOTCH-ing** | /ˈpipəl ˈwɑtʃɪŋ/ — sounds like **PEE-pul WAHCH-ing**
+1919. n. Hollywood | /ˈhɒliwʊd/ — sounds like **HOL-ee-wood** | /ˈhɑliˌwʊd/ — sounds like **HOL-ee-wood**
+1920. n. buyer | /ˈbaɪə/ — sounds like **BY-uh** | /ˈbaɪər/ — sounds like **BY-er**
+1921. adj. civil | /ˈsɪvəl/ — sounds like **SIV-uhl** | /ˈsɪvəl/ — sounds like **SIV-uhl**
+1922. n. USA | /ˌjuː es ˈeɪ/ — sounds like **YOO-ess-AY** | /ˌju es ˈeɪ/ — sounds like **YOO-ess-AY**
+1923. n. simulation | /ˌsɪmjʊˈleɪʃən/ — sounds like **SIM-yuh-LAY-shun** | /ˌsɪmjəˈleɪʃən/ — sounds like **SIM-yuh-LAY-shən**
+1924. adj. meaningful | /ˈmiːnɪŋfʊl/ — sounds like **MEE-ning-ful** | /ˈminɪŋfəl/ — sounds like **MEE-ning-fəl**
+1925. n. chemistry | /ˈkemɪstri/ — sounds like **KEM-iss-tree** | /ˈkɛmɪstri/ — sounds like **KEM-iss-tree**
+1926. n. supplement | /ˈsʌplɪmənt/ — sounds like **SUP-li-munt** | /ˈsʌpləmənt/ — sounds like **SUP-luh-mənt**
+1927. v. pack | /pæk/ — sounds like **PAK** | /pæk/ — sounds like **PAK**
+1928. n. fellow | /ˈfeləʊ/ — sounds like **FEL-oh** | /ˈfɛloʊ/ — sounds like **FEL-oh**
+1929. n. bacteria | /bækˈtɪəriə/ — sounds like **bak-TEER-ee-uh** | /bækˈtɪriə/ — sounds like **bak-TEER-ee-uh**
+1930. n. contract | /ˈkɒntrækt/ — sounds like **KON-trakt** | /ˈkɑnˌtrækt/ — sounds like **KAHN-trakt**
+1931. n. canal | /kəˈnæl/ — sounds like **kuh-NAL** | /kəˈnæl/ — sounds like **kuh-NAL**
+1932. v. extract | /ɪkˈstrækt/ — sounds like **ik-STRAKT** | /ɪkˈstrækt/ — sounds like **ik-STRAKT**
+1933. n. participation | /pɑːˌtɪsɪˈpeɪʃən/ — sounds like **par-TIS-i-PAY-shun** | /pɑrˌtɪsəˈpeɪʃən/ — sounds like **par-TIS-uh-PAY-shən**
+1934. n. album | /ˈælbəm/ — sounds like **AL-bum** | /ˈælbəm/ — sounds like **AL-bəm**
+1935. v. acquire | /əˈkwaɪə/ — sounds like **uh-KWY-uh** | /əˈkwaɪər/ — sounds like **uh-KWY-er**
+1936. n. boat | /bəʊt/ — sounds like **BOHT** | /boʊt/ — sounds like **BOHT**
+1937. adj. logical | /ˈlɒdʒɪkəl/ — sounds like **LOJ-ih-kul** | /ˈlɑdʒɪkəl/ — sounds like **LAHJ-ih-kul**
+1938. adv. nearly | /ˈnɪəli/ — sounds like **NEER-lee** | /ˈnɪrli/ — sounds like **NEER-lee**
+1939. n. tool | /tuːl/ — sounds like **TOOL** | /tul/ — sounds like **TOOL**
+1940. adj. full | /fʊl/ — sounds like **FULL** | /fʊl/ — sounds like **FULL**
+1941. v. die | /daɪ/ — sounds like **DYE** | /daɪ/ — sounds like **DYE**
+1942. adj. sophisticated | /səˈfɪstɪkeɪtɪd/ — sounds like **suh-FIS-ti-kay-tid** | /səˈfɪstɪˌkeɪtɪd/ — sounds like **suh-FIS-ti-kay-tid**
+1943. adj. Northern | /ˈnɔːðən/ — sounds like **NAW-thən** | /ˈnɔrðərn/ — sounds like **NOR-thurn**
+1944. n. audition | /ɔːˈdɪʃən/ — sounds like **aw-DISH-uhn** | /ɔˈdɪʃən/ — sounds like **aw-DISH-ən**
+1945. adj. artistic | /ɑːˈtɪstɪk/ — sounds like **aa-TIS-tik** | /ɑrˈtɪstɪk/ — sounds like **ar-TIS-tik**
+1946. n. village | /ˈvɪlɪdʒ/ — sounds like **VIL-ij** | /ˈvɪlɪdʒ/ — sounds like **VIL-ij**
+1947. adj. distant | /ˈdɪstənt/ — sounds like **DIS-tunt** | /ˈdɪstənt/ — sounds like **DIS-tənt**
+1948. v. devastate | /ˈdevəsteɪt/ — sounds like **DEV-uh-stayt** | /ˈdɛvəˌsteɪt/ — sounds like **DEV-uh-stayt**
+1949. adj. visible | /ˈvɪzɪbəl/ — sounds like **VIZ-uh-bul** | /ˈvɪzəbəl/ — sounds like **VIZ-uh-bəl**
+1950. n. writer | /ˈraɪtə/ — sounds like **RY-tuh** | /ˈraɪtər/ — sounds like **RY-ter**
+1951. n. studio | /ˈstjuːdiəʊ/ — sounds like **STYOO-dee-oh** | /ˈstudiˌoʊ/ — sounds like **STOO-dee-oh**
+1952. n. string | /strɪŋ/ — sounds like **STRING** | /strɪŋ/ — sounds like **STRING**
+1953. n. passage | /ˈpæsɪdʒ/ — sounds like **PAS-ij** | /ˈpæsɪdʒ/ — sounds like **PAS-ij**
+1954. adv. mainly | /ˈmeɪnli/ — sounds like **MAYN-lee** | /ˈmeɪnli/ — sounds like **MAYN-lee**
+1955. n. incentive | /ɪnˈsentɪv/ — sounds like **in-SEN-tiv** | /ɪnˈsɛntɪv/ — sounds like **in-SEN-tiv**
+1956. n. Monash | /ˈmɒnæʃ/ — sounds like **MON-ash** | /ˈmɑnæʃ/ — sounds like **MAHN-ash**
+1957. n. bridge | /brɪdʒ/ — sounds like **BRIJ** | /brɪdʒ/ — sounds like **BRIJ**
+1958. n. police | /pəˈliːs/ — sounds like **puh-LEES** | /pəˈlis/ — sounds like **puh-LEES**
+1959. n. email | /ˈiːmeɪl/ — sounds like **EE-mail** | /ˈiːmeɪl/ — sounds like **EE-mail**
+1960. n. interpreter | /ɪnˈtɜːprɪtə/ — sounds like **in-TUR-pri-tuh** | /ɪnˈtɝːprɪtər/ — sounds like **in-TUR-pri-ter**
+1961. n. confusion | /kənˈfjuːʒən/ — sounds like **kun-FYOO-zhun** | /kənˈfjuʒən/ — sounds like **kun-FYOO-zhən**
+1962. n. restaurant | /ˈrestərɒnt/ — sounds like **RES-tuh-ron(t)** | /ˈrɛst(ə)ˌrɑnt/ — sounds like **REST-uh-rant**
+1963. adj. geographic | /ˌdʒiːəˈɡræfɪk/ — sounds like **jee-uh-GRAF-ik** | /ˌdʒioʊˈɡræfɪk/ — sounds like **jee-oh-GRAF-ik**
+1964. n. visitor | /ˈvɪzɪtə/ — sounds like **VIZ-i-tuh** | /ˈvɪzɪtər/ — sounds like **VIZ-i-ter**
+1965. n. departure | /dɪˈpɑːtʃə/ — sounds like **di-PAARCH-uh** | /dɪˈpɑrtʃər/ — sounds like **di-PARCH-er**
+1966. n. Thursday | /ˈθɜːzdeɪ/ — sounds like **THURZ-day** | /ˈθɝzdeɪ/ — sounds like **THURZ-day**
+1967. v. welcome | /ˈwelkəm/ — sounds like **WEL-kum** | /ˈwɛlkəm/ — sounds like **WEL-kəm**
+1968. n. rock | /rɒk/ — sounds like **ROK** | /rɑk/ — sounds like **RAHK**
+1969. n. institution | /ˌɪnstɪˈtjuːʃən/ — sounds like **in-sti-TYOO-shun** | /ˌɪnstɪˈtuʃən/ — sounds like **in-sti-TOO-shən**
+1970. n. conservation | /ˌkɒnsəˈveɪʃən/ — sounds like **kon-suh-VAY-shun** | /ˌkɑnsɚˈveɪʃən/ — sounds like **KAHN-sər-VAY-shən**
+1971. adj. crucial | /ˈkruːʃəl/ — sounds like **KROO-shul** | /ˈkruʃəl/ — sounds like **KROO-shəl**
+1972. n. ecology | /iːˈkɒlədʒi/ — sounds like **ee-KOL-uh-jee** | /ɪˈkɑlədʒi/ — sounds like **ih-KAHL-uh-jee**
+1973. n. dirt | /dɜːt/ — sounds like **DERT** | /dɝt/ — sounds like **DERT**
+1974. v. absorb | /əbˈzɔːb/ — sounds like **ub-ZAWB** | /əbˈzɔrb/ — sounds like **ub-ZORB**
+1975. n. writing | /ˈraɪtɪŋ/ — sounds like **RY-ting** | /ˈraɪtɪŋ/ — sounds like **RY-ting**
+1976. adj. heavy | /ˈhevi/ — sounds like **HEV-ee** | /ˈhɛvi/ — sounds like **HEV-ee**
+1977. adj. unknown | /ʌnˈnəʊn/ — sounds like **un-NOHN** | /ʌnˈnoʊn/ — sounds like **un-NOHN**
+1978. n. factory | /ˈfæktəri/ — sounds like **FAK-tuh-ree** | /ˈfækt(ə)ri/ — sounds like **FAK-tə-ree**
+1979. n. performance | /pəˈfɔːməns/ — sounds like **puh-FAWM-uhns** | /pərˈfɔrməns/ — sounds like **per-FORM-əns**
+1980. v. advise | /ədˈvaɪz/ — sounds like **ud-VYZ** | /ədˈvaɪz/ — sounds like **ud-VYZ**
+1981. n. weakness
+1982. n. sky
+1983. pron. mine
+1984. n. tunnel
+1985. n. kitchen
+1986. n. breakfast
+1987. adj. seventeenth
+1988. n. immigration
+1989. v. prevent
+1990. v. finish
+1991. adj. Southern
+1992. pron. anything
+1993. n. recovery
+1994. adj. verbal
+1995. v. visit
+1996. v. click
+1997. n. leg
+1998. n. crisis
+1999. n. tradition
+2000. v. mimic
+2001. n. pollution
+2002. adj. radical
+2003. adj. organic
+2004. adv. inevitably
+2005. adv. earlier
+2006. v. suit
+2007. v. operate
+2008. n. spending
+2009. n. prescription
+2010. n. cooperation
+2011. n. wine
+2012. adj. willing
+2013. n. preschool
+2014. n. morning
+2015. n. pioneer
+2016. n. explosion
+2017. n. calendar
+2018. n. criticism
+2019. n. button
+2020. n. representative
+2021. n. sir
+2022. adj. local
+2023. n. leisure
+2024. v. translate
+2025. adv. everywhere
+2026. n. intelligence
+2027. n. storage
+2028. n. medicine
+2029. n. festival
+2030. n. corner
+2031. n. smell
+2032. n. consequence
+2033. v. pass
+2034. adj. working
+2035. v. agree
+2036. n. foundation
+2037. adj. printed
+2038. n. location
+2039. n. December
+2040. n. sensor
+2041. v. print
+2042. n. hurricane
+2043. n. thought
+2044. n. donor
+2045. prep. toward
+2046. n. rank
+2047. n. Piaget
+2048. n. plane
+2049. adv. perhaps
+2050. n. coast
+2051. pron. neither
+2052. v. deliver
+2053. v. circulate
+2054. n. reader
+2055. n. Chicago
+2056. n. marketing
+2057. adj. hotter
+2058. n. plate
+2059. n. trading
+2060. n. narrative
+2061. n. Arab
+2062. n. phrase
+2063. adj. abstract
+2064. adj. comparable
+2065. v. perform
+2066. n. sustainability
+2067. adj. fresh
+2068. n. row
+2069. n. centre
+2070. n. sport
+2071. n. title
+2072. n. highway
+2073. n. requirement
+2074. adj. variable
+2075. adj. influential
+2076. n. alternative
+2077. v. correct
+2078. n. doctor
+2079. n. concert
+2080. n. facility
+2081. n. foreigner
+2082. n. egg
+2083. n. friend
+2084. n. saving
+2085. n. publication
+2086. n. emphasis
+2087. n. knee
+2088. adj. strict
+2089. n. truth
+2090. v. drink
+2091. v. emerge
+2092. n. mosquito
+2093. n. darkness
+2094. adj. Dry
+2095. adv. quickly
+2096. n. confidence
+2097. adv. alone
+2098. n. dollar
+2099. n. paragraph
+2100. v. prescribe
+2101. v. blow
+2102. pron. nothing
+2103. n. review
+2104. n. status
+2105. v. mar
+2106. adv. certainly
+2107. n. carrot
+2108. n. nutrient
+2109. n. room
+2110. v. convey
+2111. adj. historical
+2112. n. pool
+2113. v. invent
+2114. adj. flat
+2115. n. gist
+2116. n. wing
+2117. adj. intellectual
+2118. n. leaf
+2119. adj. cultural
+2120. adj. Latin
+2121. adj. Greek
+2122. v. communicate
+2123. v. specialize
+2124. v. recall
+2125. n. resolution
+2126. n. code
+2127. n. nectar
+2128. n. characteristic
+2129. adj. frequent
+2130. n. zone
+2131. adj. explicit
+2132. n. graph
+2133. adj. vivid
+2134. n. portrait
+2135. n. disorder
+2136. adj. genetic
+2137. n. progress
+2138. n. clicker
+2139. v. participate
+2140. n. distance
+2141. n. workforce
+2142. n. environmentalist
+2143. n. category
+2144. n. height
+2145. adv. largely
+2146. n. planning
+2147. n. cart
+2148. v. reach
+2149. n. farmland
+2150. adv. heavily
+2151. n. submarine
+2152. n. monster
+2153. adv. mostly
+2154. n. aviation
+2155. n. monkey
+2156. n. countryside
+2157. n. bully
+2158. n. star
+2159. n. General
+2160. adj. functional
+2161. n. destruction
+2162. n. equator
+2163. n. wildlife
+2164. adj. cool
+2165. adv. internationally
+2166. n. ancestor
+2167. abbr. DR
+2168. n. staff
+2169. n. antibody
+2170. n. specialist
+2171. n. guideline
+2172. n. instructor
+2173. n. morris
+2174. v. avoid
+2175. adj. everyday
+2176. n. Asda
+2177. adj. experienced
+2178. n. success
+2179. n. indication
+2180. n. bone
+2181. adv. approximately
+2182. n. file
+2183. n. textbook
+2184. adv. increasingly
+2185. n. reform
+2186. n. unemployment
+2187. n. assessment
+2188. n. chart
+2189. n. burden
+2190. adj. historic
+2191. prep. onto
+2192. v. wander
+2193. v. educate
+2194. adj. attractive
+2195. n. geography
+2196. n. tech
+2197. n. medal
+2198. n. secret
+2199. v. fill
+2200. n. competence
+2201. n. sex
+2202. n. sunlight
+2203. n. supermarket
+2204. n. novel
+2205. n. river
+2206. n. semester
+2207. n. spring
+2208. n. warning
+2209. n. winner
+2210. v. consume
+2211. pron. none
+2212. n. finding
+2213. n. participant
+2214. v. organize
+2215. n. contact
+2216. n. fire
+2217. n. burger
+2218. n. seminar
+2219. n. treatment
+2220. adj. cognitive
+2221. n. Andersen
+2222. n. software
+2223. n. election
+2224. adj. French
+2225. n. moth
+2226. adj. opposite
+2227. adj. excellent
+2228. v. buy
+2229. adv. forward
+2230. conj. though
+2231. n. gap
+2232. n. scheme
+2233. v. complain
+2234. n. Brazil
+2235. adj. poor
+2236. n. sentence
+2237. n. intervention
+2238. n. browser
+2239. adv. meanwhile
+2240. n. sugar
+2241. n. oil
+2242. n. psychologist
+2243. n. volunteer
+2244. adj. bilingual
+2245. n. patient
+2246. adj. competent
+2247. n. explanation
+2248. n. metal
+2249. adv. absolutely
+2250. v. chill
+2251. n. pressure
+2252. n. cataract
+2253. n. establishment
+2254. adj. chronic
+2255. v. quote
+2256. v. declare
+2257. adj. positive
+2258. n. archaeology
+2259. adv. partly
+2260. n. minimum
+2261. adv. virtually
+2262. n. curriculum
+2263. n. extension
+2264. adj. enormous
+2265. n. fee
+2266. v. store
+2267. n. migrant
+2268. n. maximum
+2269. n. similarity
+2270. n. economics
+2271. v. hit
+2272. adj. significant
+2273. v. obtain
+2274. adj. developed
+2275. adv. necessarily
+2276. adv. longer
+2277. n. spot
+2278. n. port
+2279. n. owner
+2280. v. wear
+2281. n. depression
+2282. adj. moderate
+2283. n. wave
+2284. v. pick
+2285. n. front
+2286. n. SpaceX
+2287. adv. automatically
+2288. n. pain
+2289. n. consciousness
+2290. adj. raw
+2291. n. talent
+2292. n. longitude
+2293. v. ensure
+2294. v. kill
+2295. n. phone
+2296. adj. comprehensive
+2297. n. quantity
+2298. n. flow
+2299. adj. interesting
+2300. n. thanks
+2301. n. prey
+2302. n. expenditure
+2303. n. eel
+2304. n. square
+2305. n. expertise
+2306. adj. sustainable
+2307. n. mammal
+2308. n. essay
+2309. n. fertilizer
+2310. n. selection
+2311. v. cope
+2312. n. tone
+2313. n. stem
+2314. n. couple
+2315. n. user
+2316. n. conflict
+2317. n. journalist
+2318. adj. affordable
+2319. n. Diaspora
+2320. adj. diverse
+2321. v. constitute
+2322. n. carbon
+2323. v. conduct
+2324. n. volume
+2325. n. credit
+2326. n. manner
+2327. v. enter
+2328. adj. wooden
+2329. n. center
+2330. v. listen
+2331. n. note
+2332. n. concentration
+2333. pron. nobody
+2334. v. stretch
+2335. n. limit
+2336. v. intend
+2337. n. tale
+2338. n. Mr
+2339. n. Bhutan
+2340. n. daughter
+2341. n. Jack
+2342. n. freedom
+2343. adv. exactly
+2344. v. perceive
+2345. n. laboratory
+2346. v. encounter
+2347. n. retail
+2348. adj. acceptable
+2349. n. pound
+2350. n. recession
+2351. v. appreciate
+2352. n. framework
+2353. adj. annual
+2354. adj. Spanish
+2355. n. stickleback
+2356. n. thesis
+2357. n. interior
+2358. adj. Amazonian
+2359. v. overcome
+2360. n. minority
+2361. n. court
+2362. v. hope
+2363. adj. tall
+2364. n. dean
+2365. v. pull
+2366. n. grant
+2367. n. Match
+2368. n. convention
+2369. adj. external
+2370. n. function
+2371. v. paint
+2372. adv. predominantly
+2373. interj. yes
+2374. n. presentation
+2375. n. pesticide
+2376. n. pharmacist
+2377. abbr. UN
+2378. adj. tremendous
+2379. n. driver
+2380. v. swim
+2381. n. infection
+2382. adj. successful
+2383. prep. besides
+2384. adv. finally
+2385. v. vary
+2386. n. video
+2387. adv. currently
+2388. adj. numerous
+2389. n. battery
+2390. n. choice
+2391. n. deposit
+2392. v. revise
+2393. v. feed
+2394. v. imagine
+2395. v. import
+2396. n. counter
+2397. n. grass
+2398. adj. Liberal
+2399. n. mood
+2400. n. heart
+2401. n. waste
+2402. n. advertisement
+2403. n. onion
+2404. adj. accessible
+2405. v. serve
+2406. n. desert
+2407. v. arise
+2408. n. programmer
+2409. n. block
+2410. n. preparation
+2411. n. interpretation | /ɪnˌtɜːprɪˈteɪʃən/ — sounds like **in-TER-pri-TAY-shun** | /ɪnˌtɝːprɪˈteɪʃən/ — sounds like **in-TER-pri-TAY-shən**
+2412. adj. electronic | /ɪˌlekˈtrɒnɪk/ — sounds like **i-lek-TRON-ik** | /ɪˌlɛkˈtrɑnɪk/ — sounds like **i-lek-TRAHN-ik**
+2413. n. website | /ˈwebsaɪt/ — sounds like **WEB-syt** | /ˈwɛbˌsaɪt/ — sounds like **WEB-syt**
+2414. v. wash | /wɒʃ/ — sounds like **WOSH** | /wɑʃ/ — sounds like **WAHSH**
+2415. adv. quite | /kwaɪt/ — sounds like **KWYT** | /kwaɪt/ — sounds like **KWYT**
+2416. adj. facial | /ˈfeɪʃəl/ — sounds like **FAY-shul** | /ˈfeɪʃəl/ — sounds like **FAY-shəl**
+2417. n. meter | /ˈmiːtə/ — sounds like **MEE-tuh** | /ˈmitər/ — sounds like **MEE-ter**

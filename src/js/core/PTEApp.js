@@ -51,6 +51,9 @@ class PTEVocabularyTrainer {
     // 1.1. Initialize settings manager (handles complex settings logic)
     this.initializeSettingsManager();
 
+    // 1.2. Initialize dataset manager (Phase 2 - unified dataset loading)
+    await this.initializeDatasetManager();
+
     // 2. Initialize PTE vocabulary manager (loads data asynchronously)
     if (window.pteVocabularyManager) {
       await window.pteVocabularyManager.initialize();
@@ -108,6 +111,52 @@ class PTEVocabularyTrainer {
     if (window.settingsManager) {
     } else {
       console.warn('⚠️ SettingsManager not found - using legacy settings handling');
+    }
+  }
+
+  async initializeDatasetManager() {
+    // Initialize DatasetManager for Phase 2 (RS, ASQ, WFD support)
+    if (window.DatasetManager) {
+      try {
+        const datasetManager = new DatasetManager();
+        const config = window.appConfig || new AppConfig();
+        await datasetManager.initialize(config);
+        
+        // Make globally available
+        window.datasetManager = datasetManager;
+        
+        console.log('✅ DatasetManager initialized');
+        
+        // Initialize PracticeModes after DatasetManager is ready
+        this.initializePracticeModes();
+      } catch (error) {
+        console.warn('⚠️ DatasetManager initialization failed:', error);
+      }
+    } else {
+      console.log('ℹ️ DatasetManager not available (Phase 2 not loaded)');
+    }
+  }
+
+  initializePracticeModes() {
+    // Initialize PracticeModes for Phase 2 practice mode UI
+    if (window.PracticeModes) {
+      try {
+        const practiceModes = new PracticeModes();
+        
+        // Set up event listeners
+        if (practiceModes.setupEventListeners) {
+          practiceModes.setupEventListeners();
+        }
+        
+        // Make globally available
+        window.practiceModes = practiceModes;
+        
+        console.log('✅ PracticeModes initialized');
+      } catch (error) {
+        console.warn('⚠️ PracticeModes initialization failed:', error);
+      }
+    } else {
+      console.log('ℹ️ PracticeModes not available (Phase 2 not loaded)');
     }
   }
 

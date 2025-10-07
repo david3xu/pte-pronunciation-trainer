@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-10-07T01:53:33.801Z",
-    "totalTerms": 1910,
+    "generated": "2025-10-07T07:22:25.346Z",
+    "totalTerms": 1912,
     "source": "pte-intermediate-vocabulary-with-ipa",
     "description": "PTE Intermediate vocabulary (simple list fallback, IPA when available)",
     "version": "1.0",
@@ -12,7 +12,7 @@
   },
   "vocabulary": [
     {
-      "english": "structural",
+      "english": "adj. structural",
       "pronunciation": {
         "british": {
           "ipa": "ˈstrʌktʃərəl",
@@ -28,7 +28,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "fall",
+      "english": "v. fall",
       "pronunciation": {
         "british": {
           "ipa": "fɔːl",
@@ -39,12 +39,12 @@
           "phonetic": "FAWL"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "overweight",
+      "english": "adj. overweight",
       "pronunciation": {
         "british": {
           "ipa": "ˌəʊvəˈweɪt",
@@ -60,7 +60,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "mix",
+      "english": "v. mix",
       "pronunciation": {
         "british": {
           "ipa": "mɪks",
@@ -69,22 +69,6 @@
         "american": {
           "ipa": "mɪks",
           "phonetic": "MIKS"
-        }
-      },
-      "difficulty": "easy",
-      "category": "pte-fib-listening",
-      "source": "pte-fib-listening-with-ipa"
-    },
-    {
-      "english": "Russia",
-      "pronunciation": {
-        "british": {
-          "ipa": "ˈrʌʃə",
-          "phonetic": "RUSH-uh"
-        },
-        "american": {
-          "ipa": "ˈrʌʃə",
-          "phonetic": "RUSH-uh"
         }
       },
       "difficulty": "normal",
@@ -92,7 +76,23 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "combination",
+      "english": "n. Russia",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈrʌʃə",
+          "phonetic": "RUSH-uh"
+        },
+        "american": {
+          "ipa": "ˈrʌʃə",
+          "phonetic": "RUSH-uh"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-fib-listening",
+      "source": "pte-fib-listening-with-ipa"
+    },
+    {
+      "english": "n. combination",
       "pronunciation": {
         "british": {
           "ipa": "ˌkɒmbɪˈneɪʃən",
@@ -108,7 +108,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "slowly",
+      "english": "adv. slowly",
       "pronunciation": {
         "british": {
           "ipa": "ˈsləʊli",
@@ -119,12 +119,12 @@
           "phonetic": "SLOH-lee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "actively",
+      "english": "adv. actively",
       "pronunciation": {
         "british": {
           "ipa": "ˈæktɪvli",
@@ -140,7 +140,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "prevention",
+      "english": "n. prevention",
       "pronunciation": {
         "british": {
           "ipa": "prɪˈvenʃən",
@@ -156,7 +156,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "depends",
+      "english": "v. depends",
       "pronunciation": {
         "british": {
           "ipa": "dɪˈpendz",
@@ -167,12 +167,12 @@
           "phonetic": "di-PENDZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "robot",
+      "english": "n. robot",
       "pronunciation": {
         "british": {
           "ipa": "ˈrəʊbɒt",
@@ -188,7 +188,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "meeting",
+      "english": "n. meeting",
       "pronunciation": {
         "british": {
           "ipa": "ˈmiːtɪŋ",
@@ -199,12 +199,12 @@
           "phonetic": "MEE-ting"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "topic",
+      "english": "n. topic",
       "pronunciation": {
         "british": {
           "ipa": "ˈtɒpɪk",
@@ -220,7 +220,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "bus",
+      "english": "n. bus",
       "pronunciation": {
         "british": {
           "ipa": "bʌs",
@@ -231,12 +231,12 @@
           "phonetic": "BUS"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "expansion",
+      "english": "n. expansion",
       "pronunciation": {
         "british": {
           "ipa": "ɪkˈspænʃən",
@@ -252,7 +252,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "fragment",
+      "english": "n. fragment",
       "pronunciation": {
         "british": {
           "ipa": "ˈfræɡmənt",
@@ -263,12 +263,12 @@
           "phonetic": "FRAG-munt"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "exciting",
+      "english": "adj. exciting",
       "pronunciation": {
         "british": {
           "ipa": "ɪkˈsaɪtɪŋ",
@@ -279,12 +279,12 @@
           "phonetic": "ik-SY-ting"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Orville",
+      "english": "n. Orville",
       "pronunciation": {
         "british": {
           "ipa": "ˈɔːvɪl",
@@ -295,12 +295,12 @@
           "phonetic": "OR-vil"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "harmful",
+      "english": "adj. harmful",
       "pronunciation": {
         "british": {
           "ipa": "ˈhɑːmfʊl",
@@ -311,12 +311,12 @@
           "phonetic": "HARM-ful"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "elephant",
+      "english": "n. elephant",
       "pronunciation": {
         "british": {
           "ipa": "ˈelɪfənt",
@@ -327,28 +327,28 @@
           "phonetic": "EL-i-funt"
         }
       },
+      "difficulty": "hard",
+      "category": "pte-fib-listening",
+      "source": "pte-fib-listening-with-ipa"
+    },
+    {
+      "english": "n. sign",
+      "pronunciation": {
+        "british": {
+          "ipa": "saɪn",
+          "phonetic": "SYN"
+        },
+        "american": {
+          "ipa": "saɪn",
+          "phonetic": "SYN"
+        }
+      },
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "sign",
-      "pronunciation": {
-        "british": {
-          "ipa": "saɪn",
-          "phonetic": "SYN"
-        },
-        "american": {
-          "ipa": "saɪn",
-          "phonetic": "SYN"
-        }
-      },
-      "difficulty": "easy",
-      "category": "pte-fib-listening",
-      "source": "pte-fib-listening-with-ipa"
-    },
-    {
-      "english": "six",
+      "english": "n. six",
       "pronunciation": {
         "british": {
           "ipa": "sɪks",
@@ -359,12 +359,12 @@
           "phonetic": "SIKS"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "entirely",
+      "english": "adv. entirely",
       "pronunciation": {
         "british": {
           "ipa": "ɪnˈtaɪəli",
@@ -380,7 +380,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "check",
+      "english": "v. check",
       "pronunciation": {
         "british": {
           "ipa": "tʃek",
@@ -396,7 +396,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Robert",
+      "english": "n. Robert",
       "pronunciation": {
         "british": {
           "ipa": "ˈrɒbət",
@@ -407,12 +407,12 @@
           "phonetic": "RAH-bert"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "search",
+      "english": "v. search",
       "pronunciation": {
         "british": {
           "ipa": "sɜːtʃ",
@@ -423,12 +423,12 @@
           "phonetic": "SIRCH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "empire",
+      "english": "n. empire",
       "pronunciation": {
         "british": {
           "ipa": "ˈempaɪə",
@@ -439,12 +439,12 @@
           "phonetic": "EM-pyr"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Smith",
+      "english": "n. Smith",
       "pronunciation": {
         "british": {
           "ipa": "smɪθ",
@@ -460,7 +460,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Wright",
+      "english": "n. Wright",
       "pronunciation": {
         "british": {
           "ipa": "raɪt",
@@ -471,12 +471,12 @@
           "phonetic": "RYT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "rapid",
+      "english": "adj. rapid",
       "pronunciation": {
         "british": {
           "ipa": "ˈræpɪd",
@@ -487,12 +487,12 @@
           "phonetic": "RAP-id"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Japan",
+      "english": "n. Japan",
       "pronunciation": {
         "british": {
           "ipa": "dʒəˈpæn",
@@ -508,7 +508,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "man",
+      "english": "n. man",
       "pronunciation": {
         "british": {
           "ipa": "mæn",
@@ -519,12 +519,12 @@
           "phonetic": "MAN"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "afford",
+      "english": "v. afford",
       "pronunciation": {
         "british": {
           "ipa": "əˈfɔːd",
@@ -535,12 +535,12 @@
           "phonetic": "uh-FORD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "worry",
+      "english": "v. worry",
       "pronunciation": {
         "british": {
           "ipa": "ˈwʌri",
@@ -556,7 +556,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "wealth",
+      "english": "n. wealth",
       "pronunciation": {
         "british": {
           "ipa": "welθ",
@@ -567,12 +567,12 @@
           "phonetic": "WELTH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "clear",
+      "english": "adj. clear",
       "pronunciation": {
         "british": {
           "ipa": "klɪə",
@@ -583,12 +583,12 @@
           "phonetic": "KLEER"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "UNEP",
+      "english": "n. UNEP",
       "pronunciation": {
         "british": {
           "ipa": "ˈjuːnɛp",
@@ -599,12 +599,12 @@
           "phonetic": "YOO-nep"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "symbol",
+      "english": "n. symbol",
       "pronunciation": {
         "british": {
           "ipa": "ˈsɪmbəl",
@@ -615,12 +615,12 @@
           "phonetic": "SIM-bul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "analyse",
+      "english": "v. analyse",
       "pronunciation": {
         "british": {
           "ipa": "ˈænəlaɪz",
@@ -631,12 +631,12 @@
           "phonetic": "AN-uh-lyze"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "twice",
+      "english": "adv. twice",
       "pronunciation": {
         "british": {
           "ipa": "twaɪs",
@@ -647,12 +647,12 @@
           "phonetic": "TWYS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "complementary",
+      "english": "adj. complementary",
       "pronunciation": {
         "british": {
           "ipa": "ˌkɒmplɪˈmentəri",
@@ -668,7 +668,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "wheat",
+      "english": "n. wheat",
       "pronunciation": {
         "british": {
           "ipa": "wiːt",
@@ -684,7 +684,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "ahead",
+      "english": "adv. ahead",
       "pronunciation": {
         "british": {
           "ipa": "əˈhed",
@@ -695,12 +695,12 @@
           "phonetic": "uh-HED"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "modify",
+      "english": "v. modify",
       "pronunciation": {
         "british": {
           "ipa": "ˈmɒdɪfaɪ",
@@ -711,12 +711,12 @@
           "phonetic": "MAH-duh-fy"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "significance",
+      "english": "n. significance",
       "pronunciation": {
         "british": {
           "ipa": "sɪɡˈnɪfɪkəns",
@@ -732,7 +732,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "​​native",
+      "english": "adj. native",
       "pronunciation": {
         "british": {
           "ipa": "ˈneɪtɪv",
@@ -743,12 +743,12 @@
           "phonetic": "NAY-tiv"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "council",
+      "english": "n. council",
       "pronunciation": {
         "british": {
           "ipa": "ˈkaʊnsəl",
@@ -759,12 +759,12 @@
           "phonetic": "KOWN-sul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "promise",
+      "english": "n. promise",
       "pronunciation": {
         "british": {
           "ipa": "ˈprɒmɪs",
@@ -775,12 +775,12 @@
           "phonetic": "PRAHM-iss"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "muscle",
+      "english": "n. muscle",
       "pronunciation": {
         "british": {
           "ipa": "ˈmʌsəl",
@@ -791,12 +791,12 @@
           "phonetic": "MUS-sul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "caterpillar",
+      "english": "n. caterpillar",
       "pronunciation": {
         "british": {
           "ipa": "ˈkætəpɪlə",
@@ -812,7 +812,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "competitor",
+      "english": "n. competitor",
       "pronunciation": {
         "british": {
           "ipa": "kəmˈpetɪtə",
@@ -828,7 +828,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "autism",
+      "english": "n. autism",
       "pronunciation": {
         "british": {
           "ipa": "ˈɔːtɪzəm",
@@ -839,28 +839,28 @@
           "phonetic": "AW-tiz-um"
         }
       },
+      "difficulty": "hard",
+      "category": "pte-fib-listening",
+      "source": "pte-fib-listening-with-ipa"
+    },
+    {
+      "english": "n. item",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈaɪtəm",
+          "phonetic": "EYE-tum"
+        },
+        "american": {
+          "ipa": "ˈaɪtəm",
+          "phonetic": "EYE-tum"
+        }
+      },
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "item",
-      "pronunciation": {
-        "british": {
-          "ipa": "ˈaɪtəm",
-          "phonetic": "EYE-tum"
-        },
-        "american": {
-          "ipa": "ˈaɪtəm",
-          "phonetic": "EYE-tum"
-        }
-      },
-      "difficulty": "easy",
-      "category": "pte-fib-listening",
-      "source": "pte-fib-listening-with-ipa"
-    },
-    {
-      "english": "hang",
+      "english": "v. hang",
       "pronunciation": {
         "british": {
           "ipa": "hæŋ",
@@ -871,12 +871,12 @@
           "phonetic": "HANG"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "superpower",
+      "english": "n. superpower",
       "pronunciation": {
         "british": {
           "ipa": "ˈsuːpəˌpaʊə",
@@ -892,7 +892,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "north",
+      "english": "n. north",
       "pronunciation": {
         "british": {
           "ipa": "nɔːθ",
@@ -908,7 +908,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "upset",
+      "english": "adj. upset",
       "pronunciation": {
         "british": {
           "ipa": "ʌpˈset",
@@ -919,12 +919,12 @@
           "phonetic": "up-SET"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "museum",
+      "english": "n. museum",
       "pronunciation": {
         "british": {
           "ipa": "mjuːˈzɪəm",
@@ -935,12 +935,12 @@
           "phonetic": "myoo-ZEE-um"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "associate",
+      "english": "v. associate",
       "pronunciation": {
         "british": {
           "ipa": "əˈsəʊsieɪt",
@@ -956,7 +956,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "expectancy",
+      "english": "n. expectancy",
       "pronunciation": {
         "british": {
           "ipa": "ɪkˈspektənsi",
@@ -972,7 +972,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "chimpanzee",
+      "english": "n. chimpanzee",
       "pronunciation": {
         "british": {
           "ipa": "ˌtʃɪmpænˈziː",
@@ -988,7 +988,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "compile",
+      "english": "v. compile",
       "pronunciation": {
         "british": {
           "ipa": "kəmˈpaɪl",
@@ -999,12 +999,12 @@
           "phonetic": "kum-PYLE"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "founder",
+      "english": "n. founder",
       "pronunciation": {
         "british": {
           "ipa": "ˈfaʊndə",
@@ -1015,12 +1015,12 @@
           "phonetic": "FOUND-er"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "hop",
+      "english": "v. hop",
       "pronunciation": {
         "british": {
           "ipa": "hɒp",
@@ -1031,12 +1031,12 @@
           "phonetic": "HOP"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "habit",
+      "english": "n. habit",
       "pronunciation": {
         "british": {
           "ipa": "ˈhæbɪt",
@@ -1052,7 +1052,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "persuade",
+      "english": "v. persuade",
       "pronunciation": {
         "british": {
           "ipa": "pəˈsweɪd",
@@ -1063,12 +1063,12 @@
           "phonetic": "per-SWAYD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "flip",
+      "english": "v. flip",
       "pronunciation": {
         "british": {
           "ipa": "flɪp",
@@ -1079,12 +1079,12 @@
           "phonetic": "FLIP"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "GDP",
+      "english": "n. GDP",
       "pronunciation": {
         "british": {
           "ipa": "ˌdʒiː diː ˈpiː",
@@ -1095,12 +1095,12 @@
           "phonetic": "JEE-dee-PEE"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "speech",
+      "english": "n. speech",
       "pronunciation": {
         "british": {
           "ipa": "spiːtʃ",
@@ -1111,12 +1111,12 @@
           "phonetic": "SPEECH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "drinking",
+      "english": "n. drinking",
       "pronunciation": {
         "british": {
           "ipa": "ˈdrɪŋkɪŋ",
@@ -1127,12 +1127,12 @@
           "phonetic": "DRING-king"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "contribution",
+      "english": "n. contribution",
       "pronunciation": {
         "british": {
           "ipa": "ˌkɒntrɪˈbjuːʃən",
@@ -1148,7 +1148,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "remote",
+      "english": "adj. remote",
       "pronunciation": {
         "british": {
           "ipa": "rɪˈməʊt",
@@ -1159,12 +1159,12 @@
           "phonetic": "ri-MOHT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "globally",
+      "english": "adv. globally",
       "pronunciation": {
         "british": {
           "ipa": "ˈɡləʊbəli",
@@ -1175,12 +1175,12 @@
           "phonetic": "GLOH-buh-lee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "ill",
+      "english": "adj. ill",
       "pronunciation": {
         "british": {
           "ipa": "ɪl",
@@ -1191,12 +1191,12 @@
           "phonetic": "IL"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "experimental",
+      "english": "adj. experimental",
       "pronunciation": {
         "british": {
           "ipa": "ɪkˌsperɪˈmentəl",
@@ -1212,7 +1212,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "mud",
+      "english": "n. mud",
       "pronunciation": {
         "british": {
           "ipa": "mʌd",
@@ -1221,22 +1221,6 @@
         "american": {
           "ipa": "mʌd",
           "phonetic": "MUD"
-        }
-      },
-      "difficulty": "easy",
-      "category": "pte-fib-listening",
-      "source": "pte-fib-listening-with-ipa"
-    },
-    {
-      "english": "puppet",
-      "pronunciation": {
-        "british": {
-          "ipa": "ˈpʌpɪt",
-          "phonetic": "PUP-it"
-        },
-        "american": {
-          "ipa": "ˈpʌpɪt",
-          "phonetic": "PUP-it"
         }
       },
       "difficulty": "normal",
@@ -1244,7 +1228,23 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "originate",
+      "english": "n. puppet",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpʌpɪt",
+          "phonetic": "PUP-it"
+        },
+        "american": {
+          "ipa": "ˈpʌpɪt",
+          "phonetic": "PUP-it"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-fib-listening",
+      "source": "pte-fib-listening-with-ipa"
+    },
+    {
+      "english": "v. originate",
       "pronunciation": {
         "british": {
           "ipa": "əˈrɪdʒɪneɪt",
@@ -1260,7 +1260,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "enjoy",
+      "english": "v. enjoy",
       "pronunciation": {
         "british": {
           "ipa": "ɪnˈdʒɔɪ",
@@ -1276,7 +1276,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "drop",
+      "english": "v. drop",
       "pronunciation": {
         "british": {
           "ipa": "drɒp",
@@ -1287,12 +1287,12 @@
           "phonetic": "DRAHP"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "craft",
+      "english": "n. craft",
       "pronunciation": {
         "british": {
           "ipa": "krɑːft",
@@ -1308,7 +1308,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "polar",
+      "english": "adj. polar",
       "pronunciation": {
         "british": {
           "ipa": "ˈpəʊlə",
@@ -1319,12 +1319,12 @@
           "phonetic": "POH-ler"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "eating",
+      "english": "n. eating",
       "pronunciation": {
         "british": {
           "ipa": "ˈiːtɪŋ",
@@ -1335,12 +1335,12 @@
           "phonetic": "EE-ting"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "judgment",
+      "english": "n. judgment",
       "pronunciation": {
         "british": {
           "ipa": "ˈdʒʌdʒmənt",
@@ -1351,12 +1351,12 @@
           "phonetic": "JUJ-munt"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "lifetime",
+      "english": "n. lifetime",
       "pronunciation": {
         "british": {
           "ipa": "ˈlaɪftaɪm",
@@ -1367,12 +1367,12 @@
           "phonetic": "LYFE-tym"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "blind",
+      "english": "adj. blind",
       "pronunciation": {
         "british": {
           "ipa": "blaɪnd",
@@ -1383,12 +1383,12 @@
           "phonetic": "BLYND"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "spin",
+      "english": "v. spin",
       "pronunciation": {
         "british": {
           "ipa": "spɪn",
@@ -1399,12 +1399,12 @@
           "phonetic": "SPIN"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "instrumental",
+      "english": "adj. instrumental",
       "pronunciation": {
         "british": {
           "ipa": "ˌɪnstrʊˈmentəl",
@@ -1420,7 +1420,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "IPCC",
+      "english": "n. IPCC",
       "pronunciation": {
         "british": {
           "ipa": "ˌaɪ piː siː ˈsiː",
@@ -1431,12 +1431,12 @@
           "phonetic": "EYE-pee-see-SEE"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "bend",
+      "english": "v. bend",
       "pronunciation": {
         "british": {
           "ipa": "bend",
@@ -1447,12 +1447,12 @@
           "phonetic": "BEND"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "humor",
+      "english": "n. humor",
       "pronunciation": {
         "british": {
           "ipa": "ˈhjuːmə",
@@ -1468,7 +1468,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "absence",
+      "english": "n. absence",
       "pronunciation": {
         "british": {
           "ipa": "ˈæbsəns",
@@ -1479,12 +1479,12 @@
           "phonetic": "AB-suns"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "cover",
+      "english": "v. cover",
       "pronunciation": {
         "british": {
           "ipa": "ˈkʌvə",
@@ -1500,7 +1500,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "cloth",
+      "english": "n. cloth",
       "pronunciation": {
         "british": {
           "ipa": "klɒθ",
@@ -1516,7 +1516,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "vital",
+      "english": "adj. vital",
       "pronunciation": {
         "british": {
           "ipa": "ˈvaɪtəl",
@@ -1527,12 +1527,12 @@
           "phonetic": "VY-tul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "entertainment",
+      "english": "n. entertainment",
       "pronunciation": {
         "british": {
           "ipa": "ˌentəˈteɪnmənt",
@@ -1548,7 +1548,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "light-year",
+      "english": "n. light-year",
       "pronunciation": {
         "british": {
           "ipa": "ˈlaɪt jɪə",
@@ -1564,7 +1564,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "access",
+      "english": "n. access",
       "pronunciation": {
         "british": {
           "ipa": "ˈækses",
@@ -1575,12 +1575,12 @@
           "phonetic": "AK-sess"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "sample",
+      "english": "n. sample",
       "pronunciation": {
         "british": {
           "ipa": "ˈsɑːmpl",
@@ -1591,12 +1591,12 @@
           "phonetic": "SAM-pul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "creation",
+      "english": "n. creation",
       "pronunciation": {
         "british": {
           "ipa": "kriːˈeɪʃən",
@@ -1607,12 +1607,12 @@
           "phonetic": "kree-AY-shun"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "fruit",
+      "english": "n. fruit",
       "pronunciation": {
         "british": {
           "ipa": "fruːt",
@@ -1628,7 +1628,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Khoikhoi",
+      "english": "n. Khoikhoi",
       "pronunciation": {
         "british": {
           "ipa": "ˈkɔɪkɔɪ",
@@ -1639,12 +1639,12 @@
           "phonetic": "KOY-koy"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "dig",
+      "english": "v. dig",
       "pronunciation": {
         "british": {
           "ipa": "dɪɡ",
@@ -1655,12 +1655,12 @@
           "phonetic": "DIG"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "module",
+      "english": "n. module",
       "pronunciation": {
         "british": {
           "ipa": "ˈmɒdjuːl",
@@ -1671,12 +1671,12 @@
           "phonetic": "MAH-jool"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "acid",
+      "english": "n. acid",
       "pronunciation": {
         "british": {
           "ipa": "ˈæsɪd",
@@ -1687,12 +1687,12 @@
           "phonetic": "AS-id"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "gesture",
+      "english": "n. gesture",
       "pronunciation": {
         "british": {
           "ipa": "ˈdʒestʃə",
@@ -1703,12 +1703,12 @@
           "phonetic": "JES-cher"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Plato",
+      "english": "n. Plato",
       "pronunciation": {
         "british": {
           "ipa": "ˈpleɪtəʊ",
@@ -1724,7 +1724,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "task",
+      "english": "n. task",
       "pronunciation": {
         "british": {
           "ipa": "tɑːsk",
@@ -1735,12 +1735,12 @@
           "phonetic": "TASK"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "cent",
+      "english": "n. cent",
       "pronunciation": {
         "british": {
           "ipa": "sent",
@@ -1751,12 +1751,12 @@
           "phonetic": "SENT"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "medical",
+      "english": "adj. medical",
       "pronunciation": {
         "british": {
           "ipa": "ˈmedɪkəl",
@@ -1767,12 +1767,12 @@
           "phonetic": "MED-i-kul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "sheet",
+      "english": "n. sheet",
       "pronunciation": {
         "british": {
           "ipa": "ʃiːt",
@@ -1788,7 +1788,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "thin",
+      "english": "adj. thin",
       "pronunciation": {
         "british": {
           "ipa": "θɪn",
@@ -1799,12 +1799,12 @@
           "phonetic": "THIN"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "basis",
+      "english": "n. basis",
       "pronunciation": {
         "british": {
           "ipa": "ˈbeɪsɪs",
@@ -1820,7 +1820,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "monitor",
+      "english": "v. monitor",
       "pronunciation": {
         "british": {
           "ipa": "ˈmɒnɪtə",
@@ -1831,12 +1831,12 @@
           "phonetic": "MAW-ni-ter"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "hundred",
+      "english": "n. hundred",
       "pronunciation": {
         "british": {
           "ipa": "ˈhʌndrəd",
@@ -1847,12 +1847,12 @@
           "phonetic": "HUN-drud"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "dramatic",
+      "english": "adj. dramatic",
       "pronunciation": {
         "british": {
           "ipa": "drəˈmætɪk",
@@ -1863,12 +1863,12 @@
           "phonetic": "druh-MAT-ik"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "document",
+      "english": "n. document",
       "pronunciation": {
         "british": {
           "ipa": "ˈdɒkjʊmənt",
@@ -1879,12 +1879,12 @@
           "phonetic": "DAHK-yuh-ment"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "widely",
+      "english": "adv. widely",
       "pronunciation": {
         "british": {
           "ipa": "ˈwaɪdli",
@@ -1895,12 +1895,12 @@
           "phonetic": "WYD-lee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "broadly",
+      "english": "adv. broadly",
       "pronunciation": {
         "british": {
           "ipa": "ˈbrɔːdli",
@@ -1911,12 +1911,12 @@
           "phonetic": "BRAWD-lee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "corporate",
+      "english": "adj. corporate",
       "pronunciation": {
         "british": {
           "ipa": "ˈkɔːpərət",
@@ -1932,7 +1932,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "altitude",
+      "english": "n. altitude",
       "pronunciation": {
         "british": {
           "ipa": "ˈæltɪtjuːd",
@@ -1943,12 +1943,12 @@
           "phonetic": "AL-ti-tood"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "shoulder",
+      "english": "n. shoulder",
       "pronunciation": {
         "british": {
           "ipa": "ˈʃəʊldə",
@@ -1959,12 +1959,12 @@
           "phonetic": "SHOHL-der"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Adam",
+      "english": "n. Adam",
       "pronunciation": {
         "british": {
           "ipa": "ˈædəm",
@@ -1975,12 +1975,12 @@
           "phonetic": "AD-um"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "military",
+      "english": "adj. military",
       "pronunciation": {
         "british": {
           "ipa": "ˈmɪlɪtəri",
@@ -1996,7 +1996,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "accept",
+      "english": "v. accept",
       "pronunciation": {
         "british": {
           "ipa": "əkˈsept",
@@ -2007,12 +2007,12 @@
           "phonetic": "ak-SEPT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "accompany",
+      "english": "v. accompany",
       "pronunciation": {
         "british": {
           "ipa": "əˈkʌmpəni",
@@ -2028,7 +2028,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "allergy",
+      "english": "n. allergy",
       "pronunciation": {
         "british": {
           "ipa": "ˈælədʒi",
@@ -2039,12 +2039,12 @@
           "phonetic": "AL-er-jee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "executive",
+      "english": "n. executive",
       "pronunciation": {
         "british": {
           "ipa": "ɪɡˈzekjʊtɪv",
@@ -2060,7 +2060,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "urban",
+      "english": "adj. urban",
       "pronunciation": {
         "british": {
           "ipa": "ˈɜːbən",
@@ -2071,12 +2071,12 @@
           "phonetic": "UR-bun"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "fund",
+      "english": "n. fund",
       "pronunciation": {
         "british": {
           "ipa": "fʌnd",
@@ -2087,12 +2087,12 @@
           "phonetic": "FUND"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "picture",
+      "english": "n. picture",
       "pronunciation": {
         "british": {
           "ipa": "ˈpɪktʃə",
@@ -2103,12 +2103,12 @@
           "phonetic": "PIK-cher"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "leadership",
+      "english": "n. leadership",
       "pronunciation": {
         "british": {
           "ipa": "ˈliːdəʃɪp",
@@ -2124,7 +2124,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "premium",
+      "english": "n. premium",
       "pronunciation": {
         "british": {
           "ipa": "ˈpriːmiəm",
@@ -2135,12 +2135,12 @@
           "phonetic": "PREE-mee-um"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "breed",
+      "english": "v. breed",
       "pronunciation": {
         "british": {
           "ipa": "briːd",
@@ -2156,7 +2156,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "talented",
+      "english": "adj. talented",
       "pronunciation": {
         "british": {
           "ipa": "ˈtælən.tɪd",
@@ -2167,12 +2167,12 @@
           "phonetic": "TAL-un-tid"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "advantage",
+      "english": "n. advantage",
       "pronunciation": {
         "british": {
           "ipa": "ədˈvɑːntɪdʒ",
@@ -2188,7 +2188,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "suspect",
+      "english": "v. suspect",
       "pronunciation": {
         "british": {
           "ipa": "səˈspekt",
@@ -2199,12 +2199,12 @@
           "phonetic": "suh-SPEKT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "substantial",
+      "english": "adj. substantial",
       "pronunciation": {
         "british": {
           "ipa": "səbˈstænʃəl",
@@ -2220,7 +2220,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "airplane",
+      "english": "n. airplane",
       "pronunciation": {
         "british": {
           "ipa": "ˈeəpleɪn",
@@ -2231,12 +2231,12 @@
           "phonetic": "AIR-plane"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "surprisingly",
+      "english": "adv. surprisingly",
       "pronunciation": {
         "british": {
           "ipa": "səˈpraɪzɪŋli",
@@ -2252,7 +2252,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "target",
+      "english": "n. target",
       "pronunciation": {
         "british": {
           "ipa": "ˈtɑːɡɪt",
@@ -2263,12 +2263,12 @@
           "phonetic": "TAR-git"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "desire",
+      "english": "n. desire",
       "pronunciation": {
         "british": {
           "ipa": "dɪˈzaɪə",
@@ -2279,12 +2279,12 @@
           "phonetic": "di-ZYR"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Mittal",
+      "english": "n. Mittal",
       "pronunciation": {
         "british": {
           "ipa": "ˈmɪtəl",
@@ -2295,12 +2295,12 @@
           "phonetic": "MIT-uhl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "behavior",
+      "english": "n. behavior",
       "pronunciation": {
         "british": {
           "ipa": "bɪˈheɪvjə",
@@ -2311,12 +2311,12 @@
           "phonetic": "bi-HAYV-yer"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "creative",
+      "english": "adj. creative",
       "pronunciation": {
         "british": {
           "ipa": "kriːˈeɪtɪv",
@@ -2327,12 +2327,12 @@
           "phonetic": "kree-AY-tiv"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "suffer",
+      "english": "v. suffer",
       "pronunciation": {
         "british": {
           "ipa": "ˈsʌfə",
@@ -2343,12 +2343,12 @@
           "phonetic": "SUF-er"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "intense",
+      "english": "adj. intense",
       "pronunciation": {
         "british": {
           "ipa": "ɪnˈtens",
@@ -2359,12 +2359,12 @@
           "phonetic": "in-TENS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "cosmic",
+      "english": "adj. cosmic",
       "pronunciation": {
         "british": {
           "ipa": "ˈkɒzmɪk",
@@ -2375,12 +2375,12 @@
           "phonetic": "KAHZ-mik"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "implementation",
+      "english": "n. implementation",
       "pronunciation": {
         "british": {
           "ipa": "ˌɪmplɪmenˈteɪʃən",
@@ -2396,7 +2396,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "cage",
+      "english": "n. cage",
       "pronunciation": {
         "british": {
           "ipa": "keɪdʒ",
@@ -2407,12 +2407,12 @@
           "phonetic": "KAYJ"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "drawback",
+      "english": "n. drawback",
       "pronunciation": {
         "british": {
           "ipa": "ˈdrɔːbæk",
@@ -2423,12 +2423,12 @@
           "phonetic": "DRAW-bak"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "diameter",
+      "english": "n. diameter",
       "pronunciation": {
         "british": {
           "ipa": "daɪˈæmɪtə",
@@ -2439,12 +2439,12 @@
           "phonetic": "dy-AM-i-ter"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "immediately",
+      "english": "adv. immediately",
       "pronunciation": {
         "british": {
           "ipa": "ɪˈmiːdiətli",
@@ -2460,7 +2460,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "identity",
+      "english": "n. identity",
       "pronunciation": {
         "british": {
           "ipa": "aɪˈdentɪti",
@@ -2476,7 +2476,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "site",
+      "english": "n. site",
       "pronunciation": {
         "british": {
           "ipa": "saɪt",
@@ -2487,12 +2487,12 @@
           "phonetic": "SYT"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "logic",
+      "english": "n. logic",
       "pronunciation": {
         "british": {
           "ipa": "ˈlɒdʒɪk",
@@ -2508,7 +2508,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "implement",
+      "english": "v. implement",
       "pronunciation": {
         "british": {
           "ipa": "ˈɪmplɪment",
@@ -2524,7 +2524,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "wetland",
+      "english": "n. wetland",
       "pronunciation": {
         "british": {
           "ipa": "ˈwetlænd",
@@ -2535,12 +2535,12 @@
           "phonetic": "WET-land"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "mental",
+      "english": "adj. mental",
       "pronunciation": {
         "british": {
           "ipa": "ˈmentəl",
@@ -2551,12 +2551,12 @@
           "phonetic": "MEN-tul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "publish",
+      "english": "v. publish",
       "pronunciation": {
         "british": {
           "ipa": "ˈpʌblɪʃ",
@@ -2567,12 +2567,12 @@
           "phonetic": "PUB-lish"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "obvious",
+      "english": "adj. obvious",
       "pronunciation": {
         "british": {
           "ipa": "ˈɒbvɪəs",
@@ -2583,12 +2583,12 @@
           "phonetic": "AHB-vee-us"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "conclude",
+      "english": "v. conclude",
       "pronunciation": {
         "british": {
           "ipa": "kənˈkluːd",
@@ -2599,12 +2599,12 @@
           "phonetic": "kun-KLOOD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Alexander",
+      "english": "n. Alexander",
       "pronunciation": {
         "british": {
           "ipa": "ˌælɪɡˈzɑːndə",
@@ -2620,7 +2620,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "assistance",
+      "english": "n. assistance",
       "pronunciation": {
         "british": {
           "ipa": "əˈsɪstəns",
@@ -2636,7 +2636,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "conscious",
+      "english": "adj. conscious",
       "pronunciation": {
         "british": {
           "ipa": "ˈkɒnʃəs",
@@ -2652,7 +2652,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "rhythm",
+      "english": "n. rhythm",
       "pronunciation": {
         "british": {
           "ipa": "ˈrɪðəm",
@@ -2663,12 +2663,12 @@
           "phonetic": "RITH-um"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "deep",
+      "english": "adj. deep",
       "pronunciation": {
         "british": {
           "ipa": "diːp",
@@ -2679,12 +2679,12 @@
           "phonetic": "DEEP"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "weapon",
+      "english": "n. weapon",
       "pronunciation": {
         "british": {
           "ipa": "ˈwepən",
@@ -2695,12 +2695,12 @@
           "phonetic": "WEP-un"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "character",
+      "english": "n. character",
       "pronunciation": {
         "british": {
           "ipa": "ˈkærəktə",
@@ -2716,7 +2716,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "found",
+      "english": "v. found",
       "pronunciation": {
         "british": {
           "ipa": "faʊnd",
@@ -2732,7 +2732,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "ten",
+      "english": "n. ten",
       "pronunciation": {
         "british": {
           "ipa": "ten",
@@ -2743,12 +2743,12 @@
           "phonetic": "TEN"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "theatre",
+      "english": "n. theatre",
       "pronunciation": {
         "british": {
           "ipa": "ˈθɪətə",
@@ -2759,12 +2759,12 @@
           "phonetic": "THEE-uh-ter"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "taxi",
+      "english": "n. taxi",
       "pronunciation": {
         "british": {
           "ipa": "ˈtæksi",
@@ -2775,12 +2775,12 @@
           "phonetic": "TAK-see"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "favorite",
+      "english": "adj. favorite",
       "pronunciation": {
         "british": {
           "ipa": "ˈfeɪvərɪt",
@@ -2791,12 +2791,12 @@
           "phonetic": "FAY-vu-rit"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "creativity",
+      "english": "n. creativity",
       "pronunciation": {
         "british": {
           "ipa": "ˌkriːeɪˈtɪvɪti",
@@ -2812,7 +2812,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "valuable",
+      "english": "adj. valuable",
       "pronunciation": {
         "british": {
           "ipa": "ˈvæljuəbəl",
@@ -2823,12 +2823,12 @@
           "phonetic": "VAL-yoo-uh-bul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "retirement",
+      "english": "n. retirement",
       "pronunciation": {
         "british": {
           "ipa": "rɪˈtaɪəmənt",
@@ -2844,7 +2844,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "degree",
+      "english": "n. degree",
       "pronunciation": {
         "british": {
           "ipa": "dɪˈɡriː",
@@ -2855,12 +2855,12 @@
           "phonetic": "di-GREE"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "domestic",
+      "english": "adj. domestic",
       "pronunciation": {
         "british": {
           "ipa": "dəˈmestɪk",
@@ -2871,12 +2871,12 @@
           "phonetic": "duh-MES-tik"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "shark",
+      "english": "n. shark",
       "pronunciation": {
         "british": {
           "ipa": "ʃɑːk",
@@ -2892,7 +2892,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "operation",
+      "english": "n. operation",
       "pronunciation": {
         "british": {
           "ipa": "ˌɒpəˈreɪʃən",
@@ -2908,7 +2908,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "essential",
+      "english": "adj. essential",
       "pronunciation": {
         "british": {
           "ipa": "ɪˈsɛnʃəl",
@@ -2924,7 +2924,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "lie",
+      "english": "v. lie",
       "pronunciation": {
         "british": {
           "ipa": "laɪ",
@@ -2935,12 +2935,12 @@
           "phonetic": "LY"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "ecological",
+      "english": "adj. ecological",
       "pronunciation": {
         "british": {
           "ipa": "ˌiːkəˈlɒdʒɪkəl",
@@ -2956,7 +2956,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "emission",
+      "english": "n. emission",
       "pronunciation": {
         "british": {
           "ipa": "ɪˈmɪʃən",
@@ -2967,12 +2967,12 @@
           "phonetic": "i-MISH-un"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "hospital",
+      "english": "n. hospital",
       "pronunciation": {
         "british": {
           "ipa": "ˈhɒspɪtəl",
@@ -2983,12 +2983,12 @@
           "phonetic": "HAHS-pi-tul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "throat",
+      "english": "n. throat",
       "pronunciation": {
         "british": {
           "ipa": "θrəʊt",
@@ -2999,12 +2999,12 @@
           "phonetic": "THROHT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "meaning",
+      "english": "n. meaning",
       "pronunciation": {
         "british": {
           "ipa": "ˈmiːnɪŋ",
@@ -3015,12 +3015,12 @@
           "phonetic": "MEE-ning"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "decent",
+      "english": "adj. decent",
       "pronunciation": {
         "british": {
           "ipa": "ˈdiːsənt",
@@ -3031,12 +3031,12 @@
           "phonetic": "DEE-sunt"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "ecosystem",
+      "english": "n. ecosystem",
       "pronunciation": {
         "british": {
           "ipa": "ˈiːkəʊˌsɪstəm",
@@ -3052,7 +3052,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "elbow",
+      "english": "n. elbow",
       "pronunciation": {
         "british": {
           "ipa": "ˈelbəʊ",
@@ -3068,7 +3068,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "leader",
+      "english": "n. leader",
       "pronunciation": {
         "british": {
           "ipa": "ˈliːdə",
@@ -3079,12 +3079,12 @@
           "phonetic": "LEE-der"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "so-called",
+      "english": "adj. so-called",
       "pronunciation": {
         "british": {
           "ipa": "ˌsəʊˈkɔːld",
@@ -3100,7 +3100,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "follower",
+      "english": "n. follower",
       "pronunciation": {
         "british": {
           "ipa": "ˈfɒləʊə",
@@ -3111,12 +3111,12 @@
           "phonetic": "FAH-loh-er"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "primarily",
+      "english": "adv. primarily",
       "pronunciation": {
         "british": {
           "ipa": "ˈpraɪmərəli",
@@ -3132,7 +3132,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "inhabit",
+      "english": "v. inhabit",
       "pronunciation": {
         "british": {
           "ipa": "ɪnˈhæbɪt",
@@ -3143,12 +3143,12 @@
           "phonetic": "in-HAB-it"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "sandwich",
+      "english": "n. sandwich",
       "pronunciation": {
         "british": {
           "ipa": "ˈsænwɪdʒ",
@@ -3159,12 +3159,12 @@
           "phonetic": "SAND-witch"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "discuss",
+      "english": "v. discuss",
       "pronunciation": {
         "british": {
           "ipa": "dɪˈskʌs",
@@ -3175,12 +3175,12 @@
           "phonetic": "di-SKUSS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "ceremony",
+      "english": "n. ceremony",
       "pronunciation": {
         "british": {
           "ipa": "ˈserəməni",
@@ -3196,7 +3196,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "detect",
+      "english": "v. detect",
       "pronunciation": {
         "british": {
           "ipa": "dɪˈtekt",
@@ -3207,12 +3207,12 @@
           "phonetic": "di-TEKT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "demonstrate",
+      "english": "v. demonstrate",
       "pronunciation": {
         "british": {
           "ipa": "ˈdemənstreɪt",
@@ -3228,7 +3228,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "vaccine",
+      "english": "n. vaccine",
       "pronunciation": {
         "british": {
           "ipa": "ˈvæksiːn",
@@ -3239,12 +3239,12 @@
           "phonetic": "VAK-seen"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "manufacturer",
+      "english": "n. manufacturer",
       "pronunciation": {
         "british": {
           "ipa": "ˌmænjʊˈfæktʃərə",
@@ -3260,7 +3260,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "purple",
+      "english": "adj. purple",
       "pronunciation": {
         "british": {
           "ipa": "ˈpɜːpəl",
@@ -3271,12 +3271,12 @@
           "phonetic": "PUR-pul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "district",
+      "english": "n. district",
       "pronunciation": {
         "british": {
           "ipa": "ˈdɪstrɪkt",
@@ -3287,12 +3287,12 @@
           "phonetic": "DIS-trikt"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "reliable",
+      "english": "adj. reliable",
       "pronunciation": {
         "british": {
           "ipa": "rɪˈlaɪəbl",
@@ -3303,12 +3303,12 @@
           "phonetic": "ri-LY-uh-bul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Wednesday",
+      "english": "n. Wednesday",
       "pronunciation": {
         "british": {
           "ipa": "ˈwenzdeɪ",
@@ -3324,7 +3324,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "normally",
+      "english": "adv. normally",
       "pronunciation": {
         "british": {
           "ipa": "ˈnɔːməli",
@@ -3335,12 +3335,12 @@
           "phonetic": "NOR-muh-lee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "highly",
+      "english": "adv. highly",
       "pronunciation": {
         "british": {
           "ipa": "ˈhaɪli",
@@ -3351,12 +3351,12 @@
           "phonetic": "HY-lee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "rapidly",
+      "english": "adv. rapidly",
       "pronunciation": {
         "british": {
           "ipa": "ˈræpɪdli",
@@ -3367,12 +3367,12 @@
           "phonetic": "RAP-id-lee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "gorge",
+      "english": "n. gorge",
       "pronunciation": {
         "british": {
           "ipa": "ɡɔːdʒ",
@@ -3388,7 +3388,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "hazard",
+      "english": "n. hazard",
       "pronunciation": {
         "british": {
           "ipa": "ˈhæzəd",
@@ -3399,12 +3399,12 @@
           "phonetic": "HAZ-erd"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "king",
+      "english": "n. king",
       "pronunciation": {
         "british": {
           "ipa": "kɪŋ",
@@ -3415,12 +3415,12 @@
           "phonetic": "KING"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "cinema",
+      "english": "n. cinema",
       "pronunciation": {
         "british": {
           "ipa": "ˈsɪnəmə",
@@ -3431,12 +3431,12 @@
           "phonetic": "SIN-uh-muh"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Welsh",
+      "english": "adj. Welsh",
       "pronunciation": {
         "british": {
           "ipa": "welʃ",
@@ -3447,12 +3447,12 @@
           "phonetic": "WELSH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "brief",
+      "english": "adj. brief",
       "pronunciation": {
         "british": {
           "ipa": "briːf",
@@ -3463,12 +3463,12 @@
           "phonetic": "BREEF"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "score",
+      "english": "n. score",
       "pronunciation": {
         "british": {
           "ipa": "skɔː",
@@ -3484,7 +3484,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "pure",
+      "english": "adj. pure",
       "pronunciation": {
         "british": {
           "ipa": "pjʊə",
@@ -3495,12 +3495,12 @@
           "phonetic": "PYUR"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "reject",
+      "english": "v. reject",
       "pronunciation": {
         "british": {
           "ipa": "rɪˈdʒekt",
@@ -3511,12 +3511,12 @@
           "phonetic": "ri-JEKT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "engine",
+      "english": "n. engine",
       "pronunciation": {
         "british": {
           "ipa": "ˈendʒɪn",
@@ -3527,12 +3527,12 @@
           "phonetic": "EN-jin"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "ultimately",
+      "english": "adv. ultimately",
       "pronunciation": {
         "british": {
           "ipa": "ˈʌltɪmətli",
@@ -3548,7 +3548,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "feedback",
+      "english": "n. feedback",
       "pronunciation": {
         "british": {
           "ipa": "ˈfiːdbæk",
@@ -3559,12 +3559,12 @@
           "phonetic": "FEED-bak"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "belt",
+      "english": "n. belt",
       "pronunciation": {
         "british": {
           "ipa": "belt",
@@ -3575,12 +3575,12 @@
           "phonetic": "BELT"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "doubt",
+      "english": "n. doubt",
       "pronunciation": {
         "british": {
           "ipa": "daʊt",
@@ -3596,7 +3596,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "helicopter",
+      "english": "n. helicopter",
       "pronunciation": {
         "british": {
           "ipa": "ˈhelɪkɒptə",
@@ -3612,7 +3612,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "William",
+      "english": "n. William",
       "pronunciation": {
         "british": {
           "ipa": "ˈwɪljəm",
@@ -3623,12 +3623,12 @@
           "phonetic": "WIL-yum"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "unique",
+      "english": "adj. unique",
       "pronunciation": {
         "british": {
           "ipa": "juˈniːk",
@@ -3639,12 +3639,12 @@
           "phonetic": "yoo-NEEK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "feature",
+      "english": "n. feature",
       "pronunciation": {
         "british": {
           "ipa": "ˈfiːtʃə",
@@ -3655,12 +3655,12 @@
           "phonetic": "FEE-cher"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "cheap",
+      "english": "adj. cheap",
       "pronunciation": {
         "british": {
           "ipa": "tʃiːp",
@@ -3671,12 +3671,12 @@
           "phonetic": "CHEEP"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "analysis",
+      "english": "n. analysis",
       "pronunciation": {
         "british": {
           "ipa": "əˈnæləsɪs",
@@ -3692,7 +3692,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "fluid",
+      "english": "n. fluid",
       "pronunciation": {
         "british": {
           "ipa": "ˈfluːɪd",
@@ -3708,7 +3708,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "fundamental",
+      "english": "adj. fundamental",
       "pronunciation": {
         "british": {
           "ipa": "ˌfʌndəˈmentəl",
@@ -3724,7 +3724,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Republican",
+      "english": "adj. Republican",
       "pronunciation": {
         "british": {
           "ipa": "rɪˈpʌblɪkən",
@@ -3740,7 +3740,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "protection",
+      "english": "n. protection",
       "pronunciation": {
         "british": {
           "ipa": "prəˈtekʃən",
@@ -3756,7 +3756,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "conference",
+      "english": "n. conference",
       "pronunciation": {
         "british": {
           "ipa": "ˈkɒnfərəns",
@@ -3772,7 +3772,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "door",
+      "english": "n. door",
       "pronunciation": {
         "british": {
           "ipa": "dɔː",
@@ -3783,12 +3783,12 @@
           "phonetic": "DOR"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "efficient",
+      "english": "adj. efficient",
       "pronunciation": {
         "british": {
           "ipa": "ɪˈfɪʃənt",
@@ -3804,7 +3804,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "short",
+      "english": "adj. short",
       "pronunciation": {
         "british": {
           "ipa": "ʃɔːt",
@@ -3815,12 +3815,12 @@
           "phonetic": "SHORT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "mission",
+      "english": "n. mission",
       "pronunciation": {
         "british": {
           "ipa": "ˈmɪʃən",
@@ -3831,12 +3831,12 @@
           "phonetic": "MISH-ən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "strain",
+      "english": "n. strain",
       "pronunciation": {
         "british": {
           "ipa": "streɪn",
@@ -3847,12 +3847,12 @@
           "phonetic": "STRAYN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "leap",
+      "english": "v. leap",
       "pronunciation": {
         "british": {
           "ipa": "liːp",
@@ -3863,12 +3863,12 @@
           "phonetic": "LEEP"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "scenario",
+      "english": "n. scenario",
       "pronunciation": {
         "british": {
           "ipa": "sɪˈnɑːriə",
@@ -3879,12 +3879,12 @@
           "phonetic": "suh-NAIR-ee-oh"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "street",
+      "english": "n. street",
       "pronunciation": {
         "british": {
           "ipa": "striːt",
@@ -3895,12 +3895,12 @@
           "phonetic": "STREET"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "folklore",
+      "english": "n. folklore",
       "pronunciation": {
         "british": {
           "ipa": "ˈfəʊklɔː",
@@ -3911,12 +3911,12 @@
           "phonetic": "FOHK-lor"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "true",
+      "english": "adj. true",
       "pronunciation": {
         "british": {
           "ipa": "truː",
@@ -3927,12 +3927,12 @@
           "phonetic": "TROO"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "universe",
+      "english": "n. universe",
       "pronunciation": {
         "british": {
           "ipa": "ˈjuːnɪvɜːs",
@@ -3943,28 +3943,28 @@
           "phonetic": "YOO-ni-vurse"
         }
       },
+      "difficulty": "hard",
+      "category": "pte-fib-listening",
+      "source": "pte-fib-listening-with-ipa"
+    },
+    {
+      "english": "n. span",
+      "pronunciation": {
+        "british": {
+          "ipa": "spæn",
+          "phonetic": "SPAN"
+        },
+        "american": {
+          "ipa": "spæn",
+          "phonetic": "SPAN"
+        }
+      },
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "span",
-      "pronunciation": {
-        "british": {
-          "ipa": "spæn",
-          "phonetic": "SPAN"
-        },
-        "american": {
-          "ipa": "spæn",
-          "phonetic": "SPAN"
-        }
-      },
-      "difficulty": "easy",
-      "category": "pte-fib-listening",
-      "source": "pte-fib-listening-with-ipa"
-    },
-    {
-      "english": "link",
+      "english": "n. link",
       "pronunciation": {
         "british": {
           "ipa": "lɪŋk",
@@ -3975,12 +3975,12 @@
           "phonetic": "LINK"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "electrical",
+      "english": "adj. electrical",
       "pronunciation": {
         "british": {
           "ipa": "ɪˈlektrɪkəl",
@@ -3996,7 +3996,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "observe",
+      "english": "v. observe",
       "pronunciation": {
         "british": {
           "ipa": "əbˈzɜːv",
@@ -4007,12 +4007,12 @@
           "phonetic": "ub-ZERV"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "post",
+      "english": "n. post",
       "pronunciation": {
         "british": {
           "ipa": "pəʊst",
@@ -4023,12 +4023,12 @@
           "phonetic": "POHST"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "motion",
+      "english": "n. motion",
       "pronunciation": {
         "british": {
           "ipa": "ˈməʊʃən",
@@ -4039,12 +4039,12 @@
           "phonetic": "MOH-shun"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "admission",
+      "english": "n. admission",
       "pronunciation": {
         "british": {
           "ipa": "ədˈmɪʃən",
@@ -4060,7 +4060,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "exact",
+      "english": "adj. exact",
       "pronunciation": {
         "british": {
           "ipa": "ɪɡˈzækt",
@@ -4071,12 +4071,12 @@
           "phonetic": "ig-ZAKT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "ugly",
+      "english": "adj. ugly",
       "pronunciation": {
         "british": {
           "ipa": "ˈʌɡli",
@@ -4087,12 +4087,12 @@
           "phonetic": "UG-lee"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "percentage",
+      "english": "n. percentage",
       "pronunciation": {
         "british": {
           "ipa": "pəˈsɛntɪdʒ",
@@ -4108,7 +4108,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "clean",
+      "english": "adj. clean",
       "pronunciation": {
         "british": {
           "ipa": "kliːn",
@@ -4119,12 +4119,12 @@
           "phonetic": "KLEEN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "normal",
+      "english": "adj. normal",
       "pronunciation": {
         "british": {
           "ipa": "ˈnɔːməl",
@@ -4135,12 +4135,12 @@
           "phonetic": "NOR-mul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "moment",
+      "english": "n. moment",
       "pronunciation": {
         "british": {
           "ipa": "ˈməʊmənt",
@@ -4151,12 +4151,12 @@
           "phonetic": "MOH-ment"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "trace",
+      "english": "v. trace",
       "pronunciation": {
         "british": {
           "ipa": "treɪs",
@@ -4172,7 +4172,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "stay",
+      "english": "v. stay",
       "pronunciation": {
         "british": {
           "ipa": "steɪ",
@@ -4181,22 +4181,6 @@
         "american": {
           "ipa": "steɪ",
           "phonetic": "STAY"
-        }
-      },
-      "difficulty": "easy",
-      "category": "pte-fib-listening",
-      "source": "pte-fib-listening-with-ipa"
-    },
-    {
-      "english": "boundary",
-      "pronunciation": {
-        "british": {
-          "ipa": "ˈbaʊndəri",
-          "phonetic": "BOWN-duh-ree"
-        },
-        "american": {
-          "ipa": "ˈbaʊndəri",
-          "phonetic": "BOWN-duh-ree"
         }
       },
       "difficulty": "normal",
@@ -4204,7 +4188,23 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "chemical",
+      "english": "n. boundary",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbaʊndəri",
+          "phonetic": "BOWN-duh-ree"
+        },
+        "american": {
+          "ipa": "ˈbaʊndəri",
+          "phonetic": "BOWN-duh-ree"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-fib-listening",
+      "source": "pte-fib-listening-with-ipa"
+    },
+    {
+      "english": "adj. chemical",
       "pronunciation": {
         "british": {
           "ipa": "ˈkemɪkəl",
@@ -4215,12 +4215,12 @@
           "phonetic": "KEM-i-kul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "brand",
+      "english": "n. brand",
       "pronunciation": {
         "british": {
           "ipa": "brænd",
@@ -4236,7 +4236,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "men",
+      "english": "n. men",
       "pronunciation": {
         "british": {
           "ipa": "men",
@@ -4247,12 +4247,12 @@
           "phonetic": "MEN"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "output",
+      "english": "n. output",
       "pronunciation": {
         "british": {
           "ipa": "ˈaʊtpʊt",
@@ -4263,12 +4263,12 @@
           "phonetic": "OUT-put"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "continent",
+      "english": "n. continent",
       "pronunciation": {
         "british": {
           "ipa": "ˈkɒntɪnənt",
@@ -4284,7 +4284,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "alongside",
+      "english": "prep. alongside",
       "pronunciation": {
         "british": {
           "ipa": "əˌlɒŋˈsaɪd",
@@ -4300,7 +4300,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "san",
+      "english": "n. san",
       "pronunciation": {
         "british": {
           "ipa": "sæn",
@@ -4311,12 +4311,12 @@
           "phonetic": "SAN"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "gray",
+      "english": "adj. gray",
       "pronunciation": {
         "british": {
           "ipa": "ɡreɪ",
@@ -4327,12 +4327,12 @@
           "phonetic": "GRAY"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "island",
+      "english": "n. island",
       "pronunciation": {
         "british": {
           "ipa": "ˈaɪlənd",
@@ -4343,12 +4343,12 @@
           "phonetic": "EYE-lənd"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "acceptance",
+      "english": "n. acceptance",
       "pronunciation": {
         "british": {
           "ipa": "əkˈseptəns",
@@ -4364,7 +4364,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "bush",
+      "english": "n. bush",
       "pronunciation": {
         "british": {
           "ipa": "bʊʃ",
@@ -4375,12 +4375,12 @@
           "phonetic": "BUSH"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "coffee",
+      "english": "n. coffee",
       "pronunciation": {
         "british": {
           "ipa": "ˈkɒfi",
@@ -4391,12 +4391,12 @@
           "phonetic": "KAW-fee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "struggle",
+      "english": "v. struggle",
       "pronunciation": {
         "british": {
           "ipa": "ˈstrʌɡəl",
@@ -4407,12 +4407,12 @@
           "phonetic": "STRUG-ul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "budget",
+      "english": "n. budget",
       "pronunciation": {
         "british": {
           "ipa": "ˈbʌdʒɪt",
@@ -4423,12 +4423,12 @@
           "phonetic": "BUJ-it"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "usage",
+      "english": "n. usage",
       "pronunciation": {
         "british": {
           "ipa": "ˈjuːsɪdʒ",
@@ -4444,7 +4444,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "nurse",
+      "english": "n. nurse",
       "pronunciation": {
         "british": {
           "ipa": "nɜːs",
@@ -4460,7 +4460,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "average",
+      "english": "adj. average",
       "pronunciation": {
         "british": {
           "ipa": "ˈævərɪdʒ",
@@ -4471,12 +4471,12 @@
           "phonetic": "AV-uh-rij"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "generally",
+      "english": "adv. generally",
       "pronunciation": {
         "british": {
           "ipa": "ˈdʒenərəli",
@@ -4492,7 +4492,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "exchange",
+      "english": "v. exchange",
       "pronunciation": {
         "british": {
           "ipa": "ɪksˈtʃeɪndʒ",
@@ -4503,12 +4503,12 @@
           "phonetic": "iks-CHAYNJ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "merely",
+      "english": "adv. merely",
       "pronunciation": {
         "british": {
           "ipa": "ˈmɪəli",
@@ -4519,12 +4519,12 @@
           "phonetic": "MEER-lee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "enable",
+      "english": "v. enable",
       "pronunciation": {
         "british": {
           "ipa": "ɪˈneɪbəl",
@@ -4535,12 +4535,12 @@
           "phonetic": "i-NAY-bul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "strategy",
+      "english": "n. strategy",
       "pronunciation": {
         "british": {
           "ipa": "ˈstrætədʒi",
@@ -4551,12 +4551,12 @@
           "phonetic": "STRAT-uh-jee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "red",
+      "english": "adj. red",
       "pronunciation": {
         "british": {
           "ipa": "red",
@@ -4567,12 +4567,12 @@
           "phonetic": "RED"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "diamond",
+      "english": "n. diamond",
       "pronunciation": {
         "british": {
           "ipa": "ˈdaɪəmənd",
@@ -4583,12 +4583,12 @@
           "phonetic": "DYE-mund"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "agreement",
+      "english": "n. agreement",
       "pronunciation": {
         "british": {
           "ipa": "əˈɡriːmənt",
@@ -4604,7 +4604,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "win",
+      "english": "v. win",
       "pronunciation": {
         "british": {
           "ipa": "wɪn",
@@ -4615,12 +4615,12 @@
           "phonetic": "WIN"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "host",
+      "english": "n. host",
       "pronunciation": {
         "british": {
           "ipa": "həʊst",
@@ -4631,12 +4631,12 @@
           "phonetic": "HOHST"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Britain",
+      "english": "n. Britain",
       "pronunciation": {
         "british": {
           "ipa": "ˈbrɪtən",
@@ -4647,12 +4647,12 @@
           "phonetic": "BRIT-ən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "bulb",
+      "english": "n. bulb",
       "pronunciation": {
         "british": {
           "ipa": "bʌlb",
@@ -4663,12 +4663,12 @@
           "phonetic": "BULB"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "examine",
+      "english": "v. examine",
       "pronunciation": {
         "british": {
           "ipa": "ɪɡˈzæmɪn",
@@ -4679,12 +4679,12 @@
           "phonetic": "ig-ZAM-in"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "scope",
+      "english": "n. scope",
       "pronunciation": {
         "british": {
           "ipa": "skəʊp",
@@ -4700,7 +4700,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "utility",
+      "english": "n. utility",
       "pronunciation": {
         "british": {
           "ipa": "juːˈtɪləti",
@@ -4716,7 +4716,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "loosestrife",
+      "english": "n. loosestrife",
       "pronunciation": {
         "british": {
           "ipa": "ˈluːsstraɪf",
@@ -4732,7 +4732,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "wheel",
+      "english": "n. wheel",
       "pronunciation": {
         "british": {
           "ipa": "wiːl",
@@ -4748,7 +4748,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "collect",
+      "english": "v. collect",
       "pronunciation": {
         "british": {
           "ipa": "kəˈlekt",
@@ -4759,12 +4759,12 @@
           "phonetic": "kuh-LEKT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "illness",
+      "english": "n. illness",
       "pronunciation": {
         "british": {
           "ipa": "ˈɪlnəs",
@@ -4775,12 +4775,12 @@
           "phonetic": "IL-nuss"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "appliance",
+      "english": "n. appliance",
       "pronunciation": {
         "british": {
           "ipa": "əˈplaɪəns",
@@ -4796,7 +4796,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "marmoset",
+      "english": "n. marmoset",
       "pronunciation": {
         "british": {
           "ipa": "ˈmɑːməsɛt",
@@ -4807,12 +4807,12 @@
           "phonetic": "MAR-muh-set"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "map",
+      "english": "n. map",
       "pronunciation": {
         "british": {
           "ipa": "mæp",
@@ -4823,12 +4823,12 @@
           "phonetic": "MAP"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "eastern",
+      "english": "adj. eastern",
       "pronunciation": {
         "british": {
           "ipa": "ˈiːstən",
@@ -4839,12 +4839,12 @@
           "phonetic": "EE-stern"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "sibling",
+      "english": "n. sibling",
       "pronunciation": {
         "british": {
           "ipa": "ˈsɪblɪŋ",
@@ -4855,12 +4855,12 @@
           "phonetic": "SIB-ling"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "sun",
+      "english": "n. sun",
       "pronunciation": {
         "british": {
           "ipa": "sʌn",
@@ -4871,12 +4871,12 @@
           "phonetic": "SUN"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "millennium",
+      "english": "n. millennium",
       "pronunciation": {
         "british": {
           "ipa": "mɪˈleniəm",
@@ -4892,7 +4892,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "mortality",
+      "english": "n. mortality",
       "pronunciation": {
         "british": {
           "ipa": "mɔːˈtæləti",
@@ -4908,7 +4908,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "invisible",
+      "english": "adj. invisible",
       "pronunciation": {
         "british": {
           "ipa": "ɪnˈvɪzəbl",
@@ -4924,7 +4924,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "instinct",
+      "english": "n. instinct",
       "pronunciation": {
         "british": {
           "ipa": "ˈɪnstɪŋkt",
@@ -4935,12 +4935,12 @@
           "phonetic": "IN-stinkt"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "advice",
+      "english": "n. advice",
       "pronunciation": {
         "british": {
           "ipa": "ədˈvaɪs",
@@ -4951,12 +4951,12 @@
           "phonetic": "ud-VYS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "whale",
+      "english": "n. whale",
       "pronunciation": {
         "british": {
           "ipa": "weɪl",
@@ -4972,7 +4972,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "relevant",
+      "english": "adj. relevant",
       "pronunciation": {
         "british": {
           "ipa": "ˈreləvənt",
@@ -4983,12 +4983,12 @@
           "phonetic": "REL-uh-vənt"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "bother",
+      "english": "v. bother",
       "pronunciation": {
         "british": {
           "ipa": "ˈbɒðə",
@@ -4999,12 +4999,12 @@
           "phonetic": "BAH-thur"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "receive",
+      "english": "v. receive",
       "pronunciation": {
         "british": {
           "ipa": "rɪˈsiːv",
@@ -5015,12 +5015,12 @@
           "phonetic": "ri-SEEV"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "theft",
+      "english": "n. theft",
       "pronunciation": {
         "british": {
           "ipa": "θeft",
@@ -5036,7 +5036,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "property",
+      "english": "n. property",
       "pronunciation": {
         "british": {
           "ipa": "ˈprɒpəti",
@@ -5047,12 +5047,12 @@
           "phonetic": "PRAH-per-tee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "battle",
+      "english": "n. battle",
       "pronunciation": {
         "british": {
           "ipa": "ˈbætəl",
@@ -5063,12 +5063,12 @@
           "phonetic": "BAT-əl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "dioxide",
+      "english": "n. dioxide",
       "pronunciation": {
         "british": {
           "ipa": "daɪˈɒksaɪd",
@@ -5079,12 +5079,12 @@
           "phonetic": "dy-AHK-syd"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "regional",
+      "english": "adj. regional",
       "pronunciation": {
         "british": {
           "ipa": "ˈriːdʒənəl",
@@ -5095,12 +5095,12 @@
           "phonetic": "REE-juh-nəl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Venus",
+      "english": "n. Venus",
       "pronunciation": {
         "british": {
           "ipa": "ˈviːnəs",
@@ -5116,7 +5116,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "surprise",
+      "english": "n. surprise",
       "pronunciation": {
         "british": {
           "ipa": "səˈprʌɪz",
@@ -5127,12 +5127,12 @@
           "phonetic": "sur-PRYZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "purchase",
+      "english": "v. purchase",
       "pronunciation": {
         "british": {
           "ipa": "ˈpɜːtʃəs",
@@ -5143,12 +5143,12 @@
           "phonetic": "PUR-chus"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "position",
+      "english": "n. position",
       "pronunciation": {
         "british": {
           "ipa": "pəˈzɪʃən",
@@ -5159,44 +5159,44 @@
           "phonetic": "puh-ZISH-ən"
         }
       },
+      "difficulty": "hard",
+      "category": "pte-fib-listening",
+      "source": "pte-fib-listening-with-ipa"
+    },
+    {
+      "english": "adj. nice",
+      "pronunciation": {
+        "british": {
+          "ipa": "naɪs",
+          "phonetic": "NYS"
+        },
+        "american": {
+          "ipa": "naɪs",
+          "phonetic": "NYS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-fib-listening",
+      "source": "pte-fib-listening-with-ipa"
+    },
+    {
+      "english": "n. lab",
+      "pronunciation": {
+        "british": {
+          "ipa": "læb",
+          "phonetic": "LAB"
+        },
+        "american": {
+          "ipa": "læb",
+          "phonetic": "LAB"
+        }
+      },
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "nice",
-      "pronunciation": {
-        "british": {
-          "ipa": "naɪs",
-          "phonetic": "NYS"
-        },
-        "american": {
-          "ipa": "naɪs",
-          "phonetic": "NYS"
-        }
-      },
-      "difficulty": "easy",
-      "category": "pte-fib-listening",
-      "source": "pte-fib-listening-with-ipa"
-    },
-    {
-      "english": "lab",
-      "pronunciation": {
-        "british": {
-          "ipa": "læb",
-          "phonetic": "LAB"
-        },
-        "american": {
-          "ipa": "læb",
-          "phonetic": "LAB"
-        }
-      },
-      "difficulty": "easy",
-      "category": "pte-fib-listening",
-      "source": "pte-fib-listening-with-ipa"
-    },
-    {
-      "english": "vegetarian",
+      "english": "n. vegetarian",
       "pronunciation": {
         "british": {
           "ipa": "ˌvedʒɪˈteəriən",
@@ -5212,7 +5212,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Ireland",
+      "english": "n. Ireland",
       "pronunciation": {
         "british": {
           "ipa": "ˈaɪələnd",
@@ -5223,12 +5223,12 @@
           "phonetic": "EYE-er-lənd"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "conservancy",
+      "english": "n. conservancy",
       "pronunciation": {
         "british": {
           "ipa": "kənˈsɜːvənsi",
@@ -5244,7 +5244,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "fossil",
+      "english": "n. fossil",
       "pronunciation": {
         "british": {
           "ipa": "ˈfɒsəl",
@@ -5255,12 +5255,12 @@
           "phonetic": "FAH-sul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "urbanization",
+      "english": "n. urbanization",
       "pronunciation": {
         "british": {
           "ipa": "ˌɜːbənʌɪˈzeɪʃən",
@@ -5276,7 +5276,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "John",
+      "english": "n. John",
       "pronunciation": {
         "british": {
           "ipa": "dʒɒn",
@@ -5287,12 +5287,12 @@
           "phonetic": "JAHN"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "champion",
+      "english": "n. champion",
       "pronunciation": {
         "british": {
           "ipa": "ˈtʃæmpiən",
@@ -5303,12 +5303,12 @@
           "phonetic": "CHAM-pee-ən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "timing",
+      "english": "n. timing",
       "pronunciation": {
         "british": {
           "ipa": "ˈtaɪmɪŋ",
@@ -5319,12 +5319,12 @@
           "phonetic": "TY-ming"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "marine",
+      "english": "adj. marine",
       "pronunciation": {
         "british": {
           "ipa": "məˈriːn",
@@ -5335,12 +5335,12 @@
           "phonetic": "muh-REEN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "extreme",
+      "english": "adj. extreme",
       "pronunciation": {
         "british": {
           "ipa": "ɪkˈstriːm",
@@ -5351,12 +5351,12 @@
           "phonetic": "ik-STREEM"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "address",
+      "english": "n. address",
       "pronunciation": {
         "british": {
           "ipa": "əˈdres",
@@ -5367,12 +5367,12 @@
           "phonetic": "uh-DRESS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "programme",
+      "english": "n. programme",
       "pronunciation": {
         "british": {
           "ipa": "ˈprəʊɡræm",
@@ -5388,7 +5388,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "association",
+      "english": "n. association",
       "pronunciation": {
         "british": {
           "ipa": "əˌsəʊsɪˈeɪʃən",
@@ -5404,7 +5404,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "stimulate",
+      "english": "v. stimulate",
       "pronunciation": {
         "british": {
           "ipa": "ˈstɪmjʊleɪt",
@@ -5420,7 +5420,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "chess",
+      "english": "n. chess",
       "pronunciation": {
         "british": {
           "ipa": "tʃes",
@@ -5436,7 +5436,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "biological",
+      "english": "adj. biological",
       "pronunciation": {
         "british": {
           "ipa": "ˌbaɪəˈlɒdʒɪkəl",
@@ -5452,7 +5452,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "exposure",
+      "english": "n. exposure",
       "pronunciation": {
         "british": {
           "ipa": "ɪkˈspəʊʒə",
@@ -5463,12 +5463,12 @@
           "phonetic": "ik-SPOH-zher"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "division",
+      "english": "n. division",
       "pronunciation": {
         "british": {
           "ipa": "dɪˈvɪʒən",
@@ -5479,12 +5479,12 @@
           "phonetic": "di-VIZH-ən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "translator",
+      "english": "n. translator",
       "pronunciation": {
         "british": {
           "ipa": "trænsˈleɪtə",
@@ -5500,7 +5500,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "facilitate",
+      "english": "v. facilitate",
       "pronunciation": {
         "british": {
           "ipa": "fəˈsɪlɪteɪt",
@@ -5516,7 +5516,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "scholar",
+      "english": "n. scholar",
       "pronunciation": {
         "british": {
           "ipa": "ˈskɒlə",
@@ -5527,12 +5527,12 @@
           "phonetic": "SKAH-ler"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "plus",
+      "english": "prep. plus",
       "pronunciation": {
         "british": {
           "ipa": "plʌs",
@@ -5543,12 +5543,12 @@
           "phonetic": "PLUS"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "tower",
+      "english": "n. tower",
       "pronunciation": {
         "british": {
           "ipa": "ˈtaʊə",
@@ -5564,7 +5564,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "approve",
+      "english": "v. approve",
       "pronunciation": {
         "british": {
           "ipa": "əˈpruːv",
@@ -5575,12 +5575,12 @@
           "phonetic": "uh-PROOV"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "imperial",
+      "english": "adj. imperial",
       "pronunciation": {
         "british": {
           "ipa": "ɪmˈpɪəriəl",
@@ -5591,12 +5591,12 @@
           "phonetic": "im-PEER-ee-əl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "inch",
+      "english": "n. inch",
       "pronunciation": {
         "british": {
           "ipa": "ɪntʃ",
@@ -5607,12 +5607,12 @@
           "phonetic": "INCH"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "judge",
+      "english": "n. judge",
       "pronunciation": {
         "british": {
           "ipa": "dʒʌdʒ",
@@ -5628,7 +5628,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "medication",
+      "english": "n. medication",
       "pronunciation": {
         "british": {
           "ipa": "ˌmedɪˈkeɪʃən",
@@ -5644,7 +5644,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Canadian",
+      "english": "adj. Canadian",
       "pronunciation": {
         "british": {
           "ipa": "kəˈneɪdiən",
@@ -5655,12 +5655,12 @@
           "phonetic": "kuh-NAY-dee-ən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "boy",
+      "english": "n. boy",
       "pronunciation": {
         "british": {
           "ipa": "bɔɪ",
@@ -5671,12 +5671,12 @@
           "phonetic": "BOY"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "quarter",
+      "english": "n. quarter",
       "pronunciation": {
         "british": {
           "ipa": "ˈkwɔːtə",
@@ -5687,12 +5687,12 @@
           "phonetic": "KWOR-ter"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "unless",
+      "english": "conj. unless",
       "pronunciation": {
         "british": {
           "ipa": "ʌnˈles",
@@ -5703,12 +5703,12 @@
           "phonetic": "un-LES"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "grape",
+      "english": "n. grape",
       "pronunciation": {
         "british": {
           "ipa": "ɡreɪp",
@@ -5724,7 +5724,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "firm",
+      "english": "adj. firm",
       "pronunciation": {
         "british": {
           "ipa": "fɜːm",
@@ -5735,12 +5735,12 @@
           "phonetic": "FIRM"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Hubble",
+      "english": "n. Hubble",
       "pronunciation": {
         "british": {
           "ipa": "ˈhʌbəl",
@@ -5751,12 +5751,12 @@
           "phonetic": "HUB-əl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "satisfy",
+      "english": "v. satisfy",
       "pronunciation": {
         "british": {
           "ipa": "ˈsætɪsfaɪ",
@@ -5767,12 +5767,12 @@
           "phonetic": "SAT-is-fy"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "detailed",
+      "english": "adj. detailed",
       "pronunciation": {
         "british": {
           "ipa": "ˈdiːteɪld",
@@ -5783,12 +5783,12 @@
           "phonetic": "DEE-tayld"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "broad",
+      "english": "adj. broad",
       "pronunciation": {
         "british": {
           "ipa": "brɔːd",
@@ -5799,12 +5799,12 @@
           "phonetic": "BRAWD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "properly",
+      "english": "adv. properly",
       "pronunciation": {
         "british": {
           "ipa": "ˈprɒpəli",
@@ -5815,12 +5815,12 @@
           "phonetic": "PRAH-per-lee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "migrate",
+      "english": "v. migrate",
       "pronunciation": {
         "british": {
           "ipa": "ˈmaɪɡreɪt",
@@ -5831,12 +5831,12 @@
           "phonetic": "MY-grayt"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Egyptian",
+      "english": "adj. Egyptian",
       "pronunciation": {
         "british": {
           "ipa": "ɪˈdʒɪpʃən",
@@ -5847,12 +5847,12 @@
           "phonetic": "i-JIP-shən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "electric",
+      "english": "adj. electric",
       "pronunciation": {
         "british": {
           "ipa": "ɪˈlektrɪk",
@@ -5863,12 +5863,12 @@
           "phonetic": "ih-LEK-trik"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "night",
+      "english": "n. night",
       "pronunciation": {
         "british": {
           "ipa": "naɪt",
@@ -5884,7 +5884,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "duty",
+      "english": "n. duty",
       "pronunciation": {
         "british": {
           "ipa": "ˈdjuːti",
@@ -5895,12 +5895,12 @@
           "phonetic": "DOO-tee"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "union",
+      "english": "n. union",
       "pronunciation": {
         "british": {
           "ipa": "ˈjuːnjən",
@@ -5916,7 +5916,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "criminal",
+      "english": "adj. criminal",
       "pronunciation": {
         "british": {
           "ipa": "ˈkrɪmɪnəl",
@@ -5927,12 +5927,12 @@
           "phonetic": "KRIM-i-nəl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "strange",
+      "english": "adj. strange",
       "pronunciation": {
         "british": {
           "ipa": "streɪndʒ",
@@ -5943,12 +5943,12 @@
           "phonetic": "STRAYNJ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "carefully",
+      "english": "adv. carefully",
       "pronunciation": {
         "british": {
           "ipa": "ˈkeəfəli",
@@ -5964,7 +5964,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "obviously",
+      "english": "adv. obviously",
       "pronunciation": {
         "british": {
           "ipa": "ˈɒbvɪəsli",
@@ -5980,7 +5980,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "outperform",
+      "english": "v. outperform",
       "pronunciation": {
         "british": {
           "ipa": "ˌaʊtpəˈfɔːm",
@@ -5996,7 +5996,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "transition",
+      "english": "n. transition",
       "pronunciation": {
         "british": {
           "ipa": "trænˈzɪʃən",
@@ -6012,7 +6012,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "distribution",
+      "english": "n. distribution",
       "pronunciation": {
         "british": {
           "ipa": "ˌdɪstrɪˈbjuːʃən",
@@ -6028,7 +6028,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Asian",
+      "english": "adj. Asian",
       "pronunciation": {
         "british": {
           "ipa": "ˈeɪʒən",
@@ -6039,12 +6039,12 @@
           "phonetic": "AY-zhən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "wolf",
+      "english": "n. wolf",
       "pronunciation": {
         "british": {
           "ipa": "wʊlf",
@@ -6055,12 +6055,12 @@
           "phonetic": "WULF"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "kid",
+      "english": "n. kid",
       "pronunciation": {
         "british": {
           "ipa": "kɪd",
@@ -6069,22 +6069,6 @@
         "american": {
           "ipa": "kɪd",
           "phonetic": "KID"
-        }
-      },
-      "difficulty": "easy",
-      "category": "pte-fib-listening",
-      "source": "pte-fib-listening-with-ipa"
-    },
-    {
-      "english": "mixed",
-      "pronunciation": {
-        "british": {
-          "ipa": "mɪkst",
-          "phonetic": "MIKST"
-        },
-        "american": {
-          "ipa": "mɪkst",
-          "phonetic": "MIKST"
         }
       },
       "difficulty": "normal",
@@ -6092,7 +6076,23 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "competitive",
+      "english": "adj. mixed",
+      "pronunciation": {
+        "british": {
+          "ipa": "mɪkst",
+          "phonetic": "MIKST"
+        },
+        "american": {
+          "ipa": "mɪkst",
+          "phonetic": "MIKST"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-fib-listening",
+      "source": "pte-fib-listening-with-ipa"
+    },
+    {
+      "english": "adj. competitive",
       "pronunciation": {
         "british": {
           "ipa": "kəmˈpetɪtɪv",
@@ -6108,7 +6108,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "step",
+      "english": "n. step",
       "pronunciation": {
         "british": {
           "ipa": "step",
@@ -6119,12 +6119,12 @@
           "phonetic": "STEP"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "absolute",
+      "english": "adj. absolute",
       "pronunciation": {
         "british": {
           "ipa": "ˈæbsəluːt",
@@ -6135,12 +6135,12 @@
           "phonetic": "AB-suh-loot"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "February",
+      "english": "n. February",
       "pronunciation": {
         "british": {
           "ipa": "ˈfebruəri",
@@ -6151,12 +6151,12 @@
           "phonetic": "FEB-roo-air-ee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "non-verbal",
+      "english": "adj. non-verbal",
       "pronunciation": {
         "british": {
           "ipa": "ˌnɒn ˈvɜːbəl",
@@ -6172,7 +6172,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "bullying",
+      "english": "n. bullying",
       "pronunciation": {
         "british": {
           "ipa": "ˈbʊliɪŋ",
@@ -6183,12 +6183,12 @@
           "phonetic": "BOOL-ee-ing"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "continue",
+      "english": "v. continue",
       "pronunciation": {
         "british": {
           "ipa": "kənˈtɪnjuː",
@@ -6199,12 +6199,12 @@
           "phonetic": "kun-TIN-yoo"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "storm",
+      "english": "n. storm",
       "pronunciation": {
         "british": {
           "ipa": "stɔːm",
@@ -6220,7 +6220,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "shareholder",
+      "english": "n. shareholder",
       "pronunciation": {
         "british": {
           "ipa": "ˈʃeəˌhəʊldə",
@@ -6236,7 +6236,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "whose",
+      "english": "pron. whose",
       "pronunciation": {
         "british": {
           "ipa": "huːz",
@@ -6247,12 +6247,12 @@
           "phonetic": "HOOZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "escape",
+      "english": "v. escape",
       "pronunciation": {
         "british": {
           "ipa": "ɪsˈkeɪp",
@@ -6263,12 +6263,12 @@
           "phonetic": "is-KAYP"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "yield",
+      "english": "v. yield",
       "pronunciation": {
         "british": {
           "ipa": "jiːld",
@@ -6284,7 +6284,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "poverty",
+      "english": "n. poverty",
       "pronunciation": {
         "british": {
           "ipa": "ˈpɒvəti",
@@ -6295,12 +6295,12 @@
           "phonetic": "PAH-ver-tee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "prepare",
+      "english": "v. prepare",
       "pronunciation": {
         "british": {
           "ipa": "prɪˈpeə",
@@ -6311,12 +6311,12 @@
           "phonetic": "pri-PAIR"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "mind",
+      "english": "n. mind",
       "pronunciation": {
         "british": {
           "ipa": "maɪnd",
@@ -6327,12 +6327,12 @@
           "phonetic": "MYND"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "express",
+      "english": "v. express",
       "pronunciation": {
         "british": {
           "ipa": "ɪkˈspres",
@@ -6343,12 +6343,12 @@
           "phonetic": "ik-SPRES"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "mile",
+      "english": "n. mile",
       "pronunciation": {
         "british": {
           "ipa": "maɪl",
@@ -6359,12 +6359,12 @@
           "phonetic": "MYL"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "employment",
+      "english": "n. employment",
       "pronunciation": {
         "british": {
           "ipa": "ɪmˈplɔɪmənt",
@@ -6380,7 +6380,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "gold",
+      "english": "n. gold",
       "pronunciation": {
         "british": {
           "ipa": "ɡəʊld",
@@ -6391,12 +6391,12 @@
           "phonetic": "GOHLD"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "commence",
+      "english": "v. commence",
       "pronunciation": {
         "british": {
           "ipa": "kəˈmens",
@@ -6407,12 +6407,12 @@
           "phonetic": "kuh-MENS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "frog",
+      "english": "n. frog",
       "pronunciation": {
         "british": {
           "ipa": "frɒɡ",
@@ -6423,12 +6423,12 @@
           "phonetic": "FRAHG"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "jet",
+      "english": "n. jet",
       "pronunciation": {
         "british": {
           "ipa": "dʒet",
@@ -6439,12 +6439,12 @@
           "phonetic": "JET"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "whereas",
+      "english": "conj. whereas",
       "pronunciation": {
         "british": {
           "ipa": "ˌweərˈæz",
@@ -6455,12 +6455,12 @@
           "phonetic": "WER-AZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "return",
+      "english": "v. return",
       "pronunciation": {
         "british": {
           "ipa": "rɪˈtɜːn",
@@ -6471,12 +6471,12 @@
           "phonetic": "ri-TURN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "resolve",
+      "english": "v. resolve",
       "pronunciation": {
         "british": {
           "ipa": "rɪˈzɒlv",
@@ -6487,12 +6487,12 @@
           "phonetic": "ri-ZAHLV"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "rely",
+      "english": "v. rely",
       "pronunciation": {
         "british": {
           "ipa": "rɪˈlaɪ",
@@ -6503,12 +6503,12 @@
           "phonetic": "ri-LY"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "maker",
+      "english": "n. maker",
       "pronunciation": {
         "british": {
           "ipa": "ˈmeɪkə",
@@ -6524,7 +6524,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "army",
+      "english": "n. army",
       "pronunciation": {
         "british": {
           "ipa": "ˈɑːmi",
@@ -6535,12 +6535,12 @@
           "phonetic": "AR-mee"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "incorporate",
+      "english": "v. incorporate",
       "pronunciation": {
         "british": {
           "ipa": "ɪnˈkɔːpəreɪt",
@@ -6556,7 +6556,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "spectacle",
+      "english": "n. spectacle",
       "pronunciation": {
         "british": {
           "ipa": "ˈspektəkəl",
@@ -6572,7 +6572,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "litter",
+      "english": "n. litter",
       "pronunciation": {
         "british": {
           "ipa": "ˈlɪtə",
@@ -6583,12 +6583,12 @@
           "phonetic": "LIT-er"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "borrow",
+      "english": "v. borrow",
       "pronunciation": {
         "british": {
           "ipa": "ˈbɒrəʊ",
@@ -6599,12 +6599,12 @@
           "phonetic": "BAHR-oh"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "equal",
+      "english": "adj. equal",
       "pronunciation": {
         "british": {
           "ipa": "ˈiːkwəl",
@@ -6615,12 +6615,12 @@
           "phonetic": "EE-kwəl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "screen",
+      "english": "n. screen",
       "pronunciation": {
         "british": {
           "ipa": "skriːn",
@@ -6631,12 +6631,12 @@
           "phonetic": "SKREEN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "expect",
+      "english": "v. expect",
       "pronunciation": {
         "british": {
           "ipa": "ɪkˈspekt",
@@ -6647,12 +6647,12 @@
           "phonetic": "ik-SPEKT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "disadvantage",
+      "english": "n. disadvantage",
       "pronunciation": {
         "british": {
           "ipa": "ˌdɪsədˈvɑːntɪdʒ",
@@ -6668,7 +6668,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "permit",
+      "english": "v. permit",
       "pronunciation": {
         "british": {
           "ipa": "ˈpɜːmɪt",
@@ -6679,12 +6679,12 @@
           "phonetic": "PER-mit"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "definitive",
+      "english": "adj. definitive",
       "pronunciation": {
         "british": {
           "ipa": "dɪˈfɪnɪtɪv",
@@ -6700,7 +6700,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "fuel",
+      "english": "n. fuel",
       "pronunciation": {
         "british": {
           "ipa": "ˈfjuːəl",
@@ -6711,12 +6711,12 @@
           "phonetic": "FYOO-əl"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "reality",
+      "english": "n. reality",
       "pronunciation": {
         "british": {
           "ipa": "riˈælɪti",
@@ -6725,6 +6725,22 @@
         "american": {
           "ipa": "riˈælɪti",
           "phonetic": "ree-AL-i-tee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-fib-listening",
+      "source": "pte-fib-listening-with-ipa"
+    },
+    {
+      "english": "n. milk",
+      "pronunciation": {
+        "british": {
+          "ipa": "mɪlk",
+          "phonetic": "MILK"
+        },
+        "american": {
+          "ipa": "mɪlk",
+          "phonetic": "MILK"
         }
       },
       "difficulty": "normal",
@@ -6732,23 +6748,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "milk",
-      "pronunciation": {
-        "british": {
-          "ipa": "mɪlk",
-          "phonetic": "MILK"
-        },
-        "american": {
-          "ipa": "mɪlk",
-          "phonetic": "MILK"
-        }
-      },
-      "difficulty": "easy",
-      "category": "pte-fib-listening",
-      "source": "pte-fib-listening-with-ipa"
-    },
-    {
-      "english": "hear",
+      "english": "v. hear",
       "pronunciation": {
         "british": {
           "ipa": "hɪə",
@@ -6759,12 +6759,12 @@
           "phonetic": "HEER"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "surround",
+      "english": "v. surround",
       "pronunciation": {
         "british": {
           "ipa": "səˈraʊnd",
@@ -6775,12 +6775,12 @@
           "phonetic": "suh-ROUND"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "difficulty",
+      "english": "n. difficulty",
       "pronunciation": {
         "british": {
           "ipa": "ˈdɪfɪkəlti",
@@ -6796,7 +6796,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "dance",
+      "english": "v. dance",
       "pronunciation": {
         "british": {
           "ipa": "dɑːns",
@@ -6812,7 +6812,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "camp",
+      "english": "n. camp",
       "pronunciation": {
         "british": {
           "ipa": "kæmp",
@@ -6823,12 +6823,12 @@
           "phonetic": "KAMP"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Isolation",
+      "english": "n. Isolation",
       "pronunciation": {
         "british": {
           "ipa": "ˌaɪsəˈleɪʃən",
@@ -6844,7 +6844,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "substance",
+      "english": "n. substance",
       "pronunciation": {
         "british": {
           "ipa": "ˈsʌbstəns",
@@ -6860,7 +6860,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "teeth",
+      "english": "n. teeth",
       "pronunciation": {
         "british": {
           "ipa": "tiːθ",
@@ -6876,7 +6876,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "shrink",
+      "english": "v. shrink",
       "pronunciation": {
         "british": {
           "ipa": "ʃrɪŋk",
@@ -6887,12 +6887,12 @@
           "phonetic": "SHRINK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "hungry",
+      "english": "adj. hungry",
       "pronunciation": {
         "british": {
           "ipa": "ˈhʌŋɡri",
@@ -6903,12 +6903,12 @@
           "phonetic": "HUNG-gree"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "constantly",
+      "english": "adv. constantly",
       "pronunciation": {
         "british": {
           "ipa": "ˈkɒnstəntli",
@@ -6924,7 +6924,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "geothermal",
+      "english": "adj. geothermal",
       "pronunciation": {
         "british": {
           "ipa": "ˌdʒiːəʊˈθɜːməl",
@@ -6940,7 +6940,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "guess",
+      "english": "v. guess",
       "pronunciation": {
         "british": {
           "ipa": "ɡes",
@@ -6956,7 +6956,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "tutor",
+      "english": "n. tutor",
       "pronunciation": {
         "british": {
           "ipa": "ˈtjuːtə",
@@ -6972,7 +6972,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "marshmallow",
+      "english": "n. marshmallow",
       "pronunciation": {
         "british": {
           "ipa": "ˈmɑːʃˌmæləʊ",
@@ -6988,7 +6988,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "biologist",
+      "english": "n. biologist",
       "pronunciation": {
         "british": {
           "ipa": "baɪˈɒlədʒɪst",
@@ -7004,7 +7004,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "desirable",
+      "english": "adj. desirable",
       "pronunciation": {
         "british": {
           "ipa": "dɪˈzaɪərəbəl",
@@ -7020,7 +7020,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "floor",
+      "english": "n. floor",
       "pronunciation": {
         "british": {
           "ipa": "flɔː",
@@ -7036,7 +7036,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "introduction",
+      "english": "n. introduction",
       "pronunciation": {
         "british": {
           "ipa": "ˌɪntrəˈdʌkʃən",
@@ -7052,7 +7052,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "dramatically",
+      "english": "adv. dramatically",
       "pronunciation": {
         "british": {
           "ipa": "drəˈmætɪkəli",
@@ -7068,7 +7068,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "regulation",
+      "english": "n. regulation",
       "pronunciation": {
         "british": {
           "ipa": "ˌreɡjʊˈleɪʃən",
@@ -7084,7 +7084,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "towards",
+      "english": "prep. towards",
       "pronunciation": {
         "british": {
           "ipa": "təˈwɔːdz",
@@ -7095,12 +7095,12 @@
           "phonetic": "tuh-WORDZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "series",
+      "english": "n. series",
       "pronunciation": {
         "british": {
           "ipa": "ˈsɪəriːz",
@@ -7111,12 +7111,12 @@
           "phonetic": "SEER-eez"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "additional",
+      "english": "adj. additional",
       "pronunciation": {
         "british": {
           "ipa": "əˈdɪʃənəl",
@@ -7132,7 +7132,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "diabetes",
+      "english": "n. diabetes",
       "pronunciation": {
         "british": {
           "ipa": "ˌdaɪəˈbiːtiːz",
@@ -7143,12 +7143,12 @@
           "phonetic": "dy-uh-BEE-teez"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "notice",
+      "english": "v. notice",
       "pronunciation": {
         "british": {
           "ipa": "ˈnəʊtɪs",
@@ -7159,12 +7159,12 @@
           "phonetic": "NOH-tis"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "dish",
+      "english": "n. dish",
       "pronunciation": {
         "british": {
           "ipa": "dɪʃ",
@@ -7175,12 +7175,12 @@
           "phonetic": "DISH"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "collaboration",
+      "english": "n. collaboration",
       "pronunciation": {
         "british": {
           "ipa": "kəˌlæbəˈreɪʃən",
@@ -7196,7 +7196,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "evolutionary",
+      "english": "adj. evolutionary",
       "pronunciation": {
         "british": {
           "ipa": "ˌiːvəˈluːʃənəri",
@@ -7212,7 +7212,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "geological",
+      "english": "adj. geological",
       "pronunciation": {
         "british": {
           "ipa": "ˌdʒiːəˈlɒdʒɪkəl",
@@ -7228,7 +7228,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "college",
+      "english": "n. college",
       "pronunciation": {
         "british": {
           "ipa": "ˈkɒlɪdʒ",
@@ -7239,12 +7239,12 @@
           "phonetic": "KAH-lij"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "route",
+      "english": "n. route",
       "pronunciation": {
         "british": {
           "ipa": "ruːt",
@@ -7260,7 +7260,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "raise",
+      "english": "v. raise",
       "pronunciation": {
         "british": {
           "ipa": "reɪz",
@@ -7276,7 +7276,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "awareness",
+      "english": "n. awareness",
       "pronunciation": {
         "british": {
           "ipa": "əˈweənəs",
@@ -7292,7 +7292,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "game",
+      "english": "n. game",
       "pronunciation": {
         "british": {
           "ipa": "ɡeɪm",
@@ -7303,12 +7303,12 @@
           "phonetic": "GAYM"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "employ",
+      "english": "v. employ",
       "pronunciation": {
         "british": {
           "ipa": "ɪmˈplɔɪ",
@@ -7319,12 +7319,12 @@
           "phonetic": "em-PLOY"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Zealand",
+      "english": "n. Zealand",
       "pronunciation": {
         "british": {
           "ipa": "ˈziːlənd",
@@ -7335,12 +7335,12 @@
           "phonetic": "ZEE-lənd"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "reference",
+      "english": "n. reference",
       "pronunciation": {
         "british": {
           "ipa": "ˈrefrəns",
@@ -7356,7 +7356,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "relationship",
+      "english": "n. relationship",
       "pronunciation": {
         "british": {
           "ipa": "rɪˈleɪʃənʃɪp",
@@ -7372,7 +7372,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "fiber",
+      "english": "n. fiber",
       "pronunciation": {
         "british": {
           "ipa": "ˈfaɪbə",
@@ -7388,7 +7388,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "license",
+      "english": "n. license",
       "pronunciation": {
         "british": {
           "ipa": "ˈlaɪsəns",
@@ -7399,12 +7399,12 @@
           "phonetic": "LY-səns"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "dominance",
+      "english": "n. dominance",
       "pronunciation": {
         "british": {
           "ipa": "ˈdɒmɪnəns",
@@ -7420,7 +7420,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "news",
+      "english": "n. news",
       "pronunciation": {
         "british": {
           "ipa": "njuːz",
@@ -7431,12 +7431,12 @@
           "phonetic": "NOOZ"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "offense",
+      "english": "n. offense",
       "pronunciation": {
         "british": {
           "ipa": "əˈfens",
@@ -7447,12 +7447,12 @@
           "phonetic": "uh-FENS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "track",
+      "english": "n. track",
       "pronunciation": {
         "british": {
           "ipa": "træk",
@@ -7468,7 +7468,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "NASA",
+      "english": "n. NASA",
       "pronunciation": {
         "british": {
           "ipa": "ˈnæsə",
@@ -7479,12 +7479,12 @@
           "phonetic": "NA-sə"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "immigrant",
+      "english": "n. immigrant",
       "pronunciation": {
         "british": {
           "ipa": "ˈɪmɪɡrənt",
@@ -7500,7 +7500,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "combine",
+      "english": "v. combine",
       "pronunciation": {
         "british": {
           "ipa": "kəmˈbaɪn",
@@ -7511,12 +7511,12 @@
           "phonetic": "kum-BYN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "aging",
+      "english": "n. aging",
       "pronunciation": {
         "british": {
           "ipa": "ˈeɪdʒɪŋ",
@@ -7532,7 +7532,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Paris",
+      "english": "n. Paris",
       "pronunciation": {
         "british": {
           "ipa": "ˈpærɪs",
@@ -7548,7 +7548,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "comparative",
+      "english": "adj. comparative",
       "pronunciation": {
         "british": {
           "ipa": "kəmˈpærətɪv",
@@ -7564,7 +7564,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "overqualified",
+      "english": "adj. overqualified",
       "pronunciation": {
         "british": {
           "ipa": "ˌəʊvəˈkwɒlɪfaɪd",
@@ -7580,7 +7580,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "element",
+      "english": "n. element",
       "pronunciation": {
         "british": {
           "ipa": "ˈelɪmənt",
@@ -7591,12 +7591,12 @@
           "phonetic": "EL-uh-mənt"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "learner",
+      "english": "n. learner",
       "pronunciation": {
         "british": {
           "ipa": "ˈlɜːnə",
@@ -7607,12 +7607,12 @@
           "phonetic": "LURN-er"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "imitate",
+      "english": "v. imitate",
       "pronunciation": {
         "british": {
           "ipa": "ˈɪmɪteɪt",
@@ -7623,12 +7623,12 @@
           "phonetic": "IM-uh-tayt"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "newborn",
+      "english": "adj. newborn",
       "pronunciation": {
         "british": {
           "ipa": "ˈnjuːbɔːn",
@@ -7639,12 +7639,12 @@
           "phonetic": "NOO-born"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "decrease",
+      "english": "v. decrease",
       "pronunciation": {
         "british": {
           "ipa": "dɪˈkriːs",
@@ -7655,12 +7655,12 @@
           "phonetic": "di-KREES"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "totally",
+      "english": "adv. totally",
       "pronunciation": {
         "british": {
           "ipa": "ˈtəʊtəli",
@@ -7671,12 +7671,12 @@
           "phonetic": "TOH-tuh-lee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "yellow",
+      "english": "adj. yellow",
       "pronunciation": {
         "british": {
           "ipa": "ˈjeləʊ",
@@ -7687,12 +7687,12 @@
           "phonetic": "YEL-oh"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "security",
+      "english": "n. security",
       "pronunciation": {
         "british": {
           "ipa": "sɪˈkjʊərəti",
@@ -7708,7 +7708,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "cloud",
+      "english": "n. cloud",
       "pronunciation": {
         "british": {
           "ipa": "klaʊd",
@@ -7724,7 +7724,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "count",
+      "english": "v. count",
       "pronunciation": {
         "british": {
           "ipa": "kaʊnt",
@@ -7740,7 +7740,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "moreover",
+      "english": "adv. moreover",
       "pronunciation": {
         "british": {
           "ipa": "mɔːrˈəʊvə",
@@ -7751,12 +7751,12 @@
           "phonetic": "mor-OH-ver"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "enhance",
+      "english": "v. enhance",
       "pronunciation": {
         "british": {
           "ipa": "ɪnˈhɑːns",
@@ -7767,12 +7767,12 @@
           "phonetic": "in-HANS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "housing",
+      "english": "n. housing",
       "pronunciation": {
         "british": {
           "ipa": "ˈhaʊzɪŋ",
@@ -7783,12 +7783,12 @@
           "phonetic": "HOW-zing"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "treat",
+      "english": "v. treat",
       "pronunciation": {
         "british": {
           "ipa": "triːt",
@@ -7804,7 +7804,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "interfere",
+      "english": "v. interfere",
       "pronunciation": {
         "british": {
           "ipa": "ˌɪntəˈfɪə",
@@ -7820,7 +7820,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "recognition",
+      "english": "n. recognition",
       "pronunciation": {
         "british": {
           "ipa": "ˌrekəɡˈnɪʃən",
@@ -7836,7 +7836,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "barrier",
+      "english": "n. barrier",
       "pronunciation": {
         "british": {
           "ipa": "ˈbæriə",
@@ -7847,12 +7847,12 @@
           "phonetic": "BAR-ee-er"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "April",
+      "english": "n. April",
       "pronunciation": {
         "british": {
           "ipa": "ˈeɪprəl",
@@ -7868,7 +7868,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "determine",
+      "english": "v. determine",
       "pronunciation": {
         "british": {
           "ipa": "dɪˈtɜːmɪn",
@@ -7884,7 +7884,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "cosmetic",
+      "english": "adj. cosmetic",
       "pronunciation": {
         "british": {
           "ipa": "kɒzˈmetɪk",
@@ -7895,12 +7895,12 @@
           "phonetic": "kahz-MET-ik"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "payment",
+      "english": "n. payment",
       "pronunciation": {
         "british": {
           "ipa": "ˈpeɪmənt",
@@ -7911,12 +7911,12 @@
           "phonetic": "PAY-mənt"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "steal",
+      "english": "v. steal",
       "pronunciation": {
         "british": {
           "ipa": "stiːl",
@@ -7932,7 +7932,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "nitrogen",
+      "english": "n. nitrogen",
       "pronunciation": {
         "british": {
           "ipa": "ˈnaɪtrədʒən",
@@ -7943,12 +7943,12 @@
           "phonetic": "NY-trə-jən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "fiction",
+      "english": "n. fiction",
       "pronunciation": {
         "british": {
           "ipa": "ˈfɪkʃən",
@@ -7959,12 +7959,12 @@
           "phonetic": "FIK-shən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "left",
+      "english": "adj. left",
       "pronunciation": {
         "british": {
           "ipa": "left",
@@ -7975,12 +7975,12 @@
           "phonetic": "LEFT"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "independent",
+      "english": "adj. independent",
       "pronunciation": {
         "british": {
           "ipa": "ˌɪndɪˈpendənt",
@@ -7996,7 +7996,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "lock",
+      "english": "v. lock",
       "pronunciation": {
         "british": {
           "ipa": "lɒk",
@@ -8007,12 +8007,12 @@
           "phonetic": "LAHK"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "poet",
+      "english": "n. poet",
       "pronunciation": {
         "british": {
           "ipa": "ˈpəʊɪt",
@@ -8023,12 +8023,12 @@
           "phonetic": "POH-it"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "scene",
+      "english": "n. scene",
       "pronunciation": {
         "british": {
           "ipa": "siːn",
@@ -8044,7 +8044,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "virus",
+      "english": "n. virus",
       "pronunciation": {
         "british": {
           "ipa": "ˈvaɪərəs",
@@ -8060,7 +8060,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "unlikely",
+      "english": "adj. unlikely",
       "pronunciation": {
         "british": {
           "ipa": "ʌnˈlaɪkli",
@@ -8076,7 +8076,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "outcome",
+      "english": "n. outcome",
       "pronunciation": {
         "british": {
           "ipa": "ˈaʊtkʌm",
@@ -8087,12 +8087,12 @@
           "phonetic": "OUT-kum"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "label",
+      "english": "n. label",
       "pronunciation": {
         "british": {
           "ipa": "ˈleɪbəl",
@@ -8108,7 +8108,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "governmental",
+      "english": "adj. governmental",
       "pronunciation": {
         "british": {
           "ipa": "ˌɡʌvənˈmentl",
@@ -8124,7 +8124,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "consist",
+      "english": "v. consist",
       "pronunciation": {
         "british": {
           "ipa": "kənˈsɪst",
@@ -8135,12 +8135,12 @@
           "phonetic": "kun-SIST"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "committee",
+      "english": "n. committee",
       "pronunciation": {
         "british": {
           "ipa": "kəˈmɪti",
@@ -8156,7 +8156,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "shrimp",
+      "english": "n. shrimp",
       "pronunciation": {
         "british": {
           "ipa": "ʃrɪmp",
@@ -8167,12 +8167,12 @@
           "phonetic": "SHRIMP"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "initial",
+      "english": "adj. initial",
       "pronunciation": {
         "british": {
           "ipa": "ɪˈnɪʃəl",
@@ -8183,12 +8183,12 @@
           "phonetic": "i-NISH-əl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "capable",
+      "english": "adj. capable",
       "pronunciation": {
         "british": {
           "ipa": "ˈkeɪpəbəl",
@@ -8199,12 +8199,12 @@
           "phonetic": "KAY-pə-bəl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "trust",
+      "english": "v. trust",
       "pronunciation": {
         "british": {
           "ipa": "trʌst",
@@ -8220,7 +8220,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "critic",
+      "english": "n. critic",
       "pronunciation": {
         "british": {
           "ipa": "ˈkrɪtɪk",
@@ -8231,12 +8231,12 @@
           "phonetic": "KRIT-ik"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "assess",
+      "english": "v. assess",
       "pronunciation": {
         "british": {
           "ipa": "əˈses",
@@ -8247,12 +8247,12 @@
           "phonetic": "uh-SES"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "flight",
+      "english": "n. flight",
       "pronunciation": {
         "british": {
           "ipa": "flaɪt",
@@ -8263,12 +8263,12 @@
           "phonetic": "FLYT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "color",
+      "english": "n. color",
       "pronunciation": {
         "british": {
           "ipa": "ˈkʌlə",
@@ -8284,7 +8284,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "save",
+      "english": "v. save",
       "pronunciation": {
         "british": {
           "ipa": "seɪv",
@@ -8295,12 +8295,12 @@
           "phonetic": "SAYV"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "hearing",
+      "english": "n. hearing",
       "pronunciation": {
         "british": {
           "ipa": "ˈhɪərɪŋ",
@@ -8311,12 +8311,12 @@
           "phonetic": "HEER-ing"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "middle",
+      "english": "adj. middle",
       "pronunciation": {
         "british": {
           "ipa": "ˈmɪdəl",
@@ -8327,12 +8327,12 @@
           "phonetic": "MID-əl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "pidgin",
+      "english": "n. pidgin",
       "pronunciation": {
         "british": {
           "ipa": "ˈpɪdʒɪn",
@@ -8343,12 +8343,12 @@
           "phonetic": "PIJ-in"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "debate",
+      "english": "n. debate",
       "pronunciation": {
         "british": {
           "ipa": "dɪˈbeɪt",
@@ -8359,12 +8359,12 @@
           "phonetic": "di-BAYT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "fully",
+      "english": "adv. fully",
       "pronunciation": {
         "british": {
           "ipa": "ˈfʊli",
@@ -8375,12 +8375,12 @@
           "phonetic": "FOO-lee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "postgraduate",
+      "english": "adj. postgraduate",
       "pronunciation": {
         "british": {
           "ipa": "ˌpəʊstˈɡrædjuət",
@@ -8396,7 +8396,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "ancient",
+      "english": "adj. ancient",
       "pronunciation": {
         "british": {
           "ipa": "ˈeɪnʃənt",
@@ -8407,12 +8407,12 @@
           "phonetic": "AYN-shənt"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "daily",
+      "english": "adj. daily",
       "pronunciation": {
         "british": {
           "ipa": "ˈdeɪli",
@@ -8423,12 +8423,12 @@
           "phonetic": "DAY-lee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "specialized",
+      "english": "adj. specialized",
       "pronunciation": {
         "british": {
           "ipa": "ˈspeʃəlaɪzd",
@@ -8444,7 +8444,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "worth",
+      "english": "n. worth",
       "pronunciation": {
         "british": {
           "ipa": "wɜːθ",
@@ -8460,7 +8460,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "insect",
+      "english": "n. insect",
       "pronunciation": {
         "british": {
           "ipa": "ˈɪnsekt",
@@ -8471,12 +8471,12 @@
           "phonetic": "IN-sekt"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "trend",
+      "english": "n. trend",
       "pronunciation": {
         "british": {
           "ipa": "trend",
@@ -8492,7 +8492,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "generator",
+      "english": "n. generator",
       "pronunciation": {
         "british": {
           "ipa": "ˈdʒenəreɪtə",
@@ -8508,7 +8508,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "closely",
+      "english": "adv. closely",
       "pronunciation": {
         "british": {
           "ipa": "ˈkləʊsli",
@@ -8519,12 +8519,12 @@
           "phonetic": "KLOHS-lee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "religion",
+      "english": "n. religion",
       "pronunciation": {
         "british": {
           "ipa": "rɪˈlɪdʒən",
@@ -8535,12 +8535,12 @@
           "phonetic": "ri-LIJ-ən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "exists",
+      "english": "v. exists",
       "pronunciation": {
         "british": {
           "ipa": "ɪɡˈzɪsts",
@@ -8551,12 +8551,12 @@
           "phonetic": "ig-ZISTS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "agent",
+      "english": "n. agent",
       "pronunciation": {
         "british": {
           "ipa": "ˈeɪdʒənt",
@@ -8572,7 +8572,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "motor",
+      "english": "n. motor",
       "pronunciation": {
         "british": {
           "ipa": "ˈməʊtə",
@@ -8588,7 +8588,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "automatic",
+      "english": "adj. automatic",
       "pronunciation": {
         "british": {
           "ipa": "ˌɔːtəˈmætɪk",
@@ -8604,7 +8604,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "fitness",
+      "english": "n. fitness",
       "pronunciation": {
         "british": {
           "ipa": "ˈfɪtnəs",
@@ -8615,12 +8615,12 @@
           "phonetic": "FIT-nəs"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "exam",
+      "english": "n. exam",
       "pronunciation": {
         "british": {
           "ipa": "ɪɡˈzæm",
@@ -8631,12 +8631,12 @@
           "phonetic": "ig-ZAM"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "geographical",
+      "english": "adj. geographical",
       "pronunciation": {
         "british": {
           "ipa": "ˌdʒiːəˈɡræfɪkəl",
@@ -8652,7 +8652,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "fallow",
+      "english": "adj. fallow",
       "pronunciation": {
         "british": {
           "ipa": "ˈfæləʊ",
@@ -8663,12 +8663,12 @@
           "phonetic": "FAL-oh"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "copy",
+      "english": "v. copy",
       "pronunciation": {
         "british": {
           "ipa": "ˈkɒpi",
@@ -8679,12 +8679,12 @@
           "phonetic": "KAH-pee"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "happiness",
+      "english": "n. happiness",
       "pronunciation": {
         "british": {
           "ipa": "ˈhæpɪnəs",
@@ -8700,7 +8700,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "honey",
+      "english": "n. honey",
       "pronunciation": {
         "british": {
           "ipa": "ˈhʌni",
@@ -8716,7 +8716,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "resident",
+      "english": "n. resident",
       "pronunciation": {
         "british": {
           "ipa": "ˈrezɪdənt",
@@ -8727,12 +8727,12 @@
           "phonetic": "REZ-i-dənt"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "beginning",
+      "english": "n. beginning",
       "pronunciation": {
         "british": {
           "ipa": "bɪˈɡɪnɪŋ",
@@ -8748,7 +8748,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "manager",
+      "english": "n. manager",
       "pronunciation": {
         "british": {
           "ipa": "ˈmænɪdʒə",
@@ -8759,12 +8759,12 @@
           "phonetic": "MAN-i-jer"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "commit",
+      "english": "v. commit",
       "pronunciation": {
         "british": {
           "ipa": "kəˈmɪt",
@@ -8775,12 +8775,12 @@
           "phonetic": "kuh-MIT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "delegate",
+      "english": "n. delegate",
       "pronunciation": {
         "british": {
           "ipa": "ˈdelɪɡət",
@@ -8791,12 +8791,12 @@
           "phonetic": "DEL-uh-gət"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "advanced",
+      "english": "adj. advanced",
       "pronunciation": {
         "british": {
           "ipa": "ədˈvɑːnst",
@@ -8807,12 +8807,12 @@
           "phonetic": "ud-VANST"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "religious",
+      "english": "adj. religious",
       "pronunciation": {
         "british": {
           "ipa": "rɪˈlɪdʒəs",
@@ -8828,7 +8828,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "fungus",
+      "english": "n. fungus",
       "pronunciation": {
         "british": {
           "ipa": "ˈfʌŋɡəs",
@@ -8839,12 +8839,12 @@
           "phonetic": "FUNG-gəs"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "pop",
+      "english": "v. pop",
       "pronunciation": {
         "british": {
           "ipa": "pɒp",
@@ -8855,12 +8855,12 @@
           "phonetic": "PAHP"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "satellite",
+      "english": "n. satellite",
       "pronunciation": {
         "british": {
           "ipa": "ˈsætəlaɪt",
@@ -8876,7 +8876,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "rainforest",
+      "english": "n. rainforest",
       "pronunciation": {
         "british": {
           "ipa": "ˈreɪnˌfɒrɪst",
@@ -8892,7 +8892,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "collision",
+      "english": "n. collision",
       "pronunciation": {
         "british": {
           "ipa": "kəˈlɪʒən",
@@ -8908,7 +8908,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "household",
+      "english": "n. household",
       "pronunciation": {
         "british": {
           "ipa": "ˈhaʊshəʊld",
@@ -8924,7 +8924,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "hemisphere",
+      "english": "n. hemisphere",
       "pronunciation": {
         "british": {
           "ipa": "ˈhemɪsfɪə",
@@ -8940,7 +8940,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "relate",
+      "english": "v. relate",
       "pronunciation": {
         "british": {
           "ipa": "rɪˈleɪt",
@@ -8951,12 +8951,12 @@
           "phonetic": "ri-LAYT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "gore",
+      "english": "n. gore",
       "pronunciation": {
         "british": {
           "ipa": "ɡɔː",
@@ -8967,12 +8967,12 @@
           "phonetic": "GOR"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "ideal",
+      "english": "adj. ideal",
       "pronunciation": {
         "british": {
           "ipa": "aɪˈdɪəl",
@@ -8983,12 +8983,12 @@
           "phonetic": "eye-DEE-uhl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "disagree",
+      "english": "v. disagree",
       "pronunciation": {
         "british": {
           "ipa": "ˌdɪsəˈɡriː",
@@ -8999,12 +8999,12 @@
           "phonetic": "dis-uh-GREE"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "interact",
+      "english": "v. interact",
       "pronunciation": {
         "british": {
           "ipa": "ˌɪntərˈækt",
@@ -9015,12 +9015,12 @@
           "phonetic": "in-ter-AKT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "receptor",
+      "english": "n. receptor",
       "pronunciation": {
         "british": {
           "ipa": "rɪˈseptə",
@@ -9031,12 +9031,12 @@
           "phonetic": "ri-SEP-ter"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "piano",
+      "english": "n. piano",
       "pronunciation": {
         "british": {
           "ipa": "piˈænəʊ",
@@ -9052,7 +9052,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "journal",
+      "english": "n. journal",
       "pronunciation": {
         "british": {
           "ipa": "ˈdʒɜːnəl",
@@ -9063,12 +9063,12 @@
           "phonetic": "JERN-ul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "expose",
+      "english": "v. expose",
       "pronunciation": {
         "british": {
           "ipa": "ɪkˈspəʊz",
@@ -9079,12 +9079,12 @@
           "phonetic": "ik-SPOHZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "panda",
+      "english": "n. panda",
       "pronunciation": {
         "british": {
           "ipa": "ˈpændə",
@@ -9100,7 +9100,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "already",
+      "english": "adv. already",
       "pronunciation": {
         "british": {
           "ipa": "ɔːlˈredi",
@@ -9111,12 +9111,12 @@
           "phonetic": "awl-RED-ee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "false",
+      "english": "adj. false",
       "pronunciation": {
         "british": {
           "ipa": "fɔːls",
@@ -9127,12 +9127,12 @@
           "phonetic": "FAWLS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "patent",
+      "english": "n. patent",
       "pronunciation": {
         "british": {
           "ipa": "ˈpætənt",
@@ -9143,12 +9143,12 @@
           "phonetic": "PAT-ənt"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "senior",
+      "english": "adj. senior",
       "pronunciation": {
         "british": {
           "ipa": "ˈsiːnjə",
@@ -9159,12 +9159,12 @@
           "phonetic": "SEEN-yer"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "manage",
+      "english": "v. manage",
       "pronunciation": {
         "british": {
           "ipa": "ˈmænɪdʒ",
@@ -9175,12 +9175,12 @@
           "phonetic": "MAN-ij"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "gallery",
+      "english": "n. gallery",
       "pronunciation": {
         "british": {
           "ipa": "ˈɡæləri",
@@ -9191,12 +9191,12 @@
           "phonetic": "GAL-uh-ree"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "private",
+      "english": "adj. private",
       "pronunciation": {
         "british": {
           "ipa": "ˈpraɪvət",
@@ -9207,12 +9207,12 @@
           "phonetic": "PRY-vət"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "adapt",
+      "english": "v. adapt",
       "pronunciation": {
         "british": {
           "ipa": "əˈdæpt",
@@ -9228,7 +9228,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "bud",
+      "english": "n. bud",
       "pronunciation": {
         "british": {
           "ipa": "bʌd",
@@ -9239,12 +9239,12 @@
           "phonetic": "BUD"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "hotel",
+      "english": "n. hotel",
       "pronunciation": {
         "british": {
           "ipa": "həʊˈtel",
@@ -9260,7 +9260,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "Japanese",
+      "english": "adj. Japanese",
       "pronunciation": {
         "british": {
           "ipa": "ˌdʒæpəˈniːz",
@@ -9271,12 +9271,12 @@
           "phonetic": "JAP-uh-NEEZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "literature",
+      "english": "n. literature",
       "pronunciation": {
         "british": {
           "ipa": "ˈlɪtrətʃə",
@@ -9292,7 +9292,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "corporation",
+      "english": "n. corporation",
       "pronunciation": {
         "british": {
           "ipa": "ˌkɔːpəˈreɪʃən",
@@ -9308,7 +9308,7 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "random",
+      "english": "adj. random",
       "pronunciation": {
         "british": {
           "ipa": "ˈrændəm",
@@ -9319,12 +9319,12 @@
           "phonetic": "RAN-dəm"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "MBA",
+      "english": "n. MBA",
       "pronunciation": {
         "british": {
           "ipa": "ˌem biː ˈeɪ",
@@ -9335,12 +9335,12 @@
           "phonetic": "EM-bee-AY"
         }
       },
-      "difficulty": "easy",
+      "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "choose",
+      "english": "v. choose",
       "pronunciation": {
         "british": {
           "ipa": "tʃuːz",
@@ -9351,12 +9351,12 @@
           "phonetic": "CHOOZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "visual",
+      "english": "adj. visual",
       "pronunciation": {
         "british": {
           "ipa": "ˈvɪʒuəl",
@@ -9367,12 +9367,12 @@
           "phonetic": "VIH-zhoo-əl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa"
     },
     {
-      "english": "preliminary",
+      "english": "adj. preliminary",
       "pronunciation": {
         "british": {
           "ipa": "prɪˈlɪmɪnəri",
@@ -14428,6 +14428,22 @@
       "source": "pte-fib-listening-with-ipa"
     },
     {
+      "english": "aging",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈeɪdʒɪŋ",
+          "phonetic": "AY-jing"
+        },
+        "american": {
+          "ipa": "ˈeɪdʒɪŋ",
+          "phonetic": "AY-jing"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-fib-listening",
+      "source": "pte-fib-listening-with-ipa"
+    },
+    {
       "english": "reef",
       "pronunciation": {
         "british": {
@@ -14949,6 +14965,22 @@
         "american": {
           "ipa": "rɪˈvil",
           "phonetic": "ri-VEEL"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-fib-listening",
+      "source": "pte-fib-listening-with-ipa"
+    },
+    {
+      "english": "color",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌlə",
+          "phonetic": "KUL-uh"
+        },
+        "american": {
+          "ipa": "ˈkʌlər",
+          "phonetic": "KUL-er"
         }
       },
       "difficulty": "normal",

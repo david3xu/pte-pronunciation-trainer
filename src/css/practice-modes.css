@@ -1,0 +1,552 @@
+/**
+ * Practice Modes Styles
+ * Styles for RS, ASQ, and WFD practice modes
+ * @date 2025-10-07
+ */
+
+/* ==================== Practice Mode Containers ==================== */
+
+.practice-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.practice-header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 20px;
+}
+
+.practice-header h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.practice-instruction {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* ==================== RS (Repeat Sentence) Mode ==================== */
+
+.rs-mode {
+    border-top: 4px solid #4CAF50;
+}
+
+.sentence-display {
+    margin: 20px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    min-height: 100px;
+}
+
+.sentence-text {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0 0 15px 0;
+    transition: all 0.3s ease;
+}
+
+.sentence-text.hidden-text {
+    color: transparent;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    user-select: none;
+}
+
+.sentence-text.speaking {
+    color: #4CAF50;
+    font-weight: 500;
+    transform: scale(1.02);
+}
+
+.rs-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.btn-record {
+    background: #f44336;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn-record:hover:not(:disabled) {
+    background: #d32f2f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(244, 67, 54, 0.3);
+}
+
+.btn-record.recording {
+    background: #FF5722;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+.btn-record:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.recording-status {
+    text-align: center;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.recording-status.recording {
+    background: #FFEBEE;
+    color: #C62828;
+}
+
+.recording-status.success {
+    background: #E8F5E9;
+    color: #2E7D32;
+}
+
+.recording-status.error {
+    background: #FFEBEE;
+    color: #C62828;
+}
+
+/* ==================== ASQ (Answer Short Question) Mode ==================== */
+
+.asq-mode {
+    border-top: 4px solid #2196F3;
+}
+
+.question-display {
+    margin: 20px 0;
+    padding: 20px;
+    background: #E3F2FD;
+    border-radius: 8px;
+    min-height: 80px;
+}
+
+.question-text {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #1565C0;
+    margin: 0 0 15px 0;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.question-text.hidden-text {
+    color: transparent;
+    text-shadow: 0 0 8px rgba(21, 101, 192, 0.5);
+    user-select: none;
+}
+
+.question-text.speaking {
+    color: #0D47A1;
+    transform: scale(1.02);
+}
+
+.asq-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.answer-input-section {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.answer-input {
+    flex: 1;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.answer-input:focus {
+    outline: none;
+    border-color: #2196F3;
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+}
+
+.answer-feedback {
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.answer-feedback.correct {
+    background: #E8F5E9;
+    color: #2E7D32;
+    border: 2px solid #4CAF50;
+}
+
+.answer-feedback.incorrect {
+    background: #FFEBEE;
+    color: #C62828;
+    border: 2px solid #f44336;
+}
+
+.answer-feedback.warning {
+    background: #FFF3E0;
+    color: #E65100;
+    border: 2px solid #FF9800;
+}
+
+.correct-answer {
+    padding: 15px;
+    background: #FFF9C4;
+    border-left: 4px solid #FBC02D;
+    border-radius: 4px;
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.correct-answer strong {
+    color: #F57F17;
+}
+
+/* ==================== WFD (Write From Dictation) Mode ==================== */
+
+.wfd-mode {
+    border-top: 4px solid #9C27B0;
+}
+
+.wfd-display {
+    margin: 20px 0;
+    padding: 20px;
+    background: #F3E5F5;
+    border-radius: 8px;
+    min-height: 100px;
+}
+
+.wfd-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.wfd-input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.sentence-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    resize: vertical;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.sentence-input:focus {
+    outline: none;
+    border-color: #9C27B0;
+    box-shadow: 0 0 0 3px rgba(156, 39, 176, 0.1);
+}
+
+.sentence-feedback {
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.sentence-feedback.correct {
+    background: #E8F5E9;
+    color: #2E7D32;
+    border: 2px solid #4CAF50;
+}
+
+.sentence-feedback.partial {
+    background: #FFF3E0;
+    color: #E65100;
+    border: 2px solid #FF9800;
+}
+
+.sentence-feedback.incorrect {
+    background: #FFEBEE;
+    color: #C62828;
+    border: 2px solid #f44336;
+}
+
+.sentence-feedback.warning {
+    background: #FFF3E0;
+    color: #E65100;
+    border: 2px solid #FF9800;
+}
+
+.sentence-comparison {
+    padding: 20px;
+    background: #FAFAFA;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.comparison-legend {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    font-size: 14px;
+    color: #666;
+}
+
+.comparison-words {
+    font-size: 18px;
+    line-height: 2;
+    margin: 15px 0;
+    padding: 15px;
+    background: white;
+    border-radius: 4px;
+}
+
+.word-correct {
+    color: #4CAF50;
+    font-weight: 500;
+}
+
+.word-wrong {
+    color: #f44336;
+    font-weight: 500;
+    text-decoration: underline wavy #f44336;
+    cursor: help;
+}
+
+.word-missing {
+    color: #FF9800;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.word-extra {
+    color: #9E9E9E;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.correct-sentence {
+    margin-top: 15px;
+    padding: 15px;
+    background: #E8F5E9;
+    border-left: 4px solid #4CAF50;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.correct-sentence strong {
+    color: #2E7D32;
+}
+
+/* ==================== Common Elements ==================== */
+
+.metadata {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.metadata span {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.difficulty {
+    background: #E3F2FD;
+    color: #1976D2;
+}
+
+.difficulty.easy {
+    background: #E8F5E9;
+    color: #4CAF50;
+}
+
+.difficulty.normal {
+    background: #FFF3E0;
+    color: #FF9800;
+}
+
+.difficulty.hard {
+    background: #FFEBEE;
+    color: #f44336;
+}
+
+.category {
+    background: #F3E5F5;
+    color: #9C27B0;
+}
+
+.word-count {
+    background: #E0F2F1;
+    color: #00897B;
+}
+
+/* ==================== Common Buttons ==================== */
+/* Note: Using .btn and .btn--* classes from components.css */
+/* Practice-mode specific button extensions below */
+
+/* ==================== Responsive Design ==================== */
+
+@media (max-width: 768px) {
+    .practice-container {
+        padding: 15px;
+    }
+
+    .practice-header h3 {
+        font-size: 20px;
+    }
+
+    .sentence-text,
+    .question-text {
+        font-size: 18px;
+    }
+
+    .answer-input-section {
+        flex-direction: column;
+    }
+
+    .rs-controls,
+    .asq-controls,
+    .wfd-controls {
+        flex-direction: column;
+    }
+
+    .btn,
+    .btn-record {
+        width: 100%;
+    }
+
+    .comparison-legend {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .comparison-words {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .practice-header h3 {
+        font-size: 18px;
+    }
+
+    .practice-instruction {
+        font-size: 13px;
+    }
+
+    .sentence-text,
+    .question-text {
+        font-size: 16px;
+    }
+
+    .answer-input,
+    .sentence-input {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .metadata span {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+}
+
+/* ==================== Accessibility ==================== */
+
+.practice-container:focus-within {
+    outline: 2px solid #2196F3;
+    outline-offset: 4px;
+}
+
+.btn:focus,
+.btn-record:focus {
+    outline: 2px solid #FFC107;
+    outline-offset: 2px;
+}
+
+.answer-input:focus,
+.sentence-input:focus {
+    outline: none;
+}
+
+/* Ensure sufficient color contrast */
+.practice-instruction,
+.metadata span,
+.answer-feedback,
+.sentence-feedback {
+    font-weight: 500;
+}
+
+/* ==================== Print Styles ==================== */
+
+@media print {
+    .practice-container {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    .rs-controls,
+    .asq-controls,
+    .wfd-controls,
+    .btn,
+    .btn-record {
+        display: none;
+    }
+
+    .sentence-text.hidden-text,
+    .question-text.hidden-text {
+        color: #333;
+        text-shadow: none;
+    }
+}

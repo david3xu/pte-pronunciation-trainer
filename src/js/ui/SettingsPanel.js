@@ -37,6 +37,9 @@ class SettingsPanel {
                 }
             });
         }
+        
+        // Phase 2: Setup practice mode switching
+        this.setupPracticeModeSwitch();
 
         // Listen for voice changes to update dropdown
         window.eventBus.on('voice:preferenceChanged', (data) => {
@@ -45,6 +48,45 @@ class SettingsPanel {
 
         // Listen for settings changes to persist them
         this.setupSettingsPersistence().catch(console.error);
+    }
+
+    /**
+     * Phase 2: Setup practice mode switching between Vocabulary/RS/ASQ/WFD
+     */
+    setupPracticeModeSwitch() {
+        const practiceModeSelect = document.getElementById('practiceModeSelect');
+        const vocabularyBookSetting = document.getElementById('vocabularyBookSetting');
+        const practiceDatasetSetting = document.getElementById('practiceDatasetSetting');
+        
+        if (!practiceModeSelect) return; // Phase 2 not loaded
+        
+        // Handle practice mode changes
+        practiceModeSelect.addEventListener('change', (e) => {
+            const mode = e.target.value;
+            
+            // Show/hide appropriate dataset selectors
+            if (mode === 'vocabulary') {
+                if (vocabularyBookSetting) vocabularyBookSetting.style.display = 'block';
+                if (practiceDatasetSetting) practiceDatasetSetting.style.display = 'none';
+            } else {
+                if (vocabularyBookSetting) vocabularyBookSetting.style.display = 'none';
+                if (practiceDatasetSetting) practiceDatasetSetting.style.display = 'block';
+                
+                // Auto-select matching dataset for practice mode
+                const practiceDatasetSelect = document.getElementById('practiceDatasetSelect');
+                if (practiceDatasetSelect) {
+                    if (mode === 'rs') practiceDatasetSelect.value = 'pte-repeat-sentence';
+                    else if (mode === 'asq') practiceDatasetSelect.value = 'pte-answer-short-question';
+                    else if (mode === 'wfd') practiceDatasetSelect.value = 'pte-write-from-dictation';
+                }
+            }
+            
+            // Emit mode change event
+            window.eventBus.emit('practice:modeChanged', { mode });
+            
+            // Save preference
+            this.saveSetting('practiceMode', mode);
+        });
     }
 
     async setupSettingsPersistence() {

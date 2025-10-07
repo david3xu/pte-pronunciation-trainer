@@ -58,17 +58,24 @@ class DataValidator {
                 // Load vocabulary data from JSON file
                 const fullPath = path.resolve(vocabPath);
                 const fileContent = fs.readFileSync(fullPath, 'utf-8');
-                const vocabularyData = JSON.parse(fileContent);
+                const data = JSON.parse(fileContent);
 
-                // Validate structure
-                await this.validateStructure(vocabularyData, vocabPath);
-
-                // Validate all terms by category
-                await this.validateCategory(vocabularyData, vocabPath);
-
-                // Check for global duplicates
-                await this.checkGlobalDuplicates(vocabularyData, vocabPath);
+                // Determine dataset type
+                const datasetType = this.detectDatasetType(data);
+                
+                if (datasetType === 'vocabulary') {
+                    // Validate vocabulary structure (existing logic)
+                    await this.validateStructure(data, vocabPath);
+                    await this.validateCategory(data, vocabPath);
+                    await this.checkGlobalDuplicates(data, vocabPath);
+                } else {
+                    // Validate new dataset types (RS, ASQ, WFD)
+                    await this.validateNewDatasetStructure(data, vocabPath, datasetType);
+                }
             }
+            
+            // Also validate new PTE datasets if they exist
+            await this.validateNewPTEDatasets();
 
             // Generate report
             this.generateReport();
@@ -76,6 +83,156 @@ class DataValidator {
         } catch (error) {
             console.error('❌ Validation failed:', error.message);
             process.exit(1);
+        }
+    }
+    
+    detectDatasetType(data) {
+        // Check if it's a new dataset type (has meta and items)
+        if (data.meta && data.items) {
+            return data.meta.type || 'unknown';
+        }
+        // Otherwise it's a vocabulary dataset (has metadata and vocabulary)
+        return 'vocabulary';
+    }
+    
+    async validateNewPTEDatasets() {
+        const newDatasets = [
+            'data/processed/pte-repeat-sentence-dataset.json',
+            'data/processed/pte-answer-short-question-dataset.json',
+            'data/processed/pte-write-from-dictation-dataset.json'
+        ];
+        
+        for (const datasetPath of newDatasets) {
+            if (fs.existsSync(datasetPath)) {
+                console.log(`\n📖 Validating: ${path.basename(datasetPath)}`);
+                console.log('─'.repeat(50));
+                
+                const fileContent = fs.readFileSync(datasetPath, 'utf-8');
+                const data = JSON.parse(fileContent);
+                const datasetType = data.meta?.type || 'unknown';
+                
+                await this.validateNewDatasetStructure(data, datasetPath, datasetType);
+            }
+        }
+    }
+    
+    async validateNewDatasetStructure(data, filename, datasetType) {
+        const bookName = path.basename(filename, '.json');
+        console.log(`🏗️  Validating ${datasetType.toUpperCase()} dataset structure for ${bookName}...`);
+        
+        // Validate meta
+        if (!data.meta) {
+            throw new ValidationError('Dataset must have meta property');
+        }
+        
+        if (!data.meta.type || !['rs', 'asq', 'wfd'].includes(data.meta.type)) {
+            throw new ValidationError(`Invalid meta.type: ${data.meta.type}`);
+        }
+        
+        if (!data.meta.count || data.meta.count !== data.items.length) {
+            this.warnings.push(`Meta count (${data.meta.count}) doesn't match items length (${data.items.length})`);
+        }
+        
+        // Validate items
+        if (!Array.isArray(data.items)) {
+            throw new ValidationError('Items property must be an array');
+        }
+        
+        console.log(`   ✓ Dataset type: ${data.meta.type}`);
+        console.log(`   ✓ Total items: ${data.items.length}`);
+        console.log(`   ✓ Source: ${data.meta.source || 'unknown'}`);
+        
+        // Validate individual items
+        const seenIds = new Set();
+        let validItems = 0;
+        
+        data.items.forEach((item, index) => {
+            try {
+                if (datasetType === 'rs' || datasetType === 'wfd') {
+                    this.validateSentenceItem(item, index, seenIds);
+                } else if (datasetType === 'asq') {
+                    this.validateQuestionItem(item, index, seenIds);
+                }
+                validItems++;
+            } catch (error) {
+                this.errors.push(new ValidationError(
+                    `Item ${index}: ${error.message}`,
+                    datasetType,
+                    index
+                ));
+            }
+        });
+        
+        console.log(`   ✓ Valid items: ${validItems}`);
+        console.log(`   ✓ Invalid items: ${data.items.length - validItems}`);
+    }
+    
+    validateSentenceItem(item, index, seenIds) {
+        // Check required fields
+        if (!item.id) throw new Error('missing id');
+        if (!item.type) throw new Error('missing type');
+        if (!item.content) throw new Error('missing content');
+        if (!item.content.sentence) throw new Error('missing content.sentence');
+        if (item.content.ipa !== null) {
+            this.warnings.push(`Item ${index}: ipa should be null, got ${item.content.ipa}`);
+        }
+        if (!item.metadata) throw new Error('missing metadata');
+        if (!item.metadata.difficulty) throw new Error('missing metadata.difficulty');
+        if (!item.metadata.category) throw new Error('missing metadata.category');
+        
+        // Check for duplicate IDs
+        if (seenIds.has(item.id)) {
+            throw new Error(`duplicate id: ${item.id}`);
+        }
+        seenIds.add(item.id);
+        
+        // Validate difficulty values
+        if (!['easy', 'normal', 'hard'].includes(item.metadata.difficulty)) {
+            throw new Error(`invalid difficulty: ${item.metadata.difficulty}`);
+        }
+        
+        // Validate sentence content
+        if (typeof item.content.sentence !== 'string' || !item.content.sentence.trim()) {
+            throw new Error('sentence must be a non-empty string');
+        }
+    }
+    
+    validateQuestionItem(item, index, seenIds) {
+        // Check required fields
+        if (!item.id) throw new Error('missing id');
+        if (!item.type) throw new Error('missing type');
+        if (item.type !== 'asq') throw new Error(`invalid type: ${item.type}`);
+        if (!item.content) throw new Error('missing content');
+        if (!item.content.question) throw new Error('missing content.question');
+        if (item.content.answer === undefined) {
+            throw new Error('missing content.answer (should be empty string if no answer)');
+        }
+        if (item.content.ipa !== null) {
+            this.warnings.push(`Item ${index}: ipa should be null, got ${item.content.ipa}`);
+        }
+        if (!item.metadata) throw new Error('missing metadata');
+        if (!item.metadata.difficulty) throw new Error('missing metadata.difficulty');
+        if (!item.metadata.category) throw new Error('missing metadata.category');
+        
+        // Check for duplicate IDs
+        if (seenIds.has(item.id)) {
+            throw new Error(`duplicate id: ${item.id}`);
+        }
+        seenIds.add(item.id);
+        
+        // Validate difficulty values
+        if (!['easy', 'normal', 'hard'].includes(item.metadata.difficulty)) {
+            throw new Error(`invalid difficulty: ${item.metadata.difficulty}`);
+        }
+        
+        // Validate question content
+        if (typeof item.content.question !== 'string' || !item.content.question.trim()) {
+            throw new Error('question must be a non-empty string');
+        }
+        
+        // Validate answer (can be empty string)
+        if (typeof item.content.answer !== 'string') {
+            throw new Error('answer must be a string (use empty string if no answer)');
         }
     }
 

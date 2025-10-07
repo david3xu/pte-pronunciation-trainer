@@ -1,0 +1,222 @@
+/**
+ * CSS Design Tokens
+ * Single source of truth for all design system values
+ * @date 2025-10-07
+ */
+
+:root {
+    /* ==================== Colors ==================== */
+    
+    /* Primary Brand Colors */
+    --primary-color: #4f46e5;
+    --primary-light: #818cf8;
+    --primary-dark: #4338ca;
+    --primary-light-20: rgba(79, 70, 229, 0.2);
+    
+    /* Secondary Colors */
+    --secondary-color: #6b7280;
+    --secondary-dark: #4b5563;
+    
+    /* Accent Colors */
+    --color-blue: #2196F3;
+    --color-blue-hover: #1976D2;
+    --color-purple: #9C27B0;
+    --color-green: #4CAF50;
+    --color-gray: #757575;
+    --color-gray-hover: #616161;
+    
+    /* Status Colors */
+    --success-color: #22c55e;
+    --success-dark: #16a34a;
+    --success-light: #f0fdf4;
+    
+    --danger-color: #ef4444;
+    --danger-dark: #dc2626;
+    --danger-light: #fee2e2;
+    
+    --warning-color: #f59e0b;
+    --warning-dark: #d97706;
+    --warning-light: #fef3c7;
+    
+    --info-color: #3b82f6;
+    --info-dark: #2563eb;
+    --info-light: #dbeafe;
+    
+    /* Background Colors */
+    --bg-body: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --bg-card: #f7fafc;
+    --bg-header: #4a5568;
+    
+    /* Text Colors */
+    --text-primary: #1f2937;
+    --text-secondary: #4a5568;
+    --text-muted: #9ca3af;
+    --text-light: #ffffff;
+    
+    /* Border Colors */
+    --border-light: #e2e8f0;
+    --border-medium: #d1d5db;
+    
+    /* Input Colors */
+    --input-bg: #ffffff;
+    --input-border: #d1d5db;
+    
+    /* Panel Colors */
+    --panel-bg: #f8fafc;
+    --panel-border: #e2e8f0;
+    
+    /* Progress Colors */
+    --progress-bg: #e5e7eb;
+    
+    /* Spinner Colors */
+    --spinner-bg: #e5e7eb;
+    
+    /* ==================== Spacing ==================== */
+    
+    --space-xs: 0.25rem;    /* 4px */
+    --space-sm: 0.5rem;     /* 8px */
+    --space-md: 0.75rem;    /* 12px */
+    --space-lg: 1rem;       /* 16px */
+    --space-xl: 1.5rem;     /* 24px */
+    --space-2xl: 2rem;      /* 32px */
+    --space-3xl: 2.5rem;    /* 40px */
+    --space-4xl: 3rem;      /* 48px */
+    
+    /* ==================== Border Radius ==================== */
+    
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 20px;
+    --radius-2xl: 25px;
+    --radius-full: 9999px;
+    
+    /* ==================== Shadows ==================== */
+    
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15);
+    --shadow-xl: 0 10px 25px rgba(0, 0, 0, 0.15);
+    --shadow-2xl: 0 20px 40px rgba(0, 0, 0, 0.2);
+    --shadow-panel: 0 -4px 6px rgba(0, 0, 0, 0.05);
+    
+    /* ==================== Transitions ==================== */
+    
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    --transition-bounce: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* ==================== Typography ==================== */
+    
+    /* Font Sizes */
+    --text-xs: 0.75rem;     /* 12px */
+    --text-sm: 0.875rem;    /* 14px */
+    --text-base: 1rem;      /* 16px */
+    --text-lg: 1.125rem;    /* 18px */
+    --text-xl: 1.25rem;     /* 20px */
+    --text-2xl: 1.5rem;     /* 24px */
+    --text-3xl: 1.875rem;   /* 30px */
+    --text-4xl: 2.25rem;    /* 36px */
+    --text-5xl: 3rem;       /* 48px */
+    
+    /* Font Weights */
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    
+    /* Line Heights */
+    --leading-tight: 1.25;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.75;
+    
+    /* ==================== Z-Index Layers ==================== */
+    
+    --z-base: 1;
+    --z-dropdown: 100;
+    --z-sticky: 500;
+    --z-overlay: 1000;
+    --z-modal: 2000;
+    --z-toast: 3000;
+    
+    /* ==================== Breakpoints (for reference) ==================== */
+    /* Use in media queries: @media (min-width: 640px) */
+    
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1536px;
+    
+    /* ==================== Touch Targets ==================== */
+    
+    --touch-target-min: 44px;  /* iOS/WCAG minimum touch target */
+    --touch-target-comfortable: 48px;
+}
+
+/* ==================== Dark Mode Variables ==================== */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Background Colors */
+        --bg-body: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+        --bg-primary: #2d3748;
+        --bg-secondary: #1a202c;
+        --bg-card: rgba(26, 32, 44, 0.8);
+        --bg-header: #1a202c;
+        
+        /* Text Colors */
+        --text-primary: #e2e8f0;
+        --text-secondary: #cbd5e0;
+        --text-muted: #a0aec0;
+        --text-light: #f7fafc;
+        
+        /* Border Colors */
+        --border-light: #4a5568;
+        --border-medium: #4a5568;
+        
+        /* Input Colors */
+        --input-bg: #2d3748;
+        --input-border: #4a5568;
+        
+        /* Panel Colors */
+        --panel-bg: rgba(26, 32, 44, 0.9);
+        --panel-border: #4a5568;
+        
+        /* Accent Colors (adjust for dark mode) */
+        --color-blue: #90cdf4;
+        --color-blue-hover: #4299e1;
+        --color-purple: #fbb6ce;
+        --color-gray: #4a5568;
+        --color-gray-hover: #2d3748;
+        
+        /* Status Light Colors (darker in dark mode) */
+        --success-light: rgba(26, 32, 44, 0.8);
+        --warning-light: rgba(26, 32, 44, 0.8);
+        --danger-light: rgba(26, 32, 44, 0.8);
+        --info-light: rgba(26, 32, 44, 0.8);
+        
+        /* Shadows (stronger in dark mode) */
+        --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.5);
+        --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.5);
+        --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.5);
+        --shadow-xl: 0 10px 25px rgba(0, 0, 0, 0.3);
+        --shadow-panel: 0 -4px 6px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* ==================== High Contrast Mode ==================== */
+
+@media (prefers-contrast: high) {
+    :root {
+        /* Increase contrast for accessibility */
+        --text-primary: #000000;
+        --text-secondary: #1a1a1a;
+        --border-light: #000000;
+        --border-medium: #000000;
+    }
+}

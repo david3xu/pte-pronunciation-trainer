@@ -32,6 +32,9 @@ class AppConfig {
                         category: 'pte-fib-listening',
                         description: 'PTE FIB Listening vocabulary with IPA',
                         sourceType: 'pte-fib-listening-with-ipa',
+                        dataType: 'vocabulary',
+                        extractorType: 'PTETermsExtractor',
+                        inputSubdir: 'vocabs',
                         isDefault: true
                     },
                     {
@@ -41,6 +44,9 @@ class AppConfig {
                         category: 'pte-beginner',
                         description: 'PTE Beginner high-frequency vocabulary with IPA',
                         sourceType: 'pte-beginner-vocabulary-with-ipa',
+                        dataType: 'vocabulary',
+                        extractorType: 'PTETermsExtractor',
+                        inputSubdir: 'vocabs',
                         isDefault: false
                     },
                     {
@@ -51,6 +57,45 @@ class AppConfig {
                         category: 'pte-intermediate',
                         description: 'PTE Intermediate vocabulary (simple list fallback, IPA when available)',
                         sourceType: 'pte-intermediate-vocabulary-with-ipa',
+                        dataType: 'vocabulary',
+                        extractorType: 'PTETermsExtractor',
+                        inputSubdir: 'vocabs',
+                        isDefault: false
+                    },
+                    {
+                        id: 'pte-repeat-sentence',
+                        input: 'pte-repeat-sentence.md',
+                        output: 'pte-repeat-sentence-dataset.json',
+                        category: 'pte-rs',
+                        description: 'PTE Repeat Sentence practice sentences (620 sentences, no IPA)',
+                        sourceType: 'numbered-sentences',
+                        dataType: 'rs',
+                        extractorType: 'PTESentenceExtractor',
+                        inputSubdir: 'rs',
+                        isDefault: false
+                    },
+                    {
+                        id: 'pte-answer-short-question',
+                        input: 'pte-answer-short-question.md',
+                        output: 'pte-answer-short-question-dataset.json',
+                        category: 'pte-asq',
+                        description: 'PTE Answer Short Question dataset (692 questions with verified answers, no IPA)',
+                        sourceType: 'question-answer',
+                        dataType: 'asq',
+                        extractorType: 'PTEQuestionExtractor',
+                        inputSubdir: 'asq',
+                        isDefault: false
+                    },
+                    {
+                        id: 'pte-write-from-dictation',
+                        input: 'pte-write-from-dictation.md',
+                        output: 'pte-write-from-dictation-dataset.json',
+                        category: 'pte-wfd',
+                        description: 'PTE Write From Dictation sentences (1,195 sentences, no IPA)',
+                        sourceType: 'numbered-sentences',
+                        dataType: 'wfd',
+                        extractorType: 'PTESentenceExtractor',
+                        inputSubdir: 'wfd',
                         isDefault: false
                     }
                 ],

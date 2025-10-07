@@ -246,23 +246,8 @@
 }
 
 /* === FORM CONTROLS === */
-.select {
-  padding: 0.5rem 0.75rem;
-  border: 2px solid var(--input-border, #d1d5db);
-  border-radius: 6px;
-  background: var(--input-bg, #ffffff);
-  color: var(--text-primary, #1f2937);
-  font-size: 1rem;
-  transition: border-color 0.2s ease;
-  min-height: 44px;
-  box-sizing: border-box;
-}
-
-.select:focus {
-  outline: none;
-  border-color: var(--primary-color, #4f46e5);
-  box-shadow: 0 0 0 3px var(--primary-light-20, rgba(79, 70, 229, 0.2));
-}
+/* Form controls (select, input) styled via element selectors in style.css */
+/* This prevents specificity conflicts and ensures consistent styling */
 
 /* === STATUS INDICATOR === */
 .status-display {
@@ -343,30 +328,5 @@
 }
 
 /* === ANIMATIONS === */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.8;
-  }
-}
-
-.fade-in-up {
-  animation: fadeInUp 0.5s ease-out;
-}
-
-.pulse {
-  animation: pulse 2s ease-in-out infinite;
-}
+/* Animations moved to animations.css to prevent name collisions */
+/* Use utility classes: .pulse, .fade-in-up, .speaking, .word-change */

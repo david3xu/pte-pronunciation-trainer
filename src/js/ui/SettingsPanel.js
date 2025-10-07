@@ -63,6 +63,7 @@ class SettingsPanel {
         // Handle practice mode changes
         practiceModeSelect.addEventListener('change', (e) => {
             const mode = e.target.value;
+            console.log(`[SettingsPanel] 🎯 Practice mode changed to: ${mode}`);
             
             // Show/hide appropriate dataset selectors
             if (mode === 'vocabulary') {
@@ -82,6 +83,7 @@ class SettingsPanel {
             }
             
             // Emit mode change event
+            console.log(`[SettingsPanel] 📤 Emitting practice:modeChanged event with mode: ${mode}`);
             window.eventBus.emit('practice:modeChanged', { mode });
             
             // Save preference

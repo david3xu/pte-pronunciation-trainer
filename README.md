@@ -1,21 +1,22 @@
 # PTE Pronunciation Trainer
 
-A specialized web-based pronunciation training application for **PTE exam preparation**, featuring 914 essential FIB (Fill-in-the-Blank) listening vocabulary terms with text-to-speech pronunciation practice.
+A specialized web-based pronunciation training application for **PTE exam preparation**, featuring comprehensive vocabulary and practice modes for all key PTE speaking and listening sections.
 
-**✅ PTE-FOCUSED (Dec 2024)** - Streamlined architecture focused exclusively on PTE vocabulary.
+**✅ v2.0 - PHASE 2 COMPLETE (Oct 2024)** - Now includes RS, ASQ, and WFD practice modes with unified interface!
 
 ## 🎯 Key Features
 
-### 📚 **PTE Vocabulary System**
-- **914 FIB listening terms** essential for PTE exam success
-- **Smart difficulty classification** - Easy, Normal, Hard based on word complexity
-- **Comprehensive coverage** - All essential vocabulary for PTE listening section
-- **Exam-focused content** - Curated specifically for PTE FIB questions
+### 📚 **PTE Practice Modes**
+- **📚 Vocabulary Training** - 914 FIB listening terms with pronunciation
+- **🎤 Repeat Sentence (RS)** - 628 sentences for pronunciation practice
+- **❓ Answer Short Question (ASQ)** - 692 questions with answers
+- **✍️ Write From Dictation (WFD)** - 1,195 sentences for dictation practice
 
-### 🎓 **Specialized Learning Mode**
-- **🎧 PTE FIB Listening** - Complete vocabulary set for listening comprehension
-- **Category-based organization** - Organized by PTE exam requirements
-- **Difficulty filtering** - Practice by difficulty level
+### 🎓 **Unified Learning Interface**
+- **Single UI for all modes** - Consistent, easy-to-use interface
+- **Smart mode switching** - Seamless transition between practice types
+- **Mode persistence** - Remembers your last selected mode
+- **Comprehensive datasets** - Over 3,000 practice items total
 
 ### 🔊 **Advanced Pronunciation Training**
 - **Smart Voice Selection** - Google UK English Male (primary) with multiple fallbacks
@@ -23,6 +24,7 @@ A specialized web-based pronunciation training application for **PTE exam prepar
 - **Repeat Modes** - 1x, 2x (Slow+Normal), 3x (Slow+Normal+Fast), Loop
 - **Configurable Delays** - 1-4 second intervals between pronunciations
 - **Professional pronunciation** - Clear, exam-appropriate speech patterns
+- **Universal TTS** - Works for words, sentences, and questions
 
 ### 📱 **Modern User Experience**
 - **Mobile-Responsive Design** (320px to 1400px+) with touch optimization
@@ -31,13 +33,15 @@ A specialized web-based pronunciation training application for **PTE exam prepar
 - **Dark/Light Mode** - Adaptive theming for comfortable study sessions
 
 ### 🚀 **Streamlined Architecture**
+- **Unified Display System** - Single UI reused for all 4 practice modes
 - **PTE Data Pipeline** - `npm run data:pte` processes PTE-specific data
 - **Centralized Configuration** - ALL configuration values in `src/js/shared/Config.js` - NO hardcoded values
 - **SettingsManager Module** - Centralized settings logic with dependency management
 - **Configurable Paths** - All file paths, data sources, and settings are configurable
 - **Module Namespace** - Clean architecture with optimized code structure
 - **Built-in Validation** - Data integrity checks and error reporting
-- **PTE-Focused** - Specialized for PTE FIB listening vocabulary
+- **PTE-Focused** - Specialized for PTE speaking and listening sections
+- **~50% Code Reduction** - Simplified from complex implementation (v2.0)
 
 ## 🚀 Quick Start
 
@@ -228,11 +232,34 @@ npm run data:pte    # Process PTE vocabulary data
 
 ## 🎯 Usage Tips
 
+### **Practice Mode Guide**
+
+#### **📚 Vocabulary Training**
+- 914 FIB listening terms with phonetics and IPA
+- Best for: Building foundational vocabulary
+- Features: Phonetic spelling, IPA notation, example sentences
+
+#### **🎤 Repeat Sentence (RS)**
+- 628 complete sentences for pronunciation practice
+- Best for: Improving sentence fluency and intonation
+- Features: Full sentences with translations
+
+#### **❓ Answer Short Question (ASQ)**
+- 692 questions with correct answers
+- Best for: Quick response and comprehension practice
+- Features: Questions displayed with answers for learning
+
+#### **✍️ Write From Dictation (WFD)**
+- 1,195 sentences for dictation practice
+- Best for: Spelling accuracy and listening comprehension
+- Features: Full sentences for dictation training
+
 ### **For PTE Exam Preparation**
-1. **Start with Easy terms** - Build confidence with simpler vocabulary
-2. **Practice pronunciation** - Use multiple speeds and repeat modes
-3. **Focus on spelling** - PTE FIB requires accurate spelling
-4. **Regular practice** - Consistent daily practice for best results
+1. **Start with Vocabulary** - Build confidence with word pronunciation
+2. **Practice RS mode** - Improve sentence fluency and rhythm
+3. **Use ASQ mode** - Develop quick comprehension and response
+4. **Master WFD mode** - Perfect spelling and listening skills
+5. **Regular practice** - Consistent daily practice for best results
 
 ### **Keyboard Shortcuts**
 - **Space** - Play/pause current word

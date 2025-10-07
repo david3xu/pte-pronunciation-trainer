@@ -32,9 +32,12 @@ class PTEVocabularyManager {
       const config = window.appConfig || new AppConfig();
       const byMode = config.get('data.paths.byMode') || {};
       if (byMode['pte-intermediate']) {
-        this.loadIntermediateDataset().catch(err => {
+        try {
+          await this.loadIntermediateDataset();
+          console.log('✅ Intermediate dataset preloaded successfully');
+        } catch (err) {
           console.warn('⚠️ Could not preload intermediate dataset:', err);
-        });
+        }
       }
 
       this.isInitialized = true;
@@ -87,7 +90,13 @@ class PTEVocabularyManager {
 
       if (byMode['pte-intermediate']) {
         const cacheBuster = `?v=${Date.now()}`;
-        const intermediateResponse = await fetch(byMode['pte-intermediate'] + cacheBuster);
+        const url = byMode['pte-intermediate'] + cacheBuster;
+        console.log('🌐 Fetching intermediate dataset from:', url);
+        const intermediateResponse = await fetch(url);
+        console.log('📡 Response status:', intermediateResponse.status, intermediateResponse.statusText);
+        if (!intermediateResponse.ok) {
+          throw new Error(`Failed to fetch intermediate dataset: ${intermediateResponse.status} ${intermediateResponse.statusText}`);
+        }
         this.pteIntermediateDataset = await intermediateResponse.json();
         console.log(`✅ Loaded ${this.pteIntermediateDataset.vocabulary.length} PTE Intermediate terms`);
       } else {
@@ -122,13 +131,17 @@ class PTEVocabularyManager {
         this.allWords = (this.pteBeginnerDataset && this.pteBeginnerDataset.vocabulary) || [];
         break;
       case 'pte-intermediate':
+        console.log('🔍 Loading intermediate mode - dataset exists:', !!this.pteIntermediateDataset);
         if (!this.pteIntermediateDataset) {
+          console.log('📥 Loading intermediate dataset...');
           // Load the intermediate dataset if it hasn't been loaded yet
           await this.loadIntermediateDataset();
           // After loading, the dataset should be available
           this.allWords = (this.pteIntermediateDataset && this.pteIntermediateDataset.vocabulary) || [];
+          console.log('📊 Intermediate dataset loaded, words count:', this.allWords.length);
         } else {
           this.allWords = (this.pteIntermediateDataset && this.pteIntermediateDataset.vocabulary) || [];
+          console.log('📊 Using existing intermediate dataset, words count:', this.allWords.length);
         }
         break;
       default:

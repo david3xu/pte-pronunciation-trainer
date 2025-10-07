@@ -2,7 +2,7 @@
 // Service Worker for PTE Pronunciation Trainer
 // Handles offline caching and background sync
 
-const CACHE_VERSION = 'v36'; // Debug: Add extensive logging to startAutoPlay
+const CACHE_VERSION = 'v37'; // Fix: Disable infinite loop in audio-playback sync
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode
@@ -185,9 +185,10 @@ self.addEventListener('sync', (event) => {
     event.waitUntil(handleBackgroundAudioSync());
   }
 
-  if (event.tag === 'audio-playback') {
-    event.waitUntil(handleAudioPlaybackSync());
-  }
+  // DISABLED: audio-playback sync was causing infinite loop
+  // if (event.tag === 'audio-playback') {
+  //   event.waitUntil(handleAudioPlaybackSync());
+  // }
 });
 
 // Handle Background Audio Synchronization
@@ -292,6 +293,7 @@ self.addEventListener('message', (event) => {
 });
 
 // Handle Audio Playback Sync for iOS Background
+// DISABLED: This was causing infinite loop by re-registering itself
 async function handleAudioPlaybackSync() {
   try {
     // Keep the service worker alive for audio playback
@@ -305,14 +307,15 @@ async function handleAudioPlaybackSync() {
       });
     });
 
+    // REMOVED: This was causing infinite loop!
     // Register another sync to keep it alive (only if supported)
-    if (self.registration && self.registration.sync) {
-      try {
-        await self.registration.sync.register('audio-playback');
-      } catch (syncError) {
-        // Background Sync not supported, ignore silently
-      }
-    }
+    // if (self.registration && self.registration.sync) {
+    //   try {
+    //     await self.registration.sync.register('audio-playback');
+    //   } catch (syncError) {
+    //     // Background Sync not supported, ignore silently
+    //   }
+    // }
 
     // Send notification to maintain audio session (only if supported)
     if (self.registration && self.registration.showNotification) {

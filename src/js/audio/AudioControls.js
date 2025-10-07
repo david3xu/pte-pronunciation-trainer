@@ -426,6 +426,7 @@ class AudioControls {
 
         // Display next item
         const nextItem = window.currentDataset.items[window.currentDatasetIndex];
+        window.currentItem = nextItem; // IMPORTANT: Update currentItem for PLAY button
         console.log(`[AudioControls] Displaying next item:`, nextItem);
         window.uiController.displayContent(nextItem, window.currentPracticeMode);
     }
@@ -448,6 +449,7 @@ class AudioControls {
 
         // Display previous item
         const prevItem = window.currentDataset.items[window.currentDatasetIndex];
+        window.currentItem = prevItem; // IMPORTANT: Update currentItem for PLAY button
         console.log(`[AudioControls] Displaying previous item:`, prevItem);
         window.uiController.displayContent(prevItem, window.currentPracticeMode);
     }

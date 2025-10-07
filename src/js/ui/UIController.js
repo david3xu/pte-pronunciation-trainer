@@ -104,11 +104,21 @@ class UIController {
         });
 
         document.getElementById('nextBtn').addEventListener('click', () => {
-            window.audioControls.nextWord();
+            // Mode-aware: call appropriate next method
+            if (window.currentPracticeMode && window.currentPracticeMode !== 'vocabulary') {
+                window.audioControls.nextItem();
+            } else {
+                window.audioControls.nextWord();
+            }
         });
 
         document.getElementById('prevBtn').addEventListener('click', () => {
-            window.audioControls.previousWord();
+            // Mode-aware: call appropriate prev method
+            if (window.currentPracticeMode && window.currentPracticeMode !== 'vocabulary') {
+                window.audioControls.prevItem();
+            } else {
+                window.audioControls.previousWord();
+            }
         });
 
         // Settings
@@ -626,56 +636,21 @@ class UIController {
     }
 
     /**
-     * Phase 2: Handle practice mode changes
+     * Phase 2 SIMPLIFIED: Handle practice mode changes
+     * All modes use the same .word-display container!
      * @param {string} mode - 'vocabulary' | 'rs' | 'asq' | 'wfd'
      */
     async handlePracticeModeChange(mode) {
-        const wordDisplay = document.querySelector('.word-display');
-        if (!wordDisplay) return;
-
-        // Hide vocabulary display for practice modes
-        const vocabularyElements = [
-            'phoneticSpelling',
-            'englishWord', 
-            'ipaNotation',
-            'pronunciationText',
-            'exampleSentence',
-            'progressText',
-            'difficultyBadge'
-        ];
-
+        // Store current mode globally
+        window.currentPracticeMode = mode;
+        
         if (mode === 'vocabulary') {
-            // Show vocabulary container and elements
-            wordDisplay.style.display = '';
-            vocabularyElements.forEach(id => {
-                const el = document.getElementById(id);
-                if (el) el.style.display = '';
-            });
-            
-            // Hide practice mode containers
-            if (window.practiceModes) {
-                window.practiceModes.hideAllModeContainers();
-            }
-            
-            // Update category display
+            // Show vocabulary mode - restore normal display
             this.updateCategoryDisplay();
+            this.displayFirstWord();
         } else {
-            // Hide vocabulary container for practice modes
-            wordDisplay.style.display = 'none';
-            
-            // Hide vocabulary elements for practice modes
-            vocabularyElements.forEach(id => {
-                const el = document.getElementById(id);
-                if (el) el.style.display = 'none';
-            });
-            
-            // Show appropriate practice mode container
-            if (window.practiceModes) {
-                window.practiceModes.updateUILayout(mode);
-                
-                // Load dataset and display first item
-                await this.loadPracticeDataset(mode);
-            }
+            // Practice modes (RS/ASQ/WFD) - load dataset and display first item
+            await this.loadPracticeDataset(mode);
             
             // Update category display for practice mode
             const categoryDisplay = document.getElementById('categoryDisplay');
@@ -691,7 +666,8 @@ class UIController {
     }
 
     /**
-     * Load dataset for practice mode and display first item
+     * SIMPLIFIED: Load dataset for practice mode and display first item
+     * Uses unified displayContent() method - same UI for all modes!
      */
     async loadPracticeDataset(mode) {
         if (!window.datasetManager) {
@@ -719,23 +695,144 @@ class UIController {
             if (dataset && dataset.items && dataset.items.length > 0) {
                 console.log(`✅ Loaded ${dataset.items.length} items for ${mode}`);
                 
-                // Store dataset reference
-                if (window.practiceModes) {
-                    window.practiceModes.currentDataset = dataset;
-                    window.practiceModes.currentIndex = 0;
-                    
-                    // Display first item
-                    const firstItem = dataset.items[0];
-                    window.practiceModes.displayItem(firstItem, mode);
-                    
-                    console.log(`📄 Displaying first item:`, firstItem);
-                }
+                // Store dataset and index globally (simple approach)
+                window.currentDataset = dataset;
+                window.currentDatasetIndex = 0;
+                
+                // Display first item using unified method
+                this.displayContent(dataset.items[0], mode);
+                
+                console.log(`📄 Displaying first item:`, dataset.items[0]);
             } else {
                 console.error(`❌ No items found in dataset for ${mode}`);
             }
         } catch (error) {
             console.error(`❌ Failed to load dataset for ${mode}:`, error);
         }
+    }
+
+    /**
+     * UNIFIED DISPLAY METHOD - Works for ALL modes!
+     * Uses the same .word-display container for vocabulary/RS/ASQ/WFD
+     * @param {Object} item - Item to display (word, sentence, question)
+     * @param {string} mode - Current mode ('vocabulary', 'rs', 'asq', 'wfd')
+     */
+    displayContent(item, mode) {
+        if (!item) return;
+
+        // Get DOM elements
+        const phoneticSpelling = document.getElementById('phoneticSpelling');
+        const englishWord = document.getElementById('englishWord');
+        const ipaNotation = document.getElementById('ipaNotation');
+        const pronunciationText = document.getElementById('pronunciationText');
+        const exampleSentence = document.getElementById('exampleSentence');
+        const progressText = document.getElementById('progressText');
+        const difficultyBadge = document.getElementById('difficultyBadge');
+
+        // Clear all first
+        [phoneticSpelling, englishWord, ipaNotation, pronunciationText, exampleSentence, progressText].forEach(el => {
+            if (el) el.textContent = '';
+        });
+
+        // Display based on mode
+        switch(mode) {
+            case 'vocabulary':
+                // Vocabulary mode - show word with phonetics
+                if (item.content) {
+                    if (englishWord) englishWord.textContent = item.content.word || '';
+                    if (phoneticSpelling) {
+                        phoneticSpelling.textContent = item.content.phoneticSpelling || '';
+                        phoneticSpelling.style.display = item.content.phoneticSpelling ? '' : 'none';
+                    }
+                    if (ipaNotation) {
+                        ipaNotation.textContent = item.content.ipa || '';
+                        ipaNotation.style.display = item.content.ipa ? '' : 'none';
+                    }
+                    if (pronunciationText) {
+                        pronunciationText.textContent = item.content.pronunciation || '';
+                        pronunciationText.style.display = item.content.pronunciation ? '' : 'none';
+                    }
+                    if (exampleSentence) {
+                        exampleSentence.textContent = item.content.example || '';
+                        exampleSentence.style.display = item.content.example ? '' : 'none';
+                    }
+                }
+                break;
+
+            case 'rs':
+                // Repeat Sentence - show sentence only
+                if (item.content && englishWord) {
+                    englishWord.textContent = item.content.sentence || '';
+                }
+                // Hide phonetic fields
+                if (phoneticSpelling) phoneticSpelling.style.display = 'none';
+                if (ipaNotation) ipaNotation.style.display = 'none';
+                if (pronunciationText) pronunciationText.style.display = 'none';
+                // Show translation if available
+                if (exampleSentence && item.content.translation) {
+                    exampleSentence.textContent = item.content.translation;
+                    exampleSentence.style.display = '';
+                } else if (exampleSentence) {
+                    exampleSentence.style.display = 'none';
+                }
+                break;
+
+            case 'asq':
+                // Answer Short Question - show question
+                if (item.content && englishWord) {
+                    englishWord.textContent = item.content.question || '';
+                }
+                // Hide phonetic fields
+                if (phoneticSpelling) phoneticSpelling.style.display = 'none';
+                if (ipaNotation) ipaNotation.style.display = 'none';
+                if (pronunciationText) pronunciationText.style.display = 'none';
+                // Hide answer initially (show after user submits)
+                if (exampleSentence) exampleSentence.style.display = 'none';
+                break;
+
+            case 'wfd':
+                // Write From Dictation - show placeholder
+                if (englishWord) {
+                    englishWord.textContent = '🎧 Listen and type the sentence';
+                }
+                // Hide phonetic fields
+                if (phoneticSpelling) phoneticSpelling.style.display = 'none';
+                if (ipaNotation) ipaNotation.style.display = 'none';
+                if (pronunciationText) pronunciationText.style.display = 'none';
+                // Hide sentence initially (show after user submits)
+                if (exampleSentence) exampleSentence.style.display = 'none';
+                break;
+        }
+
+        // Show difficulty badge if available
+        if (difficultyBadge && item.metadata && item.metadata.difficulty) {
+            difficultyBadge.textContent = `${this.getDifficultyEmoji(item.metadata.difficulty)} ${item.metadata.difficulty}`;
+            difficultyBadge.style.display = '';
+        } else if (difficultyBadge) {
+            difficultyBadge.style.display = 'none';
+        }
+
+        // Update progress text
+        if (progressText && window.currentDataset) {
+            const current = (window.currentDatasetIndex || 0) + 1;
+            const total = window.currentDataset.items.length;
+            progressText.textContent = `${current} / ${total}`;
+        }
+
+        // Store current item globally for TTS
+        window.currentItem = item;
+    }
+
+    /**
+     * Helper: Get emoji for difficulty level
+     */
+    getDifficultyEmoji(difficulty) {
+        const emojiMap = {
+            'easy': '🟢',
+            'medium': '🟡',
+            'hard': '🔴'
+        };
+        return emojiMap[difficulty.toLowerCase()] || '⚪';
     }
 }
 

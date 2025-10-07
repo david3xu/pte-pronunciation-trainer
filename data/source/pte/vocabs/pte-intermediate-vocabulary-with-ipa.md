@@ -1504,56 +1504,56 @@ Co-words
 1498. v. alter | /ˈɔːltə/ — sounds like **AWL-tuh** | /ˈɔltər/ — sounds like **AWL-ter**
 1499. v. touch | /tʌtʃ/ — sounds like **TUCH** | /tʌtʃ/ — sounds like **TUCH**
 1500. v. drag | /dræɡ/ — sounds like **DRAG** | /dræɡ/ — sounds like **DRAG**
-1501. commitment | /kəˈmɪtmənt/ — sounds like **kuh-MIT-ment** | /kəˈmɪtmənt/ — sounds like **kuh-MIT-mənt**
-1502. Gannon | /ˈɡænən/ — sounds like **GAN-un** | /ˈɡænən/ — sounds like **GAN-ən**
-1503. remarkable | /rɪˈmɑːkəbəl/ — sounds like **ri-MAAH-kuh-bul** | /rɪˈmɑrkəbəl/ — sounds like **ri-MAR-kuh-bəl**
-1504. contemporary | /kənˈtempərəri/ — sounds like **kun-TEM-puh-ruh-ree** | /kənˈtɛmpəˌrɛri/ — sounds like **kun-TEM-puh-rair-ee**
-1505. letter | /ˈletə/ — sounds like **LET-uh** | /ˈlɛtər/ — sounds like **LET-er**
-1506. rail | /reɪl/ — sounds like **RAYL** | /reɪl/ — sounds like **RAYL**
-1507. notion | /ˈnəʊʃən/ — sounds like **NOH-shun** | /ˈnoʊʃən/ — sounds like **NOH-shən**
-1508. compose | /kəmˈpəʊz/ — sounds like **kum-POHZ** | /kəmˈpoʊz/ — sounds like **kum-POHZ**
-1509. tomorrow | /təˈmɒrəʊ/ — sounds like **tuh-MOR-oh** | /təˈmɔroʊ/ — sounds like **tuh-MOR-oh**
-1510. flint | /flɪnt/ — sounds like **FLINT** | /flɪnt/ — sounds like **FLINT**
-1511. elsewhere | /ˌelsˈweə/ — sounds like **ELS-WAIR** | /ˌɛlsˈwɛr/ — sounds like **ELS-WAIR**
-1512. chance | /tʃɑːns/ — sounds like **CHAANS** | /tʃæns/ — sounds like **CHANS**
-1513. renewable | /rɪˈnjuːəbəl/ — sounds like **ri-NYOO-uh-bul** | /rɪˈnuəbəl/ — sounds like **ri-NOO-uh-bəl**
-1514. soon | /suːn/ — sounds like **SOON** | /sun/ — sounds like **SOON**
-1515. agricultural | /ˌæɡrɪˈkʌltʃərəl/ — sounds like **AG-ri-KUL-chuh-rul** | /ˌæɡrəˈkʌltʃərəl/ — sounds like **AG-ruh-KUL-chər-əl**
-1516. account | /əˈkaʊnt/ — sounds like **uh-KOWNT** | /əˈkaʊnt/ — sounds like **uh-KOWNT**
-1517. colonial | /kəˈləʊniəl/ — sounds like **kuh-LOH-nee-uhl** | /kəˈloʊniəl/ — sounds like **kuh-LOH-nee-əl**
-1518. edition | /ɪˈdɪʃən/ — sounds like **i-DISH-un** | /ɪˈdɪʃən/ — sounds like **i-DISH-ən**
-1519. valley | /ˈvæli/ — sounds like **VAL-ee** | /ˈvæli/ — sounds like **VAL-ee**
-1520. float | /fləʊt/ — sounds like **FLOHT** | /floʊt/ — sounds like **FLOHT**
-1521. busy | /ˈbɪzi/ — sounds like **BIZ-ee** | /ˈbɪzi/ — sounds like **BIZ-ee**
-1522. curator | /kjʊəˈreɪtə/ — sounds like **kyoo-uh-RAY-tuh** | /kjʊˈreɪtər/ — sounds like **kyoo-RAY-ter**
-1523. integration | /ˌɪntɪˈɡreɪʃən/ — sounds like **IN-ti-GRAY-shun** | /ˌɪntəˈɡreɪʃən/ — sounds like **IN-tuh-GRAY-shən**
-1524. clinical | /ˈklɪnɪkəl/ — sounds like **KLIN-i-kul** | /ˈklɪnɪkəl/ — sounds like **KLIN-i-kəl**
-1525. wonder | /ˈwʌndə/ — sounds like **WUN-duh** | /ˈwʌndər/ — sounds like **WUN-der**
-1526. integrated | /ˈɪntɪɡreɪtɪd/ — sounds like **IN-ti-gray-tid** | /ˈɪntəˌɡreɪtɪd/ — sounds like **IN-tuh-gray-tid**
-1527. compulsory | /kəmˈpʌlsəri/ — sounds like **kum-PUL-suh-ree** | /kəmˈpʌlsəri/ — sounds like **kum-PUL-sər-ee**
-1528. suppose | /səˈpəʊz/ — sounds like **suh-POHZ** | /səˈpoʊz/ — sounds like **suh-POHZ**
-1529. Perth | /pɜːθ/ — sounds like **PERTH** | /pɝːθ/ — sounds like **PERTH**
-1530. atmosphere | /ˈætməsfɪə/ — sounds like **AT-muh-sfeer-uh** | /ˈætməˌsfɪr/ — sounds like **AT-muh-sfeer**
-1531. worldwide | /ˈwɜːldwaɪd/ — sounds like **WERLD-wyd** | /ˈwɝːldˌwaɪd/ — sounds like **WERLD-wyd**
-1532. adopt | /əˈdɒpt/ — sounds like **uh-DOPT** | /əˈdɑpt/ — sounds like **uh-DAHP**
-1533. irrelevant | /ɪˈreləvənt/ — sounds like **i-REL-uh-vunt** | /ɪˈrɛləvənt/ — sounds like **i-REL-uh-vənt**
-1534. vitamin | /ˈvɪtəmɪn/ — sounds like **VIT-uh-min** | /ˈvaɪtəmɪn/ — sounds like **VY-tuh-min**
-1535. mistake | /mɪˈsteɪk/ — sounds like **mi-STAYK** | /mɪˈsteɪk/ — sounds like **mi-STAYK**
-1536. zero | /ˈzɪərəʊ/ — sounds like **ZEER-oh** | /ˈzɪroʊ/ — sounds like **ZEER-oh**
-1537. invest | /ɪnˈvest/ — sounds like **in-VEST** | /ɪnˈvɛst/ — sounds like **in-VEST**
-1538. generation | /ˌdʒenəˈreɪʃən/ — sounds like **JEN-uh-RAY-shun** | /ˌdʒɛnəˈreɪʃən/ — sounds like **JEN-uh-RAY-shən**
-1539. recycle | /ˌriːˈsaɪkəl/ — sounds like **REE-SY-kul** | /ˌriˈsaɪkəl/ — sounds like **REE-SY-kəl**
-1540. occupation | /ˌɒkjʊˈpeɪʃən/ — sounds like **OK-yu-PAY-shun** | /ˌɑkjəˈpeɪʃən/ — sounds like **AH-kyuh-PAY-shən**
-1541. react | /riˈækt/ — sounds like **ree-AKT** | /riˈækt/ — sounds like **ree-AKT**
-1542. never | /ˈnevə/ — sounds like **NEV-uh** | /ˈnɛvər/ — sounds like **NEV-er**
-1543. endanger | /ɪnˈdeɪndʒə/ — sounds like **in-DAYN-juh** | /ɪnˈdeɪndʒər/ — sounds like **in-DAYN-jer**
-1544. saw | /sɔː/ — sounds like **SAW** | /sɔ/ — sounds like **SAW**
-1545. hole | /həʊl/ — sounds like **HOHL** | /hoʊl/ — sounds like **HOHL**
-1546. happy | /ˈhæpi/ — sounds like **HAP-ee** | /ˈhæpi/ — sounds like **HAP-ee**
-1547. complexity | /kəmˈpleksɪti/ — sounds like **kum-PLEK-si-tee** | /kəmˈplɛksɪti/ — sounds like **kum-PLEK-si-tee**
-1548. west | /west/ — sounds like **WEST** | /wɛst/ — sounds like **WEST**
-1549. organ | /ˈɔːɡən/ — sounds like **AW-gun** | /ˈɔrɡən/ — sounds like **OR-gən**
-1550. electorate | /ɪˈlektərət/ — sounds like **i-LEK-tuh-rut** | /ɪˈlɛktərət/ — sounds like **i-LEK-tər-ət**
+1501. n. commitment | /kəˈmɪtmənt/ — sounds like **kuh-MIT-ment** | /kəˈmɪtmənt/ — sounds like **kuh-MIT-mənt**
+1502. n. Gannon | /ˈɡænən/ — sounds like **GAN-un** | /ˈɡænən/ — sounds like **GAN-ən**
+1503. adj. remarkable | /rɪˈmɑːkəbəl/ — sounds like **ri-MAAH-kuh-bul** | /rɪˈmɑrkəbəl/ — sounds like **ri-MAR-kuh-bəl**
+1504. adj. contemporary | /kənˈtempərəri/ — sounds like **kun-TEM-puh-ruh-ree** | /kənˈtɛmpəˌrɛri/ — sounds like **kun-TEM-puh-rair-ee**
+1505. n. letter | /ˈletə/ — sounds like **LET-uh** | /ˈlɛtər/ — sounds like **LET-er**
+1506. n. rail | /reɪl/ — sounds like **RAYL** | /reɪl/ — sounds like **RAYL**
+1507. n. notion | /ˈnəʊʃən/ — sounds like **NOH-shun** | /ˈnoʊʃən/ — sounds like **NOH-shən**
+1508. v. compose | /kəmˈpəʊz/ — sounds like **kum-POHZ** | /kəmˈpoʊz/ — sounds like **kum-POHZ**
+1509. adv. tomorrow | /təˈmɒrəʊ/ — sounds like **tuh-MOR-oh** | /təˈmɔroʊ/ — sounds like **tuh-MOR-oh**
+1510. n. flint | /flɪnt/ — sounds like **FLINT** | /flɪnt/ — sounds like **FLINT**
+1511. adv. elsewhere | /ˌelsˈweə/ — sounds like **ELS-WAIR** | /ˌɛlsˈwɛr/ — sounds like **ELS-WAIR**
+1512. n. chance | /tʃɑːns/ — sounds like **CHAANS** | /tʃæns/ — sounds like **CHANS**
+1513. adj. renewable | /rɪˈnjuːəbəl/ — sounds like **ri-NYOO-uh-bul** | /rɪˈnuəbəl/ — sounds like **ri-NOO-uh-bəl**
+1514. adv. soon | /suːn/ — sounds like **SOON** | /sun/ — sounds like **SOON**
+1515. adj. agricultural | /ˌæɡrɪˈkʌltʃərəl/ — sounds like **AG-ri-KUL-chuh-rul** | /ˌæɡrəˈkʌltʃərəl/ — sounds like **AG-ruh-KUL-chər-əl**
+1516. n. account | /əˈkaʊnt/ — sounds like **uh-KOWNT** | /əˈkaʊnt/ — sounds like **uh-KOWNT**
+1517. adj. colonial | /kəˈləʊniəl/ — sounds like **kuh-LOH-nee-uhl** | /kəˈloʊniəl/ — sounds like **kuh-LOH-nee-əl**
+1518. n. edition | /ɪˈdɪʃən/ — sounds like **i-DISH-un** | /ɪˈdɪʃən/ — sounds like **i-DISH-ən**
+1519. n. valley | /ˈvæli/ — sounds like **VAL-ee** | /ˈvæli/ — sounds like **VAL-ee**
+1520. v. float | /fləʊt/ — sounds like **FLOHT** | /floʊt/ — sounds like **FLOHT**
+1521. adj. busy | /ˈbɪzi/ — sounds like **BIZ-ee** | /ˈbɪzi/ — sounds like **BIZ-ee**
+1522. n. curator | /kjʊəˈreɪtə/ — sounds like **kyoo-uh-RAY-tuh** | /kjʊˈreɪtər/ — sounds like **kyoo-RAY-ter**
+1523. n. integration | /ˌɪntɪˈɡreɪʃən/ — sounds like **IN-ti-GRAY-shun** | /ˌɪntəˈɡreɪʃən/ — sounds like **IN-tuh-GRAY-shən**
+1524. adj. clinical | /ˈklɪnɪkəl/ — sounds like **KLIN-i-kul** | /ˈklɪnɪkəl/ — sounds like **KLIN-i-kəl**
+1525. v. wonder | /ˈwʌndə/ — sounds like **WUN-duh** | /ˈwʌndər/ — sounds like **WUN-der**
+1526. adj. integrated | /ˈɪntɪɡreɪtɪd/ — sounds like **IN-ti-gray-tid** | /ˈɪntəˌɡreɪtɪd/ — sounds like **IN-tuh-gray-tid**
+1527. adj. compulsory | /kəmˈpʌlsəri/ — sounds like **kum-PUL-suh-ree** | /kəmˈpʌlsəri/ — sounds like **kum-PUL-sər-ee**
+1528. v. suppose | /səˈpəʊz/ — sounds like **suh-POHZ** | /səˈpoʊz/ — sounds like **suh-POHZ**
+1529. n. Perth | /pɜːθ/ — sounds like **PERTH** | /pɝːθ/ — sounds like **PERTH**
+1530. n. atmosphere | /ˈætməsfɪə/ — sounds like **AT-muh-sfeer-uh** | /ˈætməˌsfɪr/ — sounds like **AT-muh-sfeer**
+1531. adj. worldwide | /ˈwɜːldwaɪd/ — sounds like **WERLD-wyd** | /ˈwɝːldˌwaɪd/ — sounds like **WERLD-wyd**
+1532. v. adopt | /əˈdɒpt/ — sounds like **uh-DOPT** | /əˈdɑpt/ — sounds like **uh-DAHP**
+1533. adj. irrelevant | /ɪˈreləvənt/ — sounds like **i-REL-uh-vunt** | /ɪˈrɛləvənt/ — sounds like **i-REL-uh-vənt**
+1534. n. vitamin | /ˈvɪtəmɪn/ — sounds like **VIT-uh-min** | /ˈvaɪtəmɪn/ — sounds like **VY-tuh-min**
+1535. n. mistake | /mɪˈsteɪk/ — sounds like **mi-STAYK** | /mɪˈsteɪk/ — sounds like **mi-STAYK**
+1536. n. zero | /ˈzɪərəʊ/ — sounds like **ZEER-oh** | /ˈzɪroʊ/ — sounds like **ZEER-oh**
+1537. v. invest | /ɪnˈvest/ — sounds like **in-VEST** | /ɪnˈvɛst/ — sounds like **in-VEST**
+1538. n. generation | /ˌdʒenəˈreɪʃən/ — sounds like **JEN-uh-RAY-shun** | /ˌdʒɛnəˈreɪʃən/ — sounds like **JEN-uh-RAY-shən**
+1539. v. recycle | /ˌriːˈsaɪkəl/ — sounds like **REE-SY-kul** | /ˌriˈsaɪkəl/ — sounds like **REE-SY-kəl**
+1540. n. occupation | /ˌɒkjʊˈpeɪʃən/ — sounds like **OK-yu-PAY-shun** | /ˌɑkjəˈpeɪʃən/ — sounds like **AH-kyuh-PAY-shən**
+1541. v. react | /riˈækt/ — sounds like **ree-AKT** | /riˈækt/ — sounds like **ree-AKT**
+1542. adv. never | /ˈnevə/ — sounds like **NEV-uh** | /ˈnɛvər/ — sounds like **NEV-er**
+1543. v. endanger | /ɪnˈdeɪndʒə/ — sounds like **in-DAYN-juh** | /ɪnˈdeɪndʒər/ — sounds like **in-DAYN-jer**
+1544. n. saw | /sɔː/ — sounds like **SAW** | /sɔ/ — sounds like **SAW**
+1545. n. hole | /həʊl/ — sounds like **HOHL** | /hoʊl/ — sounds like **HOHL**
+1546. adj. happy | /ˈhæpi/ — sounds like **HAP-ee** | /ˈhæpi/ — sounds like **HAP-ee**
+1547. n. complexity | /kəmˈpleksɪti/ — sounds like **kum-PLEK-si-tee** | /kəmˈplɛksɪti/ — sounds like **kum-PLEK-si-tee**
+1548. n. west | /west/ — sounds like **WEST** | /wɛst/ — sounds like **WEST**
+1549. n. organ | /ˈɔːɡən/ — sounds like **AW-gun** | /ˈɔrɡən/ — sounds like **OR-gən**
+1550. n. electorate | /ɪˈlektərət/ — sounds like **i-LEK-tuh-rut** | /ɪˈlɛktərət/ — sounds like **i-LEK-tər-ət**
 1551. officially | /əˈfɪʃəli/ — sounds like **uh-FISH-uh-lee** | /əˈfɪʃəli/ — sounds like **uh-FISH-ə-lee**
 1552. intention | /ɪnˈtenʃən/ — sounds like **in-TEN-shun** | /ɪnˈtɛnʃən/ — sounds like **in-TEN-shən**
 1553. massive | /ˈmæsɪv/ — sounds like **MAS-iv** | /ˈmæsɪv/ — sounds like **MAS-iv**

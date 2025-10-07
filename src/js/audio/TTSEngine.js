@@ -7,6 +7,9 @@ class TTSEngine {
         this.currentRepeatCount = 0;
         this.targetRepeats = 2;
         this.backgroundAudioEnabled = false; // Flag to prevent multiple sync registrations
+        
+        // Initialize background audio ONCE in constructor
+        this.enableBackgroundAudio();
     }
 
     /**
@@ -36,6 +39,45 @@ class TTSEngine {
     }
 
     /**
+     * SIMPLIFIED: Pronounce any text (sentence, question, word)
+     * Universal method for RS/ASQ/WFD modes - reuses existing TTS infrastructure
+     * @param {string} text - Text to pronounce
+     * @param {string} lang - Language code (default: 'en-AU')
+     * @param {number} rate - Speech rate (default: normal)
+     */
+    async pronounceText(text, lang = 'en-AU', rate = null) {
+        if (!text) {
+            window.progressTracker.showError('No text to pronounce');
+            return;
+        }
+
+        try {
+            const cleanText = this.cleanTextForTTS(text);
+            const speechRate = rate || this.config.get('tts.speeds.normal');
+
+            // Add visual feedback to main display element
+            const element = this._addSpeakingFeedback('englishWord', {
+                text: text,
+                mode: window.currentPracticeMode,
+                rate: speechRate
+            });
+
+            // Speak the text
+            await this.speak(cleanText, lang, speechRate);
+
+            // Remove visual feedback
+            this._removeSpeakingFeedback(element, {
+                text: text,
+                mode: window.currentPracticeMode
+            });
+
+        } catch (error) {
+            console.warn('Speech error:', error);
+            this.showTTSFallback(text);
+        }
+    }
+
+    /**
      * NEW: Pronounce a sentence (RS or WFD)
      * @param {Object} sentenceItem - Sentence item from dataset
      * @param {number} repeatCount - Current repeat iteration
@@ -48,7 +90,6 @@ class TTSEngine {
 
         try {
             this.currentRepeatCount = repeatCount;
-            this.enableBackgroundAudio();
 
             const sentence = sentenceItem.content.sentence;
             const cleanText = this.cleanTextForTTS(sentence);
@@ -96,7 +137,6 @@ class TTSEngine {
 
         try {
             this.currentRepeatCount = repeatCount;
-            this.enableBackgroundAudio();
 
             const question = questionItem.content.question;
             const answer = questionItem.content.answer;
@@ -148,9 +188,6 @@ class TTSEngine {
 
         try {
             this.currentRepeatCount = repeatCount;
-
-            // Enable background audio for iOS
-            this.enableBackgroundAudio();
 
             // Clean text for TTS
             const cleanText = this.cleanTextForTTS(word.english);

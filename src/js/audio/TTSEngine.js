@@ -166,7 +166,7 @@ class TTSEngine {
             // Emit speaking start event (standardized from Config.js)
             const ttsSpeakingStartedEvent = window.appConfig.get('events.tts.speaking.started');
             window.eventBus.emit(ttsSpeakingStartedEvent, {
-                word: word.english,
+                word: word,  // Send full word object, not just word.english
                 repeatCount: this.currentRepeatCount,
                 rate: pronunciationRate
             });

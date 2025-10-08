@@ -3,8 +3,8 @@
 // Handles offline caching and background sync
 
 // Service Worker for PTE Vocabulary Trainer
-// Version 62 - Added defensive guards for word data + aggressive cache clearing
-const CACHE_VERSION = 'v62';
+// Version 63 - Fixed displayCurrent signature + getPracticeMode helper
+const CACHE_VERSION = 'v63';
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

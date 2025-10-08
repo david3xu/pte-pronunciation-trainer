@@ -274,7 +274,18 @@ class UIController {
     }
 
     displayWord(word, index) {
-        if (!word) return;
+        // Safety check: ensure word object has required data
+        if (!word || !word.english) {
+            console.error('[UIController] ❌ Invalid word object received:', word);
+            const phoneticElement = document.getElementById('phoneticSpelling');
+            const englishElement = document.getElementById('englishWord');
+            const chineseElement = document.getElementById('chineseTranslation');
+            
+            if (phoneticElement) phoneticElement.textContent = 'Error: No Data';
+            if (englishElement) englishElement.textContent = 'Please refresh the page';
+            if (chineseElement) chineseElement.textContent = '';
+            return;
+        }
 
         // All PTE datasets use standardized pronunciation structure
         let phoneticPlain = '';

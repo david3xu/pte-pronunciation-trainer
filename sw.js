@@ -3,8 +3,8 @@
 // Handles offline caching and background sync
 
 // Service Worker for PTE Vocabulary Trainer
-// Version 61 - Fixed play button and auto-loop behavior
-const CACHE_VERSION = 'v61';
+// Version 62 - Added defensive guards for word data + aggressive cache clearing
+const CACHE_VERSION = 'v62';
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode
@@ -130,23 +130,33 @@ self.addEventListener('install', (event) => {
   );
 });
 
-// Activate Service Worker and Clean Old Caches
+// Activate event - Clean up old caches
 self.addEventListener('activate', (event) => {
   console.log('[SW] Activating Service Worker for background operation...');
+
   event.waitUntil(
-    caches.keys().then((cacheNames) => {
-      return Promise.all(
+    (async () => {
+      // AGGRESSIVE: Delete ALL caches to force fresh reload
+      const cacheNames = await caches.keys();
+      console.log('[SW] Found caches:', cacheNames);
+      await Promise.all(
         cacheNames.map((cacheName) => {
-          if (cacheName !== CACHE_NAME) {
-            console.log('[SW] Deleting old cache:', cacheName);
-            return caches.delete(cacheName);
-          }
+          console.log('[SW] ❌ Deleting cache:', cacheName);
+          return caches.delete(cacheName);
         })
       );
-    }).then(() => {
+      console.log('[SW] ✅ All old caches cleared');
       console.log('[SW] Service Worker activated - App can now run in background');
-      return self.clients.claim(); // Take control immediately
-    })
+      
+      // Force all clients to reload to get new JS files
+      const clients = await self.clients.matchAll({ type: 'window' });
+      clients.forEach(client => {
+        console.log('[SW] 🔄 Reloading client:', client.url);
+        client.navigate(client.url);
+      });
+      
+      return self.clients.claim();
+    })()
   );
 });
 

@@ -11,6 +11,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 All notable changes to the PTE Pronunciation Trainer will be documented in this file.
 
+## [2.4.3] - 2025-10-08
+
+### Fixed
+- **Word Data Undefined Issue**: Added defensive guards to prevent app crashes when word data is missing
+  - AudioControls now stops auto-play immediately if `getCurrentWord()` returns null/undefined
+  - TTSEngine rejects undefined/null word objects before processing
+  - UIController displays error message instead of attempting to render undefined data
+  - Added safety check in `startAutoPlay()` to verify dataset has words before starting
+  - Prevents infinite loop of "Word missing standard pronunciation data: undefined" warnings
+- **Browser Cache Issue**: Aggressive cache clearing to force new JavaScript files to load
+  - Service Worker v62 now deletes ALL old caches on activation (v61, v60, etc.)
+  - Forces client reload after SW activation to ensure new code is served
+  - Fixes issue where browser served old cached JS files (`?v=1759740000`) despite SW update
+
+### Changed
+- Auto-play now pauses with user-friendly error message when data is missing
+- Service Worker activation is more aggressive about clearing old caches
+- Error handling is more defensive across AudioControls, TTSEngine, and UIController
+
+### Technical
+- Service Worker: v61 → v62
+- App Version: 2.4.2 → 2.4.3
+
 ## [2.4.2] - 2025-10-08
 
 ### Fixed

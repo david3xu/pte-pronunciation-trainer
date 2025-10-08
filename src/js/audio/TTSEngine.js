@@ -118,9 +118,20 @@ class TTSEngine {
         }
     }
 
-    async pronounceWord(word, repeatCount = 0) {
+    /**
+     * Pronounce a vocabulary word with repetition support
+     * @param {Object} word - Word object with english, pronunciation, etc.
+     * @param {number} repeatIndex - Current repetition index (0, 1, 2...)
+     */
+    async pronounceWord(word, repeatIndex = 0) {
+        // Safety check: reject undefined/null word objects
         if (!word || !word.english) {
-            window.progressTracker.showError('No word to pronounce');
+            console.error('[TTSEngine] ❌ Invalid word object:', word);
+            throw new Error('Cannot pronounce undefined or invalid word');
+        }
+        
+        if (this.isSpeaking) {
+            console.warn('[TTSEngine] ⚠️ Already speaking, skipping...');
             return;
         }
 

@@ -5,6 +5,20 @@
  */
 
 class DataSchema {
+    // Valid categories for PTE vocabulary books
+    static PTE_CATEGORIES = [
+        'pte-beginner',
+        'pte-intermediate',
+        'pte-advanced',
+        'pte-must-know',
+        'pte-fib-listening',
+        'pte-ra-vocabulary',
+        'pte-rs-vocabulary',
+        'pte-wfd-vocabulary',
+        'pte-reading-fib',
+        'pte-reading-fib-drag'
+    ];
+
     constructor() {
         this.schemas = {
             vocabulary: {
@@ -206,20 +220,33 @@ class DataSchema {
 
     /**
      * Infer category from vocabulary item
+     * For PTE data, category should be explicitly provided.
+     * For legacy CCL data, falls back to content-based inference.
      * @param {Object} item - Vocabulary item
      * @returns {string} Inferred category
      */
     inferCategory(item) {
-        const { english, conversationId, example } = item;
+        const { english, conversationId, example, category } = item;
 
-        // If we have conversation ID, use group-based categorization
-        if (conversationId) {
-            // For PTE data, all terms are in the same category
-            return 'pte-fib-listening';
+        // If category is already set and valid for PTE, use it
+        const pteCategories = [
+            'pte-beginner', 'pte-intermediate', 'pte-advanced', 'pte-must-know',
+            'pte-fib-listening', 'pte-ra-vocabulary', 'pte-rs-vocabulary',
+            'pte-wfd-vocabulary', 'pte-reading-fib', 'pte-reading-fib-drag'
+        ];
+        
+        if (category && pteCategories.includes(category)) {
+            return category;
         }
 
-        // Content-based categorization
-        const text = (english + ' ' + example).toLowerCase();
+        // For PTE conversation data without explicit category
+        if (conversationId) {
+            console.warn(`PTE term "${english}" missing category - using fallback`);
+            return 'pte-vocabulary';
+        }
+
+        // Legacy CCL content-based categorization
+        const text = (english + ' ' + (example || '')).toLowerCase();
 
         if (/\b(court|legal|judge|lawyer|case|law)\b/.test(text)) return 'legal';
         if (/\b(doctor|medical|health|hospital|treatment)\b/.test(text)) return 'medical';

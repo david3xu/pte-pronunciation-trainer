@@ -221,7 +221,10 @@ class PTEDataPipeline {
           } else {
             // Handle vocabulary-based datasets (default)
             try {
-              terms = await PTETermsExtractor.extract(inputPath, fs);
+              terms = await PTETermsExtractor.extract(inputPath, fs, {
+                category: entry.category,
+                source: entry.sourceType
+              });
             } catch (e) {
               // On parser error, try fallback simple list if configured
               if (entry.fallback) {

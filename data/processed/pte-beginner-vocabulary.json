@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-10-07T22:04:08.836Z",
+    "generated": "2025-10-08T01:46:08.607Z",
     "totalTerms": 383,
     "source": "pte-beginner-vocabulary-with-ipa",
     "description": "PTE Beginner high-frequency vocabulary with IPA",
@@ -145,7 +145,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "skill",
@@ -315,7 +315,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "affect",
@@ -5262,7 +5262,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "discover",
@@ -5330,7 +5330,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "market",
@@ -5959,7 +5959,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "scientific",

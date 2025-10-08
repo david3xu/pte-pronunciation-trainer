@@ -7,6 +7,116 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.1.0] - 2025-10-08
+
+### 🎉 Complete Vocabulary Library & Auto-Loop
+
+Major update expanding vocabulary coverage and implementing intelligent auto-loop functionality.
+
+### Added
+
+#### **Complete Vocabulary Library (6 Books)**
+- **📕 PTE Advanced Vocabulary** - 2,703 advanced terms with IPA
+- **📚 PTE Read Aloud (RA) Vocabulary** - 788 RA-specific terms with IPA  
+- **🎯 PTE Repeat Sentence (RS) Vocabulary** - 887 RS-specific terms with IPA
+- **Total**: 6 vocabulary books with 8,054 terms (previously 3,696 terms)
+
+#### **Auto-Loop System**
+- **Vocabulary Mode Auto-Loop** - Automatically cycles through all 6 books
+  - FIB Listening → Beginner → Intermediate → Advanced → RA → RS → (repeat)
+  - Seamless transition when completing a book
+  - Starts from word #1 in next book
+- **Sentence Mode Auto-Restart** - Restarts dataset when complete
+  - RS (620 sentences), ASQ (692 questions), WFD (1,195 sentences)
+  - Continuous practice without manual intervention
+
+#### **Dynamic Dataset Loading**
+- Map-based lazy loading for all 6 vocabulary books
+- Datasets loaded on-demand (memory efficient)
+- Eliminates hard-coded dataset switches
+
+### Changed
+
+#### **Architecture Improvements**
+- **Config.js** - Added 3 new vocabulary books to all registries
+  - Updated `learningModes` array (3 → 6 books)
+  - Updated `data.paths.byMode` paths
+  - Updated `datasetFiles` registry
+  - Updated `pipeline.registry` with PTETermsExtractor configuration
+  
+- **PTEVocabularyManager.js** - Refactored to dynamic loading
+  - **Removed** hard-coded dataset properties
+  - **Added** `datasets` Map for dynamic storage
+  - **Added** `loadDataset(mode)` method for lazy loading
+  - **Deleted** `loadPTEData()` method (30 lines)
+  - **Deleted** `loadIntermediateDataset()` method (28 lines)
+  - Updated `getNextLearningMode()` to cycle through 6 books
+
+- **AudioControls.js** - Simplified playback logic
+  - **Deleted** `handleCategoryCompletion()` (15 lines)
+  - **Deleted** `advanceToNextCategory()` (18 lines)
+  - **Deleted** `handleAllCategoriesCompleted()` (12 lines)
+  - **Deleted** `showCategoryLoop()` (20 lines)
+  - **Deleted** `showFinalCompletion()` (23 lines)
+  - **Added** `autoLoopToNextBook()` for vocabulary auto-loop
+  - **Added** `restartCurrentDataset()` for sentence mode restart
+  - **Total cleanup**: 161 lines of old code removed
+
+#### **Data Pipeline Updates**
+- **npm run data** now processes all 9 datasets correctly
+  - 6 vocabulary books use `PTETermsExtractor`
+  - 3 sentence datasets use `PTESentenceExtractor`/`PTEQuestionExtractor`
+  - No mixing of vocabulary vs sentences
+
+### Fixed
+
+- **Reset to First Word** - Already working when switching books manually
+  - UIController.js line 32 resets to index 0 on `vocabulary:learningModeChanged`
+- **Complete Dataset Coverage** - All PTE vocabulary books now included
+- **Data Pipeline Separation** - Vocabulary and sentence datasets properly separated
+
+### Technical Details
+
+#### **Code Reduction**
+- **Deleted**: 161 lines of old category completion code
+- **Added**: ~100 lines for dynamic loading and auto-loop
+- **Net reduction**: ~60 lines
+
+#### **Dataset Statistics**
+- **Vocabulary Books**: 6 books, 8,054 total terms
+  - FIB Listening: 885 terms
+  - Beginner: 383 terms
+  - Intermediate: 2,408 terms
+  - Advanced: 2,703 terms
+  - RA: 788 terms
+  - RS: 887 terms
+  
+- **Sentence Datasets**: 3 datasets, 2,507 total items
+  - Repeat Sentence: 620 sentences
+  - Answer Short Question: 692 questions
+  - Write From Dictation: 1,195 sentences
+
+#### **Files Modified**
+- `src/js/shared/Config.js` - Added 3 vocab books, updated pipeline registry
+- `src/js/core/PTEVocabularyManager.js` - Dynamic loading refactor
+- `src/js/audio/AudioControls.js` - Auto-loop implementation, old code cleanup
+
+#### **Git Commits**
+- `1c9ddf6` - feat: Add all 6 vocabulary books with dynamic loading and cleanup
+
+### Documentation
+
+#### **Cleaned Up**
+- Deleted temporary documentation files
+- Removed completed migration documentation
+- Archived Phase 2 WIP documentation
+
+#### **Updated**
+- `CHANGELOG.md` - Added v2.1.0 release notes (this file)
+- Documentation maintained: API-REFERENCE, ARCHITECTURE, CODING-STANDARDS, etc.
+
+---
+
 ## [2.0.0] - 2025-10-07
 
 ### 🎉 Phase 2: Practice Modes Complete

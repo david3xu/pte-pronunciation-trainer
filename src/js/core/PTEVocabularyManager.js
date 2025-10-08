@@ -1,10 +1,13 @@
 // PTEVocabularyManager - Specialized version for PTE vocabulary
 class PTEVocabularyManager {
   constructor() {
-    this.currentCategory = 'all-categories';
-    this.currentDifficulty = 'all';
-    this.currentLearningMode = 'pte-fib-listening';
-    this.currentWords = [];
+    // NOTE: "category" in PTE context is a FILTER FIELD on each word (e.g., word.category = 'pte-beginner')
+    // It's NOT for navigation between sections (that was the CCL app's concept)
+    // We filter words BY category, we don't navigate TO categories
+    this.currentCategory = 'all-categories'; // Filter: show all categories or filter by specific one
+    this.currentDifficulty = 'all'; // Filter: show all difficulties or filter by easy/normal/hard
+    this.currentLearningMode = 'pte-fib-listening'; // Current vocabulary book (dataset)
+    this.currentWords = []; // Filtered words
     this.allWords = []; // Store unfiltered words
 
     // Store all datasets in a map for dynamic loading

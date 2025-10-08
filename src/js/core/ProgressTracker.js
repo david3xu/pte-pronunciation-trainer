@@ -109,31 +109,6 @@ class ProgressTracker {
         });
     }
 
-    showCompletionMessage(categoryName, totalWords) {
-        const message = `🎉 ${categoryName} completed! ${totalWords} words mastered!`;
-        this.updateStatus(message);
-
-        // Emit completion event
-        window.eventBus.emit('category:completed', {
-            categoryName,
-            totalWords,
-            timestamp: new Date().toISOString()
-        });
-    }
-
-    showCategoryTransition(fromCategory, toCategory, isCircular = false) {
-        const symbol = isCircular ? '🔄' : '➡️';
-        const message = `${symbol} Moving from ${fromCategory} to ${toCategory}...`;
-        this.updateStatus(message);
-
-        // Emit transition event
-        window.eventBus.emit('category:transitioned', {
-            fromCategory,
-            toCategory,
-            isCircular
-        });
-    }
-
     showLearningStats(wordsCompleted, totalTime, accuracy = null) {
         let statsMessage = `📊 Session: ${wordsCompleted} words`;
         if (totalTime) {

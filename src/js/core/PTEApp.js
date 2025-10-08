@@ -91,20 +91,6 @@ class PTEVocabularyTrainer {
     this.hideMobileLoadingIndicator();
   }
 
-  initializeStateManager() {
-    // StateManager is already initialized as a global instance
-    // Just ensure other modules can access it
-    if (window.stateManager) {
-
-      // Check if we're restoring a previous session
-      if (window.stateManager.hasPreviousSession()) {
-      } else {
-      }
-    } else {
-      console.warn('⚠️ StateManager not found - some features may not work');
-    }
-  }
-
   initializeSettingsModule() {
     // Initialize SettingsModule for event-driven settings architecture
     if (window.SettingsModule) {

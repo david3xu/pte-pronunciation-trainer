@@ -16,13 +16,8 @@ class UIController {
         });
 
         // Listen for vocabulary events
-        window.eventBus.on('vocabulary:categoryLoaded', (data) => {
-            this.updateCategoryDisplay();
-            this.updateButtons();
-        });
-
         window.eventBus.on('vocabulary:difficultyFiltered', (data) => {
-            this.updateCategoryDisplay();
+            this.updateBookDisplay();
             this.updateButtons();
         });
 
@@ -30,7 +25,7 @@ class UIController {
         window.eventBus.on('vocabulary:learningModeChanged', (data) => {
             // Reset audio position to first word
             window.audioControls.setCurrentIndex(0);
-            this.updateCategoryDisplay();
+            this.updateBookDisplay();
             this.updateButtons();
             this.displayFirstWord(); // Show first word of new mode
         });
@@ -119,7 +114,7 @@ class UIController {
 
         // Initialize dropdowns based on current settings
         this.initializeDropdowns();
-        this.updateCategoryDisplay(); // Initial update
+        this.updateBookDisplay(); // Initial update
     }
 
     /**
@@ -129,9 +124,9 @@ class UIController {
     bindSettingControls() {
         const settingControls = [
             { elementId: 'practiceModeSelect', settingKey: 'practiceMode' },
-            { elementId: 'learningModeSelect', settingKey: 'learningMode', afterChange: () => this.updateCategoryDisplay() },
+            { elementId: 'learningModeSelect', settingKey: 'learningMode', afterChange: () => this.updateBookDisplay() },
             { elementId: 'practiceDatasetSelect', settingKey: 'practiceDataset' },
-            { elementId: 'difficultySelect', settingKey: 'difficulty', afterChange: () => this.updateCategoryDisplay() },
+            { elementId: 'difficultySelect', settingKey: 'difficulty', afterChange: () => this.updateBookDisplay() },
             { elementId: 'speedSelect', settingKey: 'speed' },
             { elementId: 'delaySelect', settingKey: 'delay' },
             { elementId: 'repeatSelect', settingKey: 'repeat' },
@@ -220,8 +215,8 @@ class UIController {
         });
     }
 
-    updateCategoryDisplay() {
-        const categoryDisplay = document.getElementById('categoryDisplay');
+    updateBookDisplay() {
+        const bookDisplay = document.getElementById('bookDisplay');
 
         if (!window.pteVocabularyManager) return;
 
@@ -240,7 +235,7 @@ class UIController {
         };
 
         // Update context bar display with vocabulary book name and word count
-        if (categoryDisplay) {
+        if (bookDisplay) {
             const modeName = modeLabels[currentMode] || currentMode;
             let displayText = `${modeName} (${currentWords.length}/${totalWords})`;
             
@@ -250,7 +245,7 @@ class UIController {
                 displayText += ` ${emoji}`;
             }
             
-            categoryDisplay.textContent = displayText;
+            bookDisplay.textContent = displayText;
         }
     }
 
@@ -495,7 +490,7 @@ class UIController {
         }
 
         // Update category display
-        this.updateCategoryDisplay();
+        this.updateBookDisplay();
 
         // Set initial UI state
         window.audioControls.showPausedUI();
@@ -611,14 +606,14 @@ class UIController {
     handleSettingsChange(key, value) {
         switch (key) {
             case 'category':
-                this.updateCategoryDisplay();
+                this.updateBookDisplay();
                 break;
             case 'difficulty':
-                this.updateCategoryDisplay();
+                this.updateBookDisplay();
                 break;
             case 'learningMode':
                 // SettingsModule handles dependencies automatically
-                this.updateCategoryDisplay();
+                this.updateBookDisplay();
                 break;
             case 'speed':
                 // Speed changes are handled by TTS engine
@@ -651,23 +646,23 @@ class UIController {
         if (mode === 'vocabulary') {
             console.log('[UIController] Switching to vocabulary mode...');
             // Show vocabulary mode - restore normal display
-            this.updateCategoryDisplay();
+            this.updateBookDisplay();
             this.displayFirstWord();
         } else {
             console.log(`[UIController] Switching to practice mode: ${mode}...`);
             // Practice modes (RS/ASQ/WFD) - load dataset and display first item
             await this.loadPracticeDataset(mode);
             
-            // Update category display for practice mode
-            const categoryDisplay = document.getElementById('categoryDisplay');
-            if (categoryDisplay) {
+            // Update book display for practice mode
+            const bookDisplay = document.getElementById('bookDisplay');
+            if (bookDisplay) {
                 const modeLabels = {
                     'rs': '🎤 Repeat Sentence',
                     'asq': '❓ Answer Short Question',
                     'wfd': '✍️ Write From Dictation'
                 };
-                categoryDisplay.textContent = modeLabels[mode] || mode.toUpperCase();
-                console.log(`[UIController] Updated category display to: ${modeLabels[mode]}`);
+                bookDisplay.textContent = modeLabels[mode] || mode.toUpperCase();
+                console.log(`[UIController] Updated book display to: ${modeLabels[mode]}`);
             }
         }
     }

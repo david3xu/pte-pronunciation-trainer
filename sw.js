@@ -2,7 +2,7 @@
 // Service Worker for PTE Pronunciation Trainer
 // Handles offline caching and background sync
 
-const CACHE_VERSION = 'v43'; // Version 43: Complete legacy CCL cleanup - removed unused methods, renamed category→book, deleted StateManager
+const CACHE_VERSION = 'v44'; // Version 44: Added 4 new vocabulary books (must-know, wfd-vocab, reading-fib, reading-fib-drag) - total 10 books
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode
@@ -37,13 +37,17 @@ const urlsToCache = isDevelopment ? [
   '/src/js/ui/UIController.js',
   '/src/js/ui/SettingsPanel.js',
   '/src/js/core/PTEApp.js',
-  // Vocabulary datasets (6 books)
+  // Vocabulary datasets (10 books)
   '/data/processed/pte-fib-listening-dataset.json',
   '/data/processed/pte-beginner-vocabulary.json',
   '/data/processed/pte-intermediate-vocabulary.json',
   '/data/processed/pte-advanced-vocabulary.json',
   '/data/processed/pte-ra-vocabulary.json',
   '/data/processed/pte-rs-vocabulary.json',
+  '/data/processed/pte-must-know-vocabulary.json',
+  '/data/processed/pte-wfd-vocabulary.json',
+  '/data/processed/pte-reading-fib-vocabulary.json',
+  '/data/processed/pte-reading-fib-drag-vocabulary.json',
   // Phase 2: PTE practice datasets
   '/data/processed/pte-repeat-sentence-dataset.json',
   '/data/processed/pte-answer-short-question-dataset.json',
@@ -75,13 +79,17 @@ const urlsToCache = isDevelopment ? [
   '/src/js/ui/UIController.js',
   '/src/js/ui/SettingsPanel.js',
   '/src/js/core/PTEApp.js',
-  // Vocabulary datasets (6 books)
+  // Vocabulary datasets (10 books)
   '/data/processed/pte-fib-listening-dataset.json',
   '/data/processed/pte-beginner-vocabulary.json',
   '/data/processed/pte-intermediate-vocabulary.json',
   '/data/processed/pte-advanced-vocabulary.json',
   '/data/processed/pte-ra-vocabulary.json',
   '/data/processed/pte-rs-vocabulary.json',
+  '/data/processed/pte-must-know-vocabulary.json',
+  '/data/processed/pte-wfd-vocabulary.json',
+  '/data/processed/pte-reading-fib-vocabulary.json',
+  '/data/processed/pte-reading-fib-drag-vocabulary.json',
   // NEW: PTE practice datasets (Phase 2)
   '/data/processed/pte-repeat-sentence-dataset.json',
   '/data/processed/pte-answer-short-question-dataset.json',

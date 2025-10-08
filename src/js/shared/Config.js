@@ -102,6 +102,54 @@ class AppConfig {
                         isDefault: false
                     },
                     {
+                        id: 'pte-must-know',
+                        input: 'pte-must-know-vocabulary-with-ipa.md',
+                        output: 'pte-must-know-vocabulary.json',
+                        category: 'pte-must-know',
+                        description: 'PTE Must-Know Vocabulary (1,397 essential terms with IPA)',
+                        sourceType: 'pte-must-know-vocabulary-with-ipa',
+                        dataType: 'vocabulary',
+                        extractorType: 'PTETermsExtractor',
+                        inputSubdir: 'vocabs',
+                        isDefault: false
+                    },
+                    {
+                        id: 'pte-wfd-vocab',
+                        input: 'pte-wfd-vocabulary-with-ipa.md',
+                        output: 'pte-wfd-vocabulary.json',
+                        category: 'pte-wfd-vocab',
+                        description: 'PTE Write From Dictation vocabulary with IPA',
+                        sourceType: 'pte-wfd-vocabulary-with-ipa',
+                        dataType: 'vocabulary',
+                        extractorType: 'PTETermsExtractor',
+                        inputSubdir: 'vocabs',
+                        isDefault: false
+                    },
+                    {
+                        id: 'pte-reading-fib',
+                        input: 'pte-reading-fib-vocabulary-with-ipa.md',
+                        output: 'pte-reading-fib-vocabulary.json',
+                        category: 'pte-reading-fib',
+                        description: 'PTE Reading Fill-in-the-Blanks vocabulary with IPA',
+                        sourceType: 'pte-reading-fib-vocabulary-with-ipa',
+                        dataType: 'vocabulary',
+                        extractorType: 'PTETermsExtractor',
+                        inputSubdir: 'vocabs',
+                        isDefault: false
+                    },
+                    {
+                        id: 'pte-reading-fib-drag',
+                        input: 'pte-reading-fib-drag-vocabulary-with-ipa.md',
+                        output: 'pte-reading-fib-drag-vocabulary.json',
+                        category: 'pte-reading-fib-drag',
+                        description: 'PTE Reading FIB (Drag & Drop) vocabulary with IPA',
+                        sourceType: 'pte-reading-fib-drag-vocabulary-with-ipa',
+                        dataType: 'vocabulary',
+                        extractorType: 'PTETermsExtractor',
+                        inputSubdir: 'vocabs',
+                        isDefault: false
+                    },
+                    {
                         id: 'pte-repeat-sentence',
                         input: 'pte-repeat-sentence.md',
                         output: 'pte-repeat-sentence-dataset.json',
@@ -184,7 +232,11 @@ class AppConfig {
                     { id: 'pte-intermediate', label: '📘 PTE Intermediate Vocabulary', dataset: 'pte-intermediate-vocabulary-with-ipa' },
                     { id: 'pte-advanced', label: '📕 PTE Advanced Vocabulary', dataset: 'pte-advanced-vocabulary-with-ipa' },
                     { id: 'pte-ra', label: '📚 PTE Read Aloud (RA) Vocabulary', dataset: 'pte-ra-vocabulary-with-ipa' },
-                    { id: 'pte-rs', label: '🎯 PTE Repeat Sentence (RS) Vocabulary', dataset: 'pte-rs-vocabulary-with-ipa' }
+                    { id: 'pte-rs', label: '🎯 PTE Repeat Sentence (RS) Vocabulary', dataset: 'pte-rs-vocabulary-with-ipa' },
+                    { id: 'pte-must-know', label: '⭐ PTE Must-Know Vocabulary', dataset: 'pte-must-know-vocabulary-with-ipa' },
+                    { id: 'pte-wfd-vocab', label: '✍️ PTE WFD Vocabulary', dataset: 'pte-wfd-vocabulary-with-ipa' },
+                    { id: 'pte-reading-fib', label: '📖 PTE Reading FIB Vocabulary', dataset: 'pte-reading-fib-vocabulary-with-ipa' },
+                    { id: 'pte-reading-fib-drag', label: '🔀 PTE Reading FIB Drag Vocabulary', dataset: 'pte-reading-fib-drag-vocabulary-with-ipa' }
                 ],
                 practiceDatasets: [
                     { id: 'pte-repeat-sentence', label: '🎤 Repeat Sentence', itemCount: 620, type: 'rs' },
@@ -203,7 +255,11 @@ class AppConfig {
                     'pte-intermediate': { file: 'pte-intermediate-vocabulary.json', type: 'vocabulary' },
                     'pte-advanced': { file: 'pte-advanced-vocabulary.json', type: 'vocabulary' },
                     'pte-ra': { file: 'pte-ra-vocabulary.json', type: 'vocabulary' },
-                    'pte-rs': { file: 'pte-rs-vocabulary.json', type: 'vocabulary' }
+                    'pte-rs': { file: 'pte-rs-vocabulary.json', type: 'vocabulary' },
+                    'pte-must-know': { file: 'pte-must-know-vocabulary.json', type: 'vocabulary' },
+                    'pte-wfd-vocab': { file: 'pte-wfd-vocabulary.json', type: 'vocabulary' },
+                    'pte-reading-fib': { file: 'pte-reading-fib-vocabulary.json', type: 'vocabulary' },
+                    'pte-reading-fib-drag': { file: 'pte-reading-fib-drag-vocabulary.json', type: 'vocabulary' }
                 }
             },
 

@@ -231,7 +231,11 @@ class UIController {
             'pte-intermediate': '📘 PTE Intermediate',
             'pte-advanced': '📕 PTE Advanced',
             'pte-ra': '📚 PTE Read Aloud (RA)',
-            'pte-rs': '🎯 PTE Repeat Sentence (RS)'
+            'pte-rs': '🎯 PTE Repeat Sentence (RS)',
+            'pte-must-know': '⭐ PTE Must-Know',
+            'pte-wfd-vocab': '✍️ PTE WFD Vocab',
+            'pte-reading-fib': '📖 PTE Reading FIB',
+            'pte-reading-fib-drag': '🔀 PTE Reading FIB Drag'
         };
 
         // Update context bar display with vocabulary book name and word count

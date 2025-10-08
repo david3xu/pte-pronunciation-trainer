@@ -67,49 +67,28 @@ class AudioControls {
         }
     }
 
-    async startAutoPlay() {
-        if (this.isPlaying) return;
+    startAutoPlay() {
+        console.log('[AudioControls] 🎬 startAutoPlay called - Mode:', window.currentPracticeMode);
+        console.log('[AudioControls] window.currentPracticeMode:', window.currentPracticeMode);
+        console.log('[AudioControls] window.currentItem:', window.currentItem);
+        console.log('[AudioControls] window.currentDataset:', window.currentDataset);
 
-        // Check if we're in a practice mode or vocabulary mode
-        const mode = window.currentPracticeMode || 'vocabulary';
-        console.log(`[AudioControls] 🎬 startAutoPlay called - Mode: ${mode}`);
-        console.log(`[AudioControls] window.currentPracticeMode: ${window.currentPracticeMode}`);
-        console.log(`[AudioControls] window.currentItem:`, window.currentItem);
-        console.log(`[AudioControls] window.currentDataset:`, window.currentDataset);
-        
-        if (mode === 'vocabulary') {
-            // Vocabulary mode - use existing logic
-            const totalWords = window.pteVocabularyManager.getTotalWords();
-            if (totalWords === 0) {
-                window.progressTracker.showError('No words available to play');
-                return;
-            }
-
-            this.isPlaying = true;
-            this.showPlayingUI();
-
-            // Emit auto-play start event
-            window.eventBus.emit('audioControls:autoPlayStarted', {
-                startIndex: this.currentIndex,
-                totalWords
-            });
-
-            await this.playCurrentWord();
-        } else {
-            // Practice mode (RS/ASQ/WFD) - play current item
-            console.log(`[AudioControls] 🎯 Practice mode detected: ${mode}`);
-            if (!window.currentItem) {
-                console.error('[AudioControls] ❌ No currentItem found!');
-                window.progressTracker.showError('No item to play');
-                return;
-            }
-
-            console.log(`[AudioControls] ✅ currentItem exists, starting playback...`);
-            this.isPlaying = true;
-            this.showPlayingUI();
-
-            await this.playCurrentItem();
+        // Safety check: verify we have word data
+        const totalWords = window.pteVocabularyManager?.getTotalWords() || 0;
+        if (totalWords === 0) {
+            console.error('[AudioControls] ❌ No words loaded - cannot start auto-play');
+            window.progressTracker?.showError('No vocabulary data loaded. Please refresh the page.');
+            return;
         }
+
+        if (this.isPlaying) {
+            console.log('[AudioControls] ⚠️ Already playing, ignoring start request');
+            return;
+        }
+
+        this.isPlaying = true;
+        this.showPlayingUI();
+        this.playCurrentWord();
     }
 
     pauseAutoPlay() {

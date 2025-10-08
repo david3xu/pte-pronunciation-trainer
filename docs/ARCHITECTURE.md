@@ -14,7 +14,50 @@ The PTE Pronunciation Trainer is a client-side web application designed to help 
 
 ---
 
-## 📊 High-Level Architecture
+## � **Important Terminology** (CCL → PTE Migration)
+
+### **"Category" Has TWO Meanings**
+
+⚠️ **IMPORTANT**: The word "category" appears in code with **two different contexts**:
+
+1. **✅ CURRENT (PTE)**: Category as a **filter field** on vocabulary words
+   - Each word has metadata: `{ english, ipa, difficulty, category }`
+   - Example: `word.category = 'pte-beginner'`
+   - Used for filtering: "Show only words where category='pte-intermediate'"
+   - **This is legitimate and should be kept**
+
+2. **❌ LEGACY (CCL)**: Category as **navigation between topic sections**
+   - CCL app had: Health → Education → Travel → etc.
+   - Methods like: `loadCategory()`, `getPreviousCategory()`, `advanceToNextCategory()`
+   - **This concept was removed - PTE uses simple book-to-book navigation**
+
+### **Current Navigation Model**
+
+**PTE Architecture**:
+- User selects a **vocabulary book** (e.g., "PTE Beginner")
+- Each book is one complete dataset
+- Manual navigation (PREV/NEXT buttons) loops within current book
+- Auto-play can advance to next book when current book completes
+- "Category" is only used for filtering words **within** a dataset
+
+**NOT this** (CCL model):
+- ~~Navigate between categories within a book~~
+- ~~getPreviousCategory() / getNextCategory()~~
+- ~~Category completion triggers category transition~~
+
+### **Renamed Terminology for Clarity**
+
+| Old Name (CCL) | New Name (PTE) | Purpose |
+|----------------|----------------|---------|
+| `updateCategoryDisplay()` | `updateBookDisplay()` | Shows current book name in UI |
+| `categoryDisplay` element | `bookDisplay` element | HTML element showing book name |
+| `current-category` class | `current-book` class | CSS class for book display |
+| Category navigation | Book selection | User chooses which book to study |
+| Category completion | Book completion | When finishing a vocabulary book |
+
+---
+
+## �📊 High-Level Architecture
 
 ```mermaid
 graph TB
@@ -39,7 +82,6 @@ graph TB
 
     subgraph "🔧 Infrastructure"
         EVENTS[EventBus.js<br/>Pub/Sub System]
-        STATE[StateManager.js<br/>State Persistence]
         STORAGE[Storage.js<br/>localStorage Wrapper]
     end
 
@@ -61,8 +103,7 @@ graph TB
     TTS --> EVENTS
     PROGRESS --> EVENTS
     
-    EVENTS --> STATE
-    STATE --> STORAGE
+    EVENTS --> STORAGE
 ```
 
 ---

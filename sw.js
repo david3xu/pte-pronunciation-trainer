@@ -2,7 +2,7 @@
 // Service Worker for PTE Pronunciation Trainer
 // Handles offline caching and background sync
 
-const CACHE_VERSION = 'v42'; // Version 42: Fixed AudioControls.js legacy CCL code (handlePlaybackEnd, previousWord, nextWord)
+const CACHE_VERSION = 'v43'; // Version 43: Complete legacy CCL cleanup - removed unused methods, renamed category→book, deleted StateManager
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode
@@ -25,7 +25,6 @@ const urlsToCache = isDevelopment ? [
   '/src/js/shared/LegacyCompatibility.js',
   '/src/js/utils/EventBus.js',
   '/src/js/utils/Storage.js',
-  '/src/js/utils/StateManager.js',
   '/src/js/utils/CacheMigration.js',
   '/src/js/core/SettingsModule.js',
   '/src/js/core/PTEVocabularyManager.js',
@@ -64,7 +63,6 @@ const urlsToCache = isDevelopment ? [
   '/src/js/shared/LegacyCompatibility.js',
   '/src/js/utils/EventBus.js',
   '/src/js/utils/Storage.js',
-  '/src/js/utils/StateManager.js',
   '/src/js/utils/CacheMigration.js',
   '/src/js/core/SettingsModule.js',
   '/src/js/core/PTEVocabularyManager.js',

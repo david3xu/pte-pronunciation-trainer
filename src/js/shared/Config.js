@@ -23,13 +23,16 @@ class AppConfig {
                 },
                 // Centralized dataset registry for the pipeline. Each entry defines a dataset to build.
                 // New books should be added here; the pipeline will iterate over this list.
+                // NOTE: "category" field is metadata assigned to each word for FILTERING purposes
+                // (e.g., word.category = 'pte-beginner' allows filtering by category)
+                // It's NOT for navigation hierarchy (that was the legacy CCL app's concept)
                 registry: [
                     {
                         id: 'pte-fib-listening',
                         input: 'pte-fib-listening-with-ipa.md',
                         fallback: 'fib-listening-vocabulary.md',
                         output: 'pte-fib-listening-dataset.json',
-                        category: 'pte-fib-listening',
+                        category: 'pte-fib-listening', // Metadata: what category label to assign to words from this dataset
                         description: 'PTE FIB Listening vocabulary with IPA',
                         sourceType: 'pte-fib-listening-with-ipa',
                         dataType: 'vocabulary',
@@ -41,7 +44,7 @@ class AppConfig {
                         id: 'pte-beginner',
                         input: 'pte-beginner-vocabulary-with-ipa.md',
                         output: 'pte-beginner-vocabulary.json',
-                        category: 'pte-beginner',
+                        category: 'pte-beginner', // Metadata: what category label to assign to words from this dataset
                         description: 'PTE Beginner high-frequency vocabulary with IPA',
                         sourceType: 'pte-beginner-vocabulary-with-ipa',
                         dataType: 'vocabulary',
@@ -332,7 +335,6 @@ class AppConfig {
                     'src/js/shared/LegacyCompatibility.js',
                     'src/js/utils/EventBus.js',
                     'src/js/utils/Storage.js',
-                    'src/js/utils/StateManager.js',
                     'src/js/utils/CacheMigration.js',
                     'src/js/utils/StateTest.js',
                     'src/js/data/extractors/PTETermsExtractor.js',

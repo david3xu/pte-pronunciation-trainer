@@ -346,28 +346,6 @@ class DatasetManager {
     }
 
     /**
-     * Get all available categories across all loaded datasets
-     * @returns {Array<string>} Unique categories
-     */
-    getAllCategories() {
-        const categories = new Set();
-        
-        this.datasets.forEach((dataset, datasetId) => {
-            const meta = this.metadata.get(datasetId);
-            const items = meta.type === 'vocabulary' ? dataset.vocabulary : dataset.items;
-            
-            items.forEach(item => {
-                const category = this._getItemField(item, 'category', meta.type);
-                if (category) {
-                    categories.add(category);
-                }
-            });
-        });
-
-        return Array.from(categories).sort();
-    }
-
-    /**
      * Cache dataset to localStorage
      * @param {string} datasetId - Dataset ID
      * @param {Object} data - Dataset data

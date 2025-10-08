@@ -68,8 +68,9 @@ class AudioControls {
     }
 
     startAutoPlay() {
-        console.log('[AudioControls] 🎬 startAutoPlay called - Mode:', window.currentPracticeMode);
-        console.log('[AudioControls] window.currentPracticeMode:', window.currentPracticeMode);
+        const currentMode = window.settingsModule?.get('practiceMode') || this.config.get('data.defaults.practiceMode');
+        console.log('[AudioControls] 🎬 startAutoPlay called - Mode:', currentMode);
+        console.log('[AudioControls] currentPracticeMode (from SettingsModule):', currentMode);
         console.log('[AudioControls] window.currentItem:', window.currentItem);
         console.log('[AudioControls] window.currentDataset:', window.currentDataset);
 
@@ -368,7 +369,7 @@ class AudioControls {
         if (!this.isPlaying || !window.currentItem) return;
 
         try {
-            const mode = window.currentPracticeMode;
+            const mode = window.settingsModule?.get('practiceMode') || this.config.get('data.defaults.practiceMode');
             const item = window.currentItem;
 
             console.log(`[AudioControls] 🎵 playCurrentItem - Mode: ${mode}`);
@@ -436,7 +437,8 @@ class AudioControls {
         const nextItem = window.currentDataset.items[window.currentDatasetIndex];
         window.currentItem = nextItem; // IMPORTANT: Update currentItem for PLAY button
         console.log(`[AudioControls] Displaying next item:`, nextItem);
-        window.uiController.displayContent(nextItem, window.currentPracticeMode);
+        const currentMode = window.settingsModule?.get('practiceMode') || this.config.get('data.defaults.practiceMode');
+        window.uiController.displayContent(nextItem, currentMode);
     }
 
     /**
@@ -459,7 +461,8 @@ class AudioControls {
         const prevItem = window.currentDataset.items[window.currentDatasetIndex];
         window.currentItem = prevItem; // IMPORTANT: Update currentItem for PLAY button
         console.log(`[AudioControls] Displaying previous item:`, prevItem);
-        window.uiController.displayContent(prevItem, window.currentPracticeMode);
+        const currentMode = window.settingsModule?.get('practiceMode') || this.config.get('data.defaults.practiceMode');
+        window.uiController.displayContent(prevItem, currentMode);
     }
 
     getCurrentIndex() {

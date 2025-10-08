@@ -83,7 +83,7 @@ class UIController {
         document.getElementById('nextBtn').addEventListener('click', () => {
             // Mode-aware: emit appropriate next event (standardized from Config.js)
             const defaultMode = this.config.get('data.defaults.practiceMode') || this.config.get('fallbacks.practiceMode');
-            const mode = window.currentPracticeMode || defaultMode;
+            const mode = window.settingsModule?.get('practiceMode') || defaultMode;
             const audioNextEvent = window.appConfig.get('events.audio.navigate.next');
             window.eventBus.emit(audioNextEvent, { mode });
         });
@@ -91,7 +91,7 @@ class UIController {
         document.getElementById('prevBtn').addEventListener('click', () => {
             // Mode-aware: emit appropriate prev event (standardized from Config.js)
             const defaultMode = this.config.get('data.defaults.practiceMode') || this.config.get('fallbacks.practiceMode');
-            const mode = window.currentPracticeMode || defaultMode;
+            const mode = window.settingsModule?.get('practiceMode') || defaultMode;
             const audioPrevEvent = window.appConfig.get('events.audio.navigate.prev');
             window.eventBus.emit(audioPrevEvent, { mode });
         });
@@ -120,9 +120,9 @@ class UIController {
      * @param {Object} data - Display data containing item/word and index
      * @param {string} [mode] - Optional mode override, defaults to currentPracticeMode
      */
-    displayCurrent(data, mode = null) {
-        const defaultMode = this.config.get('data.defaults.practiceMode') || this.config.get('fallbacks.practiceMode');
-        const currentMode = mode || window.currentPracticeMode || defaultMode;
+    displayCurrent(mode = null) {
+        const defaultMode = this.config.get('data.defaults.practiceMode');
+        const currentMode = mode || window.settingsModule?.get('practiceMode') || defaultMode;
         
         // Use Config.js mapping to determine mode type instead of hardcoded string comparison
         const modeMapping = this.config.get('data.practiceModeMapping');
@@ -363,7 +363,7 @@ class UIController {
         // Update word type badge (ONLY for vocabulary mode)
         const wordTypeBadge = document.getElementById('wordTypeBadge');
         const defaultMode = this.config.get('data.defaults.practiceMode') || this.config.get('fallbacks.practiceMode');
-        const currentMode = window.currentPracticeMode || defaultMode;
+        const currentMode = window.settingsModule?.get('practiceMode') || defaultMode;
         
         if (wordTypeBadge) {
             // Only show word type in vocabulary mode, hide in practice modes (RS/ASQ/WFD)

@@ -100,7 +100,7 @@ class TTSEngine {
             // Add visual feedback to main display element
             const element = this._addSpeakingFeedback('englishWord', {
                 text: text,
-                mode: window.currentPracticeMode,
+                mode: window.settingsModule?.get('practiceMode') || this.config.get('data.defaults.practiceMode'),
                 rate: speechRate
             });
 
@@ -110,7 +110,7 @@ class TTSEngine {
             // Remove visual feedback
             this._removeSpeakingFeedback(element, {
                 text: text,
-                mode: window.currentPracticeMode
+                mode: window.settingsModule?.get('practiceMode') || this.config.get('data.defaults.practiceMode')
             });
 
         } catch (error) {

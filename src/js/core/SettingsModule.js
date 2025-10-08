@@ -178,8 +178,8 @@ class SettingsModule {
                     return modes.some(m => m.id === value);
                 },
                 apply: (value) => {
-                    // Get current mode before changing
-                    const oldMode = window.currentPracticeMode;
+                    // Get old mode from SettingsModule (not window)
+                    const oldMode = this.get('practiceMode');
                     
                     // Emit mode:changing event BEFORE the change (standardized from Config.js)
                     const modeChangingEvent = window.appConfig.get('events.mode.practice.changing');

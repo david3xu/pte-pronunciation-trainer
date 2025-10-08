@@ -114,7 +114,8 @@ class SettingsPanel {
         this.applySettingToElement('speedSelect', savedSettings.speed);
         this.applySettingToElement('delaySelect', savedSettings.delay);
         this.applySettingToElement('repeatSelect', savedSettings.repeat);
-        this.applySettingToElement('voiceSelect', savedSettings.voice || 'auto');
+        const defaultVoice = window.appConfig?.get('data.defaults.voice') || 'auto';
+        this.applySettingToElement('voiceSelect', savedSettings.voice || defaultVoice);
         this.applySettingToElement('learningModeSelect', savedSettings.learningMode);
         
         // IMPORTANT: Restore saved practice mode (vocabulary/rs/asq/wfd)
@@ -197,7 +198,8 @@ class SettingsPanel {
     updateVoiceSelection(voiceName) {
         const voiceSelect = document.getElementById('voiceSelect');
         if (voiceSelect) {
-            voiceSelect.value = voiceName || 'auto';
+            const defaultVoice = window.appConfig?.get('data.defaults.voice') || 'auto';
+            voiceSelect.value = voiceName || defaultVoice;
         }
     }
 

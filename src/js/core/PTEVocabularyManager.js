@@ -62,9 +62,10 @@ class PTEVocabularyManager {
     if (this.isInitialized) return;
 
     try {
-      // Load initial dataset (FIB Listening)
-      await this.loadDataset('pte-fib-listening');
-      await this.setLearningMode('pte-fib-listening');
+      // Initialize with default learning mode from Config.js
+      const defaultLearningMode = config.get('data.defaults.learningMode') || 'pte-fib-listening';
+      await this.loadDataset(defaultLearningMode);
+      await this.setLearningMode(defaultLearningMode);
 
       this.isInitialized = true;
       console.log('[PTEVocabularyManager] ✅ Initialized successfully');
@@ -216,7 +217,8 @@ class PTEVocabularyManager {
     }
 
     // Filter by difficulty
-    if (this.currentDifficulty !== 'all') {
+    const defaultDifficulty = window.appConfig?.get('data.defaults.difficulty') || 'all';
+    if (this.currentDifficulty !== defaultDifficulty) {
       filteredWords = filteredWords.filter(word =>
         word.difficulty === this.currentDifficulty
       );

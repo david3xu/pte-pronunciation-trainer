@@ -82,14 +82,16 @@ class UIController {
 
         document.getElementById('nextBtn').addEventListener('click', () => {
             // Mode-aware: emit appropriate next event (standardized from Config.js)
-            const mode = window.currentPracticeMode || 'vocabulary';
+            const defaultMode = this.config.get('data.defaults.practiceMode') || 'vocabulary';
+            const mode = window.currentPracticeMode || defaultMode;
             const audioNextEvent = window.appConfig.get('events.audio.navigate.next');
             window.eventBus.emit(audioNextEvent, { mode });
         });
 
         document.getElementById('prevBtn').addEventListener('click', () => {
             // Mode-aware: emit appropriate prev event (standardized from Config.js)
-            const mode = window.currentPracticeMode || 'vocabulary';
+            const defaultMode = this.config.get('data.defaults.practiceMode') || 'vocabulary';
+            const mode = window.currentPracticeMode || defaultMode;
             const audioPrevEvent = window.appConfig.get('events.audio.navigate.prev');
             window.eventBus.emit(audioPrevEvent, { mode });
         });
@@ -118,9 +120,15 @@ class UIController {
      * @param {string} [mode] - Optional mode override, defaults to currentPracticeMode
      */
     displayCurrent(data, mode = null) {
-        const currentMode = mode || window.currentPracticeMode || 'vocabulary';
+        const defaultMode = this.config.get('data.defaults.practiceMode') || 'vocabulary';
+        const currentMode = mode || window.currentPracticeMode || defaultMode;
         
-        if (currentMode === 'vocabulary') {
+        // Use Config.js mapping to determine mode type instead of hardcoded string comparison
+        const modeMapping = this.config.get('data.practiceModeMapping');
+        const mapping = modeMapping && modeMapping[currentMode];
+        const isVocabularyMode = mapping && mapping.type === 'vocabulary';
+        
+        if (isVocabularyMode) {
             // Vocabulary mode - use displayWord()
             const word = data.word || data.item;
             const index = data.index || 0;
@@ -242,21 +250,18 @@ class UIController {
 
         const currentWords = window.pteVocabularyManager.getCurrentWords();
         const totalWords = window.pteVocabularyManager.getAllWords().length;
-        const currentMode = window.pteVocabularyManager.currentLearningMode || 'pte-fib-listening';
+        const defaultLearningMode = this.config.get('data.defaults.learningMode') || 'pte-fib-listening';
+        const currentMode = window.pteVocabularyManager.currentLearningMode || defaultLearningMode;
 
         // Get friendly name for current vocabulary book
-        const modeLabels = {
-            'pte-fib-listening': '🎧 PTE FIB Listening',
-            'pte-beginner': '📗 PTE Beginner',
-            'pte-intermediate': '📘 PTE Intermediate',
-            'pte-advanced': '📕 PTE Advanced',
-            'pte-ra': '📚 PTE Read Aloud (RA)',
-            'pte-rs': '🎯 PTE Repeat Sentence (RS)',
-            'pte-must-know': '⭐ PTE Must-Know',
-            'pte-wfd-vocab': '✍️ PTE WFD Vocab',
-            'pte-reading-fib': '📖 PTE Reading FIB',
-            'pte-reading-fib-drag': '🔀 PTE Reading FIB Drag'
-        };
+        // Get learning mode labels from Config.js instead of hardcoded map
+        const learningModes = this.config.get('data.learningModes') || [];
+        const modeLabels = {};
+        learningModes.forEach(mode => {
+            modeLabels[mode.id] = mode.label;
+        });
+        
+        const displayName = modeLabels[currentMode] || currentMode;
 
         // Update context bar display with vocabulary book name and word count
         if (bookDisplay) {
@@ -264,7 +269,8 @@ class UIController {
             let displayText = `${modeName} (${currentWords.length}/${totalWords})`;
             
             // Add difficulty indicator if filtered
-            if (window.pteVocabularyManager.getCurrentDifficulty() !== 'all') {
+            const defaultDifficulty = this.config.get('data.defaults.difficulty') || 'all';
+            if (window.pteVocabularyManager.getCurrentDifficulty() !== defaultDifficulty) {
                 const emoji = { easy: '🟢', normal: '🟡', hard: '🔴' }[window.pteVocabularyManager.getCurrentDifficulty()] || '';
                 displayText += ` ${emoji}`;
             }
@@ -355,11 +361,17 @@ class UIController {
         
         // Update word type badge (ONLY for vocabulary mode)
         const wordTypeBadge = document.getElementById('wordTypeBadge');
-        const currentMode = window.currentPracticeMode || 'vocabulary';
+        const defaultMode = this.config.get('data.defaults.practiceMode') || 'vocabulary';
+        const currentMode = window.currentPracticeMode || defaultMode;
         
         if (wordTypeBadge) {
             // Only show word type in vocabulary mode, hide in practice modes (RS/ASQ/WFD)
-            if (currentMode === 'vocabulary' && word.wordType) {
+            // Use Config.js mapping to determine if this is vocabulary mode
+            const modeMapping = this.config.get('data.practiceModeMapping');
+            const mapping = modeMapping && modeMapping[currentMode];
+            const isVocabularyMode = mapping && mapping.type === 'vocabulary';
+            
+            if (isVocabularyMode && word.wordType) {
                 wordTypeBadge.textContent = `[${word.wordType}]`;
                 wordTypeBadge.style.display = 'inline-block';
                 wordTypeBadge.classList.add('word-change');
@@ -681,7 +693,12 @@ class UIController {
         window.currentPracticeMode = mode;
         console.log(`[UIController] Stored window.currentPracticeMode: ${window.currentPracticeMode}`);
         
-        if (mode === 'vocabulary') {
+        // Use Config.js mapping to determine mode type
+        const modeMapping = this.config.get('data.practiceModeMapping');
+        const mapping = modeMapping && modeMapping[mode];
+        const isVocabularyMode = mapping && mapping.type === 'vocabulary';
+        
+        if (isVocabularyMode) {
             console.log('[UIController] Switching to vocabulary mode...');
             // Show vocabulary mode - restore normal display
             this.updateBookDisplay();
@@ -783,7 +800,12 @@ class UIController {
         
         // Hide word type badge for practice modes (RS/ASQ/WFD)
         // Word type badges are ONLY for vocabulary mode
-        if (wordTypeBadge && mode !== 'vocabulary') {
+        // Use Config.js mapping to determine if word type badge should be hidden
+        const modeMapping = this.config.get('data.practiceModeMapping');
+        const mapping = modeMapping && modeMapping[mode];
+        const isVocabularyMode = mapping && mapping.type === 'vocabulary';
+        
+        if (wordTypeBadge && !isVocabularyMode) {
             wordTypeBadge.style.display = 'none';
         }
 

@@ -29,16 +29,17 @@ class CacheMigration {
             // Reset to defaults through SettingsModule
             window.settingsModule.resetSettings();
         } else {
-            // Fallback: Set basic defaults directly in storage
+            // Fallback: Set basic defaults from Config.js
             console.log('ℹ️ SettingsModule not available - setting basic defaults');
+            const config = window.appConfig || new AppConfig();
             const defaults = {
                 'category': 'all-categories',
-                'difficulty': 'all',
+                'difficulty': config.get('data.defaults.difficulty') || 'all',
                 'speechRate': 'tts.speeds.slow',
                 'delay': 'tts.delays.long',
-                'repeatMode': 'once',
-                'preferredVoice': 'auto',
-                'learningMode': 'pte-fib-listening'
+                'repeatMode': config.get('data.defaults.repeat') || 'once',
+                'preferredVoice': config.get('data.defaults.voice') || 'auto',
+                'learningMode': config.get('data.defaults.learningMode') || 'pte-fib-listening'
             };
 
             Object.entries(defaults).forEach(([key, value]) => {

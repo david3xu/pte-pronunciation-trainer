@@ -77,7 +77,13 @@ class SettingsModule {
             
             delay: {
                 validate: (value) => {
-                    const userDelays = { short: 1000, normal: 2000, long: 3000 };
+                    // Get delays from Config.js instead of hardcoded values
+                const delays = this.config.get('tts.delays');
+                const userDelays = { 
+                    short: delays.short, 
+                    normal: delays.normal, 
+                    long: delays.long 
+                };
                     return Object.values(userDelays).includes(parseInt(value));
                 },
                 apply: (value) => {
@@ -114,7 +120,8 @@ class SettingsModule {
             voice: {
                 validate: (value) => {
                     // Always valid - voiceSelector handles auto/specific voices
-                    return value === 'auto' || this.isValidVoice(value);
+                    const defaultVoice = this.config.get('data.defaults.voice');
+                    return value === defaultVoice || this.isValidVoice(value);
                 },
                 apply: (value) => {
                     if (window.voiceSelector && typeof window.voiceSelector.setPreferredVoice === 'function') {

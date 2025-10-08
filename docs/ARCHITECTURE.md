@@ -1828,3 +1828,336 @@ async initializeDatasetManager() {
 **Testing**: ⏳ **READY FOR BROWSER TESTING**
 
 ```
+
+---
+
+## 🔄 Initialization & Error Handling Architecture (October 2025)
+
+### **Overview**
+
+The application uses a sophisticated initialization system with dependency management, health checks, and comprehensive error handling to ensure reliable startup and graceful failure recovery.
+
+### **Initialization Flow**
+
+```mermaid
+graph TD
+    A[App Start] --> B[InitializationManager]
+    B --> C[Compute Dependency Order]
+    C --> D[Topological Sort]
+    D --> E{Dependencies Satisfied?}
+    E -->|Yes| F[Initialize Module]
+    E -->|No| G{Critical?}
+    G -->|Yes| H[Throw Error]
+    G -->|No| I[Skip Module]
+    F --> J{Validation Passed?}
+    J -->|Yes| K[Mark Initialized]
+    J -->|No| L{Retry Available?}
+    L -->|Yes| M[Exponential Backoff]
+    M --> F
+    L -->|No| G
+    K --> N{More Modules?}
+    N -->|Yes| E
+    N -->|No| O[App Ready]
+```
+
+---
+
+### **InitializationManager.js - Dependency-Ordered Initialization**
+
+**Purpose**: Manages module initialization with automatic dependency resolution
+
+**File**: `src/js/core/InitializationManager.js` (328 lines)
+
+**Features**:
+- **Dependency Graph**: Define module dependencies (DAG - Directed Acyclic Graph)
+- **Topological Sort**: Kahn's algorithm for initialization order
+- **Retry Logic**: Exponential backoff for transient failures
+- **Timeout Protection**: Prevent hung initialization
+- **Validation**: Post-initialization health checks
+- **Critical vs Non-Critical**: Fail fast for critical modules, continue for optional
+
+**Dependency Graph**:
+```javascript
+{
+  'EventBus': [],                    // No dependencies
+  'Storage': [],                     // No dependencies
+  'Config': [],                      // No dependencies
+  'CacheMigration': [],              // No dependencies
+  'ServiceWorker': [],               // No dependencies
+  
+  'SettingsModule': ['Config', 'EventBus', 'Storage'],
+  'DatasetManager': ['Config', 'EventBus'],
+  'PTEVocabularyManager': ['Config', 'EventBus', 'DatasetManager'],
+  'TTSEngine': ['Config', 'EventBus'],
+  'AudioControls': ['Config', 'EventBus', 'TTSEngine'],
+  'VoiceSelector': ['TTSEngine', 'EventBus'],
+  'ProgressTracker': ['Storage', 'EventBus'],
+  'UIController': ['Config', 'EventBus', 'SettingsModule'],
+  'SettingsPanel': ['SettingsModule', 'UIController', 'EventBus'],
+  'PracticeModes': ['DatasetManager', 'TTSEngine', 'EventBus']
+}
+```
+
+**Initialization Order** (Computed Automatically):
+```
+1. EventBus, Storage, Config, CacheMigration, ServiceWorker (parallel)
+2. SettingsModule, DatasetManager, TTSEngine
+3. PTEVocabularyManager, AudioControls, ProgressTracker, UIController
+4. VoiceSelector, SettingsPanel
+5. PracticeModes
+```
+
+---
+
+### **Error Handling Strategy**
+
+#### **1. Fail-Fast for Critical Modules**
+
+**Critical Modules**:
+- `SettingsModule` - App unusable without settings
+- `PTEVocabularyManager` - No vocabulary = no app
+- `UIController` - No UI = no app
+
+**Behavior**:
+```javascript
+// SettingsModule fails
+if (!window.settingsModule.settings) {
+  throw new Error('SettingsModule: Missing dependencies: config, eventBus');
+  // App stops, shows error to user
+}
+```
+
+**Non-Critical Modules**:
+- `DatasetManager` - PTEVocabularyManager can work alone
+- `PracticeModes` - Vocabulary mode works without practice modes
+
+**Behavior**:
+```javascript
+// PracticeModes fails
+if (!window.DatasetManager) {
+  console.warn('PracticeModes skipped: DatasetManager not available');
+  results.skipped.push('PracticeModes');
+  // App continues, practice modes disabled
+}
+```
+
+#### **2. Event-Driven Error Notification**
+
+**System-Wide Error Events**:
+```javascript
+// EventBus.js - Global error handler
+emit(event, data) {
+  this.events[event].forEach(callback => {
+    try {
+      callback(data);
+    } catch (error) {
+      console.error(`EventBus error in ${event} handler:`, error);
+      
+      // Emit global error event (prevent infinite loop)
+      if (event !== 'system:error') {
+        setTimeout(() => {
+          this.emit('system:error', {
+            event,
+            error: error.message,
+            stack: error.stack,
+            data,
+            timestamp: new Date().toISOString()
+          });
+        }, 0);
+      }
+    }
+  });
+}
+```
+
+**Module-Specific Error Events**:
+- `system:error` - Global event handler errors
+- `vocabulary:load-error` - Dataset loading failures
+- `tts:error` - TTS engine failures
+- `settings:error` - Settings validation failures
+
+#### **3. Health Checks**
+
+**Module Validation**:
+```javascript
+// PTEApp.js
+validateModule(moduleName, moduleInstance, options) {
+  const {
+    requiredProperties = [],
+    critical = false,
+    customCheck = null,
+    customCheckMessage = ''
+  } = options;
+  
+  // Check existence
+  if (!moduleInstance) {
+    const error = `${moduleName} is not available`;
+    if (critical) throw new Error(error);
+    console.warn(error);
+    return false;
+  }
+  
+  // Check required properties
+  for (const prop of requiredProperties) {
+    if (!(prop in moduleInstance)) {
+      const error = `${moduleName} missing property: ${prop}`;
+      if (critical) throw new Error(error);
+      console.warn(error);
+      return false;
+    }
+  }
+  
+  // Custom validation
+  if (customCheck && !customCheck()) {
+    const error = `${moduleName} validation failed: ${customCheckMessage}`;
+    if (critical) throw new Error(error);
+    console.warn(error);
+    return false;
+  }
+  
+  console.log(`✅ ${moduleName} validated successfully`);
+  return true;
+}
+```
+
+#### **4. Retry Logic with Exponential Backoff**
+
+**Network Failures**:
+```javascript
+// PTEVocabularyManager.js
+async loadDataset(mode) {
+  const maxRetries = 3;
+  const retryDelays = [1000, 2000, 4000]; // 1s, 2s, 4s
+  let lastError = null;
+  
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      }
+      
+      const dataset = await response.json();
+      this.datasets.set(mode, dataset);
+      console.log(`✅ Loaded ${mode}: ${dataset.vocabulary.length} words${attempt > 0 ? ` (retry ${attempt})` : ''}`);
+      return; // Success
+      
+    } catch (fetchError) {
+      lastError = fetchError;
+      
+      if (attempt < maxRetries) {
+        const delay = retryDelays[attempt];
+        console.warn(`⚠️  Attempt ${attempt + 1}/${maxRetries + 1} failed: ${fetchError.message}. Retrying in ${delay}ms...`);
+        await new Promise(resolve => setTimeout(resolve, delay));
+      }
+    }
+  }
+  
+  // All retries failed
+  throw new Error(`Failed to fetch ${mode} dataset after ${maxRetries + 1} attempts: ${lastError.message}`);
+}
+```
+
+---
+
+### **Event-Driven Architecture**
+
+#### **Complete Decoupling Pattern**
+
+**Before (Tight Coupling)**:
+```javascript
+// UIController.js
+document.getElementById('startBtn').addEventListener('click', () => {
+  window.audioControls.startAutoPlay();  // Direct method call
+});
+```
+
+**After (Event-Driven)**:
+```javascript
+// UIController.js
+document.getElementById('startBtn').addEventListener('click', () => {
+  window.eventBus.emit('audio:start');  // Event emission
+});
+
+// AudioControls.js
+window.eventBus.on('audio:start', () => {
+  this.startAutoPlay();  // Subscribes to event
+});
+```
+
+**Benefits**:
+- **Loose Coupling**: UIController doesn't know about AudioControls
+- **Testability**: Can test modules in isolation
+- **Extensibility**: Multiple modules can subscribe to same event
+- **Error Isolation**: Errors in handlers don't affect emitters
+
+#### **Audio Control Events**
+
+**Events Emitted** (UIController):
+- `audio:start` - Start auto-play
+- `audio:pause` - Pause auto-play
+- `audio:next` - Next word/item
+- `audio:prev` - Previous word/item
+
+**Events Subscribed** (AudioControls):
+```javascript
+_attachEventListeners() {
+  window.eventBus.on('setting:changed', this._handleSettingChange.bind(this));
+  
+  // Audio control events
+  window.eventBus.on('audio:start', () => this.startAutoPlay());
+  window.eventBus.on('audio:pause', () => this.pauseAutoPlay());
+  window.eventBus.on('audio:next', ({ mode }) => {
+    if (mode && mode !== 'vocabulary') {
+      this.nextItem();
+    } else {
+      this.nextWord();
+    }
+  });
+  window.eventBus.on('audio:prev', ({ mode }) => {
+    if (mode && mode !== 'vocabulary') {
+      this.prevItem();
+    } else {
+      this.previousWord();
+    }
+  });
+}
+```
+
+---
+
+### **Best Practices**
+
+#### **1. Module Design**
+- ✅ Single Responsibility Principle
+- ✅ Dependency Injection (via constructor)
+- ✅ Event-driven communication (not direct calls)
+- ✅ Fail-fast for critical issues
+- ✅ Graceful degradation for optional features
+
+#### **2. Error Handling**
+- ✅ Always throw errors in constructors if dependencies missing
+- ✅ Use try-catch for network operations
+- ✅ Emit error events for UI notification
+- ✅ Log detailed error context (stack traces, timestamps)
+- ✅ Provide user-friendly error messages
+
+#### **3. Initialization**
+- ✅ Define clear dependencies
+- ✅ Use InitializationManager for complex apps
+- ✅ Add health checks after initialization
+- ✅ Validate critical modules
+- ✅ Track initialization timing
+
+#### **4. Event System**
+- ✅ Use namespaced events (e.g., `audio:start`, `vocabulary:loaded`)
+- ✅ Include detailed event payloads
+- ✅ Handle errors in event handlers
+- ✅ Emit global `system:error` for centralized tracking
+- ✅ Prevent infinite loops in error handlers
+
+---
+
+**Initialization Architecture Status**: ✅ **PRODUCTION READY**  
+**Error Handling**: ✅ **COMPREHENSIVE & RESILIENT**  
+**Event System**: ✅ **FULLY DECOUPLED**

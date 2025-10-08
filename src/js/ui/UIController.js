@@ -36,23 +36,18 @@ class UIController {
             this.handlePracticeModeChange(data.mode);
         });
 
-        // Listen for word display events
-        window.eventBus.on('word:display', (data) => {
-            this.displayWord(data.word, data.index);
+        // Listen for unified content display events (standardized from Config.js)
+        const contentDisplayEvent = window.appConfig.get('events.content.display');
+        window.eventBus.on(contentDisplayEvent, (data) => {
+            // Use unified display method for mode-aware rendering
+            this.displayCurrent(data);
         });
 
-        // Listen for TTS speaking started to sync display with actual speech
-        window.eventBus.on('tts:speakingStarted', (data) => {
-            // Only sync display for vocabulary mode
-            // Practice modes (RS/ASQ/WFD) manage their own display via displayContent()
-            if (window.currentPracticeMode === 'vocabulary' || !window.currentPracticeMode) {
-                // Get current word and index from audio controls for accurate sync
-                const currentIndex = window.audioControls.getCurrentIndex();
-                const currentWord = window.pteVocabularyManager.getCurrentWord(currentIndex);
-                if (currentWord) {
-                    this.displayWord(currentWord, currentIndex);
-                }
-            }
+        // TTS speaking started (standardized event name from Config.js)
+        const ttsSpeakingStartedEvent = window.appConfig.get('events.tts.speaking.started');
+        window.eventBus.on(ttsSpeakingStartedEvent, (data) => {
+            // Update UI to show current word when TTS starts speaking
+            this.displayCurrent(data);
         });
 
         // Listen for progress events
@@ -60,11 +55,13 @@ class UIController {
             // Progress display is handled by ProgressTracker
         });
 
-        // Listen for settings changes using centralized event names
-        const settingsChangedEvent = this.config.get('settings.events.changed');
+        // Settings changed (standardized event name from Config.js)
+        const settingsChangedEvent = window.appConfig.get('events.settings.changed');
         window.eventBus.on(settingsChangedEvent, (data) => {
-            // Update UI based on settings changes
-            this.handleSettingsChange(data.key, data.value);
+            // Handle settings UI updates
+            if (data.key === 'learningMode') {
+                this.updateBookDisplay();
+            }
         });
     }
 
@@ -72,25 +69,29 @@ class UIController {
         // Bind all settings controls using event-driven architecture
         this.bindSettingControls();
 
-        // Control buttons - using event-driven architecture
+        // Control buttons - using event-driven architecture with standardized events from Config.js
         document.getElementById('startBtn').addEventListener('click', () => {
-            window.eventBus.emit('audio:start');
+            const audioStartEvent = window.appConfig.get('events.audio.autoplay.start');
+            window.eventBus.emit(audioStartEvent);
         });
 
         document.getElementById('pauseBtn').addEventListener('click', () => {
-            window.eventBus.emit('audio:pause');
+            const audioPauseEvent = window.appConfig.get('events.audio.autoplay.pause');
+            window.eventBus.emit(audioPauseEvent);
         });
 
         document.getElementById('nextBtn').addEventListener('click', () => {
-            // Mode-aware: emit appropriate next event
+            // Mode-aware: emit appropriate next event (standardized from Config.js)
             const mode = window.currentPracticeMode || 'vocabulary';
-            window.eventBus.emit('audio:next', { mode });
+            const audioNextEvent = window.appConfig.get('events.audio.navigate.next');
+            window.eventBus.emit(audioNextEvent, { mode });
         });
 
         document.getElementById('prevBtn').addEventListener('click', () => {
-            // Mode-aware: emit appropriate prev event
+            // Mode-aware: emit appropriate prev event (standardized from Config.js)
             const mode = window.currentPracticeMode || 'vocabulary';
-            window.eventBus.emit('audio:prev', { mode });
+            const audioPrevEvent = window.appConfig.get('events.audio.navigate.prev');
+            window.eventBus.emit(audioPrevEvent, { mode });
         });
 
         // Pronunciation toggle button
@@ -109,6 +110,26 @@ class UIController {
         // Initialize dropdowns based on current settings
         this.initializeDropdowns();
         this.updateBookDisplay(); // Initial update
+    }
+
+    /**
+     * Unified display orchestrator - routes to appropriate display method based on mode
+     * @param {Object} data - Display data containing item/word and index
+     * @param {string} [mode] - Optional mode override, defaults to currentPracticeMode
+     */
+    displayCurrent(data, mode = null) {
+        const currentMode = mode || window.currentPracticeMode || 'vocabulary';
+        
+        if (currentMode === 'vocabulary') {
+            // Vocabulary mode - use displayWord()
+            const word = data.word || data.item;
+            const index = data.index || 0;
+            this.displayWord(word, index);
+        } else {
+            // Practice modes (RS/ASQ/WFD) - use displayContent()
+            const item = data.item || data.word;
+            this.displayContent(item, currentMode);
+        }
     }
 
     /**
@@ -131,9 +152,10 @@ class UIController {
             const element = document.getElementById(elementId);
             if (element) {
                 element.addEventListener('change', (e) => {
-                    // Emit event for SettingsModule to handle
+                    // Emit event for SettingsModule to handle (standardized from Config.js)
                     if (window.eventBus) {
-                        window.eventBus.emit('setting:request-change', {
+                        const settingsRequestChangeEvent = window.appConfig.get('events.settings.requestChange');
+                        window.eventBus.emit(settingsRequestChangeEvent, {
                             key: settingKey,
                             value: e.target.value
                         });

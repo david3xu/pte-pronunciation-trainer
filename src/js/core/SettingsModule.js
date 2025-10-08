@@ -43,8 +43,9 @@ class SettingsModule {
         // Load settings from storage
         this.loadSettings();
         
-        // Listen for setting change requests
-        this.eventBus.on('setting:request-change', this.handleSettingChange.bind(this));
+        // Listen for setting change requests (standardized event from Config.js)
+        const settingsRequestChangeEvent = window.appConfig.get('events.settings.requestChange');
+        this.eventBus.on(settingsRequestChangeEvent, this.handleSettingChange.bind(this));
         
         console.log('✅ SettingsModule: Initialized with', Object.keys(this.handlers).length, 'handlers');
     }
@@ -63,8 +64,10 @@ class SettingsModule {
                     return speeds.includes(parseFloat(value));
                 },
                 apply: (value) => {
+                    // Set property directly - event-driven architecture
                     if (window.ttsEngine) {
-                        window.ttsEngine.setSpeechRate(parseFloat(value));
+                        window.ttsEngine.speechRate = parseFloat(value);
+                        console.log(`[SettingsModule] Speed set to ${value} (event-driven)`);
                     }
                 },
                 default: () => String(this.config.get('tts.speeds.slow')),
@@ -78,9 +81,11 @@ class SettingsModule {
                     return Object.values(userDelays).includes(parseInt(value));
                 },
                 apply: (value) => {
-                    // AudioControls listens to 'setting:changed' event
-                    // No direct method call needed - event-driven architecture
-                    console.log(`[SettingsModule] Delay changed to ${value}ms (event-driven)`);
+                    // Set property directly in AudioControls
+                    if (window.audioControls) {
+                        window.audioControls.delay = parseInt(value);
+                        console.log(`[SettingsModule] Delay set to ${value}ms (event-driven)`);
+                    }
                 },
                 default: () => String(this.config.get('tts.delays.long')),
                 storageKey: 'delay',
@@ -112,8 +117,10 @@ class SettingsModule {
                     return value === 'auto' || this.isValidVoice(value);
                 },
                 apply: (value) => {
-                    if (window.voiceSelector) {
+                    if (window.voiceSelector && typeof window.voiceSelector.setPreferredVoice === 'function') {
                         window.voiceSelector.setPreferredVoice(value);
+                    } else {
+                        console.warn('⚠️ VoiceSelector not ready yet, voice setting deferred');
                     }
                 },
                 default: () => 'auto',
@@ -128,8 +135,10 @@ class SettingsModule {
                     return this.config.get('data.difficulties').includes(value);
                 },
                 apply: (value) => {
-                    if (window.pteVocabularyManager) {
+                    if (window.pteVocabularyManager && typeof window.pteVocabularyManager.setDifficulty === 'function') {
                         window.pteVocabularyManager.setDifficulty(value);
+                    } else {
+                        console.warn('⚠️ PTEVocabularyManager not ready yet, difficulty setting deferred');
                     }
                 },
                 default: () => 'all',
@@ -143,8 +152,10 @@ class SettingsModule {
                     return modes.some(m => m.id === value);
                 },
                 apply: async (value) => {
-                    if (window.pteVocabularyManager) {
+                    if (window.pteVocabularyManager && typeof window.pteVocabularyManager.setLearningMode === 'function') {
                         await window.pteVocabularyManager.setLearningMode(value);
+                    } else {
+                        console.warn('⚠️ PTEVocabularyManager not ready yet, learning mode setting deferred');
                     }
                 },
                 default: () => 'pte-fib-listening',
@@ -160,11 +171,27 @@ class SettingsModule {
                     return modes.some(m => m.id === value);
                 },
                 apply: (value) => {
+                    // Get current mode before changing
+                    const oldMode = window.currentPracticeMode;
+                    
+                    // Emit mode:changing event BEFORE the change (standardized from Config.js)
+                    const modeChangingEvent = window.appConfig.get('events.mode.practice.changing');
+                    this.eventBus.emit(modeChangingEvent, { 
+                        oldMode, 
+                        newMode: value,
+                        timestamp: Date.now()
+                    });
+                    
                     // Set global practice mode
                     window.currentPracticeMode = value;
                     
-                    // Emit mode changed event for UI updates
-                    this.eventBus.emit('practiceMode:changed', { mode: value });
+                    // Emit mode:changed event AFTER the change (standardized from Config.js)
+                    const modeChangedEvent = window.appConfig.get('events.mode.practice.changed');
+                    this.eventBus.emit(modeChangedEvent, { 
+                        mode: value,
+                        oldMode,
+                        timestamp: Date.now()
+                    });
                 },
                 default: () => 'vocabulary',
                 storageKey: 'practiceMode',
@@ -177,8 +204,9 @@ class SettingsModule {
                     return datasets.some(d => d.id === value);
                 },
                 apply: async (value) => {
-                    // Emit dataset changed event for loading
-                    this.eventBus.emit('practiceDataset:changed', { dataset: value });
+                    // Emit dataset changed event for loading (standardized from Config.js)
+                    const datasetChangedEvent = window.appConfig.get('events.dataset.practice.changed');
+                    this.eventBus.emit(datasetChangedEvent, { dataset: value });
                 },
                 default: () => 'pte-repeat-sentence',
                 storageKey: 'practiceDataset',
@@ -219,15 +247,18 @@ class SettingsModule {
                 this.storage.setItem(handler.storageKey, value);
             }
             
-            // 6. Emit success event
-            this.eventBus.emit('setting:changed', { key, value, timestamp: Date.now() });
+            // 6. Emit success event (standardized from Config.js)
+            const settingsChangedEvent = window.appConfig.get('events.settings.changed');
+            this.eventBus.emit(settingsChangedEvent, { key, value, timestamp: Date.now() });
             
             console.log(`✅ SettingsModule: Updated '${key}' = '${value}'`);
             return { success: true, key, value };
             
         } catch (error) {
             console.error(`❌ SettingsModule: Error updating '${key}':`, error);
-            this.eventBus.emit('setting:error', { key, value, error: error.message });
+            // Emit error event (standardized from Config.js)
+            const settingsErrorEvent = window.appConfig.get('events.settings.error');
+            this.eventBus.emit(settingsErrorEvent, { key, value, error: error.message });
             return { success: false, error: error.message, key, value };
         }
     }
@@ -320,11 +351,18 @@ class SettingsModule {
         for (const [key, value] of Object.entries(this.settings)) {
             const handler = this.handlers[key];
             if (handler && handler.apply) {
-                // Apply the setting (calls engine methods)
-                handler.apply(value);
+                try {
+                    // Apply the setting (calls engine methods)
+                    handler.apply(value);
+                    console.log(`[SettingsModule] ${key.charAt(0).toUpperCase() + key.slice(1)} set to ${value} (event-driven)`);
+                } catch (error) {
+                    console.warn(`⚠️ SettingsModule: Failed to apply '${key}' during initialization:`, error.message);
+                    // Continue with other settings even if one fails
+                }
                 
                 // Emit event so other modules can react
-                this.eventBus.emit('setting:changed', { key, value });
+                const settingsChangedEvent = window.appConfig.get('events.settings.changed');
+                this.eventBus.emit(settingsChangedEvent, { key, value });
             }
         }
         

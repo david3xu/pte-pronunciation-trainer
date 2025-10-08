@@ -7,6 +7,134 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+# Changelog
+
+All notable changes to the PTE Pronunciation Trainer will be documented in this file.
+
+## [2.4.2] - 2025-10-08
+
+### Fixed
+- **Play Button Not Working**: Updated UIController button event handlers to emit standardized Config.js events
+  - Start button now emits `events.audio.autoplay.start` instead of `audio:start`
+  - Pause button now emits `events.audio.autoplay.pause` instead of `audio:pause`
+  - Next/Prev buttons now emit `events.audio.navigate.next/prev` instead of `audio:next/prev`
+- **AudioControls Event Listeners**: Updated to use standardized Config.js event names
+  - Now listens to `events.settings.changed` instead of `setting:changed`
+  - All audio control events use Config.js registry
+- **Aggressive Auto-Loop Behavior**: Fixed infinite loop when vocabulary books complete
+  - `autoLoopToNextBook()` now STOPS auto-playing after changing book (was continuing)
+  - `restartCurrentDataset()` now STOPS auto-playing after restart (was continuing)
+  - User must press PLAY button again to continue (better UX, prevents unwanted playback)
+  - Prevents console spam with repeated book changes
+
+### Changed
+- Auto-loop behavior now requires explicit user action to continue playback
+- Status messages updated to indicate paused state after book/dataset completion
+
+## [2.4.1] - 2025-10-08
+
+### Fixed
+- **Module Initialization Order**: Fixed crash when SettingsModule loads before VoiceSelector/PTEVocabularyManager
+  - Added safety checks in all handler apply() methods
+  - voiceSelector.setPreferredVoice() now checked before calling
+  - pteVocabularyManager methods now checked before calling
+  - Wrapped loadSettings() apply calls in try-catch to prevent initialization failures
+  - Settings that fail to apply during initialization no longer crash the app
+- **Event Emission**: Fixed settings:changed event to use standardized Config.js event name
+
+### Changed
+- SettingsModule now gracefully handles missing dependencies during initialization
+- Deferred settings (voice, difficulty, learningMode) show warning but don't block startup
+
+## [2.4.0] - 2025-10-08
+
+### Added
+- **Event Taxonomy System**: Comprehensive event naming standardization
+  - Event registry in Config.js as single source of truth
+  - Consistent namespace pattern: `domain:action[:modifier]`
+  - 10 event categories: content, audio, tts, settings, mode, dataset, vocabulary, progress, voice, app
+- **Mode Change Lifecycle Events**: Added `mode:practice:changing` and `mode:practice:changed` events
+  - Emit before and after mode transitions for better state management
+  - Includes oldMode and newMode in event payload
+- **EVENT-TAXONOMY.md**: Complete documentation of event naming conventions and migration map
+
+### Changed
+- **Standardized Event Names**:
+  - `word:display` → `content:display` (unified display event)
+  - `tts:speakingStarted` → `tts:speaking:started` (consistent colon pattern)
+  - `tts:speakingCompleted` → `tts:speaking:completed`
+  - `tts:stopped` → `tts:speaking:stopped`
+  - `tts:rateChanged` → `tts:rate:changed`
+  - `tts:repeatModeChanged` → `tts:repeat:changed`
+  - `setting:*` → `settings:*` (plural form for consistency)
+  - `practice:modeChanged` → `mode:practice:changed`
+  - `practiceMode:changed` → `mode:practice:changed` (merged duplicates)
+  - `practiceDataset:changed` → `dataset:practice:changed`
+  - `settings:panelOpened` → `settings:panel:opened`
+  - `settings:panelClosed` → `settings:panel:closed`
+- Updated all event emitters to use Config.js event registry:
+  - TTSEngine.js: All TTS events now from Config.js
+  - AudioControls.js: Content display event standardized
+  - UIController.js: All event listeners use Config.js
+  - SettingsModule.js: Settings events + mode lifecycle events
+  - SettingsPanel.js: All panel and mode events standardized
+
+### Fixed
+- Event naming inconsistencies across modules
+- Hardcoded event strings replaced with Config.js references
+- Mode change events now properly emit before and after state changes
+
+### Documentation
+- Created EVENT-TAXONOMY.md with complete event catalog
+- Migration map for old → new event names
+- Usage guidelines and best practices
+- Event data payload standardization
+
+## [2.3.1] - 2025-10-08
+
+### 🔧 Refactoring v58 - Phase 1: Critical Fixes
+
+Systematic refactoring to unify display system, clean up legacy code, and improve architecture.
+
+### Added
+
+- **Unified Display Orchestrator** - New `displayCurrent()` method in UIController
+  - Single entry point for all display operations
+  - Automatic mode detection (vocabulary vs. practice modes)
+  - Routes to appropriate display method (`displayWord()` or `displayContent()`)
+  - Flexible data structure (accepts both `word` and `item` parameters)
+  - Maintains backward compatibility
+
+### Changed
+
+- **UIController.js** - Event handler improvements
+  - `word:display` event now uses unified `displayCurrent()` orchestrator
+  - `tts:speakingStarted` event properly handles both vocabulary and practice modes
+  - Cleaner mode separation and better event flow
+
+- **ProgressTracker.js** - Legacy code cleanup
+  - Replaced all `window.vocabularyManager` references with `window.pteVocabularyManager`
+  - Consistent manager usage throughout codebase
+  - Updated code comments for clarity
+
+### Fixed
+
+- **Mode-Aware Display** - Display system now properly handles mode switches
+  - Vocabulary mode → Uses `displayWord()` correctly
+  - Practice modes (RS/ASQ/WFD) → Uses `displayContent()` correctly
+  - No more display confusion when switching between modes
+
+### Technical Details
+
+- **Files Modified**: 3 files, ~28 lines changed
+- **Code Quality**: Reduced coupling, improved separation of concerns
+- **Backward Compatible**: All existing functionality preserved
+- **Service Worker**: Version v58
+
+**See**: `REFACTORING-v58.md` for complete implementation details
+
+---
+
 ## [2.1.0] - 2025-10-08
 
 ### 🎉 Complete Vocabulary Library & Auto-Loop

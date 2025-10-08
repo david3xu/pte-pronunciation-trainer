@@ -16,13 +16,13 @@ class ProgressTracker {
         if (progressElement) {
             // Show dialogue ID and TOKEN progress within the dialogue (e.g., 70245 (3/56))
             if (currentWord && currentWord.conversationId) {
-                // Use VocabularyManager's complete dataset
-                const vocabularyManager = window.vocabularyManager;
+                // Use PTEVocabularyManager's complete dataset
+                const vocabularyManager = window.pteVocabularyManager;
                 let totalDialogues = 0;
                 let tokensInDialogue = [];
 
                 if (vocabularyManager && vocabularyManager.extractedVocabulary) {
-                    // Use complete dataset from VocabularyManager
+                    // Use complete dataset from PTEVocabularyManager
                     const allTokens = vocabularyManager.extractedVocabulary;
                     const allDialogueIds = [...new Set(allTokens.map(item => item.conversationId))].sort((a, b) => parseInt(b) - parseInt(a));
                     totalDialogues = allDialogueIds.length;

@@ -83,9 +83,10 @@ class SettingsPanel {
                 }
             }
             
-            // Emit mode change event
-            console.log(`[SettingsPanel] 📤 Emitting practice:modeChanged event with mode: ${mode}`);
-            window.eventBus.emit('practice:modeChanged', { mode });
+            // Emit mode change event (standardized from Config.js)
+            console.log(`[SettingsPanel] 📤 Emitting mode:practice:changed event with mode: ${mode}`);
+            const modeChangedEvent = window.appConfig.get('events.mode.practice.changed');
+            window.eventBus.emit(modeChangedEvent, { mode });
             
             // Save preference
             this.saveSetting('practiceMode', mode);
@@ -151,8 +152,9 @@ class SettingsPanel {
             settingsPanel.classList.remove('collapsed');
             this.isOpen = true;
 
-            // Emit panel opened event
-            window.eventBus.emit('settings:panelOpened', {
+            // Emit panel opened event (standardized from Config.js)
+            const panelOpenedEvent = window.appConfig.get('events.settings.panel.opened');
+            window.eventBus.emit(panelOpenedEvent, {
                 timestamp: new Date().toISOString()
             });
         }
@@ -165,8 +167,9 @@ class SettingsPanel {
             settingsPanel.classList.add('collapsed');
             this.isOpen = false;
 
-            // Emit panel closed event
-            window.eventBus.emit('settings:panelClosed', {
+            // Emit panel closed event (standardized from Config.js)
+            const panelClosedEvent = window.appConfig.get('events.settings.panel.closed');
+            window.eventBus.emit(panelClosedEvent, {
                 timestamp: new Date().toISOString()
             });
         }
@@ -209,8 +212,9 @@ class SettingsPanel {
 
         URL.revokeObjectURL(url);
 
-        // Emit export event
-        window.eventBus.emit('settings:exported', {
+        // Emit export event (standardized from Config.js)
+        const settingsExportedEvent = window.appConfig.get('events.settings.exported');
+        window.eventBus.emit(settingsExportedEvent, {
             settingsCount: Object.keys(settings).length - 2, // Exclude exportDate and version
             timestamp: new Date().toISOString()
         });
@@ -235,8 +239,9 @@ class SettingsPanel {
             const result = window.settingsModule.importSettings(settings);
 
             if (result) {
-                // Emit import event
-                window.eventBus.emit('settings:imported', {
+                // Emit import event (standardized from Config.js)
+                const settingsImportedEvent = window.appConfig.get('events.settings.imported');
+                window.eventBus.emit(settingsImportedEvent, {
                     settingsCount: Object.keys(settings).length - 2,
                     timestamp: new Date().toISOString()
                 });
@@ -267,8 +272,9 @@ class SettingsPanel {
      * Save a setting value using SettingsModule events
      */
     saveSetting(key, value) {
-        // Emit event to request setting change
-        window.eventBus.emit('setting:request-change', { key, value });
+        // Emit event to request setting change (standardized from Config.js)
+        const settingsRequestChangeEvent = window.appConfig.get('events.settings.requestChange');
+        window.eventBus.emit(settingsRequestChangeEvent, { key, value });
     }
 
 }

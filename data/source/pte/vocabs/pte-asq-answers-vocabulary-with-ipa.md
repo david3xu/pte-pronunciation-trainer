@@ -1,6 +1,6 @@
 # PTE ASQ Answers Vocabulary with IPA
 
-This collection lists answers from the PTE ASQ dataset in the exact original order. The format matches existing PTE vocabulary books: two IPA variants (UK/US) and simplified phonetics. IPA will be curated manually.
+This collection lists answers from the PTE ASQ dataset in the exact original order. IPA fields are provided as placeholders to be curated.
 
 ### ASQ Answers
 
@@ -8,38 +8,36 @@ This collection lists answers from the PTE ASQ dataset in the exact original ord
 
 **全部**
 
-1. n. pension | /—/ — sounds like **—** | /—/ — sounds like **—**
-2. n. dormitory | /—/ — sounds like **—** | /—/ — sounds like **—**
-3. n. bronze | /—/ — sounds like **—** | /—/ — sounds like **—**
-4. n. mentor | /—/ — sounds like **—** | /—/ — sounds like **—**
-5. n. consultant | /—/ — sounds like **—** | /—/ — sounds like **—**
-6. n. astronomer | /—/ — sounds like **—** | /—/ — sounds like **—**
-7. n. sun | /—/ — sounds like **—** | /—/ — sounds like **—**
-8. n. recycling | /—/ — sounds like **—** | /—/ — sounds like **—**
-9. n. engineer | /—/ — sounds like **—** | /—/ — sounds like **—**
-10. n. prison | /—/ — sounds like **—** | /—/ — sounds like **—**
-11. n. metamorphosis | /—/ — sounds like **—** | /—/ — sounds like **—**
-12. n. pedestrian | /—/ — sounds like **—** | /—/ — sounds like **—**
-13. n. thesaurus | /—/ — sounds like **—** | /—/ — sounds like **—**
-14. n. radiologist | /—/ — sounds like **—** | /—/ — sounds like **—**
-15. n. club | /—/ — sounds like **—** | /—/ — sounds like **—**
-16. num. twelve | /—/ — sounds like **—** | /—/ — sounds like **—**
-17. adv. backward | /—/ — sounds like **—** | /—/ — sounds like **—**
-18. n. carrot | /—/ — sounds like **—** | /—/ — sounds like **—**
-19. n. bus stop | /—/ — sounds like **—** | /—/ — sounds like **—**
-20. n. sight | /—/ — sounds like **—** | /—/ — sounds like **—**
-21. n. cloud | /—/ — sounds like **—** | /—/ — sounds like **—**
-22. n. menu | /—/ — sounds like **—** | /—/ — sounds like **—**
-23. n. counterfeit | /—/ — sounds like **—** | /—/ — sounds like **—**
-24. n. boycott | /—/ — sounds like **—** | /—/ — sounds like **—**
-25. n. unicorn | /—/ — sounds like **—** | /—/ — sounds like **—**
-26. n. flock | /—/ — sounds like **—** | /—/ — sounds like **—**
-27. n. Milky Way | /—/ — sounds like **—** | /—/ — sounds like **—**
-28. n. confidence | /—/ — sounds like **—** | /—/ — sounds like **—**
-29. n. abundance | /—/ — sounds like **—** | /—/ — sounds like **—**
-30. n. meals | /—/ — sounds like **—** | /—/ — sounds like **—**
-
-... (continue in original order from `data/source/pte/asq/pte-answer-short-question.md`)
+1. n. pension | /ˈpenʃən/ — sounds like **PEN-shun** | /ˈpɛnʃən/ — sounds like **PEN-shun**
+2. n. dormitory | /ˈdɔːmɪtəri/ — sounds like **DAW-mi-tuh-ree** | /ˈdɔːrmɪˌtɔːri/ — sounds like **DOR-mi-tor-ee**
+3. n. bronze | /brɒnz/ — sounds like **BRONZ** | /brɑːnz/ — sounds like **BRAHNZ**
+4. n. mentor | /ˈmentɔː/ — sounds like **MEN-taw** | /ˈmɛntɔːr/ — sounds like **MEN-tor**
+5. n. consultant | /kənˈsʌltənt/ — sounds like **kun-SUL-tunt** | /kənˈsʌltənt/ — sounds like **kun-SUL-tunt**
+6. n. astronomer | /əˈstrɒnəmə/ — sounds like **uh-STRON-uh-muh** | /əˈstrɑːnəmər/ — sounds like **uh-STRAH-nuh-mer**
+7. n. sun | /sʌn/ — sounds like **SUN** | /sʌn/ — sounds like **SUN**
+8. n. recycling | /ˌriːˈsaɪklɪŋ/ — sounds like **ree-SY-kling** | /ˌriːˈsaɪklɪŋ/ — sounds like **ree-SY-kling**
+9. n. engineer | /ˌendʒɪˈnɪə/ — sounds like **en-ji-NEER** | /ˌendʒəˈnɪr/ — sounds like **en-juh-NEER**
+10. n. prison | /ˈprɪzən/ — sounds like **PRIZ-un** | /ˈprɪzən/ — sounds like **PRIZ-un**
+11. n. metamorphosis | /ˌmetəˈmɔːfəsɪs/ — sounds like **met-uh-MAW-fuh-sis** | /ˌmɛtəˈmɔːrfəsɪs/ — sounds like **met-uh-MOR-fuh-sis**
+12. n. pedestrian | /pəˈdestriən/ — sounds like **puh-DES-tree-un** | /pəˈdɛstriən/ — sounds like **puh-DES-tree-un**
+13. n. thesaurus | /θɪˈsɔːrəs/ — sounds like **thi-SAW-rus** | /θɪˈsɔːrəs/ — sounds like **thi-SOR-us**
+14. n. radiologist | /ˌreɪdiˈɒlədʒɪst/ — sounds like **ray-dee-OL-uh-jist** | /ˌreɪdiˈɑːlədʒɪst/ — sounds like **ray-dee-AH-luh-jist**
+15. n. club | /klʌb/ — sounds like **KLUB** | /klʌb/ — sounds like **KLUB**
+16. num. twelve | /twelv/ — sounds like **TWELV** | /twelv/ — sounds like **TWELV**
+17. adv. backward | /ˈbækwəd/ — sounds like **BAK-wud** | /ˈbækwɚd/ — sounds like **BAK-werd**
+18. n. carrot | /ˈkærət/ — sounds like **KAR-ut** | /ˈkærət/ — sounds like **KAR-ut**
+19. n. bus stop | /ˈbʌs ˌstɒp/ — sounds like **BUS stop** | /ˈbʌs ˌstɑːp/ — sounds like **BUS stap**
+20. n. sight | /saɪt/ — sounds like **SYT** | /saɪt/ — sounds like **SYT**
+21. n. cloud | /klaʊd/ — sounds like **KLOUD** | /klaʊd/ — sounds like **KLOUD**
+22. n. menu | /ˈmenjuː/ — sounds like **MEN-yoo** | /ˈmɛnju/ — sounds like **MEN-yoo**
+23. n. counterfeit | /ˈkaʊntəfɪt/ — sounds like **KOWN-tuh-fit** | /ˈkaʊntɚfɪt/ — sounds like **KOWN-ter-fit**
+24. n. boycott | /ˈbɔɪkɒt/ — sounds like **BOY-kot** | /ˈbɔɪkɑːt/ — sounds like **BOY-kaht**
+25. n. unicorn | /ˈjuːnɪkɔːn/ — sounds like **YOO-ni-kawn** | /ˈjuːnɪkɔːrn/ — sounds like **YOO-ni-kawn**
+26. n. flock | /flɒk/ — sounds like **FLOK** | /flɑːk/ — sounds like **FLAHK**
+27. n. Milky Way | /ˌmɪlki ˈweɪ/ — sounds like **MIL-kee WAY** | /ˌmɪlki ˈweɪ/ — sounds like **MIL-kee WAY**
+28. n. confidence | /ˈkɒnfɪdəns/ — sounds like **KON-fi-duns** | /ˈkɑːnfɪdəns/ — sounds like **KAHN-fi-duns**
+29. n. abundance | /əˈbʌndəns/ — sounds like **uh-BUN-duns** | /əˈbʌndəns/ — sounds like **uh-BUN-duns**
+30. n. meals | /miːlz/ — sounds like **MEELZ** | /miːlz/ — sounds like **MEELZ**
 31. Neighbor | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
 32. Spring | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
 33. Uniform | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**

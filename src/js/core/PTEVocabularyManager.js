@@ -99,7 +99,7 @@ class PTEVocabularyManager {
   }
 
   /**
-   * Dynamically load a dataset by mode
+   * Dynamically load a dataset by mode with retry logic
    */
   async loadDataset(mode) {
     try {
@@ -111,14 +111,37 @@ class PTEVocabularyManager {
         const url = byMode[mode] + cacheBuster;
         console.log(`[PTEVocabularyManager] Loading dataset for mode: ${mode} from ${url}`);
         
-        const response = await fetch(url);
-        if (!response.ok) {
-          throw new Error(`Failed to fetch ${mode} dataset: ${response.status} ${response.statusText}`);
+        // Retry logic with exponential backoff for network failures
+        const maxRetries = 3;
+        const retryDelays = [1000, 2000, 4000]; // 1s, 2s, 4s
+        let lastError = null;
+        
+        for (let attempt = 0; attempt <= maxRetries; attempt++) {
+          try {
+            const response = await fetch(url);
+            if (!response.ok) {
+              throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+            
+            const dataset = await response.json();
+            this.datasets.set(mode, dataset);
+            console.log(`[PTEVocabularyManager] ✅ Loaded ${mode}: ${dataset.vocabulary?.length || 0} words${attempt > 0 ? ` (retry ${attempt})` : ''}`);
+            return; // Success - exit function
+          } catch (fetchError) {
+            lastError = fetchError;
+            
+            // Don't retry if it's the last attempt
+            if (attempt < maxRetries) {
+              const delay = retryDelays[attempt];
+              console.warn(`[PTEVocabularyManager] ⚠️ Attempt ${attempt + 1}/${maxRetries + 1} failed: ${fetchError.message}. Retrying in ${delay}ms...`);
+              await new Promise(resolve => setTimeout(resolve, delay));
+            }
+          }
         }
         
-        const dataset = await response.json();
-        this.datasets.set(mode, dataset);
-        console.log(`[PTEVocabularyManager] ✅ Loaded ${mode}: ${dataset.vocabulary?.length || 0} words`);
+        // All retries failed
+        throw new Error(`Failed to fetch ${mode} dataset after ${maxRetries + 1} attempts: ${lastError.message}`);
+        
       } else {
         const errorMsg = `No path configured for mode: ${mode}`;
         console.warn(`[PTEVocabularyManager] ⚠️ ${errorMsg}`);

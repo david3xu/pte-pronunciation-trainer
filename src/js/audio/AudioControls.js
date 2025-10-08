@@ -14,11 +14,29 @@ class AudioControls {
     }
 
     /**
-     * Attach event listeners for settings changes
+     * Attach event listeners for settings changes and audio control events
      * @private
      */
     _attachEventListeners() {
         window.eventBus.on('setting:changed', this._handleSettingChange.bind(this));
+        
+        // Audio control events for event-driven architecture
+        window.eventBus.on('audio:start', () => this.startAutoPlay());
+        window.eventBus.on('audio:pause', () => this.pauseAutoPlay());
+        window.eventBus.on('audio:next', ({ mode }) => {
+            if (mode && mode !== 'vocabulary') {
+                this.nextItem();
+            } else {
+                this.nextWord();
+            }
+        });
+        window.eventBus.on('audio:prev', ({ mode }) => {
+            if (mode && mode !== 'vocabulary') {
+                this.prevItem();
+            } else {
+                this.previousWord();
+            }
+        });
     }
 
     /**

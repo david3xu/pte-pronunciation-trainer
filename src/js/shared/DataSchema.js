@@ -231,8 +231,8 @@ class DataSchema {
         // If category is already set and valid for PTE, use it
         const pteCategories = [
             'pte-beginner', 'pte-intermediate', 'pte-advanced', 'pte-must-know',
-            'pte-fib-listening', 'pte-ra-vocabulary', 'pte-rs-vocabulary',
-            'pte-wfd-vocabulary', 'pte-reading-fib', 'pte-reading-fib-drag'
+            'pte-fib-listening', 'pte-ra', 'pte-rs-vocab',
+            'pte-wfd-vocab', 'pte-reading-fib', 'pte-reading-fib-drag'
         ];
         
         if (category && pteCategories.includes(category)) {

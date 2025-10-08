@@ -15,11 +15,11 @@ class TTSEngine {
         this.speechRate = null; // Will be set by SettingsModule
         this.targetRepeats = null; // Will be set by SettingsModule via AudioControls
         
-        // Initialize background audio ONCE in constructor
-        this.enableBackgroundAudio();
-        
-        // Listen to settings changes
+        // Initialize events first - don't start audio context yet
         this._attachEventListeners();
+
+        // We'll initialize AudioContext on first user interaction
+        this.audioContextInitialized = false;
     }
 
     /**
@@ -236,6 +236,13 @@ class TTSEngine {
     speak(text, lang = null, customRate = null) {
         // Use configured language if not specified
         const language = lang || this.config.get('tts.language.default');
+
+        // Initialize AudioContext on first speech attempt (user interaction)
+        if (!this.audioContextInitialized) {
+            this.enableBackgroundAudio();
+            this.audioContextInitialized = true;
+        }
+
         return new Promise((resolve, reject) => {
             // Check if we're on iOS and should use HTML5 Audio fallback
             const isIOS = window.app && window.app.isMobileDevice &&

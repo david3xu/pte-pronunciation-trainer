@@ -250,25 +250,35 @@ class PTEVocabularyTrainer {
       console.log('[PTEApp] Waiting for voices to load...');
       
       // Wait for voiceschanged event with 3 second timeout
+      let voicesLoaded = false;
       await Promise.race([
         new Promise(resolve => {
           speechSynthesis.addEventListener('voiceschanged', () => {
-            console.log('[PTEApp] Voices loaded:', speechSynthesis.getVoices().length);
+            voicesLoaded = true;
+            console.log('[PTEApp] ✅ Voices loaded:', speechSynthesis.getVoices().length);
             resolve();
           }, { once: true });
         }),
         new Promise(resolve => setTimeout(() => {
-          console.warn('[PTEApp] Voice loading timeout after 3s');
+          if (!voicesLoaded) {
+            console.warn('[PTEApp] ⚠️  Voice loading timeout after 3s');
+          }
           resolve();
         }, 3000))
       ]);
+      
+      // Check if we have voices after waiting
+      const voiceCount = speechSynthesis.getVoices().length;
+      if (voiceCount === 0) {
+        console.error('[PTEApp] ❌ No voices available after initialization');
+      }
     } else {
-      console.log('[PTEApp] Voices already available:', speechSynthesis.getVoices().length);
+      console.log('[PTEApp] ✅ Voices already available:', speechSynthesis.getVoices().length);
     }
 
     // Voice selector is ready (no initialization needed)
     if (window.voiceSelector) {
-      console.log('[PTEApp] VoiceSelector ready');
+      console.log('[PTEApp] ✅ VoiceSelector ready');
     }
   }
 

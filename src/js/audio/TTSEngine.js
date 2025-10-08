@@ -136,7 +136,7 @@ class TTSEngine {
         }
 
         try {
-            this.currentRepeatCount = repeatCount;
+            this.currentRepeatCount = repeatIndex;
 
             // Clean text for TTS
             const cleanText = this.cleanTextForTTS(word.english);

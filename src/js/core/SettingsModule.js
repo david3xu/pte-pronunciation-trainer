@@ -78,9 +78,9 @@ class SettingsModule {
                     return Object.values(userDelays).includes(parseInt(value));
                 },
                 apply: (value) => {
-                    if (window.audioControls) {
-                        window.audioControls.setDelay(parseInt(value));
-                    }
+                    // AudioControls listens to 'setting:changed' event
+                    // No direct method call needed - event-driven architecture
+                    console.log(`[SettingsModule] Delay changed to ${value}ms (event-driven)`);
                 },
                 default: () => String(this.config.get('tts.delays.long')),
                 storageKey: 'delay',
@@ -92,9 +92,11 @@ class SettingsModule {
                     return this.config.get('tts.repeatModes').includes(value);
                 },
                 apply: (value) => {
-                    if (window.audioControls) {
-                        window.audioControls.setRepeatMode(value);
-                    }
+                    // AudioControls listens to 'setting:changed' event
+                    // No direct method call needed - event-driven architecture
+                    console.log(`[SettingsModule] Repeat mode changed to ${value} (event-driven)`);
+                    
+                    // Reset repeat count when mode changes
                     if (window.ttsEngine) {
                         window.ttsEngine.currentRepeatCount = 0;
                     }

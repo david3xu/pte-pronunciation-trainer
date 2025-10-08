@@ -112,14 +112,14 @@ class PTEVocabularyTrainer {
 
     // Hide mobile loading indicator
     this.hideMobileLoadingIndicator();
-    
+
     const initTime = Date.now() - initStart;
     console.log(`✅ PTEApp: All modules initialized successfully in ${initTime}ms`);
   }
 
   async initializeSettingsModule() {
     // Initialize SettingsModule for event-driven settings architecture
-    if (window.SettingsModule) {
+    if (typeof SettingsModule !== 'undefined') {
       try {
         window.settingsModule = new SettingsModule(
           window.appConfig,
@@ -127,7 +127,7 @@ class PTEVocabularyTrainer {
           window.storage
         );
         console.log('✅ PTEApp: SettingsModule initialized');
-        
+
         // Validate SettingsModule is ready
         if (!window.settingsModule.settings) {
           throw new Error('SettingsModule initialized but settings object is missing');
@@ -211,10 +211,10 @@ class PTEVocabularyTrainer {
         const datasetManager = new DatasetManager();
         const config = window.appConfig || new AppConfig();
         await datasetManager.initialize(config);
-        
+
         // Make globally available
         window.datasetManager = datasetManager;
-        
+
         console.log('✅ DatasetManager initialized');
       } catch (error) {
         console.warn('⚠️ DatasetManager initialization failed:', error);

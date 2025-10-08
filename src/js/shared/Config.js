@@ -244,7 +244,7 @@ class AppConfig {
                     { id: 'pte-write-from-dictation', label: '✍️ Write From Dictation', itemCount: 1195, type: 'wfd' }
                 ],
                 difficulties: ['all', 'normal', 'hard', 'easy'], // All PTE terms with mixed difficulties
-                
+
                 // Dataset file registry - single source of truth for all dataset files
                 datasetFiles: {
                     'repeat-sentence': { file: 'pte-repeat-sentence-dataset.json', type: 'sentence' },
@@ -392,7 +392,6 @@ class AppConfig {
                     'src/js/utils/EventBus.js',
                     'src/js/utils/Storage.js',
                     'src/js/utils/CacheMigration.js',
-                    'src/js/utils/StateTest.js',
                     'src/js/data/extractors/PTETermsExtractor.js',
                     'src/js/core/SettingsModule.js',
                     'src/js/core/PTEVocabularyManager.js',

@@ -308,22 +308,57 @@ class SettingsModule {
     
     /**
      * Get available options for a setting (for dropdown population)
-     * Uses Config.js data directly
+     * Converts Config.js data to {id, label} format for dropdowns
      */
     getAvailableOptions(key) {
-        // Map setting keys to Config data paths
+        // For speeds and delays, convert object to array of {id, label}
+        if (key === 'speed') {
+            const speeds = this.config.get('tts.speeds');
+            return Object.keys(speeds).map(key => ({
+                id: speeds[key].toString(),
+                label: `${key.charAt(0).toUpperCase() + key.slice(1)} (${speeds[key]}x)`
+            }));
+        }
+        
+        if (key === 'delay') {
+            const delays = this.config.get('tts.delays');
+            // Only include user-facing delays (short, normal, long)
+            const userDelays = { short: delays.short, normal: delays.normal, long: delays.long };
+            return Object.keys(userDelays).map(key => ({
+                id: userDelays[key].toString(),
+                label: `${key.charAt(0).toUpperCase() + key.slice(1)} (${userDelays[key] / 1000}s)`
+            }));
+        }
+        
+        if (key === 'repeat') {
+            const repeatModes = this.config.get('tts.repeatModes');
+            return repeatModes.map(mode => ({
+                id: mode,
+                label: mode.charAt(0).toUpperCase() + mode.slice(1)
+            }));
+        }
+        
+        if (key === 'voice') {
+            // Voices are populated dynamically from browser TTS
+            return [];
+        }
+        
+        // For other settings, get arrays directly from config
         const optionsMap = {
-            speed: this.config.data.speeds,
-            delay: this.config.data.delays,
-            repeat: this.config.data.repeatModes,
-            voice: this.config.data.voices,
-            difficulty: this.config.data.difficulties,
-            learningMode: this.config.data.learningModes,
-            practiceMode: this.config.data.practiceModes,
-            practiceDataset: this.config.data.practiceDatasets
+            difficulty: this.config.get('data.dropdowns.difficulties'),
+            learningMode: this.config.get('data.dropdowns.learningModes'),
+            practiceMode: this.config.get('data.dropdowns.practiceModes'),
+            practiceDataset: this.config.get('data.dropdowns.practiceDatasets')
         };
         
-        return optionsMap[key] || [];
+        // If it's already in {id, label} format, return as-is
+        // If it's a simple array, convert to {id, label}
+        const options = optionsMap[key] || [];
+        if (Array.isArray(options) && options.length > 0 && typeof options[0] === 'string') {
+            return options.map(opt => ({ id: opt, label: opt }));
+        }
+        
+        return options;
     }
     
     /**

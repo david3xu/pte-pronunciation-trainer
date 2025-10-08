@@ -31,7 +31,7 @@ graph TB
     subgraph "🎨 Application Layer"
         APP[PTEApp.js<br/>Main Coordinator]
         VOCAB[PTEVocabularyManager.js<br/>Data Management]
-        SETTINGS[SettingsManager.js<br/>Settings Logic]
+        SETTINGS[SettingsModule.js<br/>Event-Driven Settings]
         UI[UIController.js<br/>Display & Interaction]
         TTS[TTSEngine.js<br/>Speech Synthesis]
         PROGRESS[ProgressTracker.js<br/>Learning Progress]
@@ -128,46 +128,66 @@ class PTEVocabularyManager {
 
 ---
 
-### **3. SettingsManager.js - Settings Management**
+### **3. SettingsModule.js - Event-Driven Settings Management**
 
-**Purpose**: Centralized settings management with dependency tracking
+**Purpose**: Centralized settings management with event-driven architecture and handler registry pattern
 
 **Responsibilities**:
-- Load/save user settings
-- Manage setting dependencies (e.g., TTS voice → speed limits)
-- Validate setting values
-- Notify components of setting changes
-- Provide settings UI bindings
+- Manage 8 user settings with validation
+- Event-driven communication (no direct method calls)
+- Handler registry pattern for extensibility
+- Persist settings to localStorage
+- Provide dropdown options from Config.js
 
 **Architecture**:
 ```javascript
-class SettingsManager {
-  // Core Settings
-  learningMode: string          // 'vocabulary', 'repeat-sentence', etc.
-  ttsVoice: string             // Selected TTS voice
-  speechRate: number           // TTS playback speed
-  autoPlay: boolean            // Auto-play pronunciation
-  showTranslation: boolean     // Display Chinese translation
-  showIPA: boolean             // Display IPA notation
+class SettingsModule {
+  // Handler Registry (8 settings)
+  handlers = {
+    speed: { validate, apply, default: 1.0 },
+    delay: { validate, apply, default: 3000 },
+    repeat: { validate, apply, default: 0 },
+    voice: { validate, apply, default: 'auto' },
+    difficulty: { validate, apply, default: 'all' },
+    learningMode: { validate, apply, default: 'pte-fib-listening' },
+    practiceMode: { validate, apply, default: 'vocabulary' },
+    practiceDataset: { validate, apply, default: 'combined' }
+  }
   
-  // Methods
-  getSetting(key)              // Get setting value
-  setSetting(key, value)       // Update setting (with validation)
-  resetToDefaults()            // Reset all settings
+  // Event-Driven API (RECOMMENDED)
+  // Listen: 'setting:request-change' → validate → apply → persist → emit 'setting:changed'
+  
+  // Direct API (for reading only)
+  getSetting(key)              // Get current value
+  getAllSettings()             // Get all settings
+  getAvailableOptions(key)     // Get dropdown options
+  resetSettings()              // Reset to defaults
   exportSettings()             // Export to JSON
   importSettings(json)         // Import from JSON
 }
 ```
 
-**Setting Dependencies**:
-- `ttsVoice` changes → Reset `speechRate` to safe range
-- `learningMode` changes → Reload vocabulary dataset
-- `autoPlay` changes → Update UI button states
+**Event-Driven Flow**:
+```
+UI Change → EventBus.emit('setting:request-change')
+         → SettingsModule.validate()
+         → SettingsModule.apply()
+         → SettingsModule.persist()
+         → EventBus.emit('setting:changed')
+         → Engines listen and update
+```
+
+**Handler Pattern**:
+Each setting has three methods:
+- `validate(value)` - Validates and transforms value
+- `apply(value)` - Applies value to system (logs, etc.)
+- `default` - Default value
 
 **Events Emitted**:
-- `settings:changed` - Any setting updated
-- `settings:voice-changed` - TTS voice changed
-- `settings:mode-changed` - Learning mode changed
+- `setting:changed` - {key, value, previous} - Any setting updated
+
+**Events Listened**:
+- `setting:request-change` - {key, value} - Request to change setting
 
 ---
 
@@ -438,47 +458,72 @@ graph LR
 ### **Settings Hierarchy**
 
 ```
-Config.js (Defaults)
+Config.js (Static Configuration)
     ↓
-StateManager (Persisted User Settings)
+Storage (localStorage Persistence)
     ↓
-SettingsManager (Runtime Settings)
+SettingsModule (Event-Driven Runtime)
     ↓
-Components (Use Settings)
+EventBus (Publish/Subscribe)
+    ↓
+Engines (Listen & Update)
 ```
 
 ### **Setting Categories**
 
 1. **Learning Settings**
-   - `learningMode`: Which dataset to use
-   - `difficulty`: Filter by difficulty level
-   - `category`: Filter by category
+   - `learningMode`: Which vocabulary book to use
+   - `difficulty`: Filter by difficulty level (all/easy/medium/hard/advanced)
+   - `practiceMode`: Practice type (vocabulary/rs/asq/wfd)
+   - `practiceDataset`: Dataset selection (2024/2025/combined)
 
-2. **TTS Settings**
-   - `ttsVoice`: Selected voice
-   - `speechRate`: Playback speed (0.5 - 2.0)
-   - `pitch`: Voice pitch (0.5 - 2.0)
-   - `volume`: Playback volume (0.0 - 1.0)
+2. **Audio Settings**
+   - `speed`: Speech rate (0.6 - 1.2)
+   - `delay`: Pause between words (1000 - 5000ms, default: 3000ms)
+   - `repeat`: Repeat count (0 - Infinity)
+   - `voice`: TTS voice selection (auto/specific voice)
 
-3. **Display Settings**
-   - `showTranslation`: Show Chinese translation
-   - `showIPA`: Show IPA notation
-   - `showPhonetic`: Show phonetic description
-   - `fontSize`: Text size
+### **Event-Driven Setting Changes**
 
-4. **Behavior Settings**
-   - `autoPlay`: Auto-play pronunciation
-   - `autoAdvance`: Move to next word after practice
-   - `repeatCount`: Number of times to repeat
-
-### **Setting Dependencies**
-
-**Example**: Voice change resets speech rate
+**Example**: Change speed setting via events
 ```javascript
-// When voice changes
-settingsManager.setSetting('ttsVoice', newVoice);
+// ✅ CORRECT: Request setting change via event
+window.eventBus.emit('setting:request-change', {
+    key: 'speed',
+    value: 0.8
+});
 
-// SettingsManager automatically:
+// SettingsModule automatically:
+// 1. Validates value (0.6 - 1.2)
+// 2. Applies value (logs change)
+// 3. Persists to localStorage
+// 4. Emits 'setting:changed' event
+
+// ✅ Engines listen and react
+class TTSEngine {
+    constructor() {
+        window.eventBus.on('setting:changed', this._handleSettingChange.bind(this));
+    }
+    
+    _handleSettingChange({key, value}) {
+        if (key === 'speed') {
+            console.log('[TTSEngine] Speed changed to', value);
+            this._setSpeechRate(value);
+        }
+    }
+}
+```
+
+**Example**: Change difficulty setting
+```javascript
+// Request difficulty change
+window.eventBus.emit('setting:request-change', {
+    key: 'difficulty',
+    value: 'advanced'
+});
+
+// PTEVocabularyManager listens and filters words
+// UI updates to show only advanced words
 1. Validates voice exists
 2. Resets speechRate to safe default for that voice
 3. Emits 'settings:voice-changed' event
@@ -556,7 +601,7 @@ build: {
     'src/js/utils/StateManager.js',
     'src/js/core/PTEApp.js',
     'src/js/core/PTEVocabularyManager.js',
-    'src/js/core/SettingsManager.js',
+    'src/js/core/SettingsModule.js',
     'src/js/core/ProgressTracker.js',
     'src/js/ui/UIController.js',
     'src/js/ui/SettingsPanel.js',
@@ -1053,8 +1098,11 @@ class SettingsPanel {
           datasetSelect.value = mode; // 'rs', 'asq', or 'wfd'
         }
         
-        // Save and emit event
-        window.settingsManager.updateSetting('practiceMode', mode);
+        // Save via event (event-driven architecture)
+        window.eventBus.emit('setting:request-change', {
+            key: 'practiceMode',
+            value: mode
+        });
         window.eventBus.emit('practice:modeChanged', { mode });
       });
     }

@@ -1565,8 +1565,8 @@ Co-words
 1559. adj. friendly | /ˈfrendli/ — sounds like **FREND-lee** | /ˈfrɛndli/ — sounds like **FREND-lee**
 1560. v. share | /ʃeə/ — sounds like **SHAIR** | /ʃɛr/ — sounds like **SHAIR**
 1561. n. sector | /ˈsektə/ — sounds like **SEK-tuh** | /ˈsɛktər/ — sounds like **SEK-ter**
-1562. n. warming | /ˈwɔːmɪŋ/ — sounds like **WAW-ming** | /ˈwɔrmɪŋ/ — sounds like **WOR-ming**
-1563. n. hiring | /ˈhaɪərɪŋ/ — sounds like **HY-uh-ring** | /ˈhaɪrɪŋ/ — sounds like **HYR-ing**
+1562. v. warming | /ˈwɔːmɪŋ/ — sounds like **WAW-ming** | /ˈwɔrmɪŋ/ — sounds like **WOR-ming**
+1563. v. hiring | /ˈhaɪərɪŋ/ — sounds like **HY-uh-ring** | /ˈhaɪrɪŋ/ — sounds like **HYR-ing**
 1564. n. asset | /ˈæset/ — sounds like **AS-set** | /ˈæsɛt/ — sounds like **AS-set**
 1565. adj. hot | /hɒt/ — sounds like **HOT** | /hɑt/ — sounds like **HAHT**
 1566. n. cycle | /ˈsaɪkəl/ — sounds like **SY-kul** | /ˈsaɪkəl/ — sounds like **SY-kəl**
@@ -1634,7 +1634,7 @@ Co-words
 1628. n. bird | /bɜːd/ — sounds like **BERD** | /bɝːd/ — sounds like **BERD**
 1629. adj. statistical | /stəˈtɪstɪkəl/ — sounds like **stuh-TIS-ti-kul** | /stəˈtɪstɪkəl/ — sounds like **stuh-TIS-ti-kəl**
 1630. n. personality | /ˌpɜːsəˈnæləti/ — sounds like **PER-suh-NAL-uh-tee** | /ˌpɝːsəˈnæləti/ — sounds like **PER-suh-NAL-ə-tee**
-1631. n. funding | /ˈfʌndɪŋ/ — sounds like **FUN-ding** | /ˈfʌndɪŋ/ — sounds like **FUN-ding**
+1631. v. funding | /ˈfʌndɪŋ/ — sounds like **FUN-ding** | /ˈfʌndɪŋ/ — sounds like **FUN-ding**
 1632. n. ease | /iːz/ — sounds like **EEZ** | /iz/ — sounds like **EEZ**
 1633. v. transform | /trænsˈfɔːm/ — sounds like **trans-FAWM** | /trænsˈfɔrm/ — sounds like **trans-FORM**
 1634. n. summary | /ˈsʌməri/ — sounds like **SUM-uh-ree** | /ˈsʌməri/ — sounds like **SUM-ər-ee**
@@ -1806,7 +1806,7 @@ Co-words
 1800. v. exploit | /ɪkˈsplɔɪt/ — sounds like **ik-SPLOYT** | /ɪkˈsplɔɪt/ — sounds like **ik-SPLOYT**
 1801. v. survive | /səˈvaɪv/ — sounds like **suh-VYV** | /sərˈvaɪv/ — sounds like **ser-VYV**
 1802. v. disappear | /ˌdɪsəˈpɪə/ — sounds like **dis-uh-PEER** | /ˌdɪsəˈpɪr/ — sounds like **dis-uh-PEER**
-1803. n. speaking | /ˈspiːkɪŋ/ — sounds like **SPEE-king** | /ˈspikɪŋ/ — sounds like **SPEE-king**
+1803. v. speaking | /ˈspiːkɪŋ/ — sounds like **SPEE-king** | /ˈspikɪŋ/ — sounds like **SPEE-king**
 1804. v. govern | /ˈɡʌvən/ — sounds like **GUV-uhn** | /ˈɡʌvərn/ — sounds like **GUV-ern**
 1805. adj. familiar | /fəˈmɪljə/ — sounds like **fuh-MIL-yuh** | /fəˈmɪljər/ — sounds like **fuh-MIL-yer**
 1806. n. script | /skrɪpt/ — sounds like **SKRIPT** | /skrɪpt/ — sounds like **SKRIPT**
@@ -1833,7 +1833,7 @@ Co-words
 1827. n. meat | /miːt/ — sounds like **MEET** | /mit/ — sounds like **MEET**
 1828. n. Iceland | /ˈaɪslənd/ — sounds like **EYE-slund** | /ˈaɪslənd/ — sounds like **EYE-slənd**
 1829. adj. insufficient | /ˌɪnsəˈfɪʃənt/ — sounds like **IN-suh-FISH-unt** | /ˌɪnsəˈfɪʃənt/ — sounds like **IN-suh-FISH-ənt**
-1830. n. training | /ˈtreɪnɪŋ/ — sounds like **TRAY-ning** | /ˈtreɪnɪŋ/ — sounds like **TRAY-ning**
+1830. v. training | /ˈtreɪnɪŋ/ — sounds like **TRAY-ning** | /ˈtreɪnɪŋ/ — sounds like **TRAY-ning**
 1831. n. Ironbridge | /ˈaɪənbrɪdʒ/ — sounds like **EYE-uhn-bridge** | /ˈaɪərnbrɪdʒ/ — sounds like **EYE-ern-bridge**
 1832. n. guy | /ɡaɪ/ — sounds like **GY** | /ɡaɪ/ — sounds like **GY**
 1833. n. coral | /ˈkɒrəl/ — sounds like **KOR-ul** | /ˈkɔrəl/ — sounds like **KOR-əl**
@@ -1878,7 +1878,7 @@ Co-words
 1872. n. mechanism | /ˈmekənɪzəm/ — sounds like **MEK-uh-niz-um** | /ˈmɛkəˌnɪzəm/ — sounds like **MEK-uh-niz-əm**
 1873. adj. rich | /rɪtʃ/ — sounds like **RICH** | /rɪtʃ/ — sounds like **RICH**
 1874. n. stuff | /stʌf/ — sounds like **STUF** | /stʌf/ — sounds like **STUF**
-1875. n. shopping | /ˈʃɒpɪŋ/ — sounds like **SHOP-ing** | /ˈʃɑpɪŋ/ — sounds like **SHAHP-ing**
+1875. v. shopping | /ˈʃɒpɪŋ/ — sounds like **SHOP-ing** | /ˈʃɑpɪŋ/ — sounds like **SHAHP-ing**
 1876. n. proportion | /prəˈpɔːʃən/ — sounds like **pruh-PAW-shun** | /prəˈpɔrʃən/ — sounds like **pruh-POR-shən**
 1877. adj. quiet | /ˈkwaɪət/ — sounds like **KWY-ut** | /ˈkwaɪət/ — sounds like **KWY-ət**
 1878. n. typewriter | /ˈtaɪpraɪtə/ — sounds like **TY-pry-tuh** | /ˈtaɪpˌraɪtər/ — sounds like **TY-pry-ter**
@@ -1897,7 +1897,7 @@ Co-words
 1891. adj. emotional | /ɪˈməʊʃənəl/ — sounds like **i-MOH-shun-ul** | /ɪˈmoʊʃənəl/ — sounds like **i-MOH-shə-nəl**
 1892. v. exhibit | /ɪɡˈzɪbɪt/ — sounds like **ig-ZIB-it** | /ɪɡˈzɪbɪt/ — sounds like **ig-ZIB-it**
 1893. n. artifact | /ˈɑːtɪfækt/ — sounds like **AAH-ti-fakt** | /ˈɑrtəˌfækt/ — sounds like **AR-tuh-fakt**
-1894. n. heating | /ˈhiːtɪŋ/ — sounds like **HEE-ting** | /ˈhitɪŋ/ — sounds like **HEE-ting**
+1894. v. heating | /ˈhiːtɪŋ/ — sounds like **HEE-ting** | /ˈhitɪŋ/ — sounds like **HEE-ting**
 1895. adj. fertile | /ˈfɜːtaɪl/ — sounds like **FER-tyl** | /ˈfɝːtəl/ — sounds like **FER-təl**
 1896. n. literacy | /ˈlɪtərəsi/ — sounds like **LIT-uh-ruh-see** | /ˈlɪtərəsi/ — sounds like **LIT-ər-ə-see**
 1897. adj. commercial | /kəˈmɜːʃəl/ — sounds like **kuh-MER-shul** | /kəˈmɝːʃəl/ — sounds like **kuh-MER-shəl**

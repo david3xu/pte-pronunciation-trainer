@@ -10,7 +10,7 @@ Complete API documentation for the PTE Pronunciation Trainer application.
    - [AppConfig](#appconfig)
    - [PTEApp](#pteapp)
    - [PTEVocabularyManager](#ptevocabularymanager)
-   - [SettingsManager](#settingsmanager)
+   - [SettingsModule](#settingsmodule) ⭐ **Event-Driven Architecture**
    - [ProgressTracker](#progresstracker)
    - [DatasetManager](#datasetmanager) ⭐ **Phase 2**
    - [PracticeModes](#practicemodes) ⭐ **Phase 2**
@@ -358,101 +358,272 @@ const results = vocabularyManager.searchWords('education');
 
 ---
 
-### SettingsManager
+### SettingsModule
 
-**Purpose**: User settings management
+**Purpose**: Event-driven settings management with handler registry pattern
 
-**Global Access**: \`window.settingsManager\`
+**Global Access**: \`window.settingsModule\`
 
-#### Methods
+**Architecture**: Event-driven, single source of truth for all user preferences
 
-##### \`initialize()\`
-Initialize settings system.
+#### Design Pattern
+
+SettingsModule uses a **handler registry pattern** with event-driven architecture:
+
+```
+User Action → EventBus → SettingsModule (validate → apply → persist) → EventBus → Engines (listen & update)
+```
+
+Each setting has three handler methods:
+- \`validate(value)\` - Validates the value
+- \`apply(value)\` - Applies the value to the system
+- \`default\` - Default value for the setting
+
+#### Constructor
 
 \`\`\`javascript
-settingsManager.initialize();
+const settingsModule = new SettingsModule(config, eventBus, storage);
 \`\`\`
+
+**Parameters**:
+- \`config\` (AppConfig): Configuration instance
+- \`eventBus\` (EventBus): Event bus instance for pub/sub
+- \`storage\` (Storage): Storage instance for persistence
+
+#### Managed Settings
+
+SettingsModule manages 8 settings with complete validation and handlers:
+
+1. **speed** - Speech rate (0.6 - 1.2)
+2. **delay** - Pause between words (1000 - 5000ms)
+3. **repeat** - Repeat count (0 - Infinity)
+4. **voice** - TTS voice selection
+5. **difficulty** - Vocabulary difficulty filter
+6. **learningMode** - Active vocabulary book
+7. **practiceMode** - Practice type (vocabulary, rs, asq, wfd)
+8. **practiceDataset** - Dataset selection (2024, 2025, combined)
+
+#### Event-Driven Usage (RECOMMENDED)
+
+Settings should be changed via events, not direct method calls:
+
+\`\`\`javascript
+// ✅ CORRECT: Request setting change via event
+window.eventBus.emit('setting:request-change', {
+    key: 'speed',
+    value: 0.8
+});
+
+// ❌ WRONG: Don't call methods directly
+// settingsModule.setSetting('speed', 0.8); // Anti-pattern
+\`\`\`
+
+#### Listening to Setting Changes
+
+Engines listen to \`setting:changed\` events:
+
+\`\`\`javascript
+window.eventBus.on('setting:changed', ({key, value, previous}) => {
+    console.log(\`Setting \${key} changed from \${previous} to \${value}\`);
+    
+    // React to specific settings
+    if (key === 'speed') {
+        this.updateSpeed(value);
+    }
+});
+\`\`\`
+
+#### Methods
 
 ##### \`getSetting(key)\`
 Get current setting value.
 
 \`\`\`javascript
-const category = settingsManager.getSetting('category');
+const speed = window.settingsModule.getSetting('speed');
+console.log(speed); // 0.8
 \`\`\`
 
 **Parameters**:
 - \`key\` (string): Setting key
 
-**Returns**: Setting value
-
-##### \`updateSetting(key, value)\`
-Update setting with validation.
-
-\`\`\`javascript
-settingsManager.updateSetting('speed', '1.0');
-\`\`\`
-
-**Parameters**:
-- \`key\` (string): Setting key
-- \`value\` (any): New value
-
-**Events Emitted**:
-- \`settings:changed\`
-- \`settings:${key}-changed\`
-
-**Side Effects**:
-- Validates value
-- Applies dependencies
-- Persists to storage
+**Returns**: Current setting value
 
 ##### \`getAllSettings()\`
 Get all current settings.
 
 \`\`\`javascript
-const settings = settingsManager.getAllSettings();
+const settings = window.settingsModule.getAllSettings();
+console.log(settings);
+// {
+//   speed: 0.8,
+//   delay: 3000,
+//   repeat: 0,
+//   voice: 'auto',
+//   difficulty: 'all',
+//   learningMode: 'pte-fib-listening',
+//   practiceMode: 'vocabulary',
+//   practiceDataset: 'combined'
+// }
 \`\`\`
 
-**Returns**: Settings object
+**Returns**: Settings object with all 8 settings
 
 ##### \`getAvailableOptions(key)\`
-Get available options for a setting.
+Get available options for a setting (for dropdown population).
 
 \`\`\`javascript
-const speeds = settingsManager.getAvailableOptions('speed');
-// Returns: [
-//   { id: '0.7', label: 'Slow' },
-//   { id: '1.0', label: 'Normal' },
-//   { id: '1.3', label: 'Fast' }
+const speeds = window.settingsModule.getAvailableOptions('speed');
+console.log(speeds);
+// [
+//   { id: '0.6', label: '0.6x - Very Slow' },
+//   { id: '0.7', label: '0.7x - Slow' },
+//   { id: '0.8', label: '0.8x - Moderate' },
+//   { id: '0.9', label: '0.9x - Normal-' },
+//   { id: '1.0', label: '1.0x - Normal' },
+//   { id: '1.1', label: '1.1x - Fast' },
+//   { id: '1.2', label: '1.2x - Very Fast' }
 // ]
 \`\`\`
 
 **Parameters**:
 - \`key\` (string): Setting key
 
-**Returns**: Array of option objects
+**Returns**: Array of option objects from Config.js
 
-##### \`isValidSetting(key, value)\`
-Check if setting value is valid.
-
-\`\`\`javascript
-const isValid = settingsManager.isValidSetting('speed', '1.0');
-\`\`\`
-
-**Parameters**:
-- \`key\` (string): Setting key
-- \`value\` (any): Value to validate
-
-**Returns**: Boolean
-
-##### \`resetToDefaults()\`
+##### \`resetSettings()\`
 Reset all settings to defaults.
 
 \`\`\`javascript
-settingsManager.resetToDefaults();
+window.settingsModule.resetSettings();
 \`\`\`
 
 **Events Emitted**:
-- \`settings:reset\`
+- \`setting:changed\` (for each setting reset)
+
+**Default Values**:
+- speed: \`1.0\`
+- delay: \`3000\` (3 seconds) ⭐ **New default**
+- repeat: \`0\` (off)
+- voice: \`'auto'\`
+- difficulty: \`'all'\`
+- learningMode: \`'pte-fib-listening'\`
+- practiceMode: \`'vocabulary'\`
+- practiceDataset: \`'combined'\`
+
+##### \`exportSettings()\`
+Export settings as JSON (for backup/import).
+
+\`\`\`javascript
+const exported = window.settingsModule.exportSettings();
+console.log(exported);
+// {
+//   version: '1.0',
+//   timestamp: 1696723200000,
+//   settings: { speed: 0.8, delay: 3000, ... }
+// }
+\`\`\`
+
+**Returns**: JSON object with version, timestamp, and settings
+
+##### \`importSettings(settingsData)\`
+Import settings from JSON.
+
+\`\`\`javascript
+const settingsData = {
+    version: '1.0',
+    timestamp: 1696723200000,
+    settings: { speed: 0.8, delay: 2000, repeat: 2, ... }
+};
+
+await window.settingsModule.importSettings(settingsData);
+\`\`\`
+
+**Parameters**:
+- \`settingsData\` (object): Exported settings object
+
+**Returns**: Promise<void>
+
+**Events Emitted**:
+- \`setting:changed\` (for each imported setting)
+
+#### Events Reference
+
+##### Events Emitted by SettingsModule
+
+**\`setting:changed\`** - Emitted when any setting changes
+
+\`\`\`javascript
+{
+    key: 'speed',      // Setting key
+    value: 0.8,        // New value
+    previous: 1.0      // Previous value
+}
+\`\`\`
+
+##### Events Listened by SettingsModule
+
+**\`setting:request-change\`** - Request a setting change
+
+\`\`\`javascript
+window.eventBus.emit('setting:request-change', {
+    key: 'speed',
+    value: 0.8
+});
+\`\`\`
+
+#### Handler Registry Structure
+
+Each setting has a handler with three methods:
+
+\`\`\`javascript
+handlers = {
+    speed: {
+        validate: (value) => {
+            const num = parseFloat(value);
+            if (isNaN(num) || num < 0.6 || num > 1.2) {
+                throw new Error('Speed must be between 0.6 and 1.2');
+            }
+            return num;
+        },
+        apply: (value) => {
+            console.log('[SettingsModule] Applied speed:', value);
+        },
+        default: 1.0
+    },
+    // ... 7 more handlers
+}
+\`\`\`
+
+#### Integration Example
+
+Complete example showing event-driven architecture:
+
+\`\`\`javascript
+// 1. UI requests setting change
+document.getElementById('speedSelect').addEventListener('change', (e) => {
+    window.eventBus.emit('setting:request-change', {
+        key: 'speed',
+        value: parseFloat(e.target.value)
+    });
+});
+
+// 2. SettingsModule validates, applies, persists
+// (happens automatically)
+
+// 3. Engine listens and updates
+class TTSEngine {
+    constructor() {
+        window.eventBus.on('setting:changed', this._handleSettingChange.bind(this));
+    }
+    
+    _handleSettingChange({key, value}) {
+        if (key === 'speed') {
+            console.log('[TTSEngine] Speed changed to', value);
+            this._setSpeechRate(value);
+        }
+    }
+}
+\`\`\`
 
 ---
 

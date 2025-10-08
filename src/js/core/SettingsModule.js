@@ -25,8 +25,13 @@ class SettingsModule {
         this.storage = storage || window.storage;
         
         if (!this.config || !this.eventBus || !this.storage) {
-            console.error('❌ SettingsModule: Missing dependencies');
-            return;
+            const missing = [];
+            if (!this.config) missing.push('config');
+            if (!this.eventBus) missing.push('eventBus');
+            if (!this.storage) missing.push('storage');
+            const errorMsg = `SettingsModule: Missing dependencies: ${missing.join(', ')}`;
+            console.error('❌', errorMsg);
+            throw new Error(errorMsg);
         }
         
         // Current settings (in-memory cache)

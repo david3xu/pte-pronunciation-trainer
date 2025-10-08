@@ -21,6 +21,17 @@ class AudioControls {
     }
 
     /**
+     * Safely get current practice mode from SettingsModule or Config.js fallback
+     * @returns {string} Current practice mode
+     */
+    getPracticeMode() {
+        if (window.settingsModule && typeof window.settingsModule.get === 'function') {
+            return window.settingsModule.get('practiceMode') || this.config.get('data.defaults.practiceMode');
+        }
+        return this.config.get('data.defaults.practiceMode');
+    }
+
+    /**
      * Attach event listeners for settings changes and audio control events
      * @private
      */
@@ -68,7 +79,7 @@ class AudioControls {
     }
 
     startAutoPlay() {
-        const currentMode = window.settingsModule?.get('practiceMode') || this.config.get('data.defaults.practiceMode');
+        const currentMode = this.getPracticeMode();
         console.log('[AudioControls] 🎬 startAutoPlay called - Mode:', currentMode);
         console.log('[AudioControls] currentPracticeMode (from SettingsModule):', currentMode);
         console.log('[AudioControls] window.currentItem:', window.currentItem);
@@ -369,7 +380,7 @@ class AudioControls {
         if (!this.isPlaying || !window.currentItem) return;
 
         try {
-            const mode = window.settingsModule?.get('practiceMode') || this.config.get('data.defaults.practiceMode');
+            const mode = this.getPracticeMode();
             const item = window.currentItem;
 
             console.log(`[AudioControls] 🎵 playCurrentItem - Mode: ${mode}`);
@@ -437,7 +448,7 @@ class AudioControls {
         const nextItem = window.currentDataset.items[window.currentDatasetIndex];
         window.currentItem = nextItem; // IMPORTANT: Update currentItem for PLAY button
         console.log(`[AudioControls] Displaying next item:`, nextItem);
-        const currentMode = window.settingsModule?.get('practiceMode') || this.config.get('data.defaults.practiceMode');
+        const currentMode = this.getPracticeMode();
         window.uiController.displayContent(nextItem, currentMode);
     }
 
@@ -461,7 +472,7 @@ class AudioControls {
         const prevItem = window.currentDataset.items[window.currentDatasetIndex];
         window.currentItem = prevItem; // IMPORTANT: Update currentItem for PLAY button
         console.log(`[AudioControls] Displaying previous item:`, prevItem);
-        const currentMode = window.settingsModule?.get('practiceMode') || this.config.get('data.defaults.practiceMode');
+        const currentMode = this.getPracticeMode();
         window.uiController.displayContent(prevItem, currentMode);
     }
 

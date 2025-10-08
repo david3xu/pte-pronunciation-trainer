@@ -24,21 +24,12 @@ class CacheMigration {
 
     // Set default values for clean initialization
     setDefaultValues() {
-        // Use SettingsManager to set defaults instead of direct storage access
-        if (window.settingsManager) {
-            const defaults = window.settingsManager.config.get('settings.defaults');
-
-            // Set all defaults through SettingsManager
-            Object.keys(defaults).forEach(key => {
-                const defaultValue = defaults[key];
-                // Resolve nested config paths if needed
-                const value = defaultValue.includes('.') ?
-                    window.settingsManager.config.get(defaultValue) : defaultValue;
-                window.settingsManager.updateSetting(key, value);
-            });
-
+        // Use SettingsModule to set defaults
+        if (window.settingsModule) {
+            // Reset to defaults through SettingsModule
+            window.settingsModule.resetSettings();
         } else {
-            console.error('❌ SettingsManager not available - cannot set default values');
+            console.error('❌ SettingsModule not available - cannot set default values');
         }
     }
 
@@ -55,9 +46,10 @@ class CacheMigration {
             allKeys: window.storage.getAllKeys()
         };
 
-        // Get current category from SettingsManager if available
-        if (window.settingsManager) {
-            info.category = window.settingsManager.getSetting('category');
+        // Get current category from SettingsModule if available
+        if (window.settingsModule) {
+            const settings = window.settingsModule.exportSettings();
+            info.category = settings.category;
         } else {
             info.category = window.storage.getItem('category');
         }

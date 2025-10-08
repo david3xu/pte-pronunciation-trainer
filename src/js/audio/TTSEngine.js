@@ -10,6 +10,32 @@ class TTSEngine {
         
         // Initialize background audio ONCE in constructor
         this.enableBackgroundAudio();
+        
+        // Listen to settings changes
+        this._attachEventListeners();
+    }
+
+    /**
+     * Attach event listeners for settings changes
+     * @private
+     */
+    _attachEventListeners() {
+        window.eventBus.on('setting:changed', this._handleSettingChange.bind(this));
+    }
+
+    /**
+     * Handle setting changes from SettingsModule
+     * @private
+     */
+    _handleSettingChange({key, value}) {
+        if (key === 'speed') {
+            this.speechRate = parseFloat(value) || this.config.get('tts.speeds.normal');
+            console.log(`[TTSEngine] Speed changed to ${this.speechRate}`);
+        } else if (key === 'voice') {
+            // Reset voice cache when voice preference changes
+            this.resetVoiceCache();
+            console.log(`[TTSEngine] Voice preference changed to ${value}`);
+        }
     }
 
     /**
@@ -416,7 +442,11 @@ class TTSEngine {
         return this.cleanTextForTTS(cleaned);
     }
 
-    setSpeechRate(rate) {
+    /**
+     * @deprecated Use SettingsModule with events instead
+     * @private
+     */
+    _setSpeechRate(rate) {
         this.speechRate = parseFloat(rate) || this.config.get('tts.speeds.normal');
 
         // Emit rate change event

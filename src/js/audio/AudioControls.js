@@ -8,6 +8,31 @@ class AudioControls {
         this.repeatMode = 'once';
         this.currentIndex = 0;
         this.autoPlayTimeout = null;
+        
+        // Listen to settings changes
+        this._attachEventListeners();
+    }
+
+    /**
+     * Attach event listeners for settings changes
+     * @private
+     */
+    _attachEventListeners() {
+        window.eventBus.on('setting:changed', this._handleSettingChange.bind(this));
+    }
+
+    /**
+     * Handle setting changes from SettingsModule
+     * @private
+     */
+    _handleSettingChange({key, value}) {
+        if (key === 'delay') {
+            this.delay = parseInt(value) || this.config.get('tts.delays.normal');
+            console.log(`[AudioControls] Delay changed to ${this.delay}ms`);
+        } else if (key === 'repeat') {
+            this._setRepeatMode(value);
+            console.log(`[AudioControls] Repeat mode changed to ${value}`);
+        }
     }
 
     async startAutoPlay() {
@@ -331,7 +356,11 @@ class AudioControls {
         }
     }
 
-    setDelay(delay) {
+    /**
+     * @deprecated Use SettingsModule with events instead
+     * @private
+     */
+    _setDelay(delay) {
         this.delay = parseInt(delay) || this.config.get('tts.delays.normal');
 
         // Emit delay change event
@@ -340,7 +369,11 @@ class AudioControls {
         });
     }
 
-    setRepeatMode(mode) {
+    /**
+     * @deprecated Use SettingsModule with events instead
+     * @private
+     */
+    _setRepeatMode(mode) {
         this.repeatMode = mode;
 
         // Update TTS engine repeat settings

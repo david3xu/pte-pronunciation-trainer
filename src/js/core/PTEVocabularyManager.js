@@ -12,11 +12,46 @@ class PTEVocabularyManager {
     this.pteFibListeningDataset = null;
     this.pteBeginnerDataset = null;
 
+    // Listen to settings changes
+    this._attachEventListeners();
+
     // Initialize when DOM is ready
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', () => this.initialize());
     } else {
       this.initialize();
+    }
+  }
+
+  /**
+   * Attach event listeners for settings changes
+   * @private
+   */
+  _attachEventListeners() {
+    window.eventBus.on('setting:changed', this._handleSettingChange.bind(this));
+  }
+
+  /**
+   * Handle setting changes from SettingsModule
+   * @private
+   */
+  async _handleSettingChange({key, value}) {
+    if (key === 'difficulty') {
+      this.setDifficulty(value);
+      console.log(`[PTEVocabularyManager] Difficulty changed to ${value}`);
+      // Emit event to update UI
+      window.eventBus.emit('vocabulary:updated', {
+        totalWords: this.getTotalWords(),
+        difficulty: value
+      });
+    } else if (key === 'learningMode') {
+      await this.setLearningMode(value);
+      console.log(`[PTEVocabularyManager] Learning mode changed to ${value}`);
+      // Emit event to update UI
+      window.eventBus.emit('vocabulary:updated', {
+        totalWords: this.getTotalWords(),
+        learningMode: value
+      });
     }
   }
 

@@ -293,19 +293,42 @@ class SettingsModule {
     }
     
     /**
-     * Load settings from storage
+     * Load settings from storage AND apply them
+     * This ensures all modules get initialized with correct values on startup
      */
     loadSettings() {
+        // First, load all values from storage into this.settings
         for (const [key, handler] of Object.entries(this.handlers)) {
             if (handler.storageKey) {
                 const value = this.storage.getItem(handler.storageKey);
                 if (value !== null) {
                     this.settings[key] = value;
+                } else {
+                    // Use default if no saved value
+                    const defaultValue = handler.default ? handler.default() : null;
+                    if (defaultValue !== null) {
+                        this.settings[key] = defaultValue;
+                    }
                 }
             }
         }
         
         console.log('📥 SettingsModule: Loaded', Object.keys(this.settings).length, 'settings from storage');
+        
+        // Then, apply all loaded settings to initialize modules correctly
+        // This emits setting:changed events for each setting
+        for (const [key, value] of Object.entries(this.settings)) {
+            const handler = this.handlers[key];
+            if (handler && handler.apply) {
+                // Apply the setting (calls engine methods)
+                handler.apply(value);
+                
+                // Emit event so other modules can react
+                this.eventBus.emit('setting:changed', { key, value });
+            }
+        }
+        
+        console.log('✅ SettingsModule: Applied all initial settings to modules');
     }
     
     /**

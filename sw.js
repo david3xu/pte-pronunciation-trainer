@@ -2,7 +2,7 @@
 // Service Worker for PTE Pronunciation Trainer
 // Handles offline caching and background sync
 
-const CACHE_VERSION = 'v54'; // Version 49: Fixed SettingsModule handlers to use pure event-driven architecture (no direct method calls)
+const CACHE_VERSION = 'v57'; // Added PTE ASQ Answers Vocabulary (606 words)
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode
@@ -79,7 +79,7 @@ const urlsToCache = isDevelopment ? [
   '/src/js/ui/UIController.js',
   '/src/js/ui/SettingsPanel.js',
   '/src/js/core/PTEApp.js',
-  // Vocabulary datasets (10 books)
+  // Vocabulary datasets (11 books)
   '/data/processed/pte-fib-listening-dataset.json',
   '/data/processed/pte-beginner-vocabulary.json',
   '/data/processed/pte-intermediate-vocabulary.json',
@@ -90,6 +90,7 @@ const urlsToCache = isDevelopment ? [
   '/data/processed/pte-wfd-vocabulary.json',
   '/data/processed/pte-reading-fib-vocabulary.json',
   '/data/processed/pte-reading-fib-drag-vocabulary.json',
+  '/data/processed/pte-asq-answers-vocabulary.json',
   // NEW: PTE practice datasets (Phase 2)
   '/data/processed/pte-repeat-sentence-dataset.json',
   '/data/processed/pte-answer-short-question-dataset.json',

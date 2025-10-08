@@ -63,6 +63,42 @@ class AppConfig {
                         isDefault: false
                     },
                     {
+                        id: 'pte-advanced',
+                        input: 'pte-advanced-vocabulary-with-ipa.md',
+                        output: 'pte-advanced-vocabulary.json',
+                        category: 'pte-advanced',
+                        description: 'PTE Advanced vocabulary with IPA',
+                        sourceType: 'pte-advanced-vocabulary-with-ipa',
+                        dataType: 'vocabulary',
+                        extractorType: 'PTETermsExtractor',
+                        inputSubdir: 'vocabs',
+                        isDefault: false
+                    },
+                    {
+                        id: 'pte-ra',
+                        input: 'pte-ra-vocabulary-with-ipa.md',
+                        output: 'pte-ra-vocabulary.json',
+                        category: 'pte-ra',
+                        description: 'PTE Read Aloud (RA) vocabulary with IPA',
+                        sourceType: 'pte-ra-vocabulary-with-ipa',
+                        dataType: 'vocabulary',
+                        extractorType: 'PTETermsExtractor',
+                        inputSubdir: 'vocabs',
+                        isDefault: false
+                    },
+                    {
+                        id: 'pte-rs',
+                        input: 'pte-rs-vocabulary-with-ipa.md',
+                        output: 'pte-rs-vocabulary.json',
+                        category: 'pte-rs-vocab',
+                        description: 'PTE Repeat Sentence (RS) vocabulary with IPA',
+                        sourceType: 'pte-rs-vocabulary-with-ipa',
+                        dataType: 'vocabulary',
+                        extractorType: 'PTETermsExtractor',
+                        inputSubdir: 'vocabs',
+                        isDefault: false
+                    },
+                    {
                         id: 'pte-repeat-sentence',
                         input: 'pte-repeat-sentence.md',
                         output: 'pte-repeat-sentence-dataset.json',
@@ -118,7 +154,10 @@ class AppConfig {
                     byMode: {
                         'pte-fib-listening': '/data/processed/pte-fib-listening-dataset.json',
                         'pte-beginner': '/data/processed/pte-beginner-vocabulary.json',
-                        'pte-intermediate': '/data/processed/pte-intermediate-vocabulary.json'
+                        'pte-intermediate': '/data/processed/pte-intermediate-vocabulary.json',
+                        'pte-advanced': '/data/processed/pte-advanced-vocabulary.json',
+                        'pte-ra': '/data/processed/pte-ra-vocabulary.json',
+                        'pte-rs': '/data/processed/pte-rs-vocabulary.json'
                     },
                     source: 'data/source/pte/vocabs/',
                     processed: 'data/processed/',
@@ -139,7 +178,10 @@ class AppConfig {
                 learningModes: [
                     { id: 'pte-fib-listening', label: '🎧 PTE FIB Listening', dataset: 'pte-fib-listening-with-ipa' },
                     { id: 'pte-beginner', label: '📗 PTE Beginner Vocabulary', dataset: 'pte-beginner-vocabulary-with-ipa' },
-                    { id: 'pte-intermediate', label: '📘 PTE Intermediate Vocabulary', dataset: 'pte-intermediate-vocabulary-with-ipa' }
+                    { id: 'pte-intermediate', label: '📘 PTE Intermediate Vocabulary', dataset: 'pte-intermediate-vocabulary-with-ipa' },
+                    { id: 'pte-advanced', label: '📕 PTE Advanced Vocabulary', dataset: 'pte-advanced-vocabulary-with-ipa' },
+                    { id: 'pte-ra', label: '📚 PTE Read Aloud (RA) Vocabulary', dataset: 'pte-ra-vocabulary-with-ipa' },
+                    { id: 'pte-rs', label: '🎯 PTE Repeat Sentence (RS) Vocabulary', dataset: 'pte-rs-vocabulary-with-ipa' }
                 ],
                 practiceDatasets: [
                     { id: 'pte-repeat-sentence', label: '🎤 Repeat Sentence', itemCount: 620, type: 'rs' },
@@ -155,7 +197,10 @@ class AppConfig {
                     'write-from-dictation': { file: 'pte-write-from-dictation-dataset.json', type: 'sentence' },
                     'pte-fib-listening': { file: 'pte-fib-listening-dataset.json', type: 'vocabulary' },
                     'pte-beginner': { file: 'pte-beginner-vocabulary.json', type: 'vocabulary' },
-                    'pte-intermediate': { file: 'pte-intermediate-vocabulary.json', type: 'vocabulary' }
+                    'pte-intermediate': { file: 'pte-intermediate-vocabulary.json', type: 'vocabulary' },
+                    'pte-advanced': { file: 'pte-advanced-vocabulary.json', type: 'vocabulary' },
+                    'pte-ra': { file: 'pte-ra-vocabulary.json', type: 'vocabulary' },
+                    'pte-rs': { file: 'pte-rs-vocabulary.json', type: 'vocabulary' }
                 }
             },
 

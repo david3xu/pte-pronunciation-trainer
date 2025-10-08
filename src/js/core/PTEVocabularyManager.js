@@ -6,11 +6,11 @@ class PTEVocabularyManager {
     this.currentLearningMode = 'pte-fib-listening';
     this.currentWords = [];
     this.allWords = []; // Store unfiltered words
-    this.isInitialized = false;
 
-    // Store PTE datasets
-    this.pteFibListeningDataset = null;
-    this.pteBeginnerDataset = null;
+    // Store all datasets in a map for dynamic loading
+    this.datasets = new Map();
+    
+    this.isInitialized = false;
 
     // Listen to settings changes
     this._attachEventListeners();
@@ -58,79 +58,15 @@ class PTEVocabularyManager {
   async initialize() {
     if (this.isInitialized) return;
 
-
     try {
-      await this.loadPTEData();
-
-      // Also preload the intermediate dataset
-      const config = window.appConfig || new AppConfig();
-      const byMode = config.get('data.paths.byMode') || {};
-      if (byMode['pte-intermediate']) {
-        try {
-          await this.loadIntermediateDataset();
-        } catch (err) {
-          console.warn('⚠️ Could not preload intermediate dataset:', err);
-        }
-      }
+      // Load initial dataset (FIB Listening)
+      await this.loadDataset('pte-fib-listening');
+      await this.setLearningMode('pte-fib-listening');
 
       this.isInitialized = true;
+      console.log('[PTEVocabularyManager] ✅ Initialized successfully');
     } catch (error) {
       console.error('❌ Error initializing PTE Vocabulary Manager:', error);
-    }
-  }
-
-  // Load PTE data from JSON files
-  async loadPTEData() {
-
-    try {
-      // Load configuration from centralized config
-      const config = window.appConfig || new AppConfig();
-      const datasetPath = config.get('data.paths.dataset');
-      const byMode = config.get('data.paths.byMode') || {};
-
-      // Load PTE FIB listening dataset with cache-busting
-      const cacheBuster = `?v=${Date.now()}`;
-      const pteFibResponse = await fetch((byMode['pte-fib-listening'] || datasetPath) + cacheBuster);
-      this.pteFibListeningDataset = await pteFibResponse.json();
-
-      // Load PTE Beginner dataset if configured
-      if (byMode['pte-beginner']) {
-        const beginnerResponse = await fetch(byMode['pte-beginner'] + cacheBuster);
-        this.pteBeginnerDataset = await beginnerResponse.json();
-      }
-
-      // Set initial learning mode and load words
-      this.setLearningMode('pte-fib-listening');
-
-    } catch (error) {
-      console.error('❌ Error loading PTE data:', error);
-      throw error;
-    }
-  }
-
-  /**
-   * Load the PTE Intermediate dataset
-   */
-  async loadIntermediateDataset() {
-    try {
-      const config = window.appConfig || new AppConfig();
-      const byMode = config.get('data.paths.byMode') || {};
-
-      if (byMode['pte-intermediate']) {
-        const cacheBuster = `?v=${Date.now()}`;
-        const url = byMode['pte-intermediate'] + cacheBuster;
-        const intermediateResponse = await fetch(url);
-        if (!intermediateResponse.ok) {
-          throw new Error(`Failed to fetch intermediate dataset: ${intermediateResponse.status} ${intermediateResponse.statusText}`);
-        }
-        this.pteIntermediateDataset = await intermediateResponse.json();
-      } else {
-        console.error('❌ PTE Intermediate dataset path not configured');
-        this.pteIntermediateDataset = { vocabulary: [] };
-      }
-    } catch (error) {
-      console.error('❌ Error loading PTE Intermediate data:', error);
-      this.pteIntermediateDataset = { vocabulary: [] };
     }
   }
 
@@ -146,42 +82,62 @@ class PTEVocabularyManager {
    * Load words for the specified learning mode
    */
   async loadWordsForMode(mode) {
-    // Load the appropriate dataset
-    switch (mode) {
-      case 'pte-fib-listening':
-        this.allWords = this.pteFibListeningDataset.vocabulary;
-        break;
-      case 'pte-beginner':
-        this.allWords = (this.pteBeginnerDataset && this.pteBeginnerDataset.vocabulary) || [];
-        break;
-      case 'pte-intermediate':
-        if (!this.pteIntermediateDataset) {
-          // Load the intermediate dataset if it hasn't been loaded yet
-          await this.loadIntermediateDataset();
-          // After loading, the dataset should be available
-          this.allWords = (this.pteIntermediateDataset && this.pteIntermediateDataset.vocabulary) || [];
-        } else {
-          this.allWords = (this.pteIntermediateDataset && this.pteIntermediateDataset.vocabulary) || [];
-        }
-        break;
-      default:
-        console.warn(`Unknown learning mode: ${mode}`);
-        this.allWords = [];
+    // Check if dataset is already loaded
+    if (!this.datasets.has(mode)) {
+      await this.loadDataset(mode);
     }
+    
+    // Get vocabulary from dataset
+    const dataset = this.datasets.get(mode);
+    this.allWords = (dataset && dataset.vocabulary) || [];
 
     // Apply current filters
     this.applyFilters();
   }
 
   /**
+   * Dynamically load a dataset by mode
+   */
+  async loadDataset(mode) {
+    try {
+      const config = window.appConfig || new AppConfig();
+      const byMode = config.get('data.paths.byMode') || {};
+      
+      if (byMode[mode]) {
+        const cacheBuster = `?v=${Date.now()}`;
+        const url = byMode[mode] + cacheBuster;
+        console.log(`[PTEVocabularyManager] Loading dataset for mode: ${mode} from ${url}`);
+        
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(`Failed to fetch ${mode} dataset: ${response.status} ${response.statusText}`);
+        }
+        
+        const dataset = await response.json();
+        this.datasets.set(mode, dataset);
+        console.log(`[PTEVocabularyManager] ✅ Loaded ${mode}: ${dataset.vocabulary?.length || 0} words`);
+      } else {
+        console.warn(`[PTEVocabularyManager] ⚠️ No path configured for mode: ${mode}`);
+        this.datasets.set(mode, { vocabulary: [] });
+      }
+    } catch (error) {
+      console.error(`[PTEVocabularyManager] ❌ Error loading ${mode} dataset:`, error);
+      this.datasets.set(mode, { vocabulary: [] });
+    }
+  }
+
+  /**
    * Get next learning mode for auto-loop (circular)
-   * pte-fib-listening → pte-beginner → pte-intermediate → pte-fib-listening
+   * FIB → Beginner → Intermediate → Advanced → RA → RS → FIB (loop)
    */
   getNextLearningMode() {
     const learningModeSequence = [
       'pte-fib-listening',
       'pte-beginner', 
-      'pte-intermediate'
+      'pte-intermediate',
+      'pte-advanced',
+      'pte-ra',
+      'pte-rs'
     ];
     
     const currentIndex = learningModeSequence.indexOf(this.currentLearningMode);

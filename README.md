@@ -2,27 +2,44 @@
 
 A specialized web-based pronunciation training application for **PTE exam preparation**, featuring comprehensive vocabulary and practice modes for all key PTE speaking and listening sections.
 
-**✅ v2.0 - PHASE 2 COMPLETE (Oct 2024)** - Now includes RS, ASQ, and WFD practice modes with unified interface!
+**✅ v2.1 - COMPLETE VOCABULARY LIBRARY (Oct 2025)** - Now includes 6 vocabulary books with 8,000+ terms and auto-loop functionality!
 
 ## 🎯 Key Features
 
-### 📚 **PTE Practice Modes**
-- **📚 Vocabulary Training** - 914 FIB listening terms with pronunciation
-- **🎤 Repeat Sentence (RS)** - 628 sentences for pronunciation practice
+### 📚 **Complete PTE Vocabulary Library (6 Books)**
+- **🎧 FIB Listening** - 885 fill-in-the-blank terms with IPA pronunciation
+- **📗 Beginner Vocabulary** - 383 high-frequency terms
+- **📘 Intermediate Vocabulary** - 2,408 intermediate terms
+- **📕 Advanced Vocabulary** - 2,703 advanced terms ✨ NEW
+- **📚 Read Aloud (RA) Vocabulary** - 788 RA-specific terms ✨ NEW
+- **� Repeat Sentence (RS) Vocabulary** - 887 RS-specific terms ✨ NEW
+- **Total**: 8,054 vocabulary terms with IPA pronunciation
+
+### 🎤 **PTE Practice Modes (Sentence Datasets)**
+- **🎤 Repeat Sentence (RS)** - 620 practice sentences
 - **❓ Answer Short Question (ASQ)** - 692 questions with answers
-- **✍️ Write From Dictation (WFD)** - 1,195 sentences for dictation practice
+- **✍️ Write From Dictation (WFD)** - 1,195 dictation sentences
+- **Total**: 2,507 practice sentences/questions
+
+### 🔄 **Auto-Loop Learning System** ✨ NEW
+- **Vocabulary Auto-Loop** - Automatically cycles through all 6 books
+  - FIB → Beginner → Intermediate → Advanced → RA → RS → (repeat)
+  - Seamless transition when completing a book
+  - Manual book switching resets to word #1
+- **Sentence Auto-Restart** - Restarts dataset when complete
+  - Continuous practice without manual intervention
 
 ### 🎓 **Unified Learning Interface**
 - **Single UI for all modes** - Consistent, easy-to-use interface
 - **Smart mode switching** - Seamless transition between practice types
 - **Mode persistence** - Remembers your last selected mode
-- **Comprehensive datasets** - Over 3,000 practice items total
+- **Comprehensive datasets** - Over 10,000 practice items total
 
 ### 🔊 **Advanced Pronunciation Training**
 - **Smart Voice Selection** - Google UK English Male (primary) with multiple fallbacks
 - **Multiple Speeds** - Slow (0.7x) → Normal (1.0x) → Fast (1.3x) progression
 - **Repeat Modes** - 1x, 2x (Slow+Normal), 3x (Slow+Normal+Fast), Loop
-- **Configurable Delays** - 1-4 second intervals between pronunciations
+- **Configurable Delays** - 1-3 second intervals (default: 3 seconds)
 - **Professional pronunciation** - Clear, exam-appropriate speech patterns
 - **Universal TTS** - Works for words, sentences, and questions
 
@@ -33,15 +50,14 @@ A specialized web-based pronunciation training application for **PTE exam prepar
 - **Dark/Light Mode** - Adaptive theming for comfortable study sessions
 
 ### 🚀 **Streamlined Architecture**
-- **Unified Display System** - Single UI reused for all 4 practice modes
-- **PTE Data Pipeline** - `npm run data:pte` processes PTE-specific data
+- **Dynamic Dataset Loading** - Map-based lazy loading for all 6 vocabulary books
+- **Event-Driven System** - Complete event-driven architecture with EventBus
+- **PTE Data Pipeline** - `npm run data` processes all 9 datasets (6 vocab + 3 sentence)
 - **Centralized Configuration** - ALL configuration values in `src/js/shared/Config.js` - NO hardcoded values
-- **SettingsManager Module** - Centralized settings logic with dependency management
-- **Configurable Paths** - All file paths, data sources, and settings are configurable
+- **Unified Display System** - Single UI reused for all practice modes
 - **Module Namespace** - Clean architecture with optimized code structure
 - **Built-in Validation** - Data integrity checks and error reporting
 - **PTE-Focused** - Specialized for PTE speaking and listening sections
-- **~50% Code Reduction** - Simplified from complex implementation (v2.0)
 
 ## 🚀 Quick Start
 

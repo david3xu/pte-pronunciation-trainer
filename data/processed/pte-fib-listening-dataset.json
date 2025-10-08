@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-10-07T22:04:08.823Z",
+    "generated": "2025-10-08T01:46:08.596Z",
     "totalTerms": 885,
     "source": "pte-fib-listening-with-ipa",
     "description": "PTE FIB Listening vocabulary with IPA",
@@ -77,7 +77,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "millions",
@@ -162,7 +162,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "contents",
@@ -213,7 +213,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "staring",
@@ -264,7 +264,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "cause",
@@ -281,7 +281,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "mammals",
@@ -400,7 +400,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "spotted",
@@ -417,7 +417,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "forests",
@@ -468,7 +468,7 @@
       "difficulty": "easy",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "craft",
@@ -485,7 +485,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "countries",
@@ -536,7 +536,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "growth",
@@ -621,7 +621,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "module",
@@ -655,7 +655,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "Droplets",
@@ -689,7 +689,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "n."
     },
     {
       "english": "document",
@@ -774,7 +774,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "trajectory",
@@ -791,7 +791,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "adj."
+      "wordType": "n."
     },
     {
       "english": "obesity",
@@ -842,7 +842,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "premium",
@@ -876,7 +876,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "incorporating",
@@ -961,7 +961,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "communities",
@@ -995,7 +995,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "n."
     },
     {
       "english": "apologize",
@@ -1063,7 +1063,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "urgency",
@@ -1114,7 +1114,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "identity",
@@ -1148,7 +1148,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "obvious",
@@ -1301,7 +1301,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "operation",
@@ -1335,7 +1335,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "puzzled",
@@ -1352,7 +1352,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "editorial",
@@ -1556,7 +1556,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "adj."
+      "wordType": "v."
     },
     {
       "english": "sources",
@@ -1828,7 +1828,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "adj."
+      "wordType": "v."
     },
     {
       "english": "expectations",
@@ -1896,7 +1896,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "adj."
+      "wordType": "v."
     },
     {
       "english": "scenario",
@@ -2389,7 +2389,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "regions",
@@ -2440,7 +2440,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "n."
     },
     {
       "english": "expressions",
@@ -2559,7 +2559,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "firm",
@@ -2576,7 +2576,7 @@
       "difficulty": "easy",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "propagating",
@@ -2729,7 +2729,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "empathy",
@@ -2763,7 +2763,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "three",
@@ -2780,7 +2780,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "imaging",
@@ -2848,7 +2848,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "attuned",
@@ -2865,7 +2865,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "meet",
@@ -2882,7 +2882,7 @@
       "difficulty": "easy",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "incorporate",
@@ -2933,7 +2933,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "spectacle",
@@ -3001,7 +3001,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "clot",
@@ -3018,7 +3018,7 @@
       "difficulty": "easy",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "shadow",
@@ -7234,7 +7234,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "process",
@@ -7336,7 +7336,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "green",
@@ -7353,7 +7353,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "invaluable",
@@ -7523,7 +7523,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "emulated",
@@ -7540,7 +7540,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "optimizing",
@@ -7591,7 +7591,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "subject",
@@ -7744,7 +7744,7 @@
       "difficulty": "easy",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "engineering",
@@ -7761,7 +7761,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "n."
     },
     {
       "english": "paddle",
@@ -7914,7 +7914,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adv."
     },
     {
       "english": "encouraging",
@@ -7948,7 +7948,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "n."
     },
     {
       "english": "assurance",
@@ -7999,7 +7999,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "campus",
@@ -8033,7 +8033,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "intentionally",
@@ -8067,7 +8067,7 @@
       "difficulty": "easy",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "adj."
+      "wordType": "v."
     },
     {
       "english": "drowning",
@@ -8135,7 +8135,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "description",
@@ -8169,7 +8169,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "vogue",
@@ -8220,7 +8220,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "overseeing",
@@ -8271,7 +8271,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "component",
@@ -8288,7 +8288,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "adj."
+      "wordType": "n."
     },
     {
       "english": "oyster",
@@ -8373,7 +8373,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "originated",
@@ -8390,7 +8390,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "shoots",
@@ -8492,7 +8492,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "maximize",
@@ -8560,7 +8560,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "n."
     },
     {
       "english": "accumulating",
@@ -8628,7 +8628,7 @@
       "difficulty": "easy",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "understanding",
@@ -8645,7 +8645,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "n."
     },
     {
       "english": "decline",
@@ -8662,7 +8662,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "relatively",
@@ -8713,7 +8713,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "watch",
@@ -8747,7 +8747,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "psychological",
@@ -8798,7 +8798,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "adj."
+      "wordType": "n."
     },
     {
       "english": "eventually",
@@ -8832,7 +8832,7 @@
       "difficulty": "easy",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "density",
@@ -8968,7 +8968,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "fears",
@@ -9002,7 +9002,7 @@
       "difficulty": "easy",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "situational",
@@ -9036,7 +9036,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "common",
@@ -9053,7 +9053,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "spices",
@@ -9087,7 +9087,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "favorite",
@@ -9104,7 +9104,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "similar",
@@ -9121,7 +9121,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "thrown",
@@ -9138,7 +9138,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "basically",
@@ -9240,7 +9240,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "n."
     },
     {
       "english": "helpful",
@@ -9342,7 +9342,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "everyone",
@@ -9359,7 +9359,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "pron."
     },
     {
       "english": "associated",
@@ -9376,7 +9376,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "gathering",
@@ -9410,7 +9410,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adv."
     },
     {
       "english": "camps",
@@ -9478,7 +9478,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "distinctive",
@@ -9563,7 +9563,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "instilled",
@@ -9580,7 +9580,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "constitution",
@@ -9631,7 +9631,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "protein",
@@ -9665,7 +9665,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "symptomatic",
@@ -9750,7 +9750,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "manipulate",
@@ -9886,7 +9886,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "generation",
@@ -9920,7 +9920,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "plants",
@@ -10124,7 +10124,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "prep."
     },
     {
       "english": "famous",
@@ -10158,7 +10158,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "convinced",
@@ -10175,7 +10175,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "career",
@@ -10226,7 +10226,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "relying",
@@ -10260,7 +10260,7 @@
       "difficulty": "easy",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "adj."
+      "wordType": "n."
     },
     {
       "english": "recognized",
@@ -10277,7 +10277,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "install",
@@ -10294,7 +10294,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "induced",
@@ -10311,7 +10311,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "variables",
@@ -10345,7 +10345,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "observed",
@@ -10362,7 +10362,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "radiative",
@@ -10413,7 +10413,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "headed",
@@ -10430,7 +10430,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "opt",
@@ -10447,7 +10447,7 @@
       "difficulty": "easy",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "insurance",
@@ -10651,7 +10651,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "implications",
@@ -10736,7 +10736,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "ferry",
@@ -10906,7 +10906,7 @@
       "difficulty": "easy",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "intensive",
@@ -11008,7 +11008,7 @@
       "difficulty": "easy",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "medium",
@@ -11331,7 +11331,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "culture",
@@ -11365,7 +11365,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "labour",
@@ -11518,7 +11518,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "distinction",
@@ -11552,7 +11552,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "n."
     },
     {
       "english": "concept",
@@ -11637,7 +11637,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "computer",
@@ -11926,7 +11926,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "suppressed",
@@ -11943,7 +11943,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "frustrated",
@@ -11960,7 +11960,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "lighting",
@@ -12147,7 +12147,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "galaxies",
@@ -12181,7 +12181,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "impacting",
@@ -12232,7 +12232,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "supposed",
@@ -12249,7 +12249,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "demographic",
@@ -12419,7 +12419,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "n."
     },
     {
       "english": "rote",
@@ -12453,7 +12453,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "dependence",
@@ -12521,7 +12521,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "contract",
@@ -12657,7 +12657,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "adj."
+      "wordType": "n."
     },
     {
       "english": "relief",
@@ -12793,7 +12793,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "heavy",
@@ -12810,7 +12810,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "factory",
@@ -12827,7 +12827,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "adj."
+      "wordType": "n."
     },
     {
       "english": "nearest",
@@ -12844,7 +12844,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "femininity",
@@ -12997,7 +12997,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "adj."
+      "wordType": "v."
     },
     {
       "english": "radical",
@@ -13065,7 +13065,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "cooperation",
@@ -13167,7 +13167,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "skeptical",
@@ -13218,7 +13218,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adv."
     },
     {
       "english": "intelligence",
@@ -13337,7 +13337,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "science",
@@ -13473,7 +13473,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "involved",
@@ -13490,7 +13490,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "alternative",
@@ -13915,7 +13915,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "academic",
@@ -14340,7 +14340,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "thorough",
@@ -14357,7 +14357,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "rigorous",
@@ -14408,7 +14408,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "accurate",
@@ -14425,7 +14425,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "precise",
@@ -14442,7 +14442,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "subjective",
@@ -14493,7 +14493,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "impartial",
@@ -14527,7 +14527,7 @@
       "difficulty": "easy",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "balanced",
@@ -14544,7 +14544,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "generalizable",
@@ -14782,7 +14782,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "conclusive",
@@ -14833,7 +14833,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "exhaustive",
@@ -14952,7 +14952,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "unique",
@@ -14969,7 +14969,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "distinct",
@@ -14986,7 +14986,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "separate",
@@ -15003,7 +15003,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "collective",
@@ -15037,7 +15037,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "mutual",

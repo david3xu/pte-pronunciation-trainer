@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-10-07T22:04:08.851Z",
+    "generated": "2025-10-08T01:46:08.627Z",
     "totalTerms": 2408,
     "source": "pte-intermediate-vocabulary-with-ipa",
     "description": "PTE Intermediate vocabulary (simple list fallback, IPA when available)",
@@ -1199,7 +1199,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "contribution",
@@ -1420,7 +1420,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "judgment",
@@ -6571,7 +6571,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "continue",
@@ -7999,7 +7999,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "Paris",
@@ -8271,7 +8271,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "treat",
@@ -8832,7 +8832,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "middle",
@@ -10260,7 +10260,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "stage",
@@ -10311,7 +10311,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "India",
@@ -11059,7 +11059,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "rocket",
@@ -11960,7 +11960,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "propose",
@@ -12673,7 +12673,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "proper",
@@ -15443,7 +15443,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "indigenous",
@@ -15766,7 +15766,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "num. trillion",
@@ -16156,7 +16156,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "nap",
@@ -17022,7 +17022,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "panzer",
@@ -17668,7 +17668,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "desk",
@@ -19626,7 +19626,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "institutional",
@@ -20187,7 +20187,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "classroom",
@@ -23008,7 +23008,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "reflect",
@@ -23297,7 +23297,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "column",
@@ -23977,7 +23977,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "basically",
@@ -24079,7 +24079,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "freshwater",
@@ -24164,7 +24164,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "mother",
@@ -24419,7 +24419,7 @@
       "difficulty": "hard",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "Federal",
@@ -26493,7 +26493,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "hiring",
@@ -26510,7 +26510,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "asset",
@@ -27666,7 +27666,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "ease",
@@ -30573,7 +30573,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "govern",
@@ -31032,7 +31032,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "Ironbridge",
@@ -31796,7 +31796,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "proportion",
@@ -32119,7 +32119,7 @@
       "difficulty": "normal",
       "category": "pte-fib-listening",
       "source": "pte-fib-listening-with-ipa",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "fertile",

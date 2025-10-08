@@ -171,6 +171,12 @@ class AudioControls {
         }
     }
 
+    handlePlaybackEnd() {
+        console.log('[AudioControls] 🛑 Playback ended');
+        this.pauseAutoPlay();
+        window.progressTracker.updateStatus('Playback completed');
+    }
+
     async handleDatasetCompletion() {
         // Get current practice mode to determine loop behavior
         const practiceMode = window.settingsModule ? 
@@ -256,15 +262,8 @@ class AudioControls {
 
         this.currentIndex++;
         if (this.currentIndex >= totalWords) {
-            // At end of current category - check if we can advance to next topic
-            const nextCategory = window.pteVocabularyManager.getNextCategory();
-            if (nextCategory) {
-                this.advanceToNextCategory(nextCategory);
-            } else {
-                // Only "all-categories" reaches here - loop within same category
-                this.currentIndex = 0;
-            }
-            return;
+            // Loop to first word in current book
+            this.currentIndex = 0;
         }
 
         this.updateCurrentDisplay();
@@ -279,39 +278,14 @@ class AudioControls {
 
         this.currentIndex--;
         if (this.currentIndex < 0) {
-            // At beginning of current category - check if we can go to previous topic
-            const prevCategory = window.pteVocabularyManager.getPreviousCategory();
-            if (prevCategory) {
-                this.advanceToPreviousCategory(prevCategory);
-            } else {
-                // Only "all-categories" reaches here - loop within same category
-                this.currentIndex = totalWords - 1;
-            }
-            return;
+            // Loop to last word in current book
+            this.currentIndex = totalWords - 1;
         }
 
         this.updateCurrentDisplay();
     }
 
-    advanceToPreviousCategory(prevCategory) {
-        const currentCategoryName = window.pteVocabularyManager.getCategoryLabel(window.pteVocabularyManager.currentCategory);
-        const prevCategoryName = window.pteVocabularyManager.getCategoryLabel(prevCategory);
 
-        // Check for circular progression (reverse)
-        const isCircular = (window.pteVocabularyManager.currentCategory === 'social-welfare' && prevCategory === 'travel-immigration');
-
-        if (isCircular) {
-            window.progressTracker.updateStatus(`🔄 Reverse circle complete! Going back to ${prevCategoryName}...`);
-        } else {
-            window.progressTracker.updateStatus(`⬅️ Moving back from ${currentCategoryName} to ${prevCategoryName}...`);
-        }
-
-        // Load previous category and set to last word
-        window.pteVocabularyManager.loadCategory(prevCategory);
-        this.currentIndex = window.pteVocabularyManager.getTotalWords() - 1;
-
-        this.updateCurrentDisplay();
-    }
 
     updateCurrentDisplay() {
         const currentWord = window.pteVocabularyManager.getCurrentWord(this.currentIndex);

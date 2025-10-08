@@ -133,10 +133,14 @@ class VoiceSelector {
 
         const voices = speechSynthesis.getVoices();
 
-        // Clear existing options except the first "Auto" option
-        while (voiceSelect.children.length > 1) {
-            voiceSelect.removeChild(voiceSelect.lastChild);
-        }
+        // Clear all existing options
+        voiceSelect.innerHTML = '';
+        
+        // Add "Auto" option first
+        const autoOption = document.createElement('option');
+        autoOption.value = 'auto';
+        autoOption.textContent = '🤖 Auto (Best Available)';
+        voiceSelect.appendChild(autoOption);
 
         // ONLY MALE VOICES - NO FEMALE VOICES IN DROPDOWN
         const config = window.appConfig || new AppConfig();

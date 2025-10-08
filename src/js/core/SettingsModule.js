@@ -353,9 +353,16 @@ class SettingsModule {
                     console.warn('⚠️  tts.repeatModes not found in config');
                     return [];
                 }
+                // Provide descriptive labels for repeat modes
+                const labels = {
+                    'once': 'Once (1x)',
+                    'twice': 'Twice (2x)',
+                    'intensive': 'Intensive (3x)',
+                    'loop': 'Loop (Continuous)'
+                };
                 return repeatModes.map(mode => ({
                     id: mode,
-                    label: mode.charAt(0).toUpperCase() + mode.slice(1)
+                    label: labels[mode] || mode.charAt(0).toUpperCase() + mode.slice(1)
                 }));
             }
             

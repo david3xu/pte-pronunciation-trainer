@@ -2,7 +2,7 @@
 // Service Worker for PTE Pronunciation Trainer
 // Handles offline caching and background sync
 
-const CACHE_VERSION = 'v40'; // Fix: Prevent tts:speakingStarted from overwriting practice mode display
+const CACHE_VERSION = 'v41'; // Updated: Removed SettingsManager.js, added 3 new vocab books
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode
@@ -27,7 +27,7 @@ const urlsToCache = isDevelopment ? [
   '/src/js/utils/Storage.js',
   '/src/js/utils/StateManager.js',
   '/src/js/utils/CacheMigration.js',
-  '/src/js/core/SettingsManager.js',
+  '/src/js/core/SettingsModule.js',
   '/src/js/core/PTEVocabularyManager.js',
   '/src/js/core/ProgressTracker.js',
   '/src/js/data/extractors/PTETermsExtractor.js',
@@ -38,10 +38,13 @@ const urlsToCache = isDevelopment ? [
   '/src/js/ui/UIController.js',
   '/src/js/ui/SettingsPanel.js',
   '/src/js/core/PTEApp.js',
-  // Vocabulary datasets
+  // Vocabulary datasets (6 books)
   '/data/processed/pte-fib-listening-dataset.json',
   '/data/processed/pte-beginner-vocabulary.json',
   '/data/processed/pte-intermediate-vocabulary.json',
+  '/data/processed/pte-advanced-vocabulary.json',
+  '/data/processed/pte-ra-vocabulary.json',
+  '/data/processed/pte-rs-vocabulary.json',
   // Phase 2: PTE practice datasets
   '/data/processed/pte-repeat-sentence-dataset.json',
   '/data/processed/pte-answer-short-question-dataset.json',
@@ -63,7 +66,7 @@ const urlsToCache = isDevelopment ? [
   '/src/js/utils/Storage.js',
   '/src/js/utils/StateManager.js',
   '/src/js/utils/CacheMigration.js',
-  '/src/js/core/SettingsManager.js',
+  '/src/js/core/SettingsModule.js',
   '/src/js/core/PTEVocabularyManager.js',
   '/src/js/core/ProgressTracker.js',
   '/src/js/data/extractors/PTETermsExtractor.js',
@@ -74,10 +77,13 @@ const urlsToCache = isDevelopment ? [
   '/src/js/ui/UIController.js',
   '/src/js/ui/SettingsPanel.js',
   '/src/js/core/PTEApp.js',
-  // Vocabulary datasets
+  // Vocabulary datasets (6 books)
   '/data/processed/pte-fib-listening-dataset.json',
   '/data/processed/pte-beginner-vocabulary.json',
   '/data/processed/pte-intermediate-vocabulary.json',
+  '/data/processed/pte-advanced-vocabulary.json',
+  '/data/processed/pte-ra-vocabulary.json',
+  '/data/processed/pte-rs-vocabulary.json',
   // NEW: PTE practice datasets (Phase 2)
   '/data/processed/pte-repeat-sentence-dataset.json',
   '/data/processed/pte-answer-short-question-dataset.json',

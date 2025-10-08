@@ -186,7 +186,11 @@ class UIController {
         const defaultDelay = this.config.get('tts.delays.long'); // Match SettingsModule default
         this.populateDropdown('delaySelect', 'delay', String(defaultDelay));
         this.populateDropdown('repeatSelect', 'repeat', 'once');
-        this.populateDropdown('voiceSelect', 'voice', 'auto');
+        
+        // Voice dropdown is populated separately by VoiceSelector
+        if (window.voiceSelector) {
+            window.voiceSelector.populateVoiceOptions();
+        }
     }
 
     /**

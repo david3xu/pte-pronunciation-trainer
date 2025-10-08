@@ -215,12 +215,23 @@ class AppConfig {
                 paths: {
                     dataset: '/data/processed/pte-fib-listening-dataset.json',
                     byMode: {
+                        // Vocabulary learning modes
                         'pte-fib-listening': '/data/processed/pte-fib-listening-dataset.json',
                         'pte-beginner': '/data/processed/pte-beginner-vocabulary.json',
                         'pte-intermediate': '/data/processed/pte-intermediate-vocabulary.json',
                         'pte-advanced': '/data/processed/pte-advanced-vocabulary.json',
                         'pte-ra': '/data/processed/pte-ra-vocabulary.json',
-                        'pte-rs': '/data/processed/pte-rs-vocabulary.json'
+                        'pte-rs': '/data/processed/pte-rs-vocabulary.json',
+                        'pte-must-know': '/data/processed/pte-must-know-vocabulary.json',
+                        'pte-wfd-vocab': '/data/processed/pte-wfd-vocabulary.json',
+                        'pte-reading-fib': '/data/processed/pte-reading-fib-vocabulary.json',
+                        'pte-reading-fib-drag': '/data/processed/pte-reading-fib-drag-vocabulary.json',
+                        'pte-asq-answers': '/data/processed/pte-asq-answers-vocabulary.json',
+                        
+                        // Practice datasets (RS/ASQ/WFD)
+                        'pte-repeat-sentence': '/data/processed/pte-repeat-sentence-dataset.json',
+                        'pte-answer-short-question': '/data/processed/pte-answer-short-question-dataset.json',
+                        'pte-write-from-dictation': '/data/processed/pte-write-from-dictation-dataset.json'
                     },
                     source: 'data/source/pte/vocabs/',
                     processed: 'data/processed/',

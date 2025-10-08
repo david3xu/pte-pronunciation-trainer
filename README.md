@@ -2,18 +2,22 @@
 
 A specialized web-based pronunciation training application for **PTE exam preparation**, featuring comprehensive vocabulary and practice modes for all key PTE speaking and listening sections.
 
-**✅ v2.1 - COMPLETE VOCABULARY LIBRARY (Oct 2025)** - Now includes 6 vocabulary books with 8,000+ terms and auto-loop functionality!
+**✅ v2.3 - PRODUCTION READY (Oct 2025)** - Event-driven architecture, 10 vocabulary books, 3 practice modes, continuous learning!
 
 ## 🎯 Key Features
 
-### 📚 **Complete PTE Vocabulary Library (6 Books)**
+### 📚 **Complete PTE Vocabulary Library (10 Books)**
 - **🎧 FIB Listening** - 885 fill-in-the-blank terms with IPA pronunciation
 - **📗 Beginner Vocabulary** - 383 high-frequency terms
 - **📘 Intermediate Vocabulary** - 2,408 intermediate terms
-- **📕 Advanced Vocabulary** - 2,703 advanced terms ✨ NEW
-- **📚 Read Aloud (RA) Vocabulary** - 788 RA-specific terms ✨ NEW
-- **� Repeat Sentence (RS) Vocabulary** - 887 RS-specific terms ✨ NEW
-- **Total**: 8,054 vocabulary terms with IPA pronunciation
+- **📕 Advanced Vocabulary** - 2,703 advanced terms
+- **📚 Read Aloud (RA) Vocabulary** - 788 RA-specific terms
+- **🎯 Repeat Sentence (RS) Vocabulary** - 887 RS-specific terms
+- **⭐ Must-Know Vocabulary** - 1,397 essential PTE terms
+- **✍️ WFD Vocabulary** - Write From Dictation specific terms
+- **📖 Reading FIB** - Reading fill-in-the-blanks vocabulary
+- **🔀 Reading FIB Drag** - Reading FIB drag & drop vocabulary
+- **Total**: 10,000+ vocabulary terms with IPA pronunciation
 
 ### 🎤 **PTE Practice Modes (Sentence Datasets)**
 - **🎤 Repeat Sentence (RS)** - 620 practice sentences
@@ -21,13 +25,14 @@ A specialized web-based pronunciation training application for **PTE exam prepar
 - **✍️ Write From Dictation (WFD)** - 1,195 dictation sentences
 - **Total**: 2,507 practice sentences/questions
 
-### 🔄 **Auto-Loop Learning System** ✨ NEW
-- **Vocabulary Auto-Loop** - Automatically cycles through all 6 books
-  - FIB → Beginner → Intermediate → Advanced → RA → RS → (repeat)
-  - Seamless transition when completing a book
-  - Manual book switching resets to word #1
-- **Sentence Auto-Restart** - Restarts dataset when complete
-  - Continuous practice without manual intervention
+### 🔄 **Smart Learning System** ✨
+- **Loop Mode (Default)** - Continuous cycling through entire vocabulary book
+  - Each word plays once, automatically moves to next
+  - Reaches end → automatically restarts from beginning
+  - Perfect for passive learning and spaced repetition
+- **Vocabulary Auto-Loop** - Cycles through all 10 books endlessly
+- **Sentence Auto-Restart** - Continuous practice without intervention
+- **Flexible Repeat Modes** - Once (1x), Twice (2x), Intensive (3x), Loop (Continuous)
 
 ### 🎓 **Unified Learning Interface**
 - **Single UI for all modes** - Consistent, easy-to-use interface
@@ -36,12 +41,12 @@ A specialized web-based pronunciation training application for **PTE exam prepar
 - **Comprehensive datasets** - Over 10,000 practice items total
 
 ### 🔊 **Advanced Pronunciation Training**
-- **Smart Voice Selection** - Google UK English Male (primary) with multiple fallbacks
-- **Multiple Speeds** - Slow (0.7x) → Normal (1.0x) → Fast (1.3x) progression
-- **Repeat Modes** - 1x, 2x (Slow+Normal), 3x (Slow+Normal+Fast), Loop
-- **Configurable Delays** - 1-3 second intervals (default: 3 seconds)
+- **Smart Voice Selection** - Auto-selects best available male voice (Google UK English Male preferred)
+- **4 Voice Options** - Microsoft James (AU), Google UK Male (GB), Alex/Daniel (US)
+- **Multiple Speeds** - Slow (0.7x, default) → Normal (1.0x) → Fast (1.3x)
+- **Repeat Modes** - Once (1x), Twice (2x), Intensive (3x), Loop (Continuous, default)
+- **Configurable Pauses** - Short (1s), Normal (2s), Long (3s, default)
 - **Professional pronunciation** - Clear, exam-appropriate speech patterns
-- **Universal TTS** - Works for words, sentences, and questions
 
 ### 📱 **Modern User Experience**
 - **Mobile-Responsive Design** (320px to 1400px+) with touch optimization
@@ -49,15 +54,15 @@ A specialized web-based pronunciation training application for **PTE exam prepar
 - **Progress Tracking** - localStorage persistence with study statistics
 - **Dark/Light Mode** - Adaptive theming for comfortable study sessions
 
-### 🚀 **Streamlined Architecture**
-- **Dynamic Dataset Loading** - Map-based lazy loading for all 6 vocabulary books
-- **Event-Driven System** - Complete event-driven architecture with EventBus
-- **PTE Data Pipeline** - `npm run data` processes all 9 datasets (6 vocab + 3 sentence)
-- **Centralized Configuration** - ALL configuration values in `src/js/shared/Config.js` - NO hardcoded values
-- **Unified Display System** - Single UI reused for all practice modes
-- **Module Namespace** - Clean architecture with optimized code structure
-- **Built-in Validation** - Data integrity checks and error reporting
-- **PTE-Focused** - Specialized for PTE speaking and listening sections
+### 🚀 **Production-Ready Architecture**
+- **Event-Driven System** - Complete decoupling via EventBus (zero direct dependencies)
+- **Dependency Graph Manager** - InitializationManager with topological sort
+- **Global Error Handling** - Centralized error events with fail-fast for critical modules
+- **Network Resilience** - Retry logic with exponential backoff (1s, 2s, 4s)
+- **Health Checks** - Module validation with critical/non-critical distinction
+- **Dynamic Dataset Loading** - Lazy loading for all 10 vocabulary books + 3 practice modes
+- **Centralized Configuration** - ALL values in `Config.js` - NO hardcoded values
+- **Service Worker** - v54 with progressive enhancement and cache management
 
 ## 🚀 Quick Start
 

@@ -192,22 +192,22 @@ class UIController {
         if (!settingsModule) return;
 
         // Practice mode dropdown
-        this.populateDropdown('practiceModeSelect', 'practiceMode', 'vocabulary');
+        this.populateDropdown('practiceModeSelect', 'practiceMode', this.config.get('data.defaults.practiceMode'));
 
         // Vocabulary book (learning mode) dropdown
-        this.populateDropdown('learningModeSelect', 'learningMode', 'pte-fib-listening');
+        this.populateDropdown('learningModeSelect', 'learningMode', this.config.get('data.defaults.learningMode'));
         
         // Practice dataset dropdown (for RS/ASQ/WFD modes)
-        this.populateDropdown('practiceDatasetSelect', 'practiceDataset', 'pte-repeat-sentence');
+        this.populateDropdown('practiceDatasetSelect', 'practiceDataset', this.config.get('data.defaults.practiceDataset'));
 
         // Difficulty dropdown
-        this.populateDropdown('difficultySelect', 'difficulty', 'all');
+        this.populateDropdown('difficultySelect', 'difficulty', this.config.get('data.defaults.difficulty'));
 
         // Audio dropdowns
-        this.populateDropdown('speedSelect', 'speed', '0.7');
+        this.populateDropdown('speedSelect', 'speed', String(this.config.get('data.defaults.speed')));
         const defaultDelay = this.config.get('tts.delays.long'); // Match SettingsModule default
         this.populateDropdown('delaySelect', 'delay', String(defaultDelay));
-        this.populateDropdown('repeatSelect', 'repeat', 'loop'); // Loop for continuous learning
+        this.populateDropdown('repeatSelect', 'repeat', this.config.get('data.defaults.repeat'));
         
         // Voice dropdown is populated separately by VoiceSelector
         if (window.voiceSelector) {

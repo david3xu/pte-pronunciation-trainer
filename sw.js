@@ -2,7 +2,7 @@
 // Service Worker for PTE Pronunciation Trainer
 // Handles offline caching and background sync
 
-const CACHE_VERSION = 'v41'; // Updated: Removed SettingsManager.js, added 3 new vocab books
+const CACHE_VERSION = 'v42'; // Version 42: Fixed AudioControls.js legacy CCL code (handlePlaybackEnd, previousWord, nextWord)
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

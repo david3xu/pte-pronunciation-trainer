@@ -51,7 +51,10 @@ class PTEVocabularyTrainer {
     // 1.1. Initialize settings manager (handles complex settings logic)
     this.initializeSettingsManager();
 
-    // 1.2. Initialize dataset manager (Phase 2 - unified dataset loading)
+    // 1.2. Initialize SettingsModule (NEW: event-driven settings architecture)
+    this.initializeSettingsModule();
+
+    // 1.3. Initialize dataset manager (Phase 2 - unified dataset loading)
     await this.initializeDatasetManager();
 
     // 2. Initialize PTE vocabulary manager (loads data asynchronously)
@@ -111,6 +114,24 @@ class PTEVocabularyTrainer {
     if (window.settingsManager) {
     } else {
       console.warn('⚠️ SettingsManager not found - using legacy settings handling');
+    }
+  }
+
+  initializeSettingsModule() {
+    // Initialize SettingsModule for event-driven settings architecture
+    if (window.SettingsModule) {
+      try {
+        window.settingsModule = new SettingsModule(
+          window.appConfig,
+          window.eventBus,
+          window.storage
+        );
+        console.log('✅ PTEApp: SettingsModule initialized');
+      } catch (error) {
+        console.error('❌ PTEApp: Failed to initialize SettingsModule:', error);
+      }
+    } else {
+      console.warn('⚠️ SettingsModule not found - using legacy settings handling');
     }
   }
 

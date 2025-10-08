@@ -74,10 +74,7 @@
                 <div class="setting-item">
                     <label for="practiceModeSelect">Practice Type:</label>
                     <select id="practiceModeSelect">
-                        <option value="vocabulary" selected>📚 Vocabulary Training</option>
-                        <option value="rs">🎤 Repeat Sentence (RS)</option>
-                        <option value="asq">❓ Answer Short Question (ASQ)</option>
-                        <option value="wfd">✍️ Write From Dictation (WFD)</option>
+                        <!-- Options populated dynamically from Config.js data.practiceModes -->
                     </select>
                 </div>
                 
@@ -102,38 +99,31 @@
                 <div class="setting-item">
                     <label for="difficultySelect">Difficulty Level:</label>
                     <select id="difficultySelect">
-                        <option value="all" selected>🌟 All Difficulties</option>
+                        <!-- Options populated dynamically from Config.js -->
                     </select>
                 </div>
                 <div class="setting-item">
                     <label for="speedSelect">Speed:</label>
                     <select id="speedSelect">
-                        <option value="0.7" selected>Slow</option>
-                        <option value="1.0">Normal</option>
-                        <option value="1.3">Fast</option>
+                        <!-- Options populated dynamically from Config.js -->
                     </select>
                 </div>
                 <div class="setting-item">
                     <label for="delaySelect">Pause:</label>
                     <select id="delaySelect">
-                        <option value="1000">1 sec</option>
-                        <option value="2000">2 sec</option>
-                        <option value="3000" selected>3 sec</option>
+                        <!-- Options populated dynamically from Config.js -->
                     </select>
                 </div>
                 <div class="setting-item">
                     <label for="repeatSelect">Repeat:</label>
                     <select id="repeatSelect">
-                        <option value="once" selected>1x - Term Only</option>
-                        <option value="twice">2x - Slow+Normal</option>
-                        <option value="intensive">3x - Slow+Normal+Fast + Example</option>
-                        <option value="loop">Loop + Examples</option>
+                        <!-- Options populated dynamically from Config.js -->
                     </select>
                 </div>
                 <div class="setting-item">
                     <label for="voiceSelect">Voice:</label>
                     <select id="voiceSelect">
-                        <option value="auto">🎯 Auto (Best Match)</option>
+                        <!-- Options populated dynamically via VoiceSelector.js -->
                     </select>
                 </div>
             </div>
@@ -177,6 +167,7 @@
 
     <!-- Core Logic Modules -->
     <script src="src/js/core/SettingsManager.js?v=1759740000"></script>
+    <script src="src/js/core/SettingsModule.js?v=1759740000"></script>
     <script src="src/js/core/PTEVocabularyManager.js?v=1759740000"></script>
     <script src="src/js/core/ProgressTracker.js?v=1759740000"></script>
 

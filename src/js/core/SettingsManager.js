@@ -244,6 +244,9 @@ class SettingsManager {
    */
   getAvailableOptions(key) {
     switch (key) {
+      case 'practiceMode':
+        return this.config.get('data.practiceModes');
+      
       case 'learningMode':
         return this.config.get('data.learningModes');
 
@@ -275,11 +278,13 @@ class SettingsManager {
         }));
 
       case 'delay':
-        return Object.entries(this.config.get('tts.delays')).map(([key, value]) => ({
+        // Only show user-facing delay options (1/2/3 sec), exclude internal timing values
+        const userDelays = { short: 1000, normal: 2000, long: 3000 };
+        return Object.entries(userDelays).map(([key, value]) => ({
           id: String(value),
           label: key === 'short' ? '1 sec' :
             key === 'normal' ? '2 sec' :
-              key === 'long' ? '3 sec' : '4 sec'
+              key === 'long' ? '3 sec' : key
         }));
 
       case 'repeat':

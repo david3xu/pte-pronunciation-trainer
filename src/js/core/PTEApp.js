@@ -38,6 +38,8 @@ class PTEVocabularyTrainer {
   }
 
   async initializeModules() {
+    console.log('🚀 PTEApp: Starting module initialization...');
+    const initStart = Date.now();
 
     // 0. Register service worker for PWA and background operation
     this.registerServiceWorker();
@@ -48,45 +50,71 @@ class PTEVocabularyTrainer {
     // 1. Initialize SettingsModule (event-driven settings architecture)
     // Note: StateManager was removed - settings now load directly from storage
     await this.initializeSettingsModule();
+    this.validateModule('SettingsModule', window.settingsModule, {
+      requiredProperties: ['settings', 'config', 'eventBus'],
+      critical: true
+    });
 
     // 2. Initialize dataset manager (Phase 2 - unified dataset loading)
     await this.initializeDatasetManager();
+    this.validateModule('DatasetManager', window.datasetManager, {
+      requiredProperties: ['datasets'],
+      critical: false // Not critical - vocabulary manager is primary
+    });
 
-    // 2. Initialize PTE vocabulary manager (loads data asynchronously)
+    // 3. Initialize PTE vocabulary manager (loads data asynchronously)
     if (window.pteVocabularyManager) {
       await window.pteVocabularyManager.initialize();
+      this.validateModule('PTEVocabularyManager', window.pteVocabularyManager, {
+        requiredProperties: ['datasets', 'currentWords'],
+        critical: true,
+        customCheck: () => window.pteVocabularyManager.datasets.size > 0,
+        customCheckMessage: 'No datasets loaded'
+      });
+    } else {
+      console.error('❌ PTEApp: pteVocabularyManager not found');
+      throw new Error('Critical module pteVocabularyManager not available');
     }
 
-    // 3. Initialize UI controller and bind events
+    // 4. Initialize UI controller and bind events
     if (window.uiController) {
       window.uiController.bindEventListeners();
+      this.validateModule('UIController', window.uiController, {
+        requiredProperties: ['config'],
+        critical: true
+      });
+    } else {
+      console.error('❌ PTEApp: uiController not found');
+      throw new Error('Critical module uiController not available');
     }
 
-    // 4. Sync settings from HTML
+    // 5. Sync settings from HTML
     if (window.uiController) {
       window.uiController.syncRepeatModeFromHTML();
     }
 
-    // 5. Update initial UI state
+    // 6. Update initial UI state
     if (window.uiController) {
       window.uiController.updateUI();
     }
 
-    // 6. Populate voice options when available
+    // 7. Populate voice options when available
     this.initializeVoices();
 
-    // 7. Setup keyboard shortcuts
+    // 8. Setup keyboard shortcuts
     this.setupKeyboardShortcuts();
 
-    // 8. Setup fullscreen functionality
+    // 9. Setup fullscreen functionality
     this.setupFullscreen();
 
-    // 9. Restore UI settings from state
+    // 10. Restore UI settings from state
     this.restoreUIState().catch(console.error);
-
 
     // Hide mobile loading indicator
     this.hideMobileLoadingIndicator();
+    
+    const initTime = Date.now() - initStart;
+    console.log(`✅ PTEApp: All modules initialized successfully in ${initTime}ms`);
   }
 
   async initializeSettingsModule() {
@@ -113,6 +141,67 @@ class PTEVocabularyTrainer {
       console.error('❌ PTEApp:', errorMsg);
       throw new Error(errorMsg);
     }
+  }
+
+  /**
+   * Validate that a module initialized correctly
+   * @param {string} moduleName - Name of the module for logging
+   * @param {Object} moduleInstance - The module instance to validate
+   * @param {Object} options - Validation options
+   */
+  validateModule(moduleName, moduleInstance, options = {}) {
+    const {
+      requiredProperties = [],
+      critical = false,
+      customCheck = null,
+      customCheckMessage = 'Custom validation failed'
+    } = options;
+
+    // Check module exists
+    if (!moduleInstance) {
+      const errorMsg = `${moduleName} is null or undefined`;
+      console.error(`❌ PTEApp: ${errorMsg}`);
+      if (critical) {
+        throw new Error(`Critical module validation failed: ${errorMsg}`);
+      }
+      return false;
+    }
+
+    // Check required properties
+    const missingProps = requiredProperties.filter(prop => !(prop in moduleInstance));
+    if (missingProps.length > 0) {
+      const errorMsg = `${moduleName} missing required properties: ${missingProps.join(', ')}`;
+      console.error(`❌ PTEApp: ${errorMsg}`);
+      if (critical) {
+        throw new Error(`Critical module validation failed: ${errorMsg}`);
+      }
+      return false;
+    }
+
+    // Run custom validation check
+    if (customCheck && typeof customCheck === 'function') {
+      try {
+        const result = customCheck();
+        if (!result) {
+          const errorMsg = `${moduleName} failed custom validation: ${customCheckMessage}`;
+          console.error(`❌ PTEApp: ${errorMsg}`);
+          if (critical) {
+            throw new Error(`Critical module validation failed: ${errorMsg}`);
+          }
+          return false;
+        }
+      } catch (error) {
+        const errorMsg = `${moduleName} custom validation threw error: ${error.message}`;
+        console.error(`❌ PTEApp: ${errorMsg}`);
+        if (critical) {
+          throw new Error(`Critical module validation failed: ${errorMsg}`);
+        }
+        return false;
+      }
+    }
+
+    console.log(`✅ PTEApp: ${moduleName} validation passed`);
+    return true;
   }
 
   async initializeDatasetManager() {

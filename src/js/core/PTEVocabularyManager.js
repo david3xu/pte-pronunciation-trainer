@@ -120,12 +120,43 @@ class PTEVocabularyManager {
         this.datasets.set(mode, dataset);
         console.log(`[PTEVocabularyManager] ✅ Loaded ${mode}: ${dataset.vocabulary?.length || 0} words`);
       } else {
-        console.warn(`[PTEVocabularyManager] ⚠️ No path configured for mode: ${mode}`);
+        const errorMsg = `No path configured for mode: ${mode}`;
+        console.warn(`[PTEVocabularyManager] ⚠️ ${errorMsg}`);
+        
+        // Emit error event for UI notification
+        if (window.eventBus) {
+          window.eventBus.emit('vocabulary:load-error', {
+            mode,
+            error: errorMsg,
+            severity: 'warning'
+          });
+        }
+        
         this.datasets.set(mode, { vocabulary: [] });
       }
     } catch (error) {
-      console.error(`[PTEVocabularyManager] ❌ Error loading ${mode} dataset:`, error);
-      this.datasets.set(mode, { vocabulary: [] });
+      const errorMsg = `Error loading ${mode} dataset: ${error.message}`;
+      console.error(`[PTEVocabularyManager] ❌ ${errorMsg}`, error);
+      
+      // Emit error event for centralized error handling
+      if (window.eventBus) {
+        window.eventBus.emit('vocabulary:load-error', {
+          mode,
+          error: errorMsg,
+          originalError: error,
+          severity: 'error'
+        });
+      }
+      
+      // Set empty fallback but make it obvious something failed
+      this.datasets.set(mode, { 
+        vocabulary: [],
+        _loadError: errorMsg,
+        _timestamp: new Date().toISOString()
+      });
+      
+      // Don't throw - allow app to continue with empty dataset
+      // But user will be notified via event system
     }
   }
 

@@ -101,7 +101,7 @@ class SettingsModule {
                         window.ttsEngine.currentRepeatCount = 0;
                     }
                 },
-                default: () => 'once',
+                default: () => 'loop', // Loop through all words continuously
                 storageKey: 'repeat',
                 description: 'Repeat mode (once/twice/intensive/loop)'
             },

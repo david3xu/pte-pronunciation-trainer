@@ -339,7 +339,7 @@ class AppConfig {
                     difficulty: 'all', // Show all difficulty levels (normal, hard, easy)
                     speed: 'tts.speeds.slow',
                     delay: 'tts.delays.long',
-                    repeat: 'once',
+                    repeat: 'loop', // Loop through all words continuously
                     voice: 'auto',
                     learningMode: 'pte-fib-listening'
                 },

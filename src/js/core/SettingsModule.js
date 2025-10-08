@@ -106,7 +106,7 @@ class SettingsModule {
                         window.ttsEngine.currentRepeatCount = 0;
                     }
                 },
-                default: () => 'loop', // Loop through all words continuously
+                default: () => this.config.get('data.defaults.repeat'),
                 storageKey: 'repeat',
                 description: 'Repeat mode (once/twice/intensive/loop)'
             },
@@ -123,7 +123,7 @@ class SettingsModule {
                         console.warn('⚠️ VoiceSelector not ready yet, voice setting deferred');
                     }
                 },
-                default: () => 'auto',
+                default: () => this.config.get('data.defaults.voice'),
                 storageKey: 'voice',
                 description: 'TTS voice (auto or specific voice name)'
             },
@@ -141,7 +141,7 @@ class SettingsModule {
                         console.warn('⚠️ PTEVocabularyManager not ready yet, difficulty setting deferred');
                     }
                 },
-                default: () => 'all',
+                default: () => this.config.get('data.defaults.difficulty'),
                 storageKey: 'difficulty',
                 description: 'Difficulty filter (all/easy/normal/hard)'
             },
@@ -158,7 +158,7 @@ class SettingsModule {
                         console.warn('⚠️ PTEVocabularyManager not ready yet, learning mode setting deferred');
                     }
                 },
-                default: () => 'pte-fib-listening',
+                default: () => this.config.get('data.defaults.learningMode'),
                 storageKey: 'learningMode',
                 description: 'Vocabulary book selection'
             },
@@ -185,15 +185,42 @@ class SettingsModule {
                     // Set global practice mode
                     window.currentPracticeMode = value;
                     
+                    // Apply practice mode mapping from Config.js - no hardcoded values
+                    const modeMapping = this.config.get('data.practiceModeMapping');
+                    const mapping = modeMapping && modeMapping[value];
+                    
+                    if (mapping) {
+                        console.log(`[SettingsModule] Applying mode mapping for '${value}':`, mapping);
+                        
+                        // If this mode uses learning mode (vocabulary), ensure learning mode is set
+                        if (mapping.usesLearningMode && mapping.defaultLearningMode) {
+                            // Only set if no learning mode is currently set
+                            const currentLearningMode = this.exportSettings().learningMode;
+                            if (!currentLearningMode) {
+                                console.log(`[SettingsModule] Setting default learning mode: ${mapping.defaultLearningMode}`);
+                                this.updateSetting('learningMode', mapping.defaultLearningMode);
+                            }
+                        }
+                        
+                        // If this mode uses practice dataset (rs/asq/wfd), ensure dataset is set
+                        if (mapping.usesPracticeDataset && mapping.defaultPracticeDataset) {
+                            console.log(`[SettingsModule] Setting practice dataset: ${mapping.defaultPracticeDataset}`);
+                            this.updateSetting('practiceDataset', mapping.defaultPracticeDataset);
+                        }
+                    } else {
+                        console.warn(`[SettingsModule] ⚠️ No mapping found for practice mode: ${value}`);
+                    }
+                    
                     // Emit mode:changed event AFTER the change (standardized from Config.js)
                     const modeChangedEvent = window.appConfig.get('events.mode.practice.changed');
                     this.eventBus.emit(modeChangedEvent, { 
                         mode: value,
                         oldMode,
+                        mapping: mapping || null,
                         timestamp: Date.now()
                     });
                 },
-                default: () => 'vocabulary',
+                default: () => this.config.get('data.defaults.practiceMode'),
                 storageKey: 'practiceMode',
                 description: 'Practice type (vocabulary/rs/asq/wfd)'
             },
@@ -208,7 +235,7 @@ class SettingsModule {
                     const datasetChangedEvent = window.appConfig.get('events.dataset.practice.changed');
                     this.eventBus.emit(datasetChangedEvent, { dataset: value });
                 },
-                default: () => 'pte-repeat-sentence',
+                default: () => this.config.get('data.defaults.practiceDataset'),
                 storageKey: 'practiceDataset',
                 description: 'Practice dataset selection (RS/ASQ/WFD)'
             }

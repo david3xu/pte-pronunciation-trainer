@@ -58,7 +58,8 @@ class SettingsPanel {
         
         // IMPORTANT: Initialize window.currentPracticeMode from dropdown value
         // This ensures mode is set even before settings are loaded
-        window.currentPracticeMode = practiceModeSelect.value || 'vocabulary';
+        const defaultPracticeMode = window.appConfig?.get('data.defaults.practiceMode') || 'vocabulary';
+        window.currentPracticeMode = practiceModeSelect.value || defaultPracticeMode;
         console.log(`[SettingsPanel] Initial practice mode from dropdown: ${window.currentPracticeMode}`);
         
         // Handle practice mode changes
@@ -66,20 +67,26 @@ class SettingsPanel {
             const mode = e.target.value;
             console.log(`[SettingsPanel] 🎯 Practice mode changed to: ${mode}`);
             
-            // Show/hide appropriate dataset selectors
-            if (mode === 'vocabulary') {
+            // Show/hide appropriate dataset selectors using Config.js mapping
+            const modeMapping = window.appConfig?.get('data.practiceModeMapping');
+            const mapping = modeMapping && modeMapping[mode];
+            const isVocabularyMode = mapping && mapping.type === 'vocabulary';
+            
+            if (isVocabularyMode) {
                 if (vocabularyBookSetting) vocabularyBookSetting.style.display = 'block';
                 if (practiceDatasetSetting) practiceDatasetSetting.style.display = 'none';
             } else {
                 if (vocabularyBookSetting) vocabularyBookSetting.style.display = 'none';
                 if (practiceDatasetSetting) practiceDatasetSetting.style.display = 'block';
                 
-                // Auto-select matching dataset for practice mode
+                // Auto-select matching dataset for practice mode using Config.js mapping
                 const practiceDatasetSelect = document.getElementById('practiceDatasetSelect');
-                if (practiceDatasetSelect) {
-                    if (mode === 'rs') practiceDatasetSelect.value = 'pte-repeat-sentence';
-                    else if (mode === 'asq') practiceDatasetSelect.value = 'pte-answer-short-question';
-                    else if (mode === 'wfd') practiceDatasetSelect.value = 'pte-write-from-dictation';
+                if (practiceDatasetSelect && window.appConfig) {
+                    const modeMapping = window.appConfig.get('data.practiceModeMapping');
+                    const mapping = modeMapping && modeMapping[mode];
+                    if (mapping && mapping.defaultPracticeDataset) {
+                        practiceDatasetSelect.value = mapping.defaultPracticeDataset;
+                    }
                 }
             }
             
@@ -111,7 +118,8 @@ class SettingsPanel {
         this.applySettingToElement('learningModeSelect', savedSettings.learningMode);
         
         // IMPORTANT: Restore saved practice mode (vocabulary/rs/asq/wfd)
-        const savedPracticeMode = savedSettings.practiceMode || 'vocabulary';
+        const defaultPracticeMode = window.appConfig?.get('data.defaults.practiceMode') || 'vocabulary';
+        const savedPracticeMode = savedSettings.practiceMode || defaultPracticeMode;
         console.log(`[SettingsPanel] Saved practice mode from settings: ${savedPracticeMode}`);
         this.applySettingToElement('practiceModeSelect', savedPracticeMode);
         
@@ -119,11 +127,15 @@ class SettingsPanel {
         window.currentPracticeMode = savedPracticeMode;
         console.log(`[SettingsPanel] Set window.currentPracticeMode to: ${savedPracticeMode}`);
         
-        // If practice mode is not vocabulary, load the dataset
-        if (savedPracticeMode !== 'vocabulary' && window.uiController) {
+        // If practice mode is not vocabulary, load the dataset (use Config.js mapping)
+        const modeMapping = window.appConfig?.get('data.practiceModeMapping');
+        const mapping = modeMapping && modeMapping[savedPracticeMode];
+        const isVocabularyMode = mapping && mapping.type === 'vocabulary';
+        
+        if (!isVocabularyMode && window.uiController) {
             console.log(`[SettingsPanel] Restoring practice mode: ${savedPracticeMode}, calling handlePracticeModeChange...`);
             window.uiController.handlePracticeModeChange(savedPracticeMode);
-        } else if (savedPracticeMode !== 'vocabulary') {
+        } else if (!isVocabularyMode) {
             console.warn(`[SettingsPanel] ⚠️ window.uiController not available, cannot restore mode ${savedPracticeMode}`);
         }
 

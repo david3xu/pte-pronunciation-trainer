@@ -256,6 +256,36 @@ class AppConfig {
                     { id: 'pte-answer-short-question', label: '❓ Answer Short Question', itemCount: 692, type: 'asq' },
                     { id: 'pte-write-from-dictation', label: '✍️ Write From Dictation', itemCount: 1195, type: 'wfd' }
                 ],
+
+                // Practice Mode Mappings - Single source of truth for mode relationships
+                // Maps UI practice modes to their default internal modes and behavior
+                practiceModeMapping: {
+                    vocabulary: {
+                        type: 'vocabulary',
+                        defaultLearningMode: 'pte-fib-listening',  // Default vocabulary book
+                        usesLearningMode: true,   // Uses learningModeSelect dropdown
+                        usesPracticeDataset: false // Doesn't use practiceDatasetSelect
+                    },
+                    rs: {
+                        type: 'practice',
+                        defaultPracticeDataset: 'pte-repeat-sentence',
+                        usesLearningMode: false,
+                        usesPracticeDataset: true
+                    },
+                    asq: {
+                        type: 'practice', 
+                        defaultPracticeDataset: 'pte-answer-short-question',
+                        usesLearningMode: false,
+                        usesPracticeDataset: true
+                    },
+                    wfd: {
+                        type: 'practice',
+                        defaultPracticeDataset: 'pte-write-from-dictation', 
+                        usesLearningMode: false,
+                        usesPracticeDataset: true
+                    }
+                },
+
                 difficulties: ['all', 'normal', 'hard', 'easy'], // All PTE terms with mixed difficulties
 
                 // Dataset file registry - single source of truth for all dataset files

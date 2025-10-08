@@ -317,6 +317,10 @@ class AppConfig {
                         'Google US English Female'
                     ]
                 },
+                language: {
+                    default: 'en-AU',
+                    alternatives: ['en-GB', 'en-US']
+                },
                 speeds: {
                     slow: 0.7,
                     normal: 1.0,
@@ -517,6 +521,21 @@ class AppConfig {
                 fadeOutDuration: 200
             },
 
+            // ===== MODE ENUMERATIONS =====
+            // Used throughout the codebase to avoid string literals
+            modes: {
+                practice: {
+                    vocabulary: 'vocabulary',
+                    repeatSentence: 'rs',
+                    answerShortQuestion: 'asq',
+                    writeFromDictation: 'wfd'
+                },
+                pronunciation: {
+                    british: 'british',
+                    american: 'american'
+                }
+            },
+
             // ===== DATA PROCESSING CONFIGURATION =====
             dataProcessing: {
                 difficulty: {
@@ -579,6 +598,16 @@ class AppConfig {
                     datasetNotFound: 'PTE vocabulary data file not found. Run "npm run data:pte" first.',
                     noTerms: 'No vocabulary terms found in dataset.'
                 }
+            },
+
+            // ===== FALLBACK CONFIGURATION =====
+            // Used when config values are missing or invalid
+            fallbacks: {
+                learningMode: 'pte-fib-listening',
+                category: 'all-categories',
+                difficulty: 'all',
+                practiceMode: 'vocabulary',
+                repeatMode: 'once'
             }
         };
     }

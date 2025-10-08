@@ -12,7 +12,10 @@ class PTEVocabularyManager {
 
     // Store all datasets in a map for dynamic loading
     this.datasets = new Map();
-    
+
+    // Initialize config reference
+    this.config = window.appConfig || new AppConfig();
+
     this.isInitialized = false;
 
     // Listen to settings changes
@@ -63,7 +66,7 @@ class PTEVocabularyManager {
 
     try {
       // Initialize with default learning mode from Config.js
-      const defaultLearningMode = config.get('data.defaults.learningMode') || 'pte-fib-listening';
+      const defaultLearningMode = this.config.get('data.defaults.learningMode') || this.config.get('fallbacks.learningMode');
       await this.loadDataset(defaultLearningMode);
       await this.setLearningMode(defaultLearningMode);
 
@@ -104,8 +107,7 @@ class PTEVocabularyManager {
    */
   async loadDataset(mode) {
     try {
-      const config = window.appConfig || new AppConfig();
-      const byMode = config.get('data.paths.byMode') || {};
+      const byMode = this.config.get('data.paths.byMode') || {};
       
       if (byMode[mode]) {
         const cacheBuster = `?v=${Date.now()}`;
@@ -217,7 +219,7 @@ class PTEVocabularyManager {
     }
 
     // Filter by difficulty
-    const defaultDifficulty = window.appConfig?.get('data.defaults.difficulty') || 'all';
+    const defaultDifficulty = this.config.get('data.defaults.difficulty') || this.config.get('fallbacks.difficulty');
     if (this.currentDifficulty !== defaultDifficulty) {
       filteredWords = filteredWords.filter(word =>
         word.difficulty === this.currentDifficulty

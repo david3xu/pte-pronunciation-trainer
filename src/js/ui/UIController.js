@@ -4,7 +4,7 @@ class UIController {
         this.initialized = false;
         // Load configuration from centralized config
         this.config = window.appConfig || new AppConfig();
-        this.pronunciationPreference = 'british'; // Default to British
+        this.pronunciationPreference = this.config.get('modes.pronunciation.british'); // Default to British
         this.currentWordPronunciations = null; // Store current word's pronunciations
         this.setupEventListeners();
     }
@@ -82,7 +82,7 @@ class UIController {
 
         document.getElementById('nextBtn').addEventListener('click', () => {
             // Mode-aware: emit appropriate next event (standardized from Config.js)
-            const defaultMode = this.config.get('data.defaults.practiceMode') || 'vocabulary';
+            const defaultMode = this.config.get('data.defaults.practiceMode') || this.config.get('fallbacks.practiceMode');
             const mode = window.currentPracticeMode || defaultMode;
             const audioNextEvent = window.appConfig.get('events.audio.navigate.next');
             window.eventBus.emit(audioNextEvent, { mode });
@@ -90,7 +90,7 @@ class UIController {
 
         document.getElementById('prevBtn').addEventListener('click', () => {
             // Mode-aware: emit appropriate prev event (standardized from Config.js)
-            const defaultMode = this.config.get('data.defaults.practiceMode') || 'vocabulary';
+            const defaultMode = this.config.get('data.defaults.practiceMode') || this.config.get('fallbacks.practiceMode');
             const mode = window.currentPracticeMode || defaultMode;
             const audioPrevEvent = window.appConfig.get('events.audio.navigate.prev');
             window.eventBus.emit(audioPrevEvent, { mode });
@@ -104,8 +104,9 @@ class UIController {
                 // Update button icon using configurable flags
                 const britishFlag = this.config.get('ui.elements.pronunciationToggle.british');
                 const americanFlag = this.config.get('ui.elements.pronunciationToggle.american');
-                pronunciationToggleBtn.textContent = newPreference === 'british' ? britishFlag : americanFlag;
-                pronunciationToggleBtn.title = `Current: ${newPreference === 'british' ? 'British' : 'American'} pronunciation`;
+                pronunciationToggleBtn.textContent = newPreference === this.config.get('modes.pronunciation.british') ? britishFlag : americanFlag;
+                const british = this.config.get('modes.pronunciation.british');
+                pronunciationToggleBtn.title = `Current: ${newPreference === british ? 'British' : 'American'} pronunciation`;
             });
         }
 
@@ -120,13 +121,13 @@ class UIController {
      * @param {string} [mode] - Optional mode override, defaults to currentPracticeMode
      */
     displayCurrent(data, mode = null) {
-        const defaultMode = this.config.get('data.defaults.practiceMode') || 'vocabulary';
+        const defaultMode = this.config.get('data.defaults.practiceMode') || this.config.get('fallbacks.practiceMode');
         const currentMode = mode || window.currentPracticeMode || defaultMode;
         
         // Use Config.js mapping to determine mode type instead of hardcoded string comparison
         const modeMapping = this.config.get('data.practiceModeMapping');
         const mapping = modeMapping && modeMapping[currentMode];
-        const isVocabularyMode = mapping && mapping.type === 'vocabulary';
+        const isVocabularyMode = mapping && mapping.type === this.config.get('modes.practice.vocabulary');
         
         if (isVocabularyMode) {
             // Vocabulary mode - use displayWord()
@@ -361,7 +362,7 @@ class UIController {
         
         // Update word type badge (ONLY for vocabulary mode)
         const wordTypeBadge = document.getElementById('wordTypeBadge');
-        const defaultMode = this.config.get('data.defaults.practiceMode') || 'vocabulary';
+        const defaultMode = this.config.get('data.defaults.practiceMode') || this.config.get('fallbacks.practiceMode');
         const currentMode = window.currentPracticeMode || defaultMode;
         
         if (wordTypeBadge) {
@@ -369,7 +370,7 @@ class UIController {
             // Use Config.js mapping to determine if this is vocabulary mode
             const modeMapping = this.config.get('data.practiceModeMapping');
             const mapping = modeMapping && modeMapping[currentMode];
-            const isVocabularyMode = mapping && mapping.type === 'vocabulary';
+            const isVocabularyMode = mapping && mapping.type === this.config.get('modes.practice.vocabulary');
             
             if (isVocabularyMode && word.wordType) {
                 wordTypeBadge.textContent = `[${word.wordType}]`;
@@ -626,7 +627,7 @@ class UIController {
      * Get pronunciation preference (british or american)
      */
     getPronunciationPreference() {
-        return this.pronunciationPreference || 'british';
+        return this.pronunciationPreference || this.config.get('modes.pronunciation.british');
     }
 
     /**
@@ -645,7 +646,9 @@ class UIController {
      */
     togglePronunciation() {
         const current = this.getPronunciationPreference();
-        const newPreference = current === 'british' ? 'american' : 'british';
+        const british = this.config.get('modes.pronunciation.british');
+        const american = this.config.get('modes.pronunciation.american');
+        const newPreference = current === british ? american : british;
         this.setPronunciationPreference(newPreference);
         return newPreference;
     }
@@ -684,7 +687,7 @@ class UIController {
     /**
      * Phase 2 SIMPLIFIED: Handle practice mode changes
      * All modes use the same .word-display container!
-     * @param {string} mode - 'vocabulary' | 'rs' | 'asq' | 'wfd'
+     * @param {string} mode - From config.modes.practice
      */
     async handlePracticeModeChange(mode) {
         console.log(`[UIController] 🎯 handlePracticeModeChange called with mode: ${mode}`);
@@ -696,7 +699,7 @@ class UIController {
         // Use Config.js mapping to determine mode type
         const modeMapping = this.config.get('data.practiceModeMapping');
         const mapping = modeMapping && modeMapping[mode];
-        const isVocabularyMode = mapping && mapping.type === 'vocabulary';
+        const isVocabularyMode = mapping && mapping.type === this.config.get('modes.practice.vocabulary');
         
         if (isVocabularyMode) {
             console.log('[UIController] Switching to vocabulary mode...');
@@ -775,7 +778,7 @@ class UIController {
      * UNIFIED DISPLAY METHOD - Works for ALL modes!
      * Uses the same .word-display container for vocabulary/RS/ASQ/WFD
      * @param {Object} item - Item to display (word, sentence, question)
-     * @param {string} mode - Current mode ('vocabulary', 'rs', 'asq', 'wfd')
+     * @param {string} mode - Current mode from config.modes.practice
      */
     displayContent(item, mode) {
         if (!item) return;
@@ -803,7 +806,7 @@ class UIController {
         // Use Config.js mapping to determine if word type badge should be hidden
         const modeMapping = this.config.get('data.practiceModeMapping');
         const mapping = modeMapping && modeMapping[mode];
-        const isVocabularyMode = mapping && mapping.type === 'vocabulary';
+        const isVocabularyMode = mapping && mapping.type === this.config.get('modes.practice.vocabulary');
         
         if (wordTypeBadge && !isVocabularyMode) {
             wordTypeBadge.style.display = 'none';
@@ -811,7 +814,7 @@ class UIController {
 
         // Display based on mode
         switch(mode) {
-            case 'vocabulary':
+            case this.config.get('modes.practice.vocabulary'):
                 // Vocabulary mode - show word with phonetics
                 console.log(`[Vocabulary Mode] Displaying:`, {
                     word: item.content?.word,

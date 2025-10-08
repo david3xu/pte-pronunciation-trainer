@@ -220,13 +220,12 @@ class DataSchema {
 
     /**
      * Infer category from vocabulary item
-     * For PTE data, category should be explicitly provided.
-     * For legacy CCL data, falls back to content-based inference.
+     * For PTE data, category should always be explicitly provided.
      * @param {Object} item - Vocabulary item
-     * @returns {string} Inferred category
+     * @returns {string} Category (returns item.category or 'general' as fallback)
      */
     inferCategory(item) {
-        const { english, conversationId, example, category } = item;
+        const { english, category } = item;
 
         // If category is already set and valid for PTE, use it
         const pteCategories = [
@@ -239,24 +238,12 @@ class DataSchema {
             return category;
         }
 
-        // For PTE conversation data without explicit category
-        if (conversationId) {
-            console.warn(`PTE term "${english}" missing category - using fallback`);
-            return 'pte-vocabulary';
+        // Fallback for data without explicit category
+        if (!category) {
+            console.warn(`Term "${english}" missing category - using 'general' fallback`);
         }
-
-        // Legacy CCL content-based categorization
-        const text = (english + ' ' + (example || '')).toLowerCase();
-
-        if (/\b(court|legal|judge|lawyer|case|law)\b/.test(text)) return 'legal';
-        if (/\b(doctor|medical|health|hospital|treatment)\b/.test(text)) return 'medical';
-        if (/\b(school|education|student|teacher|university)\b/.test(text)) return 'education';
-        if (/\b(visa|immigration|resident|citizen|passport)\b/.test(text)) return 'immigration';
-        if (/\b(business|company|work|job|employment)\b/.test(text)) return 'business';
-        if (/\b(welfare|social|community|support|service)\b/.test(text)) return 'social-welfare';
-        if (/\b(house|housing|rent|property|landlord)\b/.test(text)) return 'housing';
-
-        return 'general';
+        
+        return category || 'general';
     }
 
     /**

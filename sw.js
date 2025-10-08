@@ -2,7 +2,7 @@
 // Service Worker for PTE Pronunciation Trainer
 // Handles offline caching and background sync
 
-const CACHE_VERSION = 'v48'; // Version 48: Fixed voice loading timeout warning - only warn if voices actually fail to load
+const CACHE_VERSION = 'v49'; // Version 49: Fixed SettingsModule handlers to use pure event-driven architecture (no direct method calls)
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

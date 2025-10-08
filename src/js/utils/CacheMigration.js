@@ -24,12 +24,26 @@ class CacheMigration {
 
     // Set default values for clean initialization
     setDefaultValues() {
-        // Use SettingsModule to set defaults
+        // Use SettingsModule to set defaults if available
         if (window.settingsModule) {
             // Reset to defaults through SettingsModule
             window.settingsModule.resetSettings();
         } else {
-            console.error('❌ SettingsModule not available - cannot set default values');
+            // Fallback: Set basic defaults directly in storage
+            console.log('ℹ️ SettingsModule not available - setting basic defaults');
+            const defaults = {
+                'category': 'all-categories',
+                'difficulty': 'all',
+                'speechRate': 'tts.speeds.slow',
+                'delay': 'tts.delays.long',
+                'repeatMode': 'once',
+                'preferredVoice': 'auto',
+                'learningMode': 'pte-fib-listening'
+            };
+
+            Object.entries(defaults).forEach(([key, value]) => {
+                window.storage.setItem(key, value);
+            });
         }
     }
 

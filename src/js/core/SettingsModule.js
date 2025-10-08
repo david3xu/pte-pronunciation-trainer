@@ -303,13 +303,22 @@ class SettingsModule {
     
     /**
      * Get available options for a setting (for dropdown population)
-     * Delegates to SettingsManager for now (can be merged later)
+     * Uses Config.js data directly
      */
     getAvailableOptions(key) {
-        if (window.settingsManager) {
-            return window.settingsManager.getAvailableOptions(key);
-        }
-        return [];
+        // Map setting keys to Config data paths
+        const optionsMap = {
+            speed: this.config.data.speeds,
+            delay: this.config.data.delays,
+            repeat: this.config.data.repeatModes,
+            voice: this.config.data.voices,
+            difficulty: this.config.data.difficulties,
+            learningMode: this.config.data.learningModes,
+            practiceMode: this.config.data.practiceModes,
+            practiceDataset: this.config.data.practiceDatasets
+        };
+        
+        return optionsMap[key] || [];
     }
     
     /**

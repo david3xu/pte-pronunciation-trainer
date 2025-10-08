@@ -174,6 +174,22 @@ class PTEVocabularyManager {
   }
 
   /**
+   * Get next learning mode for auto-loop (circular)
+   * pte-fib-listening → pte-beginner → pte-intermediate → pte-fib-listening
+   */
+  getNextLearningMode() {
+    const learningModeSequence = [
+      'pte-fib-listening',
+      'pte-beginner', 
+      'pte-intermediate'
+    ];
+    
+    const currentIndex = learningModeSequence.indexOf(this.currentLearningMode);
+    const nextIndex = (currentIndex + 1) % learningModeSequence.length;
+    return learningModeSequence[nextIndex];
+  }
+
+  /**
    * Apply current category and difficulty filters
    */
   applyFilters() {

@@ -2,7 +2,7 @@
 // Service Worker for PTE Pronunciation Trainer
 // Handles offline caching and background sync
 
-const CACHE_VERSION = 'v45'; // Version 45: Fixed category/source hardcoding - all words now have correct categories for filtering
+const CACHE_VERSION = 'v46'; // Version 46: Fixed SettingsModule.getAvailableOptions() to use Config.get() method
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

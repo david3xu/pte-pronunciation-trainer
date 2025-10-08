@@ -73,7 +73,7 @@ Co-words
 67. v. flip | /flɪp/ — sounds like **FLIP** | /flɪp/ — sounds like **FLIP**
 68. n. GDP | /ˌdʒiː diː ˈpiː/ — sounds like **JEE-DEE-PEE** | /ˌdʒi di ˈpi/ — sounds like **JEE-dee-PEE**
 69. n. speech | /spiːtʃ/ — sounds like **SPEECH** | /spitʃ/ — sounds like **SPEECH**
-70. n. drinking | /ˈdrɪŋkɪŋ/ — sounds like **DRING-king** | /ˈdrɪŋkɪŋ/ — sounds like **DRING-king**
+70. v. drinking | /ˈdrɪŋkɪŋ/ — sounds like **DRING-king** | /ˈdrɪŋkɪŋ/ — sounds like **DRING-king**
 71. n. contribution | /ˌkɒntrɪˈbjuːʃən/ — sounds like **kon-tri-BYOO-shun** | /ˌkɑntrɪˈbjuʃən/ — sounds like **KAHN-tri-BYOO-shun**
 72. adj. remote | /rɪˈməʊt/ — sounds like **ri-MOHT** | /rɪˈmoʊt/ — sounds like **ri-MOHT**
 73. adv. globally | /ˈɡləʊbəli/ — sounds like **GLOH-buh-lee** | /ˈɡloʊbəli/ — sounds like **GLOH-buh-lee**
@@ -86,7 +86,7 @@ Co-words
 80. v. drop | /drɒp/ — sounds like **DROP** | /drɑp/ — sounds like **DRAHP**
 81. n. craft | /krɑːft/ — sounds like **KRAAFT** | /kræft/ — sounds like **KRAFT**
 82. adj. polar | /ˈpəʊlə/ — sounds like **POH-luh** | /ˈpoʊlər/ — sounds like **POH-ler**
-83. n. eating | /ˈiːtɪŋ/ — sounds like **EE-ting** | /ˈitɪŋ/ — sounds like **EE-ting**
+83. v. eating | /ˈiːtɪŋ/ — sounds like **EE-ting** | /ˈitɪŋ/ — sounds like **EE-ting**
 84. n. judgment | /ˈdʒʌdʒmənt/ — sounds like **JUJ-munt** | /ˈdʒʌdʒmənt/ — sounds like **JUJ-munt**
 85. n. lifetime | /ˈlaɪftaɪm/ — sounds like **LYFE-tym** | /ˈlaɪfˌtaɪm/ — sounds like **LYFE-tym**
 86. adj. blind | /blaɪnd/ — sounds like **BLYND** | /blaɪnd/ — sounds like **BLYND**
@@ -389,7 +389,7 @@ Co-words
 383. adj. absolute | /ˈæbsəluːt/ — sounds like **AB-suh-loot** | /ˈæbsəlut/ — sounds like **AB-suh-loot**
 384. n. February | /ˈfebruəri/ — sounds like **FEB-roo-uh-ree** | /ˈfɛbruˌɛri/ — sounds like **FEB-roo-air-ee**
 385. adj. non-verbal | /ˌnɒn ˈvɜːbəl/ — sounds like **non VER-bul** | /ˌnɑn ˈvɝːbəl/ — sounds like **non VUR-bəl**
-386. n. bullying | /ˈbʊliɪŋ/ — sounds like **BOOL-ee-ing** | /ˈbʊliɪŋ/ — sounds like **BOOL-ee-ing**
+386. v. bullying | /ˈbʊliɪŋ/ — sounds like **BOOL-ee-ing** | /ˈbʊliɪŋ/ — sounds like **BOOL-ee-ing**
 387. v. continue | /kənˈtɪnjuː/ — sounds like **kun-TIN-yoo** | /kənˈtɪnju/ — sounds like **kun-TIN-yoo**
 388. n. storm | /stɔːm/ — sounds like **STAWM** | /stɔrm/ — sounds like **STORM**
 389. n. shareholder | /ˈʃeəˌhəʊldə/ — sounds like **SHAIR-hohld-uh** | /ˈʃɛrˌhoʊldər/ — sounds like **SHARE-hohld-er**
@@ -473,7 +473,7 @@ Co-words
 467. n. NASA | /ˈnæsə/ — sounds like **NA-suh** | /ˈnæsə/ — sounds like **NA-sə**
 468. n. immigrant | /ˈɪmɪɡrənt/ — sounds like **IM-i-grunt** | /ˈɪmɪɡrənt/ — sounds like **IM-i-grənt**
 469. v. combine | /kəmˈbaɪn/ — sounds like **kum-BYN** | /kəmˈbaɪn/ — sounds like **kum-BYN**
-470. n. aging | /ˈeɪdʒɪŋ/ — sounds like **AY-jing** | /ˈeɪdʒɪŋ/ — sounds like **AY-jing**
+470. v. aging | /ˈeɪdʒɪŋ/ — sounds like **AY-jing** | /ˈeɪdʒɪŋ/ — sounds like **AY-jing**
 471. n. Paris | /ˈpærɪs/ — sounds like **PAR-iss** | /ˈpærɪs/ — sounds like **PAR-iss**
 472. adj. comparative | /kəmˈpærətɪv/ — sounds like **kum-PAR-uh-tiv** | /kəmˈpærətɪv/ — sounds like **kum-PAR-ə-tiv**
 473. adj. overqualified | /ˌəʊvəˈkwɒlɪfaɪd/ — sounds like **OH-vuh-KWOL-i-fyd** | /ˌoʊvərˈkwɑlɪˌfaɪd/ — sounds like **OH-vur-KWAH-li-fyd**
@@ -489,7 +489,7 @@ Co-words
 483. v. count | /kaʊnt/ — sounds like **KOWNT** | /kaʊnt/ — sounds like **KOWNT**
 484. adv. moreover | /mɔːrˈəʊvə/ — sounds like **maw-ROH-vuh** | /mɔrˈoʊvər/ — sounds like **mor-OH-ver**
 485. v. enhance | /ɪnˈhɑːns/ — sounds like **in-HAANS** | /ɪnˈhæns/ — sounds like **in-HANS**
-486. n. housing | /ˈhaʊzɪŋ/ — sounds like **HOW-zing** | /ˈhaʊzɪŋ/ — sounds like **HOW-zing**
+486. v. housing | /ˈhaʊzɪŋ/ — sounds like **HOW-zing** | /ˈhaʊzɪŋ/ — sounds like **HOW-zing**
 487. v. treat | /triːt/ — sounds like **TREET** | /trit/ — sounds like **TREET**
 488. v. interfere | /ˌɪntəˈfɪə/ — sounds like **IN-tuh-FEER** | /ˌɪntərˈfɪr/ — sounds like **IN-ter-FEER**
 489. n. recognition | /ˌrekəɡˈnɪʃən/ — sounds like **rek-ug-NISH-un** | /ˌrɛkəɡˈnɪʃən/ — sounds like **rek-ug-NISH-ən**
@@ -522,7 +522,7 @@ Co-words
 516. n. flight | /flaɪt/ — sounds like **FLYT** | /flaɪt/ — sounds like **FLYT**
 517. n. color | /ˈkʌlə/ — sounds like **KUL-uh** | /ˈkʌlər/ — sounds like **KUL-er**
 518. v. save | /seɪv/ — sounds like **SAYV** | /seɪv/ — sounds like **SAYV**
-519. n. hearing | /ˈhɪərɪŋ/ — sounds like **HEER-ing** | /ˈhɪrɪŋ/ — sounds like **HEER-ing**
+519. v. hearing | /ˈhɪərɪŋ/ — sounds like **HEER-ing** | /ˈhɪrɪŋ/ — sounds like **HEER-ing**
 520. adj. middle | /ˈmɪdəl/ — sounds like **MID-ul** | /ˈmɪdəl/ — sounds like **MID-əl**
 521. n. pidgin | /ˈpɪdʒɪn/ — sounds like **PIJ-in** | /ˈpɪdʒɪn/ — sounds like **PIJ-in**
 522. n. debate | /dɪˈbeɪt/ — sounds like **di-BAYT** | /dɪˈbeɪt/ — sounds like **di-BAYT**
@@ -606,10 +606,10 @@ Co-words
 600. n. LHC | /ˌel eɪtʃ ˈsiː/ — sounds like **EL-AYCH-SEE** | /ˌɛl eɪtʃ ˈsi/ — sounds like **EL-AYCH-SEE**
 601. n. Charles | /tʃɑːlz/ — sounds like **CHAHLZ** | /tʃɑrlz/ — sounds like **CHARLZ**
 602. n. bicycle | /ˈbaɪsɪkəl/ — sounds like **BY-si-kuhl** | /ˈbaɪsɪkəl/ — sounds like **BY-si-kuhl**
-603. n. listening | /ˈlɪsənɪŋ/ — sounds like **LISS-uh-ning** | /ˈlɪsənɪŋ/ — sounds like **LISS-uh-ning**
+603. v. listening | /ˈlɪsənɪŋ/ — sounds like **LISS-uh-ning** | /ˈlɪsənɪŋ/ — sounds like **LISS-uh-ning**
 604. n. stage | /steɪdʒ/ — sounds like **STAYJ** | /steɪdʒ/ — sounds like **STAYJ**
 605. n. settler | /ˈsetlə/ — sounds like **SET-luh** | /ˈsɛtlər/ — sounds like **SET-ler**
-606. n. teaching | /ˈtiːtʃɪŋ/ — sounds like **TEE-ching** | /ˈtitʃɪŋ/ — sounds like **TEE-ching**
+606. v. teaching | /ˈtiːtʃɪŋ/ — sounds like **TEE-ching** | /ˈtitʃɪŋ/ — sounds like **TEE-ching**
 607. n. India | /ˈɪndiə/ — sounds like **IN-dee-uh** | /ˈɪndiə/ — sounds like **IN-dee-uh**
 608. v. investigate | /ɪnˈvestɪɡeɪt/ — sounds like **in-VEST-i-gayt** | /ɪnˈvɛstəˌɡeɪt/ — sounds like **in-VES-tuh-gayt**
 609. adj. active | /ˈæktɪv/ — sounds like **AK-tiv** | /ˈæktɪv/ — sounds like **AK-tiv**

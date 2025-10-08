@@ -165,21 +165,20 @@ class UIController {
      * Initialize dropdowns based on current configuration
      */
     initializeDropdowns() {
-        if (window.settingsManager) {
-            // Use SettingsManager to populate ALL dropdowns consistently
-            this.populateAllDropdownsFromSettingsManager();
+        if (window.settingsModule) {
+            // Use SettingsModule to populate ALL dropdowns consistently
+            this.populateAllDropdownsFromSettingsModule();
         } else {
-            console.warn('⚠️ SettingsManager not available - dropdowns may not work properly');
+            console.warn('⚠️ SettingsModule not available - dropdowns may not work properly');
         }
-
     }
 
     /**
-     * Populate ALL dropdowns using SettingsManager (unified approach)
+     * Populate ALL dropdowns using SettingsModule (unified approach)
      */
-    populateAllDropdownsFromSettingsManager() {
-        const settingsManager = window.settingsManager;
-        if (!settingsManager) return;
+    populateAllDropdownsFromSettingsModule() {
+        const settingsModule = window.settingsModule;
+        if (!settingsModule) return;
 
         // Practice mode dropdown
         this.populateDropdown('practiceModeSelect', 'practiceMode', 'vocabulary');
@@ -208,8 +207,8 @@ class UIController {
         const element = document.getElementById(elementId);
         if (!element) return;
 
-        const settingsManager = window.settingsManager;
-        const options = settingsManager.getAvailableOptions(settingKey);
+        const settingsModule = window.settingsModule;
+        const options = settingsModule.getAvailableOptions(settingKey);
 
         element.innerHTML = '';
         options.forEach(option => {
@@ -604,7 +603,7 @@ class UIController {
     }
 
     /**
-     * Handle settings changes from SettingsManager
+     * Handle settings changes from SettingsModule
      */
     handleSettingsChange(key, value) {
         switch (key) {
@@ -615,7 +614,7 @@ class UIController {
                 this.updateCategoryDisplay();
                 break;
             case 'learningMode':
-                // SettingsManager handles dependencies automatically
+                // SettingsModule handles dependencies automatically
                 this.updateCategoryDisplay();
                 break;
             case 'speed':

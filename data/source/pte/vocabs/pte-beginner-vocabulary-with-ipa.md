@@ -17,7 +17,7 @@ This collection includes common, high-frequency PTE vocabulary (5–99 occurrenc
 5. pron. someone | /ˈsʌmwʌn/ — sounds like **SUM-wun** | /ˈsʌmwʌn/ — sounds like **SUM-wun**
 6. n. art | /ɑːt/ — sounds like **AHT** | /ɑrt/ — sounds like **ART**
 7. adj. basic | /ˈbeɪsɪk/ — sounds like **BAY-sik** | /ˈbeɪsɪk/ — sounds like **BAY-sik**
-8. n. cause | /kɔːz/ — sounds like **KAWZ** | /kɔz/ — sounds like **KAWZ**
+8. v. cause | /kɔːz/ — sounds like **KAWZ** | /kɔz/ — sounds like **KAWZ**
 9. n. skill | /skɪl/ — sounds like **SKIL** | /skɪl/ — sounds like **SKIL**
 10. n. opportunity | /ˌɒpəˈtjuːnəti/ — sounds like **OP-uh-TYOO-nuh-tee** | /ˌɑːpərˈtuːnəti/ — sounds like **AH-per-TOO-nuh-tee**
 11. v. protect | /prəˈtekt/ — sounds like **pruh-TEKT** | /prəˈtekt/ — sounds like **pruh-TEKT**
@@ -27,7 +27,7 @@ This collection includes common, high-frequency PTE vocabulary (5–99 occurrenc
 15. n. researcher | /rɪˈsɜːtʃə/ — sounds like **ri-SUR-chuh** | /rɪˈsɝːtʃər/ — sounds like **ri-SUR-chur**
 16. v. ask | /ɑːsk/ — sounds like **AASK** | /æsk/ — sounds like **ASK**
 17. v. trade | /treɪd/ — sounds like **TRAYD** | /treɪd/ — sounds like **TRAYD**
-18. n. driving | /ˈdraɪvɪŋ/ — sounds like **DRY-ving** | /ˈdraɪvɪŋ/ — sounds like **DRY-ving**
+18. v. driving | /ˈdraɪvɪŋ/ — sounds like **DRY-ving** | /ˈdraɪvɪŋ/ — sounds like **DRY-ving**
 19. v. affect | /əˈfekt/ — sounds like **uh-FEKT** | /əˈfekt/ — sounds like **uh-FEKT**
 20. adj. physical | /ˈfɪzɪkəl/ — sounds like **FIZ-i-kuhl** | /ˈfɪzɪkəl/ — sounds like **FIZ-i-kuhl**
 21. adj. easy | /ˈiːzi/ — sounds like **EE-zee** | /ˈiːzi/ — sounds like **EE-zee**
@@ -319,11 +319,11 @@ This collection includes common, high-frequency PTE vocabulary (5–99 occurrenc
 306. v. sleep | /sliːp/ — sounds like **SLEEP** | /slip/ — sounds like **SLEEP**
 307. adv. somehow | /ˈsʌmhaʊ/ — sounds like **SUM-how** | /ˈsʌmˌhaʊ/ — sounds like **SUM-how**
 308. adv. today | /təˈdeɪ/ — sounds like **tuh-DAY** | /təˈdeɪ/ — sounds like **tuh-DAY**
-309. n. living | /ˈlɪvɪŋ/ — sounds like **LIV-ing** | /ˈlɪvɪŋ/ — sounds like **LIV-ing**
+309. v. living | /ˈlɪvɪŋ/ — sounds like **LIV-ing** | /ˈlɪvɪŋ/ — sounds like **LIV-ing**
 310. v. discover | /dɪˈskʌvə/ — sounds like **di-SKUV-uh** | /dɪˈskʌvɚ/ — sounds like **di-SKUV-ur**
 311. n. price | /praɪs/ — sounds like **PRYS** | /praɪs/ — sounds like **PRYS**
 312. n. tongue | /tʌŋ/ — sounds like **TUNG** | /tʌŋ/ — sounds like **TUNG**
-313. n. smoking | /ˈsməʊkɪŋ/ — sounds like **SMOH-king** | /ˈsmoʊkɪŋ/ — sounds like **SMOH-king**
+313. v. smoking | /ˈsməʊkɪŋ/ — sounds like **SMOH-king** | /ˈsmoʊkɪŋ/ — sounds like **SMOH-king**
 314. n. market | /ˈmɑːkɪt/ — sounds like **MAR-kit** | /ˈmɑrkɪt/ — sounds like **MAR-kit**
 315. v. ring | /rɪŋ/ — sounds like **RING** | /rɪŋ/ — sounds like **RING**
 316. adj. major | /ˈmeɪdʒə/ — sounds like **MAY-juh** | /ˈmeɪdʒɚ/ — sounds like **MAY-jur**
@@ -360,7 +360,7 @@ This collection includes common, high-frequency PTE vocabulary (5–99 occurrenc
 347. n. role | /rəʊl/ — sounds like **ROHL** | /roʊl/ — sounds like **ROHL**
 348. n. hour | /ˈaʊə/ — sounds like **OW-uh** | /ˈaʊɚ/ — sounds like **OW-er**
 349. v. hold | /həʊld/ — sounds like **HOHLD** | /hoʊld/ — sounds like **HOHLD**
-350. n. fishing | /ˈfɪʃɪŋ/ — sounds like **FISH-ing** | /ˈfɪʃɪŋ/ — sounds like **FISH-ing**
+350. v. fishing | /ˈfɪʃɪŋ/ — sounds like **FISH-ing** | /ˈfɪʃɪŋ/ — sounds like **FISH-ing**
 351. adj. scientific | /ˌsaɪənˈtɪfɪk/ — sounds like **SY-un-TIF-ik** | /ˌsaɪənˈtɪfɪk/ — sounds like **SY-un-TIF-ik**
 352. n. project | /ˈprɒdʒekt/ — sounds like **PROJ-ekt** | /ˈprɑdʒɛkt/ — sounds like **PRAH-jekt**
 353. adj. American | /əˈmerɪkən/ — sounds like **uh-MER-i-kun** | /əˈmɛrɪkən/ — sounds like **uh-MER-i-kun**

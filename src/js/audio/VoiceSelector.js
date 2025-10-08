@@ -2,6 +2,28 @@
 class VoiceSelector {
     constructor() {
         this.preferredVoice = null; // User's selected voice preference
+        
+        // Listen to settings changes
+        this._attachEventListeners();
+    }
+
+    /**
+     * Attach event listeners for settings changes
+     * @private
+     */
+    _attachEventListeners() {
+        window.eventBus.on('setting:changed', this._handleSettingChange.bind(this));
+    }
+
+    /**
+     * Handle setting changes from SettingsModule
+     * @private
+     */
+    _handleSettingChange({key, value}) {
+        if (key === 'voice') {
+            this._setPreferredVoice(value);
+            console.log(`[VoiceSelector] Voice preference changed to ${value}`);
+        }
     }
 
     selectBestVoiceMatch(voices, lang) {
@@ -156,7 +178,11 @@ class VoiceSelector {
 
     }
 
-    setPreferredVoice(voiceName) {
+    /**
+     * @deprecated Use SettingsModule with events instead
+     * @private
+     */
+    _setPreferredVoice(voiceName) {
         this.preferredVoice = voiceName === 'auto' ? null : voiceName;
 
         // Reset TTS voice cache to ensure new preference is used

@@ -2,16 +2,12 @@
 class SettingsPanel {
     constructor() {
         this.isOpen = false;
-        this.settingsManager = null; // Will be initialized when available
         this.config = window.appConfig || new AppConfig();
         this.setupSettingsPanel();
     }
 
     setupSettingsPanel() {
-        // Initialize settings manager if available
-        if (window.settingsManager) {
-            this.settingsManager = window.settingsManager;
-        }
+        // Settings panel uses SettingsModule (event-driven)
 
         // Settings panel toggle
         const settingsBtn = document.getElementById('settingsBtn');
@@ -97,20 +93,15 @@ class SettingsPanel {
     }
 
     async setupSettingsPersistence() {
-        // Load saved settings from SettingsManager
-        let savedSettings;
-
-        if (this.settingsManager) {
-            savedSettings = this.settingsManager.getAllSettings();
-        } else {
-            console.warn('⚠️ SettingsManager not available - using fallback initialization');
+        // Load saved settings from SettingsModule
+        if (!window.settingsModule) {
+            console.warn('⚠️ SettingsModule not available - using fallback initialization');
             return;
         }
 
+        const savedSettings = window.settingsModule.exportSettings();
+
         // Apply settings to UI elements (UIController handles dropdown population)
-        // Category dropdown removed from UI (not useful when datasets are monolithic)
-        // Category filtering still works in backend for future subcategories
-        // this.applySettingToElement('categorySelect', savedSettings.category);
         this.applySettingToElement('difficultySelect', savedSettings.difficulty);
         this.applySettingToElement('speedSelect', savedSettings.speed);
         this.applySettingToElement('delaySelect', savedSettings.delay);
@@ -135,16 +126,8 @@ class SettingsPanel {
             console.warn(`[SettingsPanel] ⚠️ window.uiController not available, cannot restore mode ${savedPracticeMode}`);
         }
 
-        // Apply settings to modules using setter methods
-        if (savedSettings.category && window.pteVocabularyManager && window.pteVocabularyManager.setCategory) {
-            window.pteVocabularyManager.setCategory(savedSettings.category);
-        }
-        if (savedSettings.difficulty && window.pteVocabularyManager && window.pteVocabularyManager.setDifficulty) {
-            window.pteVocabularyManager.setDifficulty(savedSettings.difficulty);
-        }
-        if (savedSettings.learningMode && window.pteVocabularyManager && window.pteVocabularyManager.setLearningMode) {
-            await window.pteVocabularyManager.setLearningMode(savedSettings.learningMode);
-        }
+        // Settings are automatically applied through event listeners in engines
+        // No need to call setters directly anymore
     }
 
 
@@ -204,12 +187,12 @@ class SettingsPanel {
     }
 
     exportSettings() {
-        // Use SettingsManager to get all settings - no fallback needed
-        if (!window.settingsManager) {
-            console.error('❌ SettingsManager not available - cannot export settings');
+        // Use SettingsModule to get all settings
+        if (!window.settingsModule) {
+            console.error('❌ SettingsModule not available - cannot export settings');
             return;
         }
-        const settings = window.settingsManager.getAllSettings();
+        const settings = window.settingsModule.exportSettings();
 
         // Add export metadata
         settings.exportDate = new Date().toISOString();
@@ -225,7 +208,6 @@ class SettingsPanel {
         link.click();
 
         URL.revokeObjectURL(url);
-
 
         // Emit export event
         window.eventBus.emit('settings:exported', {
@@ -243,23 +225,24 @@ class SettingsPanel {
                 throw new Error('Invalid settings format');
             }
 
-            // Apply imported settings
-            Object.keys(settings).forEach(key => {
-                if (key !== 'exportDate' && key !== 'version' && settings[key] !== null) {
-                    this.saveSetting(key, settings[key]);
-                }
-            });
+            // Use SettingsModule to import settings
+            if (!window.settingsModule) {
+                console.error('❌ SettingsModule not available - cannot import settings');
+                return false;
+            }
 
-            // Settings are automatically applied through SettingsManager events
+            // Import settings through SettingsModule
+            const result = window.settingsModule.importSettings(settings);
 
+            if (result) {
+                // Emit import event
+                window.eventBus.emit('settings:imported', {
+                    settingsCount: Object.keys(settings).length - 2,
+                    timestamp: new Date().toISOString()
+                });
+            }
 
-            // Emit import event
-            window.eventBus.emit('settings:imported', {
-                settingsCount: Object.keys(settings).length - 2,
-                timestamp: new Date().toISOString()
-            });
-
-            return true;
+            return result;
         } catch (error) {
             console.error('Settings import failed:', error);
             window.progressTracker.showError('Failed to import settings');
@@ -268,11 +251,11 @@ class SettingsPanel {
     }
 
     resetSettings() {
-        // Use SettingsManager to reset settings instead of direct storage access
-        if (window.settingsManager) {
-            window.settingsManager.resetSettings();
+        // Use SettingsModule to reset settings
+        if (window.settingsModule) {
+            window.settingsModule.resetSettings();
         } else {
-            console.error('❌ SettingsManager not available - cannot reset settings');
+            console.error('❌ SettingsModule not available - cannot reset settings');
         }
     }
 
@@ -280,17 +263,12 @@ class SettingsPanel {
         return this.isOpen;
     }
 
-
     /**
-     * Save a setting value using SettingsManager
+     * Save a setting value using SettingsModule events
      */
     saveSetting(key, value) {
-        if (this.settingsManager) {
-            // Use SettingsManager for centralized handling
-            this.settingsManager.updateSetting(key, value);
-        } else {
-            console.warn(`SettingsManager not available - cannot save setting: ${key} = ${value}`);
-        }
+        // Emit event to request setting change
+        window.eventBus.emit('setting:request-change', { key, value });
     }
 
 }

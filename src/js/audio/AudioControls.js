@@ -165,15 +165,85 @@ class AudioControls {
         this.currentIndex++;
 
         if (this.currentIndex >= totalWords) {
-            if (this.repeatMode === 'loop') {
-                // Loop back to beginning
-                this.currentIndex = 0;
-                window.progressTracker.updateStatus('🔄 All words completed! Starting over...');
-            } else {
-                // Check for auto-progression to next category
-                this.handleCategoryCompletion();
-                return;
-            }
+            // Reached end of current dataset/book
+            this.handleDatasetCompletion();
+            return;
+        }
+    }
+
+    async handleDatasetCompletion() {
+        // Get current practice mode to determine loop behavior
+        const practiceMode = window.settingsModule ? 
+            window.settingsModule.getSetting('practiceMode') : 'vocabulary';
+
+        if (practiceMode === 'vocabulary') {
+            // Vocabulary mode: Auto-loop to next book in circle
+            await this.autoLoopToNextBook();
+        } else {
+            // Sentence mode (RS/ASQ/WFD): Restart current dataset
+            this.restartCurrentDataset();
+        }
+    }
+
+    async autoLoopToNextBook() {
+        const currentMode = window.pteVocabularyManager.currentLearningMode;
+        const nextMode = window.pteVocabularyManager.getNextLearningMode();
+        
+        const config = window.appConfig || new AppConfig();
+        const learningModes = config.get('data.learningModes') || [];
+        const currentBook = learningModes.find(m => m.id === currentMode);
+        const nextBook = learningModes.find(m => m.id === nextMode);
+        
+        console.log(`[AudioControls] 🔄 Vocabulary book completed: ${currentBook?.label || currentMode}`);
+        console.log(`[AudioControls] ➡️ Auto-looping to next book: ${nextBook?.label || nextMode}`);
+        
+        // Update status message
+        window.progressTracker.updateStatus(
+            `🎉 ${currentBook?.label || currentMode} completed! ` +
+            `🔄 Auto-looping to ${nextBook?.label || nextMode}...`
+        );
+        
+        // Change to next book via event
+        window.eventBus.emit('setting:request-change', {
+            key: 'learningMode',
+            value: nextMode
+        });
+        
+        // Reset to first word
+        this.currentIndex = 0;
+        
+        // Continue playing if was playing
+        if (this.isPlaying) {
+            // Small delay to let the new book load
+            setTimeout(async () => {
+                await this.playCurrentWord();
+            }, 500);
+        }
+    }
+
+    restartCurrentDataset() {
+        const practiceMode = window.settingsModule ? 
+            window.settingsModule.getSetting('practiceMode') : 'vocabulary';
+        const practiceDataset = window.settingsModule ? 
+            window.settingsModule.getSetting('practiceDataset') : '';
+        
+        console.log(`[AudioControls] 🔄 Dataset completed: ${practiceMode.toUpperCase()}`);
+        console.log(`[AudioControls] ➡️ Restarting dataset from beginning...`);
+        
+        // Update status message
+        window.progressTracker.updateStatus(
+            `🎉 ${practiceMode.toUpperCase()} dataset completed! ` +
+            `🔄 Restarting from beginning...`
+        );
+        
+        // Loop back to beginning
+        this.currentIndex = 0;
+        
+        // Continue playing if was playing  
+        if (this.isPlaying) {
+            setTimeout(async () => {
+                await this.playCurrentWord();
+            }, 500);
         }
     }
 

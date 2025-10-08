@@ -233,7 +233,10 @@ class UIController {
         const modeLabels = {
             'pte-fib-listening': '🎧 PTE FIB Listening',
             'pte-beginner': '📗 PTE Beginner',
-            'pte-intermediate': '📘 PTE Intermediate'
+            'pte-intermediate': '📘 PTE Intermediate',
+            'pte-advanced': '📕 PTE Advanced',
+            'pte-ra': '📚 PTE Read Aloud (RA)',
+            'pte-rs': '🎯 PTE Repeat Sentence (RS)'
         };
 
         // Update context bar display with vocabulary book name and word count

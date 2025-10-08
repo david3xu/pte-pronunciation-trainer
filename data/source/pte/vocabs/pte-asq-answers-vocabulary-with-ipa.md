@@ -1,6 +1,6 @@
 # PTE ASQ Answers Vocabulary with IPA
 
-This collection lists answers from the PTE ASQ dataset in the exact original order. IPA fields are provided as placeholders to be curated.
+This collection lists answers from the PTE ASQ dataset in the exact original order. The format matches existing PTE vocabulary books: two IPA variants (UK/US) and simplified phonetics. IPA will be curated manually.
 
 ### ASQ Answers
 
@@ -8,36 +8,38 @@ This collection lists answers from the PTE ASQ dataset in the exact original ord
 
 **全部**
 
-1. Pension | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-2. Dormitory | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-3. Bronze | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-4. Mentor | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-5. Consultant | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-6. Astronomer | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-7. Sun | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-8. Recycling | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-9. Engineer | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-10. Prison | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-11. Metamorphosis | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-12. Pedestrian | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-13. Thesaurus | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-14. Radiologist | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-15. Club | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-16. Twelve | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-17. Backward | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-18. Carrot | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-19. Bus stop | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-20. Sight | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-21. Cloud | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-22. Menu | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-23. Counterfeit | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-24. Boycott | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-25. Unicorn | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-26. Flock | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-27. Milky Way | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-28. Confidence | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-29. Abundance | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-30. Meals | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
+1. n. pension | /—/ — sounds like **—** | /—/ — sounds like **—**
+2. n. dormitory | /—/ — sounds like **—** | /—/ — sounds like **—**
+3. n. bronze | /—/ — sounds like **—** | /—/ — sounds like **—**
+4. n. mentor | /—/ — sounds like **—** | /—/ — sounds like **—**
+5. n. consultant | /—/ — sounds like **—** | /—/ — sounds like **—**
+6. n. astronomer | /—/ — sounds like **—** | /—/ — sounds like **—**
+7. n. sun | /—/ — sounds like **—** | /—/ — sounds like **—**
+8. n. recycling | /—/ — sounds like **—** | /—/ — sounds like **—**
+9. n. engineer | /—/ — sounds like **—** | /—/ — sounds like **—**
+10. n. prison | /—/ — sounds like **—** | /—/ — sounds like **—**
+11. n. metamorphosis | /—/ — sounds like **—** | /—/ — sounds like **—**
+12. n. pedestrian | /—/ — sounds like **—** | /—/ — sounds like **—**
+13. n. thesaurus | /—/ — sounds like **—** | /—/ — sounds like **—**
+14. n. radiologist | /—/ — sounds like **—** | /—/ — sounds like **—**
+15. n. club | /—/ — sounds like **—** | /—/ — sounds like **—**
+16. num. twelve | /—/ — sounds like **—** | /—/ — sounds like **—**
+17. adv. backward | /—/ — sounds like **—** | /—/ — sounds like **—**
+18. n. carrot | /—/ — sounds like **—** | /—/ — sounds like **—**
+19. n. bus stop | /—/ — sounds like **—** | /—/ — sounds like **—**
+20. n. sight | /—/ — sounds like **—** | /—/ — sounds like **—**
+21. n. cloud | /—/ — sounds like **—** | /—/ — sounds like **—**
+22. n. menu | /—/ — sounds like **—** | /—/ — sounds like **—**
+23. n. counterfeit | /—/ — sounds like **—** | /—/ — sounds like **—**
+24. n. boycott | /—/ — sounds like **—** | /—/ — sounds like **—**
+25. n. unicorn | /—/ — sounds like **—** | /—/ — sounds like **—**
+26. n. flock | /—/ — sounds like **—** | /—/ — sounds like **—**
+27. n. Milky Way | /—/ — sounds like **—** | /—/ — sounds like **—**
+28. n. confidence | /—/ — sounds like **—** | /—/ — sounds like **—**
+29. n. abundance | /—/ — sounds like **—** | /—/ — sounds like **—**
+30. n. meals | /—/ — sounds like **—** | /—/ — sounds like **—**
+
+... (continue in original order from `data/source/pte/asq/pte-answer-short-question.md`)
 31. Neighbor | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
 32. Spring | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
 33. Uniform | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**

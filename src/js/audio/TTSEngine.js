@@ -83,10 +83,11 @@ class TTSEngine {
      * SIMPLIFIED: Pronounce any text (sentence, question, word)
      * Universal method for RS/ASQ/WFD modes - reuses existing TTS infrastructure
      * @param {string} text - Text to pronounce
-     * @param {string} lang - Language code (default: 'en-AU')
+     * @param {string} lang - Language code (defaults to config.tts.language.default)
      * @param {number} rate - Speech rate (default: normal)
      */
-    async pronounceText(text, lang = 'en-AU', rate = null) {
+    async pronounceText(text, lang = null, rate = null) {
+        const defaultLang = this.config.get('tts.language.default');
         if (!text) {
             window.progressTracker.showError('No text to pronounce');
             return;
@@ -172,7 +173,7 @@ class TTSEngine {
             });
 
             // Speak the term first
-            await this.speak(cleanText, 'en-AU', pronunciationRate);
+            await this.speak(cleanText, this.config.get('tts.language.default'), pronunciationRate);
 
             // For vocabulary with examples, optionally speak the example sentence based on repeat mode
             // Only speak example on the LAST repetition to avoid: term+example+term+example
@@ -204,7 +205,7 @@ class TTSEngine {
                     const cleanExample = this.cleanExampleSentenceForTTS(rawExample);
 
                     // Speak example sentence at normal rate
-                    await this.speak(cleanExample, 'en-AU', this.speechRate);
+                    await this.speak(cleanExample, this.config.get('tts.language.default'), this.speechRate);
                 }
 
                 // Remove example highlighting
@@ -232,14 +233,16 @@ class TTSEngine {
         }
     }
 
-    speak(text, lang = 'en-AU', customRate = null) {
+    speak(text, lang = null, customRate = null) {
+        // Use configured language if not specified
+        const language = lang || this.config.get('tts.language.default');
         return new Promise((resolve, reject) => {
             // Check if we're on iOS and should use HTML5 Audio fallback
             const isIOS = window.app && window.app.isMobileDevice &&
                 /iPad|iPhone|iPod/.test(navigator.userAgent);
 
             if (isIOS && this.shouldUseHTML5Audio()) {
-                return this.speakWithHTML5Audio(text, lang, customRate).then(resolve).catch(resolve);
+                return this.speakWithHTML5Audio(text, language, customRate).then(resolve).catch(resolve);
             }
 
             if (!('speechSynthesis' in window)) {
@@ -249,7 +252,7 @@ class TTSEngine {
             }
 
             const utterance = new SpeechSynthesisUtterance(text);
-            utterance.lang = lang;
+            utterance.lang = language;
             // Use custom rate if provided, otherwise use default speechRate
             utterance.rate = customRate !== null ? customRate : this.speechRate;
             utterance.volume = 1.0;
@@ -303,7 +306,9 @@ class TTSEngine {
             speechSynthesis.speaking === false;
     }
 
-    speakWithHTML5Audio(text, lang = 'en-AU', customRate = null) {
+    speakWithHTML5Audio(text, lang = null, customRate = null) {
+        // Use configured language if not specified
+        const language = lang || this.config.get('tts.language.default');
         return new Promise((resolve, reject) => {
             // For iOS background audio, use HTML5 Audio fallback
 
@@ -316,7 +321,7 @@ class TTSEngine {
             if ('speechSynthesis' in window) {
                 // Create utterance and capture audio
                 const utterance = new SpeechSynthesisUtterance(text);
-                utterance.lang = lang;
+                utterance.lang = language;
                 utterance.rate = customRate !== null ? customRate : this.speechRate;
                 utterance.volume = 1.0;
                 utterance.pitch = 1.0;

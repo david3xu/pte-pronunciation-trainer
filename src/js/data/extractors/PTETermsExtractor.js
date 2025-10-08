@@ -6,14 +6,16 @@
  */
 class PTETermsExtractor {
   /**
-   * Extract PTE terms with pronunciation guides from markdown file
-   * @param {string} filePath - Path to markdown file
-   * @param {Object} fs - File system module (for Node.js)
-   * @returns {Array} - Array of PTE terms with pronunciation data
+   * Extract vocabulary terms from a PTE markdown file with IPA.
+   * Parses lines in format: "1. pos. word | /ipa/ — sounds like PHONETIC | /ipa/ — sounds like PHONETIC"
+   * @param {string} filePath - Path to the source markdown file
+   * @param {Object} fs - File system module (for compatibility)
+   * @param {Object} options - Extraction options
+   * @param {string} options.category - The category/book name (e.g., 'pte-beginner')
+   * @param {string} options.source - The source file identifier (e.g., 'pte-beginner-vocabulary-with-ipa')
+   * @returns {Array<Object>} Array of term objects with IPA pronunciations
    */
-  static async extract(filePath, fs = null) {
-
-    // Handle both Node.js and browser environments
+  static async extract(filePath, fs, options = {}) {    // Handle both Node.js and browser environments
     let content;
     if (fs && fs.existsSync) {
       if (!fs.existsSync(filePath)) {
@@ -46,7 +48,7 @@ class PTETermsExtractor {
       }
 
       // Extract term with IPA pronunciation data
-      const termData = this.parsePTETermLine(trimmedLine);
+      const termData = this.parsePTETermLine(trimmedLine, options);
       if (termData) {
         terms.push(termData);
       }
@@ -59,8 +61,13 @@ class PTETermsExtractor {
    * Parse a single PTE term line with IPA pronunciation data
    * Format: "1. [wordType] term | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**"
    * Example: "1. adj. structural | /ˈstrʌktʃərəl/ — sounds like **STRUHK-chuh-rul** | ..."
+   * @param {string} line - The line to parse
+   * @param {Object} options - Parsing options
+   * @param {string} options.category - The category/book name
+   * @param {string} options.source - The source file identifier
+   * @returns {Object|null} Term object or null if line is invalid
    */
-  static parsePTETermLine(line) {
+  static parsePTETermLine(line, options = {}) {
     // Match the format: number. term | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
     const match = line.match(/^\d+\.\s*(.+?)\s*\|\s*(.+?)\s*\|\s*(.+)$/);
 
@@ -105,8 +112,8 @@ class PTETermsExtractor {
         }
       },
       difficulty: this.inferDifficulty(term),
-      category: 'pte-fib-listening',
-      source: 'pte-fib-listening-with-ipa'
+      category: options.category || 'pte-vocabulary',
+      source: options.source || 'pte-vocabulary-with-ipa'
     };
     
     // Add wordType only if present (keeps data clean for entries without word types)

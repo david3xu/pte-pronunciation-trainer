@@ -320,10 +320,13 @@ class UIController {
             }, 500);
         }
         
-        // Update word type badge (if available) - NEW
+        // Update word type badge (ONLY for vocabulary mode)
         const wordTypeBadge = document.getElementById('wordTypeBadge');
+        const currentMode = window.currentPracticeMode || 'vocabulary';
+        
         if (wordTypeBadge) {
-            if (word.wordType) {
+            // Only show word type in vocabulary mode, hide in practice modes (RS/ASQ/WFD)
+            if (currentMode === 'vocabulary' && word.wordType) {
                 wordTypeBadge.textContent = `[${word.wordType}]`;
                 wordTypeBadge.style.display = 'inline-block';
                 wordTypeBadge.classList.add('word-change');
@@ -738,11 +741,18 @@ class UIController {
         const exampleSentence = document.getElementById('exampleSentence');
         const progressText = document.getElementById('progressText');
         const difficultyBadge = document.getElementById('difficultyBadge');
+        const wordTypeBadge = document.getElementById('wordTypeBadge');
 
         // Clear all first
         [phoneticSpelling, englishWord, ipaNotation, pronunciationText, exampleSentence, progressText].forEach(el => {
             if (el) el.textContent = '';
         });
+        
+        // Hide word type badge for practice modes (RS/ASQ/WFD)
+        // Word type badges are ONLY for vocabulary mode
+        if (wordTypeBadge && mode !== 'vocabulary') {
+            wordTypeBadge.style.display = 'none';
+        }
 
         // Display based on mode
         switch(mode) {

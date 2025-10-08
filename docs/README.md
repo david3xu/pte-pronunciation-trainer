@@ -1,228 +1,454 @@
-# 📚 PTE Pronunciation Trainer - Documentation# Documentation# Documentation# 📚 PTE Pronunciation Trainer - Documentation# 📚 PTE Pronunciation Trainer - Documentation# 📚 PTE Pronunciation Trainer - Documentation# 📚 PTE Pronunciation Trainer - Documentation
+# 📚 PTE Pronunciation Trainer - Documentation# 📚 PTE Pronunciation Trainer - Documentation# Documentation# Documentation# 📚 PTE Pronunciation Trainer - Documentation# 📚 PTE Pronunciation Trainer - Documentation# 📚 PTE Pronunciation Trainer - Documentation# 📚 PTE Pronunciation Trainer - Documentation
 
 
 
-Welcome to the PTE Pronunciation Trainer documentation! This guide will help you navigate the available documentation.
+Welcome to the comprehensive documentation for the PTE Pronunciation Trainer! This guide will help you find what you need quickly.
 
 
 
-**Status**: ✅ v2.1.0 - Complete Vocabulary Library with Auto-Loop  Welcome to the PTE Pronunciation Trainer documentation! This guide will help you navigate the available documentation and find what you need.
+**Version**: v2.3 Production Ready  Welcome to the PTE Pronunciation Trainer documentation! This guide will help you navigate the available documentation.
 
-**Date**: October 8, 2025
+**Last Updated**: October 8, 2025  
+
+**Status**: ✅ Complete & Current
 
 
 
----
+---**Status**: ✅ v2.1.0 - Complete Vocabulary Library with Auto-Loop  Welcome to the PTE Pronunciation Trainer documentation! This guide will help you navigate the available documentation and find what you need.
 
----Welcome to the PTE Pronunciation Trainer documentation! This guide will help you navigate the available documentation and find what you need.
 
-## 🎯 Quick Navigation
+
+## 🎯 Quick Navigation**Date**: October 8, 2025
 
 
 
 ### **For New Users**
 
-1. Start with [Project README](../README.md) - Project overview and quick start## 🎯 Documentation Philosophy: Permanent vs Temporary
+1. Start with [Project README](../README.md) - Overview and quick start
 
-2. Try the app at `http://localhost:3000` after running `npm run dev`
+2. Try the app locally: `npm run dev` → http://localhost:3000---
 
 
 
-### **For Developers**
+### **For Developers**---Welcome to the PTE Pronunciation Trainer documentation! This guide will help you navigate the available documentation and find what you need.
 
-1. **Getting Started** → [CONTRIBUTING.md](./CONTRIBUTING.md) - Setup, workflow, coding guidelines### **The Core Principle**---## 📋 Documentation Overview
+1. **Setup** → [CONTRIBUTING.md](./CONTRIBUTING.md) - Development workflow
 
-2. **System Design** → [ARCHITECTURE.md](./ARCHITECTURE.md) - How the system works
+2. **Architecture** → [ARCHITECTURE.md](./ARCHITECTURE.md) - System design## 🎯 Quick Navigation
 
-3. **API Docs** → [API-REFERENCE.md](./API-REFERENCE.md) - Complete API reference
-
-4. **Best Practices** → [BEST-PRACTICES-REFACTORING.md](./BEST-PRACTICES-REFACTORING.md) - Refactoring guidelines
-
-5. **Coding Standards** → [CODING-STANDARDS.md](./CODING-STANDARDS.md) - Code conventionsWe maintain two types of documentation:
+3. **API Reference** → [API-REFERENCE.md](./API-REFERENCE.md) - Complete API docs
 
 
 
 ### **For DevOps**
 
-1. **Deployment** → [DEPLOYMENT.md](./DEPLOYMENT.md) - How to deploy
+1. **Deployment** → [DEPLOYMENT.md](./DEPLOYMENT.md) - Deploy to production### **For New Users**
 
-2. **Issues** → [TROUBLESHOOTING.md](./TROUBLESHOOTING.md) - Common problems & solutions1. **📘 Permanent Files** - Stable, long-term reference documentation## 📚 Documentation Structure
+2. **Troubleshooting** → [TROUBLESHOOTING.md](./TROUBLESHOOTING.md) - Common issues
 
+1. Start with [Project README](../README.md) - Project overview and quick start## 🎯 Documentation Philosophy: Permanent vs Temporary
 
+---
 
----2. **🚧 Temporary Files (WIP)** - Active planning/implementation guides
-
-
+2. Try the app at `http://localhost:3000` after running `npm run dev`
 
 ## 📁 Documentation Structure
 
 
 
-```### **The Workflow**
+```
 
-docs/
+docs/### **For Developers**
 
-├── README.md                         # This file - documentation indexAll documentation follows industry best practices with clear, focused files:This directory contains comprehensive documentation for the PTE Pronunciation Trainer project, organized into **permanent** (stable), **work-in-progress** (evolving), and **archive** (historical) sections.## 📋 Documentation Overview
+├── README.md                    # This file - documentation index
 
-│
+├── ARCHITECTURE.md              # Complete system architecture1. **Getting Started** → [CONTRIBUTING.md](./CONTRIBUTING.md) - Setup, workflow, coding guidelines### **The Core Principle**---## 📋 Documentation Overview
 
-├── 📘 PERMANENT DOCUMENTATION```mermaid
+├── CONTRIBUTING.md              # Developer guide & workflows
 
-│   ├── ARCHITECTURE.md               # System architecture and design patterns
+├── API-REFERENCE.md             # Complete API documentation2. **System Design** → [ARCHITECTURE.md](./ARCHITECTURE.md) - How the system works
 
-│   ├── API-REFERENCE.md              # Complete API documentationgraph LR
+├── DEPLOYMENT.md                # Deployment guide
 
-│   ├── CONTRIBUTING.md               # Developer guide and workflows
+└── TROUBLESHOOTING.md           # Issue resolution3. **API Docs** → [API-REFERENCE.md](./API-REFERENCE.md) - Complete API reference
 
-│   ├── DEPLOYMENT.md                 # Deployment guide    A[New Feature Idea] --> B[Create WIP Planning Doc]
+```
 
-│   ├── TROUBLESHOOTING.md            # Issue resolution
-
-│   ├── CODING-STANDARDS.md           # Code conventions and patterns    B --> C[Create WIP Implementation Doc]```
-
-│   └── BEST-PRACTICES-REFACTORING.md # Refactoring best practices
-
-│    C --> D[Build Feature]
-
-└── 📦 ARCHIVE
-
-    └── phase2-wip/                   # Phase 2 historical documents    D --> E[Update Permanent Docs]docs/
-
-        ├── planning/
-
-        ├── implementation/    E --> F[Delete WIP Docs]
-
-        └── image/
-
-```    ├── README.md            # This file - documentation index---
-
-
-
----    style A fill:#e1f5ff
-
-
-
-## 📖 Permanent Documentation    style B fill:#fff4e6├── ARCHITECTURE.md      # Complete system architecture (~600 lines)
-
-
-
-### **[ARCHITECTURE.md](./ARCHITECTURE.md)** 📐    style C fill:#fff4e6
-
-**System architecture and design patterns**
-
-    style D fill:#e8f5e9├── CONTRIBUTING.md      # Developer guide & workflows (~500 lines)
-
-- System overview and design principles
-
-- Component architecture (PTEApp, VocabularyManager, SettingsModule, etc.)    style E fill:#f3e5f5
-
-- Data pipeline (Markdown → JSON transformation)
-
-- Event-driven communication    style F fill:#ffebee├── API-REFERENCE.md     # Complete API documentation (~900 lines)
-
-- State management architecture
-
-- Settings system design```
-
-
-
-**Audience**: Developers, Architects  ├── DEPLOYMENT.md        # Deployment guide (~480 lines)## 📁 Documentation StructureThis directory contains comprehensive documentation for the PTE Pronunciation Trainer project, organized into **permanent** (stable) and **work-in-progress** (evolving) sections.## 📋 Documentation Overview## 📋 Documentation Overview
-
-**When to read**: Understanding system design, modifying core components
-
-### **When to Create WIP (Temporary) Docs**
+4. **Best Practices** → [BEST-PRACTICES-REFACTORING.md](./BEST-PRACTICES-REFACTORING.md) - Refactoring guidelines
 
 ---
 
-├── TROUBLESHOOTING.md   # Issue resolution (~435 lines)
+5. **Coding Standards** → [CODING-STANDARDS.md](./CODING-STANDARDS.md) - Code conventionsWe maintain two types of documentation:
 
-### **[API-REFERENCE.md](./API-REFERENCE.md)** 📚
-
-**Complete API documentation**✅ **Create in `wip/`** when:
+## 📖 Core Documentation
 
 
 
-- Core classes (AppConfig, PTEApp, PTEVocabularyManager, SettingsModule, ProgressTracker)- Planning a new major feature├── wip/                 # Work-in-progress (active development)
+### **[ARCHITECTURE.md](./ARCHITECTURE.md)** 🏗️
 
-- UI classes (UIController, SettingsPanel)
-
-- Audio classes (TTSEngine, VoiceSelector, AudioControls)- Designing system architecture changes
-
-- Utility classes (EventBus, Storage, StateManager)
-
-- Event system documentation- Creating step-by-step implementation guides│   ├── planning/
-
-- Settings reference
-
-- Documenting work-in-progress decisions
-
-**Audience**: Developers  
-
-**When to read**: Using APIs, integrating components, understanding interfaces│   │   └── DATASET-DESIGN-STRATEGY.md### **Organization Philosophy**
+**Complete system architecture and design patterns**### **For DevOps**
 
 
 
----### **When to Update Permanent Docs**
+**Topics covered**:1. **Deployment** → [DEPLOYMENT.md](./DEPLOYMENT.md) - How to deploy
+
+- Event-driven architecture with EventBus
+
+- InitializationManager with dependency graph2. **Issues** → [TROUBLESHOOTING.md](./TROUBLESHOOTING.md) - Common problems & solutions1. **📘 Permanent Files** - Stable, long-term reference documentation## 📚 Documentation Structure
+
+- Module design patterns (SettingsModule, DatasetManager, etc.)
+
+- Global error handling and retry logic
+
+- Health checks and validation
+
+- Data pipeline architecture---2. **🚧 Temporary Files (WIP)** - Active planning/implementation guides
+
+- Performance optimization
 
 
 
-### **[CONTRIBUTING.md](./CONTRIBUTING.md)** 🤝│   └── implementation/
+**Audience**: Developers, Architects  
+
+**When to read**: Understanding system design, modifying core components## 📁 Documentation Structure
+
+
+
+---
+
+
+
+### **[CONTRIBUTING.md](./CONTRIBUTING.md)** 🤝```### **The Workflow**
 
 **Developer onboarding and contribution guide**
 
-✅ **Update permanent docs** when:
+docs/
 
-- Quick start setup
+**Topics covered**:
 
-- Project structure explanation- Feature is complete and tested│       └── IMPLEMENTATION-QUICK-START.md- **Permanent Docs** 📘: Stable, finalized documentation (main reference)
+- Quick start setup├── README.md                         # This file - documentation indexAll documentation follows industry best practices with clear, focused files:This directory contains comprehensive documentation for the PTE Pronunciation Trainer project, organized into **permanent** (stable), **work-in-progress** (evolving), and **archive** (historical) sections.## 📋 Documentation Overview
 
-- Development workflow
+- Project structure explanation
 
-- Adding new datasets- Architecture changes are finalized
+- Development workflow│
 
-- Adding new features
+- Adding new datasets
 
-- Testing guidelines- New APIs are stable and documented└── archive/             # Historical records
+- Adding new features├── 📘 PERMANENT DOCUMENTATION```mermaid
 
-- Code style conventions
+- Testing guidelines
 
-- Configuration management- Deployment process changes
+- Code style conventions│   ├── ARCHITECTURE.md               # System architecture and design patterns
 
 - Pull request guidelines
 
-- Bug reporting    ├── design-decisions/- **WIP (Work-in-Progress)** 🚧: Active planning and implementation guides---
-
-- Feature requests
-
-### **When to Delete WIP Docs**
+│   ├── API-REFERENCE.md              # Complete API documentationgraph LR
 
 **Audience**: Contributors, New Developers  
 
-**When to read**: Before making your first contribution, adding features    │   └── LEARNING-MODES.md
+**When to read**: Before making your first contribution│   ├── CONTRIBUTING.md               # Developer guide and workflows
 
 
 
----❌ **Delete WIP docs** when:
+---│   ├── DEPLOYMENT.md                 # Deployment guide    A[New Feature Idea] --> B[Create WIP Planning Doc]
 
 
 
-### **[DEPLOYMENT.md](./DEPLOYMENT.md)** 🚀- All information is incorporated into permanent docs    └── refactoring/- **Archive** 📦: Historical documents and completed refactoring records
+### **[API-REFERENCE.md](./API-REFERENCE.md)** 📚│   ├── TROUBLESHOOTING.md            # Issue resolution
+
+**Complete API documentation for all modules**
+
+│   ├── CODING-STANDARDS.md           # Code conventions and patterns    B --> C[Create WIP Implementation Doc]```
+
+**Topics covered**:
+
+- Core classes (Config, PTEApp, PTEVocabularyManager, SettingsModule)│   └── BEST-PRACTICES-REFACTORING.md # Refactoring best practices
+
+- UI classes (UIController, SettingsPanel)
+
+- Audio classes (TTSEngine, VoiceSelector, AudioControls)│    C --> D[Build Feature]
+
+- Utility classes (EventBus, Storage, InitializationManager)
+
+- Event system documentation└── 📦 ARCHIVE
+
+- Method signatures and usage examples
+
+    └── phase2-wip/                   # Phase 2 historical documents    D --> E[Update Permanent Docs]docs/
+
+**Audience**: Developers  
+
+**When to read**: Using APIs, integrating components        ├── planning/
+
+
+
+---        ├── implementation/    E --> F[Delete WIP Docs]
+
+
+
+### **[DEPLOYMENT.md](./DEPLOYMENT.md)** 🚀        └── image/
 
 **Production deployment guide**
 
-- Feature implementation is complete
+```    ├── README.md            # This file - documentation index---
+
+**Topics covered**:
 
 - Pre-deployment checklist
 
-- Local development deployment- Planning decisions are now in ARCHITECTURE.md        └── REFACTORING-COMPLETE.md
+- Local development deployment
 
-- Production build process
+- Production build process---    style A fill:#e1f5ff
 
-- Web deployment (Vercel, Netlify, GitHub Pages)- Implementation steps are now in CONTRIBUTING.md
+- Vercel deployment (recommended)
 
-- Custom server deployment (Apache, Nginx)
+- Custom server deployment
 
-- Environment-specific configuration```
+- Environment configuration
+
+- CI/CD pipeline setup## 📖 Permanent Documentation    style B fill:#fff4e6├── ARCHITECTURE.md      # Complete system architecture (~600 lines)
+
+- Performance optimization
+
+
+
+**Audience**: DevOps, System Administrators  
+
+**When to read**: Deploying the application### **[ARCHITECTURE.md](./ARCHITECTURE.md)** 📐    style C fill:#fff4e6
+
+
+
+---**System architecture and design patterns**
+
+
+
+### **[TROUBLESHOOTING.md](./TROUBLESHOOTING.md)** 🔧    style D fill:#e8f5e9├── CONTRIBUTING.md      # Developer guide & workflows (~500 lines)
+
+**Common issues and solutions**
+
+- System overview and design principles
+
+**Topics covered**:
+
+- Data loading issues- Component architecture (PTEApp, VocabularyManager, SettingsModule, etc.)    style E fill:#f3e5f5
+
+- TTS problems
+
+- Browser compatibility- Data pipeline (Markdown → JSON transformation)
+
+- Performance issues
+
+- Configuration errors- Event-driven communication    style F fill:#ffebee├── API-REFERENCE.md     # Complete API documentation (~900 lines)
+
+- Build failures
+
+- Deployment problems- State management architecture
+
+- Debug techniques
+
+- Settings system design```
+
+**Audience**: Users, Developers, Support  
+
+**When to read**: When something isn't working
+
+
+
+---**Audience**: Developers, Architects  ├── DEPLOYMENT.md        # Deployment guide (~480 lines)## 📁 Documentation StructureThis directory contains comprehensive documentation for the PTE Pronunciation Trainer project, organized into **permanent** (stable) and **work-in-progress** (evolving) sections.## 📋 Documentation Overview## 📋 Documentation Overview
+
+
+
+## 🔍 Finding What You Need**When to read**: Understanding system design, modifying core components
+
+
+
+### **"How do I..."**### **When to Create WIP (Temporary) Docs**
+
+
+
+| Question | Document | Section |---
+
+|----------|----------|---------|
+
+| ...set up the project? | [CONTRIBUTING.md](./CONTRIBUTING.md) | Quick Start |├── TROUBLESHOOTING.md   # Issue resolution (~435 lines)
+
+| ...add a new dataset? | [CONTRIBUTING.md](./CONTRIBUTING.md) | Adding New Datasets |
+
+| ...understand the architecture? | [ARCHITECTURE.md](./ARCHITECTURE.md) | System Overview |### **[API-REFERENCE.md](./API-REFERENCE.md)** 📚
+
+| ...use an API? | [API-REFERENCE.md](./API-REFERENCE.md) | Core Classes |
+
+| ...deploy the app? | [DEPLOYMENT.md](./DEPLOYMENT.md) | Production Deployment |**Complete API documentation**✅ **Create in `wip/`** when:
+
+| ...fix an issue? | [TROUBLESHOOTING.md](./TROUBLESHOOTING.md) | Common Issues |
+
+| ...contribute code? | [CONTRIBUTING.md](./CONTRIBUTING.md) | Development Workflow |
+
+
+
+### **"I want to understand..."**- Core classes (AppConfig, PTEApp, PTEVocabularyManager, SettingsModule, ProgressTracker)- Planning a new major feature├── wip/                 # Work-in-progress (active development)
+
+
+
+| Topic | Document | Section |- UI classes (UIController, SettingsPanel)
+
+|-------|----------|---------|
+
+| ...overall system design | [ARCHITECTURE.md](./ARCHITECTURE.md) | Architecture Overview |- Audio classes (TTSEngine, VoiceSelector, AudioControls)- Designing system architecture changes
+
+| ...event-driven patterns | [ARCHITECTURE.md](./ARCHITECTURE.md) | Event-Driven Architecture |
+
+| ...initialization system | [ARCHITECTURE.md](./ARCHITECTURE.md) | InitializationManager |- Utility classes (EventBus, Storage, StateManager)
+
+| ...data flow | [ARCHITECTURE.md](./ARCHITECTURE.md) | Data Pipeline |
+
+| ...settings system | [ARCHITECTURE.md](./ARCHITECTURE.md) | Settings Architecture |- Event system documentation- Creating step-by-step implementation guides│   ├── planning/
+
+| ...available APIs | [API-REFERENCE.md](./API-REFERENCE.md) | Table of Contents |
+
+- Settings reference
+
+---
+
+- Documenting work-in-progress decisions
+
+## 📊 Project Status
+
+**Audience**: Developers  
+
+**Current Version**: v2.3 Production Ready
+
+**When to read**: Using APIs, integrating components, understanding interfaces│   │   └── DATASET-DESIGN-STRATEGY.md### **Organization Philosophy**
+
+**Features**:
+
+- ✅ **10 Vocabulary Books** - 10,000+ terms with IPA pronunciation
+
+  - FIB Listening, Beginner, Intermediate, Advanced
+
+  - RA, RS, Must-Know, WFD Vocab, Reading FIB, Reading FIB Drag---### **When to Update Permanent Docs**
+
+- ✅ **3 Practice Modes** - 2,507 practice items
+
+  - Repeat Sentence (620), Answer Short Question (692), Write From Dictation (1,195)
+
+- ✅ **Event-Driven Architecture** - Complete decoupling via EventBus
+
+- ✅ **Smart Learning System** - Loop mode with continuous practice### **[CONTRIBUTING.md](./CONTRIBUTING.md)** 🤝│   └── implementation/
+
+- ✅ **Production Ready** - Health checks, retry logic, error handling
+
+**Developer onboarding and contribution guide**
+
+---
+
+✅ **Update permanent docs** when:
+
+## 🎯 Documentation Principles
+
+- Quick start setup
+
+1. **📘 Clear Purpose** - Each file has a distinct, focused purpose
+
+2. **🎯 Action-Oriented** - Guides tell you HOW to do things- Project structure explanation- Feature is complete and tested│       └── IMPLEMENTATION-QUICK-START.md- **Permanent Docs** 📘: Stable, finalized documentation (main reference)
+
+3. **📚 Reference-Focused** - Technical docs tell you WHAT exists
+
+4. **🔍 Searchable** - Clear headings, tables of contents- Development workflow
+
+5. **✅ Current** - Actively maintained and updated
+
+6. **🔗 Cross-Referenced** - Links between related topics- Adding new datasets- Architecture changes are finalized
+
+
+
+---- Adding new features
+
+
+
+## 📝 Contributing to Documentation- Testing guidelines- New APIs are stable and documented└── archive/             # Historical records
+
+
+
+When updating documentation:- Code style conventions
+
+
+
+1. **Choose the right file**:- Configuration management- Deployment process changes
+
+   - System design changes → Update `ARCHITECTURE.md`
+
+   - Workflow changes → Update `CONTRIBUTING.md`- Pull request guidelines
+
+   - API changes → Update `API-REFERENCE.md`
+
+   - Deployment changes → Update `DEPLOYMENT.md`- Bug reporting    ├── design-decisions/- **WIP (Work-in-Progress)** 🚧: Active planning and implementation guides---
+
+   - New issues/solutions → Update `TROUBLESHOOTING.md`
+
+- Feature requests
+
+2. **Update this README** if adding new sections
+
+### **When to Delete WIP Docs**
+
+3. **Cross-reference** related documents
+
+**Audience**: Contributors, New Developers  
+
+4. **Test all code examples** before documenting
+
+**When to read**: Before making your first contribution, adding features    │   └── LEARNING-MODES.md
+
+5. **Keep it current** - update dates and version numbers
+
+
+
+---
+
+---❌ **Delete WIP docs** when:
+
+## 🚀 Recent Updates
+
+
+
+### **October 8, 2025 - v2.3 Production Ready**
+
+- ✅ Complete event-driven architecture implementation### **[DEPLOYMENT.md](./DEPLOYMENT.md)** 🚀- All information is incorporated into permanent docs    └── refactoring/- **Archive** 📦: Historical documents and completed refactoring records
+
+- ✅ InitializationManager with dependency graph
+
+- ✅ Global error handling and retry logic**Production deployment guide**
+
+- ✅ All 10 vocabulary books + 3 practice modes
+
+- ✅ Loop mode as default for continuous learning- Feature implementation is complete
+
+- ✅ Voice dropdown with 4 male voice options
+
+- ✅ Comprehensive documentation update- Pre-deployment checklist
+
+
+
+---- Local development deployment- Planning decisions are now in ARCHITECTURE.md        └── REFACTORING-COMPLETE.md
+
+
+
+**Need Help?** Check the [Quick Navigation](#-quick-navigation) section or [Troubleshooting Guide](./TROUBLESHOOTING.md)!- Production build process
+
+
+
+**Have Questions?** Create an issue on GitHub or review the [Contributing Guide](./CONTRIBUTING.md).- Web deployment (Vercel, Netlify, GitHub Pages)- Implementation steps are now in CONTRIBUTING.md
+
+
+
+---- Custom server deployment (Apache, Nginx)
+
+
+
+**Last Updated**: October 8, 2025  - Environment-specific configuration```
+
+**Maintained By**: Development Team
 
 - Data pipeline deployment
 

@@ -15,11 +15,29 @@ class TTSEngine {
         this.speechRate = null; // Will be set by SettingsModule
         this.targetRepeats = null; // Will be set by SettingsModule via AudioControls
         
+        this.synth = window.speechSynthesis;
+        this.currentUtterance = null;
+        this.isPaused = false;
+        this.isSpeaking = false;
+        this.currentVoice = null;
+        this.volume = 1.0;
+        
         // Initialize events first - don't start audio context yet
         this._attachEventListeners();
 
         // We'll initialize AudioContext on first user interaction
         this.audioContextInitialized = false;
+    }
+
+    /**
+     * Safely get current practice mode from SettingsModule or Config.js fallback
+     * @returns {string} Current practice mode
+     */
+    getPracticeMode() {
+        if (window.settingsModule && typeof window.settingsModule.get === 'function') {
+            return window.settingsModule.get('practiceMode') || this.config.get('data.defaults.practiceMode');
+        }
+        return this.config.get('data.defaults.practiceMode');
     }
 
     /**
@@ -100,7 +118,7 @@ class TTSEngine {
             // Add visual feedback to main display element
             const element = this._addSpeakingFeedback('englishWord', {
                 text: text,
-                mode: window.settingsModule?.get('practiceMode') || this.config.get('data.defaults.practiceMode'),
+                mode: this.getPracticeMode(),
                 rate: speechRate
             });
 
@@ -110,7 +128,7 @@ class TTSEngine {
             // Remove visual feedback
             this._removeSpeakingFeedback(element, {
                 text: text,
-                mode: window.settingsModule?.get('practiceMode') || this.config.get('data.defaults.practiceMode')
+                mode: this.getPracticeMode()
             });
 
         } catch (error) {

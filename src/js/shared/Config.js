@@ -291,7 +291,7 @@ class AppConfig {
                     'src/js/utils/CacheMigration.js',
                     'src/js/utils/StateTest.js',
                     'src/js/data/extractors/PTETermsExtractor.js',
-                    'src/js/core/SettingsManager.js',
+                    'src/js/core/SettingsModule.js',
                     'src/js/core/PTEVocabularyManager.js',
                     'src/js/core/ProgressTracker.js',
                     'src/js/audio/TTSEngine.js',

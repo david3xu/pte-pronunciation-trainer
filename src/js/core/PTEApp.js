@@ -48,10 +48,7 @@ class PTEVocabularyTrainer {
     // 1. Initialize state manager (must be first to restore settings)
     this.initializeStateManager();
 
-    // 1.1. Initialize settings manager (handles complex settings logic)
-    this.initializeSettingsManager();
-
-    // 1.2. Initialize SettingsModule (NEW: event-driven settings architecture)
+    // 2. Initialize SettingsModule (event-driven settings architecture)
     this.initializeSettingsModule();
 
     // 1.3. Initialize dataset manager (Phase 2 - unified dataset loading)
@@ -105,15 +102,6 @@ class PTEVocabularyTrainer {
       }
     } else {
       console.warn('⚠️ StateManager not found - some features may not work');
-    }
-  }
-
-  initializeSettingsManager() {
-    // SettingsManager is already initialized as a global instance
-    // Just ensure other modules can access it
-    if (window.settingsManager) {
-    } else {
-      console.warn('⚠️ SettingsManager not found - using legacy settings handling');
     }
   }
 
@@ -254,10 +242,10 @@ class PTEVocabularyTrainer {
   }
 
   async restoreUIState() {
-    // Restore user preferences from SettingsManager (single source of truth)
-    if (!window.settingsManager) return;
+    // Restore user preferences from SettingsModule (single source of truth)
+    if (!window.settingsModule) return;
 
-    const preferences = window.settingsManager.getAllSettings();
+    const preferences = window.settingsModule.exportSettings();
     if (!preferences) return;
 
 

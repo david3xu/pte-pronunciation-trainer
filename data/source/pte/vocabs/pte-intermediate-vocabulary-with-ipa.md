@@ -653,7 +653,7 @@ Co-words
 647. adj. fascinating | /ˈfæsɪneɪtɪŋ/ — sounds like **FAS-i-nay-ting** | /ˈfæsəˌneɪtɪŋ/ — sounds like **FAS-uh-nay-ting**
 648. n. thread | /θred/ — sounds like **THRED** | /θrɛd/ — sounds like **THRED**
 649. v. dominate | /ˈdɒmɪneɪt/ — sounds like **DOM-i-nayt** | /ˈdɑməˌneɪt/ — sounds like **DAH-muh-nayt**
-650. n. processing | /ˈprəʊsesɪŋ/ — sounds like **PROH-sess-ing** | /ˈprɑˌsɛsɪŋ/ — sounds like **PRAH-sess-ing**
+650. v. processing | /ˈprəʊsesɪŋ/ — sounds like **PROH-sess-ing** | /ˈprɑˌsɛsɪŋ/ — sounds like **PRAH-sess-ing**
 651. n. rocket | /ˈrɒkɪt/ — sounds like **ROK-it** | /ˈrɑkɪt/ — sounds like **RAH-kit**
 652. n. journalism | /ˈdʒɜːnəlɪzəm/ — sounds like **JERN-uh-liz-um** | /ˈdʒɝːnəlɪzəm/ — sounds like **JERN-uh-liz-um**
 653. n. workshop | /ˈwɜːkʃɒp/ — sounds like **WERK-shop** | /ˈwɝːkˌʃɑp/ — sounds like **WURK-shop**
@@ -706,7 +706,7 @@ Co-words
 700. v. crash | /kræʃ/ — sounds like **KRASH** | /kræʃ/ — sounds like **KRASH**
 701. n. conversation | /ˌkɒnvəˈseɪʃən/ — sounds like **kon-vuh-SAY-shun** | /ˌkɑnvɚˈseɪʃən/ — sounds like **KAHN-ver-SAY-shən**
 702. n. figure | /ˈfɪɡə/ — sounds like **FIG-uh** | /ˈfɪɡjər/ — sounds like **FIG-yur**
-703. n. parking | /ˈpɑːkɪŋ/ — sounds like **PAA-king** | /ˈpɑrkɪŋ/ — sounds like **PAR-king**
+703. v. parking | /ˈpɑːkɪŋ/ — sounds like **PAA-king** | /ˈpɑrkɪŋ/ — sounds like **PAR-king**
 704. v. propose | /prəˈpəʊz/ — sounds like **pruh-POHZ** | /prəˈpoʊz/ — sounds like **pruh-POHZ**
 705. v. respond | /rɪˈspɒnd/ — sounds like **ri-SPOND** | /rɪˈspɑnd/ — sounds like **ri-SPAAND**
 706. n. noon | /nuːn/ — sounds like **NOON** | /nun/ — sounds like **NOON**
@@ -748,7 +748,7 @@ Co-words
 742. n. furniture | /ˈfɜːnɪtʃə/ — sounds like **FER-ni-chuh** | /ˈfɝːnɪtʃər/ — sounds like **FUR-ni-cher**
 743. num. nine | /naɪn/ — sounds like **NYN** | /naɪn/ — sounds like **NYN**
 744. v. predict | /prɪˈdɪkt/ — sounds like **pri-DIKT** | /prɪˈdɪkt/ — sounds like **pri-DIKT**
-745. n. accounting | /əˈkaʊntɪŋ/ — sounds like **uh-KOWN-ting** | /əˈkaʊntɪŋ/ — sounds like **uh-KOWN-ting**
+745. v. accounting | /əˈkaʊntɪŋ/ — sounds like **uh-KOWN-ting** | /əˈkaʊntɪŋ/ — sounds like **uh-KOWN-ting**
 746. adj. proper | /ˈprɒpə/ — sounds like **PROP-uh** | /ˈprɑpər/ — sounds like **PRAH-per**
 747. adj. seasonal | /ˈsiːzənəl/ — sounds like **SEE-zun-ul** | /ˈsizənəl/ — sounds like **SEE-zə-nəl**
 748. adj. conventional | /kənˈvenʃənəl/ — sounds like **kun-VEN-shun-ul** | /kənˈvɛnʃənəl/ — sounds like **kun-VEN-shə-nəl**
@@ -905,14 +905,14 @@ Co-words
 899. n. safety | /ˈseɪfti/ — sounds like **SAYF-tee** | /ˈseɪfti/ — sounds like **SAYF-tee**
 900. v. pretend | /prɪˈtend/ — sounds like **pri-TEND** | /prɪˈtɛnd/ — sounds like **pri-TEND**
 901. n. institute | /ˈɪnstɪtjuːt/ — sounds like **IN-sti-tyoot** | /ˈɪnstɪˌtut/ — sounds like **IN-sti-toot**
-902. n. aging | /ˈeɪdʒɪŋ/ — sounds like **AY-jing** | /ˈeɪdʒɪŋ/ — sounds like **AY-jing**
+902. v. aging | /ˈeɪdʒɪŋ/ — sounds like **AY-jing** | /ˈeɪdʒɪŋ/ — sounds like **AY-jing**
 903. n. reef | /riːf/ — sounds like **REEF** | /rif/ — sounds like **REEF**
 904. adj. Royal | /ˈrɔɪəl/ — sounds like **ROY-uhl** | /ˈrɔɪəl/ — sounds like **ROY-əl**
 905. adj. specific | /spəˈsɪfɪk/ — sounds like **spuh-SIF-ik** | /spəˈsɪfɪk/ — sounds like **spuh-SIF-ik**
 906. v. impound | /ɪmˈpaʊnd/ — sounds like **im-POWND** | /ɪmˈpaʊnd/ — sounds like **im-POWND**
 907. adj. sick | /sɪk/ — sounds like **SIK** | /sɪk/ — sounds like **SIK**
 908. n. citizenship | /ˈsɪtɪzənʃɪp/ — sounds like **SIT-i-zun-ship** | /ˈsɪtɪzənˌʃɪp/ — sounds like **SIT-i-zən-ship**
-909. n. feeling | /ˈfiːlɪŋ/ — sounds like **FEE-ling** | /ˈfilɪŋ/ — sounds like **FEE-ling**
+909. v. feeling | /ˈfiːlɪŋ/ — sounds like **FEE-ling** | /ˈfilɪŋ/ — sounds like **FEE-ling**
 910. adj. indigenous | /ɪnˈdɪdʒɪnəs/ — sounds like **in-DIJ-uh-nus** | /ɪnˈdɪdʒənəs/ — sounds like **in-DIJ-uh-nəs**
 911. n. passenger | /ˈpæsɪndʒə/ — sounds like **PAS-in-juh** | /ˈpæsəndʒər/ — sounds like **PAS-en-jer**
 912. n. sister | /ˈsɪstə/ — sounds like **SIS-tuh** | /ˈsɪstər/ — sounds like **SIS-ter**
@@ -931,7 +931,7 @@ Co-words
 925. n. politics | /ˈpɒlɪtɪks/ — sounds like **POL-i-tiks** | /ˈpɑlətɪks/ — sounds like **PAH-luh-tiks**
 926. adv. firstly | /ˈfɜːstli/ — sounds like **FIRST-lee** | /ˈfɝːstli/ — sounds like **FIRST-lee**
 927. v. enrol | /ɪnˈrəʊl/ — sounds like **in-ROHL** | /ɪnˈroʊl/ — sounds like **in-ROHL**
-928. n. reading | /ˈriːdɪŋ/ — sounds like **REE-ding** | /ˈridɪŋ/ — sounds like **REE-ding**
+928. v. reading | /ˈriːdɪŋ/ — sounds like **REE-ding** | /ˈridɪŋ/ — sounds like **REE-ding**
 929. num. trillion | /ˈtrɪljən/ — sounds like **TRIL-yun** | /ˈtrɪljən/ — sounds like **TRIL-yən**
 930. n. coin | /kɔɪn/ — sounds like **COYN** | /kɔɪn/ — sounds like **COYN**
 931. adj. comfortable | /ˈkʌmftəbəl/ — sounds like **KUMF-tuh-bul** | /ˈkʌmftərbəl/ — sounds like **KUMF-ter-bəl**
@@ -955,7 +955,7 @@ Co-words
 949. n. assembly | /əˈsembli/ — sounds like **uh-SEM-blee** | /əˈsɛmbli/ — sounds like **uh-SEM-bli**
 950. n. seed | /siːd/ — sounds like **SEED** | /sid/ — sounds like **SEED**
 951. pron. everything | /ˈevriθɪŋ/ — sounds like **EV-ree-thing** | /ˈɛvriθɪŋ/ — sounds like **EV-ree-thing**
-952. n. printing | /ˈprɪntɪŋ/ — sounds like **PRIN-ting** | /ˈprɪntɪŋ/ — sounds like **PRIN-ting**
+952. v. printing | /ˈprɪntɪŋ/ — sounds like **PRIN-ting** | /ˈprɪntɪŋ/ — sounds like **PRIN-ting**
 953. n. nap | /næp/ — sounds like **NAP** | /næp/ — sounds like **NAP**
 954. n. latitude | /ˈlætɪtjuːd/ — sounds like **LAT-i-tyood** | /ˈlætɪˌtud/ — sounds like **LAT-i-tood**
 955. v. derive | /dɪˈraɪv/ — sounds like **di-RYV** | /dɪˈraɪv/ — sounds like **di-RYV**
@@ -1006,7 +1006,7 @@ Co-words
 1000. n. teen | /tiːn/ — sounds like **TEEN** | /tin/ — sounds like **TEEN**
 1001. adj. formal | /ˈfɔːməl/ — sounds like **FAW-mul** | /ˈfɔrməl/ — sounds like **FOR-məl**
 1002. num. eight | /eɪt/ — sounds like **AYT** | /eɪt/ — sounds like **AYT**
-1003. n. painting | /ˈpeɪntɪŋ/ — sounds like **PAYN-ting** | /ˈpeɪntɪŋ/ — sounds like **PAYN-ting**
+1003. v. painting | /ˈpeɪntɪŋ/ — sounds like **PAYN-ting** | /ˈpeɪntɪŋ/ — sounds like **PAYN-ting**
 1004. n. panzer | /ˈpænzə/ — sounds like **PAN-zuh** | /ˈpænzər/ — sounds like **PAN-zer**
 1005. n. snow | /snəʊ/ — sounds like **SNOH** | /snoʊ/ — sounds like **SNOH**
 1006. v. submit | /səbˈmɪt/ — sounds like **sub-MIT** | /səbˈmɪt/ — sounds like **sub-MIT**
@@ -1044,7 +1044,7 @@ Co-words
 1038. n. Antarctic | /ænˈtɑːktɪk/ — sounds like **an-TAAK-tik** | /ænˈtɑrktɪk/ — sounds like **an-TARK-tik**
 1039. n. bibliography | /ˌbɪblɪˈɒɡrəfi/ — sounds like **bib-li-OG-ruh-fee** | /ˌbɪbliˈɑɡrəfi/ — sounds like **bib-lee-AH-gruh-fee**
 1040. adj. black | /blæk/ — sounds like **BLAK** | /blæk/ — sounds like **BLAK**
-1041. n. voting | /ˈvəʊtɪŋ/ — sounds like **VOH-ting** | /ˈvoʊtɪŋ/ — sounds like **VOH-ting**
+1041. v. voting | /ˈvəʊtɪŋ/ — sounds like **VOH-ting** | /ˈvoʊtɪŋ/ — sounds like **VOH-ting**
 1042. n. desk | /desk/ — sounds like **DESK** | /dɛsk/ — sounds like **DESK**
 1043. n. democracy | /dɪˈmɒkrəsi/ — sounds like **di-MOK-ruh-see** | /dɪˈmɑkrəsi/ — sounds like **di-MAH-kruh-see**
 1044. n. core | /kɔː/ — sounds like **KAW** | /kɔr/ — sounds like **KOR**
@@ -1161,7 +1161,7 @@ Co-words
 1155. v. realize | /ˈrɪəlaɪz/ — sounds like **REE-uh-lyze** | /ˈriəˌlaɪz/ — sounds like **REE-uh-lyze**
 1156. n. action | /ˈækʃən/ — sounds like **AK-shun** | /ˈækʃən/ — sounds like **AK-shən**
 1157. adj. illegal | /ɪˈliːɡəl/ — sounds like **i-LEE-gul** | /ɪˈligəl/ — sounds like **i-LEE-gəl**
-1158. n. learning | /ˈlɜːnɪŋ/ — sounds like **LERN-ing** | /ˈlɝːnɪŋ/ — sounds like **LURN-ing**
+1158. v. learning | /ˈlɜːnɪŋ/ — sounds like **LERN-ing** | /ˈlɝːnɪŋ/ — sounds like **LURN-ing**
 1159. adj. institutional | /ˌɪnstɪˈtjuːʃənəl/ — sounds like **in-sti-TYOO-shun-ul** | /ˌɪnstɪˈtuʃənəl/ — sounds like **in-sti-TOO-shə-nəl**
 1160. v. arrange | /əˈreɪndʒ/ — sounds like **uh-RAYNJ** | /əˈreɪndʒ/ — sounds like **uh-RAYNJ**
 1161. n. galaxy | /ˈɡæləksi/ — sounds like **GAL-uk-see** | /ˈɡælɪksi/ — sounds like **GAL-ik-see**
@@ -1194,7 +1194,7 @@ Co-words
 1188. n. partner | /ˈpɑːtnə/ — sounds like **PAAT-nuh** | /ˈpɑrtnər/ — sounds like **PART-ner**
 1189. n. aircraft | /ˈeəkrɑːft/ — sounds like **AIR-kraaft** | /ˈɛrˌkræft/ — sounds like **AIR-kraft**
 1190. n. boom | /buːm/ — sounds like **BOOM** | /bum/ — sounds like **BOOM**
-1191. n. engineering | /ˌendʒɪˈnɪərɪŋ/ — sounds like **en-ji-NEER-ing** | /ˌɛndʒəˈnɪrɪŋ/ — sounds like **en-juh-NEER-ing**
+1191. v. engineering | /ˌendʒɪˈnɪərɪŋ/ — sounds like **en-ji-NEER-ing** | /ˌɛndʒəˈnɪrɪŋ/ — sounds like **en-juh-NEER-ing**
 1192. n. classroom | /ˈklɑːsruːm/ — sounds like **KLAHS-room** | /ˈklæsˌrum/ — sounds like **KLASS-room**
 1193. adj. archaeological | /ˌɑːkiəˈlɒdʒɪkəl/ — sounds like **AR-kee-uh-LOJ-i-kul** | /ˌɑrkiəˈlɑdʒɪkəl/ — sounds like **AR-kee-uh-LAHJ-i-kəl**
 1194. n. habitat | /ˈhæbɪtæt/ — sounds like **HAB-i-tat** | /ˈhæbəˌtæt/ — sounds like **HAB-uh-tat**
@@ -1360,7 +1360,7 @@ Co-words
 1354. adv. relatively | /ˈrelətɪvli/ — sounds like **REL-uh-tiv-lee** | /ˈrɛlətɪvli/ — sounds like **REL-uh-tiv-lee**
 1355. pron. anyone | /ˈeniwʌn/ — sounds like **EN-ee-wun** | /ˈɛniˌwʌn/ — sounds like **EN-ee-wun**
 1356. n. responsibility | /rɪˌspɒnsəˈbɪləti/ — sounds like **ri-SPON-suh-BIL-uh-tee** | /rɪˌspɑnsəˈbɪləti/ — sounds like **ri-SPAHN-suh-BIL-ə-tee**
-1357. n. manufacturing | /ˌmænjʊˈfæktʃərɪŋ/ — sounds like **MAN-yuh-FAK-chuh-ring** | /ˌmænjəˈfæktʃərɪŋ/ — sounds like **MAN-yuh-FAK-chur-ing**
+1357. v. manufacturing | /ˌmænjʊˈfæktʃərɪŋ/ — sounds like **MAN-yuh-FAK-chuh-ring** | /ˌmænjəˈfæktʃərɪŋ/ — sounds like **MAN-yuh-FAK-chur-ing**
 1358. v. reflect | /rɪˈflekt/ — sounds like **ri-FLEKT** | /rɪˈflɛkt/ — sounds like **ri-FLEKT**
 1359. n. brother | /ˈbrʌðə/ — sounds like **BRUTH-uh** | /ˈbrʌðər/ — sounds like **BRUTH-er**
 1360. n. consumer | /kənˈsjuːmə/ — sounds like **kun-SYOO-muh** | /kənˈsumər/ — sounds like **kun-SOO-mer**
@@ -1377,7 +1377,7 @@ Co-words
 1371. prep. de | /də/ — sounds like **DUH** | /də/ — sounds like **DUH**
 1372. adj. wonderful | /ˈwʌndəfəl/ — sounds like **WUN-duh-ful** | /ˈwʌndərfəl/ — sounds like **WUN-der-fəl**
 1373. n. bee | /biː/ — sounds like **BEE** | /bi/ — sounds like **BEE**
-1374. n. thinking | /ˈθɪŋkɪŋ/ — sounds like **THING-king** | /ˈθɪŋkɪŋ/ — sounds like **THING-king**
+1374. v. thinking | /ˈθɪŋkɪŋ/ — sounds like **THING-king** | /ˈθɪŋkɪŋ/ — sounds like **THING-king**
 1375. n. column | /ˈkɒləm/ — sounds like **KOL-um** | /ˈkɑləm/ — sounds like **KAH-ləm**
 1376. v. defend | /dɪˈfend/ — sounds like **di-FEND** | /dɪˈfɛnd/ — sounds like **di-FEND**
 1377. n. copyright | /ˈkɒpiraɪt/ — sounds like **KOP-i-ryt** | /ˈkɑpiˌraɪt/ — sounds like **KAH-pi-ryt**
@@ -1417,18 +1417,18 @@ Co-words
 1411. adj. catastrophic | /ˌkætəˈstrɒfɪk/ — sounds like **KAT-uh-STROF-ik** | /ˌkætəˈstrɑfɪk/ — sounds like **KAT-uh-STRAHF-ik**
 1412. n. hunter | /ˈhʌntə/ — sounds like **HUN-tuh** | /ˈhʌntər/ — sounds like **HUN-ter**
 1413. n. orchestra | /ˈɔːkɪstrə/ — sounds like **AW-ki-struh** | /ˈɔrkɪstrə/ — sounds like **OR-ki-strə**
-1414. n. farming | /ˈfɑːmɪŋ/ — sounds like **FAAH-ming** | /ˈfɑrmɪŋ/ — sounds like **FARM-ing**
+1414. v. farming | /ˈfɑːmɪŋ/ — sounds like **FAAH-ming** | /ˈfɑrmɪŋ/ — sounds like **FARM-ing**
 1415. adv. basically | /ˈbeɪsɪkəli/ — sounds like **BAY-si-kuh-lee** | /ˈbeɪsɪkəli/ — sounds like **BAY-si-kə-lee**
 1416. n. ice | /aɪs/ — sounds like **EYS** | /aɪs/ — sounds like **EYS**
 1417. n. dispute | /dɪˈspjuːt/ — sounds like **di-SPYOOT** | /dɪˈspjut/ — sounds like **di-SPYOOT**
 1418. adj. slow | /sləʊ/ — sounds like **SLOH** | /sloʊ/ — sounds like **SLOH**
 1419. n. pattern | /ˈpætən/ — sounds like **PAT-uhn** | /ˈpætərn/ — sounds like **PAT-ern**
-1420. n. parenting | /ˈpeərəntɪŋ/ — sounds like **PAIR-unt-ing** | /ˈpɛrəntɪŋ/ — sounds like **PAIR-ənt-ing**
+1420. v. parenting | /ˈpeərəntɪŋ/ — sounds like **PAIR-unt-ing** | /ˈpɛrəntɪŋ/ — sounds like **PAIR-ənt-ing**
 1421. n. freshwater | /ˈfreʃwɔːtə/ — sounds like **FRESH-waw-tuh** | /ˈfrɛʃˌwɔtər/ — sounds like **FRESH-waw-ter**
 1422. n. dendrochronology | /ˌdendrəʊkrəˈnɒlədʒi/ — sounds like **DEN-droh-kruh-NOL-uh-jee** | /ˌdɛndroʊkrəˈnɑlədʒi/ — sounds like **DEN-droh-kruh-NAH-luh-jee**
 1423. adv. inside | /ɪnˈsaɪd/ — sounds like **in-SYD** | /ɪnˈsaɪd/ — sounds like **in-SYD**
 1424. n. shape | /ʃeɪp/ — sounds like **SHAYP** | /ʃeɪp/ — sounds like **SHAYP**
-1425. n. advertising | /ˈædvətaɪzɪŋ/ — sounds like **AD-vuh-ty-zing** | /ˈædvərˌtaɪzɪŋ/ — sounds like **AD-ver-ty-zing**
+1425. v. advertising | /ˈædvətaɪzɪŋ/ — sounds like **AD-vuh-ty-zing** | /ˈædvərˌtaɪzɪŋ/ — sounds like **AD-ver-ty-zing**
 1426. n. mother | /ˈmʌðə/ — sounds like **MUTH-uh** | /ˈmʌðər/ — sounds like **MUTH-er**
 1427. n. death | /deθ/ — sounds like **DETH** | /dɛθ/ — sounds like **DETH**
 1428. n. holiday | /ˈhɒlədeɪ/ — sounds like **HOL-uh-day** | /ˈhɑləˌdeɪ/ — sounds like **HAH-luh-day**
@@ -1443,7 +1443,7 @@ Co-words
 1437. n. card | /kɑːd/ — sounds like **KAHD** | /kɑrd/ — sounds like **KARD**
 1438. n. employee | /ɪmˈplɔɪiː/ — sounds like **im-PLOY-ee** | /ɛmˈplɔɪi/ — sounds like **em-PLOY-ee**
 1439. v. wish | /wɪʃ/ — sounds like **WISH** | /wɪʃ/ — sounds like **WISH**
-1440. n. forgetting | /fəˈɡetɪŋ/ — sounds like **fuh-GET-ing** | /fərˈɡɛtɪŋ/ — sounds like **fer-GET-ing**
+1440. v. forgetting | /fəˈɡetɪŋ/ — sounds like **fuh-GET-ing** | /fərˈɡɛtɪŋ/ — sounds like **fer-GET-ing**
 1441. adj. Federal | /ˈfedərəl/ — sounds like **FED-uh-rul** | /ˈfɛdərəl/ — sounds like **FED-ər-əl**
 1442. v. undertake | /ˌʌndəˈteɪk/ — sounds like **UN-duh-TAYK** | /ˌʌndərˈteɪk/ — sounds like **UN-der-TAYK**
 1443. v. engage | /ɪnˈɡeɪdʒ/ — sounds like **in-GAYJ** | /ɪnˈɡeɪdʒ/ — sounds like **in-GAYJ**

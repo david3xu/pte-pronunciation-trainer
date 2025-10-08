@@ -72,31 +72,25 @@ class UIController {
         // Bind all settings controls using event-driven architecture
         this.bindSettingControls();
 
-        // Control buttons
+        // Control buttons - using event-driven architecture
         document.getElementById('startBtn').addEventListener('click', () => {
-            window.audioControls.startAutoPlay();
+            window.eventBus.emit('audio:start');
         });
 
         document.getElementById('pauseBtn').addEventListener('click', () => {
-            window.audioControls.pauseAutoPlay();
+            window.eventBus.emit('audio:pause');
         });
 
         document.getElementById('nextBtn').addEventListener('click', () => {
-            // Mode-aware: call appropriate next method
-            if (window.currentPracticeMode && window.currentPracticeMode !== 'vocabulary') {
-                window.audioControls.nextItem();
-            } else {
-                window.audioControls.nextWord();
-            }
+            // Mode-aware: emit appropriate next event
+            const mode = window.currentPracticeMode || 'vocabulary';
+            window.eventBus.emit('audio:next', { mode });
         });
 
         document.getElementById('prevBtn').addEventListener('click', () => {
-            // Mode-aware: call appropriate prev method
-            if (window.currentPracticeMode && window.currentPracticeMode !== 'vocabulary') {
-                window.audioControls.prevItem();
-            } else {
-                window.audioControls.previousWord();
-            }
+            // Mode-aware: emit appropriate prev event
+            const mode = window.currentPracticeMode || 'vocabulary';
+            window.eventBus.emit('audio:prev', { mode });
         });
 
         // Pronunciation toggle button

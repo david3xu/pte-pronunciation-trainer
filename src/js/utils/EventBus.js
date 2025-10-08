@@ -26,6 +26,21 @@ class EventBus {
                 callback(data);
             } catch (error) {
                 console.error(`EventBus error in ${event} handler:`, error);
+                
+                // Emit global error event for centralized error handling
+                // Prevent infinite loops by not emitting system:error for system:error
+                if (event !== 'system:error') {
+                    // Use setTimeout to avoid recursive emit during iteration
+                    setTimeout(() => {
+                        this.emit('system:error', {
+                            event,
+                            error: error.message || String(error),
+                            stack: error.stack,
+                            data,
+                            timestamp: new Date().toISOString()
+                        });
+                    }, 0);
+                }
             }
         });
     }

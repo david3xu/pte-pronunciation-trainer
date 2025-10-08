@@ -263,14 +263,14 @@ class SettingsModule {
             }
             
             // 2. Validate value
-            if (handler.validate && !handler.validate(value)) {
+            if (handler.validate && !handler.validate.call(this, value)) {
                 console.warn(`⚠️ SettingsModule: Invalid value for '${key}': ${value}`);
                 return { success: false, error: 'Invalid value', key, value };
             }
             
             // 3. Apply to engine/manager
             if (handler.apply) {
-                await handler.apply(value);
+                await handler.apply.call(this, value);
             }
             
             // 4. Update in-memory cache
@@ -386,8 +386,8 @@ class SettingsModule {
             const handler = this.handlers[key];
             if (handler && handler.apply) {
                 try {
-                    // Apply the setting (calls engine methods)
-                    handler.apply(value);
+                    // Apply the setting (calls engine methods) - bind 'this' context
+                    handler.apply.call(this, value);
                     console.log(`[SettingsModule] ${key.charAt(0).toUpperCase() + key.slice(1)} set to ${value} (event-driven)`);
                 } catch (error) {
                     console.warn(`⚠️ SettingsModule: Failed to apply '${key}' during initialization:`, error.message);

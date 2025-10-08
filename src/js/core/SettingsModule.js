@@ -366,10 +366,10 @@ class SettingsModule {
             
             // For other settings, get arrays directly from config
             const optionsMap = {
-                difficulty: this.config.get('data.dropdowns.difficulties'),
-                learningMode: this.config.get('data.dropdowns.learningModes'),
-                practiceMode: this.config.get('data.dropdowns.practiceModes'),
-                practiceDataset: this.config.get('data.dropdowns.practiceDatasets')
+                difficulty: this.config.get('data.difficulties'),
+                learningMode: this.config.get('data.learningModes'),
+                practiceMode: this.config.get('data.practiceModes'),
+                practiceDataset: this.config.get('data.practiceDatasets')
             };
             
             // If it's already in {id, label} format, return as-is

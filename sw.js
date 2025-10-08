@@ -2,7 +2,7 @@
 // Service Worker for PTE Pronunciation Trainer
 // Handles offline caching and background sync
 
-const CACHE_VERSION = 'v47'; // Version 47: Fixed syncRepeatModeFromHTML() legacy code + improved voice loading
+const CACHE_VERSION = 'v48'; // Version 48: Fixed voice loading timeout warning - only warn if voices actually fail to load
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

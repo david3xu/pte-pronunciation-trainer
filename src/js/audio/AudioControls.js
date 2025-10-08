@@ -12,8 +12,9 @@ class AudioControls {
         this.currentIndex = 0;
         this.autoPlayTimeout = null;
         
-        // Settings will be initialized by SettingsModule via events
-        // No hard-coded defaults - single source of truth
+        // Initialize properties (will be set by SettingsModule events)
+        this.delay = null; // Will be set by SettingsModule
+        this.repeatMode = null; // Will be set by SettingsModule
         
         // Listen to settings changes
         this._attachEventListeners();
@@ -24,19 +25,26 @@ class AudioControls {
      * @private
      */
     _attachEventListeners() {
-        window.eventBus.on('setting:changed', this._handleSettingChange.bind(this));
+        // Listen to standardized settings:changed event from Config.js
+        const settingsChangedEvent = window.appConfig.get('events.settings.changed');
+        window.eventBus.on(settingsChangedEvent, this._handleSettingChange.bind(this));
         
-        // Audio control events for event-driven architecture
-        window.eventBus.on('audio:start', () => this.startAutoPlay());
-        window.eventBus.on('audio:pause', () => this.pauseAutoPlay());
-        window.eventBus.on('audio:next', ({ mode }) => {
+        // Audio control events (using standardized names from Config.js)
+        const audioStartEvent = window.appConfig.get('events.audio.autoplay.start');
+        const audioPauseEvent = window.appConfig.get('events.audio.autoplay.pause');
+        const audioNextEvent = window.appConfig.get('events.audio.navigate.next');
+        const audioPrevEvent = window.appConfig.get('events.audio.navigate.prev');
+        
+        window.eventBus.on(audioStartEvent, () => this.startAutoPlay());
+        window.eventBus.on(audioPauseEvent, () => this.pauseAutoPlay());
+        window.eventBus.on(audioNextEvent, ({ mode }) => {
             if (mode && mode !== 'vocabulary') {
                 this.nextItem();
             } else {
                 this.nextWord();
             }
         });
-        window.eventBus.on('audio:prev', ({ mode }) => {
+        window.eventBus.on(audioPrevEvent, ({ mode }) => {
             if (mode && mode !== 'vocabulary') {
                 this.prevItem();
             } else {
@@ -233,8 +241,9 @@ class AudioControls {
             `🔄 Auto-looping to ${nextBook?.label || nextMode}...`
         );
         
-        // Change to next book via event
-        window.eventBus.emit('setting:request-change', {
+        // Change to next book via event (standardized from Config.js)
+        const settingsRequestChangeEvent = window.appConfig.get('events.settings.requestChange');
+        window.eventBus.emit(settingsRequestChangeEvent, {
             key: 'learningMode',
             value: nextMode
         });
@@ -242,13 +251,11 @@ class AudioControls {
         // Reset to first word
         this.currentIndex = 0;
         
-        // Continue playing if was playing
-        if (this.isPlaying) {
-            // Small delay to let the new book load
-            setTimeout(async () => {
-                await this.playCurrentWord();
-            }, 500);
-        }
+        // STOP auto-playing - user must press play again to continue
+        // This prevents infinite loop behavior
+        this.pauseAutoPlay();
+        
+        console.log('[AudioControls] ⏸️ Auto-play paused - press PLAY to continue with new book');
     }
 
     restartCurrentDataset() {
@@ -269,12 +276,11 @@ class AudioControls {
         // Loop back to beginning
         this.currentIndex = 0;
         
-        // Continue playing if was playing  
-        if (this.isPlaying) {
-            setTimeout(async () => {
-                await this.playCurrentWord();
-            }, 500);
-        }
+        // STOP auto-playing - user must press play again to continue
+        // This prevents infinite loop behavior
+        this.pauseAutoPlay();
+        
+        console.log('[AudioControls] ⏸️ Auto-play paused - press PLAY to restart dataset');
     }
 
     nextWord() {
@@ -314,7 +320,9 @@ class AudioControls {
     updateCurrentDisplay() {
         const currentWord = window.pteVocabularyManager.getCurrentWord(this.currentIndex);
         if (currentWord) {
-            window.eventBus.emit('word:display', {
+            // Emit standardized event from Config.js
+            const contentDisplayEvent = window.appConfig.get('events.content.display');
+            window.eventBus.emit(contentDisplayEvent, {
                 word: currentWord,
                 index: this.currentIndex
             });

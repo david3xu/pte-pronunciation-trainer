@@ -336,6 +336,126 @@ class AppConfig {
                 }
             },
 
+            // ===== EVENT TAXONOMY =====
+            // Single source of truth for ALL event names in the application
+            // Pattern: domain:action[:modifier]
+            events: {
+                // Content display and navigation
+                content: {
+                    display: 'content:display',
+                    next: 'content:next',
+                    prev: 'content:prev'
+                },
+                
+                // Audio playback and controls
+                audio: {
+                    autoplay: {
+                        start: 'audio:autoplay:start',
+                        started: 'audio:autoplay:started',
+                        pause: 'audio:autoplay:pause',
+                        paused: 'audio:autoplay:paused'
+                    },
+                    navigate: {
+                        next: 'audio:navigate:next',
+                        prev: 'audio:navigate:prev'
+                    },
+                    word: {
+                        started: 'audio:word:started'
+                    },
+                    delay: {
+                        changed: 'audio:delay:changed'
+                    },
+                    repeat: {
+                        changed: 'audio:repeat:changed'
+                    }
+                },
+                
+                // Text-to-speech events
+                tts: {
+                    speaking: {
+                        started: 'tts:speaking:started',
+                        completed: 'tts:speaking:completed',
+                        stopped: 'tts:speaking:stopped'
+                    },
+                    rate: {
+                        changed: 'tts:rate:changed'
+                    },
+                    repeat: {
+                        changed: 'tts:repeat:changed'
+                    }
+                },
+                
+                // Settings and configuration
+                settings: {
+                    requestChange: 'settings:request-change',
+                    changed: 'settings:changed',
+                    error: 'settings:error',
+                    reset: 'settings:reset',
+                    batchUpdated: 'settings:batch-updated',
+                    panel: {
+                        opened: 'settings:panel:opened',
+                        closed: 'settings:panel:closed'
+                    },
+                    exported: 'settings:exported',
+                    imported: 'settings:imported'
+                },
+                
+                // Mode changes (practice mode, learning mode)
+                mode: {
+                    practice: {
+                        changing: 'mode:practice:changing',
+                        changed: 'mode:practice:changed'
+                    },
+                    learning: {
+                        changing: 'mode:learning:changing',
+                        changed: 'mode:learning:changed'
+                    }
+                },
+                
+                // Dataset loading and management
+                dataset: {
+                    loaded: 'dataset:loaded',
+                    error: 'dataset:error',
+                    practice: {
+                        changed: 'dataset:practice:changed'
+                    }
+                },
+                
+                // Vocabulary-specific events
+                vocabulary: {
+                    loaded: 'vocabulary:loaded',
+                    updated: 'vocabulary:updated',
+                    difficulty: {
+                        filtered: 'vocabulary:difficulty:filtered'
+                    },
+                    error: 'vocabulary:error'
+                },
+                
+                // Progress tracking
+                progress: {
+                    updated: 'progress:updated',
+                    status: {
+                        updated: 'progress:status:updated'
+                    },
+                    stats: {
+                        updated: 'progress:stats:updated'
+                    },
+                    error: 'progress:error'
+                },
+                
+                // Voice selection
+                voice: {
+                    preference: {
+                        changed: 'voice:preference:changed'
+                    }
+                },
+                
+                // Application lifecycle
+                app: {
+                    initialized: 'app:initialized'
+                }
+            },
+
             // ===== SETTINGS CONFIGURATION =====
             settings: {
                 storageKeys: {
@@ -355,11 +475,6 @@ class AppConfig {
                     repeat: 'loop', // Loop through all words continuously
                     voice: 'auto',
                     learningMode: 'pte-fib-listening'
-                },
-                events: {
-                    changed: 'settings:changed',
-                    loaded: 'settings:loaded',
-                    reset: 'settings:reset'
                 }
             },
 

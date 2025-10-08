@@ -2,7 +2,9 @@
 // Service Worker for PTE Pronunciation Trainer
 // Handles offline caching and background sync
 
-const CACHE_VERSION = 'v57'; // Added PTE ASQ Answers Vocabulary (606 words)
+// Service Worker for PTE Vocabulary Trainer
+// Version 61 - Fixed play button and auto-loop behavior
+const CACHE_VERSION = 'v61';
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

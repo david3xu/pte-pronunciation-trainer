@@ -11,6 +11,10 @@ class TTSEngine {
         this.currentRepeatCount = 0;
         this.backgroundAudioEnabled = false; // Flag to prevent multiple sync registrations
         
+        // Initialize properties (will be set by SettingsModule events)
+        this.speechRate = null; // Will be set by SettingsModule
+        this.targetRepeats = null; // Will be set by SettingsModule via AudioControls
+        
         // Initialize background audio ONCE in constructor
         this.enableBackgroundAudio();
         
@@ -55,7 +59,9 @@ class TTSEngine {
         if (element) {
             element.classList.add('speaking');
         }
-        window.eventBus.emit('tts:speakingStarted', eventData);
+        // Emit standardized event from Config.js
+        const ttsSpeakingStartedEvent = window.appConfig.get('events.tts.speaking.started');
+        window.eventBus.emit(ttsSpeakingStartedEvent, eventData);
         return element;
     }
 
@@ -68,7 +74,9 @@ class TTSEngine {
         if (element) {
             element.classList.remove('speaking');
         }
-        window.eventBus.emit('tts:speakingCompleted', eventData);
+        // Emit standardized event from Config.js
+        const ttsSpeakingCompletedEvent = window.appConfig.get('events.tts.speaking.completed');
+        window.eventBus.emit(ttsSpeakingCompletedEvent, eventData);
     }
 
     /**
@@ -144,8 +152,9 @@ class TTSEngine {
                 englishWordElement.classList.add('speaking');
             }
 
-            // Emit speaking start event
-            window.eventBus.emit('tts:speakingStarted', {
+            // Emit speaking start event (standardized from Config.js)
+            const ttsSpeakingStartedEvent = window.appConfig.get('events.tts.speaking.started');
+            window.eventBus.emit(ttsSpeakingStartedEvent, {
                 word: word.english,
                 repeatCount: this.currentRepeatCount,
                 rate: pronunciationRate
@@ -198,8 +207,9 @@ class TTSEngine {
                 englishWordElement.classList.remove('speaking');
             }
 
-            // Emit speaking completed event
-            window.eventBus.emit('tts:speakingCompleted', {
+            // Emit speaking completed event (standardized from Config.js)
+            const ttsSpeakingCompletedEvent = window.appConfig.get('events.tts.speaking.completed');
+            window.eventBus.emit(ttsSpeakingCompletedEvent, {
                 word: word.english,
                 repeatCount: this.currentRepeatCount
             });
@@ -456,8 +466,9 @@ class TTSEngine {
     _setSpeechRate(rate) {
         this.speechRate = parseFloat(rate) || this.config.get('tts.speeds.normal');
 
-        // Emit rate change event
-        window.eventBus.emit('tts:rateChanged', {
+        // Emit rate change event (standardized from Config.js)
+        const ttsRateChangedEvent = window.appConfig.get('events.tts.rate.changed');
+        window.eventBus.emit(ttsRateChangedEvent, {
             rate: this.speechRate
         });
     }
@@ -466,8 +477,9 @@ class TTSEngine {
         this.targetRepeats = parseInt(targetRepeats) || 1;
         this.currentRepeatCount = 0; // Reset count
 
-        // Emit repeat mode change event
-        window.eventBus.emit('tts:repeatModeChanged', {
+        // Emit repeat mode change event (standardized from Config.js)
+        const ttsRepeatChangedEvent = window.appConfig.get('events.tts.repeat.changed');
+        window.eventBus.emit(ttsRepeatChangedEvent, {
             targetRepeats: this.targetRepeats
         });
     }
@@ -483,8 +495,9 @@ class TTSEngine {
             englishWordElement.classList.remove('speaking');
         }
 
-        // Emit stop event
-        window.eventBus.emit('tts:stopped', {
+        // Emit stop event (standardized from Config.js)
+        const ttsStoppedEvent = window.appConfig.get('events.tts.speaking.stopped');
+        window.eventBus.emit(ttsStoppedEvent, {
             timestamp: new Date().toISOString()
         });
     }

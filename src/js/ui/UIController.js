@@ -183,7 +183,7 @@ class UIController {
 
         // Audio dropdowns
         this.populateDropdown('speedSelect', 'speed', '0.7');
-        const defaultDelay = this.config.get('tts.delays.normal');
+        const defaultDelay = this.config.get('tts.delays.long'); // Match SettingsModule default
         this.populateDropdown('delaySelect', 'delay', String(defaultDelay));
         this.populateDropdown('repeatSelect', 'repeat', 'once');
         this.populateDropdown('voiceSelect', 'voice', 'auto');

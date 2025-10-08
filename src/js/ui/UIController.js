@@ -131,7 +131,7 @@ class UIController {
      * @param {Object} data - Display data containing item/word and index
      * @param {string} [mode] - Optional mode override, defaults to currentPracticeMode
      */
-    displayCurrent(mode = null) {
+    displayCurrent(data = {}, mode = null) {
         const defaultMode = this.config.get('data.defaults.practiceMode');
         const currentMode = mode || this.getPracticeMode();
         

@@ -1,11 +1,14 @@
 // TTSEngine - Text-to-speech synthesis functionality
+// ARCHITECTURE: Event-driven initialization
+// - No hard-coded settings defaults in constructor
+// - All settings (speechRate, targetRepeats) initialized via SettingsModule events
+// - SettingsModule emits 'setting:changed' events during loadSettings()
+// - This ensures single source of truth: Config.js → SettingsModule → Audio modules
 class TTSEngine {
     constructor() {
         // Load configuration from centralized config
         this.config = window.appConfig || new AppConfig();
-        this.speechRate = this.config.get('tts.speeds.slow');
         this.currentRepeatCount = 0;
-        this.targetRepeats = 2;
         this.backgroundAudioEnabled = false; // Flag to prevent multiple sync registrations
         
         // Initialize background audio ONCE in constructor
@@ -35,6 +38,10 @@ class TTSEngine {
             // Reset voice cache when voice preference changes
             this.resetVoiceCache();
             console.log(`[TTSEngine] Voice preference changed to ${value}`);
+        } else if (key === 'repeat') {
+            // Handle repeat mode from SettingsModule (set by AudioControls)
+            // Note: AudioControls converts mode to targetRepeats and calls setRepeatMode
+            // This listener is for potential direct repeat settings
         }
     }
 

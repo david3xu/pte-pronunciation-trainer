@@ -148,16 +148,16 @@ This collection lists answers from the PTE ASQ dataset in the exact original ord
 138. n. Witness | /ˈwɪtnəs/ — sounds like **WIT-nuss** | /ˈwɪtnəs/ — sounds like **WIT-nəs**
 139. n. Sail | /seɪl/ — sounds like **SAYL** | /seɪl/ — sounds like **SAYL**
 140. adj. Even | /ˈiːvən/ — sounds like **EE-vun** | /ˈivən/ — sounds like **EE-vən**
-141. Memorial | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-142. Handle | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-143. Victim | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-144. Left-handed | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-145. Linguist | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-146. Black | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-147. February | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-148. History | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-149. Chapter | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-150. Headquarters | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
+141. n. Memorial | /məˈmɔːriəl/ — sounds like **muh-MAW-ree-uhl** | /məˈmɔriəl/ — sounds like **muh-MOR-ee-əl**
+142. n. Handle | /ˈhændl/ — sounds like **HAN-dl** | /ˈhændl/ — sounds like **HAN-dl**
+143. n. Victim | /ˈvɪktɪm/ — sounds like **VIK-tim** | /ˈvɪktɪm/ — sounds like **VIK-tim**
+144. adj. Left-handed | /ˌlɛftˈhændɪd/ — sounds like **LEFT-HAN-did** | /ˌlɛftˈhændɪd/ — sounds like **LEFT-HAN-did**
+145. n. Linguist | /ˈlɪŋɡwɪst/ — sounds like **LING-gwist** | /ˈlɪŋɡwɪst/ — sounds like **LING-gwist**
+146. adj. Black | /blæk/ — sounds like **BLAK** | /blæk/ — sounds like **BLAK**
+147. n. February | /ˈfɛbruəri/ — sounds like **FEB-roo-air-ee** | /ˈfɛbjʊˌɛri/ — sounds like **FEB-yoo-air-ee**
+148. n. History | /ˈhɪstəri/ — sounds like **HIS-tuh-ree** | /ˈhɪstəri/ — sounds like **HIS-tuh-ree**
+149. n. Chapter | /ˈtʃæptə/ — sounds like **CHAP-tuh** | /ˈtʃæptər/ — sounds like **CHAP-ter**
+150. n. Headquarters | /ˌhɛdˈkwɔːtəz/ — sounds like **HED-KWAW-tuz** | /ˌhɛdˈkwɔrtərz/ — sounds like **HED-KWOR-terz**
 151. adj. Urban | /ˈɜːbən/ — sounds like **UR-bun** | /ˈɝːbən/ — sounds like **UR-bən**
 152. n. Sun | /sʌn/ — sounds like **SUN** | /sʌn/ — sounds like **SUN**
 153. n. Calculator | /ˈkælkjʊleɪtə/ — sounds like **KAL-kyoo-lay-tuh** | /ˈkælkjəˌleɪtər/ — sounds like **KAL-kyuh-LAY-ter**
@@ -188,276 +188,276 @@ This collection lists answers from the PTE ASQ dataset in the exact original ord
 178. n. Kitten | /ˈkɪtən/ — sounds like **KIT-uhn** | /ˈkɪtn/ — sounds like **KIT-n**
 179. n. Ear | /ɪə/ — sounds like **EAR** | /ɪr/ — sounds like **EER**
 180. adj. Private | /ˈpraɪvət/ — sounds like **PRY-vuht** | /ˈpraɪvət/ — sounds like **PRY-vət**
-181. Ferry | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-182. Tourists | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-183. Library | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-184. Two | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-185. Twins | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-186. Narration | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-187. Nose | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-188. Venom | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-189. Monologue | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-190. Bald | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-191. Asia | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-192. Cola | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-193. Cutlery | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-194. Translator | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-195. Anchor | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-196. Multiplication | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-197. Earthquake | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-198. Every two years | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-199. Biennial | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-200. Musician | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-201. Switch | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-202. Submarine | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-203. Hundred | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-204. Vertical | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-205. Will | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-206. Multiplication | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-207. Swiss | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-208. Prelude | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-209. Attendance | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-210. Theater | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-211. Punctuation | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-212. Journal | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-213. Sun | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-214. Chemistry | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-215. Back | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-216. Crawl | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-217. Four | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-218. Nurse | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-219. Veterinarian | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-220. Currency | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-221. Prescription | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-222. School | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-223. Tertiary | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-224. Undergraduates | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-225. Hybrid | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-226. Drive | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-227. Lifeguard | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-228. Glass | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-229. Breast | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-230. Wings | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-231. Nostrils | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-232. Stadium | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-233. Bank | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-234. Gold | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-235. Gold | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-236. Soundtrack | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-237. Drama | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-238. Smoking | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-239. Alphabetical | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-240. Length | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-241. Shorts | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-242. Car model | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-243. West | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-244. Scale | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-245. Thesaurus | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-246. Natural | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-247. Sundial | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-248. Equator | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-249. Nectar | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-250. Wednesday | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-251. Stopwatch | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-252. Fertilizer | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-253. Nail | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-254. Peel | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-255. Heart | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-256. Rainforest | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-257. Font | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-258. Week | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-259. Bilingual | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-260. Four years | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-261. Taxation | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-262. Steam | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-263. Introduction | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-264. Historian | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-265. Square | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-266. Star | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-267. Environment | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-268. Closet | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-269. Casual | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-270. Moving | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-271. Receive | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-272. Draft | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-273. Comic | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-274. Moving | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-275. Feathers | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-276. Accommodation | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-277. Male and Female | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-278. Publisher | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-279. Information Technology | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-280. Y | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-281. Fruit salad | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-282. Altimeter | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-283. Weight | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-284. Airplane | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-285. Flowers | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-286. Pollination | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-287. Pilot | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-288. Joint | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-289. Knee | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-290. Eye | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-291. Paper | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-292. Tutorial | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-293. Journals | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-294. Book | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-295. Model car | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-296. Book | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-297. Wednesday | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-298. Newspaper | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-299. Sunscreen | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-300. Post office | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-301. Three | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-302. Agreement | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-303. Minimize | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-304. Patient | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-305. Debt | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-306. Newspaper | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-307. Magnet | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-308. Periodic table | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-309. Concave | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-310. Moving | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-311. Fading | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-312. Nicotine | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-313. Border | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-314. Headline | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-315. Friction | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-316. Quarter | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-317. Pediatrician | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-318. Predecessor | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-319. Wood | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-320. Nightmare | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-321. Alarm clock | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-322. Length | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-323. Oxygen | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-324. Strings | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-325. Telescope | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-326. Twenty-first | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-327. Rocket | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-328. Aridity | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-329. Enthusiastic | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-330. Quarterly | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-331. Tolerant | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-332. Tomorrow | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-333. After | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-334. Quick | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-335. Venom | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-336. Synonym | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-337. Melting | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-338. Three | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-339. Two | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-340. Diameter | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-341. Diameter | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-342. Lighthouse | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-343. Auction | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-344. Workers | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-345. Ship | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-346. Every year | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-347. Transcript | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-348. Horizon | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-349. Elbow | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-350. Sheep | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-351. Ice | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-352. Twelve | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-353. Fracture | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-354. Butterfly | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-355. Square | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-356. Sunglasses | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-357. Transportation | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-358. Enclosed spaces | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-359. Avalanche | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-360. Volcanoes | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-361. Advertisement | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-362. East | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-363. Export | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-364. Pessimistic | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-365. Negative | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-366. Pacific | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-367. Contents | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-368. Solar system | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-369. Freeze | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-370. Conclusion | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-371. Walk | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-372. Grapes | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-373. Autobiography | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-374. Patent | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-375. Atlas | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-376. Dictionary | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-377. Gravity | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-378. Cast | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-379. Valley | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-380. 366 | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-381. 29 | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-382. Insomnia | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-383. October | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-384. Men | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-385. Volunteer | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-386. Tunnel | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-387. Solar energy | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-388. Blood | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-389. Uniform | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-390. Laboratory | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-391. Keyboard | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-392. Nephew | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-393. Glass | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-394. Five | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-395. Six | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-396. Oval | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-397. Seed | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-398. Fine | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-399. Computer | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-400. Census | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-401. Two | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-402. Desert | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-403. Low unemployment | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-404. Innocent | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-405. Circle | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-406. Tutor | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-407. Parachuting | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-408. Two | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-409. Touch | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-410. Olympics | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-411. Abstain | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-412. Signature | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-413. Reference | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-414. Height | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-415. Wood | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-416. His predecessor | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-417. Mammal | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-418. Graph | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-419. Mining | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-420. Extinct | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-421. Vote | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-422. Flap | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-423. Eight | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-424. Giraffe | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-425. Wick | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-426. Water | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-427. Division | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-428. Liters | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-429. Pharmacist | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-430. Email | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-431. Early morning | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-432. Km | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-433. Protection | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-434. Doctor | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-435. Psychologist | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-436. Waiter | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-437. Editor | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-438. Baker | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-439. Barber | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-440. Millions | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-441. Period | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-442. Honey | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-443. Journal | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-444. Departure | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-445. Editorial | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-446. Bibliography | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-447. Cycling | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-448. Running | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-449. Bed | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-450. Printer | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
+181. n. Ferry | /ˈfɛri/ — sounds like **FEH-ree** | /ˈfɛri/ — sounds like **FEH-ree**
+182. n. Tourists | /ˈtʊərɪsts/ — sounds like **TOOR-ists** | /ˈtʊrɪsts/ — sounds like **TOOR-ists**
+183. n. Library | /ˈlaɪbrəri/ — sounds like **LYE-brer-ee** | /ˈlaɪˌbrɛri/ — sounds like **LYE-breh-ree**
+184. num. Two | /tuː/ — sounds like **TOO** | /tu/ — sounds like **TOO**
+185. n. Twins | /twɪnz/ — sounds like **TWINZ** | /twɪnz/ — sounds like **TWINZ**
+186. n. Narration | /næˈreɪʃən/ — sounds like **na-RAY-shun** | /nəˈreɪʃən/ — sounds like **nuh-RAY-shən**
+187. n. Nose | /nəʊz/ — sounds like **NOHZ** | /noʊz/ — sounds like **NOHZ**
+188. n. Venom | /ˈvɛnəm/ — sounds like **VEN-um** | /ˈvɛnəm/ — sounds like **VEN-um**
+189. n. Monologue | /ˈmɒnəlɒɡ/ — sounds like **MON-uh-log** | /ˈmɑnəˌlɔɡ/ — sounds like **MAH-nuh-log**
+190. adj. Bald | /bɔːld/ — sounds like **BAWLD** | /bɔld/ — sounds like **BAWLD**
+191. n. Asia | /ˈeɪʒə/ — sounds like **AY-zhuh** | /ˈeɪʒə/ — sounds like **AY-zhuh**
+192. n. Cola | /ˈkəʊlə/ — sounds like **KOH-luh** | /ˈkoʊlə/ — sounds like **KOH-luh**
+193. n. Cutlery | /ˈkʌtləri/ — sounds like **KUT-luh-ree** | /ˈkʌtləri/ — sounds like **KUT-lə-ree**
+194. n. Translator | /trænzˈleɪtə/ — sounds like **tranz-LAY-tuh** | /trænzˈleɪtər/ — sounds like **tranz-LAY-ter**
+195. n. Anchor | /ˈæŋkə/ — sounds like **ANG-kuh** | /ˈæŋkər/ — sounds like **ANG-ker**
+196. n. Multiplication | /ˌmʌltɪplɪˈkeɪʃən/ — sounds like **MUL-ti-pli-KAY-shun** | /ˌmʌltəpləˈkeɪʃən/ — sounds like **MUL-tuh-pluh-KAY-shən**
+197. n. Earthquake | /ˈɜːθkweɪk/ — sounds like **URTH-kwayk** | /ˈɝːθˌkweɪk/ — sounds like **URTH-kwayk**
+198. adv. Every two years | /ˈɛvri tuː jɪəz/ — sounds like **EV-ree TOO yeerz** | /ˈɛvri tu jɪrz/ — sounds like **EV-ree TOO yeerz**
+199. adj. Biennial | /baɪˈɛniəl/ — sounds like **by-EN-ee-uhl** | /baɪˈɛniəl/ — sounds like **by-EN-ee-uhl**
+200. n. Musician | /mjuːˈzɪʃən/ — sounds like **myoo-ZISH-uhn** | /mjʊˈzɪʃən/ — sounds like **myu-ZISH-ən**
+201. n. Switch | /swɪtʃ/ — sounds like **SWITCH** | /swɪtʃ/ — sounds like **SWITCH**
+202. n. Submarine | /ˌsʌbməˈriːn/ — sounds like **SUB-muh-REEN** | /ˌsʌbməˈrin/ — sounds like **SUB-muh-REEN**
+203. num. Hundred | /ˈhʌndrəd/ — sounds like **HUN-druhd** | /ˈhʌndrəd/ — sounds like **HUN-dred**
+204. adj. Vertical | /ˈvɜːtɪkəl/ — sounds like **VER-ti-kul** | /ˈvɝːtɪkəl/ — sounds like **VER-ti-kəl**
+205. n. Will | /wɪl/ — sounds like **WILL** | /wɪl/ — sounds like **WILL**
+206. n. Multiplication | /ˌmʌltɪplɪˈkeɪʃən/ — sounds like **MUL-ti-pli-KAY-shun** | /ˌmʌltəpləˈkeɪʃən/ — sounds like **MUL-tuh-pluh-KAY-shən**
+207. adj. Swiss | /swɪs/ — sounds like **SWISS** | /swɪs/ — sounds like **SWISS**
+208. n. Prelude | /ˈprɛljuːd/ — sounds like **PREL-yood** | /ˈprɛlud/ — sounds like **PREL-ood**
+209. n. Attendance | /əˈtɛndəns/ — sounds like **uh-TEN-duns** | /əˈtɛndəns/ — sounds like **uh-TEN-duns**
+210. n. Theater | /ˈθiːətə/ — sounds like **THEE-uh-tuh** | /ˈθiːətər/ — sounds like **THEE-uh-ter**
+211. n. Punctuation | /ˌpʌŋktʃuˈeɪʃən/ — sounds like **punk-choo-AY-shun** | /ˌpʌŋktʃuˈeɪʃən/ — sounds like **punk-choo-AY-shən**
+212. n. Journal | /ˈdʒɜːnəl/ — sounds like **JER-nul** | /ˈdʒɝːnəl/ — sounds like **JER-nəl**
+213. n. Sun | /sʌn/ — sounds like **SUN** | /sʌn/ — sounds like **SUN**
+214. n. Chemistry | /ˈkɛmɪstri/ — sounds like **KEM-iss-tree** | /ˈkɛmɪstri/ — sounds like **KEM-iss-tree**
+215. n. Back | /bæk/ — sounds like **BAK** | /bæk/ — sounds like **BAK**
+216. v. Crawl | /krɔːl/ — sounds like **CRAWL** | /krɔl/ — sounds like **CRAWL**
+217. num. Four | /fɔː/ — sounds like **FOR** | /fɔr/ — sounds like **FOR**
+218. n. Nurse | /nɜːs/ — sounds like **NERSS** | /nɝːs/ — sounds like **NERSS**
+219. n. Veterinarian | /ˌvɛtərɪˈneəriən/ — sounds like **VET-uh-ri-NAIR-ee-uhn** | /ˌvɛtərəˈnɛriən/ — sounds like **VET-er-uh-NER-ee-ən**
+220. n. Currency | /ˈkʌrənsi/ — sounds like **KUR-un-see** | /ˈkɝːənsi/ — sounds like **KUR-un-see**
+221. n. Prescription | /prɪˈskrɪpʃən/ — sounds like **prih-SKRIP-shun** | /prɪˈskrɪpʃən/ — sounds like **prih-SKRIP-shən**
+222. n. School | /skuːl/ — sounds like **SKOOL** | /skul/ — sounds like **SKOOL**
+223. adj. Tertiary | /ˈtɜːʃəri/ — sounds like **TUR-shuh-ree** | /ˈtɝːʃiˌɛri/ — sounds like **TUR-shee-AIR-ee**
+224. n. Undergraduates | /ˌʌndəˈɡrædjʊəts/ — sounds like **UN-duh-GRAD-yoo-uts** | /ˌʌndərˈɡrædʒuəts/ — sounds like **UN-der-GRAD-joo-uts**
+225. n. Hybrid | /ˈhaɪbrɪd/ — sounds like **HY-brid** | /ˈhaɪbrɪd/ — sounds like **HY-brid**
+226. n. Drive | /draɪv/ — sounds like **DRYV** | /draɪv/ — sounds like **DRYV**
+227. n. Lifeguard | /ˈlaɪfɡɑːd/ — sounds like **LYFE-gard** | /ˈlaɪfɡɑrd/ — sounds like **LYFE-gard**
+228. n. Glass | /ɡlɑːs/ — sounds like **GLAHS** | /ɡlæs/ — sounds like **GLASS**
+229. n. Breast | /brɛst/ — sounds like **BREST** | /brɛst/ — sounds like **BREST**
+230. n. Wings | /wɪŋz/ — sounds like **WINGZ** | /wɪŋz/ — sounds like **WINGZ**
+231. n. Nostrils | /ˈnɒstrɪlz/ — sounds like **NOS-trilz** | /ˈnɑstrəlz/ — sounds like **NAH-strulz**
+232. n. Stadium | /ˈsteɪdiəm/ — sounds like **STAY-dee-um** | /ˈsteɪdiəm/ — sounds like **STAY-dee-əm**
+233. n. Bank | /bæŋk/ — sounds like **BANGK** | /bæŋk/ — sounds like **BANGK**
+234. n. Gold | /ɡəʊld/ — sounds like **GOHLD** | /goʊld/ — sounds like **GOHLD**
+235. n. Gold | /ɡəʊld/ — sounds like **GOHLD** | /goʊld/ — sounds like **GOHLD**
+236. n. Soundtrack | /ˈsaʊndtræk/ — sounds like **SOWND-trak** | /ˈsaʊndˌtræk/ — sounds like **SOWND-trak**
+237. n. Drama | /ˈdrɑːmə/ — sounds like **DRAH-muh** | /ˈdrɑmə/ — sounds like **DRAH-muh**
+238. n. Smoking | /ˈsməʊkɪŋ/ — sounds like **SMOH-king** | /ˈsmoʊkɪŋ/ — sounds like **SMOH-king**
+239. adj. Alphabetical | /ˌælfəˈbɛtɪkəl/ — sounds like **AL-fuh-BET-i-kuhl** | /ˌælfəˈbɛtɪkəl/ — sounds like **AL-fuh-BET-i-kəl**
+240. n. Length | /lɛŋθ/ — sounds like **LENGTH** | /lɛŋθ/ — sounds like **LENGTH**
+241. n. Shorts | /ʃɔːts/ — sounds like **SHAWTS** | /ʃɔrts/ — sounds like **SHORTS**
+242. n. Car model | /kɑː ˈmɒdl/ — sounds like **KAH MOD-l** | /kɑr ˈmɑdl/ — sounds like **KAR MOD-l**
+243. n. West | /wɛst/ — sounds like **WEST** | /wɛst/ — sounds like **WEST**
+244. n. Scale | /skeɪl/ — sounds like **SKAYL** | /skeɪl/ — sounds like **SKAYL**
+245. n. Thesaurus | /θɪˈsɔːrəs/ — sounds like **thi-SAW-rus** | /θɪˈsɔrəs/ — sounds like **thi-SOR-us**
+246. adj. Natural | /ˈnætʃrəl/ — sounds like **NATCH-rul** | /ˈnætʃrəl/ — sounds like **NATCH-rəl**
+247. n. Sundial | /ˈsʌndaɪəl/ — sounds like **SUN-dye-uhl** | /ˈsʌnˌdaɪəl/ — sounds like **SUN-dye-uhl**
+248. n. Equator | /ɪˈkweɪtə/ — sounds like **ih-KWAY-tuh** | /ɪˈkweɪtər/ — sounds like **ih-KWAY-ter**
+249. n. Nectar | /ˈnɛktə/ — sounds like **NEK-tuh** | /ˈnɛktər/ — sounds like **NEK-ter**
+250. n. Wednesday | /ˈwɛnzdeɪ/ — sounds like **WENZ-day** | /ˈwɛnzdeɪ/ — sounds like **WENZ-day**
+251. n. Stopwatch | /ˈstɒpwɒtʃ/ — sounds like **STOP-wotch** | /ˈstɑpˌwɑtʃ/ — sounds like **STOP-wotch**
+252. n. Fertilizer | /ˈfɜːtɪlaɪzə/ — sounds like **FUR-ti-ly-zuh** | /ˈfɝːtɪˌlaɪzər/ — sounds like **FUR-ti-ly-zer**
+253. n. Nail | /neɪl/ — sounds like **NAYL** | /neɪl/ — sounds like **NAYL**
+254. v. Peel | /piːl/ — sounds like **PEEL** | /pil/ — sounds like **PEEL**
+255. n. Heart | /hɑːt/ — sounds like **HAHT** | /hɑrt/ — sounds like **HART**
+256. n. Rainforest | /ˈreɪnfɒrɪst/ — sounds like **RAYN-for-ist** | /ˈreɪnˌfɔrɪst/ — sounds like **RAYN-for-ist**
+257. n. Font | /fɒnt/ — sounds like **FONT** | /fɑnt/ — sounds like **FAHNT**
+258. n. Week | /wiːk/ — sounds like **WEEK** | /wik/ — sounds like **WEEK**
+259. adj. Bilingual | /ˌbaɪˈlɪŋɡwəl/ — sounds like **by-LING-gwal** | /ˌbaɪˈlɪŋɡwəl/ — sounds like **by-LING-gwəl**
+260. n. Four years | /fɔː jɪəz/ — sounds like **FOR yeerz** | /fɔr jɪrz/ — sounds like **FOR yeerz**
+261. n. Taxation | /tækˈseɪʃən/ — sounds like **tak-SAY-shun** | /tækˈseɪʃən/ — sounds like **tak-SAY-shən**
+262. n. Steam | /stiːm/ — sounds like **STEEM** | /stim/ — sounds like **STEEM**
+263. n. Introduction | /ˌɪntrəˈdʌkʃən/ — sounds like **in-truh-DUK-shun** | /ˌɪntrəˈdʌkʃən/ — sounds like **in-truh-DUK-shən**
+264. n. Historian | /hɪˈstɔːriən/ — sounds like **hi-STAW-ree-uhn** | /hɪˈstɔriən/ — sounds like **hi-STOR-ee-ən**
+265. n. Square | /skweə/ — sounds like **SKWAIR** | /skwɛr/ — sounds like **SKWAIR**
+266. n. Star | /stɑː/ — sounds like **STAA** | /stɑr/ — sounds like **STAR**
+267. n. Environment | /ɪnˈvaɪərənmənt/ — sounds like **in-VY-uh-run-munt** | /ɪnˈvaɪrənmənt/ — sounds like **in-VY-run-mint**
+268. n. Closet | /ˈklɒzɪt/ — sounds like **KLOZ-it** | /ˈklɑːzət/ — sounds like **KLAH-zit**
+269. adj. Casual | /ˈkæʒuəl/ — sounds like **KAZH-oo-uhl** | /ˈkæʒuəl/ — sounds like **KAZH-oo-əl**
+270. adj. Moving | /ˈmuːvɪŋ/ — sounds like **MOO-ving** | /ˈmuvɪŋ/ — sounds like **MOO-ving**
+271. v. Receive | /rɪˈsiːv/ — sounds like **ri-SEEV** | /rɪˈsiv/ — sounds like **ri-SEEV**
+272. n. Draft | /drɑːft/ — sounds like **DRAAFT** | /dræft/ — sounds like **DRAFT**
+273. n. Comic | /ˈkɒmɪk/ — sounds like **KOM-ik** | /ˈkɑmɪk/ — sounds like **KAH-mik**
+274. adj. Moving | /ˈmuːvɪŋ/ — sounds like **MOO-ving** | /ˈmuvɪŋ/ — sounds like **MOO-ving**
+275. n. Feathers | /ˈfɛðəz/ — sounds like **FETH-uz** | /ˈfɛðərz/ — sounds like **FETH-erz**
+276. n. Accommodation | /əˌkɒməˈdeɪʃən/ — sounds like **uh-KOM-uh-DAY-shun** | /əˌkɑməˈdeɪʃən/ — sounds like **uh-KAH-muh-DAY-shən**
+277. n. Male and Female | /meɪl ænd ˈfiːmeɪl/ — sounds like **MAYL and FEE-mayl** | /meɪl ænd ˈfiˌmeɪl/ — sounds like **MAYL and FEE-mayl**
+278. n. Publisher | /ˈpʌblɪʃə/ — sounds like **PUB-li-shuh** | /ˈpʌblɪʃər/ — sounds like **PUB-li-sher**
+279. n. Information Technology | /ˌɪnfəˈmeɪʃən tɛkˈnɒlədʒi/ — sounds like **in-fuh-MAY-shun tek-NOL-uh-jee** | /ˌɪnfərˈmeɪʃən tɛkˈnɑlədʒi/ — sounds like **in-fer-MAY-shən tek-NAH-lə-jee**
+280. n. Y | /waɪ/ — sounds like **WYE** | /waɪ/ — sounds like **WYE**
+281. n. Fruit salad | /fruːt ˈsæləd/ — sounds like **FROOT SAL-ud** | /frut ˈsæləd/ — sounds like **FROOT SAL-əd**
+282. n. Altimeter | /ˈæltɪmiːtə/ — sounds like **AL-ti-mee-tuh** | /ˈɔltəˌmitər/ — sounds like **AWL-tuh-mee-ter**
+283. n. Weight | /weɪt/ — sounds like **WAYT** | /weɪt/ — sounds like **WAYT**
+284. n. Airplane | /ˈeəpleɪn/ — sounds like **AIR-playn** | /ˈɛrˌpleɪn/ — sounds like **AIR-playn**
+285. n. Flowers | /ˈflaʊəz/ — sounds like **FLOW-uz** | /ˈflaʊərz/ — sounds like **FLOW-erz**
+286. n. Pollination | /ˌpɒlɪˈneɪʃən/ — sounds like **POL-i-NAY-shun** | /ˌpɑləˈneɪʃən/ — sounds like **PAH-lə-NAY-shən**
+287. n. Pilot | /ˈpaɪlət/ — sounds like **PY-lut** | /ˈpaɪlət/ — sounds like **PY-lət**
+288. n. Joint | /dʒɔɪnt/ — sounds like **JOYNT** | /dʒɔɪnt/ — sounds like **JOYNT**
+289. n. Knee | /niː/ — sounds like **NEE** | /ni/ — sounds like **NEE**
+290. n. Eye | /aɪ/ — sounds like **EYE** | /aɪ/ — sounds like **EYE**
+291. n. Paper | /ˈpeɪpə/ — sounds like **PAY-puh** | /ˈpeɪpər/ — sounds like **PAY-per**
+292. n. Tutorial | /tjuːˈtɔːriəl/ — sounds like **tyoo-TOR-ee-uhl** | /tuˈtɔriəl/ — sounds like **too-TOR-ee-əl**
+293. n. Journals | /ˈdʒɜːnəlz/ — sounds like **JER-nulz** | /ˈdʒɝːnəlz/ — sounds like **JER-nəlz**
+294. n. Book | /bʊk/ — sounds like **BUK** | /bʊk/ — sounds like **BUK**
+295. n. Model car | /ˈmɒdəl kɑː/ — sounds like **MOD-ul KAH** | /ˈmɑdəl kɑr/ — sounds like **MOD-əl KAR**
+296. n. Book | /bʊk/ — sounds like **BUK** | /bʊk/ — sounds like **BUK**
+297. n. Wednesday | /ˈwɛnzdeɪ/ — sounds like **WENZ-day** | /ˈwɛnzdeɪ/ — sounds like **WENZ-day**
+298. n. Newspaper | /ˈnjuːzˌpeɪpə/ — sounds like **NYOOZ-pay-puh** | /ˈnuzˌpeɪpər/ — sounds like **NOOZ-pay-per**
+299. n. Sunscreen | /ˈsʌnskriːn/ — sounds like **SUN-skreen** | /ˈsʌnˌskrin/ — sounds like **SUN-skreen**
+300. n. Post office | /ˈpəʊst ˌɒfɪs/ — sounds like **POHST OFF-iss** | /ˈpoʊst ˌɔfɪs/ — sounds like **POHST AW-fis**
+301. num. Three | /θriː/ — sounds like **THREE** | /θri/ — sounds like **THREE**
+302. n. Agreement | /əˈɡriːmənt/ — sounds like **uh-GREE-ment** | /əˈɡrimənt/ — sounds like **uh-GREE-ment**
+303. v. Minimize | /ˈmɪnɪmaɪz/ — sounds like **MIN-i-myz** | /ˈmɪnəˌmaɪz/ — sounds like **MIN-uh-myz**
+304. n. Patient | /ˈpeɪʃənt/ — sounds like **PAY-shunt** | /ˈpeɪʃənt/ — sounds like **PAY-shənt**
+305. n. Debt | /dɛt/ — sounds like **DET** | /dɛt/ — sounds like **DET**
+306. n. Newspaper | /ˈnjuːzˌpeɪpə/ — sounds like **NYOOZ-pay-puh** | /ˈnuzˌpeɪpər/ — sounds like **NOOZ-pay-per**
+307. n. Magnet | /ˈmæɡnɪt/ — sounds like **MAG-nit** | /ˈmæɡnɪt/ — sounds like **MAG-nit**
+308. n. Periodic table | /ˌpɪəriˈɒdɪk ˈteɪbl/ — sounds like **peer-ee-OD-ik TAY-bul** | /ˌpɪriˈɑdɪk ˈteɪbəl/ — sounds like **peer-ee-AH-dik TAY-bəl**
+309. adj. Concave | /kɒnˈkeɪv/ — sounds like **kon-KAYV** | /kɑnˈkeɪv/ — sounds like **kahn-KAYV**
+310. adj. Moving | /ˈmuːvɪŋ/ — sounds like **MOO-ving** | /ˈmuvɪŋ/ — sounds like **MOO-ving**
+311. n. Fading | /ˈfeɪdɪŋ/ — sounds like **FAY-ding** | /ˈfeɪdɪŋ/ — sounds like **FAY-ding**
+312. n. Nicotine | /ˈnɪkətiːn/ — sounds like **NIK-uh-teen** | /ˈnɪkəˌtin/ — sounds like **NIK-uh-teen**
+313. n. Border | /ˈbɔːdə/ — sounds like **BOR-duh** | /ˈbɔrdər/ — sounds like **BOR-der**
+314. n. Headline | /ˈhɛdlaɪn/ — sounds like **HED-line** | /ˈhɛdˌlaɪn/ — sounds like **HED-line**
+315. n. Friction | /ˈfrɪkʃən/ — sounds like **FRIK-shun** | /ˈfrɪkʃən/ — sounds like **FRIK-shən**
+316. n. Quarter | /ˈkwɔːtə/ — sounds like **KWAW-tuh** | /ˈkwɔrtər/ — sounds like **KWOR-ter**
+317. n. Pediatrician | /ˌpiːdiəˈtrɪʃən/ — sounds like **PEE-dee-uh-TRISH-uhn** | /ˌpidiəˈtrɪʃən/ — sounds like **PEE-dee-uh-TRISH-ən**
+318. n. Predecessor | /ˈprɛdɪˌsɛsə/ — sounds like **PREH-di-sess-uh** | /ˈprɛdɪˌsɛsər/ — sounds like **PREH-di-sess-er**
+319. n. Wood | /wʊd/ — sounds like **WOOD** | /wʊd/ — sounds like **WOOD**
+320. n. Nightmare | /ˈnaɪtmeə/ — sounds like **NYTE-mair** | /ˈnaɪtˌmɛr/ — sounds like **NYTE-mer**
+321. n. Alarm clock | /əˈlɑːm klɒk/ — sounds like **uh-LARM klok** | /əˈlɑrm klɑk/ — sounds like **uh-LARM klok**
+322. n. Length | /lɛŋθ/ — sounds like **LENGTH** | /lɛŋθ/ — sounds like **LENGTH**
+323. n. Oxygen | /ˈɒksɪdʒən/ — sounds like **OKS-i-jun** | /ˈɑksɪdʒən/ — sounds like **AHK-si-jən**
+324. n. Strings | /strɪŋz/ — sounds like **STRINGZ** | /strɪŋz/ — sounds like **STRINGZ**
+325. n. Telescope | /ˈtɛlɪskəʊp/ — sounds like **TEL-ih-skohp** | /ˈtɛləˌskoʊp/ — sounds like **TEL-uh-skohp**
+326. num. Twenty-first | /ˌtwɛnti ˈfɜːst/ — sounds like **TWEN-tee FERST** | /ˌtwɛnti ˈfɝːst/ — sounds like **TWEN-tee FIRST**
+327. n. Rocket | /ˈrɒkɪt/ — sounds like **ROK-it** | /ˈrɑkɪt/ — sounds like **RAH-kit**
+328. n. Aridity | /əˈrɪdəti/ — sounds like **uh-RID-uh-tee** | /əˈrɪdɪti/ — sounds like **uh-RID-i-tee**
+329. adj. Enthusiastic | /ɪnˌθjuːziˈæstɪk/ — sounds like **in-THYOO-zee-ASS-tik** | /ɪnˌθuziˈæstɪk/ — sounds like **in-THOO-zee-ASS-tik**
+330. adj. Quarterly | /ˈkwɔːtəli/ — sounds like **KWAW-tuh-lee** | /ˈkwɔrtərli/ — sounds like **KWOR-ter-lee**
+331. adj. Tolerant | /ˈtɒlərənt/ — sounds like **TOL-uh-runt** | /ˈtɑlərənt/ — sounds like **TAH-luh-runt**
+332. n. Tomorrow | /təˈmɒrəʊ/ — sounds like **tuh-MOR-oh** | /təˈmɑroʊ/ — sounds like **tuh-MAR-oh**
+333. prep. After | /ˈɑːftə/ — sounds like **AAFT-uh** | /ˈæftər/ — sounds like **AFT-er**
+334. adj. Quick | /kwɪk/ — sounds like **KWIK** | /kwɪk/ — sounds like **KWIK**
+335. n. Venom | /ˈvɛnəm/ — sounds like **VEN-um** | /ˈvɛnəm/ — sounds like **VEN-um**
+336. n. Synonym | /ˈsɪnənɪm/ — sounds like **SIN-uh-nim** | /ˈsɪnəˌnɪm/ — sounds like **SIN-uh-nim**
+337. n. Melting | /ˈmɛltɪŋ/ — sounds like **MEL-ting** | /ˈmɛltɪŋ/ — sounds like **MEL-ting**
+338. num. Three | /θriː/ — sounds like **THREE** | /θri/ — sounds like **THREE**
+339. num. Two | /tuː/ — sounds like **TOO** | /tu/ — sounds like **TOO**
+340. n. Diameter | /daɪˈæmɪtə/ — sounds like **die-AM-i-tuh** | /daɪˈæmɪtər/ — sounds like **die-AM-i-ter**
+341. n. Diameter | /daɪˈæmɪtə/ — sounds like **die-AM-i-tuh** | /daɪˈæmɪtər/ — sounds like **die-AM-i-ter**
+342. n. Lighthouse | /ˈlaɪthaʊs/ — sounds like **LYTE-howss** | /ˈlaɪtˌhaʊs/ — sounds like **LYTE-hows**
+343. n. Auction | /ˈɔːkʃən/ — sounds like **AWK-shun** | /ˈɔkʃən/ — sounds like **AWK-shən**
+344. n. Workers | /ˈwɜːkəz/ — sounds like **WER-kuz** | /ˈwɝːkərz/ — sounds like **WER-kers**
+345. n. Ship | /ʃɪp/ — sounds like **SHIP** | /ʃɪp/ — sounds like **SHIP**
+346. adv. Every year | /ˈɛvri jɪə/ — sounds like **EV-ree year** | /ˈɛvri jɪr/ — sounds like **EV-ree year**
+347. n. Transcript | /ˈtrænskrɪpt/ — sounds like **TRAN-skript** | /ˈtrænskrɪpt/ — sounds like **TRAN-skript**
+348. n. Horizon | /həˈraɪzən/ — sounds like **huh-RYE-zun** | /həˈraɪzən/ — sounds like **huh-RYE-zən**
+349. n. Elbow | /ˈɛlbəʊ/ — sounds like **EL-boh** | /ˈɛlboʊ/ — sounds like **EL-boh**
+350. n. Sheep | /ʃiːp/ — sounds like **SHEEP** | /ʃip/ — sounds like **SHEEP**
+351. n. Ice | /aɪs/ — sounds like **EYS** | /aɪs/ — sounds like **EYS**
+352. num. Twelve | /twɛlv/ — sounds like **TWELV** | /twɛlv/ — sounds like **TWELV**
+353. n. Fracture | /ˈfræktʃə/ — sounds like **FRAK-chuh** | /ˈfræktʃər/ — sounds like **FRAK-cher**
+354. n. Butterfly | /ˈbʌtəflaɪ/ — sounds like **BUT-uh-fly** | /ˈbʌtərˌflaɪ/ — sounds like **BUT-er-fly**
+355. n. Square | /skweə/ — sounds like **SKWAIR** | /skwɛr/ — sounds like **SKWAIR**
+356. n. Sunglasses | /ˈsʌnˌɡlɑːsɪz/ — sounds like **SUN-GLAA-siz** | /ˈsʌnˌɡlæsɪz/ — sounds like **SUN-GLAS-iz**
+357. n. Transportation | /ˌtrænspɔːˈteɪʃən/ — sounds like **trans-PAW-TAY-shun** | /ˌtrænspərˈteɪʃən/ — sounds like **trans-per-TAY-shən**
+358. n. Enclosed spaces | /ɪnˈkləʊzd ˈspeɪsɪz/ — sounds like **in-KLOHZD SPAY-siz** | /ɪnˈkloʊzd ˈspeɪsɪz/ — sounds like **in-KLOHZD SPAY-siz**
+359. n. Avalanche | /ˈævəlɑːnʃ/ — sounds like **AV-uh-lahnsh** | /ˈævəˌlæntʃ/ — sounds like **AV-uh-lanch**
+360. n. Volcanoes | /vɒlˈkeɪnəʊz/ — sounds like **vol-KAY-nohz** | /vɑːlˈkeɪnoʊz/ — sounds like **vahl-KAY-nohz**
+361. n. Advertisement | /ˌædvəˈtɪːzmənt/ — sounds like **ad-ver-TYZ-munt** | /ˈædvərˌtaɪzmənt/ — sounds like **AD-ver-TYZ-ment**
+362. n. East | /iːst/ — sounds like **EEST** | /ist/ — sounds like **EEST**
+363. n. Export | /ˈekspɔːt/ — sounds like **EK-spawt** | /ˈɛkspɔrt/ — sounds like **EK-sport**
+364. adj. Pessimistic | /ˌpɛsɪˈmɪstɪk/ — sounds like **PESS-i-MIS-tik** | /ˌpɛsəˈmɪstɪk/ — sounds like **PESS-uh-MIS-tik**
+365. adj. Negative | /ˈnɛɡətɪv/ — sounds like **NEG-uh-tiv** | /ˈnɛɡətɪv/ — sounds like **NEG-uh-tiv**
+366. n. Pacific | /pəˈsɪfɪk/ — sounds like **puh-SIF-ik** | /pəˈsɪfɪk/ — sounds like **puh-SIF-ik**
+367. n. Contents | /ˈkɒntɛnts/ — sounds like **KON-tents** | /ˈkɑntɛnts/ — sounds like **KAHN-tents**
+368. n. Solar system | /ˈsəʊlə ˈsɪstəm/ — sounds like **SOH-luh SIS-tum** | /ˈsoʊlər ˈsɪstəm/ — sounds like **SOH-ler SIS-təm**
+369. v. Freeze | /friːz/ — sounds like **FREEZ** | /friz/ — sounds like **FREEZ**
+370. n. Conclusion | /kənˈkluːʒən/ — sounds like **kun-KLOO-zhun** | /kənˈkluʒən/ — sounds like **kun-KLOO-zhən**
+371. v. Walk | /wɔːk/ — sounds like **WAWK** | /wɔk/ — sounds like **WAWK**
+372. n. Grapes | /ɡreɪps/ — sounds like **GRAYPS** | /ɡreɪps/ — sounds like **GRAYPS**
+373. n. Autobiography | /ˌɔːtəʊbaɪˈɒɡrəfi/ — sounds like **AW-toh-by-OG-ruh-fee** | /ˌɔtoʊbaɪˈɑɡrəfi/ — sounds like **AW-toh-by-AH-gruh-fee**
+374. n. Patent | /ˈpætənt/ — sounds like **PAT-unt** | /ˈpætənt/ — sounds like **PAT-ənt**
+375. n. Atlas | /ˈætləs/ — sounds like **AT-lus** | /ˈætləs/ — sounds like **AT-ləs**
+376. n. Dictionary | /ˈdɪkʃənəri/ — sounds like **DIK-shuh-nair-ee** | /ˈdɪkʃəˌnɛri/ — sounds like **DIK-shuh-neh-ree**
+377. n. Gravity | /ˈɡrævɪti/ — sounds like **GRAV-i-tee** | /ˈɡrævɪti/ — sounds like **GRAV-i-tee**
+378. n. Cast | /kɑːst/ — sounds like **KAAST** | /kæst/ — sounds like **KAST**
+379. n. Valley | /ˈvæli/ — sounds like **VAL-ee** | /ˈvæli/ — sounds like **VAL-ee**
+380. num. 366 | /ˈθriː sɪks ˈsɪks/ — sounds like **THREE SIX SIX** | /ˈθri sɪks ˈsɪks/ — sounds like **THREE SIX SIX**
+381. num. 29 | /twenti ˈnaɪn/ — sounds like **TWEN-tee NINE** | /ˈtwɛnti ˈnaɪn/ — sounds like **TWEN-tee NINE**
+382. n. Insomnia | /ɪnˈsɒmniə/ — sounds like **in-SOM-nee-uh** | /ɪnˈsɑmniə/ — sounds like **in-SAHM-nee-uh**
+383. n. October | /ɒkˈtəʊbə/ — sounds like **ok-TOH-buh** | /ɑkˈtoʊbər/ — sounds like **ahk-TOH-ber**
+384. n. Men | /mɛn/ — sounds like **MEN** | /mɛn/ — sounds like **MEN**
+385. n. Volunteer | /ˌvɒlənˈtɪə/ — sounds like **vol-un-TEER** | /ˌvɑlənˈtɪr/ — sounds like **VAH-lun-TEER**
+386. n. Tunnel | /ˈtʌnəl/ — sounds like **TUN-ul** | /ˈtʌnəl/ — sounds like **TUN-əl**
+387. n. Solar energy | /ˈsəʊlə ˈɛnədʒi/ — sounds like **SOH-luh EN-uh-jee** | /ˈsoʊlər ˈɛnərdʒi/ — sounds like **SOH-ler EN-er-jee**
+388. n. Blood | /blʌd/ — sounds like **BLUD** | /blʌd/ — sounds like **BLUD**
+389. n. Uniform | /ˈjuːnɪfɔːm/ — sounds like **YOO-ni-form** | /ˈjuːnɪfɔːrm/ — sounds like **YOO-ni-form**
+390. n. Laboratory | /ləˈbɒrətəri/ — sounds like **luh-BOR-uh-tuh-ree** | /ˈlæbrəˌtɔri/ — sounds like **LAB-ruh-tor-ee**
+391. n. Keyboard | /ˈkiːbɔːd/ — sounds like **KEE-bawd** | /ˈkiˌbɔrd/ — sounds like **KEE-board**
+392. n. Nephew | /ˈnɛvjuː/ — sounds like **NEV-yoo** | /ˈnɛfju/ — sounds like **NEF-yoo**
+393. n. Glass | /ɡlɑːs/ — sounds like **GLAHS** | /ɡlæs/ — sounds like **GLASS**
+394. num. Five | /faɪv/ — sounds like **FYVE** | /faɪv/ — sounds like **FYVE**
+395. num. Six | /sɪks/ — sounds like **SIKS** | /sɪks/ — sounds like **SIKS**
+396. adj. Oval | /ˈəʊvəl/ — sounds like **OH-vul** | /ˈoʊvəl/ — sounds like **OH-vəl**
+397. n. Seed | /siːd/ — sounds like **SEED** | /sid/ — sounds like **SEED**
+398. adj. Fine | /faɪn/ — sounds like **FINE** | /faɪn/ — sounds like **FINE**
+399. n. Computer | /kəmˈpjuːtə/ — sounds like **kum-PYOO-tuh** | /kəmˈpjutər/ — sounds like **kum-PYOO-ter**
+400. n. Census | /ˈsɛnsəs/ — sounds like **SEN-sus** | /ˈsɛnsəs/ — sounds like **SEN-sus**
+401. num. Two | /tuː/ — sounds like **TOO** | /tu/ — sounds like **TOO**
+402. n. Desert | /ˈdɛzət/ — sounds like **DEZ-uht** | /ˈdɛzɚt/ — sounds like **DEZ-ert**
+403. n. Low unemployment | /ləʊ ˌʌnɪmˈplɔɪmənt/ — sounds like **LOH un-im-PLOY-ment** | /loʊ ˌʌnɪmˈplɔɪmənt/ — sounds like **LOH un-im-PLOY-ment**
+404. adj. Innocent | /ˈɪnəsənt/ — sounds like **IN-uh-sunt** | /ˈɪnəsənt/ — sounds like **IN-uh-sənt**
+405. n. Circle | /ˈsɜːkəl/ — sounds like **SUR-kul** | /ˈsɝːkəl/ — sounds like **SUR-kəl**
+406. n. Tutor | /ˈtjuːtə/ — sounds like **TYOO-tuh** | /ˈtutər/ — sounds like **TOO-ter**
+407. n. Parachuting | /ˈpærəʃuːtɪŋ/ — sounds like **PAR-uh-shoo-ting** | /ˈpɛrəˌʃutɪŋ/ — sounds like **PER-uh-shoot-ing**
+408. num. Two | /tuː/ — sounds like **TOO** | /tu/ — sounds like **TOO**
+409. v. Touch | /tʌtʃ/ — sounds like **TUCH** | /tʌtʃ/ — sounds like **TUCH**
+410. n. Olympics | /əˈlɪmpɪks/ — sounds like **uh-LIM-piks** | /əˈlɪmpɪks/ — sounds like **uh-LIM-piks**
+411. v. Abstain | /əbˈsteɪn/ — sounds like **ub-STAYN** | /əbˈsteɪn/ — sounds like **ub-STAYN**
+412. n. Signature | /ˈsɪɡnətʃə/ — sounds like **SIG-nuh-chuh** | /ˈsɪɡnətʃər/ — sounds like **SIG-nuh-cher**
+413. n. Reference | /ˈrɛfərəns/ — sounds like **REF-er-uhns** | /ˈrɛfərəns/ — sounds like **REF-er-əns**
+414. n. Height | /haɪt/ — sounds like **HYTE** | /haɪt/ — sounds like **HYTE**
+415. n. Wood | /wʊd/ — sounds like **WOOD** | /wʊd/ — sounds like **WOOD**
+416. n. His predecessor | /hɪz ˈprɛdɪˌsɛsə/ — sounds like **hiz PREH-di-sess-uh** | /hɪz ˈprɛdɪˌsɛsər/ — sounds like **hiz PREH-di-sess-er**
+417. n. Mammal | /ˈmæməl/ — sounds like **MAM-uhl** | /ˈmæməl/ — sounds like **MAM-əl**
+418. n. Graph | /ɡrɑːf/ — sounds like **GRAAF** | /ɡræf/ — sounds like **GRAF**
+419. n. Mining | /ˈmaɪnɪŋ/ — sounds like **MY-ning** | /ˈmaɪnɪŋ/ — sounds like **MY-ning**
+420. adj. Extinct | /ɪkˈstɪŋkt/ — sounds like **ik-STINKT** | /ɪkˈstɪŋkt/ — sounds like **ik-STINKT**
+421. v. Vote | /vəʊt/ — sounds like **VOHT** | /voʊt/ — sounds like **VOHT**
+422. n. Flap | /flæp/ — sounds like **FLAP** | /flæp/ — sounds like **FLAP**
+423. num. Eight | /eɪt/ — sounds like **AYT** | /eɪt/ — sounds like **AYT**
+424. n. Giraffe | /dʒɪˈrɑːf/ — sounds like **ji-RAAF** | /dʒəˈræf/ — sounds like **jə-RAF**
+425. n. Wick | /wɪk/ — sounds like **WIK** | /wɪk/ — sounds like **WIK**
+426. n. Water | /ˈwɔːtə/ — sounds like **WAW-tuh** | /ˈwɔtər/ — sounds like **WAW-ter**
+427. n. Division | /dɪˈvɪʒən/ — sounds like **di-VIZH-uhn** | /dɪˈvɪʒən/ — sounds like **di-VIZH-ən**
+428. n. Liters | /ˈliːtəz/ — sounds like **LEE-tuz** | /ˈlitərz/ — sounds like **LEE-terz**
+429. n. Pharmacist | /ˈfɑːməsɪst/ — sounds like **FAR-muh-sist** | /ˈfɑrməsɪst/ — sounds like **FAR-muh-sist**
+430. n. Email | /ˈiːmeɪl/ — sounds like **EE-mail** | /ˈiˌmeɪl/ — sounds like **EE-mail**
+431. n. Early morning | /ˈɜːli ˈmɔːnɪŋ/ — sounds like **UR-lee MORN-ing** | /ˈɝːli ˈmɔrnɪŋ/ — sounds like **ER-lee MORN-ing**
+432. n. Km | /ˌkɪləˈmiːtə/ — sounds like **KIL-uh-MEE-tuh** | /kɪˈlɑmɪtər/ — sounds like **ki-LAH-mi-ter**
+433. n. Protection | /prəˈtɛkʃən/ — sounds like **pruh-TEK-shun** | /prəˈtɛkʃən/ — sounds like **pruh-TEK-shən**
+434. n. Doctor | /ˈdɒktə/ — sounds like **DOK-tuh** | /ˈdɑktər/ — sounds like **DAHK-ter**
+435. n. Psychologist | /saɪˈkɒlədʒɪst/ — sounds like **sy-KOL-uh-jist** | /saɪˈkɑlədʒɪst/ — sounds like **sy-KAH-luh-jist**
+436. n. Waiter | /ˈweɪtə/ — sounds like **WAY-tuh** | /ˈweɪtər/ — sounds like **WAY-ter**
+437. n. Editor | /ˈedɪtə/ — sounds like **ED-it-uh** | /ˈɛdɪtər/ — sounds like **ED-it-er**
+438. n. Baker | /ˈbeɪkə/ — sounds like **BAY-kuh** | /ˈbeɪkər/ — sounds like **BAY-ker**
+439. n. Barber | /ˈbɑːbə/ — sounds like **BAR-buh** | /ˈbɑrbər/ — sounds like **BAR-ber**
+440. n. Millions | /ˈmɪljənz/ — sounds like **MIL-yunz** | /ˈmɪljənz/ — sounds like **MIL-yənz**
+441. n. Period | /ˈpɪəriəd/ — sounds like **PEER-ee-ud** | /ˈpɪriəd/ — sounds like **PEER-ee-əd**
+442. n. Honey | /ˈhʌni/ — sounds like **HUN-ee** | /ˈhʌni/ — sounds like **HUN-ee**
+443. n. Journal | /ˈdʒɜːnəl/ — sounds like **JER-nul** | /ˈdʒɝːnəl/ — sounds like **JER-nəl**
+444. n. Departure | /dɪˈpɑːtʃə/ — sounds like **di-PAR-chuh** | /dɪˈpɑrtʃər/ — sounds like **di-PAR-cher**
+445. n. Editorial | /ˌɛdɪˈtɔːriəl/ — sounds like **ed-i-TOR-ee-uhl** | /ˌɛdɪˈtɔriəl/ — sounds like **ed-i-TOR-ee-əl**
+446. n. Bibliography | /ˌbɪbliˈɒɡrəfi/ — sounds like **bib-lee-OG-ruh-fee** | /ˌbɪbliˈɑɡrəfi/ — sounds like **bib-lee-AH-gruh-fee**
+447. n. Cycling | /ˈsaɪklɪŋ/ — sounds like **SY-kling** | /ˈsaɪklɪŋ/ — sounds like **SY-kling**
+448. n. Running | /ˈrʌnɪŋ/ — sounds like **RUN-ning** | /ˈrʌnɪŋ/ — sounds like **RUN-ning**
+449. n. Bed | /bɛd/ — sounds like **BED** | /bɛd/ — sounds like **BED**
+450. n. Printer | /ˈprɪntə/ — sounds like **PRIN-tuh** | /ˈprɪntər/ — sounds like **PRIN-ter**
 451. Taxonomy | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
 452. Community service | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
 453. Illicit drugs | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
@@ -468,235 +468,235 @@ This collection lists answers from the PTE ASQ dataset in the exact original ord
 458. Ophthalmology | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
 459. Book | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
 460. Grocery | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-461. Freezer | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-462. Gym | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-463. Gallery | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-464. Ocean | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-465. Laboratory | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-466. Residence | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-467. Checkout | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-468. Cities | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-469. Album | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-470. Map | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-471. Columns | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-472. Before sleeping | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-473. Anonymous | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-474. Campus | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-475. Glue | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-476. Z | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-477. Spectator | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-478. Download | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-479. Eclipse | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-480. Decade | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-481. Electricity | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-482. Fruit | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-483. Rent | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-484. Mammals | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-485. Passport | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-486. Earth | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-487. Budget | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-488. Compass | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-489. Heart | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-490. Brain | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-491. Ladder | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-492. Rubber | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-493. Supermarket | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-494. Hearing | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-495. Milk | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-496. Helmet | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-497. Biography | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-498. Salt | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-499. Prevention | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-500. Instrument | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-501. Triangle | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-502. Morning | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-503. Afternoon | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-504. Strings | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-505. Mathematics | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-506. Cooking | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-507. Astronomy | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-508. Laces | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-509. Sun | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-510. Blood | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-511. Elevator | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-512. Receipt | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-513. Scholarship | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-514. Successor | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-515. South | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-516. Umbrella | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-517. Hips | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-518. Thermometer | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-519. Psychology | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-520. Army | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-521. Democracy | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-522. Employees | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-523. Planet | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-524. License | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-525. February | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-526. Intermission | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-527. Oven | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-528. Final | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-529. Wrist | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-530. Safe | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-531. Architect | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-532. Seventeenth | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-533. Desert | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-534. Meat | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-535. Agriculture | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-536. Virus | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-537. Birthday | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-538. Cattle | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-539. Au | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-540. Piano | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-541. Horizontal | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-542. Blind | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-543. 50% | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-544. Small car | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-545. Conversation | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-546. Blood | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-547. Swamp | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-548. War | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-549. Dream | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-550. Member | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-551. Portrait | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-552. 75% | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-553. Microscope | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-554. Computer | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-555. Rising | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-556. Keys | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-557. Coast guard | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-558. Symbol | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-559. Size | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-560. Fish | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-561. As soon as possible | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-562. Time | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-563. Crown | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-564. Thermometer | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-565. Surgeon | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-566. Seatbelt | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-567. Population | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-568. Center | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-569. Resume | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-570. Seconds | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-571. Basement apartment | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-572. Dissertation | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-573. Telescope | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-574. Deaf | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-575. Ankle | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-576. Abstract | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-577. Biology | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-578. Lungs | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-579. Instructions | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-580. Breakfast | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-581. Deadline | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-582. Index | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-583. X-ray | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-584. Millennium | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-585. Thesaurus | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-586. Announcer | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-587. Night | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-588. Refrigerator | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-589. Gym | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-590. Nose | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-591. Bedroom | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-592. Exhibition | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-593. July | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-594. Photocopier | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-595. Autobiography | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-596. Green | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-597. Monday | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-598. Dictionary | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-599. Golf | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-600. Herbivores | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-601. Mayor | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-602. Moon | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-603. Library | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-604. Pacific | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-605. Psychology | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-606. Autumn | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-607. Postman | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-608. Cheetah | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-609. Lunch | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-610. Paris | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-611. Pilot | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-612. Cold | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-613. Zoo | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-614. Asia | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-615. Teacher | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-616. Cell | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-617. Veterinarian | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-618. Mathematics | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-619. Prison | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-620. Night | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-621. Hairdresser | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-622. Earthquake | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-623. Dinner | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-624. Young | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-625. Hockey | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-626. Skin | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-627. Butcher | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-628. Geography | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-629. Cinema | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-630. Weak | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-631. Train | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-632. Rain | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-633. Designer | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-634. Biology | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-635. Pharmacy | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-636. Deep | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-637. Triathlon | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-638. Immune system | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-639. Author | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-640. Archaeology | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-641. Museum | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-642. Smooth | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-643. Baseball | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-644. Jupiter | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-645. Nurse | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-646. Chemistry | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-647. Theater | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-648. Narrow | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-649. Surfing | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-650. Digestive system | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-651. Artist | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-652. History | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-653. Gym | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-654. Light | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-655. Tennis | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-656. Blue whale | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-657. Farmer | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-658. Psychology | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-659. Aquarium | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-660. Low | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-661. Basketball | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-662. Circulatory system | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-663. Actor | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-664. Astronomy | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-665. Supermarket | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-666. Slow | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-667. Football | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-668. Diamond | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-669. Dentist | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-670. Acoustics | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-671. Gallery | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-672. Dirty | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-673. Badminton | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-674. Respiratory system | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-675. Programmer | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-676. Political science | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-677. Stadium | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-678. Late | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-679. Curling | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-680. Sun | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-681. Gardener | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-682. Meteorology | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-683. Bakery | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-684. Full | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-685. Mountaineering | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-686. Skeletal system | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-687. Singer | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-688. Linguistics | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-689. Pool | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-690. Quiet | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-691. Skydiving | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-692. Australia | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
+461. n. Freezer | /ˈfriːzə/ — sounds like **FREE-zuh** | /ˈfrizər/ — sounds like **FREE-zer**
+462. n. Gym | /dʒɪm/ — sounds like **JIM** | /dʒɪm/ — sounds like **JIM**
+463. n. Gallery | /ˈɡæləri/ — sounds like **GAL-uh-ree** | /ˈɡæləri/ — sounds like **GAL-ə-ree**
+464. n. Ocean | /ˈəʊʃən/ — sounds like **OH-shun** | /ˈoʊʃən/ — sounds like **OH-shən**
+465. n. Laboratory | /ləˈbɒrətəri/ — sounds like **luh-BOR-uh-tuh-ree** | /ˈlæbrəˌtɔri/ — sounds like **LAB-ruh-tor-ee**
+466. n. Residence | /ˈrɛzɪdəns/ — sounds like **REZ-i-duns** | /ˈrɛzɪdəns/ — sounds like **REZ-i-dəns**
+467. n. Checkout | /ˈtʃɛkaʊt/ — sounds like **CHEK-owt** | /ˈtʃɛkˌaʊt/ — sounds like **CHEK-owt**
+468. n. Cities | /ˈsɪtiz/ — sounds like **SIT-eez** | /ˈsɪtiz/ — sounds like **SIT-eez**
+469. n. Album | /ˈælbəm/ — sounds like **AL-bum** | /ˈælbəm/ — sounds like **AL-bəm**
+470. n. Map | /mæp/ — sounds like **MAP** | /mæp/ — sounds like **MAP**
+471. n. Columns | /ˈkɒləmz/ — sounds like **KOL-umz** | /ˈkɑləmz/ — sounds like **KAH-lumz**
+472. adv. Before sleeping | /bɪˈfɔː ˈsliːpɪŋ/ — sounds like **bi-FOR SLEEP-ing** | /bɪˈfɔr ˈslipɪŋ/ — sounds like **bi-FOR SLEEP-ing**
+473. adj. Anonymous | /əˈnɒnɪməs/ — sounds like **uh-NON-uh-mus** | /əˈnɑnəməs/ — sounds like **uh-NAH-nuh-məs**
+474. n. Campus | /ˈkæmpəs/ — sounds like **KAM-pus** | /ˈkæmpəs/ — sounds like **KAM-pəs**
+475. n. Glue | /ɡluː/ — sounds like **GLOO** | /ɡlu/ — sounds like **GLOO**
+476. n. Z | /zɛd/ — sounds like **ZED** | /zi/ — sounds like **ZEE**
+477. n. Spectator | /spɛkˈteɪtə/ — sounds like **spek-TAY-tuh** | /ˈspɛkˌteɪtər/ — sounds like **SPEK-tay-ter**
+478. v. Download | /ˌdaʊnˈləʊd/ — sounds like **down-LOHD** | /ˌdaʊnˈloʊd/ — sounds like **down-LOHD**
+479. n. Eclipse | /ɪˈklɪps/ — sounds like **ih-KLIPS** | /ɪˈklɪps/ — sounds like **ih-KLIPS**
+480. n. Decade | /ˈdɛkeɪd/ — sounds like **DEK-ayd** | /ˈdɛˌkeɪd/ — sounds like **DEK-ayd**
+481. n. Electricity | /ɪˌlɛkˈtrɪsɪti/ — sounds like **ee-lek-TRIS-i-tee** | /ɪˌlɛkˈtrɪsɪti/ — sounds like **ee-lek-TRIS-i-tee**
+482. n. Fruit | /fruːt/ — sounds like **FROOT** | /frut/ — sounds like **FROOT**
+483. v. Rent | /rɛnt/ — sounds like **RENT** | /rɛnt/ — sounds like **RENT**
+484. n. Mammals | /ˈmæməlz/ — sounds like **MAM-ulz** | /ˈmæməlz/ — sounds like **MAM-əlz**
+485. n. Passport | /ˈpɑːspɔːt/ — sounds like **PAH-spawt** | /ˈpæspɔrt/ — sounds like **PAS-port**
+486. n. Earth | /ɜːθ/ — sounds like **URTH** | /ɝːθ/ — sounds like **URTH**
+487. n. Budget | /ˈbʌdʒɪt/ — sounds like **BUJ-it** | /ˈbʌdʒɪt/ — sounds like **BUJ-it**
+488. n. Compass | /ˈkʌmpəs/ — sounds like **KUM-pus** | /ˈkʌmpəs/ — sounds like **KUM-pəs**
+489. n. Heart | /hɑːt/ — sounds like **HAHT** | /hɑrt/ — sounds like **HART**
+490. n. Brain | /breɪn/ — sounds like **BRAYN** | /breɪn/ — sounds like **BRAYN**
+491. n. Ladder | /ˈlædə/ — sounds like **LAD-uh** | /ˈlædər/ — sounds like **LAD-er**
+492. n. Rubber | /ˈrʌbə/ — sounds like **RUB-uh** | /ˈrʌbər/ — sounds like **RUB-er**
+493. n. Supermarket | /ˈsuːpəmɑːkɪt/ — sounds like **SOO-puh-MAR-kit** | /ˈsupərˌmɑrkɪt/ — sounds like **SOO-per-MAR-kit**
+494. n. Hearing | /ˈhɪərɪŋ/ — sounds like **HEER-ing** | /ˈhɪrɪŋ/ — sounds like **HEER-ing**
+495. n. Milk | /mɪlk/ — sounds like **MILK** | /mɪlk/ — sounds like **MILK**
+496. n. Helmet | /ˈhɛlmɪt/ — sounds like **HEL-mit** | /ˈhɛlmət/ — sounds like **HEL-mət**
+497. n. Biography | /baɪˈɒɡrəfi/ — sounds like **by-OG-ruh-fee** | /baɪˈɑɡrəfi/ — sounds like **by-AH-gruh-fee**
+498. n. Salt | /sɔːlt/ — sounds like **SAWLT** | /sɔlt/ — sounds like **SAWLT**
+499. n. Prevention | /prɪˈvɛnʃən/ — sounds like **pri-VEN-shun** | /prɪˈvɛnʃən/ — sounds like **pri-VEN-shən**
+500. n. Instrument | /ˈɪnstrʊmənt/ — sounds like **IN-struh-munt** | /ˈɪnstrəmənt/ — sounds like **IN-stru-mənt**
+501. n. Triangle | /ˈtraɪæŋɡəl/ — sounds like **TRY-ang-gul** | /ˈtraɪˌæŋɡəl/ — sounds like **TRY-ANG-gul**
+502. n. Morning | /ˈmɔːnɪŋ/ — sounds like **MORN-ing** | /ˈmɔrnɪŋ/ — sounds like **MORN-ing**
+503. n. Afternoon | /ˌɑːftəˈnuːn/ — sounds like **AAF-tuh-NOON** | /ˌæftərˈnun/ — sounds like **AF-ter-NOON**
+504. n. Strings | /strɪŋz/ — sounds like **STRINGZ** | /strɪŋz/ — sounds like **STRINGZ**
+505. n. Mathematics | /ˌmæθəˈmætɪks/ — sounds like **MATH-uh-MAT-iks** | /ˌmæθəˈmætɪks/ — sounds like **MATH-uh-MAT-iks**
+506. n. Cooking | /ˈkʊkɪŋ/ — sounds like **KOOK-ing** | /ˈkʊkɪŋ/ — sounds like **KOOK-ing**
+507. n. Astronomy | /əˈstrɒnəmi/ — sounds like **uh-STRON-uh-mee** | /əˈstrɑːnəmi/ — sounds like **uh-STRAH-nuh-mee**
+508. n. Laces | /ˈleɪsɪz/ — sounds like **LAY-siz** | /ˈleɪsɪz/ — sounds like **LAY-siz**
+509. n. Sun | /sʌn/ — sounds like **SUN** | /sʌn/ — sounds like **SUN**
+510. n. Blood | /blʌd/ — sounds like **BLUD** | /blʌd/ — sounds like **BLUD**
+511. n. Elevator | /ˈɛlɪveɪtə/ — sounds like **EL-ih-vay-tuh** | /ˈɛləˌveɪtər/ — sounds like **EL-uh-VAY-ter**
+512. n. Receipt | /rɪˈsiːt/ — sounds like **ri-SEET** | /rɪˈsit/ — sounds like **ri-SEET**
+513. n. Scholarship | /ˈskɒləʃɪp/ — sounds like **SKOL-uh-ship** | /ˈskɑlərˌʃɪp/ — sounds like **SKA-ler-ship**
+514. n. Successor | /səkˈsɛsə/ — sounds like **suk-SESS-uh** | /səkˈsɛsər/ — sounds like **suk-SESS-er**
+515. n. South | /saʊθ/ — sounds like **SOWTH** | /saʊθ/ — sounds like **SOWTH**
+516. n. Umbrella | /ʌmˈbrɛlə/ — sounds like **um-BREL-uh** | /ʌmˈbrɛlə/ — sounds like **um-BREL-ə**
+517. n. Hips | /hɪps/ — sounds like **HIPS** | /hɪps/ — sounds like **HIPS**
+518. n. Thermometer | /θəˈmɒmɪtə/ — sounds like **thuh-MOM-i-tuh** | /θərˈmɑːmɪtər/ — sounds like **ther-MAH-mi-ter**
+519. n. Psychology | /saɪˈkɒlədʒi/ — sounds like **sy-KOL-uh-jee** | /saɪˈkɑːlədʒi/ — sounds like **sy-KAH-luh-jee**
+520. n. Army | /ˈɑːmi/ — sounds like **AA-mee** | /ˈɑrmi/ — sounds like **AR-mee**
+521. n. Democracy | /dɪˈmɒkrəsi/ — sounds like **di-MOK-ruh-see** | /dɪˈmɑːkrəsi/ — sounds like **di-MAH-kruh-see**
+522. n. Employees | /ɛmˈplɔɪiːz/ — sounds like **em-PLOY-eez** | /ɛmˈplɔɪiz/ — sounds like **em-PLOY-eez**
+523. n. Planet | /ˈplænɪt/ — sounds like **PLAN-it** | /ˈplænɪt/ — sounds like **PLAN-it**
+524. n. License | /ˈlaɪsəns/ — sounds like **LYE-suns** | /ˈlaɪsəns/ — sounds like **LYE-səns**
+525. n. February | /ˈfɛbruəri/ — sounds like **FEB-roo-air-ee** | /ˈfɛbjʊˌɛri/ — sounds like **FEB-yoo-air-ee**
+526. n. Intermission | /ˌɪntəˈmɪʃən/ — sounds like **in-tuh-MISH-uhn** | /ˌɪntərˈmɪʃən/ — sounds like **in-ter-MISH-ən**
+527. n. Oven | /ˈʌvən/ — sounds like **UV-un** | /ˈʌvən/ — sounds like **UV-ən**
+528. adj. Final | /ˈfaɪnəl/ — sounds like **FYE-nuhl** | /ˈfaɪnəl/ — sounds like **FYE-nəl**
+529. n. Wrist | /rɪst/ — sounds like **RIST** | /rɪst/ — sounds like **RIST**
+530. adj. Safe | /seɪf/ — sounds like **SAYF** | /seɪf/ — sounds like **SAYF**
+531. n. Architect | /ˈɑːkɪtekt/ — sounds like **AR-ki-tekt** | /ˈɑrkɪˌtɛkt/ — sounds like **AR-ki-tekt**
+532. num. Seventeenth | /ˌsɛvənˈtiːnθ/ — sounds like **SEV-un-TEENTH** | /ˌsɛvənˈtinθ/ — sounds like **SEV-en-TEENTH**
+533. n. Desert | /ˈdɛzət/ — sounds like **DEZ-uht** | /ˈdɛzɚt/ — sounds like **DEZ-ert**
+534. n. Meat | /miːt/ — sounds like **MEET** | /mit/ — sounds like **MEET**
+535. n. Agriculture | /ˈæɡrɪkʌltʃə/ — sounds like **AG-ri-kul-chuh** | /ˈæɡrɪˌkʌltʃər/ — sounds like **AG-ri-kul-cher**
+536. n. Virus | /ˈvaɪrəs/ — sounds like **VY-rus** | /ˈvaɪrəs/ — sounds like **VY-rəs**
+537. n. Birthday | /ˈbɜːθdeɪ/ — sounds like **BERTH-day** | /ˈbɝːθˌdeɪ/ — sounds like **BERTH-day**
+538. n. Cattle | /ˈkætl/ — sounds like **KAT-l** | /ˈkætl/ — sounds like **KAT-l**
+539. n. Au | /eɪ ˈjuː/ — sounds like **AY YOO** | /eɪ ˈju/ — sounds like **AY YOO**
+540. n. Piano | /pɪˈænəʊ/ — sounds like **pi-AN-oh** | /piˈænoʊ/ — sounds like **pee-AN-oh**
+541. adj. Horizontal | /ˌhɒrɪˈzɒntəl/ — sounds like **HOR-i-ZON-tul** | /ˌhɔrəˈzɑntəl/ — sounds like **HOR-uh-ZAHN-təl**
+542. adj. Blind | /blaɪnd/ — sounds like **BLYND** | /blaɪnd/ — sounds like **BLYND**
+543. num. 50% | /ˈfɪfti pə ˈsɛnt/ — sounds like **FIF-tee per SENT** | /ˈfɪfti pər ˈsɛnt/ — sounds like **FIF-tee per SENT**
+544. n. Small car | /smɔːl kɑː/ — sounds like **SMAWL KAH** | /smɔl kɑr/ — sounds like **SMALL KAR**
+545. n. Conversation | /ˌkɒnvəˈseɪʃən/ — sounds like **kon-vuh-SAY-shun** | /ˌkɑnvərˈseɪʃən/ — sounds like **KAHN-ver-SAY-shən**
+546. n. Blood | /blʌd/ — sounds like **BLUD** | /blʌd/ — sounds like **BLUD**
+547. n. Swamp | /swɒmp/ — sounds like **SWOMP** | /swɑmp/ — sounds like **SWOMP**
+548. n. War | /wɔː/ — sounds like **WAW** | /wɔr/ — sounds like **WOR**
+549. n. Dream | /driːm/ — sounds like **DREEM** | /drim/ — sounds like **DREEM**
+550. n. Member | /ˈmɛmbə/ — sounds like **MEM-buh** | /ˈmɛmbər/ — sounds like **MEM-ber**
+551. n. Portrait | /ˈpɔːtrɪt/ — sounds like **PAW-trit** | /ˈpɔrtrɪt/ — sounds like **POR-trit**
+552. num. 75% | /ˈsɛvnti faɪv pə ˈsɛnt/ — sounds like **SEV-en-tee FYVE per SENT** | /ˈsɛvənˌti faɪv pər ˈsɛnt/ — sounds like **SEV-en-tee FYVE per SENT**
+553. n. Microscope | /ˈmaɪkrəskəʊp/ — sounds like **MY-kruh-skohp** | /ˈmaɪkrəˌskoʊp/ — sounds like **MY-kruh-skohp**
+554. n. Computer | /kəmˈpjuːtə/ — sounds like **kum-PYOO-tuh** | /kəmˈpjutər/ — sounds like **kum-PYOO-ter**
+555. n. Rising | /ˈraɪzɪŋ/ — sounds like **RYE-zing** | /ˈraɪzɪŋ/ — sounds like **RYE-zing**
+556. n. Keys | /kiːz/ — sounds like **KEEZ** | /kiz/ — sounds like **KEEZ**
+557. n. Coast guard | /ˈkəʊst ɡɑːd/ — sounds like **KOHST GAHD** | /ˈkoʊst ɡɑrd/ — sounds like **KOHST GARD**
+558. n. Symbol | /ˈsɪmbəl/ — sounds like **SIM-bul** | /ˈsɪmbəl/ — sounds like **SIM-bəl**
+559. n. Size | /saɪz/ — sounds like **SYZ** | /saɪz/ — sounds like **SYZ**
+560. n. Fish | /fɪʃ/ — sounds like **FISH** | /fɪʃ/ — sounds like **FISH**
+561. adv. As soon as possible | /æz suːn æz ˈpɒsəbəl/ — sounds like **az SOON az POS-uh-bul** | /æz sun æz ˈpɑsəbəl/ — sounds like **az SOON az PAH-suh-bəl**
+562. n. Time | /taɪm/ — sounds like **TYM** | /taɪm/ — sounds like **TYM**
+563. n. Crown | /kraʊn/ — sounds like **KROWN** | /kraʊn/ — sounds like **KROWN**
+564. n. Thermometer | /θəˈmɒmɪtə/ — sounds like **thuh-MOM-i-tuh** | /θərˈmɑːmɪtər/ — sounds like **ther-MAH-mi-ter**
+565. n. Surgeon | /ˈsɜːdʒən/ — sounds like **SUR-jun** | /ˈsɝːdʒən/ — sounds like **SUR-jən**
+566. n. Seatbelt | /ˈsiːtbɛlt/ — sounds like **SEET-belt** | /ˈsitˌbɛlt/ — sounds like **SEET-belt**
+567. n. Population | /ˌpɒpjʊˈleɪʃən/ — sounds like **pop-yuh-LAY-shun** | /ˌpɑpjəˈleɪʃən/ — sounds like **PAHP-yuh-LAY-shən**
+568. n. Center | /ˈsɛntə/ — sounds like **SEN-tuh** | /ˈsɛntər/ — sounds like **SEN-ter**
+569. n. Resume | /ˈrɛzjʊmeɪ/ — sounds like **REZ-yoo-may** | /ˈrɛzəˌmeɪ/ — sounds like **REZ-uh-may**
+570. n. Seconds | /ˈsɛkəndz/ — sounds like **SEK-undz** | /ˈsɛkəndz/ — sounds like **SEK-əndz**
+571. n. Basement apartment | /ˈbeɪsmənt əˈpɑːtmənt/ — sounds like **BAYSS-munt uh-PAAT-munt** | /ˈbeɪsmənt əˈpɑrtmənt/ — sounds like **BAYSS-mint uh-PART-ment**
+572. n. Dissertation | /ˌdɪsəˈteɪʃən/ — sounds like **dis-uh-TAY-shun** | /ˌdɪsərˈteɪʃən/ — sounds like **dis-er-TAY-shən**
+573. n. Telescope | /ˈtɛlɪskəʊp/ — sounds like **TEL-ih-skohp** | /ˈtɛləˌskoʊp/ — sounds like **TEL-uh-skohp**
+574. adj. Deaf | /dɛf/ — sounds like **DEF** | /dɛf/ — sounds like **DEF**
+575. n. Ankle | /ˈæŋkəl/ — sounds like **ANG-kul** | /ˈæŋkəl/ — sounds like **ANG-kəl**
+576. adj. Abstract | /ˈæbstrækt/ — sounds like **AB-strakt** | /ˈæbstrækt/ — sounds like **AB-strakt**
+577. n. Biology | /baɪˈɒlədʒi/ — sounds like **by-OL-uh-jee** | /baɪˈɑlədʒi/ — sounds like **by-AH-luh-jee**
+578. n. Lungs | /lʌŋz/ — sounds like **LUNGZ** | /lʌŋz/ — sounds like **LUNGZ**
+579. n. Instructions | /ɪnˈstrʌkʃənz/ — sounds like **in-STRUK-shunz** | /ɪnˈstrʌkʃənz/ — sounds like **in-STRUK-shənz**
+580. n. Breakfast | /ˈbrɛkfəst/ — sounds like **BREK-fust** | /ˈbrɛkfəst/ — sounds like **BREK-fəst**
+581. n. Deadline | /ˈdɛdlaɪn/ — sounds like **DED-line** | /ˈdɛdˌlaɪn/ — sounds like **DED-line**
+582. n. Index | /ˈɪndɛks/ — sounds like **IN-deks** | /ˈɪnˌdɛks/ — sounds like **IN-deks**
+583. n. X-ray | /ˈɛksreɪ/ — sounds like **EKS-ray** | /ˈɛksˌreɪ/ — sounds like **EKS-ray**
+584. n. Millennium | /mɪˈlɛnɪəm/ — sounds like **mi-LEN-ee-um** | /məˈlɛniəm/ — sounds like **mə-LEN-ee-əm**
+585. n. Thesaurus | /θɪˈsɔːrəs/ — sounds like **thi-SAW-rus** | /θɪˈsɔrəs/ — sounds like **thi-SOR-us**
+586. n. Announcer | /əˈnaʊnsə/ — sounds like **uh-NOWN-suh** | /əˈnaʊnsər/ — sounds like **uh-NOWN-ser**
+587. n. Night | /naɪt/ — sounds like **NYT** | /naɪt/ — sounds like **NYT**
+588. n. Refrigerator | /rɪˈfrɪdʒəreɪtə/ — sounds like **ri-FRIJ-uh-ray-tuh** | /rɪˈfrɪdʒəˌreɪtər/ — sounds like **ri-FRIJ-uh-ray-ter**
+589. n. Gym | /dʒɪm/ — sounds like **JIM** | /dʒɪm/ — sounds like **JIM**
+590. n. Nose | /nəʊz/ — sounds like **NOHZ** | /noʊz/ — sounds like **NOHZ**
+591. n. Bedroom | /ˈbɛdruːm/ — sounds like **BED-room** | /ˈbɛdˌrum/ — sounds like **BED-room**
+592. n. Exhibition | /ˌɛksɪˈbɪʃən/ — sounds like **ek-si-BISH-un** | /ˌɛksəˈbɪʃən/ — sounds like **ek-sə-BISH-ən**
+593. n. July | /dʒʊˈlaɪ/ — sounds like **joo-LYE** | /dʒuˈlaɪ/ — sounds like **joo-LYE**
+594. n. Photocopier | /ˈfəʊtəʊˌkɒpɪə/ — sounds like **FOH-toh-KOP-ee-uh** | /ˈfoʊtoʊˌkɑpiər/ — sounds like **FOH-toh-KAH-pee-er**
+595. n. Autobiography | /ˌɔːtəʊbaɪˈɒɡrəfi/ — sounds like **AW-toh-by-OG-ruh-fee** | /ˌɔtoʊbaɪˈɑɡrəfi/ — sounds like **AW-toh-by-AH-gruh-fee**
+596. adj. Green | /ɡriːn/ — sounds like **GREEN** | /ɡrin/ — sounds like **GREEN**
+597. n. Monday | /ˈmʌndeɪ/ — sounds like **MUN-day** | /ˈmʌnˌdeɪ/ — sounds like **MUN-day**
+598. n. Dictionary | /ˈdɪkʃənəri/ — sounds like **DIK-shuh-nair-ee** | /ˈdɪkʃəˌnɛri/ — sounds like **DIK-shuh-neh-ree**
+599. n. Golf | /ɡɒlf/ — sounds like **GOLF** | /ɡɑlf/ — sounds like **GAHLF**
+600. n. Herbivores | /ˈhɜːbɪvɔːz/ — sounds like **HER-bi-vawz** | /ˈhɝːbɪˌvɔrz/ — sounds like **HER-bi-vorz**
+601. n. Mayor | /ˈmeɪə/ — sounds like **MAY-uh** | /ˈmeɪər/ — sounds like **MAY-er**
+602. n. Moon | /muːn/ — sounds like **MOON** | /mun/ — sounds like **MOON**
+603. n. Library | /ˈlaɪbrəri/ — sounds like **LYE-brer-ee** | /ˈlaɪˌbrɛri/ — sounds like **LYE-breh-ree**
+604. n. Pacific | /pəˈsɪfɪk/ — sounds like **puh-SIF-ik** | /pəˈsɪfɪk/ — sounds like **puh-SIF-ik**
+605. n. Psychology | /saɪˈkɒlədʒi/ — sounds like **sy-KOL-uh-jee** | /saɪˈkɑlədʒi/ — sounds like **sy-KAH-luh-jee**
+606. n. Autumn | /ˈɔːtəm/ — sounds like **AW-tum** | /ˈɔtəm/ — sounds like **AW-tum**
+607. n. Postman | /ˈpəʊstmən/ — sounds like **POHST-mun** | /ˈpoʊstmən/ — sounds like **POHST-mən**
+608. n. Cheetah | /ˈtʃiːtə/ — sounds like **CHEE-tuh** | /ˈtʃitə/ — sounds like **CHEE-tə**
+609. n. Lunch | /lʌntʃ/ — sounds like **LUNCH** | /lʌntʃ/ — sounds like **LUNCH**
+610. n. Paris | /ˈpærɪs/ — sounds like **PAR-iss** | /ˈpærɪs/ — sounds like **PAR-iss**
+611. n. Pilot | /ˈpaɪlət/ — sounds like **PY-lut** | /ˈpaɪlət/ — sounds like **PY-lət**
+612. n. Cold | /kəʊld/ — sounds like **KOHLD** | /koʊld/ — sounds like **KOHLD**
+613. n. Zoo | /zuː/ — sounds like **ZOO** | /zu/ — sounds like **ZOO**
+614. n. Asia | /ˈeɪʒə/ — sounds like **AY-zhuh** | /ˈeɪʒə/ — sounds like **AY-zhuh**
+615. n. Teacher | /ˈtiːtʃə/ — sounds like **TEE-chuh** | /ˈtitʃər/ — sounds like **TEE-cher**
+616. n. Cell | /sɛl/ — sounds like **SELL** | /sɛl/ — sounds like **SELL**
+617. n. Veterinarian | /ˌvɛtərɪˈneəriən/ — sounds like **VET-uh-ri-NAIR-ee-uhn** | /ˌvɛtərəˈnɛriən/ — sounds like **VET-er-uh-NER-ee-ən**
+618. n. Mathematics | /ˌmæθəˈmætɪks/ — sounds like **MATH-uh-MAT-iks** | /ˌmæθəˈmætɪks/ — sounds like **MATH-uh-MAT-iks**
+619. n. Prison | /ˈprɪzən/ — sounds like **PRIZ-un** | /ˈprɪzən/ — sounds like **PRIZ-un**
+620. n. Night | /naɪt/ — sounds like **NYT** | /naɪt/ — sounds like **NYT**
+621. n. Hairdresser | /ˈheəˌdrɛsə/ — sounds like **HAIR-dress-uh** | /ˈhɛrˌdrɛsər/ — sounds like **HAIR-dress-er**
+622. n. Earthquake | /ˈɜːθkweɪk/ — sounds like **URTH-kwayk** | /ˈɝːθˌkweɪk/ — sounds like **URTH-kwayk**
+623. n. Dinner | /ˈdɪnə/ — sounds like **DIN-uh** | /ˈdɪnər/ — sounds like **DIN-er**
+624. adj. Young | /jʌŋ/ — sounds like **YUNG** | /jʌŋ/ — sounds like **YUNG**
+625. n. Hockey | /ˈhɒki/ — sounds like **HOK-ee** | /ˈhɑki/ — sounds like **HAH-kee**
+626. n. Skin | /skɪn/ — sounds like **SKIN** | /skɪn/ — sounds like **SKIN**
+627. n. Butcher | /ˈbʊtʃə/ — sounds like **BUCH-uh** | /ˈbʊtʃər/ — sounds like **BUCH-er**
+628. n. Geography | /dʒiˈɒɡrəfi/ — sounds like **jee-OG-ruh-fee** | /dʒiˈɑɡrəfi/ — sounds like **jee-AH-gruh-fee**
+629. n. Cinema | /ˈsɪnəmə/ — sounds like **SIN-uh-muh** | /ˈsɪnəmə/ — sounds like **SIN-ə-mə**
+630. adj. Weak | /wiːk/ — sounds like **WEEK** | /wik/ — sounds like **WEEK**
+631. n. Train | /treɪn/ — sounds like **TRAYN** | /treɪn/ — sounds like **TRAYN**
+632. n. Rain | /reɪn/ — sounds like **RAYN** | /reɪn/ — sounds like **RAYN**
+633. n. Designer | /dɪˈzaɪnə/ — sounds like **di-ZY-nuh** | /dɪˈzaɪnər/ — sounds like **di-ZY-ner**
+634. n. Biology | /baɪˈɒlədʒi/ — sounds like **by-OL-uh-jee** | /baɪˈɑlədʒi/ — sounds like **by-AH-luh-jee**
+635. n. Pharmacy | /ˈfɑːməsi/ — sounds like **FAR-muh-see** | /ˈfɑrməsi/ — sounds like **FAR-muh-see**
+636. adj. Deep | /diːp/ — sounds like **DEEP** | /dip/ — sounds like **DEEP**
+637. n. Triathlon | /traɪˈæθlən/ — sounds like **try-ATH-lun** | /traɪˈæθlɑn/ — sounds like **try-ATH-lahn**
+638. n. Immune system | /ɪˈmjuːn ˈsɪstəm/ — sounds like **im-MYOON SIS-tum** | /ɪˈmjun ˈsɪstəm/ — sounds like **im-MYOON SIS-təm**
+639. n. Author | /ˈɔːθə/ — sounds like **AW-thuh** | /ˈɔθər/ — sounds like **AW-ther**
+640. n. Archaeology | /ˌɑːkiˈɒlədʒi/ — sounds like **AR-kee-OL-uh-jee** | /ˌɑrkiˈɑlədʒi/ — sounds like **AR-kee-AH-luh-jee**
+641. n. Museum | /mjuːˈziːəm/ — sounds like **myoo-ZEE-um** | /mjuˈziəm/ — sounds like **myoo-ZEE-um**
+642. adj. Smooth | /smuːð/ — sounds like **SMOOTH** | /smuð/ — sounds like **SMOOTH**
+643. n. Baseball | /ˈbeɪsbɔːl/ — sounds like **BAYSS-bawl** | /ˈbeɪsˌbɔl/ — sounds like **BAYSS-ball**
+644. n. Jupiter | /ˈdʒuːpɪtə/ — sounds like **JOO-pi-tuh** | /ˈdʒupɪtər/ — sounds like **JOO-pi-ter**
+645. n. Nurse | /nɜːs/ — sounds like **NERSS** | /nɝːs/ — sounds like **NERSS**
+646. n. Chemistry | /ˈkɛmɪstri/ — sounds like **KEM-iss-tree** | /ˈkɛmɪstri/ — sounds like **KEM-iss-tree**
+647. n. Theater | /ˈθiːətə/ — sounds like **THEE-uh-tuh** | /ˈθiːətər/ — sounds like **THEE-uh-ter**
+648. adj. Narrow | /ˈnærəʊ/ — sounds like **NAR-oh** | /ˈnæroʊ/ — sounds like **NAR-oh**
+649. n. Surfing | /ˈsɜːfɪŋ/ — sounds like **SURF-ing** | /ˈsɝːfɪŋ/ — sounds like **SURF-ing**
+650. n. Digestive system | /daɪˈdʒɛstɪv ˈsɪstəm/ — sounds like **dy-JES-tiv SIS-tum** | /dɪˈdʒɛstɪv ˈsɪstəm/ — sounds like **di-JES-tiv SIS-təm**
+651. n. Artist | /ˈɑːtɪst/ — sounds like **AR-tist** | /ˈɑrtɪst/ — sounds like **AR-tist**
+652. n. History | /ˈhɪstəri/ — sounds like **HIS-tuh-ree** | /ˈhɪstəri/ — sounds like **HIS-tuh-ree**
+653. n. Gym | /dʒɪm/ — sounds like **JIM** | /dʒɪm/ — sounds like **JIM**
+654. n. Light | /laɪt/ — sounds like **LYTE** | /laɪt/ — sounds like **LYTE**
+655. n. Tennis | /ˈtɛnɪs/ — sounds like **TEN-iss** | /ˈtɛnɪs/ — sounds like **TEN-iss**
+656. n. Blue whale | /bluː weɪl/ — sounds like **BLOO WAYL** | /blu weɪl/ — sounds like **BLOO WAYL**
+657. n. Farmer | /ˈfɑːmə/ — sounds like **FAR-muh** | /ˈfɑrmər/ — sounds like **FAR-mer**
+658. n. Psychology | /saɪˈkɒlədʒi/ — sounds like **sy-KOL-uh-jee** | /saɪˈkɑlədʒi/ — sounds like **sy-KAH-luh-jee**
+659. n. Aquarium | /əˈkweəriəm/ — sounds like **uh-KWAIR-ee-um** | /əˈkwɛriəm/ — sounds like **uh-KWER-ee-əm**
+660. adj. Low | /ləʊ/ — sounds like **LOH** | /loʊ/ — sounds like **LOH**
+661. n. Basketball | /ˈbɑːskɪtbɔːl/ — sounds like **BAA-skit-bawl** | /ˈbæskətˌbɔl/ — sounds like **BAS-kit-ball**
+662. n. Circulatory system | /ˈsɜːkjʊlətəri ˈsɪstəm/ — sounds like **SUR-kyuh-luh-tree SIS-tum** | /ˈsɝːkjələˌtɔri ˈsɪstəm/ — sounds like **SUR-kyuh-luh-tor-ee SIS-təm**
+663. n. Actor | /ˈæktə/ — sounds like **AK-tuh** | /ˈæktər/ — sounds like **AK-ter**
+664. n. Astronomy | /əˈstrɒnəmi/ — sounds like **uh-STRON-uh-mee** | /əˈstrɑːnəmi/ — sounds like **uh-STRAH-nuh-mee**
+665. n. Supermarket | /ˈsuːpəmɑːkɪt/ — sounds like **SOO-puh-MAR-kit** | /ˈsupərˌmɑrkɪt/ — sounds like **SOO-per-MAR-kit**
+666. adj. Slow | /sləʊ/ — sounds like **SLOH** | /sloʊ/ — sounds like **SLOH**
+667. n. Football | /ˈfʊtbɔːl/ — sounds like **FOOT-bawl** | /ˈfʊtˌbɔl/ — sounds like **FOOT-ball**
+668. n. Diamond | /ˈdaɪəmənd/ — sounds like **DYE-uh-mund** | /ˈdaɪəmənd/ — sounds like **DYE-uh-mənd**
+669. n. Dentist | /ˈdɛntɪst/ — sounds like **DEN-tist** | /ˈdɛntɪst/ — sounds like **DEN-tist**
+670. n. Acoustics | /əˈkuːstɪks/ — sounds like **uh-KOO-stiks** | /əˈkustɪks/ — sounds like **uh-KOOS-tiks**
+671. n. Gallery | /ˈɡæləri/ — sounds like **GAL-uh-ree** | /ˈɡæləri/ — sounds like **GAL-ə-ree**
+672. adj. Dirty | /ˈdɜːti/ — sounds like **DER-tee** | /ˈdɝːti/ — sounds like **DER-tee**
+673. n. Badminton | /ˈbædmɪntən/ — sounds like **BAD-min-tun** | /ˈbædmɪntən/ — sounds like **BAD-min-tən**
+674. n. Respiratory system | /rɪˈspɪrətəri ˈsɪstəm/ — sounds like **ri-SPIR-uh-tree SIS-tum** | /ˈrɛspərəˌtɔri ˈsɪstəm/ — sounds like **RES-puh-ruh-tor-ee SIS-təm**
+675. n. Programmer | /ˈprəʊɡræmə/ — sounds like **PROH-gram-uh** | /ˈproʊˌɡræmər/ — sounds like **PROH-gram-er**
+676. n. Political science | /pəˈlɪtɪkəl ˈsaɪəns/ — sounds like **puh-LIT-i-kul SY-uhns** | /pəˈlɪtɪkəl ˈsaɪəns/ — sounds like **puh-LIT-i-kəl SY-əns**
+677. n. Stadium | /ˈsteɪdiəm/ — sounds like **STAY-dee-um** | /ˈsteɪdiəm/ — sounds like **STAY-dee-əm**
+678. adj. Late | /leɪt/ — sounds like **LAYT** | /leɪt/ — sounds like **LAYT**
+679. n. Curling | /ˈkɜːlɪŋ/ — sounds like **KER-ling** | /ˈkɝːlɪŋ/ — sounds like **KER-ling**
+680. n. Sun | /sʌn/ — sounds like **SUN** | /sʌn/ — sounds like **SUN**
+681. n. Gardener | /ˈɡɑːdnə/ — sounds like **GARD-nuh** | /ˈɡɑrdnər/ — sounds like **GARD-ner**
+682. n. Meteorology | /ˌmiːtɪəˈrɒlədʒi/ — sounds like **MEE-tee-uh-ROL-uh-jee** | /ˌmitiəˈrɑlədʒi/ — sounds like **MEE-tee-uh-RAH-luh-jee**
+683. n. Bakery | /ˈbeɪkəri/ — sounds like **BAY-kuh-ree** | /ˈbeɪkəri/ — sounds like **BAY-kə-ree**
+684. adj. Full | /fʊl/ — sounds like **FULL** | /fʊl/ — sounds like **FULL**
+685. n. Mountaineering | /ˌmaʊntɪˈnɪərɪŋ/ — sounds like **MOWN-ti-NEER-ing** | /ˌmaʊntəˈnɪrɪŋ/ — sounds like **MOWN-tə-NEER-ing**
+686. n. Skeletal system | /ˈskɛlɪtəl ˈsɪstəm/ — sounds like **SKEL-i-tul SIS-tum** | /ˈskɛlɪtəl ˈsɪstəm/ — sounds like **SKEL-i-təl SIS-təm**
+687. n. Singer | /ˈsɪŋə/ — sounds like **SING-uh** | /ˈsɪŋər/ — sounds like **SING-er**
+688. n. Linguistics | /lɪŋˈɡwɪstɪks/ — sounds like **ling-GWIS-tiks** | /lɪŋˈɡwɪstɪks/ — sounds like **ling-GWIS-tiks**
+689. n. Pool | /puːl/ — sounds like **POOL** | /pul/ — sounds like **POOL**
+690. adj. Quiet | /ˈkwaɪət/ — sounds like **KWY-uht** | /ˈkwaɪət/ — sounds like **KWY-ət**
+691. n. Skydiving | /ˈskaɪˌdaɪvɪŋ/ — sounds like **SKY-dy-ving** | /ˈskaɪˌdaɪvɪŋ/ — sounds like **SKY-dy-ving**
+692. n. Australia | /ɒˈstreɪliə/ — sounds like **aw-STRAY-lee-uh** | /ɔˈstreɪljə/ — sounds like **aw-STRAYL-yuh**

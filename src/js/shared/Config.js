@@ -150,6 +150,18 @@ class AppConfig {
                         isDefault: false
                     },
                     {
+                        id: 'pte-asq-answers',
+                        input: 'pte-asq-answers-vocabulary-with-ipa.md',
+                        output: 'pte-asq-answers-vocabulary.json',
+                        category: 'pte-asq-answers',
+                        description: 'PTE ASQ Answers Vocabulary (692 answer words with IPA)',
+                        sourceType: 'pte-asq-answers-vocabulary-with-ipa',
+                        dataType: 'vocabulary',
+                        extractorType: 'PTETermsExtractor',
+                        inputSubdir: 'vocabs',
+                        isDefault: false
+                    },
+                    {
                         id: 'pte-repeat-sentence',
                         input: 'pte-repeat-sentence.md',
                         output: 'pte-repeat-sentence-dataset.json',
@@ -236,7 +248,8 @@ class AppConfig {
                     { id: 'pte-must-know', label: '⭐ PTE Must-Know Vocabulary', dataset: 'pte-must-know-vocabulary-with-ipa' },
                     { id: 'pte-wfd-vocab', label: '✍️ PTE WFD Vocabulary', dataset: 'pte-wfd-vocabulary-with-ipa' },
                     { id: 'pte-reading-fib', label: '📖 PTE Reading FIB Vocabulary', dataset: 'pte-reading-fib-vocabulary-with-ipa' },
-                    { id: 'pte-reading-fib-drag', label: '🔀 PTE Reading FIB Drag Vocabulary', dataset: 'pte-reading-fib-drag-vocabulary-with-ipa' }
+                    { id: 'pte-reading-fib-drag', label: '🔀 PTE Reading FIB Drag Vocabulary', dataset: 'pte-reading-fib-drag-vocabulary-with-ipa' },
+                    { id: 'pte-asq-answers', label: '❓ PTE ASQ Answers Vocabulary', dataset: 'pte-asq-answers-vocabulary-with-ipa' }
                 ],
                 practiceDatasets: [
                     { id: 'pte-repeat-sentence', label: '🎤 Repeat Sentence', itemCount: 620, type: 'rs' },

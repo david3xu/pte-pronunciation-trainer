@@ -1,13 +1,19 @@
 // AudioControls - Play/pause/repeat functionality and timing
+// ARCHITECTURE: Event-driven initialization
+// - No hard-coded settings defaults in constructor (delay, repeatMode)
+// - All settings initialized via SettingsModule events on app startup
+// - Ensures consistent behavior across all vocabulary books
+// - Single source of truth: Config.js → SettingsModule → AudioControls → TTSEngine
 class AudioControls {
     constructor() {
         // Load configuration from centralized config
         this.config = window.appConfig || new AppConfig();
         this.isPlaying = false;
-        this.delay = this.config.get('tts.delays.normal'); // Default pause between words
-        this.repeatMode = 'once';
         this.currentIndex = 0;
         this.autoPlayTimeout = null;
+        
+        // Settings will be initialized by SettingsModule via events
+        // No hard-coded defaults - single source of truth
         
         // Listen to settings changes
         this._attachEventListeners();

@@ -130,6 +130,12 @@ class AppConfig {
                     'pte-beginner': '📗 PTE Beginner',
                     'pte-intermediate': '📘 PTE Intermediate'
                 },
+                practiceModes: [
+                    { id: 'vocabulary', label: '📚 Vocabulary Training', type: 'vocab' },
+                    { id: 'rs', label: '🎤 Repeat Sentence (RS)', type: 'practice' },
+                    { id: 'asq', label: '❓ Answer Short Question (ASQ)', type: 'practice' },
+                    { id: 'wfd', label: '✍️ Write From Dictation (WFD)', type: 'practice' }
+                ],
                 learningModes: [
                     { id: 'pte-fib-listening', label: '🎧 PTE FIB Listening', dataset: 'pte-fib-listening-with-ipa' },
                     { id: 'pte-beginner', label: '📗 PTE Beginner Vocabulary', dataset: 'pte-beginner-vocabulary-with-ipa' },
@@ -140,7 +146,17 @@ class AppConfig {
                     { id: 'pte-answer-short-question', label: '❓ Answer Short Question', itemCount: 692, type: 'asq' },
                     { id: 'pte-write-from-dictation', label: '✍️ Write From Dictation', itemCount: 1195, type: 'wfd' }
                 ],
-                difficulties: ['all', 'normal', 'hard', 'easy'] // All PTE terms with mixed difficulties
+                difficulties: ['all', 'normal', 'hard', 'easy'], // All PTE terms with mixed difficulties
+                
+                // Dataset file registry - single source of truth for all dataset files
+                datasetFiles: {
+                    'repeat-sentence': { file: 'pte-repeat-sentence-dataset.json', type: 'sentence' },
+                    'answer-short-question': { file: 'pte-answer-short-question-dataset.json', type: 'question' },
+                    'write-from-dictation': { file: 'pte-write-from-dictation-dataset.json', type: 'sentence' },
+                    'pte-fib-listening': { file: 'pte-fib-listening-dataset.json', type: 'vocabulary' },
+                    'pte-beginner': { file: 'pte-beginner-vocabulary.json', type: 'vocabulary' },
+                    'pte-intermediate': { file: 'pte-intermediate-vocabulary.json', type: 'vocabulary' }
+                }
             },
 
             // ===== TTS CONFIGURATION =====
@@ -163,7 +179,6 @@ class AppConfig {
                     short: 1000,
                     normal: 2000,
                     long: 3000,
-                    extended: 4000,
                     voiceReady: 100,
                     resetTimeout: 5000
                 },

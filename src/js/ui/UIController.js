@@ -74,30 +74,8 @@ class UIController {
     }
 
     bindEventListeners() {
-        // Category selection removed - each vocabulary book is a single category.
-        // The learningMode (vocabulary book) selector serves this purpose.
-
-        // Difficulty selection - use SettingsManager
-        document.getElementById('difficultySelect').addEventListener('change', (e) => {
-            window.pteVocabularyManager.setDifficulty(e.target.value);
-            this.updateCategoryDisplay(); // Update counts in category selector and context bar
-            // Save difficulty preference through SettingsManager
-            if (window.settingsManager) {
-                window.settingsManager.updateSetting('difficulty', e.target.value);
-            }
-        });
-
-        // Learning mode selection
-        document.getElementById('learningModeSelect').addEventListener('change', async (e) => {
-            const newMode = e.target.value;
-            await window.pteVocabularyManager.setLearningMode(newMode);
-            this.updateCategoryDisplay(); // Update UI for new mode
-
-            // Save the learning mode through SettingsManager
-            if (window.settingsManager) {
-                window.settingsManager.updateSetting('learningMode', newMode);
-            }
-        });
+        // Bind all settings controls using event-driven architecture
+        this.bindSettingControls();
 
         // Control buttons
         document.getElementById('startBtn').addEventListener('click', () => {
@@ -126,50 +104,6 @@ class UIController {
             }
         });
 
-        // Settings
-        document.getElementById('speedSelect').addEventListener('change', (e) => {
-            window.ttsEngine.setSpeechRate(parseFloat(e.target.value));
-            // Save speed preference through SettingsManager
-            if (window.settingsManager) {
-                window.settingsManager.updateSetting('speed', e.target.value);
-            }
-        });
-
-        document.getElementById('delaySelect').addEventListener('change', (e) => {
-            window.audioControls.setDelay(parseInt(e.target.value));
-            // Save delay preference through SettingsManager
-            if (window.settingsManager) {
-                window.settingsManager.updateSetting('delay', e.target.value);
-            }
-        });
-
-        document.getElementById('repeatSelect').addEventListener('change', (e) => {
-            window.audioControls.setRepeatMode(e.target.value);
-
-            // Reset repeat count when changing mode
-            window.ttsEngine.currentRepeatCount = 0;
-
-
-            // Save repeat preference through SettingsManager
-            if (window.settingsManager) {
-                window.settingsManager.updateSetting('repeat', e.target.value);
-            }
-
-            // Don't override the progress display during auto-play
-        });
-
-        // Voice selection - use SettingsManager
-        document.getElementById('voiceSelect').addEventListener('change', (e) => {
-            window.voiceSelector.setPreferredVoice(e.target.value);
-            // Save voice preference through SettingsManager
-            if (window.settingsManager) {
-                window.settingsManager.updateSetting('voice', e.target.value);
-            }
-        });
-
-        // Note: Event listeners for learningMode, category, and difficulty 
-        // are already defined above - no need for duplicates
-
         // Pronunciation toggle button
         const pronunciationToggleBtn = document.getElementById('pronunciationToggleBtn');
         if (pronunciationToggleBtn) {
@@ -186,6 +120,45 @@ class UIController {
         // Initialize dropdowns based on current settings
         this.initializeDropdowns();
         this.updateCategoryDisplay(); // Initial update
+    }
+
+    /**
+     * Bind all setting controls using generic event-driven pattern
+     * This replaces 80+ lines of duplicate event listeners with a clean, DRY approach
+     */
+    bindSettingControls() {
+        const settingControls = [
+            { elementId: 'practiceModeSelect', settingKey: 'practiceMode' },
+            { elementId: 'learningModeSelect', settingKey: 'learningMode', afterChange: () => this.updateCategoryDisplay() },
+            { elementId: 'practiceDatasetSelect', settingKey: 'practiceDataset' },
+            { elementId: 'difficultySelect', settingKey: 'difficulty', afterChange: () => this.updateCategoryDisplay() },
+            { elementId: 'speedSelect', settingKey: 'speed' },
+            { elementId: 'delaySelect', settingKey: 'delay' },
+            { elementId: 'repeatSelect', settingKey: 'repeat' },
+            { elementId: 'voiceSelect', settingKey: 'voice' }
+        ];
+
+        settingControls.forEach(({ elementId, settingKey, afterChange }) => {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.addEventListener('change', (e) => {
+                    // Emit event for SettingsModule to handle
+                    if (window.eventBus) {
+                        window.eventBus.emit('setting:request-change', {
+                            key: settingKey,
+                            value: e.target.value
+                        });
+                    }
+                    
+                    // Execute any after-change callbacks (e.g., UI updates)
+                    if (afterChange) {
+                        afterChange();
+                    }
+                });
+            }
+        });
+
+        console.log('✅ UIController: Bound', settingControls.length, 'setting controls using event-driven pattern');
     }
 
     /**
@@ -207,6 +180,9 @@ class UIController {
     populateAllDropdownsFromSettingsManager() {
         const settingsManager = window.settingsManager;
         if (!settingsManager) return;
+
+        // Practice mode dropdown
+        this.populateDropdown('practiceModeSelect', 'practiceMode', 'vocabulary');
 
         // Vocabulary book (learning mode) dropdown
         this.populateDropdown('learningModeSelect', 'learningMode', 'pte-fib-listening');

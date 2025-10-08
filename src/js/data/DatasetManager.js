@@ -38,33 +38,8 @@ class DatasetManager {
         this.config = config || {};
         console.log('📦 DatasetManager: Initializing...');
         
-        // Define dataset registry (hardcoded for simplicity)
-        this.registry = {
-            'repeat-sentence': {
-                file: 'pte-repeat-sentence-dataset.json',
-                type: 'sentence'
-            },
-            'answer-short-question': {
-                file: 'pte-answer-short-question-dataset.json',
-                type: 'question'
-            },
-            'write-from-dictation': {
-                file: 'pte-write-from-dictation-dataset.json',
-                type: 'sentence'
-            },
-            'pte-fib-listening': {
-                file: 'pte-fib-listening-dataset.json',
-                type: 'vocabulary'
-            },
-            'pte-beginner': {
-                file: 'pte-beginner-vocabulary.json',
-                type: 'vocabulary'
-            },
-            'pte-intermediate': {
-                file: 'pte-intermediate-vocabulary.json',
-                type: 'vocabulary'
-            }
-        };
+        // Get dataset registry from Config.js (single source of truth)
+        this.registry = this.config.get('data.datasetFiles');
         
         // Try to load from cache first
         if (this.cache.enabled) {

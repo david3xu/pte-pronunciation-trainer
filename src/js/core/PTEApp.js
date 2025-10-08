@@ -45,13 +45,11 @@ class PTEVocabularyTrainer {
     // 0.1. Set up service worker message handling for background audio
     this.setupServiceWorkerMessageHandling();
 
-    // 1. Initialize state manager (must be first to restore settings)
-    this.initializeStateManager();
+    // 1. Initialize SettingsModule (event-driven settings architecture)
+    // Note: StateManager was removed - settings now load directly from storage
+    await this.initializeSettingsModule();
 
-    // 2. Initialize SettingsModule (event-driven settings architecture)
-    this.initializeSettingsModule();
-
-    // 1.3. Initialize dataset manager (Phase 2 - unified dataset loading)
+    // 2. Initialize dataset manager (Phase 2 - unified dataset loading)
     await this.initializeDatasetManager();
 
     // 2. Initialize PTE vocabulary manager (loads data asynchronously)
@@ -91,7 +89,7 @@ class PTEVocabularyTrainer {
     this.hideMobileLoadingIndicator();
   }
 
-  initializeSettingsModule() {
+  async initializeSettingsModule() {
     // Initialize SettingsModule for event-driven settings architecture
     if (window.SettingsModule) {
       try {
@@ -101,11 +99,19 @@ class PTEVocabularyTrainer {
           window.storage
         );
         console.log('✅ PTEApp: SettingsModule initialized');
+        
+        // Validate SettingsModule is ready
+        if (!window.settingsModule.settings) {
+          throw new Error('SettingsModule initialized but settings object is missing');
+        }
       } catch (error) {
         console.error('❌ PTEApp: Failed to initialize SettingsModule:', error);
+        throw error; // Propagate error - settings are critical
       }
     } else {
-      console.warn('⚠️ SettingsModule not found - using legacy settings handling');
+      const errorMsg = 'SettingsModule class not found - check script loading order';
+      console.error('❌ PTEApp:', errorMsg);
+      throw new Error(errorMsg);
     }
   }
 

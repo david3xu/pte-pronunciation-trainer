@@ -498,10 +498,10 @@ class UIController {
     }
 
     syncRepeatModeFromHTML() {
-        const repeatSelect = document.getElementById('repeatSelect');
-        if (repeatSelect) {
-            window.audioControls.setRepeatMode(repeatSelect.value);
-        }
+        // Repeat mode is now handled via event-driven architecture
+        // Setting changes are automatically synced via 'setting:changed' events
+        // This method is kept for backward compatibility but does nothing
+        console.log('[UIController] syncRepeatModeFromHTML: Using event-driven settings (no-op)');
     }
 
     updateButtons() {

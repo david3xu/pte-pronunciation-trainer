@@ -245,15 +245,30 @@ class PTEVocabularyTrainer {
   }
 
   async initializeVoices() {
-    // Wait for voices to be available
+    // Wait for voices to be available with timeout
     if (speechSynthesis.getVoices().length === 0) {
-      await new Promise(resolve => {
-        speechSynthesis.addEventListener('voiceschanged', resolve, { once: true });
-      });
+      console.log('[PTEApp] Waiting for voices to load...');
+      
+      // Wait for voiceschanged event with 3 second timeout
+      await Promise.race([
+        new Promise(resolve => {
+          speechSynthesis.addEventListener('voiceschanged', () => {
+            console.log('[PTEApp] Voices loaded:', speechSynthesis.getVoices().length);
+            resolve();
+          }, { once: true });
+        }),
+        new Promise(resolve => setTimeout(() => {
+          console.warn('[PTEApp] Voice loading timeout after 3s');
+          resolve();
+        }, 3000))
+      ]);
+    } else {
+      console.log('[PTEApp] Voices already available:', speechSynthesis.getVoices().length);
     }
 
     // Voice selector is ready (no initialization needed)
     if (window.voiceSelector) {
+      console.log('[PTEApp] VoiceSelector ready');
     }
   }
 

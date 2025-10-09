@@ -317,6 +317,14 @@ class SettingsModule {
     get(key) {
         return this.getSetting(key);
     }
+
+    /**
+     * Updates a setting by calling handleSettingChange
+     * Used by other methods that need to update settings
+     */
+    async updateSetting(key, value) {
+        return await this.handleSettingChange({ key, value });
+    }
     
     /**
      * Get all current settings

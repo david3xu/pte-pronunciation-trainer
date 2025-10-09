@@ -1139,7 +1139,17 @@ class UIController {
 
             // Add context to help diagnose specific issues
             if (errorDetails.includes('fetch') || errorDetails.includes('HTTP')) {
-                errorDetails = `Network error: ${errorDetails}. Ensure dataset file exists at /data/processed/${datasetFiles[datasetType]?.file || datasetType}.json`;
+                // Get path from config (single source of truth)
+                const processedPath = this.config.get('data.paths.processed') || 'data/processed/';
+                const fileName = datasetFiles[datasetType]?.file || `${datasetType}.json`;
+
+                // Check if error has detailed diagnostics added by DatasetManager
+                let diagnosticInfo = '';
+                if (error.details) {
+                    diagnosticInfo = `\nDiagnostic details: ${JSON.stringify(error.details, null, 2)}`;
+                }
+
+                errorDetails = `Network error: ${errorDetails}. Ensure dataset file exists at ${processedPath}${fileName}${diagnosticInfo}`;
                 userMessage = `Dataset file not found for ${mode} mode. Please check the data directory.`;
             } else if (errorDetails.includes('Dataset type not found')) {
                 errorDetails = `Dataset type error: ${errorDetails}. Available types in registry: ${Object.keys(datasetFiles || {}).join(', ')}`;

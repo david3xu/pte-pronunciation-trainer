@@ -139,31 +139,23 @@ class PTETermsExtractor {
   }
 
   /**
-   * Infer difficulty level based on word characteristics
+   * Determine difficulty using DataSchema when available
+   * This delegates to the central implementation to ensure consistency
+   *
+   * @param {string} word - The word to analyze
+   * @returns {string} Difficulty level ('easy', 'normal', or 'hard')
    */
   static inferDifficulty(word) {
-    const length = word.length;
-    const syllables = this.countSyllables(word);
-
-    if (length <= 4 && syllables <= 2) {
-      return 'easy';
-    } else if (length <= 8 && syllables <= 3) {
-      return 'normal';
-    } else {
-      return 'hard';
+    // Use DataSchema if available (single source of truth)
+    if (typeof window !== 'undefined' && window.dataSchema) {
+      return window.dataSchema.inferDifficulty(word);
     }
-  }
 
-  /**
-   * Count syllables in a word (approximate)
-   */
-  static countSyllables(word) {
-    word = word.toLowerCase();
-    if (word.length <= 3) return 1;
-    word = word.replace(/(?:[^laeiouy]es|ed|[^laeiouy]e)$/, '');
-    word = word.replace(/^y/, '');
-    const matches = word.match(/[aeiouy]{1,2}/g);
-    return matches ? matches.length : 1;
+    // Minimal fallback for environments where DataSchema isn't available
+    if (!word) return 'normal';
+    if (word.length <= 5) return 'easy';
+    if (word.length <= 9) return 'normal';
+    return 'hard';
   }
 }
 

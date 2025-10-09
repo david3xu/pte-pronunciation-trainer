@@ -319,40 +319,27 @@ class DataSchema {
 }
 
 /**
- * Initialize and expose DataSchema globally
- * This is done after Config.js is loaded to ensure Config is available
- * @param {Object} config - Optional Config instance (will use window.appConfig if not provided)
+ * Initialize DataSchema with Config (single source of truth)
+ * @param {Object} config - Config instance
  * @returns {DataSchema} The initialized DataSchema instance
  */
-function initializeDataSchema(config = null) {
-    // Use provided config or try to get from global scope
-    const configToUse = config || (typeof window !== 'undefined' ? window.appConfig : null);
-
+function initializeDataSchema(config) {
     // Create new instance with config injection
-    const dataSchema = new DataSchema(configToUse);
+    const dataSchema = new DataSchema(config);
 
-    // Expose globally if in browser environment
+    // Expose globally in browser environment
     if (typeof window !== 'undefined') {
         window.dataSchema = dataSchema;
-        console.log('✅ DataSchema initialized with config:', configToUse ? 'provided' : 'from window.appConfig');
+        console.log('✅ DataSchema initialized with Config');
     }
 
     return dataSchema;
 }
 
-// Export for Node.js
+// Export for module systems
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = {
-        DataSchema,
-        initializeDataSchema
-    };
-} else if (typeof window !== 'undefined') {
-    // Auto-initialize in browser if Config is already loaded
-    // This allows standalone usage, but PTEApp.js should call initializeDataSchema explicitly
-    if (window.appConfig) {
-        initializeDataSchema(window.appConfig);
-    } else {
-        console.log('⚠️ DataSchema initialization deferred - waiting for Config.js to load first');
-        // Will be initialized by PTEApp.js in the correct sequence
-    }
+    module.exports = { DataSchema, initializeDataSchema };
+} else if (typeof window !== 'undefined' && window.appConfig) {
+    // Initialize immediately if Config is already loaded
+    window.dataSchema = new DataSchema(window.appConfig);
 }

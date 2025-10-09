@@ -183,88 +183,59 @@ class DatasetManager {
     }
 
     /**
-     * Detect dataset type from structure (deprecated - use registry)
-     * @param {Object} data - Dataset object
-     * @returns {string} 'vocabulary' | 'sentence' | 'question'
+     * Get dataset type from registry (single source of truth)
+     * @param {string} datasetId - Dataset identifier
+     * @returns {string} Type of the dataset
+     * @throws {Error} If type cannot be determined
      */
-    detectDatasetType(data) {
-        // Vocabulary: has metadata.vocabulary array
-        if (data.metadata && Array.isArray(data.vocabulary)) {
-            return 'vocabulary';
-        }
-        
-        // New datasets: have meta + items
-        if (data.meta && Array.isArray(data.items)) {
-            const type = data.meta.type;
-            
-            // Check first item to determine subtype
-            if (data.items.length > 0) {
-                const firstItem = data.items[0];
-                
-                if (firstItem.content && firstItem.content.question) {
-                    return 'question'; // ASQ
-                } else if (firstItem.content && firstItem.content.sentence) {
-                    return 'sentence'; // RS or WFD
-                }
-            }
-            
-            // Fallback to meta.type
-            if (type === 'asq') return 'question';
-            if (type === 'rs' || type === 'wfd') return 'sentence';
+    getDatasetType(datasetId) {
+        // Use datasetFiles registry from Config as single source of truth
+        const datasetFiles = this.config.get('data.datasetFiles');
+        if (!datasetFiles || !datasetFiles[datasetId]) {
+            throw new Error(`Unknown dataset: ${datasetId}`);
         }
 
-        throw new Error('Unknown dataset structure');
+        return datasetFiles[datasetId].type;
     }
 
     /**
      * Validate dataset structure using DataSchema as single source of truth
-     * Falls back to basic validation if DataSchema is not available
-     *
      * @param {Object} data - Dataset object
      * @param {string} type - Dataset type
      * @returns {Object} Validated dataset
      * @throws {Error} If dataset fails validation
      */
     validateDataset(data, type) {
-        // Use DataSchema for validation if available (single source of truth)
+        // Map type to schema type
+        const schemaType = type === 'vocabulary' ? 'dataset' : type;
+
+        // Simple validation to prevent runtime errors in case DataSchema isn't available
+        // This is minimal, just enough to prevent crashes
+        if (!data) {
+            throw new Error(`Dataset is null or undefined`);
+        }
+
+        // Use DataSchema for validation (single source of truth)
         if (window.dataSchema) {
-            console.log(`📊 DatasetManager: Using DataSchema to validate ${type} dataset`);
+            console.log(`📊 DatasetManager: Validating ${type} dataset using schema`);
 
-            // Map type to schema type
-            const schemaType = type === 'vocabulary' ? 'dataset' : type;
-
-            // Validate using schema
             const validationResult = window.dataSchema.validate(schemaType, data);
-
             if (!validationResult.valid) {
-                const errorMessage = `Invalid ${type} dataset structure: ${validationResult.errors.join(', ')}`;
-                console.error(`❌ DatasetManager: ${errorMessage}`);
+                const errorMessage = `Invalid ${type} dataset: ${validationResult.errors.join(', ')}`;
+                console.error(`❌ ${errorMessage}`);
                 throw new Error(errorMessage);
             }
-
             return data;
         }
 
-        // Fallback validation if DataSchema not available
-        console.warn(`⚠️ DatasetManager: DataSchema not available, using fallback validation for ${type}`);
+        // Extremely minimal fallback if DataSchema not available
+        console.warn(`⚠️ DataSchema not available - using minimal validation`);
 
-        if (type === 'vocabulary') {
-            if (!data.metadata || !Array.isArray(data.vocabulary)) {
-                throw new Error('Invalid vocabulary dataset structure');
-            }
-            if (data.vocabulary.length === 0) {
-                throw new Error('Vocabulary dataset is empty');
-            }
-        } else {
-            if (!data.meta || !Array.isArray(data.items)) {
-                throw new Error(`Invalid ${type} dataset structure`);
-            }
-            if (data.items.length === 0) {
-                throw new Error(`${type} dataset is empty`);
-            }
-            if (data.meta.count !== data.items.length) {
-                console.warn(`⚠️ Meta count (${data.meta.count}) doesn't match items (${data.items.length})`);
-            }
+        // Just verify basic structure exists to prevent runtime errors
+        if (type === 'vocabulary' && (!data.vocabulary || !Array.isArray(data.vocabulary))) {
+            throw new Error('Invalid vocabulary dataset: missing vocabulary array');
+        } else if (type !== 'vocabulary' && (!data.items || !Array.isArray(data.items))) {
+            throw new Error(`Invalid ${type} dataset: missing items array`);
         }
 
         return data;

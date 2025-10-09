@@ -41,12 +41,53 @@ class AudioControls {
         window.eventBus.on(settingsChangedEvent, this._handleSettingChange.bind(this));
 
         // Listen for learning mode changes to reset index
+        // First listen for setting changes directly
+        window.eventBus.on('setting:changed', (data) => {
+            if (data.key === 'learningMode') {
+                console.log(`[AudioControls] 🔄 Learning mode changed to ${data.value}, resetting index to 0`);
+                // Reset current index to start from the beginning of the new book
+                this.setCurrentIndex(0);
+                // Also pause autoplay to prevent continuous playback when switching books
+                if (this.isPlaying) {
+                    this.pauseAutoPlay();
+                }
+            }
+        });
+
+        // Also listen for the standardized event as a backup
         const learningModeChangedEvent = window.appConfig.get('events.mode.learning.changed');
         window.eventBus.on(learningModeChangedEvent, (data) => {
-            console.log('[AudioControls] 🔄 Learning mode changed, resetting index to 0');
+            console.log('[AudioControls] 🔄 Learning mode changed event received, resetting index to 0');
             // Reset current index to start from the beginning of the new book
             this.setCurrentIndex(0);
             // Also pause autoplay to prevent continuous playback when switching books
+            if (this.isPlaying) {
+                this.pauseAutoPlay();
+            }
+        });
+
+        // Listen for practice mode changes to reset state
+        const practiceModeChangedEvent = window.appConfig.get('events.mode.practice.changed');
+        window.eventBus.on(practiceModeChangedEvent, (data) => {
+            console.log(`[AudioControls] 🔄 Practice mode changed to ${data.mode}, resetting state`);
+
+            // Reset playback state
+            if (this.isPlaying) {
+                this.pauseAutoPlay();
+            }
+
+            // Reset index for vocabulary mode
+            if (data.mode === 'vocabulary') {
+                this.setCurrentIndex(0);
+            }
+        });
+
+        // Listen for dataset changes in practice modes
+        const datasetChangedEvent = window.appConfig.get('events.dataset.practice.changed');
+        window.eventBus.on(datasetChangedEvent, (data) => {
+            console.log(`[AudioControls] 📚 Practice dataset changed: ${data.datasetId} (${data.itemCount} items)`);
+
+            // Reset playback state
             if (this.isPlaying) {
                 this.pauseAutoPlay();
             }
@@ -87,6 +128,23 @@ class AudioControls {
         } else if (key === 'repeat') {
             this._setRepeatMode(value);
             console.log(`[AudioControls] Repeat mode changed to ${value}`);
+        } else if (key === 'practiceMode') {
+            console.log(`[AudioControls] Practice mode changed to ${value}`);
+
+            // Reset any ongoing playback
+            if (this.isPlaying) {
+                this.pauseAutoPlay();
+            }
+
+            // Reset index to 0 when changing practice modes
+            this.setCurrentIndex(0);
+        } else if (key === 'practiceDataset') {
+            console.log(`[AudioControls] Practice dataset changed to ${value}`);
+
+            // Reset any ongoing playback
+            if (this.isPlaying) {
+                this.pauseAutoPlay();
+            }
         }
     }
 
@@ -121,6 +179,8 @@ class AudioControls {
         const modeMapping = this.config.get('data.practiceModeMapping') || {};
         const mapping = modeMapping[currentMode];
         const isVocabularyMode = mapping && mapping.type === this.config.get('modes.practice.vocabulary');
+
+        console.log(`[AudioControls] Current mode: ${currentMode} (vocabulary mode: ${isVocabularyMode})`);
 
         // Check for required data based on mode
         let canPlay = false;
@@ -169,9 +229,62 @@ class AudioControls {
 
             if (!canPlay) {
                 console.error('[AudioControls] ❌ No practice dataset loaded - cannot start auto-play');
-                window.progressTracker?.showError(`No ${currentMode.toUpperCase()} dataset loaded. Please try switching modes.`);
-                return;
+
+                // Check if we need to reload the dataset
+                if (!window.datasetManager || !window.uiController) {
+                    console.error('[AudioControls] ❌ DatasetManager or UIController not available');
+                    window.progressTracker?.showError(`Required components not initialized. Please refresh the page.`);
+                    return;
+                }
+
+                // Try to load the dataset via UIController
+                console.log('[AudioControls] 🔄 Attempting to load practice dataset via UIController...');
+
+                try {
+                    // Use SettingsModule to get the current dataset
+                    const settingsModule = window.settingsModule;
+                    const practiceDataset = settingsModule ? settingsModule.get('practiceDataset') : null;
+
+                    if (practiceDataset && window.uiController.loadPracticeDataset) {
+                        console.log(`[AudioControls] 🔄 Loading dataset: ${practiceDataset}`);
+
+                        // Give feedback to user
+                        window.progressTracker?.updateStatus(`Loading ${currentMode.toUpperCase()} dataset...`);
+
+                        // Try to load the practice dataset
+                        window.uiController.loadPracticeDataset(currentMode)
+                            .then(success => {
+                                if (success && window.currentItem) {
+                                    console.log('[AudioControls] ✅ Dataset loaded successfully, starting playback...');
+
+                                    // Now we can start playback
+                                    this.isPlaying = true;
+                                    this.showPlayingUI();
+                                    this.playCurrentItem();
+                                } else {
+                                    console.error('[AudioControls] ❌ Failed to load dataset');
+                                    window.progressTracker?.showError(`Failed to load ${currentMode.toUpperCase()} dataset`);
+                                }
+                            })
+                            .catch(err => {
+                                console.error('[AudioControls] ❌ Error loading dataset:', err);
+                                window.progressTracker?.showError(`Error loading dataset: ${err.message}`);
+                            });
+
+                        return; // Exit early as we're handling this asynchronously
+                    } else {
+                        console.error('[AudioControls] ❌ No practice dataset configured');
+                        window.progressTracker?.showError(`No ${currentMode.toUpperCase()} dataset configured. Please check settings.`);
+                        return;
+                    }
+                } catch (error) {
+                    console.error('[AudioControls] ❌ Failed to load dataset:', error);
+                    window.progressTracker?.showError(`Failed to load ${currentMode.toUpperCase()} dataset`);
+                    return;
+                }
             }
+
+            console.log(`[AudioControls] ✅ Practice dataset ready - item: ${window.currentItem ? 'available' : 'missing'}`);
         }
 
         if (this.isPlaying) {

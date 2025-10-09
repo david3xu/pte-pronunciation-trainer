@@ -39,13 +39,25 @@ class AudioControls {
         // Listen to standardized settings:changed event from Config.js
         const settingsChangedEvent = window.appConfig.get('events.settings.changed');
         window.eventBus.on(settingsChangedEvent, this._handleSettingChange.bind(this));
-        
+
+        // Listen for learning mode changes to reset index
+        const learningModeChangedEvent = window.appConfig.get('events.mode.learning.changed');
+        window.eventBus.on(learningModeChangedEvent, (data) => {
+            console.log('[AudioControls] 🔄 Learning mode changed, resetting index to 0');
+            // Reset current index to start from the beginning of the new book
+            this.setCurrentIndex(0);
+            // Also pause autoplay to prevent continuous playback when switching books
+            if (this.isPlaying) {
+                this.pauseAutoPlay();
+            }
+        });
+
         // Audio control events (using standardized names from Config.js)
         const audioStartEvent = window.appConfig.get('events.audio.autoplay.start');
         const audioPauseEvent = window.appConfig.get('events.audio.autoplay.pause');
         const audioNextEvent = window.appConfig.get('events.audio.navigate.next');
         const audioPrevEvent = window.appConfig.get('events.audio.navigate.prev');
-        
+
         window.eventBus.on(audioStartEvent, () => this.startAutoPlay());
         window.eventBus.on(audioPauseEvent, () => this.pauseAutoPlay());
         window.eventBus.on(audioNextEvent, ({ mode }) => {
@@ -534,8 +546,36 @@ class AudioControls {
         return this.currentIndex;
     }
 
+    /**
+     * Set the current index and update UI to display the word at that index
+     * @param {number} index - The index to set
+     */
     setCurrentIndex(index) {
-        this.currentIndex = Math.max(0, Math.min(index, window.pteVocabularyManager.getTotalWords() - 1));
+        // Ensure index is within valid range
+        if (!window.pteVocabularyManager) return;
+
+        const totalWords = window.pteVocabularyManager.getTotalWords() || 0;
+        if (totalWords === 0) return;
+
+        // Bound index to valid range
+        this.currentIndex = Math.max(0, Math.min(index, totalWords - 1));
+        console.log(`[AudioControls] Setting current index to ${this.currentIndex}`);
+
+        // Get the current word at this index
+        const currentWord = window.pteVocabularyManager.getCurrentWord(this.currentIndex);
+
+        // Update the UI with this word
+        if (currentWord && window.uiController && typeof window.uiController.displayWord === 'function') {
+            console.log(`[AudioControls] Updating UI to show word: ${currentWord.english}`);
+            window.uiController.displayWord(currentWord, this.currentIndex);
+        } else if (window.eventBus) {
+            // Fallback: emit content display event
+            const contentDisplayEvent = this.config.get('events.content.display') || 'content:display';
+            window.eventBus.emit(contentDisplayEvent, {
+                word: currentWord,
+                index: this.currentIndex
+            });
+        }
     }
 
     wait(ms) {

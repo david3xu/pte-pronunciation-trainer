@@ -71,10 +71,16 @@ class DatasetManager {
         console.log(`📥 DatasetManager: Loading ${datasetType} from ${registryEntry.file}...`);
 
         try {
-            // Load from network
-            const response = await fetch(`data/processed/${registryEntry.file}`);
+            // Determine correct path - ensure it starts with a slash if needed
+            const basePath = '/data/processed/';
+            const filePath = `${basePath}${registryEntry.file}`;
+
+            console.log(`📥 DatasetManager: Fetching dataset from ${filePath}`);
+
+            // Load from network with absolute path
+            const response = await fetch(filePath);
             if (!response.ok) {
-                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                throw new Error(`HTTP ${response.status}: ${response.statusText} for ${filePath}`);
             }
 
             const data = await response.json();

@@ -114,14 +114,42 @@ class AudioControls {
         let canPlay = false;
 
         if (isVocabularyMode) {
-            // Vocabulary mode: Check for vocabulary data
-            const totalWords = window.pteVocabularyManager?.getTotalWords() || 0;
+            // Enhanced safety checks for vocabulary mode
+            if (!window.pteVocabularyManager) {
+                console.error('[AudioControls] ❌ PTEVocabularyManager not available - cannot start auto-play');
+                window.progressTracker?.showError('Vocabulary manager not initialized. Please refresh the page.');
+                return;
+            }
+
+            // Check if we have words to play
+            const totalWords = window.pteVocabularyManager.getTotalWords();
+            console.log(`[AudioControls] Current words count: ${totalWords}`);
+
             canPlay = totalWords > 0;
 
             if (!canPlay) {
                 console.error('[AudioControls] ❌ No vocabulary loaded - cannot start auto-play');
                 window.progressTracker?.showError('No vocabulary data loaded. Please refresh the page.');
                 return;
+            }
+
+            // Create a current word reference for display
+            const currentIndex = this.currentIndex || 0;
+            const currentWord = window.pteVocabularyManager.getCurrentWord(currentIndex);
+
+            // Make sure we have a valid word object
+            if (!currentWord) {
+                console.error('[AudioControls] ❌ Invalid current word at index:', currentIndex);
+                window.progressTracker?.showError('Could not find the current word. Please try again.');
+                return;
+            }
+
+            // Log current word for debugging
+            console.log(`[AudioControls] Current word: ${currentWord?.english || '(unknown)'}`);
+
+            // Update display immediately
+            if (window.uiController && typeof window.uiController.displayWord === 'function') {
+                window.uiController.displayWord(currentWord, currentIndex);
             }
         } else {
             // Practice mode (RS/ASQ/WFD): Check for current item and dataset
@@ -182,6 +210,20 @@ class AudioControls {
         }
 
         try {
+            console.log(`[AudioControls] Playing word: ${currentWord?.english || '(unknown)'} at index ${this.currentIndex}`);
+
+            // Update display immediately before playing audio
+            if (window.uiController && typeof window.uiController.displayWord === 'function') {
+                window.uiController.displayWord(currentWord, this.currentIndex);
+            } else {
+                // Fallback: emit content display event for UI update
+                const contentDisplayEvent = this.config.get('events.content.display') || 'content:display';
+                window.eventBus.emit(contentDisplayEvent, {
+                    word: currentWord,
+                    index: this.currentIndex
+                });
+            }
+
             // Emit word play start event
             window.eventBus.emit('audioControls:wordPlayStarted', {
                 word: currentWord,

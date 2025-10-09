@@ -105,12 +105,33 @@ class AudioControls {
         console.log('[AudioControls] window.currentItem:', window.currentItem);
         console.log('[AudioControls] window.currentDataset:', window.currentDataset);
 
-        // Safety check: verify we have word data
-        const totalWords = window.pteVocabularyManager?.getTotalWords() || 0;
-        if (totalWords === 0) {
-            console.error('[AudioControls] ❌ No words loaded - cannot start auto-play');
-            window.progressTracker?.showError('No vocabulary data loaded. Please refresh the page.');
-            return;
+        // Use Config.js mapping to determine mode type
+        const modeMapping = this.config.get('data.practiceModeMapping') || {};
+        const mapping = modeMapping[currentMode];
+        const isVocabularyMode = mapping && mapping.type === this.config.get('modes.practice.vocabulary');
+
+        // Check for required data based on mode
+        let canPlay = false;
+
+        if (isVocabularyMode) {
+            // Vocabulary mode: Check for vocabulary data
+            const totalWords = window.pteVocabularyManager?.getTotalWords() || 0;
+            canPlay = totalWords > 0;
+
+            if (!canPlay) {
+                console.error('[AudioControls] ❌ No vocabulary loaded - cannot start auto-play');
+                window.progressTracker?.showError('No vocabulary data loaded. Please refresh the page.');
+                return;
+            }
+        } else {
+            // Practice mode (RS/ASQ/WFD): Check for current item and dataset
+            canPlay = !!window.currentItem && !!window.currentDataset;
+
+            if (!canPlay) {
+                console.error('[AudioControls] ❌ No practice dataset loaded - cannot start auto-play');
+                window.progressTracker?.showError(`No ${currentMode.toUpperCase()} dataset loaded. Please try switching modes.`);
+                return;
+            }
         }
 
         if (this.isPlaying) {
@@ -120,7 +141,13 @@ class AudioControls {
 
         this.isPlaying = true;
         this.showPlayingUI();
-        this.playCurrentWord();
+
+        // Call appropriate playback method based on mode
+        if (isVocabularyMode) {
+            this.playCurrentWord();
+        } else {
+            this.playCurrentItem();
+        }
     }
 
     pauseAutoPlay() {

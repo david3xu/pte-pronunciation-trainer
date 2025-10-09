@@ -2,15 +2,17 @@
 
 ## 🏗️ System Overview
 
-The PTE Pronunciation Trainer is a client-side web application designed to help users practice pronunciation for the PTE (Pearson Test of English) exam. It features text-to-speech (TTS) capabilities, vocabulary management, progress tracking, and a customizable settings system.
+The PTE Pronunciation Trainer (v2.5.1) is a client-side web application designed to help users practice pronunciation for the PTE (Pearson Test of English) exam. It features text-to-speech (TTS) capabilities, vocabulary management, progress tracking, and a zero-hardcoded-value configuration system.
 
 ### **Key Design Principles**
 
-1. **Centralized Configuration** - All settings in `src/js/shared/Config.js`
-2. **Modular Architecture** - Independent, loosely-coupled components
-3. **Event-Driven Communication** - Components communicate via EventBus
-4. **Data-Driven Design** - Configurable data pipeline from Markdown → JSON
-5. **Progressive Enhancement** - Core functionality works without advanced features
+1. **Zero Hardcoded Values** - ALL configuration in `src/js/shared/Config.js`
+2. **Event-Driven Architecture** - Complete decoupling via EventBus with standardized events
+3. **Context-Aware Settings** - SettingsModule with proper `this` binding for handler functions
+4. **Modular Components** - Independent, loosely-coupled modules with clear responsibilities
+5. **Data-Driven Design** - Configurable data pipeline from Markdown → JSON
+6. **Progressive Enhancement** - Core functionality works without advanced features
+7. **Defensive Programming** - Comprehensive error handling and graceful degradation
 
 ---
 

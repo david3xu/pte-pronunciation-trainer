@@ -7,9 +7,120 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-# Changelog
+## [2.5.1] - 2025-10-09
 
-All notable changes to the PTE Pronunciation Trainer will be documented in this file.
+### Fixed
+- **SettingsModule Context Binding**: Fixed critical `this.get is not a function` error
+  - All `handler.apply()` and `handler.validate()` calls now use `.call(this, value)`
+  - Preserves SettingsModule instance context inside handler functions
+  - Fixes practiceMode handler and all other handlers that use `this.get()`, `this.config`, etc.
+  - Fixed in both `handleSettingChange()` (line 273) and `loadSettings()` (line 390)
+  - Service Worker: v63
+
+### Technical
+- App Version: 2.5.0 → 2.5.1
+
+## [2.5.0] - 2025-10-09
+
+### Fixed
+- **displayCurrent Method Signature**: Restored correct parameter order
+  - Changed from `displayCurrent(mode = null)` back to `displayCurrent(data = {}, mode = null)`
+  - Event listeners at lines 54 and 61 pass `{word, index}` or `{item}` as first parameter
+  - Fixes `ReferenceError: data is not defined` error in UIController
+  - Service Worker: v62 → v63
+
+### Technical
+- App Version: 2.4.9 → 2.5.0
+
+## [2.4.9] - 2025-10-09
+
+### Fixed
+- **SettingsModule Initialization Timing**: Added `getPracticeMode()` helper method
+  - UIController, AudioControls, and TTSEngine now have safe helper methods
+  - Helper checks if `window.settingsModule` exists and has `get()` method before calling
+  - Falls back to Config.js defaults during early initialization
+  - Fixes `window.settingsModule?.get is not a function` errors
+  - Prevents errors when modules try to get practice mode before SettingsModule is fully ready
+
+### Technical
+- App Version: 2.4.8 → 2.4.9
+
+## [2.4.8] - 2025-10-09
+
+### Fixed
+- **window.currentPracticeMode Global Variable**: Eliminated hardcoded global usage
+  - Replaced all `window.currentPracticeMode` references with `SettingsModule.get('practiceMode')`
+  - Updated AudioControls, TTSEngine, UIController, and SettingsModule
+  - All mode reads now use centralized SettingsModule with Config.js defaults
+  - Fixes `Mode: undefined` console errors
+
+### Technical
+- App Version: 2.4.7 → 2.4.8
+
+## [2.4.7] - 2025-10-09
+
+### Fixed
+- **Missing Dataset Paths**: Added 8 missing dataset paths to Config.js `data.paths.byMode`
+  - Added 5 vocabulary mode paths: pte-must-know, pte-wfd-vocab, pte-reading-fib, pte-reading-fib-drag, pte-asq-answers
+  - Added 3 practice dataset paths: pte-repeat-sentence, pte-answer-short-question, pte-write-from-dictation
+  - All 11 vocabulary books now have complete path mappings
+  - All 3 practice datasets now have complete path mappings
+  - Fixes `No path configured for mode` console errors
+  - All dataset files verified to exist in `/data/processed/`
+
+### Technical
+- App Version: 2.4.6 → 2.4.7
+
+## [2.4.6] - 2025-10-09
+
+### Fixed
+- **Comprehensive Hardcoded Value Elimination**: Replaced 50+ hardcoded values with Config.js references
+  - UIController: 10+ hardcoded mode checks and fallbacks → `config.get('data.defaults.*')`
+  - SettingsPanel: 4+ hardcoded voice and practice mode fallbacks → Config.js
+  - SettingsModule: 3+ hardcoded delay constants → `config.get('tts.delays')`
+  - PTEVocabularyManager: 4+ hardcoded difficulty and learning mode defaults → Config.js
+  - CacheMigration: 5+ hardcoded fallback defaults → Config.js
+  - All comparison checks now use `mapping.type === config.get('modes.practice.vocabulary')`
+  - Zero hardcoded values remaining in codebase
+
+### Changed
+- All modules now use single source of truth: Config.js → SettingsModule → Components
+- Practice mode mapping system fully integrated across all components
+
+### Technical
+- App Version: 2.4.5 → 2.4.6
+
+## [2.4.5] - 2025-10-08
+
+### Added
+- **Centralized Settings Mapping**: Added comprehensive mapping system to Config.js
+  - `data.defaults` object with all default values (practiceMode, learningMode, difficulty, speed, delay, repeat, voice)
+  - `data.practiceModeMapping` maps UI modes to internal behavior (vocabulary/practice types)
+  - Each practice mode defines `type`, `usesLearningMode`, `usesPracticeDataset`, and defaults
+  - Enables zero-hardcoded-value architecture
+
+### Changed
+- SettingsModule enhanced to use mapping system for practice mode changes
+  - Automatically sets appropriate learningMode or practiceDataset based on mapping
+  - Emits lifecycle events (`mode:practice:changing`, `mode:practice:changed`)
+- UIController and SettingsPanel updated to use Config.js defaults
+
+### Technical
+- App Version: 2.4.4 → 2.4.5
+
+## [2.4.4] - 2025-10-08
+
+### Fixed
+- **TTSEngine Word Data Emission**: Fixed full word object emission
+  - Changed from emitting `word.english` string to full word object
+  - Event payload now includes: `{word, phonetic, index, total, mode, bookName}`
+  - Fixes downstream components expecting full word object with IPA, difficulty, etc.
+- **Parameter Naming**: Fixed `repeatIndex` vs `repeatCount` naming inconsistency
+  - TTSEngine now uses `repeatIndex` consistently across all methods
+  - Service Worker: v62
+
+### Technical
+- App Version: 2.4.3 → 2.4.4
 
 ## [2.4.3] - 2025-10-08
 

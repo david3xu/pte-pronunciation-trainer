@@ -2,11 +2,11 @@
 
 A specialized web-based pronunciation training application for **PTE exam preparation**, featuring comprehensive vocabulary and practice modes for all key PTE speaking and listening sections.
 
-**✅ v2.3 - PRODUCTION READY (Oct 2025)** - Event-driven architecture, 10 vocabulary books, 3 practice modes, continuous learning!
+**✅ v2.5.1 - PRODUCTION READY (Oct 2025)** - Event-driven architecture, 11 vocabulary books, 3 practice modes, zero hardcoded values!
 
 ## 🎯 Key Features
 
-### 📚 **Complete PTE Vocabulary Library (10 Books)**
+### 📚 **Complete PTE Vocabulary Library (11 Books)**
 - **🎧 FIB Listening** - 885 fill-in-the-blank terms with IPA pronunciation
 - **📗 Beginner Vocabulary** - 383 high-frequency terms
 - **📘 Intermediate Vocabulary** - 2,408 intermediate terms
@@ -14,10 +14,11 @@ A specialized web-based pronunciation training application for **PTE exam prepar
 - **📚 Read Aloud (RA) Vocabulary** - 788 RA-specific terms
 - **🎯 Repeat Sentence (RS) Vocabulary** - 887 RS-specific terms
 - **⭐ Must-Know Vocabulary** - 1,397 essential PTE terms
-- **✍️ WFD Vocabulary** - Write From Dictation specific terms
-- **📖 Reading FIB** - Reading fill-in-the-blanks vocabulary
-- **🔀 Reading FIB Drag** - Reading FIB drag & drop vocabulary
-- **Total**: 10,000+ vocabulary terms with IPA pronunciation
+- **✍️ WFD Vocabulary** - 1,318 Write From Dictation specific terms
+- **📖 Reading FIB** - 313 Reading fill-in-the-blanks vocabulary
+- **🔀 Reading FIB Drag** - 767 Reading FIB drag & drop vocabulary
+- **❓ ASQ Answers Vocabulary** - 627 Answer Short Question specific terms
+- **Total**: 12,000+ vocabulary terms with IPA pronunciation
 
 ### 🎤 **PTE Practice Modes (Sentence Datasets)**
 - **🎤 Repeat Sentence (RS)** - 620 practice sentences
@@ -56,13 +57,14 @@ A specialized web-based pronunciation training application for **PTE exam prepar
 
 ### 🚀 **Production-Ready Architecture**
 - **Event-Driven System** - Complete decoupling via EventBus (zero direct dependencies)
+- **Centralized Configuration** - ALL values in `Config.js` - ZERO hardcoded values
+- **Settings Module** - Event-driven settings with context-aware handlers
 - **Dependency Graph Manager** - InitializationManager with topological sort
 - **Global Error Handling** - Centralized error events with fail-fast for critical modules
 - **Network Resilience** - Retry logic with exponential backoff (1s, 2s, 4s)
 - **Health Checks** - Module validation with critical/non-critical distinction
-- **Dynamic Dataset Loading** - Lazy loading for all 10 vocabulary books + 3 practice modes
-- **Centralized Configuration** - ALL values in `Config.js` - NO hardcoded values
-- **Service Worker** - v54 with progressive enhancement and cache management
+- **Dynamic Dataset Loading** - Lazy loading for all 11 vocabulary books + 3 practice modes
+- **Service Worker** - v63 with progressive enhancement and aggressive cache management
 
 ## 🚀 Quick Start
 

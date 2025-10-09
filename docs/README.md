@@ -37,6 +37,6 @@ All documentation follows these principles:
 
 ---
 
-**Version**: v2.5.1  
+**Version**: v2.5.2  
 **Last Updated**: October 9, 2025  
 **Status**: ✅ Production Ready

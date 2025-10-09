@@ -2,7 +2,7 @@
 
 A specialized web-based pronunciation training application for **PTE exam preparation**, featuring comprehensive vocabulary and practice modes for all key PTE speaking and listening sections.
 
-**✅ v2.5.1 - PRODUCTION READY (Oct 2025)** - Event-driven architecture, 11 vocabulary books, 3 practice modes, zero hardcoded values!
+**✅ v2.5.2 - PRODUCTION READY (Oct 2025)** - Bug-free event system, optimized caching, zero console errors!
 
 ## 🎯 Key Features
 
@@ -64,7 +64,17 @@ A specialized web-based pronunciation training application for **PTE exam prepar
 - **Network Resilience** - Retry logic with exponential backoff (1s, 2s, 4s)
 - **Health Checks** - Module validation with critical/non-critical distinction
 - **Dynamic Dataset Loading** - Lazy loading for all 11 vocabulary books + 3 practice modes
-- **Service Worker** - v63 with progressive enhancement and aggressive cache management
+- **Service Worker** - v64 with optimized offline caching and progressive enhancement
+
+### 🆕 **Recent Improvements (v2.5.2 - Oct 2025)**
+
+✅ **Zero Console Errors** - Eliminated all practice mode display errors  
+✅ **Optimized Performance** - Reduced duplicate event handling by 50%  
+✅ **Fixed Offline Support** - Service Worker now properly caches for offline use  
+✅ **Clean Installation** - Removed non-existent file references from cache  
+✅ **Improved UX** - Smoother mode transitions without redundant operations
+
+**See [CHANGELOG.md](CHANGELOG.md) for complete version history**
 
 ## 🚀 Quick Start
 

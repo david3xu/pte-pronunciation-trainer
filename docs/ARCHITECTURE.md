@@ -2,7 +2,7 @@
 
 ## 🏗️ System Overview
 
-The PTE Pronunciation Trainer (v2.5.1) is a client-side web application designed to help users practice pronunciation for the PTE (Pearson Test of English) exam. It features text-to-speech (TTS) capabilities, vocabulary management, progress tracking, and a zero-hardcoded-value configuration system.
+The PTE Pronunciation Trainer (v2.5.2) is a client-side web application designed to help users practice pronunciation for the PTE (Pearson Test of English) exam. It features text-to-speech (TTS) capabilities, vocabulary management, progress tracking, and a zero-hardcoded-value configuration system.
 
 ### **Key Design Principles**
 

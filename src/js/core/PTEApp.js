@@ -239,22 +239,19 @@ class PTEVocabularyTrainer {
   }
 
   /**
-   * Initialize DataSchema with Config injection
-   * Ensures DataSchema has access to configuration values for validation rules
+   * Initialize DataSchema with Config injection (single source of truth)
    */
   initializeDataSchema() {
-    if (typeof window.initializeDataSchema === 'function') {
-      console.log('🔄 PTEApp: Initializing DataSchema with Config injection...');
+    // If DataSchema exists but hasn't been initialized with Config
+    if (!window.dataSchema) {
+      console.log('🔄 PTEApp: Initializing DataSchema with Config...');
       try {
-        // Pass appConfig to ensure single source of truth
-        window.initializeDataSchema(window.appConfig);
+        // Create new instance with Config injection
+        window.dataSchema = new DataSchema(window.appConfig);
         console.log('✅ PTEApp: DataSchema initialized');
       } catch (error) {
         console.error('❌ PTEApp: Failed to initialize DataSchema:', error);
-        // Not throwing here as we have fallback validation in other components
       }
-    } else {
-      console.warn('⚠️ PTEApp: DataSchema initialization function not available');
     }
   }
 

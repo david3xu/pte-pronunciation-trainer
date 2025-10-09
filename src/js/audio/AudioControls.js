@@ -336,42 +336,7 @@ class AudioControls {
         }
     }
 
-    /**
-     * @deprecated Use SettingsModule with events instead
-     * @private
-     */
-    _setDelay(delay) {
-        this.delay = parseInt(delay) || this.config.get('tts.delays.normal');
-
-        // Emit delay change event
-        window.eventBus.emit('audioControls:delayChanged', {
-            delay: this.delay
-        });
-    }
-
-    /**
-     * @deprecated Use SettingsModule with events instead
-     * @private
-     */
-    _setRepeatMode(mode) {
-        this.repeatMode = mode;
-
-        // Update TTS engine repeat settings
-        const targetRepeats = {
-            'once': 1,
-            'twice': 2,
-            'intensive': 3,
-            'loop': 1
-        }[mode] || 1;
-
-        window.ttsEngine.setRepeatMode(targetRepeats);
-
-        // Emit repeat mode change event
-        window.eventBus.emit('audioControls:repeatModeChanged', {
-            mode: this.repeatMode,
-            targetRepeats
-        });
-    }
+    // Deprecated methods removed - use SettingsModule with events instead
 
     /**
      * SIMPLIFIED: Play current item in practice mode (RS/ASQ/WFD)

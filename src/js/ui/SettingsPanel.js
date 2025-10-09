@@ -90,12 +90,10 @@ class SettingsPanel {
                 }
             }
             
-            // Emit mode change event (standardized from Config.js)
-            console.log(`[SettingsPanel] 📤 Emitting mode:practice:changed event with mode: ${mode}`);
-            const modeChangedEvent = window.appConfig.get('events.mode.practice.changed');
-            window.eventBus.emit(modeChangedEvent, { mode });
-            
-            // Save preference
+            // INSTEAD of emitting both events, just save the setting
+            // SettingsModule will emit the mode:practice:changed event
+            // This prevents circular event references
+            console.log(`[SettingsPanel] 📤 Saving practiceMode setting: ${mode}`);
             this.saveSetting('practiceMode', mode);
         });
     }

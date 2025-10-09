@@ -2152,11 +2152,75 @@ _attachEventListeners() {
 - ✅ Track initialization timing
 
 #### **4. Event System**
-- ✅ Use namespaced events (e.g., `audio:start`, `vocabulary:loaded`)
-- ✅ Include detailed event payloads
+- ✅ Use namespaced events (e.g., `audio:autoplay:start`, `settings:changed`)
+- ✅ Include detailed event payloads with timestamps
 - ✅ Handle errors in event handlers
 - ✅ Emit global `system:error` for centralized tracking
 - ✅ Prevent infinite loops in error handlers
+- ✅ ALL event names defined in Config.js (zero hardcoded values)
+
+---
+
+## 📡 Event System Reference
+
+### **Event Naming Convention**
+
+Pattern: `domain:action[:modifier]`
+
+**Examples:**
+- `content:display` - Display content (unified for word/practice)
+- `audio:autoplay:started` - Autoplay started (past tense for completed actions)
+- `settings:changed` - Setting value changed
+- `tts:speaking:started` - TTS started speaking
+
+### **Core Events by Domain**
+
+#### **Audio Events** (`events.audio.*`)
+- `audio:autoplay:start` - Start autoplay mode
+- `audio:autoplay:pause` - Pause autoplay mode
+- `audio:autoplay:started` - Autoplay started (notification)
+- `audio:autoplay:paused` - Autoplay paused (notification)
+- `audio:navigate:next` - Navigate to next item
+- `audio:navigate:prev` - Navigate to previous item
+
+#### **Settings Events** (`events.settings.*`)
+- `settings:changed` - Setting value changed `{key, value, timestamp}`
+- `settings:error` - Setting update failed `{key, value, error}`
+
+#### **TTS Events** (`events.tts.*`)
+- `tts:speaking:started` - TTS started speaking `{word, phonetic, mode}`
+- `tts:speaking:completed` - TTS finished speaking `{word}`
+
+#### **Content Events** (`events.content.*`)
+- `content:display` - Display content (unified) `{word/item, index}`
+
+#### **Mode Events** (`events.mode.*`)
+- `mode:practice:changing` - Practice mode about to change `{oldMode, newMode}`
+- `mode:practice:changed` - Practice mode changed `{mode, timestamp}`
+
+#### **Vocabulary Events**
+- `vocabulary:loaded` - Dataset loaded `{mode, wordCount}`
+- `vocabulary:difficultyFiltered` - Difficulty filter applied `{difficulty, count}`
+
+### **Event Usage Example**
+
+```javascript
+// Emitting events (from Config.js)
+const settingsChangedEvent = window.appConfig.get('events.settings.changed');
+window.eventBus.emit(settingsChangedEvent, { 
+  key: 'speed', 
+  value: 0.7, 
+  timestamp: Date.now() 
+});
+
+// Listening to events
+const audioStartEvent = window.appConfig.get('events.audio.autoplay.start');
+window.eventBus.on(audioStartEvent, () => {
+  this.startAutoPlay();
+});
+```
+
+**See `src/js/shared/Config.js` lines 450-530 for complete event registry.**
 
 ---
 

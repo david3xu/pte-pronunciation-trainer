@@ -54,6 +54,56 @@ class DataSchema {
                 }
             },
 
+            // PTE Repeat Sentence & Write From Dictation dataset schema
+            sentence: {
+                required: ['meta', 'items'],
+                structure: {
+                    meta: {
+                        required: ['type', 'count'],
+                        optional: ['version', 'updated', 'source', 'description']
+                    },
+                    items: 'array' // Array of sentence items
+                },
+                itemSchema: {
+                    required: ['id', 'type', 'content', 'metadata'],
+                    structure: {
+                        content: {
+                            required: ['sentence'],
+                            optional: ['ipa']
+                        },
+                        metadata: {
+                            required: ['difficulty', 'wordCount'],
+                            optional: ['category', 'tags']
+                        }
+                    }
+                }
+            },
+
+            // PTE Answer Short Question dataset schema
+            question: {
+                required: ['meta', 'items'],
+                structure: {
+                    meta: {
+                        required: ['type', 'count'],
+                        optional: ['version', 'updated', 'source', 'description']
+                    },
+                    items: 'array' // Array of question items
+                },
+                itemSchema: {
+                    required: ['id', 'type', 'content', 'metadata'],
+                    structure: {
+                        content: {
+                            required: ['question'],
+                            optional: ['answer', 'ipa']
+                        },
+                        metadata: {
+                            required: ['difficulty', 'wordCount'],
+                            optional: ['category', 'tags']
+                        }
+                    }
+                }
+            },
+
             dialogue: {
                 required: ['id', 'title', 'sentences'],
                 optional: ['category', 'difficulty', 'metadata'],
@@ -92,7 +142,8 @@ class DataSchema {
         if (schema.structure) {
             Object.keys(schema.structure).forEach(field => {
                 if (data[field]) {
-                    const nestedValidation = this._validateNested(field, data[field], schema.structure[field]);
+                    // Pass the full schema to _validateNested for item validation
+                    const nestedValidation = this._validateNested(field, data[field], schema.structure[field], schema);
                     errors.push(...nestedValidation);
                 }
             });
@@ -279,13 +330,30 @@ class DataSchema {
     /**
      * Validate nested structure
      * @private
+     * @param {string} field - Field name
+     * @param {any} data - Data to validate
+     * @param {object|string} structure - Structure definition
+     * @param {object} [schema] - Parent schema for item validation
+     * @returns {Array<string>} Validation errors
      */
-    _validateNested(field, data, structure) {
+    _validateNested(field, data, structure, schema) {
         const errors = [];
 
         if (structure === 'array') {
             if (!Array.isArray(data)) {
                 errors.push(`Field ${field} must be an array`);
+                return errors;
+            }
+
+            // If parent schema has itemSchema, validate each item
+            if (schema && schema.itemSchema && data.length > 0) {
+                // Only validate first item to avoid performance issues with large datasets
+                const firstItem = data[0];
+                const itemErrors = this._validateItem(firstItem, schema.itemSchema);
+
+                if (itemErrors.length > 0) {
+                    errors.push(`Invalid item in ${field}: ${itemErrors.join(', ')}`);
+                }
             }
         } else if (typeof structure === 'object') {
             if (structure.required) {
@@ -295,6 +363,38 @@ class DataSchema {
                     }
                 });
             }
+        }
+
+        return errors;
+    }
+
+    /**
+     * Validate item against itemSchema
+     * @private
+     * @param {object} item - Item to validate
+     * @param {object} itemSchema - Schema for item
+     * @returns {Array<string>} Validation errors
+     */
+    _validateItem(item, itemSchema) {
+        const errors = [];
+
+        // Check required fields
+        if (itemSchema.required) {
+            itemSchema.required.forEach(field => {
+                if (!(field in item)) {
+                    errors.push(`Missing required field: ${field}`);
+                }
+            });
+        }
+
+        // Validate nested structures
+        if (itemSchema.structure) {
+            Object.keys(itemSchema.structure).forEach(field => {
+                if (item[field]) {
+                    const nestedValidation = this._validateNested(field, item[field], itemSchema.structure[field]);
+                    errors.push(...nestedValidation);
+                }
+            });
         }
 
         return errors;

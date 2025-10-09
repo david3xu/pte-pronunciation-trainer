@@ -78,6 +78,26 @@ class AudioControls {
         }
     }
 
+    /**
+     * Set repeat mode for audio playback
+     * @param {string} mode - Repeat mode ('once', 'loop', etc)
+     * @private
+     */
+    _setRepeatMode(mode) {
+        // Validate mode against config values
+        const validModes = this.config.get('audio.repeatModes') || ['once', 'loop'];
+
+        // Default to 'once' if invalid mode provided
+        this.repeatMode = validModes.includes(mode) ? mode : 'once';
+
+        // Emit standardized event (from Config.js)
+        const repeatModeChangedEvent = this.config.get('events.audio.repeat.changed') || 'audio:repeat:changed';
+        window.eventBus.emit(repeatModeChangedEvent, {
+            mode: this.repeatMode,
+            timestamp: new Date().toISOString()
+        });
+    }
+
     startAutoPlay() {
         const currentMode = this.getPracticeMode();
         console.log('[AudioControls] 🎬 startAutoPlay called - Mode:', currentMode);

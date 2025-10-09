@@ -146,10 +146,25 @@ class PTESentenceExtractor {
   
   /**
    * Infer difficulty based on word count
+   * Uses Config-driven thresholds when available through DataSchema
+   *
    * @param {number} wordCount - Number of words
    * @returns {string} Difficulty level ('easy', 'normal', 'hard')
    */
   static inferDifficulty(wordCount) {
+    // Use DataSchema and Config if available (single source of truth)
+    if (typeof window !== 'undefined' && window.dataSchema) {
+      try {
+        // Create a mock sentence of appropriate length for difficulty inference
+        // This leverages the centralized difficulty logic in DataSchema
+        const mockSentence = "word ".repeat(wordCount).trim();
+        return window.dataSchema.inferDifficulty(mockSentence);
+      } catch (error) {
+        // Silent fallback - use defaults below
+      }
+    }
+
+    // Fallback thresholds if DataSchema not available
     if (wordCount <= 8) return 'easy';
     if (wordCount <= 12) return 'normal';
     return 'hard';
@@ -211,56 +226,51 @@ class PTESentenceExtractor {
   }
   
   /**
-   * Validate extracted dataset
+   * Validate extracted dataset using DataSchema when available
    * @param {object} dataset - Dataset to validate
    * @returns {object} Validation result
    */
   static validate(dataset) {
+    // Use DataSchema for validation if available (single source of truth)
+    if (typeof window !== 'undefined' && window.dataSchema) {
+      try {
+        // Schema type for sentence datasets
+        const schemaType = 'sentence';
+        return window.dataSchema.validate(schemaType, dataset);
+      } catch (error) {
+        console.warn(`⚠️ PTESentenceExtractor: DataSchema validation error: ${error.message}`);
+        // Fall through to minimal validation if DataSchema validation fails
+      }
+    }
+
+    // Minimal fallback validation if DataSchema not available
     const errors = [];
     const warnings = [];
-    
-    // Validate meta
+
+    // Basic structure check
     if (!dataset.meta) {
       errors.push('Missing meta object');
-    } else {
-      if (!dataset.meta.type || !['rs', 'wfd'].includes(dataset.meta.type)) {
-        errors.push(`Invalid meta.type: ${dataset.meta.type}`);
-      }
-      if (!dataset.meta.count || dataset.meta.count !== dataset.items.length) {
-        errors.push(`Meta count (${dataset.meta.count}) doesn't match items length (${dataset.items.length})`);
-      }
+    } else if (!dataset.meta.type) {
+      errors.push('Missing meta.type');
     }
-    
-    // Validate items
+
     if (!Array.isArray(dataset.items)) {
       errors.push('Items is not an array');
+    } else if (dataset.items.length === 0) {
+      warnings.push('Items array is empty');
     } else {
-      const seenIds = new Set();
-      
-      dataset.items.forEach((item, index) => {
-        // Check required fields
-        if (!item.id) errors.push(`Item ${index}: missing id`);
-        if (!item.type) errors.push(`Item ${index}: missing type`);
-        if (!item.content) errors.push(`Item ${index}: missing content`);
-        if (!item.content?.sentence) errors.push(`Item ${index}: missing content.sentence`);
-        if (item.content?.ipa !== null) warnings.push(`Item ${index}: ipa should be null, got ${item.content.ipa}`);
-        if (!item.metadata) errors.push(`Item ${index}: missing metadata`);
-        if (!item.metadata?.difficulty) errors.push(`Item ${index}: missing metadata.difficulty`);
-        if (!item.metadata?.category) errors.push(`Item ${index}: missing metadata.category`);
-        
-        // Check for duplicates
-        if (seenIds.has(item.id)) {
-          errors.push(`Duplicate id: ${item.id}`);
-        }
-        seenIds.add(item.id);
-        
-        // Check difficulty values
-        if (item.metadata?.difficulty && !['easy', 'normal', 'hard'].includes(item.metadata.difficulty)) {
-          errors.push(`Item ${index}: invalid difficulty ${item.metadata.difficulty}`);
-        }
-      });
+      // Only check first item for critical structure (performance)
+      const firstItem = dataset.items[0];
+      if (!firstItem.content || !firstItem.content.sentence) {
+        errors.push('First item missing content.sentence');
+      }
+
+      // Check meta count matches actual count
+      if (dataset.meta && dataset.meta.count !== dataset.items.length) {
+        warnings.push(`Meta count (${dataset.meta.count}) doesn't match items length (${dataset.items.length})`);
+      }
     }
-    
+
     return {
       valid: errors.length === 0,
       errors,

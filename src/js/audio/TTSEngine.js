@@ -500,19 +500,7 @@ class TTSEngine {
         return this.cleanTextForTTS(cleaned);
     }
 
-    /**
-     * @deprecated Use SettingsModule with events instead
-     * @private
-     */
-    _setSpeechRate(rate) {
-        this.speechRate = parseFloat(rate) || this.config.get('tts.speeds.normal');
-
-        // Emit rate change event (standardized from Config.js)
-        const ttsRateChangedEvent = window.appConfig.get('events.tts.rate.changed');
-        window.eventBus.emit(ttsRateChangedEvent, {
-            rate: this.speechRate
-        });
-    }
+    // Deprecated method removed - use SettingsModule with events instead
 
     setRepeatMode(targetRepeats) {
         this.targetRepeats = parseInt(targetRepeats) || 1;

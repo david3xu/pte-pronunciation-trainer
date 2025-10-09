@@ -183,7 +183,7 @@ class VoiceSelector {
     }
 
     /**
-     * @deprecated Use SettingsModule with events instead
+     * Set preferred voice and reset cache
      * @private
      */
     _setPreferredVoice(voiceName) {
@@ -194,9 +194,11 @@ class VoiceSelector {
             window.ttsEngine.resetVoiceCache();
         }
 
-        // Emit voice change event
-        window.eventBus.emit('voice:preferenceChanged', {
-            voiceName: this.preferredVoice || 'auto'
+        // Emit standardized event (from Config.js)
+        const voiceChangedEvent = window.appConfig?.get('events.voice.preference.changed') || 'voice:preference:changed';
+        window.eventBus.emit(voiceChangedEvent, {
+            voiceName: this.preferredVoice || 'auto',
+            timestamp: new Date().toISOString()
         });
     }
 

@@ -104,6 +104,17 @@ class SettingsPanel {
         // Load saved settings from SettingsModule
         if (!window.settingsModule) {
             console.warn('⚠️ SettingsModule not available - using fallback initialization');
+            // Wait for SettingsModule to become available (it will be initialized by PTEApp)
+            await this.waitForSettingsModule();
+            if (!window.settingsModule) {
+                console.error('❌ SettingsModule still not available after waiting - settings persistence disabled');
+                return;
+            }
+        }
+
+        // Make sure the SettingsModule has the get method
+        if (!window.settingsModule.exportSettings) {
+            console.error('❌ SettingsModule.exportSettings method not available - settings persistence disabled');
             return;
         }
 
@@ -289,6 +300,38 @@ class SettingsPanel {
         // Emit event to request setting change (standardized from Config.js)
         const settingsRequestChangeEvent = window.appConfig.get('events.settings.requestChange');
         window.eventBus.emit(settingsRequestChangeEvent, { key, value });
+    }
+
+    /**
+     * Helper method to wait for SettingsModule to become available
+     * @param {number} timeout - Maximum time to wait in ms
+     * @returns {Promise<boolean>} - True if SettingsModule became available, false if timed out
+     */
+    async waitForSettingsModule(timeout = 3000) {
+        console.log(`[SettingsPanel] Waiting for SettingsModule to be initialized (timeout: ${timeout}ms)...`);
+
+        const startTime = Date.now();
+        const checkInterval = 100; // Check every 100ms
+
+        return new Promise(resolve => {
+            const checkForModule = () => {
+                if (window.settingsModule) {
+                    console.log(`[SettingsPanel] SettingsModule is now available after ${Date.now() - startTime}ms`);
+                    resolve(true);
+                    return;
+                }
+
+                if (Date.now() - startTime > timeout) {
+                    console.warn(`[SettingsPanel] Timed out waiting for SettingsModule after ${timeout}ms`);
+                    resolve(false);
+                    return;
+                }
+
+                setTimeout(checkForModule, checkInterval);
+            };
+
+            checkForModule();
+        });
     }
 
 }

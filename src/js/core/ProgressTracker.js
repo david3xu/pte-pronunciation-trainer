@@ -6,6 +6,7 @@ class ProgressTracker {
 
     updateProgress(currentIndex, totalWords, currentWord = null) {
         this.currentIndex = currentIndex;
+        console.log(`[ProgressTracker] 📊 updateProgress called: index=${currentIndex}, total=${totalWords}, word="${currentWord?.english || 'none'}"`);
 
         if (totalWords === 0) {
             this.updateStatus('No words available');
@@ -13,6 +14,7 @@ class ProgressTracker {
         }
 
         const progressElement = document.getElementById('progressText');
+        console.log(`[ProgressTracker] progressElement found: ${!!progressElement}`);
         if (progressElement) {
             // Show dialogue ID and TOKEN progress within the dialogue (e.g., 70245 (3/56))
             if (currentWord && currentWord.conversationId) {
@@ -52,9 +54,13 @@ class ProgressTracker {
 
                 const tokenNumber = tokenIndex !== -1 ? tokenIndex + 1 : 1;
                 const totalTermsInDialogue = tokensInDialogue ? tokensInDialogue.length : 0;
-                progressElement.textContent = `Dialogue ${currentWord.conversationId} (${tokenNumber}/${totalTermsInDialogue})`;
+                const dialogueText = `Dialogue ${currentWord.conversationId} (${tokenNumber}/${totalTermsInDialogue})`;
+                progressElement.textContent = dialogueText;
+                console.log(`[ProgressTracker] ✅ Set progress to: "${dialogueText}"`);
             } else {
-                progressElement.textContent = `${currentIndex + 1} of ${totalWords}`;
+                const progressText = `${currentIndex + 1} of ${totalWords}`;
+                progressElement.textContent = progressText;
+                console.log(`[ProgressTracker] ✅ Set progress to: "${progressText}"`);
             }
         }
 
@@ -88,9 +94,11 @@ class ProgressTracker {
     }
 
     updateStatus(status) {
+        console.log(`[ProgressTracker] 📢 updateStatus called: "${status}"`);
         const progressElement = document.getElementById('progressText');
         if (progressElement) {
             progressElement.textContent = status;
+            console.log(`[ProgressTracker] ✅ Set status to: "${status}"`);
         }
 
 

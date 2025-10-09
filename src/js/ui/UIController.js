@@ -1260,8 +1260,8 @@ class UIController {
         const difficultyBadge = document.getElementById('difficultyBadge');
         const wordTypeBadge = document.getElementById('wordTypeBadge');
 
-        // Clear all first
-        [phoneticSpelling, englishWord, ipaNotation, pronunciationText, exampleSentence, progressText].forEach(el => {
+        // Clear content elements (but NOT progressText - that's managed by ProgressTracker)
+        [phoneticSpelling, englishWord, ipaNotation, pronunciationText, exampleSentence].forEach(el => {
             if (el) el.textContent = '';
         });
         

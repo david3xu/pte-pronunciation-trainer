@@ -19,7 +19,15 @@ class DataSchema {
         'pte-reading-fib-drag'
     ];
 
-    constructor() {
+    /**
+     * Create a new DataSchema instance with optional config injection
+     * @param {Object} config - Configuration object (from Config.js)
+     */
+    constructor(config = null) {
+        // Store config reference for use in schema operations
+        this.config = config;
+
+        // Schema definitions - single source of truth for all data structures
         this.schemas = {
             vocabulary: {
                 required: ['english'],
@@ -205,16 +213,38 @@ class DataSchema {
      * @param {string} english - English text
      * @returns {string} Inferred difficulty
      */
+    /**
+     * Infer difficulty from English text using config settings
+     * Uses config.dataProcessing.difficulty criteria if available, otherwise uses sensible defaults
+     * @param {string} english - English text
+     * @returns {string} Inferred difficulty ('easy', 'normal', or 'hard')
+     */
     inferDifficulty(english) {
         if (!english) return 'normal';
 
         const words = english.trim().split(/\s+/).length;
         const hasComplexTerms = /\b(comprehensive|administrative|implementation|coordination|infrastructure)\b/i.test(english);
 
-        const easyConfig = this.config.get('dataProcessing.difficulty.easy');
-        if (words === 1 && english.length <= easyConfig.maxLength) return 'easy';
-        if (words <= 2 && !hasComplexTerms) return 'easy';
-        if (words <= 4 && !hasComplexTerms) return 'normal';
+        // Get difficulty criteria from config or use defaults if not available
+        let easyMaxLength = 8;  // Default value
+        let easyMaxWords = 2;   // Default value
+        let normalMaxWords = 4; // Default value
+
+        // Use config values when available (with safe access)
+        if (this.config && typeof this.config.get === 'function') {
+            const easyConfig = this.config.get('dataProcessing.difficulty.easy');
+            const normalConfig = this.config.get('dataProcessing.difficulty.normal');
+
+            // Use safe fallbacks if config paths don't exist
+            easyMaxLength = easyConfig?.maxLength || easyMaxLength;
+            easyMaxWords = easyConfig?.maxWords || easyMaxWords;
+            normalMaxWords = normalConfig?.maxWords || normalMaxWords;
+        }
+
+        // Apply rules in priority order
+        if (words === 1 && english.length <= easyMaxLength) return 'easy';
+        if (words <= easyMaxWords && !hasComplexTerms) return 'easy';
+        if (words <= normalMaxWords && !hasComplexTerms) return 'normal';
         return 'hard';
     }
 
@@ -288,8 +318,41 @@ class DataSchema {
     }
 }
 
-// Initialize and expose globally
-const dataSchema = new DataSchema();
+/**
+ * Initialize and expose DataSchema globally
+ * This is done after Config.js is loaded to ensure Config is available
+ * @param {Object} config - Optional Config instance (will use window.appConfig if not provided)
+ * @returns {DataSchema} The initialized DataSchema instance
+ */
+function initializeDataSchema(config = null) {
+    // Use provided config or try to get from global scope
+    const configToUse = config || (typeof window !== 'undefined' ? window.appConfig : null);
 
-// Expose as global reference for PTE app
-window.dataSchema = dataSchema;
+    // Create new instance with config injection
+    const dataSchema = new DataSchema(configToUse);
+
+    // Expose globally if in browser environment
+    if (typeof window !== 'undefined') {
+        window.dataSchema = dataSchema;
+        console.log('✅ DataSchema initialized with config:', configToUse ? 'provided' : 'from window.appConfig');
+    }
+
+    return dataSchema;
+}
+
+// Export for Node.js
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = {
+        DataSchema,
+        initializeDataSchema
+    };
+} else if (typeof window !== 'undefined') {
+    // Auto-initialize in browser if Config is already loaded
+    // This allows standalone usage, but PTEApp.js should call initializeDataSchema explicitly
+    if (window.appConfig) {
+        initializeDataSchema(window.appConfig);
+    } else {
+        console.log('⚠️ DataSchema initialization deferred - waiting for Config.js to load first');
+        // Will be initialized by PTEApp.js in the correct sequence
+    }
+}

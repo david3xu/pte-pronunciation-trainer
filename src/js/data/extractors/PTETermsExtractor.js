@@ -99,7 +99,8 @@ class PTETermsExtractor {
     const [, britishIPA, britishPhonetic] = britishMatch;
     const [, americanIPA, americanPhonetic] = americanMatch;
 
-    const result = {
+    // Create initial result object with extracted data
+    const extractedData = {
       english: term, // Clean word without word type prefix
       pronunciation: {
         british: {
@@ -115,13 +116,26 @@ class PTETermsExtractor {
       category: options.category || 'pte-vocabulary',
       source: options.source || 'pte-vocabulary-with-ipa'
     };
-    
+
     // Add wordType only if present (keeps data clean for entries without word types)
     if (wordType) {
-      result.wordType = wordType;
+      extractedData.wordType = wordType;
     }
-    
-    return result;
+
+    // Use DataSchema for standardization if available (single source of truth)
+    if (typeof window !== 'undefined' && window.dataSchema) {
+      try {
+        // Standardize through DataSchema to ensure consistent structure
+        return window.dataSchema.standardizeVocabulary(extractedData, extractedData.source);
+      } catch (error) {
+        console.warn(`⚠️ PTETermsExtractor: Could not standardize term "${term}" with DataSchema: ${error.message}`);
+        // Fall back to raw data if standardization fails
+        return extractedData;
+      }
+    }
+
+    // Return raw result if DataSchema not available
+    return extractedData;
   }
 
   /**

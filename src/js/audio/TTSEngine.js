@@ -113,7 +113,7 @@ class TTSEngine {
      * Universal method for RS/ASQ/WFD modes - reuses existing TTS infrastructure
      * @param {string} text - Text to pronounce
      * @param {string} lang - Language code (defaults to config.tts.language.default)
-     * @param {number} rate - Speech rate (default: normal)
+     * @param {number} rate - Speech rate (uses user's speed setting if not specified)
      */
     async pronounceText(text, lang = null, rate = null) {
         const defaultLang = this.config.get('tts.language.default');
@@ -124,7 +124,8 @@ class TTSEngine {
 
         try {
             const cleanText = this.cleanTextForTTS(text);
-            const speechRate = rate || this.config.get('tts.speeds.normal');
+            // Use custom rate if provided, otherwise use user's speed setting, fallback to normal
+            const speechRate = rate || this.speechRate || this.config.get('tts.speeds.normal');
 
             // Add visual feedback to main display element
             const element = this._addSpeakingFeedback('englishWord', {

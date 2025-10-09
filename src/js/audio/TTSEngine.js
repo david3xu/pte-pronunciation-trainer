@@ -77,9 +77,22 @@ class TTSEngine {
         if (element) {
             element.classList.add('speaking');
         }
+
+        // Create a mode-aware event payload
+        const payload = { ...eventData };
+
+        // For practice modes, we need to include the current item
+        const currentMode = this.getPracticeMode();
+        const isVocabularyMode = currentMode === 'vocabulary';
+
+        if (!isVocabularyMode && window.currentItem) {
+            // In practice modes, include the current item in the event data
+            payload.item = window.currentItem;
+        }
+
         // Emit standardized event from Config.js
         const ttsSpeakingStartedEvent = window.appConfig.get('events.tts.speaking.started');
-        window.eventBus.emit(ttsSpeakingStartedEvent, eventData);
+        window.eventBus.emit(ttsSpeakingStartedEvent, payload);
         return element;
     }
 

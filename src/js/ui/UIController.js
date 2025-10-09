@@ -260,7 +260,8 @@ class UIController {
         if (isVocabularyMode) {
             // Vocabulary mode - use displayWord()
             const word = data.word || data.item;
-            const index = data.index || 0;
+            // Get index from data, or from audioControls if not provided
+            const index = data.index !== undefined ? data.index : (window.audioControls?.getCurrentIndex() || 0);
 
             // Check if we have valid word data
             if (!word && window.pteVocabularyManager) {

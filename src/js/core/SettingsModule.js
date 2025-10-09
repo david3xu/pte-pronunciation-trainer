@@ -302,13 +302,20 @@ class SettingsModule {
      */
     getSetting(key) {
         const handler = this.handlers[key];
-        
+
         // Return cached value or default
         if (this.settings[key] !== undefined) {
             return this.settings[key];
         }
-        
+
         return handler?.default?.();
+    }
+
+    /**
+     * Alias for getSetting - used throughout the codebase
+     */
+    get(key) {
+        return this.getSetting(key);
     }
     
     /**
@@ -377,7 +384,23 @@ class SettingsModule {
                 }
             }
         }
-        
+
+        // Ensure required settings are initialized with defaults if missing
+        if (!this.settings.practiceMode) {
+            this.settings.practiceMode = this.config.get('fallbacks.practiceMode');
+            console.log(`[SettingsModule] Initialized missing practiceMode with default: ${this.settings.practiceMode}`);
+        }
+
+        if (!this.settings.repeat) {
+            this.settings.repeat = this.config.get('fallbacks.repeatMode');
+            console.log(`[SettingsModule] Initialized missing repeat with default: ${this.settings.repeat}`);
+        }
+
+        if (!this.settings.voice) {
+            this.settings.voice = this.config.get('settings.defaults.voice');
+            console.log(`[SettingsModule] Initialized missing voice with default: ${this.settings.voice}`);
+        }
+
         console.log('📥 SettingsModule: Loaded', Object.keys(this.settings).length, 'settings from storage');
         
         // Then, apply all loaded settings to initialize modules correctly

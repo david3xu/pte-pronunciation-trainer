@@ -588,7 +588,8 @@ class TTSEngine {
     }
 
     getTargetRepeats() {
-        return this.targetRepeats;
+        // Return targetRepeats if set, otherwise default to 1
+        return this.targetRepeats || 1;
     }
 
     resetVoiceCache() {

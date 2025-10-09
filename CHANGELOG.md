@@ -7,6 +7,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.5.2] - 2025-10-09
+
+### Fixed
+- **Practice Mode Display Errors**: Fixed `❌ Invalid word object received: undefined` errors
+  - TTSEngine now only emits `tts:speaking:started` event for vocabulary mode
+  - Practice modes (RS/ASQ/WFD) handle their own display logic via `displayContent()`
+  - Prevents unnecessary calls to `displayWord()` with undefined data in practice modes
+  
+- **Duplicate Event Handling**: Eliminated redundant dataset loads and UI updates
+  - Added guard in SettingsModule to only update `practiceDataset` if value actually changed
+  - Prevents cascading event chains when switching practice modes
+  - Reduces duplicate network requests and console log spam
+  
+- **Service Worker Cache Failures**: Removed non-existent files from cache lists
+  - Removed `AppNamespace.js` and `LegacyCompatibility.js` (no longer exist in codebase)
+  - Fixes "Failed to cache" errors during SW installation
+  - Cleaned both development and production cache configurations
+  
+- **Offline Cache Preservation**: Fixed aggressive cache deletion on SW activation
+  - SW now only deletes old cache versions, preserves current version
+  - Enables proper offline functionality and background operation
+  - Removed forced client reload that was breaking user experience
+
+### Technical
+- App Version: 2.5.1 → 2.5.2
+- Service Worker: v63 → v64
+- Files Modified: TTSEngine.js, SettingsModule.js, sw.js
+
+---
+
 ## [2.5.1] - 2025-10-09
 
 ### Fixed

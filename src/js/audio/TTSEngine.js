@@ -166,6 +166,7 @@ class TTSEngine {
         }
 
         try {
+            this.isSpeaking = true; // Mark as speaking
             this.currentRepeatCount = repeatIndex;
 
             // Clean text for TTS
@@ -262,6 +263,8 @@ class TTSEngine {
             console.warn('Speech error:', error);
             // Don't show error to user - fallback is already handled in speak()
             this.showTTSFallback(word.english);
+        } finally {
+            this.isSpeaking = false; // Always clear flag when done
         }
     }
 
@@ -563,6 +566,9 @@ class TTSEngine {
         if ('speechSynthesis' in window) {
             speechSynthesis.cancel();
         }
+
+        // Clear the speaking flag
+        this.isSpeaking = false;
 
         // Remove visual feedback
         const englishWordElement = document.getElementById('englishWord');

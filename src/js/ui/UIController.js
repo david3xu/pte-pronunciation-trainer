@@ -248,21 +248,48 @@ class UIController {
     displayCurrent(data = {}, mode = null) {
         const defaultMode = this.config.get('data.defaults.practiceMode');
         const currentMode = mode || this.getPracticeMode();
-        
+
         // Use Config.js mapping to determine mode type instead of hardcoded string comparison
         const modeMapping = this.config.get('data.practiceModeMapping');
         const mapping = modeMapping && modeMapping[currentMode];
         const isVocabularyMode = mapping && mapping.type === this.config.get('modes.practice.vocabulary');
-        
+
+        // Debug information to help troubleshoot display issues
+        console.log(`[UIController] displayCurrent - Mode: ${currentMode}, isVocabularyMode: ${isVocabularyMode}`);
+
         if (isVocabularyMode) {
             // Vocabulary mode - use displayWord()
             const word = data.word || data.item;
             const index = data.index || 0;
+
+            // Check if we have valid word data
+            if (!word && window.pteVocabularyManager) {
+                console.log('[UIController] No word in event data, using current index from vocabulary manager');
+                const currentIndex = window.audioControls?.getCurrentIndex() || 0;
+                const currentWord = window.pteVocabularyManager.getCurrentWord(currentIndex);
+                if (currentWord) {
+                    this.displayWord(currentWord, currentIndex);
+                    return;
+                }
+            }
+
             this.displayWord(word, index);
         } else {
             // Practice modes (RS/ASQ/WFD) - use displayContent()
-            const item = data.item || data.word;
-            this.displayContent(item, currentMode);
+            let item = data.item || data.word;
+
+            // If no item provided in event but we have a current item, use that
+            if (!item && window.currentItem) {
+                console.log('[UIController] No item in event data, using window.currentItem');
+                item = window.currentItem;
+            }
+
+            // Only call displayContent if we have a valid item
+            if (item) {
+                this.displayContent(item, currentMode);
+            } else {
+                console.warn(`[UIController] No valid item to display for mode: ${currentMode}`);
+            }
         }
     }
 
@@ -409,10 +436,24 @@ class UIController {
         // Safety check: ensure word object has required data
         if (!word || !word.english) {
             console.error('[UIController] ❌ Invalid word object received:', word);
+
+            // Check if we're in a practice mode - this might be expected
+            const currentMode = this.getPracticeMode();
+            const modeMapping = this.config.get('data.practiceModeMapping');
+            const mapping = modeMapping && modeMapping[currentMode];
+            const isVocabularyMode = mapping && mapping.type === this.config.get('modes.practice.vocabulary');
+
+            if (!isVocabularyMode && window.currentItem) {
+                // In practice mode, don't show an error - just ignore this call
+                console.log('[UIController] In practice mode, ignoring invalid word object');
+                return;
+            }
+
+            // In vocabulary mode, show an error message
             const phoneticElement = document.getElementById('phoneticSpelling');
             const englishElement = document.getElementById('englishWord');
             const chineseElement = document.getElementById('chineseTranslation');
-            
+
             if (phoneticElement) phoneticElement.textContent = 'Error: No Data';
             if (englishElement) englishElement.textContent = 'Please refresh the page';
             if (chineseElement) chineseElement.textContent = '';

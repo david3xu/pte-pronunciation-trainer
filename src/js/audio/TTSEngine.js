@@ -295,21 +295,40 @@ class TTSEngine {
             utterance.pitch = 1.0;
 
             // Try to find the best voice match for user's practice - ONLY MALE VOICES
-            // Cache the voice selection to ensure consistency across all pronunciations
-            if (!this.cachedVoice) {
+            // Re-check voices if cache is empty (voices may not have been ready initially)
+            if (!this.cachedVoice || speechSynthesis.getVoices().length > 0) {
                 const voices = speechSynthesis.getVoices();
-                this.cachedVoice = window.voiceSelector ? window.voiceSelector.selectBestVoiceMatch(voices, lang) : null;
-                if (this.cachedVoice) {
+                if (voices.length > 0) {
+                    this.cachedVoice = window.voiceSelector ? window.voiceSelector.selectBestVoiceMatch(voices, lang) : null;
+                    if (this.cachedVoice) {
+                        console.log(`[TTSEngine] Selected voice: ${this.cachedVoice.name}`);
+                    }
                 }
             }
             const voice = this.cachedVoice;
             if (voice) {
                 utterance.voice = voice;
             } else {
-                console.error('No voice available for text-to-speech');
-                this.showTTSFallback(text);
-                resolve();
-                return;
+                // Try to get voices one more time before failing
+                const voices = speechSynthesis.getVoices();
+                if (voices.length > 0) {
+                    const fallbackVoice = window.voiceSelector ? window.voiceSelector.selectBestVoiceMatch(voices, lang) : voices[0];
+                    if (fallbackVoice) {
+                        console.warn('[TTSEngine] Using fallback voice:', fallbackVoice.name);
+                        utterance.voice = fallbackVoice;
+                        this.cachedVoice = fallbackVoice; // Cache for next time
+                    } else {
+                        console.error('No voice available for text-to-speech');
+                        this.showTTSFallback(text);
+                        resolve();
+                        return;
+                    }
+                } else {
+                    console.error('No voices loaded yet - speech synthesis unavailable');
+                    this.showTTSFallback(text);
+                    resolve();
+                    return;
+                }
             }
 
             utterance.onend = () => resolve();
@@ -363,9 +382,12 @@ class TTSEngine {
                 utterance.pitch = 1.0;
 
                 // Try to find voice - use same cached voice for consistency
-                if (!this.cachedVoice) {
+                // Re-check if needed (same fix as main speak() method)
+                if (!this.cachedVoice || speechSynthesis.getVoices().length > 0) {
                     const voices = speechSynthesis.getVoices();
-                    this.cachedVoice = window.voiceSelector ? window.voiceSelector.selectBestVoiceMatch(voices, lang) : null;
+                    if (voices.length > 0) {
+                        this.cachedVoice = window.voiceSelector ? window.voiceSelector.selectBestVoiceMatch(voices, lang) : voices[0];
+                    }
                 }
                 const voice = this.cachedVoice;
                 if (voice) {

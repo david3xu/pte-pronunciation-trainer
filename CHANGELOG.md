@@ -7,6 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.5.3] - 2025-10-09
+
+### Fixed
+- **Vocabulary Mode TTS Not Working**: Fixed critical voice loading issue
+  - `cachedVoice` was set to null once and never re-checked if voices loaded later
+  - Now re-attempts voice selection if cache is empty and voices are available
+  - Added fallback logic to try one more time before failing
+  - Fixes "No voice available for text-to-speech" error in vocabulary mode
+  - Practice modes (RS/ASQ/WFD) were unaffected as they worked with different timing
+  
+- **Voice Selection Robustness**: Improved voice loading reliability
+  - Fixed both main `speak()` and `speakWithHTML5Audio()` methods
+  - Added console logging when voice is selected for debugging
+  - Ensures voices are properly cached after successful selection
+
+### Technical
+- App Version: 2.5.2 → 2.5.3
+- Service Worker: v64 → v65
+- Files Modified: TTSEngine.js
+
+---
+
 ## [2.5.2] - 2025-10-09
 
 ### Fixed

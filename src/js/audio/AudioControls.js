@@ -150,7 +150,7 @@ class AudioControls {
 
     /**
      * Set repeat mode for audio playback
-     * @param {string} mode - Repeat mode ('once', 'loop', etc)
+     * @param {string} mode - Repeat mode ('once', 'twice', 'intensive', 'loop')
      * @private
      */
     _setRepeatMode(mode) {
@@ -160,10 +160,27 @@ class AudioControls {
         // Default to 'once' if invalid mode provided
         this.repeatMode = validModes.includes(mode) ? mode : 'once';
 
+        // Convert repeat mode to target number of repetitions
+        const repeatModeToCount = {
+            'once': 1,
+            'twice': 2,
+            'intensive': 3,
+            'loop': 1  // Loop plays each word once, then advances
+        };
+
+        const targetRepeats = repeatModeToCount[this.repeatMode] || 1;
+
+        // Set target repeats in TTSEngine
+        if (window.ttsEngine && typeof window.ttsEngine.setRepeatMode === 'function') {
+            window.ttsEngine.setRepeatMode(targetRepeats);
+            console.log(`[AudioControls] Set TTSEngine targetRepeats to ${targetRepeats} for mode '${this.repeatMode}'`);
+        }
+
         // Emit standardized event (from Config.js)
         const repeatModeChangedEvent = this.config.get('events.audio.repeat.changed') || 'audio:repeat:changed';
         window.eventBus.emit(repeatModeChangedEvent, {
             mode: this.repeatMode,
+            targetRepeats: targetRepeats,
             timestamp: new Date().toISOString()
         });
     }

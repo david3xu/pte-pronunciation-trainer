@@ -28,6 +28,13 @@ class DatasetManager {
             prefix: 'pte_dataset_',
             version: '1.0'
         };
+
+        // For error diagnostics: track the last path used in fetch operations
+        this._lastUsedPath = {
+            configPath: null,
+            resolvedPath: null,
+            fullPath: null
+        };
     }
 
     /**
@@ -71,16 +78,37 @@ class DatasetManager {
         console.log(`📥 DatasetManager: Loading ${datasetType} from ${registryEntry.file}...`);
 
         try {
-            // Determine correct path - ensure it starts with a slash if needed
-            const basePath = '/data/processed/';
+            // Get the processed path from config (single source of truth)
+            const processedPath = this.config.get('data.paths.processed') || 'data/processed/';
+
+            // Ensure the path has a leading slash for absolute paths
+            const basePath = processedPath.startsWith('/') ? processedPath : `/${processedPath}`;
             const filePath = `${basePath}${registryEntry.file}`;
 
-            console.log(`📥 DatasetManager: Fetching dataset from ${filePath}`);
+            console.log(`📥 DatasetManager: Fetching dataset from ${filePath} (using config path)`);
+
+            // For error reporting: record the config path that was used
+            this._lastUsedPath = {
+                configPath: 'data.paths.processed',
+                resolvedPath: basePath,
+                fullPath: filePath
+            };
 
             // Load from network with absolute path
             const response = await fetch(filePath);
             if (!response.ok) {
-                throw new Error(`HTTP ${response.status}: ${response.statusText} for ${filePath}`);
+                // Enhanced error with config path details for troubleshooting
+                const error = new Error(`HTTP ${response.status}: ${response.statusText} for ${filePath}`);
+                // Add additional properties to the error for diagnosis
+                error.details = {
+                    configPathUsed: this._lastUsedPath.configPath,
+                    resolvedBasePath: this._lastUsedPath.resolvedPath,
+                    attemptedFile: registryEntry.file,
+                    datasetType: datasetType,
+                    fullPath: filePath
+                };
+                console.error(`❌ DatasetManager: Failed to load ${datasetType}:`, error.details);
+                throw error;
             }
 
             const data = await response.json();

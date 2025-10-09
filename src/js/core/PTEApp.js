@@ -13,6 +13,9 @@ class PTEVocabularyTrainer {
     }
     this.initialized = true;
 
+    // Set global initializing flag to prevent event loops during startup
+    window.initializing = true;
+
     // Show loading indicator for mobile users
     if (this.isMobileDevice()) {
       this.showMobileLoadingIndicator();
@@ -46,6 +49,13 @@ class PTEVocabularyTrainer {
 
     // 0.1. Set up service worker message handling for background audio
     this.setupServiceWorkerMessageHandling();
+
+    // 0.2. Initialize DataSchema with Config (single source of truth for data structures)
+    this.initializeDataSchema();
+    this.validateModule('DataSchema', window.dataSchema, {
+      requiredProperties: ['schemas', 'config', 'validate'],
+      critical: true
+    });
 
     // 1. Initialize SettingsModule (event-driven settings architecture)
     // Note: StateManager was removed - settings now load directly from storage
@@ -115,6 +125,10 @@ class PTEVocabularyTrainer {
 
     const initTime = Date.now() - initStart;
     console.log(`✅ PTEApp: All modules initialized successfully in ${initTime}ms`);
+
+    // Clear initializing flag now that all modules are ready
+    window.initializing = false;
+    console.log(`✅ PTEApp: Initialization complete, application ready for events`);
   }
 
   async initializeSettingsModule() {
@@ -221,6 +235,26 @@ class PTEVocabularyTrainer {
       }
     } else {
       console.log('ℹ️ DatasetManager not available (Phase 2 not loaded)');
+    }
+  }
+
+  /**
+   * Initialize DataSchema with Config injection
+   * Ensures DataSchema has access to configuration values for validation rules
+   */
+  initializeDataSchema() {
+    if (typeof window.initializeDataSchema === 'function') {
+      console.log('🔄 PTEApp: Initializing DataSchema with Config injection...');
+      try {
+        // Pass appConfig to ensure single source of truth
+        window.initializeDataSchema(window.appConfig);
+        console.log('✅ PTEApp: DataSchema initialized');
+      } catch (error) {
+        console.error('❌ PTEApp: Failed to initialize DataSchema:', error);
+        // Not throwing here as we have fallback validation in other components
+      }
+    } else {
+      console.warn('⚠️ PTEApp: DataSchema initialization function not available');
     }
   }
 

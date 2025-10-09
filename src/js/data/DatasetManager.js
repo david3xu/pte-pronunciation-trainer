@@ -217,12 +217,37 @@ class DatasetManager {
     }
 
     /**
-     * Validate dataset structure
+     * Validate dataset structure using DataSchema as single source of truth
+     * Falls back to basic validation if DataSchema is not available
+     *
      * @param {Object} data - Dataset object
      * @param {string} type - Dataset type
      * @returns {Object} Validated dataset
+     * @throws {Error} If dataset fails validation
      */
     validateDataset(data, type) {
+        // Use DataSchema for validation if available (single source of truth)
+        if (window.dataSchema) {
+            console.log(`📊 DatasetManager: Using DataSchema to validate ${type} dataset`);
+
+            // Map type to schema type
+            const schemaType = type === 'vocabulary' ? 'dataset' : type;
+
+            // Validate using schema
+            const validationResult = window.dataSchema.validate(schemaType, data);
+
+            if (!validationResult.valid) {
+                const errorMessage = `Invalid ${type} dataset structure: ${validationResult.errors.join(', ')}`;
+                console.error(`❌ DatasetManager: ${errorMessage}`);
+                throw new Error(errorMessage);
+            }
+
+            return data;
+        }
+
+        // Fallback validation if DataSchema not available
+        console.warn(`⚠️ DatasetManager: DataSchema not available, using fallback validation for ${type}`);
+
         if (type === 'vocabulary') {
             if (!data.metadata || !Array.isArray(data.vocabulary)) {
                 throw new Error('Invalid vocabulary dataset structure');
@@ -241,7 +266,7 @@ class DatasetManager {
                 console.warn(`⚠️ Meta count (${data.meta.count}) doesn't match items (${data.items.length})`);
             }
         }
-        
+
         return data;
     }
 

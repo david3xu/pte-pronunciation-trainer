@@ -160,6 +160,8 @@ class TTSEngine {
             throw new Error('Cannot pronounce undefined or invalid word');
         }
         
+        console.log(`[TTSEngine] 🎯 pronounceWord called for: "${word.english}" (repeat ${repeatIndex})`);
+        
         if (this.isSpeaking) {
             console.warn('[TTSEngine] ⚠️ Already speaking, skipping...');
             return;
@@ -170,6 +172,7 @@ class TTSEngine {
 
             // Clean text for TTS
             const cleanText = this.cleanTextForTTS(word.english);
+            console.log(`[TTSEngine] 📝 Cleaned text: "${cleanText}"`);
 
             // Get pronunciation rate based on repeat count for progressive learning
             let pronunciationRate;
@@ -180,6 +183,8 @@ class TTSEngine {
             } else {
                 pronunciationRate = this.config.get('tts.speeds.fast'); // Faster for third+ pronunciations
             }
+            
+            console.log(`[TTSEngine] ⚡ Speech rate: ${pronunciationRate}`);
 
             // For vocabulary-clean mode, use UK pronunciation for first repeat, US for second
             if (word.source === 'vocabulary-clean' && word.ukPronunciation && word.usPronunciation) {
@@ -201,8 +206,11 @@ class TTSEngine {
                 rate: pronunciationRate
             });
 
+            console.log(`[TTSEngine] 🔊 Calling speak() for: "${cleanText}"`);
             // Speak the term first
             await this.speak(cleanText, this.config.get('tts.language.default'), pronunciationRate);
+            console.log(`[TTSEngine] ✅ speak() completed for: "${cleanText}"`);
+
 
             // For vocabulary with examples, optionally speak the example sentence based on repeat mode
             // Only speak example on the LAST repetition to avoid: term+example+term+example
@@ -265,6 +273,8 @@ class TTSEngine {
     speak(text, lang = null, customRate = null) {
         // Use configured language if not specified
         const language = lang || this.config.get('tts.language.default');
+        
+        console.log(`[TTSEngine] 🎤 speak() called with: "${text}", lang: ${language}, rate: ${customRate}`);
 
         // Initialize AudioContext on first speech attempt (user interaction)
         if (!this.audioContextInitialized) {
@@ -278,10 +288,12 @@ class TTSEngine {
                 /iPad|iPhone|iPod/.test(navigator.userAgent);
 
             if (isIOS && this.shouldUseHTML5Audio()) {
+                console.log('[TTSEngine] Using HTML5 Audio fallback for iOS');
                 return this.speakWithHTML5Audio(text, language, customRate).then(resolve).catch(resolve);
             }
 
             if (!('speechSynthesis' in window)) {
+                console.error('[TTSEngine] ❌ speechSynthesis not available in browser');
                 this.showTTSFallback(text);
                 resolve();
                 return;
@@ -293,24 +305,34 @@ class TTSEngine {
             utterance.rate = customRate !== null ? customRate : this.speechRate;
             utterance.volume = 1.0;
             utterance.pitch = 1.0;
+            
+            console.log(`[TTSEngine] 🎵 Utterance created - rate: ${utterance.rate}, lang: ${utterance.lang}`);
+            
+            console.log(`[TTSEngine] 🎵 Utterance created - rate: ${utterance.rate}, lang: ${utterance.lang}`);
 
             // Try to find the best voice match for user's practice - ONLY MALE VOICES
             // Re-check voices if cache is empty (voices may not have been ready initially)
             if (!this.cachedVoice || speechSynthesis.getVoices().length > 0) {
                 const voices = speechSynthesis.getVoices();
+                console.log(`[TTSEngine] 🔍 Checking voices - available: ${voices.length}, cached: ${this.cachedVoice ? 'yes' : 'no'}`);
                 if (voices.length > 0) {
                     this.cachedVoice = window.voiceSelector ? window.voiceSelector.selectBestVoiceMatch(voices, lang) : null;
                     if (this.cachedVoice) {
-                        console.log(`[TTSEngine] Selected voice: ${this.cachedVoice.name}`);
+                        console.log(`[TTSEngine] ✅ Selected voice: ${this.cachedVoice.name}`);
+                    } else {
+                        console.warn('[TTSEngine] ⚠️ Voice selector returned null');
                     }
                 }
             }
             const voice = this.cachedVoice;
             if (voice) {
                 utterance.voice = voice;
+                console.log(`[TTSEngine] 🎙️ Using voice: ${voice.name}`);
             } else {
+                console.warn('[TTSEngine] ⚠️ No cached voice, trying fallback...');
                 // Try to get voices one more time before failing
                 const voices = speechSynthesis.getVoices();
+                console.log(`[TTSEngine] Fallback check - voices available: ${voices.length}`);
                 if (voices.length > 0) {
                     const fallbackVoice = window.voiceSelector ? window.voiceSelector.selectBestVoiceMatch(voices, lang) : voices[0];
                     if (fallbackVoice) {
@@ -331,7 +353,10 @@ class TTSEngine {
                 }
             }
 
-            utterance.onend = () => resolve();
+            utterance.onend = () => {
+                console.log(`[TTSEngine] ✅ Speech ended for: "${text}"`);
+                resolve();
+            };
             utterance.onerror = (error) => {
                 // 'interrupted' is normal when user clicks rapidly or auto-advances
                 if (error.error === 'interrupted') {
@@ -350,6 +375,7 @@ class TTSEngine {
                 }
             };
 
+            console.log(`[TTSEngine] 🚀 Calling speechSynthesis.speak() for: "${text}"`);
             speechSynthesis.speak(utterance);
         });
     }

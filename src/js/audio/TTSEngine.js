@@ -78,21 +78,19 @@ class TTSEngine {
             element.classList.add('speaking');
         }
 
-        // Create a mode-aware event payload
-        const payload = { ...eventData };
-
-        // For practice modes, we need to include the current item
+        // Only emit tts:speaking:started event for vocabulary mode
+        // Practice modes (RS/ASQ/WFD) handle their own display logic
         const currentMode = this.getPracticeMode();
         const isVocabularyMode = currentMode === 'vocabulary';
 
-        if (!isVocabularyMode && window.currentItem) {
-            // In practice modes, include the current item in the event data
-            payload.item = window.currentItem;
+        if (isVocabularyMode) {
+            // Vocabulary mode: emit event with word data for display
+            const payload = { ...eventData };
+            const ttsSpeakingStartedEvent = window.appConfig.get('events.tts.speaking.started');
+            window.eventBus.emit(ttsSpeakingStartedEvent, payload);
         }
-
-        // Emit standardized event from Config.js
-        const ttsSpeakingStartedEvent = window.appConfig.get('events.tts.speaking.started');
-        window.eventBus.emit(ttsSpeakingStartedEvent, payload);
+        // Practice modes don't need this event - they use displayContent() directly
+        
         return element;
     }
 

@@ -211,8 +211,14 @@ class SettingsModule {
                         
                         // If this mode uses practice dataset (rs/asq/wfd), ensure dataset is set
                         if (mapping.usesPracticeDataset && mapping.defaultPracticeDataset) {
-                            console.log(`[SettingsModule] Setting practice dataset: ${mapping.defaultPracticeDataset}`);
-                            this.updateSetting('practiceDataset', mapping.defaultPracticeDataset);
+                            // Only update if dataset actually changed (prevent duplicate events)
+                            const currentDataset = this.exportSettings().practiceDataset;
+                            if (currentDataset !== mapping.defaultPracticeDataset) {
+                                console.log(`[SettingsModule] Setting practice dataset: ${mapping.defaultPracticeDataset}`);
+                                this.updateSetting('practiceDataset', mapping.defaultPracticeDataset);
+                            } else {
+                                console.log(`[SettingsModule] Practice dataset already set to ${mapping.defaultPracticeDataset}, skipping update`);
+                            }
                         }
                     } else {
                         console.warn(`[SettingsModule] ⚠️ No mapping found for practice mode: ${value}`);

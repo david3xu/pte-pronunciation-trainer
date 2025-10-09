@@ -3,8 +3,8 @@
 // Handles offline caching and background sync
 
 // Service Worker for PTE Vocabulary Trainer
-// Version 63 - Fixed displayCurrent signature + getPracticeMode helper
-const CACHE_VERSION = 'v63';
+// Version 64 - Fixed practice mode display errors, removed non-existent files, preserved offline cache
+const CACHE_VERSION = 'v64';
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode
@@ -63,10 +63,8 @@ const urlsToCache = isDevelopment ? [
   '/src/css/animations.css',
   '/src/css/components.css',
   '/src/css/style.css',
-  '/src/js/shared/AppNamespace.js',
   '/src/js/shared/Config.js',
   '/src/js/shared/DataSchema.js',
-  '/src/js/shared/LegacyCompatibility.js',
   '/src/js/utils/EventBus.js',
   '/src/js/utils/Storage.js',
   '/src/js/utils/CacheMigration.js',
@@ -136,25 +134,24 @@ self.addEventListener('activate', (event) => {
 
   event.waitUntil(
     (async () => {
-      // AGGRESSIVE: Delete ALL caches to force fresh reload
+      // Delete ONLY old cache versions, preserve current version for offline functionality
       const cacheNames = await caches.keys();
       console.log('[SW] Found caches:', cacheNames);
+      
       await Promise.all(
         cacheNames.map((cacheName) => {
-          console.log('[SW] ❌ Deleting cache:', cacheName);
-          return caches.delete(cacheName);
+          // Keep current version, delete old versions only
+          if (cacheName !== CACHE_NAME) {
+            console.log('[SW] ❌ Deleting old cache:', cacheName);
+            return caches.delete(cacheName);
+          } else {
+            console.log('[SW] ✅ Keeping current cache:', cacheName);
+            return Promise.resolve();
+          }
         })
       );
-      console.log('[SW] ✅ All old caches cleared');
+      
       console.log('[SW] Service Worker activated - App can now run in background');
-      
-      // Force all clients to reload to get new JS files
-      const clients = await self.clients.matchAll({ type: 'window' });
-      clients.forEach(client => {
-        console.log('[SW] 🔄 Reloading client:', client.url);
-        client.navigate(client.url);
-      });
-      
       return self.clients.claim();
     })()
   );

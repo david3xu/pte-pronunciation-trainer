@@ -3,8 +3,8 @@
 // Handles offline caching and background sync
 
 // Service Worker for PTE Vocabulary Trainer
-// Version 65 - Fixed vocabulary TTS voice loading issue
-const CACHE_VERSION = 'v65';
+// Version 66 - Force redeploy with debug logging
+const CACHE_VERSION = 'v66';
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

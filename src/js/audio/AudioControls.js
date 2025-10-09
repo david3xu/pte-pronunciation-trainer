@@ -352,7 +352,7 @@ class AudioControls {
         }
 
         try {
-            console.log(`[AudioControls] Playing word: ${currentWord?.english || '(unknown)'} at index ${this.currentIndex}`);
+            console.log(`[AudioControls] 🎵 Playing word: "${currentWord?.english || '(unknown)'}" at index ${this.currentIndex} (${this.currentIndex + 1} of ${window.pteVocabularyManager.getTotalWords()})`);
 
             // Update display immediately before playing audio
             if (window.uiController && typeof window.uiController.displayWord === 'function') {
@@ -374,6 +374,8 @@ class AudioControls {
 
             // Start TTS - display will be updated when speech actually begins
             await this.handleWordRepetition(currentWord);
+
+            console.log(`[AudioControls] ✅ Finished speaking "${currentWord.english}", isPlaying=${this.isPlaying}`);
 
             if (this.isPlaying) {
                 await this.scheduleNextWord();
@@ -404,6 +406,8 @@ class AudioControls {
     async scheduleNextWord() {
         if (!this.isPlaying) return;
 
+        console.log(`[AudioControls] 📅 Scheduling next word after ${this.delay}ms delay...`);
+
         // Wait for the configured delay before next word
         this.autoPlayTimeout = setTimeout(async () => {
             if (this.isPlaying) {
@@ -417,9 +421,11 @@ class AudioControls {
         const totalWords = window.pteVocabularyManager.getTotalWords();
 
         this.currentIndex++;
+        console.log(`[AudioControls] ⏭️ Advanced to next word: index ${this.currentIndex} (${this.currentIndex + 1} of ${totalWords})`);
 
         if (this.currentIndex >= totalWords) {
             // Reached end of current dataset/book
+            console.log(`[AudioControls] 🏁 Reached end of dataset`);
             this.handleDatasetCompletion();
             return;
         }

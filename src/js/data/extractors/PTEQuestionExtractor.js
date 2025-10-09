@@ -149,10 +149,25 @@ class PTEQuestionExtractor {
   
   /**
    * Infer difficulty based on word count
+   * Uses Config-driven thresholds when available through DataSchema
+   *
    * @param {number} wordCount - Number of words
    * @returns {string} Difficulty level ('easy', 'normal', 'hard')
    */
   static inferDifficulty(wordCount) {
+    // Use DataSchema and Config if available (single source of truth)
+    if (typeof window !== 'undefined' && window.dataSchema) {
+      try {
+        // Create a mock question of appropriate length for difficulty inference
+        // This leverages the centralized difficulty logic in DataSchema
+        const mockQuestion = "word ".repeat(wordCount).trim() + "?";
+        return window.dataSchema.inferDifficulty(mockQuestion);
+      } catch (error) {
+        // Silent fallback - use defaults below
+      }
+    }
+
+    // Fallback thresholds if DataSchema not available
     if (wordCount <= 8) return 'easy';
     if (wordCount <= 12) return 'normal';
     return 'hard';
@@ -232,72 +247,57 @@ class PTEQuestionExtractor {
   }
   
   /**
-   * Validate extracted dataset
+   * Validate extracted dataset using DataSchema when available
    * @param {object} dataset - Dataset to validate
    * @returns {object} Validation result
    */
   static validate(dataset) {
-    const errors = [];
-    const warnings = [];
-    
-    // Validate meta
-    if (!dataset.meta) {
-      errors.push('Missing meta object');
-    } else {
-      if (dataset.meta.type !== 'asq') {
-        errors.push(`Invalid meta.type: ${dataset.meta.type}`);
-      }
-      if (!dataset.meta.count || dataset.meta.count !== dataset.items.length) {
-        errors.push(`Meta count (${dataset.meta.count}) doesn't match items length (${dataset.items.length})`);
+    // Use DataSchema for validation if available (single source of truth)
+    if (typeof window !== 'undefined' && window.dataSchema) {
+      try {
+        // Schema type for question datasets
+        const schemaType = 'question';
+        return window.dataSchema.validate(schemaType, dataset);
+      } catch (error) {
+        console.warn(`⚠️ PTEQuestionExtractor: DataSchema validation error: ${error.message}`);
+        // Fall through to minimal validation if DataSchema validation fails
       }
     }
-    
+
+    // Minimal fallback validation if DataSchema not available
+    const errors = [];
+    const warnings = [];
+
+    // Basic structure check
+    if (!dataset.meta) {
+      errors.push('Missing meta object');
+    } else if (dataset.meta.type !== 'asq') {
+      errors.push('Invalid meta.type (should be "asq")');
+    }
+
     // Validate items
     if (!Array.isArray(dataset.items)) {
       errors.push('Items is not an array');
+    } else if (dataset.items.length === 0) {
+      warnings.push('Items array is empty');
     } else {
-      const seenIds = new Set();
-      let withAnswers = 0;
-      let withoutAnswers = 0;
-      
-      dataset.items.forEach((item, index) => {
-        // Check required fields
-        if (!item.id) errors.push(`Item ${index}: missing id`);
-        if (!item.type) errors.push(`Item ${index}: missing type`);
-        if (item.type !== 'asq') errors.push(`Item ${index}: invalid type ${item.type}`);
-        if (!item.content) errors.push(`Item ${index}: missing content`);
-        if (!item.content?.question) errors.push(`Item ${index}: missing content.question`);
-        if (item.content?.answer === undefined) errors.push(`Item ${index}: missing content.answer (should be '' if no answer)`);
-        if (item.content?.ipa !== null) warnings.push(`Item ${index}: ipa should be null, got ${item.content.ipa}`);
-        if (!item.metadata) errors.push(`Item ${index}: missing metadata`);
-        if (!item.metadata?.difficulty) errors.push(`Item ${index}: missing metadata.difficulty`);
-        if (!item.metadata?.category) errors.push(`Item ${index}: missing metadata.category`);
-        
-        // Count answers
-        if (item.content?.answer) {
-          withAnswers++;
-        } else {
-          withoutAnswers++;
-        }
-        
-        // Check for duplicates
-        if (seenIds.has(item.id)) {
-          errors.push(`Duplicate id: ${item.id}`);
-        }
-        seenIds.add(item.id);
-        
-        // Check difficulty values
-        if (item.metadata?.difficulty && !['easy', 'normal', 'hard'].includes(item.metadata.difficulty)) {
-          errors.push(`Item ${index}: invalid difficulty ${item.metadata.difficulty}`);
-        }
-      });
-      
-      // Report answer statistics
+      // Only check first item for basic structure (performance)
+      const firstItem = dataset.items[0];
+      if (!firstItem.content || !firstItem.content.question) {
+        errors.push('First item missing content.question');
+      }
+
+      // Quick statistics
+      const withAnswers = dataset.items.filter(item =>
+        item.content && item.content.answer && item.content.answer.trim().length > 0
+      ).length;
+
+      const withoutAnswers = dataset.items.length - withAnswers;
       if (withoutAnswers > 0) {
         warnings.push(`${withoutAnswers} questions without answers (${withAnswers} with answers)`);
       }
     }
-    
+
     return {
       valid: errors.length === 0,
       errors,

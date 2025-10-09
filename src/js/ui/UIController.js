@@ -6,34 +6,136 @@ class UIController {
         this.config = window.appConfig || new AppConfig();
         this.pronunciationPreference = this.config.get('modes.pronunciation.british'); // Default to British
         this.currentWordPronunciations = null; // Store current word's pronunciations
+
+        // Local state to reduce global window dependencies
+        this.state = {
+            currentDatasetIndex: 0,
+            currentPracticeMode: this.config.get('modes.practice.vocabulary'),
+            currentDataset: null,
+            currentItem: null
+        };
+
         this.setupEventListeners();
     }
 
     /**
-     * Safely get current practice mode from SettingsModule or Config.js fallback
+     * Get module instance with error handling to reduce direct window references
+     * @param {string} moduleName - Name of the module to retrieve (e.g., 'settingsModule')
+     * @param {boolean} [required=false] - Whether the module is required (throws if missing)
+     * @param {*} [defaultValue=null] - Default value to return if module not found
+     * @returns {Object|null} The module instance or defaultValue if not found
+     * @throws {Error} If module is required and not found
+     */
+    getModule(moduleName, required = false, defaultValue = null) {
+        const module = window[moduleName];
+
+        if (!module && required) {
+            const error = new Error(`Required module '${moduleName}' not found`);
+            this.handleError(`Missing required module: ${moduleName}`, error);
+            throw error;
+        }
+
+        return module || defaultValue;
+    }
+
+    /**
+     * Centralized error handling to standardize error reporting across the application
+     * Provides consistent logging, user feedback, and error event emission
+     *
+     * @param {string} message - User-friendly error message to display
+     * @param {Error|string} [error] - Original error object or detailed error message for logging
+     * @param {boolean} [showToUser=true] - Whether to show the error to the user via progressTracker
+     * @param {string} [level='error'] - Log level: 'error', 'warn', or 'info'
+     * @fires events.ui.error - Emitted with error details for centralized error handling
+     * @requires ProgressTracker - For showing errors to the user
+     * @requires EventBus - For error event emission
+     * @example
+     * // Basic error
+     * this.handleError('Failed to load vocabulary');
+     *
+     * // With original error object
+     * try {
+     *   // Some operation
+     * } catch (err) {
+     *   this.handleError('Operation failed', err);
+     * }
+     *
+     * // As a warning without showing to user
+     * this.handleError('Non-critical issue', 'Missing optional data', false, 'warn');
+     */
+    handleError(message, error, showToUser = true, level = 'error') {
+        // Generate a detailed message for logging
+        const details = error instanceof Error ? error.message : error;
+        const logMessage = details ? `${message}: ${details}` : message;
+
+        // Log to console with appropriate level
+        if (level === 'warn') {
+            console.warn(`[UIController] ⚠️ ${logMessage}`);
+        } else if (level === 'info') {
+            console.info(`[UIController] ℹ️ ${logMessage}`);
+        } else {
+            console.error(`[UIController] ❌ ${logMessage}`);
+        }
+
+        // Show to user if requested
+        if (showToUser) {
+            const progressTracker = this.getModule('progressTracker');
+            if (progressTracker) {
+                progressTracker.showError(message);
+            }
+        }
+
+        // Emit error event through standardized event system
+        const errorEvent = this.config.get('events.ui.error');
+        if (errorEvent && window.eventBus) {
+            window.eventBus.emit(errorEvent, {
+                source: 'UIController',
+                message,
+                details: details || null,
+                timestamp: new Date().toISOString()
+            });
+        }
+    }
+
+    /**
+     * Safely get current practice mode from state, SettingsModule, or Config.js fallback
      * @returns {string} Current practice mode
      */
     getPracticeMode() {
-        if (window.settingsModule && typeof window.settingsModule.get === 'function') {
-            return window.settingsModule.get('practiceMode') || this.config.get('data.defaults.practiceMode');
+        // First check local state
+        if (this.state && this.state.currentPracticeMode) {
+            return this.state.currentPracticeMode;
         }
+
+        // Next try SettingsModule
+        const settingsModule = this.getModule('settingsModule');
+        if (settingsModule && typeof settingsModule.get === 'function') {
+            return settingsModule.get('practiceMode') || this.config.get('data.defaults.practiceMode');
+        }
+
+        // Fallback to config default
         return this.config.get('data.defaults.practiceMode');
     }
 
     setupEventListeners() {
+        // Use standardized event names from Config.js for all event handlers
+
         // Listen for vocabulary loaded event
-        window.eventBus.on('vocabulary:loaded', (data) => {
+        const vocabularyLoadedEvent = this.config.get('events.vocabulary.loaded');
+        window.eventBus.on(vocabularyLoadedEvent, (data) => {
             this.updateUI();
         });
 
-        // Listen for vocabulary events
-        window.eventBus.on('vocabulary:difficultyFiltered', (data) => {
+        // Listen for vocabulary difficulty filtered event
+        const difficultyFilteredEvent = this.config.get('events.vocabulary.difficulty.filtered');
+        window.eventBus.on(difficultyFilteredEvent, (data) => {
             this.updateBookDisplay();
             this.updateButtons();
         });
 
         // Listen for learning mode changes
-        window.eventBus.on('vocabulary:learningModeChanged', (data) => {
+        const learningModeChangedEvent = this.config.get('events.mode.learning.changed');
+        window.eventBus.on(learningModeChangedEvent, (data) => {
             // Reset audio position to first word
             window.audioControls.setCurrentIndex(0);
             this.updateBookDisplay();
@@ -41,10 +143,22 @@ class UIController {
             this.displayFirstWord(); // Show first word of new mode
         });
         
-        // Phase 2: Listen for practice mode changes
-        window.eventBus.on('practice:modeChanged', (data) => {
-            console.log('[UIController] 🔄 practice:modeChanged event received:', data);
-            this.handlePracticeModeChange(data.mode);
+        // Listen for practice mode changes (using standardized event from Config.js)
+        const practiceModeChangedEvent = window.appConfig.get('events.mode.practice.changed');
+        window.eventBus.on(practiceModeChangedEvent, (data) => {
+            // Get default vocabulary mode from config instead of hardcoding it
+            const defaultMode = this.config.get('modes.practice.vocabulary');
+            const mode = data?.mode || defaultMode; // Default to vocabulary mode if not specified
+            console.log(`[UIController] 🔄 Practice mode changed event received - Switching to: ${mode}`);
+
+            // Prevent excessive event handling during initialization
+            if (window.initializing) {
+                console.log(`[UIController] Skipping mode change during initialization`);
+                return;
+            }
+
+            // Handle the practice mode change
+            this.handlePracticeModeChange(mode);
         });
 
         // Listen for unified content display events (standardized from Config.js)
@@ -696,106 +810,394 @@ class UIController {
     }
 
     /**
-     * Phase 2 SIMPLIFIED: Handle practice mode changes
-     * All modes use the same .word-display container!
-     * @param {string} mode - From config.modes.practice
+     * Handle practice mode changes by loading appropriate datasets and updating UI
+     * All modes use the same .word-display container for unified UI experience
+     *
+     * @param {string} mode - Practice mode identifier from config.modes.practice
+     *                        (e.g., 'vocabulary', 'rs', 'asq', 'wfd')
+     * @fires events.mode.practice.changing - Before processing mode change
+     * @fires events.mode.practice.changed - After processing mode change
+     * @fires events.dataset.practice.changed - When dataset for mode is loaded
+     * @requires SettingsModule - For mode and dataset settings
+     * @requires DatasetManager - For loading practice datasets
+     * @requires ProgressTracker - For status updates
+     * @see loadPracticeDataset - Called for non-vocabulary modes to load dataset
+     * @see displayContent - Used to display loaded content
+     * @see Config.js - Source of mode mappings and enumerations
+     * @throws {Error} May throw errors during dataset loading
+     * @returns {Promise<boolean>} True if mode change was successful, false otherwise
      */
     async handlePracticeModeChange(mode) {
-        console.log(`[UIController] 🎯 handlePracticeModeChange called with mode: ${mode}`);
-        
+        // Safety check for valid mode
+        if (!mode) {
+            this.handleError(
+                'Invalid practice mode',
+                'No mode provided to handlePracticeModeChange',
+                true
+            );
+            return false;
+        }
+
+        // Show status during mode change
+        window.progressTracker?.updateStatus(`Changing to ${mode.toUpperCase()} mode...`);
+
         // Store current mode globally
         window.currentPracticeMode = mode;
-        console.log(`[UIController] Stored window.currentPracticeMode: ${window.currentPracticeMode}`);
-        
+
         // Use Config.js mapping to determine mode type
         const modeMapping = this.config.get('data.practiceModeMapping');
-        const mapping = modeMapping && modeMapping[mode];
-        const isVocabularyMode = mapping && mapping.type === this.config.get('modes.practice.vocabulary');
-        
+
+        // Check that we have valid mappings - the first few loads during initialization might return empty objects
+        if (!modeMapping || Object.keys(modeMapping).length === 0) {
+            this.handleError(
+                'Mode configuration not loaded',
+                'Mode mappings not yet available, this is expected during initialization',
+                false, // Don't show to user during initialization
+                'warn'  // Log level
+            );
+            return false;
+        }
+
+        const mapping = modeMapping[mode];
+
+        // Safety check for mapping
+        if (!mapping) {
+            this.handleError(
+                `Invalid practice mode: ${mode}`,
+                `No mapping found for mode ${mode} in config.data.practiceModeMapping`,
+                true
+            );
+            return false;
+        }
+
+        const isVocabularyMode = mapping.type === this.config.get('modes.practice.vocabulary');
+
+        // We don't need to emit the changing event here since we're responding to changes, not initiating them
+
+        let success = false;
+
+        // IMPORTANT: Ensure dataset settings are properly synchronized
+        // Check if SettingsModule has a value for practiceDataset when in practice mode
+        if (!isVocabularyMode && window.settingsModule) {
+            const practiceDataset = window.settingsModule.get('practiceDataset');
+            if (!practiceDataset) {
+                console.log('[UIController] 📝 No practiceDataset in settings, setting default for this mode...');
+
+                // Get default dataset from mode mapping
+                if (mapping.defaultPracticeDataset) {
+                    try {
+                        await window.settingsModule.updateSetting('practiceDataset', mapping.defaultPracticeDataset);
+                        console.log(`[UIController] ✅ Set practiceDataset to ${mapping.defaultPracticeDataset}`);
+                    } catch (error) {
+                        console.error(`[UIController] ❌ Failed to set practiceDataset: ${error.message}`);
+                    }
+                }
+            } else {
+                console.log(`[UIController] 📝 Using existing practiceDataset setting: ${practiceDataset}`);
+            }
+        }
+
         if (isVocabularyMode) {
             console.log('[UIController] Switching to vocabulary mode...');
             // Show vocabulary mode - restore normal display
             this.updateBookDisplay();
             this.displayFirstWord();
+            success = true;
         } else {
             console.log(`[UIController] Switching to practice mode: ${mode}...`);
+
             // Practice modes (RS/ASQ/WFD) - load dataset and display first item
-            await this.loadPracticeDataset(mode);
-            
-            // Update book display for practice mode
-            const bookDisplay = document.getElementById('bookDisplay');
-            if (bookDisplay) {
-                const modeLabels = {
-                    'rs': '🎤 Repeat Sentence',
-                    'asq': '❓ Answer Short Question',
-                    'wfd': '✍️ Write From Dictation'
-                };
-                bookDisplay.textContent = modeLabels[mode] || mode.toUpperCase();
-                console.log(`[UIController] Updated book display to: ${modeLabels[mode]}`);
+            const datasetLoaded = await this.loadPracticeDataset(mode);
+
+            if (datasetLoaded) {
+                // Update book display for practice mode
+                const bookDisplay = document.getElementById('bookDisplay');
+                if (bookDisplay) {
+                    // Get mode labels from config using practiceModes array
+                    const modeLabels = {};
+                    const practiceModes = this.config.get('data.practiceModes') || [];
+                    practiceModes.forEach(modeObj => {
+                        modeLabels[modeObj.id] = modeObj.label;
+                    });
+
+                    // Use label from config or fallback to uppercase mode
+                    bookDisplay.textContent = modeLabels[mode] || mode.toUpperCase();
+                    console.log(`[UIController] Updated book display to: ${modeLabels[mode]}`);
+                }
+
+                success = true;
+            } else {
+                console.error(`[UIController] ❌ Failed to load dataset for mode: ${mode}`);
+                window.progressTracker?.showError(`Failed to load dataset for ${mode} mode`);
+                success = false;
             }
         }
+
+        // Do NOT emit mode changed event here, as it creates an infinite recursion loop
+        // The event is already emitted from the SettingsPanel or other callers
+        // This handler simply responds to those events
+
+        return success;
     }
 
     /**
-     * SIMPLIFIED: Load dataset for practice mode and display first item
-     * Uses unified displayContent() method - same UI for all modes!
+     * Load dataset for practice mode and display first item
+     * Uses unified displayContent() method for consistent UI across all modes
+     *
+     * @param {string} mode - Practice mode from Config.js modes.practice values
+     *                         (e.g., 'rs', 'asq', 'wfd')
+     * @throws {Error} If dataset loading fails or has invalid structure
+     * @fires events.dataset.practice.changed - When a dataset is successfully loaded
+     * @listens events.mode.practice.changed - Triggered when practice mode changes
+     * @see displayContent - Method used to display loaded content
+     * @see DatasetManager.loadDataset - Used to load the dataset
+     * @returns {Promise<boolean>} True if dataset loaded successfully, false otherwise
      */
     async loadPracticeDataset(mode) {
+        console.log(`[UIController] 📥 loadPracticeDataset() called with mode: ${mode}`);
+
+        // Enhanced error handling for DatasetManager
         if (!window.datasetManager) {
             console.error('❌ DatasetManager not available');
-            return;
+
+            // Try to wait for DatasetManager to initialize
+            if (typeof window.DatasetManager === 'function') {
+                console.log('🔄 Creating new DatasetManager instance...');
+                try {
+                    const datasetManager = new window.DatasetManager();
+                    const config = window.appConfig || { get: () => undefined };
+                    await datasetManager.initialize(config);
+
+                    // Make globally available
+                    window.datasetManager = datasetManager;
+                    console.log('✅ Successfully created DatasetManager instance');
+                } catch (error) {
+                    console.error('❌ Failed to create DatasetManager instance:', error);
+                    window.progressTracker?.showError('Practice dataset feature not available');
+                    return false;
+                }
+            } else {
+                window.progressTracker?.showError('Practice dataset feature not available');
+                return false;
+            }
         }
 
-        // Map practice mode to dataset type
-        const datasetMap = {
-            'rs': 'repeat-sentence',
-            'asq': 'answer-short-question',
-            'wfd': 'write-from-dictation'
-        };
+        // Check if we have a valid mode
+        if (!mode) {
+            console.error('❌ No practice mode provided to loadPracticeDataset()');
+            return false;
+        }
+
+        // Use the datasetFiles registry from Config.js instead of hardcoded mappings
+        const datasetFiles = this.config.get('data.datasetFiles');
+
+        // Map practice mode enum values to dataset types
+        const datasetMap = {};
+
+        // RS mode mapping
+        const rsMode = this.config.get('modes.practice.repeatSentence');
+        datasetMap[rsMode] = 'pte-repeat-sentence';
+
+        // ASQ mode mapping
+        const asqMode = this.config.get('modes.practice.answerShortQuestion');
+        datasetMap[asqMode] = 'pte-answer-short-question';
+
+        // WFD mode mapping
+        const wfdMode = this.config.get('modes.practice.writeFromDictation');
+        datasetMap[wfdMode] = 'pte-write-from-dictation';
 
         const datasetType = datasetMap[mode];
         if (!datasetType) {
-            console.warn(`Unknown practice mode: ${mode}`);
-            return;
+            this.handleError(
+                `Unknown practice mode: ${mode}`,
+                `No dataset type mapping found for mode: ${mode}`,
+                true
+            );
+            return false;
         }
 
         try {
-            console.log(`📥 Loading dataset for ${mode}...`);
-            const dataset = await window.datasetManager.loadDataset(datasetType);
-            
-            if (dataset && dataset.items && dataset.items.length > 0) {
-                console.log(`✅ Loaded ${dataset.items.length} items for ${mode}`);
-                
-                // Store dataset and index globally (simple approach)
-                window.currentDataset = dataset;
-                window.currentDatasetIndex = 0;
-                
-                // IMPORTANT: Update currentItem so PLAY button works
-                window.currentItem = dataset.items[0];
-                
-                // Display first item using unified method
-                this.displayContent(dataset.items[0], mode);
-                
-                console.log(`📄 Displaying first item:`, dataset.items[0]);
-            } else {
-                console.error(`❌ No items found in dataset for ${mode}`);
+            // Show loading status using getModule for progressTracker
+            const progressTracker = this.getModule('progressTracker');
+            progressTracker?.updateStatus(`Loading ${mode.toUpperCase()} dataset...`);
+
+            // Get dataset ID through multiple fallback mechanisms
+            let datasetId = null;
+
+            // Try to get dataset from settings if available
+            const settingsModule = this.getModule('settingsModule');
+            if (settingsModule && typeof settingsModule.get === 'function') {
+                datasetId = settingsModule.get('practiceDataset');
             }
+
+            // If no dataset specified in settings, use the default from config mapping
+            if (!datasetId) {
+                const modeMapping = this.config.get('data.practiceModeMapping');
+                const mapping = modeMapping && modeMapping[mode];
+                if (mapping && mapping.defaultPracticeDataset) {
+                    datasetId = mapping.defaultPracticeDataset;
+
+                    // Update the settings for consistency using the same settingsModule reference
+                    if (settingsModule && typeof settingsModule.updateSetting === 'function') {
+                        try {
+                            await settingsModule.updateSetting('practiceDataset', datasetId);
+                        } catch (err) {
+                            // Non-critical error
+                            this.handleError(
+                                'Failed to update settings',
+                                err,
+                                false, // Don't show to user
+                                'warn'  // Log level
+                            );
+                        }
+                    }
+                }
+            }
+
+            // If still no dataset ID, try direct dataset ID from config
+            if (!datasetId) {
+                // Try matching direct dataset ID (rs -> pte-repeat-sentence)
+                const datasetFiles = this.config.get('data.datasetFiles');
+                if (datasetFiles && datasetFiles[mode]) {
+                    datasetId = mode;
+                }
+            }
+
+            // If still no dataset ID, use the mapped datasetType
+            if (!datasetId) {
+                datasetId = datasetType;
+            }
+
+            // Safety check - if still no datasetId, show error
+            if (!datasetId) {
+                this.handleError(
+                    `Could not determine dataset ID for mode: ${mode}`,
+                    `No datasetId available after checking settings, config mapping, and fallbacks`
+                );
+                return false;
+            }
+
+            // Load dataset with retry mechanism
+            let dataset = null;
+            let retryCount = 0;
+            const maxRetries = 2;
+
+            while (retryCount <= maxRetries) {
+                try {
+                    dataset = await window.datasetManager.loadDataset(datasetId);
+                    break; // Break out of retry loop if successful
+                } catch (loadError) {
+                    retryCount++;
+                    if (retryCount <= maxRetries) {
+                        // Wait before retrying
+                        await new Promise(resolve => setTimeout(resolve, 500));
+                    } else {
+                        throw loadError; // Re-throw if all retries failed
+                    }
+                }
+            }
+
+            if (!dataset) {
+                throw new Error(`Dataset ${datasetId} could not be loaded after ${maxRetries} retries`);
+            }
+
+            if (!dataset.items || !Array.isArray(dataset.items) || dataset.items.length === 0) {
+                throw new Error(`Dataset ${datasetId} is empty or has invalid structure`);
+            }
+
+            // Store in local state to reduce global state dependencies
+            this.state.currentDataset = dataset;
+            this.state.currentDatasetIndex = 0;
+            this.state.currentItem = dataset.items[0];
+
+            // Also update global references for backward compatibility
+            window.currentDataset = dataset;
+            window.currentDatasetIndex = 0;
+            window.currentItem = dataset.items[0];
+
+            // Display first item using unified method
+            this.displayContent(dataset.items[0], mode);
+
+            // Update progress status
+            window.progressTracker?.updateStatus(`${mode.toUpperCase()} Mode - ${dataset.items.length} items loaded`);
+
+            // Emit dataset change event (standardized from Config.js)
+            const datasetChangedEvent = this.config.get('events.dataset.practice.changed');
+            if (datasetChangedEvent) {
+                window.eventBus.emit(datasetChangedEvent, {
+                    mode: mode,
+                    datasetId: datasetId,
+                    itemCount: dataset.items.length
+                });
+            }
+
+            return true;
         } catch (error) {
-            console.error(`❌ Failed to load dataset for ${mode}:`, error);
+            // Enhanced error details for debugging dataset loading issues
+            let errorDetails = error.message || 'Unknown error';
+            let userMessage = `Failed to load dataset for ${mode}`;
+
+            // Add context to help diagnose specific issues
+            if (errorDetails.includes('fetch') || errorDetails.includes('HTTP')) {
+                errorDetails = `Network error: ${errorDetails}. Ensure dataset file exists at /data/processed/${datasetFiles[datasetType]?.file || datasetType}.json`;
+                userMessage = `Dataset file not found for ${mode} mode. Please check the data directory.`;
+            } else if (errorDetails.includes('Dataset type not found')) {
+                errorDetails = `Dataset type error: ${errorDetails}. Available types in registry: ${Object.keys(datasetFiles || {}).join(', ')}`;
+                userMessage = `Invalid dataset type for ${mode} mode. Configuration issue detected.`;
+            } else if (errorDetails.includes('invalid structure') || errorDetails.includes('empty')) {
+                errorDetails = `Dataset validation error: ${errorDetails}. Dataset ID: ${datasetId}, Type: ${datasetType}`;
+                userMessage = `The ${mode} dataset has an invalid structure or is empty.`;
+            }
+
+            this.handleError(
+                userMessage,
+                errorDetails,
+                true, // Show to user
+                'error' // Log level
+            );
+
+            // Clear any partial state to prevent UI issues
+            this.state.currentDataset = null;
+            this.state.currentDatasetIndex = 0;
+            this.state.currentItem = null;
+
+            // Also clear global references for backward compatibility
+            window.currentDataset = null;
+            window.currentDatasetIndex = 0;
+            window.currentItem = null;
+
+            return false;
         }
     }
 
     /**
      * UNIFIED DISPLAY METHOD - Works for ALL modes!
      * Uses the same .word-display container for vocabulary/RS/ASQ/WFD
+     *
      * @param {Object} item - Item to display (word, sentence, question)
+     * @param {Object} [item.content] - Content object containing display data
+     * @param {string} [item.content.word] - Word to display (vocabulary mode)
+     * @param {string} [item.content.phoneticSpelling] - Phonetic spelling (vocabulary mode)
+     * @param {string} [item.content.ipa] - IPA notation (vocabulary mode)
+     * @param {string} [item.content.pronunciation] - Pronunciation guide (vocabulary mode)
+     * @param {string} [item.content.example] - Example sentence (vocabulary mode)
+     * @param {string} [item.content.sentence] - Sentence to display (rs/wfd modes)
+     * @param {string} [item.content.translation] - Translation (rs/wfd modes)
+     * @param {string} [item.content.question] - Question to display (asq mode)
+     * @param {string} [item.content.answer] - Answer to display (asq mode)
+     * @param {Object} [item.metadata] - Metadata for the item
      * @param {string} mode - Current mode from config.modes.practice
+     * @returns {void}
      */
     displayContent(item, mode) {
-        if (!item) return;
-
-        console.log(`[UIController] 📺 displayContent() called - Mode: ${mode}`);
-        console.log(`[UIController] Item content:`, item.content);
+        // Enhanced null checking with placeholder creation
+        if (!item) {
+            // Create a placeholder item structure to prevent null reference errors
+            item = {
+                content: {},
+                metadata: {}
+            };
+        }
 
         // Get DOM elements
         const phoneticSpelling = document.getElementById('phoneticSpelling');
@@ -827,13 +1229,6 @@ class UIController {
         switch(mode) {
             case this.config.get('modes.practice.vocabulary'):
                 // Vocabulary mode - show word with phonetics
-                console.log(`[Vocabulary Mode] Displaying:`, {
-                    word: item.content?.word,
-                    phoneticSpelling: item.content?.phoneticSpelling,
-                    ipa: item.content?.ipa,
-                    pronunciation: item.content?.pronunciation,
-                    example: item.content?.example
-                });
                 if (item.content) {
                     if (englishWord) englishWord.textContent = item.content.word || '';
                     if (phoneticSpelling) {
@@ -855,12 +1250,8 @@ class UIController {
                 }
                 break;
 
-            case 'rs':
+            case this.config.get('modes.practice.repeatSentence'):
                 // Repeat Sentence - show sentence only
-                console.log(`[RS Mode] Displaying:`, {
-                    sentence: item.content?.sentence,
-                    translation: item.content?.translation
-                });
                 if (item.content && englishWord) {
                     englishWord.textContent = item.content.sentence || '';
                 }
@@ -868,8 +1259,8 @@ class UIController {
                 if (phoneticSpelling) phoneticSpelling.style.display = 'none';
                 if (ipaNotation) ipaNotation.style.display = 'none';
                 if (pronunciationText) pronunciationText.style.display = 'none';
-                // Show translation if available
-                if (exampleSentence && item.content.translation) {
+                // Show translation if available - with safe access using optional chaining
+                if (exampleSentence && item.content?.translation) {
                     exampleSentence.textContent = item.content.translation;
                     exampleSentence.style.display = '';
                 } else if (exampleSentence) {
@@ -877,21 +1268,17 @@ class UIController {
                 }
                 break;
 
-            case 'asq':
+            case this.config.get('modes.practice.answerShortQuestion'):
                 // Answer Short Question - show question and answer
-                console.log(`[ASQ Mode] Displaying:`, {
-                    question: item.content?.question,
-                    answer: item.content?.answer
-                });
                 if (item.content && englishWord) {
-                    englishWord.textContent = item.content.question || '';
+                    englishWord.textContent = item.content?.question || '';
                 }
                 // Hide phonetic fields
                 if (phoneticSpelling) phoneticSpelling.style.display = 'none';
                 if (ipaNotation) ipaNotation.style.display = 'none';
                 if (pronunciationText) pronunciationText.style.display = 'none';
-                // Show answer in example sentence area
-                if (exampleSentence && item.content.answer) {
+                // Show answer in example sentence area with safe access using optional chaining
+                if (exampleSentence && item.content?.answer) {
                     exampleSentence.innerHTML = `<div class="example-english"><strong>Answer:</strong> ${item.content.answer}</div>`;
                     exampleSentence.style.display = '';
                 } else if (exampleSentence) {
@@ -899,21 +1286,17 @@ class UIController {
                 }
                 break;
 
-            case 'wfd':
+            case this.config.get('modes.practice.writeFromDictation'):
                 // Write From Dictation - show the sentence to practice
-                console.log(`[WFD Mode] Displaying:`, {
-                    sentence: item.content?.sentence,
-                    translation: item.content?.translation
-                });
                 if (item.content && englishWord) {
-                    englishWord.textContent = item.content.sentence || '';
+                    englishWord.textContent = item.content?.sentence || '';
                 }
                 // Hide phonetic fields
                 if (phoneticSpelling) phoneticSpelling.style.display = 'none';
                 if (ipaNotation) ipaNotation.style.display = 'none';
                 if (pronunciationText) pronunciationText.style.display = 'none';
-                // Show translation if available
-                if (exampleSentence && item.content.translation) {
+                // Show translation if available - with safe access using optional chaining
+                if (exampleSentence && item.content?.translation) {
                     exampleSentence.textContent = item.content.translation;
                     exampleSentence.style.display = '';
                 } else if (exampleSentence) {

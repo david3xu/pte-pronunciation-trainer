@@ -301,9 +301,15 @@ class AppConfig {
 
                 // Dataset file registry - single source of truth for all dataset files
                 datasetFiles: {
-                    'repeat-sentence': { file: 'pte-repeat-sentence-dataset.json', type: 'sentence' },
-                    'answer-short-question': { file: 'pte-answer-short-question-dataset.json', type: 'question' },
-                    'write-from-dictation': { file: 'pte-write-from-dictation-dataset.json', type: 'sentence' },
+                    // Practice datasets for sentence modes (RS/ASQ/WFD)
+                    'pte-repeat-sentence': { file: 'pte-repeat-sentence-dataset.json', type: 'sentence' },
+                    'repeat-sentence': { file: 'pte-repeat-sentence-dataset.json', type: 'sentence' }, // Legacy ID mapping
+                    'pte-answer-short-question': { file: 'pte-answer-short-question-dataset.json', type: 'question' },
+                    'answer-short-question': { file: 'pte-answer-short-question-dataset.json', type: 'question' }, // Legacy ID mapping
+                    'pte-write-from-dictation': { file: 'pte-write-from-dictation-dataset.json', type: 'sentence' },
+                    'write-from-dictation': { file: 'pte-write-from-dictation-dataset.json', type: 'sentence' }, // Legacy ID mapping
+
+                    // Vocabulary datasets
                     'pte-fib-listening': { file: 'pte-fib-listening-dataset.json', type: 'vocabulary' },
                     'pte-beginner': { file: 'pte-beginner-vocabulary.json', type: 'vocabulary' },
                     'pte-intermediate': { file: 'pte-intermediate-vocabulary.json', type: 'vocabulary' },

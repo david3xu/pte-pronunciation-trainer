@@ -591,9 +591,123 @@ Format: `Type: Brief description`
 
 ---
 
-## When to Update Guidelines
+## Documentation Maintenance
 
-This document should be updated when:
+### When to Update Documentation
+
+Documentation must be updated whenever:
+
+1. **Code Changes**
+   - New modules/classes → Update `docs/API-REFERENCE.md` and `docs/ARCHITECTURE.md`
+   - New features → Update `README.md` and `CHANGELOG.md`
+   - Bug fixes → Update `CHANGELOG.md`
+   - Configuration changes → Update `docs/GUIDELINES.md` if patterns change
+
+2. **Architectural Changes**
+   - New design patterns → Update `docs/GUIDELINES.md`
+   - Module dependencies change → Update `docs/ARCHITECTURE.md`
+   - Event system changes → Update `CLAUDE.md` event reference
+
+3. **Version Releases**
+   - Every release → Update `CHANGELOG.md` with version entry
+   - Major versions → Update `README.md` version badge
+   - Breaking changes → Update `docs/GUIDELINES.md` and migration guide
+
+### Documentation Update Checklist
+
+When making code changes, update these files:
+
+**Always Update:**
+- [ ] `CHANGELOG.md` - Add entry for every commit/PR
+- [ ] Version number in `package.json`
+- [ ] Version references in affected documentation
+
+**Update If Applicable:**
+- [ ] `README.md` - If user-facing features/setup changed
+- [ ] `docs/GUIDELINES.md` - If design principles/patterns changed
+- [ ] `docs/ARCHITECTURE.md` - If system design/modules changed
+- [ ] `docs/API-REFERENCE.md` - If public APIs changed
+- [ ] `CLAUDE.md` - If AI guidance/critical files changed
+- [ ] `docs/DEPLOYMENT.md` - If build/deploy process changed
+
+### Documentation File Organization
+
+**Permanent Documentation** (keep updated):
+```
+Root:
+  README.md              - Main entry point, features, quick start
+  CHANGELOG.md           - Version history (update every release)
+  CLAUDE.md              - AI assistant guidance
+
+docs/:
+  GUIDELINES.md          - Design principles and development rules
+  ENFORCING-GUIDELINES.md - Enforcement methods (pre-commit, ESLint)
+  ARCHITECTURE.md        - Technical architecture and system design
+  API-REFERENCE.md       - Complete API documentation
+  DEPLOYMENT.md          - Deployment and production setup
+  TROUBLESHOOTING.md     - Common issues and solutions
+  README.md              - Documentation index
+```
+
+**Temporary Documentation** (delete after completion):
+```
+docs/investigations/:
+  BUGFIX-*.md            - Bug investigation logs (delete when fixed)
+  FEATURE-*.md           - Feature exploration (delete when merged)
+  AUDIT-*.md             - Audit reports (archive after release)
+```
+
+**Cleanup Rules:**
+- Delete investigation logs after bug is fixed and changes are committed
+- Archive audit reports to `docs/investigations/` after release
+- Move completed feature docs to permanent locations or delete
+- Keep `docs/investigations/` clean - max 3-5 temporary files
+
+### Version Number Updates
+
+Update version numbers in these locations:
+
+1. **package.json** - `"version": "2.5.4"`
+2. **README.md** - Version badge in header
+3. **docs/GUIDELINES.md** - Footer version
+4. **docs/README.md** - Footer version
+5. **CLAUDE.md** - "Current Version" in header
+6. **CHANGELOG.md** - New version entry header
+
+**Version Numbering**: Follow [Semantic Versioning](https://semver.org/)
+- **Major** (3.0.0): Breaking changes
+- **Minor** (2.6.0): New features, backward compatible
+- **Patch** (2.5.5): Bug fixes, backward compatible
+
+### Documentation Update Process
+
+**For Every Commit:**
+1. Make code changes
+2. Update `CHANGELOG.md` with brief description
+3. Update relevant technical docs (API, Architecture)
+4. Run pre-commit hook (checks for violations)
+5. Commit with descriptive message
+
+**For Version Releases:**
+1. Finalize all code changes
+2. Update version in all 6 locations (see above)
+3. Write comprehensive `CHANGELOG.md` entry
+4. Update `README.md` if user-facing changes
+5. Review and update all affected documentation
+6. Create git tag: `git tag v2.5.4`
+7. Clean up `docs/investigations/` (archive or delete)
+
+**For Major Changes:**
+1. Create investigation document in `docs/investigations/`
+2. Document current state and proposed changes
+3. Update `GUIDELINES.md` with new patterns
+4. Update `ARCHITECTURE.md` with design changes
+5. Update `CLAUDE.md` with AI guidance changes
+6. After completion, archive investigation doc or delete
+
+### When to Update Guidelines
+
+This document (GUIDELINES.md) should be updated when:
 
 1. **New architectural patterns** are introduced
 2. **Design principles change** (rare, requires team discussion)
@@ -602,9 +716,11 @@ This document should be updated when:
 
 **Process**:
 1. Propose change in team discussion
-2. Update GUIDELINES.md
-3. Update CLAUDE.md if AI guidance changes
-4. Notify team of guideline changes
+2. Update `docs/GUIDELINES.md`
+3. Update `CLAUDE.md` if AI guidance changes
+4. Update `docs/README.md` to reflect new documentation
+5. Notify team of guideline changes
+6. Update version and "Last Updated" date
 
 ---
 

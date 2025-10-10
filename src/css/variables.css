@@ -79,10 +79,22 @@
     --space-sm: 0.5rem;     /* 8px */
     --space-md: 0.75rem;    /* 12px */
     --space-lg: 1rem;       /* 16px */
+    --space-xlg: 1.25rem;   /* 20px - Common padding value */
     --space-xl: 1.5rem;     /* 24px */
     --space-2xl: 2rem;      /* 32px */
     --space-3xl: 2.5rem;    /* 40px */
     --space-4xl: 3rem;      /* 48px */
+    
+    /* Typography Scale */
+    --font-size-xs: 0.75rem;      /* 12px */
+    --font-size-sm: 0.8125rem;    /* 13px */
+    --font-size-base: 0.9375rem;  /* 15px */
+    --font-size-md: 1rem;         /* 16px */
+    --font-size-lg: 1.125rem;     /* 18px */
+    --font-size-xl: 1.25rem;      /* 20px */
+    --font-size-2xl: 1.375rem;    /* 22px */
+    --font-size-3xl: 1.5rem;      /* 24px */
+    --font-size-4xl: 2.25rem;     /* 36px */
     
     /* Responsive Heights (viewport-based) */
     --height-word-display-xs: 320px;   /* Small mobile ≤374px */

@@ -112,7 +112,7 @@ body {
     font-weight: 600;
     color: var(--color-purple);
     background: var(--bg-card);
-    padding: 4px 10px;
+    padding: var(--space-xs) var(--space-sm) var(--space-md);
     border-radius: var(--radius-md);
     border: 2px solid var(--color-purple);
     letter-spacing: 0.5px;
@@ -190,7 +190,7 @@ body {
     background: var(--bg-card);
     color: var(--text-secondary);
     padding: 2px var(--space-sm);
-    border-radius: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-sm) var(--space-md);
     margin-left: var(--space-sm);
     font-weight: 500;
 }

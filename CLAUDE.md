@@ -295,6 +295,8 @@ window.eventBus.emit('system:error', {
 
 ## Documentation
 
+- **`docs/GUIDELINES.md`** - Design principles and development rules (START HERE)
+- **`docs/ENFORCING-GUIDELINES.md`** - 5 methods to enforce guidelines with AI
 - **`docs/ARCHITECTURE.md`** - Detailed system architecture (2,230 lines!)
 - **`docs/API-REFERENCE.md`** - Complete API documentation
 - **`docs/DEPLOYMENT.md`** - Deployment guide

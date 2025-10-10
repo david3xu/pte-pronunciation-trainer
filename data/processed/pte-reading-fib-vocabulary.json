@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-10-08T10:01:44.949Z",
+    "generated": "2025-10-10T02:57:25.175Z",
     "totalTerms": 313,
     "source": "pte-reading-fib-vocabulary-with-ipa",
     "description": "PTE Reading Fill-in-the-Blanks vocabulary with IPA",
@@ -142,7 +142,7 @@
           "phonetic": "AH-tər"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -193,7 +193,7 @@
           "phonetic": "ə-TACH too"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -244,7 +244,7 @@
           "phonetic": "SIM-bə-lyz"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -431,7 +431,7 @@
           "phonetic": "hy-DRAW-lik"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "adj."
@@ -465,7 +465,7 @@
           "phonetic": "in chaynz"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "prep."
@@ -652,7 +652,7 @@
           "phonetic": "TRAYS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -669,7 +669,7 @@
           "phonetic": "BY-ə-sfeer"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -720,7 +720,7 @@
           "phonetic": "SPAWN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -737,7 +737,7 @@
           "phonetic": "in-VIZ-ə-bəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "adj."
@@ -771,7 +771,7 @@
           "phonetic": "STIM-yə-layt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -805,7 +805,7 @@
           "phonetic": "MIN-ə-skyool"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "adj."
@@ -856,7 +856,7 @@
           "phonetic": "por-TRAY-əl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -907,7 +907,7 @@
           "phonetic": "BOWND-ləs"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "adj."
@@ -975,7 +975,7 @@
           "phonetic": "WAW-tər-fowl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -1009,7 +1009,7 @@
           "phonetic": "eth-NIS-ə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -1026,7 +1026,7 @@
           "phonetic": "IN-tər-play"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -1060,7 +1060,7 @@
           "phonetic": "RELM"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -1128,7 +1128,7 @@
           "phonetic": "SUB-stəns"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -1213,7 +1213,7 @@
           "phonetic": "ri-PEL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -1383,7 +1383,7 @@
           "phonetic": "speek for"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -1400,7 +1400,7 @@
           "phonetic": "proov owt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -1468,7 +1468,7 @@
           "phonetic": "PAH-lə-nayt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -1485,7 +1485,7 @@
           "phonetic": "goh ahn"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -1519,7 +1519,7 @@
           "phonetic": "stand for"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -1706,7 +1706,7 @@
           "phonetic": "PROH-tə-typ"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -1910,7 +1910,7 @@
           "phonetic": "i-KAH-lə-jəst"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -2080,7 +2080,7 @@
           "phonetic": "VAH-lən-ter-ee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "adj."
@@ -2114,7 +2114,7 @@
           "phonetic": "GRAN-dee-ohs"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "adj."
@@ -2284,7 +2284,7 @@
           "phonetic": "OR-bət"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -2301,7 +2301,7 @@
           "phonetic": "PA-rə-SIT-ik"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "adj."
@@ -2318,7 +2318,7 @@
           "phonetic": "wurk with"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -2743,7 +2743,7 @@
           "phonetic": "SOH-see-AH-lə-jee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -2777,7 +2777,7 @@
           "phonetic": "PRIN-sə-pəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -2862,7 +2862,7 @@
           "phonetic": "VOYS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -2879,7 +2879,7 @@
           "phonetic": "prə-NOWNS"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -3015,7 +3015,7 @@
           "phonetic": "MUTH-ə-reez"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -3049,7 +3049,7 @@
           "phonetic": "poot ə-SYD"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -3066,7 +3066,7 @@
           "phonetic": "TAR-gət at"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -3083,7 +3083,7 @@
           "phonetic": "ik-STEN-siv"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3117,7 +3117,7 @@
           "phonetic": "ak-SES-ər-ee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -3168,7 +3168,7 @@
           "phonetic": "SAH-ləd"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3219,7 +3219,7 @@
           "phonetic": "MOWNT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -3236,7 +3236,7 @@
           "phonetic": "un-SKROOD"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3253,7 +3253,7 @@
           "phonetic": "BURST"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -3406,7 +3406,7 @@
           "phonetic": "RAY-dee-AY-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -3474,7 +3474,7 @@
           "phonetic": "AS-trə-nawt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -3491,7 +3491,7 @@
           "phonetic": "MAH-lə-kyool"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -3576,7 +3576,7 @@
           "phonetic": "SOWND"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3661,7 +3661,7 @@
           "phonetic": "ik-SEP-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -3814,7 +3814,7 @@
           "phonetic": "PRYD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -3865,7 +3865,7 @@
           "phonetic": "SNAYL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -3899,7 +3899,7 @@
           "phonetic": "i-LEK-trohd"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -4035,7 +4035,7 @@
           "phonetic": "SKOOP"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -4256,7 +4256,7 @@
           "phonetic": "PRAH-mə-nənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "adj."
@@ -4290,7 +4290,7 @@
           "phonetic": "tuk IN-too"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -4324,7 +4324,7 @@
           "phonetic": "DEV-ə-stayt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -4358,7 +4358,7 @@
           "phonetic": "ig-ZEM-plə-fy"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -4749,7 +4749,7 @@
           "phonetic": "di-PAH-zə-tər"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -4766,7 +4766,7 @@
           "phonetic": "NAH-vəl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -4800,7 +4800,7 @@
           "phonetic": "IN-tər-VEEN"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -4851,7 +4851,7 @@
           "phonetic": "pas down"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -4987,7 +4987,7 @@
           "phonetic": "HARSH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "adj."
@@ -5072,7 +5072,7 @@
           "phonetic": "yoo-NYT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "v."
@@ -5123,7 +5123,7 @@
           "phonetic": "kə-RIK-yə-lə"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -5157,7 +5157,7 @@
           "phonetic": "FRAYM-wurk"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."
@@ -5208,7 +5208,7 @@
           "phonetic": "KLAS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-reading-fib",
       "source": "pte-reading-fib-vocabulary-with-ipa",
       "wordType": "n."

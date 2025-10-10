@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-10-08T10:01:44.931Z",
+    "generated": "2025-10-10T02:57:25.162Z",
     "totalTerms": 1318,
     "source": "pte-wfd-vocabulary-with-ipa",
     "description": "PTE Write From Dictation vocabulary with IPA",
@@ -91,7 +91,7 @@
           "phonetic": "AK-tiv-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adv."
@@ -125,7 +125,7 @@
           "phonetic": "ik-SPAN-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -193,7 +193,7 @@
           "phonetic": "OH-shən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -210,7 +210,7 @@
           "phonetic": "IN-floo-əns"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -227,7 +227,7 @@
           "phonetic": "in-TY-er-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adv."
@@ -295,7 +295,7 @@
           "phonetic": "STRIP"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -312,7 +312,7 @@
           "phonetic": "SEK-rə-ter-ee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -329,7 +329,7 @@
           "phonetic": "KAWZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -363,7 +363,7 @@
           "phonetic": "uh-HED"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adv."
@@ -431,7 +431,7 @@
           "phonetic": "SY-ən-tist"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -516,7 +516,7 @@
           "phonetic": "NORTH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -584,7 +584,7 @@
           "phonetic": "uh-SOH-shee-ayt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -635,7 +635,7 @@
           "phonetic": "HAB-ət"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -703,7 +703,7 @@
           "phonetic": "uh-RIJ-ə-nayt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -822,7 +822,7 @@
           "phonetic": "VY-təl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -1060,7 +1060,7 @@
           "phonetic": "uh-KUM-pə-nee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -1179,7 +1179,7 @@
           "phonetic": "əd-VAN-tij"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -1230,7 +1230,7 @@
           "phonetic": "TOHST"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -1281,7 +1281,7 @@
           "phonetic": "kuh-MYOO-nə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -1332,7 +1332,7 @@
           "phonetic": "y-DEN-tə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -1366,7 +1366,7 @@
           "phonetic": "LAHJ-ik"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -1383,7 +1383,7 @@
           "phonetic": "IM-plə-ment"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -1434,7 +1434,7 @@
           "phonetic": "KAHN-shəs"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -1468,7 +1468,7 @@
           "phonetic": "KAR-ək-tər"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -1570,7 +1570,7 @@
           "phonetic": "i-SEN-shəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -1604,7 +1604,7 @@
           "phonetic": "EE-kə-NAHM-ik"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -1621,7 +1621,7 @@
           "phonetic": "pry-MER-ə-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adv."
@@ -1672,7 +1672,7 @@
           "phonetic": "SER-ə-moh-nee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -1706,7 +1706,7 @@
           "phonetic": "HOHM-BY-ər"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -1740,7 +1740,7 @@
           "phonetic": "WENZ-day"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -1808,7 +1808,7 @@
           "phonetic": "BREEF"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -1876,7 +1876,7 @@
           "phonetic": "DOWT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -1944,7 +1944,7 @@
           "phonetic": "uh-NAL-ə-səs"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -2063,7 +2063,7 @@
           "phonetic": "SHORT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -2165,7 +2165,7 @@
           "phonetic": "KACH-mənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -2420,7 +2420,7 @@
           "phonetic": "AK-ə-DEM-ik"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -2437,7 +2437,7 @@
           "phonetic": "NURS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -2471,7 +2471,7 @@
           "phonetic": "JEN-ər-ə-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adv."
@@ -2556,7 +2556,7 @@
           "phonetic": "i-STAB-lish"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -2590,7 +2590,7 @@
           "phonetic": "SKOHP"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -2709,7 +2709,7 @@
           "phonetic": "WAYL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -2760,7 +2760,7 @@
           "phonetic": "THEFT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -2947,7 +2947,7 @@
           "phonetic": "LEES"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -3032,7 +3032,7 @@
           "phonetic": "uh-NAH-nə-məs"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3134,7 +3134,7 @@
           "phonetic": "JUJ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -3151,7 +3151,7 @@
           "phonetic": "fə-NAN-shəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3202,7 +3202,7 @@
           "phonetic": "CHAL-əndj"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -3236,7 +3236,7 @@
           "phonetic": "i-RAD-ə-kayt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -3338,7 +3338,7 @@
           "phonetic": "YOO-nyən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -3355,7 +3355,7 @@
           "phonetic": "KAIR-fə-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adv."
@@ -3491,7 +3491,7 @@
           "phonetic": "TUF"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3610,7 +3610,7 @@
           "phonetic": "RAD-ə-kə-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adv."
@@ -3644,7 +3644,7 @@
           "phonetic": "KRYM"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -3848,7 +3848,7 @@
           "phonetic": "PAK-ə-jing"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -3882,7 +3882,7 @@
           "phonetic": "pə-LIT-ə-kəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3899,7 +3899,7 @@
           "phonetic": "ED-jə-kay-tər"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -3916,7 +3916,7 @@
           "phonetic": "DIF-ə-kəlt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3933,7 +3933,7 @@
           "phonetic": "di-ZY-ər-ə-bəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -4018,7 +4018,7 @@
           "phonetic": "WURLD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -4154,7 +4154,7 @@
           "phonetic": "RAYZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -4205,7 +4205,7 @@
           "phonetic": "ə-WAIR-nəs"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -4239,7 +4239,7 @@
           "phonetic": "ə-LIV-ee-ayt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -4273,7 +4273,7 @@
           "phonetic": "REF-ər-əns"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -4290,7 +4290,7 @@
           "phonetic": "SHELF"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -4426,7 +4426,7 @@
           "phonetic": "i-MYOO-nə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -4494,7 +4494,7 @@
           "phonetic": "TREET"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -4630,7 +4630,7 @@
           "phonetic": "TRUST"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -4766,7 +4766,7 @@
           "phonetic": "THEEF"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -4834,7 +4834,7 @@
           "phonetic": "TREND"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -4868,7 +4868,7 @@
           "phonetic": "AY-jənt"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -4885,7 +4885,7 @@
           "phonetic": "AH-tə-MAT-ik"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -5038,7 +5038,7 @@
           "phonetic": "FAWLS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -5106,7 +5106,7 @@
           "phonetic": "ə-DAPT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -5259,7 +5259,7 @@
           "phonetic": "əb-JEK-tiv"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -5276,7 +5276,7 @@
           "phonetic": "PUR-sə-NEL"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -5310,7 +5310,7 @@
           "phonetic": "kən-TAY-nər"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -5344,7 +5344,7 @@
           "phonetic": "STAYJ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -5514,7 +5514,7 @@
           "phonetic": "KRIT-ə-syz"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -5565,7 +5565,7 @@
           "phonetic": "PRY-ər"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -5633,7 +5633,7 @@
           "phonetic": "VEJ-tə-bəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -5701,7 +5701,7 @@
           "phonetic": "THEEM"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -5718,7 +5718,7 @@
           "phonetic": "TRANS-port"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -5735,7 +5735,7 @@
           "phonetic": "LEEST"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -5837,7 +5837,7 @@
           "phonetic": "REE-prə-DOOS"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -6024,7 +6024,7 @@
           "phonetic": "i-KWAH-lə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -6058,7 +6058,7 @@
           "phonetic": "TRAYN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -6126,7 +6126,7 @@
           "phonetic": "HOHL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -6143,7 +6143,7 @@
           "phonetic": "AH-thə-ryz"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -6194,7 +6194,7 @@
           "phonetic": "my-GRAY-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -6330,7 +6330,7 @@
           "phonetic": "di-SKUV-ər-ee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -6602,7 +6602,7 @@
           "phonetic": "IN-kə-REKT"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -6636,7 +6636,7 @@
           "phonetic": "sep-TEM-bər"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -6670,7 +6670,7 @@
           "phonetic": "GEST"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -6687,7 +6687,7 @@
           "phonetic": "SUM-tymz"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adv."
@@ -6721,7 +6721,7 @@
           "phonetic": "IN-tər-vyoo"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -6806,7 +6806,7 @@
           "phonetic": "i-NISH-ə-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adv."
@@ -6908,7 +6908,7 @@
           "phonetic": "VAL-əd"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -7027,7 +7027,7 @@
           "phonetic": "FLASK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -7180,7 +7180,7 @@
           "phonetic": "i-KWIP"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -7299,7 +7299,7 @@
           "phonetic": "PAR-tee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -7316,7 +7316,7 @@
           "phonetic": "kry-TEER-ee-ən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -7503,7 +7503,7 @@
           "phonetic": "ə-THOR-ə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -7639,7 +7639,7 @@
           "phonetic": "LAY-bər"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -7792,7 +7792,7 @@
           "phonetic": "STAYT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -7843,7 +7843,7 @@
           "phonetic": "ik-SPEN-siv"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -7894,7 +7894,7 @@
           "phonetic": "AP-lə-kənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -7979,7 +7979,7 @@
           "phonetic": "EL-ə-vay-tər"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -8183,7 +8183,7 @@
           "phonetic": "BAH-roh-ing"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -8217,7 +8217,7 @@
           "phonetic": "RUG-bee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -8251,7 +8251,7 @@
           "phonetic": "ə-KUR"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -8285,7 +8285,7 @@
           "phonetic": "REP-ri-ZENT"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -8387,7 +8387,7 @@
           "phonetic": "AH-dət"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -8506,7 +8506,7 @@
           "phonetic": "ly-BRER-ee-ən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -8574,7 +8574,7 @@
           "phonetic": "SAL-əd"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -8642,7 +8642,7 @@
           "phonetic": "KAF-ə-TEER-ee-ə"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -8659,7 +8659,7 @@
           "phonetic": "PREZ-ə-dənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -8744,7 +8744,7 @@
           "phonetic": "di-DUK-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -8778,7 +8778,7 @@
           "phonetic": "OH-vər-NYT"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adv."
@@ -8795,7 +8795,7 @@
           "phonetic": "kən-SEN-səs"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -8829,7 +8829,7 @@
           "phonetic": "EM-fə-syz"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -8965,7 +8965,7 @@
           "phonetic": "moh-BIL-ə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -8999,7 +8999,7 @@
           "phonetic": "SEL-ə-brayt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -9033,7 +9033,7 @@
           "phonetic": "ə-RIJ-ə-nəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -9118,7 +9118,7 @@
           "phonetic": "FORS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -9186,7 +9186,7 @@
           "phonetic": "ə-VAY-lə-bəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -9254,7 +9254,7 @@
           "phonetic": "ə-TEN-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -9288,7 +9288,7 @@
           "phonetic": "TYM-TAY-bəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -9475,7 +9475,7 @@
           "phonetic": "mə-JOR-ə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -9492,7 +9492,7 @@
           "phonetic": "i-KAH-nə-məst"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -9594,7 +9594,7 @@
           "phonetic": "TENS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -9611,7 +9611,7 @@
           "phonetic": "SOH-lər"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -9645,7 +9645,7 @@
           "phonetic": "REE-im-BURS"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -9662,7 +9662,7 @@
           "phonetic": "də-MAH-krə-see"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -9764,7 +9764,7 @@
           "phonetic": "ə-BIL-ə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -9883,7 +9883,7 @@
           "phonetic": "stə-TIS-tik"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -9968,7 +9968,7 @@
           "phonetic": "SEER-ee-əs-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adv."
@@ -10019,7 +10019,7 @@
           "phonetic": "BACH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -10036,7 +10036,7 @@
           "phonetic": "CHAH-klət"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -10104,7 +10104,7 @@
           "phonetic": "im-POR-tənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -10138,7 +10138,7 @@
           "phonetic": "kə-PAS-ə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -10274,7 +10274,7 @@
           "phonetic": "BOOK-stor"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -10359,7 +10359,7 @@
           "phonetic": "SIT-choo-AY-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -10461,7 +10461,7 @@
           "phonetic": "hyoo-MID-ə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -10580,7 +10580,7 @@
           "phonetic": "KAL-kyə-layt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -10716,7 +10716,7 @@
           "phonetic": "prə-FES-ər"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -10750,7 +10750,7 @@
           "phonetic": "tek-NEEK"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -10767,7 +10767,7 @@
           "phonetic": "ik-SKLOO-siv"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -10784,7 +10784,7 @@
           "phonetic": "NAH-lij"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -10835,7 +10835,7 @@
           "phonetic": "PLAYS-mənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -10869,7 +10869,7 @@
           "phonetic": "noo-TRISH-ən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -10903,7 +10903,7 @@
           "phonetic": "EMP-tee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -11005,7 +11005,7 @@
           "phonetic": "i-LAB-ər-ət"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -11141,7 +11141,7 @@
           "phonetic": "REP-yə-tə-bəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -11345,7 +11345,7 @@
           "phonetic": "OH-vər-WELM"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -11413,7 +11413,7 @@
           "phonetic": "SOH-see-AH-lə-jee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -11430,7 +11430,7 @@
           "phonetic": "PRIN-sə-pəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -11464,7 +11464,7 @@
           "phonetic": "AR-kə-tekt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -11583,7 +11583,7 @@
           "phonetic": "prə-NOWNS"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -11634,7 +11634,7 @@
           "phonetic": "MAN-də-tor-ee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -11668,7 +11668,7 @@
           "phonetic": "SEK-ən-der-ee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -11685,7 +11685,7 @@
           "phonetic": "LYF-styl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -11702,7 +11702,7 @@
           "phonetic": "KWY-ər"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -11736,7 +11736,7 @@
           "phonetic": "SHAL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -11787,7 +11787,7 @@
           "phonetic": "STAYT-mənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -11838,7 +11838,7 @@
           "phonetic": "REK-ə-MEND"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -11872,7 +11872,7 @@
           "phonetic": "və-LAH-sə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -12127,7 +12127,7 @@
           "phonetic": "ri-PORT-ing"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -12161,7 +12161,7 @@
           "phonetic": "SLYD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -12212,7 +12212,7 @@
           "phonetic": "EN-ə-mee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -12314,7 +12314,7 @@
           "phonetic": "in-FLAY-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -12416,7 +12416,7 @@
           "phonetic": "y-DEN-tə-fy"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -12569,7 +12569,7 @@
           "phonetic": "in-KUR-ij"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -12603,7 +12603,7 @@
           "phonetic": "STAIR"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -12722,7 +12722,7 @@
           "phonetic": "kə-REKT-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adv."
@@ -12858,7 +12858,7 @@
           "phonetic": "SAH-ləd"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -12943,7 +12943,7 @@
           "phonetic": "NUR-vəs-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adv."
@@ -12960,7 +12960,7 @@
           "phonetic": "TAHK-sən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -13062,7 +13062,7 @@
           "phonetic": "ri-FUR"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -13079,7 +13079,7 @@
           "phonetic": "FEELD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -13232,7 +13232,7 @@
           "phonetic": "kəm-PLAYNT"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -13266,7 +13266,7 @@
           "phonetic": "ik-STREEM-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adv."
@@ -13334,7 +13334,7 @@
           "phonetic": "ə-PART-mənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -13368,7 +13368,7 @@
           "phonetic": "OR-kə-strə"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -13419,7 +13419,7 @@
           "phonetic": "SHAYP"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -13521,7 +13521,7 @@
           "phonetic": "hi-STOR-ee-ən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -13572,7 +13572,7 @@
           "phonetic": "STEEM"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -13589,7 +13589,7 @@
           "phonetic": "SOWTH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -13657,7 +13657,7 @@
           "phonetic": "REZ-ə-dəns"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -13674,7 +13674,7 @@
           "phonetic": "ə-LARM"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -13725,7 +13725,7 @@
           "phonetic": "DRIL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -13912,7 +13912,7 @@
           "phonetic": "KLAS-ə-kəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -13963,7 +13963,7 @@
           "phonetic": "ROH-mən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -14133,7 +14133,7 @@
           "phonetic": "SHIP-rek"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -14167,7 +14167,7 @@
           "phonetic": "SOWND"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -14303,7 +14303,7 @@
           "phonetic": "WURLD-wyd"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adv."
@@ -14320,7 +14320,7 @@
           "phonetic": "ə-DAHPT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -14371,7 +14371,7 @@
           "phonetic": "DIF-ər-ənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -14422,7 +14422,7 @@
           "phonetic": "ree-AKT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -14456,7 +14456,7 @@
           "phonetic": "OR-gən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -14490,7 +14490,7 @@
           "phonetic": "THANK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -14575,7 +14575,7 @@
           "phonetic": "PROOV"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -14762,7 +14762,7 @@
           "phonetic": "LURN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -14779,7 +14779,7 @@
           "phonetic": "SAHLV"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -14847,7 +14847,7 @@
           "phonetic": "i-KWIP-mənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -14898,7 +14898,7 @@
           "phonetic": "GRAYD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -14915,7 +14915,7 @@
           "phonetic": "KOR-ə-layt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -14932,7 +14932,7 @@
           "phonetic": "BYOO-tə-fəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -14983,7 +14983,7 @@
           "phonetic": "FAYNT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -15000,7 +15000,7 @@
           "phonetic": "proh-AK-tiv"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -15119,7 +15119,7 @@
           "phonetic": "AF-tər-NOON"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -15153,7 +15153,7 @@
           "phonetic": "ik-SEP-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -15187,7 +15187,7 @@
           "phonetic": "di-TEK-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -15204,7 +15204,7 @@
           "phonetic": "SHIFT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -15221,7 +15221,7 @@
           "phonetic": "in-SHOOR-əns"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -15272,7 +15272,7 @@
           "phonetic": "AK-yər-ə-see"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -15289,7 +15289,7 @@
           "phonetic": "ə-NAT-ə-mee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -15391,7 +15391,7 @@
           "phonetic": "trans-FORM"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -15578,7 +15578,7 @@
           "phonetic": "ə-SIS-tənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -15612,7 +15612,7 @@
           "phonetic": "HY-lyt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -15629,7 +15629,7 @@
           "phonetic": "PRAK-tə-kəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -15697,7 +15697,7 @@
           "phonetic": "IN-tə-grayt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -15901,7 +15901,7 @@
           "phonetic": "RAY-dee-oh"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -15918,7 +15918,7 @@
           "phonetic": "di-PEN-dənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -16071,7 +16071,7 @@
           "phonetic": "FEELD-wurk"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -16088,7 +16088,7 @@
           "phonetic": "RAYNJ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -16122,7 +16122,7 @@
           "phonetic": "REK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -16173,7 +16173,7 @@
           "phonetic": "ik-SKUR-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -16207,7 +16207,7 @@
           "phonetic": "SKAYL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -16241,7 +16241,7 @@
           "phonetic": "FAYZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -16377,7 +16377,7 @@
           "phonetic": "di-VEL-ə-pər"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -16564,7 +16564,7 @@
           "phonetic": "i-FEK-tiv"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -16717,7 +16717,7 @@
           "phonetic": "KAH-lig"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -16734,7 +16734,7 @@
           "phonetic": "AWT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -16819,7 +16819,7 @@
           "phonetic": "REK-əg-nyz"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -16836,7 +16836,7 @@
           "phonetic": "ROWND"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -17040,7 +17040,7 @@
           "phonetic": "SWEET"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -17125,7 +17125,7 @@
           "phonetic": "SUM-thing"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "pron."
@@ -17210,7 +17210,7 @@
           "phonetic": "ROOR-əl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -17567,7 +17567,7 @@
           "phonetic": "KAT-ə-log"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -17771,7 +17771,7 @@
           "phonetic": "NES-ə-ser-ee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -17805,7 +17805,7 @@
           "phonetic": "ri-SEP-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -18077,7 +18077,7 @@
           "phonetic": "ED-jə-KAY-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -18315,7 +18315,7 @@
           "phonetic": "TRYB"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -18451,7 +18451,7 @@
           "phonetic": "KAN-də-dayt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -18536,7 +18536,7 @@
           "phonetic": "BY-ər"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -18570,7 +18570,7 @@
           "phonetic": "PRAH-mə-nənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -18587,7 +18587,7 @@
           "phonetic": "KEM-ə-stree"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -19029,7 +19029,7 @@
           "phonetic": "i-KAH-nə-mee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -19131,7 +19131,7 @@
           "phonetic": "ri-KUV-ər-ee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -19182,7 +19182,7 @@
           "phonetic": "puh-LOO-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -19233,7 +19233,7 @@
           "phonetic": "RIS-kee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "adj."
@@ -19250,7 +19250,7 @@
           "phonetic": "pə-TEN-shəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -19318,7 +19318,7 @@
           "phonetic": "dik-TAY-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -19420,7 +19420,7 @@
           "phonetic": "kən-DUK-tər"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -19539,7 +19539,7 @@
           "phonetic": "OH-vər-KROWD"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "v."
@@ -19590,7 +19590,7 @@
           "phonetic": "MAR-kə-ting"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -19658,7 +19658,7 @@
           "phonetic": "STRUK-chər"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -19811,7 +19811,7 @@
           "phonetic": "fə-SIL-ə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -20321,7 +20321,7 @@
           "phonetic": "MID-ee-ə"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -20355,7 +20355,7 @@
           "phonetic": "GRAF"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -20389,7 +20389,7 @@
           "phonetic": "AH-pə-ray-ting"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -20457,7 +20457,7 @@
           "phonetic": "MARCH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -20474,7 +20474,7 @@
           "phonetic": "AY-prəl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -20678,7 +20678,7 @@
           "phonetic": "NYT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -20729,7 +20729,7 @@
           "phonetic": "tə-DAY"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -20763,7 +20763,7 @@
           "phonetic": "YES-tər-day"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -20814,7 +20814,7 @@
           "phonetic": "LAY-tər"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -20848,7 +20848,7 @@
           "phonetic": "UR-lee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -20882,7 +20882,7 @@
           "phonetic": "FURST"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -20916,7 +20916,7 @@
           "phonetic": "THURD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -20950,7 +20950,7 @@
           "phonetic": "FIFTH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -20967,7 +20967,7 @@
           "phonetic": "SIKSTH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -21018,7 +21018,7 @@
           "phonetic": "NYNTH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -21035,7 +21035,7 @@
           "phonetic": "TENTH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -21103,7 +21103,7 @@
           "phonetic": "FIF-TEENTH"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -21120,7 +21120,7 @@
           "phonetic": "SIK-STEENTH"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -21188,7 +21188,7 @@
           "phonetic": "TWEN-tee-əth"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -21205,7 +21205,7 @@
           "phonetic": "THUR-tee-əth"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -21290,7 +21290,7 @@
           "phonetic": "AY-tee-əth"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -21307,7 +21307,7 @@
           "phonetic": "NYN-tee-əth"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -21324,7 +21324,7 @@
           "phonetic": "HUN-drədth"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -21358,7 +21358,7 @@
           "phonetic": "MIL-yənth"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -21375,7 +21375,7 @@
           "phonetic": "BIL-yənth"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -21426,7 +21426,7 @@
           "phonetic": "THREE"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -21494,7 +21494,7 @@
           "phonetic": "SEV-ən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -21511,7 +21511,7 @@
           "phonetic": "AYT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -21664,7 +21664,7 @@
           "phonetic": "SEV-ən-TEEN"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -21732,7 +21732,7 @@
           "phonetic": "FOR-tee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -21749,7 +21749,7 @@
           "phonetic": "FIF-tee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -21766,7 +21766,7 @@
           "phonetic": "SIK-stee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -21919,7 +21919,7 @@
           "phonetic": "DUZ-ən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -21936,7 +21936,7 @@
           "phonetic": "SKOR"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -22004,7 +22004,7 @@
           "phonetic": "kwah-DROO-pəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -22021,7 +22021,7 @@
           "phonetic": "kwin-TOO-pəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -22242,7 +22242,7 @@
           "phonetic": "PRYM"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -22259,7 +22259,7 @@
           "phonetic": "kəm-PAH-zət"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."
@@ -22327,7 +22327,7 @@
           "phonetic": "in-FIN-ə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-wfd-vocab",
       "source": "pte-wfd-vocabulary-with-ipa",
       "wordType": "n."

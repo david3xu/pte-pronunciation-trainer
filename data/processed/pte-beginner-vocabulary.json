@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-10-08T10:01:44.802Z",
+    "generated": "2025-10-10T02:57:25.032Z",
     "totalTerms": 383,
     "source": "pte-beginner-vocabulary-with-ipa",
     "description": "PTE Beginner high-frequency vocabulary with IPA",
@@ -40,7 +40,7 @@
           "phonetic": "OH-shun"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -57,7 +57,7 @@
           "phonetic": "IN-floo-uhns"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -74,7 +74,7 @@
           "phonetic": "KA-ree"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "v."
@@ -125,7 +125,7 @@
           "phonetic": "BAY-sik"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adj."
@@ -142,7 +142,7 @@
           "phonetic": "KAWZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "v."
@@ -159,7 +159,7 @@
           "phonetic": "SKIL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -295,7 +295,7 @@
           "phonetic": "TRAYD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "v."
@@ -397,7 +397,7 @@
           "phonetic": "kuh-MYOO-nuh-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -448,7 +448,7 @@
           "phonetic": "SPEL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "v."
@@ -482,7 +482,7 @@
           "phonetic": "EK-uh-NAH-mik"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adj."
@@ -686,7 +686,7 @@
           "phonetic": "AK-uh-DEM-ik"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adj."
@@ -703,7 +703,7 @@
           "phonetic": "i-STAB-lish"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "v."
@@ -805,7 +805,7 @@
           "phonetic": "fuh-NAN-shul"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adj."
@@ -839,7 +839,7 @@
           "phonetic": "CHAL-inj"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -890,7 +890,7 @@
           "phonetic": "THREE"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -907,7 +907,7 @@
           "phonetic": "KRYM"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -941,7 +941,7 @@
           "phonetic": "STIL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adv."
@@ -1043,7 +1043,7 @@
           "phonetic": "TEK-suhs"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -1060,7 +1060,7 @@
           "phonetic": "puh-LIT-i-kul"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adj."
@@ -1077,7 +1077,7 @@
           "phonetic": "MUNTH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -1094,7 +1094,7 @@
           "phonetic": "DIF-uh-kult"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adj."
@@ -1111,7 +1111,7 @@
           "phonetic": "uh-MUNG"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "prep."
@@ -1196,7 +1196,7 @@
           "phonetic": "SPEEK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "v."
@@ -1230,7 +1230,7 @@
           "phonetic": "duh-VUR-suh-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -1400,7 +1400,7 @@
           "phonetic": "bi-GIN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "v."
@@ -1468,7 +1468,7 @@
           "phonetic": "SPAYS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -1536,7 +1536,7 @@
           "phonetic": "KRAY-zee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adj."
@@ -1553,7 +1553,7 @@
           "phonetic": "uh-LOW"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "v."
@@ -1587,7 +1587,7 @@
           "phonetic": "HOWS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -1655,7 +1655,7 @@
           "phonetic": "SINS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "prep."
@@ -1740,7 +1740,7 @@
           "phonetic": "THEEM"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -1757,7 +1757,7 @@
           "phonetic": "LEEST"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adj."
@@ -1791,7 +1791,7 @@
           "phonetic": "BRING"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "v."
@@ -1825,7 +1825,7 @@
           "phonetic": "HOHL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adj."
@@ -1893,7 +1893,7 @@
           "phonetic": "MUN-ee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -1944,7 +1944,7 @@
           "phonetic": "SUM-tymz"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adv."
@@ -2080,7 +2080,7 @@
           "phonetic": "SHOWT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "v."
@@ -2131,7 +2131,7 @@
           "phonetic": "kun-DISH-un"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -2301,7 +2301,7 @@
           "phonetic": "DRYV"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "v."
@@ -2386,7 +2386,7 @@
           "phonetic": "SPEND"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "v."
@@ -2522,7 +2522,7 @@
           "phonetic": "LEEV"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "v."
@@ -2607,7 +2607,7 @@
           "phonetic": "THURD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adj."
@@ -2675,7 +2675,7 @@
           "phonetic": "FOH-kuss"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "v."
@@ -2692,7 +2692,7 @@
           "phonetic": "BRED"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -2811,7 +2811,7 @@
           "phonetic": "FORS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -2828,7 +2828,7 @@
           "phonetic": "EN-tree"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -2845,7 +2845,7 @@
           "phonetic": "uh-VAY-luh-bul"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adj."
@@ -2879,7 +2879,7 @@
           "phonetic": "POINT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -2964,7 +2964,7 @@
           "phonetic": "TENS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -2981,7 +2981,7 @@
           "phonetic": "SOH-lur"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3015,7 +3015,7 @@
           "phonetic": "uh-BIL-uh-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -3049,7 +3049,7 @@
           "phonetic": "LYT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -3134,7 +3134,7 @@
           "phonetic": "uh-MER-i-kuh"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -3168,7 +3168,7 @@
           "phonetic": "BUK-stor"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -3219,7 +3219,7 @@
           "phonetic": "GREEN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3236,7 +3236,7 @@
           "phonetic": "pruh-FESS-ur"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -3253,7 +3253,7 @@
           "phonetic": "NAH-lij"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -3423,7 +3423,7 @@
           "phonetic": "TEECH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "v."
@@ -3712,7 +3712,7 @@
           "phonetic": "in-TEN-si-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -3763,7 +3763,7 @@
           "phonetic": "ISH-oo"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -3899,7 +3899,7 @@
           "phonetic": "SHAHK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -3916,7 +3916,7 @@
           "phonetic": "MYT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "v."
@@ -4069,7 +4069,7 @@
           "phonetic": "ak-TIV-uh-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -4086,7 +4086,7 @@
           "phonetic": "FEELD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -4103,7 +4103,7 @@
           "phonetic": "STOR-ee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -4290,7 +4290,7 @@
           "phonetic": "SOWND"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -4460,7 +4460,7 @@
           "phonetic": "YUNG"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adj."
@@ -4528,7 +4528,7 @@
           "phonetic": "AW-fur"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "v."
@@ -4664,7 +4664,7 @@
           "phonetic": "PAY-per"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -4715,7 +4715,7 @@
           "phonetic": "RAYNJ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -4783,7 +4783,7 @@
           "phonetic": "VAL-yoo"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -4868,7 +4868,7 @@
           "phonetic": "LAY-ter"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adv."
@@ -4936,7 +4936,7 @@
           "phonetic": "SUM-thing"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "pron."
@@ -4970,7 +4970,7 @@
           "phonetic": "i-VENT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -5174,7 +5174,7 @@
           "phonetic": "uh-PLY"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "v."
@@ -5208,7 +5208,7 @@
           "phonetic": "SLEEP"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "v."
@@ -5242,7 +5242,7 @@
           "phonetic": "tuh-DAY"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adv."
@@ -5293,7 +5293,7 @@
           "phonetic": "PRYS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -5378,7 +5378,7 @@
           "phonetic": "MAY-jur"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adj."
@@ -5463,7 +5463,7 @@
           "phonetic": "i-KAH-nuh-mee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -5480,7 +5480,7 @@
           "phonetic": "KLOHS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adj."
@@ -5514,7 +5514,7 @@
           "phonetic": "aw-TRAY-lee-uh"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -5565,7 +5565,7 @@
           "phonetic": "puh-TEN-shul"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adj."
@@ -5616,7 +5616,7 @@
           "phonetic": "OR-der"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -5735,7 +5735,7 @@
           "phonetic": "STRUK-chur"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -5837,7 +5837,7 @@
           "phonetic": "SUM-bah-dee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "pron."
@@ -6007,7 +6007,7 @@
           "phonetic": "uh-MER-i-kun"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adj."
@@ -6160,7 +6160,7 @@
           "phonetic": "SMAWL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "adj."
@@ -6262,7 +6262,7 @@
           "phonetic": "ig-ZIST"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "v."
@@ -6296,7 +6296,7 @@
           "phonetic": "BRUSH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -6347,7 +6347,7 @@
           "phonetic": "KLYME"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "v."
@@ -6415,7 +6415,7 @@
           "phonetic": "BILD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "v."
@@ -6449,7 +6449,7 @@
           "phonetic": "WOO-mun"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -6483,7 +6483,7 @@
           "phonetic": "KLASS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."
@@ -6500,7 +6500,7 @@
           "phonetic": "DREEM"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-beginner",
       "source": "pte-beginner-vocabulary-with-ipa",
       "wordType": "n."

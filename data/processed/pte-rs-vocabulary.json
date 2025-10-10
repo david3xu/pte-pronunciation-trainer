@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-10-08T10:01:44.893Z",
+    "generated": "2025-10-10T02:57:25.126Z",
     "totalTerms": 887,
     "source": "pte-rs-vocabulary-with-ipa",
     "description": "PTE Repeat Sentence (RS) vocabulary with IPA",
@@ -91,7 +91,7 @@
           "phonetic": "pawrt-FOH-lee-oh"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -142,7 +142,7 @@
           "phonetic": "IN-floo-unss"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -159,7 +159,7 @@
           "phonetic": "in-TYE-uhr-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adv."
@@ -210,7 +210,7 @@
           "phonetic": "SMITH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -278,7 +278,7 @@
           "phonetic": "KAWZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -295,7 +295,7 @@
           "phonetic": "vair-ee-AY-shun"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -363,7 +363,7 @@
           "phonetic": "SYE-un-tist"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -533,7 +533,7 @@
           "phonetic": "TRAYD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -618,7 +618,7 @@
           "phonetic": "BAY-siss"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -737,7 +737,7 @@
           "phonetic": "ig-ZEK-yuh-tiv"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -754,7 +754,7 @@
           "phonetic": "UR-bun"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -788,7 +788,7 @@
           "phonetic": "ad-VAN-tij"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -873,7 +873,7 @@
           "phonetic": "kuh-MYOO-nuh-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -1009,7 +1009,7 @@
           "phonetic": "ri-FEK-tuh-ree"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -1060,7 +1060,7 @@
           "phonetic": "ahp-uh-RAY-shun"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -1111,7 +1111,7 @@
           "phonetic": "ee-kuh-NAHM-ik"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -1128,7 +1128,7 @@
           "phonetic": "in-FUR"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -1145,7 +1145,7 @@
           "phonetic": "prye-MAIR-uh-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adv."
@@ -1264,7 +1264,7 @@
           "phonetic": "WENZ-day"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -1298,7 +1298,7 @@
           "phonetic": "BREEF"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -1383,7 +1383,7 @@
           "phonetic": "i-FISH-unt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -1417,7 +1417,7 @@
           "phonetic": "PEN-shuh-nuhr"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -1655,7 +1655,7 @@
           "phonetic": "ak-uh-DEM-ik"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -1706,7 +1706,7 @@
           "phonetic": "uh-GREE-munt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -1740,7 +1740,7 @@
           "phonetic": "i-STAB-lish"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -2029,7 +2029,7 @@
           "phonetic": "fye-NAN-shul"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -2080,7 +2080,7 @@
           "phonetic": "CHAL-inj"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -2131,7 +2131,7 @@
           "phonetic": "BRAWD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -2148,7 +2148,7 @@
           "phonetic": "SKYE-rahk-it"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -2165,7 +2165,7 @@
           "phonetic": "YOO-nee-un"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -2539,7 +2539,7 @@
           "phonetic": "TOO-tuhr"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -2556,7 +2556,7 @@
           "phonetic": "puh-LIT-i-kul"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -2590,7 +2590,7 @@
           "phonetic": "DIF-i-kult"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -2607,7 +2607,7 @@
           "phonetic": "uh-MUNG"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "prep."
@@ -2641,7 +2641,7 @@
           "phonetic": "VOH-kul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -2760,7 +2760,7 @@
           "phonetic": "RAYZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -2777,7 +2777,7 @@
           "phonetic": "ub-JEK-shun"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -2828,7 +2828,7 @@
           "phonetic": "un-duhr-LYEN"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -2845,7 +2845,7 @@
           "phonetic": "REF-uh-runss"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -2862,7 +2862,7 @@
           "phonetic": "di-VUR-suh-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -2981,7 +2981,7 @@
           "phonetic": "AY-prul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -3015,7 +3015,7 @@
           "phonetic": "STEEL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -3032,7 +3032,7 @@
           "phonetic": "VYE-ruhs"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -3049,7 +3049,7 @@
           "phonetic": "SPEK-yuh-layt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -3083,7 +3083,7 @@
           "phonetic": "kuh-MIT-ee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -3168,7 +3168,7 @@
           "phonetic": "FUL-ee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adv."
@@ -3202,7 +3202,7 @@
           "phonetic": "DAY-lee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3219,7 +3219,7 @@
           "phonetic": "WURTH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3355,7 +3355,7 @@
           "phonetic": "ri-LIJ-uhs"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3372,7 +3372,7 @@
           "phonetic": "AM-pul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3525,7 +3525,7 @@
           "phonetic": "ub-JEK-tiv"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -3559,7 +3559,7 @@
           "phonetic": "VEE-gun"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -3695,7 +3695,7 @@
           "phonetic": "PRYE-uhr"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3831,7 +3831,7 @@
           "phonetic": "TRANS-pawrt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -3848,7 +3848,7 @@
           "phonetic": "LEEST"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3899,7 +3899,7 @@
           "phonetic": "si-LEK-tiv"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -4171,7 +4171,7 @@
           "phonetic": "KRASH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -4307,7 +4307,7 @@
           "phonetic": "GEST"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -4324,7 +4324,7 @@
           "phonetic": "in-VEN-shun"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -4392,7 +4392,7 @@
           "phonetic": "AHR-gyoo"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -4511,7 +4511,7 @@
           "phonetic": "REG-yuh-luhr-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adv."
@@ -4596,7 +4596,7 @@
           "phonetic": "in-DUK-shun"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -4613,7 +4613,7 @@
           "phonetic": "kun-DISH-un"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -4630,7 +4630,7 @@
           "phonetic": "es-THET-ik"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -4783,7 +4783,7 @@
           "phonetic": "NOOZ-pay-puhr"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -4800,7 +4800,7 @@
           "phonetic": "BLUD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -4868,7 +4868,7 @@
           "phonetic": "uh-THAWR-uh-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -4919,7 +4919,7 @@
           "phonetic": "DIS-kawrs"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -4987,7 +4987,7 @@
           "phonetic": "LAY-buhr"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -5055,7 +5055,7 @@
           "phonetic": "ahn bi-HAF"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "prep."
@@ -5123,7 +5123,7 @@
           "phonetic": "STAYT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -5140,7 +5140,7 @@
           "phonetic": "MYOO-zik"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -5174,7 +5174,7 @@
           "phonetic": "AP-li-kunt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -5259,7 +5259,7 @@
           "phonetic": "AWF-un"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adv."
@@ -5361,7 +5361,7 @@
           "phonetic": "RUG-bee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -5565,7 +5565,7 @@
           "phonetic": "fi-ZISH-un"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -5633,7 +5633,7 @@
           "phonetic": "LEEV"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -5735,7 +5735,7 @@
           "phonetic": "in-JUS-tiss"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -5820,7 +5820,7 @@
           "phonetic": "kaf-uh-TEER-ee-uh"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -5837,7 +5837,7 @@
           "phonetic": "PREZ-i-dunt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -5871,7 +5871,7 @@
           "phonetic": "SNOH-ee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -5922,7 +5922,7 @@
           "phonetic": "oh-vuhr-NYET"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adv."
@@ -5956,7 +5956,7 @@
           "phonetic": "BRED"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -6075,7 +6075,7 @@
           "phonetic": "SEL-i-brayt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -6092,7 +6092,7 @@
           "phonetic": "uh-RIJ-i-nul"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -6126,7 +6126,7 @@
           "phonetic": "FAWRSS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -6177,7 +6177,7 @@
           "phonetic": "uh-VAY-luh-bul"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -6211,7 +6211,7 @@
           "phonetic": "uh-TEN-shun"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -6228,7 +6228,7 @@
           "phonetic": "TYEM-tay-bul"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -6279,7 +6279,7 @@
           "phonetic": "muh-JAWR-uh-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -6296,7 +6296,7 @@
           "phonetic": "i-KAHN-uh-mist"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -6347,7 +6347,7 @@
           "phonetic": "di-MAHK-ruh-see"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -6364,7 +6364,7 @@
           "phonetic": "uh-BIL-uh-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -6432,7 +6432,7 @@
           "phonetic": "SPOON"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -6534,7 +6534,7 @@
           "phonetic": "CHAWK-lut"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -6636,7 +6636,7 @@
           "phonetic": "uh-MER-i-kuh"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -6653,7 +6653,7 @@
           "phonetic": "kuh-PAS-uh-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -6704,7 +6704,7 @@
           "phonetic": "AHK-si-juh-nayt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -6721,7 +6721,7 @@
           "phonetic": "BOOK-stawr"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -6857,7 +6857,7 @@
           "phonetic": "TRYE-ul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -6908,7 +6908,7 @@
           "phonetic": "pruh-FES-uhr"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -6942,7 +6942,7 @@
           "phonetic": "tek-NEEK"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -7316,7 +7316,7 @@
           "phonetic": "oh-vuhr-WELM"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -7350,7 +7350,7 @@
           "phonetic": "soh-see-AHL-uh-jee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -7384,7 +7384,7 @@
           "phonetic": "in-truh-DOOS"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -7401,7 +7401,7 @@
           "phonetic": "LEE-gul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -7452,7 +7452,7 @@
           "phonetic": "PRIN-suh-pul"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -7656,7 +7656,7 @@
           "phonetic": "KLAYM"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -7707,7 +7707,7 @@
           "phonetic": "SLYED"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -7826,7 +7826,7 @@
           "phonetic": "KRAMP"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -7894,7 +7894,7 @@
           "phonetic": "ik-STEN-siv"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -7979,7 +7979,7 @@
           "phonetic": "ISH-oo"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -8081,7 +8081,7 @@
           "phonetic": "in-KUR-ij"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -8166,7 +8166,7 @@
           "phonetic": "BRYES"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -8217,7 +8217,7 @@
           "phonetic": "kuh-REKT-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adv."
@@ -8268,7 +8268,7 @@
           "phonetic": "SAHL-id"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -8336,7 +8336,7 @@
           "phonetic": "MAHRCH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -8370,7 +8370,7 @@
           "phonetic": "ree-SET"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -8387,7 +8387,7 @@
           "phonetic": "traw-MAT-ik"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -8472,7 +8472,7 @@
           "phonetic": "ak-TIV-uh-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -8489,7 +8489,7 @@
           "phonetic": "FEELD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -8574,7 +8574,7 @@
           "phonetic": "ik-STREEM-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adv."
@@ -8608,7 +8608,7 @@
           "phonetic": "KLASH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -8625,7 +8625,7 @@
           "phonetic": "BOWND"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -8642,7 +8642,7 @@
           "phonetic": "nuh-SES-uh-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -8676,7 +8676,7 @@
           "phonetic": "SMOHK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -8744,7 +8744,7 @@
           "phonetic": "GRASP"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -8778,7 +8778,7 @@
           "phonetic": "hi-STAWR-ee-un"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -8880,7 +8880,7 @@
           "phonetic": "REZ-i-dunss"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -8897,7 +8897,7 @@
           "phonetic": "REJ-i-strahr"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -9203,7 +9203,7 @@
           "phonetic": "HURD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -9441,7 +9441,7 @@
           "phonetic": "AWR-gun"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -9543,7 +9543,7 @@
           "phonetic": "JOOS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -9611,7 +9611,7 @@
           "phonetic": "LEV-ul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -9628,7 +9628,7 @@
           "phonetic": "i-KWIP-munt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -9696,7 +9696,7 @@
           "phonetic": "GRAYD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -9866,7 +9866,7 @@
           "phonetic": "AK-yuh-ruh-see"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -9883,7 +9883,7 @@
           "phonetic": "uh-NAT-uh-mee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -10002,7 +10002,7 @@
           "phonetic": "vuh-LID-uh-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -10036,7 +10036,7 @@
           "phonetic": "SUB-si-dyez"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -10206,7 +10206,7 @@
           "phonetic": "BRAYK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -10376,7 +10376,7 @@
           "phonetic": "FAS-i-nayt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -10393,7 +10393,7 @@
           "phonetic": "PINCH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -10427,7 +10427,7 @@
           "phonetic": "FEELD-wurk"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -10444,7 +10444,7 @@
           "phonetic": "RAYNJ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -10495,7 +10495,7 @@
           "phonetic": "PEES"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -10512,7 +10512,7 @@
           "phonetic": "EL-i-juh-bul"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -10869,7 +10869,7 @@
           "phonetic": "KAHL-eeg"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -10920,7 +10920,7 @@
           "phonetic": "NYEF"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -11413,7 +11413,7 @@
           "phonetic": "SAN-i-tair-ee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -11498,7 +11498,7 @@
           "phonetic": "VID-ee-oh-tayp"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -11532,7 +11532,7 @@
           "phonetic": "kyoor-ee-AHS-uh-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -11583,7 +11583,7 @@
           "phonetic": "NES-uh-sair-ee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -11600,7 +11600,7 @@
           "phonetic": "ri-SEP-shun"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -11804,7 +11804,7 @@
           "phonetic": "HUZ-bun-dree"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -11821,7 +11821,7 @@
           "phonetic": "ed-juh-KAY-shun"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -11940,7 +11940,7 @@
           "phonetic": "KEM-i-stree"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -12212,7 +12212,7 @@
           "phonetic": "i-KAHN-uh-mee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -12246,7 +12246,7 @@
           "phonetic": "BREK-fust"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -12297,7 +12297,7 @@
           "phonetic": "KLIK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -12331,7 +12331,7 @@
           "phonetic": "puh-LOO-shun"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -12382,7 +12382,7 @@
           "phonetic": "ik-SPLOH-zhun"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -12399,7 +12399,7 @@
           "phonetic": "DRAFT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -12416,7 +12416,7 @@
           "phonetic": "KRIT-i-si-zum"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -12586,7 +12586,7 @@
           "phonetic": "URTH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -12620,7 +12620,7 @@
           "phonetic": "oh-vuhr-KROWD"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -12722,7 +12722,7 @@
           "phonetic": "MAHR-ki-ting"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -12790,7 +12790,7 @@
           "phonetic": "STRUK-chuhr"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -12909,7 +12909,7 @@
           "phonetic": "fuh-SIL-uh-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -13164,7 +13164,7 @@
           "phonetic": "WURK-playss"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -13198,7 +13198,7 @@
           "phonetic": "GRAF"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -13317,7 +13317,7 @@
           "phonetic": "KAT-uh-gawr-ee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -13334,7 +13334,7 @@
           "phonetic": "uh-MER-i-kun"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -13351,7 +13351,7 @@
           "phonetic": "GLOH-buh-lyez"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -13419,7 +13419,7 @@
           "phonetic": "STAF"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -13487,7 +13487,7 @@
           "phonetic": "GYED-lyen"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -13657,7 +13657,7 @@
           "phonetic": "jee-AHG-ruh-fee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -13861,7 +13861,7 @@
           "phonetic": "TREET-munt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -13963,7 +13963,7 @@
           "phonetic": "ik-SEN-trik"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adj."
@@ -14014,7 +14014,7 @@
           "phonetic": "SHUG-uhr"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -14031,7 +14031,7 @@
           "phonetic": "vahl-un-TEER"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -14116,7 +14116,7 @@
           "phonetic": "MET-ul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -14184,7 +14184,7 @@
           "phonetic": "ik-STEN-shun"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -14218,7 +14218,7 @@
           "phonetic": "STAWR"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -14269,7 +14269,7 @@
           "phonetic": "SNAK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -14388,7 +14388,7 @@
           "phonetic": "ig-ZIST"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "v."
@@ -14405,7 +14405,7 @@
           "phonetic": "eks-pur-TEEZ"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -14473,7 +14473,7 @@
           "phonetic": "ES-ay"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -14609,7 +14609,7 @@
           "phonetic": "LIM-it"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -14711,7 +14711,7 @@
           "phonetic": "FRAYM-wurk"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "n."
@@ -15085,7 +15085,7 @@
           "phonetic": "KWYET"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-rs-vocab",
       "source": "pte-rs-vocabulary-with-ipa",
       "wordType": "adv."

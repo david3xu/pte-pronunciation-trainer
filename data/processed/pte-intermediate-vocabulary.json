@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-10-08T10:01:44.819Z",
+    "generated": "2025-10-10T02:57:25.053Z",
     "totalTerms": 2408,
     "source": "pte-intermediate-vocabulary-with-ipa",
     "description": "PTE Intermediate vocabulary (simple list fallback, IPA when available)",
@@ -142,7 +142,7 @@
           "phonetic": "AK-tiv-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -193,7 +193,7 @@
           "phonetic": "ROH-baht"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -227,7 +227,7 @@
           "phonetic": "TAH-pik"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -261,7 +261,7 @@
           "phonetic": "ik-SPAN-shun"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -397,7 +397,7 @@
           "phonetic": "in-TYR-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -414,7 +414,7 @@
           "phonetic": "CHEK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -482,7 +482,7 @@
           "phonetic": "SMITH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -516,7 +516,7 @@
           "phonetic": "RAP-id"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -533,7 +533,7 @@
           "phonetic": "juh-PAN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -584,7 +584,7 @@
           "phonetic": "WURR-ee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -618,7 +618,7 @@
           "phonetic": "KLEER"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -686,7 +686,7 @@
           "phonetic": "TWYS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -720,7 +720,7 @@
           "phonetic": "WEET"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -737,7 +737,7 @@
           "phonetic": "uh-HED"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -958,7 +958,7 @@
           "phonetic": "NORTH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -975,7 +975,7 @@
           "phonetic": "up-SET"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -1009,7 +1009,7 @@
           "phonetic": "uh-SOH-see-ate"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -1111,7 +1111,7 @@
           "phonetic": "HAB-it"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -1332,7 +1332,7 @@
           "phonetic": "uh-RIJ-uh-nayt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -1349,7 +1349,7 @@
           "phonetic": "in-JOY"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -1383,7 +1383,7 @@
           "phonetic": "KRAFT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -1400,7 +1400,7 @@
           "phonetic": "POH-ler"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -1468,7 +1468,7 @@
           "phonetic": "BLYND"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -1553,7 +1553,7 @@
           "phonetic": "HYOO-mer"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -1587,7 +1587,7 @@
           "phonetic": "KUV-er"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -1604,7 +1604,7 @@
           "phonetic": "KLAWTH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -1621,7 +1621,7 @@
           "phonetic": "VY-tul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -1723,7 +1723,7 @@
           "phonetic": "FROOT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -1825,7 +1825,7 @@
           "phonetic": "PLAY-toh"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -1893,7 +1893,7 @@
           "phonetic": "SHEET"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -1927,7 +1927,7 @@
           "phonetic": "BAY-sis"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -2046,7 +2046,7 @@
           "phonetic": "KOR-pur-it"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -2114,7 +2114,7 @@
           "phonetic": "MIL-i-terr-ee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -2148,7 +2148,7 @@
           "phonetic": "uh-KUM-puh-nee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -2182,7 +2182,7 @@
           "phonetic": "ig-ZEK-yuh-tiv"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -2199,7 +2199,7 @@
           "phonetic": "UR-bun"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -2284,7 +2284,7 @@
           "phonetic": "BREED"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -2318,7 +2318,7 @@
           "phonetic": "ud-VAN-tij"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -2624,7 +2624,7 @@
           "phonetic": "eye-DEN-ti-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -2658,7 +2658,7 @@
           "phonetic": "LAHJ-ik"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -2675,7 +2675,7 @@
           "phonetic": "IM-pluh-ment"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -2777,7 +2777,7 @@
           "phonetic": "al-ig-ZAN-der"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -2811,7 +2811,7 @@
           "phonetic": "KAHN-shus"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -2879,7 +2879,7 @@
           "phonetic": "KAR-uk-ter"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -2896,7 +2896,7 @@
           "phonetic": "FOUND"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -3066,7 +3066,7 @@
           "phonetic": "SHARK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -3083,7 +3083,7 @@
           "phonetic": "AH-puh-RAY-shun"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -3100,7 +3100,7 @@
           "phonetic": "i-SEN-shul"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3236,7 +3236,7 @@
           "phonetic": "EE-koh-sis-təm"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -3253,7 +3253,7 @@
           "phonetic": "EL-boh"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -3287,7 +3287,7 @@
           "phonetic": "SOH-KAWLD"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3321,7 +3321,7 @@
           "phonetic": "pry-MER-uh-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -3389,7 +3389,7 @@
           "phonetic": "SEH-ruh-MOH-nee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -3525,7 +3525,7 @@
           "phonetic": "WENZ-day"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -3593,7 +3593,7 @@
           "phonetic": "GORDJ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -3661,7 +3661,7 @@
           "phonetic": "WELSH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3678,7 +3678,7 @@
           "phonetic": "BREEF"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3695,7 +3695,7 @@
           "phonetic": "SKOR"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -3814,7 +3814,7 @@
           "phonetic": "DOWT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -3899,7 +3899,7 @@
           "phonetic": "CHEEP"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3916,7 +3916,7 @@
           "phonetic": "uh-NAL-uh-sis"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -3933,7 +3933,7 @@
           "phonetic": "FLOO-id"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -4035,7 +4035,7 @@
           "phonetic": "i-FISH-ənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -4052,7 +4052,7 @@
           "phonetic": "SHORT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -4307,7 +4307,7 @@
           "phonetic": "ud-MISH-un"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -4324,7 +4324,7 @@
           "phonetic": "ig-ZAKT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -4375,7 +4375,7 @@
           "phonetic": "KLEEN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -4426,7 +4426,7 @@
           "phonetic": "TRAYS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -4494,7 +4494,7 @@
           "phonetic": "BRAND"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -4545,7 +4545,7 @@
           "phonetic": "KAHN-ti-nunt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -4562,7 +4562,7 @@
           "phonetic": "uh-LAWNG-SYDE"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "prep."
@@ -4715,7 +4715,7 @@
           "phonetic": "YOO-sij"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -4732,7 +4732,7 @@
           "phonetic": "NURS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -4766,7 +4766,7 @@
           "phonetic": "JEN-uh-re-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -4885,7 +4885,7 @@
           "phonetic": "uh-GREE-mənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -4987,7 +4987,7 @@
           "phonetic": "SKOHp"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -5004,7 +5004,7 @@
           "phonetic": "yoo-TIL-uh-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -5038,7 +5038,7 @@
           "phonetic": "WEEL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -5089,7 +5089,7 @@
           "phonetic": "uh-PLY-uhns"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -5208,7 +5208,7 @@
           "phonetic": "mor-TAL-i-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -5225,7 +5225,7 @@
           "phonetic": "in-VIZ-uh-bəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -5276,7 +5276,7 @@
           "phonetic": "WAYL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -5344,7 +5344,7 @@
           "phonetic": "THEFT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -5429,7 +5429,7 @@
           "phonetic": "VEE-nus"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -5718,7 +5718,7 @@
           "phonetic": "PROH-gram"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -5752,7 +5752,7 @@
           "phonetic": "STIM-yuh-layt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -5769,7 +5769,7 @@
           "phonetic": "CHESS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -5905,7 +5905,7 @@
           "phonetic": "TOW-er"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -5973,7 +5973,7 @@
           "phonetic": "JUJ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -6075,7 +6075,7 @@
           "phonetic": "GRAYP"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -6160,7 +6160,7 @@
           "phonetic": "BRAWD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -6245,7 +6245,7 @@
           "phonetic": "NYT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -6279,7 +6279,7 @@
           "phonetic": "YOO-nyən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -6330,7 +6330,7 @@
           "phonetic": "KAIR-fuh-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -6347,7 +6347,7 @@
           "phonetic": "AHB-vee-us-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -6415,7 +6415,7 @@
           "phonetic": "AY-zhən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -6466,7 +6466,7 @@
           "phonetic": "MIKST"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -6602,7 +6602,7 @@
           "phonetic": "STORM"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -6636,7 +6636,7 @@
           "phonetic": "HOOZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "pron."
@@ -6670,7 +6670,7 @@
           "phonetic": "YEELD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -6925,7 +6925,7 @@
           "phonetic": "MAY-ker"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -6976,7 +6976,7 @@
           "phonetic": "SPEK-tuh-kul"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -7027,7 +7027,7 @@
           "phonetic": "EE-kwəl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -7231,7 +7231,7 @@
           "phonetic": "DANS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -7265,7 +7265,7 @@
           "phonetic": "EYE-suh-LAY-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -7282,7 +7282,7 @@
           "phonetic": "SUB-stəns"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -7299,7 +7299,7 @@
           "phonetic": "TEETH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -7384,7 +7384,7 @@
           "phonetic": "GESS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -7401,7 +7401,7 @@
           "phonetic": "TOO-ter"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -7435,7 +7435,7 @@
           "phonetic": "by-AHL-uh-jist"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -7452,7 +7452,7 @@
           "phonetic": "di-ZYR-uh-bəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -7469,7 +7469,7 @@
           "phonetic": "FLOR"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -7707,7 +7707,7 @@
           "phonetic": "ROOT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -7724,7 +7724,7 @@
           "phonetic": "RAYZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -7741,7 +7741,7 @@
           "phonetic": "uh-WAIR-nəs"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -7809,7 +7809,7 @@
           "phonetic": "REF-ur-ens"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -7843,7 +7843,7 @@
           "phonetic": "FY-ber"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -7877,7 +7877,7 @@
           "phonetic": "DAH-muh-nuns"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -7928,7 +7928,7 @@
           "phonetic": "TRAK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -7962,7 +7962,7 @@
           "phonetic": "IM-i-grənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -7996,7 +7996,7 @@
           "phonetic": "AY-jing"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -8013,7 +8013,7 @@
           "phonetic": "PAR-iss"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -8183,7 +8183,7 @@
           "phonetic": "si-KYUR-ə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -8200,7 +8200,7 @@
           "phonetic": "KLOWD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -8217,7 +8217,7 @@
           "phonetic": "KOWNT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -8285,7 +8285,7 @@
           "phonetic": "TREET"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -8302,7 +8302,7 @@
           "phonetic": "IN-ter-FEER"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -8353,7 +8353,7 @@
           "phonetic": "AY-prəl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -8370,7 +8370,7 @@
           "phonetic": "di-TUR-min"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -8421,7 +8421,7 @@
           "phonetic": "STEEL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -8540,7 +8540,7 @@
           "phonetic": "SEEN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -8557,7 +8557,7 @@
           "phonetic": "VY-rus"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -8574,7 +8574,7 @@
           "phonetic": "un-LYKE-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -8608,7 +8608,7 @@
           "phonetic": "LAY-bəl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -8659,7 +8659,7 @@
           "phonetic": "kuh-MIT-ee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -8727,7 +8727,7 @@
           "phonetic": "TRUST"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -8795,7 +8795,7 @@
           "phonetic": "KUL-er"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -8897,7 +8897,7 @@
           "phonetic": "FOO-lee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -8948,7 +8948,7 @@
           "phonetic": "DAY-lee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -8982,7 +8982,7 @@
           "phonetic": "WURTH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -9016,7 +9016,7 @@
           "phonetic": "TREND"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -9033,7 +9033,7 @@
           "phonetic": "JEN-uh-RAY-ter"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -9101,7 +9101,7 @@
           "phonetic": "AY-jənt"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -9118,7 +9118,7 @@
           "phonetic": "MOH-ter"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -9135,7 +9135,7 @@
           "phonetic": "AW-tuh-MAT-ik"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -9237,7 +9237,7 @@
           "phonetic": "HAP-i-nəs"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -9254,7 +9254,7 @@
           "phonetic": "HUN-ee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -9288,7 +9288,7 @@
           "phonetic": "bi-GIN-ing"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -9373,7 +9373,7 @@
           "phonetic": "ri-LIJ-əs"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -9424,7 +9424,7 @@
           "phonetic": "SAT-uh-lyt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -9458,7 +9458,7 @@
           "phonetic": "kuh-LIZH-ən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -9475,7 +9475,7 @@
           "phonetic": "HOWSS-hohld"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -9543,7 +9543,7 @@
           "phonetic": "eye-DEE-uhl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -9611,7 +9611,7 @@
           "phonetic": "pee-AN-oh"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -9662,7 +9662,7 @@
           "phonetic": "PAN-duh"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -9696,7 +9696,7 @@
           "phonetic": "FAWLS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -9798,7 +9798,7 @@
           "phonetic": "uh-DAPT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -9832,7 +9832,7 @@
           "phonetic": "hoh-TEL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -10087,7 +10087,7 @@
           "phonetic": "ub-JEK-tiv"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -10121,7 +10121,7 @@
           "phonetic": "PER-suh-NEL"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -10155,7 +10155,7 @@
           "phonetic": "RAWNG"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -10172,7 +10172,7 @@
           "phonetic": "STAND"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -10189,7 +10189,7 @@
           "phonetic": "kun-TAY-ner"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -10257,7 +10257,7 @@
           "phonetic": "LISS-uh-ning"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -10274,7 +10274,7 @@
           "phonetic": "STAYJ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -10325,7 +10325,7 @@
           "phonetic": "IN-dee-uh"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -10376,7 +10376,7 @@
           "phonetic": "ED-in-bur"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -10461,7 +10461,7 @@
           "phonetic": "uh-PART"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -10478,7 +10478,7 @@
           "phonetic": "KRIT-i-syz"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -10529,7 +10529,7 @@
           "phonetic": "PRYR"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -10563,7 +10563,7 @@
           "phonetic": "VEJ-tuh-bəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -10784,7 +10784,7 @@
           "phonetic": "TRAN-sport"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -10886,7 +10886,7 @@
           "phonetic": "uh-DULT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -10954,7 +10954,7 @@
           "phonetic": "REE-pruh-DOOS"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -11158,7 +11158,7 @@
           "phonetic": "GLASS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -11175,7 +11175,7 @@
           "phonetic": "TY-ger"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -11226,7 +11226,7 @@
           "phonetic": "i-KWAH-li-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -11243,7 +11243,7 @@
           "phonetic": "MEL-burn"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -11294,7 +11294,7 @@
           "phonetic": "SOO-per"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -11311,7 +11311,7 @@
           "phonetic": "PRAHK-suh-mit"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -11328,7 +11328,7 @@
           "phonetic": "BAY-sən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -11345,7 +11345,7 @@
           "phonetic": "TRAYN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -11532,7 +11532,7 @@
           "phonetic": "my-GRAY-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -11600,7 +11600,7 @@
           "phonetic": "noh-BEL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -11770,7 +11770,7 @@
           "phonetic": "di-SKUV-ər-ee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -11906,7 +11906,7 @@
           "phonetic": "KRASH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -12246,7 +12246,7 @@
           "phonetic": "CHYLD-hood"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -12314,7 +12314,7 @@
           "phonetic": "in-VEN-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -12331,7 +12331,7 @@
           "phonetic": "in-duh-NEE-zhə"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -12348,7 +12348,7 @@
           "phonetic": "IN-ter-vyoo"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -12399,7 +12399,7 @@
           "phonetic": "wel-BEE-ing"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -12518,7 +12518,7 @@
           "phonetic": "i-NISH-ə-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -12535,7 +12535,7 @@
           "phonetic": "AR-gyoo"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -12552,7 +12552,7 @@
           "phonetic": "KAYM-bridge"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -12569,7 +12569,7 @@
           "phonetic": "in-KREEST"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -12603,7 +12603,7 @@
           "phonetic": "DAY-vid"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -12620,13 +12620,13 @@
           "phonetic": "FUR-ni-cher"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
     },
     {
-      "english": "num. nine",
+      "english": "nine",
       "pronunciation": {
         "british": {
           "ipa": "naɪn",
@@ -12637,9 +12637,10 @@
           "phonetic": "NYN"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "easy",
       "category": "pte-intermediate",
-      "source": "pte-intermediate-vocabulary-with-ipa"
+      "source": "pte-intermediate-vocabulary-with-ipa",
+      "wordType": "num."
     },
     {
       "english": "predict",
@@ -12772,7 +12773,7 @@
           "phonetic": "TAYST"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -12789,7 +12790,7 @@
           "phonetic": "un-CHAYNJ-d"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -12840,7 +12841,7 @@
           "phonetic": "TAY-bəl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -13078,7 +13079,7 @@
           "phonetic": "uh-REE-nə"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -13129,7 +13130,7 @@
           "phonetic": "es-THET-ik"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -13163,7 +13164,7 @@
           "phonetic": "GLOHB"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -13180,7 +13181,7 @@
           "phonetic": "MAH-dəl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -13299,7 +13300,7 @@
           "phonetic": "EE-jəpt"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -13384,7 +13385,7 @@
           "phonetic": "DRESS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -13503,7 +13504,7 @@
           "phonetic": "PRESS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -13520,7 +13521,7 @@
           "phonetic": "PAR-tee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -13588,7 +13589,7 @@
           "phonetic": "kry-TEER-ee-ən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -13690,7 +13691,7 @@
           "phonetic": "NOOZ-pay-per"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -13758,7 +13759,7 @@
           "phonetic": "BLUD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -13894,7 +13895,7 @@
           "phonetic": "uh-THOR-uh-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -14013,7 +14014,7 @@
           "phonetic": "EV-ree-bah-dee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "pron."
@@ -14047,7 +14048,7 @@
           "phonetic": "DIS-kors"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -14081,7 +14082,7 @@
           "phonetic": "LAY-ber"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -14155,7 +14156,7 @@
       "wordType": "v."
     },
     {
-      "english": "num. fifteen",
+      "english": "fifteen",
       "pronunciation": {
         "british": {
           "ipa": "ˌfɪfˈtiːn",
@@ -14166,9 +14167,10 @@
           "phonetic": "fif-TEEN"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
-      "source": "pte-intermediate-vocabulary-with-ipa"
+      "source": "pte-intermediate-vocabulary-with-ipa",
+      "wordType": "num."
     },
     {
       "english": "forest",
@@ -14250,7 +14252,7 @@
           "phonetic": "MY-ner"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -14386,7 +14388,7 @@
           "phonetic": "TOH-kee-oh"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -14454,7 +14456,7 @@
           "phonetic": "WAG-ən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -14488,7 +14490,7 @@
           "phonetic": "ik-SPEN-siv"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -14573,7 +14575,7 @@
           "phonetic": "AP-li-kənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -14777,7 +14779,7 @@
           "phonetic": "di-MEN-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -15049,7 +15051,7 @@
           "phonetic": "uh-KER"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -15168,7 +15170,7 @@
           "phonetic": "rep-ri-ZENT"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -15321,7 +15323,7 @@
           "phonetic": "IN-sti-toot"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -15355,7 +15357,7 @@
           "phonetic": "ROY-əl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -15474,7 +15476,7 @@
           "phonetic": "PAS-en-jer"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -15576,7 +15578,7 @@
           "phonetic": "fi-ZISH-ən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -15678,7 +15680,7 @@
           "phonetic": "GYDE"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -15746,7 +15748,7 @@
           "phonetic": "in-ROHL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -15769,7 +15771,7 @@
       "wordType": "v."
     },
     {
-      "english": "num. trillion",
+      "english": "trillion",
       "pronunciation": {
         "british": {
           "ipa": "ˈtrɪljən",
@@ -15780,9 +15782,10 @@
           "phonetic": "TRIL-yən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
-      "source": "pte-intermediate-vocabulary-with-ipa"
+      "source": "pte-intermediate-vocabulary-with-ipa",
+      "wordType": "num."
     },
     {
       "english": "coin",
@@ -15830,7 +15833,7 @@
           "phonetic": "MY-kroh-soft"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -15898,7 +15901,7 @@
           "phonetic": "IM-ij"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -15983,7 +15986,7 @@
           "phonetic": "TROO-lee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -16051,7 +16054,7 @@
           "phonetic": "SPEED"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -16068,7 +16071,7 @@
           "phonetic": "PREZ-i-dənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -16221,7 +16224,7 @@
           "phonetic": "CHY-nə"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -16289,7 +16292,7 @@
           "phonetic": "EH-vuh-LOO-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -16306,7 +16309,7 @@
           "phonetic": "VOH-ter"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -16340,7 +16343,7 @@
           "phonetic": "KAIR-er"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -16459,7 +16462,7 @@
           "phonetic": "WYT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -16476,7 +16479,7 @@
           "phonetic": "MOR-əl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -16595,7 +16598,7 @@
           "phonetic": "TRAKT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -16612,7 +16615,7 @@
           "phonetic": "EM-fuh-syz"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -16629,7 +16632,7 @@
           "phonetic": "KWIK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -16646,7 +16649,7 @@
           "phonetic": "ANG-gəl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -16884,7 +16887,7 @@
           "phonetic": "moh-BIL-ə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -16918,7 +16921,7 @@
           "phonetic": "STYL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -16952,7 +16955,7 @@
           "phonetic": "SEL-uh-brayt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -16992,7 +16995,7 @@
       "wordType": "adj."
     },
     {
-      "english": "num. eight",
+      "english": "eight",
       "pronunciation": {
         "british": {
           "ipa": "eɪt",
@@ -17003,9 +17006,10 @@
           "phonetic": "AYT"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "easy",
       "category": "pte-intermediate",
-      "source": "pte-intermediate-vocabulary-with-ipa"
+      "source": "pte-intermediate-vocabulary-with-ipa",
+      "wordType": "num."
     },
     {
       "english": "painting",
@@ -17121,7 +17125,7 @@
           "phonetic": "EK-strə"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -17172,7 +17176,7 @@
           "phonetic": "uh-TEN-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -17223,7 +17227,7 @@
           "phonetic": "TYME-tay-bəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -17274,7 +17278,7 @@
           "phonetic": "HORS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -17461,7 +17465,7 @@
           "phonetic": "muh-JOR-i-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -17478,7 +17482,7 @@
           "phonetic": "i-KAH-nuh-mist"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -17512,7 +17516,7 @@
           "phonetic": "TOH-təl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -17614,7 +17618,7 @@
           "phonetic": "an-TARK-tik"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -17648,7 +17652,7 @@
           "phonetic": "BLAK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -17699,7 +17703,7 @@
           "phonetic": "di-MAH-kruh-see"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -17784,7 +17788,7 @@
           "phonetic": "OR-bit"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -17835,7 +17839,7 @@
           "phonetic": "AY-muh-ree"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -17852,7 +17856,7 @@
           "phonetic": "LAND-skayp"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -17886,7 +17890,7 @@
           "phonetic": "LAH-bee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -17954,7 +17958,7 @@
           "phonetic": "NOYZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -17971,7 +17975,7 @@
           "phonetic": "stuh-TIS-tik"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -18036,7 +18040,7 @@
           "phonetic": "GROWL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa"
     },
@@ -18068,7 +18072,7 @@
           "phonetic": "SEER-ee-əs-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa"
     },
@@ -18084,7 +18088,7 @@
           "phonetic": "ri-DUK-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa"
     },
@@ -18180,7 +18184,7 @@
           "phonetic": "IN-deks"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa"
     },
@@ -18213,7 +18217,7 @@
           "phonetic": "i-LEKT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -18315,7 +18319,7 @@
           "phonetic": "BEECH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -18400,7 +18404,7 @@
           "phonetic": "kuh-PAS-i-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -18434,7 +18438,7 @@
           "phonetic": "JOYNT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -18474,7 +18478,7 @@
       "wordType": "n."
     },
     {
-      "english": "num. twelve",
+      "english": "twelve",
       "pronunciation": {
         "british": {
           "ipa": "twɛlv",
@@ -18485,9 +18489,10 @@
           "phonetic": "TWELV"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
-      "source": "pte-intermediate-vocabulary-with-ipa"
+      "source": "pte-intermediate-vocabulary-with-ipa",
+      "wordType": "num."
     },
     {
       "english": "hunger",
@@ -18620,7 +18625,7 @@
           "phonetic": "duh-REK-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -18637,7 +18642,7 @@
           "phonetic": "BOH-nəs"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -18688,7 +18693,7 @@
           "phonetic": "DAYN-jər-əs"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -18722,7 +18727,7 @@
           "phonetic": "LYV-stahk"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -18739,7 +18744,7 @@
           "phonetic": "DUCH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -18790,7 +18795,7 @@
           "phonetic": "FLUD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -18807,7 +18812,7 @@
           "phonetic": "sit-choo-AY-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -18943,7 +18948,7 @@
           "phonetic": "HYOO-MID-ə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -19028,7 +19033,7 @@
           "phonetic": "DRIFT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -19079,7 +19084,7 @@
           "phonetic": "VIV-id-nəs"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -19130,7 +19135,7 @@
           "phonetic": "KAL-kyuh-layt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -19198,7 +19203,7 @@
           "phonetic": "TRY-əl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -19266,7 +19271,7 @@
           "phonetic": "SNAYK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -19436,7 +19441,7 @@
           "phonetic": "tek-NEEK"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -19538,7 +19543,7 @@
           "phonetic": "noo-TRISH-ən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -19861,7 +19866,7 @@
           "phonetic": "UP-er"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -19929,7 +19934,7 @@
           "phonetic": "BUH-ter-fly"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -20014,7 +20019,7 @@
           "phonetic": "for-MAY-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -20082,7 +20087,7 @@
           "phonetic": "STIK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -20201,7 +20206,7 @@
           "phonetic": "KLASS-room"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -20252,7 +20257,7 @@
           "phonetic": "TRIK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -20422,7 +20427,7 @@
           "phonetic": "SOH-see-AH-luh-jee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -20456,7 +20461,7 @@
           "phonetic": "PRIN-sə-pəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -20473,7 +20478,7 @@
           "phonetic": "BUNCH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -20524,7 +20529,7 @@
           "phonetic": "in-truh-DOOS"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -20558,7 +20563,7 @@
           "phonetic": "LEE-gəl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -20660,7 +20665,7 @@
           "phonetic": "PEES"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -20728,7 +20733,7 @@
           "phonetic": "LUNCH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -20762,7 +20767,7 @@
           "phonetic": "VOYS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -20796,7 +20801,7 @@
           "phonetic": "PRIN-sə-pəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -20847,7 +20852,7 @@
           "phonetic": "TIP-i-kə-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -20881,7 +20886,7 @@
           "phonetic": "OH-zohn"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -20983,7 +20988,7 @@
           "phonetic": "WY-der"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -21017,7 +21022,7 @@
           "phonetic": "SEK-ən-dair-ee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -21051,7 +21056,7 @@
           "phonetic": "LYFE-styl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -21119,7 +21124,7 @@
           "phonetic": "STAYT-mənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -21170,7 +21175,7 @@
           "phonetic": "ud-MIT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -21238,7 +21243,7 @@
           "phonetic": "rek-uh-MEND"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -21544,7 +21549,7 @@
           "phonetic": "AM-ber"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -21561,7 +21566,7 @@
           "phonetic": "uh-LAWNG"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -21612,7 +21617,7 @@
           "phonetic": "uh-LOW-əns"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -21680,7 +21685,7 @@
           "phonetic": "KLAYM"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -21697,7 +21702,7 @@
           "phonetic": "PAN-əl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -21765,7 +21770,7 @@
           "phonetic": "HENS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -21782,7 +21787,7 @@
           "phonetic": "SLYD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -21850,7 +21855,7 @@
           "phonetic": "kum-POH-nənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -21867,7 +21872,7 @@
           "phonetic": "THROH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -21918,7 +21923,7 @@
           "phonetic": "BER-əl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -21969,7 +21974,7 @@
           "phonetic": "EN-uh-mee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -22139,7 +22144,7 @@
           "phonetic": "UTH-er-wyz"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -22173,7 +22178,7 @@
           "phonetic": "in-FLAY-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -22207,7 +22212,7 @@
           "phonetic": "ik-STEN-siv"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -22247,7 +22252,7 @@
       "wordType": "adj."
     },
     {
-      "english": "num. twenty",
+      "english": "twenty",
       "pronunciation": {
         "british": {
           "ipa": "ˈtwenti",
@@ -22258,9 +22263,10 @@
           "phonetic": "TWEN-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
-      "source": "pte-intermediate-vocabulary-with-ipa"
+      "source": "pte-intermediate-vocabulary-with-ipa",
+      "wordType": "num."
     },
     {
       "english": "literal",
@@ -22359,7 +22365,7 @@
           "phonetic": "YOO-nuh-VUR-səl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -22461,7 +22467,7 @@
           "phonetic": "eye-DEN-tuh-fy"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -22631,7 +22637,7 @@
           "phonetic": "in-KUR-ij"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -22682,7 +22688,7 @@
           "phonetic": "CHEEF"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -22716,7 +22722,7 @@
           "phonetic": "DEPTH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -22835,7 +22841,7 @@
           "phonetic": "FAWLT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -22937,7 +22943,7 @@
           "phonetic": "kuh-REKT-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -23090,7 +23096,7 @@
           "phonetic": "WAHCH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -23107,7 +23113,7 @@
           "phonetic": "SAH-lid"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -23260,7 +23266,7 @@
           "phonetic": "WUN-der-fəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -23345,7 +23351,7 @@
           "phonetic": "KAH-pi-ryt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -23362,7 +23368,7 @@
           "phonetic": "KROWN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -23379,7 +23385,7 @@
           "phonetic": "JY-ənt"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -23481,7 +23487,7 @@
           "phonetic": "MOWNT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -23498,7 +23504,7 @@
           "phonetic": "ri-FER"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -23583,7 +23589,7 @@
           "phonetic": "AM-bi-GYOO-ə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -23736,7 +23742,7 @@
           "phonetic": "BERST"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -23770,7 +23776,7 @@
           "phonetic": "ik-STREEM-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -23855,7 +23861,7 @@
           "phonetic": "nuh-SES-ə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -23889,7 +23895,7 @@
           "phonetic": "uh-PART-ment"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -23906,7 +23912,7 @@
           "phonetic": "SMOHK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -23957,7 +23963,7 @@
           "phonetic": "OR-ki-strə"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -23991,7 +23997,7 @@
           "phonetic": "BAY-si-kə-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -24076,7 +24082,7 @@
           "phonetic": "PAIR-ənt-ing"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -24144,7 +24150,7 @@
           "phonetic": "SHAYP"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -24195,7 +24201,7 @@
           "phonetic": "DETH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -24297,7 +24303,7 @@
           "phonetic": "DUZ-ən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -24331,7 +24337,7 @@
           "phonetic": "SMYL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -24450,7 +24456,7 @@
           "phonetic": "UN-der-TAYK"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -24484,7 +24490,7 @@
           "phonetic": "hi-STOR-ee-ən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -24501,7 +24507,7 @@
           "phonetic": "SMART"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -24518,7 +24524,7 @@
           "phonetic": "AH-puh-rə"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -24603,7 +24609,7 @@
           "phonetic": "STEEM"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -24620,7 +24626,7 @@
           "phonetic": "KRAWS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -24739,7 +24745,7 @@
           "phonetic": "SOWTH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -24824,7 +24830,7 @@
           "phonetic": "REZ-i-dəns"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -24943,7 +24949,7 @@
           "phonetic": "CHAYN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -24994,7 +25000,7 @@
           "phonetic": "FOH-toh"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -25011,7 +25017,7 @@
           "phonetic": "SENS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -25079,7 +25085,7 @@
           "phonetic": "TEK-ni-kəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -25096,7 +25102,7 @@
           "phonetic": "OR-duh-nair-ee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -25198,7 +25204,7 @@
           "phonetic": "KLAS-i-kəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -25215,7 +25221,7 @@
           "phonetic": "SIM-uh-ler-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -25317,7 +25323,7 @@
           "phonetic": "ROH-mən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -25351,7 +25357,7 @@
           "phonetic": "MAH-luh-kyool"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -25402,7 +25408,7 @@
           "phonetic": "AWL-ter"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -25419,7 +25425,7 @@
           "phonetic": "TUCH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -25606,7 +25612,7 @@
           "phonetic": "FLINT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -25623,7 +25629,7 @@
           "phonetic": "ELS-WAIR"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -25657,7 +25663,7 @@
           "phonetic": "ri-NOO-uh-bəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -25776,7 +25782,7 @@
           "phonetic": "FLOHT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -25929,7 +25935,7 @@
           "phonetic": "PERTH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -25963,7 +25969,7 @@
           "phonetic": "WERLD-wyd"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -25980,7 +25986,7 @@
           "phonetic": "uh-DAHP"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -26133,7 +26139,7 @@
           "phonetic": "ree-AKT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -26150,7 +26156,7 @@
           "phonetic": "NEV-er"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -26218,7 +26224,7 @@
           "phonetic": "HAP-ee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -26269,7 +26275,7 @@
           "phonetic": "OR-gən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -26320,7 +26326,7 @@
           "phonetic": "in-TEN-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -26371,7 +26377,7 @@
           "phonetic": "PROOV"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -26422,7 +26428,7 @@
           "phonetic": "ki-LAH-muh-ter"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -26456,7 +26462,7 @@
           "phonetic": "SHAIR"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -26524,7 +26530,7 @@
           "phonetic": "AS-set"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -26558,7 +26564,7 @@
           "phonetic": "SY-kəl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -26575,7 +26581,7 @@
           "phonetic": "FAH-loh-ing"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -26609,7 +26615,7 @@
           "phonetic": "JOOS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -26660,7 +26666,7 @@
           "phonetic": "dy-ug-NOH-sis"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -26677,7 +26683,7 @@
           "phonetic": "SAHLV"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -26762,7 +26768,7 @@
           "phonetic": "i-KWIP-mənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -26779,7 +26785,7 @@
           "phonetic": "SPRAY"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -26813,7 +26819,7 @@
           "phonetic": "STEEL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -26847,7 +26853,7 @@
           "phonetic": "fer-TIL-ə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -26932,7 +26938,7 @@
           "phonetic": "GRAYD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -26983,7 +26989,7 @@
           "phonetic": "KOR-uh-layt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -27017,7 +27023,7 @@
           "phonetic": "BYOO-ti-fəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -27187,7 +27193,7 @@
           "phonetic": "BLAYM"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -27272,7 +27278,7 @@
           "phonetic": "LOH-er"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -27289,7 +27295,7 @@
           "phonetic": "AK-ter"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -27323,7 +27329,7 @@
           "phonetic": "TEL-uh-fohn"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -27357,7 +27363,7 @@
           "phonetic": "STOHN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -27391,7 +27397,7 @@
           "phonetic": "FOOT-print"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -27408,7 +27414,7 @@
           "phonetic": "SHIFT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -27425,7 +27431,7 @@
           "phonetic": "FYT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -27459,7 +27465,7 @@
           "phonetic": "MOO-vee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -27476,7 +27482,7 @@
           "phonetic": "KATCH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -27510,7 +27516,7 @@
           "phonetic": "ig-ZIS-təns"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -27544,7 +27550,7 @@
           "phonetic": "eye-DEN-ti-kəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -27578,7 +27584,7 @@
           "phonetic": "AK-yər-ə-see"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -27697,7 +27703,7 @@
           "phonetic": "trans-FORM"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -27799,7 +27805,7 @@
           "phonetic": "KLAHK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -27833,7 +27839,7 @@
           "phonetic": "NACH-ər-ə-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -27935,7 +27941,7 @@
           "phonetic": "uh-SIS-tənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -27952,7 +27958,7 @@
           "phonetic": "GREEN-lənd"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -27969,7 +27975,7 @@
           "phonetic": "HY-lyt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -27986,7 +27992,7 @@
           "phonetic": "PRAK-ti-kəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -28071,7 +28077,7 @@
           "phonetic": "IN-tuh-grayt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -28173,7 +28179,7 @@
           "phonetic": "IT-ə-lee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -28207,7 +28213,7 @@
           "phonetic": "KRAK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -28292,7 +28298,7 @@
           "phonetic": "kun-STRUKT"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -28309,7 +28315,7 @@
           "phonetic": "KROWD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -28326,7 +28332,7 @@
           "phonetic": "BRAYK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -28343,7 +28349,7 @@
           "phonetic": "uh-WORD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -28360,7 +28366,7 @@
           "phonetic": "LAY-er"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -28377,7 +28383,7 @@
           "phonetic": "STAHK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -28428,7 +28434,7 @@
           "phonetic": "in-TEN-siv"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -28445,7 +28451,7 @@
           "phonetic": "PRIM-ə-tiv"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -28462,7 +28468,7 @@
           "phonetic": "KRIS-chən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -28479,7 +28485,7 @@
           "phonetic": "KRUST"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -28613,7 +28619,7 @@
           "phonetic": "RAY-dee-oh"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa"
     },
@@ -28677,7 +28683,7 @@
           "phonetic": "di-PEN-dənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa"
     },
@@ -28709,7 +28715,7 @@
           "phonetic": "SYT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa"
     },
@@ -29007,7 +29013,7 @@
           "phonetic": "in-TEG-rə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -29075,7 +29081,7 @@
           "phonetic": "PEES"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -29126,7 +29132,7 @@
           "phonetic": "SKAYL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -29177,7 +29183,7 @@
           "phonetic": "SNAYL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -29262,7 +29268,7 @@
           "phonetic": "THER-for"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -29449,7 +29455,7 @@
           "phonetic": "di-VEL-uh-per"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -29500,7 +29506,7 @@
           "phonetic": "SEV-ən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -29602,7 +29608,7 @@
           "phonetic": "HYOO-MAN-ə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -29619,7 +29625,7 @@
           "phonetic": "BORD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -29687,7 +29693,7 @@
           "phonetic": "di-LAY"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -29738,7 +29744,7 @@
           "phonetic": "i-FEK-tiv"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -29755,7 +29761,7 @@
           "phonetic": "MAY-bee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -29823,7 +29829,7 @@
           "phonetic": "FAY-ver"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -29840,7 +29846,7 @@
           "phonetic": "it-SET-ər-ə"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa"
     },
@@ -29856,7 +29862,7 @@
           "phonetic": "FY-nəl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -29907,7 +29913,7 @@
           "phonetic": "KAH-lig"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -30060,7 +30066,7 @@
           "phonetic": "REK-ug-nyz"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -30077,7 +30083,7 @@
           "phonetic": "PY-lət"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -30128,7 +30134,7 @@
           "phonetic": "ROWND"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -30383,7 +30389,7 @@
           "phonetic": "uh-WAIR"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -30553,7 +30559,7 @@
           "phonetic": "dis-uh-PEER"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -30706,7 +30712,7 @@
           "phonetic": "ROOR-əl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -30740,7 +30746,7 @@
           "phonetic": "MOWTH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -30808,7 +30814,7 @@
           "phonetic": "TER-uh-tor-ee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -31080,7 +31086,7 @@
           "phonetic": "KOR-əl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -31131,7 +31137,7 @@
           "phonetic": "LOO-iss"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -31165,7 +31171,7 @@
           "phonetic": "pee-pee-TEE"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa"
     },
@@ -31402,7 +31408,7 @@
           "phonetic": "KYOO-ree-AH-sə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -31453,7 +31459,7 @@
           "phonetic": "NES-uh-sair-ee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -31470,7 +31476,7 @@
           "phonetic": "MOWS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -31555,7 +31561,7 @@
           "phonetic": "LAWNG TERM"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -31691,7 +31697,7 @@
           "phonetic": "ER-er"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -31742,7 +31748,7 @@
           "phonetic": "MEK-uh-niz-əm"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -31776,7 +31782,7 @@
           "phonetic": "STUF"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -31827,7 +31833,7 @@
           "phonetic": "KWY-ət"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -31895,7 +31901,7 @@
           "phonetic": "BERTH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -31963,7 +31969,7 @@
           "phonetic": "in-TER-prit"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -32031,7 +32037,7 @@
           "phonetic": "uh-KAD-ə-mee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -32065,7 +32071,7 @@
           "phonetic": "i-MOH-shə-nəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -32150,7 +32156,7 @@
           "phonetic": "LIT-ər-ə-see"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -32218,7 +32224,7 @@
           "phonetic": "TEL-uh-skohp"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -32337,7 +32343,7 @@
           "phonetic": "MEL-uh-TOH-nin"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -32405,7 +32411,7 @@
           "phonetic": "KAN-duh-dayt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -32473,7 +32479,7 @@
           "phonetic": "AT-ri-byoot"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -32541,7 +32547,7 @@
           "phonetic": "HOL-ee-wood"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -32558,7 +32564,7 @@
           "phonetic": "BY-er"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -32575,7 +32581,7 @@
           "phonetic": "SIV-uhl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -32643,7 +32649,7 @@
           "phonetic": "KEM-iss-tree"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -32745,7 +32751,7 @@
           "phonetic": "kuh-NAL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -32796,7 +32802,7 @@
           "phonetic": "AL-bəm"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -33034,7 +33040,7 @@
           "phonetic": "DEV-uh-stayt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -33153,7 +33159,7 @@
           "phonetic": "in-SEN-tiv"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -33221,7 +33227,7 @@
           "phonetic": "EE-mail"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -33255,7 +33261,7 @@
           "phonetic": "kun-FYOO-zhən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -33323,7 +33329,7 @@
           "phonetic": "di-PARCH-er"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -33442,7 +33448,7 @@
           "phonetic": "ih-KAHL-uh-jee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -33510,7 +33516,7 @@
           "phonetic": "HEV-ee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -33680,7 +33686,7 @@
           "phonetic": "BREK-fəst"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -33799,7 +33805,7 @@
           "phonetic": "ri-KUV-ər-ee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -33833,7 +33839,7 @@
           "phonetic": "VIZ-ət"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -33850,7 +33856,7 @@
           "phonetic": "KLIK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -33901,7 +33907,7 @@
           "phonetic": "truh-DISH-ən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -33918,7 +33924,7 @@
           "phonetic": "MIM-ik"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -33935,7 +33941,7 @@
           "phonetic": "puh-LOO-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -34139,7 +34145,7 @@
           "phonetic": "PREE-skool"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -34190,7 +34196,7 @@
           "phonetic": "ik-SPLOH-zhən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -34224,7 +34230,7 @@
           "phonetic": "KRIT-ə-siz-əm"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -34292,7 +34298,7 @@
           "phonetic": "LOH-kəl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -34326,7 +34332,7 @@
           "phonetic": "trans-LAYT"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -34445,7 +34451,7 @@
           "phonetic": "SMEL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -34513,7 +34519,7 @@
           "phonetic": "uh-GREE"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -34615,7 +34621,7 @@
           "phonetic": "PRINT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -34632,7 +34638,7 @@
           "phonetic": "HUR-ə-kayn"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -34666,7 +34672,7 @@
           "phonetic": "DOH-ner"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -34734,7 +34740,7 @@
           "phonetic": "PLAYN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -34768,7 +34774,7 @@
           "phonetic": "KOHST"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -34819,7 +34825,7 @@
           "phonetic": "SUR-kyə-layt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -34870,7 +34876,7 @@
           "phonetic": "MAR-kə-ting"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -34904,7 +34910,7 @@
           "phonetic": "PLAYT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -34938,7 +34944,7 @@
           "phonetic": "NAR-ə-tiv"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -35057,7 +35063,7 @@
           "phonetic": "FRESH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -35108,7 +35114,7 @@
           "phonetic": "SPORT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -35125,7 +35131,7 @@
           "phonetic": "TY-təl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -35278,7 +35284,7 @@
           "phonetic": "fuh-SIL-ə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -35295,7 +35301,7 @@
           "phonetic": "FOR-ə-ner"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -35431,7 +35437,7 @@
           "phonetic": "TROOTH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -35448,7 +35454,7 @@
           "phonetic": "DRINGK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -35567,7 +35573,7 @@
           "phonetic": "uh-LOHN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -35601,7 +35607,7 @@
           "phonetic": "PAR-ə-graf"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -35618,7 +35624,7 @@
           "phonetic": "pri-SKRYB"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -35720,7 +35726,7 @@
           "phonetic": "SUR-tən-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -35958,7 +35964,7 @@
           "phonetic": "LAT-ən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -35975,7 +35981,7 @@
           "phonetic": "GREEK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -36162,7 +36168,7 @@
           "phonetic": "GRAF"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -36179,7 +36185,7 @@
           "phonetic": "VIV-əd"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -36315,7 +36321,7 @@
           "phonetic": "WURK-fors"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -36349,7 +36355,7 @@
           "phonetic": "KAT-ə-gor-ee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -36434,7 +36440,7 @@
           "phonetic": "REECH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -36485,7 +36491,7 @@
           "phonetic": "SUB-mə-reen"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -36587,7 +36593,7 @@
           "phonetic": "BUL-ee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -36773,7 +36779,7 @@
           "phonetic": "STAF"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -36790,7 +36796,7 @@
           "phonetic": "AN-tə-bah-dee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -36824,7 +36830,7 @@
           "phonetic": "GYD-lyne"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -36875,7 +36881,7 @@
           "phonetic": "uh-VOYD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -36892,7 +36898,7 @@
           "phonetic": "EV-ree-day"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -37113,7 +37119,7 @@
           "phonetic": "CHART"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -37232,7 +37238,7 @@
           "phonetic": "jee-AH-grə-fee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -37266,7 +37272,7 @@
           "phonetic": "MED-əl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -37385,7 +37391,7 @@
           "phonetic": "NAH-vəl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -37402,7 +37408,7 @@
           "phonetic": "RIV-er"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -37640,7 +37646,7 @@
           "phonetic": "TREET-mənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -37657,7 +37663,7 @@
           "phonetic": "KAHG-nə-tiv"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -37776,7 +37782,7 @@
           "phonetic": "EK-sə-lənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -37980,7 +37986,7 @@
           "phonetic": "MIN-wyle"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -37997,7 +38003,7 @@
           "phonetic": "SHOOG-er"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -38048,7 +38054,7 @@
           "phonetic": "VAH-lən-TEER"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -38065,7 +38071,7 @@
           "phonetic": "by-LING-gwəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -38099,7 +38105,7 @@
           "phonetic": "KAHM-pə-tənt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -38133,7 +38139,7 @@
           "phonetic": "MET-əl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -38167,7 +38173,7 @@
           "phonetic": "CHIL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -38252,7 +38258,7 @@
           "phonetic": "KWOHT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -38354,7 +38360,7 @@
           "phonetic": "VUR-choo-ə-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -38388,7 +38394,7 @@
           "phonetic": "ik-STEN-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -38439,7 +38445,7 @@
           "phonetic": "STOR"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -38507,7 +38513,7 @@
           "phonetic": "EE-kə-NAHM-iks"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -38575,7 +38581,7 @@
           "phonetic": "di-VEL-əpt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -38660,7 +38666,7 @@
           "phonetic": "OH-ner"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -38762,7 +38768,7 @@
           "phonetic": "FRUNT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -38881,7 +38887,7 @@
           "phonetic": "LAHN-jə-tood"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -38932,7 +38938,7 @@
           "phonetic": "FOHN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -39102,7 +39108,7 @@
           "phonetic": "EK-sper-TEEZ"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -39153,7 +39159,7 @@
           "phonetic": "ES-ay"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -39187,7 +39193,7 @@
           "phonetic": "sə-LEK-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -39510,7 +39516,7 @@
           "phonetic": "LIM-it"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -39697,7 +39703,7 @@
           "phonetic": "in-KOWN-ter"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -39748,7 +39754,7 @@
           "phonetic": "POWND"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -39765,7 +39771,7 @@
           "phonetic": "ri-SESH-ən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -39799,7 +39805,7 @@
           "phonetic": "FRAYM-werk"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -39901,7 +39907,7 @@
           "phonetic": "AM-uh-ZOH-nee-ən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adj."
@@ -39935,7 +39941,7 @@
           "phonetic": "muh-NOR-ə-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -39952,7 +39958,7 @@
           "phonetic": "KORT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -40037,7 +40043,7 @@
           "phonetic": "GRANT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -40054,7 +40060,7 @@
           "phonetic": "MACH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -40122,7 +40128,7 @@
           "phonetic": "PAYNT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -40190,7 +40196,7 @@
           "phonetic": "PES-tə-syd"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -40291,7 +40297,7 @@
           "phonetic": "in-FEK-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -40376,7 +40382,7 @@
           "phonetic": "VID-ee-oh"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -40393,7 +40399,7 @@
           "phonetic": "KUR-ənt-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -40563,7 +40569,7 @@
           "phonetic": "GRAS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -40614,7 +40620,7 @@
           "phonetic": "HART"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -40631,7 +40637,7 @@
           "phonetic": "WAYST"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -40665,7 +40671,7 @@
           "phonetic": "UN-yən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -40699,7 +40705,7 @@
           "phonetic": "SERV"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -40733,7 +40739,7 @@
           "phonetic": "uh-RYZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "v."
@@ -40767,7 +40773,7 @@
           "phonetic": "BLAHK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."
@@ -40869,7 +40875,7 @@
           "phonetic": "KWYT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "adv."
@@ -40903,7 +40909,7 @@
           "phonetic": "MEE-ter"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
       "source": "pte-intermediate-vocabulary-with-ipa",
       "wordType": "n."

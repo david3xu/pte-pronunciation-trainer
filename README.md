@@ -2,7 +2,7 @@
 
 A specialized web-based pronunciation training application for **PTE exam preparation**, featuring comprehensive vocabulary and practice modes for all key PTE speaking and listening sections.
 
-**✅ v2.5.2 - PRODUCTION READY (Oct 2025)** - Bug-free event system, optimized caching, zero console errors!
+**✅ v2.5.3 - PRODUCTION READY (Oct 2025)** - Complete documentation overhaul, comprehensive guidelines, AI enforcement!
 
 ## 🎯 Key Features
 
@@ -185,13 +185,20 @@ pte-vocabulary-trainer/
 
 ## 📚 Documentation
 
-- **[📋 Documentation Index](docs/README.md)** - Complete documentation overview and navigation
-- **[🏗️ Architecture & Workflow](docs/ARCHITECTURE.md)** - System design, data flow, and interaction patterns
-- **[ System Workflow](docs/WORKFLOW.md)** - End-to-end workflow diagrams and class interactions
-- **[📖 API Reference](docs/API.md)** - Complete API documentation for all classes and methods
+**For Developers** (start here):
+- **[📐 Development Guidelines](docs/GUIDELINES.md)** ⭐ - Design principles and development rules (START HERE)
+- **[🤖 AI Assistant Guide](CLAUDE.md)** - Guidance for AI assistants working on this codebase
+- **[🏗️ Architecture & Workflow](docs/ARCHITECTURE.md)** - Technical system design and data flow
+- **[📖 API Reference](docs/API-REFERENCE.md)** - Complete API documentation for all classes and methods
+
+**For Operations**:
 - **[🚀 Deployment Guide](docs/DEPLOYMENT.md)** - Platform deployment and CI/CD pipeline
 - **[🔍 Troubleshooting](docs/TROUBLESHOOTING.md)** - Common issues and solutions
 - **[⚙️ Configuration Guide](#-centralized-configuration)** - Centralized configuration management
+
+**Project Documentation**:
+- **[📋 Documentation Index](docs/README.md)** - Complete documentation overview and navigation
+- **[📝 Changelog](CHANGELOG.md)** - Version history and release notes
 
 ## ⚙️ Centralized Configuration
 

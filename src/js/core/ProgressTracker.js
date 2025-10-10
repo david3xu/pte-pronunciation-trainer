@@ -1,9 +1,19 @@
-// ProgressTracker - Handles learning progress and status updates
+/**
+ * ProgressTracker - Handles learning progress and status updates
+ * Displays current word/item position and emits progress events
+ */
 class ProgressTracker {
     constructor() {
         this.currentIndex = 0;
+        this.config = window.appConfig || new AppConfig();
     }
 
+    /**
+     * Update progress display and emit progress event
+     * @param {number} currentIndex - Current word/item index (0-based)
+     * @param {number} totalWords - Total number of words/items
+     * @param {Object} [currentWord=null] - Current word/item object
+     */
     updateProgress(currentIndex, totalWords, currentWord = null) {
         this.currentIndex = currentIndex;
         console.log(`[ProgressTracker] 📊 updateProgress called: index=${currentIndex}, total=${totalWords}, word="${currentWord?.english || 'none'}"`);
@@ -85,7 +95,8 @@ class ProgressTracker {
         }
 
         // Emit progress event for other modules
-        window.eventBus.emit('progress:updated', {
+        const progressEvent = this.config.get('events.progress.updated') || 'progress:updated';
+        window.eventBus.emit(progressEvent, {
             currentIndex,
             totalWords,
             percentage: Math.round(((currentIndex + 1) / totalWords) * 100),
@@ -93,6 +104,10 @@ class ProgressTracker {
         });
     }
 
+    /**
+     * Update status text and emit status event
+     * @param {string} status - Status message to display
+     */
     updateStatus(status) {
         console.log(`[ProgressTracker] 📢 updateStatus called: "${status}"`);
         const progressElement = document.getElementById('progressText');
@@ -103,20 +118,32 @@ class ProgressTracker {
 
 
         // Emit status event for other modules
-        window.eventBus.emit('status:updated', { status });
+        const statusEvent = this.config.get('events.progress.status.updated') || 'progress:status:updated';
+        window.eventBus.emit(statusEvent, { status });
     }
 
+    /**
+     * Show error message and emit error event
+     * @param {string} message - Error message to display
+     */
     showError(message) {
         console.error(message);
         this.updateStatus(`Error: ${message}`);
 
         // Emit error event for other modules
-        window.eventBus.emit('error:occurred', {
+        const errorEvent = this.config.get('events.progress.error') || 'progress:error';
+        window.eventBus.emit(errorEvent, {
             message,
             timestamp: new Date().toISOString()
         });
     }
 
+    /**
+     * Show learning statistics and emit stats event
+     * @param {number} wordsCompleted - Number of words completed
+     * @param {number} totalTime - Total time in seconds
+     * @param {number|null} [accuracy=null] - Accuracy percentage (0-100)
+     */
     showLearningStats(wordsCompleted, totalTime, accuracy = null) {
         let statsMessage = `📊 Session: ${wordsCompleted} words`;
         if (totalTime) {
@@ -129,7 +156,8 @@ class ProgressTracker {
         this.updateStatus(statsMessage);
 
         // Emit stats event
-        window.eventBus.emit('stats:updated', {
+        const statsEvent = this.config.get('events.progress.stats.updated') || 'progress:stats:updated';
+        window.eventBus.emit(statsEvent, {
             wordsCompleted,
             totalTime,
             accuracy,

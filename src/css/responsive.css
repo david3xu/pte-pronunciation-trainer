@@ -77,20 +77,27 @@
     font-size: 1.25rem;
   }
   
-  /* Legacy .english-word class from style.css */
+  /* Legacy .english-word class - scale down more on tiny screens */
   .english-word {
-    font-size: clamp(24px, 7vw, 32px); /* Scale down on tiny screens */
+    font-size: clamp(20px, 5vw, 28px);
+  }
+  
+  /* Reduce button gap on very small screens - keep in ONE row */
+  .primary-controls {
+    gap: 8px;
     padding: 0 5px;
   }
   
-  /* Reduce button gap on very small screens */
-  .primary-controls {
-    gap: 10px;
-    padding: 0 10px;
+  .btn {
+    padding: 10px 12px;
+    font-size: 13px;
+    min-width: 60px;
   }
   
-  .btn {
-    min-width: 70px; /* Smaller buttons on tiny screens */
+  .btn--large {
+    padding: 12px 16px;
+    font-size: 14px;
+    min-width: 75px;
   }
 }
 
@@ -268,7 +275,7 @@
 /* === LANDSCAPE ORIENTATION ADJUSTMENTS === */
 @media (orientation: landscape) and (max-height: 500px) {
   .learning-area {
-    padding: 20px;
+    padding: 15px 20px;
     min-height: auto;
   }
   
@@ -278,12 +285,17 @@
   }
   
   .word-display {
-    min-height: 200px; /* Smaller fixed height in landscape */
+    height: 180px;        /* Fixed smaller height in landscape */
+    max-height: 180px;
   }
   
   .word-display__english {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-bottom: 0.5rem;
+  }
+  
+  .english-word {
+    font-size: clamp(20px, 4vw, 28px);  /* Scale down in landscape */
   }
   
   .word-display__chinese {

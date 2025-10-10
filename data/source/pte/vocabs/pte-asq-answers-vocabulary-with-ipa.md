@@ -458,16 +458,16 @@ This collection lists answers from the PTE ASQ dataset in the exact original ord
 448. n. Running | /ˈrʌnɪŋ/ — sounds like **RUN-ning** | /ˈrʌnɪŋ/ — sounds like **RUN-ning**
 449. n. Bed | /bɛd/ — sounds like **BED** | /bɛd/ — sounds like **BED**
 450. n. Printer | /ˈprɪntə/ — sounds like **PRIN-tuh** | /ˈprɪntər/ — sounds like **PRIN-ter**
-451. Taxonomy | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-452. Community service | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-453. Illicit drugs | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-454. Millennium | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-455. High employment | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-456. Radiology | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-457. Cardiology | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-458. Ophthalmology | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-459. Book | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-460. Grocery | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
+451. n. Taxonomy | /tækˈsɒnəmi/ — sounds like **tak-SON-uh-mee** | /tækˈsɑːnəmi/ — sounds like **tak-SAH-nuh-mee**
+452. n. Community service | /kəˈmjuːnəti ˈsɜːvɪs/ — sounds like **kuh-MYOO-nuh-tee SER-vis** | /kəˈmjuːnəti ˈsɜːrvɪs/ — sounds like **kuh-MYOO-nuh-tee SER-vis**
+453. n. Illicit drugs | /ɪˈlɪsɪt drʌɡz/ — sounds like **ih-LIS-it DRUGZ** | /ɪˈlɪsɪt drʌɡz/ — sounds like **ih-LIS-it DRUGZ**
+454. n. Millennium | /mɪˈleniəm/ — sounds like **mih-LEN-ee-um** | /mɪˈleniəm/ — sounds like **mih-LEN-ee-um**
+455. n. High employment | /haɪ ɪmˈplɔɪmənt/ — sounds like **HY im-PLOY-ment** | /haɪ ɪmˈplɔɪmənt/ — sounds like **HY im-PLOY-ment**
+456. n. Radiology | /ˌreɪdiˈɒlədʒi/ — sounds like **ray-dee-OL-uh-jee** | /ˌreɪdiˈɑːlədʒi/ — sounds like **ray-dee-AH-luh-jee**
+457. n. Cardiology | /ˌkɑːdiˈɒlədʒi/ — sounds like **kar-dee-OL-uh-jee** | /ˌkɑːrdiˈɑːlədʒi/ — sounds like **kar-dee-AH-luh-jee**
+458. n. Ophthalmology | /ˌɒfθælˈmɒlədʒi/ — sounds like **of-thal-MOL-uh-jee** | /ˌɑːfθælˈmɑːlədʒi/ — sounds like **ahf-thal-MAH-luh-jee**
+459. n. Book | /bʊk/ — sounds like **BOOK** | /bʊk/ — sounds like **BOOK**
+460. n. Grocery | /ˈɡrəʊsəri/ — sounds like **GROH-suh-ree** | /ˈɡroʊsəri/ — sounds like **GROH-sə-ree**
 461. n. Freezer | /ˈfriːzə/ — sounds like **FREE-zuh** | /ˈfrizər/ — sounds like **FREE-zer**
 462. n. Gym | /dʒɪm/ — sounds like **JIM** | /dʒɪm/ — sounds like **JIM**
 463. n. Gallery | /ˈɡæləri/ — sounds like **GAL-uh-ree** | /ˈɡæləri/ — sounds like **GAL-ə-ree**

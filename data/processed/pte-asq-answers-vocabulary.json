@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-10-10T02:57:25.194Z",
+    "generated": "2025-10-10T03:13:57.466Z",
     "totalTerms": 606,
     "source": "pte-asq-answers-vocabulary-with-ipa",
     "description": "PTE ASQ Answers Vocabulary (692 answer words with IPA)",
@@ -6985,145 +6985,154 @@
       "english": "Taxonomy",
       "pronunciation": {
         "british": {
-          "ipa": "IPA",
-          "phonetic": "PHONETIC"
+          "ipa": "tækˈsɒnəmi",
+          "phonetic": "tak-SON-uh-mee"
         },
         "american": {
-          "ipa": "IPA",
-          "phonetic": "PHONETIC"
+          "ipa": "tækˈsɑːnəmi",
+          "phonetic": "tak-SAH-nuh-mee"
         }
       },
       "difficulty": "normal",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "n."
     },
     {
       "english": "Community service",
       "pronunciation": {
         "british": {
-          "ipa": "IPA",
-          "phonetic": "PHONETIC"
+          "ipa": "kəˈmjuːnəti ˈsɜːvɪs",
+          "phonetic": "kuh-MYOO-nuh-tee SER-vis"
         },
         "american": {
-          "ipa": "IPA",
-          "phonetic": "PHONETIC"
+          "ipa": "kəˈmjuːnəti ˈsɜːrvɪs",
+          "phonetic": "kuh-MYOO-nuh-tee SER-vis"
         }
       },
       "difficulty": "hard",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "n."
     },
     {
       "english": "Illicit drugs",
       "pronunciation": {
         "british": {
-          "ipa": "IPA",
-          "phonetic": "PHONETIC"
+          "ipa": "ɪˈlɪsɪt drʌɡz",
+          "phonetic": "ih-LIS-it DRUGZ"
         },
         "american": {
-          "ipa": "IPA",
-          "phonetic": "PHONETIC"
+          "ipa": "ɪˈlɪsɪt drʌɡz",
+          "phonetic": "ih-LIS-it DRUGZ"
         }
       },
       "difficulty": "hard",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "n."
     },
     {
       "english": "Millennium",
       "pronunciation": {
         "british": {
-          "ipa": "IPA",
-          "phonetic": "PHONETIC"
+          "ipa": "mɪˈleniəm",
+          "phonetic": "mih-LEN-ee-um"
         },
         "american": {
-          "ipa": "IPA",
-          "phonetic": "PHONETIC"
+          "ipa": "mɪˈleniəm",
+          "phonetic": "mih-LEN-ee-um"
         }
       },
       "difficulty": "hard",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "n."
     },
     {
       "english": "High employment",
       "pronunciation": {
         "british": {
-          "ipa": "IPA",
-          "phonetic": "PHONETIC"
+          "ipa": "haɪ ɪmˈplɔɪmənt",
+          "phonetic": "HY im-PLOY-ment"
         },
         "american": {
-          "ipa": "IPA",
-          "phonetic": "PHONETIC"
+          "ipa": "haɪ ɪmˈplɔɪmənt",
+          "phonetic": "HY im-PLOY-ment"
         }
       },
       "difficulty": "hard",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "n."
     },
     {
       "english": "Radiology",
       "pronunciation": {
         "british": {
-          "ipa": "IPA",
-          "phonetic": "PHONETIC"
+          "ipa": "ˌreɪdiˈɒlədʒi",
+          "phonetic": "ray-dee-OL-uh-jee"
         },
         "american": {
-          "ipa": "IPA",
-          "phonetic": "PHONETIC"
+          "ipa": "ˌreɪdiˈɑːlədʒi",
+          "phonetic": "ray-dee-AH-luh-jee"
         }
       },
       "difficulty": "normal",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "n."
     },
     {
       "english": "Cardiology",
       "pronunciation": {
         "british": {
-          "ipa": "IPA",
-          "phonetic": "PHONETIC"
+          "ipa": "ˌkɑːdiˈɒlədʒi",
+          "phonetic": "kar-dee-OL-uh-jee"
         },
         "american": {
-          "ipa": "IPA",
-          "phonetic": "PHONETIC"
+          "ipa": "ˌkɑːrdiˈɑːlədʒi",
+          "phonetic": "kar-dee-AH-luh-jee"
         }
       },
       "difficulty": "hard",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "n."
     },
     {
       "english": "Ophthalmology",
       "pronunciation": {
         "british": {
-          "ipa": "IPA",
-          "phonetic": "PHONETIC"
+          "ipa": "ˌɒfθælˈmɒlədʒi",
+          "phonetic": "of-thal-MOL-uh-jee"
         },
         "american": {
-          "ipa": "IPA",
-          "phonetic": "PHONETIC"
+          "ipa": "ˌɑːfθælˈmɑːlədʒi",
+          "phonetic": "ahf-thal-MAH-luh-jee"
         }
       },
       "difficulty": "hard",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "n."
     },
     {
       "english": "Grocery",
       "pronunciation": {
         "british": {
-          "ipa": "IPA",
-          "phonetic": "PHONETIC"
+          "ipa": "ˈɡrəʊsəri",
+          "phonetic": "GROH-suh-ree"
         },
         "american": {
-          "ipa": "IPA",
-          "phonetic": "PHONETIC"
+          "ipa": "ˈɡroʊsəri",
+          "phonetic": "GROH-sə-ree"
         }
       },
       "difficulty": "normal",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "n."
     },
     {
       "english": "Freezer",

@@ -1,10 +1,17 @@
-// PTEApp - Application coordinator for PTE branch
+/**
+ * PTEApp - Application coordinator for PTE branch
+ * Manages module initialization, dependency ordering, and application lifecycle
+ */
 class PTEVocabularyTrainer {
   constructor() {
     this.initialized = false;
     this.init();
   }
 
+  /**
+   * Initialize the application
+   * Sets up modules in dependency order and emits app:initialized event
+   */
   init() {
     // Prevent multiple initialization
     if (this.initialized) {
@@ -33,13 +40,19 @@ class PTEVocabularyTrainer {
 
     // Emit app initialization event
     if (window.eventBus) {
-      window.eventBus.emit('app:initialized', {
+      const appInitEvent = window.appConfig.get('events.app.initialized') || 'app:initialized';
+      window.eventBus.emit(appInitEvent, {
         timestamp: new Date().toISOString(),
         version: '3.0-pte'
       });
     }
   }
 
+  /**
+   * Initialize all application modules in correct dependency order
+   * Critical modules will throw errors if initialization fails
+   * @async
+   */
   async initializeModules() {
     console.log('🚀 PTEApp: Starting module initialization...');
     const initStart = Date.now();
@@ -131,6 +144,11 @@ class PTEVocabularyTrainer {
     console.log(`✅ PTEApp: Initialization complete, application ready for events`);
   }
 
+  /**
+   * Initialize SettingsModule for event-driven settings architecture
+   * @async
+   * @throws {Error} If SettingsModule class not found or initialization fails
+   */
   async initializeSettingsModule() {
     // Initialize SettingsModule for event-driven settings architecture
     if (typeof SettingsModule !== 'undefined') {
@@ -218,6 +236,11 @@ class PTEVocabularyTrainer {
     return true;
   }
 
+  /**
+   * Initialize DatasetManager for Phase 2 (RS, ASQ, WFD support)
+   * Non-critical - logs warning if initialization fails
+   * @async
+   */
   async initializeDatasetManager() {
     // Initialize DatasetManager for Phase 2 (RS, ASQ, WFD support)
     if (window.DatasetManager) {

@@ -479,7 +479,8 @@ class AppConfig {
                     difficulty: {
                         filtered: 'vocabulary:difficulty:filtered'
                     },
-                    error: 'vocabulary:error'
+                    error: 'vocabulary:error',
+                    loadError: 'vocabulary:load-error'
                 },
                 
                 // Progress tracking
@@ -504,6 +505,11 @@ class AppConfig {
                 // Application lifecycle
                 app: {
                     initialized: 'app:initialized'
+                },
+
+                // System-level events
+                system: {
+                    error: 'system:error'
                 }
             },
 

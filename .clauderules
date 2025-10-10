@@ -1,0 +1,72 @@
+# Claude Code Rules for PTE Pronunciation Trainer
+
+You are working on the PTE Pronunciation Trainer codebase. Follow these rules STRICTLY:
+
+## 🚨 Critical Rules (NEVER violate these)
+
+### 1. Zero Hardcoded Values
+- ALL configuration MUST be in `src/js/shared/Config.js`
+- Get values via: `window.appConfig.get('path.to.value')`
+- NEVER hardcode: event names, file paths, TTS settings, UI config, colors, spacing
+
+### 2. Event-Driven Communication ONLY
+- Modules communicate ONLY via EventBus
+- NEVER call methods directly between modules
+- Pattern: `window.eventBus.emit('event:name', data)`
+- All event names defined in `Config.js` → `events` object
+
+### 3. CSS Design Tokens ONLY
+- Use CSS variables from `variables.css`
+- NEVER hardcode: colors, spacing, transitions, shadows
+- Pattern: `var(--primary-color)`, `var(--space-lg)`, `var(--transition-fast)`
+
+### 4. Settings via Handler Registry
+- Change settings via events: `emit('settings:request-change', {key, value})`
+- NEVER call `settingsModule.setSetting()` directly
+- Each setting has: `validate()`, `apply()`, `default`
+
+## 📚 Required Reading Order
+
+Before making changes:
+1. Read `CLAUDE.md` - AI-specific guidance
+2. Read `docs/GUIDELINES.md` - Design principles
+3. Read relevant sections of `docs/ARCHITECTURE.md`
+
+## ✅ Pre-Commit Checklist
+
+Before suggesting code changes, verify:
+- [ ] No hardcoded values (check Config.js exists for all values)
+- [ ] Inter-module communication uses EventBus only
+- [ ] Event names retrieved from Config.js
+- [ ] CSS uses design tokens (no magic numbers)
+- [ ] Dependencies injected via constructor
+- [ ] Error handling present (try-catch, validation)
+- [ ] JSDoc added for public methods
+
+## 🚫 Common Mistakes to AVOID
+
+1. ❌ `const speed = 1.0;` → ✅ `const speed = window.appConfig.get('tts.speeds.normal');`
+2. ❌ `window.audioControls.start();` → ✅ `window.eventBus.emit('audio:autoplay:start');`
+3. ❌ `color: #4f46e5;` → ✅ `color: var(--primary-color);`
+4. ❌ `settingsModule.setSetting('speed', 0.8);` → ✅ `emit('settings:request-change', {key: 'speed', value: 0.8})`
+
+## 📖 Key Files Reference
+
+- `src/js/shared/Config.js` (715 lines) - ALL configuration
+- `src/js/utils/EventBus.js` - Event system
+- `src/js/core/SettingsModule.js` - Settings management
+- `src/css/variables.css` - Design tokens (222 CSS vars)
+- `docs/GUIDELINES.md` - Design principles
+- `CLAUDE.md` - AI assistant guidance
+
+## 🎯 When Adding Features
+
+1. Add config to `Config.js` first
+2. Define events in `Config.js` → `events` object
+3. Use EventBus for communication
+4. Add CSS tokens to `variables.css`
+5. Update `GUIDELINES.md` if new pattern introduced
+
+---
+
+**If you're unsure about any rule, ask the user before proceeding.**

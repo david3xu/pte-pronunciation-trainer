@@ -56,7 +56,7 @@ class AudioControls {
 
         // Also listen for the standardized event as a backup
         const learningModeChangedEvent = window.appConfig.get('events.mode.learning.changed');
-        window.eventBus.on(learningModeChangedEvent, (data) => {
+        window.eventBus.on(learningModeChangedEvent, () => {
             console.log('[AudioControls] 🔄 Learning mode changed event received, resetting index to 0');
             // Reset current index to start from the beginning of the new book
             this.setCurrentIndex(0);
@@ -260,10 +260,10 @@ class AudioControls {
                 try {
                     // Use SettingsModule to get the current dataset
                     const settingsModule = window.settingsModule;
-                    const practiceDataset = settingsModule ? settingsModule.get('practiceDataset') : null;
+                    const practiceDatasetSetting = settingsModule ? settingsModule.get('practiceDataset') : null;
 
-                    if (practiceDataset && window.uiController.loadPracticeDataset) {
-                        console.log(`[AudioControls] 🔄 Loading dataset: ${practiceDataset}`);
+                    if (practiceDatasetSetting && window.uiController.loadPracticeDataset) {
+                        console.log(`[AudioControls] 🔄 Loading dataset: ${practiceDatasetSetting}`);
 
                         // Give feedback to user
                         window.progressTracker?.updateStatus(`Loading ${currentMode.toUpperCase()} dataset...`);

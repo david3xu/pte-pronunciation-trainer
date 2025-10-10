@@ -46,7 +46,8 @@ class PTEVocabularyManager {
       this.setDifficulty(value);
       console.log(`[PTEVocabularyManager] Difficulty changed to ${value}`);
       // Emit event to update UI
-      window.eventBus.emit('vocabulary:updated', {
+      const vocabUpdatedEvent = this.config.get('events.vocabulary.updated') || 'vocabulary:updated';
+      window.eventBus.emit(vocabUpdatedEvent, {
         totalWords: this.getTotalWords(),
         difficulty: value
       });
@@ -54,7 +55,8 @@ class PTEVocabularyManager {
       await this.setLearningMode(value);
       console.log(`[PTEVocabularyManager] Learning mode changed to ${value}`);
       // Emit event to update UI
-      window.eventBus.emit('vocabulary:updated', {
+      const vocabUpdatedEvent = this.config.get('events.vocabulary.updated') || 'vocabulary:updated';
+      window.eventBus.emit(vocabUpdatedEvent, {
         totalWords: this.getTotalWords(),
         learningMode: value
       });
@@ -151,7 +153,8 @@ class PTEVocabularyManager {
         
         // Emit error event for UI notification
         if (window.eventBus) {
-          window.eventBus.emit('vocabulary:load-error', {
+          const loadErrorEvent = this.config.get('events.vocabulary.loadError') || 'vocabulary:load-error';
+          window.eventBus.emit(loadErrorEvent, {
             mode,
             error: errorMsg,
             severity: 'warning'
@@ -166,7 +169,8 @@ class PTEVocabularyManager {
       
       // Emit error event for centralized error handling
       if (window.eventBus) {
-        window.eventBus.emit('vocabulary:load-error', {
+        const loadErrorEvent = this.config.get('events.vocabulary.loadError') || 'vocabulary:load-error';
+        window.eventBus.emit(loadErrorEvent, {
           mode,
           error: errorMsg,
           originalError: error,

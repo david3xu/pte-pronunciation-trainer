@@ -1,22 +1,11 @@
 /**
  * Responsive Design Styles for CCL Pronunciation Trainer
  * Mobile-first approach with progressive enhancement
+ *
+ * CSS VARIABLES - Defined in variables.css
+ * All CSS variables are centralized in variables.css
+ * NO duplicate definitions allowed per GUIDELINES.md
  */
-
-/* === CSS CUSTOM PROPERTIES === */
-:root {
-  --mobile-padding: 1rem;
-  --tablet-padding: 2rem;
-  --desktop-padding: 3rem;
-  
-  --mobile-font-base: 1rem;
-  --tablet-font-base: 1.125rem;
-  --desktop-font-base: 1.125rem;
-  
-  --mobile-card-padding: 1.5rem;
-  --tablet-card-padding: 2rem;
-  --desktop-card-padding: 2.5rem;
-}
 
 /* === BASE MOBILE STYLES (320px+) === */
 .app-container {
@@ -75,11 +64,8 @@
 
 /* === SMALL MOBILE OPTIMIZATION (up to 374px) === */
 @media (max-width: 374px) {
-  :root {
-    --mobile-padding: 0.75rem;
-    --mobile-card-padding: 1rem;
-  }
-  
+  /* CSS variables defined in variables.css - no overrides here */
+
   .app-header h1 {
     font-size: 1.5rem;
   }
@@ -302,11 +288,11 @@
 /* === HIGH DPI DISPLAYS === */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .vocab-card {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: var(--shadow-sm);
   }
-  
+
   .btn {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-sm);
   }
 }
 

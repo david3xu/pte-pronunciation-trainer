@@ -380,6 +380,10 @@ class AppConfig {
                     duration: 300,
                     easing: 'ease-in-out'
                 },
+                delays: {
+                    retry: 500,  // Delay before retrying dataset load
+                    transition: 300  // UI transition delay
+                },
                 elements: {
                     pronunciationToggle: {
                         british: '🇬🇧',

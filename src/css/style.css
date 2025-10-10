@@ -1,82 +1,8 @@
 /* ============================================
-   CSS VARIABLES - Light & Dark Mode
+   CSS VARIABLES - Defined in variables.css
+   All CSS variables are centralized in variables.css
+   NO duplicate definitions allowed per GUIDELINES.md
    ============================================ */
-:root {
-    /* Background Colors */
-    --bg-body: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --bg-primary: #ffffff;
-    --bg-secondary: #F8F9FA;
-    --bg-card: #F7FAFC;
-    --bg-header: #4a5568;
-
-    /* Text Colors */
-    --text-primary: #1f2937;
-    --text-secondary: #4A5568;
-    --text-muted: #718096;
-    --text-light: #ffffff;
-
-    /* Border Colors */
-    --border-light: #E2E8F0;
-    --border-medium: #d1d5db;
-
-    /* Accent Colors */
-    --color-blue: #2B6CB0;
-    --color-blue-hover: #3182CE;
-    --color-purple: #805AD5;
-    --color-gray: #6C757D;
-    --color-gray-hover: #545B62;
-
-    /* Status Colors */
-    --color-success: #22c55e;
-    --color-success-light: #E6FFFA;
-    --color-warning: #FEFCBF;
-    --color-error: #FED7D7;
-
-    /* Shadow */
-    --shadow-sm: 0 0 20px rgba(0, 0, 0, 0.1);
-    --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.15);
-    --shadow-panel: 0 -4px 6px rgba(0, 0, 0, 0.05);
-}
-
-/* Dark Mode Variables */
-@media (prefers-color-scheme: dark) {
-    :root {
-        /* Background Colors */
-        --bg-body: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
-        --bg-primary: #2d3748;
-        --bg-secondary: #1a202c;
-        --bg-card: rgba(26, 32, 44, 0.8);
-        --bg-header: #1a202c;
-
-        /* Text Colors */
-        --text-primary: #e2e8f0;
-        --text-secondary: #cbd5e0;
-        --text-muted: #a0aec0;
-        --text-light: #f7fafc;
-
-        /* Border Colors */
-        --border-light: #4a5568;
-        --border-medium: #4a5568;
-
-        /* Accent Colors */
-        --color-blue: #90cdf4;
-        --color-blue-hover: #4299e1;
-        --color-purple: #fbb6ce;
-        --color-gray: #4a5568;
-        --color-gray-hover: #2d3748;
-
-        /* Status Colors */
-        --color-success: #22c55e;
-        --color-success-light: rgba(26, 32, 44, 0.8);
-        --color-warning: rgba(26, 32, 44, 0.8);
-        --color-error: rgba(26, 32, 44, 0.8);
-
-        /* Shadow */
-        --shadow-sm: 0 0 20px rgba(0, 0, 0, 0.5);
-        --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.3);
-        --shadow-panel: 0 -4px 6px rgba(0, 0, 0, 0.2);
-    }
-}
 
 /* Reset and base styles */
 * {

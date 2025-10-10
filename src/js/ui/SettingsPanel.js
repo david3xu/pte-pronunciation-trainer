@@ -37,8 +37,9 @@ class SettingsPanel {
         // Phase 2: Setup practice mode switching
         this.setupPracticeModeSwitch();
 
-        // Listen for voice changes to update dropdown
-        window.eventBus.on('voice:preferenceChanged', (data) => {
+        // Listen for voice changes to update dropdown (from Config.js)
+        const voicePreferenceChangedEvent = window.appConfig?.get('events.voice.preference.changed') || 'voice:preference:changed';
+        window.eventBus.on(voicePreferenceChangedEvent, (data) => {
             this.updateVoiceSelection(data.voiceName);
         });
 

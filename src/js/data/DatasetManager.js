@@ -135,10 +135,11 @@ class DatasetManager {
             }
 
             console.log(`✅ DatasetManager: Loaded ${datasetType} (${itemCount} items)`);
-            
-            // Emit event
-            if (window.eventBus) {
-                window.eventBus.emit('dataset:loaded', {
+
+            // Emit dataset loaded event (from Config.js)
+            if (window.eventBus && this.config) {
+                const datasetLoadedEvent = this.config.get('events.dataset.loaded') || 'dataset:loaded';
+                window.eventBus.emit(datasetLoadedEvent, {
                     type: datasetType,
                     itemCount: itemCount
                 });
@@ -148,15 +149,16 @@ class DatasetManager {
 
         } catch (error) {
             console.error(`❌ DatasetManager: Failed to load ${datasetType}`, error);
-            
-            // Emit error event
-            if (window.eventBus) {
-                window.eventBus.emit('dataset:error', {
+
+            // Emit dataset error event (from Config.js)
+            if (window.eventBus && this.config) {
+                const datasetErrorEvent = this.config.get('events.dataset.error') || 'dataset:error';
+                window.eventBus.emit(datasetErrorEvent, {
                     type: datasetType,
                     error: error
                 });
             }
-            
+
             throw error;
         }
     }

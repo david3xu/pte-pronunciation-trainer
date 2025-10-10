@@ -34,7 +34,9 @@ class PTEVocabularyManager {
    * @private
    */
   _attachEventListeners() {
-    window.eventBus.on('setting:changed', this._handleSettingChange.bind(this));
+    // Listen to standardized settings:changed event from Config.js
+    const settingsChangedEvent = window.appConfig?.get('events.settings.changed') || 'settings:changed';
+    window.eventBus.on(settingsChangedEvent, this._handleSettingChange.bind(this));
   }
 
   /**

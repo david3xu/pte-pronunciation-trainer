@@ -1,0 +1,49 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "========================================="
+echo "  Pre-Commit Validation"
+echo "========================================="
+
+# 1. Documentation validation
+echo "\n📚 Running documentation validation..."
+node scripts/validate-docs.js
+DOC_EXIT=$?
+
+# 2. Structure validation
+echo "\n📁 Running structure validation..."
+node scripts/validate-structure.js
+STRUCT_EXIT=$?
+
+# 3. Code linting (if ESLint configured)
+if [ -f ".eslintrc.js" ] || [ -f ".eslintrc.json" ]; then
+  echo "\n🔍 Running ESLint..."
+  npm run lint --silent
+  LINT_EXIT=$?
+else
+  LINT_EXIT=0
+fi
+
+# 4. Run tests
+echo "\n🧪 Running tests..."
+npm test --silent
+TEST_EXIT=$?
+
+# Summary
+echo "\n========================================="
+echo "  Validation Summary"
+echo "========================================="
+echo "Documentation:  $([ $DOC_EXIT -eq 0 ] && echo '✓ PASS' || echo '✗ FAIL')"
+echo "Structure:      $([ $STRUCT_EXIT -eq 0 ] && echo '✓ PASS' || echo '✗ FAIL')"
+echo "Linting:        $([ $LINT_EXIT -eq 0 ] && echo '✓ PASS' || echo '✗ FAIL')"
+echo "Tests:          $([ $TEST_EXIT -eq 0 ] && echo '✓ PASS' || echo '✗ FAIL')"
+echo "========================================="
+
+# Exit with error if any check failed
+if [ $DOC_EXIT -ne 0 ] || [ $STRUCT_EXIT -ne 0 ] || [ $LINT_EXIT -ne 0 ] || [ $TEST_EXIT -ne 0 ]; then
+  echo "\n❌ Pre-commit checks FAILED. Fix issues before committing."
+  exit 1
+fi
+
+echo "\n✅ All pre-commit checks PASSED!"
+exit 0

@@ -401,13 +401,24 @@ input:focus {
         min-height: 50vh;
     }
     
+    /* Height controlled by responsive.css with proper breakpoints */
+    /* Reduced padding to maximize content space on small screens */
     .word-display {
-        height: 260px;        /* FIXED height on mobile */
-        max-height: 260px;
+        padding: var(--space-lg) var(--space-xs);  /* 16px 4px - more vertical space */
+        gap: clamp(var(--space-xs), 1.5vh, var(--space-md));  /* Tighter gap on mobile: 4px-12px */
     }
     
     .english-word {
         font-size: clamp(24px, 5.5vw, 36px);  /* Scale smaller on mobile */
+        line-height: calc(1em + 0.4em);  /* Extra line-height for better readability */
+    }
+    
+    /* Reduce font sizes on mobile for multi-line sentences */
+    .example-sentence,
+    .example-english {
+        font-size: var(--font-size-base);  /* 15px - smaller on mobile */
+        line-height: calc(1em + 0.5em);  /* 1.5 line-height for wrapped text */
+        padding: var(--space-sm);  /* Reduce padding: 8px */
     }
     
     .primary-controls {

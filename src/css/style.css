@@ -150,7 +150,7 @@ body {
     font-weight: 400;
     color: var(--text-secondary);
     line-height: 1.4;
-    margin-bottom: 20px;
+    margin: 10px 0;  /* Reduced margin for compact layout */
     padding: 15px;
     background: var(--bg-card);
     border-radius: 12px;
@@ -162,7 +162,7 @@ body {
     font-size: 18px;
     color: var(--text-secondary);
     line-height: 1.5;
-    margin-bottom: 12px;
+    margin: 8px 0;  /* Reduced margin for compact layout */
     font-style: italic;
     word-wrap: break-word;
 }

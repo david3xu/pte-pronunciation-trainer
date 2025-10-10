@@ -189,7 +189,7 @@ body {
     font-size: var(--font-size-sm);
     background: var(--bg-card);
     color: var(--text-secondary);
-    padding: 2px var(--space-sm);
+    padding: var(--space-xxs) var(--space-sm);
     border-radius: var(--radius-sm) var(--space-md);
     margin-left: var(--space-sm);
     font-weight: 500;

@@ -44,12 +44,12 @@ body {
 }
 
 /* Main Learning Area (80% priority) */
-.learning-area {
-    grid-row: 2;
+.main-content {
+    flex: 1;
     display: flex;
     align-items: center;  /* Center content vertically */
     justify-content: center;
-    padding: 20px 20px;  /* Minimal padding for better space utilization */
+    padding: var(--space-xlg) var(--space-xlg);  /* Minimal padding for better space utilization */
     min-height: 60vh;
 }
 
@@ -211,10 +211,10 @@ body {
 }
 
 /* Control Area (20% space, essential actions only) */
-.control-area {
+.audio-controls {
     grid-row: 3;
     background: transparent;
-    padding: 20px;
+    padding: var(--space-xlg);
     border-top: none;
     min-height: 120px;
     display: flex;
@@ -397,7 +397,7 @@ input:focus {
 /* Mobile Optimizations */
 @media (max-width: 640px) {
     .learning-area {
-        padding: 30px var(--space-lg) var(--space-xlg);
+        padding: var(--space-2xl) var(--space-lg) var(--space-xlg);
         min-height: 50vh;
     }
     
@@ -421,7 +421,7 @@ input:focus {
     }
     
     .btn--large {
-        padding: 14px var(--space-xlg);
+        padding: var(--space-sm) var(--space-md) var(--space-xlg);
         font-size: var(--font-size-base);
         min-width: 85px;
     }
@@ -467,9 +467,7 @@ input:focus {
 
     .control-area {
         padding: 25px var(--space-3xl);
-    }
-
-    .settings-grid {
+    }    .settings-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: var(--space-xl);
         padding: var(--space-2xl) var(--space-3xl);

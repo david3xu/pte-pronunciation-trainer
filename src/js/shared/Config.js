@@ -323,6 +323,19 @@ class AppConfig {
                 }
             },
 
+            // ===== DEBUG CONFIGURATION =====
+            // Controls logging and development features
+            debug: {
+                enabled: false,  // Set to true for development mode
+                verbose: false,  // Enable verbose logging (detailed traces)
+                logEvents: false,  // Log all EventBus emissions
+                logSettings: true,  // Log settings changes
+                logModules: true,  // Log module initialization
+                logTTS: false,  // Log TTS operations
+                logUI: false,  // Log UI updates
+                logData: false  // Log data loading operations
+            },
+
             // ===== TTS CONFIGURATION =====
             tts: {
                 voices: {
@@ -463,10 +476,18 @@ class AppConfig {
                     }
                 },
                 
+                // System-level events
+                system: {
+                    error: 'system:error',  // Global error handler
+                    initialized: 'system:initialized',  // System ready
+                    ready: 'system:ready'  // All modules loaded
+                },
+                
                 // Dataset loading and management
                 dataset: {
-                    loaded: 'dataset:loaded',
-                    error: 'dataset:error',
+                    loading: 'dataset:loading',  // Before load starts
+                    loaded: 'dataset:loaded',  // After successful load
+                    error: 'dataset:error',  // On load failure
                     practice: {
                         changed: 'dataset:practice:changed'
                     }
@@ -584,6 +605,23 @@ class AppConfig {
 
             // ===== BUILD CONFIGURATION =====
             build: {
+                // CRITICAL: CSS files must load in this exact order
+                css: {
+                    loadOrder: [
+                        'variables',    // Design tokens first
+                        'animations',   // Keyframes second
+                        'components',   // Reusable components third
+                        'style',        // Main layout fourth
+                        'practice-modes'  // Mode-specific styles last
+                    ],
+                    files: {
+                        variables: 'src/css/variables.css',
+                        animations: 'src/css/animations.css',
+                        components: 'src/css/components.css',
+                        style: 'src/css/style.css',
+                        'practice-modes': 'src/css/practice-modes.css'
+                    }
+                },
                 jsFiles: [
                     'src/js/shared/AppNamespace.js',
                     'src/js/shared/Config.js',

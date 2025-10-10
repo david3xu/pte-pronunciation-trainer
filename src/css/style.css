@@ -55,16 +55,17 @@ body {
 
 .word-display {
     width: 100%;
-    min-height: 320px;        /* Fixed height prevents button position shift */
+    height: 320px;            /* FIXED height - never changes */
+    max-height: 320px;        /* Enforce maximum */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;  /* Content grows downward from top */
+    justify-content: center;  /* Center content vertically within fixed space */
     text-align: center;
     user-select: none;
-    /* Prevent user from selecting text and disrupting UI */
+    overflow: hidden;         /* Hide overflow if content too large */
     transition: all 0.3s ease;
-    padding: 20px 0;
+    padding: 20px 10px;
     border-radius: 15px;
 }
 
@@ -77,17 +78,17 @@ body {
 }
 
 .english-word {
-    font-size: 48px;
+    font-size: clamp(28px, 6vw, 48px);  /* Scale down on small screens */
     font-weight: 700;
     color: var(--color-blue);
     word-wrap: break-word;
-    overflow-wrap: break-word; /* Modern alternative */
-    line-height: 1.2;
+    overflow-wrap: break-word;
+    line-height: 1.1;         /* Tighter line height to fit more */
     letter-spacing: 0.5px;
-    max-width: 100%; /* Prevent overflow on mobile */
+    max-width: 95%;           /* Leave some margin */
     box-sizing: border-box;
-    hyphens: auto; /* Hyphenate long words */
-    padding: 0 10px; /* Breathing room on mobile */
+    hyphens: auto;
+    padding: 0 5px;
 }
 
 /* Word type badge (n., v., adj., adv.) */
@@ -211,9 +212,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 15px;  /* Slightly reduced for mobile */
     margin-bottom: 15px;
-    flex-wrap: wrap; /* Allow wrapping on narrow screens */
+    /* NO flex-wrap - buttons stay in one row */
 }
 
 /* Buttons use standard .btn classes from components.css */
@@ -382,16 +383,33 @@ input:focus {
 /* Mobile Optimizations */
 @media (max-width: 640px) {
     .learning-area {
-        padding: 40px 20px 20px;  /* Less top padding on mobile */
+        padding: 30px 15px 20px;
         min-height: 50vh;
     }
     
     .word-display {
-        min-height: 280px;  /* Smaller fixed height on mobile */
+        height: 260px;        /* FIXED height on mobile */
+        max-height: 260px;
     }
     
     .english-word {
-        font-size: 40px;
+        font-size: clamp(24px, 5.5vw, 36px);  /* Scale smaller on mobile */
+    }
+    
+    .primary-controls {
+        gap: 10px;            /* Smaller gap to fit buttons */
+    }
+    
+    .btn {
+        padding: 12px 16px;   /* Smaller buttons */
+        font-size: 14px;
+        min-width: 70px;
+    }
+    
+    .btn--large {
+        padding: 14px 20px;
+        font-size: 15px;
+        min-width: 85px;
     }
 
     .phonetic-spelling,

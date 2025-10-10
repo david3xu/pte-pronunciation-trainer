@@ -84,6 +84,20 @@
     --space-3xl: 2.5rem;    /* 40px */
     --space-4xl: 3rem;      /* 48px */
     
+    /* Responsive Heights (viewport-based) */
+    --height-word-display-xs: 320px;   /* Small mobile ≤374px */
+    --height-word-display-sm: 360px;   /* Large mobile 375-767px */
+    --height-word-display-md: 440px;   /* Tablet 768-991px */
+    --height-word-display-lg: 460px;   /* Small desktop 992-1199px */
+    --height-word-display-xl: 480px;   /* Large desktop 1200px+ */
+    --height-word-display-landscape: 220px;  /* Landscape mode */
+    
+    /* Dynamic Line Heights (relative to font size) */
+    --line-height-tight: calc(1em + 0.2em);     /* 1.2x - compact */
+    --line-height-normal: calc(1em + 0.3em);    /* 1.3x - balanced */
+    --line-height-relaxed: calc(1em + 0.4em);   /* 1.4x - comfortable */
+    --line-height-loose: calc(1em + 0.5em);     /* 1.5x - spacious */
+    
     /* ==================== Border Radius ==================== */
     
     --radius-sm: 4px;

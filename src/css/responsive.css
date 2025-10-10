@@ -75,8 +75,8 @@
   
   /* Reduce word-display height for small screens */
   .word-display {
-    height: 320px;
-    max-height: 320px;
+    height: var(--height-word-display-xs);
+    max-height: var(--height-word-display-xs);
   }
   
   .word-display__english {
@@ -103,19 +103,19 @@
   
   /* Reduce button gap and size on very small screens - NEVER wrap */
   .primary-controls {
-    gap: 6px;
-    padding: 0 5px;
+    gap: calc(var(--space-xs) + 2px);  /* 6px */
+    padding: 0 var(--space-xs);
   }
   
   .btn {
-    padding: 10px 10px;
-    font-size: 12px;
+    padding: var(--space-sm) var(--space-sm);  /* 8px 8px */
+    font-size: var(--text-xs);  /* 12px */
     min-width: 55px;
   }
   
   .btn--large {
-    padding: 11px 14px;
-    font-size: 13px;
+    padding: calc(var(--space-sm) + 3px) var(--space-sm);  /* 11px 8px */
+    font-size: var(--text-sm);  /* 14px */
     min-width: 70px;
   }
 }
@@ -124,8 +124,8 @@
 @media (min-width: 375px) and (max-width: 767px) {
   /* Increase word-display height for better space utilization */
   .word-display {
-    height: 360px;
-    max-height: 360px;
+    height: var(--height-word-display-sm);
+    max-height: var(--height-word-display-sm);
   }
   
   .word-display__english {
@@ -156,10 +156,10 @@
 
 /* === TABLET PORTRAIT (768px - 991px) === */
 @media (min-width: 768px) and (max-width: 991px) {
-  /* Optimize word-display height for tablets */
+  /* Optimize word-display height for tablet */
   .word-display {
-    height: 440px;
-    max-height: 440px;
+    height: var(--height-word-display-md);
+    max-height: var(--height-word-display-md);
   }
   
   .app-container {
@@ -207,10 +207,10 @@
 
 /* === TABLET LANDSCAPE / SMALL DESKTOP (992px - 1199px) === */
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* Optimize word-display height for small desktop */
+  /* Optimize word-display height for small desktops */
   .word-display {
-    height: 460px;
-    max-height: 460px;
+    height: var(--height-word-display-lg);
+    max-height: var(--height-word-display-lg);
   }
   
   .app-container {
@@ -260,10 +260,10 @@
 
 /* === LARGE DESKTOP (1200px+) === */
 @media (min-width: 1200px) {
-  /* Maximum word-display height for large desktop */
+  /* Maximize word-display height for large desktops */
   .word-display {
-    height: 480px;
-    max-height: 480px;
+    height: var(--height-word-display-xl);
+    max-height: var(--height-word-display-xl);
   }
   
   .app-container {
@@ -318,7 +318,7 @@
 /* === LANDSCAPE ORIENTATION ADJUSTMENTS === */
 @media (orientation: landscape) and (max-height: 500px) {
   .learning-area {
-    padding: 10px 20px;  /* Minimal padding for landscape */
+    padding: var(--space-sm) var(--space-xl);  /* 8px 24px - minimal for landscape */
     min-height: auto;
   }
   
@@ -328,8 +328,8 @@
   }
   
   .word-display {
-    height: 220px;        /* Optimized height in landscape */
-    max-height: 220px;
+    height: var(--height-word-display-landscape);
+    max-height: var(--height-word-display-landscape);
   }
   
   .word-display__english {

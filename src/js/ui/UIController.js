@@ -175,8 +175,9 @@ class UIController {
             this.displayCurrent(data);
         });
 
-        // Listen for progress events
-        window.eventBus.on('progress:updated', (data) => {
+        // Listen for progress events (from Config.js)
+        const progressUpdatedEvent = window.appConfig?.get('events.progress.updated') || 'progress:updated';
+        window.eventBus.on(progressUpdatedEvent, (data) => {
             // Progress display is handled by ProgressTracker
         });
 
@@ -1131,8 +1132,9 @@ class UIController {
                 } catch (loadError) {
                     retryCount++;
                     if (retryCount <= maxRetries) {
-                        // Wait before retrying
-                        await new Promise(resolve => setTimeout(resolve, 500));
+                        // Wait before retrying (using Config.js value)
+                        const retryDelay = this.config.get('ui.delays.retry') || 500;
+                        await new Promise(resolve => setTimeout(resolve, retryDelay));
                     } else {
                         throw loadError; // Re-throw if all retries failed
                     }

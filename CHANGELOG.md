@@ -9,6 +9,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- **Hardcode Violations Eliminated** - Fixed 72 violations of GUIDELINES.md Principle #1 (Zero Hardcoded Values)
+  - **JavaScript Fixes (13 violations)**:
+    - AudioControls.js: Fixed 3 hardcoded event names → now use Config.js event registry
+    - SettingsModule.js: Fixed 2 hardcoded event emissions (reset, batch-updated)
+    - DatasetManager.js: Fixed 2 hardcoded dataset events (loaded, error)
+    - VoiceSelector.js: Fixed hardcoded settings listener
+    - TTSEngine.js: Fixed hardcoded settings listener
+    - PTEVocabularyManager.js: Fixed hardcoded settings listener
+    - SettingsPanel.js: Fixed hardcoded voice preference listener
+    - UIController.js: Fixed hardcoded progress listener + timeout value
+  - **CSS Fixes (59 violations)**:
+    - style.css: Removed 46 duplicate CSS variable definitions (all moved to variables.css)
+    - responsive.css: Removed 11 duplicate CSS variable definitions
+    - responsive.css: Fixed 2 hardcoded rgba() colors → now use CSS variables
+  - **Verification**: All fixes verified with grep validation and npm run validate
+  - All events now reference `window.appConfig.get('events.*')` pattern
+  - All CSS variables centralized in variables.css (single source of truth)
+
 ### Added
 - **Debug Configuration** - Added comprehensive debug settings to Config.js
   - 8 debug flags (enabled, verbose, logEvents, logSettings, logModules, logTTS, logUI, logData)
@@ -25,12 +44,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Documented CRITICAL load order: variables → animations → components → style → practice-modes
   - Enables build-time validation of CSS file ordering
   - Prevents design token dependency violations
+- **UI Delay Configuration** - Added ui.delays.retry to Config.js
+  - Retry delay for dataset loading (500ms default)
+  - Replaces hardcoded setTimeout value in UIController.js
 
 ### Changed
 - **Config.js Structure** - Reorganized to include debug and enhanced build sections
 - **Events Taxonomy** - Removed duplicate system events section
 
 ### Documentation
+- Created `docs/investigations/HARDCODE-AUDIT-2025-10-10.md` - Complete audit of 72 violations before fixing
 - Created `docs/IMPLEMENTATION-SUMMARY.md` - Comprehensive implementation report with 3-layer validation process
 - Documents compliance with GUIDELINES.md principles
 - Provides patterns for future debug-flagged logging

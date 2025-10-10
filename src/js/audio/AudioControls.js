@@ -41,8 +41,9 @@ class AudioControls {
         window.eventBus.on(settingsChangedEvent, this._handleSettingChange.bind(this));
 
         // Listen for learning mode changes to reset index
-        // First listen for setting changes directly
-        window.eventBus.on('setting:changed', (data) => {
+        // Use standardized settings.changed event from Config.js
+        const settingsChangedEvent2 = window.appConfig.get('events.settings.changed');
+        window.eventBus.on(settingsChangedEvent2, (data) => {
             if (data.key === 'learningMode') {
                 console.log(`[AudioControls] 🔄 Learning mode changed to ${data.value}, resetting index to 0`);
                 // Reset current index to start from the beginning of the new book
@@ -336,8 +337,9 @@ class AudioControls {
 
         window.progressTracker.updateStatus('Paused');
 
-        // Emit auto-play pause event
-        window.eventBus.emit('audioControls:autoPlayPaused', {
+        // Emit auto-play pause event (from Config.js)
+        const autoPlayPausedEvent = this.config.get('events.audio.autoplay.paused') || 'audio:autoplay:paused';
+        window.eventBus.emit(autoPlayPausedEvent, {
             currentIndex: this.currentIndex
         });
     }
@@ -366,8 +368,9 @@ class AudioControls {
                 });
             }
 
-            // Emit word play start event
-            window.eventBus.emit('audioControls:wordPlayStarted', {
+            // Emit word play start event (from Config.js)
+            const wordPlayStartedEvent = this.config.get('events.audio.word.started') || 'audio:word:started';
+            window.eventBus.emit(wordPlayStartedEvent, {
                 word: currentWord,
                 index: this.currentIndex
             });

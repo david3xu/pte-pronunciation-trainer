@@ -357,8 +357,10 @@ class SettingsModule {
                 await this.handleSettingChange({ key, value: defaultValue });
             }
         }
-        
-        this.eventBus.emit('settings:reset', { timestamp: Date.now() });
+
+        // Emit settings reset event (from Config.js)
+        const settingsResetEvent = this.config.get('events.settings.reset') || 'settings:reset';
+        this.eventBus.emit(settingsResetEvent, { timestamp: Date.now() });
         console.log('✅ SettingsModule: All settings reset');
     }
     
@@ -373,8 +375,10 @@ class SettingsModule {
         for (const [key, value] of Object.entries(settingsObject)) {
             results[key] = await this.handleSettingChange({ key, value });
         }
-        
-        this.eventBus.emit('settings:batch-updated', { results, timestamp: Date.now() });
+
+        // Emit batch updated event (from Config.js)
+        const batchUpdatedEvent = this.config.get('events.settings.batchUpdated') || 'settings:batch-updated';
+        this.eventBus.emit(batchUpdatedEvent, { results, timestamp: Date.now() });
         return results;
     }
     

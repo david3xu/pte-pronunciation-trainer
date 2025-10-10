@@ -2,7 +2,7 @@
 
 ## 🏗️ System Overview
 
-The PTE Pronunciation Trainer (v2.5.2) is a client-side web application designed to help users practice pronunciation for the PTE (Pearson Test of English) exam. It features text-to-speech (TTS) capabilities, vocabulary management, progress tracking, and a zero-hardcoded-value configuration system.
+The PTE Pronunciation Trainer (v2.5.4) is a client-side web application designed to help users practice pronunciation for the PTE (Pearson Test of English) exam. It features text-to-speech (TTS) capabilities, vocabulary management, progress tracking, and a zero-hardcoded-value configuration system.
 
 ### **Key Design Principles**
 
@@ -1389,7 +1389,7 @@ Total: 2,046 lines (0% duplication)
 
 **File**: `src/css/animations.css` (95 lines)
 
-**Problem Solved**: Fixed critical bug where 3 different `@keyframes pulse` definitions caused unpredictable behavior
+**Purpose**: Centralized animation definitions with unified keyframes
 
 **Keyframe Definitions**:
 ```css
@@ -1601,13 +1601,10 @@ Total: 2,046 lines (0% duplication)
 | Disabled states | 4 | 1 | 75% |
 
 **Maintainability**:
-- **Before**: Change button color → Edit 3 files
-- **After**: Change button color → Edit 1 variable
-- **Improvement**: 75% reduction in change locations
-
-**Critical Bug Fixed**:
-- ❌ **Before**: Animation name collision causes unpredictable behavior
-- ✅ **After**: Single animation source, consistent behavior
+- Change button color → Edit 1 variable in variables.css
+- Change animation → Edit 1 file (animations.css)
+- Update design token → Automatic propagation across all components
+- **Result**: 75% reduction in change locations
 
 ---
 
@@ -1755,12 +1752,12 @@ async initializeDatasetManager() {
 | practice-modes.css | 552 | Practice mode styles |
 | **Total New CSS** | **869** | **New architecture** |
 
-### **Quality Improvements**
+### **Quality Achievements**
 
-- ✅ **0% Code Duplication** (was 15%)
-- ✅ **222 Design Tokens** (enables consistent theming)
-- ✅ **75% Maintenance Reduction** (3 files → 1 file for changes)
-- ✅ **1 Critical Bug Fixed** (animation collision)
+- ✅ **0% Code Duplication** (modular architecture)
+- ✅ **222 Design Tokens** (consistent theming system)
+- ✅ **75% Maintenance Reduction** (single source of truth)
+- ✅ **Unified Animations** (centralized keyframes in animations.css)
 - ✅ **Modular Architecture** (6 focused CSS files)
 - ✅ **Dark Mode Support** (automatic theme switching)
 - ✅ **Accessibility** (touch targets, contrast, WCAG compliance)

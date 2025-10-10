@@ -83,7 +83,7 @@ body {
     color: var(--color-blue);
     word-wrap: break-word;
     overflow-wrap: break-word;
-    line-height: 1.1;         /* Tighter line height to fit more */
+    line-height: 1.3;         /* Comfortable line height prevents overlap */
     letter-spacing: 0.5px;
     max-width: 95%;           /* Leave some margin */
     box-sizing: border-box;

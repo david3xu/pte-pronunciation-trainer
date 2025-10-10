@@ -318,7 +318,7 @@
 /* === LANDSCAPE ORIENTATION ADJUSTMENTS === */
 @media (orientation: landscape) and (max-height: 500px) {
   .learning-area {
-    padding: 15px 20px;
+    padding: 10px 20px;  /* Minimal padding for landscape */
     min-height: auto;
   }
   

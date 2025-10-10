@@ -47,9 +47,9 @@ body {
 .learning-area {
     grid-row: 2;
     display: flex;
-    align-items: flex-start;  /* Top align to prevent button position shift */
+    align-items: center;  /* Center content vertically */
     justify-content: center;
-    padding: 60px 20px 40px;  /* More top padding for stable layout */
+    padding: 20px 20px;  /* Minimal padding for better space utilization */
     min-height: 60vh;
 }
 
@@ -60,12 +60,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;  /* Equal spacing between rows */
+    justify-content: space-around;  /* Distribute space around items */
     text-align: center;
     user-select: none;
     overflow: hidden;         /* Hide overflow if content too large */
     transition: all 0.3s ease;
-    padding: 20px 10px;
+    padding: 30px 10px;  /* Increased padding for better content spacing */
     border-radius: 15px;
 }
 
@@ -74,7 +74,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 20px;
+    margin: 10px 0;  /* Reduced margins for tighter layout */
 }
 
 .english-word {
@@ -130,7 +130,7 @@ body {
     font-size: 24px;
     color: var(--color-purple);
     font-weight: 500;
-    margin-bottom: 15px;
+    margin: 8px 0;  /* Reduced margin for compact layout */
     letter-spacing: 0.8px;
 }
 
@@ -138,7 +138,7 @@ body {
     font-size: 22px;
     color: var(--text-muted);
     font-weight: 400;
-    margin-bottom: 20px;
+    margin: 8px 0;  /* Reduced margin for compact layout */
     font-family: 'Doulos SIL', 'Gentium', sans-serif;
     letter-spacing: 1px;
 }
@@ -179,7 +179,7 @@ body {
     background: var(--bg-card);
     border-radius: 15px;
     padding: 5px 12px;
-    margin-top: 15px;
+    margin: 8px 0;  /* Reduced margin for compact layout */
     border: 1px solid var(--border-light);
 }
 

@@ -8,6 +8,7 @@ Welcome to the PTE Pronunciation Trainer documentation.
 
 **Design & Principles** (start here for new developers):
 - **[GUIDELINES.md](./GUIDELINES.md)** ⭐ - High-level design principles and development rules
+- **[ENFORCING-GUIDELINES.md](./ENFORCING-GUIDELINES.md)** - 5 methods to enforce guidelines with AI
 - **[ARCHITECTURE.md](./ARCHITECTURE.md)** - Technical architecture and system design
 - **[API-REFERENCE.md](./API-REFERENCE.md)** - Complete API documentation for all modules
 
@@ -23,8 +24,9 @@ Welcome to the PTE Pronunciation Trainer documentation.
 ### Temporary Documentation
 
 **Investigation Logs** (`investigations/`):
-- These are temporary analysis documents for specific bugs or features
-- Moved to release notes after merging
+- **[AUDIT-v2.5.4.md](./investigations/AUDIT-v2.5.4.md)** - v2.5.4 project audit (98.8% compliance)
+- These are temporary analysis documents for specific bugs, features, or audits
+- Should be moved to release notes after merging or archived after completion
 - Not for permanent reference
 
 ## 🚀 Quick Start
@@ -56,12 +58,13 @@ All documentation follows these principles:
 docs/
 ├── README.md                    # This file - documentation index
 ├── GUIDELINES.md                # ⭐ Design principles and development rules
+├── ENFORCING-GUIDELINES.md      # 5 methods to enforce guidelines with AI
 ├── ARCHITECTURE.md              # Technical architecture and system design
 ├── API-REFERENCE.md             # Complete API documentation
 ├── DEPLOYMENT.md                # Deployment guide and production setup
 ├── TROUBLESHOOTING.md           # Common issues and solutions
 └── investigations/              # Temporary bug/feature investigation logs
-    └── BUGFIX-SILENT-WORDS.md   # Example: Silent words bug investigation
+    └── AUDIT-v2.5.4.md          # v2.5.4 project audit (archived)
 ```
 
 ---

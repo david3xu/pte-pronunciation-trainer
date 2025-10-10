@@ -188,6 +188,7 @@ pte-vocabulary-trainer/
 **For Developers** (start here):
 - **[📐 Development Guidelines](docs/GUIDELINES.md)** ⭐ - Design principles and development rules (START HERE)
 - **[🤖 AI Assistant Guide](CLAUDE.md)** - Guidance for AI assistants working on this codebase
+- **[🔒 Enforcing Guidelines](docs/ENFORCING-GUIDELINES.md)** - 5 methods to enforce guidelines with AI
 - **[🏗️ Architecture & Workflow](docs/ARCHITECTURE.md)** - Technical system design and data flow
 - **[📖 API Reference](docs/API-REFERENCE.md)** - Complete API documentation for all classes and methods
 

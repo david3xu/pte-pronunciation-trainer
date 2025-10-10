@@ -55,12 +55,12 @@ body {
 
 .word-display {
     width: 100%;
-    height: 320px;            /* FIXED height - never changes */
-    max-height: 320px;        /* Enforce maximum */
+    height: 400px;            /* FIXED height - responsive per device */
+    max-height: 400px;        /* Enforce maximum */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;  /* Center content vertically within fixed space */
+    justify-content: space-evenly;  /* Equal spacing between rows */
     text-align: center;
     user-select: none;
     overflow: hidden;         /* Hide overflow if content too large */
@@ -78,7 +78,7 @@ body {
 }
 
 .english-word {
-    font-size: clamp(28px, 6vw, 48px);  /* Scale down on small screens */
+    font-size: clamp(28px, 6vw, 48px);  /* Base size - scales with word length */
     font-weight: 700;
     color: var(--color-blue);
     word-wrap: break-word;
@@ -89,6 +89,19 @@ body {
     box-sizing: border-box;
     hyphens: auto;
     padding: 0 5px;
+}
+
+/* Word-length based sizing for optimal space utilization */
+.english-word.word-short {
+    font-size: clamp(36px, 8vw, 56px);  /* Short words: larger font */
+}
+
+.english-word.word-medium {
+    font-size: clamp(30px, 7vw, 48px);  /* Medium words: moderate font */
+}
+
+.english-word.word-long {
+    font-size: clamp(24px, 5vw, 40px);  /* Long words: smaller font */
 }
 
 /* Word type badge (n., v., adj., adv.) */
@@ -212,9 +225,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;  /* Slightly reduced for mobile */
+    gap: 15px;  /* Responsive gap for mobile */
     margin-bottom: 15px;
-    /* NO flex-wrap - buttons stay in one row */
+    flex-wrap: nowrap;  /* NEVER wrap - always keep buttons in one row */
 }
 
 /* Buttons use standard .btn classes from components.css */

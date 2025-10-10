@@ -88,6 +88,7 @@
     /* Typography Scale */
     --font-size-xs: 0.75rem;      /* 12px */
     --font-size-sm: 0.8125rem;    /* 13px */
+    --font-size-sm-plus: 0.875rem; /* 14px */
     --font-size-base: 0.9375rem;  /* 15px */
     --font-size-md: 1rem;         /* 16px */
     --font-size-lg: 1.125rem;     /* 18px */
@@ -115,6 +116,7 @@
     --radius-sm: 4px;
     --radius-md: 8px;
     --radius-lg: 12px;
+    --radius-xlg: 15px;
     --radius-xl: 20px;
     --radius-2xl: 25px;
     --radius-full: 9999px;

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-10-08T10:01:44.975Z",
+    "generated": "2025-10-10T02:57:25.194Z",
     "totalTerms": 606,
     "source": "pte-asq-answers-vocabulary-with-ipa",
     "description": "PTE ASQ Answers Vocabulary (692 answer words with IPA)",
@@ -40,7 +40,7 @@
           "phonetic": "DOR-mi-tor-ee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -142,7 +142,7 @@
           "phonetic": "ree-SY-kling"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -227,7 +227,7 @@
           "phonetic": "thi-SOR-us"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -267,7 +267,7 @@
       "wordType": "n."
     },
     {
-      "english": "num. twelve",
+      "english": "twelve",
       "pronunciation": {
         "british": {
           "ipa": "twelv",
@@ -278,9 +278,10 @@
           "phonetic": "TWELV"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "num."
     },
     {
       "english": "backward",
@@ -345,7 +346,7 @@
           "phonetic": "SYT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -362,7 +363,7 @@
           "phonetic": "KLOUD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -447,7 +448,7 @@
           "phonetic": "FLAHK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -464,7 +465,7 @@
           "phonetic": "MIL-kee WAY"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -498,7 +499,7 @@
           "phonetic": "uh-BUN-duns"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -515,7 +516,7 @@
           "phonetic": "MEELZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -600,13 +601,13 @@
           "phonetic": "HART-beet"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
     },
     {
-      "english": "num. Twenty-nine",
+      "english": "Twenty-nine",
       "pronunciation": {
         "british": {
           "ipa": "ˌtwenti ˈnaɪn",
@@ -619,7 +620,8 @@
       },
       "difficulty": "hard",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "num."
     },
     {
       "english": "Journal",
@@ -769,7 +771,7 @@
           "phonetic": "STAMP"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -888,7 +890,7 @@
           "phonetic": "puh-NIN-suh-luh"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -1160,7 +1162,7 @@
           "phonetic": "KUS-tuh-murz"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -1330,7 +1332,7 @@
           "phonetic": "ri-PLY"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "v."
@@ -1364,7 +1366,7 @@
           "phonetic": "BAK-spayss"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -1381,7 +1383,7 @@
           "phonetic": "DUHCH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "adj."
@@ -1432,7 +1434,7 @@
           "phonetic": "UNG-kul"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -1466,7 +1468,7 @@
           "phonetic": "AS-truh-nawt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -1517,7 +1519,7 @@
           "phonetic": "OH-shun"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -1789,7 +1791,7 @@
           "phonetic": "BLAK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "adj."
@@ -2231,7 +2233,7 @@
           "phonetic": "KEM-iss-tree"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -2282,7 +2284,7 @@
           "phonetic": "NEES"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -2503,7 +2505,7 @@
           "phonetic": "UR-bən"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "adj."
@@ -2554,7 +2556,7 @@
           "phonetic": "SPOON"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -2571,7 +2573,7 @@
           "phonetic": "SKAYL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -2673,7 +2675,7 @@
           "phonetic": "NYFE"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -2690,7 +2692,7 @@
           "phonetic": "BOHNZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -2707,7 +2709,7 @@
           "phonetic": "TRAYN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -2724,7 +2726,7 @@
           "phonetic": "WAW-ter"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -2860,7 +2862,7 @@
           "phonetic": "muh-NAH-puh-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -2962,7 +2964,7 @@
           "phonetic": "FEH-ree"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -3002,7 +3004,7 @@
       "wordType": "n."
     },
     {
-      "english": "num. Two",
+      "english": "Two",
       "pronunciation": {
         "british": {
           "ipa": "tuː",
@@ -3013,9 +3015,10 @@
           "phonetic": "TOO"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "num."
     },
     {
       "english": "Twins",
@@ -3029,7 +3032,7 @@
           "phonetic": "TWINZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -3046,7 +3049,7 @@
           "phonetic": "nuh-RAY-shən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -3063,7 +3066,7 @@
           "phonetic": "VEN-um"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -3080,7 +3083,7 @@
           "phonetic": "MAH-nuh-log"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -3301,13 +3304,13 @@
           "phonetic": "SUB-muh-REEN"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
     },
     {
-      "english": "num. Hundred",
+      "english": "Hundred",
       "pronunciation": {
         "british": {
           "ipa": "ˈhʌndrəd",
@@ -3318,9 +3321,10 @@
           "phonetic": "HUN-dred"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "num."
     },
     {
       "english": "Vertical",
@@ -3368,7 +3372,7 @@
           "phonetic": "SWISS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "adj."
@@ -3470,13 +3474,13 @@
           "phonetic": "CRAWL"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "v."
     },
     {
-      "english": "num. Four",
+      "english": "Four",
       "pronunciation": {
         "british": {
           "ipa": "fɔː",
@@ -3487,9 +3491,10 @@
           "phonetic": "FOR"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "num."
     },
     {
       "english": "Nurse",
@@ -3503,7 +3508,7 @@
           "phonetic": "NERSS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -3639,7 +3644,7 @@
           "phonetic": "DRYV"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -3656,7 +3661,7 @@
           "phonetic": "LYFE-gard"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -3673,7 +3678,7 @@
           "phonetic": "GLASS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -3707,7 +3712,7 @@
           "phonetic": "WINGZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -3809,7 +3814,7 @@
           "phonetic": "DRAH-muh"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -3894,7 +3899,7 @@
           "phonetic": "KAR MOD-l"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -3996,7 +4001,7 @@
           "phonetic": "WENZ-day"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -4013,7 +4018,7 @@
           "phonetic": "STOP-wotch"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -4081,7 +4086,7 @@
           "phonetic": "HART"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -4149,7 +4154,7 @@
           "phonetic": "by-LING-gwəl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "adj."
@@ -4200,7 +4205,7 @@
           "phonetic": "STEEM"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -4234,7 +4239,7 @@
           "phonetic": "hi-STOR-ee-ən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -4353,7 +4358,7 @@
           "phonetic": "DRAFT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -4370,7 +4375,7 @@
           "phonetic": "KAH-mik"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -4438,7 +4443,7 @@
           "phonetic": "PUB-li-sher"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -4506,7 +4511,7 @@
           "phonetic": "AWL-tuh-mee-ter"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -4591,7 +4596,7 @@
           "phonetic": "PY-lət"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -4608,7 +4613,7 @@
           "phonetic": "JOYNT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -4642,7 +4647,7 @@
           "phonetic": "PAY-per"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -4710,7 +4715,7 @@
           "phonetic": "MOD-əl KAR"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -4727,7 +4732,7 @@
           "phonetic": "NOOZ-pay-per"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -4744,7 +4749,7 @@
           "phonetic": "SUN-skreen"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -4767,7 +4772,7 @@
       "wordType": "n."
     },
     {
-      "english": "num. Three",
+      "english": "Three",
       "pronunciation": {
         "british": {
           "ipa": "θriː",
@@ -4778,9 +4783,10 @@
           "phonetic": "THREE"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "num."
     },
     {
       "english": "Agreement",
@@ -4794,7 +4800,7 @@
           "phonetic": "uh-GREE-ment"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -5049,7 +5055,7 @@
           "phonetic": "NYTE-mer"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -5117,13 +5123,13 @@
           "phonetic": "TEL-uh-skohp"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
     },
     {
-      "english": "num. Twenty-first",
+      "english": "Twenty-first",
       "pronunciation": {
         "british": {
           "ipa": "ˌtwɛnti ˈfɜːst",
@@ -5136,7 +5142,8 @@
       },
       "difficulty": "hard",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "num."
     },
     {
       "english": "Rocket",
@@ -5167,7 +5174,7 @@
           "phonetic": "uh-RID-i-tee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -5201,7 +5208,7 @@
           "phonetic": "KWOR-ter-lee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "adj."
@@ -5252,7 +5259,7 @@
           "phonetic": "AFT-er"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "prep."
@@ -5269,7 +5276,7 @@
           "phonetic": "KWIK"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "adj."
@@ -5439,7 +5446,7 @@
           "phonetic": "EL-boh"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -5456,7 +5463,7 @@
           "phonetic": "SHEEP"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -5490,7 +5497,7 @@
           "phonetic": "BUT-er-fly"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -5558,7 +5565,7 @@
           "phonetic": "AV-uh-lanch"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -5575,7 +5582,7 @@
           "phonetic": "vahl-KAY-nohz"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -5830,7 +5837,7 @@
           "phonetic": "AT-ləs"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -5904,7 +5911,7 @@
       "wordType": "n."
     },
     {
-      "english": "num. 366",
+      "english": "366",
       "pronunciation": {
         "british": {
           "ipa": "ˈθriː sɪks ˈsɪks",
@@ -5915,12 +5922,13 @@
           "phonetic": "THREE SIX SIX"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "num."
     },
     {
-      "english": "num. 29",
+      "english": "29",
       "pronunciation": {
         "british": {
           "ipa": "twenti ˈnaɪn",
@@ -5931,9 +5939,10 @@
           "phonetic": "TWEN-tee NINE"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "num."
     },
     {
       "english": "Insomnia",
@@ -5998,7 +6007,7 @@
           "phonetic": "VAH-lun-TEER"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -6049,7 +6058,7 @@
           "phonetic": "BLUD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -6106,7 +6115,7 @@
       "wordType": "n."
     },
     {
-      "english": "num. Five",
+      "english": "Five",
       "pronunciation": {
         "british": {
           "ipa": "faɪv",
@@ -6117,12 +6126,13 @@
           "phonetic": "FYVE"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "num."
     },
     {
-      "english": "num. Six",
+      "english": "Six",
       "pronunciation": {
         "british": {
           "ipa": "sɪks",
@@ -6133,9 +6143,10 @@
           "phonetic": "SIKS"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "num."
     },
     {
       "english": "Oval",
@@ -6302,7 +6313,7 @@
           "phonetic": "TOO-ter"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -6336,7 +6347,7 @@
           "phonetic": "TUCH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "v."
@@ -6387,7 +6398,7 @@
           "phonetic": "SIG-nuh-cher"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -6404,7 +6415,7 @@
           "phonetic": "REF-er-əns"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -6472,7 +6483,7 @@
           "phonetic": "GRAF"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -6546,7 +6557,7 @@
       "wordType": "n."
     },
     {
-      "english": "num. Eight",
+      "english": "Eight",
       "pronunciation": {
         "british": {
           "ipa": "eɪt",
@@ -6557,9 +6568,10 @@
           "phonetic": "AYT"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "num."
     },
     {
       "english": "Giraffe",
@@ -6658,7 +6670,7 @@
           "phonetic": "EE-mail"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -6777,7 +6789,7 @@
           "phonetic": "BAY-ker"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -6845,7 +6857,7 @@
           "phonetic": "HUN-ee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -6862,7 +6874,7 @@
           "phonetic": "di-PAR-cher"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -6879,7 +6891,7 @@
           "phonetic": "ed-i-TOR-ee-əl"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -6981,7 +6993,7 @@
           "phonetic": "PHONETIC"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa"
     },
@@ -7061,7 +7073,7 @@
           "phonetic": "PHONETIC"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa"
     },
@@ -7176,7 +7188,7 @@
           "phonetic": "REZ-i-dəns"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -7227,7 +7239,7 @@
           "phonetic": "AL-bəm"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -7295,7 +7307,7 @@
           "phonetic": "uh-NAH-nuh-məs"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "adj."
@@ -7363,7 +7375,7 @@
           "phonetic": "SPEK-tay-ter"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -7448,7 +7460,7 @@
           "phonetic": "FROOT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -7516,7 +7528,7 @@
           "phonetic": "URTH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -7567,7 +7579,7 @@
           "phonetic": "BRAYN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -7669,7 +7681,7 @@
           "phonetic": "by-AH-gruh-fee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -7771,7 +7783,7 @@
           "phonetic": "AF-ter-NOON"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -7822,7 +7834,7 @@
           "phonetic": "uh-STRAH-nuh-mee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -7839,7 +7851,7 @@
           "phonetic": "LAY-siz"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -7856,7 +7868,7 @@
           "phonetic": "EL-uh-VAY-ter"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -7907,7 +7919,7 @@
           "phonetic": "suk-SESS-er"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -7924,7 +7936,7 @@
           "phonetic": "SOWTH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -8026,7 +8038,7 @@
           "phonetic": "di-MAH-kruh-see"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -8043,7 +8055,7 @@
           "phonetic": "em-PLOY-eez"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -8128,7 +8140,7 @@
           "phonetic": "FYE-nəl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "adj."
@@ -8145,7 +8157,7 @@
           "phonetic": "RIST"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -8179,13 +8191,13 @@
           "phonetic": "AR-ki-tekt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
     },
     {
-      "english": "num. Seventeenth",
+      "english": "Seventeenth",
       "pronunciation": {
         "british": {
           "ipa": "ˌsɛvənˈtiːnθ",
@@ -8198,7 +8210,8 @@
       },
       "difficulty": "hard",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "num."
     },
     {
       "english": "Meat",
@@ -8246,7 +8259,7 @@
           "phonetic": "VY-rəs"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -8314,7 +8327,7 @@
           "phonetic": "pee-AN-oh"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -8348,13 +8361,13 @@
           "phonetic": "BLYND"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "adj."
     },
     {
-      "english": "num. 50%",
+      "english": "50%",
       "pronunciation": {
         "british": {
           "ipa": "ˈfɪfti pə ˈsɛnt",
@@ -8365,9 +8378,10 @@
           "phonetic": "FIF-tee per SENT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "num."
     },
     {
       "english": "Small car",
@@ -8381,7 +8395,7 @@
           "phonetic": "SMALL KAR"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -8415,7 +8429,7 @@
           "phonetic": "SWOMP"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -8449,7 +8463,7 @@
           "phonetic": "DREEM"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -8489,7 +8503,7 @@
       "wordType": "n."
     },
     {
-      "english": "num. 75%",
+      "english": "75%",
       "pronunciation": {
         "british": {
           "ipa": "ˈsɛvnti faɪv pə ˈsɛnt",
@@ -8500,9 +8514,10 @@
           "phonetic": "SEV-en-tee FYVE per SENT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
-      "source": "pte-asq-answers-vocabulary-with-ipa"
+      "source": "pte-asq-answers-vocabulary-with-ipa",
+      "wordType": "num."
     },
     {
       "english": "Microscope",
@@ -8669,7 +8684,7 @@
           "phonetic": "KROWN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -8839,7 +8854,7 @@
           "phonetic": "ANG-kəl"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -8873,7 +8888,7 @@
           "phonetic": "LUNGZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -8907,7 +8922,7 @@
           "phonetic": "BREK-fəst"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -8941,7 +8956,7 @@
           "phonetic": "IN-deks"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -8958,7 +8973,7 @@
           "phonetic": "EKS-ray"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -8975,7 +8990,7 @@
           "phonetic": "uh-NOWN-ser"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -8992,7 +9007,7 @@
           "phonetic": "NYT"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -9094,7 +9109,7 @@
           "phonetic": "GREEN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "adj."
@@ -9162,7 +9177,7 @@
           "phonetic": "MAY-er"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -9247,7 +9262,7 @@
           "phonetic": "LUNCH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -9264,7 +9279,7 @@
           "phonetic": "PAR-iss"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -9383,7 +9398,7 @@
           "phonetic": "YUNG"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "adj."
@@ -9434,7 +9449,7 @@
           "phonetic": "jee-AH-gruh-fee"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -9536,7 +9551,7 @@
           "phonetic": "try-ATH-lahn"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -9740,7 +9755,7 @@
           "phonetic": "LYTE"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -9876,7 +9891,7 @@
           "phonetic": "AK-ter"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -9961,7 +9976,7 @@
           "phonetic": "uh-KOOS-tiks"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -9978,7 +9993,7 @@
           "phonetic": "DER-tee"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "adj."
@@ -9995,7 +10010,7 @@
           "phonetic": "BAD-min-tən"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -10250,7 +10265,7 @@
           "phonetic": "KWY-ət"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "adj."
@@ -10267,7 +10282,7 @@
           "phonetic": "SKY-dy-ving"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."
@@ -10284,7 +10299,7 @@
           "phonetic": "aw-STRAYL-yuh"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-asq-answers",
       "source": "pte-asq-answers-vocabulary-with-ipa",
       "wordType": "n."

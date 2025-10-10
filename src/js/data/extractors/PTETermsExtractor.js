@@ -77,15 +77,15 @@ class PTETermsExtractor {
 
     let [, termPart, britishData, americanData] = match;
     
-    // Extract word type (n., v., adj., adv., etc.) if present
+    // Extract word type (n., v., adj., adv., num., etc.) if present
     let wordType = null;
     let term = termPart.trim();
     
-    // Match word type patterns: "adj. word", "v. word", "n. word", "adv. word", etc.
-    const wordTypeMatch = term.match(/^(n\.|v\.|adj\.|adv\.|prep\.|conj\.|pron\.|interj\.)\s+(.+)$/i);
+    // Match word type patterns: "adj. word", "v. word", "n. word", "adv. word", "num. word", etc.
+    const wordTypeMatch = term.match(/^(n\.|v\.|adj\.|adv\.|num\.|prep\.|conj\.|pron\.|interj\.)\s+(.+)$/i);
     if (wordTypeMatch) {
       wordType = wordTypeMatch[1].toLowerCase(); // Store as lowercase for consistency
-      term = wordTypeMatch[2].trim(); // Extract the actual word without prefix
+      term = wordTypeMatch[2].trim(); // Extract the actual word without prefix (removes "num. ")
     }
 
     // Parse British pronunciation data

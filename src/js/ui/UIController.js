@@ -761,7 +761,9 @@ class UIController {
             if (startBtn) {
                 startBtn.disabled = !hasVocabulary;
                 startBtn.style.opacity = hasVocabulary ? enabledOpacity : disabledOpacity;
-                startBtn.textContent = hasVocabulary ? '▶️ PLAY' : '❌ NO VOCABULARY';
+                // Use shorter text to prevent mobile layout shift
+                startBtn.textContent = hasVocabulary ? '▶️ PLAY' : '❌ NO DATA';
+                startBtn.title = hasVocabulary ? 'Play vocabulary' : 'No vocabulary loaded';
             }
         }
 

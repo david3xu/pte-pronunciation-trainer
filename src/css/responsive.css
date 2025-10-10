@@ -111,12 +111,14 @@
     padding: var(--space-sm) var(--space-sm);  /* 8px 8px */
     font-size: var(--text-xs);  /* 12px */
     min-width: 55px;
+    min-height: var(--touch-target-min);  /* 44px WCAG compliance */
   }
   
   .btn--large {
     padding: calc(var(--space-sm) + 3px) var(--space-sm);  /* 11px 8px */
     font-size: var(--text-sm);  /* 14px */
     min-width: 70px;
+    min-height: var(--touch-target-min);  /* 44px WCAG compliance */
   }
 }
 
@@ -396,7 +398,7 @@
   
   .word-display__english,
   .word-display__chinese {
-    color: #000;
+    color: var(--text-primary);
   }
 }
 

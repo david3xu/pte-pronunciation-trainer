@@ -57,7 +57,7 @@
 
 .pronunciation {
   font-size: 1.2rem;
-  color: #4a5568;
+  color: var(--text-secondary);
   font-style: italic;
   font-family: 'Courier New', monospace;
   margin: 0.5rem 0;

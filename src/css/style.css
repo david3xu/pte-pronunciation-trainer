@@ -196,18 +196,18 @@ body {
 }
 
 .difficulty-badge.easy {
-    background: var(--color-success-light);
-    color: #234E52;
+    background: var(--success-light);
+    color: var(--success-dark);
 }
 
 .difficulty-badge.normal {
-    background: var(--color-warning);
-    color: #975A16;
+    background: var(--warning-light);
+    color: var(--warning-dark);
 }
 
 .difficulty-badge.hard {
-    background: var(--color-error);
-    color: #822727;
+    background: var(--danger-light);
+    color: var(--danger-dark);
 }
 
 /* Control Area (20% space, essential actions only) */

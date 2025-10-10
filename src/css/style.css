@@ -266,7 +266,7 @@ body {
     border-radius: 8px;
     min-height: 44px;
     min-width: 44px;
-    transition: background 0.2s ease;
+    transition: background var(--transition-fast);
     color: var(--text-secondary);
 }
 
@@ -285,7 +285,7 @@ body {
     max-height: 0;
     overflow: hidden;
     background: transparent;
-    transition: max-height 0.3s ease-in-out, background 0.3s ease-in-out;
+    transition: max-height var(--transition-base) ease-in-out, background var(--transition-base) ease-in-out;
     border-top: none;
     box-shadow: none;
     z-index: 1000;

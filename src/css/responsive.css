@@ -267,9 +267,18 @@
 
 /* === LANDSCAPE ORIENTATION ADJUSTMENTS === */
 @media (orientation: landscape) and (max-height: 500px) {
+  .learning-area {
+    padding: 20px;
+    min-height: auto;
+  }
+  
   .vocab-card {
     min-height: 150px;
     padding: 1rem;
+  }
+  
+  .word-display {
+    min-height: 200px; /* Smaller fixed height in landscape */
   }
   
   .word-display__english {

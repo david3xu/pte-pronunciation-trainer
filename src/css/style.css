@@ -47,14 +47,19 @@ body {
 .learning-area {
     grid-row: 2;
     display: flex;
-    align-items: center;
+    align-items: flex-start;  /* Top align to prevent button position shift */
     justify-content: center;
-    padding: 40px 20px;
+    padding: 60px 20px 40px;  /* More top padding for stable layout */
     min-height: 60vh;
 }
 
 .word-display {
     width: 100%;
+    min-height: 320px;        /* Fixed height prevents button position shift */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;  /* Content grows downward from top */
     text-align: center;
     user-select: none;
     /* Prevent user from selecting text and disrupting UI */
@@ -376,6 +381,15 @@ input:focus {
 
 /* Mobile Optimizations */
 @media (max-width: 640px) {
+    .learning-area {
+        padding: 40px 20px 20px;  /* Less top padding on mobile */
+        min-height: 50vh;
+    }
+    
+    .word-display {
+        min-height: 280px;  /* Smaller fixed height on mobile */
+    }
+    
     .english-word {
         font-size: 40px;
     }

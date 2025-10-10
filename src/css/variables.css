@@ -75,6 +75,7 @@
     
     /* ==================== Spacing ==================== */
     
+    --space-xxs: 0.125rem;  /* 2px - Micro spacing */
     --space-xs: 0.25rem;    /* 4px */
     --space-sm: 0.5rem;     /* 8px */
     --space-md: 0.75rem;    /* 12px */

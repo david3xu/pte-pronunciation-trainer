@@ -511,17 +511,26 @@ class UIController {
         if (englishElement) {
             // For vocabulary-clean entries, make sure we're using the full word
             // and not just the phonetic representation
+            let displayText = word.english;
             if (word.source === 'vocabulary-clean') {
                 // Handle words that might contain slashes (like "Behave/act")
                 if (word.english.includes('/')) {
-                    const fullWord = word.english.split('/')[0].trim();
-                    englishElement.textContent = fullWord;
-                } else {
-                    englishElement.textContent = word.english;
+                    displayText = word.english.split('/')[0].trim();
                 }
-            } else {
-                englishElement.textContent = word.english;
             }
+            englishElement.textContent = displayText;
+            
+            // Add word-length based sizing class for optimal space utilization
+            const wordLength = displayText.length;
+            englishElement.classList.remove('word-short', 'word-medium', 'word-long');
+            if (wordLength > 15) {
+                englishElement.classList.add('word-long');
+            } else if (wordLength > 10) {
+                englishElement.classList.add('word-medium');
+            } else {
+                englishElement.classList.add('word-short');
+            }
+            
             englishElement.classList.add('word-change');
             setTimeout(() => {
                 englishElement.classList.remove('word-change');

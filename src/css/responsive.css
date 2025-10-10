@@ -73,6 +73,12 @@
     font-size: 1.5rem;
   }
   
+  /* Reduce word-display height for small screens */
+  .word-display {
+    height: 320px;
+    max-height: 320px;
+  }
+  
   .word-display__english {
     font-size: 1.25rem;
   }
@@ -82,27 +88,46 @@
     font-size: clamp(20px, 5vw, 28px);
   }
   
-  /* Reduce button gap on very small screens - keep in ONE row */
+  /* Adjust word-length sizing for small screens */
+  .english-word.word-short {
+    font-size: clamp(28px, 6.5vw, 44px);
+  }
+  
+  .english-word.word-medium {
+    font-size: clamp(24px, 5.5vw, 36px);
+  }
+  
+  .english-word.word-long {
+    font-size: clamp(20px, 4.5vw, 32px);
+  }
+  
+  /* Reduce button gap and size on very small screens - NEVER wrap */
   .primary-controls {
-    gap: 8px;
+    gap: 6px;
     padding: 0 5px;
   }
   
   .btn {
-    padding: 10px 12px;
-    font-size: 13px;
-    min-width: 60px;
+    padding: 10px 10px;
+    font-size: 12px;
+    min-width: 55px;
   }
   
   .btn--large {
-    padding: 12px 16px;
-    font-size: 14px;
-    min-width: 75px;
+    padding: 11px 14px;
+    font-size: 13px;
+    min-width: 70px;
   }
 }
 
 /* === LARGE MOBILE / SMALL TABLET (375px - 767px) === */
 @media (min-width: 375px) and (max-width: 767px) {
+  /* Increase word-display height for better space utilization */
+  .word-display {
+    height: 360px;
+    max-height: 360px;
+  }
+  
   .word-display__english {
     font-size: 1.75rem;
   }
@@ -131,6 +156,12 @@
 
 /* === TABLET PORTRAIT (768px - 991px) === */
 @media (min-width: 768px) and (max-width: 991px) {
+  /* Optimize word-display height for tablets */
+  .word-display {
+    height: 440px;
+    max-height: 440px;
+  }
+  
   .app-container {
     padding: var(--tablet-padding);
     max-width: 720px;
@@ -176,6 +207,12 @@
 
 /* === TABLET LANDSCAPE / SMALL DESKTOP (992px - 1199px) === */
 @media (min-width: 992px) and (max-width: 1199px) {
+  /* Optimize word-display height for small desktop */
+  .word-display {
+    height: 460px;
+    max-height: 460px;
+  }
+  
   .app-container {
     padding: var(--desktop-padding);
     max-width: 960px;
@@ -223,6 +260,12 @@
 
 /* === LARGE DESKTOP (1200px+) === */
 @media (min-width: 1200px) {
+  /* Maximum word-display height for large desktop */
+  .word-display {
+    height: 480px;
+    max-height: 480px;
+  }
+  
   .app-container {
     max-width: 1140px;
     padding: var(--desktop-padding);
@@ -285,8 +328,8 @@
   }
   
   .word-display {
-    height: 180px;        /* Fixed smaller height in landscape */
-    max-height: 180px;
+    height: 220px;        /* Optimized height in landscape */
+    max-height: 220px;
   }
   
   .word-display__english {
@@ -296,6 +339,19 @@
   
   .english-word {
     font-size: clamp(20px, 4vw, 28px);  /* Scale down in landscape */
+  }
+  
+  /* Adjust word-length sizing for landscape */
+  .english-word.word-short {
+    font-size: clamp(24px, 5vw, 32px);
+  }
+  
+  .english-word.word-medium {
+    font-size: clamp(20px, 4vw, 28px);
+  }
+  
+  .english-word.word-long {
+    font-size: clamp(16px, 3.5vw, 24px);
   }
   
   .word-display__chinese {

@@ -64,8 +64,11 @@
 
 /* === SMALL MOBILE OPTIMIZATION (up to 374px) === */
 @media (max-width: 374px) {
-  /* CSS variables defined in variables.css - no overrides here */
-
+  :root {
+    --mobile-padding: 0.75rem;
+    --mobile-card-padding: 1rem;
+  }
+  
   .app-header h1 {
     font-size: 1.5rem;
   }
@@ -74,17 +77,20 @@
     font-size: 1.25rem;
   }
   
-  .word-display__chinese {
-    font-size: 1.125rem;
+  /* Legacy .english-word class from style.css */
+  .english-word {
+    font-size: clamp(24px, 7vw, 32px); /* Scale down on tiny screens */
+    padding: 0 5px;
+  }
+  
+  /* Reduce button gap on very small screens */
+  .primary-controls {
+    gap: 10px;
+    padding: 0 10px;
   }
   
   .btn {
-    padding: 0.75rem 1rem;
-    font-size: 0.9rem;
-  }
-  
-  .settings-panel {
-    padding: 1rem;
+    min-width: 70px; /* Smaller buttons on tiny screens */
   }
 }
 

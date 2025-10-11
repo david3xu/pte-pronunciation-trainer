@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-10-10T03:16:16.098Z",
+    "generated": "2025-10-11T09:15:03.413Z",
     "totalTerms": 2408,
     "source": "pte-intermediate-vocabulary-with-ipa",
     "description": "PTE Intermediate vocabulary (simple list fallback, IPA when available)",
@@ -29835,7 +29835,7 @@
       "wordType": "n."
     },
     {
-      "english": "abbr. etc",
+      "english": "etc",
       "pronunciation": {
         "british": {
           "ipa": "ɪtˈsetərə",
@@ -29846,9 +29846,10 @@
           "phonetic": "it-SET-ər-ə"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
-      "source": "pte-intermediate-vocabulary-with-ipa"
+      "source": "pte-intermediate-vocabulary-with-ipa",
+      "wordType": "abbr."
     },
     {
       "english": "final",
@@ -31160,7 +31161,7 @@
       "wordType": "adj."
     },
     {
-      "english": "abbr. PPT",
+      "english": "PPT",
       "pronunciation": {
         "british": {
           "ipa": "ˌpiː piː ˈtiː",
@@ -31171,9 +31172,10 @@
           "phonetic": "pee-pee-TEE"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
-      "source": "pte-intermediate-vocabulary-with-ipa"
+      "source": "pte-intermediate-vocabulary-with-ipa",
+      "wordType": "abbr."
     },
     {
       "english": "dynamic",
@@ -36752,7 +36754,7 @@
       "wordType": "n."
     },
     {
-      "english": "abbr. DR",
+      "english": "DR",
       "pronunciation": {
         "british": {
           "ipa": "ˌdiː ˈɑː",
@@ -36763,9 +36765,10 @@
           "phonetic": "DEE-AR"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
-      "source": "pte-intermediate-vocabulary-with-ipa"
+      "source": "pte-intermediate-vocabulary-with-ipa",
+      "wordType": "abbr."
     },
     {
       "english": "staff",
@@ -40219,7 +40222,7 @@
       "wordType": "n."
     },
     {
-      "english": "abbr. UN",
+      "english": "UN",
       "pronunciation": {
         "british": {
           "ipa": "ˌjuː ˈen",
@@ -40230,9 +40233,10 @@
           "phonetic": "YOO-EN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-intermediate",
-      "source": "pte-intermediate-vocabulary-with-ipa"
+      "source": "pte-intermediate-vocabulary-with-ipa",
+      "wordType": "abbr."
     },
     {
       "english": "tremendous",

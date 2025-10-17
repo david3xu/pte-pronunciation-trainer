@@ -239,7 +239,7 @@ class AppConfig {
                         'pte-reading-fib': '/data/processed/pte-reading-fib-vocabulary.json',
                         'pte-reading-fib-drag': '/data/processed/pte-reading-fib-drag-vocabulary.json',
                         'pte-asq-answers': '/data/processed/pte-asq-answers-vocabulary.json',
-                        
+
                         // Practice datasets (RS/ASQ/WFD)
                         'pte-repeat-sentence': '/data/processed/pte-repeat-sentence-dataset.json',
                         'pte-rs-segments': '/data/processed/pte-rs-segments-dataset.json',
@@ -298,14 +298,14 @@ class AppConfig {
                         usesPracticeDataset: true
                     },
                     asq: {
-                        type: 'practice', 
+                        type: 'practice',
                         defaultPracticeDataset: 'pte-answer-short-question',
                         usesLearningMode: false,
                         usesPracticeDataset: true
                     },
                     wfd: {
                         type: 'practice',
-                        defaultPracticeDataset: 'pte-write-from-dictation', 
+                        defaultPracticeDataset: 'pte-write-from-dictation',
                         usesLearningMode: false,
                         usesPracticeDataset: true
                     }
@@ -428,7 +428,7 @@ class AppConfig {
                     next: 'content:next',
                     prev: 'content:prev'
                 },
-                
+
                 // Audio playback and controls
                 audio: {
                     autoplay: {
@@ -451,7 +451,7 @@ class AppConfig {
                         changed: 'audio:repeat:changed'
                     }
                 },
-                
+
                 // Text-to-speech events
                 tts: {
                     speaking: {
@@ -466,7 +466,7 @@ class AppConfig {
                         changed: 'tts:repeat:changed'
                     }
                 },
-                
+
                 // Settings and configuration
                 settings: {
                     requestChange: 'settings:request-change',
@@ -481,7 +481,7 @@ class AppConfig {
                     exported: 'settings:exported',
                     imported: 'settings:imported'
                 },
-                
+
                 // Mode changes (practice mode, learning mode)
                 mode: {
                     practice: {
@@ -493,14 +493,14 @@ class AppConfig {
                         changed: 'mode:learning:changed'
                     }
                 },
-                
+
                 // System-level events
                 system: {
                     error: 'system:error',  // Global error handler
                     initialized: 'system:initialized',  // System ready
                     ready: 'system:ready'  // All modules loaded
                 },
-                
+
                 // Dataset loading and management
                 dataset: {
                     loading: 'dataset:loading',  // Before load starts
@@ -510,7 +510,7 @@ class AppConfig {
                         changed: 'dataset:practice:changed'
                     }
                 },
-                
+
                 // Vocabulary-specific events
                 vocabulary: {
                     loaded: 'vocabulary:loaded',
@@ -521,7 +521,7 @@ class AppConfig {
                     error: 'vocabulary:error',
                     loadError: 'vocabulary:load-error'
                 },
-                
+
                 // Progress tracking
                 progress: {
                     updated: 'progress:updated',
@@ -533,14 +533,14 @@ class AppConfig {
                     },
                     error: 'progress:error'
                 },
-                
+
                 // Voice selection
                 voice: {
                     preference: {
                         changed: 'voice:preference:changed'
                     }
                 },
-                
+
                 // Application lifecycle
                 app: {
                     initialized: 'app:initialized'

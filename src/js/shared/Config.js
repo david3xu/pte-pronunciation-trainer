@@ -174,6 +174,18 @@ class AppConfig {
                         isDefault: false
                     },
                     {
+                        id: 'pte-rs-segments',
+                        input: 'pte-repeat-sentence-segments.md',
+                        output: 'pte-rs-segments-dataset.json',
+                        category: 'pte-rs-segments',
+                        description: 'PTE RS Thought Group Segments (1,424 segments for pronunciation practice)',
+                        sourceType: 'numbered-sentences',
+                        dataType: 'rs',
+                        extractorType: 'PTESentenceExtractor',
+                        inputSubdir: 'rs',
+                        isDefault: false
+                    },
+                    {
                         id: 'pte-answer-short-question',
                         input: 'pte-answer-short-question.md',
                         output: 'pte-answer-short-question-dataset.json',
@@ -230,6 +242,7 @@ class AppConfig {
                         
                         // Practice datasets (RS/ASQ/WFD)
                         'pte-repeat-sentence': '/data/processed/pte-repeat-sentence-dataset.json',
+                        'pte-rs-segments': '/data/processed/pte-rs-segments-dataset.json',
                         'pte-answer-short-question': '/data/processed/pte-answer-short-question-dataset.json',
                         'pte-write-from-dictation': '/data/processed/pte-write-from-dictation-dataset.json'
                     },
@@ -260,7 +273,8 @@ class AppConfig {
                     { id: 'pte-wfd-vocab', label: '✍️ PTE WFD Vocabulary', dataset: 'pte-wfd-vocabulary-with-ipa' },
                     { id: 'pte-reading-fib', label: '📖 PTE Reading FIB Vocabulary', dataset: 'pte-reading-fib-vocabulary-with-ipa' },
                     { id: 'pte-reading-fib-drag', label: '🔀 PTE Reading FIB Drag Vocabulary', dataset: 'pte-reading-fib-drag-vocabulary-with-ipa' },
-                    { id: 'pte-asq-answers', label: '❓ PTE ASQ Answers Vocabulary', dataset: 'pte-asq-answers-vocabulary-with-ipa' }
+                    { id: 'pte-asq-answers', label: '❓ PTE ASQ Answers Vocabulary', dataset: 'pte-asq-answers-vocabulary-with-ipa' },
+                    { id: 'pte-rs-segments', label: '🎯 PTE RS Thought Groups', dataset: 'pte-rs-segments' }
                 ],
                 practiceDatasets: [
                     { id: 'pte-repeat-sentence', label: '🎤 Repeat Sentence', itemCount: 620, type: 'rs' },

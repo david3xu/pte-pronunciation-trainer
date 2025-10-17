@@ -131,8 +131,33 @@ class PTEVocabularyManager {
             }
             
             const dataset = await response.json();
-            this.datasets.set(mode, dataset);
-            console.log(`[PTEVocabularyManager] ✅ Loaded ${mode}: ${dataset.vocabulary?.length || 0} words${attempt > 0 ? ` (retry ${attempt})` : ''}`);
+            
+            // Transform RS segments to vocabulary format if needed
+            if (mode === 'pte-rs-segments' && Array.isArray(dataset) && !dataset.vocabulary) {
+              const transformedDataset = {
+                vocabulary: dataset.map(item => ({
+                  english: item.content?.sentence || item.sentence || '',
+                  category: item.metadata?.category || 'pte-rs-segments',
+                  difficulty: item.metadata?.difficulty || 'normal',
+                  wordType: null,
+                  ipa: {
+                    uk: null,
+                    us: null
+                  },
+                  pronunciation: {
+                    uk: null,
+                    us: null
+                  },
+                  id: item.id,
+                  type: item.type || 'rs'
+                }))
+              };
+              this.datasets.set(mode, transformedDataset);
+              console.log(`[PTEVocabularyManager] ✅ Loaded ${mode}: ${transformedDataset.vocabulary.length} segments (transformed)${attempt > 0 ? ` (retry ${attempt})` : ''}`);
+            } else {
+              this.datasets.set(mode, dataset);
+              console.log(`[PTEVocabularyManager] ✅ Loaded ${mode}: ${dataset.vocabulary?.length || 0} words${attempt > 0 ? ` (retry ${attempt})` : ''}`);
+            }
             return; // Success - exit function
           } catch (fetchError) {
             lastError = fetchError;

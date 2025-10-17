@@ -1081,34 +1081,6 @@ class UIController {
             return false;
         }
 
-        // Use the datasetFiles registry from Config.js instead of hardcoded mappings
-        const datasetFiles = this.config.get('data.datasetFiles');
-
-        // Map practice mode enum values to dataset types
-        const datasetMap = {};
-
-        // RS mode mapping
-        const rsMode = this.config.get('modes.practice.repeatSentence');
-        datasetMap[rsMode] = 'pte-repeat-sentence';
-
-        // ASQ mode mapping
-        const asqMode = this.config.get('modes.practice.answerShortQuestion');
-        datasetMap[asqMode] = 'pte-answer-short-question';
-
-        // WFD mode mapping
-        const wfdMode = this.config.get('modes.practice.writeFromDictation');
-        datasetMap[wfdMode] = 'pte-write-from-dictation';
-
-        const datasetType = datasetMap[mode];
-        if (!datasetType) {
-            this.handleError(
-                `Unknown practice mode: ${mode}`,
-                `No dataset type mapping found for mode: ${mode}`,
-                true
-            );
-            return false;
-        }
-
         try {
             // Show loading status using getModule for progressTracker
             const progressTracker = this.getModule('progressTracker');
@@ -1121,6 +1093,7 @@ class UIController {
             const settingsModule = this.getModule('settingsModule');
             if (settingsModule && typeof settingsModule.get === 'function') {
                 datasetId = settingsModule.get('practiceDataset');
+                console.log(`[UIController] 📝 Got practiceDataset from settings: ${datasetId}`);
             }
 
             // If no dataset specified in settings, use the default from config mapping
@@ -1147,25 +1120,12 @@ class UIController {
                 }
             }
 
-            // If still no dataset ID, try direct dataset ID from config
-            if (!datasetId) {
-                // Try matching direct dataset ID (rs -> pte-repeat-sentence)
-                const datasetFiles = this.config.get('data.datasetFiles');
-                if (datasetFiles && datasetFiles[mode]) {
-                    datasetId = mode;
-                }
-            }
-
-            // If still no dataset ID, use the mapped datasetType
-            if (!datasetId) {
-                datasetId = datasetType;
-            }
-
             // Safety check - if still no datasetId, show error
             if (!datasetId) {
                 this.handleError(
                     `Could not determine dataset ID for mode: ${mode}`,
-                    `No datasetId available after checking settings, config mapping, and fallbacks`
+                    `No datasetId available in settings or config mapping. Please check Config.js data.practiceModeMapping`,
+                    true
                 );
                 return false;
             }
@@ -1230,26 +1190,26 @@ class UIController {
             // Enhanced error details for debugging dataset loading issues
             let errorDetails = error.message || 'Unknown error';
             let userMessage = `Failed to load dataset for ${mode}`;
+            
+            // Get datasetId from earlier scope for error messages
+            const settingsModule = this.getModule('settingsModule');
+            const datasetId = settingsModule?.get('practiceDataset') || mode;
 
             // Add context to help diagnose specific issues
             if (errorDetails.includes('fetch') || errorDetails.includes('HTTP')) {
-                // Get path from config (single source of truth)
-                const processedPath = this.config.get('data.paths.processed') || 'data/processed/';
-                const fileName = datasetFiles[datasetType]?.file || `${datasetType}.json`;
-
                 // Check if error has detailed diagnostics added by DatasetManager
                 let diagnosticInfo = '';
                 if (error.details) {
                     diagnosticInfo = `\nDiagnostic details: ${JSON.stringify(error.details, null, 2)}`;
                 }
 
-                errorDetails = `Network error: ${errorDetails}. Ensure dataset file exists at ${processedPath}${fileName}${diagnosticInfo}`;
+                errorDetails = `Network error: ${errorDetails}. Dataset ID: ${datasetId}${diagnosticInfo}`;
                 userMessage = `Dataset file not found for ${mode} mode. Please check the data directory.`;
             } else if (errorDetails.includes('Dataset type not found')) {
-                errorDetails = `Dataset type error: ${errorDetails}. Available types in registry: ${Object.keys(datasetFiles || {}).join(', ')}`;
+                errorDetails = `Dataset type error: ${errorDetails}. Dataset ID: ${datasetId}`;
                 userMessage = `Invalid dataset type for ${mode} mode. Configuration issue detected.`;
             } else if (errorDetails.includes('invalid structure') || errorDetails.includes('empty')) {
-                errorDetails = `Dataset validation error: ${errorDetails}. Dataset ID: ${datasetId}, Type: ${datasetType}`;
+                errorDetails = `Dataset validation error: ${errorDetails}. Dataset ID: ${datasetId}`;
                 userMessage = `The ${mode} dataset has an invalid structure or is empty.`;
             }
 

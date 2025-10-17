@@ -2328,12 +2328,12 @@ Co-words
 2322. n. carbon | /ˈkɑːbən/ — sounds like **KAAH-bun** | /ˈkɑrbən/ — sounds like **KAR-bən**
 2323. v. conduct | /kənˈdʌkt/ — sounds like **kun-DUKT** | /kənˈdʌkt/ — sounds like **kun-DUKT**
 2324. n. volume | /ˈvɒljuːm/ — sounds like **VOL-yoom** | /ˈvɑljum/ — sounds like **VAHL-yoom**
-2325. n. credit
-2326. n. manner
-2327. v. enter
-2328. adj. wooden
-2329. n. center
-2330. v. listen
+2325. n. credit | /ˈkredɪt/ — sounds like **KRED-it** | /ˈkrɛdɪt/ — sounds like **KRED-it**
+2326. n. manner | /ˈmænə/ — sounds like **MAN-uh** | /ˈmænər/ — sounds like **MAN-ur**
+2327. v. enter | /ˈentə/ — sounds like **EN-tur** | /ˈɛntər/ — sounds like **EN-tur**
+2328. adj. wooden | /ˈwʊdən/ — sounds like **WOO-dun** | /ˈwʊdən/ — sounds like **WOO-dun**
+2329. n. center | /ˈsentə/ — sounds like **SEN-tur** | /ˈsɛntər/ — sounds like **SEN-tur**
+2330. v. listen | /ˈlɪsən/ — sounds like **LIS-un** | /ˈlɪsən/ — sounds like **LIS-un**
 2331. n. note | /nəʊt/ — sounds like **NOHT** | /noʊt/ — sounds like **NOHT**
 2332. n. concentration | /ˌkɒnsənˈtreɪʃən/ — sounds like **kon-sun-TRAY-shən** | /ˌkɑnsənˈtreɪʃən/ — sounds like **KAHN-sən-TRAY-shən**
 2333. pron. nobody | /ˈnəʊbɒdi/ — sounds like **NOH-bod-ee** | /ˈnoʊbɑdi/ — sounds like **NOH-bah-dee**

@@ -77,12 +77,22 @@ class DatasetManager {
 
         // Support both string paths and object entries
         const isStringPath = typeof registryEntry === 'string';
-        const filePath = isStringPath ? registryEntry : registryEntry.file;
+        let filePath;
+        
+        if (isStringPath) {
+            // String path: use as-is (full path like '/data/processed/...')
+            filePath = registryEntry;
+        } else {
+            // Object entry: combine with base path
+            const processedPath = this.config.get('data.paths.processed') || 'data/processed/';
+            const basePath = processedPath.startsWith('/') ? processedPath : `/${processedPath}`;
+            filePath = `${basePath}${registryEntry.file}`;
+        }
 
         console.log(`📥 DatasetManager: Loading ${datasetType} from ${filePath}...`);
 
         try {
-            console.log(`📥 DatasetManager: Fetching dataset from ${filePath} (using registry path)`);
+            console.log(`📥 DatasetManager: Fetching dataset from ${filePath} (using ${isStringPath ? 'full' : 'registry'} path)`);
 
             // For error reporting: record the path used
             this._lastUsedPath = {

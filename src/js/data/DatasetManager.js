@@ -432,18 +432,33 @@ class DatasetManager {
     }
 
     /**
-     * Clear all cached datasets
+     * Clear cached datasets
+     * @param {string} [datasetId] - Optional dataset ID to clear specific dataset, or undefined to clear all
      */
-    clearCache() {
-        console.log('🗑️ Clearing dataset cache...');
-        
-        // Use internal registry instead of config.pipeline.registry
-        Object.keys(this.registry).forEach(datasetType => {
-            const cacheKey = `${this.cache.prefix}${datasetType}_v${this.cache.version}`;
+    clearCache(datasetId) {
+        if (datasetId) {
+            // Clear specific dataset
+            console.log(`🗑️ Clearing cache for dataset: ${datasetId}...`);
+            const cacheKey = `${this.cache.prefix}${datasetId}_v${this.cache.version}`;
             localStorage.removeItem(cacheKey);
-        });
+            this.datasets.delete(datasetId);
+            this.metadata.delete(datasetId);
+            console.log(`✅ Cache cleared for ${datasetId}`);
+        } else {
+            // Clear all datasets
+            console.log('🗑️ Clearing all dataset cache...');
+            
+            // Use internal registry instead of config.pipeline.registry
+            Object.keys(this.registry).forEach(datasetType => {
+                const cacheKey = `${this.cache.prefix}${datasetType}_v${this.cache.version}`;
+                localStorage.removeItem(cacheKey);
+            });
+            
+            this.datasets.clear();
+            this.metadata.clear();
 
-        console.log('✅ Cache cleared');
+            console.log('✅ All cache cleared');
+        }
     }
 
     /**

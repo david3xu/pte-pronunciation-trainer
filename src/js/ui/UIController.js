@@ -1190,7 +1190,7 @@ class UIController {
             // Enhanced error details for debugging dataset loading issues
             let errorDetails = error.message || 'Unknown error';
             let userMessage = `Failed to load dataset for ${mode}`;
-            
+
             // Get datasetId from earlier scope for error messages
             const settingsModule = this.getModule('settingsModule');
             const datasetId = settingsModule?.get('practiceDataset') || mode;

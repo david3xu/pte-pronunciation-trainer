@@ -75,35 +75,28 @@ class DatasetManager {
             throw new Error(`Dataset type not found: ${datasetType}. Available: ${Object.keys(this.registry).join(', ')}`);
         }
 
-        console.log(`📥 DatasetManager: Loading ${datasetType} from ${registryEntry.file}...`);
+        // Support both string paths and object entries
+        const isStringPath = typeof registryEntry === 'string';
+        const filePath = isStringPath ? registryEntry : registryEntry.file;
+
+        console.log(`📥 DatasetManager: Loading ${datasetType} from ${filePath}...`);
 
         try {
-            // Get the processed path from config (single source of truth)
-            const processedPath = this.config.get('data.paths.processed') || 'data/processed/';
+            console.log(`📥 DatasetManager: Fetching dataset from ${filePath} (using registry path)`);
 
-            // Ensure the path has a leading slash for absolute paths
-            const basePath = processedPath.startsWith('/') ? processedPath : `/${processedPath}`;
-            const filePath = `${basePath}${registryEntry.file}`;
-
-            console.log(`📥 DatasetManager: Fetching dataset from ${filePath} (using config path)`);
-
-            // For error reporting: record the config path that was used
+            // For error reporting: record the path used
             this._lastUsedPath = {
-                configPath: 'data.paths.processed',
-                resolvedPath: basePath,
+                configPath: isStringPath ? 'data.datasetFiles' : 'data.paths.processed',
+                resolvedPath: filePath,
                 fullPath: filePath
             };
 
-            // Load from network with absolute path
+            // Load from network
             const response = await fetch(filePath);
             if (!response.ok) {
-                // Enhanced error with config path details for troubleshooting
                 const error = new Error(`HTTP ${response.status}: ${response.statusText} for ${filePath}`);
-                // Add additional properties to the error for diagnosis
                 error.details = {
                     configPathUsed: this._lastUsedPath.configPath,
-                    resolvedBasePath: this._lastUsedPath.resolvedPath,
-                    attemptedFile: registryEntry.file,
                     datasetType: datasetType,
                     fullPath: filePath
                 };
@@ -113,18 +106,22 @@ class DatasetManager {
 
             const data = await response.json();
 
+            // Auto-detect dataset type if not specified (for string paths)
+            const datasetTypeDetected = isStringPath ? this.detectDatasetType(data) : registryEntry.type;
+
             // Validate dataset structure
-            const validatedData = this.validateDataset(data, registryEntry.type);
+            const validatedData = this.validateDataset(data, datasetTypeDetected);
 
             // Store in memory
             this.datasets.set(datasetType, validatedData);
 
             // Store metadata
-            const itemCount = this.getItemCount(validatedData, registryEntry.type);
+            const itemCount = this.getItemCount(validatedData, datasetTypeDetected);
             this.metadata.set(datasetType, {
                 id: datasetType,
-                type: registryEntry.type,
-                file: registryEntry.file,
+                type: datasetTypeDetected,
+                file: filePath,
+                registryEntry: isStringPath ? { file: filePath, type: datasetTypeDetected } : registryEntry,
                 itemCount: itemCount,
                 loadedAt: new Date().toISOString()
             });
@@ -198,6 +195,38 @@ class DatasetManager {
         }
 
         return datasetFiles[datasetId].type;
+    }
+
+    /**
+     * Auto-detect dataset type from structure
+     * @param {Object} data - Dataset object
+     * @returns {string} Detected type: 'vocabulary', 'sentence', or 'question'
+     */
+    detectDatasetType(data) {
+        if (!data) return 'sentence';
+
+        // Vocabulary datasets have a 'vocabulary' array
+        if (data.vocabulary && Array.isArray(data.vocabulary)) {
+            return 'vocabulary';
+        }
+
+        // Check items array for type hints
+        if (data.items && Array.isArray(data.items) && data.items.length > 0) {
+            const firstItem = data.items[0];
+
+            // Question datasets have question/answer structure
+            if (firstItem.content && firstItem.content.question) {
+                return 'question';
+            }
+
+            // Sentence datasets have sentence text
+            if (firstItem.content && firstItem.content.text) {
+                return 'sentence';
+            }
+        }
+
+        // Default to sentence type
+        return 'sentence';
     }
 
     /**
@@ -507,8 +536,8 @@ class DatasetManager {
         return Array.from(this.metadata.values()).map(meta => ({
             id: meta.id,
             type: meta.type,
-            category: meta.registryEntry.category,
-            description: meta.registryEntry.description,
+            category: meta.registryEntry.category || meta.id,
+            description: meta.registryEntry.description || `${meta.type} dataset`,
             itemCount: meta.itemCount,
             loaded: true
         }));

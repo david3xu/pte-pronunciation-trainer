@@ -1,14 +1,14 @@
 /**
  * SettingsModule - Centralized Settings Management with Event-Driven Architecture
- * 
+ *
  * This module is the single source of truth for ALL application settings.
  * It handles validation, application to engines, persistence, and event emission.
- * 
+ *
  * Architecture:
  * - View Layer (UIController) emits 'setting:request-change' events
  * - SettingsModule validates, applies, persists, and emits 'setting:changed' events
  * - Engines/Managers react to validated settings
- * 
+ *
  * Benefits:
  * - Centralized validation
  * - Decoupled modules (loose coupling via EventBus)
@@ -23,7 +23,7 @@ class SettingsModule {
         this.config = config || window.appConfig;
         this.eventBus = eventBus || window.eventBus;
         this.storage = storage || window.storage;
-        
+
         if (!this.config || !this.eventBus || !this.storage) {
             const missing = [];
             if (!this.config) missing.push('config');
@@ -33,23 +33,23 @@ class SettingsModule {
             console.error('❌', errorMsg);
             throw new Error(errorMsg);
         }
-        
+
         // Current settings (in-memory cache)
         this.settings = {};
-        
+
         // Setting handlers - declarative configuration for each setting
         this.handlers = this.initializeHandlers();
-        
+
         // Load settings from storage
         this.loadSettings();
-        
+
         // Listen for setting change requests (standardized event from Config.js)
         const settingsRequestChangeEvent = window.appConfig.get('events.settings.requestChange');
         this.eventBus.on(settingsRequestChangeEvent, this.handleSettingChange.bind(this));
-        
+
         console.log('✅ SettingsModule: Initialized with', Object.keys(this.handlers).length, 'handlers');
     }
-    
+
     /**
      * Initialize setting handlers - each setting has validate, apply, default
      * This is the heart of the module - declarative configuration for all settings
@@ -57,7 +57,7 @@ class SettingsModule {
     initializeHandlers() {
         return {
             // ===== AUDIO SETTINGS =====
-            
+
             speed: {
                 validate: (value) => {
                     const speeds = Object.values(this.config.get('tts.speeds'));
@@ -74,16 +74,16 @@ class SettingsModule {
                 storageKey: 'speed',
                 description: 'TTS speech rate (slow/normal/fast)'
             },
-            
+
             delay: {
                 validate: (value) => {
                     // Get delays from Config.js instead of hardcoded values
-                const delays = this.config.get('tts.delays');
-                const userDelays = { 
-                    short: delays.short, 
-                    normal: delays.normal, 
-                    long: delays.long 
-                };
+                    const delays = this.config.get('tts.delays');
+                    const userDelays = {
+                        short: delays.short,
+                        normal: delays.normal,
+                        long: delays.long
+                    };
                     return Object.values(userDelays).includes(parseInt(value));
                 },
                 apply: (value) => {
@@ -97,7 +97,7 @@ class SettingsModule {
                 storageKey: 'delay',
                 description: 'Pause duration between words (1/2/3 seconds)'
             },
-            
+
             repeat: {
                 validate: (value) => {
                     return this.config.get('tts.repeatModes').includes(value);
@@ -106,7 +106,7 @@ class SettingsModule {
                     // AudioControls listens to 'setting:changed' event
                     // No direct method call needed - event-driven architecture
                     console.log(`[SettingsModule] Repeat mode changed to ${value} (event-driven)`);
-                    
+
                     // Reset repeat count when mode changes
                     if (window.ttsEngine) {
                         window.ttsEngine.currentRepeatCount = 0;
@@ -116,7 +116,7 @@ class SettingsModule {
                 storageKey: 'repeat',
                 description: 'Repeat mode (once/twice/intensive/loop)'
             },
-            
+
             voice: {
                 validate: (value) => {
                     // Always valid - voiceSelector handles auto/specific voices
@@ -134,9 +134,9 @@ class SettingsModule {
                 storageKey: 'voice',
                 description: 'TTS voice (auto or specific voice name)'
             },
-            
+
             // ===== VOCABULARY SETTINGS =====
-            
+
             difficulty: {
                 validate: (value) => {
                     return this.config.get('data.difficulties').includes(value);
@@ -152,7 +152,7 @@ class SettingsModule {
                 storageKey: 'difficulty',
                 description: 'Difficulty filter (all/easy/normal/hard)'
             },
-            
+
             learningMode: {
                 validate: (value) => {
                     const modes = this.config.get('data.learningModes');
@@ -169,9 +169,9 @@ class SettingsModule {
                 storageKey: 'learningMode',
                 description: 'Vocabulary book selection'
             },
-            
+
             // ===== PHASE 2: PRACTICE MODE SETTINGS =====
-            
+
             practiceMode: {
                 validate: (value) => {
                     const modes = this.config.get('data.practiceModes');
@@ -180,25 +180,25 @@ class SettingsModule {
                 apply: (value) => {
                     // Get old mode from SettingsModule (not window)
                     const oldMode = this.get('practiceMode');
-                    
+
                     // Emit mode:changing event BEFORE the change (standardized from Config.js)
                     const modeChangingEvent = window.appConfig.get('events.mode.practice.changing');
-                    this.eventBus.emit(modeChangingEvent, { 
-                        oldMode, 
+                    this.eventBus.emit(modeChangingEvent, {
+                        oldMode,
                         newMode: value,
                         timestamp: Date.now()
                     });
-                    
+
                     // Set global practice mode
                     window.currentPracticeMode = value;
-                    
+
                     // Apply practice mode mapping from Config.js - no hardcoded values
                     const modeMapping = this.config.get('data.practiceModeMapping');
                     const mapping = modeMapping && modeMapping[value];
-                    
+
                     if (mapping) {
                         console.log(`[SettingsModule] Applying mode mapping for '${value}':`, mapping);
-                        
+
                         // If this mode uses learning mode (vocabulary), ensure learning mode is set
                         if (mapping.usesLearningMode && mapping.defaultLearningMode) {
                             // Only set if no learning mode is currently set
@@ -208,7 +208,7 @@ class SettingsModule {
                                 this.updateSetting('learningMode', mapping.defaultLearningMode);
                             }
                         }
-                        
+
                         // If this mode uses practice dataset (rs/asq/wfd), ensure dataset is set
                         if (mapping.usesPracticeDataset && mapping.defaultPracticeDataset) {
                             // Only update if dataset actually changed (prevent duplicate events)
@@ -223,10 +223,10 @@ class SettingsModule {
                     } else {
                         console.warn(`[SettingsModule] ⚠️ No mapping found for practice mode: ${value}`);
                     }
-                    
+
                     // Emit mode:changed event AFTER the change (standardized from Config.js)
                     const modeChangedEvent = window.appConfig.get('events.mode.practice.changed');
-                    this.eventBus.emit(modeChangedEvent, { 
+                    this.eventBus.emit(modeChangedEvent, {
                         mode: value,
                         oldMode,
                         mapping: mapping || null,
@@ -237,7 +237,7 @@ class SettingsModule {
                 storageKey: 'practiceMode',
                 description: 'Practice type (vocabulary/rs/asq/wfd)'
             },
-            
+
             practiceDataset: {
                 validate: (value) => {
                     const datasets = this.config.get('data.practiceDatasets');
@@ -254,7 +254,7 @@ class SettingsModule {
             }
         };
     }
-    
+
     /**
      * Handle setting change request (main orchestration method)
      * Flow: validate → apply → persist → emit
@@ -267,33 +267,33 @@ class SettingsModule {
                 console.warn(`⚠️ SettingsModule: Unknown setting '${key}'`);
                 return { success: false, error: 'Unknown setting', key };
             }
-            
+
             // 2. Validate value
             if (handler.validate && !handler.validate.call(this, value)) {
                 console.warn(`⚠️ SettingsModule: Invalid value for '${key}': ${value}`);
                 return { success: false, error: 'Invalid value', key, value };
             }
-            
+
             // 3. Apply to engine/manager
             if (handler.apply) {
                 await handler.apply.call(this, value);
             }
-            
+
             // 4. Update in-memory cache
             this.settings[key] = value;
-            
+
             // 5. Persist to storage
             if (handler.storageKey) {
                 this.storage.setItem(handler.storageKey, value);
             }
-            
+
             // 6. Emit success event (standardized from Config.js)
             const settingsChangedEvent = window.appConfig.get('events.settings.changed');
             this.eventBus.emit(settingsChangedEvent, { key, value, timestamp: Date.now() });
-            
+
             console.log(`✅ SettingsModule: Updated '${key}' = '${value}'`);
             return { success: true, key, value };
-            
+
         } catch (error) {
             console.error(`❌ SettingsModule: Error updating '${key}':`, error);
             // Emit error event (standardized from Config.js)
@@ -302,7 +302,7 @@ class SettingsModule {
             return { success: false, error: error.message, key, value };
         }
     }
-    
+
     /**
      * Get current setting value
      */
@@ -331,26 +331,26 @@ class SettingsModule {
     async updateSetting(key, value) {
         return await this.handleSettingChange({ key, value });
     }
-    
+
     /**
      * Get all current settings
      */
     getAllSettings() {
         const allSettings = {};
-        
+
         for (const key of Object.keys(this.handlers)) {
             allSettings[key] = this.getSetting(key);
         }
-        
+
         return allSettings;
     }
-    
+
     /**
      * Reset all settings to defaults
      */
     async resetSettings() {
         console.log('🔄 SettingsModule: Resetting all settings to defaults...');
-        
+
         for (const [key, handler] of Object.entries(this.handlers)) {
             const defaultValue = handler.default?.();
             if (defaultValue !== undefined) {
@@ -363,15 +363,15 @@ class SettingsModule {
         this.eventBus.emit(settingsResetEvent, { timestamp: Date.now() });
         console.log('✅ SettingsModule: All settings reset');
     }
-    
+
     /**
      * Batch update multiple settings
      */
     async batchUpdate(settingsObject) {
         console.log('📦 SettingsModule: Batch updating', Object.keys(settingsObject).length, 'settings...');
-        
+
         const results = {};
-        
+
         for (const [key, value] of Object.entries(settingsObject)) {
             results[key] = await this.handleSettingChange({ key, value });
         }
@@ -381,7 +381,7 @@ class SettingsModule {
         this.eventBus.emit(batchUpdatedEvent, { results, timestamp: Date.now() });
         return results;
     }
-    
+
     /**
      * Load settings from storage AND apply them
      * This ensures all modules get initialized with correct values on startup
@@ -420,7 +420,7 @@ class SettingsModule {
         }
 
         console.log('📥 SettingsModule: Loaded', Object.keys(this.settings).length, 'settings from storage');
-        
+
         // Then, apply all loaded settings to initialize modules correctly
         // This emits setting:changed events for each setting
         for (const [key, value] of Object.entries(this.settings)) {
@@ -434,16 +434,16 @@ class SettingsModule {
                     console.warn(`⚠️ SettingsModule: Failed to apply '${key}' during initialization:`, error.message);
                     // Continue with other settings even if one fails
                 }
-                
+
                 // Emit event so other modules can react
                 const settingsChangedEvent = window.appConfig.get('events.settings.changed');
                 this.eventBus.emit(settingsChangedEvent, { key, value });
             }
         }
-        
+
         console.log('✅ SettingsModule: Applied all initial settings to modules');
     }
-    
+
     /**
      * Get available options for a setting (for dropdown population)
      * Converts Config.js data to {id, label} format for dropdowns
@@ -455,7 +455,7 @@ class SettingsModule {
                 console.error('❌ SettingsModule.getAvailableOptions: config is not available');
                 return [];
             }
-            
+
             // For speeds and delays, convert object to array of {id, label}
             if (key === 'speed') {
                 const speeds = this.config.get('tts.speeds');
@@ -468,7 +468,7 @@ class SettingsModule {
                     label: `${key.charAt(0).toUpperCase() + key.slice(1)} (${speeds[key]}x)`
                 }));
             }
-            
+
             if (key === 'delay') {
                 const delays = this.config.get('tts.delays');
                 if (!delays) {
@@ -482,7 +482,7 @@ class SettingsModule {
                     label: `${key.charAt(0).toUpperCase() + key.slice(1)} (${userDelays[key] / 1000}s)`
                 }));
             }
-            
+
             if (key === 'repeat') {
                 const repeatModes = this.config.get('tts.repeatModes');
                 if (!repeatModes) {
@@ -501,12 +501,12 @@ class SettingsModule {
                     label: labels[mode] || mode.charAt(0).toUpperCase() + mode.slice(1)
                 }));
             }
-            
+
             if (key === 'voice') {
                 // Voices are populated dynamically from browser TTS
                 return [];
             }
-            
+
             // For other settings, get arrays directly from config
             const optionsMap = {
                 difficulty: this.config.get('data.difficulties'),
@@ -514,27 +514,27 @@ class SettingsModule {
                 practiceMode: this.config.get('data.practiceModes'),
                 practiceDataset: this.config.get('data.practiceDatasets')
             };
-            
+
             // If it's already in {id, label} format, return as-is
             // If it's a simple array, convert to {id, label}
             let options = optionsMap[key] || [];
-            
+
             // Filter practiceDatasets by type if requested
             if (key === 'practiceDataset' && filterType) {
                 options = options.filter(opt => opt.type === filterType);
             }
-            
+
             if (Array.isArray(options) && options.length > 0 && typeof options[0] === 'string') {
                 return options.map(opt => ({ id: opt, label: opt }));
             }
-            
+
             return options;
         } catch (error) {
             console.error(`❌ SettingsModule.getAvailableOptions(${key}) error:`, error);
             return [];
         }
     }
-    
+
     /**
      * Export settings as JSON
      */
@@ -545,7 +545,7 @@ class SettingsModule {
             settings: this.getAllSettings()
         };
     }
-    
+
     /**
      * Import settings from JSON
      */
@@ -553,11 +553,11 @@ class SettingsModule {
         if (!settingsData || !settingsData.settings) {
             throw new Error('Invalid settings data');
         }
-        
+
         console.log('📥 SettingsModule: Importing settings...');
         return await this.batchUpdate(settingsData.settings);
     }
-    
+
     /**
      * Check if voice name is valid
      * @private
@@ -566,14 +566,14 @@ class SettingsModule {
         // Simple validation - voiceSelector will handle actual availability
         return typeof voiceName === 'string' && voiceName.length > 0;
     }
-    
+
     /**
      * Get handler information for debugging
      */
     getHandlerInfo(key) {
         const handler = this.handlers[key];
         if (!handler) return null;
-        
+
         return {
             key,
             description: handler.description,
@@ -584,7 +584,7 @@ class SettingsModule {
             storageKey: handler.storageKey
         };
     }
-    
+
     /**
      * Get all handlers information (for debugging/documentation)
      */

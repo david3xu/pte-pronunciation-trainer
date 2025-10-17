@@ -142,7 +142,7 @@ class UIController {
             this.updateButtons();
             this.displayFirstWord(); // Show first word of new mode
         });
-        
+
         // Listen for practice mode changes (using standardized event from Config.js)
         const practiceModeChangedEvent = window.appConfig.get('events.mode.practice.changed');
         window.eventBus.on(practiceModeChangedEvent, (data) => {
@@ -323,7 +323,7 @@ class UIController {
                             value: e.target.value
                         });
                     }
-                    
+
                     // Execute any after-change callbacks (e.g., UI updates)
                     if (afterChange) {
                         afterChange();
@@ -359,7 +359,7 @@ class UIController {
 
         // Vocabulary book (learning mode) dropdown
         this.populateDropdown('learningModeSelect', 'learningMode', this.config.get('data.defaults.learningMode'));
-        
+
         // Practice dataset dropdown (for RS/ASQ/WFD modes)
         this.populateDropdown('practiceDatasetSelect', 'practiceDataset', this.config.get('data.defaults.practiceDataset'));
 
@@ -371,7 +371,7 @@ class UIController {
         const defaultDelay = this.config.get('tts.delays.long'); // Match SettingsModule default
         this.populateDropdown('delaySelect', 'delay', String(defaultDelay));
         this.populateDropdown('repeatSelect', 'repeat', this.config.get('data.defaults.repeat'));
-        
+
         // Voice dropdown is populated separately by VoiceSelector
         if (window.voiceSelector) {
             window.voiceSelector.populateVoiceOptions();
@@ -415,21 +415,21 @@ class UIController {
         learningModes.forEach(mode => {
             modeLabels[mode.id] = mode.label;
         });
-        
+
         const displayName = modeLabels[currentMode] || currentMode;
 
         // Update context bar display with vocabulary book name and word count
         if (bookDisplay) {
             const modeName = modeLabels[currentMode] || currentMode;
             let displayText = `${modeName} (${currentWords.length}/${totalWords})`;
-            
+
             // Add difficulty indicator if filtered
             const defaultDifficulty = this.config.get('data.defaults.difficulty') || 'all';
             if (window.pteVocabularyManager.getCurrentDifficulty() !== defaultDifficulty) {
                 const emoji = { easy: '🟢', normal: '🟡', hard: '🔴' }[window.pteVocabularyManager.getCurrentDifficulty()] || '';
                 displayText += ` ${emoji}`;
             }
-            
+
             bookDisplay.textContent = displayText;
         }
     }
@@ -473,7 +473,7 @@ class UIController {
 
             phoneticPlain = selected.phonetic || '';
             ipaOnly = selected.ipa ? `/${selected.ipa}/` : '';
-            
+
             // Store both pronunciations for toggle functionality
             this.currentWordPronunciations = {
                 british: word.pronunciation.british,
@@ -519,7 +519,7 @@ class UIController {
                 }
             }
             englishElement.textContent = displayText;
-            
+
             // Add word-length based sizing class for optimal space utilization
             const wordLength = displayText.length;
             englishElement.classList.remove('word-short', 'word-medium', 'word-long');
@@ -530,25 +530,25 @@ class UIController {
             } else {
                 englishElement.classList.add('word-short');
             }
-            
+
             englishElement.classList.add('word-change');
             setTimeout(() => {
                 englishElement.classList.remove('word-change');
             }, 500);
         }
-        
+
         // Update word type badge (ONLY for vocabulary mode)
         const wordTypeBadge = document.getElementById('wordTypeBadge');
         const defaultMode = this.config.get('data.defaults.practiceMode') || this.config.get('fallbacks.practiceMode');
         const currentMode = this.getPracticeMode();
-        
+
         if (wordTypeBadge) {
             // Only show word type in vocabulary mode, hide in practice modes (RS/ASQ/WFD)
             // Use Config.js mapping to determine if this is vocabulary mode
             const modeMapping = this.config.get('data.practiceModeMapping');
             const mapping = modeMapping && modeMapping[currentMode];
             const isVocabularyMode = mapping && mapping.type === this.config.get('modes.practice.vocabulary');
-            
+
             if (isVocabularyMode && word.wordType) {
                 wordTypeBadge.textContent = `[${word.wordType}]`;
                 wordTypeBadge.style.display = 'inline-block';
@@ -1278,20 +1278,20 @@ class UIController {
         [phoneticSpelling, englishWord, ipaNotation, pronunciationText, exampleSentence].forEach(el => {
             if (el) el.textContent = '';
         });
-        
+
         // Hide word type badge for practice modes (RS/ASQ/WFD)
         // Word type badges are ONLY for vocabulary mode
         // Use Config.js mapping to determine if word type badge should be hidden
         const modeMapping = this.config.get('data.practiceModeMapping');
         const mapping = modeMapping && modeMapping[mode];
         const isVocabularyMode = mapping && mapping.type === this.config.get('modes.practice.vocabulary');
-        
+
         if (wordTypeBadge && !isVocabularyMode) {
             wordTypeBadge.style.display = 'none';
         }
 
         // Display based on mode
-        switch(mode) {
+        switch (mode) {
             case this.config.get('modes.practice.vocabulary'):
                 // Vocabulary mode - show word with phonetics
                 if (item.content) {

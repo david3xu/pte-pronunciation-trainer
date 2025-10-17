@@ -33,7 +33,7 @@ class SettingsPanel {
                 }
             });
         }
-        
+
         // Phase 2: Setup practice mode switching
         this.setupPracticeModeSwitch();
 
@@ -54,56 +54,56 @@ class SettingsPanel {
         const practiceModeSelect = document.getElementById('practiceModeSelect');
         const vocabularyBookSetting = document.getElementById('vocabularyBookSetting');
         const practiceDatasetSetting = document.getElementById('practiceDatasetSetting');
-        
+
         if (!practiceModeSelect) return; // Phase 2 not loaded
-        
+
         // IMPORTANT: Initialize window.currentPracticeMode from dropdown value
         // This ensures mode is set even before settings are loaded
         const defaultPracticeMode = window.appConfig?.get('data.defaults.practiceMode') || 'vocabulary';
         const initialMode = practiceModeSelect.value || defaultPracticeMode;
         window.currentPracticeMode = initialMode;
         console.log(`[SettingsPanel] Initial practice mode from dropdown: ${window.currentPracticeMode}`);
-        
+
         // Initialize dataset dropdown with filtered options for initial mode
         const modeMapping = window.appConfig?.get('data.practiceModeMapping');
         const mapping = modeMapping && modeMapping[initialMode];
         const isVocabularyMode = mapping && mapping.type === 'vocabulary';
-        
+
         if (!isVocabularyMode && window.uiController) {
             const defaultDataset = mapping?.defaultPracticeDataset || null;
             window.uiController.populateDropdown('practiceDatasetSelect', 'practiceDataset', defaultDataset, initialMode);
             console.log(`[SettingsPanel] 🔄 Initialized dataset dropdown for mode: ${initialMode}`);
         }
-        
+
         // Handle practice mode changes
         practiceModeSelect.addEventListener('change', (e) => {
             const mode = e.target.value;
             console.log(`[SettingsPanel] 🎯 Practice mode changed to: ${mode}`);
-            
+
             // Show/hide appropriate dataset selectors using Config.js mapping
             const modeMapping = window.appConfig?.get('data.practiceModeMapping');
             const mapping = modeMapping && modeMapping[mode];
             const isVocabularyMode = mapping && mapping.type === 'vocabulary';
-            
+
             if (isVocabularyMode) {
                 if (vocabularyBookSetting) vocabularyBookSetting.style.display = 'block';
                 if (practiceDatasetSetting) practiceDatasetSetting.style.display = 'none';
             } else {
                 if (vocabularyBookSetting) vocabularyBookSetting.style.display = 'none';
                 if (practiceDatasetSetting) practiceDatasetSetting.style.display = 'block';
-                
+
                 // Repopulate practiceDatasetSelect with filtered options for the current mode
                 const practiceDatasetSelect = document.getElementById('practiceDatasetSelect');
                 if (practiceDatasetSelect && window.uiController) {
                     // Get default dataset for this mode
                     const defaultDataset = mapping?.defaultPracticeDataset || null;
-                    
+
                     // Repopulate with filtered datasets (only show datasets matching this mode's type)
                     window.uiController.populateDropdown('practiceDatasetSelect', 'practiceDataset', defaultDataset, mode);
                     console.log(`[SettingsPanel] 🔄 Repopulated dataset dropdown for mode: ${mode}`);
                 }
             }
-            
+
             // INSTEAD of emitting both events, just save the setting
             // SettingsModule will emit the mode:practice:changed event
             // This prevents circular event references
@@ -140,22 +140,22 @@ class SettingsPanel {
         const defaultVoice = window.appConfig?.get('data.defaults.voice') || 'auto';
         this.applySettingToElement('voiceSelect', savedSettings.voice || defaultVoice);
         this.applySettingToElement('learningModeSelect', savedSettings.learningMode);
-        
+
         // IMPORTANT: Restore saved practice mode (vocabulary/rs/asq/wfd)
         const defaultPracticeMode = window.appConfig?.get('data.defaults.practiceMode') || 'vocabulary';
         const savedPracticeMode = savedSettings.practiceMode || defaultPracticeMode;
         console.log(`[SettingsPanel] Saved practice mode from settings: ${savedPracticeMode}`);
         this.applySettingToElement('practiceModeSelect', savedPracticeMode);
-        
+
         // Update window.currentPracticeMode (may have been initialized earlier)
         window.currentPracticeMode = savedPracticeMode;
         console.log(`[SettingsPanel] Set window.currentPracticeMode to: ${savedPracticeMode}`);
-        
+
         // If practice mode is not vocabulary, load the dataset (use Config.js mapping)
         const modeMapping = window.appConfig?.get('data.practiceModeMapping');
         const mapping = modeMapping && modeMapping[savedPracticeMode];
         const isVocabularyMode = mapping && mapping.type === 'vocabulary';
-        
+
         if (!isVocabularyMode && window.uiController) {
             console.log(`[SettingsPanel] Restoring practice mode: ${savedPracticeMode}, calling handlePracticeModeChange...`);
             window.uiController.handlePracticeModeChange(savedPracticeMode);

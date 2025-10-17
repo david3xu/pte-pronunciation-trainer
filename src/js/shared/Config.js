@@ -273,11 +273,11 @@ class AppConfig {
                     { id: 'pte-wfd-vocab', label: '✍️ PTE WFD Vocabulary', dataset: 'pte-wfd-vocabulary-with-ipa' },
                     { id: 'pte-reading-fib', label: '📖 PTE Reading FIB Vocabulary', dataset: 'pte-reading-fib-vocabulary-with-ipa' },
                     { id: 'pte-reading-fib-drag', label: '🔀 PTE Reading FIB Drag Vocabulary', dataset: 'pte-reading-fib-drag-vocabulary-with-ipa' },
-                    { id: 'pte-asq-answers', label: '❓ PTE ASQ Answers Vocabulary', dataset: 'pte-asq-answers-vocabulary-with-ipa' },
-                    { id: 'pte-rs-segments', label: '🎯 PTE RS Thought Groups', dataset: 'pte-rs-segments' }
+                    { id: 'pte-asq-answers', label: '❓ PTE ASQ Answers Vocabulary', dataset: 'pte-asq-answers-vocabulary-with-ipa' }
                 ],
                 practiceDatasets: [
                     { id: 'pte-repeat-sentence', label: '🎤 Repeat Sentence', itemCount: 620, type: 'rs' },
+                    { id: 'pte-rs-segments', label: '🎯 RS Thought Groups', itemCount: 1424, type: 'rs' },
                     { id: 'pte-answer-short-question', label: '❓ Answer Short Question', itemCount: 692, type: 'asq' },
                     { id: 'pte-write-from-dictation', label: '✍️ Write From Dictation', itemCount: 1195, type: 'wfd' }
                 ],

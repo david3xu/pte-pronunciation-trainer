@@ -314,7 +314,7 @@ class UIController {
         settingControls.forEach(({ elementId, settingKey, afterChange }) => {
             const element = document.getElementById(elementId);
             if (element) {
-                element.addEventListener('change', (e) => {
+                element.addEventListener('change', async (e) => {
                     // Emit event for SettingsModule to handle (standardized from Config.js)
                     if (window.eventBus) {
                         const settingsRequestChangeEvent = window.appConfig.get('events.settings.requestChange');
@@ -324,8 +324,10 @@ class UIController {
                         });
                     }
 
-                    // Execute any after-change callbacks (e.g., UI updates)
+                    // Wait a bit for SettingsModule to finish saving before executing callbacks
+                    // This ensures settings are persisted before we reload datasets
                     if (afterChange) {
+                        await new Promise(resolve => setTimeout(resolve, 100));
                         afterChange();
                     }
                 });
@@ -1017,7 +1019,15 @@ class UIController {
             return;
         }
 
-        console.log(`[UIController] 🔄 Practice dataset changed, reloading ${currentMode} mode...`);
+        // Get the new dataset ID from settings
+        const newDatasetId = window.settingsModule?.get('practiceDataset');
+        console.log(`[UIController] 🔄 Practice dataset changed to: ${newDatasetId}, reloading ${currentMode} mode...`);
+
+        // Clear the old dataset from cache to force reload
+        if (window.datasetManager && newDatasetId) {
+            console.log(`[UIController] 🗑️ Clearing cache for fresh reload...`);
+            window.datasetManager.clearCache(newDatasetId);
+        }
 
         // Reload the dataset for the current practice mode
         await this.loadPracticeDataset(currentMode);

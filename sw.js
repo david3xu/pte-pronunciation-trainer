@@ -21,10 +21,8 @@ const urlsToCache = isDevelopment ? [
   '/src/css/animations.css',
   '/src/css/components.css',
   '/src/css/style.css',
-  '/src/js/shared/AppNamespace.js',
   '/src/js/shared/Config.js',
   '/src/js/shared/DataSchema.js',
-  '/src/js/shared/LegacyCompatibility.js',
   '/src/js/utils/EventBus.js',
   '/src/js/utils/Storage.js',
   '/src/js/utils/CacheMigration.js',
@@ -137,7 +135,7 @@ self.addEventListener('activate', (event) => {
       // Delete ONLY old cache versions, preserve current version for offline functionality
       const cacheNames = await caches.keys();
       console.log('[SW] Found caches:', cacheNames);
-      
+
       await Promise.all(
         cacheNames.map((cacheName) => {
           // Keep current version, delete old versions only
@@ -150,7 +148,7 @@ self.addEventListener('activate', (event) => {
           }
         })
       );
-      
+
       console.log('[SW] Service Worker activated - App can now run in background');
       return self.clients.claim();
     })()

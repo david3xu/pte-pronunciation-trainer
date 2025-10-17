@@ -60,8 +60,20 @@ class SettingsPanel {
         // IMPORTANT: Initialize window.currentPracticeMode from dropdown value
         // This ensures mode is set even before settings are loaded
         const defaultPracticeMode = window.appConfig?.get('data.defaults.practiceMode') || 'vocabulary';
-        window.currentPracticeMode = practiceModeSelect.value || defaultPracticeMode;
+        const initialMode = practiceModeSelect.value || defaultPracticeMode;
+        window.currentPracticeMode = initialMode;
         console.log(`[SettingsPanel] Initial practice mode from dropdown: ${window.currentPracticeMode}`);
+        
+        // Initialize dataset dropdown with filtered options for initial mode
+        const modeMapping = window.appConfig?.get('data.practiceModeMapping');
+        const mapping = modeMapping && modeMapping[initialMode];
+        const isVocabularyMode = mapping && mapping.type === 'vocabulary';
+        
+        if (!isVocabularyMode && window.uiController) {
+            const defaultDataset = mapping?.defaultPracticeDataset || null;
+            window.uiController.populateDropdown('practiceDatasetSelect', 'practiceDataset', defaultDataset, initialMode);
+            console.log(`[SettingsPanel] 🔄 Initialized dataset dropdown for mode: ${initialMode}`);
+        }
         
         // Handle practice mode changes
         practiceModeSelect.addEventListener('change', (e) => {
@@ -80,14 +92,15 @@ class SettingsPanel {
                 if (vocabularyBookSetting) vocabularyBookSetting.style.display = 'none';
                 if (practiceDatasetSetting) practiceDatasetSetting.style.display = 'block';
                 
-                // Auto-select matching dataset for practice mode using Config.js mapping
+                // Repopulate practiceDatasetSelect with filtered options for the current mode
                 const practiceDatasetSelect = document.getElementById('practiceDatasetSelect');
-                if (practiceDatasetSelect && window.appConfig) {
-                    const modeMapping = window.appConfig.get('data.practiceModeMapping');
-                    const mapping = modeMapping && modeMapping[mode];
-                    if (mapping && mapping.defaultPracticeDataset) {
-                        practiceDatasetSelect.value = mapping.defaultPracticeDataset;
-                    }
+                if (practiceDatasetSelect && window.uiController) {
+                    // Get default dataset for this mode
+                    const defaultDataset = mapping?.defaultPracticeDataset || null;
+                    
+                    // Repopulate with filtered datasets (only show datasets matching this mode's type)
+                    window.uiController.populateDropdown('practiceDatasetSelect', 'practiceDataset', defaultDataset, mode);
+                    console.log(`[SettingsPanel] 🔄 Repopulated dataset dropdown for mode: ${mode}`);
                 }
             }
             

@@ -381,12 +381,12 @@ class UIController {
     /**
      * Generic dropdown population method
      */
-    populateDropdown(elementId, settingKey, defaultValue) {
+    populateDropdown(elementId, settingKey, defaultValue, filterType = null) {
         const element = document.getElementById(elementId);
         if (!element) return;
 
         const settingsModule = window.settingsModule;
-        const options = settingsModule.getAvailableOptions(settingKey);
+        const options = settingsModule.getAvailableOptions(settingKey, filterType);
 
         element.innerHTML = '';
         options.forEach(option => {

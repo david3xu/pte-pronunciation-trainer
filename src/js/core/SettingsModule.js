@@ -448,7 +448,7 @@ class SettingsModule {
      * Get available options for a setting (for dropdown population)
      * Converts Config.js data to {id, label} format for dropdowns
      */
-    getAvailableOptions(key) {
+    getAvailableOptions(key, filterType = null) {
         try {
             // Validate config is available
             if (!this.config) {
@@ -517,7 +517,13 @@ class SettingsModule {
             
             // If it's already in {id, label} format, return as-is
             // If it's a simple array, convert to {id, label}
-            const options = optionsMap[key] || [];
+            let options = optionsMap[key] || [];
+            
+            // Filter practiceDatasets by type if requested
+            if (key === 'practiceDataset' && filterType) {
+                options = options.filter(opt => opt.type === filterType);
+            }
+            
             if (Array.isArray(options) && options.length > 0 && typeof options[0] === 'string') {
                 return options.map(opt => ({ id: opt, label: opt }));
             }

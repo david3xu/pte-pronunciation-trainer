@@ -1,19 +1,19 @@
 /**
  * DatasetManager - Unified Dataset Management System
- * 
+ *
  * Purpose: Centralized manager for all PTE dataset types
  * - Vocabulary datasets (with IPA)
  * - Repeat Sentence (RS) - sentences
  * - Answer Short Question (ASQ) - Q&A
  * - Write From Dictation (WFD) - sentences
- * 
+ *
  * Features:
  * - Auto-detects dataset type (vocabulary vs sentence vs question)
  * - Unified API for all dataset operations
  * - Smart caching with localStorage
  * - Filtering by difficulty, category, tags
  * - Progress tracking integration
- * 
+ *
  * @class DatasetManager
  * @date 2025-10-07
  */
@@ -44,15 +44,15 @@ class DatasetManager {
     async initialize(config) {
         this.config = config || {};
         console.log('📦 DatasetManager: Initializing...');
-        
+
         // Get dataset registry from Config.js (single source of truth)
         this.registry = this.config.get('data.datasetFiles');
-        
+
         // Try to load from cache first
         if (this.cache.enabled) {
             await this.loadFromCache();
         }
-        
+
         console.log('✅ DatasetManager: Ready');
     }
 
@@ -112,13 +112,13 @@ class DatasetManager {
             }
 
             const data = await response.json();
-            
+
             // Validate dataset structure
             const validatedData = this.validateDataset(data, registryEntry.type);
 
             // Store in memory
             this.datasets.set(datasetType, validatedData);
-            
+
             // Store metadata
             const itemCount = this.getItemCount(validatedData, registryEntry.type);
             this.metadata.set(datasetType, {
@@ -144,7 +144,7 @@ class DatasetManager {
                     itemCount: itemCount
                 });
             }
-            
+
             return validatedData;
 
         } catch (error) {
@@ -169,9 +169,9 @@ class DatasetManager {
      */
     async loadAllDatasets() {
         console.log('📥 DatasetManager: Loading all datasets...');
-        
+
         const datasetTypes = Object.keys(this.registry);
-        const loadPromises = datasetTypes.map(type => 
+        const loadPromises = datasetTypes.map(type =>
             this.loadDataset(type).catch(err => {
                 console.warn(`⚠️ Failed to load ${type}:`, err.message);
                 return null;
@@ -179,7 +179,7 @@ class DatasetManager {
         );
 
         await Promise.all(loadPromises);
-        
+
         console.log(`✅ DatasetManager: Loaded ${this.datasets.size}/${datasetTypes.length} datasets`);
         return this.datasets;
     }
@@ -321,7 +321,7 @@ class DatasetManager {
      */
     getRandomItems(datasetId, count, filters = {}) {
         const items = this.getItems(datasetId, filters);
-        
+
         if (items.length === 0) {
             return [];
         }
@@ -339,13 +339,13 @@ class DatasetManager {
     getStatistics(datasetId) {
         const dataset = this.datasets.get(datasetId);
         const meta = this.metadata.get(datasetId);
-        
+
         if (!dataset || !meta) {
             return null;
         }
 
         const items = meta.type === 'vocabulary' ? dataset.vocabulary : dataset.items;
-        
+
         // Count by difficulty
         const byDifficulty = {
             easy: 0,
@@ -397,19 +397,19 @@ class DatasetManager {
      */
     async loadFromCache() {
         console.log('💾 Loading from cache...');
-        
+
         let loadedCount = 0;
-        
+
         // Use internal registry instead of config.pipeline.registry
         Object.keys(this.registry).forEach(datasetType => {
             const cacheKey = `${this.cache.prefix}${datasetType}_v${this.cache.version}`;
             const cached = localStorage.getItem(cacheKey);
-            
+
             if (cached) {
                 try {
                     const data = JSON.parse(cached);
                     const registryEntry = this.registry[datasetType];
-                    
+
                     this.datasets.set(datasetType, data);
                     this.metadata.set(datasetType, {
                         id: datasetType,
@@ -418,7 +418,7 @@ class DatasetManager {
                         itemCount: this.getItemCount(data, registryEntry.type),
                         loadedAt: 'from-cache'
                     });
-                    
+
                     loadedCount++;
                 } catch (error) {
                     console.warn(`⚠️ Failed to parse cached ${datasetType}:`, error.message);
@@ -447,13 +447,13 @@ class DatasetManager {
         } else {
             // Clear all datasets
             console.log('🗑️ Clearing all dataset cache...');
-            
+
             // Use internal registry instead of config.pipeline.registry
             Object.keys(this.registry).forEach(datasetType => {
                 const cacheKey = `${this.cache.prefix}${datasetType}_v${this.cache.version}`;
                 localStorage.removeItem(cacheKey);
             });
-            
+
             this.datasets.clear();
             this.metadata.clear();
 

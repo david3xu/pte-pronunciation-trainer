@@ -78,7 +78,7 @@ class DatasetManager {
         // Support both string paths and object entries
         const isStringPath = typeof registryEntry === 'string';
         let filePath;
-        
+
         if (isStringPath) {
             // String path: use as-is (full path like '/data/processed/...')
             filePath = registryEntry;

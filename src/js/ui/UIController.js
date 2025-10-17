@@ -1001,24 +1001,24 @@ class UIController {
     async handlePracticeDatasetChange() {
         // Get current practice mode
         const currentMode = window.currentPracticeMode || window.settingsModule?.get('practiceMode');
-        
+
         if (!currentMode) {
             console.warn('[UIController] ⚠️ No practice mode set, cannot reload dataset');
             return;
         }
-        
+
         // Check if we're in a practice mode (not vocabulary mode)
         const modeMapping = this.config.get('data.practiceModeMapping');
         const mapping = modeMapping?.[currentMode];
         const isVocabularyMode = mapping?.type === this.config.get('modes.practice.vocabulary');
-        
+
         if (isVocabularyMode) {
             console.log('[UIController] In vocabulary mode, ignoring dataset change');
             return;
         }
-        
+
         console.log(`[UIController] 🔄 Practice dataset changed, reloading ${currentMode} mode...`);
-        
+
         // Reload the dataset for the current practice mode
         await this.loadPracticeDataset(currentMode);
     }

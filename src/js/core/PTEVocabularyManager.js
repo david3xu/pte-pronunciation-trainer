@@ -43,7 +43,7 @@ class PTEVocabularyManager {
    * Handle setting changes from SettingsModule
    * @private
    */
-  async _handleSettingChange({key, value}) {
+  async _handleSettingChange({ key, value }) {
     if (key === 'difficulty') {
       this.setDifficulty(value);
       console.log(`[PTEVocabularyManager] Difficulty changed to ${value}`);
@@ -97,7 +97,7 @@ class PTEVocabularyManager {
     if (!this.datasets.has(mode)) {
       await this.loadDataset(mode);
     }
-    
+
     // Get vocabulary from dataset
     const dataset = this.datasets.get(mode);
     this.allWords = (dataset && dataset.vocabulary) || [];
@@ -112,26 +112,26 @@ class PTEVocabularyManager {
   async loadDataset(mode) {
     try {
       const byMode = this.config.get('data.paths.byMode') || {};
-      
+
       if (byMode[mode]) {
         const cacheBuster = `?v=${Date.now()}`;
         const url = byMode[mode] + cacheBuster;
         console.log(`[PTEVocabularyManager] Loading dataset for mode: ${mode} from ${url}`);
-        
+
         // Retry logic with exponential backoff for network failures
         const maxRetries = 3;
         const retryDelays = [1000, 2000, 4000]; // 1s, 2s, 4s
         let lastError = null;
-        
+
         for (let attempt = 0; attempt <= maxRetries; attempt++) {
           try {
             const response = await fetch(url);
             if (!response.ok) {
               throw new Error(`HTTP ${response.status}: ${response.statusText}`);
             }
-            
+
             const dataset = await response.json();
-            
+
             // Transform RS segments to vocabulary format if needed
             if (mode === 'pte-rs-segments' && Array.isArray(dataset) && !dataset.vocabulary) {
               const transformedDataset = {
@@ -161,7 +161,7 @@ class PTEVocabularyManager {
             return; // Success - exit function
           } catch (fetchError) {
             lastError = fetchError;
-            
+
             // Don't retry if it's the last attempt
             if (attempt < maxRetries) {
               const delay = retryDelays[attempt];
@@ -170,14 +170,14 @@ class PTEVocabularyManager {
             }
           }
         }
-        
+
         // All retries failed
         throw new Error(`Failed to fetch ${mode} dataset after ${maxRetries + 1} attempts: ${lastError.message}`);
-        
+
       } else {
         const errorMsg = `No path configured for mode: ${mode}`;
         console.warn(`[PTEVocabularyManager] ⚠️ ${errorMsg}`);
-        
+
         // Emit error event for UI notification
         if (window.eventBus) {
           const loadErrorEvent = this.config.get('events.vocabulary.loadError') || 'vocabulary:load-error';
@@ -187,13 +187,13 @@ class PTEVocabularyManager {
             severity: 'warning'
           });
         }
-        
+
         this.datasets.set(mode, { vocabulary: [] });
       }
     } catch (error) {
       const errorMsg = `Error loading ${mode} dataset: ${error.message}`;
       console.error(`[PTEVocabularyManager] ❌ ${errorMsg}`, error);
-      
+
       // Emit error event for centralized error handling
       if (window.eventBus) {
         const loadErrorEvent = this.config.get('events.vocabulary.loadError') || 'vocabulary:load-error';
@@ -204,14 +204,14 @@ class PTEVocabularyManager {
           severity: 'error'
         });
       }
-      
+
       // Set empty fallback but make it obvious something failed
-      this.datasets.set(mode, { 
+      this.datasets.set(mode, {
         vocabulary: [],
         _loadError: errorMsg,
         _timestamp: new Date().toISOString()
       });
-      
+
       // Don't throw - allow app to continue with empty dataset
       // But user will be notified via event system
     }
@@ -224,13 +224,13 @@ class PTEVocabularyManager {
   getNextLearningMode() {
     const learningModeSequence = [
       'pte-fib-listening',
-      'pte-beginner', 
+      'pte-beginner',
       'pte-intermediate',
       'pte-advanced',
       'pte-ra',
       'pte-rs'
     ];
-    
+
     const currentIndex = learningModeSequence.indexOf(this.currentLearningMode);
     const nextIndex = (currentIndex + 1) % learningModeSequence.length;
     return learningModeSequence[nextIndex];

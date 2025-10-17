@@ -318,6 +318,7 @@ class AppConfig {
                     // Practice datasets for sentence modes (RS/ASQ/WFD)
                     'pte-repeat-sentence': { file: 'pte-repeat-sentence-dataset.json', type: 'sentence' },
                     'repeat-sentence': { file: 'pte-repeat-sentence-dataset.json', type: 'sentence' }, // Legacy ID mapping
+                    'pte-rs-segments': { file: 'pte-rs-segments-dataset.json', type: 'sentence' },
                     'pte-answer-short-question': { file: 'pte-answer-short-question-dataset.json', type: 'question' },
                     'answer-short-question': { file: 'pte-answer-short-question-dataset.json', type: 'question' }, // Legacy ID mapping
                     'pte-write-from-dictation': { file: 'pte-write-from-dictation-dataset.json', type: 'sentence' },

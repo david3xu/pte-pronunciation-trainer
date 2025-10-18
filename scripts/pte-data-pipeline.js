@@ -8,6 +8,7 @@
 const fs = require('fs');
 const path = require('path');
 const PTETermsExtractor = require('../src/js/data/extractors/PTETermsExtractor.js');
+const SingleIPATermsExtractor = require('../src/js/data/extractors/SingleIPATermsExtractor.js');
 const PTESentenceExtractor = require('../src/js/data/extractors/PTESentenceExtractor.js');
 const PTEQuestionExtractor = require('../src/js/data/extractors/PTEQuestionExtractor.js');
 const AppConfig = require('../src/js/shared/Config.js');
@@ -213,13 +214,52 @@ class PTEDataPipeline {
           if (extractorType === 'PTESentenceExtractor') {
             // Handle sentence-based datasets (RS, WFD)
             dataset = await PTESentenceExtractor.extract(inputPath, { type: dataType });
-            
+
           } else if (extractorType === 'PTEQuestionExtractor') {
             // Handle question-based datasets (ASQ)
             dataset = await PTEQuestionExtractor.extract(inputPath);
-            
+
+          } else if (extractorType === 'SingleIPATermsExtractor') {
+            // Handle vocabulary with single IPA format
+            try {
+              terms = await SingleIPATermsExtractor.extract(inputPath, fs, {
+                category: entry.category,
+                source: entry.sourceType
+              });
+            } catch (e) {
+              // On parser error, try fallback simple list if configured
+              if (entry.fallback) {
+                const fallbackPath = path.join(this.config.inputDir, inputSubdir, entry.fallback);
+                terms = await this.extractPTETerms(fallbackPath);
+                usedFallback = true;
+              } else {
+                throw e;
+              }
+            }
+
+            // If IPA extractor returned zero, attempt fallback simple list
+            if ((!terms || terms.length === 0) && entry.fallback) {
+              const fallbackPath = path.join(this.config.inputDir, inputSubdir, entry.fallback);
+              terms = await this.extractPTETerms(fallbackPath);
+              usedFallback = true;
+            }
+
+            const unique = this.removeDuplicates(terms);
+            dataset = {
+              metadata: {
+                generated: new Date().toISOString(),
+                totalTerms: unique.length,
+                source: entry.sourceType,
+                description: entry.description,
+                version: '1.0',
+                categories: [entry.category],
+                hasIPA: !usedFallback
+              },
+              vocabulary: unique
+            };
+
           } else {
-            // Handle vocabulary-based datasets (default)
+            // Handle vocabulary-based datasets (default PTETermsExtractor)
             try {
               terms = await PTETermsExtractor.extract(inputPath, fs, {
                 category: entry.category,

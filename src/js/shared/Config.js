@@ -126,6 +126,18 @@ class AppConfig {
                         isDefault: false
                     },
                     {
+                        id: 'pte-rs-wfd-vocab',
+                        input: 'pte-rs-wfd-vocabulary-with-ipa.md',
+                        output: 'pte-rs-wfd-vocabulary.json',
+                        category: 'pte-rs-wfd-vocab',
+                        description: 'PTE RS & WFD Academic Vocabulary (1,834 essential terms with IPA)',
+                        sourceType: 'pte-rs-wfd-vocabulary-with-ipa',
+                        dataType: 'vocabulary',
+                        extractorType: 'SingleIPATermsExtractor',
+                        inputSubdir: 'vocabs',
+                        isDefault: false
+                    },
+                    {
                         id: 'pte-reading-fib',
                         input: 'pte-reading-fib-vocabulary-with-ipa.md',
                         output: 'pte-reading-fib-vocabulary.json',
@@ -236,6 +248,7 @@ class AppConfig {
                         'pte-rs': '/data/processed/pte-rs-vocabulary.json',
                         'pte-must-know': '/data/processed/pte-must-know-vocabulary.json',
                         'pte-wfd-vocab': '/data/processed/pte-wfd-vocabulary.json',
+                        'pte-rs-wfd-vocab': '/data/processed/pte-rs-wfd-vocabulary.json',
                         'pte-reading-fib': '/data/processed/pte-reading-fib-vocabulary.json',
                         'pte-reading-fib-drag': '/data/processed/pte-reading-fib-drag-vocabulary.json',
                         'pte-asq-answers': '/data/processed/pte-asq-answers-vocabulary.json',
@@ -271,6 +284,7 @@ class AppConfig {
                     { id: 'pte-rs', label: '🎯 PTE Repeat Sentence (RS) Vocabulary', dataset: 'pte-rs-vocabulary-with-ipa' },
                     { id: 'pte-must-know', label: '⭐ PTE Must-Know Vocabulary', dataset: 'pte-must-know-vocabulary-with-ipa' },
                     { id: 'pte-wfd-vocab', label: '✍️ PTE WFD Vocabulary', dataset: 'pte-wfd-vocabulary-with-ipa' },
+                    { id: 'pte-rs-wfd-vocab', label: '🎯✍️ PTE RS & WFD Academic Vocabulary', dataset: 'pte-rs-wfd-vocabulary-with-ipa' },
                     { id: 'pte-reading-fib', label: '📖 PTE Reading FIB Vocabulary', dataset: 'pte-reading-fib-vocabulary-with-ipa' },
                     { id: 'pte-reading-fib-drag', label: '🔀 PTE Reading FIB Drag Vocabulary', dataset: 'pte-reading-fib-drag-vocabulary-with-ipa' },
                     { id: 'pte-asq-answers', label: '❓ PTE ASQ Answers Vocabulary', dataset: 'pte-asq-answers-vocabulary-with-ipa' }

@@ -101,15 +101,16 @@ window.audioControls.startAutoPlay();
 ### Data Pipeline
 - **`scripts/pte-data-pipeline.js`** - Markdown → JSON processing
 - **`src/js/data/DatasetManager.js`** - Unified dataset loader (6 types)
-- **`src/js/data/extractors/PTETermsExtractor.js`** - Vocabulary extraction
+- **`src/js/data/extractors/PTETermsExtractor.js`** - Vocabulary extraction (dual IPA format: British + American)
+- **`src/js/data/extractors/SingleIPATermsExtractor.js`** - Vocabulary extraction (single IPA format)
 - **`src/js/data/extractors/PTESentenceExtractor.js`** - RS/WFD sentence extraction
 - **`src/js/data/extractors/PTEQuestionExtractor.js`** - ASQ question extraction
 
 ## Data Architecture
 
 ### Dataset Types
-1. **Vocabulary** (11 books) - Words with IPA pronunciation
-   - PTE FIB Listening, Beginner, Intermediate, Advanced, RA, RS Vocab, Must-Know, WFD Vocab, Reading FIB, Reading FIB Drag, ASQ Answers
+1. **Vocabulary** (12 books) - Words with IPA pronunciation
+   - PTE FIB Listening, Beginner, Intermediate, Advanced, RA, RS Vocab, Must-Know, WFD Vocab, RS-WFD Vocab, Reading FIB, Reading FIB Drag, ASQ Answers
 2. **Practice** (3 modes) - Sentences/questions for practice
    - Repeat Sentence (620), Answer Short Question (692), Write From Dictation (1,195)
 
@@ -241,10 +242,15 @@ window.eventBus.emit('system:error', {
 ### Adding a New Vocabulary Book
 1. Add Markdown file to `data/source/pte/vocabs/`
 2. Add entry to `Config.js` → `pipeline.registry[]`
+   - Choose `extractorType`: `'PTETermsExtractor'` (dual IPA) or `'SingleIPATermsExtractor'` (single IPA)
 3. Add path to `Config.js` → `data.paths.byMode{}`
 4. Add to `Config.js` → `data.learningModes[]`
 5. Run `npm run data:pte` to process
 6. Update Service Worker cache list if needed
+
+**IPA Format Options**:
+- **Dual IPA** (PTETermsExtractor): `word | /British IPA/ — sounds like **PHONETIC** | /American IPA/ — sounds like **PHONETIC**`
+- **Single IPA** (SingleIPATermsExtractor): `word | /IPA/ — sounds like **PHONETIC**`
 
 ### Adding a New Event
 1. Define in `Config.js` → `events` object (lines 390-508)

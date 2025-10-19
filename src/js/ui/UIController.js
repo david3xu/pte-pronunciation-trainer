@@ -488,6 +488,13 @@ class UIController {
             ipaOnly = word.pronunciation.british.ipa ? `/${word.pronunciation.british.ipa}/` : '';
             this.currentWordPronunciations = { british: word.pronunciation.british };
         }
+        // Single IPA format: pronunciation.ipa directly (e.g., PTE RS-WFD Vocab)
+        else if (word.pronunciation && word.pronunciation.ipa) {
+            phoneticPlain = word.pronunciation.phonetic || '';
+            ipaOnly = word.pronunciation.ipa ? `/${word.pronunciation.ipa}/` : '';
+            // Treat single IPA as neutral (no british/american distinction)
+            this.currentWordPronunciations = null;
+        }
         // Legacy fallback (should not occur in current PTE datasets)
         else {
             console.warn('Word missing standard pronunciation data:', word.english);

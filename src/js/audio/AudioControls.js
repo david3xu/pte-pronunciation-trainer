@@ -490,11 +490,9 @@ class AudioControls {
     }
 
     restartCurrentDataset() {
-        const practiceMode = window.settingsModule ? 
+        const practiceMode = window.settingsModule ?
             window.settingsModule.getSetting('practiceMode') : 'vocabulary';
-        const practiceDataset = window.settingsModule ? 
-            window.settingsModule.getSetting('practiceDataset') : '';
-        
+
         console.log(`[AudioControls] 🔄 Dataset completed: ${practiceMode.toUpperCase()}`);
         console.log(`[AudioControls] ➡️ Restarting dataset from beginning...`);
         

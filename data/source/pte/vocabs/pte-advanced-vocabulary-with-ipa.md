@@ -673,7 +673,7 @@ This collection includes all words that appear twice or less in the PTE test ban
 656. n. Nieman | /ˈniːmən/ — sounds like **NEE-mun** | /ˈniːmən/ — sounds like **NEE-mun**
 657. adj. stagnant | /ˈstæɡnənt/ — sounds like **STAG-nunt** | /ˈstæɡnənt/ — sounds like **STAG-nunt**
 658. adj. unimaginable | /ˌʌnɪˈmædʒɪnəbəl/ — sounds like **un-i-MAJ-i-nuh-bul** | /ˌʌnɪˈmædʒɪnəbəl/ — sounds like **un-i-MAJ-i-nuh-bul**
-659. n. soundbite | /ˈsaʊndbaɪt/ — sounds like **SOWND-byet** | /ˈsaʊndbaɪt/ — sounds like **SOWND-byet**
+659. n. soundbite | /ˈsaʊndbaɪt/ — sounds like **SOWND-BITE** | /ˈsaʊndbaɪt/ — sounds like **SOWND-BITE**
 660. adj. right-wing | /ˈraɪtwɪŋ/ — sounds like **RYET-WING** | /ˈraɪtwɪŋ/ — sounds like **RYET-WING**
 661. n. pun | /pʌn/ — sounds like **PUN** | /pʌn/ — sounds like **PUN**
 662. n. punchline | /ˈpʌntʃlaɪn/ — sounds like **PUNCH-lyen** | /ˈpʌntʃlaɪn/ — sounds like **PUNCH-lyen**
@@ -1218,7 +1218,7 @@ This collection includes all words that appear twice or less in the PTE test ban
 1196. n. headmaster | /ˈhedmɑːstə/ — sounds like **HED-mahs-tuh** | /ˈhedmæstər/ — sounds like **HED-mas-tuhr**
 1197. n. Pissarro | /pɪˈsɑːrəʊ/ — sounds like **pi-SAHR-oh** | /pɪˈsɑːroʊ/ — sounds like **pi-SAHR-oh**
 1198. n. flutter | /ˈflʌtə/ — sounds like **FLUT-uh** | /ˈflʌtər/ — sounds like **FLUT-uhr**
-1199. n. typeface | /ˈtaɪpfeɪs/ — sounds like **TYEP-fayss** | /ˈtaɪpfeɪs/ — sounds like **TYEP-fayss**
+1199. n. typeface | /ˈtaɪpfeɪs/ — sounds like **TYPE-face** | /ˈtaɪpfeɪs/ — sounds like **TYPE-face**
 1200. adj. subsurface | /ˈsʌbsɜːfɪs/ — sounds like **SUB-sur-fis** | /ˈsʌbsɜːrfɪs/ — sounds like **SUB-sur-fis**
 
 1201. adj. nonfat | /nɒnˈfæt/ — sounds like **non-FAT** | /nɑːnˈfæt/ — sounds like **nahn-FAT**
@@ -1232,14 +1232,14 @@ This collection includes all words that appear twice or less in the PTE test ban
 1209. adj. prenatal | /priːˈneɪtəl/ — sounds like **pree-NAY-tul** | /priːˈneɪtəl/ — sounds like **pree-NAY-tul**
 1210. adj. pre-war | /priːˈwɔː/ — sounds like **pree-WAWR** | /priːˈwɔːr/ — sounds like **pree-WAWR**
 1211. n. reformer | /rɪˈfɔːmə/ — sounds like **ri-FAWR-muh** | /rɪˈfɔːrmər/ — sounds like **ri-FAWR-muhr**
-1212. n. stride | /straɪd/ — sounds like **STRYED** | /straɪd/ — sounds like **STRYED**
+1212. n. stride | /straɪd/ — sounds like **STRIDE** | /straɪd/ — sounds like **STRIDE**
 1213. n. sauce | /sɔːs/ — sounds like **SAWSS** | /sɔːs/ — sounds like **SAWSS**
 1214. v. elicit | /ɪˈlɪsɪt/ — sounds like **i-LIS-it** | /ɪˈlɪsɪt/ — sounds like **i-LIS-it**
 1215. n. greenery | /ˈɡriːnəri/ — sounds like **GREE-nuh-ree** | /ˈɡriːnəri/ — sounds like **GREE-nuh-ree**
 1216. n. lender | /ˈlendə/ — sounds like **LEN-duh** | /ˈlendər/ — sounds like **LEN-duhr**
 1217. n. outwork | /ˈaʊtwɜːk/ — sounds like **OUT-wurk** | /ˈaʊtwɜːrk/ — sounds like **OUT-wurk**
 1218. v. oxygenate | /ˈɒksɪdʒəneɪt/ — sounds like **OK-si-juh-nayt** | /ˈɑːksɪdʒəneɪt/ — sounds like **AHK-si-juh-nayt**
-1219. adj. timely | /ˈtaɪmli/ — sounds like **TYEM-lee** | /ˈtaɪmli/ — sounds like **TYEM-lee**
+1219. adj. timely | /ˈtaɪmli/ — sounds like **TIME-lee** | /ˈtaɪmli/ — sounds like **TIME-lee**
 1220. n. Nokia | /ˈnəʊkiə/ — sounds like **NOH-kee-uh** | /ˈnoʊkiə/ — sounds like **NOH-kee-uh**
 1221. n. over-farming | /ˈəʊvəfɑːmɪŋ/ — sounds like **OH-vuh-fahrm-ing** | /ˈoʊvərfɑːrmɪŋ/ — sounds like **OH-vuhr-fahrm-ing**
 1222. n. Luxor | /ˈlʌksɔː/ — sounds like **LUK-sawr** | /ˈlʌksɔːr/ — sounds like **LUK-sawr**
@@ -1310,10 +1310,10 @@ This collection includes all words that appear twice or less in the PTE test ban
 1287. adj. uncovered | /ʌnˈkʌvəd/ — sounds like **un-KUV-uhd** | /ʌnˈkʌvərd/ — sounds like **un-KUV-uhrd**
 1288. n. distaste | /dɪsˈteɪst/ — sounds like **dis-TAYST** | /dɪsˈteɪst/ — sounds like **dis-TAYST**
 1289. n. Jane | /dʒeɪn/ — sounds like **JAYN** | /dʒeɪn/ — sounds like **JAYN**
-1290. adj. ripe | /raɪp/ — sounds like **RYEP** | /raɪp/ — sounds like **RYEP**
+1290. adj. ripe | /raɪp/ — sounds like **RIPE** | /raɪp/ — sounds like **RIPE**
 1291. v. impress | /ɪmˈpres/ — sounds like **im-PRES** | /ɪmˈpres/ — sounds like **im-PRES**
 1292. n. landowner | /ˈlændəʊnə/ — sounds like **LAND-oh-nuh** | /ˈlændoʊnər/ — sounds like **LAND-oh-nuhr**
-1293. n. interface | /ˈɪntəfeɪs/ — sounds like **IN-tuh-fayss** | /ˈɪntərfeɪs/ — sounds like **IN-tuhr-fayss**
+1293. n. interface | /ˈɪntəfeɪs/ — sounds like **IN-tuh-face** | /ˈɪntərfeɪs/ — sounds like **IN-tuhr-face**
 1294. n. skitter | /ˈskɪtə/ — sounds like **SKIT-uh** | /ˈskɪtər/ — sounds like **SKIT-uhr**
 1295. n. Ontario | /ɒnˈteəriəʊ/ — sounds like **on-TAIR-ee-oh** | /ɑːnˈterioʊ/ — sounds like **ahn-TAIR-ee-oh**
 1296. n. eyeball | /ˈaɪbɔːl/ — sounds like **EYE-bawl** | /ˈaɪbɔːl/ — sounds like **EYE-bawl**
@@ -1337,11 +1337,11 @@ This collection includes all words that appear twice or less in the PTE test ban
 1313. n. exaggeration | /ɪɡˌzædʒəˈreɪʃən/ — sounds like **ig-zaj-uh-RAY-shun** | /ɪɡˌzædʒəˈreɪʃən/ — sounds like **ig-zaj-uh-RAY-shun**
 1314. n. public school | /ˈpʌblɪkskuːl/ — sounds like **PUB-lik-SKOOL** | /ˈpʌblɪkskuːl/ — sounds like **PUB-lik-SKOOL**
 1315. adj. unhealthy | /ʌnˈhelθi/ — sounds like **un-HEL-thee** | /ʌnˈhelθi/ — sounds like **un-HEL-thee**
-1316. adj. upright | /ˈʌpraɪt/ — sounds like **UP-ryet** | /ˈʌpraɪt/ — sounds like **UP-ryet**
+1316. adj. upright | /ˈʌpraɪt/ — sounds like **UP-right** | /ˈʌpraɪt/ — sounds like **UP-right**
 1317. adj. point-to-point | /ˈpɔɪnttupɔɪnt/ — sounds like **POYNT-too-POYNT** | /ˈpɔɪnttupɔɪnt/ — sounds like **POYNT-too-POYNT**
 1318. n. pyramid | /ˈpɪrəmɪd/ — sounds like **PIR-uh-mid** | /ˈpɪrəmɪd/ — sounds like **PIR-uh-mid**
 1319. v. socialize | /ˈsəʊʃəlaɪz/ — sounds like **SOH-shuh-lyez** | /ˈsoʊʃəlaɪz/ — sounds like **SOH-shuh-lyez**
-1320. adj. predefined | /ˌpriːdɪˈfaɪnd/ — sounds like **pree-di-FYEND** | /ˌpriːdɪˈfaɪnd/ — sounds like **pree-di-FYEND**
+1320. adj. predefined | /ˌpriːdɪˈfaɪnd/ — sounds like **pree-di-FINED** | /ˌpriːdɪˈfaɪnd/ — sounds like **pree-di-FINED**
 1321. v. misplace | /mɪsˈpleɪs/ — sounds like **mis-PLAYSS** | /mɪsˈpleɪs/ — sounds like **mis-PLAYSS**
 1322. n. Mayfair | /ˈmeɪfeə/ — sounds like **MAY-fair** | /ˈmeɪfer/ — sounds like **MAY-fair**
 1323. n. irresponsibility | /ˌɪrɪspɒnsəˈbɪləti/ — sounds like **ir-i-spon-suh-BIL-uh-tee** | /ˌɪrɪspɑːnsəˈbɪləti/ — sounds like **ir-i-spahn-suh-BIL-uh-tee**
@@ -1404,7 +1404,7 @@ This collection includes all words that appear twice or less in the PTE test ban
 1380. n. kitchenware | /ˈkɪtʃənweə/ — sounds like **KICH-un-wair** | /ˈkɪtʃənwer/ — sounds like **KICH-un-wair**
 1381. n. tenacity | /təˈnæsəti/ — sounds like **tuh-NAS-uh-tee** | /təˈnæsəti/ — sounds like **tuh-NAS-uh-tee**
 1382. adj. hunted | /ˈhʌntɪd/ — sounds like **HUN-tid** | /ˈhʌntɪd/ — sounds like **HUN-tid**
-1383. adj. independent-minded | /ˌɪndɪˈpendəntˈmaɪndɪd/ — sounds like **in-di-PEN-dunt-MYEN-did** | /ˌɪndɪˈpendəntˈmaɪndɪd/ — sounds like **in-di-PEN-dunt-MYEN-did**
+1383. adj. independent-minded | /ˌɪndɪˈpendəntˈmaɪndɪd/ — sounds like **in-di-PEN-dunt-MIND-ed** | /ˌɪndɪˈpendəntˈmaɪndɪd/ — sounds like **in-di-PEN-dunt-MIND-ed**
 1384. adj. momentary | /ˈməʊməntəri/ — sounds like **MOH-mun-tuh-ree** | /ˈmoʊməntəri/ — sounds like **MOH-mun-tuh-ree**
 1385. adj. impending | /ɪmˈpendɪŋ/ — sounds like **im-PEN-ding** | /ɪmˈpendɪŋ/ — sounds like **im-PEN-ding**
 1386. adj. hardcore | /ˈhɑːdkɔː/ — sounds like **HAHRD-kawr** | /ˈhɑːrdkɔːr/ — sounds like **HAHRD-kawr**
@@ -1490,7 +1490,7 @@ This collection includes all words that appear twice or less in the PTE test ban
 1465. adv. rationally | /ˈræʃənəli/ — sounds like **RASH-uh-nuh-lee** | /ˈræʃənəli/ — sounds like **RASH-uh-nuh-lee**
 1466. v. erode | /ɪˈrəʊd/ — sounds like **i-ROHD** | /ɪˈroʊd/ — sounds like **i-ROHD**
 1467. n. signature | /ˈsɪɡnətʃə/ — sounds like **SIG-nuh-chuh** | /ˈsɪɡnətʃər/ — sounds like **SIG-nuh-chuhr**
-1468. n. pipeline | /ˈpaɪplaɪn/ — sounds like **PYEP-lyen** | /ˈpaɪplaɪn/ — sounds like **PYEP-lyen**
+1468. n. pipeline | /ˈpaɪplaɪn/ — sounds like **PIPE-line** | /ˈpaɪplaɪn/ — sounds like **PIPE-line**
 1469. n. lupus | /ˈluːpəs/ — sounds like **LOO-puhs** | /ˈluːpəs/ — sounds like **LOO-puhs**
 1470. adj. indispensable | /ˌɪndɪˈspensəbəl/ — sounds like **in-di-SPEN-suh-bul** | /ˌɪndɪˈspensəbəl/ — sounds like **in-di-SPEN-suh-bul**
 1471. n. Mammon | /ˈmæmən/ — sounds like **MAM-un** | /ˈmæmən/ — sounds like **MAM-un**

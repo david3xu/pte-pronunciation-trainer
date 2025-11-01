@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-10-18T11:38:09.089Z",
+    "generated": "2025-11-01T10:31:25.262Z",
     "totalTerms": 2414,
     "source": "pte-intermediate-vocabulary-with-ipa",
     "description": "PTE Intermediate vocabulary (simple list fallback, IPA when available)",
@@ -356,11 +356,11 @@
       "pronunciation": {
         "british": {
           "ipa": "saɪn",
-          "phonetic": "SYN"
+          "phonetic": "SINE"
         },
         "american": {
           "ipa": "saɪn",
-          "phonetic": "SYN"
+          "phonetic": "SINE"
         }
       },
       "difficulty": "easy",
@@ -458,11 +458,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈempaɪə",
-          "phonetic": "EM-py-ə"
+          "phonetic": "EM-pire"
         },
         "american": {
           "ipa": "ˈɛmˌpaɪr",
-          "phonetic": "EM-pyr"
+          "phonetic": "EM-pire"
         }
       },
       "difficulty": "normal",
@@ -492,11 +492,11 @@
       "pronunciation": {
         "british": {
           "ipa": "raɪt",
-          "phonetic": "RYT"
+          "phonetic": "RITE"
         },
         "american": {
           "ipa": "raɪt",
-          "phonetic": "RYT"
+          "phonetic": "RITE"
         }
       },
       "difficulty": "normal",
@@ -679,11 +679,11 @@
       "pronunciation": {
         "british": {
           "ipa": "twaɪs",
-          "phonetic": "TWYS"
+          "phonetic": "TWICE"
         },
         "american": {
           "ipa": "twaɪs",
-          "phonetic": "TWYS"
+          "phonetic": "TWICE"
         }
       },
       "difficulty": "easy",
@@ -1461,11 +1461,11 @@
       "pronunciation": {
         "british": {
           "ipa": "blaɪnd",
-          "phonetic": "BLYND"
+          "phonetic": "BLINED"
         },
         "american": {
           "ipa": "blaɪnd",
-          "phonetic": "BLYND"
+          "phonetic": "BLINED"
         }
       },
       "difficulty": "easy",
@@ -1648,11 +1648,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈlaɪt jɪə",
-          "phonetic": "LYT-yeer"
+          "phonetic": "LITE-yeer"
         },
         "american": {
           "ipa": "ˈlaɪt jɪr",
-          "phonetic": "LYT-yeer"
+          "phonetic": "LITE-yeer"
         }
       },
       "difficulty": "hard",
@@ -2107,7 +2107,7 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈmɪlɪtəri",
-          "phonetic": "MIL-i-tə-ree"
+          "phonetic": "MIL-i-tuh-ree"
         },
         "american": {
           "ipa": "ˈmɪlɪˌtɛri",
@@ -2634,11 +2634,11 @@
       "pronunciation": {
         "british": {
           "ipa": "saɪt",
-          "phonetic": "SYT"
+          "phonetic": "SITE"
         },
         "american": {
           "ipa": "saɪt",
-          "phonetic": "SYT"
+          "phonetic": "SITE"
         }
       },
       "difficulty": "easy",
@@ -3110,11 +3110,11 @@
       "pronunciation": {
         "british": {
           "ipa": "laɪ",
-          "phonetic": "LY"
+          "phonetic": "LYE"
         },
         "american": {
           "ipa": "laɪ",
-          "phonetic": "LY"
+          "phonetic": "LYE"
         }
       },
       "difficulty": "easy",
@@ -3586,11 +3586,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ɡɔːdʒ",
-          "phonetic": "GAWDJ"
+          "phonetic": "GORJ"
         },
         "american": {
           "ipa": "ɡɔrdʒ",
-          "phonetic": "GORDJ"
+          "phonetic": "GORJ"
         }
       },
       "difficulty": "easy",
@@ -4980,11 +4980,11 @@
       "pronunciation": {
         "british": {
           "ipa": "skəʊp",
-          "phonetic": "SKOHp"
+          "phonetic": "SKOHP"
         },
         "american": {
           "ipa": "skoʊp",
-          "phonetic": "SKOHp"
+          "phonetic": "SKOHP"
         }
       },
       "difficulty": "easy",
@@ -5252,11 +5252,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ədˈvaɪs",
-          "phonetic": "ud-VYS"
+          "phonetic": "ud-VICE"
         },
         "american": {
           "ipa": "ədˈvaɪs",
-          "phonetic": "ud-VYS"
+          "phonetic": "ud-VICE"
         }
       },
       "difficulty": "normal",
@@ -5490,11 +5490,11 @@
       "pronunciation": {
         "british": {
           "ipa": "naɪs",
-          "phonetic": "NYS"
+          "phonetic": "NICE"
         },
         "american": {
           "ipa": "naɪs",
-          "phonetic": "NYS"
+          "phonetic": "NICE"
         }
       },
       "difficulty": "easy",
@@ -6714,11 +6714,11 @@
       "pronunciation": {
         "british": {
           "ipa": "maɪnd",
-          "phonetic": "MYND"
+          "phonetic": "MIND"
         },
         "american": {
           "ipa": "maɪnd",
-          "phonetic": "MYND"
+          "phonetic": "MIND"
         }
       },
       "difficulty": "easy",
@@ -7462,7 +7462,7 @@
       "pronunciation": {
         "british": {
           "ipa": "flɔː",
-          "phonetic": "FLAW"
+          "phonetic": "FLOR"
         },
         "american": {
           "ipa": "flɔr",
@@ -9468,11 +9468,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈhaʊshəʊld",
-          "phonetic": "HOW-shohld"
+          "phonetic": "HOWS-hold"
         },
         "american": {
           "ipa": "ˈhaʊsˌhoʊld",
-          "phonetic": "HOWSS-hohld"
+          "phonetic": "HOWS-hold"
         }
       },
       "difficulty": "normal",
@@ -9485,7 +9485,7 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈhemɪsfɪə",
-          "phonetic": "HEM-is-fee-uh"
+          "phonetic": "HEM-i-sfeer-uh"
         },
         "american": {
           "ipa": "ˈhɛmɪˌsfɪr",
@@ -10216,7 +10216,7 @@
       "pronunciation": {
         "british": {
           "ipa": "tʃɑːlz",
-          "phonetic": "CHAHLZ"
+          "phonetic": "CHAHZ"
         },
         "american": {
           "ipa": "tʃɑrlz",
@@ -10556,11 +10556,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈvedʒtəbəl",
-          "phonetic": "VEJ-tə-bul"
+          "phonetic": "VEJ-tuh-bul"
         },
         "american": {
           "ipa": "ˈvɛdʒtəbəl",
-          "phonetic": "VEJ-tə-bəl"
+          "phonetic": "VEJ-tuh-bul"
         }
       },
       "difficulty": "normal",
@@ -10709,11 +10709,11 @@
       "pronunciation": {
         "british": {
           "ipa": "faɪn",
-          "phonetic": "FYN"
+          "phonetic": "FINE"
         },
         "american": {
           "ipa": "faɪn",
-          "phonetic": "FYN"
+          "phonetic": "FINE"
         }
       },
       "difficulty": "easy",
@@ -11253,11 +11253,11 @@
       "pronunciation": {
         "british": {
           "ipa": "raɪs",
-          "phonetic": "RYS"
+          "phonetic": "RICE"
         },
         "american": {
           "ipa": "raɪs",
-          "phonetic": "RYS"
+          "phonetic": "RICE"
         }
       },
       "difficulty": "easy",
@@ -12630,11 +12630,11 @@
       "pronunciation": {
         "british": {
           "ipa": "naɪn",
-          "phonetic": "NYN"
+          "phonetic": "NINE"
         },
         "american": {
           "ipa": "naɪn",
-          "phonetic": "NYN"
+          "phonetic": "NINE"
         }
       },
       "difficulty": "easy",
@@ -13973,11 +13973,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈfəʊtəɡrɑːf",
-          "phonetic": "FOH-tuh-graaf"
+          "phonetic": "FOH-toh-graaf"
         },
         "american": {
           "ipa": "ˈfoʊtəˌɡræf",
-          "phonetic": "FOH-tuh-graf"
+          "phonetic": "FOH-toh-graf"
         }
       },
       "difficulty": "hard",
@@ -15673,11 +15673,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ɡaɪd",
-          "phonetic": "GYDE"
+          "phonetic": "GIDE"
         },
         "american": {
           "ipa": "ɡaɪd",
-          "phonetic": "GYDE"
+          "phonetic": "GIDE"
         }
       },
       "difficulty": "easy",
@@ -16081,7 +16081,7 @@
       "pronunciation": {
         "british": {
           "ipa": "tʃɑːdʒ",
-          "phonetic": "CHAARJ"
+          "phonetic": "CHAAJ"
         },
         "american": {
           "ipa": "tʃɑrdʒ",
@@ -17577,11 +17577,11 @@
       "pronunciation": {
         "british": {
           "ipa": "saɪt",
-          "phonetic": "SYT"
+          "phonetic": "SITE"
         },
         "american": {
           "ipa": "saɪt",
-          "phonetic": "SYT"
+          "phonetic": "SITE"
         }
       },
       "difficulty": "easy",
@@ -17594,7 +17594,7 @@
       "pronunciation": {
         "british": {
           "ipa": "ljʊə",
-          "phonetic": "LYOO-uh"
+          "phonetic": "LOOR"
         },
         "american": {
           "ipa": "lʊr",
@@ -21623,11 +21623,11 @@
       "pronunciation": {
         "british": {
           "ipa": "əˈlaʊəns",
-          "phonetic": "ə-LOW-uhns"
+          "phonetic": "uh-LOW-uns"
         },
         "american": {
           "ipa": "əˈlaʊəns",
-          "phonetic": "ə-LOW-əns"
+          "phonetic": "uh-LOW-uns"
         }
       },
       "difficulty": "normal",
@@ -22575,11 +22575,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ɪmˈpreʃən",
-          "phonetic": "im-PRESH-əun"
+          "phonetic": "im-PRESH-un"
         },
         "american": {
           "ipa": "ɪmˈprɛʃən",
-          "phonetic": "im-PRESH-ən"
+          "phonetic": "im-PRESH-un"
         }
       },
       "difficulty": "hard",
@@ -22762,11 +22762,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈdɪfərəntli",
-          "phonetic": "DIF-uh-runt-lee"
+          "phonetic": "DIF-rent-lee"
         },
         "american": {
           "ipa": "ˈdɪfərəntli",
-          "phonetic": "DIF-ur-unt-lee"
+          "phonetic": "DIF-rent-lee"
         }
       },
       "difficulty": "hard",
@@ -24343,11 +24343,11 @@
       "pronunciation": {
         "british": {
           "ipa": "smaɪl",
-          "phonetic": "SMYL"
+          "phonetic": "SMILE"
         },
         "american": {
           "ipa": "smaɪl",
-          "phonetic": "SMYL"
+          "phonetic": "SMILE"
         }
       },
       "difficulty": "easy",
@@ -27063,11 +27063,11 @@
       "pronunciation": {
         "british": {
           "ipa": "əˈdɪʃən",
-          "phonetic": "ə-DISH-əun"
+          "phonetic": "uh-DISH-un"
         },
         "american": {
           "ipa": "əˈdɪʃən",
-          "phonetic": "ə-DISH-ən"
+          "phonetic": "uh-DISH-un"
         }
       },
       "difficulty": "normal",
@@ -27267,11 +27267,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌʌndəˈɡrædjuət",
-          "phonetic": "UN-də-GRAD-yoo-uht"
+          "phonetic": "UN-der-GRAD-yoo-it"
         },
         "american": {
           "ipa": "ˌʌndərˈɡrædʒuət",
-          "phonetic": "UN-der-GRAD-joo-uht"
+          "phonetic": "UN-der-GRAD-yoo-it"
         }
       },
       "difficulty": "hard",
@@ -28882,11 +28882,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌpɒləˈtɪʃən",
-          "phonetic": "POL-ə-TISH-əun"
+          "phonetic": "POL-uh-TISH-un"
         },
         "american": {
           "ipa": "ˌpɑləˈtɪʃən",
-          "phonetic": "PAH-lə-TISH-ən"
+          "phonetic": "PAH-luh-TISH-un"
         }
       },
       "difficulty": "hard",
@@ -29528,11 +29528,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈsevən",
-          "phonetic": "SEV-əun"
+          "phonetic": "SEV-un"
         },
         "american": {
           "ipa": "ˈsɛvən",
-          "phonetic": "SEV-ən"
+          "phonetic": "SEV-en"
         }
       },
       "difficulty": "easy",
@@ -29732,11 +29732,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌækwɪˈzɪʃən",
-          "phonetic": "AK-wi-ZISH-əun"
+          "phonetic": "AK-wi-ZISH-un"
         },
         "american": {
           "ipa": "ˌækwəˈzɪʃən",
-          "phonetic": "AK-wə-ZISH-ən"
+          "phonetic": "AK-wuh-ZISH-un"
         }
       },
       "difficulty": "hard",
@@ -30854,11 +30854,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌɒntrəprəˈnɜː",
-          "phonetic": "ON-trə-prə-NER"
+          "phonetic": "ON-truh-pruh-NUR"
         },
         "american": {
           "ipa": "ˌɑntrəprəˈnɝː",
-          "phonetic": "AHN-trə-prə-NER"
+          "phonetic": "AHN-truh-pruh-NUR"
         }
       },
       "difficulty": "hard",
@@ -32656,11 +32656,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈmiːnɪŋfʊl",
-          "phonetic": "MEE-ning-ful"
+          "phonetic": "MEE-ning-full"
         },
         "american": {
           "ipa": "ˈminɪŋfəl",
-          "phonetic": "MEE-ning-fəl"
+          "phonetic": "MEE-ning-full"
         }
       },
       "difficulty": "hard",
@@ -33659,11 +33659,11 @@
       "pronunciation": {
         "british": {
           "ipa": "maɪn",
-          "phonetic": "MYN"
+          "phonetic": "MINE"
         },
         "american": {
           "ipa": "maɪn",
-          "phonetic": "MYN"
+          "phonetic": "MINE"
         }
       },
       "difficulty": "easy",

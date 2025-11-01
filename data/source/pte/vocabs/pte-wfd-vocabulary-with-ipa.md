@@ -61,7 +61,7 @@ Format: [number]. [POS] [word] | /IPA_BR/ — sounds like **HINT_BR** | /IPA_US/
 54. adj. medical | /ˈmedɪkəl/ — sounds like **MED-ih-kul** | /ˈmɛdəkəl/ — sounds like **MED-ə-kəl**
 55. n. Internship | /ˈɪntɜːnʃɪp/ — sounds like **IN-turn-ship** | /ˈɪntɝːnʃɪp/ — sounds like **IN-turn-ship**
 56. v. monitor | /ˈmɒnɪtə/ — sounds like **MON-i-tuh** | /ˈmɑnətər/ — sounds like **MAH-nə-tər**
-57. adj. Atlantic | /ətˈlæntɪk/ — sounds like **ut-LAN-tik** | /ətˈlæntɪk/ — sounds like **ət-LAN-tik**
+57. adj. Atlantic | /ətˈlæntɪk/ — sounds like **ut-LAN-tik** | /ətˈlæntɪk/ — sounds like **ut-LAN-tik**
 58. n. wisdom | /ˈwɪzdəm/ — sounds like **WIZ-dum** | /ˈwɪzdəm/ — sounds like **WIZ-dəm**
 59. adv. widely | /ˈwaɪdli/ — sounds like **WYD-lee** | /ˈwaɪdli/ — sounds like **WYD-lee**
 60. v. affect | /əˈfekt/ — sounds like **uh-FEKT** | /əˈfɛkt/ — sounds like **uh-FEKT**

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-10-18T11:38:09.175Z",
+    "generated": "2025-11-01T10:31:25.366Z",
     "totalTerms": 1318,
     "source": "pte-wfd-vocabulary-with-ipa",
     "description": "PTE Write From Dictation vocabulary with IPA",
@@ -972,7 +972,7 @@
         },
         "american": {
           "ipa": "ətˈlæntɪk",
-          "phonetic": "ət-LAN-tik"
+          "phonetic": "ut-LAN-tik"
         }
       },
       "difficulty": "normal",

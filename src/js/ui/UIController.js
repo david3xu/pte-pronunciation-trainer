@@ -532,9 +532,9 @@ class UIController {
             // Add word-length based sizing class for optimal space utilization
             const wordLength = displayText.length;
             englishElement.classList.remove('word-short', 'word-medium', 'word-long');
-            if (wordLength > 15) {
+            if (wordLength > 12) {
                 englishElement.classList.add('word-long');
-            } else if (wordLength > 10) {
+            } else if (wordLength > 7) {
                 englishElement.classList.add('word-medium');
             } else {
                 englishElement.classList.add('word-short');

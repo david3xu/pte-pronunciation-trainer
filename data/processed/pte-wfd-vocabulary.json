@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-11-01T10:31:25.366Z",
+    "generated": "2025-11-03T07:22:03.860Z",
     "totalTerms": 1318,
     "source": "pte-wfd-vocabulary-with-ipa",
     "description": "PTE Write From Dictation vocabulary with IPA",
@@ -54,7 +54,7 @@
         },
         "american": {
           "ipa": "kənˈsɪdərəbli",
-          "phonetic": "kun-SID-ər-ə-blee"
+          "phonetic": "kun-SID-ur-uh-blee"
         }
       },
       "difficulty": "hard",
@@ -71,7 +71,7 @@
         },
         "american": {
           "ipa": "ˌkɑmbəˈneɪʃən",
-          "phonetic": "KAHM-bə-NAY-shən"
+          "phonetic": "KAHM-buh-NAY-shun"
         }
       },
       "difficulty": "hard",
@@ -156,7 +156,7 @@
         },
         "american": {
           "ipa": "ˈɛləfənt",
-          "phonetic": "EL-ə-fənt"
+          "phonetic": "EL-uh-fuhnt"
         }
       },
       "difficulty": "normal",
@@ -207,7 +207,7 @@
         },
         "american": {
           "ipa": "ˈɪnfluəns",
-          "phonetic": "IN-floo-əns"
+          "phonetic": "IN-floo-uhns"
         }
       },
       "difficulty": "normal",

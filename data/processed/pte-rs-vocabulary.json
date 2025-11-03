@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-11-01T10:31:25.332Z",
+    "generated": "2025-11-03T07:22:03.827Z",
     "totalTerms": 887,
     "source": "pte-rs-vocabulary-with-ipa",
     "description": "PTE Repeat Sentence (RS) vocabulary with IPA",
@@ -134,12 +134,12 @@
       "english": "influence",
       "pronunciation": {
         "british": {
-          "ipa": "ˈɪnfluəns",
-          "phonetic": "IN-floo-unss"
+          "ipa": "ˈɪnflʊəns",
+          "phonetic": "IN-floo-uhns"
         },
         "american": {
           "ipa": "ˈɪnfluəns",
-          "phonetic": "IN-floo-unss"
+          "phonetic": "IN-floo-uhns"
         }
       },
       "difficulty": "normal",

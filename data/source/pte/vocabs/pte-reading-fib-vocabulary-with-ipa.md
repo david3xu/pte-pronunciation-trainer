@@ -21,11 +21,11 @@ This vocabulary booklet contains all the medium- and high-level vocabulary that 
 10. v. make choice | /meɪk tʃɔɪs/ — sounds like **mayk CHOYS** | /meɪk tʃɔɪs/ — sounds like **mayk CHOYS**
 11. v. attach to | /əˈtætʃ tuː/ — sounds like **uh-TACH too** | /əˈtætʃ tu/ — sounds like **ə-TACH too**
 12. n. module | /ˈmɒdjuːl/ — sounds like **MOD-yool** | /ˈmɑdʒul/ — sounds like **MAH-jul**
-13. adj. equivalent to | /ɪˈkwɪvələnt tuː/ — sounds like **i-KWIV-uh-lunt too** | /ɪˈkwɪvələnt tu/ — sounds like **i-KWIV-ə-lənt too**
-14. v. symbolize | /ˈsɪmbəlaɪz/ — sounds like **SIM-buh-lyz** | /ˈsɪmbəˌlaɪz/ — sounds like **SIM-bə-lyz**
-15. n. disposition | /ˌdɪspəˈzɪʃən/ — sounds like **DIS-puh-ZISH-un** | /ˌdɪspəˈzɪʃən/ — sounds like **DIS-pə-ZISH-ən**
-16. prep. in addition to | /ɪn əˈdɪʃən tuː/ — sounds like **in uh-DISH-un too** | /ɪn əˈdɪʃən tu/ — sounds like **in ə-DISH-ən too**
-17. v. emulate | /ˈemjʊleɪt/ — sounds like **EM-yoo-layt** | /ˈɛmjəˌleɪt/ — sounds like **EM-yə-layt**
+13. adj. equivalent to | /ɪˈkwɪvələnt tuː/ — sounds like **i-KWIV-uh-lunt too** | /ɪˈkwɪvələnt tu/ — sounds like **i-KWIV-uh-luhnt too**
+14. v. symbolize | /ˈsɪmbəlaɪz/ — sounds like **SIM-buh-lyz** | /ˈsɪmbəˌlaɪz/ — sounds like **SIM-buh-lyz**
+15. n. disposition | /ˌdɪspəˈzɪʃən/ — sounds like **DIS-puh-ZISH-un** | /ˌdɪspəˈzɪʃən/ — sounds like **DIS-puh-ZISH-uhn**
+16. prep. in addition to | /ɪn əˈdɪʃən tuː/ — sounds like **in uh-DISH-un too** | /ɪn əˈdɪʃən tu/ — sounds like **in uh-DISH-uhn too**
+17. v. emulate | /ˈemjʊleɪt/ — sounds like **EM-yoo-layt** | /ˈɛmjəˌleɪt/ — sounds like **EM-yuh-layt**
 18. n. loft | /lɒft/ — sounds like **LOFT** | /lɔft/ — sounds like **LAWFT**
 19. adj. substantial | /səbˈstænʃəl/ — sounds like **sub-STAN-shul** | /səbˈstænʃəl/ — sounds like **səb-STAN-shəl**
 20. adj. cosmic | /ˈkɒzmɪk/ — sounds like **KOZ-mik** | /ˈkɑzmɪk/ — sounds like **KAHZ-mik**

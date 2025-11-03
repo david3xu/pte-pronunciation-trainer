@@ -7,16 +7,16 @@ Format: [number]. [POS] [word] | /IPA_BR/ — sounds like **HINT_BR** | /IPA_US/
 
 1. v. fall | /fɔːl/ — sounds like **FAWL** | /fɔl/ — sounds like **FAWL**
 2. n. Neuroscience | /ˈnjʊərəʊˌsaɪəns/ — sounds like **NYOOR-oh-SY-uhns** | /ˈnʊroʊˌsaɪəns/ — sounds like **NOOR-oh-SY-uhns**
-3. adv. considerably | /kənˈsɪdərəbli/ — sounds like **kun-SID-uh-ruh-blee** | /kənˈsɪdərəbli/ — sounds like **kun-SID-ər-ə-blee**
-4. n. combination | /ˌkɒmbɪˈneɪʃən/ — sounds like **KOM-bi-NAY-shun** | /ˌkɑmbəˈneɪʃən/ — sounds like **KAHM-bə-NAY-shən**
+3. adv. considerably | /kənˈsɪdərəbli/ — sounds like **kun-SID-uh-ruh-blee** | /kənˈsɪdərəbli/ — sounds like **kun-SID-ur-uh-blee**
+4. n. combination | /ˌkɒmbɪˈneɪʃən/ — sounds like **KOM-bi-NAY-shun** | /ˌkɑmbəˈneɪʃən/ — sounds like **KAHM-buh-NAY-shun**
 5. adv. actively | /ˈæktɪvli/ — sounds like **AK-tiv-lee** | /ˈæktɪvli/ — sounds like **AK-tiv-lee**
 6. v. Underlie | /ˌʌndəˈlaɪ/ — sounds like **UN-duh-LY** | /ˌʌndərˈlaɪ/ — sounds like **UN-dər-LY**
 7. n. expansion | /ɪkˈspænʃən/ — sounds like **ik-SPAN-shun** | /ɪkˈspænʃən/ — sounds like **ik-SPAN-shən**
 8. adj. harmful | /ˈhɑːmfʊl/ — sounds like **HAHM-ful** | /ˈhɑrmfəl/ — sounds like **HARM-fəl**
-9. n. elephant | /ˈelɪfənt/ — sounds like **EL-ih-funt** | /ˈɛləfənt/ — sounds like **EL-ə-fənt**
+9. n. elephant | /ˈelɪfənt/ — sounds like **EL-ih-funt** | /ˈɛləfənt/ — sounds like **EL-uh-fuhnt**
 10. n. sign | /saɪn/ — sounds like **SYN** | /saɪn/ — sounds like **SYN**
 11. n. ocean | /ˈəʊʃən/ — sounds like **OH-shun** | /ˈoʊʃən/ — sounds like **OH-shən**
-12. n. influence | /ˈɪnflʊəns/ — sounds like **IN-floo-uhns** | /ˈɪnfluəns/ — sounds like **IN-floo-əns**
+12. n. influence | /ˈɪnflʊəns/ — sounds like **IN-floo-uhns** | /ˈɪnfluəns/ — sounds like **IN-floo-uhns**
 13. adv. entirely | /ɪnˈtaɪəli/ — sounds like **in-TY-uh-lee** | /ɪnˈtaɪərli/ — sounds like **in-TY-er-lee**
 14. pron. someone | /ˈsʌmwʌn/ — sounds like **SUM-wun** | /ˈsʌmˌwʌn/ — sounds like **SUM-wun**
 15. v. search | /sɜːtʃ/ — sounds like **SERCH** | /sɝːtʃ/ — sounds like **SERCH**

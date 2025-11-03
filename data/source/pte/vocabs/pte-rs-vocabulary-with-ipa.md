@@ -16,7 +16,7 @@ This vocabulary book contains all the repeat sentence vocabulary that has appear
 5. n. portfolio | /pɔːtˈfəʊliəʊ/ — sounds like **pawrt-FOH-lee-oh** | /pɔːrtˈfoʊlioʊ/ — sounds like **pawrt-FOH-lee-oh**
 6. adj. harmful | /ˈhɑːmfəl/ — sounds like **HAHRM-ful** | /ˈhɑːrmfəl/ — sounds like **HAHRM-ful**
 7. n. elephant | /ˈelɪfənt/ — sounds like **EL-i-funt** | /ˈelɪfənt/ — sounds like **EL-i-funt**
-8. n. influence | /ˈɪnfluəns/ — sounds like **IN-floo-unss** | /ˈɪnfluəns/ — sounds like **IN-floo-unss**
+12. n. influence | /ˈɪnflʊəns/ — sounds like **IN-floo-uhns** | /ˈɪnfluəns/ — sounds like **IN-floo-uhns**
 9. adv. entirely | /ɪnˈtaɪəli/ — sounds like **in-TYE-uh-lee** | /ɪnˈtaɪərli/ — sounds like **in-TYE-uhr-lee**
 10. n. Robert | /ˈrɒbət/ — sounds like **ROB-ut** | /ˈrɑːbərt/ — sounds like **RAH-burt**
 11. adj. ethnic | /ˈeθnɪk/ — sounds like **ETH-nik** | /ˈeθnɪk/ — sounds like **ETH-nik**

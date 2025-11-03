@@ -82,13 +82,11 @@ body {
     font-size: clamp(28px, 6vw, 48px);  /* Base size - scales with word length */
     font-weight: 700;
     color: var(--color-blue);
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    white-space: nowrap;
     line-height: calc(1em + 0.3em);  /* Dynamic: always 30% more than current font size */
     letter-spacing: 0.5px;
     max-width: 95%;
     box-sizing: border-box;
-    hyphens: none;
     padding: 0 5px;
 }
 

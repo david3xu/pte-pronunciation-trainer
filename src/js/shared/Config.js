@@ -178,7 +178,7 @@ class AppConfig {
                         input: 'pte-high-frequency-vocabulary-with-ipa.md',
                         output: 'pte-high-frequency-vocabulary.json',
                         category: 'pte-high-frequency',
-                        description: 'PTE High-Frequency Vocabulary (293 common exam words with IPA)',
+                        description: 'PTE High-Frequency Vocabulary (747 essential exam words with IPA)',
                         sourceType: 'pte-high-frequency-vocabulary-with-ipa',
                         dataType: 'vocabulary',
                         extractorType: 'SingleIPATermsExtractor',

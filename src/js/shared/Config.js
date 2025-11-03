@@ -174,6 +174,18 @@ class AppConfig {
                         isDefault: false
                     },
                     {
+                        id: 'pte-high-frequency',
+                        input: 'pte-high-frequency-vocabulary-with-ipa.md',
+                        output: 'pte-high-frequency-vocabulary.json',
+                        category: 'pte-high-frequency',
+                        description: 'PTE High-Frequency Vocabulary (293 common exam words with IPA)',
+                        sourceType: 'pte-high-frequency-vocabulary-with-ipa',
+                        dataType: 'vocabulary',
+                        extractorType: 'SingleIPATermsExtractor',
+                        inputSubdir: 'vocabs',
+                        isDefault: false
+                    },
+                    {
                         id: 'pte-repeat-sentence',
                         input: 'pte-repeat-sentence.md',
                         output: 'pte-repeat-sentence-dataset.json',
@@ -252,6 +264,7 @@ class AppConfig {
                         'pte-reading-fib': '/data/processed/pte-reading-fib-vocabulary.json',
                         'pte-reading-fib-drag': '/data/processed/pte-reading-fib-drag-vocabulary.json',
                         'pte-asq-answers': '/data/processed/pte-asq-answers-vocabulary.json',
+                        'pte-high-frequency': '/data/processed/pte-high-frequency-vocabulary.json',
 
                         // Practice datasets (RS/ASQ/WFD)
                         'pte-repeat-sentence': '/data/processed/pte-repeat-sentence-dataset.json',
@@ -287,7 +300,8 @@ class AppConfig {
                     { id: 'pte-rs-wfd-vocab', label: '🎯✍️ PTE RS & WFD Academic Vocabulary', dataset: 'pte-rs-wfd-vocabulary-with-ipa' },
                     { id: 'pte-reading-fib', label: '📖 PTE Reading FIB Vocabulary', dataset: 'pte-reading-fib-vocabulary-with-ipa' },
                     { id: 'pte-reading-fib-drag', label: '🔀 PTE Reading FIB Drag Vocabulary', dataset: 'pte-reading-fib-drag-vocabulary-with-ipa' },
-                    { id: 'pte-asq-answers', label: '❓ PTE ASQ Answers Vocabulary', dataset: 'pte-asq-answers-vocabulary-with-ipa' }
+                    { id: 'pte-asq-answers', label: '❓ PTE ASQ Answers Vocabulary', dataset: 'pte-asq-answers-vocabulary-with-ipa' },
+                    { id: 'pte-high-frequency', label: '⚡ PTE High-Frequency Vocabulary', dataset: 'pte-high-frequency-vocabulary-with-ipa' }
                 ],
                 practiceDatasets: [
                     { id: 'pte-repeat-sentence', label: '🎤 Repeat Sentence', itemCount: 620, type: 'rs' },

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-11-03T07:28:07.042Z",
-    "totalTerms": 293,
+    "generated": "2025-11-03T07:38:21.566Z",
+    "totalTerms": 747,
     "source": "pte-high-frequency-vocabulary-with-ipa",
     "description": "PTE High-Frequency Vocabulary (293 common exam words with IPA)",
     "version": "1.0",
@@ -2938,6 +2938,4546 @@
         "phonetic": "GRAYP"
       },
       "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "Texas",
+      "pronunciation": {
+        "ipa": "ˈteksəs",
+        "phonetic": "TEK-sus"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "region",
+      "pronunciation": {
+        "ipa": "ˈriːdʒən",
+        "phonetic": "REE-jun"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "tongue",
+      "pronunciation": {
+        "ipa": "tʌŋ",
+        "phonetic": "TUNG"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "involved",
+      "pronunciation": {
+        "ipa": "ɪnˈvɒlvd",
+        "phonetic": "in-VOLVD"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "seem",
+      "pronunciation": {
+        "ipa": "siːm",
+        "phonetic": "SEEM"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "brush",
+      "pronunciation": {
+        "ipa": "brʌʃ",
+        "phonetic": "BRUSH"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "occurrence",
+      "pronunciation": {
+        "ipa": "əˈkʌrəns",
+        "phonetic": "uh-KUR-uns"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "consultation",
+      "pronunciation": {
+        "ipa": "ˌkɒnsəlˈteɪʃən",
+        "phonetic": "kon-sul-TAY-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "February",
+      "pronunciation": {
+        "ipa": "ˈfebruəri",
+        "phonetic": "FEB-roo-er-ee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "preferably",
+      "pronunciation": {
+        "ipa": "ˈprefərəbli",
+        "phonetic": "PREF-ur-ub-lee"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "excuse",
+      "pronunciation": {
+        "ipa": "ɪkˈskjuːs",
+        "phonetic": "ik-SKYOOZ"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "referential",
+      "pronunciation": {
+        "ipa": "ˌrefəˈrenʃəl",
+        "phonetic": "ref-uh-REN-shul"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "stagnant",
+      "pronunciation": {
+        "ipa": "ˈstæɡnənt",
+        "phonetic": "STAG-nunt"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "reimbursement",
+      "pronunciation": {
+        "ipa": "ˌriːɪmˈbɜːrsmənt",
+        "phonetic": "ree-im-BURS-munt"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "clause",
+      "pronunciation": {
+        "ipa": "klɔːz",
+        "phonetic": "KLAWZ"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "rugby",
+      "pronunciation": {
+        "ipa": "ˈrʌɡbi",
+        "phonetic": "RUG-bee"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "rigorous",
+      "pronunciation": {
+        "ipa": "ˈrɪɡərəs",
+        "phonetic": "RIG-ur-us"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "transmission",
+      "pronunciation": {
+        "ipa": "trænzˈmɪʃən",
+        "phonetic": "tranz-MISH-un"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "jurisdiction",
+      "pronunciation": {
+        "ipa": "ˌdʒʊərɪsˈdɪkʃən",
+        "phonetic": "joor-is-DIK-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "accent",
+      "pronunciation": {
+        "ipa": "ˈæksent",
+        "phonetic": "AK-sent"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "oxygenate",
+      "pronunciation": {
+        "ipa": "ˈɒksɪdʒəneɪt",
+        "phonetic": "OK-si-juh-nayt"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "auditorium",
+      "pronunciation": {
+        "ipa": "ˌɔːdɪˈtɔːriəm",
+        "phonetic": "aw-di-TOR-ee-um"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "promptly",
+      "pronunciation": {
+        "ipa": "ˈprɒmptli",
+        "phonetic": "PROMPT-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "list",
+      "pronunciation": {
+        "ipa": "lɪst",
+        "phonetic": "LIST"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "Gordon",
+      "pronunciation": {
+        "ipa": "ˈɡɔːrdən",
+        "phonetic": "GOR-dun"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "distinguish",
+      "pronunciation": {
+        "ipa": "dɪˈstɪŋɡwɪʃ",
+        "phonetic": "di-STING-gwish"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "several",
+      "pronunciation": {
+        "ipa": "ˈsevrəl",
+        "phonetic": "SEV-rul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "overwhelm",
+      "pronunciation": {
+        "ipa": "ˌoʊvərˈwelm",
+        "phonetic": "oh-vur-WELM"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "technician",
+      "pronunciation": {
+        "ipa": "tekˈnɪʃən",
+        "phonetic": "tek-NISH-un"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "Legal",
+      "pronunciation": {
+        "ipa": "ˈliːɡəl",
+        "phonetic": "LEE-gul"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "principal",
+      "pronunciation": {
+        "ipa": "ˈprɪnsəpəl",
+        "phonetic": "PRIN-suh-pul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "periodical",
+      "pronunciation": {
+        "ipa": "ˌpɪəriˈɒdɪkəl",
+        "phonetic": "peer-ee-OD-i-kul"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "hall",
+      "pronunciation": {
+        "ipa": "hɔːl",
+        "phonetic": "HAWL"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "outstrip",
+      "pronunciation": {
+        "ipa": "aʊtˈstrɪp",
+        "phonetic": "owt-STRIP"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "wheelchair",
+      "pronunciation": {
+        "ipa": "ˈwiːltʃeər",
+        "phonetic": "WEEL-chair"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "agriculture",
+      "pronunciation": {
+        "ipa": "ˈæɡrɪkʌltʃər",
+        "phonetic": "AG-ri-kul-chur"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "managerial",
+      "pronunciation": {
+        "ipa": "ˌmænəˈdʒɪəriəl",
+        "phonetic": "man-uh-JEER-ee-ul"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "literal",
+      "pronunciation": {
+        "ipa": "ˈlɪtərəl",
+        "phonetic": "LIT-ur-ul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "fulfil",
+      "pronunciation": {
+        "ipa": "fʊlˈfɪl",
+        "phonetic": "ful-FIL"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "midday",
+      "pronunciation": {
+        "ipa": "ˌmɪdˈdeɪ",
+        "phonetic": "mid-DAY"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "Brice",
+      "pronunciation": {
+        "ipa": "braɪs",
+        "phonetic": "BRYSE"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "reflect",
+      "pronunciation": {
+        "ipa": "rɪˈflekt",
+        "phonetic": "ri-FLEKT"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "noticeable",
+      "pronunciation": {
+        "ipa": "ˈnoʊtɪsəbəl",
+        "phonetic": "NOH-ti-suh-bul"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "typhoon",
+      "pronunciation": {
+        "ipa": "taɪˈfuːn",
+        "phonetic": "ty-FOON"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "disarmament",
+      "pronunciation": {
+        "ipa": "dɪsˈɑːrməmənt",
+        "phonetic": "dis-AR-muh-munt"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "remember",
+      "pronunciation": {
+        "ipa": "rɪˈmembər",
+        "phonetic": "ri-MEM-bur"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "bursary",
+      "pronunciation": {
+        "ipa": "ˈbɜːrsəri",
+        "phonetic": "BUR-suh-ree"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "Californian",
+      "pronunciation": {
+        "ipa": "ˌkælɪˈfɔːrniən",
+        "phonetic": "kal-i-FOR-nee-un"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "contemporary",
+      "pronunciation": {
+        "ipa": "kənˈtempəreri",
+        "phonetic": "kun-TEM-puh-rer-ee"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "agricultural",
+      "pronunciation": {
+        "ipa": "ˌæɡrɪˈkʌltʃərəl",
+        "phonetic": "ag-ri-KUL-chur-ul"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "result",
+      "pronunciation": {
+        "ipa": "rɪˈzʌlt",
+        "phonetic": "ri-ZULT"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "colonial",
+      "pronunciation": {
+        "ipa": "kəˈloʊniəl",
+        "phonetic": "kuh-LOH-nee-ul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "valley",
+      "pronunciation": {
+        "ipa": "ˈvæli",
+        "phonetic": "VAL-ee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "irrelevant",
+      "pronunciation": {
+        "ipa": "ɪˈreləvənt",
+        "phonetic": "i-REL-uh-vunt"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "pharmacy",
+      "pronunciation": {
+        "ipa": "ˈfɑːrməsi",
+        "phonetic": "FAR-muh-see"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "hole",
+      "pronunciation": {
+        "ipa": "hoʊl",
+        "phonetic": "HOHL"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "renowned",
+      "pronunciation": {
+        "ipa": "rɪˈnaʊnd",
+        "phonetic": "ri-NOWND"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "destroy",
+      "pronunciation": {
+        "ipa": "dɪˈstrɔɪ",
+        "phonetic": "di-STROY"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "possess",
+      "pronunciation": {
+        "ipa": "pəˈzes",
+        "phonetic": "puh-ZES"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "innovation",
+      "pronunciation": {
+        "ipa": "ˌɪnəˈveɪʃən",
+        "phonetic": "in-uh-VAY-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "anatomy",
+      "pronunciation": {
+        "ipa": "əˈnætəmi",
+        "phonetic": "uh-NAT-uh-mee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "validity",
+      "pronunciation": {
+        "ipa": "vəˈlɪdɪti",
+        "phonetic": "vuh-LID-i-tee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "survival",
+      "pronunciation": {
+        "ipa": "sərˈvaɪvəl",
+        "phonetic": "sur-VY-vul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "insignificant",
+      "pronunciation": {
+        "ipa": "ˌɪnsɪɡˈnɪfɪkənt",
+        "phonetic": "in-sig-NIF-i-kunt"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "medium",
+      "pronunciation": {
+        "ipa": "ˈmiːdiəm",
+        "phonetic": "MEE-dee-um"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "fascinate",
+      "pronunciation": {
+        "ipa": "ˈfæsɪneɪt",
+        "phonetic": "FAS-i-nayt"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "eligible",
+      "pronunciation": {
+        "ipa": "ˈelɪdʒəbəl",
+        "phonetic": "EL-i-juh-bul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "internal",
+      "pronunciation": {
+        "ipa": "ɪnˈtɜːrnəl",
+        "phonetic": "in-TUR-nul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "brought",
+      "pronunciation": {
+        "ipa": "brɔːt",
+        "phonetic": "BRAWT"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "freshman",
+      "pronunciation": {
+        "ipa": "ˈfreʃmən",
+        "phonetic": "FRESH-mun"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "monarchy",
+      "pronunciation": {
+        "ipa": "ˈmɒnərki",
+        "phonetic": "MON-ur-kee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "comprise",
+      "pronunciation": {
+        "ipa": "kəmˈpraɪz",
+        "phonetic": "kum-PRYZE"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "Denmark",
+      "pronunciation": {
+        "ipa": "ˈdenmɑːrk",
+        "phonetic": "DEN-mark"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "various",
+      "pronunciation": {
+        "ipa": "ˈveəriəs",
+        "phonetic": "VAIR-ee-us"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "prosperous",
+      "pronunciation": {
+        "ipa": "ˈprɒspərəs",
+        "phonetic": "PROS-pur-us"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "training",
+      "pronunciation": {
+        "ipa": "ˈtreɪnɪŋ",
+        "phonetic": "TRAYN-ing"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "determin",
+      "pronunciation": {
+        "ipa": "dɪˈtɜːrmɪn",
+        "phonetic": "di-TUR-min"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "sanitary",
+      "pronunciation": {
+        "ipa": "ˈsænɪteri",
+        "phonetic": "SAN-i-ter-ee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "artery",
+      "pronunciation": {
+        "ipa": "ˈɑːrtəri",
+        "phonetic": "AR-tur-ee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "videotape",
+      "pronunciation": {
+        "ipa": "ˈvɪdioʊteɪp",
+        "phonetic": "VID-ee-oh-tayp"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "tennis",
+      "pronunciation": {
+        "ipa": "ˈtenɪs",
+        "phonetic": "TEN-is"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "reception",
+      "pronunciation": {
+        "ipa": "rɪˈsepʃən",
+        "phonetic": "ri-SEP-shun"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "jury",
+      "pronunciation": {
+        "ipa": "ˈdʒʊri",
+        "phonetic": "JOOR-ee"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "forthcoming",
+      "pronunciation": {
+        "ipa": "ˌfɔːrθˈkʌmɪŋ",
+        "phonetic": "forth-KUM-ing"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "concern",
+      "pronunciation": {
+        "ipa": "kənˈsɜːrn",
+        "phonetic": "kun-SURN"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "dilemma",
+      "pronunciation": {
+        "ipa": "dɪˈlemə",
+        "phonetic": "di-LEM-uh"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "policy",
+      "pronunciation": {
+        "ipa": "ˈpɒləsi",
+        "phonetic": "POL-i-see"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "interpreter",
+      "pronunciation": {
+        "ipa": "ɪnˈtɜːrprɪtər",
+        "phonetic": "in-TUR-pri-tur"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "broaden",
+      "pronunciation": {
+        "ipa": "ˈbrɔːdən",
+        "phonetic": "BRAW-dun"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "festival",
+      "pronunciation": {
+        "ipa": "ˈfestɪvəl",
+        "phonetic": "FES-ti-vul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "row",
+      "pronunciation": {
+        "ipa": "roʊ",
+        "phonetic": "ROH"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "facility",
+      "pronunciation": {
+        "ipa": "fəˈsɪləti",
+        "phonetic": "fuh-SIL-i-tee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "moot",
+      "pronunciation": {
+        "ipa": "muːt",
+        "phonetic": "MOOT"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "wing",
+      "pronunciation": {
+        "ipa": "wɪŋ",
+        "phonetic": "WING"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "parliamentary",
+      "pronunciation": {
+        "ipa": "ˌpɑːrləˈmentəri",
+        "phonetic": "par-luh-MEN-tuh-ree"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "rate",
+      "pronunciation": {
+        "ipa": "reɪt",
+        "phonetic": "RAYT"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "demonstrates",
+      "pronunciation": {
+        "ipa": "ˈdemənstreɪts",
+        "phonetic": "DEM-un-strayts"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "approximately",
+      "pronunciation": {
+        "ipa": "əˈprɒksɪmətli",
+        "phonetic": "uh-PROK-si-mut-lee"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "fill",
+      "pronunciation": {
+        "ipa": "fɪl",
+        "phonetic": "FIL"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "seminar",
+      "pronunciation": {
+        "ipa": "ˈsemɪnɑːr",
+        "phonetic": "SEM-i-nar"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "variance",
+      "pronunciation": {
+        "ipa": "ˈveəriəns",
+        "phonetic": "VAIR-ee-uns"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "metal",
+      "pronunciation": {
+        "ipa": "ˈmetəl",
+        "phonetic": "MET-ul"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "tuition",
+      "pronunciation": {
+        "ipa": "tjuˈɪʃən",
+        "phonetic": "too-ISH-un"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "meteorology",
+      "pronunciation": {
+        "ipa": "ˌmiːtiəˈrɒlədʒi",
+        "phonetic": "mee-tee-ur-OL-uh-jee"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "square",
+      "pronunciation": {
+        "ipa": "skweər",
+        "phonetic": "SKWAIR"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "readily",
+      "pronunciation": {
+        "ipa": "ˈredɪli",
+        "phonetic": "RED-i-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "mentor",
+      "pronunciation": {
+        "ipa": "ˈmentɔːr",
+        "phonetic": "MEN-tor"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "mammal",
+      "pronunciation": {
+        "ipa": "ˈmæməl",
+        "phonetic": "MAM-ul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "planet",
+      "pronunciation": {
+        "ipa": "ˈplænɪt",
+        "phonetic": "PLAN-it"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "crystal",
+      "pronunciation": {
+        "ipa": "ˈkrɪstəl",
+        "phonetic": "KRIS-tul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "intend",
+      "pronunciation": {
+        "ipa": "ɪnˈtend",
+        "phonetic": "in-TEND"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "archeology",
+      "pronunciation": {
+        "ipa": "ˌɑːrkiˈɒlədʒi",
+        "phonetic": "ar-kee-OL-uh-jee"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "Soviet",
+      "pronunciation": {
+        "ipa": "ˈsoʊviət",
+        "phonetic": "SOH-vee-ut"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "framework",
+      "pronunciation": {
+        "ipa": "ˈfreɪmwɜːrk",
+        "phonetic": "FRAYM-wurk"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "thorough",
+      "pronunciation": {
+        "ipa": "ˈθʌroʊ",
+        "phonetic": "THUR-oh"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "convention",
+      "pronunciation": {
+        "ipa": "kənˈvenʃən",
+        "phonetic": "kun-VEN-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "pose",
+      "pronunciation": {
+        "ipa": "poʊz",
+        "phonetic": "POHZ"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "neuroscience",
+      "pronunciation": {
+        "ipa": "ˌnjʊəroʊˈsaɪəns",
+        "phonetic": "nyoor-oh-SY-uns"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "secretary",
+      "pronunciation": {
+        "ipa": "ˈsekrətri",
+        "phonetic": "SEK-ruh-tree"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "exotic",
+      "pronunciation": {
+        "ipa": "ɪɡˈzɒtɪk",
+        "phonetic": "ig-ZOT-ik"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "sympathy",
+      "pronunciation": {
+        "ipa": "ˈsɪmpəθi",
+        "phonetic": "SIM-puh-thee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "demure",
+      "pronunciation": {
+        "ipa": "dɪˈmjʊər",
+        "phonetic": "di-MYOOR"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "interim",
+      "pronunciation": {
+        "ipa": "ˈɪntərɪm",
+        "phonetic": "IN-tur-im"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "punctually",
+      "pronunciation": {
+        "ipa": "ˈpʌŋktʃuəli",
+        "phonetic": "PUNK-choo-ul-ee"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "alumnus",
+      "pronunciation": {
+        "ipa": "əˈlʌmnəs",
+        "phonetic": "uh-LUM-nus"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "stipend",
+      "pronunciation": {
+        "ipa": "ˈstaɪpend",
+        "phonetic": "STY-pend"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "aquatic",
+      "pronunciation": {
+        "ipa": "əˈkwætɪk",
+        "phonetic": "uh-KWAT-ik"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "overabundant",
+      "pronunciation": {
+        "ipa": "ˌoʊvərəˈbʌndənt",
+        "phonetic": "oh-vur-uh-BUN-dunt"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "whale",
+      "pronunciation": {
+        "ipa": "weɪl",
+        "phonetic": "WAYL"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "anonymous",
+      "pronunciation": {
+        "ipa": "əˈnɒnɪməs",
+        "phonetic": "uh-NON-i-mus"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "real",
+      "pronunciation": {
+        "ipa": "riːəl",
+        "phonetic": "REE-ul"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "Mars",
+      "pronunciation": {
+        "ipa": "mɑːrz",
+        "phonetic": "MARZ"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "synopsis",
+      "pronunciation": {
+        "ipa": "sɪˈnɒpsɪs",
+        "phonetic": "si-NOP-sis"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "flaw",
+      "pronunciation": {
+        "ipa": "flɔː",
+        "phonetic": "FLAW"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "alleviate",
+      "pronunciation": {
+        "ipa": "əˈliːvieɪt",
+        "phonetic": "uh-LEE-vee-ayt"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "gown",
+      "pronunciation": {
+        "ipa": "ɡaʊn",
+        "phonetic": "GOWN"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "symbolic",
+      "pronunciation": {
+        "ipa": "sɪmˈbɒlɪk",
+        "phonetic": "sim-BOL-ik"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "phenomenal",
+      "pronunciation": {
+        "ipa": "fəˈnɒmɪnəl",
+        "phonetic": "fuh-NOM-i-nul"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "constructive",
+      "pronunciation": {
+        "ipa": "kənˈstrʌktɪv",
+        "phonetic": "kun-STRUK-tiv"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "reserve",
+      "pronunciation": {
+        "ipa": "rɪˈzɜːrv",
+        "phonetic": "ri-ZURV"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "mechanic",
+      "pronunciation": {
+        "ipa": "məˈkænɪk",
+        "phonetic": "muh-KAN-ik"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "guest",
+      "pronunciation": {
+        "ipa": "ɡest",
+        "phonetic": "GEST"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "intertwine",
+      "pronunciation": {
+        "ipa": "ˌɪntərˈtwaɪn",
+        "phonetic": "in-tur-TWYNE"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "circumstance",
+      "pronunciation": {
+        "ipa": "ˈsɜːrkəmstæns",
+        "phonetic": "SUR-kum-stans"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "principally",
+      "pronunciation": {
+        "ipa": "ˈprɪnsəpli",
+        "phonetic": "PRIN-suh-plee"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "flask",
+      "pronunciation": {
+        "ipa": "flæsk",
+        "phonetic": "FLASK"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "penguin",
+      "pronunciation": {
+        "ipa": "ˈpeŋɡwɪn",
+        "phonetic": "PENG-gwin"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "disposable",
+      "pronunciation": {
+        "ipa": "dɪˈspoʊzəbəl",
+        "phonetic": "di-SPOH-zuh-bul"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "industrialize",
+      "pronunciation": {
+        "ipa": "ɪnˈdʌstriəlaɪz",
+        "phonetic": "in-DUS-tree-uh-lyze"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "vulnerable",
+      "pronunciation": {
+        "ipa": "ˈvʌlnərəbəl",
+        "phonetic": "VUL-nur-uh-bul"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "vie",
+      "pronunciation": {
+        "ipa": "vaɪ",
+        "phonetic": "VY"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "extrapolate",
+      "pronunciation": {
+        "ipa": "ɪkˈstræpəleɪt",
+        "phonetic": "ik-STRAP-uh-layt"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "mutually",
+      "pronunciation": {
+        "ipa": "ˈmjuːtʃuəli",
+        "phonetic": "MYOO-choo-ul-ee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "verbally",
+      "pronunciation": {
+        "ipa": "ˈvɜːrbəli",
+        "phonetic": "VUR-bul-ee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "audit",
+      "pronunciation": {
+        "ipa": "ˈɔːdɪt",
+        "phonetic": "AW-dit"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "prestigious",
+      "pronunciation": {
+        "ipa": "preˈstɪdʒəs",
+        "phonetic": "pre-STI-jus"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "consensus",
+      "pronunciation": {
+        "ipa": "kənˈsensəs",
+        "phonetic": "kun-SEN-sus"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "emphasize",
+      "pronunciation": {
+        "ipa": "ˈemfəsaɪz",
+        "phonetic": "EM-fuh-syze"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "cyclone",
+      "pronunciation": {
+        "ipa": "ˈsaɪkloʊn",
+        "phonetic": "SY-klohn"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "thrive",
+      "pronunciation": {
+        "ipa": "θraɪv",
+        "phonetic": "THRYVE"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "miraculous",
+      "pronunciation": {
+        "ipa": "mɪˈrækjələs",
+        "phonetic": "mi-RAK-yuh-lus"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "castle",
+      "pronunciation": {
+        "ipa": "ˈkæsəl",
+        "phonetic": "KAS-ul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "archeologist",
+      "pronunciation": {
+        "ipa": "ˌɑːrkiˈɒlədʒɪst",
+        "phonetic": "ar-kee-OL-uh-jist"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "fatally",
+      "pronunciation": {
+        "ipa": "ˈfeɪtəli",
+        "phonetic": "FAY-tuh-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "interested",
+      "pronunciation": {
+        "ipa": "ˈɪntrəstɪd",
+        "phonetic": "IN-trus-tid"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "dissertation",
+      "pronunciation": {
+        "ipa": "ˌdɪsərˈteɪʃən",
+        "phonetic": "dis-ur-TAY-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "exclusive",
+      "pronunciation": {
+        "ipa": "ɪkˈskluːsɪv",
+        "phonetic": "ik-SKLOO-siv"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "placement",
+      "pronunciation": {
+        "ipa": "ˈpleɪsmənt",
+        "phonetic": "PLAYS-munt"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "concession",
+      "pronunciation": {
+        "ipa": "kənˈseʃən",
+        "phonetic": "kun-SESH-un"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "commissioner",
+      "pronunciation": {
+        "ipa": "kəˈmɪʃənər",
+        "phonetic": "kuh-MISH-un-ur"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "omit",
+      "pronunciation": {
+        "ipa": "oʊˈmɪt",
+        "phonetic": "oh-MIT"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "architect",
+      "pronunciation": {
+        "ipa": "ˈɑːrkɪtekt",
+        "phonetic": "AR-ki-tekt"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "choir",
+      "pronunciation": {
+        "ipa": "ˈkwaɪər",
+        "phonetic": "KWYRE"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "canteen",
+      "pronunciation": {
+        "ipa": "kænˈtiːn",
+        "phonetic": "kan-TEEN"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "velocity",
+      "pronunciation": {
+        "ipa": "vəˈlɒsɪti",
+        "phonetic": "vuh-LOS-i-tee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "inconclusive",
+      "pronunciation": {
+        "ipa": "ˌɪnkənˈkluːsɪv",
+        "phonetic": "in-kun-KLOO-siv"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "illustration",
+      "pronunciation": {
+        "ipa": "ˌɪləˈstreɪʃən",
+        "phonetic": "il-uh-STRAY-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "rationally",
+      "pronunciation": {
+        "ipa": "ˈræʃənəli",
+        "phonetic": "RASH-un-ul-ee"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "Greece",
+      "pronunciation": {
+        "ipa": "ɡriːs",
+        "phonetic": "GREES"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "aerial",
+      "pronunciation": {
+        "ipa": "ˈeəriəl",
+        "phonetic": "AIR-ee-ul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "unsustainable",
+      "pronunciation": {
+        "ipa": "ˌʌnsəˈsteɪnəbəl",
+        "phonetic": "un-suh-STAY-nuh-bul"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "tie",
+      "pronunciation": {
+        "ipa": "taɪ",
+        "phonetic": "TY"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "minimal",
+      "pronunciation": {
+        "ipa": "ˈmɪnɪməl",
+        "phonetic": "MIN-i-mul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "anthropology",
+      "pronunciation": {
+        "ipa": "ˌænθrəˈpɒlədʒi",
+        "phonetic": "an-thruh-POL-uh-jee"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "field",
+      "pronunciation": {
+        "ipa": "fiːld",
+        "phonetic": "FEELD"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "world-renowned",
+      "pronunciation": {
+        "ipa": "wɜːrld rɪˈnaʊnd",
+        "phonetic": "WURLD ri-NOWND"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "orchestra",
+      "pronunciation": {
+        "ipa": "ˈɔːrkɪstrə",
+        "phonetic": "OR-kis-truh"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "historian",
+      "pronunciation": {
+        "ipa": "hɪˈstɔːriən",
+        "phonetic": "hi-STOR-ee-un"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "sanitation",
+      "pronunciation": {
+        "ipa": "ˌsænɪˈteɪʃən",
+        "phonetic": "san-i-TAY-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "salt",
+      "pronunciation": {
+        "ipa": "sɔːlt",
+        "phonetic": "SAWLT"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "athletic",
+      "pronunciation": {
+        "ipa": "æθˈletɪk",
+        "phonetic": "ath-LET-ik"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "mass",
+      "pronunciation": {
+        "ipa": "mæs",
+        "phonetic": "MAS"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "specie",
+      "pronunciation": {
+        "ipa": "ˈspiːʃi",
+        "phonetic": "SPEE-shee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "Roman",
+      "pronunciation": {
+        "ipa": "ˈroʊmən",
+        "phonetic": "ROH-mun"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "rail",
+      "pronunciation": {
+        "ipa": "reɪl",
+        "phonetic": "RAYL"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "clinical",
+      "pronunciation": {
+        "ipa": "ˈklɪnɪkəl",
+        "phonetic": "KLIN-i-kul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "compulsory",
+      "pronunciation": {
+        "ipa": "kəmˈpʌlsəri",
+        "phonetic": "kum-PUL-suh-ree"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "eligibility",
+      "pronunciation": {
+        "ipa": "ˌelɪdʒəˈbɪləti",
+        "phonetic": "el-i-juh-BIL-i-tee"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "adopt",
+      "pronunciation": {
+        "ipa": "əˈdɒpt",
+        "phonetic": "uh-DOPT"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "sent",
+      "pronunciation": {
+        "ipa": "sent",
+        "phonetic": "SENT"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "abidance",
+      "pronunciation": {
+        "ipa": "əˈbaɪdəns",
+        "phonetic": "uh-BYE-duns"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "career",
+      "pronunciation": {
+        "ipa": "kəˈrɪər",
+        "phonetic": "kuh-REER"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "portray",
+      "pronunciation": {
+        "ipa": "pɔːrˈtreɪ",
+        "phonetic": "por-TRAY"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "obey",
+      "pronunciation": {
+        "ipa": "oʊˈbeɪ",
+        "phonetic": "oh-BAY"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "fierce",
+      "pronunciation": {
+        "ipa": "fɪərs",
+        "phonetic": "FEERS"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "atom",
+      "pronunciation": {
+        "ipa": "ˈætəm",
+        "phonetic": "AT-um"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "insightful",
+      "pronunciation": {
+        "ipa": "ˈɪnsaɪtfəl",
+        "phonetic": "IN-syte-ful"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "politician",
+      "pronunciation": {
+        "ipa": "ˌpɒlɪˈtɪʃən",
+        "phonetic": "pol-i-TISH-un"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "wreck",
+      "pronunciation": {
+        "ipa": "rek",
+        "phonetic": "REK"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "excursion",
+      "pronunciation": {
+        "ipa": "ɪkˈskɜːrʒən",
+        "phonetic": "ik-SKUR-zhun"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "scale",
+      "pronunciation": {
+        "ipa": "skeɪl",
+        "phonetic": "SKAYL"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "tropical",
+      "pronunciation": {
+        "ipa": "ˈtrɒpɪkəl",
+        "phonetic": "TROP-i-kul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "negotiable",
+      "pronunciation": {
+        "ipa": "nɪˈɡoʊʃiəbəl",
+        "phonetic": "ni-GOH-shee-uh-bul"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "unattended",
+      "pronunciation": {
+        "ipa": "ˌʌnəˈtendɪd",
+        "phonetic": "un-uh-TEN-did"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "application",
+      "pronunciation": {
+        "ipa": "ˌæplɪˈkeɪʃən",
+        "phonetic": "ap-li-KAY-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "Pacific",
+      "pronunciation": {
+        "ipa": "pəˈsɪfɪk",
+        "phonetic": "puh-SIF-ik"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "deepen",
+      "pronunciation": {
+        "ipa": "ˈdiːpən",
+        "phonetic": "DEE-pun"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "agenda",
+      "pronunciation": {
+        "ipa": "əˈdʒendə",
+        "phonetic": "uh-JEN-duh"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "fluency",
+      "pronunciation": {
+        "ipa": "ˈfluːənsi",
+        "phonetic": "FLOO-un-see"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "quiz",
+      "pronunciation": {
+        "ipa": "kwɪz",
+        "phonetic": "KWIZ"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "colleague",
+      "pronunciation": {
+        "ipa": "ˈkɒliːɡ",
+        "phonetic": "KOL-eeg"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "ought",
+      "pronunciation": {
+        "ipa": "ɔːt",
+        "phonetic": "OT"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "exceed",
+      "pronunciation": {
+        "ipa": "ɪkˈsiːd",
+        "phonetic": "ik-SEED"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "announce",
+      "pronunciation": {
+        "ipa": "əˈnaʊns",
+        "phonetic": "uh-NOWNS"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "logo",
+      "pronunciation": {
+        "ipa": "ˈloʊɡoʊ",
+        "phonetic": "LOH-goh"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "opinion",
+      "pronunciation": {
+        "ipa": "əˈpɪnjən",
+        "phonetic": "uh-PIN-yun"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "legume",
+      "pronunciation": {
+        "ipa": "ˈleɡjuːm",
+        "phonetic": "LEG-yoom"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "familiar",
+      "pronunciation": {
+        "ipa": "fəˈmɪliər",
+        "phonetic": "fuh-MIL-yur"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "rural",
+      "pronunciation": {
+        "ipa": "ˈrʊərəl",
+        "phonetic": "ROOR-ul"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "shelter",
+      "pronunciation": {
+        "ipa": "ˈʃeltər",
+        "phonetic": "SHEL-tur"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "guy",
+      "pronunciation": {
+        "ipa": "ɡaɪ",
+        "phonetic": "GY"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "plight",
+      "pronunciation": {
+        "ipa": "plaɪt",
+        "phonetic": "PLYTE"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "presidential",
+      "pronunciation": {
+        "ipa": "ˌprezɪˈdenʃəl",
+        "phonetic": "prez-i-DEN-shul"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "oxygen",
+      "pronunciation": {
+        "ipa": "ˈɒksɪdʒən",
+        "phonetic": "OK-si-jun"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "catalogue",
+      "pronunciation": {
+        "ipa": "ˈkætəlɒɡ",
+        "phonetic": "KAT-uh-log"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "traveler",
+      "pronunciation": {
+        "ipa": "ˈtrævələr",
+        "phonetic": "TRAV-ul-ur"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "overlap",
+      "pronunciation": {
+        "ipa": "ˌoʊvərˈlæp",
+        "phonetic": "oh-vur-LAP"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "pathway",
+      "pronunciation": {
+        "ipa": "ˈpɑːθweɪ",
+        "phonetic": "PATH-way"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "gadget",
+      "pronunciation": {
+        "ipa": "ˈɡædʒɪt",
+        "phonetic": "GAJ-it"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "discipline",
+      "pronunciation": {
+        "ipa": "ˈdɪsɪplɪn",
+        "phonetic": "DIS-i-plin"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "endure",
+      "pronunciation": {
+        "ipa": "ɪnˈdjʊər",
+        "phonetic": "in-DYOOR"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "mishap",
+      "pronunciation": {
+        "ipa": "ˈmɪshæp",
+        "phonetic": "MIS-hap"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "exhibit",
+      "pronunciation": {
+        "ipa": "ɪɡˈzɪbɪt",
+        "phonetic": "ig-ZIB-it"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "vacation",
+      "pronunciation": {
+        "ipa": "vəˈkeɪʃən",
+        "phonetic": "vuh-KAY-shun"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "heating",
+      "pronunciation": {
+        "ipa": "ˈhiːtɪŋ",
+        "phonetic": "HEE-ting"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "discover",
+      "pronunciation": {
+        "ipa": "dɪˈskʌvər",
+        "phonetic": "di-SKUV-ur"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "dedication",
+      "pronunciation": {
+        "ipa": "ˌdedɪˈkeɪʃən",
+        "phonetic": "ded-i-KAY-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "mystery",
+      "pronunciation": {
+        "ipa": "ˈmɪstəri",
+        "phonetic": "MIS-tur-ee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "tribe",
+      "pronunciation": {
+        "ipa": "traɪb",
+        "phonetic": "TRYB"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "independence",
+      "pronunciation": {
+        "ipa": "ˌɪndɪˈpendəns",
+        "phonetic": "in-di-PEN-duns"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "hydrogen",
+      "pronunciation": {
+        "ipa": "ˈhaɪdrədʒən",
+        "phonetic": "HY-druh-jun"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "inadequately",
+      "pronunciation": {
+        "ipa": "ɪnˈædɪkwətli",
+        "phonetic": "in-AD-i-kwut-lee"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "accelerate",
+      "pronunciation": {
+        "ipa": "əkˈseləreɪt",
+        "phonetic": "ak-SEL-ur-ayt"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "carbohydrate",
+      "pronunciation": {
+        "ipa": "ˌkɑːrboʊˈhaɪdreɪt",
+        "phonetic": "kar-boh-HY-drayt"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "exempt",
+      "pronunciation": {
+        "ipa": "ɪɡˈzempt",
+        "phonetic": "ig-ZEMPT"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "colossal",
+      "pronunciation": {
+        "ipa": "kəˈlɒsəl",
+        "phonetic": "kuh-LOS-ul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "chemistry",
+      "pronunciation": {
+        "ipa": "ˈkemɪstri",
+        "phonetic": "KEM-is-tree"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "extract",
+      "pronunciation": {
+        "ipa": "ɪkˈstrækt",
+        "phonetic": "ik-STRAKT"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "acquire",
+      "pronunciation": {
+        "ipa": "əˈkwaɪər",
+        "phonetic": "uh-KWYRE"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "tool",
+      "pronunciation": {
+        "ipa": "tuːl",
+        "phonetic": "TOOL"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "sophisticated",
+      "pronunciation": {
+        "ipa": "səˈfɪstɪkeɪtɪd",
+        "phonetic": "suh-FIS-ti-kay-tid"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "Northern",
+      "pronunciation": {
+        "ipa": "ˈnɔːrðərn",
+        "phonetic": "NOR-thurn"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "village",
+      "pronunciation": {
+        "ipa": "ˈvɪlɪdʒ",
+        "phonetic": "VIL-ij"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "writer",
+      "pronunciation": {
+        "ipa": "ˈraɪtər",
+        "phonetic": "RY-tur"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "goggle",
+      "pronunciation": {
+        "ipa": "ˈɡɒɡəl",
+        "phonetic": "GOG-ul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "century",
+      "pronunciation": {
+        "ipa": "ˈsentʃəri",
+        "phonetic": "SEN-chur-ee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "posture",
+      "pronunciation": {
+        "ipa": "ˈpɒstʃər",
+        "phonetic": "POS-chur"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "absorb",
+      "pronunciation": {
+        "ipa": "əbˈzɔːrb",
+        "phonetic": "ub-ZORB"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "Southern",
+      "pronunciation": {
+        "ipa": "ˈsʌðərn",
+        "phonetic": "SUTH-urn"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "crisis",
+      "pronunciation": {
+        "ipa": "ˈkraɪsɪs",
+        "phonetic": "KRY-sis"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "pollution",
+      "pronunciation": {
+        "ipa": "pəˈluːʃən",
+        "phonetic": "puh-LOO-shun"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "June",
+      "pronunciation": {
+        "ipa": "dʒuːn",
+        "phonetic": "JOON"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "harbor",
+      "pronunciation": {
+        "ipa": "ˈhɑːrbər",
+        "phonetic": "HAR-bur"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "controversy",
+      "pronunciation": {
+        "ipa": "ˈkɒntrəvɜːrsi",
+        "phonetic": "KON-truh-vur-see"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "overcrowd",
+      "pronunciation": {
+        "ipa": "ˌoʊvərˈkraʊd",
+        "phonetic": "oh-vur-KROWD"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "concert",
+      "pronunciation": {
+        "ipa": "ˈkɒnsərt",
+        "phonetic": "KON-surt"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "syllabus",
+      "pronunciation": {
+        "ipa": "ˈsɪləbəs",
+        "phonetic": "SIL-uh-bus"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "eyewash",
+      "pronunciation": {
+        "ipa": "ˈaɪwɒʃ",
+        "phonetic": "EYE-wosh"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "consciously",
+      "pronunciation": {
+        "ipa": "ˈkɒnʃəsli",
+        "phonetic": "KON-shus-lee"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "monolithic",
+      "pronunciation": {
+        "ipa": "ˌmɒnəˈlɪθɪk",
+        "phonetic": "mon-uh-LITH-ik"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "characteristic",
+      "pronunciation": {
+        "ipa": "ˌkærəktəˈrɪstɪk",
+        "phonetic": "kar-uk-tuh-RIS-tik"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "media",
+      "pronunciation": {
+        "ipa": "ˈmiːdiə",
+        "phonetic": "MEE-dee-uh"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "forecasting",
+      "pronunciation": {
+        "ipa": "ˈfɔːrkæstɪŋ",
+        "phonetic": "FOR-kast-ing"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "geography",
+      "pronunciation": {
+        "ipa": "dʒiˈɒɡrəfi",
+        "phonetic": "jee-OG-ruh-fee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "psychologist",
+      "pronunciation": {
+        "ipa": "saɪˈkɒlədʒɪst",
+        "phonetic": "sy-KOL-uh-jist"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "bilingual",
+      "pronunciation": {
+        "ipa": "baɪˈlɪŋɡwəl",
+        "phonetic": "by-LING-gwul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "curriculum",
+      "pronunciation": {
+        "ipa": "kəˈrɪkjələm",
+        "phonetic": "kuh-RIK-yuh-lum"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "developed",
+      "pronunciation": {
+        "ipa": "dɪˈveləpt",
+        "phonetic": "di-VEL-upt"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "possession",
+      "pronunciation": {
+        "ipa": "pəˈzeʃən",
+        "phonetic": "puh-ZESH-un"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "shipping",
+      "pronunciation": {
+        "ipa": "ˈʃɪpɪŋ",
+        "phonetic": "SHIP-ing"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "quantity",
+      "pronunciation": {
+        "ipa": "ˈkwɒntɪti",
+        "phonetic": "KWON-ti-tee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "backroom",
+      "pronunciation": {
+        "ipa": "ˈbækruːm",
+        "phonetic": "BAK-room"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "fertilizer",
+      "pronunciation": {
+        "ipa": "ˈfɜːrtɪlaɪzər",
+        "phonetic": "FUR-ti-ly-zur"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "conservative",
+      "pronunciation": {
+        "ipa": "kənˈsɜːrvətɪv",
+        "phonetic": "kun-SUR-vuh-tiv"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "thesis",
+      "pronunciation": {
+        "ipa": "ˈθiːsɪs",
+        "phonetic": "THEE-sis"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "grant",
+      "pronunciation": {
+        "ipa": "ɡrænt",
+        "phonetic": "GRANT"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "weed",
+      "pronunciation": {
+        "ipa": "wiːd",
+        "phonetic": "WEED"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "vary",
+      "pronunciation": {
+        "ipa": "ˈveəri",
+        "phonetic": "VAIR-ee"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "vitality",
+      "pronunciation": {
+        "ipa": "vaɪˈtæləti",
+        "phonetic": "vy-TAL-i-tee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "genre",
+      "pronunciation": {
+        "ipa": "ˈʒɒnrə",
+        "phonetic": "ZHON-ruh"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "hypothesise",
+      "pronunciation": {
+        "ipa": "haɪˈpɒθəsaɪz",
+        "phonetic": "hy-POTH-uh-syze"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "mammals",
+      "pronunciation": {
+        "ipa": "ˈmæməlz",
+        "phonetic": "MAM-ulz"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "right",
+      "pronunciation": {
+        "ipa": "raɪt",
+        "phonetic": "RYTE"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "envisions",
+      "pronunciation": {
+        "ipa": "ɪnˈvɪʒənz",
+        "phonetic": "in-VIZH-unz"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "burgeon",
+      "pronunciation": {
+        "ipa": "ˈbɜːrdʒən",
+        "phonetic": "BUR-jun"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "navicular",
+      "pronunciation": {
+        "ipa": "nəˈvɪkjələr",
+        "phonetic": "nuh-VIK-yuh-lur"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "apologise",
+      "pronunciation": {
+        "ipa": "əˈpɒlədʒaɪz",
+        "phonetic": "uh-POL-uh-jyze"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "stitch",
+      "pronunciation": {
+        "ipa": "stɪtʃ",
+        "phonetic": "STICH"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "unashamedly",
+      "pronunciation": {
+        "ipa": "ˌʌnəˈʃeɪmɪdli",
+        "phonetic": "un-uh-SHAY-mid-lee"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "encyclopedia",
+      "pronunciation": {
+        "ipa": "ɪnˌsaɪkləˈpiːdiə",
+        "phonetic": "in-sy-kluh-PEE-dee-uh"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "personalised",
+      "pronunciation": {
+        "ipa": "ˈpɜːrsənəlaɪzd",
+        "phonetic": "PUR-sun-ul-yzd"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "squabble",
+      "pronunciation": {
+        "ipa": "ˈskwɒbəl",
+        "phonetic": "SKWOB-ul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "puzzled",
+      "pronunciation": {
+        "ipa": "ˈpʌzəld",
+        "phonetic": "PUZ-uld"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "editorial",
+      "pronunciation": {
+        "ipa": "ˌedɪˈtɔːriəl",
+        "phonetic": "ed-i-TOR-ee-ul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "insights",
+      "pronunciation": {
+        "ipa": "ˈɪnsaɪts",
+        "phonetic": "IN-sytes"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "legitimate",
+      "pronunciation": {
+        "ipa": "lɪˈdʒɪtɪmət",
+        "phonetic": "li-JIT-i-mut"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "complained",
+      "pronunciation": {
+        "ipa": "kəmˈpleɪnd",
+        "phonetic": "kum-PLAYND"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "pragmatic",
+      "pronunciation": {
+        "ipa": "præɡˈmætɪk",
+        "phonetic": "prag-MAT-ik"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "tremendously",
+      "pronunciation": {
+        "ipa": "trɪˈmendəsli",
+        "phonetic": "tri-MEN-dus-lee"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "leans",
+      "pronunciation": {
+        "ipa": "liːnz",
+        "phonetic": "LEENZ"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "supplemented",
+      "pronunciation": {
+        "ipa": "ˈsʌplɪmentɪd",
+        "phonetic": "SUP-li-men-tid"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "saturated",
+      "pronunciation": {
+        "ipa": "ˈsætʃəreɪtɪd",
+        "phonetic": "SACH-ur-ay-tid"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "represents",
+      "pronunciation": {
+        "ipa": "ˌreprɪˈzents",
+        "phonetic": "rep-ri-ZENTS"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "emphases",
+      "pronunciation": {
+        "ipa": "ˈemfəsiːz",
+        "phonetic": "EM-fuh-seez"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "creed",
+      "pronunciation": {
+        "ipa": "kriːd",
+        "phonetic": "KREED"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "propagating",
+      "pronunciation": {
+        "ipa": "ˈprɒpəɡeɪtɪŋ",
+        "phonetic": "PROP-uh-gay-ting"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "empathy",
+      "pronunciation": {
+        "ipa": "ˈempəθi",
+        "phonetic": "EM-puh-thee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "soul",
+      "pronunciation": {
+        "ipa": "soʊl",
+        "phonetic": "SOHL"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "attuned",
+      "pronunciation": {
+        "ipa": "əˈtjuːnd",
+        "phonetic": "uh-TOOND"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "incorporate",
+      "pronunciation": {
+        "ipa": "ɪnˈkɔːrpəreɪt",
+        "phonetic": "in-KOR-puh-rayt"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "temporary",
+      "pronunciation": {
+        "ipa": "ˈtempəreri",
+        "phonetic": "TEM-puh-rer-ee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "approach",
+      "pronunciation": {
+        "ipa": "əˈproʊtʃ",
+        "phonetic": "uh-PROHCH"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "calories",
+      "pronunciation": {
+        "ipa": "ˈkæləriz",
+        "phonetic": "KAL-uh-reez"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "deliberately",
+      "pronunciation": {
+        "ipa": "dɪˈlɪbərətli",
+        "phonetic": "di-LIB-ur-ut-lee"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "latter",
+      "pronunciation": {
+        "ipa": "ˈlætər",
+        "phonetic": "LAT-ur"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "chairman",
+      "pronunciation": {
+        "ipa": "ˈtʃeərmən",
+        "phonetic": "CHAIR-mun"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "ravel",
+      "pronunciation": {
+        "ipa": "ˈrævəl",
+        "phonetic": "RAV-ul"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "surfer",
+      "pronunciation": {
+        "ipa": "ˈsɜːrfər",
+        "phonetic": "SUR-fur"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "illustrative",
+      "pronunciation": {
+        "ipa": "ɪˈlʌstrətɪv",
+        "phonetic": "i-LUS-truh-tiv"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "exploring",
+      "pronunciation": {
+        "ipa": "ɪkˈsplɔːrɪŋ",
+        "phonetic": "ik-SPLOR-ing"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "pollination",
+      "pronunciation": {
+        "ipa": "ˌpɒlɪˈneɪʃən",
+        "phonetic": "pol-i-NAY-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "relationship",
+      "pronunciation": {
+        "ipa": "rɪˈleɪʃənʃɪp",
+        "phonetic": "ri-LAY-shun-ship"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "vernacular",
+      "pronunciation": {
+        "ipa": "vərˈnækjələr",
+        "phonetic": "vur-NAK-yuh-lur"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "consecutive",
+      "pronunciation": {
+        "ipa": "kənˈsekjətɪv",
+        "phonetic": "kun-SEK-yuh-tiv"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "confessed",
+      "pronunciation": {
+        "ipa": "kənˈfest",
+        "phonetic": "kun-FEST"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "opposed",
+      "pronunciation": {
+        "ipa": "əˈpoʊzd",
+        "phonetic": "uh-POHZD"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "terrestrial",
+      "pronunciation": {
+        "ipa": "təˈrestriəl",
+        "phonetic": "tuh-RES-tree-ul"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "trusted",
+      "pronunciation": {
+        "ipa": "ˈtrʌstɪd",
+        "phonetic": "TRUS-tid"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "mysterious",
+      "pronunciation": {
+        "ipa": "mɪˈstɪəriəs",
+        "phonetic": "mi-STEER-ee-us"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "rammer",
+      "pronunciation": {
+        "ipa": "ˈræmər",
+        "phonetic": "RAM-ur"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "alliances",
+      "pronunciation": {
+        "ipa": "əˈlaɪənsɪz",
+        "phonetic": "uh-LY-un-siz"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "label",
+      "pronunciation": {
+        "ipa": "ˈleɪbəl",
+        "phonetic": "LAY-bul"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "sequentially",
+      "pronunciation": {
+        "ipa": "sɪˈkwenʃəli",
+        "phonetic": "si-KWEN-shul-ee"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "balloons",
+      "pronunciation": {
+        "ipa": "bəˈluːnz",
+        "phonetic": "buh-LOONZ"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "characters",
+      "pronunciation": {
+        "ipa": "ˈkærəktərz",
+        "phonetic": "KAR-uk-turz"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "autograph",
+      "pronunciation": {
+        "ipa": "ˈɔːtəɡræf",
+        "phonetic": "AW-tuh-graf"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "swapping",
+      "pronunciation": {
+        "ipa": "ˈswɒpɪŋ",
+        "phonetic": "SWOP-ing"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "Arctic",
+      "pronunciation": {
+        "ipa": "ˈɑːrktɪk",
+        "phonetic": "ARK-tik"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "spreads",
+      "pronunciation": {
+        "ipa": "spredz",
+        "phonetic": "SPREDZ"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "benefited",
+      "pronunciation": {
+        "ipa": "ˈbenɪfɪtɪd",
+        "phonetic": "BEN-i-fi-tid"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "particles",
+      "pronunciation": {
+        "ipa": "ˈpɑːrtɪkəlz",
+        "phonetic": "PAR-ti-kulz"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "faith",
+      "pronunciation": {
+        "ipa": "feɪθ",
+        "phonetic": "FAYTH"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "propulsion",
+      "pronunciation": {
+        "ipa": "prəˈpʌlʃən",
+        "phonetic": "pruh-PUL-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "discursion",
+      "pronunciation": {
+        "ipa": "dɪˈskɜːrʃən",
+        "phonetic": "di-SKUR-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "offspring",
+      "pronunciation": {
+        "ipa": "ˈɔːfsprɪŋ",
+        "phonetic": "OF-spring"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "dinosaurs",
+      "pronunciation": {
+        "ipa": "ˈdaɪnəsɔːrz",
+        "phonetic": "DY-nuh-sorz"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "equally",
+      "pronunciation": {
+        "ipa": "ˈiːkwəli",
+        "phonetic": "EE-kwul-ee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "cautionary",
+      "pronunciation": {
+        "ipa": "ˈkɔːʃəneri",
+        "phonetic": "KAW-shun-er-ee"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "circuit",
+      "pronunciation": {
+        "ipa": "ˈsɜːrkɪt",
+        "phonetic": "SUR-kit"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "mentioned",
+      "pronunciation": {
+        "ipa": "ˈmenʃənd",
+        "phonetic": "MEN-shund"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "supplemental",
+      "pronunciation": {
+        "ipa": "ˌsʌplɪˈmentəl",
+        "phonetic": "sup-li-MEN-tul"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "translocation",
+      "pronunciation": {
+        "ipa": "ˌtrænzloʊˈkeɪʃən",
+        "phonetic": "tranz-loh-KAY-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "productivity",
+      "pronunciation": {
+        "ipa": "ˌproʊdʌkˈtɪvɪti",
+        "phonetic": "proh-duk-TIV-i-tee"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "grapher",
+      "pronunciation": {
+        "ipa": "ˈɡræfər",
+        "phonetic": "GRAF-ur"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "circular",
+      "pronunciation": {
+        "ipa": "ˈsɜːrkjələr",
+        "phonetic": "SUR-kyuh-lur"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "sub-letting",
+      "pronunciation": {
+        "ipa": "sʌbˈletɪŋ",
+        "phonetic": "sub-LET-ing"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "controversial",
+      "pronunciation": {
+        "ipa": "ˌkɒntrəˈvɜːrʃəl",
+        "phonetic": "kon-truh-VUR-shul"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "response",
+      "pronunciation": {
+        "ipa": "rɪˈspɒns",
+        "phonetic": "ri-SPONS"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "bored",
+      "pronunciation": {
+        "ipa": "bɔːrd",
+        "phonetic": "BORD"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "acknowledge",
+      "pronunciation": {
+        "ipa": "əkˈnɒlɪdʒ",
+        "phonetic": "ak-NOL-ij"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "warmer",
+      "pronunciation": {
+        "ipa": "ˈwɔːrmər",
+        "phonetic": "WOR-mur"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "earnestly",
+      "pronunciation": {
+        "ipa": "ˈɜːrnɪstli",
+        "phonetic": "UR-nist-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "tightly",
+      "pronunciation": {
+        "ipa": "ˈtaɪtli",
+        "phonetic": "TYTE-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "root",
+      "pronunciation": {
+        "ipa": "ruːt",
+        "phonetic": "ROOT"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "consistency",
+      "pronunciation": {
+        "ipa": "kənˈsɪstənsi",
+        "phonetic": "kun-SIS-tun-see"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "equities",
+      "pronunciation": {
+        "ipa": "ˈekwɪtiz",
+        "phonetic": "EK-wi-teez"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "titled",
+      "pronunciation": {
+        "ipa": "ˈtaɪtəld",
+        "phonetic": "TY-tuld"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "photos",
+      "pronunciation": {
+        "ipa": "ˈfoʊtoʊz",
+        "phonetic": "FOH-tohz"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "predicament",
+      "pronunciation": {
+        "ipa": "prɪˈdɪkəmənt",
+        "phonetic": "pri-DIK-uh-munt"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "paradox",
+      "pronunciation": {
+        "ipa": "ˈpærədɒks",
+        "phonetic": "PAR-uh-doks"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "Tokyo",
+      "pronunciation": {
+        "ipa": "ˈtoʊkioʊ",
+        "phonetic": "TOH-kee-oh"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "coalition",
+      "pronunciation": {
+        "ipa": "ˌkoʊəˈlɪʃən",
+        "phonetic": "koh-uh-LISH-un"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "confess",
+      "pronunciation": {
+        "ipa": "kənˈfes",
+        "phonetic": "kun-FES"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "serious",
+      "pronunciation": {
+        "ipa": "ˈsɪriəs",
+        "phonetic": "SEER-ee-us"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "relevance",
+      "pronunciation": {
+        "ipa": "ˈreləvəns",
+        "phonetic": "REL-uh-vuns"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "autumn",
+      "pronunciation": {
+        "ipa": "ˈɔːtəm",
+        "phonetic": "AW-tum"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "perspective",
+      "pronunciation": {
+        "ipa": "pərˈspektɪv",
+        "phonetic": "pur-SPEK-tiv"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "folder",
+      "pronunciation": {
+        "ipa": "ˈfoʊldər",
+        "phonetic": "FOHL-dur"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "pedal",
+      "pronunciation": {
+        "ipa": "ˈpedəl",
+        "phonetic": "PED-ul"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "baffle",
+      "pronunciation": {
+        "ipa": "ˈbæfəl",
+        "phonetic": "BAF-ul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "covert",
+      "pronunciation": {
+        "ipa": "ˈkoʊvərt",
+        "phonetic": "KOH-vurt"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "coaching",
+      "pronunciation": {
+        "ipa": "ˈkoʊtʃɪŋ",
+        "phonetic": "KOHCH-ing"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "consistent",
+      "pronunciation": {
+        "ipa": "kənˈsɪstənt",
+        "phonetic": "kun-SIS-tunt"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "shaped",
+      "pronunciation": {
+        "ipa": "ʃeɪpt",
+        "phonetic": "SHAYPT"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "dispersal",
+      "pronunciation": {
+        "ipa": "dɪˈspɜːrsəl",
+        "phonetic": "di-SPUR-sul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "force",
+      "pronunciation": {
+        "ipa": "fɔːrs",
+        "phonetic": "FORS"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "sculpture",
+      "pronunciation": {
+        "ipa": "ˈskʌlptʃər",
+        "phonetic": "SKULP-chur"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "beleaguered",
+      "pronunciation": {
+        "ipa": "bɪˈliːɡərd",
+        "phonetic": "bi-LEE-gurd"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "forensic",
+      "pronunciation": {
+        "ipa": "fəˈrensɪk",
+        "phonetic": "fuh-REN-sik"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "devastating",
+      "pronunciation": {
+        "ipa": "ˈdevəsteɪtɪŋ",
+        "phonetic": "DEV-uh-stay-ting"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "incredibly",
+      "pronunciation": {
+        "ipa": "ɪnˈkredɪbli",
+        "phonetic": "in-KRED-ib-lee"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "colloquial",
+      "pronunciation": {
+        "ipa": "kəˈloʊkwiəl",
+        "phonetic": "kuh-LOH-kwee-ul"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "swung",
+      "pronunciation": {
+        "ipa": "swʌŋ",
+        "phonetic": "SWUNG"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "substances",
+      "pronunciation": {
+        "ipa": "ˈsʌbstənsɪz",
+        "phonetic": "SUB-stun-siz"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "annotation",
+      "pronunciation": {
+        "ipa": "ˌænəˈteɪʃən",
+        "phonetic": "an-uh-TAY-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "irrational",
+      "pronunciation": {
+        "ipa": "ɪˈræʃənəl",
+        "phonetic": "i-RASH-un-ul"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "emulated",
+      "pronunciation": {
+        "ipa": "ˈemjəleɪtɪd",
+        "phonetic": "EM-yuh-lay-tid"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "optimizing",
+      "pronunciation": {
+        "ipa": "ˈɒptɪmaɪzɪŋ",
+        "phonetic": "OP-ti-my-zing"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "respondents",
+      "pronunciation": {
+        "ipa": "rɪˈspɒndənts",
+        "phonetic": "ri-SPON-dunts"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "stabilized",
+      "pronunciation": {
+        "ipa": "ˈsteɪbəlaɪzd",
+        "phonetic": "STAY-buh-lyzd"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "intentionally",
+      "pronunciation": {
+        "ipa": "ɪnˈtenʃənəli",
+        "phonetic": "in-TEN-shun-ul-ee"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "drowning",
+      "pronunciation": {
+        "ipa": "ˈdraʊnɪŋ",
+        "phonetic": "DROWN-ing"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "dawn",
+      "pronunciation": {
+        "ipa": "dɔːn",
+        "phonetic": "DAWN"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "team",
+      "pronunciation": {
+        "ipa": "tiːm",
+        "phonetic": "TEEM"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "vogue",
+      "pronunciation": {
+        "ipa": "voʊɡ",
+        "phonetic": "VOHG"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "appalling",
+      "pronunciation": {
+        "ipa": "əˈpɔːlɪŋ",
+        "phonetic": "uh-PAW-ling"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "oyster",
+      "pronunciation": {
+        "ipa": "ˈɔɪstər",
+        "phonetic": "OY-stur"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "convincible",
+      "pronunciation": {
+        "ipa": "kənˈvɪnsəbəl",
+        "phonetic": "kun-VIN-suh-bul"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "restricted",
+      "pronunciation": {
+        "ipa": "rɪˈstrɪktɪd",
+        "phonetic": "ri-STRIK-tid"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "shoots",
+      "pronunciation": {
+        "ipa": "ʃuːts",
+        "phonetic": "SHOOTS"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "scary",
+      "pronunciation": {
+        "ipa": "ˈskeəri",
+        "phonetic": "SKAIR-ee"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "issue",
+      "pronunciation": {
+        "ipa": "ˈɪʃuː",
+        "phonetic": "ISH-oo"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "chlorophyll",
+      "pronunciation": {
+        "ipa": "ˈklɔːrəfɪl",
+        "phonetic": "KLOR-uh-fil"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "depth",
+      "pronunciation": {
+        "ipa": "depθ",
+        "phonetic": "DEPTH"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "markings",
+      "pronunciation": {
+        "ipa": "ˈmɑːrkɪŋz",
+        "phonetic": "MAR-kingz"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "psychological",
+      "pronunciation": {
+        "ipa": "ˌsaɪkəˈlɒdʒɪkəl",
+        "phonetic": "sy-kuh-LOJ-i-kul"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "eventually",
+      "pronunciation": {
+        "ipa": "ɪˈventʃuəli",
+        "phonetic": "i-VEN-choo-ul-ee"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "emit",
+      "pronunciation": {
+        "ipa": "ɪˈmɪt",
+        "phonetic": "i-MIT"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "density",
+      "pronunciation": {
+        "ipa": "ˈdensɪti",
+        "phonetic": "DEN-si-tee"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "billion",
+      "pronunciation": {
+        "ipa": "ˈbɪljən",
+        "phonetic": "BIL-yun"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "administrative",
+      "pronunciation": {
+        "ipa": "ədˈmɪnɪstrətɪv",
+        "phonetic": "ad-MIN-is-truh-tiv"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "fears",
+      "pronunciation": {
+        "ipa": "fɪərz",
+        "phonetic": "FEERZ"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "spices",
+      "pronunciation": {
+        "ipa": "ˈspaɪsɪz",
+        "phonetic": "SPY-siz"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "favourite",
+      "pronunciation": {
+        "ipa": "ˈfeɪvərɪt",
+        "phonetic": "FAY-vur-it"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "thrown",
+      "pronunciation": {
+        "ipa": "θroʊn",
+        "phonetic": "THROHN"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "dozen",
+      "pronunciation": {
+        "ipa": "ˈdʌzən",
+        "phonetic": "DUZ-un"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "helpful",
+      "pronunciation": {
+        "ipa": "ˈhelpfəl",
+        "phonetic": "HELP-ful"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "inevitable",
+      "pronunciation": {
+        "ipa": "ɪnˈevɪtəbəl",
+        "phonetic": "in-EV-i-tuh-bul"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "lying",
+      "pronunciation": {
+        "ipa": "ˈlaɪɪŋ",
+        "phonetic": "LY-ing"
+      },
+      "difficulty": "easy",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "convergence",
+      "pronunciation": {
+        "ipa": "kənˈvɜːrdʒəns",
+        "phonetic": "kun-VUR-juns"
+      },
+      "difficulty": "hard",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "author",
+      "pronunciation": {
+        "ipa": "ˈɔːθər",
+        "phonetic": "AW-thur"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "classical",
+      "pronunciation": {
+        "ipa": "ˈklæsɪkəl",
+        "phonetic": "KLAS-i-kul"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "pseudo",
+      "pronunciation": {
+        "ipa": "ˈsuːdoʊ",
+        "phonetic": "SOO-doh"
+      },
+      "difficulty": "normal",
+      "category": "pte-high-frequency",
+      "source": "pte-high-frequency-vocabulary-with-ipa"
+    },
+    {
+      "english": "symptomatic",
+      "pronunciation": {
+        "ipa": "ˌsɪmptəˈmætɪk",
+        "phonetic": "simp-tuh-MAT-ik"
+      },
+      "difficulty": "hard",
       "category": "pte-high-frequency",
       "source": "pte-high-frequency-vocabulary-with-ipa"
     }

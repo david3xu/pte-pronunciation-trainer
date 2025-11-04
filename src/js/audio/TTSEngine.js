@@ -404,7 +404,7 @@ class TTSEngine {
                 utterance.onend = () => {
                     // Keep audio session alive
                     if (this.backgroundAudioElement) {
-                        this.backgroundAudioElement.play().catch(() => { });
+                        this.startBackgroundAudio();
                     }
                     resolve();
                 };
@@ -463,28 +463,79 @@ class TTSEngine {
         if (!this.backgroundAudioElement) {
             this.backgroundAudioElement = document.createElement('audio');
             this.backgroundAudioElement.loop = true;
-            this.backgroundAudioElement.volume = 0.01; // Almost silent
+            this.backgroundAudioElement.volume = 0.05; // Slightly louder to ensure it plays
             this.backgroundAudioElement.preload = 'auto';
+            this.backgroundAudioElement.muted = false; // Ensure not muted
+            this.backgroundAudioElement.autoplay = false; // Manual control
 
-            // Create a very short silent audio data URL
+            // Create a very short silent audio data URL (200ms of silence)
             const silentAudioData = 'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=';
             this.backgroundAudioElement.src = silentAudioData;
 
-            // Add to DOM (hidden)
-            this.backgroundAudioElement.style.display = 'none';
-            document.body.appendChild(this.backgroundAudioElement);
+            // Add to DOM (hidden) - wait for DOM to be ready
+            this.backgroundAudioElement.style.cssText = 'position:absolute;left:-9999px;width:1px;height:1px;';
+            this.backgroundAudioElement.setAttribute('playsinline', ''); // iOS requirement
+            this.backgroundAudioElement.setAttribute('webkit-playsinline', ''); // Older iOS
+
+            // Ensure DOM is ready before appending
+            if (document.body) {
+                document.body.appendChild(this.backgroundAudioElement);
+            } else {
+                document.addEventListener('DOMContentLoaded', () => {
+                    document.body.appendChild(this.backgroundAudioElement);
+                    this.startBackgroundAudio();
+                });
+                return; // Exit early, will start when DOM ready
+            }
         }
 
         // Start playing silent audio to maintain audio session
-        this.backgroundAudioElement.play().catch(() => { });
+        this.startBackgroundAudio();
 
         // Set up audio session for iOS
         if (navigator.mediaSession) {
             navigator.mediaSession.metadata = new MediaMetadata({
-                title: 'CCL Pronunciation Trainer',
+                title: 'PTE Pronunciation Trainer',
                 artist: 'Learning Mode',
                 album: 'Background Audio'
             });
+        }
+    }
+
+    /**
+     * Start background audio with proper error handling and retry
+     */
+    startBackgroundAudio() {
+        if (!this.backgroundAudioElement) return;
+
+        const playPromise = this.backgroundAudioElement.play();
+
+        if (playPromise !== undefined) {
+            playPromise
+                .then(() => {
+                    console.log('[TTSEngine] ✅ Background audio started successfully');
+                })
+                .catch(error => {
+                    console.warn('[TTSEngine] ⚠️ Background audio failed to start:', error.message);
+
+                    // Retry after user interaction
+                    const retryPlay = () => {
+                        this.backgroundAudioElement.play()
+                            .then(() => {
+                                console.log('[TTSEngine] ✅ Background audio started on retry');
+                                // Remove listeners after success
+                                document.removeEventListener('click', retryPlay);
+                                document.removeEventListener('touchstart', retryPlay);
+                            })
+                            .catch(() => {
+                                // Silent fail on retry - will try again on next interaction
+                            });
+                    };
+
+                    // Browsers require user interaction before playing audio
+                    document.addEventListener('click', retryPlay, { once: true });
+                    document.addEventListener('touchstart', retryPlay, { once: true });
+                });
         }
     }
 

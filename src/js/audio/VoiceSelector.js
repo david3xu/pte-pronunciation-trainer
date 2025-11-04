@@ -28,7 +28,7 @@ class VoiceSelector {
         }
     }
 
-    selectBestVoiceMatch(voices, lang) {
+    selectBestVoiceMatch(voices, _lang) {
         // Check if user has selected a preferred voice from curated list
         if (this.preferredVoice) {
             // Try exact match first
@@ -116,7 +116,6 @@ class VoiceSelector {
         // ONLY MALE VOICES - NO FEMALE VOICES ALLOWED
         const config = window.appConfig || new AppConfig();
         const defaultVoice = config.get('tts.voices.default');
-        const fallbackVoices = config.get('tts.voices.fallbacks');
 
         const curatedVoices = [
             { name: 'Microsoft James - English (Australia)', fallbacks: ['Microsoft James', 'James'] },

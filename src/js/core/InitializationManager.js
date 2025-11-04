@@ -220,7 +220,7 @@ class InitializationManager {
 
             } catch (error) {
                 lastError = error;
-                const time = Date.now() - attemptStart;
+                const _time = Date.now() - attemptStart;
 
                 if (attempt < retries) {
                     const delay = Math.pow(2, attempt) * 1000; // Exponential backoff

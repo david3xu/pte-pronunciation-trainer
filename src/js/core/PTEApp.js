@@ -281,7 +281,8 @@ class PTEVocabularyTrainer {
   registerServiceWorker() {
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js')
-        .then(registration => {
+        .then(_registration => {
+          // Service worker registered successfully
         })
         .catch(error => {
           console.warn('⚠️ Service Worker registration failed:', error);
@@ -293,6 +294,7 @@ class PTEVocabularyTrainer {
     if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
       navigator.serviceWorker.addEventListener('message', event => {
         if (event.data && event.data.type === 'AUDIO_READY') {
+          // Handle audio ready event from service worker
         }
       });
     }

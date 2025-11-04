@@ -43,7 +43,7 @@ class ProgressTracker {
                     // Fallback to legacy generated dataset (still dynamic, no hardcodes)
                     const allTokens = window.conversationVocabularyData.vocabulary;
                     const allDialogueIds = [...new Set(allTokens.map(item => item.conversationId))].sort((a, b) => parseInt(b) - parseInt(a));
-                    totalDialogues = allDialogueIds.length;
+                    const _totalDialogues = allDialogueIds.length;
                     tokensInDialogue = allTokens.filter(item => item.conversationId === currentWord.conversationId);
                 }
 

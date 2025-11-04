@@ -64,10 +64,13 @@ async function build() {
 
         // Build CSS
         console.log('🎨 Building CSS files...');
+        // IMPORTANT: CSS files must be loaded in this exact order
         const cssFiles = [
-            path.join(srcDir, 'css', 'style.css'),
-            path.join(srcDir, 'css', 'components.css'),
-            path.join(srcDir, 'css', 'responsive.css')
+            path.join(srcDir, 'css', 'variables.css'),      // 1. Design tokens
+            path.join(srcDir, 'css', 'animations.css'),     // 2. @keyframes
+            path.join(srcDir, 'css', 'components.css'),     // 3. BEM components
+            path.join(srcDir, 'css', 'style.css'),          // 4. Main layout
+            path.join(srcDir, 'css', 'responsive.css')      // 5. Media queries
         ];
 
         let combinedCSS = '';
@@ -194,8 +197,8 @@ async function build() {
             buildTime: new Date().toISOString(),
             version: '1.0.0',
             files: {
-                'css/app.min.css': fs.statSync(path.join(distDir, 'css', 'app.min.css')).size,
-                'js/app.min.js': fs.statSync(path.join(distDir, 'js', 'app.min.js')).size,
+                [buildConfig.output.css]: fs.statSync(path.join(distDir, buildConfig.output.css)).size,
+                [buildConfig.output.js]: fs.statSync(path.join(distDir, buildConfig.output.js)).size,
                 'index.html': fs.statSync(path.join(distDir, 'index.html')).size
             }
         };

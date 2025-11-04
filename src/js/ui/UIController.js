@@ -122,20 +122,20 @@ class UIController {
 
         // Listen for vocabulary loaded event
         const vocabularyLoadedEvent = this.config.get('events.vocabulary.loaded');
-        window.eventBus.on(vocabularyLoadedEvent, (data) => {
+        window.eventBus.on(vocabularyLoadedEvent, () => {
             this.updateUI();
         });
 
         // Listen for vocabulary difficulty filtered event
         const difficultyFilteredEvent = this.config.get('events.vocabulary.difficulty.filtered');
-        window.eventBus.on(difficultyFilteredEvent, (data) => {
+        window.eventBus.on(difficultyFilteredEvent, () => {
             this.updateBookDisplay();
             this.updateButtons();
         });
 
         // Listen for learning mode changes
         const learningModeChangedEvent = this.config.get('events.mode.learning.changed');
-        window.eventBus.on(learningModeChangedEvent, (data) => {
+        window.eventBus.on(learningModeChangedEvent, () => {
             // Reset audio position to first word
             window.audioControls.setCurrentIndex(0);
             this.updateBookDisplay();
@@ -177,7 +177,7 @@ class UIController {
 
         // Listen for progress events (from Config.js)
         const progressUpdatedEvent = window.appConfig?.get('events.progress.updated') || 'progress:updated';
-        window.eventBus.on(progressUpdatedEvent, (data) => {
+        window.eventBus.on(progressUpdatedEvent, () => {
             // Progress display is handled by ProgressTracker
         });
 
@@ -208,7 +208,6 @@ class UIController {
 
         document.getElementById('nextBtn').addEventListener('click', () => {
             // Mode-aware: emit appropriate next event (standardized from Config.js)
-            const defaultMode = this.config.get('data.defaults.practiceMode') || this.config.get('fallbacks.practiceMode');
             const mode = this.getPracticeMode();
             const audioNextEvent = window.appConfig.get('events.audio.navigate.next');
             window.eventBus.emit(audioNextEvent, { mode });
@@ -216,7 +215,6 @@ class UIController {
 
         document.getElementById('prevBtn').addEventListener('click', () => {
             // Mode-aware: emit appropriate prev event (standardized from Config.js)
-            const defaultMode = this.config.get('data.defaults.practiceMode') || this.config.get('fallbacks.practiceMode');
             const mode = this.getPracticeMode();
             const audioPrevEvent = window.appConfig.get('events.audio.navigate.prev');
             window.eventBus.emit(audioPrevEvent, { mode });
@@ -247,7 +245,6 @@ class UIController {
      * @param {string} [mode] - Optional mode override, defaults to currentPracticeMode
      */
     displayCurrent(data = {}, mode = null) {
-        const defaultMode = this.config.get('data.defaults.practiceMode');
         const currentMode = mode || this.getPracticeMode();
 
         // Use Config.js mapping to determine mode type instead of hardcoded string comparison
@@ -418,8 +415,6 @@ class UIController {
             modeLabels[mode.id] = mode.label;
         });
 
-        const displayName = modeLabels[currentMode] || currentMode;
-
         // Update context bar display with vocabulary book name and word count
         if (bookDisplay) {
             const modeName = modeLabels[currentMode] || currentMode;
@@ -548,7 +543,6 @@ class UIController {
 
         // Update word type badge (ONLY for vocabulary mode)
         const wordTypeBadge = document.getElementById('wordTypeBadge');
-        const defaultMode = this.config.get('data.defaults.practiceMode') || this.config.get('fallbacks.practiceMode');
         const currentMode = this.getPracticeMode();
 
         if (wordTypeBadge) {
@@ -798,10 +792,6 @@ class UIController {
         }
     }
 
-    handleError(error) {
-        console.error('UI Error:', error);
-        window.progressTracker.showError(error.message || 'An error occurred');
-    }
 
     showLoadingState() {
         window.progressTracker.updateStatus('Loading...');
@@ -844,7 +834,7 @@ class UIController {
     /**
      * Handle settings changes from SettingsModule
      */
-    handleSettingsChange(key, value) {
+    handleSettingsChange(key, _value) {
         switch (key) {
             case 'category':
                 this.updateBookDisplay();

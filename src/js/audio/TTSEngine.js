@@ -118,7 +118,6 @@ class TTSEngine {
      * @param {number} rate - Speech rate (uses user's speed setting if not specified)
      */
     async pronounceText(text, lang = null, rate = null) {
-        const defaultLang = this.config.get('tts.language.default');
         if (!text) {
             window.progressTracker.showError('No text to pronounce');
             return;
@@ -176,10 +175,6 @@ class TTSEngine {
             const cleanText = this.cleanTextForTTS(word.english);
 
             const pronunciationRate = this.speechRate;
-
-            // For vocabulary-clean mode, use UK pronunciation for first repeat, US for second
-            if (word.source === 'vocabulary-clean' && word.ukPronunciation && word.usPronunciation) {
-            }
 
             // Add visual feedback during speech
             const englishWordElement = document.getElementById('englishWord');
@@ -275,7 +270,7 @@ class TTSEngine {
             this.audioContextInitialized = true;
         }
 
-        return new Promise((resolve, reject) => {
+        return new Promise((resolve, _reject) => {
             // Check if we're on iOS and should use HTML5 Audio fallback
             const isIOS = window.app && window.app.isMobileDevice &&
                 /iPad|iPhone|iPod/.test(navigator.userAgent);
@@ -375,7 +370,7 @@ class TTSEngine {
     speakWithHTML5Audio(text, lang = null, customRate = null) {
         // Use configured language if not specified
         const language = lang || this.config.get('tts.language.default');
-        return new Promise((resolve, reject) => {
+        return new Promise((resolve, _reject) => {
             // For iOS background audio, use HTML5 Audio fallback
 
             // Create audio element for background playback

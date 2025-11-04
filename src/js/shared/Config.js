@@ -573,11 +573,6 @@ class AppConfig {
                 // Application lifecycle
                 app: {
                     initialized: 'app:initialized'
-                },
-
-                // System-level events
-                system: {
-                    error: 'system:error'
                 }
             },
 

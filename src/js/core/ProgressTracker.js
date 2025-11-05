@@ -30,20 +30,15 @@ class ProgressTracker {
             if (currentWord && currentWord.conversationId) {
                 // Use PTEVocabularyManager's complete dataset
                 const vocabularyManager = window.pteVocabularyManager;
-                let totalDialogues = 0;
                 let tokensInDialogue = [];
 
                 if (vocabularyManager && vocabularyManager.extractedVocabulary) {
                     // Use complete dataset from PTEVocabularyManager
                     const allTokens = vocabularyManager.extractedVocabulary;
-                    const allDialogueIds = [...new Set(allTokens.map(item => item.conversationId))].sort((a, b) => parseInt(b) - parseInt(a));
-                    totalDialogues = allDialogueIds.length;
                     tokensInDialogue = allTokens.filter(item => item.conversationId === currentWord.conversationId);
                 } else if (window.conversationVocabularyData && Array.isArray(window.conversationVocabularyData.vocabulary)) {
                     // Fallback to legacy generated dataset (still dynamic, no hardcodes)
                     const allTokens = window.conversationVocabularyData.vocabulary;
-                    const allDialogueIds = [...new Set(allTokens.map(item => item.conversationId))].sort((a, b) => parseInt(b) - parseInt(a));
-                    const _totalDialogues = allDialogueIds.length;
                     tokensInDialogue = allTokens.filter(item => item.conversationId === currentWord.conversationId);
                 }
 

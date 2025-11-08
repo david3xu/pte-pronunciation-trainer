@@ -52,6 +52,7 @@ module.exports = {
     InitializationManager: 'readonly',
     DataSchema: 'readonly',
     webkitAudioContext: 'readonly',
-    module: 'readonly'
+    module: 'readonly',
+    process: 'readonly'
   }
 };

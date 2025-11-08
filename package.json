@@ -113,6 +113,8 @@
     }
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.80.0"
+    "@supabase/supabase-js": "^2.80.0",
+    "immer": "^10.2.0",
+    "zustand": "^5.0.8"
   }
 }

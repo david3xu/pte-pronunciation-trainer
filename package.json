@@ -116,6 +116,7 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.80.0",
     "immer": "^10.2.0",
+    "posthog-js": "^1.290.0",
     "zustand": "^5.0.8"
   }
 }

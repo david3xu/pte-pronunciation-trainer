@@ -21,6 +21,19 @@ interface ImportMetaEnv {
   readonly VITE_SUPABASE_ANON_KEY: string;
 
   /**
+   * PostHog Project API Key (Optional)
+   * Leave empty to disable analytics
+   * @example "phc_xxxxxxxxxxxxxxxxxxxxx"
+   */
+  readonly VITE_POSTHOG_API_KEY?: string;
+
+  /**
+   * PostHog API Host
+   * @default "https://app.posthog.com"
+   */
+  readonly VITE_POSTHOG_HOST?: string;
+
+  /**
    * Application Environment
    * @default "development"
    */

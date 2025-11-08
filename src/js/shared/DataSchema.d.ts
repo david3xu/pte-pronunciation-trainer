@@ -129,6 +129,7 @@ export default DataSchema;
 declare global {
     interface Window {
         dataSchema: DataSchema;
+        DataSchema: typeof DataSchema;
     }
 }
 //# sourceMappingURL=DataSchema.d.ts.map

@@ -502,6 +502,11 @@ if (typeof window !== 'undefined' && (window as any).appConfig) {
   (window as any).dataSchema = dataSchema;
 }
 
+// Expose DataSchema class on window for dynamic instantiation
+if (typeof window !== 'undefined') {
+  (window as any).DataSchema = DataSchema;
+}
+
 // Default export
 export default DataSchema;
 
@@ -511,5 +516,6 @@ export default DataSchema;
 declare global {
   interface Window {
     dataSchema: DataSchema;
+    DataSchema: typeof DataSchema;
   }
 }

@@ -361,6 +361,10 @@ if (typeof window !== 'undefined' && window.appConfig) {
     dataSchema = new DataSchema(window.appConfig);
     window.dataSchema = dataSchema;
 }
+// Expose DataSchema class on window for dynamic instantiation
+if (typeof window !== 'undefined') {
+    window.DataSchema = DataSchema;
+}
 // Default export
 export default DataSchema;
 //# sourceMappingURL=DataSchema.js.map

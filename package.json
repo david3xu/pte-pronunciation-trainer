@@ -10,7 +10,9 @@
     "data:pte": "node scripts/pte-data-pipeline.js",
     "build": "node scripts/build.js",
     "build:ts": "tsc --noEmit",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
+    "test:watch": "jest --watch --passWithNoTests",
+    "test:coverage": "jest --coverage --passWithNoTests",
     "test:ts": "npm run build:ts && npm test",
     "lint": "npm run lint:js && npm run lint:ts",
     "lint:js": "eslint src/js/**/*.js",
@@ -43,13 +45,20 @@
   "author": "CCL Pronunciation Trainer Team",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
     "@types/node": "^24.10.0",
+    "babel-jest": "^30.2.0",
     "cssnano": "^6.0.1",
     "eslint": "^8.45.0",
     "html-minifier": "^4.0.0",
     "husky": "^8.0.3",
     "jest": "^29.6.0",
     "jest-environment-jsdom": "^30.2.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "stylelint": "^16.25.0",
     "stylelint-config-standard": "^39.0.1",
     "ts-node": "^10.9.2",
@@ -77,11 +86,44 @@
   "jest": {
     "testEnvironment": "jsdom",
     "testMatch": [
-      "**/tests/**/*.test.js"
+      "**/tests/**/*.test.js",
+      "**/__tests__/**/*.test.js"
     ],
     "collectCoverageFrom": [
-      "src/**/*.js"
-    ]
+      "src/js/**/*.js",
+      "!src/js/**/*.d.ts",
+      "!src/js/**/*.d.ts.map",
+      "!src/js/**/*.js.map",
+      "!src/js/utils/EventBus.js"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "text",
+      "lcov",
+      "html",
+      "json-summary"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 60,
+        "functions": 60,
+        "lines": 60,
+        "statements": 60
+      }
+    },
+    "setupFilesAfterEnv": [
+      "<rootDir>/tests/setup.js"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "/node_modules/(?!(posthog-js)/)"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|scss|sass)$": "<rootDir>/tests/__mocks__/styleMock.js",
+      "^.*/supabase/.*\\.js$": "<rootDir>/tests/__mocks__/supabaseServices.js"
+    }
   },
   "eslintConfig": {
     "env": {

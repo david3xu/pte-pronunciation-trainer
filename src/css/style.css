@@ -59,8 +59,7 @@ body {
     max-height: 400px;        /* Enforce maximum */
     display: grid;
     grid-template-rows: auto 1fr auto auto;  /* Auto-distribute: badge, word, phonetic, example */
-    align-items: center;
-    justify-items: center;
+    place-items: center center;
     gap: clamp(var(--space-sm), 2vh, var(--space-xl));  /* Responsive gap: 8px-24px */
     text-align: center;
     user-select: none;
@@ -138,7 +137,7 @@ body {
     color: var(--text-muted);
     font-weight: 400;
     margin: var(--space-sm) 0;  /* Reduced margin for compact layout */
-    font-family: 'Doulos SIL', 'Gentium', sans-serif;
+    font-family: 'Doulos SIL', Gentium, sans-serif;
     letter-spacing: 1px;
 }
 
@@ -163,7 +162,7 @@ body {
     line-height: calc(1em + 0.5em);  /* Dynamic: 50% more than font size for long text */
     margin: var(--space-sm) 0;  /* Design token: 8px */
     font-style: italic;
-    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* Chinese example display - removed */
@@ -230,6 +229,7 @@ body {
 }
 
 /* Buttons use standard .btn classes from components.css */
+
 /* Custom styling for primary controls if needed can go here */
 
 .context-bar {
@@ -238,6 +238,7 @@ body {
     align-items: center;
     position: relative;
     z-index: 10;
+
     /* Lower than settings panel but higher than other elements */
 }
 
@@ -347,7 +348,7 @@ body {
     box-sizing: border-box;
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
     .settings-grid {
         gap: var(--space-xlg);
         padding: var(--space-xl) var(--space-2xl);
@@ -376,8 +377,8 @@ input {
     font-size: var(--font-size-md);
     max-width: 100%;
     color: var(--text-primary);
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    appearance: none;
+    appearance: none;
     appearance: none;
     background-image: url("data:image/svg+xml;utf8,<svg fill='%23718096' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
     background-repeat: no-repeat;
@@ -389,17 +390,18 @@ select:focus,
 input:focus {
     outline: none;
     border-color: var(--color-blue-hover);
-    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.3);
+    box-shadow: 0 0 0 3px rgb(49 130 206 / 30%);
 }
 
 /* Mobile Optimizations */
-@media (max-width: 640px) {
+@media (width <= 640px) {
     .learning-area {
         padding: var(--space-2xl) var(--space-lg) var(--space-xlg);
         min-height: 50vh;
     }
     
     /* Height controlled by responsive.css with proper breakpoints */
+
     /* Reduced padding to maximize content space on small screens */
     .word-display {
         padding: var(--space-lg) var(--space-xs);  /* 16px 4px - more vertical space */
@@ -445,18 +447,19 @@ input:focus {
     .control-area {
         padding: var(--space-lg);
         min-height: 100px;
+
         /* Ensure buttons are not cut off on mobile */
         padding-bottom: var(--space-xlg);
     }    /* Button responsive sizing handled by components.css .btn--small/large modifiers */
 }
 
 /* Larger Screen Enhancements */
-@media (min-width: 768px) {
+@media (width >= 768px) {
     .app-layout-grid {
         border-radius: var(--space-xlg);
         margin: var(--space-xlg) auto;
         overflow: hidden;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 10px 25px rgb(0 0 0 / 15%);
         min-height: calc(100vh - 40px);
     }
 
@@ -470,13 +473,16 @@ input:focus {
 
     .learning-area {
         min-height: calc(100vh - 300px);
+
         /* Ensure no scrolling */
         padding: var(--space-3xl);
     }
 
     .control-area {
         padding: var(--space-xlg) var(--space-sm) var(--space-3xl);
-    }    .settings-grid {
+    }
+
+    .settings-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: var(--space-xl);
         padding: var(--space-2xl) var(--space-3xl);
@@ -484,7 +490,9 @@ input:focus {
 }
 
 /* Animation classes */
+
 /* Animations moved to animations.css to prevent name collisions */
+
 /* Use utility classes: .speaking, .word-change, .pulse, .fade-in-up */
 
 /* Dark mode handled by CSS variables at top of file - no overrides needed! */

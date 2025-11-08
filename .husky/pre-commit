@@ -16,7 +16,7 @@ node scripts/validate-structure.js
 STRUCT_EXIT=$?
 
 # 3. Code linting (if ESLint configured)
-if [ -f ".eslintrc.js" ] || [ -f ".eslintrc.json" ]; then
+if [ -f ".eslintrc.js" ] || [ -f ".eslintrc.json" ] || [ -f ".eslintrc.cjs" ]; then
   echo "\n🔍 Running ESLint..."
   npm run lint --silent
   LINT_EXIT=$?
@@ -24,10 +24,12 @@ else
   LINT_EXIT=0
 fi
 
-# 4. Run tests
+# 4. Run tests (pass if no tests exist)
 echo "\n🧪 Running tests..."
-npm test --silent
-TEST_EXIT=$?
+npm test -- --passWithNoTests --silent 2>/dev/null || TEST_EXIT=$?
+if [ -z "$TEST_EXIT" ]; then
+  TEST_EXIT=0
+fi
 
 # Summary
 echo "\n========================================="

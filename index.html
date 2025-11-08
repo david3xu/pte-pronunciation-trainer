@@ -217,6 +217,42 @@
     <!-- Main App Coordinator -->
     <script type="module" src="src/js/core/PTEApp.js?v=1759988913000"></script>
 
+    <!-- Initialize App (after all modules loaded) -->
+    <script type="module">
+        // Wait for all modules to load and execute
+        // This ensures window.SettingsModule, window.PTEVocabularyTrainer, etc. are all available
+        function initializeApp() {
+            // Check if all critical dependencies are loaded
+            const requiredDeps = [
+                'appConfig',
+                'eventBus',
+                'storage',
+                'SettingsModule',
+                'PTEVocabularyTrainer'
+            ];
+
+            const missingDeps = requiredDeps.filter(dep => typeof window[dep] === 'undefined');
+
+            if (missingDeps.length > 0) {
+                console.error('❌ Cannot initialize app - missing dependencies:', missingDeps);
+                console.log('Retrying in 100ms...');
+                setTimeout(initializeApp, 100);
+                return;
+            }
+
+            // All dependencies loaded - initialize the app
+            console.log('✅ All dependencies loaded, initializing PTEVocabularyTrainer...');
+            window.pteApp = new window.PTEVocabularyTrainer();
+        }
+
+        // Start initialization when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeApp);
+        } else {
+            initializeApp();
+        }
+    </script>
+
     <!-- Authentication Modal -->
     <div id="authModal" class="auth-modal" style="display: none;">
         <div class="auth-modal-overlay"></div>

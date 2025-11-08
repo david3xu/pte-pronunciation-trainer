@@ -171,9 +171,22 @@ export class PTEVocabularyTrainer {
       // Import analyticsService dynamically
       const { analyticsService } = await import('../analytics/analyticsService.js');
 
+      // Helper to safely get environment variables
+      const getEnvVar = (key: string): string | null => {
+        try {
+          // Try Vite-style env vars (if using Vite)
+          if (typeof import.meta !== 'undefined' && import.meta.env) {
+            return (import.meta.env as any)[key] || null;
+          }
+        } catch (e) {
+          // import.meta might not be available in all contexts
+        }
+        return null;
+      };
+
       // Get PostHog API key from environment (optional)
-      const apiKey = import.meta.env.VITE_POSTHOG_API_KEY || null;
-      const apiHost = import.meta.env.VITE_POSTHOG_HOST || 'https://app.posthog.com';
+      const apiKey = getEnvVar('VITE_POSTHOG_API_KEY');
+      const apiHost = getEnvVar('VITE_POSTHOG_HOST') || 'https://app.posthog.com';
 
       // Initialize analytics (will run in disabled mode if no API key)
       analyticsService.initialize(apiKey, {
@@ -599,18 +612,6 @@ export class PTEVocabularyTrainer {
   }
 }
 
-// Initialize the app when DOM is ready
-let pteApp: PTEVocabularyTrainer | undefined;
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', () => {
-    pteApp = new PTEVocabularyTrainer();
-    (window as any).pteApp = pteApp;
-  });
-} else {
-  pteApp = new PTEVocabularyTrainer();
-  (window as any).pteApp = pteApp;
-}
-
 /**
  * Global type declarations
  */
@@ -618,7 +619,13 @@ declare global {
   interface Window {
     pteApp: PTEVocabularyTrainer;
     initializing: boolean;
+    PTEVocabularyTrainer: typeof PTEVocabularyTrainer;
   }
+}
+
+// Export class to window for manual instantiation
+if (typeof window !== 'undefined') {
+  window.PTEVocabularyTrainer = PTEVocabularyTrainer;
 }
 
 // Export for module systems

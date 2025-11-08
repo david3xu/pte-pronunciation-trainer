@@ -4,7 +4,7 @@
  * Displays user statistics and study progress from Supabase
  * Shows recent sessions, total words studied, and progress charts
  */
-import { syncService } from '../supabase/syncService.js';
+import { syncService } from '../supabase/syncService';
 /**
  * AnalyticsDashboard - User statistics and progress visualization
  */

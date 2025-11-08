@@ -357,4 +357,5 @@ export default appConfig;
 // Attach to window for vanilla JS compatibility (Phase 2 migration)
 if (typeof window !== 'undefined') {
   (window as any).appConfig = appConfig;
+  console.log('✅ Config.js loaded - window.appConfig attached:', typeof window.appConfig);
 }

@@ -9,7 +9,7 @@
  * - Replaced EventBus emissions with Zustand store updates
  * - Direct progress store actions for status/error/stats
  */
-import { useAppStore } from '../stores/index.js';
+import { useAppStore } from '../stores';
 /**
  * Type-safe Progress Tracker with Zustand integration
  * Manages learning progress display and Zustand store updates

@@ -55,19 +55,51 @@ export async function getAIRecommendations(
   }
 }
 
+interface AITutorRequest {
+  question: string;
+  context?: {
+    word?: string;
+    difficulty?: string;
+  };
+  conversationHistory?: Array<{ role: 'user' | 'assistant'; content: string }>;
+}
+
 /**
  * Ask AI tutor a question about pronunciation/vocabulary
- * (Placeholder for future implementation)
  */
 export async function askAITutor(
   question: string,
-  context?: { word?: string; difficulty?: string }
+  context?: { word?: string; difficulty?: string },
+  conversationHistory?: Array<{ role: 'user' | 'assistant'; content: string }>
 ): Promise<AIResponse<{ answer: string }>> {
-  // TODO: Implement AI tutor endpoint
-  return {
-    success: false,
-    error: 'AI tutor not yet implemented',
-  };
+  try {
+    const request: AITutorRequest = {
+      question,
+      context,
+      conversationHistory,
+    };
+
+    const response = await fetch('/api/ai-tutor', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(request),
+    });
+
+    if (!response.ok) {
+      throw new Error(`API returned ${response.status}`);
+    }
+
+    const result = await response.json();
+    return result;
+  } catch (error: any) {
+    console.error('AI Tutor API error:', error);
+    return {
+      success: false,
+      error: error.message || 'Failed to get AI tutor response',
+    };
+  }
 }
 
 /**
@@ -75,12 +107,76 @@ export async function askAITutor(
  * (Placeholder for future implementation)
  */
 export async function getPronunciationTips(
-  word: string,
-  userAttempt?: string
+  _word: string,
+  _userAttempt?: string
 ): Promise<AIResponse<{ tips: string[] }>> {
   // TODO: Implement pronunciation tips endpoint
   return {
     success: false,
     error: 'Pronunciation tips not yet implemented',
   };
+}
+
+interface PronunciationScoringRequest {
+  targetText: string;
+  transcribedText: string;
+  difficulty?: string;
+}
+
+interface ScoringResult {
+  score: number;
+  feedback: string;
+  strengths: string[];
+  improvements: string[];
+  transcription: string;
+  targetText: string;
+}
+
+/**
+ * Get AI-powered pronunciation scoring
+ */
+export async function getPronunciationScore(
+  targetText: string,
+  transcribedText: string,
+  difficulty: string = 'normal'
+): Promise<ScoringResult> {
+  try {
+    const request: PronunciationScoringRequest = {
+      targetText,
+      transcribedText,
+      difficulty,
+    };
+
+    const response = await fetch('/api/pronunciation-score', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(request),
+    });
+
+    if (!response.ok) {
+      throw new Error(`API returned ${response.status}`);
+    }
+
+    const result = await response.json();
+
+    if (!result.success) {
+      throw new Error(result.error || 'Failed to score pronunciation');
+    }
+
+    return result.data;
+  } catch (error: any) {
+    console.error('Pronunciation scoring API error:', error);
+
+    // Return fallback result
+    return {
+      score: 0,
+      feedback: 'Unable to analyze pronunciation at this time. Please try again.',
+      strengths: [],
+      improvements: ['Try again when the service is available'],
+      transcription: transcribedText,
+      targetText,
+    };
+  }
 }

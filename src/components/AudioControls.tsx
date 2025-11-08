@@ -18,7 +18,7 @@ import {
 import { useAppStore } from '../ts/stores';
 
 const AudioControls: React.FC = () => {
-  const { audio, settings } = useAppStore();
+  const { audio } = useAppStore();
 
   return (
     <Card size="3" className="audio-controls">
@@ -126,7 +126,7 @@ const AudioControls: React.FC = () => {
             </Flex>
             <Slider
               value={[audio.playbackSpeed]}
-              onValueChange={([speed]) => audio.setSpeed(speed)}
+              onValueChange={([speed]) => audio.setSpeed(speed || 1.0)}
               min={0.5}
               max={2.0}
               step={0.1}
@@ -146,7 +146,7 @@ const AudioControls: React.FC = () => {
             </Flex>
             <Slider
               value={[audio.volume]}
-              onValueChange={([vol]) => audio.setVolume(vol)}
+              onValueChange={([vol]) => audio.setVolume(vol || 1.0)}
               min={0}
               max={1}
               step={0.01}

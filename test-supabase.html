@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supabase Integration Test - PTE Pronunciation Trainer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #666;
+        }
+
+        .test-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .test-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .test-card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .test-card h3 {
+            color: #764ba2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .status {
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .status.info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+
+        .status.warning {
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+
+        .log {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            max-height: 300px;
+            overflow-y: auto;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 12px;
+            line-height: 1.5;
+            margin-top: 15px;
+        }
+
+        .log-entry {
+            margin-bottom: 5px;
+            padding: 5px;
+            border-left: 3px solid #667eea;
+            padding-left: 10px;
+        }
+
+        .log-entry.success {
+            border-left-color: #28a745;
+            background: #d4edda;
+        }
+
+        .log-entry.error {
+            border-left-color: #dc3545;
+            background: #f8d7da;
+        }
+
+        .user-info {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+
+        .user-info p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .user-info strong {
+            color: #667eea;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧪 Supabase Integration Test Suite</h1>
+            <p>Testing authentication, progress sync, and settings sync for PTE Pronunciation Trainer</p>
+            <div id="config-status" class="status info" style="margin-top: 15px;">
+                <strong>Configuration Status:</strong> Checking...
+            </div>
+        </div>
+
+        <div class="test-grid">
+            <!-- Authentication Tests -->
+            <div class="test-card">
+                <h2>🔐 Authentication</h2>
+
+                <div id="auth-status" class="status info">
+                    Not authenticated
+                </div>
+
+                <div id="sign-up-section">
+                    <h3>Sign Up</h3>
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" placeholder="your@email.com" value="test@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" placeholder="Min 6 characters" value="testpassword123">
+                    </div>
+                    <button id="signup-btn">Sign Up</button>
+                </div>
+
+                <div id="sign-in-section">
+                    <h3>Sign In</h3>
+                    <div class="form-group">
+                        <label for="signin-email">Email</label>
+                        <input type="email" id="signin-email" placeholder="your@email.com" value="test@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="signin-password">Password</label>
+                        <input type="password" id="signin-password" placeholder="Your password" value="testpassword123">
+                    </div>
+                    <button id="signin-btn">Sign In</button>
+                </div>
+
+                <div id="user-info" class="user-info hidden">
+                    <strong>User Information:</strong>
+                    <p><strong>Email:</strong> <span id="user-email"></span></p>
+                    <p><strong>ID:</strong> <span id="user-id"></span></p>
+                    <button id="signout-btn">Sign Out</button>
+                </div>
+            </div>
+
+            <!-- Progress Sync Tests -->
+            <div class="test-card">
+                <h2>📊 Progress Sync</h2>
+
+                <div id="progress-status" class="status warning">
+                    Sign in to test progress sync
+                </div>
+
+                <div id="progress-test-section" class="hidden">
+                    <h3>Save Progress</h3>
+                    <div class="form-group">
+                        <label for="dataset-id">Dataset ID</label>
+                        <input type="text" id="dataset-id" value="pte-beginner">
+                    </div>
+                    <div class="form-group">
+                        <label for="current-index">Current Index</label>
+                        <input type="number" id="current-index" value="42">
+                    </div>
+                    <div class="form-group">
+                        <label for="completed-items">Completed Items</label>
+                        <input type="number" id="completed-items" value="35">
+                    </div>
+                    <button id="save-progress-btn">Save Progress</button>
+                    <button id="load-progress-btn">Load Progress</button>
+
+                    <div id="progress-data" class="user-info hidden" style="margin-top: 15px;">
+                        <strong>Loaded Progress:</strong>
+                        <p><strong>Dataset:</strong> <span id="progress-dataset"></span></p>
+                        <p><strong>Current Index:</strong> <span id="progress-index"></span></p>
+                        <p><strong>Completed:</strong> <span id="progress-completed"></span></p>
+                        <p><strong>Total:</strong> <span id="progress-total"></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Settings Sync Tests -->
+            <div class="test-card">
+                <h2>⚙️ Settings Sync</h2>
+
+                <div id="settings-status" class="status warning">
+                    Sign in to test settings sync
+                </div>
+
+                <div id="settings-test-section" class="hidden">
+                    <h3>Save Settings</h3>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="auto-play-next" checked> Auto-play next
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="show-phonetic" checked> Show phonetic
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="tts-rate">TTS Rate</label>
+                        <input type="range" id="tts-rate" min="0.5" max="2.0" step="0.1" value="0.9">
+                        <span id="tts-rate-value">0.9</span>
+                    </div>
+                    <button id="save-settings-btn">Save Settings</button>
+                    <button id="load-settings-btn">Load Settings</button>
+
+                    <div id="settings-data" class="user-info hidden" style="margin-top: 15px;">
+                        <strong>Loaded Settings:</strong>
+                        <p><strong>Auto-play:</strong> <span id="setting-autoplay"></span></p>
+                        <p><strong>Show Phonetic:</strong> <span id="setting-phonetic"></span></p>
+                        <p><strong>TTS Rate:</strong> <span id="setting-rate"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity Log -->
+        <div class="test-card">
+            <h2>📋 Activity Log</h2>
+            <div id="activity-log" class="log">
+                <div class="log-entry">Ready to test Supabase integration...</div>
+            </div>
+            <button id="clear-log-btn" style="margin-top: 10px;">Clear Log</button>
+        </div>
+    </div>
+
+    <!-- Load Supabase SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script type="module">
+        // Initialize Supabase client
+        const { createClient } = supabase;
+
+        // Load environment variables (in production, use .env)
+        const SUPABASE_URL = 'https://kopzyjpniqqsxefteyfx.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtvcHp5anBuaXFxc3hlZnRleWZ4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI1NzkxMzEsImV4cCI6MjA3ODE1NTEzMX0.7rGy0aL97xJL5aooz4qGIraqLM0jlXtFkRJn1ZVOPXQ';
+
+        const client = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+            auth: {
+                autoRefreshToken: true,
+                persistSession: true,
+                detectSessionInUrl: true
+            }
+        });
+
+        // Log helper
+        function log(message, type = 'info') {
+            const logEl = document.getElementById('activity-log');
+            const entry = document.createElement('div');
+            entry.className = `log-entry ${type}`;
+            entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            logEl.appendChild(entry);
+            logEl.scrollTop = logEl.scrollHeight;
+        }
+
+        // Check configuration
+        function checkConfig() {
+            const statusEl = document.getElementById('config-status');
+            if (SUPABASE_URL && SUPABASE_ANON_KEY) {
+                statusEl.className = 'status success';
+                statusEl.innerHTML = '<strong>✅ Configuration OK:</strong> Supabase client initialized successfully';
+                log('Supabase configuration valid', 'success');
+            } else {
+                statusEl.className = 'status error';
+                statusEl.innerHTML = '<strong>❌ Configuration Error:</strong> Missing SUPABASE_URL or SUPABASE_ANON_KEY';
+                log('Supabase configuration missing', 'error');
+            }
+        }
+
+        // Check auth status
+        async function checkAuthStatus() {
+            const { data: { session } } = await client.auth.getSession();
+            if (session) {
+                showAuthenticatedState(session.user);
+                log(`User authenticated: ${session.user.email}`, 'success');
+            } else {
+                showUnauthenticatedState();
+                log('No active session');
+            }
+        }
+
+        // Show authenticated state
+        function showAuthenticatedState(user) {
+            document.getElementById('auth-status').className = 'status success';
+            document.getElementById('auth-status').textContent = `✅ Authenticated as ${user.email}`;
+
+            document.getElementById('sign-up-section').classList.add('hidden');
+            document.getElementById('sign-in-section').classList.add('hidden');
+            document.getElementById('user-info').classList.remove('hidden');
+            document.getElementById('user-email').textContent = user.email;
+            document.getElementById('user-id').textContent = user.id;
+
+            document.getElementById('progress-test-section').classList.remove('hidden');
+            document.getElementById('progress-status').className = 'status success';
+            document.getElementById('progress-status').textContent = '✅ Ready to sync progress';
+
+            document.getElementById('settings-test-section').classList.remove('hidden');
+            document.getElementById('settings-status').className = 'status success';
+            document.getElementById('settings-status').textContent = '✅ Ready to sync settings';
+        }
+
+        // Show unauthenticated state
+        function showUnauthenticatedState() {
+            document.getElementById('auth-status').className = 'status info';
+            document.getElementById('auth-status').textContent = 'Not authenticated';
+
+            document.getElementById('sign-up-section').classList.remove('hidden');
+            document.getElementById('sign-in-section').classList.remove('hidden');
+            document.getElementById('user-info').classList.add('hidden');
+
+            document.getElementById('progress-test-section').classList.add('hidden');
+            document.getElementById('progress-status').className = 'status warning';
+            document.getElementById('progress-status').textContent = 'Sign in to test progress sync';
+
+            document.getElementById('settings-test-section').classList.add('hidden');
+            document.getElementById('settings-status').className = 'status warning';
+            document.getElementById('settings-status').textContent = 'Sign in to test settings sync';
+        }
+
+        // Sign up
+        document.getElementById('signup-btn').addEventListener('click', async () => {
+            const email = document.getElementById('signup-email').value;
+            const password = document.getElementById('signup-password').value;
+
+            log(`Attempting sign up for ${email}...`);
+
+            const { data, error } = await client.auth.signUp({
+                email,
+                password
+            });
+
+            if (error) {
+                log(`Sign up error: ${error.message}`, 'error');
+                document.getElementById('auth-status').className = 'status error';
+                document.getElementById('auth-status').textContent = `❌ Error: ${error.message}`;
+            } else {
+                log(`Sign up successful! Check ${email} for confirmation`, 'success');
+                document.getElementById('auth-status').className = 'status success';
+                document.getElementById('auth-status').textContent = `✅ Sign up successful! Check your email to confirm.`;
+            }
+        });
+
+        // Sign in
+        document.getElementById('signin-btn').addEventListener('click', async () => {
+            const email = document.getElementById('signin-email').value;
+            const password = document.getElementById('signin-password').value;
+
+            log(`Attempting sign in for ${email}...`);
+
+            const { data, error } = await client.auth.signInWithPassword({
+                email,
+                password
+            });
+
+            if (error) {
+                log(`Sign in error: ${error.message}`, 'error');
+                document.getElementById('auth-status').className = 'status error';
+                document.getElementById('auth-status').textContent = `❌ Error: ${error.message}`;
+            } else {
+                log(`Sign in successful for ${email}`, 'success');
+                showAuthenticatedState(data.user);
+            }
+        });
+
+        // Sign out
+        document.getElementById('signout-btn').addEventListener('click', async () => {
+            log('Signing out...');
+
+            const { error } = await client.auth.signOut();
+
+            if (error) {
+                log(`Sign out error: ${error.message}`, 'error');
+            } else {
+                log('Sign out successful', 'success');
+                showUnauthenticatedState();
+            }
+        });
+
+        // Save progress
+        document.getElementById('save-progress-btn').addEventListener('click', async () => {
+            const { data: { user } } = await client.auth.getUser();
+            if (!user) {
+                log('Must be authenticated to save progress', 'error');
+                return;
+            }
+
+            const datasetId = document.getElementById('dataset-id').value;
+            const currentIndex = parseInt(document.getElementById('current-index').value);
+            const completedItems = parseInt(document.getElementById('completed-items').value);
+
+            log(`Saving progress for ${datasetId}...`);
+
+            const { data, error } = await client
+                .from('user_progress')
+                .upsert({
+                    user_id: user.id,
+                    dataset_type: 'vocabulary',
+                    dataset_id: datasetId,
+                    current_index: currentIndex,
+                    total_items: 100, // Example
+                    completed_items: completedItems,
+                    last_studied_at: new Date().toISOString()
+                }, {
+                    onConflict: 'user_id,dataset_id'
+                });
+
+            if (error) {
+                log(`Save progress error: ${error.message}`, 'error');
+            } else {
+                log(`Progress saved successfully for ${datasetId}`, 'success');
+                document.getElementById('progress-status').className = 'status success';
+                document.getElementById('progress-status').textContent = `✅ Progress saved at ${new Date().toLocaleTimeString()}`;
+            }
+        });
+
+        // Load progress
+        document.getElementById('load-progress-btn').addEventListener('click', async () => {
+            const { data: { user } } = await client.auth.getUser();
+            if (!user) {
+                log('Must be authenticated to load progress', 'error');
+                return;
+            }
+
+            const datasetId = document.getElementById('dataset-id').value;
+
+            log(`Loading progress for ${datasetId}...`);
+
+            const { data, error } = await client
+                .from('user_progress')
+                .select('*')
+                .eq('user_id', user.id)
+                .eq('dataset_id', datasetId)
+                .single();
+
+            if (error) {
+                log(`Load progress error: ${error.message}`, 'error');
+            } else if (data) {
+                log(`Progress loaded successfully for ${datasetId}`, 'success');
+                document.getElementById('progress-data').classList.remove('hidden');
+                document.getElementById('progress-dataset').textContent = data.dataset_id;
+                document.getElementById('progress-index').textContent = data.current_index;
+                document.getElementById('progress-completed').textContent = data.completed_items;
+                document.getElementById('progress-total').textContent = data.total_items;
+            } else {
+                log(`No progress found for ${datasetId}`, 'info');
+            }
+        });
+
+        // Save settings
+        document.getElementById('save-settings-btn').addEventListener('click', async () => {
+            const { data: { user } } = await client.auth.getUser();
+            if (!user) {
+                log('Must be authenticated to save settings', 'error');
+                return;
+            }
+
+            const autoPlayNext = document.getElementById('auto-play-next').checked;
+            const showPhonetic = document.getElementById('show-phonetic').checked;
+            const ttsRate = parseFloat(document.getElementById('tts-rate').value);
+
+            log('Saving settings...');
+
+            const { data, error } = await client
+                .from('user_settings')
+                .upsert({
+                    user_id: user.id,
+                    auto_play_next: autoPlayNext,
+                    show_phonetic: showPhonetic,
+                    tts_rate: ttsRate
+                }, {
+                    onConflict: 'user_id'
+                });
+
+            if (error) {
+                log(`Save settings error: ${error.message}`, 'error');
+            } else {
+                log('Settings saved successfully', 'success');
+                document.getElementById('settings-status').className = 'status success';
+                document.getElementById('settings-status').textContent = `✅ Settings saved at ${new Date().toLocaleTimeString()}`;
+            }
+        });
+
+        // Load settings
+        document.getElementById('load-settings-btn').addEventListener('click', async () => {
+            const { data: { user } } = await client.auth.getUser();
+            if (!user) {
+                log('Must be authenticated to load settings', 'error');
+                return;
+            }
+
+            log('Loading settings...');
+
+            const { data, error } = await client
+                .from('user_settings')
+                .select('*')
+                .eq('user_id', user.id)
+                .single();
+
+            if (error) {
+                log(`Load settings error: ${error.message}`, 'error');
+            } else if (data) {
+                log('Settings loaded successfully', 'success');
+                document.getElementById('settings-data').classList.remove('hidden');
+                document.getElementById('setting-autoplay').textContent = data.auto_play_next ? 'Yes' : 'No';
+                document.getElementById('setting-phonetic').textContent = data.show_phonetic ? 'Yes' : 'No';
+                document.getElementById('setting-rate').textContent = data.tts_rate;
+
+                // Update form
+                document.getElementById('auto-play-next').checked = data.auto_play_next;
+                document.getElementById('show-phonetic').checked = data.show_phonetic;
+                document.getElementById('tts-rate').value = data.tts_rate;
+                document.getElementById('tts-rate-value').textContent = data.tts_rate;
+            } else {
+                log('No settings found', 'info');
+            }
+        });
+
+        // TTS rate slider
+        document.getElementById('tts-rate').addEventListener('input', (e) => {
+            document.getElementById('tts-rate-value').textContent = e.target.value;
+        });
+
+        // Clear log
+        document.getElementById('clear-log-btn').addEventListener('click', () => {
+            document.getElementById('activity-log').innerHTML = '<div class="log-entry">Log cleared</div>';
+        });
+
+        // Initialize
+        checkConfig();
+        checkAuthStatus();
+
+        // Listen for auth changes
+        client.auth.onAuthStateChange((event, session) => {
+            log(`Auth event: ${event}`, 'info');
+            if (session) {
+                showAuthenticatedState(session.user);
+            } else {
+                showUnauthenticatedState();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,19 +1,23 @@
 /**
  * ProgressTracker - Type-safe learning progress and status updates
- * Displays current word/item position and emits progress events
+ * Displays current word/item position and updates Zustand store
  *
  * This is the TypeScript version of src/js/core/ProgressTracker.js
  * Provides type-safe progress tracking and status updates
+ *
+ * ARCHITECTURE: Zustand state management
+ * - Replaced EventBus emissions with Zustand store updates
+ * - Direct progress store actions for status/error/stats
  */
+import { useAppStore } from '../stores';
 /**
- * Type-safe Progress Tracker
- * Manages learning progress display and event emission
+ * Type-safe Progress Tracker with Zustand integration
+ * Manages learning progress display and Zustand store updates
  */
 export class ProgressTracker {
     currentIndex = 0;
-    config;
-    constructor(config) {
-        this.config = config || window.appConfig || null;
+    constructor(_config) {
+        // Config parameter kept for API compatibility but not used (Zustand handles state)
     }
     /**
      * Update progress display and emit progress event
@@ -84,19 +88,11 @@ export class ProgressTracker {
                 difficultyBadge.textContent = `${emoji} ${difficultyLabel}`;
             }
         }
-        // Emit progress event
-        const progressEvent = this.config.get('events.progress.updated') || 'progress:updated';
-        const eventBus = window.eventBus;
-        const progressData = {
-            currentIndex,
-            totalWords,
-            percentage: Math.round(((currentIndex + 1) / totalWords) * 100),
-            currentWord
-        };
-        eventBus.emit(progressEvent, progressData);
+        // Update progress store (replaces EventBus emission)
+        useAppStore.getState().progress.updateProgress(currentIndex, totalWords);
     }
     /**
-     * Update status text and emit status event
+     * Update status text (no Zustand store action needed - just DOM update)
      */
     updateStatus(status) {
         console.log(`[ProgressTracker] 📢 updateStatus called: "${status}"`);
@@ -105,29 +101,19 @@ export class ProgressTracker {
             progressElement.textContent = status;
             console.log(`[ProgressTracker] ✅ Set status to: "${status}"`);
         }
-        // Emit status event
-        const statusEvent = this.config.get('events.progress.status.updated') || 'progress:status:updated';
-        const eventBus = window.eventBus;
-        const statusData = { status };
-        eventBus.emit(statusEvent, statusData);
+        // Note: Status is just a temporary UI message, no store update needed
     }
     /**
-     * Show error message and emit error event
+     * Show error message via UI notification (Zustand version)
      */
     showError(message) {
         console.error(message);
         this.updateStatus(`Error: ${message}`);
-        // Emit error event
-        const errorEvent = this.config.get('events.progress.error') || 'progress:error';
-        const eventBus = window.eventBus;
-        const errorData = {
-            message,
-            timestamp: new Date().toISOString()
-        };
-        eventBus.emit(errorEvent, errorData);
+        // Show error notification via Zustand store (replaces EventBus emission)
+        useAppStore.getState().ui.showNotification(message, 'error');
     }
     /**
-     * Show learning statistics and emit stats event
+     * Show learning statistics (Zustand version)
      */
     showLearningStats(wordsCompleted, totalTime, accuracy = null) {
         let statsMessage = `📊 Session: ${wordsCompleted} words`;
@@ -138,16 +124,9 @@ export class ProgressTracker {
             statsMessage += ` (${accuracy}% accuracy)`;
         }
         this.updateStatus(statsMessage);
-        // Emit stats event
-        const statsEvent = this.config.get('events.progress.stats.updated') || 'progress:stats:updated';
-        const eventBus = window.eventBus;
-        const statsData = {
-            wordsCompleted,
-            totalTime,
-            accuracy,
-            timestamp: new Date().toISOString()
-        };
-        eventBus.emit(statsEvent, statsData);
+        // Update progress store with session stats (replaces EventBus emission)
+        // Note: These stats are already tracked in the progress store's session tracking
+        useAppStore.getState().progress.calculateAccuracy();
     }
     /**
      * Get current index

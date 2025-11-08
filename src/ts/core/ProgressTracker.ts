@@ -1,58 +1,27 @@
 /**
  * ProgressTracker - Type-safe learning progress and status updates
- * Displays current word/item position and emits progress events
+ * Displays current word/item position and updates Zustand store
  *
  * This is the TypeScript version of src/js/core/ProgressTracker.js
  * Provides type-safe progress tracking and status updates
+ *
+ * ARCHITECTURE: Zustand state management
+ * - Replaced EventBus emissions with Zustand store updates
+ * - Direct progress store actions for status/error/stats
  */
 
 import type { VocabularyTerm } from '../../types';
+import { useAppStore } from '../stores';
 
 /**
- * Progress update data
- */
-interface ProgressData {
-  currentIndex: number;
-  totalWords: number;
-  percentage: number;
-  currentWord: VocabularyTerm | null;
-}
-
-/**
- * Status update data
- */
-interface StatusData {
-  status: string;
-}
-
-/**
- * Error data
- */
-interface ErrorData {
-  message: string;
-  timestamp: string;
-}
-
-/**
- * Learning stats data
- */
-interface StatsData {
-  wordsCompleted: number;
-  totalTime: number;
-  accuracy: number | null;
-  timestamp: string;
-}
-
-/**
- * Type-safe Progress Tracker
- * Manages learning progress display and event emission
+ * Type-safe Progress Tracker with Zustand integration
+ * Manages learning progress display and Zustand store updates
  */
 export class ProgressTracker {
   private currentIndex: number = 0;
-  private config: any;
 
-  constructor(config?: any) {
-    this.config = config || (window as any).appConfig || null;
+  constructor(_config?: any) {
+    // Config parameter kept for API compatibility but not used (Zustand handles state)
   }
 
   /**
@@ -135,22 +104,12 @@ export class ProgressTracker {
       }
     }
 
-    // Emit progress event
-    const progressEvent = this.config.get('events.progress.updated') || 'progress:updated';
-    const eventBus = (window as any).eventBus;
-
-    const progressData: ProgressData = {
-      currentIndex,
-      totalWords,
-      percentage: Math.round(((currentIndex + 1) / totalWords) * 100),
-      currentWord
-    };
-
-    eventBus.emit(progressEvent, progressData);
+    // Update progress store (replaces EventBus emission)
+    useAppStore.getState().progress.updateProgress(currentIndex, totalWords);
   }
 
   /**
-   * Update status text and emit status event
+   * Update status text (no Zustand store action needed - just DOM update)
    */
   updateStatus(status: string): void {
     console.log(`[ProgressTracker] 📢 updateStatus called: "${status}"`);
@@ -161,35 +120,22 @@ export class ProgressTracker {
       console.log(`[ProgressTracker] ✅ Set status to: "${status}"`);
     }
 
-    // Emit status event
-    const statusEvent = this.config.get('events.progress.status.updated') || 'progress:status:updated';
-    const eventBus = (window as any).eventBus;
-
-    const statusData: StatusData = { status };
-    eventBus.emit(statusEvent, statusData);
+    // Note: Status is just a temporary UI message, no store update needed
   }
 
   /**
-   * Show error message and emit error event
+   * Show error message via UI notification (Zustand version)
    */
   showError(message: string): void {
     console.error(message);
     this.updateStatus(`Error: ${message}`);
 
-    // Emit error event
-    const errorEvent = this.config.get('events.progress.error') || 'progress:error';
-    const eventBus = (window as any).eventBus;
-
-    const errorData: ErrorData = {
-      message,
-      timestamp: new Date().toISOString()
-    };
-
-    eventBus.emit(errorEvent, errorData);
+    // Show error notification via Zustand store (replaces EventBus emission)
+    useAppStore.getState().ui.showNotification(message, 'error');
   }
 
   /**
-   * Show learning statistics and emit stats event
+   * Show learning statistics (Zustand version)
    */
   showLearningStats(wordsCompleted: number, totalTime: number, accuracy: number | null = null): void {
     let statsMessage = `📊 Session: ${wordsCompleted} words`;
@@ -204,18 +150,9 @@ export class ProgressTracker {
 
     this.updateStatus(statsMessage);
 
-    // Emit stats event
-    const statsEvent = this.config.get('events.progress.stats.updated') || 'progress:stats:updated';
-    const eventBus = (window as any).eventBus;
-
-    const statsData: StatsData = {
-      wordsCompleted,
-      totalTime,
-      accuracy,
-      timestamp: new Date().toISOString()
-    };
-
-    eventBus.emit(statsEvent, statsData);
+    // Update progress store with session stats (replaces EventBus emission)
+    // Note: These stats are already tracked in the progress store's session tracking
+    useAppStore.getState().progress.calculateAccuracy();
   }
 
   /**

@@ -1,37 +1,55 @@
-// Cache migration utility for updating old localStorage data
-class CacheMigration {
-    constructor() {
-        this.currentVersion = 5; // Version 5 forces clean initialization with new difficulty defaults
-        this.versionKey = 'cache-version';
-    }
-
-    // Check if migration is needed and perform it
+/**
+ * Cache Migration Utility
+ *
+ * Manages localStorage cache versioning and data migration
+ * Handles upgrading from old cache versions to new ones
+ */
+/**
+ * CacheMigration - Handles cache versioning and migration
+ */
+export class CacheMigration {
+    currentVersion = 5; // Version 5 forces clean initialization
+    versionKey = 'cache-version';
+    /**
+     * Check if migration is needed and perform it
+     * @param forceClear - Force clear all cache regardless of version
+     */
     checkAndMigrate(forceClear = false) {
-        const currentVersion = window.storage.getItem(this.versionKey) || 1;
-
+        const storage = window.storage;
+        if (!storage) {
+            console.warn('[CacheMigration] Storage not available');
+            return;
+        }
+        const currentVersion = storage.getItem(this.versionKey) || 1;
         if (forceClear || currentVersion < this.currentVersion) {
             if (forceClear) {
                 this.clearAllCache();
-            } else {
-                // Migration is handled by clearing and setting defaults
             }
-
             // Set default values for clean initialization
             this.setDefaultValues();
-            window.storage.setItem(this.versionKey, this.currentVersion);
+            storage.setItem(this.versionKey, this.currentVersion);
+            console.log(`[CacheMigration] Migrated from v${currentVersion} to v${this.currentVersion}`);
         }
     }
-
-    // Set default values for clean initialization
+    /**
+     * Set default values for clean initialization
+     */
     setDefaultValues() {
+        const settingsModule = window.settingsModule;
         // Use SettingsModule to set defaults if available
-        if (window.settingsModule) {
-            // Reset to defaults through SettingsModule
-            window.settingsModule.resetSettings();
-        } else {
+        if (settingsModule) {
+            settingsModule.resetSettings();
+            console.log('[CacheMigration] Reset settings via SettingsModule');
+        }
+        else {
             // Fallback: Set basic defaults from Config.js
-            console.log('ℹ️ SettingsModule not available - setting basic defaults');
-            const config = window.appConfig || new AppConfig();
+            console.log('[CacheMigration] ℹ️ SettingsModule not available - setting basic defaults');
+            const config = window.appConfig;
+            if (!config) {
+                console.warn('[CacheMigration] AppConfig not available');
+                return;
+            }
+            const storage = window.storage;
             const defaults = {
                 'category': 'all-categories',
                 'difficulty': config.get('data.defaults.difficulty') || 'all',
@@ -41,41 +59,71 @@ class CacheMigration {
                 'preferredVoice': config.get('data.defaults.voice') || 'auto',
                 'learningMode': config.get('data.defaults.learningMode') || 'pte-fib-listening'
             };
-
             Object.entries(defaults).forEach(([key, value]) => {
-                window.storage.setItem(key, value);
+                storage.setItem(key, value);
             });
         }
     }
-
-    // Clear all cache data (emergency reset)
+    /**
+     * Clear all cache data (emergency reset)
+     * @returns Number of items cleared
+     */
     clearAllCache() {
-        const clearedCount = window.storage.clear();
+        const storage = window.storage;
+        if (!storage) {
+            console.warn('[CacheMigration] Storage not available');
+            return 0;
+        }
+        const clearedCount = storage.clear();
+        console.log(`[CacheMigration] Cleared ${clearedCount} cache items`);
         return clearedCount;
     }
-
-    // Get current cache info
+    /**
+     * Get current cache information
+     */
     getCacheInfo() {
-        const info = {
-            version: window.storage.getItem(this.versionKey) || 1,
-            allKeys: window.storage.getAllKeys()
-        };
-
-        // Get current category from SettingsModule if available
-        if (window.settingsModule) {
-            const settings = window.settingsModule.exportSettings();
-            info.category = settings.category;
-        } else {
-            info.category = window.storage.getItem('category');
+        const storage = window.storage;
+        if (!storage) {
+            return {
+                version: 1,
+                allKeys: [],
+            };
         }
-
+        const info = {
+            version: storage.getItem(this.versionKey) || 1,
+            allKeys: storage.getAllKeys()
+        };
+        // Get current category from SettingsModule if available
+        const settingsModule = window.settingsModule;
+        if (settingsModule) {
+            const settings = settingsModule.exportSettings();
+            info.category = settings.category;
+        }
+        else {
+            info.category = storage.getItem('category');
+        }
         return info;
     }
+    /**
+     * Get current cache version
+     */
+    getCurrentVersion() {
+        return this.currentVersion;
+    }
+    /**
+     * Get stored cache version
+     */
+    getStoredVersion() {
+        const storage = window.storage;
+        return storage?.getItem(this.versionKey) || 1;
+    }
 }
-
-// Global cache migration instance
-// Create global instance
-const cacheMigration = new CacheMigration();
-
+// Export singleton instance
+export const cacheMigration = new CacheMigration();
+// Default export
+export default cacheMigration;
 // Expose as global reference for PTE app
-window.cacheMigration = cacheMigration;
+if (typeof window !== 'undefined') {
+    window.cacheMigration = cacheMigration;
+}
+//# sourceMappingURL=CacheMigration.js.map

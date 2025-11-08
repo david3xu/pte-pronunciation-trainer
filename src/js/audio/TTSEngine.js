@@ -1,159 +1,153 @@
-// TTSEngine - Text-to-speech synthesis functionality
-// ARCHITECTURE: Event-driven initialization
-// - No hard-coded settings defaults in constructor
-// - All settings (speechRate, targetRepeats) initialized via SettingsModule events
-// - SettingsModule emits 'setting:changed' events during loadSettings()
-// - This ensures single source of truth: Config.js → SettingsModule → Audio modules
-class TTSEngine {
+/**
+ * TTSEngine - Text-to-Speech Synthesis Engine
+ *
+ * Type-safe TTS engine with Web Speech API integration
+ * Features:
+ * - Event-driven initialization (no hardcoded defaults)
+ * - iOS background audio support
+ * - HTML5 Audio fallback
+ * - Voice selection and caching
+ * - Repeat modes for learning
+ * - Text cleaning and normalization
+ */
+/**
+ * TTSEngine - Type-safe text-to-speech engine
+ *
+ * ARCHITECTURE: Event-driven initialization
+ * - No hard-coded settings defaults in constructor
+ * - All settings (speechRate, targetRepeats) initialized via SettingsModule events
+ * - SettingsModule emits 'setting:changed' events during loadSettings()
+ * - This ensures single source of truth: Config.js → SettingsModule → Audio modules
+ */
+export class TTSEngine {
+    config;
+    currentRepeatCount = 0;
+    backgroundAudioEnabled = false;
+    // Initialize properties (will be set by SettingsModule events)
+    speechRate = null;
+    targetRepeats = null;
+    synth;
+    isSpeaking = false;
+    cachedVoice = null;
+    // Audio context for iOS background audio
+    audioContext;
+    audioContextInitialized = false;
+    backgroundAudioElement;
     constructor() {
         // Load configuration from centralized config
-        this.config = window.appConfig || new AppConfig();
-        this.currentRepeatCount = 0;
-        this.backgroundAudioEnabled = false; // Flag to prevent multiple sync registrations
-        
-        // Initialize properties (will be set by SettingsModule events)
-        this.speechRate = null; // Will be set by SettingsModule
-        this.targetRepeats = null; // Will be set by SettingsModule via AudioControls
-        
+        this.config = window.appConfig;
         this.synth = window.speechSynthesis;
-        this.currentUtterance = null;
-        this.isPaused = false;
-        this.isSpeaking = false;
-        this.currentVoice = null;
-        this.volume = 1.0;
-        
         // Initialize events first - don't start audio context yet
         this._attachEventListeners();
-
         // We'll initialize AudioContext on first user interaction
-        this.audioContextInitialized = false;
     }
-
     /**
      * Safely get current practice mode from SettingsModule or Config.js fallback
-     * @returns {string} Current practice mode
      */
     getPracticeMode() {
-        if (window.settingsModule && typeof window.settingsModule.get === 'function') {
-            return window.settingsModule.get('practiceMode') || this.config.get('data.defaults.practiceMode');
+        const settingsModule = window.settingsModule;
+        if (settingsModule && typeof settingsModule.get === 'function') {
+            return settingsModule.get('practiceMode') || this.config.get('data.defaults.practiceMode');
         }
         return this.config.get('data.defaults.practiceMode');
     }
-
     /**
      * Attach event listeners for settings changes
-     * @private
      */
     _attachEventListeners() {
         // Listen to standardized settings:changed event from Config.js
-        const settingsChangedEvent = window.appConfig?.get('events.settings.changed') || 'settings:changed';
-        window.eventBus.on(settingsChangedEvent, this._handleSettingChange.bind(this));
+        const settingsChangedEvent = this.config?.get('events.settings.changed') || 'settings:changed';
+        const eventBus = window.eventBus;
+        eventBus.on(settingsChangedEvent, this._handleSettingChange.bind(this));
     }
-
     /**
      * Handle setting changes from SettingsModule
-     * @private
      */
-    _handleSettingChange({key, value}) {
+    _handleSettingChange({ key, value }) {
         if (key === 'speed') {
             this.speechRate = parseFloat(value) || this.config.get('tts.speeds.normal');
             console.log(`[TTSEngine] Speed changed to ${this.speechRate}`);
-        } else if (key === 'voice') {
+        }
+        else if (key === 'voice') {
             // Reset voice cache when voice preference changes
             this.resetVoiceCache();
             console.log(`[TTSEngine] Voice preference changed to ${value}`);
-        } else if (key === 'repeat') {
+        }
+        else if (key === 'repeat') {
             // Handle repeat mode from SettingsModule (set by AudioControls)
             // Note: AudioControls converts mode to targetRepeats and calls setRepeatMode
             // This listener is for potential direct repeat settings
         }
     }
-
     /**
      * HELPER: Add visual feedback and emit speaking started event
-     * (Eliminates duplicate visual feedback code)
-     * @private
      */
     _addSpeakingFeedback(elementId, eventData) {
         const element = document.getElementById(elementId);
         if (element) {
             element.classList.add('speaking');
         }
-
         // Only emit tts:speaking:started event for vocabulary mode
         // Practice modes (RS/ASQ/WFD) handle their own display logic
         const currentMode = this.getPracticeMode();
         const isVocabularyMode = currentMode === 'vocabulary';
-
         if (isVocabularyMode) {
             // Vocabulary mode: emit event with word data for display
             const payload = { ...eventData };
-            const ttsSpeakingStartedEvent = window.appConfig.get('events.tts.speaking.started');
-            window.eventBus.emit(ttsSpeakingStartedEvent, payload);
+            const ttsSpeakingStartedEvent = this.config.get('events.tts.speaking.started');
+            const eventBus = window.eventBus;
+            eventBus.emit(ttsSpeakingStartedEvent, payload);
         }
         // Practice modes don't need this event - they use displayContent() directly
-        
         return element;
     }
-
     /**
      * HELPER: Remove visual feedback and emit speaking completed event
-     * (Eliminates duplicate visual feedback code)
-     * @private
      */
     _removeSpeakingFeedback(element, eventData) {
         if (element) {
             element.classList.remove('speaking');
         }
         // Emit standardized event from Config.js
-        const ttsSpeakingCompletedEvent = window.appConfig.get('events.tts.speaking.completed');
-        window.eventBus.emit(ttsSpeakingCompletedEvent, eventData);
+        const ttsSpeakingCompletedEvent = this.config.get('events.tts.speaking.completed');
+        const eventBus = window.eventBus;
+        eventBus.emit(ttsSpeakingCompletedEvent, eventData);
     }
-
     /**
      * SIMPLIFIED: Pronounce any text (sentence, question, word)
      * Universal method for RS/ASQ/WFD modes - reuses existing TTS infrastructure
-     * @param {string} text - Text to pronounce
-     * @param {string} lang - Language code (defaults to config.tts.language.default)
-     * @param {number} rate - Speech rate (uses user's speed setting if not specified)
      */
     async pronounceText(text, lang = null, rate = null) {
         if (!text) {
-            window.progressTracker.showError('No text to pronounce');
+            const progressTracker = window.progressTracker;
+            progressTracker.showError('No text to pronounce');
             return;
         }
-
         try {
             const cleanText = this.cleanTextForTTS(text);
             // Use custom rate if provided, otherwise use user's speed setting, fallback to normal
             const speechRate = rate || this.speechRate || this.config.get('tts.speeds.normal');
-
             // Add visual feedback to main display element
             const element = this._addSpeakingFeedback('englishWord', {
                 text: text,
                 mode: this.getPracticeMode(),
                 rate: speechRate
             });
-
             // Speak the text
             await this.speak(cleanText, lang, speechRate);
-
             // Remove visual feedback
             this._removeSpeakingFeedback(element, {
                 text: text,
                 mode: this.getPracticeMode()
             });
-
-        } catch (error) {
+        }
+        catch (error) {
             console.warn('Speech error:', error);
             this.showTTSFallback(text);
         }
     }
-
     /**
      * Pronounce a vocabulary word with repetition support
-     * @param {Object} word - Word object with english, pronunciation, etc.
-     * @param {number} repeatIndex - Current repetition index (0, 1, 2...)
      */
     async pronounceWord(word, repeatIndex = 0) {
         // Safety check: reject undefined/null word objects
@@ -161,145 +155,122 @@ class TTSEngine {
             console.error('[TTSEngine] ❌ Invalid word object:', word);
             throw new Error('Cannot pronounce undefined or invalid word');
         }
-        
         if (this.isSpeaking) {
             console.warn('[TTSEngine] ⚠️ Already speaking, skipping...');
             return;
         }
-
         try {
-            this.isSpeaking = true; // Mark as speaking
+            this.isSpeaking = true;
             this.currentRepeatCount = repeatIndex;
-
             // Clean text for TTS
             const cleanText = this.cleanTextForTTS(word.english);
-
-            const pronunciationRate = this.speechRate;
-
+            const pronunciationRate = this.speechRate || this.config.get('tts.speeds.normal');
             // Add visual feedback during speech
             const englishWordElement = document.getElementById('englishWord');
             const exampleElement = document.getElementById('exampleSentence');
-
             if (englishWordElement) {
                 englishWordElement.classList.add('speaking');
             }
-
             // Emit speaking start event (standardized from Config.js)
-            const ttsSpeakingStartedEvent = window.appConfig.get('events.tts.speaking.started');
-            window.eventBus.emit(ttsSpeakingStartedEvent, {
-                word: word,  // Send full word object, not just word.english
+            const ttsSpeakingStartedEvent = this.config.get('events.tts.speaking.started');
+            const eventBus = window.eventBus;
+            eventBus.emit(ttsSpeakingStartedEvent, {
+                word: word, // Send full word object, not just word.english
                 repeatCount: this.currentRepeatCount,
                 rate: pronunciationRate
             });
-
             console.log(`[TTSEngine] 🔊 Calling speak() for: "${cleanText}"`);
             // Speak the term first
             await this.speak(cleanText, this.config.get('tts.language.default'), pronunciationRate);
             console.log(`[TTSEngine] ✅ speak() completed for: "${cleanText}"`);
-
-
-            // For vocabulary with examples, optionally speak the example sentence based on repeat mode
+            // For vocabulary with examples, optionally speak the example sentence
             // Only speak example on the LAST repetition to avoid: term+example+term+example
             const hasExample = (word.examples && word.examples.length > 0) || word.example;
-            const isLastRepetition = this.currentRepeatCount === (this.targetRepeats - 1);
-            const shouldSpeakExample = window.audioControls && isLastRepetition &&
-                (window.audioControls.repeatMode === 'intensive' || window.audioControls.repeatMode === 'loop');
-
+            const isLastRepetition = this.currentRepeatCount === ((this.targetRepeats || 1) - 1);
+            const audioControls = window.audioControls;
+            const shouldSpeakExample = audioControls && isLastRepetition &&
+                (audioControls.repeatMode === 'intensive' || audioControls.repeatMode === 'loop');
             if (hasExample && shouldSpeakExample && exampleElement && exampleElement.style.display !== 'none') {
                 // Add small pause between term and sentence
                 await new Promise(resolve => setTimeout(resolve, this.config.get('tts.delays.voiceReady')));
-
                 // Highlight example sentence during speech
                 if (exampleElement) {
                     exampleElement.classList.add('speaking');
                 }
-
                 // Get example text from either format
                 let rawExample;
                 if (word.example) {
-                    // Conversation vocabulary format
                     rawExample = word.example;
-                } else if (word.examples && word.examples.length > 0) {
-                    // Specialized vocabulary format
+                }
+                else if (word.examples && word.examples.length > 0) {
                     rawExample = word.examples[0].text;
                 }
-
                 if (rawExample) {
                     const cleanExample = this.cleanExampleSentenceForTTS(rawExample);
-
-                    // Speak example sentence at normal rate
-                    await this.speak(cleanExample, this.config.get('tts.language.default'), this.speechRate);
+                    await this.speak(cleanExample, this.config.get('tts.language.default'), this.speechRate || this.config.get('tts.speeds.normal'));
                 }
-
                 // Remove example highlighting
                 if (exampleElement) {
                     exampleElement.classList.remove('speaking');
                 }
             }
-
             // Remove visual feedback
             if (englishWordElement) {
                 englishWordElement.classList.remove('speaking');
             }
-
             // Emit speaking completed event (standardized from Config.js)
-            const ttsSpeakingCompletedEvent = window.appConfig.get('events.tts.speaking.completed');
-            window.eventBus.emit(ttsSpeakingCompletedEvent, {
+            const ttsSpeakingCompletedEvent = this.config.get('events.tts.speaking.completed');
+            eventBus.emit(ttsSpeakingCompletedEvent, {
                 word: word.english,
                 repeatCount: this.currentRepeatCount
             });
-
-        } catch (error) {
+        }
+        catch (error) {
             console.warn('Speech error:', error);
-            // Don't show error to user - fallback is already handled in speak()
             this.showTTSFallback(word.english);
-        } finally {
-            this.isSpeaking = false; // Always clear flag when done
+        }
+        finally {
+            this.isSpeaking = false;
         }
     }
-
+    /**
+     * Core speak method - uses Web Speech API
+     */
     speak(text, lang = null, customRate = null) {
         // Use configured language if not specified
         const language = lang || this.config.get('tts.language.default');
-        
         console.log(`[TTSEngine] 🎤 speak() called with: "${text}", lang: ${language}, rate: ${customRate}`);
-
         // Initialize AudioContext on first speech attempt (user interaction)
         if (!this.audioContextInitialized) {
             this.enableBackgroundAudio();
             this.audioContextInitialized = true;
         }
-
-        return new Promise((resolve, _reject) => {
+        return new Promise((resolve) => {
             // Check if we're on iOS and should use HTML5 Audio fallback
-            const isIOS = window.app && window.app.isMobileDevice &&
-                /iPad|iPhone|iPod/.test(navigator.userAgent);
-
+            const app = window.app;
+            const isIOS = app && app.isMobileDevice && /iPad|iPhone|iPod/.test(navigator.userAgent);
             if (isIOS && this.shouldUseHTML5Audio()) {
                 console.log('[TTSEngine] Using HTML5 Audio fallback for iOS');
-                return this.speakWithHTML5Audio(text, language, customRate).then(resolve).catch(resolve);
+                this.speakWithHTML5Audio(text, language, customRate).then(resolve).catch(resolve);
+                return;
             }
-
             if (!('speechSynthesis' in window)) {
                 console.error('[TTSEngine] ❌ speechSynthesis not available in browser');
                 this.showTTSFallback(text);
                 resolve();
                 return;
             }
-
             const utterance = new SpeechSynthesisUtterance(text);
             utterance.lang = language;
-            // Use custom rate if provided, otherwise use default speechRate
-            utterance.rate = customRate !== null ? customRate : this.speechRate;
+            utterance.rate = customRate !== null ? customRate : (this.speechRate || this.config.get('tts.speeds.normal'));
             utterance.volume = 1.0;
             utterance.pitch = 1.0;
-
-            // Try to find the best voice match for user's practice - ONLY MALE VOICES
-            // Re-check voices if cache is empty (voices may not have been ready initially)
-            if (!this.cachedVoice || speechSynthesis.getVoices().length > 0) {
-                const voices = speechSynthesis.getVoices();
+            // Try to find the best voice match
+            if (!this.cachedVoice || this.synth.getVoices().length > 0) {
+                const voices = this.synth.getVoices();
                 if (voices.length > 0) {
-                    this.cachedVoice = window.voiceSelector ? window.voiceSelector.selectBestVoiceMatch(voices, lang) : null;
+                    const voiceSelector = window.voiceSelector;
+                    this.cachedVoice = voiceSelector ? voiceSelector.selectBestVoiceMatch(voices, lang) : null;
                     if (this.cachedVoice) {
                         console.log(`[TTSEngine] Selected voice: ${this.cachedVoice.name}`);
                     }
@@ -308,31 +279,33 @@ class TTSEngine {
             const voice = this.cachedVoice;
             if (voice) {
                 utterance.voice = voice;
-            } else {
+            }
+            else {
                 console.warn('[TTSEngine] ⚠️ No cached voice, trying fallback...');
-                // Try to get voices one more time before failing
-                const voices = speechSynthesis.getVoices();
+                const voices = this.synth.getVoices();
                 console.log(`[TTSEngine] Fallback check - voices available: ${voices.length}`);
                 if (voices.length > 0) {
-                    const fallbackVoice = window.voiceSelector ? window.voiceSelector.selectBestVoiceMatch(voices, lang) : voices[0];
+                    const voiceSelector = window.voiceSelector;
+                    const fallbackVoice = voiceSelector ? voiceSelector.selectBestVoiceMatch(voices, lang) : voices[0];
                     if (fallbackVoice) {
                         console.warn('[TTSEngine] Using fallback voice:', fallbackVoice.name);
                         utterance.voice = fallbackVoice;
-                        this.cachedVoice = fallbackVoice; // Cache for next time
-                    } else {
+                        this.cachedVoice = fallbackVoice;
+                    }
+                    else {
                         console.error('No voice available for text-to-speech');
                         this.showTTSFallback(text);
                         resolve();
                         return;
                     }
-                } else {
+                }
+                else {
                     console.error('No voices loaded yet - speech synthesis unavailable');
                     this.showTTSFallback(text);
                     resolve();
                     return;
                 }
             }
-
             utterance.onend = () => {
                 console.log(`[TTSEngine] ✅ Speech ended for: "${text}"`);
                 resolve();
@@ -340,97 +313,88 @@ class TTSEngine {
             utterance.onerror = (error) => {
                 // 'interrupted' is normal when user clicks rapidly or auto-advances
                 if (error.error === 'interrupted') {
-                    resolve(); // Just continue, this is expected
+                    resolve();
                     return;
                 }
-
                 console.warn('TTS Error:', error.error);
                 // Try fallback without voice for other errors
                 if (voice && utterance.voice && error.error !== 'not-allowed') {
                     utterance.voice = null;
-                    speechSynthesis.speak(utterance);
-                } else {
+                    this.synth.speak(utterance);
+                }
+                else {
                     this.showTTSFallback(text);
                     resolve();
                 }
             };
-
             console.log(`[TTSEngine] 🚀 Calling speechSynthesis.speak() for: "${text}"`);
-            speechSynthesis.speak(utterance);
+            this.synth.speak(utterance);
         });
     }
-
+    /**
+     * Check if should use HTML5 Audio fallback
+     */
     shouldUseHTML5Audio() {
-        // Use HTML5 Audio for background scenarios or when speech synthesis fails
-        return document.hidden || document.visibilityState === 'hidden' ||
+        return document.hidden ||
+            document.visibilityState === 'hidden' ||
             !('speechSynthesis' in window) ||
-            speechSynthesis.speaking === false;
+            this.synth.speaking === false;
     }
-
+    /**
+     * Speak with HTML5 Audio (iOS background fallback)
+     */
     speakWithHTML5Audio(text, lang = null, customRate = null) {
-        // Use configured language if not specified
         const language = lang || this.config.get('tts.language.default');
-        return new Promise((resolve, _reject) => {
-            // For iOS background audio, use HTML5 Audio fallback
-
-            // Create audio element for background playback
-            const audio = document.createElement('audio');
-            audio.preload = 'auto';
-            audio.volume = 1.0;
-
-            // Use Web Speech API to generate audio, then play it via HTML5 Audio
+        return new Promise((resolve) => {
             if ('speechSynthesis' in window) {
-                // Create utterance and capture audio
                 const utterance = new SpeechSynthesisUtterance(text);
                 utterance.lang = language;
-                utterance.rate = customRate !== null ? customRate : this.speechRate;
+                utterance.rate = customRate !== null ? customRate : (this.speechRate || this.config.get('tts.speeds.normal'));
                 utterance.volume = 1.0;
                 utterance.pitch = 1.0;
-
-                // Try to find voice - use same cached voice for consistency
-                // Re-check if needed (same fix as main speak() method)
-                if (!this.cachedVoice || speechSynthesis.getVoices().length > 0) {
-                    const voices = speechSynthesis.getVoices();
+                // Try to find voice
+                if (!this.cachedVoice || this.synth.getVoices().length > 0) {
+                    const voices = this.synth.getVoices();
                     if (voices.length > 0) {
-                        this.cachedVoice = window.voiceSelector ? window.voiceSelector.selectBestVoiceMatch(voices, lang) : voices[0];
+                        const voiceSelector = window.voiceSelector;
+                        this.cachedVoice = voiceSelector ? voiceSelector.selectBestVoiceMatch(voices, lang) : voices[0];
                     }
                 }
                 const voice = this.cachedVoice;
                 if (voice) {
                     utterance.voice = voice;
                 }
-
-                // For iOS background, we'll use a different approach
                 utterance.onend = () => {
-                    // Keep audio session alive
                     if (this.backgroundAudioElement) {
                         this.startBackgroundAudio();
                     }
                     resolve();
                 };
-
                 utterance.onerror = () => resolve();
-
-                speechSynthesis.speak(utterance);
-            } else {
-                // Fallback to text display
+                this.synth.speak(utterance);
+            }
+            else {
                 this.showTTSFallback(text);
                 resolve();
             }
         });
     }
-
+    /**
+     * Show TTS fallback message
+     */
     showTTSFallback(text) {
-        window.progressTracker.updateStatus(`🔊 Please read aloud: "${text}"`);
+        const progressTracker = window.progressTracker;
+        progressTracker.updateStatus(`🔊 Please read aloud: "${text}"`);
         setTimeout(() => {
-            window.progressTracker.updateStatus('Text-to-speech not available in this browser');
+            progressTracker.updateStatus('Text-to-speech not available in this browser');
         }, this.config.get('tts.delays.resetTimeout'));
     }
-
+    /**
+     * Enable background audio for iOS
+     */
     enableBackgroundAudio() {
-        // Only register sync once (use flag to prevent multiple registrations)
+        // Only register sync once
         if (!this.backgroundAudioEnabled) {
-            // Enable background audio for iOS
             if ('serviceWorker' in navigator) {
                 navigator.serviceWorker.ready.then(registration => {
                     if (registration.sync) {
@@ -440,58 +404,55 @@ class TTSEngine {
             }
             this.backgroundAudioEnabled = true;
         }
-
         // Set up background audio context for iOS
-        if (typeof AudioContext !== 'undefined' || typeof webkitAudioContext !== 'undefined') {
-            const AudioContextClass = AudioContext || webkitAudioContext;
+        if (typeof AudioContext !== 'undefined' || typeof window.webkitAudioContext !== 'undefined') {
+            const AudioContextClass = AudioContext || window.webkitAudioContext;
             if (!this.audioContext) {
                 this.audioContext = new AudioContextClass();
             }
-
             // Resume audio context if suspended (iOS requirement)
             if (this.audioContext.state === 'suspended') {
                 this.audioContext.resume();
             }
         }
-
         // iOS-specific background audio setup
         this.setupIOSBackgroundAudio();
     }
-
+    /**
+     * Setup iOS background audio with silent audio element
+     */
     setupIOSBackgroundAudio() {
         // Create a silent audio element to keep audio session active
         if (!this.backgroundAudioElement) {
             this.backgroundAudioElement = document.createElement('audio');
             this.backgroundAudioElement.loop = true;
-            this.backgroundAudioElement.volume = 0.05; // Slightly louder to ensure it plays
+            this.backgroundAudioElement.volume = 0.05;
             this.backgroundAudioElement.preload = 'auto';
-            this.backgroundAudioElement.muted = false; // Ensure not muted
-            this.backgroundAudioElement.autoplay = false; // Manual control
-
+            this.backgroundAudioElement.muted = false;
+            this.backgroundAudioElement.autoplay = false;
             // Create a very short silent audio data URL (200ms of silence)
             const silentAudioData = 'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=';
             this.backgroundAudioElement.src = silentAudioData;
-
-            // Add to DOM (hidden) - wait for DOM to be ready
+            // Add to DOM (hidden)
             this.backgroundAudioElement.style.cssText = 'position:absolute;left:-9999px;width:1px;height:1px;';
-            this.backgroundAudioElement.setAttribute('playsinline', ''); // iOS requirement
-            this.backgroundAudioElement.setAttribute('webkit-playsinline', ''); // Older iOS
-
+            this.backgroundAudioElement.setAttribute('playsinline', '');
+            this.backgroundAudioElement.setAttribute('webkit-playsinline', '');
             // Ensure DOM is ready before appending
             if (document.body) {
                 document.body.appendChild(this.backgroundAudioElement);
-            } else {
+            }
+            else {
                 document.addEventListener('DOMContentLoaded', () => {
-                    document.body.appendChild(this.backgroundAudioElement);
-                    this.startBackgroundAudio();
+                    if (this.backgroundAudioElement) {
+                        document.body.appendChild(this.backgroundAudioElement);
+                        this.startBackgroundAudio();
+                    }
                 });
-                return; // Exit early, will start when DOM ready
+                return;
             }
         }
-
-        // Start playing silent audio to maintain audio session
+        // Start playing silent audio
         this.startBackgroundAudio();
-
         // Set up audio session for iOS
         if (navigator.mediaSession) {
             navigator.mediaSession.metadata = new MediaMetadata({
@@ -501,50 +462,45 @@ class TTSEngine {
             });
         }
     }
-
     /**
-     * Start background audio with proper error handling and retry
+     * Start background audio with proper error handling
      */
     startBackgroundAudio() {
-        if (!this.backgroundAudioElement) return;
-
+        if (!this.backgroundAudioElement)
+            return;
         const playPromise = this.backgroundAudioElement.play();
-
         if (playPromise !== undefined) {
             playPromise
                 .then(() => {
-                    console.log('[TTSEngine] ✅ Background audio started successfully');
-                })
-                .catch(error => {
-                    console.warn('[TTSEngine] ⚠️ Background audio failed to start:', error.message);
-
-                    // Retry after user interaction
-                    const retryPlay = () => {
-                        this.backgroundAudioElement.play()
-                            .then(() => {
-                                console.log('[TTSEngine] ✅ Background audio started on retry');
-                                // Remove listeners after success
-                                document.removeEventListener('click', retryPlay);
-                                document.removeEventListener('touchstart', retryPlay);
-                            })
-                            .catch(() => {
-                                // Silent fail on retry - will try again on next interaction
-                            });
-                    };
-
-                    // Browsers require user interaction before playing audio
-                    document.addEventListener('click', retryPlay, { once: true });
-                    document.addEventListener('touchstart', retryPlay, { once: true });
-                });
+                console.log('[TTSEngine] ✅ Background audio started successfully');
+            })
+                .catch((error) => {
+                console.warn('[TTSEngine] ⚠️ Background audio failed to start:', error.message);
+                // Retry after user interaction
+                const retryPlay = () => {
+                    this.backgroundAudioElement.play()
+                        .then(() => {
+                        console.log('[TTSEngine] ✅ Background audio started on retry');
+                        document.removeEventListener('click', retryPlay);
+                        document.removeEventListener('touchstart', retryPlay);
+                    })
+                        .catch(() => {
+                        // Silent fail on retry
+                    });
+                };
+                document.addEventListener('click', retryPlay, { once: true });
+                document.addEventListener('touchstart', retryPlay, { once: true });
+            });
         }
     }
-
+    /**
+     * Clean text for TTS (remove symbols, abbreviations)
+     */
     cleanTextForTTS(text) {
-        if (!text) return '';
-
+        if (!text)
+            return '';
         // Remove extra whitespace and normalize
         let cleanText = text.trim().replace(/\s+/g, ' ');
-
         // Handle common abbreviations and symbols
         cleanText = cleanText
             .replace(/\b&\b/g, 'and')
@@ -552,94 +508,94 @@ class TTSEngine {
             .replace(/\b#\b/g, 'number')
             .replace(/\b%\b/g, 'percent')
             .replace(/\b\+\b/g, 'plus')
-            .replace(/\b-\b/g, ' ') // Replace standalone hyphens with space
+            .replace(/\b-\b/g, ' ')
             .replace(/([a-z])([A-Z])/g, '$1 $2'); // Add space between camelCase
-
         return cleanText;
     }
-
+    /**
+     * Clean example sentence for TTS (remove speaker names, metadata)
+     */
     cleanExampleSentenceForTTS(rawSentence) {
-        // Remove speaker prefixes and conversation metadata for TTS
+        // Remove speaker prefixes and conversation metadata
         let cleaned = rawSentence
-            // Remove speaker names followed by colon (e.g., "Jenny:", "Officer:", "Doctor:")
             .replace(/^[A-Z][a-z]*\s*[：:]\s*/g, '')
-            // Remove numbered dialogue markers (e.g., "1. ", "2. ")
             .replace(/^\d+\.\s*/g, '')
-            // Remove text in parentheses (translations)
             .replace(/（[^）]*）/g, '')
             .replace(/\([^)]*\)/g, '')
-            // Remove markdown image references
             .replace(/\\n!\[Image\]/g, '')
-            // Remove conversation metadata phrases
             .replace(/- (Legal|Medical|Business|Immigration|Education) Briefing.*$/gi, '')
-            // Remove extra whitespace and clean up
             .replace(/\s+/g, ' ')
             .trim();
-
-        // If the sentence is too long for comfortable TTS, take the first complete sentence
+        // If sentence is too long, take first complete sentence
         if (cleaned.length > 120) {
             const sentences = cleaned.split(/[.!?]+/);
             if (sentences.length > 1 && sentences[0].length > 20 && sentences[0].length <= 120) {
                 cleaned = sentences[0] + '.';
-            } else {
+            }
+            else {
                 cleaned = cleaned.substring(0, 120) + '...';
             }
         }
-
-        // Apply general TTS cleaning
         return this.cleanTextForTTS(cleaned);
     }
-
-    // Deprecated method removed - use SettingsModule with events instead
-
+    /**
+     * Set repeat mode for word repetition
+     */
     setRepeatMode(targetRepeats) {
-        this.targetRepeats = parseInt(targetRepeats) || 1;
-        this.currentRepeatCount = 0; // Reset count
-
-        // Emit repeat mode change event (standardized from Config.js)
-        const ttsRepeatChangedEvent = window.appConfig.get('events.tts.repeat.changed');
-        window.eventBus.emit(ttsRepeatChangedEvent, {
+        this.targetRepeats = parseInt(targetRepeats.toString()) || 1;
+        this.currentRepeatCount = 0;
+        // Emit repeat mode change event
+        const ttsRepeatChangedEvent = this.config.get('events.tts.repeat.changed');
+        const eventBus = window.eventBus;
+        eventBus.emit(ttsRepeatChangedEvent, {
             targetRepeats: this.targetRepeats
         });
     }
-
+    /**
+     * Stop all speech
+     */
     stopSpeaking() {
         if ('speechSynthesis' in window) {
-            speechSynthesis.cancel();
+            this.synth.cancel();
         }
-
-        // Clear the speaking flag
         this.isSpeaking = false;
-
         // Remove visual feedback
         const englishWordElement = document.getElementById('englishWord');
         if (englishWordElement) {
             englishWordElement.classList.remove('speaking');
         }
-
-        // Emit stop event (standardized from Config.js)
-        const ttsStoppedEvent = window.appConfig.get('events.tts.speaking.stopped');
-        window.eventBus.emit(ttsStoppedEvent, {
+        // Emit stop event
+        const ttsStoppedEvent = this.config.get('events.tts.speaking.stopped');
+        const eventBus = window.eventBus;
+        eventBus.emit(ttsStoppedEvent, {
             timestamp: new Date().toISOString()
         });
     }
-
+    /**
+     * Get current repeat count
+     */
     getCurrentRepeatCount() {
         return this.currentRepeatCount;
     }
-
+    /**
+     * Get target repeats
+     */
     getTargetRepeats() {
-        // Return targetRepeats if set, otherwise default to 1
         return this.targetRepeats || 1;
     }
-
+    /**
+     * Reset voice cache (force re-selection)
+     */
     resetVoiceCache() {
         this.cachedVoice = null;
     }
 }
-
-// Global TTS engine instance
-const ttsEngine = new TTSEngine();
-
+// Export singleton instance
+export const ttsEngine = new TTSEngine();
+// Default export
+export default ttsEngine;
 // Expose as global reference for PTE app
-window.ttsEngine = ttsEngine;
+if (typeof window !== 'undefined') {
+    window.ttsEngine = ttsEngine;
+}
+//# sourceMappingURL=TTSEngine.js.map

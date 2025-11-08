@@ -1,0 +1,303 @@
+/**
+ * Configuration Type Definitions
+ *
+ * TypeScript types for the entire application configuration (Config.js)
+ * This is the single source of truth for all app settings.
+ */
+import type { VocabularyCategory, PracticeMode, Difficulty, DatasetRegistryEntry } from './dataset.types';
+/**
+ * Event payload types for type-safe event handling
+ */
+export interface EventPayloads {
+    'audio:autoplay:start': void;
+    'audio:autoplay:pause': void;
+    'audio:autoplay:resume': void;
+    'audio:autoplay:stop': void;
+    'audio:navigate:next': void;
+    'audio:navigate:prev': void;
+    'audio:repeat:toggle': void;
+    'audio:speed:change': {
+        speed: number;
+    };
+    'audio:volume:change': {
+        volume: number;
+    };
+    'tts:speaking:started': {
+        word: string;
+        phonetic?: string;
+        mode?: 'word' | 'sentence' | 'question';
+    };
+    'tts:speaking:completed': {
+        word: string;
+    };
+    'tts:speaking:error': {
+        word: string;
+        error: Error;
+    };
+    'tts:voice:changed': {
+        voice: SpeechSynthesisVoice;
+    };
+    'content:display': {
+        word?: any;
+        item?: any;
+        index: number;
+    };
+    'content:filter': {
+        difficulty?: Difficulty;
+        category?: string;
+    };
+    'mode:practice:changed': {
+        mode: PracticeMode;
+        timestamp: number;
+    };
+    'mode:vocabulary:changed': {
+        category: VocabularyCategory;
+        timestamp: number;
+    };
+    'vocabulary:loaded': {
+        mode: string;
+        wordCount: number;
+    };
+    'vocabulary:difficulty:filtered': {
+        difficulty: Difficulty;
+        count: number;
+    };
+    'vocabulary:error': {
+        error: Error;
+    };
+    'settings:changed': {
+        key: string;
+        value: any;
+        timestamp: number;
+    };
+    'settings:request-change': {
+        key: string;
+        value: any;
+    };
+    'settings:panel:toggle': void;
+    'settings:reset': void;
+    'progress:updated': {
+        current: number;
+        total: number;
+        percentage: number;
+    };
+    'progress:reset': void;
+    'system:ready': void;
+    'system:error': {
+        event: string;
+        error: Error;
+        stack?: string;
+        timestamp: number;
+    };
+    'system:warning': {
+        message: string;
+        timestamp: number;
+    };
+}
+/**
+ * Event names (typed)
+ */
+export type EventName = keyof EventPayloads;
+/**
+ * Event configuration structure
+ */
+export interface EventsConfig {
+    audio: {
+        autoplay: {
+            start: EventName;
+            pause: EventName;
+            resume: EventName;
+            stop: EventName;
+        };
+        navigate: {
+            next: EventName;
+            prev: EventName;
+        };
+        repeat: {
+            toggle: EventName;
+        };
+        speed: {
+            change: EventName;
+        };
+        volume: {
+            change: EventName;
+        };
+    };
+    tts: {
+        speaking: {
+            started: EventName;
+            completed: EventName;
+            error: EventName;
+        };
+        voice: {
+            changed: EventName;
+        };
+    };
+    content: {
+        display: EventName;
+        filter: EventName;
+    };
+    mode: {
+        practice: {
+            changed: EventName;
+        };
+        vocabulary: {
+            changed: EventName;
+        };
+    };
+    vocabulary: {
+        loaded: EventName;
+        difficulty: {
+            filtered: EventName;
+        };
+        error: EventName;
+    };
+    settings: {
+        changed: EventName;
+        requestChange: EventName;
+        panel: {
+            toggle: EventName;
+        };
+        reset: EventName;
+    };
+    progress: {
+        updated: EventName;
+        reset: EventName;
+    };
+    system: {
+        ready: EventName;
+        error: EventName;
+        warning: EventName;
+    };
+}
+/**
+ * Data paths configuration
+ */
+export interface DataPathsConfig {
+    base: string;
+    processed: string;
+    byMode: Record<VocabularyCategory | PracticeMode, string>;
+}
+/**
+ * Learning modes configuration
+ */
+export interface LearningMode {
+    id: VocabularyCategory | PracticeMode;
+    name: string;
+    category: 'vocabulary' | 'practice';
+    difficulty?: Difficulty;
+    description?: string;
+}
+/**
+ * Data configuration
+ */
+export interface DataConfig {
+    paths: DataPathsConfig;
+    learningModes: LearningMode[];
+    defaultMode: VocabularyCategory;
+}
+/**
+ * Voice preference criteria
+ */
+export interface VoicePreference {
+    lang: string;
+    name?: string;
+    gender?: 'male' | 'female';
+    localService?: boolean;
+}
+/**
+ * TTS configuration
+ */
+export interface TTSConfig {
+    defaultVoice: VoicePreference;
+    fallbackVoices: VoicePreference[];
+    rate: number;
+    pitch: number;
+    volume: number;
+    autoSpeak: boolean;
+}
+/**
+ * UI configuration
+ */
+export interface UIConfig {
+    theme: 'light' | 'dark' | 'auto';
+    animationsEnabled: boolean;
+    compactMode: boolean;
+    showPhonetic: boolean;
+    showIPA: boolean;
+}
+/**
+ * Settings defaults
+ */
+export interface SettingsDefaults {
+    autoPlayNext: boolean;
+    repeatMode: 'off' | 'one' | 'all';
+    showPhonetic: boolean;
+    ttsRate: number;
+    ttsVolume: number;
+    practiceMode: PracticeMode | null;
+    difficultyFilter: Difficulty | 'all';
+    theme: 'light' | 'dark' | 'auto';
+}
+/**
+ * Pipeline configuration
+ */
+export interface PipelineConfig {
+    registry: DatasetRegistryEntry[];
+    extractorTypes: {
+        PTETermsExtractor: string;
+        SingleIPATermsExtractor: string;
+        PTESentenceExtractor: string;
+        PTEQuestionExtractor: string;
+    };
+}
+/**
+ * Build configuration
+ */
+export interface BuildConfig {
+    cssFiles: string[];
+    jsFiles: string[];
+    outputDir: string;
+    minify: boolean;
+    sourceMaps: boolean;
+}
+/**
+ * Main application configuration
+ * This mirrors the structure of Config.js
+ */
+export interface AppConfig {
+    app: {
+        name: string;
+        version: string;
+        description: string;
+    };
+    data: DataConfig;
+    tts: TTSConfig;
+    ui: UIConfig;
+    settings: {
+        defaults: SettingsDefaults;
+    };
+    events: EventsConfig;
+    pipeline: PipelineConfig;
+    build: BuildConfig;
+}
+/**
+ * Deep partial (for partial updates)
+ */
+export type DeepPartial<T> = {
+    [P in keyof T]?: T[P] extends object ? DeepPartial<T[P]> : T[P];
+};
+/**
+ * Config path (dot notation)
+ * Examples: 'app.name', 'events.audio.autoplay.start', 'data.paths.base'
+ */
+export type ConfigPath = string;
+/**
+ * Config getter function signature
+ */
+export type ConfigGetter = <T = any>(path: ConfigPath, defaultValue?: T) => T;
+/**
+ * Config setter function signature
+ */
+export type ConfigSetter = (path: ConfigPath, value: any) => void;
+//# sourceMappingURL=config.types.d.ts.map

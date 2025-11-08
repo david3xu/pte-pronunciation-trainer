@@ -7,44 +7,59 @@
 import { createClient } from '@supabase/supabase-js';
 /**
  * Supabase configuration
- * Reads from environment variables (Vercel/Vite)
+ * Reads from environment variables (Vercel runtime)
+ * Falls back to empty strings if not configured (app will work without auth)
  */
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || '';
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
-// Validate configuration
+const getEnvVar = (key) => {
+    // Try Vite-style env vars (if using Vite)
+    if (typeof import.meta !== 'undefined' && import.meta.env) {
+        return import.meta.env[key] || '';
+    }
+    // Try process.env (if in Node.js context)
+    if (typeof process !== 'undefined' && process.env) {
+        return process.env[key] || '';
+    }
+    // Fallback to empty string
+    return '';
+};
+const supabaseUrl = getEnvVar('VITE_SUPABASE_URL');
+const supabaseAnonKey = getEnvVar('VITE_SUPABASE_ANON_KEY');
+// Create a dummy client if configuration is missing
+let supabaseInstance = null;
 if (!supabaseUrl || !supabaseAnonKey) {
-    const errorMsg = `
-❌ Supabase configuration missing!
+    console.warn(`
+⚠️ Supabase configuration missing - running in guest mode
 
-Please set these environment variables:
+Authentication features will be disabled.
+To enable auth, set these environment variables in Vercel:
 - VITE_SUPABASE_URL: Your Supabase project URL
 - VITE_SUPABASE_ANON_KEY: Your Supabase anonymous key
-
-For Vercel:
-1. Go to Project Settings → Environment Variables
-2. Add both variables
-3. Redeploy your project
-
-For local development:
-1. Create .env file in project root
-2. Add: VITE_SUPABASE_URL=your-url
-3. Add: VITE_SUPABASE_ANON_KEY=your-key
-4. Restart dev server
-  `.trim();
-    console.error(errorMsg);
-    throw new Error('Missing Supabase configuration');
+  `.trim());
+    // Create a placeholder object that won't crash the app
+    supabaseInstance = {
+        auth: {
+            getSession: async () => ({ data: { session: null }, error: null }),
+            getUser: async () => ({ data: { user: null }, error: null }),
+            signOut: async () => ({ error: null }),
+            onAuthStateChange: () => ({ data: { subscription: { unsubscribe: () => { } } } }),
+        }
+    };
+}
+else {
+    // Real Supabase client with valid configuration
+    supabaseInstance = createClient(supabaseUrl, supabaseAnonKey, {
+        auth: {
+            autoRefreshToken: true,
+            persistSession: true,
+            detectSessionInUrl: true,
+            storage: typeof window !== 'undefined' ? window.localStorage : undefined,
+        },
+    });
 }
 /**
  * Supabase client instance
  */
-export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
-    auth: {
-        autoRefreshToken: true,
-        persistSession: true,
-        detectSessionInUrl: true,
-        storage: window.localStorage,
-    },
-});
+export const supabase = supabaseInstance;
 /**
  * Export singleton instance
  */

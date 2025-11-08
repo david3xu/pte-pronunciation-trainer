@@ -118,6 +118,7 @@ declare global {
     interface Window {
         pteApp: PTEVocabularyTrainer;
         initializing: boolean;
+        PTEVocabularyTrainer: typeof PTEVocabularyTrainer;
     }
 }
 export default PTEVocabularyTrainer;

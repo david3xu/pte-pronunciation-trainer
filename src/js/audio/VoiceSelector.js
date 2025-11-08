@@ -1,59 +1,69 @@
-// VoiceSelector - Voice selection and management
-class VoiceSelector {
+/**
+ * VoiceSelector - Voice Selection and Management
+ *
+ * Type-safe voice selection with Web Speech API
+ * Features:
+ * - User preference management
+ * - Male voice priority filtering
+ * - Curated voice list with fallbacks
+ * - Event-driven preference changes
+ * - Dropdown population for UI
+ */
+/**
+ * VoiceSelector - Manages voice selection and preferences
+ */
+export class VoiceSelector {
+    preferredVoice = null;
     constructor() {
-        this.preferredVoice = null; // User's selected voice preference
-        
         // Listen to settings changes
         this._attachEventListeners();
     }
-
     /**
      * Attach event listeners for settings changes
-     * @private
      */
     _attachEventListeners() {
         // Listen to standardized settings:changed event from Config.js
-        const settingsChangedEvent = window.appConfig?.get('events.settings.changed') || 'settings:changed';
-        window.eventBus.on(settingsChangedEvent, this._handleSettingChange.bind(this));
+        const config = window.appConfig;
+        const settingsChangedEvent = config?.get('events.settings.changed') || 'settings:changed';
+        const eventBus = window.eventBus;
+        eventBus.on(settingsChangedEvent, this._handleSettingChange.bind(this));
     }
-
     /**
      * Handle setting changes from SettingsModule
-     * @private
      */
-    _handleSettingChange({key, value}) {
+    _handleSettingChange({ key, value }) {
         if (key === 'voice') {
             this._setPreferredVoice(value);
             console.log(`[VoiceSelector] Voice preference changed to ${value}`);
         }
     }
-
+    /**
+     * Select best voice match from available voices
+     * Prioritizes male voices for PTE pronunciation training
+     */
     selectBestVoiceMatch(voices, _lang) {
         // Check if user has selected a preferred voice from curated list
         if (this.preferredVoice) {
             // Try exact match first
             let selectedVoice = voices.find(v => v.name === this.preferredVoice);
-
             // If not found, try fallback names for the selected voice
             if (!selectedVoice) {
                 const curatedVoice = this.getCuratedVoiceInfo(this.preferredVoice);
                 if (curatedVoice) {
                     for (const fallbackName of curatedVoice.fallbacks) {
                         selectedVoice = voices.find(v => v.name === fallbackName || v.name.includes(fallbackName));
-                        if (selectedVoice) break;
+                        if (selectedVoice)
+                            break;
                     }
                 }
             }
-
             if (selectedVoice) {
                 return selectedVoice;
             }
         }
-
         // ONLY MALE VOICES - Use centralized priority list from config
-        const config = window.appConfig || new AppConfig();
+        const config = window.appConfig;
         const priorityNames = [config.get('tts.voices.default'), ...config.get('tts.voices.fallbacks')];
-
         // First try exact priority by name within available voices
         for (const preferredName of priorityNames) {
             const voice = voices.find(v => v.name === preferredName || v.name.includes(preferredName));
@@ -61,18 +71,21 @@ class VoiceSelector {
                 return voice;
             }
         }
-
         // Then prefer any en-AU male-ish voice
-        const maleIndicators = ['male', 'man', 'boy', 'james', 'william', 'ryan', 'daniel', 'alex', 'david', 'tom', 'michael', 'robert'];
-        const femaleIndicators = ['female', 'woman', 'girl', 'kate', 'susan', 'karen', 'catherine', 'samantha', 'helen', 'sarah', 'maria', 'anna'];
-
+        const maleIndicators = [
+            'male', 'man', 'boy', 'james', 'william', 'ryan', 'daniel',
+            'alex', 'david', 'tom', 'michael', 'robert'
+        ];
+        const femaleIndicators = [
+            'female', 'woman', 'girl', 'kate', 'susan', 'karen', 'catherine',
+            'samantha', 'helen', 'sarah', 'maria', 'anna'
+        ];
         const enAuVoices = voices.filter(v => v.lang && v.lang.toLowerCase().startsWith('en-au'));
         const enAuMaleVoices = enAuVoices.filter(v => {
             const nameLower = v.name.toLowerCase();
             const isFemale = femaleIndicators.some(ind => nameLower.includes(ind));
             return !isFemale;
         });
-
         if (enAuMaleVoices.length > 0) {
             const explicitMale = enAuMaleVoices.find(v => maleIndicators.some(ind => v.name.toLowerCase().includes(ind)));
             if (explicitMale) {
@@ -80,7 +93,6 @@ class VoiceSelector {
             }
             return enAuMaleVoices[0];
         }
-
         // Fallback to other English male voices (non-AU)
         const englishVoices = voices.filter(v => v.lang && v.lang.toLowerCase().startsWith('en'));
         const englishMaleVoices = englishVoices.filter(v => {
@@ -88,7 +100,6 @@ class VoiceSelector {
             const isFemale = femaleIndicators.some(ind => nameLower.includes(ind));
             return !isFemale;
         });
-
         if (englishMaleVoices.length > 0) {
             const explicitMaleEn = englishMaleVoices.find(v => maleIndicators.some(ind => v.name.toLowerCase().includes(ind)));
             if (explicitMaleEn) {
@@ -96,27 +107,25 @@ class VoiceSelector {
             }
             return englishMaleVoices[0];
         }
-
         // Last resort: Use any English voice available
         const anyEnglishVoice = voices.find(v => v.lang && v.lang.toLowerCase().startsWith('en'));
         if (anyEnglishVoice) {
             return anyEnglishVoice;
         }
-
         // Final fallback: Use first available voice
         if (voices.length > 0) {
             return voices[0];
         }
-
         console.error('No voices available at all');
         return null;
     }
-
+    /**
+     * Get curated voice information by name
+     */
     getCuratedVoiceInfo(voiceName) {
         // ONLY MALE VOICES - NO FEMALE VOICES ALLOWED
-        const config = window.appConfig || new AppConfig();
+        const config = window.appConfig;
         const defaultVoice = config.get('tts.voices.default');
-
         const curatedVoices = [
             { name: 'Microsoft James - English (Australia)', fallbacks: ['Microsoft James', 'James'] },
             { name: defaultVoice, fallbacks: [defaultVoice] },
@@ -124,29 +133,26 @@ class VoiceSelector {
             { name: 'Daniel (Enhanced)', fallbacks: ['Daniel'] }
             // REMOVED ALL FEMALE VOICES: Catherine, Karen, etc.
         ];
-
         return curatedVoices.find(v => v.name === voiceName);
     }
-
+    /**
+     * Populate voice options dropdown in UI
+     */
     populateVoiceOptions() {
         const voiceSelect = document.getElementById('voiceSelect');
-        if (!voiceSelect) return;
-
+        if (!voiceSelect)
+            return;
         const voices = speechSynthesis.getVoices();
-
         // Clear all existing options
         voiceSelect.innerHTML = '';
-        
         // Add "Auto" option first
         const autoOption = document.createElement('option');
         autoOption.value = 'auto';
         autoOption.textContent = '🤖 Auto (Best Available)';
         voiceSelect.appendChild(autoOption);
-
         // ONLY MALE VOICES - NO FEMALE VOICES IN DROPDOWN
-        const config = window.appConfig || new AppConfig();
+        const config = window.appConfig;
         const defaultVoice = config.get('tts.voices.default');
-
         const curatedVoices = [
             { name: 'Microsoft James - English (Australia)', fallbacks: ['Microsoft James', 'James'], flag: '🇦🇺', gender: '♂️' },
             { name: defaultVoice, fallbacks: [defaultVoice], flag: '🇬🇧', gender: '♂️' },
@@ -154,66 +160,70 @@ class VoiceSelector {
             { name: 'Daniel (Enhanced)', fallbacks: ['Daniel'], flag: '🇺🇸', gender: '♂️' }
             // REMOVED ALL FEMALE VOICES FROM DROPDOWN
         ];
-
         // Add curated voices to dropdown
         curatedVoices.forEach(curatedVoice => {
             // Try to find the actual voice
-            let actualVoice = null;
+            let actualVoice = undefined;
             for (const name of [curatedVoice.name, ...curatedVoice.fallbacks]) {
                 actualVoice = voices.find(v => v.name === name || v.name.includes(name));
-                if (actualVoice) break;
+                if (actualVoice)
+                    break;
             }
-
             // Add option even if voice not found (will fallback to auto selection)
             const option = document.createElement('option');
             option.value = curatedVoice.name;
             option.textContent = `${curatedVoice.gender} ${curatedVoice.name.split(' - ')[0]} ${curatedVoice.flag}`;
-
             // Mark as available or unavailable
             if (actualVoice) {
                 option.style.fontWeight = 'normal';
-            } else {
+            }
+            else {
                 option.style.fontWeight = 'lighter';
                 option.style.color = '#999';
                 option.textContent += ' (fallback)';
             }
-
             voiceSelect.appendChild(option);
         });
-
     }
-
     /**
      * Set preferred voice and reset cache
-     * @private
      */
     _setPreferredVoice(voiceName) {
         this.preferredVoice = voiceName === 'auto' ? null : voiceName;
-
         // Reset TTS voice cache to ensure new preference is used
-        if (window.ttsEngine && typeof window.ttsEngine.resetVoiceCache === 'function') {
-            window.ttsEngine.resetVoiceCache();
+        const ttsEngine = window.ttsEngine;
+        if (ttsEngine && typeof ttsEngine.resetVoiceCache === 'function') {
+            ttsEngine.resetVoiceCache();
         }
-
         // Emit standardized event (from Config.js)
-        const voiceChangedEvent = window.appConfig?.get('events.voice.preference.changed') || 'voice:preference:changed';
-        window.eventBus.emit(voiceChangedEvent, {
+        const config = window.appConfig;
+        const voiceChangedEvent = config?.get('events.voice.preference.changed') || 'voice:preference:changed';
+        const eventBus = window.eventBus;
+        const eventData = {
             voiceName: this.preferredVoice || 'auto',
             timestamp: new Date().toISOString()
-        });
+        };
+        eventBus.emit(voiceChangedEvent, eventData);
     }
-
+    /**
+     * Get current preferred voice name
+     */
     getPreferredVoice() {
         return this.preferredVoice;
     }
-
+    /**
+     * Get all available English voices
+     */
     getAllAvailableVoices() {
         return speechSynthesis.getVoices().filter(v => v.lang.startsWith('en'));
     }
 }
-
-// Global voice selector instance
-const voiceSelector = new VoiceSelector();
-
+// Export singleton instance
+export const voiceSelector = new VoiceSelector();
+// Default export
+export default voiceSelector;
 // Expose as global reference for PTE app
-window.voiceSelector = voiceSelector;
+if (typeof window !== 'undefined') {
+    window.voiceSelector = voiceSelector;
+}
+//# sourceMappingURL=VoiceSelector.js.map

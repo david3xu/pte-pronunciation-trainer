@@ -9,7 +9,7 @@
  * - State changes trigger reactive updates across components
  * - Single source of truth: Zustand stores → AudioControls → TTSEngine
  */
-import { useAppStore } from '../stores';
+import { useAppStore } from '../stores.js';
 /**
  * Type-safe Audio Controls with Zustand integration
  * Manages playback, navigation, and repeat modes

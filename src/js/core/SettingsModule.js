@@ -12,7 +12,7 @@
  *
  * TypeScript version of src/js/core/SettingsModule.js
  */
-import { useAppStore } from '../stores';
+import { useAppStore } from '../stores.js';
 /**
  * Type-safe Settings Module
  * Centralized management of all application settings

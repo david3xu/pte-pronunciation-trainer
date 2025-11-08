@@ -4,7 +4,7 @@
  * Type-safe authentication operations for PTE Pronunciation Trainer
  * Handles sign up, sign in, password reset, and session management
  */
-import { supabase } from './supabaseClient';
+import { supabase } from './supabaseClient.js';
 /**
  * AuthService - Handles all authentication operations
  */

@@ -4,7 +4,7 @@
  * Type-safe cloud synchronization for user progress, settings, and study data
  * Syncs local state with Supabase database
  */
-import { supabase } from './supabaseClient';
+import { supabase } from './supabaseClient.js';
 /**
  * SyncService - Handles cloud synchronization
  */

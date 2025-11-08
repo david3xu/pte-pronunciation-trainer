@@ -75,7 +75,10 @@ export class PTEVocabularyTrainer {
     // 0.1. Set up service worker message handling for background audio
     this.setupServiceWorkerMessageHandling();
 
-    // 0.2. Initialize DataSchema with Config (single source of truth for data structures)
+    // 0.2. Initialize auth store (check for existing session)
+    await this.initializeAuth();
+
+    // 0.3. Initialize DataSchema with Config (single source of truth for data structures)
     this.initializeDataSchema();
     this.validateModule('DataSchema', (window as any).dataSchema, {
       requiredProperties: ['schemas', 'config', 'validate'],
@@ -154,6 +157,30 @@ export class PTEVocabularyTrainer {
     // Clear initializing flag now that all modules are ready
     (window as any).initializing = false;
     console.log(`✅ PTEApp: Initialization complete, application ready for events`);
+  }
+
+  /**
+   * Initialize auth store (check for existing Supabase session)
+   * Non-critical - app works without authentication
+   */
+  async initializeAuth(): Promise<void> {
+    try {
+      // Import useAppStore dynamically to avoid circular dependencies
+      const { useAppStore } = await import('../stores/index.js');
+
+      // Initialize auth (will check for existing session in localStorage)
+      await useAppStore.getState().auth.initialize();
+
+      const { isAuthenticated, user } = useAppStore.getState().auth;
+      if (isAuthenticated && user) {
+        console.log(`✅ PTEApp: User authenticated - ${user.email}`);
+      } else {
+        console.log('ℹ️ PTEApp: No authenticated user (guest mode)');
+      }
+    } catch (error) {
+      console.warn('⚠️ PTEApp: Auth initialization failed (continuing without auth):', error);
+      // Non-critical - app continues without auth
+    }
   }
 
   /**

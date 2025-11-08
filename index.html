@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="src/css/animations.css?v=1">
     <link rel="stylesheet" href="src/css/components.css?v=2">
     <link rel="stylesheet" href="src/css/style.css?v=16">
+    <link rel="stylesheet" href="src/css/auth.css?v=1">
 </head>
 
 <body>
@@ -59,6 +60,19 @@
                         title="Toggle British/American pronunciation">🇬🇧</button>
                     <button class="btn-fullscreen" id="fullscreenBtn" title="Toggle Fullscreen">⛶</button>
                     <button class="btn-settings" id="settingsBtn">⚙️</button>
+                    <button class="btn-login" id="loginBtn" title="Sign in to sync your progress">👤 Login</button>
+                    <!-- User profile (shown when logged in) -->
+                    <div id="userProfile" class="user-profile" style="display: none;">
+                        <div class="user-avatar">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                            </svg>
+                        </div>
+                        <div class="user-info">
+                            <span id="userEmail" class="user-email">user@example.com</span>
+                            <button id="logoutBtn" class="logout-btn">Logout</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -185,6 +199,113 @@
 
     <!-- Main App Coordinator -->
     <script src="src/js/core/PTEApp.js?v=1759988913000"></script>
+
+    <!-- Authentication Modal -->
+    <div id="authModal" class="auth-modal" style="display: none;">
+        <div class="auth-modal-overlay"></div>
+        <div class="auth-modal-content">
+            <!-- Close button -->
+            <button id="closeAuthModal" class="auth-modal-close" aria-label="Close">×</button>
+
+            <!-- Modal header -->
+            <div class="auth-modal-header">
+                <h2>Welcome to PTE Pronunciation Trainer</h2>
+                <p class="auth-subtitle">Sign in to sync your progress across devices</p>
+            </div>
+
+            <!-- Tab navigation -->
+            <div class="auth-tabs">
+                <button id="loginTab" class="auth-tab active">Login</button>
+                <button id="signupTab" class="auth-tab">Sign Up</button>
+            </div>
+
+            <!-- Loading overlay -->
+            <div id="authLoadingOverlay" class="auth-loading-overlay" style="display: none;">
+                <div class="auth-spinner"></div>
+                <p>Processing...</p>
+            </div>
+
+            <!-- Message display -->
+            <div id="authMessage" class="auth-message" style="display: none;"></div>
+
+            <!-- Login Form -->
+            <form id="loginForm" class="auth-form" style="display: block;">
+                <div class="auth-form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="email" placeholder="your@email.com" required autocomplete="email" />
+                </div>
+
+                <div class="auth-form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" placeholder="••••••••" required autocomplete="current-password" minlength="8" />
+                </div>
+
+                <div class="auth-form-actions">
+                    <a href="#" id="forgotPasswordLink" class="auth-link">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="auth-submit-btn">
+                    <span>Log In</span>
+                </button>
+            </form>
+
+            <!-- Signup Form -->
+            <form id="signupForm" class="auth-form" style="display: none;">
+                <div class="auth-form-group">
+                    <label for="signupFullName">Full Name (Optional)</label>
+                    <input type="text" id="signupFullName" name="fullName" placeholder="John Doe" autocomplete="name" />
+                </div>
+
+                <div class="auth-form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" name="email" placeholder="your@email.com" required autocomplete="email" />
+                </div>
+
+                <div class="auth-form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" name="password" placeholder="••••••••" required autocomplete="new-password" minlength="8" />
+                    <small class="auth-hint">At least 8 characters</small>
+                </div>
+
+                <div class="auth-form-group">
+                    <label for="signupConfirmPassword">Confirm Password</label>
+                    <input type="password" id="signupConfirmPassword" name="confirmPassword" placeholder="••••••••" required autocomplete="new-password" minlength="8" />
+                </div>
+
+                <button type="submit" class="auth-submit-btn">
+                    <span>Create Account</span>
+                </button>
+
+                <p class="auth-terms">
+                    By signing up, you agree to our Terms of Service and Privacy Policy
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Supabase Client & Auth Scripts (load after DOM) -->
+    <script type="module">
+        // Import Supabase modules
+        import { supabase, authService, syncService } from './src/ts/supabase/index.ts';
+        import { authUI } from './src/ts/ui/AuthUI.ts';
+
+        // Expose to window for debugging
+        window.supabase = supabase;
+        window.authService = authService;
+        window.syncService = syncService;
+        window.authUI = authUI;
+
+        // Initialize auth UI when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => {
+                authUI.initialize();
+            });
+        } else {
+            authUI.initialize();
+        }
+
+        console.log('✅ Supabase authentication loaded');
+    </script>
 </body>
 
 </html>

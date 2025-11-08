@@ -19,3 +19,6 @@ export type {
 // Cloud Sync
 export { syncService, SyncService } from './syncService';
 export type { SyncResult } from './syncService';
+
+// Auto Sync Manager
+export { autoSyncManager, AutoSyncManager } from './autoSyncManager';

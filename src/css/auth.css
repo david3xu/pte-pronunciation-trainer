@@ -286,6 +286,33 @@
   transform: translateY(0);
 }
 
+/* Analytics Button */
+.btn-analytics {
+  padding: var(--space-xs, 6px) var(--space-md, 12px);
+  background: var(--success-color, #4CAF50);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md, 8px);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs, 4px);
+  box-shadow: var(--shadow-sm, 0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.btn-analytics:hover {
+  background: var(--success-dark, #45a049);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md, 0 4px 8px rgba(0, 0, 0, 0.15));
+}
+
+.btn-analytics:active {
+  transform: translateY(0);
+}
+
 /* ============================================================================
    User Profile Display
    ============================================================================ */

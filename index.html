@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="src/css/components.css?v=2">
     <link rel="stylesheet" href="src/css/style.css?v=16">
     <link rel="stylesheet" href="src/css/auth.css?v=1">
+    <link rel="stylesheet" href="src/css/analytics.css?v=1">
 </head>
 
 <body>
@@ -60,6 +61,7 @@
                         title="Toggle British/American pronunciation">🇬🇧</button>
                     <button class="btn-fullscreen" id="fullscreenBtn" title="Toggle Fullscreen">⛶</button>
                     <button class="btn-settings" id="settingsBtn">⚙️</button>
+                    <button class="btn-analytics" id="analyticsBtn" title="View your progress analytics" style="display: none;">📊</button>
                     <button class="btn-login" id="loginBtn" title="Sign in to sync your progress">👤 Login</button>
                     <!-- User profile (shown when logged in) -->
                     <div id="userProfile" class="user-profile" style="display: none;">
@@ -286,25 +288,66 @@
     <!-- Supabase Client & Auth Scripts (load after DOM) -->
     <script type="module">
         // Import Supabase modules
-        import { supabase, authService, syncService } from './src/ts/supabase/index.ts';
+        import { supabase, authService, syncService, autoSyncManager } from './src/ts/supabase/index.ts';
         import { authUI } from './src/ts/ui/AuthUI.ts';
+        import { analyticsDashboard } from './src/ts/ui/AnalyticsDashboard.ts';
 
         // Expose to window for debugging
         window.supabase = supabase;
         window.authService = authService;
         window.syncService = syncService;
+        window.autoSyncManager = autoSyncManager;
         window.authUI = authUI;
+        window.analyticsDashboard = analyticsDashboard;
 
-        // Initialize auth UI when DOM is ready
+        // Initialize when DOM is ready
         if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', () => {
-                authUI.initialize();
+            document.addEventListener('DOMContentLoaded', async () => {
+                await authUI.initialize();
+                await autoSyncManager.initialize();
+                await analyticsDashboard.initialize();
+
+                // Show analytics button when user logs in
+                authService.onAuthStateChange((user) => {
+                    const analyticsBtn = document.getElementById('analyticsBtn');
+                    if (analyticsBtn) {
+                        analyticsBtn.style.display = user ? 'inline-block' : 'none';
+                    }
+                });
+
+                // Analytics button click handler
+                const analyticsBtn = document.getElementById('analyticsBtn');
+                if (analyticsBtn) {
+                    analyticsBtn.addEventListener('click', () => {
+                        analyticsDashboard.show();
+                    });
+                }
             });
         } else {
-            authUI.initialize();
+            (async () => {
+                await authUI.initialize();
+                await autoSyncManager.initialize();
+                await analyticsDashboard.initialize();
+
+                // Show analytics button when user logs in
+                authService.onAuthStateChange((user) => {
+                    const analyticsBtn = document.getElementById('analyticsBtn');
+                    if (analyticsBtn) {
+                        analyticsBtn.style.display = user ? 'inline-block' : 'none';
+                    }
+                });
+
+                // Analytics button click handler
+                const analyticsBtn = document.getElementById('analyticsBtn');
+                if (analyticsBtn) {
+                    analyticsBtn.addEventListener('click', () => {
+                        analyticsDashboard.show();
+                    });
+                }
+            })();
         }
 
-        console.log('✅ Supabase authentication loaded');
+        console.log('✅ Supabase integration loaded (auth + sync + analytics)');
     </script>
 </body>
 

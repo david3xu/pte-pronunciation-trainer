@@ -1,12 +1,16 @@
 /**
  * VoiceSelector - Voice Selection and Management
  *
+ * ARCHITECTURE: Zustand state management
+ * - Subscribes to settings.ttsVoice changes
+ * - Updates TTS store selected voice instead of emitting events
+ *
  * Type-safe voice selection with Web Speech API
  * Features:
  * - User preference management
  * - Male voice priority filtering
  * - Curated voice list with fallbacks
- * - Event-driven preference changes
+ * - Zustand-driven preference changes
  * - Dropdown population for UI
  */
 /**
@@ -23,15 +27,16 @@ interface CuratedVoice {
  */
 export declare class VoiceSelector {
     private preferredVoice;
+    private unsubscribers;
     constructor();
     /**
-     * Attach event listeners for settings changes
+     * Cleanup subscriptions
      */
-    private _attachEventListeners;
+    destroy(): void;
     /**
-     * Handle setting changes from SettingsModule
+     * Setup Zustand store subscriptions (replaces EventBus listeners)
      */
-    private _handleSettingChange;
+    private _setupStoreSubscriptions;
     /**
      * Select best voice match from available voices
      * Prioritizes male voices for PTE pronunciation training

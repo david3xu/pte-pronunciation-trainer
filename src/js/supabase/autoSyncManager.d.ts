@@ -1,8 +1,12 @@
 /**
  * Auto Sync Manager
  *
+ * ARCHITECTURE: Zustand state management
+ * - Subscribes to progress store changes instead of EventBus
+ * - Subscribes to settings.practiceMode and vocabulary.currentDataset for session tracking
+ *
  * Automatically syncs user progress and study sessions to Supabase
- * Listens to progress events and handles cloud synchronization
+ * Tracks progress via Zustand store subscriptions and handles cloud synchronization
  */
 import type { SyncResult } from './syncService';
 /**
@@ -14,14 +18,19 @@ export declare class AutoSyncManager {
     private syncInterval;
     private lastSyncTime;
     private pendingSync;
+    private unsubscribers;
     /**
      * Initialize auto-sync manager
      */
     initialize(): Promise<void>;
     /**
-     * Set up event listeners for progress tracking
+     * Cleanup subscriptions
      */
-    private setupEventListeners;
+    destroy(): void;
+    /**
+     * Setup Zustand store subscriptions (replaces EventBus listeners)
+     */
+    private setupStoreSubscriptions;
     /**
      * Start a new study session
      */

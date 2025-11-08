@@ -1,9 +1,14 @@
 /**
  * TTSEngine - Text-to-Speech Synthesis Engine
  *
+ * ARCHITECTURE: Zustand state management
+ * - Subscribes to settings.ttsRate and settings.ttsVoice changes
+ * - Updates tts store (isSpeaking, currentWord, etc.) instead of emitting events
+ * - Direct state updates for speaking start/complete/stop
+ *
  * Type-safe TTS engine with Web Speech API integration
  * Features:
- * - Event-driven initialization (no hardcoded defaults)
+ * - Zustand-driven initialization (settings from store)
  * - iOS background audio support
  * - HTML5 Audio fallback
  * - Voice selection and caching
@@ -24,16 +29,16 @@ interface VocabularyWord {
 /**
  * TTSEngine - Type-safe text-to-speech engine
  *
- * ARCHITECTURE: Event-driven initialization
- * - No hard-coded settings defaults in constructor
- * - All settings (speechRate, targetRepeats) initialized via SettingsModule events
- * - SettingsModule emits 'setting:changed' events during loadSettings()
- * - This ensures single source of truth: Config.js → SettingsModule → Audio modules
+ * ARCHITECTURE: Zustand state management
+ * - Subscribes to settings.ttsRate and settings.ttsVoice changes
+ * - Updates tts store instead of emitting events
+ * - Single source of truth: Config.js → SettingsModule → Zustand store → TTS engine
  */
 export declare class TTSEngine {
     private config;
     private currentRepeatCount;
     private backgroundAudioEnabled;
+    private unsubscribers;
     private speechRate;
     private targetRepeats;
     private synth;
@@ -44,23 +49,23 @@ export declare class TTSEngine {
     private backgroundAudioElement?;
     constructor();
     /**
+     * Cleanup subscriptions
+     */
+    destroy(): void;
+    /**
      * Safely get current practice mode from SettingsModule or Config.js fallback
      */
     getPracticeMode(): string;
     /**
-     * Attach event listeners for settings changes
+     * Setup Zustand store subscriptions (replaces EventBus listeners)
      */
-    private _attachEventListeners;
+    private _setupStoreSubscriptions;
     /**
-     * Handle setting changes from SettingsModule
-     */
-    private _handleSettingChange;
-    /**
-     * HELPER: Add visual feedback and emit speaking started event
+     * HELPER: Add visual feedback and update TTS store (replaces EventBus emission)
      */
     private _addSpeakingFeedback;
     /**
-     * HELPER: Remove visual feedback and emit speaking completed event
+     * HELPER: Remove visual feedback and update TTS store (replaces EventBus emission)
      */
     private _removeSpeakingFeedback;
     /**

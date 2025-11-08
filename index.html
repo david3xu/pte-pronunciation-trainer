@@ -400,6 +400,14 @@
 
         console.log('✅ Supabase integration loaded (auth + sync + analytics)');
     </script>
+
+    <!-- React App Root (Phase 2: React Migration + AI Features) -->
+    <!-- This div will host the new React components -->
+    <!-- The vanilla JS app and React app will coexist during migration -->
+    <div id="react-root"></div>
+
+    <!-- React Entry Point (Vite will inject this in development, explicit in production) -->
+    <script type="module" src="/src/main.tsx"></script>
 </body>
 
 </html>

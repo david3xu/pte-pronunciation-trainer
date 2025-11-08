@@ -1,6 +1,10 @@
 /**
  * DatasetManager - Type-safe Unified Dataset Management System
  *
+ * ARCHITECTURE: Standalone dataset loader (no EventBus)
+ * - Pure data loading and caching functionality
+ * - Other components subscribe to Zustand vocabulary store for dataset changes
+ *
  * Purpose: Centralized manager for all PTE dataset types
  * - Vocabulary datasets (13 books, 13,000+ terms with IPA)
  * - Repeat Sentence (RS) - 620 sentences
@@ -120,26 +124,12 @@ export class DatasetManager {
                 this.cacheDataset(datasetType, validatedData);
             }
             console.log(`✅ DatasetManager: Loaded ${datasetType} (${itemCount} items)`);
-            // Emit dataset loaded event (from Config.js)
-            if (typeof window !== 'undefined' && window.eventBus && this.config) {
-                const datasetLoadedEvent = this.config.get?.('events.dataset.loaded') || 'dataset:loaded';
-                window.eventBus.emit(datasetLoadedEvent, {
-                    type: datasetType,
-                    itemCount: itemCount
-                });
-            }
+            // Note: Dataset loaded event removed (informational, components subscribe to vocabulary store)
             return validatedData;
         }
         catch (error) {
             console.error(`❌ DatasetManager: Failed to load ${datasetType}`, error);
-            // Emit dataset error event (from Config.js)
-            if (typeof window !== 'undefined' && window.eventBus && this.config) {
-                const datasetErrorEvent = this.config.get?.('events.dataset.error') || 'dataset:error';
-                window.eventBus.emit(datasetErrorEvent, {
-                    type: datasetType,
-                    error: error
-                });
-            }
+            // Note: Dataset error event removed (error already logged, components handle errors via try/catch)
             throw error;
         }
     }

@@ -1,29 +1,35 @@
 /**
  * TTSEngine - Text-to-Speech Synthesis Engine
  *
+ * ARCHITECTURE: Zustand state management
+ * - Subscribes to settings.ttsRate and settings.ttsVoice changes
+ * - Updates tts store (isSpeaking, currentWord, etc.) instead of emitting events
+ * - Direct state updates for speaking start/complete/stop
+ *
  * Type-safe TTS engine with Web Speech API integration
  * Features:
- * - Event-driven initialization (no hardcoded defaults)
+ * - Zustand-driven initialization (settings from store)
  * - iOS background audio support
  * - HTML5 Audio fallback
  * - Voice selection and caching
  * - Repeat modes for learning
  * - Text cleaning and normalization
  */
+import { useAppStore } from '../stores';
 /**
  * TTSEngine - Type-safe text-to-speech engine
  *
- * ARCHITECTURE: Event-driven initialization
- * - No hard-coded settings defaults in constructor
- * - All settings (speechRate, targetRepeats) initialized via SettingsModule events
- * - SettingsModule emits 'setting:changed' events during loadSettings()
- * - This ensures single source of truth: Config.js → SettingsModule → Audio modules
+ * ARCHITECTURE: Zustand state management
+ * - Subscribes to settings.ttsRate and settings.ttsVoice changes
+ * - Updates tts store instead of emitting events
+ * - Single source of truth: Config.js → SettingsModule → Zustand store → TTS engine
  */
 export class TTSEngine {
     config;
     currentRepeatCount = 0;
     backgroundAudioEnabled = false;
-    // Initialize properties (will be set by SettingsModule events)
+    unsubscribers = [];
+    // Initialize properties (will be set by Zustand store subscriptions)
     speechRate = null;
     targetRepeats = null;
     synth;
@@ -37,9 +43,16 @@ export class TTSEngine {
         // Load configuration from centralized config
         this.config = window.appConfig;
         this.synth = window.speechSynthesis;
-        // Initialize events first - don't start audio context yet
-        this._attachEventListeners();
+        // Subscribe to Zustand store changes (replaces EventBus listeners)
+        this._setupStoreSubscriptions();
         // We'll initialize AudioContext on first user interaction
+    }
+    /**
+     * Cleanup subscriptions
+     */
+    destroy() {
+        this.unsubscribers.forEach(unsub => unsub());
+        this.unsubscribers = [];
     }
     /**
      * Safely get current practice mode from SettingsModule or Config.js fallback
@@ -52,66 +65,52 @@ export class TTSEngine {
         return this.config.get('data.defaults.practiceMode');
     }
     /**
-     * Attach event listeners for settings changes
+     * Setup Zustand store subscriptions (replaces EventBus listeners)
      */
-    _attachEventListeners() {
-        // Listen to standardized settings:changed event from Config.js
-        const settingsChangedEvent = this.config?.get('events.settings.changed') || 'settings:changed';
-        const eventBus = window.eventBus;
-        eventBus.on(settingsChangedEvent, this._handleSettingChange.bind(this));
+    _setupStoreSubscriptions() {
+        if (typeof window === 'undefined')
+            return;
+        // Subscribe to TTS rate changes
+        const unsubTtsRate = useAppStore.subscribe((state) => state.settings.ttsRate, (ttsRate, prevTtsRate) => {
+            if (ttsRate !== prevTtsRate) {
+                this.speechRate = ttsRate;
+                console.log(`[TTSEngine] Speed changed to ${this.speechRate}`);
+            }
+        });
+        this.unsubscribers.push(unsubTtsRate);
+        // Subscribe to voice changes
+        const unsubVoice = useAppStore.subscribe((state) => state.settings.ttsVoice, (ttsVoice, prevTtsVoice) => {
+            if (ttsVoice !== prevTtsVoice) {
+                this.resetVoiceCache();
+                console.log(`[TTSEngine] Voice preference changed to ${ttsVoice}`);
+            }
+        });
+        this.unsubscribers.push(unsubVoice);
     }
     /**
-     * Handle setting changes from SettingsModule
-     */
-    _handleSettingChange({ key, value }) {
-        if (key === 'speed') {
-            this.speechRate = parseFloat(value) || this.config.get('tts.speeds.normal');
-            console.log(`[TTSEngine] Speed changed to ${this.speechRate}`);
-        }
-        else if (key === 'voice') {
-            // Reset voice cache when voice preference changes
-            this.resetVoiceCache();
-            console.log(`[TTSEngine] Voice preference changed to ${value}`);
-        }
-        else if (key === 'repeat') {
-            // Handle repeat mode from SettingsModule (set by AudioControls)
-            // Note: AudioControls converts mode to targetRepeats and calls setRepeatMode
-            // This listener is for potential direct repeat settings
-        }
-    }
-    /**
-     * HELPER: Add visual feedback and emit speaking started event
+     * HELPER: Add visual feedback and update TTS store (replaces EventBus emission)
      */
     _addSpeakingFeedback(elementId, eventData) {
         const element = document.getElementById(elementId);
         if (element) {
             element.classList.add('speaking');
         }
-        // Only emit tts:speaking:started event for vocabulary mode
-        // Practice modes (RS/ASQ/WFD) handle their own display logic
-        const currentMode = this.getPracticeMode();
-        const isVocabularyMode = currentMode === 'vocabulary';
-        if (isVocabularyMode) {
-            // Vocabulary mode: emit event with word data for display
-            const payload = { ...eventData };
-            const ttsSpeakingStartedEvent = this.config.get('events.tts.speaking.started');
-            const eventBus = window.eventBus;
-            eventBus.emit(ttsSpeakingStartedEvent, payload);
-        }
-        // Practice modes don't need this event - they use displayContent() directly
+        // Update Zustand TTS store (replaces EventBus emission)
+        const word = typeof eventData.word === 'string' ? eventData.word : eventData.word?.english;
+        const phonetic = typeof eventData.word === 'object' ? eventData.word?.['ipa'] : null;
+        const mode = (eventData.mode || 'word');
+        useAppStore.getState().tts.startSpeaking(word || eventData.text || '', phonetic, mode);
         return element;
     }
     /**
-     * HELPER: Remove visual feedback and emit speaking completed event
+     * HELPER: Remove visual feedback and update TTS store (replaces EventBus emission)
      */
-    _removeSpeakingFeedback(element, eventData) {
+    _removeSpeakingFeedback(element, _eventData) {
         if (element) {
             element.classList.remove('speaking');
         }
-        // Emit standardized event from Config.js
-        const ttsSpeakingCompletedEvent = this.config.get('events.tts.speaking.completed');
-        const eventBus = window.eventBus;
-        eventBus.emit(ttsSpeakingCompletedEvent, eventData);
+        // Update Zustand TTS store (replaces EventBus emission)
+        useAppStore.getState().tts.stopSpeaking();
     }
     /**
      * SIMPLIFIED: Pronounce any text (sentence, question, word)
@@ -171,14 +170,8 @@ export class TTSEngine {
             if (englishWordElement) {
                 englishWordElement.classList.add('speaking');
             }
-            // Emit speaking start event (standardized from Config.js)
-            const ttsSpeakingStartedEvent = this.config.get('events.tts.speaking.started');
-            const eventBus = window.eventBus;
-            eventBus.emit(ttsSpeakingStartedEvent, {
-                word: word, // Send full word object, not just word.english
-                repeatCount: this.currentRepeatCount,
-                rate: pronunciationRate
-            });
+            // Update Zustand TTS store (replaces EventBus emission)
+            useAppStore.getState().tts.startSpeaking(word.english, word['ipa'] || null, 'word');
             console.log(`[TTSEngine] 🔊 Calling speak() for: "${cleanText}"`);
             // Speak the term first
             await this.speak(cleanText, this.config.get('tts.language.default'), pronunciationRate);
@@ -218,12 +211,8 @@ export class TTSEngine {
             if (englishWordElement) {
                 englishWordElement.classList.remove('speaking');
             }
-            // Emit speaking completed event (standardized from Config.js)
-            const ttsSpeakingCompletedEvent = this.config.get('events.tts.speaking.completed');
-            eventBus.emit(ttsSpeakingCompletedEvent, {
-                word: word.english,
-                repeatCount: this.currentRepeatCount
-            });
+            // Update Zustand TTS store (replaces EventBus emission)
+            useAppStore.getState().tts.stopSpeaking();
         }
         catch (error) {
             console.warn('Speech error:', error);
@@ -544,12 +533,8 @@ export class TTSEngine {
     setRepeatMode(targetRepeats) {
         this.targetRepeats = parseInt(targetRepeats.toString()) || 1;
         this.currentRepeatCount = 0;
-        // Emit repeat mode change event
-        const ttsRepeatChangedEvent = this.config.get('events.tts.repeat.changed');
-        const eventBus = window.eventBus;
-        eventBus.emit(ttsRepeatChangedEvent, {
-            targetRepeats: this.targetRepeats
-        });
+        // Note: Repeat mode change event removed (informational, no listeners)
+        console.log(`[TTSEngine] Repeat mode set to ${this.targetRepeats} repetitions`);
     }
     /**
      * Stop all speech
@@ -564,12 +549,8 @@ export class TTSEngine {
         if (englishWordElement) {
             englishWordElement.classList.remove('speaking');
         }
-        // Emit stop event
-        const ttsStoppedEvent = this.config.get('events.tts.speaking.stopped');
-        const eventBus = window.eventBus;
-        eventBus.emit(ttsStoppedEvent, {
-            timestamp: new Date().toISOString()
-        });
+        // Update Zustand TTS store (replaces EventBus emission)
+        useAppStore.getState().tts.stopSpeaking();
     }
     /**
      * Get current repeat count

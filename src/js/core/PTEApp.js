@@ -53,9 +53,11 @@ export class PTEVocabularyTrainer {
         this.registerServiceWorker();
         // 0.1. Set up service worker message handling for background audio
         this.setupServiceWorkerMessageHandling();
-        // 0.2. Initialize auth store (check for existing session)
+        // 0.2. Initialize analytics (PostHog)
+        await this.initializeAnalytics();
+        // 0.3. Initialize auth store (check for existing session)
         await this.initializeAuth();
-        // 0.3. Initialize DataSchema with Config (single source of truth for data structures)
+        // 0.4. Initialize DataSchema with Config (single source of truth for data structures)
         this.initializeDataSchema();
         this.validateModule('DataSchema', window.dataSchema, {
             requiredProperties: ['schemas', 'config', 'validate'],
@@ -123,6 +125,43 @@ export class PTEVocabularyTrainer {
         // Clear initializing flag now that all modules are ready
         window.initializing = false;
         console.log(`✅ PTEApp: Initialization complete, application ready for events`);
+    }
+    /**
+     * Initialize analytics (PostHog)
+     * Non-critical - app works without analytics
+     */
+    async initializeAnalytics() {
+        try {
+            // Import analyticsService dynamically
+            const { analyticsService } = await import('../analytics/analyticsService.js');
+            // Get PostHog API key from environment (optional)
+            const apiKey = import.meta.env.VITE_POSTHOG_API_KEY || null;
+            const apiHost = import.meta.env.VITE_POSTHOG_HOST || 'https://app.posthog.com';
+            // Initialize analytics (will run in disabled mode if no API key)
+            analyticsService.initialize(apiKey, {
+                api_host: apiHost,
+                autocapture: true, // Auto-capture clicks, page views, etc.
+                capture_pageview: true,
+                capture_pageleave: true,
+            });
+            // Track app initialization
+            if (analyticsService.isEnabled()) {
+                analyticsService.track('app_initialized', {
+                    version: '2.5.4',
+                    platform: 'web',
+                });
+                console.log('✅ PTEApp: Analytics enabled');
+            }
+            else {
+                console.log('ℹ️ PTEApp: Analytics disabled (no API key)');
+            }
+            // Make globally available
+            window.analyticsService = analyticsService;
+        }
+        catch (error) {
+            console.warn('⚠️ PTEApp: Analytics initialization failed (continuing without analytics):', error);
+            // Non-critical - app continues without analytics
+        }
     }
     /**
      * Initialize auth store (check for existing Supabase session)

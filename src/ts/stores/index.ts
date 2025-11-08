@@ -295,6 +295,12 @@ export const useAppStore = create<AppState>()(
               set((state) => ({ auth: { ...state.auth, isLoading: true, error: null } }));
               const result = await authService.signOut();
               if (result.success) {
+                // Track sign out event
+                if ((window as any).analyticsService) {
+                  (window as any).analyticsService.trackAuth('signout');
+                  (window as any).analyticsService.reset(); // Clear user identity
+                }
+
                 set((state) => ({
                   auth: {
                     ...state.auth,
@@ -339,6 +345,16 @@ export const useAppStore = create<AppState>()(
                       error: null,
                     }
                   }));
+
+                  // Identify user in analytics
+                  if ((window as any).analyticsService) {
+                    (window as any).analyticsService.identify(user.id, {
+                      email: user.email,
+                      signup_date: user.created_at,
+                      full_name: user.user_metadata?.['full_name'],
+                    });
+                    (window as any).analyticsService.trackAuth('signin');
+                  }
 
                   // Initialize sync service for authenticated user
                   await syncService.initialize();

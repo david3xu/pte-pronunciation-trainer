@@ -258,6 +258,11 @@ export const useAppStore = create()(subscribeWithSelector(devtools(persist((set,
             set((state) => ({ auth: { ...state.auth, isLoading: true, error: null } }));
             const result = await authService.signOut();
             if (result.success) {
+                // Track sign out event
+                if (window.analyticsService) {
+                    window.analyticsService.trackAuth('signout');
+                    window.analyticsService.reset(); // Clear user identity
+                }
                 set((state) => ({
                     auth: {
                         ...state.auth,
@@ -301,6 +306,15 @@ export const useAppStore = create()(subscribeWithSelector(devtools(persist((set,
                             error: null,
                         }
                     }));
+                    // Identify user in analytics
+                    if (window.analyticsService) {
+                        window.analyticsService.identify(user.id, {
+                            email: user.email,
+                            signup_date: user.created_at,
+                            full_name: user.user_metadata?.['full_name'],
+                        });
+                        window.analyticsService.trackAuth('signin');
+                    }
                     // Initialize sync service for authenticated user
                     await syncService.initialize();
                 }

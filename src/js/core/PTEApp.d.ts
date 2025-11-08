@@ -33,6 +33,11 @@ export declare class PTEVocabularyTrainer {
      */
     initializeModules(): Promise<void>;
     /**
+     * Initialize analytics (PostHog)
+     * Non-critical - app works without analytics
+     */
+    initializeAnalytics(): Promise<void>;
+    /**
      * Initialize auth store (check for existing Supabase session)
      * Non-critical - app works without authentication
      */

@@ -14,8 +14,8 @@
  * - 1: Validation failures found
  */
 
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 // ANSI color codes for output
 const colors = {

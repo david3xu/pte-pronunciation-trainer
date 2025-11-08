@@ -5,8 +5,8 @@
  * Bundles, minifies, and optimizes files for production deployment
  */
 
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 // Simple minification functions (for basic build without external dependencies)
 function minifyCSS(css) {

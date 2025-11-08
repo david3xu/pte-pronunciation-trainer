@@ -1,33 +1,36 @@
 /**
  * ProgressTracker - Type-safe learning progress and status updates
- * Displays current word/item position and emits progress events
+ * Displays current word/item position and updates Zustand store
  *
  * This is the TypeScript version of src/js/core/ProgressTracker.js
  * Provides type-safe progress tracking and status updates
+ *
+ * ARCHITECTURE: Zustand state management
+ * - Replaced EventBus emissions with Zustand store updates
+ * - Direct progress store actions for status/error/stats
  */
 import type { VocabularyTerm } from '../../types';
 /**
- * Type-safe Progress Tracker
- * Manages learning progress display and event emission
+ * Type-safe Progress Tracker with Zustand integration
+ * Manages learning progress display and Zustand store updates
  */
 export declare class ProgressTracker {
     private currentIndex;
-    private config;
-    constructor(config?: any);
+    constructor(_config?: any);
     /**
      * Update progress display and emit progress event
      */
     updateProgress(currentIndex: number, totalWords: number, currentWord?: VocabularyTerm | null): void;
     /**
-     * Update status text and emit status event
+     * Update status text (no Zustand store action needed - just DOM update)
      */
     updateStatus(status: string): void;
     /**
-     * Show error message and emit error event
+     * Show error message via UI notification (Zustand version)
      */
     showError(message: string): void;
     /**
-     * Show learning statistics and emit stats event
+     * Show learning statistics (Zustand version)
      */
     showLearningStats(wordsCompleted: number, totalTime: number, accuracy?: number | null): void;
     /**

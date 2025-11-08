@@ -182,14 +182,31 @@ export class AppConfig {
             },
             // ===== PIPELINE CONFIGURATION =====
             pipeline: {
+                inputDir: 'data/source/pte',
+                outputDir: 'data',
+                reportsDir: 'data/reports',
+                dataSources: {
+                    primary: 'pte-fib-listening-with-ipa.md',
+                    fallback: 'fib-listening-vocabulary.md',
+                    subdirectory: 'vocabs'
+                },
+                outputFiles: {
+                    dataset: 'pte-fib-listening-dataset.json',
+                    report: 'pte-processing-report.json'
+                },
                 registry: [
                     {
                         id: 'pte-fib-listening',
-                        name: 'PTE FIB Listening',
-                        source: 'data/source/pte/vocabs/pte-fib-listening-with-ipa.md',
-                        output: 'data/processed/pte-fib-listening-dataset.json',
+                        input: 'pte-fib-listening-with-ipa.md',
+                        fallback: 'fib-listening-vocabulary.md',
+                        output: 'pte-fib-listening-dataset.json',
+                        category: 'pte-fib-listening',
+                        description: 'PTE FIB Listening vocabulary with IPA',
+                        sourceType: 'pte-fib-listening-with-ipa',
+                        dataType: 'vocabulary',
                         extractorType: 'PTETermsExtractor',
-                        category: 'pte-fib-listening'
+                        inputSubdir: 'vocabs',
+                        isDefault: true
                     },
                     // ... Add more registry entries as needed during migration
                 ],
@@ -305,13 +322,6 @@ export class AppConfig {
 }
 // Export singleton instance
 export const appConfig = new AppConfig();
-// Default export for compatibility
+// Default export: singleton instance (for scripts that need config immediately)
 export default appConfig;
-// CommonJS export for Node.js compatibility
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = AppConfig;
-    module.exports.AppConfig = AppConfig;
-    module.exports.appConfig = appConfig;
-    module.exports.default = appConfig;
-}
 //# sourceMappingURL=Config.js.map

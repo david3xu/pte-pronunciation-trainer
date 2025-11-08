@@ -177,6 +177,35 @@ export interface UIState {
 }
 
 // ============================================
+// AUTH STORE TYPES
+// ============================================
+
+export interface User {
+  id: string;
+  email: string;
+  full_name?: string;
+  avatar_url?: string;
+  created_at?: string;
+}
+
+export interface AuthState {
+  // Authentication state
+  user: User | null;
+  session: any | null; // Supabase Session type
+  isAuthenticated: boolean;
+  isLoading: boolean;
+  error: string | null;
+
+  // Actions
+  setUser: (user: User | null) => void;
+  setSession: (session: any | null) => void;
+  setLoading: (isLoading: boolean) => void;
+  setError: (error: string | null) => void;
+  signOut: () => void;
+  initialize: () => Promise<void>;
+}
+
+// ============================================
 // COMBINED STORE TYPE
 // ============================================
 
@@ -187,4 +216,5 @@ export interface AppStore {
   vocabulary: VocabularyState;
   progress: ProgressState;
   ui: UIState;
+  auth: AuthState;
 }

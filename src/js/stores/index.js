@@ -22,6 +22,9 @@
  */
 import { create } from 'zustand';
 import { devtools, persist, subscribeWithSelector } from 'zustand/middleware';
+// Import Supabase services for auth store
+import { authService } from '../supabase/authService';
+import { syncService } from '../supabase/syncService';
 /**
  * Main application store
  *
@@ -231,6 +234,102 @@ export const useAppStore = create()(subscribeWithSelector(devtools(persist((set,
         })),
         hideNotification: () => set((state) => ({ ui: { ...state.ui, notification: null } })),
         setInitializing: (isInitializing) => set((state) => ({ ui: { ...state.ui, isInitializing } })),
+    },
+    // Auth slice - Supabase authentication integration
+    auth: {
+        user: null,
+        session: null,
+        isAuthenticated: false,
+        isLoading: false,
+        error: null,
+        setUser: (user) => set((state) => ({
+            auth: { ...state.auth, user, isAuthenticated: !!user }
+        })),
+        setSession: (session) => set((state) => ({
+            auth: { ...state.auth, session, isAuthenticated: !!session }
+        })),
+        setLoading: (isLoading) => set((state) => ({
+            auth: { ...state.auth, isLoading }
+        })),
+        setError: (error) => set((state) => ({
+            auth: { ...state.auth, error, isLoading: false }
+        })),
+        signOut: async () => {
+            set((state) => ({ auth: { ...state.auth, isLoading: true, error: null } }));
+            const result = await authService.signOut();
+            if (result.success) {
+                set((state) => ({
+                    auth: {
+                        ...state.auth,
+                        user: null,
+                        session: null,
+                        isAuthenticated: false,
+                        isLoading: false,
+                        error: null,
+                    }
+                }));
+            }
+            else {
+                set((state) => ({
+                    auth: {
+                        ...state.auth,
+                        error: result.message || 'Sign out failed',
+                        isLoading: false,
+                    }
+                }));
+            }
+        },
+        initialize: async () => {
+            set((state) => ({ auth: { ...state.auth, isLoading: true, error: null } }));
+            try {
+                const user = await authService.getUser();
+                const session = await authService.getSession();
+                if (user && session) {
+                    set((state) => ({
+                        auth: {
+                            ...state.auth,
+                            user: {
+                                id: user.id,
+                                email: user.email,
+                                full_name: user.user_metadata?.['full_name'],
+                                avatar_url: user.user_metadata?.['avatar_url'],
+                                created_at: user.created_at,
+                            },
+                            session,
+                            isAuthenticated: true,
+                            isLoading: false,
+                            error: null,
+                        }
+                    }));
+                    // Initialize sync service for authenticated user
+                    await syncService.initialize();
+                }
+                else {
+                    set((state) => ({
+                        auth: {
+                            ...state.auth,
+                            user: null,
+                            session: null,
+                            isAuthenticated: false,
+                            isLoading: false,
+                            error: null,
+                        }
+                    }));
+                }
+            }
+            catch (error) {
+                set((state) => ({
+                    auth: {
+                        ...state.auth,
+                        user: null,
+                        session: null,
+                        isAuthenticated: false,
+                        isLoading: false,
+                        error: error.message,
+                    }
+                }));
+            }
+        },
     },
 }), {
     name: 'pte-app-storage', // LocalStorage key

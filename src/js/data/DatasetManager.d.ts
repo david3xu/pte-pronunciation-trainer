@@ -1,6 +1,10 @@
 /**
  * DatasetManager - Type-safe Unified Dataset Management System
  *
+ * ARCHITECTURE: Standalone dataset loader (no EventBus)
+ * - Pure data loading and caching functionality
+ * - Other components subscribe to Zustand vocabulary store for dataset changes
+ *
  * Purpose: Centralized manager for all PTE dataset types
  * - Vocabulary datasets (13 books, 13,000+ terms with IPA)
  * - Repeat Sentence (RS) - 620 sentences

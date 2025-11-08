@@ -4,6 +4,11 @@
  *
  * This is the TypeScript version of src/js/ui/UIController.js
  * Provides type-safe DOM manipulation for both vocabulary and practice modes
+ *
+ * ARCHITECTURE: Zustand state management
+ * - Replaced EventBus with Zustand store subscriptions
+ * - Reactive UI updates based on store changes
+ * - Direct store actions for user interactions
  */
 import type { VocabularyTerm, PracticeMode, PracticeItem } from '../../types';
 /**
@@ -11,7 +16,7 @@ import type { VocabularyTerm, PracticeMode, PracticeItem } from '../../types';
  */
 type LogLevel = 'error' | 'warn' | 'info';
 /**
- * Type-safe UI Controller
+ * Type-safe UI Controller with Zustand integration
  * Manages DOM updates, content display, and user interactions
  */
 export declare class UIController {
@@ -21,25 +26,30 @@ export declare class UIController {
     private state;
     private currentWord;
     private currentIndex;
+    private unsubscribers;
     constructor(config?: any);
+    /**
+     * Cleanup subscriptions
+     */
+    destroy(): void;
     /**
      * Get module instance with error handling
      */
     getModule<T = any>(moduleName: string, required?: boolean, defaultValue?: T | null): T | null;
     /**
-     * Centralized error handling
+     * Centralized error handling (Zustand version)
      */
     handleError(message: string, error?: Error | string, showToUser?: boolean, level?: LogLevel): void;
     /**
-     * Get current practice mode from state, SettingsModule, or config fallback
+     * Get current practice mode from Zustand Settings store
      */
     getPracticeMode(): PracticeMode;
     /**
-     * Setup event listeners for UI updates
+     * Setup Zustand store subscriptions (replaces EventBus listeners)
      */
-    setupEventListeners(): void;
+    private _setupStoreSubscriptions;
     /**
-     * Bind event listeners to DOM elements
+     * Bind event listeners to DOM elements (Zustand version)
      */
     bindEventListeners(): void;
     /**

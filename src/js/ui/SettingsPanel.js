@@ -1,9 +1,15 @@
 /**
  * SettingsPanel - Settings panel management and interaction
  *
+ * ARCHITECTURE: Zustand state management
+ * - Replaces EventBus with Zustand store subscriptions
+ * - Direct SettingsModule calls instead of event emissions
+ * - Panel state tracked in settings store
+ *
  * Type-safe UI controller for settings panel
  * Manages practice mode switching, settings persistence, import/export
  */
+import { useAppStore } from '../stores';
 /**
  * SettingsPanel - Manages settings UI and persistence
  *
@@ -13,9 +19,17 @@
 export class SettingsPanel {
     isOpen = false;
     config;
+    unsubscribers = [];
     constructor() {
         this.config = window.appConfig || new window.AppConfig();
         this.setupSettingsPanel();
+    }
+    /**
+     * Cleanup subscriptions
+     */
+    destroy() {
+        this.unsubscribers.forEach(unsub => unsub());
+        this.unsubscribers = [];
     }
     /**
      * Initialize settings panel with event listeners
@@ -46,11 +60,13 @@ export class SettingsPanel {
         }
         // Phase 2: Setup practice mode switching
         this.setupPracticeModeSwitch();
-        // Listen for voice changes to update dropdown (from Config.js)
-        const voicePreferenceChangedEvent = window.appConfig?.get('events.voice.preference.changed') || 'voice:preference:changed';
-        window.eventBus.on(voicePreferenceChangedEvent, (data) => {
-            this.updateVoiceSelection(data.voiceName);
+        // Subscribe to voice changes in Zustand store (replaces EventBus listener)
+        const unsubVoice = useAppStore.subscribe((state) => state.tts.selectedVoice, (selectedVoice) => {
+            if (selectedVoice) {
+                this.updateVoiceSelection(selectedVoice.name);
+            }
         });
+        this.unsubscribers.push(unsubVoice);
         // Listen for settings changes to persist them
         this.setupSettingsPersistence().catch(console.error);
     }
@@ -189,11 +205,9 @@ export class SettingsPanel {
             settingsPanel.classList.add('active');
             settingsPanel.classList.remove('collapsed');
             this.isOpen = true;
-            // Emit panel opened event (standardized from Config.js)
-            const panelOpenedEvent = window.appConfig.get('events.settings.panel.opened');
-            window.eventBus.emit(panelOpenedEvent, {
-                timestamp: new Date().toISOString()
-            });
+            // Update Zustand store (replaces EventBus emission)
+            useAppStore.getState().settings.updateSetting('isPanelOpen', true);
+            console.log('[SettingsPanel] Panel opened (Zustand updated)');
         }
     }
     /**
@@ -205,11 +219,9 @@ export class SettingsPanel {
             settingsPanel.classList.remove('active');
             settingsPanel.classList.add('collapsed');
             this.isOpen = false;
-            // Emit panel closed event (standardized from Config.js)
-            const panelClosedEvent = window.appConfig.get('events.settings.panel.closed');
-            window.eventBus.emit(panelClosedEvent, {
-                timestamp: new Date().toISOString()
-            });
+            // Update Zustand store (replaces EventBus emission)
+            useAppStore.getState().settings.updateSetting('isPanelOpen', false);
+            console.log('[SettingsPanel] Panel closed (Zustand updated)');
         }
     }
     /**
@@ -252,12 +264,8 @@ export class SettingsPanel {
         link.download = this.config.get('ui.labels.exportFilename');
         link.click();
         URL.revokeObjectURL(url);
-        // Emit export event (standardized from Config.js)
-        const settingsExportedEvent = window.appConfig.get('events.settings.exported');
-        window.eventBus.emit(settingsExportedEvent, {
-            settingsCount: Object.keys(settings).length - 2, // Exclude exportDate and version
-            timestamp: new Date().toISOString()
-        });
+        // Note: Settings exported event removed (informational, no listeners)
+        console.log(`[SettingsPanel] ✅ Exported ${Object.keys(settings).length - 2} settings`);
     }
     /**
      * Import settings from JSON data
@@ -277,12 +285,8 @@ export class SettingsPanel {
             // Import settings through SettingsModule
             const result = window.settingsModule.importSettings(settings);
             if (result) {
-                // Emit import event (standardized from Config.js)
-                const settingsImportedEvent = window.appConfig.get('events.settings.imported');
-                window.eventBus.emit(settingsImportedEvent, {
-                    settingsCount: Object.keys(settings).length - 2,
-                    timestamp: new Date().toISOString()
-                });
+                // Note: Settings imported event removed (informational, no listeners)
+                console.log(`[SettingsPanel] ✅ Imported ${Object.keys(settings).length - 2} settings`);
             }
             return result;
         }
@@ -311,12 +315,16 @@ export class SettingsPanel {
         return this.isOpen;
     }
     /**
-     * Save a setting value using SettingsModule events
+     * Save a setting value using SettingsModule directly (replaces EventBus)
      */
     saveSetting(key, value) {
-        // Emit event to request setting change (standardized from Config.js)
-        const settingsRequestChangeEvent = window.appConfig.get('events.settings.requestChange');
-        window.eventBus.emit(settingsRequestChangeEvent, { key, value });
+        // Call SettingsModule directly instead of emitting event
+        if (window.settingsModule) {
+            window.settingsModule.updateSetting(key, value);
+        }
+        else {
+            console.error('❌ SettingsModule not available - cannot save setting');
+        }
     }
     /**
      * Helper method to wait for SettingsModule to become available

@@ -27,20 +27,20 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
   const displayText = isVocabularyTerm
     ? (item as VocabularyTerm).word
     : isPracticeSentence
-    ? (item as PracticeItem).sentence
-    : (item as PracticeItem).question;
+    ? 'sentence' in item ? item.sentence : ''
+    : 'question' in item ? item.question : '';
 
   const difficulty = 'difficulty' in item
     ? item.difficulty
     : ('metadata' in item && item.metadata?.difficulty) || 'normal';
 
-  const pronunciation = isVocabularyTerm ? (item as VocabularyTerm).pronunciation : null;
+  const ipa = isVocabularyTerm ? (item as VocabularyTerm).ipa : null;
 
   // Handle TTS playback
   const handleSpeak = (mode: 'word' | 'sentence' | 'question' = 'word') => {
-    if (isVocabularyTerm && pronunciation) {
+    if (isVocabularyTerm && ipa) {
       // Speak word with British pronunciation
-      tts.startSpeaking(displayText, pronunciation.british.ipa, mode);
+      tts.startSpeaking(displayText, ipa.british || displayText, mode);
     } else {
       // Speak sentence/question
       tts.startSpeaking(displayText, undefined, isPracticeSentence ? 'sentence' : 'question');
@@ -75,17 +75,17 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
         </Text>
 
         {/* Pronunciation (for vocabulary terms) */}
-        {isVocabularyTerm && pronunciation && (
+        {isVocabularyTerm && ipa && (
           <Flex direction="column" gap="3">
             {/* British pronunciation */}
-            {pronunciation.british && (
+            {ipa.british && (
               <Flex direction="column" gap="1">
                 <Text size="2" color="gray" weight="medium">
                   🇬🇧 British
                 </Text>
                 <Flex align="center" gap="2">
                   <Text size="4" className="font-mono text-accent">
-                    {pronunciation.british.ipa}
+                    {ipa.british}
                   </Text>
                   <Button
                     size="1"
@@ -96,23 +96,23 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
                     <SpeakerLoudIcon />
                   </Button>
                 </Flex>
-                {pronunciation.british.phonetic && (
+                {(item as VocabularyTerm).phonetic?.british && (
                   <Text size="3" color="gray" className="italic">
-                    Sounds like: <strong>{pronunciation.british.phonetic}</strong>
+                    Sounds like: <strong>{(item as VocabularyTerm).phonetic?.british}</strong>
                   </Text>
                 )}
               </Flex>
             )}
 
             {/* American pronunciation */}
-            {pronunciation.american && (
+            {ipa.american && (
               <Flex direction="column" gap="1" mt="2">
                 <Text size="2" color="gray" weight="medium">
                   🇺🇸 American
                 </Text>
                 <Flex align="center" gap="2">
                   <Text size="4" className="font-mono text-accent">
-                    {pronunciation.american.ipa}
+                    {ipa.american}
                   </Text>
                   <Button
                     size="1"
@@ -123,9 +123,9 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
                     <SpeakerLoudIcon />
                   </Button>
                 </Flex>
-                {pronunciation.american.phonetic && (
+                {(item as VocabularyTerm).phonetic?.american && (
                   <Text size="3" color="gray" className="italic">
-                    Sounds like: <strong>{pronunciation.american.phonetic}</strong>
+                    Sounds like: <strong>{(item as VocabularyTerm).phonetic?.american}</strong>
                   </Text>
                 )}
               </Flex>

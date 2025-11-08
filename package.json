@@ -169,6 +169,8 @@
     }
   },
   "dependencies": {
+    "@aws-sdk/client-polly": "^3.927.0",
+    "@aws-sdk/client-s3": "^3.927.0",
     "@supabase/supabase-js": "^2.80.0",
     "immer": "^10.2.0",
     "openai": "^6.8.1",

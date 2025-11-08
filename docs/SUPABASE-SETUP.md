@@ -105,7 +105,25 @@ supabase link --project-ref kopzyjpniqqsxefteyfx
 supabase db push
 ```
 
-### 4. Verify Database Setup
+### 4. Verify Setup
+
+**Quick Verification (Local)**
+
+Run the automated verification script:
+
+```bash
+npm run validate:supabase
+```
+
+This checks:
+- Environment variables configured
+- Migration file exists
+- All Supabase services present
+- Zustand auth store integrated
+- App initialization configured
+- Dependencies installed
+
+**Database Verification (Supabase Dashboard)**
 
 Check that tables were created:
 
@@ -119,16 +137,26 @@ Check that tables were created:
 
 ### 5. Test Authentication
 
+**Authentication is automatically initialized on app startup!**
+
+The auth store checks for an existing Supabase session in localStorage when the app loads. If a user was previously logged in, they'll be automatically authenticated.
+
 ```bash
 # Start dev server
 npm run dev
 
 # Open browser at http://localhost:3001
+# Open browser console to see auth initialization:
+#   ✅ PTEApp: User authenticated - user@example.com (if logged in)
+#   ℹ️ PTEApp: No authenticated user (guest mode) (if not logged in)
+
 # Click "Login" button (top right)
 # Sign up with test account:
 #   Email: test@example.com
 #   Password: test123456
 ```
+
+**Note:** Auth initialization is non-critical. If Supabase is unavailable or not configured, the app will continue in guest mode without authentication features.
 
 ---
 

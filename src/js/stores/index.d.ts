@@ -20,7 +20,7 @@
  * // In React components (future):
  * const isAutoPlaying = useAppStore((state) => state.audio.isAutoPlaying);
  */
-import type { AudioState, TTSState, SettingsState, VocabularyState, ProgressState, UIState } from './types';
+import type { AudioState, TTSState, SettingsState, VocabularyState, ProgressState, UIState, AuthState } from './types';
 export interface AppState {
     audio: AudioState;
     tts: TTSState;
@@ -28,6 +28,7 @@ export interface AppState {
     vocabulary: VocabularyState;
     progress: ProgressState;
     ui: UIState;
+    auth: AuthState;
 }
 /**
  * Main application store

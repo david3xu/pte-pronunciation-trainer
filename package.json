@@ -20,6 +20,7 @@
     "validate": "node scripts/validate.js",
     "validate:docs": "node scripts/validate-docs.js",
     "validate:structure": "node scripts/validate-structure.js",
+    "validate:supabase": "node scripts/verify-supabase-setup.js",
     "validate:all": "npm run validate:docs && npm run validate:structure && npm run validate",
     "clean": "rm -rf dist/ data/processed/",
     "start": "npm run data:pte && npm run dev",

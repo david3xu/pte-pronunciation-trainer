@@ -99,6 +99,26 @@ export interface UIState {
     hideNotification: () => void;
     setInitializing: (isInitializing: boolean) => void;
 }
+export interface User {
+    id: string;
+    email: string;
+    full_name?: string;
+    avatar_url?: string;
+    created_at?: string;
+}
+export interface AuthState {
+    user: User | null;
+    session: any | null;
+    isAuthenticated: boolean;
+    isLoading: boolean;
+    error: string | null;
+    setUser: (user: User | null) => void;
+    setSession: (session: any | null) => void;
+    setLoading: (isLoading: boolean) => void;
+    setError: (error: string | null) => void;
+    signOut: () => void;
+    initialize: () => Promise<void>;
+}
 export interface AppStore {
     audio: AudioState;
     tts: TTSState;
@@ -106,5 +126,6 @@ export interface AppStore {
     vocabulary: VocabularyState;
     progress: ProgressState;
     ui: UIState;
+    auth: AuthState;
 }
 //# sourceMappingURL=types.d.ts.map

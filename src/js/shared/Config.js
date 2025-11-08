@@ -307,4 +307,11 @@ export class AppConfig {
 export const appConfig = new AppConfig();
 // Default export for compatibility
 export default appConfig;
+// CommonJS export for Node.js compatibility
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = AppConfig;
+    module.exports.AppConfig = AppConfig;
+    module.exports.appConfig = appConfig;
+    module.exports.default = appConfig;
+}
 //# sourceMappingURL=Config.js.map

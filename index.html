@@ -287,10 +287,10 @@
 
     <!-- Supabase Client & Auth Scripts (load after DOM) -->
     <script type="module">
-        // Import Supabase modules
-        import { supabase, authService, syncService, autoSyncManager } from './src/ts/supabase/index.ts';
-        import { authUI } from './src/ts/ui/AuthUI.ts';
-        import { analyticsDashboard } from './src/ts/ui/AnalyticsDashboard.ts';
+        // Import Supabase modules (compiled JavaScript)
+        import { supabase, authService, syncService, autoSyncManager } from './src/js/supabase/index.js';
+        import { authUI } from './src/js/ui/AuthUI.js';
+        import { analyticsDashboard } from './src/js/ui/AnalyticsDashboard.js';
 
         // Expose to window for debugging
         window.supabase = supabase;

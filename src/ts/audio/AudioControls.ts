@@ -3,17 +3,18 @@
  * Handles play/pause/repeat functionality and timing for both vocabulary and practice modes
  *
  * This is the TypeScript version of src/js/audio/AudioControls.js
- * ARCHITECTURE: Event-driven initialization
- * - No hard-coded settings defaults in constructor (delay, repeatMode)
- * - All settings initialized via SettingsModule events on app startup
- * - Ensures consistent behavior across all vocabulary books
- * - Single source of truth: Config.js → SettingsModule → AudioControls → TTSEngine
+ * ARCHITECTURE: Zustand state management
+ * - Replaced EventBus with Zustand store subscriptions
+ * - Settings synchronized with Settings store
+ * - State changes trigger reactive updates across components
+ * - Single source of truth: Zustand stores → AudioControls → TTSEngine
  */
 
 import type {
   VocabularyTerm,
   PracticeMode
 } from '../../types';
+import { useAppStore } from '../stores';
 
 /**
  * Repeat mode type
@@ -21,144 +22,145 @@ import type {
 type RepeatMode = 'once' | 'twice' | 'intensive' | 'loop';
 
 /**
- * Type-safe Audio Controls
+ * Type-safe Audio Controls with Zustand integration
  * Manages playback, navigation, and repeat modes
  */
 export class AudioControls {
   // Dependencies
   private config: any;
 
-  // Playback state
+  // Playback state (local state, not in store - specific to AudioControls instance)
   private isPlaying: boolean = false;
   private currentIndex: number = 0;
   private autoPlayTimeout: NodeJS.Timeout | null = null;
 
-  // Settings (initialized via events from SettingsModule)
+  // Settings (synchronized with Zustand store)
   private delay: number | null = null;
   private repeatMode: RepeatMode | null = null;
+
+  // Store subscriptions (for cleanup)
+  private unsubscribers: Array<() => void> = [];
 
   constructor(config?: any) {
     this.config = config || (window as any).appConfig || null;
 
-    // Attach event listeners for settings changes and audio control
-    this._attachEventListeners();
+    // Initialize settings from store
+    this._initializeFromStore();
+
+    // Setup Zustand store subscriptions (replaces EventBus listeners)
+    this._setupStoreSubscriptions();
   }
 
   /**
-   * Safely get current practice mode from SettingsModule or Config.js fallback
+   * Initialize settings from Zustand store
+   */
+  private _initializeFromStore(): void {
+    // Initialize delay from config default
+    const defaultDelay = this.config.get('tts.delays.normal');
+    this.delay = defaultDelay;
+    this.repeatMode = 'once'; // Default
+
+    console.log('[AudioControls] Initialized from Zustand store');
+  }
+
+  /**
+   * Cleanup subscriptions
+   */
+  destroy(): void {
+    this.unsubscribers.forEach(unsub => unsub());
+    this.unsubscribers = [];
+  }
+
+  /**
+   * Safely get current practice mode from Zustand Settings store
    */
   getPracticeMode(): PracticeMode {
-    const settingsModule = (window as any).settingsModule;
-    if (settingsModule && typeof settingsModule.get === 'function') {
-      return settingsModule.get('practiceMode') || this.config.get('data.defaults.practiceMode');
-    }
-    return this.config.get('data.defaults.practiceMode');
+    const practiceMode = useAppStore.getState().settings.practiceMode;
+    return practiceMode || this.config.get('data.defaults.practiceMode');
   }
 
   /**
-   * Attach event listeners for settings changes and audio control events
+   * Setup Zustand store subscriptions (replaces EventBus listeners)
    */
-  private _attachEventListeners(): void {
-    const eventBus = (window as any).eventBus;
-
-    // Listen to settings:changed event
-    const settingsChangedEvent = this.config.get('events.settings.changed');
-    eventBus.on(settingsChangedEvent, this._handleSettingChange.bind(this));
-
-    // Listen for learning mode changes to reset index
-    eventBus.on(settingsChangedEvent, (data: any) => {
-      if (data.key === 'learningMode') {
-        console.log(`[AudioControls] 🔄 Learning mode changed to ${data.value}, resetting index to 0`);
+  private _setupStoreSubscriptions(): void {
+    // Subscribe to vocabulary book changes (learning mode)
+    const unsubVocabBook = useAppStore.subscribe(
+      (state) => state.settings.vocabularyBook,
+      (vocabularyBook) => {
+        console.log(`[AudioControls] 🔄 Vocabulary book changed to ${vocabularyBook}, resetting index to 0`);
         this.setCurrentIndex(0);
         if (this.isPlaying) {
           this.pauseAutoPlay();
         }
       }
-    });
+    );
+    this.unsubscribers.push(unsubVocabBook);
 
-    // Also listen for the standardized event as a backup
-    const learningModeChangedEvent = this.config.get('events.mode.learning.changed');
-    eventBus.on(learningModeChangedEvent, () => {
-      console.log('[AudioControls] 🔄 Learning mode changed event received, resetting index to 0');
-      this.setCurrentIndex(0);
-      if (this.isPlaying) {
-        this.pauseAutoPlay();
+    // Subscribe to practice mode changes
+    const unsubPracticeMode = useAppStore.subscribe(
+      (state) => state.settings.practiceMode,
+      (mode) => {
+        console.log(`[AudioControls] 🔄 Practice mode changed to ${mode}, resetting state`);
+        if (this.isPlaying) {
+          this.pauseAutoPlay();
+        }
+        if (mode === null) { // vocabulary mode
+          this.setCurrentIndex(0);
+        }
       }
-    });
+    );
+    this.unsubscribers.push(unsubPracticeMode);
 
-    // Listen for practice mode changes to reset state
-    const practiceModeChangedEvent = this.config.get('events.mode.practice.changed');
-    eventBus.on(practiceModeChangedEvent, (data: any) => {
-      console.log(`[AudioControls] 🔄 Practice mode changed to ${data.mode}, resetting state`);
-
-      if (this.isPlaying) {
-        this.pauseAutoPlay();
+    // Subscribe to dataset changes
+    const unsubDataset = useAppStore.subscribe(
+      (state) => state.vocabulary.currentDataset,
+      (dataset) => {
+        const mode = useAppStore.getState().settings.practiceMode;
+        if (dataset.length > 0 && mode !== null) {
+          console.log(`[AudioControls] 📚 Practice dataset changed (${dataset.length} items)`);
+          if (this.isPlaying) {
+            this.pauseAutoPlay();
+          }
+        }
       }
+    );
+    this.unsubscribers.push(unsubDataset);
 
-      if (data.mode === 'vocabulary') {
-        this.setCurrentIndex(0);
+    // Subscribe to audio store auto-play trigger
+    const unsubAudioAutoPlay = useAppStore.subscribe(
+      (state) => state.audio.isAutoPlaying,
+      (isAutoPlaying, prevIsAutoPlaying) => {
+        // Only start if state changed from false to true
+        if (isAutoPlaying && !prevIsAutoPlaying && !this.isPlaying) {
+          this.startAutoPlay();
+        }
       }
-    });
+    );
+    this.unsubscribers.push(unsubAudioAutoPlay);
 
-    // Listen for dataset changes in practice modes
-    const datasetChangedEvent = this.config.get('events.dataset.practice.changed');
-    eventBus.on(datasetChangedEvent, (data: any) => {
-      console.log(`[AudioControls] 📚 Practice dataset changed: ${data.datasetId} (${data.itemCount} items)`);
-
-      if (this.isPlaying) {
-        this.pauseAutoPlay();
+    // Subscribe to audio pause trigger
+    const unsubAudioPause = useAppStore.subscribe(
+      (state) => state.audio.isPaused,
+      (isPaused, prevIsPaused) => {
+        // Only pause if state changed from false to true
+        if (isPaused && !prevIsPaused && this.isPlaying) {
+          this.pauseAutoPlay();
+        }
       }
-    });
+    );
+    this.unsubscribers.push(unsubAudioPause);
 
-    // Audio control events
-    const audioStartEvent = this.config.get('events.audio.autoplay.start');
-    const audioPauseEvent = this.config.get('events.audio.autoplay.pause');
-    const audioNextEvent = this.config.get('events.audio.navigate.next');
-    const audioPrevEvent = this.config.get('events.audio.navigate.prev');
-
-    eventBus.on(audioStartEvent, () => this.startAutoPlay());
-    eventBus.on(audioPauseEvent, () => this.pauseAutoPlay());
-    eventBus.on(audioNextEvent, ({ mode }: any) => {
-      if (mode && mode !== 'vocabulary') {
-        this.nextItem();
-      } else {
-        this.nextWord();
+    // Subscribe to repeat mode changes
+    const unsubRepeat = useAppStore.subscribe(
+      (state) => state.audio.repeatMode,
+      (repeatMode) => {
+        this._setRepeatMode(repeatMode ? 'loop' : 'once');
+        console.log(`[AudioControls] Repeat mode changed to ${repeatMode}`);
       }
-    });
-    eventBus.on(audioPrevEvent, ({ mode }: any) => {
-      if (mode && mode !== 'vocabulary') {
-        this.prevItem();
-      } else {
-        this.previousWord();
-      }
-    });
-  }
+    );
+    this.unsubscribers.push(unsubRepeat);
 
-  /**
-   * Handle setting changes from SettingsModule
-   */
-  private _handleSettingChange({ key, value }: { key: string; value: any }): void {
-    if (key === 'delay') {
-      this.delay = parseInt(value) || this.config.get('tts.delays.normal');
-      console.log(`[AudioControls] Delay changed to ${this.delay}ms`);
-    } else if (key === 'repeat') {
-      this._setRepeatMode(value);
-      console.log(`[AudioControls] Repeat mode changed to ${value}`);
-    } else if (key === 'practiceMode') {
-      console.log(`[AudioControls] Practice mode changed to ${value}`);
-
-      if (this.isPlaying) {
-        this.pauseAutoPlay();
-      }
-
-      this.setCurrentIndex(0);
-    } else if (key === 'practiceDataset') {
-      console.log(`[AudioControls] Practice dataset changed to ${value}`);
-
-      if (this.isPlaying) {
-        this.pauseAutoPlay();
-      }
-    }
+    console.log('[AudioControls] Zustand store subscriptions setup complete');
   }
 
   /**
@@ -187,13 +189,8 @@ export class AudioControls {
       console.log(`[AudioControls] Set TTSEngine targetRepeats to ${targetRepeats} for mode '${this.repeatMode}'`);
     }
 
-    // Emit event
-    const repeatModeChangedEvent = this.config.get('events.audio.repeat.changed') || 'audio:repeat:changed';
-    (window as any).eventBus.emit(repeatModeChangedEvent, {
-      mode: this.repeatMode,
-      targetRepeats: targetRepeats,
-      timestamp: new Date().toISOString()
-    });
+    // Update audio store (replaces event emission)
+    useAppStore.getState().audio.toggleRepeat();
   }
 
   /**
@@ -221,7 +218,7 @@ export class AudioControls {
       const pteVocabularyManager = (window as any).pteVocabularyManager;
       if (!pteVocabularyManager) {
         console.error('[AudioControls] ❌ PTEVocabularyManager not available - cannot start auto-play');
-        (window as any).progressTracker?.showError('Vocabulary manager not initialized. Please refresh the page.');
+        useAppStore.getState().ui.showNotification('Vocabulary manager not initialized. Please refresh the page.', 'error');
         return;
       }
 
@@ -233,7 +230,7 @@ export class AudioControls {
 
       if (!canPlay) {
         console.error('[AudioControls] ❌ No vocabulary loaded - cannot start auto-play');
-        (window as any).progressTracker?.showError('No vocabulary data loaded. Please refresh the page.');
+        useAppStore.getState().ui.showNotification('No vocabulary data loaded. Please refresh the page.', 'error');
         return;
       }
 
@@ -244,21 +241,22 @@ export class AudioControls {
       // Make sure we have a valid word object
       if (!currentWord) {
         console.error('[AudioControls] ❌ Invalid current word at index:', currentIndex);
-        (window as any).progressTracker?.showError('Could not find the current word. Please try again.');
+        useAppStore.getState().ui.showNotification('Could not find the current word. Please try again.', 'error');
         return;
       }
 
       // Log current word for debugging
       console.log(`[AudioControls] Current word: ${currentWord?.english || '(unknown)'}`);
 
-      // Update display immediately
-      const uiController = (window as any).uiController;
-      if (uiController && typeof uiController.displayWord === 'function') {
-        uiController.displayWord(currentWord, currentIndex);
-      }
+      // Update store (replaces content:display event)
+      useAppStore.getState().vocabulary.setCurrentItem(currentWord);
+      useAppStore.getState().audio.setCurrentIndex(currentIndex);
     } else {
-      // Practice mode (RS/ASQ/WFD): Check for current item and dataset
-      canPlay = !!(window as any).currentItem && !!(window as any).currentDataset;
+      // Practice mode (RS/ASQ/WFD): Check for current item and dataset from store
+      const currentDataset = useAppStore.getState().vocabulary.currentDataset;
+      const currentItem = useAppStore.getState().vocabulary.currentItem;
+
+      canPlay = !!currentItem && currentDataset.length > 0;
 
       if (!canPlay) {
         console.error('[AudioControls] ❌ No practice dataset loaded - cannot start auto-play');
@@ -266,7 +264,7 @@ export class AudioControls {
         // Check if we need to reload the dataset
         if (!(window as any).datasetManager || !(window as any).uiController) {
           console.error('[AudioControls] ❌ DatasetManager or UIController not available');
-          (window as any).progressTracker?.showError(`Required components not initialized. Please refresh the page.`);
+          useAppStore.getState().ui.showNotification('Required components not initialized. Please refresh the page.', 'error');
           return;
         }
 
@@ -274,20 +272,18 @@ export class AudioControls {
         console.log('[AudioControls] 🔄 Attempting to load practice dataset via UIController...');
 
         try {
-          // Use SettingsModule to get the current dataset
-          const settingsModule = (window as any).settingsModule;
-          const practiceDatasetSetting = settingsModule ? settingsModule.get('practiceDataset') : null;
+          const practiceDatasetSetting = useAppStore.getState().settings.datasetId;
 
           if (practiceDatasetSetting && (window as any).uiController.loadPracticeDataset) {
             console.log(`[AudioControls] 🔄 Loading dataset: ${practiceDatasetSetting}`);
 
             // Give feedback to user
-            (window as any).progressTracker?.updateStatus(`Loading ${currentMode.toUpperCase()} dataset...`);
+            useAppStore.getState().ui.showNotification(`Loading ${currentMode.toUpperCase()} dataset...`, 'info');
 
             // Try to load the practice dataset
             (window as any).uiController.loadPracticeDataset(currentMode)
               .then((success: boolean) => {
-                if (success && (window as any).currentItem) {
+                if (success && useAppStore.getState().vocabulary.currentItem) {
                   console.log('[AudioControls] ✅ Dataset loaded successfully, starting playback...');
 
                   // Now we can start playback
@@ -296,28 +292,28 @@ export class AudioControls {
                   this.playCurrentItem();
                 } else {
                   console.error('[AudioControls] ❌ Failed to load dataset');
-                  (window as any).progressTracker?.showError(`Failed to load ${currentMode.toUpperCase()} dataset`);
+                  useAppStore.getState().ui.showNotification(`Failed to load ${currentMode.toUpperCase()} dataset`, 'error');
                 }
               })
               .catch((err: Error) => {
                 console.error('[AudioControls] ❌ Error loading dataset:', err);
-                (window as any).progressTracker?.showError(`Error loading dataset: ${err.message}`);
+                useAppStore.getState().ui.showNotification(`Error loading dataset: ${err.message}`, 'error');
               });
 
             return; // Exit early as we're handling this asynchronously
           } else {
             console.error('[AudioControls] ❌ No practice dataset configured');
-            (window as any).progressTracker?.showError(`No ${currentMode.toUpperCase()} dataset configured. Please check settings.`);
+            useAppStore.getState().ui.showNotification(`No ${currentMode.toUpperCase()} dataset configured. Please check settings.`, 'error');
             return;
           }
         } catch (error: any) {
           console.error('[AudioControls] ❌ Failed to load dataset:', error);
-          (window as any).progressTracker?.showError(`Failed to load ${currentMode.toUpperCase()} dataset`);
+          useAppStore.getState().ui.showNotification(`Failed to load ${currentMode.toUpperCase()} dataset`, 'error');
           return;
         }
       }
 
-      console.log(`[AudioControls] ✅ Practice dataset ready - item: ${(window as any).currentItem ? 'available' : 'missing'}`);
+      console.log(`[AudioControls] ✅ Practice dataset ready`);
     }
 
     if (this.isPlaying) {
@@ -327,6 +323,9 @@ export class AudioControls {
 
     this.isPlaying = true;
     this.showPlayingUI();
+
+    // Update audio store
+    useAppStore.getState().audio.startAutoPlay();
 
     // Call appropriate playback method based on mode
     if (isVocabularyMode) {
@@ -355,11 +354,8 @@ export class AudioControls {
 
     (window as any).progressTracker.updateStatus('Paused');
 
-    // Emit event
-    const autoPlayPausedEvent = this.config.get('events.audio.autoplay.paused') || 'audio:autoplay:paused';
-    (window as any).eventBus.emit(autoPlayPausedEvent, {
-      currentIndex: this.currentIndex
-    });
+    // Update audio store (replaces event emission)
+    useAppStore.getState().audio.pauseAutoPlay();
   }
 
   /**
@@ -378,25 +374,9 @@ export class AudioControls {
     try {
       console.log(`[AudioControls] 🎵 Playing word: "${currentWord?.english || '(unknown)'}" at index ${this.currentIndex} (${this.currentIndex + 1} of ${pteVocabularyManager.getTotalWords()})`);
 
-      // Update display immediately before playing audio
-      const uiController = (window as any).uiController;
-      if (uiController && typeof uiController.displayWord === 'function') {
-        uiController.displayWord(currentWord, this.currentIndex);
-      } else {
-        // Fallback: emit content display event for UI update
-        const contentDisplayEvent = this.config.get('events.content.display') || 'content:display';
-        (window as any).eventBus.emit(contentDisplayEvent, {
-          word: currentWord,
-          index: this.currentIndex
-        });
-      }
-
-      // Emit word play start event
-      const wordPlayStartedEvent = this.config.get('events.audio.word.started') || 'audio:word:started';
-      (window as any).eventBus.emit(wordPlayStartedEvent, {
-        word: currentWord,
-        index: this.currentIndex
-      });
+      // Update store (replaces content:display event)
+      useAppStore.getState().vocabulary.setCurrentItem(currentWord);
+      useAppStore.getState().audio.setCurrentIndex(this.currentIndex);
 
       // Start TTS
       await this.handleWordRepetition(currentWord);
@@ -409,7 +389,7 @@ export class AudioControls {
 
     } catch (error) {
       console.error('Error playing word:', error);
-      (window as any).progressTracker.showError('Error playing word');
+      useAppStore.getState().ui.showNotification('Error playing word', 'error');
     }
   }
 
@@ -515,12 +495,8 @@ export class AudioControls {
       `🔄 Auto-looping to ${nextBook?.label || nextMode}...`
     );
 
-    // Change to next book via event
-    const settingsRequestChangeEvent = this.config.get('events.settings.requestChange');
-    (window as any).eventBus.emit(settingsRequestChangeEvent, {
-      key: 'learningMode',
-      value: nextMode
-    });
+    // Change to next book via Zustand store (replaces event emission)
+    useAppStore.getState().settings.updateSetting('vocabularyBook', nextMode);
 
     // Reset to first word
     this.currentIndex = 0;
@@ -575,6 +551,9 @@ export class AudioControls {
     }
 
     this.updateCurrentDisplay();
+
+    // Update audio store
+    useAppStore.getState().audio.navigateNext();
   }
 
   /**
@@ -595,6 +574,9 @@ export class AudioControls {
     }
 
     this.updateCurrentDisplay();
+
+    // Update audio store
+    useAppStore.getState().audio.navigatePrev();
   }
 
   /**
@@ -604,12 +586,9 @@ export class AudioControls {
     const pteVocabularyManager = (window as any).pteVocabularyManager;
     const currentWord = pteVocabularyManager.getCurrentWord(this.currentIndex);
     if (currentWord) {
-      // Emit standardized event
-      const contentDisplayEvent = this.config.get('events.content.display');
-      (window as any).eventBus.emit(contentDisplayEvent, {
-        word: currentWord,
-        index: this.currentIndex
-      });
+      // Update store (replaces event emission)
+      useAppStore.getState().vocabulary.setCurrentItem(currentWord);
+      useAppStore.getState().audio.setCurrentIndex(this.currentIndex);
     }
   }
 
@@ -649,21 +628,24 @@ export class AudioControls {
    * Play current item in practice mode (RS/ASQ/WFD)
    */
   async playCurrentItem(): Promise<void> {
-    if (!this.isPlaying || !(window as any).currentItem) return;
+    const currentItem = useAppStore.getState().vocabulary.currentItem;
+
+    if (!this.isPlaying || !currentItem) return;
 
     try {
       const mode = this.getPracticeMode();
-      const item = (window as any).currentItem;
 
       console.log(`[AudioControls] 🎵 playCurrentItem - Mode: ${mode}`);
-      console.log(`[AudioControls] Current item:`, item);
+      console.log(`[AudioControls] Current item:`, currentItem);
 
       // IMPORTANT: Refresh display when PLAY is clicked
       const uiController = (window as any).uiController;
-      uiController.displayContent(item, mode);
+      uiController.displayContent(currentItem, mode);
 
       // Get text to speak based on mode
       let textToSpeak = '';
+      const item: any = currentItem;
+
       if (mode === 'rs' && item.content.sentence) {
         textToSpeak = item.content.sentence;
       } else if (mode === 'asq' && item.content.question) {
@@ -690,7 +672,7 @@ export class AudioControls {
 
     } catch (error) {
       console.error('Error playing item:', error);
-      (window as any).progressTracker.showError('Error playing item');
+      useAppStore.getState().ui.showNotification('Error playing item', 'error');
     }
   }
 
@@ -698,18 +680,19 @@ export class AudioControls {
    * Navigate to next item in practice mode
    */
   nextItem(): void {
-    const currentDataset = (window as any).currentDataset;
-    if (!currentDataset) return;
+    const currentDataset = useAppStore.getState().vocabulary.currentDataset;
 
-    let currentDatasetIndex = (window as any).currentDatasetIndex || 0;
-    currentDatasetIndex++;
+    if (currentDataset.length === 0) return;
 
-    console.log(`[AudioControls] ⏭️ nextItem - Index: ${currentDatasetIndex}/${currentDataset.items.length}`);
+    const currentIndex = useAppStore.getState().audio.currentIndex;
+    let nextIndex = currentIndex + 1;
 
-    if (currentDatasetIndex >= currentDataset.items.length) {
+    console.log(`[AudioControls] ⏭️ nextItem - Index: ${nextIndex}/${currentDataset.length}`);
+
+    if (nextIndex >= currentDataset.length) {
       // Reached end - loop or stop
       if (this.repeatMode === 'loop') {
-        currentDatasetIndex = 0;
+        nextIndex = 0;
         console.log(`[AudioControls] 🔄 Looping back to start`);
       } else {
         this.handlePlaybackEnd();
@@ -718,40 +701,61 @@ export class AudioControls {
     }
 
     // Display next item
-    const nextItem = currentDataset.items[currentDatasetIndex];
-    (window as any).currentDatasetIndex = currentDatasetIndex;
-    (window as any).currentItem = nextItem; // IMPORTANT: Update currentItem for PLAY button
+    const nextItem = currentDataset[nextIndex];
+
+    if (!nextItem) {
+      console.error(`[AudioControls] No item found at index ${nextIndex}`);
+      return;
+    }
+
+    // Update store (replaces window.currentItem assignment)
+    useAppStore.getState().vocabulary.setCurrentItem(nextItem);
+    useAppStore.getState().audio.setCurrentIndex(nextIndex);
 
     console.log(`[AudioControls] Displaying next item:`, nextItem);
     const currentMode = this.getPracticeMode();
     (window as any).uiController.displayContent(nextItem, currentMode);
+
+    // Update audio store
+    useAppStore.getState().audio.navigateNext();
   }
 
   /**
    * Navigate to previous item in practice mode
    */
   prevItem(): void {
-    const currentDataset = (window as any).currentDataset;
-    if (!currentDataset) return;
+    const currentDataset = useAppStore.getState().vocabulary.currentDataset;
 
-    let currentDatasetIndex = (window as any).currentDatasetIndex || 0;
-    currentDatasetIndex--;
+    if (currentDataset.length === 0) return;
 
-    console.log(`[AudioControls] ⏮️ prevItem - Index: ${currentDatasetIndex}/${currentDataset.items.length}`);
+    const currentIndex = useAppStore.getState().audio.currentIndex;
+    let prevIndex = currentIndex - 1;
 
-    if (currentDatasetIndex < 0) {
-      currentDatasetIndex = currentDataset.items.length - 1;
+    console.log(`[AudioControls] ⏮️ prevItem - Index: ${prevIndex}/${currentDataset.length}`);
+
+    if (prevIndex < 0) {
+      prevIndex = currentDataset.length - 1;
       console.log(`[AudioControls] 🔄 Wrapping to end`);
     }
 
     // Display previous item
-    const prevItem = currentDataset.items[currentDatasetIndex];
-    (window as any).currentDatasetIndex = currentDatasetIndex;
-    (window as any).currentItem = prevItem; // IMPORTANT: Update currentItem for PLAY button
+    const prevItem = currentDataset[prevIndex];
+
+    if (!prevItem) {
+      console.error(`[AudioControls] No item found at index ${prevIndex}`);
+      return;
+    }
+
+    // Update store (replaces window.currentItem assignment)
+    useAppStore.getState().vocabulary.setCurrentItem(prevItem);
+    useAppStore.getState().audio.setCurrentIndex(prevIndex);
 
     console.log(`[AudioControls] Displaying previous item:`, prevItem);
     const currentMode = this.getPracticeMode();
     (window as any).uiController.displayContent(prevItem, currentMode);
+
+    // Update audio store
+    useAppStore.getState().audio.navigatePrev();
   }
 
   /**
@@ -778,18 +782,10 @@ export class AudioControls {
     // Get the current word at this index
     const currentWord = pteVocabularyManager.getCurrentWord(this.currentIndex);
 
-    // Update the UI with this word
-    const uiController = (window as any).uiController;
-    if (currentWord && uiController && typeof uiController.displayWord === 'function') {
-      console.log(`[AudioControls] Updating UI to show word: ${currentWord.english}`);
-      uiController.displayWord(currentWord, this.currentIndex);
-    } else if ((window as any).eventBus) {
-      // Fallback: emit content display event
-      const contentDisplayEvent = this.config.get('events.content.display') || 'content:display';
-      (window as any).eventBus.emit(contentDisplayEvent, {
-        word: currentWord,
-        index: this.currentIndex
-      });
+    // Update store (replaces event emission)
+    if (currentWord) {
+      useAppStore.getState().vocabulary.setCurrentItem(currentWord);
+      useAppStore.getState().audio.setCurrentIndex(this.currentIndex);
     }
   }
 

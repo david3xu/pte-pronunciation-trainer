@@ -3,15 +3,15 @@
  * Handles play/pause/repeat functionality and timing for both vocabulary and practice modes
  *
  * This is the TypeScript version of src/js/audio/AudioControls.js
- * ARCHITECTURE: Event-driven initialization
- * - No hard-coded settings defaults in constructor (delay, repeatMode)
- * - All settings initialized via SettingsModule events on app startup
- * - Ensures consistent behavior across all vocabulary books
- * - Single source of truth: Config.js → SettingsModule → AudioControls → TTSEngine
+ * ARCHITECTURE: Zustand state management
+ * - Replaced EventBus with Zustand store subscriptions
+ * - Settings synchronized with Settings store
+ * - State changes trigger reactive updates across components
+ * - Single source of truth: Zustand stores → AudioControls → TTSEngine
  */
 import type { VocabularyTerm, PracticeMode } from '../../types';
 /**
- * Type-safe Audio Controls
+ * Type-safe Audio Controls with Zustand integration
  * Manages playback, navigation, and repeat modes
  */
 export declare class AudioControls {
@@ -21,19 +21,24 @@ export declare class AudioControls {
     private autoPlayTimeout;
     private delay;
     private repeatMode;
+    private unsubscribers;
     constructor(config?: any);
     /**
-     * Safely get current practice mode from SettingsModule or Config.js fallback
+     * Initialize settings from Zustand store
+     */
+    private _initializeFromStore;
+    /**
+     * Cleanup subscriptions
+     */
+    destroy(): void;
+    /**
+     * Safely get current practice mode from Zustand Settings store
      */
     getPracticeMode(): PracticeMode;
     /**
-     * Attach event listeners for settings changes and audio control events
+     * Setup Zustand store subscriptions (replaces EventBus listeners)
      */
-    private _attachEventListeners;
-    /**
-     * Handle setting changes from SettingsModule
-     */
-    private _handleSettingChange;
+    private _setupStoreSubscriptions;
     /**
      * Set repeat mode for audio playback
      */

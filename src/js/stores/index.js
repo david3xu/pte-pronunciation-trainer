@@ -62,13 +62,32 @@ export const useAppStore = create()(subscribeWithSelector(devtools(persist((set,
         selectedVoice: null,
         availableVoices: [],
         error: null,
-        startSpeaking: (word, phonetic, mode = 'word') => set((state) => ({
-            tts: { ...state.tts, isSpeaking: true, currentWord: word, currentPhonetic: phonetic || null, speakingMode: mode, error: null }
-        })),
+        startSpeaking: (word, phonetic, mode = 'word') => {
+            // Track TTS usage in analytics
+            if (window.analyticsService) {
+                window.analyticsService.trackTTSUsed({
+                    word,
+                    phonetic: phonetic || undefined,
+                    mode,
+                    voice: get().tts.selectedVoice || 'browser-default',
+                    rate: get().settings.ttsRate,
+                    tts_engine: 'browser',
+                });
+            }
+            set((state) => ({
+                tts: { ...state.tts, isSpeaking: true, currentWord: word, currentPhonetic: phonetic || null, speakingMode: mode, error: null }
+            }));
+        },
         stopSpeaking: () => set((state) => ({
             tts: { ...state.tts, isSpeaking: false, currentWord: null, currentPhonetic: null, speakingMode: null }
         })),
-        setVoice: (voice) => set((state) => ({ tts: { ...state.tts, selectedVoice: voice } })),
+        setVoice: (voice) => {
+            // Track voice change
+            if (window.analyticsService) {
+                window.analyticsService.track('tts_voice_changed', { voice });
+            }
+            set((state) => ({ tts: { ...state.tts, selectedVoice: voice } }));
+        },
         setAvailableVoices: (voices) => set((state) => ({ tts: { ...state.tts, availableVoices: voices } })),
         setError: (error) => set((state) => ({ tts: { ...state.tts, error, isSpeaking: false } })),
     },
@@ -84,7 +103,13 @@ export const useAppStore = create()(subscribeWithSelector(devtools(persist((set,
         ttsVoice: null,
         difficultyFilter: 'all',
         isPanelOpen: false,
-        updateSetting: (key, value) => set((state) => ({ settings: { ...state.settings, [key]: value } })),
+        updateSetting: (key, value) => {
+            // Track setting changes
+            if (window.analyticsService) {
+                window.analyticsService.trackSettingChanged(key, value);
+            }
+            set((state) => ({ settings: { ...state.settings, [key]: value } }));
+        },
         resetSettings: () => set((state) => ({
             settings: {
                 ...state.settings,
@@ -122,7 +147,20 @@ export const useAppStore = create()(subscribeWithSelector(devtools(persist((set,
                 error: null,
             }
         })),
-        setCurrentItem: (item) => set((state) => ({ vocabulary: { ...state.vocabulary, currentItem: item } })),
+        setCurrentItem: (item) => {
+            // Track vocabulary word practice
+            if (item && window.analyticsService) {
+                const word = item.word || item.sentence || item.question || 'unknown';
+                const difficulty = item.difficulty || item.metadata?.difficulty || 'normal';
+                const category = item.category || item.metadata?.category || get().vocabulary.mode;
+                window.analyticsService.trackWordPractice(word, {
+                    difficulty,
+                    category,
+                    mode: get().vocabulary.mode,
+                });
+            }
+            set((state) => ({ vocabulary: { ...state.vocabulary, currentItem: item } }));
+        },
         filterByDifficulty: (difficulty) => {
             const currentDataset = get().vocabulary.currentDataset;
             if (difficulty === 'all') {
@@ -194,10 +232,28 @@ export const useAppStore = create()(subscribeWithSelector(devtools(persist((set,
         })),
         endSession: () => {
             const startTime = get().progress.sessionStartTime;
+            const durationMs = startTime ? Date.now() - startTime : 0;
+            const durationSeconds = Math.floor(durationMs / 1000);
+            const { itemsCompleted, itemsCorrect, accuracy } = get().progress;
+            const mode = get().settings.practiceType;
+            const practiceMode = get().settings.practiceMode;
+            const datasetId = get().settings.datasetId;
+            // Track practice session completion
+            if (window.analyticsService && itemsCompleted > 0) {
+                window.analyticsService.trackPracticeSessionCompleted({
+                    mode: mode || 'vocabulary',
+                    practice_type: practiceMode || undefined,
+                    dataset_id: datasetId,
+                    items_completed: itemsCompleted,
+                    items_correct: itemsCorrect,
+                    accuracy,
+                    duration_seconds: durationSeconds,
+                });
+            }
             set((state) => ({
                 progress: {
                     ...state.progress,
-                    sessionDuration: startTime ? Date.now() - startTime : 0,
+                    sessionDuration: durationMs,
                     sessionStartTime: null,
                 }
             }));

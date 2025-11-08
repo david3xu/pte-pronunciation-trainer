@@ -5,7 +5,7 @@
  * Replaces the EventBus pattern with reactive state management.
  *
  * Usage:
- * import { useAppStore } from './stores.js';
+ * import { useAppStore } from './stores/index.js';
  *
  * // In vanilla JS components:
  * const audio = useAppStore.getState().audio;

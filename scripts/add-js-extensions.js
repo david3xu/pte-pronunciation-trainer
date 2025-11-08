@@ -31,14 +31,45 @@ function addJsExtensions(filePath) {
       return match;
     }
 
-    // Skip if it's a directory import (no extension)
-    // Browser will try to load index.js automatically
-    if (importPath.includes('/index')) {
-      return match.replace(importPath, importPath + '.js');
+    // Resolve the import path relative to the current file
+    const currentDir = path.dirname(filePath);
+    const resolvedPath = path.resolve(currentDir, importPath);
+
+    // Check if it's an index import
+    const hasIndexInPath = importPath.endsWith('/index');
+
+    // Check if the resolved path points to a directory
+    let isDirectory = false;
+    try {
+      if (fs.existsSync(resolvedPath)) {
+        isDirectory = fs.statSync(resolvedPath).isDirectory();
+      } else if (fs.existsSync(resolvedPath + '.js')) {
+        isDirectory = false; // It's a file with .js extension
+      } else if (fs.existsSync(resolvedPath + '.ts')) {
+        isDirectory = false; // It's a file with .ts extension (source)
+      } else {
+        // Can't find it, assume it's a file if it has no extension
+        isDirectory = !importPath.split('/').pop().includes('.');
+      }
+    } catch (e) {
+      // If we can't stat it, assume it's a file
+      isDirectory = false;
     }
 
-    modified = true;
-    return match.replace(importPath, importPath + '.js');
+    if (isDirectory && !hasIndexInPath) {
+      // Directory import: add /index.js
+      modified = true;
+      const cleanPath = importPath.replace(/\/$/, '');
+      return match.replace(importPath, cleanPath + '/index.js');
+    } else if (hasIndexInPath) {
+      // Already has /index, just add .js
+      modified = true;
+      return match.replace(importPath, importPath + '.js');
+    } else {
+      // File import: add .js
+      modified = true;
+      return match.replace(importPath, importPath + '.js');
+    }
   });
 
   if (modified) {

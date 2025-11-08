@@ -1,8 +1,14 @@
 /**
  * PTEVocabularyManager - Type-Safe Vocabulary Management
  *
+ * ARCHITECTURE: Zustand state management
+ * - Replaces EventBus with Zustand store subscriptions and updates
+ * - Subscribes to settings.difficultyFilter and settings.vocabularyBook changes
+ * - Updates vocabulary store directly instead of emitting events
+ * - Error notifications via UI store
+ *
  * Manages vocabulary loading, filtering, and state for PTE datasets.
- * Handles 13 vocabulary books with retry logic and event-driven updates.
+ * Handles 13 vocabulary books with retry logic and reactive updates.
  *
  * TypeScript version of src/js/core/PTEVocabularyManager.js
  */
@@ -32,17 +38,17 @@ export declare class PTEVocabularyManager {
     private datasets;
     private config;
     private isInitialized;
+    private unsubscribers;
     constructor();
     /**
-     * Attach event listeners for settings changes
-     * @private
+     * Cleanup subscriptions
      */
-    private _attachEventListeners;
+    destroy(): void;
     /**
-     * Handle setting changes from SettingsModule
+     * Setup Zustand store subscriptions (replaces EventBus listeners)
      * @private
      */
-    private _handleSettingChange;
+    private _setupStoreSubscriptions;
     /**
      * Initialize the vocabulary manager
      */
@@ -67,6 +73,7 @@ export declare class PTEVocabularyManager {
     getNextLearningMode(): VocabularyCategory;
     /**
      * Apply current category and difficulty filters
+     * Updates both internal state and Zustand store
      */
     applyFilters(): void;
     /**

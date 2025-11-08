@@ -1,6 +1,11 @@
 /**
  * SettingsPanel - Settings panel management and interaction
  *
+ * ARCHITECTURE: Zustand state management
+ * - Replaces EventBus with Zustand store subscriptions
+ * - Direct SettingsModule calls instead of event emissions
+ * - Panel state tracked in settings store
+ *
  * Type-safe UI controller for settings panel
  * Manages practice mode switching, settings persistence, import/export
  */
@@ -28,7 +33,12 @@ interface SavedSettings {
 export declare class SettingsPanel {
     private isOpen;
     private config;
+    private unsubscribers;
     constructor();
+    /**
+     * Cleanup subscriptions
+     */
+    destroy(): void;
     /**
      * Initialize settings panel with event listeners
      */
@@ -78,7 +88,7 @@ export declare class SettingsPanel {
      */
     isSettingsPanelOpen(): boolean;
     /**
-     * Save a setting value using SettingsModule events
+     * Save a setting value using SettingsModule directly (replaces EventBus)
      */
     saveSetting(key: string, value: any): void;
     /**

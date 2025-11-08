@@ -5,18 +5,23 @@
  * Converts PTE vocabulary markdown files to structured JSON datasets
  */
 
-const fs = require('fs');
-const path = require('path');
-const PTETermsExtractor = require('../src/js/data/extractors/PTETermsExtractor.js');
-const SingleIPATermsExtractor = require('../src/js/data/extractors/SingleIPATermsExtractor.js');
-const PTESentenceExtractor = require('../src/js/data/extractors/PTESentenceExtractor.js');
-const PTEQuestionExtractor = require('../src/js/data/extractors/PTEQuestionExtractor.js');
-const AppConfig = require('../src/js/shared/Config.js');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import appConfigModule from '../src/js/shared/Config.js';
+import PTETermsExtractor from '../src/js/data/extractors/PTETermsExtractor.js';
+import SingleIPATermsExtractor from '../src/js/data/extractors/SingleIPATermsExtractor.js';
+import PTESentenceExtractor from '../src/js/data/extractors/PTESentenceExtractor.js';
+import PTEQuestionExtractor from '../src/js/data/extractors/PTEQuestionExtractor.js';
+
+// ES module equivalents of __filename and __dirname
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 class PTEDataPipeline {
-  constructor(config = {}) {
-    // Load centralized configuration
-    const appConfig = new AppConfig();
+  constructor(appConfigModule, config = {}) {
+    // Load centralized configuration from ES6 module
+    const appConfig = appConfigModule.default || appConfigModule.appConfig || appConfigModule;
     const pipelineConfig = appConfig.get('pipeline');
 
     // Use provided config or fall back to centralized config
@@ -199,13 +204,13 @@ class PTEDataPipeline {
           // Determine which extractor to use
           const extractorType = entry.extractorType || entry.extractor || 'PTETermsExtractor';
           const dataType = entry.dataType || entry.type || 'vocabulary';
-          
+
           // Build input path with optional subdirectory
           const inputSubdir = entry.inputSubdir || this.config.dataSources.subdirectory;
           const inputPath = path.join(this.config.inputDir, inputSubdir, entry.input);
-          
+
           console.log(`   🔄 Processing ${entry.id} (${dataType}) using ${extractorType}...`);
-          
+
           let dataset;
           let terms = [];
           let usedFallback = false;
@@ -213,11 +218,11 @@ class PTEDataPipeline {
           // Dynamic extractor loading based on type
           if (extractorType === 'PTESentenceExtractor') {
             // Handle sentence-based datasets (RS, WFD)
-            dataset = await PTESentenceExtractor.extract(inputPath, { type: dataType });
+            dataset = await PTESentenceExtractor.extract(inputPath, fs, path, { type: dataType });
 
           } else if (extractorType === 'PTEQuestionExtractor') {
             // Handle question-based datasets (ASQ)
-            dataset = await PTEQuestionExtractor.extract(inputPath);
+            dataset = await PTEQuestionExtractor.extract(inputPath, fs, path);
 
           } else if (extractorType === 'SingleIPATermsExtractor') {
             // Handle vocabulary with single IPA format
@@ -297,16 +302,16 @@ class PTEDataPipeline {
               vocabulary: unique
             };
           }
-          
+
           // Save the dataset
           this.saveDataset(entry.output, dataset);
-          
+
           // Get count based on dataset structure
-          const count = dataset.items ? dataset.items.length : 
+          const count = dataset.items ? dataset.items.length :
                        dataset.vocabulary ? dataset.vocabulary.length : 0;
-          
+
           console.log(`   ✅ Generated dataset: ${entry.id} (${count} items)`);
-          
+
         } catch (e) {
           console.warn(`   ⚠️  Skipped dataset ${entry.id}: ${e.message}`);
         }
@@ -378,11 +383,11 @@ class PTEDataPipeline {
     }
 
     fs.writeFileSync(outputPath, JSON.stringify(dataset, null, 2));
-    
+
     // Get count based on dataset structure
-    const count = dataset.items ? dataset.items.length : 
+    const count = dataset.items ? dataset.items.length :
                  dataset.vocabulary ? dataset.vocabulary.length : 0;
-    
+
     console.log(`   ✅ Saved ${count} items to ${filename}`);
   }
 
@@ -480,13 +485,14 @@ class PTEDataPipeline {
   }
 }
 
-// Run pipeline if called directly
-if (require.main === module) {
-  const pipeline = new PTEDataPipeline();
+// Run pipeline if called directly (ES module equivalent of require.main === module)
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const pipeline = new PTEDataPipeline(appConfigModule);
   pipeline.run().catch(error => {
     console.error('❌ PTE Data Pipeline failed:', error);
     process.exit(1);
   });
 }
 
-module.exports = { PTEDataPipeline };
+export { PTEDataPipeline };
+export default PTEDataPipeline;

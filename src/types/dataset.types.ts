@@ -221,17 +221,29 @@ export type PracticeDataset = Dataset<PracticeItem>;
 export interface DatasetRegistryEntry {
   /** Dataset ID */
   id: string;
-  /** Display name */
-  name: string;
-  /** Source file path */
-  source: string;
-  /** Output file path */
+  /** Display name (optional) */
+  name?: string;
+  /** Input filename (not full path, just filename) */
+  input: string;
+  /** Fallback filename if primary fails */
+  fallback?: string;
+  /** Output filename */
   output: string;
-  /** Extractor type */
-  extractorType: 'PTETermsExtractor' | 'SingleIPATermsExtractor' | 'PTESentenceExtractor' | 'PTEQuestionExtractor';
   /** Category */
   category: VocabularyCategory | PracticeCategory;
-  /** Difficulty */
+  /** Description */
+  description?: string;
+  /** Source type identifier */
+  sourceType?: string;
+  /** Data type (vocabulary, rs, wfd, asq) */
+  dataType?: string;
+  /** Extractor type */
+  extractorType: 'PTETermsExtractor' | 'SingleIPATermsExtractor' | 'PTESentenceExtractor' | 'PTEQuestionExtractor';
+  /** Input subdirectory (e.g., 'vocabs', 'sentences') */
+  inputSubdir?: string;
+  /** Whether this is the default dataset */
+  isDefault?: boolean;
+  /** Difficulty (for display purposes) */
   difficulty?: Difficulty;
   /** Practice mode (for practice datasets) */
   mode?: PracticeMode;

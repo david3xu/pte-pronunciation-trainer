@@ -244,6 +244,18 @@ export interface SettingsDefaults {
  * Pipeline configuration
  */
 export interface PipelineConfig {
+  inputDir: string;
+  outputDir: string;
+  reportsDir: string;
+  dataSources: {
+    primary: string;
+    fallback: string;
+    subdirectory: string;
+  };
+  outputFiles: {
+    dataset: string;
+    report: string;
+  };
   registry: DatasetRegistryEntry[];
   extractorTypes: {
     PTETermsExtractor: string;

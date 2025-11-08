@@ -64,16 +64,20 @@ export const useAppStore = create<AppState>()(
         (set, get) => ({
           // Audio slice - inline implementation
           audio: {
+            isPlaying: false,
             isAutoPlaying: false,
+            autoPlayEnabled: false,
             isPaused: false,
             currentIndex: 0,
             repeatMode: false,
             playbackSpeed: 1.0,
             volume: 1.0,
-            startAutoPlay: () => set((state) => ({ audio: { ...state.audio, isAutoPlaying: true, isPaused: false } })),
+            setPlaying: (isPlaying: boolean) => set((state) => ({ audio: { ...state.audio, isPlaying } })),
+            setAutoPlay: (autoPlayEnabled: boolean) => set((state) => ({ audio: { ...state.audio, autoPlayEnabled } })),
+            startAutoPlay: () => set((state) => ({ audio: { ...state.audio, isAutoPlaying: true, autoPlayEnabled: true, isPaused: false } })),
             pauseAutoPlay: () => set((state) => ({ audio: { ...state.audio, isPaused: true } })),
             resumeAutoPlay: () => set((state) => ({ audio: { ...state.audio, isPaused: false } })),
-            stopAutoPlay: () => set((state) => ({ audio: { ...state.audio, isAutoPlaying: false, isPaused: false } })),
+            stopAutoPlay: () => set((state) => ({ audio: { ...state.audio, isAutoPlaying: false, autoPlayEnabled: false, isPaused: false } })),
             navigateNext: () => set((state) => ({ audio: { ...state.audio, currentIndex: state.audio.currentIndex + 1 } })),
             navigatePrev: () => set((state) => ({ audio: { ...state.audio, currentIndex: Math.max(0, state.audio.currentIndex - 1) } })),
             toggleRepeat: () => set((state) => ({ audio: { ...state.audio, repeatMode: !state.audio.repeatMode } })),

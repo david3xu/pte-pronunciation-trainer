@@ -15,8 +15,12 @@ export type VocabularyItem = VocabularyTerm;
 // ============================================
 
 export interface AudioState {
+  // Playing state
+  isPlaying: boolean;
+
   // Autoplay state
   isAutoPlaying: boolean;
+  autoPlayEnabled: boolean;
   isPaused: boolean;
 
   // Navigation
@@ -28,6 +32,8 @@ export interface AudioState {
   volume: number;
 
   // Actions
+  setPlaying: (isPlaying: boolean) => void;
+  setAutoPlay: (autoPlayEnabled: boolean) => void;
   startAutoPlay: () => void;
   pauseAutoPlay: () => void;
   resumeAutoPlay: () => void;

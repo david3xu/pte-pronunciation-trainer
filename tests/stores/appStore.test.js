@@ -11,18 +11,16 @@ describe('AppStore', () => {
     // Clear all mocks
     jest.clearAllMocks();
 
-    // Mock analyticsService
-    global.window = {
-      analyticsService: {
-        trackTTSUsed: jest.fn(),
-        track: jest.fn(),
-        trackSettingChanged: jest.fn(),
-        trackWordPractice: jest.fn(),
-        trackPracticeSessionCompleted: jest.fn(),
-        identify: jest.fn(),
-        trackAuth: jest.fn(),
-        reset: jest.fn(),
-      },
+    // Mock analyticsService on window (not global.window)
+    window.analyticsService = {
+      trackTTSUsed: jest.fn(),
+      track: jest.fn(),
+      trackSettingChanged: jest.fn(),
+      trackWordPractice: jest.fn(),
+      trackPracticeSessionCompleted: jest.fn(),
+      identify: jest.fn(),
+      trackAuth: jest.fn(),
+      reset: jest.fn(),
     };
 
     // Dynamic import to get fresh store for each test
@@ -140,7 +138,7 @@ describe('AppStore', () => {
       expect(state.speakingMode).toBe('word');
 
       // Check analytics tracking
-      expect(global.window.analyticsService.trackTTSUsed).toHaveBeenCalledWith({
+      expect(window.analyticsService.trackTTSUsed).toHaveBeenCalledWith({
         word: 'hello',
         phonetic: '/həˈloʊ/',
         mode: 'word',
@@ -169,7 +167,7 @@ describe('AppStore', () => {
       setVoice('Google US English');
 
       expect(useAppStore.getState().tts.selectedVoice).toBe('Google US English');
-      expect(global.window.analyticsService.track).toHaveBeenCalledWith(
+      expect(window.analyticsService.track).toHaveBeenCalledWith(
         'tts_voice_changed',
         { voice: 'Google US English' }
       );
@@ -183,7 +181,7 @@ describe('AppStore', () => {
       updateSetting('autoPlay', true);
 
       expect(useAppStore.getState().settings.autoPlay).toBe(true);
-      expect(global.window.analyticsService.trackSettingChanged).toHaveBeenCalledWith(
+      expect(window.analyticsService.trackSettingChanged).toHaveBeenCalledWith(
         'autoPlay',
         true
       );
@@ -264,19 +262,30 @@ describe('AppStore', () => {
     test('should end session and track analytics', () => {
       const { startSession, markItemCompleted, endSession } = useAppStore.getState().progress;
 
+      // Mock Date.now to simulate time passing
+      const originalDateNow = Date.now;
+      let currentTime = 1000000;
+      Date.now = jest.fn(() => currentTime);
+
       startSession();
       markItemCompleted('word1', true);
       markItemCompleted('word2', true);
       markItemCompleted('word3', false);
 
+      // Simulate 5 seconds passing
+      currentTime += 5000;
+
       endSession();
+
+      // Restore Date.now
+      Date.now = originalDateNow;
 
       const state = useAppStore.getState().progress;
       expect(state.sessionStartTime).toBe(null);
       expect(state.sessionDuration).toBeGreaterThan(0);
 
       // Check analytics tracking
-      expect(global.window.analyticsService.trackPracticeSessionCompleted).toHaveBeenCalledWith(
+      expect(window.analyticsService.trackPracticeSessionCompleted).toHaveBeenCalledWith(
         expect.objectContaining({
           mode: 'vocabulary',
           dataset_id: 'pte-fib-listening',
@@ -319,7 +328,7 @@ describe('AppStore', () => {
       store.getState().vocabulary.setCurrentItem(testWord);
 
       expect(store.getState().vocabulary.currentItem).toEqual(testWord);
-      expect(global.window.analyticsService.trackWordPractice).toHaveBeenCalledWith(
+      expect(window.analyticsService.trackWordPractice).toHaveBeenCalledWith(
         'ubiquitous',
         expect.objectContaining({
           difficulty: 'hard',

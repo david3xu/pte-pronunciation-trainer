@@ -7,12 +7,16 @@
 import type { VocabularyTerm, PracticeItem, Difficulty } from '../../types/dataset.types';
 export type VocabularyItem = VocabularyTerm;
 export interface AudioState {
+    isPlaying: boolean;
     isAutoPlaying: boolean;
+    autoPlayEnabled: boolean;
     isPaused: boolean;
     currentIndex: number;
     repeatMode: boolean;
     playbackSpeed: number;
     volume: number;
+    setPlaying: (isPlaying: boolean) => void;
+    setAutoPlay: (autoPlayEnabled: boolean) => void;
     startAutoPlay: () => void;
     pauseAutoPlay: () => void;
     resumeAutoPlay: () => void;

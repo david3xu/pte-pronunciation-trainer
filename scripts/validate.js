@@ -5,8 +5,8 @@
  * Validates vocabulary data integrity and format
  */
 
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 const AppConfig = require('../src/js/shared/Config.js');
 
 class ValidationError extends Error {

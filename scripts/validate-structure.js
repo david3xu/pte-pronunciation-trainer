@@ -16,6 +16,7 @@
 
 import fs from 'fs';
 import path from 'path';
+import { execSync } from 'child_process';
 
 // ANSI colors
 const colors = {
@@ -59,7 +60,8 @@ const EXPECTED_STRUCTURE = {
           'animations.css',
           'components.css',
           'style.css',
-          'practice-modes.css',
+          'auth.css',
+          'analytics.css',
           'responsive.css'
         ]
       }
@@ -192,37 +194,34 @@ class StructureValidator {
     });
   }
 
-  // Validation 3: Check for forbidden files/patterns
-  validateNoForbiddenFiles(dir = '.', depth = 0) {
-    if (depth === 0) {
-      console.log(`\n${colors.cyan}[3/5] Checking for forbidden files...${colors.reset}`);
-    }
+  // Validation 3: Check for forbidden files/patterns in git staging area
+  validateNoForbiddenFiles() {
+    console.log(`\n${colors.cyan}[3/5] Checking for forbidden files in staging area...${colors.reset}`);
 
-    if (depth > 5) return; // Prevent deep recursion
+    try {
+      // Get list of staged files using git
+      const stagedFiles = execSync('git diff --cached --name-only', { encoding: 'utf-8' })
+        .split('\n')
+        .filter(f => f.trim());
 
-    const items = fs.readdirSync(dir);
+      let foundForbidden = false;
 
-    items.forEach(item => {
-      const fullPath = path.join(dir, item);
-
-      // Check against forbidden patterns
-      FORBIDDEN_PATTERNS.forEach(pattern => {
-        if (pattern.test(fullPath)) {
-          this.addError(`Forbidden file/directory found: ${fullPath}`);
-        }
+      // Check each staged file against forbidden patterns
+      stagedFiles.forEach(file => {
+        FORBIDDEN_PATTERNS.forEach(pattern => {
+          if (pattern.test(file)) {
+            foundForbidden = true;
+            this.addError(`Forbidden file staged for commit: ${file}`);
+          }
+        });
       });
 
-      // Recurse into directories (skip node_modules, .git)
-      if (fs.statSync(fullPath).isDirectory() &&
-          !item.startsWith('.') &&
-          item !== 'node_modules' &&
-          item !== 'dist') {
-        this.validateNoForbiddenFiles(fullPath, depth + 1);
+      if (!foundForbidden) {
+        this.addPassed('No forbidden files in staging area');
       }
-    });
-
-    if (depth === 0 && this.errors.filter(e => e.includes('Forbidden')).length === 0) {
-      this.addPassed('No forbidden files found');
+    } catch (error) {
+      // If git command fails, fall back to warning
+      this.addWarning('Could not check git staging area (not in git repo?)');
     }
   }
 

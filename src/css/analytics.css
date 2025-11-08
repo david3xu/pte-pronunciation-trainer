@@ -29,16 +29,16 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgb(0 0 0 / 60%);
   backdrop-filter: blur(4px);
 }
 
 /* Modal */
 .analytics-modal {
   position: relative;
-  background: var(--background-color, #ffffff);
+  background: var(--background-color, #fff);
   border-radius: var(--radius-lg, 12px);
-  box-shadow: var(--shadow-2xl, 0 20px 60px rgba(0, 0, 0, 0.4));
+  box-shadow: var(--shadow-2xl, 0 20px 60px rgb(0 0 0 / 40%));
   max-width: 900px;
   width: 90%;
   max-height: 85vh;
@@ -83,7 +83,7 @@
 }
 
 .analytics-close:hover {
-  background: var(--hover-bg, rgba(0, 0, 0, 0.05));
+  background: var(--hover-bg, rgb(0 0 0 / 5%));
   color: var(--text-primary, #1a1a1a);
 }
 
@@ -155,7 +155,7 @@
 
 .stat-card:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md, 0 4px 12px rgba(0, 0, 0, 0.1));
+  box-shadow: var(--shadow-md, 0 4px 12px rgb(0 0 0 / 10%));
 }
 
 .stat-icon {
@@ -203,7 +203,7 @@
 }
 
 .session-item:hover {
-  background: var(--hover-bg, rgba(33, 150, 243, 0.05));
+  background: var(--hover-bg, rgb(33 150 243 / 5%));
   border-color: var(--primary-color, #2196F3);
 }
 
@@ -242,6 +242,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -252,6 +253,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -277,7 +279,7 @@
   }
 
   .analytics-header h2 {
-    color: var(--text-primary, #ffffff);
+    color: var(--text-primary, #fff);
   }
 
   .analytics-close {
@@ -285,8 +287,8 @@
   }
 
   .analytics-close:hover {
-    background: var(--hover-bg, rgba(255, 255, 255, 0.1));
-    color: var(--text-primary, #ffffff);
+    background: var(--hover-bg, rgb(255 255 255 / 10%));
+    color: var(--text-primary, #fff);
   }
 
   .stat-card {
@@ -300,12 +302,12 @@
   }
 
   .session-item:hover {
-    background: var(--hover-bg, rgba(33, 150, 243, 0.15));
+    background: var(--hover-bg, rgb(33 150 243 / 15%));
     border-color: var(--primary-color, #2196F3);
   }
 
   .session-dataset {
-    color: var(--text-primary, #ffffff);
+    color: var(--text-primary, #fff);
   }
 
   .loading-spinner {
@@ -315,7 +317,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .analytics-modal {
     width: 95%;
     max-height: 90vh;
@@ -350,7 +352,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
   .stats-grid {
     grid-template-columns: 1fr;
   }

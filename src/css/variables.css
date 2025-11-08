@@ -11,7 +11,7 @@
     --primary-color: #4f46e5;
     --primary-light: #818cf8;
     --primary-dark: #4338ca;
-    --primary-light-20: rgba(79, 70, 229, 0.2);
+    --primary-light-20: rgb(79 70 229 / 20%);
     
     /* Secondary Colors */
     --secondary-color: #6b7280;
@@ -29,22 +29,19 @@
     --success-color: #22c55e;
     --success-dark: #16a34a;
     --success-light: #f0fdf4;
-    
     --danger-color: #ef4444;
     --danger-dark: #dc2626;
     --danger-light: #fee2e2;
-    
     --warning-color: #f59e0b;
     --warning-dark: #d97706;
     --warning-light: #fef3c7;
-    
     --info-color: #3b82f6;
     --info-dark: #2563eb;
     --info-light: #dbeafe;
     
     /* Background Colors */
     --bg-body: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --bg-primary: #ffffff;
+    --bg-primary: #fff;
     --bg-secondary: #f8f9fa;
     --bg-card: #f7fafc;
     --bg-header: #4a5568;
@@ -53,14 +50,14 @@
     --text-primary: #1f2937;
     --text-secondary: #4a5568;
     --text-muted: #9ca3af;
-    --text-light: #ffffff;
+    --text-light: #fff;
     
     /* Border Colors */
     --border-light: #e2e8f0;
     --border-medium: #d1d5db;
     
     /* Input Colors */
-    --input-bg: #ffffff;
+    --input-bg: #fff;
     --input-border: #d1d5db;
     
     /* Panel Colors */
@@ -124,13 +121,13 @@
     
     /* ==================== Shadows ==================== */
     
-    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
-    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
-    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15);
-    --shadow-xl: 0 10px 25px rgba(0, 0, 0, 0.15);
-    --shadow-2xl: 0 20px 40px rgba(0, 0, 0, 0.2);
-    --shadow-panel: 0 -4px 6px rgba(0, 0, 0, 0.05);
+    --shadow-xs: 0 1px 2px rgb(0 0 0 / 5%);
+    --shadow-sm: 0 2px 4px rgb(0 0 0 / 10%);
+    --shadow-md: 0 4px 8px rgb(0 0 0 / 10%);
+    --shadow-lg: 0 8px 16px rgb(0 0 0 / 15%);
+    --shadow-xl: 0 10px 25px rgb(0 0 0 / 15%);
+    --shadow-2xl: 0 20px 40px rgb(0 0 0 / 20%);
+    --shadow-panel: 0 -4px 6px rgb(0 0 0 / 5%);
     
     /* ==================== Transitions ==================== */
     
@@ -173,6 +170,7 @@
     --z-toast: 3000;
     
     /* ==================== Breakpoints (for reference) ==================== */
+
     /* Use in media queries: @media (min-width: 640px) */
     
     --breakpoint-sm: 640px;
@@ -195,7 +193,7 @@
         --bg-body: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
         --bg-primary: #2d3748;
         --bg-secondary: #1a202c;
-        --bg-card: rgba(26, 32, 44, 0.8);
+        --bg-card: rgb(26 32 44 / 80%);
         --bg-header: #1a202c;
         
         /* Text Colors */
@@ -213,7 +211,7 @@
         --input-border: #4a5568;
         
         /* Panel Colors */
-        --panel-bg: rgba(26, 32, 44, 0.9);
+        --panel-bg: rgb(26 32 44 / 90%);
         --panel-border: #4a5568;
         
         /* Accent Colors (adjust for dark mode) */
@@ -224,17 +222,17 @@
         --color-gray-hover: #2d3748;
         
         /* Status Light Colors (darker in dark mode) */
-        --success-light: rgba(26, 32, 44, 0.8);
-        --warning-light: rgba(26, 32, 44, 0.8);
-        --danger-light: rgba(26, 32, 44, 0.8);
-        --info-light: rgba(26, 32, 44, 0.8);
+        --success-light: rgb(26 32 44 / 80%);
+        --warning-light: rgb(26 32 44 / 80%);
+        --danger-light: rgb(26 32 44 / 80%);
+        --info-light: rgb(26 32 44 / 80%);
         
         /* Shadows (stronger in dark mode) */
-        --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.5);
-        --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.5);
-        --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.5);
-        --shadow-xl: 0 10px 25px rgba(0, 0, 0, 0.3);
-        --shadow-panel: 0 -4px 6px rgba(0, 0, 0, 0.2);
+        --shadow-sm: 0 2px 4px rgb(0 0 0 / 50%);
+        --shadow-md: 0 4px 8px rgb(0 0 0 / 50%);
+        --shadow-lg: 0 8px 16px rgb(0 0 0 / 50%);
+        --shadow-xl: 0 10px 25px rgb(0 0 0 / 30%);
+        --shadow-panel: 0 -4px 6px rgb(0 0 0 / 20%);
     }
 }
 
@@ -243,9 +241,9 @@
 @media (prefers-contrast: high) {
     :root {
         /* Increase contrast for accessibility */
-        --text-primary: #000000;
+        --text-primary: #000;
         --text-secondary: #1a1a1a;
-        --border-light: #000000;
-        --border-medium: #000000;
+        --border-light: #000;
+        --border-medium: #000;
     }
 }

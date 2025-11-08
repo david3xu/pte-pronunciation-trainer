@@ -63,7 +63,7 @@
 }
 
 /* === SMALL MOBILE OPTIMIZATION (up to 374px) === */
-@media (max-width: 374px) {
+@media (width <= 374px) {
   :root {
     --mobile-padding: 0.75rem;
     --mobile-card-padding: 1rem;
@@ -123,7 +123,7 @@
 }
 
 /* === LARGE MOBILE / SMALL TABLET (375px - 767px) === */
-@media (min-width: 375px) and (max-width: 767px) {
+@media (width >= 375px) and (width <= 767px) {
   /* Increase word-display height for better space utilization */
   .word-display {
     height: var(--height-word-display-sm);
@@ -139,8 +139,7 @@
   }
   
   .controls-panel {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
   }
   
@@ -157,7 +156,7 @@
 }
 
 /* === TABLET PORTRAIT (768px - 991px) === */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (width >= 768px) and (width <= 991px) {
   /* Optimize word-display height for tablet */
   .word-display {
     height: var(--height-word-display-md);
@@ -208,7 +207,7 @@
 }
 
 /* === TABLET LANDSCAPE / SMALL DESKTOP (992px - 1199px) === */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (width >= 992px) and (width <= 1199px) {
   /* Optimize word-display height for small desktops */
   .word-display {
     height: var(--height-word-display-lg);
@@ -261,7 +260,7 @@
 }
 
 /* === LARGE DESKTOP (1200px+) === */
-@media (min-width: 1200px) {
+@media (width >= 1200px) {
   /* Maximize word-display height for large desktops */
   .word-display {
     height: var(--height-word-display-xl);
@@ -296,7 +295,7 @@
   }
   
   /* Two-column layout for very wide screens */
-  @media (min-width: 1400px) {
+  @media (width >= 1400px) {
     .main-content {
       display: grid;
       grid-template-columns: 2fr 1fr;
@@ -318,7 +317,7 @@
 }
 
 /* === LANDSCAPE ORIENTATION ADJUSTMENTS === */
-@media (orientation: landscape) and (max-height: 500px) {
+@media (orientation: landscape) and (height <= 500px) {
   .learning-area {
     padding: var(--space-sm) var(--space-xl);  /* 8px 24px - minimal for landscape */
     min-height: auto;
@@ -371,7 +370,7 @@
 }
 
 /* === HIGH DPI DISPLAYS === */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (min-device-pixel-ratio: 2), (resolution >= 192dpi) {
   .vocab-card {
     box-shadow: var(--shadow-sm);
   }

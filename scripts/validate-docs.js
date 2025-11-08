@@ -154,8 +154,20 @@ class DocumentationValidator {
   validateNoHistoricalLanguage() {
     console.log(`\n${colors.cyan}[3/5] Checking for historical language in permanent docs...${colors.reset}`);
 
+    // Files that are allowed to have historical language
+    const SKIP_FILES = [
+      'CHANGELOG.md',  // Changelogs are historical by definition
+      'docs/ENFORCING-GUIDELINES.md'  // Contains examples of what NOT to do
+    ];
+
     PERMANENT_DOCS.forEach(filePath => {
       if (!fs.existsSync(filePath)) return;
+
+      // Skip files that are allowed to have historical language
+      if (SKIP_FILES.includes(filePath)) {
+        this.addPassed(`Skipped (allowed historical content): ${filePath}`);
+        return;
+      }
 
       const content = fs.readFileSync(filePath, 'utf-8');
       const lines = content.split('\n');

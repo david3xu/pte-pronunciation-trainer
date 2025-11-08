@@ -12,7 +12,7 @@
  *
  * TypeScript version of src/js/core/PTEVocabularyManager.js
  */
-import { useAppStore } from '../stores/index.js';
+import { useAppStore } from '../stores';
 /**
  * Type-safe PTE Vocabulary Manager
  * Handles all vocabulary dataset operations with retry logic and filtering

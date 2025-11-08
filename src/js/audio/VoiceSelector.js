@@ -13,7 +13,7 @@
  * - Zustand-driven preference changes
  * - Dropdown population for UI
  */
-import { useAppStore } from '../stores/index.js';
+import { useAppStore } from '../stores';
 /**
  * VoiceSelector - Manages voice selection and preferences
  */

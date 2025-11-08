@@ -4,8 +4,8 @@
  * Manages login/signup modal, authentication state, and user profile display
  * Integrates with Supabase authService and syncService
  */
-import { authService } from '../supabase/authService.js';
-import { syncService } from '../supabase/syncService.js';
+import { authService } from '../supabase/authService';
+import { syncService } from '../supabase/syncService';
 /**
  * Authentication UI Controller
  */

@@ -4,9 +4,15 @@
  *
  * This is the TypeScript version of src/js/ui/UIController.js
  * Provides type-safe DOM manipulation for both vocabulary and practice modes
+ *
+ * ARCHITECTURE: Zustand state management
+ * - Replaced EventBus with Zustand store subscriptions
+ * - Reactive UI updates based on store changes
+ * - Direct store actions for user interactions
  */
+import { useAppStore } from '../stores';
 /**
- * Type-safe UI Controller
+ * Type-safe UI Controller with Zustand integration
  * Manages DOM updates, content display, and user interactions
  */
 export class UIController {
@@ -19,6 +25,8 @@ export class UIController {
     // Current word tracking (for pronunciation toggle)
     currentWord = null;
     currentIndex = 0;
+    // Store subscriptions (for cleanup)
+    unsubscribers = [];
     constructor(config) {
         this.config = config || window.appConfig || null;
         this.pronunciationPreference = this.config.get('modes.pronunciation.british');
@@ -29,7 +37,15 @@ export class UIController {
             currentDataset: null,
             currentItem: null
         };
-        this.setupEventListeners();
+        // Setup Zustand store subscriptions (replaces EventBus listeners)
+        this._setupStoreSubscriptions();
+    }
+    /**
+     * Cleanup subscriptions
+     */
+    destroy() {
+        this.unsubscribers.forEach(unsub => unsub());
+        this.unsubscribers = [];
     }
     /**
      * Get module instance with error handling
@@ -44,7 +60,7 @@ export class UIController {
         return module || defaultValue;
     }
     /**
-     * Centralized error handling
+     * Centralized error handling (Zustand version)
      */
     handleError(message, error, showToUser = true, level = 'error') {
         const details = error instanceof Error ? error.message : error;
@@ -59,140 +75,132 @@ export class UIController {
         else {
             console.error(`[UIController] ❌ ${logMessage}`);
         }
-        // Show to user if requested
+        // Show to user via Zustand store (replaces progressTracker.showError)
         if (showToUser) {
-            const progressTracker = this.getModule('progressTracker');
-            if (progressTracker) {
-                progressTracker.showError(message);
-            }
-        }
-        // Emit error event
-        const errorEvent = this.config.get('events.ui.error');
-        const eventBus = window.eventBus;
-        if (errorEvent && eventBus) {
-            eventBus.emit(errorEvent, {
-                source: 'UIController',
-                message,
-                details: details || null,
-                timestamp: new Date().toISOString()
-            });
+            useAppStore.getState().ui.showNotification(message, 'error');
         }
     }
     /**
-     * Get current practice mode from state, SettingsModule, or config fallback
+     * Get current practice mode from Zustand Settings store
      */
     getPracticeMode() {
-        // First check local state
-        if (this.state && this.state.currentPracticeMode) {
-            return this.state.currentPracticeMode;
-        }
-        // Next try SettingsModule
-        const settingsModule = this.getModule('settingsModule');
-        if (settingsModule && typeof settingsModule.get === 'function') {
-            return settingsModule.get('practiceMode') || this.config.get('data.defaults.practiceMode');
-        }
-        // Fallback to config default
-        return this.config.get('data.defaults.practiceMode');
+        const practiceMode = useAppStore.getState().settings.practiceMode;
+        return practiceMode || this.config.get('data.defaults.practiceMode');
     }
     /**
-     * Setup event listeners for UI updates
+     * Setup Zustand store subscriptions (replaces EventBus listeners)
      */
-    setupEventListeners() {
-        const eventBus = window.eventBus;
-        // Vocabulary loaded event
-        const vocabularyLoadedEvent = this.config.get('events.vocabulary.loaded');
-        eventBus.on(vocabularyLoadedEvent, () => {
-            this.updateUI();
-        });
-        // Vocabulary difficulty filtered event
-        const difficultyFilteredEvent = this.config.get('events.vocabulary.difficulty.filtered');
-        eventBus.on(difficultyFilteredEvent, () => {
-            this.updateBookDisplay();
-            this.updateButtons();
-        });
-        // Learning mode changes
-        const learningModeChangedEvent = this.config.get('events.mode.learning.changed');
-        eventBus.on(learningModeChangedEvent, () => {
-            const audioControls = window.audioControls;
-            if (audioControls) {
-                audioControls.setCurrentIndex(0);
+    _setupStoreSubscriptions() {
+        // Subscribe to vocabulary dataset changes (replaces vocabulary:loaded)
+        const unsubDataset = useAppStore.subscribe((state) => state.vocabulary.currentDataset, (dataset, prevDataset) => {
+            if (dataset.length > 0 && dataset !== prevDataset) {
+                this.updateUI();
             }
-            this.updateBookDisplay();
-            this.updateButtons();
-            this.displayFirstWord();
         });
-        // Practice mode changes
-        const practiceModeChangedEvent = this.config.get('events.mode.practice.changed');
-        eventBus.on(practiceModeChangedEvent, (data) => {
-            const defaultMode = this.config.get('modes.practice.vocabulary');
-            const mode = data?.mode || defaultMode;
-            console.log(`[UIController] 🔄 Practice mode changed event received - Switching to: ${mode}`);
-            // Prevent excessive event handling during initialization
-            if (window.initializing) {
-                console.log(`[UIController] Skipping mode change during initialization`);
-                return;
-            }
-            this.handlePracticeModeChange(mode);
-        });
-        // Unified content display events
-        const contentDisplayEvent = this.config.get('events.content.display');
-        eventBus.on(contentDisplayEvent, (data) => {
-            this.displayCurrent(data);
-        });
-        // TTS speaking started
-        const ttsSpeakingStartedEvent = this.config.get('events.tts.speaking.started');
-        eventBus.on(ttsSpeakingStartedEvent, (data) => {
-            this.displayCurrent(data);
-        });
-        // Progress events
-        const progressUpdatedEvent = this.config.get('events.progress.updated') || 'progress:updated';
-        eventBus.on(progressUpdatedEvent, () => {
-            // Progress display is handled by ProgressTracker
-        });
-        // Settings changed
-        const settingsChangedEvent = this.config.get('events.settings.changed');
-        eventBus.on(settingsChangedEvent, (data) => {
-            if (data.key === 'learningMode') {
+        this.unsubscribers.push(unsubDataset);
+        // Subscribe to filtered dataset changes (replaces vocabulary:difficulty:filtered)
+        const unsubFiltered = useAppStore.subscribe((state) => state.vocabulary.filteredDataset, (filtered, prevFiltered) => {
+            if (filtered !== prevFiltered) {
                 this.updateBookDisplay();
+                this.updateButtons();
             }
         });
+        this.unsubscribers.push(unsubFiltered);
+        // Subscribe to vocabulary book changes (replaces mode:learning:changed)
+        const unsubVocabBook = useAppStore.subscribe((state) => state.settings.vocabularyBook, (vocabularyBook, prevVocabBook) => {
+            if (vocabularyBook && vocabularyBook !== prevVocabBook) {
+                const audioControls = window.audioControls;
+                if (audioControls) {
+                    audioControls.setCurrentIndex(0);
+                }
+                this.updateBookDisplay();
+                this.updateButtons();
+                this.displayFirstWord();
+            }
+        });
+        this.unsubscribers.push(unsubVocabBook);
+        // Subscribe to practice mode changes (replaces mode:practice:changed)
+        const unsubPracticeMode = useAppStore.subscribe((state) => state.settings.practiceMode, (practiceMode, prevPracticeMode) => {
+            if (practiceMode !== prevPracticeMode) {
+                const mode = practiceMode || this.config.get('modes.practice.vocabulary');
+                console.log(`[UIController] 🔄 Practice mode changed - Switching to: ${mode}`);
+                // Prevent excessive event handling during initialization
+                if (window.initializing) {
+                    console.log(`[UIController] Skipping mode change during initialization`);
+                    return;
+                }
+                this.handlePracticeModeChange(mode);
+            }
+        });
+        this.unsubscribers.push(unsubPracticeMode);
+        // Subscribe to current item changes (replaces content:display + tts:speaking:started)
+        const unsubCurrentItem = useAppStore.subscribe((state) => state.vocabulary.currentItem, (currentItem, prevCurrentItem) => {
+            if (currentItem && currentItem !== prevCurrentItem) {
+                // Display the current item (handles both vocabulary words and practice items)
+                this.displayCurrent({ word: currentItem, item: currentItem });
+            }
+        });
+        this.unsubscribers.push(unsubCurrentItem);
+        console.log('[UIController] Zustand store subscriptions setup complete');
     }
     /**
-     * Bind event listeners to DOM elements
+     * Bind event listeners to DOM elements (Zustand version)
      */
     bindEventListeners() {
         // Bind all settings controls
         this.bindSettingControls();
-        const eventBus = window.eventBus;
-        // Control buttons
+        // Control buttons - use Zustand store actions instead of EventBus
         const startBtn = document.getElementById('startBtn');
         const pauseBtn = document.getElementById('pauseBtn');
         const nextBtn = document.getElementById('nextBtn');
         const prevBtn = document.getElementById('prevBtn');
         if (startBtn) {
             startBtn.addEventListener('click', () => {
-                const audioStartEvent = this.config.get('events.audio.autoplay.start');
-                eventBus.emit(audioStartEvent);
+                // Trigger audio auto-play via Zustand store
+                useAppStore.getState().audio.startAutoPlay();
             });
         }
         if (pauseBtn) {
             pauseBtn.addEventListener('click', () => {
-                const audioPauseEvent = this.config.get('events.audio.autoplay.pause');
-                eventBus.emit(audioPauseEvent);
+                // Pause audio via Zustand store
+                useAppStore.getState().audio.pauseAutoPlay();
             });
         }
         if (nextBtn) {
             nextBtn.addEventListener('click', () => {
-                const mode = this.getPracticeMode();
-                const audioNextEvent = this.config.get('events.audio.navigate.next');
-                eventBus.emit(audioNextEvent, { mode });
+                const practiceMode = useAppStore.getState().settings.practiceMode;
+                // Navigate to next item via AudioControls
+                // Note: practiceMode === null means vocabulary mode
+                const audioControls = window.audioControls;
+                if (audioControls) {
+                    if (practiceMode !== null) {
+                        // Practice mode (RS/ASQ/WFD)
+                        audioControls.nextItem();
+                    }
+                    else {
+                        // Vocabulary mode
+                        audioControls.nextWord();
+                    }
+                }
+                useAppStore.getState().audio.navigateNext();
             });
         }
         if (prevBtn) {
             prevBtn.addEventListener('click', () => {
-                const mode = this.getPracticeMode();
-                const audioPrevEvent = this.config.get('events.audio.navigate.prev');
-                eventBus.emit(audioPrevEvent, { mode });
+                const practiceMode = useAppStore.getState().settings.practiceMode;
+                // Navigate to previous item via AudioControls
+                const audioControls = window.audioControls;
+                if (audioControls) {
+                    if (practiceMode !== null) {
+                        // Practice mode (RS/ASQ/WFD)
+                        audioControls.prevItem();
+                    }
+                    else {
+                        // Vocabulary mode
+                        audioControls.previousWord();
+                    }
+                }
+                useAppStore.getState().audio.navigatePrev();
             });
         }
         // Pronunciation toggle button
@@ -266,29 +274,22 @@ export class UIController {
             { elementId: 'repeatSelect', settingKey: 'repeat' },
             { elementId: 'voiceSelect', settingKey: 'voice' }
         ];
-        const eventBus = window.eventBus;
         settingControls.forEach(({ elementId, settingKey, afterChange }) => {
             const element = document.getElementById(elementId);
             if (element) {
                 element.addEventListener('change', async (e) => {
                     const target = e.target;
-                    // Emit event for SettingsModule to handle
-                    if (eventBus) {
-                        const settingsRequestChangeEvent = this.config.get('events.settings.requestChange');
-                        eventBus.emit(settingsRequestChangeEvent, {
-                            key: settingKey,
-                            value: target.value
-                        });
-                    }
-                    // Wait for SettingsModule to finish saving
+                    // Update settings via Zustand store (replaces EventBus emission)
+                    useAppStore.getState().settings.updateSetting(settingKey, target.value);
+                    // Call afterChange callback if provided
                     if (afterChange) {
-                        await new Promise(resolve => setTimeout(resolve, 100));
+                        await new Promise(resolve => setTimeout(resolve, 50));
                         afterChange();
                     }
                 });
             }
         });
-        console.log('✅ UIController: Bound', settingControls.length, 'setting controls using event-driven pattern');
+        console.log('✅ UIController: Bound', settingControls.length, 'setting controls using Zustand store');
     }
     /**
      * Initialize dropdowns based on current configuration
@@ -940,21 +941,14 @@ export class UIController {
             this.state.currentItem = dataset.items[0];
             // Update global references for backward compatibility
             window.currentDataset = dataset;
-            window.currentDatasetIndex = 0;
-            window.currentItem = dataset.items[0];
+            // Update Zustand store instead of window globals
+            useAppStore.getState().vocabulary.setDataset(dataset.items, mode);
+            useAppStore.getState().vocabulary.setCurrentItem(dataset.items[0]);
+            useAppStore.getState().audio.setCurrentIndex(0);
             // Display first item
             this.displayContent(dataset.items[0], mode);
             // Update progress
             window.progressTracker?.updateStatus(`${mode.toUpperCase()} Mode - ${dataset.items.length} items loaded`);
-            // Emit dataset change event
-            const datasetChangedEvent = this.config.get('events.dataset.practice.changed');
-            if (datasetChangedEvent) {
-                window.eventBus.emit(datasetChangedEvent, {
-                    mode: mode,
-                    datasetId: datasetId,
-                    itemCount: dataset.items.length
-                });
-            }
             return true;
         }
         catch (error) {

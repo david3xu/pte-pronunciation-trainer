@@ -1,16 +1,18 @@
 /**
  * SettingsModule - Type-Safe Centralized Settings Management
  *
- * Single source of truth for ALL application settings with event-driven architecture.
- * Handles validation, application to engines, persistence, and event emission.
+ * Single source of truth for ALL application settings with Zustand state management.
+ * Handles validation, application to engines, persistence, and store updates.
  *
- * Architecture:
- * - View Layer emits 'setting:request-change' events
- * - SettingsModule validates, applies, persists, and emits 'setting:changed' events
- * - Engines/Managers react to validated settings
+ * ARCHITECTURE: Zustand state management
+ * - View Layer calls settings.updateSetting() directly (or via SettingsModule)
+ * - SettingsModule validates, applies, persists, and updates Zustand store
+ * - Components subscribe to settings store changes and react automatically
+ * - Replaces EventBus emissions with direct store actions
  *
  * TypeScript version of src/js/core/SettingsModule.js
  */
+import { useAppStore } from '../stores';
 /**
  * Type-safe Settings Module
  * Centralized management of all application settings
@@ -42,9 +44,7 @@ export class SettingsModule {
         this.handlers = this.initializeHandlers();
         // Load settings from storage
         this.loadSettings();
-        // Listen for setting change requests
-        const settingsRequestChangeEvent = this.config.get('events.settings.requestChange');
-        this.eventBus.on(settingsRequestChangeEvent, this.handleSettingChange.bind(this));
+        // Note: No EventBus listener needed - UI calls updateSetting() directly via Zustand store
         console.log('✅ SettingsModule: Initialized with', Object.keys(this.handlers).length, 'handlers');
     }
     /**
@@ -161,13 +161,7 @@ export class SettingsModule {
                 },
                 apply: (value) => {
                     const oldMode = this.get('practiceMode');
-                    // Emit mode:changing event BEFORE the change
-                    const modeChangingEvent = this.config.get('events.mode.practice.changing');
-                    this.eventBus.emit(modeChangingEvent, {
-                        oldMode,
-                        newMode: value,
-                        timestamp: Date.now()
-                    });
+                    console.log(`[SettingsModule] Practice mode changing: ${oldMode} → ${value}`);
                     // Set global practice mode
                     if (typeof window !== 'undefined') {
                         window.currentPracticeMode = value;
@@ -192,14 +186,9 @@ export class SettingsModule {
                             }
                         }
                     }
-                    // Emit mode:changed event AFTER the change
-                    const modeChangedEvent = this.config.get('events.mode.practice.changed');
-                    this.eventBus.emit(modeChangedEvent, {
-                        mode: value,
-                        oldMode,
-                        mapping: mapping || null,
-                        timestamp: Date.now()
-                    });
+                    // Note: Mode change events replaced by Zustand store subscriptions
+                    // Components subscribe to settings.practiceMode changes
+                    console.log(`[SettingsModule] Practice mode changed to: ${value} (Zustand will notify subscribers)`);
                 },
                 default: () => this.config.get('data.defaults.practiceMode'),
                 storageKey: 'practiceMode',
@@ -211,8 +200,9 @@ export class SettingsModule {
                     return datasets.some((d) => d.id === value);
                 },
                 apply: async (value) => {
-                    const datasetChangedEvent = this.config.get('events.dataset.practice.changed');
-                    this.eventBus.emit(datasetChangedEvent, { dataset: value });
+                    // Note: Dataset change event replaced by Zustand store subscriptions
+                    // Components subscribe to settings.practiceDataset changes
+                    console.log(`[SettingsModule] Practice dataset changed to: ${value} (Zustand will notify subscribers)`);
                 },
                 default: () => this.config.get('data.defaults.practiceDataset'),
                 storageKey: 'practiceDataset',
@@ -247,16 +237,22 @@ export class SettingsModule {
             if (handler.storageKey) {
                 this.storage.setItem(handler.storageKey, value);
             }
-            // 6. Emit success event
-            const settingsChangedEvent = this.config.get('events.settings.changed');
-            this.eventBus.emit(settingsChangedEvent, { key, value, timestamp: Date.now() });
+            // 6. Update Zustand store (replaces EventBus emission)
+            // Note: Only update store for settings that exist in the store schema
+            const storeSettings = useAppStore.getState().settings;
+            if (key in storeSettings) {
+                useAppStore.getState().settings.updateSetting(key, value);
+            }
+            else {
+                console.log(`[SettingsModule] Setting '${key}' updated but not in Zustand store schema`);
+            }
             console.log(`✅ SettingsModule: Updated '${key}' = '${value}'`);
             return { success: true, key, value };
         }
         catch (error) {
             console.error(`❌ SettingsModule: Error updating '${key}':`, error);
-            const settingsErrorEvent = this.config.get('events.settings.error');
-            this.eventBus.emit(settingsErrorEvent, { key, value, error: error.message });
+            // Show error via UI store (replaces EventBus emission)
+            useAppStore.getState().ui.showNotification(`Settings error: ${error.message}`, 'error');
             return { success: false, error: error.message, key, value };
         }
     }
@@ -303,9 +299,9 @@ export class SettingsModule {
                 await this.handleSettingChange({ key, value: defaultValue });
             }
         }
-        const settingsResetEvent = this.config.get('events.settings.reset') || 'settings:reset';
-        this.eventBus.emit(settingsResetEvent, { timestamp: Date.now() });
-        console.log('✅ SettingsModule: All settings reset');
+        // Note: Settings reset event replaced by Zustand store subscriptions
+        // Components will automatically see all setting changes via their subscriptions
+        console.log('✅ SettingsModule: All settings reset (Zustand will notify subscribers)');
     }
     /**
      * Batch update multiple settings
@@ -316,8 +312,9 @@ export class SettingsModule {
         for (const [key, value] of Object.entries(settingsObject)) {
             results[key] = await this.handleSettingChange({ key, value });
         }
-        const batchUpdatedEvent = this.config.get('events.settings.batchUpdated') || 'settings:batch-updated';
-        this.eventBus.emit(batchUpdatedEvent, { results, timestamp: Date.now() });
+        // Note: Batch update event replaced by Zustand store subscriptions
+        // Components will see all individual setting changes via their subscriptions
+        console.log('✅ SettingsModule: Batch update complete (Zustand notified subscribers)');
         return results;
     }
     /**
@@ -359,16 +356,19 @@ export class SettingsModule {
             if (handler?.apply) {
                 try {
                     handler.apply.call(this, value);
-                    console.log(`[SettingsModule] ${key.charAt(0).toUpperCase() + key.slice(1)} set to ${value} (event-driven)`);
+                    console.log(`[SettingsModule] ${key.charAt(0).toUpperCase() + key.slice(1)} set to ${value} (Zustand)`);
                 }
                 catch (error) {
                     console.warn(`⚠️ SettingsModule: Failed to apply '${key}' during initialization:`, error.message);
                 }
-                const settingsChangedEvent = this.config.get('events.settings.changed');
-                this.eventBus.emit(settingsChangedEvent, { key, value });
+                // Update Zustand store with loaded setting
+                const storeSettings = useAppStore.getState().settings;
+                if (key in storeSettings) {
+                    useAppStore.getState().settings.updateSetting(key, value);
+                }
             }
         }
-        console.log('✅ SettingsModule: Applied all initial settings to modules');
+        console.log('✅ SettingsModule: Applied all initial settings to modules (Zustand updated)');
     }
     /**
      * Get available options for a setting (for dropdown population)

@@ -1,11 +1,18 @@
 /**
  * PTEVocabularyManager - Type-Safe Vocabulary Management
  *
+ * ARCHITECTURE: Zustand state management
+ * - Replaces EventBus with Zustand store subscriptions and updates
+ * - Subscribes to settings.difficultyFilter and settings.vocabularyBook changes
+ * - Updates vocabulary store directly instead of emitting events
+ * - Error notifications via UI store
+ *
  * Manages vocabulary loading, filtering, and state for PTE datasets.
- * Handles 13 vocabulary books with retry logic and event-driven updates.
+ * Handles 13 vocabulary books with retry logic and reactive updates.
  *
  * TypeScript version of src/js/core/PTEVocabularyManager.js
  */
+import { useAppStore } from '../stores';
 /**
  * Type-safe PTE Vocabulary Manager
  * Handles all vocabulary dataset operations with retry logic and filtering
@@ -19,11 +26,12 @@ export class PTEVocabularyManager {
     datasets = new Map();
     config = null;
     isInitialized = false;
+    unsubscribers = [];
     constructor() {
         // Initialize config reference
         this.config = (typeof window !== 'undefined' && window.appConfig) || null;
-        // Listen to settings changes
-        this._attachEventListeners();
+        // Subscribe to settings changes via Zustand (replaces EventBus listener)
+        this._setupStoreSubscriptions();
         // Initialize when DOM is ready
         if (typeof document !== 'undefined') {
             if (document.readyState === 'loading') {
@@ -35,44 +43,38 @@ export class PTEVocabularyManager {
         }
     }
     /**
-     * Attach event listeners for settings changes
-     * @private
+     * Cleanup subscriptions
      */
-    _attachEventListeners() {
-        if (typeof window === 'undefined' || !window.eventBus)
-            return;
-        const settingsChangedEvent = this.config?.get('events.settings.changed') || 'settings:changed';
-        window.eventBus.on(settingsChangedEvent, this._handleSettingChange.bind(this));
+    destroy() {
+        this.unsubscribers.forEach(unsub => unsub());
+        this.unsubscribers = [];
     }
     /**
-     * Handle setting changes from SettingsModule
+     * Setup Zustand store subscriptions (replaces EventBus listeners)
      * @private
      */
-    async _handleSettingChange({ key, value }) {
-        if (key === 'difficulty') {
-            this.setDifficulty(value);
-            console.log(`[PTEVocabularyManager] Difficulty changed to ${value}`);
-            // Emit event to update UI
-            const vocabUpdatedEvent = this.config?.get('events.vocabulary.updated') || 'vocabulary:updated';
-            if (typeof window !== 'undefined' && window.eventBus) {
-                window.eventBus.emit(vocabUpdatedEvent, {
-                    totalWords: this.getTotalWords(),
-                    difficulty: value
-                });
+    _setupStoreSubscriptions() {
+        if (typeof window === 'undefined')
+            return;
+        // Subscribe to difficulty filter changes
+        const unsubDifficulty = useAppStore.subscribe((state) => state.settings.difficultyFilter, (difficultyFilter, prevDifficultyFilter) => {
+            if (difficultyFilter !== prevDifficultyFilter) {
+                this.setDifficulty(difficultyFilter);
+                console.log(`[PTEVocabularyManager] Difficulty changed to ${difficultyFilter}`);
+                // Update vocabulary store (replaces EventBus emission)
+                useAppStore.getState().vocabulary.filterByDifficulty(difficultyFilter);
             }
-        }
-        else if (key === 'learningMode') {
-            await this.setLearningMode(value);
-            console.log(`[PTEVocabularyManager] Learning mode changed to ${value}`);
-            // Emit event to update UI
-            const vocabUpdatedEvent = this.config?.get('events.vocabulary.updated') || 'vocabulary:updated';
-            if (typeof window !== 'undefined' && window.eventBus) {
-                window.eventBus.emit(vocabUpdatedEvent, {
-                    totalWords: this.getTotalWords(),
-                    learningMode: value
-                });
+        });
+        this.unsubscribers.push(unsubDifficulty);
+        // Subscribe to vocabulary book (learning mode) changes
+        const unsubLearningMode = useAppStore.subscribe((state) => state.settings.vocabularyBook, async (vocabularyBook, prevVocabularyBook) => {
+            if (vocabularyBook && vocabularyBook !== prevVocabularyBook) {
+                await this.setLearningMode(vocabularyBook);
+                console.log(`[PTEVocabularyManager] Learning mode changed to ${vocabularyBook}`);
+                // Vocabulary store is updated in setLearningMode via loadWordsForMode
             }
-        }
+        });
+        this.unsubscribers.push(unsubLearningMode);
     }
     /**
      * Initialize the vocabulary manager
@@ -183,31 +185,16 @@ export class PTEVocabularyManager {
             else {
                 const errorMsg = `No path configured for mode: ${mode}`;
                 console.warn(`[PTEVocabularyManager] ⚠️ ${errorMsg}`);
-                // Emit error event for UI notification
-                if (typeof window !== 'undefined' && window.eventBus) {
-                    const loadErrorEvent = this.config?.get('events.vocabulary.loadError') || 'vocabulary:load-error';
-                    window.eventBus.emit(loadErrorEvent, {
-                        mode,
-                        error: errorMsg,
-                        severity: 'warning'
-                    });
-                }
+                // Show warning via UI store (replaces EventBus emission)
+                useAppStore.getState().ui.showNotification(errorMsg, 'error');
                 this.datasets.set(mode, { vocabulary: [] });
             }
         }
         catch (error) {
             const errorMsg = `Error loading ${mode} dataset: ${error.message}`;
             console.error(`[PTEVocabularyManager] ❌ ${errorMsg}`, error);
-            // Emit error event for centralized error handling
-            if (typeof window !== 'undefined' && window.eventBus) {
-                const loadErrorEvent = this.config?.get('events.vocabulary.loadError') || 'vocabulary:load-error';
-                window.eventBus.emit(loadErrorEvent, {
-                    mode,
-                    error: errorMsg,
-                    originalError: error,
-                    severity: 'error'
-                });
-            }
+            // Show error via UI store (replaces EventBus emission)
+            useAppStore.getState().ui.showNotification(errorMsg, 'error');
             // Set empty fallback but make it obvious something failed
             this.datasets.set(mode, {
                 vocabulary: [],
@@ -215,7 +202,7 @@ export class PTEVocabularyManager {
                 _timestamp: new Date().toISOString()
             });
             // Don't throw - allow app to continue with empty dataset
-            // User will be notified via event system
+            // User will be notified via UI store
         }
     }
     /**
@@ -237,6 +224,7 @@ export class PTEVocabularyManager {
     }
     /**
      * Apply current category and difficulty filters
+     * Updates both internal state and Zustand store
      */
     applyFilters() {
         let filteredWords = [...this.allWords];
@@ -250,6 +238,11 @@ export class PTEVocabularyManager {
             filteredWords = filteredWords.filter(word => word.difficulty === this.currentDifficulty);
         }
         this.currentWords = filteredWords;
+        // Update Zustand store (replaces EventBus vocabulary:updated emission)
+        useAppStore.getState().vocabulary.setDataset(this.allWords, this.currentLearningMode);
+        if (this.currentDifficulty !== defaultDifficulty) {
+            useAppStore.getState().vocabulary.filterByDifficulty(this.currentDifficulty);
+        }
     }
     /**
      * Set current category filter

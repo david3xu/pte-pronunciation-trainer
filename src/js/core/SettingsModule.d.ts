@@ -1,13 +1,14 @@
 /**
  * SettingsModule - Type-Safe Centralized Settings Management
  *
- * Single source of truth for ALL application settings with event-driven architecture.
- * Handles validation, application to engines, persistence, and event emission.
+ * Single source of truth for ALL application settings with Zustand state management.
+ * Handles validation, application to engines, persistence, and store updates.
  *
- * Architecture:
- * - View Layer emits 'setting:request-change' events
- * - SettingsModule validates, applies, persists, and emits 'setting:changed' events
- * - Engines/Managers react to validated settings
+ * ARCHITECTURE: Zustand state management
+ * - View Layer calls settings.updateSetting() directly (or via SettingsModule)
+ * - SettingsModule validates, applies, persists, and updates Zustand store
+ * - Components subscribe to settings store changes and react automatically
+ * - Replaces EventBus emissions with direct store actions
  *
  * TypeScript version of src/js/core/SettingsModule.js
  */

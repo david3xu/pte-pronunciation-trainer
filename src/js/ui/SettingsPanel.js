@@ -9,7 +9,7 @@
  * Type-safe UI controller for settings panel
  * Manages practice mode switching, settings persistence, import/export
  */
-import { useAppStore } from '../stores';
+import { useAppStore } from '../stores.js';
 /**
  * SettingsPanel - Manages settings UI and persistence
  *

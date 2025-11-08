@@ -10,7 +10,7 @@
     "data:pte": "node scripts/pte-data-pipeline.js",
     "build": "node scripts/build.js",
     "build:ts": "tsc --noEmit",
-    "compile:ts": "tsc && cp -r dist/compiled/ts/* src/js/",
+    "compile:ts": "tsc && cp -r dist/compiled/ts/* src/js/ && node scripts/add-js-extensions.js",
     "test": "jest --passWithNoTests",
     "test:watch": "jest --watch --passWithNoTests",
     "test:coverage": "jest --coverage --passWithNoTests",

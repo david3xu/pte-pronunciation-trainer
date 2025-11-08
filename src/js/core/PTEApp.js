@@ -39,14 +39,8 @@ export class PTEVocabularyTrainer {
         }
         // Initialize all modules in correct order
         this.initializeModules();
-        // Emit app initialization event
-        if (window.eventBus) {
-            const appInitEvent = window.appConfig.get('events.app.initialized') || 'app:initialized';
-            window.eventBus.emit(appInitEvent, {
-                timestamp: new Date().toISOString(),
-                version: '3.0-pte'
-            });
-        }
+        // Note: App initialization event removed (informational, no listeners)
+        console.log('✅ PTEApp: Initialized successfully - v3.0-pte');
     }
     /**
      * Initialize all application modules in correct dependency order

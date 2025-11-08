@@ -1,22 +1,20 @@
 /**
  * VoiceSelector - Voice Selection and Management
  *
+ * ARCHITECTURE: Zustand state management
+ * - Subscribes to settings.ttsVoice changes
+ * - Updates TTS store selected voice instead of emitting events
+ *
  * Type-safe voice selection with Web Speech API
  * Features:
  * - User preference management
  * - Male voice priority filtering
  * - Curated voice list with fallbacks
- * - Event-driven preference changes
+ * - Zustand-driven preference changes
  * - Dropdown population for UI
  */
 
-/**
- * Settings change event data
- */
-interface SettingsChangeEvent {
-  key: string;
-  value: any;
-}
+import { useAppStore } from '../stores';
 
 /**
  * Curated voice information
@@ -29,44 +27,42 @@ interface CuratedVoice {
 }
 
 /**
- * Voice changed event data
- */
-interface VoiceChangedEvent {
-  voiceName: string;
-  timestamp: string;
-}
-
-/**
  * VoiceSelector - Manages voice selection and preferences
  */
 export class VoiceSelector {
   private preferredVoice: string | null = null;
+  private unsubscribers: Array<() => void> = [];
 
   constructor() {
-    // Listen to settings changes
-    this._attachEventListeners();
+    // Subscribe to Zustand store changes (replaces EventBus listener)
+    this._setupStoreSubscriptions();
   }
 
   /**
-   * Attach event listeners for settings changes
+   * Cleanup subscriptions
    */
-  private _attachEventListeners(): void {
-    // Listen to standardized settings:changed event from Config.js
-    const config = (window as any).appConfig;
-    const settingsChangedEvent = config?.get('events.settings.changed') || 'settings:changed';
-    const eventBus = (window as any).eventBus;
-
-    eventBus.on(settingsChangedEvent, this._handleSettingChange.bind(this));
+  destroy(): void {
+    this.unsubscribers.forEach(unsub => unsub());
+    this.unsubscribers = [];
   }
 
   /**
-   * Handle setting changes from SettingsModule
+   * Setup Zustand store subscriptions (replaces EventBus listeners)
    */
-  private _handleSettingChange({ key, value }: SettingsChangeEvent): void {
-    if (key === 'voice') {
-      this._setPreferredVoice(value as string);
-      console.log(`[VoiceSelector] Voice preference changed to ${value}`);
-    }
+  private _setupStoreSubscriptions(): void {
+    if (typeof window === 'undefined') return;
+
+    // Subscribe to TTS voice changes
+    const unsubVoice = useAppStore.subscribe(
+      (state) => state.settings.ttsVoice,
+      (ttsVoice, prevTtsVoice) => {
+        if (ttsVoice !== prevTtsVoice) {
+          this._setPreferredVoice(ttsVoice || 'auto');
+          console.log(`[VoiceSelector] Voice preference changed to ${ttsVoice}`);
+        }
+      }
+    );
+    this.unsubscribers.push(unsubVoice);
   }
 
   /**
@@ -255,17 +251,13 @@ export class VoiceSelector {
       ttsEngine.resetVoiceCache();
     }
 
-    // Emit standardized event (from Config.js)
-    const config = (window as any).appConfig;
-    const voiceChangedEvent = config?.get('events.voice.preference.changed') || 'voice:preference:changed';
-    const eventBus = (window as any).eventBus;
-
-    const eventData: VoiceChangedEvent = {
-      voiceName: this.preferredVoice || 'auto',
-      timestamp: new Date().toISOString()
-    };
-
-    eventBus.emit(voiceChangedEvent, eventData);
+    // Update Zustand TTS store (replaces EventBus emission)
+    // Note: Voice selection is tracked in TTS store for voice-related functionality
+    const voices = speechSynthesis.getVoices();
+    const selectedVoice = this.selectBestVoiceMatch(voices);
+    if (selectedVoice) {
+      useAppStore.getState().tts.setVoice(selectedVoice);
+    }
   }
 
   /**

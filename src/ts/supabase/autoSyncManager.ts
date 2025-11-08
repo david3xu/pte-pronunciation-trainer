@@ -1,10 +1,15 @@
 /**
  * Auto Sync Manager
  *
+ * ARCHITECTURE: Zustand state management
+ * - Subscribes to progress store changes instead of EventBus
+ * - Subscribes to settings.practiceMode and vocabulary.currentDataset for session tracking
+ *
  * Automatically syncs user progress and study sessions to Supabase
- * Listens to progress events and handles cloud synchronization
+ * Tracks progress via Zustand store subscriptions and handles cloud synchronization
  */
 
+import { useAppStore } from '../stores';
 import { syncService } from './syncService';
 import type { SyncResult } from './syncService';
 
@@ -30,6 +35,7 @@ export class AutoSyncManager {
   private syncInterval: number = 30000; // Sync every 30 seconds
   private lastSyncTime: number = 0;
   private pendingSync: boolean = false;
+  private unsubscribers: Array<() => void> = [];
 
   /**
    * Initialize auto-sync manager
@@ -44,46 +50,63 @@ export class AutoSyncManager {
     }
 
     console.log('[AutoSyncManager] ✅ Initialized successfully');
-    this.setupEventListeners();
+    this.setupStoreSubscriptions();
   }
 
   /**
-   * Set up event listeners for progress tracking
+   * Cleanup subscriptions
    */
-  private setupEventListeners(): void {
-    const eventBus = (window as any).eventBus;
-    const config = (window as any).appConfig;
+  destroy(): void {
+    this.unsubscribers.forEach(unsub => unsub());
+    this.unsubscribers = [];
+  }
 
-    if (!eventBus || !config) {
-      console.warn('[AutoSyncManager] EventBus or Config not available');
-      return;
-    }
+  /**
+   * Setup Zustand store subscriptions (replaces EventBus listeners)
+   */
+  private setupStoreSubscriptions(): void {
+    if (typeof window === 'undefined') return;
 
-    // Listen to progress updates
-    const progressEvent = config.get('events.progress.updated') || 'progress:updated';
-    eventBus.on(progressEvent, (data: any) => {
-      this.handleProgressUpdate(data);
-    });
+    // Subscribe to progress updates
+    const unsubProgress = useAppStore.subscribe(
+      (state) => ({ currentIndex: state.progress.currentIndex, totalItems: state.progress.totalItems }),
+      (progress, prevProgress) => {
+        if (progress.currentIndex !== prevProgress.currentIndex || progress.totalItems !== prevProgress.totalItems) {
+          this.handleProgressUpdate({ currentIndex: progress.currentIndex, totalWords: progress.totalItems });
+        }
+      }
+    );
+    this.unsubscribers.push(unsubProgress);
 
-    // Listen to vocabulary loaded events (start of session)
-    const vocabLoadedEvent = config.get('events.vocabulary.loaded') || 'vocabulary:loaded';
-    eventBus.on(vocabLoadedEvent, (data: any) => {
-      this.startStudySession(data);
-    });
+    // Subscribe to vocabulary dataset changes (start of session)
+    const unsubDataset = useAppStore.subscribe(
+      (state) => state.vocabulary.currentDataset,
+      (dataset, prevDataset) => {
+        if (dataset.length > 0 && dataset !== prevDataset) {
+          this.startStudySession({ wordCount: dataset.length });
+        }
+      }
+    );
+    this.unsubscribers.push(unsubDataset);
 
-    // Listen to mode changes (end previous session, start new)
-    const modeChangedEvent = config.get('events.mode.practice.changed') || 'mode:practice:changed';
-    eventBus.on(modeChangedEvent, () => {
-      this.endCurrentSession();
-      // New session will start on next vocabulary:loaded event
-    });
+    // Subscribe to practice mode changes (end previous session, start new)
+    const unsubMode = useAppStore.subscribe(
+      (state) => state.settings.practiceMode,
+      (practiceMode, prevPracticeMode) => {
+        if (practiceMode !== prevPracticeMode) {
+          this.endCurrentSession();
+          // New session will start on next dataset load
+        }
+      }
+    );
+    this.unsubscribers.push(unsubMode);
 
     // Listen to page unload (save session before leaving)
     window.addEventListener('beforeunload', () => {
       this.endCurrentSession();
     });
 
-    console.log('[AutoSyncManager] Event listeners registered');
+    console.log('[AutoSyncManager] Zustand store subscriptions registered');
   }
 
   /**

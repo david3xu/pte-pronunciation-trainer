@@ -9,15 +9,34 @@ import { createClient, SupabaseClient } from '@supabase/supabase-js';
 
 /**
  * Supabase configuration
- * Reads from .env file or falls back to hardcoded values
+ * Reads from environment variables (Vercel/Vite)
  */
-const supabaseUrl = 'https://kopzyjpniqqsxefteyfx.supabase.co';
-const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtvcHp5anBuaXFxc3hlZnRleWZ4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI1NzkxMzEsImV4cCI6MjA3ODE1NTEzMX0.7rGy0aL97xJL5aooz4qGIraqLM0jlXtFkRJn1ZVOPXQ';
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || '';
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
 
 // Validate configuration
 if (!supabaseUrl || !supabaseAnonKey) {
-  console.error('❌ Supabase configuration missing!');
-  console.error('Please ensure VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY are set in .env');
+  const errorMsg = `
+❌ Supabase configuration missing!
+
+Please set these environment variables:
+- VITE_SUPABASE_URL: Your Supabase project URL
+- VITE_SUPABASE_ANON_KEY: Your Supabase anonymous key
+
+For Vercel:
+1. Go to Project Settings → Environment Variables
+2. Add both variables
+3. Redeploy your project
+
+For local development:
+1. Create .env file in project root
+2. Add: VITE_SUPABASE_URL=your-url
+3. Add: VITE_SUPABASE_ANON_KEY=your-key
+4. Restart dev server
+  `.trim();
+
+  console.error(errorMsg);
+  throw new Error('Missing Supabase configuration');
 }
 
 /**

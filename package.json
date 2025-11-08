@@ -109,5 +109,8 @@
       "indentation": 2,
       "string-quotes": "single"
     }
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.80.0"
   }
 }

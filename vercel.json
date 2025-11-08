@@ -1,5 +1,5 @@
 {
-  "buildCommand": "node scripts/pte-data-pipeline.js",
+  "buildCommand": "npx tsc && cp -r dist/compiled/ts/* src/js/ && node scripts/pte-data-pipeline.js",
   "outputDirectory": ".",
   "headers": [
     {

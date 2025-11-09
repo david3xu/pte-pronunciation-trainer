@@ -8,8 +8,8 @@
  * Automatically syncs user progress and study sessions to Supabase
  * Tracks progress via Zustand store subscriptions and handles cloud synchronization
  */
-import { useAppStore } from '../stores';
-import { syncService } from './syncService';
+import { useAppStore } from '../stores/index.js';
+import { syncService } from './syncService.js';
 /**
  * AutoSyncManager - Handles automatic cloud synchronization
  */

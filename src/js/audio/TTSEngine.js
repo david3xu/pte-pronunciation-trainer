@@ -15,7 +15,7 @@
  * - Repeat modes for learning
  * - Text cleaning and normalization
  */
-import { useAppStore } from '../stores';
+import { useAppStore } from '../stores/index.js';
 /**
  * TTSEngine - Type-safe text-to-speech engine
  *

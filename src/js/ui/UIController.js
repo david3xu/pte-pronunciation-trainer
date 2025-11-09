@@ -10,7 +10,7 @@
  * - Reactive UI updates based on store changes
  * - Direct store actions for user interactions
  */
-import { useAppStore } from '../stores';
+import { useAppStore } from '../stores/index.js';
 /**
  * Type-safe UI Controller with Zustand integration
  * Manages DOM updates, content display, and user interactions

@@ -211,7 +211,7 @@ const VoiceSelector: React.FC<VoiceSelectorProps> = ({ onVoiceChange }) => {
                 <Select.Content>
                   {voices[selectedLanguage] && Object.keys(voices[selectedLanguage]).map((voiceId) => (
                     <Select.Item key={voiceId} value={voiceId}>
-                      {voiceId} - {voices[selectedLanguage][voiceId]}
+                      {voiceId} - {voices[selectedLanguage]?.[voiceId] || ''}
                     </Select.Item>
                   ))}
                 </Select.Content>

@@ -55,4 +55,9 @@ export declare class AppConfig {
 }
 export declare const appConfig: AppConfig;
 export default appConfig;
+declare global {
+    interface Window {
+        appConfig: AppConfig;
+    }
+}
 //# sourceMappingURL=Config.d.ts.map

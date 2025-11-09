@@ -354,8 +354,15 @@ export const appConfig = new AppConfig();
 // Default export: singleton instance (for scripts that need config immediately)
 export default appConfig;
 
+// Extend Window interface for vanilla JS compatibility
+declare global {
+  interface Window {
+    appConfig: AppConfig;
+  }
+}
+
 // Attach to window for vanilla JS compatibility (Phase 2 migration)
 if (typeof window !== 'undefined') {
-  (window as any).appConfig = appConfig;
+  window.appConfig = appConfig;
   console.log('✅ Config.js loaded - window.appConfig attached:', typeof window.appConfig);
 }

@@ -5,7 +5,7 @@
  * Replaces the EventBus pattern with reactive state management.
  *
  * Usage:
- * import { useAppStore } from './stores';
+ * import { useAppStore } from './stores/index.js';
  *
  * // In vanilla JS components:
  * const audio = useAppStore.getState().audio;
@@ -23,8 +23,8 @@
 import { create } from 'zustand';
 import { devtools, persist, subscribeWithSelector } from 'zustand/middleware';
 // Import Supabase services for auth store
-import { authService } from '../supabase/authService';
-import { syncService } from '../supabase/syncService';
+import { authService } from '../supabase/authService.js';
+import { syncService } from '../supabase/syncService.js';
 /**
  * Main application store
  *
@@ -460,5 +460,5 @@ export const useNotification = () => useAppStore((state) => state.ui.notificatio
 /**
  * Export all store types
  */
-export * from './types';
+export * from './types.js';
 //# sourceMappingURL=index.js.map

@@ -102,7 +102,7 @@ export default defineConfig({
       '@data': path.resolve(__dirname, './src/ts/data'),
       '@audio': path.resolve(__dirname, './src/ts/audio'),
       '@ui': path.resolve(__dirname, './src/ts/ui'),
-      '@supabase': path.resolve(__dirname, './src/ts/supabase'),
+      '@supabase-client': path.resolve(__dirname, './src/ts/supabase'),
       '@analytics': path.resolve(__dirname, './src/ts/analytics'),
     },
     // Extensions to resolve

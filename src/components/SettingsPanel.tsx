@@ -69,8 +69,8 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                   <Text size="3" weight="medium">Practice Mode</Text>
                   <Select.Root
                     value={settings.practiceMode || ''}
-                    onValueChange={(value: 'rs' | 'asq' | 'wfd' | null) =>
-                      settings.updateSetting('practiceMode', value)
+                    onValueChange={(value) =>
+                      settings.updateSetting('practiceMode', value as 'rs' | 'asq' | 'wfd' | null)
                     }
                   >
                     <Select.Trigger />
@@ -128,7 +128,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                 <Select.Root
                   value={settings.difficultyFilter}
                   onValueChange={(value) =>
-                    settings.updateSetting('difficultyFilter', value)
+                    settings.updateSetting('difficultyFilter', value as 'easy' | 'normal' | 'hard' | 'all')
                   }
                 >
                   <Select.Trigger />
@@ -165,7 +165,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                 </Flex>
                 <Slider
                   value={[settings.ttsRate]}
-                  onValueChange={([rate]) => settings.updateSetting('ttsRate', rate)}
+                  onValueChange={([rate]) => settings.updateSetting('ttsRate', rate ?? 1.0)}
                   min={0.5}
                   max={2.0}
                   step={0.1}

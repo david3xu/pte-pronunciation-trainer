@@ -5,6 +5,8 @@
  * Custom utilities and overrides can be added here.
  */
 
+@import './variables.css' reference;
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -34,25 +36,76 @@
 @layer components {
   /* Card component */
   .card {
-    @apply bg-surface rounded-lg shadow-md p-lg border border-border;
+    background-color: var(--bg-card);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: var(--space-lg);
+    border: 1px solid var(--border-light);
   }
 
   /* Button variants */
   .btn-primary {
-    @apply bg-primary text-white hover:opacity-90 active:opacity-80 px-md py-sm rounded-md font-medium transition-all;
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    transition: all var(--animation-duration-fast);
+  }
+
+  .btn-primary:hover {
+    opacity: 0.9;
+  }
+
+  .btn-primary:active {
+    opacity: 0.8;
   }
 
   .btn-secondary {
-    @apply bg-secondary text-white hover:opacity-90 active:opacity-80 px-md py-sm rounded-md font-medium transition-all;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    transition: all var(--animation-duration-fast);
+  }
+
+  .btn-secondary:hover {
+    opacity: 0.9;
+  }
+
+  .btn-secondary:active {
+    opacity: 0.8;
   }
 
   .btn-outline {
-    @apply border-2 border-primary text-primary hover:bg-primary hover:text-white px-md py-sm rounded-md font-medium transition-all;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    transition: all var(--animation-duration-fast);
+    background: transparent;
+  }
+
+  .btn-outline:hover {
+    background-color: var(--primary-color);
+    color: white;
   }
 
   /* Input styles */
   .input {
-    @apply border border-border rounded-md px-md py-sm bg-surface text-text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    padding: var(--space-sm) var(--space-md);
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+  }
+
+  .input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--primary-color);
+    border-color: transparent;
   }
 }
 

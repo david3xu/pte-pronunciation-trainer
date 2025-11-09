@@ -203,6 +203,13 @@ export class AudioControls {
     console.log('[AudioControls] window.currentItem:', (window as any).currentItem);
     console.log('[AudioControls] window.currentDataset:', (window as any).currentDataset);
 
+    // Check if mode is defined
+    if (!currentMode) {
+      console.error('[AudioControls] ❌ No practice mode selected');
+      useAppStore.getState().ui.showNotification('Please select a practice mode or vocabulary book first.', 'error');
+      return;
+    }
+
     // Use Config.js mapping to determine mode type
     const modeMapping = this.config.get('data.practiceModeMapping') || {};
     const mapping = modeMapping[currentMode];

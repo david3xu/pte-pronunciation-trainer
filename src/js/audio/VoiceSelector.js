@@ -72,9 +72,13 @@ export class VoiceSelector {
         }
         // ONLY MALE VOICES - Use centralized priority list from config
         const config = window.appConfig;
-        const priorityNames = [config.get('tts.voices.default'), ...config.get('tts.voices.fallbacks')];
+        const defaultVoice = config?.get?.('tts.voices.default') || 'Google UK English Male';
+        const fallbackVoices = config?.get?.('tts.voices.fallbacks') || ['Microsoft James', 'Alex', 'Daniel'];
+        const priorityNames = [defaultVoice, ...fallbackVoices];
         // First try exact priority by name within available voices
         for (const preferredName of priorityNames) {
+            if (!preferredName)
+                continue;
             const voice = voices.find(v => v.name === preferredName || v.name.includes(preferredName));
             if (voice) {
                 return voice;
@@ -134,7 +138,7 @@ export class VoiceSelector {
     getCuratedVoiceInfo(voiceName) {
         // ONLY MALE VOICES - NO FEMALE VOICES ALLOWED
         const config = window.appConfig;
-        const defaultVoice = config.get('tts.voices.default');
+        const defaultVoice = config?.get?.('tts.voices.default') || 'Google UK English Male';
         const curatedVoices = [
             { name: 'Microsoft James - English (Australia)', fallbacks: ['Microsoft James', 'James'] },
             { name: defaultVoice, fallbacks: [defaultVoice] },
@@ -161,7 +165,7 @@ export class VoiceSelector {
         voiceSelect.appendChild(autoOption);
         // ONLY MALE VOICES - NO FEMALE VOICES IN DROPDOWN
         const config = window.appConfig;
-        const defaultVoice = config.get('tts.voices.default');
+        const defaultVoice = config?.get?.('tts.voices.default') || 'Google UK English Male';
         const curatedVoices = [
             { name: 'Microsoft James - English (Australia)', fallbacks: ['Microsoft James', 'James'], flag: '🇦🇺', gender: '♂️' },
             { name: defaultVoice, fallbacks: [defaultVoice], flag: '🇬🇧', gender: '♂️' },
@@ -171,9 +175,14 @@ export class VoiceSelector {
         ];
         // Add curated voices to dropdown
         curatedVoices.forEach(curatedVoice => {
+            // Skip if name is undefined or empty
+            if (!curatedVoice.name)
+                return;
             // Try to find the actual voice
             let actualVoice = undefined;
             for (const name of [curatedVoice.name, ...curatedVoice.fallbacks]) {
+                if (!name)
+                    continue;
                 actualVoice = voices.find(v => v.name === name || v.name.includes(name));
                 if (actualVoice)
                     break;
@@ -181,7 +190,10 @@ export class VoiceSelector {
             // Add option even if voice not found (will fallback to auto selection)
             const option = document.createElement('option');
             option.value = curatedVoice.name;
-            option.textContent = `${curatedVoice.gender} ${curatedVoice.name.split(' - ')[0]} ${curatedVoice.flag}`;
+            const displayName = curatedVoice.name.includes(' - ')
+                ? curatedVoice.name.split(' - ')[0]
+                : curatedVoice.name;
+            option.textContent = `${curatedVoice.gender} ${displayName} ${curatedVoice.flag}`;
             // Mark as available or unavailable
             if (actualVoice) {
                 option.style.fontWeight = 'normal';

@@ -214,6 +214,9 @@ export class SettingsPanel {
      * Close settings panel
      */
     closePanel() {
+        // Only close if currently open
+        if (!this.isOpen)
+            return;
         const settingsPanel = document.getElementById('settingsPanel');
         if (settingsPanel) {
             settingsPanel.classList.remove('active');

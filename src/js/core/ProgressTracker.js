@@ -89,7 +89,13 @@ export class ProgressTracker {
             }
         }
         // Update progress store (replaces EventBus emission)
-        useAppStore.getState().progress.updateProgress(currentIndex, totalWords);
+        const progressStore = useAppStore.getState().progress;
+        if (progressStore && typeof progressStore.updateProgress === 'function') {
+            progressStore.updateProgress(currentIndex, totalWords);
+        }
+        else {
+            console.warn('[ProgressTracker] Progress store or updateProgress method not available');
+        }
     }
     /**
      * Update status text (no Zustand store action needed - just DOM update)
@@ -110,7 +116,10 @@ export class ProgressTracker {
         console.error(message);
         this.updateStatus(`Error: ${message}`);
         // Show error notification via Zustand store (replaces EventBus emission)
-        useAppStore.getState().ui.showNotification(message, 'error');
+        const uiStore = useAppStore.getState().ui;
+        if (uiStore && typeof uiStore.showNotification === 'function') {
+            uiStore.showNotification(message, 'error');
+        }
     }
     /**
      * Show learning statistics (Zustand version)
@@ -126,7 +135,10 @@ export class ProgressTracker {
         this.updateStatus(statsMessage);
         // Update progress store with session stats (replaces EventBus emission)
         // Note: These stats are already tracked in the progress store's session tracking
-        useAppStore.getState().progress.calculateAccuracy();
+        const progressStore = useAppStore.getState().progress;
+        if (progressStore && typeof progressStore.calculateAccuracy === 'function') {
+            progressStore.calculateAccuracy();
+        }
     }
     /**
      * Get current index

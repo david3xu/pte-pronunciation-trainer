@@ -337,6 +337,10 @@ export class UIController {
         if (!element)
             return;
         const settingsModule = window.settingsModule;
+        if (!settingsModule || typeof settingsModule.getAvailableOptions !== 'function') {
+            console.warn(`[UIController] SettingsModule not available or getAvailableOptions not found`);
+            return;
+        }
         const options = settingsModule.getAvailableOptions(settingKey, filterType);
         element.innerHTML = '';
         options.forEach((option) => {

@@ -2,54 +2,46 @@
  * AIRecommendations Component
  *
  * Displays AI-powered learning recommendations based on user progress.
- * Uses OpenAI to analyze weak areas and suggest practice items.
+ * Uses Google Gemini API (free tier) to analyze weak areas and suggest practice items.
  */
 
 import React, { useState, useEffect } from 'react';
 import { Card, Flex, Text, Button, Badge, Spinner } from '@radix-ui/themes';
-import { LightningBoltIcon, ReloadIcon } from '@radix-ui/react-icons';
+import { LightningBoltIcon, ReloadIcon, RocketIcon, BookmarkIcon } from '@radix-ui/react-icons';
 import { useAppStore } from '../ts/stores';
-import { getAIRecommendations } from '../api/ai';
-
-interface Recommendation {
-  word: string;
-  reason: string;
-  difficulty: 'easy' | 'normal' | 'hard';
-  category: string;
-}
+import { generateRecommendations, type Recommendation, type UserProgress } from '../ts/ai/recommendationService';
 
 const AIRecommendations: React.FC = () => {
-  const { auth, progress, vocabulary } = useAppStore();
+  const { auth, progress } = useAppStore();
   const [recommendations, setRecommendations] = useState<Recommendation[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   // Fetch recommendations on mount and when progress changes
   useEffect(() => {
-    if (auth.isAuthenticated) {
+    if (auth.isAuthenticated && progress.totalItems > 0) {
       fetchRecommendations();
     }
-  }, [auth.isAuthenticated, progress.accuracy]);
+  }, [auth.isAuthenticated, progress.accuracy, progress.completedItems.size]);
 
   const fetchRecommendations = async () => {
     setIsLoading(true);
     setError(null);
 
     try {
-      const result = await getAIRecommendations({
-        userId: auth.user?.id || '',
-        currentAccuracy: progress.accuracy,
-        completedItems: Array.from(progress.completedItems),
-        currentMode: vocabulary.mode,
-      });
+      // Build user progress data from Zustand store
+      const userProgress: UserProgress = {
+        completedItems: progress.completedItems.size,
+        totalItems: progress.totalItems,
+        accuracy: progress.accuracy,
+        weakAreas: [], // TODO: Track weak areas in progress store
+        recentActivity: [] // TODO: Track recent activity
+      };
 
-      if (result.success && result.data) {
-        setRecommendations(result.data);
-      } else {
-        setError(result.error || 'Failed to fetch recommendations');
-      }
+      const result = await generateRecommendations(userProgress);
+      setRecommendations(result);
     } catch (err) {
-      setError('An error occurred while fetching recommendations');
+      setError('Unable to generate recommendations. Please try again later.');
       console.error('AI Recommendations error:', err);
     } finally {
       setIsLoading(false);
@@ -58,7 +50,19 @@ const AIRecommendations: React.FC = () => {
 
   // Don't show if not authenticated
   if (!auth.isAuthenticated) {
-    return null;
+    return (
+      <Card size="3" className="ai-recommendations">
+        <Flex direction="column" gap="3" align="center" py="4">
+          <RocketIcon width="32" height="32" className="text-gray-400" />
+          <Text size="2" color="gray" className="text-center">
+            Sign in to get AI-powered learning recommendations
+          </Text>
+          <Text size="1" color="gray" className="text-center">
+            Track your progress and receive personalized suggestions
+          </Text>
+        </Flex>
+      </Card>
+    );
   }
 
   return (
@@ -67,7 +71,7 @@ const AIRecommendations: React.FC = () => {
         {/* Header */}
         <Flex justify="between" align="center">
           <Flex align="center" gap="2">
-            <LightningBoltIcon width="20" height="20" className="text-accent" />
+            <LightningBoltIcon width="20" height="20" className="text-violet-500" />
             <Text size="4" weight="bold">
               AI Recommendations
             </Text>
@@ -83,67 +87,108 @@ const AIRecommendations: React.FC = () => {
         </Flex>
 
         {/* Accuracy indicator */}
-        <Flex direction="column" gap="1">
-          <Text size="2" color="gray">
-            Current Accuracy
-          </Text>
-          <Flex align="center" gap="2">
-            <Text size="6" weight="bold" color={progress.accuracy >= 80 ? 'green' : progress.accuracy >= 60 ? 'blue' : 'red'}>
-              {progress.accuracy.toFixed(0)}%
+        {progress.totalItems > 0 && (
+          <Flex direction="column" gap="1">
+            <Text size="2" color="gray">
+              Current Accuracy
             </Text>
-            <Badge
-              color={progress.accuracy >= 80 ? 'green' : progress.accuracy >= 60 ? 'blue' : 'red'}
-              size="2"
-            >
-              {progress.accuracy >= 80 ? 'Excellent' : progress.accuracy >= 60 ? 'Good' : 'Needs Practice'}
-            </Badge>
+            <Flex align="center" gap="2">
+              <Text
+                size="6"
+                weight="bold"
+                color={progress.accuracy >= 80 ? 'green' : progress.accuracy >= 60 ? 'blue' : 'red'}
+              >
+                {progress.accuracy.toFixed(0)}%
+              </Text>
+              <Badge
+                color={progress.accuracy >= 80 ? 'green' : progress.accuracy >= 60 ? 'blue' : 'red'}
+                size="2"
+              >
+                {progress.accuracy >= 80 ? 'Excellent' : progress.accuracy >= 60 ? 'Good' : 'Needs Practice'}
+              </Badge>
+            </Flex>
+            <Text size="1" color="gray">
+              {progress.completedItems.size} / {progress.totalItems} items completed
+            </Text>
           </Flex>
-        </Flex>
+        )}
 
         {/* Loading state */}
         {isLoading && (
-          <Flex justify="center" align="center" py="6">
+          <Flex justify="center" align="center" py="6" direction="column" gap="2">
             <Spinner size="3" />
+            <Text size="2" color="gray">
+              Analyzing your progress with AI...
+            </Text>
           </Flex>
         )}
 
         {/* Error state */}
         {error && !isLoading && (
-          <Text size="2" color="red">
-            {error}
-          </Text>
+          <Flex direction="column" gap="2" p="3" style={{ backgroundColor: 'var(--red-2)', borderRadius: '8px' }}>
+            <Text size="2" color="red" weight="medium">
+              {error}
+            </Text>
+            <Text size="1" color="gray">
+              Showing fallback recommendations based on your progress.
+            </Text>
+          </Flex>
         )}
 
         {/* Recommendations list */}
-        {!isLoading && !error && recommendations.length > 0 && (
+        {!isLoading && recommendations.length > 0 && (
           <Flex direction="column" gap="3">
-            <Text size="2" weight="medium">
-              Recommended words to practice:
+            <Text size="2" weight="medium" color="gray">
+              Personalized for you:
             </Text>
             {recommendations.map((rec, index) => (
-              <Card key={index} size="1" variant="classic">
-                <Flex direction="column" gap="2">
+              <Card key={index} size="2" variant="surface" className="hover:shadow-md transition-shadow">
+                <Flex direction="column" gap="3">
+                  {/* Priority & Category */}
                   <Flex justify="between" align="center">
-                    <Text size="3" weight="bold">
-                      {rec.word}
-                    </Text>
                     <Badge
                       color={
-                        rec.difficulty === 'hard' ? 'red' :
-                        rec.difficulty === 'normal' ? 'blue' :
+                        rec.priority === 'high' ? 'red' :
+                        rec.priority === 'medium' ? 'orange' :
                         'green'
                       }
-                      size="1"
+                      size="2"
                     >
-                      {rec.difficulty}
+                      {rec.priority.toUpperCase()} PRIORITY
+                    </Badge>
+                    <Badge color="violet" variant="soft" size="1">
+                      {rec.type === 'vocabulary' ? <BookmarkIcon className="inline mr-1" /> : '🎯'}
+                      {rec.type}
                     </Badge>
                   </Flex>
-                  <Text size="2" color="gray">
+
+                  {/* Reason */}
+                  <Text size="2" style={{ lineHeight: '1.6' }}>
                     {rec.reason}
                   </Text>
-                  <Badge color="gray" size="1" variant="soft">
-                    {rec.category}
-                  </Badge>
+
+                  {/* Action */}
+                  <Flex justify="between" align="center">
+                    <Badge color="gray" size="1" variant="soft">
+                      {rec.category.replace('pte-', '').replace('-', ' ').toUpperCase()}
+                    </Badge>
+                    {rec.estimatedTime && (
+                      <Text size="1" color="gray">
+                        ⏱️ {rec.estimatedTime}
+                      </Text>
+                    )}
+                  </Flex>
+
+                  {/* Specific items if available */}
+                  {rec.specificItems && rec.specificItems.length > 0 && (
+                    <Flex gap="1" wrap="wrap">
+                      {rec.specificItems.slice(0, 5).map((item, i) => (
+                        <Badge key={i} color="blue" variant="soft" size="1">
+                          {item}
+                        </Badge>
+                      ))}
+                    </Flex>
+                  )}
                 </Flex>
               </Card>
             ))}
@@ -151,16 +196,29 @@ const AIRecommendations: React.FC = () => {
         )}
 
         {/* Empty state */}
-        {!isLoading && !error && recommendations.length === 0 && (
-          <Text size="2" color="gray" className="text-center">
-            No recommendations available. Complete more practice items to get personalized suggestions.
-          </Text>
+        {!isLoading && !error && recommendations.length === 0 && progress.totalItems > 0 && (
+          <Flex direction="column" gap="2" align="center" py="4">
+            <Text size="2" color="gray" className="text-center">
+              Complete a few more practice items to get personalized AI recommendations.
+            </Text>
+            <Text size="1" color="gray" className="text-center">
+              We need some data to analyze your learning patterns.
+            </Text>
+          </Flex>
         )}
 
         {/* Info */}
-        <Text size="1" color="gray" className="text-center">
-          Powered by AI • Updates based on your progress
-        </Text>
+        <Flex justify="center" align="center" gap="1">
+          <Text size="1" color="gray">
+            Powered by
+          </Text>
+          <Badge color="violet" variant="soft" size="1">
+            Google Gemini AI
+          </Badge>
+          <Text size="1" color="gray">
+            • Free Tier
+          </Text>
+        </Flex>
       </Flex>
     </Card>
   );

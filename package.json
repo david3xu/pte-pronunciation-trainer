@@ -34,7 +34,7 @@
     "deploy": "npm run deploy:pte",
     "deploy:pte": "npm run compile:ts && npm run data:pte && npm run build && npm run validate:all",
     "vercel-build": "npm run vercel-build:pte",
-    "vercel-build:pte": "npm run compile:ts && npm run data:pte && vite build",
+    "vercel-build:pte": "npm run compile:ts && npm run data:pte && vite build && mkdir -p dist/data && cp -r data/processed dist/data/",
     "prepare": "husky install"
   },
   "keywords": [

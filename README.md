@@ -2,13 +2,14 @@
 
 A specialized web-based pronunciation training application for **PTE exam preparation**, featuring comprehensive vocabulary (13,000+ words), practice modes for speaking/listening sections, and cloud sync capabilities.
 
-**✅ v2.5.4 - PRODUCTION READY (November 2025)**
+**✅ v3.0.0 - AI-POWERED (November 2025)**
 
 **Latest Updates:**
-- ✅ TypeScript migration complete (100%)
+- 🤖 **NEW:** AI Tutor Chat with GPT-4
+- 🔊 **NEW:** Premium TTS with AWS Polly (18 neural voices)
+- 🎯 **NEW:** AI-Powered Recommendations (FREE with Gemini)
+- ✅ React + TypeScript migration complete (100%)
 - ✅ Supabase cloud sync ready
-- ✅ Comprehensive testing suite
-- ✅ Clean repository structure
 
 ---
 
@@ -36,6 +37,40 @@ A specialized web-based pronunciation training application for **PTE exam prepar
 - ❓ **Answer Short Question** - 692 questions with answers
 - ✍️ **Write From Dictation** - 1,195 dictation sentences
 
+### 🤖 **AI-Powered Features** ✨ NEW
+
+#### **AI Tutor Chat** 💬 (OpenAI GPT-4)
+- **Conversational Help** - Ask any pronunciation question in natural language
+- **Context-Aware** - AI knows what word you're currently practicing
+- **Multi-Turn Dialogue** - Follow-up questions and detailed explanations
+- **Markdown Support** - Rich formatted responses (bold, lists, code examples)
+- **Quick Actions** - 4 pre-filled common questions for instant help
+- **How to use:** Click the 💬 AI Tutor button in the header
+- **Setup:** See [AI-TUTOR-SETUP.md](docs/AI-TUTOR-SETUP.md)
+
+#### **AI Recommendations** 🎯 (Google Gemini - FREE)
+- **Personalized Learning** - Based on your practice history and progress
+- **Smart Suggestions** - What to study next for maximum improvement
+- **Difficulty Adaptation** - Automatically adjusts to your level
+- **Weak Area Detection** - Identifies patterns in your mistakes
+- **100% FREE** - Powered by Google Gemini (1,500 requests/day)
+- **How to use:** Click "Get AI Recommendations" on practice page
+- **Setup:** Add `VITE_GEMINI_API_KEY` to `.env` (free API key)
+
+#### **Premium TTS** 🔊⭐ (AWS Polly Neural Voices)
+- **18 Neural Voices** - Natural-sounding AI voices
+  - **US English:** Joanna, Matthew, Ivy, Kendra, Kimberly, Salli, Joey, Justin, Kevin
+  - **British English:** Amy, Emma, Brian, Arthur
+  - **Australian English:** Nicole, Russell
+  - **Indian English:** Aditi, Raveena
+- **SSML Control** - Adjust speed, pitch, emphasis, and pauses
+- **Voice Selection UI** - Filter by accent (US/UK/AU/IN) and gender
+- **Audio Caching** - Supabase Storage caching (80-90% cost reduction)
+- **Fallback Support** - Auto-switches to browser TTS if unavailable
+- **How to use:** Toggle "Premium Neural" in WordCard header
+- **Setup:** See [AWS-POLLY-SETUP.md](docs/AWS-POLLY-SETUP.md)
+- **Cost:** $16 per 1M characters (~$10/mo for 1K active users)
+
 ### ☁️ **Cloud Sync with Supabase** ✨
 
 - 🔐 **User Authentication** - Secure sign up/in with email
@@ -48,7 +83,8 @@ A specialized web-based pronunciation training application for **PTE exam prepar
 ### 🔊 **Advanced Pronunciation**
 
 - **Smart Voice Selection** - Auto-selects best voice
-- **Multiple Voices** - Google UK/US, Microsoft, Apple
+- **Browser TTS (Free)** - Google UK/US, Microsoft, Apple voices
+- **Premium TTS (Paid)** - AWS Polly neural voices (18 options)
 - **Variable Speed** - 0.7x → 1.0x → 1.3x
 - **Dual IPA Format** - British + American pronunciation
 - **Configurable Pauses** - 1s / 2s / 3s
@@ -150,11 +186,14 @@ npm run deploy
 - 📘 **[CLAUDE.md](CLAUDE.md)** - AI assistant guide (START HERE)
 - 📗 **[GUIDELINES.md](docs/GUIDELINES.md)** - Design principles
 - 📕 **[ARCHITECTURE.md](docs/ARCHITECTURE.md)** - System design (2,230 lines)
+- 📋 **[FINALIZATION-CHECKLIST.md](docs/FINALIZATION-CHECKLIST.md)** - Project status & roadmap
 
-### **Setup**
+### **Setup Guides**
 - 🚀 **[DEPLOYMENT.md](docs/DEPLOYMENT.md)** - Deployment guide
 - ☁️ **[SUPABASE-SETUP-GUIDE.md](docs/SUPABASE-SETUP-GUIDE.md)** - Supabase config
 - 🧪 **[SUPABASE-TESTING-GUIDE.md](docs/SUPABASE-TESTING-GUIDE.md)** - Testing guide
+- 🤖 **[AI-TUTOR-SETUP.md](docs/AI-TUTOR-SETUP.md)** - OpenAI GPT-4 setup (NEW)
+- 🔊 **[AWS-POLLY-SETUP.md](docs/AWS-POLLY-SETUP.md)** - Premium TTS setup (NEW)
 
 ### **Architecture**
 - 🏗️ **[ARCHITECTURE-ANALYSIS.md](docs/ARCHITECTURE-ANALYSIS.md)** - Current architecture

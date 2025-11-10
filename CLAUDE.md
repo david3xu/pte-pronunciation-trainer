@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **PTE Pronunciation Trainer** - A web-based pronunciation training application for PTE exam preparation, featuring comprehensive vocabulary (13 books, 13,000+ terms) and practice modes (RS/ASQ/WFD with 2,507 sentences/questions). Built with vanilla JavaScript using event-driven architecture.
 
-**Current Version**: v2.5.4 (Production Ready - October 2025)
+**Current Version**: v3.0.0 (AI-Powered - November 2025)
 
 ## Essential Commands
 

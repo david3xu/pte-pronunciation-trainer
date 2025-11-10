@@ -8,6 +8,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Card, Flex, Text, TextField, Button, ScrollArea, Badge, Spinner } from '@radix-ui/themes';
 import { PaperPlaneIcon, Cross2Icon, ChatBubbleIcon } from '@radix-ui/react-icons';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { useAppStore } from '../ts/stores';
 import { askAITutor } from '../api/ai';
 
@@ -146,15 +148,43 @@ const AITutorChat: React.FC<AITutorChatProps> = ({ isOpen, onClose }) => {
                     {message.role === 'assistant' && (
                       <Badge size="1" color="blue">AI Tutor</Badge>
                     )}
-                    <Text
-                      size="2"
-                      style={{
-                        whiteSpace: 'pre-wrap',
-                        color: message.role === 'user' ? 'white' : 'inherit',
-                      }}
-                    >
-                      {message.content}
-                    </Text>
+                    {message.role === 'assistant' ? (
+                      <div className="prose prose-sm max-w-none dark:prose-invert">
+                        <ReactMarkdown
+                          remarkPlugins={[remarkGfm]}
+                          components={{
+                            // Customize markdown rendering
+                            p: ({ children }) => <Text size="2">{children}</Text>,
+                            strong: ({ children }) => <Text weight="bold">{children}</Text>,
+                            em: ({ children }) => <span style={{ fontStyle: 'italic' }}>{children}</span>,
+                            code: ({ children }) => (
+                              <code
+                                style={{
+                                  backgroundColor: 'var(--gray-a3)',
+                                  padding: '2px 6px',
+                                  borderRadius: '4px',
+                                  fontSize: '0.9em',
+                                }}
+                              >
+                                {children}
+                              </code>
+                            ),
+                          }}
+                        >
+                          {message.content}
+                        </ReactMarkdown>
+                      </div>
+                    ) : (
+                      <Text
+                        size="2"
+                        style={{
+                          whiteSpace: 'pre-wrap',
+                          color: 'white',
+                        }}
+                      >
+                        {message.content}
+                      </Text>
+                    )}
                     <Text
                       size="1"
                       color="gray"

@@ -55,31 +55,24 @@ export async function getAIRecommendations(
   }
 }
 
-interface AITutorRequest {
-  question: string;
-  context?: {
-    word?: string;
-    difficulty?: string;
-  };
-  conversationHistory?: Array<{ role: 'user' | 'assistant'; content: string }>;
-}
+// Removed unused AITutorRequest interface - request structure is passed directly to askAITutor()
 
 /**
  * Ask AI tutor a question about pronunciation/vocabulary
  */
 export async function askAITutor(
   question: string,
-  context?: { word?: string; difficulty?: string },
+  context?: { word?: string; difficulty?: string; ipa?: { british?: string; american?: string } },
   conversationHistory?: Array<{ role: 'user' | 'assistant'; content: string }>
 ): Promise<AIResponse<{ answer: string }>> {
   try {
-    const request: AITutorRequest = {
-      question,
+    const request = {
+      message: question,
       context,
       conversationHistory,
     };
 
-    const response = await fetch('/api/ai-tutor', {
+    const response = await fetch('/api/ai/chat', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -88,7 +81,19 @@ export async function askAITutor(
     });
 
     if (!response.ok) {
-      throw new Error(`API returned ${response.status}`);
+      // Try to parse error message
+      try {
+        const errorData = await response.json();
+        return {
+          success: false,
+          error: errorData.error || `API returned ${response.status}`,
+        };
+      } catch {
+        return {
+          success: false,
+          error: `API returned ${response.status}`,
+        };
+      }
     }
 
     const result = await response.json();

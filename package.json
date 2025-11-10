@@ -184,6 +184,8 @@
     "immer": "^10.2.0",
     "openai": "^6.8.1",
     "posthog-js": "^1.290.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
     "zustand": "^5.0.8"
   }
 }

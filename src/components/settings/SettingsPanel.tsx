@@ -16,15 +16,32 @@ interface SettingsPanelProps {
 }
 
 const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
-  // Get the entire store to preserve methods
-  const { settings, audio, vocabulary } = useAppStore();
+  // Get settings data using selectors
+  const practiceType = useAppStore((state) => state.settings.practiceType);
+  const practiceMode = useAppStore((state) => state.settings.practiceMode);
+  const vocabularyBook = useAppStore((state) => state.settings.vocabularyBook);
+  const difficultyFilter = useAppStore((state) => state.settings.difficultyFilter);
+  const autoPlay = useAppStore((state) => state.settings.autoPlay);
+  const showPhonetic = useAppStore((state) => state.settings.showPhonetic);
+  const ttsRate = useAppStore((state) => state.settings.ttsRate);
+  const ttsVoice = useAppStore((state) => state.settings.ttsVoice);
+  const audioVolume = useAppStore((state) => state.audio.volume);
+
+  // Get methods - access the whole store to get methods
+  const updateSetting = useAppStore((state) => state.settings.updateSetting);
+  const resetSettings = useAppStore((state) => state.settings.resetSettings);
+  const setVolume = useAppStore((state) => state.audio.setVolume);
+  const setLoading = useAppStore((state) => state.vocabulary.setLoading);
+  const setDataset = useAppStore((state) => state.vocabulary.setDataset);
+  const setCurrentItem = useAppStore((state) => state.vocabulary.setCurrentItem);
+  const setCurrentIndex = useAppStore((state) => state.audio.setCurrentIndex);
 
   // Handle vocabulary book change
   const handleVocabularyBookChange = async (bookId: string) => {
-    settings.updateSetting('vocabularyBook', bookId);
+    updateSetting('vocabularyBook', bookId);
 
     // Reload vocabulary data
-    vocabulary.setLoading(true);
+    setLoading(true);
 
     try {
       const dataPathMap: Record<string, string> = {
@@ -56,16 +73,16 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
       const items = data.vocabulary || [];
 
       console.log(`[SettingsPanel] Loaded ${items.length} vocabulary items`);
-      vocabulary.setDataset(items, bookId);
+      setDataset(items, bookId);
 
       // Set first item as current and reset index
       if (items.length > 0) {
-        vocabulary.setCurrentItem(items[0]);
-        audio.setCurrentIndex(0);
+        setCurrentItem(items[0]);
+        setCurrentIndex(0);
       }
     } catch (error) {
       console.error('[SettingsPanel] Error loading vocabulary:', error);
-      vocabulary.setLoading(false);
+      setLoading(false);
       const errorMessage = error instanceof Error ? error.message : 'Unknown error';
       alert(`Failed to load vocabulary book.\n\nError: ${errorMessage}`);
     }
@@ -103,9 +120,9 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
               <Flex direction="column" gap="2">
                 <Text size="3" weight="medium">Practice Type</Text>
                 <Select.Root
-                  value={settings.practiceType}
+                  value={practiceType}
                   onValueChange={(value: 'vocabulary' | 'practice') =>
-                    settings.updateSetting('practiceType', value)
+                    updateSetting('practiceType', value)
                   }
                 >
                   <Select.Trigger />
@@ -117,13 +134,13 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
               </Flex>
 
               {/* Practice Mode (if practice type selected) */}
-              {settings.practiceType === 'practice' && (
+              {practiceType === 'practice' && (
                 <Flex direction="column" gap="2">
                   <Text size="3" weight="medium">Practice Mode</Text>
                   <Select.Root
-                    value={settings.practiceMode || ''}
+                    value={practiceMode || ''}
                     onValueChange={(value) =>
-                      settings.updateSetting('practiceMode', value as 'rs' | 'asq' | 'wfd' | null)
+                      updateSetting('practiceMode', value as 'rs' | 'asq' | 'wfd' | null)
                     }
                   >
                     <Select.Trigger />
@@ -143,11 +160,11 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
               )}
 
               {/* Vocabulary Book (if vocabulary type selected) */}
-              {settings.practiceType === 'vocabulary' && (
+              {practiceType === 'vocabulary' && (
                 <Flex direction="column" gap="2">
                   <Text size="3" weight="medium">Vocabulary Book</Text>
                   <Select.Root
-                    value={settings.vocabularyBook}
+                    value={vocabularyBook}
                     onValueChange={(value) => handleVocabularyBookChange(value)}
                   >
                     <Select.Trigger />
@@ -178,9 +195,9 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
               <Flex direction="column" gap="2">
                 <Text size="3" weight="medium">Difficulty Filter</Text>
                 <Select.Root
-                  value={settings.difficultyFilter}
+                  value={difficultyFilter}
                   onValueChange={(value) =>
-                    settings.updateSetting('difficultyFilter', value as 'easy' | 'normal' | 'hard' | 'all')
+                    updateSetting('difficultyFilter', value as 'easy' | 'normal' | 'hard' | 'all')
                   }
                 >
                   <Select.Trigger />
@@ -197,9 +214,9 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
               <Flex justify="between" align="center">
                 <Text size="3">Auto-play on load</Text>
                 <Switch
-                  checked={settings.autoPlay}
+                  checked={autoPlay}
                   onCheckedChange={(checked) =>
-                    settings.updateSetting('autoPlay', checked)
+                    updateSetting('autoPlay', checked)
                   }
                 />
               </Flex>
@@ -213,11 +230,11 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
               <Flex direction="column" gap="2">
                 <Flex justify="between">
                   <Text size="3" weight="medium">Speech Rate</Text>
-                  <Badge>{settings.ttsRate.toFixed(1)}x</Badge>
+                  <Badge>{ttsRate.toFixed(1)}x</Badge>
                 </Flex>
                 <Slider
-                  value={[settings.ttsRate]}
-                  onValueChange={([rate]) => settings.updateSetting('ttsRate', rate ?? 1.0)}
+                  value={[ttsRate]}
+                  onValueChange={([rate]) => updateSetting('ttsRate', rate ?? 1.0)}
                   min={0.5}
                   max={2.0}
                   step={0.1}
@@ -228,11 +245,11 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
               <Flex direction="column" gap="2">
                 <Flex justify="between">
                   <Text size="3" weight="medium">Volume</Text>
-                  <Badge>{Math.round(audio.volume * 100)}%</Badge>
+                  <Badge>{Math.round(audioVolume * 100)}%</Badge>
                 </Flex>
                 <Slider
-                  value={[audio.volume]}
-                  onValueChange={([vol]) => audio.setVolume(vol || 1.0)}
+                  value={[audioVolume]}
+                  onValueChange={([vol]) => setVolume(vol || 1.0)}
                   min={0}
                   max={1}
                   step={0.01}
@@ -243,9 +260,9 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
               <Flex direction="column" gap="2">
                 <Text size="3" weight="medium">TTS Voice</Text>
                 <Select.Root
-                  value={settings.ttsVoice || 'default'}
+                  value={ttsVoice || 'default'}
                   onValueChange={(value) =>
-                    settings.updateSetting('ttsVoice', value === 'default' ? null : value)
+                    updateSetting('ttsVoice', value === 'default' ? null : value)
                   }
                 >
                   <Select.Trigger />
@@ -273,9 +290,9 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                   </Text>
                 </Flex>
                 <Switch
-                  checked={settings.showPhonetic}
+                  checked={showPhonetic}
                   onCheckedChange={(checked) =>
-                    settings.updateSetting('showPhonetic', checked)
+                    updateSetting('showPhonetic', checked)
                   }
                 />
               </Flex>
@@ -307,7 +324,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                   variant="soft"
                   color="red"
                   onClick={() => {
-                    settings.resetSettings();
+                    resetSettings();
                     alert('Settings reset to defaults');
                   }}
                 >

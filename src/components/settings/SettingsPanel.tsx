@@ -17,7 +17,59 @@ interface SettingsPanelProps {
 
 const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
   // Get the entire store to preserve methods
-  const { settings, audio } = useAppStore();
+  const { settings, audio, vocabulary } = useAppStore();
+
+  // Handle vocabulary book change
+  const handleVocabularyBookChange = async (bookId: string) => {
+    settings.updateSetting('vocabularyBook', bookId);
+
+    // Reload vocabulary data
+    vocabulary.setLoading(true);
+
+    try {
+      const dataPathMap: Record<string, string> = {
+        'pte-fib-listening': '/data/processed/pte-fib-listening-dataset.json',
+        'pte-beginner': '/data/processed/pte-beginner-vocabulary.json',
+        'pte-intermediate': '/data/processed/pte-intermediate-vocabulary.json',
+        'pte-advanced': '/data/processed/pte-advanced-vocabulary.json',
+        'pte-ra': '/data/processed/pte-ra-vocabulary.json',
+        'pte-rs-vocab': '/data/processed/pte-rs-vocabulary.json',
+        'pte-must-know': '/data/processed/pte-must-know-vocabulary.json',
+        'pte-wfd-vocab': '/data/processed/pte-wfd-vocabulary.json',
+        'pte-rs-wfd-vocab': '/data/processed/pte-rs-wfd-vocabulary.json',
+        'pte-reading-fib': '/data/processed/pte-reading-fib-vocabulary.json',
+        'pte-reading-fib-drag': '/data/processed/pte-reading-fib-drag-vocabulary.json',
+        'pte-asq-answers': '/data/processed/pte-asq-answers-vocabulary.json',
+        'pte-high-frequency': '/data/processed/pte-high-frequency-vocabulary.json',
+        'pte-rs-core': '/data/processed/pte-rs-core-vocabulary.json',
+      };
+
+      const dataPath = dataPathMap[bookId] || `/data/processed/${bookId}-vocabulary.json`;
+      console.log('[SettingsPanel] Loading vocabulary book:', bookId, 'from:', dataPath);
+
+      const response = await fetch(dataPath);
+      if (!response.ok) {
+        throw new Error(`Failed to load vocabulary: ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      const items = data.vocabulary || [];
+
+      console.log(`[SettingsPanel] Loaded ${items.length} vocabulary items`);
+      vocabulary.setDataset(items, bookId);
+
+      // Set first item as current and reset index
+      if (items.length > 0) {
+        vocabulary.setCurrentItem(items[0]);
+        audio.setCurrentIndex(0);
+      }
+    } catch (error) {
+      console.error('[SettingsPanel] Error loading vocabulary:', error);
+      vocabulary.setLoading(false);
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      alert(`Failed to load vocabulary book.\n\nError: ${errorMessage}`);
+    }
+  };
 
   if (!isOpen) return null;
 
@@ -96,9 +148,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                   <Text size="3" weight="medium">Vocabulary Book</Text>
                   <Select.Root
                     value={settings.vocabularyBook}
-                    onValueChange={(value) =>
-                      settings.updateSetting('vocabularyBook', value)
-                    }
+                    onValueChange={(value) => handleVocabularyBookChange(value)}
                   >
                     <Select.Trigger />
                     <Select.Content>

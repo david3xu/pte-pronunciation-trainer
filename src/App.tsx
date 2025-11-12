@@ -25,6 +25,7 @@ import ProgressTracker from './components/ProgressTracker';
 import VocabularyList from './components/VocabularyList';
 import AITutorChat from './components/AITutorChat';
 import PronunciationScoring from './components/PronunciationScoring';
+import OnboardingModal, { useOnboarding } from './components/OnboardingModal';
 import { WordCardSkeleton } from './components/Skeleton';
 import './css/tailwind.css';
 
@@ -39,6 +40,9 @@ const App: React.FC = () => {
   const [showSettings, setShowSettings] = useState(false);
   const [showAITutor, setShowAITutor] = useState(false);
   const [showPronunciationScoring, setShowPronunciationScoring] = useState(false);
+
+  // Onboarding state
+  const { showOnboarding, closeOnboarding } = useOnboarding();
 
   // Initialize app on mount
   useEffect(() => {
@@ -107,6 +111,7 @@ const App: React.FC = () => {
           </header>
 
           {/* Modals/Panels - Render as overlays, not inline */}
+          {showOnboarding && <OnboardingModal onClose={closeOnboarding} />}
           <SettingsPanel isOpen={showSettings} onClose={() => setShowSettings(false)} />
           <AITutorChat isOpen={showAITutor} onClose={() => setShowAITutor(false)} />
           <PronunciationScoring

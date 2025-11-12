@@ -6,7 +6,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import { Card, Flex, Text, Button, Badge } from '@radix-ui/themes';
+import { Card, Flex, Text, Button } from '@radix-ui/themes';
 import {
   Cross2Icon,
   ChatBubbleIcon,
@@ -90,6 +90,11 @@ const OnboardingModal: React.FC<OnboardingModalProps> = ({ onClose }) => {
   const currentStepData = steps[currentStep];
   const isLastStep = currentStep === steps.length - 1;
   const isFirstStep = currentStep === 0;
+
+  // Safety check (should never happen, but TypeScript requires it)
+  if (!currentStepData) {
+    return null;
+  }
 
   const handleNext = () => {
     if (isLastStep) {

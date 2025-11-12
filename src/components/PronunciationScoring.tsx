@@ -178,7 +178,8 @@ const PronunciationScoring: React.FC<PronunciationScoringProps> = ({ isOpen = tr
   if (!isOpen) return null;
 
   return (
-    <Card size="3">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 animate-in p-4">
+      <Card size="3" className="w-full max-w-2xl max-h-[95vh] sm:max-h-[90vh] overflow-y-auto">
       <Flex direction="column" gap="4">
         {/* Header */}
         <Flex justify="between" align="center">
@@ -400,6 +401,7 @@ const PronunciationScoring: React.FC<PronunciationScoringProps> = ({ isOpen = tr
         )}
       </Flex>
     </Card>
+    </div>
   );
 };
 

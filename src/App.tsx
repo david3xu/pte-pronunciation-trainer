@@ -72,33 +72,39 @@ const App: React.FC = () => {
                   {isAuthenticated ? `Welcome, ${auth.user?.email}` : 'AI-Powered Pronunciation Practice'}
                 </p>
               </div>
-              <Flex gap="2" wrap="wrap">
+              <Flex gap="2" wrap="wrap" className="justify-end">
                 <Button
                   variant="soft"
                   size="3"
                   onClick={() => setShowAITutor(!showAITutor)}
                   title="Chat with AI for pronunciation help (Free with Gemini)"
+                  style={{ minHeight: '44px' }}
+                  className="min-w-[44px]"
                 >
                   <ChatBubbleIcon width="18" height="18" />
-                  AI Tutor
+                  <span className="hidden sm:inline ml-2">AI Tutor</span>
                 </Button>
                 <Button
                   variant="soft"
                   size="3"
                   onClick={() => setShowPronunciationScoring(!showPronunciationScoring)}
                   title="Record and get AI feedback on your pronunciation"
+                  style={{ minHeight: '44px' }}
+                  className="min-w-[44px]"
                 >
                   <SpeakerLoudIcon width="18" height="18" />
-                  Practice
+                  <span className="hidden sm:inline ml-2">Practice</span>
                 </Button>
                 <Button
                   variant="soft"
                   size="3"
                   onClick={() => setShowSettings(!showSettings)}
                   title="Customize voice, speed, and other settings"
+                  style={{ minHeight: '44px' }}
+                  className="min-w-[44px]"
                 >
                   <GearIcon width="18" height="18" />
-                  Settings
+                  <span className="hidden sm:inline ml-2">Settings</span>
                 </Button>
               </Flex>
             </Flex>

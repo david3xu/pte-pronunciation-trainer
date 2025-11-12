@@ -171,11 +171,8 @@ http://localhost:3001
 # Start server
 npm run dev
 
-# Test page
-http://localhost:3001/test-supabase.html
-
-# Guide
-docs/SUPABASE-TESTING-GUIDE.md
+# Testing
+# See docs/setup/SUPABASE-TESTING-GUIDE.md for integration testing
 ```
 
 ### **Production**
@@ -227,7 +224,6 @@ npm run deploy
 ```
 ccl-pronunciation-trainer/
 ├── index.html                 # Main React app entry
-├── test-supabase.html         # Supabase test page
 ├── package.json               # Dependencies & scripts
 ├── tsconfig.json              # TypeScript config
 ├── vite.config.ts             # Vite build config

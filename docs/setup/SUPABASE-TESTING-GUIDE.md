@@ -13,23 +13,25 @@ This guide covers testing the Supabase integration for the PTE Pronunciation Tra
 
 ## Quick Start - Test Page
 
-### 🧪 Access the Test Page
+### 🧪 Testing Supabase Integration
 
 **Local Development:**
 ```bash
 # Start development server
 npm run dev
 
-# Open test page
-http://localhost:3001/test-supabase.html
+# Access main app
+http://localhost:3001
 ```
 
-**Features Tested:**
-- ✅ Authentication (Sign Up, Sign In, Sign Out)
-- ✅ Progress Sync (Save/Load user progress)
-- ✅ Settings Sync (Save/Load user preferences)
-- ✅ Real-time activity logging
-- ✅ Configuration validation
+**Features to Test:**
+- ✅ Authentication (Sign Up, Sign In, Sign Out) - Use main app auth UI
+- ✅ Progress Sync (Save/Load user progress) - Practice mode progress
+- ✅ Settings Sync (Save/Load user preferences) - Settings panel
+- ✅ Real-time activity logging - Check browser console
+- ✅ Configuration validation - Verify .env variables loaded
+
+**Note:** Supabase integration is built into the main React application. Test all features through the production UI rather than standalone test pages.
 
 ---
 

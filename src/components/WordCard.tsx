@@ -22,6 +22,7 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
   const [usePremiumTTS, setUsePremiumTTS] = useState(false);
   const [premiumVoiceId, setPremiumVoiceId] = useState('Joanna');
   const [isPlayingPremium, setIsPlayingPremium] = useState(false);
+  const [showAdvancedOptions, setShowAdvancedOptions] = useState(false);
 
   const premiumAvailable = isPremiumTTSAvailable();
 
@@ -126,7 +127,7 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
 
   return (
     <Card size="4" className="word-card animate-in">
-      {/* Header with difficulty badge and TTS selector */}
+      {/* Header with difficulty badge */}
       <Flex justify="between" align="center" mb="4" wrap="wrap" gap="2">
         <Flex gap="2" align="center">
           <Badge color={difficultyColor as any} size="2">
@@ -139,52 +140,83 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
           )}
         </Flex>
 
-        {/* TTS Mode Selector */}
-        <Flex gap="2" align="center">
-          <Select.Root
-            value={usePremiumTTS ? 'premium' : 'free'}
-            onValueChange={(value) => setUsePremiumTTS(value === 'premium')}
-            disabled={!premiumAvailable}
-          >
-            <Select.Trigger variant="soft" />
-            <Select.Content>
-              <Select.Item value="free">
-                Browser TTS (Free)
-              </Select.Item>
-              <Select.Item value="premium">
-                <Flex align="center" gap="1">
-                  {premiumAvailable ? '⭐' : <LockClosedIcon />}
-                  Premium Neural
-                </Flex>
-              </Select.Item>
-            </Select.Content>
-          </Select.Root>
+        {/* Advanced Options Toggle */}
+        <Button
+          variant="ghost"
+          size="1"
+          onClick={() => setShowAdvancedOptions(!showAdvancedOptions)}
+          title="Show voice and TTS options"
+        >
+          {showAdvancedOptions ? '▲ Hide Options' : '▼ Voice Options'}
+        </Button>
+      </Flex>
 
-          {usePremiumTTS && premiumAvailable && (
+      {/* Advanced TTS Options (Collapsible) */}
+      {showAdvancedOptions && (
+        <Flex
+          direction="column"
+          gap="3"
+          p="3"
+          mb="4"
+          style={{
+            backgroundColor: 'var(--gray-a2)',
+            borderRadius: 'var(--radius-3)',
+            border: '1px solid var(--gray-a5)',
+          }}
+        >
+          <Text size="2" weight="medium">Voice Settings</Text>
+
+          <Flex gap="2" align="center" wrap="wrap">
             <Select.Root
-              value={premiumVoiceId}
-              onValueChange={setPremiumVoiceId}
+              value={usePremiumTTS ? 'premium' : 'free'}
+              onValueChange={(value) => setUsePremiumTTS(value === 'premium')}
+              disabled={!premiumAvailable}
             >
               <Select.Trigger variant="soft" />
               <Select.Content>
-                <Select.Group>
-                  <Select.Label>US English</Select.Label>
-                  <Select.Item value="Joanna">Joanna (F)</Select.Item>
-                  <Select.Item value="Matthew">Matthew (M)</Select.Item>
-                  <Select.Item value="Kendra">Kendra (F)</Select.Item>
-                  <Select.Item value="Joey">Joey (M)</Select.Item>
-                </Select.Group>
-                <Select.Group>
-                  <Select.Label>British English</Select.Label>
-                  <Select.Item value="Amy">Amy (F)</Select.Item>
-                  <Select.Item value="Brian">Brian (M)</Select.Item>
-                  <Select.Item value="Emma">Emma (F)</Select.Item>
-                </Select.Group>
+                <Select.Item value="free">
+                  🔊 Browser TTS (Free)
+                </Select.Item>
+                <Select.Item value="premium">
+                  <Flex align="center" gap="1">
+                    {premiumAvailable ? '⭐ Premium Neural' : <><LockClosedIcon /> Premium (Locked)</>}
+                  </Flex>
+                </Select.Item>
               </Select.Content>
             </Select.Root>
+
+            {usePremiumTTS && premiumAvailable && (
+              <Select.Root
+                value={premiumVoiceId}
+                onValueChange={setPremiumVoiceId}
+              >
+                <Select.Trigger variant="soft" />
+                <Select.Content>
+                  <Select.Group>
+                    <Select.Label>US English</Select.Label>
+                    <Select.Item value="Joanna">Joanna (F)</Select.Item>
+                    <Select.Item value="Matthew">Matthew (M)</Select.Item>
+                    <Select.Item value="Kendra">Kendra (F)</Select.Item>
+                    <Select.Item value="Joey">Joey (M)</Select.Item>
+                  </Select.Group>
+                  <Select.Group>
+                    <Select.Label>British English</Select.Label>
+                    <Select.Item value="Amy">Amy (F)</Select.Item>
+                    <Select.Item value="Brian">Brian (M)</Select.Item>
+                    <Select.Item value="Emma">Emma (F)</Select.Item>
+                  </Select.Group>
+                </Select.Content>
+              </Select.Root>
+            )}
+          </Flex>
+
+          {!premiumAvailable && (
+            <Text size="1" color="gray">
+              💡 Premium voices require AWS Polly API keys. Add them in Settings.
+            </Text>
           )}
         </Flex>
-      </Flex>
+      )}
 
       {/* Main content - Word/Sentence/Question */}
       <Flex direction="column" gap="4">

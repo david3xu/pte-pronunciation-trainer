@@ -75,7 +75,13 @@ const PronunciationScoring: React.FC<PronunciationScoringProps> = ({ isOpen = tr
 
     recognition.onerror = (event: any) => {
       console.error('Speech recognition error:', event.error);
-      setError(`Recognition error: ${event.error}`);
+      const errorMap: Record<string, string> = {
+        'no-speech': '🎤 No speech detected. Click "Start Recording" and speak clearly into your microphone.',
+        'audio-capture': '⚠️ Microphone access denied. Grant microphone permissions in browser settings and reload.',
+        'not-allowed': '🔒 Microphone permission denied. Allow microphone access in your browser settings.',
+        'network': '📡 Network error. Check your internet connection and try again.',
+      };
+      setError(errorMap[event.error] || `⚠️ Recording error: ${event.error}. Check microphone permissions and try again.`);
       setIsRecording(false);
       if (recordingTimeoutRef.current) {
         clearTimeout(recordingTimeoutRef.current);
@@ -104,7 +110,7 @@ const PronunciationScoring: React.FC<PronunciationScoringProps> = ({ isOpen = tr
   // Start recording
   const handleStartRecording = () => {
     if (!recognitionRef.current) {
-      setError('Speech recognition not initialized');
+      setError('⚠️ Speech recognition not ready. Reload the page. Browser requirement: Chrome, Edge, or Safari.');
       return;
     }
 
@@ -122,7 +128,7 @@ const PronunciationScoring: React.FC<PronunciationScoringProps> = ({ isOpen = tr
       }, 10000);
     } catch (err) {
       console.error('Failed to start recording:', err);
-      setError('Failed to start recording. Please try again.');
+      setError('🎤 Recording failed to start. Action: 1) Grant microphone permissions, 2) Close other apps using microphone, 3) Reload page and try again.');
       setIsRecording(false);
     }
   };
@@ -156,7 +162,7 @@ const PronunciationScoring: React.FC<PronunciationScoringProps> = ({ isOpen = tr
       setError(null);
     } catch (err) {
       console.error('Pronunciation scoring error:', err);
-      setError('Failed to analyze pronunciation. Please try again.');
+      setError('❌ AI analysis failed. Check: 1) Google Gemini API key in Settings, 2) Internet connection, 3) Daily limit (1,500 free requests). Get your free key at aistudio.google.com/apikey');
     } finally {
       setIsProcessing(false);
     }

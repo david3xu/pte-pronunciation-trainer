@@ -9,10 +9,12 @@ import { Card, Flex, Text, TextField, Button, Badge, ScrollArea } from '@radix-u
 import { MagnifyingGlassIcon, Cross2Icon } from '@radix-ui/react-icons';
 import { useAppStore } from '../ts/stores';
 import type { VocabularyTerm, PracticeItem } from '../types/dataset.types';
+import { VocabularyListSkeleton } from './Skeleton';
 
 const VocabularyList: React.FC = () => {
   const { vocabulary, progress } = useAppStore();
   const [searchQuery, setSearchQuery] = useState('');
+  const isLoading = vocabulary.isLoading;
 
   // Filter items by search query
   const filteredItems = vocabulary.filteredDataset.filter((item: any) => {
@@ -70,14 +72,17 @@ const VocabularyList: React.FC = () => {
 
         {/* List */}
         <ScrollArea style={{ height: '400px' }}>
-          <Flex direction="column" gap="2">
-            {filteredItems.length === 0 ? (
-              <Flex align="center" justify="center" py="6">
-                <Text size="2" color="gray">
-                  {searchQuery ? 'No items found' : 'No items available'}
-                </Text>
-              </Flex>
-            ) : (
+          {isLoading ? (
+            <VocabularyListSkeleton />
+          ) : (
+            <Flex direction="column" gap="2">
+              {filteredItems.length === 0 ? (
+                <Flex align="center" justify="center" py="6">
+                  <Text size="2" color="gray">
+                    {searchQuery ? 'No items found' : 'No items available'}
+                  </Text>
+                </Flex>
+              ) : (
               filteredItems.map((item: any, index: number) => {
                 const displayText = item.word || item.sentence || item.question;
                 const difficulty = item.difficulty || item.metadata?.difficulty || 'normal';
@@ -130,8 +135,9 @@ const VocabularyList: React.FC = () => {
                   </Button>
                 );
               })
-            )}
-          </Flex>
+              )}
+            </Flex>
+          )}
         </ScrollArea>
 
         {/* Footer stats */}

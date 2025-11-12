@@ -77,7 +77,7 @@ const AITutorChat: React.FC<AITutorChatProps> = ({ isOpen, onClose }) => {
       } else {
         const errorMessage: Message = {
           role: 'assistant',
-          content: result.error || 'Sorry, I encountered an error. Please try again.',
+          content: result.error || '⚠️ AI service error. Please check:\n\n1. Your Google Gemini API key is configured in Settings\n2. You haven\'t exceeded the free daily limit (1,500 requests)\n3. Your internet connection is stable\n\nTry again in a moment.',
           timestamp: new Date(),
         };
         setMessages((prev) => [...prev, errorMessage]);
@@ -85,7 +85,7 @@ const AITutorChat: React.FC<AITutorChatProps> = ({ isOpen, onClose }) => {
     } catch (error) {
       const errorMessage: Message = {
         role: 'assistant',
-        content: 'Sorry, I\'m having trouble connecting right now. Please try again later.',
+        content: '❌ Connection failed. **Action needed:**\n\n• Open Settings (gear icon) and add your Google Gemini API key\n• Get a free key at: https://aistudio.google.com/apikey\n• Check your internet connection\n\nGemini is 100% FREE (1,500 requests/day)',
         timestamp: new Date(),
       };
       setMessages((prev) => [...prev, errorMessage]);

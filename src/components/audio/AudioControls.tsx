@@ -16,9 +16,63 @@ import {
   SpeakerLoudIcon,
 } from '@radix-ui/react-icons';
 import { useAppStore } from '../../ts/stores';
+import { ttsEngine } from '../../ts/audio/TTSEngine';
 
 const AudioControls: React.FC = () => {
-  const { audio } = useAppStore();
+  const audio = useAppStore((state) => state.audio);
+  const currentItem = useAppStore((state) => state.vocabulary.currentItem);
+  const vocabulary = useAppStore((state) => state.vocabulary);
+
+  // Handle play button click
+  const handlePlay = async () => {
+    if (!currentItem) {
+      console.warn('[AudioControls] No current item to play');
+      return;
+    }
+
+    audio.startAutoPlay();
+
+    // Get the word/text to speak
+    const textToSpeak = (currentItem as any).word || (currentItem as any).english ||
+                        (currentItem as any).sentence || (currentItem as any).question;
+
+    if (textToSpeak) {
+      console.log('[AudioControls] Playing:', textToSpeak);
+      try {
+        await ttsEngine.pronounceText(textToSpeak, 'en-US', null);
+      } catch (error) {
+        console.error('[AudioControls] TTS error:', error);
+      }
+    }
+  };
+
+  // Handle next button
+  const handleNext = () => {
+    const dataset = vocabulary.currentDataset;
+    if (dataset && dataset.length > 0) {
+      const nextIndex = audio.currentIndex + 1;
+      if (nextIndex < dataset.length) {
+        const nextItem = dataset[nextIndex];
+        if (nextItem) {
+          audio.navigateNext();
+          vocabulary.setCurrentItem(nextItem);
+        }
+      }
+    }
+  };
+
+  // Handle previous button
+  const handlePrev = () => {
+    const dataset = vocabulary.currentDataset;
+    if (dataset && dataset.length > 0 && audio.currentIndex > 0) {
+      const prevIndex = audio.currentIndex - 1;
+      const prevItem = dataset[prevIndex];
+      if (prevItem) {
+        audio.navigatePrev();
+        vocabulary.setCurrentItem(prevItem);
+      }
+    }
+  };
 
   return (
     <Card size="3" className="audio-controls">
@@ -34,7 +88,7 @@ const AudioControls: React.FC = () => {
           <Button
             size="3"
             variant="soft"
-            onClick={() => audio.navigatePrev()}
+            onClick={handlePrev}
             disabled={audio.currentIndex === 0}
           >
             <TrackPreviousIcon width="20" height="20" />
@@ -52,7 +106,7 @@ const AudioControls: React.FC = () => {
                   audio.pauseAutoPlay();
                 }
               } else {
-                audio.startAutoPlay();
+                handlePlay();
               }
             }}
           >
@@ -73,7 +127,7 @@ const AudioControls: React.FC = () => {
           <Button
             size="3"
             variant="soft"
-            onClick={() => audio.navigateNext()}
+            onClick={handleNext}
           >
             <TrackNextIcon width="20" height="20" />
           </Button>

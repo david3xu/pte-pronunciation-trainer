@@ -66,12 +66,20 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
 
   // Handle TTS playback
   const handleSpeak = async (_mode: 'word' | 'sentence' | 'question' = 'word', accent?: 'british' | 'american') => {
+    console.log('[WordCard] handleSpeak called:', { displayText, accent, usePremiumTTS, premiumAvailable });
+
     if (usePremiumTTS && premiumAvailable) {
       // Use premium AWS Polly
       await handlePremiumSpeak(accent);
     } else {
       // Use free browser TTS via TTSEngine
-      await ttsEngine.pronounceText(displayText, 'en-US', null);
+      console.log('[WordCard] Calling ttsEngine.pronounceText with:', displayText);
+      try {
+        await ttsEngine.pronounceText(displayText, 'en-US', null);
+        console.log('[WordCard] ttsEngine.pronounceText completed');
+      } catch (error) {
+        console.error('[WordCard] TTS error:', error);
+      }
     }
   };
 

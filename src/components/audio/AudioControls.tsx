@@ -5,7 +5,7 @@
  * Integrates with Zustand audio store.
  */
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Card, Flex, Button, Text, Switch, Slider } from '@radix-ui/themes';
 import {
   PlayIcon,
@@ -22,28 +22,72 @@ const AudioControls: React.FC = () => {
   const audio = useAppStore((state) => state.audio);
   const currentItem = useAppStore((state) => state.vocabulary.currentItem);
   const vocabulary = useAppStore((state) => state.vocabulary);
+  const autoPlayRef = useRef<boolean>(false);
+
+  // Auto-play loop effect
+  useEffect(() => {
+    const runAutoPlay = async () => {
+      if (!audio.isAutoPlaying || audio.isPaused || !currentItem) {
+        return;
+      }
+
+      autoPlayRef.current = true;
+
+      // Get the word/text to speak
+      const textToSpeak = (currentItem as any).word || (currentItem as any).english ||
+                          (currentItem as any).sentence || (currentItem as any).question;
+
+      if (textToSpeak) {
+        console.log('[AudioControls] Auto-playing:', textToSpeak);
+        try {
+          await ttsEngine.pronounceText(textToSpeak, 'en-US', null);
+
+          // After speaking, move to next if auto-play is still active
+          if (audio.isAutoPlaying && !audio.isPaused && autoPlayRef.current) {
+            const dataset = vocabulary.currentDataset;
+            const nextIndex = audio.currentIndex + 1;
+
+            if (dataset && nextIndex < dataset.length) {
+              const nextItem = dataset[nextIndex];
+              if (nextItem) {
+                // Small delay between words (0.5 seconds)
+                await new Promise(resolve => setTimeout(resolve, 500));
+
+                if (audio.isAutoPlaying && !audio.isPaused && autoPlayRef.current) {
+                  audio.navigateNext();
+                  vocabulary.setCurrentItem(nextItem);
+                }
+              }
+            } else {
+              // Reached end of dataset
+              console.log('[AudioControls] Auto-play finished - reached end');
+              audio.stopAutoPlay();
+            }
+          }
+        } catch (error) {
+          console.error('[AudioControls] Auto-play error:', error);
+          audio.stopAutoPlay();
+        }
+      }
+    };
+
+    if (audio.isAutoPlaying && !audio.isPaused) {
+      runAutoPlay();
+    }
+
+    return () => {
+      autoPlayRef.current = false;
+    };
+  }, [audio.isAutoPlaying, audio.isPaused, currentItem, audio.currentIndex]);
 
   // Handle play button click
-  const handlePlay = async () => {
+  const handlePlay = () => {
     if (!currentItem) {
       console.warn('[AudioControls] No current item to play');
       return;
     }
 
     audio.startAutoPlay();
-
-    // Get the word/text to speak
-    const textToSpeak = (currentItem as any).word || (currentItem as any).english ||
-                        (currentItem as any).sentence || (currentItem as any).question;
-
-    if (textToSpeak) {
-      console.log('[AudioControls] Playing:', textToSpeak);
-      try {
-        await ttsEngine.pronounceText(textToSpeak, 'en-US', null);
-      } catch (error) {
-        console.error('[AudioControls] TTS error:', error);
-      }
-    }
   };
 
   // Handle next button

@@ -140,15 +140,17 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
           )}
         </Flex>
 
-        {/* Advanced Options Toggle */}
-        <Button
-          variant="ghost"
-          size="1"
-          onClick={() => setShowAdvancedOptions(!showAdvancedOptions)}
-          title="Show voice and TTS options"
-        >
-          {showAdvancedOptions ? '▲ Hide Options' : '▼ Voice Options'}
-        </Button>
+        {/* Advanced Options Toggle - Only show if Premium TTS is available */}
+        {premiumAvailable && (
+          <Button
+            variant="ghost"
+            size="1"
+            onClick={() => setShowAdvancedOptions(!showAdvancedOptions)}
+            title="Show voice and TTS options"
+          >
+            {showAdvancedOptions ? '▲ Hide Options' : '▼ Voice Options'}
+          </Button>
+        )}
       </Flex>
 
       {/* Advanced TTS Options (Collapsible) */}

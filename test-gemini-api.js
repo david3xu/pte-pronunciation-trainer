@@ -5,7 +5,7 @@
  * Tests different models to find which one works
  */
 
-import { GoogleGenAI } from '@google/genai';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 import { config } from 'dotenv';
 
 config();
@@ -20,7 +20,6 @@ if (!apiKey) {
 console.log('🔑 API Key found:', apiKey.substring(0, 10) + '...');
 
 const modelsToTest = [
-  'gemini-2.5-flash',
   'gemini-1.5-flash',
   'gemini-1.5-pro',
   'gemini-pro',
@@ -29,16 +28,16 @@ const modelsToTest = [
 async function testModel(modelName) {
   try {
     console.log(`\n📝 Testing model: ${modelName}`);
-    const ai = new GoogleGenAI({ apiKey });
+    const genAI = new GoogleGenerativeAI(apiKey);
+    const model = genAI.getGenerativeModel({ model: modelName });
 
-    const response = await ai.models.generateContent({
-      model: modelName,
-      contents: 'Say "Hello, I am working!" in exactly 5 words.',
-    });
+    const result = await model.generateContent('Say "Hello, I am working!" in exactly 5 words.');
+    const response = await result.response;
+    const text = response.text();
 
     console.log(`✅ SUCCESS with ${modelName}`);
-    console.log(`   Response: ${response.text}`);
-    return { model: modelName, success: true, response: response.text };
+    console.log(`   Response: ${text}`);
+    return { model: modelName, success: true, response: text };
   } catch (error) {
     console.log(`❌ FAILED with ${modelName}`);
     console.log(`   Error: ${error.message}`);

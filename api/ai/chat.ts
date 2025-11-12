@@ -34,7 +34,7 @@
  */
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { GoogleGenAI } from '@google/genai';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 import { createClient } from '@supabase/supabase-js';
 
 // ============================================
@@ -222,8 +222,9 @@ export default async function handler(
       return;
     }
 
-    // Initialize Gemini with new SDK
-    const ai = new GoogleGenAI({ apiKey });
+    // Initialize Gemini with official SDK
+    const genAI = new GoogleGenerativeAI(apiKey);
+    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
     // Build comprehensive prompt with system instructions and conversation history
     let fullPrompt = SYSTEM_PROMPT + buildContextPrompt(context);
@@ -241,13 +242,10 @@ export default async function handler(
     // Add current user message
     fullPrompt += `\nStudent: ${message}\n\nTutor:`;
 
-    // Call Gemini API with new SDK
-    // Using gemini-1.5-flash for better stability (2.5-flash often overloaded)
-    const response = await ai.models.generateContent({
-      model: 'gemini-1.5-flash',
-      contents: fullPrompt,
-    });
-    const answer = response.text ||
+    // Call Gemini API with official SDK
+    const result = await model.generateContent(fullPrompt);
+    const response = await result.response;
+    const answer = response.text() ||
       'I apologize, but I couldn\'t generate a response. Please try again.';
 
     // Save conversation if userId provided

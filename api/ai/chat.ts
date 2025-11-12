@@ -28,7 +28,9 @@
  * }
  *
  * Environment variables required:
- * - GEMINI_API_KEY or VITE_GEMINI_API_KEY
+ * - GEMINI_API (recommended for Vercel)
+ * - OR GEMINI_API_KEY
+ * - OR VITE_GEMINI_API_KEY (for client-side)
  */
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';

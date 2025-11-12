@@ -90,6 +90,13 @@ const AudioControls: React.FC = () => {
     audio.startAutoPlay();
   };
 
+  // Handle pause button click
+  const handlePause = () => {
+    audio.pauseAutoPlay();
+    // Stop any currently playing TTS
+    ttsEngine.stopSpeaking();
+  };
+
   // Handle next button
   const handleNext = () => {
     const dataset = vocabulary.currentDataset;
@@ -147,7 +154,7 @@ const AudioControls: React.FC = () => {
                 if (audio.isPaused) {
                   audio.resumeAutoPlay();
                 } else {
-                  audio.pauseAutoPlay();
+                  handlePause();
                 }
               } else {
                 handlePlay();

@@ -6,6 +6,7 @@
   "main": "index.html",
   "scripts": {
     "dev": "vite",
+    "dev:proxy": "node dev-proxy.js",
     "dev:legacy": "python3 -m http.server 3001",
     "preview": "vite preview",
     "data": "npm run data:pte",
@@ -180,6 +181,8 @@
     "@aws-sdk/client-s3": "^3.927.0",
     "@google/generative-ai": "^0.24.1",
     "@supabase/supabase-js": "^2.80.0",
+    "dotenv": "^17.2.3",
+    "http-proxy": "^1.18.1",
     "immer": "^10.2.0",
     "openai": "^6.8.1",
     "posthog-js": "^1.290.0",

@@ -16,8 +16,8 @@ interface SettingsPanelProps {
 }
 
 const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
-  const settings = useAppStore((state) => state.settings);
-  const audio = useAppStore((state) => state.audio);
+  // Get the entire store to preserve methods
+  const { settings, audio } = useAppStore();
 
   if (!isOpen) return null;
 

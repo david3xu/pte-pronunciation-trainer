@@ -12,13 +12,14 @@ import { SpeakerLoudIcon, PlayIcon, LockClosedIcon } from '@radix-ui/react-icons
 import { useAppStore } from '../../ts/stores';
 import type { VocabularyTerm, PracticeItem } from '../../types/dataset.types';
 import { isPremiumTTSAvailable } from '../../ts/audio/pollyService';
+import { ttsEngine } from '../../ts/audio/TTSEngine';
 
 interface WordCardProps {
   item: VocabularyTerm | PracticeItem;
 }
 
 const WordCard: React.FC<WordCardProps> = ({ item }) => {
-  const { tts } = useAppStore();
+  const ttsState = useAppStore((state) => state.tts);
   const [usePremiumTTS, setUsePremiumTTS] = useState(false);
   const [premiumVoiceId, setPremiumVoiceId] = useState('Joanna');
   const [isPlayingPremium, setIsPlayingPremium] = useState(false);
@@ -64,18 +65,13 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
     : null;
 
   // Handle TTS playback
-  const handleSpeak = async (mode: 'word' | 'sentence' | 'question' = 'word', accent?: 'british' | 'american') => {
+  const handleSpeak = async (_mode: 'word' | 'sentence' | 'question' = 'word', accent?: 'british' | 'american') => {
     if (usePremiumTTS && premiumAvailable) {
       // Use premium AWS Polly
       await handlePremiumSpeak(accent);
     } else {
-      // Use free browser TTS
-      if (isVocabularyTerm && ipa) {
-        const pronunciation = accent === 'american' ? ipa.american : ipa.british;
-        tts.startSpeaking(displayText, pronunciation || displayText, mode);
-      } else {
-        tts.startSpeaking(displayText, undefined, isPracticeSentence ? 'sentence' : 'question');
-      }
+      // Use free browser TTS via TTSEngine
+      await ttsEngine.pronounceText(displayText, 'en-US', null);
     }
   };
 
@@ -131,7 +127,7 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
       console.error('Premium TTS playback failed:', error);
       setIsPlayingPremium(false);
       // Fallback to browser TTS
-      tts.startSpeaking(displayText, undefined, 'word');
+      await ttsEngine.pronounceText(displayText, 'en-US', null);
     }
   };
 
@@ -142,7 +138,7 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
     hard: 'red',
   }[difficulty as string] || 'gray';
 
-  const isSpeaking = usePremiumTTS ? isPlayingPremium : tts.isSpeaking;
+  const isSpeaking = usePremiumTTS ? isPlayingPremium : ttsState.isSpeaking;
 
   return (
     <Card size="4" className="word-card animate-in">

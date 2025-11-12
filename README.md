@@ -102,35 +102,44 @@ A specialized web-based pronunciation training application for **PTE exam prepar
 
 ## 🏗️ Architecture
 
-### **TypeScript + Supabase Hybrid**
+### **React + TypeScript + Supabase Hybrid**
 
 ```
-┌──────────────────────────────────────┐
-│  FRONTEND (TypeScript 100%)          │
-│  • Event-driven architecture         │
-│  • Zero hardcoded values             │
-│  • Type-safe configuration           │
-│  • Offline-first design              │
-└──────────────────────────────────────┘
-         ↓                    ↓
-┌────────────────┐   ┌────────────────┐
-│  LOCAL JSON    │   │  SUPABASE DB   │
-│  (Vocabulary)  │   │  (User Data)   │
-│                │   │                │
-│ • 13K words    │   │ • Profiles     │
-│ • 2.5K sents   │   │ • Progress     │
-│ • 10-20ms load │   │ • Settings     │
-│ • Works offline│   │ • Analytics    │
-└────────────────┘   └────────────────┘
+┌─────────────────────────────────────────────────────┐
+│  FRONTEND (React 19 + TypeScript 5.9)               │
+│  • Component-based architecture                     │
+│  • Zustand state management                         │
+│  • Feature-grouped components (ai/, audio/, etc.)   │
+│  • Type-safe configuration                          │
+│  • Offline-first design                             │
+└─────────────────────────────────────────────────────┘
+         ↓                    ↓                    ↓
+┌────────────────┐   ┌────────────────┐   ┌────────────────┐
+│  LOCAL JSON    │   │  SUPABASE      │   │  AI SERVICES   │
+│  (Vocabulary)  │   │  (User Data)   │   │  (FREE)        │
+│                │   │                │   │                │
+│ • 13K words    │   │ • Profiles     │   │ • Gemini Chat  │
+│ • 2.5K sents   │   │ • Progress     │   │ • AI Recs      │
+│ • 10-20ms load │   │ • Settings     │   │ • TTS (Polly)  │
+│ • Works offline│   │ • Analytics    │   │ • Audio Cache  │
+└────────────────┘   └────────────────┘   └────────────────┘
 ```
 
 **Why This Design?**
-- ⚡ Fast: 10-20ms vocabulary load
-- 💰 Free: $0/month (vs $25-50/month if all in DB)
-- 📴 Offline: Full functionality without internet
-- 🌍 CDN: Global edge caching
+- ⚡ **Fast**: 10-20ms vocabulary load (local JSON)
+- 💰 **Free**: $0/month static hosting (vs $25-50/month all-DB)
+- 📴 **Offline**: Full functionality without internet
+- 🌍 **CDN**: Global edge caching via Vercel
+- 🤖 **AI-Powered**: FREE Gemini integration (1,500 req/day)
+- 🎯 **Scalable**: React component architecture
 
-See [VOCABULARY-STORAGE-DECISION.md](docs/VOCABULARY-STORAGE-DECISION.md) for analysis.
+**Component Architecture:**
+- **Feature-based grouping** - `ai/`, `audio/`, `practice/`, `settings/`, `shared/`
+- **Zustand store** - Centralized state (progress, settings, vocabulary)
+- **Radix UI + Tailwind** - Accessible, responsive components
+- **Service layer** - `services/ai/`, `services/tts/` for API calls
+
+See [ARCHITECTURE.md](docs/architecture/ARCHITECTURE.md) for detailed analysis.
 
 ---
 
@@ -185,70 +194,222 @@ npm run deploy
 
 ### **Start Here**
 - 📘 **[CLAUDE.md](CLAUDE.md)** - AI assistant guide (START HERE)
-- 📗 **[GUIDELINES.md](docs/GUIDELINES.md)** - Design principles
-- 📕 **[ARCHITECTURE.md](docs/ARCHITECTURE.md)** - System design (2,230 lines)
-- 📋 **[FINALIZATION-CHECKLIST.md](docs/FINALIZATION-CHECKLIST.md)** - Project status & roadmap
+- 📗 **[docs/README.md](docs/README.md)** - Documentation index
+- 📕 **[GUIDELINES.md](docs/architecture/GUIDELINES.md)** - Design principles
+- 🏗️ **[ARCHITECTURE.md](docs/architecture/ARCHITECTURE.md)** - System design (2,230 lines)
 
-### **Setup Guides**
-- 🚀 **[DEPLOYMENT.md](docs/DEPLOYMENT.md)** - Deployment guide
-- ☁️ **[SUPABASE-SETUP-GUIDE.md](docs/SUPABASE-SETUP-GUIDE.md)** - Supabase config
-- 🧪 **[SUPABASE-TESTING-GUIDE.md](docs/SUPABASE-TESTING-GUIDE.md)** - Testing guide
-- 🤖 **[GEMINI-SETUP.md](docs/GEMINI-SETUP.md)** - Google Gemini FREE AI setup (NEW)
-- 🔊 **[AWS-POLLY-SETUP.md](docs/AWS-POLLY-SETUP.md)** - Premium TTS setup (NEW)
+### **Setup Guides** (`docs/setup/`)
+- 🚀 **[DEPLOYMENT.md](docs/guides/DEPLOYMENT.md)** - Deployment guide
+- ☁️ **[SUPABASE-SETUP-GUIDE.md](docs/setup/SUPABASE-SETUP-GUIDE.md)** - Supabase config
+- 🧪 **[SUPABASE-TESTING-GUIDE.md](docs/setup/SUPABASE-TESTING-GUIDE.md)** - Testing guide
+- 🤖 **[GEMINI-SETUP.md](docs/setup/GEMINI-SETUP.md)** - Google Gemini FREE AI setup (NEW)
+- 🔊 **[AWS-POLLY-SETUP.md](docs/setup/AWS-POLLY-SETUP.md)** - Premium TTS setup (NEW)
 
-### **Architecture**
-- 🏗️ **[ARCHITECTURE-ANALYSIS.md](docs/ARCHITECTURE-ANALYSIS.md)** - Current architecture
-- 💾 **[VOCABULARY-STORAGE-DECISION.md](docs/VOCABULARY-STORAGE-DECISION.md)** - Data design
-- 📋 **[REFACTORING-TODOS.md](docs/REFACTORING-TODOS.md)** - Project roadmap
+### **Architecture** (`docs/architecture/`)
+- 🏗️ **[ARCHITECTURE-ANALYSIS.md](docs/architecture/ARCHITECTURE-ANALYSIS.md)** - Architecture analysis
+- 💾 **[VOCABULARY-STORAGE-DECISION.md](docs/archive/VOCABULARY-STORAGE-DECISION.md)** - Data design decisions
 
-### **Reference**
-- 📙 **[API-REFERENCE.md](docs/API-REFERENCE.md)** - Complete API
-- 🔧 **[TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md)** - Common issues
+### **Guides** (`docs/guides/`)
+- 📙 **[API-REFERENCE.md](docs/api/API-REFERENCE.md)** - Complete API reference
+- 🔧 **[TROUBLESHOOTING.md](docs/guides/TROUBLESHOOTING.md)** - Common issues
+- 📋 **[ENFORCING-GUIDELINES.md](docs/guides/ENFORCING-GUIDELINES.md)** - Development rules
+
+### **Archive** (`docs/archive/`)
+- 🎨 **[UI-DESIGN.md](docs/archive/UI-DESIGN.md)** - UI design documentation
+- 📋 **[FINALIZATION-CHECKLIST.md](docs/archive/FINALIZATION-CHECKLIST.md)** - Project status
+- 🗺️ **[REFACTORING-TODOS.md](docs/archive/REFACTORING-TODOS.md)** - Historical roadmap
 
 ---
 
 ## 🗂️ Project Structure
 
+### **Root Directory**
 ```
 ccl-pronunciation-trainer/
-├── index.html                 # Main app
+├── index.html                 # Main React app entry
 ├── test-supabase.html         # Supabase test page
+├── package.json               # Dependencies & scripts
+├── tsconfig.json              # TypeScript config
+├── vite.config.ts             # Vite build config
+├── .env                       # API keys (Supabase, Gemini, AWS)
+└── README.md                  # This file
+```
+
+### **Source Code** (`src/`)
+```
+src/
+├── App.tsx                    # Root React component
+├── main.tsx                   # React entry point
 │
-├── src/
-│   ├── ts/                    # TypeScript source (100%)
-│   │   ├── core/              # App core
-│   │   ├── data/              # Data extractors
-│   │   ├── audio/             # TTS engine
-│   │   ├── ui/                # UI controllers
-│   │   ├── supabase/          # Cloud sync ✨
-│   │   └── shared/            # Config & utils
-│   │
-│   ├── js/                    # Compiled JS (runtime)
-│   ├── css/                   # Modular CSS
-│   └── types/                 # Type definitions
+├── components/                # React UI Components (grouped by feature)
+│   ├── ai/                    # AI Features
+│   │   ├── AITutorChat.tsx            # Gemini chat interface
+│   │   ├── PronunciationScoring.tsx   # AI scoring
+│   │   └── AIRecommendations.tsx      # AI suggestions
+│   ├── audio/                 # Audio Controls
+│   │   ├── AudioControls.tsx          # Playback controls
+│   │   ├── VoiceSelector.tsx          # Browser TTS selector
+│   │   └── PremiumVoiceSelector.tsx   # AWS Polly selector
+│   ├── practice/              # Practice Features
+│   │   ├── WordCard.tsx               # Main word display
+│   │   ├── VocabularyList.tsx         # Word list sidebar
+│   │   ├── ProgressTracker.tsx        # Progress display
+│   │   ├── PracticeModeSelector.tsx   # Mode switcher
+│   │   └── DifficultyFilter.tsx       # Difficulty filter
+│   ├── settings/              # Settings
+│   │   └── SettingsPanel.tsx          # Settings UI
+│   └── shared/                # Shared Components
+│       ├── OnboardingModal.tsx        # First-time guide
+│       └── Skeleton.tsx               # Loading states
 │
-├── data/
-│   ├── source/pte/            # Markdown (13 books)
-│   └── processed/             # JSON datasets
+├── ts/                        # TypeScript Core Logic
+│   ├── stores/                # Zustand State Management
+│   │   └── index.ts                   # App state store
+│   ├── shared/                # Shared Utilities
+│   │   └── Config.ts                  # App configuration
+│   ├── audio/                 # Audio Services
+│   │   ├── pollyService.ts            # AWS Polly integration
+│   │   └── ttsUtils.ts                # TTS utilities
+│   ├── data/                  # Data Management
+│   │   └── vocabLoader.ts             # Vocabulary loader
+│   └── utils/                 # Utilities
+│       └── helpers.ts                 # Helper functions
 │
-├── supabase/
-│   └── migrations/            # Database schema
+├── services/                  # API Client Services
+│   ├── ai/                    # AI Services
+│   │   └── geminiService.ts           # Google Gemini API
+│   └── tts/                   # TTS Services
+│       └── pollyClient.ts             # AWS Polly client
 │
-├── scripts/                   # Build scripts
-├── docs/                      # Documentation
-└── .env                       # Supabase keys
+├── types/                     # TypeScript Type Definitions
+│   ├── config.types.ts        # Config types
+│   ├── dataset.types.ts       # Dataset types
+│   └── index.ts               # Type exports
+│
+└── css/                       # Modular CSS (Tailwind + Custom)
+    ├── variables.css          # Design tokens (222 vars)
+    ├── animations.css         # Keyframe animations
+    ├── components.css         # BEM components
+    ├── style.css              # Main layout
+    ├── responsive.css         # Media queries
+    └── tailwind.css           # Tailwind directives
+```
+
+### **Data** (`data/`)
+```
+data/
+├── source/pte/                # Source Markdown Files
+│   ├── vocabs/                # 13 vocabulary books
+│   │   ├── pte-fib-listening-with-ipa.md
+│   │   ├── pte-beginner.md
+│   │   ├── pte-intermediate.md
+│   │   └── ... (10 more books)
+│   └── practices/             # Practice sentences
+│       ├── rs-sentences.md            # Repeat Sentence
+│       ├── asq-questions.md           # Answer Short Question
+│       └── wfd-sentences.md           # Write From Dictation
+│
+├── processed/                 # Generated JSON Datasets
+│   ├── pte-fib-listening-dataset.json
+│   ├── pte-beginner-dataset.json
+│   └── ... (13 total datasets)
+│
+└── reports/                   # Build Reports
+    └── pte-processing-report.json
+```
+
+### **Documentation** (`docs/`)
+```
+docs/
+├── README.md                  # Documentation index
+│
+├── setup/                     # Setup Guides
+│   ├── AWS-POLLY-SETUP.md             # AWS Polly TTS setup
+│   ├── GEMINI-SETUP.md                # Google Gemini AI setup
+│   ├── SUPABASE-SETUP-GUIDE.md        # Supabase config
+│   └── SUPABASE-TESTING-GUIDE.md      # Testing guide
+│
+├── api/                       # API Reference
+│   ├── API-REFERENCE.md               # Complete API docs
+│   └── DATASET-SCHEMA.md              # Data schemas
+│
+├── architecture/              # System Design
+│   ├── ARCHITECTURE.md                # System architecture
+│   ├── GUIDELINES.md                  # Design principles
+│   └── ARCHITECTURE-ANALYSIS.md       # Architecture analysis
+│
+├── guides/                    # How-To Guides
+│   ├── DEPLOYMENT.md                  # Deploy to Vercel
+│   ├── TROUBLESHOOTING.md             # Common issues
+│   └── ENFORCING-GUIDELINES.md        # Development rules
+│
+└── archive/                   # Historical Documentation
+    ├── UI-DESIGN.md                   # UI design history
+    ├── UI-DESIGN-EVOLUTION.md         # Design evolution
+    ├── REFACTORING-TODOS.md           # Project roadmap
+    └── FINALIZATION-CHECKLIST.md      # Project status
+```
+
+### **Build & Deploy** (`scripts/`, `archive/`)
+```
+scripts/
+├── pte-data-pipeline.js       # Markdown → JSON processor
+├── validate.js                # Pre-commit validation
+├── validate-docs.js           # Documentation checks
+├── validate-structure.js      # Structure validation
+└── build.js                   # Production build
+
+archive/vanilla-js-legacy/     # Legacy Code (Build Only)
+├── shared/
+│   └── Config.js              # Pipeline configuration
+└── data/extractors/           # Data Extractors (5 files)
+    ├── PTETermsExtractor.js           # Dual IPA extractor
+    ├── SingleIPATermsExtractor.js     # Single IPA extractor
+    ├── PTESentenceExtractor.js        # Sentence extractor
+    └── PTEQuestionExtractor.js        # Question extractor
+```
+
+### **Cloud Infrastructure** (`supabase/`, `api/`)
+```
+supabase/
+└── migrations/                # Database Schema
+    ├── 20241101000000_initial_schema.sql
+    └── 20241101000001_add_analytics.sql
+
+api/                           # Vercel Serverless Functions
+└── polly-tts.ts               # AWS Polly proxy endpoint
 ```
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: TypeScript, HTML5, CSS3
-- **Backend**: Supabase (PostgreSQL + Auth)
-- **Build**: TypeScript Compiler + custom scripts
-- **Audio**: Web Speech API (TTS)
-- **Offline**: Service Worker v64
-- **Deploy**: Vercel (auto-deploy)
+### **Frontend**
+- **React 19.2.0** - UI framework
+- **TypeScript 5.9.3** - Type safety (100% coverage)
+- **Zustand** - State management
+- **Radix UI** - Accessible component primitives
+- **Tailwind CSS 3.4** - Utility-first styling
+- **Vite 7.2.2** - Build tool & dev server
+
+### **Backend & Cloud**
+- **Supabase** - PostgreSQL + Auth + Storage
+- **AWS Polly** - Premium neural TTS (18 voices)
+- **Google Gemini** - FREE AI chat & recommendations
+- **Vercel** - Serverless deployment
+
+### **Audio**
+- **Web Speech API** - Browser TTS (free)
+- **AWS Polly** - Premium neural voices (paid)
+- **Audio Caching** - Supabase Storage
+
+### **Build & DevOps**
+- **Vite** - Fast HMR development
+- **TypeScript Compiler** - Type checking
+- **ESLint** - Code linting
+- **Vitest** - Unit testing
+- **Husky** - Git hooks (pre-commit validation)
+- **Service Worker** - Offline PWA support
 
 ---
 
@@ -350,8 +511,9 @@ npm run lint          # Code quality
 ## 🤝 Contributing
 
 See:
-- [GUIDELINES.md](docs/GUIDELINES.md) - Coding standards
-- [ARCHITECTURE.md](docs/ARCHITECTURE.md) - System design
+- [CLAUDE.md](CLAUDE.md) - Start here for AI-assisted development
+- [GUIDELINES.md](docs/architecture/GUIDELINES.md) - Coding standards & design principles
+- [ARCHITECTURE.md](docs/architecture/ARCHITECTURE.md) - System design & architecture
 
 ---
 

@@ -28,23 +28,24 @@ const colors = {
 };
 
 // Configuration from GUIDELINES.md
+// Updated November 2025: Docs reorganized into subdirectories
 const PERMANENT_DOCS = [
   'README.md',
   'CHANGELOG.md',
   'CLAUDE.md',
-  'docs/GUIDELINES.md',
-  'docs/ENFORCING-GUIDELINES.md',
-  'docs/ARCHITECTURE.md',
-  'docs/API-REFERENCE.md',
-  'docs/DEPLOYMENT.md',
-  'docs/TROUBLESHOOTING.md',
+  'docs/architecture/GUIDELINES.md',
+  'docs/guides/ENFORCING-GUIDELINES.md',
+  'docs/architecture/ARCHITECTURE.md',
+  'docs/api/API-REFERENCE.md',
+  'docs/guides/DEPLOYMENT.md',
+  'docs/guides/TROUBLESHOOTING.md',
   'docs/README.md'
 ];
 
 const VERSION_FILES = [
   { file: 'package.json', pattern: /"version":\s*"([^"]+)"/ },
   { file: 'README.md', pattern: /v(\d+\.\d+\.\d+)/ },
-  { file: 'docs/GUIDELINES.md', pattern: /Version:\s*(\d+\.\d+\.\d+)/ },
+  { file: 'docs/architecture/GUIDELINES.md', pattern: /Version:\s*(\d+\.\d+\.\d+)/ },
   { file: 'docs/README.md', pattern: /Version:\s*(\d+\.\d+\.\d+)/ },
   { file: 'CLAUDE.md', pattern: /Current Version.*?v(\d+\.\d+\.\d+)/ }
 ];
@@ -157,7 +158,7 @@ class DocumentationValidator {
     // Files that are allowed to have historical language
     const SKIP_FILES = [
       'CHANGELOG.md',  // Changelogs are historical by definition
-      'docs/ENFORCING-GUIDELINES.md'  // Contains examples of what NOT to do
+      'docs/guides/ENFORCING-GUIDELINES.md'  // Contains examples of what NOT to do
     ];
 
     PERMANENT_DOCS.forEach(filePath => {

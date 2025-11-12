@@ -7,7 +7,7 @@
 import React from 'react';
 import { Card, Flex, Text, Button, Badge } from '@radix-ui/themes';
 import { BookmarkIcon, ChatBubbleIcon, Pencil1Icon } from '@radix-ui/react-icons';
-import { useAppStore } from '../ts/stores';
+import { useAppStore } from '../../ts/stores';
 
 const PracticeModeSelector: React.FC = () => {
   const { settings } = useAppStore();

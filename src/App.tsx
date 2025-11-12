@@ -14,13 +14,11 @@ import {
   BarChartIcon,
 } from '@radix-ui/react-icons';
 import { useAppStore } from './ts/stores';
-import WordCard from './components/WordCard';
-import AudioControls from './components/AudioControls';
-import SettingsPanel from './components/SettingsPanel';
-import ProgressTracker from './components/ProgressTracker';
-import AITutorChat from './components/AITutorChat';
-import PronunciationScoring from './components/PronunciationScoring';
-import { WordCardSkeleton } from './components/Skeleton';
+import { WordCard, ProgressTracker } from './components/practice';
+import { AudioControls } from './components/audio';
+import { SettingsPanel } from './components/settings';
+import { AITutorChat, PronunciationScoring } from './components/ai';
+import { WordCardSkeleton } from './components/shared';
 import './css/tailwind.css';
 
 const App: React.FC = () => {

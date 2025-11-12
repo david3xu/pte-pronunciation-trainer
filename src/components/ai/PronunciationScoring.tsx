@@ -15,8 +15,8 @@ import {
   CheckCircledIcon,
   CrossCircledIcon,
 } from '@radix-ui/react-icons';
-import { useAppStore } from '../ts/stores';
-import { getPronunciationScore } from '../api/ai';
+import { useAppStore } from '../../ts/stores';
+import { getPronunciationScore } from '../../services/ai';
 
 interface PronunciationScoringProps {
   isOpen?: boolean;

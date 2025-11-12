@@ -8,8 +8,8 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Flex, Text, Button, Badge, Spinner } from '@radix-ui/themes';
 import { LightningBoltIcon, ReloadIcon, RocketIcon, BookmarkIcon } from '@radix-ui/react-icons';
-import { useAppStore } from '../ts/stores';
-import { generateRecommendations, type Recommendation, type UserProgress } from '../ts/ai/recommendationService';
+import { useAppStore } from '../../ts/stores';
+import { generateRecommendations, type Recommendation, type UserProgress } from '../../ts/ai/recommendationService';
 
 const AIRecommendations: React.FC = () => {
   const { auth, progress } = useAppStore();

@@ -8,7 +8,7 @@
 import React from 'react';
 import { Card, Flex, Text, Select, Switch, Slider, Button, Tabs, Badge } from '@radix-ui/themes';
 import { GearIcon, Cross2Icon } from '@radix-ui/react-icons';
-import { useAppStore } from '../ts/stores';
+import { useAppStore } from '../../ts/stores';
 
 interface SettingsPanelProps {
   isOpen: boolean;

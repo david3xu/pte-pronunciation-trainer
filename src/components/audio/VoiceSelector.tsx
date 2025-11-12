@@ -8,7 +8,7 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Flex, Text, Select, Badge, Button, Switch } from '@radix-ui/themes';
 import { SpeakerLoudIcon, UpdateIcon } from '@radix-ui/react-icons';
-import { useAppStore } from '../ts/stores';
+import { useAppStore } from '../../ts/stores';
 
 interface VoiceSelectorProps {
   onVoiceChange?: (voiceId: string, languageCode: string) => void;

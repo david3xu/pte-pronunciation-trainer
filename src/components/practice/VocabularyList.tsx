@@ -7,9 +7,9 @@
 import React, { useState } from 'react';
 import { Card, Flex, Text, TextField, Button, Badge, ScrollArea } from '@radix-ui/themes';
 import { MagnifyingGlassIcon, Cross2Icon } from '@radix-ui/react-icons';
-import { useAppStore } from '../ts/stores';
-import type { VocabularyTerm, PracticeItem } from '../types/dataset.types';
-import { VocabularyListSkeleton } from './Skeleton';
+import { useAppStore } from '../../ts/stores';
+import type { VocabularyTerm, PracticeItem } from '../../types/dataset.types';
+import { VocabularyListSkeleton } from '../shared/Skeleton';
 
 const VocabularyList: React.FC = () => {
   const { vocabulary, progress } = useAppStore();

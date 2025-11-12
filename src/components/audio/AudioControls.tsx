@@ -15,7 +15,7 @@ import {
   LoopIcon,
   SpeakerLoudIcon,
 } from '@radix-ui/react-icons';
-import { useAppStore } from '../ts/stores';
+import { useAppStore } from '../../ts/stores';
 
 const AudioControls: React.FC = () => {
   const { audio } = useAppStore();

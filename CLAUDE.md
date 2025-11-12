@@ -4,9 +4,48 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**PTE Pronunciation Trainer** - A web-based pronunciation training application for PTE exam preparation, featuring comprehensive vocabulary (13 books, 13,000+ terms) and practice modes (RS/ASQ/WFD with 2,507 sentences/questions). Built with vanilla JavaScript using event-driven architecture.
+**PTE Pronunciation Trainer** - A web-based pronunciation training application for PTE exam preparation, featuring comprehensive vocabulary (13 books, 13,000+ terms) and practice modes (RS/ASQ/WFD with 2,507 sentences/questions).
+
+**Architecture**: React 19 + TypeScript 5.9 + Zustand + Radix UI + Tailwind CSS
 
 **Current Version**: v3.0.0 (AI-Powered - November 2025)
+
+### Directory Structure (November 2025 Refactor)
+
+**Recent Changes:**
+- ✅ **Archived** `src/js/` → `archive/vanilla-js-legacy/` (legacy vanilla JavaScript code, no longer active)
+- ✅ **React App** uses `src/ts/` for core logic + `src/components/` for UI components
+- ✅ **Components** grouped by feature: `ai/`, `audio/`, `practice/`, `settings/`, `shared/`
+- ✅ **Docs** organized into folders: `setup/`, `api/`, `architecture/`, `guides/`, `archive/`
+- ✅ **API** renamed `src/api/` → `src/services/` for clarity
+
+**Active Codebase:**
+```
+src/
+├── components/        ← React UI components (grouped by feature)
+│   ├── ai/           ← AI features (AITutorChat, PronunciationScoring)
+│   ├── audio/        ← Audio controls (AudioControls, VoiceSelector)
+│   ├── practice/     ← Practice features (WordCard, VocabularyList, ProgressTracker)
+│   ├── settings/     ← Settings (SettingsPanel)
+│   └── shared/       ← Shared components (Skeleton, OnboardingModal)
+├── ts/               ← TypeScript core logic (stores, utils, data)
+├── services/         ← API client services (ai, tts)
+├── types/            ← TypeScript type definitions
+├── css/              ← Styles (Tailwind + custom CSS)
+├── App.tsx           ← Root React component
+└── main.tsx          ← React entry point
+
+docs/
+├── README.md         ← Documentation index (START HERE)
+├── setup/            ← Getting started guides (AWS, Gemini, Supabase)
+├── api/              ← API reference and schemas
+├── architecture/     ← System design docs
+├── guides/           ← How-to guides (deployment, troubleshooting)
+└── archive/          ← Historical documentation
+
+archive/
+└── vanilla-js-legacy/  ← Legacy vanilla JavaScript code (not active)
+```
 
 ## Essential Commands
 
@@ -45,15 +84,17 @@ npm run validate
 
 ## Core Architecture Principles
 
-### 1. **Zero Hardcoded Values**
-- **ALL configuration in `src/js/shared/Config.js`**
+> **Note:** The sections below reference `src/js/` paths from the legacy vanilla JavaScript implementation (now archived in `archive/vanilla-js-legacy/`). The current React app uses `src/ts/` for core logic and `src/components/` for UI. Legacy architecture principles are preserved in `src/ts/` modules.
+
+### 1. **Zero Hardcoded Values** (Legacy: `src/js/shared/Config.js`, React: `src/ts/shared/Config.ts`)
+- **ALL configuration in Config files**
 - Never hardcode paths, event names, or settings
 - Use `window.appConfig.get('path.to.value')` everywhere
 
-### 2. **Event-Driven Architecture**
-- **Complete decoupling via EventBus** (`src/js/utils/EventBus.js`)
+### 2. **Event-Driven Architecture** (Legacy: `src/js/utils/EventBus.js`, React: `src/ts/utils/EventBus.ts`)
+- **Complete decoupling via EventBus**
 - NO direct method calls between modules
-- All communication via events defined in `Config.js` (lines 390-508)
+- All communication via events defined in `Config.ts` (lines 390-508)
 
 **Example**:
 ```javascript

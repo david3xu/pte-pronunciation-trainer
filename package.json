@@ -13,14 +13,13 @@
     "build": "npm run compile:ts && vite build",
     "build:legacy": "node scripts/build.js",
     "build:ts": "tsc --noEmit",
-    "compile:ts": "tsc && cp -r dist/compiled/ts/* src/js/ && node scripts/add-js-extensions.js",
+    "compile:ts": "tsc",
     "test": "vitest run --passWithNoTests --silent || exit 0",
     "test:watch": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
     "test:ts": "npm run build:ts && npm test",
-    "lint": "npm run lint:js && npm run lint:ts",
-    "lint:js": "eslint src/js/**/*.js",
+    "lint": "npm run lint:ts",
     "lint:ts": "tsc --noEmit",
     "lint:css": "stylelint src/css/**/*.css",
     "typecheck": "tsc --noEmit",
@@ -30,12 +29,12 @@
     "validate:supabase": "node scripts/verify-supabase-setup.js",
     "validate:all": "npm run validate:docs && npm run validate:structure && npm run validate",
     "clean": "rm -rf dist/ data/processed/",
-    "start": "npm run compile:ts && npm run data:pte && npm run dev",
-    "start:pte": "npm run compile:ts && npm run data:pte && npm run dev",
+    "start": "npm run data:pte && npm run dev",
+    "start:pte": "npm run data:pte && npm run dev",
     "deploy": "npm run deploy:pte",
-    "deploy:pte": "npm run compile:ts && npm run data:pte && npm run build && npm run validate:all",
+    "deploy:pte": "npm run data:pte && npm run build && npm run validate:all",
     "vercel-build": "npm run vercel-build:pte",
-    "vercel-build:pte": "npm run compile:ts && npm run data:pte && vite build && mkdir -p dist/data && cp -r data/processed dist/data/",
+    "vercel-build:pte": "npm run data:pte && vite build && mkdir -p dist/data && cp -r data/processed dist/data/",
     "prepare": "husky install"
   },
   "keywords": [
@@ -111,11 +110,11 @@
       "**/__tests__/**/*.test.js"
     ],
     "collectCoverageFrom": [
-      "src/js/**/*.js",
-      "!src/js/**/*.d.ts",
-      "!src/js/**/*.d.ts.map",
-      "!src/js/**/*.js.map",
-      "!src/js/utils/EventBus.js"
+      "src/ts/**/*.ts",
+      "src/components/**/*.tsx",
+      "!src/ts/**/*.d.ts",
+      "!src/ts/**/*.test.ts",
+      "!src/components/**/*.test.tsx"
     ],
     "coverageDirectory": "coverage",
     "coverageReporters": [

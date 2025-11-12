@@ -6,7 +6,7 @@
 
 import React from 'react';
 import { Card, Flex, Text, Button, Badge } from '@radix-ui/themes';
-import { useAppStore } from '../ts/stores';
+import { useAppStore } from '../../ts/stores';
 
 type Difficulty = 'all' | 'easy' | 'normal' | 'hard';
 

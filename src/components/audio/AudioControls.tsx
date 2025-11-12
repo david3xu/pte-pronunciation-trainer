@@ -70,8 +70,26 @@ const AudioControls: React.FC = () => {
               }
             } else {
               // Reached end of dataset
-              console.log('[AudioControls] Auto-play finished - reached end of dataset');
-              audio.stopAutoPlay();
+              if (audio.repeatMode) {
+                // Repeat mode enabled: loop back to start
+                console.log('[AudioControls] Repeat mode ON - looping back to start');
+                const firstItem = dataset?.[0];
+                if (firstItem && dataset) {
+                  await new Promise(resolve => setTimeout(resolve, 1000)); // 1 second pause before restarting
+                  if (audio.isAutoPlaying && !audio.isPaused && autoPlayRef.current) {
+                    audio.setCurrentIndex(0);
+                    vocabulary.setCurrentItem(firstItem);
+                    console.log('[AudioControls] Restarted from beginning (item 1/' + dataset.length + ')');
+                  }
+                } else {
+                  console.error('[AudioControls] Cannot restart - no first item');
+                  audio.stopAutoPlay();
+                }
+              } else {
+                // Repeat mode disabled: stop at end
+                console.log('[AudioControls] Auto-play finished - reached end of dataset');
+                audio.stopAutoPlay();
+              }
             }
           } else {
             console.log('[AudioControls] Auto-play stopped by user or paused');

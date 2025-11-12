@@ -15,6 +15,10 @@ import './css/tailwind.css';
 // This sets up window.appConfig which is needed by PTEVocabularyManager
 import './ts/shared/Config';
 
+// Initialize voice selector (must be imported for TTS to work properly)
+// This sets up window.voiceSelector which is needed by TTSEngine for voice selection
+import './ts/audio/VoiceSelector';
+
 // Mount React app to #root div
 const rootElement = document.getElementById('root');
 

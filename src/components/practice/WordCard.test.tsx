@@ -2,7 +2,7 @@ import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { Theme } from '@radix-ui/themes';
 import WordCard from './WordCard';
-import type { VocabularyTerm } from '../types/dataset.types';
+import type { VocabularyTerm } from '../../types/dataset.types';
 
 // Mock the Zustand store
 vi.mock('../ts/stores', () => ({

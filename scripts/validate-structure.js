@@ -29,6 +29,7 @@ const colors = {
 };
 
 // Expected directory structure (per GUIDELINES.md and README.md)
+// Updated November 2025: React app structure, docs reorganized
 const EXPECTED_STRUCTURE = {
   'data/': {
     required: true,
@@ -42,17 +43,28 @@ const EXPECTED_STRUCTURE = {
   'src/': {
     required: true,
     children: {
-      'js/': {
-        required: true,
+      'ts/': {
+        required: true,  // React app uses TypeScript
         children: {
-          'core/': { required: true },
-          'shared/': { required: true },
-          'ui/': { required: true },
-          'audio/': { required: true },
-          'data/': { required: true },
-          'utils/': { required: true }
+          'stores/': { required: false },
+          'shared/': { required: false },
+          'audio/': { required: false },
+          'data/': { required: false },
+          'utils/': { required: false }
         }
       },
+      'components/': {
+        required: true,  // React components
+        children: {
+          'ai/': { required: false },
+          'audio/': { required: false },
+          'practice/': { required: false },
+          'settings/': { required: false },
+          'shared/': { required: false }
+        }
+      },
+      'services/': { required: false },  // API client wrappers
+      'types/': { required: false },     // TypeScript types
       'css/': {
         required: true,
         files: [
@@ -70,13 +82,15 @@ const EXPECTED_STRUCTURE = {
   'docs/': {
     required: true,
     files: [
-      'README.md',
-      'GUIDELINES.md',
-      'ARCHITECTURE.md',
-      'API-REFERENCE.md',
-      'DEPLOYMENT.md',
-      'TROUBLESHOOTING.md'
-    ]
+      'README.md'  // Only README.md required at root, rest in subdirs
+    ],
+    children: {
+      'setup/': { required: false },
+      'api/': { required: false },
+      'architecture/': { required: false },
+      'guides/': { required: false },
+      'archive/': { required: false }
+    }
   },
   'scripts/': {
     required: true,
@@ -86,6 +100,7 @@ const EXPECTED_STRUCTURE = {
       'build.js'
     ]
   },
+  'archive/': { required: false },  // Legacy code
   'tests/': { required: false },
   'dist/': { required: false }
 };
@@ -257,40 +272,40 @@ class StructureValidator {
     }
   }
 
-  // Validation 5: Check JavaScript module organization
+  // Validation 5: Check TypeScript module organization (React app)
   validateJSStructure() {
-    console.log(`\n${colors.cyan}[5/5] Validating JavaScript structure...${colors.reset}`);
+    console.log(`\n${colors.cyan}[5/5] Validating TypeScript structure...${colors.reset}`);
 
-    const jsDir = 'src/js';
-    const requiredModules = EXPECTED_STRUCTURE['src/'].children['js/'].children;
+    const tsDir = 'src/ts';
+    const requiredModules = EXPECTED_STRUCTURE['src/'].children['ts/'].children;
 
-    if (!fs.existsSync(jsDir)) {
-      this.addError(`JavaScript directory missing: ${jsDir}`);
+    if (!fs.existsSync(tsDir)) {
+      this.addError(`TypeScript directory missing: ${tsDir}`);
       return;
     }
 
     // Check required module directories
     for (const [module, config] of Object.entries(requiredModules)) {
-      const modulePath = path.join(jsDir, module);
+      const modulePath = path.join(tsDir, module);
       if (config.required && !fs.existsSync(modulePath)) {
-        this.addError(`Missing required JS module directory: ${modulePath}`);
+        this.addError(`Missing required TS module directory: ${modulePath}`);
       } else if (fs.existsSync(modulePath)) {
         this.addPassed(`Module directory: ${module}`);
 
         // Count files in each module
-        const files = fs.readdirSync(modulePath).filter(f => f.endsWith('.js'));
+        const files = fs.readdirSync(modulePath).filter(f => f.endsWith('.ts') || f.endsWith('.tsx'));
         if (files.length === 0) {
           this.addWarning(`Empty module directory: ${modulePath}`);
         }
       }
     }
 
-    // Check for Config.js (critical file)
-    const configPath = path.join(jsDir, 'shared/Config.js');
+    // Check for Config.ts (critical file)
+    const configPath = path.join(tsDir, 'shared/Config.ts');
     if (!fs.existsSync(configPath)) {
-      this.addError('CRITICAL: Config.js not found at src/js/shared/Config.js');
+      this.addError('CRITICAL: Config.ts not found at src/ts/shared/Config.ts');
     } else {
-      this.addPassed('Config.js found (critical file)');
+      this.addPassed('Config.ts found (critical file)');
     }
   }
 

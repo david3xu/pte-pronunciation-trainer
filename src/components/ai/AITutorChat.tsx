@@ -10,8 +10,8 @@ import { Card, Flex, Text, TextField, Button, ScrollArea, Badge, Spinner } from 
 import { PaperPlaneIcon, Cross2Icon, ChatBubbleIcon } from '@radix-ui/react-icons';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { useAppStore } from '../ts/stores';
-import { askAITutor } from '../api/ai';
+import { useAppStore } from '../../ts/stores';
+import { askAITutor } from '../../services/ai';
 
 interface Message {
   role: 'user' | 'assistant';

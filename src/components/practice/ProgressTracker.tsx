@@ -7,7 +7,7 @@
 import React from 'react';
 import { Card, Flex, Text, Progress, Badge } from '@radix-ui/themes';
 import { CheckCircledIcon, TimerIcon, TargetIcon } from '@radix-ui/react-icons';
-import { useAppStore } from '../ts/stores';
+import { useAppStore } from '../../ts/stores';
 
 const ProgressTracker: React.FC = () => {
   const { progress, auth } = useAppStore();

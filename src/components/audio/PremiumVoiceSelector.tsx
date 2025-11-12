@@ -8,7 +8,7 @@
 import React, { useState } from 'react';
 import { Card, Flex, Text, Select, Badge, Button } from '@radix-ui/themes';
 import { SpeakerLoudIcon, LockClosedIcon } from '@radix-ui/react-icons';
-import { getVoices, isPremiumTTSAvailable, type PollyVoice } from '../ts/audio/pollyService';
+import { getVoices, isPremiumTTSAvailable, type PollyVoice } from '../../ts/audio/pollyService';
 
 interface PremiumVoiceSelectorProps {
   selectedVoiceId?: string;

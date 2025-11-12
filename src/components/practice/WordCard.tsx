@@ -9,9 +9,9 @@
 import React, { useState } from 'react';
 import { Card, Text, Badge, Button, Flex, Select } from '@radix-ui/themes';
 import { SpeakerLoudIcon, PlayIcon, LockClosedIcon } from '@radix-ui/react-icons';
-import { useAppStore } from '../ts/stores';
-import type { VocabularyTerm, PracticeItem } from '../types/dataset.types';
-import { isPremiumTTSAvailable } from '../ts/audio/pollyService';
+import { useAppStore } from '../../ts/stores';
+import type { VocabularyTerm, PracticeItem } from '../../types/dataset.types';
+import { isPremiumTTSAvailable } from '../../ts/audio/pollyService';
 
 interface WordCardProps {
   item: VocabularyTerm | PracticeItem;

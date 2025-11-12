@@ -22,10 +22,10 @@ import { WordCardSkeleton } from './components/shared';
 import './css/tailwind.css';
 
 const App: React.FC = () => {
-  // Access Zustand store
-  const { vocabulary } = useAppStore();
-  const currentItem = vocabulary.currentItem;
-  const isLoadingVocabulary = vocabulary.isLoading;
+  // Access Zustand store using selector pattern for proper re-renders
+  const vocabulary = useAppStore((state) => state.vocabulary);
+  const currentItem = useAppStore((state) => state.vocabulary.currentItem);
+  const isLoadingVocabulary = useAppStore((state) => state.vocabulary.isLoading);
 
   // Modal states
   const [showSettings, setShowSettings] = useState(false);
@@ -76,11 +76,14 @@ const App: React.FC = () => {
         const items = data.vocabulary || [];
 
         console.log(`Loaded ${items.length} vocabulary items`);
+        console.log('First item:', items[0]);
         vocabulary.setDataset(items, vocabularyBook);
 
         // Set first item as current
         if (items.length > 0) {
+          console.log('Setting current item to:', items[0]);
           vocabulary.setCurrentItem(items[0]);
+          console.log('Current item after set:', useAppStore.getState().vocabulary.currentItem);
         }
       } catch (error) {
         console.error('Error loading vocabulary:', error);

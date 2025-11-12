@@ -11,6 +11,10 @@ import App from './App';
 import '@radix-ui/themes/styles.css';
 import './css/tailwind.css';
 
+// Initialize configuration (must be imported before App)
+// This sets up window.appConfig which is needed by PTEVocabularyManager
+import './ts/shared/Config';
+
 // Mount React app to #root div
 const rootElement = document.getElementById('root');
 

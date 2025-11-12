@@ -6,7 +6,7 @@
  */
 
 import React, { useEffect, useState } from 'react';
-import { Theme, Tabs, Box, Flex, Button } from '@radix-ui/themes';
+import { Theme, Tabs, Box, Flex, Button, Spinner } from '@radix-ui/themes';
 import {
   ChatBubbleIcon,
   SpeakerLoudIcon,
@@ -25,6 +25,7 @@ import ProgressTracker from './components/ProgressTracker';
 import VocabularyList from './components/VocabularyList';
 import AITutorChat from './components/AITutorChat';
 import PronunciationScoring from './components/PronunciationScoring';
+import { WordCardSkeleton } from './components/Skeleton';
 import './css/tailwind.css';
 
 const App: React.FC = () => {
@@ -32,6 +33,7 @@ const App: React.FC = () => {
   const { vocabulary, auth } = useAppStore();
   const currentItem = vocabulary.currentItem;
   const isAuthenticated = auth.isAuthenticated;
+  const isLoadingVocabulary = vocabulary.isLoading;
 
   // Modal states
   const [showSettings, setShowSettings] = useState(false);
@@ -71,6 +73,7 @@ const App: React.FC = () => {
                   variant="soft"
                   size="3"
                   onClick={() => setShowAITutor(!showAITutor)}
+                  title="Chat with AI for pronunciation help (Free with Gemini)"
                 >
                   <ChatBubbleIcon width="18" height="18" />
                   AI Tutor
@@ -79,6 +82,7 @@ const App: React.FC = () => {
                   variant="soft"
                   size="3"
                   onClick={() => setShowPronunciationScoring(!showPronunciationScoring)}
+                  title="Record and get AI feedback on your pronunciation"
                 >
                   <SpeakerLoudIcon width="18" height="18" />
                   Practice
@@ -87,6 +91,7 @@ const App: React.FC = () => {
                   variant="soft"
                   size="3"
                   onClick={() => setShowSettings(!showSettings)}
+                  title="Customize voice, speed, and other settings"
                 >
                   <GearIcon width="18" height="18" />
                   Settings
@@ -101,27 +106,13 @@ const App: React.FC = () => {
             </Flex>
           </header>
 
-          {/* Modals/Panels */}
-          {showSettings && (
-            <div className="mb-6">
-              <SettingsPanel isOpen={showSettings} onClose={() => setShowSettings(false)} />
-            </div>
-          )}
-
-          {showAITutor && (
-            <div className="mb-6">
-              <AITutorChat isOpen={showAITutor} onClose={() => setShowAITutor(false)} />
-            </div>
-          )}
-
-          {showPronunciationScoring && (
-            <div className="mb-6">
-              <PronunciationScoring
-                isOpen={showPronunciationScoring}
-                onClose={() => setShowPronunciationScoring(false)}
-              />
-            </div>
-          )}
+          {/* Modals/Panels - Render as overlays, not inline */}
+          <SettingsPanel isOpen={showSettings} onClose={() => setShowSettings(false)} />
+          <AITutorChat isOpen={showAITutor} onClose={() => setShowAITutor(false)} />
+          <PronunciationScoring
+            isOpen={showPronunciationScoring}
+            onClose={() => setShowPronunciationScoring(false)}
+          />
 
           {/* Main Content */}
           <Tabs.Root defaultValue="practice">
@@ -148,7 +139,27 @@ const App: React.FC = () => {
 
                   {/* Main Content: Word Card & Audio */}
                   <div className="lg:col-span-3 space-y-6">
-                    {currentItem && <WordCard item={currentItem} />}
+                    {isLoadingVocabulary ? (
+                      <WordCardSkeleton />
+                    ) : currentItem ? (
+                      <WordCard item={currentItem} />
+                    ) : (
+                      <Flex
+                        align="center"
+                        justify="center"
+                        direction="column"
+                        gap="3"
+                        p="8"
+                        style={{
+                          backgroundColor: 'var(--gray-a2)',
+                          borderRadius: 'var(--radius-4)',
+                          minHeight: '400px',
+                        }}
+                      >
+                        <Spinner size="3" />
+                        <p className="text-slate-300">Loading vocabulary...</p>
+                      </Flex>
+                    )}
                     <AudioControls />
                   </div>
                 </div>
@@ -167,10 +178,13 @@ const App: React.FC = () => {
           {/* Footer */}
           <footer className="mt-12 text-center text-slate-400 text-sm">
             <p>
-              PTE Pronunciation Trainer v{import.meta.env['VITE_APP_VERSION'] || '2.5.4'}
+              PTE Pronunciation Trainer v{import.meta.env['VITE_APP_VERSION'] || '3.0.0'}
             </p>
             <p className="mt-2">
-              Powered by OpenAI GPT-4 • Built with React + TypeScript + Zustand
+              🎉 Powered by Google Gemini (100% FREE) • AWS Polly Premium TTS
+            </p>
+            <p className="mt-1 text-xs">
+              Built with React + TypeScript + Zustand + Supabase
             </p>
           </footer>
         </div>

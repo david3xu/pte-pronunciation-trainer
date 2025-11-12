@@ -49,7 +49,7 @@ const VoiceSelector: React.FC<VoiceSelectorProps> = ({ onVoiceChange }) => {
       setVoices(result.data);
     } catch (err: any) {
       console.error('Error fetching voices:', err);
-      setError(err.message);
+      setError('⚠️ Failed to load voice list. Check: 1) AWS Polly credentials in Settings > Advanced, 2) Internet connection. Using fallback voices.');
       // Set default voices on error
       setVoices({
         'en-US': {
@@ -134,7 +134,7 @@ const VoiceSelector: React.FC<VoiceSelectorProps> = ({ onVoiceChange }) => {
       audio.play();
     } catch (err: any) {
       console.error('Error testing premium voice:', err);
-      alert(`Failed to test voice: ${err.message}`);
+      alert(`❌ Voice test failed!\n\nPossible causes:\n• AWS Polly credentials not configured\n• Invalid Region/Access Key/Secret Key\n• Internet connection issue\n\nAction: Go to Settings > Advanced > Add AWS Polly credentials`);
     }
   };
 

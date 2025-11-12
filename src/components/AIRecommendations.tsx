@@ -41,7 +41,7 @@ const AIRecommendations: React.FC = () => {
       const result = await generateRecommendations(userProgress);
       setRecommendations(result);
     } catch (err) {
-      setError('Unable to generate recommendations. Please try again later.');
+      setError('❌ Failed to generate AI recommendations. Check: 1) Google Gemini API key in Settings, 2) Internet connection. Get your free key at aistudio.google.com/apikey (100% FREE, 1,500/day)');
       console.error('AI Recommendations error:', err);
     } finally {
       setIsLoading(false);

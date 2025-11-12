@@ -203,7 +203,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                   </Select.Content>
                 </Select.Root>
                 <Text size="1" color="gray">
-                  Premium voices require OpenAI API key
+                  💡 Premium voices require AWS Polly credentials (Region, Access Key, Secret Key). Add them in the Advanced tab.
                 </Text>
               </Flex>
             </Flex>

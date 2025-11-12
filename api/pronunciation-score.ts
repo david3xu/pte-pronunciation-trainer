@@ -9,18 +9,7 @@
  */
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { GoogleGenerativeAI } from '@google/generative-ai';
-
-// Initialize Gemini client
-const getGeminiClient = () => {
-  const apiKey = process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY;
-
-  if (!apiKey) {
-    return null;
-  }
-
-  return new GoogleGenerativeAI(apiKey);
-};
+import { GoogleGenAI } from '@google/genai';
 
 interface RequestBody {
   targetText: string;
@@ -68,14 +57,17 @@ export default async function handler(
     }
 
     // Check if Gemini API key is configured
-    const genAI = getGeminiClient();
-    if (!genAI) {
+    const apiKey = process.env.GEMINI_API || process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY;
+    if (!apiKey) {
       console.warn('Gemini API key not configured - returning mock response');
       return res.status(200).json({
         success: true,
         data: getMockScoringResult(targetText, transcribedText, difficulty),
       });
     }
+
+    // Initialize Gemini with official SDK
+    const genAI = new GoogleGenAI({ apiKey });
 
     // Build prompt for pronunciation analysis
     const prompt = `You are an expert pronunciation coach for the PTE (Pearson Test of English) exam.
@@ -109,11 +101,12 @@ Difficulty level: ${difficulty}
 Please analyze the pronunciation and provide your assessment in JSON format.
 Return ONLY valid JSON, no additional text.`;
 
-    // Call Gemini API
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
-    const geminiResult = await model.generateContent(prompt);
-    const response = await geminiResult.response;
-    const responseContent = response.text();
+    // Call Gemini API with official SDK
+    const response = await genAI.models.generateContent({
+      model: 'gemini-2.5-flash',
+      contents: prompt,
+    });
+    const responseContent = response.text;
 
     // Parse response (extract JSON from possible markdown wrapping)
     let analysis;

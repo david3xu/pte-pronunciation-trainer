@@ -210,8 +210,8 @@ export default async function handler(
       return;
     }
 
-    // Check API key
-    const apiKey = process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY;
+    // Check API key - supports multiple env var names for flexibility
+    const apiKey = process.env.GEMINI_API || process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY;
     if (!apiKey) {
       res.status(500).json({
         success: false,

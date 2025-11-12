@@ -6,43 +6,34 @@
  */
 
 import React, { useEffect, useState } from 'react';
-import { Theme, Tabs, Box, Flex, Button, Spinner } from '@radix-ui/themes';
+import { Theme, Flex, Button, Spinner } from '@radix-ui/themes';
 import {
   ChatBubbleIcon,
   SpeakerLoudIcon,
   GearIcon,
   BarChartIcon,
-  ReaderIcon,
 } from '@radix-ui/react-icons';
 import { useAppStore } from './ts/stores';
 import WordCard from './components/WordCard';
-import AIRecommendations from './components/AIRecommendations';
 import AudioControls from './components/AudioControls';
 import SettingsPanel from './components/SettingsPanel';
-import PracticeModeSelector from './components/PracticeModeSelector';
-import DifficultyFilter from './components/DifficultyFilter';
 import ProgressTracker from './components/ProgressTracker';
-import VocabularyList from './components/VocabularyList';
 import AITutorChat from './components/AITutorChat';
 import PronunciationScoring from './components/PronunciationScoring';
-import OnboardingModal, { useOnboarding } from './components/OnboardingModal';
 import { WordCardSkeleton } from './components/Skeleton';
 import './css/tailwind.css';
 
 const App: React.FC = () => {
   // Access Zustand store
-  const { vocabulary, auth } = useAppStore();
+  const { vocabulary } = useAppStore();
   const currentItem = vocabulary.currentItem;
-  const isAuthenticated = auth.isAuthenticated;
   const isLoadingVocabulary = vocabulary.isLoading;
 
   // Modal states
   const [showSettings, setShowSettings] = useState(false);
   const [showAITutor, setShowAITutor] = useState(false);
   const [showPronunciationScoring, setShowPronunciationScoring] = useState(false);
-
-  // Onboarding state
-  const { showOnboarding, closeOnboarding } = useOnboarding();
+  const [showProgress, setShowProgress] = useState(false);
 
   // Initialize app on mount
   useEffect(() => {
@@ -61,142 +52,109 @@ const App: React.FC = () => {
     >
       <div className="react-app min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 p-4 sm:p-8">
         <div className="max-w-7xl mx-auto">
-          {/* Header */}
-          <header className="mb-6 sm:mb-8">
-            <Flex justify="between" align="center" className="mb-4">
-              <div>
-                <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2">
-                  PTE Pronunciation Trainer
-                </h1>
-                <p className="text-slate-300 text-sm sm:text-base">
-                  {isAuthenticated ? `Welcome, ${auth.user?.email}` : 'AI-Powered Pronunciation Practice'}
-                </p>
-              </div>
-              <Flex gap="2" wrap="wrap" className="justify-end">
+          {/* Header - Minimal like PTE branch */}
+          <header className="mb-4">
+            <Flex justify="between" align="center">
+              <h1 className="text-2xl font-bold text-white">
+                🎯 PTE Pronunciation
+              </h1>
+              <Flex gap="2">
                 <Button
                   variant="soft"
-                  size="3"
+                  size="2"
+                  onClick={() => setShowProgress(!showProgress)}
+                  title="View your progress and statistics"
+                >
+                  <BarChartIcon width="16" height="16" />
+                  <span className="hidden sm:inline ml-1">Progress</span>
+                </Button>
+                <Button
+                  variant="soft"
+                  size="2"
                   onClick={() => setShowAITutor(!showAITutor)}
                   title="Chat with AI for pronunciation help (Free with Gemini)"
-                  style={{ minHeight: '44px' }}
-                  className="min-w-[44px]"
                 >
-                  <ChatBubbleIcon width="18" height="18" />
-                  <span className="hidden sm:inline ml-2">AI Tutor</span>
+                  <ChatBubbleIcon width="16" height="16" />
+                  <span className="hidden sm:inline ml-1">AI Tutor</span>
                 </Button>
                 <Button
                   variant="soft"
-                  size="3"
+                  size="2"
                   onClick={() => setShowPronunciationScoring(!showPronunciationScoring)}
                   title="Record and get AI feedback on your pronunciation"
-                  style={{ minHeight: '44px' }}
-                  className="min-w-[44px]"
                 >
-                  <SpeakerLoudIcon width="18" height="18" />
-                  <span className="hidden sm:inline ml-2">Practice</span>
+                  <SpeakerLoudIcon width="16" height="16" />
+                  <span className="hidden sm:inline ml-1">Score</span>
                 </Button>
                 <Button
                   variant="soft"
-                  size="3"
+                  size="2"
                   onClick={() => setShowSettings(!showSettings)}
-                  title="Customize voice, speed, and other settings"
-                  style={{ minHeight: '44px' }}
-                  className="min-w-[44px]"
+                  title="Change mode, difficulty, and voice settings"
                 >
-                  <GearIcon width="18" height="18" />
-                  <span className="hidden sm:inline ml-2">Settings</span>
+                  <GearIcon width="16" height="16" />
+                  <span className="hidden sm:inline ml-1">Settings</span>
                 </Button>
               </Flex>
-            </Flex>
-
-            {/* Practice Mode Selector & Difficulty Filter */}
-            <Flex direction="column" gap="3">
-              <PracticeModeSelector />
-              <DifficultyFilter />
             </Flex>
           </header>
 
           {/* Modals/Panels - Render as overlays, not inline */}
-          {showOnboarding && <OnboardingModal onClose={closeOnboarding} />}
           <SettingsPanel isOpen={showSettings} onClose={() => setShowSettings(false)} />
           <AITutorChat isOpen={showAITutor} onClose={() => setShowAITutor(false)} />
           <PronunciationScoring
             isOpen={showPronunciationScoring}
             onClose={() => setShowPronunciationScoring(false)}
           />
+          {showProgress && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 animate-in p-4">
+              <div className="w-full max-w-4xl max-h-[95vh] overflow-y-auto bg-slate-800 rounded-lg p-6">
+                <Flex justify="between" align="center" mb="4">
+                  <h2 className="text-2xl font-bold text-white">Your Progress</h2>
+                  <Button variant="ghost" onClick={() => setShowProgress(false)}>
+                    ✕
+                  </Button>
+                </Flex>
+                <ProgressTracker />
+              </div>
+            </div>
+          )}
 
-          {/* Main Content */}
-          <Tabs.Root defaultValue="practice">
-            <Tabs.List>
-              <Tabs.Trigger value="practice">
-                <ReaderIcon className="inline mr-2" />
-                Practice
-              </Tabs.Trigger>
-              <Tabs.Trigger value="progress">
-                <BarChartIcon className="inline mr-2" />
-                Progress
-              </Tabs.Trigger>
-            </Tabs.List>
+          {/* Main Content - Single Page, No Tabs */}
+          {/* 80/20 Layout: 80% learning area, 20% controls */}
+          <div className="space-y-4">
+            {/* Learning Area - 80% of focus */}
+            <div className="min-h-[60vh]">
+              {isLoadingVocabulary ? (
+                <WordCardSkeleton />
+              ) : currentItem ? (
+                <WordCard item={currentItem} />
+              ) : (
+                <Flex
+                  align="center"
+                  justify="center"
+                  direction="column"
+                  gap="3"
+                  p="8"
+                  style={{
+                    backgroundColor: 'var(--gray-a2)',
+                    borderRadius: 'var(--radius-4)',
+                    minHeight: '400px',
+                  }}
+                >
+                  <Spinner size="3" />
+                  <p className="text-slate-300">Loading vocabulary...</p>
+                </Flex>
+              )}
+            </div>
 
-            <Box pt="4">
-              {/* Practice Tab */}
-              <Tabs.Content value="practice">
-                <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-                  {/* Left Sidebar: Vocabulary List & AI Recommendations */}
-                  <div className="lg:col-span-1 space-y-6">
-                    <VocabularyList />
-                    {isAuthenticated && <AIRecommendations />}
-                  </div>
+            {/* Audio Controls - 20% essential controls */}
+            <AudioControls />
+          </div>
 
-                  {/* Main Content: Word Card & Audio */}
-                  <div className="lg:col-span-3 space-y-6">
-                    {isLoadingVocabulary ? (
-                      <WordCardSkeleton />
-                    ) : currentItem ? (
-                      <WordCard item={currentItem} />
-                    ) : (
-                      <Flex
-                        align="center"
-                        justify="center"
-                        direction="column"
-                        gap="3"
-                        p="8"
-                        style={{
-                          backgroundColor: 'var(--gray-a2)',
-                          borderRadius: 'var(--radius-4)',
-                          minHeight: '400px',
-                        }}
-                      >
-                        <Spinner size="3" />
-                        <p className="text-slate-300">Loading vocabulary...</p>
-                      </Flex>
-                    )}
-                    <AudioControls />
-                  </div>
-                </div>
-              </Tabs.Content>
-
-              {/* Progress Tab */}
-              <Tabs.Content value="progress">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                  <ProgressTracker />
-                  <VocabularyList />
-                </div>
-              </Tabs.Content>
-            </Box>
-          </Tabs.Root>
-
-          {/* Footer */}
-          <footer className="mt-12 text-center text-slate-400 text-sm">
-            <p>
-              PTE Pronunciation Trainer v{import.meta.env['VITE_APP_VERSION'] || '3.0.0'}
-            </p>
-            <p className="mt-2">
-              🎉 Powered by Google Gemini (100% FREE) • AWS Polly Premium TTS
-            </p>
-            <p className="mt-1 text-xs">
-              Built with React + TypeScript + Zustand + Supabase
-            </p>
+          {/* Footer - Minimal */}
+          <footer className="mt-8 text-center text-slate-500 text-xs">
+            <p>v3.0.0 • Press Space to play • ← → to navigate</p>
           </footer>
         </div>
       </div>

@@ -36,8 +36,43 @@ const App: React.FC = () => {
   // Initialize app on mount
   useEffect(() => {
     console.log('React App mounted');
-    // Integration with existing vanilla JS code
-    // The vanilla JS PTEApp will continue to manage data loading
+
+    // Load vocabulary data on startup
+    const loadInitialVocabulary = async () => {
+      const { vocabularyBook } = useAppStore.getState().settings;
+      console.log('Loading vocabulary book:', vocabularyBook);
+
+      vocabulary.setLoading(true);
+
+      try {
+        // Get the correct data path from Config
+        const dataPath = window.appConfig?.get(`data.paths.byMode.${vocabularyBook}`) || `/data/processed/${vocabularyBook}-vocabulary.json`;
+        console.log('Fetching from:', dataPath);
+
+        const response = await fetch(dataPath);
+        if (!response.ok) {
+          throw new Error(`Failed to load vocabulary: ${response.statusText}`);
+        }
+
+        const data = await response.json();
+        const items = data.vocabulary || [];
+
+        console.log(`Loaded ${items.length} vocabulary items`);
+        vocabulary.setDataset(items, vocabularyBook);
+
+        // Set first item as current
+        if (items.length > 0) {
+          vocabulary.setCurrentItem(items[0]);
+        }
+      } catch (error) {
+        console.error('Error loading vocabulary:', error);
+        vocabulary.setLoading(false);
+        const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+        alert(`Failed to load vocabulary. Please refresh the page.\n\nError: ${errorMessage}`);
+      }
+    };
+
+    loadInitialVocabulary();
   }, []);
 
   return (

@@ -52,6 +52,7 @@ export class AppConfig {
             'pte-reading-fib-drag': 'data/processed/pte-reading-fib-drag-vocabulary.json',
             'pte-asq-answers': 'data/processed/pte-asq-answers-vocabulary.json',
             'pte-high-frequency': 'data/processed/pte-high-frequency-vocabulary.json',
+            'pte-rs-core': 'data/processed/pte-rs-core-vocabulary.json',
 
             // Practice modes
             'rs': 'data/processed/pte-repeat-sentence.json',
@@ -75,6 +76,7 @@ export class AppConfig {
           { id: 'pte-reading-fib-drag', name: 'PTE Reading FIB Drag', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-asq-answers', name: 'PTE ASQ Answers', category: 'vocabulary', difficulty: 'easy' },
           { id: 'pte-high-frequency', name: 'PTE High-Frequency', category: 'vocabulary', difficulty: 'normal' },
+          { id: 'pte-rs-core', name: 'PTE RS Core', category: 'vocabulary', difficulty: 'normal' },
 
           // Practice modes (3 total)
           { id: 'rs', name: 'Repeat Sentence', category: 'practice', description: '620 practice sentences' },

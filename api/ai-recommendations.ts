@@ -1,7 +1,7 @@
 /**
  * AI Recommendations API Route (Vercel Serverless Function)
  *
- * Uses OpenAI GPT-4 to analyze user progress and generate
+ * Uses Google Gemini (FREE) to analyze user progress and generate
  * personalized learning recommendations.
  *
  * Endpoint: /api/ai-recommendations
@@ -9,12 +9,18 @@
  */
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import OpenAI from 'openai';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 
-// Initialize OpenAI client
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY || '',
-});
+// Initialize Gemini client
+const getGeminiClient = () => {
+  const apiKey = process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY;
+
+  if (!apiKey) {
+    return null;
+  }
+
+  return new GoogleGenerativeAI(apiKey);
+};
 
 interface RequestBody {
   userId: string;
@@ -53,9 +59,10 @@ export default async function handler(
       });
     }
 
-    // Check if OpenAI API key is configured
-    if (!process.env.OPENAI_API_KEY) {
-      console.warn('OpenAI API key not configured - returning mock recommendations');
+    // Check if Gemini API key is configured
+    const genAI = getGeminiClient();
+    if (!genAI) {
+      console.warn('Gemini API key not configured - returning mock recommendations');
       return res.status(200).json({
         success: true,
         data: getMockRecommendations(currentAccuracy),
@@ -89,38 +96,31 @@ Return ONLY a JSON array of 5 recommendations in this exact format:
 
 Return only valid JSON array, no additional text.`;
 
-    // Call OpenAI API
-    const completion = await openai.chat.completions.create({
-      model: 'gpt-4-turbo-preview',
-      messages: [
-        {
-          role: 'system',
-          content: 'You are a helpful PTE pronunciation coach. Always respond with valid JSON only.',
-        },
-        {
-          role: 'user',
-          content: prompt,
-        },
-      ],
-      temperature: 0.7,
-      max_tokens: 500,
-      response_format: { type: 'json_object' },
-    });
+    // Call Gemini API
+    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    const result = await model.generateContent(prompt);
+    const response = await result.response;
+    const responseText = response.text();
 
-    // Parse OpenAI response
-    const responseText = completion.choices[0].message.content || '[]';
+    // Parse Gemini response
     let recommendations: Recommendation[];
 
     try {
+      // Extract JSON from response (might be wrapped in markdown code blocks)
+      const jsonMatch = responseText.match(/```json\n([\s\S]*?)\n```/) || responseText.match(/\[([\s\S]*?)\]/);
+      const jsonText = jsonMatch ? (jsonMatch[1] || jsonMatch[0]) : responseText;
+
       // Try to parse as direct array
-      recommendations = JSON.parse(responseText);
+      recommendations = JSON.parse(jsonText);
     } catch (parseError) {
       // Try to extract array from object response
       try {
-        const parsed = JSON.parse(responseText);
-        recommendations = parsed.recommendations || parsed.data || [];
+        const jsonMatch = responseText.match(/```json\n([\s\S]*?)\n```/) || responseText.match(/\[([\s\S]*?)\]/);
+        const jsonText = jsonMatch ? (jsonMatch[1] || jsonMatch[0]) : responseText;
+        const parsed = JSON.parse(jsonText);
+        recommendations = Array.isArray(parsed) ? parsed : (parsed.recommendations || parsed.data || []);
       } catch {
-        console.error('Failed to parse OpenAI response:', responseText);
+        console.error('Failed to parse Gemini response:', responseText);
         recommendations = getMockRecommendations(currentAccuracy);
       }
     }
@@ -150,7 +150,7 @@ Return only valid JSON array, no additional text.`;
 }
 
 /**
- * Generate mock recommendations (fallback when OpenAI is unavailable)
+ * Generate mock recommendations (fallback when Gemini is unavailable)
  */
 function getMockRecommendations(accuracy: number): Recommendation[] {
   // Determine difficulty based on accuracy

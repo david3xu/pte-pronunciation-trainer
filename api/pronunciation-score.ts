@@ -1,7 +1,7 @@
 /**
  * Pronunciation Scoring API Route (Vercel Serverless Function)
  *
- * Analyzes pronunciation attempts using AI to provide detailed feedback.
+ * Analyzes pronunciation attempts using Google Gemini (FREE) to provide detailed feedback.
  * Compares transcribed speech with target text for accuracy scoring.
  *
  * Endpoint: /api/pronunciation-score
@@ -9,12 +9,18 @@
  */
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import OpenAI from 'openai';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 
-// Initialize OpenAI client
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY || '',
-});
+// Initialize Gemini client
+const getGeminiClient = () => {
+  const apiKey = process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY;
+
+  if (!apiKey) {
+    return null;
+  }
+
+  return new GoogleGenerativeAI(apiKey);
+};
 
 interface RequestBody {
   targetText: string;
@@ -61,9 +67,10 @@ export default async function handler(
       });
     }
 
-    // Check if OpenAI API key is configured
-    if (!process.env.OPENAI_API_KEY) {
-      console.warn('OpenAI API key not configured - returning mock response');
+    // Check if Gemini API key is configured
+    const genAI = getGeminiClient();
+    if (!genAI) {
+      console.warn('Gemini API key not configured - returning mock response');
       return res.status(200).json({
         success: true,
         data: getMockScoringResult(targetText, transcribedText, difficulty),
@@ -71,7 +78,7 @@ export default async function handler(
     }
 
     // Build prompt for pronunciation analysis
-    const systemPrompt = `You are an expert pronunciation coach for the PTE (Pearson Test of English) exam.
+    const prompt = `You are an expert pronunciation coach for the PTE (Pearson Test of English) exam.
 
 Your task is to analyze pronunciation attempts by comparing the target text with what the student actually said (transcribed via speech recognition).
 
@@ -93,38 +100,34 @@ Focus on:
 - Stress patterns (for multi-word phrases)
 - Common pronunciation mistakes
 
-Be encouraging and constructive. Always include specific, actionable feedback.`;
+Be encouraging and constructive. Always include specific, actionable feedback.
 
-    const userPrompt = `Target text: "${targetText}"
+Target text: "${targetText}"
 What student said: "${transcribedText}"
 Difficulty level: ${difficulty}
 
-Please analyze the pronunciation and provide your assessment in JSON format.`;
+Please analyze the pronunciation and provide your assessment in JSON format.
+Return ONLY valid JSON, no additional text.`;
 
-    // Call OpenAI API
-    const completion = await openai.chat.completions.create({
-      model: 'gpt-4-turbo-preview',
-      messages: [
-        {
-          role: 'system',
-          content: systemPrompt,
-        },
-        {
-          role: 'user',
-          content: userPrompt,
-        },
-      ],
-      temperature: 0.3, // Lower temperature for more consistent scoring
-      max_tokens: 600,
-      response_format: { type: 'json_object' },
-    });
+    // Call Gemini API
+    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    const geminiResult = await model.generateContent(prompt);
+    const response = await geminiResult.response;
+    const responseContent = response.text();
 
-    // Parse response
-    const responseContent = completion.choices[0].message.content || '{}';
-    const analysis = JSON.parse(responseContent);
+    // Parse response (extract JSON from possible markdown wrapping)
+    let analysis;
+    try {
+      const jsonMatch = responseContent.match(/```json\n([\s\S]*?)\n```/) || responseContent.match(/\{[\s\S]*\}/);
+      const jsonText = jsonMatch ? (jsonMatch[1] || jsonMatch[0]) : responseContent;
+      analysis = JSON.parse(jsonText);
+    } catch (parseError) {
+      console.error('Failed to parse Gemini response:', responseContent);
+      analysis = {};
+    }
 
     // Build result
-    const result: ScoringResult = {
+    const scoringResult: ScoringResult = {
       score: analysis.score || calculateSimpleScore(targetText, transcribedText),
       feedback: analysis.feedback || 'Good effort! Keep practicing.',
       strengths: analysis.strengths || [],
@@ -136,7 +139,7 @@ Please analyze the pronunciation and provide your assessment in JSON format.`;
     // Return successful response
     return res.status(200).json({
       success: true,
-      data: result,
+      data: scoringResult,
     });
   } catch (error: any) {
     console.error('Pronunciation scoring error:', error);
@@ -185,7 +188,7 @@ function calculateSimpleScore(target: string, transcribed: string): number {
 }
 
 /**
- * Generate mock scoring result when OpenAI is unavailable
+ * Generate mock scoring result when Gemini is unavailable
  */
 function getMockScoringResult(
   targetText: string,

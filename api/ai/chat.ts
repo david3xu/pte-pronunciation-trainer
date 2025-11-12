@@ -1,8 +1,8 @@
 /**
- * Vercel Serverless Function: AI Tutor Chat with OpenAI GPT-4
+ * Vercel Serverless Function: AI Tutor Chat with Google Gemini (FREE)
  *
  * This endpoint provides conversational AI tutoring for pronunciation and vocabulary learning.
- * It uses OpenAI GPT-4 for intelligent, context-aware responses.
+ * It uses Google Gemini 1.5 Flash for intelligent, context-aware responses.
  *
  * POST /api/ai/chat
  *
@@ -28,11 +28,11 @@
  * }
  *
  * Environment variables required:
- * - OPENAI_API_KEY
+ * - GEMINI_API_KEY or VITE_GEMINI_API_KEY
  */
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import OpenAI from 'openai';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 import { createClient } from '@supabase/supabase-js';
 
 // ============================================
@@ -211,7 +211,7 @@ export default async function handler(
     }
 
     // Check API key
-    const apiKey = process.env.OPENAI_API_KEY;
+    const apiKey = process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY;
     if (!apiKey) {
       res.status(500).json({
         success: false,
@@ -220,46 +220,30 @@ export default async function handler(
       return;
     }
 
-    // Initialize OpenAI
-    const openai = new OpenAI({
-      apiKey: apiKey
-    });
+    // Initialize Gemini
+    const genAI = new GoogleGenerativeAI(apiKey);
+    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
-    // Build messages array
-    const messages: OpenAI.Chat.ChatCompletionMessageParam[] = [
-      {
-        role: 'system',
-        content: SYSTEM_PROMPT + buildContextPrompt(context)
-      }
-    ];
+    // Build comprehensive prompt with system instructions and conversation history
+    let fullPrompt = SYSTEM_PROMPT + buildContextPrompt(context);
 
     // Add conversation history (last 10 messages)
     if (conversationHistory && conversationHistory.length > 0) {
       const recentHistory = conversationHistory.slice(-10);
-      messages.push(...recentHistory.map(msg => ({
-        role: msg.role as 'user' | 'assistant',
-        content: msg.content
-      })));
+      fullPrompt += '\n\nConversation history:\n';
+      recentHistory.forEach(msg => {
+        fullPrompt += `${msg.role === 'user' ? 'Student' : 'Tutor'}: ${msg.content}\n`;
+      });
+      fullPrompt += '\n';
     }
 
     // Add current user message
-    messages.push({
-      role: 'user',
-      content: message
-    });
+    fullPrompt += `\nStudent: ${message}\n\nTutor:`;
 
-    // Call OpenAI GPT-4
-    const completion = await openai.chat.completions.create({
-      model: 'gpt-4',
-      messages: messages,
-      temperature: 0.7, // Slightly creative but focused
-      max_tokens: 500, // Keep responses concise
-      top_p: 1,
-      frequency_penalty: 0,
-      presence_penalty: 0
-    });
-
-    const answer = completion.choices[0]?.message?.content ||
+    // Call Gemini API
+    const result = await model.generateContent(fullPrompt);
+    const response = await result.response;
+    const answer = response.text() ||
       'I apologize, but I couldn\'t generate a response. Please try again.';
 
     // Save conversation if userId provided
@@ -280,19 +264,22 @@ export default async function handler(
   } catch (error) {
     console.error('AI Tutor error:', error);
 
-    // Check for specific OpenAI errors
-    if (error instanceof OpenAI.APIError) {
-      if (error.status === 401) {
-        res.status(500).json({
-          success: false,
-          error: 'API authentication failed. Please contact support.'
-        });
-        return;
-      }
-      if (error.status === 429) {
+    // Check for specific Gemini API errors
+    if (error instanceof Error) {
+      // Rate limit errors
+      if (error.message.includes('quota') || error.message.includes('rate limit')) {
         res.status(429).json({
           success: false,
           error: 'Too many requests. Please try again in a moment.'
+        });
+        return;
+      }
+
+      // Authentication errors
+      if (error.message.includes('API key') || error.message.includes('authentication')) {
+        res.status(500).json({
+          success: false,
+          error: 'API authentication failed. Please contact support.'
         });
         return;
       }

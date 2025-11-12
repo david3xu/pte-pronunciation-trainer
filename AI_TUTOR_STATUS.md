@@ -34,7 +34,7 @@
 2. **Deploy to Vercel**:
    - Go to https://vercel.com/new
    - Import repo: `david3xu/ccl-pronunciation-trainer`
-   - Add environment variable: `GEMINI_API_KEY=your-api-key-here`
+   - Environment variable `GEMINI_API` should already be set (use existing value)
    - Click Deploy
 
 3. **Test AI Tutor**:
@@ -107,7 +107,7 @@ Google Gemini 1.5 Flash:
 ## 🔧 Troubleshooting
 
 ### "AI service error" message
-→ Check that `GEMINI_API_KEY` is set in Vercel environment variables
+→ Check that `GEMINI_API` is set in Vercel environment variables
 
 ### API endpoint not found
 → Make sure you're testing on Vercel, not local Vite server

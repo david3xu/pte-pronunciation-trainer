@@ -28,11 +28,12 @@ In Vercel project settings → Environment Variables, add:
 
 ### Required for AI Tutor:
 ```
-GEMINI_API_KEY=your-gemini-api-key-here
-VITE_GEMINI_API_KEY=your-gemini-api-key-here
+GEMINI_API=your-gemini-api-key-here
 ```
 
 **Note**: Replace `your-gemini-api-key-here` with your actual API key from https://aistudio.google.com/apikey
+
+**Important**: Use `GEMINI_API` (not `GEMINI_API_KEY`) to match your existing Vercel configuration.
 
 ### Optional (for other features):
 ```

@@ -8,11 +8,11 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import appConfigModule from '../src/js/shared/Config.js';
-import PTETermsExtractor from '../src/js/data/extractors/PTETermsExtractor.js';
-import SingleIPATermsExtractor from '../src/js/data/extractors/SingleIPATermsExtractor.js';
-import PTESentenceExtractor from '../src/js/data/extractors/PTESentenceExtractor.js';
-import PTEQuestionExtractor from '../src/js/data/extractors/PTEQuestionExtractor.js';
+import appConfigModule from '../archive/vanilla-js-legacy/shared/Config.js';
+import PTETermsExtractor from '../archive/vanilla-js-legacy/data/extractors/PTETermsExtractor.js';
+import SingleIPATermsExtractor from '../archive/vanilla-js-legacy/data/extractors/SingleIPATermsExtractor.js';
+import PTESentenceExtractor from '../archive/vanilla-js-legacy/data/extractors/PTESentenceExtractor.js';
+import PTEQuestionExtractor from '../archive/vanilla-js-legacy/data/extractors/PTEQuestionExtractor.js';
 
 // ES module equivalents of __filename and __dirname
 const __filename = fileURLToPath(import.meta.url);

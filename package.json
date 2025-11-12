@@ -6,7 +6,7 @@
   "main": "index.html",
   "scripts": {
     "dev": "vite",
-    "dev:proxy": "node dev-proxy.js",
+    "dev:proxy": "node scripts/dev-proxy.js",
     "dev:legacy": "python3 -m http.server 3001",
     "preview": "vite preview",
     "data": "npm run data:pte",

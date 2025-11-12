@@ -182,7 +182,8 @@ export class TTSEngine {
     try {
       const cleanText = this.cleanTextForTTS(text);
       // Use custom rate if provided, otherwise use user's speed setting, fallback to normal
-      const speechRate = rate || this.speechRate || this.getConfig().get('tts.speeds.normal');
+      const configRate = this.getConfig()?.get('tts.speeds.normal') || 1.0;
+      const speechRate = rate || this.speechRate || configRate;
 
       // Add visual feedback to main display element
       const element = this._addSpeakingFeedback('englishWord', {
@@ -227,7 +228,8 @@ export class TTSEngine {
 
       // Clean text for TTS
       const cleanText = this.cleanTextForTTS(word.english);
-      const pronunciationRate = this.speechRate || this.getConfig().get('tts.speeds.normal');
+      const configRate = this.getConfig()?.get('tts.speeds.normal') || 1.0;
+      const pronunciationRate = this.speechRate || configRate;
 
       // Add visual feedback during speech
       const englishWordElement = document.getElementById('englishWord');
@@ -276,7 +278,8 @@ export class TTSEngine {
 
         if (rawExample) {
           const cleanExample = this.cleanExampleSentenceForTTS(rawExample!);
-          await this.speak(cleanExample, this.getConfig().get('tts.language.default'), this.speechRate || this.getConfig().get('tts.speeds.normal'));
+          const configRate = this.getConfig()?.get('tts.speeds.normal') || 1.0;
+          await this.speak(cleanExample, this.getConfig().get('tts.language.default'), this.speechRate || configRate);
         }
 
         // Remove example highlighting
@@ -336,7 +339,9 @@ export class TTSEngine {
 
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = language;
-      utterance.rate = customRate !== null ? customRate : (this.speechRate || this.getConfig().get('tts.speeds.normal'));
+      // Ensure rate is always a valid number (default to 1.0 if all else fails)
+      const configRate = this.getConfig()?.get('tts.speeds.normal') || 1.0;
+      utterance.rate = customRate !== null ? customRate : (this.speechRate || configRate);
       utterance.volume = 1.0;
       utterance.pitch = 1.0;
 
@@ -430,7 +435,8 @@ export class TTSEngine {
       if ('speechSynthesis' in window) {
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = language;
-        utterance.rate = customRate !== null ? customRate : (this.speechRate || this.getConfig().get('tts.speeds.normal'));
+        const configRate = this.getConfig()?.get('tts.speeds.normal') || 1.0;
+        utterance.rate = customRate !== null ? customRate : (this.speechRate || configRate);
         utterance.volume = 1.0;
         utterance.pitch = 1.0;
 

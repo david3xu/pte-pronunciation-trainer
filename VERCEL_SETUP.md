@@ -6,7 +6,7 @@ This guide explains how to deploy the PTE Pronunciation Trainer to Vercel with A
 
 - GitHub account
 - Vercel account (free tier is fine)
-- Google Gemini API key: `REDACTED_GEMINI_API_KEY`
+- Google Gemini API key (get free at https://aistudio.google.com/apikey)
 
 ## Step 1: Push to GitHub
 
@@ -28,9 +28,11 @@ In Vercel project settings → Environment Variables, add:
 
 ### Required for AI Tutor:
 ```
-GEMINI_API_KEY=REDACTED_GEMINI_API_KEY
-VITE_GEMINI_API_KEY=REDACTED_GEMINI_API_KEY
+GEMINI_API_KEY=your-gemini-api-key-here
+VITE_GEMINI_API_KEY=your-gemini-api-key-here
 ```
+
+**Note**: Replace `your-gemini-api-key-here` with your actual API key from https://aistudio.google.com/apikey
 
 ### Optional (for other features):
 ```

@@ -67,14 +67,24 @@ export class TTSEngine {
   private backgroundAudioElement?: HTMLAudioElement;
 
   constructor() {
-    // Load configuration from centralized config
-    this.config = (window as any).appConfig;
+    // Load configuration from centralized config (lazily loaded)
+    this.config = null;
     this.synth = window.speechSynthesis;
 
     // Subscribe to Zustand store changes (replaces EventBus listeners)
     this._setupStoreSubscriptions();
 
     // We'll initialize AudioContext on first user interaction
+  }
+
+  /**
+   * Lazily get config (only load when needed, not during module initialization)
+   */
+  private getConfig(): any {
+    if (!this.config) {
+      this.config = (window as any).appConfig;
+    }
+    return this.config;
   }
 
   /**
@@ -91,9 +101,9 @@ export class TTSEngine {
   getPracticeMode(): string {
     const settingsModule = (window as any).settingsModule;
     if (settingsModule && typeof settingsModule.get === 'function') {
-      return settingsModule.get('practiceMode') || this.config.get('data.defaults.practiceMode');
+      return settingsModule.get('practiceMode') || this.getConfig().get('data.defaults.practiceMode');
     }
-    return this.config.get('data.defaults.practiceMode');
+    return this.getConfig().get('data.defaults.practiceMode');
   }
 
   /**
@@ -172,7 +182,7 @@ export class TTSEngine {
     try {
       const cleanText = this.cleanTextForTTS(text);
       // Use custom rate if provided, otherwise use user's speed setting, fallback to normal
-      const speechRate = rate || this.speechRate || this.config.get('tts.speeds.normal');
+      const speechRate = rate || this.speechRate || this.getConfig().get('tts.speeds.normal');
 
       // Add visual feedback to main display element
       const element = this._addSpeakingFeedback('englishWord', {
@@ -217,7 +227,7 @@ export class TTSEngine {
 
       // Clean text for TTS
       const cleanText = this.cleanTextForTTS(word.english);
-      const pronunciationRate = this.speechRate || this.config.get('tts.speeds.normal');
+      const pronunciationRate = this.speechRate || this.getConfig().get('tts.speeds.normal');
 
       // Add visual feedback during speech
       const englishWordElement = document.getElementById('englishWord');
@@ -236,7 +246,7 @@ export class TTSEngine {
 
       console.log(`[TTSEngine] 🔊 Calling speak() for: "${cleanText}"`);
       // Speak the term first
-      await this.speak(cleanText, this.config.get('tts.language.default'), pronunciationRate);
+      await this.speak(cleanText, this.getConfig().get('tts.language.default'), pronunciationRate);
       console.log(`[TTSEngine] ✅ speak() completed for: "${cleanText}"`);
 
       // For vocabulary with examples, optionally speak the example sentence
@@ -249,7 +259,7 @@ export class TTSEngine {
 
       if (hasExample && shouldSpeakExample && exampleElement && exampleElement.style.display !== 'none') {
         // Add small pause between term and sentence
-        await new Promise(resolve => setTimeout(resolve, this.config.get('tts.delays.voiceReady')));
+        await new Promise(resolve => setTimeout(resolve, this.getConfig().get('tts.delays.voiceReady')));
 
         // Highlight example sentence during speech
         if (exampleElement) {
@@ -266,7 +276,7 @@ export class TTSEngine {
 
         if (rawExample) {
           const cleanExample = this.cleanExampleSentenceForTTS(rawExample!);
-          await this.speak(cleanExample, this.config.get('tts.language.default'), this.speechRate || this.config.get('tts.speeds.normal'));
+          await this.speak(cleanExample, this.getConfig().get('tts.language.default'), this.speechRate || this.getConfig().get('tts.speeds.normal'));
         }
 
         // Remove example highlighting
@@ -296,7 +306,7 @@ export class TTSEngine {
    */
   speak(text: string, lang: string | null = null, customRate: number | null = null): Promise<void> {
     // Use configured language if not specified
-    const language = lang || this.config.get('tts.language.default');
+    const language = lang || this.getConfig().get('tts.language.default');
 
     console.log(`[TTSEngine] 🎤 speak() called with: "${text}", lang: ${language}, rate: ${customRate}`);
 
@@ -326,7 +336,7 @@ export class TTSEngine {
 
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = language;
-      utterance.rate = customRate !== null ? customRate : (this.speechRate || this.config.get('tts.speeds.normal'));
+      utterance.rate = customRate !== null ? customRate : (this.speechRate || this.getConfig().get('tts.speeds.normal'));
       utterance.volume = 1.0;
       utterance.pitch = 1.0;
 
@@ -414,13 +424,13 @@ export class TTSEngine {
    * Speak with HTML5 Audio (iOS background fallback)
    */
   speakWithHTML5Audio(text: string, lang: string | null = null, customRate: number | null = null): Promise<void> {
-    const language = lang || this.config.get('tts.language.default');
+    const language = lang || this.getConfig().get('tts.language.default');
 
     return new Promise((resolve) => {
       if ('speechSynthesis' in window) {
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = language;
-        utterance.rate = customRate !== null ? customRate : (this.speechRate || this.config.get('tts.speeds.normal'));
+        utterance.rate = customRate !== null ? customRate : (this.speechRate || this.getConfig().get('tts.speeds.normal'));
         utterance.volume = 1.0;
         utterance.pitch = 1.0;
 
@@ -464,7 +474,7 @@ export class TTSEngine {
 
     setTimeout(() => {
       progressTracker.updateStatus('Text-to-speech not available in this browser');
-    }, this.config.get('tts.delays.resetTimeout'));
+    }, this.getConfig().get('tts.delays.resetTimeout'));
   }
 
   /**

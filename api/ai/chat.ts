@@ -242,8 +242,9 @@ export default async function handler(
     fullPrompt += `\nStudent: ${message}\n\nTutor:`;
 
     // Call Gemini API with new SDK
+    // Using gemini-1.5-flash for better stability (2.5-flash often overloaded)
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-1.5-flash',
       contents: fullPrompt,
     });
     const answer = response.text ||

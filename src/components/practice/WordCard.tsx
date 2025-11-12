@@ -27,13 +27,14 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
   const premiumAvailable = isPremiumTTSAvailable();
 
   // Determine if this is a vocabulary term or practice item
-  const isVocabularyTerm = 'word' in item;
+  // Handle both 'word' and 'english' field names for backwards compatibility
+  const isVocabularyTerm = 'word' in item || 'english' in item;
   const isPracticeSentence = 'sentence' in item;
   const isPracticeQuestion = 'question' in item;
 
-  // Extract relevant fields
+  // Extract relevant fields - support both old and new field names
   const displayText = isVocabularyTerm
-    ? (item as VocabularyTerm).word
+    ? ((item as any).word || (item as any).english)
     : isPracticeSentence
     ? 'sentence' in item ? item.sentence : ''
     : 'question' in item ? item.question : '';
@@ -42,7 +43,25 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
     ? item.difficulty
     : ('metadata' in item && item.metadata?.difficulty) || 'normal';
 
-  const ipa = isVocabularyTerm ? (item as VocabularyTerm).ipa : null;
+  // Handle both 'ipa' and 'pronunciation' field names
+  // JSON format: pronunciation.british.ipa vs type format: ipa.british
+  const rawItem = item as any;
+  const ipa = isVocabularyTerm
+    ? (rawItem.ipa || (rawItem.pronunciation ? {
+        british: rawItem.pronunciation.british?.ipa,
+        american: rawItem.pronunciation.american?.ipa,
+        single: rawItem.pronunciation.single?.ipa
+      } : null))
+    : null;
+
+  // Extract phonetic spelling
+  const phonetic = isVocabularyTerm
+    ? (rawItem.phonetic || (rawItem.pronunciation ? {
+        british: rawItem.pronunciation.british?.phonetic,
+        american: rawItem.pronunciation.american?.phonetic,
+        single: rawItem.pronunciation.single?.phonetic
+      } : null))
+    : null;
 
   // Handle TTS playback
   const handleSpeak = async (mode: 'word' | 'sentence' | 'question' = 'word', accent?: 'british' | 'american') => {
@@ -133,9 +152,9 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
           <Badge color={difficultyColor as any} size="2">
             {difficulty}
           </Badge>
-          {isVocabularyTerm && (item as VocabularyTerm).category && (
+          {isVocabularyTerm && (item as any).category && (
             <Badge color="gray" size="2" variant="soft">
-              {(item as VocabularyTerm).category}
+              {(item as any).category}
             </Badge>
           )}
         </Flex>
@@ -249,9 +268,9 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
                     {usePremiumTTS && '⭐'}
                   </Button>
                 </Flex>
-                {(item as VocabularyTerm).phonetic?.british && (
+                {phonetic?.british && (
                   <Text size="3" color="gray" className="italic">
-                    Sounds like: <strong>{(item as VocabularyTerm).phonetic?.british}</strong>
+                    Sounds like: <strong>{phonetic.british}</strong>
                   </Text>
                 )}
               </Flex>
@@ -277,9 +296,9 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
                     {usePremiumTTS && '⭐'}
                   </Button>
                 </Flex>
-                {(item as VocabularyTerm).phonetic?.american && (
+                {phonetic?.american && (
                   <Text size="3" color="gray" className="italic">
-                    Sounds like: <strong>{(item as VocabularyTerm).phonetic?.american}</strong>
+                    Sounds like: <strong>{phonetic.american}</strong>
                   </Text>
                 )}
               </Flex>
@@ -302,13 +321,13 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
         )}
 
         {/* Additional metadata */}
-        {isVocabularyTerm && (item as VocabularyTerm).definition && (
+        {isVocabularyTerm && (item as any).definition && (
           <Flex direction="column" gap="2" mt="2">
             <Text size="2" color="gray" weight="medium">
               Definition
             </Text>
             <Text size="3" color="gray">
-              {(item as VocabularyTerm).definition}
+              {(item as any).definition}
             </Text>
           </Flex>
         )}

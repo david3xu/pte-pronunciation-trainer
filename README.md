@@ -5,7 +5,7 @@ A specialized web-based pronunciation training application for **PTE exam prepar
 **✅ v3.0.0 - AI-POWERED (November 2025)**
 
 **Latest Updates:**
-- 🤖 **NEW:** AI Tutor Chat with GPT-4
+- 🤖 **NEW:** AI Tutor Chat with Google Gemini (100% FREE!)
 - 🔊 **NEW:** Premium TTS with AWS Polly (18 neural voices)
 - 🎯 **NEW:** AI-Powered Recommendations (FREE with Gemini)
 - ✅ React + TypeScript migration complete (100%)
@@ -37,16 +37,17 @@ A specialized web-based pronunciation training application for **PTE exam prepar
 - ❓ **Answer Short Question** - 692 questions with answers
 - ✍️ **Write From Dictation** - 1,195 dictation sentences
 
-### 🤖 **AI-Powered Features** ✨ NEW
+### 🤖 **AI-Powered Features** ✨ NEW (100% FREE!)
 
-#### **AI Tutor Chat** 💬 (OpenAI GPT-4)
+#### **AI Tutor Chat** 💬 (Google Gemini)
 - **Conversational Help** - Ask any pronunciation question in natural language
 - **Context-Aware** - AI knows what word you're currently practicing
 - **Multi-Turn Dialogue** - Follow-up questions and detailed explanations
 - **Markdown Support** - Rich formatted responses (bold, lists, code examples)
 - **Quick Actions** - 4 pre-filled common questions for instant help
+- **100% FREE** - No credit card required (1,500 requests/day)
 - **How to use:** Click the 💬 AI Tutor button in the header
-- **Setup:** See [AI-TUTOR-SETUP.md](docs/AI-TUTOR-SETUP.md)
+- **Setup:** See [GEMINI-SETUP.md](docs/GEMINI-SETUP.md)
 
 #### **AI Recommendations** 🎯 (Google Gemini - FREE)
 - **Personalized Learning** - Based on your practice history and progress
@@ -192,7 +193,7 @@ npm run deploy
 - 🚀 **[DEPLOYMENT.md](docs/DEPLOYMENT.md)** - Deployment guide
 - ☁️ **[SUPABASE-SETUP-GUIDE.md](docs/SUPABASE-SETUP-GUIDE.md)** - Supabase config
 - 🧪 **[SUPABASE-TESTING-GUIDE.md](docs/SUPABASE-TESTING-GUIDE.md)** - Testing guide
-- 🤖 **[AI-TUTOR-SETUP.md](docs/AI-TUTOR-SETUP.md)** - OpenAI GPT-4 setup (NEW)
+- 🤖 **[GEMINI-SETUP.md](docs/GEMINI-SETUP.md)** - Google Gemini FREE AI setup (NEW)
 - 🔊 **[AWS-POLLY-SETUP.md](docs/AWS-POLLY-SETUP.md)** - Premium TTS setup (NEW)
 
 ### **Architecture**

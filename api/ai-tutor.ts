@@ -2,19 +2,25 @@
  * AI Tutor Chatbot API Route (Vercel Serverless Function)
  *
  * Conversational AI assistant for pronunciation help and learning guidance.
- * Uses OpenAI GPT-4 for natural language understanding and responses.
+ * Uses Google Gemini (FREE) for natural language understanding and responses.
  *
  * Endpoint: /api/ai-tutor
  * Method: POST
  */
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import OpenAI from 'openai';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 
-// Initialize OpenAI client
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY || '',
-});
+// Initialize Gemini client
+const getGeminiClient = () => {
+  const apiKey = process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY;
+
+  if (!apiKey) {
+    return null;
+  }
+
+  return new GoogleGenerativeAI(apiKey);
+};
 
 interface RequestBody {
   question: string;
@@ -48,9 +54,10 @@ export default async function handler(
       });
     }
 
-    // Check if OpenAI API key is configured
-    if (!process.env.OPENAI_API_KEY) {
-      console.warn('OpenAI API key not configured - returning mock response');
+    // Check if Gemini API key is configured
+    const genAI = getGeminiClient();
+    if (!genAI) {
+      console.warn('Gemini API key not configured - returning mock response');
       return res.status(200).json({
         success: true,
         data: {
@@ -59,8 +66,8 @@ export default async function handler(
       });
     }
 
-    // Build system prompt
-    const systemPrompt = `You are a friendly and knowledgeable PTE (Pearson Test of English) pronunciation tutor and language learning assistant.
+    // Build comprehensive prompt with conversation history
+    let fullPrompt = `You are a friendly and knowledgeable PTE (Pearson Test of English) pronunciation tutor and language learning assistant.
 
 Your role:
 - Help users understand pronunciation (IPA, phonetics, stress patterns)
@@ -77,39 +84,29 @@ Guidelines:
 - Be encouraging and positive
 - Keep responses concise (2-3 paragraphs max)
 
-${context?.word ? `Current word context: "${context.word}" (${context.difficulty || 'normal'} difficulty)` : ''}`;
+${context?.word ? `Current word context: "${context.word}" (${context.difficulty || 'normal'} difficulty)` : ''}
 
-    // Build messages array
-    const messages: Array<{ role: 'system' | 'user' | 'assistant'; content: string }> = [
-      {
-        role: 'system',
-        content: systemPrompt,
-      },
-    ];
+`;
 
     // Add conversation history if provided
     if (conversationHistory && conversationHistory.length > 0) {
       // Limit history to last 10 messages to avoid token limits
       const recentHistory = conversationHistory.slice(-10);
-      messages.push(...recentHistory);
+      fullPrompt += '\nConversation history:\n';
+      recentHistory.forEach(msg => {
+        fullPrompt += `${msg.role === 'user' ? 'Student' : 'Tutor'}: ${msg.content}\n`;
+      });
+      fullPrompt += '\n';
     }
 
     // Add current question
-    messages.push({
-      role: 'user',
-      content: question,
-    });
+    fullPrompt += `Student: ${question}\n\nTutor:`;
 
-    // Call OpenAI API
-    const completion = await openai.chat.completions.create({
-      model: 'gpt-4-turbo-preview',
-      messages,
-      temperature: 0.7,
-      max_tokens: 500,
-    });
-
-    // Extract response
-    const answer = completion.choices[0].message.content || 'I apologize, but I couldn\'t generate a response. Please try again.';
+    // Call Gemini API
+    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    const result = await model.generateContent(fullPrompt);
+    const response = await result.response;
+    const answer = response.text() || 'I apologize, but I couldn\'t generate a response. Please try again.';
 
     // Return successful response
     return res.status(200).json({
@@ -138,7 +135,7 @@ ${context?.word ? `Current word context: "${context.word}" (${context.difficulty
 }
 
 /**
- * Generate mock response when OpenAI is unavailable
+ * Generate mock response when Gemini is unavailable
  */
 function getMockResponse(question: string, context?: { word?: string; difficulty?: string }): string {
   const questionLower = question.toLowerCase();

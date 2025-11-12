@@ -114,7 +114,7 @@ const AITutorChat: React.FC<AITutorChatProps> = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 animate-in p-4">
-      <Card size="4" className="w-full max-w-3xl h-[85vh] sm:h-[80vh] flex flex-col">
+      <Card size="4" className="w-full max-w-3xl h-[85vh] sm:h-[80vh]" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
         {/* Header */}
         <Flex justify="between" align="center" mb="4">
           <Flex align="center" gap="2">
@@ -128,7 +128,7 @@ const AITutorChat: React.FC<AITutorChatProps> = ({ isOpen, onClose }) => {
         </Flex>
 
         {/* Messages */}
-        <ScrollArea style={{ flex: 1, marginBottom: 'var(--space-4)' }}>
+        <ScrollArea style={{ flex: 1, marginBottom: 'var(--space-4)', minHeight: 0 }}>
           <Flex direction="column" gap="3">
             {messages.map((message, index) => (
               <Flex
@@ -225,7 +225,16 @@ const AITutorChat: React.FC<AITutorChatProps> = ({ isOpen, onClose }) => {
         )}
 
         {/* Input - Always visible at bottom */}
-        <Flex gap="2" align="end" style={{ flexShrink: 0, marginTop: 'auto' }}>
+        <Flex
+          gap="2"
+          align="end"
+          style={{
+            flexShrink: 0,
+            marginTop: 'auto',
+            paddingTop: 'var(--space-3)',
+            borderTop: '1px solid var(--gray-a5)'
+          }}
+        >
           <TextField.Root
             style={{ flex: 1 }}
             value={input}
@@ -233,12 +242,14 @@ const AITutorChat: React.FC<AITutorChatProps> = ({ isOpen, onClose }) => {
             onKeyPress={handleKeyPress}
             placeholder="Ask me about pronunciation..."
             disabled={isLoading}
+            size="3"
           >
             <TextField.Slot>
               <ChatBubbleIcon height="16" width="16" />
             </TextField.Slot>
           </TextField.Root>
           <Button
+            size="3"
             onClick={handleSend}
             disabled={!input.trim() || isLoading}
           >

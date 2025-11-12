@@ -116,6 +116,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                         <Select.Item value="pte-reading-fib-drag">PTE Reading FIB Drag</Select.Item>
                         <Select.Item value="pte-asq-answers">PTE ASQ Answers</Select.Item>
                         <Select.Item value="pte-high-frequency">PTE High-Frequency</Select.Item>
+                        <Select.Item value="pte-rs-core">PTE RS Core</Select.Item>
                       </Select.Group>
                     </Select.Content>
                   </Select.Root>

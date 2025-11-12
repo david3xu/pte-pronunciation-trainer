@@ -205,9 +205,9 @@ const AITutorChat: React.FC<AITutorChatProps> = ({ isOpen, onClose }) => {
           </Flex>
         </ScrollArea>
 
-        {/* Quick questions (show if no messages yet) */}
+        {/* Quick questions (show if only initial message) */}
         {messages.length === 1 && (
-          <Flex gap="2" wrap="wrap" mb="3">
+          <Flex gap="2" wrap="wrap" mb="3" style={{ flexShrink: 0 }}>
             {quickQuestions.map((question, index) => (
               <Button
                 key={index}
@@ -224,8 +224,8 @@ const AITutorChat: React.FC<AITutorChatProps> = ({ isOpen, onClose }) => {
           </Flex>
         )}
 
-        {/* Input */}
-        <Flex gap="2" align="end">
+        {/* Input - Always visible at bottom */}
+        <Flex gap="2" align="end" style={{ flexShrink: 0, marginTop: 'auto' }}>
           <TextField.Root
             style={{ flex: 1 }}
             value={input}
@@ -248,7 +248,7 @@ const AITutorChat: React.FC<AITutorChatProps> = ({ isOpen, onClose }) => {
 
         {/* Auth warning */}
         {!auth.isAuthenticated && (
-          <Flex mt="2">
+          <Flex mt="2" style={{ flexShrink: 0 }}>
             <Text size="1" color="gray">
               💡 Sign in to save your conversation history
             </Text>

@@ -64,7 +64,7 @@ const App: React.FC = () => {
                   title="View your progress and statistics"
                 >
                   <BarChartIcon width="16" height="16" />
-                  <span className="hidden sm:inline ml-1">Progress</span>
+                  <span className="ml-1">Progress</span>
                 </Button>
                 <Button
                   variant="soft"
@@ -73,7 +73,7 @@ const App: React.FC = () => {
                   title="Chat with AI for pronunciation help (Free with Gemini)"
                 >
                   <ChatBubbleIcon width="16" height="16" />
-                  <span className="hidden sm:inline ml-1">AI Tutor</span>
+                  <span className="ml-1">AI Tutor</span>
                 </Button>
                 <Button
                   variant="soft"
@@ -82,7 +82,7 @@ const App: React.FC = () => {
                   title="Record and get AI feedback on your pronunciation"
                 >
                   <SpeakerLoudIcon width="16" height="16" />
-                  <span className="hidden sm:inline ml-1">Score</span>
+                  <span className="ml-1">Score</span>
                 </Button>
                 <Button
                   variant="soft"
@@ -91,7 +91,7 @@ const App: React.FC = () => {
                   title="Change mode, difficulty, and voice settings"
                 >
                   <GearIcon width="16" height="16" />
-                  <span className="hidden sm:inline ml-1">Settings</span>
+                  <span className="ml-1">Settings</span>
                 </Button>
               </Flex>
             </Flex>

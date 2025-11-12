@@ -28,6 +28,11 @@ const AudioControls: React.FC = () => {
   useEffect(() => {
     const runAutoPlay = async () => {
       if (!audio.isAutoPlaying || audio.isPaused || !currentItem) {
+        console.log('[AudioControls] Skipping auto-play:', {
+          isAutoPlaying: audio.isAutoPlaying,
+          isPaused: audio.isPaused,
+          hasCurrentItem: !!currentItem
+        });
         return;
       }
 
@@ -38,13 +43,14 @@ const AudioControls: React.FC = () => {
                           (currentItem as any).sentence || (currentItem as any).question;
 
       if (textToSpeak) {
-        console.log('[AudioControls] Auto-playing:', textToSpeak);
+        const dataset = vocabulary.currentDataset;
+        console.log('[AudioControls] Auto-playing:', textToSpeak, `(${audio.currentIndex + 1}/${dataset?.length || 0})`);
+
         try {
           await ttsEngine.pronounceText(textToSpeak, 'en-US', null);
 
           // After speaking, move to next if auto-play is still active
           if (audio.isAutoPlaying && !audio.isPaused && autoPlayRef.current) {
-            const dataset = vocabulary.currentDataset;
             const nextIndex = audio.currentIndex + 1;
 
             if (dataset && nextIndex < dataset.length) {
@@ -54,20 +60,28 @@ const AudioControls: React.FC = () => {
                 await new Promise(resolve => setTimeout(resolve, 500));
 
                 if (audio.isAutoPlaying && !audio.isPaused && autoPlayRef.current) {
+                  console.log('[AudioControls] Moving to next item:', nextIndex + 1);
                   audio.navigateNext();
                   vocabulary.setCurrentItem(nextItem);
                 }
+              } else {
+                console.warn('[AudioControls] Next item is null at index:', nextIndex);
+                audio.stopAutoPlay();
               }
             } else {
               // Reached end of dataset
-              console.log('[AudioControls] Auto-play finished - reached end');
+              console.log('[AudioControls] Auto-play finished - reached end of dataset');
               audio.stopAutoPlay();
             }
+          } else {
+            console.log('[AudioControls] Auto-play stopped by user or paused');
           }
         } catch (error) {
           console.error('[AudioControls] Auto-play error:', error);
           audio.stopAutoPlay();
         }
+      } else {
+        console.warn('[AudioControls] No text to speak for current item');
       }
     };
 

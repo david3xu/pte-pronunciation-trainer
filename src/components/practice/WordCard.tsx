@@ -46,12 +46,15 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
 
   // Handle both 'ipa' and 'pronunciation' field names
   // JSON format: pronunciation.british.ipa vs type format: ipa.british
+  // Also handle single IPA format: pronunciation.ipa (not nested)
   const rawItem = item as any;
   const ipa = isVocabularyTerm
     ? (rawItem.ipa || (rawItem.pronunciation ? {
+        // If pronunciation has direct ipa/phonetic (single format), use as single
+        // Otherwise check for british/american nested format
         british: rawItem.pronunciation.british?.ipa,
         american: rawItem.pronunciation.american?.ipa,
-        single: rawItem.pronunciation.single?.ipa
+        single: rawItem.pronunciation.ipa || rawItem.pronunciation.single?.ipa
       } : null))
     : null;
 
@@ -60,7 +63,7 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
     ? (rawItem.phonetic || (rawItem.pronunciation ? {
         british: rawItem.pronunciation.british?.phonetic,
         american: rawItem.pronunciation.american?.phonetic,
-        single: rawItem.pronunciation.single?.phonetic
+        single: rawItem.pronunciation.phonetic || rawItem.pronunciation.single?.phonetic
       } : null))
     : null;
 
@@ -303,6 +306,34 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
                 {phonetic?.american && (
                   <Text size="3" color="gray" className="italic">
                     Sounds like: <strong>{phonetic.american}</strong>
+                  </Text>
+                )}
+              </Flex>
+            )}
+
+            {/* Single pronunciation (for books with single IPA format) */}
+            {ipa.single && !ipa.british && !ipa.american && (
+              <Flex direction="column" gap="1">
+                <Text size="2" color="gray" weight="medium">
+                  Pronunciation
+                </Text>
+                <Flex align="center" gap="2">
+                  <Text size="4" className="font-mono text-accent">
+                    {ipa.single}
+                  </Text>
+                  <Button
+                    size="1"
+                    variant="soft"
+                    onClick={() => handleSpeak('word')}
+                    disabled={isSpeaking}
+                  >
+                    <SpeakerLoudIcon />
+                    {usePremiumTTS && '⭐'}
+                  </Button>
+                </Flex>
+                {phonetic?.single && (
+                  <Text size="3" color="gray" className="italic">
+                    Sounds like: <strong>{phonetic.single}</strong>
                   </Text>
                 )}
               </Flex>

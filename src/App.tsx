@@ -45,8 +45,26 @@ const App: React.FC = () => {
       vocabulary.setLoading(true);
 
       try {
-        // Get the correct data path from Config
-        const dataPath = window.appConfig?.get(`data.paths.byMode.${vocabularyBook}`) || `/data/processed/${vocabularyBook}-vocabulary.json`;
+        // Map vocabulary book IDs to their file paths
+        // This is a fallback in case window.appConfig is not available
+        const dataPathMap: Record<string, string> = {
+          'pte-fib-listening': '/data/processed/pte-fib-listening-dataset.json',
+          'pte-beginner': '/data/processed/pte-beginner-vocabulary.json',
+          'pte-intermediate': '/data/processed/pte-intermediate-vocabulary.json',
+          'pte-advanced': '/data/processed/pte-advanced-vocabulary.json',
+          'pte-ra': '/data/processed/pte-ra-vocabulary.json',
+          'pte-rs-vocab': '/data/processed/pte-rs-vocabulary.json',
+          'pte-must-know': '/data/processed/pte-must-know-vocabulary.json',
+          'pte-wfd-vocab': '/data/processed/pte-wfd-vocabulary.json',
+          'pte-rs-wfd-vocab': '/data/processed/pte-rs-wfd-vocabulary.json',
+          'pte-reading-fib': '/data/processed/pte-reading-fib-vocabulary.json',
+          'pte-reading-fib-drag': '/data/processed/pte-reading-fib-drag-vocabulary.json',
+          'pte-asq-answers': '/data/processed/pte-asq-answers-vocabulary.json',
+          'pte-high-frequency': '/data/processed/pte-high-frequency-vocabulary.json',
+          'pte-rs-core': '/data/processed/pte-rs-core-vocabulary.json',
+        };
+
+        const dataPath = dataPathMap[vocabularyBook] || `/data/processed/${vocabularyBook}-vocabulary.json`;
         console.log('Fetching from:', dataPath);
 
         const response = await fetch(dataPath);

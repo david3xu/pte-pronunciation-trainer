@@ -251,7 +251,7 @@ Remember: Your goal is to make pronunciation learning easy and enjoyable!`;
 
     console.log('Calling Gemini API with official SDK...');
     const response = await ai.models.generateContent({
-      model: 'gemini-1.5-flash',
+      model: 'gemini-2.5-flash',
       contents: fullPrompt,
     });
     const answer = response.text || "I apologize, but I couldn't generate a response. Please try again.";

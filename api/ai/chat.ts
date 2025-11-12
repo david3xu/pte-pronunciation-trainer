@@ -243,7 +243,7 @@ export default async function handler(
 
     // Call Gemini API with official SDK
     const response = await ai.models.generateContent({
-      model: 'gemini-1.5-flash',
+      model: 'gemini-2.5-flash',
       contents: fullPrompt,
     });
     const answer = response.text ||

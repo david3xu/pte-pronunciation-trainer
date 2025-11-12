@@ -5,7 +5,7 @@
  * Tests different models to find which one works
  */
 
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import { GoogleGenAI } from '@google/genai';
 import { config } from 'dotenv';
 
 config();
@@ -28,16 +28,16 @@ const modelsToTest = [
 async function testModel(modelName) {
   try {
     console.log(`\n📝 Testing model: ${modelName}`);
-    const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ model: modelName });
+    const ai = new GoogleGenAI({ apiKey });
 
-    const result = await model.generateContent('Say "Hello, I am working!" in exactly 5 words.');
-    const response = await result.response;
-    const text = response.text();
+    const response = await ai.models.generateContent({
+      model: modelName,
+      contents: 'Say "Hello, I am working!" in exactly 5 words.',
+    });
 
     console.log(`✅ SUCCESS with ${modelName}`);
-    console.log(`   Response: ${text}`);
-    return { model: modelName, success: true, response: text };
+    console.log(`   Response: ${response.text}`);
+    return { model: modelName, success: true, response: response.text };
   } catch (error) {
     console.log(`❌ FAILED with ${modelName}`);
     console.log(`   Error: ${error.message}`);

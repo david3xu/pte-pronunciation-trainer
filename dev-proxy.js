@@ -183,9 +183,8 @@ async function handleAIChatRequest(req, res) {
       return;
     }
 
-    // Initialize Gemini with official SDK
-    const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    // Initialize Gemini with official SDK (from docs.google.com/gemini-api)
+    const ai = new GoogleGenAI({ apiKey });
 
     // Build prompt (simplified version of the actual API)
     const SYSTEM_PROMPT = `You are an expert PTE (Pearson Test of English) pronunciation tutor and language coach.
@@ -251,9 +250,11 @@ Remember: Your goal is to make pronunciation learning easy and enjoyable!`;
     fullPrompt += `\nStudent: ${message}\n\nTutor:`;
 
     console.log('Calling Gemini API with official SDK...');
-    const result = await model.generateContent(fullPrompt);
-    const response = await result.response;
-    const answer = response.text() || "I apologize, but I couldn't generate a response. Please try again.";
+    const response = await ai.models.generateContent({
+      model: 'gemini-1.5-flash',
+      contents: fullPrompt,
+    });
+    const answer = response.text || "I apologize, but I couldn't generate a response. Please try again.";
 
     res.status(200).json({
       success: true,

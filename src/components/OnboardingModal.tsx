@@ -117,10 +117,10 @@ const OnboardingModal: React.FC<OnboardingModalProps> = ({ onClose }) => {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 animate-in"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 animate-in p-4"
       style={{ backdropFilter: 'blur(4px)' }}
     >
-      <Card size="4" className="w-full max-w-2xl">
+      <Card size="4" className="w-full max-w-2xl max-h-[95vh] sm:max-h-auto overflow-y-auto">
         <Flex direction="column" gap="4">
           {/* Header */}
           <Flex justify="between" align="center">

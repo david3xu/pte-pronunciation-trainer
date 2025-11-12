@@ -16,7 +16,7 @@ Then open **http://localhost:3000** in your browser.
 
 ## What It Does
 
-The development proxy (`dev-proxy.js`) provides:
+The development proxy (`scripts/dev-proxy.js`) provides:
 
 1. **Frontend Proxying**: Forwards all non-API requests to Vite dev server (port 3001)
 2. **API Handling**: Implements `/api/ai/chat` endpoint locally using the same logic as the Vercel function
@@ -113,7 +113,7 @@ npm run dev
 
 ## Files
 
-- `dev-proxy.js` - Proxy server implementation
+- `scripts/dev-proxy.js` - Proxy server implementation
 - `package.json` - Added `dev:proxy` script
 - `.env` - Environment variables (not committed)
 

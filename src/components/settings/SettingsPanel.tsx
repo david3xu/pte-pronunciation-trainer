@@ -38,6 +38,14 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
 
   // Handle vocabulary book change
   const handleVocabularyBookChange = async (bookId: string) => {
+    console.log('[SettingsPanel] Changing vocabulary book to:', bookId);
+    console.log('[SettingsPanel] updateSetting function:', typeof updateSetting);
+
+    if (typeof updateSetting !== 'function') {
+      console.error('[SettingsPanel] updateSetting is not a function!', updateSetting);
+      return;
+    }
+
     updateSetting('vocabularyBook', bookId);
 
     // Reload vocabulary data

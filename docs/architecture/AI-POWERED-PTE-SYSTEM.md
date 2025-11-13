@@ -1372,6 +1372,46 @@ export interface SessionState {
 
 ## Cost & Performance Analysis
 
+### Deployment Model: User-Provided API Keys
+
+**🎯 This app uses a user-provided API key model:**
+
+- Users sign up for their own **FREE** Gemini API key (https://aistudio.google.com/apikey)
+- Users enter their key during onboarding (stored securely in browser)
+- API calls are made directly from user's browser to Google Gemini
+- **Each user has independent quota: 1,500 requests/day FREE**
+
+**Benefits:**
+- ✅ **Zero API costs for developer** (users provide their own keys)
+- ✅ **Zero API costs for users** (within free tier: 1,500 req/day)
+- ✅ **No shared bottleneck** (each user has separate quota)
+- ✅ **Scales infinitely** (no centralized API key rotation needed)
+- ✅ **Privacy** (API calls never go through your servers)
+
+**Usage Reality Check:**
+```
+Average user:     20-50 AI questions/day  = 3% of daily limit
+Power user:       200 AI questions/day    = 13% of daily limit
+Extreme user:     500 AI questions/day    = 33% of daily limit
+
+Conclusion: Users will NEVER hit the 1,500/day limit ✅
+```
+
+**Key Security:**
+```typescript
+// Store encrypted in localStorage
+const encryptedKey = await encrypt(userApiKey, userPassword);
+localStorage.setItem('gemini_key_encrypted', encryptedKey);
+
+// Decrypt only when needed
+const apiKey = await decrypt(encryptedKey, userPassword);
+
+// API calls: Browser → Google directly (not through your servers)
+const genAI = new GoogleGenAI({ apiKey });
+```
+
+---
+
 ### Database Costs (Supabase)
 
 #### Free Tier Limits
@@ -1435,6 +1475,20 @@ Supabase free tier: Unlimited ✅
 
 ---
 
+### Total Cost Summary
+
+| Component | Cost (Per User) | Cost (Developer) | Notes |
+|-----------|----------------|------------------|-------|
+| **Gemini API** | $0 | $0 | User-provided keys (1,500 req/day FREE) |
+| **Supabase DB** | $0 | $0 | Free tier (500 MB + retention policy) |
+| **Vercel Hosting** | $0 | $0 | Free tier (unlimited bandwidth for hobby) |
+| **Storage** | $0 | $0 | Supabase includes 1 GB storage |
+| **Total** | **$0** | **$0** | ✅ **Zero cost forever** |
+
+**🎉 This architecture costs $0 for both users and developers, scaling infinitely!**
+
+---
+
 ### Performance Impact
 
 #### Database Queries Per Session
@@ -1469,11 +1523,56 @@ Total: 29 queries per session
 | **AI context** | None | Full history |
 | **Progress tracking** | Limited | Comprehensive |
 | **Cost** | $0 | $0 (with retention) |
-| **Offline** | ✅ Works | ⚠️ Read-only |
+| **Offline** | ✅ Full practice | ✅ Practice + queue sync |
 | **Multi-device sync** | ❌ No | ✅ Yes |
 | **Analytics** | Basic | Advanced |
 
 **Result:** Database adds features without sacrificing performance ✅
+
+---
+
+### Offline Support Strategy
+
+**Goal:** Maintain current offline functionality while adding sync capabilities
+
+**Approach: Hybrid Offline + Sync**
+```typescript
+// Offline queue for database writes
+class OfflineQueue {
+  async addSession(sessionData: any) {
+    if (!navigator.onLine) {
+      // Store in IndexedDB queue
+      await idb.offlineQueue.add(sessionData);
+      console.log('Queued for sync when online');
+    } else {
+      // Sync immediately
+      await supabase.from('practice_sessions').insert(sessionData);
+    }
+  }
+
+  async syncWhenOnline() {
+    // Background sync when reconnected
+    window.addEventListener('online', async () => {
+      const queued = await idb.offlineQueue.getAll();
+      for (const item of queued) {
+        await supabase.from('practice_sessions').insert(item);
+        await idb.offlineQueue.delete(item.id);
+      }
+      console.log(`Synced ${queued.length} offline sessions`);
+    });
+  }
+}
+```
+
+**Offline Experience:**
+- ✅ Practice vocabulary (JSON still works)
+- ✅ Practice RS/ASQ/WFD (JSON still works)
+- ✅ Use TTS (browser API, no internet needed)
+- ✅ Track progress locally (IndexedDB)
+- ⚠️ AI chat requires internet (Gemini API)
+- 🔄 Auto-sync when reconnected
+
+**No Regression:** Offline practice still works as before! Database is additive only.
 
 ---
 
@@ -1527,7 +1626,7 @@ if (FEATURES.sessionTracking) {
 - ✅ Better learning outcomes
 - ✅ Competitive advantage
 - ✅ Scalable architecture
-- ✅ Cost-effective (mostly free tier)
+- ✅ **Zero cost forever** (user-provided API keys + free tier)
 
 **Risks mitigated:**
 - ✅ Hybrid storage (JSON + DB)
@@ -1535,12 +1634,298 @@ if (FEATURES.sessionTracking) {
 - ✅ Feature flags for gradual rollout
 - ✅ Offline-first still works
 - ✅ Performance maintained
+- ✅ No centralized API costs (user keys)
 
 **Next steps:**
 1. Review & approve architecture
 2. Create Supabase migrations
 3. Start Phase 1: Database setup
 4. Iterate with user feedback
+
+---
+
+## Implementation Considerations & Recommendations
+
+### Critical Additions Needed
+
+#### 1. Speech Recognition Integration
+**Current Gap:** Plan has PronunciationScoring but missing Web Speech API details
+
+**Add to Phase 2:**
+```typescript
+// src/services/speechRecognition.ts
+class SpeechRecognitionService {
+  private recognition: SpeechRecognition;
+
+  async transcribeAudio(audioBlob: Blob): Promise<{
+    transcription: string;
+    confidence: number;
+    audioUrl?: string;
+  }> {
+    // Web Speech API integration
+    const text = await this.recognition.recognize(audioBlob);
+
+    // Store audio blob in Supabase Storage (optional)
+    const audioUrl = await this.uploadAudio(audioBlob);
+
+    return {
+      transcription: text,
+      confidence: this.recognition.confidence,
+      audioUrl,
+    };
+  }
+}
+```
+
+**Database Addition:**
+```sql
+-- Add to session_items table
+ALTER TABLE session_items ADD COLUMN audio_blob_url TEXT;
+ALTER TABLE session_items ADD COLUMN transcription_confidence DECIMAL(5,2);
+```
+
+---
+
+#### 2. API Key Security & Onboarding
+**Add to Phase 1: User Onboarding Flow**
+
+```typescript
+// src/components/onboarding/GeminiKeySetup.tsx
+const GeminiKeySetup: React.FC = () => {
+  const [apiKey, setApiKey] = useState('');
+
+  const handleSave = async () => {
+    // Validate key with test request
+    const isValid = await testGeminiKey(apiKey);
+
+    if (isValid) {
+      // Encrypt and store
+      const encrypted = await encrypt(apiKey, userPassword);
+      localStorage.setItem('gemini_key_encrypted', encrypted);
+
+      // Never send to backend
+      console.log('✅ API key stored locally only');
+    }
+  };
+
+  return (
+    <Card>
+      <Heading>Setup Your Free Gemini API Key</Heading>
+      <Text>
+        1. Visit <Link href="https://aistudio.google.com/apikey">Google AI Studio</Link>
+        2. Create a free API key (1,500 requests/day)
+        3. Paste it below (stored securely in your browser only)
+      </Text>
+      <TextField.Root value={apiKey} onChange={e => setApiKey(e.target.value)} />
+      <Button onClick={handleSave}>Save Key</Button>
+    </Card>
+  );
+};
+```
+
+---
+
+#### 3. Testing Strategy
+**Missing from plan - Add comprehensive testing**
+
+```typescript
+// tests/ai-context.test.ts
+describe('AI Context Builder', () => {
+  it('builds context for RS task', async () => {
+    const context = await buildAIContext('rs', userId);
+    expect(context.taskType).toBe('rs');
+    expect(context.recentErrors).toHaveLength(5);
+  });
+
+  it('respects retention policy', async () => {
+    // Test 90-day deletion
+    await createOldSession(userId, 100); // 100 days ago
+    const sessions = await getRecentSessions(userId);
+    expect(sessions).toHaveLength(0);
+  });
+});
+
+// tests/e2e/practice-flow.test.ts
+describe('Practice Flow E2E', () => {
+  it('completes RS session with AI help', async () => {
+    await loginUser();
+    await startPractice('rs');
+    await practiceItem('The weather is nice today');
+    await askAI('How do I improve my rhythm?');
+    await completePractice();
+
+    // Verify database tracking
+    const session = await getLatestSession(userId);
+    expect(session.items_attempted).toBe(1);
+  });
+});
+```
+
+**Add to Phase 1:**
+- Unit tests for context builder
+- Integration tests for session tracking
+- E2E tests for practice flows
+
+---
+
+#### 4. Performance Optimizations
+**Add caching layer to reduce database queries**
+
+```typescript
+// src/services/cache.ts
+class ContextCache {
+  private cache = new Map<string, { data: any; expiry: number }>();
+
+  async get(key: string): Promise<any | null> {
+    const cached = this.cache.get(key);
+    if (cached && Date.now() < cached.expiry) {
+      return cached.data;
+    }
+    return null;
+  }
+
+  async set(key: string, data: any, ttlSeconds: number) {
+    this.cache.set(key, {
+      data,
+      expiry: Date.now() + ttlSeconds * 1000,
+    });
+  }
+}
+
+// Usage in AI context builder
+const cachedProfile = await contextCache.get(`profile:${userId}`);
+if (!cachedProfile) {
+  const profile = await supabase.from('learner_profiles').select('*').eq('user_id', userId).single();
+  await contextCache.set(`profile:${userId}`, profile, 300); // 5 minutes
+}
+```
+
+**Cache Strategy:**
+- Learner profile: 5 minutes
+- Recent sessions: 2 minutes
+- Weak areas: 10 minutes
+- Clear on updates
+
+---
+
+#### 5. Monitoring & Observability
+**Add error tracking and performance monitoring**
+
+```typescript
+// src/services/monitoring.ts
+import * as Sentry from '@sentry/browser';
+
+// Error tracking
+Sentry.init({
+  dsn: process.env.VITE_SENTRY_DSN,
+  environment: process.env.NODE_ENV,
+});
+
+// AI response quality tracking
+const trackAIQuality = (response: string, userFeedback: 'helpful' | 'not_helpful') => {
+  analytics.track('ai_response_quality', {
+    responseLength: response.length,
+    feedback: userFeedback,
+    timestamp: Date.now(),
+  });
+};
+
+// Performance monitoring
+const trackPerformance = (metric: string, duration: number) => {
+  if (duration > 1000) {
+    console.warn(`⚠️ Slow ${metric}: ${duration}ms`);
+  }
+};
+```
+
+---
+
+#### 6. Data Migration Strategy
+**Add script to migrate existing localStorage progress**
+
+```typescript
+// scripts/migrate-localStorage-to-supabase.ts
+async function migrateUserData(userId: string) {
+  // 1. Read localStorage
+  const localProgress = JSON.parse(localStorage.getItem('practice_progress') || '{}');
+
+  // 2. Transform to database schema
+  const sessions = localProgress.sessions.map(s => ({
+    user_id: userId,
+    task_type: s.mode,
+    started_at: new Date(s.timestamp),
+    items_attempted: s.items.length,
+    items_correct: s.items.filter(i => i.correct).length,
+  }));
+
+  // 3. Bulk insert
+  await supabase.from('practice_sessions').insert(sessions);
+
+  // 4. Keep localStorage as backup
+  console.log(`✅ Migrated ${sessions.length} sessions`);
+}
+```
+
+---
+
+#### 7. Timeline Buffer
+**Original: 14 weeks**
+**Recommended: 17 weeks (add 20% buffer)**
+
+Why:
+- Unforeseen integration issues
+- User testing & feedback iterations
+- Bug fixes & refinements
+- Speech recognition complexity
+- Mobile responsiveness testing
+
+**Adjusted Timeline:**
+- Phase 1: Database (2 weeks → 3 weeks)
+- Phase 2: AI Context (3 weeks → 3 weeks)
+- Phase 3: Weak Areas (2 weeks → 2 weeks)
+- Phase 4: Proactive AI (2 weeks → 3 weeks)
+- Phase 5: UI Redesign (3 weeks → 4 weeks)
+- Phase 6: Mock Exams (2 weeks → 2 weeks)
+- **Total: 17 weeks**
+
+---
+
+#### 8. Mobile Responsiveness
+**Missing from plan - crucial for PTE learners on-the-go**
+
+Add to Phase 5:
+```css
+/* Mobile-first AI sidebar */
+@media (max-width: 768px) {
+  .ai-sidebar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50vh;
+    transform: translateY(calc(100% - 60px)); /* Collapsed by default */
+  }
+
+  .ai-sidebar.expanded {
+    transform: translateY(0);
+  }
+}
+```
+
+---
+
+### Final Recommendation: 10/10 ✅
+
+With the clarifications above, this architecture is **excellent** and ready to implement!
+
+**Priority Phases:**
+1. **Phase 1 (CRITICAL)**: Database + Session Tracking → Enables everything else
+2. **Phase 2 (HIGH VALUE)**: AI Context → Main differentiator
+3. **Phase 3 (GAME CHANGER)**: Weak Area Detection → Personalization
+4. **Phase 4 (POLISH)**: Proactive AI → Magic moments
+5. **Phase 5 (UX)**: UI Redesign → Professional finish
+6. **Phase 6 (NICE TO HAVE)**: Mock Exams → Complete experience
+
+**Killer Feature:** Context-aware AI that understands user's learning journey + Zero cost forever
 
 ---
 

@@ -47,7 +47,10 @@
       "Bash(ss:*)",
       "Bash(npm update:*)",
       "Bash(chmod:*)",
-      "Bash(node test-gemini-api.js:*)"
+      "Bash(node test-gemini-api.js:*)",
+      "Bash(git log:*)",
+      "Bash(npm test:*)",
+      "Bash(git reset:*)"
     ],
     "deny": [],
     "ask": []

@@ -85,6 +85,7 @@ export interface SettingsState {
 
   // Audio settings
   autoPlay: boolean;
+  autoSwitchBooks: boolean;
   showPhonetic: boolean;
   ttsRate: number;
   ttsVoice: string | null;

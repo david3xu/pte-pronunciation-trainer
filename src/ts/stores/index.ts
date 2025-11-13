@@ -69,7 +69,7 @@ export const useAppStore = create<AppState>()(
             autoPlayEnabled: false,
             isPaused: false,
             currentIndex: 0,
-            repeatMode: false,
+            repeatMode: true, // Default ON - loops back to start after reaching end
             playbackSpeed: 1.0,
             volume: 1.0,
             setPlaying: (isPlaying: boolean) => set((state) => ({ audio: { ...state.audio, isPlaying } })),
@@ -133,7 +133,7 @@ export const useAppStore = create<AppState>()(
             practiceMode: null,
             vocabularyBook: 'pte-fib-listening',
             datasetId: 'pte-fib-listening',
-            autoPlay: false,
+            autoPlay: true, // Default ON - automatically plays audio when vocabulary loads
             showPhonetic: true,
             ttsRate: 1.0,
             ttsVoice: null,
@@ -154,7 +154,7 @@ export const useAppStore = create<AppState>()(
                 practiceMode: null,
                 vocabularyBook: 'pte-fib-listening',
                 datasetId: 'pte-fib-listening',
-                autoPlay: false,
+                autoPlay: true, // Default ON
                 showPhonetic: true,
                 ttsRate: 1.0,
                 ttsVoice: null,

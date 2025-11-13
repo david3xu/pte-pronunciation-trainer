@@ -15,10 +15,16 @@ import {
   LightningBoltIcon,
 } from '@radix-ui/react-icons';
 import { useAppStore } from './ts/stores';
-import { WordCard, ProgressTracker } from './components/practice';
+import {
+  WordCard,
+  ProgressDashboard,
+  RSInterface,
+  ASQInterface,
+  WFDInterface
+} from './components/practice';
 import { AudioControls } from './components/audio';
 import { SettingsPanel } from './components/settings';
-import { AITutorChat, PronunciationScoring, WeakAreasDashboard, InterventionModal } from './components/ai';
+import { AITutorChat, PronunciationScoring, WeakAreasDashboard, InterventionModal, AISidebar } from './components/ai';
 import { WordCardSkeleton } from './components/shared';
 import DataMigrationModal from './components/migration/DataMigrationModal';
 import LearnerProfileModal from './components/profile/LearnerProfileModal';
@@ -240,6 +246,50 @@ const App: React.FC = () => {
     setItemsCompletedInSession((prev) => prev + 1);
   };
 
+  // Determine which interface to render based on vocabulary mode
+  const getPracticeInterfaceType = (): 'vocabulary' | 'rs' | 'asq' | 'wfd' => {
+    const mode = vocabulary.mode.toLowerCase();
+
+    if (mode.includes('repeat-sentence') || mode.includes('pte-rs-segments')) {
+      return 'rs';
+    } else if (mode.includes('answer-short-question')) {
+      return 'asq';
+    } else if (mode.includes('write-from-dictation')) {
+      return 'wfd';
+    }
+
+    return 'vocabulary';
+  };
+
+  const interfaceType = getPracticeInterfaceType();
+
+  // Navigation handlers for task-specific interfaces
+  const handleNext = () => {
+    const { navigateNext } = useAppStore.getState().audio;
+    navigateNext();
+
+    // Update current item based on new index
+    const nextIndex = useAppStore.getState().progress.currentIndex + 1;
+    const { filteredDataset, setCurrentItem } = useAppStore.getState().vocabulary;
+    const nextItem = filteredDataset[nextIndex];
+    if (nextItem) {
+      setCurrentItem(nextItem);
+    }
+  };
+
+  const handlePrevious = () => {
+    const { navigatePrev } = useAppStore.getState().audio;
+    navigatePrev();
+
+    // Update current item based on new index
+    const prevIndex = Math.max(0, useAppStore.getState().progress.currentIndex - 1);
+    const { filteredDataset, setCurrentItem } = useAppStore.getState().vocabulary;
+    const prevItem = filteredDataset[prevIndex];
+    if (prevItem) {
+      setCurrentItem(prevItem);
+    }
+  };
+
   return (
     <Theme
       appearance="dark"
@@ -342,17 +392,29 @@ const App: React.FC = () => {
           />
           {showProgress && (
             <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 animate-in p-4">
-              <div className="w-full max-w-4xl max-h-[95vh] overflow-y-auto bg-slate-800 rounded-lg p-6">
+              <div className="w-full max-w-6xl max-h-[95vh] overflow-y-auto bg-slate-800 rounded-lg p-6">
                 <Flex justify="between" align="center" mb="4">
-                  <h2 className="text-2xl font-bold text-white">Your Progress</h2>
+                  <h2 className="text-2xl font-bold text-white">Progress Dashboard</h2>
                   <Button variant="ghost" onClick={() => setShowProgress(false)}>
                     ✕
                   </Button>
                 </Flex>
-                <ProgressTracker />
+                <ProgressDashboard />
               </div>
             </div>
           )}
+
+          {/* AI Sidebar - Always visible */}
+          <AISidebar
+            onOpenChat={() => setShowAITutor(true)}
+            onOpenScoring={() => setShowPronunciationScoring(true)}
+            onOpenInsights={() => setShowWeakAreas(true)}
+            sessionStats={{
+              itemsCompleted: useAppStore.getState().progress.itemsCompleted,
+              accuracy: useAppStore.getState().progress.accuracy,
+              currentStreak: 0, // TODO: Add currentStreak to progress store
+            }}
+          />
 
           {/* Main Content - Single Page, No Tabs */}
           {/* 80/20 Layout: 80% learning area, 20% controls */}
@@ -362,11 +424,40 @@ const App: React.FC = () => {
               {isLoadingVocabulary ? (
                 <WordCardSkeleton />
               ) : currentItem ? (
-                <WordCard
-                  item={currentItem}
-                  sessionManager={sessionManager}
-                  onItemComplete={handleItemComplete}
-                />
+                <>
+                  {/* Render appropriate interface based on practice mode */}
+                  {interfaceType === 'rs' && (
+                    <RSInterface
+                      item={currentItem as any}
+                      onNext={handleNext}
+                      onPrevious={handlePrevious}
+                      onComplete={handleItemComplete}
+                    />
+                  )}
+                  {interfaceType === 'asq' && (
+                    <ASQInterface
+                      item={currentItem as any}
+                      onNext={handleNext}
+                      onPrevious={handlePrevious}
+                      onComplete={handleItemComplete}
+                    />
+                  )}
+                  {interfaceType === 'wfd' && (
+                    <WFDInterface
+                      item={currentItem as any}
+                      onNext={handleNext}
+                      onPrevious={handlePrevious}
+                      onComplete={handleItemComplete}
+                    />
+                  )}
+                  {interfaceType === 'vocabulary' && (
+                    <WordCard
+                      item={currentItem}
+                      sessionManager={sessionManager}
+                      onItemComplete={handleItemComplete}
+                    />
+                  )}
+                </>
               ) : (
                 <Flex
                   align="center"
@@ -386,8 +477,8 @@ const App: React.FC = () => {
               )}
             </div>
 
-            {/* Audio Controls - 20% essential controls */}
-            <AudioControls />
+            {/* Audio Controls - 20% essential controls (only for vocabulary mode) */}
+            {interfaceType === 'vocabulary' && <AudioControls />}
           </div>
 
           {/* Footer - Minimal */}

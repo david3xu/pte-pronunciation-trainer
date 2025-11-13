@@ -10,10 +10,11 @@
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import { AI_CONFIG, LIMITS, getGeminiApiKey } from './config';
 
-// Initialize Gemini client
+// Initialize Gemini client using centralized config
 const getGeminiClient = () => {
-  const apiKey = process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY;
+  const apiKey = getGeminiApiKey();
 
   if (!apiKey) {
     return null;
@@ -90,8 +91,8 @@ ${context?.word ? `Current word context: "${context.word}" (${context.difficulty
 
     // Add conversation history if provided
     if (conversationHistory && conversationHistory.length > 0) {
-      // Limit history to last 10 messages to avoid token limits
-      const recentHistory = conversationHistory.slice(-10);
+      // Limit history using centralized config to avoid token limits
+      const recentHistory = conversationHistory.slice(-LIMITS.conversationHistory);
       fullPrompt += '\nConversation history:\n';
       recentHistory.forEach(msg => {
         fullPrompt += `${msg.role === 'user' ? 'Student' : 'Tutor'}: ${msg.content}\n`;
@@ -102,8 +103,16 @@ ${context?.word ? `Current word context: "${context.word}" (${context.difficulty
     // Add current question
     fullPrompt += `Student: ${question}\n\nTutor:`;
 
-    // Call Gemini API - using gemini-2.5-flash (standardized across all routes)
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
+    // Call Gemini API using centralized config
+    const model = genAI.getGenerativeModel({
+      model: AI_CONFIG.gemini.defaultModel,
+      generationConfig: {
+        maxOutputTokens: AI_CONFIG.gemini.maxTokens,
+        temperature: AI_CONFIG.gemini.temperature,
+        topP: AI_CONFIG.gemini.topP,
+        topK: AI_CONFIG.gemini.topK,
+      },
+    });
     const result = await model.generateContent(fullPrompt);
     const response = await result.response;
     const answer = response.text() || 'I apologize, but I couldn\'t generate a response. Please try again.';

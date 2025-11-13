@@ -13,17 +13,22 @@ import { useAppStore } from '../../ts/stores';
 import type { VocabularyTerm, PracticeItem } from '../../types/dataset.types';
 import { isPremiumTTSAvailable } from '../../ts/audio/pollyService';
 import { ttsEngine } from '../../ts/audio/TTSEngine';
+import type { SessionManager } from '../../services/session/sessionManager';
+import type { ItemType } from '../../types/database';
 
 interface WordCardProps {
   item: VocabularyTerm | PracticeItem;
+  sessionManager?: SessionManager;
 }
 
-const WordCard: React.FC<WordCardProps> = ({ item }) => {
+const WordCard: React.FC<WordCardProps> = ({ item, sessionManager }) => {
   const ttsState = useAppStore((state) => state.tts);
   const [usePremiumTTS, setUsePremiumTTS] = useState(false);
   const [premiumVoiceId, setPremiumVoiceId] = useState('Joanna');
   const [isPlayingPremium, setIsPlayingPremium] = useState(false);
   const [showAdvancedOptions, setShowAdvancedOptions] = useState(false);
+  const [playCount, setPlayCount] = useState(0);
+  const [startTime] = useState(Date.now());
 
   const premiumAvailable = isPremiumTTSAvailable();
 
@@ -71,6 +76,10 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
   const handleSpeak = async (_mode: 'word' | 'sentence' | 'question' = 'word', accent?: 'british' | 'american') => {
     console.log('[WordCard] handleSpeak called:', { displayText, accent, usePremiumTTS, premiumAvailable });
 
+    // Track play count for session
+    const newPlayCount = playCount + 1;
+    setPlayCount(newPlayCount);
+
     if (usePremiumTTS && premiumAvailable) {
       // Use premium AWS Polly
       await handlePremiumSpeak(accent);
@@ -82,6 +91,25 @@ const WordCard: React.FC<WordCardProps> = ({ item }) => {
         console.log('[WordCard] ttsEngine.pronounceText completed');
       } catch (error) {
         console.error('[WordCard] TTS error:', error);
+      }
+    }
+
+    // Record item interaction in session
+    if (sessionManager) {
+      try {
+        const timeSpent = Math.floor((Date.now() - startTime) / 1000);
+        const itemType: ItemType = isVocabularyTerm ? 'word' : isPracticeSentence ? 'sentence' : 'question';
+
+        await sessionManager.recordItem({
+          item_id: (item as any).id || `${displayText}-${Date.now()}`,
+          item_type: itemType,
+          item_text: displayText,
+          attempts: newPlayCount,
+          time_spent_sec: timeSpent,
+        });
+        console.log('[WordCard] Recorded item interaction');
+      } catch (error) {
+        console.error('[WordCard] Failed to record item:', error);
       }
     }
   };

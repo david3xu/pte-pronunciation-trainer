@@ -21,6 +21,8 @@ import { AITutorChat, PronunciationScoring } from './components/ai';
 import { WordCardSkeleton } from './components/shared';
 import DataMigrationModal from './components/migration/DataMigrationModal';
 import { hasDataToMigrate } from './services/migration/migrationService';
+import { getSessionManager } from './services/session/sessionManager';
+import type { TaskType } from './types/database';
 import './css/tailwind.css';
 
 const App: React.FC = () => {
@@ -35,6 +37,10 @@ const App: React.FC = () => {
   const [showPronunciationScoring, setShowPronunciationScoring] = useState(false);
   const [showProgress, setShowProgress] = useState(false);
   const [showMigration, setShowMigration] = useState(false);
+
+  // Session tracking
+  const [sessionManager] = useState(() => getSessionManager());
+  const [currentSessionId, setCurrentSessionId] = useState<string | null>(null);
 
   // Initialize app on mount
   useEffect(() => {
@@ -99,6 +105,25 @@ const App: React.FC = () => {
           vocabulary.setCurrentItem(items[0]);
           console.log('Current item after set:', useAppStore.getState().vocabulary.currentItem);
         }
+
+        // Start practice session for tracking
+        try {
+          const taskType: TaskType = 'vocabulary'; // Default to vocabulary
+          const sessionId = await sessionManager.startSession(
+            taskType,
+            vocabularyBook,
+            'practice',
+            {
+              autoPlay: useAppStore.getState().settings.autoPlay,
+              repeatMode: useAppStore.getState().audio.repeatMode,
+            }
+          );
+          setCurrentSessionId(sessionId);
+          console.log('[App] Started practice session:', sessionId);
+        } catch (error) {
+          console.error('[App] Failed to start session:', error);
+          // Non-blocking: app continues to work even if session tracking fails
+        }
       } catch (error) {
         console.error('Error loading vocabulary:', error);
         vocabulary.setLoading(false);
@@ -108,6 +133,16 @@ const App: React.FC = () => {
     };
 
     loadInitialVocabulary();
+
+    // Cleanup: complete session when app unmounts
+    return () => {
+      if (currentSessionId) {
+        console.log('[App] Completing session on unmount:', currentSessionId);
+        sessionManager.completeSession().catch((err) => {
+          console.error('[App] Failed to complete session:', err);
+        });
+      }
+    };
   }, []);
 
   return (
@@ -204,7 +239,7 @@ const App: React.FC = () => {
               {isLoadingVocabulary ? (
                 <WordCardSkeleton />
               ) : currentItem ? (
-                <WordCard item={currentItem} />
+                <WordCard item={currentItem} sessionManager={sessionManager} />
               ) : (
                 <Flex
                   align="center"

@@ -66,7 +66,7 @@ export const useAppStore = create<AppState>()(
           audio: {
             isPlaying: false,
             isAutoPlaying: false,
-            autoPlayEnabled: false,
+            autoPlayEnabled: true, // Default ON - auto-play toggle enabled in AudioControls
             isPaused: false,
             currentIndex: 0,
             repeatMode: true, // Default ON - loops back to start after reaching end

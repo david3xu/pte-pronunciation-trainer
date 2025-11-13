@@ -102,8 +102,8 @@ ${context?.word ? `Current word context: "${context.word}" (${context.difficulty
     // Add current question
     fullPrompt += `Student: ${question}\n\nTutor:`;
 
-    // Call Gemini API
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    // Call Gemini API - using gemini-2.5-flash (standardized across all routes)
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
     const result = await model.generateContent(fullPrompt);
     const response = await result.response;
     const answer = response.text() || 'I apologize, but I couldn\'t generate a response. Please try again.';

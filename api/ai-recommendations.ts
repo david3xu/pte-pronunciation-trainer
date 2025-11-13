@@ -96,8 +96,8 @@ Return ONLY a JSON array of 5 recommendations in this exact format:
 
 Return only valid JSON array, no additional text.`;
 
-    // Call Gemini API
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    // Call Gemini API - using gemini-2.5-flash (standardized across all routes)
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
     const result = await model.generateContent(prompt);
     const response = await result.response;
     const responseText = response.text();

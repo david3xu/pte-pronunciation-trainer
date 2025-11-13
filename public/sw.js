@@ -1,10 +1,9 @@
-// Service Worker for Background Operation and PWA Functionality
-// Service Worker for PTE Pronunciation Trainer
-// Handles offline caching and background sync
+// Service Worker for PTE Pronunciation Trainer (React App)
+// Handles offline caching and PWA functionality
+// Updated for React + Vite build
 
-// Service Worker for PTE Vocabulary Trainer
-// Version 66 - Force redeploy with debug logging
-const CACHE_VERSION = 'v66';
+// Version 67 - React/Vite compatibility update
+const CACHE_VERSION = 'v67';
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode
@@ -14,30 +13,11 @@ const isDevelopment = self.location.hostname === 'localhost' ||
 
 // Cache different files based on environment
 const urlsToCache = isDevelopment ? [
-  // Development mode - cache individual source files
+  // Development mode - Vite serves files dynamically
+  // Only cache essential static files
   '/',
   '/index.html',
-  '/src/css/variables.css',
-  '/src/css/animations.css',
-  '/src/css/components.css',
-  '/src/css/style.css',
-  '/src/js/shared/Config.js',
-  '/src/js/shared/DataSchema.js',
-  '/src/js/utils/EventBus.js',
-  '/src/js/utils/Storage.js',
-  '/src/js/utils/CacheMigration.js',
-  '/src/js/core/SettingsModule.js',
-  '/src/js/core/PTEVocabularyManager.js',
-  '/src/js/core/ProgressTracker.js',
-  '/src/js/data/extractors/PTETermsExtractor.js',
-  '/src/js/data/DatasetManager.js', // Phase 2: Dataset management
-  '/src/js/audio/TTSEngine.js',
-  '/src/js/audio/VoiceSelector.js',
-  '/src/js/audio/AudioControls.js',
-  '/src/js/ui/UIController.js',
-  '/src/js/ui/SettingsPanel.js',
-  '/src/js/core/PTEApp.js',
-  // Vocabulary datasets (10 books)
+  // Vocabulary datasets (14 books) - these are static JSON files
   '/data/processed/pte-fib-listening-dataset.json',
   '/data/processed/pte-beginner-vocabulary.json',
   '/data/processed/pte-intermediate-vocabulary.json',
@@ -46,38 +26,22 @@ const urlsToCache = isDevelopment ? [
   '/data/processed/pte-rs-vocabulary.json',
   '/data/processed/pte-must-know-vocabulary.json',
   '/data/processed/pte-wfd-vocabulary.json',
+  '/data/processed/pte-rs-wfd-vocabulary.json',
   '/data/processed/pte-reading-fib-vocabulary.json',
   '/data/processed/pte-reading-fib-drag-vocabulary.json',
+  '/data/processed/pte-asq-answers-vocabulary.json',
+  '/data/processed/pte-high-frequency-vocabulary.json',
+  '/data/processed/pte-rs-core-vocabulary.json',
   // Phase 2: PTE practice datasets
   '/data/processed/pte-repeat-sentence-dataset.json',
   '/data/processed/pte-answer-short-question-dataset.json',
   '/data/processed/pte-write-from-dictation-dataset.json',
   '/manifest.json'
 ] : [
-  // Production mode - cache existing files only
+  // Production mode - cache Vite build output + JSON datasets
   '/',
   '/index.html',
-  '/src/css/variables.css',
-  '/src/css/animations.css',
-  '/src/css/components.css',
-  '/src/css/style.css',
-  '/src/js/shared/Config.js',
-  '/src/js/shared/DataSchema.js',
-  '/src/js/utils/EventBus.js',
-  '/src/js/utils/Storage.js',
-  '/src/js/utils/CacheMigration.js',
-  '/src/js/core/SettingsModule.js',
-  '/src/js/core/PTEVocabularyManager.js',
-  '/src/js/core/ProgressTracker.js',
-  '/src/js/data/extractors/PTETermsExtractor.js',
-  '/src/js/data/DatasetManager.js', // Phase 2: Dataset management
-  '/src/js/audio/TTSEngine.js',
-  '/src/js/audio/VoiceSelector.js',
-  '/src/js/audio/AudioControls.js',
-  '/src/js/ui/UIController.js',
-  '/src/js/ui/SettingsPanel.js',
-  '/src/js/core/PTEApp.js',
-  // Vocabulary datasets (11 books)
+  // Vocabulary datasets (14 books) - these are always needed
   '/data/processed/pte-fib-listening-dataset.json',
   '/data/processed/pte-beginner-vocabulary.json',
   '/data/processed/pte-intermediate-vocabulary.json',
@@ -86,10 +50,13 @@ const urlsToCache = isDevelopment ? [
   '/data/processed/pte-rs-vocabulary.json',
   '/data/processed/pte-must-know-vocabulary.json',
   '/data/processed/pte-wfd-vocabulary.json',
+  '/data/processed/pte-rs-wfd-vocabulary.json',
   '/data/processed/pte-reading-fib-vocabulary.json',
   '/data/processed/pte-reading-fib-drag-vocabulary.json',
   '/data/processed/pte-asq-answers-vocabulary.json',
-  // NEW: PTE practice datasets (Phase 2)
+  '/data/processed/pte-high-frequency-vocabulary.json',
+  '/data/processed/pte-rs-core-vocabulary.json',
+  // PTE practice datasets (3 modes)
   '/data/processed/pte-repeat-sentence-dataset.json',
   '/data/processed/pte-answer-short-question-dataset.json',
   '/data/processed/pte-write-from-dictation-dataset.json',

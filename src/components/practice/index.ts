@@ -5,3 +5,4 @@ export { default as PracticeModeSelector } from './PracticeModeSelector';
 export { default as DifficultyFilter } from './DifficultyFilter';
 export { default as RSInterface } from './RSInterface';
 export { default as ASQInterface } from './ASQInterface';
+export { default as WFDInterface } from './WFDInterface';

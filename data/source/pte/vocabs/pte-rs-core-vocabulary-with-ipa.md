@@ -180,7 +180,7 @@ This vocabulary book contains 777 core terms and phrases extracted from PTE Repe
 546. the trial experiment | /ðə ˈtraɪəl ɪkˈsperɪmənt/ — sounds like **thuh TRY-uhl ik-SPER-ih-muhnt**
 547. the interests of the issue | /ði ˈɪntrəsts əv ði ˈɪʃuː/ — sounds like **thee IN-trusts uhv thee ISH-oo**
 548. the jurisdiction clause | /ðə ˌdʒʊrɪsˈdɪkʃən klɔːz/ — sounds like **thuh joor-is-DIK-shuhn klawz**
-549. the Unitied Kingdom | /ðə juˈnaɪtɪd ˈkɪŋdəm/ — sounds like **thuh yoo-NY-tid KING-duhm**
+549. the United Kingdom | /ðə juˈnaɪtɪd ˈkɪŋdəm/ — sounds like **thuh yoo-NY-tid KING-duhm**
 550. a constitutional monarchy | /ə ˌkɒnstɪˈtuːʃənəl ˈmɒnərki/ — sounds like **uh kon-stih-TOO-shuh-nuhl MON-er-kee**
 551. parliamentary democracy | /ˌpɑːrləˈmentəri dɪˈmɒkrəsi/ — sounds like **pahr-luh-MEN-tuh-ree dih-MOK-ruh-see**
 552. a different type of assessment | /ə ˈdɪfərənt taɪp əv əˈsesmənt/ — sounds like **uh DIF-er-uhnt typ uhv uh-SES-muhnt**

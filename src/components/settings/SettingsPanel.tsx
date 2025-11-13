@@ -22,6 +22,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
   const vocabularyBook = useAppStore((state) => state.settings.vocabularyBook);
   const difficultyFilter = useAppStore((state) => state.settings.difficultyFilter);
   const autoPlay = useAppStore((state) => state.settings.autoPlay);
+  const autoSwitchBooks = useAppStore((state) => state.settings.autoSwitchBooks);
   const showPhonetic = useAppStore((state) => state.settings.showPhonetic);
   const ttsRate = useAppStore((state) => state.settings.ttsRate);
   const ttsVoice = useAppStore((state) => state.settings.ttsVoice);
@@ -291,6 +292,31 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                   }
                 />
               </Flex>
+
+              {/* Auto-switch books (only for vocabulary mode) */}
+              {practiceType === 'vocabulary' && (
+                <Flex direction="column" gap="2">
+                  <Flex justify="between" align="center">
+                    <Flex direction="column" gap="1">
+                      <Text size="3">Auto-switch to next book</Text>
+                      <Text size="1" color="gray">
+                        Automatically load next vocabulary book when current finishes
+                      </Text>
+                    </Flex>
+                    <Switch
+                      checked={autoSwitchBooks}
+                      onCheckedChange={(checked) =>
+                        updateSetting('autoSwitchBooks', checked)
+                      }
+                    />
+                  </Flex>
+                  {autoSwitchBooks && (
+                    <Text size="1" color="blue">
+                      ℹ️ Will cycle through all 14 vocabulary books in order. Use Repeat Mode to control looping.
+                    </Text>
+                  )}
+                </Flex>
+              )}
             </Flex>
           </Tabs.Content>
 

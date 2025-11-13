@@ -19,11 +19,95 @@ import { useAppStore } from '../../ts/stores';
 import { ttsEngine } from '../../ts/audio/TTSEngine';
 import { appConfig } from '../../ts/shared/Config';
 
+// Vocabulary books in order for auto-switch feature
+const VOCABULARY_BOOKS = [
+  'pte-fib-listening',
+  'pte-beginner',
+  'pte-intermediate',
+  'pte-advanced',
+  'pte-ra',
+  'pte-rs-vocab',
+  'pte-must-know',
+  'pte-wfd-vocab',
+  'pte-rs-wfd-vocab',
+  'pte-reading-fib',
+  'pte-reading-fib-drag',
+  'pte-asq-answers',
+  'pte-high-frequency',
+  'pte-rs-core',
+];
+
 const AudioControls: React.FC = () => {
   const audio = useAppStore((state) => state.audio);
   const currentItem = useAppStore((state) => state.vocabulary.currentItem);
   const vocabulary = useAppStore((state) => state.vocabulary);
+  const settings = useAppStore((state) => state.settings);
   const autoPlayRef = useRef<boolean>(false);
+
+  // Helper function to load next vocabulary book
+  const loadNextBook = async (bookId: string) => {
+    console.log('[AudioControls] Loading next book:', bookId);
+    vocabulary.setLoading(true);
+
+    try {
+      const dataPathMap: Record<string, string> = {
+        'pte-fib-listening': '/data/processed/pte-fib-listening-dataset.json',
+        'pte-beginner': '/data/processed/pte-beginner-vocabulary.json',
+        'pte-intermediate': '/data/processed/pte-intermediate-vocabulary.json',
+        'pte-advanced': '/data/processed/pte-advanced-vocabulary.json',
+        'pte-ra': '/data/processed/pte-ra-vocabulary.json',
+        'pte-rs-vocab': '/data/processed/pte-rs-vocabulary.json',
+        'pte-must-know': '/data/processed/pte-must-know-vocabulary.json',
+        'pte-wfd-vocab': '/data/processed/pte-wfd-vocabulary.json',
+        'pte-rs-wfd-vocab': '/data/processed/pte-rs-wfd-vocabulary.json',
+        'pte-reading-fib': '/data/processed/pte-reading-fib-vocabulary.json',
+        'pte-reading-fib-drag': '/data/processed/pte-reading-fib-drag-vocabulary.json',
+        'pte-asq-answers': '/data/processed/pte-asq-answers-vocabulary.json',
+        'pte-high-frequency': '/data/processed/pte-high-frequency-vocabulary.json',
+        'pte-rs-core': '/data/processed/pte-rs-core-vocabulary.json',
+      };
+
+      const dataPath = dataPathMap[bookId] || `/data/processed/${bookId}-vocabulary.json`;
+      const response = await fetch(dataPath);
+
+      if (!response.ok) {
+        throw new Error(`Failed to load vocabulary: ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      const items = data.vocabulary || [];
+
+      // Update settings with new book
+      settings.updateSetting('vocabularyBook', bookId);
+
+      // Set dataset and apply current difficulty filter
+      vocabulary.setDataset(items, bookId);
+      if (settings.difficultyFilter !== 'all') {
+        vocabulary.filterByDifficulty(settings.difficultyFilter);
+      }
+
+      // Get the filtered dataset
+      const filteredDataset = settings.difficultyFilter === 'all'
+        ? items
+        : useAppStore.getState().vocabulary.filteredDataset;
+
+      // Set first item and reset index
+      if (filteredDataset.length > 0) {
+        audio.setCurrentIndex(0);
+        vocabulary.setCurrentItem(filteredDataset[0]);
+        console.log(`[AudioControls] Loaded ${filteredDataset.length} items from ${bookId}`);
+      } else {
+        console.warn(`[AudioControls] No items in ${bookId} after filtering`);
+        audio.stopAutoPlay();
+      }
+
+      vocabulary.setLoading(false);
+    } catch (error) {
+      console.error('[AudioControls] Error loading next book:', error);
+      vocabulary.setLoading(false);
+      audio.stopAutoPlay();
+    }
+  };
 
   // Auto-play loop effect
   useEffect(() => {
@@ -71,9 +155,58 @@ const AudioControls: React.FC = () => {
               }
             } else {
               // Reached end of dataset
-              if (audio.repeatMode) {
-                // Repeat mode enabled: loop back to start
-                console.log('[AudioControls] Repeat mode ON - looping back to start');
+              // Check if auto-switch books is enabled (vocabulary mode only)
+              const shouldAutoSwitch = settings.practiceType === 'vocabulary' && settings.autoSwitchBooks;
+
+              if (shouldAutoSwitch) {
+                // Auto-switch to next vocabulary book
+                const currentBookId = settings.vocabularyBook;
+                const currentIndex = VOCABULARY_BOOKS.indexOf(currentBookId);
+
+                if (currentIndex !== -1) {
+                  const nextIndex = currentIndex + 1;
+
+                  if (nextIndex < VOCABULARY_BOOKS.length) {
+                    // Load next book in sequence
+                    const nextBookId = VOCABULARY_BOOKS[nextIndex];
+                    if (nextBookId) {
+                      console.log(`[AudioControls] Auto-switching from ${currentBookId} to ${nextBookId}`);
+
+                      // Pause before switching
+                      await new Promise(resolve => setTimeout(resolve, appConfig.get('delays.autoPlayRestartPause')));
+
+                      if (audio.isAutoPlaying && !audio.isPaused && autoPlayRef.current) {
+                        // Load next book using the same logic as Settings panel
+                        await loadNextBook(nextBookId);
+                      }
+                    }
+                  } else {
+                    // Reached last book
+                    if (audio.repeatMode) {
+                      // Loop back to first book
+                      console.log('[AudioControls] Reached last book - looping back to first book');
+                      const firstBookId = VOCABULARY_BOOKS[0];
+
+                      if (firstBookId) {
+                        await new Promise(resolve => setTimeout(resolve, appConfig.get('delays.autoPlayRestartPause')));
+
+                        if (audio.isAutoPlaying && !audio.isPaused && autoPlayRef.current) {
+                          await loadNextBook(firstBookId);
+                        }
+                      }
+                    } else {
+                      // Stop at end of last book
+                      console.log('[AudioControls] Auto-switch finished - reached end of all books');
+                      audio.stopAutoPlay();
+                    }
+                  }
+                } else {
+                  console.error('[AudioControls] Current book not found in book list:', currentBookId);
+                  audio.stopAutoPlay();
+                }
+              } else if (audio.repeatMode) {
+                // Standard repeat mode: loop back to start of current book
+                console.log('[AudioControls] Repeat mode ON - looping back to start of current book');
                 const firstItem = dataset?.[0];
                 if (firstItem && dataset) {
                   // Pause before restarting (from config)
@@ -88,7 +221,7 @@ const AudioControls: React.FC = () => {
                   audio.stopAutoPlay();
                 }
               } else {
-                // Repeat mode disabled: stop at end
+                // Repeat mode disabled: stop at end of current book
                 console.log('[AudioControls] Auto-play finished - reached end of dataset');
                 audio.stopAutoPlay();
               }

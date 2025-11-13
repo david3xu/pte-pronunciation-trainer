@@ -2,12 +2,16 @@
  * AITutorChat Component
  *
  * Interactive AI chatbot for pronunciation help and learning guidance.
- * Uses OpenAI GPT-4 for conversational assistance.
+ *
+ * Phase 2 Enhanced: Context-aware AI with task-specific personas
+ * - Uses learner profile, session stats, and recent errors for personalized responses
+ * - Supports response rating (thumbs up/down)
+ * - Persists conversation history
  */
 
 import React, { useState, useRef, useEffect } from 'react';
-import { Card, Flex, Text, TextField, Button, ScrollArea, Badge, Spinner } from '@radix-ui/themes';
-import { PaperPlaneIcon, Cross2Icon, ChatBubbleIcon } from '@radix-ui/react-icons';
+import { Card, Flex, Text, TextField, Button, ScrollArea, Badge, Spinner, IconButton, Tooltip } from '@radix-ui/themes';
+import { PaperPlaneIcon, Cross2Icon, ChatBubbleIcon, ThickArrowUpIcon, ThickArrowDownIcon } from '@radix-ui/react-icons';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { useAppStore } from '../../ts/stores';
@@ -17,19 +21,34 @@ interface Message {
   role: 'user' | 'assistant';
   content: string;
   timestamp: Date;
+  rating?: 'helpful' | 'not_helpful'; // Phase 2: Response rating
+  id: string; // Phase 2: Unique message ID
 }
 
 interface AITutorChatProps {
   isOpen: boolean;
   onClose: () => void;
+  // Phase 2: Optional enhanced context
+  taskType?: 'rs' | 'asq' | 'wfd' | 'ra' | 'di' | 'rl' | 'fib_r' | 'fib_l' | 'vocabulary';
+  sessionId?: string;
+  useEnhancedContext?: boolean; // Default: true if taskType provided
 }
 
-const AITutorChat: React.FC<AITutorChatProps> = ({ isOpen, onClose }) => {
+const AITutorChat: React.FC<AITutorChatProps> = ({
+  isOpen,
+  onClose,
+  taskType,
+  sessionId,
+  useEnhancedContext = !!taskType // Auto-enable if taskType provided
+}) => {
   const { auth, vocabulary } = useAppStore();
   const [messages, setMessages] = useState<Message[]>([
     {
+      id: crypto.randomUUID(),
       role: 'assistant',
-      content: 'Hello! I\'m your AI pronunciation tutor. Ask me anything about pronunciation, vocabulary, or learning strategies!',
+      content: taskType
+        ? `Hello! I'm your **${getTaskTypeName(taskType)} specialist**. I'm here to help you improve your performance. Ask me anything about this task type!`
+        : 'Hello! I\'m your AI pronunciation tutor. Ask me anything about pronunciation, vocabulary, or learning strategies!',
       timestamp: new Date(),
     },
   ]);
@@ -42,11 +61,24 @@ const AITutorChat: React.FC<AITutorChatProps> = ({ isOpen, onClose }) => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
+  // Handle response rating
+  const handleRating = (messageId: string, rating: 'helpful' | 'not_helpful') => {
+    setMessages((prev) =>
+      prev.map((msg) =>
+        msg.id === messageId ? { ...msg, rating } : msg
+      )
+    );
+
+    // TODO: Send rating to backend for analytics
+    console.log(`Message ${messageId} rated as: ${rating}`);
+  };
+
   // Handle send message
   const handleSend = async () => {
     if (!input.trim() || isLoading) return;
 
     const userMessage: Message = {
+      id: crypto.randomUUID(),
       role: 'user',
       content: input.trim(),
       timestamp: new Date(),
@@ -59,16 +91,44 @@ const AITutorChat: React.FC<AITutorChatProps> = ({ isOpen, onClose }) => {
     try {
       // Get current word context
       const currentItem = vocabulary.currentItem;
-      const context = currentItem ? {
+
+      // Phase 1: Legacy context
+      const legacyContext = currentItem ? {
         word: (currentItem as any).word || (currentItem as any).sentence || (currentItem as any).question,
         difficulty: (currentItem as any).difficulty || (currentItem as any).metadata?.difficulty,
       } : undefined;
 
-      // Call AI Tutor API
-      const result = await askAITutor(input.trim(), context);
+      // Phase 2: Enhanced current item context
+      const enhancedCurrentItem = currentItem ? {
+        text: (currentItem as any).word || (currentItem as any).sentence || (currentItem as any).question || '',
+        userResponse: (currentItem as any).userResponse,
+        transcription: (currentItem as any).transcription,
+        score: (currentItem as any).score,
+        attempts: (currentItem as any).attempts,
+      } : undefined;
+
+      // Build conversation history (exclude ratings from API)
+      const conversationHistory = messages.map((msg) => ({
+        role: msg.role,
+        content: msg.content,
+      }));
+
+      // Call AI Tutor API with Phase 2 enhancement
+      const result = await askAITutor(input.trim(), {
+        // Phase 1 (legacy) parameters
+        context: legacyContext,
+        conversationHistory,
+        // Phase 2 (enhanced) parameters
+        userId: auth.user?.id,
+        taskType: taskType,
+        sessionId: sessionId,
+        currentItem: enhancedCurrentItem,
+        useEnhancedContext: useEnhancedContext,
+      });
 
       if (result.success && result.data) {
         const assistantMessage: Message = {
+          id: crypto.randomUUID(),
           role: 'assistant',
           content: result.data.answer,
           timestamp: new Date(),
@@ -76,6 +136,7 @@ const AITutorChat: React.FC<AITutorChatProps> = ({ isOpen, onClose }) => {
         setMessages((prev) => [...prev, assistantMessage]);
       } else {
         const errorMessage: Message = {
+          id: crypto.randomUUID(),
           role: 'assistant',
           content: result.error || '⚠️ AI service error. Please check:\n\n1. Your Google Gemini API key is configured in Settings\n2. You haven\'t exceeded the free daily limit (1,500 requests)\n3. Your internet connection is stable\n\nTry again in a moment.',
           timestamp: new Date(),
@@ -84,6 +145,7 @@ const AITutorChat: React.FC<AITutorChatProps> = ({ isOpen, onClose }) => {
       }
     } catch (error) {
       const errorMessage: Message = {
+        id: crypto.randomUUID(),
         role: 'assistant',
         content: '❌ Connection failed. **Action needed:**\n\n• Open Settings (gear icon) and add your Google Gemini API key\n• Get a free key at: https://aistudio.google.com/apikey\n• Check your internet connection\n\nGemini is 100% FREE (1,500 requests/day)',
         timestamp: new Date(),
@@ -102,8 +164,8 @@ const AITutorChat: React.FC<AITutorChatProps> = ({ isOpen, onClose }) => {
     }
   };
 
-  // Quick question buttons
-  const quickQuestions = [
+  // Quick question buttons (task-specific if taskType provided)
+  const quickQuestions = taskType ? getTaskSpecificQuestions(taskType) : [
     'How do I pronounce this word?',
     'What does this word mean?',
     'Give me pronunciation tips',
@@ -119,7 +181,14 @@ const AITutorChat: React.FC<AITutorChatProps> = ({ isOpen, onClose }) => {
         <Flex justify="between" align="center" mb="4">
           <Flex align="center" gap="2">
             <ChatBubbleIcon width="24" height="24" />
-            <Text size="6" weight="bold">AI Pronunciation Tutor</Text>
+            <Flex direction="column" gap="1">
+              <Text size="6" weight="bold">
+                {taskType ? `${getTaskTypeName(taskType)} Tutor` : 'AI Pronunciation Tutor'}
+              </Text>
+              {useEnhancedContext && (
+                <Badge size="1" color="green">Context-Aware (Phase 2)</Badge>
+              )}
+            </Flex>
             {isLoading && <Spinner size="2" />}
           </Flex>
           <Button variant="ghost" onClick={onClose}>
@@ -130,9 +199,9 @@ const AITutorChat: React.FC<AITutorChatProps> = ({ isOpen, onClose }) => {
         {/* Messages */}
         <ScrollArea style={{ flex: 1, marginBottom: 'var(--space-4)', minHeight: 0 }}>
           <Flex direction="column" gap="3">
-            {messages.map((message, index) => (
+            {messages.map((message) => (
               <Flex
-                key={index}
+                key={message.id}
                 justify={message.role === 'user' ? 'end' : 'start'}
               >
                 <Card
@@ -185,18 +254,45 @@ const AITutorChat: React.FC<AITutorChatProps> = ({ isOpen, onClose }) => {
                         {message.content}
                       </Text>
                     )}
-                    <Text
-                      size="1"
-                      color="gray"
-                      style={{
-                        opacity: 0.7,
-                      }}
-                    >
-                      {message.timestamp.toLocaleTimeString([], {
-                        hour: '2-digit',
-                        minute: '2-digit',
-                      })}
-                    </Text>
+                    <Flex justify="between" align="center">
+                      <Text
+                        size="1"
+                        color="gray"
+                        style={{
+                          opacity: 0.7,
+                        }}
+                      >
+                        {message.timestamp.toLocaleTimeString([], {
+                          hour: '2-digit',
+                          minute: '2-digit',
+                        })}
+                      </Text>
+                      {/* Phase 2: Response Rating */}
+                      {message.role === 'assistant' && !message.content.includes('❌') && !message.content.includes('⚠️') && (
+                        <Flex gap="1">
+                          <Tooltip content="Helpful">
+                            <IconButton
+                              size="1"
+                              variant={message.rating === 'helpful' ? 'solid' : 'ghost'}
+                              color={message.rating === 'helpful' ? 'green' : 'gray'}
+                              onClick={() => handleRating(message.id, 'helpful')}
+                            >
+                              <ThickArrowUpIcon />
+                            </IconButton>
+                          </Tooltip>
+                          <Tooltip content="Not helpful">
+                            <IconButton
+                              size="1"
+                              variant={message.rating === 'not_helpful' ? 'solid' : 'ghost'}
+                              color={message.rating === 'not_helpful' ? 'red' : 'gray'}
+                              onClick={() => handleRating(message.id, 'not_helpful')}
+                            >
+                              <ThickArrowDownIcon />
+                            </IconButton>
+                          </Tooltip>
+                        </Flex>
+                      )}
+                    </Flex>
                   </Flex>
                 </Card>
               </Flex>
@@ -240,7 +336,7 @@ const AITutorChat: React.FC<AITutorChatProps> = ({ isOpen, onClose }) => {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyPress={handleKeyPress}
-            placeholder="Ask me about pronunciation..."
+            placeholder={taskType ? `Ask about ${getTaskTypeName(taskType)}...` : "Ask me about pronunciation..."}
             disabled={isLoading}
             size="3"
           >
@@ -257,17 +353,85 @@ const AITutorChat: React.FC<AITutorChatProps> = ({ isOpen, onClose }) => {
           </Button>
         </Flex>
 
-        {/* Auth warning */}
-        {!auth.isAuthenticated && (
-          <Flex mt="2" style={{ flexShrink: 0 }}>
+        {/* Auth warning / Phase 2 indicator */}
+        <Flex mt="2" justify="between" align="center" style={{ flexShrink: 0 }}>
+          {!auth.isAuthenticated ? (
             <Text size="1" color="gray">
-              💡 Sign in to save your conversation history
+              💡 Sign in to enable context-aware AI responses
             </Text>
-          </Flex>
-        )}
+          ) : useEnhancedContext ? (
+            <Text size="1" color="green">
+              ✓ AI is using your profile and session data for personalized responses
+            </Text>
+          ) : (
+            <Text size="1" color="gray">
+              Using general AI mode (legacy)
+            </Text>
+          )}
+        </Flex>
       </Card>
     </div>
   );
 };
+
+// ============================================================================
+// Helper Functions
+// ============================================================================
+
+function getTaskTypeName(taskType: string): string {
+  const names: Record<string, string> = {
+    rs: 'Repeat Sentence',
+    asq: 'Answer Short Question',
+    wfd: 'Write From Dictation',
+    ra: 'Read Aloud',
+    di: 'Describe Image',
+    rl: 'Retell Lecture',
+    fib_r: 'Fill in the Blanks (Reading)',
+    fib_l: 'Fill in the Blanks (Listening)',
+    vocabulary: 'Vocabulary',
+  };
+  return names[taskType] || 'PTE';
+}
+
+function getTaskSpecificQuestions(taskType: string): string[] {
+  const questions: Record<string, string[]> = {
+    rs: [
+      'How can I remember longer sentences?',
+      'Tips for improving fluency?',
+      'Why did I miss that word?',
+      'How to practice stress patterns?',
+    ],
+    asq: [
+      'How to answer faster?',
+      'General knowledge tips?',
+      'What if I don\'t know the answer?',
+      'Common question types?',
+    ],
+    wfd: [
+      'How to improve spelling?',
+      'Grammar tips for dictation?',
+      'How to catch all words?',
+      'Article usage rules?',
+    ],
+    ra: [
+      'How to read more naturally?',
+      'Pronunciation tips?',
+      'How to use prep time?',
+      'Pacing advice?',
+    ],
+    vocabulary: [
+      'How do I pronounce this word?',
+      'What does this word mean?',
+      'Example sentences?',
+      'Memory techniques?',
+    ],
+  };
+  return questions[taskType] || [
+    'How can I improve?',
+    'What are common mistakes?',
+    'Give me study tips',
+    'How to practice this?',
+  ];
+}
 
 export default AITutorChat;

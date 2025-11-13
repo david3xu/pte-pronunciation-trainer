@@ -55,21 +55,49 @@ export async function getAIRecommendations(
   }
 }
 
-// Removed unused AITutorRequest interface - request structure is passed directly to askAITutor()
+// Phase 2: Enhanced AI Tutor Request Interface
+interface EnhancedAITutorOptions {
+  // Phase 1 (legacy) parameters
+  context?: { word?: string; difficulty?: string; ipa?: { british?: string; american?: string } };
+  conversationHistory?: Array<{ role: 'user' | 'assistant'; content: string }>;
+  // Phase 2 parameters
+  userId?: string;
+  taskType?: 'rs' | 'asq' | 'wfd' | 'ra' | 'di' | 'rl' | 'fib_r' | 'fib_l' | 'vocabulary';
+  sessionId?: string;
+  currentItem?: {
+    text: string;
+    userResponse?: string;
+    transcription?: string;
+    score?: number;
+    attempts?: number;
+  };
+  useEnhancedContext?: boolean; // Enable Phase 2 context-aware AI
+}
 
 /**
  * Ask AI tutor a question about pronunciation/vocabulary
+ *
+ * Phase 1 (Legacy): Basic context with word/difficulty
+ * Phase 2 (Enhanced): Task-specific personas with learner context
+ *
+ * @param question - User's question
+ * @param options - Configuration options (Phase 1 + Phase 2)
  */
 export async function askAITutor(
   question: string,
-  context?: { word?: string; difficulty?: string; ipa?: { british?: string; american?: string } },
-  conversationHistory?: Array<{ role: 'user' | 'assistant'; content: string }>
+  options?: EnhancedAITutorOptions
 ): Promise<AIResponse<{ answer: string }>> {
   try {
     const request = {
       message: question,
-      context,
-      conversationHistory,
+      context: options?.context,
+      conversationHistory: options?.conversationHistory,
+      // Phase 2 parameters
+      userId: options?.userId,
+      taskType: options?.taskType,
+      sessionId: options?.sessionId,
+      currentItem: options?.currentItem,
+      useEnhancedContext: options?.useEnhancedContext || false,
     };
 
     const response = await fetch('/api/ai/chat', {

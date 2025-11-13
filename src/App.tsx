@@ -378,7 +378,13 @@ const App: React.FC = () => {
             }}
           />
           <SettingsPanel isOpen={showSettings} onClose={() => setShowSettings(false)} />
-          <AITutorChat isOpen={showAITutor} onClose={() => setShowAITutor(false)} />
+          <AITutorChat
+            isOpen={showAITutor}
+            onClose={() => setShowAITutor(false)}
+            taskType={interfaceType as TaskType}
+            sessionId={currentSessionId || undefined}
+            useEnhancedContext={useAppStore.getState().auth.isAuthenticated}
+          />
           <WeakAreasDashboard isOpen={showWeakAreas} onClose={() => setShowWeakAreas(false)} />
           <PronunciationScoring
             isOpen={showPronunciationScoring}

@@ -19,9 +19,10 @@ import type { ItemType } from '../../types/database';
 interface WordCardProps {
   item: VocabularyTerm | PracticeItem;
   sessionManager?: SessionManager;
+  onItemComplete?: () => void;
 }
 
-const WordCard: React.FC<WordCardProps> = ({ item, sessionManager }) => {
+const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplete }) => {
   const ttsState = useAppStore((state) => state.tts);
   const [usePremiumTTS, setUsePremiumTTS] = useState(false);
   const [premiumVoiceId, setPremiumVoiceId] = useState('Joanna');
@@ -108,6 +109,11 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager }) => {
           time_spent_sec: timeSpent,
         });
         console.log('[WordCard] Recorded item interaction');
+
+        // Notify parent component that item was completed (for intervention monitoring)
+        if (onItemComplete) {
+          onItemComplete();
+        }
       } catch (error) {
         console.error('[WordCard] Failed to record item:', error);
       }

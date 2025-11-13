@@ -18,13 +18,14 @@ import { useAppStore } from './ts/stores';
 import { WordCard, ProgressTracker } from './components/practice';
 import { AudioControls } from './components/audio';
 import { SettingsPanel } from './components/settings';
-import { AITutorChat, PronunciationScoring, WeakAreasDashboard } from './components/ai';
+import { AITutorChat, PronunciationScoring, WeakAreasDashboard, InterventionModal } from './components/ai';
 import { WordCardSkeleton } from './components/shared';
 import DataMigrationModal from './components/migration/DataMigrationModal';
 import LearnerProfileModal from './components/profile/LearnerProfileModal';
 import { hasDataToMigrate } from './services/migration/migrationService';
 import { hasCompletedOnboarding, getLearnerProfile } from './services/profile/learnerProfileService';
 import { getSessionManager } from './services/session/sessionManager';
+import { monitorSession, logIntervention, type Intervention } from './services/ai/interventionEngine';
 import type { TaskType } from './types/database';
 import './css/tailwind.css';
 
@@ -46,6 +47,10 @@ const App: React.FC = () => {
   // Session tracking
   const [sessionManager] = useState(() => getSessionManager());
   const [currentSessionId, setCurrentSessionId] = useState<string | null>(null);
+
+  // Intervention system (Phase 4)
+  const [currentIntervention, setCurrentIntervention] = useState<Intervention | null>(null);
+  const [itemsCompletedInSession, setItemsCompletedInSession] = useState(0);
 
   // Initialize app on mount
   useEffect(() => {
@@ -165,6 +170,76 @@ const App: React.FC = () => {
     };
   }, []);
 
+  // Phase 4: Monitor session for proactive interventions
+  useEffect(() => {
+    if (!currentSessionId || !useAppStore.getState().auth.user?.id) return;
+
+    // Check for interventions every 5 items completed
+    if (itemsCompletedInSession > 0 && itemsCompletedInSession % 5 === 0) {
+      const checkIntervention = async () => {
+        const intervention = await monitorSession(
+          useAppStore.getState().auth.user!.id,
+          currentSessionId
+        );
+        if (intervention) {
+          setCurrentIntervention(intervention);
+        }
+      };
+      checkIntervention();
+    }
+  }, [itemsCompletedInSession, currentSessionId]);
+
+  // Intervention handlers
+  const handleInterventionAccept = async () => {
+    if (!currentIntervention || !currentSessionId || !useAppStore.getState().auth.user?.id) return;
+
+    // Log acceptance
+    await logIntervention(
+      useAppStore.getState().auth.user!.id,
+      currentSessionId,
+      currentIntervention,
+      'accepted'
+    );
+
+    // Handle specific intervention types
+    if (currentIntervention.type === 'difficulty_increase' || currentIntervention.type === 'difficulty_decrease') {
+      // User would need to manually change difficulty in settings
+      // Could auto-apply here if we had difficulty in global state
+      console.log('[App] User accepted difficulty change:', currentIntervention.metadata?.suggestedDifficulty);
+    } else if (currentIntervention.type === 'break_reminder' || currentIntervention.type === 'fatigue_warning') {
+      // Pause practice (could pause TTS autoplay)
+      console.log('[App] User accepted break');
+    } else if (currentIntervention.type === 'help_offer') {
+      // Open AI Tutor
+      setShowAITutor(true);
+    }
+
+    setCurrentIntervention(null);
+  };
+
+  const handleInterventionDecline = async () => {
+    if (!currentIntervention || !currentSessionId || !useAppStore.getState().auth.user?.id) return;
+
+    // Log decline
+    await logIntervention(
+      useAppStore.getState().auth.user!.id,
+      currentSessionId,
+      currentIntervention,
+      'declined'
+    );
+
+    setCurrentIntervention(null);
+  };
+
+  const handleInterventionDismiss = () => {
+    setCurrentIntervention(null);
+  };
+
+  // Track item completion for intervention monitoring
+  const handleItemComplete = () => {
+    setItemsCompletedInSession((prev) => prev + 1);
+  };
+
   return (
     <Theme
       appearance="dark"
@@ -259,6 +334,12 @@ const App: React.FC = () => {
             isOpen={showPronunciationScoring}
             onClose={() => setShowPronunciationScoring(false)}
           />
+          <InterventionModal
+            intervention={currentIntervention}
+            onAccept={handleInterventionAccept}
+            onDecline={handleInterventionDecline}
+            onDismiss={handleInterventionDismiss}
+          />
           {showProgress && (
             <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 animate-in p-4">
               <div className="w-full max-w-4xl max-h-[95vh] overflow-y-auto bg-slate-800 rounded-lg p-6">
@@ -281,7 +362,11 @@ const App: React.FC = () => {
               {isLoadingVocabulary ? (
                 <WordCardSkeleton />
               ) : currentItem ? (
-                <WordCard item={currentItem} sessionManager={sessionManager} />
+                <WordCard
+                  item={currentItem}
+                  sessionManager={sessionManager}
+                  onItemComplete={handleItemComplete}
+                />
               ) : (
                 <Flex
                   align="center"

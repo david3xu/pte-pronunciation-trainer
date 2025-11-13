@@ -13,6 +13,10 @@ data/generated/
 *.generated.js
 vocabulary-data.js
 
+# TypeScript generated declaration files
+*.d.ts
+!src/env.d.ts
+
 # Reports
 data/reports/
 validation-report.json

@@ -178,6 +178,80 @@ export interface DataConfig {
 }
 
 /* ============================================
+   AI TYPES
+   ============================================ */
+
+/**
+ * AI configuration for Google Gemini
+ */
+export interface AIConfig {
+  gemini: {
+    defaultModel: string;
+    fallbackModel: string;
+    conversationHistoryLimit: number;
+    requestsPerDay: number;
+    maxTokens: number;
+    temperature: number;
+    topP: number;
+    topK: number;
+  };
+}
+
+/* ============================================
+   API TYPES
+   ============================================ */
+
+/**
+ * API endpoints configuration
+ */
+export interface APIConfig {
+  baseUrl: string;
+  endpoints: {
+    aiRecommendations: string;
+    aiChat: string;
+    aiTutor: string;
+    pronunciationScore: string;
+    premiumTts: string;
+    voices: string;
+    audioGenerate: string;
+  };
+}
+
+/* ============================================
+   DELAYS & TIMEOUTS TYPES
+   ============================================ */
+
+/**
+ * Delays and timeouts configuration
+ */
+export interface DelaysConfig {
+  autoPlayBetweenWords: number;
+  autoPlayRestartPause: number;
+  recordingTimeout: number;
+  animationDuration: number;
+  notificationTimeout: number;
+  modalHideDelay: number;
+  onboardingDelay: number;
+  quickQuestionDelay: number;
+  moduleInitTimeout: number;
+  exponentialBackoffBase: number;
+}
+
+/* ============================================
+   LIMITS TYPES
+   ============================================ */
+
+/**
+ * Request limits configuration
+ */
+export interface LimitsConfig {
+  conversationHistory: number;
+  recommendations: number;
+  ttsCacheSize: number;
+  ttsCacheMaxAge: number;
+}
+
+/* ============================================
    TTS TYPES
    ============================================ */
 
@@ -201,6 +275,20 @@ export interface TTSConfig {
   pitch: number;
   volume: number;
   autoSpeak: boolean;
+}
+
+/* ============================================
+   VOICE & LANGUAGE TYPES
+   ============================================ */
+
+/**
+ * Voice and language settings for AWS Polly
+ */
+export interface VoiceConfig {
+  defaultVoiceId: string;
+  defaultEngine: string;
+  defaultLanguage: string;
+  awsRegion: string;
 }
 
 /* ============================================
@@ -273,6 +361,10 @@ export interface PipelineConfig {
  * Build configuration
  */
 export interface BuildConfig {
+  devServerPort: number;
+  previewServerPort: number;
+  chunkSizeWarningLimit: number;
+  nodeEnv: string;
   cssFiles: string[];
   jsFiles: string[];
   outputDir: string;
@@ -286,7 +378,7 @@ export interface BuildConfig {
 
 /**
  * Main application configuration
- * This mirrors the structure of Config.js
+ * This mirrors the structure of Config.ts
  */
 export interface AppConfig {
   app: {
@@ -295,7 +387,12 @@ export interface AppConfig {
     description: string;
   };
   data: DataConfig;
+  ai: AIConfig;
+  api: APIConfig;
+  delays: DelaysConfig;
+  limits: LimitsConfig;
   tts: TTSConfig;
+  voice: VoiceConfig;
   ui: UIConfig;
   settings: {
     defaults: SettingsDefaults;

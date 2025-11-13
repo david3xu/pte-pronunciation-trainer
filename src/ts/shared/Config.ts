@@ -87,6 +87,76 @@ export class AppConfig {
         defaultMode: 'pte-beginner'
       },
 
+      // ===== AI CONFIGURATION =====
+      ai: {
+        gemini: {
+          // Model versions - standardized to gemini-2.5-flash across all routes
+          defaultModel: 'gemini-2.5-flash',
+          fallbackModel: 'gemini-1.5-flash',
+
+          // Request limits
+          conversationHistoryLimit: 10,
+          requestsPerDay: 1500,
+
+          // Generation parameters
+          maxTokens: 2048,
+          temperature: 0.7,
+          topP: 0.95,
+          topK: 40
+        }
+      },
+
+      // ===== API ENDPOINTS =====
+      api: {
+        baseUrl: typeof process !== 'undefined' && process.env?.['VITE_API_BASE_URL']
+          ? process.env['VITE_API_BASE_URL']
+          : '',
+        endpoints: {
+          // AI endpoints
+          aiRecommendations: '/api/ai-recommendations',
+          aiChat: '/api/ai/chat',
+          aiTutor: '/api/ai-tutor',
+          pronunciationScore: '/api/pronunciation-score',
+
+          // TTS endpoints
+          premiumTts: '/api/premium-tts',
+          voices: '/api/voices',
+          audioGenerate: '/api/audio/generate'
+        }
+      },
+
+      // ===== DELAYS & TIMEOUTS =====
+      delays: {
+        // Audio playback
+        autoPlayBetweenWords: 500,
+        autoPlayRestartPause: 1000,
+
+        // Recording
+        recordingTimeout: 10000,
+
+        // UI animations
+        animationDuration: 500,
+        notificationTimeout: 5000,
+        modalHideDelay: 1500,
+        onboardingDelay: 500,
+        quickQuestionDelay: 100,
+
+        // Initialization
+        moduleInitTimeout: 5000,
+        exponentialBackoffBase: 1000
+      },
+
+      // ===== REQUEST LIMITS =====
+      limits: {
+        // AI context
+        conversationHistory: 10,
+        recommendations: 5,
+
+        // Caching
+        ttsCacheSize: 100,
+        ttsCacheMaxAge: 3600000 // 1 hour in ms
+      },
+
       // ===== TTS CONFIGURATION =====
       tts: {
         defaultVoice: {
@@ -104,6 +174,19 @@ export class AppConfig {
         pitch: 1.0,
         volume: 1.0,
         autoSpeak: true
+      },
+
+      // ===== VOICE & LANGUAGE SETTINGS =====
+      voice: {
+        // Default voice settings for AWS Polly
+        defaultVoiceId: 'Joanna',
+        defaultEngine: 'neural',
+        defaultLanguage: 'en-US',
+
+        // AWS settings
+        awsRegion: typeof process !== 'undefined' && process.env?.['AWS_REGION']
+          ? process.env['AWS_REGION']
+          : 'us-east-1'
       },
 
       // ===== UI CONFIGURATION =====
@@ -240,6 +323,19 @@ export class AppConfig {
 
       // ===== BUILD CONFIGURATION =====
       build: {
+        // Development
+        devServerPort: 3001,
+        previewServerPort: 3002,
+
+        // Production
+        chunkSizeWarningLimit: 1000, // KB
+
+        // Environment
+        nodeEnv: typeof process !== 'undefined' && process.env?.['NODE_ENV']
+          ? process.env['NODE_ENV']
+          : 'development',
+
+        // Legacy build files (vanilla JS - archived)
         cssFiles: [
           'src/css/variables.css',
           'src/css/animations.css',

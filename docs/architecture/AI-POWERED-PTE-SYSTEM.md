@@ -1913,20 +1913,262 @@ Add to Phase 5:
 
 ---
 
-### Final Recommendation: 10/10 ✅
+#### 9. Configuration Centralization (CRITICAL 🚨)
+**Current Problem:** 50+ hardcoded values violate the "Zero Hardcoded Values" architectural principle
 
-With the clarifications above, this architecture is **excellent** and ready to implement!
+**Violations Found:**
 
-**Priority Phases:**
-1. **Phase 1 (CRITICAL)**: Database + Session Tracking → Enables everything else
-2. **Phase 2 (HIGH VALUE)**: AI Context → Main differentiator
-3. **Phase 3 (GAME CHANGER)**: Weak Area Detection → Personalization
-4. **Phase 4 (POLISH)**: Proactive AI → Magic moments
-5. **Phase 5 (UX)**: UI Redesign → Professional finish
-6. **Phase 6 (NICE TO HAVE)**: Mock Exams → Complete experience
+1. **Inconsistent Gemini Models** (CRITICAL):
+   ```typescript
+   // api/ai/chat.ts:246 & api/pronunciation-score.ts:106
+   model: 'gemini-2.5-flash'  // ← Newer version
 
-**Killer Feature:** Context-aware AI that understands user's learning journey + Zero cost forever
+   // api/ai-tutor.ts:106 & api/ai-recommendations.ts:100
+   model: 'gemini-1.5-flash'  // ← Older version (inconsistent!)
+   ```
+
+2. **Hardcoded API Endpoints** (8 locations):
+   ```typescript
+   // src/services/ai.ts
+   fetch('/api/ai-recommendations')  // ← Hardcoded
+   fetch('/api/ai/chat')             // ← Hardcoded
+   fetch('/api/pronunciation-score') // ← Hardcoded
+
+   // Should be:
+   fetch(appConfig.get('api.endpoints.aiChat'))
+   ```
+
+3. **Magic Numbers** (15+ locations):
+   ```typescript
+   // src/components/audio/AudioControls.tsx:60
+   setTimeout(resolve, 500);  // ← What is 500ms?
+
+   // src/components/audio/AudioControls.tsx:78
+   setTimeout(resolve, 1000); // ← What is 1000ms?
+
+   // Should be:
+   setTimeout(resolve, appConfig.get('delays.autoPlayBetweenWords'));
+   setTimeout(resolve, appConfig.get('delays.autoPlayRestartPause'));
+   ```
+
+4. **Hardcoded Limits** (6 locations):
+   ```typescript
+   // api/ai/chat.ts:233
+   .slice(-10)  // ← Why 10 messages?
+
+   // api/ai-recommendations.ts:136
+   .slice(0, 5) // ← Why 5 recommendations?
+
+   // Should be:
+   .slice(-appConfig.get('ai.conversationHistoryLimit'))
+   .slice(0, appConfig.get('limits.recommendations'))
+   ```
+
+**Impact on AI System:**
+- Model version inconsistency causes unpredictable behavior
+- Hard to upgrade Gemini versions across all API routes
+- Magic numbers make timeouts/delays unclear
+- Difficult to adjust limits without hunting through code
+- Violates established architectural principles
+
+**Solution: Extend Config.ts**
+
+```typescript
+// src/ts/shared/Config.ts - Add AI configuration section
+
+export const defaultConfig = {
+  // ... existing config ...
+
+  // AI Configuration (NEW)
+  ai: {
+    gemini: {
+      defaultModel: 'gemini-2.5-flash',  // ← Centralized model version
+      fallbackModel: 'gemini-1.5-flash',
+      conversationHistoryLimit: 10,
+      requestsPerDay: 1500,
+    },
+    prompts: {
+      maxTokens: 2048,
+      temperature: 0.7,
+    },
+  },
+
+  // API Endpoints (NEW)
+  api: {
+    baseUrl: process.env.VITE_API_BASE_URL || '',
+    endpoints: {
+      aiRecommendations: '/api/ai-recommendations',
+      aiChat: '/api/ai/chat',
+      aiTutor: '/api/ai-tutor',
+      pronunciationScore: '/api/pronunciation-score',
+      premiumTts: '/api/premium-tts',
+      voices: '/api/voices',
+      audioGenerate: '/api/audio/generate',
+    },
+  },
+
+  // Delays & Timeouts (NEW)
+  delays: {
+    autoPlayBetweenWords: 500,      // ms between words in auto-play
+    autoPlayRestartPause: 1000,     // ms pause before repeat mode restart
+    recordingTimeout: 10000,        // ms max recording duration
+    animationDuration: 500,         // ms for UI animations
+    notificationTimeout: 5000,      // ms before notification auto-dismisses
+    modalHideDelay: 1500,           // ms before hiding modal
+    onboardingDelay: 500,           // ms before showing onboarding
+  },
+
+  // Request Limits (NEW)
+  limits: {
+    conversationHistory: 10,        // messages to include in AI context
+    recommendations: 5,             // max recommendations to return
+    ttsCacheSize: 100,              // max cached TTS responses
+    ttsCacheMaxAge: 3600000,        // 1 hour in ms
+  },
+
+  // ... existing config continues ...
+};
+```
+
+**Migration Strategy:**
+
+**Phase 1: Extend Config.ts** (1-2 days)
+- Add all missing configuration sections
+- Document each value's purpose
+- Provide sensible defaults
+
+**Phase 2: Refactor API Routes** (2-3 days)
+```typescript
+// Before (❌ hardcoded):
+const response = await ai.models.generateContent({
+  model: 'gemini-2.5-flash',
+  contents: prompt,
+});
+
+// After (✅ centralized):
+import { appConfig } from '../ts/shared/Config';
+
+const response = await ai.models.generateContent({
+  model: appConfig.get('ai.gemini.defaultModel'),
+  contents: prompt,
+});
+```
+
+**Phase 3: Refactor Services Layer** (2-3 days)
+```typescript
+// Before (❌ hardcoded):
+const response = await fetch('/api/ai/chat', { ... });
+
+// After (✅ centralized):
+const response = await fetch(appConfig.get('api.endpoints.aiChat'), { ... });
+```
+
+**Phase 4: Refactor Components** (3-4 days)
+```typescript
+// Before (❌ magic number):
+await new Promise(resolve => setTimeout(resolve, 500));
+
+// After (✅ named constant):
+await new Promise(resolve =>
+  setTimeout(resolve, appConfig.get('delays.autoPlayBetweenWords'))
+);
+```
+
+**Add to Implementation Roadmap:**
+
+**Phase 0: Configuration Cleanup (1-2 weeks) - BEFORE DATABASE WORK**
+1. Extend Config.ts with all missing values
+2. Standardize Gemini model version (choose 2.5-flash everywhere)
+3. Refactor API routes to use Config
+4. Refactor services layer to use Config
+5. Refactor components to eliminate magic numbers
+6. Add tests for config validation
+7. Document all configuration options
+
+**Why Phase 0 is Critical:**
+- ✅ Standardizes AI model versions (fixes inconsistency bug)
+- ✅ Makes future upgrades trivial (change one value)
+- ✅ Follows established architectural principles
+- ✅ Provides single source of truth for AI system
+- ✅ Easier to adjust timeouts/limits during testing
+- ✅ Cleaner codebase before adding database complexity
+
+**Benefit for AI System Implementation:**
+Once Config.ts is properly extended, adding new AI features becomes easier:
+
+```typescript
+// Adding new AI feature? Just use config:
+const aiContext = await buildAIContext({
+  model: appConfig.get('ai.gemini.defaultModel'),
+  historyLimit: appConfig.get('limits.conversationHistory'),
+  endpoint: appConfig.get('api.endpoints.aiChat'),
+});
+
+// Want to test with different model? Change one line in Config.ts!
+```
+
+**Testing Impact:**
+```typescript
+// Easy to test with different configurations:
+describe('AI Context Builder', () => {
+  beforeEach(() => {
+    // Override config for testing
+    appConfig.set('ai.gemini.defaultModel', 'gemini-1.5-flash');
+    appConfig.set('limits.conversationHistory', 5);
+  });
+
+  it('uses configured model version', async () => {
+    const context = await buildAIContext('rs', userId);
+    expect(context.model).toBe('gemini-1.5-flash');
+  });
+});
+```
 
 ---
 
-**Ready to build an AI-powered PTE learning system? 🚀**
+### Final Recommendation: 9/10 ✅ (10/10 after Config cleanup)
+
+With the clarifications above and configuration centralization, this architecture is **excellent** and ready to implement!
+
+**Priority Phases (Updated with Config Cleanup):**
+0. **Phase 0 (FOUNDATION)**: Configuration Cleanup (1-2 weeks) → Fix architectural debt
+1. **Phase 1 (CRITICAL)**: Database + Session Tracking (2 weeks) → Enables everything else
+2. **Phase 2 (HIGH VALUE)**: AI Context (3 weeks) → Main differentiator
+3. **Phase 3 (GAME CHANGER)**: Weak Area Detection (2 weeks) → Personalization
+4. **Phase 4 (POLISH)**: Proactive AI (2 weeks) → Magic moments
+5. **Phase 5 (UX)**: UI Redesign (3 weeks) → Professional finish
+6. **Phase 6 (NICE TO HAVE)**: Mock Exams (2 weeks) → Complete experience
+
+**Total Timeline: 15-16 weeks (3.5-4 months)**
+
+**Killer Features:**
+- 🎯 Context-aware AI that understands user's learning journey
+- 💰 Zero cost forever (user-provided API keys)
+- 🏗️ Clean architecture with centralized configuration
+- 📊 Comprehensive session tracking and analytics
+- 🧠 AI-powered weak area detection and recommendations
+
+---
+
+## Next Steps
+
+### Immediate Actions (Week 1):
+1. ✅ **Review & approve** this architecture document
+2. 🔧 **Start Phase 0**: Extend Config.ts with all missing values
+3. 🧪 **Set up testing environment** for configuration validation
+4. 📋 **Create Supabase project** and review schema
+
+### Phase 0 Deliverables (Weeks 1-2):
+- [ ] Extended Config.ts with ai, api, delays, limits sections
+- [ ] Standardized Gemini model to gemini-2.5-flash everywhere
+- [ ] Refactored all API routes to use Config
+- [ ] Refactored services layer to use Config
+- [ ] Eliminated all magic numbers in components
+- [ ] Added config validation tests
+- [ ] Updated CLAUDE.md with new config sections
+
+**Once Phase 0 is complete, proceed to Phase 1 (Database setup).**
+
+---
+
+**Ready to build a clean, scalable, AI-powered PTE learning system? 🚀**

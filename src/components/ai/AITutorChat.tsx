@@ -16,6 +16,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { useAppStore } from '../../ts/stores';
 import { askAITutor } from '../../services/ai';
+import { rateAIResponse } from '../../services/ai/ratingService';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -62,15 +63,38 @@ const AITutorChat: React.FC<AITutorChatProps> = ({
   }, [messages]);
 
   // Handle response rating
-  const handleRating = (messageId: string, rating: 'helpful' | 'not_helpful') => {
+  const handleRating = async (messageId: string, rating: 'helpful' | 'not_helpful') => {
+    // Update UI immediately
     setMessages((prev) =>
       prev.map((msg) =>
         msg.id === messageId ? { ...msg, rating } : msg
       )
     );
 
-    // TODO: Send rating to backend for analytics
-    console.log(`Message ${messageId} rated as: ${rating}`);
+    // Save rating to database (Phase 2)
+    const message = messages.find((msg) => msg.id === messageId);
+    if (message && auth.user?.id) {
+      try {
+        const result = await rateAIResponse(
+          message.content,
+          rating,
+          auth.user.id,
+          message.timestamp
+        );
+
+        if (!result.success) {
+          console.warn(`[AITutorChat] Rating save failed: ${result.error}`);
+          // Don't show error to user - rating still works locally
+        } else {
+          console.log(`[AITutorChat] Rating saved to database: ${rating}`);
+        }
+      } catch (error) {
+        console.error('[AITutorChat] Rating error:', error);
+        // Don't throw - local rating still works
+      }
+    } else {
+      console.log(`[AITutorChat] Message ${messageId} rated locally as: ${rating}`);
+    }
   };
 
   // Handle send message

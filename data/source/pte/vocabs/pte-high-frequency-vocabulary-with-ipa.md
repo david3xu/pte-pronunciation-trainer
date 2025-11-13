@@ -377,7 +377,7 @@ This vocabulary book contains 747 high-frequency words commonly appearing in PTE
 367. various | /ˈveəriəs/ — sounds like **VAIR-ee-us**
 368. prosperous | /ˈprɒspərəs/ — sounds like **PROS-pur-us**
 369. training | /ˈtreɪnɪŋ/ — sounds like **TRAYN-ing**
-370. determin | /dɪˈtɜːrmɪn/ — sounds like **di-TUR-min**
+370. determine | /dɪˈtɜːrmɪn/ — sounds like **di-TUR-min**
 371. sanitary | /ˈsænɪteri/ — sounds like **SAN-i-ter-ee**
 372. artery | /ˈɑːrtəri/ — sounds like **AR-tur-ee**
 373. videotape | /ˈvɪdioʊteɪp/ — sounds like **VID-ee-oh-tayp**

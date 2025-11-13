@@ -684,7 +684,7 @@ This vocabulary book contains all the repeat sentence vocabulary that has appear
 667. n. cheese | /tʃiːz/ — sounds like **CHEEZ** | /tʃiːz/ — sounds like **CHEEZ**
 668. adj. insufficient | /ˌɪnsəˈfɪʃənt/ — sounds like **in-suh-FISH-unt** | /ˌɪnsəˈfɪʃənt/ — sounds like **in-suh-FISH-unt**
 669. n. training | /ˈtreɪnɪŋ/ — sounds like **TRAY-ning** | /ˈtreɪnɪŋ/ — sounds like **TRAY-ning**
-670. v. determin | /dɪˈtɜːmɪn/ — sounds like **di-TUR-min** | /dɪˈtɜːrmɪn/ — sounds like **di-TUR-min**
+670. v. determine | /dɪˈtɜːmɪn/ — sounds like **di-TUR-min** | /dɪˈtɜːrmɪn/ — sounds like **di-TUR-min**
 671. adj. sanitary | /ˈsænɪtəri/ — sounds like **SAN-i-tuh-ree** | /ˈsænɪteri/ — sounds like **SAN-i-tair-ee**
 672. n. artery | /ˈɑːtəri/ — sounds like **AHR-tuh-ree** | /ˈɑːrtəri/ — sounds like **AHR-tuh-ree**
 673. n. machine | /məˈʃiːn/ — sounds like **muh-SHEEN** | /məˈʃiːn/ — sounds like **muh-SHEEN**

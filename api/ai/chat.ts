@@ -1,23 +1,31 @@
 /**
  * Vercel Serverless Function: AI Tutor Chat with Google Gemini (FREE)
  *
- * This endpoint provides conversational AI tutoring for pronunciation and vocabulary learning.
- * It uses Google Gemini 1.5 Flash for intelligent, context-aware responses.
+ * Phase 2 Enhanced: Context-aware AI with task-specific personas
+ *
+ * This endpoint provides conversational AI tutoring with:
+ * - Task-specific personas (RS/ASQ/WFD/RA/Vocabulary)
+ * - Rich context from learner profile and practice history
+ * - Conversation history tracking
  *
  * POST /api/ai/chat
  *
- * Request body:
+ * Request body (Phase 1 - Legacy):
  * {
- *   message: string;                // User's question
- *   context?: {                     // Current word/practice item context
- *     word: string;
- *     difficulty?: string;
- *     ipa?: { british?: string; american?: string };
- *   };
- *   conversationHistory?: {         // Previous messages (optional)
- *     role: 'user' | 'assistant';
- *     content: string;
- *   }[];
+ *   message: string;
+ *   context?: { word: string; difficulty?: string; ipa?: {...} };
+ *   conversationHistory?: [...];
+ *   userId?: string;
+ * }
+ *
+ * Request body (Phase 2 - Enhanced):
+ * {
+ *   message: string;
+ *   taskType: 'rs' | 'asq' | 'wfd' | 'ra' | 'vocabulary';
+ *   userId: string;
+ *   sessionId?: string;
+ *   currentItem?: { text, userResponse, score, ... };
+ *   useEnhancedContext: true;
  * }
  *
  * Response:
@@ -29,8 +37,8 @@
  *
  * Environment variables required:
  * - GEMINI_API (recommended for Vercel)
- * - OR GEMINI_API_KEY
- * - OR VITE_GEMINI_API_KEY (for client-side)
+ * - SUPABASE_URL (for Phase 2 context)
+ * - SUPABASE_SERVICE_ROLE_KEY (for Phase 2 context)
  */
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
@@ -56,6 +64,17 @@ interface ChatRequest {
     content: string;
   }[];
   userId?: string; // For saving history
+  // Phase 2: Enhanced context
+  taskType?: 'rs' | 'asq' | 'wfd' | 'ra' | 'di' | 'rl' | 'fib_r' | 'fib_l' | 'vocabulary';
+  sessionId?: string;
+  currentItem?: {
+    text: string;
+    userResponse?: string;
+    transcription?: string;
+    score?: number;
+    attempts?: number;
+  };
+  useEnhancedContext?: boolean; // Flag to use Phase 2 context building
 }
 
 interface ChatResponse {
@@ -130,13 +149,174 @@ function buildContextPrompt(context?: ChatRequest['context']): string {
 }
 
 // ============================================
-// Save Conversation to Database (Optional)
+// Phase 2: Build Enhanced Context
 // ============================================
 
-async function saveConversation(
+async function buildEnhancedContext(
+  userId: string,
+  taskType: string,
+  sessionId?: string,
+  currentItem?: ChatRequest['currentItem']
+): Promise<string> {
+  try {
+    const supabaseUrl = process.env.SUPABASE_URL;
+    const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+    if (!supabaseUrl || !supabaseKey) {
+      return ''; // Skip if Supabase not configured
+    }
+
+    const supabase = createClient(supabaseUrl, supabaseKey);
+
+    // Fetch learner profile
+    const { data: profile } = await supabase
+      .from('learner_profiles')
+      .select('*')
+      .eq('user_id', userId)
+      .single();
+
+    // Fetch current session
+    const { data: session } = await supabase
+      .from('practice_sessions')
+      .select('*')
+      .eq('id', sessionId || '')
+      .single();
+
+    // Fetch recent errors (last 5 items with low scores)
+    const { data: recentSessions } = await supabase
+      .from('practice_sessions')
+      .select('id')
+      .eq('user_id', userId)
+      .eq('task_type', taskType)
+      .order('started_at', { ascending: false })
+      .limit(5);
+
+    const sessionIds = recentSessions?.map(s => s.id) || [];
+    const { data: errors } = sessionIds.length > 0
+      ? await supabase
+          .from('session_items')
+          .select('item_text, user_response, score, attempted_at')
+          .in('session_id', sessionIds)
+          .lt('score', 70)
+          .order('attempted_at', { ascending: false })
+          .limit(5)
+      : { data: null };
+
+    // Build context string
+    let contextStr = '\n## Learner Context\n\n';
+
+    if (profile) {
+      contextStr += `**Goal Score:** ${profile.pte_goal_score || 65}\n`;
+      contextStr += `**Learning Style:** ${profile.learning_style || 'mixed'}\n`;
+      if (profile.target_date) {
+        contextStr += `**Target Date:** ${profile.target_date}\n`;
+      }
+    }
+
+    if (session) {
+      contextStr += `\n## Current Session Stats\n\n`;
+      contextStr += `**Items Attempted:** ${session.items_attempted}\n`;
+      contextStr += `**Items Correct:** ${session.items_correct}\n`;
+      contextStr += `**Accuracy:** ${(session.accuracy || 0).toFixed(1)}%\n`;
+    }
+
+    if (errors && errors.length > 0) {
+      contextStr += `\n## Recent Mistakes\n\n`;
+      errors.forEach((err, idx) => {
+        contextStr += `${idx + 1}. Expected: "${err.item_text}", Got: "${err.user_response || 'no response'}", Score: ${err.score}\n`;
+      });
+    }
+
+    if (currentItem) {
+      contextStr += `\n## Current Item\n\n`;
+      contextStr += `**Text:** "${currentItem.text}"\n`;
+      if (currentItem.userResponse) {
+        contextStr += `**User Response:** "${currentItem.userResponse}"\n`;
+      }
+      if (currentItem.score !== undefined) {
+        contextStr += `**Score:** ${currentItem.score}/100\n`;
+      }
+      if (currentItem.attempts !== undefined) {
+        contextStr += `**Attempts:** ${currentItem.attempts}\n`;
+      }
+    }
+
+    return contextStr;
+  } catch (error) {
+    console.error('Failed to build enhanced context:', error);
+    return '';
+  }
+}
+
+// ============================================
+// Phase 2: Generate System Prompt with Persona
+// ============================================
+
+function generatePersonaPrompt(taskType: string, goalScore?: number): string {
+  const personas: Record<string, any> = {
+    rs: {
+      name: 'RS Specialist',
+      role: 'Expert in Repeat Sentence for PTE',
+      focus: ['Exact repetition', 'Natural intonation', 'Clear articulation', 'Appropriate pacing'],
+      mistakes: ['Missing articles', 'Incorrect tenses', 'Skipping short words', 'Hesitation'],
+      strategies: ['Listen for content words', 'Chunk sentences', 'Practice shadowing'],
+    },
+    asq: {
+      name: 'ASQ Specialist',
+      role: 'Expert in Answer Short Question for PTE',
+      focus: ['Question word recognition', 'Concise answering (1-3 words)', 'General knowledge'],
+      mistakes: ['Answering too long', 'Missing question type', 'Overthinking'],
+      strategies: ['Focus on first word', 'Answer with expected term', 'Use 1-2 words max'],
+    },
+    wfd: {
+      name: 'WFD Specialist',
+      role: 'Expert in Write From Dictation for PTE',
+      focus: ['Spelling accuracy', 'Grammar rules', 'Article usage', 'Word-for-word transcription'],
+      mistakes: ['Spelling errors', 'Missing articles', 'Wrong verb forms', 'Missing words'],
+      strategies: ['Listen for complete sentence', 'Write as you hear', 'Check grammar'],
+    },
+    ra: {
+      name: 'RA Specialist',
+      role: 'Expert in Read Aloud for PTE',
+      focus: ['Clear pronunciation', 'Natural fluency', 'Appropriate pacing', 'Natural intonation'],
+      mistakes: ['Reading too fast', 'Flat intonation', 'Mispronunciation', 'Hesitation'],
+      strategies: ['Read silently first', 'Identify difficult words', 'Pause at punctuation'],
+    },
+    vocabulary: {
+      name: 'Vocabulary Specialist',
+      role: 'Expert in PTE Vocabulary',
+      focus: ['Word meanings', 'Pronunciation', 'Usage in context', 'Memory techniques'],
+      mistakes: ['Confusing similar words', 'Incorrect stress', 'Wrong context'],
+      strategies: ['Learn in context', 'Use spaced repetition', 'Practice with IPA'],
+    },
+  };
+
+  const persona = personas[taskType] || personas.vocabulary;
+
+  let prompt = `You are **${persona.name}**, ${persona.role}.\n\n`;
+  prompt += `## Your Focus Areas\n${persona.focus.map((f: string) => `- ${f}`).join('\n')}\n\n`;
+  prompt += `## Common Mistakes to Watch\n${persona.mistakes.map((m: string) => `- ${m}`).join('\n')}\n\n`;
+  prompt += `## Teaching Strategies\n${persona.strategies.map((s: string) => `- ${s}`).join('\n')}\n\n`;
+
+  if (goalScore) {
+    prompt += `**Learner Goal:** Achieve PTE score of ${goalScore}\n\n`;
+  }
+
+  prompt += `**Your Style:** Be supportive, specific, and actionable. Reference the learner's actual performance.\n`;
+
+  return prompt;
+}
+
+// ============================================
+// Save Conversation to Database (Phase 2)
+// ============================================
+
+async function saveConversationToDb(
   userId: string,
   userMessage: string,
   assistantResponse: string,
+  taskType?: string,
+  sessionId?: string,
   context?: ChatRequest['context']
 ): Promise<void> {
   try {
@@ -149,23 +329,36 @@ async function saveConversation(
 
     const supabase = createClient(supabaseUrl, supabaseKey);
 
-    // Save both messages
-    await supabase.from('chat_history').insert([
-      {
+    // Phase 2: Save to ai_conversations table
+    if (taskType) {
+      await supabase.from('ai_conversations').insert({
         user_id: userId,
-        role: 'user',
-        content: userMessage,
-        context: context || null,
-        created_at: new Date().toISOString()
-      },
-      {
-        user_id: userId,
-        role: 'assistant',
-        content: assistantResponse,
-        context: context || null,
-        created_at: new Date().toISOString()
-      }
-    ]);
+        session_id: sessionId || null,
+        task_context: taskType,
+        user_message: userMessage,
+        ai_response: assistantResponse,
+        context_data: context || {},
+        created_at: new Date().toISOString(),
+      });
+    } else {
+      // Phase 1: Legacy chat_history (if table exists)
+      await supabase.from('chat_history').insert([
+        {
+          user_id: userId,
+          role: 'user',
+          content: userMessage,
+          context: context || null,
+          created_at: new Date().toISOString()
+        },
+        {
+          user_id: userId,
+          role: 'assistant',
+          content: assistantResponse,
+          context: context || null,
+          created_at: new Date().toISOString()
+        }
+      ]);
+    }
   } catch (error) {
     console.error('Failed to save conversation:', error);
     // Don't throw - saving is optional
@@ -201,7 +394,16 @@ export default async function handler(
 
   try {
     // Parse request
-    const { message, context, conversationHistory, userId } = req.body as ChatRequest;
+    const {
+      message,
+      context,
+      conversationHistory,
+      userId,
+      taskType,
+      sessionId,
+      currentItem,
+      useEnhancedContext
+    } = req.body as ChatRequest;
 
     // Validate
     if (!message || message.trim().length === 0) {
@@ -225,21 +427,71 @@ export default async function handler(
     // Initialize Gemini with official SDK (from docs.google.com/gemini-api)
     const ai = new GoogleGenAI({ apiKey });
 
-    // Build comprehensive prompt with system instructions and conversation history
-    let fullPrompt = SYSTEM_PROMPT + buildContextPrompt(context);
+    let fullPrompt: string;
 
-    // Add conversation history (last 10 messages)
-    if (conversationHistory && conversationHistory.length > 0) {
-      const recentHistory = conversationHistory.slice(-10);
-      fullPrompt += '\n\nConversation history:\n';
-      recentHistory.forEach(msg => {
-        fullPrompt += `${msg.role === 'user' ? 'Student' : 'Tutor'}: ${msg.content}\n`;
-      });
-      fullPrompt += '\n';
+    // ============================================
+    // Phase 2: Enhanced Context Mode
+    // ============================================
+    if (useEnhancedContext && taskType && userId) {
+      // Get learner profile goal score
+      const supabaseUrl = process.env.SUPABASE_URL;
+      const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+      let goalScore: number | undefined;
+
+      if (supabaseUrl && supabaseKey) {
+        const supabase = createClient(supabaseUrl, supabaseKey);
+        const { data: profile } = await supabase
+          .from('learner_profiles')
+          .select('pte_goal_score')
+          .eq('user_id', userId)
+          .single();
+        goalScore = profile?.pte_goal_score;
+      }
+
+      // Build persona system prompt
+      fullPrompt = generatePersonaPrompt(taskType, goalScore);
+
+      // Add enhanced context
+      const enhancedContext = await buildEnhancedContext(
+        userId,
+        taskType,
+        sessionId,
+        currentItem
+      );
+      fullPrompt += enhancedContext;
+
+      // Add conversation history if available
+      if (conversationHistory && conversationHistory.length > 0) {
+        const recentHistory = conversationHistory.slice(-6); // Last 6 messages
+        fullPrompt += '\n\n## Recent Conversation\n\n';
+        recentHistory.forEach(msg => {
+          fullPrompt += `**${msg.role === 'user' ? 'Learner' : 'You'}:** ${msg.content}\n\n`;
+        });
+      }
+
+      // Add current user message
+      fullPrompt += `\n**Learner:** ${message}\n\n**You:**`;
     }
+    // ============================================
+    // Phase 1: Legacy Mode
+    // ============================================
+    else {
+      // Build comprehensive prompt with system instructions and conversation history
+      fullPrompt = SYSTEM_PROMPT + buildContextPrompt(context);
 
-    // Add current user message
-    fullPrompt += `\nStudent: ${message}\n\nTutor:`;
+      // Add conversation history (last 10 messages)
+      if (conversationHistory && conversationHistory.length > 0) {
+        const recentHistory = conversationHistory.slice(-10);
+        fullPrompt += '\n\nConversation history:\n';
+        recentHistory.forEach(msg => {
+          fullPrompt += `${msg.role === 'user' ? 'Student' : 'Tutor'}: ${msg.content}\n`;
+        });
+        fullPrompt += '\n';
+      }
+
+      // Add current user message
+      fullPrompt += `\nStudent: ${message}\n\nTutor:`;
+    }
 
     // Call Gemini API with official SDK
     const response = await ai.models.generateContent({
@@ -251,7 +503,7 @@ export default async function handler(
 
     // Save conversation if userId provided
     if (userId) {
-      saveConversation(userId, message, answer, context).catch(err =>
+      saveConversationToDb(userId, message, answer, taskType, sessionId, context).catch(err =>
         console.error('Background save failed:', err)
       );
     }

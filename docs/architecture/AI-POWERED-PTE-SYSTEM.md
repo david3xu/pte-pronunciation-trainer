@@ -1194,8 +1194,11 @@ export const AI_CONFIG = {
 
   // Session tracking
   sessionSettings: {
-    autoSaveInterval: 30000, // 30 seconds
+    autoSaveInterval: 120000, // 2 minutes (reduced from 30s to prevent Supabase overload)
     maxSessionDuration: 7200000, // 2 hours
+    batchSize: 10, // Group multiple items before saving
+    backgroundSync: true, // Use service worker for background sync
+    debounceWrites: true, // Prevent duplicate saves
   },
 };
 
@@ -1278,6 +1281,115 @@ export interface SessionState {
 - AI knows what you're practicing
 - Different AI behavior per task
 - AI remembers past conversations
+
+---
+
+### Phase 1.5: Data Migration (1 week)
+
+**Goals:**
+- ✅ Migrate existing localStorage data to Supabase
+- ✅ No data loss for existing users
+- ✅ Smooth transition to new system
+
+**Tasks:**
+1. Build `migrationService.ts` to detect existing localStorage data
+2. Create migration UI component with progress indicator
+3. Parse localStorage progress data (practice history, preferences)
+4. Transform data to match new database schema
+5. Implement bulk insert to Supabase with error handling
+6. Verify migration success (compare counts, validate data)
+7. Clear old localStorage after user confirmation
+8. Add rollback capability if migration fails
+
+**Implementation:**
+```typescript
+// src/services/migrationService.ts
+interface LocalStorageData {
+  practiceProgress: any;
+  userPreferences: any;
+  vocabularyProgress: any;
+}
+
+async function migrateUserData(userId: string): Promise<MigrationResult> {
+  // 1. Detect existing data
+  const hasOldData = localStorage.getItem('practice_progress') !== null;
+  if (!hasOldData) {
+    return { status: 'no_data', message: 'No data to migrate' };
+  }
+
+  // 2. Parse localStorage
+  const oldData: LocalStorageData = {
+    practiceProgress: JSON.parse(localStorage.getItem('practice_progress') || '{}'),
+    userPreferences: JSON.parse(localStorage.getItem('user_preferences') || '{}'),
+    vocabularyProgress: JSON.parse(localStorage.getItem('vocabulary_progress') || '{}'),
+  };
+
+  // 3. Transform to new schema
+  const sessions = oldData.practiceProgress.sessions?.map(s => ({
+    user_id: userId,
+    task_type: s.mode || 'vocabulary',
+    dataset_id: s.datasetId || 'unknown',
+    started_at: new Date(s.timestamp),
+    completed_at: s.completedAt ? new Date(s.completedAt) : null,
+    items_attempted: s.items?.length || 0,
+    items_correct: s.items?.filter(i => i.correct).length || 0,
+    accuracy: s.accuracy || 0,
+    mode: 'practice',
+  })) || [];
+
+  // 4. Bulk insert with error handling
+  try {
+    const { data, error } = await supabase
+      .from('practice_sessions')
+      .insert(sessions);
+
+    if (error) throw error;
+
+    // 5. Create learner profile
+    await supabase.from('learner_profiles').upsert({
+      user_id: userId,
+      goal_score: oldData.userPreferences.goalScore || 79,
+      target_date: oldData.userPreferences.targetDate || null,
+      preferences: oldData.userPreferences,
+    });
+
+    return {
+      status: 'success',
+      message: `Migrated ${sessions.length} sessions`,
+      sessionsCount: sessions.length,
+    };
+  } catch (error) {
+    console.error('Migration failed:', error);
+    return {
+      status: 'error',
+      message: error.message,
+    };
+  }
+}
+
+// Show migration prompt to user
+function showMigrationPrompt(): void {
+  const hasOldData = localStorage.getItem('practice_progress') !== null;
+  if (hasOldData && !localStorage.getItem('migration_completed')) {
+    // Show modal asking user to migrate
+    showModal({
+      title: 'Migrate Your Progress',
+      message: 'We found existing practice data. Migrate to the new system to keep your progress across devices.',
+      actions: [
+        { label: 'Migrate Now', onClick: () => runMigration() },
+        { label: 'Later', onClick: () => dismissModal() },
+      ],
+    });
+  }
+}
+```
+
+**Deliverables:**
+- Existing users don't lose progress ✅
+- Smooth transition with user consent
+- Rollback capability if issues occur
+- Progress indicator during migration
+- Backup of old data (kept until user confirms)
 
 ---
 
@@ -1366,7 +1478,14 @@ export interface SessionState {
 
 ---
 
-**Total Timeline: 14 weeks (3.5 months)**
+**Total Timeline: 15 weeks (3.5-4 months)**
+- Phase 1: Database (2 weeks)
+- Phase 1.5: Data Migration (1 week)
+- Phase 2: AI Context (3 weeks)
+- Phase 3: Weak Area Detection (2 weeks)
+- Phase 4: Proactive AI (2 weeks)
+- Phase 5: UI Redesign (3 weeks)
+- Phase 6: Mock Exams (2 weeks)
 
 ---
 
@@ -1603,6 +1722,162 @@ const FEATURES = {
 // Gradual enable
 if (FEATURES.sessionTracking) {
   await sessionManager.start();
+}
+```
+
+---
+
+### Step 4: Rollback Strategy
+
+**If database implementation fails or causes issues:**
+
+**Immediate Rollback (< 1 hour):**
+```typescript
+// 1. Feature flags allow instant rollback
+VITE_ENABLE_SESSION_TRACKING=false
+VITE_ENABLE_AI_CONTEXT=false
+
+// 2. Restart services - app reverts to JSON + localStorage mode
+npm run build && vercel deploy
+```
+
+**Safety Measures:**
+- ✅ **Parallel systems**: JSON datasets unchanged, localStorage still works
+- ✅ **No data loss**: Old UI can be re-enabled instantly
+- ✅ **Gradual rollout**: 10% → 50% → 100% catches issues early
+- ✅ **Feature flags**: Toggle features without code changes
+- ✅ **Database migrations**: Can be rolled back via Supabase dashboard
+
+**Rollback Triggers:**
+- Database response time > 2 seconds
+- Error rate > 5%
+- User complaints about data loss
+- Supabase downtime
+- Cost exceeding budget
+
+**Communication Plan:**
+```
+If rollback needed:
+1. Announce via in-app banner: "Temporarily reverting to classic mode"
+2. Investigate root cause
+3. Fix issues in staging
+4. Re-deploy gradually
+```
+
+---
+
+## Security Considerations
+
+### API Key Security
+
+**Storage Encryption:**
+```typescript
+// Encrypt API key before storing
+async function encryptApiKey(apiKey: string, userPassword: string): Promise<string> {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(apiKey);
+
+  // Derive encryption key from user password
+  const keyMaterial = await crypto.subtle.importKey(
+    'raw',
+    encoder.encode(userPassword),
+    { name: 'PBKDF2' },
+    false,
+    ['deriveKey']
+  );
+
+  const key = await crypto.subtle.deriveKey(
+    {
+      name: 'PBKDF2',
+      salt: encoder.encode('pte-trainer-salt'), // Use random salt per user
+      iterations: 100000,
+      hash: 'SHA-256',
+    },
+    keyMaterial,
+    { name: 'AES-GCM', length: 256 },
+    false,
+    ['encrypt', 'decrypt']
+  );
+
+  // Encrypt with AES-GCM
+  const iv = crypto.getRandomValues(new Uint8Array(12));
+  const encrypted = await crypto.subtle.encrypt(
+    { name: 'AES-GCM', iv },
+    key,
+    data
+  );
+
+  // Store IV + encrypted data
+  const result = new Uint8Array(iv.length + encrypted.byteLength);
+  result.set(iv, 0);
+  result.set(new Uint8Array(encrypted), iv.length);
+
+  return btoa(String.fromCharCode(...result));
+}
+
+// Store encrypted key
+const encryptedKey = await encryptApiKey(userApiKey, userPassword);
+localStorage.setItem('gemini_key_encrypted', encryptedKey);
+```
+
+**RLS Policies (Supabase):**
+```sql
+-- API keys NEVER stored in database
+-- All AI calls made from:
+-- 1. Client-side (browser → Google directly)
+-- 2. Serverless functions (using user's key or env var)
+
+-- Ensure users can only access their own data
+CREATE POLICY "Users access own sessions only"
+ON practice_sessions FOR ALL
+USING (auth.uid() = user_id);
+
+CREATE POLICY "Users access own profile only"
+ON learner_profiles FOR ALL
+USING (auth.uid() = user_id);
+
+CREATE POLICY "Users access own conversations only"
+ON ai_conversations FOR ALL
+USING (auth.uid() = user_id);
+```
+
+**Threat Model:**
+- ✅ **Keys encrypted in localStorage** (AES-GCM with PBKDF2)
+- ✅ **Keys never sent to our servers** (client → Google only)
+- ✅ **Users can revoke/rotate keys anytime** (just update in settings)
+- ✅ **HTTPS enforced** (Vercel default)
+- ⚠️ **XSS can still steal keys** (standard web app risk, mitigated by CSP)
+- ⚠️ **Physical access risk** (if user leaves device unlocked)
+
+**Content Security Policy (CSP):**
+```html
+<!-- index.html -->
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+               script-src 'self' 'unsafe-inline' 'unsafe-eval';
+               connect-src 'self' https://generativelanguage.googleapis.com https://*.supabase.co;
+               style-src 'self' 'unsafe-inline';">
+```
+
+**Key Rotation:**
+```typescript
+// Allow users to rotate API keys easily
+async function rotateApiKey(newKey: string): Promise<void> {
+  // 1. Validate new key
+  const isValid = await testGeminiKey(newKey);
+  if (!isValid) {
+    throw new Error('Invalid API key');
+  }
+
+  // 2. Encrypt and store new key
+  const encrypted = await encryptApiKey(newKey, userPassword);
+  localStorage.setItem('gemini_key_encrypted', encrypted);
+
+  // 3. Clear cache
+  localStorage.removeItem('ai_response_cache');
+
+  // 4. Notify user
+  showNotification('API key updated successfully', 'success');
 }
 ```
 
@@ -2130,16 +2405,20 @@ describe('AI Context Builder', () => {
 
 With the clarifications above and configuration centralization, this architecture is **excellent** and ready to implement!
 
-**Priority Phases (Updated with Config Cleanup):**
+**Priority Phases (Updated with Config Cleanup & Data Migration):**
 0. **Phase 0 (FOUNDATION)**: Configuration Cleanup (1-2 weeks) → Fix architectural debt
 1. **Phase 1 (CRITICAL)**: Database + Session Tracking (2 weeks) → Enables everything else
+1.5. **Phase 1.5 (DATA MIGRATION)**: localStorage → Supabase (1 week) → No data loss
 2. **Phase 2 (HIGH VALUE)**: AI Context (3 weeks) → Main differentiator
 3. **Phase 3 (GAME CHANGER)**: Weak Area Detection (2 weeks) → Personalization
 4. **Phase 4 (POLISH)**: Proactive AI (2 weeks) → Magic moments
 5. **Phase 5 (UX)**: UI Redesign (3 weeks) → Professional finish
 6. **Phase 6 (NICE TO HAVE)**: Mock Exams (2 weeks) → Complete experience
 
-**Total Timeline: 15-16 weeks (3.5-4 months)**
+**Total Timeline: 16-18 weeks (4-4.5 months)**
+- With Phase 0 config cleanup: 1-2 weeks
+- With Phase 1.5 data migration: +1 week
+- With 20% buffer for unknowns: +2-3 weeks
 
 **Killer Features:**
 - 🎯 Context-aware AI that understands user's learning journey

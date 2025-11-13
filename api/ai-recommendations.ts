@@ -10,10 +10,11 @@
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import { AI_CONFIG, LIMITS, getGeminiApiKey } from './config';
 
-// Initialize Gemini client
+// Initialize Gemini client using centralized config
 const getGeminiClient = () => {
-  const apiKey = process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY;
+  const apiKey = getGeminiApiKey();
 
   if (!apiKey) {
     return null;
@@ -96,8 +97,16 @@ Return ONLY a JSON array of 5 recommendations in this exact format:
 
 Return only valid JSON array, no additional text.`;
 
-    // Call Gemini API - using gemini-2.5-flash (standardized across all routes)
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
+    // Call Gemini API using centralized config
+    const model = genAI.getGenerativeModel({
+      model: AI_CONFIG.gemini.defaultModel,
+      generationConfig: {
+        maxOutputTokens: AI_CONFIG.gemini.maxTokens,
+        temperature: AI_CONFIG.gemini.temperature,
+        topP: AI_CONFIG.gemini.topP,
+        topK: AI_CONFIG.gemini.topK,
+      },
+    });
     const result = await model.generateContent(prompt);
     const response = await result.response;
     const responseText = response.text();
@@ -130,10 +139,10 @@ Return only valid JSON array, no additional text.`;
       recommendations = getMockRecommendations(currentAccuracy);
     }
 
-    // Return recommendations
+    // Return recommendations using centralized limit
     return res.status(200).json({
       success: true,
-      data: recommendations.slice(0, 5), // Limit to 5 recommendations
+      data: recommendations.slice(0, LIMITS.recommendations),
     });
   } catch (error: any) {
     console.error('AI Recommendations error:', error);

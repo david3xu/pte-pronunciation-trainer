@@ -10,6 +10,7 @@
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { GoogleGenAI } from '@google/genai';
+import { AI_CONFIG, getGeminiApiKey } from './config';
 
 interface RequestBody {
   targetText: string;
@@ -56,8 +57,8 @@ export default async function handler(
       });
     }
 
-    // Check if Gemini API key is configured
-    const apiKey = process.env.GEMINI_API || process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY;
+    // Check if Gemini API key is configured using centralized config
+    const apiKey = getGeminiApiKey();
     if (!apiKey) {
       console.warn('Gemini API key not configured - returning mock response');
       return res.status(200).json({
@@ -101,10 +102,16 @@ Difficulty level: ${difficulty}
 Please analyze the pronunciation and provide your assessment in JSON format.
 Return ONLY valid JSON, no additional text.`;
 
-    // Call Gemini API with official SDK
+    // Call Gemini API with official SDK using centralized config
     const response = await genAI.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: AI_CONFIG.gemini.defaultModel,
       contents: prompt,
+      config: {
+        maxOutputTokens: AI_CONFIG.gemini.maxTokens,
+        temperature: AI_CONFIG.gemini.temperature,
+        topP: AI_CONFIG.gemini.topP,
+        topK: AI_CONFIG.gemini.topK,
+      },
     });
     const responseContent = response.text;
 

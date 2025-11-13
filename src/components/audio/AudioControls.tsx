@@ -17,6 +17,7 @@ import {
 } from '@radix-ui/react-icons';
 import { useAppStore } from '../../ts/stores';
 import { ttsEngine } from '../../ts/audio/TTSEngine';
+import { appConfig } from '../../ts/shared/Config';
 
 const AudioControls: React.FC = () => {
   const audio = useAppStore((state) => state.audio);
@@ -56,8 +57,8 @@ const AudioControls: React.FC = () => {
             if (dataset && nextIndex < dataset.length) {
               const nextItem = dataset[nextIndex];
               if (nextItem) {
-                // Small delay between words (0.5 seconds)
-                await new Promise(resolve => setTimeout(resolve, 500));
+                // Small delay between words (from config)
+                await new Promise(resolve => setTimeout(resolve, appConfig.get('delays.autoPlayBetweenWords')));
 
                 if (audio.isAutoPlaying && !audio.isPaused && autoPlayRef.current) {
                   console.log('[AudioControls] Moving to next item:', nextIndex + 1);
@@ -75,7 +76,8 @@ const AudioControls: React.FC = () => {
                 console.log('[AudioControls] Repeat mode ON - looping back to start');
                 const firstItem = dataset?.[0];
                 if (firstItem && dataset) {
-                  await new Promise(resolve => setTimeout(resolve, 1000)); // 1 second pause before restarting
+                  // Pause before restarting (from config)
+                  await new Promise(resolve => setTimeout(resolve, appConfig.get('delays.autoPlayRestartPause')));
                   if (audio.isAutoPlaying && !audio.isPaused && autoPlayRef.current) {
                     audio.setCurrentIndex(0);
                     vocabulary.setCurrentItem(firstItem);

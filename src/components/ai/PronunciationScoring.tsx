@@ -17,6 +17,7 @@ import {
 } from '@radix-ui/react-icons';
 import { useAppStore } from '../../ts/stores';
 import { getPronunciationScore } from '../../services/ai';
+import { appConfig } from '../../ts/shared/Config';
 
 interface PronunciationScoringProps {
   isOpen?: boolean;
@@ -122,10 +123,10 @@ const PronunciationScoring: React.FC<PronunciationScoringProps> = ({ isOpen = tr
     try {
       recognitionRef.current.start();
 
-      // Auto-stop after 10 seconds
+      // Auto-stop after timeout (from config)
       recordingTimeoutRef.current = setTimeout(() => {
         handleStopRecording();
-      }, 10000);
+      }, appConfig.get('delays.recordingTimeout'));
     } catch (err) {
       console.error('Failed to start recording:', err);
       setError('🎤 Recording failed to start. Action: 1) Grant microphone permissions, 2) Close other apps using microphone, 3) Reload page and try again.');

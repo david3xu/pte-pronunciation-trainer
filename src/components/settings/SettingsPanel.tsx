@@ -89,6 +89,8 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
         setCurrentItem(items[0]);
         setCurrentIndex(0);
       }
+
+      setLoading(false);
     } catch (error) {
       console.error('[SettingsPanel] Error loading vocabulary:', error);
       setLoading(false);
@@ -144,6 +146,8 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
         setCurrentItem(items[0]);
         setCurrentIndex(0);
       }
+
+      setLoading(false);
     } catch (error) {
       console.error('[SettingsPanel] Error loading practice dataset:', error);
       setLoading(false);

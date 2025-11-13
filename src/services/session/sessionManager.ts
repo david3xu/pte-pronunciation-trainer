@@ -14,8 +14,9 @@
  * - Sync: Service Worker background sync
  */
 
-import { createClient, SupabaseClient } from '@supabase/supabase-js';
+import type { SupabaseClient } from '@supabase/supabase-js';
 import localForage from 'localforage';
+import supabase from '../supabase/client';
 import type { Database, PracticeSessionInsert, SessionItemInsert, TaskType, PracticeMode, ItemType } from '../../types/database';
 
 // ============================================================================
@@ -87,11 +88,9 @@ export class SessionManager {
   // ============================================================================
 
   private initializeSupabase(): void {
-    const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-    const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
-
-    if (supabaseUrl && supabaseKey) {
-      this.supabase = createClient<Database>(supabaseUrl, supabaseKey);
+    // Use shared Supabase client to avoid multiple instances
+    if (supabase) {
+      this.supabase = supabase as SupabaseClient<Database>;
     } else {
       console.warn('[SessionManager] Supabase not configured, using offline-only mode');
     }

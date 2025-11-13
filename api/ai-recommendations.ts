@@ -9,7 +9,7 @@
  */
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import { GoogleGenAI } from '@google/genai';
 import { AI_CONFIG, LIMITS, getGeminiApiKey } from './config';
 
 // Initialize Gemini client using centralized config
@@ -20,7 +20,7 @@ const getGeminiClient = () => {
     return null;
   }
 
-  return new GoogleGenerativeAI(apiKey);
+  return new GoogleGenAI({ apiKey });
 };
 
 interface RequestBody {
@@ -98,18 +98,11 @@ Return ONLY a JSON array of 5 recommendations in this exact format:
 Return only valid JSON array, no additional text.`;
 
     // Call Gemini API using centralized config
-    const model = genAI.getGenerativeModel({
+    const response = await genAI.models.generateContent({
       model: AI_CONFIG.gemini.defaultModel,
-      generationConfig: {
-        maxOutputTokens: AI_CONFIG.gemini.maxTokens,
-        temperature: AI_CONFIG.gemini.temperature,
-        topP: AI_CONFIG.gemini.topP,
-        topK: AI_CONFIG.gemini.topK,
-      },
+      contents: prompt,
     });
-    const result = await model.generateContent(prompt);
-    const response = await result.response;
-    const responseText = response.text();
+    const responseText = response.text;
 
     // Parse Gemini response
     let recommendations: Recommendation[];

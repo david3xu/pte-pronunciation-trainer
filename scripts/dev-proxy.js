@@ -151,7 +151,7 @@ async function handleApiRequest(req, res) {
 
 // Handle AI Chat requests directly
 async function handleAIChatRequest(req, res) {
-  const { GoogleGenerativeAI } = await import('@google/generative-ai');
+  const { GoogleGenAI } = await import('@google/genai');
 
   // Handle CORS
   res.setHeader('Access-Control-Allow-Origin', '*');

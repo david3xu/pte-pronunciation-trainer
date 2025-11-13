@@ -97,6 +97,61 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
     }
   };
 
+  // Handle practice mode change (RS/ASQ/WFD)
+  const handlePracticeModeChange = async (mode: 'rs' | 'asq' | 'wfd' | null) => {
+    console.log('[SettingsPanel] Changing practice mode to:', mode);
+
+    if (typeof updateSetting !== 'function') {
+      console.error('[SettingsPanel] updateSetting is not a function!', updateSetting);
+      return;
+    }
+
+    updateSetting('practiceMode', mode);
+
+    if (!mode) return;
+
+    // Reload practice dataset
+    setLoading(true);
+
+    try {
+      const practiceDataPathMap: Record<string, string> = {
+        'rs': '/data/processed/pte-repeat-sentence-dataset.json',
+        'asq': '/data/processed/pte-answer-short-question-dataset.json',
+        'wfd': '/data/processed/pte-write-from-dictation-dataset.json',
+      };
+
+      const dataPath = practiceDataPathMap[mode];
+      if (!dataPath) {
+        throw new Error(`Unknown practice mode: ${mode}`);
+      }
+
+      console.log('[SettingsPanel] Loading practice dataset:', mode, 'from:', dataPath);
+
+      const response = await fetch(dataPath);
+      if (!response.ok) {
+        throw new Error(`Failed to load practice dataset: ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      // Practice datasets have different structures - try both 'items' and 'sentences'
+      const items = data.items || data.sentences || data.questions || [];
+
+      console.log(`[SettingsPanel] Loaded ${items.length} practice items`);
+      setDataset(items, mode);
+
+      // Set first item as current and reset index
+      if (items.length > 0) {
+        setCurrentItem(items[0]);
+        setCurrentIndex(0);
+      }
+    } catch (error) {
+      console.error('[SettingsPanel] Error loading practice dataset:', error);
+      setLoading(false);
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      alert(`Failed to load practice dataset.\n\nError: ${errorMessage}`);
+    }
+  };
+
   if (!isOpen) return null;
 
   return (
@@ -146,22 +201,25 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
               {practiceType === 'practice' && (
                 <Flex direction="column" gap="2">
                   <Text size="3" weight="medium">Practice Mode</Text>
+                  <Text size="2" color="gray" mb="1">
+                    Choose a PTE practice task type
+                  </Text>
                   <Select.Root
                     value={practiceMode || ''}
                     onValueChange={(value) =>
-                      updateSetting('practiceMode', value as 'rs' | 'asq' | 'wfd' | null)
+                      handlePracticeModeChange(value as 'rs' | 'asq' | 'wfd' | null)
                     }
                   >
                     <Select.Trigger />
                     <Select.Content>
                       <Select.Item value="rs">
-                        Repeat Sentence (RS)
+                        🎤 Repeat Sentence (RS) - 620 sentences
                       </Select.Item>
                       <Select.Item value="asq">
-                        Answer Short Question (ASQ)
+                        ❓ Answer Short Question (ASQ) - 692 questions
                       </Select.Item>
                       <Select.Item value="wfd">
-                        Write From Dictation (WFD)
+                        ✍️ Write From Dictation (WFD) - 1,195 sentences
                       </Select.Item>
                     </Select.Content>
                   </Select.Root>

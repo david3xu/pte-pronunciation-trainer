@@ -20,7 +20,9 @@ import { SettingsPanel } from './components/settings';
 import { AITutorChat, PronunciationScoring } from './components/ai';
 import { WordCardSkeleton } from './components/shared';
 import DataMigrationModal from './components/migration/DataMigrationModal';
+import LearnerProfileModal from './components/profile/LearnerProfileModal';
 import { hasDataToMigrate } from './services/migration/migrationService';
+import { hasCompletedOnboarding, getLearnerProfile } from './services/profile/learnerProfileService';
 import { getSessionManager } from './services/session/sessionManager';
 import type { TaskType } from './types/database';
 import './css/tailwind.css';
@@ -37,6 +39,7 @@ const App: React.FC = () => {
   const [showPronunciationScoring, setShowPronunciationScoring] = useState(false);
   const [showProgress, setShowProgress] = useState(false);
   const [showMigration, setShowMigration] = useState(false);
+  const [showProfileOnboarding, setShowProfileOnboarding] = useState(false);
 
   // Session tracking
   const [sessionManager] = useState(() => getSessionManager());
@@ -55,7 +58,22 @@ const App: React.FC = () => {
       }
     };
 
+    // Check for learner profile onboarding
+    const checkOnboarding = async () => {
+      const user = useAppStore.getState().auth.user;
+      if (user && !hasCompletedOnboarding()) {
+        console.log('[App] User needs onboarding');
+        // Check if profile exists in database
+        const profile = await getLearnerProfile(user.id);
+        if (!profile || !profile.onboarding_completed) {
+          console.log('[App] Showing profile onboarding');
+          setShowProfileOnboarding(true);
+        }
+      }
+    };
+
     checkMigration();
+    checkOnboarding();
 
     // Load vocabulary data on startup
     const loadInitialVocabulary = async () => {
@@ -209,6 +227,18 @@ const App: React.FC = () => {
             onComplete={() => {
               setShowMigration(false);
               console.log('Migration completed successfully');
+            }}
+          />
+          <LearnerProfileModal
+            isOpen={showProfileOnboarding}
+            userId={useAppStore.getState().auth.user?.id || ''}
+            onComplete={() => {
+              setShowProfileOnboarding(false);
+              console.log('[App] Profile onboarding completed');
+            }}
+            onSkip={() => {
+              setShowProfileOnboarding(false);
+              console.log('[App] Profile onboarding skipped');
             }}
           />
           <SettingsPanel isOpen={showSettings} onClose={() => setShowSettings(false)} />

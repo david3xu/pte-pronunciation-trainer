@@ -19,6 +19,8 @@ import { AudioControls } from './components/audio';
 import { SettingsPanel } from './components/settings';
 import { AITutorChat, PronunciationScoring } from './components/ai';
 import { WordCardSkeleton } from './components/shared';
+import DataMigrationModal from './components/migration/DataMigrationModal';
+import { hasDataToMigrate } from './services/migration/migrationService';
 import './css/tailwind.css';
 
 const App: React.FC = () => {
@@ -32,10 +34,22 @@ const App: React.FC = () => {
   const [showAITutor, setShowAITutor] = useState(false);
   const [showPronunciationScoring, setShowPronunciationScoring] = useState(false);
   const [showProgress, setShowProgress] = useState(false);
+  const [showMigration, setShowMigration] = useState(false);
 
   // Initialize app on mount
   useEffect(() => {
     console.log('React App mounted');
+
+    // Check for data migration on startup
+    const checkMigration = () => {
+      const user = useAppStore.getState().auth.user;
+      if (user && hasDataToMigrate()) {
+        console.log('Migration data detected for signed-in user');
+        setShowMigration(true);
+      }
+    };
+
+    checkMigration();
 
     // Load vocabulary data on startup
     const loadInitialVocabulary = async () => {
@@ -154,6 +168,14 @@ const App: React.FC = () => {
           </header>
 
           {/* Modals/Panels - Render as overlays, not inline */}
+          <DataMigrationModal
+            isOpen={showMigration}
+            onClose={() => setShowMigration(false)}
+            onComplete={() => {
+              setShowMigration(false);
+              console.log('Migration completed successfully');
+            }}
+          />
           <SettingsPanel isOpen={showSettings} onClose={() => setShowSettings(false)} />
           <AITutorChat isOpen={showAITutor} onClose={() => setShowAITutor(false)} />
           <PronunciationScoring

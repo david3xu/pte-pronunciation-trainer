@@ -27,14 +27,15 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
   const ttsVoice = useAppStore((state) => state.settings.ttsVoice);
   const audioVolume = useAppStore((state) => state.audio.volume);
 
-  // Get methods - access the whole store to get methods
-  const updateSetting = useAppStore((state) => state.settings.updateSetting);
-  const resetSettings = useAppStore((state) => state.settings.resetSettings);
-  const setVolume = useAppStore((state) => state.audio.setVolume);
-  const setLoading = useAppStore((state) => state.vocabulary.setLoading);
-  const setDataset = useAppStore((state) => state.vocabulary.setDataset);
-  const setCurrentItem = useAppStore((state) => state.vocabulary.setCurrentItem);
-  const setCurrentIndex = useAppStore((state) => state.audio.setCurrentIndex);
+  // Get methods - use direct references (not selectors) to avoid undefined
+  // Zustand has issues with nested function selectors, so we get them this way
+  const updateSetting = useAppStore.getState().settings.updateSetting;
+  const resetSettings = useAppStore.getState().settings.resetSettings;
+  const setVolume = useAppStore.getState().audio.setVolume;
+  const setLoading = useAppStore.getState().vocabulary.setLoading;
+  const setDataset = useAppStore.getState().vocabulary.setDataset;
+  const setCurrentItem = useAppStore.getState().vocabulary.setCurrentItem;
+  const setCurrentIndex = useAppStore.getState().audio.setCurrentIndex;
 
   // Handle vocabulary book change
   const handleVocabularyBookChange = async (bookId: string) => {

@@ -12,12 +12,13 @@ import {
   SpeakerLoudIcon,
   GearIcon,
   BarChartIcon,
+  LightningBoltIcon,
 } from '@radix-ui/react-icons';
 import { useAppStore } from './ts/stores';
 import { WordCard, ProgressTracker } from './components/practice';
 import { AudioControls } from './components/audio';
 import { SettingsPanel } from './components/settings';
-import { AITutorChat, PronunciationScoring } from './components/ai';
+import { AITutorChat, PronunciationScoring, WeakAreasDashboard } from './components/ai';
 import { WordCardSkeleton } from './components/shared';
 import DataMigrationModal from './components/migration/DataMigrationModal';
 import LearnerProfileModal from './components/profile/LearnerProfileModal';
@@ -40,6 +41,7 @@ const App: React.FC = () => {
   const [showProgress, setShowProgress] = useState(false);
   const [showMigration, setShowMigration] = useState(false);
   const [showProfileOnboarding, setShowProfileOnboarding] = useState(false);
+  const [showWeakAreas, setShowWeakAreas] = useState(false);
 
   // Session tracking
   const [sessionManager] = useState(() => getSessionManager());
@@ -201,6 +203,15 @@ const App: React.FC = () => {
                 <Button
                   variant="soft"
                   size="2"
+                  onClick={() => setShowWeakAreas(!showWeakAreas)}
+                  title="View AI insights and personalized recommendations"
+                >
+                  <LightningBoltIcon width="16" height="16" />
+                  <span className="ml-1">Insights</span>
+                </Button>
+                <Button
+                  variant="soft"
+                  size="2"
                   onClick={() => setShowPronunciationScoring(!showPronunciationScoring)}
                   title="Record and get AI feedback on your pronunciation"
                 >
@@ -243,6 +254,7 @@ const App: React.FC = () => {
           />
           <SettingsPanel isOpen={showSettings} onClose={() => setShowSettings(false)} />
           <AITutorChat isOpen={showAITutor} onClose={() => setShowAITutor(false)} />
+          <WeakAreasDashboard isOpen={showWeakAreas} onClose={() => setShowWeakAreas(false)} />
           <PronunciationScoring
             isOpen={showPronunciationScoring}
             onClose={() => setShowPronunciationScoring(false)}

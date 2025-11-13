@@ -5,7 +5,7 @@
  * Uses Gemini 1.5 Flash (free tier) for intelligent analysis.
  */
 
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import { GoogleGenAI } from '@google/genai';
 
 // Initialize Gemini API
 const getGeminiClient = () => {
@@ -16,7 +16,7 @@ const getGeminiClient = () => {
     return null;
   }
 
-  return new GoogleGenerativeAI(apiKey);
+  return new GoogleGenAI({ apiKey });
 };
 
 export interface UserProgress {
@@ -61,13 +61,13 @@ export async function generateRecommendations(
   }
 
   try {
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
-
     const prompt = buildRecommendationPrompt(userProgress);
 
-    const result = await model.generateContent(prompt);
-    const response = await result.response;
-    const text = response.text();
+    const response = await genAI.models.generateContent({
+      model: 'gemini-2.5-flash',
+      contents: prompt,
+    });
+    const text = response.text || '';
 
     // Parse AI response into structured recommendations
     const recommendations = parseAIResponse(text);
@@ -237,8 +237,6 @@ export async function getItemFeedback(
   }
 
   try {
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
-
     const prompt = `You are a pronunciation tutor. A student practiced the word "${word}".
 
 Results: ${userCorrect} correct out of ${userAttempts} attempts (${Math.round(userCorrect / userAttempts * 100)}%)
@@ -246,10 +244,12 @@ Results: ${userCorrect} correct out of ${userAttempts} attempts (${Math.round(us
 Provide ONE sentence of encouraging, specific feedback and a tip for improvement.
 Keep it under 30 words.`;
 
-    const result = await model.generateContent(prompt);
-    const response = await result.response;
+    const response = await genAI.models.generateContent({
+      model: 'gemini-2.5-flash',
+      contents: prompt,
+    });
 
-    return response.text().trim();
+    return (response.text || '').trim();
   } catch (error) {
     console.error('❌ Error getting item feedback:', error);
     return `Good effort on "${word}"! ${userCorrect}/${userAttempts} correct. Keep practicing!`;

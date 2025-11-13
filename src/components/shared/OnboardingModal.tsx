@@ -7,6 +7,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Card, Flex, Text, Button } from '@radix-ui/themes';
+import { appConfig } from '../../ts/shared/Config';
 import {
   Cross2Icon,
   ChatBubbleIcon,
@@ -252,8 +253,8 @@ export const useOnboarding = () => {
   useEffect(() => {
     const hasCompletedOnboarding = localStorage.getItem(ONBOARDING_KEY);
     if (!hasCompletedOnboarding) {
-      // Delay showing onboarding slightly for better UX
-      setTimeout(() => setShowOnboarding(true), 500);
+      // Delay showing onboarding slightly for better UX (from config)
+      setTimeout(() => setShowOnboarding(true), appConfig.get('delays.onboardingDelay'));
     }
   }, []);
 

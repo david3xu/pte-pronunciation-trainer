@@ -185,6 +185,7 @@
     "dotenv": "^17.2.3",
     "http-proxy": "^1.18.1",
     "immer": "^10.2.0",
+    "localforage": "^1.10.0",
     "openai": "^6.8.1",
     "posthog-js": "^1.290.0",
     "react-markdown": "^10.1.0",

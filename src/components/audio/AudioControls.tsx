@@ -89,7 +89,7 @@ const AudioControls: React.FC = () => {
       // Get the filtered dataset
       const filteredDataset = settings.difficultyFilter === 'all'
         ? items
-        : useAppStore.getState().vocabulary.filteredDataset;
+        : vocabulary.filteredDataset;
 
       // Set first item and reset index
       if (filteredDataset.length > 0) {

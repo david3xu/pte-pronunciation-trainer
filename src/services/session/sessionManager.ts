@@ -17,7 +17,7 @@
 import type { SupabaseClient } from '@supabase/supabase-js';
 import localForage from 'localforage';
 import supabase from '../supabase/client';
-import type { Database, PracticeSessionInsert, SessionItemInsert, TaskType, PracticeMode, ItemType } from '../../types/database';
+import type { Database, StudySessionInsert, SessionItemInsert, TaskType, PracticeMode, ItemType, DatasetType } from '../../types/database';
 
 // ============================================================================
 // Types
@@ -51,6 +51,7 @@ export interface CurrentSession {
   task_type: TaskType;
   dataset_id: string;
   started_at: string;
+  completed_at?: string; // Set when session completes
   items: SessionItemData[];
   settings: Record<string, any>;
 }
@@ -114,7 +115,7 @@ export class SessionManager {
   async startSession(
     taskType: TaskType,
     datasetId: string,
-    mode: PracticeMode = 'practice',
+    _mode: PracticeMode = 'practice', // Not used with study_sessions schema (for future practice_sessions migration)
     settings: Record<string, any> = {}
   ): Promise<string> {
     // Complete previous session if exists
@@ -137,36 +138,10 @@ export class SessionManager {
     // Save to localStorage immediately (backup)
     this.saveToLocalStorage(session);
 
-    // Attempt to save to Supabase
-    if (navigator.onLine && this.supabase) {
-      try {
-        const sessionData: PracticeSessionInsert = {
-          id: sessionId,
-          user_id: await this.getCurrentUserId(),
-          task_type: taskType,
-          dataset_id: datasetId,
-          started_at: session.started_at,
-          mode,
-          settings,
-        };
-
-        const { error } = await this.supabase
-          .from('practice_sessions')
-          // @ts-ignore - Supabase client type inference limitation with custom Database type
-          .insert(sessionData);
-
-        if (error) {
-          console.error('[SessionManager] Failed to save session to Supabase:', error);
-          await this.queueForSync(session);
-        }
-      } catch (error) {
-        console.error('[SessionManager] Error saving session:', error);
-        await this.queueForSync(session);
-      }
-    } else {
-      // Offline: queue for later sync
-      await this.queueForSync(session);
-    }
+    // Note: study_sessions table requires ended_at (completed sessions only)
+    // We'll save to Supabase when session completes in completeSession()
+    // For now, queue for later sync
+    await this.queueForSync(session);
 
     return sessionId;
   }
@@ -213,36 +188,53 @@ export class SessionManager {
     const items_correct = this.currentSession.items.filter((item) => item.is_correct === true).length;
     const accuracy = items_attempted > 0 ? (items_correct / items_attempted) * 100 : 0;
 
-    // Update session in Supabase
+    // Save completed session to Supabase (study_sessions table)
     if (navigator.onLine && this.supabase) {
       try {
         const userId = await this.getCurrentUserId();
+
+        // Map task_type to dataset_type for study_sessions schema
+        const dataset_type: DatasetType =
+          this.currentSession.task_type === 'vocabulary' ? 'vocabulary' : 'practice';
+
+        const sessionData: StudySessionInsert = {
+          id: this.currentSession.id,
+          user_id: userId,
+          dataset_id: this.currentSession.dataset_id,
+          dataset_type,
+          duration_seconds: duration_sec,
+          items_studied: items_attempted,
+          items_correct,
+          items_incorrect: items_attempted - items_correct,
+          items_skipped: 0, // Not tracked in current implementation
+          started_at: this.currentSession.started_at,
+          ended_at: completedAt,
+        };
+
         const { error } = await this.supabase
-          .from('practice_sessions')
+          .from('study_sessions')
           // @ts-ignore - Supabase client type inference limitation with custom Database type
-          .update({
-            completed_at: completedAt,
-            duration_sec,
-            items_attempted,
-            items_correct,
-            accuracy: Number(accuracy.toFixed(2)),
-          })
-          .eq('id', this.currentSession.id)
-          .eq('user_id', userId);
+          .insert(sessionData);
 
         if (error) {
-          console.error('[SessionManager] Failed to complete session:', error);
+          console.error('[SessionManager] Failed to save completed session:', error);
         }
       } catch (error) {
-        console.error('[SessionManager] Error completing session:', error);
+        console.error('[SessionManager] Error saving completed session:', error);
       }
     }
+
+    // Mark session as completed
+    this.currentSession.completed_at = completedAt;
+
+    // Update in localStorage for offline sync
+    this.saveToLocalStorage(this.currentSession);
 
     // Clear current session
     const completedSession = this.currentSession;
     this.currentSession = null;
 
-    // Remove from localStorage
+    // Remove from current-session (already in offline queue)
     localStorage.removeItem(`current-session`);
 
     // Archive to localStorage history
@@ -386,20 +378,42 @@ export class SessionManager {
           const session = await localForage.getItem<CurrentSession>(`offline-session-${id}`);
 
           if (session) {
-            // Save session
-            const sessionData: PracticeSessionInsert = {
+            // Only sync completed sessions (study_sessions requires ended_at)
+            // In-progress sessions stay queued until completion
+            if (!session.completed_at) {
+              console.log(`[SessionManager] Skipping incomplete session ${id}`);
+              continue;
+            }
+
+            // Calculate metrics for completed session
+            const items_studied = session.items.length;
+            const items_correct = session.items.filter((item: SessionItemData) => item.is_correct === true).length;
+            const started = new Date(session.started_at);
+            const ended = new Date(session.completed_at);
+            const duration_seconds = Math.floor((ended.getTime() - started.getTime()) / 1000);
+
+            // Map task_type to dataset_type for study_sessions schema
+            const dataset_type: DatasetType =
+              session.task_type === 'vocabulary' ? 'vocabulary' : 'practice';
+
+            const sessionData: StudySessionInsert = {
               id: session.id,
               user_id: await this.getCurrentUserId(),
-              task_type: session.task_type,
               dataset_id: session.dataset_id,
+              dataset_type,
+              duration_seconds,
+              items_studied,
+              items_correct,
+              items_incorrect: items_studied - items_correct,
+              items_skipped: 0,
               started_at: session.started_at,
-              settings: session.settings,
+              ended_at: session.completed_at,
             };
 
             const { error: sessionError } = await this.supabase
-              .from('practice_sessions')
+              .from('study_sessions')
               // @ts-ignore - Supabase client type inference limitation with custom Database type
-              .upsert(sessionData);
+              .insert(sessionData);
 
             if (!sessionError && session.items.length > 0) {
               // Save items
@@ -418,6 +432,10 @@ export class SessionManager {
                 await localForage.removeItem(`offline-session-${id}`);
                 syncedCount++;
               }
+            } else if (!sessionError) {
+              // Session saved but no items - still count as synced
+              await localForage.removeItem(`offline-session-${id}`);
+              syncedCount++;
             }
           }
         } catch (error) {

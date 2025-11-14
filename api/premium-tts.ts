@@ -10,6 +10,7 @@
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { PollyClient, SynthesizeSpeechCommand } from '@aws-sdk/client-polly';
+import { PREMIUM_VOICES } from './config';
 
 // Initialize AWS Polly client
 let pollyClient: PollyClient | null = null;
@@ -40,25 +41,6 @@ interface RequestBody {
   languageCode?: string;
   outputFormat?: 'mp3' | 'ogg_vorbis' | 'pcm';
 }
-
-// Available premium voices (neural engine)
-const PREMIUM_VOICES = {
-  'en-US': {
-    'Joanna': 'Female, American English (Neural)',
-    'Matthew': 'Male, American English (Neural)',
-    'Ruth': 'Female, American English (Neural)',
-    'Stephen': 'Male, American English (Neural)',
-  },
-  'en-GB': {
-    'Amy': 'Female, British English (Neural)',
-    'Emma': 'Female, British English (Neural)',
-    'Brian': 'Male, British English (Neural)',
-    'Arthur': 'Male, British English (Neural)',
-  },
-  'en-AU': {
-    'Olivia': 'Female, Australian English (Neural)',
-  },
-};
 
 export default async function handler(
   req: VercelRequest,

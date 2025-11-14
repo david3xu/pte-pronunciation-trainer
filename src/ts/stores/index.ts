@@ -457,8 +457,15 @@ export const useAppStore = create<AppState>()(
         {
           name: 'pte-app-storage', // LocalStorage key
           partialize: (state) => ({
-            // Only persist settings and progress
+            // Persist settings, audio preferences, and progress
             settings: state.settings,
+            audio: {
+              // Persist user preferences, not runtime state
+              autoPlayEnabled: state.audio.autoPlayEnabled,
+              repeatMode: state.audio.repeatMode,
+              playbackSpeed: state.audio.playbackSpeed,
+              volume: state.audio.volume,
+            },
             progress: {
               completedItems: Array.from(state.progress.completedItems), // Convert Set to Array
               currentIndex: state.progress.currentIndex,

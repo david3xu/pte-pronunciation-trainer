@@ -435,6 +435,7 @@ const App: React.FC = () => {
                   {interfaceType === 'rs' && (
                     <RSInterface
                       item={currentItem as any}
+                      sessionManager={sessionManager}
                       onNext={handleNext}
                       onPrevious={handlePrevious}
                       onComplete={handleItemComplete}
@@ -443,6 +444,7 @@ const App: React.FC = () => {
                   {interfaceType === 'asq' && (
                     <ASQInterface
                       item={currentItem as any}
+                      sessionManager={sessionManager}
                       onNext={handleNext}
                       onPrevious={handlePrevious}
                       onComplete={handleItemComplete}
@@ -451,6 +453,7 @@ const App: React.FC = () => {
                   {interfaceType === 'wfd' && (
                     <WFDInterface
                       item={currentItem as any}
+                      sessionManager={sessionManager}
                       onNext={handleNext}
                       onPrevious={handlePrevious}
                       onComplete={handleItemComplete}

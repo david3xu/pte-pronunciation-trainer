@@ -25,9 +25,12 @@ import {
 } from '@radix-ui/react-icons';
 import { ttsEngine } from '../../ts/audio/TTSEngine';
 import type { PracticeItem } from '../../types/dataset.types';
+import type { SessionManager } from '../../services/session/sessionManager';
+import type { ItemType } from '../../types/database';
 
 interface WFDInterfaceProps {
   item: PracticeItem;
+  sessionManager?: SessionManager;
   onNext?: () => void;
   onPrevious?: () => void;
   onComplete?: () => void;
@@ -44,6 +47,7 @@ interface FeedbackData {
 
 const WFDInterface: React.FC<WFDInterfaceProps> = ({
   item,
+  sessionManager,
   onNext,
   onPrevious,
   onComplete,
@@ -133,12 +137,33 @@ const WFDInterface: React.FC<WFDInterfaceProps> = ({
   };
 
   // Handle submission
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (!userInput.trim() || hasSubmitted) return;
 
     const feedbackData = compareWords(userInput, sentence);
     setFeedback(feedbackData);
     setHasSubmitted(true);
+
+    // Record session data to database (Phase 2)
+    if (sessionManager) {
+      try {
+        const itemId = (item as any).id || `wfd-${Date.now()}`;
+        await sessionManager.recordItem({
+          item_id: itemId,
+          item_type: 'sentence' as ItemType,
+          item_text: sentence,
+          user_response: userInput.trim(),
+          score: feedbackData.accuracy,
+          is_correct: feedbackData.accuracy >= 70,
+          attempts: 1,
+          time_spent_sec: playCount * 3, // Rough estimate based on play count
+        });
+        console.log('[WFDInterface] Session recorded:', itemId);
+      } catch (error) {
+        console.error('[WFDInterface] Failed to record session:', error);
+        // Don't block user flow on session recording failure
+      }
+    }
 
     // Notify parent component
     if (onComplete) {

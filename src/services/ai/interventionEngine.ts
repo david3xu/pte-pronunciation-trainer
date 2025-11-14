@@ -275,7 +275,7 @@ export async function calculateSessionMetrics(
   try {
     // Fetch current session
     const { data: session, error: sessionError } = await supabase
-      .from('practice_sessions')
+      .from('study_sessions')
       .select(`
         *,
         session_items (*)
@@ -331,7 +331,7 @@ export async function calculateSessionMetrics(
     todayStart.setHours(0, 0, 0, 0);
 
     const { data: todaySessions } = await supabase
-      .from('practice_sessions')
+      .from('study_sessions')
       .select('started_at, completed_at')
       .eq('user_id', userId)
       .gte('started_at', todayStart.toISOString());

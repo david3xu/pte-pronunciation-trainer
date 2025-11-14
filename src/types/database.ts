@@ -378,7 +378,7 @@ export interface UserProgressInsert extends Omit<UserProgress, 'id' | 'current_i
 export interface UserProgressUpdate extends Partial<Omit<UserProgress, 'id' | 'user_id' | 'created_at' | 'updated_at'>> {}
 
 // ----------------------------------------------------------------
-// study_sessions (from initial schema - deprecated, use practice_sessions)
+// study_sessions (active table in Supabase)
 // ----------------------------------------------------------------
 export interface StudySession {
   id: string; // UUID

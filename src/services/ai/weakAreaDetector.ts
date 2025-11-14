@@ -47,7 +47,7 @@ export async function detectWeakAreas(
     cutoffDate.setDate(cutoffDate.getDate() - lookbackDays);
 
     const { data: sessions, error: sessionsError } = await supabase
-      .from('practice_sessions')
+      .from('study_sessions')
       .select(`
         id,
         task_type,

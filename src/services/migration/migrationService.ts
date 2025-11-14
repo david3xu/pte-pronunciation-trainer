@@ -304,7 +304,7 @@ export async function performMigration(
     onProgress?.({ phase: 'inserting', progress: 60, message: 'Uploading to database...' });
 
     // Insert sessions
-    const { error: sessionsError } = await supabaseClient.from('practice_sessions').insert(sessions);
+    const { error: sessionsError } = await supabaseClient.from('study_sessions').insert(sessions);
 
     if (sessionsError) {
       console.error('[Migration] Error inserting sessions:', sessionsError);
@@ -326,7 +326,7 @@ export async function performMigration(
     onProgress?.({ phase: 'verifying', progress: 80, message: 'Verifying migration...' });
 
     const { error: countError } = await supabaseClient
-      .from('practice_sessions')
+      .from('study_sessions')
       .select('*', { count: 'exact', head: true })
       .eq('user_id', user.id);
 

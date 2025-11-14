@@ -65,7 +65,7 @@ export async function generateRecommendations(
 
     // 3. Fetch recent session stats
     const { data: recentSessions } = await supabase
-      .from('practice_sessions')
+      .from('study_sessions')
       .select('task_type, accuracy, items_attempted')
       .eq('user_id', userId)
       .order('started_at', { ascending: false })

@@ -56,7 +56,7 @@ const PracticeModeSelector: React.FC = () => {
   return (
     <Card size="3">
       <Flex direction="column" gap="4">
-        <Text size="4" weight="bold">Practice Mode</Text>
+        <Text size="4" weight="bold">Study Mode</Text>
 
         <Flex direction="column" gap="3">
           {modes.map((mode, index) => {

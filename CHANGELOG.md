@@ -7,6 +7,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [3.0.0] - 2025-11-14
+
+### 🎉 AI-Powered Release - Production Ready
+
+#### **Major Features**
+- ✅ **Google Gemini Integration** - AI-powered pronunciation scoring, context-aware tutoring
+- ✅ **Supabase Session Tracking** - Cloud sync for practice sessions, offline-first with auto-sync
+- ✅ **Phase 5 Complete** - RS/ASQ/WFD interfaces, Progress Dashboard, AI Sidebar, Weak Area Analysis
+- ✅ **Auto-Switch Books** - Automatically cycle through all 14 vocabulary books
+- ✅ **iOS PWA Auto-Update** - Aggressive update checking for iPhone home screen app
+
+#### **Bug Fixes**
+- ✅ Fixed SessionManager authentication error spam (graceful offline-first handling)
+- ✅ Fixed Settings dropdown stuck in loading state
+- ✅ Fixed spelling errors in vocabulary datasets (determin → determine, Unitied → United)
+- ✅ Version consistency across all files (v3.0.0)
+
+#### **Code Quality**
+- ✅ Removed dead code (unused AI service files)
+- ✅ Comprehensive app audit completed
+- ✅ TypeScript 100% migration complete
+
+---
+
 ## [Unreleased]
 
 ### 🚀 Phase 2 Complete: AI Context & Intelligence (2025-01-13)

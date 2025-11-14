@@ -365,7 +365,8 @@ npm run deploy  # data + build + validate
 
 ## Version History
 
-- **v2.5.4** (Oct 2025) - Current, production-ready, comprehensive documentation overhaul
+- **v3.0.0** (Nov 2025) - AI-Powered Release: Gemini integration, session tracking, Phase 5 features complete
+- **v2.5.4** (Oct 2025) - Production-ready, comprehensive documentation overhaul
 - **v2.5.2** - Zero console errors, optimized performance
 - **Phase 2** - Practice modes (RS/ASQ/WFD), CSS refactoring
 

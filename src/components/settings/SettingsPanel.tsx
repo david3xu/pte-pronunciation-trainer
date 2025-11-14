@@ -431,7 +431,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
               {/* App Version */}
               <Flex direction="column" gap="1">
                 <Text size="2" color="gray">App Version</Text>
-                <Text size="3" weight="medium">v2.5.4</Text>
+                <Text size="3" weight="medium">v3.0.0</Text>
               </Flex>
 
               {/* Cache Info */}

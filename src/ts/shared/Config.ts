@@ -28,7 +28,7 @@ export class AppConfig {
     return {
       app: {
         name: 'PTE Pronunciation Trainer',
-        version: '2.5.4',
+        version: '3.0.0',
         description: 'Comprehensive pronunciation training for PTE Academic exam preparation'
       },
 

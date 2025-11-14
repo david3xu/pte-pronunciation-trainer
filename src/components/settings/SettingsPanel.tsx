@@ -162,7 +162,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
         {/* Tabs */}
         <Tabs.Root defaultValue="practice">
           <Tabs.List>
-            <Tabs.Trigger value="practice">Practice</Tabs.Trigger>
+            <Tabs.Trigger value="practice">Mode</Tabs.Trigger>
             <Tabs.Trigger value="audio">Audio</Tabs.Trigger>
             <Tabs.Trigger value="display">Display</Tabs.Trigger>
             <Tabs.Trigger value="advanced">Advanced</Tabs.Trigger>
@@ -171,9 +171,12 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
           {/* Practice Tab */}
           <Tabs.Content value="practice">
             <Flex direction="column" gap="4" mt="4">
-              {/* Practice Type */}
+              {/* Study Type */}
               <Flex direction="column" gap="2">
-                <Text size="3" weight="medium">Practice Type</Text>
+                <Text size="3" weight="medium">Study Type</Text>
+                <Text size="2" color="gray" mb="1">
+                  Choose between word learning or task practice
+                </Text>
                 <Select.Root
                   value={practiceType}
                   onValueChange={(value: 'vocabulary' | 'practice') =>
@@ -182,18 +185,18 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                 >
                   <Select.Trigger />
                   <Select.Content>
-                    <Select.Item value="vocabulary">Vocabulary</Select.Item>
-                    <Select.Item value="practice">Practice</Select.Item>
+                    <Select.Item value="vocabulary">📚 Vocabulary Learning</Select.Item>
+                    <Select.Item value="practice">🎯 Task Practice (RS/ASQ/WFD)</Select.Item>
                   </Select.Content>
                 </Select.Root>
               </Flex>
 
-              {/* Practice Mode (if practice type selected) */}
+              {/* Task Type (if practice type selected) */}
               {practiceType === 'practice' && (
                 <Flex direction="column" gap="2">
-                  <Text size="3" weight="medium">Practice Mode</Text>
+                  <Text size="3" weight="medium">Task Type</Text>
                   <Text size="2" color="gray" mb="1">
-                    Choose a PTE practice task type
+                    Choose a PTE speaking/listening task
                   </Text>
                   <Select.Root
                     value={practiceMode || ''}

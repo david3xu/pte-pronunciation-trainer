@@ -22,7 +22,7 @@ const PracticeModeSelector: React.FC = () => {
     },
     {
       type: 'practice' as const,
-      mode: 'rs' as const,
+      mode: 'pte-repeat-sentence' as const,
       title: 'Repeat Sentence',
       description: '620 sentences',
       icon: <ChatBubbleIcon width="24" height="24" />,
@@ -30,7 +30,7 @@ const PracticeModeSelector: React.FC = () => {
     },
     {
       type: 'practice' as const,
-      mode: 'asq' as const,
+      mode: 'pte-answer-short-question' as const,
       title: 'Answer Short Question',
       description: '692 questions',
       icon: <ChatBubbleIcon width="24" height="24" />,
@@ -38,7 +38,7 @@ const PracticeModeSelector: React.FC = () => {
     },
     {
       type: 'practice' as const,
-      mode: 'wfd' as const,
+      mode: 'pte-write-from-dictation' as const,
       title: 'Write From Dictation',
       description: '1,195 sentences',
       icon: <Pencil1Icon width="24" height="24" />,
@@ -46,7 +46,7 @@ const PracticeModeSelector: React.FC = () => {
     },
   ];
 
-  const handleModeSelect = (type: 'vocabulary' | 'practice', mode?: 'rs' | 'asq' | 'wfd') => {
+  const handleModeSelect = (type: 'vocabulary' | 'practice', mode?: 'pte-repeat-sentence' | 'pte-answer-short-question' | 'pte-write-from-dictation') => {
     settings.updateSetting('practiceType', type);
     if (mode) {
       settings.updateSetting('practiceMode', mode);

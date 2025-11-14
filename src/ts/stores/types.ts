@@ -79,7 +79,7 @@ export interface TTSState {
 export interface SettingsState {
   // Practice settings
   practiceType: 'vocabulary' | 'practice';
-  practiceMode: 'rs' | 'asq' | 'wfd' | null;
+  practiceMode: 'pte-repeat-sentence' | 'pte-answer-short-question' | 'pte-write-from-dictation' | null;
   vocabularyBook: string;
   datasetId: string;
 

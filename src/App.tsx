@@ -248,12 +248,12 @@ const App: React.FC = () => {
   const getPracticeInterfaceType = (): 'vocabulary' | 'rs' | 'asq' | 'wfd' => {
     const mode = vocabulary.mode.toLowerCase();
 
-    // Check for practice modes (both full names and short codes)
-    if (mode === 'rs' || mode.includes('repeat-sentence') || mode.includes('pte-rs')) {
+    // Check for practice modes using full unique names
+    if (mode.includes('repeat-sentence') || mode.includes('pte-rs')) {
       return 'rs';
-    } else if (mode === 'asq' || mode.includes('answer-short-question')) {
+    } else if (mode.includes('answer-short-question') || mode.includes('pte-asq')) {
       return 'asq';
-    } else if (mode === 'wfd' || mode.includes('write-from-dictation')) {
+    } else if (mode.includes('write-from-dictation') || mode.includes('pte-wfd')) {
       return 'wfd';
     }
 

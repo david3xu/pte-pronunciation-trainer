@@ -40,6 +40,10 @@ const App: React.FC = () => {
   const vocabulary = useAppStore((state) => state.vocabulary);
   const currentItem = useAppStore((state) => state.vocabulary.currentItem);
   const isLoadingVocabulary = useAppStore((state) => state.vocabulary.isLoading);
+  const auth = useAppStore((state) => state.auth);
+  const settings = useAppStore((state) => state.settings);
+  const audio = useAppStore((state) => state.audio);
+  const progress = useAppStore((state) => state.progress);
 
   // Modal states
   const [showSettings, setShowSettings] = useState(false);
@@ -64,7 +68,7 @@ const App: React.FC = () => {
 
     // Check for data migration on startup
     const checkMigration = () => {
-      const user = useAppStore.getState().auth.user;
+      const user = auth.user;
       if (user && hasDataToMigrate()) {
         console.log('Migration data detected for signed-in user');
         setShowMigration(true);
@@ -73,7 +77,7 @@ const App: React.FC = () => {
 
     // Check for learner profile onboarding
     const checkOnboarding = async () => {
-      const user = useAppStore.getState().auth.user;
+      const user = auth.user;
       if (user && !hasCompletedOnboarding()) {
         console.log('[App] User needs onboarding');
         // Check if profile exists in database
@@ -90,7 +94,7 @@ const App: React.FC = () => {
 
     // Load vocabulary data on startup
     const loadInitialVocabulary = async () => {
-      const { vocabularyBook } = useAppStore.getState().settings;
+      const { vocabularyBook } = settings;
       console.log('Loading vocabulary book:', vocabularyBook);
 
       vocabulary.setLoading(true);
@@ -134,7 +138,7 @@ const App: React.FC = () => {
         if (items.length > 0) {
           console.log('Setting current item to:', items[0]);
           vocabulary.setCurrentItem(items[0]);
-          console.log('Current item after set:', useAppStore.getState().vocabulary.currentItem);
+          console.log('Current item after set:', vocabulary.currentItem);
         }
 
         // Start practice session for tracking
@@ -145,8 +149,8 @@ const App: React.FC = () => {
             vocabularyBook,
             'practice',
             {
-              autoPlay: useAppStore.getState().settings.autoPlay,
-              repeatMode: useAppStore.getState().audio.repeatMode,
+              autoPlay: settings.autoPlay,
+              repeatMode: audio.repeatMode,
             }
           );
           setCurrentSessionId(sessionId);
@@ -174,17 +178,18 @@ const App: React.FC = () => {
         });
       }
     };
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // Dependencies intentionally omitted - only run on mount
 
   // Phase 4: Monitor session for proactive interventions
   useEffect(() => {
-    if (!currentSessionId || !useAppStore.getState().auth.user?.id) return;
+    if (!currentSessionId || !auth.user?.id) return;
 
     // Check for interventions every 5 items completed
     if (itemsCompletedInSession > 0 && itemsCompletedInSession % 5 === 0) {
       const checkIntervention = async () => {
         const intervention = await monitorSession(
-          useAppStore.getState().auth.user!.id,
+          auth.user!.id,
           currentSessionId
         );
         if (intervention) {
@@ -193,15 +198,15 @@ const App: React.FC = () => {
       };
       checkIntervention();
     }
-  }, [itemsCompletedInSession, currentSessionId]);
+  }, [itemsCompletedInSession, currentSessionId, auth.user]);
 
   // Intervention handlers
   const handleInterventionAccept = async () => {
-    if (!currentIntervention || !currentSessionId || !useAppStore.getState().auth.user?.id) return;
+    if (!currentIntervention || !currentSessionId || !auth.user?.id) return;
 
     // Log acceptance
     await logIntervention(
-      useAppStore.getState().auth.user!.id,
+      auth.user!.id,
       currentSessionId,
       currentIntervention,
       'accepted'
@@ -224,11 +229,11 @@ const App: React.FC = () => {
   };
 
   const handleInterventionDecline = async () => {
-    if (!currentIntervention || !currentSessionId || !useAppStore.getState().auth.user?.id) return;
+    if (!currentIntervention || !currentSessionId || !auth.user?.id) return;
 
     // Log decline
     await logIntervention(
-      useAppStore.getState().auth.user!.id,
+      auth.user!.id,
       currentSessionId,
       currentIntervention,
       'declined'
@@ -265,12 +270,12 @@ const App: React.FC = () => {
 
   // Navigation handlers for task-specific interfaces
   const handleNext = () => {
-    const { navigateNext } = useAppStore.getState().audio;
+    const { navigateNext } = audio;
     navigateNext();
 
     // Update current item based on new index
-    const nextIndex = useAppStore.getState().progress.currentIndex + 1;
-    const { filteredDataset, setCurrentItem } = useAppStore.getState().vocabulary;
+    const nextIndex = progress.currentIndex + 1;
+    const { filteredDataset, setCurrentItem } = vocabulary;
     const nextItem = filteredDataset[nextIndex];
     if (nextItem) {
       setCurrentItem(nextItem);
@@ -278,12 +283,12 @@ const App: React.FC = () => {
   };
 
   const handlePrevious = () => {
-    const { navigatePrev } = useAppStore.getState().audio;
+    const { navigatePrev } = audio;
     navigatePrev();
 
     // Update current item based on new index
-    const prevIndex = Math.max(0, useAppStore.getState().progress.currentIndex - 1);
-    const { filteredDataset, setCurrentItem } = useAppStore.getState().vocabulary;
+    const prevIndex = Math.max(0, progress.currentIndex - 1);
+    const { filteredDataset, setCurrentItem } = vocabulary;
     const prevItem = filteredDataset[prevIndex];
     if (prevItem) {
       setCurrentItem(prevItem);
@@ -367,7 +372,7 @@ const App: React.FC = () => {
           />
           <LearnerProfileModal
             isOpen={showProfileOnboarding}
-            userId={useAppStore.getState().auth.user?.id || ''}
+            userId={auth.user?.id || ''}
             onComplete={() => {
               setShowProfileOnboarding(false);
               console.log('[App] Profile onboarding completed');
@@ -383,7 +388,7 @@ const App: React.FC = () => {
             onClose={() => setShowAITutor(false)}
             taskType={interfaceType as TaskType}
             sessionId={currentSessionId || undefined}
-            useEnhancedContext={useAppStore.getState().auth.isAuthenticated}
+            useEnhancedContext={auth.isAuthenticated}
           />
           <WeakAreasDashboard isOpen={showWeakAreas} onClose={() => setShowWeakAreas(false)} />
           <PronunciationScoring
@@ -416,8 +421,8 @@ const App: React.FC = () => {
             onOpenScoring={() => setShowPronunciationScoring(true)}
             onOpenInsights={() => setShowWeakAreas(true)}
             sessionStats={{
-              itemsCompleted: useAppStore.getState().progress.itemsCompleted,
-              accuracy: useAppStore.getState().progress.accuracy,
+              itemsCompleted: progress.itemsCompleted,
+              accuracy: progress.accuracy,
               currentStreak: 0, // TODO: Add currentStreak to progress store
             }}
           />

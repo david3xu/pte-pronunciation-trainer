@@ -132,14 +132,7 @@ const App: React.FC = () => {
 
         console.log(`Loaded ${items.length} vocabulary items`);
         console.log('First item:', items[0]);
-        vocabulary.setDataset(items, vocabularyBook);
-
-        // Set first item as current
-        if (items.length > 0) {
-          console.log('Setting current item to:', items[0]);
-          vocabulary.setCurrentItem(items[0]);
-          console.log('Current item after set:', vocabulary.currentItem);
-        }
+        vocabulary.setDataset(items, vocabularyBook); // Atomically sets currentItem and resets index
 
         // Start practice session for tracking
         try {

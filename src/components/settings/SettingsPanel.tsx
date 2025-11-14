@@ -34,8 +34,6 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
   const setVolume = useAppStore((state) => state.audio.setVolume);
   const setLoading = useAppStore((state) => state.vocabulary.setLoading);
   const setDataset = useAppStore((state) => state.vocabulary.setDataset);
-  const setCurrentItem = useAppStore((state) => state.vocabulary.setCurrentItem);
-  const setCurrentIndex = useAppStore((state) => state.audio.setCurrentIndex);
 
   // Handle vocabulary book change
   const handleVocabularyBookChange = async (bookId: string) => {
@@ -82,13 +80,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
       const items = data.vocabulary || [];
 
       console.log(`[SettingsPanel] Loaded ${items.length} vocabulary items`);
-      setDataset(items, bookId);
-
-      // Set first item as current and reset index
-      if (items.length > 0) {
-        setCurrentItem(items[0]);
-        setCurrentIndex(0);
-      }
+      setDataset(items, bookId); // Now atomically sets currentItem and resets index
 
       setLoading(false);
     } catch (error) {
@@ -140,20 +132,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
 
       console.log(`[SettingsPanel] Loaded ${items.length} practice items`);
       console.log('[SettingsPanel] First item:', items[0]);
-      setDataset(items, mode);
-
-      // Set first item as current and reset index
-      if (items.length > 0) {
-        console.log('[SettingsPanel] Setting current item to:', items[0]);
-        setCurrentItem(items[0]);
-        setCurrentIndex(0);
-        console.log('[SettingsPanel] Current item set - checking store...');
-        // Debug: check if it was actually set
-        setTimeout(() => {
-          const currentItem = useAppStore.getState().vocabulary.currentItem;
-          console.log('[SettingsPanel] Verified current item in store:', currentItem);
-        }, 100);
-      }
+      setDataset(items, mode); // Now atomically sets currentItem and resets index
 
       setLoading(false);
     } catch (error) {

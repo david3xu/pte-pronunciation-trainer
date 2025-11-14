@@ -33,6 +33,7 @@ import type {
   UIState,
   AuthState,
 } from './types';
+import type { VocabularyTerm, PracticeItem } from '../../types/dataset.types';
 
 // Import Supabase services for auth store
 import { authService } from '../supabase/authService';
@@ -176,17 +177,25 @@ export const useAppStore = create<AppState>()(
             totalCount: 0,
             isLoading: false,
             error: null,
-            setDataset: (dataset, mode) => set((state) => ({
-              vocabulary: {
-                ...state.vocabulary,
-                currentDataset: dataset,
-                filteredDataset: dataset,
-                mode,
-                totalCount: dataset.length,
-                isLoading: false,
-                error: null,
-              }
-            })),
+            setDataset: (dataset, mode) => {
+              const firstItem = (dataset[0] ?? null) as VocabularyTerm | PracticeItem | null;
+              set((state) => ({
+                vocabulary: {
+                  ...state.vocabulary,
+                  currentDataset: dataset,
+                  filteredDataset: dataset,
+                  currentItem: firstItem,
+                  mode,
+                  totalCount: dataset.length,
+                  isLoading: false,
+                  error: null,
+                },
+                audio: {
+                  ...state.audio,
+                  currentIndex: 0,
+                }
+              }));
+            },
             setCurrentItem: (item) => {
               // Track vocabulary word practice
               if (item && (window as any).analyticsService) {

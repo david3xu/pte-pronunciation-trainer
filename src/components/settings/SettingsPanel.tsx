@@ -92,7 +92,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
   };
 
   // Handle practice mode change (RS/ASQ/WFD)
-  const handlePracticeModeChange = async (mode: 'rs' | 'asq' | 'wfd' | null) => {
+  const handlePracticeModeChange = async (mode: 'pte-repeat-sentence' | 'pte-answer-short-question' | 'pte-write-from-dictation' | null) => {
     console.log('[SettingsPanel] Changing practice mode to:', mode);
 
     if (typeof updateSetting !== 'function') {
@@ -109,9 +109,9 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
 
     try {
       const practiceDataPathMap: Record<string, string> = {
-        'rs': '/data/processed/pte-repeat-sentence-dataset.json',
-        'asq': '/data/processed/pte-answer-short-question-dataset.json',
-        'wfd': '/data/processed/pte-write-from-dictation-dataset.json',
+        'pte-repeat-sentence': '/data/processed/pte-repeat-sentence-dataset.json',
+        'pte-answer-short-question': '/data/processed/pte-answer-short-question-dataset.json',
+        'pte-write-from-dictation': '/data/processed/pte-write-from-dictation-dataset.json',
       };
 
       const dataPath = practiceDataPathMap[mode];
@@ -198,18 +198,18 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                   <Select.Root
                     value={practiceMode || ''}
                     onValueChange={(value) =>
-                      handlePracticeModeChange(value as 'rs' | 'asq' | 'wfd' | null)
+                      handlePracticeModeChange(value as 'pte-repeat-sentence' | 'pte-answer-short-question' | 'pte-write-from-dictation' | null)
                     }
                   >
                     <Select.Trigger />
                     <Select.Content>
-                      <Select.Item value="rs">
+                      <Select.Item value="pte-repeat-sentence">
                         🎤 Repeat Sentence (RS) - 620 sentences
                       </Select.Item>
-                      <Select.Item value="asq">
+                      <Select.Item value="pte-answer-short-question">
                         ❓ Answer Short Question (ASQ) - 692 questions
                       </Select.Item>
-                      <Select.Item value="wfd">
+                      <Select.Item value="pte-write-from-dictation">
                         ✍️ Write From Dictation (WFD) - 1,195 sentences
                       </Select.Item>
                     </Select.Content>

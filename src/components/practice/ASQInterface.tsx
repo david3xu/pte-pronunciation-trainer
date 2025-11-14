@@ -25,9 +25,12 @@ import {
 } from '@radix-ui/react-icons';
 import { ttsEngine } from '../../ts/audio/TTSEngine';
 import type { PracticeItem } from '../../types/dataset.types';
+import type { SessionManager } from '../../services/session/sessionManager';
+import type { ItemType } from '../../types/database';
 
 interface ASQInterfaceProps {
   item: PracticeItem;
+  sessionManager?: SessionManager;
   onNext?: () => void;
   onPrevious?: () => void;
   onComplete?: () => void;
@@ -42,6 +45,7 @@ interface FeedbackData {
 
 const ASQInterface: React.FC<ASQInterfaceProps> = ({
   item,
+  sessionManager,
   onNext,
   onPrevious,
   onComplete,
@@ -111,7 +115,7 @@ const ASQInterface: React.FC<ASQInterfaceProps> = ({
   };
 
   // Handle answer submission
-  const handleSubmitAnswer = () => {
+  const handleSubmitAnswer = async () => {
     if (!userAnswer.trim() || hasAnswered) return;
 
     // Normalize answers for comparison (lowercase, trim whitespace)
@@ -134,6 +138,28 @@ const ASQInterface: React.FC<ASQInterfaceProps> = ({
 
     setFeedback(feedbackData);
     setHasAnswered(true);
+
+    // Record session data to database (Phase 2)
+    if (sessionManager) {
+      try {
+        const itemId = (item as any).id || `asq-${Date.now()}`;
+        const score = isCorrect ? 100 : 0;
+        await sessionManager.recordItem({
+          item_id: itemId,
+          item_type: 'question' as ItemType,
+          item_text: question,
+          user_response: userAnswer.trim(),
+          score: score,
+          is_correct: isCorrect,
+          attempts: 1,
+          time_spent_sec: thinkingTime,
+        });
+        console.log('[ASQInterface] Session recorded:', itemId);
+      } catch (error) {
+        console.error('[ASQInterface] Failed to record session:', error);
+        // Don't block user flow on session recording failure
+      }
+    }
 
     // Notify parent component
     if (onComplete) {

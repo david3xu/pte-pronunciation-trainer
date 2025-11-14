@@ -24,9 +24,12 @@ import {
 } from '@radix-ui/react-icons';
 import { ttsEngine } from '../../ts/audio/TTSEngine';
 import type { PracticeItem } from '../../types/dataset.types';
+import type { SessionManager } from '../../services/session/sessionManager';
+import type { ItemType } from '../../types/database';
 
 interface RSInterfaceProps {
   item: PracticeItem;
+  sessionManager?: SessionManager;
   onNext?: () => void;
   onPrevious?: () => void;
   onComplete?: () => void;
@@ -41,6 +44,7 @@ interface FeedbackData {
 
 const RSInterface: React.FC<RSInterfaceProps> = ({
   item,
+  sessionManager,
   onNext,
   onPrevious,
   onComplete,
@@ -141,30 +145,60 @@ const RSInterface: React.FC<RSInterfaceProps> = ({
   };
 
   // Process recording (simulate AI feedback)
-  const processRecording = () => {
-    // In production, this would:
+  const processRecording = async () => {
+    // TODO: Implement full speech-to-text transcription
+    // This currently uses simplified scoring based on recording quality metrics.
+    // Future implementation will:
     // 1. Send audio to speech recognition API
     // 2. Get transcription
-    // 3. Compare with target sentence
-    // 4. Generate feedback
+    // 3. Use getPronunciationScore() for AI analysis
+    // 4. Return detailed feedback with correct/missed words
 
-    // For now, simulate feedback
+    // Calculate score based on recording duration and sentence length
+    // Better proxy than random number: longer recordings for shorter sentences = likely more complete
     const words = sentence.split(' ');
-    const simulatedCorrect = words.slice(0, Math.floor(words.length * 0.7));
-    const simulatedMissed = words.slice(Math.floor(words.length * 0.7));
+    const optimalTime = words.length * 0.6; // ~0.6 seconds per word
+    const timeDiff = Math.abs(recordingTime - optimalTime);
+    const timeScore = Math.max(60, 100 - (timeDiff * 5)); // Penalize timing mismatch
+
+    // Simplified feedback (will be replaced with AI analysis)
+    const estimatedCorrect = Math.floor(words.length * (timeScore / 100));
+    const simulatedCorrect = words.slice(0, estimatedCorrect);
+    const simulatedMissed = words.slice(estimatedCorrect);
 
     const mockFeedback: FeedbackData = {
-      score: 70 + Math.floor(Math.random() * 20),
+      score: Math.round(timeScore),
       correct: simulatedCorrect,
       missed: simulatedMissed,
       tips: [
-        'Focus on linking words naturally',
-        'Practice the rhythm and intonation',
-        'Try chunking the sentence into smaller phrases',
+        'Recording captured. Full AI analysis coming soon!',
+        'Focus on speaking clearly and at a natural pace',
+        'Practice the rhythm and intonation of the sentence',
       ],
     };
 
     setFeedback(mockFeedback);
+
+    // Record session data to database (Phase 2)
+    if (sessionManager) {
+      try {
+        const itemId = (item as any).id || `rs-${Date.now()}`;
+        await sessionManager.recordItem({
+          item_id: itemId,
+          item_type: 'sentence' as ItemType,
+          item_text: sentence,
+          user_response: '', // TODO: Add actual transcription when available
+          score: mockFeedback.score,
+          is_correct: mockFeedback.score >= 70,
+          attempts: 1,
+          time_spent_sec: recordingTime,
+        });
+        console.log('[RSInterface] Session recorded:', itemId);
+      } catch (error) {
+        console.error('[RSInterface] Failed to record session:', error);
+        // Don't block user flow on session recording failure
+      }
+    }
 
     // Notify parent component
     if (onComplete) {

@@ -366,6 +366,17 @@ export class SessionManager {
       return 0;
     }
 
+    // Check if user is authenticated before attempting sync
+    const {
+      data: { user },
+    } = await this.supabase.auth.getUser();
+
+    if (!user) {
+      // User not authenticated - can't sync to database yet
+      // Sessions remain queued in localStorage and will sync when user logs in
+      return 0;
+    }
+
     try {
       const queuedList = JSON.parse(localStorage.getItem('offline-sessions') || '[]');
       let syncedCount = 0;
@@ -455,25 +466,25 @@ export class SessionManager {
   // ============================================================================
 
   private async getCurrentUserId(): Promise<string> {
+    // Always try to get device ID for fallback
+    let deviceId = localStorage.getItem('device-user-id');
+    if (!deviceId) {
+      deviceId = crypto.randomUUID();
+      localStorage.setItem('device-user-id', deviceId);
+    }
+
+    // If no Supabase, use device ID
     if (!this.supabase) {
-      // Offline mode: use device ID
-      let deviceId = localStorage.getItem('device-user-id');
-      if (!deviceId) {
-        deviceId = crypto.randomUUID();
-        localStorage.setItem('device-user-id', deviceId);
-      }
       return deviceId;
     }
 
+    // Try to get authenticated user
     const {
       data: { user },
     } = await this.supabase.auth.getUser();
 
-    if (!user) {
-      throw new Error('[SessionManager] User not authenticated');
-    }
-
-    return user.id;
+    // If authenticated, return user ID, otherwise use device ID
+    return user ? user.id : deviceId;
   }
 
   getCurrentSession(): CurrentSession | null {

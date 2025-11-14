@@ -39,6 +39,7 @@ import {
   LanguageCode
 } from '@aws-sdk/client-polly';
 import { createClient } from '@supabase/supabase-js';
+import { getVoiceLanguageCode } from './config';
 
 // ============================================
 // Types
@@ -87,29 +88,6 @@ function buildSSML(
       </prosody>
     </speak>
   `.trim();
-}
-
-/**
- * Get language code for voice
- */
-function getLanguageCode(voiceId: string): LanguageCode {
-  // US voices
-  if (['Joanna', 'Matthew', 'Ivy', 'Kendra', 'Kimberly', 'Salli', 'Joey', 'Justin', 'Kevin'].includes(voiceId)) {
-    return 'en-US' as LanguageCode;
-  }
-  // UK voices
-  if (['Amy', 'Emma', 'Brian', 'Arthur'].includes(voiceId)) {
-    return 'en-GB' as LanguageCode;
-  }
-  // AU voices
-  if (['Nicole', 'Russell'].includes(voiceId)) {
-    return 'en-AU' as LanguageCode;
-  }
-  // IN voices
-  if (['Aditi', 'Raveena'].includes(voiceId)) {
-    return 'en-IN' as LanguageCode;
-  }
-  return 'en-US' as LanguageCode;
 }
 
 /**
@@ -288,7 +266,7 @@ export default async function handler(
       OutputFormat: 'mp3' as OutputFormat,
       VoiceId: voiceId as VoiceId,
       Engine: 'neural' as Engine,
-      LanguageCode: getLanguageCode(voiceId)
+      LanguageCode: getVoiceLanguageCode(voiceId) as LanguageCode
     };
 
     // Generate audio

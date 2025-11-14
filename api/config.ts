@@ -59,6 +59,50 @@ export const VOICE_CONFIG = {
   awsRegion: process.env.AWS_REGION || 'us-east-1',
 } as const;
 
+// Premium Voices List (AWS Polly Neural Voices)
+export const PREMIUM_VOICES = {
+  'en-US': {
+    'Joanna': 'Female, American English (Neural)',
+    'Matthew': 'Male, American English (Neural)',
+    'Ruth': 'Female, American English (Neural)',
+    'Stephen': 'Male, American English (Neural)',
+    'Ivy': 'Female, American English (Child, Neural)',
+    'Kendra': 'Female, American English (Neural)',
+    'Kimberly': 'Female, American English (Neural)',
+    'Salli': 'Female, American English (Neural)',
+    'Joey': 'Male, American English (Neural)',
+    'Justin': 'Male, American English (Child, Neural)',
+    'Kevin': 'Male, American English (Child, Neural)',
+  },
+  'en-GB': {
+    'Amy': 'Female, British English (Neural)',
+    'Emma': 'Female, British English (Neural)',
+    'Brian': 'Male, British English (Neural)',
+    'Arthur': 'Male, British English (Neural)',
+  },
+  'en-AU': {
+    'Olivia': 'Female, Australian English (Neural)',
+    'Nicole': 'Female, Australian English (Neural)',
+    'Russell': 'Male, Australian English (Neural)',
+  },
+  'en-IN': {
+    'Aditi': 'Female, Indian English (Neural)',
+    'Raveena': 'Female, Indian English (Neural)',
+  },
+} as const;
+
+/**
+ * Get language code for a voice ID
+ */
+export function getVoiceLanguageCode(voiceId: string): string {
+  for (const [lang, voices] of Object.entries(PREMIUM_VOICES)) {
+    if (voiceId in voices) {
+      return lang;
+    }
+  }
+  return 'en-US'; // Default fallback
+}
+
 /**
  * Get Gemini API key from environment
  */

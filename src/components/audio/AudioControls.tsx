@@ -234,7 +234,8 @@ const AudioControls: React.FC = () => {
           audio.stopAutoPlay();
         }
       } else {
-        console.warn('[AudioControls] No text to speak for current item');
+        // Silently skip if no item - happens during initial load
+        console.debug('[AudioControls] Waiting for current item to load...');
       }
     };
 

@@ -92,7 +92,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
   };
 
   // Handle practice mode change (RS/ASQ/WFD)
-  const handlePracticeModeChange = async (mode: 'pte-repeat-sentence' | 'pte-answer-short-question' | 'pte-write-from-dictation' | null) => {
+  const handlePracticeModeChange = async (mode: 'practice-repeat-sentence' | 'practice-answer-short-question' | 'practice-write-from-dictation' | null) => {
     console.log('[SettingsPanel] Changing practice mode to:', mode);
 
     if (typeof updateSetting !== 'function') {
@@ -109,9 +109,9 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
 
     try {
       const practiceDataPathMap: Record<string, string> = {
-        'pte-repeat-sentence': '/data/processed/pte-repeat-sentence-dataset.json',
-        'pte-answer-short-question': '/data/processed/pte-answer-short-question-dataset.json',
-        'pte-write-from-dictation': '/data/processed/pte-write-from-dictation-dataset.json',
+        'practice-repeat-sentence': '/data/processed/pte-repeat-sentence-dataset.json',
+        'practice-answer-short-question': '/data/processed/pte-answer-short-question-dataset.json',
+        'practice-write-from-dictation': '/data/processed/pte-write-from-dictation-dataset.json',
       };
 
       const dataPath = practiceDataPathMap[mode];
@@ -198,18 +198,18 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                   <Select.Root
                     value={practiceMode || ''}
                     onValueChange={(value) =>
-                      handlePracticeModeChange(value as 'pte-repeat-sentence' | 'pte-answer-short-question' | 'pte-write-from-dictation' | null)
+                      handlePracticeModeChange(value as 'practice-repeat-sentence' | 'practice-answer-short-question' | 'practice-write-from-dictation' | null)
                     }
                   >
                     <Select.Trigger />
                     <Select.Content>
-                      <Select.Item value="pte-repeat-sentence">
+                      <Select.Item value="practice-repeat-sentence">
                         🎤 Repeat Sentence (RS) - 620 sentences
                       </Select.Item>
-                      <Select.Item value="pte-answer-short-question">
+                      <Select.Item value="practice-answer-short-question">
                         ❓ Answer Short Question (ASQ) - 692 questions
                       </Select.Item>
-                      <Select.Item value="pte-write-from-dictation">
+                      <Select.Item value="practice-write-from-dictation">
                         ✍️ Write From Dictation (WFD) - 1,195 sentences
                       </Select.Item>
                     </Select.Content>

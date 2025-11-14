@@ -473,6 +473,25 @@ export const useAppStore = create<AppState>()(
               accuracy: state.progress.accuracy,
             },
           }),
+          // Properly merge persisted state with initial state (preserves methods)
+          merge: (persistedState, currentState) => {
+            const persisted = persistedState as Partial<AppState>;
+            return {
+              ...currentState,
+              settings: {
+                ...currentState.settings, // Keep all methods
+                ...(persisted.settings || {}), // Override with persisted preferences
+              },
+              audio: {
+                ...currentState.audio, // Keep all methods and runtime state
+                ...(persisted.audio || {}), // Override with persisted preferences
+              },
+              progress: {
+                ...currentState.progress,
+                ...(persisted.progress || {}),
+              },
+            };
+          },
           // Rehydrate Set from persisted Array
           onRehydrateStorage: () => (state) => {
             if (state?.progress?.completedItems) {

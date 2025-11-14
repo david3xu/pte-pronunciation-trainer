@@ -151,7 +151,7 @@ export class SessionManager {
         };
 
         const { error } = await this.supabase
-          .from('study_sessions')
+          .from('practice_sessions')
           // @ts-ignore - Supabase client type inference limitation with custom Database type
           .insert(sessionData);
 
@@ -218,7 +218,7 @@ export class SessionManager {
       try {
         const userId = await this.getCurrentUserId();
         const { error } = await this.supabase
-          .from('study_sessions')
+          .from('practice_sessions')
           // @ts-ignore - Supabase client type inference limitation with custom Database type
           .update({
             completed_at: completedAt,
@@ -397,7 +397,7 @@ export class SessionManager {
             };
 
             const { error: sessionError } = await this.supabase
-              .from('study_sessions')
+              .from('practice_sessions')
               // @ts-ignore - Supabase client type inference limitation with custom Database type
               .upsert(sessionData);
 

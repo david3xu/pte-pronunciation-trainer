@@ -56,7 +56,7 @@ export const VOICE_CONFIG = {
   defaultVoiceId: 'Joanna',
   defaultEngine: 'neural',
   defaultLanguage: 'en-US',
-  awsRegion: process.env.AWS_REGION || 'us-east-1',
+  awsRegion: process.env['AWS_REGION'] || 'us-east-1',
 } as const;
 
 // Premium Voices List (AWS Polly Neural Voices)
@@ -107,7 +107,7 @@ export function getVoiceLanguageCode(voiceId: string): string {
  * Get Gemini API key from environment
  */
 export function getGeminiApiKey(): string | null {
-  return process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY || null;
+  return process.env['GEMINI_API_KEY'] || process.env['VITE_GEMINI_API_KEY'] || null;
 }
 
 /**
@@ -115,8 +115,8 @@ export function getGeminiApiKey(): string | null {
  */
 export function getAWSCredentials() {
   return {
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID || null,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY || null,
+    accessKeyId: process.env['AWS_ACCESS_KEY_ID'] || null,
+    secretAccessKey: process.env['AWS_SECRET_ACCESS_KEY'] || null,
     region: VOICE_CONFIG.awsRegion,
   };
 }
@@ -126,8 +126,8 @@ export function getAWSCredentials() {
  */
 export function getSupabaseConfig() {
   return {
-    url: process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL || null,
-    serviceRoleKey: process.env.SUPABASE_SERVICE_ROLE_KEY || null,
-    anonKey: process.env.VITE_SUPABASE_ANON_KEY || null,
+    url: process.env['SUPABASE_URL'] || process.env['VITE_SUPABASE_URL'] || null,
+    serviceRoleKey: process.env['SUPABASE_SERVICE_ROLE_KEY'] || null,
+    anonKey: process.env['VITE_SUPABASE_ANON_KEY'] || null,
   };
 }

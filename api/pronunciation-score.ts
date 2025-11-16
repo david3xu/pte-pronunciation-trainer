@@ -115,6 +115,17 @@ Return ONLY valid JSON, no additional text.`;
     });
     const responseContent = response.text;
 
+    // Check if response is valid
+    if (!responseContent) {
+      console.error('Empty response from Gemini API');
+      const mockResult = getMockScoringResult(targetText, transcribedText, difficulty);
+      return res.status(200).json({
+        success: true,
+        data: mockResult,
+        warning: 'Using fallback scoring due to empty API response',
+      });
+    }
+
     // Parse response (extract JSON from possible markdown wrapping)
     let analysis;
     try {
@@ -193,7 +204,7 @@ function calculateSimpleScore(target: string, transcribed: string): number {
 function getMockScoringResult(
   targetText: string,
   transcribedText: string,
-  difficulty: string
+  difficulty?: string
 ): ScoringResult {
   const score = calculateSimpleScore(targetText, transcribedText);
 

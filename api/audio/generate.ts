@@ -39,7 +39,7 @@ import {
   LanguageCode
 } from '@aws-sdk/client-polly';
 import { createClient } from '@supabase/supabase-js';
-import { getVoiceLanguageCode } from './config';
+import { getVoiceLanguageCode } from '../config';
 
 // ============================================
 // Types
@@ -53,16 +53,6 @@ interface AudioRequest {
   emphasis?: 'strong' | 'moderate' | 'reduced' | 'none';
   useCache?: boolean;
 }
-
-// ============================================
-// CORS Headers
-// ============================================
-
-const CORS_HEADERS = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Methods': 'POST, OPTIONS',
-  'Access-Control-Allow-Headers': 'Content-Type, Authorization'
-};
 
 // ============================================
 // Helpers
@@ -108,8 +98,8 @@ function getCacheKey(text: string, voiceId: string, speed: string): string {
  */
 async function checkCache(cacheKey: string): Promise<string | null> {
   try {
-    const supabaseUrl = process.env.SUPABASE_URL;
-    const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+    const supabaseUrl = process.env['SUPABASE_URL'];
+    const supabaseKey = process.env['SUPABASE_SERVICE_ROLE_KEY'];
 
     if (!supabaseUrl || !supabaseKey) {
       return null; // No caching available
@@ -143,8 +133,8 @@ async function checkCache(cacheKey: string): Promise<string | null> {
  */
 async function saveToCache(cacheKey: string, audioBuffer: Buffer): Promise<void> {
   try {
-    const supabaseUrl = process.env.SUPABASE_URL;
-    const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+    const supabaseUrl = process.env['SUPABASE_URL'];
+    const supabaseKey = process.env['SUPABASE_SERVICE_ROLE_KEY'];
 
     if (!supabaseUrl || !supabaseKey) {
       return; // No caching available
@@ -222,9 +212,9 @@ export default async function handler(
     }
 
     // Check AWS credentials
-    const accessKeyId = process.env.AWS_ACCESS_KEY_ID;
-    const secretAccessKey = process.env.AWS_SECRET_ACCESS_KEY;
-    const region = process.env.AWS_REGION || 'us-east-1';
+    const accessKeyId = process.env['AWS_ACCESS_KEY_ID'];
+    const secretAccessKey = process.env['AWS_SECRET_ACCESS_KEY'];
+    const region = process.env['AWS_REGION'] || 'us-east-1';
 
     if (!accessKeyId || !secretAccessKey) {
       res.status(500).json({

@@ -18,15 +18,15 @@ let pollyClient: PollyClient | null = null;
 function getPollyClient(): PollyClient {
   if (!pollyClient) {
     // Check if AWS credentials are configured
-    if (!process.env.AWS_ACCESS_KEY_ID || !process.env.AWS_SECRET_ACCESS_KEY) {
+    if (!process.env['AWS_ACCESS_KEY_ID'] || !process.env['AWS_SECRET_ACCESS_KEY']) {
       throw new Error('AWS credentials not configured');
     }
 
     pollyClient = new PollyClient({
-      region: process.env.AWS_REGION || 'us-east-1',
+      region: process.env['AWS_REGION'] || 'us-east-1',
       credentials: {
-        accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+        accessKeyId: process.env['AWS_ACCESS_KEY_ID'],
+        secretAccessKey: process.env['AWS_SECRET_ACCESS_KEY'],
       },
     });
   }
@@ -79,7 +79,7 @@ export default async function handler(
     }
 
     // Check if AWS credentials are configured
-    if (!process.env.AWS_ACCESS_KEY_ID || !process.env.AWS_SECRET_ACCESS_KEY) {
+    if (!process.env['AWS_ACCESS_KEY_ID'] || !process.env['AWS_SECRET_ACCESS_KEY']) {
       console.warn('AWS credentials not configured - returning mock response');
       return res.status(200).json({
         success: false,
@@ -94,10 +94,10 @@ export default async function handler(
     // Synthesize speech using AWS Polly
     const command = new SynthesizeSpeechCommand({
       Text: text,
-      VoiceId: voiceId,
-      Engine: engine,
-      LanguageCode: languageCode,
-      OutputFormat: outputFormat,
+      VoiceId: voiceId as any, // Type assertion for AWS SDK compatibility
+      Engine: engine as any,
+      LanguageCode: languageCode as any,
+      OutputFormat: outputFormat as any,
       TextType: 'text', // Can be 'text' or 'ssml'
     });
 
@@ -152,7 +152,7 @@ async function streamToBuffer(stream: any): Promise<Buffer> {
  * Get list of available premium voices (helper endpoint)
  */
 export async function getAvailableVoices(
-  req: VercelRequest,
+  _req: VercelRequest,
   res: VercelResponse
 ) {
   return res.status(200).json({

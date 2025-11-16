@@ -44,7 +44,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { GoogleGenAI } from '@google/genai';
 import { createClient } from '@supabase/supabase-js';
-import { getGeminiApiKey } from './config';
+import { getGeminiApiKey } from '../config';
 
 // ============================================
 // Types
@@ -160,8 +160,8 @@ async function buildEnhancedContext(
   currentItem?: ChatRequest['currentItem']
 ): Promise<string> {
   try {
-    const supabaseUrl = process.env.SUPABASE_URL;
-    const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+    const supabaseUrl = process.env['SUPABASE_URL'];
+    const supabaseKey = process.env['SUPABASE_SERVICE_ROLE_KEY'];
 
     if (!supabaseUrl || !supabaseKey) {
       return ''; // Skip if Supabase not configured
@@ -448,7 +448,7 @@ function generatePersonaPrompt(taskType: string, goalScore?: number): string {
     },
   };
 
-  const persona = personas[taskType] || personas.vocabulary;
+  const persona = personas[taskType] || personas['vocabulary'];
 
   // Build comprehensive system prompt
   let prompt = `You are **${persona.name}**, an expert AI tutor specializing in PTE (Pearson Test of English) preparation.\n\n`;
@@ -496,8 +496,8 @@ async function saveConversationToDb(
   context?: ChatRequest['context']
 ): Promise<void> {
   try {
-    const supabaseUrl = process.env.SUPABASE_URL;
-    const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+    const supabaseUrl = process.env['SUPABASE_URL'];
+    const supabaseKey = process.env['SUPABASE_SERVICE_ROLE_KEY'];
 
     if (!supabaseUrl || !supabaseKey) {
       return; // Skip saving if Supabase not configured

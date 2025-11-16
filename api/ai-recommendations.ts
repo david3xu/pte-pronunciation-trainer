@@ -104,6 +104,15 @@ Return only valid JSON array, no additional text.`;
     });
     const responseText = response.text;
 
+    // Check if response is valid
+    if (!responseText) {
+      console.error('Empty response from Gemini API');
+      res.status(200).json({
+        recommendations: getMockRecommendations(currentAccuracy),
+      });
+      return;
+    }
+
     // Parse Gemini response
     let recommendations: Recommendation[];
 

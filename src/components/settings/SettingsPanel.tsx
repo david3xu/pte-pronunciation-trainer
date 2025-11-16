@@ -83,6 +83,12 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
       console.log(`[SettingsPanel] Loaded ${items.length} vocabulary items`);
       setDataset(items, bookId); // Now atomically sets currentItem and resets index
 
+      // Reapply difficulty filter to new book
+      if (difficultyFilter !== 'all') {
+        filterByDifficulty(difficultyFilter);
+        console.log(`[SettingsPanel] Applied ${difficultyFilter} filter to ${bookId}`);
+      }
+
       setLoading(false);
     } catch (error) {
       console.error('[SettingsPanel] Error loading vocabulary:', error);
@@ -134,6 +140,12 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
       console.log(`[SettingsPanel] Loaded ${items.length} practice items`);
       console.log('[SettingsPanel] First item:', items[0]);
       setDataset(items, mode); // Now atomically sets currentItem and resets index
+
+      // Reapply difficulty filter to practice dataset
+      if (difficultyFilter !== 'all') {
+        filterByDifficulty(difficultyFilter);
+        console.log(`[SettingsPanel] Applied ${difficultyFilter} filter to ${mode}`);
+      }
 
       setLoading(false);
     } catch (error) {

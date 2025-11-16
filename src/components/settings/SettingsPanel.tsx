@@ -34,6 +34,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
   const setVolume = useAppStore((state) => state.audio.setVolume);
   const setLoading = useAppStore((state) => state.vocabulary.setLoading);
   const setDataset = useAppStore((state) => state.vocabulary.setDataset);
+  const filterByDifficulty = useAppStore((state) => state.vocabulary.filterByDifficulty);
 
   // Handle vocabulary book change
   const handleVocabularyBookChange = async (bookId: string) => {
@@ -257,9 +258,12 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                 <Text size="3" weight="medium">Difficulty Filter</Text>
                 <Select.Root
                   value={difficultyFilter}
-                  onValueChange={(value) =>
-                    updateSetting('difficultyFilter', value as 'easy' | 'normal' | 'hard' | 'all')
-                  }
+                  onValueChange={(value) => {
+                    const difficulty = value as 'easy' | 'normal' | 'hard' | 'all';
+                    updateSetting('difficultyFilter', difficulty);
+                    // Apply the filter to current vocabulary
+                    filterByDifficulty(difficulty);
+                  }}
                 >
                   <Select.Trigger />
                   <Select.Content>

@@ -42,6 +42,7 @@ const AudioControls: React.FC = () => {
   const currentItem = useAppStore((state) => state.vocabulary.currentItem);
   const vocabulary = useAppStore((state) => state.vocabulary);
   const settings = useAppStore((state) => state.settings);
+  const difficultyFilter = useAppStore((state) => state.settings.difficultyFilter);
   const autoPlayRef = useRef<boolean>(false);
 
   // Helper function to load next vocabulary book
@@ -128,7 +129,10 @@ const AudioControls: React.FC = () => {
                           (currentItem as any).sentence || (currentItem as any).question;
 
       if (textToSpeak) {
-        const dataset = vocabulary.currentDataset;
+        // Use filtered dataset if filter is active, otherwise use current dataset
+        const dataset = difficultyFilter !== 'all'
+          ? vocabulary.filteredDataset
+          : vocabulary.currentDataset;
         console.log('[AudioControls] Auto-playing:', textToSpeak, `(${audio.currentIndex + 1}/${dataset?.length || 0})`);
 
         try {
@@ -267,7 +271,10 @@ const AudioControls: React.FC = () => {
 
   // Handle next button
   const handleNext = () => {
-    const dataset = vocabulary.currentDataset;
+    // Use filtered dataset if filter is active
+    const dataset = difficultyFilter !== 'all'
+      ? vocabulary.filteredDataset
+      : vocabulary.currentDataset;
     if (dataset && dataset.length > 0) {
       const nextIndex = audio.currentIndex + 1;
       if (nextIndex < dataset.length) {
@@ -282,7 +289,10 @@ const AudioControls: React.FC = () => {
 
   // Handle previous button
   const handlePrev = () => {
-    const dataset = vocabulary.currentDataset;
+    // Use filtered dataset if filter is active
+    const dataset = difficultyFilter !== 'all'
+      ? vocabulary.filteredDataset
+      : vocabulary.currentDataset;
     if (dataset && dataset.length > 0 && audio.currentIndex > 0) {
       const prevIndex = audio.currentIndex - 1;
       const prevItem = dataset[prevIndex];

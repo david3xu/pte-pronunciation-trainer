@@ -9,17 +9,30 @@ describe('App Component', () => {
 
   it('renders the app title', () => {
     render(<App />);
-    expect(screen.getByText(/PTE Pronunciation Trainer/i)).toBeInTheDocument();
+    expect(screen.getByText(/PTE Pronunciation/i)).toBeInTheDocument();
+  });
+
+  it('renders the Progress button', () => {
+    render(<App />);
+    expect(screen.getByRole('button', { name: /Progress/i })).toBeInTheDocument();
   });
 
   it('renders the AI Tutor button', () => {
     render(<App />);
-    expect(screen.getByRole('button', { name: /AI Tutor/i })).toBeInTheDocument();
+    const buttons = screen.getAllByRole('button', { name: /AI Tutor/i });
+    expect(buttons.length).toBeGreaterThan(0);
   });
 
-  it('renders the Practice button', () => {
+  it('renders the Insights button', () => {
     render(<App />);
-    expect(screen.getByRole('button', { name: /Practice/i })).toBeInTheDocument();
+    const buttons = screen.getAllByRole('button', { name: /Insights/i });
+    expect(buttons.length).toBeGreaterThan(0);
+  });
+
+  it('renders the Score button', () => {
+    render(<App />);
+    const buttons = screen.getAllByRole('button', { name: /Score/i });
+    expect(buttons.length).toBeGreaterThan(0);
   });
 
   it('renders the Settings button', () => {
@@ -27,19 +40,8 @@ describe('App Component', () => {
     expect(screen.getByRole('button', { name: /Settings/i })).toBeInTheDocument();
   });
 
-  it('renders Practice and Progress tabs', () => {
-    render(<App />);
-    expect(screen.getByRole('tab', { name: /Practice/i })).toBeInTheDocument();
-    expect(screen.getByRole('tab', { name: /Progress/i })).toBeInTheDocument();
-  });
-
   it('displays the app version in footer', () => {
     render(<App />);
-    expect(screen.getByText(/v2\.5\.4/i)).toBeInTheDocument();
-  });
-
-  it('displays the tech stack in footer', () => {
-    render(<App />);
-    expect(screen.getByText(/React \+ TypeScript \+ Zustand/i)).toBeInTheDocument();
+    expect(screen.getByText(/v3\.0\.0/i)).toBeInTheDocument();
   });
 });

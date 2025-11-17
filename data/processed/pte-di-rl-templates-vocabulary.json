@@ -1,0 +1,1015 @@
+{
+  "metadata": {
+    "generated": "2025-11-17T04:44:40.734Z",
+    "totalTerms": 100,
+    "source": "pte-di-rl-templates",
+    "description": "PTE Describe Image & Retell Lecture templates with IPA",
+    "version": "1.0",
+    "categories": [
+      "pte-di-rl-templates"
+    ],
+    "hasIPA": true
+  },
+  "vocabulary": [
+    {
+      "english": "this bar chart",
+      "pronunciation": {
+        "ipa": "ðɪs bɑːr tʃɑːrt",
+        "phonetic": "this bar chart"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "this line chart",
+      "pronunciation": {
+        "ipa": "ðɪs laɪn tʃɑːrt",
+        "phonetic": "this line chart"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "this pie chart",
+      "pronunciation": {
+        "ipa": "ðɪs paɪ tʃɑːrt",
+        "phonetic": "this pie chart"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "this table chart",
+      "pronunciation": {
+        "ipa": "ðɪs ˈteɪbl tʃɑːrt",
+        "phonetic": "this table chart"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "shows information about",
+      "pronunciation": {
+        "ipa": "ʃəʊz ˌɪnfəˈmeɪʃn əˈbaʊt",
+        "phonetic": "shows in-for-may-shun a-bout"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "firstly",
+      "pronunciation": {
+        "ipa": "ˈfɜːrstli",
+        "phonetic": "first-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "secondly",
+      "pronunciation": {
+        "ipa": "ˈsekəndli",
+        "phonetic": "second-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "thirdly",
+      "pronunciation": {
+        "ipa": "ˈθɜːrdli",
+        "phonetic": "third-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "furthermore",
+      "pronunciation": {
+        "ipa": "ˌfɜːrðərˈmɔːr",
+        "phonetic": "fur-ther-more"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "in summary",
+      "pronunciation": {
+        "ipa": "ɪn ˈsʌməri",
+        "phonetic": "in sum-muh-ree"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "the highest number",
+      "pronunciation": {
+        "ipa": "ðə ˈhaɪɪst ˈnʌmbər",
+        "phonetic": "the high-est num-ber"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "can be found in",
+      "pronunciation": {
+        "ipa": "kæn biː faʊnd ɪn",
+        "phonetic": "can bee found in"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "which is around",
+      "pronunciation": {
+        "ipa": "wɪtʃ ɪz əˈraʊnd",
+        "phonetic": "which iz a-round"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "the second-highest number",
+      "pronunciation": {
+        "ipa": "ðə ˈsekənd ˈhaɪɪst ˈnʌmbər",
+        "phonetic": "the second high-est num-ber"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "is located in",
+      "pronunciation": {
+        "ipa": "ɪz ləʊˈkeɪtɪd ɪn",
+        "phonetic": "iz low-kay-ted in"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "which is about",
+      "pronunciation": {
+        "ipa": "wɪtʃ ɪz əˈbaʊt",
+        "phonetic": "which iz a-bout"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "the lowest figure",
+      "pronunciation": {
+        "ipa": "ðə ˈləʊɪst ˈfɪɡər",
+        "phonetic": "the low-est fig-yer"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "is for",
+      "pronunciation": {
+        "ipa": "ɪz fɔːr",
+        "phonetic": "iz for"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "and the number is around",
+      "pronunciation": {
+        "ipa": "ænd ðə ˈnʌmbər ɪz əˈraʊnd",
+        "phonetic": "and the num-ber iz a-round"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "also carry",
+      "pronunciation": {
+        "ipa": "ˈɔːlsəʊ ˈkæri",
+        "phonetic": "all-so carry"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "important weight",
+      "pronunciation": {
+        "ipa": "ɪmˈpɔːrtnt weɪt",
+        "phonetic": "im-por-tant wait"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "in this graph",
+      "pronunciation": {
+        "ipa": "ɪn ðɪs ɡræf",
+        "phonetic": "in this graph"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "this chart uses",
+      "pronunciation": {
+        "ipa": "ðɪs tʃɑːrt ˈjuːzɪz",
+        "phonetic": "this chart you-ziz"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "real data",
+      "pronunciation": {
+        "ipa": "riːl ˈdeɪtə",
+        "phonetic": "reel day-tuh"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "to describe",
+      "pronunciation": {
+        "ipa": "tuː dɪˈskraɪb",
+        "phonetic": "too dis-cribe"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "if you look at",
+      "pronunciation": {
+        "ipa": "ɪf juː lʊk æt",
+        "phonetic": "if you look at"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "according to the picture",
+      "pronunciation": {
+        "ipa": "əˈkɔːrdɪŋ tuː ðə ˈpɪktʃər",
+        "phonetic": "a-cord-ing too the pic-cher"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "we can see that",
+      "pronunciation": {
+        "ipa": "wiː kæn siː ðæt",
+        "phonetic": "we can see that"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "the most obvious information",
+      "pronunciation": {
+        "ipa": "ðə məʊst ˈɒbviəs ˌɪnfəˈmeɪʃn",
+        "phonetic": "the most ob-vee-us in-for-may-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "given here is",
+      "pronunciation": {
+        "ipa": "ˈɡɪvn hɪər ɪz",
+        "phonetic": "giv-en here iz"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "this flow chart",
+      "pronunciation": {
+        "ipa": "ðɪs fləʊ tʃɑːrt",
+        "phonetic": "this flow chart"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "the process",
+      "pronunciation": {
+        "ipa": "ðə ˈprəʊses",
+        "phonetic": "the pro-sess"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "starts from",
+      "pronunciation": {
+        "ipa": "stɑːrts frɒm",
+        "phonetic": "starts from"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "the first stage",
+      "pronunciation": {
+        "ipa": "ðə fɜːrst steɪdʒ",
+        "phonetic": "the first stage"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "which is called",
+      "pronunciation": {
+        "ipa": "wɪtʃ ɪz kɔːld",
+        "phonetic": "which iz called"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "it goes to",
+      "pronunciation": {
+        "ipa": "ɪt ɡəʊz tuː",
+        "phonetic": "it goes too"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "the second stage",
+      "pronunciation": {
+        "ipa": "ðə ˈsekənd steɪdʒ",
+        "phonetic": "the second stage"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "it comes to",
+      "pronunciation": {
+        "ipa": "ɪt kʌmz tuː",
+        "phonetic": "it comes too"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "the third stage",
+      "pronunciation": {
+        "ipa": "ðə θɜːrd steɪdʒ",
+        "phonetic": "the third stage"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "comes to",
+      "pronunciation": {
+        "ipa": "kʌmz tuː",
+        "phonetic": "comes too"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "the ending point",
+      "pronunciation": {
+        "ipa": "ðə ˈendɪŋ pɔɪnt",
+        "phonetic": "the end-ing point"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "shows details about",
+      "pronunciation": {
+        "ipa": "ʃəʊz ˈdiːteɪlz əˈbaʊt",
+        "phonetic": "shows dee-tails a-bout"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "in the end",
+      "pronunciation": {
+        "ipa": "ɪn ðiː end",
+        "phonetic": "in thee end"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "the process will start again",
+      "pronunciation": {
+        "ipa": "ðə ˈprəʊses wɪl stɑːrt əˈɡen",
+        "phonetic": "the pro-sess will start a-gen"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "from the very beginning",
+      "pronunciation": {
+        "ipa": "frɒm ðə ˈveri bɪˈɡɪnɪŋ",
+        "phonetic": "from the very be-gin-ing"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "this picture",
+      "pronunciation": {
+        "ipa": "ðɪs ˈpɪktʃər",
+        "phonetic": "this pic-cher"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "next to it",
+      "pronunciation": {
+        "ipa": "nekst tuː ɪt",
+        "phonetic": "next too it"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "we can see",
+      "pronunciation": {
+        "ipa": "wiː kæn siː",
+        "phonetic": "we can see"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "and these elements",
+      "pronunciation": {
+        "ipa": "ænd ðiːz ˈelɪmənts",
+        "phonetic": "and these el-uh-ments"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "are also quite important",
+      "pronunciation": {
+        "ipa": "ɑːr ˈɔːlsəʊ kwaɪt ɪmˈpɔːrtnt",
+        "phonetic": "are all-so quite im-por-tant"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "are also shown in this part",
+      "pronunciation": {
+        "ipa": "ɑːr ˈɔːlsəʊ ʃəʊn ɪn ðɪs pɑːrt",
+        "phonetic": "are all-so shown in this part"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "giving a better understanding",
+      "pronunciation": {
+        "ipa": "ˈɡɪvɪŋ ə ˈbetər ˌʌndərˈstændɪŋ",
+        "phonetic": "giv-ing a bet-ter un-der-stand-ing"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "about this picture",
+      "pronunciation": {
+        "ipa": "əˈbaʊt ðɪs ˈpɪktʃər",
+        "phonetic": "a-bout this pic-cher"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "we can also see",
+      "pronunciation": {
+        "ipa": "wiː kæn ˈɔːlsəʊ siː",
+        "phonetic": "we can all-so see"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "in this picture as well",
+      "pronunciation": {
+        "ipa": "ɪn ðɪs ˈpɪktʃər æz wel",
+        "phonetic": "in this pic-cher az well"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "the picture",
+      "pronunciation": {
+        "ipa": "ðə ˈpɪktʃər",
+        "phonetic": "the pic-cher"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "uses different elements",
+      "pronunciation": {
+        "ipa": "ˈjuːzɪz ˈdɪfrənt ˈelɪmənts",
+        "phonetic": "you-ziz dif-rent el-uh-ments"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "to describle",
+      "pronunciation": {
+        "ipa": "tuː dɪˈskraɪb",
+        "phonetic": "too dis-cribe"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "this lecture",
+      "pronunciation": {
+        "ipa": "ðɪs ˈlektʃər",
+        "phonetic": "this leck-cher"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "is mainly",
+      "pronunciation": {
+        "ipa": "ɪz ˈmeɪnli",
+        "phonetic": "iz main-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "talking about",
+      "pronunciation": {
+        "ipa": "ˈtɔːkɪŋ əˈbaʊt",
+        "phonetic": "talk-ing a-bout"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "the lecture begins",
+      "pronunciation": {
+        "ipa": "ðə ˈlektʃər bɪˈɡɪnz",
+        "phonetic": "the leck-cher be-gins"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "by giving an introduction about",
+      "pronunciation": {
+        "ipa": "baɪ ˈɡɪvɪŋ ən ˌɪntrəˈdʌkʃn əˈbaʊt",
+        "phonetic": "by giv-ing an in-tro-duck-shun a-bout"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "are mentioned by the speaker",
+      "pronunciation": {
+        "ipa": "ɑːr ˈmenʃnd baɪ ðə ˈspiːkər",
+        "phonetic": "are men-shund by the spee-ker"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "which is tied to the topic",
+      "pronunciation": {
+        "ipa": "wɪtʃ ɪz taɪd tuː ðə ˈtɒpɪk",
+        "phonetic": "which iz tied too the top-ick"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "the speaker",
+      "pronunciation": {
+        "ipa": "ðə ˈspiːkər",
+        "phonetic": "the spee-ker"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "provides a lot of details about",
+      "pronunciation": {
+        "ipa": "prəˈvaɪdz ə lɒt ɒv ˈdiːteɪlz əˈbaʊt",
+        "phonetic": "pro-vides a lot ov dee-tails a-bout"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "the lecture argues",
+      "pronunciation": {
+        "ipa": "ðə ˈlektʃər ˈɑːrɡjuːz",
+        "phonetic": "the leck-cher ar-gyoos"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "the point of",
+      "pronunciation": {
+        "ipa": "ðə pɔɪnt ɒv",
+        "phonetic": "the point ov"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "to support the main idea",
+      "pronunciation": {
+        "ipa": "tuː səˈpɔːrt ðə meɪn aɪˈdɪə",
+        "phonetic": "too sup-port the main eye-dee-uh"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "the lecture covers the topic of",
+      "pronunciation": {
+        "ipa": "ðə ˈlektʃər ˈkʌvərz ðə ˈtɒpɪk ɒv",
+        "phonetic": "the leck-cher cuv-ers the top-ick ov"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "the conversation",
+      "pronunciation": {
+        "ipa": "ðə ˌkɒnvərˈseɪʃn",
+        "phonetic": "the con-ver-say-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "is about three speakers",
+      "pronunciation": {
+        "ipa": "ɪz əˈbaʊt θriː ˈspiːkərz",
+        "phonetic": "iz a-bout three spee-kers"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "discussing",
+      "pronunciation": {
+        "ipa": "dɪˈskʌsɪŋ",
+        "phonetic": "dis-cuss-ing"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "one key aspect",
+      "pronunciation": {
+        "ipa": "wʌn kiː ˈæspekt",
+        "phonetic": "one key as-pect"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "discussed is",
+      "pronunciation": {
+        "ipa": "dɪˈskʌst ɪz",
+        "phonetic": "dis-cussed iz"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "speaker one talks about",
+      "pronunciation": {
+        "ipa": "ˈspiːkər wʌn tɔːks əˈbaʊt",
+        "phonetic": "spee-ker one talks a-bout"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "which is connected to",
+      "pronunciation": {
+        "ipa": "wɪtʃ ɪz kəˈnektɪd tuː",
+        "phonetic": "which iz con-eck-ted too"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "then",
+      "pronunciation": {
+        "ipa": "ðen",
+        "phonetic": "then"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "speaker two agrees",
+      "pronunciation": {
+        "ipa": "ˈspiːkər tuː əˈɡriːz",
+        "phonetic": "spee-ker two a-greez"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "speaker two disagrees",
+      "pronunciation": {
+        "ipa": "ˈspiːkər tuː ˌdɪsəˈɡriːz",
+        "phonetic": "spee-ker two dis-a-greez"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "and says",
+      "pronunciation": {
+        "ipa": "ænd sez",
+        "phonetic": "and sez"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "is important to",
+      "pronunciation": {
+        "ipa": "ɪz ɪmˈpɔːrtnt tuː",
+        "phonetic": "iz im-por-tant too"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "and then",
+      "pronunciation": {
+        "ipa": "ænd ðen",
+        "phonetic": "and then"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "speaker three mentions",
+      "pronunciation": {
+        "ipa": "ˈspiːkər θriː ˈmenʃnz",
+        "phonetic": "spee-ker three men-shuns"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "and it contributes to",
+      "pronunciation": {
+        "ipa": "ænd ɪt kənˈtrɪbjuːts tuː",
+        "phonetic": "and it con-trib-yoots too"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "following that",
+      "pronunciation": {
+        "ipa": "ˈfɒləʊɪŋ ðæt",
+        "phonetic": "fol-low-ing that"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "another important idea is about",
+      "pronunciation": {
+        "ipa": "əˈnʌðər ɪmˈpɔːrtnt aɪˈdɪə ɪz əˈbaʊt",
+        "phonetic": "a-nuth-er im-por-tant eye-dee-uh iz a-bout"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "which is tied to",
+      "pronunciation": {
+        "ipa": "wɪtʃ ɪz taɪd tuː",
+        "phonetic": "which iz tied too"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "also",
+      "pronunciation": {
+        "ipa": "ˈɔːlsəʊ",
+        "phonetic": "all-so"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "is crucial for",
+      "pronunciation": {
+        "ipa": "ɪz ˈkruːʃl fɔːr",
+        "phonetic": "iz crew-shul for"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "and also",
+      "pronunciation": {
+        "ipa": "ænd ˈɔːlsəʊ",
+        "phonetic": "and all-so"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "moreover",
+      "pronunciation": {
+        "ipa": "mɔːrˈəʊvər",
+        "phonetic": "more-oh-ver"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "they also discuss",
+      "pronunciation": {
+        "ipa": "ðeɪ ˈɔːlsəʊ dɪˈskʌs",
+        "phonetic": "they all-so dis-cuss"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "which is related to",
+      "pronunciation": {
+        "ipa": "wɪtʃ ɪz rɪˈleɪtɪd tuː",
+        "phonetic": "which iz re-lay-ted too"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "later",
+      "pronunciation": {
+        "ipa": "ˈleɪtər",
+        "phonetic": "lay-ter"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "is essential to",
+      "pronunciation": {
+        "ipa": "ɪz ɪˈsenʃl tuː",
+        "phonetic": "iz es-sen-shul too"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "and later",
+      "pronunciation": {
+        "ipa": "ænd ˈleɪtər",
+        "phonetic": "and lay-ter"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "speaker three also mentions",
+      "pronunciation": {
+        "ipa": "ˈspiːkər θriː ˈɔːlsəʊ ˈmenʃnz",
+        "phonetic": "spee-ker three all-so men-shuns"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "and it refers to",
+      "pronunciation": {
+        "ipa": "ænd ɪt rɪˈfɜːrz tuː",
+        "phonetic": "and it re-fers too"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    }
+  ]
+}

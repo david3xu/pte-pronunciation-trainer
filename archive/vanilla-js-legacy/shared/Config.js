@@ -208,6 +208,17 @@ export class AppConfig {
                         inputSubdir: 'vocabs',
                         isDefault: true
                     },
+                    {
+                        id: 'pte-di-rl-templates',
+                        input: 'pte-di-rl-templates-with-ipa.md',
+                        output: 'pte-di-rl-templates-vocabulary.json',
+                        category: 'pte-di-rl-templates',
+                        description: 'PTE Describe Image & Retell Lecture templates with IPA',
+                        sourceType: 'pte-di-rl-templates',
+                        dataType: 'vocabulary',
+                        extractorType: 'SingleIPATermsExtractor',
+                        inputSubdir: 'vocabs'
+                    },
                     // ... Add more registry entries as needed during migration
                 ],
                 extractorTypes: {

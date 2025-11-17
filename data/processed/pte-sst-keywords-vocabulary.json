@@ -1,0 +1,1735 @@
+{
+  "metadata": {
+    "generated": "2025-11-17T08:06:08.763Z",
+    "totalTerms": 172,
+    "source": "pte-sst-keywords",
+    "description": "PTE SST (Summarize Spoken Text) keywords with IPA",
+    "version": "1.0",
+    "categories": [
+      "pte-sst-keywords"
+    ],
+    "hasIPA": true
+  },
+  "vocabulary": [
+    {
+      "english": "peasants",
+      "pronunciation": {
+        "ipa": "ˈpezənts",
+        "phonetic": "pez-ants"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "debt",
+      "pronunciation": {
+        "ipa": "det",
+        "phonetic": "det"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "pesticides",
+      "pronunciation": {
+        "ipa": "ˈpestɪsaɪdz",
+        "phonetic": "pes-ti-sides"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "globalization",
+      "pronunciation": {
+        "ipa": "ˌɡləʊbəlaɪˈzeɪʃn",
+        "phonetic": "glow-bal-eye-zay-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "proliferation",
+      "pronunciation": {
+        "ipa": "prəˌlɪfəˈreɪʃn",
+        "phonetic": "pro-lif-er-ay-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "integrated",
+      "pronunciation": {
+        "ipa": "ˈɪntɪɡreɪtɪd",
+        "phonetic": "in-tuh-gray-ted"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "consuming",
+      "pronunciation": {
+        "ipa": "kənˈsjuːmɪŋ",
+        "phonetic": "kun-sue-ming"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "producing",
+      "pronunciation": {
+        "ipa": "prəˈdjuːsɪŋ",
+        "phonetic": "pro-due-sing"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "post-industrial",
+      "pronunciation": {
+        "ipa": "pəʊst ɪnˈdʌstriəl",
+        "phonetic": "post in-dus-tree-al"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "artificial intelligence",
+      "pronunciation": {
+        "ipa": "ˌɑːrtɪˈfɪʃl ɪnˈtelɪdʒəns",
+        "phonetic": "ar-ti-fish-al in-tel-i-jens"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "programmed",
+      "pronunciation": {
+        "ipa": "ˈprəʊɡræmd",
+        "phonetic": "pro-gramd"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "systems",
+      "pronunciation": {
+        "ipa": "ˈsɪstəmz",
+        "phonetic": "sis-tems"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "symbols",
+      "pronunciation": {
+        "ipa": "ˈsɪmblz",
+        "phonetic": "sim-buls"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "bytes",
+      "pronunciation": {
+        "ipa": "baɪts",
+        "phonetic": "bites"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "processors",
+      "pronunciation": {
+        "ipa": "ˈprəʊsesərz",
+        "phonetic": "pro-ses-ers"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "potential",
+      "pronunciation": {
+        "ipa": "pəˈtenʃl",
+        "phonetic": "po-ten-shul"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "obese",
+      "pronunciation": {
+        "ipa": "əʊˈbiːs",
+        "phonetic": "oh-bees"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "volunteered",
+      "pronunciation": {
+        "ipa": "ˌvɒlənˈtɪərd",
+        "phonetic": "vol-un-teerd"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "experiment",
+      "pronunciation": {
+        "ipa": "ɪkˈsperɪmənt",
+        "phonetic": "ik-sper-i-ment"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "diet",
+      "pronunciation": {
+        "ipa": "ˈdaɪət",
+        "phonetic": "die-et"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "requirements",
+      "pronunciation": {
+        "ipa": "rɪˈkwaɪərmənts",
+        "phonetic": "re-kwire-ments"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "unconsciously",
+      "pronunciation": {
+        "ipa": "ʌnˈkɒnʃəsli",
+        "phonetic": "un-kon-shus-lee"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "psychological",
+      "pronunciation": {
+        "ipa": "ˌsaɪkəˈlɒdʒɪkl",
+        "phonetic": "sigh-ko-loj-i-kal"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "abstraction",
+      "pronunciation": {
+        "ipa": "æbˈstrækʃn",
+        "phonetic": "ab-strak-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "symbolic",
+      "pronunciation": {
+        "ipa": "sɪmˈbɒlɪk",
+        "phonetic": "sim-bol-ik"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "communicate",
+      "pronunciation": {
+        "ipa": "kəˈmjuːnɪkeɪt",
+        "phonetic": "ko-mew-ni-kate"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "genes",
+      "pronunciation": {
+        "ipa": "dʒiːnz",
+        "phonetic": "jeens"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "behaviors",
+      "pronunciation": {
+        "ipa": "bɪˈheɪvjərz",
+        "phonetic": "be-hay-vyers"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "discovery",
+      "pronunciation": {
+        "ipa": "dɪˈskʌvəri",
+        "phonetic": "dis-kuv-er-ee"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "DNA structure",
+      "pronunciation": {
+        "ipa": "ˌdiː en ˈeɪ ˈstrʌktʃər",
+        "phonetic": "dee-en-ay struk-cher"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "mapping",
+      "pronunciation": {
+        "ipa": "ˈmæpɪŋ",
+        "phonetic": "map-ing"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "genetic",
+      "pronunciation": {
+        "ipa": "dʒəˈnetɪk",
+        "phonetic": "je-net-ik"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "responsibility",
+      "pronunciation": {
+        "ipa": "rɪˌspɒnsəˈbɪləti",
+        "phonetic": "re-spon-si-bil-i-tee"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "neuroscience",
+      "pronunciation": {
+        "ipa": "ˈnjʊərəʊˌsaɪəns",
+        "phonetic": "new-row-sigh-ens"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "wealth",
+      "pronunciation": {
+        "ipa": "welθ",
+        "phonetic": "welth"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "Industrial Revolution",
+      "pronunciation": {
+        "ipa": "ɪnˈdʌstriəl ˌrevəˈluːʃn",
+        "phonetic": "in-dus-tree-al rev-o-loo-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "economists",
+      "pronunciation": {
+        "ipa": "ɪˈkɒnəmɪsts",
+        "phonetic": "ee-kon-o-mists"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "agriculture",
+      "pronunciation": {
+        "ipa": "ˈæɡrɪkʌltʃər",
+        "phonetic": "ag-ri-kul-cher"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "manufacturing",
+      "pronunciation": {
+        "ipa": "ˌmænjuˈfæktʃərɪŋ",
+        "phonetic": "man-you-fak-cher-ing"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "outputs",
+      "pronunciation": {
+        "ipa": "ˈaʊtpʊts",
+        "phonetic": "out-puts"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "pragmatism",
+      "pronunciation": {
+        "ipa": "ˈpræɡmətɪzəm",
+        "phonetic": "prag-ma-tiz-um"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "democracy",
+      "pronunciation": {
+        "ipa": "dɪˈmɒkrəsi",
+        "phonetic": "di-mok-ra-see"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "tempering",
+      "pronunciation": {
+        "ipa": "ˈtempərɪŋ",
+        "phonetic": "tem-per-ing"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "legislation",
+      "pronunciation": {
+        "ipa": "ˌledʒɪsˈleɪʃn",
+        "phonetic": "lej-is-lay-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "environmental",
+      "pronunciation": {
+        "ipa": "ɪnˌvaɪrənˈmentl",
+        "phonetic": "en-vire-on-men-tal"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "circumscribe",
+      "pronunciation": {
+        "ipa": "ˈsɜːkəmskraɪb",
+        "phonetic": "ser-kum-scribe"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "survey",
+      "pronunciation": {
+        "ipa": "ˈsɜːveɪ",
+        "phonetic": "ser-vay"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "valid",
+      "pronunciation": {
+        "ipa": "ˈvælɪd",
+        "phonetic": "val-id"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "consistent",
+      "pronunciation": {
+        "ipa": "kənˈsɪstənt",
+        "phonetic": "kon-sis-tent"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "well-being",
+      "pronunciation": {
+        "ipa": "ˌwel ˈbiːɪŋ",
+        "phonetic": "wel bee-ing"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "marital",
+      "pronunciation": {
+        "ipa": "ˈmærɪtl",
+        "phonetic": "mar-i-tal"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "employment",
+      "pronunciation": {
+        "ipa": "ɪmˈplɔɪmənt",
+        "phonetic": "im-ploy-ment"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "equality",
+      "pronunciation": {
+        "ipa": "iˈkwɒləti",
+        "phonetic": "ee-kwol-i-tee"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "climate change",
+      "pronunciation": {
+        "ipa": "ˈklaɪmət tʃeɪndʒ",
+        "phonetic": "kly-mat chaynj"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "predictions",
+      "pronunciation": {
+        "ipa": "prɪˈdɪkʃnz",
+        "phonetic": "pre-dik-shuns"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "panicked",
+      "pronunciation": {
+        "ipa": "ˈpænɪkt",
+        "phonetic": "pan-ikt"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "population",
+      "pronunciation": {
+        "ipa": "ˌpɒpjuˈleɪʃn",
+        "phonetic": "pop-you-lay-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "criticized",
+      "pronunciation": {
+        "ipa": "ˈkrɪtɪsaɪzd",
+        "phonetic": "krit-i-sized"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "precipitation",
+      "pronunciation": {
+        "ipa": "prɪˌsɪpɪˈteɪʃn",
+        "phonetic": "pre-sip-i-tay-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "therapeutic",
+      "pronunciation": {
+        "ipa": "ˌθerəˈpjuːtɪk",
+        "phonetic": "ther-a-pew-tik"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "daylight",
+      "pronunciation": {
+        "ipa": "ˈdeɪlaɪt",
+        "phonetic": "day-lite"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "recovery",
+      "pronunciation": {
+        "ipa": "rɪˈkʌvəri",
+        "phonetic": "re-kuv-er-ee"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "architecture",
+      "pronunciation": {
+        "ipa": "ˈɑːrkɪtektʃər",
+        "phonetic": "ar-ki-tek-cher"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "stress",
+      "pronunciation": {
+        "ipa": "stres",
+        "phonetic": "stress"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "separation",
+      "pronunciation": {
+        "ipa": "ˌsepəˈreɪʃn",
+        "phonetic": "sep-a-ray-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "checks and balances",
+      "pronunciation": {
+        "ipa": "tʃeks ənd ˈbælənsɪz",
+        "phonetic": "cheks and bal-an-ses"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "constitution",
+      "pronunciation": {
+        "ipa": "ˌkɒnstɪˈtjuːʃn",
+        "phonetic": "kon-sti-too-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "legislative",
+      "pronunciation": {
+        "ipa": "ˈledʒɪslətɪv",
+        "phonetic": "lej-is-la-tiv"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "judicial",
+      "pronunciation": {
+        "ipa": "dʒuːˈdɪʃl",
+        "phonetic": "joo-dish-ul"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "interpret",
+      "pronunciation": {
+        "ipa": "ɪnˈtɜːprɪt",
+        "phonetic": "in-ter-prit"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "executive",
+      "pronunciation": {
+        "ipa": "ɪɡˈzekjətɪv",
+        "phonetic": "ig-zek-you-tiv"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "desire",
+      "pronunciation": {
+        "ipa": "dɪˈzaɪər",
+        "phonetic": "diz-ire"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "objective",
+      "pronunciation": {
+        "ipa": "əbˈdʒektɪv",
+        "phonetic": "ob-jek-tiv"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "essential",
+      "pronunciation": {
+        "ipa": "ɪˈsenʃl",
+        "phonetic": "es-sen-shul"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "sunlight",
+      "pronunciation": {
+        "ipa": "ˈsʌnlaɪt",
+        "phonetic": "sun-lite"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "detraditionalization",
+      "pronunciation": {
+        "ipa": "diːˌtrædɪʃnəlaɪˈzeɪʃn",
+        "phonetic": "dee-tra-dish-un-al-eye-zay-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "instant",
+      "pronunciation": {
+        "ipa": "ˈɪnstənt",
+        "phonetic": "in-stant"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "shrinking",
+      "pronunciation": {
+        "ipa": "ˈʃrɪŋkɪŋ",
+        "phonetic": "shrink-ing"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "erosion",
+      "pronunciation": {
+        "ipa": "ɪˈrəʊʒn",
+        "phonetic": "ee-row-zhun"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "conventional",
+      "pronunciation": {
+        "ipa": "kənˈvenʃənl",
+        "phonetic": "kon-ven-shun-al"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "rejecting",
+      "pronunciation": {
+        "ipa": "rɪˈdʒektɪŋ",
+        "phonetic": "re-jek-ting"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "imitating",
+      "pronunciation": {
+        "ipa": "ˈɪmɪteɪtɪŋ",
+        "phonetic": "im-i-tay-ting"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "journalism",
+      "pronunciation": {
+        "ipa": "ˈdʒɜːrnəlɪzəm",
+        "phonetic": "jer-nal-iz-um"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "consumed",
+      "pronunciation": {
+        "ipa": "kənˈsjuːmd",
+        "phonetic": "kon-soomd"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "spreading",
+      "pronunciation": {
+        "ipa": "ˈspredɪŋ",
+        "phonetic": "spread-ing"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "diversity",
+      "pronunciation": {
+        "ipa": "daɪˈvɜːrsəti",
+        "phonetic": "die-ver-si-tee"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "multicultural",
+      "pronunciation": {
+        "ipa": "ˌmʌltiˈkʌltʃərəl",
+        "phonetic": "mul-tee-kul-cher-al"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "immigrants",
+      "pronunciation": {
+        "ipa": "ˈɪmɪɡrənts",
+        "phonetic": "im-i-grants"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "productivity",
+      "pronunciation": {
+        "ipa": "ˌprɒdʌkˈtɪvəti",
+        "phonetic": "prod-uk-tiv-i-tee"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "statistics",
+      "pronunciation": {
+        "ipa": "stəˈtɪstɪks",
+        "phonetic": "sta-tis-tiks"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "overseas",
+      "pronunciation": {
+        "ipa": "ˌəʊvərˈsiːz",
+        "phonetic": "oh-ver-seez"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "managers",
+      "pronunciation": {
+        "ipa": "ˈmænɪdʒərz",
+        "phonetic": "man-i-jers"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "organization",
+      "pronunciation": {
+        "ipa": "ˌɔːrɡənaɪˈzeɪʃn",
+        "phonetic": "or-gan-eye-zay-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "professor",
+      "pronunciation": {
+        "ipa": "prəˈfesər",
+        "phonetic": "pro-fes-er"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "perspectives",
+      "pronunciation": {
+        "ipa": "pərˈspektɪvz",
+        "phonetic": "per-spek-tivz"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "experience",
+      "pronunciation": {
+        "ipa": "ɪkˈspɪəriəns",
+        "phonetic": "ik-speer-ee-ens"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "moral",
+      "pronunciation": {
+        "ipa": "ˈmɒrəl",
+        "phonetic": "mor-al"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "objectivism",
+      "pronunciation": {
+        "ipa": "əbˈdʒektɪvɪzəm",
+        "phonetic": "ob-jek-tiv-iz-um"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "universal",
+      "pronunciation": {
+        "ipa": "ˌjuːnɪˈvɜːrsl",
+        "phonetic": "you-ni-ver-sal"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "principles",
+      "pronunciation": {
+        "ipa": "ˈprɪnsəplz",
+        "phonetic": "prin-si-puls"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "absolutism",
+      "pronunciation": {
+        "ipa": "ˈæbsəluːtɪzəm",
+        "phonetic": "ab-so-loo-tiz-um"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "boundary",
+      "pronunciation": {
+        "ipa": "ˈbaʊndri",
+        "phonetic": "bown-dree"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "violated",
+      "pronunciation": {
+        "ipa": "ˈvaɪəleɪtɪd",
+        "phonetic": "vye-o-lay-ted"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "interpretations",
+      "pronunciation": {
+        "ipa": "ɪnˌtɜːrprɪˈteɪʃnz",
+        "phonetic": "in-ter-pri-tay-shuns"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "canned",
+      "pronunciation": {
+        "ipa": "kænd",
+        "phonetic": "kand"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "refrigerators",
+      "pronunciation": {
+        "ipa": "rɪˈfrɪdʒəreɪtərz",
+        "phonetic": "re-frij-er-ay-ters"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "rural",
+      "pronunciation": {
+        "ipa": "ˈrʊərəl",
+        "phonetic": "roo-ral"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "appliances",
+      "pronunciation": {
+        "ipa": "əˈplaɪənsɪz",
+        "phonetic": "a-ply-an-ses"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "frozen",
+      "pronunciation": {
+        "ipa": "ˈfrəʊzn",
+        "phonetic": "fro-zen"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "technology",
+      "pronunciation": {
+        "ipa": "tekˈnɒlədʒi",
+        "phonetic": "tek-nol-o-jee"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "supermarkets",
+      "pronunciation": {
+        "ipa": "ˈsuːpərmɑːrkɪts",
+        "phonetic": "soo-per-mar-kits"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "synthetic",
+      "pronunciation": {
+        "ipa": "sɪnˈθetɪk",
+        "phonetic": "sin-thet-ik"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "biology",
+      "pronunciation": {
+        "ipa": "baɪˈɒlədʒi",
+        "phonetic": "by-ol-o-jee"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "engineering",
+      "pronunciation": {
+        "ipa": "ˌendʒɪˈnɪərɪŋ",
+        "phonetic": "en-ji-neer-ing"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "organism",
+      "pronunciation": {
+        "ipa": "ˈɔːrɡənɪzəm",
+        "phonetic": "or-gan-iz-um"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "synthesize",
+      "pronunciation": {
+        "ipa": "ˈsɪnθəsaɪz",
+        "phonetic": "sin-tha-size"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "cellular",
+      "pronunciation": {
+        "ipa": "ˈseljələr",
+        "phonetic": "sel-you-ler"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "bacteria",
+      "pronunciation": {
+        "ipa": "bækˈtɪəriə",
+        "phonetic": "bak-teer-ee-a"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "neighboring",
+      "pronunciation": {
+        "ipa": "ˈneɪbərɪŋ",
+        "phonetic": "nay-ber-ing"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "geological",
+      "pronunciation": {
+        "ipa": "ˌdʒiːəˈlɒdʒɪkl",
+        "phonetic": "jee-o-loj-i-kal"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "landscape",
+      "pronunciation": {
+        "ipa": "ˈlændskeɪp",
+        "phonetic": "land-scape"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "desert",
+      "pronunciation": {
+        "ipa": "ˈdezərt",
+        "phonetic": "dez-ert"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "evidence",
+      "pronunciation": {
+        "ipa": "ˈevɪdəns",
+        "phonetic": "ev-i-dens"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "existence",
+      "pronunciation": {
+        "ipa": "ɪɡˈzɪstəns",
+        "phonetic": "ig-zis-tens"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "gravity",
+      "pronunciation": {
+        "ipa": "ˈɡrævəti",
+        "phonetic": "grav-i-tee"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "atmosphere",
+      "pronunciation": {
+        "ipa": "ˈætməsfɪər",
+        "phonetic": "at-mos-feer"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "destination",
+      "pronunciation": {
+        "ipa": "ˌdestɪˈneɪʃn",
+        "phonetic": "des-ti-nay-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "borrowed",
+      "pronunciation": {
+        "ipa": "ˈbɒrəʊd",
+        "phonetic": "bor-owed"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "variety",
+      "pronunciation": {
+        "ipa": "vəˈraɪəti",
+        "phonetic": "va-rye-e-tee"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "connected",
+      "pronunciation": {
+        "ipa": "kəˈnektɪd",
+        "phonetic": "ko-nek-ted"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "original",
+      "pronunciation": {
+        "ipa": "əˈrɪdʒənl",
+        "phonetic": "o-rij-in-al"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "linguists",
+      "pronunciation": {
+        "ipa": "ˈlɪŋɡwɪsts",
+        "phonetic": "ling-gwists"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "vocabulary",
+      "pronunciation": {
+        "ipa": "vəˈkæbjələri",
+        "phonetic": "vo-kab-you-ler-ee"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "comparable",
+      "pronunciation": {
+        "ipa": "ˈkɒmpərəbl",
+        "phonetic": "kom-par-a-bul"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "notions",
+      "pronunciation": {
+        "ipa": "ˈnəʊʃnz",
+        "phonetic": "no-shuns"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "disciplines",
+      "pronunciation": {
+        "ipa": "ˈdɪsəplɪnz",
+        "phonetic": "dis-i-plins"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "sociology",
+      "pronunciation": {
+        "ipa": "ˌsəʊsiˈɒlədʒi",
+        "phonetic": "so-see-ol-o-jee"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "breadth",
+      "pronunciation": {
+        "ipa": "bredθ",
+        "phonetic": "bredth"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "liberating",
+      "pronunciation": {
+        "ipa": "ˈlɪbəreɪtɪŋ",
+        "phonetic": "lib-er-ay-ting"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "ancestors",
+      "pronunciation": {
+        "ipa": "ˈænsestərz",
+        "phonetic": "an-ses-ters"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "indigenous",
+      "pronunciation": {
+        "ipa": "ɪnˈdɪdʒənəs",
+        "phonetic": "in-dij-en-us"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "inhabitants",
+      "pronunciation": {
+        "ipa": "ɪnˈhæbɪtənts",
+        "phonetic": "in-hab-i-tants"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "Aboriginal",
+      "pronunciation": {
+        "ipa": "ˌæbəˈrɪdʒənl",
+        "phonetic": "ab-o-rij-in-al"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "diversify",
+      "pronunciation": {
+        "ipa": "daɪˈvɜːrsɪfaɪ",
+        "phonetic": "die-ver-si-fy"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "refugees",
+      "pronunciation": {
+        "ipa": "ˌrefjuˈdʒiːz",
+        "phonetic": "ref-you-jeez"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "multiculturalism",
+      "pronunciation": {
+        "ipa": "ˌmʌltiˈkʌltʃərəlɪzəm",
+        "phonetic": "mul-tee-kul-cher-al-iz-um"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "settlers",
+      "pronunciation": {
+        "ipa": "ˈsetlərz",
+        "phonetic": "set-lers"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "stability",
+      "pronunciation": {
+        "ipa": "stəˈbɪləti",
+        "phonetic": "sta-bil-i-tee"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "intense",
+      "pronunciation": {
+        "ipa": "ɪnˈtens",
+        "phonetic": "in-tens"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "contentment",
+      "pronunciation": {
+        "ipa": "kənˈtentmənt",
+        "phonetic": "kon-tent-ment"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "emotions",
+      "pronunciation": {
+        "ipa": "ɪˈməʊʃnz",
+        "phonetic": "ee-mo-shuns"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "waste",
+      "pronunciation": {
+        "ipa": "weɪst",
+        "phonetic": "wayst"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "consumption",
+      "pronunciation": {
+        "ipa": "kənˈsʌmpʃn",
+        "phonetic": "kon-sump-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "sources",
+      "pronunciation": {
+        "ipa": "ˈsɔːrsɪz",
+        "phonetic": "sor-ses"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "purchase",
+      "pronunciation": {
+        "ipa": "ˈpɜːrtʃəs",
+        "phonetic": "per-chase"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "hook",
+      "pronunciation": {
+        "ipa": "hʊk",
+        "phonetic": "hook"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "persuasive",
+      "pronunciation": {
+        "ipa": "pərˈsweɪsɪv",
+        "phonetic": "per-sway-siv"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "grab",
+      "pronunciation": {
+        "ipa": "ɡræb",
+        "phonetic": "grab"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "controversial",
+      "pronunciation": {
+        "ipa": "ˌkɒntrəˈvɜːrʃl",
+        "phonetic": "kon-tro-ver-shul"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "provoke",
+      "pronunciation": {
+        "ipa": "prəˈvəʊk",
+        "phonetic": "pro-voke"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "emotional",
+      "pronunciation": {
+        "ipa": "ɪˈməʊʃənl",
+        "phonetic": "ee-mo-shun-al"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "hypothetical",
+      "pronunciation": {
+        "ipa": "ˌhaɪpəˈθetɪkl",
+        "phonetic": "hi-po-thet-i-kal"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "scenarios",
+      "pronunciation": {
+        "ipa": "sɪˈnɑːriəʊz",
+        "phonetic": "si-nar-ee-ohs"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "urgency",
+      "pronunciation": {
+        "ipa": "ˈɜːrdʒənsi",
+        "phonetic": "er-jen-see"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "challenge",
+      "pronunciation": {
+        "ipa": "ˈtʃælɪndʒ",
+        "phonetic": "chal-enj"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "billion",
+      "pronunciation": {
+        "ipa": "ˈbɪljən",
+        "phonetic": "bil-yun"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "limited",
+      "pronunciation": {
+        "ipa": "ˈlɪmɪtɪd",
+        "phonetic": "lim-i-ted"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "resources",
+      "pronunciation": {
+        "ipa": "rɪˈsɔːrsɪz",
+        "phonetic": "re-sor-ses"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "crisis",
+      "pronunciation": {
+        "ipa": "ˈkraɪsɪs",
+        "phonetic": "cry-sis"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "distributed",
+      "pronunciation": {
+        "ipa": "dɪˈstrɪbjuːtɪd",
+        "phonetic": "dis-trib-you-ted"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "balance",
+      "pronunciation": {
+        "ipa": "ˈbæləns",
+        "phonetic": "bal-ans"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    },
+    {
+      "english": "exceed",
+      "pronunciation": {
+        "ipa": "ɪkˈsiːd",
+        "phonetic": "ik-seed"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-keywords",
+      "source": "pte-sst-keywords"
+    }
+  ]
+}

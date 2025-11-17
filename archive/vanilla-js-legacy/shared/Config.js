@@ -219,6 +219,17 @@ export class AppConfig {
                         extractorType: 'SingleIPATermsExtractor',
                         inputSubdir: 'vocabs'
                     },
+                    {
+                        id: 'pte-sst-keywords',
+                        input: 'pte-sst-keywords-with-ipa.md',
+                        output: 'pte-sst-keywords-vocabulary.json',
+                        category: 'pte-sst-keywords',
+                        description: 'PTE SST (Summarize Spoken Text) keywords with IPA',
+                        sourceType: 'pte-sst-keywords',
+                        dataType: 'vocabulary',
+                        extractorType: 'SingleIPATermsExtractor',
+                        inputSubdir: 'vocabs'
+                    },
                     // ... Add more registry entries as needed during migration
                 ],
                 extractorTypes: {

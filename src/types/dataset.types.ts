@@ -57,7 +57,8 @@ export type VocabularyCategory =
   | 'pte-reading-fib-drag'
   | 'pte-asq-answers'
   | 'pte-high-frequency'
-  | 'pte-rs-core';
+  | 'pte-rs-core'
+  | 'pte-di-rl-templates';
 
 /**
  * Vocabulary term with IPA pronunciation

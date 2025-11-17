@@ -1,0 +1,3645 @@
+{
+  "metadata": {
+    "generated": "2025-11-17T11:22:31.355Z",
+    "totalTerms": 363,
+    "source": "pte-sst-complete",
+    "description": "PTE SST (Summarize Spoken Text) complete vocabulary with IPA - ALL 368 terms from 29 topics",
+    "version": "1.0",
+    "categories": [
+      "pte-sst-complete"
+    ],
+    "hasIPA": true
+  },
+  "vocabulary": [
+    {
+      "english": "indian peasants",
+      "pronunciation": {
+        "ipa": "indian peasants",
+        "phonetic": "indian peasants"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "debt",
+      "pronunciation": {
+        "ipa": "debt",
+        "phonetic": "debt"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "high",
+      "pronunciation": {
+        "ipa": "high",
+        "phonetic": "high"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "peasants",
+      "pronunciation": {
+        "ipa": "peasants",
+        "phonetic": "peasants"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "seeds",
+      "pronunciation": {
+        "ipa": "seeds",
+        "phonetic": "seeds"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "used to be free",
+      "pronunciation": {
+        "ipa": "used to be free",
+        "phonetic": "used to be free"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "pesticides",
+      "pronunciation": {
+        "ipa": "pesticides",
+        "phonetic": "pesticides"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the free market",
+      "pronunciation": {
+        "ipa": "the free market",
+        "phonetic": "the free market"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "globalization",
+      "pronunciation": {
+        "ipa": "globalization",
+        "phonetic": "globalization"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "borrow money",
+      "pronunciation": {
+        "ipa": "borrow money",
+        "phonetic": "borrow money"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the same companies",
+      "pronunciation": {
+        "ipa": "the same companies",
+        "phonetic": "the same companies"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "sell",
+      "pronunciation": {
+        "ipa": "sell",
+        "phonetic": "sell"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "definitions of globalization",
+      "pronunciation": {
+        "ipa": "definitions of globalization",
+        "phonetic": "definitions of globalization"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the proliferation",
+      "pronunciation": {
+        "ipa": "the proliferation",
+        "phonetic": "the proliferation"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "of international trade",
+      "pronunciation": {
+        "ipa": "of international trade",
+        "phonetic": "of international trade"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "international communications",
+      "pronunciation": {
+        "ipa": "international communications",
+        "phonetic": "international communications"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "an integrated economic system",
+      "pronunciation": {
+        "ipa": "an integrated economic system",
+        "phonetic": "an integrated economic system"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "consuming countries",
+      "pronunciation": {
+        "ipa": "consuming countries",
+        "phonetic": "consuming countries"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "producing countries",
+      "pronunciation": {
+        "ipa": "producing countries",
+        "phonetic": "producing countries"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a new era",
+      "pronunciation": {
+        "ipa": "a new era",
+        "phonetic": "a new era"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "nations' economies",
+      "pronunciation": {
+        "ipa": "nations' economies",
+        "phonetic": "nations' economies"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "depend on each other",
+      "pronunciation": {
+        "ipa": "depend on each other",
+        "phonetic": "depend on each other"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "post-industrial economy",
+      "pronunciation": {
+        "ipa": "post-industrial economy",
+        "phonetic": "post-industrial economy"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "global",
+      "pronunciation": {
+        "ipa": "global",
+        "phonetic": "global"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "artificial intelligence",
+      "pronunciation": {
+        "ipa": "artificial intelligence",
+        "phonetic": "artificial intelligence"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a computer",
+      "pronunciation": {
+        "ipa": "a computer",
+        "phonetic": "a computer"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "what to do",
+      "pronunciation": {
+        "ipa": "what to do",
+        "phonetic": "what to do"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "how to do it",
+      "pronunciation": {
+        "ipa": "how to do it",
+        "phonetic": "how to do it"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the meaning of certain words",
+      "pronunciation": {
+        "ipa": "the meaning of certain words",
+        "phonetic": "the meaning of certain words"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "operate as programmed",
+      "pronunciation": {
+        "ipa": "operate as programmed",
+        "phonetic": "operate as programmed"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "develop systems and symbols",
+      "pronunciation": {
+        "ipa": "develop systems and symbols",
+        "phonetic": "develop systems and symbols"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "turn messages into bytes",
+      "pronunciation": {
+        "ipa": "turn messages into bytes",
+        "phonetic": "turn messages into bytes"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "function similarly",
+      "pronunciation": {
+        "ipa": "function similarly",
+        "phonetic": "function similarly"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "human brains",
+      "pronunciation": {
+        "ipa": "human brains",
+        "phonetic": "human brains"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "symbol processors",
+      "pronunciation": {
+        "ipa": "symbol processors",
+        "phonetic": "symbol processors"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "potential",
+      "pronunciation": {
+        "ipa": "potential",
+        "phonetic": "potential"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "obese women",
+      "pronunciation": {
+        "ipa": "obese women",
+        "phonetic": "obese women"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "thirty-one",
+      "pronunciation": {
+        "ipa": "thirty-one",
+        "phonetic": "thirty-one"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "volunteered",
+      "pronunciation": {
+        "ipa": "volunteered",
+        "phonetic": "volunteered"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a Canadian experiment",
+      "pronunciation": {
+        "ipa": "a Canadian experiment",
+        "phonetic": "a Canadian experiment"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "test their body fat changes",
+      "pronunciation": {
+        "ipa": "test their body fat changes",
+        "phonetic": "test their body fat changes"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "strict daily diet requirements",
+      "pronunciation": {
+        "ipa": "strict daily diet requirements",
+        "phonetic": "strict daily diet requirements"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "did exercise as instructed",
+      "pronunciation": {
+        "ipa": "did exercise as instructed",
+        "phonetic": "did exercise as instructed"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "six months",
+      "pronunciation": {
+        "ipa": "six months",
+        "phonetic": "six months"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "lost weight",
+      "pronunciation": {
+        "ipa": "lost weight",
+        "phonetic": "lost weight"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "stayed the same",
+      "pronunciation": {
+        "ipa": "stayed the same",
+        "phonetic": "stayed the same"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "gained weight",
+      "pronunciation": {
+        "ipa": "gained weight",
+        "phonetic": "gained weight"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "two explanations",
+      "pronunciation": {
+        "ipa": "two explanations",
+        "phonetic": "two explanations"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "cheating on the diet",
+      "pronunciation": {
+        "ipa": "cheating on the diet",
+        "phonetic": "cheating on the diet"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "did less exercise",
+      "pronunciation": {
+        "ipa": "did less exercise",
+        "phonetic": "did less exercise"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "consciously",
+      "pronunciation": {
+        "ipa": "consciously",
+        "phonetic": "consciously"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "unconsciously",
+      "pronunciation": {
+        "ipa": "unconsciously",
+        "phonetic": "unconsciously"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "psychological reasons",
+      "pronunciation": {
+        "ipa": "psychological reasons",
+        "phonetic": "psychological reasons"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "sign language",
+      "pronunciation": {
+        "ipa": "sign language",
+        "phonetic": "sign language"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "abstraction",
+      "pronunciation": {
+        "ipa": "abstraction",
+        "phonetic": "abstraction"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the origin of symbolic systems",
+      "pronunciation": {
+        "ipa": "the origin of symbolic systems",
+        "phonetic": "the origin of symbolic systems"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "ask for help",
+      "pronunciation": {
+        "ipa": "ask for help",
+        "phonetic": "ask for help"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "communicate",
+      "pronunciation": {
+        "ipa": "communicate",
+        "phonetic": "communicate"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "do something with their hands",
+      "pronunciation": {
+        "ipa": "do something with their hands",
+        "phonetic": "do something with their hands"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "at the same time",
+      "pronunciation": {
+        "ipa": "at the same time",
+        "phonetic": "at the same time"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "words and language",
+      "pronunciation": {
+        "ipa": "words and language",
+        "phonetic": "words and language"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "genes affect human behaviors",
+      "pronunciation": {
+        "ipa": "genes affect human behaviors",
+        "phonetic": "genes affect human behaviors"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the discovery of the DNA structure",
+      "pronunciation": {
+        "ipa": "the discovery of the DNA structure",
+        "phonetic": "the discovery of the DNA structure"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "genes",
+      "pronunciation": {
+        "ipa": "genes",
+        "phonetic": "genes"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "people's physical structure",
+      "pronunciation": {
+        "ipa": "people's physical structure",
+        "phonetic": "people's physical structure"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "mapping of genes",
+      "pronunciation": {
+        "ipa": "mapping of genes",
+        "phonetic": "mapping of genes"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a genetic responsibility",
+      "pronunciation": {
+        "ipa": "a genetic responsibility",
+        "phonetic": "a genetic responsibility"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "psychological behaviors",
+      "pronunciation": {
+        "ipa": "psychological behaviors",
+        "phonetic": "psychological behaviors"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "changed the way",
+      "pronunciation": {
+        "ipa": "changed the way",
+        "phonetic": "changed the way"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "we understand our behaviors",
+      "pronunciation": {
+        "ipa": "we understand our behaviors",
+        "phonetic": "we understand our behaviors"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "integrated information",
+      "pronunciation": {
+        "ipa": "integrated information",
+        "phonetic": "integrated information"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the findings",
+      "pronunciation": {
+        "ipa": "the findings",
+        "phonetic": "the findings"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "biology",
+      "pronunciation": {
+        "ipa": "biology",
+        "phonetic": "biology"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "psychology",
+      "pronunciation": {
+        "ipa": "psychology",
+        "phonetic": "psychology"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "neuroscience",
+      "pronunciation": {
+        "ipa": "neuroscience",
+        "phonetic": "neuroscience"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "national wealth and Adam Smith",
+      "pronunciation": {
+        "ipa": "national wealth and Adam Smith",
+        "phonetic": "national wealth and Adam Smith"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the Industrial Revolution",
+      "pronunciation": {
+        "ipa": "the Industrial Revolution",
+        "phonetic": "the Industrial Revolution"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "British economists",
+      "pronunciation": {
+        "ipa": "British economists",
+        "phonetic": "British economists"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a nation's wealth",
+      "pronunciation": {
+        "ipa": "a nation's wealth",
+        "phonetic": "a nation's wealth"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "how much money people could pile up",
+      "pronunciation": {
+        "ipa": "how much money people could pile up",
+        "phonetic": "how much money people could pile up"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "Adam Smith",
+      "pronunciation": {
+        "ipa": "Adam Smith",
+        "phonetic": "Adam Smith"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "agriculture",
+      "pronunciation": {
+        "ipa": "agriculture",
+        "phonetic": "agriculture"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "manufacturing",
+      "pronunciation": {
+        "ipa": "manufacturing",
+        "phonetic": "manufacturing"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the ability to provide outputs",
+      "pronunciation": {
+        "ipa": "the ability to provide outputs",
+        "phonetic": "the ability to provide outputs"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the nation's income",
+      "pronunciation": {
+        "ipa": "the nation's income",
+        "phonetic": "the nation's income"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "national output",
+      "pronunciation": {
+        "ipa": "national output",
+        "phonetic": "national output"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "Market Economy",
+      "pronunciation": {
+        "ipa": "Market Economy",
+        "phonetic": "Market Economy"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the notions of",
+      "pronunciation": {
+        "ipa": "the notions of",
+        "phonetic": "the notions of"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "pragmatism",
+      "pronunciation": {
+        "ipa": "pragmatism",
+        "phonetic": "pragmatism"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "democracy",
+      "pronunciation": {
+        "ipa": "democracy",
+        "phonetic": "democracy"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "tempering the market economy",
+      "pronunciation": {
+        "ipa": "tempering the market economy",
+        "phonetic": "tempering the market economy"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "developed countries",
+      "pronunciation": {
+        "ipa": "developed countries",
+        "phonetic": "developed countries"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the living standards",
+      "pronunciation": {
+        "ipa": "the living standards",
+        "phonetic": "the living standards"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "of the working classes",
+      "pronunciation": {
+        "ipa": "of the working classes",
+        "phonetic": "of the working classes"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "legislation",
+      "pronunciation": {
+        "ipa": "legislation",
+        "phonetic": "legislation"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "about working conditions",
+      "pronunciation": {
+        "ipa": "about working conditions",
+        "phonetic": "about working conditions"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "better environmental conditions",
+      "pronunciation": {
+        "ipa": "better environmental conditions",
+        "phonetic": "better environmental conditions"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "circumscribe",
+      "pronunciation": {
+        "ipa": "circumscribe",
+        "phonetic": "circumscribe"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the worst behaviors",
+      "pronunciation": {
+        "ipa": "the worst behaviors",
+        "phonetic": "the worst behaviors"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "reversed some damage",
+      "pronunciation": {
+        "ipa": "reversed some damage",
+        "phonetic": "reversed some damage"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the benefits",
+      "pronunciation": {
+        "ipa": "the benefits",
+        "phonetic": "the benefits"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "what makes people happy",
+      "pronunciation": {
+        "ipa": "what makes people happy",
+        "phonetic": "what makes people happy"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "this survey",
+      "pronunciation": {
+        "ipa": "this survey",
+        "phonetic": "this survey"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a valid example",
+      "pronunciation": {
+        "ipa": "a valid example",
+        "phonetic": "a valid example"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "happiness economics",
+      "pronunciation": {
+        "ipa": "happiness economics",
+        "phonetic": "happiness economics"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a consistent pattern",
+      "pronunciation": {
+        "ipa": "a consistent pattern",
+        "phonetic": "a consistent pattern"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "people's well-being",
+      "pronunciation": {
+        "ipa": "people's well-being",
+        "phonetic": "people's well-being"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "income",
+      "pronunciation": {
+        "ipa": "income",
+        "phonetic": "income"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "health",
+      "pronunciation": {
+        "ipa": "health",
+        "phonetic": "health"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "marital status",
+      "pronunciation": {
+        "ipa": "marital status",
+        "phonetic": "marital status"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "employment status",
+      "pronunciation": {
+        "ipa": "employment status",
+        "phonetic": "employment status"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "other factors",
+      "pronunciation": {
+        "ipa": "other factors",
+        "phonetic": "other factors"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the environment",
+      "pronunciation": {
+        "ipa": "the environment",
+        "phonetic": "the environment"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "equality",
+      "pronunciation": {
+        "ipa": "equality",
+        "phonetic": "equality"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the nature of original living",
+      "pronunciation": {
+        "ipa": "the nature of original living",
+        "phonetic": "the nature of original living"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "climate change predictions",
+      "pronunciation": {
+        "ipa": "climate change predictions",
+        "phonetic": "climate change predictions"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "panicked",
+      "pronunciation": {
+        "ipa": "panicked",
+        "phonetic": "panicked"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the reality of global climate change",
+      "pronunciation": {
+        "ipa": "the reality of global climate change",
+        "phonetic": "the reality of global climate change"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the prediction of the population bomb",
+      "pronunciation": {
+        "ipa": "the prediction of the population bomb",
+        "phonetic": "the prediction of the population bomb"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "was criticized",
+      "pronunciation": {
+        "ipa": "was criticized",
+        "phonetic": "was criticized"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the world cannot afford to take the risk",
+      "pronunciation": {
+        "ipa": "the world cannot afford to take the risk",
+        "phonetic": "the world cannot afford to take the risk"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the climate scientists",
+      "pronunciation": {
+        "ipa": "the climate scientists",
+        "phonetic": "the climate scientists"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "wrong predictions",
+      "pronunciation": {
+        "ipa": "wrong predictions",
+        "phonetic": "wrong predictions"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "major precipitation changes",
+      "pronunciation": {
+        "ipa": "major precipitation changes",
+        "phonetic": "major precipitation changes"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "therapeutic environment",
+      "pronunciation": {
+        "ipa": "therapeutic environment",
+        "phonetic": "therapeutic environment"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "fresh air",
+      "pronunciation": {
+        "ipa": "fresh air",
+        "phonetic": "fresh air"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "daylight",
+      "pronunciation": {
+        "ipa": "daylight",
+        "phonetic": "daylight"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "positive impacts on patients' recovery",
+      "pronunciation": {
+        "ipa": "positive impacts on patients' recovery",
+        "phonetic": "positive impacts on patients' recovery"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "architecture",
+      "pronunciation": {
+        "ipa": "architecture",
+        "phonetic": "architecture"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "viewing hospital yards",
+      "pronunciation": {
+        "ipa": "viewing hospital yards",
+        "phonetic": "viewing hospital yards"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "rest well",
+      "pronunciation": {
+        "ipa": "rest well",
+        "phonetic": "rest well"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "sleep well",
+      "pronunciation": {
+        "ipa": "sleep well",
+        "phonetic": "sleep well"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "release their stress and pain",
+      "pronunciation": {
+        "ipa": "release their stress and pain",
+        "phonetic": "release their stress and pain"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "nurses in hospitals",
+      "pronunciation": {
+        "ipa": "nurses in hospitals",
+        "phonetic": "nurses in hospitals"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the designed hospital environment",
+      "pronunciation": {
+        "ipa": "the designed hospital environment",
+        "phonetic": "the designed hospital environment"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the separation of powers",
+      "pronunciation": {
+        "ipa": "the separation of powers",
+        "phonetic": "the separation of powers"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the checks and balances of the country",
+      "pronunciation": {
+        "ipa": "the checks and balances of the country",
+        "phonetic": "the checks and balances of the country"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the constitution",
+      "pronunciation": {
+        "ipa": "the constitution",
+        "phonetic": "the constitution"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the legislative branch",
+      "pronunciation": {
+        "ipa": "the legislative branch",
+        "phonetic": "the legislative branch"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "makes the law",
+      "pronunciation": {
+        "ipa": "makes the law",
+        "phonetic": "makes the law"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the president",
+      "pronunciation": {
+        "ipa": "the president",
+        "phonetic": "the president"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the Senate",
+      "pronunciation": {
+        "ipa": "the Senate",
+        "phonetic": "the Senate"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "carry out the law",
+      "pronunciation": {
+        "ipa": "carry out the law",
+        "phonetic": "carry out the law"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the judicial authorities",
+      "pronunciation": {
+        "ipa": "the judicial authorities",
+        "phonetic": "the judicial authorities"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "interpret the law",
+      "pronunciation": {
+        "ipa": "interpret the law",
+        "phonetic": "interpret the law"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a blurry line",
+      "pronunciation": {
+        "ipa": "a blurry line",
+        "phonetic": "a blurry line"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the legislative",
+      "pronunciation": {
+        "ipa": "the legislative",
+        "phonetic": "the legislative"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "executive roles",
+      "pronunciation": {
+        "ipa": "executive roles",
+        "phonetic": "executive roles"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "need",
+      "pronunciation": {
+        "ipa": "need",
+        "phonetic": "need"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "use and interpret the word 'need'",
+      "pronunciation": {
+        "ipa": "use and interpret the word 'need'",
+        "phonetic": "use and interpret the word 'need'"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "I need a holiday",
+      "pronunciation": {
+        "ipa": "I need a holiday",
+        "phonetic": "I need a holiday"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "an expression of a strong desire",
+      "pronunciation": {
+        "ipa": "an expression of a strong desire",
+        "phonetic": "an expression of a strong desire"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a basic need",
+      "pronunciation": {
+        "ipa": "a basic need",
+        "phonetic": "a basic need"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the plant needs water",
+      "pronunciation": {
+        "ipa": "the plant needs water",
+        "phonetic": "the plant needs water"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "an objective statement",
+      "pronunciation": {
+        "ipa": "an objective statement",
+        "phonetic": "an objective statement"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "essential",
+      "pronunciation": {
+        "ipa": "essential",
+        "phonetic": "essential"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "sunlight",
+      "pronunciation": {
+        "ipa": "sunlight",
+        "phonetic": "sunlight"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "water",
+      "pronunciation": {
+        "ipa": "water",
+        "phonetic": "water"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "plants",
+      "pronunciation": {
+        "ipa": "plants",
+        "phonetic": "plants"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a psychological use",
+      "pronunciation": {
+        "ipa": "a psychological use",
+        "phonetic": "a psychological use"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "lacks something",
+      "pronunciation": {
+        "ipa": "lacks something",
+        "phonetic": "lacks something"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "globalization & detraditionalization",
+      "pronunciation": {
+        "ipa": "globalization & detraditionalization",
+        "phonetic": "globalization & detraditionalization"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the world",
+      "pronunciation": {
+        "ipa": "the world",
+        "phonetic": "the world"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a global village",
+      "pronunciation": {
+        "ipa": "a global village",
+        "phonetic": "a global village"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "instant communications",
+      "pronunciation": {
+        "ipa": "instant communications",
+        "phonetic": "instant communications"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the internet",
+      "pronunciation": {
+        "ipa": "the internet",
+        "phonetic": "the internet"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "shrinking",
+      "pronunciation": {
+        "ipa": "shrinking",
+        "phonetic": "shrinking"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "distance and speed",
+      "pronunciation": {
+        "ipa": "distance and speed",
+        "phonetic": "distance and speed"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "detraditionalization",
+      "pronunciation": {
+        "ipa": "detraditionalization",
+        "phonetic": "detraditionalization"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the erosion of",
+      "pronunciation": {
+        "ipa": "the erosion of",
+        "phonetic": "the erosion of"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "traditional culture",
+      "pronunciation": {
+        "ipa": "traditional culture",
+        "phonetic": "traditional culture"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "conventional ways",
+      "pronunciation": {
+        "ipa": "conventional ways",
+        "phonetic": "conventional ways"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "young people",
+      "pronunciation": {
+        "ipa": "young people",
+        "phonetic": "young people"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "rejecting the culture",
+      "pronunciation": {
+        "ipa": "rejecting the culture",
+        "phonetic": "rejecting the culture"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "imitating",
+      "pronunciation": {
+        "ipa": "imitating",
+        "phonetic": "imitating"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the Hollywood models",
+      "pronunciation": {
+        "ipa": "the Hollywood models",
+        "phonetic": "the Hollywood models"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "what happened to journalism",
+      "pronunciation": {
+        "ipa": "what happened to journalism",
+        "phonetic": "what happened to journalism"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the rise of the Internet",
+      "pronunciation": {
+        "ipa": "the rise of the Internet",
+        "phonetic": "the rise of the Internet"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "journalism",
+      "pronunciation": {
+        "ipa": "journalism",
+        "phonetic": "journalism"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "how it's produced",
+      "pronunciation": {
+        "ipa": "how it's produced",
+        "phonetic": "how it's produced"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "how it's consumed",
+      "pronunciation": {
+        "ipa": "how it's consumed",
+        "phonetic": "how it's consumed"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "feel the change",
+      "pronunciation": {
+        "ipa": "feel the change",
+        "phonetic": "feel the change"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the speed of news spreading",
+      "pronunciation": {
+        "ipa": "the speed of news spreading",
+        "phonetic": "the speed of news spreading"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "gain information",
+      "pronunciation": {
+        "ipa": "gain information",
+        "phonetic": "gain information"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a small piece of ordinary video",
+      "pronunciation": {
+        "ipa": "a small piece of ordinary video",
+        "phonetic": "a small piece of ordinary video"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a new type of journalism",
+      "pronunciation": {
+        "ipa": "a new type of journalism",
+        "phonetic": "a new type of journalism"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "cultural diversity in Australia",
+      "pronunciation": {
+        "ipa": "cultural diversity in Australia",
+        "phonetic": "cultural diversity in Australia"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a multicultural country",
+      "pronunciation": {
+        "ipa": "a multicultural country",
+        "phonetic": "a multicultural country"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "immigrants",
+      "pronunciation": {
+        "ipa": "immigrants",
+        "phonetic": "immigrants"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "world's oldest continuous cultures",
+      "pronunciation": {
+        "ipa": "world's oldest continuous cultures",
+        "phonetic": "world's oldest continuous cultures"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "cultural diversity",
+      "pronunciation": {
+        "ipa": "cultural diversity",
+        "phonetic": "cultural diversity"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "significant feature",
+      "pronunciation": {
+        "ipa": "significant feature",
+        "phonetic": "significant feature"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "Australian society",
+      "pronunciation": {
+        "ipa": "Australian society",
+        "phonetic": "Australian society"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "productivity",
+      "pronunciation": {
+        "ipa": "productivity",
+        "phonetic": "productivity"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "economic performance",
+      "pronunciation": {
+        "ipa": "economic performance",
+        "phonetic": "economic performance"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "labor force",
+      "pronunciation": {
+        "ipa": "labor force",
+        "phonetic": "labor force"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "statistics",
+      "pronunciation": {
+        "ipa": "statistics",
+        "phonetic": "statistics"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "born overseas",
+      "pronunciation": {
+        "ipa": "born overseas",
+        "phonetic": "born overseas"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a foreign-born parent",
+      "pronunciation": {
+        "ipa": "a foreign-born parent",
+        "phonetic": "a foreign-born parent"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "manager",
+      "pronunciation": {
+        "ipa": "manager",
+        "phonetic": "manager"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "managers are busy",
+      "pronunciation": {
+        "ipa": "managers are busy",
+        "phonetic": "managers are busy"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "read more books",
+      "pronunciation": {
+        "ipa": "read more books",
+        "phonetic": "read more books"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "university",
+      "pronunciation": {
+        "ipa": "university",
+        "phonetic": "university"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "improve themselves",
+      "pronunciation": {
+        "ipa": "improve themselves",
+        "phonetic": "improve themselves"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the best manager",
+      "pronunciation": {
+        "ipa": "the best manager",
+        "phonetic": "the best manager"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "knows their organization better",
+      "pronunciation": {
+        "ipa": "knows their organization better",
+        "phonetic": "knows their organization better"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a professor in management",
+      "pronunciation": {
+        "ipa": "a professor in management",
+        "phonetic": "a professor in management"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "with broad perspectives",
+      "pronunciation": {
+        "ipa": "with broad perspectives",
+        "phonetic": "with broad perspectives"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "experience",
+      "pronunciation": {
+        "ipa": "experience",
+        "phonetic": "experience"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "management knowledge",
+      "pronunciation": {
+        "ipa": "management knowledge",
+        "phonetic": "management knowledge"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "learning management",
+      "pronunciation": {
+        "ipa": "learning management",
+        "phonetic": "learning management"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "moral objectivism and moral absolutism",
+      "pronunciation": {
+        "ipa": "moral objectivism and moral absolutism",
+        "phonetic": "moral objectivism and moral absolutism"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "moral objectivism",
+      "pronunciation": {
+        "ipa": "moral objectivism",
+        "phonetic": "moral objectivism"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "some universal moral principles",
+      "pronunciation": {
+        "ipa": "some universal moral principles",
+        "phonetic": "some universal moral principles"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "valid",
+      "pronunciation": {
+        "ipa": "valid",
+        "phonetic": "valid"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "all social environments",
+      "pronunciation": {
+        "ipa": "all social environments",
+        "phonetic": "all social environments"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "all situations",
+      "pronunciation": {
+        "ipa": "all situations",
+        "phonetic": "all situations"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "moral absolutism",
+      "pronunciation": {
+        "ipa": "moral absolutism",
+        "phonetic": "moral absolutism"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "firm",
+      "pronunciation": {
+        "ipa": "firm",
+        "phonetic": "firm"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "absolute boundary",
+      "pronunciation": {
+        "ipa": "absolute boundary",
+        "phonetic": "absolute boundary"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "what is right and what is wrong",
+      "pronunciation": {
+        "ipa": "what is right and what is wrong",
+        "phonetic": "what is right and what is wrong"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "non-overridable principles",
+      "pronunciation": {
+        "ipa": "non-overridable principles",
+        "phonetic": "non-overridable principles"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "followed",
+      "pronunciation": {
+        "ipa": "followed",
+        "phonetic": "followed"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "violated",
+      "pronunciation": {
+        "ipa": "violated",
+        "phonetic": "violated"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the notion of right and wrong",
+      "pronunciation": {
+        "ipa": "the notion of right and wrong",
+        "phonetic": "the notion of right and wrong"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "different interpretations",
+      "pronunciation": {
+        "ipa": "different interpretations",
+        "phonetic": "different interpretations"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "situations",
+      "pronunciation": {
+        "ipa": "situations",
+        "phonetic": "situations"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "canned food during the Great Depression",
+      "pronunciation": {
+        "ipa": "canned food during the Great Depression",
+        "phonetic": "canned food during the Great Depression"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "canned food",
+      "pronunciation": {
+        "ipa": "canned food",
+        "phonetic": "canned food"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the market",
+      "pronunciation": {
+        "ipa": "the market",
+        "phonetic": "the market"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the Great Depression",
+      "pronunciation": {
+        "ipa": "the Great Depression",
+        "phonetic": "the Great Depression"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "refrigerators",
+      "pronunciation": {
+        "ipa": "refrigerators",
+        "phonetic": "refrigerators"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "popular",
+      "pronunciation": {
+        "ipa": "popular",
+        "phonetic": "popular"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "cities and rural areas",
+      "pronunciation": {
+        "ipa": "cities and rural areas",
+        "phonetic": "cities and rural areas"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the Rural Electrification Administration",
+      "pronunciation": {
+        "ipa": "the Rural Electrification Administration",
+        "phonetic": "the Rural Electrification Administration"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "farmers",
+      "pronunciation": {
+        "ipa": "farmers",
+        "phonetic": "farmers"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "purchase appliances",
+      "pronunciation": {
+        "ipa": "purchase appliances",
+        "phonetic": "purchase appliances"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the rise of frozen foods",
+      "pronunciation": {
+        "ipa": "the rise of frozen foods",
+        "phonetic": "the rise of frozen foods"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "modern food technology",
+      "pronunciation": {
+        "ipa": "modern food technology",
+        "phonetic": "modern food technology"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "Americans",
+      "pronunciation": {
+        "ipa": "Americans",
+        "phonetic": "Americans"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "supermarkets",
+      "pronunciation": {
+        "ipa": "supermarkets",
+        "phonetic": "supermarkets"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "freezer cases",
+      "pronunciation": {
+        "ipa": "freezer cases",
+        "phonetic": "freezer cases"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "synthetic biology & genetic engineering",
+      "pronunciation": {
+        "ipa": "synthetic biology & genetic engineering",
+        "phonetic": "synthetic biology & genetic engineering"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "synthetic biology",
+      "pronunciation": {
+        "ipa": "synthetic biology",
+        "phonetic": "synthetic biology"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the biological system",
+      "pronunciation": {
+        "ipa": "the biological system",
+        "phonetic": "the biological system"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the next level of genetic engineering",
+      "pronunciation": {
+        "ipa": "the next level of genetic engineering",
+        "phonetic": "the next level of genetic engineering"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "40 years ago",
+      "pronunciation": {
+        "ipa": "40 years ago",
+        "phonetic": "40 years ago"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "cut and paste DNA",
+      "pronunciation": {
+        "ipa": "cut and paste DNA",
+        "phonetic": "cut and paste DNA"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "from one organism to another",
+      "pronunciation": {
+        "ipa": "from one organism to another",
+        "phonetic": "from one organism to another"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "synthesize DNA",
+      "pronunciation": {
+        "ipa": "synthesize DNA",
+        "phonetic": "synthesize DNA"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "create new organisms",
+      "pronunciation": {
+        "ipa": "create new organisms",
+        "phonetic": "create new organisms"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "building a cellular factory",
+      "pronunciation": {
+        "ipa": "building a cellular factory",
+        "phonetic": "building a cellular factory"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "billions of bacteria",
+      "pronunciation": {
+        "ipa": "billions of bacteria",
+        "phonetic": "billions of bacteria"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "from one bacterium",
+      "pronunciation": {
+        "ipa": "from one bacterium",
+        "phonetic": "from one bacterium"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "Mars and Earth",
+      "pronunciation": {
+        "ipa": "Mars and Earth",
+        "phonetic": "Mars and Earth"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "Mars",
+      "pronunciation": {
+        "ipa": "Mars",
+        "phonetic": "Mars"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "neighboring planet",
+      "pronunciation": {
+        "ipa": "neighboring planet",
+        "phonetic": "neighboring planet"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a similar geological surface",
+      "pronunciation": {
+        "ipa": "a similar geological surface",
+        "phonetic": "a similar geological surface"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "landscape",
+      "pronunciation": {
+        "ipa": "landscape",
+        "phonetic": "landscape"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a desert",
+      "pronunciation": {
+        "ipa": "a desert",
+        "phonetic": "a desert"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "evidence",
+      "pronunciation": {
+        "ipa": "evidence",
+        "phonetic": "evidence"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the existence of water",
+      "pronunciation": {
+        "ipa": "the existence of water",
+        "phonetic": "the existence of water"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "heavy gases",
+      "pronunciation": {
+        "ipa": "heavy gases",
+        "phonetic": "heavy gases"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "billions of years",
+      "pronunciation": {
+        "ipa": "billions of years",
+        "phonetic": "billions of years"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the low gravity",
+      "pronunciation": {
+        "ipa": "the low gravity",
+        "phonetic": "the low gravity"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a thin layer of atmosphere",
+      "pronunciation": {
+        "ipa": "a thin layer of atmosphere",
+        "phonetic": "a thin layer of atmosphere"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the most ideal destination",
+      "pronunciation": {
+        "ipa": "the most ideal destination",
+        "phonetic": "the most ideal destination"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "Earth",
+      "pronunciation": {
+        "ipa": "Earth",
+        "phonetic": "Earth"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the history of English",
+      "pronunciation": {
+        "ipa": "the history of English",
+        "phonetic": "the history of English"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "English",
+      "pronunciation": {
+        "ipa": "English",
+        "phonetic": "English"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a pure language",
+      "pronunciation": {
+        "ipa": "a pure language",
+        "phonetic": "a pure language"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "borrowed",
+      "pronunciation": {
+        "ipa": "borrowed",
+        "phonetic": "borrowed"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "350 other languages",
+      "pronunciation": {
+        "ipa": "350 other languages",
+        "phonetic": "350 other languages"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "variety",
+      "pronunciation": {
+        "ipa": "variety",
+        "phonetic": "variety"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the history of the English language",
+      "pronunciation": {
+        "ipa": "the history of the English language",
+        "phonetic": "the history of the English language"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "connected",
+      "pronunciation": {
+        "ipa": "connected",
+        "phonetic": "connected"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "English people",
+      "pronunciation": {
+        "ipa": "English people",
+        "phonetic": "English people"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "history",
+      "pronunciation": {
+        "ipa": "history",
+        "phonetic": "history"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "different views",
+      "pronunciation": {
+        "ipa": "different views",
+        "phonetic": "different views"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "Shakespeare's period",
+      "pronunciation": {
+        "ipa": "Shakespeare's period",
+        "phonetic": "Shakespeare's period"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "borrowed words",
+      "pronunciation": {
+        "ipa": "borrowed words",
+        "phonetic": "borrowed words"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "original English",
+      "pronunciation": {
+        "ipa": "original English",
+        "phonetic": "original English"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "language and basic vocabulary",
+      "pronunciation": {
+        "ipa": "language and basic vocabulary",
+        "phonetic": "language and basic vocabulary"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "languages",
+      "pronunciation": {
+        "ipa": "languages",
+        "phonetic": "languages"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "historical linguists",
+      "pronunciation": {
+        "ipa": "historical linguists",
+        "phonetic": "historical linguists"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "several levels",
+      "pronunciation": {
+        "ipa": "several levels",
+        "phonetic": "several levels"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a basic vocabulary",
+      "pronunciation": {
+        "ipa": "a basic vocabulary",
+        "phonetic": "a basic vocabulary"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "have words that other language don't",
+      "pronunciation": {
+        "ipa": "have words that other language don't",
+        "phonetic": "have words that other language don't"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the most comparable words",
+      "pronunciation": {
+        "ipa": "the most comparable words",
+        "phonetic": "the most comparable words"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the most universal notions",
+      "pronunciation": {
+        "ipa": "the most universal notions",
+        "phonetic": "the most universal notions"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "sound similar",
+      "pronunciation": {
+        "ipa": "sound similar",
+        "phonetic": "sound similar"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "organizational study",
+      "pronunciation": {
+        "ipa": "organizational study",
+        "phonetic": "organizational study"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "organization studies",
+      "pronunciation": {
+        "ipa": "organization studies",
+        "phonetic": "organization studies"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "appreciate them",
+      "pronunciation": {
+        "ipa": "appreciate them",
+        "phonetic": "appreciate them"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a whole family of disciplines",
+      "pronunciation": {
+        "ipa": "a whole family of disciplines",
+        "phonetic": "a whole family of disciplines"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "social science",
+      "pronunciation": {
+        "ipa": "social science",
+        "phonetic": "social science"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "sociology",
+      "pronunciation": {
+        "ipa": "sociology",
+        "phonetic": "sociology"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "cultural studies",
+      "pronunciation": {
+        "ipa": "cultural studies",
+        "phonetic": "cultural studies"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "enjoys studying",
+      "pronunciation": {
+        "ipa": "enjoys studying",
+        "phonetic": "enjoys studying"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "their broad range and breadth",
+      "pronunciation": {
+        "ipa": "their broad range and breadth",
+        "phonetic": "their broad range and breadth"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "liberating ideas",
+      "pronunciation": {
+        "ipa": "liberating ideas",
+        "phonetic": "liberating ideas"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "without disciplinary divisions",
+      "pronunciation": {
+        "ipa": "without disciplinary divisions",
+        "phonetic": "without disciplinary divisions"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "Australian immigration",
+      "pronunciation": {
+        "ipa": "Australian immigration",
+        "phonetic": "Australian immigration"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the ancestors",
+      "pronunciation": {
+        "ipa": "the ancestors",
+        "phonetic": "the ancestors"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the present indigenous people",
+      "pronunciation": {
+        "ipa": "the present indigenous people",
+        "phonetic": "the present indigenous people"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "first inhabitants in Australia",
+      "pronunciation": {
+        "ipa": "first inhabitants in Australia",
+        "phonetic": "first inhabitants in Australia"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "sea levels",
+      "pronunciation": {
+        "ipa": "sea levels",
+        "phonetic": "sea levels"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the Aboriginal community",
+      "pronunciation": {
+        "ipa": "the Aboriginal community",
+        "phonetic": "the Aboriginal community"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "develop",
+      "pronunciation": {
+        "ipa": "develop",
+        "phonetic": "develop"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "diversify",
+      "pronunciation": {
+        "ipa": "diversify",
+        "phonetic": "diversify"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "settle",
+      "pronunciation": {
+        "ipa": "settle",
+        "phonetic": "settle"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the 1970s and 1980s",
+      "pronunciation": {
+        "ipa": "the 1970s and 1980s",
+        "phonetic": "the 1970s and 1980s"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "refugees",
+      "pronunciation": {
+        "ipa": "refugees",
+        "phonetic": "refugees"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the multiculturalism policy",
+      "pronunciation": {
+        "ipa": "the multiculturalism policy",
+        "phonetic": "the multiculturalism policy"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "in 2004-2005",
+      "pronunciation": {
+        "ipa": "in 2004-2005",
+        "phonetic": "in 2004-2005"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "new settlers",
+      "pronunciation": {
+        "ipa": "new settlers",
+        "phonetic": "new settlers"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the immigrant population",
+      "pronunciation": {
+        "ipa": "the immigrant population",
+        "phonetic": "the immigrant population"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "Asia",
+      "pronunciation": {
+        "ipa": "Asia",
+        "phonetic": "Asia"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "Sydney",
+      "pronunciation": {
+        "ipa": "Sydney",
+        "phonetic": "Sydney"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the stability of mood",
+      "pronunciation": {
+        "ipa": "the stability of mood",
+        "phonetic": "the stability of mood"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "vary among different people",
+      "pronunciation": {
+        "ipa": "vary among different people",
+        "phonetic": "vary among different people"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "easily get intense",
+      "pronunciation": {
+        "ipa": "easily get intense",
+        "phonetic": "easily get intense"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "riding a roller coaster",
+      "pronunciation": {
+        "ipa": "riding a roller coaster",
+        "phonetic": "riding a roller coaster"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "loose all the time",
+      "pronunciation": {
+        "ipa": "loose all the time",
+        "phonetic": "loose all the time"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the secret of happiness",
+      "pronunciation": {
+        "ipa": "the secret of happiness",
+        "phonetic": "the secret of happiness"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "mild contentment",
+      "pronunciation": {
+        "ipa": "mild contentment",
+        "phonetic": "mild contentment"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a balance between intense and loose emotions",
+      "pronunciation": {
+        "ipa": "a balance between intense and loose emotions",
+        "phonetic": "a balance between intense and loose emotions"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "food waste in the USA",
+      "pronunciation": {
+        "ipa": "food waste in the USA",
+        "phonetic": "food waste in the USA"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the United States",
+      "pronunciation": {
+        "ipa": "the United States",
+        "phonetic": "the United States"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the biggest food waste country",
+      "pronunciation": {
+        "ipa": "the biggest food waste country",
+        "phonetic": "the biggest food waste country"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "60% of food waste",
+      "pronunciation": {
+        "ipa": "60% of food waste",
+        "phonetic": "60% of food waste"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "general consumption",
+      "pronunciation": {
+        "ipa": "general consumption",
+        "phonetic": "general consumption"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "two main sources",
+      "pronunciation": {
+        "ipa": "two main sources",
+        "phonetic": "two main sources"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the used-by section",
+      "pronunciation": {
+        "ipa": "the used-by section",
+        "phonetic": "the used-by section"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "what people purchase",
+      "pronunciation": {
+        "ipa": "what people purchase",
+        "phonetic": "what people purchase"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "how they eat",
+      "pronunciation": {
+        "ipa": "how they eat",
+        "phonetic": "how they eat"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "purchasing all items",
+      "pronunciation": {
+        "ipa": "purchasing all items",
+        "phonetic": "purchasing all items"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "hook",
+      "pronunciation": {
+        "ipa": "hook",
+        "phonetic": "hook"
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a hook",
+      "pronunciation": {
+        "ipa": "a hook",
+        "phonetic": "a hook"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "writing a persuasive essay",
+      "pronunciation": {
+        "ipa": "writing a persuasive essay",
+        "phonetic": "writing a persuasive essay"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "grab the reader's attention",
+      "pronunciation": {
+        "ipa": "grab the reader's attention",
+        "phonetic": "grab the reader's attention"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the controversial issue",
+      "pronunciation": {
+        "ipa": "the controversial issue",
+        "phonetic": "the controversial issue"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the first paragraph",
+      "pronunciation": {
+        "ipa": "the first paragraph",
+        "phonetic": "the first paragraph"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "four or five sentences in length",
+      "pronunciation": {
+        "ipa": "four or five sentences in length",
+        "phonetic": "four or five sentences in length"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "provoke emotional interest",
+      "pronunciation": {
+        "ipa": "provoke emotional interest",
+        "phonetic": "provoke emotional interest"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "statistics and facts",
+      "pronunciation": {
+        "ipa": "statistics and facts",
+        "phonetic": "statistics and facts"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "hypothetical",
+      "pronunciation": {
+        "ipa": "hypothetical",
+        "phonetic": "hypothetical"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "worst-case scenarios",
+      "pronunciation": {
+        "ipa": "worst-case scenarios",
+        "phonetic": "worst-case scenarios"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "strong wording",
+      "pronunciation": {
+        "ipa": "strong wording",
+        "phonetic": "strong wording"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the urgency of the addressed topic",
+      "pronunciation": {
+        "ipa": "the urgency of the addressed topic",
+        "phonetic": "the urgency of the addressed topic"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "population growth",
+      "pronunciation": {
+        "ipa": "population growth",
+        "phonetic": "population growth"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a big challenge",
+      "pronunciation": {
+        "ipa": "a big challenge",
+        "phonetic": "a big challenge"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the world population",
+      "pronunciation": {
+        "ipa": "the world population",
+        "phonetic": "the world population"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "seven billion",
+      "pronunciation": {
+        "ipa": "seven billion",
+        "phonetic": "seven billion"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the limited resources",
+      "pronunciation": {
+        "ipa": "the limited resources",
+        "phonetic": "the limited resources"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the water crisis",
+      "pronunciation": {
+        "ipa": "the water crisis",
+        "phonetic": "the water crisis"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "climate change",
+      "pronunciation": {
+        "ipa": "climate change",
+        "phonetic": "climate change"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the food crisis",
+      "pronunciation": {
+        "ipa": "the food crisis",
+        "phonetic": "the food crisis"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "not equally distributed",
+      "pronunciation": {
+        "ipa": "not equally distributed",
+        "phonetic": "not equally distributed"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "change the balance of power",
+      "pronunciation": {
+        "ipa": "change the balance of power",
+        "phonetic": "change the balance of power"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "predicted",
+      "pronunciation": {
+        "ipa": "predicted",
+        "phonetic": "predicted"
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "some cities",
+      "pronunciation": {
+        "ipa": "some cities",
+        "phonetic": "some cities"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "exceed 20 million people",
+      "pronunciation": {
+        "ipa": "exceed 20 million people",
+        "phonetic": "exceed 20 million people"
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    }
+  ]
+}

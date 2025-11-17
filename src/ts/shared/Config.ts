@@ -54,7 +54,7 @@ export class AppConfig {
             'pte-high-frequency': 'data/processed/pte-high-frequency-vocabulary.json',
             'pte-rs-core': 'data/processed/pte-rs-core-vocabulary.json',
             'pte-di-rl-templates': 'data/processed/pte-di-rl-templates-vocabulary.json',
-            'pte-sst-keywords': 'data/processed/pte-sst-keywords-vocabulary.json',
+            'pte-sst-complete': 'data/processed/pte-sst-complete-vocabulary.json',
 
             // Practice modes
             'rs': 'data/processed/pte-repeat-sentence.json',
@@ -80,7 +80,7 @@ export class AppConfig {
           { id: 'pte-high-frequency', name: 'PTE High-Frequency', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-rs-core', name: 'PTE RS Core', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-di-rl-templates', name: 'PTE DI/RL Templates', category: 'vocabulary', difficulty: 'normal' },
-          { id: 'pte-sst-keywords', name: 'PTE SST Keywords', category: 'vocabulary', difficulty: 'normal' },
+          { id: 'pte-sst-complete', name: 'PTE SST Complete', category: 'vocabulary', difficulty: 'normal' },
 
           // Practice modes (3 total)
           { id: 'rs', name: 'Repeat Sentence', category: 'practice', description: '620 practice sentences' },

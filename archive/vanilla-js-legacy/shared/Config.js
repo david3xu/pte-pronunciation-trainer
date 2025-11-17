@@ -220,12 +220,12 @@ export class AppConfig {
                         inputSubdir: 'vocabs'
                     },
                     {
-                        id: 'pte-sst-keywords',
-                        input: 'pte-sst-keywords-with-ipa.md',
-                        output: 'pte-sst-keywords-vocabulary.json',
-                        category: 'pte-sst-keywords',
-                        description: 'PTE SST (Summarize Spoken Text) keywords with IPA',
-                        sourceType: 'pte-sst-keywords',
+                        id: 'pte-sst-complete',
+                        input: 'pte-sst-complete-with-ipa.md',
+                        output: 'pte-sst-complete-vocabulary.json',
+                        category: 'pte-sst-complete',
+                        description: 'PTE SST (Summarize Spoken Text) complete vocabulary with IPA - ALL 368 terms from 29 topics',
+                        sourceType: 'pte-sst-complete',
                         dataType: 'vocabulary',
                         extractorType: 'SingleIPATermsExtractor',
                         inputSubdir: 'vocabs'

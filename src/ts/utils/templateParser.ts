@@ -154,7 +154,28 @@ function isTemplatePhrase(text: string): boolean {
 }
 
 /**
+ * Find longest matching template phrase starting at position i
+ * Returns [matchedPhrase, numberOfTokensConsumed] or null
+ */
+function findLongestTemplateMatch(tokens: string[], startIndex: number): [string, number] | null {
+  const maxLookahead = 10; // Check up to 10 tokens ahead
+  let longestMatch: [string, number] | null = null;
+  
+  // Try progressively longer phrases
+  for (let length = 1; length <= Math.min(maxLookahead, tokens.length - startIndex); length++) {
+    const phrase = tokens.slice(startIndex, startIndex + length).join('').toLowerCase().trim();
+    
+    if (isTemplatePhrase(phrase)) {
+      longestMatch = [phrase, length];
+    }
+  }
+  
+  return longestMatch;
+}
+
+/**
  * Parse text into segments with proper classification
+ * Now handles multi-word template phrases correctly
  */
 export function parseTemplateText(text: string, _template: string = 'A'): TextSegment[] {
   const segments: TextSegment[] = [];
@@ -162,60 +183,87 @@ export function parseTemplateText(text: string, _template: string = 'A'): TextSe
   // Split by spaces and punctuation, keeping delimiters
   const tokens = text.split(/(\s+|[,.])/);
   
+  let i = 0;
   let currentPhrase: string[] = [];
   let currentType: 'template' | 'variable' | null = null;
   
-  for (let i = 0; i < tokens.length; i++) {
+  const flushSegment = () => {
+    if (currentPhrase.length > 0) {
+      const phraseText = currentPhrase.join('');
+      segments.push({
+        text: phraseText,
+        type: currentType || 'variable',
+        isStress: isStressWord(phraseText.trim())
+      });
+      currentPhrase = [];
+      currentType = null;
+    }
+  };
+  
+  while (i < tokens.length) {
     const token = tokens[i];
     
-    // Skip empty or undefined tokens
+    // Skip empty or whitespace-only tokens (but preserve spaces in phrases)
     if (!token || token.trim() === '') {
       if (currentPhrase.length > 0 && token) {
         currentPhrase.push(token);
       }
+      i++;
       continue;
     }
     
-    // Check if this token is a template phrase
-    const isTemplate = isTemplatePhrase(token);
+    // Check for punctuation
+    if (token === ',' || token === '.') {
+      flushSegment();
+      i++;
+      continue;
+    }
     
-    // If type changes or we hit punctuation, flush current phrase
-    if ((currentType !== null && isTemplate !== (currentType === 'template')) || 
-        token === ',' || token === '.') {
-      if (currentPhrase.length > 0) {
-        const phraseText = currentPhrase.join('');
-        segments.push({
-          text: phraseText,
-          type: currentType || 'variable',
-          isStress: isStressWord(phraseText)
-        });
-        currentPhrase = [];
+    // Try to match multi-word template phrase
+    const match = findLongestTemplateMatch(tokens, i);
+    
+    if (match) {
+      const [, tokensConsumed] = match;
+      
+      // If type changes, flush current segment
+      if (currentType !== null && currentType !== 'template') {
+        flushSegment();
       }
       
-      // Add punctuation as separate segment
-      if (token === ',' || token === '.') {
-        currentType = null;
-        continue;
+      // Start or continue template segment
+      if (currentPhrase.length === 0) {
+        currentType = 'template';
       }
+      
+      // Add matched tokens to current phrase
+      for (let j = 0; j < tokensConsumed; j++) {
+        const token = tokens[i + j];
+        if (token !== undefined) {
+          currentPhrase.push(token);
+        }
+      }
+      
+      i += tokensConsumed;
+    } else {
+      // No template match - this is variable content
+      
+      // If type changes, flush current segment
+      if (currentType !== null && currentType !== 'variable') {
+        flushSegment();
+      }
+      
+      // Start or continue variable segment
+      if (currentPhrase.length === 0) {
+        currentType = 'variable';
+      }
+      
+      currentPhrase.push(token);
+      i++;
     }
-    
-    // Start new phrase or continue current
-    if (currentPhrase.length === 0) {
-      currentType = isTemplate ? 'template' : 'variable';
-    }
-    
-    currentPhrase.push(token);
   }
   
   // Flush remaining phrase
-  if (currentPhrase.length > 0) {
-    const phraseText = currentPhrase.join('');
-    segments.push({
-      text: phraseText,
-      type: currentType || 'variable',
-      isStress: isStressWord(phraseText)
-    });
-  }
+  flushSegment();
   
   return segments;
 }

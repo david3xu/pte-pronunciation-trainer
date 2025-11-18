@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**PTE Pronunciation Trainer** - A web-based pronunciation training application for PTE exam preparation, featuring comprehensive vocabulary (14 books, 14,300+ terms) and practice modes (RS/ASQ/WFD with 2,507 sentences/questions).
+**PTE Pronunciation Trainer** - A web-based pronunciation training application for PTE exam preparation, featuring comprehensive vocabulary (16 books, 13,800+ terms), practice modes (RS/ASQ/WFD with 2,507 sentences/questions), and DI Shadowing Practice (20 answers).
 
 **Architecture**: React 19 + TypeScript 5.9 + Zustand + Radix UI + Tailwind CSS
 
@@ -13,11 +13,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ### Directory Structure (November 2025 Refactor)
 
 **Recent Changes:**
+- ✅ **NEW:** DI Shadowing Practice mode with continuous, fluent speech (20 answers)
+- ✅ **NEW:** Smart defaults for all study types (auto-selects appropriate content)
+- ✅ **FIXED:** Playback speed slider now works (0.5x - 2.0x adjustable TTS)
+- ✅ **IMPROVED:** All-caps words pronounced naturally (TOP → "Top" not "T-O-P")
 - ✅ **Archived** `src/js/` → `archive/vanilla-js-legacy/` (legacy vanilla JavaScript code, no longer active)
 - ✅ **React App** uses `src/ts/` for core logic + `src/components/` for UI components
 - ✅ **Components** grouped by feature: `ai/`, `audio/`, `practice/`, `settings/`, `shared/`
 - ✅ **Docs** organized into folders: `setup/`, `api/`, `architecture/`, `guides/`, `archive/`
 - ✅ **API** renamed `src/api/` → `src/services/` for clarity
+- ✅ **Documentation cleanup:** Removed 8 temporary markdown files (AUDIT-*.md, etc.)
 
 **Active Codebase:**
 ```
@@ -141,19 +146,22 @@ window.audioControls.startAutoPlay();
 
 ### Data Pipeline
 - **`scripts/pte-data-pipeline.js`** - Markdown → JSON processing
-- **`src/js/data/DatasetManager.js`** - Unified dataset loader (6 types)
+- **`src/js/data/DatasetManager.js`** - Unified dataset loader (7 types)
 - **`src/js/data/extractors/PTETermsExtractor.js`** - Vocabulary extraction (dual IPA format: British + American)
 - **`src/js/data/extractors/SingleIPATermsExtractor.js`** - Vocabulary extraction (single IPA format)
 - **`src/js/data/extractors/PTESentenceExtractor.js`** - RS/WFD sentence extraction
 - **`src/js/data/extractors/PTEQuestionExtractor.js`** - ASQ question extraction
+- **`src/js/data/extractors/DIAnswerExtractor.js`** - DI answer extraction (phrase-based shadowing practice)
 
 ## Data Architecture
 
 ### Dataset Types
-1. **Vocabulary** (14 books) - Words with IPA pronunciation
-   - PTE FIB Listening, Beginner, Intermediate, Advanced, RA, RS Vocab, Must-Know, WFD Vocab, RS-WFD Vocab, Reading FIB, Reading FIB Drag, ASQ Answers, High-Frequency, RS Core
-2. **Practice** (3 modes) - Sentences/questions for practice
+1. **Vocabulary** (16 books, 13,800+ terms) - Words with IPA pronunciation
+   - PTE FIB Listening, Beginner, Intermediate, Advanced, RA, RS Vocab, Must-Know, WFD Vocab, RS-WFD Vocab, Reading FIB, Reading FIB Drag, ASQ Answers, High-Frequency, RS Core, DI/RL Templates, SST Complete
+2. **Practice** (3 modes, 2,507 items) - Sentences/questions for practice
    - Repeat Sentence (620), Answer Short Question (692), Write From Dictation (1,195)
+3. **Shadowing** (2 datasets, 20 answers) - DI answers for continuous speech practice
+   - DI Images 1-10 (10 answers), DI Images 11-20 (10 answers)
 
 ### Data Flow
 ```

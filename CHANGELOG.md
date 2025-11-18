@@ -33,6 +33,91 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### 🎤 DI Shadowing Practice & UX Improvements (2025-11-18)
+
+#### **New Features**
+
+- ✨ **DI Shadowing Practice Mode** - Practice Describe Image answers with continuous, fluent speech
+  - 🖼️ **DI Images 1-10** - 10 complete DI answers for shadowing practice
+  - 🖼️ **DI Images 11-20** - Additional 10 DI answers for advanced practice
+  - **Continuous Speech** - Natural flow without artificial pauses, phrases separated by `|` delimiters
+  - **Real-Time Highlighting** - Current phrase highlighted as it's being spoken
+  - **Full Answer Display** - See complete answer text while practicing
+  - **Phrase Breakdown** - Each answer split into natural speaking phrases
+  - **New Data Pipeline** - `DIAnswerExtractor` for processing DI markdown files
+
+- ⚙️ **Smart Study Type Defaults** - Auto-selects appropriate content when switching modes
+  - **Vocabulary Learning** → Auto-loads "PTE FIB Listening"
+  - **Task Practice** → Auto-loads "Repeat Sentence (RS)"
+  - **Shadowing Practice** → Auto-loads "DI Shadowing (Images 1-10)"
+  - **UI Improvements** - Dropdown placeholders for better user guidance
+
+- 📚 **New Vocabulary Books** (Total: 16 books, 13,800+ terms)
+  - 🎙️ **PTE RS Core** - 222 core Repeat Sentence vocabulary terms
+  - 🗣️ **PTE DI/RL Templates** - 106 Describe Image & Retell Lecture template phrases
+  - 📝 **PTE SST Complete** - 368 Summarize Spoken Text vocabulary terms
+  - All with proper IPA transcriptions and phonetic "sounds like" guides
+
+#### **Bug Fixes & Improvements**
+
+- 🎚️ **FIXED: Playback Speed Slider** - Now correctly applies speed (0.5x - 2.0x) to TTS
+  - Updated `TTSEngine.pronounceText()` to accept `rate` parameter
+  - Connected slider value to actual TTS speech rate
+  - Works universally across all study types (Vocabulary, Practice, Shadowing)
+
+- 🗣️ **IMPROVED: All-Caps Pronunciation** - Natural pronunciation of capitalized words
+  - Auto-converts all-caps words to title case before TTS (e.g., "TOP" → "Top")
+  - Prevents letter-by-letter spelling (T-O-P)
+  - Applied in `cleanTextForTTS()` method
+  - Improves natural flow for DI shadowing
+
+- 🔧 **Service Worker Cache Management**
+  - Bumped cache version to v75 to clear merge conflict artifacts
+  - Force browser refresh for all users after deployments
+  - Resolved syntax errors in cached service worker
+
+- 📖 **IPA Corrections** - Fixed all 368 entries in PTE SST Complete vocabulary
+  - Corrected "sounds like" phonetic guides
+  - Proper IPA transcriptions for all terms
+
+#### **Data & Configuration**
+
+- **New Data Files:**
+  - `data/source/pte/di/di-answers-1-10.md` - Clean DI answer source (Images 1-10)
+  - `data/source/pte/di/di-answers-11-20.md` - Clean DI answer source (Images 11-20)
+  - `data/processed/di-shadowing-images-1-10.json` - Processed DI dataset
+  - `data/processed/di-shadowing-images-11-20.json` - Processed DI dataset
+
+- **Configuration Updates:**
+  - Added `di-shadowing-1-10` and `di-shadowing-11-20` to learning modes
+  - Added `DIAnswerExtractor` to pipeline registry
+  - Updated type definitions for shadowing category
+  - Extended `dataPathMap` for correct JSON loading
+
+#### **Component Architecture**
+
+- **New Components:**
+  - `ShadowingPractice.ts` - Core shadowing practice logic
+  - `ShadowingUI.ts` - Shadowing UI rendering
+  - `src/css/shadowing.css` - Shadowing-specific styles
+
+- **Enhanced Components:**
+  - `SettingsPanel.tsx` - Added shadowing mode selector, smart defaults logic
+  - `WordCard.tsx` - Display full answer text for shadowing items
+  - `AudioControls.tsx` - Continuous text playback for shadowing, speed control integration
+  - `TTSEngine.ts` - Rate parameter support, all-caps normalization
+  - `App.tsx` - Shadowing data loading and transformation
+
+#### **Developer Experience**
+
+- **Documentation Cleanup** - Removed 8 temporary documentation files
+  - Deleted: `AUDIT_CODE_SPECIFIC.md`, `AUDIT_COMPREHENSIVE.md`, `AUDIT_QUICK_REFERENCE.md`
+  - Deleted: `AUDIT-REPORT.md`, `AUDIT-UPDATE.md`, `MIGRATION-FIX.md`
+  - Deleted: `SESSION-SUMMARY.md`, `docs/STATUS-UPDATE.md`
+  - Kept only permanent, version-controlled documentation
+
+---
+
 ### 🚀 Phase 2 Complete: AI Context & Intelligence (2025-01-13)
 
 #### **Context-Aware AI Tutoring**

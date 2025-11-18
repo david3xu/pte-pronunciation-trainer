@@ -98,6 +98,11 @@ export type PracticeMode = 'rs' | 'asq' | 'wfd';
 export type PracticeCategory = 'pte-rs' | 'pte-asq' | 'pte-wfd';
 
 /**
+ * Shadowing category (shadowing practice modes)
+ */
+export type ShadowingCategory = 'di-shadowing';
+
+/**
  * Metadata for practice items (nested structure)
  */
 export interface PracticeMetadata {
@@ -233,16 +238,16 @@ export interface DatasetRegistryEntry {
   /** Output filename */
   output: string;
   /** Category */
-  category: VocabularyCategory | PracticeCategory;
+  category: VocabularyCategory | PracticeCategory | ShadowingCategory | string;
   /** Description */
   description?: string;
   /** Source type identifier */
   sourceType?: string;
-  /** Data type (vocabulary, rs, wfd, asq) */
+  /** Data type (vocabulary, rs, wfd, asq, shadowing) */
   dataType?: string;
   /** Extractor type */
-  extractorType: 'PTETermsExtractor' | 'SingleIPATermsExtractor' | 'PTESentenceExtractor' | 'PTEQuestionExtractor';
-  /** Input subdirectory (e.g., 'vocabs', 'sentences') */
+  extractorType: 'PTETermsExtractor' | 'SingleIPATermsExtractor' | 'PTESentenceExtractor' | 'PTEQuestionExtractor' | 'DIAnswerExtractor';
+  /** Input subdirectory (e.g., 'vocabs', 'sentences', 'di') */
   inputSubdir?: string;
   /** Whether this is the default dataset */
   isDefault?: boolean;

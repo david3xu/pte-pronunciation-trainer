@@ -11,6 +11,7 @@ export type {
   Difficulty,
   VocabularyCategory,
   PracticeCategory,
+  ShadowingCategory,
   PracticeMode,
   VocabularyTerm,
   PracticeMetadata,

@@ -13,6 +13,7 @@ import PTETermsExtractor from '../archive/vanilla-js-legacy/data/extractors/PTET
 import SingleIPATermsExtractor from '../archive/vanilla-js-legacy/data/extractors/SingleIPATermsExtractor.js';
 import PTESentenceExtractor from '../archive/vanilla-js-legacy/data/extractors/PTESentenceExtractor.js';
 import PTEQuestionExtractor from '../archive/vanilla-js-legacy/data/extractors/PTEQuestionExtractor.js';
+import DIAnswerExtractor from '../archive/vanilla-js-legacy/data/extractors/DIAnswerExtractor.js';
 
 // ES module equivalents of __filename and __dirname
 const __filename = fileURLToPath(import.meta.url);
@@ -263,6 +264,25 @@ class PTEDataPipeline {
               vocabulary: unique
             };
 
+          } else if (extractorType === 'DIAnswerExtractor') {
+            // Handle DI answers for shadowing practice
+            const content = fs.readFileSync(inputPath, 'utf8');
+            const extractor = new DIAnswerExtractor();
+            const answers = extractor.extract(content);
+
+            dataset = {
+              metadata: {
+                generated: new Date().toISOString(),
+                totalAnswers: answers.length,
+                source: entry.sourceType,
+                description: entry.description,
+                version: '1.0',
+                category: entry.category,
+                dataType: 'shadowing'
+              },
+              answers: answers
+            };
+
           } else {
             // Handle vocabulary-based datasets (default PTETermsExtractor)
             try {
@@ -308,7 +328,8 @@ class PTEDataPipeline {
 
           // Get count based on dataset structure
           const count = dataset.items ? dataset.items.length :
-                       dataset.vocabulary ? dataset.vocabulary.length : 0;
+                       dataset.vocabulary ? dataset.vocabulary.length :
+                       dataset.answers ? dataset.answers.length : 0;
 
           console.log(`   ✅ Generated dataset: ${entry.id} (${count} items)`);
 

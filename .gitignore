@@ -79,3 +79,4 @@ yarn.lock
 *.backup
 *.orig
 .vercel
+.nfs*

@@ -60,6 +60,17 @@ export interface EventPayloads {
   'progress:updated': { current: number; total: number; percentage: number };
   'progress:reset': void;
 
+  // Shadowing events
+  'shadowing:dataset:loaded': { totalAnswers: number; category: string };
+  'shadowing:answer:changed': { answerIndex: number; answerId?: string; answerNumber?: number };
+  'shadowing:playback:started': { answerId: string; answerNumber: number };
+  'shadowing:playback:paused': void;
+  'shadowing:playback:stopped': void;
+  'shadowing:playback:completed': { answerId: string };
+  'shadowing:phrase:highlighted': { phraseIndex: number; totalPhrases: number; phraseText: string };
+  'shadowing:speed:changed': { speed: number };
+  'shadowing:error': { error: any };
+
   // System events
   'system:ready': void;
   'system:error': { event: string; error: Error; stack?: string; timestamp: number };
@@ -154,16 +165,16 @@ export interface EventsConfig {
 export interface DataPathsConfig {
   base: string;
   processed: string;
-  byMode: Record<VocabularyCategory | PracticeMode, string>;
+  byMode: Record<VocabularyCategory | PracticeMode | string, string>;
 }
 
 /**
  * Learning modes configuration
  */
 export interface LearningMode {
-  id: VocabularyCategory | PracticeMode;
+  id: VocabularyCategory | PracticeMode | string;
   name: string;
-  category: 'vocabulary' | 'practice';
+  category: 'vocabulary' | 'practice' | 'shadowing';
   difficulty?: Difficulty;
   description?: string;
 }
@@ -350,6 +361,7 @@ export interface PipelineConfig {
     SingleIPATermsExtractor: string;
     PTESentenceExtractor: string;
     PTEQuestionExtractor: string;
+    DIAnswerExtractor: string;
   };
 }
 

@@ -10,25 +10,25 @@
 
 ---
 
-## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (90 words, 38-40 seconds)
+## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (82 words, 35-37 seconds)
 
 ```
-This [BAR chart] | ILLUSTRATES information | REGARDING [pupil teacher ratio in primary schools].
+This [BAR chart] ILLUSTRATES information REGARDING [pupil teacher ratio in primary schools].
 
-At the TOP, | [the TWENTY-THREE to TWENTY-FOUR ratio] | DEMONSTRATES the HIGHEST value, | 
-which is approximately [FIFTEEN percent].
+At the TOP [the TWENTY-THREE to TWENTY-FOUR ratio] SHOWS the HIGHEST value |
+of around [FIFTEEN percent].
 
-Following THAT, | [the TWENTY-TWO ratio] | SHOWS around [THIRTEEN percent], | 
+Following THAT [the TWENTY-TWO ratio] SHOWS about [THIRTEEN percent] |
 representing the SECOND-highest figure.
 
-Conversely, | [the LESS than sixteen ratio] | INDICATES the LOWEST value | 
-at approximately [TWO percent].
+On the other END [the LESS than sixteen ratio] SHOWS the LOWEST value |
+at around [TWO percent].
 
-Additionally, | [NINETEEN] | and [TWENTY-ONE] | 
-also contribute SIGNIFICANTLY | to the data ANALYSIS.
+Worth noting [NINETEEN] and [TWENTY-ONE] |
+also contribute to the data ANALYSIS.
 
-In CONCLUSION, | this chart PRESENTS comprehensive DATA | 
-demonstrating CLEAR variations | in [pupil teacher ratio in primary schools].
+In CONCLUSION this chart PRESENTS comprehensive DATA |
+demonstrating CLEAR variations in [pupil teacher ratio in primary schools].
 ```
 
 ---

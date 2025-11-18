@@ -10,25 +10,25 @@
 
 ---
 
-## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (90 words, 38-40 seconds)
+## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (82 words, 35-37 seconds)
 
 ```
-This [LINE graph] | ILLUSTRATES information | REGARDING [arrests for using illegal drugs].
+This [LINE graph] ILLUSTRATES information REGARDING [arrests for using illegal drugs].
 
-At the TOP, | [in TWO thousand and ONE] | DEMONSTRATES the HIGHEST value, | 
-which is approximately [SEVENTY arrests].
+At the TOP [in TWO thousand and ONE] SHOWS the HIGHEST value |
+of around [SEVENTY arrests].
 
-Following THAT, | [in NINETEEN ninety-seven] | SHOWS around [SIXTY arrests], | 
+Following THAT [in NINETEEN ninety-seven] SHOWS about [SIXTY arrests] |
 representing the SECOND-highest figure.
 
-Conversely, | [in NINETEEN ninety-one] | INDICATES the LOWEST value | 
-at approximately [TEN arrests].
+On the other END [in NINETEEN ninety-one] SHOWS the LOWEST value |
+at around [TEN arrests].
 
-Additionally, | [NINETEEN ninety-four] | and [TWO thousand and FIVE] | 
-also contribute SIGNIFICANTLY | to the data ANALYSIS.
+Worth noting [NINETEEN ninety-four] and [TWO thousand and FIVE] |
+also contribute to the data ANALYSIS.
 
-In CONCLUSION, | this chart PRESENTS comprehensive DATA | 
-demonstrating CLEAR variations | in [arrests for using illegal drugs].
+In CONCLUSION this chart PRESENTS comprehensive DATA |
+demonstrating CLEAR variations in [arrests for using illegal drugs].
 ```
 
 ---

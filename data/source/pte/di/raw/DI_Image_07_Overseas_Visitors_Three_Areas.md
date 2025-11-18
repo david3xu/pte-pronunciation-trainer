@@ -10,25 +10,21 @@
 
 ---
 
-## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (92 words, 38-40 seconds)
+## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (88 words, 36-38 seconds)
 
 ```
-This [LINE graph] | COMPARES data | between [the coast, the mountains, and the lakes].
+This [LINE graph] ILLUSTRATES information REGARDING [overseas visitors to three different areas].
 
-When EXAMINING [the coast], | [in TWO thousand and SEVEN] | LEADS | 
-at approximately [SEVENTY-five thousand visitors].
+Looking at [the coast] [in TWO thousand and SEVEN] SHOWS the HIGHEST value |
+at around [SEVENTY-five thousand visitors] |
+while [in NINETEEN eighty-seven] SHOWS the LOWEST at about [FORTY thousand visitors].
 
-Conversely, | [in NINETEEN eighty-seven] | shows the LOWEST value | 
-at around [FORTY thousand visitors].
+Switching to [the mountains] [in TWO thousand and TWO] LEADS this group |
+at around [SEVENTY-five thousand visitors] |
+followed by [the lakes] at about [SIXTY-five thousand visitors].
 
-SWITCHING to [the mountains], | [in TWO thousand and TWO] | REPRESENTS the highest figure | 
-at approximately [SEVENTY-five thousand visitors].
-
-Furthermore, | [the lakes] | and [NINETEEN ninety-two] | 
-also DEMONSTRATE notable VALUES | across BOTH categories.
-
-OVERALL, | this data CLEARLY illustrates | 
-the COMPARATIVE analysis | between [the three different areas].
+In CONCLUSION this chart PRESENTS |
+the COMPARATIVE analysis between [the three different areas].
 ```
 
 ---

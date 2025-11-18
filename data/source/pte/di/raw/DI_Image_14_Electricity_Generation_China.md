@@ -10,25 +10,21 @@
 
 ---
 
-## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (92 words, 38-40 seconds)
+## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (88 words, 36-38 seconds)
 
 ```
-This [LINE graph] | PRESENTS statistical data | COMPARING [coal, hydro, and other energy types].
+This [LINE graph] ILLUSTRATES information REGARDING [electricity generation in China by type].
 
-When EXAMINING [coal], | [the TWO thousand and FOUR period] | LEADS | 
-at approximately [ONE thousand NINE hundred billion kilowatt hours].
+Looking at [coal] [the TWO thousand and FOUR period] SHOWS the HIGHEST value |
+at around [ONE thousand NINE hundred billion kilowatt hours] |
+while [the NINETEEN ninety-four period] SHOWS the LOWEST at about [EIGHT hundred billion kilowatt hours].
 
-Conversely, | [the NINETEEN ninety-four period] | shows the LOWEST value | 
-at around [EIGHT hundred billion kilowatt hours].
+Switching to [hydro power] [the TWO thousand and FOUR period] LEADS this group |
+at around [THREE hundred and FIFTY billion kilowatt hours] |
+followed by [oil] at about [ONE hundred billion kilowatt hours].
 
-SWITCHING to [hydro power], | [the TWO thousand and FOUR period] | REPRESENTS the highest figure | 
-at approximately [THREE hundred and FIFTY billion kilowatt hours].
-
-Furthermore, | [oil] | and [nuclear] | 
-also DEMONSTRATE notable VALUES | across BOTH categories.
-
-OVERALL, | this data CLEARLY illustrates | 
-the COMPARATIVE analysis | between [electricity generation in China by type].
+In CONCLUSION this chart PRESENTS |
+the COMPARATIVE analysis between [electricity generation in China by type].
 ```
 
 ---

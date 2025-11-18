@@ -28,7 +28,7 @@ Furthermore, | [age group FIFTEEN to TWENTY-four] | and [age group THIRTY-five t
 also DEMONSTRATE notable VALUES | across BOTH categories.
 
 OVERALL, | this data CLEARLY illustrates | 
-the COMPARATIVE analysis | between [male and female age distribution].
+the COMPARATIVE analysis | between [males and females by age group].
 ```
 
 ---

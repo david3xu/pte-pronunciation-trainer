@@ -28,7 +28,7 @@ Furthermore, | [Brazil] | and [Ethiopia] |
 also DEMONSTRATE notable VALUES | across BOTH categories.
 
 OVERALL, | this data CLEARLY illustrates | 
-the COMPARATIVE analysis | between [meat consumption patterns globally].
+the COMPARATIVE analysis | between [annual per capita meat consumption].
 ```
 
 ---

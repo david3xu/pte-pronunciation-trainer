@@ -28,7 +28,7 @@ Additionally, | [NINETEEN ninety-four] | and [TWO thousand and FIVE] |
 also contribute SIGNIFICANTLY | to the data ANALYSIS.
 
 In CONCLUSION, | this chart PRESENTS comprehensive DATA | 
-demonstrating CLEAR variations | in [arrest patterns].
+demonstrating CLEAR variations | in [arrests for using illegal drugs].
 ```
 
 ---

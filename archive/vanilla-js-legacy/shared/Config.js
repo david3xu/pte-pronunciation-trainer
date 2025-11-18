@@ -51,6 +51,7 @@ export class AppConfig {
                         'asq': 'data/processed/pte-answer-short-question.json',
                         'wfd': 'data/processed/pte-write-from-dictation.json',
                         // Shadowing modes
+                        'di-shadowing-1-10': 'data/processed/di-shadowing-images-1-10.json',
                         'di-shadowing-11-20': 'data/processed/di-shadowing-images-11-20.json'
                     }
                 },
@@ -77,7 +78,8 @@ export class AppConfig {
                     { id: 'asq', name: 'Answer Short Question', category: 'practice', description: '692 practice questions' },
                     { id: 'wfd', name: 'Write From Dictation', category: 'practice', description: '1,195 practice sentences' },
                     
-                    // Shadowing modes (1 total)
+                    // Shadowing modes (2 total)
+                    { id: 'di-shadowing-1-10', name: 'DI Shadowing (Images 1-10)', category: 'shadowing', description: '10 DI answers for pronunciation practice' },
                     { id: 'di-shadowing-11-20', name: 'DI Shadowing (Images 11-20)', category: 'shadowing', description: '10 DI answers for pronunciation practice' }
                 ],
                 defaultMode: 'pte-beginner'
@@ -242,8 +244,19 @@ export class AppConfig {
                         inputSubdir: 'vocabs'
                     },
                     {
+                        id: 'di-shadowing-1-10',
+                        input: 'di-answers-1-10.md',
+                        output: 'di-shadowing-images-1-10.json',
+                        category: 'di-shadowing',
+                        description: 'DI complete answers (Images 1-10) for shadowing practice with phrase-by-phrase breakdown',
+                        sourceType: 'di-answers',
+                        dataType: 'shadowing',
+                        extractorType: 'DIAnswerExtractor',
+                        inputSubdir: 'di'
+                    },
+                    {
                         id: 'di-shadowing-11-20',
-                        input: 'DI_Images_11-20_With_Pronunciation.md',
+                        input: 'di-answers-11-20.md',
                         output: 'di-shadowing-images-11-20.json',
                         category: 'di-shadowing',
                         description: 'DI complete answers (Images 11-20) for shadowing practice with phrase-by-phrase breakdown',

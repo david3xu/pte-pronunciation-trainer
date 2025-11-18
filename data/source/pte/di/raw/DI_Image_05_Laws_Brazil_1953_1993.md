@@ -28,7 +28,7 @@ Additionally, | [NINETEEN sixty-three] | and [NINETEEN seventy-three] |
 also contribute SIGNIFICANTLY | to the data ANALYSIS.
 
 In CONCLUSION, | this chart PRESENTS comprehensive DATA | 
-demonstrating CLEAR variations | in [legislative growth].
+demonstrating CLEAR variations | in [the number of laws in Brazil].
 ```
 
 ---

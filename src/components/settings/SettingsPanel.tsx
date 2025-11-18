@@ -259,6 +259,13 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                         <Select.Item value="pte-asq-answers">PTE ASQ Answers</Select.Item>
                         <Select.Item value="pte-high-frequency">PTE High-Frequency</Select.Item>
                         <Select.Item value="pte-rs-core">PTE RS Core</Select.Item>
+                        <Select.Item value="pte-di-rl-templates">PTE DI/RL Templates</Select.Item>
+                        <Select.Item value="pte-sst-complete">PTE SST Complete</Select.Item>
+                      </Select.Group>
+                      <Select.Group>
+                        <Select.Label>Shadowing Practice</Select.Label>
+                        <Select.Item value="di-shadowing-1-10">DI Shadowing (Images 1-10)</Select.Item>
+                        <Select.Item value="di-shadowing-11-20">DI Shadowing (Images 11-20)</Select.Item>
                       </Select.Group>
                     </Select.Content>
                   </Select.Root>

@@ -1,269 +1,223 @@
 /**
- * Template Parser for DI Shadowing Practice
+ * Template Parser for DI Shadowing Practice (Simplified)
  * 
- * Parses DI answers to identify:
- * - Template phrases (fixed, memorized)
- * - Variable content (changes per image)
- * - Stress words (CAPITALS)
+ * Identifies:
+ * - Template phrases (common phrases across all answers)
+ * - Variable content (specific to each image)
+ * - Stress words (ALL CAPS)
  */
-
-// Template A: Single Category Data Charts
-const TEMPLATE_A_PATTERNS = [
-  'This',
-  'ILLUSTRATES information',
-  'REGARDING',
-  'At the TOP,',
-  'DEMONSTRATES the HIGHEST value,',
-  'which is approximately',
-  'Following THAT,',
-  'SHOWS around',
-  'representing the SECOND-highest figure.',
-  'Conversely,',
-  'INDICATES the LOWEST value',
-  'at approximately',
-  'Additionally,',
-  'and',
-  'also contribute SIGNIFICANTLY',
-  'to the data ANALYSIS.',
-  'In CONCLUSION,',
-  'this chart PRESENTS comprehensive DATA',
-  'demonstrating CLEAR variations',
-  'in'
-];
-
-// Template B: Multiple Categories
-const TEMPLATE_B_PATTERNS = [
-  'This',
-  'PRESENTS statistical data',
-  'COMPARING',
-  'When EXAMINING',
-  'LEADS',
-  'at approximately',
-  'Conversely,',
-  'shows the LOWEST value',
-  'at around',
-  'SWITCHING to',
-  'REPRESENTS the highest figure',
-  'Furthermore,',
-  'and',
-  'also DEMONSTRATE notable VALUES',
-  'across BOTH categories.',
-  'OVERALL,',
-  'this data CLEARLY illustrates',
-  'the COMPARATIVE analysis',
-  'between'
-];
-
-// Template F: Diagrams/Illustrations
-const TEMPLATE_F_PATTERNS = [
-  'This DIAGRAM',
-  'ILLUSTRATES information about',
-  'The STRUCTURE is organized into',
-  'MAIN sections or layers.',
-  'At the TOP,',
-  'is POSITIONED,',
-  'representing',
-  'In the MIDDLE portion,',
-  'and',
-  'are DISPLAYED,',
-  'indicating',
-  'At the BASE or BOTTOM,',
-  'APPEARS,',
-  'showing',
-  'Additionally,',
-  'VARIOUS labels and VISUAL elements',
-  'provide DETAILED information about',
-  'In CONCLUSION,',
-  'this diagram EFFECTIVELY explains',
-  'the STRUCTURE and COMPONENTS',
-  'of'
-];
-
-// Template C: Flow Charts/Processes
-const TEMPLATE_C_PATTERNS = [
-  'This FLOW chart',
-  'DEPICTS the PROCESS of',
-  'INITIALLY,',
-  'the process COMMENCES with',
-  'which serves as the STARTING point.',
-  'SUBSEQUENTLY,',
-  'OCCURS as the NEXT stage,',
-  'involving',
-  'Following THAT,',
-  'TAKES place,',
-  'which LEADS to',
-  'In the FINAL stage,',
-  'REPRESENTS the CONCLUSION',
-  'of this systematic PROCESS.',
-  'In SUMMARY,',
-  'these SEQUENTIAL steps',
-  'clearly DEMONSTRATE',
-  'how',
-  'OPERATES effectively.'
-];
-
-// Template D: Photos/Scenes
-const TEMPLATE_D_PATTERNS = [
-  'This PHOTOGRAPH',
-  'ILLUSTRATES information about',
-  'In the FOREGROUND,',
-  'APPEARS as the PRIMARY focus,',
-  'showing',
-  'Just ADJACENT to that,',
-  'and',
-  'provide ADDITIONAL context',
-  'to the SCENE.',
-  'In the BACKGROUND,',
-  'CREATE the environmental SETTING,',
-  'featuring',
-  'Additionally,',
-  'CONTRIBUTE to the OVERALL composition.',
-  'In CONCLUSION,',
-  'this image EFFECTIVELY captures'
-];
-
-// Template E: Maps
-const TEMPLATE_E_PATTERNS = [
-  'This MAP',
-  'PRESENTS geographical information',
-  'REGARDING',
-  'In the NORTHERN section,',
-  'is SITUATED,',
-  'featuring',
-  'Proceeding to the CENTRAL area,',
-  'APPEARS',
-  'with',
-  'In the SOUTHERN portion,',
-  'is LOCATED',
-  'at approximately',
-  'NOTABLY,',
-  'and',
-  'MARK significant GEOGRAPHICAL locations',
-  'throughout the REGION.',
-  'OVERALL,',
-  'this map COMPREHENSIVELY displays',
-  'the spatial DISTRIBUTION',
-  'of'
-];
-
-const ALL_TEMPLATES = {
-  A: TEMPLATE_A_PATTERNS,
-  B: TEMPLATE_B_PATTERNS,
-  C: TEMPLATE_C_PATTERNS,
-  D: TEMPLATE_D_PATTERNS,
-  E: TEMPLATE_E_PATTERNS,
-  F: TEMPLATE_F_PATTERNS
-};
 
 export interface TextSegment {
   text: string;
-  type: 'template' | 'variable' | 'stress';
-  isStress?: boolean;
+  type: 'template' | 'variable';
+  isStress: boolean;
+}
+
+// Common template phrases (case-insensitive matching)
+const COMMON_TEMPLATE_PHRASES = [
+  // Universal
+  'this',
+  'illustrates information',
+  'regarding',
+  'about',
+  
+  // Data description
+  'at the top',
+  'demonstrates the highest value',
+  'which is approximately',
+  'following that',
+  'shows around',
+  'representing the',
+  'second-highest figure',
+  'conversely',
+  'indicates the lowest value',
+  'at approximately',
+  'additionally',
+  'and',
+  'also contribute significantly',
+  'to the data analysis',
+  'in conclusion',
+  'this chart presents comprehensive data',
+  'demonstrating clear variations',
+  'in',
+  
+  // Comparisons
+  'presents statistical data',
+  'comparing',
+  'when examining',
+  'leads',
+  'shows the lowest value',
+  'at around',
+  'switching to',
+  'represents the highest figure',
+  'furthermore',
+  'also demonstrate notable values',
+  'across both categories',
+  'overall',
+  'this data clearly illustrates',
+  'the comparative analysis',
+  'between',
+  
+  // Diagrams
+  'this diagram',
+  'the structure is organized into',
+  'main sections or layers',
+  'is positioned',
+  'are displayed',
+  'indicating',
+  'at the base or bottom',
+  'appears',
+  'showing',
+  'various labels and visual elements',
+  'provide detailed information about',
+  'this diagram effectively explains',
+  'the structure and components',
+  'of',
+  
+  // Process
+  'this flow chart',
+  'depicts the process of',
+  'initially',
+  'the process commences with',
+  'which serves as the starting point',
+  'subsequently',
+  'occurs as the next stage',
+  'involving',
+  'takes place',
+  'which leads to',
+  'in the final stage',
+  'represents the conclusion',
+  'of this systematic process',
+  'in summary',
+  'these sequential steps',
+  'clearly demonstrate',
+  'how',
+  'operates effectively',
+  
+  // Photos
+  'this photograph',
+  'in the foreground',
+  'appears as the primary focus',
+  'just adjacent to that',
+  'provide additional context',
+  'to the scene',
+  'in the background',
+  'create the environmental setting',
+  'featuring',
+  'contribute to the overall composition',
+  'this image effectively captures',
+  
+  // Maps
+  'this map',
+  'presents geographical information',
+  'in the northern section',
+  'is situated',
+  'proceeding to the central area',
+  'with',
+  'in the southern portion',
+  'is located',
+  'notably',
+  'mark significant geographical locations',
+  'throughout the region',
+  'this map comprehensively displays',
+  'the spatial distribution'
+];
+
+/**
+ * Check if a word/phrase is all uppercase (STRESS word)
+ */
+function isStressWord(text: string): boolean {
+  // Match words that have 2+ consecutive uppercase letters
+  return /[A-Z]{2,}/.test(text);
 }
 
 /**
- * Parse text to identify template phrases, variable content, and stress words
+ * Check if text matches a template phrase (case-insensitive)
  */
-export function parseTemplateText(text: string, template: string = 'A'): TextSegment[] {
+function isTemplatePhrase(text: string): boolean {
+  const normalized = text.toLowerCase().trim();
+  
+  // Check exact matches
+  for (const phrase of COMMON_TEMPLATE_PHRASES) {
+    if (normalized === phrase.toLowerCase()) {
+      return true;
+    }
+  }
+  
+  // Check if it's a common template word
+  const templateWords = ['this', 'the', 'and', 'to', 'of', 'in', 'at', 'with', 'which', 'is'];
+  if (templateWords.includes(normalized)) {
+    return true;
+  }
+  
+  return false;
+}
+
+/**
+ * Parse text into segments with proper classification
+ */
+export function parseTemplateText(text: string, _template: string = 'A'): TextSegment[] {
   const segments: TextSegment[] = [];
-  const patterns = ALL_TEMPLATES[template as keyof typeof ALL_TEMPLATES] || TEMPLATE_A_PATTERNS;
   
-  let remainingText = text;
-  let currentIndex = 0;
+  // Split by spaces and punctuation, keeping delimiters
+  const tokens = text.split(/(\s+|[,.])/);
   
-  while (remainingText.length > 0) {
-    let matched = false;
+  let currentPhrase: string[] = [];
+  let currentType: 'template' | 'variable' | null = null;
+  
+  for (let i = 0; i < tokens.length; i++) {
+    const token = tokens[i];
     
-    // Try to match template patterns
-    for (const pattern of patterns) {
-      const regex = new RegExp(`^${escapeRegex(pattern)}`, 'i');
-      const match = remainingText.match(regex);
-      
-      if (match) {
-        const matchedText = match[0];
+    // Skip empty or undefined tokens
+    if (!token || token.trim() === '') {
+      if (currentPhrase.length > 0 && token) {
+        currentPhrase.push(token);
+      }
+      continue;
+    }
+    
+    // Check if this token is a template phrase
+    const isTemplate = isTemplatePhrase(token);
+    
+    // If type changes or we hit punctuation, flush current phrase
+    if ((currentType !== null && isTemplate !== (currentType === 'template')) || 
+        token === ',' || token === '.') {
+      if (currentPhrase.length > 0) {
+        const phraseText = currentPhrase.join('');
         segments.push({
-          text: matchedText,
-          type: 'template',
-          isStress: hasStressWords(matchedText)
+          text: phraseText,
+          type: currentType || 'variable',
+          isStress: isStressWord(phraseText)
         });
-        
-        remainingText = remainingText.slice(matchedText.length).trimStart();
-        currentIndex += matchedText.length;
-        matched = true;
-        break;
+        currentPhrase = [];
+      }
+      
+      // Add punctuation as separate segment
+      if (token === ',' || token === '.') {
+        currentType = null;
+        continue;
       }
     }
     
-    // If no template match, extract next word/phrase as variable content
-    if (!matched) {
-      const nextPause = remainingText.indexOf('|');
-      const nextSpace = remainingText.indexOf(' ');
-      
-      let endIndex;
-      if (nextPause >= 0 && (nextSpace < 0 || nextPause < nextSpace)) {
-        endIndex = nextPause;
-      } else if (nextSpace >= 0) {
-        endIndex = nextSpace;
-      } else {
-        endIndex = remainingText.length;
-      }
-      
-      const word = remainingText.slice(0, endIndex).trim();
-      if (word) {
-        segments.push({
-          text: word,
-          type: 'variable',
-          isStress: hasStressWords(word)
-        });
-      }
-      
-      remainingText = remainingText.slice(endIndex + 1).trimStart();
+    // Start new phrase or continue current
+    if (currentPhrase.length === 0) {
+      currentType = isTemplate ? 'template' : 'variable';
     }
+    
+    currentPhrase.push(token);
+  }
+  
+  // Flush remaining phrase
+  if (currentPhrase.length > 0) {
+    const phraseText = currentPhrase.join('');
+    segments.push({
+      text: phraseText,
+      type: currentType || 'variable',
+      isStress: isStressWord(phraseText)
+    });
   }
   
   return segments;
-}
-
-/**
- * Check if text contains stress words (all caps words)
- */
-function hasStressWords(text: string): boolean {
-  // Match words that are all uppercase (2+ letters)
-  return /\b[A-Z]{2,}\b/.test(text);
-}
-
-/**
- * Escape special regex characters
- */
-function escapeRegex(str: string): string {
-  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-}
-
-/**
- * Render text with color coding
- */
-export function renderColorCodedText(text: string, template: string = 'A', showColors: boolean = true): string {
-  if (!showColors) {
-    return text;
-  }
-  
-  const segments = parseTemplateText(text, template);
-  
-  return segments.map(segment => {
-    let className = '';
-    
-    if (segment.type === 'template') {
-      className = 'template-phrase';
-    } else if (segment.type === 'variable') {
-      className = 'variable-content';
-    }
-    
-    if (segment.isStress) {
-      className += ' stress-word';
-    }
-    
-    return `<span class="${className}">${segment.text}</span>`;
-  }).join(' ');
 }
 
 /**
@@ -272,15 +226,21 @@ export function renderColorCodedText(text: string, template: string = 'A', showC
 export function parseAnswerForDisplay(fullText: string, template: string = 'A'): {
   sentences: Array<{ text: string; segments: TextSegment[] }>;
 } {
-  // Split by newlines to get sentences
-  const sentences = fullText
-    .split('\n')
-    .filter(line => line.trim().length > 0)
-    .map(sentence => ({
-      text: sentence,
-      segments: parseTemplateText(sentence, template)
-    }));
+  // Split by newlines and pipes to get logical segments
+  const lines = fullText
+    .split(/\n+/)
+    .map(line => line.trim())
+    .filter(line => line.length > 0);
+  
+  const sentences = lines.map(line => {
+    // Remove pipes but keep the text
+    const cleanLine = line.replace(/\s*\|\s*/g, ' ').trim();
+    
+    return {
+      text: cleanLine,
+      segments: parseTemplateText(cleanLine, template)
+    };
+  });
   
   return { sentences };
 }
-

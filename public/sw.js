@@ -2,8 +2,13 @@
 // Handles offline caching and PWA functionality
 // Updated for React + Vite build
 
+<<<<<<< HEAD
 // Version 73 - Fix playback speed and normalize all-caps pronunciation
 const CACHE_VERSION = 'v73';
+=======
+// Version 74 - Add default selections for all study types and dropdown placeholders
+const CACHE_VERSION = 'v74';
+>>>>>>> claude/fix-ui-vocabulary-books
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

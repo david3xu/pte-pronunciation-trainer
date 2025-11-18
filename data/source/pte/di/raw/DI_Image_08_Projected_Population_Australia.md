@@ -28,7 +28,7 @@ Furthermore, | [Series C] | and [TWENTY forty-one] |
 also DEMONSTRATE notable VALUES | across BOTH categories.
 
 OVERALL, | this data CLEARLY illustrates | 
-the COMPARATIVE analysis | between [the three population projections].
+the COMPARATIVE analysis | between [the projected population series].
 ```
 
 ---

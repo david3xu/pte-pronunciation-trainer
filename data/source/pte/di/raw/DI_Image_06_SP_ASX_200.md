@@ -28,7 +28,7 @@ Additionally, | [ELEVEN o'clock] | and [ONE thirty] |
 also contribute SIGNIFICANTLY | to the data ANALYSIS.
 
 In CONCLUSION, | this chart PRESENTS comprehensive DATA | 
-demonstrating CLEAR variations | in [stock market performance].
+demonstrating CLEAR variations | in [the S and P ASX TWO hundred].
 ```
 
 ---

@@ -28,7 +28,7 @@ Additionally, | [grade EIGHT] | and [grade NINE] |
 also contribute SIGNIFICANTLY | to the data ANALYSIS.
 
 In CONCLUSION, | this chart PRESENTS comprehensive DATA | 
-demonstrating CLEAR variations | in [academic performance].
+demonstrating CLEAR variations | in [Jill's secondary math scores].
 ```
 
 ---

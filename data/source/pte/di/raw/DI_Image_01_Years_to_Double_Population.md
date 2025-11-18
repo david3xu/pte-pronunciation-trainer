@@ -27,7 +27,7 @@ Additionally, | [NINETEEN hundred] | and [NINETEEN sixty] |
 also contribute SIGNIFICANTLY | to the data ANALYSIS.
 
 In CONCLUSION, | this chart PRESENTS comprehensive DATA | 
-demonstrating CLEAR variations | in [population growth rates].
+demonstrating CLEAR variations | in [years to double population].
 ```
 
 ---

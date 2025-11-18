@@ -28,7 +28,7 @@ Furthermore, | [the lakes] | and [NINETEEN ninety-two] |
 also DEMONSTRATE notable VALUES | across BOTH categories.
 
 OVERALL, | this data CLEARLY illustrates | 
-the COMPARATIVE analysis | between [the three tourist areas].
+the COMPARATIVE analysis | between [the three different areas].
 ```
 
 ---

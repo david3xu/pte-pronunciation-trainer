@@ -609,6 +609,12 @@ export class TTSEngine {
     // Remove extra whitespace and normalize
     let cleanText = text.trim().replace(/\s+/g, ' ');
 
+    // Normalize all-caps words to prevent letter-by-letter pronunciation
+    // Convert ALL CAPS to Title Case for natural speech (e.g., "TOP" -> "Top")
+    cleanText = cleanText.replace(/\b[A-Z]{2,}\b/g, (match) => {
+      return match.charAt(0) + match.slice(1).toLowerCase();
+    });
+
     // Handle common abbreviations and symbols
     cleanText = cleanText
       .replace(/\b&\b/g, 'and')

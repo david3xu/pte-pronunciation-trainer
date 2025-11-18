@@ -2,8 +2,8 @@
 // Handles offline caching and PWA functionality
 // Updated for React + Vite build
 
-// Version 79 - Import shadowing.css (critical fix - CSS was never loaded!)
-const CACHE_VERSION = 'v79';
+// Version 80 - Fix multi-word template phrase matching + word-by-word stress detection
+const CACHE_VERSION = 'v80';
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

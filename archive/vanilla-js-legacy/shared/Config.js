@@ -43,6 +43,9 @@ export class AppConfig {
                         'pte-reading-fib-drag': 'data/processed/pte-reading-fib-drag-vocabulary.json',
                         'pte-asq-answers': 'data/processed/pte-asq-answers-vocabulary.json',
                         'pte-high-frequency': 'data/processed/pte-high-frequency-vocabulary.json',
+                        'pte-rs-core': 'data/processed/pte-rs-core-vocabulary.json',
+                        'pte-di-rl-templates': 'data/processed/pte-di-rl-templates-vocabulary.json',
+                        'pte-sst-complete': 'data/processed/pte-sst-complete-vocabulary.json',
                         // Practice modes
                         'rs': 'data/processed/pte-repeat-sentence.json',
                         'asq': 'data/processed/pte-answer-short-question.json',
@@ -50,20 +53,23 @@ export class AppConfig {
                     }
                 },
                 learningModes: [
-                    // Vocabulary books (13 total)
+                    // Vocabulary books (16 total)
                     { id: 'pte-fib-listening', name: 'PTE FIB Listening', category: 'vocabulary', difficulty: 'normal' },
                     { id: 'pte-beginner', name: 'PTE Beginner', category: 'vocabulary', difficulty: 'easy' },
                     { id: 'pte-intermediate', name: 'PTE Intermediate', category: 'vocabulary', difficulty: 'normal' },
                     { id: 'pte-advanced', name: 'PTE Advanced', category: 'vocabulary', difficulty: 'hard' },
                     { id: 'pte-ra', name: 'PTE Read Aloud', category: 'vocabulary', difficulty: 'normal' },
-                    { id: 'pte-rs-vocab', name: 'PTE RS Vocab', category: 'vocabulary', difficulty: 'normal' },
+                    { id: 'pte-rs-vocab', name: 'PTE RS Vocabulary', category: 'vocabulary', difficulty: 'normal' },
                     { id: 'pte-must-know', name: 'PTE Must-Know', category: 'vocabulary', difficulty: 'normal' },
-                    { id: 'pte-wfd-vocab', name: 'PTE WFD Vocab', category: 'vocabulary', difficulty: 'normal' },
-                    { id: 'pte-rs-wfd-vocab', name: 'PTE RS-WFD Vocab', category: 'vocabulary', difficulty: 'normal' },
+                    { id: 'pte-wfd-vocab', name: 'PTE WFD Vocabulary', category: 'vocabulary', difficulty: 'normal' },
+                    { id: 'pte-rs-wfd-vocab', name: 'PTE RS-WFD Vocabulary', category: 'vocabulary', difficulty: 'normal' },
                     { id: 'pte-reading-fib', name: 'PTE Reading FIB', category: 'vocabulary', difficulty: 'normal' },
                     { id: 'pte-reading-fib-drag', name: 'PTE Reading FIB Drag', category: 'vocabulary', difficulty: 'normal' },
                     { id: 'pte-asq-answers', name: 'PTE ASQ Answers', category: 'vocabulary', difficulty: 'easy' },
                     { id: 'pte-high-frequency', name: 'PTE High-Frequency', category: 'vocabulary', difficulty: 'normal' },
+                    { id: 'pte-rs-core', name: 'PTE RS Core', category: 'vocabulary', difficulty: 'normal' },
+                    { id: 'pte-di-rl-templates', name: 'PTE DI/RL Templates', category: 'vocabulary', difficulty: 'normal' },
+                    { id: 'pte-sst-complete', name: 'PTE SST Complete', category: 'vocabulary', difficulty: 'normal' },
                     // Practice modes (3 total)
                     { id: 'rs', name: 'Repeat Sentence', category: 'practice', description: '620 practice sentences' },
                     { id: 'asq', name: 'Answer Short Question', category: 'practice', description: '692 practice questions' },

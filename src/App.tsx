@@ -134,7 +134,23 @@ const App: React.FC = () => {
 
         const data = await response.json();
         // Shadowing modes use 'answers' instead of 'vocabulary'
-        const items = data.vocabulary || data.answers || [];
+        let items = data.vocabulary || data.answers || [];
+
+        // Transform shadowing items to be compatible with vocabulary UI
+        if (data.answers) {
+          items = items.map((answer: any) => ({
+            english: answer.title || answer.fullText?.substring(0, 50),
+            pronunciation: {
+              british: { ipa: '', phonetic: 'DI Answer' },
+              american: { ipa: '', phonetic: 'DI Answer' }
+            },
+            difficulty: 'normal',
+            category: vocabularyBook,
+            source: vocabularyBook,
+            // Keep original shadowing data
+            ...answer
+          }));
+        }
 
         console.log(`Loaded ${items.length} items (${data.vocabulary ? 'vocabulary' : 'shadowing'})`);
         console.log('First item:', items[0]);

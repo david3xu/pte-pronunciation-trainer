@@ -17,6 +17,7 @@ import { ttsEngine } from '../../ts/audio/TTSEngine';
 import type { SessionManager } from '../../services/session/sessionManager';
 import type { ItemType } from '../../types/database';
 import { parseAnswerForDisplay } from '../../ts/utils/templateParser';
+import '../../css/shadowing.css'; // Import shadowing styles
 
 interface WordCardProps {
   item: VocabularyTerm | PracticeItem;

@@ -192,7 +192,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                 </Text>
                 <Select.Root
                   value={practiceType}
-                  onValueChange={(value: 'vocabulary' | 'practice') =>
+                  onValueChange={(value: 'vocabulary' | 'practice' | 'shadowing') =>
                     updateSetting('practiceType', value)
                   }
                 >
@@ -200,6 +200,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                   <Select.Content>
                     <Select.Item value="vocabulary">📚 Vocabulary Learning</Select.Item>
                     <Select.Item value="practice">🎯 Task Practice (RS/ASQ/WFD)</Select.Item>
+                    <Select.Item value="shadowing">🎤 Shadowing Practice (DI)</Select.Item>
                   </Select.Content>
                 </Select.Root>
               </Flex>
@@ -262,11 +263,26 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                         <Select.Item value="pte-di-rl-templates">PTE DI/RL Templates</Select.Item>
                         <Select.Item value="pte-sst-complete">PTE SST Complete</Select.Item>
                       </Select.Group>
-                      <Select.Group>
-                        <Select.Label>Shadowing Practice</Select.Label>
-                        <Select.Item value="di-shadowing-1-10">DI Shadowing (Images 1-10)</Select.Item>
-                        <Select.Item value="di-shadowing-11-20">DI Shadowing (Images 11-20)</Select.Item>
-                      </Select.Group>
+                    </Select.Content>
+                  </Select.Root>
+                </Flex>
+              )}
+
+              {/* Shadowing Mode (if shadowing type selected) */}
+              {practiceType === 'shadowing' && (
+                <Flex direction="column" gap="2">
+                  <Text size="3" weight="medium">Shadowing Mode</Text>
+                  <Text size="2" color="gray" mb="1">
+                    Practice DI answers with continuous speech
+                  </Text>
+                  <Select.Root
+                    value={vocabularyBook}
+                    onValueChange={(value) => handleVocabularyBookChange(value)}
+                  >
+                    <Select.Trigger />
+                    <Select.Content>
+                      <Select.Item value="di-shadowing-1-10">🖼️ DI Shadowing (Images 1-10) - 10 answers</Select.Item>
+                      <Select.Item value="di-shadowing-11-20">🖼️ DI Shadowing (Images 11-20) - 10 answers</Select.Item>
                     </Select.Content>
                   </Select.Root>
                 </Flex>

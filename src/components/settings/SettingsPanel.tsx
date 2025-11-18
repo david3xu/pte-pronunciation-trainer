@@ -67,6 +67,11 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
         'pte-asq-answers': '/data/processed/pte-asq-answers-vocabulary.json',
         'pte-high-frequency': '/data/processed/pte-high-frequency-vocabulary.json',
         'pte-rs-core': '/data/processed/pte-rs-core-vocabulary.json',
+        'pte-di-rl-templates': '/data/processed/pte-di-rl-templates-vocabulary.json',
+        'pte-sst-complete': '/data/processed/pte-sst-complete-vocabulary.json',
+        // Shadowing modes
+        'di-shadowing-1-10': '/data/processed/di-shadowing-images-1-10.json',
+        'di-shadowing-11-20': '/data/processed/di-shadowing-images-11-20.json',
       };
 
       const dataPath = dataPathMap[bookId] || `/data/processed/${bookId}-vocabulary.json`;

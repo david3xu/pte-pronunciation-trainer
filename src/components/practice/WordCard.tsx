@@ -456,7 +456,7 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
               </div>
 
               {/* Answer Text with Color Coding */}
-              <div className={`answer-text ${!showTemplateColors ? 'no-colors' : ''}`} style={{ lineHeight: '2', fontSize: '1.1rem' }}>
+              <div className={`answer-text ${!showTemplateColors ? 'no-colors' : ''}`} style={{ lineHeight: '2', fontSize: '1.1rem', color: '#e5e7eb' }}>
                 {parsed.sentences.map((sentence, sentenceIdx) => (
                   <div key={sentenceIdx} style={{ marginBottom: '1rem' }}>
                     {sentence.segments.map((segment, segmentIdx) => {
@@ -465,6 +465,16 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
                         if (segment.type === 'template') classes.push('template-phrase');
                         if (segment.type === 'variable') classes.push('variable-content');
                         if (segment.isStress) classes.push('stress-word');
+                      }
+                      
+                      // Debug log for first sentence
+                      if (sentenceIdx === 0 && segmentIdx < 3) {
+                        console.log(`[WordCard] Segment ${segmentIdx}:`, {
+                          text: segment.text,
+                          type: segment.type,
+                          isStress: segment.isStress,
+                          classes: classes.join(' ')
+                        });
                       }
                       
                       const style: React.CSSProperties = showTemplateColors ? {} : {

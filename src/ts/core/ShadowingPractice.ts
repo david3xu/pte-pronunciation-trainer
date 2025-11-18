@@ -86,12 +86,14 @@ export class ShadowingPractice {
       
       this.dataset = await response.json();
       
-      this.eventBus.emit('shadowing:dataset:loaded', {
-        totalAnswers: this.dataset.answers.length,
-        category: this.dataset.metadata.category
-      });
-      
-      console.log(`✅ Loaded ${this.dataset.answers.length} DI answers for shadowing`);
+      if (this.dataset) {
+        this.eventBus.emit('shadowing:dataset:loaded', {
+          totalAnswers: this.dataset.answers.length,
+          category: this.dataset.metadata.category
+        });
+        
+        console.log(`✅ Loaded ${this.dataset.answers.length} DI answers for shadowing`);
+      }
     } catch (error) {
       console.error('❌ Error loading shadowing dataset:', error);
       this.eventBus.emit('shadowing:error', { error });
@@ -106,7 +108,8 @@ export class ShadowingPractice {
     if (!this.dataset || this.state.currentAnswerIndex >= this.dataset.answers.length) {
       return null;
     }
-    return this.dataset.answers[this.state.currentAnswerIndex];
+    const answer = this.dataset.answers[this.state.currentAnswerIndex];
+    return answer || null;
   }
 
   /**
@@ -245,7 +248,7 @@ export class ShadowingPractice {
       window.speechSynthesis.cancel();
     }
 
-    this.eventBus.emit('shadowing:playback:paused');
+    this.eventBus.emit('shadowing:playback:paused', undefined);
   }
 
   /**
@@ -272,7 +275,7 @@ export class ShadowingPractice {
       window.speechSynthesis.cancel();
     }
 
-    this.eventBus.emit('shadowing:playback:stopped');
+    this.eventBus.emit('shadowing:playback:stopped', undefined);
   }
 
   /**

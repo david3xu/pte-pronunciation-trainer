@@ -2,8 +2,8 @@
 // Handles offline caching and PWA functionality
 // Updated for React + Vite build
 
-// Version 85 - Fluency-Optimized DI Templates (improved speaking flow for all 20 answers)
-const CACHE_VERSION = 'v85';
+// Version 86 - Updated DI Template Vocabulary (fluency-optimized IPA pronunciations, 83 terms)
+const CACHE_VERSION = 'v86';
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

@@ -8,7 +8,6 @@
 import type {
   VocabularyCategory,
   PracticeMode,
-  ShadowingCategory,
   Difficulty,
   DatasetRegistryEntry
 } from './dataset.types';

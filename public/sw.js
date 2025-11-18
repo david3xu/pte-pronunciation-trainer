@@ -2,8 +2,8 @@
 // Handles offline caching and PWA functionality
 // Updated for React + Vite build
 
-// Version 76 - Add template color coding for DI shadowing practice
-const CACHE_VERSION = 'v76';
+// Version 77 - Fix template parser for color coding
+const CACHE_VERSION = 'v77';
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

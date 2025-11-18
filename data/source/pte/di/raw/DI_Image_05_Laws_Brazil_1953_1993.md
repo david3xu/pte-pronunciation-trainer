@@ -10,25 +10,25 @@
 
 ---
 
-## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (90 words, 38-40 seconds)
+## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (85 words, 36-38 seconds)
 
 ```
-This [LINE graph] | ILLUSTRATES information | REGARDING [the number of laws in Brazil].
+This [LINE graph] ILLUSTRATES information REGARDING [the number of laws in Brazil].
 
-At the TOP, | [in NINETEEN ninety-three] | DEMONSTRATES the HIGHEST value, | 
-which is approximately [TWO thousand TWO hundred laws].
+At the TOP [in NINETEEN ninety-three] SHOWS the HIGHEST value |
+of around [TWO thousand TWO hundred laws].
 
-Following THAT, | [in NINETEEN eighty-three] | SHOWS around [ONE thousand laws], | 
+Following THAT [in NINETEEN eighty-three] SHOWS about [ONE thousand laws] |
 representing the SECOND-highest figure.
 
-Conversely, | [in NINETEEN fifty-three] | INDICATES the LOWEST value | 
-at approximately [ONE hundred laws].
+On the other END [in NINETEEN fifty-three] SHOWS the LOWEST value |
+at around [ONE hundred laws].
 
-Additionally, | [NINETEEN sixty-three] | and [NINETEEN seventy-three] | 
-also contribute SIGNIFICANTLY | to the data ANALYSIS.
+Worth noting [NINETEEN sixty-three] and [NINETEEN seventy-three] |
+also contribute to the data ANALYSIS.
 
-In CONCLUSION, | this chart PRESENTS comprehensive DATA | 
-demonstrating CLEAR variations | in [the number of laws in Brazil].
+In CONCLUSION this chart PRESENTS comprehensive DATA |
+demonstrating CLEAR variations in [the number of laws in Brazil].
 ```
 
 ---

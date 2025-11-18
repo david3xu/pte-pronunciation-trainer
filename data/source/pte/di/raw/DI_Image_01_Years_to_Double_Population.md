@@ -9,25 +9,25 @@
 
 ---
 
-## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (90 words, 38-40 seconds)
+## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (85 words, 36-38 seconds)
 
 ```
-This [LINE graph] | ILLUSTRATES information | REGARDING [years to double population].
+This [LINE graph] ILLUSTRATES information REGARDING [years to double population].
 
-At the TOP, | [in SEVENTEEN hundred] | DEMONSTRATES the HIGHEST value, | 
-which is approximately [FIVE hundred and FORTY-four years].
+At the TOP [in SEVENTEEN hundred] SHOWS the HIGHEST value |
+of around [FIVE hundred and FORTY-four years].
 
-Following THAT, | [in EIGHTEEN hundred] | SHOWS around [THREE hundred and NINETY-four years], | 
+Following THAT [in EIGHTEEN hundred] SHOWS about [THREE hundred and NINETY-four years] |
 representing the SECOND-highest figure.
 
-Conversely, | [in TWO thousand and TWENTY] | INDICATES the LOWEST value | 
-at approximately [SIXTY years].
+On the other END [in TWO thousand and TWENTY] SHOWS the LOWEST value |
+at around [SIXTY years].
 
-Additionally, | [NINETEEN hundred] | and [NINETEEN sixty] | 
-also contribute SIGNIFICANTLY | to the data ANALYSIS.
+Worth noting [NINETEEN hundred] and [NINETEEN sixty] |
+also contribute to the data ANALYSIS.
 
-In CONCLUSION, | this chart PRESENTS comprehensive DATA | 
-demonstrating CLEAR variations | in [years to double population].
+In CONCLUSION this chart PRESENTS comprehensive DATA |
+demonstrating CLEAR variations in [years to double population].
 ```
 
 ---

@@ -10,25 +10,21 @@
 
 ---
 
-## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (92 words, 38-40 seconds)
+## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (88 words, 36-38 seconds)
 
 ```
-This [LINE graph] | PRESENTS statistical data | COMPARING [median and average prices].
+This [LINE graph] ILLUSTRATES information REGARDING [median and average sales prices of new homes sold in US].
 
-When EXAMINING [median prices], | [the TWO thousand and SEVEN period] | LEADS | 
-at approximately [TWO hundred and FIFTY thousand dollars].
+Looking at [median prices] [the TWO thousand and SEVEN period] SHOWS the HIGHEST value |
+at around [TWO hundred and FIFTY thousand dollars] |
+while [the NINETEEN sixty-three period] SHOWS the LOWEST at about [TWENTY thousand dollars].
 
-Conversely, | [the NINETEEN sixty-three period] | shows the LOWEST value | 
-at around [TWENTY thousand dollars].
+Switching to [average prices] [the TWO thousand and SEVEN period] LEADS this group |
+at around [THREE hundred thousand dollars] |
+followed by [NINETEEN ninety] at about [TWO hundred thousand dollars].
 
-SWITCHING to [average prices], | [the TWO thousand and SEVEN period] | REPRESENTS the highest figure | 
-at approximately [THREE hundred thousand dollars].
-
-Furthermore, | [NINETEEN ninety] | and [TWO thousand] | 
-also DEMONSTRATE notable VALUES | across BOTH categories.
-
-OVERALL, | this data CLEARLY illustrates | 
-the COMPARATIVE analysis | between [median and average sales prices of new homes sold in US].
+In CONCLUSION this chart PRESENTS |
+the COMPARATIVE analysis between [median and average sales prices of new homes sold in US].
 ```
 
 ---

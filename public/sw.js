@@ -2,8 +2,8 @@
 // Handles offline caching and PWA functionality
 // Updated for React + Vite build
 
-// Version 78 - Force CSS with !important to fix color display
-const CACHE_VERSION = 'v78';
+// Version 79 - Import shadowing.css (critical fix - CSS was never loaded!)
+const CACHE_VERSION = 'v79';
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

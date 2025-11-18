@@ -2,8 +2,8 @@
 // Handles offline caching and PWA functionality
 // Updated for React + Vite build
 
-// Version 67 - React/Vite compatibility update
-const CACHE_VERSION = 'v67';
+// Version 68 - Force refresh for shadowing mode data paths fix
+const CACHE_VERSION = 'v68';
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

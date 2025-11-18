@@ -83,9 +83,10 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
       }
 
       const data = await response.json();
-      const items = data.vocabulary || [];
+      // Shadowing modes use 'answers' instead of 'vocabulary'
+      const items = data.vocabulary || data.answers || [];
 
-      console.log(`[SettingsPanel] Loaded ${items.length} vocabulary items`);
+      console.log(`[SettingsPanel] Loaded ${items.length} items (${data.vocabulary ? 'vocabulary' : 'shadowing'})`);
       setDataset(items, bookId); // Now atomically sets currentItem and resets index
 
       // Reapply difficulty filter to new book

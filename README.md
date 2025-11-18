@@ -1,13 +1,17 @@
 # PTE Pronunciation Trainer
 
-A specialized web-based pronunciation training application for **PTE exam preparation**, featuring comprehensive vocabulary (13,000+ words), practice modes for speaking/listening sections, and cloud sync capabilities.
+A specialized web-based pronunciation training application for **PTE exam preparation**, featuring comprehensive vocabulary (13,000+ words), practice modes for speaking/listening sections, DI shadowing practice, and cloud sync capabilities.
 
 **✅ v3.0.0 - AI-POWERED (November 2025)**
 
 **Latest Updates:**
-- 🤖 **NEW:** AI Tutor Chat with Google Gemini (100% FREE!)
-- 🔊 **NEW:** Premium TTS with AWS Polly (18 neural voices)
-- 🎯 **NEW:** AI-Powered Recommendations (FREE with Gemini)
+- 🎤 **NEW:** DI Shadowing Practice - Practice Describe Image answers with continuous, fluent speech
+- ⚙️ **NEW:** Smart defaults - Auto-selects appropriate content when switching study types
+- 🎚️ **FIXED:** Playback speed slider now works (0.5x - 2.0x adjustable TTS speed)
+- 🗣️ **IMPROVED:** All-caps words now pronounced naturally (e.g., "TOP" sounds like "Top" not "T-O-P")
+- 🤖 **AI:** AI Tutor Chat with Google Gemini (100% FREE!)
+- 🔊 **AI:** Premium TTS with AWS Polly (18 neural voices)
+- 🎯 **AI:** AI-Powered Recommendations (FREE with Gemini)
 - ✅ React + TypeScript migration complete (100%)
 - ✅ Supabase cloud sync ready
 
@@ -15,7 +19,7 @@ A specialized web-based pronunciation training application for **PTE exam prepar
 
 ## 🎯 Key Features
 
-### 📚 **13 Vocabulary Books (13,000+ Terms with IPA)**
+### 📚 **16 Vocabulary Books (13,800+ Terms with IPA)**
 
 - 🎧 **FIB Listening** - 990 fill-in-the-blank terms
 - 📗 **Beginner** - 383 high-frequency terms
@@ -30,12 +34,33 @@ A specialized web-based pronunciation training application for **PTE exam prepar
 - ❓ **ASQ Answers** - 627 Answer Short Question terms
 - 🔊 **RS-WFD Combined** - Combined RS/WFD vocabulary
 - 🌟 **High-Frequency** - Most commonly tested words
+- 🎙️ **RS Core** - 222 core Repeat Sentence vocabulary
+- 🗣️ **DI/RL Templates** - 106 Describe Image & Retell Lecture templates
+- 📝 **SST Complete** - 368 Summarize Spoken Text vocabulary
 
-### 🎤 **3 Practice Modes (2,507 Sentences/Questions)**
+### 🎤 **4 Study Types**
 
+#### **📚 Vocabulary Learning** (16 books, 13,800+ terms)
+- Study individual words with IPA pronunciation
+- Dual format: British + American IPA
+- Difficulty filtering (Easy, Normal, Hard)
+- Smart defaults: Auto-loads "PTE FIB Listening" by default
+
+#### **🎯 Task Practice** (2,507 sentences/questions)
 - 🎤 **Repeat Sentence** - 620 practice sentences
 - ❓ **Answer Short Question** - 692 questions with answers
 - ✍️ **Write From Dictation** - 1,195 dictation sentences
+- Smart defaults: Auto-loads "Repeat Sentence" by default
+
+#### **🎤 DI Shadowing Practice** ✨ NEW (20 answers)
+- 🖼️ **DI Images 1-10** - Practice Describe Image answers with continuous, fluent speech
+- 🖼️ **DI Images 11-20** - Advanced DI answer shadowing
+- **Continuous Speech** - Natural flow without artificial pauses
+- **Real-Time Highlighting** - Follow along as phrases are spoken
+- **Full Answer Display** - See complete answer while practicing
+- **Adjustable Speed** - 0.5x to 2.0x playback control
+- **Natural Pronunciation** - Auto-converts all-caps to natural speech
+- Smart defaults: Auto-loads "DI Images 1-10" by default
 
 ### 🤖 **AI-Powered Features** ✨ NEW (100% FREE!)
 
@@ -86,9 +111,11 @@ A specialized web-based pronunciation training application for **PTE exam prepar
 - **Smart Voice Selection** - Auto-selects best voice
 - **Browser TTS (Free)** - Google UK/US, Microsoft, Apple voices
 - **Premium TTS (Paid)** - AWS Polly neural voices (18 options)
-- **Variable Speed** - 0.7x → 1.0x → 1.3x
+- **Variable Speed** - 0.5x to 2.0x (fully functional slider control)
+- **Natural Speech** - Auto-converts all-caps (TOP → "Top" not "T-O-P")
 - **Dual IPA Format** - British + American pronunciation
-- **Configurable Pauses** - 1s / 2s / 3s
+- **Smart Pauses** - Natural pauses based on | delimiters
+- **Universal Control** - Playback speed applies to ALL study types
 
 ### 📱 **Modern UX**
 
@@ -464,15 +491,17 @@ npm run lint          # Code quality
 ## 📊 Data Overview
 
 ### Vocabulary
-- **13 books** with IPA pronunciation
-- **13,000+ terms** across all difficulty levels
+- **16 books** with IPA pronunciation
+- **13,800+ terms** across all difficulty levels
 - **Dual IPA format** (British + American)
 - **Category-based** filtering
+- **3 specialized books** (RS Core, DI/RL Templates, SST Complete)
 
 ### Practice
 - **620 RS sentences** for pronunciation
 - **692 ASQ questions** with answers
 - **1,195 WFD sentences** for dictation
+- **20 DI answers** for shadowing practice
 
 ### User Data (Supabase)
 - **Profiles** - User accounts
@@ -490,6 +519,11 @@ npm run lint          # Code quality
 - Supabase infrastructure
 - Testing suite
 - Documentation
+- **DI Shadowing Practice mode**
+- **Smart defaults for all study types**
+- **Playback speed control (0.5x - 2.0x)**
+- **Natural all-caps pronunciation**
+- **16 vocabulary books (13,800+ terms)**
 
 ### 🔄 In Progress
 - Manual Supabase testing
@@ -501,6 +535,7 @@ npm run lint          # Code quality
 - Analytics dashboard
 - Community word lists
 - Mobile app (PWA)
+- More DI shadowing content (Images 21-30, 31-40, etc.)
 
 ---
 

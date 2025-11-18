@@ -2,8 +2,8 @@
 // Handles offline caching and PWA functionality
 // Updated for React + Vite build
 
-// Version 82 - Updated DI answers extracted from raw files (corrected values)
-const CACHE_VERSION = 'v82';
+// Version 83 - ZERO INTERPRETATION: Use ONLY exact image text (removed all interpretive terms)
+const CACHE_VERSION = 'v83';
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

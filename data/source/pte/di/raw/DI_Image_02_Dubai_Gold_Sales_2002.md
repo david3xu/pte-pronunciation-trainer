@@ -28,7 +28,7 @@ Additionally, | [JANUARY] | and [DECEMBER] |
 also contribute SIGNIFICANTLY | to the data ANALYSIS.
 
 In CONCLUSION, | this chart PRESENTS comprehensive DATA | 
-demonstrating CLEAR variations | in [gold sales].
+demonstrating CLEAR variations | in [Dubai gold sales].
 ```
 
 ---

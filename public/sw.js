@@ -2,8 +2,8 @@
 // Handles offline caching and PWA functionality
 // Updated for React + Vite build
 
-// Version 74 - Add default selections for all study types and dropdown placeholders
-const CACHE_VERSION = 'v74';
+// Version 75 - Force complete cache invalidation to clear merge conflict artifacts
+const CACHE_VERSION = 'v75';
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

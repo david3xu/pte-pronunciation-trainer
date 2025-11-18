@@ -1,6 +1,10 @@
 {
   "metadata": {
+<<<<<<< HEAD
     "generated": "2025-11-18T03:54:10.387Z",
+=======
+    "generated": "2025-11-18T04:11:54.311Z",
+>>>>>>> claude/fix-ui-vocabulary-books
     "totalTerms": 363,
     "source": "pte-sst-complete",
     "description": "PTE SST (Summarize Spoken Text) complete vocabulary with IPA - ALL 368 terms from 29 topics",

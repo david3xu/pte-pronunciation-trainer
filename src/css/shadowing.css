@@ -298,6 +298,113 @@
   }
 }
 
+/* Template Color Coding */
+.template-phrase {
+  color: #6b7280; /* Gray - memorized template phrases */
+  font-weight: 400;
+}
+
+.variable-content {
+  color: #3b82f6; /* Blue - variable content to fill in */
+  font-weight: 500;
+  background-color: rgba(59, 130, 246, 0.08);
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+}
+
+.stress-word {
+  font-weight: 700 !important;
+  color: #dc2626 !important; /* Red - stress/emphasis */
+}
+
+/* Color Legend */
+.color-legend {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border-radius: 6px;
+  border: 1px solid #bae6fd;
+  font-size: 0.85rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-color {
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.legend-color.template {
+  background-color: #6b7280;
+}
+
+.legend-color.variable {
+  background-color: #3b82f6;
+}
+
+.legend-color.stress {
+  background-color: #dc2626;
+}
+
+.legend-label {
+  color: #374151;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Color Toggle */
+.color-toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  background: #f9fafb;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}
+
+.color-toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.color-toggle-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* Disable colors when toggle is off */
+.answer-text.no-colors .template-phrase,
+.answer-text.no-colors .variable-content {
+  color: inherit;
+  font-weight: inherit;
+  background-color: transparent;
+  padding: 0;
+}
+
+.answer-text.no-colors .stress-word {
+  font-weight: 600 !important;
+  color: inherit !important;
+}
+
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
   .shadowing-practice-container {
@@ -350,6 +457,38 @@
   .shadowing-instructions p,
   .shadowing-instructions li {
     color: var(--color-text-dark, #f3f4f6);
+  }
+
+  /* Dark mode color coding */
+  .template-phrase {
+    color: #9ca3af;
+  }
+
+  .variable-content {
+    color: #60a5fa;
+    background-color: rgba(96, 165, 250, 0.1);
+  }
+
+  .stress-word {
+    color: #f87171 !important;
+  }
+
+  .color-legend {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    border-color: #3b82f6;
+  }
+
+  .legend-label {
+    color: #e5e7eb;
+  }
+
+  .color-toggle-container {
+    background: #1f2937;
+    border-color: #374151;
+  }
+
+  .color-toggle-label {
+    color: #e5e7eb;
   }
 }
 

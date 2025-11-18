@@ -4,10 +4,11 @@
  * Displays vocabulary word/sentence with pronunciation information.
  * Replaces the vanilla JS word card UI.
  * Supports both free browser TTS and premium AWS Polly neural voices.
+ * Includes template color coding for DI shadowing practice.
  */
 
 import React, { useState } from 'react';
-import { Card, Text, Badge, Button, Flex, Select } from '@radix-ui/themes';
+import { Card, Text, Badge, Button, Flex, Select, Checkbox } from '@radix-ui/themes';
 import { SpeakerLoudIcon, PlayIcon, LockClosedIcon } from '@radix-ui/react-icons';
 import { useAppStore } from '../../ts/stores';
 import type { VocabularyTerm, PracticeItem } from '../../types/dataset.types';
@@ -15,6 +16,7 @@ import { isPremiumTTSAvailable } from '../../ts/audio/pollyService';
 import { ttsEngine } from '../../ts/audio/TTSEngine';
 import type { SessionManager } from '../../services/session/sessionManager';
 import type { ItemType } from '../../types/database';
+import { parseAnswerForDisplay } from '../../ts/utils/templateParser';
 
 interface WordCardProps {
   item: VocabularyTerm | PracticeItem;
@@ -30,6 +32,7 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
   const [showAdvancedOptions, setShowAdvancedOptions] = useState(false);
   const [playCount, setPlayCount] = useState(0);
   const [startTime] = useState(Date.now());
+  const [showTemplateColors, setShowTemplateColors] = useState(true);
 
   const premiumAvailable = isPremiumTTSAvailable();
 
@@ -406,24 +409,77 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
         )}
 
         {/* Full DI Answer Display (for shadowing mode) */}
-        {isShadowingItem && fullAnswerText && (
-          <Flex direction="column" gap="3" mt="4" className="bg-slate-800/50 p-4 rounded-lg border border-slate-700">
-            <Text size="2" color="blue" weight="bold" className="uppercase tracking-wide">
-              📝 Complete Answer
-            </Text>
-            <Text size="3" className="leading-relaxed whitespace-pre-line text-slate-200">
-              {fullAnswerText.split('|').map((phrase: string, idx: number) => (
-                <span key={idx}>
-                  {phrase.trim()}
-                  {idx < fullAnswerText.split('|').length - 1 && ' '}
-                </span>
-              ))}
-            </Text>
-            <Text size="1" color="gray" className="italic">
-              💡 The audio will play each phrase continuously. Listen and shadow along!
-            </Text>
-          </Flex>
-        )}
+        {isShadowingItem && fullAnswerText && (() => {
+          const template = (item as any).template || 'A';
+          const parsed = parseAnswerForDisplay(fullAnswerText, template);
+          
+          return (
+            <Flex direction="column" gap="3" mt="4" className="bg-slate-800/50 p-4 rounded-lg border border-slate-700">
+              <Flex justify="between" align="center">
+                <Text size="2" color="blue" weight="bold" className="uppercase tracking-wide">
+                  📝 Complete Answer (Template {template})
+                </Text>
+              </Flex>
+
+              {/* Color Legend */}
+              {showTemplateColors && (
+                <div className="color-legend">
+                  <div className="legend-item">
+                    <div className="legend-color template"></div>
+                    <span className="legend-label">Template (Memorize)</span>
+                  </div>
+                  <div className="legend-item">
+                    <div className="legend-color variable"></div>
+                    <span className="legend-label">Variable (Fill in)</span>
+                  </div>
+                  <div className="legend-item">
+                    <div className="legend-color stress"></div>
+                    <span className="legend-label">STRESS Words</span>
+                  </div>
+                </div>
+              )}
+
+              {/* Color Toggle */}
+              <div className="color-toggle-container">
+                <label className="color-toggle-label">
+                  <Checkbox
+                    checked={showTemplateColors}
+                    onCheckedChange={(checked) => setShowTemplateColors(checked === true)}
+                    className="color-toggle-checkbox"
+                  />
+                  <span>Show Template Colors</span>
+                </label>
+              </div>
+
+              {/* Answer Text with Color Coding */}
+              <div className={`answer-text ${!showTemplateColors ? 'no-colors' : ''}`}>
+                {parsed.sentences.map((sentence, sentenceIdx) => (
+                  <div key={sentenceIdx} style={{ marginBottom: '0.5rem' }}>
+                    {sentence.segments.map((segment, segmentIdx) => {
+                      const classes = [];
+                      if (segment.type === 'template') classes.push('template-phrase');
+                      if (segment.type === 'variable') classes.push('variable-content');
+                      if (segment.isStress) classes.push('stress-word');
+                      
+                      return (
+                        <span key={segmentIdx} className={classes.join(' ')}>
+                          {segment.text}
+                        </span>
+                      );
+                    }).reduce((acc, curr, idx) => {
+                      if (idx === 0) return [curr];
+                      return [...acc, ' ', curr];
+                    }, [] as React.ReactNode[])}
+                  </div>
+                ))}
+              </div>
+
+              <Text size="1" color="gray" className="italic">
+                💡 The audio will play each phrase continuously. Listen and shadow along!
+              </Text>
+            </Flex>
+          );
+        })()}
       </Flex>
     </Card>
   );

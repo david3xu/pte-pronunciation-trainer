@@ -133,9 +133,10 @@ const App: React.FC = () => {
         }
 
         const data = await response.json();
-        const items = data.vocabulary || [];
+        // Shadowing modes use 'answers' instead of 'vocabulary'
+        const items = data.vocabulary || data.answers || [];
 
-        console.log(`Loaded ${items.length} vocabulary items`);
+        console.log(`Loaded ${items.length} items (${data.vocabulary ? 'vocabulary' : 'shadowing'})`);
         console.log('First item:', items[0]);
         vocabulary.setDataset(items, vocabularyBook); // Atomically sets currentItem and resets index
 

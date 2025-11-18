@@ -2,8 +2,8 @@
 // Handles offline caching and PWA functionality
 // Updated for React + Vite build
 
-// Version 81 - MAJOR: Bracket-based parser ([variable] content) - 100% accurate!
-const CACHE_VERSION = 'v81';
+// Version 82 - Updated DI answers extracted from raw files (corrected values)
+const CACHE_VERSION = 'v82';
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

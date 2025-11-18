@@ -413,6 +413,10 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
           const template = (item as any).template || 'A';
           const parsed = parseAnswerForDisplay(fullAnswerText, template);
           
+          console.log('[WordCard] Template:', template);
+          console.log('[WordCard] Parsed sentences:', parsed.sentences.length);
+          console.log('[WordCard] First sentence segments:', parsed.sentences[0]?.segments);
+          
           return (
             <Flex direction="column" gap="3" mt="4" className="bg-slate-800/50 p-4 rounded-lg border border-slate-700">
               <Flex justify="between" align="center">
@@ -452,24 +456,29 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
               </div>
 
               {/* Answer Text with Color Coding */}
-              <div className={`answer-text ${!showTemplateColors ? 'no-colors' : ''}`}>
+              <div className={`answer-text ${!showTemplateColors ? 'no-colors' : ''}`} style={{ lineHeight: '2', fontSize: '1.1rem' }}>
                 {parsed.sentences.map((sentence, sentenceIdx) => (
-                  <div key={sentenceIdx} style={{ marginBottom: '0.5rem' }}>
+                  <div key={sentenceIdx} style={{ marginBottom: '1rem' }}>
                     {sentence.segments.map((segment, segmentIdx) => {
                       const classes = [];
-                      if (segment.type === 'template') classes.push('template-phrase');
-                      if (segment.type === 'variable') classes.push('variable-content');
-                      if (segment.isStress) classes.push('stress-word');
+                      if (showTemplateColors) {
+                        if (segment.type === 'template') classes.push('template-phrase');
+                        if (segment.type === 'variable') classes.push('variable-content');
+                        if (segment.isStress) classes.push('stress-word');
+                      }
+                      
+                      const style: React.CSSProperties = showTemplateColors ? {} : {
+                        color: 'inherit',
+                        fontWeight: 'inherit',
+                        background: 'transparent'
+                      };
                       
                       return (
-                        <span key={segmentIdx} className={classes.join(' ')}>
+                        <span key={segmentIdx} className={classes.join(' ')} style={style}>
                           {segment.text}
                         </span>
                       );
-                    }).reduce((acc, curr, idx) => {
-                      if (idx === 0) return [curr];
-                      return [...acc, ' ', curr];
-                    }, [] as React.ReactNode[])}
+                    })}
                   </div>
                 ))}
               </div>

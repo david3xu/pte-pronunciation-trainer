@@ -37,30 +37,33 @@ export class AppConfig {
         paths: {
           base: 'data',
           processed: 'data/processed',
-          byMode: {
-            // Vocabulary books
-            'pte-fib-listening': 'data/processed/pte-fib-listening-dataset.json',
-            'pte-beginner': 'data/processed/pte-beginner-vocabulary.json',
-            'pte-intermediate': 'data/processed/pte-intermediate-vocabulary.json',
-            'pte-advanced': 'data/processed/pte-advanced-vocabulary.json',
-            'pte-ra': 'data/processed/pte-ra-vocabulary.json',
-            'pte-rs-vocab': 'data/processed/pte-rs-vocabulary.json',
-            'pte-must-know': 'data/processed/pte-must-know-vocabulary.json',
-            'pte-wfd-vocab': 'data/processed/pte-wfd-vocabulary.json',
-            'pte-rs-wfd-vocab': 'data/processed/pte-rs-wfd-vocabulary.json',
-            'pte-reading-fib': 'data/processed/pte-reading-fib-vocabulary.json',
-            'pte-reading-fib-drag': 'data/processed/pte-reading-fib-drag-vocabulary.json',
-            'pte-asq-answers': 'data/processed/pte-asq-answers-vocabulary.json',
-            'pte-high-frequency': 'data/processed/pte-high-frequency-vocabulary.json',
-            'pte-rs-core': 'data/processed/pte-rs-core-vocabulary.json',
-            'pte-di-rl-templates': 'data/processed/pte-di-rl-templates-vocabulary.json',
-            'pte-sst-complete': 'data/processed/pte-sst-complete-vocabulary.json',
-
-            // Practice modes
-            'rs': 'data/processed/pte-repeat-sentence.json',
-            'asq': 'data/processed/pte-answer-short-question.json',
-            'wfd': 'data/processed/pte-write-from-dictation.json'
-          }
+            byMode: {
+              // Vocabulary books
+              'pte-fib-listening': 'data/processed/pte-fib-listening-dataset.json',
+              'pte-beginner': 'data/processed/pte-beginner-vocabulary.json',
+              'pte-intermediate': 'data/processed/pte-intermediate-vocabulary.json',
+              'pte-advanced': 'data/processed/pte-advanced-vocabulary.json',
+              'pte-ra': 'data/processed/pte-ra-vocabulary.json',
+              'pte-rs-vocab': 'data/processed/pte-rs-vocabulary.json',
+              'pte-must-know': 'data/processed/pte-must-know-vocabulary.json',
+              'pte-wfd-vocab': 'data/processed/pte-wfd-vocabulary.json',
+              'pte-rs-wfd-vocab': 'data/processed/pte-rs-wfd-vocabulary.json',
+              'pte-reading-fib': 'data/processed/pte-reading-fib-vocabulary.json',
+              'pte-reading-fib-drag': 'data/processed/pte-reading-fib-drag-vocabulary.json',
+              'pte-asq-answers': 'data/processed/pte-asq-answers-vocabulary.json',
+              'pte-high-frequency': 'data/processed/pte-high-frequency-vocabulary.json',
+              'pte-rs-core': 'data/processed/pte-rs-core-vocabulary.json',
+              'pte-di-rl-templates': 'data/processed/pte-di-rl-templates-vocabulary.json',
+              'pte-sst-complete': 'data/processed/pte-sst-complete-vocabulary.json',
+              
+              // Practice modes
+              'rs': 'data/processed/pte-repeat-sentence.json',
+              'asq': 'data/processed/pte-answer-short-question.json',
+              'wfd': 'data/processed/pte-write-from-dictation.json',
+              
+              // Shadowing modes
+              'di-shadowing-11-20': 'data/processed/di-shadowing-images-11-20.json'
+            }
         },
 
         learningModes: [
@@ -85,7 +88,10 @@ export class AppConfig {
           // Practice modes (3 total)
           { id: 'rs', name: 'Repeat Sentence', category: 'practice', description: '620 practice sentences' },
           { id: 'asq', name: 'Answer Short Question', category: 'practice', description: '692 practice questions' },
-          { id: 'wfd', name: 'Write From Dictation', category: 'practice', description: '1,195 practice sentences' }
+          { id: 'wfd', name: 'Write From Dictation', category: 'practice', description: '1,195 practice sentences' },
+          
+          // Shadowing modes (1 total)
+          { id: 'di-shadowing-11-20', name: 'DI Shadowing (Images 11-20)', category: 'shadowing', description: '10 DI answers for pronunciation practice' }
         ],
 
         defaultMode: 'pte-beginner'
@@ -315,13 +321,25 @@ export class AppConfig {
             inputSubdir: 'vocabs',
             isDefault: true
           },
+          {
+            id: 'di-shadowing-11-20',
+            input: 'DI_Images_11-20_With_Pronunciation.md',
+            output: 'di-shadowing-images-11-20.json',
+            category: 'di-shadowing',
+            description: 'DI complete answers (Images 11-20) for shadowing practice with phrase-by-phrase breakdown',
+            sourceType: 'di-answers',
+            dataType: 'shadowing',
+            extractorType: 'DIAnswerExtractor',
+            inputSubdir: 'di'
+          },
           // ... Add more registry entries as needed during migration
         ],
         extractorTypes: {
           PTETermsExtractor: 'src/js/data/extractors/PTETermsExtractor.js',
           SingleIPATermsExtractor: 'src/js/data/extractors/SingleIPATermsExtractor.js',
           PTESentenceExtractor: 'src/js/data/extractors/PTESentenceExtractor.js',
-          PTEQuestionExtractor: 'src/js/data/extractors/PTEQuestionExtractor.js'
+          PTEQuestionExtractor: 'src/js/data/extractors/PTEQuestionExtractor.js',
+          DIAnswerExtractor: 'src/js/data/extractors/DIAnswerExtractor.js'
         }
       },
 

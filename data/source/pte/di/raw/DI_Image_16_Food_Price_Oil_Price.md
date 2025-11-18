@@ -10,25 +10,21 @@
 
 ---
 
-## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (92 words, 38-40 seconds)
+## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (88 words, 36-38 seconds)
 
 ```
-This [LINE graph] | PRESENTS statistical data | COMPARING [food price and oil price].
+This [LINE graph] ILLUSTRATES information REGARDING [food price versus oil price].
 
-When EXAMINING [food price], | [the TWO thousand and EIGHT period] | LEADS | 
-at approximately [ONE hundred and FORTY dollars].
+Looking at [food price] [the TWO thousand and EIGHT period] SHOWS the HIGHEST value |
+at around [ONE hundred and FORTY dollars] |
+while [the TWO thousand period] SHOWS the LOWEST at about [TWENTY dollars].
 
-Conversely, | [the TWO thousand period] | shows the LOWEST value | 
-at around [TWENTY dollars].
+Switching to [oil price] [the TWO thousand and EIGHT period] LEADS this group |
+at around [TWO hundred and TEN dollars] |
+followed by [TWO thousand and FOUR] at about [ONE hundred dollars].
 
-SWITCHING to [oil price], | [the TWO thousand and EIGHT period] | REPRESENTS the highest figure | 
-at approximately [TWO hundred and TEN dollars].
-
-Furthermore, | [TWO thousand and FOUR] | and [TWO thousand and SIX] | 
-also DEMONSTRATE notable VALUES | across BOTH categories.
-
-OVERALL, | this data CLEARLY illustrates | 
-the COMPARATIVE analysis | between [food price and oil price].
+In CONCLUSION this chart PRESENTS |
+the COMPARATIVE analysis between [food price and oil price].
 ```
 
 ---

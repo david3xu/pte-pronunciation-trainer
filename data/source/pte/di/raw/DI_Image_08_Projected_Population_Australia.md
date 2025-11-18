@@ -10,25 +10,21 @@
 
 ---
 
-## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (92 words, 38-40 seconds)
+## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (88 words, 36-38 seconds)
 
 ```
-This [LINE graph] | COMPARES data | between [Series A, Series B, and Series C].
+This [LINE graph] ILLUSTRATES information REGARDING [projected population in Australia].
 
-When EXAMINING [Series A], | [in TWENTY-one oh-one] | LEADS | 
-at approximately [SEVENTY million people].
+Looking at [Series A] [in TWENTY-one oh-one] SHOWS the HIGHEST value |
+at around [SEVENTY million people] |
+while [in TWENTY oh-one] SHOWS the LOWEST at about [TWENTY million people].
 
-Conversely, | [in TWENTY oh-one] | shows the LOWEST value | 
-at around [TWENTY million people].
+Switching to [Series B] [in TWENTY-one oh-one] LEADS this group |
+at around [FORTY-five million people] |
+followed by [Series C] at about [THIRTY-five million people].
 
-SWITCHING to [Series B], | [in TWENTY-one oh-one] | REPRESENTS the highest figure | 
-at approximately [FORTY-five million people].
-
-Furthermore, | [Series C] | and [TWENTY forty-one] | 
-also DEMONSTRATE notable VALUES | across BOTH categories.
-
-OVERALL, | this data CLEARLY illustrates | 
-the COMPARATIVE analysis | between [the projected population series].
+In CONCLUSION this chart PRESENTS |
+the COMPARATIVE analysis between [the projected population series].
 ```
 
 ---

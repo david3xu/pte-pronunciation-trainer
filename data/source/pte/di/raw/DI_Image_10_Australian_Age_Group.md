@@ -10,25 +10,21 @@
 
 ---
 
-## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (92 words, 38-40 seconds)
+## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (88 words, 36-38 seconds)
 
 ```
-This [BAR chart] | COMPARES data | between [males and females].
+This [BAR chart] ILLUSTRATES information REGARDING [Australian age groups].
 
-When EXAMINING [males], | [age group TWENTY-five to THIRTY-four] | LEADS | 
-at approximately [SIXTEEN point TWO percent].
+Looking at [males] [age group TWENTY-five to THIRTY-four] SHOWS the HIGHEST value |
+at around [SIXTEEN point TWO percent] |
+while [age group EIGHTY-five plus] SHOWS the LOWEST at about [ZERO point SEVEN percent].
 
-Conversely, | [age group EIGHTY-five plus] | shows the LOWEST value | 
-at around [ZERO point SEVEN percent].
+Switching to [females] [age group TWENTY-five to THIRTY-four] LEADS this group |
+at around [SIXTEEN point FIVE percent] |
+followed by [age group FIFTEEN to TWENTY-four] at about [FOURTEEN percent].
 
-SWITCHING to [females], | [age group TWENTY-five to THIRTY-four] | REPRESENTS the highest figure | 
-at approximately [SIXTEEN point FIVE percent].
-
-Furthermore, | [age group FIFTEEN to TWENTY-four] | and [age group THIRTY-five to FORTY-four] | 
-also DEMONSTRATE notable VALUES | across BOTH categories.
-
-OVERALL, | this data CLEARLY illustrates | 
-the COMPARATIVE analysis | between [males and females by age group].
+In CONCLUSION this chart PRESENTS |
+the COMPARATIVE analysis between [males and females by age group].
 ```
 
 ---

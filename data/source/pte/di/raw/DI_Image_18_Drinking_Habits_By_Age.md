@@ -10,25 +10,21 @@
 
 ---
 
-## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (92 words, 38-40 seconds)
+## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (88 words, 36-38 seconds)
 
 ```
-This [BAR chart] | PRESENTS statistical data | COMPARING [drinking habits across age groups].
+This [BAR chart] ILLUSTRATES information REGARDING [drinking habits by age in US].
 
-When EXAMINING [the EIGHTEEN to TWENTY-FOUR age group], | [heavy drinkers] | LEADS | 
-at approximately [FIFTEEN percent].
+Looking at [the EIGHTEEN to TWENTY-FOUR age group] [heavy drinkers] SHOWS the HIGHEST value |
+at around [FIFTEEN percent] |
+while [non-drinkers] SHOWS about [TWENTY percent].
 
-Conversely, | [non-drinkers] | shows the LOWEST value | 
-at around [TWENTY percent].
+Switching to [the SIXTY-FIVE plus age group] [non-drinkers] LEADS this group |
+at around [FIFTY percent] |
+followed by [light drinkers] at about [THIRTY-five percent].
 
-SWITCHING to [the SIXTY-FIVE plus age group], | [non-drinkers] | REPRESENTS the highest figure | 
-at approximately [FIFTY percent].
-
-Furthermore, | [moderate drinkers] | and [light drinkers] | 
-also DEMONSTRATE notable VALUES | across BOTH categories.
-
-OVERALL, | this data CLEARLY illustrates | 
-the COMPARATIVE analysis | between [drinking habits by age in US].
+In CONCLUSION this chart PRESENTS |
+the COMPARATIVE analysis between [drinking habits by age in US].
 ```
 
 ---

@@ -10,25 +10,21 @@
 
 ---
 
-## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (92 words, 38-40 seconds)
+## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (88 words, 36-38 seconds)
 
 ```
-This [LINE graph] | PRESENTS statistical data | COMPARING [full-time and part-time students].
+This [LINE graph] ILLUSTRATES information REGARDING [university and college students who did educational activities].
 
-When EXAMINING [full-time students], | [the TWELVE noon period] | LEADS | 
-at approximately [THIRTY-five percent].
+Looking at [full-time students] [the TWELVE noon period] SHOWS the HIGHEST value |
+at around [THIRTY-five percent] |
+while [the FOUR AM period] SHOWS the LOWEST at about [THREE percent].
 
-Conversely, | [the FOUR AM period] | shows the LOWEST value | 
-at around [THREE percent].
+Switching to [part-time students] [the TWELVE noon period] LEADS this group |
+at around [TWENTY-three percent] |
+followed by [EIGHT AM] at about [EIGHTEEN percent].
 
-SWITCHING to [part-time students], | [the TWELVE noon period] | REPRESENTS the highest figure | 
-at approximately [TWENTY-three percent].
-
-Furthermore, | [EIGHT AM] | and [FOUR PM] | 
-also DEMONSTRATE notable VALUES | across BOTH categories.
-
-OVERALL, | this data CLEARLY illustrates | 
-the COMPARATIVE analysis | between [university and college students who did educational activities].
+In CONCLUSION this chart PRESENTS |
+the COMPARATIVE analysis between [university and college students who did educational activities].
 ```
 
 ---

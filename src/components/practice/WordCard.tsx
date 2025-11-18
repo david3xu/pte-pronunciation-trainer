@@ -461,32 +461,49 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
                 {parsed.sentences.map((sentence, sentenceIdx) => (
                   <div key={sentenceIdx} style={{ marginBottom: '1rem' }}>
                     {sentence.segments.map((segment, segmentIdx) => {
-                      const classes = [];
-                      if (showTemplateColors) {
-                        if (segment.type === 'template') classes.push('template-phrase');
-                        if (segment.type === 'variable') classes.push('variable-content');
-                        if (segment.isStress) classes.push('stress-word');
-                      }
+                      // Split segment by words to apply stress individually
+                      const words = segment.text.split(/(\s+)/); // Keep spaces
                       
                       // Debug log for first sentence
                       if (sentenceIdx === 0 && segmentIdx < 3) {
                         console.log(`[WordCard] Segment ${segmentIdx}:`, {
                           text: segment.text,
                           type: segment.type,
-                          isStress: segment.isStress,
-                          classes: classes.join(' ')
+                          words: words.length
                         });
                       }
                       
-                      const style: React.CSSProperties = showTemplateColors ? {} : {
-                        color: 'inherit',
-                        fontWeight: 'inherit',
-                        background: 'transparent'
-                      };
-                      
                       return (
-                        <span key={segmentIdx} className={classes.join(' ')} style={style}>
-                          {segment.text}
+                        <span key={segmentIdx}>
+                          {words.map((word, wordIdx) => {
+                            // Skip empty strings
+                            if (!word) return null;
+                            
+                            // If it's just whitespace, render as-is
+                            if (word.trim() === '') return <React.Fragment key={wordIdx}>{word}</React.Fragment>;
+                            
+                            // Check if this individual word is all-caps (stress word)
+                            const isStress = word === word.toUpperCase() && word.length > 1 && /[A-Z]/.test(word);
+                            
+                            const classes = [];
+                            if (showTemplateColors) {
+                              if (segment.type === 'template') classes.push('template-phrase');
+                              if (segment.type === 'variable') classes.push('variable-content');
+                              if (isStress) classes.push('stress-word');
+                            }
+                            
+                            const style: React.CSSProperties = showTemplateColors ? {} : {
+                              color: 'inherit',
+                              fontWeight: 'inherit',
+                              background: 'transparent'
+                            };
+                            
+                            return (
+                              <span key={wordIdx} className={classes.join(' ')} style={style}>
+                                {word}
+                              </span>
+                            );
+                          })}
                         </span>
                       );
                     })}

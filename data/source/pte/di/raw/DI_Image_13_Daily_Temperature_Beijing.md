@@ -10,25 +10,25 @@
 
 ---
 
-## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (90 words, 38-40 seconds)
+## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (82 words, 35-37 seconds)
 
 ```
-This [AREA chart] | ILLUSTRATES information | REGARDING [daily temperature in Beijing China].
+This [AREA chart] ILLUSTRATES information REGARDING [daily temperature in Beijing China].
 
-At the TOP, | [in JULY] | DEMONSTRATES the HIGHEST value, | 
-which is approximately [THIRTY-two degrees Celsius].
+At the TOP [in JULY] SHOWS the HIGHEST value |
+of around [THIRTY-two degrees Celsius].
 
-Following THAT, | [in JUNE] | SHOWS around [TWENTY-eight degrees Celsius], | 
+Following THAT [in JUNE] SHOWS about [TWENTY-eight degrees Celsius] |
 representing the SECOND-highest figure.
 
-Conversely, | [in JANUARY] | INDICATES the LOWEST value | 
-at approximately [MINUS five degrees Celsius].
+On the other END [in JANUARY] SHOWS the LOWEST value |
+at around [MINUS five degrees Celsius].
 
-Additionally, | [APRIL] | and [OCTOBER] | 
-also contribute SIGNIFICANTLY | to the data ANALYSIS.
+Worth noting [APRIL] and [OCTOBER] |
+also contribute to the data ANALYSIS.
 
-In CONCLUSION, | this chart PRESENTS comprehensive DATA | 
-demonstrating CLEAR variations | in [daily temperature in Beijing China].
+In CONCLUSION this chart PRESENTS comprehensive DATA |
+demonstrating CLEAR variations in [daily temperature in Beijing China].
 ```
 
 ---

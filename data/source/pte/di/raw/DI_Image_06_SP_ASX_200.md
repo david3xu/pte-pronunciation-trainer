@@ -10,25 +10,25 @@
 
 ---
 
-## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (90 words, 38-40 seconds)
+## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (85 words, 36-38 seconds)
 
 ```
-This [LINE graph] | ILLUSTRATES information | REGARDING [the S and P ASX TWO hundred index].
+This [LINE graph] ILLUSTRATES information REGARDING [the S and P ASX TWO hundred index].
 
-At the TOP, | [at TWELVE o'clock] | DEMONSTRATES the HIGHEST value, | 
-which is approximately [THREE thousand FIVE hundred points].
+At the TOP [at TWELVE o'clock] SHOWS the HIGHEST value |
+of around [THREE thousand FIVE hundred points].
 
-Following THAT, | [at ELEVEN thirty] | SHOWS around [THREE thousand FOUR hundred ninety points], | 
+Following THAT [at ELEVEN thirty] SHOWS about [THREE thousand FOUR hundred ninety points] |
 representing the SECOND-highest figure.
 
-Conversely, | [at TEN o'clock] | INDICATES the LOWEST value | 
-at approximately [THREE thousand FOUR hundred sixty-eight points].
+On the other END [at TEN o'clock] SHOWS the LOWEST value |
+at around [THREE thousand FOUR hundred sixty-eight points].
 
-Additionally, | [ELEVEN o'clock] | and [ONE thirty] | 
-also contribute SIGNIFICANTLY | to the data ANALYSIS.
+Worth noting [ELEVEN o'clock] and [ONE thirty] |
+also contribute to the data ANALYSIS.
 
-In CONCLUSION, | this chart PRESENTS comprehensive DATA | 
-demonstrating CLEAR variations | in [the S and P ASX TWO hundred].
+In CONCLUSION this chart PRESENTS comprehensive DATA |
+demonstrating CLEAR variations in [the S and P ASX TWO hundred].
 ```
 
 ---

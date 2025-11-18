@@ -13,17 +13,17 @@ export class DIAnswerExtractor {
    */
   extract(content) {
     const answers = [];
-    const imageBlocks = content.split(/(?=^## IMAGE #)/gm);
-    
+    const imageBlocks = content.split(/(?=^# DI IMAGE #)/gm);
+
     for (const block of imageBlocks) {
-      if (!block.trim() || !block.includes('IMAGE #')) continue;
-      
+      if (!block.trim() || !block.includes('DI IMAGE #')) continue;
+
       const answer = this.extractAnswerFromBlock(block);
       if (answer) {
         answers.push(answer);
       }
     }
-    
+
     return answers;
   }
 
@@ -34,30 +34,48 @@ export class DIAnswerExtractor {
    */
   extractAnswerFromBlock(block) {
     // Extract image number and title
-    const titleMatch = block.match(/## IMAGE #(\d+): (.+?)(?:\(#\d+\))?$/m);
+    const titleMatch = block.match(/# DI IMAGE #(\d+): (.+?)(?:\(#\d+\))?$/m);
     if (!titleMatch) return null;
-    
+
     const imageNumber = parseInt(titleMatch[1]);
     const title = titleMatch[2].trim();
-    
-    // Extract template type
-    const templateMatch = block.match(/\*\*Template Used:\*\* ([A-F])/);
-    const template = templateMatch ? templateMatch[1] : 'A';
-    
-    // Extract word count and duration
-    const metaMatch = block.match(/### COMPLETE ANSWER \((\d+) words, (\d+) seconds\)/);
-    const wordCount = metaMatch ? parseInt(metaMatch[1]) : 0;
-    const duration = metaMatch ? parseInt(metaMatch[2]) : 0;
-    
-    // Extract complete answer text from code block
-    const answerMatch = block.match(/```\n([\s\S]+?)\n```/);
-    if (!answerMatch) return null;
-    
-    const fullText = answerMatch[1].trim();
-    
-    // Split into phrases by "|" 
+
+    // Extract template type (default to A if not found)
+    const template = 'A';
+
+    // Extract complete answer text (everything between title and ---)
+    const lines = block.split('\n');
+    const answerLines = [];
+    let inAnswer = false;
+
+    for (const line of lines) {
+      if (line.startsWith('# DI IMAGE')) {
+        inAnswer = false;
+        continue;
+      }
+      if (line.trim() === '' && !inAnswer) {
+        inAnswer = true;
+        continue;
+      }
+      if (line.trim() === '---') {
+        break;
+      }
+      if (inAnswer && line.trim() !== '') {
+        answerLines.push(line);
+      }
+    }
+
+    if (answerLines.length === 0) return null;
+
+    const fullText = answerLines.join('\n').trim();
+
+    // Split into phrases by "|"
     const phrases = this.splitIntoPhrases(fullText);
-    
+
+    // Estimate word count and duration
+    const wordCount = fullText.split(/\s+/).filter(w => w.length > 0).length;
+    const duration = Math.round(wordCount / 2.5); // Approximate 150 words/minute = 2.5 words/second
+
     return {
       id: `di-image-${imageNumber}`,
       imageNumber,

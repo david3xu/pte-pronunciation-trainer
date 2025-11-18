@@ -10,25 +10,21 @@
 
 ---
 
-## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (92 words, 38-40 seconds)
+## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (88 words, 36-38 seconds)
 
 ```
-This [LINE graph] | PRESENTS statistical data | COMPARING [net generation and share percentage].
+This [LINE graph] ILLUSTRATES information REGARDING [net generation from coal and share of total generation].
 
-When EXAMINING [net generation], | [the NINETEEN ninety period] | LEADS | 
-at approximately [TWO point FOUR billion megawatt hours].
+Looking at [net generation] [the NINETEEN ninety period] SHOWS the HIGHEST value |
+at around [TWO point FOUR billion megawatt hours] |
+while [the NINETEEN sixty period] SHOWS the LOWEST at about [ONE point SIX billion megawatt hours].
 
-Conversely, | [the NINETEEN sixty period] | shows the LOWEST value | 
-at around [ONE point SIX billion megawatt hours].
+Switching to [share percentage] [the NINETEEN fifty period] LEADS this group |
+at around [FIFTY-five percent] |
+followed by [TWO thousand] at about [FIFTY percent].
 
-SWITCHING to [share percentage], | [the NINETEEN fifty period] | REPRESENTS the highest figure | 
-at approximately [FIFTY-five percent].
-
-Furthermore, | [TWO thousand] | and [TWO thousand and TEN] | 
-also DEMONSTRATE notable VALUES | across BOTH categories.
-
-OVERALL, | this data CLEARLY illustrates | 
-the COMPARATIVE analysis | between [net generation from coal and share of total generation from coal].
+In CONCLUSION this chart PRESENTS |
+the COMPARATIVE analysis between [net generation from coal and share of total generation from coal].
 ```
 
 ---

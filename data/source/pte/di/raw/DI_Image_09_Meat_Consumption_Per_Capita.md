@@ -10,25 +10,21 @@
 
 ---
 
-## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (92 words, 38-40 seconds)
+## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (88 words, 36-38 seconds)
 
 ```
-This [LINE graph] | COMPARES data | between [USA, China, Liberia, Brazil, India, and Ethiopia].
+This [LINE graph] ILLUSTRATES information REGARDING [annual per capita meat consumption].
 
-When EXAMINING [USA], | [in TWO thousand and NINE] | LEADS | 
-at approximately [ONE hundred and THIRTY kilograms].
+Looking at [USA] [in TWO thousand and NINE] SHOWS the HIGHEST value |
+at around [ONE hundred and THIRTY kilograms] |
+while [in NINETEEN sixty-one] SHOWS about [NINETY kilograms].
 
-Conversely, | [in NINETEEN sixty-one] | shows the LOWEST value | 
-at around [NINETY kilograms].
+Switching to [India] [in TWO thousand and NINE] LEADS this group |
+at around [FIVE kilograms] |
+followed by [Ethiopia] at about [TEN kilograms].
 
-SWITCHING to [India], | [in TWO thousand and NINE] | REPRESENTS the highest figure | 
-at approximately [FIVE kilograms].
-
-Furthermore, | [Brazil] | and [Ethiopia] | 
-also DEMONSTRATE notable VALUES | across BOTH categories.
-
-OVERALL, | this data CLEARLY illustrates | 
-the COMPARATIVE analysis | between [annual per capita meat consumption].
+In CONCLUSION this chart PRESENTS |
+the COMPARATIVE analysis between [annual per capita meat consumption].
 ```
 
 ---

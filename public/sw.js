@@ -2,8 +2,8 @@
 // Handles offline caching and PWA functionality
 // Updated for React + Vite build
 
-// Version 84 - Added DI Images 11-20 for shadowing practice (complete 20 images)
-const CACHE_VERSION = 'v84';
+// Version 85 - Fluency-Optimized DI Templates (improved speaking flow for all 20 answers)
+const CACHE_VERSION = 'v85';
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

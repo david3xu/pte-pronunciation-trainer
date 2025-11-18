@@ -10,25 +10,25 @@
 
 ---
 
-## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (90 words, 38-40 seconds)
+## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (82 words, 35-37 seconds)
 
 ```
-This [LINE graph] | ILLUSTRATES information | REGARDING [Dubai gold sales in TWO thousand and TWO].
+This [LINE graph] ILLUSTRATES information REGARDING [Dubai gold sales in TWO thousand and TWO].
 
-At the TOP, | [in MARCH] | DEMONSTRATES the HIGHEST value, | 
-which is approximately [THREE hundred and FIFTY million dirhams].
+At the TOP [in MARCH] SHOWS the HIGHEST value |
+of around [THREE hundred and FIFTY million dirhams].
 
-Following THAT, | [in FEBRUARY] | SHOWS around [THREE hundred million dirhams], | 
+Following THAT [in FEBRUARY] SHOWS about [THREE hundred million dirhams] |
 representing the SECOND-highest figure.
 
-Conversely, | [in SEPTEMBER] | INDICATES the LOWEST value | 
-at approximately [ONE hundred million dirhams].
+On the other END [in SEPTEMBER] SHOWS the LOWEST value |
+at around [ONE hundred million dirhams].
 
-Additionally, | [JANUARY] | and [DECEMBER] | 
-also contribute SIGNIFICANTLY | to the data ANALYSIS.
+Worth noting [JANUARY] and [DECEMBER] |
+also contribute to the data ANALYSIS.
 
-In CONCLUSION, | this chart PRESENTS comprehensive DATA | 
-demonstrating CLEAR variations | in [Dubai gold sales].
+In CONCLUSION this chart PRESENTS comprehensive DATA |
+demonstrating CLEAR variations in [Dubai gold sales].
 ```
 
 ---

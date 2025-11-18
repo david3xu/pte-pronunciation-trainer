@@ -10,25 +10,25 @@
 
 ---
 
-## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (90 words, 38-40 seconds)
+## ✅ COMPLETE ANSWER WITH TEMPLATE STRUCTURE (82 words, 35-37 seconds)
 
 ```
-This [LINE graph] | ILLUSTRATES information | REGARDING [Jill's secondary math scores].
+This [LINE graph] ILLUSTRATES information REGARDING [Jill's secondary math scores].
 
-At the TOP, | [in grade TWELVE] | DEMONSTRATES the HIGHEST value, | 
-which is approximately [NINETY-one percent].
+At the TOP [in grade TWELVE] SHOWS the HIGHEST value |
+of around [NINETY-one percent].
 
-Following THAT, | [in grade ELEVEN] | SHOWS around [EIGHTY-three percent], | 
+Following THAT [in grade ELEVEN] SHOWS about [EIGHTY-three percent] |
 representing the SECOND-highest figure.
 
-Conversely, | [in grade SEVEN] | INDICATES the LOWEST value | 
-at approximately [SEVENTY-two percent].
+On the other END [in grade SEVEN] SHOWS the LOWEST value |
+at around [SEVENTY-two percent].
 
-Additionally, | [grade EIGHT] | and [grade NINE] | 
-also contribute SIGNIFICANTLY | to the data ANALYSIS.
+Worth noting [grade EIGHT] and [grade NINE] |
+also contribute to the data ANALYSIS.
 
-In CONCLUSION, | this chart PRESENTS comprehensive DATA | 
-demonstrating CLEAR variations | in [Jill's secondary math scores].
+In CONCLUSION this chart PRESENTS comprehensive DATA |
+demonstrating CLEAR variations in [Jill's secondary math scores].
 ```
 
 ---

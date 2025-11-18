@@ -125,8 +125,12 @@ const AudioControls: React.FC = () => {
       autoPlayRef.current = true;
 
       // Get the word/text to speak
-      const textToSpeak = (currentItem as any).word || (currentItem as any).english ||
-                          (currentItem as any).sentence || (currentItem as any).question;
+      // For shadowing items, use fullText for natural continuous speech
+      const isShadowingItem = !!(currentItem as any).fullText;
+      const textToSpeak = isShadowingItem 
+        ? (currentItem as any).fullText.replace(/\|/g, ' ')  // Remove | separators for natural speech
+        : ((currentItem as any).word || (currentItem as any).english ||
+           (currentItem as any).sentence || (currentItem as any).question);
 
       if (textToSpeak) {
         // Use filtered dataset if filter is active, otherwise use current dataset

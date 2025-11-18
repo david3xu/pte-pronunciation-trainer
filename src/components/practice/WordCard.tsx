@@ -50,6 +50,10 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
     ? item.difficulty
     : ('metadata' in item && item.metadata?.difficulty) || 'normal';
 
+  // Check if this is a shadowing item (has fullText or phrases)
+  const isShadowingItem = (item as any).fullText || (item as any).phrases;
+  const fullAnswerText = (item as any).fullText;
+
   // Handle both 'ipa' and 'pronunciation' field names
   // JSON format: pronunciation.british.ipa vs type format: ipa.british
   // Also handle single IPA format: pronunciation.ipa (not nested)
@@ -397,6 +401,26 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
             </Text>
             <Text size="3" color="gray">
               {(item as any).definition}
+            </Text>
+          </Flex>
+        )}
+
+        {/* Full DI Answer Display (for shadowing mode) */}
+        {isShadowingItem && fullAnswerText && (
+          <Flex direction="column" gap="3" mt="4" className="bg-slate-800/50 p-4 rounded-lg border border-slate-700">
+            <Text size="2" color="blue" weight="bold" className="uppercase tracking-wide">
+              📝 Complete Answer
+            </Text>
+            <Text size="3" className="leading-relaxed whitespace-pre-line text-slate-200">
+              {fullAnswerText.split('|').map((phrase: string, idx: number) => (
+                <span key={idx}>
+                  {phrase.trim()}
+                  {idx < fullAnswerText.split('|').length - 1 && ' '}
+                </span>
+              ))}
+            </Text>
+            <Text size="1" color="gray" className="italic">
+              💡 The audio will play each phrase continuously. Listen and shadow along!
             </Text>
           </Flex>
         )}

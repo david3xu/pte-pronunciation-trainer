@@ -2,8 +2,8 @@
 // Handles offline caching and PWA functionality
 // Updated for React + Vite build
 
-// Version 71 - Transform shadowing data to work with vocabulary UI
-const CACHE_VERSION = 'v71';
+// Version 72 - Display full DI answer text in shadowing mode
+const CACHE_VERSION = 'v72';
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

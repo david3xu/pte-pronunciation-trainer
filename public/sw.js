@@ -2,8 +2,8 @@
 // Handles offline caching and PWA functionality
 // Updated for React + Vite build
 
-// Version 72 - Display full DI answer text in shadowing mode
-const CACHE_VERSION = 'v72';
+// Version 73 - Fix playback speed and normalize all-caps pronunciation
+const CACHE_VERSION = 'v73';
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

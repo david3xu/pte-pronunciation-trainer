@@ -140,7 +140,8 @@ const AudioControls: React.FC = () => {
         console.log('[AudioControls] Auto-playing:', textToSpeak, `(${audio.currentIndex + 1}/${dataset?.length || 0})`);
 
         try {
-          await ttsEngine.pronounceText(textToSpeak, 'en-US', null);
+          // Use the playback speed from audio store
+          await ttsEngine.pronounceText(textToSpeak, 'en-US', audio.playbackSpeed);
 
           // After speaking, move to next if auto-play is still active
           if (audio.isAutoPlaying && !audio.isPaused && autoPlayRef.current) {

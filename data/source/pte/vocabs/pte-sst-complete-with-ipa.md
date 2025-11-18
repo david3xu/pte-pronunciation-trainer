@@ -1,6 +1,6 @@
 # PTE SST (Summarize Spoken Text) Complete Vocabulary
 
-**Category**: PTE SST Complete  
+**Category**: PTE SST Complete
 **Difficulty**: Intermediate
 **Total**: 390+ terms and phrases from 28 SST topics
 
@@ -9,458 +9,458 @@
 
 ## Topic 1: Indian Peasants
 
-1. indian peasants | /indian peasants/ — sounds like **indian peasants**
-2. debt | /debt/ — sounds like **debt**
-3. high | /high/ — sounds like **high**
-4. peasants | /peasants/ — sounds like **peasants**
-5. seeds | /seeds/ — sounds like **seeds**
-6. used to be free | /used to be free/ — sounds like **used to be free**
-7. pesticides | /pesticides/ — sounds like **pesticides**
-8. the free market | /the free market/ — sounds like **the free market**
-9. globalization | /globalization/ — sounds like **globalization**
-10. borrow money | /borrow money/ — sounds like **borrow money**
-11. the same companies | /the same companies/ — sounds like **the same companies**
-12. sell | /sell/ — sounds like **sell**
+1. indian peasants | /ˈɪndiən ˈpɛzənts/ — sounds like **IN-dee-uhn PEZ-uhnts**
+2. debt | /dɛt/ — sounds like **DET**
+3. high | /haɪ/ — sounds like **HY**
+4. peasants | /ˈpɛzənts/ — sounds like **PEZ-uhnts**
+5. seeds | /sidz/ — sounds like **SEEDZ**
+6. used to be free | /juzd tə bi fri/ — sounds like **YOOZD tuh bee FREE**
+7. pesticides | /ˈpɛstɪsaɪdz/ — sounds like **PES-tih-sydz**
+8. the free market | /ðə fri ˈmɑrkɪt/ — sounds like **thuh FREE MAR-kit**
+9. globalization | /ˌɡloʊbələˈzeɪʃən/ — sounds like **GLOH-buh-lih-ZAY-shuhn**
+10. borrow money | /ˈbɑroʊ ˈmʌni/ — sounds like **BAH-roh MUH-nee**
+11. the same companies | /ðə seɪm ˈkʌmpəniz/ — sounds like **thuh SAYM KUM-puh-neez**
+12. sell | /sɛl/ — sounds like **SEL**
 
 ## Topic 2: Definitions of Globalization
 
-13. definitions of globalization | /definitions of globalization/ — sounds like **definitions of globalization**
-14. the proliferation | /the proliferation/ — sounds like **the proliferation**
-15. of international trade | /of international trade/ — sounds like **of international trade**
-16. international communications | /international communications/ — sounds like **international communications**
-17. an integrated economic system | /an integrated economic system/ — sounds like **an integrated economic system**
-18. consuming countries | /consuming countries/ — sounds like **consuming countries**
-19. producing countries | /producing countries/ — sounds like **producing countries**
-20. a new era | /a new era/ — sounds like **a new era**
-21. nations' economies | /nations' economies/ — sounds like **nations' economies**
-22. depend on each other | /depend on each other/ — sounds like **depend on each other**
-23. post-industrial economy | /post-industrial economy/ — sounds like **post-industrial economy**
-24. global | /global/ — sounds like **global**
+13. definitions of globalization | /ˌdɛfɪˈnɪʃənz əv ˌɡloʊbələˈzeɪʃən/ — sounds like **def-ih-NISH-uhnz uhv GLOH-buh-lih-ZAY-shuhn**
+14. the proliferation | /ðə prəˌlɪfəˈreɪʃən/ — sounds like **thuh pruh-lif-uh-RAY-shuhn**
+15. of international trade | /əv ˌɪntərˈnæʃənəl treɪd/ — sounds like **uhv in-ter-NASH-uh-nuhl TRAYD**
+16. international communications | /ˌɪntərˈnæʃənəl kəˌmjunɪˈkeɪʃənz/ — sounds like **in-ter-NASH-uh-nuhl kuh-myoo-nih-KAY-shuhnz**
+17. an integrated economic system | /æn ˈɪntɪɡreɪtɪd ˌɛkəˈnɑmɪk ˈsɪstəm/ — sounds like **an IN-tih-gray-tid ek-uh-NAH-mik SIS-tuhm**
+18. consuming countries | /kənˈsumɪŋ ˈkʌntriz/ — sounds like **kuhn-SOO-ming KUN-treez**
+19. producing countries | /prəˈdusɪŋ ˈkʌntriz/ — sounds like **pruh-DOO-sing KUN-treez**
+20. a new era | /ə nu ˈɪrə/ — sounds like **uh NOO EH-ruh**
+21. nations' economies | /ˈneɪʃənz ɪˈkɑnəmiz/ — sounds like **NAY-shuhnz ih-KAH-nuh-meez**
+22. depend on each other | /dɪˈpɛnd ɑn itʃ ˈʌðər/ — sounds like **dih-PEND ahn EECH UH-thur**
+23. post-industrial economy | /poʊst ɪnˈdʌstriəl ɪˈkɑnəmi/ — sounds like **POHST in-DUS-tree-uhl ih-KAH-nuh-mee**
+24. global | /ˈɡloʊbəl/ — sounds like **GLOH-buhl**
 
 ## Topic 3: Artificial Intelligence
 
-25. artificial intelligence | /artificial intelligence/ — sounds like **artificial intelligence**
-26. a computer | /a computer/ — sounds like **a computer**
-27. what to do | /what to do/ — sounds like **what to do**
-28. how to do it | /how to do it/ — sounds like **how to do it**
-29. the meaning of certain words | /the meaning of certain words/ — sounds like **the meaning of certain words**
-30. operate as programmed | /operate as programmed/ — sounds like **operate as programmed**
-31. develop systems and symbols | /develop systems and symbols/ — sounds like **develop systems and symbols**
-32. turn messages into bytes | /turn messages into bytes/ — sounds like **turn messages into bytes**
-33. function similarly | /function similarly/ — sounds like **function similarly**
-34. human brains | /human brains/ — sounds like **human brains**
-35. symbol processors | /symbol processors/ — sounds like **symbol processors**
-36. potential | /potential/ — sounds like **potential**
+25. artificial intelligence | /ˌɑrtɪˈfɪʃəl ɪnˈtɛlɪdʒəns/ — sounds like **ar-tih-FISH-uhl in-TEL-ih-juhns**
+26. a computer | /ə kəmˈpjutər/ — sounds like **uh kuhm-PYOO-ter**
+27. what to do | /wʌt tə du/ — sounds like **WUHT tuh DOO**
+28. how to do it | /haʊ tə du ɪt/ — sounds like **HOW tuh DOO it**
+29. the meaning of certain words | /ðə ˈminɪŋ əv ˈsɜrtən wɜrdz/ — sounds like **thuh MEE-ning uhv SUR-tuhn WURDZ**
+30. operate as programmed | /ˈɑpəreɪt æz ˈproʊɡræmd/ — sounds like **AH-puh-rayt az PROH-gramd**
+31. develop systems and symbols | /dɪˈvɛləp ˈsɪstəmz ænd ˈsɪmbəlz/ — sounds like **dih-VEL-uhp SIS-tuhmz and SIM-buhlz**
+32. turn messages into bytes | /tɜrn ˈmɛsɪdʒɪz ˈɪntu baɪts/ — sounds like **TURN MES-ih-jiz IN-too BYTS**
+33. function similarly | /ˈfʌŋkʃən ˈsɪmələrli/ — sounds like **FUNK-shuhn SIM-ih-lur-lee**
+34. human brains | /ˈhjumən breɪnz/ — sounds like **HYOO-muhn BRAYNZ**
+35. symbol processors | /ˈsɪmbəl ˈprɑsɛsərz/ — sounds like **SIM-buhl PRAH-ses-urz**
+36. potential | /pəˈtɛnʃəl/ — sounds like **puh-TEN-shuhl**
 
 ## Topic 4: Obese Women
 
-37. obese women | /obese women/ — sounds like **obese women**
-38. thirty-one | /thirty-one/ — sounds like **thirty-one**
-39. volunteered | /volunteered/ — sounds like **volunteered**
-40. a Canadian experiment | /a Canadian experiment/ — sounds like **a Canadian experiment**
-41. test their body fat changes | /test their body fat changes/ — sounds like **test their body fat changes**
-42. strict daily diet requirements | /strict daily diet requirements/ — sounds like **strict daily diet requirements**
-43. did exercise as instructed | /did exercise as instructed/ — sounds like **did exercise as instructed**
-44. six months | /six months/ — sounds like **six months**
-45. lost weight | /lost weight/ — sounds like **lost weight**
-46. stayed the same | /stayed the same/ — sounds like **stayed the same**
-47. gained weight | /gained weight/ — sounds like **gained weight**
-48. two explanations | /two explanations/ — sounds like **two explanations**
-49. cheating on the diet | /cheating on the diet/ — sounds like **cheating on the diet**
-50. did less exercise | /did less exercise/ — sounds like **did less exercise**
-51. consciously | /consciously/ — sounds like **consciously**
-52. unconsciously | /unconsciously/ — sounds like **unconsciously**
-53. psychological reasons | /psychological reasons/ — sounds like **psychological reasons**
+37. obese women | /oʊˈbis ˈwɪmɪn/ — sounds like **oh-BEES WIH-min**
+38. thirty-one | /ˈθɜrti wʌn/ — sounds like **THUR-tee WUN**
+39. volunteered | /ˌvɑlənˈtɪrd/ — sounds like **vah-luhn-TEERD**
+40. a Canadian experiment | /ə kəˈneɪdiən ɪkˈspɛrɪmənt/ — sounds like **uh kuh-NAY-dee-uhn ik-SPER-ih-muhnt**
+41. test their body fat changes | /tɛst ðɛr ˈbɑdi fæt ˈtʃeɪndʒɪz/ — sounds like **TEST thair BAH-dee FAT CHAYN-jiz**
+42. strict daily diet requirements | /strɪkt ˈdeɪli ˈdaɪət rɪˈkwaɪrmənts/ — sounds like **STRIKT DAY-lee DY-uht rih-KWYR-muhnts**
+43. did exercise as instructed | /dɪd ˈɛksərˌsaɪz æz ɪnˈstrʌktɪd/ — sounds like **DID EK-sur-syz az in-STRUK-tid**
+44. six months | /sɪks mʌnθs/ — sounds like **SIKS MUNTHS**
+45. lost weight | /lɔst weɪt/ — sounds like **LAWST WAYT**
+46. stayed the same | /steɪd ðə seɪm/ — sounds like **STAYD thuh SAYM**
+47. gained weight | /ɡeɪnd weɪt/ — sounds like **GAYND WAYT**
+48. two explanations | /tu ˌɛkspləˈneɪʃənz/ — sounds like **TOO ek-spluh-NAY-shuhnz**
+49. cheating on the diet | /ˈtʃitɪŋ ɑn ðə ˈdaɪət/ — sounds like **CHEE-ting ahn thuh DY-uht**
+50. did less exercise | /dɪd lɛs ˈɛksərˌsaɪz/ — sounds like **DID LES EK-sur-syz**
+51. consciously | /ˈkɑnʃəsli/ — sounds like **KAHN-shuh-slee**
+52. unconsciously | /ʌnˈkɑnʃəsli/ — sounds like **un-KAHN-shuh-slee**
+53. psychological reasons | /ˌsaɪkəˈlɑdʒɪkəl ˈrizənz/ — sounds like **sy-kuh-LAH-jih-kuhl REE-zuhnz**
 
 ## Topic 5: Sign Language
 
-54. sign language | /sign language/ — sounds like **sign language**
-55. abstraction | /abstraction/ — sounds like **abstraction**
-56. the origin of symbolic systems | /the origin of symbolic systems/ — sounds like **the origin of symbolic systems**
-57. ask for help | /ask for help/ — sounds like **ask for help**
-58. communicate | /communicate/ — sounds like **communicate**
-59. do something with their hands | /do something with their hands/ — sounds like **do something with their hands**
-60. at the same time | /at the same time/ — sounds like **at the same time**
-61. words and language | /words and language/ — sounds like **words and language**
+54. sign language | /saɪn ˈlæŋɡwɪdʒ/ — sounds like **SYN LANG-gwij**
+55. abstraction | /æbˈstrækʃən/ — sounds like **ab-STRAK-shuhn**
+56. the origin of symbolic systems | /ði ˈɔrɪdʒɪn əv sɪmˈbɑlɪk ˈsɪstəmz/ — sounds like **thee OR-ih-jin uhv sim-BAH-lik SIS-tuhmz**
+57. ask for help | /æsk fɔr hɛlp/ — sounds like **ASK for HELP**
+58. communicate | /kəˈmjunɪkeɪt/ — sounds like **kuh-MYOO-nih-kayt**
+59. do something with their hands | /du ˈsʌmθɪŋ wɪð ðɛr hændz/ — sounds like **DOO SUM-thing with thair HANDZ**
+60. at the same time | /æt ðə seɪm taɪm/ — sounds like **at thuh SAYM TYM**
+61. words and language | /wɜrdz ænd ˈlæŋɡwɪdʒ/ — sounds like **WURDZ and LANG-gwij**
 
 ## Topic 6: Genes Affect Human Behaviors
 
-62. genes affect human behaviors | /genes affect human behaviors/ — sounds like **genes affect human behaviors**
-63. the discovery of the DNA structure | /the discovery of the DNA structure/ — sounds like **the discovery of the DNA structure**
-64. genes | /genes/ — sounds like **genes**
-65. people's physical structure | /people's physical structure/ — sounds like **people's physical structure**
-66. mapping of genes | /mapping of genes/ — sounds like **mapping of genes**
-67. a genetic responsibility | /a genetic responsibility/ — sounds like **a genetic responsibility**
-68. psychological behaviors | /psychological behaviors/ — sounds like **psychological behaviors**
-69. changed the way | /changed the way/ — sounds like **changed the way**
-70. we understand our behaviors | /we understand our behaviors/ — sounds like **we understand our behaviors**
-71. integrated information | /integrated information/ — sounds like **integrated information**
-72. the findings | /the findings/ — sounds like **the findings**
-73. biology | /biology/ — sounds like **biology**
-74. psychology | /psychology/ — sounds like **psychology**
-75. neuroscience | /neuroscience/ — sounds like **neuroscience**
+62. genes affect human behaviors | /dʒinz əˈfɛkt ˈhjumən bɪˈheɪvjərz/ — sounds like **JEENZ uh-FEKT HYOO-muhn bih-HAYV-yurz**
+63. the discovery of the DNA structure | /ðə dɪˈskʌvəri əv ðə di ɛn eɪ ˈstrʌktʃər/ — sounds like **thuh dis-KUV-uh-ree uhv thuh DEE EN AY STRUK-chur**
+64. genes | /dʒinz/ — sounds like **JEENZ**
+65. people's physical structure | /ˈpipəlz ˈfɪzɪkəl ˈstrʌktʃər/ — sounds like **PEE-puhlz FIZ-ih-kuhl STRUK-chur**
+66. mapping of genes | /ˈmæpɪŋ əv dʒinz/ — sounds like **MAP-ing uhv JEENZ**
+67. a genetic responsibility | /ə dʒəˈnɛtɪk rɪˌspɑnsəˈbɪləti/ — sounds like **uh juh-NET-ik rih-spahn-suh-BIL-ih-tee**
+68. psychological behaviors | /ˌsaɪkəˈlɑdʒɪkəl bɪˈheɪvjərz/ — sounds like **sy-kuh-LAH-jih-kuhl bih-HAYV-yurz**
+69. changed the way | /tʃeɪndʒd ðə weɪ/ — sounds like **CHAYNDJD thuh WAY**
+70. we understand our behaviors | /wi ˌʌndərˈstænd aʊər bɪˈheɪvjərz/ — sounds like **WEE un-dur-STAND OW-ur bih-HAYV-yurz**
+71. integrated information | /ˈɪntɪɡreɪtɪd ˌɪnfərˈmeɪʃən/ — sounds like **IN-tih-gray-tid in-fur-MAY-shuhn**
+72. the findings | /ðə ˈfaɪndɪŋz/ — sounds like **thuh FYN-dingz**
+73. biology | /baɪˈɑlədʒi/ — sounds like **by-AH-luh-jee**
+74. psychology | /saɪˈkɑlədʒi/ — sounds like **sy-KAH-luh-jee**
+75. neuroscience | /ˌnʊroʊˈsaɪəns/ — sounds like **noo-roh-SY-uhns**
 
 ## Topic 7: National Wealth and Adam Smith
 
-76. national wealth and Adam Smith | /national wealth and Adam Smith/ — sounds like **national wealth and Adam Smith**
-77. the Industrial Revolution | /the Industrial Revolution/ — sounds like **the Industrial Revolution**
-78. British economists | /British economists/ — sounds like **British economists**
-79. a nation's wealth | /a nation's wealth/ — sounds like **a nation's wealth**
-80. how much money people could pile up | /how much money people could pile up/ — sounds like **how much money people could pile up**
-81. Adam Smith | /Adam Smith/ — sounds like **Adam Smith**
-82. agriculture | /agriculture/ — sounds like **agriculture**
-83. manufacturing | /manufacturing/ — sounds like **manufacturing**
-84. the ability to provide outputs | /the ability to provide outputs/ — sounds like **the ability to provide outputs**
-85. the nation's income | /the nation's income/ — sounds like **the nation's income**
-86. national output | /national output/ — sounds like **national output**
+76. national wealth and Adam Smith | /ˈnæʃənəl wɛlθ ænd ˈædəm smɪθ/ — sounds like **NASH-uh-nuhl WELTH and AD-uhm SMITH**
+77. the Industrial Revolution | /ði ɪnˈdʌstriəl ˌrɛvəˈluʃən/ — sounds like **thee in-DUS-tree-uhl rev-uh-LOO-shuhn**
+78. British economists | /ˈbrɪtɪʃ ɪˈkɑnəmɪsts/ — sounds like **BRIH-tish ih-KAH-nuh-mists**
+79. a nation's wealth | /ə ˈneɪʃənz wɛlθ/ — sounds like **uh NAY-shuhnz WELTH**
+80. how much money people could pile up | /haʊ mʌtʃ ˈmʌni ˈpipəl kʊd paɪl ʌp/ — sounds like **HOW MUCH MUH-nee PEE-puhl KOOD PYL UP**
+81. Adam Smith | /ˈædəm smɪθ/ — sounds like **AD-uhm SMITH**
+82. agriculture | /ˈæɡrɪˌkʌltʃər/ — sounds like **AG-rih-kul-chur**
+83. manufacturing | /ˌmænjəˈfæktʃərɪŋ/ — sounds like **man-yuh-FAK-chur-ing**
+84. the ability to provide outputs | /ði əˈbɪləti tə prəˈvaɪd ˈaʊtˌpʊts/ — sounds like **thee uh-BIL-ih-tee tuh pruh-VYD OWT-poots**
+85. the nation's income | /ðə ˈneɪʃənz ˈɪnˌkʌm/ — sounds like **thuh NAY-shuhnz IN-kum**
+86. national output | /ˈnæʃənəl ˈaʊtˌpʊt/ — sounds like **NASH-uh-nuhl OWT-poot**
 
 ## Topic 8: Market Economy
 
-87. Market Economy | /Market Economy/ — sounds like **Market Economy**
-88. the notions of | /the notions of/ — sounds like **the notions of**
-89. pragmatism | /pragmatism/ — sounds like **pragmatism**
-90. democracy | /democracy/ — sounds like **democracy**
-91. tempering the market economy | /tempering the market economy/ — sounds like **tempering the market economy**
-92. developed countries | /developed countries/ — sounds like **developed countries**
-93. The Industrial Revolution | /The Industrial Revolution/ — sounds like **The Industrial Revolution**
-94. the living standards | /the living standards/ — sounds like **the living standards**
-95. of the working classes | /of the working classes/ — sounds like **of the working classes**
-96. legislation | /legislation/ — sounds like **legislation**
-97. about working conditions | /about working conditions/ — sounds like **about working conditions**
-98. better environmental conditions | /better environmental conditions/ — sounds like **better environmental conditions**
-99. circumscribe | /circumscribe/ — sounds like **circumscribe**
-100. the worst behaviors | /the worst behaviors/ — sounds like **the worst behaviors**
-101. reversed some damage | /reversed some damage/ — sounds like **reversed some damage**
-102. the benefits | /the benefits/ — sounds like **the benefits**
+87. Market Economy | /ˈmɑrkɪt ɪˈkɑnəmi/ — sounds like **MAR-kit ih-KAH-nuh-mee**
+88. the notions of | /ðə ˈnoʊʃənz əv/ — sounds like **thuh NOH-shuhnz uhv**
+89. pragmatism | /ˈpræɡməˌtɪzəm/ — sounds like **PRAG-muh-tiz-uhm**
+90. democracy | /dɪˈmɑkrəsi/ — sounds like **dih-MAH-kruh-see**
+91. tempering the market economy | /ˈtɛmpərɪŋ ðə ˈmɑrkɪt ɪˈkɑnəmi/ — sounds like **TEM-pur-ing thuh MAR-kit ih-KAH-nuh-mee**
+92. developed countries | /dɪˈvɛləpt ˈkʌntriz/ — sounds like **dih-VEL-uhpt KUN-treez**
+93. The Industrial Revolution | /ði ɪnˈdʌstriəl ˌrɛvəˈluʃən/ — sounds like **thee in-DUS-tree-uhl rev-uh-LOO-shuhn**
+94. the living standards | /ðə ˈlɪvɪŋ ˈstændərdz/ — sounds like **thuh LIV-ing STAN-durdz**
+95. of the working classes | /əv ðə ˈwɜrkɪŋ ˈklæsɪz/ — sounds like **uhv thuh WUR-king KLAS-iz**
+96. legislation | /ˌlɛdʒɪsˈleɪʃən/ — sounds like **lej-is-LAY-shuhn**
+97. about working conditions | /əˈbaʊt ˈwɜrkɪŋ kənˈdɪʃənz/ — sounds like **uh-BOWT WUR-king kuhn-DISH-uhnz**
+98. better environmental conditions | /ˈbɛtər ɪnˌvaɪrənˈmɛntəl kənˈdɪʃənz/ — sounds like **BET-ur in-vy-ruhn-MEN-tuhl kuhn-DISH-uhnz**
+99. circumscribe | /ˈsɜrkəmˌskraɪb/ — sounds like **SUR-kuhm-skryb**
+100. the worst behaviors | /ðə wɜrst bɪˈheɪvjərz/ — sounds like **thuh WURST bih-HAYV-yurz**
+101. reversed some damage | /rɪˈvɜrst sʌm ˈdæmɪdʒ/ — sounds like **rih-VURST SUM DAM-ij**
+102. the benefits | /ðə ˈbɛnəfɪts/ — sounds like **thuh BEN-uh-fits**
 
 ## Topic 9: What Makes People Happy
 
-103. what makes people happy | /what makes people happy/ — sounds like **what makes people happy**
-104. this survey | /this survey/ — sounds like **this survey**
-105. a valid example | /a valid example/ — sounds like **a valid example**
-106. happiness economics | /happiness economics/ — sounds like **happiness economics**
-107. a consistent pattern | /a consistent pattern/ — sounds like **a consistent pattern**
-108. people's well-being | /people's well-being/ — sounds like **people's well-being**
-109. income | /income/ — sounds like **income**
-110. health | /health/ — sounds like **health**
-111. marital status | /marital status/ — sounds like **marital status**
-112. employment status | /employment status/ — sounds like **employment status**
-113. other factors | /other factors/ — sounds like **other factors**
-114. the environment | /the environment/ — sounds like **the environment**
-115. equality | /equality/ — sounds like **equality**
-116. the nature of original living | /the nature of original living/ — sounds like **the nature of original living**
+103. what makes people happy | /wʌt meɪks ˈpipəl ˈhæpi/ — sounds like **WUHT MAYKS PEE-puhl HAP-ee**
+104. this survey | /ðɪs ˈsɜrveɪ/ — sounds like **THIS SUR-vay**
+105. a valid example | /ə ˈvælɪd ɪɡˈzæmpəl/ — sounds like **uh VAL-id ig-ZAM-puhl**
+106. happiness economics | /ˈhæpinəs ˌɛkəˈnɑmɪks/ — sounds like **HAP-ee-nus ek-uh-NAH-miks**
+107. a consistent pattern | /ə kənˈsɪstənt ˈpætərn/ — sounds like **uh kuhn-SIS-tuhnt PAT-urn**
+108. people's well-being | /ˈpipəlz ˈwɛlˌbiɪŋ/ — sounds like **PEE-puhlz WEL-bee-ing**
+109. income | /ˈɪnˌkʌm/ — sounds like **IN-kum**
+110. health | /hɛlθ/ — sounds like **HELTH**
+111. marital status | /ˈmærɪtəl ˈsteɪtəs/ — sounds like **MAIR-ih-tuhl STAY-tus**
+112. employment status | /ɪmˈplɔɪmənt ˈsteɪtəs/ — sounds like **im-PLOY-muhnt STAY-tus**
+113. other factors | /ˈʌðər ˈfæktərz/ — sounds like **UH-thur FAK-turz**
+114. the environment | /ði ɪnˈvaɪrənmənt/ — sounds like **thee in-VY-ruhn-muhnt**
+115. equality | /ɪˈkwɑləti/ — sounds like **ih-KWAH-luh-tee**
+116. the nature of original living | /ðə ˈneɪtʃər əv əˈrɪdʒənəl ˈlɪvɪŋ/ — sounds like **thuh NAY-chur uhv uh-RIJ-ih-nuhl LIV-ing**
 
 ## Topic 10: Climate Change Predictions
 
-117. climate change predictions | /climate change predictions/ — sounds like **climate change predictions**
-118. panicked | /panicked/ — sounds like **panicked**
-119. the reality of global climate change | /the reality of global climate change/ — sounds like **the reality of global climate change**
-120. the prediction of the population bomb | /the prediction of the population bomb/ — sounds like **the prediction of the population bomb**
-121. was criticized | /was criticized/ — sounds like **was criticized**
-122. the world cannot afford to take the risk | /the world cannot afford to take the risk/ — sounds like **the world cannot afford to take the risk**
-123. the climate scientists | /the climate scientists/ — sounds like **the climate scientists**
-124. wrong predictions | /wrong predictions/ — sounds like **wrong predictions**
-125. major precipitation changes | /major precipitation changes/ — sounds like **major precipitation changes**
+117. climate change predictions | /ˈklaɪmɪt tʃeɪndʒ prɪˈdɪkʃənz/ — sounds like **KLY-mit CHAYNJ prih-DIK-shuhnz**
+118. panicked | /ˈpænɪkt/ — sounds like **PAN-ikt**
+119. the reality of global climate change | /ðə riˈæləti əv ˈɡloʊbəl ˈklaɪmɪt tʃeɪndʒ/ — sounds like **thuh ree-AL-ih-tee uhv GLOH-buhl KLY-mit CHAYNJ**
+120. the prediction of the population bomb | /ðə prɪˈdɪkʃən əv ðə ˌpɑpjəˈleɪʃən bɑm/ — sounds like **thuh prih-DIK-shuhn uhv thuh pah-pyuh-LAY-shuhn BAHM**
+121. was criticized | /wʌz ˈkrɪtɪˌsaɪzd/ — sounds like **WUHZ KRIH-tih-syzd**
+122. the world cannot afford to take the risk | /ðə wɜrld ˈkænɑt əˈfɔrd tə teɪk ðə rɪsk/ — sounds like **thuh WURLD KAN-aht uh-FORD tuh TAYK thuh RISK**
+123. the climate scientists | /ðə ˈklaɪmɪt ˈsaɪəntɪsts/ — sounds like **thuh KLY-mit SY-uhn-tists**
+124. wrong predictions | /rɔŋ prɪˈdɪkʃənz/ — sounds like **RAWNG prih-DIK-shuhnz**
+125. major precipitation changes | /ˈmeɪdʒər prɪˌsɪpɪˈteɪʃən ˈtʃeɪndʒɪz/ — sounds like **MAY-jur prih-sip-ih-TAY-shuhn CHAYN-jiz**
 
 ## Topic 11: Therapeutic Environment
 
-126. therapeutic environment | /therapeutic environment/ — sounds like **therapeutic environment**
-127. fresh air | /fresh air/ — sounds like **fresh air**
-128. daylight | /daylight/ — sounds like **daylight**
-129. positive impacts on patients' recovery | /positive impacts on patients' recovery/ — sounds like **positive impacts on patients' recovery**
-130. architecture | /architecture/ — sounds like **architecture**
-131. viewing hospital yards | /viewing hospital yards/ — sounds like **viewing hospital yards**
-132. rest well | /rest well/ — sounds like **rest well**
-133. sleep well | /sleep well/ — sounds like **sleep well**
-134. release their stress and pain | /release their stress and pain/ — sounds like **release their stress and pain**
-135. nurses in hospitals | /nurses in hospitals/ — sounds like **nurses in hospitals**
-136. the designed hospital environment | /the designed hospital environment/ — sounds like **the designed hospital environment**
+126. therapeutic environment | /ˌθɛrəˈpjutɪk ɪnˈvaɪrənmənt/ — sounds like **thair-uh-PYOO-tik in-VY-ruhn-muhnt**
+127. fresh air | /frɛʃ ɛr/ — sounds like **FRESH AIR**
+128. daylight | /ˈdeɪˌlaɪt/ — sounds like **DAY-lyt**
+129. positive impacts on patients' recovery | /ˈpɑzətɪv ˈɪmpækts ɑn ˈpeɪʃənts rɪˈkʌvəri/ — sounds like **PAH-zih-tiv IM-pakts ahn PAY-shuhnts rih-KUV-uh-ree**
+130. architecture | /ˈɑrkɪˌtɛktʃər/ — sounds like **AR-kih-tek-chur**
+131. viewing hospital yards | /ˈvjuɪŋ ˈhɑspɪtəl jɑrdz/ — sounds like **VYOO-ing HAHS-pih-tuhl YARDZ**
+132. rest well | /rɛst wɛl/ — sounds like **REST WEL**
+133. sleep well | /slip wɛl/ — sounds like **SLEEP WEL**
+134. release their stress and pain | /rɪˈlis ðɛr strɛs ænd peɪn/ — sounds like **rih-LEES thair STRES and PAYN**
+135. nurses in hospitals | /ˈnɜrsɪz ɪn ˈhɑspɪtəlz/ — sounds like **NUR-siz in HAHS-pih-tuhlz**
+136. the designed hospital environment | /ðə dɪˈzaɪnd ˈhɑspɪtəl ɪnˈvaɪrənmənt/ — sounds like **thuh dih-ZYND HAHS-pih-tuhl in-VY-ruhn-muhnt**
 
 ## Topic 12: The Separation of Powers
 
-137. the separation of powers | /the separation of powers/ — sounds like **the separation of powers**
-138. the checks and balances of the country | /the checks and balances of the country/ — sounds like **the checks and balances of the country**
-139. the constitution | /the constitution/ — sounds like **the constitution**
-140. the legislative branch | /the legislative branch/ — sounds like **the legislative branch**
-141. makes the law | /makes the law/ — sounds like **makes the law**
-142. the president | /the president/ — sounds like **the president**
-143. the Senate | /the Senate/ — sounds like **the Senate**
-144. carry out the law | /carry out the law/ — sounds like **carry out the law**
-145. the judicial authorities | /the judicial authorities/ — sounds like **the judicial authorities**
-146. interpret the law | /interpret the law/ — sounds like **interpret the law**
-147. a blurry line | /a blurry line/ — sounds like **a blurry line**
-148. the legislative | /the legislative/ — sounds like **the legislative**
-149. executive roles | /executive roles/ — sounds like **executive roles**
+137. the separation of powers | /ðə ˌsɛpəˈreɪʃən əv ˈpaʊərz/ — sounds like **thuh sep-uh-RAY-shuhn uhv POW-urz**
+138. the checks and balances of the country | /ðə tʃɛks ænd ˈbælənsɪz əv ðə ˈkʌntri/ — sounds like **thuh CHEKS and BAL-uhn-siz uhv thuh KUN-tree**
+139. the constitution | /ðə ˌkɑnstɪˈtuʃən/ — sounds like **thuh kahn-stih-TOO-shuhn**
+140. the legislative branch | /ðə ˈlɛdʒɪsˌleɪtɪv bræntʃ/ — sounds like **thuh LEJ-is-lay-tiv BRANCH**
+141. makes the law | /meɪks ðə lɔ/ — sounds like **MAYKS thuh LAW**
+142. the president | /ðə ˈprɛzɪdənt/ — sounds like **thuh PREZ-ih-duhnt**
+143. the Senate | /ðə ˈsɛnɪt/ — sounds like **thuh SEN-it**
+144. carry out the law | /ˈkæri aʊt ðə lɔ/ — sounds like **KAIR-ee OWT thuh LAW**
+145. the judicial authorities | /ðə dʒuˈdɪʃəl əˈθɔrətiz/ — sounds like **thuh joo-DISH-uhl uh-THOR-ih-teez**
+146. interpret the law | /ɪnˈtɜrprɪt ðə lɔ/ — sounds like **in-TUR-prit thuh LAW**
+147. a blurry line | /ə ˈblɜri laɪn/ — sounds like **uh BLUR-ee LYN**
+148. the legislative | /ðə ˈlɛdʒɪsˌleɪtɪv/ — sounds like **thuh LEJ-is-lay-tiv**
+149. executive roles | /ɪɡˈzɛkjətɪv roʊlz/ — sounds like **ig-ZEK-yuh-tiv ROHLZ**
 
 ## Topic 13: Need
 
-150. need | /need/ — sounds like **need**
-151. use and interpret the word 'need' | /use and interpret the word 'need'/ — sounds like **use and interpret the word 'need'**
-152. I need a holiday | /I need a holiday/ — sounds like **I need a holiday**
-153. an expression of a strong desire | /an expression of a strong desire/ — sounds like **an expression of a strong desire**
-154. a basic need | /a basic need/ — sounds like **a basic need**
-155. the plant needs water | /the plant needs water/ — sounds like **the plant needs water**
-156. an objective statement | /an objective statement/ — sounds like **an objective statement**
-157. essential | /essential/ — sounds like **essential**
-158. sunlight | /sunlight/ — sounds like **sunlight**
-159. water | /water/ — sounds like **water**
-160. plants | /plants/ — sounds like **plants**
-161. a psychological use | /a psychological use/ — sounds like **a psychological use**
-162. lacks something | /lacks something/ — sounds like **lacks something**
+150. need | /nid/ — sounds like **NEED**
+151. use and interpret the word 'need' | /juz ænd ɪnˈtɜrprɪt ðə wɜrd nid/ — sounds like **YOOZ and in-TUR-prit thuh WURD NEED**
+152. I need a holiday | /aɪ nid ə ˈhɑləˌdeɪ/ — sounds like **Y NEED uh HAH-luh-day**
+153. an expression of a strong desire | /æn ɪkˈsprɛʃən əv ə strɔŋ dɪˈzaɪər/ — sounds like **an ik-SPRESH-uhn uhv uh STRAWNG dih-ZY-ur**
+154. a basic need | /ə ˈbeɪsɪk nid/ — sounds like **uh BAY-sik NEED**
+155. the plant needs water | /ðə plænt nidz ˈwɔtər/ — sounds like **thuh PLANT NEEDZ WAW-tur**
+156. an objective statement | /æn əbˈdʒɛktɪv ˈsteɪtmənt/ — sounds like **an uhb-JEK-tiv STAYT-muhnt**
+157. essential | /ɪˈsɛnʃəl/ — sounds like **ih-SEN-shuhl**
+158. sunlight | /ˈsʌnˌlaɪt/ — sounds like **SUN-lyt**
+159. water | /ˈwɔtər/ — sounds like **WAW-tur**
+160. plants | /plænts/ — sounds like **PLANTS**
+161. a psychological use | /ə ˌsaɪkəˈlɑdʒɪkəl jus/ — sounds like **uh sy-kuh-LAH-jih-kuhl YOOS**
+162. lacks something | /læks ˈsʌmθɪŋ/ — sounds like **LAKS SUM-thing**
 
 ## Topic 14: Globalization & Detraditionalization
 
-163. globalization & detraditionalization | /globalization & detraditionalization/ — sounds like **globalization & detraditionalization**
-164. the world | /the world/ — sounds like **the world**
-165. a global village | /a global village/ — sounds like **a global village**
-166. instant communications | /instant communications/ — sounds like **instant communications**
-167. the internet | /the internet/ — sounds like **the internet**
-168. shrinking | /shrinking/ — sounds like **shrinking**
-169. distance and speed | /distance and speed/ — sounds like **distance and speed**
-170. globalization | /globalization/ — sounds like **globalization**
-171. detraditionalization | /detraditionalization/ — sounds like **detraditionalization**
-172. the erosion of | /the erosion of/ — sounds like **the erosion of**
-173. traditional culture | /traditional culture/ — sounds like **traditional culture**
-174. conventional ways | /conventional ways/ — sounds like **conventional ways**
-175. young people | /young people/ — sounds like **young people**
-176. rejecting the culture | /rejecting the culture/ — sounds like **rejecting the culture**
-177. imitating | /imitating/ — sounds like **imitating**
-178. the Hollywood models | /the Hollywood models/ — sounds like **the Hollywood models**
+163. globalization & detraditionalization | /ˌɡloʊbələˈzeɪʃən ænd diˌtrædɪʃənəlaɪˈzeɪʃən/ — sounds like **GLOH-buh-lih-ZAY-shuhn and dee-trad-ih-shuhn-uhl-eye-ZAY-shuhn**
+164. the world | /ðə wɜrld/ — sounds like **thuh WURLD**
+165. a global village | /ə ˈɡloʊbəl ˈvɪlɪdʒ/ — sounds like **uh GLOH-buhl VIL-ij**
+166. instant communications | /ˈɪnstənt kəˌmjunɪˈkeɪʃənz/ — sounds like **IN-stuhnt kuh-myoo-nih-KAY-shuhnz**
+167. the internet | /ði ˈɪntərˌnɛt/ — sounds like **thee IN-tur-net**
+168. shrinking | /ˈʃrɪŋkɪŋ/ — sounds like **SHRINK-ing**
+169. distance and speed | /ˈdɪstəns ænd spid/ — sounds like **DIS-tuhns and SPEED**
+170. globalization | /ˌɡloʊbələˈzeɪʃən/ — sounds like **GLOH-buh-lih-ZAY-shuhn**
+171. detraditionalization | /diˌtrædɪʃənəlaɪˈzeɪʃən/ — sounds like **dee-trad-ih-shuhn-uhl-eye-ZAY-shuhn**
+172. the erosion of | /ði ɪˈroʊʒən əv/ — sounds like **thee ih-ROH-zhuhn uhv**
+173. traditional culture | /trəˈdɪʃənəl ˈkʌltʃər/ — sounds like **truh-DISH-uh-nuhl KUL-chur**
+174. conventional ways | /kənˈvɛnʃənəl weɪz/ — sounds like **kuhn-VEN-shuh-nuhl WAYZ**
+175. young people | /jʌŋ ˈpipəl/ — sounds like **YUNG PEE-puhl**
+176. rejecting the culture | /rɪˈdʒɛktɪŋ ðə ˈkʌltʃər/ — sounds like **rih-JEK-ting thuh KUL-chur**
+177. imitating | /ˈɪmɪˌteɪtɪŋ/ — sounds like **IM-ih-tay-ting**
+178. the Hollywood models | /ðə ˈhɑliˌwʊd ˈmɑdəlz/ — sounds like **thuh HAH-lee-wood MAH-duhlz**
 
 ## Topic 15: What Happened to Journalism
 
-179. what happened to journalism | /what happened to journalism/ — sounds like **what happened to journalism**
-180. the rise of the Internet | /the rise of the Internet/ — sounds like **the rise of the Internet**
-181. journalism | /journalism/ — sounds like **journalism**
-182. how it's produced | /how it's produced/ — sounds like **how it's produced**
-183. how it's consumed | /how it's consumed/ — sounds like **how it's consumed**
-184. feel the change | /feel the change/ — sounds like **feel the change**
-185. the speed of news spreading | /the speed of news spreading/ — sounds like **the speed of news spreading**
-186. gain information | /gain information/ — sounds like **gain information**
-187. a small piece of ordinary video | /a small piece of ordinary video/ — sounds like **a small piece of ordinary video**
-188. a new type of journalism | /a new type of journalism/ — sounds like **a new type of journalism**
+179. what happened to journalism | /wʌt ˈhæpənd tə ˈdʒɜrnəˌlɪzəm/ — sounds like **WUHT HAP-uhnd tuh JUR-nuh-liz-uhm**
+180. the rise of the Internet | /ðə raɪz əv ði ˈɪntərˌnɛt/ — sounds like **thuh RYZ uhv thee IN-tur-net**
+181. journalism | /ˈdʒɜrnəˌlɪzəm/ — sounds like **JUR-nuh-liz-uhm**
+182. how it's produced | /haʊ ɪts prəˈdust/ — sounds like **HOW its pruh-DOOST**
+183. how it's consumed | /haʊ ɪts kənˈsumd/ — sounds like **HOW its kuhn-SOOMD**
+184. feel the change | /fil ðə tʃeɪndʒ/ — sounds like **FEEL thuh CHAYNJ**
+185. the speed of news spreading | /ðə spid əv nuz ˈsprɛdɪŋ/ — sounds like **thuh SPEED uhv NOOZ SPRED-ing**
+186. gain information | /ɡeɪn ˌɪnfərˈmeɪʃən/ — sounds like **GAYN in-fur-MAY-shuhn**
+187. a small piece of ordinary video | /ə smɔl pis əv ˈɔrdəˌnɛri ˈvɪdioʊ/ — sounds like **uh SMAWL PEES uhv OR-dih-nair-ee VID-ee-oh**
+188. a new type of journalism | /ə nu taɪp əv ˈdʒɜrnəˌlɪzəm/ — sounds like **uh NOO TYP uhv JUR-nuh-liz-uhm**
 
 ## Topic 16: Cultural Diversity in Australia
 
-189. cultural diversity in Australia | /cultural diversity in Australia/ — sounds like **cultural diversity in Australia**
-190. a multicultural country | /a multicultural country/ — sounds like **a multicultural country**
-191. immigrants | /immigrants/ — sounds like **immigrants**
-192. world's oldest continuous cultures | /world's oldest continuous cultures/ — sounds like **world's oldest continuous cultures**
-193. cultural diversity | /cultural diversity/ — sounds like **cultural diversity**
-194. significant feature | /significant feature/ — sounds like **significant feature**
-195. Australian society | /Australian society/ — sounds like **Australian society**
-196. productivity | /productivity/ — sounds like **productivity**
-197. economic performance | /economic performance/ — sounds like **economic performance**
-198. labor force | /labor force/ — sounds like **labor force**
-199. statistics | /statistics/ — sounds like **statistics**
-200. born overseas | /born overseas/ — sounds like **born overseas**
-201. a foreign-born parent | /a foreign-born parent/ — sounds like **a foreign-born parent**
+189. cultural diversity in Australia | /ˈkʌltʃərəl dɪˈvɜrsəti ɪn ɔˈstreɪljə/ — sounds like **KUL-chur-uhl dih-VUR-sih-tee in aw-STRAYL-yuh**
+190. a multicultural country | /ə ˌmʌltiˈkʌltʃərəl ˈkʌntri/ — sounds like **uh mul-tee-KUL-chur-uhl KUN-tree**
+191. immigrants | /ˈɪmɪɡrənts/ — sounds like **IM-ih-gruhnts**
+192. world's oldest continuous cultures | /wɜrldz ˈoʊldɪst kənˈtɪnjuəs ˈkʌltʃərz/ — sounds like **WURLDZ OHLD-ist kuhn-TIN-yoo-us KUL-churz**
+193. cultural diversity | /ˈkʌltʃərəl dɪˈvɜrsəti/ — sounds like **KUL-chur-uhl dih-VUR-sih-tee**
+194. significant feature | /sɪɡˈnɪfɪkənt ˈfitʃər/ — sounds like **sig-NIF-ih-kuhnt FEE-chur**
+195. Australian society | /ɔˈstreɪljən səˈsaɪəti/ — sounds like **aw-STRAYL-yuhn suh-SY-uh-tee**
+196. productivity | /ˌproʊdʌkˈtɪvəti/ — sounds like **proh-duk-TIV-ih-tee**
+197. economic performance | /ˌɛkəˈnɑmɪk pərˈfɔrməns/ — sounds like **ek-uh-NAH-mik pur-FOR-muhns**
+198. labor force | /ˈleɪbər fɔrs/ — sounds like **LAY-bur FORS**
+199. statistics | /stəˈtɪstɪks/ — sounds like **stuh-TIS-tiks**
+200. born overseas | /bɔrn ˌoʊvərˈsiz/ — sounds like **BORN oh-vur-SEEZ**
+201. a foreign-born parent | /ə ˈfɔrən bɔrn ˈpɛrənt/ — sounds like **uh FOR-uhn BORN PAIR-uhnt**
 
 ## Topic 17: Manager
 
-202. manager | /manager/ — sounds like **manager**
-203. managers are busy | /managers are busy/ — sounds like **managers are busy**
-204. read more books | /read more books/ — sounds like **read more books**
-205. university | /university/ — sounds like **university**
-206. improve themselves | /improve themselves/ — sounds like **improve themselves**
-207. the best manager | /the best manager/ — sounds like **the best manager**
-208. knows their organization better | /knows their organization better/ — sounds like **knows their organization better**
-209. a professor in management | /a professor in management/ — sounds like **a professor in management**
-210. with broad perspectives | /with broad perspectives/ — sounds like **with broad perspectives**
-211. experience | /experience/ — sounds like **experience**
-212. management knowledge | /management knowledge/ — sounds like **management knowledge**
-213. learning management | /learning management/ — sounds like **learning management**
+202. manager | /ˈmænɪdʒər/ — sounds like **MAN-ih-jur**
+203. managers are busy | /ˈmænɪdʒərz ɑr ˈbɪzi/ — sounds like **MAN-ih-jurz ar BIZ-ee**
+204. read more books | /rid mɔr bʊks/ — sounds like **REED MOR BOOKS**
+205. university | /ˌjunəˈvɜrsəti/ — sounds like **yoo-nuh-VUR-sih-tee**
+206. improve themselves | /ɪmˈpruv ðəmˈsɛlvz/ — sounds like **im-PROOV thuhm-SELVZ**
+207. the best manager | /ðə bɛst ˈmænɪdʒər/ — sounds like **thuh BEST MAN-ih-jur**
+208. knows their organization better | /noʊz ðɛr ˌɔrɡənɪˈzeɪʃən ˈbɛtər/ — sounds like **NOHZ thair or-guh-nih-ZAY-shuhn BET-ur**
+209. a professor in management | /ə prəˈfɛsər ɪn ˈmænɪdʒmənt/ — sounds like **uh pruh-FES-ur in MAN-ij-muhnt**
+210. with broad perspectives | /wɪð brɔd pərˈspɛktɪvz/ — sounds like **WITH BRAWD pur-SPEK-tivz**
+211. experience | /ɪkˈspɪriəns/ — sounds like **ik-SPEER-ee-uhns**
+212. management knowledge | /ˈmænɪdʒmənt ˈnɑlɪdʒ/ — sounds like **MAN-ij-muhnt NAH-lij**
+213. learning management | /ˈlɜrnɪŋ ˈmænɪdʒmənt/ — sounds like **LUR-ning MAN-ij-muhnt**
 
 ## Topic 18: Moral Objectivism and Moral Absolutism
 
-214. moral objectivism and moral absolutism | /moral objectivism and moral absolutism/ — sounds like **moral objectivism and moral absolutism**
-215. moral objectivism | /moral objectivism/ — sounds like **moral objectivism**
-216. some universal moral principles | /some universal moral principles/ — sounds like **some universal moral principles**
-217. valid | /valid/ — sounds like **valid**
-218. all social environments | /all social environments/ — sounds like **all social environments**
-219. all situations | /all situations/ — sounds like **all situations**
-220. moral absolutism | /moral absolutism/ — sounds like **moral absolutism**
-221. firm | /firm/ — sounds like **firm**
-222. absolute boundary | /absolute boundary/ — sounds like **absolute boundary**
-223. what is right and what is wrong | /what is right and what is wrong/ — sounds like **what is right and what is wrong**
-224. non-overridable principles | /non-overridable principles/ — sounds like **non-overridable principles**
-225. followed | /followed/ — sounds like **followed**
-226. violated | /violated/ — sounds like **violated**
-227. the notion of right and wrong | /the notion of right and wrong/ — sounds like **the notion of right and wrong**
-228. different interpretations | /different interpretations/ — sounds like **different interpretations**
-229. situations | /situations/ — sounds like **situations**
+214. moral objectivism and moral absolutism | /ˈmɔrəl əbˈdʒɛktɪˌvɪzəm ænd ˈmɔrəl ˌæbsəˈlutɪzəm/ — sounds like **MOR-uhl uhb-JEK-tih-viz-uhm and MOR-uhl ab-suh-LOO-tiz-uhm**
+215. moral objectivism | /ˈmɔrəl əbˈdʒɛktɪˌvɪzəm/ — sounds like **MOR-uhl uhb-JEK-tih-viz-uhm**
+216. some universal moral principles | /sʌm ˌjunəˈvɜrsəl ˈmɔrəl ˈprɪnsəpəlz/ — sounds like **SUM yoo-nuh-VUR-suhl MOR-uhl PRIN-sih-puhlz**
+217. valid | /ˈvælɪd/ — sounds like **VAL-id**
+218. all social environments | /ɔl ˈsoʊʃəl ɪnˈvaɪrənmənts/ — sounds like **AWL SOH-shuhl in-VY-ruhn-muhnts**
+219. all situations | /ɔl ˌsɪtʃuˈeɪʃənz/ — sounds like **AWL sit-choo-AY-shuhnz**
+220. moral absolutism | /ˈmɔrəl ˌæbsəˈlutɪzəm/ — sounds like **MOR-uhl ab-suh-LOO-tiz-uhm**
+221. firm | /fɜrm/ — sounds like **FURM**
+222. absolute boundary | /ˈæbsəˌlut ˈbaʊndəri/ — sounds like **AB-suh-loot BOWN-duh-ree**
+223. what is right and what is wrong | /wʌt ɪz raɪt ænd wʌt ɪz rɔŋ/ — sounds like **WUHT iz RYT and WUHT iz RAWNG**
+224. non-overridable principles | /nɑn ˌoʊvərˈraɪdəbəl ˈprɪnsəpəlz/ — sounds like **NAHN oh-vur-RY-duh-buhl PRIN-sih-puhlz**
+225. followed | /ˈfɑloʊd/ — sounds like **FAH-lohd**
+226. violated | /ˈvaɪəˌleɪtɪd/ — sounds like **VY-uh-lay-tid**
+227. the notion of right and wrong | /ðə ˈnoʊʃən əv raɪt ænd rɔŋ/ — sounds like **thuh NOH-shuhn uhv RYT and RAWNG**
+228. different interpretations | /ˈdɪfərənt ɪnˌtɜrprɪˈteɪʃənz/ — sounds like **DIF-ur-uhnt in-tur-prih-TAY-shuhnz**
+229. situations | /ˌsɪtʃuˈeɪʃənz/ — sounds like **sit-choo-AY-shuhnz**
 
 ## Topic 19: Canned Food During the Great Depression
 
-230. canned food during the Great Depression | /canned food during the Great Depression/ — sounds like **canned food during the Great Depression**
-231. canned food | /canned food/ — sounds like **canned food**
-232. the market | /the market/ — sounds like **the market**
-233. the Great Depression | /the Great Depression/ — sounds like **the Great Depression**
-234. refrigerators | /refrigerators/ — sounds like **refrigerators**
-235. popular | /popular/ — sounds like **popular**
-236. cities and rural areas | /cities and rural areas/ — sounds like **cities and rural areas**
-237. the Rural Electrification Administration | /the Rural Electrification Administration/ — sounds like **the Rural Electrification Administration**
-238. farmers | /farmers/ — sounds like **farmers**
-239. purchase appliances | /purchase appliances/ — sounds like **purchase appliances**
-240. the rise of frozen foods | /the rise of frozen foods/ — sounds like **the rise of frozen foods**
-241. modern food technology | /modern food technology/ — sounds like **modern food technology**
-242. Americans | /Americans/ — sounds like **Americans**
-243. supermarkets | /supermarkets/ — sounds like **supermarkets**
-244. freezer cases | /freezer cases/ — sounds like **freezer cases**
+230. canned food during the Great Depression | /kænd fud ˈdʊrɪŋ ðə ɡreɪt dɪˈprɛʃən/ — sounds like **KAND FOOD DOOR-ing thuh GRAYT dih-PRESH-uhn**
+231. canned food | /kænd fud/ — sounds like **KAND FOOD**
+232. the market | /ðə ˈmɑrkɪt/ — sounds like **thuh MAR-kit**
+233. the Great Depression | /ðə ɡreɪt dɪˈprɛʃən/ — sounds like **thuh GRAYT dih-PRESH-uhn**
+234. refrigerators | /rɪˈfrɪdʒəˌreɪtərz/ — sounds like **rih-FRIJ-uh-ray-turz**
+235. popular | /ˈpɑpjələr/ — sounds like **PAH-pyuh-lur**
+236. cities and rural areas | /ˈsɪtiz ænd ˈrʊrəl ˈɛriəz/ — sounds like **SIT-eez and ROOR-uhl AIR-ee-uhz**
+237. the Rural Electrification Administration | /ðə ˈrʊrəl ɪˌlɛktrɪfɪˈkeɪʃən ædˌmɪnɪˈstreɪʃən/ — sounds like **thuh ROOR-uhl ih-lek-trih-fih-KAY-shuhn ad-min-ih-STRAY-shuhn**
+238. farmers | /ˈfɑrmərz/ — sounds like **FAR-murz**
+239. purchase appliances | /ˈpɜrtʃəs əˈplaɪənsɪz/ — sounds like **PUR-chuhs uh-PLY-uhn-siz**
+240. the rise of frozen foods | /ðə raɪz əv ˈfroʊzən fudz/ — sounds like **thuh RYZ uhv FROH-zuhn FOODZ**
+241. modern food technology | /ˈmɑdərn fud tɛkˈnɑlədʒi/ — sounds like **MAH-durn FOOD tek-NAH-luh-jee**
+242. Americans | /əˈmɛrɪkənz/ — sounds like **uh-MAIR-ih-kuhnz**
+243. supermarkets | /ˈsupərˌmɑrkɪts/ — sounds like **SOO-pur-mar-kits**
+244. freezer cases | /ˈfrizər ˈkeɪsɪz/ — sounds like **FREE-zur KAY-siz**
 
 ## Topic 20: Synthetic Biology & Genetic Engineering
 
-245. synthetic biology & genetic engineering | /synthetic biology & genetic engineering/ — sounds like **synthetic biology & genetic engineering**
-246. synthetic biology | /synthetic biology/ — sounds like **synthetic biology**
-247. the biological system | /the biological system/ — sounds like **the biological system**
-248. the next level of genetic engineering | /the next level of genetic engineering/ — sounds like **the next level of genetic engineering**
-249. 40 years ago | /40 years ago/ — sounds like **40 years ago**
-250. cut and paste DNA | /cut and paste DNA/ — sounds like **cut and paste DNA**
-251. from one organism to another | /from one organism to another/ — sounds like **from one organism to another**
-252. synthesize DNA | /synthesize DNA/ — sounds like **synthesize DNA**
-253. create new organisms | /create new organisms/ — sounds like **create new organisms**
-254. building a cellular factory | /building a cellular factory/ — sounds like **building a cellular factory**
-255. billions of bacteria | /billions of bacteria/ — sounds like **billions of bacteria**
-256. from one bacterium | /from one bacterium/ — sounds like **from one bacterium**
+245. synthetic biology & genetic engineering | /sɪnˈθɛtɪk baɪˈɑlədʒi ænd dʒəˈnɛtɪk ˌɛndʒɪˈnɪrɪŋ/ — sounds like **sin-THET-ik by-AH-luh-jee and juh-NET-ik en-jih-NEER-ing**
+246. synthetic biology | /sɪnˈθɛtɪk baɪˈɑlədʒi/ — sounds like **sin-THET-ik by-AH-luh-jee**
+247. the biological system | /ðə ˌbaɪəˈlɑdʒɪkəl ˈsɪstəm/ — sounds like **thuh by-uh-LAH-jih-kuhl SIS-tuhm**
+248. the next level of genetic engineering | /ðə nɛkst ˈlɛvəl əv dʒəˈnɛtɪk ˌɛndʒɪˈnɪrɪŋ/ — sounds like **thuh NEKST LEV-uhl uhv juh-NET-ik en-jih-NEER-ing**
+249. 40 years ago | /ˈfɔrti jɪrz əˈɡoʊ/ — sounds like **FOR-tee YEERZ uh-GOH**
+250. cut and paste DNA | /kʌt ænd peɪst di ɛn eɪ/ — sounds like **KUT and PAYST DEE EN AY**
+251. from one organism to another | /frʌm wʌn ˈɔrɡəˌnɪzəm tə əˈnʌðər/ — sounds like **FRUM WUN OR-guh-niz-uhm tuh uh-NUH-thur**
+252. synthesize DNA | /ˈsɪnθəˌsaɪz di ɛn eɪ/ — sounds like **SIN-thuh-syz DEE EN AY**
+253. create new organisms | /kriˈeɪt nu ˈɔrɡəˌnɪzəmz/ — sounds like **kree-AYT NOO OR-guh-niz-uhmz**
+254. building a cellular factory | /ˈbɪldɪŋ ə ˈsɛljələr ˈfæktəri/ — sounds like **BIL-ding uh SEL-yuh-lur FAK-tuh-ree**
+255. billions of bacteria | /ˈbɪljənz əv bækˈtɪriə/ — sounds like **BIL-yuhnz uhv bak-TEER-ee-uh**
+256. from one bacterium | /frʌm wʌn bækˈtɪriəm/ — sounds like **FRUM WUN bak-TEER-ee-uhm**
 
 ## Topic 21: Mars and Earth
 
-257. Mars and Earth | /Mars and Earth/ — sounds like **Mars and Earth**
-258. Mars | /Mars/ — sounds like **Mars**
-259. neighboring planet | /neighboring planet/ — sounds like **neighboring planet**
-260. a similar geological surface | /a similar geological surface/ — sounds like **a similar geological surface**
-261. landscape | /landscape/ — sounds like **landscape**
-262. a desert | /a desert/ — sounds like **a desert**
-263. evidence | /evidence/ — sounds like **evidence**
-264. the existence of water | /the existence of water/ — sounds like **the existence of water**
-265. heavy gases | /heavy gases/ — sounds like **heavy gases**
-266. billions of years | /billions of years/ — sounds like **billions of years**
-267. the low gravity | /the low gravity/ — sounds like **the low gravity**
-268. a thin layer of atmosphere | /a thin layer of atmosphere/ — sounds like **a thin layer of atmosphere**
-269. the most ideal destination | /the most ideal destination/ — sounds like **the most ideal destination**
-270. Earth | /Earth/ — sounds like **Earth**
+257. Mars and Earth | /mɑrz ænd ɜrθ/ — sounds like **MARZ and URTH**
+258. Mars | /mɑrz/ — sounds like **MARZ**
+259. neighboring planet | /ˈneɪbərɪŋ ˈplænɪt/ — sounds like **NAY-bur-ing PLAN-it**
+260. a similar geological surface | /ə ˈsɪmələr ˌdʒiəˈlɑdʒɪkəl ˈsɜrfɪs/ — sounds like **uh SIM-ih-lur jee-uh-LAH-jih-kuhl SUR-fis**
+261. landscape | /ˈlændˌskeɪp/ — sounds like **LAND-skayp**
+262. a desert | /ə ˈdɛzərt/ — sounds like **uh DEZ-urt**
+263. evidence | /ˈɛvɪdəns/ — sounds like **EV-ih-duhns**
+264. the existence of water | /ði ɪɡˈzɪstəns əv ˈwɔtər/ — sounds like **thee ig-ZIS-tuhns uhv WAW-tur**
+265. heavy gases | /ˈhɛvi ˈɡæsɪz/ — sounds like **HEV-ee GAS-iz**
+266. billions of years | /ˈbɪljənz əv jɪrz/ — sounds like **BIL-yuhnz uhv YEERZ**
+267. the low gravity | /ðə loʊ ˈɡrævəti/ — sounds like **thuh LOH GRAV-ih-tee**
+268. a thin layer of atmosphere | /ə θɪn ˈleɪər əv ˈætməsˌfɪr/ — sounds like **uh THIN LAY-ur uhv AT-muhs-feer**
+269. the most ideal destination | /ðə moʊst aɪˈdiəl ˌdɛstɪˈneɪʃən/ — sounds like **thuh MOHST eye-DEE-uhl des-tih-NAY-shuhn**
+270. Earth | /ɜrθ/ — sounds like **URTH**
 
 ## Topic 22: The History of English
 
-271. the history of English | /the history of English/ — sounds like **the history of English**
-272. English | /English/ — sounds like **English**
-273. a pure language | /a pure language/ — sounds like **a pure language**
-274. borrowed | /borrowed/ — sounds like **borrowed**
-275. 350 other languages | /350 other languages/ — sounds like **350 other languages**
-276. variety | /variety/ — sounds like **variety**
-277. the history of the English language | /the history of the English language/ — sounds like **the history of the English language**
-278. connected | /connected/ — sounds like **connected**
-279. English people | /English people/ — sounds like **English people**
-280. history | /history/ — sounds like **history**
-281. different views | /different views/ — sounds like **different views**
-282. Shakespeare's period | /Shakespeare's period/ — sounds like **Shakespeare's period**
-283. borrowed words | /borrowed words/ — sounds like **borrowed words**
-284. original English | /original English/ — sounds like **original English**
+271. the history of English | /ðə ˈhɪstəri əv ˈɪŋɡlɪʃ/ — sounds like **thuh HIS-tuh-ree uhv ING-glish**
+272. English | /ˈɪŋɡlɪʃ/ — sounds like **ING-glish**
+273. a pure language | /ə pjʊr ˈlæŋɡwɪdʒ/ — sounds like **uh PYOOR LANG-gwij**
+274. borrowed | /ˈbɑroʊd/ — sounds like **BAH-rohd**
+275. 350 other languages | /θri ˈhʌndrəd ˈfɪfti ˈʌðər ˈlæŋɡwɪdʒɪz/ — sounds like **THREE HUN-drud FIF-tee UH-thur LANG-gwij-iz**
+276. variety | /vəˈraɪəti/ — sounds like **vuh-RY-uh-tee**
+277. the history of the English language | /ðə ˈhɪstəri əv ði ˈɪŋɡlɪʃ ˈlæŋɡwɪdʒ/ — sounds like **thuh HIS-tuh-ree uhv thee ING-glish LANG-gwij**
+278. connected | /kəˈnɛktɪd/ — sounds like **kuh-NEK-tid**
+279. English people | /ˈɪŋɡlɪʃ ˈpipəl/ — sounds like **ING-glish PEE-puhl**
+280. history | /ˈhɪstəri/ — sounds like **HIS-tuh-ree**
+281. different views | /ˈdɪfərənt vjuz/ — sounds like **DIF-ur-uhnt VYOOZ**
+282. Shakespeare's period | /ˈʃeɪkspɪrz ˈpɪriəd/ — sounds like **SHAYK-speerz PEER-ee-uhd**
+283. borrowed words | /ˈbɑroʊd wɜrdz/ — sounds like **BAH-rohd WURDZ**
+284. original English | /əˈrɪdʒənəl ˈɪŋɡlɪʃ/ — sounds like **uh-RIJ-ih-nuhl ING-glish**
 
 ## Topic 23: Language and Basic Vocabulary
 
-285. language and basic vocabulary | /language and basic vocabulary/ — sounds like **language and basic vocabulary**
-286. languages | /languages/ — sounds like **languages**
-287. historical linguists | /historical linguists/ — sounds like **historical linguists**
-288. several levels | /several levels/ — sounds like **several levels**
-289. a basic vocabulary | /a basic vocabulary/ — sounds like **a basic vocabulary**
-290. have words that other language don't | /have words that other language don't/ — sounds like **have words that other language don't**
-291. the most comparable words | /the most comparable words/ — sounds like **the most comparable words**
-292. the most universal notions | /the most universal notions/ — sounds like **the most universal notions**
-293. sound similar | /sound similar/ — sounds like **sound similar**
+285. language and basic vocabulary | /ˈlæŋɡwɪdʒ ænd ˈbeɪsɪk voʊˈkæbjəˌlɛri/ — sounds like **LANG-gwij and BAY-sik voh-KAB-yuh-lair-ee**
+286. languages | /ˈlæŋɡwɪdʒɪz/ — sounds like **LANG-gwij-iz**
+287. historical linguists | /hɪˈstɔrɪkəl ˈlɪŋɡwɪsts/ — sounds like **his-TOR-ih-kuhl LING-gwists**
+288. several levels | /ˈsɛvərəl ˈlɛvəlz/ — sounds like **SEV-ur-uhl LEV-uhlz**
+289. a basic vocabulary | /ə ˈbeɪsɪk voʊˈkæbjəˌlɛri/ — sounds like **uh BAY-sik voh-KAB-yuh-lair-ee**
+290. have words that other language don't | /hæv wɜrdz ðæt ˈʌðər ˈlæŋɡwɪdʒ doʊnt/ — sounds like **HAV WURDZ that UH-thur LANG-gwij DOHNT**
+291. the most comparable words | /ðə moʊst ˈkɑmpərəbəl wɜrdz/ — sounds like **thuh MOHST KAM-pur-uh-buhl WURDZ**
+292. the most universal notions | /ðə moʊst ˌjunəˈvɜrsəl ˈnoʊʃənz/ — sounds like **thuh MOHST yoo-nuh-VUR-suhl NOH-shuhnz**
+293. sound similar | /saʊnd ˈsɪmələr/ — sounds like **SOWND SIM-ih-lur**
 
 ## Topic 24: Organizational Study
 
-294. organizational study | /organizational study/ — sounds like **organizational study**
-295. organization studies | /organization studies/ — sounds like **organization studies**
-296. appreciate them | /appreciate them/ — sounds like **appreciate them**
-297. a whole family of disciplines | /a whole family of disciplines/ — sounds like **a whole family of disciplines**
-298. social science | /social science/ — sounds like **social science**
-299. psychology | /psychology/ — sounds like **psychology**
-300. sociology | /sociology/ — sounds like **sociology**
-301. history | /history/ — sounds like **history**
-302. cultural studies | /cultural studies/ — sounds like **cultural studies**
-303. enjoys studying | /enjoys studying/ — sounds like **enjoys studying**
-304. their broad range and breadth | /their broad range and breadth/ — sounds like **their broad range and breadth**
-305. liberating ideas | /liberating ideas/ — sounds like **liberating ideas**
-306. without disciplinary divisions | /without disciplinary divisions/ — sounds like **without disciplinary divisions**
+294. organizational study | /ˌɔrɡənɪˈzeɪʃənəl ˈstʌdi/ — sounds like **or-guh-nih-ZAY-shuh-nuhl STUD-ee**
+295. organization studies | /ˌɔrɡənɪˈzeɪʃən ˈstʌdiz/ — sounds like **or-guh-nih-ZAY-shuhn STUD-eez**
+296. appreciate them | /əˈpriʃiˌeɪt ðɛm/ — sounds like **uh-PREE-shee-ayt THEM**
+297. a whole family of disciplines | /ə hoʊl ˈfæməli əv ˈdɪsəplɪnz/ — sounds like **uh HOHL FAM-uh-lee uhv DIS-ih-plinz**
+298. social science | /ˈsoʊʃəl ˈsaɪəns/ — sounds like **SOH-shuhl SY-uhns**
+299. psychology | /saɪˈkɑlədʒi/ — sounds like **sy-KAH-luh-jee**
+300. sociology | /ˌsoʊsiˈɑlədʒi/ — sounds like **soh-see-AH-luh-jee**
+301. history | /ˈhɪstəri/ — sounds like **HIS-tuh-ree**
+302. cultural studies | /ˈkʌltʃərəl ˈstʌdiz/ — sounds like **KUL-chur-uhl STUD-eez**
+303. enjoys studying | /ɪnˈdʒɔɪz ˈstʌdiɪŋ/ — sounds like **in-JOYZ STUD-ee-ing**
+304. their broad range and breadth | /ðɛr brɔd reɪndʒ ænd brɛdθ/ — sounds like **thair BRAWD RAYNJ and BREDTH**
+305. liberating ideas | /ˈlɪbəˌreɪtɪŋ aɪˈdiəz/ — sounds like **LIB-uh-ray-ting eye-DEE-uhz**
+306. without disciplinary divisions | /wɪˈθaʊt ˌdɪsəpləˈnɛri dɪˈvɪʒənz/ — sounds like **with-OWT dis-ih-plih-NAIR-ee dih-VIZH-uhnz**
 
 ## Topic 25: Australian Immigration
 
-307. Australian immigration | /Australian immigration/ — sounds like **Australian immigration**
-308. the ancestors | /the ancestors/ — sounds like **the ancestors**
-309. the present indigenous people | /the present indigenous people/ — sounds like **the present indigenous people**
-310. first inhabitants in Australia | /first inhabitants in Australia/ — sounds like **first inhabitants in Australia**
-311. sea levels | /sea levels/ — sounds like **sea levels**
-312. the Aboriginal community | /the Aboriginal community/ — sounds like **the Aboriginal community**
-313. develop | /develop/ — sounds like **develop**
-314. diversify | /diversify/ — sounds like **diversify**
-315. settle | /settle/ — sounds like **settle**
-316. the 1970s and 1980s | /the 1970s and 1980s/ — sounds like **the 1970s and 1980s**
-317. refugees | /refugees/ — sounds like **refugees**
-318. the multiculturalism policy | /the multiculturalism policy/ — sounds like **the multiculturalism policy**
-319. in 2004-2005 | /in 2004-2005/ — sounds like **in 2004-2005**
-320. new settlers | /new settlers/ — sounds like **new settlers**
-321. the immigrant population | /the immigrant population/ — sounds like **the immigrant population**
-322. Asia | /Asia/ — sounds like **Asia**
-323. Sydney | /Sydney/ — sounds like **Sydney**
+307. Australian immigration | /ɔˈstreɪljən ˌɪmɪˈɡreɪʃən/ — sounds like **aw-STRAYL-yuhn im-ih-GRAY-shuhn**
+308. the ancestors | /ði ˈænsɛstərz/ — sounds like **thee AN-ses-turz**
+309. the present indigenous people | /ðə ˈprɛzənt ɪnˈdɪdʒənəs ˈpipəl/ — sounds like **thuh PREZ-uhnt in-DIJ-uh-nuhs PEE-puhl**
+310. first inhabitants in Australia | /fɜrst ɪnˈhæbɪtənts ɪn ɔˈstreɪljə/ — sounds like **FURST in-HAB-ih-tuhnts in aw-STRAYL-yuh**
+311. sea levels | /si ˈlɛvəlz/ — sounds like **SEE LEV-uhlz**
+312. the Aboriginal community | /ði ˌæbəˈrɪdʒənəl kəˈmjunəti/ — sounds like **thee ab-uh-RIJ-ih-nuhl kuh-MYOO-nih-tee**
+313. develop | /dɪˈvɛləp/ — sounds like **dih-VEL-uhp**
+314. diversify | /daɪˈvɜrsɪˌfaɪ/ — sounds like **dy-VUR-sih-fy**
+315. settle | /ˈsɛtəl/ — sounds like **SET-uhl**
+316. the 1970s and 1980s | /ðə ˈnaɪntin ˈsɛvəntiz ænd ˈnaɪntin ˈeɪtiz/ — sounds like **thuh NYN-teen SEV-uhn-teez and NYN-teen AY-teez**
+317. refugees | /ˌrɛfjuˈdʒiz/ — sounds like **ref-yoo-JEEZ**
+318. the multiculturalism policy | /ðə ˌmʌltiˈkʌltʃərəˌlɪzəm ˈpɑləsi/ — sounds like **thuh mul-tee-KUL-chur-uh-liz-uhm PAH-luh-see**
+319. in 2004-2005 | /ɪn tu ˈθaʊzənd fɔr tu ˈθaʊzənd faɪv/ — sounds like **in TOO THOW-zuhnd FOR tuh TOO THOW-zuhnd FYV**
+320. new settlers | /nu ˈsɛtlərz/ — sounds like **NOO SET-lurz**
+321. the immigrant population | /ði ˈɪmɪɡrənt ˌpɑpjəˈleɪʃən/ — sounds like **thee IM-ih-gruhnt pah-pyuh-LAY-shuhn**
+322. Asia | /ˈeɪʒə/ — sounds like **AY-zhuh**
+323. Sydney | /ˈsɪdni/ — sounds like **SID-nee**
 
 ## Topic 26: The Stability of Mood
 
-324. the stability of mood | /the stability of mood/ — sounds like **the stability of mood**
-325. vary among different people | /vary among different people/ — sounds like **vary among different people**
-326. easily get intense | /easily get intense/ — sounds like **easily get intense**
-327. riding a roller coaster | /riding a roller coaster/ — sounds like **riding a roller coaster**
-328. loose all the time | /loose all the time/ — sounds like **loose all the time**
-329. the secret of happiness | /the secret of happiness/ — sounds like **the secret of happiness**
-330. mild contentment | /mild contentment/ — sounds like **mild contentment**
-331. a balance between intense and loose emotions | /a balance between intense and loose emotions/ — sounds like **a balance between intense and loose emotions**
+324. the stability of mood | /ðə stəˈbɪləti əv mud/ — sounds like **thuh stuh-BIL-ih-tee uhv MOOD**
+325. vary among different people | /ˈvɛri əˈmʌŋ ˈdɪfərənt ˈpipəl/ — sounds like **VAIR-ee uh-MUNG DIF-ur-uhnt PEE-puhl**
+326. easily get intense | /ˈizəli ɡɛt ɪnˈtɛns/ — sounds like **EE-zuh-lee GET in-TENS**
+327. riding a roller coaster | /ˈraɪdɪŋ ə ˈroʊlər ˈkoʊstər/ — sounds like **RY-ding uh ROH-lur KOH-stur**
+328. loose all the time | /lus ɔl ðə taɪm/ — sounds like **LOOS AWL thuh TYM**
+329. the secret of happiness | /ðə ˈsikrɪt əv ˈhæpinəs/ — sounds like **thuh SEE-krit uhv HAP-ee-nus**
+330. mild contentment | /maɪld kənˈtɛntmənt/ — sounds like **MYLD kuhn-TENT-muhnt**
+331. a balance between intense and loose emotions | /ə ˈbæləns bɪˈtwin ɪnˈtɛns ænd lus ɪˈmoʊʃənz/ — sounds like **uh BAL-uhns bih-TWEEN in-TENS and LOOS ih-MOH-shuhnz**
 
 ## Topic 27: Food Waste in the USA
 
-332. food waste in the USA | /food waste in the USA/ — sounds like **food waste in the USA**
-333. the United States | /the United States/ — sounds like **the United States**
-334. the biggest food waste country | /the biggest food waste country/ — sounds like **the biggest food waste country**
-335. 60% of food waste | /60% of food waste/ — sounds like **60% of food waste**
-336. general consumption | /general consumption/ — sounds like **general consumption**
-337. two main sources | /two main sources/ — sounds like **two main sources**
-338. supermarkets | /supermarkets/ — sounds like **supermarkets**
-339. the used-by section | /the used-by section/ — sounds like **the used-by section**
-340. what people purchase | /what people purchase/ — sounds like **what people purchase**
-341. how they eat | /how they eat/ — sounds like **how they eat**
-342. purchasing all items | /purchasing all items/ — sounds like **purchasing all items**
+332. food waste in the USA | /fud weɪst ɪn ðə ju ɛs eɪ/ — sounds like **FOOD WAYST in thuh YOO ES AY**
+333. the United States | /ðə juˈnaɪtɪd steɪts/ — sounds like **thuh yoo-NYT-id STAYTS**
+334. the biggest food waste country | /ðə ˈbɪɡɪst fud weɪst ˈkʌntri/ — sounds like **thuh BIG-ist FOOD WAYST KUN-tree**
+335. 60% of food waste | /ˈsɪksti pərˈsɛnt əv fud weɪst/ — sounds like **SIK-stee pur-SENT uhv FOOD WAYST**
+336. general consumption | /ˈdʒɛnərəl kənˈsʌmpʃən/ — sounds like **JEN-ur-uhl kuhn-SUMP-shuhn**
+337. two main sources | /tu meɪn ˈsɔrsɪz/ — sounds like **TOO MAYN SOR-siz**
+338. supermarkets | /ˈsupərˌmɑrkɪts/ — sounds like **SOO-pur-mar-kits**
+339. the used-by section | /ðə juzd baɪ ˈsɛkʃən/ — sounds like **thuh YOOZD-BY SEK-shuhn**
+340. what people purchase | /wʌt ˈpipəl ˈpɜrtʃəs/ — sounds like **WUHT PEE-puhl PUR-chuhs**
+341. how they eat | /haʊ ðeɪ it/ — sounds like **HOW THAY EET**
+342. purchasing all items | /ˈpɜrtʃəsɪŋ ɔl ˈaɪtəmz/ — sounds like **PUR-chuh-sing AWL EYE-tuhmz**
 
 ## Topic 28: Hook
 
-343. hook | /hook/ — sounds like **hook**
-344. a hook | /a hook/ — sounds like **a hook**
-345. writing a persuasive essay | /writing a persuasive essay/ — sounds like **writing a persuasive essay**
-346. grab the reader's attention | /grab the reader's attention/ — sounds like **grab the reader's attention**
-347. the controversial issue | /the controversial issue/ — sounds like **the controversial issue**
-348. the first paragraph | /the first paragraph/ — sounds like **the first paragraph**
-349. four or five sentences in length | /four or five sentences in length/ — sounds like **four or five sentences in length**
-350. provoke emotional interest | /provoke emotional interest/ — sounds like **provoke emotional interest**
-351. statistics and facts | /statistics and facts/ — sounds like **statistics and facts**
-352. hypothetical | /hypothetical/ — sounds like **hypothetical**
-353. worst-case scenarios | /worst-case scenarios/ — sounds like **worst-case scenarios**
-354. strong wording | /strong wording/ — sounds like **strong wording**
-355. the urgency of the addressed topic | /the urgency of the addressed topic/ — sounds like **the urgency of the addressed topic**
+343. hook | /hʊk/ — sounds like **HOOK**
+344. a hook | /ə hʊk/ — sounds like **uh HOOK**
+345. writing a persuasive essay | /ˈraɪtɪŋ ə pərˈsweɪsɪv ˈɛseɪ/ — sounds like **RY-ting uh pur-SWAY-siv ES-say**
+346. grab the reader's attention | /ɡræb ðə ˈridərz əˈtɛnʃən/ — sounds like **GRAB thuh REE-durz uh-TEN-shuhn**
+347. the controversial issue | /ðə ˌkɑntrəˈvɜrʃəl ˈɪʃu/ — sounds like **thuh kahn-truh-VUR-shuhl ISH-oo**
+348. the first paragraph | /ðə fɜrst ˈpærəˌɡræf/ — sounds like **thuh FURST PAIR-uh-graf**
+349. four or five sentences in length | /fɔr ɔr faɪv ˈsɛntənsɪz ɪn lɛŋθ/ — sounds like **FOR or FYV SEN-tuhn-siz in LENGTH**
+350. provoke emotional interest | /prəˈvoʊk ɪˈmoʊʃənəl ˈɪntrəst/ — sounds like **pruh-VOHK ih-MOH-shuh-nuhl IN-trist**
+351. statistics and facts | /stəˈtɪstɪks ænd fækts/ — sounds like **stuh-TIS-tiks and FAKTS**
+352. hypothetical | /ˌhaɪpəˈθɛtɪkəl/ — sounds like **hy-puh-THET-ih-kuhl**
+353. worst-case scenarios | /wɜrst keɪs səˈnɛrioʊz/ — sounds like **WURST KAYS suh-NAIR-ee-ohz**
+354. strong wording | /strɔŋ ˈwɜrdɪŋ/ — sounds like **STRAWNG WUR-ding**
+355. the urgency of the addressed topic | /ði ˈɜrdʒənsi əv ði əˈdrɛst ˈtɑpɪk/ — sounds like **thee UR-juhn-see uhv thee uh-DREST TAH-pik**
 
 ## Topic 29: Population Growth
 
-356. population growth | /population growth/ — sounds like **population growth**
-357. a big challenge | /a big challenge/ — sounds like **a big challenge**
-358. the world population | /the world population/ — sounds like **the world population**
-359. seven billion | /seven billion/ — sounds like **seven billion**
-360. the limited resources | /the limited resources/ — sounds like **the limited resources**
-361. the water crisis | /the water crisis/ — sounds like **the water crisis**
-362. climate change | /climate change/ — sounds like **climate change**
-363. the food crisis | /the food crisis/ — sounds like **the food crisis**
-364. not equally distributed | /not equally distributed/ — sounds like **not equally distributed**
-365. change the balance of power | /change the balance of power/ — sounds like **change the balance of power**
-366. predicted | /predicted/ — sounds like **predicted**
-367. some cities | /some cities/ — sounds like **some cities**
-368. exceed 20 million people | /exceed 20 million people/ — sounds like **exceed 20 million people**
+356. population growth | /ˌpɑpjəˈleɪʃən ɡroʊθ/ — sounds like **pah-pyuh-LAY-shuhn GROHTH**
+357. a big challenge | /ə bɪɡ ˈtʃælɪndʒ/ — sounds like **uh BIG CHAL-inj**
+358. the world population | /ðə wɜrld ˌpɑpjəˈleɪʃən/ — sounds like **thuh WURLD pah-pyuh-LAY-shuhn**
+359. seven billion | /ˈsɛvən ˈbɪljən/ — sounds like **SEV-uhn BIL-yuhn**
+360. the limited resources | /ðə ˈlɪmɪtɪd ˈrisɔrsɪz/ — sounds like **thuh LIM-ih-tid REE-sor-siz**
+361. the water crisis | /ðə ˈwɔtər ˈkraɪsɪs/ — sounds like **thuh WAW-tur KRY-sis**
+362. climate change | /ˈklaɪmɪt tʃeɪndʒ/ — sounds like **KLY-mit CHAYNJ**
+363. the food crisis | /ðə fud ˈkraɪsɪs/ — sounds like **thuh FOOD KRY-sis**
+364. not equally distributed | /nɑt ˈikwəli dɪˈstrɪbjətɪd/ — sounds like **NAHT EE-kwuh-lee dis-TRIB-yuh-tid**
+365. change the balance of power | /tʃeɪndʒ ðə ˈbæləns əv ˈpaʊər/ — sounds like **CHAYNJ thuh BAL-uhns uhv POW-ur**
+366. predicted | /prɪˈdɪktɪd/ — sounds like **prih-DIK-tid**
+367. some cities | /sʌm ˈsɪtiz/ — sounds like **SUM SIT-eez**
+368. exceed 20 million people | /ɪkˈsid ˈtwɛnti ˈmɪljən ˈpipəl/ — sounds like **ik-SEED TWEN-tee MIL-yuhn PEE-puhl**
 
 
 

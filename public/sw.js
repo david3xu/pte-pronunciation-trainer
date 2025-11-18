@@ -2,8 +2,8 @@
 // Handles offline caching and PWA functionality
 // Updated for React + Vite build
 
-// Version 75 - Force complete cache invalidation to clear merge conflict artifacts
-const CACHE_VERSION = 'v75';
+// Version 76 - Add template color coding for DI shadowing practice
+const CACHE_VERSION = 'v76';
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

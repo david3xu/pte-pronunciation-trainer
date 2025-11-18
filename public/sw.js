@@ -2,8 +2,8 @@
 // Handles offline caching and PWA functionality
 // Updated for React + Vite build
 
-// Version 83 - ZERO INTERPRETATION: Use ONLY exact image text (removed all interpretive terms)
-const CACHE_VERSION = 'v83';
+// Version 84 - Added DI Images 11-20 for shadowing practice (complete 20 images)
+const CACHE_VERSION = 'v84';
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode

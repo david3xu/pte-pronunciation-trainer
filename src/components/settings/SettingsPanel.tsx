@@ -216,9 +216,20 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                   value={practiceType}
                   onValueChange={(value: 'vocabulary' | 'practice' | 'shadowing') => {
                     updateSetting('practiceType', value);
+                    
+                    // Set default mode when switching to practice
+                    if (value === 'practice' && !practiceMode) {
+                      handlePracticeModeChange('practice-repeat-sentence');
+                    }
+                    
                     // Set default mode when switching to shadowing
                     if (value === 'shadowing' && !vocabularyBook.startsWith('di-shadowing')) {
                       handleVocabularyBookChange('di-shadowing-1-10');
+                    }
+                    
+                    // Set default vocabulary book when switching to vocabulary
+                    if (value === 'vocabulary' && (vocabularyBook.startsWith('di-shadowing') || vocabularyBook.startsWith('practice-'))) {
+                      handleVocabularyBookChange('pte-fib-listening');
                     }
                   }}
                 >
@@ -244,7 +255,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                       handlePracticeModeChange(value as 'practice-repeat-sentence' | 'practice-answer-short-question' | 'practice-write-from-dictation' | null)
                     }
                   >
-                    <Select.Trigger />
+                    <Select.Trigger placeholder="Select a task type..." />
                     <Select.Content>
                       <Select.Item value="practice-repeat-sentence">
                         🎤 Repeat Sentence (RS) - 620 sentences
@@ -268,7 +279,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                     value={vocabularyBook}
                     onValueChange={(value) => handleVocabularyBookChange(value)}
                   >
-                    <Select.Trigger />
+                    <Select.Trigger placeholder="Select a vocabulary book..." />
                     <Select.Content>
                       <Select.Group>
                         <Select.Label>PTE Vocabulary Books</Select.Label>
@@ -305,7 +316,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                     value={vocabularyBook}
                     onValueChange={(value) => handleVocabularyBookChange(value)}
                   >
-                    <Select.Trigger />
+                    <Select.Trigger placeholder="Select a shadowing mode..." />
                     <Select.Content>
                       <Select.Item value="di-shadowing-1-10">🖼️ DI Shadowing (Images 1-10) - 10 answers</Select.Item>
                       <Select.Item value="di-shadowing-11-20">🖼️ DI Shadowing (Images 11-20) - 10 answers</Select.Item>

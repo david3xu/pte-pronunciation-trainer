@@ -84,7 +84,23 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
 
       const data = await response.json();
       // Shadowing modes use 'answers' instead of 'vocabulary'
-      const items = data.vocabulary || data.answers || [];
+      let items = data.vocabulary || data.answers || [];
+
+      // Transform shadowing items to be compatible with vocabulary UI
+      if (data.answers) {
+        items = items.map((answer: any) => ({
+          english: answer.title || answer.fullText?.substring(0, 50),
+          pronunciation: {
+            british: { ipa: '', phonetic: 'DI Answer' },
+            american: { ipa: '', phonetic: 'DI Answer' }
+          },
+          difficulty: 'normal',
+          category: bookId,
+          source: bookId,
+          // Keep original shadowing data
+          ...answer
+        }));
+      }
 
       console.log(`[SettingsPanel] Loaded ${items.length} items (${data.vocabulary ? 'vocabulary' : 'shadowing'})`);
       setDataset(items, bookId); // Now atomically sets currentItem and resets index
@@ -198,9 +214,13 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                 </Text>
                 <Select.Root
                   value={practiceType}
-                  onValueChange={(value: 'vocabulary' | 'practice' | 'shadowing') =>
-                    updateSetting('practiceType', value)
-                  }
+                  onValueChange={(value: 'vocabulary' | 'practice' | 'shadowing') => {
+                    updateSetting('practiceType', value);
+                    // Set default mode when switching to shadowing
+                    if (value === 'shadowing' && !vocabularyBook.startsWith('di-shadowing')) {
+                      handleVocabularyBookChange('di-shadowing-1-10');
+                    }
+                  }}
                 >
                   <Select.Trigger />
                   <Select.Content>

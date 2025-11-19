@@ -66,6 +66,9 @@ const AudioControls: React.FC = () => {
         'pte-asq-answers': '/data/processed/pte-asq-answers-vocabulary.json',
         'pte-high-frequency': '/data/processed/pte-high-frequency-vocabulary.json',
         'pte-rs-core': '/data/processed/pte-rs-core-vocabulary.json',
+        'pte-di-rl-templates': '/data/processed/pte-di-rl-templates-vocabulary.json',
+        'pte-sst-complete': '/data/processed/pte-sst-complete-vocabulary.json',
+        'pte-essay-topic-vocabulary': '/data/processed/pte-essay-topic-vocabulary.json',
       };
 
       const dataPath = dataPathMap[bookId] || `/data/processed/${bookId}-vocabulary.json`;

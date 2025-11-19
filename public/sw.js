@@ -2,8 +2,8 @@
 // Handles offline caching and PWA functionality
 // Updated for React + Vite build
 
-// Version 86 - Updated DI Template Vocabulary (fluency-optimized IPA pronunciations, 83 terms)
-const CACHE_VERSION = 'v86';
+// Version 87 - Fixed cache list with actual existing files
+const CACHE_VERSION = 'v87';
 const CACHE_NAME = `pte-trainer-${CACHE_VERSION}`;
 
 // Detect if we're in development or production mode
@@ -17,7 +17,7 @@ const urlsToCache = isDevelopment ? [
   // Only cache essential static files
   '/',
   '/index.html',
-  // Vocabulary datasets (14 books) - these are static JSON files
+  // Vocabulary datasets (15 books) - only files that actually exist
   '/data/processed/pte-fib-listening-dataset.json',
   '/data/processed/pte-beginner-vocabulary.json',
   '/data/processed/pte-intermediate-vocabulary.json',
@@ -32,16 +32,22 @@ const urlsToCache = isDevelopment ? [
   '/data/processed/pte-asq-answers-vocabulary.json',
   '/data/processed/pte-high-frequency-vocabulary.json',
   '/data/processed/pte-rs-core-vocabulary.json',
-  // Phase 2: PTE practice datasets
+  '/data/processed/pte-di-rl-templates-vocabulary.json',
+  '/data/processed/pte-sst-complete-vocabulary.json',
+  '/data/processed/pte-essay-topic-vocabulary.json',
+  // PTE practice datasets (4 modes)
   '/data/processed/pte-repeat-sentence-dataset.json',
+  '/data/processed/pte-rs-segments-dataset.json',
   '/data/processed/pte-answer-short-question-dataset.json',
   '/data/processed/pte-write-from-dictation-dataset.json',
-  '/manifest.json'
+  // Shadowing datasets (2 sets)
+  '/data/processed/di-shadowing-images-1-10.json',
+  '/data/processed/di-shadowing-images-11-20.json'
 ] : [
   // Production mode - cache Vite build output + JSON datasets
   '/',
   '/index.html',
-  // Vocabulary datasets (14 books) - these are always needed
+  // Vocabulary datasets (15 books) - only files that actually exist
   '/data/processed/pte-fib-listening-dataset.json',
   '/data/processed/pte-beginner-vocabulary.json',
   '/data/processed/pte-intermediate-vocabulary.json',
@@ -56,11 +62,17 @@ const urlsToCache = isDevelopment ? [
   '/data/processed/pte-asq-answers-vocabulary.json',
   '/data/processed/pte-high-frequency-vocabulary.json',
   '/data/processed/pte-rs-core-vocabulary.json',
-  // PTE practice datasets (3 modes)
+  '/data/processed/pte-di-rl-templates-vocabulary.json',
+  '/data/processed/pte-sst-complete-vocabulary.json',
+  '/data/processed/pte-essay-topic-vocabulary.json',
+  // PTE practice datasets (4 modes)
   '/data/processed/pte-repeat-sentence-dataset.json',
+  '/data/processed/pte-rs-segments-dataset.json',
   '/data/processed/pte-answer-short-question-dataset.json',
   '/data/processed/pte-write-from-dictation-dataset.json',
-  '/manifest.json'
+  // Shadowing datasets (2 sets)
+  '/data/processed/di-shadowing-images-1-10.json',
+  '/data/processed/di-shadowing-images-11-20.json'
 ];
 
 // Install Service Worker and Cache Resources

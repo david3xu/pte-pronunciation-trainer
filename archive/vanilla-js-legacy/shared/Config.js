@@ -73,6 +73,7 @@ export class AppConfig {
                     { id: 'pte-rs-core', name: 'PTE RS Core', category: 'vocabulary', difficulty: 'normal' },
                     { id: 'pte-di-rl-templates', name: 'PTE DI/RL Templates', category: 'vocabulary', difficulty: 'normal' },
                     { id: 'pte-sst-complete', name: 'PTE SST Complete', category: 'vocabulary', difficulty: 'normal' },
+                    { id: 'pte-essay-topic-vocabulary', name: 'PTE Essay Topics', category: 'vocabulary', difficulty: 'normal' },
                     // Practice modes (3 total)
                     { id: 'rs', name: 'Repeat Sentence', category: 'practice', description: '620 practice sentences' },
                     { id: 'asq', name: 'Answer Short Question', category: 'practice', description: '692 practice questions' },
@@ -244,6 +245,20 @@ export class AppConfig {
                         inputSubdir: 'vocabs'
                     },
                     {
+<<<<<<< HEAD
+=======
+                        id: 'pte-essay-topic-vocabulary',
+                        input: 'pte-essay-topic-vocabulary-with-ipa.md',
+                        output: 'pte-essay-topic-vocabulary.json',
+                        category: 'pte-essay-topic-vocabulary',
+                        description: 'PTE Essay Topic Vocabulary - 327 academic phrases across 9 topics for Template B essays',
+                        sourceType: 'pte-essay-topic-vocabulary',
+                        dataType: 'vocabulary',
+                        extractorType: 'SingleIPATermsExtractor',
+                        inputSubdir: 'vocabs'
+                    },
+                    {
+>>>>>>> claude/fix-ui-vocabulary-books
                         id: 'di-shadowing-1-10',
                         input: 'di-answers-1-10.md',
                         output: 'di-shadowing-images-1-10.json',

@@ -1,22 +1,6 @@
 {
   "metadata": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "generated": "2025-11-18T21:26:46.534Z",
-=======
-    "generated": "2025-11-19T08:32:32.917Z",
->>>>>>> claude/fix-ui-vocabulary-books
-=======
-    "generated": "2025-11-19T08:32:32.917Z",
->>>>>>> claude/fix-ui-vocabulary-books
-=======
-    "generated": "2025-11-19T08:32:32.917Z",
->>>>>>> claude/fix-ui-vocabulary-books
-=======
-    "generated": "2025-11-19T13:17:21.139Z",
->>>>>>> claude/fix-ui-vocabulary-books
+    "generated": "2025-11-19T23:30:07.610Z",
     "totalTerms": 961,
     "source": "pte-fib-listening-with-ipa",
     "description": "PTE FIB Listening vocabulary with IPA",

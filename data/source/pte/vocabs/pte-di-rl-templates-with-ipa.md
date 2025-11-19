@@ -133,3 +133,25 @@
 100. PROJECTED | /prəˈdʒektɪd/ — sounds like **pruh-JEK-tid**
 101. CHANGE | /tʃeɪndʒ/ — sounds like **CHAYNJ**
 102. FUTURE | /ˈfjuːtʃə/ — sounds like **FYU-chur**
+
+---
+
+## Template G: Tables with Rows and Columns
+
+103. table | /ˈteɪbəl/ — sounds like **TAY-bul**
+104. ROW | /rəʊ/ — sounds like **ROH**
+105. across different | /əˈkrɒs ˈdɪfrənt/ — sounds like **uh-KROSS DIF-runt**
+106. groups | /ɡruːps/ — sounds like **GROOPS**
+107. categories | /ˈkætəɡəriz/ — sounds like **KAT-uh-gor-eez**
+108. first ROW | /fɜːst rəʊ/ — sounds like **FIRST ROH**
+109. numbers show | /ˈnʌmbəz ʃəʊ/ — sounds like **NUM-burz SHOH**
+110. observation | /ˌɒbzəˈveɪʃən/ — sounds like **ob-zur-VAY-shun**
+111. pattern | /ˈpætən/ — sounds like **PAT-urn**
+112. Moving down | /ˈmuːvɪŋ daʊn/ — sounds like **MOO-ving DOWN**
+113. next ROW | /nekst rəʊ/ — sounds like **NEXT ROH**
+114. another ROW | /əˈnʌðə rəʊ/ — sounds like **uh-NUTH-ur ROH**
+115. values | /ˈvæljuːz/ — sounds like **VAL-yooz**
+116. Looking across | /ˈlʊkɪŋ əˈkrɒs/ — sounds like **LOOK-ing uh-KROSS**
+117. COLUMNS | /ˈkɒləmz/ — sounds like **KOL-umz**
+118. COMPARE | /kəmˈpeə/ — sounds like **kum-PAIR**
+119. compare | /kəmˈpeə/ — sounds like **kum-PAIR**

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-11-19T13:17:21.155Z",
-    "totalTerms": 99,
+    "generated": "2025-11-19T23:30:07.626Z",
+    "totalTerms": 114,
     "source": "pte-di-rl-templates",
     "description": "PTE Describe Image & Retell Lecture templates with IPA",
     "version": "1.0",
@@ -996,6 +996,156 @@
       "pronunciation": {
         "ipa": "ˈfjuːtʃə",
         "phonetic": "FYU-chur"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "table",
+      "pronunciation": {
+        "ipa": "ˈteɪbəl",
+        "phonetic": "TAY-bul"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "ROW",
+      "pronunciation": {
+        "ipa": "rəʊ",
+        "phonetic": "ROH"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "across different",
+      "pronunciation": {
+        "ipa": "əˈkrɒs ˈdɪfrənt",
+        "phonetic": "uh-KROSS DIF-runt"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "groups",
+      "pronunciation": {
+        "ipa": "ɡruːps",
+        "phonetic": "GROOPS"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "categories",
+      "pronunciation": {
+        "ipa": "ˈkætəɡəriz",
+        "phonetic": "KAT-uh-gor-eez"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "first ROW",
+      "pronunciation": {
+        "ipa": "fɜːst rəʊ",
+        "phonetic": "FIRST ROH"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "numbers show",
+      "pronunciation": {
+        "ipa": "ˈnʌmbəz ʃəʊ",
+        "phonetic": "NUM-burz SHOH"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "observation",
+      "pronunciation": {
+        "ipa": "ˌɒbzəˈveɪʃən",
+        "phonetic": "ob-zur-VAY-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "pattern",
+      "pronunciation": {
+        "ipa": "ˈpætən",
+        "phonetic": "PAT-urn"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "Moving down",
+      "pronunciation": {
+        "ipa": "ˈmuːvɪŋ daʊn",
+        "phonetic": "MOO-ving DOWN"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "next ROW",
+      "pronunciation": {
+        "ipa": "nekst rəʊ",
+        "phonetic": "NEXT ROH"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "another ROW",
+      "pronunciation": {
+        "ipa": "əˈnʌðə rəʊ",
+        "phonetic": "uh-NUTH-ur ROH"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "values",
+      "pronunciation": {
+        "ipa": "ˈvæljuːz",
+        "phonetic": "VAL-yooz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "Looking across",
+      "pronunciation": {
+        "ipa": "ˈlʊkɪŋ əˈkrɒs",
+        "phonetic": "LOOK-ing uh-KROSS"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "COLUMNS",
+      "pronunciation": {
+        "ipa": "ˈkɒləmz",
+        "phonetic": "KOL-umz"
       },
       "difficulty": "normal",
       "category": "pte-di-rl-templates",

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-11-19T08:32:32.942Z",
-    "totalTerms": 81,
+    "generated": "2025-11-19T13:17:21.155Z",
+    "totalTerms": 99,
     "source": "pte-di-rl-templates",
     "description": "PTE Describe Image & Retell Lecture templates with IPA",
     "version": "1.0",
@@ -12,152 +12,242 @@
   },
   "vocabulary": [
     {
-      "english": "This",
+      "english": "clearly",
       "pronunciation": {
-        "ipa": "ðɪs",
-        "phonetic": "THIS"
+        "ipa": "ˈklɪəli",
+        "phonetic": "KLEER-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "shows",
+      "pronunciation": {
+        "ipa": "ʃəʊz",
+        "phonetic": "SHOWZ"
       },
       "difficulty": "easy",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "LINE graph",
+      "english": "some",
       "pronunciation": {
-        "ipa": "laɪn ɡræf",
-        "phonetic": "LYN GRAF"
+        "ipa": "sʌm",
+        "phonetic": "SUM"
       },
-      "difficulty": "hard",
+      "difficulty": "easy",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "BAR chart",
+      "english": "DATA",
       "pronunciation": {
-        "ipa": "bɑr tʃɑrt",
-        "phonetic": "BAR CHART"
+        "ipa": "ˈdeɪtə",
+        "phonetic": "DAY-tuh"
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "PIE chart",
+      "english": "about",
       "pronunciation": {
-        "ipa": "paɪ tʃɑrt",
-        "phonetic": "PY CHART"
+        "ipa": "əˈbaʊt",
+        "phonetic": "uh-BOUT"
       },
-      "difficulty": "normal",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "AREA chart",
-      "pronunciation": {
-        "ipa": "ˈɛriə tʃɑrt",
-        "phonetic": "AIR-ee-uh CHART"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "ILLUSTRATES information",
-      "pronunciation": {
-        "ipa": "ˈɪləstreɪts ˌɪnfərˈmeɪʃən",
-        "phonetic": "IL-uh-strayts in-fur-MAY-shuhn"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "REGARDING",
-      "pronunciation": {
-        "ipa": "rɪˈɡɑrdɪŋ",
-        "phonetic": "rih-GAR-ding"
-      },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
       "english": "At the TOP",
       "pronunciation": {
-        "ipa": "æt ðə tɑp",
-        "phonetic": "at thuh TAHP"
+        "ipa": "æt ðə tɒp",
+        "phonetic": "at the TOP"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "SHOWS the HIGHEST value",
+      "english": "of the chart",
       "pronunciation": {
-        "ipa": "ʃoʊz ðə ˈhaɪəst ˈvælju",
-        "phonetic": "SHOHZ thuh HY-ist VAL-yoo"
+        "ipa": "ɒv ðə tʃɑːt",
+        "phonetic": "ov the CHART"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "of around",
+      "english": "we can see",
       "pronunciation": {
-        "ipa": "əv əˈraʊnd",
-        "phonetic": "uhv uh-ROWND"
+        "ipa": "wiː kæn siː",
+        "phonetic": "wee kan SEE"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "with",
+      "pronunciation": {
+        "ipa": "wɪð",
+        "phonetic": "WITH"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "HIGHEST",
+      "pronunciation": {
+        "ipa": "ˈhaɪɪst",
+        "phonetic": "HY-ist"
       },
       "difficulty": "normal",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "Following THAT",
+      "english": "number",
       "pronunciation": {
-        "ipa": "ˈfɑloʊɪŋ ðæt",
-        "phonetic": "FAH-loh-ing THAT"
+        "ipa": "ˈnʌmbə",
+        "phonetic": "NUM-bur"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "of around",
+      "pronunciation": {
+        "ipa": "ɒv əˈraʊnd",
+        "phonetic": "ov uh-ROUND"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "Then",
+      "pronunciation": {
+        "ipa": "ðen",
+        "phonetic": "THEN"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "right below that",
+      "pronunciation": {
+        "ipa": "raɪt bɪˈləʊ ðæt",
+        "phonetic": "right bih-LOW that"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "SHOWS about",
+      "english": "we have",
       "pronunciation": {
-        "ipa": "ʃoʊz əˈbaʊt",
-        "phonetic": "SHOHZ uh-BOWT"
+        "ipa": "wiː hæv",
+        "phonetic": "wee HAV"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "showing",
+      "pronunciation": {
+        "ipa": "ˈʃəʊɪŋ",
+        "phonetic": "SHOW-ing"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "which is",
+      "pronunciation": {
+        "ipa": "wɪtʃ ɪz",
+        "phonetic": "which IZ"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "SECOND",
+      "pronunciation": {
+        "ipa": "ˈsekənd",
+        "phonetic": "SEK-und"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "here",
+      "pronunciation": {
+        "ipa": "hɪə",
+        "phonetic": "HEER"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "Moving down to",
+      "pronunciation": {
+        "ipa": "ˈmuːvɪŋ daʊn tuː",
+        "phonetic": "MOO-ving down too"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "representing the SECOND-highest figure",
+      "english": "BOTTOM",
       "pronunciation": {
-        "ipa": "ˌrɛprɪˈzɛntɪŋ ðə ˈsɛkənd ˈhaɪəst ˈfɪɡjər",
-        "phonetic": "rep-rih-ZEN-ting thuh SEK-uhnd HY-ist FIG-yur"
+        "ipa": "ˈbɒtəm",
+        "phonetic": "BOT-um"
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "On the other END",
+      "english": "that",
       "pronunciation": {
-        "ipa": "ɑn ði ˈʌðər ɛnd",
-        "phonetic": "ahn thee UH-thur END"
+        "ipa": "ðæt",
+        "phonetic": "THAT"
       },
-      "difficulty": "hard",
+      "difficulty": "easy",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "SHOWS the LOWEST value",
+      "english": "has",
       "pronunciation": {
-        "ipa": "ʃoʊz ðə ˈloʊəst ˈvælju",
-        "phonetic": "SHOHZ thuh LOH-ist VAL-yoo"
+        "ipa": "hæz",
+        "phonetic": "HAZ"
       },
-      "difficulty": "hard",
+      "difficulty": "easy",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "LOWEST",
+      "pronunciation": {
+        "ipa": "ˈləʊɪst",
+        "phonetic": "LOW-ist"
+      },
+      "difficulty": "normal",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
@@ -165,19 +255,39 @@
       "english": "at around",
       "pronunciation": {
         "ipa": "æt əˈraʊnd",
-        "phonetic": "at uh-ROWND"
+        "phonetic": "at uh-ROUND"
       },
       "difficulty": "normal",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "Worth noting",
+      "english": "also",
       "pronunciation": {
-        "ipa": "wɜrθ ˈnoʊtɪŋ",
-        "phonetic": "WURTH NOH-ting"
+        "ipa": "ˈɔːlsəʊ",
+        "phonetic": "AWL-so"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "other items",
+      "pronunciation": {
+        "ipa": "ˈʌðə ˈaɪtəmz",
+        "phonetic": "UH-thur EYE-tumz"
       },
       "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "like",
+      "pronunciation": {
+        "ipa": "laɪk",
+        "phonetic": "LIKE"
+      },
+      "difficulty": "easy",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
@@ -192,72 +302,92 @@
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "also contribute to the data ANALYSIS",
+      "english": "in this chart",
       "pronunciation": {
-        "ipa": "ˈɔlsoʊ kənˈtrɪbjut tə ðə ˈdeɪtə əˈnæləsɪs",
-        "phonetic": "AWL-soh kuhn-TRIB-yoot tuh thuh DAY-tuh uh-NAL-uh-sis"
+        "ipa": "ɪn ðɪs tʃɑːt",
+        "phonetic": "in this CHART"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "In CONCLUSION",
+      "english": "as well",
       "pronunciation": {
-        "ipa": "ɪn kənˈkluʒən",
-        "phonetic": "in kuhn-KLOO-zhuhn"
+        "ipa": "æz wel",
+        "phonetic": "az WELL"
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "this chart PRESENTS comprehensive DATA",
+      "english": "So",
       "pronunciation": {
-        "ipa": "ðɪs tʃɑrt prɪˈzɛnts ˌkɑmprɪˈhɛnsɪv ˈdeɪtə",
-        "phonetic": "this CHART prih-ZENTS kahm-prih-HEN-siv DAY-tuh"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "demonstrating CLEAR variations",
-      "pronunciation": {
-        "ipa": "ˈdɛmənˌstreɪtɪŋ klɪr ˌvɛriˈeɪʃənz",
-        "phonetic": "DEM-uhn-stray-ting KLEER vair-ee-AY-shuhnz"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "in",
-      "pronunciation": {
-        "ipa": "ɪn",
-        "phonetic": "IN"
+        "ipa": "səʊ",
+        "phonetic": "SO"
       },
       "difficulty": "easy",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "ILLUSTRATES information REGARDING",
+      "english": "overall",
       "pronunciation": {
-        "ipa": "ˈɪləstreɪts ˌɪnfərˈmeɪʃən rɪˈɡɑrdɪŋ",
-        "phonetic": "IL-uh-strayts in-fur-MAY-shuhn rih-GAR-ding"
+        "ipa": "ˌəʊvərˈɔːl",
+        "phonetic": "OH-vur-AWL"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "gives us",
+      "pronunciation": {
+        "ipa": "ɡɪvz ʌs",
+        "phonetic": "GIVZ us"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "useful",
+      "pronunciation": {
+        "ipa": "ˈjuːsfəl",
+        "phonetic": "YOOS-ful"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "First of all",
+      "pronunciation": {
+        "ipa": "fɜːst ɒv ɔːl",
+        "phonetic": "FIRST ov AWL"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "Looking at",
+      "english": "looking at",
       "pronunciation": {
         "ipa": "ˈlʊkɪŋ æt",
-        "phonetic": "LOOK-ing AT"
+        "phonetic": "LOOK-ing at"
       },
       "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "is",
+      "pronunciation": {
+        "ipa": "ɪz",
+        "phonetic": "IZ"
+      },
+      "difficulty": "easy",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
@@ -265,199 +395,109 @@
       "english": "while",
       "pronunciation": {
         "ipa": "waɪl",
-        "phonetic": "WYL"
+        "phonetic": "WHILE"
       },
       "difficulty": "easy",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "SHOWS the LOWEST at about",
+      "english": "on the other hand",
       "pronunciation": {
-        "ipa": "ʃoʊz ðə ˈloʊəst æt əˈbaʊt",
-        "phonetic": "SHOHZ thuh LOH-ist at uh-BOWT"
+        "ipa": "ɒn ði ˈʌðə hænd",
+        "phonetic": "on thee UH-thur HAND"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "Switching to",
+      "english": "Now",
       "pronunciation": {
-        "ipa": "ˈswɪtʃɪŋ tu",
-        "phonetic": "SWICH-ing TOO"
+        "ipa": "naʊ",
+        "phonetic": "NOW"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "if we look at",
+      "pronunciation": {
+        "ipa": "ɪf wiː lʊk æt",
+        "phonetic": "if wee LOOK at"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "LEADS this group",
+      "english": "and then",
       "pronunciation": {
-        "ipa": "lidz ðɪs ɡrup",
-        "phonetic": "LEEDZ this GROOP"
+        "ipa": "ænd ðen",
+        "phonetic": "and THEN"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "comes next",
+      "pronunciation": {
+        "ipa": "kʌmz nekst",
+        "phonetic": "KUMZ NEXT"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "followed by",
+      "english": "We also have",
       "pronunciation": {
-        "ipa": "ˈfɑloʊd baɪ",
-        "phonetic": "FAH-lohd BY"
+        "ipa": "wiː ˈɔːlsəʊ hæv",
+        "phonetic": "wee AWL-so HAV"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "also play a role in this DATA",
+      "english": "helps us",
       "pronunciation": {
-        "ipa": "ˈɔlsoʊ pleɪ ə roʊl ɪn ðɪs ˈdeɪtə",
-        "phonetic": "AWL-soh PLAY uh ROHL in this DAY-tuh"
+        "ipa": "helps ʌs",
+        "phonetic": "HELPS us"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "compare",
+      "pronunciation": {
+        "ipa": "kəmˈpeə",
+        "phonetic": "kum-PAIR"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "these two groups",
+      "pronunciation": {
+        "ipa": "ðiːz tuː ɡruːps",
+        "phonetic": "THEEZ too GROUPS"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "In CONCLUSION this chart PRESENTS",
+      "english": "together",
       "pronunciation": {
-        "ipa": "ɪn kənˈkluʒən ðɪs tʃɑrt prɪˈzɛnts",
-        "phonetic": "in kuhn-KLOO-zhuhn this CHART prih-ZENTS"
+        "ipa": "təˈɡeðə",
+        "phonetic": "tuh-GETH-ur"
       },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "the COMPARATIVE analysis between",
-      "pronunciation": {
-        "ipa": "ðə kəmˈpærətɪv əˈnæləsɪs bɪˈtwin",
-        "phonetic": "thuh kuhm-PAIR-uh-tiv uh-NAL-uh-sis bih-TWEEN"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "This FLOW chart",
-      "pronunciation": {
-        "ipa": "ðɪs floʊ tʃɑrt",
-        "phonetic": "this FLOH CHART"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "SHOWS the process of",
-      "pronunciation": {
-        "ipa": "ʃoʊz ðə ˈprɑsɛs əv",
-        "phonetic": "SHOHZ thuh PRAH-ses uhv"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "Everything STARTS with",
-      "pronunciation": {
-        "ipa": "ˈɛvriˌθɪŋ stɑrts wɪð",
-        "phonetic": "EV-ree-thing STARTS WITH"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "as the FIRST stage",
-      "pronunciation": {
-        "ipa": "æz ðə fɜrst steɪdʒ",
-        "phonetic": "az thuh FURST STAYJ"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "Moving FORWARD",
-      "pronunciation": {
-        "ipa": "ˈmuvɪŋ ˈfɔrwərd",
-        "phonetic": "MOOV-ing FOR-wurd"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "comes into play",
-      "pronunciation": {
-        "ipa": "kʌmz ˈɪntu pleɪ",
-        "phonetic": "KUMZ IN-too PLAY"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "After THAT",
-      "pronunciation": {
-        "ipa": "ˈæftər ðæt",
-        "phonetic": "AF-tur THAT"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "takes place",
-      "pronunciation": {
-        "ipa": "teɪks pleɪs",
-        "phonetic": "TAYKS PLAYSS"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "leading to",
-      "pronunciation": {
-        "ipa": "ˈlidɪŋ tu",
-        "phonetic": "LEE-ding TOO"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "At the END",
-      "pronunciation": {
-        "ipa": "æt ði ɛnd",
-        "phonetic": "at thee END"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "marks the FINAL stage",
-      "pronunciation": {
-        "ipa": "mɑrks ðə ˈfaɪnəl steɪdʒ",
-        "phonetic": "MARKS thuh FY-nuhl STAYJ"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "these steps SHOW",
-      "pronunciation": {
-        "ipa": "ðiz stɛps ʃoʊ",
-        "phonetic": "THEEZ STEPS SHOH"
-      },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
@@ -472,9 +512,19 @@
       "source": "pte-di-rl-templates"
     },
     {
+      "english": "process",
+      "pronunciation": {
+        "ipa": "ˈprəʊses",
+        "phonetic": "PROH-ses"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
       "english": "works",
       "pronunciation": {
-        "ipa": "wɜrks",
+        "ipa": "wɜːks",
         "phonetic": "WURKS"
       },
       "difficulty": "easy",
@@ -482,342 +532,472 @@
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "Once COMPLETE",
+      "english": "it starts with",
       "pronunciation": {
-        "ipa": "wʌns kəmˈplit",
-        "phonetic": "WUNSS kuhm-PLEET"
+        "ipa": "ɪt stɑːts wɪð",
+        "phonetic": "it STARTS with"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "the process LOOPS back",
+      "english": "as the beginning",
       "pronunciation": {
-        "ipa": "ðə ˈprɑsɛs lups bæk",
-        "phonetic": "thuh PRAH-ses LOOPS BAK"
+        "ipa": "æz ðə bɪˈɡɪnɪŋ",
+        "phonetic": "az the bih-GIN-ing"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "to the beginning",
+      "english": "after that",
       "pronunciation": {
-        "ipa": "tə ðə bɪˈɡɪnɪŋ",
-        "phonetic": "tuh thuh bih-GIN-ing"
+        "ipa": "ˈɑːftə ðæt",
+        "phonetic": "AF-tur THAT"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "This IMAGE",
+      "english": "in the process",
       "pronunciation": {
-        "ipa": "ðɪs ˈɪmɪdʒ",
-        "phonetic": "this IM-ij"
+        "ipa": "ɪn ðə ˈprəʊses",
+        "phonetic": "in the PROH-ses"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "SHOWS information about",
+      "english": "taking place",
       "pronunciation": {
-        "ipa": "ʃoʊz ˌɪnfərˈmeɪʃən əˈbaʊt",
-        "phonetic": "SHOHZ in-fur-MAY-shuhn uh-BOWT"
+        "ipa": "ˈteɪkɪŋ pleɪs",
+        "phonetic": "TAY-king PLAYS"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "Right in",
+      "english": "This then leads to",
       "pronunciation": {
-        "ipa": "raɪt ɪn",
-        "phonetic": "RYT IN"
+        "ipa": "ðɪs ðen liːdz tuː",
+        "phonetic": "this then LEEDZ too"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "in the next stage",
+      "pronunciation": {
+        "ipa": "ɪn ðə nekst steɪdʒ",
+        "phonetic": "in the NEXT STAYJ"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "And finally",
+      "pronunciation": {
+        "ipa": "ænd ˈfaɪnəli",
+        "phonetic": "and FY-nul-lee"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "last step",
+      "pronunciation": {
+        "ipa": "lɑːst step",
+        "phonetic": "LAST STEP"
       },
       "difficulty": "normal",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "foreground",
+      "english": "goes back",
       "pronunciation": {
-        "ipa": "ˈfɔrˌɡraʊnd",
-        "phonetic": "FOR-grownd"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "center",
-      "pronunciation": {
-        "ipa": "ˈsɛntər",
-        "phonetic": "SEN-tur"
+        "ipa": "ɡəʊz bæk",
+        "phonetic": "GOHZ BAK"
       },
       "difficulty": "normal",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "stands out",
+      "english": "step one",
       "pronunciation": {
-        "ipa": "stændz aʊt",
-        "phonetic": "STANDZ OWT"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "as the MAIN focus",
-      "pronunciation": {
-        "ipa": "æz ðə meɪn ˈfoʊkəs",
-        "phonetic": "az thuh MAYN FOH-kus"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "Just beside THAT",
-      "pronunciation": {
-        "ipa": "dʒʌst bɪˈsaɪd ðæt",
-        "phonetic": "JUST bih-SYD THAT"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "add IMPORTANT context",
-      "pronunciation": {
-        "ipa": "æd ɪmˈpɔrtənt ˈkɑntɛkst",
-        "phonetic": "AD im-POR-tuhnt KAHN-tekst"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "If we shift to",
-      "pronunciation": {
-        "ipa": "ɪf wi ʃɪft tu",
-        "phonetic": "IF wee SHIFT TOO"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "background",
-      "pronunciation": {
-        "ipa": "ˈbækˌɡraʊnd",
-        "phonetic": "BAK-grownd"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "bring in more DETAILS",
-      "pronunciation": {
-        "ipa": "brɪŋ ɪn mɔr dɪˈteɪlz",
-        "phonetic": "BRING in MOR dih-TAYLZ"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "fill out the scene as WELL",
-      "pronunciation": {
-        "ipa": "fɪl aʊt ðə sin æz wɛl",
-        "phonetic": "FIL OWT thuh SEEN az WEL"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "these elements work TOGETHER",
-      "pronunciation": {
-        "ipa": "ðiz ˈɛləmənts wɜrk təˈɡɛðər",
-        "phonetic": "THEEZ EL-uh-muhnts WURK tuh-GETH-ur"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "to present",
-      "pronunciation": {
-        "ipa": "tə prɪˈzɛnt",
-        "phonetic": "tuh prih-ZENT"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "This MAP",
-      "pronunciation": {
-        "ipa": "ðɪs mæp",
-        "phonetic": "this MAP"
+        "ipa": "step wʌn",
+        "phonetic": "STEP WUN"
       },
       "difficulty": "normal",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "SHOWS details about",
+      "english": "starts again",
       "pronunciation": {
-        "ipa": "ʃoʊz dɪˈteɪlz əˈbaʊt",
-        "phonetic": "SHOHZ dih-TAYLZ uh-BOWT"
+        "ipa": "stɑːts əˈɡen",
+        "phonetic": "STARTS uh-GEN"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "Starting from the TOP",
+      "english": "picture",
       "pronunciation": {
-        "ipa": "ˈstɑrtɪŋ frəm ðə tɑp",
-        "phonetic": "START-ing FRUM thuh TAHP"
+        "ipa": "ˈpɪktʃə",
+        "phonetic": "PIK-chur"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "information",
+      "pronunciation": {
+        "ipa": "ˌɪnfəˈmeɪʃən",
+        "phonetic": "in-fur-MAY-shun"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "appears with",
+      "english": "In the front",
       "pronunciation": {
-        "ipa": "əˈpɪrz wɪð",
-        "phonetic": "uh-PEERZ WITH"
+        "ipa": "ɪn ðə frʌnt",
+        "phonetic": "in the FRUNT"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "Moving to the CENTER",
+      "english": "main part",
       "pronunciation": {
-        "ipa": "ˈmuvɪŋ tə ðə ˈsɛntər",
-        "phonetic": "MOOV-ing tuh thuh SEN-tur"
+        "ipa": "meɪn pɑːt",
+        "phonetic": "MAYN PART"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "on the side",
+      "pronunciation": {
+        "ipa": "ɒn ðə saɪd",
+        "phonetic": "on the SIDE"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "shows up with",
+      "english": "Moving to the back",
       "pronunciation": {
-        "ipa": "ʃoʊz ʌp wɪð",
-        "phonetic": "SHOHZ UP WITH"
+        "ipa": "ˈmuːvɪŋ tuː ðə bæk",
+        "phonetic": "MOO-ving too the BAK"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "Down at the BOTTOM",
+      "english": "there are",
       "pronunciation": {
-        "ipa": "daʊn æt ðə ˈbɑtəm",
-        "phonetic": "DOWN at thuh BAH-tuhm"
+        "ipa": "ðeər ɑː",
+        "phonetic": "there AR"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "other things",
+      "pronunciation": {
+        "ipa": "ˈʌðə θɪŋz",
+        "phonetic": "UH-thur THINGS"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "sits at around",
+      "english": "good information",
       "pronunciation": {
-        "ipa": "sɪts æt əˈraʊnd",
-        "phonetic": "SITS at uh-ROWND"
+        "ipa": "ɡʊd ˌɪnfəˈmeɪʃən",
+        "phonetic": "GOOD in-fur-MAY-shun"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "Looking at key SPOTS",
+      "english": "map",
       "pronunciation": {
-        "ipa": "ˈlʊkɪŋ æt ki spɑts",
-        "phonetic": "LOOK-ing at KEE SPAHTS"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "mark IMPORTANT locations",
-      "pronunciation": {
-        "ipa": "mɑrk ɪmˈpɔrtənt loʊˈkeɪʃənz",
-        "phonetic": "MARK im-POR-tuhnt loh-KAY-shuhnz"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "this map DISPLAYS",
-      "pronunciation": {
-        "ipa": "ðɪs mæp dɪˈspleɪz",
-        "phonetic": "this MAP dis-PLAYZ"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "the layout of",
-      "pronunciation": {
-        "ipa": "ðə ˈleɪˌaʊt əv",
-        "phonetic": "thuh LAY-owt UHV"
-      },
-      "difficulty": "hard",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "table",
-      "pronunciation": {
-        "ipa": "ˈteɪbəl",
-        "phonetic": "TAY-buhl"
+        "ipa": "mæp",
+        "phonetic": "MAP"
       },
       "difficulty": "easy",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "diagram",
+      "english": "top of the map",
       "pronunciation": {
-        "ipa": "ˈdaɪəˌɡræm",
-        "phonetic": "DY-uh-gram"
-      },
-      "difficulty": "normal",
-      "category": "pte-di-rl-templates",
-      "source": "pte-di-rl-templates"
-    },
-    {
-      "english": "photograph",
-      "pronunciation": {
-        "ipa": "ˈfoʊtəˌɡræf",
-        "phonetic": "FOH-tuh-graf"
+        "ipa": "tɒp ɒv ðə mæp",
+        "phonetic": "TOP ov the MAP"
       },
       "difficulty": "hard",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
-      "english": "image",
+      "english": "located there",
       "pronunciation": {
-        "ipa": "ˈɪmɪdʒ",
-        "phonetic": "IM-ij"
+        "ipa": "ləʊˈkeɪtɪd ðeə",
+        "phonetic": "loh-KAY-tid there"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "middle area",
+      "pronunciation": {
+        "ipa": "ˈmɪdəl ˈeəriə",
+        "phonetic": "MID-ul AIR-ee-uh"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "positioned here",
+      "pronunciation": {
+        "ipa": "pəˈzɪʃənd hɪə",
+        "phonetic": "puh-ZISH-und HEER"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "bottom of the map",
+      "pronunciation": {
+        "ipa": "ˈbɒtəm ɒv ðə mæp",
+        "phonetic": "BOT-um ov the MAP"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "find",
+      "pronunciation": {
+        "ipa": "faɪnd",
+        "phonetic": "FYND"
       },
       "difficulty": "easy",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "down there",
+      "pronunciation": {
+        "ipa": "daʊn ðeə",
+        "phonetic": "DOWN there"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "features",
+      "pronunciation": {
+        "ipa": "ˈfiːtʃəz",
+        "phonetic": "FEE-churz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "on the map",
+      "pronunciation": {
+        "ipa": "ɒn ðə mæp",
+        "phonetic": "on the MAP"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "TREND",
+      "pronunciation": {
+        "ipa": "trend",
+        "phonetic": "TREND"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "over TIME",
+      "pronunciation": {
+        "ipa": "ˈəʊvə taɪm",
+        "phonetic": "OH-vur TIME"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "Starting from",
+      "pronunciation": {
+        "ipa": "ˈstɑːtɪŋ frɒm",
+        "phonetic": "START-ing from"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "LEFT side",
+      "pronunciation": {
+        "ipa": "left saɪd",
+        "phonetic": "LEFT SIDE"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "STARTS",
+      "pronunciation": {
+        "ipa": "stɑːts",
+        "phonetic": "STARTS"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "As we move to",
+      "pronunciation": {
+        "ipa": "æz wiː muːv tuː",
+        "phonetic": "az wee MOOV too"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "RIGHT",
+      "pronunciation": {
+        "ipa": "raɪt",
+        "phonetic": "RIGHT"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "INCREASES",
+      "pronunciation": {
+        "ipa": "ɪnˈkriːsɪz",
+        "phonetic": "in-KREE-siz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "by",
+      "pronunciation": {
+        "ipa": "baɪ",
+        "phonetic": "BY"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "GOES UP",
+      "pronunciation": {
+        "ipa": "ɡəʊz ʌp",
+        "phonetic": "GOHZ UP"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "STAYS",
+      "pronunciation": {
+        "ipa": "steɪz",
+        "phonetic": "STAYZ"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "quite STABLE",
+      "pronunciation": {
+        "ipa": "kwaɪt ˈsteɪbəl",
+        "phonetic": "KWHYTE STAY-bul"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "TIME period",
+      "pronunciation": {
+        "ipa": "taɪm ˈpɪəriəd",
+        "phonetic": "TIME PEER-ee-ud"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "PROJECTED",
+      "pronunciation": {
+        "ipa": "prəˈdʒektɪd",
+        "phonetic": "pruh-JEK-tid"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "CHANGE",
+      "pronunciation": {
+        "ipa": "tʃeɪndʒ",
+        "phonetic": "CHAYNJ"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-rl-templates",
+      "source": "pte-di-rl-templates"
+    },
+    {
+      "english": "FUTURE",
+      "pronunciation": {
+        "ipa": "ˈfjuːtʃə",
+        "phonetic": "FYU-chur"
+      },
+      "difficulty": "normal",
       "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     }

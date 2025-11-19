@@ -245,6 +245,11 @@ export class AppConfig {
                         inputSubdir: 'vocabs'
                     },
                     {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> claude/fix-ui-vocabulary-books
                         id: 'pte-essay-topic-vocabulary',
                         input: 'pte-essay-topic-vocabulary-with-ipa.md',
                         output: 'pte-essay-topic-vocabulary.json',
@@ -256,6 +261,10 @@ export class AppConfig {
                         inputSubdir: 'vocabs'
                     },
                     {
+<<<<<<< HEAD
+>>>>>>> claude/fix-ui-vocabulary-books
+=======
+>>>>>>> claude/fix-ui-vocabulary-books
                         id: 'di-shadowing-1-10',
                         input: 'di-answers-1-10.md',
                         output: 'di-shadowing-images-1-10.json',

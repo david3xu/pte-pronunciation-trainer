@@ -300,6 +300,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                         <Select.Item value="pte-rs-core">PTE RS Core</Select.Item>
                         <Select.Item value="pte-di-rl-templates">PTE DI/RL Templates</Select.Item>
                         <Select.Item value="pte-sst-complete">PTE SST Complete</Select.Item>
+                        <Select.Item value="pte-essay-topic-vocabulary">PTE Essay Topics</Select.Item>
                       </Select.Group>
                     </Select.Content>
                   </Select.Root>

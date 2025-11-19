@@ -1,22 +1,6 @@
 {
   "metadata": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "generated": "2025-11-18T21:26:46.571Z",
-=======
-    "generated": "2025-11-19T08:32:32.950Z",
->>>>>>> claude/fix-ui-vocabulary-books
-=======
-    "generated": "2025-11-19T08:32:32.950Z",
->>>>>>> claude/fix-ui-vocabulary-books
-=======
-    "generated": "2025-11-19T08:32:32.950Z",
->>>>>>> claude/fix-ui-vocabulary-books
-=======
-    "generated": "2025-11-19T13:17:21.160Z",
->>>>>>> claude/fix-ui-vocabulary-books
+    "generated": "2025-11-19T23:30:07.634Z",
     "totalTerms": 363,
     "source": "pte-sst-complete",
     "description": "PTE SST (Summarize Spoken Text) complete vocabulary with IPA - ALL 368 terms from 29 topics",

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PTE Describe Image Templates - Fluency Optimized (2025)
 
 **Category**: PTE Speaking Templates
@@ -276,6 +277,55 @@
 
 ---
 
+=======
+# PTE DI Templates - Simple & Fluent Vocabulary with IPA
+
+**Total Terms:** 75
+
+---
+
+## Template A: Line/Bar/Pie Charts
+
+1. clearly | /ˈklɪəli/ — sounds like **KLEER-lee**
+2. shows | /ʃəʊz/ — sounds like **SHOWZ**
+3. some | /sʌm/ — sounds like **SUM**
+4. DATA | /ˈdeɪtə/ — sounds like **DAY-tuh**
+5. about | /əˈbaʊt/ — sounds like **uh-BOUT**
+6. At the TOP | /æt ðə tɒp/ — sounds like **at the TOP**
+7. of the chart | /ɒv ðə tʃɑːt/ — sounds like **ov the CHART**
+8. we can see | /wiː kæn siː/ — sounds like **wee kan SEE**
+9. with | /wɪð/ — sounds like **WITH**
+10. HIGHEST | /ˈhaɪɪst/ — sounds like **HY-ist**
+11. number | /ˈnʌmbə/ — sounds like **NUM-bur**
+12. of around | /ɒv əˈraʊnd/ — sounds like **ov uh-ROUND**
+13. Then | /ðen/ — sounds like **THEN**
+14. right below that | /raɪt bɪˈləʊ ðæt/ — sounds like **right bih-LOW that**
+15. we have | /wiː hæv/ — sounds like **wee HAV**
+16. showing | /ˈʃəʊɪŋ/ — sounds like **SHOW-ing**
+17. which is | /wɪtʃ ɪz/ — sounds like **which IZ**
+18. SECOND | /ˈsekənd/ — sounds like **SEK-und**
+19. highest | /ˈhaɪɪst/ — sounds like **HY-ist**
+20. here | /hɪə/ — sounds like **HEER**
+21. Moving down to | /ˈmuːvɪŋ daʊn tuː/ — sounds like **MOO-ving down too**
+22. BOTTOM | /ˈbɒtəm/ — sounds like **BOT-um**
+23. that | /ðæt/ — sounds like **THAT**
+24. has | /hæz/ — sounds like **HAZ**
+25. LOWEST | /ˈləʊɪst/ — sounds like **LOW-ist**
+26. at around | /æt əˈraʊnd/ — sounds like **at uh-ROUND**
+27. also | /ˈɔːlsəʊ/ — sounds like **AWL-so**
+28. other items | /ˈʌðə ˈaɪtəmz/ — sounds like **UH-thur EYE-tumz**
+29. like | /laɪk/ — sounds like **LIKE**
+30. and | /ænd/ — sounds like **AND**
+31. in this chart | /ɪn ðɪs tʃɑːt/ — sounds like **in this CHART**
+32. as well | /æz wel/ — sounds like **az WELL**
+33. So | /səʊ/ — sounds like **SO**
+34. overall | /ˌəʊvərˈɔːl/ — sounds like **OH-vur-AWL**
+35. gives us | /ɡɪvz ʌs/ — sounds like **GIVZ us**
+36. useful | /ˈjuːsfəl/ — sounds like **YOOS-ful**
+
+---
+
+>>>>>>> claude/fix-ui-vocabulary-books
 ## Template B: Comparing Groups
 
 37. First of all | /fɜːst ɒv ɔːl/ — sounds like **FIRST ov AWL**
@@ -342,4 +392,7 @@
 83. down there | /daʊn ðeə/ — sounds like **DOWN there**
 84. features | /ˈfiːtʃəz/ — sounds like **FEE-churz**
 85. on the map | /ɒn ðə mæp/ — sounds like **on the MAP**
+<<<<<<< HEAD
+>>>>>>> claude/fix-ui-vocabulary-books
+=======
 >>>>>>> claude/fix-ui-vocabulary-books

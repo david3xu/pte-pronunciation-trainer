@@ -153,7 +153,7 @@
 9. preservation projects
 10. cultural monuments
 
-### International Relations (15)
+### International Relations (19)
 1. international organizations
 2. global problems
 3. government cooperation
@@ -169,6 +169,10 @@
 13. multinational approach
 14. global governance
 15. cross-border cooperation
+16. urgent issues
+17. pressing problems
+18. political commitment
+19. coordinated efforts
 
 ---
 
@@ -256,7 +260,7 @@
 
 ## 6. Technology & Innovation
 
-### Technology Terms (15)
+### Technology Terms (17)
 1. technological progress
 2. digital technology
 3. computer technology
@@ -272,6 +276,8 @@
 13. technological solutions
 14. online platforms
 15. technological innovation
+16. smartphone technology
+17. mobile devices
 
 ### Invention & Discovery (10)
 1. important inventions
@@ -289,7 +295,7 @@
 
 ## 7. Environment & Sustainability
 
-### Environmental Terms (15)
+### Environmental Terms (19)
 1. environmental damage
 2. natural resources
 3. resource depletion
@@ -305,6 +311,10 @@
 13. renewable resources
 14. carbon emissions
 15. environmental awareness
+16. environmental degradation
+17. environmental impacts
+18. rising levels
+19. human survival
 
 ### Sustainability (10)
 1. sustainable development
@@ -482,11 +492,11 @@ Most terms are **2-3 words** for easy memorization and natural usage!
 
 ---
 
-*Based on 14 proven essay examples achieving 25-26/26 scores*
-*Now includes 9 sections with 317 total terms*
+*Based on 16 proven essay examples achieving 25-26/26 scores*
+*Now includes 9 sections with 327 total terms*
 *Section 2: Mental Health & Wellbeing (15 terms)*
 *Section 3: Historic Preservation (10 terms)*
 *Section 5: Leisure & Entertainment (10 terms)*
-*Section 6: Technology & Innovation (25 terms)*
+*Section 6: Technology & Innovation (27 terms)*
 *Last Updated: November 2025*
 

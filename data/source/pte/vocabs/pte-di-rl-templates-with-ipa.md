@@ -1,6 +1,6 @@
 # PTE DI Templates - Simple & Fluent Vocabulary with IPA
 
-**Total Terms:** 75
+**Total Terms:** 102
 
 ---
 
@@ -111,3 +111,25 @@
 83. down there | /daʊn ðeə/ — sounds like **DOWN there**
 84. features | /ˈfiːtʃəz/ — sounds like **FEE-churz**
 85. on the map | /ɒn ðə mæp/ — sounds like **on the MAP**
+
+---
+
+## Template F: Trend/Projection Line Graphs
+
+86. TREND | /trend/ — sounds like **TREND**
+87. over TIME | /ˈəʊvə taɪm/ — sounds like **OH-vur TIME**
+88. Starting from | /ˈstɑːtɪŋ frɒm/ — sounds like **START-ing from**
+89. LEFT side | /left saɪd/ — sounds like **LEFT SIDE**
+90. STARTS | /stɑːts/ — sounds like **STARTS**
+91. As we move to | /æz wiː muːv tuː/ — sounds like **az wee MOOV too**
+92. RIGHT | /raɪt/ — sounds like **RIGHT**
+93. INCREASES | /ɪnˈkriːsɪz/ — sounds like **in-KREE-siz**
+94. over time | /ˈəʊvə taɪm/ — sounds like **OH-vur TIME**
+95. by | /baɪ/ — sounds like **BY**
+96. GOES UP | /ɡəʊz ʌp/ — sounds like **GOHZ UP**
+97. STAYS | /steɪz/ — sounds like **STAYZ**
+98. quite STABLE | /kwaɪt ˈsteɪbəl/ — sounds like **KWHYTE STAY-bul**
+99. TIME period | /taɪm ˈpɪəriəd/ — sounds like **TIME PEER-ee-ud**
+100. PROJECTED | /prəˈdʒektɪd/ — sounds like **pruh-JEK-tid**
+101. CHANGE | /tʃeɪndʒ/ — sounds like **CHAYNJ**
+102. FUTURE | /ˈfjuːtʃə/ — sounds like **FYU-chur**

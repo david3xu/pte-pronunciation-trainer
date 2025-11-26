@@ -5,18 +5,19 @@
  * This data powers AI-driven personalized recommendations.
  */
 
-import React, { useState } from 'react';
-import { Card, Flex, Text, Button, Select, TextField } from '@radix-ui/themes';
 import {
-  CheckCircledIcon,
-  RocketIcon,
-  TargetIcon,
-  CalendarIcon,
-  LightningBoltIcon,
-  ClockIcon,
+    CalendarIcon,
+    CheckCircledIcon,
+    ClockIcon,
+    LightningBoltIcon,
+    RocketIcon,
+    TargetIcon,
 } from '@radix-ui/react-icons';
+import { Button, Card, Flex, Text } from '@radix-ui/themes';
+import React, { useState } from 'react';
 import { saveLearnerProfile, type OnboardingFormData } from '../../services/profile/learnerProfileService';
 import type { LearningStyle } from '../../types/database';
+import { Select, SelectContent, SelectItem, SelectTrigger } from '../ui';
 
 interface LearnerProfileModalProps {
   isOpen: boolean;
@@ -130,7 +131,7 @@ const LearnerProfileModal: React.FC<LearnerProfileModalProps> = ({
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 animate-in p-4"
       style={{ backdropFilter: 'blur(4px)' }}
     >
-      <Card size="4" className="w-full max-w-2xl max-h-[95vh] overflow-y-auto">
+      <Card size="4" className="w-full max-w-2xl max-h-[95vh] overflow-y-auto pb-safe">
         <Flex direction="column" gap="4">
           {/* Progress bar */}
           <div
@@ -235,7 +236,7 @@ const LearnerProfileModal: React.FC<LearnerProfileModalProps> = ({
                   <Text size="2" weight="medium">
                     When do you plan to take the PTE exam?
                   </Text>
-                  <TextField.Root
+                  <input
                     type="date"
                     value={formData.target_date}
                     onChange={(e) => setFormData({ ...formData, target_date: e.target.value })}
@@ -252,28 +253,28 @@ const LearnerProfileModal: React.FC<LearnerProfileModalProps> = ({
                   <Text size="2" weight="medium">
                     How do you learn best?
                   </Text>
-                  <Select.Root
+                  <Select
                     value={formData.learning_style}
                     onValueChange={(value) =>
                       setFormData({ ...formData, learning_style: value as LearningStyle })
                     }
                   >
-                    <Select.Trigger style={{ width: '100%' }} />
-                    <Select.Content>
-                      <Select.Item value="visual">
+                    <SelectTrigger style={{ width: '100%' }} />
+                    <SelectContent>
+                      <SelectItem value="visual">
                         👁️ Visual - I learn best by seeing (images, diagrams)
-                      </Select.Item>
-                      <Select.Item value="auditory">
+                      </SelectItem>
+                      <SelectItem value="auditory">
                         👂 Auditory - I learn best by listening (audio, lectures)
-                      </Select.Item>
-                      <Select.Item value="kinesthetic">
+                      </SelectItem>
+                      <SelectItem value="kinesthetic">
                         ✋ Kinesthetic - I learn best by doing (practice, exercises)
-                      </Select.Item>
-                      <Select.Item value="mixed">
+                      </SelectItem>
+                      <SelectItem value="mixed">
                         🌈 Mixed - I use a combination of all styles
-                      </Select.Item>
-                    </Select.Content>
-                  </Select.Root>
+                      </SelectItem>
+                    </SelectContent>
+                  </Select>
                   <Text size="1" color="gray">
                     💡 We'll adapt content presentation to match your style
                   </Text>

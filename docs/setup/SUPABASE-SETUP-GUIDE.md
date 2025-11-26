@@ -197,11 +197,11 @@ Add to `.gitignore`:
 
 ### 5.3 Create Supabase Client (TypeScript)
 
-Create `src/ts/lib/supabase.ts`:
+Create `src/ts/supabase/supabaseClient.ts`:
 
 ```typescript
 import { createClient } from '@supabase/supabase-js';
-import type { Database } from '../types/supabase.types';
+import type { Database } from '../../types/supabase.types';
 
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
@@ -217,67 +217,6 @@ export const supabase = createClient<Database>(supabaseUrl, supabaseAnonKey, {
     detectSessionInUrl: true
   }
 });
-
-// Helper functions
-export const auth = supabase.auth;
-
-// Get current user
-export async function getCurrentUser() {
-  const { data: { user }, error } = await supabase.auth.getUser();
-  if (error) throw error;
-  return user;
-}
-
-// Sign up
-export async function signUp(email: string, password: string) {
-  const { data, error } = await supabase.auth.signUp({
-    email,
-    password
-  });
-  if (error) throw error;
-  return data;
-}
-
-// Sign in
-export async function signIn(email: string, password: string) {
-  const { data, error } = await supabase.auth.signInWithPassword({
-    email,
-    password
-  });
-  if (error) throw error;
-  return data;
-}
-
-// Sign out
-export async function signOut() {
-  const { error } = await supabase.auth.signOut();
-  if (error) throw error;
-}
-
-// Get user profile
-export async function getUserProfile(userId: string) {
-  const { data, error } = await supabase
-    .from('profiles')
-    .select('*')
-    .eq('id', userId)
-    .single();
-
-  if (error) throw error;
-  return data;
-}
-
-// Update user profile
-export async function updateUserProfile(userId: string, updates: Partial<Database['public']['Tables']['profiles']['Update']>) {
-  const { data, error } = await supabase
-    .from('profiles')
-    .update(updates)
-    .eq('id', userId)
-    .select()
-    .single();
-
-  if (error) throw error;
-  return data;
-}
 ```
 
 ---

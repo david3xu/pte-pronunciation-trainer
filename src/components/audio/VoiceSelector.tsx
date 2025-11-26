@@ -5,10 +5,11 @@
  * Displays available voices grouped by accent/language.
  */
 
-import React, { useState, useEffect } from 'react';
-import { Card, Flex, Text, Select, Badge, Button, Switch } from '@radix-ui/themes';
 import { SpeakerLoudIcon, UpdateIcon } from '@radix-ui/react-icons';
+import { Badge, Button, Card, Flex, Switch, Text } from '@radix-ui/themes';
+import React, { useEffect, useState } from 'react';
 import { useAppStore } from '../../ts/stores';
+import { Select, SelectContent, SelectItem, SelectTrigger } from '../ui';
 
 interface VoiceSelectorProps {
   onVoiceChange?: (voiceId: string, languageCode: string) => void;
@@ -188,34 +189,34 @@ const VoiceSelector: React.FC<VoiceSelectorProps> = ({ onVoiceChange }) => {
             {/* Language/Accent Selection */}
             <Flex direction="column" gap="2">
               <Text size="2" weight="medium">Accent</Text>
-              <Select.Root value={selectedLanguage} onValueChange={handleLanguageChange}>
-                <Select.Trigger placeholder="Select accent" />
-                <Select.Content>
+              <Select value={selectedLanguage} onValueChange={handleLanguageChange}>
+                <SelectTrigger placeholder="Select accent" />
+                <SelectContent>
                   {Object.keys(voices).map((language) => (
-                    <Select.Item key={language} value={language}>
+                    <SelectItem key={language} value={language}>
                       {language === 'en-US' ? 'American English' :
                        language === 'en-GB' ? 'British English' :
                        language === 'en-AU' ? 'Australian English' :
                        language}
-                    </Select.Item>
+                    </SelectItem>
                   ))}
-                </Select.Content>
-              </Select.Root>
+                </SelectContent>
+              </Select>
             </Flex>
 
             {/* Voice Selection */}
             <Flex direction="column" gap="2">
               <Text size="2" weight="medium">Voice</Text>
-              <Select.Root value={selectedVoice} onValueChange={handleVoiceChange}>
-                <Select.Trigger placeholder="Select voice" />
-                <Select.Content>
+              <Select value={selectedVoice} onValueChange={handleVoiceChange}>
+                <SelectTrigger placeholder="Select voice" />
+                <SelectContent>
                   {voices[selectedLanguage] && Object.keys(voices[selectedLanguage]).map((voiceId) => (
-                    <Select.Item key={voiceId} value={voiceId}>
+                    <SelectItem key={voiceId} value={voiceId}>
                       {voiceId} - {voices[selectedLanguage]?.[voiceId] || ''}
-                    </Select.Item>
+                    </SelectItem>
                   ))}
-                </Select.Content>
-              </Select.Root>
+                </SelectContent>
+              </Select>
               <Text size="1" color="gray">
                 {getVoiceDescription(selectedVoice)}
               </Text>

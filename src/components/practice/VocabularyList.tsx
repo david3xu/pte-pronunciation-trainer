@@ -4,12 +4,13 @@
  * Displays a scrollable list of vocabulary items with quick navigation.
  */
 
+import { Cross2Icon, MagnifyingGlassIcon } from '@radix-ui/react-icons';
+import { Badge, Button, Card, Flex, Text } from '@radix-ui/themes';
 import React, { useState } from 'react';
-import { Card, Flex, Text, TextField, Button, Badge, ScrollArea } from '@radix-ui/themes';
-import { MagnifyingGlassIcon, Cross2Icon } from '@radix-ui/react-icons';
 import { useAppStore } from '../../ts/stores';
-import type { VocabularyTerm, PracticeItem } from '../../types/dataset.types';
+import type { PracticeItem, VocabularyTerm } from '../../types/dataset.types';
 import { VocabularyListSkeleton } from '../shared/Skeleton';
+import { ScrollArea } from '../ui';
 
 const VocabularyList: React.FC = () => {
   const { vocabulary, progress } = useAppStore();
@@ -48,16 +49,16 @@ const VocabularyList: React.FC = () => {
           </Flex>
 
           {/* Search */}
-          <TextField.Root
+          <input
             placeholder="Search vocabulary..."
             value={searchQuery}
             onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchQuery(e.target.value)}
           >
-            <TextField.Slot>
+            <span>
               <MagnifyingGlassIcon height="16" width="16" />
-            </TextField.Slot>
+            </span>
             {searchQuery && (
-              <TextField.Slot>
+              <span>
                 <Button
                   size="1"
                   variant="ghost"
@@ -65,9 +66,9 @@ const VocabularyList: React.FC = () => {
                 >
                   <Cross2Icon height="14" width="14" />
                 </Button>
-              </TextField.Slot>
+              </span>
             )}
-          </TextField.Root>
+          </input>
         </Flex>
 
         {/* List */}

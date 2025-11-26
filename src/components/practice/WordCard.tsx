@@ -7,17 +7,18 @@
  * Includes template color coding for DI shadowing practice.
  */
 
+import { LockClosedIcon, PlayIcon, SpeakerLoudIcon } from '@radix-ui/react-icons';
+import { Badge, Button, Card, Flex, Text } from '@radix-ui/themes';
 import React, { useState } from 'react';
-import { Card, Text, Badge, Button, Flex, Select, Checkbox } from '@radix-ui/themes';
-import { SpeakerLoudIcon, PlayIcon, LockClosedIcon } from '@radix-ui/react-icons';
-import { useAppStore } from '../../ts/stores';
-import type { VocabularyTerm, PracticeItem } from '../../types/dataset.types';
+import '../../css/shadowing.css'; // Import shadowing styles
+import type { SessionManager } from '../../services/session/sessionManager';
 import { isPremiumTTSAvailable } from '../../ts/audio/pollyService';
 import { ttsEngine } from '../../ts/audio/TTSEngine';
-import type { SessionManager } from '../../services/session/sessionManager';
-import type { ItemType } from '../../types/database';
+import { useAppStore } from '../../ts/stores';
 import { parseAnswerForDisplay } from '../../ts/utils/templateParser';
-import '../../css/shadowing.css'; // Import shadowing styles
+import type { ItemType } from '../../types/database';
+import type { PracticeItem, VocabularyTerm } from '../../types/dataset.types';
+import { Checkbox, Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger } from '../ui';
 
 interface WordCardProps {
   item: VocabularyTerm | PracticeItem;
@@ -237,46 +238,46 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
           <Text size="2" weight="medium">Voice Settings</Text>
 
           <Flex gap="2" align="center" wrap="wrap">
-            <Select.Root
+            <Select
               value={usePremiumTTS ? 'premium' : 'free'}
               onValueChange={(value) => setUsePremiumTTS(value === 'premium')}
               disabled={!premiumAvailable}
             >
-              <Select.Trigger variant="soft" />
-              <Select.Content>
-                <Select.Item value="free">
+              <SelectTrigger />
+              <SelectContent>
+                <SelectItem value="free">
                   🔊 Browser TTS (Free)
-                </Select.Item>
-                <Select.Item value="premium">
+                </SelectItem>
+                <SelectItem value="premium">
                   <Flex align="center" gap="1">
                     {premiumAvailable ? '⭐ Premium Neural' : <><LockClosedIcon /> Premium (Locked)</>}
                   </Flex>
-                </Select.Item>
-              </Select.Content>
-            </Select.Root>
+                </SelectItem>
+              </SelectContent>
+            </Select>
 
             {usePremiumTTS && premiumAvailable && (
-              <Select.Root
+              <Select
                 value={premiumVoiceId}
                 onValueChange={setPremiumVoiceId}
               >
-                <Select.Trigger variant="soft" />
-                <Select.Content>
-                  <Select.Group>
-                    <Select.Label>US English</Select.Label>
-                    <Select.Item value="Joanna">Joanna (F)</Select.Item>
-                    <Select.Item value="Matthew">Matthew (M)</Select.Item>
-                    <Select.Item value="Kendra">Kendra (F)</Select.Item>
-                    <Select.Item value="Joey">Joey (M)</Select.Item>
-                  </Select.Group>
-                  <Select.Group>
-                    <Select.Label>British English</Select.Label>
-                    <Select.Item value="Amy">Amy (F)</Select.Item>
-                    <Select.Item value="Brian">Brian (M)</Select.Item>
-                    <Select.Item value="Emma">Emma (F)</Select.Item>
-                  </Select.Group>
-                </Select.Content>
-              </Select.Root>
+                <SelectTrigger />
+                <SelectContent>
+                  <SelectGroup>
+                    <SelectLabel>US English</SelectLabel>
+                    <SelectItem value="Joanna">Joanna (F)</SelectItem>
+                    <SelectItem value="Matthew">Matthew (M)</SelectItem>
+                    <SelectItem value="Kendra">Kendra (F)</SelectItem>
+                    <SelectItem value="Joey">Joey (M)</SelectItem>
+                  </SelectGroup>
+                  <SelectGroup>
+                    <SelectLabel>British English</SelectLabel>
+                    <SelectItem value="Amy">Amy (F)</SelectItem>
+                    <SelectItem value="Brian">Brian (M)</SelectItem>
+                    <SelectItem value="Emma">Emma (F)</SelectItem>
+                  </SelectGroup>
+                </SelectContent>
+              </Select>
             )}
           </Flex>
 
@@ -413,13 +414,13 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
         {isShadowingItem && fullAnswerText && (() => {
           const template = (item as any).template || 'A';
           const parsed = parseAnswerForDisplay(fullAnswerText, template);
-          
+
           console.log('[WordCard] Template:', template);
           console.log('[WordCard] Parsed sentences:', parsed.sentences.length);
           console.log('[WordCard] First sentence segments:', parsed.sentences[0]?.segments);
-          
+
           return (
-            <Flex direction="column" gap="3" mt="4" className="bg-slate-800/50 p-4 rounded-lg border border-slate-700">
+            <Flex direction="column" gap="3" mt="4" className="bg-app-bg-card p-4 rounded-lg border border-app-border">
               <Flex justify="between" align="center">
                 <Text size="2" color="blue" weight="bold" className="uppercase tracking-wide">
                   📝 Complete Answer (Template {template})
@@ -449,7 +450,7 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
                 <label className="color-toggle-label">
                   <Checkbox
                     checked={showTemplateColors}
-                    onCheckedChange={(checked) => setShowTemplateColors(checked === true)}
+                    onChange={(e) => setShowTemplateColors(e.target.checked === true)}
                     className="color-toggle-checkbox"
                   />
                   <span>Show Template Colors</span>
@@ -463,7 +464,7 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
                     {sentence.segments.map((segment, segmentIdx) => {
                       // Split segment by words to apply stress individually
                       const words = segment.text.split(/(\s+)/); // Keep spaces
-                      
+
                       // Debug log for first sentence
                       if (sentenceIdx === 0 && segmentIdx < 3) {
                         console.log(`[WordCard] Segment ${segmentIdx}:`, {
@@ -472,32 +473,32 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
                           words: words.length
                         });
                       }
-                      
+
                       return (
                         <span key={segmentIdx}>
                           {words.map((word, wordIdx) => {
                             // Skip empty strings
                             if (!word) return null;
-                            
+
                             // If it's just whitespace, render as-is
                             if (word.trim() === '') return <React.Fragment key={wordIdx}>{word}</React.Fragment>;
-                            
+
                             // Check if this individual word is all-caps (stress word)
                             const isStress = word === word.toUpperCase() && word.length > 1 && /[A-Z]/.test(word);
-                            
+
                             const classes = [];
                             if (showTemplateColors) {
                               if (segment.type === 'template') classes.push('template-phrase');
                               if (segment.type === 'variable') classes.push('variable-content');
                               if (isStress) classes.push('stress-word');
                             }
-                            
+
                             const style: React.CSSProperties = showTemplateColors ? {} : {
                               color: 'inherit',
                               fontWeight: 'inherit',
                               background: 'transparent'
                             };
-                            
+
                             return (
                               <span key={wordIdx} className={classes.join(' ')} style={style}>
                                 {word}

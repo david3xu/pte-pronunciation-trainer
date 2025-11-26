@@ -12,21 +12,21 @@
  * Phase 5: UI Redesign
  */
 
-import React, { useState, useRef, useEffect } from 'react';
-import { Card, Flex, Text, Button, Badge, TextArea, Separator, Progress } from '@radix-ui/themes';
 import {
-  PlayIcon,
-  ReloadIcon,
-  ChevronRightIcon,
-  ChevronLeftIcon,
-  CheckCircledIcon,
-  CrossCircledIcon,
-  CounterClockwiseClockIcon,
+    CheckCircledIcon,
+    ChevronLeftIcon,
+    ChevronRightIcon,
+    CounterClockwiseClockIcon,
+    CrossCircledIcon,
+    PlayIcon,
+    ReloadIcon,
 } from '@radix-ui/react-icons';
-import { ttsEngine } from '../../ts/audio/TTSEngine';
-import type { PracticeItem } from '../../types/dataset.types';
+import React, { useEffect, useRef, useState } from 'react';
 import type { SessionManager } from '../../services/session/sessionManager';
+import { ttsEngine } from '../../ts/audio/TTSEngine';
 import type { ItemType } from '../../types/database';
+import type { PracticeItem } from '../../types/dataset.types';
+import { Badge, Button, Card, Flex, Separator, Text } from '@radix-ui/themes';
 
 interface WFDInterfaceProps {
   item: PracticeItem;
@@ -218,8 +218,8 @@ const WFDInterface: React.FC<WFDInterfaceProps> = ({
       {/* Header */}
       <Card>
         <Flex justify="between" align="center">
-          <Flex align="center" gap="2">
-            <Text size="5" weight="bold">
+          <Flex align="center" gap="2" wrap="wrap">
+            <Text  weight="bold">
               ✍️ Write From Dictation
             </Text>
             <Badge color={difficulty === 'hard' ? 'red' : difficulty === 'easy' ? 'green' : 'yellow'}>
@@ -236,15 +236,15 @@ const WFDInterface: React.FC<WFDInterfaceProps> = ({
       {/* Listen Section */}
       <Card>
         <Flex direction="column" gap="3">
-          <Text size="3" weight="bold">
+          <Text  weight="bold">
             🎧 Listen to the Sentence
           </Text>
-          <Text size="2" color="gray">
+          <Text >
             Listen carefully and write exactly what you hear. You can play up to 3 times.
           </Text>
           <Flex gap="2" align="center">
             <Button
-              size="3"
+
               onClick={handlePlay}
               disabled={isPlaying || playCount >= MAX_PLAYS || hasSubmitted}
               variant={isPlaying ? 'soft' : 'solid'}
@@ -262,12 +262,12 @@ const WFDInterface: React.FC<WFDInterfaceProps> = ({
               )}
             </Button>
             {playCount > 0 && playCount < MAX_PLAYS && !hasSubmitted && (
-              <Badge color="blue" size="2">
+              <Badge >
                 {MAX_PLAYS - playCount} plays left
               </Badge>
             )}
             {playCount >= MAX_PLAYS && !hasSubmitted && (
-              <Badge color="orange" size="2">
+              <Badge >
                 No plays remaining
               </Badge>
             )}
@@ -279,29 +279,29 @@ const WFDInterface: React.FC<WFDInterfaceProps> = ({
       {!hasSubmitted && (
         <Card>
           <Flex direction="column" gap="3">
-            <Text size="3" weight="bold">
+            <Text  weight="bold">
               ✍️ Write What You Heard
             </Text>
-            <Text size="2" color="gray">
+            <Text >
               Type the complete sentence exactly as you heard it. Don't worry about punctuation.
             </Text>
-            <TextArea
+            <textarea className="border border-gray-300 rounded px-3 py-2"
               ref={inputRef}
-              size="3"
+
               placeholder="Type the sentence here..."
-              value={userInput}
-              onChange={(e) => setUserInput(e.target.value)}
+
+              onChange={(e: any) => setUserInput(e.target.value)}
               disabled={isPlaying}
               rows={3}
               style={{ resize: 'vertical' }}
             />
             <Flex gap="2" justify="between">
-              <Text size="2" color="gray">
+              <Text >
                 {userInput.trim().split(/\s+/).filter((w) => w).length} words typed
               </Text>
               <Button
-                size="3"
-                color="green"
+
+
                 onClick={handleSubmit}
                 disabled={!userInput.trim() || isPlaying || playCount === 0}
               >
@@ -317,28 +317,28 @@ const WFDInterface: React.FC<WFDInterfaceProps> = ({
         <Card>
           <Flex direction="column" gap="3">
             <Flex justify="between" align="center">
-              <Text size="3" weight="bold">
+              <Text  weight="bold">
                 📊 Results
               </Text>
               <Badge
                 color={feedback.accuracy >= 80 ? 'green' : feedback.accuracy >= 60 ? 'yellow' : 'red'}
-                size="3"
+
               >
                 {feedback.accuracy}% Accuracy
               </Badge>
             </Flex>
 
-            <Progress value={feedback.accuracy} color={feedback.accuracy >= 80 ? 'green' : feedback.accuracy >= 60 ? 'yellow' : 'red'} />
+            <div className="w-full bg-app-border rounded-full h-2" color={feedback.accuracy >= 80 ? 'green' : feedback.accuracy >= 60 ? 'yellow' : 'red'} />
 
-            <Separator size="4" />
+            <Separator />
 
             {/* Your transcription */}
             <Flex direction="column" gap="2">
-              <Text size="2" weight="bold">
+              <Text  weight="bold">
                 Your Transcription:
               </Text>
               <Card variant="surface">
-                <Text size="2" style={{ fontStyle: 'italic' }}>
+                <Text  style={{ fontStyle: 'italic' }}>
                   {feedback.userSentence || '(empty)'}
                 </Text>
               </Card>
@@ -346,30 +346,30 @@ const WFDInterface: React.FC<WFDInterfaceProps> = ({
 
             {/* Correct sentence */}
             <Flex direction="column" gap="2">
-              <Text size="2" weight="bold">
+              <Text  weight="bold">
                 Correct Sentence:
               </Text>
               <Card variant="surface">
-                <Text size="2" style={{ fontStyle: 'italic', color: 'var(--green-11)' }}>
+                <Text  style={{ fontStyle: 'italic', color: 'var(--green-11)' }}>
                   {feedback.correctSentence}
                 </Text>
               </Card>
             </Flex>
 
-            <Separator size="4" />
+            <Separator />
 
             {/* Correct words */}
             {feedback.correctWords.length > 0 && (
               <Flex direction="column" gap="2">
                 <Flex align="center" gap="2">
-                  <CheckCircledIcon color="green" width="20" height="20" />
-                  <Text size="2" weight="bold">
+                  <CheckCircledIcon width="20" height="20" />
+                  <Text  weight="bold">
                     Correct Words ({feedback.correctWords.length}):
                   </Text>
                 </Flex>
                 <Flex wrap="wrap" gap="1">
                   {feedback.correctWords.map((word, idx) => (
-                    <Badge key={idx} color="green" variant="soft">
+                    <Badge key={idx} variant="soft">
                       {word}
                     </Badge>
                   ))}
@@ -381,14 +381,14 @@ const WFDInterface: React.FC<WFDInterfaceProps> = ({
             {feedback.missedWords.length > 0 && (
               <Flex direction="column" gap="2">
                 <Flex align="center" gap="2">
-                  <CrossCircledIcon color="red" width="20" height="20" />
-                  <Text size="2" weight="bold">
+                  <CrossCircledIcon width="20" height="20" />
+                  <Text  weight="bold">
                     Missed Words ({feedback.missedWords.length}):
                   </Text>
                 </Flex>
                 <Flex wrap="wrap" gap="1">
                   {feedback.missedWords.map((word, idx) => (
-                    <Badge key={idx} color="red" variant="soft">
+                    <Badge key={idx} variant="soft">
                       {word}
                     </Badge>
                   ))}
@@ -400,14 +400,14 @@ const WFDInterface: React.FC<WFDInterfaceProps> = ({
             {feedback.extraWords.length > 0 && (
               <Flex direction="column" gap="2">
                 <Flex align="center" gap="2">
-                  <CrossCircledIcon color="orange" width="20" height="20" />
-                  <Text size="2" weight="bold">
+                  <CrossCircledIcon width="20" height="20" />
+                  <Text  weight="bold">
                     Extra Words ({feedback.extraWords.length}):
                   </Text>
                 </Flex>
                 <Flex wrap="wrap" gap="1">
                   {feedback.extraWords.map((word, idx) => (
-                    <Badge key={idx} color="orange" variant="soft">
+                    <Badge key={idx} variant="soft">
                       {word}
                     </Badge>
                   ))}
@@ -415,37 +415,37 @@ const WFDInterface: React.FC<WFDInterfaceProps> = ({
               </Flex>
             )}
 
-            <Separator size="4" />
+            <Separator />
 
             {/* Tips */}
             <Flex direction="column" gap="2">
-              <Text size="2" weight="bold">
+              <Text  weight="bold">
                 💡 Tips:
               </Text>
               <ul style={{ marginLeft: '20px' }}>
                 {feedback.accuracy >= 80 ? (
                   <li>
-                    <Text size="2">Excellent work! Keep practicing to maintain accuracy.</Text>
+                    <Text >Excellent work! Keep practicing to maintain accuracy.</Text>
                   </li>
                 ) : feedback.accuracy >= 60 ? (
                   <>
                     <li>
-                      <Text size="2">Good effort! Focus on capturing all words.</Text>
+                      <Text >Good effort! Focus on capturing all words.</Text>
                     </li>
                     <li>
-                      <Text size="2">Listen for word boundaries and linking sounds.</Text>
+                      <Text >Listen for word boundaries and linking sounds.</Text>
                     </li>
                   </>
                 ) : (
                   <>
                     <li>
-                      <Text size="2">Listen to the audio multiple times before typing.</Text>
+                      <Text >Listen to the audio multiple times before typing.</Text>
                     </li>
                     <li>
-                      <Text size="2">Focus on content words (nouns, verbs, adjectives).</Text>
+                      <Text >Focus on content words (nouns, verbs, adjectives).</Text>
                     </li>
                     <li>
-                      <Text size="2">Don't worry about small grammar mistakes.</Text>
+                      <Text >Don't worry about small grammar mistakes.</Text>
                     </li>
                   </>
                 )}
@@ -454,7 +454,7 @@ const WFDInterface: React.FC<WFDInterfaceProps> = ({
 
             {/* Retry button */}
             <Button
-              size="2"
+
               variant="soft"
               onClick={handleRetry}
             >

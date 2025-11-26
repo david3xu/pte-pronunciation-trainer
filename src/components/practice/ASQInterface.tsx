@@ -12,21 +12,21 @@
  * Phase 5: UI Redesign
  */
 
-import React, { useState, useRef, useEffect } from 'react';
-import { Card, Flex, Text, Button, Badge, TextField, Separator } from '@radix-ui/themes';
 import {
-  PlayIcon,
-  ReloadIcon,
-  ChevronRightIcon,
-  ChevronLeftIcon,
-  CheckCircledIcon,
-  CrossCircledIcon,
-  CounterClockwiseClockIcon,
+    CheckCircledIcon,
+    ChevronLeftIcon,
+    ChevronRightIcon,
+    CounterClockwiseClockIcon,
+    CrossCircledIcon,
+    PlayIcon,
+    ReloadIcon,
 } from '@radix-ui/react-icons';
-import { ttsEngine } from '../../ts/audio/TTSEngine';
-import type { PracticeItem } from '../../types/dataset.types';
+import React, { useEffect, useRef, useState } from 'react';
 import type { SessionManager } from '../../services/session/sessionManager';
+import { ttsEngine } from '../../ts/audio/TTSEngine';
 import type { ItemType } from '../../types/database';
+import type { PracticeItem } from '../../types/dataset.types';
+import { Badge, Button, Card, Flex, Separator, Text } from '@radix-ui/themes';
 
 interface ASQInterfaceProps {
   item: PracticeItem;
@@ -236,7 +236,7 @@ const ASQInterface: React.FC<ASQInterfaceProps> = ({
       {/* Listen Section */}
       <Card>
         <Flex direction="column" gap="3">
-          <Text size="3" weight="bold">
+          <Text weight="bold">
             🎧 Listen to the Question
           </Text>
           <Text size="2" color="gray">
@@ -286,7 +286,7 @@ const ASQInterface: React.FC<ASQInterfaceProps> = ({
           {/* Show question text after first play (for practice mode) */}
           {!isPlaying && !hasAnswered && (
             <Card variant="surface" style={{ marginTop: '8px' }}>
-              <Text size="3" style={{ fontStyle: 'italic', opacity: 0.8 }}>
+              <Text style={{ fontStyle: 'italic', opacity: 0.8 }}>
                 "{question}"
               </Text>
             </Card>
@@ -298,7 +298,7 @@ const ASQInterface: React.FC<ASQInterfaceProps> = ({
       {!hasAnswered && (
         <Card>
           <Flex direction="column" gap="3">
-            <Text size="3" weight="bold">
+            <Text weight="bold">
               ✍️ Your Answer
             </Text>
             <Text size="2" color="gray">
@@ -306,18 +306,19 @@ const ASQInterface: React.FC<ASQInterfaceProps> = ({
             </Text>
             <Flex gap="2" align="end">
               <div style={{ flex: 1 }}>
-                <TextField.Root
+                <input
+                  type="text"
                   ref={answerInputRef}
-                  size="3"
-                  placeholder="Type your answer here..."
                   value={userAnswer}
-                  onChange={(e) => setUserAnswer(e.target.value)}
+                  onChange={(e: any) => setUserAnswer(e.target.value)}
                   onKeyPress={handleKeyPress}
+                  placeholder="Type your answer here..."
                   disabled={isPlaying || isThinking}
+                  className="w-full px-4 py-3 border border-gray-600 rounded-md text-base bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               <Button
-                size="3"
+                style={{width:"100%",padding:"8px"}}
                 color="green"
                 onClick={handleSubmitAnswer}
                 disabled={!userAnswer.trim() || isPlaying || isThinking}
@@ -334,15 +335,15 @@ const ASQInterface: React.FC<ASQInterfaceProps> = ({
         <Card>
           <Flex direction="column" gap="3">
             <Flex justify="between" align="center">
-              <Text size="3" weight="bold">
+              <Text style={{width:"100%",padding:"8px"}} weight="bold">
                 📊 Result
               </Text>
-              <Badge color={feedback.isCorrect ? 'green' : 'red'} size="3">
+              <Badge color={feedback.isCorrect ? 'green' : 'red'} style={{width:"100%",padding:"8px"}}>
                 {feedback.isCorrect ? '✓ Correct' : '✗ Incorrect'}
               </Badge>
             </Flex>
 
-            <Separator size="4" />
+            <Separator />
 
             {/* User's answer */}
             <Flex direction="column" gap="2">
@@ -356,7 +357,7 @@ const ASQInterface: React.FC<ASQInterfaceProps> = ({
                   Your Answer:
                 </Text>
               </Flex>
-              <Text size="3" style={{ color: feedback.isCorrect ? 'var(--green-11)' : 'var(--red-11)' }}>
+              <Text style={{ color: feedback.isCorrect ? 'var(--green-11)' : 'var(--red-11)' }}>
                 {feedback.userAnswer}
               </Text>
             </Flex>
@@ -370,13 +371,13 @@ const ASQInterface: React.FC<ASQInterfaceProps> = ({
                     Correct Answer:
                   </Text>
                 </Flex>
-                <Text size="3" style={{ color: 'var(--green-11)' }}>
+                <Text style={{ color: 'var(--green-11)' }}>
                   {feedback.correctAnswer}
                 </Text>
               </Flex>
             )}
 
-            <Separator size="4" />
+            <Separator />
 
             {/* Tips */}
             {feedback.tips && (

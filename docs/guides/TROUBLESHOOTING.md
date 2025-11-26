@@ -300,55 +300,25 @@ window.addEventListener('voiceschanged', () => {
 
 ### **🔍 Debugging Tools**
 
-#### **Browser DevTools**
-```javascript
-// Enable verbose logging
-window.appConfig.set('development.debug', true);
-window.appConfig.set('development.verbose', true);
+#### **React Developer Tools**
+- Use the **Components** tab to inspect component hierarchy and props.
+- Use the **Profiler** tab to identify performance bottlenecks.
 
-// Check vocabulary state
-console.log('Vocabulary state:', {
-  totalWords: window.pteVocabularyManager.getTotalWordCount(),
-  currentWords: window.pteVocabularyManager.getCurrentWords().length,
-  currentCategory: window.pteVocabularyManager.getCurrentCategory()
-});
-
-// Check TTS state
-console.log('TTS state:', {
-  speechRate: window.ttsEngine.speechRate,
-  availableVoices: speechSynthesis.getVoices().length
-});
+#### **Zustand Debugging**
+- If using Redux DevTools middleware, check the **Redux** tab to see state changes.
+- Log state changes in the console:
+```typescript
+const { vocabulary } = useAppStore.getState();
+console.log('Current Vocabulary State:', vocabulary);
 ```
 
-#### **Event Monitoring**
-```javascript
-// Monitor all events
-window.eventBus.on('*', (eventName, data) => {
-  console.log('Event:', eventName, data);
-});
+#### **Network Monitoring**
+- Check the **Network** tab for failed API requests (Supabase, Gemini).
+- Verify `data/processed/*.json` files are loading correctly.
 
-// Monitor specific events
-window.eventBus.on('vocabulary:loaded', (data) => {
-  console.log('Vocabulary loaded:', data);
-});
-
-window.eventBus.on('tts:error', (data) => {
-  console.error('TTS error:', data);
-});
-```
-
-#### **Performance Monitoring**
-```javascript
-// Check loading performance
-console.time('Vocabulary Load');
-await window.pteVocabularyManager.initialize();
-console.timeEnd('Vocabulary Load');
-
-// Check TTS performance
-console.time('TTS Speak');
-await window.ttsEngine.speak('test');
-console.timeEnd('TTS Speak');
-```
+#### **Console Logging**
+- Check for React warnings or errors.
+- Check for Supabase auth errors.
 
 ---
 
@@ -360,7 +330,6 @@ console.timeEnd('TTS Speak');
 npm run clean
 rm -rf node_modules
 rm -rf data/processed/
-rm -rf data/reports/
 
 # 2. Fresh install
 npm install
@@ -371,15 +340,9 @@ npm run build
 npm run validate
 ```
 
-#### **Configuration Reset**
-```javascript
-// Reset to default configuration
-const defaultConfig = new AppConfig();
-window.appConfig = defaultConfig;
-
-// Or reload page
-location.reload();
-```
+#### **Local State Reset**
+- Clear Browser LocalStorage to reset persisted Zustand state.
+- Clear Browser Cache if assets are stale.
 
 #### **Data Recovery**
 ```bash
@@ -391,9 +354,6 @@ npm run data:pte
 
 # 3. Validate results
 npm run validate
-
-# 4. Check processing report
-cat data/reports/pte-processing-report.json
 ```
 
 ---
@@ -406,19 +366,7 @@ cat data/reports/pte-processing-report.json
 console.log('System Info:', {
   userAgent: navigator.userAgent,
   platform: navigator.platform,
-  language: navigator.language,
-  cookieEnabled: navigator.cookieEnabled,
   onLine: navigator.onLine
-});
-
-// Application state
-console.log('App State:', {
-  config: window.appConfig.getAll(),
-  vocabulary: window.pteVocabularyManager.getTotalWordCount(),
-  tts: {
-    available: !!window.speechSynthesis,
-    voices: speechSynthesis.getVoices().length
-  }
 });
 ```
 
@@ -430,6 +378,6 @@ console.log('App State:', {
 
 ---
 
-**Troubleshooting Status**: ✅ **COMPREHENSIVE COVERAGE**
-**Common Issues**: ✅ **ALL MAJOR ISSUES DOCUMENTED**
+**Troubleshooting Status**: ✅ **UPDATED FOR REACT**
+**Common Issues**: ✅ **COVERED**
 **Recovery Procedures**: ✅ **STEP-BY-STEP SOLUTIONS**

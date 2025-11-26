@@ -5,19 +5,20 @@
  * Integrates with Zustand audio store.
  */
 
-import React, { useEffect, useRef } from 'react';
-import { Card, Flex, Button, Text, Switch, Slider } from '@radix-ui/themes';
 import {
-  PlayIcon,
-  PauseIcon,
-  TrackNextIcon,
-  TrackPreviousIcon,
-  LoopIcon,
-  SpeakerLoudIcon,
+    LoopIcon,
+    PauseIcon,
+    PlayIcon,
+    SpeakerLoudIcon,
+    TrackNextIcon,
+    TrackPreviousIcon,
 } from '@radix-ui/react-icons';
-import { useAppStore } from '../../ts/stores';
+import { Button, Card, Flex, Slider, Switch, Text } from '@radix-ui/themes';
+import React, { useEffect, useRef } from 'react';
+import { DATA_PATH_MAP } from '../../lib/constants/dataPaths';
 import { ttsEngine } from '../../ts/audio/TTSEngine';
 import { appConfig } from '../../ts/shared/Config';
+import { useAppStore } from '../../ts/stores';
 
 // Vocabulary books in order for auto-switch feature
 const VOCABULARY_BOOKS = [
@@ -51,27 +52,8 @@ const AudioControls: React.FC = () => {
     vocabulary.setLoading(true);
 
     try {
-      const dataPathMap: Record<string, string> = {
-        'pte-fib-listening': '/data/processed/pte-fib-listening-dataset.json',
-        'pte-beginner': '/data/processed/pte-beginner-vocabulary.json',
-        'pte-intermediate': '/data/processed/pte-intermediate-vocabulary.json',
-        'pte-advanced': '/data/processed/pte-advanced-vocabulary.json',
-        'pte-ra': '/data/processed/pte-ra-vocabulary.json',
-        'pte-rs-vocab': '/data/processed/pte-rs-vocabulary.json',
-        'pte-must-know': '/data/processed/pte-must-know-vocabulary.json',
-        'pte-wfd-vocab': '/data/processed/pte-wfd-vocabulary.json',
-        'pte-rs-wfd-vocab': '/data/processed/pte-rs-wfd-vocabulary.json',
-        'pte-reading-fib': '/data/processed/pte-reading-fib-vocabulary.json',
-        'pte-reading-fib-drag': '/data/processed/pte-reading-fib-drag-vocabulary.json',
-        'pte-asq-answers': '/data/processed/pte-asq-answers-vocabulary.json',
-        'pte-high-frequency': '/data/processed/pte-high-frequency-vocabulary.json',
-        'pte-rs-core': '/data/processed/pte-rs-core-vocabulary.json',
-        'pte-di-rl-templates': '/data/processed/pte-di-rl-templates-vocabulary.json',
-        'pte-sst-complete': '/data/processed/pte-sst-complete-vocabulary.json',
-        'pte-essay-topic-vocabulary': '/data/processed/pte-essay-topic-vocabulary.json',
-      };
-
-      const dataPath = dataPathMap[bookId] || `/data/processed/${bookId}-vocabulary.json`;
+      // Use shared dataPathMap constant
+      const dataPath = DATA_PATH_MAP[bookId as keyof typeof DATA_PATH_MAP] || `/data/processed/${bookId}-vocabulary.json`;
       const response = await fetch(dataPath);
 
       if (!response.ok) {
@@ -130,7 +112,7 @@ const AudioControls: React.FC = () => {
       // Get the word/text to speak
       // For shadowing items, use fullText for natural continuous speech
       const isShadowingItem = !!(currentItem as any).fullText;
-      const textToSpeak = isShadowingItem 
+      const textToSpeak = isShadowingItem
         ? (currentItem as any).fullText.replace(/\|/g, ' ')  // Remove | separators for natural speech
         : ((currentItem as any).word || (currentItem as any).english ||
            (currentItem as any).sentence || (currentItem as any).question);
@@ -385,7 +367,7 @@ const AudioControls: React.FC = () => {
             Item {audio.currentIndex + 1}
           </Text>
           <Flex align="center" gap="2">
-            <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+            <div className="w-full h-2 bg-app-border rounded-full overflow-hidden">
               <div
                 className="h-full bg-primary transition-all"
                 style={{

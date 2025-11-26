@@ -122,11 +122,14 @@ const AudioControls: React.FC = () => {
         const dataset = difficultyFilter !== 'all'
           ? vocabulary.filteredDataset
           : vocabulary.currentDataset;
-        console.log('[AudioControls] Auto-playing:', textToSpeak, `(${audio.currentIndex + 1}/${dataset?.length || 0})`);
+
+        // Strip markdown syntax (**, __, etc.) before speaking
+        const cleanText = stripMarkdown(textToSpeak);
+        console.log('[AudioControls] Auto-playing:', cleanText, `(${audio.currentIndex + 1}/${dataset?.length || 0})`);
 
         try {
           // Use the playback speed from audio store
-          await ttsEngine.pronounceText(textToSpeak, 'en-US', audio.playbackSpeed);
+          await ttsEngine.pronounceText(cleanText, 'en-US', audio.playbackSpeed);
 
           // After speaking, move to next if auto-play is still active
           if (audio.isAutoPlaying && !audio.isPaused && autoPlayRef.current) {

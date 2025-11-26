@@ -96,9 +96,11 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
       await handlePremiumSpeak(accent);
     } else {
       // Use free browser TTS via TTSEngine
-      console.log('[WordCard] Calling ttsEngine.pronounceText with:', displayText);
+      // Strip markdown syntax before speaking
+      const cleanText = stripMarkdown(displayText);
+      console.log('[WordCard] Calling ttsEngine.pronounceText with:', cleanText);
       try {
-        await ttsEngine.pronounceText(displayText, 'en-US', null);
+        await ttsEngine.pronounceText(cleanText, 'en-US', null);
         console.log('[WordCard] ttsEngine.pronounceText completed');
       } catch (error) {
         console.error('[WordCard] TTS error:', error);
@@ -143,6 +145,9 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
         voiceId = 'Joanna'; // Default US voice
       }
 
+      // Strip markdown syntax before speaking
+      const cleanText = stripMarkdown(displayText);
+
       // Call API endpoint
       const response = await fetch('/api/audio/generate', {
         method: 'POST',
@@ -150,7 +155,7 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          text: displayText,
+          text: cleanText,
           voiceId: voiceId,
           speed: '100%',
           emphasis: 'moderate',
@@ -181,8 +186,9 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
     } catch (error) {
       console.error('Premium TTS playback failed:', error);
       setIsPlayingPremium(false);
-      // Fallback to browser TTS
-      await ttsEngine.pronounceText(displayText, 'en-US', null);
+      // Fallback to browser TTS (strip markdown)
+      const cleanText = stripMarkdown(displayText);
+      await ttsEngine.pronounceText(cleanText, 'en-US', null);
     }
   };
 

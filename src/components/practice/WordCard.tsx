@@ -292,7 +292,7 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
       {/* Main content - Word/Sentence/Question */}
       <Flex direction="column" gap="4">
         <Text size="8" weight="bold" className="text-primary">
-          {displayText}
+          {stripMarkdown(displayText)}
         </Text>
 
         {/* Pronunciation (for vocabulary terms) */}

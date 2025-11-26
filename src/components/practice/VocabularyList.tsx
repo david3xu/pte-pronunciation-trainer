@@ -118,7 +118,7 @@ const VocabularyList: React.FC = () => {
                           whiteSpace: 'nowrap',
                         }}
                       >
-                        {displayText}
+                        {stripMarkdown(displayText)}
                       </Text>
 
                       {/* Difficulty badge */}

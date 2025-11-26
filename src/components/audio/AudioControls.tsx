@@ -16,6 +16,7 @@ import {
 import { Button, Card, Flex, Slider, Switch, Text } from '@radix-ui/themes';
 import React, { useEffect, useRef } from 'react';
 import { DATA_PATH_MAP } from '../../lib/constants/dataPaths';
+import { stripMarkdown } from '../../lib/utils/textUtils';
 import { ttsEngine } from '../../ts/audio/TTSEngine';
 import { appConfig } from '../../ts/shared/Config';
 import { useAppStore } from '../../ts/stores';

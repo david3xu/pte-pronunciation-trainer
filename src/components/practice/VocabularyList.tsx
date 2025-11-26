@@ -7,6 +7,7 @@
 import { Cross2Icon, MagnifyingGlassIcon } from '@radix-ui/react-icons';
 import { Badge, Button, Card, Flex, Text } from '@radix-ui/themes';
 import React, { useState } from 'react';
+import { stripMarkdown } from '../../lib/utils/textUtils';
 import { useAppStore } from '../../ts/stores';
 import type { PracticeItem, VocabularyTerm } from '../../types/dataset.types';
 import { VocabularyListSkeleton } from '../shared/Skeleton';

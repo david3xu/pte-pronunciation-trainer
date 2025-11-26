@@ -13,7 +13,7 @@ In recent years, the topic of getting married before finishing school or getting
 
 To begin with, one compelling reason why getting married before finishing school can be problematic is its potential to create constant pressure and reduced performance. In particular, young people who marry early can foster increased responsibilities and financial demands, ultimately leading to broader outcomes such as incomplete education and limited career opportunities. For instance, evidence from educational research reveals that approximately 80% of students who married before completing their studies experienced reduced performance as a direct result of managing family responsibilities.
 
-However, it is equally important to acknowledge that getting married before finishing school may also give rise to certain challenges in managing multiple responsibilities. This is largely because young couples are likely to generate conflicts between education and family duties, which may subsequently cause stress and reduced wellbeing. According to research by social institutions, over 60% of early marriages have been affected by time management difficulties resulting from balancing study and family responsibilities.
+However, it is equally important to acknowledge that getting married before finishing school may also bring about certain benefits in specific circumstances. This is largely because young couples with strong family support are likely to develop stronger relationships and shared goals, which may subsequently lead to improved family stability and mutual growth. According to research by social institutions, over 60% of early marriages with proper planning have demonstrated positive outcomes resulting from effective communication and shared responsibilities.
 
 Taken together, these considerations demonstrate that while getting married before finishing school or getting a job presents real challenges for many young people, the outcomes vary significantly based on individual circumstances, as the influence of family stability and personal planning is substantial and meaningful. Thus, it is essential for young people to dedicate adequate time and careful consideration to managing this decision effectively.
 
@@ -28,9 +28,10 @@ Taken together, these considerations demonstrate that while getting married befo
 
 ### From Topic 3: Work-Life Balance
 - ✅ **vary significantly** (P1, P4) - used 2x! — shows flexibility
-- ✅ **constant pressure** (P2) - /ˈkɒnstənt ˈpreʃə/ — challenge
-- ✅ **family stability** (P4) - /ˈfæməli stəˈbɪləti/ — positive factor
-- ✅ **mental wellbeing** (P3) - /ˈmentəl ˌwelˈbiːɪŋ/ — referenced as "wellbeing"
+- ✅ **constant pressure** (P2) - /ˈkɒnstənt ˈpreʃə/ — challenge (negative aspect)
+- ✅ **family stability** (P3, P4) - /ˈfæməli stəˈbɪləti/ — positive factor
+- ✅ **stronger relationships** (P3) - /ˈstrɒŋɡə rɪˈleɪʃənʃɪps/ — positive benefit
+- ✅ **improved outcomes** (P3) - alternative to "better performance"
 
 ### Template B Words
 - ✅ **compelling** (P2) - "one compelling reason"

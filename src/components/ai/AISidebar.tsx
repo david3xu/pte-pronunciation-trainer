@@ -10,17 +10,17 @@
  * Phase 5: UI Redesign
  */
 
-import React, { useState } from 'react';
-import { Card, Flex, Text, Button, Badge, Separator, ScrollArea } from '@radix-ui/themes';
 import {
   ChatBubbleIcon,
-  SpeakerLoudIcon,
-  LightningBoltIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
+  LightningBoltIcon,
   QuestionMarkCircledIcon,
   RocketIcon,
+  SpeakerLoudIcon,
 } from '@radix-ui/react-icons';
+import React, { useState } from 'react';
+import { Badge, Button, Card, Flex, Separator, Text } from '@radix-ui/themes';
 
 interface AISidebarProps {
   onOpenChat?: () => void;
@@ -80,8 +80,8 @@ const AISidebar: React.FC<AISidebarProps> = ({
 
   const tips = getContextualTips();
 
+  // Collapsed view - just icons
   if (isCollapsed) {
-    // Collapsed view - just icons
     return (
       <div
         style={{
@@ -100,7 +100,7 @@ const AISidebar: React.FC<AISidebarProps> = ({
             padding: '8px',
           }}
         >
-          <Flex direction="column" gap="2" align="center">
+          <Flex direction="column" gap="2" align="center" p="2">
             <Button
               variant="ghost"
               size="1"
@@ -109,7 +109,7 @@ const AISidebar: React.FC<AISidebarProps> = ({
             >
               <ChevronLeftIcon width="20" height="20" />
             </Button>
-            <Separator size="4" />
+            <Separator />
             <Button
               variant="ghost"
               size="1"
@@ -182,7 +182,7 @@ const AISidebar: React.FC<AISidebarProps> = ({
             </Button>
           </Flex>
 
-          <Separator size="4" />
+          <Separator />
 
           {/* Session Stats */}
           {sessionStats && (
@@ -208,7 +208,7 @@ const AISidebar: React.FC<AISidebarProps> = ({
                   </Badge>
                 </Flex>
               </Flex>
-              <Separator size="4" />
+              <Separator />
             </Flex>
           )}
 
@@ -248,7 +248,7 @@ const AISidebar: React.FC<AISidebarProps> = ({
             </Flex>
           </Flex>
 
-          <Separator size="4" />
+          <Separator />
 
           {/* Contextual Tips */}
           <Flex direction="column" gap="2" style={{ flex: 1, minHeight: 0 }}>
@@ -258,7 +258,7 @@ const AISidebar: React.FC<AISidebarProps> = ({
                 💡 Tips for You
               </Text>
             </Flex>
-            <ScrollArea style={{ maxHeight: '200px' }}>
+            <div className="overflow-y-auto" style={{ maxHeight: '200px' }}>
               <Flex direction="column" gap="2">
                 {tips.map((tip, idx) => (
                   <Card key={idx} variant="surface" size="1">
@@ -268,11 +268,11 @@ const AISidebar: React.FC<AISidebarProps> = ({
                   </Card>
                 ))}
               </Flex>
-            </ScrollArea>
+            </div>
           </Flex>
 
           {/* Bottom section - Info */}
-          <Separator size="4" />
+          <Separator />
           <Card variant="surface" size="1">
             <Flex direction="column" gap="1">
               <Text size="1" weight="bold" color="gray">

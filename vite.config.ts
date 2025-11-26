@@ -1,6 +1,6 @@
-import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
+import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -26,6 +26,8 @@ export default defineConfig({
     sourcemap: true,
     // Minification
     minify: 'esbuild',
+    // CSS code splitting for better caching
+    cssCodeSplit: true,
     // Target modern browsers (matching package.json browserslist)
     target: ['chrome90', 'firefox88', 'safari14', 'edge90'],
     // Rollup options for advanced bundling

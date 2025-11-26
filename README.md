@@ -12,6 +12,7 @@ A specialized web-based pronunciation training application for **PTE exam prepar
 - 🤖 **AI:** AI Tutor Chat with Google Gemini (100% FREE!)
 - 🔊 **AI:** Premium TTS with AWS Polly (18 neural voices)
 - 🎯 **AI:** AI-Powered Recommendations (FREE with Gemini)
+- 🎨 **FIXED:** UI layout issues with Audio Controls and AI Sidebar (Tailwind JIT compatibility)
 - ✅ React + TypeScript migration complete (100%)
 - ✅ Supabase cloud sync ready
 

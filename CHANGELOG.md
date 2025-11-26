@@ -80,6 +80,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Corrected "sounds like" phonetic guides
   - Proper IPA transcriptions for all terms
 
+- 🎨 **FIXED: UI Layout Issues** - Resolved layout collapse in Audio Controls and AI Sidebar
+  - Fixed Tailwind JIT incompatibility with dynamic class names in `Flex` and `Text` components
+  - Refactored components to use static class maps
+  - Updated Tailwind config to safelist spacing classes
+
 #### **Data & Configuration**
 
 - **New Data Files:**
@@ -588,17 +593,17 @@ See `docs/FINALIZATION-CHECKLIST.md` for:
   - TTSEngine now only emits `tts:speaking:started` event for vocabulary mode
   - Practice modes (RS/ASQ/WFD) handle their own display logic via `displayContent()`
   - Prevents unnecessary calls to `displayWord()` with undefined data in practice modes
-  
+
 - **Duplicate Event Handling**: Eliminated redundant dataset loads and UI updates
   - Added guard in SettingsModule to only update `practiceDataset` if value actually changed
   - Prevents cascading event chains when switching practice modes
   - Reduces duplicate network requests and console log spam
-  
+
 - **Service Worker Cache Failures**: Removed non-existent files from cache lists
   - Removed `AppNamespace.js` and `LegacyCompatibility.js` (no longer exist in codebase)
   - Fixes "Failed to cache" errors during SW installation
   - Cleaned both development and production cache configurations
-  
+
 - **Offline Cache Preservation**: Fixed aggressive cache deletion on SW activation
   - SW now only deletes old cache versions, preserves current version
   - Enables proper offline functionality and background operation
@@ -883,7 +888,7 @@ Major update expanding vocabulary coverage and implementing intelligent auto-loo
 
 #### **Complete Vocabulary Library (6 Books)**
 - **📕 PTE Advanced Vocabulary** - 2,703 advanced terms with IPA
-- **📚 PTE Read Aloud (RA) Vocabulary** - 788 RA-specific terms with IPA  
+- **📚 PTE Read Aloud (RA) Vocabulary** - 788 RA-specific terms with IPA
 - **🎯 PTE Repeat Sentence (RS) Vocabulary** - 887 RS-specific terms with IPA
 - **Total**: 6 vocabulary books with 8,054 terms (previously 3,696 terms)
 
@@ -909,7 +914,7 @@ Major update expanding vocabulary coverage and implementing intelligent auto-loo
   - Updated `data.paths.byMode` paths
   - Updated `datasetFiles` registry
   - Updated `pipeline.registry` with PTETermsExtractor configuration
-  
+
 - **PTEVocabularyManager.js** - Refactored to dynamic loading
   - **Removed** hard-coded dataset properties
   - **Added** `datasets` Map for dynamic storage
@@ -956,7 +961,7 @@ Major update expanding vocabulary coverage and implementing intelligent auto-loo
   - Advanced: 2,703 terms
   - RA: 788 terms
   - RS: 887 terms
-  
+
 - **Sentence Datasets**: 3 datasets, 2,507 total items
   - Repeat Sentence: 620 sentences
   - Answer Short Question: 692 questions

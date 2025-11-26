@@ -7,12 +7,12 @@
  * Phase 3: Weak Area Detection
  */
 
-import React, { useState, useEffect } from 'react';
-import { Card, Flex, Text, Badge, Button, ScrollArea, Progress, Separator } from '@radix-ui/themes';
-import { Cross2Icon, CheckIcon, LightningBoltIcon, InfoCircledIcon } from '@radix-ui/react-icons';
-import { getWeakAreas, detectWeakAreas, type WeakArea } from '../../services/ai/weakAreaDetector';
+import { CheckIcon, Cross2Icon, InfoCircledIcon, LightningBoltIcon } from '@radix-ui/react-icons';
+import React, { useEffect, useState } from 'react';
 import { generateRecommendations, getRecommendations, updateRecommendationStatus, type Recommendation } from '../../services/ai/recommendationEngine';
+import { detectWeakAreas, getWeakAreas, type WeakArea } from '../../services/ai/weakAreaDetector';
 import { useAppStore } from '../../ts/stores';
+import { Badge, Button, Card, Flex, Separator, Text } from '@radix-ui/themes';
 
 interface WeakAreasDashboardProps {
   isOpen: boolean;
@@ -117,19 +117,19 @@ const WeakAreasDashboard: React.FC<WeakAreasDashboardProps> = ({ isOpen, onClose
 
         {!auth.isAuthenticated ? (
           <Flex direction="column" align="center" justify="center" style={{ flex: 1 }} gap="3">
-            <InfoCircledIcon width="48" height="48" color="gray" />
-            <Text size="4" color="gray">
+            <InfoCircledIcon width="48" height="48" />
+            <Text size="4">
               Sign in to see your personalized weak areas and recommendations
             </Text>
           </Flex>
         ) : isLoading ? (
           <Flex direction="column" align="center" justify="center" style={{ flex: 1 }} gap="3">
-            <Text size="4" color="gray">
+            <Text size="4">
               Loading your insights...
             </Text>
           </Flex>
         ) : (
-          <ScrollArea style={{ flex: 1, minHeight: 0 }}>
+          <div style={{ flex: 1, minHeight: 0 }}>
             <Flex direction="column" gap="4">
               {/* Recommendations Section */}
               {recommendations.length > 0 && (
@@ -159,13 +159,13 @@ const WeakAreasDashboard: React.FC<WeakAreasDashboardProps> = ({ isOpen, onClose
                                 </Badge>
                                 <Badge variant="soft">{rec.type.replace('_', ' ')}</Badge>
                                 {rec.task_type && (
-                                  <Badge color="blue">{rec.task_type.toUpperCase()}</Badge>
+                                  <Badge>{rec.task_type.toUpperCase()}</Badge>
                                 )}
                               </Flex>
                               <Text size="4" weight="bold">
                                 {rec.title}
                               </Text>
-                              <Text size="2" color="gray">
+                              <Text size="2">
                                 {rec.description}
                               </Text>
                             </Flex>
@@ -173,7 +173,7 @@ const WeakAreasDashboard: React.FC<WeakAreasDashboardProps> = ({ isOpen, onClose
                               <Button
                                 size="1"
                                 variant="soft"
-                                color="green"
+
                                 onClick={() => handleAcceptRecommendation(rec.id!)}
                               >
                                 <CheckIcon />
@@ -181,7 +181,7 @@ const WeakAreasDashboard: React.FC<WeakAreasDashboardProps> = ({ isOpen, onClose
                               <Button
                                 size="1"
                                 variant="ghost"
-                                color="gray"
+
                                 onClick={() => handleDeclineRecommendation(rec.id!)}
                               >
                                 <Cross2Icon />
@@ -209,10 +209,10 @@ const WeakAreasDashboard: React.FC<WeakAreasDashboardProps> = ({ isOpen, onClose
                           )}
 
                           <Flex justify="between" align="center">
-                            <Text size="1" color="gray">
+                            <Text size="1">
                               ⏱️ Est. {rec.estimated_time_min} min
                             </Text>
-                            <Text size="1" color="gray">
+                            <Text size="1">
                               Confidence: {rec.confidence}%
                             </Text>
                           </Flex>
@@ -224,7 +224,7 @@ const WeakAreasDashboard: React.FC<WeakAreasDashboardProps> = ({ isOpen, onClose
               )}
 
               {/* Separator */}
-              {recommendations.length > 0 && weakAreas.length > 0 && <Separator size="4" />}
+              {recommendations.length > 0 && weakAreas.length > 0 && <Separator />}
 
               {/* Weak Areas Section */}
               {weakAreas.length > 0 && (
@@ -239,7 +239,7 @@ const WeakAreasDashboard: React.FC<WeakAreasDashboardProps> = ({ isOpen, onClose
                           <Flex justify="between" align="start">
                             <Flex direction="column" gap="1" style={{ flex: 1 }}>
                               <Flex align="center" gap="2">
-                                <Badge color={area.task_type === 'rs' ? 'blue' : area.task_type === 'wfd' ? 'green' : 'purple'}>
+                                <Badge color={area.task_type === 'rs' ? 'blue' : area.task_type === 'wfd' ? 'green' : 'violet'}>
                                   {area.task_type?.toUpperCase()}
                                 </Badge>
                                 <Badge variant="soft">{area.area_type}</Badge>
@@ -260,7 +260,7 @@ const WeakAreasDashboard: React.FC<WeakAreasDashboardProps> = ({ isOpen, onClose
                               <Text size="4" weight="bold">
                                 {area.area_name}
                               </Text>
-                              <Text size="2" color="gray">
+                              <Text size="2">
                                 {area.error_count} errors detected
                               </Text>
                             </Flex>
@@ -268,8 +268,8 @@ const WeakAreasDashboard: React.FC<WeakAreasDashboardProps> = ({ isOpen, onClose
                               <Text size="1" weight="bold" color={area.severity >= 7 ? 'red' : area.severity >= 4 ? 'orange' : 'yellow'}>
                                 Severity: {area.severity}/10
                               </Text>
-                              <Progress
-                                value={(area.severity / 10) * 100}
+                              <div className="w-full bg-app-border rounded-full h-2"
+
                                 color={area.severity >= 7 ? 'red' : area.severity >= 4 ? 'orange' : 'yellow'}
                                 style={{ width: '100px' }}
                               />
@@ -317,8 +317,8 @@ const WeakAreasDashboard: React.FC<WeakAreasDashboardProps> = ({ isOpen, onClose
               {/* Empty State */}
               {weakAreas.length === 0 && recommendations.length === 0 && (
                 <Flex direction="column" align="center" justify="center" gap="3" py="8">
-                  <LightningBoltIcon width="48" height="48" color="gray" />
-                  <Text size="4" color="gray">
+                  <LightningBoltIcon width="48" height="48" />
+                  <Text size="4">
                     No insights yet - practice more to get personalized recommendations!
                   </Text>
                   <Button onClick={handleAnalyzeNow} disabled={isAnalyzing}>
@@ -327,7 +327,7 @@ const WeakAreasDashboard: React.FC<WeakAreasDashboardProps> = ({ isOpen, onClose
                 </Flex>
               )}
             </Flex>
-          </ScrollArea>
+          </div>
         )}
       </Card>
     </div>

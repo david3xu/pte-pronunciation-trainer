@@ -24,16 +24,16 @@
 import { create } from 'zustand';
 import { devtools, persist, subscribeWithSelector } from 'zustand/middleware';
 
+import type { PracticeItem, VocabularyTerm } from '../../types/dataset.types';
 import type {
-  AudioState,
-  TTSState,
-  SettingsState,
-  VocabularyState,
-  ProgressState,
-  UIState,
-  AuthState,
+    AudioState,
+    AuthState,
+    ProgressState,
+    SettingsState,
+    TTSState,
+    UIState,
+    VocabularyState,
 } from './types';
-import type { VocabularyTerm, PracticeItem } from '../../types/dataset.types';
 
 // Import Supabase services for auth store
 import { authService } from '../supabase/authService';
@@ -168,25 +168,36 @@ export const useAppStore = create<AppState>()(
             togglePanel: () => set((state) => ({ settings: { ...state.settings, isPanelOpen: !state.settings.isPanelOpen } })),
           },
 
-          // Vocabulary slice - inline implementation
+          // Vocabulary slice - inline implementation with pagination
           vocabulary: {
             currentDataset: [],
             filteredDataset: [],
+            displayedItems: [],
             currentItem: null,
             mode: '',
             totalCount: 0,
             isLoading: false,
             error: null,
+            currentPage: 1,
+            itemsPerPage: 50,
+            hasMore: false,
             setDataset: (dataset, mode) => {
-              const firstItem = (dataset[0] ?? null) as VocabularyTerm | PracticeItem | null;
+              const itemsPerPage = 50;
+              const displayedItems = dataset.slice(0, itemsPerPage);
+              const firstItem = (displayedItems[0] ?? null) as VocabularyTerm | PracticeItem | null;
+
               set((state) => ({
                 vocabulary: {
                   ...state.vocabulary,
                   currentDataset: dataset,
                   filteredDataset: dataset,
+                  displayedItems,
                   currentItem: firstItem,
                   mode,
                   totalCount: dataset.length,
+                  currentPage: 1,
+                  itemsPerPage,
+                  hasMore: dataset.length > itemsPerPage,
                   isLoading: false,
                   error: null,
                 },
@@ -214,16 +225,58 @@ export const useAppStore = create<AppState>()(
             },
             filterByDifficulty: (difficulty) => {
               const currentDataset = get().vocabulary.currentDataset;
+              const itemsPerPage = get().vocabulary.itemsPerPage;
+
               if (difficulty === 'all') {
-                set((state) => ({ vocabulary: { ...state.vocabulary, filteredDataset: currentDataset, totalCount: currentDataset.length } }));
+                const displayedItems = currentDataset.slice(0, itemsPerPage);
+                set((state) => ({
+                  vocabulary: {
+                    ...state.vocabulary,
+                    filteredDataset: currentDataset,
+                    displayedItems,
+                    totalCount: currentDataset.length,
+                    currentPage: 1,
+                    hasMore: currentDataset.length > itemsPerPage,
+                  }
+                }));
                 return;
               }
+
               const filtered = currentDataset.filter((item) => {
                 if ('difficulty' in item && item.difficulty) return item.difficulty === difficulty;
                 if ('metadata' in item && item.metadata?.difficulty) return item.metadata.difficulty === difficulty;
                 return false;
               });
-              set((state) => ({ vocabulary: { ...state.vocabulary, filteredDataset: filtered, totalCount: filtered.length } }));
+
+              const displayedItems = filtered.slice(0, itemsPerPage);
+              set((state) => ({
+                vocabulary: {
+                  ...state.vocabulary,
+                  filteredDataset: filtered,
+                  displayedItems,
+                  totalCount: filtered.length,
+                  currentPage: 1,
+                  hasMore: filtered.length > itemsPerPage,
+                }
+              }));
+            },
+            loadMore: () => {
+              const { filteredDataset, currentPage, itemsPerPage, displayedItems } = get().vocabulary;
+              const nextPage = currentPage + 1;
+              const startIdx = currentPage * itemsPerPage;
+              const endIdx = startIdx + itemsPerPage;
+              const newItems = filteredDataset.slice(startIdx, endIdx);
+
+              if (newItems.length > 0) {
+                set((state) => ({
+                  vocabulary: {
+                    ...state.vocabulary,
+                    displayedItems: [...displayedItems, ...newItems],
+                    currentPage: nextPage,
+                    hasMore: endIdx < filteredDataset.length,
+                  }
+                }));
+              }
             },
             setLoading: (isLoading) => set((state) => ({ vocabulary: { ...state.vocabulary, isLoading } })),
             setError: (error) => set((state) => ({ vocabulary: { ...state.vocabulary, error, isLoading: false } })),
@@ -232,9 +285,12 @@ export const useAppStore = create<AppState>()(
                 ...state.vocabulary,
                 currentDataset: [],
                 filteredDataset: [],
+                displayedItems: [],
                 currentItem: null,
                 mode: '',
                 totalCount: 0,
+                currentPage: 1,
+                hasMore: false,
                 error: null,
               }
             })),

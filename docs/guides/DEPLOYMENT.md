@@ -56,7 +56,7 @@ npm run deploy:pte
 
 # Or step by step:
 npm run data:pte    # Process vocabulary data
-npm run build       # Create minified assets
+npm run build       # Vite build (compile TS + bundle)
 npm run validate    # Validate data integrity
 ```
 
@@ -64,26 +64,17 @@ npm run validate    # Validate data integrity
 ```
 dist/
 ├── index.html              # Optimized HTML
-├── js/
-│   └── app.min.js         # Minified JavaScript bundle
-├── css/
-│   └── style.min.css      # Minified CSS bundle
+├── assets/                 # Hashed assets
+│   ├── index-*.js         # Minified JavaScript bundle
+│   └── index-*.css        # Minified CSS bundle
 └── data/
     └── processed/
         └── pte-fib-listening-dataset.json  # Vocabulary dataset
 ```
 
 ### **Build Configuration**
-All build settings are configurable in `src/js/shared/Config.js`:
-```javascript
-build: {
-  jsFiles: [...],           // Files to bundle
-  output: {
-    js: 'js/app.min.js',    // JS output path
-    css: 'css/style.min.css' // CSS output path
-  }
-}
-```
+Vite configuration is handled in `vite.config.ts`.
+Application configuration is in `src/ts/shared/Config.ts`.
 
 ---
 
@@ -98,9 +89,6 @@ npm i -g vercel
 
 # Deploy
 vercel
-
-# Or use Vercel's automatic deployment
-# Push to GitHub → Vercel auto-deploys
 ```
 
 **Vercel Configuration** (`vercel.json`):
@@ -125,36 +113,7 @@ dist
 18.x
 ```
 
-#### **GitHub Pages**
-```bash
-# Build for GitHub Pages
-npm run deploy:pte
-
-# Deploy dist/ folder to gh-pages branch
-```
-
 ### **Custom Server Deployment**
-
-#### **Apache Configuration**
-```apache
-# .htaccess
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
-
-# Enable compression
-<IfModule mod_deflate.c>
-    AddOutputFilterByType DEFLATE text/css application/javascript
-</IfModule>
-
-# Cache static assets
-<IfModule mod_expires.c>
-    ExpiresActive on
-    ExpiresByType text/css "access plus 1 year"
-    ExpiresByType application/javascript "access plus 1 year"
-</IfModule>
-```
 
 #### **Nginx Configuration**
 ```nginx
@@ -164,7 +123,7 @@ server {
     root /path/to/dist;
     index index.html;
 
-    # Handle client-side routing
+    # Handle client-side routing (React Router)
     location / {
         try_files $uri $uri/ /index.html;
     }
@@ -185,53 +144,27 @@ server {
 
 ## 🔧 Environment-Specific Configuration
 
-### **Development Environment**
-```javascript
-// Override default configuration for development
-const devConfig = {
-  development: {
-    debug: true,
-    verbose: true,
-    mockData: false
-  },
-  tts: {
-    voices: { default: 'Google UK English Male' }
-  }
-};
+### **Environment Variables**
+Use `.env` files for environment-specific configuration (Vite standard).
+
+**`.env`**:
+```bash
+VITE_SUPABASE_URL=...
+VITE_SUPABASE_ANON_KEY=...
+VITE_GEMINI_API_KEY=...
 ```
 
-### **Production Environment**
-```javascript
-// Override default configuration for production
-const prodConfig = {
-  development: {
-    debug: false,
-    verbose: false
+### **Configuration Logic**
+`src/ts/shared/Config.ts` loads these variables:
+
+```typescript
+export const config = {
+  supabase: {
+    url: import.meta.env.VITE_SUPABASE_URL,
+    key: import.meta.env.VITE_SUPABASE_ANON_KEY
   },
-  tts: {
-    voices: { default: 'Google UK English Male' }
-  },
-  build: {
-    output: {
-      js: 'js/app.min.js',
-      css: 'css/style.min.css'
-    }
-  }
+  // ...
 };
-```
-
-### **Configuration Override Pattern**
-```javascript
-// In deployment script
-const AppConfig = require('./src/js/shared/Config.js');
-const appConfig = new AppConfig();
-
-// Override for environment
-if (process.env.NODE_ENV === 'production') {
-  appConfig.merge(prodConfig);
-} else {
-  appConfig.merge(devConfig);
-}
 ```
 
 ---
@@ -242,34 +175,12 @@ if (process.env.NODE_ENV === 'production') {
 ```bash
 # Production data pipeline
 npm run data:pte
-
-# Custom configuration
-node scripts/pte-data-pipeline.js --config custom-config.json
 ```
 
 ### **Data Validation**
 ```bash
 # Validate processed data
 npm run validate
-
-# Check specific files
-node scripts/validate.js --file data/processed/pte-fib-listening-dataset.json
-```
-
-### **Data Source Configuration**
-```javascript
-// Custom data sources
-const customPipeline = new PTEDataPipeline({
-  inputDir: 'custom/data/source',
-  dataSources: {
-    primary: 'custom-vocabulary.md',
-    fallback: 'backup-vocabulary.md'
-  },
-  outputFiles: {
-    dataset: 'custom-dataset.json',
-    report: 'custom-report.json'
-  }
-});
 ```
 
 ---
@@ -277,33 +188,12 @@ const customPipeline = new PTEDataPipeline({
 ## 🔍 Monitoring & Analytics
 
 ### **Performance Monitoring**
-```javascript
-// Built-in performance tracking
-window.progressTracker.getStats()
-
-// Custom analytics
-window.eventBus.on('vocabulary:loaded', (data) => {
-  // Track vocabulary loading
-  analytics.track('vocabulary_loaded', {
-    total_terms: data.total,
-    mode: data.mode
-  });
-});
-```
+- Use **Lighthouse** in Chrome DevTools
+- React Profiler for component performance
 
 ### **Error Tracking**
-```javascript
-// Global error handling
-window.addEventListener('error', (event) => {
-  console.error('Global error:', event.error);
-  // Send to error tracking service
-});
-
-// TTS error handling
-window.eventBus.on('tts:error', (data) => {
-  console.error('TTS error:', data.error);
-});
-```
+- Console logging for development
+- Supabase logging (optional) for production errors
 
 ---
 
@@ -350,106 +240,6 @@ jobs:
         vercel-project-id: ${{ secrets.PROJECT_ID }}
 ```
 
-### **Automated Testing**
-```yaml
-# .github/workflows/test.yml
-name: Test PTE Trainer
-
-on: [push, pull_request]
-
-jobs:
-  test:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v3
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Run tests
-      run: npm test
-
-    - name: Run linting
-      run: npm run lint
-
-    - name: Validate data
-      run: npm run validate
-```
-
----
-
-## 🔧 Troubleshooting Deployment
-
-### **Common Issues**
-
-#### **Data Not Loading**
-```bash
-# Check if data was processed
-ls -la data/processed/
-
-# Re-process data
-npm run data:pte
-
-# Check data integrity
-npm run validate
-```
-
-#### **Build Failures**
-```bash
-# Clean and rebuild
-npm run clean
-npm install
-npm run build
-
-# Check Node.js version
-node --version  # Should be >= 16.0.0
-```
-
-#### **TTS Not Working**
-- Use Chrome or Edge browser
-- Check browser audio permissions
-- Verify microphone access
-- Test with different voices
-
-#### **Configuration Issues**
-```javascript
-// Debug configuration
-console.log('Config:', window.appConfig.getAll());
-
-// Check specific values
-console.log('TTS Voice:', window.appConfig.get('tts.voices.default'));
-console.log('Data Path:', window.appConfig.get('data.paths.dataset'));
-```
-
-### **Performance Optimization**
-
-#### **Asset Optimization**
-```bash
-# Analyze bundle size
-npm run build -- --analyze
-
-# Optimize images
-npm run optimize-images
-```
-
-#### **Caching Strategy**
-```javascript
-// Service Worker caching
-const urlsToCache = [
-  '/',
-  '/index.html',
-  '/js/app.min.js',
-  '/css/style.min.css',
-  '/data/processed/pte-fib-listening-dataset.json'
-];
-```
-
 ---
 
 ## 📋 Deployment Checklist
@@ -478,5 +268,5 @@ const urlsToCache = [
 ---
 
 **Deployment Status**: ✅ **PRODUCTION-READY**
-**Configuration**: ✅ **FULLY CONFIGURABLE**
+**Configuration**: ✅ **VITE + TYPESCRIPT**
 **Scalability**: ✅ **HORIZONTAL SCALING SUPPORTED**

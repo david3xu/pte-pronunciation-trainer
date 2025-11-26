@@ -9,14 +9,15 @@
  * - Persists conversation history
  */
 
-import React, { useState, useRef, useEffect } from 'react';
-import { Card, Flex, Text, TextField, Button, ScrollArea, Badge, Spinner, IconButton, Tooltip } from '@radix-ui/themes';
-import { PaperPlaneIcon, Cross2Icon, ChatBubbleIcon, ThickArrowUpIcon, ThickArrowDownIcon } from '@radix-ui/react-icons';
+import { ChatBubbleIcon, Cross2Icon, PaperPlaneIcon, ThickArrowDownIcon, ThickArrowUpIcon } from '@radix-ui/react-icons';
+import { Badge, Button, Card, Flex, Spinner, Text } from '@radix-ui/themes';
+import React, { useEffect, useRef, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { useAppStore } from '../../ts/stores';
 import { askAITutor } from '../../services/ai';
 import { rateAIResponse } from '../../services/ai/ratingService';
+import { useAppStore } from '../../ts/stores';
+import { IconButton, ScrollArea, Tooltip } from '../ui';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -294,7 +295,7 @@ const AITutorChat: React.FC<AITutorChatProps> = ({
                       {/* Phase 2: Response Rating */}
                       {message.role === 'assistant' && !message.content.includes('❌') && !message.content.includes('⚠️') && (
                         <Flex gap="1">
-                          <Tooltip content="Helpful">
+                          <Tooltip>
                             <IconButton
                               size="1"
                               variant={message.rating === 'helpful' ? 'solid' : 'ghost'}
@@ -304,7 +305,7 @@ const AITutorChat: React.FC<AITutorChatProps> = ({
                               <ThickArrowUpIcon />
                             </IconButton>
                           </Tooltip>
-                          <Tooltip content="Not helpful">
+                          <Tooltip>
                             <IconButton
                               size="1"
                               variant={message.rating === 'not_helpful' ? 'solid' : 'ghost'}
@@ -344,7 +345,6 @@ const AITutorChat: React.FC<AITutorChatProps> = ({
           </Flex>
         )}
 
-        {/* Input - Always visible at bottom */}
         <Flex
           gap="2"
           align="end"
@@ -355,19 +355,15 @@ const AITutorChat: React.FC<AITutorChatProps> = ({
             borderTop: '1px solid var(--gray-a5)'
           }}
         >
-          <TextField.Root
-            style={{ flex: 1 }}
+          <input
+            type="text"
+            style={{ flex: 1, padding: '8px 12px', borderRadius: '6px', border: '1px solid var(--gray-a5)' }}
             value={input}
-            onChange={(e) => setInput(e.target.value)}
+            onChange={(e: any) => setInput(e.target.value)}
             onKeyPress={handleKeyPress}
             placeholder={taskType ? `Ask about ${getTaskTypeName(taskType)}...` : "Ask me about pronunciation..."}
             disabled={isLoading}
-            size="3"
-          >
-            <TextField.Slot>
-              <ChatBubbleIcon height="16" width="16" />
-            </TextField.Slot>
-          </TextField.Root>
+          />
           <Button
             size="3"
             onClick={handleSend}

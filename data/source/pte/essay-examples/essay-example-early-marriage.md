@@ -9,13 +9,13 @@
 
 ## The Essay
 
-In recent years, the topic of getting married before finishing school or securing employment has emerged as a prominent subject of public and academic discussion. I contend that while getting married before completing education or finding a job can present significant challenges, calling it foolish may be too absolute, and the following analysis presents the primary arguments supporting this viewpoint.
+In recent years, the topic of getting married before finishing school or getting a job has emerged as a significant subject of public and academic discussion. I contend that while early marriage can create challenges, the situation varies significantly based on personal circumstances, and the following analysis presents the primary arguments supporting this viewpoint.
 
-To begin with, one compelling reason why early marriage can be problematic is its potential to create financial difficulties and educational disruptions. In particular, getting married before finishing school or securing a job can foster increased responsibilities and economic pressure, ultimately leading to broader outcomes such as incomplete education and career limitations. For instance, evidence from social research reveals that approximately 80% of individuals who married before completing their education experienced challenges in achieving career goals as a direct result of early family responsibilities.
+To begin with, one key reason why getting married before finishing school can be difficult is its potential to create constant pressure and reduced performance. In particular, young people who marry early can face increased responsibilities and financial demands, ultimately leading to broader outcomes such as incomplete education and limited career opportunities. For instance, evidence from educational research reveals that approximately 80% of students who married before completing their studies experienced reduced performance as a direct result of managing family responsibilities.
 
-However, it is equally important to acknowledge that getting married before finishing school may also give rise to different perspectives. This is largely because personal circumstances vary significantly, and some individuals with strong family support and clear plans are likely to manage both marriage and education successfully, which may subsequently cause early marriage to work well in certain situations. According to research by family studies institutions, over 60% of successful early marriages have been sustained through careful planning stemming from mutual support and realistic financial arrangements.
+However, it is equally important to acknowledge that getting married before finishing school may also work well in certain situations. This is largely because personal circumstances vary significantly, and couples with family stability and strong support are likely to manage both marriage and education successfully, which may subsequently lead to positive outcomes. According to research by social institutions, over 60% of successful early marriages have been sustained through careful planning and mutual support.
 
-Taken together, these considerations demonstrate that while getting married before finishing school or getting a job presents real challenges, it is not universally foolish, as the influence of individual circumstances and planning is substantial and far-reaching. Thus, it is imperative for young people to dedicate adequate consideration and preparation to managing this issue effectively.
+Taken together, these considerations demonstrate that while getting married before finishing school or getting a job presents real challenges for many young people, the outcomes vary significantly based on individual circumstances, as the influence of family support and personal planning is substantial. Thus, it is essential for young people to dedicate adequate time and careful consideration to managing this decision effectively.
 
 ---
 
@@ -135,21 +135,22 @@ Thus, it is imperative for [relevant subjects] to dedicate adequate [resources/t
 - education ← alternative to "finishing school"
 - career ← alternative to "job"
 
-### Moderate Vocabulary (Pick 10-15 easy ones):
-✅ **securing employment** (instead of "getting a job")
-✅ **present challenges** (instead of "have problems")
-✅ **too absolute** (instead of "too strong")
-✅ **problematic** (instead of "bad")
-✅ **financial difficulties** (common phrase)
-✅ **educational disruptions** (moderate phrase)
-✅ **foster** (instead of "create")
-✅ **increased responsibilities** (common phrase)
-✅ **economic pressure** (moderate phrase)
-✅ **incomplete education** (simple phrase)
-✅ **career limitations** (moderate phrase)
-✅ **personal circumstances** (common phrase)
-✅ **vary significantly** (moderate phrase)
-✅ **universally foolish** (instead of "always foolish")
+### Moderate Vocabulary (From Vocabulary File - Pick 8-10):
+✅ **varied significantly** (Topic 3) - "personal circumstances vary significantly"
+✅ **constant pressure** (Topic 3) - "create constant pressure"
+✅ **reduced performance** (Topic 1) - "experienced reduced performance"
+✅ **improved/better performance** (Topic 1) - can use for success stories
+✅ **family stability** (Topic 3) - "couples with family stability"
+✅ **educational research** (Topic 1) - source
+✅ **students** (Topic 1) - "students who married"
+✅ **mental wellbeing** (Topic 3) - optional, for discussing challenges
+✅ **stronger relationships** (Topic 3) - optional, for success factors
+
+**Why these work:**
+- ALL are from the vocabulary file (universal terms!)
+- Natural phrases that fit ANY topic
+- Easy to remember as category: "reduced/improved X", "family/mental X"
+- Not topic-specific - can reuse in other essays
 
 ### Simple Sources (Anyone can say):
 - social research
@@ -192,26 +193,39 @@ Thus, it is imperative for [relevant subjects] to dedicate adequate [resources/t
 
 ### How I Made It Simple:
 
-**70% = Direct topic phrases** (getting married, before finishing school, getting a job, foolish)
-**20% = Simple life concepts** (financial difficulties, responsibilities, education, career, family support, planning)
-**10% = Moderate vocabulary** (securing employment, problematic, economic pressure, vary significantly)
+**70% = Direct topic phrases** (getting married, before finishing school, getting a job, early marriage, young people)
+**20% = Universal vocabulary from vocabulary file** (vary significantly, constant pressure, reduced performance, family stability)
+**10% = Template structure**
+
+**Key insight:** The vocabulary file terms work for ANY topic!
+- "vary significantly" → works for marriage, education, climate, technology
+- "reduced/improved performance" → works for students, employees, systems, economies
+- "family stability" → works for marriage, work-life balance, child development
+- etc.
 
 ---
 
 ## Key Insight
 
-**Use the exact topic phrases repeatedly + address the strong word "foolish"!**
+**Use the exact topic phrases repeatedly + universal vocabulary from the vocabulary file!**
 
 **Strategy:**
 1. Use "getting married" / "married" / "marriage" 8+ times
 2. Use "before finishing school" / "finishing school" 4+ times
 3. Use "getting a job" / "job" 3+ times
-4. Use "foolish" 2-3 times (address this strong word!)
-5. Take balanced position: Has challenges (partially agree) BUT not always foolish (partially disagree)
-6. Paragraph 2 = Why it can be problematic (financial, educational challenges)
-7. Paragraph 3 = Why it's not always foolish (depends on circumstances, support, planning)
-8. Conclusion = "not universally foolish" (your extent of agreement)
-9. Add 8-10 moderate words: securing employment, problematic, economic pressure, vary significantly
+4. Use "young people" / "students" 3+ times (from vocabulary file)
+5. Pick 8-10 terms from vocabulary file:
+   - **vary significantly** (flexible - works anywhere!)
+   - **constant pressure** (challenges)
+   - **reduced performance** (negative outcomes)
+   - **family stability** (positive factor)
+   - **educational research** (source)
+   - **improved outcomes** (alternative positive phrase)
+   - **stronger relationships** (optional positive)
+   - **mental wellbeing** (optional challenge topic)
+6. These vocabulary file terms can be reused in ANY essay topic!
+7. No memorizing topic-specific phrases
+8. Same vocabulary set = works for all 16 QUICK-FILL-GUIDE topics
 
 **That's it!** = Target 25-26/26 score 🎯
 

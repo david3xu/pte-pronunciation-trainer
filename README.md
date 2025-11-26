@@ -37,6 +37,7 @@ A specialized web-based pronunciation training application for **PTE exam prepar
 - 🌟 **High-Frequency** - Most commonly tested words
 - 🎙️ **RS Core** - 222 core Repeat Sentence vocabulary
 - 🗣️ **DI/RL Templates** - 106 Describe Image & Retell Lecture templates
+- ✍️ **Essay Vocabulary** - 274 PTE Essay terms with IPA (organized by 16 topics)
 - 📝 **SST Complete** - 368 Summarize Spoken Text vocabulary
 
 ### 🎤 **4 Study Types**
@@ -97,6 +98,54 @@ A specialized web-based pronunciation training application for **PTE exam prepar
 - **How to use:** Toggle "Premium Neural" in WordCard header
 - **Setup:** See [AWS-POLLY-SETUP.md](docs/AWS-POLLY-SETUP.md)
 - **Cost:** $16 per 1M characters (~$10/mo for 1K active users)
+
+### ✍️ **PTE Essay Resources** 📝 NEW (Template B + Quick-Fill Guide)
+
+#### **Template B** - Optimized Essay Structure
+- **260-290 words** - Perfect length for 200-300 word requirement
+- **Flexible vocabulary** - Using "significant", "key", "meaningful", "essential" instead of repetitive academic jargon
+- **Natural phrasing** - "resulting from" instead of "stemming from"
+- **4-paragraph structure** - Introduction, Advantage, Challenge, Conclusion
+- **Simple fills** - All placeholders designed for 1-3 word fills maximum
+- **Location:** `data/source/pte/di/templates/pte_templates_custom_all.txt`
+
+#### **QUICK-FILL-GUIDE** - 16 Common Topics ⚡
+- **16 comprehensive topics** with complete fill tables
+  - Formal Exams, Travel in Education, Work-Life Balance
+  - Climate Change, Building Design, Overseas Study
+  - Technology & Smartphones, Historic Preservation
+  - Early Marriage, Tourism, Television Functions
+  - Mark Deduction, Experiential Learning, International Organizations
+  - Information Revolution, Learning & Employment
+- **Simple strategy**: 60-70% topic keywords + 20-30% moderate vocabulary = 25-26/26 score
+- **1-3 word fills** - All placeholder fills kept ultra-short for natural fluency
+- **Word counts** - Every fill shows word count for easy tracking
+- **Success formula** - Proven with 25-26/26 scored essays
+- **Location:** `data/source/pte/essay-examples/QUICK-FILL-GUIDE.md`
+
+#### **Essay Vocabulary** - 274 Actual Terms
+- **Organized by topic** - Same 16 topics as Quick-Fill Guide
+- **IPA pronunciation** - Full IPA with simplified phonetic guides
+- **Actual fills** - These are the EXACT terms used in successful essays
+- **Quick reference** - Find your topic and use the fills directly
+- **No complex jargon** - Simple, natural, easy to remember
+- **Location:** `data/source/pte/vocabs/pte-essay-topic-vocabulary-with-ipa.md`
+
+#### **Essay Examples** - Real 25-26/26 Scored Essays
+- Detailed breakdown showing:
+  - Exact keyword extraction from prompt
+  - Placeholder fill strategy (what to use for each `[keywords]`)
+  - Topic keyword reuse tracking (60-70% density)
+  - Vocabulary selection from the book
+  - Why the essay scored 25-26/26
+- **Location:** `data/source/pte/essay-examples/`
+
+**How to use:**
+1. Find your topic in QUICK-FILL-GUIDE.md
+2. Extract 5-10 keywords from your prompt
+3. Use the fill tables as reference (all fills are 1-3 words max)
+4. Check vocabulary file for pronunciation if needed
+5. Keep it simple - don't overcomplicate!
 
 ### ☁️ **Cloud Sync with Supabase** ✨
 

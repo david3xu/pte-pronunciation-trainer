@@ -11,6 +11,7 @@ import { LockClosedIcon, PlayIcon, SpeakerLoudIcon } from '@radix-ui/react-icons
 import { Badge, Button, Card, Flex, Text } from '@radix-ui/themes';
 import React, { useState } from 'react';
 import '../../css/shadowing.css'; // Import shadowing styles
+import { stripMarkdown } from '../../lib/utils/textUtils';
 import type { SessionManager } from '../../services/session/sessionManager';
 import { isPremiumTTSAvailable } from '../../ts/audio/pollyService';
 import { ttsEngine } from '../../ts/audio/TTSEngine';

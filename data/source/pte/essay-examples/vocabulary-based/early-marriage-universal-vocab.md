@@ -9,35 +9,41 @@
 
 ## The Essay
 
-In recent years, the topic of getting married before finishing school or getting a job has emerged as a significant subject of public and academic discussion. I contend that while early marriage can create challenges, the situation varies significantly based on personal circumstances, and the following analysis presents the primary arguments supporting this viewpoint.
+In recent years, the topic of getting married before finishing school or getting a job has emerged as a significant subject of public and academic discussion. I contend that while early marriage can present significant challenges, the situation varies significantly based on personal circumstances, and the following analysis presents the primary arguments supporting this viewpoint.
 
-To begin with, one key reason why getting married before finishing school can be difficult is its potential to create constant pressure and reduced performance. In particular, young people who marry early can face increased responsibilities and financial demands, ultimately leading to broader outcomes such as incomplete education and limited career opportunities. For instance, evidence from educational research reveals that approximately 80% of students who married before completing their studies experienced reduced performance as a direct result of managing family responsibilities.
+To begin with, one compelling reason why getting married before finishing school can be problematic is its potential to create constant pressure and reduced performance. In particular, young people who marry early can foster increased responsibilities and financial demands, ultimately leading to broader outcomes such as incomplete education and limited career opportunities. For instance, evidence from educational research reveals that approximately 80% of students who married before completing their studies experienced reduced performance as a direct result of managing family responsibilities.
 
-However, it is equally important to acknowledge that getting married before finishing school may also work well in certain situations. This is largely because personal circumstances vary significantly, and couples with family stability and strong support are likely to manage both marriage and education successfully, which may subsequently lead to improved outcomes. According to research by social institutions, over 60% of successful early marriages have been sustained through careful planning and mutual support.
+However, it is equally important to acknowledge that getting married before finishing school may also give rise to certain challenges in managing multiple responsibilities. This is largely because young couples are likely to generate conflicts between education and family duties, which may subsequently cause stress and reduced wellbeing. According to research by social institutions, over 60% of early marriages have been affected by time management difficulties resulting from balancing study and family responsibilities.
 
-Taken together, these considerations demonstrate that while getting married before finishing school or getting a job presents real challenges for many young people, the outcomes vary significantly based on individual circumstances, as the influence of family stability and personal planning is substantial. Thus, it is essential for young people to dedicate adequate time and careful consideration to managing this decision effectively.
+Taken together, these considerations demonstrate that while getting married before finishing school or getting a job presents real challenges for many young people, the outcomes vary significantly based on individual circumstances, as the influence of family stability and personal planning is substantial and meaningful. Thus, it is essential for young people to dedicate adequate time and careful consideration to managing this decision effectively.
 
 ---
 
 ## Universal Vocabulary Used (From Vocabulary File)
 
 ### From Topic 1: Formal Exams
-- ✅ **educational research** (line 14) - /ˌedjʊˈkeɪʃənəl rɪˈsɜːtʃ/ — source phrase
-- ✅ **students** (line 14) - /ˈstjuːdənts/ — relevant subjects
-- ✅ **reduced performance** (line 14) - /rɪˈdjuːst pəˈfɔːməns/ — negative outcome
+- ✅ **educational research** (P2) - /ˌedjʊˈkeɪʃənəl rɪˈsɜːtʃ/ — source phrase
+- ✅ **students** (P2) - /ˈstjuːdənts/ — relevant subjects
+- ✅ **reduced performance** (P2) - /rɪˈdjuːst pəˈfɔːməns/ — negative outcome
 
 ### From Topic 3: Work-Life Balance
-- ✅ **vary significantly** (line 12, 21) - used 2x! — shows flexibility
-- ✅ **constant pressure** (line 13) - /ˈkɒnstənt ˈpreʃə/ — challenge
-- ✅ **family stability** (line 17) - /ˈfæməli stəˈbɪləti/ — positive factor
-- ✅ **improved outcomes** (line 18) - alternative to "better performance"
+- ✅ **vary significantly** (P1, P4) - used 2x! — shows flexibility
+- ✅ **constant pressure** (P2) - /ˈkɒnstənt ˈpreʃə/ — challenge
+- ✅ **family stability** (P4) - /ˈfæməli stəˈbɪləti/ — positive factor
+- ✅ **mental wellbeing** (P3) - /ˈmentəl ˌwelˈbiːɪŋ/ — referenced as "wellbeing"
+
+### Template B Words
+- ✅ **compelling** (P2) - "one compelling reason"
+- ✅ **problematic** (P2) - "can be problematic"
+- ✅ **foster** (P2) - "can foster increased responsibilities"
+- ✅ **substantial and meaningful** (P4) - "is substantial and meaningful"
 
 ### Topic Keywords (From Prompt)
 - getting married / married / marry (used 8x)
 - before finishing school / finishing school (used 5x)
 - getting a job / job (used 3x)
-- young people (used 3x)
-- early marriage (used 2x)
+- young people / couples (used 4x)
+- early marriage (used 3x)
 
 ---
 

@@ -54,8 +54,17 @@ Thus, it is essential for [relevant subjects] to dedicate adequate [resources/ti
 ```
 In recent years, the topic of [keywords] has emerged as a significant subject of public and academic discussion.
 
-I contend that [your position], and the following analysis presents the primary arguments supporting this viewpoint.
+I contend that [your position with extent], and the following analysis presents the primary arguments supporting this viewpoint.
 ```
+
+**For "To what extent" questions, use one of these positions:**
+- **Partially agree:** "while [keywords] presents certain challenges, it also offers significant benefits to a considerable extent"
+- **Largely agree:** "to a large extent, [keywords] is beneficial, despite some limitations"
+- **Moderate view:** "[keywords] can be effective, but the extent depends on specific circumstances and implementation"
+- **Balanced:** "the effectiveness of [keywords] varies significantly, with both substantial benefits and notable concerns"
+
+**Example for formal exams topic:**
+"I contend that while formal written examinations present certain challenges, they remain a valid assessment method to a considerable extent, and the following analysis presents the primary arguments supporting this viewpoint."
 
 ### Paragraph 2 - NEGATIVE (Disadvantages/Challenges)
 ```

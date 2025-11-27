@@ -61,12 +61,12 @@ I contend that [your position], and the following analysis presents the primary 
 ```
 To begin with, one compelling disadvantage of [keywords] is its potential to create [problems/difficulties].
 
-In particular, [keywords] can foster [challenges], ultimately leading to broader outcomes such as [negative consequences].
+In particular, [keywords] can exacerbate [challenges/issues], ultimately leading to broader outcomes such as [negative consequences].
 
 For instance, evidence from [source 1] reveals that approximately 75% of [relevant subjects] experienced [challenges/problems] as a direct result of [keywords].
 ```
 
-**Natural pairings:** disadvantage of, create problems/difficulties, foster challenges, experienced challenges/problems
+**Natural pairings:** disadvantage of, create problems/difficulties, exacerbate challenges/issues, experienced challenges/problems
 
 ### Paragraph 3 - POSITIVE (Benefits/Opportunities)
 ```
@@ -93,8 +93,9 @@ Thus, it is essential for [relevant subjects] to dedicate adequate [resources/ti
 ### For POSITIVE Aspects (benefits/advantages/opportunities):
 - **"bring about [benefits]"** - natural, smooth
 - **"lead to [opportunities]"** - natural, academic
-- **"foster [advantages]"** - natural, strong
+- **"foster [advantages]"** - natural, strong (POSITIVE ONLY!)
 - **"facilitate [positive outcomes]"** - formal, appropriate
+- **"develop [strengths]"** - natural, clear
 - **"benefited from [keywords]"** - result phrase
 
 ### For NEGATIVE Aspects (challenges/problems/difficulties):
@@ -102,12 +103,15 @@ Thus, it is essential for [relevant subjects] to dedicate adequate [resources/ti
 - **"cause [problems]"** - direct, clear
 - **"generate [difficulties]"** - formal, appropriate
 - **"create [issues]"** - straightforward
+- **"exacerbate [challenges]"** - make worse, formal
+- **"produce [problems]"** - natural, neutral
 - **"affected by [keywords]"** - result phrase
 
 ### ❌ Avoid These Awkward Combinations:
 - ❌ "give rise to benefits" (unnatural)
-- ❌ "foster challenges" (awkward)
-- ❌ "generate opportunities" (weird)
+- ❌ "foster challenges" (WRONG - foster is positive only!)
+- ❌ "generate opportunities" (awkward)
+- ❌ "exacerbate benefits" (meaningless)
 - ✅ Use the matching verbs above instead!
 
 ---

@@ -88,6 +88,30 @@ Thus, it is essential for [relevant subjects] to dedicate adequate [resources/ti
 
 ---
 
+## Verb Flexibility Guide
+
+### For POSITIVE Aspects (benefits/advantages/opportunities):
+- **"bring about [benefits]"** - natural, smooth
+- **"lead to [opportunities]"** - natural, academic
+- **"foster [advantages]"** - natural, strong
+- **"facilitate [positive outcomes]"** - formal, appropriate
+- **"benefited from [keywords]"** - result phrase
+
+### For NEGATIVE Aspects (challenges/problems/difficulties):
+- **"give rise to [challenges]"** - natural, academic
+- **"cause [problems]"** - direct, clear
+- **"generate [difficulties]"** - formal, appropriate
+- **"create [issues]"** - straightforward
+- **"affected by [keywords]"** - result phrase
+
+### ❌ Avoid These Awkward Combinations:
+- ❌ "give rise to benefits" (unnatural)
+- ❌ "foster challenges" (awkward)
+- ❌ "generate opportunities" (weird)
+- ✅ Use the matching verbs above instead!
+
+---
+
 ## Quick Comparison
 
 | Element | B1 (Positive→Negative) | B2 (Negative→Positive) |

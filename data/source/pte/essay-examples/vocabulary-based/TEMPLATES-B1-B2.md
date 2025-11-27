@@ -13,7 +13,14 @@
 In recent years, the topic of [keywords] has emerged as a significant subject of public and academic discussion.
 
 I contend that [your position], and the following analysis presents the primary arguments supporting this viewpoint.
+
+[OPTIONAL: While certain limitations exist, I largely agree that [keywords] is beneficial/effective.]
 ```
+
+**For B1 (emphasizing benefits), add optional sentence to show extent:**
+- "While certain limitations exist, I largely agree that [keywords] is beneficial."
+- "Despite some challenges, I believe to a great extent that [keywords] is effective."
+- This clarifies you MOSTLY AGREE (benefits > challenges)
 
 ### Paragraph 2 - POSITIVE (Advantages/Benefits)
 ```
@@ -55,6 +62,8 @@ Thus, it is essential for [relevant subjects] to dedicate adequate [resources/ti
 In recent years, the topic of [keywords] has emerged as a significant subject of public and academic discussion.
 
 I contend that [your position with extent], and the following analysis presents the primary arguments supporting this viewpoint.
+
+[OPTIONAL: While I acknowledge certain concerns, I partially agree that [keywords] can be beneficial to a considerable extent.]
 ```
 
 **For "To what extent" questions, use one of these positions:**
@@ -63,8 +72,13 @@ I contend that [your position with extent], and the following analysis presents 
 - **Moderate view:** "[keywords] can be effective, but the extent depends on specific circumstances and implementation"
 - **Balanced:** "the effectiveness of [keywords] varies significantly, with both substantial benefits and notable concerns"
 
+**Optional third sentence to clarify extent:**
+- "While I acknowledge certain concerns, I partially agree that [keywords] can be beneficial to a considerable extent."
+- "Despite some limitations, I agree to a large degree that [keywords] is effective."
+- This makes your EXTENT crystal clear for examiners
+
 **Example for formal exams topic:**
-"I contend that while formal written examinations present certain challenges, they remain a valid assessment method to a considerable extent, and the following analysis presents the primary arguments supporting this viewpoint."
+"I contend that while formal written examinations present certain challenges, they remain a valid assessment method to a considerable extent, and the following analysis presents the primary arguments supporting this viewpoint. While I acknowledge certain concerns about test anxiety, I partially agree that formal exams can be beneficial to a considerable extent."
 
 ### Paragraph 2 - NEGATIVE (Disadvantages/Challenges)
 ```

@@ -1,0 +1,127 @@
+# PTE Essay Templates B1 & B2
+
+**Both templates scored 26/26 when used with universal vocabulary approach**
+
+---
+
+## Template B1: Positive → Negative
+
+**Use when:** Discussing benefits first, then challenges
+
+### Paragraph 1 - Introduction
+```
+In recent years, the topic of [keywords] has emerged as a significant subject of public and academic discussion.
+
+I contend that [your position], and the following analysis presents the primary arguments supporting this viewpoint.
+```
+
+### Paragraph 2 - POSITIVE (Advantages/Benefits)
+```
+To begin with, one compelling advantage of [keywords] is its potential to facilitate [keywords].
+
+In particular, [keywords] can foster [keywords], ultimately leading to broader outcomes such as [keywords].
+
+For instance, evidence from [source 1] reveals that approximately 75% of [relevant subjects] experienced [keywords] as a direct result of [keywords].
+```
+
+**Key verbs:** advantage, facilitate, foster, lead to, experienced
+
+### Paragraph 3 - NEGATIVE (Challenges/Problems)
+```
+However, it is equally important to acknowledge that [keywords] may also give rise to certain challenges.
+
+This is largely because [keywords] are likely to generate [keywords], which may subsequently cause [keywords].
+
+According to research by [source 2], over 58% of [relevant subjects] have been affected by [keywords] resulting from [keywords].
+```
+
+**Key verbs:** challenges, give rise to, generate, cause, affected by
+
+### Paragraph 4 - Conclusion
+```
+Taken together, these considerations demonstrate that [rephrase position], as the influence of [keywords] and [keywords] is substantial and meaningful.
+
+Thus, it is essential for [relevant subjects] to dedicate adequate [resources/time/efforts/energy/money] to managing this issue effectively.
+```
+
+---
+
+## Template B2: Negative → Positive ✅ RECOMMENDED
+
+**Use when:** Discussing challenges first, then benefits (most natural for "to what extent" questions)
+
+### Paragraph 1 - Introduction
+```
+In recent years, the topic of [keywords] has emerged as a significant subject of public and academic discussion.
+
+I contend that [your position], and the following analysis presents the primary arguments supporting this viewpoint.
+```
+
+### Paragraph 2 - NEGATIVE (Disadvantages/Challenges)
+```
+To begin with, one compelling disadvantage of [keywords] is its potential to create [keywords].
+
+In particular, [keywords] can foster [keywords], ultimately leading to broader outcomes such as [keywords].
+
+For instance, evidence from [source 1] reveals that approximately 75% of [relevant subjects] experienced [keywords] as a direct result of [keywords].
+```
+
+**Key verbs:** disadvantage, create, foster, lead to, experienced
+
+### Paragraph 3 - POSITIVE (Benefits/Opportunities)
+```
+However, it is equally important to acknowledge that [keywords] may also bring about certain benefits.
+
+This is largely because [keywords] are likely to foster [keywords], which may subsequently lead to [keywords].
+
+According to research by [source 2], over 58% of [relevant subjects] have benefited from [keywords] resulting from [keywords].
+```
+
+**Key verbs:** benefits, bring about, foster, lead to, benefited from
+
+### Paragraph 4 - Conclusion
+```
+Taken together, these considerations demonstrate that [rephrase position], as the influence of [keywords] and [keywords] is substantial and meaningful.
+
+Thus, it is essential for [relevant subjects] to dedicate adequate [resources/time/efforts/energy/money] to managing this issue effectively.
+```
+
+---
+
+## Quick Comparison
+
+| Element | B1 (Positive→Negative) | B2 (Negative→Positive) |
+|---------|----------------------|----------------------|
+| **P2 focus** | advantage/benefit | disadvantage/challenge |
+| **P2 verbs** | facilitate, foster | create, foster |
+| **P3 focus** | challenges | benefits |
+| **P3 opening** | give rise to challenges | bring about benefits |
+| **P3 verbs** | generate, cause | foster, lead to |
+| **P3 result** | affected by | benefited from |
+
+---
+
+## When to Use Each
+
+**Use B1 when:**
+- ✅ "What are the advantages and disadvantages?"
+- ✅ "Discuss both views" (positive mentioned first)
+- ✅ Want to emphasize benefits before problems
+
+**Use B2 when:**
+- ✅ "To what extent do you agree/disagree?" ← Most common
+- ✅ "Is X a problem?"
+- ✅ Want to address concerns first, end on positive note
+
+---
+
+## Universal Vocabulary Works for Both!
+
+Same 274 vocabulary file terms work with either template:
+- improved/reduced performance
+- constant pressure, family stability
+- practical learning, deeper understanding
+- students, educational research
+- mental wellbeing, stronger relationships
+
+**Formula: 70% keywords + 20% vocabulary file + 10% template = 25-26/26** 🎯

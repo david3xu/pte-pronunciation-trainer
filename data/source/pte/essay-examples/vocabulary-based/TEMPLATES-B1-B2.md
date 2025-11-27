@@ -63,22 +63,22 @@ In recent years, the topic of [keywords] has emerged as a significant subject of
 
 I contend that [your position with extent], and the following analysis presents the primary arguments supporting this viewpoint.
 
-[OPTIONAL: While I acknowledge certain concerns, I partially agree that [keywords] can be beneficial to a considerable extent.]
+[OPTIONAL: While I acknowledge certain benefits, I believe that [keywords] presents significant challenges to a considerable extent.]
 ```
 
 **For "To what extent" questions, use one of these positions:**
-- **Partially agree:** "while [keywords] presents certain challenges, it also offers significant benefits to a considerable extent"
-- **Largely agree:** "to a large extent, [keywords] is beneficial, despite some limitations"
-- **Moderate view:** "[keywords] can be effective, but the extent depends on specific circumstances and implementation"
-- **Balanced:** "the effectiveness of [keywords] varies significantly, with both substantial benefits and notable concerns"
+- **Partially disagree (leaning negative):** "while [keywords] offers some benefits, it presents significant challenges to a considerable extent"
+- **Largely disagree:** "to a large extent, [keywords] is problematic, despite some advantages"
+- **Moderate concern:** "the challenges of [keywords] are substantial, though certain benefits exist in specific contexts"
+- **Balanced (concerns first):** "[keywords] presents notable concerns, though it also offers some benefits to a limited extent"
 
-**Optional third sentence to clarify extent:**
-- "While I acknowledge certain concerns, I partially agree that [keywords] can be beneficial to a considerable extent."
-- "Despite some limitations, I agree to a large degree that [keywords] is effective."
-- This makes your EXTENT crystal clear for examiners
+**Optional third sentence to clarify extent (emphasize CHALLENGES):**
+- "While I acknowledge certain benefits, I believe that [keywords] presents significant challenges to a considerable extent."
+- "Despite some advantages, I largely believe that [keywords] has substantial problems."
+- This makes clear: **challenges > benefits** (mostly negative view, matching P2 focus)
 
 **Example for formal exams topic:**
-"I contend that while formal written examinations present certain challenges, they remain a valid assessment method to a considerable extent, and the following analysis presents the primary arguments supporting this viewpoint. While I acknowledge certain concerns about test anxiety, I partially agree that formal exams can be beneficial to a considerable extent."
+"I contend that while formal written examinations offer some assessment benefits, they present significant challenges to students' wellbeing to a considerable extent, and the following analysis presents the primary arguments supporting this viewpoint. While I acknowledge certain benefits in standardization, I believe that formal exams present significant challenges to a considerable extent."
 
 ### Paragraph 2 - NEGATIVE (Disadvantages/Challenges)
 ```

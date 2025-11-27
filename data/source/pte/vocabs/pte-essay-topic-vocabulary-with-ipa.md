@@ -1,7 +1,7 @@
-# PTE Essay Vocabulary - From QUICK-FILL-GUIDE
+# PTE Essay Vocabulary - From QUICK-FILL-GUIDE + Templates
 
-**Purpose:** ALL vocabulary terms used in QUICK-FILL-GUIDE organized by topic
-**Total Terms:** 272 actual fills from 16 topics
+**Purpose:** ALL vocabulary terms used in QUICK-FILL-GUIDE + Template B pairings
+**Total Terms:** 284 (272 topic fills + 12 template pairings)
 **Format:** By topic order with IPA pronunciation
 **Usage:** These are the EXACT fills used in successful 25-26/26 essays
 
@@ -367,6 +367,38 @@
 - **Organized by:** 16 topics (same order as QUICK-FILL-GUIDE)
 - **All fills:** 1-3 words maximum
 - **Strategy:** These are ACTUAL fills used in 25-26/26 essays
+
+---
+
+## Template B Verb-Noun Pairings (Universal)
+
+**Purpose:** Natural collocations for Template B1 & B2
+**Total Terms:** 12 (6 positive + 6 negative)
+**Usage:** Use these EXACT pairings in templates for natural-sounding English
+
+### POSITIVE Pairings (for benefits/advantages)
+
+273. **bring about** | /brɪŋ əˈbaʊt/ — sounds like **BRING uh-BOWT** — verb phrase
+274. **benefits** | /ˈbenɪfɪts/ — sounds like **BEN-ih-fits** — use with: bring about
+275. **lead to** | /liːd tuː/ — sounds like **LEED TOO** — verb phrase
+276. **opportunities** | /ˌɒpəˈtjuːnətiz/ — sounds like **op-ur-TOO-nih-teez** — use with: lead to
+277. **foster** | /ˈfɒstə/ — sounds like **FOS-tur** — verb (POSITIVE ONLY!)
+278. **advantages** | /ədˈvɑːntɪdʒɪz/ — sounds like **ad-VAN-tij-iz** — use with: foster
+
+### NEGATIVE Pairings (for challenges/problems)
+
+279. **give rise to** | /ɡɪv raɪz tuː/ — sounds like **GIV RYZ TOO** — verb phrase
+280. **challenges** | /ˈtʃælɪndʒɪz/ — sounds like **CHAL-in-jiz** — use with: give rise to
+281. **cause** | /kɔːz/ — sounds like **KAWZ** — verb
+282. **problems** | /ˈprɒbləmz/ — sounds like **PROB-lumz** — use with: cause
+283. **generate** | /ˈdʒenəreɪt/ — sounds like **JEN-ur-ayt** — verb
+284. **difficulties** | /ˈdɪfɪkəltiz/ — sounds like **DIF-ih-kul-teez** — use with: generate
+
+**Why these pairings:**
+- ✅ Natural English collocations
+- ✅ Work across ANY essay topic
+- ✅ Prevent awkward combinations
+- ❌ Never say "foster challenges" or "give rise to benefits"
 
 ---
 

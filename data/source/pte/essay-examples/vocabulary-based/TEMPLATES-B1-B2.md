@@ -17,25 +17,25 @@ I contend that [your position], and the following analysis presents the primary 
 
 ### Paragraph 2 - POSITIVE (Advantages/Benefits)
 ```
-To begin with, one compelling advantage of [keywords] is its potential to facilitate [keywords].
+To begin with, one compelling advantage of [keywords] is its potential to facilitate [benefits/opportunities].
 
-In particular, [keywords] can foster [keywords], ultimately leading to broader outcomes such as [keywords].
+In particular, [keywords] can foster [advantages], ultimately leading to broader outcomes such as [positive results].
 
-For instance, evidence from [source 1] reveals that approximately 75% of [relevant subjects] experienced [keywords] as a direct result of [keywords].
+For instance, evidence from [source 1] reveals that approximately 75% of [relevant subjects] experienced [benefits] as a direct result of [keywords].
 ```
 
-**Key verbs:** advantage, facilitate, foster, lead to, experienced
+**Natural pairings:** advantage of, facilitate benefits/opportunities, foster advantages, experienced benefits
 
 ### Paragraph 3 - NEGATIVE (Challenges/Problems)
 ```
 However, it is equally important to acknowledge that [keywords] may also give rise to certain challenges.
 
-This is largely because [keywords] are likely to generate [keywords], which may subsequently cause [keywords].
+This is largely because [keywords] are likely to generate [difficulties/problems], which may subsequently cause [challenges].
 
-According to research by [source 2], over 58% of [relevant subjects] have been affected by [keywords] resulting from [keywords].
+According to research by [source 2], over 58% of [relevant subjects] have been affected by [problems] resulting from [keywords].
 ```
 
-**Key verbs:** challenges, give rise to, generate, cause, affected by
+**Natural pairings:** give rise to challenges, generate difficulties/problems, cause challenges, affected by problems
 
 ### Paragraph 4 - Conclusion
 ```
@@ -59,25 +59,25 @@ I contend that [your position], and the following analysis presents the primary 
 
 ### Paragraph 2 - NEGATIVE (Disadvantages/Challenges)
 ```
-To begin with, one compelling disadvantage of [keywords] is its potential to create [keywords].
+To begin with, one compelling disadvantage of [keywords] is its potential to create [problems/difficulties].
 
-In particular, [keywords] can foster [keywords], ultimately leading to broader outcomes such as [keywords].
+In particular, [keywords] can foster [challenges], ultimately leading to broader outcomes such as [negative consequences].
 
-For instance, evidence from [source 1] reveals that approximately 75% of [relevant subjects] experienced [keywords] as a direct result of [keywords].
+For instance, evidence from [source 1] reveals that approximately 75% of [relevant subjects] experienced [challenges/problems] as a direct result of [keywords].
 ```
 
-**Key verbs:** disadvantage, create, foster, lead to, experienced
+**Natural pairings:** disadvantage of, create problems/difficulties, foster challenges, experienced challenges/problems
 
 ### Paragraph 3 - POSITIVE (Benefits/Opportunities)
 ```
 However, it is equally important to acknowledge that [keywords] may also bring about certain benefits.
 
-This is largely because [keywords] are likely to foster [keywords], which may subsequently lead to [keywords].
+This is largely because [keywords] are likely to foster [advantages], which may subsequently lead to [opportunities].
 
-According to research by [source 2], over 58% of [relevant subjects] have benefited from [keywords] resulting from [keywords].
+According to research by [source 2], over 58% of [relevant subjects] have benefited from [benefits] resulting from [keywords].
 ```
 
-**Key verbs:** benefits, bring about, foster, lead to, benefited from
+**Natural pairings:** bring about benefits, foster advantages, lead to opportunities, benefited from benefits
 
 ### Paragraph 4 - Conclusion
 ```

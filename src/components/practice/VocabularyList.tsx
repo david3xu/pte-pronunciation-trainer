@@ -5,13 +5,12 @@
  */
 
 import { Cross2Icon, MagnifyingGlassIcon } from '@radix-ui/react-icons';
-import { Badge, Button, Card, Flex, Text } from '@radix-ui/themes';
+import { Badge, Button, Card, Flex, ScrollArea, Text, TextField } from '@radix-ui/themes';
 import React, { useState } from 'react';
 import { stripMarkdown } from '../../lib/utils/textUtils';
 import { useAppStore } from '../../ts/stores';
 import type { PracticeItem, VocabularyTerm } from '../../types/dataset.types';
 import { VocabularyListSkeleton } from '../shared/Skeleton';
-import { ScrollArea } from '../ui';
 
 const VocabularyList: React.FC = () => {
   const { vocabulary, progress } = useAppStore();
@@ -50,30 +49,33 @@ const VocabularyList: React.FC = () => {
           </Flex>
 
           {/* Search */}
-          <input
-            placeholder="Search vocabulary..."
-            value={searchQuery}
-            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchQuery(e.target.value)}
-          >
-            <span>
+          <TextField.Root>
+            <TextField.Slot>
               <MagnifyingGlassIcon height="16" width="16" />
-            </span>
+            </TextField.Slot>
+            {/* @ts-ignore */}
+            <TextField.Input
+              placeholder="Search vocabulary..."
+              value={searchQuery}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchQuery(e.target.value)}
+            />
             {searchQuery && (
-              <span>
+              <TextField.Slot>
                 <Button
                   size="1"
                   variant="ghost"
                   onClick={() => setSearchQuery('')}
+                  style={{ padding: 0, height: 'auto' }}
                 >
                   <Cross2Icon height="14" width="14" />
                 </Button>
-              </span>
+              </TextField.Slot>
             )}
-          </input>
+          </TextField.Root>
         </Flex>
 
         {/* List */}
-        <ScrollArea style={{ height: '400px' }}>
+        <ScrollArea type="auto" scrollbars="vertical" style={{ height: '400px' }}>
           {isLoading ? (
             <VocabularyListSkeleton />
           ) : (

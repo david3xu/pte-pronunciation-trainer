@@ -8,7 +8,7 @@
  */
 
 import { LockClosedIcon, PlayIcon, SpeakerLoudIcon } from '@radix-ui/react-icons';
-import { Badge, Button, Card, Flex, Text } from '@radix-ui/themes';
+import { Badge, Button, Card, Checkbox, Flex, Select, Text } from '@radix-ui/themes';
 import React, { useState } from 'react';
 import '../../css/shadowing.css'; // Import shadowing styles
 import { stripMarkdown } from '../../lib/utils/textUtils';
@@ -19,7 +19,6 @@ import { useAppStore } from '../../ts/stores';
 import { parseAnswerForDisplay } from '../../ts/utils/templateParser';
 import type { ItemType } from '../../types/database';
 import type { PracticeItem, VocabularyTerm } from '../../types/dataset.types';
-import { Checkbox, Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger } from '../ui';
 
 interface WordCardProps {
   item: VocabularyTerm | PracticeItem;
@@ -245,46 +244,46 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
           <Text size="2" weight="medium">Voice Settings</Text>
 
           <Flex gap="2" align="center" wrap="wrap">
-            <Select
+            <Select.Root
               value={usePremiumTTS ? 'premium' : 'free'}
               onValueChange={(value) => setUsePremiumTTS(value === 'premium')}
               disabled={!premiumAvailable}
             >
-              <SelectTrigger />
-              <SelectContent>
-                <SelectItem value="free">
+              <Select.Trigger />
+              <Select.Content>
+                <Select.Item value="free">
                   🔊 Browser TTS (Free)
-                </SelectItem>
-                <SelectItem value="premium">
+                </Select.Item>
+                <Select.Item value="premium">
                   <Flex align="center" gap="1">
                     {premiumAvailable ? '⭐ Premium Neural' : <><LockClosedIcon /> Premium (Locked)</>}
                   </Flex>
-                </SelectItem>
-              </SelectContent>
-            </Select>
+                </Select.Item>
+              </Select.Content>
+            </Select.Root>
 
             {usePremiumTTS && premiumAvailable && (
-              <Select
+              <Select.Root
                 value={premiumVoiceId}
                 onValueChange={setPremiumVoiceId}
               >
-                <SelectTrigger />
-                <SelectContent>
-                  <SelectGroup>
-                    <SelectLabel>US English</SelectLabel>
-                    <SelectItem value="Joanna">Joanna (F)</SelectItem>
-                    <SelectItem value="Matthew">Matthew (M)</SelectItem>
-                    <SelectItem value="Kendra">Kendra (F)</SelectItem>
-                    <SelectItem value="Joey">Joey (M)</SelectItem>
-                  </SelectGroup>
-                  <SelectGroup>
-                    <SelectLabel>British English</SelectLabel>
-                    <SelectItem value="Amy">Amy (F)</SelectItem>
-                    <SelectItem value="Brian">Brian (M)</SelectItem>
-                    <SelectItem value="Emma">Emma (F)</SelectItem>
-                  </SelectGroup>
-                </SelectContent>
-              </Select>
+                <Select.Trigger />
+                <Select.Content>
+                  <Select.Group>
+                    <Select.Label>US English</Select.Label>
+                    <Select.Item value="Joanna">Joanna (F)</Select.Item>
+                    <Select.Item value="Matthew">Matthew (M)</Select.Item>
+                    <Select.Item value="Kendra">Kendra (F)</Select.Item>
+                    <Select.Item value="Joey">Joey (M)</Select.Item>
+                  </Select.Group>
+                  <Select.Group>
+                    <Select.Label>British English</Select.Label>
+                    <Select.Item value="Amy">Amy (F)</Select.Item>
+                    <Select.Item value="Brian">Brian (M)</Select.Item>
+                    <Select.Item value="Emma">Emma (F)</Select.Item>
+                  </Select.Group>
+                </Select.Content>
+              </Select.Root>
             )}
           </Flex>
 
@@ -457,7 +456,7 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
                 <label className="color-toggle-label">
                   <Checkbox
                     checked={showTemplateColors}
-                    onChange={(e) => setShowTemplateColors(e.target.checked === true)}
+                    onCheckedChange={(checked) => setShowTemplateColors(checked === true)}
                     className="color-toggle-checkbox"
                   />
                   <span>Show Template Colors</span>

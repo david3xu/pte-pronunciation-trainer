@@ -12,7 +12,7 @@ import {
     InfoCircledIcon,
     UpdateIcon,
 } from '@radix-ui/react-icons';
-import { Badge, Button, Card, Flex, Text } from '@radix-ui/themes';
+import { Badge, Button, Card, Flex, Progress, Text } from '@radix-ui/themes';
 import React, { useState } from 'react';
 import {
     clearOldData,
@@ -23,7 +23,6 @@ import {
     type MigrationResult,
 } from '../../services/migration/migrationService';
 import { useAppStore } from '../../ts/stores';
-import { Progress } from '../ui';
 
 interface DataMigrationModalProps {
   isOpen: boolean;

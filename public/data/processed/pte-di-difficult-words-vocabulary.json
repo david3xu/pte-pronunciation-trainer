@@ -1,0 +1,3920 @@
+{
+  "metadata": {
+    "generated": "2025-11-28T08:42:10.552Z",
+    "totalTerms": 355,
+    "source": "pte-di-difficult-words",
+    "description": "PTE DI Difficult Words - 440 words with IPA from 44 DI examples",
+    "version": "1.0",
+    "categories": [
+      "pte-di-vocabulary"
+    ],
+    "hasIPA": true
+  },
+  "vocabulary": [
+    {
+      "english": "overshot",
+      "pronunciation": {
+        "ipa": "ˈoʊvərʃɑt",
+        "phonetic": "OH-vuh-shot"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "pitchback",
+      "pronunciation": {
+        "ipa": "ˈpɪtʃbæk",
+        "phonetic": "PITCH-back"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "standard",
+      "pronunciation": {
+        "ipa": "ˈstændərd",
+        "phonetic": "STAN-duhrd"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "flume",
+      "pronunciation": {
+        "ipa": "fluːm",
+        "phonetic": "floom"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "buckets",
+      "pronunciation": {
+        "ipa": "ˈbʌkɪts",
+        "phonetic": "BUK-its"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "gravity",
+      "pronunciation": {
+        "ipa": "ˈɡrævəti",
+        "phonetic": "GRAV-uh-tee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "rotation",
+      "pronunciation": {
+        "ipa": "roʊˈteɪʃən",
+        "phonetic": "roh-TAY-shun"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "direction",
+      "pronunciation": {
+        "ipa": "dəˈrɛkʃən",
+        "phonetic": "duh-REK-shun"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "difference",
+      "pronunciation": {
+        "ipa": "ˈdɪfərəns",
+        "phonetic": "DIF-uh-ruhns"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "designs",
+      "pronunciation": {
+        "ipa": "dɪˈzaɪnz",
+        "phonetic": "dih-ZYNZ"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "projected",
+      "pronunciation": {
+        "ipa": "prəˈdʒɛktɪd",
+        "phonetic": "pruh-JEK-tid"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "population",
+      "pronunciation": {
+        "ipa": "ˌpɒpjəˈleɪʃən",
+        "phonetic": "pop-yuh-LAY-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "Australia",
+      "pronunciation": {
+        "ipa": "ɒˈstreɪliə",
+        "phonetic": "aw-STRAY-lee-uh"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "series",
+      "pronunciation": {
+        "ipa": "ˈsɪəriːz",
+        "phonetic": "SEER-eez"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "million",
+      "pronunciation": {
+        "ipa": "ˈmɪljən",
+        "phonetic": "MIL-yun"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "roughly",
+      "pronunciation": {
+        "ipa": "ˈrʌfli",
+        "phonetic": "RUF-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "continue",
+      "pronunciation": {
+        "ipa": "kənˈtɪnjuː",
+        "phonetic": "kuhn-TIN-yoo"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "depends",
+      "pronunciation": {
+        "ipa": "dɪˈpɛndz",
+        "phonetic": "dih-PENDZ"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "factors",
+      "pronunciation": {
+        "ipa": "ˈfæktərz",
+        "phonetic": "FAK-tuhrz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "growth",
+      "pronunciation": {
+        "ipa": "ɡroʊθ",
+        "phonetic": "grohth"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "density",
+      "pronunciation": {
+        "ipa": "ˈdɛnsəti",
+        "phonetic": "DEN-suh-tee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "southeastern",
+      "pronunciation": {
+        "ipa": "ˌsaʊθˈiːstərn",
+        "phonetic": "sowth-EE-stuhrn"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "kilometer",
+      "pronunciation": {
+        "ipa": "kɪˈlɒmɪtər",
+        "phonetic": "kil-OM-uh-tur"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "concentrated",
+      "pronunciation": {
+        "ipa": "ˈkɒnsəntreɪtɪd",
+        "phonetic": "KON-suhn-tray-tid"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "coastal",
+      "pronunciation": {
+        "ipa": "ˈkoʊstəl",
+        "phonetic": "KOH-stuhl"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "sparsely",
+      "pronunciation": {
+        "ipa": "ˈspɑrsli",
+        "phonetic": "SPARS-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "inland",
+      "pronunciation": {
+        "ipa": "ˈɪnlənd",
+        "phonetic": "IN-luhnd"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "represent",
+      "pronunciation": {
+        "ipa": "ˌrɛprɪˈzɛnt",
+        "phonetic": "rep-rih-ZENT"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "ancient",
+      "pronunciation": {
+        "ipa": "ˈeɪnʃənt",
+        "phonetic": "AYN-shuhnt"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "Egypt",
+      "pronunciation": {
+        "ipa": "ˈiːdʒɪpt",
+        "phonetic": "EE-jipt"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "imports",
+      "pronunciation": {
+        "ipa": "ˈɪmpɔrts",
+        "phonetic": "IM-ports"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "exports",
+      "pronunciation": {
+        "ipa": "ˈɛkspɔrts",
+        "phonetic": "EK-sports"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "Mediterranean",
+      "pronunciation": {
+        "ipa": "ˌmɛdɪtəˈreɪniən",
+        "phonetic": "med-uh-tuh-RAY-nee-uhn"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "exotic",
+      "pronunciation": {
+        "ipa": "ɪɡˈzɒtɪk",
+        "phonetic": "ig-ZOT-ik"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "tropical",
+      "pronunciation": {
+        "ipa": "ˈtrɒpɪkəl",
+        "phonetic": "TROP-uh-kuhl"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "copper",
+      "pronunciation": {
+        "ipa": "ˈkɒpər",
+        "phonetic": "KOP-uhr"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "weapons",
+      "pronunciation": {
+        "ipa": "ˈwɛpənz",
+        "phonetic": "WEP-uhnz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "regions",
+      "pronunciation": {
+        "ipa": "ˈriːdʒənz",
+        "phonetic": "REE-juhnz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "graduates",
+      "pronunciation": {
+        "ipa": "ˈɡrædʒuəts",
+        "phonetic": "GRAD-joo-uhts"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "comparison",
+      "pronunciation": {
+        "ipa": "kəmˈpærɪsən",
+        "phonetic": "kuhm-PAIR-uh-suhn"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "category",
+      "pronunciation": {
+        "ipa": "ˈkætəɡəri",
+        "phonetic": "KAT-uh-gor-ee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "percentages",
+      "pronunciation": {
+        "ipa": "pərˈsɛntɪdʒɪz",
+        "phonetic": "puhr-SEN-tuh-jiz"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "maximum",
+      "pronunciation": {
+        "ipa": "ˈmæksɪməm",
+        "phonetic": "MAX-uh-muhm"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "slightly",
+      "pronunciation": {
+        "ipa": "ˈslaɪtli",
+        "phonetic": "SLITE-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "females",
+      "pronunciation": {
+        "ipa": "ˈfiːmeɪlz",
+        "phonetic": "FEE-maylz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "youngest",
+      "pronunciation": {
+        "ipa": "ˈjʌŋɡɪst",
+        "phonetic": "YUNG-ist"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "overall",
+      "pronunciation": {
+        "ipa": "ˌoʊvərˈɔl",
+        "phonetic": "oh-vuhr-AWL"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "almost",
+      "pronunciation": {
+        "ipa": "ˈɔlmoʊst",
+        "phonetic": "AWL-mohst"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "vegetables",
+      "pronunciation": {
+        "ipa": "ˈvɛdʒtəbəlz",
+        "phonetic": "VEJ-tuh-buhlz"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "nutrition",
+      "pronunciation": {
+        "ipa": "nuːˈtrɪʃən",
+        "phonetic": "noo-TRISH-uhn"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "starchy",
+      "pronunciation": {
+        "ipa": "ˈstɑrtʃi",
+        "phonetic": "STAR-chee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "potatoes",
+      "pronunciation": {
+        "ipa": "pəˈteɪtoʊz",
+        "phonetic": "puh-TAY-tohz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "dairy",
+      "pronunciation": {
+        "ipa": "ˈdɛəri",
+        "phonetic": "DAIR-ee"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "balanced",
+      "pronunciation": {
+        "ipa": "ˈbælənst",
+        "phonetic": "BAL-uhnst"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "purple",
+      "pronunciation": {
+        "ipa": "ˈpɜrpəl",
+        "phonetic": "PUR-puhl"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "plate",
+      "pronunciation": {
+        "ipa": "pleɪt",
+        "phonetic": "playt"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "section",
+      "pronunciation": {
+        "ipa": "ˈsɛkʃən",
+        "phonetic": "SEK-shuhn"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "diet",
+      "pronunciation": {
+        "ipa": "ˈdaɪət",
+        "phonetic": "DYE-uht"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "structure",
+      "pronunciation": {
+        "ipa": "ˈstrʌktʃər",
+        "phonetic": "STRUK-chuhr"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "humerus",
+      "pronunciation": {
+        "ipa": "ˈhjuːmərəs",
+        "phonetic": "HYOO-muhr-uhs"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "radius",
+      "pronunciation": {
+        "ipa": "ˈreɪdiəs",
+        "phonetic": "RAY-dee-uhs"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "ulna",
+      "pronunciation": {
+        "ipa": "ˈʌlnə",
+        "phonetic": "UL-nuh"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "adapted",
+      "pronunciation": {
+        "ipa": "əˈdæptɪd",
+        "phonetic": "uh-DAP-tid"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "extended",
+      "pronunciation": {
+        "ipa": "ɪkˈstɛndɪd",
+        "phonetic": "ik-STEN-did"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "purposes",
+      "pronunciation": {
+        "ipa": "ˈpɜrpəsɪz",
+        "phonetic": "PUR-puh-siz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "grasping",
+      "pronunciation": {
+        "ipa": "ˈɡræspɪŋ",
+        "phonetic": "GRASP-ing"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "swimming",
+      "pronunciation": {
+        "ipa": "ˈswɪmɪŋ",
+        "phonetic": "SWIM-ing"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "ergonomics",
+      "pronunciation": {
+        "ipa": "ˌɜrɡəˈnɒmɪks",
+        "phonetic": "er-guh-NOM-iks"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "keyboard",
+      "pronunciation": {
+        "ipa": "ˈkiːbɔrd",
+        "phonetic": "KEE-bord"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "wrists",
+      "pronunciation": {
+        "ipa": "rɪsts",
+        "phonetic": "rists"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "straight",
+      "pronunciation": {
+        "ipa": "streɪt",
+        "phonetic": "strayt"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "forearm",
+      "pronunciation": {
+        "ipa": "ˈfɔrɑrm",
+        "phonetic": "FOR-arm"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "upward",
+      "pronunciation": {
+        "ipa": "ˈʌpwərd",
+        "phonetic": "UP-wuhrd"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "comfortably",
+      "pronunciation": {
+        "ipa": "ˈkʌmfərtəbli",
+        "phonetic": "KUM-fuhr-tuh-blee"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "injury",
+      "pronunciation": {
+        "ipa": "ˈɪndʒəri",
+        "phonetic": "IN-juh-ree"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "relaxed",
+      "pronunciation": {
+        "ipa": "rɪˈlækst",
+        "phonetic": "rih-LAKST"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "position",
+      "pronunciation": {
+        "ipa": "pəˈzɪʃən",
+        "phonetic": "puh-ZISH-uhn"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "flowchart",
+      "pronunciation": {
+        "ipa": "ˈfloʊtʃɑrt",
+        "phonetic": "FLOH-chart"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "Wikipedia",
+      "pronunciation": {
+        "ipa": "ˌwɪkɪˈpiːdiə",
+        "phonetic": "wik-uh-PEE-dee-uh"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "article",
+      "pronunciation": {
+        "ipa": "ˈɑrtɪkəl",
+        "phonetic": "AR-tuh-kuhl"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "redirect",
+      "pronunciation": {
+        "ipa": "ˌriːdəˈrɛkt",
+        "phonetic": "ree-duh-REKT"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "decision",
+      "pronunciation": {
+        "ipa": "dɪˈsɪʒən",
+        "phonetic": "dih-SIZH-uhn"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "related",
+      "pronunciation": {
+        "ipa": "rɪˈleɪtɪd",
+        "phonetic": "rih-LAY-tid"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "exists",
+      "pronunciation": {
+        "ipa": "ɪɡˈzɪsts",
+        "phonetic": "ig-ZISTS"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "search",
+      "pronunciation": {
+        "ipa": "sɜrtʃ",
+        "phonetic": "surch"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "circles",
+      "pronunciation": {
+        "ipa": "ˈsɜrkəlz",
+        "phonetic": "SUR-kuhlz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "actions",
+      "pronunciation": {
+        "ipa": "ˈækʃənz",
+        "phonetic": "AK-shuhnz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "fungus",
+      "pronunciation": {
+        "ipa": "ˈfʌŋɡəs",
+        "phonetic": "FUNG-guhs"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "gnat",
+      "pronunciation": {
+        "ipa": "næt",
+        "phonetic": "nat"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "lifecycle",
+      "pronunciation": {
+        "ipa": "ˈlaɪfsʌɪkəl",
+        "phonetic": "LIFE-sy-kuhl"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "larvae",
+      "pronunciation": {
+        "ipa": "ˈlɑrviː",
+        "phonetic": "LAR-vee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "pupa",
+      "pronunciation": {
+        "ipa": "ˈpjuːpə",
+        "phonetic": "PYOO-puh"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "diagram",
+      "pronunciation": {
+        "ipa": "ˈdaɪəɡræm",
+        "phonetic": "DYE-uh-gram"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "cycle",
+      "pronunciation": {
+        "ipa": "ˈsaɪkəl",
+        "phonetic": "SY-kuhl"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "develop",
+      "pronunciation": {
+        "ipa": "dɪˈvɛləp",
+        "phonetic": "dih-VEL-uhp"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "duration",
+      "pronunciation": {
+        "ipa": "dʊˈreɪʃən",
+        "phonetic": "doo-RAY-shuhn"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "clockwise",
+      "pronunciation": {
+        "ipa": "ˈklɒkwaɪz",
+        "phonetic": "KLOK-wyze"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "temperature",
+      "pronunciation": {
+        "ipa": "ˈtɛmpərətʃər",
+        "phonetic": "TEM-puhr-uh-chur"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "Beijing",
+      "pronunciation": {
+        "ipa": "ˌbeɪˈdʒɪŋ",
+        "phonetic": "bay-JING"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "gradually",
+      "pronunciation": {
+        "ipa": "ˈɡrædʒuəli",
+        "phonetic": "GRAD-joo-uh-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "seasonal",
+      "pronunciation": {
+        "ipa": "ˈsiːzənəl",
+        "phonetic": "SEE-zuh-nuhl"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "autumn",
+      "pronunciation": {
+        "ipa": "ˈɔtəm",
+        "phonetic": "AW-tuhm"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "degrees",
+      "pronunciation": {
+        "ipa": "dɪˈɡriːz",
+        "phonetic": "dih-GREEZ"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "January",
+      "pronunciation": {
+        "ipa": "ˈdʒænjuɛri",
+        "phonetic": "JAN-yoo-air-ee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "February",
+      "pronunciation": {
+        "ipa": "ˈfɛbruɛri",
+        "phonetic": "FEB-roo-air-ee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "background",
+      "pronunciation": {
+        "ipa": "ˈbækɡraʊnd",
+        "phonetic": "BAK-grownd"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "throughout",
+      "pronunciation": {
+        "ipa": "θruˈaʊt",
+        "phonetic": "throo-OUT"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "prep."
+    },
+    {
+      "english": "behavior",
+      "pronunciation": {
+        "ipa": "bɪˈheɪvjər",
+        "phonetic": "bih-HAY-vyuhr"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "phases",
+      "pronunciation": {
+        "ipa": "ˈfeɪzɪz",
+        "phonetic": "FAY-ziz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "crescent",
+      "pronunciation": {
+        "ipa": "ˈkrɛsənt",
+        "phonetic": "KRES-uhnt"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "scattered",
+      "pronunciation": {
+        "ipa": "ˈskætərd",
+        "phonetic": "SKAT-uhrd"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "surface",
+      "pronunciation": {
+        "ipa": "ˈsɜrfɪs",
+        "phonetic": "SUR-fis"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "panel",
+      "pronunciation": {
+        "ipa": "ˈpænəl",
+        "phonetic": "PAN-uhl"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "lunar",
+      "pronunciation": {
+        "ipa": "ˈluːnər",
+        "phonetic": "LOO-nuhr"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "influence",
+      "pronunciation": {
+        "ipa": "ˈɪnflʊəns",
+        "phonetic": "IN-floo-uhns"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "toward",
+      "pronunciation": {
+        "ipa": "təˈwɔrd",
+        "phonetic": "tuh-WARD"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "prep."
+    },
+    {
+      "english": "humidity",
+      "pronunciation": {
+        "ipa": "hjuːˈmɪdəti",
+        "phonetic": "hyoo-MID-uh-tee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "climate",
+      "pronunciation": {
+        "ipa": "ˈklaɪmət",
+        "phonetic": "KLY-muht"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "temperate",
+      "pronunciation": {
+        "ipa": "ˈtɛmpərət",
+        "phonetic": "TEM-puhr-uht"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "Tasmania",
+      "pronunciation": {
+        "ipa": "tæzˈmeɪniə",
+        "phonetic": "taz-MAY-nee-uh"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "diversity",
+      "pronunciation": {
+        "ipa": "daɪˈvɜrsəti",
+        "phonetic": "dye-VER-suh-tee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "northern",
+      "pronunciation": {
+        "ipa": "ˈnɔrðərn",
+        "phonetic": "NOR-thuhrn"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "southern",
+      "pronunciation": {
+        "ipa": "ˈsʌðərn",
+        "phonetic": "SUH-thuhrn"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "expenditure",
+      "pronunciation": {
+        "ipa": "ɪkˈspɛndɪtʃər",
+        "phonetic": "ik-SPEN-duh-chur"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "wellbeing",
+      "pronunciation": {
+        "ipa": "wɛlˈbiɪŋ",
+        "phonetic": "wel-BEE-ing"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "grooming",
+      "pronunciation": {
+        "ipa": "ˈɡruːmɪŋ",
+        "phonetic": "GROO-ming"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "boarding",
+      "pronunciation": {
+        "ipa": "ˈbɔrdɪŋ",
+        "phonetic": "BOR-ding"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "purchase",
+      "pronunciation": {
+        "ipa": "ˈpɜrtʃəs",
+        "phonetic": "PUR-chus"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "priorities",
+      "pronunciation": {
+        "ipa": "praɪˈɒrɪtis",
+        "phonetic": "pry-OR-uh-teez"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "percent",
+      "pronunciation": {
+        "ipa": "pərˈsɛnt",
+        "phonetic": "puhr-SENT"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "litter",
+      "pronunciation": {
+        "ipa": "ˈlɪtər",
+        "phonetic": "LIT-uhr"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "services",
+      "pronunciation": {
+        "ipa": "ˈsɜrvɪsɪz",
+        "phonetic": "SUR-vuh-siz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "typical",
+      "pronunciation": {
+        "ipa": "ˈtɪpɪkəl",
+        "phonetic": "TIP-uh-kuhl"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "contrast",
+      "pronunciation": {
+        "ipa": "ˈkɒntræst",
+        "phonetic": "KON-trast"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "texts",
+      "pronunciation": {
+        "ipa": "tɛksts",
+        "phonetic": "teksts"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "daily",
+      "pronunciation": {
+        "ipa": "ˈdeɪli",
+        "phonetic": "DAY-lee"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "adults",
+      "pronunciation": {
+        "ipa": "əˈdʌlts",
+        "phonetic": "uh-DULTS"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "teens",
+      "pronunciation": {
+        "ipa": "tiːnz",
+        "phonetic": "seenz"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "amount",
+      "pronunciation": {
+        "ipa": "əˈmaʊnt",
+        "phonetic": "uh-MOWNT"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "messages",
+      "pronunciation": {
+        "ipa": "ˈmɛsɪdʒɪz",
+        "phonetic": "MES-uh-jiz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "appliances",
+      "pronunciation": {
+        "ipa": "əˈplaɪənsɪz",
+        "phonetic": "uh-PLY-uhn-siz"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "electronic",
+      "pronunciation": {
+        "ipa": "ɪlɛkˈtrɒnɪk",
+        "phonetic": "ee-lek-TRON-ik"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "electric",
+      "pronunciation": {
+        "ipa": "ɪˈlɛktrɪk",
+        "phonetic": "ih-LEK-trik"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "monitors",
+      "pronunciation": {
+        "ipa": "ˈmɒnɪtərz",
+        "phonetic": "MON-uh-tuhrz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "televisions",
+      "pronunciation": {
+        "ipa": "ˈtɛləvɪʒənz",
+        "phonetic": "TEL-uh-vizh-uhnz"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "computers",
+      "pronunciation": {
+        "ipa": "kəmˈpjuːtərz",
+        "phonetic": "kuhm-PYOO-tuhrz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "printers",
+      "pronunciation": {
+        "ipa": "ˈprɪntərz",
+        "phonetic": "PRIN-tuhrz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "refrigerators",
+      "pronunciation": {
+        "ipa": "rɪˈfrɪdʒəreɪtərz",
+        "phonetic": "rih-FRIJ-uh-ray-tuhrz"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "machines",
+      "pronunciation": {
+        "ipa": "məˈʃiːnz",
+        "phonetic": "muh-SHEENZ"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "dryers",
+      "pronunciation": {
+        "ipa": "ˈdraɪərz",
+        "phonetic": "DRY-uhrz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "internet",
+      "pronunciation": {
+        "ipa": "ˈɪntərnɛt",
+        "phonetic": "IN-tuhr-net"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "accessed",
+      "pronunciation": {
+        "ipa": "ˈæksɛst",
+        "phonetic": "AK-sest"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "mobile",
+      "pronunciation": {
+        "ipa": "ˈmoʊbaɪl",
+        "phonetic": "MOH-byl"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "Britain",
+      "pronunciation": {
+        "ipa": "ˈbrɪtən",
+        "phonetic": "BRIT-uhn"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "percentage",
+      "pronunciation": {
+        "ipa": "pərˈsɛntɪdʒ",
+        "phonetic": "puhr-SEN-tij"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "usage",
+      "pronunciation": {
+        "ipa": "ˈjuːsɪdʒ",
+        "phonetic": "YOO-sij"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "continues",
+      "pronunciation": {
+        "ipa": "kənˈtɪnjuːz",
+        "phonetic": "kuhn-TIN-yooz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "approximate",
+      "pronunciation": {
+        "ipa": "əˈprɒksɪmət",
+        "phonetic": "uh-PROK-suh-muht"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "younger",
+      "pronunciation": {
+        "ipa": "ˈjʌŋɡər",
+        "phonetic": "YUNG-guhr"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "pyramid",
+      "pronunciation": {
+        "ipa": "ˈpɪrəmɪd",
+        "phonetic": "PEER-uh-mid"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "recommended",
+      "pronunciation": {
+        "ipa": "ˌrɛkəˈmɛndɪd",
+        "phonetic": "rek-uh-MEN-did"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "servings",
+      "pronunciation": {
+        "ipa": "ˈsɜrvɪŋz",
+        "phonetic": "SUR-vingz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "cereal",
+      "pronunciation": {
+        "ipa": "ˈsɪriəl",
+        "phonetic": "SEER-ee-uhl"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "calcium",
+      "pronunciation": {
+        "ipa": "ˈkælsiəm",
+        "phonetic": "KAL-see-uhm"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "vitamin",
+      "pronunciation": {
+        "ipa": "ˈvaɪtəmɪn",
+        "phonetic": "VYE-tuh-min"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "supplements",
+      "pronunciation": {
+        "ipa": "ˈsʌpləmənts",
+        "phonetic": "SUP-luh-muhnts"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "sparingly",
+      "pronunciation": {
+        "ipa": "ˈspɛərɪŋli",
+        "phonetic": "SPAIR-ing-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "market",
+      "pronunciation": {
+        "ipa": "ˈmɑrkɪt",
+        "phonetic": "MAR-kit"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "specifically",
+      "pronunciation": {
+        "ipa": "spɪˈsɪfɪkli",
+        "phonetic": "spuh-SIF-uh-klee"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "index",
+      "pronunciation": {
+        "ipa": "ˈɪndɛks",
+        "phonetic": "IN-deks"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "trading",
+      "pronunciation": {
+        "ipa": "ˈtreɪdɪŋ",
+        "phonetic": "TRAY-ding"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "sharply",
+      "pronunciation": {
+        "ipa": "ˈʃɑrpli",
+        "phonetic": "SHARP-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "unstable",
+      "pronunciation": {
+        "ipa": "ʌnˈsteɪbəl",
+        "phonetic": "uhn-STAY-buhl"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "settled",
+      "pronunciation": {
+        "ipa": "ˈsɛtəld",
+        "phonetic": "SET-uhld"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "significant",
+      "pronunciation": {
+        "ipa": "sɪɡˈnɪfɪkənt",
+        "phonetic": "sig-NIF-uh-kuhnt"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "activity",
+      "pronunciation": {
+        "ipa": "ækˈtɪvɪti",
+        "phonetic": "ak-TIV-uh-tee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "triangular",
+      "pronunciation": {
+        "ipa": "traɪˈæŋɡjələr",
+        "phonetic": "try-ANG-gyuh-luhr"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "thatch",
+      "pronunciation": {
+        "ipa": "θætʃ",
+        "phonetic": "thach"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "rafter",
+      "pronunciation": {
+        "ipa": "ˈræftər",
+        "phonetic": "RAF-tuhr"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "turf",
+      "pronunciation": {
+        "ipa": "tɜrf",
+        "phonetic": "turf"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "ashes",
+      "pronunciation": {
+        "ipa": "ˈæʃɪz",
+        "phonetic": "ASH-iz"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "probably",
+      "pronunciation": {
+        "ipa": "ˈprɒbəbli",
+        "phonetic": "PROB-uh-blee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "materials",
+      "pronunciation": {
+        "ipa": "məˈtɪriəlz",
+        "phonetic": "muh-TEER-ee-uhlz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "effective",
+      "pronunciation": {
+        "ipa": "ɪˈfɛktɪv",
+        "phonetic": "ih-FEK-tiv"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "examples",
+      "pronunciation": {
+        "ipa": "ɪɡˈzæmpəlz",
+        "phonetic": "ig-ZAM-puhlz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "input",
+      "pronunciation": {
+        "ipa": "ˈɪnpʊt",
+        "phonetic": "IN-put"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "process",
+      "pronunciation": {
+        "ipa": "ˈprɑsɛs",
+        "phonetic": "PROS-es"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "output",
+      "pronunciation": {
+        "ipa": "ˈaʊtpʊt",
+        "phonetic": "OWT-put"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "factory",
+      "pronunciation": {
+        "ipa": "ˈfæktəri",
+        "phonetic": "FAK-tuh-ree"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "computer",
+      "pronunciation": {
+        "ipa": "kəmˈpjuːtər",
+        "phonetic": "kuhm-PYOO-tuhr"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "valuable",
+      "pronunciation": {
+        "ipa": "ˈvæljuəbəl",
+        "phonetic": "VAL-yoo-uh-buhl"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "pattern",
+      "pronunciation": {
+        "ipa": "ˈpætərn",
+        "phonetic": "PAT-uhrn"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "production",
+      "pronunciation": {
+        "ipa": "prəˈdʌkʃən",
+        "phonetic": "pruh-DUK-shuhn"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "Mexico",
+      "pronunciation": {
+        "ipa": "ˈmɛksɪkoʊ",
+        "phonetic": "MEK-suh-koh"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "divided",
+      "pronunciation": {
+        "ipa": "dɪˈvaɪdɪd",
+        "phonetic": "dih-VYE-did"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "legend",
+      "pronunciation": {
+        "ipa": "ˈlɛdʒənd",
+        "phonetic": "LEJ-uhnd"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "central",
+      "pronunciation": {
+        "ipa": "ˈsɛntrəl",
+        "phonetic": "SEN-truhl"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "produces",
+      "pronunciation": {
+        "ipa": "prəˈdjuːsɪz",
+        "phonetic": "pruh-DOO-siz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "distribution",
+      "pronunciation": {
+        "ipa": "ˌdɪstrɪˈbjuːʃən",
+        "phonetic": "dis-truh-BYOO-shuhn"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "forests",
+      "pronunciation": {
+        "ipa": "ˈfɔrɪsts",
+        "phonetic": "FOR-ists"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "America",
+      "pronunciation": {
+        "ipa": "əˈmɛrɪkə",
+        "phonetic": "uh-MAIR-uh-kuh"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "Africa",
+      "pronunciation": {
+        "ipa": "ˈæfrɪkə",
+        "phonetic": "AF-ruh-kuh"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "Asia",
+      "pronunciation": {
+        "ipa": "ˈeɪʒə",
+        "phonetic": "AY-zhuh"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "equator",
+      "pronunciation": {
+        "ipa": "ɪˈkweɪtər",
+        "phonetic": "ih-KWAY-tuhr"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "islands",
+      "pronunciation": {
+        "ipa": "ˈaɪləndz",
+        "phonetic": "EYE-luhndz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "annual",
+      "pronunciation": {
+        "ipa": "ˈænjuəl",
+        "phonetic": "AN-yoo-uhl"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "Celsius",
+      "pronunciation": {
+        "ipa": "ˈsɛlsiəs",
+        "phonetic": "SEL-see-uhs"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "Fahrenheit",
+      "pronunciation": {
+        "ipa": "ˈfærənhaɪt",
+        "phonetic": "FAIR-uhn-hyte"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "moderate",
+      "pronunciation": {
+        "ipa": "ˈmɒdərət",
+        "phonetic": "MOD-uh-ruht"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "reaching",
+      "pronunciation": {
+        "ipa": "ˈriːtʃɪŋ",
+        "phonetic": "REE-ching"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "minus",
+      "pronunciation": {
+        "ipa": "ˈmaɪnəs",
+        "phonetic": "MY-nuhs"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "clearly",
+      "pronunciation": {
+        "ipa": "ˈklɪrli",
+        "phonetic": "KLEER-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "graduate",
+      "pronunciation": {
+        "ipa": "ˈɡrædʒuət",
+        "phonetic": "GRAD-joo-uht"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "laboratory",
+      "pronunciation": {
+        "ipa": "ˈlæbrətɔri",
+        "phonetic": "LAB-ruh-tor-ee"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "stacked",
+      "pronunciation": {
+        "ipa": "stækt",
+        "phonetic": "stakt"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "entrance",
+      "pronunciation": {
+        "ipa": "ˈɛntrəns",
+        "phonetic": "EN-truhns"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "restroom",
+      "pronunciation": {
+        "ipa": "ˈrɛstruːm",
+        "phonetic": "REST-room"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "station",
+      "pronunciation": {
+        "ipa": "ˈsteɪʃən",
+        "phonetic": "STAY-shuhn"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "workstations",
+      "pronunciation": {
+        "ipa": "ˈwɜrkˌsteɪʃənz",
+        "phonetic": "WURK-stay-shuhnz"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "organized",
+      "pronunciation": {
+        "ipa": "ˈɔrɡənaɪzd",
+        "phonetic": "OR-guh-nyzd"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "luxury",
+      "pronunciation": {
+        "ipa": "ˈlʌkʃəri",
+        "phonetic": "LUK-shuh-ree"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "ensuite",
+      "pronunciation": {
+        "ipa": "ˌenswɪt",
+        "phonetic": "en-SWEET"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "bathroom",
+      "pronunciation": {
+        "ipa": "ˈbæθruːm",
+        "phonetic": "BATH-room"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "bedroom",
+      "pronunciation": {
+        "ipa": "ˈbɛdrʊm",
+        "phonetic": "BED-room"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "wardrobe",
+      "pronunciation": {
+        "ipa": "ˈwɔrdroʊb",
+        "phonetic": "WORD-rohb"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "storage",
+      "pronunciation": {
+        "ipa": "ˈstɔrɪdʒ",
+        "phonetic": "STOR-ij"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "compact",
+      "pronunciation": {
+        "ipa": "kəmˈpækt",
+        "phonetic": "kuhm-PAKT"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "designed",
+      "pronunciation": {
+        "ipa": "dɪˈzaɪnd",
+        "phonetic": "dih-ZYND"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "private",
+      "pronunciation": {
+        "ipa": "ˈpraɪvət",
+        "phonetic": "PRY-vuht"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "males",
+      "pronunciation": {
+        "ipa": "meɪlz",
+        "phonetic": "maylz"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "majority",
+      "pronunciation": {
+        "ipa": "məˈdʒɒrɪti",
+        "phonetic": "muh-JOR-uh-tee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "similar",
+      "pronunciation": {
+        "ipa": "ˈsɪmələr",
+        "phonetic": "SIM-uh-luhr"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "largest",
+      "pronunciation": {
+        "ipa": "ˈlɑrdʒɪst",
+        "phonetic": "LAR-jist"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "smallest",
+      "pronunciation": {
+        "ipa": "ˈsmɔlɪst",
+        "phonetic": "SMAW-list"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "journeys",
+      "pronunciation": {
+        "ipa": "ˈdʒɜrnɪz",
+        "phonetic": "JUR-neez"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "United",
+      "pronunciation": {
+        "ipa": "juːˈnaɪtɪd",
+        "phonetic": "yoo-NYE-tid"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "Kingdom",
+      "pronunciation": {
+        "ipa": "ˈkɪŋdəm",
+        "phonetic": "KING-duhm"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "according",
+      "pronunciation": {
+        "ipa": "əˈkɔrdɪŋ",
+        "phonetic": "uh-KOR-ding"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "prep."
+    },
+    {
+      "english": "purpose",
+      "pronunciation": {
+        "ipa": "ˈpɜrpəs",
+        "phonetic": "PUR-puhs"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "shopping",
+      "pronunciation": {
+        "ipa": "ˈʃɒpɪŋ",
+        "phonetic": "SHOP-ing"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "commuting",
+      "pronunciation": {
+        "ipa": "kəˈmjuːtɪŋ",
+        "phonetic": "kuh-MYOO-ting"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "opposite",
+      "pronunciation": {
+        "ipa": "ˈɒpəzɪt",
+        "phonetic": "OP-uh-zit"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "activities",
+      "pronunciation": {
+        "ipa": "ækˈtɪvɪtis",
+        "phonetic": "ak-TIV-uh-teez"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "office",
+      "pronunciation": {
+        "ipa": "ˈɔfɪs",
+        "phonetic": "OF-is"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "layout",
+      "pronunciation": {
+        "ipa": "ˈleɪaʊt",
+        "phonetic": "LAY-owt"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "building",
+      "pronunciation": {
+        "ipa": "ˈbɪldɪŋ",
+        "phonetic": "BIL-ding"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "kitchen",
+      "pronunciation": {
+        "ipa": "ˈkɪtʃən",
+        "phonetic": "KICH-uhn"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "toilet",
+      "pronunciation": {
+        "ipa": "ˈtɔɪlɪt",
+        "phonetic": "TOY-luht"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "handicapped",
+      "pronunciation": {
+        "ipa": "ˈhændɪkæpt",
+        "phonetic": "HAN-dee-kapt"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "wheelchair",
+      "pronunciation": {
+        "ipa": "ˈwiːltʃɛr",
+        "phonetic": "WEEL-chair"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "facilities",
+      "pronunciation": {
+        "ipa": "fəˈsɪlɪtis",
+        "phonetic": "fuh-SIL-uh-teez"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "restrooms",
+      "pronunciation": {
+        "ipa": "ˈrɛstruːmz",
+        "phonetic": "REST-roomz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "origins",
+      "pronunciation": {
+        "ipa": "ˈɔrɪdʒɪnz",
+        "phonetic": "OR-uh-jinz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "language",
+      "pronunciation": {
+        "ipa": "ˈlæŋɡwɪdʒ",
+        "phonetic": "LANG-gwij"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "families",
+      "pronunciation": {
+        "ipa": "ˈfæməliz",
+        "phonetic": "FAM-uh-leez"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "Germanic",
+      "pronunciation": {
+        "ipa": "dʒərˈmænɪk",
+        "phonetic": "juhr-MAN-ik"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "Celtic",
+      "pronunciation": {
+        "ipa": "ˈkɛltɪk",
+        "phonetic": "KEL-tik"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "Latin",
+      "pronunciation": {
+        "ipa": "ˈlætɪn",
+        "phonetic": "LAT-in"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "Greek",
+      "pronunciation": {
+        "ipa": "ɡriːk",
+        "phonetic": "greek"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "derived",
+      "pronunciation": {
+        "ipa": "dɪˈraɪvd",
+        "phonetic": "dih-RYVD"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "unknown",
+      "pronunciation": {
+        "ipa": "ʌnˈnoʊn",
+        "phonetic": "uhn-NOHN"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "acid",
+      "pronunciation": {
+        "ipa": "ˈæsɪd",
+        "phonetic": "AS-id"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "photochemical",
+      "pronunciation": {
+        "ipa": "ˌfoʊtoʊˈkɛmɪkəl",
+        "phonetic": "foh-toh-KEM-uh-kuhl"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "reactions",
+      "pronunciation": {
+        "ipa": "riˈækʃənz",
+        "phonetic": "ree-AK-shuhnz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "oxidation",
+      "pronunciation": {
+        "ipa": "ˌɒksɪˈdeɪʃən",
+        "phonetic": "ok-suh-DAY-shuhn"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "labeled",
+      "pronunciation": {
+        "ipa": "ˈleɪbəld",
+        "phonetic": "LAY-buhld"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "pollution",
+      "pronunciation": {
+        "ipa": "pəˈluːʃən",
+        "phonetic": "puh-LOO-shuhn"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "sources",
+      "pronunciation": {
+        "ipa": "ˈsɔrsɪz",
+        "phonetic": "SOR-siz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "clouds",
+      "pronunciation": {
+        "ipa": "klaʊdz",
+        "phonetic": "klowdz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "equals",
+      "pronunciation": {
+        "ipa": "ˈiːkwəlz",
+        "phonetic": "EE-kwuhlz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "double",
+      "pronunciation": {
+        "ipa": "ˈdʌbəl",
+        "phonetic": "DUH-buhl"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "vertical",
+      "pronunciation": {
+        "ipa": "ˈvɜrtɪkəl",
+        "phonetic": "VUR-tuh-kuhl"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "horizontal",
+      "pronunciation": {
+        "ipa": "ˌhɒrɪˈzɒntəl",
+        "phonetic": "hor-uh-ZON-tuhl"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "billion",
+      "pronunciation": {
+        "ipa": "ˈbɪljən",
+        "phonetic": "BIL-yuhn"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "dramatically",
+      "pronunciation": {
+        "ipa": "drəˈmætɪkli",
+        "phonetic": "druh-MAT-uh-klee"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "decrease",
+      "pronunciation": {
+        "ipa": "dɪˈkriːs",
+        "phonetic": "dih-KREESS"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "ending",
+      "pronunciation": {
+        "ipa": "ˈɛndɪŋ",
+        "phonetic": "END-ing"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "needed",
+      "pronunciation": {
+        "ipa": "ˈniːdɪd",
+        "phonetic": "NEE-did"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "Dubai",
+      "pronunciation": {
+        "ipa": "duːˈbaɪ",
+        "phonetic": "doo-BYE"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "graph",
+      "pronunciation": {
+        "ipa": "ɡræf",
+        "phonetic": "graf"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "millions",
+      "pronunciation": {
+        "ipa": "ˈmɪljənz",
+        "phonetic": "MIL-yuhnz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "dirhams",
+      "pronunciation": {
+        "ipa": "ˈdɪrhəmz",
+        "phonetic": "DUR-humz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "December",
+      "pronunciation": {
+        "ipa": "dɪˈsɛmbər",
+        "phonetic": "dih-SEM-buhr"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "relatively",
+      "pronunciation": {
+        "ipa": "ˈrɛlətɪvli",
+        "phonetic": "REL-uh-tiv-lee"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "arrests",
+      "pronunciation": {
+        "ipa": "əˈrɛsts",
+        "phonetic": "uh-RESTS"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "illegal",
+      "pronunciation": {
+        "ipa": "ɪˈliːɡəl",
+        "phonetic": "ih-LEE-guhl"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "drugs",
+      "pronunciation": {
+        "ipa": "drʌɡz",
+        "phonetic": "drugz"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "quickly",
+      "pronunciation": {
+        "ipa": "ˈkwɪkli",
+        "phonetic": "KWIK-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "spike",
+      "pronunciation": {
+        "ipa": "spaɪk",
+        "phonetic": "spyk"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "period",
+      "pronunciation": {
+        "ipa": "ˈpɪriəd",
+        "phonetic": "PEER-ee-uhd"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "Brazil",
+      "pronunciation": {
+        "ipa": "brəˈzɪl",
+        "phonetic": "bruh-ZIL"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "fairly",
+      "pronunciation": {
+        "ipa": "ˈfɛrli",
+        "phonetic": "FAIR-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "around",
+      "pronunciation": {
+        "ipa": "əˈraʊnd",
+        "phonetic": "uh-ROWND"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "prep."
+    },
+    {
+      "english": "slowly",
+      "pronunciation": {
+        "ipa": "ˈsloʊli",
+        "phonetic": "SLOH-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "increased",
+      "pronunciation": {
+        "ipa": "ɪnˈkriːst",
+        "phonetic": "in-KREEST"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "rapidly",
+      "pronunciation": {
+        "ipa": "ˈræpɪdli",
+        "phonetic": "RAP-id-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "electricity",
+      "pronunciation": {
+        "ipa": "ɪˌlɛkˈtrɪsəti",
+        "phonetic": "ih-lek-TRIS-uh-tee"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "generation",
+      "pronunciation": {
+        "ipa": "ˌdʒɛnəˈreɪʃən",
+        "phonetic": "jen-uh-RAY-shuhn"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "kilowatthours",
+      "pronunciation": {
+        "ipa": "ˈkɪləˌwɑtˌaʊərz",
+        "phonetic": "KIL-uh-wot-owrz"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "conventional",
+      "pronunciation": {
+        "ipa": "kənˈvɛnʃənəl",
+        "phonetic": "kuhn-VEN-shuh-nuhl"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "thermal",
+      "pronunciation": {
+        "ipa": "ˈθɜrməl",
+        "phonetic": "THUR-muhl"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "hydroelectric",
+      "pronunciation": {
+        "ipa": "ˌhaɪdroʊɪˈlɛktrɪk",
+        "phonetic": "hy-droh-ih-LEK-trik"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "represents",
+      "pronunciation": {
+        "ipa": "ˌrɛprɪˈzɛnts",
+        "phonetic": "rep-rih-ZENTS"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "doubled",
+      "pronunciation": {
+        "ipa": "ˈdʌbəld",
+        "phonetic": "DUH-buhld"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "steadily",
+      "pronunciation": {
+        "ipa": "ˈstɛdəli",
+        "phonetic": "STED-uh-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "university",
+      "pronunciation": {
+        "ipa": "ˌjuːnɪˈvɜrsəti",
+        "phonetic": "yoo-nuh-VUR-suh-tee"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "college",
+      "pronunciation": {
+        "ipa": "ˈkɑlɪdʒ",
+        "phonetic": "KOL-ij"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "educational",
+      "pronunciation": {
+        "ipa": "ˌɛdʒuˈkeɪʃənəl",
+        "phonetic": "ej-oo-KAY-shuh-nuhl"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "weekdays",
+      "pronunciation": {
+        "ipa": "ˈwiːkdeɪz",
+        "phonetic": "WEEK-dayz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "full-time",
+      "pronunciation": {
+        "ipa": "ˈfʊlˈtaɪm",
+        "phonetic": "ful-TYM"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "part-time",
+      "pronunciation": {
+        "ipa": "ˈpɑrtˈtaɪm",
+        "phonetic": "part-TYM"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "midnight",
+      "pronunciation": {
+        "ipa": "ˈmɪdnaɪt",
+        "phonetic": "MID-nyte"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "afternoon",
+      "pronunciation": {
+        "ipa": "ˌæftərˈnuːn",
+        "phonetic": "af-tuhr-NOON"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "versus",
+      "pronunciation": {
+        "ipa": "ˈvɜrsəs",
+        "phonetic": "VUR-suhs"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "dollars",
+      "pronunciation": {
+        "ipa": "ˈdɑlərz",
+        "phonetic": "DOL-uhrz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "recover",
+      "pronunciation": {
+        "ipa": "rɪˈkʌvər",
+        "phonetic": "rih-KUV-uhr"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "connected",
+      "pronunciation": {
+        "ipa": "kəˈnɛktɪd",
+        "phonetic": "kuh-NEK-tid"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "overseas",
+      "pronunciation": {
+        "ipa": "ˌoʊvərˈsiːz",
+        "phonetic": "oh-vuhr-SEEZ"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "visitors",
+      "pronunciation": {
+        "ipa": "ˈvɪzɪtərz",
+        "phonetic": "VIZ-uh-tuhrz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "European",
+      "pronunciation": {
+        "ipa": "ˌjʊrəˈpiːən",
+        "phonetic": "yur-uh-PEE-uhn"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "thousands",
+      "pronunciation": {
+        "ipa": "ˈθaʊzəndz",
+        "phonetic": "THOW-zuhndz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "mountains",
+      "pronunciation": {
+        "ipa": "ˈmaʊntənz",
+        "phonetic": "MOWN-tuhnz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "peaks",
+      "pronunciation": {
+        "ipa": "piːks",
+        "phonetic": "peeks"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "destination",
+      "pronunciation": {
+        "ipa": "ˌdɛstɪˈneɪʃən",
+        "phonetic": "des-tuh-NAY-shuhn"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "capita",
+      "pronunciation": {
+        "ipa": "ˈkæpɪtə",
+        "phonetic": "KAP-ih-tuh"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "consumption",
+      "pronunciation": {
+        "ipa": "kənˈsʌmpʃən",
+        "phonetic": "kuhn-SUMP-shuhn"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "kilograms",
+      "pronunciation": {
+        "ipa": "ˈkɪləɡræmz",
+        "phonetic": "KIL-uh-gramz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "Liberia",
+      "pronunciation": {
+        "ipa": "laɪˈbɪriə",
+        "phonetic": "lye-BEER-ee-uh"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "Ethiopia",
+      "pronunciation": {
+        "ipa": "ˌiːθiˈoʊpiə",
+        "phonetic": "ee-thee-OH-pee-uh"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "increases",
+      "pronunciation": {
+        "ipa": "ɪnˈkriːsɪz",
+        "phonetic": "in-KREE-siz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "Germany",
+      "pronunciation": {
+        "ipa": "ˈdʒɜrməni",
+        "phonetic": "JUR-muh-nee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "significantly",
+      "pronunciation": {
+        "ipa": "sɪɡˈnɪfɪkəntli",
+        "phonetic": "sig-NIF-uh-kuhnt-lee"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "France",
+      "pronunciation": {
+        "ipa": "fræns",
+        "phonetic": "frans"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "Russia",
+      "pronunciation": {
+        "ipa": "ˈrʌʃə",
+        "phonetic": "RUSH-uh"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "Canada",
+      "pronunciation": {
+        "ipa": "ˈkænədə",
+        "phonetic": "KAN-uh-duh"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "Netherlands",
+      "pronunciation": {
+        "ipa": "ˈnɛðərləndz",
+        "phonetic": "NETH-uhr-luhndz"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "across",
+      "pronunciation": {
+        "ipa": "əˈkrɒs",
+        "phonetic": "uh-KROSS"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "prep."
+    },
+    {
+      "english": "increase",
+      "pronunciation": {
+        "ipa": "ɪnˈkriːs",
+        "phonetic": "in-KREESS"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "Houston",
+      "pronunciation": {
+        "ipa": "ˈhjuːstən",
+        "phonetic": "HYOO-stuhn"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "Angeles",
+      "pronunciation": {
+        "ipa": "ˈændʒələs",
+        "phonetic": "AN-juh-luhs"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "Antonio",
+      "pronunciation": {
+        "ipa": "ænˈtoʊnioʊ",
+        "phonetic": "an-TOH-nee-oh"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "Phoenix",
+      "pronunciation": {
+        "ipa": "ˈfiːnɪks",
+        "phonetic": "FEE-niks"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "Charlotte",
+      "pronunciation": {
+        "ipa": "ˈʃɑrlət",
+        "phonetic": "SHAR-luht"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "remaining",
+      "pronunciation": {
+        "ipa": "rɪˈmeɪnɪŋ",
+        "phonetic": "rih-MAY-ning"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "drinking",
+      "pronunciation": {
+        "ipa": "ˈdrɪŋkɪŋ",
+        "phonetic": "DRINK-ing"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "habits",
+      "pronunciation": {
+        "ipa": "ˈhæbɪts",
+        "phonetic": "HAB-its"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "categories",
+      "pronunciation": {
+        "ipa": "ˈkætəɡɔriz",
+        "phonetic": "KAT-uh-gor-eez"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "portion",
+      "pronunciation": {
+        "ipa": "ˈpɔrʃən",
+        "phonetic": "POR-shuhn"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "increasing",
+      "pronunciation": {
+        "ipa": "ɪnˈkriːsɪŋ",
+        "phonetic": "in-KREE-sing"
+      },
+      "difficulty": "hard",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "v."
+    },
+    {
+      "english": "constant",
+      "pronunciation": {
+        "ipa": "ˈkɒnstənt",
+        "phonetic": "KON-stuhnt"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "healthy",
+      "pronunciation": {
+        "ipa": "ˈhɛlθi",
+        "phonetic": "HEL-thee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    },
+    {
+      "english": "kilos",
+      "pronunciation": {
+        "ipa": "ˈkiːloʊz",
+        "phonetic": "KEE-lohz"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "meters",
+      "pronunciation": {
+        "ipa": "ˈmiːtərz",
+        "phonetic": "MEE-tuhrz"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "n."
+    },
+    {
+      "english": "extremely",
+      "pronunciation": {
+        "ipa": "ɪkˈstriːmli",
+        "phonetic": "ik-STREEM-lee"
+      },
+      "difficulty": "normal",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adv."
+    },
+    {
+      "english": "obese",
+      "pronunciation": {
+        "ipa": "oʊˈbiːs",
+        "phonetic": "oh-BEES"
+      },
+      "difficulty": "easy",
+      "category": "pte-di-vocabulary",
+      "source": "pte-di-difficult-words",
+      "wordType": "adj."
+    }
+  ]
+}

@@ -199,7 +199,7 @@ export class AppConfig {
             // ===== PIPELINE CONFIGURATION =====
             pipeline: {
                 inputDir: 'data/source/pte',
-                outputDir: 'data',
+                outputDir: 'public/data',
                 reportsDir: 'data/reports',
                 dataSources: {
                     primary: 'pte-fib-listening-with-ipa.md',

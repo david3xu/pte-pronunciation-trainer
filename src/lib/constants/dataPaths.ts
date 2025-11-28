@@ -26,6 +26,8 @@ export type VocabularyBookId =
   | 'pte-di-rl-templates'
   | 'pte-sst-complete'
   | 'pte-essay-topic-vocabulary'
+  | 'pte-di-difficult-words'
+  | 'pte-di-easy-phrases'
   // Shadowing modes
   | 'di-shadowing-1-10'
   | 'di-shadowing-11-20';
@@ -57,6 +59,8 @@ export const DATA_PATH_MAP: Record<VocabularyBookId, string> = {
   'pte-di-rl-templates': '/data/processed/pte-di-rl-templates-vocabulary.json',
   'pte-sst-complete': '/data/processed/pte-sst-complete-vocabulary.json',
   'pte-essay-topic-vocabulary': '/data/processed/pte-essay-topic-vocabulary.json',
+  'pte-di-difficult-words': '/data/processed/pte-di-difficult-words-vocabulary.json',
+  'pte-di-easy-phrases': '/data/processed/pte-di-easy-phrases-vocabulary.json',
 
   // Shadowing modes (use 'answers' field instead of 'vocabulary')
   'di-shadowing-1-10': '/data/processed/di-shadowing-images-1-10.json',

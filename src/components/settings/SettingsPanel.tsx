@@ -6,12 +6,11 @@
  */
 
 import { Cross2Icon, GearIcon } from '@radix-ui/react-icons';
-import { Badge, Button, Card, Flex, Text } from '@radix-ui/themes';
+import { Badge, Button, Card, Flex, Select, Slider, Switch, Tabs, Text } from '@radix-ui/themes';
 import React, { useMemo } from 'react';
 import { DATA_PATH_MAP } from '../../lib/constants/dataPaths';
 import { appConfig } from '../../ts/shared/Config';
 import { useAppStore } from '../../ts/stores';
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, Slider, Switch, Tabs, TabsContent, TabsList, TabsTrigger } from '../ui';
 
 interface SettingsPanelProps {
   isOpen: boolean;
@@ -182,16 +181,16 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
         </Flex>
 
         {/* Tabs */}
-        <Tabs defaultValue="practice">
-          <TabsList>
-            <TabsTrigger value="practice">Mode</TabsTrigger>
-            <TabsTrigger value="audio">Audio</TabsTrigger>
-            <TabsTrigger value="display">Display</TabsTrigger>
-            <TabsTrigger value="advanced">Advanced</TabsTrigger>
-          </TabsList>
+        <Tabs.Root defaultValue="practice">
+          <Tabs.List>
+            <Tabs.Trigger value="practice">Mode</Tabs.Trigger>
+            <Tabs.Trigger value="audio">Audio</Tabs.Trigger>
+            <Tabs.Trigger value="display">Display</Tabs.Trigger>
+            <Tabs.Trigger value="advanced">Advanced</Tabs.Trigger>
+          </Tabs.List>
 
           {/* Practice Tab */}
-          <TabsContent value="practice">
+          <Tabs.Content value="practice">
             <Flex direction="column" gap="4" mt="4">
               {/* Study Type */}
               <Flex direction="column" gap="2">
@@ -199,7 +198,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                 <Text size="2" color="gray" mb="1">
                   Choose between word learning or task practice
                 </Text>
-                <Select
+                <Select.Root
                   value={practiceType}
                   onValueChange={(value: 'vocabulary' | 'practice' | 'shadowing') => {
                     updateSetting('practiceType', value);
@@ -220,13 +219,13 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                     }
                   }}
                 >
-                  <SelectTrigger />
-                  <SelectContent>
-                    <SelectItem value="vocabulary">📚 Vocabulary Learning</SelectItem>
-                    <SelectItem value="practice">🎯 Task Practice (RS/ASQ/WFD)</SelectItem>
-                    <SelectItem value="shadowing">🎤 Shadowing Practice (DI)</SelectItem>
-                  </SelectContent>
-                </Select>
+                  <Select.Trigger />
+                  <Select.Content>
+                    <Select.Item value="vocabulary">📚 Vocabulary Learning</Select.Item>
+                    <Select.Item value="practice">🎯 Task Practice (RS/ASQ/WFD)</Select.Item>
+                    <Select.Item value="shadowing">🎤 Shadowing Practice (DI)</Select.Item>
+                  </Select.Content>
+                </Select.Root>
               </Flex>
 
               {/* Task Type (if practice type selected) */}
@@ -236,25 +235,25 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                   <Text size="2" color="gray" mb="1">
                     Choose a PTE speaking/listening task
                   </Text>
-                  <Select
+                  <Select.Root
                     value={practiceMode || ''}
                     onValueChange={(value) =>
                       handlePracticeModeChange(value as 'practice-repeat-sentence' | 'practice-answer-short-question' | 'practice-write-from-dictation' | null)
                     }
                   >
-                    <SelectTrigger placeholder="Select a task type..." />
-                    <SelectContent>
-                      <SelectItem value="practice-repeat-sentence">
+                    <Select.Trigger placeholder="Select a task type..." />
+                    <Select.Content>
+                      <Select.Item value="practice-repeat-sentence">
                         🎤 Repeat Sentence (RS) - 620 sentences
-                      </SelectItem>
-                      <SelectItem value="practice-answer-short-question">
+                      </Select.Item>
+                      <Select.Item value="practice-answer-short-question">
                         ❓ Answer Short Question (ASQ) - 692 questions
-                      </SelectItem>
-                      <SelectItem value="practice-write-from-dictation">
+                      </Select.Item>
+                      <Select.Item value="practice-write-from-dictation">
                         ✍️ Write From Dictation (WFD) - 1,195 sentences
-                      </SelectItem>
-                    </SelectContent>
-                  </Select>
+                      </Select.Item>
+                    </Select.Content>
+                  </Select.Root>
                 </Flex>
               )}
 
@@ -262,22 +261,22 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
               {practiceType === 'vocabulary' && (
                 <Flex direction="column" gap="2">
                   <Text size="3" weight="medium">Vocabulary Book</Text>
-                  <Select
+                  <Select.Root
                     value={vocabularyBook}
                     onValueChange={(value) => handleVocabularyBookChange(value)}
                   >
-                    <SelectTrigger placeholder="Select a vocabulary book..." />
-                    <SelectContent>
-                      <SelectGroup>
-                        <SelectLabel>PTE Vocabulary Books</SelectLabel>
+                    <Select.Trigger placeholder="Select a vocabulary book..." />
+                    <Select.Content>
+                      <Select.Group>
+                        <Select.Label>PTE Vocabulary Books</Select.Label>
                         {vocabularyBooks.map((book: any) => (
-                          <SelectItem key={book.id} value={book.id}>
+                          <Select.Item key={book.id} value={book.id}>
                             {book.name}
-                          </SelectItem>
+                          </Select.Item>
                         ))}
-                      </SelectGroup>
-                    </SelectContent>
-                  </Select>
+                      </Select.Group>
+                    </Select.Content>
+                  </Select.Root>
                 </Flex>
               )}
 
@@ -288,23 +287,23 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                   <Text size="2" color="gray" mb="1">
                     Practice DI answers with continuous speech
                   </Text>
-                  <Select
+                  <Select.Root
                     value={vocabularyBook}
                     onValueChange={(value) => handleVocabularyBookChange(value)}
                   >
-                    <SelectTrigger placeholder="Select a shadowing mode..." />
-                    <SelectContent>
-                      <SelectItem value="di-shadowing-1-10">🖼️ DI Shadowing (Images 1-10) - 10 answers</SelectItem>
-                      <SelectItem value="di-shadowing-11-20">🖼️ DI Shadowing (Images 11-20) - 10 answers</SelectItem>
-                    </SelectContent>
-                  </Select>
+                    <Select.Trigger placeholder="Select a shadowing mode..." />
+                    <Select.Content>
+                      <Select.Item value="di-shadowing-1-10">🖼️ DI Shadowing (Images 1-10) - 10 answers</Select.Item>
+                      <Select.Item value="di-shadowing-11-20">🖼️ DI Shadowing (Images 11-20) - 10 answers</Select.Item>
+                    </Select.Content>
+                  </Select.Root>
                 </Flex>
               )}
 
               {/* Difficulty Filter */}
               <Flex direction="column" gap="2">
                 <Text size="3" weight="medium">Difficulty Filter</Text>
-                <Select
+                <Select.Root
                   value={difficultyFilter}
                   onValueChange={(value) => {
                     const difficulty = value as 'easy' | 'normal' | 'hard' | 'all';
@@ -313,14 +312,14 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                     filterByDifficulty(difficulty);
                   }}
                 >
-                  <SelectTrigger />
-                  <SelectContent>
-                    <SelectItem value="all">All Difficulties</SelectItem>
-                    <SelectItem value="easy">Easy</SelectItem>
-                    <SelectItem value="normal">Normal</SelectItem>
-                    <SelectItem value="hard">Hard</SelectItem>
-                  </SelectContent>
-                </Select>
+                  <Select.Trigger />
+                  <Select.Content>
+                    <Select.Item value="all">All Difficulties</Select.Item>
+                    <Select.Item value="easy">Easy</Select.Item>
+                    <Select.Item value="normal">Normal</Select.Item>
+                    <Select.Item value="hard">Hard</Select.Item>
+                  </Select.Content>
+                </Select.Root>
               </Flex>
 
               {/* Auto-play */}
@@ -359,10 +358,10 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                 </Flex>
               )}
             </Flex>
-          </TabsContent>
+          </Tabs.Content>
 
           {/* Audio Tab */}
-          <TabsContent value="audio">
+          <Tabs.Content value="audio">
             <Flex direction="column" gap="4" mt="4">
               {/* TTS Rate */}
               <Flex direction="column" gap="2">
@@ -397,27 +396,27 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
               {/* TTS Voice Selection */}
               <Flex direction="column" gap="2">
                 <Text size="3" weight="medium">TTS Voice</Text>
-                <Select
+                <Select.Root
                   value={ttsVoice || 'default'}
                   onValueChange={(value) =>
                     updateSetting('ttsVoice', value === 'default' ? null : value)
                   }
                 >
-                  <SelectTrigger />
-                  <SelectContent>
-                    <SelectItem value="default">Browser Default</SelectItem>
-                    <SelectItem value="premium">Premium Voice (AWS Polly)</SelectItem>
-                  </SelectContent>
-                </Select>
+                  <Select.Trigger />
+                  <Select.Content>
+                    <Select.Item value="default">Browser Default</Select.Item>
+                    <Select.Item value="premium">Premium Voice (AWS Polly)</Select.Item>
+                  </Select.Content>
+                </Select.Root>
                 <Text size="1" color="gray">
                   💡 Premium voices require AWS Polly credentials (Region, Access Key, Secret Key). Add them in the Advanced tab.
                 </Text>
               </Flex>
             </Flex>
-          </TabsContent>
+          </Tabs.Content>
 
           {/* Display Tab */}
-          <TabsContent value="display">
+          <Tabs.Content value="display">
             <Flex direction="column" gap="4" mt="4">
               {/* Show Phonetic */}
               <Flex justify="between" align="center">
@@ -438,20 +437,20 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
               {/* Theme (placeholder for future) */}
               <Flex direction="column" gap="2">
                 <Text size="3" weight="medium">Theme</Text>
-                <Select defaultValue="light">
-                  <SelectTrigger />
-                  <SelectContent>
-                    <SelectItem value="light">Light</SelectItem>
-                    <SelectItem value="dark">Dark</SelectItem>
-                    <SelectItem value="auto">Auto (System)</SelectItem>
-                  </SelectContent>
-                </Select>
+                <Select.Root defaultValue="light">
+                  <Select.Trigger />
+                  <Select.Content>
+                    <Select.Item value="light">Light</Select.Item>
+                    <Select.Item value="dark">Dark</Select.Item>
+                    <Select.Item value="auto">Auto (System)</Select.Item>
+                  </Select.Content>
+                </Select.Root>
               </Flex>
             </Flex>
-          </TabsContent>
+          </Tabs.Content>
 
           {/* Advanced Tab */}
-          <TabsContent value="advanced">
+          <Tabs.Content value="advanced">
             <Flex direction="column" gap="4" mt="4">
               <Text size="3" weight="bold">Advanced Settings</Text>
 
@@ -490,8 +489,8 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                 </Button>
               </Flex>
             </Flex>
-          </TabsContent>
-        </Tabs>
+          </Tabs.Content>
+        </Tabs.Root>
 
         {/* Footer */}
         <Flex justify="end" gap="2" mt="4" pt="4" style={{ borderTop: '1px solid var(--gray-5)' }}>

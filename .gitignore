@@ -16,6 +16,7 @@ vocabulary-data.js
 # TypeScript generated declaration files
 *.d.ts
 !src/env.d.ts
+!src/vite-env.d.ts
 
 # Reports
 data/reports/

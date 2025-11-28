@@ -8,7 +8,7 @@
 import { LockClosedIcon, SpeakerLoudIcon } from '@radix-ui/react-icons';
 import { Badge, Button, Card, Flex, Select, Text } from '@radix-ui/themes';
 import React, { useState } from 'react';
-import { getVoices, isPremiumTTSAvailable, type PollyVoice } from '../../ts/audio/pollyService';
+import { getVoices, isPremiumTTSAvailable, type PollyVoice } from '../../services/audio/pollyService';
 
 interface PremiumVoiceSelectorProps {
   selectedVoiceId?: string;
@@ -28,7 +28,7 @@ const PremiumVoiceSelector: React.FC<PremiumVoiceSelectorProps> = ({
   const allVoices = getVoices();
 
   // Filter voices by accent and gender
-  const filteredVoices = allVoices.filter(voice => {
+  const filteredVoices = allVoices.filter((voice: PollyVoice) => {
     if (selectedAccent !== 'All' && voice.accent !== selectedAccent) {
       return false;
     }
@@ -39,7 +39,7 @@ const PremiumVoiceSelector: React.FC<PremiumVoiceSelectorProps> = ({
   });
 
   // Group voices by accent
-  const voicesByAccent = filteredVoices.reduce((acc, voice) => {
+  const voicesByAccent = filteredVoices.reduce((acc: Record<string, PollyVoice[]>, voice: PollyVoice) => {
     if (!acc[voice.accent]) {
       acc[voice.accent] = [];
     }
@@ -122,7 +122,7 @@ const PremiumVoiceSelector: React.FC<PremiumVoiceSelectorProps> = ({
 
         {/* Voice List */}
         <Flex direction="column" gap="3">
-          {Object.entries(voicesByAccent).map(([accent, voices]) => (
+          {(Object.entries(voicesByAccent) as [string, PollyVoice[]][]).map(([accent, voices]) => (
             <div key={accent}>
               <Text size="2" weight="bold" style={{ marginBottom: '8px', display: 'block' }}>
                 {accent === 'US' && '🇺🇸 US English'}

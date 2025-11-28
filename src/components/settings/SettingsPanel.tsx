@@ -11,8 +11,8 @@ import {
 } from '@radix-ui/react-icons';
 import { Badge, Button, Card, Flex, Select, Slider, Switch, Tabs, Text } from '@radix-ui/themes';
 import React, { useMemo } from 'react';
-import { appConfig } from '../../ts/shared/Config';
-import { useAppStore } from '../../ts/stores';
+import { appConfig } from '../../config/AppConfig';
+import { useAppStore } from '../../stores';
 
 interface SettingsPanelProps {
   isOpen: boolean;

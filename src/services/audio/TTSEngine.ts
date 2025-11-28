@@ -16,7 +16,7 @@
  * - Text cleaning and normalization
  */
 
-import { useAppStore } from '../stores';
+import { useAppStore, type AppState } from '../../stores';
 
 /**
  * Vocabulary word structure
@@ -114,11 +114,16 @@ export class TTSEngine {
 
     // Subscribe to TTS rate changes
     const unsubTtsRate = useAppStore.subscribe(
-      (state) => state.settings.ttsRate,
-      (ttsRate, prevTtsRate) => {
+      (state: AppState) => state.settings.ttsRate,
+      (ttsRate: number, prevTtsRate: number) => {
         if (ttsRate !== prevTtsRate) {
-          this.speechRate = ttsRate;
+          this.speechRate = ttsRate; // Original line
           console.log(`[TTSEngine] Speed changed to ${this.speechRate}`);
+          // If speaking, restart with new rate (assuming pause/resume methods exist or are intended)
+          // if (this.isSpeaking) {
+          //   this.pause(); // Placeholder for actual pause logic
+          //   this.resume(); // Placeholder for actual resume logic
+          // }
         }
       }
     );
@@ -126,10 +131,11 @@ export class TTSEngine {
 
     // Subscribe to voice changes
     const unsubVoice = useAppStore.subscribe(
-      (state) => state.settings.ttsVoice,
-      (ttsVoice, prevTtsVoice) => {
+      (state: AppState) => state.settings.ttsVoice,
+      (ttsVoice: string | null, prevTtsVoice: string | null) => {
         if (ttsVoice !== prevTtsVoice) {
-          this.resetVoiceCache();
+          this.resetVoiceCache(); // Original line
+          // this.selectVoice(ttsVoice); // This was in the provided snippet, but resetVoiceCache was original
           console.log(`[TTSEngine] Voice preference changed to ${ttsVoice}`);
         }
       }

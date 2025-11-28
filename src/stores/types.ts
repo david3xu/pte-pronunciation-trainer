@@ -5,10 +5,10 @@
  * Each store slice manages a specific domain of the application.
  */
 
-import type { Difficulty, PracticeItem, VocabularyTerm } from '../../types/dataset.types';
+import type { Difficulty, PracticeItem, VocabularyItem } from '../types/dataset.types';
 
 // Type alias for backward compatibility
-export type VocabularyItem = VocabularyTerm;
+// VocabularyItem is now imported directly from dataset.types
 
 // ============================================
 // AUDIO STORE TYPES

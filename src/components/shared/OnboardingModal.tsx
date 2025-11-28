@@ -5,18 +5,18 @@
  * Shows on first visit, dismissible, stored in localStorage.
  */
 
-import React, { useState, useEffect } from 'react';
-import { Card, Flex, Text, Button } from '@radix-ui/themes';
-import { appConfig } from '../../ts/shared/Config';
 import {
-  Cross2Icon,
-  ChatBubbleIcon,
-  SpeakerLoudIcon,
-  PlayIcon,
-  ReaderIcon,
-  ChevronRightIcon,
-  ChevronLeftIcon,
+    ChatBubbleIcon,
+    ChevronLeftIcon,
+    ChevronRightIcon,
+    Cross2Icon,
+    PlayIcon,
+    ReaderIcon,
+    SpeakerLoudIcon,
 } from '@radix-ui/react-icons';
+import { Button, Card, Flex, Text } from '@radix-ui/themes';
+import React, { useEffect, useState } from 'react';
+import { appConfig } from '../../config/AppConfig';
 
 const ONBOARDING_KEY = 'pte-onboarding-completed';
 

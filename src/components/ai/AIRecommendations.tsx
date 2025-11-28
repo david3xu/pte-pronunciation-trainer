@@ -5,11 +5,11 @@
  * Uses Google Gemini API (free tier) to analyze weak areas and suggest practice items.
  */
 
-import React, { useState, useEffect } from 'react';
-import { Card, Flex, Text, Button, Badge, Spinner } from '@radix-ui/themes';
-import { LightningBoltIcon, ReloadIcon, RocketIcon, BookmarkIcon } from '@radix-ui/react-icons';
-import { useAppStore } from '../../ts/stores';
-import { generateRecommendations, type Recommendation, type UserProgress } from '../../ts/ai/recommendationService';
+import { BookmarkIcon, LightningBoltIcon, ReloadIcon, RocketIcon } from '@radix-ui/react-icons';
+import { Badge, Button, Card, Flex, Spinner, Text } from '@radix-ui/themes';
+import React, { useEffect, useState } from 'react';
+import { generateRecommendations, type Recommendation, type UserProgress } from '../../services/ai/recommendationService';
+import { useAppStore } from '../../stores';
 
 const AIRecommendations: React.FC = () => {
   const { auth, progress } = useAppStore();

@@ -24,7 +24,10 @@
 import { create } from 'zustand';
 import { devtools, persist, subscribeWithSelector } from 'zustand/middleware';
 
-import type { PracticeItem, VocabularyTerm } from '../../types/dataset.types';
+import { authService } from '../services/supabase/authService';
+import { syncService } from '../services/supabase/syncService';
+
+import { type PracticeItem, type VocabularyTerm } from '../types/dataset.types';
 import type {
     AudioState,
     AuthState,
@@ -34,10 +37,6 @@ import type {
     UIState,
     VocabularyState,
 } from './types';
-
-// Import Supabase services for auth store
-import { authService } from '../supabase/authService';
-import { syncService } from '../supabase/syncService';
 
 // Combined store type
 export interface AppState {

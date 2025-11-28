@@ -9,9 +9,9 @@
  * Tracks progress via Zustand store subscriptions and handles cloud synchronization
  */
 
-import { useAppStore } from '../stores';
-import { syncService } from './syncService';
+import { useAppStore, type AppState } from '../../stores';
 import type { SyncResult } from './syncService';
+import { syncService } from './syncService';
 
 /**
  * Study session data
@@ -69,8 +69,8 @@ export class AutoSyncManager {
 
     // Subscribe to progress updates
     const unsubProgress = useAppStore.subscribe(
-      (state) => ({ currentIndex: state.progress.currentIndex, totalItems: state.progress.totalItems }),
-      (progress, prevProgress) => {
+      (state: AppState) => ({ currentIndex: state.progress.currentIndex, totalItems: state.progress.totalItems }),
+      (progress: { currentIndex: number; totalItems: number }, prevProgress: { currentIndex: number; totalItems: number }) => {
         if (progress.currentIndex !== prevProgress.currentIndex || progress.totalItems !== prevProgress.totalItems) {
           this.handleProgressUpdate({ currentIndex: progress.currentIndex, totalWords: progress.totalItems });
         }
@@ -80,8 +80,8 @@ export class AutoSyncManager {
 
     // Subscribe to vocabulary dataset changes (start of session)
     const unsubDataset = useAppStore.subscribe(
-      (state) => state.vocabulary.currentDataset,
-      (dataset, prevDataset) => {
+      (state: AppState) => state.vocabulary.currentDataset,
+      (dataset: any[], prevDataset: any[]) => {
         if (dataset.length > 0 && dataset !== prevDataset) {
           this.startStudySession({ wordCount: dataset.length });
         }
@@ -91,8 +91,8 @@ export class AutoSyncManager {
 
     // Subscribe to practice mode changes (end previous session, start new)
     const unsubMode = useAppStore.subscribe(
-      (state) => state.settings.practiceMode,
-      (practiceMode, prevPracticeMode) => {
+      (state: AppState) => state.settings.practiceMode as string,
+      (practiceMode: string, prevPracticeMode: string) => {
         if (practiceMode !== prevPracticeMode) {
           this.endCurrentSession();
           // New session will start on next dataset load

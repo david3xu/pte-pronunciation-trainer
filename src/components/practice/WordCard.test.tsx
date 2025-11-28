@@ -1,10 +1,10 @@
-import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import WordCard from './WordCard';
+import { describe, expect, it, vi } from 'vitest';
 import type { VocabularyTerm } from '../../types/dataset.types';
+import WordCard from './WordCard';
 
 // Mock the Zustand store
-vi.mock('../ts/stores', () => ({
+vi.mock('../../stores', () => ({
   useAppStore: () => ({
     tts: {
       startSpeaking: vi.fn(),
@@ -52,9 +52,9 @@ const mockVocabularyTerm: VocabularyTerm = {
 describe('WordCard Component', () => {
   it('renders vocabulary word', () => {
     render(
-      
+
         <WordCard item={mockVocabularyTerm} />
-      
+
     );
 
     expect(screen.getByText('ubiquitous')).toBeInTheDocument();
@@ -62,9 +62,9 @@ describe('WordCard Component', () => {
 
   it('displays IPA pronunciation for vocabulary terms', () => {
     render(
-      
+
         <WordCard item={mockVocabularyTerm} />
-      
+
     );
 
     // IPA appears twice (British and American)
@@ -74,9 +74,9 @@ describe('WordCard Component', () => {
 
   it('shows difficulty badge', () => {
     render(
-      
+
         <WordCard item={mockVocabularyTerm} />
-      
+
     );
 
     expect(screen.getByText(/hard/i)).toBeInTheDocument();
@@ -84,9 +84,9 @@ describe('WordCard Component', () => {
 
   it('renders speak button', () => {
     render(
-      
+
         <WordCard item={mockVocabularyTerm} />
-      
+
     );
 
     const speakButtons = screen.getAllByRole('button');

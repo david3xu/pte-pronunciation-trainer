@@ -335,24 +335,37 @@ src/
 │       ├── OnboardingModal.tsx        # First-time guide
 │       └── Skeleton.tsx               # Loading states
 │
-├── ts/                        # TypeScript Core Logic
-│   ├── stores/                # Zustand State Management
-│   │   └── index.ts                   # App state store
-│   ├── shared/                # Shared Utilities
-│   │   └── Config.ts                  # App configuration
-│   ├── audio/                 # Audio Services
-│   │   ├── pollyService.ts            # AWS Polly integration
-│   │   └── ttsUtils.ts                # TTS utilities
-│   ├── data/                  # Data Management
-│   │   └── vocabLoader.ts             # Vocabulary loader
-│   └── utils/                 # Utilities
-│       └── helpers.ts                 # Helper functions
+├── config/                    # Configuration
+│   └── AppConfig.ts               # App configuration
 │
-├── services/                  # API Client Services
+├── stores/                    # State Management
+│   ├── index.ts                   # Main Zustand store
+│   └── types.ts                   # Store types
+│
+├── services/                  # Business Logic & API Clients
 │   ├── ai/                    # AI Services
-│   │   └── geminiService.ts           # Google Gemini API
-│   └── tts/                   # TTS Services
-│       └── pollyClient.ts             # AWS Polly client
+│   │   ├── geminiService.ts           # Google Gemini API
+│   │   ├── recommendationService.ts   # AI recommendations
+│   │   └── ...
+│   ├── audio/                 # Audio Services
+│   │   ├── TTSEngine.ts               # Web Speech API wrapper
+│   │   └── pollyService.ts            # AWS Polly integration
+│   ├── analytics/             # Analytics
+│   │   └── analyticsService.ts        # PostHog tracking
+│   ├── supabase/              # Supabase Integration
+│   │   ├── supabaseClient.ts          # Client setup
+│   │   └── authService.ts             # Authentication
+│   └── session/               # Session Management
+│       └── sessionManager.ts          # Practice tracking
+│
+├── data/                      # Data Management
+│   ├── DatasetManager.ts          # Dataset loader
+│   ├── DataSchema.ts              # Data validation
+│   └── extractors/                # Data extractors
+│
+├── utils/                     # Utilities
+│   ├── textUtils.ts               # Text processing
+│   └── validation/                # Validation schemas
 │
 ├── types/                     # TypeScript Type Definitions
 │   ├── config.types.ts        # Config types

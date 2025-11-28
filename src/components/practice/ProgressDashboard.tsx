@@ -12,19 +12,19 @@
  */
 
 import {
-  BarChartIcon,
-  CalendarIcon,
-  CheckCircledIcon,
-  LightningBoltIcon,
-  ReloadIcon,
-  StarFilledIcon,
-  TargetIcon,
-  TimerIcon,
+    BarChartIcon,
+    CalendarIcon,
+    CheckCircledIcon,
+    LightningBoltIcon,
+    ReloadIcon,
+    StarFilledIcon,
+    TargetIcon,
+    TimerIcon,
 } from '@radix-ui/react-icons';
 import { Badge, Button, Card, Flex, Separator, Tabs, Text } from '@radix-ui/themes';
 import React, { useEffect, useState } from 'react';
-import supabase from '../../services/supabase/client';
-import { useAppStore } from '../../ts/stores';
+import { supabase } from '../../services/supabase/supabaseClient';
+import { useAppStore } from '../../stores';
 import type { TaskType } from '../../types/database';
 
 
@@ -105,7 +105,8 @@ const ProgressDashboard: React.FC = () => {
       processSessionHistory(sessions || []);
       processCategoryStats(items || []);
       processWeakAreas(items || []);
-      calculateTotalStats(sessions || [], items || []);
+      const stats = calculateTotalStats(sessions || [], items || []);
+      setTotalStats(stats);
     } catch (error) {
       console.error('[ProgressDashboard] Error fetching data:', error);
     } finally {
@@ -224,15 +225,16 @@ const ProgressDashboard: React.FC = () => {
     const totalSessions = sessions.length;
     const totalItems = items.length;
     const totalMinutes = sessions.reduce((sum: number, s: any) => sum + (s.duration_minutes || 0), 0);
-    const correctItems = items.filter((i: any) => i.accuracy_percent && i.accuracy_percent >= 80).length;
-    const overallAccuracy = totalItems > 0 ? (correctItems / totalItems) * 100 : 0;
+    const overallAccuracy = items.length > 0
+      ? Math.round(items.reduce((sum: number, i: any) => sum + (i.accuracy_percent || 0), 0) / items.length)
+      : 0;
 
-    setTotalStats({
+    return {
       totalSessions,
       totalItems,
       totalMinutes,
       overallAccuracy,
-    });
+    };
   };
 
   // Current session stats

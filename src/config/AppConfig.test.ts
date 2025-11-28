@@ -5,8 +5,8 @@
  * and values are properly typed.
  */
 
-import { describe, it, expect } from 'vitest';
-import { appConfig } from './Config';
+import { describe, expect, it } from 'vitest';
+import { appConfig } from './AppConfig';
 
 describe('Config Validation', () => {
   describe('AI Configuration', () => {

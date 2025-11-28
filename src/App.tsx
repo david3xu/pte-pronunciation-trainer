@@ -30,7 +30,7 @@ import { logIntervention, monitorSession, type Intervention } from './services/a
 import { hasDataToMigrate } from './services/migration/migrationService';
 import { getLearnerProfile, hasCompletedOnboarding } from './services/profile/learnerProfileService';
 import { getSessionManager } from './services/session/sessionManager';
-import { useAppStore } from './ts/stores';
+import { useAppStore } from './stores';
 import type { TaskType } from './types/database';
 
 // Lazy load heavy practice interfaces for code splitting

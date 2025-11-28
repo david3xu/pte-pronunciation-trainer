@@ -8,11 +8,11 @@
  */
 
 import { CheckIcon, Cross2Icon, InfoCircledIcon, LightningBoltIcon } from '@radix-ui/react-icons';
+import { Badge, Button, Card, Flex, Separator, Text } from '@radix-ui/themes';
 import React, { useEffect, useState } from 'react';
 import { generateRecommendations, getRecommendations, updateRecommendationStatus, type Recommendation } from '../../services/ai/recommendationEngine';
 import { detectWeakAreas, getWeakAreas, type WeakArea } from '../../services/ai/weakAreaDetector';
-import { useAppStore } from '../../ts/stores';
-import { Badge, Button, Card, Flex, Separator, Text } from '@radix-ui/themes';
+import { useAppStore } from '../../stores';
 
 interface WeakAreasDashboardProps {
   isOpen: boolean;

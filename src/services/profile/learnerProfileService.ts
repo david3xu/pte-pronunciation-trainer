@@ -5,8 +5,8 @@
  * Stores data in Supabase with offline fallback to localStorage.
  */
 
-import { supabaseClient } from '../supabase/client';
 import type { LearnerProfile, LearningStyle } from '../../types/database';
+import { supabase } from '../supabase/supabaseClient';
 
 // ============================================================================
 // Types
@@ -74,7 +74,7 @@ export async function getLearnerProfile(userId: string): Promise<LearnerProfile 
       return cached;
     }
 
-    const { data, error } = await supabaseClient
+    const { data, error } = await supabase
       .from('learner_profiles')
       .select('*')
       .eq('user_id', userId)
@@ -127,7 +127,7 @@ export async function saveLearnerProfile(
       return { success: true };
     }
 
-    const { error } = await supabaseClient
+    const { error } = await supabase
       .from('learner_profiles')
       .upsert(profile, { onConflict: 'user_id' });
 
@@ -161,7 +161,7 @@ export async function updateWeakAreas(
       return { success: true };
     }
 
-    const { error } = await supabaseClient
+    const { error } = await supabase
       .from('learner_profiles')
       .update({ weak_areas: weakAreas, updated_at: new Date().toISOString() })
       .eq('user_id', userId);
@@ -235,7 +235,7 @@ export async function syncQueuedProfiles(): Promise<number> {
 
     for (const { profile } of queue) {
       try {
-        const { error } = await supabaseClient
+        const { error } = await supabase
           .from('learner_profiles')
           .upsert(profile, { onConflict: 'user_id' });
 

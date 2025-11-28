@@ -16,7 +16,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { askAITutor } from '../../services/ai';
 import { rateAIResponse } from '../../services/ai/ratingService';
-import { useAppStore } from '../../ts/stores';
+import { useAppStore } from '../../stores';
 
 
 interface Message {

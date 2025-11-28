@@ -7,8 +7,6 @@ import { VitePWA } from 'vite-plugin-pwa';
 export default defineConfig({
   plugins: [
     react({
-      // Enable Fast Refresh for React
-      fastRefresh: true,
       // Include .tsx and .ts files
       include: '**/*.{jsx,tsx,ts}',
     }),
@@ -116,6 +114,9 @@ export default defineConfig({
         },
         // Asset file names
         assetFileNames: (assetInfo) => {
+          if (!assetInfo.name) {
+            return 'assets/[name]-[hash][extname]';
+          }
           const info = assetInfo.name.split('.');
           const ext = info[info.length - 1];
           if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(ext)) {

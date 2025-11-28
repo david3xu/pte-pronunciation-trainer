@@ -11,21 +11,22 @@
  * Phase 5: UI Redesign (Tasks 5 & 6)
  */
 
-import React, { useEffect, useState } from 'react';
-import { Card, Flex, Text, Badge, Progress, Separator, Tabs, ScrollArea, Button } from '@radix-ui/themes';
 import {
-  CheckCircledIcon,
-  TimerIcon,
-  TargetIcon,
   BarChartIcon,
-  LightningBoltIcon,
   CalendarIcon,
-  StarFilledIcon,
+  CheckCircledIcon,
+  LightningBoltIcon,
   ReloadIcon,
+  StarFilledIcon,
+  TargetIcon,
+  TimerIcon,
 } from '@radix-ui/react-icons';
-import { useAppStore } from '../../ts/stores';
+import { Badge, Button, Card, Flex, Separator, Tabs, Text } from '@radix-ui/themes';
+import React, { useEffect, useState } from 'react';
 import supabase from '../../services/supabase/client';
+import { useAppStore } from '../../ts/stores';
 import type { TaskType } from '../../types/database';
+
 
 interface SessionSummary {
   date: string;
@@ -251,7 +252,7 @@ const ProgressDashboard: React.FC = () => {
       <Card size="3">
         <Flex direction="column" gap="4" align="center" p="6">
           <Text size="4" weight="bold">Sign In to Track Progress</Text>
-          <Text size="2" color="gray" style={{ textAlign: 'center' }}>
+          <Text size="2" style={{ textAlign: 'center' }}>
             Create an account to track your progress over time, see detailed analytics, and identify areas for improvement.
           </Text>
         </Flex>
@@ -280,8 +281,8 @@ const ProgressDashboard: React.FC = () => {
         <Card style={{ flex: 1, minWidth: '200px' }}>
           <Flex direction="column" gap="2">
             <Flex align="center" gap="2">
-              <CalendarIcon width="20" height="20" color="blue" />
-              <Text size="2" color="gray">Total Sessions</Text>
+              <CalendarIcon width="20" height="20" />
+              <Text size="2">Total Sessions</Text>
             </Flex>
             <Text size="6" weight="bold">{totalStats.totalSessions}</Text>
           </Flex>
@@ -289,8 +290,8 @@ const ProgressDashboard: React.FC = () => {
         <Card style={{ flex: 1, minWidth: '200px' }}>
           <Flex direction="column" gap="2">
             <Flex align="center" gap="2">
-              <CheckCircledIcon width="20" height="20" color="green" />
-              <Text size="2" color="gray">Total Items</Text>
+              <CheckCircledIcon width="20" height="20" />
+              <Text size="2">Total Items</Text>
             </Flex>
             <Text size="6" weight="bold">{totalStats.totalItems}</Text>
           </Flex>
@@ -298,8 +299,8 @@ const ProgressDashboard: React.FC = () => {
         <Card style={{ flex: 1, minWidth: '200px' }}>
           <Flex direction="column" gap="2">
             <Flex align="center" gap="2">
-              <TimerIcon width="20" height="20" color="purple" />
-              <Text size="2" color="gray">Practice Time</Text>
+              <TimerIcon width="20" height="20" />
+              <Text size="2">Practice Time</Text>
             </Flex>
             <Text size="6" weight="bold">{formatTime(totalStats.totalMinutes)}</Text>
           </Flex>
@@ -307,8 +308,8 @@ const ProgressDashboard: React.FC = () => {
         <Card style={{ flex: 1, minWidth: '200px' }}>
           <Flex direction="column" gap="2">
             <Flex align="center" gap="2">
-              <TargetIcon width="20" height="20" color="orange" />
-              <Text size="2" color="gray">Overall Accuracy</Text>
+              <TargetIcon width="20" height="20" />
+              <Text size="2">Overall Accuracy</Text>
             </Flex>
             <Text size="6" weight="bold">{totalStats.overallAccuracy.toFixed(0)}%</Text>
           </Flex>
@@ -341,14 +342,12 @@ const ProgressDashboard: React.FC = () => {
                     {progress.accuracy.toFixed(0)}%
                   </Badge>
                 </Flex>
-                <Progress
-                  value={progress.accuracy}
-                  max={100}
+                <div className="w-full bg-app-border rounded-full h-2"
                   color={progress.accuracy >= 80 ? 'green' : progress.accuracy >= 60 ? 'blue' : 'red'}
                 />
               </Flex>
 
-              <Separator size="4" />
+              <Separator />
 
               {/* Session Stats Grid */}
               <Flex direction="column" gap="3">
@@ -357,7 +356,7 @@ const ProgressDashboard: React.FC = () => {
                     <CheckCircledIcon width="16" height="16" />
                     <Text size="2">Items Completed</Text>
                   </Flex>
-                  <Badge color="green">{progress.itemsCompleted}</Badge>
+                  <Badge>{progress.itemsCompleted}</Badge>
                 </Flex>
 
                 <Flex justify="between" align="center">
@@ -365,7 +364,7 @@ const ProgressDashboard: React.FC = () => {
                     <TargetIcon width="16" height="16" />
                     <Text size="2">Items Correct</Text>
                   </Flex>
-                  <Badge color="blue">{progress.itemsCorrect}</Badge>
+                  <Badge>{progress.itemsCorrect}</Badge>
                 </Flex>
 
                 <Flex justify="between" align="center">
@@ -373,29 +372,29 @@ const ProgressDashboard: React.FC = () => {
                     <TimerIcon width="16" height="16" />
                     <Text size="2">Session Time</Text>
                   </Flex>
-                  <Badge color="purple">{formatTime(sessionDurationMinutes)}</Badge>
+                  <Badge>{formatTime(sessionDurationMinutes)}</Badge>
                 </Flex>
 
                 <Flex justify="between" align="center">
                   <Text size="2">Progress</Text>
-                  <Text size="2" color="gray">
+                  <Text size="2">
                     {progress.currentIndex + 1} / {progress.totalItems}
                   </Text>
                 </Flex>
               </Flex>
 
               {/* Achievements */}
-              <Separator size="4" />
+              <Separator />
               <Flex direction="column" gap="2">
                 <Flex align="center" gap="2">
-                  <StarFilledIcon width="16" height="16" color="gold" />
+                  <StarFilledIcon width="16" height="16" />
                   <Text size="2" weight="medium">Session Achievements</Text>
                 </Flex>
                 <Flex gap="1" wrap="wrap">
-                  {progress.itemsCompleted >= 10 && <Badge color="green">10+ Items 🎯</Badge>}
-                  {progress.accuracy >= 90 && <Badge color="green">90%+ Accuracy ⭐</Badge>}
-                  {progress.itemsCompleted >= 25 && <Badge color="blue">25+ Items 🏆</Badge>}
-                  {progress.itemsCompleted === 0 && <Badge color="gray">No items yet</Badge>}
+                  {progress.itemsCompleted >= 10 && <Badge>10+ Items 🎯</Badge>}
+                  {progress.accuracy >= 90 && <Badge>90%+ Accuracy ⭐</Badge>}
+                  {progress.itemsCompleted >= 25 && <Badge>25+ Items 🏆</Badge>}
+                  {progress.itemsCompleted === 0 && <Badge>No items yet</Badge>}
                 </Flex>
               </Flex>
             </Flex>
@@ -413,9 +412,9 @@ const ProgressDashboard: React.FC = () => {
                   <ReloadIcon className="animate-spin" width="24" height="24" />
                 </Flex>
               ) : sessionHistory.length === 0 ? (
-                <Text size="2" color="gray">No session history yet. Start practicing!</Text>
+                <Text size="2">No session history yet. Start practicing!</Text>
               ) : (
-                <ScrollArea style={{ maxHeight: '400px' }}>
+                <div style={{ maxHeight: '400px' }}>
                   <Flex direction="column" gap="2">
                     {sessionHistory.map((day, idx) => (
                       <Card key={idx} variant="surface">
@@ -423,11 +422,11 @@ const ProgressDashboard: React.FC = () => {
                           <Flex direction="column" gap="1">
                             <Text size="2" weight="bold">{day.date}</Text>
                             <Flex gap="2">
-                              <Text size="1" color="gray">{day.totalSessions} sessions</Text>
-                              <Text size="1" color="gray">•</Text>
-                              <Text size="1" color="gray">{day.totalItems} items</Text>
-                              <Text size="1" color="gray">•</Text>
-                              <Text size="1" color="gray">{formatTime(day.totalMinutes)}</Text>
+                              <Text size="1">{day.totalSessions} sessions</Text>
+                              <Text size="1">•</Text>
+                              <Text size="1">{day.totalItems} items</Text>
+                              <Text size="1">•</Text>
+                              <Text size="1">{formatTime(day.totalMinutes)}</Text>
                             </Flex>
                           </Flex>
                           <Badge
@@ -439,7 +438,7 @@ const ProgressDashboard: React.FC = () => {
                       </Card>
                     ))}
                   </Flex>
-                </ScrollArea>
+                </div>
               )}
             </Flex>
           </Card>
@@ -450,7 +449,7 @@ const ProgressDashboard: React.FC = () => {
           <Card>
             <Flex direction="column" gap="4">
               <Flex align="center" gap="2">
-                <BarChartIcon width="20" height="20" color="blue" />
+                <BarChartIcon width="20" height="20" />
                 <Text size="4" weight="bold">Performance by Category</Text>
               </Flex>
 
@@ -459,9 +458,9 @@ const ProgressDashboard: React.FC = () => {
                   <ReloadIcon className="animate-spin" width="24" height="24" />
                 </Flex>
               ) : categoryStats.length === 0 ? (
-                <Text size="2" color="gray">No category data yet. Start practicing!</Text>
+                <Text size="2">No category data yet. Start practicing!</Text>
               ) : (
-                <ScrollArea style={{ maxHeight: '400px' }}>
+                <div style={{ maxHeight: '400px' }}>
                   <Flex direction="column" gap="3">
                     {categoryStats.map((stat, idx) => (
                       <Card key={idx} variant="surface">
@@ -476,17 +475,17 @@ const ProgressDashboard: React.FC = () => {
                               {stat.accuracy.toFixed(0)}%
                             </Badge>
                           </Flex>
-                          <Progress value={stat.accuracy} max={100} color={stat.accuracy >= 80 ? 'green' : stat.accuracy >= 60 ? 'yellow' : 'red'} />
+                          <div className="w-full bg-gray-200 rounded-full h-2" color={stat.accuracy >= 80 ? 'green' : stat.accuracy >= 60 ? 'yellow' : 'red'} />
                           <Flex gap="2">
-                            <Text size="1" color="gray">{stat.itemsAttempted} items</Text>
-                            <Text size="1" color="gray">•</Text>
-                            <Text size="1" color="gray">{stat.avgTimePerItem.toFixed(0)}s avg</Text>
+                            <Text size="1">{stat.itemsAttempted} items</Text>
+                            <Text size="1">•</Text>
+                            <Text size="1">{stat.avgTimePerItem.toFixed(0)}s avg</Text>
                           </Flex>
                         </Flex>
                       </Card>
                     ))}
                   </Flex>
-                </ScrollArea>
+                </div>
               )}
             </Flex>
           </Card>
@@ -497,7 +496,7 @@ const ProgressDashboard: React.FC = () => {
           <Card>
             <Flex direction="column" gap="4">
               <Flex align="center" gap="2">
-                <LightningBoltIcon width="20" height="20" color="orange" />
+                <LightningBoltIcon width="20" height="20" />
                 <Text size="4" weight="bold">Areas for Improvement</Text>
               </Flex>
 
@@ -507,17 +506,17 @@ const ProgressDashboard: React.FC = () => {
                 </Flex>
               ) : weakAreas.length === 0 ? (
                 <Flex direction="column" gap="2" align="center" p="4">
-                  <Text size="3" weight="bold" color="green">🎉 Great job!</Text>
-                  <Text size="2" color="gray" style={{ textAlign: 'center' }}>
+                  <Text size="3" weight="bold">🎉 Great job!</Text>
+                  <Text size="2" style={{ textAlign: 'center' }}>
                     No weak areas detected. You're performing well across all categories!
                   </Text>
                 </Flex>
               ) : (
                 <Flex direction="column" gap="3">
-                  <Text size="2" color="gray">
+                  <Text size="2">
                     These areas have accuracy below 70% (minimum 5 items attempted):
                   </Text>
-                  <ScrollArea style={{ maxHeight: '400px' }}>
+                  <div style={{ maxHeight: '400px' }}>
                     <Flex direction="column" gap="3">
                       {weakAreas.map((area, idx) => (
                         <Card key={idx} variant="surface" style={{ borderLeft: '3px solid var(--red-9)' }}>
@@ -529,12 +528,12 @@ const ProgressDashboard: React.FC = () => {
                                 </Text>
                                 <Badge size="1" variant="soft">{area.taskType}</Badge>
                               </Flex>
-                              <Badge color="red" size="2">
+                              <Badge size="2">
                                 {area.accuracy.toFixed(0)}%
                               </Badge>
                             </Flex>
-                            <Progress value={area.accuracy} max={100} color="red" />
-                            <Text size="1" color="gray">{area.itemsAttempted} items attempted</Text>
+                            <div className="w-full bg-gray-200 rounded-full h-2" />
+                            <Text size="1">{area.itemsAttempted} items attempted</Text>
 
                             {/* Recommendations */}
                             <Card size="1" variant="classic" style={{ backgroundColor: 'var(--orange-2)' }}>
@@ -546,7 +545,7 @@ const ProgressDashboard: React.FC = () => {
                         </Card>
                       ))}
                     </Flex>
-                  </ScrollArea>
+                  </div>
                 </Flex>
               )}
             </Flex>

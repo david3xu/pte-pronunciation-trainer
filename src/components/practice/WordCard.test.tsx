@@ -1,6 +1,5 @@
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import { Theme } from '@radix-ui/themes';
 import WordCard from './WordCard';
 import type { VocabularyTerm } from '../../types/dataset.types';
 
@@ -53,9 +52,9 @@ const mockVocabularyTerm: VocabularyTerm = {
 describe('WordCard Component', () => {
   it('renders vocabulary word', () => {
     render(
-      <Theme>
+      
         <WordCard item={mockVocabularyTerm} />
-      </Theme>
+      
     );
 
     expect(screen.getByText('ubiquitous')).toBeInTheDocument();
@@ -63,9 +62,9 @@ describe('WordCard Component', () => {
 
   it('displays IPA pronunciation for vocabulary terms', () => {
     render(
-      <Theme>
+      
         <WordCard item={mockVocabularyTerm} />
-      </Theme>
+      
     );
 
     // IPA appears twice (British and American)
@@ -75,9 +74,9 @@ describe('WordCard Component', () => {
 
   it('shows difficulty badge', () => {
     render(
-      <Theme>
+      
         <WordCard item={mockVocabularyTerm} />
-      </Theme>
+      
     );
 
     expect(screen.getByText(/hard/i)).toBeInTheDocument();
@@ -85,9 +84,9 @@ describe('WordCard Component', () => {
 
   it('renders speak button', () => {
     render(
-      <Theme>
+      
         <WordCard item={mockVocabularyTerm} />
-      </Theme>
+      
     );
 
     const speakButtons = screen.getAllByRole('button');

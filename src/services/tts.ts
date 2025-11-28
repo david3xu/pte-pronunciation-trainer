@@ -2,7 +2,10 @@
  * TTS API Client
  *
  * Client-side wrapper for Text-to-Speech features (browser and premium).
+ * Now with persistent LocalStorage caching to reduce API calls.
  */
+
+import { persistentTTSCache } from './tts/persistentCache';
 
 interface PremiumTTSRequest {
   text: string;
@@ -29,13 +32,30 @@ interface APIResponse<T> {
 }
 
 /**
- * Synthesize speech using premium TTS (AWS Polly)
+ * Synthesize speech using premium TTS (AWS Polly) with caching
  */
 export async function synthesizePremiumSpeech(
   text: string,
   voiceId: string = 'Joanna',
   languageCode: string = 'en-US'
 ): Promise<APIResponse<PremiumTTSResponse>> {
+  // Check persistent cache first
+  const cached = await persistentTTSCache.get(text, voiceId, languageCode);
+  if (cached) {
+    return {
+      success: true,
+      data: {
+        audioBase64: cached.audioBase64,
+        contentType: cached.contentType,
+        voiceId,
+        engine: 'neural',
+        languageCode,
+        requestCharacters: text.length,
+      },
+    };
+  }
+
+  // Cache miss - call API
   try {
     const request: PremiumTTSRequest = {
       text,
@@ -58,6 +78,18 @@ export async function synthesizePremiumSpeech(
     }
 
     const result = await response.json();
+
+    // Cache the result
+    if (result.success && result.data?.audioBase64) {
+      await persistentTTSCache.set(
+        text,
+        voiceId,
+        languageCode,
+        result.data.audioBase64,
+        result.data.contentType || 'audio/mpeg'
+      );
+    }
+
     return result;
   } catch (error: any) {
     console.error('Premium TTS API error:', error);

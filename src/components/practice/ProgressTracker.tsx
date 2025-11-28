@@ -4,10 +4,10 @@
  * Displays user progress, accuracy, streak, and session statistics.
  */
 
+import { CheckCircledIcon, TargetIcon, TimerIcon } from '@radix-ui/react-icons';
 import React from 'react';
-import { Card, Flex, Text, Progress, Badge } from '@radix-ui/themes';
-import { CheckCircledIcon, TimerIcon, TargetIcon } from '@radix-ui/react-icons';
 import { useAppStore } from '../../ts/stores';
+import { Badge, Card, Flex, Text } from '@radix-ui/themes';
 
 const ProgressTracker: React.FC = () => {
   const { progress, auth } = useAppStore();
@@ -45,9 +45,9 @@ const ProgressTracker: React.FC = () => {
               {progress.accuracy.toFixed(0)}%
             </Badge>
           </Flex>
-          <Progress
-            value={progress.accuracy}
-            max={100}
+          <div className="w-full bg-app-border rounded-full h-2"
+
+
             color={
               progress.accuracy >= 80 ? 'green' :
               progress.accuracy >= 60 ? 'blue' :
@@ -64,7 +64,7 @@ const ProgressTracker: React.FC = () => {
               <CheckCircledIcon width="16" height="16" className="text-green-500" />
               <Text size="2">Items Completed</Text>
             </Flex>
-            <Badge color="green">{progress.itemsCompleted}</Badge>
+            <Badge>{progress.itemsCompleted}</Badge>
           </Flex>
 
           {/* Items Correct */}
@@ -73,7 +73,7 @@ const ProgressTracker: React.FC = () => {
               <TargetIcon width="16" height="16" className="text-blue-500" />
               <Text size="2">Items Correct</Text>
             </Flex>
-            <Badge color="blue">{progress.itemsCorrect}</Badge>
+            <Badge>{progress.itemsCorrect}</Badge>
           </Flex>
 
           {/* Session Duration */}
@@ -82,13 +82,13 @@ const ProgressTracker: React.FC = () => {
               <TimerIcon width="16" height="16" className="text-purple-500" />
               <Text size="2">Session Time</Text>
             </Flex>
-            <Badge color="purple">{formatTime(sessionDurationMinutes)}</Badge>
+            <Badge>{formatTime(sessionDurationMinutes)}</Badge>
           </Flex>
 
           {/* Current Progress */}
           <Flex justify="between" align="center">
             <Text size="2">Current Item</Text>
-            <Text size="2" color="gray">
+            <Text size="2">
               {progress.currentIndex + 1} / {progress.totalItems}
             </Text>
           </Flex>
@@ -100,16 +100,16 @@ const ProgressTracker: React.FC = () => {
             <Text size="2" weight="medium">Achievements</Text>
             <Flex gap="1" wrap="wrap">
               {progress.itemsCompleted >= 10 && (
-                <Badge color="gold">10+ Items 🎯</Badge>
+                <Badge>10+ Items 🎯</Badge>
               )}
               {progress.accuracy >= 90 && (
-                <Badge color="green">90%+ Accuracy ⭐</Badge>
+                <Badge>90%+ Accuracy ⭐</Badge>
               )}
               {progress.itemsCompleted >= 50 && (
-                <Badge color="blue">50+ Items 🏆</Badge>
+                <Badge>50+ Items 🏆</Badge>
               )}
               {progress.itemsCompleted >= 100 && (
-                <Badge color="purple">100+ Items 👑</Badge>
+                <Badge>100+ Items 👑</Badge>
               )}
             </Flex>
           </Flex>

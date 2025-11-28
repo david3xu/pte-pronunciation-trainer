@@ -314,126 +314,63 @@ await autoSyncManager.syncNow();
 
 ### Current Status
 
-**Compiled**: ✅ TypeScript services compiled to JavaScript
-**Available**: ✅ Services ready in `src/js/supabase/`
-**Integrated**: ⏳ Not yet integrated into main app
+**Compiled**: ✅ TypeScript services ready
+**Integrated**: ✅ Fully integrated with React & Zustand
 
-### Integration Steps (TODO)
+### Integration Architecture
 
-#### 1. Add Supabase to index.html
+#### 1. Zustand Store Integration
 
-```html
-<!-- Before closing </body> -->
-<!-- Supabase SDK -->
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+The application uses `useAuthStore` to manage authentication state and `useAppStore` for global state.
 
-<!-- Supabase Services (after SDK) -->
-<script type="module">
-  import { supabase, authService, syncService, autoSyncManager }
-    from './src/js/supabase/index.js';
-
-  // Expose to window for other scripts
-  window.supabase = supabase;
-  window.authService = authService;
-  window.syncService = syncService;
-  window.autoSyncManager = autoSyncManager;
-</script>
-```
-
-#### 2. Initialize in PTEApp
-
-**File**: `src/ts/core/PTEApp.ts`
+**File**: `src/ts/stores/authSlice.ts`
 
 ```typescript
-async initializeModules(): Promise<void> {
-  // ... existing initialization ...
-
-  // NEW: Initialize Supabase services
-  await this.initializeSupabase();
-
-  // ... rest of initialization ...
-}
-
-async initializeSupabase(): Promise<void> {
-  console.log('Initializing Supabase...');
-
-  // Initialize sync service
-  if (window.syncService) {
-    await window.syncService.initialize();
-    console.log('✅ Sync service initialized');
-  }
-
-  // Check auth status
-  if (window.authService) {
-    const isAuth = await window.authService.isAuthenticated();
-    console.log(`Auth status: ${isAuth ? 'Authenticated' : 'Not authenticated'}`);
-
-    // If authenticated, load user data
-    if (isAuth) {
-      await this.loadUserData();
-    }
-  }
-
-  // Start auto-sync if authenticated
-  if (window.autoSyncManager && await window.authService.isAuthenticated()) {
-    window.autoSyncManager.start();
-    console.log('✅ Auto-sync started');
-  }
-}
-
-async loadUserData(): Promise<void> {
-  // Load user progress
-  const progress = await window.syncService.loadProgress(currentDatasetId);
-  if (progress) {
-    // Restore progress in app
-    window.pteVocabularyManager.setCurrentIndex(progress.current_index);
-  }
-
-  // Load user settings
-  const settings = await window.syncService.loadSettings();
-  if (settings) {
-    // Apply settings to app
-    window.settingsModule.applySettings(settings);
-  }
-}
+export const createAuthSlice: StateCreator<AuthSlice> = (set) => ({
+  user: null,
+  isAuthenticated: false,
+  setUser: (user) => set({ user, isAuthenticated: !!user }),
+  // ...
+});
 ```
 
-#### 3. Add Sync on Progress Change
+#### 2. App Initialization
 
-**File**: `src/ts/core/PTEVocabularyManager.ts`
+The `App.tsx` component initializes the auth listener to handle session changes automatically.
 
-```typescript
-async setCurrentIndex(index: number): Promise<void> {
-  this.currentIndex = index;
+**File**: `src/App.tsx`
 
-  // Sync to Supabase if authenticated
-  if (window.syncService && await window.authService.isAuthenticated()) {
-    await window.syncService.syncProgress(
-      'vocabulary',
-      this.currentDatasetId,
-      index,
-      this.vocabulary.length,
-      this.completedCount
-    );
-  }
-}
+```tsx
+useEffect(() => {
+  // Check active session
+  supabase.auth.getSession().then(({ data: { session } }) => {
+    setUser(session?.user ?? null);
+  });
+
+  // Listen for auth changes
+  const {
+    data: { subscription },
+  } = supabase.auth.onAuthStateChange((_event, session) => {
+    setUser(session?.user ?? null);
+  });
+
+  return () => subscription.unsubscribe();
+}, []);
 ```
 
-#### 4. Add Sync on Settings Change
+#### 3. Sync Logic
 
-**File**: `src/ts/core/SettingsModule.ts`
+Syncing is handled by the `syncService` which is called by Zustand middleware or specific action hooks.
+
+**File**: `src/ts/supabase/syncService.ts`
 
 ```typescript
-async saveSetting(key: string, value: any): Promise<void> {
-  // Save locally
-  this.settings[key] = value;
-  localStorage.setItem(`setting_${key}`, JSON.stringify(value));
-
-  // Sync to Supabase if authenticated
-  if (window.syncService && await window.authService.isAuthenticated()) {
-    await window.syncService.syncSettings(this.settings);
+// Auto-sync progress when it changes
+useEffect(() => {
+  if (user && progress) {
+    syncService.syncProgress(progress);
   }
-}
+}, [progress, user]);
 ```
 
 ---

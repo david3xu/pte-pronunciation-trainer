@@ -5,16 +5,16 @@
  * This data powers AI-driven personalized recommendations.
  */
 
-import React, { useState } from 'react';
-import { Card, Flex, Text, Button, Select, TextField } from '@radix-ui/themes';
 import {
-  CheckCircledIcon,
-  RocketIcon,
-  TargetIcon,
-  CalendarIcon,
-  LightningBoltIcon,
-  ClockIcon,
+    CalendarIcon,
+    CheckCircledIcon,
+    ClockIcon,
+    LightningBoltIcon,
+    RocketIcon,
+    TargetIcon,
 } from '@radix-ui/react-icons';
+import { Button, Card, Flex, Select, Text } from '@radix-ui/themes';
+import React, { useState } from 'react';
 import { saveLearnerProfile, type OnboardingFormData } from '../../services/profile/learnerProfileService';
 import type { LearningStyle } from '../../types/database';
 
@@ -130,7 +130,7 @@ const LearnerProfileModal: React.FC<LearnerProfileModalProps> = ({
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 animate-in p-4"
       style={{ backdropFilter: 'blur(4px)' }}
     >
-      <Card size="4" className="w-full max-w-2xl max-h-[95vh] overflow-y-auto">
+      <Card size="4" className="w-full max-w-2xl max-h-[95vh] overflow-y-auto pb-safe">
         <Flex direction="column" gap="4">
           {/* Progress bar */}
           <div
@@ -235,7 +235,7 @@ const LearnerProfileModal: React.FC<LearnerProfileModalProps> = ({
                   <Text size="2" weight="medium">
                     When do you plan to take the PTE exam?
                   </Text>
-                  <TextField.Root
+                  <input
                     type="date"
                     value={formData.target_date}
                     onChange={(e) => setFormData({ ...formData, target_date: e.target.value })}

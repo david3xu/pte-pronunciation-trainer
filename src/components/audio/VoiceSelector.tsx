@@ -5,10 +5,11 @@
  * Displays available voices grouped by accent/language.
  */
 
-import React, { useState, useEffect } from 'react';
-import { Card, Flex, Text, Select, Badge, Button, Switch } from '@radix-ui/themes';
 import { SpeakerLoudIcon, UpdateIcon } from '@radix-ui/react-icons';
+import { Badge, Button, Card, Flex, Select, Switch, Text } from '@radix-ui/themes';
+import React, { useEffect, useState } from 'react';
 import { useAppStore } from '../../ts/stores';
+
 
 interface VoiceSelectorProps {
   onVoiceChange?: (voiceId: string, languageCode: string) => void;

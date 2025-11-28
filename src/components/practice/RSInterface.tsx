@@ -11,21 +11,21 @@
  * Phase 5: UI Redesign
  */
 
-import React, { useState, useRef, useEffect } from 'react';
-import { Card, Flex, Text, Button, Badge, Progress, Separator } from '@radix-ui/themes';
 import {
-  PlayIcon,
-  ReloadIcon,
-  StopIcon,
-  ChevronRightIcon,
-  ChevronLeftIcon,
-  CheckCircledIcon,
-  CrossCircledIcon,
+    CheckCircledIcon,
+    ChevronLeftIcon,
+    ChevronRightIcon,
+    CrossCircledIcon,
+    PlayIcon,
+    ReloadIcon,
+    StopIcon,
 } from '@radix-ui/react-icons';
-import { ttsEngine } from '../../ts/audio/TTSEngine';
-import type { PracticeItem } from '../../types/dataset.types';
+import React, { useEffect, useRef, useState } from 'react';
 import type { SessionManager } from '../../services/session/sessionManager';
+import { ttsEngine } from '../../ts/audio/TTSEngine';
 import type { ItemType } from '../../types/database';
+import type { PracticeItem } from '../../types/dataset.types';
+import { Badge, Button, Card, Flex, Separator, Text } from '@radix-ui/themes';
 
 interface RSInterfaceProps {
   item: PracticeItem;
@@ -234,7 +234,7 @@ const RSInterface: React.FC<RSInterfaceProps> = ({
       {/* Header */}
       <Card>
         <Flex justify="between" align="center">
-          <Flex align="center" gap="2">
+          <Flex align="center" gap="2" wrap="wrap">
             <Text size="5" weight="bold">
               🎧 Repeat Sentence
             </Text>
@@ -252,7 +252,7 @@ const RSInterface: React.FC<RSInterfaceProps> = ({
           <Text size="3" weight="bold">
             🎧 Listen Carefully
           </Text>
-          <Text size="2" color="gray">
+          <Text size="2">
             Play the audio and listen to the sentence. You can replay it as many times as needed.
           </Text>
           <Flex gap="2">
@@ -275,7 +275,7 @@ const RSInterface: React.FC<RSInterfaceProps> = ({
               )}
             </Button>
             {isPlaying && (
-              <Badge color="blue" size="2">
+              <Badge size="2">
                 🔊 Listening...
               </Badge>
             )}
@@ -297,14 +297,14 @@ const RSInterface: React.FC<RSInterfaceProps> = ({
           <Text size="3" weight="bold">
             🎤 Record Your Response
           </Text>
-          <Text size="2" color="gray">
+          <Text size="2">
             Click "Start Recording" and repeat the sentence. You have up to 40 seconds.
           </Text>
 
           {!isRecording && !hasRecorded && (
             <Button
               size="3"
-              color="red"
+
               onClick={handleStartRecording}
               disabled={isPlaying}
             >
@@ -318,28 +318,28 @@ const RSInterface: React.FC<RSInterfaceProps> = ({
               <Flex align="center" gap="2">
                 <Button
                   size="3"
-                  color="gray"
+
                   onClick={handleStopRecording}
                 >
                   <StopIcon />
                   Stop Recording
                 </Button>
-                <Badge color="red" size="2">
+                <Badge size="2">
                   🔴 Recording...
                 </Badge>
               </Flex>
               <Flex direction="column" gap="1">
-                <Text size="2" color="gray">
+                <Text size="2">
                   Time: {recordingTime}s / 40s
                 </Text>
-                <Progress value={(recordingTime / 40) * 100} color="red" />
+                <div className="w-full bg-app-border rounded-full h-2" />
               </Flex>
             </Flex>
           )}
 
           {hasRecorded && !feedback && (
             <Flex direction="column" gap="2">
-              <Badge color="green" size="2">
+              <Badge size="2">
                 ✓ Recording complete! Processing...
               </Badge>
             </Flex>
@@ -360,13 +360,13 @@ const RSInterface: React.FC<RSInterfaceProps> = ({
               </Badge>
             </Flex>
 
-            <Separator size="4" />
+            <Separator />
 
             {/* Correct words */}
             {feedback.correct.length > 0 && (
               <Flex direction="column" gap="2">
                 <Flex align="center" gap="2">
-                  <CheckCircledIcon color="green" width="20" height="20" />
+                  <CheckCircledIcon width="20" height="20" />
                   <Text size="2" weight="bold">
                     Correct:
                   </Text>
@@ -381,7 +381,7 @@ const RSInterface: React.FC<RSInterfaceProps> = ({
             {feedback.missed.length > 0 && (
               <Flex direction="column" gap="2">
                 <Flex align="center" gap="2">
-                  <CrossCircledIcon color="red" width="20" height="20" />
+                  <CrossCircledIcon width="20" height="20" />
                   <Text size="2" weight="bold">
                     Missed/Incorrect:
                   </Text>
@@ -392,7 +392,7 @@ const RSInterface: React.FC<RSInterfaceProps> = ({
               </Flex>
             )}
 
-            <Separator size="4" />
+            <Separator />
 
             {/* Tips */}
             <Flex direction="column" gap="2">

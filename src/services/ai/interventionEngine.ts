@@ -8,7 +8,7 @@
  * Phase 4: Proactive AI
  */
 
-import { supabase } from '../../ts/supabase/supabaseClient';
+import { supabase } from '../supabase/supabaseClient';
 import type { TaskType } from '../../types/database';
 
 export type InterventionType =

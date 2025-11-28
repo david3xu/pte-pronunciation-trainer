@@ -4,10 +4,10 @@
  * Allows users to switch between vocabulary and practice modes (RS/ASQ/WFD).
  */
 
-import React from 'react';
-import { Card, Flex, Text, Button, Badge } from '@radix-ui/themes';
 import { BookmarkIcon, ChatBubbleIcon, Pencil1Icon } from '@radix-ui/react-icons';
-import { useAppStore } from '../../ts/stores';
+import { Badge, Button, Card, Flex, Text } from '@radix-ui/themes';
+import React from 'react';
+import { useAppStore } from '../../stores';
 
 const PracticeModeSelector: React.FC = () => {
   const { settings } = useAppStore();

@@ -16,8 +16,8 @@
 
 import type { SupabaseClient } from '@supabase/supabase-js';
 import localForage from 'localforage';
-import supabase from '../supabase/client';
-import type { Database, StudySessionInsert, SessionItemInsert, TaskType, PracticeMode, ItemType, DatasetType } from '../../types/database';
+import type { Database, DatasetType, ItemType, PracticeMode, SessionItemInsert, StudySessionInsert, TaskType } from '../../types/database';
+import { supabase } from '../supabase/supabaseClient';
 
 // ============================================================================
 // Types

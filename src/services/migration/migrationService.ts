@@ -13,8 +13,8 @@
  * 6. Clear old localStorage (with user consent)
  */
 
-import { supabaseClient } from '../supabase/client';
-import type { User } from '../../ts/stores/types';
+import type { User } from '../../stores/types';
+import { supabase } from '../supabase/supabaseClient';
 
 // ============================================
 // Types
@@ -304,7 +304,7 @@ export async function performMigration(
     onProgress?.({ phase: 'inserting', progress: 60, message: 'Uploading to database...' });
 
     // Insert sessions
-    const { error: sessionsError } = await supabaseClient.from('study_sessions').insert(sessions);
+    const { error: sessionsError } = await supabase.from('study_sessions').insert(sessions);
 
     if (sessionsError) {
       console.error('[Migration] Error inserting sessions:', sessionsError);
@@ -313,7 +313,7 @@ export async function performMigration(
 
     // Insert items
     if (items.length > 0) {
-      const { error: itemsError } = await supabaseClient.from('session_items').insert(items);
+      const { error: itemsError } = await supabase.from('session_items').insert(items);
 
       if (itemsError) {
         console.error('[Migration] Error inserting items:', itemsError);
@@ -325,7 +325,7 @@ export async function performMigration(
     // Phase 5: Verifying
     onProgress?.({ phase: 'verifying', progress: 80, message: 'Verifying migration...' });
 
-    const { error: countError } = await supabaseClient
+    const { error: countError } = await supabase
       .from('study_sessions')
       .select('*', { count: 'exact', head: true })
       .eq('user_id', user.id);

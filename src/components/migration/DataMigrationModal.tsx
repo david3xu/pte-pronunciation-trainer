@@ -22,7 +22,7 @@ import {
     type MigrationProgress,
     type MigrationResult,
 } from '../../services/migration/migrationService';
-import { useAppStore } from '../../ts/stores';
+import { useAppStore } from '../../stores';
 
 interface DataMigrationModalProps {
   isOpen: boolean;

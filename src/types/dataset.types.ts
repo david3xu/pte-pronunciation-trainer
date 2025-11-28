@@ -110,6 +110,11 @@ export interface VocabularyTerm {
   pos?: string;
 }
 
+/**
+ * Alias for backward compatibility
+ */
+export type VocabularyItem = VocabularyTerm;
+
 /* ============================================
    PRACTICE TYPES
    ============================================ */

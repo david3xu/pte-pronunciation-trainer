@@ -5,10 +5,7 @@
  * This will gradually replace src/js/shared/Config.js during the TypeScript migration.
  */
 
-import type {
-    AppConfig as AppConfigType,
-    ConfigPath
-} from '../../types';
+import { AppConfig as AppConfigType, ConfigPath } from '../types';
 
 /**
  * Application Configuration Class

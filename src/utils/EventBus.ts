@@ -6,7 +6,7 @@
  * Uses EventPayloads type for type-safe event handling
  */
 
-import type { EventPayloads, EventName } from '../../types';
+import type { EventName, EventPayloads } from '../types';
 
 /**
  * Event callback function type

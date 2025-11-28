@@ -8,7 +8,7 @@
 import { SpeakerLoudIcon, UpdateIcon } from '@radix-ui/react-icons';
 import { Badge, Button, Card, Flex, Select, Switch, Text } from '@radix-ui/themes';
 import React, { useEffect, useState } from 'react';
-import { useAppStore } from '../../ts/stores';
+import { useAppStore } from '../../stores';
 
 
 interface VoiceSelectorProps {

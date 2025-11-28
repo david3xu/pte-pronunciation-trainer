@@ -6,19 +6,19 @@
  */
 
 import {
-    LoopIcon,
-    PauseIcon,
-    PlayIcon,
-    SpeakerLoudIcon,
-    TrackNextIcon,
-    TrackPreviousIcon,
+  LoopIcon,
+  PauseIcon,
+  PlayIcon,
+  SpeakerLoudIcon,
+  TrackNextIcon,
+  TrackPreviousIcon,
 } from '@radix-ui/react-icons';
 import { Button, Card, Flex, Slider, Switch, Text } from '@radix-ui/themes';
 import React, { useEffect, useRef } from 'react';
-import { stripMarkdown } from '../../lib/utils/textUtils';
-import { ttsEngine } from '../../ts/audio/TTSEngine';
-import { appConfig } from '../../ts/shared/Config';
-import { useAppStore } from '../../ts/stores';
+import { appConfig } from '../../config/AppConfig';
+import { ttsEngine } from '../../services/audio/TTSEngine';
+import { useAppStore } from '../../stores';
+import { cleanText } from '../../utils/textUtils';
 
 // Vocabulary books in order for auto-switch feature
 const VOCABULARY_BOOKS = [
@@ -125,12 +125,13 @@ const AudioControls: React.FC = () => {
           : vocabulary.currentDataset;
 
         // Strip markdown syntax (**, __, etc.) before speaking
-        const cleanText = stripMarkdown(textToSpeak);
-        console.log('[AudioControls] Auto-playing:', cleanText, `(${audio.currentIndex + 1}/${dataset?.length || 0})`);
+        const cleanedText = cleanText(textToSpeak);
+        console.log('[AudioControls] Auto-playing:', cleanedText, `(${audio.currentIndex + 1}/${dataset?.length || 0})`);
 
         try {
-          // Use the playback speed from audio store
-          await ttsEngine.pronounceText(cleanText, 'en-US', audio.playbackSpeed);
+          if (appConfig.get('tts.autoSpeak')) {
+            await ttsEngine.speak(cleanedText);
+          }
 
           // After speaking, move to next if auto-play is still active
           if (audio.isAutoPlaying && !audio.isPaused && autoPlayRef.current) {

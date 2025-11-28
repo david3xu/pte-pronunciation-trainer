@@ -5,7 +5,7 @@
  * Phase 2: Ratings saved to ai_conversations table
  */
 
-import { supabase } from '../../ts/supabase/supabaseClient';
+import { supabase } from '../supabase/supabaseClient';
 
 export interface RatingData {
   messageId: string;

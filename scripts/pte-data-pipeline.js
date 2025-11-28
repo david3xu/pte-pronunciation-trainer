@@ -3,37 +3,175 @@
 /**
  * PTE Data Pipeline - Processes PTE vocabulary data
  * Converts PTE vocabulary markdown files to structured JSON datasets
+ *
+ * NOTE: This script has been updated to be self-contained for Vercel builds,
+ * removing dependencies on external TS files or deleted legacy code.
  */
 
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import appConfigModule from '../archive/vanilla-js-legacy/shared/Config.js';
-import PTETermsExtractor from '../archive/vanilla-js-legacy/data/extractors/PTETermsExtractor.js';
-import SingleIPATermsExtractor from '../archive/vanilla-js-legacy/data/extractors/SingleIPATermsExtractor.js';
-import PTESentenceExtractor from '../archive/vanilla-js-legacy/data/extractors/PTESentenceExtractor.js';
-import PTEQuestionExtractor from '../archive/vanilla-js-legacy/data/extractors/PTEQuestionExtractor.js';
-import DIAnswerExtractor from '../archive/vanilla-js-legacy/data/extractors/DIAnswerExtractor.js';
 
 // ES module equivalents of __filename and __dirname
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-class PTEDataPipeline {
-  constructor(appConfigModule, config = {}) {
-    // Load centralized configuration from ES6 module
-    const appConfig = appConfigModule.default || appConfigModule.appConfig || appConfigModule;
-    const pipelineConfig = appConfig.get('pipeline');
+// ==========================================
+// INLINED CONFIGURATION
+// ==========================================
+const PIPELINE_CONFIG = {
+  inputDir: 'data/source/pte',
+  outputDir: 'data',
+  reportsDir: 'data/reports',
+  dataSources: {
+    primary: 'pte-fib-listening-with-ipa.md',
+    fallback: 'fib-listening-vocabulary.md',
+    subdirectory: 'vocabs'
+  },
+  outputFiles: {
+    dataset: 'pte-fib-listening-dataset.json',
+    report: 'pte-processing-report.json'
+  },
+  registry: [
+    {
+      id: 'pte-fib-listening',
+      input: 'pte-fib-listening-with-ipa.md',
+      fallback: 'fib-listening-vocabulary.md',
+      output: 'pte-fib-listening-dataset.json',
+      category: 'pte-fib-listening',
+      description: 'PTE FIB Listening vocabulary with IPA',
+      sourceType: 'pte-fib-listening-with-ipa',
+      dataType: 'vocabulary',
+      extractorType: 'PTETermsExtractor',
+      inputSubdir: 'vocabs',
+      isDefault: true
+    }
+    // Add other registry entries here if needed for the build
+  ]
+};
 
-    // Use provided config or fall back to centralized config
+// ==========================================
+// INLINED EXTRACTORS
+// ==========================================
+
+/**
+ * PTETermsExtractor - Parses PTE vocabulary markdown files
+ */
+class PTETermsExtractor {
+  static async extract(filePath, fsModule, options = {}) {
+    if (!fsModule.existsSync(filePath)) {
+      throw new Error(`PTE terms file not found: ${filePath}`);
+    }
+
+    const content = fsModule.readFileSync(filePath, 'utf-8');
+    const lines = content.split('\n');
+    const terms = [];
+
+    for (const line of lines) {
+      const trimmedLine = line.trim();
+
+      // Skip empty lines, headers, and metadata
+      if (!trimmedLine ||
+        trimmedLine.startsWith('#') ||
+        trimmedLine.startsWith('**') ||
+        trimmedLine.includes('Mastered:') ||
+        trimmedLine.includes('默认排序') ||
+        trimmedLine.includes('全部') ||
+        trimmedLine.includes('This vocabulary booklet') ||
+        trimmedLine.includes('Essential vocabulary') ||
+        trimmedLine.includes('Co-words')) {
+        continue;
+      }
+
+      // Extract term with IPA pronunciation data
+      const termData = this.parsePTETermLine(trimmedLine, options);
+      if (termData) {
+        terms.push(termData);
+      }
+    }
+
+    return terms;
+  }
+
+  static parsePTETermLine(line, options = {}) {
+    // Match the format: number. term | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
+    const match = line.match(/^\d+\.\s*(.+?)\s*\|\s*(.+?)\s*\|\s*(.+)$/);
+
+    if (!match) {
+      return null;
+    }
+
+    let [, termPart, britishData, americanData] = match;
+
+    // Extract word type (n., v., adj., adv., num., abbr., etc.) if present
+    let wordType = null;
+    let term = termPart.trim();
+
+    // Match word type patterns
+    const wordTypeMatch = term.match(/^(n\.|v\.|adj\.|adv\.|num\.|abbr\.|prep\.|conj\.|pron\.|interj\.)\s+(.+)$/i);
+    if (wordTypeMatch) {
+      wordType = wordTypeMatch[1].toLowerCase();
+      term = wordTypeMatch[2].trim();
+    }
+
+    // Parse British pronunciation data
+    const britishMatch = britishData.match(/^\/(.+?)\/\s*—\s*sounds\s+like\s+\*\*(.+?)\*\*$/);
+    const americanMatch = americanData.match(/^\/(.+?)\/\s*—\s+sounds\s+like\s+\*\*(.+?)\*\*$/);
+
+    if (!britishMatch || !americanMatch) {
+      return null;
+    }
+
+    const [, britishIPA, britishPhonetic] = britishMatch;
+    const [, americanIPA, americanPhonetic] = americanMatch;
+
+    // Create initial result object with extracted data
+    const extractedData = {
+      english: term,
+      pronunciation: {
+        british: {
+          ipa: britishIPA.trim(),
+          phonetic: britishPhonetic.trim()
+        },
+        american: {
+          ipa: americanIPA.trim(),
+          phonetic: americanPhonetic.trim()
+        }
+      },
+      difficulty: this.inferDifficulty(term),
+      category: options.category || 'pte-vocabulary',
+      source: options.source || 'pte-vocabulary-with-ipa'
+    };
+
+    if (wordType) {
+      extractedData.wordType = wordType;
+    }
+
+    return extractedData;
+  }
+
+  static inferDifficulty(word) {
+    if (!word) return 'normal';
+    if (word.length <= 5) return 'easy';
+    if (word.length <= 9) return 'normal';
+    return 'hard';
+  }
+}
+
+// ==========================================
+// PIPELINE CLASS
+// ==========================================
+
+class PTEDataPipeline {
+  constructor(config = {}) {
+    // Use provided config or fall back to inlined config
     this.config = {
-      inputDir: config.inputDir || path.join(__dirname, '..', pipelineConfig.inputDir),
-      outputDir: config.outputDir || path.join(__dirname, '..', pipelineConfig.outputDir),
-      reportsDir: config.reportsDir || path.join(__dirname, '..', pipelineConfig.reportsDir),
-      dataSources: config.dataSources || pipelineConfig.dataSources,
-      outputFiles: config.outputFiles || pipelineConfig.outputFiles,
-      extraSources: config.extraSources || pipelineConfig.extraSources || [],
-      registry: config.registry || pipelineConfig.registry || []
+      inputDir: config.inputDir || path.join(__dirname, '..', PIPELINE_CONFIG.inputDir),
+      outputDir: config.outputDir || path.join(__dirname, '..', PIPELINE_CONFIG.outputDir),
+      reportsDir: config.reportsDir || path.join(__dirname, '..', PIPELINE_CONFIG.reportsDir),
+      dataSources: config.dataSources || PIPELINE_CONFIG.dataSources,
+      outputFiles: config.outputFiles || PIPELINE_CONFIG.outputFiles,
+      registry: config.registry || PIPELINE_CONFIG.registry || []
     };
     this.results = new Map();
     this.stats = {
@@ -73,9 +211,14 @@ class PTEDataPipeline {
   async extractPTEVocabulary() {
     console.log('📝 STAGE 1: Extracting PTE Vocabulary Data');
 
-    // If a centralized registry is present, just record primary extraction here.
-    // The actual per-dataset extraction happens in generatePTEDatasets() using the registry.
     const fibIpaFilePath = path.join(this.config.inputDir, this.config.dataSources.subdirectory, this.config.dataSources.primary);
+
+    // Check if file exists before trying to extract
+    if (!fs.existsSync(fibIpaFilePath)) {
+      console.warn(`   ⚠️ Primary file not found: ${fibIpaFilePath}`);
+      return;
+    }
+
     try {
       const fibIpaVocabulary = await PTETermsExtractor.extract(fibIpaFilePath, fs);
       this.results.set('fibIpaVocabulary', fibIpaVocabulary);
@@ -84,110 +227,9 @@ class PTEDataPipeline {
     } catch (error) {
       console.error(`   ❌ Error processing ${fibIpaFilePath}: ${error.message}`);
       this.stats.totalErrors++;
-
-      // Only use fallback if primary fails
-      console.log(`   🔄 Trying fallback file...`);
-      const fibFilePath = path.join(this.config.inputDir, this.config.dataSources.subdirectory, this.config.dataSources.fallback);
-      try {
-        const fibVocabulary = await this.extractPTETerms(fibFilePath);
-        this.results.set('fibVocabulary', fibVocabulary);
-        this.stats.totalProcessed += fibVocabulary.length;
-        console.log(`   ✅ Processed ${fibVocabulary.length} FIB listening terms from fallback ${fibFilePath}`);
-      } catch (fallbackError) {
-        console.error(`   ❌ Error processing fallback ${fibFilePath}: ${fallbackError.message}`);
-        this.stats.totalErrors++;
-      }
     }
 
     console.log(`\n📊 Stage 1 Summary: ${this.stats.totalProcessed} terms processed, ${this.stats.totalErrors} errors\n`);
-  }
-
-  /**
-   * Extract PTE terms from markdown file
-   */
-  async extractPTETerms(filePath) {
-    if (!fs.existsSync(filePath)) {
-      throw new Error(`PTE vocabulary file not found: ${filePath}`);
-    }
-
-    const content = fs.readFileSync(filePath, 'utf-8');
-    const lines = content.split('\n');
-    const terms = [];
-
-    for (const line of lines) {
-      const trimmedLine = line.trim();
-
-      // Skip empty lines, headers, and metadata
-      if (!trimmedLine ||
-        trimmedLine.startsWith('#') ||
-        trimmedLine.startsWith('**') ||
-        trimmedLine.includes('Mastered:') ||
-        trimmedLine.includes('默认排序') ||
-        trimmedLine.includes('全部') ||
-        trimmedLine.includes('This vocabulary booklet') ||
-        trimmedLine.includes('Essential vocabulary')) {
-        continue;
-      }
-
-      // Extract word from numbered list format: "1. word" or just "word"
-      let word = trimmedLine;
-      const match = trimmedLine.match(/^\d+\.\s*(.+)$/);
-      if (match) {
-        word = match[1].trim();
-      }
-
-      // Remove zero-width characters and BOMs
-      word = word.replace(/[\u200B-\u200D\uFEFF]/g, '');
-
-      // Strip trailing mastery markers like "Not mastered" or "Mastered"
-      // Allow optional space or no space before the marker
-      word = word.replace(/\s*(Not\s*mastered|Mastered)$/i, '');
-
-      // Skip if not a valid word (allow letters, spaces, hyphens, and apostrophes)
-      if (!word || word.length < 2 || !/^[a-zA-Z\s'-]+$/.test(word)) {
-        continue;
-      }
-
-      // Create term object
-      const term = {
-        english: word,
-        difficulty: this.inferDifficulty(word),
-        category: 'pte-fib-listening',
-        source: 'pte-fib-listening-vocabulary'
-      };
-
-      terms.push(term);
-    }
-
-    return terms;
-  }
-
-  /**
-   * Infer difficulty level based on word characteristics
-   */
-  inferDifficulty(word) {
-    const length = word.length;
-    const syllables = this.countSyllables(word);
-
-    if (length <= 4 && syllables <= 2) {
-      return 'easy';
-    } else if (length <= 8 && syllables <= 3) {
-      return 'normal';
-    } else {
-      return 'hard';
-    }
-  }
-
-  /**
-   * Count syllables in a word (approximate)
-   */
-  countSyllables(word) {
-    word = word.toLowerCase();
-    if (word.length <= 3) return 1;
-    word = word.replace(/(?:[^laeiouy]es|ed|[^laeiouy]e)$/, '');
-    word = word.replace(/^y/, '');
-    const matches = word.match(/[aeiouy]{1,2}/g);
-    return matches ? matches.length : 1;
   }
 
   /**
@@ -199,191 +241,47 @@ class PTEDataPipeline {
     const registry = (this.config.registry || []).filter(Boolean);
 
     if (registry.length > 0) {
-      // Centralized build path: iterate over registry entries
       for (const entry of registry) {
         try {
-          // Determine which extractor to use
-          const extractorType = entry.extractorType || entry.extractor || 'PTETermsExtractor';
-          const dataType = entry.dataType || entry.type || 'vocabulary';
+          // Only support PTETermsExtractor for now in this simplified build script
+          if (entry.extractorType !== 'PTETermsExtractor') {
+            console.log(`   ℹ️ Skipping ${entry.id} (extractor ${entry.extractorType} not supported in build script)`);
+            continue;
+          }
 
-          // Build input path with optional subdirectory
           const inputSubdir = entry.inputSubdir || this.config.dataSources.subdirectory;
           const inputPath = path.join(this.config.inputDir, inputSubdir, entry.input);
 
-          console.log(`   🔄 Processing ${entry.id} (${dataType}) using ${extractorType}...`);
+          console.log(`   🔄 Processing ${entry.id} using ${entry.extractorType}...`);
 
-          let dataset;
           let terms = [];
-          let usedFallback = false;
-
-          // Dynamic extractor loading based on type
-          if (extractorType === 'PTESentenceExtractor') {
-            // Handle sentence-based datasets (RS, WFD)
-            dataset = await PTESentenceExtractor.extract(inputPath, fs, path, { type: dataType });
-
-          } else if (extractorType === 'PTEQuestionExtractor') {
-            // Handle question-based datasets (ASQ)
-            dataset = await PTEQuestionExtractor.extract(inputPath, fs, path);
-
-          } else if (extractorType === 'SingleIPATermsExtractor') {
-            // Handle vocabulary with single IPA format
-            try {
-              terms = await SingleIPATermsExtractor.extract(inputPath, fs, {
-                category: entry.category,
-                source: entry.sourceType
-              });
-            } catch (e) {
-              // On parser error, try fallback simple list if configured
-              if (entry.fallback) {
-                const fallbackPath = path.join(this.config.inputDir, inputSubdir, entry.fallback);
-                terms = await this.extractPTETerms(fallbackPath);
-                usedFallback = true;
-              } else {
-                throw e;
-              }
-            }
-
-            // If IPA extractor returned zero, attempt fallback simple list
-            if ((!terms || terms.length === 0) && entry.fallback) {
-              const fallbackPath = path.join(this.config.inputDir, inputSubdir, entry.fallback);
-              terms = await this.extractPTETerms(fallbackPath);
-              usedFallback = true;
-            }
-
-            const unique = this.removeDuplicates(terms);
-            dataset = {
-              metadata: {
-                generated: new Date().toISOString(),
-                totalTerms: unique.length,
-                source: entry.sourceType,
-                description: entry.description,
-                version: '1.0',
-                categories: [entry.category],
-                hasIPA: !usedFallback
-              },
-              vocabulary: unique
-            };
-
-          } else if (extractorType === 'DIAnswerExtractor') {
-            // Handle DI answers for shadowing practice
-            const content = fs.readFileSync(inputPath, 'utf8');
-            const extractor = new DIAnswerExtractor();
-            const answers = extractor.extract(content);
-
-            dataset = {
-              metadata: {
-                generated: new Date().toISOString(),
-                totalAnswers: answers.length,
-                source: entry.sourceType,
-                description: entry.description,
-                version: '1.0',
-                category: entry.category,
-                dataType: 'shadowing'
-              },
-              answers: answers
-            };
-
-          } else {
-            // Handle vocabulary-based datasets (default PTETermsExtractor)
-            try {
-              terms = await PTETermsExtractor.extract(inputPath, fs, {
-                category: entry.category,
-                source: entry.sourceType
-              });
-            } catch (e) {
-              // On parser error, try fallback simple list if configured
-              if (entry.fallback) {
-                const fallbackPath = path.join(this.config.inputDir, inputSubdir, entry.fallback);
-                terms = await this.extractPTETerms(fallbackPath);
-                usedFallback = true;
-              } else {
-                throw e;
-              }
-            }
-
-            // If IPA extractor returned zero, attempt fallback simple list
-            if ((!terms || terms.length === 0) && entry.fallback) {
-              const fallbackPath = path.join(this.config.inputDir, inputSubdir, entry.fallback);
-              terms = await this.extractPTETerms(fallbackPath);
-              usedFallback = true;
-            }
-
-            const unique = this.removeDuplicates(terms);
-            dataset = {
-              metadata: {
-                generated: new Date().toISOString(),
-                totalTerms: unique.length,
-                source: entry.sourceType,
-                description: entry.description,
-                version: '1.0',
-                categories: [entry.category],
-                hasIPA: !usedFallback
-              },
-              vocabulary: unique
-            };
+          try {
+            terms = await PTETermsExtractor.extract(inputPath, fs, {
+              category: entry.category,
+              source: entry.sourceType
+            });
+          } catch (e) {
+            console.warn(`   ⚠️  Failed to extract ${entry.id}: ${e.message}`);
+            continue;
           }
 
-          // Save the dataset
-          this.saveDataset(entry.output, dataset);
-
-          // Get count based on dataset structure
-          const count = dataset.items ? dataset.items.length :
-                       dataset.vocabulary ? dataset.vocabulary.length :
-                       dataset.answers ? dataset.answers.length : 0;
-
-          console.log(`   ✅ Generated dataset: ${entry.id} (${count} items)`);
-
-        } catch (e) {
-          console.warn(`   ⚠️  Skipped dataset ${entry.id}: ${e.message}`);
-        }
-      }
-    } else {
-      // Backward-compatible path (legacy build of FIB + extras)
-      const fibIpaTerms = this.results.get('fibIpaVocabulary') || [];
-      const fibTerms = this.results.get('fibVocabulary') || [];
-      let finalTerms = fibIpaTerms.length > 0 ? fibIpaTerms : fibTerms;
-      const sourceType = fibIpaTerms.length > 0 ? 'pte-fib-listening-with-ipa' : 'pte-fib-listening-vocabulary';
-      const uniqueTerms = this.removeDuplicates(finalTerms);
-      console.log(`   🔄 Removed ${finalTerms.length - uniqueTerms.length} duplicate terms`);
-      finalTerms = uniqueTerms;
-      if (finalTerms.length > 0) {
-        const dataset = {
-          metadata: {
-            generated: new Date().toISOString(),
-            totalTerms: finalTerms.length,
-            source: sourceType,
-            description: 'PTE FIB Listening vocabulary for pronunciation practice with IPA guides',
-            version: '2.0',
-            categories: ['pte-fib-listening'],
-            hasIPA: fibIpaTerms.length > 0
-          },
-          vocabulary: finalTerms
-        };
-        this.saveDataset(this.config.outputFiles.dataset, dataset);
-      }
-
-      const extras = (this.config.extraSources || []).filter(Boolean);
-      for (const extra of extras) {
-        try {
-          const extraPath = path.join(this.config.inputDir, this.config.dataSources.subdirectory, extra.input);
-          const extraTerms = await PTETermsExtractor.extract(extraPath, fs);
-          const unique = this.removeDuplicates(extraTerms);
+          const unique = this.removeDuplicates(terms);
           const dataset = {
             metadata: {
               generated: new Date().toISOString(),
               totalTerms: unique.length,
-              source: extra.sourceType,
-              description: extra.description,
+              source: entry.sourceType,
+              description: entry.description,
               version: '1.0',
-              categories: [extra.category],
+              categories: [entry.category],
               hasIPA: true
             },
             vocabulary: unique
           };
-          this.saveDataset(extra.output, dataset);
-          console.log(`   ✅ Generated extra dataset: ${extra.id} (${unique.length} terms)`);
+
+          this.saveDataset(entry.output, dataset);
         } catch (e) {
-          console.warn(`   ⚠️  Skipped extra dataset ${extra.id}: ${e.message}`);
+          console.warn(`   ⚠️  Skipped dataset ${entry.id}: ${e.message}`);
         }
       }
     }
@@ -405,10 +303,7 @@ class PTEDataPipeline {
 
     fs.writeFileSync(outputPath, JSON.stringify(dataset, null, 2));
 
-    // Get count based on dataset structure
-    const count = dataset.items ? dataset.items.length :
-                 dataset.vocabulary ? dataset.vocabulary.length : 0;
-
+    const count = dataset.vocabulary ? dataset.vocabulary.length : 0;
     console.log(`   ✅ Saved ${count} items to ${filename}`);
   }
 
@@ -417,50 +312,13 @@ class PTEDataPipeline {
    */
   validateData() {
     console.log('🔍 STAGE 3: Validating Data');
-
+    // Simplified validation
     const fibIpaTerms = this.results.get('fibIpaVocabulary') || [];
-    const fibTerms = this.results.get('fibVocabulary') || [];
-    const allTerms = fibIpaTerms.length > 0 ? fibIpaTerms : fibTerms;
-
-    // Basic validation
-    const emptyTerms = allTerms.filter(term => !term.english || !term.english.trim());
-    const duplicateTerms = this.findDuplicates(allTerms);
-
-    console.log(`   ✓ FIB terms: ${allTerms.length}`);
-    console.log(`   ✓ Empty terms: ${emptyTerms.length}`);
-    console.log(`   ✓ Duplicate terms: ${duplicateTerms.length}`);
-    console.log(`   ✓ Has IPA pronunciation: ${fibIpaTerms.length > 0 ? 'Yes' : 'No'}`);
-
-    if (emptyTerms.length > 0) {
-      console.warn(`   ⚠️  Found ${emptyTerms.length} empty terms`);
-    }
-
-    if (duplicateTerms.length > 0) {
-      console.warn(`   ⚠️  Found ${duplicateTerms.length} duplicate terms`);
-    }
+    console.log(`   ✓ FIB terms: ${fibIpaTerms.length}`);
   }
 
   /**
-   * Find duplicate terms
-   */
-  findDuplicates(terms) {
-    const seen = new Set();
-    const duplicates = [];
-
-    for (const term of terms) {
-      const key = term.english.toLowerCase();
-      if (seen.has(key)) {
-        duplicates.push(term.english);
-      } else {
-        seen.add(key);
-      }
-    }
-
-    return duplicates;
-  }
-
-  /**
-   * Remove duplicate terms - keep only unique terms
+   * Remove duplicate terms
    */
   removeDuplicates(terms) {
     const seen = new Set();
@@ -481,7 +339,6 @@ class PTEDataPipeline {
    * Generate processing report
    */
   generateReport() {
-    // Create reports directory if it doesn't exist
     if (!fs.existsSync(this.config.reportsDir)) {
       fs.mkdirSync(this.config.reportsDir, { recursive: true });
     }
@@ -489,14 +346,6 @@ class PTEDataPipeline {
     const report = {
       timestamp: new Date().toISOString(),
       stats: this.stats,
-      duration: new Date() - this.stats.startTime,
-      datasets: [
-        {
-          name: 'pte-fib-listening',
-          count: (this.results.get('fibIpaVocabulary') || this.results.get('fibVocabulary') || []).length,
-          hasIPA: (this.results.get('fibIpaVocabulary') || []).length > 0
-        }
-      ],
       status: this.stats.totalErrors === 0 ? 'success' : 'partial_success'
     };
 
@@ -506,9 +355,9 @@ class PTEDataPipeline {
   }
 }
 
-// Run pipeline if called directly (ES module equivalent of require.main === module)
+// Run pipeline if called directly
 if (import.meta.url === `file://${process.argv[1]}`) {
-  const pipeline = new PTEDataPipeline(appConfigModule);
+  const pipeline = new PTEDataPipeline();
   pipeline.run().catch(error => {
     console.error('❌ PTE Data Pipeline failed:', error);
     process.exit(1);

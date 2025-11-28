@@ -8,8 +8,8 @@
  * Phase 3: Weak Area Detection
  */
 
-import { supabase } from '../../ts/supabase/supabaseClient';
 import type { TaskType } from '../../types/database';
+import { supabase } from '../supabase/supabaseClient';
 
 export interface WeakArea {
   id?: string;

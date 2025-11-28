@@ -14,9 +14,9 @@
  * - 1: Structure violations found
  */
 
+import { execSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
-import { execSync } from 'child_process';
 
 // ANSI colors
 const colors = {
@@ -43,18 +43,13 @@ const EXPECTED_STRUCTURE = {
   'src/': {
     required: true,
     children: {
-      'ts/': {
-        required: true,  // React app uses TypeScript
-        children: {
-          'stores/': { required: false },
-          'shared/': { required: false },
-          'audio/': { required: false },
-          'data/': { required: false },
-          'utils/': { required: false }
-        }
-      },
+      'stores/': { required: true },
+      'config/': { required: true },
+      'utils/': { required: true },
+      'services/': { required: true },
+      'types/': { required: true },
       'components/': {
-        required: true,  // React components
+        required: true,
         children: {
           'ai/': { required: false },
           'audio/': { required: false },
@@ -63,8 +58,6 @@ const EXPECTED_STRUCTURE = {
           'shared/': { required: false }
         }
       },
-      'services/': { required: false },  // API client wrappers
-      'types/': { required: false },     // TypeScript types
       'css/': {
         required: true,
         files: [
@@ -74,7 +67,9 @@ const EXPECTED_STRUCTURE = {
           'style.css',
           'auth.css',
           'analytics.css',
-          'responsive.css'
+          'responsive.css',
+          'shadowing.css',
+          'tailwind.css'
         ]
       }
     }
@@ -82,7 +77,7 @@ const EXPECTED_STRUCTURE = {
   'docs/': {
     required: true,
     files: [
-      'README.md'  // Only README.md required at root, rest in subdirs
+      'README.md'
     ],
     children: {
       'setup/': { required: false },
@@ -97,10 +92,9 @@ const EXPECTED_STRUCTURE = {
     files: [
       'pte-data-pipeline.js',
       'validate.js',
-      'build.js'
+      'validate-structure.js'
     ]
   },
-  'archive/': { required: false },  // Legacy code
   'tests/': { required: false },
   'dist/': { required: false }
 };
@@ -276,36 +270,36 @@ class StructureValidator {
   validateJSStructure() {
     console.log(`\n${colors.cyan}[5/5] Validating TypeScript structure...${colors.reset}`);
 
-    const tsDir = 'src/ts';
-    const requiredModules = EXPECTED_STRUCTURE['src/'].children['ts/'].children;
+    const srcDir = 'src';
+    const requiredDirs = ['stores', 'config', 'utils', 'services', 'types'];
 
-    if (!fs.existsSync(tsDir)) {
-      this.addError(`TypeScript directory missing: ${tsDir}`);
+    if (!fs.existsSync(srcDir)) {
+      this.addError(`Source directory missing: ${srcDir}`);
       return;
     }
 
     // Check required module directories
-    for (const [module, config] of Object.entries(requiredModules)) {
-      const modulePath = path.join(tsDir, module);
-      if (config.required && !fs.existsSync(modulePath)) {
-        this.addError(`Missing required TS module directory: ${modulePath}`);
-      } else if (fs.existsSync(modulePath)) {
-        this.addPassed(`Module directory: ${module}`);
+    requiredDirs.forEach(dir => {
+      const dirPath = path.join(srcDir, dir);
+      if (!fs.existsSync(dirPath)) {
+        this.addError(`Missing required TS module directory: ${dirPath}`);
+      } else {
+        this.addPassed(`Module directory: ${dir}`);
 
         // Count files in each module
-        const files = fs.readdirSync(modulePath).filter(f => f.endsWith('.ts') || f.endsWith('.tsx'));
+        const files = fs.readdirSync(dirPath).filter(f => f.endsWith('.ts') || f.endsWith('.tsx'));
         if (files.length === 0) {
-          this.addWarning(`Empty module directory: ${modulePath}`);
+          this.addWarning(`Empty module directory: ${dirPath}`);
         }
       }
-    }
+    });
 
-    // Check for Config.ts (critical file)
-    const configPath = path.join(tsDir, 'shared/Config.ts');
+    // Check for AppConfig.ts (critical file)
+    const configPath = path.join(srcDir, 'config/AppConfig.ts');
     if (!fs.existsSync(configPath)) {
-      this.addError('CRITICAL: Config.ts not found at src/ts/shared/Config.ts');
+      this.addError('CRITICAL: AppConfig.ts not found at src/config/AppConfig.ts');
     } else {
-      this.addPassed('Config.ts found (critical file)');
+      this.addPassed('AppConfig.ts found (critical file)');
     }
   }
 

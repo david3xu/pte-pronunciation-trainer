@@ -22,17 +22,17 @@
  */
 
 import type {
-  Dataset,
-  VocabularyDataset,
-  PracticeDataset,
-  VocabularyTerm,
-  PracticeItem,
-  DatasetType,
-  Difficulty,
-  VocabularyCategory,
-  PracticeCategory,
-  DatasetRegistryEntry
-} from '../../types';
+    Dataset,
+    DatasetRegistryEntry,
+    DatasetType,
+    Difficulty,
+    PracticeCategory,
+    PracticeDataset,
+    PracticeItem,
+    VocabularyCategory,
+    VocabularyDataset,
+    VocabularyTerm
+} from '../types';
 
 /**
  * Dataset registry type (string path or object entry)
@@ -386,19 +386,19 @@ export class DatasetManager {
     let filtered = items;
 
     if (filters.difficulty) {
-      filtered = filtered.filter(item =>
+      filtered = filtered.filter((item: VocabularyTerm | PracticeItem) =>
         this._getItemField(item, 'difficulty', meta.type) === filters.difficulty
       );
     }
 
     if (filters.category) {
-      filtered = filtered.filter(item =>
+      filtered = filtered.filter((item: VocabularyTerm | PracticeItem) =>
         this._getItemField(item, 'category', meta.type) === filters.category
       );
     }
 
     if (filters.tags && filters.tags.length > 0) {
-      filtered = filtered.filter(item => {
+      filtered = filtered.filter((item: VocabularyTerm | PracticeItem) => {
         const itemTags = this._getItemField(item, 'tags', meta.type) || [];
         return filters.tags!.some(tag => itemTags.includes(tag));
       });
@@ -449,11 +449,11 @@ export class DatasetManager {
     // Count by category
     const byCategory: Record<string, number> = {};
 
-    items.forEach(item => {
+    items.forEach((item: VocabularyTerm | PracticeItem) => {
       const difficulty = this._getItemField(item, 'difficulty', meta.type) as Difficulty;
       const category = this._getItemField(item, 'category', meta.type) as string;
 
-      if (byDifficulty[difficulty] !== undefined) {
+      if (difficulty && difficulty in byDifficulty) {
         byDifficulty[difficulty]++;
       }
 

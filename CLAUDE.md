@@ -70,53 +70,47 @@ src/
 │       ├── OnboardingModal.tsx       → First-time guide
 │       └── Skeleton.tsx              → Loading states
 │
-├── ts/                        ← TypeScript Core Logic
-│   ├── stores/                ← Zustand State Management
-│   │   ├── index.ts                  → Main store (7 slices)
-│   │   └── types.ts                  → Store type definitions
-│   ├── shared/                ← Shared Utilities
-│   │   ├── Config.ts                 → Type-safe configuration
-│   │   └── DataSchema.ts             → Data schemas
-│   ├── audio/                 ← Audio Services
-│   │   ├── TTSEngine.ts              → Web Speech API wrapper
-│   │   ├── VoiceSelector.ts          → Voice management
-│   │   └── pollyService.ts           → AWS Polly integration
-│   ├── data/                  ← Data Management
-│   │   ├── DatasetManager.ts         → Dataset loader
-│   │   └── extractors/               → Data extractors (5 files)
-│   ├── supabase/              ← Supabase Integration
-│   │   ├── supabaseClient.ts         → Client setup
-│   │   ├── authService.ts            → Authentication
-│   │   ├── syncService.ts            → Data sync
-│   │   └── autoSyncManager.ts        → Auto-sync
-│   ├── ui/                    ← UI Logic
-│   │   └── ShadowingUI.ts            → DI shadowing
-│   ├── analytics/             ← Analytics
-│   │   └── analyticsService.ts       → PostHog tracking
-│   ├── ai/                    ← AI Services
-│   │   └── recommendationService.ts  → AI recommendations
-│   └── utils/                 ← Utilities
-│       ├── EventBus.ts               → Event system
-│       ├── Storage.ts                → LocalStorage wrapper
-│       └── CacheMigration.ts         → Data migration
+├── config/                    ← Configuration
+│   └── AppConfig.ts              → Type-safe configuration
 │
-├── services/                  ← API Client Services
+├── stores/                    ← State Management
+│   ├── index.ts                  → Main store (7 slices)
+│   └── types.ts                  → Store type definitions
+│
+├── services/                  ← Business Logic & API Clients
 │   ├── ai/                    ← AI Services
+│   │   ├── recommendationService.ts  → AI recommendations
 │   │   ├── interventionEngine.ts     → Proactive interventions
 │   │   ├── recommendationEngine.ts   → Learning path AI
 │   │   ├── weakAreaDetector.ts       → Pattern detection
 │   │   ├── ratingService.ts          → User feedback
 │   │   └── taskPersonas.ts           → Task-specific prompts
-│   ├── tts/                   ← TTS Services
-│   │   └── [polly client]            → AWS Polly API
+│   ├── audio/                 ← Audio Services
+│   │   ├── TTSEngine.ts              → Web Speech API wrapper
+│   │   └── pollyService.ts           → AWS Polly integration
+│   ├── analytics/             ← Analytics
+│   │   └── analyticsService.ts       → PostHog tracking
+│   ├── supabase/              ← Supabase Integration
+│   │   ├── supabaseClient.ts         → Client setup
+│   │   ├── authService.ts            → Authentication
+│   │   ├── syncService.ts            → Data sync
+│   │   └── autoSyncManager.ts        → Auto-sync
 │   ├── session/               ← Session Management
 │   │   └── sessionManager.ts         → Practice tracking
 │   ├── profile/               ← Profile Management
 │   │   └── learnerProfileService.ts  → User profiles
-│   ├── migration/             ← Migration
-│   │   └── migrationService.ts       → Data migration
-│   └── supabase/              ← Supabase Client
-│       └── client.ts                 → Supabase wrapper
+│   └── migration/             ← Migration
+│       └── migrationService.ts       → Data migration
+│
+├── data/                      ← Data Management
+│   ├── DatasetManager.ts         → Dataset loader
+│   ├── DataSchema.ts             → Data schemas
+│   └── extractors/               → Data extractors (5 files)
+│
+├── utils/                     ← Utilities
+│   ├── textUtils.ts              → Text processing
+│   ├── templateParser.ts         → Template parsing
+│   └── validation/               → Validation schemas
 │
 ├── types/                     ← TypeScript Type Definitions
 │   ├── config.types.ts        → Configuration types
@@ -130,7 +124,8 @@ src/
     ├── animations.css         → Keyframe animations
     ├── components.css         → BEM components
     ├── style.css              → Main layout
-    └── responsive.css         → Media queries
+    ├── responsive.css         → Media queries
+    └── tailwind.css           → Tailwind directives
 
 data/
 ├── source/pte/                ← Source Markdown Files

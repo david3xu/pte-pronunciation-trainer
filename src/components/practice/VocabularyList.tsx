@@ -7,9 +7,9 @@
 import { Cross2Icon, MagnifyingGlassIcon } from '@radix-ui/react-icons';
 import { Badge, Button, Card, Flex, ScrollArea, Text, TextField } from '@radix-ui/themes';
 import React, { useState } from 'react';
-import { stripMarkdown } from '../../lib/utils/textUtils';
-import { useAppStore } from '../../ts/stores';
+import { useAppStore } from '../../stores';
 import type { PracticeItem, VocabularyTerm } from '../../types/dataset.types';
+import { cleanText } from '../../utils/textUtils';
 import { VocabularyListSkeleton } from '../shared/Skeleton';
 
 const VocabularyList: React.FC = () => {
@@ -121,7 +121,7 @@ const VocabularyList: React.FC = () => {
                           whiteSpace: 'nowrap',
                         }}
                       >
-                        {stripMarkdown(displayText)}
+                        {cleanText(displayText)}
                       </Text>
 
                       {/* Difficulty badge */}

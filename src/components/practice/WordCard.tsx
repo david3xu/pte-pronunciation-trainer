@@ -11,14 +11,14 @@ import { LockClosedIcon, PlayIcon, SpeakerLoudIcon } from '@radix-ui/react-icons
 import { Badge, Button, Card, Checkbox, Flex, Select, Text } from '@radix-ui/themes';
 import React, { useState } from 'react';
 import '../../css/shadowing.css'; // Import shadowing styles
-import { stripMarkdown } from '../../lib/utils/textUtils';
+import { isPremiumTTSAvailable } from '../../services/audio/pollyService';
+import { ttsEngine } from '../../services/audio/TTSEngine';
 import type { SessionManager } from '../../services/session/sessionManager';
-import { isPremiumTTSAvailable } from '../../ts/audio/pollyService';
-import { ttsEngine } from '../../ts/audio/TTSEngine';
-import { useAppStore } from '../../ts/stores';
-import { parseAnswerForDisplay } from '../../ts/utils/templateParser';
+import { useAppStore } from '../../stores';
 import type { ItemType } from '../../types/database';
 import type { PracticeItem, VocabularyTerm } from '../../types/dataset.types';
+import { parseAnswerForDisplay } from '../../utils/templateParser';
+import { cleanText } from '../../utils/textUtils';
 
 interface WordCardProps {
   item: VocabularyTerm | PracticeItem;
@@ -96,10 +96,10 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
     } else {
       // Use free browser TTS via TTSEngine
       // Strip markdown syntax before speaking
-      const cleanText = stripMarkdown(displayText);
-      console.log('[WordCard] Calling ttsEngine.pronounceText with:', cleanText);
+      const cleanedText = cleanText(displayText);
+      console.log('[WordCard] Calling ttsEngine.pronounceText with:', cleanedText);
       try {
-        await ttsEngine.pronounceText(cleanText, 'en-US', null);
+        await ttsEngine.pronounceText(cleanedText, 'en-US', null);
         console.log('[WordCard] ttsEngine.pronounceText completed');
       } catch (error) {
         console.error('[WordCard] TTS error:', error);
@@ -145,7 +145,7 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
       }
 
       // Strip markdown syntax before speaking
-      const cleanText = stripMarkdown(displayText);
+      const cleanedText = cleanText(displayText);
 
       // Call API endpoint
       const response = await fetch('/api/audio/generate', {
@@ -154,7 +154,7 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          text: cleanText,
+          text: cleanedText,
           voiceId: voiceId,
           speed: '100%',
           emphasis: 'moderate',
@@ -185,9 +185,9 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
     } catch (error) {
       console.error('Premium TTS playback failed:', error);
       setIsPlayingPremium(false);
-      // Fallback to browser TTS (strip markdown)
-      const cleanText = stripMarkdown(displayText);
-      await ttsEngine.pronounceText(cleanText, 'en-US', null);
+      // Fallback to browser TTS (cleanText)
+      const cleanedText = cleanText(displayText);
+      await ttsEngine.pronounceText(cleanedText, 'en-US', null);
     }
   };
 
@@ -298,7 +298,7 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
       {/* Main content - Word/Sentence/Question */}
       <Flex direction="column" gap="4">
         <Text size="8" weight="bold" className="text-primary">
-          {stripMarkdown(displayText)}
+          {cleanText(displayText)}
         </Text>
 
         {/* Pronunciation (for vocabulary terms) */}

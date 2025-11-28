@@ -2,7 +2,7 @@
  * stripMarkdown - removes basic markdown syntax from text
  * Removes: **bold**, __bold__, *italic*, _italic_
  */
-export const stripMarkdown = (text: string): string => {
+export const cleanText = (text: string): string => {
   if (!text) return '';
 
   return text

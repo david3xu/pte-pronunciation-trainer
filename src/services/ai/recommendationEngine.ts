@@ -10,9 +10,9 @@
  * Phase 3: Weak Area Detection & Adaptive Learning
  */
 
-import { supabase } from '../../ts/supabase/supabaseClient';
-import { getWeakAreas, detectWeakAreas } from './weakAreaDetector';
 import type { TaskType } from '../../types/database';
+import { supabase } from '../supabase/supabaseClient';
+import { detectWeakAreas, getWeakAreas } from './weakAreaDetector';
 
 export interface Recommendation {
   id?: string;

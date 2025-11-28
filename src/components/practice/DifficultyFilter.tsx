@@ -4,9 +4,9 @@
  * Filter vocabulary/practice items by difficulty level.
  */
 
+import { Badge, Button, Card, Flex, Text } from '@radix-ui/themes';
 import React from 'react';
-import { Card, Flex, Text, Button, Badge } from '@radix-ui/themes';
-import { useAppStore } from '../../ts/stores';
+import { useAppStore } from '../../stores';
 
 type Difficulty = 'all' | 'easy' | 'normal' | 'hard';
 

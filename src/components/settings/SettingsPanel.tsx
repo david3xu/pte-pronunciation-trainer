@@ -7,7 +7,9 @@
 
 import { Cross2Icon, GearIcon } from '@radix-ui/react-icons';
 import { Badge, Button, Card, Flex, Text } from '@radix-ui/themes';
-import React from 'react';
+import React, { useMemo } from 'react';
+import { DATA_PATH_MAP } from '../../lib/constants/dataPaths';
+import { appConfig } from '../../ts/shared/Config';
 import { useAppStore } from '../../ts/stores';
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, Slider, Switch, Tabs, TabsContent, TabsList, TabsTrigger } from '../ui';
 
@@ -37,6 +39,12 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
   const setDataset = useAppStore((state) => state.vocabulary.setDataset);
   const filterByDifficulty = useAppStore((state) => state.vocabulary.filterByDifficulty);
 
+  // Get vocabulary books from config dynamically
+  const vocabularyBooks = useMemo(() => {
+    const learningModes = appConfig.get('data.learningModes') || [];
+    return learningModes.filter((mode: any) => mode.category === 'vocabulary');
+  }, []);
+
   // Handle vocabulary book change
   const handleVocabularyBookChange = async (bookId: string) => {
     console.log('[SettingsPanel] Changing vocabulary book to:', bookId);
@@ -53,32 +61,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
     setLoading(true);
 
     try {
-      const dataPathMap: Record<string, string> = {
-        'pte-fib-listening': '/data/processed/pte-fib-listening-dataset.json',
-        'pte-beginner': '/data/processed/pte-beginner-vocabulary.json',
-        'pte-intermediate': '/data/processed/pte-intermediate-vocabulary.json',
-        'pte-advanced': '/data/processed/pte-advanced-vocabulary.json',
-        'pte-ra': '/data/processed/pte-ra-vocabulary.json',
-        'pte-rs-vocab': '/data/processed/pte-rs-vocabulary.json',
-        'pte-must-know': '/data/processed/pte-must-know-vocabulary.json',
-        'pte-wfd-vocab': '/data/processed/pte-wfd-vocabulary.json',
-        'pte-rs-wfd-vocab': '/data/processed/pte-rs-wfd-vocabulary.json',
-        'pte-reading-fib': '/data/processed/pte-reading-fib-vocabulary.json',
-        'pte-reading-fib-drag': '/data/processed/pte-reading-fib-drag-vocabulary.json',
-        'pte-asq-answers': '/data/processed/pte-asq-answers-vocabulary.json',
-        'pte-high-frequency': '/data/processed/pte-high-frequency-vocabulary.json',
-        'pte-rs-core': '/data/processed/pte-rs-core-vocabulary.json',
-        'pte-di-rl-templates': '/data/processed/pte-di-rl-templates-vocabulary.json',
-        'pte-sst-complete': '/data/processed/pte-sst-complete-vocabulary.json',
-        'pte-essay-topic-vocabulary': '/data/processed/pte-essay-topic-vocabulary.json',
-        'pte-di-difficult-words': '/data/processed/pte-di-difficult-words-vocabulary.json',
-        'pte-di-easy-phrases': '/data/processed/pte-di-easy-phrases-vocabulary.json',
-        // Shadowing modes
-        'di-shadowing-1-10': '/data/processed/di-shadowing-images-1-10.json',
-        'di-shadowing-11-20': '/data/processed/di-shadowing-images-11-20.json',
-      };
-
-      const dataPath = dataPathMap[bookId] || `/data/processed/${bookId}-vocabulary.json`;
+      const dataPath = DATA_PATH_MAP[bookId as keyof typeof DATA_PATH_MAP] || `/data/processed/${bookId}-vocabulary.json`;
       console.log('[SettingsPanel] Loading vocabulary book:', bookId, 'from:', dataPath);
 
       const response = await fetch(dataPath);
@@ -287,25 +270,11 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                     <SelectContent>
                       <SelectGroup>
                         <SelectLabel>PTE Vocabulary Books</SelectLabel>
-                        <SelectItem value="pte-fib-listening">PTE FIB Listening</SelectItem>
-                        <SelectItem value="pte-beginner">PTE Beginner</SelectItem>
-                        <SelectItem value="pte-intermediate">PTE Intermediate</SelectItem>
-                        <SelectItem value="pte-advanced">PTE Advanced</SelectItem>
-                        <SelectItem value="pte-ra">PTE Read Aloud</SelectItem>
-                        <SelectItem value="pte-rs-vocab">PTE RS Vocabulary</SelectItem>
-                        <SelectItem value="pte-must-know">PTE Must-Know</SelectItem>
-                        <SelectItem value="pte-wfd-vocab">PTE WFD Vocabulary</SelectItem>
-                        <SelectItem value="pte-rs-wfd-vocab">PTE RS-WFD Vocabulary</SelectItem>
-                        <SelectItem value="pte-reading-fib">PTE Reading FIB</SelectItem>
-                        <SelectItem value="pte-reading-fib-drag">PTE Reading FIB Drag</SelectItem>
-                        <SelectItem value="pte-asq-answers">PTE ASQ Answers</SelectItem>
-                        <SelectItem value="pte-high-frequency">PTE High-Frequency</SelectItem>
-                        <SelectItem value="pte-rs-core">PTE RS Core</SelectItem>
-                        <SelectItem value="pte-di-rl-templates">PTE DI/RL Templates</SelectItem>
-                        <SelectItem value="pte-sst-complete">PTE SST Complete</SelectItem>
-                        <SelectItem value="pte-essay-topic-vocabulary">PTE Essay Topics</SelectItem>
-                        <SelectItem value="pte-di-difficult-words">PTE DI Difficult Words</SelectItem>
-                        <SelectItem value="pte-di-easy-phrases">PTE DI Easy Phrases</SelectItem>
+                        {vocabularyBooks.map((book: any) => (
+                          <SelectItem key={book.id} value={book.id}>
+                            {book.name}
+                          </SelectItem>
+                        ))}
                       </SelectGroup>
                     </SelectContent>
                   </Select>

@@ -5,22 +5,22 @@
  * Shows progress, handles errors, allows rollback.
  */
 
-import React, { useState } from 'react';
-import { Card, Flex, Text, Button, Progress, Badge } from '@radix-ui/themes';
 import {
-  CheckCircledIcon,
-  CrossCircledIcon,
-  UpdateIcon,
-  ExclamationTriangleIcon,
-  InfoCircledIcon,
+    CheckCircledIcon,
+    CrossCircledIcon,
+    ExclamationTriangleIcon,
+    InfoCircledIcon,
+    UpdateIcon,
 } from '@radix-ui/react-icons';
+import { Badge, Button, Card, Flex, Progress, Text } from '@radix-ui/themes';
+import React, { useState } from 'react';
 import {
-  getMigrationSummary,
-  performMigration,
-  clearOldData,
-  rollbackMigration,
-  type MigrationResult,
-  type MigrationProgress,
+    clearOldData,
+    getMigrationSummary,
+    performMigration,
+    rollbackMigration,
+    type MigrationProgress,
+    type MigrationResult,
 } from '../../services/migration/migrationService';
 import { useAppStore } from '../../ts/stores';
 
@@ -92,7 +92,7 @@ const DataMigrationModal: React.FC<DataMigrationModalProps> = ({ isOpen, onClose
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4">
-      <Card size="4" className="w-full max-w-lg">
+      <Card size="4" className="w-full max-w-md max-h-[90vh] overflow-y-auto pb-safe">
         {/* Header */}
         <Flex direction="column" gap="4">
           <Flex align="center" gap="2">

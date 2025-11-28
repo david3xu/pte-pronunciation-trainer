@@ -5,9 +5,9 @@
  * Displays available voices grouped by accent (US, UK, AU, IN) and gender.
  */
 
+import { LockClosedIcon, SpeakerLoudIcon } from '@radix-ui/react-icons';
+import { Badge, Button, Card, Flex, Select, Text } from '@radix-ui/themes';
 import React, { useState } from 'react';
-import { Card, Flex, Text, Select, Badge, Button } from '@radix-ui/themes';
-import { SpeakerLoudIcon, LockClosedIcon } from '@radix-ui/react-icons';
 import { getVoices, isPremiumTTSAvailable, type PollyVoice } from '../../ts/audio/pollyService';
 
 interface PremiumVoiceSelectorProps {

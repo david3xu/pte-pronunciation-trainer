@@ -74,11 +74,13 @@ export class AppConfig {
                     { id: 'pte-di-rl-templates', name: 'PTE DI/RL Templates', category: 'vocabulary', difficulty: 'normal' },
                     { id: 'pte-sst-complete', name: 'PTE SST Complete', category: 'vocabulary', difficulty: 'normal' },
                     { id: 'pte-essay-topic-vocabulary', name: 'PTE Essay Topics', category: 'vocabulary', difficulty: 'normal' },
+                    { id: 'pte-di-difficult-words', name: 'PTE DI Difficult Words', category: 'vocabulary', difficulty: 'hard' },
+                    { id: 'pte-di-easy-phrases', name: 'PTE DI Easy Phrases', category: 'vocabulary', difficulty: 'easy' },
                     // Practice modes (3 total)
                     { id: 'rs', name: 'Repeat Sentence', category: 'practice', description: '620 practice sentences' },
                     { id: 'asq', name: 'Answer Short Question', category: 'practice', description: '692 practice questions' },
                     { id: 'wfd', name: 'Write From Dictation', category: 'practice', description: '1,195 practice sentences' },
-                    
+
                     // Shadowing modes (2 total)
                     { id: 'di-shadowing-1-10', name: 'DI Shadowing (Images 1-10)', category: 'shadowing', description: '10 DI answers for pronunciation practice' },
                     { id: 'di-shadowing-11-20', name: 'DI Shadowing (Images 11-20)', category: 'shadowing', description: '10 DI answers for pronunciation practice' }
@@ -276,6 +278,28 @@ export class AppConfig {
                         dataType: 'shadowing',
                         extractorType: 'DIAnswerExtractor',
                         inputSubdir: 'di'
+                    },
+                    {
+                        id: 'pte-di-difficult-words',
+                        input: 'pte-di-difficult-words-with-ipa.md',
+                        output: 'pte-di-difficult-words-vocabulary.json',
+                        category: 'pte-di-vocabulary',
+                        description: 'PTE DI Difficult Words - 440 words with IPA from 44 DI examples',
+                        sourceType: 'pte-di-difficult-words',
+                        dataType: 'vocabulary',
+                        extractorType: 'SingleIPATermsExtractor',
+                        inputSubdir: 'vocabs'
+                    },
+                    {
+                        id: 'pte-di-easy-phrases',
+                        input: 'pte-di-easy-phrases.md',
+                        output: 'pte-di-easy-phrases-vocabulary.json',
+                        category: 'pte-di-vocabulary',
+                        description: 'PTE DI Easy Phrases - 296 common phrases with pronunciation guides',
+                        sourceType: 'pte-di-easy-phrases',
+                        dataType: 'vocabulary',
+                        extractorType: 'SingleIPATermsExtractor',
+                        inputSubdir: 'vocabs'
                     },
                     // ... Add more registry entries as needed during migration
                 ],

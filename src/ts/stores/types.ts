@@ -5,7 +5,7 @@
  * Each store slice manages a specific domain of the application.
  */
 
-import type { VocabularyTerm, PracticeItem, Difficulty } from '../../types/dataset.types';
+import type { Difficulty, PracticeItem, VocabularyTerm } from '../../types/dataset.types';
 
 // Type alias for backward compatibility
 export type VocabularyItem = VocabularyTerm;
@@ -111,8 +111,9 @@ export interface SettingsState {
 
 export interface VocabularyState {
   // Data
-  currentDataset: (VocabularyItem | PracticeItem)[];
-  filteredDataset: (VocabularyItem | PracticeItem)[];
+  currentDataset: (VocabularyItem | PracticeItem)[]; // All items
+  filteredDataset: (VocabularyItem | PracticeItem)[]; // After difficulty filter
+  displayedItems: (VocabularyItem | PracticeItem)[]; // Currently displayed (paginated)
   currentItem: VocabularyItem | PracticeItem | null;
 
   // Metadata
@@ -121,6 +122,11 @@ export interface VocabularyState {
   isLoading: boolean;
   error: string | null;
 
+  // Pagination
+  currentPage: number;
+  itemsPerPage: number;
+  hasMore: boolean;
+
   // Actions
   setDataset: (dataset: (VocabularyItem | PracticeItem)[], mode: string) => void;
   setCurrentItem: (item: VocabularyItem | PracticeItem) => void;
@@ -128,6 +134,7 @@ export interface VocabularyState {
   setLoading: (isLoading: boolean) => void;
   setError: (error: string | null) => void;
   clearDataset: () => void;
+  loadMore: () => void; // Load next page
 }
 
 // ============================================

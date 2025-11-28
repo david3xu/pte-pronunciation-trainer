@@ -92,19 +92,19 @@ graph TB
     SOURCE --> PIPELINE
     PIPELINE --> DATASET
     DATASET --> VOCAB
-    
+
     APP --> VOCAB
     APP --> SETTINGS
     APP --> UI
     APP --> TTS
     APP --> PROGRESS
-    
+
     VOCAB --> EVENTS
     SETTINGS --> EVENTS
     UI --> EVENTS
     TTS --> EVENTS
     PROGRESS --> EVENTS
-    
+
     EVENTS --> STORAGE
 ```
 
@@ -112,316 +112,87 @@ graph TB
 
 ## 🎯 Core Components
 
-### **1. PTEApp.js - Application Coordinator**
+### 1. App.tsx - Application Root
 
-**Purpose**: Main entry point and lifecycle manager
-
-**Responsibilities**:
-- Initialize all modules
-- Coordinate inter-module communication
-- Handle application lifecycle (start, pause, resume)
-- Manage global error handling
-
-**Key Methods**:
-```javascript
-class PTEApp {
-  constructor(config)           // Initialize with configuration
-  async initialize()            // Setup all modules
-  start()                       // Start application
-  pause()                       // Pause learning session
-  resume()                      // Resume learning session
-  destroy()                     // Cleanup and teardown
-}
-```
-
-**Dependencies**: All modules (coordinates them)
-
----
-
-### **2. PTEVocabularyManager.js - Data Management**
-
-**Purpose**: Manage vocabulary data loading, filtering, and retrieval
+**Purpose**: Main React component that orchestrates the application.
 
 **Responsibilities**:
-- Load vocabulary dataset from JSON
-- Filter vocabulary by mode, category, difficulty
-- Provide current word/sentence for practice
-- Track learning progress
-- Handle bookmark management
+- Initialize application state
+- Manage routing/view switching (Vocabulary vs Practice modes)
+- Coordinate global modals (Settings, AI Tutor, Migration)
+- Handle keyboard shortcuts
+- Manage layout structure
 
-**Key Methods**:
-```javascript
-class PTEVocabularyManager {
-  async loadVocabulary(mode)    // Load dataset for learning mode
-  getCurrentWord()              // Get current vocabulary item
-  nextWord()                    // Move to next item
-  previousWord()                // Move to previous item
-  filterByCategory(category)    // Filter by category
-  filterByDifficulty(level)     // Filter by difficulty
-  searchWords(query)            // Search vocabulary
-  toggleBookmark(wordId)        // Bookmark management
-}
-```
+### 2. Zustand Stores (`src/ts/stores/`)
 
-**Events Emitted**:
-- `vocabulary:loaded` - Dataset loaded successfully
-- `vocabulary:changed` - Current word changed
-- `vocabulary:filtered` - Filter applied
-- `vocabulary:error` - Loading/filtering error
+**Purpose**: Centralized state management replacing the legacy EventBus architecture.
 
----
+**Stores**:
+- **`useAppStore`**: Main entry point combining all slices.
+- **`vocabularySlice`**: Manages dataset loading, filtering, and current item.
+- **`settingsSlice`**: Manages user preferences (speed, voice, difficulty).
+- **`audioSlice`**: Manages playback state (playing, paused, auto-play).
+- **`authSlice`**: Manages Supabase authentication state.
+- **`progressSlice`**: Tracks learning progress and session stats.
 
-### **3. SettingsModule.js - Event-Driven Settings Management**
+### 3. Audio System (`src/components/audio/`, `src/ts/audio/`)
 
-**Purpose**: Centralized settings management with event-driven architecture and handler registry pattern
+**Components**:
+- **`AudioControls.tsx`**: UI for playback control (Play/Pause, Next/Prev, Speed).
+- **`TTSEngine.ts`**: Singleton service managing Web Speech API and AWS Polly.
+- **`VoiceSelector.tsx`**: UI for selecting browser voices.
+- **`PremiumVoiceSelector.tsx`**: UI for selecting AWS Polly neural voices.
 
-**Responsibilities**:
-- Manage 8 user settings with validation
-- Event-driven communication (no direct method calls)
-- Handler registry pattern for extensibility
-- Persist settings to localStorage
-- Provide dropdown options from Config.js
+### 4. AI System (`src/components/ai/`, `src/services/ai/`)
 
-**Architecture**:
-```javascript
-class SettingsModule {
-  // Handler Registry (8 settings)
-  handlers = {
-    speed: { validate, apply, default: 1.0 },
-    delay: { validate, apply, default: 3000 },
-    repeat: { validate, apply, default: 0 },
-    voice: { validate, apply, default: 'auto' },
-    difficulty: { validate, apply, default: 'all' },
-    learningMode: { validate, apply, default: 'pte-fib-listening' },
-    practiceMode: { validate, apply, default: 'vocabulary' },
-    practiceDataset: { validate, apply, default: 'combined' }
-  }
-  
-  // Event-Driven API (RECOMMENDED)
-  // Listen: 'setting:request-change' → validate → apply → persist → emit 'setting:changed'
-  
-  // Direct API (for reading only)
-  getSetting(key)              // Get current value
-  getAllSettings()             // Get all settings
-  getAvailableOptions(key)     // Get dropdown options
-  resetSettings()              // Reset to defaults
-  exportSettings()             // Export to JSON
-  importSettings(json)         // Import from JSON
-}
-```
+**Components**:
+- **`AISidebar.tsx`**: Always-visible assistant panel.
+- **`AITutorChat.tsx`**: Chat interface with Google Gemini/OpenAI.
+- **`AIRecommendations.tsx`**: Personalized learning suggestions.
+- **`PronunciationScoring.tsx`**: Real-time pronunciation feedback.
 
-**Event-Driven Flow**:
-```
-UI Change → EventBus.emit('setting:request-change')
-         → SettingsModule.validate()
-         → SettingsModule.apply()
-         → SettingsModule.persist()
-         → EventBus.emit('setting:changed')
-         → Engines listen and update
-```
+**Services**:
+- **`geminiService.ts`**: Client for Google Gemini API.
+- **`chat.ts`**: Backend API for AI chat context.
 
-**Handler Pattern**:
-Each setting has three methods:
-- `validate(value)` - Validates and transforms value
-- `apply(value)` - Applies value to system (logs, etc.)
-- `default` - Default value
+### 5. Practice Interface (`src/components/practice/`)
 
-**Events Emitted**:
-- `setting:changed` - {key, value, previous} - Any setting updated
-
-**Events Listened**:
-- `setting:request-change` - {key, value} - Request to change setting
-
----
-
-### **4. UIController.js - User Interface Management**
-
-**Purpose**: Handle all DOM manipulation and user interactions
-
-**Responsibilities**:
-- Render vocabulary display
-- Update UI based on state changes
-- Handle user input (clicks, keyboard shortcuts)
-- Display progress indicators
-- Manage settings panel visibility
-
-**Key Methods**:
-```javascript
-class UIController {
-  renderCurrentWord(word)       // Display vocabulary item
-  updateProgress(current, total) // Update progress indicator
-  showSettingsPanel()           // Open settings
-  hideSettingsPanel()           // Close settings
-  displayError(message)         // Show error message
-  bindKeyboardShortcuts()       // Setup keyboard controls
-}
-```
-
-**Keyboard Shortcuts**:
-- `Space` - Play/pause pronunciation
-- `→` - Next word
-- `←` - Previous word
-- `R` - Repeat current word
-- `S` - Open settings
-- `B` - Toggle bookmark
-
-**Events Listened**:
-- `vocabulary:changed` - Update display
-- `settings:changed` - Update UI elements
-- `tts:speaking` - Show speaking indicator
-
----
-
-### **5. TTSEngine.js - Text-to-Speech**
-
-**Purpose**: Manage browser TTS (Web Speech API)
-
-**Responsibilities**:
-- Initialize available TTS voices
-- Play pronunciation for vocabulary
-- Control speech rate, pitch, volume
-- Handle voice selection
-- Manage playback queue
-
-**Key Methods**:
-```javascript
-class TTSEngine {
-  async initialize()            // Load available voices
-  speak(text, options)         // Speak text with options
-  pause()                      // Pause current speech
-  resume()                     // Resume paused speech
-  cancel()                     // Stop all speech
-  setVoice(voiceName)          // Change TTS voice
-  setSpeechRate(rate)          // Adjust playback speed
-  getAvailableVoices()         // List available voices
-}
-```
-
-**Voice Filtering**:
-- Prioritize Australian English voices for PTE exam
-- Fallback to UK English, then US English
-- Support custom voice selection
-
-**Events Emitted**:
-- `tts:start` - Speech started
-- `tts:end` - Speech completed
-- `tts:pause` - Speech paused
-- `tts:error` - TTS error occurred
-
----
-
-### **6. ProgressTracker.js - Learning Progress**
-
-**Purpose**: Track and persist learning progress
-
-**Responsibilities**:
-- Track words practiced, mastered, difficult
-- Calculate statistics (accuracy, time spent)
-- Persist progress to localStorage
-- Generate progress reports
-- Manage review queue
-
-**Key Methods**:
-```javascript
-class ProgressTracker {
-  markAsPracticed(wordId)       // Record practice attempt
-  markAsMastered(wordId)        // Mark word as learned
-  markAsDifficult(wordId)       // Flag for review
-  getStatistics()               // Get progress stats
-  getReviewQueue()              // Get words needing review
-  resetProgress()               // Clear all progress
-}
-```
-
-**Data Structure**:
-```javascript
-{
-  practiced: Set<string>,       // Words practiced
-  mastered: Set<string>,        // Words mastered
-  difficult: Set<string>,       // Words flagged for review
-  timestamps: Map<string, Date>, // Last practice time
-  attempts: Map<string, number>  // Practice attempt count
-}
-```
+**Components**:
+- **`WordCard.tsx`**: Main display for vocabulary items.
+- **`RSInterface.tsx`**: Repeat Sentence practice UI.
+- **`ASQInterface.tsx`**: Answer Short Question practice UI.
+- **`WFDInterface.tsx`**: Write From Dictation practice UI.
 
 ---
 
 ## 🔧 Infrastructure Components
 
-### **EventBus.js - Event System**
+### **Zustand State Management**
 
-**Purpose**: Pub/sub communication between modules
+**Purpose**: Reactive state management for the React application.
 
-**Pattern**: Observer pattern with namespaced events
+**Pattern**: Slice pattern (combining multiple stores into one hook).
 
 **Usage**:
-```javascript
-// Subscribe to events
-eventBus.on('vocabulary:loaded', (data) => {
-  console.log('Loaded:', data.total, 'words');
-});
+```typescript
+// Select state
+const currentItem = useAppStore((state) => state.vocabulary.currentItem);
+const settings = useAppStore((state) => state.settings);
 
-// Emit events
-eventBus.emit('vocabulary:changed', { word, index });
-
-// Unsubscribe
-eventBus.off('vocabulary:loaded', handlerFunction);
+// Update state
+const setSpeed = useAppStore((state) => state.audio.setSpeed);
+setSpeed(1.5);
 ```
 
-**Event Categories**:
-- `vocabulary:*` - Vocabulary data events
-- `settings:*` - Settings change events
-- `tts:*` - TTS playback events
-- `ui:*` - User interaction events
-- `progress:*` - Learning progress events
+### **Supabase Client**
 
----
-
-### **StateManager.js - State Persistence**
-
-**Purpose**: Persist and restore application state
-
-**Responsibilities**:
-- Save state to localStorage
-- Restore state on app load
-- Handle state migration (version upgrades)
-- Provide state snapshots
-
-**State Schema**:
-```javascript
-{
-  version: "1.0.0",
-  settings: {
-    learningMode: string,
-    ttsVoice: string,
-    speechRate: number,
-    // ... all settings
-  },
-  progress: {
-    practiced: string[],
-    mastered: string[],
-    difficult: string[],
-    // ... progress data
-  },
-  session: {
-    currentIndex: number,
-    lastAccessed: timestamp,
-    // ... session data
-  }
-}
-```
-
----
-
-### **Storage.js - localStorage Wrapper**
-
-**Purpose**: Safe localStorage access with error handling
+**Purpose**: Cloud persistence and authentication.
 
 **Features**:
-- JSON serialization/deserialization
-- Storage quota management
-- Error handling (quota exceeded, disabled)
-- Namespace support (multiple keys)
+- **Auth**: Email/Password login, session management.
+- **Database**: PostgreSQL for user data (profiles, progress).
+- **Realtime**: Sync updates across devices.
+- **Storage**: Caching generated audio files.
 
 ---
 
@@ -547,7 +318,7 @@ class TTSEngine {
     constructor() {
         window.eventBus.on('setting:changed', this._handleSettingChange.bind(this));
     }
-    
+
     _handleSettingChange({key, value}) {
         if (key === 'speed') {
             console.log('[TTSEngine] Speed changed to', value);
@@ -822,8 +593,8 @@ dist/
 
 ---
 
-**Architecture Status**: ✅ **STABLE & SCALABLE**  
-**Design Principles**: ✅ **SOLID PRINCIPLES APPLIED**  
+**Architecture Status**: ✅ **STABLE & SCALABLE**
+**Design Principles**: ✅ **SOLID PRINCIPLES APPLIED**
 **Code Quality**: ✅ **MODULAR & MAINTAINABLE**
 
 ---
@@ -908,7 +679,7 @@ class DatasetManager {
   getStatistics(type)               // Get dataset stats
   getAllCategories(type)            // Get unique categories
   clearCache(type)                  // Clear cached data
-  
+
   // Private helpers
   _getItemField(item, field, type)  // Unified field access
 }
@@ -966,31 +737,31 @@ async initializeDatasetManager() {
 ```javascript
 class PracticeModes {
   constructor(datasetManager, ttsEngine, eventBus)
-  
+
   // Mode Rendering
   renderRS(container)               // Render Repeat Sentence UI
   renderASQ(container)              // Render Answer Short Question UI
   renderWFD(container)              // Render Write From Dictation UI
-  
+
   // RS Mode Methods
   loadRSItem()                      // Load next RS sentence
   handleRSListen()                  // Play sentence audio
   handleRSRecord()                  // Record user speech
   handleRSPlayback()                // Play recorded audio
   handleRSShowText()                // Toggle text visibility
-  
+
   // ASQ Mode Methods
   loadASQItem()                     // Load next ASQ question
   handleASQListen()                 // Play question audio
   handleASQSubmit()                 // Check user answer
   calculateSimilarity(str1, str2)   // Levenshtein distance
-  
+
   // WFD Mode Methods
   loadWFDItem()                     // Load next WFD sentence
   handleWFDListen()                 // Play sentence audio
   handleWFDCheck()                  // Check typed sentence
   compareWords(user, correct)       // Word-by-word comparison
-  
+
   // Shared Helpers (Refactored)
   getElement(id)                    // Cached DOM lookup
   toggleTextVisibility(...)         // Generic show/hide
@@ -1037,17 +808,17 @@ handleRSRecord() {
       .then(stream => {
         this.mediaRecorder = new MediaRecorder(stream);
         this.audioChunks = [];
-        
+
         this.mediaRecorder.ondataavailable = (event) => {
           this.audioChunks.push(event.data);
         };
-        
+
         this.mediaRecorder.onstop = () => {
           const audioBlob = new Blob(this.audioChunks);
           this.recordedAudioURL = URL.createObjectURL(audioBlob);
           // Show playback controls
         };
-        
+
         this.mediaRecorder.start();
         this.isRecording = true;
       });
@@ -1071,31 +842,31 @@ handleRSRecord() {
 class TTSEngine {
   // Existing word pronunciation
   async pronounceWord(word, repeatIndex)
-  
+
   // NEW: Sentence pronunciation
   async pronounceSentence(sentenceItem, repeatIndex) {
     const sentence = sentenceItem.sentence || sentenceItem.text;
     const rate = this.getPronunciationRate(sentenceItem);
-    
+
     // Visual feedback
     const element = this._addSpeakingFeedback('sentenceText', {
       sentence, type: sentenceItem.type, repeatCount, rate
     });
-    
+
     await this._speak(sentence, rate);
-    
+
     this._removeSpeakingFeedback(element, {
       sentence, type: sentenceItem.type, repeatCount
     });
   }
-  
+
   // NEW: Question pronunciation
   async pronounceQuestion(questionItem, repeatIndex) {
     const question = questionItem.question;
     const answer = questionItem.answer;
     // Similar to pronounceSentence, optionally speaks answer
   }
-  
+
   // NEW: Refactored helpers
   _addSpeakingFeedback(elementId, eventData)
   _removeSpeakingFeedback(element, eventData)
@@ -1123,11 +894,11 @@ class SettingsPanel {
     const practiceModeSelect = document.getElementById('practiceModeSelect');
     const vocabularyBookSetting = document.getElementById('vocabularyBookSetting');
     const practiceDatasetSetting = document.getElementById('practiceDatasetSetting');
-    
+
     if (practiceModeSelect) {
       practiceModeSelect.addEventListener('change', (e) => {
         const mode = e.target.value;
-        
+
         // Show/hide appropriate selectors
         if (mode === 'vocabulary') {
           vocabularyBookSetting.style.display = 'flex';
@@ -1135,12 +906,12 @@ class SettingsPanel {
         } else {
           vocabularyBookSetting.style.display = 'none';
           practiceDatasetSetting.style.display = 'flex';
-          
+
           // Auto-select matching dataset
           const datasetSelect = document.getElementById('practiceDatasetSelect');
           datasetSelect.value = mode; // 'rs', 'asq', or 'wfd'
         }
-        
+
         // Save via event (event-driven architecture)
         window.eventBus.emit('setting:request-change', {
             key: 'practiceMode',
@@ -1173,7 +944,7 @@ class UIController {
   handlePracticeModeChange(mode) {
     const learningArea = document.querySelector('.learning-area');
     const categoryDisplay = document.getElementById('categoryDisplay');
-    
+
     if (mode === 'vocabulary') {
       // Show vocabulary display
       learningArea.innerHTML = `<!-- Vocabulary UI -->`;
@@ -1188,7 +959,7 @@ class UIController {
             window.eventBus
           );
         }
-        
+
         // Render appropriate mode
         switch (mode) {
           case 'rs':
@@ -1288,7 +1059,7 @@ Total: 2,046 lines (0% duplication)
   --danger-color: #ef4444;
   --warning-color: #f59e0b;
   /* ... */
-  
+
   /* Spacing (8 tokens) */
   --space-xs: 0.25rem;    /* 4px */
   --space-sm: 0.5rem;     /* 8px */
@@ -1296,7 +1067,7 @@ Total: 2,046 lines (0% duplication)
   --space-lg: 1rem;       /* 16px */
   --space-xl: 1.5rem;     /* 24px */
   /* ... */
-  
+
   /* Border Radius (6 tokens) */
   --radius-sm: 4px;
   --radius-md: 8px;
@@ -1304,19 +1075,19 @@ Total: 2,046 lines (0% duplication)
   --radius-xl: 20px;
   --radius-2xl: 25px;
   --radius-full: 9999px;
-  
+
   /* Shadows (7 tokens) */
   --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
   /* ... */
-  
+
   /* Transitions (4 tokens) */
   --transition-fast: 0.2s ease;
   --transition-base: 0.3s ease;
   --transition-slow: 0.5s ease;
   --transition-bounce: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  
+
   /* Typography (16 tokens) */
   --text-xs: 0.75rem;     /* 12px */
   --text-sm: 0.875rem;    /* 14px */
@@ -1326,7 +1097,7 @@ Total: 2,046 lines (0% duplication)
   --font-medium: 500;
   --font-semibold: 600;
   --font-bold: 700;
-  
+
   /* Z-Index Layers (6 tokens) */
   --z-base: 1;
   --z-dropdown: 100;
@@ -1334,7 +1105,7 @@ Total: 2,046 lines (0% duplication)
   --z-overlay: 1000;
   --z-modal: 2000;
   --z-toast: 3000;
-  
+
   /* Accessibility (2 tokens) */
   --touch-target-min: 44px;
   --touch-target-comfortable: 48px;
@@ -1705,10 +1476,10 @@ Phase 2 components are **optional**. App works without them:
 // PTEApp.js - Optional initialization
 async initialize() {
   // ... existing initialization ...
-  
+
   // Phase 2: Optional DatasetManager
   await this.initializeDatasetManager();  // Gracefully fails if not available
-  
+
   // ... rest of initialization ...
 }
 
@@ -1822,8 +1593,8 @@ async initializeDatasetManager() {
 
 ---
 
-**Phase 2 Status**: ✅ **COMPLETE & PRODUCTION READY**  
-**Code Quality**: ✅ **0% DUPLICATION, FULLY REFACTORED**  
+**Phase 2 Status**: ✅ **COMPLETE & PRODUCTION READY**
+**Code Quality**: ✅ **0% DUPLICATION, FULLY REFACTORED**
 **Testing**: ⏳ **READY FOR BROWSER TESTING**
 
 ```
@@ -1883,7 +1654,7 @@ graph TD
   'Config': [],                      // No dependencies
   'CacheMigration': [],              // No dependencies
   'ServiceWorker': [],               // No dependencies
-  
+
   'SettingsModule': ['Config', 'EventBus', 'Storage'],
   'DatasetManager': ['Config', 'EventBus'],
   'PTEVocabularyManager': ['Config', 'EventBus', 'DatasetManager'],
@@ -1951,7 +1722,7 @@ emit(event, data) {
       callback(data);
     } catch (error) {
       console.error(`EventBus error in ${event} handler:`, error);
-      
+
       // Emit global error event (prevent infinite loop)
       if (event !== 'system:error') {
         setTimeout(() => {
@@ -1987,7 +1758,7 @@ validateModule(moduleName, moduleInstance, options) {
     customCheck = null,
     customCheckMessage = ''
   } = options;
-  
+
   // Check existence
   if (!moduleInstance) {
     const error = `${moduleName} is not available`;
@@ -1995,7 +1766,7 @@ validateModule(moduleName, moduleInstance, options) {
     console.warn(error);
     return false;
   }
-  
+
   // Check required properties
   for (const prop of requiredProperties) {
     if (!(prop in moduleInstance)) {
@@ -2005,7 +1776,7 @@ validateModule(moduleName, moduleInstance, options) {
       return false;
     }
   }
-  
+
   // Custom validation
   if (customCheck && !customCheck()) {
     const error = `${moduleName} validation failed: ${customCheckMessage}`;
@@ -2013,7 +1784,7 @@ validateModule(moduleName, moduleInstance, options) {
     console.warn(error);
     return false;
   }
-  
+
   console.log(`✅ ${moduleName} validated successfully`);
   return true;
 }
@@ -2028,22 +1799,22 @@ async loadDataset(mode) {
   const maxRetries = 3;
   const retryDelays = [1000, 2000, 4000]; // 1s, 2s, 4s
   let lastError = null;
-  
+
   for (let attempt = 0; attempt <= maxRetries; attempt++) {
     try {
       const response = await fetch(url);
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
       }
-      
+
       const dataset = await response.json();
       this.datasets.set(mode, dataset);
       console.log(`✅ Loaded ${mode}: ${dataset.vocabulary.length} words${attempt > 0 ? ` (retry ${attempt})` : ''}`);
       return; // Success
-      
+
     } catch (fetchError) {
       lastError = fetchError;
-      
+
       if (attempt < maxRetries) {
         const delay = retryDelays[attempt];
         console.warn(`⚠️  Attempt ${attempt + 1}/${maxRetries + 1} failed: ${fetchError.message}. Retrying in ${delay}ms...`);
@@ -2051,7 +1822,7 @@ async loadDataset(mode) {
       }
     }
   }
-  
+
   // All retries failed
   throw new Error(`Failed to fetch ${mode} dataset after ${maxRetries + 1} attempts: ${lastError.message}`);
 }
@@ -2102,7 +1873,7 @@ window.eventBus.on('audio:start', () => {
 ```javascript
 _attachEventListeners() {
   window.eventBus.on('setting:changed', this._handleSettingChange.bind(this));
-  
+
   // Audio control events
   window.eventBus.on('audio:start', () => this.startAutoPlay());
   window.eventBus.on('audio:pause', () => this.pauseAutoPlay());
@@ -2204,10 +1975,10 @@ Pattern: `domain:action[:modifier]`
 ```javascript
 // Emitting events (from Config.js)
 const settingsChangedEvent = window.appConfig.get('events.settings.changed');
-window.eventBus.emit(settingsChangedEvent, { 
-  key: 'speed', 
-  value: 0.7, 
-  timestamp: Date.now() 
+window.eventBus.emit(settingsChangedEvent, {
+  key: 'speed',
+  value: 0.7,
+  timestamp: Date.now()
 });
 
 // Listening to events
@@ -2221,6 +1992,6 @@ window.eventBus.on(audioStartEvent, () => {
 
 ---
 
-**Initialization Architecture Status**: ✅ **PRODUCTION READY**  
-**Error Handling**: ✅ **COMPREHENSIVE & RESILIENT**  
+**Initialization Architecture Status**: ✅ **PRODUCTION READY**
+**Error Handling**: ✅ **COMPREHENSIVE & RESILIENT**
 **Event System**: ✅ **FULLY DECOUPLED**

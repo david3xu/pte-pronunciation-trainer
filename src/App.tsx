@@ -5,35 +5,38 @@
  * It integrates with the existing Zustand store for state management.
  */
 
-import React, { useEffect, useState } from 'react';
-import { Theme, Flex, Button, Spinner } from '@radix-ui/themes';
 import {
-  ChatBubbleIcon,
-  SpeakerLoudIcon,
-  GearIcon,
   BarChartIcon,
+  ChatBubbleIcon,
+  GearIcon,
   LightningBoltIcon,
+  SpeakerLoudIcon,
 } from '@radix-ui/react-icons';
-import { useAppStore } from './ts/stores';
-import {
-  WordCard,
-  ProgressDashboard,
-  RSInterface,
-  ASQInterface,
-  WFDInterface
-} from './components/practice';
+import { Button, Flex, Spinner, Theme } from '@radix-ui/themes';
+import React, { lazy, Suspense, useEffect, useState } from 'react';
+import { AISidebar, AITutorChat, InterventionModal, PronunciationScoring, WeakAreasDashboard } from './components/ai';
 import { AudioControls } from './components/audio';
-import { SettingsPanel } from './components/settings';
-import { AITutorChat, PronunciationScoring, WeakAreasDashboard, InterventionModal, AISidebar } from './components/ai';
-import { WordCardSkeleton } from './components/shared';
 import DataMigrationModal from './components/migration/DataMigrationModal';
+import {
+  ProgressDashboard,
+  WordCard,
+} from './components/practice';
 import LearnerProfileModal from './components/profile/LearnerProfileModal';
-import { hasDataToMigrate } from './services/migration/migrationService';
-import { hasCompletedOnboarding, getLearnerProfile } from './services/profile/learnerProfileService';
-import { getSessionManager } from './services/session/sessionManager';
-import { monitorSession, logIntervention, type Intervention } from './services/ai/interventionEngine';
-import type { TaskType } from './types/database';
+import { SettingsPanel } from './components/settings';
+import { ComponentSkeleton, WordCardSkeleton } from './components/shared';
 import './css/tailwind.css';
+import { useSwipeGesture } from './hooks';
+import { logIntervention, monitorSession, type Intervention } from './services/ai/interventionEngine';
+import { hasDataToMigrate } from './services/migration/migrationService';
+import { getLearnerProfile, hasCompletedOnboarding } from './services/profile/learnerProfileService';
+import { getSessionManager } from './services/session/sessionManager';
+import { useAppStore } from './ts/stores';
+import type { TaskType } from './types/database';
+
+// Lazy load heavy practice interfaces for code splitting
+const RSInterface = lazy(() => import('./components/practice/RSInterface'));
+const ASQInterface = lazy(() => import('./components/practice/ASQInterface'));
+const WFDInterface = lazy(() => import('./components/practice/WFDInterface'));
 
 const App: React.FC = () => {
   // Access Zustand store using selector pattern for proper re-renders
@@ -313,16 +316,24 @@ const App: React.FC = () => {
     }
   };
 
+  // Mobile swipe gestures
+  const { handlers } = useSwipeGesture({
+    onSwipeLeft: handleNext,
+    onSwipeRight: handlePrevious,
+    threshold: 50,
+  });
+
   return (
     <Theme
       appearance="dark"
-      accentColor="violet"
+      accentColor="indigo"
       grayColor="slate"
       radius="medium"
       scaling="100%"
     >
-      <div className="react-app min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 p-4 sm:p-8">
+      <div className="react-app min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 p-4 sm:p-8" {...handlers}>
         <div className="max-w-7xl mx-auto">
+      {/* Modals - Render first for proper z-index layering */}
           {/* Header - Minimal like PTE branch */}
           <header className="mb-4">
             <Flex justify="between" align="center">
@@ -423,7 +434,7 @@ const App: React.FC = () => {
             <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 animate-in p-4">
               <div className="w-full max-w-6xl max-h-[95vh] overflow-y-auto bg-slate-800 rounded-lg p-6">
                 <Flex justify="between" align="center" mb="4">
-                  <h2 className="text-2xl font-bold text-white">Progress Dashboard</h2>
+                  <h2 className="2xl font-bold text-white">Progress Dashboard</h2>
                   <Button variant="ghost" onClick={() => setShowProgress(false)}>
                     ✕
                   </Button>
@@ -448,6 +459,7 @@ const App: React.FC = () => {
           {/* Main Content - Single Page, No Tabs */}
           {/* 80/20 Layout: 80% learning area, 20% controls */}
           <div className="space-y-4">
+
             {/* Learning Area - 80% of focus */}
             <div className="min-h-[60vh]">
               {isLoadingVocabulary ? (
@@ -455,33 +467,35 @@ const App: React.FC = () => {
               ) : currentItem ? (
                 <>
                   {/* Render appropriate interface based on practice mode */}
-                  {interfaceType === 'rs' && (
-                    <RSInterface
-                      item={currentItem as any}
-                      sessionManager={sessionManager}
-                      onNext={handleNext}
-                      onPrevious={handlePrevious}
-                      onComplete={handleItemComplete}
-                    />
-                  )}
-                  {interfaceType === 'asq' && (
-                    <ASQInterface
-                      item={currentItem as any}
-                      sessionManager={sessionManager}
-                      onNext={handleNext}
-                      onPrevious={handlePrevious}
-                      onComplete={handleItemComplete}
-                    />
-                  )}
-                  {interfaceType === 'wfd' && (
-                    <WFDInterface
-                      item={currentItem as any}
-                      sessionManager={sessionManager}
-                      onNext={handleNext}
-                      onPrevious={handlePrevious}
-                      onComplete={handleItemComplete}
-                    />
-                  )}
+                  <Suspense fallback={<ComponentSkeleton />}>
+                    {interfaceType === 'rs' && (
+                      <RSInterface
+                        item={currentItem as any}
+                        sessionManager={sessionManager}
+                        onNext={handleNext}
+                        onPrevious={handlePrevious}
+                        onComplete={handleItemComplete}
+                      />
+                    )}
+                    {interfaceType === 'asq' && (
+                      <ASQInterface
+                        item={currentItem as any}
+                        sessionManager={sessionManager}
+                        onNext={handleNext}
+                        onPrevious={handlePrevious}
+                        onComplete={handleItemComplete}
+                      />
+                    )}
+                    {interfaceType === 'wfd' && (
+                      <WFDInterface
+                        item={currentItem as any}
+                        sessionManager={sessionManager}
+                        onNext={handleNext}
+                        onPrevious={handlePrevious}
+                        onComplete={handleItemComplete}
+                      />
+                    )}
+                  </Suspense>
                   {interfaceType === 'vocabulary' && (
                     <WordCard
                       item={currentItem}
@@ -517,6 +531,18 @@ const App: React.FC = () => {
           <footer className="mt-8 text-center text-slate-500 text-xs">
             <p>v3.0.0 • Press Space to play • ← → to navigate</p>
           </footer>
+
+          {/* AI Sidebar - Right side */}
+          <AISidebar
+            onOpenChat={() => setShowAITutor(true)}
+            onOpenScoring={() => setShowPronunciationScoring(true)}
+            onOpenInsights={() => setShowWeakAreas(true)}
+            sessionStats={{
+              itemsCompleted: progress.itemsCompleted,
+              accuracy: progress.accuracy,
+              currentStreak: 0, // TODO: Add currentStreak to progress store
+            }}
+          />
         </div>
       </div>
     </Theme>

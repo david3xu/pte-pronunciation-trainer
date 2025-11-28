@@ -9,14 +9,15 @@
  * - Persists conversation history
  */
 
-import React, { useState, useRef, useEffect } from 'react';
-import { Card, Flex, Text, TextField, Button, ScrollArea, Badge, Spinner, IconButton, Tooltip } from '@radix-ui/themes';
-import { PaperPlaneIcon, Cross2Icon, ChatBubbleIcon, ThickArrowUpIcon, ThickArrowDownIcon } from '@radix-ui/react-icons';
+import { ChatBubbleIcon, Cross2Icon, PaperPlaneIcon, ThickArrowDownIcon, ThickArrowUpIcon } from '@radix-ui/react-icons';
+import { Badge, Button, Card, Flex, IconButton, ScrollArea, Spinner, Text, TextField, Tooltip } from '@radix-ui/themes';
+import React, { useEffect, useRef, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { useAppStore } from '../../ts/stores';
 import { askAITutor } from '../../services/ai';
 import { rateAIResponse } from '../../services/ai/ratingService';
+import { useAppStore } from '../../ts/stores';
+
 
 interface Message {
   role: 'user' | 'assistant';
@@ -221,7 +222,7 @@ const AITutorChat: React.FC<AITutorChatProps> = ({
         </Flex>
 
         {/* Messages */}
-        <ScrollArea style={{ flex: 1, marginBottom: 'var(--space-4)', minHeight: 0 }}>
+        <ScrollArea type="auto" scrollbars="vertical" style={{ flex: 1, marginBottom: 'var(--space-4)', minHeight: 0 }}>
           <Flex direction="column" gap="3">
             {messages.map((message) => (
               <Flex
@@ -304,7 +305,7 @@ const AITutorChat: React.FC<AITutorChatProps> = ({
                               <ThickArrowUpIcon />
                             </IconButton>
                           </Tooltip>
-                          <Tooltip content="Not helpful">
+                          <Tooltip content="Not Helpful">
                             <IconButton
                               size="1"
                               variant={message.rating === 'not_helpful' ? 'solid' : 'ghost'}
@@ -344,7 +345,6 @@ const AITutorChat: React.FC<AITutorChatProps> = ({
           </Flex>
         )}
 
-        {/* Input - Always visible at bottom */}
         <Flex
           gap="2"
           align="end"
@@ -355,18 +355,15 @@ const AITutorChat: React.FC<AITutorChatProps> = ({
             borderTop: '1px solid var(--gray-a5)'
           }}
         >
-          <TextField.Root
-            style={{ flex: 1 }}
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyPress={handleKeyPress}
-            placeholder={taskType ? `Ask about ${getTaskTypeName(taskType)}...` : "Ask me about pronunciation..."}
-            disabled={isLoading}
-            size="3"
-          >
-            <TextField.Slot>
-              <ChatBubbleIcon height="16" width="16" />
-            </TextField.Slot>
+          <TextField.Root style={{ flex: 1 }}>
+            {/* @ts-ignore */}
+            <TextField.Input
+              value={input}
+              onChange={(e: any) => setInput(e.target.value)}
+              onKeyPress={handleKeyPress}
+              placeholder={taskType ? `Ask about ${getTaskTypeName(taskType)}...` : "Ask me about pronunciation..."}
+              disabled={isLoading}
+            />
           </TextField.Root>
           <Button
             size="3"

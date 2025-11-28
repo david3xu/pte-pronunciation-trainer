@@ -5,19 +5,19 @@
  * Uses Web Speech Recognition API for speech-to-text conversion.
  */
 
-import React, { useState, useEffect, useRef } from 'react';
-import { Card, Flex, Text, Button, Badge, Progress, ScrollArea } from '@radix-ui/themes';
 import {
-  SpeakerLoudIcon,
-  StopIcon,
-  PlayIcon,
-  ReloadIcon,
-  CheckCircledIcon,
-  CrossCircledIcon,
+    CheckCircledIcon,
+    CrossCircledIcon,
+    PlayIcon,
+    ReloadIcon,
+    SpeakerLoudIcon,
+    StopIcon,
 } from '@radix-ui/react-icons';
-import { useAppStore } from '../../ts/stores';
+import React, { useEffect, useRef, useState } from 'react';
 import { getPronunciationScore } from '../../services/ai';
 import { appConfig } from '../../ts/shared/Config';
+import { useAppStore } from '../../ts/stores';
+import { Badge, Button, Card, Flex, Text } from '@radix-ui/themes';
 
 interface PronunciationScoringProps {
   isOpen?: boolean;
@@ -200,10 +200,10 @@ const PronunciationScoring: React.FC<PronunciationScoringProps> = ({ isOpen = tr
           }}
         >
           <Flex direction="column" gap="2" style={{ width: '100%' }}>
-            <Text size="1" color="gray" weight="medium">Say this:</Text>
+            <Text size="1" weight="medium">Say this:</Text>
             <Text size="5" weight="bold">{targetText}</Text>
             {currentItem && 'phonetic' in currentItem && currentItem.phonetic && (
-              <Text size="2" color="gray" style={{ fontStyle: 'italic' }}>
+              <Text size="2" style={{ fontStyle: 'italic' }}>
                 {String(currentItem.phonetic)}
               </Text>
             )}
@@ -228,7 +228,7 @@ const PronunciationScoring: React.FC<PronunciationScoringProps> = ({ isOpen = tr
             <Flex direction="column" gap="2" align="center" style={{ width: '100%' }}>
               <Button
                 size="4"
-                color="red"
+
                 onClick={handleStopRecording}
                 style={{ width: '100%' }}
               >
@@ -237,7 +237,7 @@ const PronunciationScoring: React.FC<PronunciationScoringProps> = ({ isOpen = tr
               </Button>
               <Flex align="center" gap="2">
                 <span className="animate-pulse text-red-500">●</span>
-                <Text size="2" color="gray">Recording... (max 10s)</Text>
+                <Text size="2">Recording... (max 10s)</Text>
               </Flex>
             </Flex>
           )}
@@ -245,7 +245,7 @@ const PronunciationScoring: React.FC<PronunciationScoringProps> = ({ isOpen = tr
           {isProcessing && (
             <Flex direction="column" gap="2" align="center">
               <ReloadIcon width="24" height="24" className="animate-spin" />
-              <Text size="2" color="gray">Analyzing pronunciation...</Text>
+              <Text size="2">Analyzing pronunciation...</Text>
             </Flex>
           )}
         </Flex>
@@ -260,7 +260,7 @@ const PronunciationScoring: React.FC<PronunciationScoringProps> = ({ isOpen = tr
               border: '1px solid var(--red-6)',
             }}
           >
-            <Text size="2" color="red">{error}</Text>
+            <Text size="2">{error}</Text>
           </Flex>
         )}
 
@@ -283,9 +283,9 @@ const PronunciationScoring: React.FC<PronunciationScoringProps> = ({ isOpen = tr
                   {result.score}%
                 </Badge>
               </Flex>
-              <Progress
-                value={result.score}
-                max={100}
+              <div className="w-full bg-app-border rounded-full h-2"
+
+
                 color={
                   result.score >= 90 ? 'green' :
                   result.score >= 70 ? 'blue' :
@@ -318,12 +318,12 @@ const PronunciationScoring: React.FC<PronunciationScoringProps> = ({ isOpen = tr
             {/* Strengths */}
             {result.strengths.length > 0 && (
               <Flex direction="column" gap="2">
-                <Text size="2" weight="medium" color="green">
+                <Text size="2" weight="medium">
                   <CheckCircledIcon className="inline" /> Strengths:
                 </Text>
                 <Flex direction="column" gap="1">
                   {result.strengths.map((strength, idx) => (
-                    <Text key={idx} size="2" color="gray">• {strength}</Text>
+                    <Text key={idx} size="2">• {strength}</Text>
                   ))}
                 </Flex>
               </Flex>
@@ -332,12 +332,12 @@ const PronunciationScoring: React.FC<PronunciationScoringProps> = ({ isOpen = tr
             {/* Improvements */}
             {result.improvements.length > 0 && (
               <Flex direction="column" gap="2">
-                <Text size="2" weight="medium" color="orange">
+                <Text size="2" weight="medium">
                   <CrossCircledIcon className="inline" /> Areas to Improve:
                 </Text>
                 <Flex direction="column" gap="1">
                   {result.improvements.map((improvement, idx) => (
-                    <Text key={idx} size="2" color="gray">• {improvement}</Text>
+                    <Text key={idx} size="2">• {improvement}</Text>
                   ))}
                 </Flex>
               </Flex>
@@ -369,7 +369,7 @@ const PronunciationScoring: React.FC<PronunciationScoringProps> = ({ isOpen = tr
         {history.length > 0 && (
           <Flex direction="column" gap="2">
             <Text size="2" weight="medium">Recent Attempts</Text>
-            <ScrollArea style={{ maxHeight: '200px' }}>
+            <div style={{ maxHeight: '200px' }}>
               <Flex direction="column" gap="2">
                 {history.map((attempt, idx) => (
                   <Flex
@@ -397,7 +397,7 @@ const PronunciationScoring: React.FC<PronunciationScoringProps> = ({ isOpen = tr
                   </Flex>
                 ))}
               </Flex>
-            </ScrollArea>
+            </div>
           </Flex>
         )}
       </Flex>

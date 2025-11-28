@@ -4,11 +4,12 @@
  * Displays a scrollable list of vocabulary items with quick navigation.
  */
 
+import { Cross2Icon, MagnifyingGlassIcon } from '@radix-ui/react-icons';
+import { Badge, Button, Card, Flex, ScrollArea, Text, TextField } from '@radix-ui/themes';
 import React, { useState } from 'react';
-import { Card, Flex, Text, TextField, Button, Badge, ScrollArea } from '@radix-ui/themes';
-import { MagnifyingGlassIcon, Cross2Icon } from '@radix-ui/react-icons';
+import { stripMarkdown } from '../../lib/utils/textUtils';
 import { useAppStore } from '../../ts/stores';
-import type { VocabularyTerm, PracticeItem } from '../../types/dataset.types';
+import type { PracticeItem, VocabularyTerm } from '../../types/dataset.types';
 import { VocabularyListSkeleton } from '../shared/Skeleton';
 
 const VocabularyList: React.FC = () => {
@@ -48,20 +49,23 @@ const VocabularyList: React.FC = () => {
           </Flex>
 
           {/* Search */}
-          <TextField.Root
-            placeholder="Search vocabulary..."
-            value={searchQuery}
-            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchQuery(e.target.value)}
-          >
+          <TextField.Root>
             <TextField.Slot>
               <MagnifyingGlassIcon height="16" width="16" />
             </TextField.Slot>
+            {/* @ts-ignore */}
+            <TextField.Input
+              placeholder="Search vocabulary..."
+              value={searchQuery}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchQuery(e.target.value)}
+            />
             {searchQuery && (
               <TextField.Slot>
                 <Button
                   size="1"
                   variant="ghost"
                   onClick={() => setSearchQuery('')}
+                  style={{ padding: 0, height: 'auto' }}
                 >
                   <Cross2Icon height="14" width="14" />
                 </Button>
@@ -71,7 +75,7 @@ const VocabularyList: React.FC = () => {
         </Flex>
 
         {/* List */}
-        <ScrollArea style={{ height: '400px' }}>
+        <ScrollArea type="auto" scrollbars="vertical" style={{ height: '400px' }}>
           {isLoading ? (
             <VocabularyListSkeleton />
           ) : (
@@ -117,7 +121,7 @@ const VocabularyList: React.FC = () => {
                           whiteSpace: 'nowrap',
                         }}
                       >
-                        {displayText}
+                        {stripMarkdown(displayText)}
                       </Text>
 
                       {/* Difficulty badge */}

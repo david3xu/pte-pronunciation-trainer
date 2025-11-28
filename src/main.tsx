@@ -5,10 +5,10 @@
  * Fully migrated from vanilla JS to React + TypeScript.
  */
 
+import '@radix-ui/themes/styles.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import '@radix-ui/themes/styles.css';
 import './css/tailwind.css';
 
 // Initialize configuration (must be imported before App)

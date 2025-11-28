@@ -48,7 +48,15 @@ To enable auth, set these environment variables in Vercel:
       getUser: async () => ({ data: { user: null }, error: null }),
       signOut: async () => ({ error: null }),
       onAuthStateChange: () => ({ data: { subscription: { unsubscribe: () => {} } } }),
-    }
+    },
+    // Mock database operations for guest mode
+    from: (_table: string) => ({
+      select: () => ({ data: [], error: null }),
+      insert: () => ({ data: null, error: null }),
+      update: () => ({ data: null, error: null }),
+      delete: () => ({ data: null, error: null }),
+      upsert: () => ({ data: null, error: null }),
+    }),
   } as any;
 } else {
   // Real Supabase client with valid configuration

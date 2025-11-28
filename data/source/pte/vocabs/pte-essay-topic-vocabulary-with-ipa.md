@@ -1,414 +1,419 @@
-# PTE Essay Topic Vocabulary with IPA
+# PTE Essay Vocabulary - From QUICK-FILL-GUIDE + Templates
 
-**Purpose:** Academic vocabulary for PTE essay writing (Template B)
-**Total Terms:** 327 phrases across 9 topic sections
-**Format:** Multi-word academic phrases with IPA for key words
-**Usage:** Memorize 8-10 terms per essay topic
-
----
-
-## 1. Education & Learning - Core Education Terms (15)
-
-1. formal education system | /ˈfɔːməl/ — sounds like **FOR-mul**
-2. academic excellence | /ˌækəˈdemɪk/ — sounds like **ak-uh-DEM-ik**
-3. educational institution | /ˌɪnstɪˈtjuːʃən/ — sounds like **in-stuh-TOO-shun**
-4. student performance | /pəˈfɔːməns/ — sounds like **per-FOR-muns**
-5. learning outcomes | /ˈaʊtkʌmz/ — sounds like **OWT-kumz**
-6. knowledge retention | /rɪˈtenʃən/ — sounds like **rih-TEN-shun**
-7. practical skills development | /ˈpræktɪkəl/ — sounds like **PRAK-tih-kul**
-8. assessment method | /əˈsesmənt/ — sounds like **uh-SES-ment**
-9. standardized evaluation | /ɪˌvæljuˈeɪʃən/ — sounds like **ih-val-yoo-AY-shun**
-10. educational research | /rɪˈsɜːtʃ/ — sounds like **rih-SURCH**
-11. teaching approach | /əˈprəʊtʃ/ — sounds like **uh-PROHCH**
-12. curriculum design | /kəˈrɪkjʊləm/ — sounds like **kuh-RIK-yuh-lum**
-13. academic discipline | /ˈdɪsəplɪn/ — sounds like **DIS-uh-plin**
-14. time management skills | /ˈmænɪdʒmənt/ — sounds like **MAN-ij-ment**
-15. educational policy | /ˈpɒləsi/ — sounds like **POL-uh-see**
-
-## 1. Education & Learning - Teaching Methods (12)
-
-1. experiential learning | /ɪkˌspɪəriˈenʃəl/ — sounds like **ek-speer-ee-EN-shul**
-2. learning by doing | /ˈduːɪŋ/ — sounds like **DOO-ing**
-3. traditional teaching methods | /trəˈdɪʃənəl/ — sounds like **truh-DISH-uh-nul**
-4. hands-on experience | /ɪkˈspɪəriəns/ — sounds like **ik-SPEER-ee-uns**
-5. practical application | /ˌæplɪˈkeɪʃən/ — sounds like **ap-lih-KAY-shun**
-6. classroom instruction | /ɪnˈstrʌkʃən/ — sounds like **in-STRUK-shun**
-7. systematic instruction | /ˌsɪstəˈmætɪk/ — sounds like **sis-tuh-MAT-ik**
-8. active engagement | /ɪnˈɡeɪdʒmənt/ — sounds like **in-GAYJ-ment**
-9. collaborative learning | /kəˈlæbərətɪv/ — sounds like **kuh-LAB-uh-ruh-tiv**
-10. student-centered approach | /ˈsentəd/ — sounds like **SEN-turd**
-11. teacher-led instruction | /led/ — sounds like **LED**
-12. blended learning model | /ˈblendɪd/ — sounds like **BLEN-did**
-
-## 1. Education & Learning - Academic Assessment (15)
-
-1. formal written examination | /ɪɡˌzæmɪˈneɪʃən/ — sounds like **ig-zam-ih-NAY-shun**
-2. valid assessment method | /ˈvælɪd/ — sounds like **VAL-id**
-3. objective evaluation | /əbˈdʒektɪv/ — sounds like **ub-JEK-tiv**
-4. standardized testing | /ˈtestɪŋ/ — sounds like **TEST-ing**
-5. grading criteria | /kraɪˈtɪəriə/ — sounds like **kry-TEER-ee-uh**
-6. performance measurement | /ˈmeʒəmənt/ — sounds like **MEZH-ur-ment**
-7. academic standards | /ˈstændədz/ — sounds like **STAN-durdz**
-8. exam-related pressure | /ˈpreʃə/ — sounds like **PRESH-ur**
-9. test performance | /pəˈfɔːməns/ — sounds like **per-FOR-muns**
-10. marking scheme | /skiːm/ — sounds like **SKEEM**
-11. deadline policies | /ˈdedlaɪn/ — sounds like **DED-lyn**
-12. late submission penalty | /pəˈnælti/ — sounds like **PEN-ul-tee**
-13. mark deduction system | /dɪˈdʌkʃən/ — sounds like **dih-DUK-shun**
-14. continuous assessment | /kənˈtɪnjuəs/ — sounds like **kun-TIN-yoo-us**
-15. holistic evaluation | /həˈlɪstɪk/ — sounds like **hoh-LIS-tik**
-
-## 1. Education & Learning - International & Travel Education (10)
-
-1. travel in education | /ˈtrævəl/ — sounds like **TRAV-ul**
-2. educational travel experiences | /ɪkˈspɪəriənsɪz/ — sounds like **ik-SPEER-ee-uns-iz**
-3. cross-cultural learning | /krɒs ˈkʌltʃərəl/ — sounds like **kross-KUL-chur-ul**
-4. global perspective | /pəˈspektɪv/ — sounds like **per-SPEK-tiv**
-5. diverse learning environments | /daɪˈvɜːs/ — sounds like **dy-VURS**
-6. study abroad programs | /əˈbrɔːd/ — sounds like **uh-BRAWD**
-7. cultural immersion | /ɪˈmɜːʃən/ — sounds like **ih-MUR-shun**
-8. international exposure | /ɪkˈspəʊʒə/ — sounds like **ik-SPOH-zhur**
-9. home-based learning | /beɪst/ — sounds like **BAYST**
-10. brilliant scholars | /ˈbrɪliənt/ — sounds like **BRIL-yunt**
-
-## 2. Work & Employment - Work-Life Topics (15)
-
-1. work-life balance | /ˈbæləns/ — sounds like **BAL-uns**
-2. professional responsibilities | /rɪˌspɒnsəˈbɪlətiz/ — sounds like **rih-spon-suh-BIL-uh-teez**
-3. personal life aspects | /ˈæspekts/ — sounds like **AS-pekts**
-4. leisure pursuits | /ˈleʒə pəˈsjuːts/ — sounds like **LEZH-ur per-SOOTS**
-5. family engagement | /ɪnˈɡeɪdʒmənt/ — sounds like **in-GAYJ-ment**
-6. workplace demands | /dɪˈmɑːndz/ — sounds like **dih-MAHNDS**
-7. mental health wellbeing | /ˌwelˈbiːɪŋ/ — sounds like **wel-BEE-ing**
-8. overall life satisfaction | /ˌsætɪsˈfækʃən/ — sounds like **sat-is-FAK-shun**
-9. job satisfaction levels | /ˈlevəlz/ — sounds like **LEV-ulz**
-10. career development | /dɪˈveləpmənt/ — sounds like **dih-VEL-up-ment**
-11. employment opportunities | /ˌɒpəˈtjuːnətiz/ — sounds like **op-ur-TOO-nuh-teez**
-12. professional environment | /ɪnˈvaɪrənmənt/ — sounds like **in-VY-run-ment**
-13. work performance | /pəˈfɔːməns/ — sounds like **per-FOR-muns**
-14. productivity levels | /ˌprɒdʌkˈtɪvəti/ — sounds like **prod-uk-TIV-uh-tee**
-15. workplace flexibility | /ˌfleksəˈbɪləti/ — sounds like **flek-suh-BIL-uh-tee**
-
-## 2. Work & Employment - Mental Health & Wellbeing (15)
-
-1. stress and anxiety | /streˈs æŋˈzaɪəti/ — sounds like **STRESS ang-ZY-uh-tee**
-2. emotional support | /ɪˈməʊʃənəl/ — sounds like **ih-MOH-shun-ul**
-3. psychological wellbeing | /ˌsaɪkəˈlɒdʒɪkəl/ — sounds like **sy-kuh-LOJ-ih-kul**
-4. stress reduction | /rɪˈdʌkʃən/ — sounds like **rih-DUK-shun**
-5. mental pressure | /ˈpreʃə/ — sounds like **PRESH-ur**
-6. relaxation | /ˌriːlækˈseɪʃən/ — sounds like **ree-lak-SAY-shun**
-7. comfort and discomfort | /ˈkʌmfət dɪsˈkʌmfət/ — sounds like **KUM-furt dis-KUM-furt**
-8. emotional stability | /stəˈbɪləti/ — sounds like **stuh-BIL-uh-tee**
-9. feelings of isolation | /ˌaɪsəˈleɪʃən/ — sounds like **eye-suh-LAY-shun**
-10. loneliness | /ˈləʊnlinəs/ — sounds like **LOHN-lee-nus**
-11. companionship | /kəmˈpæniənʃɪp/ — sounds like **kum-PAN-yun-ship**
-12. peace of mind | /piːs/ — sounds like **PEESS**
-13. emotional wellbeing | /ˌwelˈbiːɪŋ/ — sounds like **wel-BEE-ing**
-14. stress management | /ˈmænɪdʒmənt/ — sounds like **MAN-ij-ment**
-15. mental resilience | /rɪˈzɪliəns/ — sounds like **rih-ZIL-ee-uns**
-
-## 2. Work & Employment - Career & Jobs (12)
-
-1. job creation | /kriˈeɪʃən/ — sounds like **kree-AY-shun**
-2. employment rate | /reɪt/ — sounds like **RAYT**
-3. career goals | /ɡəʊlz/ — sounds like **GOHLZ**
-4. professional growth | /ɡrəʊθ/ — sounds like **GROHTH**
-5. skill development | /dɪˈveləpmənt/ — sounds like **dih-VEL-up-ment**
-6. career path | /pɑːθ/ — sounds like **PAHTH**
-7. work experience | /ɪkˈspɪəriəns/ — sounds like **ik-SPEER-ee-uns**
-8. job security | /sɪˈkjʊərəti/ — sounds like **sih-KYOOR-uh-tee**
-9. income generation | /ˌdʒenəˈreɪʃən/ — sounds like **jen-uh-RAY-shun**
-10. economic opportunity | /ˌiːkəˈnɒmɪk/ — sounds like **ee-kuh-NOM-ik**
-11. labor market | /ˈleɪbə/ — sounds like **LAY-bur**
-12. workforce participation | /pɑːˌtɪsɪˈpeɪʃən/ — sounds like **par-tis-ih-PAY-shun**
-
-## 3. Society & Government - Urban & Infrastructure (15)
-
-1. building design effects | /dɪˈzaɪn/ — sounds like **dih-ZYN**
-2. architectural features | /ˌɑːkɪˈtektʃərəl/ — sounds like **ar-kih-TEK-chur-ul**
-3. urban planning studies | /ˈɜːbən/ — sounds like **UR-bun**
-4. well-designed buildings | /dɪˈzaɪnd/ — sounds like **dih-ZYND**
-5. poorly designed structures | /ˈstrʌktʃəz/ — sounds like **STRUK-churz**
-6. natural light access | /ˈækses/ — sounds like **AK-ses**
-7. ventilation systems | /ˌventɪˈleɪʃən/ — sounds like **ven-tih-LAY-shun**
-8. living environment | /ɪnˈvaɪrənmənt/ — sounds like **in-VY-run-ment**
-9. working environment | /ɪnˈvaɪrənmənt/ — sounds like **in-VY-run-ment**
-10. physical infrastructure | /ˈɪnfrəstrʌktʃə/ — sounds like **IN-fruh-struk-chur**
-11. public spaces | /ˈpʌblɪk/ — sounds like **PUB-lik**
-12. residential areas | /ˌrezɪˈdenʃəl/ — sounds like **rez-ih-DEN-shul**
-13. commercial districts | /kəˈmɜːʃəl/ — sounds like **kuh-MUR-shul**
-14. environmental quality | /kwɒləti/ — sounds like **KWOL-uh-tee**
-15. spatial design | /ˈspeɪʃəl/ — sounds like **SPAY-shul**
-
-## 3. Society & Government - Historic Preservation (10)
-
-1. historic buildings | /hɪˈstɒrɪk/ — sounds like **hih-STOR-ik**
-2. cultural heritage | /ˈherɪtɪdʒ/ — sounds like **HER-ih-tij**
-3. preservation efforts | /ˌprezəˈveɪʃən/ — sounds like **prez-ur-VAY-shun**
-4. architectural preservation | /ˌɑːkɪˈtektʃərəl/ — sounds like **ar-kih-TEK-chur-ul**
-5. historic preservation | /hɪˈstɒrɪk/ — sounds like **hih-STOR-ik**
-6. restoration costs | /ˌrestəˈreɪʃən/ — sounds like **rest-uh-RAY-shun**
-7. heritage conservation | /ˌkɒnsəˈveɪʃən/ — sounds like **kon-sur-VAY-shun**
-8. historical significance | /sɪɡˈnɪfɪkəns/ — sounds like **sig-NIF-ih-kuns**
-9. preservation projects | /ˈprɒdʒekts/ — sounds like **PROJ-ekts**
-10. cultural monuments | /ˈmɒnjʊmənts/ — sounds like **MON-yoo-ments**
-
-## 3. Society & Government - International Relations (19)
-
-1. international organizations | /ˌɔːɡənaɪˈzeɪʃənz/ — sounds like **or-gun-eye-ZAY-shunz**
-2. global problems | /ˈɡləʊbəl/ — sounds like **GLOH-bul**
-3. government cooperation | /kəʊˌɒpəˈreɪʃən/ — sounds like **koh-op-uh-RAY-shun**
-4. coordination challenges | /kəʊˌɔːdɪˈneɪʃən/ — sounds like **koh-or-dih-NAY-shun**
-5. resource limitations | /ˌlɪmɪˈteɪʃənz/ — sounds like **lim-ih-TAY-shunz**
-6. collaborative efforts | /kəˈlæbərətɪv/ — sounds like **kuh-LAB-uh-ruh-tiv**
-7. unified strategies | /ˈjuːnɪfaɪd/ — sounds like **YOO-nih-fyd**
-8. shared responsibilities | /ʃeəd/ — sounds like **SHAIRD**
-9. binding agreements | /ˈbaɪndɪŋ/ — sounds like **BYN-ding**
-10. policy frameworks | /ˈfreɪmwɜːks/ — sounds like **FRAYM-wurks**
-11. diplomatic relations | /ˌdɪpləˈmætɪk/ — sounds like **dip-luh-MAT-ik**
-12. international initiatives | /ɪˈnɪʃətɪvz/ — sounds like **ih-NISH-uh-tivz**
-13. multinational approach | /ˌmʌltiˈnæʃənəl/ — sounds like **mul-tee-NASH-un-ul**
-14. global governance | /ˈɡʌvənəns/ — sounds like **GUV-ur-nuns**
-15. cross-border cooperation | /ˈbɔːdə/ — sounds like **BOR-dur**
-16. urgent issues | /ˈɜːdʒənt/ — sounds like **UR-junt**
-17. pressing problems | /ˈpresɪŋ/ — sounds like **PRES-ing**
-18. political commitment | /kəˈmɪtmənt/ — sounds like **kuh-MIT-ment**
-19. coordinated efforts | /kəʊˈɔːdɪneɪtɪd/ — sounds like **koh-OR-dih-nay-tid**
-
-## 4. Tourism & Development - Tourism Impact (15)
-
-1. tourism development | /ˈtʊərɪzəm/ — sounds like **TOOR-iz-um**
-2. less developed countries | /dɪˈveləpt/ — sounds like **dih-VEL-upt**
-3. economic benefits | /ˌiːkəˈnɒmɪk/ — sounds like **ee-kuh-NOM-ik**
-4. tourist revenue | /ˈrevənjuː/ — sounds like **REV-uh-noo**
-5. visitor spending | /ˈspendɪŋ/ — sounds like **SPEND-ing**
-6. hospitality sectors | /ˌhɒspɪˈtæləti/ — sounds like **hos-pih-TAL-uh-tee**
-7. infrastructure improvement | /ɪmˈpruːvmənt/ — sounds like **im-PROOV-ment**
-8. local populations | /ˌpɒpjʊˈleɪʃənz/ — sounds like **pop-yoo-LAY-shunz**
-9. environmental damage | /ˈdæmɪdʒ/ — sounds like **DAM-ij**
-10. cultural disruption | /dɪsˈrʌpʃən/ — sounds like **dis-RUP-shun**
-11. resource depletion | /dɪˈpliːʃən/ — sounds like **dih-PLEE-shun**
-12. overcrowding issues | /ˌəʊvəˈkraʊdɪŋ/ — sounds like **oh-vur-KROWD-ing**
-13. traditional lifestyles | /ˈlaɪfstaɪlz/ — sounds like **LYF-stylz**
-14. sustainable tourism | /səˈsteɪnəbəl/ — sounds like **suh-STAYN-uh-bul**
-15. tourism destinations | /ˌdestɪˈneɪʃənz/ — sounds like **des-tih-NAY-shunz**
-
-## 4. Tourism & Development - Economic Development (12)
-
-1. economic growth | /ɡrəʊθ/ — sounds like **GROHTH**
-2. income generation | /ˌdʒenəˈreɪʃən/ — sounds like **jen-uh-RAY-shun**
-3. job creation | /kriˈeɪʃən/ — sounds like **kree-AY-shun**
-4. business activities | /ækˈtɪvətiz/ — sounds like **ak-TIV-uh-teez**
-5. investment opportunities | /ɪnˈvestmənt/ — sounds like **in-VEST-ment**
-6. financial resources | /faɪˈnænʃəl/ — sounds like **fy-NAN-shul**
-7. development studies | /dɪˈveləpmənt/ — sounds like **dih-VEL-up-ment**
-8. poverty reduction | /ˈpɒvəti/ — sounds like **POV-ur-tee**
-9. living standards improvement | /ˈstændədz/ — sounds like **STAN-durdz**
-10. economic benefits | /ˈbenɪfɪts/ — sounds like **BEN-ih-fits**
-11. wealth distribution | /ˌdɪstrɪˈbjuːʃən/ — sounds like **dis-trih-BYOO-shun**
-12. sustainable development | /səˈsteɪnəbəl/ — sounds like **suh-STAYN-uh-bul**
-
-## 5. Culture & Lifestyle - Family & Personal (15)
-
-1. getting married | /ˈmærid/ — sounds like **MAR-eed**
-2. family responsibilities | /rɪˌspɒnsəˈbɪlətiz/ — sounds like **rih-spon-suh-BIL-uh-teez**
-3. personal circumstances | /ˈsɜːkəmstənsɪz/ — sounds like **SUR-kum-stan-siz**
-4. family support system | /səˈpɔːt/ — sounds like **suh-PORT**
-5. financial arrangements | /əˈreɪndʒmənts/ — sounds like **uh-RAYNJ-ments**
-6. life decisions | /dɪˈsɪʒənz/ — sounds like **dih-SIZH-unz**
-7. individual wellbeing | /ˌwelˈbiːɪŋ/ — sounds like **wel-BEE-ing**
-8. quality of life | /ˈkwɒləti/ — sounds like **KWOL-uh-tee**
-9. personal development | /dɪˈveləpmənt/ — sounds like **dih-VEL-up-ment**
-10. relationship management | /rɪˈleɪʃənʃɪp/ — sounds like **rih-LAY-shun-ship**
-11. family engagement | /ɪnˈɡeɪdʒmənt/ — sounds like **in-GAYJ-ment**
-12. social connections | /kəˈnekʃənz/ — sounds like **kuh-NEK-shunz**
-13. community involvement | /ɪnˈvɒlvmənt/ — sounds like **in-VOLV-ment**
-14. cultural values | /ˈvæljuːz/ — sounds like **VAL-yooz**
-15. lifestyle choices | /ˈlaɪfstaɪl/ — sounds like **LYF-styl**
-
-## 5. Culture & Lifestyle - Social Issues (12)
-
-1. social research | /rɪˈsɜːtʃ/ — sounds like **rih-SURCH**
-2. community impact | /ˈɪmpækt/ — sounds like **IM-pakt**
-3. cultural awareness | /əˈweənəs/ — sounds like **uh-WAIR-nus**
-4. social behavior | /bɪˈheɪvjə/ — sounds like **bih-HAYV-yur**
-5. public opinion | /əˈpɪnjən/ — sounds like **uh-PIN-yun**
-6. societal changes | /səˈsaɪətəl/ — sounds like **suh-SY-uh-tul**
-7. demographic trends | /ˌdeməˈɡræfɪk/ — sounds like **dem-uh-GRAF-ik**
-8. population dynamics | /daɪˈnæmɪks/ — sounds like **dy-NAM-iks**
-9. social welfare | /ˈwelfeə/ — sounds like **WEL-fair**
-10. community development | /dɪˈveləpmənt/ — sounds like **dih-VEL-up-ment**
-11. civic engagement | /ˈsɪvɪk/ — sounds like **SIV-ik**
-12. social responsibility | /rɪˌspɒnsəˈbɪləti/ — sounds like **rih-spon-suh-BIL-uh-tee**
-
-## 5. Culture & Lifestyle - Leisure & Entertainment (10)
-
-1. entertainment value | /ˌentəˈteɪnmənt/ — sounds like **en-tur-TAYN-ment**
-2. leisure activities | /ˈleʒə/ — sounds like **LEZH-ur**
-3. recreational pursuits | /ˌrekriˈeɪʃənəl/ — sounds like **rek-ree-AY-shun-ul**
-4. entertainment programs | /ˈprəʊɡræmz/ — sounds like **PROH-gramz**
-5. media consumption | /kənˈsʌmpʃən/ — sounds like **kun-SUMP-shun**
-6. leisure time | /taɪm/ — sounds like **TYM**
-7. entertainment industry | /ˈɪndəstri/ — sounds like **IN-dus-tree**
-8. social entertainment | /ˈsəʊʃəl/ — sounds like **SOH-shul**
-9. cultural activities | /ækˈtɪvətiz/ — sounds like **ak-TIV-uh-teez**
-10. hobby engagement | /ˈhɒbi/ — sounds like **HOB-ee**
-
-## 6. Technology & Innovation - Technology Terms (17)
-
-1. technological progress | /ˌteknəˈlɒdʒɪkəl/ — sounds like **tek-nuh-LOJ-ih-kul**
-2. digital technology | /ˈdɪdʒɪtəl/ — sounds like **DIJ-ih-tul**
-3. computer technology | /kəmˈpjuːtə/ — sounds like **kum-PYOO-tur**
-4. innovation | /ˌɪnəˈveɪʃən/ — sounds like **in-uh-VAY-shun**
-5. technological advancement | /ədˈvɑːnsmənt/ — sounds like **ud-VAHNS-ment**
-6. technology implementation | /ˌɪmplɪmenˈteɪʃən/ — sounds like **im-plih-men-TAY-shun**
-7. communication systems | /kəˌmjuːnɪˈkeɪʃən/ — sounds like **kuh-myoo-nih-KAY-shun**
-8. modern technology | /ˈmɒdən/ — sounds like **MOD-urn**
-9. technological development | /dɪˈveləpmənt/ — sounds like **dih-VEL-up-ment**
-10. information technology | /ˌɪnfəˈmeɪʃən/ — sounds like **in-fur-MAY-shun**
-11. technological achievements | /əˈtʃiːvmənts/ — sounds like **uh-CHEEV-ments**
-12. digital transformation | /ˌtrænsfəˈmeɪʃən/ — sounds like **trans-fur-MAY-shun**
-13. technological solutions | /səˈluːʃənz/ — sounds like **suh-LOO-shunz**
-14. online platforms | /ˈɒnlaɪn/ — sounds like **ON-lyn**
-15. technological innovation | /ˌɪnəˈveɪʃən/ — sounds like **in-uh-VAY-shun**
-16. smartphone technology | /ˈsmɑːtfəʊn/ — sounds like **SMART-fohn**
-17. mobile devices | /ˈməʊbaɪl/ — sounds like **MOH-byl**
-
-## 6. Technology & Innovation - Invention & Discovery (10)
-
-1. important inventions | /ɪnˈvenʃənz/ — sounds like **in-VEN-shunz**
-2. scientific breakthrough | /ˈbreɪkθruː/ — sounds like **BRAYK-throo**
-3. medical advancement | /ˈmedɪkəl/ — sounds like **MED-ih-kul**
-4. research and development | /rɪˈsɜːtʃ/ — sounds like **rih-SURCH**
-5. cutting-edge technology | /ˈkʌtɪŋ edʒ/ — sounds like **KUT-ing EJ**
-6. revolutionary innovation | /ˌrevəˈluːʃənəri/ — sounds like **rev-uh-LOO-shun-air-ee**
-7. technological impact | /ˈɪmpækt/ — sounds like **IM-pakt**
-8. modern inventions | /ˈmɒdən/ — sounds like **MOD-urn**
-9. innovative solutions | /ˈɪnəvətɪv/ — sounds like **IN-uh-vuh-tiv**
-10. groundbreaking discoveries | /ˈɡraʊndbreɪkɪŋ/ — sounds like **GROWND-bray-king**
-
-## 7. Environment & Sustainability - Environmental Terms (19)
-
-1. environmental damage | /ɪnˌvaɪrənˈmentəl/ — sounds like **in-vy-run-MEN-tul**
-2. natural resources | /rɪˈsɔːsɪz/ — sounds like **rih-SOR-siz**
-3. resource depletion | /dɪˈpliːʃən/ — sounds like **dih-PLEE-shun**
-4. climate change issues | /ˈklaɪmət/ — sounds like **KLY-mut**
-5. air quality | /ˈkwɒləti/ — sounds like **KWOL-uh-tee**
-6. pollution levels | /pəˈluːʃən/ — sounds like **puh-LOO-shun**
-7. ecological impact | /ˌiːkəˈlɒdʒɪkəl/ — sounds like **ee-kuh-LOJ-ih-kul**
-8. environmental protection | /prəˈtekʃən/ — sounds like **pruh-TEK-shun**
-9. sustainable practices | /səˈsteɪnəbəl/ — sounds like **suh-STAYN-uh-bul**
-10. conservation efforts | /ˌkɒnsəˈveɪʃən/ — sounds like **kon-sur-VAY-shun**
-11. ecosystem balance | /ˈiːkəʊsɪstəm/ — sounds like **EE-koh-sis-tum**
-12. biodiversity preservation | /ˌbaɪəʊdaɪˈvɜːsəti/ — sounds like **by-oh-dy-VUR-suh-tee**
-13. renewable resources | /rɪˈnjuːəbəl/ — sounds like **rih-NYOO-uh-bul**
-14. carbon emissions | /ɪˈmɪʃənz/ — sounds like **ih-MISH-unz**
-15. environmental awareness | /əˈweənəs/ — sounds like **uh-WAIR-nus**
-16. environmental degradation | /ˌdeɡrəˈdeɪʃən/ — sounds like **deg-ruh-DAY-shun**
-17. environmental impacts | /ˈɪmpækts/ — sounds like **IM-pakts**
-18. rising levels | /ˈraɪzɪŋ/ — sounds like **RY-zing**
-19. human survival | /səˈvaɪvəl/ — sounds like **sur-VY-vul**
-
-## 7. Environment & Sustainability - Sustainability (10)
-
-1. sustainable development | /səˈsteɪnəbəl/ — sounds like **suh-STAYN-uh-bul**
-2. long-term viability | /ˌvaɪəˈbɪləti/ — sounds like **vy-uh-BIL-uh-tee**
-3. ecological balance | /ˌiːkəˈlɒdʒɪkəl/ — sounds like **ee-kuh-LOJ-ih-kul**
-4. resource management | /ˈmænɪdʒmənt/ — sounds like **MAN-ij-ment**
-5. environmental responsibility | /rɪˌspɒnsəˈbɪləti/ — sounds like **rih-spon-suh-BIL-uh-tee**
-6. green initiatives | /ɪˈnɪʃətɪvz/ — sounds like **ih-NISH-uh-tivz**
-7. conservation strategies | /ˈstrætədʒiz/ — sounds like **STRAT-uh-jeez**
-8. sustainable solutions | /səˈluːʃənz/ — sounds like **suh-LOO-shunz**
-9. environmental stewardship | /ˈstjuːədʃɪp/ — sounds like **STYOO-urd-ship**
-10. future generations | /ˌdʒenəˈreɪʃənz/ — sounds like **jen-uh-RAY-shunz**
-
-## 8. Universal Academic Terms - Analysis & Reasoning (15)
-
-1. compelling advantage | /kəmˈpelɪŋ/ — sounds like **kum-PEL-ing**
-2. significant disadvantage | /sɪɡˈnɪfɪkənt/ — sounds like **sig-NIF-ih-kunt**
-3. positive effects | /ˈpɒzətɪv/ — sounds like **POZ-ih-tiv**
-4. negative effects | /ˈneɡətɪv/ — sounds like **NEG-uh-tiv**
-5. potential to facilitate | /fəˈsɪlɪteɪt/ — sounds like **fuh-SIL-ih-tayt**
-6. likely to generate | /ˈdʒenəreɪt/ — sounds like **JEN-uh-rayt**
-7. subsequently cause | /ˈsʌbsɪkwəntli/ — sounds like **SUB-sih-kwunt-lee**
-8. ultimately leading to | /ˈʌltɪmətli/ — sounds like **UL-tih-mut-lee**
-9. broader outcomes | /ˈaʊtkʌmz/ — sounds like **OWT-kumz**
-10. direct result of | /rɪˈzʌlt/ — sounds like **rih-ZULT**
-11. substantial influence | /səbˈstænʃəl/ — sounds like **sub-STAN-shul**
-12. far-reaching impact | /ˈɪmpækt/ — sounds like **IM-pakt**
-13. considerable validity | /ˌvæˈlɪdəti/ — sounds like **val-ID-uh-tee**
-14. vital component | /kəmˈpəʊnənt/ — sounds like **kum-POH-nunt**
-15. effective approach | /əˈprəʊtʃ/ — sounds like **uh-PROHCH**
-
-## 8. Universal Academic Terms - Research & Evidence (12)
-
-1. evidence reveals that | /ˈevɪdəns/ — sounds like **EV-ih-duns**
-2. research demonstrates | /ˈdemənstreɪts/ — sounds like **DEM-un-strayts**
-3. studies indicate | /ˈɪndɪkeɪt/ — sounds like **IN-dih-kayt**
-4. data suggests | /səˈdʒests/ — sounds like **suh-JESTS**
-5. findings show | /ˈfaɪndɪŋz/ — sounds like **FYN-dingz**
-6. statistics reveal | /stəˈtɪstɪks/ — sounds like **stuh-TIS-tiks**
-7. approximately 80% of | /əˈprɒksɪmətli/ — sounds like **uh-PROK-sih-mut-lee**
-8. over 60% of | /ˈəʊvə/ — sounds like **OH-vur**
-9. policy research | /ˈpɒləsi/ — sounds like **POL-uh-see**
-10. academic studies | /ˌækəˈdemɪk/ — sounds like **ak-uh-DEM-ik**
-11. institutional research | /ˌɪnstɪˈtjuːʃənəl/ — sounds like **in-stuh-TOO-shun-ul**
-12. empirical evidence | /ɪmˈpɪrɪkəl/ — sounds like **im-PEER-ih-kul**
-
-## 8. Universal Academic Terms - Opinion & Position (15)
-
-1. I contend that | /kənˈtend/ — sounds like **kun-TEND**
-2. to what extent | /ɪkˈstent/ — sounds like **ik-STENT**
-3. agree or disagree | /ˌdɪsəˈɡriː/ — sounds like **dis-uh-GREE**
-4. balanced perspective | /pəˈspektɪv/ — sounds like **per-SPEK-tiv**
-5. partially agree | /ˈpɑːʃəli/ — sounds like **PAR-shul-ee**
-6. strongly support | /ˈstrɒŋli/ — sounds like **STRONG-lee**
-7. considerable merit | /ˈmerɪt/ — sounds like **MER-it**
-8. valid argument | /ˈvælɪd/ — sounds like **VAL-id**
-9. questionable claim | /ˈkwestʃənəbəl/ — sounds like **KWES-chun-uh-bul**
-10. too absolute | /ˈæbsəluːt/ — sounds like **AB-suh-loot**
-11. universally applicable | /ˌjuːnɪˈvɜːsəli/ — sounds like **yoo-nih-VUR-sul-ee**
-12. context-dependent | /dɪˈpendənt/ — sounds like **dih-PEN-dunt**
-13. individual circumstances | /ˈsɜːkəmstənsɪz/ — sounds like **SUR-kum-stan-siz**
-14. depends on situation | /ˌsɪtʃuˈeɪʃən/ — sounds like **sit-choo-AY-shun**
-15. nuanced view | /ˈnjuːɑːnst/ — sounds like **NYOO-ahnst**
-
-## 9. Transition & Structure - Paragraph Transitions (15)
-
-1. to begin with | /bɪˈɡɪn/ — sounds like **bih-GIN**
-2. in particular | /pəˈtɪkjʊlə/ — sounds like **pur-TIK-yoo-lur**
-3. for instance | /ˈɪnstəns/ — sounds like **IN-stuns**
-4. however | /haʊˈevə/ — sounds like **how-EV-ur**
-5. nevertheless | /ˌnevəðəˈles/ — sounds like **nev-ur-thuh-LES**
-6. on the other hand | /hænd/ — sounds like **HAND**
-7. equally important | /ɪmˈpɔːtənt/ — sounds like **im-POR-tunt**
-8. it is largely because | /ˈlɑːdʒli/ — sounds like **LARJ-lee**
-9. according to research | /əˈkɔːdɪŋ/ — sounds like **uh-KOR-ding**
-10. taken together | /təˈɡeðə/ — sounds like **tuh-GETH-ur**
-11. these considerations demonstrate | /kənˌsɪdəˈreɪʃənz/ — sounds like **kun-sid-uh-RAY-shunz**
-12. thus | /ðʌs/ — sounds like **THUS**
-13. it is imperative | /ɪmˈperətɪv/ — sounds like **im-PAIR-uh-tiv**
-14. in recent years | /ˈriːsənt/ — sounds like **REE-sunt**
-15. has emerged as | /ɪˈmɜːdʒd/ — sounds like **ih-MURJD**
-
-## 9. Transition & Structure - Connecting Ideas (12)
-
-1. ultimately leading to | /ˈʌltɪmətli/ — sounds like **UL-tih-mut-lee**
-2. as a direct result | /rɪˈzʌlt/ — sounds like **rih-ZULT**
-3. stemming from | /ˈstemɪŋ/ — sounds like **STEM-ing**
-4. which may subsequently | /ˈsʌbsɪkwəntli/ — sounds like **SUB-sih-kwunt-lee**
-5. this is largely because | /ˈlɑːdʒli/ — sounds like **LARJ-lee**
-6. in order to | /ˈɔːdə/ — sounds like **OR-dur**
-7. with regard to | /rɪˈɡɑːd/ — sounds like **rih-GARD**
-8. in terms of | /tɜːmz/ — sounds like **TURMZ**
-9. as for | /fɔː/ — sounds like **FOR**
-10. concerning | /kənˈsɜːnɪŋ/ — sounds like **kun-SUR-ning**
-11. regarding | /rɪˈɡɑːdɪŋ/ — sounds like **rih-GARD-ing**
-12. with respect to | /rɪˈspekt/ — sounds like **rih-SPEKT**
+**Purpose:** ALL vocabulary terms used in QUICK-FILL-GUIDE + Template B pairings
+**Total Terms:** 284 (272 topic fills + 12 template pairings)
+**Format:** By topic order with IPA pronunciation
+**Usage:** These are the EXACT fills used in successful 25-26/26 essays
 
 ---
 
-*Based on 20+ proven essay examples achieving 25-26/26 scores*
-*Total: 327 academic phrases with IPA pronunciation for key words*
-*Format: British IPA with simplified phonetic guides*
+## Topic 1: Formal Exams
+
+1. **formal exams** | /ˈfɔːməl ɪɡˈzæmz/ — sounds like **FOR-mul ig-ZAMZ**
+2. **fair assessment** | /feə əˈsesmənt/ — sounds like **FAIR uh-SES-ment**
+3. **standardized testing** | /ˈstændədaɪzd ˈtestɪŋ/ — sounds like **STAN-dur-dyzd TEST-ing**
+4. **clear evaluation** | /klɪə ɪˌvæljuˈeɪʃən/ — sounds like **KLEER ih-val-yoo-AY-shun**
+5. **measurable results** | /ˈmeʒərəbəl rɪˈzʌlts/ — sounds like **MEZH-ur-uh-bul rih-ZULTS**
+6. **educational research** | /ˌedjʊˈkeɪʃənəl rɪˈsɜːtʃ/ — sounds like **ej-oo-KAY-shun-ul rih-SURCH**
+7. **students** | /ˈstjuːdənts/ — sounds like **STOO-dunts**
+8. **improved performance** | /ɪmˈpruːvd pəˈfɔːməns/ — sounds like **im-PROOVD per-FOR-muns**
+9. **test anxiety** | /test æŋˈzaɪəti/ — sounds like **TEST ang-ZY-uh-tee**
+10. **stress and nervousness** | — phrase (3 words)
+11. **university studies** | /ˌjuːnɪˈvɜːsəti ˈstʌdiz/ — sounds like **yoo-nih-VUR-suh-tee STUD-eez**
+12. **reduced performance** | /rɪˈdjuːst pəˈfɔːməns/ — sounds like **rih-DYOOST per-FOR-muns**
+13. **exam stress** | /ɪɡˈzæm stres/ — sounds like **ig-ZAM STRESS**
+14. **education systems** | — phrase (2 words)
+
+---
+
+## Topic 2: Travel in Education
+
+15. **educational travel** | /ˌedjʊˈkeɪʃənəl ˈtrævəl/ — sounds like **ej-oo-KAY-shun-ul TRAV-ul**
+16. **practical learning** | /ˈpræktɪkəl ˈlɜːnɪŋ/ — sounds like **PRAK-tih-kul LUR-ning**
+17. **visiting places** | /ˈvɪzɪtɪŋ ˈpleɪsɪz/ — sounds like **VIZ-it-ing PLAY-siz**
+18. **direct observation** | /dəˈrekt ˌɒbzəˈveɪʃən/ — sounds like **dih-REKT ob-zur-VAY-shun**
+19. **deeper understanding** | /ˈdiːpə ˌʌndəˈstændɪŋ/ — sounds like **DEE-pur un-dur-STAN-ding**
+20. **university research** | /ˌjuːnɪˈvɜːsəti rɪˈsɜːtʃ/ — sounds like **yoo-nih-VUR-suh-tee rih-SURCH**
+21. **improved skills** | /ɪmˈpruːvd skɪlz/ — sounds like **im-PROOVD SKILZ**
+22. **real-world exposure** | /rɪəl wɜːld ɪkˈspəʊʒə/ — sounds like **REEL WURLD ik-SPOH-zhur**
+23. **staying home** | /ˈsteɪɪŋ həʊm/ — sounds like **STAY-ing HOHM**
+24. **dedicated scholars** | /ˈdedɪkeɪtɪd ˈskɒləz/ — sounds like **DED-ih-kay-tid SKOL-urz**
+25. **deep knowledge** | /diːp ˈnɒlɪdʒ/ — sounds like **DEEP NOL-ij**
+26. **travel less necessary** | — phrase (3 words)
+27. **educational institutions** | /ˌedjʊˈkeɪʃənəl ˌɪnstɪˈtjuːʃənz/ — sounds like **ej-oo-KAY-shun-ul in-stuh-TOO-shunz**
+28. **scholars** | /ˈskɒləz/ — sounds like **SKOL-urz**
+29. **academic excellence** | /ˌækəˈdemɪk ˈeksələns/ — sounds like **ak-uh-DEM-ik EK-suh-luns**
+30. **focused study** | /ˈfəʊkəst ˈstʌdi/ — sounds like **FOH-kust STUD-ee**
+31. **real-world experiences** | — phrase (2 words)
+32. **cultural exposure** | /ˈkʌltʃərəl ɪkˈspəʊʒə/ — sounds like **KUL-chur-ul ik-SPOH-zhur**
+33. **time and resources** | — phrase (3 words)
+
+---
+
+## Topic 3: Work-Life Balance
+
+34. **work-life balance** | /wɜːk laɪf ˈbæləns/ — sounds like **WURK LYF BAL-uns**
+35. **mental health** | /ˈmentəl helθ/ — sounds like **MEN-tul HELTH**
+36. **leisure time** | /ˈleʒə taɪm/ — sounds like **LEZH-ur TYM**
+37. **stronger relationships** | /ˈstrɒŋɡə rɪˈleɪʃənʃɪps/ — sounds like **STRONG-ur rih-LAY-shun-ships**
+38. **improved productivity** | /ɪmˈpruːvd ˌprɒdʌkˈtɪvəti/ — sounds like **im-PROOVD prod-uk-TIV-uh-tee**
+39. **workplace research** | /ˈwɜːkpleɪs rɪˈsɜːtʃ/ — sounds like **WURK-plays rih-SURCH**
+40. **employees** | /ˌemplɔɪˈiːz/ — sounds like **em-ploy-EEZ**
+41. **better performance** | /ˈbetə pəˈfɔːməns/ — sounds like **BET-ur per-FOR-muns**
+42. **family time** | /ˈfæməli taɪm/ — sounds like **FAM-uh-lee TYM**
+43. **achieving balance** | /əˈtʃiːvɪŋ ˈbæləns/ — sounds like **uh-CHEEV-ing BAL-uns**
+44. **workplace demands** | /ˈwɜːkpleɪs dɪˈmɑːndz/ — sounds like **WURK-plays dih-MAHNDS**
+45. **constant pressure** | /ˈkɒnstənt ˈpreʃə/ — sounds like **KON-stunt PRESH-ur**
+46. **balance difficult** | — phrase (2 words)
+47. **organizational studies** | /ˌɔːɡənaɪˈzeɪʃənəl ˈstʌdiz/ — sounds like **or-gun-eye-ZAY-shun-ul STUD-eez**
+48. **professionals** | /prəˈfeʃənəlz/ — sounds like **pruh-FESH-un-ulz**
+49. **work-life conflicts** | /wɜːk laɪf ˈkɒnflɪkts/ — sounds like **WURK LYF KON-flikts**
+50. **increased workload** | /ɪnˈkriːst ˈwɜːkləʊd/ — sounds like **in-KREEST WURK-lohd**
+51. **mental wellbeing** | /ˈmentəl ˌwelˈbiːɪŋ/ — sounds like **MEN-tul wel-BEE-ing**
+52. **family stability** | /ˈfæməli stəˈbɪləti/ — sounds like **FAM-uh-lee stuh-BIL-uh-tee**
+53. **employers and employees** | — phrase (3 words)
+54. **attention and support** | — phrase (3 words)
+
+---
+
+## Topic 4: Climate Change Responsibility
+
+55. **climate change** | /ˈklaɪmət tʃeɪndʒ/ — sounds like **KLY-mut CHAYNJ**
+56. **governments** | /ˈɡʌvənmənts/ — sounds like **GUV-urn-ments**
+57. **policy frameworks** | /ˈpɒləsi ˈfreɪmwɜːks/ — sounds like **POL-uh-see FRAYM-wurks**
+58. **binding agreements** | /ˈbaɪndɪŋ əˈɡriːmənts/ — sounds like **BYN-ding uh-GREE-ments**
+59. **reduced emissions** | /rɪˈdjuːst ɪˈmɪʃənz/ — sounds like **rih-DYOOST ih-MISH-unz**
+60. **policy research** | /ˈpɒləsi rɪˈsɜːtʃ/ — sounds like **POL-uh-see rih-SURCH**
+61. **countries** | /ˈkʌntriz/ — sounds like **KUN-treez**
+62. **environmental benefits** | /ɪnˌvaɪrənˈmentəl ˈbenɪfɪts/ — sounds like **in-vy-run-MEN-tul BEN-ih-fits**
+63. **climate initiatives** | /ˈklaɪmət ɪˈnɪʃətɪvz/ — sounds like **KLY-mut ih-NISH-uh-tivz**
+64. **companies and individuals** | — phrase (3 words)
+65. **business activities** | /ˈbɪznəs ækˈtɪvətiz/ — sounds like **BIZ-nus ak-TIV-uh-teez**
+66. **pollution levels** | /pəˈluːʃən ˈlevəlz/ — sounds like **puh-LOO-shun LEV-ulz**
+67. **shared responsibility** | /ʃeəd rɪˌspɒnsəˈbɪləti/ — sounds like **SHAIRD rih-spon-suh-BIL-uh-tee**
+68. **environmental institutions** | /ɪnˌvaɪrənˈmentəl ˌɪnstɪˈtjuːʃənz/ — sounds like **in-vy-run-MEN-tul in-stuh-TOO-shunz**
+69. **businesses** | /ˈbɪznəsɪz/ — sounds like **BIZ-nus-iz**
+70. **carbon emissions** | /ˈkɑːbən ɪˈmɪʃənz/ — sounds like **KAR-bun ih-MISH-unz**
+71. **business operations** | /ˈbɪznəs ˌɒpəˈreɪʃənz/ — sounds like **BIZ-nus op-uh-RAY-shunz**
+72. **government policies** | /ˈɡʌvənmənt ˈpɒləsiz/ — sounds like **GUV-urn-ment POL-uh-seez**
+73. **corporate responsibility** | /ˈkɔːpərət rɪˌspɒnsəˈbɪləti/ — sounds like **KOR-pur-ut rih-spon-suh-BIL-uh-tee**
+74. **all stakeholders** | /ɔːl ˈsteɪkhəʊldəz/ — sounds like **AWL STAYK-hohl-durz**
+75. **resources and commitment** | — phrase (3 words)
+
+---
+
+## Topic 5: Building Design Effects
+
+76. **building design** | /ˈbɪldɪŋ dɪˈzaɪn/ — sounds like **BIL-ding dih-ZYN**
+77. **good design** | /ɡʊd dɪˈzaɪn/ — sounds like **GOOD dih-ZYN**
+78. **quality of life** | /ˈkwɒləti əv laɪf/ — sounds like **KWOL-uh-tee uv LYF**
+79. **natural light** | /ˈnætʃərəl laɪt/ — sounds like **NATCH-ur-ul LYT**
+80. **comfortable spaces** | /ˈkʌmfətəbəl ˈspeɪsɪz/ — sounds like **KUM-fur-tuh-bul SPAY-siz**
+81. **improved health** | /ɪmˈpruːvd helθ/ — sounds like **im-PROOVD HELTH**
+82. **research shows** | /rɪˈsɜːtʃ ʃəʊz/ — sounds like **rih-SURCH SHOHZ**
+83. **people** | /ˈpiːpəl/ — sounds like **PEE-pul**
+84. **better satisfaction** | /ˈbetə ˌsætɪsˈfækʃən/ — sounds like **BET-ur sat-is-FAK-shun**
+85. **poor design** | /pʊə dɪˈzaɪn/ — sounds like **POOR dih-ZYN**
+86. **limited space** | /ˈlɪmɪtɪd speɪs/ — sounds like **LIM-ih-tid SPAYS**
+87. **discomfort** | /dɪsˈkʌmfət/ — sounds like **dis-KUM-furt**
+88. **avoid places** | /əˈvɔɪd ˈpleɪsɪz/ — sounds like **uh-VOYD PLAY-siz**
+89. **studies indicate** | /ˈstʌdiz ˈɪndɪkeɪt/ — sounds like **STUD-eez IN-dih-kayt**
+90. **workers** | /ˈwɜːkəz/ — sounds like **WUR-kurz**
+91. **negative impact** | /ˈneɡətɪv ˈɪmpækt/ — sounds like **NEG-uh-tiv IM-pakt**
+92. **poor conditions** | /pʊə kənˈdɪʃənz/ — sounds like **POOR kun-DISH-unz**
+93. **urban planners** | /ˈɜːbən ˈplænəz/ — sounds like **UR-bun PLAN-urz**
+94. **efforts and resources** | — phrase (3 words)
+
+---
+
+## Topic 6: Overseas Study
+
+95. **studying overseas** | /ˈstʌdɪɪŋ ˌəʊvəˈsiːz/ — sounds like **STUD-ee-ing oh-vur-SEEZ**
+96. **study abroad** | /ˈstʌdi əˈbrɔːd/ — sounds like **STUD-ee uh-BRAWD**
+97. **cross-cultural learning** | /krɒs ˈkʌltʃərəl ˈlɜːnɪŋ/ — sounds like **KROSS KUL-chur-ul LUR-ning**
+98. **international exposure** | /ˌɪntəˈnæʃənəl ɪkˈspəʊʒə/ — sounds like **in-tur-NASH-un-ul ik-SPOH-zhur**
+99. **global perspective** | /ˈɡləʊbəl pəˈspektɪv/ — sounds like **GLOH-bul per-SPEK-tiv**
+100. **broader outcomes** | /ˈbrɔːdə ˈaʊtkʌmz/ — sounds like **BRAW-dur OWT-kumz**
+101. **enhanced understanding** | /ɪnˈhɑːnst ˌʌndəˈstændɪŋ/ — sounds like **in-HAHNST un-dur-STAN-ding**
+102. **cultural immersion** | /ˈkʌltʃərəl ɪˈmɜːʃən/ — sounds like **KUL-chur-ul ih-MUR-shun**
+103. **home-based learning** | /həʊm beɪst ˈlɜːnɪŋ/ — sounds like **HOHM BAYST LUR-ning**
+104. **local scholars** | /ˈləʊkəl ˈskɒləz/ — sounds like **LOH-kul SKOL-urz**
+105. **local success** | /ˈləʊkəl səkˈses/ — sounds like **LOH-kul suk-SES**
+106. **local graduates** | /ˈləʊkəl ˈɡrædʒuəts/ — sounds like **LOH-kul GRAJ-oo-uts**
+107. **comparable results** | /ˈkɒmpərəbəl rɪˈzʌlts/ — sounds like **KOM-pur-uh-bul rih-ZULTS**
+108. **strong education** | /strɒŋ ˌedjʊˈkeɪʃən/ — sounds like **STRONG ej-oo-KAY-shun**
+109. **international experience** | /ˌɪntəˈnæʃənəl ɪkˈspɪəriəns/ — sounds like **in-tur-NASH-un-ul ik-SPEER-ee-uns**
+110. **local education** | /ˈləʊkəl ˌedjʊˈkeɪʃən/ — sounds like **LOH-kul ej-oo-KAY-shun**
+111. **time and consideration** | — phrase (3 words)
+
+---
+
+## Topic 7: Technology & Smartphones
+
+112. **smartphones** | /ˈsmɑːtfəʊnz/ — sounds like **SMART-fohnz**
+113. **instant communication** | /ˈɪnstənt kəˌmjuːnɪˈkeɪʃən/ — sounds like **IN-stunt kuh-myoo-nih-KAY-shun**
+114. **mobile technology** | /ˈməʊbaɪl tekˈnɒlədʒi/ — sounds like **MOH-byl tek-NOL-uh-jee**
+115. **connected society** | /kəˈnektɪd səˈsaɪəti/ — sounds like **kuh-NEK-tid suh-SY-uh-tee**
+116. **improved access** | /ɪmˈpruːvd ˈækses/ — sounds like **im-PROOVD AK-ses**
+117. **technology research** | /tekˈnɒlədʒi rɪˈsɜːtʃ/ — sounds like **tek-NOL-uh-jee rih-SURCH**
+118. **enhanced connectivity** | /ɪnˈhɑːnst ˌkɒnekˈtɪvəti/ — sounds like **in-HAHNST kon-ek-TIV-uh-tee**
+119. **smartphone use** | /ˈsmɑːtfəʊn juːz/ — sounds like **SMART-fohn YOOZ**
+120. **smartphone dependency** | /ˈsmɑːtfəʊn dɪˈpendənsi/ — sounds like **SMART-fohn dih-PEN-dun-see**
+121. **excessive screen time** | /ɪkˈsesɪv skriːn taɪm/ — sounds like **ik-SES-iv SKREEN TYM**
+122. **social isolation** | /ˈsəʊʃəl ˌaɪsəˈleɪʃən/ — sounds like **SOH-shul eye-suh-LAY-shun**
+123. **reduced interaction** | /rɪˈdjuːst ˌɪntərˈækʃən/ — sounds like **rih-DYOOST in-tur-AK-shun**
+124. **social studies** | /ˈsəʊʃəl ˈstʌdiz/ — sounds like **SOH-shul STUD-eez**
+125. **users** | /ˈjuːzəz/ — sounds like **YOO-zurz**
+126. **negative effects** | /ˈneɡətɪv ɪˈfekts/ — sounds like **NEG-uh-tiv ih-FEKTS**
+127. **overuse** | /ˌəʊvəˈjuːs/ — sounds like **oh-vur-YOOS**
+128. **social concerns** | /ˈsəʊʃəl kənˈsɜːnz/ — sounds like **SOH-shul kun-SURNZ**
+129. **society** | /səˈsaɪəti/ — sounds like **suh-SY-uh-tee**
+130. **efforts** | /ˈefəts/ — sounds like **EF-urts**
+
+---
+
+## Topic 8: Historic Preservation
+
+131. **historic buildings** | /hɪˈstɒrɪk ˈbɪldɪŋz/ — sounds like **hih-STOR-ik BIL-dingz**
+132. **cultural heritage** | /ˈkʌltʃərəl ˈherɪtɪdʒ/ — sounds like **KUL-chur-ul HER-ih-tij**
+133. **preservation efforts** | /ˌprezəˈveɪʃən ˈefəts/ — sounds like **prez-ur-VAY-shun EF-urts**
+134. **historical value** | /hɪˈstɒrɪkəl ˈvæljuː/ — sounds like **hih-STOR-ih-kul VAL-yoo**
+135. **cultural identity** | /ˈkʌltʃərəl aɪˈdentəti/ — sounds like **KUL-chur-ul eye-DEN-tuh-tee**
+136. **cultural research** | /ˈkʌltʃərəl rɪˈsɜːtʃ/ — sounds like **KUL-chur-ul rih-SURCH**
+137. **communities** | /kəˈmjuːnətiz/ — sounds like **kuh-MYOO-nuh-teez**
+138. **preserved heritage** | /prɪˈzɜːvd ˈherɪtɪdʒ/ — sounds like **prih-ZURVD HER-ih-tij**
+139. **conservation work** | /ˌkɒnsəˈveɪʃən wɜːk/ — sounds like **kon-sur-VAY-shun WURK**
+140. **modern development** | /ˈmɒdən dɪˈveləpmənt/ — sounds like **MOD-urn dih-VEL-up-ment**
+141. **new construction** | /njuː kənˈstrʌkʃən/ — sounds like **NYOO kun-STRUK-shun**
+142. **practical needs** | /ˈpræktɪkəl niːdz/ — sounds like **PRAK-tih-kul NEEDZ**
+143. **balanced approach** | /ˈbælənst əˈprəʊtʃ/ — sounds like **BAL-unst uh-PROHCH**
+144. **urban studies** | /ˈɜːbən ˈstʌdiz/ — sounds like **UR-bun STUD-eez**
+145. **cities** | /ˈsɪtiz/ — sounds like **SIT-eez**
+146. **development pressure** | /dɪˈveləpmənt ˈpreʃə/ — sounds like **dih-VEL-up-ment PRESH-ur**
+147. **modern facilities** | /ˈmɒdən fəˈsɪlətiz/ — sounds like **MOD-urn fuh-SIL-uh-teez**
+148. **modern needs** | /ˈmɒdən niːdz/ — sounds like **MOD-urn NEEDZ**
+149. **resources** | /rɪˈsɔːsɪz/ — sounds like **rih-SOR-siz**
+
+---
+
+## Topic 9: Early Marriage
+
+150. **early marriage** | /ˈɜːli ˈmærɪdʒ/ — sounds like **UR-lee MAR-ij**
+151. **family stability** | /ˈfæməli stəˈbɪləti/ — sounds like **FAM-uh-lee stuh-BIL-uh-tee**
+152. **married couples** | /ˈmærid ˈkʌpəlz/ — sounds like **MAR-eed KUP-ulz**
+153. **emotional support** | /ɪˈməʊʃənəl səˈpɔːt/ — sounds like **ih-MOH-shun-ul suh-PORT**
+154. **stable relationships** | /ˈsteɪbəl rɪˈleɪʃənʃɪps/ — sounds like **STAY-bul rih-LAY-shun-ships**
+155. **family research** | /ˈfæməli rɪˈsɜːtʃ/ — sounds like **FAM-uh-lee rih-SURCH**
+156. **young couples** | /jʌŋ ˈkʌpəlz/ — sounds like **YUNG KUP-ulz**
+157. **partnership benefits** | /ˈpɑːtnəʃɪp ˈbenɪfɪts/ — sounds like **PART-nur-ship BEN-ih-fits**
+158. **committed relationships** | /kəˈmɪtɪd rɪˈleɪʃənʃɪps/ — sounds like **kuh-MIT-id rih-LAY-shun-ships**
+159. **young people** | /jʌŋ ˈpiːpəl/ — sounds like **YUNG PEE-pul**
+160. **limited opportunities** | /ˈlɪmɪtɪd ˌɒpəˈtjuːnətiz/ — sounds like **LIM-ih-tid op-ur-TOO-nuh-teez**
+161. **personal development challenges** | — phrase (3 words)
+162. **social research** | /ˈsəʊʃəl rɪˈsɜːtʃ/ — sounds like **SOH-shul rih-SURCH**
+163. **youth** | /juːθ/ — sounds like **YOOTH**
+164. **restricted growth** | /rɪˈstrɪktɪd ɡrəʊθ/ — sounds like **rih-STRIK-tid GROHTH**
+165. **early commitment** | /ˈɜːli kəˈmɪtmənt/ — sounds like **UR-lee kuh-MIT-ment**
+166. **family support** | /ˈfæməli səˈpɔːt/ — sounds like **FAM-uh-lee suh-PORT**
+167. **personal growth** | /ˈpɜːsənəl ɡrəʊθ/ — sounds like **PUR-sun-ul GROHTH**
+168. **time** | /taɪm/ — sounds like **TYM**
+
+---
+
+## Topic 10: Tourism in Developing Countries
+
+169. **tourism** | /ˈtʊərɪzəm/ — sounds like **TOOR-iz-um**
+170. **economic growth** | /ˌiːkəˈnɒmɪk ɡrəʊθ/ — sounds like **ee-kuh-NOM-ik GROHTH**
+171. **tourism industry** | /ˈtʊərɪzəm ˈɪndəstri/ — sounds like **TOOR-iz-um IN-dus-tree**
+172. **job creation** | /dʒɒb kriˈeɪʃən/ — sounds like **JOB kree-AY-shun**
+173. **improved income** | /ɪmˈpruːvd ˈɪnkʌm/ — sounds like **im-PROOVD IN-kum**
+174. **economic research** | /ˌiːkəˈnɒmɪk rɪˈsɜːtʃ/ — sounds like **ee-kuh-NOM-ik rih-SURCH**
+175. **developing countries** | /dɪˈveləpɪŋ ˈkʌntriz/ — sounds like **dih-VEL-up-ing KUN-treez**
+176. **economic benefits** | /ˌiːkəˈnɒmɪk ˈbenɪfɪts/ — sounds like **ee-kuh-NOM-ik BEN-ih-fits**
+177. **tourism revenue** | /ˈtʊərɪzəm ˈrevənjuː/ — sounds like **TOOR-iz-um REV-uh-noo**
+178. **tourism development** | /ˈtʊərɪzəm dɪˈveləpmənt/ — sounds like **TOOR-iz-um dih-VEL-up-ment**
+179. **mass tourism** | /mæs ˈtʊərɪzəm/ — sounds like **MASS TOOR-iz-um**
+180. **environmental damage** | /ɪnˌvaɪrənˈmentəl ˈdæmɪdʒ/ — sounds like **in-vy-run-MEN-tul DAM-ij**
+181. **sustainability concerns** | /səˌsteɪnəˈbɪləti kənˈsɜːnz/ — sounds like **suh-stayn-uh-BIL-uh-tee kun-SURNZ**
+182. **environmental studies** | /ɪnˌvaɪrənˈmentəl ˈstʌdiz/ — sounds like **in-vy-run-MEN-tul STUD-eez**
+183. **tourist destinations** | /ˈtʊərɪst ˌdestɪˈneɪʃənz/ — sounds like **TOOR-ist des-tih-NAY-shunz**
+184. **negative impacts** | /ˈneɡətɪv ˈɪmpækts/ — sounds like **NEG-uh-tiv IM-pakts**
+185. **tourism pressure** | /ˈtʊərɪzəm ˈpreʃə/ — sounds like **TOOR-iz-um PRESH-ur**
+186. **environmental protection** | /ɪnˌvaɪrənˈmentəl prəˈtekʃən/ — sounds like **in-vy-run-MEN-tul pruh-TEK-shun**
+187. **efforts and money** | — phrase (3 words)
+
+---
+
+## Topic 11: Television Functions
+
+188. **television** | /ˈtelɪvɪʒən/ — sounds like **TEL-ih-vizh-un**
+189. **watching television** | — phrase (2 words)
+190. **stress reduction** | /stres rɪˈdʌkʃən/ — sounds like **STRESS rih-DUK-shun**
+191. **improved wellbeing** | /ɪmˈpruːvd ˌwelˈbiːɪŋ/ — sounds like **im-PROOVD wel-BEE-ing**
+192. **relaxation** | /ˌriːlækˈseɪʃən/ — sounds like **ree-lak-SAY-shun**
+193. **entertainment programs** | /ˌentəˈteɪnmənt ˈprəʊɡræmz/ — sounds like **en-tur-TAYN-ment PROH-gramz**
+194. **television companionship** | — phrase (2 words)
+195. **lonely people** | /ˈləʊnli ˈpiːpəl/ — sounds like **LOHN-lee PEE-pul**
+196. **social connection** | /ˈsəʊʃəl kəˈnekʃən/ — sounds like **SOH-shul kuh-NEK-shun**
+197. **reduced isolation** | /rɪˈdjuːst ˌaɪsəˈleɪʃən/ — sounds like **rih-DYOOST eye-suh-LAY-shun**
+198. **individuals** | /ˌɪndɪˈvɪdʒuəlz/ — sounds like **in-dih-VIJ-oo-ulz**
+199. **regular viewing** | /ˈreɡjʊlə ˈvjuːɪŋ/ — sounds like **REG-yoo-lur VYOO-ing**
+200. **entertainment value** | /ˌentəˈteɪnmənt ˈvæljuː/ — sounds like **en-tur-TAYN-ment VAL-yoo**
+
+---
+
+## Topic 12: Mark Deduction for Late Work
+
+201. **mark deduction** | /mɑːk dɪˈdʌkʃən/ — sounds like **MARK dih-DUK-shun**
+202. **academic discipline** | /ˌækəˈdemɪk ˈdɪsəplɪn/ — sounds like **ak-uh-DEM-ik DIS-uh-plin**
+203. **late submissions** | /leɪt səbˈmɪʃənz/ — sounds like **LAYT sub-MISH-unz**
+204. **student responsibility** | /ˈstjuːdənt rɪˌspɒnsəˈbɪləti/ — sounds like **STOO-dunt rih-spon-suh-BIL-uh-tee**
+205. **improved habits** | /ɪmˈpruːvd ˈhæbɪts/ — sounds like **im-PROOVD HAB-its**
+206. **better punctuality** | /ˈbetə ˌpʌŋktʃuˈæləti/ — sounds like **BET-ur pungk-choo-AL-uh-tee**
+207. **clear deadlines** | /klɪə ˈdedlaɪnz/ — sounds like **KLEER DED-lynz**
+208. **other actions** | /ˈʌðə ˈækʃənz/ — sounds like **UTH-ur AK-shunz**
+209. **deadline extensions** | /ˈdedlaɪn ɪkˈstenʃənz/ — sounds like **DED-lyn ik-STEN-shunz**
+210. **positive motivation** | /ˈpɒzətɪv ˌməʊtɪˈveɪʃən/ — sounds like **POZ-ih-tiv moh-tih-VAY-shun**
+211. **better planning** | /ˈbetə ˈplænɪŋ/ — sounds like **BET-ur PLAN-ing**
+212. **universities** | /ˌjuːnɪˈvɜːsətiz/ — sounds like **yoo-nih-VUR-suh-teez**
+213. **improved rates** | /ɪmˈpruːvd reɪts/ — sounds like **im-PROOVD RAYTS**
+214. **flexible policies** | /ˈfleksəbəl ˈpɒləsiz/ — sounds like **FLEK-suh-bul POL-uh-seez**
+215. **accountability** | /əˌkaʊntəˈbɪləti/ — sounds like **uh-kown-tuh-BIL-uh-tee**
+216. **flexibility** | /ˌfleksəˈbɪləti/ — sounds like **flek-suh-BIL-uh-tee**
+217. **academic institutions** | /ˌækəˈdemɪk ˌɪnstɪˈtjuːʃənz/ — sounds like **ak-uh-DEM-ik in-stuh-TOO-shunz**
+
+---
+
+## Topic 13: Experiential Learning
+
+218. **experiential learning** | /ɪkˌspɪəriˈenʃəl ˈlɜːnɪŋ/ — sounds like **ik-speer-ee-EN-shul LUR-ning**
+219. **practical skills** | /ˈpræktɪkəl skɪlz/ — sounds like **PRAK-tih-kul SKILZ**
+220. **learning by doing** | /ˈlɜːnɪŋ baɪ ˈduːɪŋ/ — sounds like **LUR-ning BY DOO-ing**
+221. **hands-on experience** | /hændz ɒn ɪkˈspɪəriəns/ — sounds like **HANDZ ON ik-SPEER-ee-uns**
+222. **better outcomes** | /ˈbetə ˈaʊtkʌmz/ — sounds like **BET-ur OWT-kumz**
+223. **practical application** | /ˈpræktɪkəl ˌæplɪˈkeɪʃən/ — sounds like **PRAK-tih-kul ap-lih-KAY-shun**
+224. **traditional teaching** | /trəˈdɪʃənəl ˈtiːtʃɪŋ/ — sounds like **truh-DISH-un-ul TEECH-ing**
+225. **structured lectures** | /ˈstrʌktʃəd ˈlektʃəz/ — sounds like **STRUK-churd LEK-churz**
+226. **solid knowledge** | /ˈsɒlɪd ˈnɒlɪdʒ/ — sounds like **SOL-id NOL-ij**
+227. **proven methods** | /ˈpruːvən ˈmeθədz/ — sounds like **PROO-vun METH-udz**
+228. **systematic instruction** | /ˌsɪstəˈmætɪk ɪnˈstrʌkʃən/ — sounds like **sis-tuh-MAT-ik in-STRUK-shun**
+229. **practical experience** | /ˈpræktɪkəl ɪkˈspɪəriəns/ — sounds like **PRAK-tih-kul ik-SPEER-ee-uns**
+230. **solid foundations** | /ˈsɒlɪd faʊnˈdeɪʃənz/ — sounds like **SOL-id fown-DAY-shunz**
+231. **schools** | /skuːlz/ — sounds like **SKOOLZ**
+
+---
+
+## Topic 14: International Organizations & Global Problems
+
+232. **global problems** | /ˈɡləʊbəl ˈprɒbləmz/ — sounds like **GLOH-bul PROB-lumz**
+233. **coordination challenges** | /kəʊˌɔːdɪˈneɪʃən ˈtʃælɪndʒɪz/ — sounds like **koh-or-dih-NAY-shun CHAL-in-jiz**
+234. **global issues** | /ˈɡləʊbəl ˈɪʃuːz/ — sounds like **GLOH-bul ISH-ooz**
+235. **limited resources** | /ˈlɪmɪtɪd rɪˈsɔːsɪz/ — sounds like **LIM-ih-tid rih-SOR-siz**
+236. **delayed action** | /dɪˈleɪd ˈækʃən/ — sounds like **dih-LAYD AK-shun**
+237. **international initiatives** | /ˌɪntəˈnæʃənəl ɪˈnɪʃətɪvz/ — sounds like **in-tur-NASH-un-ul ih-NISH-uh-tivz**
+238. **coordination difficulties** | /kəʊˌɔːdɪˈneɪʃən ˈdɪfɪkəltiz/ — sounds like **koh-or-dih-NAY-shun DIF-ih-kul-teez**
+239. **conflicting interests** | /kənˈflɪktɪŋ ˈɪntrəsts/ — sounds like **kun-FLIK-ting IN-trusts**
+240. **effective solutions** | /ɪˈfektɪv səˈluːʃənz/ — sounds like **ih-FEK-tiv suh-LOO-shunz**
+241. **government cooperation** | /ˈɡʌvənmənt kəʊˌɒpəˈreɪʃən/ — sounds like **GUV-urn-ment koh-op-uh-RAY-shun**
+242. **unified strategies** | /ˈjuːnɪfaɪd ˈstrætədʒiz/ — sounds like **YOO-nih-fyd STRAT-uh-jeez**
+243. **international studies** | /ˌɪntəˈnæʃənəl ˈstʌdiz/ — sounds like **in-tur-NASH-un-ul STUD-eez**
+244. **significant progress** | /sɪɡˈnɪfɪkənt ˈprəʊɡres/ — sounds like **sig-NIF-ih-kunt PROH-gres**
+245. **unified efforts** | /ˈjuːnɪfaɪd ˈefəts/ — sounds like **YOO-nih-fyd EF-urts**
+246. **structured collaboration** | /ˈstrʌktʃəd kəˌlæbəˈreɪʃən/ — sounds like **STRUK-churd kuh-lab-uh-RAY-shun**
+247. **world leaders** | /wɜːld ˈliːdəz/ — sounds like **WURLD LEE-durz**
+
+---
+
+## Topic 15: Information Revolution
+
+248. **information revolution** | /ˌɪnfəˈmeɪʃən ˌrevəˈluːʃən/ — sounds like **in-fur-MAY-shun rev-uh-LOO-shun**
+249. **digital technology** | /ˈdɪdʒɪtəl tekˈnɒlədʒi/ — sounds like **DIJ-ih-tul tek-NOL-uh-jee**
+250. **global connectivity** | /ˈɡləʊbəl ˌkɒnekˈtɪvəti/ — sounds like **GLOH-bul kon-ek-TIV-uh-tee**
+251. **better knowledge** | /ˈbetə ˈnɒlɪdʒ/ — sounds like **BET-ur NOL-ij**
+252. **positive effects** | /ˈpɒzətɪv ɪˈfekts/ — sounds like **POZ-ih-tiv ih-FEKTS**
+253. **information technology** | /ˌɪnfəˈmeɪʃən tekˈnɒlədʒi/ — sounds like **in-fur-MAY-shun tek-NOL-uh-jee**
+254. **mass communication** | /mæs kəˌmjuːnɪˈkeɪʃən/ — sounds like **MASS kuh-myoo-nih-KAY-shun**
+255. **excessive exposure** | /ɪkˈsesɪv ɪkˈspəʊʒə/ — sounds like **ik-SES-iv ik-SPOH-zhur**
+256. **information overload** | /ˌɪnfəˈmeɪʃən ˈəʊvələʊd/ — sounds like **in-fur-MAY-shun OH-vur-lohd**
+257. **reduced interactions** | /rɪˈdjuːst ˌɪntərˈækʃənz/ — sounds like **rih-DYOOST in-tur-AK-shunz**
+258. **digital transformation** | /ˈdɪdʒɪtəl ˌtrænsfəˈmeɪʃən/ — sounds like **DIJ-ih-tul trans-fur-MAY-shun**
+259. **digital benefits** | /ˈdɪdʒɪtəl ˈbenɪfɪts/ — sounds like **DIJ-ih-tul BEN-ih-fits**
+260. **individuals and society** | — phrase (3 words)
+261. **attention** | /əˈtenʃən/ — sounds like **uh-TEN-shun**
+
+---
+
+## Topic 16: Learning & Employment Combination
+
+262. **combining both** | /kəmˈbaɪnɪŋ bəʊθ/ — sounds like **kum-BYN-ing BOHTH**
+263. **part-time work** | /pɑːt taɪm wɜːk/ — sounds like **PART TYM WURK**
+264. **work experience** | /wɜːk ɪkˈspɪəriəns/ — sounds like **WURK ik-SPEER-ee-uns**
+265. **career development** | /kəˈrɪə dɪˈveləpmənt/ — sounds like **kuh-REER dih-VEL-up-ment**
+266. **professional growth** | /prəˈfeʃənəl ɡrəʊθ/ — sounds like **pruh-FESH-un-ul GROHTH**
+267. **time management** | /taɪm ˈmænɪdʒmənt/ — sounds like **TYM MAN-ij-ment**
+268. **stress** | /stres/ — sounds like **STRESS**
+269. **balance difficulties** | — phrase (2 words)
+270. **working students** | /ˈwɜːkɪŋ ˈstjuːdənts/ — sounds like **WUR-king STOO-dunts**
+271. **reduced learning** | /rɪˈdjuːst ˈlɜːnɪŋ/ — sounds like **rih-DYOOST LUR-ning**
+272. **excessive hours** | /ɪkˈsesɪv ˈaʊəz/ — sounds like **ik-SES-iv OW-urz**
+273. **effective management** | /ɪˈfektɪv ˈmænɪdʒmənt/ — sounds like **ih-FEK-tiv MAN-ij-ment**
+274. **planning** | /ˈplænɪŋ/ — sounds like **PLAN-ing**
+
+---
+
+## Summary Statistics
+
+- **Total unique fills:** 274 terms
+- **Organized by:** 16 topics (same order as QUICK-FILL-GUIDE)
+- **All fills:** 1-3 words maximum
+- **Strategy:** These are ACTUAL fills used in 25-26/26 essays
+
+---
+
+## Template B Verb-Noun Pairings (Universal)
+
+**Purpose:** Natural collocations for Template B1 & B2
+**Total Terms:** 12 (6 positive + 6 negative)
+**Usage:** Use these EXACT pairings in templates for natural-sounding English
+
+### POSITIVE Pairings (for benefits/advantages)
+
+273. **bring about** | /brɪŋ əˈbaʊt/ — sounds like **BRING uh-BOWT** — verb phrase
+274. **benefits** | /ˈbenɪfɪts/ — sounds like **BEN-ih-fits** — use with: bring about
+275. **lead to** | /liːd tuː/ — sounds like **LEED TOO** — verb phrase
+276. **opportunities** | /ˌɒpəˈtjuːnətiz/ — sounds like **op-ur-TOO-nih-teez** — use with: lead to
+277. **foster** | /ˈfɒstə/ — sounds like **FOS-tur** — verb (POSITIVE ONLY!)
+278. **advantages** | /ədˈvɑːntɪdʒɪz/ — sounds like **ad-VAN-tij-iz** — use with: foster
+
+### NEGATIVE Pairings (for challenges/problems)
+
+279. **give rise to** | /ɡɪv raɪz tuː/ — sounds like **GIV RYZ TOO** — verb phrase
+280. **challenges** | /ˈtʃælɪndʒɪz/ — sounds like **CHAL-in-jiz** — use with: give rise to
+281. **cause** | /kɔːz/ — sounds like **KAWZ** — verb
+282. **problems** | /ˈprɒbləmz/ — sounds like **PROB-lumz** — use with: cause
+283. **generate** | /ˈdʒenəreɪt/ — sounds like **JEN-ur-ayt** — verb
+284. **difficulties** | /ˈdɪfɪkəltiz/ — sounds like **DIF-ih-kul-teez** — use with: generate
+
+**Why these pairings:**
+- ✅ Natural English collocations
+- ✅ Work across ANY essay topic
+- ✅ Prevent awkward combinations
+- ❌ Never say "foster challenges" or "give rise to benefits"
+
+---
+
+## How to Use
+
+1. **Find your topic** section above
+2. **Use these EXACT fills** in your essay
+3. **Check pronunciation** if needed
+4. **Keep fills SHORT:** 1-3 words max
+5. **Reuse topic keywords 5-7 times**
+
+**Success = These fills + Topic keywords + Template B = 25-26/26!** 🎯
+
+---
+
+*All terms extracted from QUICK-FILL-GUIDE.md*
+*Organized by 16 topics in guide order*
 *Last Updated: November 2025*

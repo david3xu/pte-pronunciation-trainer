@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-11-19T23:30:07.643Z",
-    "totalTerms": 319,
+    "generated": "2025-11-28T04:37:04.163Z",
+    "totalTerms": 255,
     "source": "pte-essay-topic-vocabulary",
     "description": "PTE Essay Topic Vocabulary - 327 academic phrases across 9 topics for Template B essays",
     "version": "1.0",
@@ -12,2257 +12,1367 @@
   },
   "vocabulary": [
     {
-      "english": "formal education system",
+      "english": "**formal exams**",
       "pronunciation": {
-        "ipa": "ˈfɔːməl",
-        "phonetic": "FOR-mul"
+        "ipa": "ˈfɔːməl ɪɡˈzæmz",
+        "phonetic": "FOR-mul ig-ZAMZ"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "academic excellence",
+      "english": "**fair assessment**",
       "pronunciation": {
-        "ipa": "ˌækəˈdemɪk",
-        "phonetic": "ak-uh-DEM-ik"
+        "ipa": "feə əˈsesmənt",
+        "phonetic": "FAIR uh-SES-ment"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "educational institution",
+      "english": "**standardized testing**",
       "pronunciation": {
-        "ipa": "ˌɪnstɪˈtjuːʃən",
-        "phonetic": "in-stuh-TOO-shun"
+        "ipa": "ˈstændədaɪzd ˈtestɪŋ",
+        "phonetic": "STAN-dur-dyzd TEST-ing"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "student performance",
+      "english": "**clear evaluation**",
       "pronunciation": {
-        "ipa": "pəˈfɔːməns",
-        "phonetic": "per-FOR-muns"
+        "ipa": "klɪə ɪˌvæljuˈeɪʃən",
+        "phonetic": "KLEER ih-val-yoo-AY-shun"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "learning outcomes",
+      "english": "**measurable results**",
       "pronunciation": {
-        "ipa": "ˈaʊtkʌmz",
-        "phonetic": "OWT-kumz"
+        "ipa": "ˈmeʒərəbəl rɪˈzʌlts",
+        "phonetic": "MEZH-ur-uh-bul rih-ZULTS"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "knowledge retention",
+      "english": "**educational research**",
       "pronunciation": {
-        "ipa": "rɪˈtenʃən",
-        "phonetic": "rih-TEN-shun"
+        "ipa": "ˌedjʊˈkeɪʃənəl rɪˈsɜːtʃ",
+        "phonetic": "ej-oo-KAY-shun-ul rih-SURCH"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "practical skills development",
+      "english": "**students**",
       "pronunciation": {
-        "ipa": "ˈpræktɪkəl",
-        "phonetic": "PRAK-tih-kul"
+        "ipa": "ˈstjuːdənts",
+        "phonetic": "STOO-dunts"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "assessment method",
+      "english": "**improved performance**",
       "pronunciation": {
-        "ipa": "əˈsesmənt",
-        "phonetic": "uh-SES-ment"
+        "ipa": "ɪmˈpruːvd pəˈfɔːməns",
+        "phonetic": "im-PROOVD per-FOR-muns"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "standardized evaluation",
+      "english": "**test anxiety**",
       "pronunciation": {
-        "ipa": "ɪˌvæljuˈeɪʃən",
-        "phonetic": "ih-val-yoo-AY-shun"
+        "ipa": "test æŋˈzaɪəti",
+        "phonetic": "TEST ang-ZY-uh-tee"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "educational research",
+      "english": "**university studies**",
       "pronunciation": {
-        "ipa": "rɪˈsɜːtʃ",
-        "phonetic": "rih-SURCH"
+        "ipa": "ˌjuːnɪˈvɜːsəti ˈstʌdiz",
+        "phonetic": "yoo-nih-VUR-suh-tee STUD-eez"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "teaching approach",
+      "english": "**reduced performance**",
       "pronunciation": {
-        "ipa": "əˈprəʊtʃ",
-        "phonetic": "uh-PROHCH"
+        "ipa": "rɪˈdjuːst pəˈfɔːməns",
+        "phonetic": "rih-DYOOST per-FOR-muns"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "curriculum design",
+      "english": "**exam stress**",
       "pronunciation": {
-        "ipa": "kəˈrɪkjʊləm",
-        "phonetic": "kuh-RIK-yuh-lum"
+        "ipa": "ɪɡˈzæm stres",
+        "phonetic": "ig-ZAM STRESS"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "academic discipline",
+      "english": "**educational travel**",
       "pronunciation": {
-        "ipa": "ˈdɪsəplɪn",
-        "phonetic": "DIS-uh-plin"
+        "ipa": "ˌedjʊˈkeɪʃənəl ˈtrævəl",
+        "phonetic": "ej-oo-KAY-shun-ul TRAV-ul"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "time management skills",
+      "english": "**practical learning**",
       "pronunciation": {
-        "ipa": "ˈmænɪdʒmənt",
-        "phonetic": "MAN-ij-ment"
+        "ipa": "ˈpræktɪkəl ˈlɜːnɪŋ",
+        "phonetic": "PRAK-tih-kul LUR-ning"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "educational policy",
+      "english": "**visiting places**",
       "pronunciation": {
-        "ipa": "ˈpɒləsi",
-        "phonetic": "POL-uh-see"
+        "ipa": "ˈvɪzɪtɪŋ ˈpleɪsɪz",
+        "phonetic": "VIZ-it-ing PLAY-siz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "experiential learning",
+      "english": "**direct observation**",
       "pronunciation": {
-        "ipa": "ɪkˌspɪəriˈenʃəl",
-        "phonetic": "ek-speer-ee-EN-shul"
+        "ipa": "dəˈrekt ˌɒbzəˈveɪʃən",
+        "phonetic": "dih-REKT ob-zur-VAY-shun"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "learning by doing",
+      "english": "**deeper understanding**",
       "pronunciation": {
-        "ipa": "ˈduːɪŋ",
-        "phonetic": "DOO-ing"
+        "ipa": "ˈdiːpə ˌʌndəˈstændɪŋ",
+        "phonetic": "DEE-pur un-dur-STAN-ding"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "traditional teaching methods",
+      "english": "**university research**",
       "pronunciation": {
-        "ipa": "trəˈdɪʃənəl",
-        "phonetic": "truh-DISH-uh-nul"
+        "ipa": "ˌjuːnɪˈvɜːsəti rɪˈsɜːtʃ",
+        "phonetic": "yoo-nih-VUR-suh-tee rih-SURCH"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "hands-on experience",
+      "english": "**improved skills**",
       "pronunciation": {
-        "ipa": "ɪkˈspɪəriəns",
-        "phonetic": "ik-SPEER-ee-uns"
+        "ipa": "ɪmˈpruːvd skɪlz",
+        "phonetic": "im-PROOVD SKILZ"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "practical application",
+      "english": "**real-world exposure**",
       "pronunciation": {
-        "ipa": "ˌæplɪˈkeɪʃən",
-        "phonetic": "ap-lih-KAY-shun"
+        "ipa": "rɪəl wɜːld ɪkˈspəʊʒə",
+        "phonetic": "REEL WURLD ik-SPOH-zhur"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "classroom instruction",
+      "english": "**staying home**",
       "pronunciation": {
-        "ipa": "ɪnˈstrʌkʃən",
-        "phonetic": "in-STRUK-shun"
+        "ipa": "ˈsteɪɪŋ həʊm",
+        "phonetic": "STAY-ing HOHM"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "systematic instruction",
+      "english": "**dedicated scholars**",
       "pronunciation": {
-        "ipa": "ˌsɪstəˈmætɪk",
-        "phonetic": "sis-tuh-MAT-ik"
+        "ipa": "ˈdedɪkeɪtɪd ˈskɒləz",
+        "phonetic": "DED-ih-kay-tid SKOL-urz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "active engagement",
+      "english": "**deep knowledge**",
       "pronunciation": {
-        "ipa": "ɪnˈɡeɪdʒmənt",
-        "phonetic": "in-GAYJ-ment"
+        "ipa": "diːp ˈnɒlɪdʒ",
+        "phonetic": "DEEP NOL-ij"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "collaborative learning",
+      "english": "**educational institutions**",
       "pronunciation": {
-        "ipa": "kəˈlæbərətɪv",
-        "phonetic": "kuh-LAB-uh-ruh-tiv"
+        "ipa": "ˌedjʊˈkeɪʃənəl ˌɪnstɪˈtjuːʃənz",
+        "phonetic": "ej-oo-KAY-shun-ul in-stuh-TOO-shunz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "student-centered approach",
+      "english": "**scholars**",
       "pronunciation": {
-        "ipa": "ˈsentəd",
-        "phonetic": "SEN-turd"
+        "ipa": "ˈskɒləz",
+        "phonetic": "SKOL-urz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "teacher-led instruction",
+      "english": "**academic excellence**",
       "pronunciation": {
-        "ipa": "led",
-        "phonetic": "LED"
+        "ipa": "ˌækəˈdemɪk ˈeksələns",
+        "phonetic": "ak-uh-DEM-ik EK-suh-luns"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "blended learning model",
+      "english": "**focused study**",
       "pronunciation": {
-        "ipa": "ˈblendɪd",
-        "phonetic": "BLEN-did"
+        "ipa": "ˈfəʊkəst ˈstʌdi",
+        "phonetic": "FOH-kust STUD-ee"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "formal written examination",
+      "english": "**cultural exposure**",
       "pronunciation": {
-        "ipa": "ɪɡˌzæmɪˈneɪʃən",
-        "phonetic": "ig-zam-ih-NAY-shun"
+        "ipa": "ˈkʌltʃərəl ɪkˈspəʊʒə",
+        "phonetic": "KUL-chur-ul ik-SPOH-zhur"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "valid assessment method",
+      "english": "**work-life balance**",
       "pronunciation": {
-        "ipa": "ˈvælɪd",
-        "phonetic": "VAL-id"
+        "ipa": "wɜːk laɪf ˈbæləns",
+        "phonetic": "WURK LYF BAL-uns"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "objective evaluation",
+      "english": "**mental health**",
       "pronunciation": {
-        "ipa": "əbˈdʒektɪv",
-        "phonetic": "ub-JEK-tiv"
+        "ipa": "ˈmentəl helθ",
+        "phonetic": "MEN-tul HELTH"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "standardized testing",
+      "english": "**leisure time**",
       "pronunciation": {
-        "ipa": "ˈtestɪŋ",
-        "phonetic": "TEST-ing"
+        "ipa": "ˈleʒə taɪm",
+        "phonetic": "LEZH-ur TYM"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "grading criteria",
+      "english": "**stronger relationships**",
       "pronunciation": {
-        "ipa": "kraɪˈtɪəriə",
-        "phonetic": "kry-TEER-ee-uh"
+        "ipa": "ˈstrɒŋɡə rɪˈleɪʃənʃɪps",
+        "phonetic": "STRONG-ur rih-LAY-shun-ships"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "performance measurement",
+      "english": "**improved productivity**",
       "pronunciation": {
-        "ipa": "ˈmeʒəmənt",
-        "phonetic": "MEZH-ur-ment"
+        "ipa": "ɪmˈpruːvd ˌprɒdʌkˈtɪvəti",
+        "phonetic": "im-PROOVD prod-uk-TIV-uh-tee"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "academic standards",
+      "english": "**workplace research**",
       "pronunciation": {
-        "ipa": "ˈstændədz",
-        "phonetic": "STAN-durdz"
+        "ipa": "ˈwɜːkpleɪs rɪˈsɜːtʃ",
+        "phonetic": "WURK-plays rih-SURCH"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "exam-related pressure",
+      "english": "**employees**",
       "pronunciation": {
-        "ipa": "ˈpreʃə",
-        "phonetic": "PRESH-ur"
+        "ipa": "ˌemplɔɪˈiːz",
+        "phonetic": "em-ploy-EEZ"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "test performance",
+      "english": "**better performance**",
       "pronunciation": {
-        "ipa": "pəˈfɔːməns",
-        "phonetic": "per-FOR-muns"
+        "ipa": "ˈbetə pəˈfɔːməns",
+        "phonetic": "BET-ur per-FOR-muns"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "marking scheme",
+      "english": "**family time**",
       "pronunciation": {
-        "ipa": "skiːm",
-        "phonetic": "SKEEM"
+        "ipa": "ˈfæməli taɪm",
+        "phonetic": "FAM-uh-lee TYM"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "deadline policies",
+      "english": "**achieving balance**",
       "pronunciation": {
-        "ipa": "ˈdedlaɪn",
-        "phonetic": "DED-lyn"
+        "ipa": "əˈtʃiːvɪŋ ˈbæləns",
+        "phonetic": "uh-CHEEV-ing BAL-uns"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "late submission penalty",
+      "english": "**workplace demands**",
       "pronunciation": {
-        "ipa": "pəˈnælti",
-        "phonetic": "PEN-ul-tee"
+        "ipa": "ˈwɜːkpleɪs dɪˈmɑːndz",
+        "phonetic": "WURK-plays dih-MAHNDS"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "mark deduction system",
+      "english": "**constant pressure**",
       "pronunciation": {
-        "ipa": "dɪˈdʌkʃən",
-        "phonetic": "dih-DUK-shun"
+        "ipa": "ˈkɒnstənt ˈpreʃə",
+        "phonetic": "KON-stunt PRESH-ur"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "continuous assessment",
+      "english": "**organizational studies**",
       "pronunciation": {
-        "ipa": "kənˈtɪnjuəs",
-        "phonetic": "kun-TIN-yoo-us"
+        "ipa": "ˌɔːɡənaɪˈzeɪʃənəl ˈstʌdiz",
+        "phonetic": "or-gun-eye-ZAY-shun-ul STUD-eez"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "holistic evaluation",
+      "english": "**professionals**",
       "pronunciation": {
-        "ipa": "həˈlɪstɪk",
-        "phonetic": "hoh-LIS-tik"
+        "ipa": "prəˈfeʃənəlz",
+        "phonetic": "pruh-FESH-un-ulz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "travel in education",
+      "english": "**work-life conflicts**",
       "pronunciation": {
-        "ipa": "ˈtrævəl",
-        "phonetic": "TRAV-ul"
+        "ipa": "wɜːk laɪf ˈkɒnflɪkts",
+        "phonetic": "WURK LYF KON-flikts"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "educational travel experiences",
+      "english": "**increased workload**",
       "pronunciation": {
-        "ipa": "ɪkˈspɪəriənsɪz",
-        "phonetic": "ik-SPEER-ee-uns-iz"
+        "ipa": "ɪnˈkriːst ˈwɜːkləʊd",
+        "phonetic": "in-KREEST WURK-lohd"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "cross-cultural learning",
+      "english": "**mental wellbeing**",
       "pronunciation": {
-        "ipa": "krɒs ˈkʌltʃərəl",
-        "phonetic": "kross-KUL-chur-ul"
+        "ipa": "ˈmentəl ˌwelˈbiːɪŋ",
+        "phonetic": "MEN-tul wel-BEE-ing"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "global perspective",
+      "english": "**family stability**",
       "pronunciation": {
-        "ipa": "pəˈspektɪv",
-        "phonetic": "per-SPEK-tiv"
+        "ipa": "ˈfæməli stəˈbɪləti",
+        "phonetic": "FAM-uh-lee stuh-BIL-uh-tee"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "diverse learning environments",
+      "english": "**climate change**",
       "pronunciation": {
-        "ipa": "daɪˈvɜːs",
-        "phonetic": "dy-VURS"
+        "ipa": "ˈklaɪmət tʃeɪndʒ",
+        "phonetic": "KLY-mut CHAYNJ"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "study abroad programs",
+      "english": "**governments**",
       "pronunciation": {
-        "ipa": "əˈbrɔːd",
-        "phonetic": "uh-BRAWD"
+        "ipa": "ˈɡʌvənmənts",
+        "phonetic": "GUV-urn-ments"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "cultural immersion",
+      "english": "**policy frameworks**",
       "pronunciation": {
-        "ipa": "ɪˈmɜːʃən",
-        "phonetic": "ih-MUR-shun"
+        "ipa": "ˈpɒləsi ˈfreɪmwɜːks",
+        "phonetic": "POL-uh-see FRAYM-wurks"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "international exposure",
+      "english": "**binding agreements**",
       "pronunciation": {
-        "ipa": "ɪkˈspəʊʒə",
-        "phonetic": "ik-SPOH-zhur"
+        "ipa": "ˈbaɪndɪŋ əˈɡriːmənts",
+        "phonetic": "BYN-ding uh-GREE-ments"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "home-based learning",
+      "english": "**reduced emissions**",
       "pronunciation": {
-        "ipa": "beɪst",
-        "phonetic": "BAYST"
+        "ipa": "rɪˈdjuːst ɪˈmɪʃənz",
+        "phonetic": "rih-DYOOST ih-MISH-unz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "brilliant scholars",
+      "english": "**policy research**",
       "pronunciation": {
-        "ipa": "ˈbrɪliənt",
-        "phonetic": "BRIL-yunt"
+        "ipa": "ˈpɒləsi rɪˈsɜːtʃ",
+        "phonetic": "POL-uh-see rih-SURCH"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "work-life balance",
+      "english": "**countries**",
       "pronunciation": {
-        "ipa": "ˈbæləns",
-        "phonetic": "BAL-uns"
+        "ipa": "ˈkʌntriz",
+        "phonetic": "KUN-treez"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "professional responsibilities",
+      "english": "**environmental benefits**",
       "pronunciation": {
-        "ipa": "rɪˌspɒnsəˈbɪlətiz",
-        "phonetic": "rih-spon-suh-BIL-uh-teez"
+        "ipa": "ɪnˌvaɪrənˈmentəl ˈbenɪfɪts",
+        "phonetic": "in-vy-run-MEN-tul BEN-ih-fits"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "personal life aspects",
+      "english": "**climate initiatives**",
       "pronunciation": {
-        "ipa": "ˈæspekts",
-        "phonetic": "AS-pekts"
+        "ipa": "ˈklaɪmət ɪˈnɪʃətɪvz",
+        "phonetic": "KLY-mut ih-NISH-uh-tivz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "leisure pursuits",
+      "english": "**business activities**",
       "pronunciation": {
-        "ipa": "ˈleʒə pəˈsjuːts",
-        "phonetic": "LEZH-ur per-SOOTS"
+        "ipa": "ˈbɪznəs ækˈtɪvətiz",
+        "phonetic": "BIZ-nus ak-TIV-uh-teez"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "family engagement",
+      "english": "**pollution levels**",
       "pronunciation": {
-        "ipa": "ɪnˈɡeɪdʒmənt",
-        "phonetic": "in-GAYJ-ment"
+        "ipa": "pəˈluːʃən ˈlevəlz",
+        "phonetic": "puh-LOO-shun LEV-ulz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "workplace demands",
+      "english": "**shared responsibility**",
       "pronunciation": {
-        "ipa": "dɪˈmɑːndz",
-        "phonetic": "dih-MAHNDS"
+        "ipa": "ʃeəd rɪˌspɒnsəˈbɪləti",
+        "phonetic": "SHAIRD rih-spon-suh-BIL-uh-tee"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "mental health wellbeing",
+      "english": "**environmental institutions**",
       "pronunciation": {
-        "ipa": "ˌwelˈbiːɪŋ",
-        "phonetic": "wel-BEE-ing"
+        "ipa": "ɪnˌvaɪrənˈmentəl ˌɪnstɪˈtjuːʃənz",
+        "phonetic": "in-vy-run-MEN-tul in-stuh-TOO-shunz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "overall life satisfaction",
+      "english": "**businesses**",
       "pronunciation": {
-        "ipa": "ˌsætɪsˈfækʃən",
-        "phonetic": "sat-is-FAK-shun"
+        "ipa": "ˈbɪznəsɪz",
+        "phonetic": "BIZ-nus-iz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "job satisfaction levels",
+      "english": "**carbon emissions**",
       "pronunciation": {
-        "ipa": "ˈlevəlz",
-        "phonetic": "LEV-ulz"
+        "ipa": "ˈkɑːbən ɪˈmɪʃənz",
+        "phonetic": "KAR-bun ih-MISH-unz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "career development",
+      "english": "**business operations**",
       "pronunciation": {
-        "ipa": "dɪˈveləpmənt",
-        "phonetic": "dih-VEL-up-ment"
+        "ipa": "ˈbɪznəs ˌɒpəˈreɪʃənz",
+        "phonetic": "BIZ-nus op-uh-RAY-shunz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "employment opportunities",
+      "english": "**government policies**",
       "pronunciation": {
-        "ipa": "ˌɒpəˈtjuːnətiz",
-        "phonetic": "op-ur-TOO-nuh-teez"
+        "ipa": "ˈɡʌvənmənt ˈpɒləsiz",
+        "phonetic": "GUV-urn-ment POL-uh-seez"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "professional environment",
+      "english": "**corporate responsibility**",
       "pronunciation": {
-        "ipa": "ɪnˈvaɪrənmənt",
-        "phonetic": "in-VY-run-ment"
+        "ipa": "ˈkɔːpərət rɪˌspɒnsəˈbɪləti",
+        "phonetic": "KOR-pur-ut rih-spon-suh-BIL-uh-tee"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "work performance",
+      "english": "**all stakeholders**",
       "pronunciation": {
-        "ipa": "pəˈfɔːməns",
-        "phonetic": "per-FOR-muns"
+        "ipa": "ɔːl ˈsteɪkhəʊldəz",
+        "phonetic": "AWL STAYK-hohl-durz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "productivity levels",
+      "english": "**building design**",
       "pronunciation": {
-        "ipa": "ˌprɒdʌkˈtɪvəti",
-        "phonetic": "prod-uk-TIV-uh-tee"
+        "ipa": "ˈbɪldɪŋ dɪˈzaɪn",
+        "phonetic": "BIL-ding dih-ZYN"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "workplace flexibility",
+      "english": "**good design**",
       "pronunciation": {
-        "ipa": "ˌfleksəˈbɪləti",
-        "phonetic": "flek-suh-BIL-uh-tee"
+        "ipa": "ɡʊd dɪˈzaɪn",
+        "phonetic": "GOOD dih-ZYN"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "stress and anxiety",
+      "english": "**quality of life**",
       "pronunciation": {
-        "ipa": "streˈs æŋˈzaɪəti",
-        "phonetic": "STRESS ang-ZY-uh-tee"
+        "ipa": "ˈkwɒləti əv laɪf",
+        "phonetic": "KWOL-uh-tee uv LYF"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "emotional support",
+      "english": "**natural light**",
       "pronunciation": {
-        "ipa": "ɪˈməʊʃənəl",
-        "phonetic": "ih-MOH-shun-ul"
+        "ipa": "ˈnætʃərəl laɪt",
+        "phonetic": "NATCH-ur-ul LYT"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "psychological wellbeing",
+      "english": "**comfortable spaces**",
       "pronunciation": {
-        "ipa": "ˌsaɪkəˈlɒdʒɪkəl",
-        "phonetic": "sy-kuh-LOJ-ih-kul"
+        "ipa": "ˈkʌmfətəbəl ˈspeɪsɪz",
+        "phonetic": "KUM-fur-tuh-bul SPAY-siz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "stress reduction",
+      "english": "**improved health**",
       "pronunciation": {
-        "ipa": "rɪˈdʌkʃən",
-        "phonetic": "rih-DUK-shun"
+        "ipa": "ɪmˈpruːvd helθ",
+        "phonetic": "im-PROOVD HELTH"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "mental pressure",
+      "english": "**research shows**",
       "pronunciation": {
-        "ipa": "ˈpreʃə",
-        "phonetic": "PRESH-ur"
+        "ipa": "rɪˈsɜːtʃ ʃəʊz",
+        "phonetic": "rih-SURCH SHOHZ"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "relaxation",
+      "english": "**people**",
       "pronunciation": {
-        "ipa": "ˌriːlækˈseɪʃən",
-        "phonetic": "ree-lak-SAY-shun"
+        "ipa": "ˈpiːpəl",
+        "phonetic": "PEE-pul"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "comfort and discomfort",
+      "english": "**better satisfaction**",
       "pronunciation": {
-        "ipa": "ˈkʌmfət dɪsˈkʌmfət",
-        "phonetic": "KUM-furt dis-KUM-furt"
+        "ipa": "ˈbetə ˌsætɪsˈfækʃən",
+        "phonetic": "BET-ur sat-is-FAK-shun"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "emotional stability",
+      "english": "**poor design**",
       "pronunciation": {
-        "ipa": "stəˈbɪləti",
-        "phonetic": "stuh-BIL-uh-tee"
+        "ipa": "pʊə dɪˈzaɪn",
+        "phonetic": "POOR dih-ZYN"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "feelings of isolation",
+      "english": "**limited space**",
       "pronunciation": {
-        "ipa": "ˌaɪsəˈleɪʃən",
-        "phonetic": "eye-suh-LAY-shun"
+        "ipa": "ˈlɪmɪtɪd speɪs",
+        "phonetic": "LIM-ih-tid SPAYS"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "loneliness",
+      "english": "**discomfort**",
       "pronunciation": {
-        "ipa": "ˈləʊnlinəs",
-        "phonetic": "LOHN-lee-nus"
+        "ipa": "dɪsˈkʌmfət",
+        "phonetic": "dis-KUM-furt"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "companionship",
+      "english": "**avoid places**",
       "pronunciation": {
-        "ipa": "kəmˈpæniənʃɪp",
-        "phonetic": "kum-PAN-yun-ship"
+        "ipa": "əˈvɔɪd ˈpleɪsɪz",
+        "phonetic": "uh-VOYD PLAY-siz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "peace of mind",
+      "english": "**studies indicate**",
       "pronunciation": {
-        "ipa": "piːs",
-        "phonetic": "PEESS"
+        "ipa": "ˈstʌdiz ˈɪndɪkeɪt",
+        "phonetic": "STUD-eez IN-dih-kayt"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "emotional wellbeing",
+      "english": "**workers**",
       "pronunciation": {
-        "ipa": "ˌwelˈbiːɪŋ",
-        "phonetic": "wel-BEE-ing"
+        "ipa": "ˈwɜːkəz",
+        "phonetic": "WUR-kurz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "stress management",
+      "english": "**negative impact**",
       "pronunciation": {
-        "ipa": "ˈmænɪdʒmənt",
-        "phonetic": "MAN-ij-ment"
+        "ipa": "ˈneɡətɪv ˈɪmpækt",
+        "phonetic": "NEG-uh-tiv IM-pakt"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "mental resilience",
+      "english": "**poor conditions**",
       "pronunciation": {
-        "ipa": "rɪˈzɪliəns",
-        "phonetic": "rih-ZIL-ee-uns"
+        "ipa": "pʊə kənˈdɪʃənz",
+        "phonetic": "POOR kun-DISH-unz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "job creation",
+      "english": "**urban planners**",
       "pronunciation": {
-        "ipa": "kriˈeɪʃən",
-        "phonetic": "kree-AY-shun"
+        "ipa": "ˈɜːbən ˈplænəz",
+        "phonetic": "UR-bun PLAN-urz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "employment rate",
+      "english": "**studying overseas**",
       "pronunciation": {
-        "ipa": "reɪt",
-        "phonetic": "RAYT"
+        "ipa": "ˈstʌdɪɪŋ ˌəʊvəˈsiːz",
+        "phonetic": "STUD-ee-ing oh-vur-SEEZ"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "career goals",
+      "english": "**study abroad**",
       "pronunciation": {
-        "ipa": "ɡəʊlz",
-        "phonetic": "GOHLZ"
+        "ipa": "ˈstʌdi əˈbrɔːd",
+        "phonetic": "STUD-ee uh-BRAWD"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "professional growth",
+      "english": "**cross-cultural learning**",
       "pronunciation": {
-        "ipa": "ɡrəʊθ",
-        "phonetic": "GROHTH"
+        "ipa": "krɒs ˈkʌltʃərəl ˈlɜːnɪŋ",
+        "phonetic": "KROSS KUL-chur-ul LUR-ning"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "skill development",
+      "english": "**international exposure**",
       "pronunciation": {
-        "ipa": "dɪˈveləpmənt",
-        "phonetic": "dih-VEL-up-ment"
+        "ipa": "ˌɪntəˈnæʃənəl ɪkˈspəʊʒə",
+        "phonetic": "in-tur-NASH-un-ul ik-SPOH-zhur"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "career path",
+      "english": "**global perspective**",
       "pronunciation": {
-        "ipa": "pɑːθ",
-        "phonetic": "PAHTH"
+        "ipa": "ˈɡləʊbəl pəˈspektɪv",
+        "phonetic": "GLOH-bul per-SPEK-tiv"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "work experience",
+      "english": "**broader outcomes**",
       "pronunciation": {
-        "ipa": "ɪkˈspɪəriəns",
-        "phonetic": "ik-SPEER-ee-uns"
+        "ipa": "ˈbrɔːdə ˈaʊtkʌmz",
+        "phonetic": "BRAW-dur OWT-kumz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "job security",
+      "english": "**enhanced understanding**",
       "pronunciation": {
-        "ipa": "sɪˈkjʊərəti",
-        "phonetic": "sih-KYOOR-uh-tee"
+        "ipa": "ɪnˈhɑːnst ˌʌndəˈstændɪŋ",
+        "phonetic": "in-HAHNST un-dur-STAN-ding"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "income generation",
+      "english": "**cultural immersion**",
       "pronunciation": {
-        "ipa": "ˌdʒenəˈreɪʃən",
-        "phonetic": "jen-uh-RAY-shun"
+        "ipa": "ˈkʌltʃərəl ɪˈmɜːʃən",
+        "phonetic": "KUL-chur-ul ih-MUR-shun"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "economic opportunity",
+      "english": "**home-based learning**",
       "pronunciation": {
-        "ipa": "ˌiːkəˈnɒmɪk",
-        "phonetic": "ee-kuh-NOM-ik"
+        "ipa": "həʊm beɪst ˈlɜːnɪŋ",
+        "phonetic": "HOHM BAYST LUR-ning"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "labor market",
+      "english": "**local scholars**",
       "pronunciation": {
-        "ipa": "ˈleɪbə",
-        "phonetic": "LAY-bur"
+        "ipa": "ˈləʊkəl ˈskɒləz",
+        "phonetic": "LOH-kul SKOL-urz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "workforce participation",
+      "english": "**local success**",
       "pronunciation": {
-        "ipa": "pɑːˌtɪsɪˈpeɪʃən",
-        "phonetic": "par-tis-ih-PAY-shun"
+        "ipa": "ˈləʊkəl səkˈses",
+        "phonetic": "LOH-kul suk-SES"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "building design effects",
+      "english": "**local graduates**",
       "pronunciation": {
-        "ipa": "dɪˈzaɪn",
-        "phonetic": "dih-ZYN"
+        "ipa": "ˈləʊkəl ˈɡrædʒuəts",
+        "phonetic": "LOH-kul GRAJ-oo-uts"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "architectural features",
+      "english": "**comparable results**",
       "pronunciation": {
-        "ipa": "ˌɑːkɪˈtektʃərəl",
-        "phonetic": "ar-kih-TEK-chur-ul"
+        "ipa": "ˈkɒmpərəbəl rɪˈzʌlts",
+        "phonetic": "KOM-pur-uh-bul rih-ZULTS"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "urban planning studies",
+      "english": "**strong education**",
       "pronunciation": {
-        "ipa": "ˈɜːbən",
-        "phonetic": "UR-bun"
+        "ipa": "strɒŋ ˌedjʊˈkeɪʃən",
+        "phonetic": "STRONG ej-oo-KAY-shun"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "well-designed buildings",
+      "english": "**international experience**",
       "pronunciation": {
-        "ipa": "dɪˈzaɪnd",
-        "phonetic": "dih-ZYND"
+        "ipa": "ˌɪntəˈnæʃənəl ɪkˈspɪəriəns",
+        "phonetic": "in-tur-NASH-un-ul ik-SPEER-ee-uns"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "poorly designed structures",
+      "english": "**local education**",
       "pronunciation": {
-        "ipa": "ˈstrʌktʃəz",
-        "phonetic": "STRUK-churz"
+        "ipa": "ˈləʊkəl ˌedjʊˈkeɪʃən",
+        "phonetic": "LOH-kul ej-oo-KAY-shun"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "natural light access",
+      "english": "**smartphones**",
       "pronunciation": {
-        "ipa": "ˈækses",
-        "phonetic": "AK-ses"
+        "ipa": "ˈsmɑːtfəʊnz",
+        "phonetic": "SMART-fohnz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "ventilation systems",
+      "english": "**instant communication**",
       "pronunciation": {
-        "ipa": "ˌventɪˈleɪʃən",
-        "phonetic": "ven-tih-LAY-shun"
+        "ipa": "ˈɪnstənt kəˌmjuːnɪˈkeɪʃən",
+        "phonetic": "IN-stunt kuh-myoo-nih-KAY-shun"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "living environment",
+      "english": "**mobile technology**",
       "pronunciation": {
-        "ipa": "ɪnˈvaɪrənmənt",
-        "phonetic": "in-VY-run-ment"
+        "ipa": "ˈməʊbaɪl tekˈnɒlədʒi",
+        "phonetic": "MOH-byl tek-NOL-uh-jee"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "working environment",
+      "english": "**connected society**",
       "pronunciation": {
-        "ipa": "ɪnˈvaɪrənmənt",
-        "phonetic": "in-VY-run-ment"
+        "ipa": "kəˈnektɪd səˈsaɪəti",
+        "phonetic": "kuh-NEK-tid suh-SY-uh-tee"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "physical infrastructure",
+      "english": "**improved access**",
       "pronunciation": {
-        "ipa": "ˈɪnfrəstrʌktʃə",
-        "phonetic": "IN-fruh-struk-chur"
+        "ipa": "ɪmˈpruːvd ˈækses",
+        "phonetic": "im-PROOVD AK-ses"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "public spaces",
+      "english": "**technology research**",
       "pronunciation": {
-        "ipa": "ˈpʌblɪk",
-        "phonetic": "PUB-lik"
+        "ipa": "tekˈnɒlədʒi rɪˈsɜːtʃ",
+        "phonetic": "tek-NOL-uh-jee rih-SURCH"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "residential areas",
+      "english": "**enhanced connectivity**",
       "pronunciation": {
-        "ipa": "ˌrezɪˈdenʃəl",
-        "phonetic": "rez-ih-DEN-shul"
+        "ipa": "ɪnˈhɑːnst ˌkɒnekˈtɪvəti",
+        "phonetic": "in-HAHNST kon-ek-TIV-uh-tee"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "commercial districts",
+      "english": "**smartphone use**",
       "pronunciation": {
-        "ipa": "kəˈmɜːʃəl",
-        "phonetic": "kuh-MUR-shul"
+        "ipa": "ˈsmɑːtfəʊn juːz",
+        "phonetic": "SMART-fohn YOOZ"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "environmental quality",
+      "english": "**smartphone dependency**",
       "pronunciation": {
-        "ipa": "kwɒləti",
-        "phonetic": "KWOL-uh-tee"
+        "ipa": "ˈsmɑːtfəʊn dɪˈpendənsi",
+        "phonetic": "SMART-fohn dih-PEN-dun-see"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "spatial design",
+      "english": "**excessive screen time**",
       "pronunciation": {
-        "ipa": "ˈspeɪʃəl",
-        "phonetic": "SPAY-shul"
+        "ipa": "ɪkˈsesɪv skriːn taɪm",
+        "phonetic": "ik-SES-iv SKREEN TYM"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "historic buildings",
+      "english": "**social isolation**",
       "pronunciation": {
-        "ipa": "hɪˈstɒrɪk",
-        "phonetic": "hih-STOR-ik"
+        "ipa": "ˈsəʊʃəl ˌaɪsəˈleɪʃən",
+        "phonetic": "SOH-shul eye-suh-LAY-shun"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "cultural heritage",
+      "english": "**reduced interaction**",
       "pronunciation": {
-        "ipa": "ˈherɪtɪdʒ",
-        "phonetic": "HER-ih-tij"
+        "ipa": "rɪˈdjuːst ˌɪntərˈækʃən",
+        "phonetic": "rih-DYOOST in-tur-AK-shun"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "preservation efforts",
+      "english": "**social studies**",
       "pronunciation": {
-        "ipa": "ˌprezəˈveɪʃən",
-        "phonetic": "prez-ur-VAY-shun"
+        "ipa": "ˈsəʊʃəl ˈstʌdiz",
+        "phonetic": "SOH-shul STUD-eez"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "architectural preservation",
+      "english": "**users**",
       "pronunciation": {
-        "ipa": "ˌɑːkɪˈtektʃərəl",
-        "phonetic": "ar-kih-TEK-chur-ul"
+        "ipa": "ˈjuːzəz",
+        "phonetic": "YOO-zurz"
       },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "historic preservation",
-      "pronunciation": {
-        "ipa": "hɪˈstɒrɪk",
-        "phonetic": "hih-STOR-ik"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "restoration costs",
-      "pronunciation": {
-        "ipa": "ˌrestəˈreɪʃən",
-        "phonetic": "rest-uh-RAY-shun"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "heritage conservation",
-      "pronunciation": {
-        "ipa": "ˌkɒnsəˈveɪʃən",
-        "phonetic": "kon-sur-VAY-shun"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "historical significance",
-      "pronunciation": {
-        "ipa": "sɪɡˈnɪfɪkəns",
-        "phonetic": "sig-NIF-ih-kuns"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "preservation projects",
-      "pronunciation": {
-        "ipa": "ˈprɒdʒekts",
-        "phonetic": "PROJ-ekts"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "cultural monuments",
-      "pronunciation": {
-        "ipa": "ˈmɒnjʊmənts",
-        "phonetic": "MON-yoo-ments"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "international organizations",
-      "pronunciation": {
-        "ipa": "ˌɔːɡənaɪˈzeɪʃənz",
-        "phonetic": "or-gun-eye-ZAY-shunz"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "global problems",
-      "pronunciation": {
-        "ipa": "ˈɡləʊbəl",
-        "phonetic": "GLOH-bul"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "government cooperation",
-      "pronunciation": {
-        "ipa": "kəʊˌɒpəˈreɪʃən",
-        "phonetic": "koh-op-uh-RAY-shun"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "coordination challenges",
-      "pronunciation": {
-        "ipa": "kəʊˌɔːdɪˈneɪʃən",
-        "phonetic": "koh-or-dih-NAY-shun"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "resource limitations",
-      "pronunciation": {
-        "ipa": "ˌlɪmɪˈteɪʃənz",
-        "phonetic": "lim-ih-TAY-shunz"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "collaborative efforts",
-      "pronunciation": {
-        "ipa": "kəˈlæbərətɪv",
-        "phonetic": "kuh-LAB-uh-ruh-tiv"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "unified strategies",
-      "pronunciation": {
-        "ipa": "ˈjuːnɪfaɪd",
-        "phonetic": "YOO-nih-fyd"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "shared responsibilities",
-      "pronunciation": {
-        "ipa": "ʃeəd",
-        "phonetic": "SHAIRD"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "binding agreements",
-      "pronunciation": {
-        "ipa": "ˈbaɪndɪŋ",
-        "phonetic": "BYN-ding"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "policy frameworks",
-      "pronunciation": {
-        "ipa": "ˈfreɪmwɜːks",
-        "phonetic": "FRAYM-wurks"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "diplomatic relations",
-      "pronunciation": {
-        "ipa": "ˌdɪpləˈmætɪk",
-        "phonetic": "dip-luh-MAT-ik"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "international initiatives",
-      "pronunciation": {
-        "ipa": "ɪˈnɪʃətɪvz",
-        "phonetic": "ih-NISH-uh-tivz"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "multinational approach",
-      "pronunciation": {
-        "ipa": "ˌmʌltiˈnæʃənəl",
-        "phonetic": "mul-tee-NASH-un-ul"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "global governance",
-      "pronunciation": {
-        "ipa": "ˈɡʌvənəns",
-        "phonetic": "GUV-ur-nuns"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "cross-border cooperation",
-      "pronunciation": {
-        "ipa": "ˈbɔːdə",
-        "phonetic": "BOR-dur"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "urgent issues",
-      "pronunciation": {
-        "ipa": "ˈɜːdʒənt",
-        "phonetic": "UR-junt"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "pressing problems",
-      "pronunciation": {
-        "ipa": "ˈpresɪŋ",
-        "phonetic": "PRES-ing"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "political commitment",
-      "pronunciation": {
-        "ipa": "kəˈmɪtmənt",
-        "phonetic": "kuh-MIT-ment"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "coordinated efforts",
-      "pronunciation": {
-        "ipa": "kəʊˈɔːdɪneɪtɪd",
-        "phonetic": "koh-OR-dih-nay-tid"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "tourism development",
-      "pronunciation": {
-        "ipa": "ˈtʊərɪzəm",
-        "phonetic": "TOOR-iz-um"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "less developed countries",
-      "pronunciation": {
-        "ipa": "dɪˈveləpt",
-        "phonetic": "dih-VEL-upt"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "economic benefits",
-      "pronunciation": {
-        "ipa": "ˌiːkəˈnɒmɪk",
-        "phonetic": "ee-kuh-NOM-ik"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "tourist revenue",
-      "pronunciation": {
-        "ipa": "ˈrevənjuː",
-        "phonetic": "REV-uh-noo"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "visitor spending",
-      "pronunciation": {
-        "ipa": "ˈspendɪŋ",
-        "phonetic": "SPEND-ing"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "hospitality sectors",
-      "pronunciation": {
-        "ipa": "ˌhɒspɪˈtæləti",
-        "phonetic": "hos-pih-TAL-uh-tee"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "infrastructure improvement",
-      "pronunciation": {
-        "ipa": "ɪmˈpruːvmənt",
-        "phonetic": "im-PROOV-ment"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "local populations",
-      "pronunciation": {
-        "ipa": "ˌpɒpjʊˈleɪʃənz",
-        "phonetic": "pop-yoo-LAY-shunz"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "environmental damage",
-      "pronunciation": {
-        "ipa": "ˈdæmɪdʒ",
-        "phonetic": "DAM-ij"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "cultural disruption",
-      "pronunciation": {
-        "ipa": "dɪsˈrʌpʃən",
-        "phonetic": "dis-RUP-shun"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "resource depletion",
-      "pronunciation": {
-        "ipa": "dɪˈpliːʃən",
-        "phonetic": "dih-PLEE-shun"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "overcrowding issues",
-      "pronunciation": {
-        "ipa": "ˌəʊvəˈkraʊdɪŋ",
-        "phonetic": "oh-vur-KROWD-ing"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "traditional lifestyles",
-      "pronunciation": {
-        "ipa": "ˈlaɪfstaɪlz",
-        "phonetic": "LYF-stylz"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "sustainable tourism",
-      "pronunciation": {
-        "ipa": "səˈsteɪnəbəl",
-        "phonetic": "suh-STAYN-uh-bul"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "tourism destinations",
-      "pronunciation": {
-        "ipa": "ˌdestɪˈneɪʃənz",
-        "phonetic": "des-tih-NAY-shunz"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "economic growth",
-      "pronunciation": {
-        "ipa": "ɡrəʊθ",
-        "phonetic": "GROHTH"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "business activities",
-      "pronunciation": {
-        "ipa": "ækˈtɪvətiz",
-        "phonetic": "ak-TIV-uh-teez"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "investment opportunities",
-      "pronunciation": {
-        "ipa": "ɪnˈvestmənt",
-        "phonetic": "in-VEST-ment"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "financial resources",
-      "pronunciation": {
-        "ipa": "faɪˈnænʃəl",
-        "phonetic": "fy-NAN-shul"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "development studies",
-      "pronunciation": {
-        "ipa": "dɪˈveləpmənt",
-        "phonetic": "dih-VEL-up-ment"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "poverty reduction",
-      "pronunciation": {
-        "ipa": "ˈpɒvəti",
-        "phonetic": "POV-ur-tee"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "living standards improvement",
-      "pronunciation": {
-        "ipa": "ˈstændədz",
-        "phonetic": "STAN-durdz"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "wealth distribution",
-      "pronunciation": {
-        "ipa": "ˌdɪstrɪˈbjuːʃən",
-        "phonetic": "dis-trih-BYOO-shun"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "sustainable development",
-      "pronunciation": {
-        "ipa": "səˈsteɪnəbəl",
-        "phonetic": "suh-STAYN-uh-bul"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "getting married",
-      "pronunciation": {
-        "ipa": "ˈmærid",
-        "phonetic": "MAR-eed"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "family responsibilities",
-      "pronunciation": {
-        "ipa": "rɪˌspɒnsəˈbɪlətiz",
-        "phonetic": "rih-spon-suh-BIL-uh-teez"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "personal circumstances",
-      "pronunciation": {
-        "ipa": "ˈsɜːkəmstənsɪz",
-        "phonetic": "SUR-kum-stan-siz"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "family support system",
-      "pronunciation": {
-        "ipa": "səˈpɔːt",
-        "phonetic": "suh-PORT"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "financial arrangements",
-      "pronunciation": {
-        "ipa": "əˈreɪndʒmənts",
-        "phonetic": "uh-RAYNJ-ments"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "life decisions",
-      "pronunciation": {
-        "ipa": "dɪˈsɪʒənz",
-        "phonetic": "dih-SIZH-unz"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "individual wellbeing",
-      "pronunciation": {
-        "ipa": "ˌwelˈbiːɪŋ",
-        "phonetic": "wel-BEE-ing"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "quality of life",
-      "pronunciation": {
-        "ipa": "ˈkwɒləti",
-        "phonetic": "KWOL-uh-tee"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "personal development",
-      "pronunciation": {
-        "ipa": "dɪˈveləpmənt",
-        "phonetic": "dih-VEL-up-ment"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "relationship management",
-      "pronunciation": {
-        "ipa": "rɪˈleɪʃənʃɪp",
-        "phonetic": "rih-LAY-shun-ship"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "social connections",
-      "pronunciation": {
-        "ipa": "kəˈnekʃənz",
-        "phonetic": "kuh-NEK-shunz"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "community involvement",
-      "pronunciation": {
-        "ipa": "ɪnˈvɒlvmənt",
-        "phonetic": "in-VOLV-ment"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "cultural values",
-      "pronunciation": {
-        "ipa": "ˈvæljuːz",
-        "phonetic": "VAL-yooz"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "lifestyle choices",
-      "pronunciation": {
-        "ipa": "ˈlaɪfstaɪl",
-        "phonetic": "LYF-styl"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "social research",
-      "pronunciation": {
-        "ipa": "rɪˈsɜːtʃ",
-        "phonetic": "rih-SURCH"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "community impact",
-      "pronunciation": {
-        "ipa": "ˈɪmpækt",
-        "phonetic": "IM-pakt"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "cultural awareness",
-      "pronunciation": {
-        "ipa": "əˈweənəs",
-        "phonetic": "uh-WAIR-nus"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "social behavior",
-      "pronunciation": {
-        "ipa": "bɪˈheɪvjə",
-        "phonetic": "bih-HAYV-yur"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "public opinion",
-      "pronunciation": {
-        "ipa": "əˈpɪnjən",
-        "phonetic": "uh-PIN-yun"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "societal changes",
-      "pronunciation": {
-        "ipa": "səˈsaɪətəl",
-        "phonetic": "suh-SY-uh-tul"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "demographic trends",
-      "pronunciation": {
-        "ipa": "ˌdeməˈɡræfɪk",
-        "phonetic": "dem-uh-GRAF-ik"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "population dynamics",
-      "pronunciation": {
-        "ipa": "daɪˈnæmɪks",
-        "phonetic": "dy-NAM-iks"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "social welfare",
-      "pronunciation": {
-        "ipa": "ˈwelfeə",
-        "phonetic": "WEL-fair"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "community development",
-      "pronunciation": {
-        "ipa": "dɪˈveləpmənt",
-        "phonetic": "dih-VEL-up-ment"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "civic engagement",
-      "pronunciation": {
-        "ipa": "ˈsɪvɪk",
-        "phonetic": "SIV-ik"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "social responsibility",
-      "pronunciation": {
-        "ipa": "rɪˌspɒnsəˈbɪləti",
-        "phonetic": "rih-spon-suh-BIL-uh-tee"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "entertainment value",
-      "pronunciation": {
-        "ipa": "ˌentəˈteɪnmənt",
-        "phonetic": "en-tur-TAYN-ment"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "leisure activities",
-      "pronunciation": {
-        "ipa": "ˈleʒə",
-        "phonetic": "LEZH-ur"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "recreational pursuits",
-      "pronunciation": {
-        "ipa": "ˌrekriˈeɪʃənəl",
-        "phonetic": "rek-ree-AY-shun-ul"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "entertainment programs",
-      "pronunciation": {
-        "ipa": "ˈprəʊɡræmz",
-        "phonetic": "PROH-gramz"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "media consumption",
-      "pronunciation": {
-        "ipa": "kənˈsʌmpʃən",
-        "phonetic": "kun-SUMP-shun"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "leisure time",
-      "pronunciation": {
-        "ipa": "taɪm",
-        "phonetic": "TYM"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "entertainment industry",
-      "pronunciation": {
-        "ipa": "ˈɪndəstri",
-        "phonetic": "IN-dus-tree"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "social entertainment",
-      "pronunciation": {
-        "ipa": "ˈsəʊʃəl",
-        "phonetic": "SOH-shul"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "cultural activities",
-      "pronunciation": {
-        "ipa": "ækˈtɪvətiz",
-        "phonetic": "ak-TIV-uh-teez"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "hobby engagement",
-      "pronunciation": {
-        "ipa": "ˈhɒbi",
-        "phonetic": "HOB-ee"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "technological progress",
-      "pronunciation": {
-        "ipa": "ˌteknəˈlɒdʒɪkəl",
-        "phonetic": "tek-nuh-LOJ-ih-kul"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "digital technology",
-      "pronunciation": {
-        "ipa": "ˈdɪdʒɪtəl",
-        "phonetic": "DIJ-ih-tul"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "computer technology",
-      "pronunciation": {
-        "ipa": "kəmˈpjuːtə",
-        "phonetic": "kum-PYOO-tur"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "innovation",
-      "pronunciation": {
-        "ipa": "ˌɪnəˈveɪʃən",
-        "phonetic": "in-uh-VAY-shun"
-      },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "technological advancement",
+      "english": "**negative effects**",
       "pronunciation": {
-        "ipa": "ədˈvɑːnsmənt",
-        "phonetic": "ud-VAHNS-ment"
+        "ipa": "ˈneɡətɪv ɪˈfekts",
+        "phonetic": "NEG-uh-tiv ih-FEKTS"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "technology implementation",
+      "english": "**overuse**",
       "pronunciation": {
-        "ipa": "ˌɪmplɪmenˈteɪʃən",
-        "phonetic": "im-plih-men-TAY-shun"
+        "ipa": "ˌəʊvəˈjuːs",
+        "phonetic": "oh-vur-YOOS"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "communication systems",
+      "english": "**social concerns**",
       "pronunciation": {
-        "ipa": "kəˌmjuːnɪˈkeɪʃən",
-        "phonetic": "kuh-myoo-nih-KAY-shun"
+        "ipa": "ˈsəʊʃəl kənˈsɜːnz",
+        "phonetic": "SOH-shul kun-SURNZ"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "modern technology",
+      "english": "**society**",
       "pronunciation": {
-        "ipa": "ˈmɒdən",
-        "phonetic": "MOD-urn"
+        "ipa": "səˈsaɪəti",
+        "phonetic": "suh-SY-uh-tee"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "technological development",
+      "english": "**efforts**",
       "pronunciation": {
-        "ipa": "dɪˈveləpmənt",
-        "phonetic": "dih-VEL-up-ment"
+        "ipa": "ˈefəts",
+        "phonetic": "EF-urts"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "information technology",
+      "english": "**historic buildings**",
       "pronunciation": {
-        "ipa": "ˌɪnfəˈmeɪʃən",
-        "phonetic": "in-fur-MAY-shun"
+        "ipa": "hɪˈstɒrɪk ˈbɪldɪŋz",
+        "phonetic": "hih-STOR-ik BIL-dingz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "technological achievements",
+      "english": "**cultural heritage**",
       "pronunciation": {
-        "ipa": "əˈtʃiːvmənts",
-        "phonetic": "uh-CHEEV-ments"
+        "ipa": "ˈkʌltʃərəl ˈherɪtɪdʒ",
+        "phonetic": "KUL-chur-ul HER-ih-tij"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "digital transformation",
+      "english": "**preservation efforts**",
       "pronunciation": {
-        "ipa": "ˌtrænsfəˈmeɪʃən",
-        "phonetic": "trans-fur-MAY-shun"
+        "ipa": "ˌprezəˈveɪʃən ˈefəts",
+        "phonetic": "prez-ur-VAY-shun EF-urts"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "technological solutions",
+      "english": "**historical value**",
       "pronunciation": {
-        "ipa": "səˈluːʃənz",
-        "phonetic": "suh-LOO-shunz"
+        "ipa": "hɪˈstɒrɪkəl ˈvæljuː",
+        "phonetic": "hih-STOR-ih-kul VAL-yoo"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "online platforms",
+      "english": "**cultural identity**",
       "pronunciation": {
-        "ipa": "ˈɒnlaɪn",
-        "phonetic": "ON-lyn"
+        "ipa": "ˈkʌltʃərəl aɪˈdentəti",
+        "phonetic": "KUL-chur-ul eye-DEN-tuh-tee"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "technological innovation",
+      "english": "**cultural research**",
       "pronunciation": {
-        "ipa": "ˌɪnəˈveɪʃən",
-        "phonetic": "in-uh-VAY-shun"
+        "ipa": "ˈkʌltʃərəl rɪˈsɜːtʃ",
+        "phonetic": "KUL-chur-ul rih-SURCH"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "smartphone technology",
+      "english": "**communities**",
       "pronunciation": {
-        "ipa": "ˈsmɑːtfəʊn",
-        "phonetic": "SMART-fohn"
+        "ipa": "kəˈmjuːnətiz",
+        "phonetic": "kuh-MYOO-nuh-teez"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "mobile devices",
+      "english": "**preserved heritage**",
       "pronunciation": {
-        "ipa": "ˈməʊbaɪl",
-        "phonetic": "MOH-byl"
+        "ipa": "prɪˈzɜːvd ˈherɪtɪdʒ",
+        "phonetic": "prih-ZURVD HER-ih-tij"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "important inventions",
+      "english": "**conservation work**",
       "pronunciation": {
-        "ipa": "ɪnˈvenʃənz",
-        "phonetic": "in-VEN-shunz"
+        "ipa": "ˌkɒnsəˈveɪʃən wɜːk",
+        "phonetic": "kon-sur-VAY-shun WURK"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "scientific breakthrough",
+      "english": "**modern development**",
       "pronunciation": {
-        "ipa": "ˈbreɪkθruː",
-        "phonetic": "BRAYK-throo"
+        "ipa": "ˈmɒdən dɪˈveləpmənt",
+        "phonetic": "MOD-urn dih-VEL-up-ment"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "medical advancement",
+      "english": "**new construction**",
       "pronunciation": {
-        "ipa": "ˈmedɪkəl",
-        "phonetic": "MED-ih-kul"
+        "ipa": "njuː kənˈstrʌkʃən",
+        "phonetic": "NYOO kun-STRUK-shun"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "research and development",
+      "english": "**practical needs**",
       "pronunciation": {
-        "ipa": "rɪˈsɜːtʃ",
-        "phonetic": "rih-SURCH"
+        "ipa": "ˈpræktɪkəl niːdz",
+        "phonetic": "PRAK-tih-kul NEEDZ"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "cutting-edge technology",
+      "english": "**balanced approach**",
       "pronunciation": {
-        "ipa": "ˈkʌtɪŋ edʒ",
-        "phonetic": "KUT-ing EJ"
+        "ipa": "ˈbælənst əˈprəʊtʃ",
+        "phonetic": "BAL-unst uh-PROHCH"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "revolutionary innovation",
+      "english": "**urban studies**",
       "pronunciation": {
-        "ipa": "ˌrevəˈluːʃənəri",
-        "phonetic": "rev-uh-LOO-shun-air-ee"
+        "ipa": "ˈɜːbən ˈstʌdiz",
+        "phonetic": "UR-bun STUD-eez"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "technological impact",
+      "english": "**cities**",
       "pronunciation": {
-        "ipa": "ˈɪmpækt",
-        "phonetic": "IM-pakt"
+        "ipa": "ˈsɪtiz",
+        "phonetic": "SIT-eez"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "modern inventions",
+      "english": "**development pressure**",
       "pronunciation": {
-        "ipa": "ˈmɒdən",
-        "phonetic": "MOD-urn"
+        "ipa": "dɪˈveləpmənt ˈpreʃə",
+        "phonetic": "dih-VEL-up-ment PRESH-ur"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "innovative solutions",
+      "english": "**modern facilities**",
       "pronunciation": {
-        "ipa": "ˈɪnəvətɪv",
-        "phonetic": "IN-uh-vuh-tiv"
+        "ipa": "ˈmɒdən fəˈsɪlətiz",
+        "phonetic": "MOD-urn fuh-SIL-uh-teez"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "groundbreaking discoveries",
+      "english": "**modern needs**",
       "pronunciation": {
-        "ipa": "ˈɡraʊndbreɪkɪŋ",
-        "phonetic": "GROWND-bray-king"
+        "ipa": "ˈmɒdən niːdz",
+        "phonetic": "MOD-urn NEEDZ"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "natural resources",
+      "english": "**resources**",
       "pronunciation": {
         "ipa": "rɪˈsɔːsɪz",
         "phonetic": "rih-SOR-siz"
@@ -2272,930 +1382,1180 @@
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "climate change issues",
+      "english": "**early marriage**",
       "pronunciation": {
-        "ipa": "ˈklaɪmət",
-        "phonetic": "KLY-mut"
+        "ipa": "ˈɜːli ˈmærɪdʒ",
+        "phonetic": "UR-lee MAR-ij"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "air quality",
+      "english": "**married couples**",
       "pronunciation": {
-        "ipa": "ˈkwɒləti",
-        "phonetic": "KWOL-uh-tee"
+        "ipa": "ˈmærid ˈkʌpəlz",
+        "phonetic": "MAR-eed KUP-ulz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "pollution levels",
+      "english": "**emotional support**",
       "pronunciation": {
-        "ipa": "pəˈluːʃən",
-        "phonetic": "puh-LOO-shun"
+        "ipa": "ɪˈməʊʃənəl səˈpɔːt",
+        "phonetic": "ih-MOH-shun-ul suh-PORT"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "ecological impact",
+      "english": "**stable relationships**",
       "pronunciation": {
-        "ipa": "ˌiːkəˈlɒdʒɪkəl",
-        "phonetic": "ee-kuh-LOJ-ih-kul"
+        "ipa": "ˈsteɪbəl rɪˈleɪʃənʃɪps",
+        "phonetic": "STAY-bul rih-LAY-shun-ships"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "environmental protection",
+      "english": "**family research**",
       "pronunciation": {
-        "ipa": "prəˈtekʃən",
-        "phonetic": "pruh-TEK-shun"
+        "ipa": "ˈfæməli rɪˈsɜːtʃ",
+        "phonetic": "FAM-uh-lee rih-SURCH"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "sustainable practices",
+      "english": "**young couples**",
       "pronunciation": {
-        "ipa": "səˈsteɪnəbəl",
-        "phonetic": "suh-STAYN-uh-bul"
+        "ipa": "jʌŋ ˈkʌpəlz",
+        "phonetic": "YUNG KUP-ulz"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "conservation efforts",
+      "english": "**partnership benefits**",
       "pronunciation": {
-        "ipa": "ˌkɒnsəˈveɪʃən",
-        "phonetic": "kon-sur-VAY-shun"
+        "ipa": "ˈpɑːtnəʃɪp ˈbenɪfɪts",
+        "phonetic": "PART-nur-ship BEN-ih-fits"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "ecosystem balance",
+      "english": "**committed relationships**",
       "pronunciation": {
-        "ipa": "ˈiːkəʊsɪstəm",
-        "phonetic": "EE-koh-sis-tum"
+        "ipa": "kəˈmɪtɪd rɪˈleɪʃənʃɪps",
+        "phonetic": "kuh-MIT-id rih-LAY-shun-ships"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "biodiversity preservation",
+      "english": "**young people**",
       "pronunciation": {
-        "ipa": "ˌbaɪəʊdaɪˈvɜːsəti",
-        "phonetic": "by-oh-dy-VUR-suh-tee"
+        "ipa": "jʌŋ ˈpiːpəl",
+        "phonetic": "YUNG PEE-pul"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "renewable resources",
+      "english": "**limited opportunities**",
       "pronunciation": {
-        "ipa": "rɪˈnjuːəbəl",
-        "phonetic": "rih-NYOO-uh-bul"
+        "ipa": "ˈlɪmɪtɪd ˌɒpəˈtjuːnətiz",
+        "phonetic": "LIM-ih-tid op-ur-TOO-nuh-teez"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "carbon emissions",
+      "english": "**social research**",
       "pronunciation": {
-        "ipa": "ɪˈmɪʃənz",
-        "phonetic": "ih-MISH-unz"
+        "ipa": "ˈsəʊʃəl rɪˈsɜːtʃ",
+        "phonetic": "SOH-shul rih-SURCH"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "environmental awareness",
+      "english": "**youth**",
       "pronunciation": {
-        "ipa": "əˈweənəs",
-        "phonetic": "uh-WAIR-nus"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "environmental degradation",
-      "pronunciation": {
-        "ipa": "ˌdeɡrəˈdeɪʃən",
-        "phonetic": "deg-ruh-DAY-shun"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "environmental impacts",
-      "pronunciation": {
-        "ipa": "ˈɪmpækts",
-        "phonetic": "IM-pakts"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "rising levels",
-      "pronunciation": {
-        "ipa": "ˈraɪzɪŋ",
-        "phonetic": "RY-zing"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "human survival",
-      "pronunciation": {
-        "ipa": "səˈvaɪvəl",
-        "phonetic": "sur-VY-vul"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "long-term viability",
-      "pronunciation": {
-        "ipa": "ˌvaɪəˈbɪləti",
-        "phonetic": "vy-uh-BIL-uh-tee"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "ecological balance",
-      "pronunciation": {
-        "ipa": "ˌiːkəˈlɒdʒɪkəl",
-        "phonetic": "ee-kuh-LOJ-ih-kul"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "resource management",
-      "pronunciation": {
-        "ipa": "ˈmænɪdʒmənt",
-        "phonetic": "MAN-ij-ment"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "environmental responsibility",
-      "pronunciation": {
-        "ipa": "rɪˌspɒnsəˈbɪləti",
-        "phonetic": "rih-spon-suh-BIL-uh-tee"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "green initiatives",
-      "pronunciation": {
-        "ipa": "ɪˈnɪʃətɪvz",
-        "phonetic": "ih-NISH-uh-tivz"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "conservation strategies",
-      "pronunciation": {
-        "ipa": "ˈstrætədʒiz",
-        "phonetic": "STRAT-uh-jeez"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "sustainable solutions",
-      "pronunciation": {
-        "ipa": "səˈluːʃənz",
-        "phonetic": "suh-LOO-shunz"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "environmental stewardship",
-      "pronunciation": {
-        "ipa": "ˈstjuːədʃɪp",
-        "phonetic": "STYOO-urd-ship"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "future generations",
-      "pronunciation": {
-        "ipa": "ˌdʒenəˈreɪʃənz",
-        "phonetic": "jen-uh-RAY-shunz"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "compelling advantage",
-      "pronunciation": {
-        "ipa": "kəmˈpelɪŋ",
-        "phonetic": "kum-PEL-ing"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "significant disadvantage",
-      "pronunciation": {
-        "ipa": "sɪɡˈnɪfɪkənt",
-        "phonetic": "sig-NIF-ih-kunt"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "positive effects",
-      "pronunciation": {
-        "ipa": "ˈpɒzətɪv",
-        "phonetic": "POZ-ih-tiv"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "negative effects",
-      "pronunciation": {
-        "ipa": "ˈneɡətɪv",
-        "phonetic": "NEG-uh-tiv"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "potential to facilitate",
-      "pronunciation": {
-        "ipa": "fəˈsɪlɪteɪt",
-        "phonetic": "fuh-SIL-ih-tayt"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "likely to generate",
-      "pronunciation": {
-        "ipa": "ˈdʒenəreɪt",
-        "phonetic": "JEN-uh-rayt"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "subsequently cause",
-      "pronunciation": {
-        "ipa": "ˈsʌbsɪkwəntli",
-        "phonetic": "SUB-sih-kwunt-lee"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "ultimately leading to",
-      "pronunciation": {
-        "ipa": "ˈʌltɪmətli",
-        "phonetic": "UL-tih-mut-lee"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "broader outcomes",
-      "pronunciation": {
-        "ipa": "ˈaʊtkʌmz",
-        "phonetic": "OWT-kumz"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "direct result of",
-      "pronunciation": {
-        "ipa": "rɪˈzʌlt",
-        "phonetic": "rih-ZULT"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "substantial influence",
-      "pronunciation": {
-        "ipa": "səbˈstænʃəl",
-        "phonetic": "sub-STAN-shul"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "far-reaching impact",
-      "pronunciation": {
-        "ipa": "ˈɪmpækt",
-        "phonetic": "IM-pakt"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "considerable validity",
-      "pronunciation": {
-        "ipa": "ˌvæˈlɪdəti",
-        "phonetic": "val-ID-uh-tee"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "vital component",
-      "pronunciation": {
-        "ipa": "kəmˈpəʊnənt",
-        "phonetic": "kum-POH-nunt"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "effective approach",
-      "pronunciation": {
-        "ipa": "əˈprəʊtʃ",
-        "phonetic": "uh-PROHCH"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "evidence reveals that",
-      "pronunciation": {
-        "ipa": "ˈevɪdəns",
-        "phonetic": "EV-ih-duns"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "research demonstrates",
-      "pronunciation": {
-        "ipa": "ˈdemənstreɪts",
-        "phonetic": "DEM-un-strayts"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "studies indicate",
-      "pronunciation": {
-        "ipa": "ˈɪndɪkeɪt",
-        "phonetic": "IN-dih-kayt"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "data suggests",
-      "pronunciation": {
-        "ipa": "səˈdʒests",
-        "phonetic": "suh-JESTS"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "findings show",
-      "pronunciation": {
-        "ipa": "ˈfaɪndɪŋz",
-        "phonetic": "FYN-dingz"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "statistics reveal",
-      "pronunciation": {
-        "ipa": "stəˈtɪstɪks",
-        "phonetic": "stuh-TIS-tiks"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "approximately 80% of",
-      "pronunciation": {
-        "ipa": "əˈprɒksɪmətli",
-        "phonetic": "uh-PROK-sih-mut-lee"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "over 60% of",
-      "pronunciation": {
-        "ipa": "ˈəʊvə",
-        "phonetic": "OH-vur"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "policy research",
-      "pronunciation": {
-        "ipa": "ˈpɒləsi",
-        "phonetic": "POL-uh-see"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "academic studies",
-      "pronunciation": {
-        "ipa": "ˌækəˈdemɪk",
-        "phonetic": "ak-uh-DEM-ik"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "institutional research",
-      "pronunciation": {
-        "ipa": "ˌɪnstɪˈtjuːʃənəl",
-        "phonetic": "in-stuh-TOO-shun-ul"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "empirical evidence",
-      "pronunciation": {
-        "ipa": "ɪmˈpɪrɪkəl",
-        "phonetic": "im-PEER-ih-kul"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "I contend that",
-      "pronunciation": {
-        "ipa": "kənˈtend",
-        "phonetic": "kun-TEND"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "to what extent",
-      "pronunciation": {
-        "ipa": "ɪkˈstent",
-        "phonetic": "ik-STENT"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "agree or disagree",
-      "pronunciation": {
-        "ipa": "ˌdɪsəˈɡriː",
-        "phonetic": "dis-uh-GREE"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "balanced perspective",
-      "pronunciation": {
-        "ipa": "pəˈspektɪv",
-        "phonetic": "per-SPEK-tiv"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "partially agree",
-      "pronunciation": {
-        "ipa": "ˈpɑːʃəli",
-        "phonetic": "PAR-shul-ee"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "strongly support",
-      "pronunciation": {
-        "ipa": "ˈstrɒŋli",
-        "phonetic": "STRONG-lee"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "considerable merit",
-      "pronunciation": {
-        "ipa": "ˈmerɪt",
-        "phonetic": "MER-it"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "valid argument",
-      "pronunciation": {
-        "ipa": "ˈvælɪd",
-        "phonetic": "VAL-id"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "questionable claim",
-      "pronunciation": {
-        "ipa": "ˈkwestʃənəbəl",
-        "phonetic": "KWES-chun-uh-bul"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "too absolute",
-      "pronunciation": {
-        "ipa": "ˈæbsəluːt",
-        "phonetic": "AB-suh-loot"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "universally applicable",
-      "pronunciation": {
-        "ipa": "ˌjuːnɪˈvɜːsəli",
-        "phonetic": "yoo-nih-VUR-sul-ee"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "context-dependent",
-      "pronunciation": {
-        "ipa": "dɪˈpendənt",
-        "phonetic": "dih-PEN-dunt"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "individual circumstances",
-      "pronunciation": {
-        "ipa": "ˈsɜːkəmstənsɪz",
-        "phonetic": "SUR-kum-stan-siz"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "depends on situation",
-      "pronunciation": {
-        "ipa": "ˌsɪtʃuˈeɪʃən",
-        "phonetic": "sit-choo-AY-shun"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "nuanced view",
-      "pronunciation": {
-        "ipa": "ˈnjuːɑːnst",
-        "phonetic": "NYOO-ahnst"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "to begin with",
-      "pronunciation": {
-        "ipa": "bɪˈɡɪn",
-        "phonetic": "bih-GIN"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "in particular",
-      "pronunciation": {
-        "ipa": "pəˈtɪkjʊlə",
-        "phonetic": "pur-TIK-yoo-lur"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "for instance",
-      "pronunciation": {
-        "ipa": "ˈɪnstəns",
-        "phonetic": "IN-stuns"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "however",
-      "pronunciation": {
-        "ipa": "haʊˈevə",
-        "phonetic": "how-EV-ur"
+        "ipa": "juːθ",
+        "phonetic": "YOOTH"
       },
       "difficulty": "normal",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "nevertheless",
+      "english": "**restricted growth**",
       "pronunciation": {
-        "ipa": "ˌnevəðəˈles",
-        "phonetic": "nev-ur-thuh-LES"
+        "ipa": "rɪˈstrɪktɪd ɡrəʊθ",
+        "phonetic": "rih-STRIK-tid GROHTH"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "on the other hand",
+      "english": "**early commitment**",
       "pronunciation": {
-        "ipa": "hænd",
-        "phonetic": "HAND"
+        "ipa": "ˈɜːli kəˈmɪtmənt",
+        "phonetic": "UR-lee kuh-MIT-ment"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "equally important",
+      "english": "**family support**",
       "pronunciation": {
-        "ipa": "ɪmˈpɔːtənt",
-        "phonetic": "im-POR-tunt"
+        "ipa": "ˈfæməli səˈpɔːt",
+        "phonetic": "FAM-uh-lee suh-PORT"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "it is largely because",
+      "english": "**personal growth**",
       "pronunciation": {
-        "ipa": "ˈlɑːdʒli",
-        "phonetic": "LARJ-lee"
+        "ipa": "ˈpɜːsənəl ɡrəʊθ",
+        "phonetic": "PUR-sun-ul GROHTH"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "according to research",
+      "english": "**time**",
       "pronunciation": {
-        "ipa": "əˈkɔːdɪŋ",
-        "phonetic": "uh-KOR-ding"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "taken together",
-      "pronunciation": {
-        "ipa": "təˈɡeðə",
-        "phonetic": "tuh-GETH-ur"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "these considerations demonstrate",
-      "pronunciation": {
-        "ipa": "kənˌsɪdəˈreɪʃənz",
-        "phonetic": "kun-sid-uh-RAY-shunz"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "thus",
-      "pronunciation": {
-        "ipa": "ðʌs",
-        "phonetic": "THUS"
-      },
-      "difficulty": "easy",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "it is imperative",
-      "pronunciation": {
-        "ipa": "ɪmˈperətɪv",
-        "phonetic": "im-PAIR-uh-tiv"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "in recent years",
-      "pronunciation": {
-        "ipa": "ˈriːsənt",
-        "phonetic": "REE-sunt"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "has emerged as",
-      "pronunciation": {
-        "ipa": "ɪˈmɜːdʒd",
-        "phonetic": "ih-MURJD"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "as a direct result",
-      "pronunciation": {
-        "ipa": "rɪˈzʌlt",
-        "phonetic": "rih-ZULT"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "stemming from",
-      "pronunciation": {
-        "ipa": "ˈstemɪŋ",
-        "phonetic": "STEM-ing"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "which may subsequently",
-      "pronunciation": {
-        "ipa": "ˈsʌbsɪkwəntli",
-        "phonetic": "SUB-sih-kwunt-lee"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "this is largely because",
-      "pronunciation": {
-        "ipa": "ˈlɑːdʒli",
-        "phonetic": "LARJ-lee"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "in order to",
-      "pronunciation": {
-        "ipa": "ˈɔːdə",
-        "phonetic": "OR-dur"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "with regard to",
-      "pronunciation": {
-        "ipa": "rɪˈɡɑːd",
-        "phonetic": "rih-GARD"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "in terms of",
-      "pronunciation": {
-        "ipa": "tɜːmz",
-        "phonetic": "TURMZ"
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
-    },
-    {
-      "english": "as for",
-      "pronunciation": {
-        "ipa": "fɔː",
-        "phonetic": "FOR"
+        "ipa": "taɪm",
+        "phonetic": "TYM"
       },
       "difficulty": "normal",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "concerning",
+      "english": "**tourism**",
       "pronunciation": {
-        "ipa": "kənˈsɜːnɪŋ",
-        "phonetic": "kun-SUR-ning"
+        "ipa": "ˈtʊərɪzəm",
+        "phonetic": "TOOR-iz-um"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "regarding",
+      "english": "**economic growth**",
       "pronunciation": {
-        "ipa": "rɪˈɡɑːdɪŋ",
-        "phonetic": "rih-GARD-ing"
+        "ipa": "ˌiːkəˈnɒmɪk ɡrəʊθ",
+        "phonetic": "ee-kuh-NOM-ik GROHTH"
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
       "source": "pte-essay-topic-vocabulary"
     },
     {
-      "english": "with respect to",
+      "english": "**tourism industry**",
       "pronunciation": {
-        "ipa": "rɪˈspekt",
-        "phonetic": "rih-SPEKT"
+        "ipa": "ˈtʊərɪzəm ˈɪndəstri",
+        "phonetic": "TOOR-iz-um IN-dus-tree"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**job creation**",
+      "pronunciation": {
+        "ipa": "dʒɒb kriˈeɪʃən",
+        "phonetic": "JOB kree-AY-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**improved income**",
+      "pronunciation": {
+        "ipa": "ɪmˈpruːvd ˈɪnkʌm",
+        "phonetic": "im-PROOVD IN-kum"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**economic research**",
+      "pronunciation": {
+        "ipa": "ˌiːkəˈnɒmɪk rɪˈsɜːtʃ",
+        "phonetic": "ee-kuh-NOM-ik rih-SURCH"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**developing countries**",
+      "pronunciation": {
+        "ipa": "dɪˈveləpɪŋ ˈkʌntriz",
+        "phonetic": "dih-VEL-up-ing KUN-treez"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**economic benefits**",
+      "pronunciation": {
+        "ipa": "ˌiːkəˈnɒmɪk ˈbenɪfɪts",
+        "phonetic": "ee-kuh-NOM-ik BEN-ih-fits"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**tourism revenue**",
+      "pronunciation": {
+        "ipa": "ˈtʊərɪzəm ˈrevənjuː",
+        "phonetic": "TOOR-iz-um REV-uh-noo"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**tourism development**",
+      "pronunciation": {
+        "ipa": "ˈtʊərɪzəm dɪˈveləpmənt",
+        "phonetic": "TOOR-iz-um dih-VEL-up-ment"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**mass tourism**",
+      "pronunciation": {
+        "ipa": "mæs ˈtʊərɪzəm",
+        "phonetic": "MASS TOOR-iz-um"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**environmental damage**",
+      "pronunciation": {
+        "ipa": "ɪnˌvaɪrənˈmentəl ˈdæmɪdʒ",
+        "phonetic": "in-vy-run-MEN-tul DAM-ij"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**sustainability concerns**",
+      "pronunciation": {
+        "ipa": "səˌsteɪnəˈbɪləti kənˈsɜːnz",
+        "phonetic": "suh-stayn-uh-BIL-uh-tee kun-SURNZ"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**environmental studies**",
+      "pronunciation": {
+        "ipa": "ɪnˌvaɪrənˈmentəl ˈstʌdiz",
+        "phonetic": "in-vy-run-MEN-tul STUD-eez"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**tourist destinations**",
+      "pronunciation": {
+        "ipa": "ˈtʊərɪst ˌdestɪˈneɪʃənz",
+        "phonetic": "TOOR-ist des-tih-NAY-shunz"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**negative impacts**",
+      "pronunciation": {
+        "ipa": "ˈneɡətɪv ˈɪmpækts",
+        "phonetic": "NEG-uh-tiv IM-pakts"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**tourism pressure**",
+      "pronunciation": {
+        "ipa": "ˈtʊərɪzəm ˈpreʃə",
+        "phonetic": "TOOR-iz-um PRESH-ur"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**environmental protection**",
+      "pronunciation": {
+        "ipa": "ɪnˌvaɪrənˈmentəl prəˈtekʃən",
+        "phonetic": "in-vy-run-MEN-tul pruh-TEK-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**television**",
+      "pronunciation": {
+        "ipa": "ˈtelɪvɪʒən",
+        "phonetic": "TEL-ih-vizh-un"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**stress reduction**",
+      "pronunciation": {
+        "ipa": "stres rɪˈdʌkʃən",
+        "phonetic": "STRESS rih-DUK-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**improved wellbeing**",
+      "pronunciation": {
+        "ipa": "ɪmˈpruːvd ˌwelˈbiːɪŋ",
+        "phonetic": "im-PROOVD wel-BEE-ing"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**relaxation**",
+      "pronunciation": {
+        "ipa": "ˌriːlækˈseɪʃən",
+        "phonetic": "ree-lak-SAY-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**entertainment programs**",
+      "pronunciation": {
+        "ipa": "ˌentəˈteɪnmənt ˈprəʊɡræmz",
+        "phonetic": "en-tur-TAYN-ment PROH-gramz"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**lonely people**",
+      "pronunciation": {
+        "ipa": "ˈləʊnli ˈpiːpəl",
+        "phonetic": "LOHN-lee PEE-pul"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**social connection**",
+      "pronunciation": {
+        "ipa": "ˈsəʊʃəl kəˈnekʃən",
+        "phonetic": "SOH-shul kuh-NEK-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**reduced isolation**",
+      "pronunciation": {
+        "ipa": "rɪˈdjuːst ˌaɪsəˈleɪʃən",
+        "phonetic": "rih-DYOOST eye-suh-LAY-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**individuals**",
+      "pronunciation": {
+        "ipa": "ˌɪndɪˈvɪdʒuəlz",
+        "phonetic": "in-dih-VIJ-oo-ulz"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**regular viewing**",
+      "pronunciation": {
+        "ipa": "ˈreɡjʊlə ˈvjuːɪŋ",
+        "phonetic": "REG-yoo-lur VYOO-ing"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**entertainment value**",
+      "pronunciation": {
+        "ipa": "ˌentəˈteɪnmənt ˈvæljuː",
+        "phonetic": "en-tur-TAYN-ment VAL-yoo"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**mark deduction**",
+      "pronunciation": {
+        "ipa": "mɑːk dɪˈdʌkʃən",
+        "phonetic": "MARK dih-DUK-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**academic discipline**",
+      "pronunciation": {
+        "ipa": "ˌækəˈdemɪk ˈdɪsəplɪn",
+        "phonetic": "ak-uh-DEM-ik DIS-uh-plin"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**late submissions**",
+      "pronunciation": {
+        "ipa": "leɪt səbˈmɪʃənz",
+        "phonetic": "LAYT sub-MISH-unz"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**student responsibility**",
+      "pronunciation": {
+        "ipa": "ˈstjuːdənt rɪˌspɒnsəˈbɪləti",
+        "phonetic": "STOO-dunt rih-spon-suh-BIL-uh-tee"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**improved habits**",
+      "pronunciation": {
+        "ipa": "ɪmˈpruːvd ˈhæbɪts",
+        "phonetic": "im-PROOVD HAB-its"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**better punctuality**",
+      "pronunciation": {
+        "ipa": "ˈbetə ˌpʌŋktʃuˈæləti",
+        "phonetic": "BET-ur pungk-choo-AL-uh-tee"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**clear deadlines**",
+      "pronunciation": {
+        "ipa": "klɪə ˈdedlaɪnz",
+        "phonetic": "KLEER DED-lynz"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**other actions**",
+      "pronunciation": {
+        "ipa": "ˈʌðə ˈækʃənz",
+        "phonetic": "UTH-ur AK-shunz"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**deadline extensions**",
+      "pronunciation": {
+        "ipa": "ˈdedlaɪn ɪkˈstenʃənz",
+        "phonetic": "DED-lyn ik-STEN-shunz"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**positive motivation**",
+      "pronunciation": {
+        "ipa": "ˈpɒzətɪv ˌməʊtɪˈveɪʃən",
+        "phonetic": "POZ-ih-tiv moh-tih-VAY-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**better planning**",
+      "pronunciation": {
+        "ipa": "ˈbetə ˈplænɪŋ",
+        "phonetic": "BET-ur PLAN-ing"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**universities**",
+      "pronunciation": {
+        "ipa": "ˌjuːnɪˈvɜːsətiz",
+        "phonetic": "yoo-nih-VUR-suh-teez"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**improved rates**",
+      "pronunciation": {
+        "ipa": "ɪmˈpruːvd reɪts",
+        "phonetic": "im-PROOVD RAYTS"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**flexible policies**",
+      "pronunciation": {
+        "ipa": "ˈfleksəbəl ˈpɒləsiz",
+        "phonetic": "FLEK-suh-bul POL-uh-seez"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**accountability**",
+      "pronunciation": {
+        "ipa": "əˌkaʊntəˈbɪləti",
+        "phonetic": "uh-kown-tuh-BIL-uh-tee"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**flexibility**",
+      "pronunciation": {
+        "ipa": "ˌfleksəˈbɪləti",
+        "phonetic": "flek-suh-BIL-uh-tee"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**academic institutions**",
+      "pronunciation": {
+        "ipa": "ˌækəˈdemɪk ˌɪnstɪˈtjuːʃənz",
+        "phonetic": "ak-uh-DEM-ik in-stuh-TOO-shunz"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**experiential learning**",
+      "pronunciation": {
+        "ipa": "ɪkˌspɪəriˈenʃəl ˈlɜːnɪŋ",
+        "phonetic": "ik-speer-ee-EN-shul LUR-ning"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**practical skills**",
+      "pronunciation": {
+        "ipa": "ˈpræktɪkəl skɪlz",
+        "phonetic": "PRAK-tih-kul SKILZ"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**learning by doing**",
+      "pronunciation": {
+        "ipa": "ˈlɜːnɪŋ baɪ ˈduːɪŋ",
+        "phonetic": "LUR-ning BY DOO-ing"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**hands-on experience**",
+      "pronunciation": {
+        "ipa": "hændz ɒn ɪkˈspɪəriəns",
+        "phonetic": "HANDZ ON ik-SPEER-ee-uns"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**better outcomes**",
+      "pronunciation": {
+        "ipa": "ˈbetə ˈaʊtkʌmz",
+        "phonetic": "BET-ur OWT-kumz"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**practical application**",
+      "pronunciation": {
+        "ipa": "ˈpræktɪkəl ˌæplɪˈkeɪʃən",
+        "phonetic": "PRAK-tih-kul ap-lih-KAY-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**traditional teaching**",
+      "pronunciation": {
+        "ipa": "trəˈdɪʃənəl ˈtiːtʃɪŋ",
+        "phonetic": "truh-DISH-un-ul TEECH-ing"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**structured lectures**",
+      "pronunciation": {
+        "ipa": "ˈstrʌktʃəd ˈlektʃəz",
+        "phonetic": "STRUK-churd LEK-churz"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**solid knowledge**",
+      "pronunciation": {
+        "ipa": "ˈsɒlɪd ˈnɒlɪdʒ",
+        "phonetic": "SOL-id NOL-ij"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**proven methods**",
+      "pronunciation": {
+        "ipa": "ˈpruːvən ˈmeθədz",
+        "phonetic": "PROO-vun METH-udz"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**systematic instruction**",
+      "pronunciation": {
+        "ipa": "ˌsɪstəˈmætɪk ɪnˈstrʌkʃən",
+        "phonetic": "sis-tuh-MAT-ik in-STRUK-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**practical experience**",
+      "pronunciation": {
+        "ipa": "ˈpræktɪkəl ɪkˈspɪəriəns",
+        "phonetic": "PRAK-tih-kul ik-SPEER-ee-uns"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**solid foundations**",
+      "pronunciation": {
+        "ipa": "ˈsɒlɪd faʊnˈdeɪʃənz",
+        "phonetic": "SOL-id fown-DAY-shunz"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**schools**",
+      "pronunciation": {
+        "ipa": "skuːlz",
+        "phonetic": "SKOOLZ"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**global problems**",
+      "pronunciation": {
+        "ipa": "ˈɡləʊbəl ˈprɒbləmz",
+        "phonetic": "GLOH-bul PROB-lumz"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**coordination challenges**",
+      "pronunciation": {
+        "ipa": "kəʊˌɔːdɪˈneɪʃən ˈtʃælɪndʒɪz",
+        "phonetic": "koh-or-dih-NAY-shun CHAL-in-jiz"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**global issues**",
+      "pronunciation": {
+        "ipa": "ˈɡləʊbəl ˈɪʃuːz",
+        "phonetic": "GLOH-bul ISH-ooz"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**limited resources**",
+      "pronunciation": {
+        "ipa": "ˈlɪmɪtɪd rɪˈsɔːsɪz",
+        "phonetic": "LIM-ih-tid rih-SOR-siz"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**delayed action**",
+      "pronunciation": {
+        "ipa": "dɪˈleɪd ˈækʃən",
+        "phonetic": "dih-LAYD AK-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**international initiatives**",
+      "pronunciation": {
+        "ipa": "ˌɪntəˈnæʃənəl ɪˈnɪʃətɪvz",
+        "phonetic": "in-tur-NASH-un-ul ih-NISH-uh-tivz"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**coordination difficulties**",
+      "pronunciation": {
+        "ipa": "kəʊˌɔːdɪˈneɪʃən ˈdɪfɪkəltiz",
+        "phonetic": "koh-or-dih-NAY-shun DIF-ih-kul-teez"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**conflicting interests**",
+      "pronunciation": {
+        "ipa": "kənˈflɪktɪŋ ˈɪntrəsts",
+        "phonetic": "kun-FLIK-ting IN-trusts"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**effective solutions**",
+      "pronunciation": {
+        "ipa": "ɪˈfektɪv səˈluːʃənz",
+        "phonetic": "ih-FEK-tiv suh-LOO-shunz"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**government cooperation**",
+      "pronunciation": {
+        "ipa": "ˈɡʌvənmənt kəʊˌɒpəˈreɪʃən",
+        "phonetic": "GUV-urn-ment koh-op-uh-RAY-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**unified strategies**",
+      "pronunciation": {
+        "ipa": "ˈjuːnɪfaɪd ˈstrætədʒiz",
+        "phonetic": "YOO-nih-fyd STRAT-uh-jeez"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**international studies**",
+      "pronunciation": {
+        "ipa": "ˌɪntəˈnæʃənəl ˈstʌdiz",
+        "phonetic": "in-tur-NASH-un-ul STUD-eez"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**significant progress**",
+      "pronunciation": {
+        "ipa": "sɪɡˈnɪfɪkənt ˈprəʊɡres",
+        "phonetic": "sig-NIF-ih-kunt PROH-gres"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**unified efforts**",
+      "pronunciation": {
+        "ipa": "ˈjuːnɪfaɪd ˈefəts",
+        "phonetic": "YOO-nih-fyd EF-urts"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**structured collaboration**",
+      "pronunciation": {
+        "ipa": "ˈstrʌktʃəd kəˌlæbəˈreɪʃən",
+        "phonetic": "STRUK-churd kuh-lab-uh-RAY-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**world leaders**",
+      "pronunciation": {
+        "ipa": "wɜːld ˈliːdəz",
+        "phonetic": "WURLD LEE-durz"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**information revolution**",
+      "pronunciation": {
+        "ipa": "ˌɪnfəˈmeɪʃən ˌrevəˈluːʃən",
+        "phonetic": "in-fur-MAY-shun rev-uh-LOO-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**digital technology**",
+      "pronunciation": {
+        "ipa": "ˈdɪdʒɪtəl tekˈnɒlədʒi",
+        "phonetic": "DIJ-ih-tul tek-NOL-uh-jee"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**global connectivity**",
+      "pronunciation": {
+        "ipa": "ˈɡləʊbəl ˌkɒnekˈtɪvəti",
+        "phonetic": "GLOH-bul kon-ek-TIV-uh-tee"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**better knowledge**",
+      "pronunciation": {
+        "ipa": "ˈbetə ˈnɒlɪdʒ",
+        "phonetic": "BET-ur NOL-ij"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**positive effects**",
+      "pronunciation": {
+        "ipa": "ˈpɒzətɪv ɪˈfekts",
+        "phonetic": "POZ-ih-tiv ih-FEKTS"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**information technology**",
+      "pronunciation": {
+        "ipa": "ˌɪnfəˈmeɪʃən tekˈnɒlədʒi",
+        "phonetic": "in-fur-MAY-shun tek-NOL-uh-jee"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**mass communication**",
+      "pronunciation": {
+        "ipa": "mæs kəˌmjuːnɪˈkeɪʃən",
+        "phonetic": "MASS kuh-myoo-nih-KAY-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**excessive exposure**",
+      "pronunciation": {
+        "ipa": "ɪkˈsesɪv ɪkˈspəʊʒə",
+        "phonetic": "ik-SES-iv ik-SPOH-zhur"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**information overload**",
+      "pronunciation": {
+        "ipa": "ˌɪnfəˈmeɪʃən ˈəʊvələʊd",
+        "phonetic": "in-fur-MAY-shun OH-vur-lohd"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**reduced interactions**",
+      "pronunciation": {
+        "ipa": "rɪˈdjuːst ˌɪntərˈækʃənz",
+        "phonetic": "rih-DYOOST in-tur-AK-shunz"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**digital transformation**",
+      "pronunciation": {
+        "ipa": "ˈdɪdʒɪtəl ˌtrænsfəˈmeɪʃən",
+        "phonetic": "DIJ-ih-tul trans-fur-MAY-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**digital benefits**",
+      "pronunciation": {
+        "ipa": "ˈdɪdʒɪtəl ˈbenɪfɪts",
+        "phonetic": "DIJ-ih-tul BEN-ih-fits"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**attention**",
+      "pronunciation": {
+        "ipa": "əˈtenʃən",
+        "phonetic": "uh-TEN-shun"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**combining both**",
+      "pronunciation": {
+        "ipa": "kəmˈbaɪnɪŋ bəʊθ",
+        "phonetic": "kum-BYN-ing BOHTH"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**part-time work**",
+      "pronunciation": {
+        "ipa": "pɑːt taɪm wɜːk",
+        "phonetic": "PART TYM WURK"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**work experience**",
+      "pronunciation": {
+        "ipa": "wɜːk ɪkˈspɪəriəns",
+        "phonetic": "WURK ik-SPEER-ee-uns"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**career development**",
+      "pronunciation": {
+        "ipa": "kəˈrɪə dɪˈveləpmənt",
+        "phonetic": "kuh-REER dih-VEL-up-ment"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**professional growth**",
+      "pronunciation": {
+        "ipa": "prəˈfeʃənəl ɡrəʊθ",
+        "phonetic": "pruh-FESH-un-ul GROHTH"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**time management**",
+      "pronunciation": {
+        "ipa": "taɪm ˈmænɪdʒmənt",
+        "phonetic": "TYM MAN-ij-ment"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**stress**",
+      "pronunciation": {
+        "ipa": "stres",
+        "phonetic": "STRESS"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**working students**",
+      "pronunciation": {
+        "ipa": "ˈwɜːkɪŋ ˈstjuːdənts",
+        "phonetic": "WUR-king STOO-dunts"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**reduced learning**",
+      "pronunciation": {
+        "ipa": "rɪˈdjuːst ˈlɜːnɪŋ",
+        "phonetic": "rih-DYOOST LUR-ning"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**excessive hours**",
+      "pronunciation": {
+        "ipa": "ɪkˈsesɪv ˈaʊəz",
+        "phonetic": "ik-SES-iv OW-urz"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**effective management**",
+      "pronunciation": {
+        "ipa": "ɪˈfektɪv ˈmænɪdʒmənt",
+        "phonetic": "ih-FEK-tiv MAN-ij-ment"
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary"
+    },
+    {
+      "english": "**planning**",
+      "pronunciation": {
+        "ipa": "ˈplænɪŋ",
+        "phonetic": "PLAN-ing"
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",

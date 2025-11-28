@@ -15,7 +15,6 @@ import {
 } from '@radix-ui/react-icons';
 import { Button, Card, Flex, Slider, Switch, Text } from '@radix-ui/themes';
 import React, { useEffect, useRef } from 'react';
-import { DATA_PATH_MAP } from '../../lib/constants/dataPaths';
 import { stripMarkdown } from '../../lib/utils/textUtils';
 import { ttsEngine } from '../../ts/audio/TTSEngine';
 import { appConfig } from '../../ts/shared/Config';
@@ -53,8 +52,9 @@ const AudioControls: React.FC = () => {
     vocabulary.setLoading(true);
 
     try {
-      // Use shared dataPathMap constant
-      const dataPath = DATA_PATH_MAP[bookId as keyof typeof DATA_PATH_MAP] || `/data/processed/${bookId}-vocabulary.json`;
+      // Use shared dataPathMap from config
+      const dataPaths = appConfig.get('data.paths.byMode');
+      const dataPath = dataPaths[bookId] || `/data/processed/${bookId}-vocabulary.json`;
       const response = await fetch(dataPath);
 
       if (!response.ok) {

@@ -71,6 +71,8 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
         'pte-di-rl-templates': '/data/processed/pte-di-rl-templates-vocabulary.json',
         'pte-sst-complete': '/data/processed/pte-sst-complete-vocabulary.json',
         'pte-essay-topic-vocabulary': '/data/processed/pte-essay-topic-vocabulary.json',
+        'pte-di-difficult-words': '/data/processed/pte-di-difficult-words-vocabulary.json',
+        'pte-di-easy-phrases': '/data/processed/pte-di-easy-phrases-vocabulary.json',
         // Shadowing modes
         'di-shadowing-1-10': '/data/processed/di-shadowing-images-1-10.json',
         'di-shadowing-11-20': '/data/processed/di-shadowing-images-11-20.json',
@@ -302,6 +304,8 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                         <SelectItem value="pte-di-rl-templates">PTE DI/RL Templates</SelectItem>
                         <SelectItem value="pte-sst-complete">PTE SST Complete</SelectItem>
                         <SelectItem value="pte-essay-topic-vocabulary">PTE Essay Topics</SelectItem>
+                        <SelectItem value="pte-di-difficult-words">PTE DI Difficult Words</SelectItem>
+                        <SelectItem value="pte-di-easy-phrases">PTE DI Easy Phrases</SelectItem>
                       </SelectGroup>
                     </SelectContent>
                   </Select>

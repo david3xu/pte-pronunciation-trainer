@@ -5,10 +5,12 @@
  * Replaces the vanilla JS SettingsPanel.
  */
 
-import { Cross2Icon, GearIcon } from '@radix-ui/react-icons';
+import {
+    Cross2Icon,
+    GearIcon
+} from '@radix-ui/react-icons';
 import { Badge, Button, Card, Flex, Select, Slider, Switch, Tabs, Text } from '@radix-ui/themes';
 import React, { useMemo } from 'react';
-import { DATA_PATH_MAP } from '../../lib/constants/dataPaths';
 import { appConfig } from '../../ts/shared/Config';
 import { useAppStore } from '../../ts/stores';
 
@@ -60,7 +62,8 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
     setLoading(true);
 
     try {
-      const dataPath = DATA_PATH_MAP[bookId as keyof typeof DATA_PATH_MAP] || `/data/processed/${bookId}-vocabulary.json`;
+      const dataPaths = appConfig.get('data.paths.byMode');
+      const dataPath = dataPaths[bookId] || `/data/processed/${bookId}-vocabulary.json`;
       console.log('[SettingsPanel] Loading vocabulary book:', bookId, 'from:', dataPath);
 
       const response = await fetch(dataPath);

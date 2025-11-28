@@ -11,16 +11,16 @@
  */
 
 import {
-  ChatBubbleIcon,
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  LightningBoltIcon,
-  QuestionMarkCircledIcon,
-  RocketIcon,
-  SpeakerLoudIcon,
+    ChatBubbleIcon,
+    ChevronLeftIcon,
+    ChevronRightIcon,
+    LightningBoltIcon,
+    QuestionMarkCircledIcon,
+    RocketIcon,
+    SpeakerLoudIcon,
 } from '@radix-ui/react-icons';
-import React, { useState } from 'react';
 import { Badge, Button, Card, Flex, Separator, Text } from '@radix-ui/themes';
+import React, { useState } from 'react';
 
 interface AISidebarProps {
   onOpenChat?: () => void;
@@ -39,7 +39,7 @@ const AISidebar: React.FC<AISidebarProps> = ({
   onOpenInsights,
   sessionStats,
 }) => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
   // Contextual tips based on session stats
   const getContextualTips = (): string[] => {

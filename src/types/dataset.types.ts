@@ -62,6 +62,33 @@ export type VocabularyCategory =
   | 'pte-sst-complete';
 
 /**
+ * Vocabulary book identifiers
+ */
+export type VocabularyBookId =
+  | 'pte-fib-listening'
+  | 'pte-beginner'
+  | 'pte-intermediate'
+  | 'pte-advanced'
+  | 'pte-ra'
+  | 'pte-rs-vocab'
+  | 'pte-must-know'
+  | 'pte-wfd-vocab'
+  | 'pte-rs-wfd-vocab'
+  | 'pte-reading-fib'
+  | 'pte-reading-fib-drag'
+  | 'pte-asq-answers'
+  | 'pte-high-frequency'
+  | 'pte-rs-core'
+  | 'pte-di-rl-templates'
+  | 'pte-sst-complete'
+  | 'pte-essay-topic-vocabulary'
+  | 'pte-di-difficult-words'
+  | 'pte-di-easy-phrases'
+  // Shadowing modes
+  | 'di-shadowing-1-10'
+  | 'di-shadowing-11-20';
+
+/**
  * Vocabulary term with IPA pronunciation
  */
 export interface VocabularyTerm {

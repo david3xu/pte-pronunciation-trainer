@@ -6,11 +6,11 @@
  */
 
 import {
-  BarChartIcon,
-  ChatBubbleIcon,
-  GearIcon,
-  LightningBoltIcon,
-  SpeakerLoudIcon,
+    BarChartIcon,
+    ChatBubbleIcon,
+    GearIcon,
+    LightningBoltIcon,
+    SpeakerLoudIcon,
 } from '@radix-ui/react-icons';
 import { Button, Flex, Spinner, Theme } from '@radix-ui/themes';
 import React, { lazy, Suspense, useEffect, useState } from 'react';
@@ -18,8 +18,8 @@ import { AISidebar, AITutorChat, InterventionModal, PronunciationScoring, WeakAr
 import { AudioControls } from './components/audio';
 import DataMigrationModal from './components/migration/DataMigrationModal';
 import {
-  ProgressDashboard,
-  WordCard,
+    ProgressDashboard,
+    WordCard,
 } from './components/practice';
 import LearnerProfileModal from './components/profile/LearnerProfileModal';
 import { SettingsPanel } from './components/settings';
@@ -336,7 +336,7 @@ const App: React.FC = () => {
       {/* Modals - Render first for proper z-index layering */}
           {/* Header - Minimal like PTE branch */}
           <header className="mb-4">
-            <Flex justify="between" align="center">
+            <Flex justify="between" align="center" wrap="wrap" gap="3">
               <h1 className="text-2xl font-bold text-white">
                 🎯 PTE Pronunciation
               </h1>
@@ -348,7 +348,7 @@ const App: React.FC = () => {
                   title="View your progress and statistics"
                 >
                   <BarChartIcon width="16" height="16" />
-                  <span className="ml-1">Progress</span>
+                  <span className="ml-1 hidden md:inline">Progress</span>
                 </Button>
                 <Button
                   variant="soft"
@@ -357,7 +357,7 @@ const App: React.FC = () => {
                   title="Chat with AI for pronunciation help (Free with Gemini)"
                 >
                   <ChatBubbleIcon width="16" height="16" />
-                  <span className="ml-1">AI Tutor</span>
+                  <span className="ml-1 hidden md:inline">AI Tutor</span>
                 </Button>
                 <Button
                   variant="soft"
@@ -366,7 +366,7 @@ const App: React.FC = () => {
                   title="View AI insights and personalized recommendations"
                 >
                   <LightningBoltIcon width="16" height="16" />
-                  <span className="ml-1">Insights</span>
+                  <span className="ml-1 hidden md:inline">Insights</span>
                 </Button>
                 <Button
                   variant="soft"
@@ -375,7 +375,7 @@ const App: React.FC = () => {
                   title="Record and get AI feedback on your pronunciation"
                 >
                   <SpeakerLoudIcon width="16" height="16" />
-                  <span className="ml-1">Score</span>
+                  <span className="ml-1 hidden md:inline">Score</span>
                 </Button>
                 <Button
                   variant="soft"
@@ -384,7 +384,7 @@ const App: React.FC = () => {
                   title="Change mode, difficulty, and voice settings"
                 >
                   <GearIcon width="16" height="16" />
-                  <span className="ml-1">Settings</span>
+                  <span className="ml-1 hidden md:inline">Settings</span>
                 </Button>
               </Flex>
             </Flex>
@@ -532,17 +532,7 @@ const App: React.FC = () => {
             <p>v3.0.0 • Press Space to play • ← → to navigate</p>
           </footer>
 
-          {/* AI Sidebar - Right side */}
-          <AISidebar
-            onOpenChat={() => setShowAITutor(true)}
-            onOpenScoring={() => setShowPronunciationScoring(true)}
-            onOpenInsights={() => setShowWeakAreas(true)}
-            sessionStats={{
-              itemsCompleted: progress.itemsCompleted,
-              accuracy: progress.accuracy,
-              currentStreak: 0, // TODO: Add currentStreak to progress store
-            }}
-          />
+
         </div>
       </div>
     </Theme>

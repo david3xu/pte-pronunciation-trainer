@@ -13,11 +13,10 @@ import {
     RocketIcon,
     TargetIcon,
 } from '@radix-ui/react-icons';
-import { Button, Card, Flex, Text } from '@radix-ui/themes';
+import { Button, Card, Flex, Select, Text } from '@radix-ui/themes';
 import React, { useState } from 'react';
 import { saveLearnerProfile, type OnboardingFormData } from '../../services/profile/learnerProfileService';
 import type { LearningStyle } from '../../types/database';
-import { Select, SelectContent, SelectItem, SelectTrigger } from '../ui';
 
 interface LearnerProfileModalProps {
   isOpen: boolean;
@@ -253,28 +252,28 @@ const LearnerProfileModal: React.FC<LearnerProfileModalProps> = ({
                   <Text size="2" weight="medium">
                     How do you learn best?
                   </Text>
-                  <Select
+                  <Select.Root
                     value={formData.learning_style}
                     onValueChange={(value) =>
                       setFormData({ ...formData, learning_style: value as LearningStyle })
                     }
                   >
-                    <SelectTrigger style={{ width: '100%' }} />
-                    <SelectContent>
-                      <SelectItem value="visual">
+                    <Select.Trigger style={{ width: '100%' }} />
+                    <Select.Content>
+                      <Select.Item value="visual">
                         👁️ Visual - I learn best by seeing (images, diagrams)
-                      </SelectItem>
-                      <SelectItem value="auditory">
+                      </Select.Item>
+                      <Select.Item value="auditory">
                         👂 Auditory - I learn best by listening (audio, lectures)
-                      </SelectItem>
-                      <SelectItem value="kinesthetic">
+                      </Select.Item>
+                      <Select.Item value="kinesthetic">
                         ✋ Kinesthetic - I learn best by doing (practice, exercises)
-                      </SelectItem>
-                      <SelectItem value="mixed">
+                      </Select.Item>
+                      <Select.Item value="mixed">
                         🌈 Mixed - I use a combination of all styles
-                      </SelectItem>
-                    </SelectContent>
-                  </Select>
+                      </Select.Item>
+                    </Select.Content>
+                  </Select.Root>
                   <Text size="1" color="gray">
                     💡 We'll adapt content presentation to match your style
                   </Text>

@@ -12,21 +12,21 @@
  */
 
 import {
-    BarChartIcon,
-    CalendarIcon,
-    CheckCircledIcon,
-    LightningBoltIcon,
-    ReloadIcon,
-    StarFilledIcon,
-    TargetIcon,
-    TimerIcon,
+  BarChartIcon,
+  CalendarIcon,
+  CheckCircledIcon,
+  LightningBoltIcon,
+  ReloadIcon,
+  StarFilledIcon,
+  TargetIcon,
+  TimerIcon,
 } from '@radix-ui/react-icons';
-import { Badge, Button, Card, Flex, Separator, Text } from '@radix-ui/themes';
+import { Badge, Button, Card, Flex, Separator, Tabs, Text } from '@radix-ui/themes';
 import React, { useEffect, useState } from 'react';
 import supabase from '../../services/supabase/client';
 import { useAppStore } from '../../ts/stores';
 import type { TaskType } from '../../types/database';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui';
+
 
 interface SessionSummary {
   date: string;
@@ -317,16 +317,16 @@ const ProgressDashboard: React.FC = () => {
       </Flex>
 
       {/* Tabs for different views */}
-      <Tabs defaultValue="current">
-        <TabsList>
-          <TabsTrigger value="current">Current Session</TabsTrigger>
-          <TabsTrigger value="history">History</TabsTrigger>
-          <TabsTrigger value="categories">Categories</TabsTrigger>
-          <TabsTrigger value="weak">Weak Areas</TabsTrigger>
-        </TabsList>
+      <Tabs.Root defaultValue="current">
+        <Tabs.List>
+          <Tabs.Trigger value="current">Current Session</Tabs.Trigger>
+          <Tabs.Trigger value="history">History</Tabs.Trigger>
+          <Tabs.Trigger value="categories">Categories</Tabs.Trigger>
+          <Tabs.Trigger value="weak">Weak Areas</Tabs.Trigger>
+        </Tabs.List>
 
         {/* Current Session Tab */}
-        <TabsContent value="current">
+        <Tabs.Content value="current">
           <Card>
             <Flex direction="column" gap="4">
               <Text size="4" weight="bold">Current Session</Text>
@@ -343,8 +343,6 @@ const ProgressDashboard: React.FC = () => {
                   </Badge>
                 </Flex>
                 <div className="w-full bg-app-border rounded-full h-2"
-
-
                   color={progress.accuracy >= 80 ? 'green' : progress.accuracy >= 60 ? 'blue' : 'red'}
                 />
               </Flex>
@@ -401,10 +399,10 @@ const ProgressDashboard: React.FC = () => {
               </Flex>
             </Flex>
           </Card>
-        </TabsContent>
+        </Tabs.Content>
 
         {/* History Tab */}
-        <TabsContent value="history">
+        <Tabs.Content value="history">
           <Card>
             <Flex direction="column" gap="4">
               <Text size="4" weight="bold">Session History (Last 30 Days)</Text>
@@ -444,10 +442,10 @@ const ProgressDashboard: React.FC = () => {
               )}
             </Flex>
           </Card>
-        </TabsContent>
+        </Tabs.Content>
 
         {/* Categories Tab */}
-        <TabsContent value="categories">
+        <Tabs.Content value="categories">
           <Card>
             <Flex direction="column" gap="4">
               <Flex align="center" gap="2">
@@ -491,10 +489,10 @@ const ProgressDashboard: React.FC = () => {
               )}
             </Flex>
           </Card>
-        </TabsContent>
+        </Tabs.Content>
 
         {/* Weak Areas Tab */}
-        <TabsContent value="weak">
+        <Tabs.Content value="weak">
           <Card>
             <Flex direction="column" gap="4">
               <Flex align="center" gap="2">
@@ -552,8 +550,8 @@ const ProgressDashboard: React.FC = () => {
               )}
             </Flex>
           </Card>
-        </TabsContent>
-      </Tabs>
+        </Tabs.Content>
+      </Tabs.Root>
     </Flex>
   );
 };

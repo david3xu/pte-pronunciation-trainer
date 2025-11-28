@@ -6,10 +6,9 @@
  */
 
 import { LockClosedIcon, SpeakerLoudIcon } from '@radix-ui/react-icons';
-import { Badge, Button, Card, Flex, Text } from '@radix-ui/themes';
+import { Badge, Button, Card, Flex, Select, Text } from '@radix-ui/themes';
 import React, { useState } from 'react';
 import { getVoices, isPremiumTTSAvailable, type PollyVoice } from '../../ts/audio/pollyService';
-import { Select, SelectContent, SelectItem, SelectTrigger } from '../ui';
 
 interface PremiumVoiceSelectorProps {
   selectedVoiceId?: string;
@@ -90,34 +89,34 @@ const PremiumVoiceSelector: React.FC<PremiumVoiceSelectorProps> = ({
         <Flex gap="3" wrap="wrap">
           <Flex direction="column" gap="1" style={{ flex: 1, minWidth: '150px' }}>
             <Text size="2" weight="medium">Accent</Text>
-            <Select
+            <Select.Root
               value={selectedAccent}
               onValueChange={(value) => setSelectedAccent(value as any)}
             >
-              <SelectTrigger />
-              <SelectContent>
-                <SelectItem value="All">All Accents</SelectItem>
-                <SelectItem value="US">🇺🇸 US English</SelectItem>
-                <SelectItem value="UK">🇬🇧 British English</SelectItem>
-                <SelectItem value="AU">🇦🇺 Australian English</SelectItem>
-                <SelectItem value="IN">🇮🇳 Indian English</SelectItem>
-              </SelectContent>
-            </Select>
+              <Select.Trigger />
+              <Select.Content>
+                <Select.Item value="All">All Accents</Select.Item>
+                <Select.Item value="US">🇺🇸 US English</Select.Item>
+                <Select.Item value="UK">🇬🇧 British English</Select.Item>
+                <Select.Item value="AU">🇦🇺 Australian English</Select.Item>
+                <Select.Item value="IN">🇮🇳 Indian English</Select.Item>
+              </Select.Content>
+            </Select.Root>
           </Flex>
 
           <Flex direction="column" gap="1" style={{ flex: 1, minWidth: '150px' }}>
             <Text size="2" weight="medium">Gender</Text>
-            <Select
+            <Select.Root
               value={selectedGender}
               onValueChange={(value) => setSelectedGender(value as any)}
             >
-              <SelectTrigger />
-              <SelectContent>
-                <SelectItem value="All">All</SelectItem>
-                <SelectItem value="Female">Female</SelectItem>
-                <SelectItem value="Male">Male</SelectItem>
-              </SelectContent>
-            </Select>
+              <Select.Trigger />
+              <Select.Content>
+                <Select.Item value="All">All</Select.Item>
+                <Select.Item value="Female">Female</Select.Item>
+                <Select.Item value="Male">Male</Select.Item>
+              </Select.Content>
+            </Select.Root>
           </Flex>
         </Flex>
 

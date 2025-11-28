@@ -6,8 +6,8 @@
  */
 
 import type {
-  AppConfig as AppConfigType,
-  ConfigPath
+    AppConfig as AppConfigType,
+    ConfigPath
 } from '../../types';
 
 /**
@@ -55,12 +55,15 @@ export class AppConfig {
               'pte-rs-core': 'data/processed/pte-rs-core-vocabulary.json',
               'pte-di-rl-templates': 'data/processed/pte-di-rl-templates-vocabulary.json',
               'pte-sst-complete': 'data/processed/pte-sst-complete-vocabulary.json',
-              
+              'pte-essay-topic-vocabulary': 'data/processed/pte-essay-topic-vocabulary.json',
+              'pte-di-difficult-words': 'data/processed/pte-di-difficult-words-vocabulary.json',
+              'pte-di-easy-phrases': 'data/processed/pte-di-easy-phrases-vocabulary.json',
+
               // Practice modes
               'rs': 'data/processed/pte-repeat-sentence.json',
               'asq': 'data/processed/pte-answer-short-question.json',
               'wfd': 'data/processed/pte-write-from-dictation.json',
-              
+
               // Shadowing modes
               'di-shadowing-1-10': 'data/processed/di-shadowing-images-1-10.json',
               'di-shadowing-11-20': 'data/processed/di-shadowing-images-11-20.json'
@@ -86,12 +89,14 @@ export class AppConfig {
           { id: 'pte-di-rl-templates', name: 'PTE DI/RL Templates', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-sst-complete', name: 'PTE SST Complete', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-essay-topic-vocabulary', name: 'PTE Essay Topics', category: 'vocabulary', difficulty: 'normal' },
+          { id: 'pte-di-difficult-words', name: 'PTE DI Difficult Words', category: 'vocabulary', difficulty: 'hard' },
+          { id: 'pte-di-easy-phrases', name: 'PTE DI Easy Phrases', category: 'vocabulary', difficulty: 'easy' },
 
           // Practice modes (3 total)
           { id: 'rs', name: 'Repeat Sentence', category: 'practice', description: '620 practice sentences' },
           { id: 'asq', name: 'Answer Short Question', category: 'practice', description: '692 practice questions' },
           { id: 'wfd', name: 'Write From Dictation', category: 'practice', description: '1,195 practice sentences' },
-          
+
           // Shadowing modes (2 total)
           { id: 'di-shadowing-1-10', name: 'DI Shadowing (Images 1-10)', category: 'shadowing', description: '10 DI answers for pronunciation practice' },
           { id: 'di-shadowing-11-20', name: 'DI Shadowing (Images 11-20)', category: 'shadowing', description: '10 DI answers for pronunciation practice' }

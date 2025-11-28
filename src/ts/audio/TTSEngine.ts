@@ -349,8 +349,7 @@ export class TTSEngine {
       if (!this.cachedVoice || this.synth.getVoices().length > 0) {
         const voices = this.synth.getVoices();
         if (voices.length > 0) {
-          const voiceSelector = (window as any).voiceSelector;
-          this.cachedVoice = voiceSelector ? voiceSelector.selectBestVoiceMatch(voices, lang) : null;
+          this.cachedVoice = this.selectVoice(voices, lang);
           if (this.cachedVoice) {
             console.log(`[TTSEngine] Selected voice: ${this.cachedVoice.name}`);
           }
@@ -366,8 +365,7 @@ export class TTSEngine {
         console.log(`[TTSEngine] Fallback check - voices available: ${voices.length}`);
 
         if (voices.length > 0) {
-          const voiceSelector = (window as any).voiceSelector;
-          const fallbackVoice = voiceSelector ? voiceSelector.selectBestVoiceMatch(voices, lang) : voices[0];
+          const fallbackVoice = this.selectVoice(voices, lang) || voices[0];
 
           if (fallbackVoice) {
             console.warn('[TTSEngine] Using fallback voice:', fallbackVoice.name);
@@ -444,8 +442,7 @@ export class TTSEngine {
         if (!this.cachedVoice || this.synth.getVoices().length > 0) {
           const voices = this.synth.getVoices();
           if (voices.length > 0) {
-            const voiceSelector = (window as any).voiceSelector;
-            this.cachedVoice = voiceSelector ? voiceSelector.selectBestVoiceMatch(voices, lang) : voices[0];
+            this.cachedVoice = this.selectVoice(voices, lang);
           }
         }
 
@@ -706,6 +703,33 @@ export class TTSEngine {
    */
   resetVoiceCache(): void {
     this.cachedVoice = null;
+  }
+
+  /**
+   * Select best voice match from available voices
+   */
+  private selectVoice(voices: SpeechSynthesisVoice[], lang: string | null): SpeechSynthesisVoice | null {
+    // Check if user has selected a preferred voice in settings
+    const preferredName = useAppStore.getState().settings.ttsVoice;
+
+    if (preferredName) {
+      // Try exact match first
+      const exactMatch = voices.find(v => v.name === preferredName);
+      if (exactMatch) return exactMatch;
+
+      // Try partial match
+      const partialMatch = voices.find(v => v.name.includes(preferredName));
+      if (partialMatch) return partialMatch;
+    }
+
+    // Fallback: Try to match language
+    if (lang) {
+      const langMatch = voices.find(v => v.lang === lang || v.lang.startsWith(lang));
+      if (langMatch) return langMatch;
+    }
+
+    // Final fallback: First available voice
+    return voices[0] || null;
   }
 }
 

@@ -5,6 +5,7 @@
  * Now with persistent LocalStorage caching to reduce API calls.
  */
 
+import { appConfig } from '../config/AppConfig';
 import { persistentTTSCache } from './tts/persistentCache';
 
 interface PremiumTTSRequest {
@@ -65,7 +66,7 @@ export async function synthesizePremiumSpeech(
       outputFormat: 'mp3',
     };
 
-    const response = await fetch('/api/premium-tts', {
+    const response = await fetch(appConfig.get('api.endpoints.premiumTts'), {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -118,7 +119,7 @@ export function playAudioFromBase64(
  */
 export async function getAvailableVoices(): Promise<APIResponse<any>> {
   try {
-    const response = await fetch('/api/voices');
+    const response = await fetch(appConfig.get('api.endpoints.voices'));
 
     if (!response.ok) {
       throw new Error(`API returned ${response.status}`);

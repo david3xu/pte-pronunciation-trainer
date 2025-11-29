@@ -16,7 +16,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { askAITutorStream } from '../../services/ai';
 import { rateAIResponse } from '../../services/ai/ratingService';
-import { useAppStore } from '../../stores';
+import { useAuth, useVocabulary } from '../../stores';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -41,7 +41,8 @@ const AITutorChat: React.FC<AITutorChatProps> = ({
   sessionId,
   useEnhancedContext = !!taskType
 }) => {
-  const { auth, vocabulary } = useAppStore();
+  const auth = useAuth();
+  const vocabulary = useVocabulary();
   const [messages, setMessages] = useState<Message[]>([
     {
       id: crypto.randomUUID(),

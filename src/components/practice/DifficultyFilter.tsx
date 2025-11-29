@@ -6,12 +6,13 @@
 
 import { Badge, Button, Card, Flex, Text } from '@radix-ui/themes';
 import React from 'react';
-import { useAppStore } from '../../stores';
+import { useSettings, useVocabulary } from '../../stores';
 
 type Difficulty = 'all' | 'easy' | 'normal' | 'hard';
 
 const DifficultyFilter: React.FC = () => {
-  const { settings, vocabulary } = useAppStore();
+  const settings = useSettings();
+  const vocabulary = useVocabulary();
 
   const difficulties: Array<{ value: Difficulty; label: string; color: string; emoji: string }> = [
     { value: 'all', label: 'All', color: 'gray', emoji: '🌟' },

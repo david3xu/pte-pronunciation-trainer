@@ -612,6 +612,9 @@ export const useAccuracy = () => useAppStore((state) => state.progress.accuracy)
 export const useUI = () => useAppStore((state) => state.ui);
 export const useNotification = () => useAppStore((state) => state.ui.notification);
 
+// Auth selectors
+export const useAuth = () => useAppStore((state) => state.auth);
+
 /**
  * Export all store types
  */

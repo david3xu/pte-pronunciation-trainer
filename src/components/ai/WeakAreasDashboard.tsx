@@ -12,7 +12,7 @@ import { Badge, Button, Card, Flex, Separator, Text } from '@radix-ui/themes';
 import React, { useEffect, useState } from 'react';
 import { generateRecommendations, getRecommendations, updateRecommendationStatus, type Recommendation } from '../../services/ai/recommendationEngine';
 import { detectWeakAreas, getWeakAreas, type WeakArea } from '../../services/ai/weakAreaDetector';
-import { useAppStore } from '../../stores';
+import { useAuth } from '../../stores';
 
 interface WeakAreasDashboardProps {
   isOpen: boolean;
@@ -20,7 +20,7 @@ interface WeakAreasDashboardProps {
 }
 
 const WeakAreasDashboard: React.FC<WeakAreasDashboardProps> = ({ isOpen, onClose }) => {
-  const { auth } = useAppStore();
+  const auth = useAuth();
   const [weakAreas, setWeakAreas] = useState<WeakArea[]>([]);
   const [recommendations, setRecommendations] = useState<Recommendation[]>([]);
   const [isLoading, setIsLoading] = useState(false);

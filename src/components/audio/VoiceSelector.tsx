@@ -8,7 +8,7 @@
 import { SpeakerLoudIcon, UpdateIcon } from '@radix-ui/react-icons';
 import { Badge, Button, Card, Flex, Select, Switch, Text } from '@radix-ui/themes';
 import React, { useEffect, useState } from 'react';
-import { useAppStore } from '../../stores';
+
 
 
 interface VoiceSelectorProps {
@@ -22,7 +22,7 @@ interface VoiceData {
 }
 
 const VoiceSelector: React.FC<VoiceSelectorProps> = ({ onVoiceChange }) => {
-  const {} = useAppStore();
+
   const [voices, setVoices] = useState<VoiceData>({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

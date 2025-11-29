@@ -5,136 +5,15 @@
  * Now with persistent LocalStorage caching to reduce API calls.
  */
 
-import { appConfig } from '../config/AppConfig';
-import { persistentTTSCache } from './tts/persistentCache';
 
-interface PremiumTTSRequest {
-  text: string;
-  voiceId?: string;
-  engine?: 'standard' | 'neural';
-  languageCode?: string;
-  outputFormat?: 'mp3' | 'ogg_vorbis' | 'pcm';
-}
 
-interface PremiumTTSResponse {
-  audioBase64: string;
-  contentType: string;
-  voiceId: string;
-  engine: string;
-  languageCode: string;
-  requestCharacters: number;
-}
 
-interface APIResponse<T> {
-  success: boolean;
-  data?: T;
-  error?: string;
-  fallback?: boolean;
-}
 
-/**
- * Synthesize speech using premium TTS (AWS Polly) with caching
- */
-export async function synthesizePremiumSpeech(
-  text: string,
-  voiceId: string = 'Joanna',
-  languageCode: string = 'en-US'
-): Promise<APIResponse<PremiumTTSResponse>> {
-  // Check persistent cache first
-  const cached = await persistentTTSCache.get(text, voiceId, languageCode);
-  if (cached) {
-    return {
-      success: true,
-      data: {
-        audioBase64: cached.audioBase64,
-        contentType: cached.contentType,
-        voiceId,
-        engine: 'neural',
-        languageCode,
-        requestCharacters: text.length,
-      },
-    };
-  }
 
-  // Cache miss - call API
-  try {
-    const request: PremiumTTSRequest = {
-      text,
-      voiceId,
-      engine: 'neural',
-      languageCode,
-      outputFormat: 'mp3',
-    };
 
-    const response = await fetch(appConfig.get('api.endpoints.premiumTts'), {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(request),
-    });
 
-    if (!response.ok) {
-      throw new Error(`API returned ${response.status}`);
-    }
 
-    const result = await response.json();
 
-    // Cache the result
-    if (result.success && result.data?.audioBase64) {
-      await persistentTTSCache.set(
-        text,
-        voiceId,
-        languageCode,
-        result.data.audioBase64,
-        result.data.contentType || 'audio/mpeg'
-      );
-    }
-
-    return result;
-  } catch (error: any) {
-    console.error('Premium TTS API error:', error);
-    return {
-      success: false,
-      error: error.message || 'Failed to synthesize speech',
-      fallback: true,
-    };
-  }
-}
-
-/**
- * Play audio from base64 data
- */
-export function playAudioFromBase64(
-  audioBase64: string,
-  contentType: string = 'audio/mpeg'
-): HTMLAudioElement {
-  const audio = new Audio(`data:${contentType};base64,${audioBase64}`);
-  audio.play();
-  return audio;
-}
-
-/**
- * Get available premium voices
- */
-export async function getAvailableVoices(): Promise<APIResponse<any>> {
-  try {
-    const response = await fetch(appConfig.get('api.endpoints.voices'));
-
-    if (!response.ok) {
-      throw new Error(`API returned ${response.status}`);
-    }
-
-    const result = await response.json();
-    return result;
-  } catch (error: any) {
-    console.error('Voices API error:', error);
-    return {
-      success: false,
-      error: error.message || 'Failed to fetch voices',
-    };
-  }
-}
 
 /**
  * Cache premium TTS audio

@@ -9,10 +9,11 @@ import { BookmarkIcon, LightningBoltIcon, ReloadIcon, RocketIcon } from '@radix-
 import { Badge, Button, Card, Flex, Spinner, Text } from '@radix-ui/themes';
 import React, { useEffect, useState } from 'react';
 import { generateRecommendations, type Recommendation, type UserProgress } from '../../services/ai/recommendationService';
-import { useAppStore } from '../../stores';
+import { useAuth, useProgress } from '../../stores';
 
 const AIRecommendations: React.FC = () => {
-  const { auth, progress } = useAppStore();
+  const auth = useAuth();
+  const progress = useProgress();
   const [recommendations, setRecommendations] = useState<Recommendation[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);

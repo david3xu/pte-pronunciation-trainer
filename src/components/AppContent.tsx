@@ -1,9 +1,9 @@
 import {
-  BarChartIcon,
-  ChatBubbleIcon,
-  GearIcon,
-  LightningBoltIcon,
-  SpeakerLoudIcon,
+    BarChartIcon,
+    ChatBubbleIcon,
+    GearIcon,
+    LightningBoltIcon,
+    SpeakerLoudIcon,
 } from '@radix-ui/react-icons';
 import { Button, Flex, Spinner, Theme } from '@radix-ui/themes';
 import React, { lazy, Suspense, useEffect, useState } from 'react';
@@ -11,14 +11,14 @@ import { appConfig } from '../config/AppConfig';
 import { useMigration, useOnboarding, useSwipeGesture } from '../hooks';
 import { logIntervention, monitorSession, type Intervention } from '../services/ai/interventionEngine';
 import { getSessionManager } from '../services/session/sessionManager';
-import { useAppStore, type AppState } from '../stores';
+import { useAudioState, useAuth, useProgress, useSettings, useVocabulary } from '../stores';
 import type { TaskType } from '../types/database';
 import { AISidebar, AITutorChat, InterventionModal, PronunciationScoring, WeakAreasDashboard } from './ai';
 import { AudioControls } from './audio';
 import DataMigrationModal from './migration/DataMigrationModal';
 import {
-  ProgressDashboard,
-  WordCard,
+    ProgressDashboard,
+    WordCard,
 } from './practice';
 import LearnerProfileModal from './profile/LearnerProfileModal';
 import { SettingsPanel } from './settings';
@@ -31,13 +31,12 @@ const WFDInterface = lazy(() => import('./practice/WFDInterface'));
 
 export const AppContent: React.FC = () => {
   // Access Zustand store using selector pattern for proper re-renders
-  const vocabulary = useAppStore((state: AppState) => state.vocabulary);
-  const currentItem = useAppStore((state: AppState) => state.vocabulary.currentItem);
-  const isLoadingVocabulary = useAppStore((state: AppState) => state.vocabulary.isLoading);
-  const auth = useAppStore((state: AppState) => state.auth);
-  const settings = useAppStore((state: AppState) => state.settings);
-  const audio = useAppStore((state: AppState) => state.audio);
-  const progress = useAppStore((state: AppState) => state.progress);
+  const vocabulary = useVocabulary();
+  const { currentItem, isLoading: isLoadingVocabulary } = vocabulary;
+  const auth = useAuth();
+  const settings = useSettings();
+  const audio = useAudioState();
+  const progress = useProgress();
 
   // Modal states
   const [showSettings, setShowSettings] = useState(false);

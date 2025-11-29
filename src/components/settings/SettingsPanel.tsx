@@ -12,7 +12,7 @@ import {
 import { Badge, Button, Card, Flex, Select, Slider, Switch, Tabs, Text } from '@radix-ui/themes';
 import React, { useMemo } from 'react';
 import { appConfig } from '../../config/AppConfig';
-import { useAppStore } from '../../stores';
+import { useAudioState, useSettings, useVocabulary } from '../../stores';
 
 interface SettingsPanelProps {
   isOpen: boolean;
@@ -21,24 +21,26 @@ interface SettingsPanelProps {
 
 const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
   // Get settings data using selectors
-  const practiceType = useAppStore((state) => state.settings.practiceType);
-  const practiceMode = useAppStore((state) => state.settings.practiceMode);
-  const vocabularyBook = useAppStore((state) => state.settings.vocabularyBook);
-  const difficultyFilter = useAppStore((state) => state.settings.difficultyFilter);
-  const autoPlay = useAppStore((state) => state.settings.autoPlay);
-  const autoSwitchBooks = useAppStore((state) => state.settings.autoSwitchBooks);
-  const showPhonetic = useAppStore((state) => state.settings.showPhonetic);
-  const ttsRate = useAppStore((state) => state.settings.ttsRate);
-  const ttsVoice = useAppStore((state) => state.settings.ttsVoice);
-  const audioVolume = useAppStore((state) => state.audio.volume);
+  const settings = useSettings();
+  const {
+    practiceType,
+    practiceMode,
+    vocabularyBook,
+    difficultyFilter,
+    autoPlay,
+    autoSwitchBooks,
+    showPhonetic,
+    ttsRate,
+    ttsVoice,
+    updateSetting,
+    resetSettings
+  } = settings;
 
-  // Get methods using selectors
-  const updateSetting = useAppStore((state) => state.settings.updateSetting);
-  const resetSettings = useAppStore((state) => state.settings.resetSettings);
-  const setVolume = useAppStore((state) => state.audio.setVolume);
-  const setLoading = useAppStore((state) => state.vocabulary.setLoading);
-  const setDataset = useAppStore((state) => state.vocabulary.setDataset);
-  const filterByDifficulty = useAppStore((state) => state.vocabulary.filterByDifficulty);
+  const audio = useAudioState();
+  const { volume: audioVolume, setVolume } = audio;
+
+  const vocabulary = useVocabulary();
+  const { setLoading, setDataset, filterByDifficulty } = vocabulary;
 
   // Get vocabulary books from config dynamically
   const vocabularyBooks = useMemo(() => {

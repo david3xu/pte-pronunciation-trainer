@@ -735,16 +735,18 @@ export class TTSEngine {
     // STRICT FILTER: Prioritize Male Australian or UK voices
 
     // 1. Australian Male
+    // iOS/macOS often uses "Gordon" for AU Male. Chrome uses "Google Australian English" (often female/neutral but sometimes male depending on OS).
     const auMale = voices.find(v =>
       (v.lang === 'en-AU' || v.lang === 'en_AU') &&
-      (v.name.toLowerCase().includes('male') || v.name.includes('Russell'))
+      (v.name.toLowerCase().includes('male') || v.name.includes('Russell') || v.name.includes('Gordon'))
     );
     if (auMale) return auMale;
 
     // 2. UK Male
+    // iOS/macOS uses "Daniel" for UK Male.
     const ukMale = voices.find(v =>
       (v.lang === 'en-GB' || v.lang === 'en_GB') &&
-      (v.name.toLowerCase().includes('male') || v.name.includes('Brian') || v.name.includes('Arthur'))
+      (v.name.toLowerCase().includes('male') || v.name.includes('Brian') || v.name.includes('Arthur') || v.name.includes('Daniel'))
     );
     if (ukMale) return ukMale;
 

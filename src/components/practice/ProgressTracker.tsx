@@ -7,10 +7,11 @@
 import { CheckCircledIcon, TargetIcon, TimerIcon } from '@radix-ui/react-icons';
 import { Badge, Card, Flex, Text } from '@radix-ui/themes';
 import React from 'react';
-import { useAppStore } from '../../stores';
+import { useAuth, useProgress } from '../../stores';
 
 const ProgressTracker: React.FC = () => {
-  const { progress, auth } = useAppStore();
+  const progress = useProgress();
+  const auth = useAuth();
 
   // Calculate session duration in minutes
   const sessionDurationMinutes = progress.sessionStartTime

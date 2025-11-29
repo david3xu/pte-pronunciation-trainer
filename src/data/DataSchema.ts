@@ -481,17 +481,7 @@ export class DataSchema {
 /**
  * Initialize DataSchema with Config (single source of truth)
  */
-export function initializeDataSchema(config: any): DataSchema {
-  const dataSchema = new DataSchema(config);
 
-  // Expose globally in browser environment
-  if (typeof window !== 'undefined') {
-    (window as any).dataSchema = dataSchema;
-    console.log('✅ DataSchema initialized with Config');
-  }
-
-  return dataSchema;
-}
 
 // Export singleton instance (will be initialized with config)
 export let dataSchema: DataSchema | null = null;

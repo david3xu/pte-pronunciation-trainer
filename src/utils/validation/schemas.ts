@@ -152,32 +152,7 @@ export const aiTutorRequestSchema = z.object({
   }).optional(),
 });
 
-/**
- * Pronunciation scoring request schema
- */
-export const pronunciationScoringRequestSchema = z.object({
-  audioData: z.string().min(1, 'Audio data is required'),
-  targetText: z.string().min(1, 'Target text is required'),
-  referenceAudio: z.string().optional(),
-});
 
-/* ============================================
-   VALIDATION HELPERS
-   ============================================ */
-
-/**
- * Validate vocabulary term at runtime
- */
-export function validateVocabularyTerm(data: unknown) {
-  return vocabularyTermSchema.parse(data);
-}
-
-/**
- * Validate practice item at runtime
- */
-export function validatePracticeItem(data: unknown) {
-  return practiceItemSchema.parse(data);
-}
 
 /**
  * Safe validation with error handling
@@ -191,6 +166,17 @@ export function safeValidate<T>(
     return { success: true, data: result.data };
   }
   return { success: false, error: result.error };
+}
+
+/* ============================================
+   VALIDATION HELPERS
+   ============================================ */
+
+/**
+ * Validate vocabulary term at runtime
+ */
+export function validateVocabularyTerm(data: unknown) {
+  return vocabularyTermSchema.parse(data);
 }
 
 /* ============================================

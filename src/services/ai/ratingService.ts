@@ -90,40 +90,4 @@ export async function rateAIResponse(
   }
 }
 
-/**
- * Get rating statistics for a user (for analytics)
- */
-export async function getUserRatingStats(
-  userId: string
-): Promise<{
-  total: number;
-  helpful: number;
-  notHelpful: number;
-  avgRating: number;
-}> {
-  try {
-    const { data, error } = await supabase
-      .from('ai_conversations')
-      .select('helpful_rating')
-      .eq('user_id', userId)
-      .not('helpful_rating', 'is', null);
 
-    if (error) {
-      console.error('[RatingService] Error fetching stats:', error);
-      return { total: 0, helpful: 0, notHelpful: 0, avgRating: 0 };
-    }
-
-    const total = data.length;
-    const helpful = data.filter((r: any) => r.helpful_rating >= 4).length;
-    const notHelpful = data.filter((r: any) => r.helpful_rating <= 2).length;
-    const avgRating =
-      total > 0
-        ? data.reduce((sum: number, r: any) => sum + r.helpful_rating, 0) / total
-        : 0;
-
-    return { total, helpful, notHelpful, avgRating };
-  } catch (error) {
-    console.error('[RatingService] Unexpected error:', error);
-    return { total: 0, helpful: 0, notHelpful: 0, avgRating: 0 };
-  }
-}

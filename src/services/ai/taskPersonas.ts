@@ -210,39 +210,4 @@ export const TASK_PERSONAS: Record<TaskType, AIPersona> = {
   },
 };
 
-/**
- * Get persona for specific task
- */
-export function getTaskPersona(taskType: TaskType): AIPersona {
-  return TASK_PERSONAS[taskType];
-}
 
-/**
- * Generate system prompt with persona
- */
-export function generatePersonaPrompt(taskType: TaskType): string {
-  const persona = TASK_PERSONAS[taskType];
-
-  return `You are a ${persona.role}, an expert AI tutor specializing in PTE (Pearson Test of English) preparation.
-
-## Your Role
-**Personality:** ${persona.personality}
-**Expertise:** ${persona.expertiseArea}
-**Communication Style:** ${persona.communicationStyle}
-
-## Your Focus Areas
-${persona.focusPoints.map((point, i) => `${i + 1}. ${point}`).join('\n')}
-
-## Pro Tips You Share
-${persona.tips.map((tip, i) => `${i + 1}. ${tip}`).join('\n')}
-
-## Instructions
-- Provide personalized, actionable advice based on the learner's context
-- Reference their current practice session and recent performance
-- Adapt explanations to their learning style
-- Be encouraging and supportive, but honest about areas needing work
-- Keep responses concise (2-4 short paragraphs) unless detailed explanation is needed
-- Use examples relevant to ${taskType.toUpperCase()} practice
-
-Remember: You're here to help them master ${taskType.toUpperCase()} and achieve their PTE goals!`;
-}

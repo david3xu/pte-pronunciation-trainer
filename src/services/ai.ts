@@ -25,6 +25,8 @@ interface AIResponse<T> {
   warning?: string;
 }
 
+import { appConfig } from '../config/AppConfig';
+
 /**
  * Get AI-powered learning recommendations
  */
@@ -32,7 +34,7 @@ export async function getAIRecommendations(
   request: AIRecommendationRequest
 ): Promise<AIResponse<AIRecommendation[]>> {
   try {
-    const response = await fetch('/api/ai-recommendations', {
+    const response = await fetch(appConfig.get('api.endpoints.aiRecommendations'), {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -83,8 +85,16 @@ interface EnhancedAITutorOptions {
  * @param question - User's question
  * @param options - Configuration options (Phase 1 + Phase 2)
  */
-export async function askAITutor(
+/**
+ * Ask AI tutor a question with streaming response
+ *
+ * @param question - User's question
+ * @param onToken - Callback for each new token received
+ * @param options - Configuration options
+ */
+export async function askAITutorStream(
   question: string,
+  onToken: (token: string) => void,
   options?: EnhancedAITutorOptions
 ): Promise<AIResponse<{ answer: string }>> {
   try {
@@ -92,7 +102,6 @@ export async function askAITutor(
       message: question,
       context: options?.context,
       conversationHistory: options?.conversationHistory,
-      // Phase 2 parameters
       userId: options?.userId,
       taskType: options?.taskType,
       sessionId: options?.sessionId,
@@ -100,7 +109,7 @@ export async function askAITutor(
       useEnhancedContext: options?.useEnhancedContext || false,
     };
 
-    const response = await fetch('/api/ai/chat', {
+    const response = await fetch(appConfig.get('api.endpoints.aiChat'), {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -109,7 +118,6 @@ export async function askAITutor(
     });
 
     if (!response.ok) {
-      // Try to parse error message
       try {
         const errorData = await response.json();
         return {
@@ -124,15 +132,65 @@ export async function askAITutor(
       }
     }
 
-    const result = await response.json();
-    return result;
+    if (!response.body) {
+      return { success: false, error: 'No response body' };
+    }
+
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder();
+    let fullAnswer = '';
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+
+      const chunk = decoder.decode(value);
+      const lines = chunk.split('\n');
+
+      for (const line of lines) {
+        if (line.startsWith('data: ')) {
+          const data = line.slice(6);
+          if (data === '[DONE]') continue;
+
+          try {
+            const parsed = JSON.parse(data);
+            if (parsed.text) {
+              onToken(parsed.text);
+              fullAnswer += parsed.text;
+            } else if (parsed.error) {
+              console.error('Stream error:', parsed.error);
+              // Don't throw, just log - we might have partial answer
+            }
+          } catch (e) {
+            console.error('Error parsing stream chunk:', e);
+          }
+        }
+      }
+    }
+
+    return {
+      success: true,
+      data: { answer: fullAnswer },
+    };
   } catch (error: any) {
-    console.error('AI Tutor API error:', error);
+    console.error('AI Tutor Stream error:', error);
     return {
       success: false,
       error: error.message || 'Failed to get AI tutor response',
     };
   }
+}
+
+/**
+ * Ask AI tutor a question about pronunciation/vocabulary
+ * (Legacy non-streaming wrapper)
+ */
+export async function askAITutor(
+  question: string,
+  options?: EnhancedAITutorOptions
+): Promise<AIResponse<{ answer: string }>> {
+  // Use streaming implementation but wait for full result
+  return askAITutorStream(question, () => {}, options);
 }
 
 /**
@@ -169,7 +227,7 @@ Provide 3-5 specific, actionable pronunciation tips. Focus on:
 Return ONLY a JSON array of tip strings:
 ["tip 1", "tip 2", "tip 3"]`;
 
-    const response = await fetch('/api/ai/chat', {
+    const response = await fetch(appConfig.get('api.endpoints.aiChat'), {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -255,7 +313,7 @@ export async function getPronunciationScore(
       difficulty,
     };
 
-    const response = await fetch('/api/pronunciation-score', {
+    const response = await fetch(appConfig.get('api.endpoints.pronunciationScore'), {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

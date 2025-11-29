@@ -1,9 +1,9 @@
 import {
-    BarChartIcon,
-    ChatBubbleIcon,
-    GearIcon,
-    LightningBoltIcon,
-    SpeakerLoudIcon,
+  BarChartIcon,
+  ChatBubbleIcon,
+  GearIcon,
+  LightningBoltIcon,
+  SpeakerLoudIcon,
 } from '@radix-ui/react-icons';
 import { Button, Flex, Spinner, Theme } from '@radix-ui/themes';
 import React, { lazy, Suspense, useEffect, useState } from 'react';
@@ -17,8 +17,8 @@ import { AISidebar, AITutorChat, InterventionModal, PronunciationScoring, WeakAr
 import { AudioControls } from './audio';
 import DataMigrationModal from './migration/DataMigrationModal';
 import {
-    ProgressDashboard,
-    WordCard,
+  ProgressDashboard,
+  WordCard,
 } from './practice';
 import LearnerProfileModal from './profile/LearnerProfileModal';
 import { SettingsPanel } from './settings';
@@ -473,7 +473,7 @@ export const AppContent: React.FC = () => {
 
           {/* Footer - Minimal */}
           <footer className="mt-8 text-center text-slate-500 text-xs">
-            <p>v3.0.0 • Press Space to play • ← → to navigate</p>
+            <p>v{appConfig.get('app.version')} • Press Space to play • ← → to navigate</p>
           </footer>
 
 

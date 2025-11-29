@@ -7,13 +7,14 @@
 import { Cross2Icon, MagnifyingGlassIcon } from '@radix-ui/react-icons';
 import { Badge, Button, Card, Flex, ScrollArea, Text, TextField } from '@radix-ui/themes';
 import React, { useState } from 'react';
-import { useAppStore } from '../../stores';
+import { useProgress, useVocabulary } from '../../stores';
 import type { PracticeItem, VocabularyTerm } from '../../types/dataset.types';
 import { cleanText } from '../../utils/textUtils';
 import { VocabularyListSkeleton } from '../shared/Skeleton';
 
 const VocabularyList: React.FC = () => {
-  const { vocabulary, progress } = useAppStore();
+  const vocabulary = useVocabulary();
+  const progress = useProgress();
   const [searchQuery, setSearchQuery] = useState('');
   const isLoading = vocabulary.isLoading;
 

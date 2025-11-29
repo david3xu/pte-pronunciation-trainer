@@ -22,7 +22,7 @@ import {
     type MigrationProgress,
     type MigrationResult,
 } from '../../services/migration/migrationService';
-import { useAppStore } from '../../stores';
+import { useAuth } from '../../stores';
 
 interface DataMigrationModalProps {
   isOpen: boolean;
@@ -31,7 +31,7 @@ interface DataMigrationModalProps {
 }
 
 const DataMigrationModal: React.FC<DataMigrationModalProps> = ({ isOpen, onClose, onComplete }) => {
-  const user = useAppStore((state) => state.auth.user);
+  const { user } = useAuth();
 
   const [migrationState, setMigrationState] = useState<'idle' | 'migrating' | 'success' | 'error'>('idle');
   const [progress, setProgress] = useState<MigrationProgress | null>(null);

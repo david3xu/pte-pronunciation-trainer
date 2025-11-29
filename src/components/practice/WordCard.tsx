@@ -14,7 +14,7 @@ import '../../css/shadowing.css'; // Import shadowing styles
 import { isPremiumTTSAvailable } from '../../services/audio/pollyService';
 import { ttsEngine } from '../../services/audio/TTSEngine';
 import type { SessionManager } from '../../services/session/sessionManager';
-import { useAppStore } from '../../stores';
+import { useTTSState } from '../../stores';
 import type { ItemType } from '../../types/database';
 import type { PracticeItem, VocabularyTerm } from '../../types/dataset.types';
 import { parseAnswerForDisplay } from '../../utils/templateParser';
@@ -27,7 +27,7 @@ interface WordCardProps {
 }
 
 const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplete }) => {
-  const ttsState = useAppStore((state) => state.tts);
+  const ttsState = useTTSState();
   const [usePremiumTTS, setUsePremiumTTS] = useState(false);
   const [premiumVoiceId, setPremiumVoiceId] = useState('Joanna');
   const [isPlayingPremium, setIsPlayingPremium] = useState(false);

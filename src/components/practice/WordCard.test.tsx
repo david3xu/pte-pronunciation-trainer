@@ -3,35 +3,26 @@ import { describe, expect, it, vi } from 'vitest';
 import type { VocabularyTerm } from '../../types/dataset.types';
 import WordCard from './WordCard';
 
-// Mock the Zustand store
+// Mock the granular hooks
 vi.mock('../../stores', () => ({
-  useAppStore: () => ({
-    tts: {
-      startSpeaking: vi.fn(),
-      stopSpeaking: vi.fn(),
-      isSpeaking: false,
-    },
-    vocabulary: {
-      currentItem: null,
-      items: [],
-      currentIndex: 0,
-    },
-    settings: {
-      practiceMode: 'vocabulary',
-      difficultyFilter: 'all',
-      ttsRate: 1.0,
-    },
-    progress: {
-      currentIndex: 0,
-      totalItems: 0,
-    },
-    auth: {
-      isAuthenticated: false,
-      user: null,
-    },
-    ui: {
-      showNotification: vi.fn(),
-    },
+  useTTSState: () => ({
+    startSpeaking: vi.fn(),
+    stopSpeaking: vi.fn(),
+    isSpeaking: false,
+  }),
+  useAppStore: Object.assign(vi.fn(), {
+    subscribe: vi.fn(() => vi.fn()),
+    getState: vi.fn(() => ({
+      tts: {
+        startSpeaking: vi.fn(),
+        stopSpeaking: vi.fn(),
+        isSpeaking: false,
+      },
+      settings: {
+        ttsRate: 1.0,
+        ttsVoice: 'Joanna',
+      },
+    })),
   }),
 }));
 

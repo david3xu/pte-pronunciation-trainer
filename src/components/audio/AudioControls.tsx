@@ -6,18 +6,18 @@
  */
 
 import {
-  LoopIcon,
-  PauseIcon,
-  PlayIcon,
-  SpeakerLoudIcon,
-  TrackNextIcon,
-  TrackPreviousIcon,
+    LoopIcon,
+    PauseIcon,
+    PlayIcon,
+    SpeakerLoudIcon,
+    TrackNextIcon,
+    TrackPreviousIcon,
 } from '@radix-ui/react-icons';
 import { Button, Card, Flex, Slider, Switch, Text } from '@radix-ui/themes';
 import React, { useEffect, useRef } from 'react';
 import { appConfig } from '../../config/AppConfig';
 import { ttsEngine } from '../../services/audio/TTSEngine';
-import { useAppStore } from '../../stores';
+import { useAudioState, useSettings, useVocabulary } from '../../stores';
 import { cleanText } from '../../utils/textUtils';
 
 // Vocabulary books in order for auto-switch feature
@@ -39,11 +39,11 @@ const VOCABULARY_BOOKS = [
 ];
 
 const AudioControls: React.FC = () => {
-  const audio = useAppStore((state) => state.audio);
-  const currentItem = useAppStore((state) => state.vocabulary.currentItem);
-  const vocabulary = useAppStore((state) => state.vocabulary);
-  const settings = useAppStore((state) => state.settings);
-  const difficultyFilter = useAppStore((state) => state.settings.difficultyFilter);
+  const audio = useAudioState();
+  const vocabulary = useVocabulary();
+  const { currentItem } = vocabulary;
+  const settings = useSettings();
+  const { difficultyFilter } = settings;
   const autoPlayRef = useRef<boolean>(false);
 
   // Helper function to load next vocabulary book

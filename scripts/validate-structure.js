@@ -77,22 +77,23 @@ const EXPECTED_STRUCTURE = {
   'docs/': {
     required: true,
     files: [
-      'README.md'
-    ],
-    children: {
-      'setup/': { required: false },
-      'api/': { required: false },
-      'architecture/': { required: false },
-      'guides/': { required: false },
-      'archive/': { required: false }
-    }
+      'ARCHITECTURE.md',
+      'SETUP.md',
+      'CONTRIBUTING.md',
+      'DIAGNOSTICS.md',
+      'MODULES.md',
+      'TESTING.md',
+      'DEPLOYMENT.md',
+      'SECURITY.md'
+    ]
   },
   'scripts/': {
     required: true,
     files: [
       'pte-data-pipeline.js',
       'validate.js',
-      'validate-structure.js'
+      'validate-structure.js',
+      'ai-chat-middleware.ts'
     ]
   },
   'tests/': { required: false },
@@ -104,7 +105,6 @@ const ROOT_FILES = [
   'package.json',
   'README.md',
   'CHANGELOG.md',
-  'CLAUDE.md',
   'index.html'
 ];
 

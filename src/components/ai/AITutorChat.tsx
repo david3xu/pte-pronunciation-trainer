@@ -370,14 +370,17 @@ const AITutorChat: React.FC<AITutorChatProps> = ({
           }}
         >
           <TextField.Root style={{ flex: 1 }}>
-            {/* @ts-ignore */}
-            <TextField.Input
-              value={input}
-              onChange={(e: any) => setInput(e.target.value)}
-              onKeyPress={handleKeyPress}
-              placeholder={taskType ? `Ask about ${getTaskTypeName(taskType)}...` : "Ask me about pronunciation..."}
-              disabled={isLoading}
-            />
+            <TextField.Slot>
+              <input
+                className="rt-reset rt-TextFieldInput"
+                style={{ width: '100%', height: '100%', border: 'none', outline: 'none', background: 'transparent', color: 'inherit' }}
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                onKeyPress={handleKeyPress}
+                placeholder={taskType ? `Ask about ${getTaskTypeName(taskType)}...` : "Ask me about pronunciation..."}
+                disabled={isLoading}
+              />
+            </TextField.Slot>
           </TextField.Root>
           <Button
             size="3"

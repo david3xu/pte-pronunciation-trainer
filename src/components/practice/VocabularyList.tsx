@@ -53,8 +53,9 @@ const VocabularyList: React.FC = () => {
             <TextField.Slot>
               <MagnifyingGlassIcon height="16" width="16" />
             </TextField.Slot>
-            {/* @ts-ignore */}
-            <TextField.Input
+            <input
+              className="rt-reset rt-TextFieldInput"
+              style={{ width: '100%', height: '100%', border: 'none', outline: 'none', background: 'transparent', color: 'inherit' }}
               placeholder="Search vocabulary..."
               value={searchQuery}
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchQuery(e.target.value)}

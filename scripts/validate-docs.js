@@ -15,7 +15,6 @@
  */
 
 import fs from 'fs';
-import path from 'path';
 
 // ANSI color codes for output
 const colors = {
@@ -32,22 +31,19 @@ const colors = {
 const PERMANENT_DOCS = [
   'README.md',
   'CHANGELOG.md',
-  'CLAUDE.md',
-  'docs/architecture/GUIDELINES.md',
-  'docs/guides/ENFORCING-GUIDELINES.md',
-  'docs/architecture/ARCHITECTURE.md',
-  'docs/api/API-REFERENCE.md',
-  'docs/guides/DEPLOYMENT.md',
-  'docs/guides/TROUBLESHOOTING.md',
-  'docs/README.md'
+  'docs/ARCHITECTURE.md',
+  'docs/SETUP.md',
+  'docs/CONTRIBUTING.md',
+  'docs/DIAGNOSTICS.md',
+  'docs/MODULES.md',
+  'docs/TESTING.md',
+  'docs/DEPLOYMENT.md',
+  'docs/SECURITY.md'
 ];
 
 const VERSION_FILES = [
   { file: 'package.json', pattern: /"version":\s*"([^"]+)"/ },
-  { file: 'README.md', pattern: /v(\d+\.\d+\.\d+)/ },
-  { file: 'docs/architecture/GUIDELINES.md', pattern: /Version:\s*(\d+\.\d+\.\d+)/ },
-  { file: 'docs/README.md', pattern: /Version:\s*(\d+\.\d+\.\d+)/ },
-  { file: 'CLAUDE.md', pattern: /Current Version.*?v(\d+\.\d+\.\d+)/ }
+  { file: 'CHANGELOG.md', pattern: /## \[(\d+\.\d+\.\d+)\]/ }
 ];
 
 // Historical language that should NOT appear in permanent docs

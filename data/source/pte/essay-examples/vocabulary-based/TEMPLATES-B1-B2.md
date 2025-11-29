@@ -2,6 +2,28 @@
 
 **Both templates scored 26/26 with universal vocabulary approach**
 
+
+```
+In recent years, the topic of xx has emerged as a significant subject of public and academic discussion. I contend that xx offers substantial benefits to xx despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of xx is its potential to bring about xx. In particular, xx can facilitate xx, ultimately leading to broader outcomes such as xx. For instance, evidence from xx shows that approximately 75% of xx experienced xx as a direct result of xx.
+
+However, it is equally important to acknowledge that xx may also give rise to certain challenges. This is largely because xx is likely to generate xx, which may subsequently lead to xx. According to research by xx, over 58% of xx have been affected by xx resulting from xx.
+
+Taken together, these considerations demonstrate the overall importance of xx, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for xx to allocate sufficient resources to address these challenges effectively.
+
+
+
+In recent years, the topic of xx has emerged as a significant subject of public and academic discussion. I contend that xx presents considerable challenges to xx despite offering certain benefits, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling disadvantage of xx is its potential to cause xx. In particular, xx can generate xx, ultimately giving rise to broader outcomes such as xx. For instance, evidence from xx shows that approximately 75% of xx experienced xx as a direct result of xx.
+
+However, it is equally important to acknowledge that xx may also bring about certain benefits. This is largely because xx is likely to facilitate xx, which may subsequently lead to xx. According to research by xx, over 58% of xx have benefited from xx resulting from xx.
+
+Taken together, these considerations demonstrate the overall significance of xx, as the concerns associated with it remain more pronounced than the advantages it offers. Thus, it is essential for xx to allocate sufficient resources to address these concerns effectively.
+```
+
+
 ---
 
 ## Template B1: Positive → Negative (Mostly Agree)
@@ -51,13 +73,7 @@ Thus, it is essential for [relevant subjects] to dedicate adequate [time/resourc
 ```
 
 
-in recent years, the topic of xx has emerged as a significant subject of public and academic discussion. I contend that xx, and the following analysis presents the primary arguments supporting this viewpoint.
 
-To begin with, one key advantage of xxx is its potential to facilitate xx. In particular, xx can foster xx, ultimately leading to broader outcomes such as xx. For instance, evidence from xx reveals that approximately 75% of xx experienced xx as a direct result of xx.
-
-However, it is equally important to acknowledge that xx may also give rise to certain challenges. This is largely because xx are likely to generate xx, which may subsequently cause xx. According to research by xx, over 58% of xx have been affected by xx resulting from xx.
-
-Taken together, these considerations demonstrate that xx, as the influence of xx and xx is substantial and meaningful. Thus, it is essential for xx to dedicate adequate efforts to managing this issue effectively.
 
 ---
 

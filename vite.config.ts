@@ -76,6 +76,12 @@ export default defineConfig({
         ]
       }
     }),
+    {
+      name: 'ai-chat-middleware',
+      configureServer(server) {
+        server.middlewares.use(aiChatMiddleware);
+      }
+    }
   ],
 
   // Root directory (where index.html is)
@@ -147,6 +153,11 @@ export default defineConfig({
     hmr: {
       overlay: true, // Show error overlay
     },
+    // Proxy API requests to avoid CORS and 404s
+    proxy: {
+      // If we had a separate backend, we'd proxy here.
+      // Instead, we're handling /api/ai/chat directly in configureServer below.
+    }
   },
 
   // Preview server (for production builds)
@@ -217,3 +228,70 @@ export default defineConfig({
     __APP_VERSION__: JSON.stringify(process.env.npm_package_version),
   },
 });
+
+// Helper to handle AI Chat requests in Vite Dev Server
+function aiChatMiddleware(req, res, next) {
+  if (req.url !== '/api/ai/chat' || req.method !== 'POST') {
+    return next();
+  }
+
+  let body = '';
+  req.on('data', chunk => { body += chunk.toString(); });
+  req.on('end', async () => {
+    try {
+      const { message, context, conversationHistory } = JSON.parse(body);
+
+      // Dynamic import to avoid build issues if package is missing
+      const { GoogleGenAI } = await import('@google/genai');
+
+      // Get API key from process.env (Vite loads .env files)
+      const apiKey = process.env.GEMINI_API || process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY;
+
+      if (!apiKey) {
+        res.statusCode = 500;
+        res.setHeader('Content-Type', 'application/json');
+        res.end(JSON.stringify({ success: false, error: 'AI Tutor is not configured. Missing API Key.' }));
+        return;
+      }
+
+      const ai = new GoogleGenAI({ apiKey });
+
+      // System prompt (simplified from dev-proxy.js)
+      const SYSTEM_PROMPT = `You are an expert PTE pronunciation tutor.
+Your role is to help students with pronunciation, IPA, and vocabulary.
+Be encouraging, clear, and concise. Use bold for key terms.`;
+
+      let fullPrompt = SYSTEM_PROMPT;
+
+      if (context) {
+        fullPrompt += `\n\nContext: Word "${context.word}"`;
+        if (context.difficulty) fullPrompt += `, Difficulty: ${context.difficulty}`;
+      }
+
+      if (conversationHistory?.length) {
+        fullPrompt += '\n\nHistory:\n' + conversationHistory.slice(-5).map(m =>
+          `${m.role === 'user' ? 'Student' : 'Tutor'}: ${m.content}`
+        ).join('\n');
+      }
+
+      fullPrompt += `\n\nStudent: ${message}\n\nTutor:`;
+
+      const response = await ai.models.generateContent({
+        model: 'gemini-2.5-flash',
+        contents: fullPrompt,
+      });
+
+      const answer = response.text || "I couldn't generate a response.";
+
+      res.statusCode = 200;
+      res.setHeader('Content-Type', 'application/json');
+      res.end(JSON.stringify({ success: true, data: { answer } }));
+
+    } catch (error: any) {
+      console.error('AI Middleware Error:', error);
+      res.statusCode = 500;
+      res.setHeader('Content-Type', 'application/json');
+      res.end(JSON.stringify({ success: false, error: error.message }));
+    }
+  });
+}

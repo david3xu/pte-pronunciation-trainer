@@ -8,21 +8,26 @@ import {
 import { Button, Flex, Spinner, Theme } from '@radix-ui/themes';
 import React, { lazy, Suspense, useEffect, useState } from 'react';
 import { appConfig } from '../config/AppConfig';
-import { useMigration, useOnboarding, useSwipeGesture } from '../hooks';
+import { useMigration } from '../hooks/useMigration';
+import { useOnboarding } from '../hooks/useOnboarding';
+import { useSwipeGesture } from '../hooks/useSwipeGesture';
 import { logIntervention, monitorSession, type Intervention } from '../services/ai/interventionEngine';
 import { getSessionManager } from '../services/session/sessionManager';
 import { useAppStore, type AppState } from '../stores';
 import type { TaskType } from '../types/database';
-import { AISidebar, AITutorChat, InterventionModal, PronunciationScoring, WeakAreasDashboard } from './ai';
-import { AudioControls } from './audio';
+import AISidebar from './ai/AISidebar';
+import AITutorChat from './ai/AITutorChat';
+import InterventionModal from './ai/InterventionModal';
+import PronunciationScoring from './ai/PronunciationScoring';
+import WeakAreasDashboard from './ai/WeakAreasDashboard';
+import AudioControls from './audio/AudioControls';
 import DataMigrationModal from './migration/DataMigrationModal';
-import {
-  ProgressDashboard,
-  WordCard,
-} from './practice';
+import ProgressDashboard from './practice/ProgressDashboard';
+import WordCard from './practice/WordCard';
 import LearnerProfileModal from './profile/LearnerProfileModal';
-import { SettingsPanel } from './settings';
-import { ComponentSkeleton, WordCardSkeleton } from './shared';
+import SettingsPanel from './settings/SettingsPanel';
+import { ComponentSkeleton } from './shared/ComponentSkeleton';
+import { WordCardSkeleton } from './shared/Skeleton';
 
 // Lazy load heavy practice interfaces for code splitting
 const RSInterface = lazy(() => import('./practice/RSInterface'));

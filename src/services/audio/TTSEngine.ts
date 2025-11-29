@@ -714,6 +714,10 @@ export class TTSEngine {
   /**
    * Select best voice match from available voices
    */
+  /**
+   * Select best voice match from available voices
+   * STRICTLY prioritizes Male AU/UK voices as per user request
+   */
   private selectVoice(voices: SpeechSynthesisVoice[], lang: string | null): SpeechSynthesisVoice | null {
     // Check if user has selected a preferred voice in settings
     const preferredName = useAppStore.getState().settings.ttsVoice;
@@ -728,7 +732,31 @@ export class TTSEngine {
       if (partialMatch) return partialMatch;
     }
 
-    // Fallback: Try to match language
+    // STRICT FILTER: Prioritize Male Australian or UK voices
+
+    // 1. Australian Male
+    const auMale = voices.find(v =>
+      (v.lang === 'en-AU' || v.lang === 'en_AU') &&
+      (v.name.toLowerCase().includes('male') || v.name.includes('Russell'))
+    );
+    if (auMale) return auMale;
+
+    // 2. UK Male
+    const ukMale = voices.find(v =>
+      (v.lang === 'en-GB' || v.lang === 'en_GB') &&
+      (v.name.toLowerCase().includes('male') || v.name.includes('Brian') || v.name.includes('Arthur'))
+    );
+    if (ukMale) return ukMale;
+
+    // 3. Any Australian Voice
+    const auAny = voices.find(v => v.lang === 'en-AU' || v.lang === 'en_AU');
+    if (auAny) return auAny;
+
+    // 4. Any UK Voice
+    const ukAny = voices.find(v => v.lang === 'en-GB' || v.lang === 'en_GB');
+    if (ukAny) return ukAny;
+
+    // Fallback: Try to match requested language
     if (lang) {
       const langMatch = voices.find(v => v.lang === lang || v.lang.startsWith(lang));
       if (langMatch) return langMatch;

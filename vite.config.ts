@@ -235,14 +235,16 @@ export default defineConfig(({ mode }) => {
   };
 });
 
+import { IncomingMessage, ServerResponse } from 'http';
+
 // Helper to handle AI Chat requests in Vite Dev Server
-function aiChatMiddleware(req, res, next, env: Record<string, string>) {
+function aiChatMiddleware(req: IncomingMessage, res: ServerResponse, next: (err?: any) => void, env: Record<string, string>) {
   if (req.url !== '/api/ai/chat' || req.method !== 'POST') {
     return next();
   }
 
   let body = '';
-  req.on('data', chunk => { body += chunk.toString(); });
+  req.on('data', (chunk: Buffer) => { body += chunk.toString(); });
   req.on('end', async () => {
     try {
       const { message, context, conversationHistory } = JSON.parse(body);
@@ -275,7 +277,7 @@ Be encouraging, clear, and concise. Use bold for key terms.`;
       }
 
       if (conversationHistory?.length) {
-        fullPrompt += '\n\nHistory:\n' + conversationHistory.slice(-5).map(m =>
+        fullPrompt += '\n\nHistory:\n' + conversationHistory.slice(-5).map((m: { role: string; content: string }) =>
           `${m.role === 'user' ? 'Student' : 'Tutor'}: ${m.content}`
         ).join('\n');
       }
@@ -294,8 +296,10 @@ Be encouraging, clear, and concise. Use bold for key terms.`;
       res.setHeader('Connection', 'keep-alive');
 
       try {
+        // @ts-ignore - The SDK types might be mismatching with the dynamic import
         for await (const chunk of result) {
-          const chunkText = chunk.text();
+          // @ts-ignore - Handling potential property vs method mismatch
+          const chunkText = typeof chunk.text === 'function' ? chunk.text() : chunk.text;
           if (chunkText) {
             // Send chunk as SSE data
             res.write(`data: ${JSON.stringify({ text: chunkText })}\n\n`);

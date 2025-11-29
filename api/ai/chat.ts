@@ -547,7 +547,7 @@ async function saveConversationToDb(
 
 export default async function handler(
   req: VercelRequest,
-  res: VercelResponse<ChatResponse>
+  res: VercelResponse
 ): Promise<void> {
   // Handle CORS
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -683,8 +683,8 @@ export default async function handler(
     let fullResponse = '';
 
     try {
-      for await (const chunk of result.stream) {
-        const chunkText = chunk.text();
+      for await (const chunk of result) {
+        const chunkText = chunk.text;
         if (chunkText) {
           fullResponse += chunkText;
           // Send chunk as SSE data

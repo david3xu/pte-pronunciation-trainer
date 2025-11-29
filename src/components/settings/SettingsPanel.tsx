@@ -6,8 +6,8 @@
  */
 
 import {
-    Cross2Icon,
-    GearIcon
+  Cross2Icon,
+  GearIcon
 } from '@radix-ui/react-icons';
 import { Badge, Button, Card, Flex, Select, Slider, Switch, Tabs, Text } from '@radix-ui/themes';
 import React, { useMemo } from 'react';
@@ -477,7 +477,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
               {/* App Version */}
               <Flex direction="column" gap="1">
                 <Text size="2" color="gray">App Version</Text>
-                <Text size="3" weight="medium">v3.0.0</Text>
+                <Text size="3" weight="medium">v{appConfig.get('app.version')}</Text>
               </Flex>
 
               {/* Cache Info */}

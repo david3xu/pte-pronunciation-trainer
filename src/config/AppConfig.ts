@@ -175,15 +175,16 @@ export class AppConfig {
       // ===== TTS CONFIGURATION =====
       tts: {
         defaultVoice: {
-          lang: 'en-US',
-          name: 'Google US English',
-          gender: 'female',
+          lang: 'en-GB',
+          name: 'Brian',
+          gender: 'male',
           localService: false
         },
         fallbackVoices: [
-          { lang: 'en-GB', name: 'Google UK English Female' },
-          { lang: 'en-US', name: 'Microsoft Zira' },
-          { lang: 'en-AU', name: 'Google Australian English' }
+          { lang: 'en-GB', name: 'Google UK English Male' },
+          { lang: 'en-AU', name: 'Google Australian English' }, // Often male or neutral
+          { lang: 'en-GB', name: 'Arthur' },
+          { lang: 'en-AU', name: 'Russell' }
         ],
         rate: 0.9,
         pitch: 1.0,
@@ -194,9 +195,9 @@ export class AppConfig {
       // ===== VOICE & LANGUAGE SETTINGS =====
       voice: {
         // Default voice settings for AWS Polly
-        defaultVoiceId: 'Joanna',
+        defaultVoiceId: 'Brian',
         defaultEngine: 'neural',
-        defaultLanguage: 'en-US',
+        defaultLanguage: 'en-GB',
 
         // AWS settings
         awsRegion: typeof process !== 'undefined' && process.env?.['AWS_REGION']

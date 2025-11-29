@@ -10,13 +10,13 @@
  */
 
 import {
-  PollyClient,
-  SynthesizeSpeechCommand,
-  SynthesizeSpeechCommandInput,
-  Engine,
-  OutputFormat,
-  VoiceId,
-  LanguageCode
+    Engine,
+    LanguageCode,
+    OutputFormat,
+    PollyClient,
+    SynthesizeSpeechCommand,
+    SynthesizeSpeechCommandInput,
+    VoiceId
 } from '@aws-sdk/client-polly';
 
 // ============================================
@@ -55,100 +55,6 @@ export interface SynthesisResult {
 // ============================================
 
 export const PREMIUM_VOICES: Record<string, PollyVoice> = {
-  // US English - Female
-  'Joanna': {
-    id: 'Joanna' as VoiceId,
-    name: 'Joanna',
-    language: 'English (US)',
-    gender: 'Female',
-    accent: 'US',
-    isPremium: true
-  },
-  'Kendra': {
-    id: 'Kendra' as VoiceId,
-    name: 'Kendra',
-    language: 'English (US)',
-    gender: 'Female',
-    accent: 'US',
-    isPremium: true
-  },
-  'Ivy': {
-    id: 'Ivy' as VoiceId,
-    name: 'Ivy',
-    language: 'English (US)',
-    gender: 'Female',
-    accent: 'US',
-    isPremium: true
-  },
-  'Kimberly': {
-    id: 'Kimberly' as VoiceId,
-    name: 'Kimberly',
-    language: 'English (US)',
-    gender: 'Female',
-    accent: 'US',
-    isPremium: true
-  },
-  'Salli': {
-    id: 'Salli' as VoiceId,
-    name: 'Salli',
-    language: 'English (US)',
-    gender: 'Female',
-    accent: 'US',
-    isPremium: true
-  },
-
-  // US English - Male
-  'Matthew': {
-    id: 'Matthew' as VoiceId,
-    name: 'Matthew',
-    language: 'English (US)',
-    gender: 'Male',
-    accent: 'US',
-    isPremium: true
-  },
-  'Joey': {
-    id: 'Joey' as VoiceId,
-    name: 'Joey',
-    language: 'English (US)',
-    gender: 'Male',
-    accent: 'US',
-    isPremium: true
-  },
-  'Justin': {
-    id: 'Justin' as VoiceId,
-    name: 'Justin',
-    language: 'English (US)',
-    gender: 'Male',
-    accent: 'US',
-    isPremium: true
-  },
-  'Kevin': {
-    id: 'Kevin' as VoiceId,
-    name: 'Kevin',
-    language: 'English (US)',
-    gender: 'Male',
-    accent: 'US',
-    isPremium: true
-  },
-
-  // British English - Female
-  'Amy': {
-    id: 'Amy' as VoiceId,
-    name: 'Amy',
-    language: 'English (UK)',
-    gender: 'Female',
-    accent: 'UK',
-    isPremium: true
-  },
-  'Emma': {
-    id: 'Emma' as VoiceId,
-    name: 'Emma',
-    language: 'English (UK)',
-    gender: 'Female',
-    accent: 'UK',
-    isPremium: true
-  },
-
   // British English - Male
   'Brian': {
     id: 'Brian' as VoiceId,
@@ -167,39 +73,13 @@ export const PREMIUM_VOICES: Record<string, PollyVoice> = {
     isPremium: true
   },
 
-  // Australian English
-  'Nicole': {
-    id: 'Nicole' as VoiceId,
-    name: 'Nicole',
-    language: 'English (AU)',
-    gender: 'Female',
-    accent: 'AU',
-    isPremium: true
-  },
+  // Australian English - Male
   'Russell': {
     id: 'Russell' as VoiceId,
     name: 'Russell',
     language: 'English (AU)',
     gender: 'Male',
     accent: 'AU',
-    isPremium: true
-  },
-
-  // Indian English
-  'Aditi': {
-    id: 'Aditi' as VoiceId,
-    name: 'Aditi',
-    language: 'English (IN)',
-    gender: 'Female',
-    accent: 'IN',
-    isPremium: true
-  },
-  'Raveena': {
-    id: 'Raveena' as VoiceId,
-    name: 'Raveena',
-    language: 'English (IN)',
-    gender: 'Female',
-    accent: 'IN',
     isPremium: true
   }
 };

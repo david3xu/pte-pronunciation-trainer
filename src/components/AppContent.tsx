@@ -480,7 +480,7 @@ export const AppContent: React.FC = () => {
 
           {/* Footer - Minimal */}
           <footer className="mt-8 text-center text-slate-500 text-xs">
-            <p>v3.0.0 • Press Space to play • ← → to navigate</p>
+            <p>v{appConfig.get('app.version')} • Press Space to play • ← → to navigate</p>
           </footer>
 
 

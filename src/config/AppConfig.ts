@@ -181,7 +181,9 @@ export class AppConfig {
           localService: false
         },
         fallbackVoices: [
-          { lang: 'en-AU', name: 'Google Australian English' }, // Often male or neutral
+          { lang: 'en-AU', name: 'Gordon' }, // iOS/macOS AU Male
+          { lang: 'en-GB', name: 'Daniel' }, // iOS/macOS UK Male
+          { lang: 'en-AU', name: 'Google Australian English' },
           { lang: 'en-GB', name: 'Google UK English Male' },
           { lang: 'en-AU', name: 'Russell' },
           { lang: 'en-GB', name: 'Brian' }

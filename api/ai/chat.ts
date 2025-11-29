@@ -41,9 +41,9 @@
  * - SUPABASE_SERVICE_ROLE_KEY (for Phase 2 context)
  */
 
-import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { GoogleGenAI } from '@google/genai';
 import { createClient } from '@supabase/supabase-js';
+import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { getGeminiApiKey } from '../config';
 
 // ============================================
@@ -669,28 +669,45 @@ export default async function handler(
       fullPrompt += `\nStudent: ${message}\n\nTutor:`;
     }
 
-    // Call Gemini API with official SDK
-    const response = await ai.models.generateContent({
+    // Call Gemini API with official SDK - Streaming Mode
+    const result = await ai.models.generateContentStream({
       model: 'gemini-2.5-flash',
       contents: fullPrompt,
     });
-    const answer = response.text ||
-      'I apologize, but I couldn\'t generate a response. Please try again.';
 
-    // Save conversation if userId provided
-    if (userId) {
-      saveConversationToDb(userId, message, answer, taskType, sessionId, context).catch(err =>
+    // Set headers for Server-Sent Events
+    res.setHeader('Content-Type', 'text/event-stream');
+    res.setHeader('Cache-Control', 'no-cache');
+    res.setHeader('Connection', 'keep-alive');
+
+    let fullResponse = '';
+
+    try {
+      for await (const chunk of result.stream) {
+        const chunkText = chunk.text();
+        if (chunkText) {
+          fullResponse += chunkText;
+          // Send chunk as SSE data
+          res.write(`data: ${JSON.stringify({ text: chunkText })}\n\n`);
+        }
+      }
+
+      // Signal end of stream
+      res.write('data: [DONE]\n\n');
+    } catch (streamError) {
+      console.error('Error during streaming:', streamError);
+      res.write(`data: ${JSON.stringify({ error: 'Stream interrupted' })}\n\n`);
+    } finally {
+      res.end();
+    }
+
+    // Save conversation if userId provided (after stream completes)
+    if (userId && fullResponse) {
+      // Run in background
+      saveConversationToDb(userId, message, fullResponse, taskType, sessionId, context).catch(err =>
         console.error('Background save failed:', err)
       );
     }
-
-    // Return response
-    res.status(200).json({
-      success: true,
-      data: {
-        answer: answer.trim()
-      }
-    });
 
   } catch (error) {
     console.error('AI Tutor error:', error);
@@ -716,9 +733,16 @@ export default async function handler(
       }
     }
 
-    res.status(500).json({
-      success: false,
-      error: error instanceof Error ? error.message : 'Unknown error occurred'
-    });
+    // If headers haven't been sent yet, send JSON error
+    if (!res.headersSent) {
+      res.status(500).json({
+        success: false,
+        error: error instanceof Error ? error.message : 'Unknown error occurred'
+      });
+    } else {
+      // If streaming started, send error event
+      res.write(`data: ${JSON.stringify({ error: 'Internal server error' })}\n\n`);
+      res.end();
+    }
   }
 }

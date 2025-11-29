@@ -14,26 +14,24 @@ import { Badge, Button, Card, Flex, IconButton, ScrollArea, Spinner, Text, TextF
 import React, { useEffect, useRef, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { askAITutor } from '../../services/ai';
+import { askAITutorStream } from '../../services/ai';
 import { rateAIResponse } from '../../services/ai/ratingService';
 import { useAppStore } from '../../stores';
-
 
 interface Message {
   role: 'user' | 'assistant';
   content: string;
   timestamp: Date;
-  rating?: 'helpful' | 'not_helpful'; // Phase 2: Response rating
-  id: string; // Phase 2: Unique message ID
+  rating?: 'helpful' | 'not_helpful';
+  id: string;
 }
 
 interface AITutorChatProps {
   isOpen: boolean;
   onClose: () => void;
-  // Phase 2: Optional enhanced context
   taskType?: 'rs' | 'asq' | 'wfd' | 'ra' | 'di' | 'rl' | 'fib_r' | 'fib_l' | 'vocabulary';
   sessionId?: string;
-  useEnhancedContext?: boolean; // Default: true if taskType provided
+  useEnhancedContext?: boolean;
 }
 
 const AITutorChat: React.FC<AITutorChatProps> = ({
@@ -41,7 +39,7 @@ const AITutorChat: React.FC<AITutorChatProps> = ({
   onClose,
   taskType,
   sessionId,
-  useEnhancedContext = !!taskType // Auto-enable if taskType provided
+  useEnhancedContext = !!taskType
 }) => {
   const { auth, vocabulary } = useAppStore();
   const [messages, setMessages] = useState<Message[]>([
@@ -85,16 +83,10 @@ const AITutorChat: React.FC<AITutorChatProps> = ({
 
         if (!result.success) {
           console.warn(`[AITutorChat] Rating save failed: ${result.error}`);
-          // Don't show error to user - rating still works locally
-        } else {
-          console.log(`[AITutorChat] Rating saved to database: ${rating}`);
         }
       } catch (error) {
         console.error('[AITutorChat] Rating error:', error);
-        // Don't throw - local rating still works
       }
-    } else {
-      console.log(`[AITutorChat] Message ${messageId} rated locally as: ${rating}`);
     }
   };
 
@@ -109,9 +101,20 @@ const AITutorChat: React.FC<AITutorChatProps> = ({
       timestamp: new Date(),
     };
 
+    // Add user message immediately
     setMessages((prev) => [...prev, userMessage]);
     setInput('');
     setIsLoading(true);
+
+    // Create placeholder for assistant message
+    const assistantMessageId = crypto.randomUUID();
+    const assistantMessage: Message = {
+      id: assistantMessageId,
+      role: 'assistant',
+      content: '', // Start empty
+      timestamp: new Date(),
+    };
+    setMessages((prev) => [...prev, assistantMessage]);
 
     try {
       // Get current word context
@@ -138,44 +141,55 @@ const AITutorChat: React.FC<AITutorChatProps> = ({
         content: msg.content,
       }));
 
-      // Call AI Tutor API with Phase 2 enhancement
-      const result = await askAITutor(input.trim(), {
-        // Phase 1 (legacy) parameters
-        context: legacyContext,
-        conversationHistory,
-        // Phase 2 (enhanced) parameters
-        userId: auth.user?.id,
-        taskType: taskType,
-        sessionId: sessionId,
-        currentItem: enhancedCurrentItem,
-        useEnhancedContext: useEnhancedContext,
-      });
+      // Call AI Tutor API with Streaming
+      let accumulatedAnswer = '';
 
-      if (result.success && result.data) {
-        const assistantMessage: Message = {
-          id: crypto.randomUUID(),
-          role: 'assistant',
-          content: result.data.answer,
-          timestamp: new Date(),
-        };
-        setMessages((prev) => [...prev, assistantMessage]);
-      } else {
-        const errorMessage: Message = {
-          id: crypto.randomUUID(),
-          role: 'assistant',
-          content: result.error || '⚠️ AI service error. Please check:\n\n1. Your Google Gemini API key is configured in Settings\n2. You haven\'t exceeded the free daily limit (1,500 requests)\n3. Your internet connection is stable\n\nTry again in a moment.',
-          timestamp: new Date(),
-        };
-        setMessages((prev) => [...prev, errorMessage]);
+      const result = await askAITutorStream(
+        userMessage.content,
+        (token) => {
+          accumulatedAnswer += token;
+          setMessages((prev) =>
+            prev.map((msg) =>
+              msg.id === assistantMessageId
+                ? { ...msg, content: accumulatedAnswer }
+                : msg
+            )
+          );
+        },
+        {
+          // Phase 1 (legacy) parameters
+          context: legacyContext,
+          conversationHistory,
+          // Phase 2 (enhanced) parameters
+          userId: auth.user?.id,
+          taskType: taskType,
+          sessionId: sessionId,
+          currentItem: enhancedCurrentItem,
+          useEnhancedContext: useEnhancedContext,
+        }
+      );
+
+      if (!result.success) {
+        // If request failed completely (e.g. network error before stream)
+        const errorMessage = result.error || '⚠️ AI service error. Please check your connection.';
+
+        setMessages((prev) =>
+          prev.map((msg) =>
+            msg.id === assistantMessageId
+              ? { ...msg, content: errorMessage }
+              : msg
+          )
+        );
       }
     } catch (error) {
-      const errorMessage: Message = {
-        id: crypto.randomUUID(),
-        role: 'assistant',
-        content: '❌ Connection failed. **Action needed:**\n\n• Open Settings (gear icon) and add your Google Gemini API key\n• Get a free key at: https://aistudio.google.com/apikey\n• Check your internet connection\n\nGemini is 100% FREE (1,500 requests/day)',
-        timestamp: new Date(),
-      };
-      setMessages((prev) => [...prev, errorMessage]);
+      const errorMessage = '❌ Connection failed. Please check your internet connection.';
+      setMessages((prev) =>
+        prev.map((msg) =>
+          msg.id === assistantMessageId
+            ? { ...msg, content: errorMessage }
+            : msg
+        )
+      );
     } finally {
       setIsLoading(false);
     }

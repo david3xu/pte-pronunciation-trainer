@@ -148,35 +148,7 @@ export async function saveLearnerProfile(
   }
 }
 
-/**
- * Update weak areas based on performance data
- */
-export async function updateWeakAreas(
-  userId: string,
-  weakAreas: Record<string, any>
-): Promise<{ success: boolean; error?: string }> {
-  try {
-    if (!navigator.onLine) {
-      console.log('[LearnerProfile] Offline, weak areas update queued');
-      return { success: true };
-    }
 
-    const { error } = await supabase
-      .from('learner_profiles')
-      .update({ weak_areas: weakAreas, updated_at: new Date().toISOString() })
-      .eq('user_id', userId);
-
-    if (error) {
-      console.error('[LearnerProfile] Error updating weak areas:', error);
-      return { success: false, error: error.message };
-    }
-
-    return { success: true };
-  } catch (error: any) {
-    console.error('[LearnerProfile] Error updating weak areas:', error);
-    return { success: false, error: error.message || 'Unknown error' };
-  }
-}
 
 // ============================================================================
 // Cache Management
@@ -216,45 +188,4 @@ function queueForSync(profile: Partial<LearnerProfile>): void {
   }
 }
 
-/**
- * Sync queued profiles to database
- */
-export async function syncQueuedProfiles(): Promise<number> {
-  if (!navigator.onLine) {
-    return 0;
-  }
 
-  try {
-    const queue = JSON.parse(localStorage.getItem('profile_sync_queue') || '[]');
-    if (queue.length === 0) {
-      return 0;
-    }
-
-    let syncedCount = 0;
-    const remaining = [];
-
-    for (const { profile } of queue) {
-      try {
-        const { error } = await supabase
-          .from('learner_profiles')
-          .upsert(profile, { onConflict: 'user_id' });
-
-        if (!error) {
-          syncedCount++;
-        } else {
-          remaining.push({ profile, queued_at: new Date().toISOString() });
-        }
-      } catch (error) {
-        console.error('[LearnerProfile] Error syncing queued profile:', error);
-        remaining.push({ profile, queued_at: new Date().toISOString() });
-      }
-    }
-
-    localStorage.setItem('profile_sync_queue', JSON.stringify(remaining));
-    console.log(`[LearnerProfile] Synced ${syncedCount} profiles`);
-    return syncedCount;
-  } catch (error) {
-    console.error('[LearnerProfile] Error syncing profiles:', error);
-    return 0;
-  }
-}

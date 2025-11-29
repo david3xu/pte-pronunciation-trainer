@@ -17,7 +17,7 @@ import { Badge, Button, Card, Flex, Text } from '@radix-ui/themes';
 import React, { useEffect, useRef, useState } from 'react';
 import { appConfig } from '../../config/AppConfig';
 import { getPronunciationScore } from '../../services/ai';
-import { useAppStore } from '../../stores';
+import { useVocabulary } from '../../stores';
 
 interface PronunciationScoringProps {
   isOpen?: boolean;
@@ -34,7 +34,7 @@ interface ScoringResult {
 }
 
 const PronunciationScoring: React.FC<PronunciationScoringProps> = ({ isOpen = true, onClose }) => {
-  const { vocabulary } = useAppStore();
+  const vocabulary = useVocabulary();
   const currentItem = vocabulary.currentItem;
 
   const [isRecording, setIsRecording] = useState(false);

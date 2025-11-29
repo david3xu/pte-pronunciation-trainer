@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { hasDataToMigrate } from '../services/migration/migrationService';
-import { useAppStore } from '../stores';
+import { useAuth } from '../stores';
 
 export function useMigration() {
   const [showMigration, setShowMigration] = useState(false);
-  const auth = useAppStore((state) => state.auth);
+  const auth = useAuth();
 
   useEffect(() => {
     const checkMigration = () => {

@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { getLearnerProfile, hasCompletedOnboarding } from '../services/profile/learnerProfileService';
-import { useAppStore } from '../stores';
+import { useAuth } from '../stores';
 
 export function useOnboarding() {
   const [showProfileOnboarding, setShowProfileOnboarding] = useState(false);
-  const auth = useAppStore((state) => state.auth);
+  const auth = useAuth();
 
   useEffect(() => {
     const checkOnboarding = async () => {

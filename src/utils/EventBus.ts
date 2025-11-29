@@ -141,14 +141,7 @@ export const eventBus = new EventBus();
 // Default export
 export default eventBus;
 
-/**
- * Type guard to check if a string is a valid event name
- */
-export function isEventName(value: string): value is EventName {
-  // This will be validated at runtime against known event names
-  // For now, we trust TypeScript's compile-time checking
-  return typeof value === 'string';
-}
+
 
 /**
  * Global type declarations for window object

@@ -13,7 +13,7 @@ import { useOnboarding } from '../hooks/useOnboarding';
 import { useSwipeGesture } from '../hooks/useSwipeGesture';
 import { logIntervention, monitorSession, type Intervention } from '../services/ai/interventionEngine';
 import { getSessionManager } from '../services/session/sessionManager';
-import { useAppStore, type AppState } from '../stores';
+import { useAudioState, useAuth, useProgress, useSettings, useVocabulary } from '../stores';
 import type { TaskType } from '../types/database';
 import AISidebar from './ai/AISidebar';
 import AITutorChat from './ai/AITutorChat';
@@ -22,8 +22,10 @@ import PronunciationScoring from './ai/PronunciationScoring';
 import WeakAreasDashboard from './ai/WeakAreasDashboard';
 import AudioControls from './audio/AudioControls';
 import DataMigrationModal from './migration/DataMigrationModal';
-import ProgressDashboard from './practice/ProgressDashboard';
-import WordCard from './practice/WordCard';
+import {
+  ProgressDashboard,
+  WordCard,
+} from './practice';
 import LearnerProfileModal from './profile/LearnerProfileModal';
 import SettingsPanel from './settings/SettingsPanel';
 import { ComponentSkeleton } from './shared/ComponentSkeleton';
@@ -36,13 +38,12 @@ const WFDInterface = lazy(() => import('./practice/WFDInterface'));
 
 export const AppContent: React.FC = () => {
   // Access Zustand store using selector pattern for proper re-renders
-  const vocabulary = useAppStore((state: AppState) => state.vocabulary);
-  const currentItem = useAppStore((state: AppState) => state.vocabulary.currentItem);
-  const isLoadingVocabulary = useAppStore((state: AppState) => state.vocabulary.isLoading);
-  const auth = useAppStore((state: AppState) => state.auth);
-  const settings = useAppStore((state: AppState) => state.settings);
-  const audio = useAppStore((state: AppState) => state.audio);
-  const progress = useAppStore((state: AppState) => state.progress);
+  const vocabulary = useVocabulary();
+  const { currentItem, isLoading: isLoadingVocabulary } = vocabulary;
+  const auth = useAuth();
+  const settings = useSettings();
+  const audio = useAudioState();
+  const progress = useProgress();
 
   // Modal states
   const [showSettings, setShowSettings] = useState(false);

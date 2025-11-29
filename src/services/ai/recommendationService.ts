@@ -222,36 +222,4 @@ function getFallbackRecommendations(userProgress: UserProgress): Recommendation[
   return recommendations.slice(0, 5);
 }
 
-/**
- * Get quick recommendation summary for a specific item
- */
-export async function getItemFeedback(
-  word: string,
-  userAttempts: number,
-  userCorrect: number
-): Promise<string> {
-  const genAI = getGeminiClient();
 
-  if (!genAI) {
-    return `Practice "${word}" more to improve. Accuracy: ${Math.round(userCorrect / userAttempts * 100)}%`;
-  }
-
-  try {
-    const prompt = `You are a pronunciation tutor. A student practiced the word "${word}".
-
-Results: ${userCorrect} correct out of ${userAttempts} attempts (${Math.round(userCorrect / userAttempts * 100)}%)
-
-Provide ONE sentence of encouraging, specific feedback and a tip for improvement.
-Keep it under 30 words.`;
-
-    const response = await genAI.models.generateContent({
-      model: 'gemini-2.5-flash',
-      contents: prompt,
-    });
-
-    return (response.text || '').trim();
-  } catch (error) {
-    console.error('❌ Error getting item feedback:', error);
-    return `Good effort on "${word}"! ${userCorrect}/${userAttempts} correct. Keep practicing!`;
-  }
-}

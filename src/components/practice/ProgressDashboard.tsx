@@ -24,7 +24,7 @@ import {
 import { Badge, Button, Card, Flex, Separator, Tabs, Text } from '@radix-ui/themes';
 import React, { useEffect, useState } from 'react';
 import { supabase } from '../../services/supabase/supabaseClient';
-import { useAppStore } from '../../stores';
+import { useAuth, useProgress } from '../../stores';
 import type { TaskType } from '../../types/database';
 
 
@@ -52,7 +52,8 @@ interface WeakArea {
 }
 
 const ProgressDashboard: React.FC = () => {
-  const { progress, auth } = useAppStore();
+  const progress = useProgress();
+  const auth = useAuth();
   const [isLoading, setIsLoading] = useState(true);
   const [sessionHistory, setSessionHistory] = useState<SessionSummary[]>([]);
   const [categoryStats, setCategoryStats] = useState<CategoryStats[]>([]);

@@ -42,6 +42,39 @@ if (versionRegex.test(appConfigContent)) {
   process.exit(1);
 }
 
+// Update README.md
+const readmePath = path.join(__dirname, '../README.md');
+let readmeContent = fs.readFileSync(readmePath, 'utf8');
+// Replace "v3.0.0" or "3.0.0" with new version
+// Look for specific patterns to avoid replacing dependencies
+readmeContent = readmeContent.replace(/v\d+\.\d+\.\d+/g, `v${newVersion}`);
+readmeContent = readmeContent.replace(/Version\*\*: \d+\.\d+\.\d+/g, `Version**: ${newVersion}`);
+fs.writeFileSync(readmePath, readmeContent);
+console.log('Updated README.md');
+
+// Update CLAUDE.md
+const claudePath = path.join(__dirname, '../CLAUDE.md');
+let claudeContent = fs.readFileSync(claudePath, 'utf8');
+claudeContent = claudeContent.replace(/v\d+\.\d+\.\d+/g, `v${newVersion}`);
+claudeContent = claudeContent.replace(/Version\*\*: \d+\.\d+\.\d+/g, `Version**: ${newVersion}`);
+fs.writeFileSync(claudePath, claudeContent);
+console.log('Updated CLAUDE.md');
+
+// Update CHANGELOG.md
+const changelogPath = path.join(__dirname, '../CHANGELOG.md');
+let changelogContent = fs.readFileSync(changelogPath, 'utf8');
+const date = new Date().toISOString().split('T')[0];
+const newChangelogEntry = `## [${newVersion}] - ${date}
+
+### Automated
+- Version bump to ${newVersion}
+
+`;
+// Insert after [Unreleased]
+changelogContent = changelogContent.replace(/## \[Unreleased\]\s+/, `## [Unreleased]\n\n${newChangelogEntry}`);
+fs.writeFileSync(changelogPath, changelogContent);
+console.log('Updated CHANGELOG.md');
+
 // Output new version for GitHub Actions
 if (process.env.GITHUB_OUTPUT) {
   fs.appendFileSync(process.env.GITHUB_OUTPUT, `new_version=${newVersion}\n`);

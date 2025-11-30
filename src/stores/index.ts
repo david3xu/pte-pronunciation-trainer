@@ -563,6 +563,16 @@ export const useAppStore = create<AppState>()(
                 state.progress.completedItems as unknown as string[]
               );
             }
+
+            // Migrate old DI shadowing datasets to new combined dataset
+            if (state?.settings?.vocabularyBook) {
+              const oldBook = state.settings.vocabularyBook;
+              if (oldBook === 'di-shadowing-1-10' || oldBook === 'di-shadowing-11-20') {
+                console.log(`[Migration] Converting old DI shadowing ID "${oldBook}" to "di-shadowing"`);
+                state.settings.vocabularyBook = 'di-shadowing';
+                state.settings.datasetId = 'di-shadowing';
+              }
+            }
           },
         }
       ),

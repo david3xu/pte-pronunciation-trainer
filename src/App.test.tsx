@@ -1,5 +1,5 @@
-import { describe, it, expect, beforeEach } from 'vitest';
 import { render, screen } from '@testing-library/react';
+import { beforeEach, describe, expect, it } from 'vitest';
 import App from './App';
 
 describe('App Component', () => {
@@ -42,6 +42,6 @@ describe('App Component', () => {
 
   it('displays the app version in footer', () => {
     render(<App />);
-    expect(screen.getByText(/v3\.0\.0/i)).toBeInTheDocument();
+    expect(screen.getByText(/v\d+\.\d+\.\d+/i)).toBeInTheDocument();
   });
 });

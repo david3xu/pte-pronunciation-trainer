@@ -29,6 +29,119 @@ I contend that [keywords] [offers substantial benefits/present considerable chal
 
 ---
 
+## UNIVERSAL TEMPLATE (Adapt for Any Question Type)
+
+**Use this structure for ANY essay question by adapting the bracketed content.**
+
+### Paragraph 1 - Introduction
+
+```
+In recent years, the topic of [KEYWORDS] has emerged as a significant subject of [public and academic discussion / global concern / widespread debate].
+
+I contend that [KEYWORDS] [POSITION - choose one]:
+  • offers substantial benefits for [SUBJECT] despite certain limitations
+  • presents considerable challenges for [SUBJECT] despite certain advantages
+  • represents the most [important/pressing/significant] [issue/development/factor] for [SUBJECT]
+  • should be primarily addressed by [governments/corporations/individuals]
+
+, and the following analysis outlines the primary arguments supporting this viewpoint.
+```
+
+**Position Options by Question Type:**
+- **To what extent:** "offers substantial benefits despite limitations" (agree) OR "presents challenges despite advantages" (disagree)
+- **Problem-solution:** "represents the most pressing problem requiring immediate attention"
+- **Choice (who/what):** "should be primarily addressed by governments" OR "the internet represents the most important invention"
+- **Recommendations:** "presents challenges that can be addressed through specific policy reforms"
+
+### Paragraph 2 - First Main Point
+
+```
+To begin with, one compelling [ARGUMENT TYPE] of [KEYWORDS] is its potential to [ACTION] [OUTCOME].
+
+[ARGUMENT TYPE - choose based on question]:
+  • advantage (for positive/agree)
+  • disadvantage (for negative/disagree)
+  • concern / severity (for problem essays)
+  • strength / merit (for choice/justification essays)
+
+In particular, [KEYWORDS] can [VERB] [OUTCOME], ultimately [leading to / giving rise to / resulting in] broader outcomes such as [IMPACT].
+
+[VERB OPTIONS]:
+  • POSITIVE: bring about, foster, facilitate, lead to, promote
+  • NEGATIVE: cause, generate, give rise to, result in, trigger
+  • NEUTRAL: create, produce, enable, influence
+
+For instance, [evidence from / according to / data from] [SOURCE: government report / academic research / recent study / WHO statistics] [shows / reveals / indicates] that approximately [75% / majority / significant portion] of [RELEVANT SUBJECTS] experienced [OUTCOME] as a direct result of [KEYWORDS].
+```
+
+**Adapt by Question Type:**
+- **Advantages/disadvantages:** Use "advantage" + POSITIVE verbs OR "disadvantage" + NEGATIVE verbs
+- **Problem essay:** Use "concern" + explain severity with NEGATIVE verbs
+- **Solution essay:** Use "viable solution" + explain impact with POSITIVE verbs
+- **Choice essay:** Use "strength" + explain why your choice is best with POSITIVE verbs
+- **Who essay:** Use "capability" + explain why this party is most effective
+
+### Paragraph 3 - Second Main Point / Counter-Argument
+
+```
+However, it is equally important to acknowledge that [KEYWORDS] may also [ACTION] certain [OUTCOMES].
+
+[ACTION - choose based on Para 2]:
+  • If Para 2 was positive → use "give rise to certain challenges"
+  • If Para 2 was negative → use "bring about certain benefits"
+  • If Para 2 was problem → use "be addressed through viable solutions"
+  • If Para 2 was your choice → use "while alternatives exist, their impact is more limited"
+
+This is largely because [KEYWORDS] [are likely to / can / should] [VERB] [OUTCOME], which may subsequently [RESULT].
+
+[CONTENT BY QUESTION TYPE]:
+  • Advantages/disadvantages: Present opposite side with evidence
+  • Problem-solution: List 2-3 specific solutions here
+  • Choice: Acknowledge alternatives but explain why less significant
+  • Who: Mention other parties' roles but emphasize they're secondary
+  • Recommendations: List 2-3 actionable recommendations
+
+According to [research by / data from / evidence from] [SOURCE 2], over [58% / substantial number] of [RELEVANT SUBJECTS] have [been affected by / benefited from / experienced] [OUTCOME] resulting from [KEYWORDS].
+
+[FOR SOLUTIONS/RECOMMENDATIONS - replace evidence with]:
+First, [PARTY] should [ACTION 1], which would [bring about / foster / lead to] [BENEFIT].
+Second, [PARTY] could [ACTION 2], ultimately [resulting in / generating] [IMPROVEMENT].
+```
+
+### Paragraph 4 - Conclusion
+
+```
+Taken together, these considerations demonstrate [CONCLUSION - choose one]:
+  • the overall importance of [KEYWORDS], since its advantages remain significant despite the issues
+  • the overall significance of [KEYWORDS], as the concerns remain more pronounced than the merits
+  • that [KEYWORDS] represents the most [pressing/important] [issue/factor] requiring immediate action
+  • that [PARTY] should bear primary responsibility for addressing [KEYWORDS]
+
+Thus, it is essential for [RELEVANT SUBJECTS: governments/corporations/individuals/society/educators] to [allocate sufficient resources / dedicate adequate efforts / implement effective policies / adopt comprehensive strategies] to [address these challenges / maintain these benefits / implement these solutions / maximize positive outcomes] effectively.
+```
+
+**Conclusion Formula:**
+1. Restate your position (don't repeat word-for-word, rephrase)
+2. Emphasize the key point from Para 2
+3. Call to action: "Thus, it is essential for [WHO] to [DO WHAT]..."
+
+---
+
+## Quick Reference: Adapt Template by Question Type
+
+| Question Type | Para 1 Position | Para 2 Focus | Para 3 Focus | Verbs to Use |
+|---------------|----------------|--------------|--------------|--------------|
+| **To what extent (agree)** | "offers benefits despite limitations" | Advantages | Disadvantages (acknowledge but minimize) | POSITIVE → NEGATIVE |
+| **To what extent (disagree)** | "presents challenges despite advantages" | Disadvantages | Advantages (acknowledge but minimize) | NEGATIVE → POSITIVE |
+| **Problem + Solutions** | "represents the most pressing problem" | Explain severity/impact | List 2-3 solutions | NEGATIVE → POSITIVE (solutions) |
+| **Choice (who/what)** | "X is most important/responsible" | Why your choice is best | Acknowledge alternatives (but less significant) | POSITIVE for choice |
+| **Recommendations** | "presents challenges requiring reforms" | Problem analysis | List 2-3 recommendations | NEGATIVE → ACTION verbs |
+| **Advantages vs Disadvantages** | State whether +/- dominates | Stronger side | Weaker side | Balanced POSITIVE/NEGATIVE |
+
+---
+
+
+
 ## Template B1: Positive → Negative (Mostly Agree)
 
 **Use when:** Want to emphasize benefits > challenges (70-80% agree)

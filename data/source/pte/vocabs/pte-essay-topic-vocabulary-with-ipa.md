@@ -30,13 +30,13 @@
 
 15. **educational travel** | /ˌedjʊˈkeɪʃənəl ˈtrævəl/ — sounds like **ej-oo-KAY-shun-ul TRAV-ul**
 16. **practical learning** | /ˈpræktɪkəl ˈlɜːnɪŋ/ — sounds like **PRAK-tih-kul LUR-ning**
-17. **visiting places** | /ˈvɪzɪtɪŋ ˈpleɪsɪz/ — sounds like **VIZ-it-ing PLAY-siz**
+17. **field trips** | /fiːld trɪps/ — sounds like **FEELD TRIPS**
 18. **direct observation** | /dəˈrekt ˌɒbzəˈveɪʃən/ — sounds like **dih-REKT ob-zur-VAY-shun**
 19. **deeper understanding** | /ˈdiːpə ˌʌndəˈstændɪŋ/ — sounds like **DEE-pur un-dur-STAN-ding**
 20. **university research** | /ˌjuːnɪˈvɜːsəti rɪˈsɜːtʃ/ — sounds like **yoo-nih-VUR-suh-tee rih-SURCH**
 21. **improved skills** | /ɪmˈpruːvd skɪlz/ — sounds like **im-PROOVD SKILZ**
 22. **real-world exposure** | /rɪəl wɜːld ɪkˈspəʊʒə/ — sounds like **REEL WURLD ik-SPOH-zhur**
-23. **staying home** | /ˈsteɪɪŋ həʊm/ — sounds like **STAY-ing HOHM**
+23. **home-based study** | /həʊm beɪst ˈstʌdi/ — sounds like **HOHM BAYST STUD-ee**
 24. **dedicated scholars** | /ˈdedɪkeɪtɪd ˈskɒləz/ — sounds like **DED-ih-kay-tid SKOL-urz**
 25. **deep knowledge** | /diːp ˈnɒlɪdʒ/ — sounds like **DEEP NOL-ij**
 26. **travel less necessary** | — phrase (3 words)
@@ -47,6 +47,9 @@
 31. **real-world experiences** | — phrase (2 words)
 32. **cultural exposure** | /ˈkʌltʃərəl ɪkˈspəʊʒə/ — sounds like **KUL-chur-ul ik-SPOH-zhur**
 33. **time and resources** | — phrase (3 words)
+34. **high costs** | /haɪ kɒsts/ — sounds like **HY KOSTS**
+35. **distractions** | /dɪˈstrækʃənz/ — sounds like **dih-STRAK-shunz**
+36. **safety risks** | /ˈseɪfti rɪsks/ — sounds like **SAYF-tee RISKS**
 
 ---
 
@@ -111,7 +114,7 @@
 80. **comfortable spaces** | /ˈkʌmfətəbəl ˈspeɪsɪz/ — sounds like **KUM-fur-tuh-bul SPAY-siz**
 81. **improved health** | /ɪmˈpruːvd helθ/ — sounds like **im-PROOVD HELTH**
 82. **research shows** | /rɪˈsɜːtʃ ʃəʊz/ — sounds like **rih-SURCH SHOHZ**
-83. **people** | /ˈpiːpəl/ — sounds like **PEE-pul**
+83. **occupants** | /ˈɒkjʊpənts/ — sounds like **OK-yoo-punts**
 84. **better satisfaction** | /ˈbetə ˌsætɪsˈfækʃən/ — sounds like **BET-ur sat-is-FAK-shun**
 85. **poor design** | /pʊə dɪˈzaɪn/ — sounds like **POOR dih-ZYN**
 86. **limited space** | /ˈlɪmɪtɪd speɪs/ — sounds like **LIM-ih-tid SPAYS**
@@ -145,6 +148,9 @@
 109. **international experience** | /ˌɪntəˈnæʃənəl ɪkˈspɪəriəns/ — sounds like **in-tur-NASH-un-ul ik-SPEER-ee-uns**
 110. **local education** | /ˈləʊkəl ˌedjʊˈkeɪʃən/ — sounds like **LOH-kul ej-oo-KAY-shun**
 111. **time and consideration** | — phrase (3 words)
+112. **homesickness** | /ˈhəʊmˌsɪknəs/ — sounds like **HOHM-sik-nus**
+113. **financial burden** | /faɪˈnænʃəl ˈbɜːdən/ — sounds like **fy-NAN-shul BUR-dun**
+114. **language barriers** | /ˈlæŋɡwɪdʒ ˈbæriəz/ — sounds like **LANG-gwij BAR-ee-urz**
 
 ---
 
@@ -193,6 +199,9 @@
 147. **modern facilities** | /ˈmɒdən fəˈsɪlətiz/ — sounds like **MOD-urn fuh-SIL-uh-teez**
 148. **modern needs** | /ˈmɒdən niːdz/ — sounds like **MOD-urn NEEDZ**
 149. **resources** | /rɪˈsɔːsɪz/ — sounds like **rih-SOR-siz**
+150. **maintenance costs** | /ˈmeɪntənəns kɒsts/ — sounds like **MAYN-tuh-nuns KOSTS**
+151. **safety hazards** | /ˈseɪfti ˈhæzədz/ — sounds like **SAYF-tee HAZ-urdz**
+152. **hinders progress** | /ˈhɪndəz ˈprəʊɡres/ — sounds like **HIN-durz PROH-gres**
 
 ---
 
@@ -240,25 +249,30 @@
 184. **negative impacts** | /ˈneɡətɪv ˈɪmpækts/ — sounds like **NEG-uh-tiv IM-pakts**
 185. **tourism pressure** | /ˈtʊərɪzəm ˈpreʃə/ — sounds like **TOOR-iz-um PRESH-ur**
 186. **environmental protection** | /ɪnˌvaɪrənˈmentəl prəˈtekʃən/ — sounds like **in-vy-run-MEN-tul pruh-TEK-shun**
-187. **efforts and money** | — phrase (3 words)
+187. **efforts and funding** | — phrase (3 words)
 
 ---
 
 ## Topic 11: Television Functions
 
 188. **television** | /ˈtelɪvɪʒən/ — sounds like **TEL-ih-vizh-un**
-189. **watching television** | — phrase (2 words)
+189. **television viewing** | — phrase (2 words)
 190. **stress reduction** | /stres rɪˈdʌkʃən/ — sounds like **STRESS rih-DUK-shun**
 191. **improved wellbeing** | /ɪmˈpruːvd ˌwelˈbiːɪŋ/ — sounds like **im-PROOVD wel-BEE-ing**
 192. **relaxation** | /ˌriːlækˈseɪʃən/ — sounds like **ree-lak-SAY-shun**
 193. **entertainment programs** | /ˌentəˈteɪnmənt ˈprəʊɡræmz/ — sounds like **en-tur-TAYN-ment PROH-gramz**
 194. **television companionship** | — phrase (2 words)
-195. **lonely people** | /ˈləʊnli ˈpiːpəl/ — sounds like **LOHN-lee PEE-pul**
+195. **isolated individuals** | /ˈaɪsəleɪtɪd ˌɪndɪˈvɪdʒuəlz/ — sounds like **EYE-suh-lay-tid in-dih-VIJ-oo-ulz**
 196. **social connection** | /ˈsəʊʃəl kəˈnekʃən/ — sounds like **SOH-shul kuh-NEK-shun**
 197. **reduced isolation** | /rɪˈdjuːst ˌaɪsəˈleɪʃən/ — sounds like **rih-DYOOST eye-suh-LAY-shun**
 198. **individuals** | /ˌɪndɪˈvɪdʒuəlz/ — sounds like **in-dih-VIJ-oo-ulz**
 199. **regular viewing** | /ˈreɡjʊlə ˈvjuːɪŋ/ — sounds like **REG-yoo-lur VYOO-ing**
 200. **entertainment value** | /ˌentəˈteɪnmənt ˈvæljuː/ — sounds like **en-tur-TAYN-ment VAL-yoo**
+201. **inactive lifestyle** | /ɪnˈæktɪv ˈlaɪfstaɪl/ — sounds like **in-AK-tiv LYF-styl**
+202. **health issues** | /helθ ˈɪʃuːz/ — sounds like **HELTH ISH-ooz**
+203. **addiction** | /əˈdɪkʃən/ — sounds like **uh-DIK-shun**
+204. **reduced activity** | /rɪˈdjuːst ækˈtɪvəti/ — sounds like **rih-DYOOST ak-TIV-uh-tee**
+205. **passive behavior** | /ˈpæsɪv bɪˈheɪvjə/ — sounds like **PAS-iv bih-HAYV-yur**
 
 ---
 
@@ -271,7 +285,7 @@
 205. **improved habits** | /ɪmˈpruːvd ˈhæbɪts/ — sounds like **im-PROOVD HAB-its**
 206. **better punctuality** | /ˈbetə ˌpʌŋktʃuˈæləti/ — sounds like **BET-ur pungk-choo-AL-uh-tee**
 207. **clear deadlines** | /klɪə ˈdedlaɪnz/ — sounds like **KLEER DED-lynz**
-208. **other actions** | /ˈʌðə ˈækʃənz/ — sounds like **UTH-ur AK-shunz**
+208. **alternative measures** | /ɔːlˈtɜːnətɪv ˈmeʒəz/ — sounds like **awl-TUR-nuh-tiv MEZH-urz**
 209. **deadline extensions** | /ˈdedlaɪn ɪkˈstenʃənz/ — sounds like **DED-lyn ik-STEN-shunz**
 210. **positive motivation** | /ˈpɒzətɪv ˌməʊtɪˈveɪʃən/ — sounds like **POZ-ih-tiv moh-tih-VAY-shun**
 211. **better planning** | /ˈbetə ˈplænɪŋ/ — sounds like **BET-ur PLAN-ing**
@@ -281,6 +295,9 @@
 215. **accountability** | /əˌkaʊntəˈbɪləti/ — sounds like **uh-kown-tuh-BIL-uh-tee**
 216. **flexibility** | /ˌfleksəˈbɪləti/ — sounds like **flek-suh-BIL-uh-tee**
 217. **academic institutions** | /ˌækəˈdemɪk ˌɪnstɪˈtjuːʃənz/ — sounds like **ak-uh-DEM-ik in-stuh-TOO-shunz**
+218. **added stress** | /ˈædɪd stres/ — sounds like **AD-id STRESS**
+219. **unfair penalties** | /ʌnˈfeə ˈpenəltiz/ — sounds like **un-FAIR PEN-ul-teez**
+220. **discouragement** | /dɪsˈkʌrɪdʒmənt/ — sounds like **dis-KUR-ij-ment**
 
 ---
 
@@ -300,6 +317,9 @@
 229. **practical experience** | /ˈpræktɪkəl ɪkˈspɪəriəns/ — sounds like **PRAK-tih-kul ik-SPEER-ee-uns**
 230. **solid foundations** | /ˈsɒlɪd faʊnˈdeɪʃənz/ — sounds like **SOL-id fown-DAY-shunz**
 231. **schools** | /skuːlz/ — sounds like **SKOOLZ**
+232. **time consuming** | /taɪm kənˈsjuːmɪŋ/ — sounds like **TYM kun-SYOO-ming**
+233. **theoretical gaps** | /θɪəˈretɪkəl ɡæps/ — sounds like **thee-uh-RET-ih-kul GAPS**
+234. **lack of depth** | /læk əv depθ/ — sounds like **LAK uv DEPTH**
 
 ---
 
@@ -345,7 +365,7 @@
 
 ## Topic 16: Learning & Employment Combination
 
-262. **combining both** | /kəmˈbaɪnɪŋ bəʊθ/ — sounds like **kum-BYN-ing BOHTH**
+262. **combining work and study** | /kəmˈbaɪnɪŋ wɜːk ənd ˈstʌdi/ — sounds like **kum-BYN-ing WURK und STUD-ee**
 263. **part-time work** | /pɑːt taɪm wɜːk/ — sounds like **PART TYM WURK**
 264. **work experience** | /wɜːk ɪkˈspɪəriəns/ — sounds like **WURK ik-SPEER-ee-uns**
 265. **career development** | /kəˈrɪə dɪˈveləpmənt/ — sounds like **kuh-REER dih-VEL-up-ment**

@@ -183,7 +183,10 @@ class PTEDataPipeline {
       // Stage 1: Generate datasets
       await this.generatePTEDatasets();
 
-      // Stage 2: Report
+      // Stage 2: Generate DI Shadowing data
+      await this.generateDIShadowingData();
+
+      // Stage 3: Report
       this.generateReport();
 
       console.log('\n✅ PTE Data Pipeline completed successfully!');
@@ -194,11 +197,30 @@ class PTEDataPipeline {
     }
   }
 
-
-
   /**
-   * Generate PTE datasets
+   * Generate DI Shadowing natural data
    */
+  async generateDIShadowingData() {
+    console.log('\n🎙️ STAGE 2.5: Generating DI Shadowing Data');
+
+    try {
+      // Import and execute the natural DI shadowing script
+      const scriptPath = path.join(__dirname, 'generate-natural-di-shadowing.js');
+      const { execSync } = await import('child_process');
+
+      // Run the script
+      execSync(`node "${scriptPath}"`, {
+        cwd: path.join(__dirname, '..'),
+        stdio: 'inherit'
+      });
+
+      console.log('   ✅ DI shadowing data generated successfully\n');
+    } catch (error) {
+      console.warn(`   ⚠️ Failed to generate DI shadowing data: ${error.message}\n`);
+    }
+  }
+
+
   /**
    * Generate PTE datasets
    */

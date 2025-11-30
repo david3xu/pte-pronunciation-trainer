@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "generated": "2025-11-28T04:37:04.163Z",
-    "totalTerms": 255,
-    "source": "pte-essay-topic-vocabulary",
-    "description": "PTE Essay Topic Vocabulary - 327 academic phrases across 9 topics for Template B essays",
+    "generated": "2025-11-30T07:00:50.961Z",
+    "totalTerms": 275,
+    "source": "pte-essay-topic-vocabulary-with-ipa",
+    "description": "PTE Essay Topic Vocabulary with IPA",
     "version": "1.0",
     "categories": [
       "pte-essay-topic-vocabulary"
@@ -14,2552 +14,4402 @@
     {
       "english": "**formal exams**",
       "pronunciation": {
-        "ipa": "ˈfɔːməl ɪɡˈzæmz",
-        "phonetic": "FOR-mul ig-ZAMZ"
+        "british": {
+          "ipa": "ˈfɔːməl ɪɡˈzæmz",
+          "phonetic": "FOR-mul ig-ZAMZ"
+        },
+        "american": {
+          "ipa": "ˈfɔːməl ɪɡˈzæmz",
+          "phonetic": "FOR-mul ig-ZAMZ"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**fair assessment**",
       "pronunciation": {
-        "ipa": "feə əˈsesmənt",
-        "phonetic": "FAIR uh-SES-ment"
+        "british": {
+          "ipa": "feə əˈsesmənt",
+          "phonetic": "FAIR uh-SES-ment"
+        },
+        "american": {
+          "ipa": "feə əˈsesmənt",
+          "phonetic": "FAIR uh-SES-ment"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**standardized testing**",
       "pronunciation": {
-        "ipa": "ˈstændədaɪzd ˈtestɪŋ",
-        "phonetic": "STAN-dur-dyzd TEST-ing"
+        "british": {
+          "ipa": "ˈstændədaɪzd ˈtestɪŋ",
+          "phonetic": "STAN-dur-dyzd TEST-ing"
+        },
+        "american": {
+          "ipa": "ˈstændədaɪzd ˈtestɪŋ",
+          "phonetic": "STAN-dur-dyzd TEST-ing"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**clear evaluation**",
       "pronunciation": {
-        "ipa": "klɪə ɪˌvæljuˈeɪʃən",
-        "phonetic": "KLEER ih-val-yoo-AY-shun"
+        "british": {
+          "ipa": "klɪə ɪˌvæljuˈeɪʃən",
+          "phonetic": "KLEER ih-val-yoo-AY-shun"
+        },
+        "american": {
+          "ipa": "klɪə ɪˌvæljuˈeɪʃən",
+          "phonetic": "KLEER ih-val-yoo-AY-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**measurable results**",
       "pronunciation": {
-        "ipa": "ˈmeʒərəbəl rɪˈzʌlts",
-        "phonetic": "MEZH-ur-uh-bul rih-ZULTS"
+        "british": {
+          "ipa": "ˈmeʒərəbəl rɪˈzʌlts",
+          "phonetic": "MEZH-ur-uh-bul rih-ZULTS"
+        },
+        "american": {
+          "ipa": "ˈmeʒərəbəl rɪˈzʌlts",
+          "phonetic": "MEZH-ur-uh-bul rih-ZULTS"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**educational research**",
       "pronunciation": {
-        "ipa": "ˌedjʊˈkeɪʃənəl rɪˈsɜːtʃ",
-        "phonetic": "ej-oo-KAY-shun-ul rih-SURCH"
+        "british": {
+          "ipa": "ˌedjʊˈkeɪʃənəl rɪˈsɜːtʃ",
+          "phonetic": "ej-oo-KAY-shun-ul rih-SURCH"
+        },
+        "american": {
+          "ipa": "ˌedjʊˈkeɪʃənəl rɪˈsɜːtʃ",
+          "phonetic": "ej-oo-KAY-shun-ul rih-SURCH"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**students**",
       "pronunciation": {
-        "ipa": "ˈstjuːdənts",
-        "phonetic": "STOO-dunts"
+        "british": {
+          "ipa": "ˈstjuːdənts",
+          "phonetic": "STOO-dunts"
+        },
+        "american": {
+          "ipa": "ˈstjuːdənts",
+          "phonetic": "STOO-dunts"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**improved performance**",
       "pronunciation": {
-        "ipa": "ɪmˈpruːvd pəˈfɔːməns",
-        "phonetic": "im-PROOVD per-FOR-muns"
+        "british": {
+          "ipa": "ɪmˈpruːvd pəˈfɔːməns",
+          "phonetic": "im-PROOVD per-FOR-muns"
+        },
+        "american": {
+          "ipa": "ɪmˈpruːvd pəˈfɔːməns",
+          "phonetic": "im-PROOVD per-FOR-muns"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**test anxiety**",
       "pronunciation": {
-        "ipa": "test æŋˈzaɪəti",
-        "phonetic": "TEST ang-ZY-uh-tee"
+        "british": {
+          "ipa": "test æŋˈzaɪəti",
+          "phonetic": "TEST ang-ZY-uh-tee"
+        },
+        "american": {
+          "ipa": "test æŋˈzaɪəti",
+          "phonetic": "TEST ang-ZY-uh-tee"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**university studies**",
       "pronunciation": {
-        "ipa": "ˌjuːnɪˈvɜːsəti ˈstʌdiz",
-        "phonetic": "yoo-nih-VUR-suh-tee STUD-eez"
+        "british": {
+          "ipa": "ˌjuːnɪˈvɜːsəti ˈstʌdiz",
+          "phonetic": "yoo-nih-VUR-suh-tee STUD-eez"
+        },
+        "american": {
+          "ipa": "ˌjuːnɪˈvɜːsəti ˈstʌdiz",
+          "phonetic": "yoo-nih-VUR-suh-tee STUD-eez"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**reduced performance**",
       "pronunciation": {
-        "ipa": "rɪˈdjuːst pəˈfɔːməns",
-        "phonetic": "rih-DYOOST per-FOR-muns"
+        "british": {
+          "ipa": "rɪˈdjuːst pəˈfɔːməns",
+          "phonetic": "rih-DYOOST per-FOR-muns"
+        },
+        "american": {
+          "ipa": "rɪˈdjuːst pəˈfɔːməns",
+          "phonetic": "rih-DYOOST per-FOR-muns"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**exam stress**",
       "pronunciation": {
-        "ipa": "ɪɡˈzæm stres",
-        "phonetic": "ig-ZAM STRESS"
+        "british": {
+          "ipa": "ɪɡˈzæm stres",
+          "phonetic": "ig-ZAM STRESS"
+        },
+        "american": {
+          "ipa": "ɪɡˈzæm stres",
+          "phonetic": "ig-ZAM STRESS"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**educational travel**",
       "pronunciation": {
-        "ipa": "ˌedjʊˈkeɪʃənəl ˈtrævəl",
-        "phonetic": "ej-oo-KAY-shun-ul TRAV-ul"
+        "british": {
+          "ipa": "ˌedjʊˈkeɪʃənəl ˈtrævəl",
+          "phonetic": "ej-oo-KAY-shun-ul TRAV-ul"
+        },
+        "american": {
+          "ipa": "ˌedjʊˈkeɪʃənəl ˈtrævəl",
+          "phonetic": "ej-oo-KAY-shun-ul TRAV-ul"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**practical learning**",
       "pronunciation": {
-        "ipa": "ˈpræktɪkəl ˈlɜːnɪŋ",
-        "phonetic": "PRAK-tih-kul LUR-ning"
+        "british": {
+          "ipa": "ˈpræktɪkəl ˈlɜːnɪŋ",
+          "phonetic": "PRAK-tih-kul LUR-ning"
+        },
+        "american": {
+          "ipa": "ˈpræktɪkəl ˈlɜːnɪŋ",
+          "phonetic": "PRAK-tih-kul LUR-ning"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
-      "english": "**visiting places**",
+      "english": "**field trips**",
       "pronunciation": {
-        "ipa": "ˈvɪzɪtɪŋ ˈpleɪsɪz",
-        "phonetic": "VIZ-it-ing PLAY-siz"
+        "british": {
+          "ipa": "fiːld trɪps",
+          "phonetic": "FEELD TRIPS"
+        },
+        "american": {
+          "ipa": "fiːld trɪps",
+          "phonetic": "FEELD TRIPS"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**direct observation**",
       "pronunciation": {
-        "ipa": "dəˈrekt ˌɒbzəˈveɪʃən",
-        "phonetic": "dih-REKT ob-zur-VAY-shun"
+        "british": {
+          "ipa": "dəˈrekt ˌɒbzəˈveɪʃən",
+          "phonetic": "dih-REKT ob-zur-VAY-shun"
+        },
+        "american": {
+          "ipa": "dəˈrekt ˌɒbzəˈveɪʃən",
+          "phonetic": "dih-REKT ob-zur-VAY-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**deeper understanding**",
       "pronunciation": {
-        "ipa": "ˈdiːpə ˌʌndəˈstændɪŋ",
-        "phonetic": "DEE-pur un-dur-STAN-ding"
+        "british": {
+          "ipa": "ˈdiːpə ˌʌndəˈstændɪŋ",
+          "phonetic": "DEE-pur un-dur-STAN-ding"
+        },
+        "american": {
+          "ipa": "ˈdiːpə ˌʌndəˈstændɪŋ",
+          "phonetic": "DEE-pur un-dur-STAN-ding"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**university research**",
       "pronunciation": {
-        "ipa": "ˌjuːnɪˈvɜːsəti rɪˈsɜːtʃ",
-        "phonetic": "yoo-nih-VUR-suh-tee rih-SURCH"
+        "british": {
+          "ipa": "ˌjuːnɪˈvɜːsəti rɪˈsɜːtʃ",
+          "phonetic": "yoo-nih-VUR-suh-tee rih-SURCH"
+        },
+        "american": {
+          "ipa": "ˌjuːnɪˈvɜːsəti rɪˈsɜːtʃ",
+          "phonetic": "yoo-nih-VUR-suh-tee rih-SURCH"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**improved skills**",
       "pronunciation": {
-        "ipa": "ɪmˈpruːvd skɪlz",
-        "phonetic": "im-PROOVD SKILZ"
+        "british": {
+          "ipa": "ɪmˈpruːvd skɪlz",
+          "phonetic": "im-PROOVD SKILZ"
+        },
+        "american": {
+          "ipa": "ɪmˈpruːvd skɪlz",
+          "phonetic": "im-PROOVD SKILZ"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**real-world exposure**",
       "pronunciation": {
-        "ipa": "rɪəl wɜːld ɪkˈspəʊʒə",
-        "phonetic": "REEL WURLD ik-SPOH-zhur"
+        "british": {
+          "ipa": "rɪəl wɜːld ɪkˈspəʊʒə",
+          "phonetic": "REEL WURLD ik-SPOH-zhur"
+        },
+        "american": {
+          "ipa": "rɪəl wɜːld ɪkˈspəʊʒə",
+          "phonetic": "REEL WURLD ik-SPOH-zhur"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
-      "english": "**staying home**",
+      "english": "**home-based study**",
       "pronunciation": {
-        "ipa": "ˈsteɪɪŋ həʊm",
-        "phonetic": "STAY-ing HOHM"
+        "british": {
+          "ipa": "həʊm beɪst ˈstʌdi",
+          "phonetic": "HOHM BAYST STUD-ee"
+        },
+        "american": {
+          "ipa": "həʊm beɪst ˈstʌdi",
+          "phonetic": "HOHM BAYST STUD-ee"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**dedicated scholars**",
       "pronunciation": {
-        "ipa": "ˈdedɪkeɪtɪd ˈskɒləz",
-        "phonetic": "DED-ih-kay-tid SKOL-urz"
+        "british": {
+          "ipa": "ˈdedɪkeɪtɪd ˈskɒləz",
+          "phonetic": "DED-ih-kay-tid SKOL-urz"
+        },
+        "american": {
+          "ipa": "ˈdedɪkeɪtɪd ˈskɒləz",
+          "phonetic": "DED-ih-kay-tid SKOL-urz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**deep knowledge**",
       "pronunciation": {
-        "ipa": "diːp ˈnɒlɪdʒ",
-        "phonetic": "DEEP NOL-ij"
+        "british": {
+          "ipa": "diːp ˈnɒlɪdʒ",
+          "phonetic": "DEEP NOL-ij"
+        },
+        "american": {
+          "ipa": "diːp ˈnɒlɪdʒ",
+          "phonetic": "DEEP NOL-ij"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**educational institutions**",
       "pronunciation": {
-        "ipa": "ˌedjʊˈkeɪʃənəl ˌɪnstɪˈtjuːʃənz",
-        "phonetic": "ej-oo-KAY-shun-ul in-stuh-TOO-shunz"
+        "british": {
+          "ipa": "ˌedjʊˈkeɪʃənəl ˌɪnstɪˈtjuːʃənz",
+          "phonetic": "ej-oo-KAY-shun-ul in-stuh-TOO-shunz"
+        },
+        "american": {
+          "ipa": "ˌedjʊˈkeɪʃənəl ˌɪnstɪˈtjuːʃənz",
+          "phonetic": "ej-oo-KAY-shun-ul in-stuh-TOO-shunz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**scholars**",
       "pronunciation": {
-        "ipa": "ˈskɒləz",
-        "phonetic": "SKOL-urz"
+        "british": {
+          "ipa": "ˈskɒləz",
+          "phonetic": "SKOL-urz"
+        },
+        "american": {
+          "ipa": "ˈskɒləz",
+          "phonetic": "SKOL-urz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**academic excellence**",
       "pronunciation": {
-        "ipa": "ˌækəˈdemɪk ˈeksələns",
-        "phonetic": "ak-uh-DEM-ik EK-suh-luns"
+        "british": {
+          "ipa": "ˌækəˈdemɪk ˈeksələns",
+          "phonetic": "ak-uh-DEM-ik EK-suh-luns"
+        },
+        "american": {
+          "ipa": "ˌækəˈdemɪk ˈeksələns",
+          "phonetic": "ak-uh-DEM-ik EK-suh-luns"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**focused study**",
       "pronunciation": {
-        "ipa": "ˈfəʊkəst ˈstʌdi",
-        "phonetic": "FOH-kust STUD-ee"
+        "british": {
+          "ipa": "ˈfəʊkəst ˈstʌdi",
+          "phonetic": "FOH-kust STUD-ee"
+        },
+        "american": {
+          "ipa": "ˈfəʊkəst ˈstʌdi",
+          "phonetic": "FOH-kust STUD-ee"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**cultural exposure**",
       "pronunciation": {
-        "ipa": "ˈkʌltʃərəl ɪkˈspəʊʒə",
-        "phonetic": "KUL-chur-ul ik-SPOH-zhur"
+        "british": {
+          "ipa": "ˈkʌltʃərəl ɪkˈspəʊʒə",
+          "phonetic": "KUL-chur-ul ik-SPOH-zhur"
+        },
+        "american": {
+          "ipa": "ˈkʌltʃərəl ɪkˈspəʊʒə",
+          "phonetic": "KUL-chur-ul ik-SPOH-zhur"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
+    },
+    {
+      "english": "**high costs**",
+      "pronunciation": {
+        "british": {
+          "ipa": "haɪ kɒsts",
+          "phonetic": "HY KOSTS"
+        },
+        "american": {
+          "ipa": "haɪ kɒsts",
+          "phonetic": "HY KOSTS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary-with-ipa"
+    },
+    {
+      "english": "**distractions**",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈstrækʃənz",
+          "phonetic": "dih-STRAK-shunz"
+        },
+        "american": {
+          "ipa": "dɪˈstrækʃənz",
+          "phonetic": "dih-STRAK-shunz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary-with-ipa"
+    },
+    {
+      "english": "**safety risks**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈseɪfti rɪsks",
+          "phonetic": "SAYF-tee RISKS"
+        },
+        "american": {
+          "ipa": "ˈseɪfti rɪsks",
+          "phonetic": "SAYF-tee RISKS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**work-life balance**",
       "pronunciation": {
-        "ipa": "wɜːk laɪf ˈbæləns",
-        "phonetic": "WURK LYF BAL-uns"
+        "british": {
+          "ipa": "wɜːk laɪf ˈbæləns",
+          "phonetic": "WURK LYF BAL-uns"
+        },
+        "american": {
+          "ipa": "wɜːk laɪf ˈbæləns",
+          "phonetic": "WURK LYF BAL-uns"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**mental health**",
       "pronunciation": {
-        "ipa": "ˈmentəl helθ",
-        "phonetic": "MEN-tul HELTH"
+        "british": {
+          "ipa": "ˈmentəl helθ",
+          "phonetic": "MEN-tul HELTH"
+        },
+        "american": {
+          "ipa": "ˈmentəl helθ",
+          "phonetic": "MEN-tul HELTH"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**leisure time**",
       "pronunciation": {
-        "ipa": "ˈleʒə taɪm",
-        "phonetic": "LEZH-ur TYM"
+        "british": {
+          "ipa": "ˈleʒə taɪm",
+          "phonetic": "LEZH-ur TYM"
+        },
+        "american": {
+          "ipa": "ˈleʒə taɪm",
+          "phonetic": "LEZH-ur TYM"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**stronger relationships**",
       "pronunciation": {
-        "ipa": "ˈstrɒŋɡə rɪˈleɪʃənʃɪps",
-        "phonetic": "STRONG-ur rih-LAY-shun-ships"
+        "british": {
+          "ipa": "ˈstrɒŋɡə rɪˈleɪʃənʃɪps",
+          "phonetic": "STRONG-ur rih-LAY-shun-ships"
+        },
+        "american": {
+          "ipa": "ˈstrɒŋɡə rɪˈleɪʃənʃɪps",
+          "phonetic": "STRONG-ur rih-LAY-shun-ships"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**improved productivity**",
       "pronunciation": {
-        "ipa": "ɪmˈpruːvd ˌprɒdʌkˈtɪvəti",
-        "phonetic": "im-PROOVD prod-uk-TIV-uh-tee"
+        "british": {
+          "ipa": "ɪmˈpruːvd ˌprɒdʌkˈtɪvəti",
+          "phonetic": "im-PROOVD prod-uk-TIV-uh-tee"
+        },
+        "american": {
+          "ipa": "ɪmˈpruːvd ˌprɒdʌkˈtɪvəti",
+          "phonetic": "im-PROOVD prod-uk-TIV-uh-tee"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**workplace research**",
       "pronunciation": {
-        "ipa": "ˈwɜːkpleɪs rɪˈsɜːtʃ",
-        "phonetic": "WURK-plays rih-SURCH"
+        "british": {
+          "ipa": "ˈwɜːkpleɪs rɪˈsɜːtʃ",
+          "phonetic": "WURK-plays rih-SURCH"
+        },
+        "american": {
+          "ipa": "ˈwɜːkpleɪs rɪˈsɜːtʃ",
+          "phonetic": "WURK-plays rih-SURCH"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**employees**",
       "pronunciation": {
-        "ipa": "ˌemplɔɪˈiːz",
-        "phonetic": "em-ploy-EEZ"
+        "british": {
+          "ipa": "ˌemplɔɪˈiːz",
+          "phonetic": "em-ploy-EEZ"
+        },
+        "american": {
+          "ipa": "ˌemplɔɪˈiːz",
+          "phonetic": "em-ploy-EEZ"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**better performance**",
       "pronunciation": {
-        "ipa": "ˈbetə pəˈfɔːməns",
-        "phonetic": "BET-ur per-FOR-muns"
+        "british": {
+          "ipa": "ˈbetə pəˈfɔːməns",
+          "phonetic": "BET-ur per-FOR-muns"
+        },
+        "american": {
+          "ipa": "ˈbetə pəˈfɔːməns",
+          "phonetic": "BET-ur per-FOR-muns"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**family time**",
       "pronunciation": {
-        "ipa": "ˈfæməli taɪm",
-        "phonetic": "FAM-uh-lee TYM"
+        "british": {
+          "ipa": "ˈfæməli taɪm",
+          "phonetic": "FAM-uh-lee TYM"
+        },
+        "american": {
+          "ipa": "ˈfæməli taɪm",
+          "phonetic": "FAM-uh-lee TYM"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**achieving balance**",
       "pronunciation": {
-        "ipa": "əˈtʃiːvɪŋ ˈbæləns",
-        "phonetic": "uh-CHEEV-ing BAL-uns"
+        "british": {
+          "ipa": "əˈtʃiːvɪŋ ˈbæləns",
+          "phonetic": "uh-CHEEV-ing BAL-uns"
+        },
+        "american": {
+          "ipa": "əˈtʃiːvɪŋ ˈbæləns",
+          "phonetic": "uh-CHEEV-ing BAL-uns"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**workplace demands**",
       "pronunciation": {
-        "ipa": "ˈwɜːkpleɪs dɪˈmɑːndz",
-        "phonetic": "WURK-plays dih-MAHNDS"
+        "british": {
+          "ipa": "ˈwɜːkpleɪs dɪˈmɑːndz",
+          "phonetic": "WURK-plays dih-MAHNDS"
+        },
+        "american": {
+          "ipa": "ˈwɜːkpleɪs dɪˈmɑːndz",
+          "phonetic": "WURK-plays dih-MAHNDS"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**constant pressure**",
       "pronunciation": {
-        "ipa": "ˈkɒnstənt ˈpreʃə",
-        "phonetic": "KON-stunt PRESH-ur"
+        "british": {
+          "ipa": "ˈkɒnstənt ˈpreʃə",
+          "phonetic": "KON-stunt PRESH-ur"
+        },
+        "american": {
+          "ipa": "ˈkɒnstənt ˈpreʃə",
+          "phonetic": "KON-stunt PRESH-ur"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**organizational studies**",
       "pronunciation": {
-        "ipa": "ˌɔːɡənaɪˈzeɪʃənəl ˈstʌdiz",
-        "phonetic": "or-gun-eye-ZAY-shun-ul STUD-eez"
+        "british": {
+          "ipa": "ˌɔːɡənaɪˈzeɪʃənəl ˈstʌdiz",
+          "phonetic": "or-gun-eye-ZAY-shun-ul STUD-eez"
+        },
+        "american": {
+          "ipa": "ˌɔːɡənaɪˈzeɪʃənəl ˈstʌdiz",
+          "phonetic": "or-gun-eye-ZAY-shun-ul STUD-eez"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**professionals**",
       "pronunciation": {
-        "ipa": "prəˈfeʃənəlz",
-        "phonetic": "pruh-FESH-un-ulz"
+        "british": {
+          "ipa": "prəˈfeʃənəlz",
+          "phonetic": "pruh-FESH-un-ulz"
+        },
+        "american": {
+          "ipa": "prəˈfeʃənəlz",
+          "phonetic": "pruh-FESH-un-ulz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**work-life conflicts**",
       "pronunciation": {
-        "ipa": "wɜːk laɪf ˈkɒnflɪkts",
-        "phonetic": "WURK LYF KON-flikts"
+        "british": {
+          "ipa": "wɜːk laɪf ˈkɒnflɪkts",
+          "phonetic": "WURK LYF KON-flikts"
+        },
+        "american": {
+          "ipa": "wɜːk laɪf ˈkɒnflɪkts",
+          "phonetic": "WURK LYF KON-flikts"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**increased workload**",
       "pronunciation": {
-        "ipa": "ɪnˈkriːst ˈwɜːkləʊd",
-        "phonetic": "in-KREEST WURK-lohd"
+        "british": {
+          "ipa": "ɪnˈkriːst ˈwɜːkləʊd",
+          "phonetic": "in-KREEST WURK-lohd"
+        },
+        "american": {
+          "ipa": "ɪnˈkriːst ˈwɜːkləʊd",
+          "phonetic": "in-KREEST WURK-lohd"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**mental wellbeing**",
       "pronunciation": {
-        "ipa": "ˈmentəl ˌwelˈbiːɪŋ",
-        "phonetic": "MEN-tul wel-BEE-ing"
+        "british": {
+          "ipa": "ˈmentəl ˌwelˈbiːɪŋ",
+          "phonetic": "MEN-tul wel-BEE-ing"
+        },
+        "american": {
+          "ipa": "ˈmentəl ˌwelˈbiːɪŋ",
+          "phonetic": "MEN-tul wel-BEE-ing"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**family stability**",
       "pronunciation": {
-        "ipa": "ˈfæməli stəˈbɪləti",
-        "phonetic": "FAM-uh-lee stuh-BIL-uh-tee"
+        "british": {
+          "ipa": "ˈfæməli stəˈbɪləti",
+          "phonetic": "FAM-uh-lee stuh-BIL-uh-tee"
+        },
+        "american": {
+          "ipa": "ˈfæməli stəˈbɪləti",
+          "phonetic": "FAM-uh-lee stuh-BIL-uh-tee"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**climate change**",
       "pronunciation": {
-        "ipa": "ˈklaɪmət tʃeɪndʒ",
-        "phonetic": "KLY-mut CHAYNJ"
+        "british": {
+          "ipa": "ˈklaɪmət tʃeɪndʒ",
+          "phonetic": "KLY-mut CHAYNJ"
+        },
+        "american": {
+          "ipa": "ˈklaɪmət tʃeɪndʒ",
+          "phonetic": "KLY-mut CHAYNJ"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**governments**",
       "pronunciation": {
-        "ipa": "ˈɡʌvənmənts",
-        "phonetic": "GUV-urn-ments"
+        "british": {
+          "ipa": "ˈɡʌvənmənts",
+          "phonetic": "GUV-urn-ments"
+        },
+        "american": {
+          "ipa": "ˈɡʌvənmənts",
+          "phonetic": "GUV-urn-ments"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**policy frameworks**",
       "pronunciation": {
-        "ipa": "ˈpɒləsi ˈfreɪmwɜːks",
-        "phonetic": "POL-uh-see FRAYM-wurks"
+        "british": {
+          "ipa": "ˈpɒləsi ˈfreɪmwɜːks",
+          "phonetic": "POL-uh-see FRAYM-wurks"
+        },
+        "american": {
+          "ipa": "ˈpɒləsi ˈfreɪmwɜːks",
+          "phonetic": "POL-uh-see FRAYM-wurks"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**binding agreements**",
       "pronunciation": {
-        "ipa": "ˈbaɪndɪŋ əˈɡriːmənts",
-        "phonetic": "BYN-ding uh-GREE-ments"
+        "british": {
+          "ipa": "ˈbaɪndɪŋ əˈɡriːmənts",
+          "phonetic": "BYN-ding uh-GREE-ments"
+        },
+        "american": {
+          "ipa": "ˈbaɪndɪŋ əˈɡriːmənts",
+          "phonetic": "BYN-ding uh-GREE-ments"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**reduced emissions**",
       "pronunciation": {
-        "ipa": "rɪˈdjuːst ɪˈmɪʃənz",
-        "phonetic": "rih-DYOOST ih-MISH-unz"
+        "british": {
+          "ipa": "rɪˈdjuːst ɪˈmɪʃənz",
+          "phonetic": "rih-DYOOST ih-MISH-unz"
+        },
+        "american": {
+          "ipa": "rɪˈdjuːst ɪˈmɪʃənz",
+          "phonetic": "rih-DYOOST ih-MISH-unz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**policy research**",
       "pronunciation": {
-        "ipa": "ˈpɒləsi rɪˈsɜːtʃ",
-        "phonetic": "POL-uh-see rih-SURCH"
+        "british": {
+          "ipa": "ˈpɒləsi rɪˈsɜːtʃ",
+          "phonetic": "POL-uh-see rih-SURCH"
+        },
+        "american": {
+          "ipa": "ˈpɒləsi rɪˈsɜːtʃ",
+          "phonetic": "POL-uh-see rih-SURCH"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**countries**",
       "pronunciation": {
-        "ipa": "ˈkʌntriz",
-        "phonetic": "KUN-treez"
+        "british": {
+          "ipa": "ˈkʌntriz",
+          "phonetic": "KUN-treez"
+        },
+        "american": {
+          "ipa": "ˈkʌntriz",
+          "phonetic": "KUN-treez"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**environmental benefits**",
       "pronunciation": {
-        "ipa": "ɪnˌvaɪrənˈmentəl ˈbenɪfɪts",
-        "phonetic": "in-vy-run-MEN-tul BEN-ih-fits"
+        "british": {
+          "ipa": "ɪnˌvaɪrənˈmentəl ˈbenɪfɪts",
+          "phonetic": "in-vy-run-MEN-tul BEN-ih-fits"
+        },
+        "american": {
+          "ipa": "ɪnˌvaɪrənˈmentəl ˈbenɪfɪts",
+          "phonetic": "in-vy-run-MEN-tul BEN-ih-fits"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**climate initiatives**",
       "pronunciation": {
-        "ipa": "ˈklaɪmət ɪˈnɪʃətɪvz",
-        "phonetic": "KLY-mut ih-NISH-uh-tivz"
+        "british": {
+          "ipa": "ˈklaɪmət ɪˈnɪʃətɪvz",
+          "phonetic": "KLY-mut ih-NISH-uh-tivz"
+        },
+        "american": {
+          "ipa": "ˈklaɪmət ɪˈnɪʃətɪvz",
+          "phonetic": "KLY-mut ih-NISH-uh-tivz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**business activities**",
       "pronunciation": {
-        "ipa": "ˈbɪznəs ækˈtɪvətiz",
-        "phonetic": "BIZ-nus ak-TIV-uh-teez"
+        "british": {
+          "ipa": "ˈbɪznəs ækˈtɪvətiz",
+          "phonetic": "BIZ-nus ak-TIV-uh-teez"
+        },
+        "american": {
+          "ipa": "ˈbɪznəs ækˈtɪvətiz",
+          "phonetic": "BIZ-nus ak-TIV-uh-teez"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**pollution levels**",
       "pronunciation": {
-        "ipa": "pəˈluːʃən ˈlevəlz",
-        "phonetic": "puh-LOO-shun LEV-ulz"
+        "british": {
+          "ipa": "pəˈluːʃən ˈlevəlz",
+          "phonetic": "puh-LOO-shun LEV-ulz"
+        },
+        "american": {
+          "ipa": "pəˈluːʃən ˈlevəlz",
+          "phonetic": "puh-LOO-shun LEV-ulz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**shared responsibility**",
       "pronunciation": {
-        "ipa": "ʃeəd rɪˌspɒnsəˈbɪləti",
-        "phonetic": "SHAIRD rih-spon-suh-BIL-uh-tee"
+        "british": {
+          "ipa": "ʃeəd rɪˌspɒnsəˈbɪləti",
+          "phonetic": "SHAIRD rih-spon-suh-BIL-uh-tee"
+        },
+        "american": {
+          "ipa": "ʃeəd rɪˌspɒnsəˈbɪləti",
+          "phonetic": "SHAIRD rih-spon-suh-BIL-uh-tee"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**environmental institutions**",
       "pronunciation": {
-        "ipa": "ɪnˌvaɪrənˈmentəl ˌɪnstɪˈtjuːʃənz",
-        "phonetic": "in-vy-run-MEN-tul in-stuh-TOO-shunz"
+        "british": {
+          "ipa": "ɪnˌvaɪrənˈmentəl ˌɪnstɪˈtjuːʃənz",
+          "phonetic": "in-vy-run-MEN-tul in-stuh-TOO-shunz"
+        },
+        "american": {
+          "ipa": "ɪnˌvaɪrənˈmentəl ˌɪnstɪˈtjuːʃənz",
+          "phonetic": "in-vy-run-MEN-tul in-stuh-TOO-shunz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**businesses**",
       "pronunciation": {
-        "ipa": "ˈbɪznəsɪz",
-        "phonetic": "BIZ-nus-iz"
+        "british": {
+          "ipa": "ˈbɪznəsɪz",
+          "phonetic": "BIZ-nus-iz"
+        },
+        "american": {
+          "ipa": "ˈbɪznəsɪz",
+          "phonetic": "BIZ-nus-iz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**carbon emissions**",
       "pronunciation": {
-        "ipa": "ˈkɑːbən ɪˈmɪʃənz",
-        "phonetic": "KAR-bun ih-MISH-unz"
+        "british": {
+          "ipa": "ˈkɑːbən ɪˈmɪʃənz",
+          "phonetic": "KAR-bun ih-MISH-unz"
+        },
+        "american": {
+          "ipa": "ˈkɑːbən ɪˈmɪʃənz",
+          "phonetic": "KAR-bun ih-MISH-unz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**business operations**",
       "pronunciation": {
-        "ipa": "ˈbɪznəs ˌɒpəˈreɪʃənz",
-        "phonetic": "BIZ-nus op-uh-RAY-shunz"
+        "british": {
+          "ipa": "ˈbɪznəs ˌɒpəˈreɪʃənz",
+          "phonetic": "BIZ-nus op-uh-RAY-shunz"
+        },
+        "american": {
+          "ipa": "ˈbɪznəs ˌɒpəˈreɪʃənz",
+          "phonetic": "BIZ-nus op-uh-RAY-shunz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**government policies**",
       "pronunciation": {
-        "ipa": "ˈɡʌvənmənt ˈpɒləsiz",
-        "phonetic": "GUV-urn-ment POL-uh-seez"
+        "british": {
+          "ipa": "ˈɡʌvənmənt ˈpɒləsiz",
+          "phonetic": "GUV-urn-ment POL-uh-seez"
+        },
+        "american": {
+          "ipa": "ˈɡʌvənmənt ˈpɒləsiz",
+          "phonetic": "GUV-urn-ment POL-uh-seez"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**corporate responsibility**",
       "pronunciation": {
-        "ipa": "ˈkɔːpərət rɪˌspɒnsəˈbɪləti",
-        "phonetic": "KOR-pur-ut rih-spon-suh-BIL-uh-tee"
+        "british": {
+          "ipa": "ˈkɔːpərət rɪˌspɒnsəˈbɪləti",
+          "phonetic": "KOR-pur-ut rih-spon-suh-BIL-uh-tee"
+        },
+        "american": {
+          "ipa": "ˈkɔːpərət rɪˌspɒnsəˈbɪləti",
+          "phonetic": "KOR-pur-ut rih-spon-suh-BIL-uh-tee"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**all stakeholders**",
       "pronunciation": {
-        "ipa": "ɔːl ˈsteɪkhəʊldəz",
-        "phonetic": "AWL STAYK-hohl-durz"
+        "british": {
+          "ipa": "ɔːl ˈsteɪkhəʊldəz",
+          "phonetic": "AWL STAYK-hohl-durz"
+        },
+        "american": {
+          "ipa": "ɔːl ˈsteɪkhəʊldəz",
+          "phonetic": "AWL STAYK-hohl-durz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**building design**",
       "pronunciation": {
-        "ipa": "ˈbɪldɪŋ dɪˈzaɪn",
-        "phonetic": "BIL-ding dih-ZYN"
+        "british": {
+          "ipa": "ˈbɪldɪŋ dɪˈzaɪn",
+          "phonetic": "BIL-ding dih-ZYN"
+        },
+        "american": {
+          "ipa": "ˈbɪldɪŋ dɪˈzaɪn",
+          "phonetic": "BIL-ding dih-ZYN"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**good design**",
       "pronunciation": {
-        "ipa": "ɡʊd dɪˈzaɪn",
-        "phonetic": "GOOD dih-ZYN"
+        "british": {
+          "ipa": "ɡʊd dɪˈzaɪn",
+          "phonetic": "GOOD dih-ZYN"
+        },
+        "american": {
+          "ipa": "ɡʊd dɪˈzaɪn",
+          "phonetic": "GOOD dih-ZYN"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**quality of life**",
       "pronunciation": {
-        "ipa": "ˈkwɒləti əv laɪf",
-        "phonetic": "KWOL-uh-tee uv LYF"
+        "british": {
+          "ipa": "ˈkwɒləti əv laɪf",
+          "phonetic": "KWOL-uh-tee uv LYF"
+        },
+        "american": {
+          "ipa": "ˈkwɒləti əv laɪf",
+          "phonetic": "KWOL-uh-tee uv LYF"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**natural light**",
       "pronunciation": {
-        "ipa": "ˈnætʃərəl laɪt",
-        "phonetic": "NATCH-ur-ul LYT"
+        "british": {
+          "ipa": "ˈnætʃərəl laɪt",
+          "phonetic": "NATCH-ur-ul LYT"
+        },
+        "american": {
+          "ipa": "ˈnætʃərəl laɪt",
+          "phonetic": "NATCH-ur-ul LYT"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**comfortable spaces**",
       "pronunciation": {
-        "ipa": "ˈkʌmfətəbəl ˈspeɪsɪz",
-        "phonetic": "KUM-fur-tuh-bul SPAY-siz"
+        "british": {
+          "ipa": "ˈkʌmfətəbəl ˈspeɪsɪz",
+          "phonetic": "KUM-fur-tuh-bul SPAY-siz"
+        },
+        "american": {
+          "ipa": "ˈkʌmfətəbəl ˈspeɪsɪz",
+          "phonetic": "KUM-fur-tuh-bul SPAY-siz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**improved health**",
       "pronunciation": {
-        "ipa": "ɪmˈpruːvd helθ",
-        "phonetic": "im-PROOVD HELTH"
+        "british": {
+          "ipa": "ɪmˈpruːvd helθ",
+          "phonetic": "im-PROOVD HELTH"
+        },
+        "american": {
+          "ipa": "ɪmˈpruːvd helθ",
+          "phonetic": "im-PROOVD HELTH"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**research shows**",
       "pronunciation": {
-        "ipa": "rɪˈsɜːtʃ ʃəʊz",
-        "phonetic": "rih-SURCH SHOHZ"
+        "british": {
+          "ipa": "rɪˈsɜːtʃ ʃəʊz",
+          "phonetic": "rih-SURCH SHOHZ"
+        },
+        "american": {
+          "ipa": "rɪˈsɜːtʃ ʃəʊz",
+          "phonetic": "rih-SURCH SHOHZ"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
-      "english": "**people**",
+      "english": "**occupants**",
       "pronunciation": {
-        "ipa": "ˈpiːpəl",
-        "phonetic": "PEE-pul"
+        "british": {
+          "ipa": "ˈɒkjʊpənts",
+          "phonetic": "OK-yoo-punts"
+        },
+        "american": {
+          "ipa": "ˈɒkjʊpənts",
+          "phonetic": "OK-yoo-punts"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**better satisfaction**",
       "pronunciation": {
-        "ipa": "ˈbetə ˌsætɪsˈfækʃən",
-        "phonetic": "BET-ur sat-is-FAK-shun"
+        "british": {
+          "ipa": "ˈbetə ˌsætɪsˈfækʃən",
+          "phonetic": "BET-ur sat-is-FAK-shun"
+        },
+        "american": {
+          "ipa": "ˈbetə ˌsætɪsˈfækʃən",
+          "phonetic": "BET-ur sat-is-FAK-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**poor design**",
       "pronunciation": {
-        "ipa": "pʊə dɪˈzaɪn",
-        "phonetic": "POOR dih-ZYN"
+        "british": {
+          "ipa": "pʊə dɪˈzaɪn",
+          "phonetic": "POOR dih-ZYN"
+        },
+        "american": {
+          "ipa": "pʊə dɪˈzaɪn",
+          "phonetic": "POOR dih-ZYN"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**limited space**",
       "pronunciation": {
-        "ipa": "ˈlɪmɪtɪd speɪs",
-        "phonetic": "LIM-ih-tid SPAYS"
+        "british": {
+          "ipa": "ˈlɪmɪtɪd speɪs",
+          "phonetic": "LIM-ih-tid SPAYS"
+        },
+        "american": {
+          "ipa": "ˈlɪmɪtɪd speɪs",
+          "phonetic": "LIM-ih-tid SPAYS"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**discomfort**",
       "pronunciation": {
-        "ipa": "dɪsˈkʌmfət",
-        "phonetic": "dis-KUM-furt"
+        "british": {
+          "ipa": "dɪsˈkʌmfət",
+          "phonetic": "dis-KUM-furt"
+        },
+        "american": {
+          "ipa": "dɪsˈkʌmfət",
+          "phonetic": "dis-KUM-furt"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**avoid places**",
       "pronunciation": {
-        "ipa": "əˈvɔɪd ˈpleɪsɪz",
-        "phonetic": "uh-VOYD PLAY-siz"
+        "british": {
+          "ipa": "əˈvɔɪd ˈpleɪsɪz",
+          "phonetic": "uh-VOYD PLAY-siz"
+        },
+        "american": {
+          "ipa": "əˈvɔɪd ˈpleɪsɪz",
+          "phonetic": "uh-VOYD PLAY-siz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**studies indicate**",
       "pronunciation": {
-        "ipa": "ˈstʌdiz ˈɪndɪkeɪt",
-        "phonetic": "STUD-eez IN-dih-kayt"
+        "british": {
+          "ipa": "ˈstʌdiz ˈɪndɪkeɪt",
+          "phonetic": "STUD-eez IN-dih-kayt"
+        },
+        "american": {
+          "ipa": "ˈstʌdiz ˈɪndɪkeɪt",
+          "phonetic": "STUD-eez IN-dih-kayt"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**workers**",
       "pronunciation": {
-        "ipa": "ˈwɜːkəz",
-        "phonetic": "WUR-kurz"
+        "british": {
+          "ipa": "ˈwɜːkəz",
+          "phonetic": "WUR-kurz"
+        },
+        "american": {
+          "ipa": "ˈwɜːkəz",
+          "phonetic": "WUR-kurz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**negative impact**",
       "pronunciation": {
-        "ipa": "ˈneɡətɪv ˈɪmpækt",
-        "phonetic": "NEG-uh-tiv IM-pakt"
+        "british": {
+          "ipa": "ˈneɡətɪv ˈɪmpækt",
+          "phonetic": "NEG-uh-tiv IM-pakt"
+        },
+        "american": {
+          "ipa": "ˈneɡətɪv ˈɪmpækt",
+          "phonetic": "NEG-uh-tiv IM-pakt"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**poor conditions**",
       "pronunciation": {
-        "ipa": "pʊə kənˈdɪʃənz",
-        "phonetic": "POOR kun-DISH-unz"
+        "british": {
+          "ipa": "pʊə kənˈdɪʃənz",
+          "phonetic": "POOR kun-DISH-unz"
+        },
+        "american": {
+          "ipa": "pʊə kənˈdɪʃənz",
+          "phonetic": "POOR kun-DISH-unz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**urban planners**",
       "pronunciation": {
-        "ipa": "ˈɜːbən ˈplænəz",
-        "phonetic": "UR-bun PLAN-urz"
+        "british": {
+          "ipa": "ˈɜːbən ˈplænəz",
+          "phonetic": "UR-bun PLAN-urz"
+        },
+        "american": {
+          "ipa": "ˈɜːbən ˈplænəz",
+          "phonetic": "UR-bun PLAN-urz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**studying overseas**",
       "pronunciation": {
-        "ipa": "ˈstʌdɪɪŋ ˌəʊvəˈsiːz",
-        "phonetic": "STUD-ee-ing oh-vur-SEEZ"
+        "british": {
+          "ipa": "ˈstʌdɪɪŋ ˌəʊvəˈsiːz",
+          "phonetic": "STUD-ee-ing oh-vur-SEEZ"
+        },
+        "american": {
+          "ipa": "ˈstʌdɪɪŋ ˌəʊvəˈsiːz",
+          "phonetic": "STUD-ee-ing oh-vur-SEEZ"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**study abroad**",
       "pronunciation": {
-        "ipa": "ˈstʌdi əˈbrɔːd",
-        "phonetic": "STUD-ee uh-BRAWD"
+        "british": {
+          "ipa": "ˈstʌdi əˈbrɔːd",
+          "phonetic": "STUD-ee uh-BRAWD"
+        },
+        "american": {
+          "ipa": "ˈstʌdi əˈbrɔːd",
+          "phonetic": "STUD-ee uh-BRAWD"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**cross-cultural learning**",
       "pronunciation": {
-        "ipa": "krɒs ˈkʌltʃərəl ˈlɜːnɪŋ",
-        "phonetic": "KROSS KUL-chur-ul LUR-ning"
+        "british": {
+          "ipa": "krɒs ˈkʌltʃərəl ˈlɜːnɪŋ",
+          "phonetic": "KROSS KUL-chur-ul LUR-ning"
+        },
+        "american": {
+          "ipa": "krɒs ˈkʌltʃərəl ˈlɜːnɪŋ",
+          "phonetic": "KROSS KUL-chur-ul LUR-ning"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**international exposure**",
       "pronunciation": {
-        "ipa": "ˌɪntəˈnæʃənəl ɪkˈspəʊʒə",
-        "phonetic": "in-tur-NASH-un-ul ik-SPOH-zhur"
+        "british": {
+          "ipa": "ˌɪntəˈnæʃənəl ɪkˈspəʊʒə",
+          "phonetic": "in-tur-NASH-un-ul ik-SPOH-zhur"
+        },
+        "american": {
+          "ipa": "ˌɪntəˈnæʃənəl ɪkˈspəʊʒə",
+          "phonetic": "in-tur-NASH-un-ul ik-SPOH-zhur"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**global perspective**",
       "pronunciation": {
-        "ipa": "ˈɡləʊbəl pəˈspektɪv",
-        "phonetic": "GLOH-bul per-SPEK-tiv"
+        "british": {
+          "ipa": "ˈɡləʊbəl pəˈspektɪv",
+          "phonetic": "GLOH-bul per-SPEK-tiv"
+        },
+        "american": {
+          "ipa": "ˈɡləʊbəl pəˈspektɪv",
+          "phonetic": "GLOH-bul per-SPEK-tiv"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**broader outcomes**",
       "pronunciation": {
-        "ipa": "ˈbrɔːdə ˈaʊtkʌmz",
-        "phonetic": "BRAW-dur OWT-kumz"
+        "british": {
+          "ipa": "ˈbrɔːdə ˈaʊtkʌmz",
+          "phonetic": "BRAW-dur OWT-kumz"
+        },
+        "american": {
+          "ipa": "ˈbrɔːdə ˈaʊtkʌmz",
+          "phonetic": "BRAW-dur OWT-kumz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**enhanced understanding**",
       "pronunciation": {
-        "ipa": "ɪnˈhɑːnst ˌʌndəˈstændɪŋ",
-        "phonetic": "in-HAHNST un-dur-STAN-ding"
+        "british": {
+          "ipa": "ɪnˈhɑːnst ˌʌndəˈstændɪŋ",
+          "phonetic": "in-HAHNST un-dur-STAN-ding"
+        },
+        "american": {
+          "ipa": "ɪnˈhɑːnst ˌʌndəˈstændɪŋ",
+          "phonetic": "in-HAHNST un-dur-STAN-ding"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**cultural immersion**",
       "pronunciation": {
-        "ipa": "ˈkʌltʃərəl ɪˈmɜːʃən",
-        "phonetic": "KUL-chur-ul ih-MUR-shun"
+        "british": {
+          "ipa": "ˈkʌltʃərəl ɪˈmɜːʃən",
+          "phonetic": "KUL-chur-ul ih-MUR-shun"
+        },
+        "american": {
+          "ipa": "ˈkʌltʃərəl ɪˈmɜːʃən",
+          "phonetic": "KUL-chur-ul ih-MUR-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**home-based learning**",
       "pronunciation": {
-        "ipa": "həʊm beɪst ˈlɜːnɪŋ",
-        "phonetic": "HOHM BAYST LUR-ning"
+        "british": {
+          "ipa": "həʊm beɪst ˈlɜːnɪŋ",
+          "phonetic": "HOHM BAYST LUR-ning"
+        },
+        "american": {
+          "ipa": "həʊm beɪst ˈlɜːnɪŋ",
+          "phonetic": "HOHM BAYST LUR-ning"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**local scholars**",
       "pronunciation": {
-        "ipa": "ˈləʊkəl ˈskɒləz",
-        "phonetic": "LOH-kul SKOL-urz"
+        "british": {
+          "ipa": "ˈləʊkəl ˈskɒləz",
+          "phonetic": "LOH-kul SKOL-urz"
+        },
+        "american": {
+          "ipa": "ˈləʊkəl ˈskɒləz",
+          "phonetic": "LOH-kul SKOL-urz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**local success**",
       "pronunciation": {
-        "ipa": "ˈləʊkəl səkˈses",
-        "phonetic": "LOH-kul suk-SES"
+        "british": {
+          "ipa": "ˈləʊkəl səkˈses",
+          "phonetic": "LOH-kul suk-SES"
+        },
+        "american": {
+          "ipa": "ˈləʊkəl səkˈses",
+          "phonetic": "LOH-kul suk-SES"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**local graduates**",
       "pronunciation": {
-        "ipa": "ˈləʊkəl ˈɡrædʒuəts",
-        "phonetic": "LOH-kul GRAJ-oo-uts"
+        "british": {
+          "ipa": "ˈləʊkəl ˈɡrædʒuəts",
+          "phonetic": "LOH-kul GRAJ-oo-uts"
+        },
+        "american": {
+          "ipa": "ˈləʊkəl ˈɡrædʒuəts",
+          "phonetic": "LOH-kul GRAJ-oo-uts"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**comparable results**",
       "pronunciation": {
-        "ipa": "ˈkɒmpərəbəl rɪˈzʌlts",
-        "phonetic": "KOM-pur-uh-bul rih-ZULTS"
+        "british": {
+          "ipa": "ˈkɒmpərəbəl rɪˈzʌlts",
+          "phonetic": "KOM-pur-uh-bul rih-ZULTS"
+        },
+        "american": {
+          "ipa": "ˈkɒmpərəbəl rɪˈzʌlts",
+          "phonetic": "KOM-pur-uh-bul rih-ZULTS"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**strong education**",
       "pronunciation": {
-        "ipa": "strɒŋ ˌedjʊˈkeɪʃən",
-        "phonetic": "STRONG ej-oo-KAY-shun"
+        "british": {
+          "ipa": "strɒŋ ˌedjʊˈkeɪʃən",
+          "phonetic": "STRONG ej-oo-KAY-shun"
+        },
+        "american": {
+          "ipa": "strɒŋ ˌedjʊˈkeɪʃən",
+          "phonetic": "STRONG ej-oo-KAY-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**international experience**",
       "pronunciation": {
-        "ipa": "ˌɪntəˈnæʃənəl ɪkˈspɪəriəns",
-        "phonetic": "in-tur-NASH-un-ul ik-SPEER-ee-uns"
+        "british": {
+          "ipa": "ˌɪntəˈnæʃənəl ɪkˈspɪəriəns",
+          "phonetic": "in-tur-NASH-un-ul ik-SPEER-ee-uns"
+        },
+        "american": {
+          "ipa": "ˌɪntəˈnæʃənəl ɪkˈspɪəriəns",
+          "phonetic": "in-tur-NASH-un-ul ik-SPEER-ee-uns"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**local education**",
       "pronunciation": {
-        "ipa": "ˈləʊkəl ˌedjʊˈkeɪʃən",
-        "phonetic": "LOH-kul ej-oo-KAY-shun"
+        "british": {
+          "ipa": "ˈləʊkəl ˌedjʊˈkeɪʃən",
+          "phonetic": "LOH-kul ej-oo-KAY-shun"
+        },
+        "american": {
+          "ipa": "ˈləʊkəl ˌedjʊˈkeɪʃən",
+          "phonetic": "LOH-kul ej-oo-KAY-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
+    },
+    {
+      "english": "**homesickness**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhəʊmˌsɪknəs",
+          "phonetic": "HOHM-sik-nus"
+        },
+        "american": {
+          "ipa": "ˈhəʊmˌsɪknəs",
+          "phonetic": "HOHM-sik-nus"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary-with-ipa"
+    },
+    {
+      "english": "**financial burden**",
+      "pronunciation": {
+        "british": {
+          "ipa": "faɪˈnænʃəl ˈbɜːdən",
+          "phonetic": "fy-NAN-shul BUR-dun"
+        },
+        "american": {
+          "ipa": "faɪˈnænʃəl ˈbɜːdən",
+          "phonetic": "fy-NAN-shul BUR-dun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary-with-ipa"
+    },
+    {
+      "english": "**language barriers**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlæŋɡwɪdʒ ˈbæriəz",
+          "phonetic": "LANG-gwij BAR-ee-urz"
+        },
+        "american": {
+          "ipa": "ˈlæŋɡwɪdʒ ˈbæriəz",
+          "phonetic": "LANG-gwij BAR-ee-urz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**smartphones**",
       "pronunciation": {
-        "ipa": "ˈsmɑːtfəʊnz",
-        "phonetic": "SMART-fohnz"
+        "british": {
+          "ipa": "ˈsmɑːtfəʊnz",
+          "phonetic": "SMART-fohnz"
+        },
+        "american": {
+          "ipa": "ˈsmɑːtfəʊnz",
+          "phonetic": "SMART-fohnz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**instant communication**",
       "pronunciation": {
-        "ipa": "ˈɪnstənt kəˌmjuːnɪˈkeɪʃən",
-        "phonetic": "IN-stunt kuh-myoo-nih-KAY-shun"
+        "british": {
+          "ipa": "ˈɪnstənt kəˌmjuːnɪˈkeɪʃən",
+          "phonetic": "IN-stunt kuh-myoo-nih-KAY-shun"
+        },
+        "american": {
+          "ipa": "ˈɪnstənt kəˌmjuːnɪˈkeɪʃən",
+          "phonetic": "IN-stunt kuh-myoo-nih-KAY-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**mobile technology**",
       "pronunciation": {
-        "ipa": "ˈməʊbaɪl tekˈnɒlədʒi",
-        "phonetic": "MOH-byl tek-NOL-uh-jee"
+        "british": {
+          "ipa": "ˈməʊbaɪl tekˈnɒlədʒi",
+          "phonetic": "MOH-byl tek-NOL-uh-jee"
+        },
+        "american": {
+          "ipa": "ˈməʊbaɪl tekˈnɒlədʒi",
+          "phonetic": "MOH-byl tek-NOL-uh-jee"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**connected society**",
       "pronunciation": {
-        "ipa": "kəˈnektɪd səˈsaɪəti",
-        "phonetic": "kuh-NEK-tid suh-SY-uh-tee"
+        "british": {
+          "ipa": "kəˈnektɪd səˈsaɪəti",
+          "phonetic": "kuh-NEK-tid suh-SY-uh-tee"
+        },
+        "american": {
+          "ipa": "kəˈnektɪd səˈsaɪəti",
+          "phonetic": "kuh-NEK-tid suh-SY-uh-tee"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**improved access**",
       "pronunciation": {
-        "ipa": "ɪmˈpruːvd ˈækses",
-        "phonetic": "im-PROOVD AK-ses"
+        "british": {
+          "ipa": "ɪmˈpruːvd ˈækses",
+          "phonetic": "im-PROOVD AK-ses"
+        },
+        "american": {
+          "ipa": "ɪmˈpruːvd ˈækses",
+          "phonetic": "im-PROOVD AK-ses"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**technology research**",
       "pronunciation": {
-        "ipa": "tekˈnɒlədʒi rɪˈsɜːtʃ",
-        "phonetic": "tek-NOL-uh-jee rih-SURCH"
+        "british": {
+          "ipa": "tekˈnɒlədʒi rɪˈsɜːtʃ",
+          "phonetic": "tek-NOL-uh-jee rih-SURCH"
+        },
+        "american": {
+          "ipa": "tekˈnɒlədʒi rɪˈsɜːtʃ",
+          "phonetic": "tek-NOL-uh-jee rih-SURCH"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**enhanced connectivity**",
       "pronunciation": {
-        "ipa": "ɪnˈhɑːnst ˌkɒnekˈtɪvəti",
-        "phonetic": "in-HAHNST kon-ek-TIV-uh-tee"
+        "british": {
+          "ipa": "ɪnˈhɑːnst ˌkɒnekˈtɪvəti",
+          "phonetic": "in-HAHNST kon-ek-TIV-uh-tee"
+        },
+        "american": {
+          "ipa": "ɪnˈhɑːnst ˌkɒnekˈtɪvəti",
+          "phonetic": "in-HAHNST kon-ek-TIV-uh-tee"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**smartphone use**",
       "pronunciation": {
-        "ipa": "ˈsmɑːtfəʊn juːz",
-        "phonetic": "SMART-fohn YOOZ"
+        "british": {
+          "ipa": "ˈsmɑːtfəʊn juːz",
+          "phonetic": "SMART-fohn YOOZ"
+        },
+        "american": {
+          "ipa": "ˈsmɑːtfəʊn juːz",
+          "phonetic": "SMART-fohn YOOZ"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**smartphone dependency**",
       "pronunciation": {
-        "ipa": "ˈsmɑːtfəʊn dɪˈpendənsi",
-        "phonetic": "SMART-fohn dih-PEN-dun-see"
+        "british": {
+          "ipa": "ˈsmɑːtfəʊn dɪˈpendənsi",
+          "phonetic": "SMART-fohn dih-PEN-dun-see"
+        },
+        "american": {
+          "ipa": "ˈsmɑːtfəʊn dɪˈpendənsi",
+          "phonetic": "SMART-fohn dih-PEN-dun-see"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**excessive screen time**",
       "pronunciation": {
-        "ipa": "ɪkˈsesɪv skriːn taɪm",
-        "phonetic": "ik-SES-iv SKREEN TYM"
+        "british": {
+          "ipa": "ɪkˈsesɪv skriːn taɪm",
+          "phonetic": "ik-SES-iv SKREEN TYM"
+        },
+        "american": {
+          "ipa": "ɪkˈsesɪv skriːn taɪm",
+          "phonetic": "ik-SES-iv SKREEN TYM"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**social isolation**",
       "pronunciation": {
-        "ipa": "ˈsəʊʃəl ˌaɪsəˈleɪʃən",
-        "phonetic": "SOH-shul eye-suh-LAY-shun"
+        "british": {
+          "ipa": "ˈsəʊʃəl ˌaɪsəˈleɪʃən",
+          "phonetic": "SOH-shul eye-suh-LAY-shun"
+        },
+        "american": {
+          "ipa": "ˈsəʊʃəl ˌaɪsəˈleɪʃən",
+          "phonetic": "SOH-shul eye-suh-LAY-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**reduced interaction**",
       "pronunciation": {
-        "ipa": "rɪˈdjuːst ˌɪntərˈækʃən",
-        "phonetic": "rih-DYOOST in-tur-AK-shun"
+        "british": {
+          "ipa": "rɪˈdjuːst ˌɪntərˈækʃən",
+          "phonetic": "rih-DYOOST in-tur-AK-shun"
+        },
+        "american": {
+          "ipa": "rɪˈdjuːst ˌɪntərˈækʃən",
+          "phonetic": "rih-DYOOST in-tur-AK-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**social studies**",
       "pronunciation": {
-        "ipa": "ˈsəʊʃəl ˈstʌdiz",
-        "phonetic": "SOH-shul STUD-eez"
+        "british": {
+          "ipa": "ˈsəʊʃəl ˈstʌdiz",
+          "phonetic": "SOH-shul STUD-eez"
+        },
+        "american": {
+          "ipa": "ˈsəʊʃəl ˈstʌdiz",
+          "phonetic": "SOH-shul STUD-eez"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**users**",
       "pronunciation": {
-        "ipa": "ˈjuːzəz",
-        "phonetic": "YOO-zurz"
+        "british": {
+          "ipa": "ˈjuːzəz",
+          "phonetic": "YOO-zurz"
+        },
+        "american": {
+          "ipa": "ˈjuːzəz",
+          "phonetic": "YOO-zurz"
+        }
       },
       "difficulty": "normal",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**negative effects**",
       "pronunciation": {
-        "ipa": "ˈneɡətɪv ɪˈfekts",
-        "phonetic": "NEG-uh-tiv ih-FEKTS"
+        "british": {
+          "ipa": "ˈneɡətɪv ɪˈfekts",
+          "phonetic": "NEG-uh-tiv ih-FEKTS"
+        },
+        "american": {
+          "ipa": "ˈneɡətɪv ɪˈfekts",
+          "phonetic": "NEG-uh-tiv ih-FEKTS"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**overuse**",
       "pronunciation": {
-        "ipa": "ˌəʊvəˈjuːs",
-        "phonetic": "oh-vur-YOOS"
+        "british": {
+          "ipa": "ˌəʊvəˈjuːs",
+          "phonetic": "oh-vur-YOOS"
+        },
+        "american": {
+          "ipa": "ˌəʊvəˈjuːs",
+          "phonetic": "oh-vur-YOOS"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**social concerns**",
       "pronunciation": {
-        "ipa": "ˈsəʊʃəl kənˈsɜːnz",
-        "phonetic": "SOH-shul kun-SURNZ"
+        "british": {
+          "ipa": "ˈsəʊʃəl kənˈsɜːnz",
+          "phonetic": "SOH-shul kun-SURNZ"
+        },
+        "american": {
+          "ipa": "ˈsəʊʃəl kənˈsɜːnz",
+          "phonetic": "SOH-shul kun-SURNZ"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**society**",
       "pronunciation": {
-        "ipa": "səˈsaɪəti",
-        "phonetic": "suh-SY-uh-tee"
+        "british": {
+          "ipa": "səˈsaɪəti",
+          "phonetic": "suh-SY-uh-tee"
+        },
+        "american": {
+          "ipa": "səˈsaɪəti",
+          "phonetic": "suh-SY-uh-tee"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**efforts**",
       "pronunciation": {
-        "ipa": "ˈefəts",
-        "phonetic": "EF-urts"
+        "british": {
+          "ipa": "ˈefəts",
+          "phonetic": "EF-urts"
+        },
+        "american": {
+          "ipa": "ˈefəts",
+          "phonetic": "EF-urts"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**historic buildings**",
       "pronunciation": {
-        "ipa": "hɪˈstɒrɪk ˈbɪldɪŋz",
-        "phonetic": "hih-STOR-ik BIL-dingz"
+        "british": {
+          "ipa": "hɪˈstɒrɪk ˈbɪldɪŋz",
+          "phonetic": "hih-STOR-ik BIL-dingz"
+        },
+        "american": {
+          "ipa": "hɪˈstɒrɪk ˈbɪldɪŋz",
+          "phonetic": "hih-STOR-ik BIL-dingz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**cultural heritage**",
       "pronunciation": {
-        "ipa": "ˈkʌltʃərəl ˈherɪtɪdʒ",
-        "phonetic": "KUL-chur-ul HER-ih-tij"
+        "british": {
+          "ipa": "ˈkʌltʃərəl ˈherɪtɪdʒ",
+          "phonetic": "KUL-chur-ul HER-ih-tij"
+        },
+        "american": {
+          "ipa": "ˈkʌltʃərəl ˈherɪtɪdʒ",
+          "phonetic": "KUL-chur-ul HER-ih-tij"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**preservation efforts**",
       "pronunciation": {
-        "ipa": "ˌprezəˈveɪʃən ˈefəts",
-        "phonetic": "prez-ur-VAY-shun EF-urts"
+        "british": {
+          "ipa": "ˌprezəˈveɪʃən ˈefəts",
+          "phonetic": "prez-ur-VAY-shun EF-urts"
+        },
+        "american": {
+          "ipa": "ˌprezəˈveɪʃən ˈefəts",
+          "phonetic": "prez-ur-VAY-shun EF-urts"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**historical value**",
       "pronunciation": {
-        "ipa": "hɪˈstɒrɪkəl ˈvæljuː",
-        "phonetic": "hih-STOR-ih-kul VAL-yoo"
+        "british": {
+          "ipa": "hɪˈstɒrɪkəl ˈvæljuː",
+          "phonetic": "hih-STOR-ih-kul VAL-yoo"
+        },
+        "american": {
+          "ipa": "hɪˈstɒrɪkəl ˈvæljuː",
+          "phonetic": "hih-STOR-ih-kul VAL-yoo"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**cultural identity**",
       "pronunciation": {
-        "ipa": "ˈkʌltʃərəl aɪˈdentəti",
-        "phonetic": "KUL-chur-ul eye-DEN-tuh-tee"
+        "british": {
+          "ipa": "ˈkʌltʃərəl aɪˈdentəti",
+          "phonetic": "KUL-chur-ul eye-DEN-tuh-tee"
+        },
+        "american": {
+          "ipa": "ˈkʌltʃərəl aɪˈdentəti",
+          "phonetic": "KUL-chur-ul eye-DEN-tuh-tee"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**cultural research**",
       "pronunciation": {
-        "ipa": "ˈkʌltʃərəl rɪˈsɜːtʃ",
-        "phonetic": "KUL-chur-ul rih-SURCH"
+        "british": {
+          "ipa": "ˈkʌltʃərəl rɪˈsɜːtʃ",
+          "phonetic": "KUL-chur-ul rih-SURCH"
+        },
+        "american": {
+          "ipa": "ˈkʌltʃərəl rɪˈsɜːtʃ",
+          "phonetic": "KUL-chur-ul rih-SURCH"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**communities**",
       "pronunciation": {
-        "ipa": "kəˈmjuːnətiz",
-        "phonetic": "kuh-MYOO-nuh-teez"
+        "british": {
+          "ipa": "kəˈmjuːnətiz",
+          "phonetic": "kuh-MYOO-nuh-teez"
+        },
+        "american": {
+          "ipa": "kəˈmjuːnətiz",
+          "phonetic": "kuh-MYOO-nuh-teez"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**preserved heritage**",
       "pronunciation": {
-        "ipa": "prɪˈzɜːvd ˈherɪtɪdʒ",
-        "phonetic": "prih-ZURVD HER-ih-tij"
+        "british": {
+          "ipa": "prɪˈzɜːvd ˈherɪtɪdʒ",
+          "phonetic": "prih-ZURVD HER-ih-tij"
+        },
+        "american": {
+          "ipa": "prɪˈzɜːvd ˈherɪtɪdʒ",
+          "phonetic": "prih-ZURVD HER-ih-tij"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**conservation work**",
       "pronunciation": {
-        "ipa": "ˌkɒnsəˈveɪʃən wɜːk",
-        "phonetic": "kon-sur-VAY-shun WURK"
+        "british": {
+          "ipa": "ˌkɒnsəˈveɪʃən wɜːk",
+          "phonetic": "kon-sur-VAY-shun WURK"
+        },
+        "american": {
+          "ipa": "ˌkɒnsəˈveɪʃən wɜːk",
+          "phonetic": "kon-sur-VAY-shun WURK"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**modern development**",
       "pronunciation": {
-        "ipa": "ˈmɒdən dɪˈveləpmənt",
-        "phonetic": "MOD-urn dih-VEL-up-ment"
+        "british": {
+          "ipa": "ˈmɒdən dɪˈveləpmənt",
+          "phonetic": "MOD-urn dih-VEL-up-ment"
+        },
+        "american": {
+          "ipa": "ˈmɒdən dɪˈveləpmənt",
+          "phonetic": "MOD-urn dih-VEL-up-ment"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**new construction**",
       "pronunciation": {
-        "ipa": "njuː kənˈstrʌkʃən",
-        "phonetic": "NYOO kun-STRUK-shun"
+        "british": {
+          "ipa": "njuː kənˈstrʌkʃən",
+          "phonetic": "NYOO kun-STRUK-shun"
+        },
+        "american": {
+          "ipa": "njuː kənˈstrʌkʃən",
+          "phonetic": "NYOO kun-STRUK-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**practical needs**",
       "pronunciation": {
-        "ipa": "ˈpræktɪkəl niːdz",
-        "phonetic": "PRAK-tih-kul NEEDZ"
+        "british": {
+          "ipa": "ˈpræktɪkəl niːdz",
+          "phonetic": "PRAK-tih-kul NEEDZ"
+        },
+        "american": {
+          "ipa": "ˈpræktɪkəl niːdz",
+          "phonetic": "PRAK-tih-kul NEEDZ"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**balanced approach**",
       "pronunciation": {
-        "ipa": "ˈbælənst əˈprəʊtʃ",
-        "phonetic": "BAL-unst uh-PROHCH"
+        "british": {
+          "ipa": "ˈbælənst əˈprəʊtʃ",
+          "phonetic": "BAL-unst uh-PROHCH"
+        },
+        "american": {
+          "ipa": "ˈbælənst əˈprəʊtʃ",
+          "phonetic": "BAL-unst uh-PROHCH"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**urban studies**",
       "pronunciation": {
-        "ipa": "ˈɜːbən ˈstʌdiz",
-        "phonetic": "UR-bun STUD-eez"
+        "british": {
+          "ipa": "ˈɜːbən ˈstʌdiz",
+          "phonetic": "UR-bun STUD-eez"
+        },
+        "american": {
+          "ipa": "ˈɜːbən ˈstʌdiz",
+          "phonetic": "UR-bun STUD-eez"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**cities**",
       "pronunciation": {
-        "ipa": "ˈsɪtiz",
-        "phonetic": "SIT-eez"
+        "british": {
+          "ipa": "ˈsɪtiz",
+          "phonetic": "SIT-eez"
+        },
+        "american": {
+          "ipa": "ˈsɪtiz",
+          "phonetic": "SIT-eez"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**development pressure**",
       "pronunciation": {
-        "ipa": "dɪˈveləpmənt ˈpreʃə",
-        "phonetic": "dih-VEL-up-ment PRESH-ur"
+        "british": {
+          "ipa": "dɪˈveləpmənt ˈpreʃə",
+          "phonetic": "dih-VEL-up-ment PRESH-ur"
+        },
+        "american": {
+          "ipa": "dɪˈveləpmənt ˈpreʃə",
+          "phonetic": "dih-VEL-up-ment PRESH-ur"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**modern facilities**",
       "pronunciation": {
-        "ipa": "ˈmɒdən fəˈsɪlətiz",
-        "phonetic": "MOD-urn fuh-SIL-uh-teez"
+        "british": {
+          "ipa": "ˈmɒdən fəˈsɪlətiz",
+          "phonetic": "MOD-urn fuh-SIL-uh-teez"
+        },
+        "american": {
+          "ipa": "ˈmɒdən fəˈsɪlətiz",
+          "phonetic": "MOD-urn fuh-SIL-uh-teez"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**modern needs**",
       "pronunciation": {
-        "ipa": "ˈmɒdən niːdz",
-        "phonetic": "MOD-urn NEEDZ"
+        "british": {
+          "ipa": "ˈmɒdən niːdz",
+          "phonetic": "MOD-urn NEEDZ"
+        },
+        "american": {
+          "ipa": "ˈmɒdən niːdz",
+          "phonetic": "MOD-urn NEEDZ"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**resources**",
       "pronunciation": {
-        "ipa": "rɪˈsɔːsɪz",
-        "phonetic": "rih-SOR-siz"
+        "british": {
+          "ipa": "rɪˈsɔːsɪz",
+          "phonetic": "rih-SOR-siz"
+        },
+        "american": {
+          "ipa": "rɪˈsɔːsɪz",
+          "phonetic": "rih-SOR-siz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
+    },
+    {
+      "english": "**maintenance costs**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmeɪntənəns kɒsts",
+          "phonetic": "MAYN-tuh-nuns KOSTS"
+        },
+        "american": {
+          "ipa": "ˈmeɪntənəns kɒsts",
+          "phonetic": "MAYN-tuh-nuns KOSTS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary-with-ipa"
+    },
+    {
+      "english": "**safety hazards**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈseɪfti ˈhæzədz",
+          "phonetic": "SAYF-tee HAZ-urdz"
+        },
+        "american": {
+          "ipa": "ˈseɪfti ˈhæzədz",
+          "phonetic": "SAYF-tee HAZ-urdz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary-with-ipa"
+    },
+    {
+      "english": "**hinders progress**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhɪndəz ˈprəʊɡres",
+          "phonetic": "HIN-durz PROH-gres"
+        },
+        "american": {
+          "ipa": "ˈhɪndəz ˈprəʊɡres",
+          "phonetic": "HIN-durz PROH-gres"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**early marriage**",
       "pronunciation": {
-        "ipa": "ˈɜːli ˈmærɪdʒ",
-        "phonetic": "UR-lee MAR-ij"
+        "british": {
+          "ipa": "ˈɜːli ˈmærɪdʒ",
+          "phonetic": "UR-lee MAR-ij"
+        },
+        "american": {
+          "ipa": "ˈɜːli ˈmærɪdʒ",
+          "phonetic": "UR-lee MAR-ij"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**married couples**",
       "pronunciation": {
-        "ipa": "ˈmærid ˈkʌpəlz",
-        "phonetic": "MAR-eed KUP-ulz"
+        "british": {
+          "ipa": "ˈmærid ˈkʌpəlz",
+          "phonetic": "MAR-eed KUP-ulz"
+        },
+        "american": {
+          "ipa": "ˈmærid ˈkʌpəlz",
+          "phonetic": "MAR-eed KUP-ulz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**emotional support**",
       "pronunciation": {
-        "ipa": "ɪˈməʊʃənəl səˈpɔːt",
-        "phonetic": "ih-MOH-shun-ul suh-PORT"
+        "british": {
+          "ipa": "ɪˈməʊʃənəl səˈpɔːt",
+          "phonetic": "ih-MOH-shun-ul suh-PORT"
+        },
+        "american": {
+          "ipa": "ɪˈməʊʃənəl səˈpɔːt",
+          "phonetic": "ih-MOH-shun-ul suh-PORT"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**stable relationships**",
       "pronunciation": {
-        "ipa": "ˈsteɪbəl rɪˈleɪʃənʃɪps",
-        "phonetic": "STAY-bul rih-LAY-shun-ships"
+        "british": {
+          "ipa": "ˈsteɪbəl rɪˈleɪʃənʃɪps",
+          "phonetic": "STAY-bul rih-LAY-shun-ships"
+        },
+        "american": {
+          "ipa": "ˈsteɪbəl rɪˈleɪʃənʃɪps",
+          "phonetic": "STAY-bul rih-LAY-shun-ships"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**family research**",
       "pronunciation": {
-        "ipa": "ˈfæməli rɪˈsɜːtʃ",
-        "phonetic": "FAM-uh-lee rih-SURCH"
+        "british": {
+          "ipa": "ˈfæməli rɪˈsɜːtʃ",
+          "phonetic": "FAM-uh-lee rih-SURCH"
+        },
+        "american": {
+          "ipa": "ˈfæməli rɪˈsɜːtʃ",
+          "phonetic": "FAM-uh-lee rih-SURCH"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**young couples**",
       "pronunciation": {
-        "ipa": "jʌŋ ˈkʌpəlz",
-        "phonetic": "YUNG KUP-ulz"
+        "british": {
+          "ipa": "jʌŋ ˈkʌpəlz",
+          "phonetic": "YUNG KUP-ulz"
+        },
+        "american": {
+          "ipa": "jʌŋ ˈkʌpəlz",
+          "phonetic": "YUNG KUP-ulz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**partnership benefits**",
       "pronunciation": {
-        "ipa": "ˈpɑːtnəʃɪp ˈbenɪfɪts",
-        "phonetic": "PART-nur-ship BEN-ih-fits"
+        "british": {
+          "ipa": "ˈpɑːtnəʃɪp ˈbenɪfɪts",
+          "phonetic": "PART-nur-ship BEN-ih-fits"
+        },
+        "american": {
+          "ipa": "ˈpɑːtnəʃɪp ˈbenɪfɪts",
+          "phonetic": "PART-nur-ship BEN-ih-fits"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**committed relationships**",
       "pronunciation": {
-        "ipa": "kəˈmɪtɪd rɪˈleɪʃənʃɪps",
-        "phonetic": "kuh-MIT-id rih-LAY-shun-ships"
+        "british": {
+          "ipa": "kəˈmɪtɪd rɪˈleɪʃənʃɪps",
+          "phonetic": "kuh-MIT-id rih-LAY-shun-ships"
+        },
+        "american": {
+          "ipa": "kəˈmɪtɪd rɪˈleɪʃənʃɪps",
+          "phonetic": "kuh-MIT-id rih-LAY-shun-ships"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**young people**",
       "pronunciation": {
-        "ipa": "jʌŋ ˈpiːpəl",
-        "phonetic": "YUNG PEE-pul"
+        "british": {
+          "ipa": "jʌŋ ˈpiːpəl",
+          "phonetic": "YUNG PEE-pul"
+        },
+        "american": {
+          "ipa": "jʌŋ ˈpiːpəl",
+          "phonetic": "YUNG PEE-pul"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**limited opportunities**",
       "pronunciation": {
-        "ipa": "ˈlɪmɪtɪd ˌɒpəˈtjuːnətiz",
-        "phonetic": "LIM-ih-tid op-ur-TOO-nuh-teez"
+        "british": {
+          "ipa": "ˈlɪmɪtɪd ˌɒpəˈtjuːnətiz",
+          "phonetic": "LIM-ih-tid op-ur-TOO-nuh-teez"
+        },
+        "american": {
+          "ipa": "ˈlɪmɪtɪd ˌɒpəˈtjuːnətiz",
+          "phonetic": "LIM-ih-tid op-ur-TOO-nuh-teez"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**social research**",
       "pronunciation": {
-        "ipa": "ˈsəʊʃəl rɪˈsɜːtʃ",
-        "phonetic": "SOH-shul rih-SURCH"
+        "british": {
+          "ipa": "ˈsəʊʃəl rɪˈsɜːtʃ",
+          "phonetic": "SOH-shul rih-SURCH"
+        },
+        "american": {
+          "ipa": "ˈsəʊʃəl rɪˈsɜːtʃ",
+          "phonetic": "SOH-shul rih-SURCH"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**youth**",
       "pronunciation": {
-        "ipa": "juːθ",
-        "phonetic": "YOOTH"
+        "british": {
+          "ipa": "juːθ",
+          "phonetic": "YOOTH"
+        },
+        "american": {
+          "ipa": "juːθ",
+          "phonetic": "YOOTH"
+        }
       },
       "difficulty": "normal",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**restricted growth**",
       "pronunciation": {
-        "ipa": "rɪˈstrɪktɪd ɡrəʊθ",
-        "phonetic": "rih-STRIK-tid GROHTH"
+        "british": {
+          "ipa": "rɪˈstrɪktɪd ɡrəʊθ",
+          "phonetic": "rih-STRIK-tid GROHTH"
+        },
+        "american": {
+          "ipa": "rɪˈstrɪktɪd ɡrəʊθ",
+          "phonetic": "rih-STRIK-tid GROHTH"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**early commitment**",
       "pronunciation": {
-        "ipa": "ˈɜːli kəˈmɪtmənt",
-        "phonetic": "UR-lee kuh-MIT-ment"
+        "british": {
+          "ipa": "ˈɜːli kəˈmɪtmənt",
+          "phonetic": "UR-lee kuh-MIT-ment"
+        },
+        "american": {
+          "ipa": "ˈɜːli kəˈmɪtmənt",
+          "phonetic": "UR-lee kuh-MIT-ment"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**family support**",
       "pronunciation": {
-        "ipa": "ˈfæməli səˈpɔːt",
-        "phonetic": "FAM-uh-lee suh-PORT"
+        "british": {
+          "ipa": "ˈfæməli səˈpɔːt",
+          "phonetic": "FAM-uh-lee suh-PORT"
+        },
+        "american": {
+          "ipa": "ˈfæməli səˈpɔːt",
+          "phonetic": "FAM-uh-lee suh-PORT"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**personal growth**",
       "pronunciation": {
-        "ipa": "ˈpɜːsənəl ɡrəʊθ",
-        "phonetic": "PUR-sun-ul GROHTH"
+        "british": {
+          "ipa": "ˈpɜːsənəl ɡrəʊθ",
+          "phonetic": "PUR-sun-ul GROHTH"
+        },
+        "american": {
+          "ipa": "ˈpɜːsənəl ɡrəʊθ",
+          "phonetic": "PUR-sun-ul GROHTH"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**time**",
       "pronunciation": {
-        "ipa": "taɪm",
-        "phonetic": "TYM"
+        "british": {
+          "ipa": "taɪm",
+          "phonetic": "TYM"
+        },
+        "american": {
+          "ipa": "taɪm",
+          "phonetic": "TYM"
+        }
       },
       "difficulty": "normal",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**tourism**",
       "pronunciation": {
-        "ipa": "ˈtʊərɪzəm",
-        "phonetic": "TOOR-iz-um"
+        "british": {
+          "ipa": "ˈtʊərɪzəm",
+          "phonetic": "TOOR-iz-um"
+        },
+        "american": {
+          "ipa": "ˈtʊərɪzəm",
+          "phonetic": "TOOR-iz-um"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**economic growth**",
       "pronunciation": {
-        "ipa": "ˌiːkəˈnɒmɪk ɡrəʊθ",
-        "phonetic": "ee-kuh-NOM-ik GROHTH"
+        "british": {
+          "ipa": "ˌiːkəˈnɒmɪk ɡrəʊθ",
+          "phonetic": "ee-kuh-NOM-ik GROHTH"
+        },
+        "american": {
+          "ipa": "ˌiːkəˈnɒmɪk ɡrəʊθ",
+          "phonetic": "ee-kuh-NOM-ik GROHTH"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**tourism industry**",
       "pronunciation": {
-        "ipa": "ˈtʊərɪzəm ˈɪndəstri",
-        "phonetic": "TOOR-iz-um IN-dus-tree"
+        "british": {
+          "ipa": "ˈtʊərɪzəm ˈɪndəstri",
+          "phonetic": "TOOR-iz-um IN-dus-tree"
+        },
+        "american": {
+          "ipa": "ˈtʊərɪzəm ˈɪndəstri",
+          "phonetic": "TOOR-iz-um IN-dus-tree"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**job creation**",
       "pronunciation": {
-        "ipa": "dʒɒb kriˈeɪʃən",
-        "phonetic": "JOB kree-AY-shun"
+        "british": {
+          "ipa": "dʒɒb kriˈeɪʃən",
+          "phonetic": "JOB kree-AY-shun"
+        },
+        "american": {
+          "ipa": "dʒɒb kriˈeɪʃən",
+          "phonetic": "JOB kree-AY-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**improved income**",
       "pronunciation": {
-        "ipa": "ɪmˈpruːvd ˈɪnkʌm",
-        "phonetic": "im-PROOVD IN-kum"
+        "british": {
+          "ipa": "ɪmˈpruːvd ˈɪnkʌm",
+          "phonetic": "im-PROOVD IN-kum"
+        },
+        "american": {
+          "ipa": "ɪmˈpruːvd ˈɪnkʌm",
+          "phonetic": "im-PROOVD IN-kum"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**economic research**",
       "pronunciation": {
-        "ipa": "ˌiːkəˈnɒmɪk rɪˈsɜːtʃ",
-        "phonetic": "ee-kuh-NOM-ik rih-SURCH"
+        "british": {
+          "ipa": "ˌiːkəˈnɒmɪk rɪˈsɜːtʃ",
+          "phonetic": "ee-kuh-NOM-ik rih-SURCH"
+        },
+        "american": {
+          "ipa": "ˌiːkəˈnɒmɪk rɪˈsɜːtʃ",
+          "phonetic": "ee-kuh-NOM-ik rih-SURCH"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**developing countries**",
       "pronunciation": {
-        "ipa": "dɪˈveləpɪŋ ˈkʌntriz",
-        "phonetic": "dih-VEL-up-ing KUN-treez"
+        "british": {
+          "ipa": "dɪˈveləpɪŋ ˈkʌntriz",
+          "phonetic": "dih-VEL-up-ing KUN-treez"
+        },
+        "american": {
+          "ipa": "dɪˈveləpɪŋ ˈkʌntriz",
+          "phonetic": "dih-VEL-up-ing KUN-treez"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**economic benefits**",
       "pronunciation": {
-        "ipa": "ˌiːkəˈnɒmɪk ˈbenɪfɪts",
-        "phonetic": "ee-kuh-NOM-ik BEN-ih-fits"
+        "british": {
+          "ipa": "ˌiːkəˈnɒmɪk ˈbenɪfɪts",
+          "phonetic": "ee-kuh-NOM-ik BEN-ih-fits"
+        },
+        "american": {
+          "ipa": "ˌiːkəˈnɒmɪk ˈbenɪfɪts",
+          "phonetic": "ee-kuh-NOM-ik BEN-ih-fits"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**tourism revenue**",
       "pronunciation": {
-        "ipa": "ˈtʊərɪzəm ˈrevənjuː",
-        "phonetic": "TOOR-iz-um REV-uh-noo"
+        "british": {
+          "ipa": "ˈtʊərɪzəm ˈrevənjuː",
+          "phonetic": "TOOR-iz-um REV-uh-noo"
+        },
+        "american": {
+          "ipa": "ˈtʊərɪzəm ˈrevənjuː",
+          "phonetic": "TOOR-iz-um REV-uh-noo"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**tourism development**",
       "pronunciation": {
-        "ipa": "ˈtʊərɪzəm dɪˈveləpmənt",
-        "phonetic": "TOOR-iz-um dih-VEL-up-ment"
+        "british": {
+          "ipa": "ˈtʊərɪzəm dɪˈveləpmənt",
+          "phonetic": "TOOR-iz-um dih-VEL-up-ment"
+        },
+        "american": {
+          "ipa": "ˈtʊərɪzəm dɪˈveləpmənt",
+          "phonetic": "TOOR-iz-um dih-VEL-up-ment"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**mass tourism**",
       "pronunciation": {
-        "ipa": "mæs ˈtʊərɪzəm",
-        "phonetic": "MASS TOOR-iz-um"
+        "british": {
+          "ipa": "mæs ˈtʊərɪzəm",
+          "phonetic": "MASS TOOR-iz-um"
+        },
+        "american": {
+          "ipa": "mæs ˈtʊərɪzəm",
+          "phonetic": "MASS TOOR-iz-um"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**environmental damage**",
       "pronunciation": {
-        "ipa": "ɪnˌvaɪrənˈmentəl ˈdæmɪdʒ",
-        "phonetic": "in-vy-run-MEN-tul DAM-ij"
+        "british": {
+          "ipa": "ɪnˌvaɪrənˈmentəl ˈdæmɪdʒ",
+          "phonetic": "in-vy-run-MEN-tul DAM-ij"
+        },
+        "american": {
+          "ipa": "ɪnˌvaɪrənˈmentəl ˈdæmɪdʒ",
+          "phonetic": "in-vy-run-MEN-tul DAM-ij"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**sustainability concerns**",
       "pronunciation": {
-        "ipa": "səˌsteɪnəˈbɪləti kənˈsɜːnz",
-        "phonetic": "suh-stayn-uh-BIL-uh-tee kun-SURNZ"
+        "british": {
+          "ipa": "səˌsteɪnəˈbɪləti kənˈsɜːnz",
+          "phonetic": "suh-stayn-uh-BIL-uh-tee kun-SURNZ"
+        },
+        "american": {
+          "ipa": "səˌsteɪnəˈbɪləti kənˈsɜːnz",
+          "phonetic": "suh-stayn-uh-BIL-uh-tee kun-SURNZ"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**environmental studies**",
       "pronunciation": {
-        "ipa": "ɪnˌvaɪrənˈmentəl ˈstʌdiz",
-        "phonetic": "in-vy-run-MEN-tul STUD-eez"
+        "british": {
+          "ipa": "ɪnˌvaɪrənˈmentəl ˈstʌdiz",
+          "phonetic": "in-vy-run-MEN-tul STUD-eez"
+        },
+        "american": {
+          "ipa": "ɪnˌvaɪrənˈmentəl ˈstʌdiz",
+          "phonetic": "in-vy-run-MEN-tul STUD-eez"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**tourist destinations**",
       "pronunciation": {
-        "ipa": "ˈtʊərɪst ˌdestɪˈneɪʃənz",
-        "phonetic": "TOOR-ist des-tih-NAY-shunz"
+        "british": {
+          "ipa": "ˈtʊərɪst ˌdestɪˈneɪʃənz",
+          "phonetic": "TOOR-ist des-tih-NAY-shunz"
+        },
+        "american": {
+          "ipa": "ˈtʊərɪst ˌdestɪˈneɪʃənz",
+          "phonetic": "TOOR-ist des-tih-NAY-shunz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**negative impacts**",
       "pronunciation": {
-        "ipa": "ˈneɡətɪv ˈɪmpækts",
-        "phonetic": "NEG-uh-tiv IM-pakts"
+        "british": {
+          "ipa": "ˈneɡətɪv ˈɪmpækts",
+          "phonetic": "NEG-uh-tiv IM-pakts"
+        },
+        "american": {
+          "ipa": "ˈneɡətɪv ˈɪmpækts",
+          "phonetic": "NEG-uh-tiv IM-pakts"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**tourism pressure**",
       "pronunciation": {
-        "ipa": "ˈtʊərɪzəm ˈpreʃə",
-        "phonetic": "TOOR-iz-um PRESH-ur"
+        "british": {
+          "ipa": "ˈtʊərɪzəm ˈpreʃə",
+          "phonetic": "TOOR-iz-um PRESH-ur"
+        },
+        "american": {
+          "ipa": "ˈtʊərɪzəm ˈpreʃə",
+          "phonetic": "TOOR-iz-um PRESH-ur"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**environmental protection**",
       "pronunciation": {
-        "ipa": "ɪnˌvaɪrənˈmentəl prəˈtekʃən",
-        "phonetic": "in-vy-run-MEN-tul pruh-TEK-shun"
+        "british": {
+          "ipa": "ɪnˌvaɪrənˈmentəl prəˈtekʃən",
+          "phonetic": "in-vy-run-MEN-tul pruh-TEK-shun"
+        },
+        "american": {
+          "ipa": "ɪnˌvaɪrənˈmentəl prəˈtekʃən",
+          "phonetic": "in-vy-run-MEN-tul pruh-TEK-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**television**",
       "pronunciation": {
-        "ipa": "ˈtelɪvɪʒən",
-        "phonetic": "TEL-ih-vizh-un"
+        "british": {
+          "ipa": "ˈtelɪvɪʒən",
+          "phonetic": "TEL-ih-vizh-un"
+        },
+        "american": {
+          "ipa": "ˈtelɪvɪʒən",
+          "phonetic": "TEL-ih-vizh-un"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**stress reduction**",
       "pronunciation": {
-        "ipa": "stres rɪˈdʌkʃən",
-        "phonetic": "STRESS rih-DUK-shun"
+        "british": {
+          "ipa": "stres rɪˈdʌkʃən",
+          "phonetic": "STRESS rih-DUK-shun"
+        },
+        "american": {
+          "ipa": "stres rɪˈdʌkʃən",
+          "phonetic": "STRESS rih-DUK-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**improved wellbeing**",
       "pronunciation": {
-        "ipa": "ɪmˈpruːvd ˌwelˈbiːɪŋ",
-        "phonetic": "im-PROOVD wel-BEE-ing"
+        "british": {
+          "ipa": "ɪmˈpruːvd ˌwelˈbiːɪŋ",
+          "phonetic": "im-PROOVD wel-BEE-ing"
+        },
+        "american": {
+          "ipa": "ɪmˈpruːvd ˌwelˈbiːɪŋ",
+          "phonetic": "im-PROOVD wel-BEE-ing"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**relaxation**",
       "pronunciation": {
-        "ipa": "ˌriːlækˈseɪʃən",
-        "phonetic": "ree-lak-SAY-shun"
+        "british": {
+          "ipa": "ˌriːlækˈseɪʃən",
+          "phonetic": "ree-lak-SAY-shun"
+        },
+        "american": {
+          "ipa": "ˌriːlækˈseɪʃən",
+          "phonetic": "ree-lak-SAY-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**entertainment programs**",
       "pronunciation": {
-        "ipa": "ˌentəˈteɪnmənt ˈprəʊɡræmz",
-        "phonetic": "en-tur-TAYN-ment PROH-gramz"
+        "british": {
+          "ipa": "ˌentəˈteɪnmənt ˈprəʊɡræmz",
+          "phonetic": "en-tur-TAYN-ment PROH-gramz"
+        },
+        "american": {
+          "ipa": "ˌentəˈteɪnmənt ˈprəʊɡræmz",
+          "phonetic": "en-tur-TAYN-ment PROH-gramz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
-      "english": "**lonely people**",
+      "english": "**isolated individuals**",
       "pronunciation": {
-        "ipa": "ˈləʊnli ˈpiːpəl",
-        "phonetic": "LOHN-lee PEE-pul"
+        "british": {
+          "ipa": "ˈaɪsəleɪtɪd ˌɪndɪˈvɪdʒuəlz",
+          "phonetic": "EYE-suh-lay-tid in-dih-VIJ-oo-ulz"
+        },
+        "american": {
+          "ipa": "ˈaɪsəleɪtɪd ˌɪndɪˈvɪdʒuəlz",
+          "phonetic": "EYE-suh-lay-tid in-dih-VIJ-oo-ulz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**social connection**",
       "pronunciation": {
-        "ipa": "ˈsəʊʃəl kəˈnekʃən",
-        "phonetic": "SOH-shul kuh-NEK-shun"
+        "british": {
+          "ipa": "ˈsəʊʃəl kəˈnekʃən",
+          "phonetic": "SOH-shul kuh-NEK-shun"
+        },
+        "american": {
+          "ipa": "ˈsəʊʃəl kəˈnekʃən",
+          "phonetic": "SOH-shul kuh-NEK-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**reduced isolation**",
       "pronunciation": {
-        "ipa": "rɪˈdjuːst ˌaɪsəˈleɪʃən",
-        "phonetic": "rih-DYOOST eye-suh-LAY-shun"
+        "british": {
+          "ipa": "rɪˈdjuːst ˌaɪsəˈleɪʃən",
+          "phonetic": "rih-DYOOST eye-suh-LAY-shun"
+        },
+        "american": {
+          "ipa": "rɪˈdjuːst ˌaɪsəˈleɪʃən",
+          "phonetic": "rih-DYOOST eye-suh-LAY-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**individuals**",
       "pronunciation": {
-        "ipa": "ˌɪndɪˈvɪdʒuəlz",
-        "phonetic": "in-dih-VIJ-oo-ulz"
+        "british": {
+          "ipa": "ˌɪndɪˈvɪdʒuəlz",
+          "phonetic": "in-dih-VIJ-oo-ulz"
+        },
+        "american": {
+          "ipa": "ˌɪndɪˈvɪdʒuəlz",
+          "phonetic": "in-dih-VIJ-oo-ulz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**regular viewing**",
       "pronunciation": {
-        "ipa": "ˈreɡjʊlə ˈvjuːɪŋ",
-        "phonetic": "REG-yoo-lur VYOO-ing"
+        "british": {
+          "ipa": "ˈreɡjʊlə ˈvjuːɪŋ",
+          "phonetic": "REG-yoo-lur VYOO-ing"
+        },
+        "american": {
+          "ipa": "ˈreɡjʊlə ˈvjuːɪŋ",
+          "phonetic": "REG-yoo-lur VYOO-ing"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**entertainment value**",
       "pronunciation": {
-        "ipa": "ˌentəˈteɪnmənt ˈvæljuː",
-        "phonetic": "en-tur-TAYN-ment VAL-yoo"
+        "british": {
+          "ipa": "ˌentəˈteɪnmənt ˈvæljuː",
+          "phonetic": "en-tur-TAYN-ment VAL-yoo"
+        },
+        "american": {
+          "ipa": "ˌentəˈteɪnmənt ˈvæljuː",
+          "phonetic": "en-tur-TAYN-ment VAL-yoo"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
+    },
+    {
+      "english": "**inactive lifestyle**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈæktɪv ˈlaɪfstaɪl",
+          "phonetic": "in-AK-tiv LYF-styl"
+        },
+        "american": {
+          "ipa": "ɪnˈæktɪv ˈlaɪfstaɪl",
+          "phonetic": "in-AK-tiv LYF-styl"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary-with-ipa"
+    },
+    {
+      "english": "**health issues**",
+      "pronunciation": {
+        "british": {
+          "ipa": "helθ ˈɪʃuːz",
+          "phonetic": "HELTH ISH-ooz"
+        },
+        "american": {
+          "ipa": "helθ ˈɪʃuːz",
+          "phonetic": "HELTH ISH-ooz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary-with-ipa"
+    },
+    {
+      "english": "**addiction**",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈdɪkʃən",
+          "phonetic": "uh-DIK-shun"
+        },
+        "american": {
+          "ipa": "əˈdɪkʃən",
+          "phonetic": "uh-DIK-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary-with-ipa"
+    },
+    {
+      "english": "**reduced activity**",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈdjuːst ækˈtɪvəti",
+          "phonetic": "rih-DYOOST ak-TIV-uh-tee"
+        },
+        "american": {
+          "ipa": "rɪˈdjuːst ækˈtɪvəti",
+          "phonetic": "rih-DYOOST ak-TIV-uh-tee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary-with-ipa"
+    },
+    {
+      "english": "**passive behavior**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpæsɪv bɪˈheɪvjə",
+          "phonetic": "PAS-iv bih-HAYV-yur"
+        },
+        "american": {
+          "ipa": "ˈpæsɪv bɪˈheɪvjə",
+          "phonetic": "PAS-iv bih-HAYV-yur"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**mark deduction**",
       "pronunciation": {
-        "ipa": "mɑːk dɪˈdʌkʃən",
-        "phonetic": "MARK dih-DUK-shun"
+        "british": {
+          "ipa": "mɑːk dɪˈdʌkʃən",
+          "phonetic": "MARK dih-DUK-shun"
+        },
+        "american": {
+          "ipa": "mɑːk dɪˈdʌkʃən",
+          "phonetic": "MARK dih-DUK-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**academic discipline**",
       "pronunciation": {
-        "ipa": "ˌækəˈdemɪk ˈdɪsəplɪn",
-        "phonetic": "ak-uh-DEM-ik DIS-uh-plin"
+        "british": {
+          "ipa": "ˌækəˈdemɪk ˈdɪsəplɪn",
+          "phonetic": "ak-uh-DEM-ik DIS-uh-plin"
+        },
+        "american": {
+          "ipa": "ˌækəˈdemɪk ˈdɪsəplɪn",
+          "phonetic": "ak-uh-DEM-ik DIS-uh-plin"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**late submissions**",
       "pronunciation": {
-        "ipa": "leɪt səbˈmɪʃənz",
-        "phonetic": "LAYT sub-MISH-unz"
+        "british": {
+          "ipa": "leɪt səbˈmɪʃənz",
+          "phonetic": "LAYT sub-MISH-unz"
+        },
+        "american": {
+          "ipa": "leɪt səbˈmɪʃənz",
+          "phonetic": "LAYT sub-MISH-unz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**student responsibility**",
       "pronunciation": {
-        "ipa": "ˈstjuːdənt rɪˌspɒnsəˈbɪləti",
-        "phonetic": "STOO-dunt rih-spon-suh-BIL-uh-tee"
+        "british": {
+          "ipa": "ˈstjuːdənt rɪˌspɒnsəˈbɪləti",
+          "phonetic": "STOO-dunt rih-spon-suh-BIL-uh-tee"
+        },
+        "american": {
+          "ipa": "ˈstjuːdənt rɪˌspɒnsəˈbɪləti",
+          "phonetic": "STOO-dunt rih-spon-suh-BIL-uh-tee"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**improved habits**",
       "pronunciation": {
-        "ipa": "ɪmˈpruːvd ˈhæbɪts",
-        "phonetic": "im-PROOVD HAB-its"
+        "british": {
+          "ipa": "ɪmˈpruːvd ˈhæbɪts",
+          "phonetic": "im-PROOVD HAB-its"
+        },
+        "american": {
+          "ipa": "ɪmˈpruːvd ˈhæbɪts",
+          "phonetic": "im-PROOVD HAB-its"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**better punctuality**",
       "pronunciation": {
-        "ipa": "ˈbetə ˌpʌŋktʃuˈæləti",
-        "phonetic": "BET-ur pungk-choo-AL-uh-tee"
+        "british": {
+          "ipa": "ˈbetə ˌpʌŋktʃuˈæləti",
+          "phonetic": "BET-ur pungk-choo-AL-uh-tee"
+        },
+        "american": {
+          "ipa": "ˈbetə ˌpʌŋktʃuˈæləti",
+          "phonetic": "BET-ur pungk-choo-AL-uh-tee"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**clear deadlines**",
       "pronunciation": {
-        "ipa": "klɪə ˈdedlaɪnz",
-        "phonetic": "KLEER DED-lynz"
+        "british": {
+          "ipa": "klɪə ˈdedlaɪnz",
+          "phonetic": "KLEER DED-lynz"
+        },
+        "american": {
+          "ipa": "klɪə ˈdedlaɪnz",
+          "phonetic": "KLEER DED-lynz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
-      "english": "**other actions**",
+      "english": "**alternative measures**",
       "pronunciation": {
-        "ipa": "ˈʌðə ˈækʃənz",
-        "phonetic": "UTH-ur AK-shunz"
+        "british": {
+          "ipa": "ɔːlˈtɜːnətɪv ˈmeʒəz",
+          "phonetic": "awl-TUR-nuh-tiv MEZH-urz"
+        },
+        "american": {
+          "ipa": "ɔːlˈtɜːnətɪv ˈmeʒəz",
+          "phonetic": "awl-TUR-nuh-tiv MEZH-urz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**deadline extensions**",
       "pronunciation": {
-        "ipa": "ˈdedlaɪn ɪkˈstenʃənz",
-        "phonetic": "DED-lyn ik-STEN-shunz"
+        "british": {
+          "ipa": "ˈdedlaɪn ɪkˈstenʃənz",
+          "phonetic": "DED-lyn ik-STEN-shunz"
+        },
+        "american": {
+          "ipa": "ˈdedlaɪn ɪkˈstenʃənz",
+          "phonetic": "DED-lyn ik-STEN-shunz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**positive motivation**",
       "pronunciation": {
-        "ipa": "ˈpɒzətɪv ˌməʊtɪˈveɪʃən",
-        "phonetic": "POZ-ih-tiv moh-tih-VAY-shun"
+        "british": {
+          "ipa": "ˈpɒzətɪv ˌməʊtɪˈveɪʃən",
+          "phonetic": "POZ-ih-tiv moh-tih-VAY-shun"
+        },
+        "american": {
+          "ipa": "ˈpɒzətɪv ˌməʊtɪˈveɪʃən",
+          "phonetic": "POZ-ih-tiv moh-tih-VAY-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**better planning**",
       "pronunciation": {
-        "ipa": "ˈbetə ˈplænɪŋ",
-        "phonetic": "BET-ur PLAN-ing"
+        "british": {
+          "ipa": "ˈbetə ˈplænɪŋ",
+          "phonetic": "BET-ur PLAN-ing"
+        },
+        "american": {
+          "ipa": "ˈbetə ˈplænɪŋ",
+          "phonetic": "BET-ur PLAN-ing"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**universities**",
       "pronunciation": {
-        "ipa": "ˌjuːnɪˈvɜːsətiz",
-        "phonetic": "yoo-nih-VUR-suh-teez"
+        "british": {
+          "ipa": "ˌjuːnɪˈvɜːsətiz",
+          "phonetic": "yoo-nih-VUR-suh-teez"
+        },
+        "american": {
+          "ipa": "ˌjuːnɪˈvɜːsətiz",
+          "phonetic": "yoo-nih-VUR-suh-teez"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**improved rates**",
       "pronunciation": {
-        "ipa": "ɪmˈpruːvd reɪts",
-        "phonetic": "im-PROOVD RAYTS"
+        "british": {
+          "ipa": "ɪmˈpruːvd reɪts",
+          "phonetic": "im-PROOVD RAYTS"
+        },
+        "american": {
+          "ipa": "ɪmˈpruːvd reɪts",
+          "phonetic": "im-PROOVD RAYTS"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**flexible policies**",
       "pronunciation": {
-        "ipa": "ˈfleksəbəl ˈpɒləsiz",
-        "phonetic": "FLEK-suh-bul POL-uh-seez"
+        "british": {
+          "ipa": "ˈfleksəbəl ˈpɒləsiz",
+          "phonetic": "FLEK-suh-bul POL-uh-seez"
+        },
+        "american": {
+          "ipa": "ˈfleksəbəl ˈpɒləsiz",
+          "phonetic": "FLEK-suh-bul POL-uh-seez"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**accountability**",
       "pronunciation": {
-        "ipa": "əˌkaʊntəˈbɪləti",
-        "phonetic": "uh-kown-tuh-BIL-uh-tee"
+        "british": {
+          "ipa": "əˌkaʊntəˈbɪləti",
+          "phonetic": "uh-kown-tuh-BIL-uh-tee"
+        },
+        "american": {
+          "ipa": "əˌkaʊntəˈbɪləti",
+          "phonetic": "uh-kown-tuh-BIL-uh-tee"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**flexibility**",
       "pronunciation": {
-        "ipa": "ˌfleksəˈbɪləti",
-        "phonetic": "flek-suh-BIL-uh-tee"
+        "british": {
+          "ipa": "ˌfleksəˈbɪləti",
+          "phonetic": "flek-suh-BIL-uh-tee"
+        },
+        "american": {
+          "ipa": "ˌfleksəˈbɪləti",
+          "phonetic": "flek-suh-BIL-uh-tee"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**academic institutions**",
       "pronunciation": {
-        "ipa": "ˌækəˈdemɪk ˌɪnstɪˈtjuːʃənz",
-        "phonetic": "ak-uh-DEM-ik in-stuh-TOO-shunz"
+        "british": {
+          "ipa": "ˌækəˈdemɪk ˌɪnstɪˈtjuːʃənz",
+          "phonetic": "ak-uh-DEM-ik in-stuh-TOO-shunz"
+        },
+        "american": {
+          "ipa": "ˌækəˈdemɪk ˌɪnstɪˈtjuːʃənz",
+          "phonetic": "ak-uh-DEM-ik in-stuh-TOO-shunz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
+    },
+    {
+      "english": "**added stress**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈædɪd stres",
+          "phonetic": "AD-id STRESS"
+        },
+        "american": {
+          "ipa": "ˈædɪd stres",
+          "phonetic": "AD-id STRESS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary-with-ipa"
+    },
+    {
+      "english": "**unfair penalties**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʌnˈfeə ˈpenəltiz",
+          "phonetic": "un-FAIR PEN-ul-teez"
+        },
+        "american": {
+          "ipa": "ʌnˈfeə ˈpenəltiz",
+          "phonetic": "un-FAIR PEN-ul-teez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary-with-ipa"
+    },
+    {
+      "english": "**discouragement**",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪsˈkʌrɪdʒmənt",
+          "phonetic": "dis-KUR-ij-ment"
+        },
+        "american": {
+          "ipa": "dɪsˈkʌrɪdʒmənt",
+          "phonetic": "dis-KUR-ij-ment"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**experiential learning**",
       "pronunciation": {
-        "ipa": "ɪkˌspɪəriˈenʃəl ˈlɜːnɪŋ",
-        "phonetic": "ik-speer-ee-EN-shul LUR-ning"
+        "british": {
+          "ipa": "ɪkˌspɪəriˈenʃəl ˈlɜːnɪŋ",
+          "phonetic": "ik-speer-ee-EN-shul LUR-ning"
+        },
+        "american": {
+          "ipa": "ɪkˌspɪəriˈenʃəl ˈlɜːnɪŋ",
+          "phonetic": "ik-speer-ee-EN-shul LUR-ning"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**practical skills**",
       "pronunciation": {
-        "ipa": "ˈpræktɪkəl skɪlz",
-        "phonetic": "PRAK-tih-kul SKILZ"
+        "british": {
+          "ipa": "ˈpræktɪkəl skɪlz",
+          "phonetic": "PRAK-tih-kul SKILZ"
+        },
+        "american": {
+          "ipa": "ˈpræktɪkəl skɪlz",
+          "phonetic": "PRAK-tih-kul SKILZ"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**learning by doing**",
       "pronunciation": {
-        "ipa": "ˈlɜːnɪŋ baɪ ˈduːɪŋ",
-        "phonetic": "LUR-ning BY DOO-ing"
+        "british": {
+          "ipa": "ˈlɜːnɪŋ baɪ ˈduːɪŋ",
+          "phonetic": "LUR-ning BY DOO-ing"
+        },
+        "american": {
+          "ipa": "ˈlɜːnɪŋ baɪ ˈduːɪŋ",
+          "phonetic": "LUR-ning BY DOO-ing"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**hands-on experience**",
       "pronunciation": {
-        "ipa": "hændz ɒn ɪkˈspɪəriəns",
-        "phonetic": "HANDZ ON ik-SPEER-ee-uns"
+        "british": {
+          "ipa": "hændz ɒn ɪkˈspɪəriəns",
+          "phonetic": "HANDZ ON ik-SPEER-ee-uns"
+        },
+        "american": {
+          "ipa": "hændz ɒn ɪkˈspɪəriəns",
+          "phonetic": "HANDZ ON ik-SPEER-ee-uns"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**better outcomes**",
       "pronunciation": {
-        "ipa": "ˈbetə ˈaʊtkʌmz",
-        "phonetic": "BET-ur OWT-kumz"
+        "british": {
+          "ipa": "ˈbetə ˈaʊtkʌmz",
+          "phonetic": "BET-ur OWT-kumz"
+        },
+        "american": {
+          "ipa": "ˈbetə ˈaʊtkʌmz",
+          "phonetic": "BET-ur OWT-kumz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**practical application**",
       "pronunciation": {
-        "ipa": "ˈpræktɪkəl ˌæplɪˈkeɪʃən",
-        "phonetic": "PRAK-tih-kul ap-lih-KAY-shun"
+        "british": {
+          "ipa": "ˈpræktɪkəl ˌæplɪˈkeɪʃən",
+          "phonetic": "PRAK-tih-kul ap-lih-KAY-shun"
+        },
+        "american": {
+          "ipa": "ˈpræktɪkəl ˌæplɪˈkeɪʃən",
+          "phonetic": "PRAK-tih-kul ap-lih-KAY-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**traditional teaching**",
       "pronunciation": {
-        "ipa": "trəˈdɪʃənəl ˈtiːtʃɪŋ",
-        "phonetic": "truh-DISH-un-ul TEECH-ing"
+        "british": {
+          "ipa": "trəˈdɪʃənəl ˈtiːtʃɪŋ",
+          "phonetic": "truh-DISH-un-ul TEECH-ing"
+        },
+        "american": {
+          "ipa": "trəˈdɪʃənəl ˈtiːtʃɪŋ",
+          "phonetic": "truh-DISH-un-ul TEECH-ing"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**structured lectures**",
       "pronunciation": {
-        "ipa": "ˈstrʌktʃəd ˈlektʃəz",
-        "phonetic": "STRUK-churd LEK-churz"
+        "british": {
+          "ipa": "ˈstrʌktʃəd ˈlektʃəz",
+          "phonetic": "STRUK-churd LEK-churz"
+        },
+        "american": {
+          "ipa": "ˈstrʌktʃəd ˈlektʃəz",
+          "phonetic": "STRUK-churd LEK-churz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**solid knowledge**",
       "pronunciation": {
-        "ipa": "ˈsɒlɪd ˈnɒlɪdʒ",
-        "phonetic": "SOL-id NOL-ij"
+        "british": {
+          "ipa": "ˈsɒlɪd ˈnɒlɪdʒ",
+          "phonetic": "SOL-id NOL-ij"
+        },
+        "american": {
+          "ipa": "ˈsɒlɪd ˈnɒlɪdʒ",
+          "phonetic": "SOL-id NOL-ij"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**proven methods**",
       "pronunciation": {
-        "ipa": "ˈpruːvən ˈmeθədz",
-        "phonetic": "PROO-vun METH-udz"
+        "british": {
+          "ipa": "ˈpruːvən ˈmeθədz",
+          "phonetic": "PROO-vun METH-udz"
+        },
+        "american": {
+          "ipa": "ˈpruːvən ˈmeθədz",
+          "phonetic": "PROO-vun METH-udz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**systematic instruction**",
       "pronunciation": {
-        "ipa": "ˌsɪstəˈmætɪk ɪnˈstrʌkʃən",
-        "phonetic": "sis-tuh-MAT-ik in-STRUK-shun"
+        "british": {
+          "ipa": "ˌsɪstəˈmætɪk ɪnˈstrʌkʃən",
+          "phonetic": "sis-tuh-MAT-ik in-STRUK-shun"
+        },
+        "american": {
+          "ipa": "ˌsɪstəˈmætɪk ɪnˈstrʌkʃən",
+          "phonetic": "sis-tuh-MAT-ik in-STRUK-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**practical experience**",
       "pronunciation": {
-        "ipa": "ˈpræktɪkəl ɪkˈspɪəriəns",
-        "phonetic": "PRAK-tih-kul ik-SPEER-ee-uns"
+        "british": {
+          "ipa": "ˈpræktɪkəl ɪkˈspɪəriəns",
+          "phonetic": "PRAK-tih-kul ik-SPEER-ee-uns"
+        },
+        "american": {
+          "ipa": "ˈpræktɪkəl ɪkˈspɪəriəns",
+          "phonetic": "PRAK-tih-kul ik-SPEER-ee-uns"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**solid foundations**",
       "pronunciation": {
-        "ipa": "ˈsɒlɪd faʊnˈdeɪʃənz",
-        "phonetic": "SOL-id fown-DAY-shunz"
+        "british": {
+          "ipa": "ˈsɒlɪd faʊnˈdeɪʃənz",
+          "phonetic": "SOL-id fown-DAY-shunz"
+        },
+        "american": {
+          "ipa": "ˈsɒlɪd faʊnˈdeɪʃənz",
+          "phonetic": "SOL-id fown-DAY-shunz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**schools**",
       "pronunciation": {
-        "ipa": "skuːlz",
-        "phonetic": "SKOOLZ"
+        "british": {
+          "ipa": "skuːlz",
+          "phonetic": "SKOOLZ"
+        },
+        "american": {
+          "ipa": "skuːlz",
+          "phonetic": "SKOOLZ"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
+    },
+    {
+      "english": "**time consuming**",
+      "pronunciation": {
+        "british": {
+          "ipa": "taɪm kənˈsjuːmɪŋ",
+          "phonetic": "TYM kun-SYOO-ming"
+        },
+        "american": {
+          "ipa": "taɪm kənˈsjuːmɪŋ",
+          "phonetic": "TYM kun-SYOO-ming"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary-with-ipa"
+    },
+    {
+      "english": "**theoretical gaps**",
+      "pronunciation": {
+        "british": {
+          "ipa": "θɪəˈretɪkəl ɡæps",
+          "phonetic": "thee-uh-RET-ih-kul GAPS"
+        },
+        "american": {
+          "ipa": "θɪəˈretɪkəl ɡæps",
+          "phonetic": "thee-uh-RET-ih-kul GAPS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary-with-ipa"
+    },
+    {
+      "english": "**lack of depth**",
+      "pronunciation": {
+        "british": {
+          "ipa": "læk əv depθ",
+          "phonetic": "LAK uv DEPTH"
+        },
+        "american": {
+          "ipa": "læk əv depθ",
+          "phonetic": "LAK uv DEPTH"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-vocabulary",
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**global problems**",
       "pronunciation": {
-        "ipa": "ˈɡləʊbəl ˈprɒbləmz",
-        "phonetic": "GLOH-bul PROB-lumz"
+        "british": {
+          "ipa": "ˈɡləʊbəl ˈprɒbləmz",
+          "phonetic": "GLOH-bul PROB-lumz"
+        },
+        "american": {
+          "ipa": "ˈɡləʊbəl ˈprɒbləmz",
+          "phonetic": "GLOH-bul PROB-lumz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**coordination challenges**",
       "pronunciation": {
-        "ipa": "kəʊˌɔːdɪˈneɪʃən ˈtʃælɪndʒɪz",
-        "phonetic": "koh-or-dih-NAY-shun CHAL-in-jiz"
+        "british": {
+          "ipa": "kəʊˌɔːdɪˈneɪʃən ˈtʃælɪndʒɪz",
+          "phonetic": "koh-or-dih-NAY-shun CHAL-in-jiz"
+        },
+        "american": {
+          "ipa": "kəʊˌɔːdɪˈneɪʃən ˈtʃælɪndʒɪz",
+          "phonetic": "koh-or-dih-NAY-shun CHAL-in-jiz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**global issues**",
       "pronunciation": {
-        "ipa": "ˈɡləʊbəl ˈɪʃuːz",
-        "phonetic": "GLOH-bul ISH-ooz"
+        "british": {
+          "ipa": "ˈɡləʊbəl ˈɪʃuːz",
+          "phonetic": "GLOH-bul ISH-ooz"
+        },
+        "american": {
+          "ipa": "ˈɡləʊbəl ˈɪʃuːz",
+          "phonetic": "GLOH-bul ISH-ooz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**limited resources**",
       "pronunciation": {
-        "ipa": "ˈlɪmɪtɪd rɪˈsɔːsɪz",
-        "phonetic": "LIM-ih-tid rih-SOR-siz"
+        "british": {
+          "ipa": "ˈlɪmɪtɪd rɪˈsɔːsɪz",
+          "phonetic": "LIM-ih-tid rih-SOR-siz"
+        },
+        "american": {
+          "ipa": "ˈlɪmɪtɪd rɪˈsɔːsɪz",
+          "phonetic": "LIM-ih-tid rih-SOR-siz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**delayed action**",
       "pronunciation": {
-        "ipa": "dɪˈleɪd ˈækʃən",
-        "phonetic": "dih-LAYD AK-shun"
+        "british": {
+          "ipa": "dɪˈleɪd ˈækʃən",
+          "phonetic": "dih-LAYD AK-shun"
+        },
+        "american": {
+          "ipa": "dɪˈleɪd ˈækʃən",
+          "phonetic": "dih-LAYD AK-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**international initiatives**",
       "pronunciation": {
-        "ipa": "ˌɪntəˈnæʃənəl ɪˈnɪʃətɪvz",
-        "phonetic": "in-tur-NASH-un-ul ih-NISH-uh-tivz"
+        "british": {
+          "ipa": "ˌɪntəˈnæʃənəl ɪˈnɪʃətɪvz",
+          "phonetic": "in-tur-NASH-un-ul ih-NISH-uh-tivz"
+        },
+        "american": {
+          "ipa": "ˌɪntəˈnæʃənəl ɪˈnɪʃətɪvz",
+          "phonetic": "in-tur-NASH-un-ul ih-NISH-uh-tivz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**coordination difficulties**",
       "pronunciation": {
-        "ipa": "kəʊˌɔːdɪˈneɪʃən ˈdɪfɪkəltiz",
-        "phonetic": "koh-or-dih-NAY-shun DIF-ih-kul-teez"
+        "british": {
+          "ipa": "kəʊˌɔːdɪˈneɪʃən ˈdɪfɪkəltiz",
+          "phonetic": "koh-or-dih-NAY-shun DIF-ih-kul-teez"
+        },
+        "american": {
+          "ipa": "kəʊˌɔːdɪˈneɪʃən ˈdɪfɪkəltiz",
+          "phonetic": "koh-or-dih-NAY-shun DIF-ih-kul-teez"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**conflicting interests**",
       "pronunciation": {
-        "ipa": "kənˈflɪktɪŋ ˈɪntrəsts",
-        "phonetic": "kun-FLIK-ting IN-trusts"
+        "british": {
+          "ipa": "kənˈflɪktɪŋ ˈɪntrəsts",
+          "phonetic": "kun-FLIK-ting IN-trusts"
+        },
+        "american": {
+          "ipa": "kənˈflɪktɪŋ ˈɪntrəsts",
+          "phonetic": "kun-FLIK-ting IN-trusts"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**effective solutions**",
       "pronunciation": {
-        "ipa": "ɪˈfektɪv səˈluːʃənz",
-        "phonetic": "ih-FEK-tiv suh-LOO-shunz"
+        "british": {
+          "ipa": "ɪˈfektɪv səˈluːʃənz",
+          "phonetic": "ih-FEK-tiv suh-LOO-shunz"
+        },
+        "american": {
+          "ipa": "ɪˈfektɪv səˈluːʃənz",
+          "phonetic": "ih-FEK-tiv suh-LOO-shunz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**government cooperation**",
       "pronunciation": {
-        "ipa": "ˈɡʌvənmənt kəʊˌɒpəˈreɪʃən",
-        "phonetic": "GUV-urn-ment koh-op-uh-RAY-shun"
+        "british": {
+          "ipa": "ˈɡʌvənmənt kəʊˌɒpəˈreɪʃən",
+          "phonetic": "GUV-urn-ment koh-op-uh-RAY-shun"
+        },
+        "american": {
+          "ipa": "ˈɡʌvənmənt kəʊˌɒpəˈreɪʃən",
+          "phonetic": "GUV-urn-ment koh-op-uh-RAY-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**unified strategies**",
       "pronunciation": {
-        "ipa": "ˈjuːnɪfaɪd ˈstrætədʒiz",
-        "phonetic": "YOO-nih-fyd STRAT-uh-jeez"
+        "british": {
+          "ipa": "ˈjuːnɪfaɪd ˈstrætədʒiz",
+          "phonetic": "YOO-nih-fyd STRAT-uh-jeez"
+        },
+        "american": {
+          "ipa": "ˈjuːnɪfaɪd ˈstrætədʒiz",
+          "phonetic": "YOO-nih-fyd STRAT-uh-jeez"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**international studies**",
       "pronunciation": {
-        "ipa": "ˌɪntəˈnæʃənəl ˈstʌdiz",
-        "phonetic": "in-tur-NASH-un-ul STUD-eez"
+        "british": {
+          "ipa": "ˌɪntəˈnæʃənəl ˈstʌdiz",
+          "phonetic": "in-tur-NASH-un-ul STUD-eez"
+        },
+        "american": {
+          "ipa": "ˌɪntəˈnæʃənəl ˈstʌdiz",
+          "phonetic": "in-tur-NASH-un-ul STUD-eez"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**significant progress**",
       "pronunciation": {
-        "ipa": "sɪɡˈnɪfɪkənt ˈprəʊɡres",
-        "phonetic": "sig-NIF-ih-kunt PROH-gres"
+        "british": {
+          "ipa": "sɪɡˈnɪfɪkənt ˈprəʊɡres",
+          "phonetic": "sig-NIF-ih-kunt PROH-gres"
+        },
+        "american": {
+          "ipa": "sɪɡˈnɪfɪkənt ˈprəʊɡres",
+          "phonetic": "sig-NIF-ih-kunt PROH-gres"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**unified efforts**",
       "pronunciation": {
-        "ipa": "ˈjuːnɪfaɪd ˈefəts",
-        "phonetic": "YOO-nih-fyd EF-urts"
+        "british": {
+          "ipa": "ˈjuːnɪfaɪd ˈefəts",
+          "phonetic": "YOO-nih-fyd EF-urts"
+        },
+        "american": {
+          "ipa": "ˈjuːnɪfaɪd ˈefəts",
+          "phonetic": "YOO-nih-fyd EF-urts"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**structured collaboration**",
       "pronunciation": {
-        "ipa": "ˈstrʌktʃəd kəˌlæbəˈreɪʃən",
-        "phonetic": "STRUK-churd kuh-lab-uh-RAY-shun"
+        "british": {
+          "ipa": "ˈstrʌktʃəd kəˌlæbəˈreɪʃən",
+          "phonetic": "STRUK-churd kuh-lab-uh-RAY-shun"
+        },
+        "american": {
+          "ipa": "ˈstrʌktʃəd kəˌlæbəˈreɪʃən",
+          "phonetic": "STRUK-churd kuh-lab-uh-RAY-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**world leaders**",
       "pronunciation": {
-        "ipa": "wɜːld ˈliːdəz",
-        "phonetic": "WURLD LEE-durz"
+        "british": {
+          "ipa": "wɜːld ˈliːdəz",
+          "phonetic": "WURLD LEE-durz"
+        },
+        "american": {
+          "ipa": "wɜːld ˈliːdəz",
+          "phonetic": "WURLD LEE-durz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**information revolution**",
       "pronunciation": {
-        "ipa": "ˌɪnfəˈmeɪʃən ˌrevəˈluːʃən",
-        "phonetic": "in-fur-MAY-shun rev-uh-LOO-shun"
+        "british": {
+          "ipa": "ˌɪnfəˈmeɪʃən ˌrevəˈluːʃən",
+          "phonetic": "in-fur-MAY-shun rev-uh-LOO-shun"
+        },
+        "american": {
+          "ipa": "ˌɪnfəˈmeɪʃən ˌrevəˈluːʃən",
+          "phonetic": "in-fur-MAY-shun rev-uh-LOO-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**digital technology**",
       "pronunciation": {
-        "ipa": "ˈdɪdʒɪtəl tekˈnɒlədʒi",
-        "phonetic": "DIJ-ih-tul tek-NOL-uh-jee"
+        "british": {
+          "ipa": "ˈdɪdʒɪtəl tekˈnɒlədʒi",
+          "phonetic": "DIJ-ih-tul tek-NOL-uh-jee"
+        },
+        "american": {
+          "ipa": "ˈdɪdʒɪtəl tekˈnɒlədʒi",
+          "phonetic": "DIJ-ih-tul tek-NOL-uh-jee"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**global connectivity**",
       "pronunciation": {
-        "ipa": "ˈɡləʊbəl ˌkɒnekˈtɪvəti",
-        "phonetic": "GLOH-bul kon-ek-TIV-uh-tee"
+        "british": {
+          "ipa": "ˈɡləʊbəl ˌkɒnekˈtɪvəti",
+          "phonetic": "GLOH-bul kon-ek-TIV-uh-tee"
+        },
+        "american": {
+          "ipa": "ˈɡləʊbəl ˌkɒnekˈtɪvəti",
+          "phonetic": "GLOH-bul kon-ek-TIV-uh-tee"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**better knowledge**",
       "pronunciation": {
-        "ipa": "ˈbetə ˈnɒlɪdʒ",
-        "phonetic": "BET-ur NOL-ij"
+        "british": {
+          "ipa": "ˈbetə ˈnɒlɪdʒ",
+          "phonetic": "BET-ur NOL-ij"
+        },
+        "american": {
+          "ipa": "ˈbetə ˈnɒlɪdʒ",
+          "phonetic": "BET-ur NOL-ij"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**positive effects**",
       "pronunciation": {
-        "ipa": "ˈpɒzətɪv ɪˈfekts",
-        "phonetic": "POZ-ih-tiv ih-FEKTS"
+        "british": {
+          "ipa": "ˈpɒzətɪv ɪˈfekts",
+          "phonetic": "POZ-ih-tiv ih-FEKTS"
+        },
+        "american": {
+          "ipa": "ˈpɒzətɪv ɪˈfekts",
+          "phonetic": "POZ-ih-tiv ih-FEKTS"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**information technology**",
       "pronunciation": {
-        "ipa": "ˌɪnfəˈmeɪʃən tekˈnɒlədʒi",
-        "phonetic": "in-fur-MAY-shun tek-NOL-uh-jee"
+        "british": {
+          "ipa": "ˌɪnfəˈmeɪʃən tekˈnɒlədʒi",
+          "phonetic": "in-fur-MAY-shun tek-NOL-uh-jee"
+        },
+        "american": {
+          "ipa": "ˌɪnfəˈmeɪʃən tekˈnɒlədʒi",
+          "phonetic": "in-fur-MAY-shun tek-NOL-uh-jee"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**mass communication**",
       "pronunciation": {
-        "ipa": "mæs kəˌmjuːnɪˈkeɪʃən",
-        "phonetic": "MASS kuh-myoo-nih-KAY-shun"
+        "british": {
+          "ipa": "mæs kəˌmjuːnɪˈkeɪʃən",
+          "phonetic": "MASS kuh-myoo-nih-KAY-shun"
+        },
+        "american": {
+          "ipa": "mæs kəˌmjuːnɪˈkeɪʃən",
+          "phonetic": "MASS kuh-myoo-nih-KAY-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**excessive exposure**",
       "pronunciation": {
-        "ipa": "ɪkˈsesɪv ɪkˈspəʊʒə",
-        "phonetic": "ik-SES-iv ik-SPOH-zhur"
+        "british": {
+          "ipa": "ɪkˈsesɪv ɪkˈspəʊʒə",
+          "phonetic": "ik-SES-iv ik-SPOH-zhur"
+        },
+        "american": {
+          "ipa": "ɪkˈsesɪv ɪkˈspəʊʒə",
+          "phonetic": "ik-SES-iv ik-SPOH-zhur"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**information overload**",
       "pronunciation": {
-        "ipa": "ˌɪnfəˈmeɪʃən ˈəʊvələʊd",
-        "phonetic": "in-fur-MAY-shun OH-vur-lohd"
+        "british": {
+          "ipa": "ˌɪnfəˈmeɪʃən ˈəʊvələʊd",
+          "phonetic": "in-fur-MAY-shun OH-vur-lohd"
+        },
+        "american": {
+          "ipa": "ˌɪnfəˈmeɪʃən ˈəʊvələʊd",
+          "phonetic": "in-fur-MAY-shun OH-vur-lohd"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**reduced interactions**",
       "pronunciation": {
-        "ipa": "rɪˈdjuːst ˌɪntərˈækʃənz",
-        "phonetic": "rih-DYOOST in-tur-AK-shunz"
+        "british": {
+          "ipa": "rɪˈdjuːst ˌɪntərˈækʃənz",
+          "phonetic": "rih-DYOOST in-tur-AK-shunz"
+        },
+        "american": {
+          "ipa": "rɪˈdjuːst ˌɪntərˈækʃənz",
+          "phonetic": "rih-DYOOST in-tur-AK-shunz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**digital transformation**",
       "pronunciation": {
-        "ipa": "ˈdɪdʒɪtəl ˌtrænsfəˈmeɪʃən",
-        "phonetic": "DIJ-ih-tul trans-fur-MAY-shun"
+        "british": {
+          "ipa": "ˈdɪdʒɪtəl ˌtrænsfəˈmeɪʃən",
+          "phonetic": "DIJ-ih-tul trans-fur-MAY-shun"
+        },
+        "american": {
+          "ipa": "ˈdɪdʒɪtəl ˌtrænsfəˈmeɪʃən",
+          "phonetic": "DIJ-ih-tul trans-fur-MAY-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**digital benefits**",
       "pronunciation": {
-        "ipa": "ˈdɪdʒɪtəl ˈbenɪfɪts",
-        "phonetic": "DIJ-ih-tul BEN-ih-fits"
+        "british": {
+          "ipa": "ˈdɪdʒɪtəl ˈbenɪfɪts",
+          "phonetic": "DIJ-ih-tul BEN-ih-fits"
+        },
+        "american": {
+          "ipa": "ˈdɪdʒɪtəl ˈbenɪfɪts",
+          "phonetic": "DIJ-ih-tul BEN-ih-fits"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**attention**",
       "pronunciation": {
-        "ipa": "əˈtenʃən",
-        "phonetic": "uh-TEN-shun"
+        "british": {
+          "ipa": "əˈtenʃən",
+          "phonetic": "uh-TEN-shun"
+        },
+        "american": {
+          "ipa": "əˈtenʃən",
+          "phonetic": "uh-TEN-shun"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
-      "english": "**combining both**",
+      "english": "**combining work and study**",
       "pronunciation": {
-        "ipa": "kəmˈbaɪnɪŋ bəʊθ",
-        "phonetic": "kum-BYN-ing BOHTH"
+        "british": {
+          "ipa": "kəmˈbaɪnɪŋ wɜːk ənd ˈstʌdi",
+          "phonetic": "kum-BYN-ing WURK und STUD-ee"
+        },
+        "american": {
+          "ipa": "kəmˈbaɪnɪŋ wɜːk ənd ˈstʌdi",
+          "phonetic": "kum-BYN-ing WURK und STUD-ee"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**part-time work**",
       "pronunciation": {
-        "ipa": "pɑːt taɪm wɜːk",
-        "phonetic": "PART TYM WURK"
+        "british": {
+          "ipa": "pɑːt taɪm wɜːk",
+          "phonetic": "PART TYM WURK"
+        },
+        "american": {
+          "ipa": "pɑːt taɪm wɜːk",
+          "phonetic": "PART TYM WURK"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**work experience**",
       "pronunciation": {
-        "ipa": "wɜːk ɪkˈspɪəriəns",
-        "phonetic": "WURK ik-SPEER-ee-uns"
+        "british": {
+          "ipa": "wɜːk ɪkˈspɪəriəns",
+          "phonetic": "WURK ik-SPEER-ee-uns"
+        },
+        "american": {
+          "ipa": "wɜːk ɪkˈspɪəriəns",
+          "phonetic": "WURK ik-SPEER-ee-uns"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**career development**",
       "pronunciation": {
-        "ipa": "kəˈrɪə dɪˈveləpmənt",
-        "phonetic": "kuh-REER dih-VEL-up-ment"
+        "british": {
+          "ipa": "kəˈrɪə dɪˈveləpmənt",
+          "phonetic": "kuh-REER dih-VEL-up-ment"
+        },
+        "american": {
+          "ipa": "kəˈrɪə dɪˈveləpmənt",
+          "phonetic": "kuh-REER dih-VEL-up-ment"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**professional growth**",
       "pronunciation": {
-        "ipa": "prəˈfeʃənəl ɡrəʊθ",
-        "phonetic": "pruh-FESH-un-ul GROHTH"
+        "british": {
+          "ipa": "prəˈfeʃənəl ɡrəʊθ",
+          "phonetic": "pruh-FESH-un-ul GROHTH"
+        },
+        "american": {
+          "ipa": "prəˈfeʃənəl ɡrəʊθ",
+          "phonetic": "pruh-FESH-un-ul GROHTH"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**time management**",
       "pronunciation": {
-        "ipa": "taɪm ˈmænɪdʒmənt",
-        "phonetic": "TYM MAN-ij-ment"
+        "british": {
+          "ipa": "taɪm ˈmænɪdʒmənt",
+          "phonetic": "TYM MAN-ij-ment"
+        },
+        "american": {
+          "ipa": "taɪm ˈmænɪdʒmənt",
+          "phonetic": "TYM MAN-ij-ment"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**stress**",
       "pronunciation": {
-        "ipa": "stres",
-        "phonetic": "STRESS"
+        "british": {
+          "ipa": "stres",
+          "phonetic": "STRESS"
+        },
+        "american": {
+          "ipa": "stres",
+          "phonetic": "STRESS"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**working students**",
       "pronunciation": {
-        "ipa": "ˈwɜːkɪŋ ˈstjuːdənts",
-        "phonetic": "WUR-king STOO-dunts"
+        "british": {
+          "ipa": "ˈwɜːkɪŋ ˈstjuːdənts",
+          "phonetic": "WUR-king STOO-dunts"
+        },
+        "american": {
+          "ipa": "ˈwɜːkɪŋ ˈstjuːdənts",
+          "phonetic": "WUR-king STOO-dunts"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**reduced learning**",
       "pronunciation": {
-        "ipa": "rɪˈdjuːst ˈlɜːnɪŋ",
-        "phonetic": "rih-DYOOST LUR-ning"
+        "british": {
+          "ipa": "rɪˈdjuːst ˈlɜːnɪŋ",
+          "phonetic": "rih-DYOOST LUR-ning"
+        },
+        "american": {
+          "ipa": "rɪˈdjuːst ˈlɜːnɪŋ",
+          "phonetic": "rih-DYOOST LUR-ning"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**excessive hours**",
       "pronunciation": {
-        "ipa": "ɪkˈsesɪv ˈaʊəz",
-        "phonetic": "ik-SES-iv OW-urz"
+        "british": {
+          "ipa": "ɪkˈsesɪv ˈaʊəz",
+          "phonetic": "ik-SES-iv OW-urz"
+        },
+        "american": {
+          "ipa": "ɪkˈsesɪv ˈaʊəz",
+          "phonetic": "ik-SES-iv OW-urz"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**effective management**",
       "pronunciation": {
-        "ipa": "ɪˈfektɪv ˈmænɪdʒmənt",
-        "phonetic": "ih-FEK-tiv MAN-ij-ment"
+        "british": {
+          "ipa": "ɪˈfektɪv ˈmænɪdʒmənt",
+          "phonetic": "ih-FEK-tiv MAN-ij-ment"
+        },
+        "american": {
+          "ipa": "ɪˈfektɪv ˈmænɪdʒmənt",
+          "phonetic": "ih-FEK-tiv MAN-ij-ment"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     },
     {
       "english": "**planning**",
       "pronunciation": {
-        "ipa": "ˈplænɪŋ",
-        "phonetic": "PLAN-ing"
+        "british": {
+          "ipa": "ˈplænɪŋ",
+          "phonetic": "PLAN-ing"
+        },
+        "american": {
+          "ipa": "ˈplænɪŋ",
+          "phonetic": "PLAN-ing"
+        }
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary"
+      "source": "pte-essay-topic-vocabulary-with-ipa"
     }
   ]
 }

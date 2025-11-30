@@ -45,17 +45,6 @@ const PIPELINE_CONFIG = {
       extractorType: 'PTETermsExtractor',
       inputSubdir: 'vocabs',
       isDefault: true
-    },
-    {
-      id: 'pte-essay-topic-vocabulary',
-      input: 'pte-essay-topic-vocabulary-with-ipa.md',
-      output: 'pte-essay-topic-vocabulary.json',
-      category: 'pte-essay-topic-vocabulary',
-      description: 'PTE Essay Topic Vocabulary with IPA',
-      sourceType: 'pte-essay-topic-vocabulary-with-ipa',
-      dataType: 'vocabulary',
-      extractorType: 'PTETermsExtractor',
-      inputSubdir: 'vocabs'
     }
     // Add other registry entries here if needed for the build
   ]

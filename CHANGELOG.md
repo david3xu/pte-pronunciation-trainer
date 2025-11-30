@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.1] - 2025-11-30
+
+### Added
+- **Automation**: Automated versioning workflow with GitHub Actions.
+- **UI**: Dynamic version display in Settings and Footer.
+
+### Fixed
+- **Docs**: Updated documentation versions to match package.json.
+
 ### Added
 - **Documentation**: Complete overhaul of project documentation.
   - Added `docs/ARCHITECTURE.md` with system design and directory structure.

@@ -45,6 +45,17 @@ const PIPELINE_CONFIG = {
       extractorType: 'PTETermsExtractor',
       inputSubdir: 'vocabs',
       isDefault: true
+    },
+    {
+      id: 'pte-essay-topic-vocabulary',
+      input: 'pte-essay-topic-vocabulary-with-ipa.md',
+      output: 'pte-essay-topic-vocabulary.json',
+      category: 'pte-essay-topic-vocabulary',
+      description: 'PTE Essay Topic Vocabulary with IPA',
+      sourceType: 'pte-essay-topic-vocabulary-with-ipa',
+      dataType: 'vocabulary',
+      extractorType: 'PTETermsExtractor',
+      inputSubdir: 'vocabs'
     }
     // Add other registry entries here if needed for the build
   ]
@@ -94,14 +105,15 @@ class PTETermsExtractor {
   }
 
   static parsePTETermLine(line, options = {}) {
-    // Match the format: number. term | /IPA/ — sounds like **PHONETIC** | /IPA/ — sounds like **PHONETIC**
-    const match = line.match(/^\d+\.\s*(.+?)\s*\|\s*(.+?)\s*\|\s*(.+)$/);
+    // Match the format: number. term | /IPA/ — sounds like **PHONETIC** [| /IPA/ — sounds like **PHONETIC**]
+    // Support both single pronunciation (one pipe) and dual pronunciation (two pipes)
+    const match = line.match(/^\d+\.\s*(.+?)\s*\|\s*(.+?)(?:\s*\|\s*(.+))?$/);
 
     if (!match) {
       return null;
     }
 
-    let [, termPart, britishData, americanData] = match;
+    let [, termPart, firstPronunciation, secondPronunciation] = match;
 
     // Extract word type (n., v., adj., adv., num., abbr., etc.) if present
     let wordType = null;
@@ -114,28 +126,41 @@ class PTETermsExtractor {
       term = wordTypeMatch[2].trim();
     }
 
-    // Parse British pronunciation data
-    const britishMatch = britishData.match(/^\/(.+?)\/\s*—\s*sounds\s+like\s+\*\*(.+?)\*\*$/);
-    const americanMatch = americanData.match(/^\/(.+?)\/\s*—\s+sounds\s+like\s+\*\*(.+?)\*\*$/);
+    // Parse pronunciation data
+    // Format: /IPA/ — sounds like **PHONETIC**
+    const parsePronunciation = (text) => {
+      if (!text) return null;
+      const match = text.match(/^\/(.+?)\/\s*—\s*(?:sounds\s+like\s+)?\*\*(.+?)\*\*$/);
+      if (!match) return null;
+      return {
+        ipa: match[1].trim(),
+        phonetic: match[2].trim()
+      };
+    };
 
-    if (!britishMatch || !americanMatch) {
+    const firstData = parsePronunciation(firstPronunciation);
+    const secondData = parsePronunciation(secondPronunciation);
+
+    if (!firstData) {
       return null;
     }
 
-    const [, britishIPA, britishPhonetic] = britishMatch;
-    const [, americanIPA, americanPhonetic] = americanMatch;
+    // If we have two pronunciations, assume British | American
+    // If we have only one, use it for both or default to British
+    const britishData = firstData;
+    const americanData = secondData || firstData;
 
     // Create initial result object with extracted data
     const extractedData = {
       english: term,
       pronunciation: {
         british: {
-          ipa: britishIPA.trim(),
-          phonetic: britishPhonetic.trim()
+          ipa: britishData.ipa,
+          phonetic: britishData.phonetic
         },
         american: {
-          ipa: americanIPA.trim(),
-          phonetic: americanPhonetic.trim()
+          ipa: americanData.ipa,
+          phonetic: americanData.phonetic
         }
       },
       difficulty: this.inferDifficulty(term),
@@ -235,10 +260,22 @@ class PTEDataPipeline {
   /**
    * Generate PTE datasets
    */
+  /**
+   * Generate PTE datasets
+   */
   async generatePTEDatasets() {
     console.log('📦 STAGE 2: Generating PTE Datasets');
 
-    const registry = (this.config.registry || []).filter(Boolean);
+    // Auto-discover vocabulary books
+    const discoveredBooks = await this.discoverVocabularyBooks();
+    console.log(`   🔎 Discovered ${discoveredBooks.length} vocabulary books in source directory`);
+
+    // Merge discovered books with existing registry (avoiding duplicates by ID)
+    const existingIds = new Set((this.config.registry || []).map(r => r.id));
+    const registry = [
+      ...(this.config.registry || []),
+      ...discoveredBooks.filter(book => !existingIds.has(book.id))
+    ].filter(Boolean);
 
     if (registry.length > 0) {
       for (const entry of registry) {
@@ -287,6 +324,45 @@ class PTEDataPipeline {
     }
 
     console.log(`\n📊 Stage 2 Summary: Generated PTE datasets\n`);
+  }
+
+  /**
+   * Discover vocabulary books from source directory
+   */
+  async discoverVocabularyBooks() {
+    const vocabsDir = path.join(this.config.inputDir, 'vocabs');
+
+    if (!fs.existsSync(vocabsDir)) {
+      console.warn(`   ⚠️ Vocabs directory not found: ${vocabsDir}`);
+      return [];
+    }
+
+    try {
+      const files = fs.readdirSync(vocabsDir);
+      return files
+        .filter(file => file.endsWith('.md') && !file.startsWith('help-'))
+        .map(file => {
+          // Generate ID from filename (remove -with-ipa.md or .md)
+          const id = file
+            .replace('-with-ipa.md', '')
+            .replace('.md', '');
+
+          return {
+            id: id,
+            input: file,
+            output: `${id}.json`,
+            category: 'vocabulary', // Default category
+            description: `Auto-discovered vocabulary book: ${id}`,
+            sourceType: id,
+            dataType: 'vocabulary',
+            extractorType: 'PTETermsExtractor',
+            inputSubdir: 'vocabs'
+          };
+        });
+    } catch (error) {
+      console.error(`   ❌ Error discovering books: ${error.message}`);
+      return [];
+    }
   }
 
   /**

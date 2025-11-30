@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "generated": "2025-11-30T07:00:51.038Z",
+    "generated": "2025-11-30T07:13:44.799Z",
     "totalTerms": 747,
     "source": "pte-high-frequency-vocabulary",
     "description": "Auto-discovered vocabulary book: pte-high-frequency-vocabulary",
     "version": "1.0",
     "categories": [
-      "vocabulary"
+      "pte-high-frequency-vocabulary"
     ],
     "hasIPA": true
   },
@@ -24,7 +24,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -40,7 +40,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -56,7 +56,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -72,7 +72,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -88,7 +88,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -104,7 +104,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -120,7 +120,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -136,7 +136,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -152,7 +152,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -168,7 +168,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -184,7 +184,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -200,7 +200,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -216,7 +216,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -232,7 +232,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -248,7 +248,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -264,7 +264,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -280,7 +280,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -296,7 +296,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -312,7 +312,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -328,7 +328,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -344,7 +344,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -360,7 +360,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -376,7 +376,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -392,7 +392,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -408,7 +408,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -424,7 +424,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -440,7 +440,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -456,7 +456,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -472,7 +472,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -488,7 +488,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -504,7 +504,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -520,7 +520,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -536,7 +536,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -552,7 +552,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -568,7 +568,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -584,7 +584,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -600,7 +600,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -616,7 +616,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -632,7 +632,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -648,7 +648,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -664,7 +664,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -680,7 +680,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -696,7 +696,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -712,7 +712,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -728,7 +728,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -744,7 +744,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -760,7 +760,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -776,7 +776,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -792,7 +792,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -808,7 +808,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -824,7 +824,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -840,7 +840,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -856,7 +856,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -872,7 +872,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -888,7 +888,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -904,7 +904,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -920,7 +920,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -936,7 +936,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -952,7 +952,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -968,7 +968,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -984,7 +984,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1000,7 +1000,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1016,7 +1016,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1032,7 +1032,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1048,7 +1048,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1064,7 +1064,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1080,7 +1080,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1096,7 +1096,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1112,7 +1112,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1128,7 +1128,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1144,7 +1144,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1160,7 +1160,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1176,7 +1176,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1192,7 +1192,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1208,7 +1208,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1224,7 +1224,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1240,7 +1240,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1256,7 +1256,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1272,7 +1272,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1288,7 +1288,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1304,7 +1304,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1320,7 +1320,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1336,7 +1336,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1352,7 +1352,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1368,7 +1368,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1384,7 +1384,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1400,7 +1400,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1416,7 +1416,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1432,7 +1432,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1448,7 +1448,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1464,7 +1464,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1480,7 +1480,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1496,7 +1496,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1512,7 +1512,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1528,7 +1528,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1544,7 +1544,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1560,7 +1560,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1576,7 +1576,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1592,7 +1592,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1608,7 +1608,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1624,7 +1624,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1640,7 +1640,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1656,7 +1656,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1672,7 +1672,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1688,7 +1688,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1704,7 +1704,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1720,7 +1720,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1736,7 +1736,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1752,7 +1752,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1768,7 +1768,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1784,7 +1784,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1800,7 +1800,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1816,7 +1816,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1832,7 +1832,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1848,7 +1848,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1864,7 +1864,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1880,7 +1880,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1896,7 +1896,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1912,7 +1912,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1928,7 +1928,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1944,7 +1944,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1960,7 +1960,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1976,7 +1976,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -1992,7 +1992,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2008,7 +2008,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2024,7 +2024,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2040,7 +2040,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2056,7 +2056,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2072,7 +2072,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2088,7 +2088,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2104,7 +2104,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2120,7 +2120,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2136,7 +2136,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2152,7 +2152,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2168,7 +2168,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2184,7 +2184,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2200,7 +2200,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2216,7 +2216,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2232,7 +2232,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2248,7 +2248,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2264,7 +2264,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2280,7 +2280,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2296,7 +2296,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2312,7 +2312,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2328,7 +2328,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2344,7 +2344,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2360,7 +2360,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2376,7 +2376,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2392,7 +2392,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2408,7 +2408,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2424,7 +2424,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2440,7 +2440,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2456,7 +2456,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2472,7 +2472,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2488,7 +2488,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2504,7 +2504,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2520,7 +2520,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2536,7 +2536,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2552,7 +2552,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2568,7 +2568,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2584,7 +2584,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2600,7 +2600,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2616,7 +2616,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2632,7 +2632,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2648,7 +2648,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2664,7 +2664,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2680,7 +2680,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2696,7 +2696,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2712,7 +2712,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2728,7 +2728,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2744,7 +2744,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2760,7 +2760,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2776,7 +2776,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2792,7 +2792,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2808,7 +2808,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2824,7 +2824,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2840,7 +2840,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2856,7 +2856,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2872,7 +2872,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2888,7 +2888,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2904,7 +2904,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2920,7 +2920,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2936,7 +2936,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2952,7 +2952,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2968,7 +2968,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -2984,7 +2984,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3000,7 +3000,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3016,7 +3016,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3032,7 +3032,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3048,7 +3048,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3064,7 +3064,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3080,7 +3080,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3096,7 +3096,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3112,7 +3112,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3128,7 +3128,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3144,7 +3144,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3160,7 +3160,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3176,7 +3176,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3192,7 +3192,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3208,7 +3208,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3224,7 +3224,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3240,7 +3240,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3256,7 +3256,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3272,7 +3272,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3288,7 +3288,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3304,7 +3304,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3320,7 +3320,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3336,7 +3336,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3352,7 +3352,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3368,7 +3368,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3384,7 +3384,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3400,7 +3400,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3416,7 +3416,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3432,7 +3432,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3448,7 +3448,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3464,7 +3464,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3480,7 +3480,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3496,7 +3496,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3512,7 +3512,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3528,7 +3528,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3544,7 +3544,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3560,7 +3560,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3576,7 +3576,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3592,7 +3592,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3608,7 +3608,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3624,7 +3624,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3640,7 +3640,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3656,7 +3656,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3672,7 +3672,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3688,7 +3688,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3704,7 +3704,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3720,7 +3720,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3736,7 +3736,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3752,7 +3752,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3768,7 +3768,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3784,7 +3784,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3800,7 +3800,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3816,7 +3816,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3832,7 +3832,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3848,7 +3848,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3864,7 +3864,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3880,7 +3880,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3896,7 +3896,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3912,7 +3912,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3928,7 +3928,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3944,7 +3944,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3960,7 +3960,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3976,7 +3976,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -3992,7 +3992,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4008,7 +4008,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4024,7 +4024,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4040,7 +4040,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4056,7 +4056,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4072,7 +4072,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4088,7 +4088,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4104,7 +4104,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4120,7 +4120,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4136,7 +4136,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4152,7 +4152,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4168,7 +4168,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4184,7 +4184,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4200,7 +4200,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4216,7 +4216,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4232,7 +4232,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4248,7 +4248,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4264,7 +4264,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4280,7 +4280,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4296,7 +4296,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4312,7 +4312,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4328,7 +4328,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4344,7 +4344,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4360,7 +4360,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4376,7 +4376,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4392,7 +4392,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4408,7 +4408,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4424,7 +4424,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4440,7 +4440,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4456,7 +4456,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4472,7 +4472,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4488,7 +4488,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4504,7 +4504,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4520,7 +4520,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4536,7 +4536,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4552,7 +4552,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4568,7 +4568,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4584,7 +4584,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4600,7 +4600,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4616,7 +4616,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4632,7 +4632,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4648,7 +4648,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4664,7 +4664,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4680,7 +4680,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4696,7 +4696,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4712,7 +4712,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4728,7 +4728,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4744,7 +4744,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4760,7 +4760,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4776,7 +4776,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4792,7 +4792,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4808,7 +4808,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4824,7 +4824,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4840,7 +4840,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4856,7 +4856,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4872,7 +4872,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4888,7 +4888,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4904,7 +4904,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4920,7 +4920,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4936,7 +4936,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4952,7 +4952,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4968,7 +4968,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -4984,7 +4984,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5000,7 +5000,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5016,7 +5016,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5032,7 +5032,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5048,7 +5048,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5064,7 +5064,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5080,7 +5080,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5096,7 +5096,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5112,7 +5112,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5128,7 +5128,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5144,7 +5144,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5160,7 +5160,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5176,7 +5176,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5192,7 +5192,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5208,7 +5208,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5224,7 +5224,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5240,7 +5240,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5256,7 +5256,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5272,7 +5272,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5288,7 +5288,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5304,7 +5304,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5320,7 +5320,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5336,7 +5336,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5352,7 +5352,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5368,7 +5368,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5384,7 +5384,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5400,7 +5400,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5416,7 +5416,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5432,7 +5432,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5448,7 +5448,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5464,7 +5464,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5480,7 +5480,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5496,7 +5496,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5512,7 +5512,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5528,7 +5528,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5544,7 +5544,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5560,7 +5560,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5576,7 +5576,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5592,7 +5592,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5608,7 +5608,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5624,7 +5624,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5640,7 +5640,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5656,7 +5656,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5672,7 +5672,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5688,7 +5688,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5704,7 +5704,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5720,7 +5720,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5736,7 +5736,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5752,7 +5752,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5768,7 +5768,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5784,7 +5784,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5800,7 +5800,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5816,7 +5816,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5832,7 +5832,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5848,7 +5848,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5864,7 +5864,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5880,7 +5880,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5896,7 +5896,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5912,7 +5912,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5928,7 +5928,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5944,7 +5944,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5960,7 +5960,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5976,7 +5976,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -5992,7 +5992,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6008,7 +6008,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6024,7 +6024,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6040,7 +6040,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6056,7 +6056,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6072,7 +6072,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6088,7 +6088,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6104,7 +6104,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6120,7 +6120,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6136,7 +6136,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6152,7 +6152,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6168,7 +6168,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6184,7 +6184,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6200,7 +6200,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6216,7 +6216,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6232,7 +6232,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6248,7 +6248,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6264,7 +6264,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6280,7 +6280,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6296,7 +6296,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6312,7 +6312,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6328,7 +6328,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6344,7 +6344,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6360,7 +6360,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6376,7 +6376,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6392,7 +6392,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6408,7 +6408,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6424,7 +6424,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6440,7 +6440,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6456,7 +6456,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6472,7 +6472,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6488,7 +6488,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6504,7 +6504,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6520,7 +6520,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6536,7 +6536,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6552,7 +6552,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6568,7 +6568,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6584,7 +6584,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6600,7 +6600,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6616,7 +6616,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6632,7 +6632,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6648,7 +6648,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6664,7 +6664,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6680,7 +6680,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6696,7 +6696,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6712,7 +6712,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6728,7 +6728,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6744,7 +6744,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6760,7 +6760,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6776,7 +6776,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6792,7 +6792,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6808,7 +6808,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6824,7 +6824,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6840,7 +6840,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6856,7 +6856,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6872,7 +6872,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6888,7 +6888,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6904,7 +6904,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6920,7 +6920,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6936,7 +6936,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6952,7 +6952,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6968,7 +6968,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -6984,7 +6984,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7000,7 +7000,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7016,7 +7016,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7032,7 +7032,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7048,7 +7048,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7064,7 +7064,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7080,7 +7080,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7096,7 +7096,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7112,7 +7112,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7128,7 +7128,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7144,7 +7144,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7160,7 +7160,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7176,7 +7176,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7192,7 +7192,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7208,7 +7208,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7224,7 +7224,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7240,7 +7240,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7256,7 +7256,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7272,7 +7272,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7288,7 +7288,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7304,7 +7304,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7320,7 +7320,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7336,7 +7336,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7352,7 +7352,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7368,7 +7368,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7384,7 +7384,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7400,7 +7400,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7416,7 +7416,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7432,7 +7432,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7448,7 +7448,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7464,7 +7464,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7480,7 +7480,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7496,7 +7496,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7512,7 +7512,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7528,7 +7528,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7544,7 +7544,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7560,7 +7560,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7576,7 +7576,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7592,7 +7592,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7608,7 +7608,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7624,7 +7624,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7640,7 +7640,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7656,7 +7656,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7672,7 +7672,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7688,7 +7688,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7704,7 +7704,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7720,7 +7720,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7736,7 +7736,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7752,7 +7752,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7768,7 +7768,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7784,7 +7784,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7800,7 +7800,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7816,7 +7816,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7832,7 +7832,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7848,7 +7848,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7864,7 +7864,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7880,7 +7880,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7896,7 +7896,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7912,7 +7912,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7928,7 +7928,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7944,7 +7944,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7960,7 +7960,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7976,7 +7976,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -7992,7 +7992,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8008,7 +8008,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8024,7 +8024,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8040,7 +8040,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8056,7 +8056,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8072,7 +8072,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8088,7 +8088,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8104,7 +8104,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8120,7 +8120,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8136,7 +8136,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8152,7 +8152,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8168,7 +8168,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8184,7 +8184,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8200,7 +8200,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8216,7 +8216,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8232,7 +8232,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8248,7 +8248,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8264,7 +8264,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8280,7 +8280,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8296,7 +8296,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8312,7 +8312,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8328,7 +8328,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8344,7 +8344,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8360,7 +8360,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8376,7 +8376,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8392,7 +8392,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8408,7 +8408,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8424,7 +8424,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8440,7 +8440,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8456,7 +8456,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8472,7 +8472,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8488,7 +8488,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8504,7 +8504,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8520,7 +8520,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8536,7 +8536,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8552,7 +8552,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8568,7 +8568,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8584,7 +8584,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8600,7 +8600,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8616,7 +8616,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8632,7 +8632,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8648,7 +8648,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8664,7 +8664,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8680,7 +8680,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8696,7 +8696,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8712,7 +8712,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8728,7 +8728,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8744,7 +8744,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8760,7 +8760,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8776,7 +8776,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8792,7 +8792,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8808,7 +8808,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8824,7 +8824,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8840,7 +8840,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8856,7 +8856,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8872,7 +8872,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8888,7 +8888,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8904,7 +8904,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8920,7 +8920,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8936,7 +8936,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8952,7 +8952,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8968,7 +8968,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -8984,7 +8984,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9000,7 +9000,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9016,7 +9016,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9032,7 +9032,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9048,7 +9048,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9064,7 +9064,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9080,7 +9080,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9096,7 +9096,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9112,7 +9112,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9128,7 +9128,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9144,7 +9144,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9160,7 +9160,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9176,7 +9176,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9192,7 +9192,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9208,7 +9208,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9224,7 +9224,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9240,7 +9240,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9256,7 +9256,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9272,7 +9272,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9288,7 +9288,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9304,7 +9304,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9320,7 +9320,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9336,7 +9336,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9352,7 +9352,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9368,7 +9368,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9384,7 +9384,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9400,7 +9400,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9416,7 +9416,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9432,7 +9432,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9448,7 +9448,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9464,7 +9464,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9480,7 +9480,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9496,7 +9496,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9512,7 +9512,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9528,7 +9528,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9544,7 +9544,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9560,7 +9560,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9576,7 +9576,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9592,7 +9592,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9608,7 +9608,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9624,7 +9624,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9640,7 +9640,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9656,7 +9656,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9672,7 +9672,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9688,7 +9688,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9704,7 +9704,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9720,7 +9720,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9736,7 +9736,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9752,7 +9752,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9768,7 +9768,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9784,7 +9784,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9800,7 +9800,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9816,7 +9816,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9832,7 +9832,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9848,7 +9848,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9864,7 +9864,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9880,7 +9880,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9896,7 +9896,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9912,7 +9912,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9928,7 +9928,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9944,7 +9944,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9960,7 +9960,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9976,7 +9976,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -9992,7 +9992,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10008,7 +10008,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10024,7 +10024,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10040,7 +10040,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10056,7 +10056,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10072,7 +10072,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10088,7 +10088,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10104,7 +10104,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10120,7 +10120,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10136,7 +10136,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10152,7 +10152,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10168,7 +10168,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10184,7 +10184,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10200,7 +10200,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10216,7 +10216,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10232,7 +10232,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10248,7 +10248,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10264,7 +10264,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10280,7 +10280,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10296,7 +10296,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10312,7 +10312,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10328,7 +10328,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10344,7 +10344,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10360,7 +10360,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10376,7 +10376,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10392,7 +10392,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10408,7 +10408,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10424,7 +10424,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10440,7 +10440,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10456,7 +10456,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10472,7 +10472,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10488,7 +10488,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10504,7 +10504,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10520,7 +10520,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10536,7 +10536,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10552,7 +10552,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10568,7 +10568,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10584,7 +10584,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10600,7 +10600,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10616,7 +10616,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10632,7 +10632,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10648,7 +10648,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10664,7 +10664,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10680,7 +10680,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10696,7 +10696,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10712,7 +10712,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10728,7 +10728,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10744,7 +10744,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10760,7 +10760,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10776,7 +10776,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10792,7 +10792,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10808,7 +10808,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10824,7 +10824,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10840,7 +10840,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10856,7 +10856,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10872,7 +10872,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10888,7 +10888,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10904,7 +10904,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10920,7 +10920,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10936,7 +10936,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10952,7 +10952,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10968,7 +10968,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -10984,7 +10984,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11000,7 +11000,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11016,7 +11016,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11032,7 +11032,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11048,7 +11048,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11064,7 +11064,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11080,7 +11080,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11096,7 +11096,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11112,7 +11112,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11128,7 +11128,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11144,7 +11144,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11160,7 +11160,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11176,7 +11176,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11192,7 +11192,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11208,7 +11208,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11224,7 +11224,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11240,7 +11240,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11256,7 +11256,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11272,7 +11272,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11288,7 +11288,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11304,7 +11304,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11320,7 +11320,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11336,7 +11336,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11352,7 +11352,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11368,7 +11368,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11384,7 +11384,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11400,7 +11400,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11416,7 +11416,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11432,7 +11432,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11448,7 +11448,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11464,7 +11464,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11480,7 +11480,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11496,7 +11496,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11512,7 +11512,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11528,7 +11528,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11544,7 +11544,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11560,7 +11560,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11576,7 +11576,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11592,7 +11592,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11608,7 +11608,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11624,7 +11624,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11640,7 +11640,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11656,7 +11656,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11672,7 +11672,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11688,7 +11688,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11704,7 +11704,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11720,7 +11720,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11736,7 +11736,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11752,7 +11752,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11768,7 +11768,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11784,7 +11784,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11800,7 +11800,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11816,7 +11816,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11832,7 +11832,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11848,7 +11848,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11864,7 +11864,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11880,7 +11880,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11896,7 +11896,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11912,7 +11912,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11928,7 +11928,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11944,7 +11944,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     },
     {
@@ -11960,7 +11960,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-high-frequency-vocabulary",
       "source": "pte-high-frequency-vocabulary"
     }
   ]

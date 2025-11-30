@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "generated": "2025-11-30T07:00:50.961Z",
+    "generated": "2025-11-30T07:13:44.772Z",
     "totalTerms": 275,
-    "source": "pte-essay-topic-vocabulary-with-ipa",
-    "description": "PTE Essay Topic Vocabulary with IPA",
+    "source": "pte-essay-topic-vocabulary",
+    "description": "Auto-discovered vocabulary book: pte-essay-topic-vocabulary",
     "version": "1.0",
     "categories": [
       "pte-essay-topic-vocabulary"
@@ -25,7 +25,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**fair assessment**",
@@ -41,7 +41,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**standardized testing**",
@@ -57,7 +57,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**clear evaluation**",
@@ -73,7 +73,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**measurable results**",
@@ -89,7 +89,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**educational research**",
@@ -105,7 +105,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**students**",
@@ -121,7 +121,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**improved performance**",
@@ -137,7 +137,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**test anxiety**",
@@ -153,7 +153,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**university studies**",
@@ -169,7 +169,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**reduced performance**",
@@ -185,7 +185,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**exam stress**",
@@ -201,7 +201,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**educational travel**",
@@ -217,7 +217,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**practical learning**",
@@ -233,7 +233,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**field trips**",
@@ -249,7 +249,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**direct observation**",
@@ -265,7 +265,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**deeper understanding**",
@@ -281,7 +281,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**university research**",
@@ -297,7 +297,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**improved skills**",
@@ -313,7 +313,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**real-world exposure**",
@@ -329,7 +329,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**home-based study**",
@@ -345,7 +345,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**dedicated scholars**",
@@ -361,7 +361,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**deep knowledge**",
@@ -377,7 +377,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**educational institutions**",
@@ -393,7 +393,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**scholars**",
@@ -409,7 +409,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**academic excellence**",
@@ -425,7 +425,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**focused study**",
@@ -441,7 +441,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**cultural exposure**",
@@ -457,7 +457,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**high costs**",
@@ -473,7 +473,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**distractions**",
@@ -489,7 +489,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**safety risks**",
@@ -505,7 +505,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**work-life balance**",
@@ -521,7 +521,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**mental health**",
@@ -537,7 +537,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**leisure time**",
@@ -553,7 +553,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**stronger relationships**",
@@ -569,7 +569,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**improved productivity**",
@@ -585,7 +585,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**workplace research**",
@@ -601,7 +601,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**employees**",
@@ -617,7 +617,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**better performance**",
@@ -633,7 +633,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**family time**",
@@ -649,7 +649,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**achieving balance**",
@@ -665,7 +665,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**workplace demands**",
@@ -681,7 +681,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**constant pressure**",
@@ -697,7 +697,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**organizational studies**",
@@ -713,7 +713,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**professionals**",
@@ -729,7 +729,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**work-life conflicts**",
@@ -745,7 +745,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**increased workload**",
@@ -761,7 +761,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**mental wellbeing**",
@@ -777,7 +777,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**family stability**",
@@ -793,7 +793,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**climate change**",
@@ -809,7 +809,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**governments**",
@@ -825,7 +825,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**policy frameworks**",
@@ -841,7 +841,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**binding agreements**",
@@ -857,7 +857,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**reduced emissions**",
@@ -873,7 +873,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**policy research**",
@@ -889,7 +889,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**countries**",
@@ -905,7 +905,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**environmental benefits**",
@@ -921,7 +921,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**climate initiatives**",
@@ -937,7 +937,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**business activities**",
@@ -953,7 +953,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**pollution levels**",
@@ -969,7 +969,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**shared responsibility**",
@@ -985,7 +985,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**environmental institutions**",
@@ -1001,7 +1001,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**businesses**",
@@ -1017,7 +1017,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**carbon emissions**",
@@ -1033,7 +1033,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**business operations**",
@@ -1049,7 +1049,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**government policies**",
@@ -1065,7 +1065,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**corporate responsibility**",
@@ -1081,7 +1081,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**all stakeholders**",
@@ -1097,7 +1097,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**building design**",
@@ -1113,7 +1113,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**good design**",
@@ -1129,7 +1129,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**quality of life**",
@@ -1145,7 +1145,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**natural light**",
@@ -1161,7 +1161,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**comfortable spaces**",
@@ -1177,7 +1177,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**improved health**",
@@ -1193,7 +1193,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**research shows**",
@@ -1209,7 +1209,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**occupants**",
@@ -1225,7 +1225,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**better satisfaction**",
@@ -1241,7 +1241,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**poor design**",
@@ -1257,7 +1257,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**limited space**",
@@ -1273,7 +1273,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**discomfort**",
@@ -1289,7 +1289,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**avoid places**",
@@ -1305,7 +1305,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**studies indicate**",
@@ -1321,7 +1321,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**workers**",
@@ -1337,7 +1337,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**negative impact**",
@@ -1353,7 +1353,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**poor conditions**",
@@ -1369,7 +1369,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**urban planners**",
@@ -1385,7 +1385,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**studying overseas**",
@@ -1401,7 +1401,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**study abroad**",
@@ -1417,7 +1417,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**cross-cultural learning**",
@@ -1433,7 +1433,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**international exposure**",
@@ -1449,7 +1449,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**global perspective**",
@@ -1465,7 +1465,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**broader outcomes**",
@@ -1481,7 +1481,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**enhanced understanding**",
@@ -1497,7 +1497,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**cultural immersion**",
@@ -1513,7 +1513,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**home-based learning**",
@@ -1529,7 +1529,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**local scholars**",
@@ -1545,7 +1545,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**local success**",
@@ -1561,7 +1561,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**local graduates**",
@@ -1577,7 +1577,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**comparable results**",
@@ -1593,7 +1593,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**strong education**",
@@ -1609,7 +1609,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**international experience**",
@@ -1625,7 +1625,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**local education**",
@@ -1641,7 +1641,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**homesickness**",
@@ -1657,7 +1657,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**financial burden**",
@@ -1673,7 +1673,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**language barriers**",
@@ -1689,7 +1689,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**smartphones**",
@@ -1705,7 +1705,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**instant communication**",
@@ -1721,7 +1721,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**mobile technology**",
@@ -1737,7 +1737,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**connected society**",
@@ -1753,7 +1753,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**improved access**",
@@ -1769,7 +1769,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**technology research**",
@@ -1785,7 +1785,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**enhanced connectivity**",
@@ -1801,7 +1801,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**smartphone use**",
@@ -1817,7 +1817,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**smartphone dependency**",
@@ -1833,7 +1833,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**excessive screen time**",
@@ -1849,7 +1849,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**social isolation**",
@@ -1865,7 +1865,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**reduced interaction**",
@@ -1881,7 +1881,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**social studies**",
@@ -1897,7 +1897,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**users**",
@@ -1913,7 +1913,7 @@
       },
       "difficulty": "normal",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**negative effects**",
@@ -1929,7 +1929,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**overuse**",
@@ -1945,7 +1945,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**social concerns**",
@@ -1961,7 +1961,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**society**",
@@ -1977,7 +1977,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**efforts**",
@@ -1993,7 +1993,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**historic buildings**",
@@ -2009,7 +2009,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**cultural heritage**",
@@ -2025,7 +2025,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**preservation efforts**",
@@ -2041,7 +2041,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**historical value**",
@@ -2057,7 +2057,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**cultural identity**",
@@ -2073,7 +2073,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**cultural research**",
@@ -2089,7 +2089,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**communities**",
@@ -2105,7 +2105,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**preserved heritage**",
@@ -2121,7 +2121,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**conservation work**",
@@ -2137,7 +2137,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**modern development**",
@@ -2153,7 +2153,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**new construction**",
@@ -2169,7 +2169,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**practical needs**",
@@ -2185,7 +2185,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**balanced approach**",
@@ -2201,7 +2201,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**urban studies**",
@@ -2217,7 +2217,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**cities**",
@@ -2233,7 +2233,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**development pressure**",
@@ -2249,7 +2249,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**modern facilities**",
@@ -2265,7 +2265,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**modern needs**",
@@ -2281,7 +2281,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**resources**",
@@ -2297,7 +2297,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**maintenance costs**",
@@ -2313,7 +2313,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**safety hazards**",
@@ -2329,7 +2329,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**hinders progress**",
@@ -2345,7 +2345,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**early marriage**",
@@ -2361,7 +2361,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**married couples**",
@@ -2377,7 +2377,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**emotional support**",
@@ -2393,7 +2393,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**stable relationships**",
@@ -2409,7 +2409,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**family research**",
@@ -2425,7 +2425,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**young couples**",
@@ -2441,7 +2441,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**partnership benefits**",
@@ -2457,7 +2457,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**committed relationships**",
@@ -2473,7 +2473,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**young people**",
@@ -2489,7 +2489,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**limited opportunities**",
@@ -2505,7 +2505,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**social research**",
@@ -2521,7 +2521,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**youth**",
@@ -2537,7 +2537,7 @@
       },
       "difficulty": "normal",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**restricted growth**",
@@ -2553,7 +2553,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**early commitment**",
@@ -2569,7 +2569,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**family support**",
@@ -2585,7 +2585,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**personal growth**",
@@ -2601,7 +2601,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**time**",
@@ -2617,7 +2617,7 @@
       },
       "difficulty": "normal",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**tourism**",
@@ -2633,7 +2633,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**economic growth**",
@@ -2649,7 +2649,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**tourism industry**",
@@ -2665,7 +2665,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**job creation**",
@@ -2681,7 +2681,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**improved income**",
@@ -2697,7 +2697,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**economic research**",
@@ -2713,7 +2713,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**developing countries**",
@@ -2729,7 +2729,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**economic benefits**",
@@ -2745,7 +2745,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**tourism revenue**",
@@ -2761,7 +2761,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**tourism development**",
@@ -2777,7 +2777,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**mass tourism**",
@@ -2793,7 +2793,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**environmental damage**",
@@ -2809,7 +2809,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**sustainability concerns**",
@@ -2825,7 +2825,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**environmental studies**",
@@ -2841,7 +2841,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**tourist destinations**",
@@ -2857,7 +2857,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**negative impacts**",
@@ -2873,7 +2873,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**tourism pressure**",
@@ -2889,7 +2889,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**environmental protection**",
@@ -2905,7 +2905,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**television**",
@@ -2921,7 +2921,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**stress reduction**",
@@ -2937,7 +2937,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**improved wellbeing**",
@@ -2953,7 +2953,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**relaxation**",
@@ -2969,7 +2969,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**entertainment programs**",
@@ -2985,7 +2985,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**isolated individuals**",
@@ -3001,7 +3001,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**social connection**",
@@ -3017,7 +3017,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**reduced isolation**",
@@ -3033,7 +3033,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**individuals**",
@@ -3049,7 +3049,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**regular viewing**",
@@ -3065,7 +3065,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**entertainment value**",
@@ -3081,7 +3081,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**inactive lifestyle**",
@@ -3097,7 +3097,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**health issues**",
@@ -3113,7 +3113,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**addiction**",
@@ -3129,7 +3129,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**reduced activity**",
@@ -3145,7 +3145,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**passive behavior**",
@@ -3161,7 +3161,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**mark deduction**",
@@ -3177,7 +3177,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**academic discipline**",
@@ -3193,7 +3193,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**late submissions**",
@@ -3209,7 +3209,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**student responsibility**",
@@ -3225,7 +3225,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**improved habits**",
@@ -3241,7 +3241,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**better punctuality**",
@@ -3257,7 +3257,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**clear deadlines**",
@@ -3273,7 +3273,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**alternative measures**",
@@ -3289,7 +3289,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**deadline extensions**",
@@ -3305,7 +3305,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**positive motivation**",
@@ -3321,7 +3321,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**better planning**",
@@ -3337,7 +3337,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**universities**",
@@ -3353,7 +3353,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**improved rates**",
@@ -3369,7 +3369,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**flexible policies**",
@@ -3385,7 +3385,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**accountability**",
@@ -3401,7 +3401,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**flexibility**",
@@ -3417,7 +3417,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**academic institutions**",
@@ -3433,7 +3433,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**added stress**",
@@ -3449,7 +3449,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**unfair penalties**",
@@ -3465,7 +3465,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**discouragement**",
@@ -3481,7 +3481,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**experiential learning**",
@@ -3497,7 +3497,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**practical skills**",
@@ -3513,7 +3513,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**learning by doing**",
@@ -3529,7 +3529,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**hands-on experience**",
@@ -3545,7 +3545,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**better outcomes**",
@@ -3561,7 +3561,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**practical application**",
@@ -3577,7 +3577,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**traditional teaching**",
@@ -3593,7 +3593,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**structured lectures**",
@@ -3609,7 +3609,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**solid knowledge**",
@@ -3625,7 +3625,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**proven methods**",
@@ -3641,7 +3641,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**systematic instruction**",
@@ -3657,7 +3657,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**practical experience**",
@@ -3673,7 +3673,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**solid foundations**",
@@ -3689,7 +3689,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**schools**",
@@ -3705,7 +3705,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**time consuming**",
@@ -3721,7 +3721,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**theoretical gaps**",
@@ -3737,7 +3737,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**lack of depth**",
@@ -3753,7 +3753,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**global problems**",
@@ -3769,7 +3769,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**coordination challenges**",
@@ -3785,7 +3785,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**global issues**",
@@ -3801,7 +3801,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**limited resources**",
@@ -3817,7 +3817,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**delayed action**",
@@ -3833,7 +3833,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**international initiatives**",
@@ -3849,7 +3849,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**coordination difficulties**",
@@ -3865,7 +3865,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**conflicting interests**",
@@ -3881,7 +3881,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**effective solutions**",
@@ -3897,7 +3897,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**government cooperation**",
@@ -3913,7 +3913,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**unified strategies**",
@@ -3929,7 +3929,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**international studies**",
@@ -3945,7 +3945,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**significant progress**",
@@ -3961,7 +3961,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**unified efforts**",
@@ -3977,7 +3977,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**structured collaboration**",
@@ -3993,7 +3993,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**world leaders**",
@@ -4009,7 +4009,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**information revolution**",
@@ -4025,7 +4025,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**digital technology**",
@@ -4041,7 +4041,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**global connectivity**",
@@ -4057,7 +4057,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**better knowledge**",
@@ -4073,7 +4073,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**positive effects**",
@@ -4089,7 +4089,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**information technology**",
@@ -4105,7 +4105,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**mass communication**",
@@ -4121,7 +4121,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**excessive exposure**",
@@ -4137,7 +4137,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**information overload**",
@@ -4153,7 +4153,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**reduced interactions**",
@@ -4169,7 +4169,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**digital transformation**",
@@ -4185,7 +4185,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**digital benefits**",
@@ -4201,7 +4201,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**attention**",
@@ -4217,7 +4217,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**combining work and study**",
@@ -4233,7 +4233,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**part-time work**",
@@ -4249,7 +4249,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**work experience**",
@@ -4265,7 +4265,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**career development**",
@@ -4281,7 +4281,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**professional growth**",
@@ -4297,7 +4297,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**time management**",
@@ -4313,7 +4313,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**stress**",
@@ -4329,7 +4329,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**working students**",
@@ -4345,7 +4345,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**reduced learning**",
@@ -4361,7 +4361,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**excessive hours**",
@@ -4377,7 +4377,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**effective management**",
@@ -4393,7 +4393,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     },
     {
       "english": "**planning**",
@@ -4409,7 +4409,7 @@
       },
       "difficulty": "hard",
       "category": "pte-essay-topic-vocabulary",
-      "source": "pte-essay-topic-vocabulary-with-ipa"
+      "source": "pte-essay-topic-vocabulary"
     }
   ]
 }

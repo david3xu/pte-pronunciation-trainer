@@ -85,8 +85,7 @@ export type VocabularyBookId =
   | 'pte-di-difficult-words'
   | 'pte-di-easy-phrases'
   // Shadowing modes
-  | 'di-shadowing-1-10'
-  | 'di-shadowing-11-20';
+  | 'di-shadowing';
 
 /**
  * Vocabulary term with IPA pronunciation
@@ -278,7 +277,7 @@ export interface DatasetRegistryEntry {
   /** Data type (vocabulary, rs, wfd, asq, shadowing) */
   dataType?: string;
   /** Extractor type */
-  extractorType: 'PTETermsExtractor' | 'SingleIPATermsExtractor' | 'PTESentenceExtractor' | 'PTEQuestionExtractor' | 'DIAnswerExtractor';
+  extractorType: 'PTETermsExtractor' | 'SingleIPATermsExtractor' | 'PTE SentenceExtractor' | 'PTEQuestionExtractor' | 'DIAnswerExtractor' | 'NaturalDIExtractor';
   /** Input subdirectory (e.g., 'vocabs', 'sentences', 'di') */
   inputSubdir?: string;
   /** Whether this is the default dataset */

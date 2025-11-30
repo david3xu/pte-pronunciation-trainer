@@ -2,7 +2,7 @@
 
 A specialized web-based pronunciation training application for **PTE exam preparation**, featuring comprehensive vocabulary (13,000+ words), practice modes for speaking/listening sections, DI shadowing practice, and cloud sync capabilities.
 
-**✅ v3.0.0 - AI-POWERED (November 2025)**
+**✅ v3.0.1 - AI-POWERED (November 2025)**
 
 **Latest Updates:**
 - 🎤 **NEW:** DI Shadowing Practice - Practice Describe Image answers with continuous, fluent speech
@@ -499,7 +499,7 @@ api/                           # Vercel Serverless Functions
 
 ---
 
-## 🌟 What's New (v3.0.0 - November 2025)
+## 🌟 What's New (v3.0.1 - November 2025)
 
 ### ✅ TypeScript Migration (100%)
 - All 35 modules migrated
@@ -636,7 +636,7 @@ MIT License
 
 **Built with ❤️ for PTE learners worldwide**
 
-**Current Version**: v3.0.0 (November 2025)
+**Current Version**: 3.0.1 (November 2025)
 **Status**: Production Ready ✅
 **TypeScript**: 100% Migrated ✅
 **Cloud Sync**: Ready for Testing ✅

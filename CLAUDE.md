@@ -8,7 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Architecture**: React 19 + TypeScript 5.9 + Zustand state management + Radix UI + Tailwind CSS + Vite
 
-**Current Version**: v3.0.0 (AI-Powered - November 2025)
+**Current Version**: 3.0.1 (AI-Powered - November 2025)
 
 **Key Features**:
 - 📚 **17 Vocabulary Books** (13,800+ terms with IPA)
@@ -181,7 +181,7 @@ npm run validate
 
 ### 1. **React + TypeScript + Zustand State Management**
 
-**Modern React App** (v3.0.0):
+**Modern React App** (v3.0.1):
 - **React 19** with TypeScript 5.9 (strict mode)
 - **Zustand** for global state (replaces EventBus pattern)
 - **Component-based** architecture (feature-grouped)
@@ -645,7 +645,7 @@ npm run deploy  # Runs: data:pte + build + validate:all
 
 ## Version History
 
-- **v3.0.0** (Nov 2025) - **AI-Powered React Release**
+- **v3.0.1** (Nov 2025) - **AI-Powered React Release**
   - Complete React 19 + TypeScript migration (100%)
   - Zustand state management (replaces EventBus)
   - AI features: Gemini chat, scoring, interventions, recommendations

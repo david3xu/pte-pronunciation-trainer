@@ -36,7 +36,7 @@ export class AppConfig {
           processed: 'data/processed',
             byMode: {
               // Vocabulary books
-              'pte-fib-listening': 'data/processed/pte-fib-listening-dataset.json',
+              'pte-fib-listening': 'data/processed/pte-fib-listening.json',
               'pte-beginner': 'data/processed/pte-beginner-vocabulary.json',
               'pte-intermediate': 'data/processed/pte-intermediate-vocabulary.json',
               'pte-advanced': 'data/processed/pte-advanced-vocabulary.json',

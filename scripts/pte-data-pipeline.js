@@ -23,31 +23,10 @@ const PIPELINE_CONFIG = {
   inputDir: 'data/source/pte',
   outputDir: 'data',
   reportsDir: 'data/reports',
-  dataSources: {
-    primary: 'pte-fib-listening-with-ipa.md',
-    fallback: 'fib-listening-vocabulary.md',
-    subdirectory: 'vocabs'
-  },
   outputFiles: {
-    dataset: 'pte-fib-listening-dataset.json',
     report: 'pte-processing-report.json'
   },
-  registry: [
-    {
-      id: 'pte-fib-listening',
-      input: 'pte-fib-listening-with-ipa.md',
-      fallback: 'fib-listening-vocabulary.md',
-      output: 'pte-fib-listening-dataset.json',
-      category: 'pte-fib-listening',
-      description: 'PTE FIB Listening vocabulary with IPA',
-      sourceType: 'pte-fib-listening-with-ipa',
-      dataType: 'vocabulary',
-      extractorType: 'PTETermsExtractor',
-      inputSubdir: 'vocabs',
-      isDefault: true
-    }
-    // Add other registry entries here if needed for the build
-  ]
+  registry: [] // Registry is now populated via auto-discovery
 };
 
 // ==========================================
@@ -201,14 +180,10 @@ class PTEDataPipeline {
     console.log(`📁 Output directory: ${this.config.outputDir}\n`);
 
     try {
-      // Stage 1: Extract PTE vocabulary
-      await this.extractPTEVocabulary();
-
-      // Stage 2: Generate datasets
+      // Stage 1: Generate datasets
       await this.generatePTEDatasets();
 
-      // Stage 3: Validate and report
-      this.validateData();
+      // Stage 2: Report
       this.generateReport();
 
       console.log('\n✅ PTE Data Pipeline completed successfully!');
@@ -219,32 +194,7 @@ class PTEDataPipeline {
     }
   }
 
-  /**
-   * Extract PTE vocabulary from markdown files
-   */
-  async extractPTEVocabulary() {
-    console.log('📝 STAGE 1: Extracting PTE Vocabulary Data');
 
-    const fibIpaFilePath = path.join(this.config.inputDir, this.config.dataSources.subdirectory, this.config.dataSources.primary);
-
-    // Check if file exists before trying to extract
-    if (!fs.existsSync(fibIpaFilePath)) {
-      console.warn(`   ⚠️ Primary file not found: ${fibIpaFilePath}`);
-      return;
-    }
-
-    try {
-      const fibIpaVocabulary = await PTETermsExtractor.extract(fibIpaFilePath, fs);
-      this.results.set('fibIpaVocabulary', fibIpaVocabulary);
-      this.stats.totalProcessed += fibIpaVocabulary.length;
-      console.log(`   ✅ Processed ${fibIpaVocabulary.length} FIB listening terms with IPA from ${fibIpaFilePath}`);
-    } catch (error) {
-      console.error(`   ❌ Error processing ${fibIpaFilePath}: ${error.message}`);
-      this.stats.totalErrors++;
-    }
-
-    console.log(`\n📊 Stage 1 Summary: ${this.stats.totalProcessed} terms processed, ${this.stats.totalErrors} errors\n`);
-  }
 
   /**
    * Generate PTE datasets
@@ -340,7 +290,7 @@ class PTEDataPipeline {
             id: id,
             input: file,
             output: `${id}.json`,
-            category: 'vocabulary', // Default category
+            category: id, // Use ID as category so it shows up in UI
             description: `Auto-discovered vocabulary book: ${id}`,
             sourceType: id,
             dataType: 'vocabulary',
@@ -369,18 +319,11 @@ class PTEDataPipeline {
     fs.writeFileSync(outputPath, JSON.stringify(dataset, null, 2));
 
     const count = dataset.vocabulary ? dataset.vocabulary.length : 0;
+    this.stats.totalProcessed += count;
     console.log(`   ✅ Saved ${count} items to ${filename}`);
   }
 
-  /**
-   * Validate processed data
-   */
-  validateData() {
-    console.log('🔍 STAGE 3: Validating Data');
-    // Simplified validation
-    const fibIpaTerms = this.results.get('fibIpaVocabulary') || [];
-    console.log(`   ✓ FIB terms: ${fibIpaTerms.length}`);
-  }
+
 
   /**
    * Remove duplicate terms

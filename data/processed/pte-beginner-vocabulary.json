@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "generated": "2025-11-30T07:00:51.011Z",
+    "generated": "2025-11-30T07:13:44.740Z",
     "totalTerms": 383,
     "source": "pte-beginner-vocabulary",
     "description": "Auto-discovered vocabulary book: pte-beginner-vocabulary",
     "version": "1.0",
     "categories": [
-      "vocabulary"
+      "pte-beginner-vocabulary"
     ],
     "hasIPA": true
   },
@@ -24,7 +24,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -41,7 +41,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -58,7 +58,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -75,7 +75,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -92,7 +92,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "pron."
     },
@@ -109,7 +109,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -126,7 +126,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -143,7 +143,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -160,7 +160,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -177,7 +177,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -194,7 +194,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -211,7 +211,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -228,7 +228,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -245,7 +245,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -262,7 +262,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -279,7 +279,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -296,7 +296,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -313,7 +313,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -330,7 +330,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -347,7 +347,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -364,7 +364,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -381,7 +381,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -398,7 +398,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -415,7 +415,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adv."
     },
@@ -432,7 +432,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -449,7 +449,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -466,7 +466,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -483,7 +483,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -500,7 +500,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -517,7 +517,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -534,7 +534,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -551,7 +551,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -568,7 +568,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -585,7 +585,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -602,7 +602,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -619,7 +619,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -636,7 +636,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -653,7 +653,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -670,7 +670,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -687,7 +687,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -704,7 +704,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -721,7 +721,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -738,7 +738,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -755,7 +755,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -772,7 +772,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -789,7 +789,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -806,7 +806,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -823,7 +823,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -840,7 +840,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -857,7 +857,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -874,7 +874,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -891,7 +891,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -908,7 +908,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -925,7 +925,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -942,7 +942,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adv."
     },
@@ -959,7 +959,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -976,7 +976,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -993,7 +993,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1010,7 +1010,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -1027,7 +1027,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1044,7 +1044,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1061,7 +1061,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -1078,7 +1078,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1095,7 +1095,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -1112,7 +1112,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "prep."
     },
@@ -1129,7 +1129,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1146,7 +1146,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1163,7 +1163,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1180,7 +1180,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -1197,7 +1197,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -1214,7 +1214,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1231,7 +1231,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1248,7 +1248,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -1265,7 +1265,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1282,7 +1282,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1299,7 +1299,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -1316,7 +1316,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -1333,7 +1333,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1350,7 +1350,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -1367,7 +1367,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "pron."
     },
@@ -1384,7 +1384,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -1401,7 +1401,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -1418,7 +1418,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1435,7 +1435,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1452,7 +1452,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1469,7 +1469,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1486,7 +1486,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1503,7 +1503,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -1520,7 +1520,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -1537,7 +1537,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -1554,7 +1554,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -1571,7 +1571,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -1588,7 +1588,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1605,7 +1605,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -1622,7 +1622,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1639,7 +1639,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1656,7 +1656,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "prep."
     },
@@ -1673,7 +1673,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -1690,7 +1690,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1707,7 +1707,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -1724,7 +1724,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adv."
     },
@@ -1741,7 +1741,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1758,7 +1758,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -1775,7 +1775,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1792,7 +1792,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -1809,7 +1809,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -1826,7 +1826,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -1843,7 +1843,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -1860,7 +1860,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1877,7 +1877,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1894,7 +1894,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1911,7 +1911,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "conj."
     },
@@ -1928,7 +1928,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1945,7 +1945,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adv."
     },
@@ -1962,7 +1962,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "prep."
     },
@@ -1979,7 +1979,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -1996,7 +1996,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -2013,7 +2013,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2030,7 +2030,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -2047,7 +2047,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -2064,7 +2064,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2081,7 +2081,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -2098,7 +2098,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adv."
     },
@@ -2115,7 +2115,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -2132,7 +2132,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2149,7 +2149,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adv."
     },
@@ -2166,7 +2166,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2183,7 +2183,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2200,7 +2200,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2217,7 +2217,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -2234,7 +2234,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2251,7 +2251,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -2268,7 +2268,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2285,7 +2285,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "prep."
     },
@@ -2302,7 +2302,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -2319,7 +2319,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2336,7 +2336,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -2353,7 +2353,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2370,7 +2370,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2387,7 +2387,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -2404,7 +2404,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2421,7 +2421,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2438,7 +2438,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2455,7 +2455,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2472,7 +2472,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2489,7 +2489,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "conj."
     },
@@ -2506,7 +2506,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -2523,7 +2523,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -2540,7 +2540,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adv."
     },
@@ -2557,7 +2557,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2574,7 +2574,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2591,7 +2591,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -2608,7 +2608,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -2625,7 +2625,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2642,7 +2642,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -2659,7 +2659,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2676,7 +2676,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -2693,7 +2693,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2710,7 +2710,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2727,7 +2727,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2744,7 +2744,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "conj."
     },
@@ -2761,7 +2761,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -2778,7 +2778,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2795,7 +2795,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2812,7 +2812,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2829,7 +2829,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2846,7 +2846,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -2863,7 +2863,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2880,7 +2880,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2897,7 +2897,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2914,7 +2914,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -2931,7 +2931,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adv."
     },
@@ -2948,7 +2948,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2965,7 +2965,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -2982,7 +2982,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -2999,7 +2999,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3016,7 +3016,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3033,7 +3033,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -3050,7 +3050,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3067,7 +3067,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -3084,7 +3084,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3101,7 +3101,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3118,7 +3118,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -3135,7 +3135,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3152,7 +3152,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -3169,7 +3169,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3186,7 +3186,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -3203,7 +3203,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -3220,7 +3220,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -3237,7 +3237,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3254,7 +3254,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3271,7 +3271,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3288,7 +3288,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3305,7 +3305,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -3322,7 +3322,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -3339,7 +3339,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3356,7 +3356,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3373,7 +3373,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3390,7 +3390,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adv."
     },
@@ -3407,7 +3407,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -3424,7 +3424,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -3441,7 +3441,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3458,7 +3458,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -3475,7 +3475,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3492,7 +3492,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -3509,7 +3509,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3526,7 +3526,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3543,7 +3543,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3560,7 +3560,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -3577,7 +3577,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -3594,7 +3594,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3611,7 +3611,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -3628,7 +3628,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3645,7 +3645,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -3662,7 +3662,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3679,7 +3679,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3696,7 +3696,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -3713,7 +3713,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3730,7 +3730,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -3747,7 +3747,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3764,7 +3764,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3781,7 +3781,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3798,7 +3798,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -3815,7 +3815,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -3832,7 +3832,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3849,7 +3849,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -3866,7 +3866,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3883,7 +3883,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -3900,7 +3900,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3917,7 +3917,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -3934,7 +3934,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3951,7 +3951,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3968,7 +3968,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -3985,7 +3985,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4002,7 +4002,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4019,7 +4019,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -4036,7 +4036,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4053,7 +4053,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4070,7 +4070,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4087,7 +4087,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4104,7 +4104,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4121,7 +4121,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -4138,7 +4138,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -4155,7 +4155,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -4172,7 +4172,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4189,7 +4189,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4206,7 +4206,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4223,7 +4223,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adv."
     },
@@ -4240,7 +4240,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4257,7 +4257,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4274,7 +4274,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4291,7 +4291,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4308,7 +4308,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4325,7 +4325,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -4342,7 +4342,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4359,7 +4359,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4376,7 +4376,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -4393,7 +4393,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4410,7 +4410,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adv."
     },
@@ -4427,7 +4427,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4444,7 +4444,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4461,7 +4461,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -4478,7 +4478,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4495,7 +4495,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4512,7 +4512,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4529,7 +4529,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -4546,7 +4546,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -4563,7 +4563,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -4580,7 +4580,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4597,7 +4597,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -4614,7 +4614,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -4631,7 +4631,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -4648,7 +4648,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4665,7 +4665,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4682,7 +4682,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4699,7 +4699,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4716,7 +4716,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4733,7 +4733,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -4750,7 +4750,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -4767,7 +4767,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -4784,7 +4784,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4801,7 +4801,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4818,7 +4818,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -4835,7 +4835,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -4852,7 +4852,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adv."
     },
@@ -4869,7 +4869,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adv."
     },
@@ -4886,7 +4886,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4903,7 +4903,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4920,7 +4920,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4937,7 +4937,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "pron."
     },
@@ -4954,7 +4954,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4971,7 +4971,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -4988,7 +4988,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5005,7 +5005,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -5022,7 +5022,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5039,7 +5039,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -5056,7 +5056,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adv."
     },
@@ -5073,7 +5073,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5090,7 +5090,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5107,7 +5107,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5124,7 +5124,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5141,7 +5141,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5158,7 +5158,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -5175,7 +5175,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -5192,7 +5192,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5209,7 +5209,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -5226,7 +5226,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adv."
     },
@@ -5243,7 +5243,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adv."
     },
@@ -5260,7 +5260,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -5277,7 +5277,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -5294,7 +5294,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5311,7 +5311,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5328,7 +5328,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -5345,7 +5345,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5362,7 +5362,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -5379,7 +5379,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -5396,7 +5396,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5413,7 +5413,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -5430,7 +5430,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -5447,7 +5447,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5464,7 +5464,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5481,7 +5481,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -5498,7 +5498,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5515,7 +5515,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5532,7 +5532,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5549,7 +5549,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5566,7 +5566,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -5583,7 +5583,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -5600,7 +5600,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adv."
     },
@@ -5617,7 +5617,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5634,7 +5634,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5651,7 +5651,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5668,7 +5668,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5685,7 +5685,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5702,7 +5702,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -5719,7 +5719,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5736,7 +5736,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5753,7 +5753,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -5770,7 +5770,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5787,7 +5787,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5804,7 +5804,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -5821,7 +5821,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -5838,7 +5838,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "pron."
     },
@@ -5855,7 +5855,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -5872,7 +5872,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5889,7 +5889,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5906,7 +5906,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5923,7 +5923,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -5940,7 +5940,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -5957,7 +5957,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -5974,7 +5974,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -5991,7 +5991,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -6008,7 +6008,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -6025,7 +6025,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -6042,7 +6042,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -6059,7 +6059,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -6076,7 +6076,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -6093,7 +6093,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -6110,7 +6110,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -6127,7 +6127,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -6144,7 +6144,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -6161,7 +6161,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -6178,7 +6178,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -6195,7 +6195,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adv."
     },
@@ -6212,7 +6212,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -6229,7 +6229,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -6246,7 +6246,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -6263,7 +6263,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -6280,7 +6280,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -6297,7 +6297,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -6314,7 +6314,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -6331,7 +6331,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -6348,7 +6348,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -6365,7 +6365,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -6382,7 +6382,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     },
@@ -6399,7 +6399,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -6416,7 +6416,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "v."
     },
@@ -6433,7 +6433,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adv."
     },
@@ -6450,7 +6450,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -6467,7 +6467,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -6484,7 +6484,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -6501,7 +6501,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "n."
     },
@@ -6518,7 +6518,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-beginner-vocabulary",
       "source": "pte-beginner-vocabulary",
       "wordType": "adj."
     }

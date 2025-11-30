@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "generated": "2025-11-30T07:00:51.177Z",
+    "generated": "2025-11-30T07:13:44.953Z",
     "totalTerms": 363,
     "source": "pte-sst-complete",
     "description": "Auto-discovered vocabulary book: pte-sst-complete",
     "version": "1.0",
     "categories": [
-      "vocabulary"
+      "pte-sst-complete"
     ],
     "hasIPA": true
   },
@@ -24,7 +24,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -40,7 +40,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -56,7 +56,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -72,7 +72,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -88,7 +88,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -104,7 +104,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -120,7 +120,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -136,7 +136,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -152,7 +152,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -168,7 +168,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -184,7 +184,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -200,7 +200,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -216,7 +216,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -232,7 +232,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -248,7 +248,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -264,7 +264,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -280,7 +280,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -296,7 +296,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -312,7 +312,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -328,7 +328,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -344,7 +344,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -360,7 +360,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -376,7 +376,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -392,7 +392,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -408,7 +408,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -424,7 +424,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -440,7 +440,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -456,7 +456,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -472,7 +472,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -488,7 +488,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -504,7 +504,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -520,7 +520,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -536,7 +536,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -552,7 +552,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -568,7 +568,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -584,7 +584,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -600,7 +600,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -616,7 +616,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -632,7 +632,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -648,7 +648,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -664,7 +664,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -680,7 +680,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -696,7 +696,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -712,7 +712,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -728,7 +728,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -744,7 +744,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -760,7 +760,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -776,7 +776,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -792,7 +792,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -808,7 +808,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -824,7 +824,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -840,7 +840,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -856,7 +856,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -872,7 +872,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -888,7 +888,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -904,7 +904,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -920,7 +920,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -936,7 +936,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -952,7 +952,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -968,7 +968,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -984,7 +984,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1000,7 +1000,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1016,7 +1016,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1032,7 +1032,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1048,7 +1048,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1064,7 +1064,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1080,7 +1080,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1096,7 +1096,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1112,7 +1112,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1128,7 +1128,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1144,7 +1144,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1160,7 +1160,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1176,7 +1176,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1192,7 +1192,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1208,7 +1208,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1224,7 +1224,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1240,7 +1240,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1256,7 +1256,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1272,7 +1272,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1288,7 +1288,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1304,7 +1304,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1320,7 +1320,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1336,7 +1336,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1352,7 +1352,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1368,7 +1368,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1384,7 +1384,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1400,7 +1400,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1416,7 +1416,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1432,7 +1432,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1448,7 +1448,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1464,7 +1464,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1480,7 +1480,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1496,7 +1496,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1512,7 +1512,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1528,7 +1528,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1544,7 +1544,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1560,7 +1560,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1576,7 +1576,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1592,7 +1592,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1608,7 +1608,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1624,7 +1624,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1640,7 +1640,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1656,7 +1656,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1672,7 +1672,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1688,7 +1688,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1704,7 +1704,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1720,7 +1720,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1736,7 +1736,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1752,7 +1752,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1768,7 +1768,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1784,7 +1784,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1800,7 +1800,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1816,7 +1816,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1832,7 +1832,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1848,7 +1848,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1864,7 +1864,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1880,7 +1880,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1896,7 +1896,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1912,7 +1912,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1928,7 +1928,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1944,7 +1944,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1960,7 +1960,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1976,7 +1976,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -1992,7 +1992,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2008,7 +2008,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2024,7 +2024,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2040,7 +2040,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2056,7 +2056,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2072,7 +2072,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2088,7 +2088,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2104,7 +2104,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2120,7 +2120,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2136,7 +2136,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2152,7 +2152,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2168,7 +2168,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2184,7 +2184,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2200,7 +2200,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2216,7 +2216,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2232,7 +2232,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2248,7 +2248,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2264,7 +2264,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2280,7 +2280,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2296,7 +2296,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2312,7 +2312,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2328,7 +2328,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2344,7 +2344,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2360,7 +2360,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2376,7 +2376,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2392,7 +2392,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2408,7 +2408,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2424,7 +2424,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2440,7 +2440,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2456,7 +2456,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2472,7 +2472,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2488,7 +2488,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2504,7 +2504,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2520,7 +2520,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2536,7 +2536,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2552,7 +2552,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2568,7 +2568,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2584,7 +2584,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2600,7 +2600,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2616,7 +2616,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2632,7 +2632,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2648,7 +2648,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2664,7 +2664,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2680,7 +2680,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2696,7 +2696,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2712,7 +2712,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2728,7 +2728,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2744,7 +2744,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2760,7 +2760,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2776,7 +2776,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2792,7 +2792,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2808,7 +2808,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2824,7 +2824,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2840,7 +2840,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2856,7 +2856,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2872,7 +2872,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2888,7 +2888,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2904,7 +2904,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2920,7 +2920,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2936,7 +2936,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2952,7 +2952,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2968,7 +2968,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -2984,7 +2984,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3000,7 +3000,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3016,7 +3016,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3032,7 +3032,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3048,7 +3048,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3064,7 +3064,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3080,7 +3080,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3096,7 +3096,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3112,7 +3112,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3128,7 +3128,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3144,7 +3144,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3160,7 +3160,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3176,7 +3176,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3192,7 +3192,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3208,7 +3208,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3224,7 +3224,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3240,7 +3240,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3256,7 +3256,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3272,7 +3272,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3288,7 +3288,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3304,7 +3304,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3320,7 +3320,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3336,7 +3336,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3352,7 +3352,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3368,7 +3368,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3384,7 +3384,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3400,7 +3400,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3416,7 +3416,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3432,7 +3432,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3448,7 +3448,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3464,7 +3464,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3480,7 +3480,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3496,7 +3496,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3512,7 +3512,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3528,7 +3528,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3544,7 +3544,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3560,7 +3560,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3576,7 +3576,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3592,7 +3592,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3608,7 +3608,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3624,7 +3624,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3640,7 +3640,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3656,7 +3656,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3672,7 +3672,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3688,7 +3688,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3704,7 +3704,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3720,7 +3720,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3736,7 +3736,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3752,7 +3752,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3768,7 +3768,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3784,7 +3784,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3800,7 +3800,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3816,7 +3816,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3832,7 +3832,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3848,7 +3848,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3864,7 +3864,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3880,7 +3880,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3896,7 +3896,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3912,7 +3912,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3928,7 +3928,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3944,7 +3944,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3960,7 +3960,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3976,7 +3976,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -3992,7 +3992,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4008,7 +4008,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4024,7 +4024,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4040,7 +4040,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4056,7 +4056,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4072,7 +4072,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4088,7 +4088,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4104,7 +4104,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4120,7 +4120,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4136,7 +4136,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4152,7 +4152,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4168,7 +4168,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4184,7 +4184,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4200,7 +4200,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4216,7 +4216,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4232,7 +4232,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4248,7 +4248,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4264,7 +4264,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4280,7 +4280,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4296,7 +4296,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4312,7 +4312,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4328,7 +4328,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4344,7 +4344,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4360,7 +4360,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4376,7 +4376,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4392,7 +4392,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4408,7 +4408,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4424,7 +4424,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4440,7 +4440,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4456,7 +4456,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4472,7 +4472,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4488,7 +4488,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4504,7 +4504,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4520,7 +4520,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4536,7 +4536,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4552,7 +4552,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4568,7 +4568,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4584,7 +4584,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4600,7 +4600,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4616,7 +4616,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4632,7 +4632,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4648,7 +4648,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4664,7 +4664,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4680,7 +4680,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4696,7 +4696,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4712,7 +4712,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4728,7 +4728,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4744,7 +4744,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4760,7 +4760,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4776,7 +4776,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4792,7 +4792,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4808,7 +4808,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4824,7 +4824,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4840,7 +4840,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4856,7 +4856,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4872,7 +4872,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4888,7 +4888,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4904,7 +4904,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4920,7 +4920,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4936,7 +4936,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4952,7 +4952,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4968,7 +4968,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -4984,7 +4984,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5000,7 +5000,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5016,7 +5016,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5032,7 +5032,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5048,7 +5048,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5064,7 +5064,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5080,7 +5080,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5096,7 +5096,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5112,7 +5112,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5128,7 +5128,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5144,7 +5144,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5160,7 +5160,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5176,7 +5176,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5192,7 +5192,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5208,7 +5208,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5224,7 +5224,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5240,7 +5240,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5256,7 +5256,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5272,7 +5272,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5288,7 +5288,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5304,7 +5304,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5320,7 +5320,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5336,7 +5336,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5352,7 +5352,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5368,7 +5368,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5384,7 +5384,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5400,7 +5400,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5416,7 +5416,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5432,7 +5432,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5448,7 +5448,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5464,7 +5464,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5480,7 +5480,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5496,7 +5496,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5512,7 +5512,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5528,7 +5528,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5544,7 +5544,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5560,7 +5560,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5576,7 +5576,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5592,7 +5592,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5608,7 +5608,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5624,7 +5624,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5640,7 +5640,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5656,7 +5656,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5672,7 +5672,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5688,7 +5688,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5704,7 +5704,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5720,7 +5720,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5736,7 +5736,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5752,7 +5752,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5768,7 +5768,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5784,7 +5784,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5800,7 +5800,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
     {
@@ -5816,7 +5816,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     }
   ]

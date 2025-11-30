@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "generated": "2025-11-30T07:00:51.029Z",
+    "generated": "2025-11-30T07:13:44.765Z",
     "totalTerms": 114,
     "source": "pte-di-rl-templates",
     "description": "Auto-discovered vocabulary book: pte-di-rl-templates",
     "version": "1.0",
     "categories": [
-      "vocabulary"
+      "pte-di-rl-templates"
     ],
     "hasIPA": true
   },
@@ -24,7 +24,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -40,7 +40,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -56,7 +56,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -72,7 +72,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -88,7 +88,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -104,7 +104,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -120,7 +120,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -136,7 +136,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -152,7 +152,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -168,7 +168,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -184,7 +184,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -200,7 +200,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -216,7 +216,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -232,7 +232,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -248,7 +248,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -264,7 +264,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -280,7 +280,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -296,7 +296,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -312,7 +312,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -328,7 +328,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -344,7 +344,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -360,7 +360,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -376,7 +376,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -392,7 +392,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -408,7 +408,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -424,7 +424,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -440,7 +440,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -456,7 +456,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -472,7 +472,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -488,7 +488,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -504,7 +504,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -520,7 +520,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -536,7 +536,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -552,7 +552,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -568,7 +568,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -584,7 +584,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -600,7 +600,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -616,7 +616,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -632,7 +632,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -648,7 +648,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -664,7 +664,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -680,7 +680,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -696,7 +696,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -712,7 +712,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -728,7 +728,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -744,7 +744,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -760,7 +760,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -776,7 +776,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -792,7 +792,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -808,7 +808,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -824,7 +824,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -840,7 +840,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -856,7 +856,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -872,7 +872,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -888,7 +888,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -904,7 +904,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -920,7 +920,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -936,7 +936,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -952,7 +952,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -968,7 +968,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -984,7 +984,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1000,7 +1000,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1016,7 +1016,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1032,7 +1032,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1048,7 +1048,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1064,7 +1064,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1080,7 +1080,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1096,7 +1096,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1112,7 +1112,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1128,7 +1128,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1144,7 +1144,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1160,7 +1160,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1176,7 +1176,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1192,7 +1192,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1208,7 +1208,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1224,7 +1224,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1240,7 +1240,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1256,7 +1256,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1272,7 +1272,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1288,7 +1288,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1304,7 +1304,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1320,7 +1320,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1336,7 +1336,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1352,7 +1352,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1368,7 +1368,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1384,7 +1384,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1400,7 +1400,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1416,7 +1416,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1432,7 +1432,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1448,7 +1448,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1464,7 +1464,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1480,7 +1480,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1496,7 +1496,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1512,7 +1512,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1528,7 +1528,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1544,7 +1544,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1560,7 +1560,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1576,7 +1576,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1592,7 +1592,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1608,7 +1608,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1624,7 +1624,7 @@
         }
       },
       "difficulty": "easy",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1640,7 +1640,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1656,7 +1656,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1672,7 +1672,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1688,7 +1688,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1704,7 +1704,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1720,7 +1720,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1736,7 +1736,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1752,7 +1752,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1768,7 +1768,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1784,7 +1784,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1800,7 +1800,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1816,7 +1816,7 @@
         }
       },
       "difficulty": "hard",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     },
     {
@@ -1832,7 +1832,7 @@
         }
       },
       "difficulty": "normal",
-      "category": "vocabulary",
+      "category": "pte-di-rl-templates",
       "source": "pte-di-rl-templates"
     }
   ]

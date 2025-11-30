@@ -6,8 +6,8 @@
  */
 
 import {
-  Cross2Icon,
-  GearIcon
+    Cross2Icon,
+    GearIcon
 } from '@radix-ui/react-icons';
 import { Badge, Button, Card, Flex, Select, Slider, Switch, Tabs, Text } from '@radix-ui/themes';
 import React, { useMemo } from 'react';
@@ -215,7 +215,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
 
                     // Set default mode when switching to shadowing
                     if (value === 'shadowing' && !vocabularyBook.startsWith('di-shadowing')) {
-                      handleVocabularyBookChange('di-shadowing-1-10');
+                      handleVocabularyBookChange('di-shadowing');
                     }
 
                     // Set default vocabulary book when switching to vocabulary
@@ -298,8 +298,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                   >
                     <Select.Trigger placeholder="Select a shadowing mode..." />
                     <Select.Content>
-                      <Select.Item value="di-shadowing-1-10">🖼️ DI Shadowing (Images 1-10) - 10 answers</Select.Item>
-                      <Select.Item value="di-shadowing-11-20">🖼️ DI Shadowing (Images 11-20) - 10 answers</Select.Item>
+                      <Select.Item value="di-shadowing">🖼️ DI Natural Shadowing - 43 natural answers</Select.Item>
                     </Select.Content>
                   </Select.Root>
                 </Flex>

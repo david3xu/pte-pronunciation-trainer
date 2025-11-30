@@ -399,12 +399,12 @@ const AudioControls: React.FC = () => {
             <Flex justify="between">
               <Text size="2">Playback speed</Text>
               <Text size="2" color="gray">
-                {audio.playbackSpeed.toFixed(1)}x
+                {settings.ttsRate.toFixed(1)}x
               </Text>
             </Flex>
             <Slider
-              value={[audio.playbackSpeed]}
-              onValueChange={([speed]) => audio.setSpeed(speed || 1.0)}
+              value={[settings.ttsRate]}
+              onValueChange={([speed]) => settings.updateSetting('ttsRate', speed || 1.0)}
               min={0.5}
               max={2.0}
               step={0.1}

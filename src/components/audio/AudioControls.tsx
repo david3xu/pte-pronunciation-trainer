@@ -130,7 +130,7 @@ const AudioControls: React.FC = () => {
 
         try {
           if (appConfig.get('tts.autoSpeak')) {
-            await ttsEngine.speak(cleanedText);
+            await ttsEngine.speak(cleanedText, null, settings.ttsRate);
           }
 
           // After speaking, move to next if auto-play is still active

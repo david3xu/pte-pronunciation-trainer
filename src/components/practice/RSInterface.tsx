@@ -24,6 +24,7 @@ import { Badge, Button, Card, Flex, Separator, Text } from '@radix-ui/themes';
 import React, { useEffect, useRef, useState } from 'react';
 import { ttsEngine } from '../../services/audio/TTSEngine';
 import type { SessionManager } from '../../services/session/sessionManager';
+import { useSettings } from '../../stores';
 import type { ItemType } from '../../types/database';
 import type { PracticeItem } from '../../types/dataset.types';
 
@@ -49,6 +50,7 @@ const RSInterface: React.FC<RSInterfaceProps> = ({
   onPrevious,
   onComplete,
 }) => {
+  const settings = useSettings();
   const [isPlaying, setIsPlaying] = useState(false);
   const [isRecording, setIsRecording] = useState(false);
   const [recordingTime, setRecordingTime] = useState(0);
@@ -79,7 +81,7 @@ const RSInterface: React.FC<RSInterfaceProps> = ({
 
     setIsPlaying(true);
     try {
-      await ttsEngine.speak(sentence, null, 0.9); // (text, lang, rate)
+      await ttsEngine.speak(sentence, null, settings.ttsRate); // (text, lang, rate)
     } catch (error) {
       console.error('[RSInterface] Playback error:', error);
     } finally {

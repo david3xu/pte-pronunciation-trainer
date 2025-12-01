@@ -3,11 +3,10 @@
  *
  * Task-specific UI for practicing Write From Dictation.
  * Features:
- * - Audio playback for sentence (listen multiple times)
- * - Text input for transcription
- * - Word-by-word comparison with highlighting
- * - Accuracy scoring
- * - Detailed feedback on missed/extra words
+ * - Audio playback with 3 play limit
+ * - Text input for dictation response
+ * - Word-by-word validation
+ * - Real-time feedback
  *
  * Phase 5: UI Redesign
  */
@@ -25,6 +24,7 @@ import { Badge, Button, Card, Flex, Separator, Text } from '@radix-ui/themes';
 import React, { useEffect, useRef, useState } from 'react';
 import { ttsEngine } from '../../services/audio/TTSEngine';
 import type { SessionManager } from '../../services/session/sessionManager';
+import { useSettings } from '../../stores';
 import type { ItemType } from '../../types/database';
 import type { PracticeItem } from '../../types/dataset.types';
 
@@ -52,6 +52,7 @@ const WFDInterface: React.FC<WFDInterfaceProps> = ({
   onPrevious,
   onComplete,
 }) => {
+  const settings = useSettings();
   const [isPlaying, setIsPlaying] = useState(false);
   const [playCount, setPlayCount] = useState(0);
   const [userInput, setUserInput] = useState('');
@@ -77,7 +78,7 @@ const WFDInterface: React.FC<WFDInterfaceProps> = ({
     setPlayCount((prev) => prev + 1);
 
     try {
-      await ttsEngine.speak(sentence, null, 0.9); // (text, lang, rate)
+      await ttsEngine.speak(sentence, null, settings.ttsRate); // (text, lang, rate)
     } catch (error) {
       console.error('[WFDInterface] Playback error:', error);
     } finally {

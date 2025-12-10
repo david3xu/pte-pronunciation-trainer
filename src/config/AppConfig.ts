@@ -55,6 +55,7 @@ export class AppConfig {
               'pte-essay-topic-vocabulary': 'data/processed/pte-essay-topic-vocabulary.json',
               'pte-di-difficult-words': 'data/processed/pte-di-difficult-words-vocabulary.json',
               'pte-di-easy-phrases': 'data/processed/pte-di-easy-phrases-vocabulary.json',
+              'pte-essay-b1-examples': 'data/processed/pte-essay-b1-examples-vocabulary.json',
 
               // Practice modes
               'rs': 'data/processed/pte-repeat-sentence.json',
@@ -87,6 +88,7 @@ export class AppConfig {
           { id: 'pte-essay-topic-vocabulary', name: 'PTE Essay Topics', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-di-difficult-words', name: 'PTE DI Difficult Words', category: 'vocabulary', difficulty: 'hard' },
           { id: 'pte-di-easy-phrases', name: 'PTE DI Easy Phrases', category: 'vocabulary', difficulty: 'easy' },
+          { id: 'pte-essay-b1-examples', name: 'PTE Essay B1 Examples', category: 'vocabulary', difficulty: 'normal' },
 
           // Practice modes (3 total)
           { id: 'rs', name: 'Repeat Sentence', category: 'practice', description: '620 practice sentences' },

@@ -188,6 +188,18 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
     setFeedback(null);
     setHasSubmitted(false);
     setPlayCount(0);
+
+    // Auto-play on retry
+    // Trigger playback after a short delay to allow state reset
+    setTimeout(() => {
+      if (!isPlaying) {
+        setIsPlaying(true);
+        setPlayCount(1);
+        ttsEngine.speak(english, null, settings.ttsRate)
+          .catch(err => console.error('[VocabTyping] Retry playback error:', err))
+          .finally(() => setIsPlaying(false));
+      }
+    }, 300);
   };
 
   // Handle next/previous
@@ -207,12 +219,39 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
     if (onPrevious) onPrevious();
   };
 
-  // Handle Enter key submission
+  // Handle Enter key submission (Input specific)
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && userInput.trim() && !hasSubmitted && playCount > 0) {
       handleSubmit();
     }
   };
+
+  // Global keyboard navigation
+  useEffect(() => {
+    const handleGlobalKeyDown = (e: KeyboardEvent) => {
+      const isInputFocused = document.activeElement === inputRef.current;
+
+      // Previous: ArrowLeft
+      if (e.key === 'ArrowLeft') {
+        // Allow navigation if input is NOT focused, OR if Ctrl is held
+        if (!isInputFocused || e.ctrlKey) {
+          handlePrevious();
+        }
+      }
+
+      // Next: ArrowRight
+      if (e.key === 'ArrowRight') {
+        // Only navigate if next is allowed (submitted) OR overrides (Ctrl)
+        // AND not typing (unless Ctrl)
+        if ((!isInputFocused || e.ctrlKey) && (hasSubmitted || e.ctrlKey)) {
+          handleNext();
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleGlobalKeyDown);
+    return () => window.removeEventListener('keydown', handleGlobalKeyDown);
+  }, [handleNext, handlePrevious, hasSubmitted]);
 
   // Auto-focus input after first play
   useEffect(() => {

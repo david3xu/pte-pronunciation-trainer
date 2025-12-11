@@ -1,9 +1,9 @@
 import {
-    BarChartIcon,
-    ChatBubbleIcon,
-    GearIcon,
-    LightningBoltIcon,
-    SpeakerLoudIcon,
+  BarChartIcon,
+  ChatBubbleIcon,
+  GearIcon,
+  LightningBoltIcon,
+  SpeakerLoudIcon,
 } from '@radix-ui/react-icons';
 import { Button, Flex, Spinner, Theme } from '@radix-ui/themes';
 import React, { lazy, Suspense, useEffect, useState } from 'react';
@@ -23,8 +23,8 @@ import WeakAreasDashboard from './ai/WeakAreasDashboard';
 import AudioControls from './audio/AudioControls';
 import DataMigrationModal from './migration/DataMigrationModal';
 import {
-    ProgressDashboard,
-    WordCard,
+  ProgressDashboard,
+  WordCard,
 } from './practice';
 import LearnerProfileModal from './profile/LearnerProfileModal';
 import SettingsPanel from './settings/SettingsPanel';
@@ -111,6 +111,7 @@ export const AppContent: React.FC = () => {
 
         console.log(`Loaded ${items.length} items (${data.vocabulary ? 'vocabulary' : 'shadowing'})`);
         vocabulary.setDataset(items, vocabularyBook); // Atomically sets currentItem and resets index
+        progress.updateProgress(0, items.length); // Sync progress index to 0 to match dataset reset
 
         // Start practice session for tracking
         try {
@@ -151,6 +152,12 @@ export const AppContent: React.FC = () => {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Dependencies intentionally omitted - only run on mount
+
+  // ... (rest of component)
+  // (Assuming handleNext/Previous are further down, I will use a separate replace call if they are far apart,
+  // checking line numbers: 115-150 vs 250-274. They are far. I should use multi_replace or two replace calls.
+  // I will use replace_file_content for the FIRST block (loadInitialVocabulary) now, then another tool call for handlers.)
+
 
   // Phase 4: Monitor session for proactive interventions
   useEffect(() => {
@@ -248,28 +255,45 @@ export const AppContent: React.FC = () => {
 
   // Navigation handlers for task-specific interfaces
   const handleNext = () => {
-    const { navigateNext } = audio;
-    navigateNext();
-
-    // Update current item based on new index
+    // Determine next index based on current progress
     const nextIndex = progress.currentIndex + 1;
     const { filteredDataset, setCurrentItem } = vocabulary;
-    const nextItem = filteredDataset[nextIndex];
-    if (nextItem) {
-      setCurrentItem(nextItem);
+
+    // Check bounds
+    if (nextIndex < filteredDataset.length) {
+      // Sync all states
+      progress.updateProgress(nextIndex, filteredDataset.length);
+      audio.setCurrentIndex(nextIndex); // Explicitly sync audio index
+
+      const nextItem = filteredDataset[nextIndex];
+      if (nextItem) {
+        setCurrentItem(nextItem);
+      }
+    } else {
+      // Potentially handle end of list (loop or stop)
+      if (audio.repeatMode && filteredDataset.length > 0) {
+        progress.updateProgress(0, filteredDataset.length);
+        audio.setCurrentIndex(0);
+        const firstItem = filteredDataset[0];
+        if (firstItem) {
+          setCurrentItem(firstItem);
+        }
+      }
     }
   };
 
   const handlePrevious = () => {
-    const { navigatePrev } = audio;
-    navigatePrev();
-
-    // Update current item based on new index
-    const prevIndex = Math.max(0, progress.currentIndex - 1);
+    const prevIndex = progress.currentIndex - 1;
     const { filteredDataset, setCurrentItem } = vocabulary;
-    const prevItem = filteredDataset[prevIndex];
-    if (prevItem) {
-      setCurrentItem(prevItem);
+
+    if (prevIndex >= 0) {
+      progress.updateProgress(prevIndex, filteredDataset.length);
+      audio.setCurrentIndex(prevIndex);
+
+      const prevItem = filteredDataset[prevIndex];
+      if (prevItem) {
+        setCurrentItem(prevItem);
+      }
     }
   };
 

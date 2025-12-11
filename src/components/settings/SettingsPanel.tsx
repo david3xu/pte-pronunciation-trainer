@@ -205,7 +205,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                 </Text>
                 <Select.Root
                   value={practiceType}
-                  onValueChange={(value: 'vocabulary' | 'practice' | 'shadowing') => {
+                  onValueChange={(value: 'vocabulary' | 'vocab-typing' | 'practice' | 'shadowing') => {
                     updateSetting('practiceType', value);
 
                     // Set default mode when switching to practice
@@ -218,8 +218,8 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                       handleVocabularyBookChange('di-shadowing');
                     }
 
-                    // Set default vocabulary book when switching to vocabulary
-                    if (value === 'vocabulary' && (vocabularyBook.startsWith('di-shadowing') || vocabularyBook.startsWith('practice-'))) {
+                    // Set default vocabulary book when switching to vocabulary or vocab-typing
+                    if ((value === 'vocabulary' || value === 'vocab-typing') && (vocabularyBook.startsWith('di-shadowing') || vocabularyBook.startsWith('practice-'))) {
                       handleVocabularyBookChange('pte-fib-listening');
                     }
                   }}
@@ -227,6 +227,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                   <Select.Trigger />
                   <Select.Content>
                     <Select.Item value="vocabulary">📚 Vocabulary Learning</Select.Item>
+                    <Select.Item value="vocab-typing">✍️ Vocabulary Typing Practice</Select.Item>
                     <Select.Item value="practice">🎯 Task Practice (RS/ASQ/WFD)</Select.Item>
                     <Select.Item value="shadowing">🎤 Shadowing Practice (DI)</Select.Item>
                   </Select.Content>
@@ -262,8 +263,8 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                 </Flex>
               )}
 
-              {/* Vocabulary Book (if vocabulary type selected) */}
-              {practiceType === 'vocabulary' && (
+              {/* Vocabulary Book (if vocabulary or vocab-typing type selected) */}
+              {(practiceType === 'vocabulary' || practiceType === 'vocab-typing') && (
                 <Flex direction="column" gap="2">
                   <Text size="3" weight="medium">Vocabulary Book</Text>
                   <Select.Root

@@ -1,9 +1,9 @@
 import {
-  BarChartIcon,
-  ChatBubbleIcon,
-  GearIcon,
-  LightningBoltIcon,
-  SpeakerLoudIcon,
+    BarChartIcon,
+    ChatBubbleIcon,
+    GearIcon,
+    LightningBoltIcon,
+    SpeakerLoudIcon,
 } from '@radix-ui/react-icons';
 import { Button, Flex, Spinner, Theme } from '@radix-ui/themes';
 import React, { lazy, Suspense, useEffect, useState } from 'react';
@@ -23,8 +23,8 @@ import WeakAreasDashboard from './ai/WeakAreasDashboard';
 import AudioControls from './audio/AudioControls';
 import DataMigrationModal from './migration/DataMigrationModal';
 import {
-  ProgressDashboard,
-  WordCard,
+    ProgressDashboard,
+    WordCard,
 } from './practice';
 import LearnerProfileModal from './profile/LearnerProfileModal';
 import SettingsPanel from './settings/SettingsPanel';
@@ -35,6 +35,7 @@ import { WordCardSkeleton } from './shared/Skeleton';
 const RSInterface = lazy(() => import('./practice/RSInterface'));
 const ASQInterface = lazy(() => import('./practice/ASQInterface'));
 const WFDInterface = lazy(() => import('./practice/WFDInterface'));
+const VocabTypingInterface = lazy(() => import('./practice/VocabTypingInterface'));
 
 export const AppContent: React.FC = () => {
   // Access Zustand store using selector pattern for proper re-renders
@@ -222,7 +223,12 @@ export const AppContent: React.FC = () => {
   };
 
   // Determine which interface to render based on vocabulary mode
-  const getPracticeInterfaceType = (): 'vocabulary' | 'rs' | 'asq' | 'wfd' => {
+  const getPracticeInterfaceType = (): 'vocabulary' | 'vocab-typing' | 'rs' | 'asq' | 'wfd' => {
+    // Check for vocab-typing mode
+    if (settings.practiceType === 'vocab-typing') {
+      return 'vocab-typing';
+    }
+
     const mode = vocabulary.mode.toLowerCase();
 
     // Check for practice modes using exact prefix match
@@ -439,6 +445,15 @@ export const AppContent: React.FC = () => {
                     )}
                     {interfaceType === 'wfd' && (
                       <WFDInterface
+                        item={currentItem as any}
+                        sessionManager={sessionManager}
+                        onNext={handleNext}
+                        onPrevious={handlePrevious}
+                        onComplete={handleItemComplete}
+                      />
+                    )}
+                    {interfaceType === 'vocab-typing' && (
+                      <VocabTypingInterface
                         item={currentItem as any}
                         sessionManager={sessionManager}
                         onNext={handleNext}

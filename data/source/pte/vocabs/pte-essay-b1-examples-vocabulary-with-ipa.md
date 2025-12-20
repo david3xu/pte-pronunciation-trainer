@@ -328,20 +328,20 @@
 
 ## Expanded Terms: Early Marriage (Alternative Arguments)
 
-240. **spousal support** | /ˈspaʊzəl səˈpɔːt/ — sounds like **SPOW-zul suh-PORT**
-241. **joint problem-solving** | /dʒɔɪnt ˈprɒbləm ˈsɒlvɪŋ/ — sounds like **JOYNT PROB-lum SOL-ving**
-242. **marital responsibility** | /ˈmærɪtəl rɪˌspɒnsəˈbɪləti/ — sounds like **MAR-ih-tul rih-spon-suh-BIL-uh-tee**
+240. **partner support** | /ˈpɑːtnə səˈpɔːt/ — sounds like **PART-nur suh-PORT**
+241. **solving problems together** | /ˈsɒlvɪŋ ˈprɒbləmz təˈɡeðə/ — sounds like **SOL-ving PROB-lumz tuh-GETH-ur**
+242. **marriage duties** | /ˈmærɪdʒ ˈdjuːtiz/ — sounds like **MAR-ij DOO-teez**
 243. **extra household costs** | /ˈekstrə ˈhaʊshəʊld kɒsts/ — sounds like **EK-struh HOWS-hohld KOSTS**
-244. **marital breakdown** | /ˈmærɪtəl ˈbreɪkdaʊn/ — sounds like **MAR-ih-tul BRAYK-down**
+244. **marriage problems** | /ˈmærɪdʒ ˈprɒbləmz/ — sounds like **MAR-ij PROB-lumz**
 
 ---
 
 ## Expanded Terms: Television Functions (Specific Examples)
 
 245. **comedies and talk shows** | /ˈkɒmədiz ənd tɔːk ʃəʊz/ — sounds like **KOM-uh-deez und TAWK SHOHZ**
-246. **humorous content** | /ˈhjuːmərəs ˈkɒntent/ — sounds like **HYOO-mur-us KON-tent**
-247. **scenery documentaries** | /ˈsiːnəri ˌdɒkjʊˈmentəriz/ — sounds like **SEE-nuh-ree dok-yoo-MEN-tuh-reez**
-248. **soothing melodies** | /ˈsuːðɪŋ ˈmelədiz/ — sounds like **SOO-thing MEL-uh-deez**
+246. **funny shows** | /ˈfʌni ʃəʊz/ — sounds like **FUN-ee SHOHZ**
+247. **nature shows** | /ˈneɪtʃə ʃəʊz/ — sounds like **NAY-chur SHOHZ**
+248. **calming music** | /ˈkɑːmɪŋ ˈmjuːzɪk/ — sounds like **KAH-ming MYOO-zik**
 
 ---
 

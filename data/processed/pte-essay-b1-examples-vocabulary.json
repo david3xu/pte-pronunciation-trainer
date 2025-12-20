@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-12-20T21:02:50.782Z",
-    "totalTerms": 239,
+    "generated": "2025-12-20T21:06:36.146Z",
+    "totalTerms": 252,
     "source": "pte-essay-b1-examples-vocabulary",
     "description": "Auto-discovered vocabulary book: pte-essay-b1-examples-vocabulary",
     "version": "1.0",
@@ -3829,6 +3829,214 @@
         "american": {
           "ipa": "ˈkʌmpəniz ˈɡʌvənmənts ənd ˌɪndɪˈvɪdʒuəlz",
           "phonetic": "KUM-puh-neez GUV-urn-ments und in-dih-VIJ-oo-ulz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**spousal support**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈspaʊzəl səˈpɔːt",
+          "phonetic": "SPOW-zul suh-PORT"
+        },
+        "american": {
+          "ipa": "ˈspaʊzəl səˈpɔːt",
+          "phonetic": "SPOW-zul suh-PORT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**joint problem-solving**",
+      "pronunciation": {
+        "british": {
+          "ipa": "dʒɔɪnt ˈprɒbləm ˈsɒlvɪŋ",
+          "phonetic": "JOYNT PROB-lum SOL-ving"
+        },
+        "american": {
+          "ipa": "dʒɔɪnt ˈprɒbləm ˈsɒlvɪŋ",
+          "phonetic": "JOYNT PROB-lum SOL-ving"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**marital responsibility**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmærɪtəl rɪˌspɒnsəˈbɪləti",
+          "phonetic": "MAR-ih-tul rih-spon-suh-BIL-uh-tee"
+        },
+        "american": {
+          "ipa": "ˈmærɪtəl rɪˌspɒnsəˈbɪləti",
+          "phonetic": "MAR-ih-tul rih-spon-suh-BIL-uh-tee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**extra household costs**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈekstrə ˈhaʊshəʊld kɒsts",
+          "phonetic": "EK-struh HOWS-hohld KOSTS"
+        },
+        "american": {
+          "ipa": "ˈekstrə ˈhaʊshəʊld kɒsts",
+          "phonetic": "EK-struh HOWS-hohld KOSTS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**marital breakdown**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmærɪtəl ˈbreɪkdaʊn",
+          "phonetic": "MAR-ih-tul BRAYK-down"
+        },
+        "american": {
+          "ipa": "ˈmærɪtəl ˈbreɪkdaʊn",
+          "phonetic": "MAR-ih-tul BRAYK-down"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**comedies and talk shows**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkɒmədiz ənd tɔːk ʃəʊz",
+          "phonetic": "KOM-uh-deez und TAWK SHOHZ"
+        },
+        "american": {
+          "ipa": "ˈkɒmədiz ənd tɔːk ʃəʊz",
+          "phonetic": "KOM-uh-deez und TAWK SHOHZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**humorous content**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhjuːmərəs ˈkɒntent",
+          "phonetic": "HYOO-mur-us KON-tent"
+        },
+        "american": {
+          "ipa": "ˈhjuːmərəs ˈkɒntent",
+          "phonetic": "HYOO-mur-us KON-tent"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**scenery documentaries**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsiːnəri ˌdɒkjʊˈmentəriz",
+          "phonetic": "SEE-nuh-ree dok-yoo-MEN-tuh-reez"
+        },
+        "american": {
+          "ipa": "ˈsiːnəri ˌdɒkjʊˈmentəriz",
+          "phonetic": "SEE-nuh-ree dok-yoo-MEN-tuh-reez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**soothing melodies**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsuːðɪŋ ˈmelədiz",
+          "phonetic": "SOO-thing MEL-uh-deez"
+        },
+        "american": {
+          "ipa": "ˈsuːðɪŋ ˈmelədiz",
+          "phonetic": "SOO-thing MEL-uh-deez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**workplace competition**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈwɜːkpleɪs ˌkɒmpəˈtɪʃən",
+          "phonetic": "WURK-plays kom-puh-TISH-un"
+        },
+        "american": {
+          "ipa": "ˈwɜːkpleɪs ˌkɒmpəˈtɪʃən",
+          "phonetic": "WURK-plays kom-puh-TISH-un"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**extra hours and less rest**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈekstrə ˈaʊəz ənd les rest",
+          "phonetic": "EK-struh OW-urz und LES REST"
+        },
+        "american": {
+          "ipa": "ˈekstrə ˈaʊəz ənd les rest",
+          "phonetic": "EK-struh OW-urz und LES REST"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**high living costs**",
+      "pronunciation": {
+        "british": {
+          "ipa": "haɪ ˈlɪvɪŋ kɒsts",
+          "phonetic": "HY LIV-ing KOSTS"
+        },
+        "american": {
+          "ipa": "haɪ ˈlɪvɪŋ kɒsts",
+          "phonetic": "HY LIV-ing KOSTS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**overtime work**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈəʊvətaɪm wɜːk",
+          "phonetic": "OH-vur-tym WURK"
+        },
+        "american": {
+          "ipa": "ˈəʊvətaɪm wɜːk",
+          "phonetic": "OH-vur-tym WURK"
         }
       },
       "difficulty": "hard",

@@ -288,10 +288,48 @@
 
 ---
 
+## Example 15: Employee Decision Participation
+
+212. **employee decision participation** | /ɪmˈplɔɪiː dɪˈsɪʒən pɑːˌtɪsɪˈpeɪʃən/ — sounds like **im-PLOY-ee dih-SIZH-un par-tis-ih-PAY-shun**
+213. **employers** | /ɪmˈplɔɪəz/ — sounds like **im-PLOY-urz**
+214. **employees** | /ɪmˈplɔɪiːz/ — sounds like **im-ploy-EEZ**
+215. **employee loyalty and motivation** | /ɪmˈplɔɪiː ˈlɔɪəlti ənd ˌməʊtɪˈveɪʃən/ — sounds like **im-PLOY-ee LOY-ul-tee und moh-tih-VAY-shun**
+216. **engagement and belonging** | /ɪnˈɡeɪdʒmənt ənd bɪˈlɒŋɪŋ/ — sounds like **in-GAYJ-ment und bih-LONG-ing**
+217. **better business ideas and revenue** | /ˈbetə ˈbɪznəs aɪˈdɪəz ənd ˈrevənjuː/ — sounds like **BET-ur BIZ-nus eye-DEE-uhz und REV-uh-nyoo**
+218. **customer satisfaction** | /ˈkʌstəmə ˌsætɪsˈfækʃən/ — sounds like **KUS-tuh-mur sat-is-FAK-shun**
+219. **management research** | /ˈmænɪdʒmənt rɪˈsɜːtʃ/ — sounds like **MAN-ij-ment rih-SURCH**
+220. **stronger work commitment** | /ˈstrɒŋɡə wɜːk kəˈmɪtmənt/ — sounds like **STRONG-ur WURK kuh-MIT-ment**
+221. **conflicts and disagreements** | /ˈkɒnflɪkts ənd ˌdɪsəˈɡriːmənts/ — sounds like **KON-flikts und dis-uh-GREE-ments**
+222. **longer meeting times** | /ˈlɒŋɡə ˈmiːtɪŋ taɪmz/ — sounds like **LONG-ur MEE-ting TYMZ**
+223. **slower work progress** | /ˈsləʊə wɜːk ˈprəʊɡres/ — sounds like **SLOH-ur WURK PROH-gres**
+224. **business experts** | /ˈbɪznəs ˈekspɜːts/ — sounds like **BIZ-nus EK-spurts**
+225. **companies and managers** | /ˈkʌmpəniz ənd ˈmænɪdʒəz/ — sounds like **KUM-puh-neez und MAN-ij-urz**
+
+---
+
+## Example 16: Climate Change - Company and Individual Actions
+
+226. **corporate climate action** | /ˈkɔːpərət ˈklaɪmət ˈækʃən/ — sounds like **KOR-pur-ut KLY-mut AK-shun**
+227. **big companies** | /bɪɡ ˈkʌmpəniz/ — sounds like **BIG KUM-puh-neez**
+228. **individuals** | /ˌɪndɪˈvɪdʒuəlz/ — sounds like **in-dih-VIJ-oo-ulz**
+229. **sustainable operations** | /səˈsteɪnəbəl ˌɒpəˈreɪʃənz/ — sounds like **suh-STAY-nuh-bul op-uh-RAY-shunz**
+230. **lower pollution** | /ˈləʊə pəˈluːʃən/ — sounds like **LOH-ur puh-LOO-shun**
+231. **green research** | /ɡriːn rɪˈsɜːtʃ/ — sounds like **GREEN rih-SURCH**
+232. **clean energy plans** | /kliːn ˈenədʒi plænz/ — sounds like **KLEEN EN-ur-jee PLANZ**
+233. **corporate responsibility** | /ˈkɔːpərət rɪˌspɒnsəˈbɪləti/ — sounds like **KOR-pur-ut rih-spon-suh-BIL-uh-tee**
+234. **public awareness** | /ˈpʌblɪk əˈweənəs/ — sounds like **PUB-lik uh-WAIR-nus**
+235. **green choices** | /ɡriːn ˈtʃɔɪsɪz/ — sounds like **GREEN CHOY-siz**
+236. **sustainable lifestyle** | /səˈsteɪnəbəl ˈlaɪfstaɪl/ — sounds like **suh-STAY-nuh-bul LYF-styl**
+237. **green energy at home** | /ɡriːn ˈenədʒi ət həʊm/ — sounds like **GREEN EN-ur-jee ut HOHM**
+238. **business studies** | /ˈbɪznəs ˈstʌdiz/ — sounds like **BIZ-nus STUD-eez**
+239. **companies, governments, and individuals** | /ˈkʌmpəniz ˈɡʌvənmənts ənd ˌɪndɪˈvɪdʒuəlz/ — sounds like **KUM-puh-neez GUV-urn-ments und in-dih-VIJ-oo-ulz**
+
+---
+
 ## Summary Statistics
 
-- **Total unique terms:** 211 terms
-- **Organized by:** 14 essay examples (same order as template B1)
+- **Total unique terms:** 239 terms
+- **Organized by:** 16 essay examples (same order as template B1)
 - **All terms:** Used in actual Template B1 essays
 - **Strategy:** These are ACTUAL fills used in essay examples
 
@@ -310,5 +348,5 @@
 ---
 
 *All terms extracted from essay-examples-template-b1.md*
-*Organized by 14 examples in document order*
+*Organized by 16 examples in document order*
 *Last Updated: December 2024*

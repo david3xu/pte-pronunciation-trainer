@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-12-20T20:37:47.296Z",
-    "totalTerms": 211,
+    "generated": "2025-12-20T21:02:50.782Z",
+    "totalTerms": 239,
     "source": "pte-essay-b1-examples-vocabulary",
     "description": "Auto-discovered vocabulary book: pte-essay-b1-examples-vocabulary",
     "version": "1.0",
@@ -3381,6 +3381,454 @@
         "american": {
           "ipa": "ˈɡʌvənmənts ənd ˈləʊkəl kəˈmjuːnətiz",
           "phonetic": "GUV-urn-ments und LOH-kul kuh-MYOO-nih-teez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**employee decision participation**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪmˈplɔɪiː dɪˈsɪʒən pɑːˌtɪsɪˈpeɪʃən",
+          "phonetic": "im-PLOY-ee dih-SIZH-un par-tis-ih-PAY-shun"
+        },
+        "american": {
+          "ipa": "ɪmˈplɔɪiː dɪˈsɪʒən pɑːˌtɪsɪˈpeɪʃən",
+          "phonetic": "im-PLOY-ee dih-SIZH-un par-tis-ih-PAY-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**employers**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪmˈplɔɪəz",
+          "phonetic": "im-PLOY-urz"
+        },
+        "american": {
+          "ipa": "ɪmˈplɔɪəz",
+          "phonetic": "im-PLOY-urz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**employees**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪmˈplɔɪiːz",
+          "phonetic": "im-ploy-EEZ"
+        },
+        "american": {
+          "ipa": "ɪmˈplɔɪiːz",
+          "phonetic": "im-ploy-EEZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**employee loyalty and motivation**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪmˈplɔɪiː ˈlɔɪəlti ənd ˌməʊtɪˈveɪʃən",
+          "phonetic": "im-PLOY-ee LOY-ul-tee und moh-tih-VAY-shun"
+        },
+        "american": {
+          "ipa": "ɪmˈplɔɪiː ˈlɔɪəlti ənd ˌməʊtɪˈveɪʃən",
+          "phonetic": "im-PLOY-ee LOY-ul-tee und moh-tih-VAY-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**engagement and belonging**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈɡeɪdʒmənt ənd bɪˈlɒŋɪŋ",
+          "phonetic": "in-GAYJ-ment und bih-LONG-ing"
+        },
+        "american": {
+          "ipa": "ɪnˈɡeɪdʒmənt ənd bɪˈlɒŋɪŋ",
+          "phonetic": "in-GAYJ-ment und bih-LONG-ing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**better business ideas and revenue**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbetə ˈbɪznəs aɪˈdɪəz ənd ˈrevənjuː",
+          "phonetic": "BET-ur BIZ-nus eye-DEE-uhz und REV-uh-nyoo"
+        },
+        "american": {
+          "ipa": "ˈbetə ˈbɪznəs aɪˈdɪəz ənd ˈrevənjuː",
+          "phonetic": "BET-ur BIZ-nus eye-DEE-uhz und REV-uh-nyoo"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**customer satisfaction**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌstəmə ˌsætɪsˈfækʃən",
+          "phonetic": "KUS-tuh-mur sat-is-FAK-shun"
+        },
+        "american": {
+          "ipa": "ˈkʌstəmə ˌsætɪsˈfækʃən",
+          "phonetic": "KUS-tuh-mur sat-is-FAK-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**management research**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmænɪdʒmənt rɪˈsɜːtʃ",
+          "phonetic": "MAN-ij-ment rih-SURCH"
+        },
+        "american": {
+          "ipa": "ˈmænɪdʒmənt rɪˈsɜːtʃ",
+          "phonetic": "MAN-ij-ment rih-SURCH"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**stronger work commitment**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈstrɒŋɡə wɜːk kəˈmɪtmənt",
+          "phonetic": "STRONG-ur WURK kuh-MIT-ment"
+        },
+        "american": {
+          "ipa": "ˈstrɒŋɡə wɜːk kəˈmɪtmənt",
+          "phonetic": "STRONG-ur WURK kuh-MIT-ment"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**conflicts and disagreements**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkɒnflɪkts ənd ˌdɪsəˈɡriːmənts",
+          "phonetic": "KON-flikts und dis-uh-GREE-ments"
+        },
+        "american": {
+          "ipa": "ˈkɒnflɪkts ənd ˌdɪsəˈɡriːmənts",
+          "phonetic": "KON-flikts und dis-uh-GREE-ments"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**longer meeting times**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlɒŋɡə ˈmiːtɪŋ taɪmz",
+          "phonetic": "LONG-ur MEE-ting TYMZ"
+        },
+        "american": {
+          "ipa": "ˈlɒŋɡə ˈmiːtɪŋ taɪmz",
+          "phonetic": "LONG-ur MEE-ting TYMZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**slower work progress**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsləʊə wɜːk ˈprəʊɡres",
+          "phonetic": "SLOH-ur WURK PROH-gres"
+        },
+        "american": {
+          "ipa": "ˈsləʊə wɜːk ˈprəʊɡres",
+          "phonetic": "SLOH-ur WURK PROH-gres"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**business experts**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbɪznəs ˈekspɜːts",
+          "phonetic": "BIZ-nus EK-spurts"
+        },
+        "american": {
+          "ipa": "ˈbɪznəs ˈekspɜːts",
+          "phonetic": "BIZ-nus EK-spurts"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**companies and managers**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌmpəniz ənd ˈmænɪdʒəz",
+          "phonetic": "KUM-puh-neez und MAN-ij-urz"
+        },
+        "american": {
+          "ipa": "ˈkʌmpəniz ənd ˈmænɪdʒəz",
+          "phonetic": "KUM-puh-neez und MAN-ij-urz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**corporate climate action**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkɔːpərət ˈklaɪmət ˈækʃən",
+          "phonetic": "KOR-pur-ut KLY-mut AK-shun"
+        },
+        "american": {
+          "ipa": "ˈkɔːpərət ˈklaɪmət ˈækʃən",
+          "phonetic": "KOR-pur-ut KLY-mut AK-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**big companies**",
+      "pronunciation": {
+        "british": {
+          "ipa": "bɪɡ ˈkʌmpəniz",
+          "phonetic": "BIG KUM-puh-neez"
+        },
+        "american": {
+          "ipa": "bɪɡ ˈkʌmpəniz",
+          "phonetic": "BIG KUM-puh-neez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**individuals**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌɪndɪˈvɪdʒuəlz",
+          "phonetic": "in-dih-VIJ-oo-ulz"
+        },
+        "american": {
+          "ipa": "ˌɪndɪˈvɪdʒuəlz",
+          "phonetic": "in-dih-VIJ-oo-ulz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**sustainable operations**",
+      "pronunciation": {
+        "british": {
+          "ipa": "səˈsteɪnəbəl ˌɒpəˈreɪʃənz",
+          "phonetic": "suh-STAY-nuh-bul op-uh-RAY-shunz"
+        },
+        "american": {
+          "ipa": "səˈsteɪnəbəl ˌɒpəˈreɪʃənz",
+          "phonetic": "suh-STAY-nuh-bul op-uh-RAY-shunz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**lower pollution**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈləʊə pəˈluːʃən",
+          "phonetic": "LOH-ur puh-LOO-shun"
+        },
+        "american": {
+          "ipa": "ˈləʊə pəˈluːʃən",
+          "phonetic": "LOH-ur puh-LOO-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**green research**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɡriːn rɪˈsɜːtʃ",
+          "phonetic": "GREEN rih-SURCH"
+        },
+        "american": {
+          "ipa": "ɡriːn rɪˈsɜːtʃ",
+          "phonetic": "GREEN rih-SURCH"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**clean energy plans**",
+      "pronunciation": {
+        "british": {
+          "ipa": "kliːn ˈenədʒi plænz",
+          "phonetic": "KLEEN EN-ur-jee PLANZ"
+        },
+        "american": {
+          "ipa": "kliːn ˈenədʒi plænz",
+          "phonetic": "KLEEN EN-ur-jee PLANZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**corporate responsibility**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkɔːpərət rɪˌspɒnsəˈbɪləti",
+          "phonetic": "KOR-pur-ut rih-spon-suh-BIL-uh-tee"
+        },
+        "american": {
+          "ipa": "ˈkɔːpərət rɪˌspɒnsəˈbɪləti",
+          "phonetic": "KOR-pur-ut rih-spon-suh-BIL-uh-tee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**public awareness**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpʌblɪk əˈweənəs",
+          "phonetic": "PUB-lik uh-WAIR-nus"
+        },
+        "american": {
+          "ipa": "ˈpʌblɪk əˈweənəs",
+          "phonetic": "PUB-lik uh-WAIR-nus"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**green choices**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɡriːn ˈtʃɔɪsɪz",
+          "phonetic": "GREEN CHOY-siz"
+        },
+        "american": {
+          "ipa": "ɡriːn ˈtʃɔɪsɪz",
+          "phonetic": "GREEN CHOY-siz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**sustainable lifestyle**",
+      "pronunciation": {
+        "british": {
+          "ipa": "səˈsteɪnəbəl ˈlaɪfstaɪl",
+          "phonetic": "suh-STAY-nuh-bul LYF-styl"
+        },
+        "american": {
+          "ipa": "səˈsteɪnəbəl ˈlaɪfstaɪl",
+          "phonetic": "suh-STAY-nuh-bul LYF-styl"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**green energy at home**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɡriːn ˈenədʒi ət həʊm",
+          "phonetic": "GREEN EN-ur-jee ut HOHM"
+        },
+        "american": {
+          "ipa": "ɡriːn ˈenədʒi ət həʊm",
+          "phonetic": "GREEN EN-ur-jee ut HOHM"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**business studies**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbɪznəs ˈstʌdiz",
+          "phonetic": "BIZ-nus STUD-eez"
+        },
+        "american": {
+          "ipa": "ˈbɪznəs ˈstʌdiz",
+          "phonetic": "BIZ-nus STUD-eez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**companies, governments, and individuals**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌmpəniz ˈɡʌvənmənts ənd ˌɪndɪˈvɪdʒuəlz",
+          "phonetic": "KUM-puh-neez GUV-urn-ments und in-dih-VIJ-oo-ulz"
+        },
+        "american": {
+          "ipa": "ˈkʌmpəniz ˈɡʌvənmənts ənd ˌɪndɪˈvɪdʒuəlz",
+          "phonetic": "KUM-puh-neez GUV-urn-ments und in-dih-VIJ-oo-ulz"
         }
       },
       "difficulty": "hard",

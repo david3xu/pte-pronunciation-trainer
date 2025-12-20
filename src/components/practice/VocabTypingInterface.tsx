@@ -10,13 +10,13 @@
  */
 
 import {
-  CheckCircledIcon,
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  CounterClockwiseClockIcon,
-  CrossCircledIcon,
-  PlayIcon,
-  ReloadIcon,
+    CheckCircledIcon,
+    ChevronLeftIcon,
+    ChevronRightIcon,
+    CounterClockwiseClockIcon,
+    CrossCircledIcon,
+    PlayIcon,
+    ReloadIcon,
 } from '@radix-ui/react-icons';
 import { Badge, Button, Card, Flex, Separator, Text } from '@radix-ui/themes';
 import React, { useEffect, useRef, useState } from 'react';
@@ -32,6 +32,8 @@ interface VocabTypingInterfaceProps {
   onNext?: () => void;
   onPrevious?: () => void;
   onComplete?: () => void;
+  currentIndex?: number;
+  totalItems?: number;
 }
 
 interface FeedbackData {
@@ -50,6 +52,8 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
   onNext,
   onPrevious,
   onComplete,
+  currentIndex,
+  totalItems,
 }) => {
   const settings = useSettings();
   const [isPlaying, setIsPlaying] = useState(false);
@@ -295,6 +299,11 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
             <Text weight="bold">
               ✍️ Vocabulary Typing Practice
             </Text>
+            {currentIndex !== undefined && totalItems !== undefined && (
+              <Badge color="blue" variant="solid">
+                {currentIndex + 1}/{totalItems}
+              </Badge>
+            )}
             <Badge color={difficulty === 'hard' ? 'red' : difficulty === 'easy' ? 'green' : 'yellow'}>
               {difficulty}
             </Badge>

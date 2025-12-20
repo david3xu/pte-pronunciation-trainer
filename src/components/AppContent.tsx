@@ -1,9 +1,9 @@
 import {
-  BarChartIcon,
-  ChatBubbleIcon,
-  GearIcon,
-  LightningBoltIcon,
-  SpeakerLoudIcon,
+    BarChartIcon,
+    ChatBubbleIcon,
+    GearIcon,
+    LightningBoltIcon,
+    SpeakerLoudIcon,
 } from '@radix-ui/react-icons';
 import { Button, Flex, Spinner, Theme } from '@radix-ui/themes';
 import React, { lazy, Suspense, useEffect, useState } from 'react';
@@ -23,8 +23,8 @@ import WeakAreasDashboard from './ai/WeakAreasDashboard';
 import AudioControls from './audio/AudioControls';
 import DataMigrationModal from './migration/DataMigrationModal';
 import {
-  ProgressDashboard,
-  WordCard,
+    ProgressDashboard,
+    WordCard,
 } from './practice';
 import LearnerProfileModal from './profile/LearnerProfileModal';
 import SettingsPanel from './settings/SettingsPanel';
@@ -483,6 +483,8 @@ export const AppContent: React.FC = () => {
                         onNext={handleNext}
                         onPrevious={handlePrevious}
                         onComplete={handleItemComplete}
+                        currentIndex={progress.currentIndex}
+                        totalItems={vocabulary.filteredDataset.length}
                       />
                     )}
                   </Suspense>

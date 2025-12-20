@@ -51,7 +51,7 @@ export class AppConfig {
               'pte-high-frequency': 'data/processed/pte-high-frequency-vocabulary.json',
               'pte-rs-core': 'data/processed/pte-rs-core-vocabulary.json',
               'pte-di-rl-templates': 'data/processed/pte-di-rl-templates-vocabulary.json',
-              'pte-sst-complete': 'data/processed/pte-sst-complete-vocabulary.json',
+              'pte-sst-complete': 'data/processed/pte-sst-complete.json',
               'pte-essay-topic-vocabulary': 'data/processed/pte-essay-topic-vocabulary.json',
               'pte-di-difficult-words': 'data/processed/pte-di-difficult-words-vocabulary.json',
               'pte-di-easy-phrases': 'data/processed/pte-di-easy-phrases-vocabulary.json',

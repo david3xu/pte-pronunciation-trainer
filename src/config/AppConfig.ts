@@ -56,6 +56,7 @@ export class AppConfig {
               'pte-di-difficult-words': 'data/processed/pte-di-difficult-words-vocabulary.json',
               'pte-di-easy-phrases': 'data/processed/pte-di-easy-phrases-vocabulary.json',
               'pte-essay-b1-examples': 'data/processed/pte-essay-b1-examples-vocabulary.json',
+              'pte-hard-pronunciation': 'data/processed/pte-hard-pronunciation-words.json',
 
               // Practice modes
               'rs': 'data/processed/pte-repeat-sentence.json',
@@ -89,6 +90,7 @@ export class AppConfig {
           { id: 'pte-di-difficult-words', name: 'PTE DI Difficult Words', category: 'vocabulary', difficulty: 'hard' },
           { id: 'pte-di-easy-phrases', name: 'PTE DI Easy Phrases', category: 'vocabulary', difficulty: 'easy' },
           { id: 'pte-essay-b1-examples', name: 'PTE Essay B1 Examples', category: 'vocabulary', difficulty: 'normal' },
+          { id: 'pte-hard-pronunciation', name: 'PTE Hard Pronunciation', category: 'vocabulary', difficulty: 'hard' },
 
           // Practice modes (3 total)
           { id: 'rs', name: 'Repeat Sentence', category: 'practice', description: '620 practice sentences' },

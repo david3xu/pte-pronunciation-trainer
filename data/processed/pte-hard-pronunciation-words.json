@@ -1,0 +1,447 @@
+{
+  "metadata": {
+    "generated": "2025-12-20T20:37:47.347Z",
+    "totalTerms": 27,
+    "source": "pte-hard-pronunciation-words",
+    "description": "Auto-discovered vocabulary book: pte-hard-pronunciation-words",
+    "version": "1.0",
+    "categories": [
+      "pte-hard-pronunciation-words"
+    ],
+    "hasIPA": true
+  },
+  "vocabulary": [
+    {
+      "english": "patent",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpætənt",
+          "phonetic": "PAT-uhnt"
+        },
+        "american": {
+          "ipa": "ˈpætənt",
+          "phonetic": "PAT-uhnt"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "fourteen",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌfɔːrˈtiːn",
+          "phonetic": "for-TEEN"
+        },
+        "american": {
+          "ipa": "ˌfɔːrˈtiːn",
+          "phonetic": "for-TEEN"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "seven",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsevən",
+          "phonetic": "SEV-uhn"
+        },
+        "american": {
+          "ipa": "ˈsevən",
+          "phonetic": "SEV-uhn"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "east",
+      "pronunciation": {
+        "british": {
+          "ipa": "iːst",
+          "phonetic": "EEST"
+        },
+        "american": {
+          "ipa": "iːst",
+          "phonetic": "EEST"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "sibling",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɪblɪŋ",
+          "phonetic": "SIB-ling"
+        },
+        "american": {
+          "ipa": "ˈsɪblɪŋ",
+          "phonetic": "SIB-ling"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "seasons",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsiːzənz",
+          "phonetic": "SEE-zuhnz"
+        },
+        "american": {
+          "ipa": "ˈsiːzənz",
+          "phonetic": "SEE-zuhnz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "century",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsentʃəri",
+          "phonetic": "SEN-chuh-ree"
+        },
+        "american": {
+          "ipa": "ˈsentʃəri",
+          "phonetic": "SEN-chuh-ree"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "triangle",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtraɪæŋɡəl",
+          "phonetic": "TRY-ang-guhl"
+        },
+        "american": {
+          "ipa": "ˈtraɪæŋɡəl",
+          "phonetic": "TRY-ang-guhl"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "full stop",
+      "pronunciation": {
+        "british": {
+          "ipa": "fʊl stɒp",
+          "phonetic": "FOOL STOP"
+        },
+        "american": {
+          "ipa": "fʊl stɒp",
+          "phonetic": "FOOL STOP"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "baker",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbeɪkər",
+          "phonetic": "BAY-kur"
+        },
+        "american": {
+          "ipa": "ˈbeɪkər",
+          "phonetic": "BAY-kur"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "six",
+      "pronunciation": {
+        "british": {
+          "ipa": "sɪks",
+          "phonetic": "SIKS"
+        },
+        "american": {
+          "ipa": "sɪks",
+          "phonetic": "SIKS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "five",
+      "pronunciation": {
+        "british": {
+          "ipa": "faɪv",
+          "phonetic": "FYV"
+        },
+        "american": {
+          "ipa": "faɪv",
+          "phonetic": "FYV"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "autobiography",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌɔːtəbaɪˈɒɡrəfi",
+          "phonetic": "aw-tuh-by-AH-gruh-fee"
+        },
+        "american": {
+          "ipa": "ˌɔːtəbaɪˈɒɡrəfi",
+          "phonetic": "aw-tuh-by-AH-gruh-fee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "nightmare",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈnaɪtmeər",
+          "phonetic": "NYT-mair"
+        },
+        "american": {
+          "ipa": "ˈnaɪtmeər",
+          "phonetic": "NYT-mair"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "week",
+      "pronunciation": {
+        "british": {
+          "ipa": "wiːk",
+          "phonetic": "WEEK"
+        },
+        "american": {
+          "ipa": "wiːk",
+          "phonetic": "WEEK"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "translator",
+      "pronunciation": {
+        "british": {
+          "ipa": "trænzˈleɪtər",
+          "phonetic": "tranz-LAY-tur"
+        },
+        "american": {
+          "ipa": "trænzˈleɪtər",
+          "phonetic": "tranz-LAY-tur"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "trains",
+      "pronunciation": {
+        "british": {
+          "ipa": "treɪnz",
+          "phonetic": "TRAYNZ"
+        },
+        "american": {
+          "ipa": "treɪnz",
+          "phonetic": "TRAYNZ"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "knife",
+      "pronunciation": {
+        "british": {
+          "ipa": "naɪf",
+          "phonetic": "NYF"
+        },
+        "american": {
+          "ipa": "naɪf",
+          "phonetic": "NYF"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "neighbor",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈneɪbər",
+          "phonetic": "NAY-bur"
+        },
+        "american": {
+          "ipa": "ˈneɪbər",
+          "phonetic": "NAY-bur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "unicorn",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈjuːnɪkɔːrn",
+          "phonetic": "YOO-nih-korn"
+        },
+        "american": {
+          "ipa": "ˈjuːnɪkɔːrn",
+          "phonetic": "YOO-nih-korn"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "consultant",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈsʌltənt",
+          "phonetic": "kuhn-SUL-tuhnt"
+        },
+        "american": {
+          "ipa": "kənˈsʌltənt",
+          "phonetic": "kuhn-SUL-tuhnt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "wool",
+      "pronunciation": {
+        "british": {
+          "ipa": "wʊl",
+          "phonetic": "WOOL"
+        },
+        "american": {
+          "ipa": "wʊl",
+          "phonetic": "WOOL"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "currency",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkɜːrənsi",
+          "phonetic": "KUR-uhn-see"
+        },
+        "american": {
+          "ipa": "ˈkɜːrənsi",
+          "phonetic": "KUR-uhn-see"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "vertical",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈvɜːrtɪkəl",
+          "phonetic": "VUR-tih-kuhl"
+        },
+        "american": {
+          "ipa": "ˈvɜːrtɪkəl",
+          "phonetic": "VUR-tih-kuhl"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "uniform",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈjuːnɪfɔːrm",
+          "phonetic": "YOO-nih-form"
+        },
+        "american": {
+          "ipa": "ˈjuːnɪfɔːrm",
+          "phonetic": "YOO-nih-form"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "bronze",
+      "pronunciation": {
+        "british": {
+          "ipa": "brɒnz",
+          "phonetic": "BRAHNZ"
+        },
+        "american": {
+          "ipa": "brɒnz",
+          "phonetic": "BRAHNZ"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "pension",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpenʃən",
+          "phonetic": "PEN-shuhn"
+        },
+        "american": {
+          "ipa": "ˈpenʃən",
+          "phonetic": "PEN-shuhn"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    }
+  ]
+}

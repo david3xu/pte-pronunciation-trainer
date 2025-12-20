@@ -326,10 +326,38 @@
 
 ---
 
+## Expanded Terms: Early Marriage (Alternative Arguments)
+
+240. **spousal support** | /ˈspaʊzəl səˈpɔːt/ — sounds like **SPOW-zul suh-PORT**
+241. **joint problem-solving** | /dʒɔɪnt ˈprɒbləm ˈsɒlvɪŋ/ — sounds like **JOYNT PROB-lum SOL-ving**
+242. **marital responsibility** | /ˈmærɪtəl rɪˌspɒnsəˈbɪləti/ — sounds like **MAR-ih-tul rih-spon-suh-BIL-uh-tee**
+243. **extra household costs** | /ˈekstrə ˈhaʊshəʊld kɒsts/ — sounds like **EK-struh HOWS-hohld KOSTS**
+244. **marital breakdown** | /ˈmærɪtəl ˈbreɪkdaʊn/ — sounds like **MAR-ih-tul BRAYK-down**
+
+---
+
+## Expanded Terms: Television Functions (Specific Examples)
+
+245. **comedies and talk shows** | /ˈkɒmədiz ənd tɔːk ʃəʊz/ — sounds like **KOM-uh-deez und TAWK SHOHZ**
+246. **humorous content** | /ˈhjuːmərəs ˈkɒntent/ — sounds like **HYOO-mur-us KON-tent**
+247. **scenery documentaries** | /ˈsiːnəri ˌdɒkjʊˈmentəriz/ — sounds like **SEE-nuh-ree dok-yoo-MEN-tuh-reez**
+248. **soothing melodies** | /ˈsuːðɪŋ ˈmelədiz/ — sounds like **SOO-thing MEL-uh-deez**
+
+---
+
+## Expanded Terms: Work-Life Balance (Cause Analysis)
+
+249. **workplace competition** | /ˈwɜːkpleɪs ˌkɒmpəˈtɪʃən/ — sounds like **WURK-plays kom-puh-TISH-un**
+250. **extra hours and less rest** | /ˈekstrə ˈaʊəz ənd les rest/ — sounds like **EK-struh OW-urz und LES REST**
+251. **high living costs** | /haɪ ˈlɪvɪŋ kɒsts/ — sounds like **HY LIV-ing KOSTS**
+252. **overtime work** | /ˈəʊvətaɪm wɜːk/ — sounds like **OH-vur-tym WURK**
+
+---
+
 ## Summary Statistics
 
-- **Total unique terms:** 239 terms
-- **Organized by:** 16 essay examples (same order as template B1)
+- **Total unique terms:** 252 terms
+- **Organized by:** 16 essay examples + 3 expansion sections
 - **All terms:** Used in actual Template B1 essays
 - **Strategy:** These are ACTUAL fills used in essay examples
 
@@ -348,5 +376,5 @@
 ---
 
 *All terms extracted from essay-examples-template-b1.md*
-*Organized by 16 examples in document order*
+*Organized by 16 examples + expansions in document order*
 *Last Updated: December 2024*

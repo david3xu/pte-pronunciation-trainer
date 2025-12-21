@@ -2,7 +2,7 @@
 
 **Category**: PTE Hard Pronunciation
 **Difficulty**: Hard
-**Total**: 217 commonly mispronounced words
+**Total**: 240 commonly mispronounced words
 
 ---
 
@@ -223,3 +223,26 @@
 215. variety | /vəˈraɪəti/ — sounds like **vuh-RY-uh-tee**
 216. there | /ðeər/ — sounds like **THAIR**
 217. successfully | /səkˈsesfəli/ — sounds like **suhk-SES-fuh-lee**
+218. parliamentary | /ˌpɑːrləˈmentəri/ — sounds like **par-luh-MEN-tuh-ree**
+219. campus | /ˈkæmpəs/ — sounds like **KAM-puhs**
+220. growth | /ɡrəʊθ/ — sounds like **GROHTH**
+221. text | /tekst/ — sounds like **TEKST**
+222. grow | /ɡrəʊ/ — sounds like **GROH**
+223. considered | /kənˈsɪdərd/ — sounds like **kuhn-SID-urd**
+224. astrophysics | /ˌæstrəʊˈfɪzɪks/ — sounds like **as-troh-FIZ-iks**
+225. ensure | /ɪnˈʃʊər/ — sounds like **in-SHOOR**
+226. irrelevant | /ɪˈreləvənt/ — sounds like **ih-REL-uh-vuhnt**
+227. borrow | /ˈbɒrəʊ/ — sounds like **BOR-oh**
+228. books | /bʊks/ — sounds like **BOOKS**
+229. click | /klɪk/ — sounds like **KLIK**
+230. logo | /ˈləʊɡəʊ/ — sounds like **LOH-goh**
+231. above | /əˈbʌv/ — sounds like **uh-BUV**
+232. well | /wel/ — sounds like **WEL**
+233. findings | /ˈfaɪndɪŋz/ — sounds like **FYN-dingz**
+234. initial | /ɪˈnɪʃəl/ — sounds like **ih-NISH-uhl**
+235. southern | /ˈsʌðərn/ — sounds like **SUH-thurn**
+236. station | /ˈsteɪʃən/ — sounds like **STAY-shuhn**
+237. engineering | /ˌendʒɪˈnɪərɪŋ/ — sounds like **en-jih-NEER-ing**
+238. under | /ˈʌndər/ — sounds like **UN-dur**
+239. lunch | /lʌntʃ/ — sounds like **LUNCH**
+240. noon | /nuːn/ — sounds like **NOON**

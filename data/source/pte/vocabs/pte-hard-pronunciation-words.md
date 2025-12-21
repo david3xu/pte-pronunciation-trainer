@@ -2,7 +2,7 @@
 
 **Category**: PTE Hard Pronunciation
 **Difficulty**: Hard
-**Total**: 240 commonly mispronounced words
+**Total**: 253 commonly mispronounced words
 
 ---
 
@@ -246,3 +246,16 @@
 238. under | /ˈʌndər/ — sounds like **UN-dur**
 239. lunch | /lʌntʃ/ — sounds like **LUNCH**
 240. noon | /nuːn/ — sounds like **NOON**
+241. lecture | /ˈlektʃər/ — sounds like **LEK-chur**
+242. downloadable | /ˌdaʊnˈləʊdəbəl/ — sounds like **down-LOH-duh-buhl**
+243. journals | /ˈdʒɜːrnəlz/ — sounds like **JUR-nuhlz**
+244. reimbursement | /ˌriːɪmˈbɜːrsmənt/ — sounds like **ree-im-BURS-muhnt**
+245. has | /hæz/ — sounds like **HAZ**
+246. am | /æm/ — sounds like **AM**
+247. exam | /ɪɡˈzæm/ — sounds like **ig-ZAM**
+248. their lecturers | /ðeər ˈlektʃərərz/ — sounds like **THAIR LEK-chur-urz**
+249. fruits | /fruːts/ — sounds like **FROOTS**
+250. ill | /ɪl/ — sounds like **IL**
+251. notes | /nəʊts/ — sounds like **NOHTS**
+252. cafeteria | /ˌkæfəˈtɪəriə/ — sounds like **kaf-uh-TEER-ee-uh**
+253. dictionaries | /ˈdɪkʃənəriz/ — sounds like **DIK-shuh-nair-eez**

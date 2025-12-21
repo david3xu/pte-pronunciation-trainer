@@ -2,7 +2,7 @@
 
 **Category**: PTE Hard Pronunciation
 **Difficulty**: Hard
-**Total**: 278 commonly mispronounced words
+**Total**: 294 commonly mispronounced words
 
 ---
 
@@ -284,3 +284,19 @@
 276. from | /frɒm/ — sounds like **FRAHM**
 277. supposed | /səˈpəʊzd/ — sounds like **suh-POHZD**
 278. assemble | /əˈsembəl/ — sounds like **uh-SEM-buhl**
+279. permit | /ˈpɜːrmɪt/ — sounds like **PUR-mit** (noun) or /pərˈmɪt/ **pur-MIT** (verb)
+280. still | /stɪl/ — sounds like **STIL**
+281. 28th | /ˌtwentiˈeɪtθ/ — sounds like **twen-tee-AYTH**
+282. being | /ˈbiːɪŋ/ — sounds like **BEE-ing**
+283. capacity | /kəˈpæsəti/ — sounds like **kuh-PAS-uh-tee**
+284. computers | /kəmˈpjuːtərz/ — sounds like **kuhm-PYOO-turz**
+285. sessions | /ˈseʃənz/ — sounds like **SESH-uhnz**
+286. offers | /ˈɒfərz/ — sounds like **OF-urz**
+287. weather | /ˈweðər/ — sounds like **WEH-thur**
+288. add | /æd/ — sounds like **AD**
+289. handed | /ˈhændɪd/ — sounds like **HAN-did**
+290. invaluable | /ɪnˈvæljuəbəl/ — sounds like **in-VAL-yoo-uh-buhl**
+291. led | /led/ — sounds like **LED**
+292. try | /traɪ/ — sounds like **TRY**
+293. access | /ˈækses/ — sounds like **AK-ses**
+294. haven't | /ˈhævənt/ — sounds like **HAV-uhnt**

@@ -1,9 +1,9 @@
 import {
-    BarChartIcon,
-    ChatBubbleIcon,
-    GearIcon,
-    LightningBoltIcon,
-    SpeakerLoudIcon,
+  BarChartIcon,
+  ChatBubbleIcon,
+  GearIcon,
+  LightningBoltIcon,
+  SpeakerLoudIcon,
 } from '@radix-ui/react-icons';
 import { Button, Flex, Spinner, Theme } from '@radix-ui/themes';
 import React, { lazy, Suspense, useEffect, useState } from 'react';
@@ -12,6 +12,7 @@ import { useMigration } from '../hooks/useMigration';
 import { useOnboarding } from '../hooks/useOnboarding';
 import { useSwipeGesture } from '../hooks/useSwipeGesture';
 import { logIntervention, monitorSession, type Intervention } from '../services/ai/interventionEngine';
+import { wakeLockService } from '../services/device/WakeLockService';
 import { getSessionManager } from '../services/session/sessionManager';
 import { useAudioState, useAuth, useProgress, useSettings, useVocabulary } from '../stores';
 import type { TaskType } from '../types/database';
@@ -23,8 +24,8 @@ import WeakAreasDashboard from './ai/WeakAreasDashboard';
 import AudioControls from './audio/AudioControls';
 import DataMigrationModal from './migration/DataMigrationModal';
 import {
-    ProgressDashboard,
-    WordCard,
+  ProgressDashboard,
+  WordCard,
 } from './practice';
 import LearnerProfileModal from './profile/LearnerProfileModal';
 import SettingsPanel from './settings/SettingsPanel';
@@ -141,7 +142,14 @@ export const AppContent: React.FC = () => {
 
     loadInitialVocabulary();
 
-    // Cleanup: complete session when app unmounts
+    // Enable wake lock to keep screen on during practice (mobile)
+    wakeLockService.request().then((acquired) => {
+      if (acquired) {
+        console.log('[App] Screen will stay on during practice');
+      }
+    });
+
+    // Cleanup: complete session and release wake lock when app unmounts
     return () => {
       if (currentSessionId) {
         console.log('[App] Completing session on unmount:', currentSessionId);
@@ -149,6 +157,8 @@ export const AppContent: React.FC = () => {
           console.error('[App] Failed to complete session:', err);
         });
       }
+      // Release wake lock
+      wakeLockService.release();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Dependencies intentionally omitted - only run on mount

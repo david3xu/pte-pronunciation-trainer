@@ -2,7 +2,7 @@
 
 **Category**: PTE Hard Pronunciation
 **Difficulty**: Hard
-**Total**: 168 commonly mispronounced words
+**Total**: 198 commonly mispronounced words
 
 ---
 
@@ -174,3 +174,33 @@
 166. these | /ðiːz/ — sounds like **THEEZ**
 167. two pictures | /tuː ˈpɪktʃərz/ — sounds like **TOO PIK-churz**
 168. empirical | /ɪmˈpɪrɪkəl/ — sounds like **im-PIR-ih-kuhl**
+169. plagiarism | /ˈpleɪdʒərɪzəm/ — sounds like **PLAY-juh-riz-uhm**
+170. investigation | /ɪnˌvestɪˈɡeɪʃən/ — sounds like **in-ves-tih-GAY-shuhn**
+171. aims | /eɪmz/ — sounds like **AYMZ**
+172. all | /ɔːl/ — sounds like **AWL**
+173. filed | /faɪld/ — sounds like **FYLD**
+174. full | /fʊl/ — sounds like **FOOL**
+175. line | /laɪn/ — sounds like **LYN**
+176. row | /rəʊ/ — sounds like **ROH**
+177. need | /niːd/ — sounds like **NEED**
+178. detail | /ˈdiːteɪl/ — sounds like **DEE-tayl**
+179. lunchtime | /ˈlʌntʃtaɪm/ — sounds like **LUNCH-tym**
+180. egg | /eɡ/ — sounds like **EG**
+181. sandwich | /ˈsænwɪtʃ/ — sounds like **SAN-wich**
+182. bread | /bred/ — sounds like **BRED**
+183. orange | /ˈɒrɪndʒ/ — sounds like **OR-inj**
+184. rigorous | /ˈrɪɡərəs/ — sounds like **RIG-ur-uhs**
+185. tomorrow | /təˈmɒrəʊ/ — sounds like **tuh-MOR-oh**
+186. essays | /ˈeseɪz/ — sounds like **ES-ayz**
+187. with | /wɪð/ — sounds like **WITH**
+188. few | /fjuː/ — sounds like **FYOO**
+189. lecturers | /ˈlektʃərərz/ — sounds like **LEK-chur-urz**
+190. salad | /ˈsæləd/ — sounds like **SAL-uhd**
+191. predicts | /prɪˈdɪkts/ — sounds like **prih-DIKTS**
+192. biotechnology | /ˌbaɪəʊtekˈnɒlədʒi/ — sounds like **by-oh-tek-NAH-luh-jee**
+193. library | /ˈlaɪbrəri/ — sounds like **LY-bruh-ree**
+194. assignments | /əˈsaɪnmənts/ — sounds like **uh-SYN-muhnts**
+195. term | /tɜːrm/ — sounds like **TURM**
+196. park | /pɑːrk/ — sounds like **PARK**
+197. permits | /ˈpɜːrmɪts/ — sounds like **PUR-mits** (noun) or /pərˈmɪts/ **pur-MITS** (verb)
+198. service | /ˈsɜːrvɪs/ — sounds like **SUR-vis**

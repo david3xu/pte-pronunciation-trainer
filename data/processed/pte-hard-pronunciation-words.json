@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-12-21T03:31:22.236Z",
-    "totalTerms": 274,
+    "generated": "2025-12-21T03:38:39.254Z",
+    "totalTerms": 289,
     "source": "pte-hard-pronunciation-words",
     "description": "Auto-discovered vocabulary book: pte-hard-pronunciation-words",
     "version": "1.0",
@@ -4389,6 +4389,246 @@
         "american": {
           "ipa": "əˈsembəl",
           "phonetic": "uh-SEM-buhl"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "still",
+      "pronunciation": {
+        "british": {
+          "ipa": "stɪl",
+          "phonetic": "STIL"
+        },
+        "american": {
+          "ipa": "stɪl",
+          "phonetic": "STIL"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "28th",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌtwentiˈeɪtθ",
+          "phonetic": "twen-tee-AYTH"
+        },
+        "american": {
+          "ipa": "ˌtwentiˈeɪtθ",
+          "phonetic": "twen-tee-AYTH"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "being",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbiːɪŋ",
+          "phonetic": "BEE-ing"
+        },
+        "american": {
+          "ipa": "ˈbiːɪŋ",
+          "phonetic": "BEE-ing"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "capacity",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəˈpæsəti",
+          "phonetic": "kuh-PAS-uh-tee"
+        },
+        "american": {
+          "ipa": "kəˈpæsəti",
+          "phonetic": "kuh-PAS-uh-tee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "computers",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəmˈpjuːtərz",
+          "phonetic": "kuhm-PYOO-turz"
+        },
+        "american": {
+          "ipa": "kəmˈpjuːtərz",
+          "phonetic": "kuhm-PYOO-turz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "sessions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈseʃənz",
+          "phonetic": "SESH-uhnz"
+        },
+        "american": {
+          "ipa": "ˈseʃənz",
+          "phonetic": "SESH-uhnz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "offers",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɒfərz",
+          "phonetic": "OF-urz"
+        },
+        "american": {
+          "ipa": "ˈɒfərz",
+          "phonetic": "OF-urz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "weather",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈweðər",
+          "phonetic": "WEH-thur"
+        },
+        "american": {
+          "ipa": "ˈweðər",
+          "phonetic": "WEH-thur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "add",
+      "pronunciation": {
+        "british": {
+          "ipa": "æd",
+          "phonetic": "AD"
+        },
+        "american": {
+          "ipa": "æd",
+          "phonetic": "AD"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "handed",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhændɪd",
+          "phonetic": "HAN-did"
+        },
+        "american": {
+          "ipa": "ˈhændɪd",
+          "phonetic": "HAN-did"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "invaluable",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈvæljuəbəl",
+          "phonetic": "in-VAL-yoo-uh-buhl"
+        },
+        "american": {
+          "ipa": "ɪnˈvæljuəbəl",
+          "phonetic": "in-VAL-yoo-uh-buhl"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "led",
+      "pronunciation": {
+        "british": {
+          "ipa": "led",
+          "phonetic": "LED"
+        },
+        "american": {
+          "ipa": "led",
+          "phonetic": "LED"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "try",
+      "pronunciation": {
+        "british": {
+          "ipa": "traɪ",
+          "phonetic": "TRY"
+        },
+        "american": {
+          "ipa": "traɪ",
+          "phonetic": "TRY"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "access",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈækses",
+          "phonetic": "AK-ses"
+        },
+        "american": {
+          "ipa": "ˈækses",
+          "phonetic": "AK-ses"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "haven't",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhævənt",
+          "phonetic": "HAV-uhnt"
+        },
+        "american": {
+          "ipa": "ˈhævənt",
+          "phonetic": "HAV-uhnt"
         }
       },
       "difficulty": "normal",

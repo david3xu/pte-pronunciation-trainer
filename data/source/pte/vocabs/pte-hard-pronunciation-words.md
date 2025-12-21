@@ -2,7 +2,7 @@
 
 **Category**: PTE Hard Pronunciation
 **Difficulty**: Hard
-**Total**: 356 commonly mispronounced words
+**Total**: 404 commonly mispronounced words
 
 ---
 
@@ -362,3 +362,51 @@
 354. invariably | /ɪnˈveəriəbli/ — sounds like **in-VAIR-ee-uh-blee**
 355. fail | /feɪl/ — sounds like **FAYL**
 356. pinch | /pɪntʃ/ — sounds like **PINCH**
+357. manufacturing | /ˌmænjəˈfæktʃərɪŋ/ — sounds like **man-yuh-FAK-chur-ing**
+358. level | /ˈlevəl/ — sounds like **LEV-uhl**
+359. high | /haɪ/ — sounds like **HY**
+360. wear | /weər/ — sounds like **WAIR**
+361. protective | /prəˈtektɪv/ — sounds like **pruh-TEK-tiv**
+362. goggles | /ˈɡɒɡəlz/ — sounds like **GAH-guhlz**
+363. before | /bɪˈfɔːr/ — sounds like **bih-FOR**
+364. entering | /ˈentərɪŋ/ — sounds like **EN-tur-ing**
+365. preparations | /ˌprepəˈreɪʃənz/ — sounds like **prep-uh-RAY-shuhnz**
+366. industry | /ˈɪndəstri/ — sounds like **IN-duhs-tree**
+367. country | /ˈkʌntri/ — sounds like **KUN-tree**
+368. financial | /faɪˈnænʃəl/ — sounds like **fy-NAN-shuhl**
+369. support | /səˈpɔːrt/ — sounds like **suh-PORT**
+370. government | /ˈɡʌvərnmənt/ — sounds like **GUV-urn-muhnt**
+371. parental | /pəˈrentəl/ — sounds like **puh-REN-tuhl**
+372. stress | /stres/ — sounds like **STRES**
+373. anxiety | /æŋˈzaɪəti/ — sounds like **ang-ZY-uh-tee**
+374. explores | /ɪkˈsplɔːrz/ — sounds like **ik-SPLORZ**
+375. properties | /ˈprɒpərtiz/ — sounds like **PROP-ur-teez**
+376. interactions | /ˌɪntərˈækʃənz/ — sounds like **in-tur-AK-shuhnz**
+377. physiology | /ˌfɪziˈɒlədʒi/ — sounds like **fiz-ee-AH-luh-jee**
+378. delves | /delvz/ — sounds like **DELVZ**
+379. inner | /ˈɪnər/ — sounds like **IN-ur**
+380. outer | /ˈaʊtər/ — sounds like **OW-tur**
+381. structures | /ˈstrʌktʃərz/ — sounds like **STRUK-churz**
+382. cities | /ˈsɪtiz/ — sounds like **SIT-eez**
+383. ranked | /ræŋkt/ — sounds like **RANKT**
+384. based | /beɪst/ — sounds like **BAYST**
+385. important | /ɪmˈpɔːrtənt/ — sounds like **im-POR-tuhnt**
+386. measure | /ˈmeʒər/ — sounds like **MEH-zhur**
+387. answers | /ˈɑːnsərz/ — sounds like **AN-surz**
+388. crucial | /ˈkruːʃəl/ — sounds like **KROO-shuhl**
+389. scientific | /ˌsaɪənˈtɪfɪk/ — sounds like **sy-uhn-TIF-ik**
+390. questions | /ˈkwestʃənz/ — sounds like **KWES-chuhnz**
+391. approaching | /əˈprəʊtʃɪŋ/ — sounds like **uh-PROH-ching**
+392. copies | /ˈkɒpiz/ — sounds like **KOP-eez**
+393. main | /meɪn/ — sounds like **MAYN**
+394. northern | /ˈnɔːrðərn/ — sounds like **NOR-thurn**
+395. side | /saɪd/ — sounds like **SYD**
+396. buildings | /ˈbɪldɪŋz/ — sounds like **BIL-dingz**
+397. extraordinarily | /ɪkˌstrɔːrdəˈnerəli/ — sounds like **ik-stror-duh-NAIR-uh-lee**
+398. sunshine | /ˈsʌnʃaɪn/ — sounds like **SUN-shyn**
+399. directly | /dɪˈrektli/ — sounds like **dih-REKT-lee**
+400. central | /ˈsentrəl/ — sounds like **SEN-truhl**
+401. vehicle | /ˈviːɪkəl/ — sounds like **VEE-ih-kuhl**
+402. traveled | /ˈtrævəld/ — sounds like **TRAV-uhld**
+403. collided | /kəˈlaɪdɪd/ — sounds like **kuh-LY-did**
+404. unexpectedly | /ˌʌnɪkˈspektɪdli/ — sounds like **un-ik-SPEK-tid-lee**

@@ -1,8 +1,8 @@
-# PTE Hard Pronunciation Words
+# PTE Hard for RS
 
-**Category**: PTE Hard Pronunciation
+**Category**: PTE Hard Pronunciation for RS
 **Difficulty**: Hard
-**Total**: 404 commonly mispronounced words
+**Total**: 404 commonly mispronounced words for Repeat Sentence
 
 ---
 

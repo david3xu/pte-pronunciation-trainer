@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "generated": "2025-12-21T07:04:45.849Z",
+    "generated": "2025-12-21T07:19:23.436Z",
     "totalTerms": 398,
-    "source": "pte-hard-pronunciation-words",
-    "description": "Auto-discovered vocabulary book: pte-hard-pronunciation-words",
+    "source": "pte-hard-for-rs",
+    "description": "Auto-discovered vocabulary book: pte-hard-for-rs",
     "version": "1.0",
     "categories": [
-      "pte-hard-pronunciation-words"
+      "pte-hard-for-rs"
     ],
     "hasIPA": true
   },
@@ -24,8 +24,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "fourteen",
@@ -40,8 +40,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "seven",
@@ -56,8 +56,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "east",
@@ -72,8 +72,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "sibling",
@@ -88,8 +88,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "seasons",
@@ -104,8 +104,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "century",
@@ -120,8 +120,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "triangle",
@@ -136,8 +136,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "full stop",
@@ -152,8 +152,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "baker",
@@ -168,8 +168,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "six",
@@ -184,8 +184,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "five",
@@ -200,8 +200,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "autobiography",
@@ -216,8 +216,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "nightmare",
@@ -232,8 +232,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "week",
@@ -248,8 +248,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "translator",
@@ -264,8 +264,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "trains",
@@ -280,8 +280,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "knife",
@@ -296,8 +296,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "neighbor",
@@ -312,8 +312,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "unicorn",
@@ -328,8 +328,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "consultant",
@@ -344,8 +344,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "wool",
@@ -360,8 +360,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "currency",
@@ -376,8 +376,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "vertical",
@@ -392,8 +392,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "uniform",
@@ -408,8 +408,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "bronze",
@@ -424,8 +424,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "pension",
@@ -440,8 +440,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "hypothesis",
@@ -456,8 +456,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "about",
@@ -472,8 +472,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "rendered",
@@ -488,8 +488,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "want",
@@ -504,8 +504,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "group",
@@ -520,8 +520,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "submit",
@@ -536,8 +536,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "rough",
@@ -552,8 +552,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "their",
@@ -568,8 +568,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "critical",
@@ -584,8 +584,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "literary",
@@ -600,8 +600,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "theories",
@@ -616,8 +616,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "broaden",
@@ -632,8 +632,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "preferably",
@@ -648,8 +648,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "bus",
@@ -664,8 +664,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "leave",
@@ -680,8 +680,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "ten",
@@ -696,8 +696,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "French",
@@ -712,8 +712,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "hesitate",
@@ -728,8 +728,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "skyrocketed",
@@ -744,8 +744,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "will",
@@ -760,8 +760,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "our",
@@ -776,8 +776,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "flourish",
@@ -792,8 +792,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "theater",
@@ -808,8 +808,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "pack",
@@ -824,8 +824,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "building",
@@ -840,8 +840,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "vegan",
@@ -856,8 +856,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "consuming",
@@ -872,8 +872,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "sports",
@@ -888,8 +888,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "rugby",
@@ -904,8 +904,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "we",
@@ -920,8 +920,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "libraries",
@@ -936,8 +936,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "help",
@@ -952,8 +952,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "you",
@@ -968,8 +968,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "era",
@@ -984,8 +984,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "marks",
@@ -1000,8 +1000,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "bibliography",
@@ -1016,8 +1016,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "correct",
@@ -1032,8 +1032,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "higher",
@@ -1048,8 +1048,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "societal",
@@ -1064,8 +1064,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "account",
@@ -1080,8 +1080,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "due",
@@ -1096,8 +1096,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "yours",
@@ -1112,8 +1112,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "wages",
@@ -1128,8 +1128,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "been",
@@ -1144,8 +1144,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "nearly",
@@ -1160,8 +1160,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "television",
@@ -1176,8 +1176,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "outputs",
@@ -1192,8 +1192,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "given",
@@ -1208,8 +1208,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "away",
@@ -1224,8 +1224,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "thorough",
@@ -1240,8 +1240,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "every",
@@ -1256,8 +1256,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "lectures",
@@ -1272,8 +1272,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "seminars",
@@ -1288,8 +1288,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "tutorials",
@@ -1304,8 +1304,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "hours",
@@ -1320,8 +1320,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "twenty",
@@ -1336,8 +1336,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "brain",
@@ -1352,8 +1352,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "deadline",
@@ -1368,8 +1368,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "fourth",
@@ -1384,8 +1384,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "February",
@@ -1400,8 +1400,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "following",
@@ -1416,8 +1416,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "welcome",
@@ -1432,8 +1432,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "events",
@@ -1448,8 +1448,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "postgraduate",
@@ -1464,8 +1464,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "undergraduate",
@@ -1480,8 +1480,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "too",
@@ -1496,8 +1496,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "learn",
@@ -1512,8 +1512,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "more",
@@ -1528,8 +1528,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "than",
@@ -1544,8 +1544,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "items",
@@ -1560,8 +1560,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "reopened",
@@ -1576,8 +1576,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "overwhelming",
@@ -1592,8 +1592,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "nurse's",
@@ -1608,8 +1608,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "son",
@@ -1624,8 +1624,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "near",
@@ -1640,8 +1640,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "grocery",
@@ -1656,8 +1656,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "store",
@@ -1672,8 +1672,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "corner",
@@ -1688,8 +1688,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "meeting",
@@ -1704,8 +1704,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "fulfilled",
@@ -1720,8 +1720,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "enrollment",
@@ -1736,8 +1736,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "student",
@@ -1752,8 +1752,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "meet",
@@ -1768,8 +1768,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "new",
@@ -1784,8 +1784,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "further",
@@ -1800,8 +1800,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "call",
@@ -1816,8 +1816,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "executive",
@@ -1832,8 +1832,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "serve",
@@ -1848,8 +1848,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "role",
@@ -1864,8 +1864,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "beneficiary",
@@ -1880,8 +1880,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "frequently",
@@ -1896,8 +1896,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "assignment",
@@ -1912,8 +1912,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "use",
@@ -1928,8 +1928,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "formal",
@@ -1944,8 +1944,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "words",
@@ -1960,8 +1960,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "seminar",
@@ -1976,8 +1976,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "require",
@@ -1992,8 +1992,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "raise",
@@ -2008,8 +2008,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "hat",
@@ -2024,8 +2024,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "restaurant",
@@ -2040,8 +2040,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "put",
@@ -2056,8 +2056,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "reports",
@@ -2072,8 +2072,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "written",
@@ -2088,8 +2088,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "apply",
@@ -2104,8 +2104,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "driver's license",
@@ -2120,8 +2120,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "train",
@@ -2136,8 +2136,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "should",
@@ -2152,8 +2152,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "ways",
@@ -2168,8 +2168,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "bring",
@@ -2184,8 +2184,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "closer",
@@ -2200,8 +2200,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "arteries",
@@ -2216,8 +2216,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "carry",
@@ -2232,8 +2232,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "oxygenated",
@@ -2248,8 +2248,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "heart",
@@ -2264,8 +2264,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "art",
@@ -2280,8 +2280,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "museum",
@@ -2296,8 +2296,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "throughout",
@@ -2312,8 +2312,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "power",
@@ -2328,8 +2328,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "cut",
@@ -2344,8 +2344,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "appropriate",
@@ -2360,8 +2360,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "work",
@@ -2376,8 +2376,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "cause",
@@ -2392,8 +2392,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "available",
@@ -2408,8 +2408,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "January",
@@ -2424,8 +2424,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "supper",
@@ -2440,8 +2440,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "calls",
@@ -2456,8 +2456,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "while",
@@ -2472,8 +2472,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "out",
@@ -2488,8 +2488,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "always",
@@ -2504,8 +2504,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "sources",
@@ -2520,8 +2520,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "twenty-four",
@@ -2536,8 +2536,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "would",
@@ -2552,8 +2552,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "hot food",
@@ -2568,8 +2568,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "statistical",
@@ -2584,8 +2584,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "evidence",
@@ -2600,8 +2600,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "required",
@@ -2616,8 +2616,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "these",
@@ -2632,8 +2632,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "two pictures",
@@ -2648,8 +2648,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "empirical",
@@ -2664,8 +2664,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "plagiarism",
@@ -2680,8 +2680,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "investigation",
@@ -2696,8 +2696,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "aims",
@@ -2712,8 +2712,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "all",
@@ -2728,8 +2728,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "filed",
@@ -2744,8 +2744,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "full",
@@ -2760,8 +2760,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "line",
@@ -2776,8 +2776,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "row",
@@ -2792,8 +2792,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "need",
@@ -2808,8 +2808,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "detail",
@@ -2824,8 +2824,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "lunchtime",
@@ -2840,8 +2840,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "egg",
@@ -2856,8 +2856,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "sandwich",
@@ -2872,8 +2872,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "bread",
@@ -2888,8 +2888,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "orange",
@@ -2904,8 +2904,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "rigorous",
@@ -2920,8 +2920,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "tomorrow",
@@ -2936,8 +2936,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "essays",
@@ -2952,8 +2952,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "with",
@@ -2968,8 +2968,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "few",
@@ -2984,8 +2984,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "lecturers",
@@ -3000,8 +3000,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "salad",
@@ -3016,8 +3016,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "predicts",
@@ -3032,8 +3032,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "biotechnology",
@@ -3048,8 +3048,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "library",
@@ -3064,8 +3064,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "assignments",
@@ -3080,8 +3080,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "term",
@@ -3096,8 +3096,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "park",
@@ -3112,8 +3112,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "service",
@@ -3128,8 +3128,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "acupuncture",
@@ -3144,8 +3144,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "colonialism",
@@ -3160,8 +3160,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "disarmament",
@@ -3176,8 +3176,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "during",
@@ -3192,8 +3192,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "carries",
@@ -3208,8 +3208,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "oxygen",
@@ -3224,8 +3224,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "lungs",
@@ -3240,8 +3240,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "other",
@@ -3256,8 +3256,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "when",
@@ -3272,8 +3272,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "tea",
@@ -3288,8 +3288,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "lunchroom",
@@ -3304,8 +3304,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "passport",
@@ -3320,8 +3320,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "center",
@@ -3336,8 +3336,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "both",
@@ -3352,8 +3352,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "various",
@@ -3368,8 +3368,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "achieve",
@@ -3384,8 +3384,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "variety",
@@ -3400,8 +3400,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "there",
@@ -3416,8 +3416,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "successfully",
@@ -3432,8 +3432,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "parliamentary",
@@ -3448,8 +3448,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "campus",
@@ -3464,8 +3464,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "growth",
@@ -3480,8 +3480,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "text",
@@ -3496,8 +3496,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "grow",
@@ -3512,8 +3512,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "considered",
@@ -3528,8 +3528,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "astrophysics",
@@ -3544,8 +3544,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "ensure",
@@ -3560,8 +3560,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "irrelevant",
@@ -3576,8 +3576,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "borrow",
@@ -3592,8 +3592,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "books",
@@ -3608,8 +3608,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "click",
@@ -3624,8 +3624,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "logo",
@@ -3640,8 +3640,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "above",
@@ -3656,8 +3656,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "well",
@@ -3672,8 +3672,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "findings",
@@ -3688,8 +3688,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "initial",
@@ -3704,8 +3704,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "southern",
@@ -3720,8 +3720,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "station",
@@ -3736,8 +3736,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "engineering",
@@ -3752,8 +3752,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "under",
@@ -3768,8 +3768,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "lunch",
@@ -3784,8 +3784,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "noon",
@@ -3800,8 +3800,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "lecture",
@@ -3816,8 +3816,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "downloadable",
@@ -3832,8 +3832,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "journals",
@@ -3848,8 +3848,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "reimbursement",
@@ -3864,8 +3864,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "has",
@@ -3880,8 +3880,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "am",
@@ -3896,8 +3896,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "exam",
@@ -3912,8 +3912,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "their lecturers",
@@ -3928,8 +3928,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "fruits",
@@ -3944,8 +3944,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "ill",
@@ -3960,8 +3960,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "notes",
@@ -3976,8 +3976,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "cafeteria",
@@ -3992,8 +3992,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "dictionaries",
@@ -4008,8 +4008,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "give",
@@ -4024,8 +4024,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "earth",
@@ -4040,8 +4040,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "day",
@@ -4056,8 +4056,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "planting",
@@ -4072,8 +4072,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "bag",
@@ -4088,8 +4088,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "newspapers",
@@ -4104,8 +4104,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "world",
@@ -4120,8 +4120,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "reported",
@@ -4136,8 +4136,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "his",
@@ -4152,8 +4152,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "current",
@@ -4168,8 +4168,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "affairs",
@@ -4184,8 +4184,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "know",
@@ -4200,8 +4200,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "things",
@@ -4216,8 +4216,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "rat",
@@ -4232,8 +4232,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "race",
@@ -4248,8 +4248,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "please",
@@ -4264,8 +4264,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "remain",
@@ -4280,8 +4280,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "seated",
@@ -4296,8 +4296,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "website",
@@ -4312,8 +4312,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "submitted",
@@ -4328,8 +4328,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "prior",
@@ -4344,8 +4344,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "from",
@@ -4360,8 +4360,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "supposed",
@@ -4376,8 +4376,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "assemble",
@@ -4392,8 +4392,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "still",
@@ -4408,8 +4408,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "28th",
@@ -4424,8 +4424,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "being",
@@ -4440,8 +4440,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "capacity",
@@ -4456,8 +4456,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "computers",
@@ -4472,8 +4472,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "sessions",
@@ -4488,8 +4488,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "offers",
@@ -4504,8 +4504,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "weather",
@@ -4520,8 +4520,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "add",
@@ -4536,8 +4536,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "handed",
@@ -4552,8 +4552,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "invaluable",
@@ -4568,8 +4568,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "led",
@@ -4584,8 +4584,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "try",
@@ -4600,8 +4600,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "access",
@@ -4616,8 +4616,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "haven't",
@@ -4632,8 +4632,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "tax",
@@ -4648,8 +4648,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "across",
@@ -4664,8 +4664,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "sectors",
@@ -4680,8 +4680,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "unique",
@@ -4696,8 +4696,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "prepare",
@@ -4712,8 +4712,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "boarding",
@@ -4728,8 +4728,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "pass",
@@ -4744,8 +4744,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "effects",
@@ -4760,8 +4760,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "climate",
@@ -4776,8 +4776,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "many industries",
@@ -4792,8 +4792,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "where",
@@ -4808,8 +4808,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "went",
@@ -4824,8 +4824,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "services",
@@ -4840,8 +4840,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "rapidly",
@@ -4856,8 +4856,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "growing",
@@ -4872,8 +4872,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "parts",
@@ -4888,8 +4888,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "global",
@@ -4904,8 +4904,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "physical",
@@ -4920,8 +4920,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "warming",
@@ -4936,8 +4936,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "threat",
@@ -4952,8 +4952,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "wet",
@@ -4968,8 +4968,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "effective",
@@ -4984,8 +4984,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "reflect",
@@ -5000,8 +5000,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "taught",
@@ -5016,8 +5016,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "needed",
@@ -5032,8 +5032,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "experts",
@@ -5048,8 +5048,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "very",
@@ -5064,8 +5064,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "concerned",
@@ -5080,8 +5080,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "planet",
@@ -5096,8 +5096,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "fall",
@@ -5112,8 +5112,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "months",
@@ -5128,8 +5128,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "boss",
@@ -5144,8 +5144,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "requires",
@@ -5160,8 +5160,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "report",
@@ -5176,8 +5176,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "could",
@@ -5192,8 +5192,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "leaving",
@@ -5208,8 +5208,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "mitosis",
@@ -5224,8 +5224,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "division",
@@ -5240,8 +5240,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "cells",
@@ -5256,8 +5256,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "percent",
@@ -5272,8 +5272,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "say",
@@ -5288,8 +5288,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "they",
@@ -5304,8 +5304,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "eighty-five",
@@ -5320,8 +5320,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "graph",
@@ -5336,8 +5336,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "according",
@@ -5352,8 +5352,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "free",
@@ -5368,8 +5368,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "Wednesday",
@@ -5384,8 +5384,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "department",
@@ -5400,8 +5400,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "digital",
@@ -5416,8 +5416,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "course",
@@ -5432,8 +5432,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "ratio",
@@ -5448,8 +5448,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "between",
@@ -5464,8 +5464,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "body",
@@ -5480,8 +5480,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "size",
@@ -5496,8 +5496,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "facts",
@@ -5512,8 +5512,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "garnered",
@@ -5528,8 +5528,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "such",
@@ -5544,8 +5544,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "infinite",
@@ -5560,8 +5560,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "invariably",
@@ -5576,8 +5576,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "fail",
@@ -5592,8 +5592,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "pinch",
@@ -5608,8 +5608,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "manufacturing",
@@ -5624,8 +5624,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "level",
@@ -5640,8 +5640,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "high",
@@ -5656,8 +5656,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "wear",
@@ -5672,8 +5672,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "protective",
@@ -5688,8 +5688,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "goggles",
@@ -5704,8 +5704,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "before",
@@ -5720,8 +5720,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "entering",
@@ -5736,8 +5736,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "preparations",
@@ -5752,8 +5752,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "industry",
@@ -5768,8 +5768,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "country",
@@ -5784,8 +5784,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "financial",
@@ -5800,8 +5800,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "support",
@@ -5816,8 +5816,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "government",
@@ -5832,8 +5832,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "parental",
@@ -5848,8 +5848,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "stress",
@@ -5864,8 +5864,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "anxiety",
@@ -5880,8 +5880,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "explores",
@@ -5896,8 +5896,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "properties",
@@ -5912,8 +5912,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "interactions",
@@ -5928,8 +5928,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "physiology",
@@ -5944,8 +5944,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "delves",
@@ -5960,8 +5960,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "inner",
@@ -5976,8 +5976,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "outer",
@@ -5992,8 +5992,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "structures",
@@ -6008,8 +6008,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "cities",
@@ -6024,8 +6024,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "ranked",
@@ -6040,8 +6040,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "based",
@@ -6056,8 +6056,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "important",
@@ -6072,8 +6072,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "measure",
@@ -6088,8 +6088,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "answers",
@@ -6104,8 +6104,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "crucial",
@@ -6120,8 +6120,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "scientific",
@@ -6136,8 +6136,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "questions",
@@ -6152,8 +6152,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "approaching",
@@ -6168,8 +6168,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "copies",
@@ -6184,8 +6184,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "main",
@@ -6200,8 +6200,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "northern",
@@ -6216,8 +6216,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "side",
@@ -6232,8 +6232,8 @@
         }
       },
       "difficulty": "easy",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "buildings",
@@ -6248,8 +6248,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "extraordinarily",
@@ -6264,8 +6264,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "sunshine",
@@ -6280,8 +6280,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "directly",
@@ -6296,8 +6296,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "central",
@@ -6312,8 +6312,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "vehicle",
@@ -6328,8 +6328,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "traveled",
@@ -6344,8 +6344,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "collided",
@@ -6360,8 +6360,8 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     },
     {
       "english": "unexpectedly",
@@ -6376,8 +6376,8 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-hard-pronunciation-words",
-      "source": "pte-hard-pronunciation-words"
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
     }
   ]
 }

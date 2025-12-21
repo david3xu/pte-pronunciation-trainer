@@ -2,7 +2,7 @@
 
 **Category**: PTE Hard Pronunciation
 **Difficulty**: Hard
-**Total**: 294 commonly mispronounced words
+**Total**: 319 commonly mispronounced words
 
 ---
 
@@ -300,3 +300,28 @@
 292. try | /traɪ/ — sounds like **TRY**
 293. access | /ˈækses/ — sounds like **AK-ses**
 294. haven't | /ˈhævənt/ — sounds like **HAV-uhnt**
+295. tax | /tæks/ — sounds like **TAKS**
+296. across | /əˈkrɒs/ — sounds like **uh-KROS**
+297. sectors | /ˈsektərz/ — sounds like **SEK-turz**
+298. unique | /juːˈniːk/ — sounds like **yoo-NEEK**
+299. prepare | /prɪˈpeər/ — sounds like **prih-PAIR**
+300. boarding | /ˈbɔːrdɪŋ/ — sounds like **BOR-ding**
+301. pass | /pɑːs/ — sounds like **PAS**
+302. effects | /ɪˈfekts/ — sounds like **ih-FEKTS**
+303. climate | /ˈklaɪmət/ — sounds like **KLY-muht**
+304. many industries | /ˈmeni ˈɪndəstriz/ — sounds like **MEN-ee IN-duhs-treez**
+305. where | /weər/ — sounds like **WAIR**
+306. went | /went/ — sounds like **WENT**
+307. services | /ˈsɜːrvɪsɪz/ — sounds like **SUR-vis-iz**
+308. rapidly | /ˈræpɪdli/ — sounds like **RAP-id-lee**
+309. growing | /ˈɡrəʊɪŋ/ — sounds like **GROH-wing**
+310. parts | /pɑːrts/ — sounds like **PARTS**
+311. global | /ˈɡləʊbəl/ — sounds like **GLOH-buhl**
+312. physical | /ˈfɪzɪkəl/ — sounds like **FIZ-ih-kuhl**
+313. warming | /ˈwɔːrmɪŋ/ — sounds like **WOR-ming**
+314. threat | /θret/ — sounds like **THRET**
+315. wet | /wet/ — sounds like **WET**
+316. effective | /ɪˈfektɪv/ — sounds like **ih-FEK-tiv**
+317. reflect | /rɪˈflekt/ — sounds like **rih-FLEKT**
+318. taught | /tɔːt/ — sounds like **TAWT**
+319. needed | /ˈniːdɪd/ — sounds like **NEE-did**

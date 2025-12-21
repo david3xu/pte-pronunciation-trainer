@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-12-21T00:47:22.721Z",
-    "totalTerms": 93,
+    "generated": "2025-12-21T00:57:50.569Z",
+    "totalTerms": 118,
     "source": "pte-hard-pronunciation-words",
     "description": "Auto-discovered vocabulary book: pte-hard-pronunciation-words",
     "version": "1.0",
@@ -1496,6 +1496,406 @@
         }
       },
       "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "learn",
+      "pronunciation": {
+        "british": {
+          "ipa": "lɜːrn",
+          "phonetic": "LURN"
+        },
+        "american": {
+          "ipa": "lɜːrn",
+          "phonetic": "LURN"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "more",
+      "pronunciation": {
+        "british": {
+          "ipa": "mɔːr",
+          "phonetic": "MOR"
+        },
+        "american": {
+          "ipa": "mɔːr",
+          "phonetic": "MOR"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "than",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðæn",
+          "phonetic": "THAN"
+        },
+        "american": {
+          "ipa": "ðæn",
+          "phonetic": "THAN"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "items",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈaɪtəmz",
+          "phonetic": "EYE-tuhmz"
+        },
+        "american": {
+          "ipa": "ˈaɪtəmz",
+          "phonetic": "EYE-tuhmz"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "reopened",
+      "pronunciation": {
+        "british": {
+          "ipa": "riːˈəʊpənd",
+          "phonetic": "ree-OH-puhnd"
+        },
+        "american": {
+          "ipa": "riːˈəʊpənd",
+          "phonetic": "ree-OH-puhnd"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "overwhelming",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌəʊvərˈwelmɪŋ",
+          "phonetic": "oh-vur-WEL-ming"
+        },
+        "american": {
+          "ipa": "ˌəʊvərˈwelmɪŋ",
+          "phonetic": "oh-vur-WEL-ming"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "nurse's",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈnɜːrsɪz",
+          "phonetic": "NUR-siz"
+        },
+        "american": {
+          "ipa": "ˈnɜːrsɪz",
+          "phonetic": "NUR-siz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "son",
+      "pronunciation": {
+        "british": {
+          "ipa": "sʌn",
+          "phonetic": "SUN"
+        },
+        "american": {
+          "ipa": "sʌn",
+          "phonetic": "SUN"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "near",
+      "pronunciation": {
+        "british": {
+          "ipa": "nɪər",
+          "phonetic": "NEER"
+        },
+        "american": {
+          "ipa": "nɪər",
+          "phonetic": "NEER"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "grocery",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɡrəʊsəri",
+          "phonetic": "GROH-suh-ree"
+        },
+        "american": {
+          "ipa": "ˈɡrəʊsəri",
+          "phonetic": "GROH-suh-ree"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "store",
+      "pronunciation": {
+        "british": {
+          "ipa": "stɔːr",
+          "phonetic": "STOR"
+        },
+        "american": {
+          "ipa": "stɔːr",
+          "phonetic": "STOR"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "corner",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkɔːrnər",
+          "phonetic": "KOR-nur"
+        },
+        "american": {
+          "ipa": "ˈkɔːrnər",
+          "phonetic": "KOR-nur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "meeting",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmiːtɪŋ",
+          "phonetic": "MEE-ting"
+        },
+        "american": {
+          "ipa": "ˈmiːtɪŋ",
+          "phonetic": "MEE-ting"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "fulfilled",
+      "pronunciation": {
+        "british": {
+          "ipa": "fʊlˈfɪld",
+          "phonetic": "ful-FILD"
+        },
+        "american": {
+          "ipa": "fʊlˈfɪld",
+          "phonetic": "ful-FILD"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "enrollment",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈrəʊlmənt",
+          "phonetic": "in-ROHL-muhnt"
+        },
+        "american": {
+          "ipa": "ɪnˈrəʊlmənt",
+          "phonetic": "in-ROHL-muhnt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "student",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈstjuːdənt",
+          "phonetic": "STOO-duhnt"
+        },
+        "american": {
+          "ipa": "ˈstjuːdənt",
+          "phonetic": "STOO-duhnt"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "meet",
+      "pronunciation": {
+        "british": {
+          "ipa": "miːt",
+          "phonetic": "MEET"
+        },
+        "american": {
+          "ipa": "miːt",
+          "phonetic": "MEET"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "new",
+      "pronunciation": {
+        "british": {
+          "ipa": "njuː",
+          "phonetic": "NYOO"
+        },
+        "american": {
+          "ipa": "njuː",
+          "phonetic": "NYOO"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "further",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɜːrðər",
+          "phonetic": "FUR-thur"
+        },
+        "american": {
+          "ipa": "ˈfɜːrðər",
+          "phonetic": "FUR-thur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "call",
+      "pronunciation": {
+        "british": {
+          "ipa": "kɔːl",
+          "phonetic": "KAWL"
+        },
+        "american": {
+          "ipa": "kɔːl",
+          "phonetic": "KAWL"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "executive",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪɡˈzekjətɪv",
+          "phonetic": "ig-ZEK-yoo-tiv"
+        },
+        "american": {
+          "ipa": "ɪɡˈzekjətɪv",
+          "phonetic": "ig-ZEK-yoo-tiv"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "serve",
+      "pronunciation": {
+        "british": {
+          "ipa": "sɜːrv",
+          "phonetic": "SURV"
+        },
+        "american": {
+          "ipa": "sɜːrv",
+          "phonetic": "SURV"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "role",
+      "pronunciation": {
+        "british": {
+          "ipa": "rəʊl",
+          "phonetic": "ROHL"
+        },
+        "american": {
+          "ipa": "rəʊl",
+          "phonetic": "ROHL"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "beneficiary",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌbenɪˈfɪʃəri",
+          "phonetic": "ben-uh-FISH-ee-air-ee"
+        },
+        "american": {
+          "ipa": "ˌbenɪˈfɪʃəri",
+          "phonetic": "ben-uh-FISH-ee-air-ee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "frequently",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfriːkwəntli",
+          "phonetic": "FREE-kwuhnt-lee"
+        },
+        "american": {
+          "ipa": "ˈfriːkwəntli",
+          "phonetic": "FREE-kwuhnt-lee"
+        }
+      },
+      "difficulty": "hard",
       "category": "pte-hard-pronunciation-words",
       "source": "pte-hard-pronunciation-words"
     }

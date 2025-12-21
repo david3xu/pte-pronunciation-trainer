@@ -2,7 +2,7 @@
 
 **Category**: PTE Hard Pronunciation
 **Difficulty**: Hard
-**Total**: 94 commonly mispronounced words
+**Total**: 119 commonly mispronounced words
 
 ---
 
@@ -100,3 +100,28 @@
 92. postgraduate | /ˌpəʊstˈɡrædʒuət/ — sounds like **pohst-GRAJ-oo-uht**
 93. undergraduate | /ˌʌndərˈɡrædʒuət/ — sounds like **un-dur-GRAJ-oo-uht**
 94. too | /tuː/ — sounds like **TOO**
+95. learn | /lɜːrn/ — sounds like **LURN**
+96. more | /mɔːr/ — sounds like **MOR**
+97. than | /ðæn/ — sounds like **THAN**
+98. items | /ˈaɪtəmz/ — sounds like **EYE-tuhmz**
+99. reopened | /riːˈəʊpənd/ — sounds like **ree-OH-puhnd**
+100. overwhelming | /ˌəʊvərˈwelmɪŋ/ — sounds like **oh-vur-WEL-ming**
+101. nurse's | /ˈnɜːrsɪz/ — sounds like **NUR-siz**
+102. son | /sʌn/ — sounds like **SUN**
+103. near | /nɪər/ — sounds like **NEER**
+104. grocery | /ˈɡrəʊsəri/ — sounds like **GROH-suh-ree**
+105. store | /stɔːr/ — sounds like **STOR**
+106. corner | /ˈkɔːrnər/ — sounds like **KOR-nur**
+107. meeting | /ˈmiːtɪŋ/ — sounds like **MEE-ting**
+108. fulfilled | /fʊlˈfɪld/ — sounds like **ful-FILD**
+109. enrollment | /ɪnˈrəʊlmənt/ — sounds like **in-ROHL-muhnt**
+110. student | /ˈstjuːdənt/ — sounds like **STOO-duhnt**
+111. meet | /miːt/ — sounds like **MEET**
+112. new | /njuː/ — sounds like **NYOO**
+113. further | /ˈfɜːrðər/ — sounds like **FUR-thur**
+114. call | /kɔːl/ — sounds like **KAWL**
+115. executive | /ɪɡˈzekjətɪv/ — sounds like **ig-ZEK-yoo-tiv**
+116. serve | /sɜːrv/ — sounds like **SURV**
+117. role | /rəʊl/ — sounds like **ROHL**
+118. beneficiary | /ˌbenɪˈfɪʃəri/ — sounds like **ben-uh-FISH-ee-air-ee**
+119. frequently | /ˈfriːkwəntli/ — sounds like **FREE-kwuhnt-lee**

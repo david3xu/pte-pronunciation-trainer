@@ -2,7 +2,7 @@
 
 **Category**: PTE Hard Pronunciation
 **Difficulty**: Hard
-**Total**: 66 commonly mispronounced words
+**Total**: 94 commonly mispronounced words
 
 ---
 
@@ -72,4 +72,31 @@
 64. bibliography | /ˌbɪbliˈɒɡrəfi/ — sounds like **bib-lee-AH-gruh-fee**
 65. correct | /kəˈrekt/ — sounds like **kuh-REKT**
 66. higher | /ˈhaɪər/ — sounds like **HY-ur**
-
+67. societal | /səˈsaɪətl/ — sounds like **suh-SY-uh-tuhl**
+68. account | /əˈkaʊnt/ — sounds like **uh-KOWNT**
+69. due | /djuː/ — sounds like **DYOO**
+70. yours | /jɔːrz/ — sounds like **YORZ**
+71. wages | /ˈweɪdʒɪz/ — sounds like **WAY-jiz**
+72. been | /biːn/ — sounds like **BEEN**
+73. nearly | /ˈnɪərli/ — sounds like **NEER-lee**
+74. television | /ˈtelɪvɪʒən/ — sounds like **TEL-uh-vizh-uhn**
+75. outputs | /ˈaʊtpʊts/ — sounds like **OWT-puts**
+76. given | /ˈɡɪvən/ — sounds like **GIV-uhn**
+77. away | /əˈweɪ/ — sounds like **uh-WAY**
+78. thorough | /ˈθʌrə/ — sounds like **THUR-oh**
+79. every | /ˈevri/ — sounds like **EV-ree**
+80. lectures | /ˈlektʃərz/ — sounds like **LEK-churz**
+81. seminars | /ˈsemɪnɑːrz/ — sounds like **SEM-ih-narz**
+82. tutorials | /tjuːˈtɔːriəlz/ — sounds like **tyoo-TOR-ee-uhlz**
+83. hours | /aʊərz/ — sounds like **OW-urz**
+84. twenty | /ˈtwenti/ — sounds like **TWEN-tee**
+85. brain | /breɪn/ — sounds like **BRAYN**
+86. deadline | /ˈdedlaɪn/ — sounds like **DED-lyn**
+87. fourth | /fɔːrθ/ — sounds like **FORTH**
+88. February | /ˈfebrueri/ — sounds like **FEB-roo-air-ee**
+89. following | /ˈfɒləʊɪŋ/ — sounds like **FAH-loh-wing**
+90. welcome | /ˈwelkəm/ — sounds like **WEL-kuhm**
+91. events | /ɪˈvents/ — sounds like **ih-VENTS**
+92. postgraduate | /ˌpəʊstˈɡrædʒuət/ — sounds like **pohst-GRAJ-oo-uht**
+93. undergraduate | /ˌʌndərˈɡrædʒuət/ — sounds like **un-dur-GRAJ-oo-uht**
+94. too | /tuː/ — sounds like **TOO**

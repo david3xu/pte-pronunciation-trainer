@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-12-21T00:38:04.956Z",
-    "totalTerms": 65,
+    "generated": "2025-12-21T00:47:22.721Z",
+    "totalTerms": 93,
     "source": "pte-hard-pronunciation-words",
     "description": "Auto-discovered vocabulary book: pte-hard-pronunciation-words",
     "version": "1.0",
@@ -1048,6 +1048,454 @@
         }
       },
       "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "societal",
+      "pronunciation": {
+        "british": {
+          "ipa": "səˈsaɪətl",
+          "phonetic": "suh-SY-uh-tuhl"
+        },
+        "american": {
+          "ipa": "səˈsaɪətl",
+          "phonetic": "suh-SY-uh-tuhl"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "account",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈkaʊnt",
+          "phonetic": "uh-KOWNT"
+        },
+        "american": {
+          "ipa": "əˈkaʊnt",
+          "phonetic": "uh-KOWNT"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "due",
+      "pronunciation": {
+        "british": {
+          "ipa": "djuː",
+          "phonetic": "DYOO"
+        },
+        "american": {
+          "ipa": "djuː",
+          "phonetic": "DYOO"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "yours",
+      "pronunciation": {
+        "british": {
+          "ipa": "jɔːrz",
+          "phonetic": "YORZ"
+        },
+        "american": {
+          "ipa": "jɔːrz",
+          "phonetic": "YORZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "wages",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈweɪdʒɪz",
+          "phonetic": "WAY-jiz"
+        },
+        "american": {
+          "ipa": "ˈweɪdʒɪz",
+          "phonetic": "WAY-jiz"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "been",
+      "pronunciation": {
+        "british": {
+          "ipa": "biːn",
+          "phonetic": "BEEN"
+        },
+        "american": {
+          "ipa": "biːn",
+          "phonetic": "BEEN"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "nearly",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈnɪərli",
+          "phonetic": "NEER-lee"
+        },
+        "american": {
+          "ipa": "ˈnɪərli",
+          "phonetic": "NEER-lee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "television",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtelɪvɪʒən",
+          "phonetic": "TEL-uh-vizh-uhn"
+        },
+        "american": {
+          "ipa": "ˈtelɪvɪʒən",
+          "phonetic": "TEL-uh-vizh-uhn"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "outputs",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈaʊtpʊts",
+          "phonetic": "OWT-puts"
+        },
+        "american": {
+          "ipa": "ˈaʊtpʊts",
+          "phonetic": "OWT-puts"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "given",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɡɪvən",
+          "phonetic": "GIV-uhn"
+        },
+        "american": {
+          "ipa": "ˈɡɪvən",
+          "phonetic": "GIV-uhn"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "away",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈweɪ",
+          "phonetic": "uh-WAY"
+        },
+        "american": {
+          "ipa": "əˈweɪ",
+          "phonetic": "uh-WAY"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "thorough",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈθʌrə",
+          "phonetic": "THUR-oh"
+        },
+        "american": {
+          "ipa": "ˈθʌrə",
+          "phonetic": "THUR-oh"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "every",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈevri",
+          "phonetic": "EV-ree"
+        },
+        "american": {
+          "ipa": "ˈevri",
+          "phonetic": "EV-ree"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "lectures",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlektʃərz",
+          "phonetic": "LEK-churz"
+        },
+        "american": {
+          "ipa": "ˈlektʃərz",
+          "phonetic": "LEK-churz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "seminars",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsemɪnɑːrz",
+          "phonetic": "SEM-ih-narz"
+        },
+        "american": {
+          "ipa": "ˈsemɪnɑːrz",
+          "phonetic": "SEM-ih-narz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "tutorials",
+      "pronunciation": {
+        "british": {
+          "ipa": "tjuːˈtɔːriəlz",
+          "phonetic": "tyoo-TOR-ee-uhlz"
+        },
+        "american": {
+          "ipa": "tjuːˈtɔːriəlz",
+          "phonetic": "tyoo-TOR-ee-uhlz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "hours",
+      "pronunciation": {
+        "british": {
+          "ipa": "aʊərz",
+          "phonetic": "OW-urz"
+        },
+        "american": {
+          "ipa": "aʊərz",
+          "phonetic": "OW-urz"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "twenty",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtwenti",
+          "phonetic": "TWEN-tee"
+        },
+        "american": {
+          "ipa": "ˈtwenti",
+          "phonetic": "TWEN-tee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "brain",
+      "pronunciation": {
+        "british": {
+          "ipa": "breɪn",
+          "phonetic": "BRAYN"
+        },
+        "american": {
+          "ipa": "breɪn",
+          "phonetic": "BRAYN"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "deadline",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdedlaɪn",
+          "phonetic": "DED-lyn"
+        },
+        "american": {
+          "ipa": "ˈdedlaɪn",
+          "phonetic": "DED-lyn"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "fourth",
+      "pronunciation": {
+        "british": {
+          "ipa": "fɔːrθ",
+          "phonetic": "FORTH"
+        },
+        "american": {
+          "ipa": "fɔːrθ",
+          "phonetic": "FORTH"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "February",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfebrueri",
+          "phonetic": "FEB-roo-air-ee"
+        },
+        "american": {
+          "ipa": "ˈfebrueri",
+          "phonetic": "FEB-roo-air-ee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "following",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɒləʊɪŋ",
+          "phonetic": "FAH-loh-wing"
+        },
+        "american": {
+          "ipa": "ˈfɒləʊɪŋ",
+          "phonetic": "FAH-loh-wing"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "welcome",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈwelkəm",
+          "phonetic": "WEL-kuhm"
+        },
+        "american": {
+          "ipa": "ˈwelkəm",
+          "phonetic": "WEL-kuhm"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "events",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪˈvents",
+          "phonetic": "ih-VENTS"
+        },
+        "american": {
+          "ipa": "ɪˈvents",
+          "phonetic": "ih-VENTS"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "postgraduate",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌpəʊstˈɡrædʒuət",
+          "phonetic": "pohst-GRAJ-oo-uht"
+        },
+        "american": {
+          "ipa": "ˌpəʊstˈɡrædʒuət",
+          "phonetic": "pohst-GRAJ-oo-uht"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "undergraduate",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌʌndərˈɡrædʒuət",
+          "phonetic": "un-dur-GRAJ-oo-uht"
+        },
+        "american": {
+          "ipa": "ˌʌndərˈɡrædʒuət",
+          "phonetic": "un-dur-GRAJ-oo-uht"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "too",
+      "pronunciation": {
+        "british": {
+          "ipa": "tuː",
+          "phonetic": "TOO"
+        },
+        "american": {
+          "ipa": "tuː",
+          "phonetic": "TOO"
+        }
+      },
+      "difficulty": "easy",
       "category": "pte-hard-pronunciation-words",
       "source": "pte-hard-pronunciation-words"
     }

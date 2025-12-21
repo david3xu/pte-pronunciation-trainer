@@ -2,7 +2,7 @@
 
 **Category**: PTE Hard Pronunciation
 **Difficulty**: Hard
-**Total**: 198 commonly mispronounced words
+**Total**: 217 commonly mispronounced words
 
 ---
 
@@ -204,3 +204,22 @@
 196. park | /pɑːrk/ — sounds like **PARK**
 197. permits | /ˈpɜːrmɪts/ — sounds like **PUR-mits** (noun) or /pərˈmɪts/ **pur-MITS** (verb)
 198. service | /ˈsɜːrvɪs/ — sounds like **SUR-vis**
+199. acupuncture | /ˈækjəpʌŋktʃər/ — sounds like **AK-yoo-pungk-chur**
+200. colonialism | /kəˈləʊniəlɪzəm/ — sounds like **kuh-LOH-nee-uh-liz-uhm**
+201. disarmament | /dɪsˈɑːrməmənt/ — sounds like **dis-AR-muh-muhnt**
+202. during | /ˈdjʊərɪŋ/ — sounds like **DYOOR-ing**
+203. carries | /ˈkæriz/ — sounds like **KAR-eez**
+204. oxygen | /ˈɒksɪdʒən/ — sounds like **OK-sih-juhn**
+205. lungs | /lʌŋz/ — sounds like **LUNGZ**
+206. other | /ˈʌðər/ — sounds like **UH-thur**
+207. when | /wen/ — sounds like **WEN**
+208. tea | /tiː/ — sounds like **TEE**
+209. lunchroom | /ˈlʌntʃruːm/ — sounds like **LUNCH-room**
+210. passport | /ˈpɑːspɔːrt/ — sounds like **PAS-port**
+211. center | /ˈsentər/ — sounds like **SEN-tur**
+212. both | /bəʊθ/ — sounds like **BOHTH**
+213. various | /ˈveəriəs/ — sounds like **VAIR-ee-uhs**
+214. achieve | /əˈtʃiːv/ — sounds like **uh-CHEEV**
+215. variety | /vəˈraɪəti/ — sounds like **vuh-RY-uh-tee**
+216. there | /ðeər/ — sounds like **THAIR**
+217. successfully | /səkˈsesfəli/ — sounds like **suhk-SES-fuh-lee**

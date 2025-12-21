@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-12-21T02:16:39.392Z",
-    "totalTerms": 195,
+    "generated": "2025-12-21T03:00:53.458Z",
+    "totalTerms": 214,
     "source": "pte-hard-pronunciation-words",
     "description": "Auto-discovered vocabulary book: pte-hard-pronunciation-words",
     "version": "1.0",
@@ -3128,6 +3128,310 @@
         }
       },
       "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "acupuncture",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈækjəpʌŋktʃər",
+          "phonetic": "AK-yoo-pungk-chur"
+        },
+        "american": {
+          "ipa": "ˈækjəpʌŋktʃər",
+          "phonetic": "AK-yoo-pungk-chur"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "colonialism",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəˈləʊniəlɪzəm",
+          "phonetic": "kuh-LOH-nee-uh-liz-uhm"
+        },
+        "american": {
+          "ipa": "kəˈləʊniəlɪzəm",
+          "phonetic": "kuh-LOH-nee-uh-liz-uhm"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "disarmament",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪsˈɑːrməmənt",
+          "phonetic": "dis-AR-muh-muhnt"
+        },
+        "american": {
+          "ipa": "dɪsˈɑːrməmənt",
+          "phonetic": "dis-AR-muh-muhnt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "during",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdjʊərɪŋ",
+          "phonetic": "DYOOR-ing"
+        },
+        "american": {
+          "ipa": "ˈdjʊərɪŋ",
+          "phonetic": "DYOOR-ing"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "carries",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkæriz",
+          "phonetic": "KAR-eez"
+        },
+        "american": {
+          "ipa": "ˈkæriz",
+          "phonetic": "KAR-eez"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "oxygen",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɒksɪdʒən",
+          "phonetic": "OK-sih-juhn"
+        },
+        "american": {
+          "ipa": "ˈɒksɪdʒən",
+          "phonetic": "OK-sih-juhn"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "lungs",
+      "pronunciation": {
+        "british": {
+          "ipa": "lʌŋz",
+          "phonetic": "LUNGZ"
+        },
+        "american": {
+          "ipa": "lʌŋz",
+          "phonetic": "LUNGZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "other",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈʌðər",
+          "phonetic": "UH-thur"
+        },
+        "american": {
+          "ipa": "ˈʌðər",
+          "phonetic": "UH-thur"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "when",
+      "pronunciation": {
+        "british": {
+          "ipa": "wen",
+          "phonetic": "WEN"
+        },
+        "american": {
+          "ipa": "wen",
+          "phonetic": "WEN"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "tea",
+      "pronunciation": {
+        "british": {
+          "ipa": "tiː",
+          "phonetic": "TEE"
+        },
+        "american": {
+          "ipa": "tiː",
+          "phonetic": "TEE"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "lunchroom",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlʌntʃruːm",
+          "phonetic": "LUNCH-room"
+        },
+        "american": {
+          "ipa": "ˈlʌntʃruːm",
+          "phonetic": "LUNCH-room"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "passport",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpɑːspɔːrt",
+          "phonetic": "PAS-port"
+        },
+        "american": {
+          "ipa": "ˈpɑːspɔːrt",
+          "phonetic": "PAS-port"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "center",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsentər",
+          "phonetic": "SEN-tur"
+        },
+        "american": {
+          "ipa": "ˈsentər",
+          "phonetic": "SEN-tur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "both",
+      "pronunciation": {
+        "british": {
+          "ipa": "bəʊθ",
+          "phonetic": "BOHTH"
+        },
+        "american": {
+          "ipa": "bəʊθ",
+          "phonetic": "BOHTH"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "various",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈveəriəs",
+          "phonetic": "VAIR-ee-uhs"
+        },
+        "american": {
+          "ipa": "ˈveəriəs",
+          "phonetic": "VAIR-ee-uhs"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "achieve",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈtʃiːv",
+          "phonetic": "uh-CHEEV"
+        },
+        "american": {
+          "ipa": "əˈtʃiːv",
+          "phonetic": "uh-CHEEV"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "variety",
+      "pronunciation": {
+        "british": {
+          "ipa": "vəˈraɪəti",
+          "phonetic": "vuh-RY-uh-tee"
+        },
+        "american": {
+          "ipa": "vəˈraɪəti",
+          "phonetic": "vuh-RY-uh-tee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "there",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðeər",
+          "phonetic": "THAIR"
+        },
+        "american": {
+          "ipa": "ðeər",
+          "phonetic": "THAIR"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "successfully",
+      "pronunciation": {
+        "british": {
+          "ipa": "səkˈsesfəli",
+          "phonetic": "suhk-SES-fuh-lee"
+        },
+        "american": {
+          "ipa": "səkˈsesfəli",
+          "phonetic": "suhk-SES-fuh-lee"
+        }
+      },
+      "difficulty": "hard",
       "category": "pte-hard-pronunciation-words",
       "source": "pte-hard-pronunciation-words"
     }

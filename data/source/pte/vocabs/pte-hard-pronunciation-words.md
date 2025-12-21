@@ -2,7 +2,7 @@
 
 **Category**: PTE Hard Pronunciation
 **Difficulty**: Hard
-**Total**: 152 commonly mispronounced words
+**Total**: 168 commonly mispronounced words
 
 ---
 
@@ -158,3 +158,19 @@
 150. work | /wɜːrk/ — sounds like **WURK**
 151. cause | /kɔːz/ — sounds like **KAWZ**
 152. available | /əˈveɪləbəl/ — sounds like **uh-VAY-luh-buhl**
+153. January | /ˈdʒænjueri/ — sounds like **JAN-yoo-air-ee**
+154. supper | /ˈsʌpər/ — sounds like **SUP-ur**
+155. calls | /kɔːlz/ — sounds like **KAWLZ**
+156. while | /waɪl/ — sounds like **WYL**
+157. out | /aʊt/ — sounds like **OWT**
+158. always | /ˈɔːlweɪz/ — sounds like **AWL-wayz**
+159. sources | /ˈsɔːrsɪz/ — sounds like **SOR-siz**
+160. twenty-four | /ˌtwentiˈfɔːr/ — sounds like **twen-tee-FOR**
+161. would | /wʊd/ — sounds like **WOOD**
+162. hot food | /hɒt fuːd/ — sounds like **HOT FOOD**
+163. statistical | /stəˈtɪstɪkəl/ — sounds like **stuh-TIS-tih-kuhl**
+164. evidence | /ˈevɪdəns/ — sounds like **EV-ih-duhns**
+165. required | /rɪˈkwaɪərd/ — sounds like **rih-KWY-urd**
+166. these | /ðiːz/ — sounds like **THEEZ**
+167. two pictures | /tuː ˈpɪktʃərz/ — sounds like **TOO PIK-churz**
+168. empirical | /ɪmˈpɪrɪkəl/ — sounds like **im-PIR-ih-kuhl**

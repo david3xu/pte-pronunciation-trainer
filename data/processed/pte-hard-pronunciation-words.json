@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-12-21T01:06:25.570Z",
-    "totalTerms": 150,
+    "generated": "2025-12-21T01:15:04.523Z",
+    "totalTerms": 166,
     "source": "pte-hard-pronunciation-words",
     "description": "Auto-discovered vocabulary book: pte-hard-pronunciation-words",
     "version": "1.0",
@@ -2405,6 +2405,262 @@
         "american": {
           "ipa": "əˈveɪləbəl",
           "phonetic": "uh-VAY-luh-buhl"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "January",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdʒænjueri",
+          "phonetic": "JAN-yoo-air-ee"
+        },
+        "american": {
+          "ipa": "ˈdʒænjueri",
+          "phonetic": "JAN-yoo-air-ee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "supper",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsʌpər",
+          "phonetic": "SUP-ur"
+        },
+        "american": {
+          "ipa": "ˈsʌpər",
+          "phonetic": "SUP-ur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "calls",
+      "pronunciation": {
+        "british": {
+          "ipa": "kɔːlz",
+          "phonetic": "KAWLZ"
+        },
+        "american": {
+          "ipa": "kɔːlz",
+          "phonetic": "KAWLZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "while",
+      "pronunciation": {
+        "british": {
+          "ipa": "waɪl",
+          "phonetic": "WYL"
+        },
+        "american": {
+          "ipa": "waɪl",
+          "phonetic": "WYL"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "out",
+      "pronunciation": {
+        "british": {
+          "ipa": "aʊt",
+          "phonetic": "OWT"
+        },
+        "american": {
+          "ipa": "aʊt",
+          "phonetic": "OWT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "always",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɔːlweɪz",
+          "phonetic": "AWL-wayz"
+        },
+        "american": {
+          "ipa": "ˈɔːlweɪz",
+          "phonetic": "AWL-wayz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "sources",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɔːrsɪz",
+          "phonetic": "SOR-siz"
+        },
+        "american": {
+          "ipa": "ˈsɔːrsɪz",
+          "phonetic": "SOR-siz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "twenty-four",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌtwentiˈfɔːr",
+          "phonetic": "twen-tee-FOR"
+        },
+        "american": {
+          "ipa": "ˌtwentiˈfɔːr",
+          "phonetic": "twen-tee-FOR"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "would",
+      "pronunciation": {
+        "british": {
+          "ipa": "wʊd",
+          "phonetic": "WOOD"
+        },
+        "american": {
+          "ipa": "wʊd",
+          "phonetic": "WOOD"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "hot food",
+      "pronunciation": {
+        "british": {
+          "ipa": "hɒt fuːd",
+          "phonetic": "HOT FOOD"
+        },
+        "american": {
+          "ipa": "hɒt fuːd",
+          "phonetic": "HOT FOOD"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "statistical",
+      "pronunciation": {
+        "british": {
+          "ipa": "stəˈtɪstɪkəl",
+          "phonetic": "stuh-TIS-tih-kuhl"
+        },
+        "american": {
+          "ipa": "stəˈtɪstɪkəl",
+          "phonetic": "stuh-TIS-tih-kuhl"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "evidence",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈevɪdəns",
+          "phonetic": "EV-ih-duhns"
+        },
+        "american": {
+          "ipa": "ˈevɪdəns",
+          "phonetic": "EV-ih-duhns"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "required",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈkwaɪərd",
+          "phonetic": "rih-KWY-urd"
+        },
+        "american": {
+          "ipa": "rɪˈkwaɪərd",
+          "phonetic": "rih-KWY-urd"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "these",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðiːz",
+          "phonetic": "THEEZ"
+        },
+        "american": {
+          "ipa": "ðiːz",
+          "phonetic": "THEEZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "two pictures",
+      "pronunciation": {
+        "british": {
+          "ipa": "tuː ˈpɪktʃərz",
+          "phonetic": "TOO PIK-churz"
+        },
+        "american": {
+          "ipa": "tuː ˈpɪktʃərz",
+          "phonetic": "TOO PIK-churz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "empirical",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪmˈpɪrɪkəl",
+          "phonetic": "im-PIR-ih-kuhl"
+        },
+        "american": {
+          "ipa": "ɪmˈpɪrɪkəl",
+          "phonetic": "im-PIR-ih-kuhl"
         }
       },
       "difficulty": "normal",

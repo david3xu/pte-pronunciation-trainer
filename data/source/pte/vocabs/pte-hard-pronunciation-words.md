@@ -2,7 +2,7 @@
 
 **Category**: PTE Hard Pronunciation
 **Difficulty**: Hard
-**Total**: 319 commonly mispronounced words
+**Total**: 356 commonly mispronounced words
 
 ---
 
@@ -325,3 +325,40 @@
 317. reflect | /rɪˈflekt/ — sounds like **rih-FLEKT**
 318. taught | /tɔːt/ — sounds like **TAWT**
 319. needed | /ˈniːdɪd/ — sounds like **NEE-did**
+320. experts | /ˈekspɜːrts/ — sounds like **EK-spurts**
+321. very | /ˈveri/ — sounds like **VER-ee**
+322. concerned | /kənˈsɜːrnd/ — sounds like **kuhn-SURND**
+323. planet | /ˈplænɪt/ — sounds like **PLAN-it**
+324. fall | /fɔːl/ — sounds like **FAWL**
+325. months | /mʌnθs/ — sounds like **MUNTHS**
+326. boss | /bɒs/ — sounds like **BOS**
+327. requires | /rɪˈkwaɪərz/ — sounds like **rih-KWY-urz**
+328. report | /rɪˈpɔːrt/ — sounds like **rih-PORT**
+329. could | /kʊd/ — sounds like **KOOD**
+330. leaving | /ˈliːvɪŋ/ — sounds like **LEE-ving**
+331. mitosis | /maɪˈtəʊsɪs/ — sounds like **my-TOH-sis**
+332. division | /dɪˈvɪʒən/ — sounds like **dih-VIZH-uhn**
+333. cells | /selz/ — sounds like **SELZ**
+334. percent | /pərˈsent/ — sounds like **pur-SENT**
+335. say | /seɪ/ — sounds like **SAY**
+336. they | /ðeɪ/ — sounds like **THAY**
+337. eighty-five | /ˌeɪtiˈfaɪv/ — sounds like **ay-tee-FYV**
+338. these | /ðiːz/ — sounds like **THEEZ**
+339. graph | /ɡræf/ — sounds like **GRAF**
+340. according | /əˈkɔːrdɪŋ/ — sounds like **uh-KOR-ding**
+341. free | /friː/ — sounds like **FREE**
+342. Wednesday | /ˈwenzdeɪ/ — sounds like **WENZ-day**
+343. department | /dɪˈpɑːrtmənt/ — sounds like **dih-PART-muhnt**
+344. digital | /ˈdɪdʒɪtəl/ — sounds like **DIJ-ih-tuhl**
+345. course | /kɔːrs/ — sounds like **KORS**
+346. ratio | /ˈreɪʃiəʊ/ — sounds like **RAY-shee-oh**
+347. between | /bɪˈtwiːn/ — sounds like **bih-TWEEN**
+348. body | /ˈbɒdi/ — sounds like **BAH-dee**
+349. size | /saɪz/ — sounds like **SYZ**
+350. facts | /fækts/ — sounds like **FAKTS**
+351. garnered | /ˈɡɑːrnərd/ — sounds like **GAR-nurd**
+352. such | /sʌtʃ/ — sounds like **SUCH**
+353. infinite | /ˈɪnfɪnət/ — sounds like **IN-fih-nit**
+354. invariably | /ɪnˈveəriəbli/ — sounds like **in-VAIR-ee-uh-blee**
+355. fail | /feɪl/ — sounds like **FAYL**
+356. pinch | /pɪntʃ/ — sounds like **PINCH**

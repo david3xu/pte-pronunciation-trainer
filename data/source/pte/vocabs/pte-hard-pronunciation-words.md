@@ -2,7 +2,7 @@
 
 **Category**: PTE Hard Pronunciation
 **Difficulty**: Hard
-**Total**: 119 commonly mispronounced words
+**Total**: 152 commonly mispronounced words
 
 ---
 
@@ -125,3 +125,36 @@
 117. role | /rəʊl/ — sounds like **ROHL**
 118. beneficiary | /ˌbenɪˈfɪʃəri/ — sounds like **ben-uh-FISH-ee-air-ee**
 119. frequently | /ˈfriːkwəntli/ — sounds like **FREE-kwuhnt-lee**
+120. assignment | /əˈsaɪnmənt/ — sounds like **uh-SYN-muhnt**
+121. use | /juːz/ — sounds like **YOOZ**
+122. formal | /ˈfɔːrməl/ — sounds like **FOR-muhl**
+123. words | /wɜːrdz/ — sounds like **WURDZ**
+124. seminar | /ˈsemɪnɑːr/ — sounds like **SEM-ih-nar**
+125. require | /rɪˈkwaɪər/ — sounds like **rih-KWY-ur**
+126. raise | /reɪz/ — sounds like **RAYZ**
+127. hat | /hæt/ — sounds like **HAT**
+128. restaurant | /ˈrestərɒnt/ — sounds like **REST-uh-rahnt**
+129. put | /pʊt/ — sounds like **PUT**
+130. reports | /rɪˈpɔːrts/ — sounds like **rih-PORTS**
+131. written | /ˈrɪtən/ — sounds like **RIT-uhn**
+132. apply | /əˈplaɪ/ — sounds like **uh-PLY**
+133. driver's license | /ˈdraɪvərz ˈlaɪsəns/ — sounds like **DRY-vurz LY-suhns**
+134. train | /treɪn/ — sounds like **TRAYN**
+135. should | /ʃʊd/ — sounds like **SHOOD**
+136. ways | /weɪz/ — sounds like **WAYZ**
+137. bring | /brɪŋ/ — sounds like **BRING**
+138. closer | /ˈkləʊzər/ — sounds like **KLOH-zur**
+139. arteries | /ˈɑːrtəriz/ — sounds like **AR-tuh-reez**
+140. carry | /ˈkæri/ — sounds like **KAR-ee**
+141. oxygenated | /ˈɒksɪdʒəneɪtɪd/ — sounds like **OK-sih-juh-nay-tid**
+142. heart | /hɑːrt/ — sounds like **HART**
+143. art | /ɑːrt/ — sounds like **ART**
+144. museum | /mjuːˈziːəm/ — sounds like **myoo-ZEE-uhm**
+145. theater | /ˈθiːətər/ — sounds like **THEE-uh-tur**
+146. throughout | /θruːˈaʊt/ — sounds like **throo-OWT**
+147. power | /ˈpaʊər/ — sounds like **POW-ur**
+148. cut | /kʌt/ — sounds like **KUT**
+149. appropriate | /əˈprəʊpriət/ — sounds like **uh-PROH-pree-uht**
+150. work | /wɜːrk/ — sounds like **WURK**
+151. cause | /kɔːz/ — sounds like **KAWZ**
+152. available | /əˈveɪləbəl/ — sounds like **uh-VAY-luh-buhl**

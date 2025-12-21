@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-12-21T00:57:50.569Z",
-    "totalTerms": 118,
+    "generated": "2025-12-21T01:06:25.570Z",
+    "totalTerms": 150,
     "source": "pte-hard-pronunciation-words",
     "description": "Auto-discovered vocabulary book: pte-hard-pronunciation-words",
     "version": "1.0",
@@ -1896,6 +1896,518 @@
         }
       },
       "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "assignment",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈsaɪnmənt",
+          "phonetic": "uh-SYN-muhnt"
+        },
+        "american": {
+          "ipa": "əˈsaɪnmənt",
+          "phonetic": "uh-SYN-muhnt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "use",
+      "pronunciation": {
+        "british": {
+          "ipa": "juːz",
+          "phonetic": "YOOZ"
+        },
+        "american": {
+          "ipa": "juːz",
+          "phonetic": "YOOZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "formal",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɔːrməl",
+          "phonetic": "FOR-muhl"
+        },
+        "american": {
+          "ipa": "ˈfɔːrməl",
+          "phonetic": "FOR-muhl"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "words",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɜːrdz",
+          "phonetic": "WURDZ"
+        },
+        "american": {
+          "ipa": "wɜːrdz",
+          "phonetic": "WURDZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "seminar",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsemɪnɑːr",
+          "phonetic": "SEM-ih-nar"
+        },
+        "american": {
+          "ipa": "ˈsemɪnɑːr",
+          "phonetic": "SEM-ih-nar"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "require",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈkwaɪər",
+          "phonetic": "rih-KWY-ur"
+        },
+        "american": {
+          "ipa": "rɪˈkwaɪər",
+          "phonetic": "rih-KWY-ur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "raise",
+      "pronunciation": {
+        "british": {
+          "ipa": "reɪz",
+          "phonetic": "RAYZ"
+        },
+        "american": {
+          "ipa": "reɪz",
+          "phonetic": "RAYZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "hat",
+      "pronunciation": {
+        "british": {
+          "ipa": "hæt",
+          "phonetic": "HAT"
+        },
+        "american": {
+          "ipa": "hæt",
+          "phonetic": "HAT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "restaurant",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈrestərɒnt",
+          "phonetic": "REST-uh-rahnt"
+        },
+        "american": {
+          "ipa": "ˈrestərɒnt",
+          "phonetic": "REST-uh-rahnt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "put",
+      "pronunciation": {
+        "british": {
+          "ipa": "pʊt",
+          "phonetic": "PUT"
+        },
+        "american": {
+          "ipa": "pʊt",
+          "phonetic": "PUT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "reports",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈpɔːrts",
+          "phonetic": "rih-PORTS"
+        },
+        "american": {
+          "ipa": "rɪˈpɔːrts",
+          "phonetic": "rih-PORTS"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "written",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈrɪtən",
+          "phonetic": "RIT-uhn"
+        },
+        "american": {
+          "ipa": "ˈrɪtən",
+          "phonetic": "RIT-uhn"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "apply",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈplaɪ",
+          "phonetic": "uh-PLY"
+        },
+        "american": {
+          "ipa": "əˈplaɪ",
+          "phonetic": "uh-PLY"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "driver's license",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdraɪvərz ˈlaɪsəns",
+          "phonetic": "DRY-vurz LY-suhns"
+        },
+        "american": {
+          "ipa": "ˈdraɪvərz ˈlaɪsəns",
+          "phonetic": "DRY-vurz LY-suhns"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "train",
+      "pronunciation": {
+        "british": {
+          "ipa": "treɪn",
+          "phonetic": "TRAYN"
+        },
+        "american": {
+          "ipa": "treɪn",
+          "phonetic": "TRAYN"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "should",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʃʊd",
+          "phonetic": "SHOOD"
+        },
+        "american": {
+          "ipa": "ʃʊd",
+          "phonetic": "SHOOD"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "ways",
+      "pronunciation": {
+        "british": {
+          "ipa": "weɪz",
+          "phonetic": "WAYZ"
+        },
+        "american": {
+          "ipa": "weɪz",
+          "phonetic": "WAYZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "bring",
+      "pronunciation": {
+        "british": {
+          "ipa": "brɪŋ",
+          "phonetic": "BRING"
+        },
+        "american": {
+          "ipa": "brɪŋ",
+          "phonetic": "BRING"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "closer",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkləʊzər",
+          "phonetic": "KLOH-zur"
+        },
+        "american": {
+          "ipa": "ˈkləʊzər",
+          "phonetic": "KLOH-zur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "arteries",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɑːrtəriz",
+          "phonetic": "AR-tuh-reez"
+        },
+        "american": {
+          "ipa": "ˈɑːrtəriz",
+          "phonetic": "AR-tuh-reez"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "carry",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkæri",
+          "phonetic": "KAR-ee"
+        },
+        "american": {
+          "ipa": "ˈkæri",
+          "phonetic": "KAR-ee"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "oxygenated",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɒksɪdʒəneɪtɪd",
+          "phonetic": "OK-sih-juh-nay-tid"
+        },
+        "american": {
+          "ipa": "ˈɒksɪdʒəneɪtɪd",
+          "phonetic": "OK-sih-juh-nay-tid"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "heart",
+      "pronunciation": {
+        "british": {
+          "ipa": "hɑːrt",
+          "phonetic": "HART"
+        },
+        "american": {
+          "ipa": "hɑːrt",
+          "phonetic": "HART"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "art",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɑːrt",
+          "phonetic": "ART"
+        },
+        "american": {
+          "ipa": "ɑːrt",
+          "phonetic": "ART"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "museum",
+      "pronunciation": {
+        "british": {
+          "ipa": "mjuːˈziːəm",
+          "phonetic": "myoo-ZEE-uhm"
+        },
+        "american": {
+          "ipa": "mjuːˈziːəm",
+          "phonetic": "myoo-ZEE-uhm"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "throughout",
+      "pronunciation": {
+        "british": {
+          "ipa": "θruːˈaʊt",
+          "phonetic": "throo-OWT"
+        },
+        "american": {
+          "ipa": "θruːˈaʊt",
+          "phonetic": "throo-OWT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "power",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpaʊər",
+          "phonetic": "POW-ur"
+        },
+        "american": {
+          "ipa": "ˈpaʊər",
+          "phonetic": "POW-ur"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "cut",
+      "pronunciation": {
+        "british": {
+          "ipa": "kʌt",
+          "phonetic": "KUT"
+        },
+        "american": {
+          "ipa": "kʌt",
+          "phonetic": "KUT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "appropriate",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈprəʊpriət",
+          "phonetic": "uh-PROH-pree-uht"
+        },
+        "american": {
+          "ipa": "əˈprəʊpriət",
+          "phonetic": "uh-PROH-pree-uht"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "work",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɜːrk",
+          "phonetic": "WURK"
+        },
+        "american": {
+          "ipa": "wɜːrk",
+          "phonetic": "WURK"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "cause",
+      "pronunciation": {
+        "british": {
+          "ipa": "kɔːz",
+          "phonetic": "KAWZ"
+        },
+        "american": {
+          "ipa": "kɔːz",
+          "phonetic": "KAWZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "available",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈveɪləbəl",
+          "phonetic": "uh-VAY-luh-buhl"
+        },
+        "american": {
+          "ipa": "əˈveɪləbəl",
+          "phonetic": "uh-VAY-luh-buhl"
+        }
+      },
+      "difficulty": "normal",
       "category": "pte-hard-pronunciation-words",
       "source": "pte-hard-pronunciation-words"
     }

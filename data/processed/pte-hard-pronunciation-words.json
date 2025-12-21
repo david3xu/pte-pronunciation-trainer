@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-12-21T03:00:53.458Z",
-    "totalTerms": 214,
+    "generated": "2025-12-21T03:10:58.788Z",
+    "totalTerms": 237,
     "source": "pte-hard-pronunciation-words",
     "description": "Auto-discovered vocabulary book: pte-hard-pronunciation-words",
     "version": "1.0",
@@ -3432,6 +3432,374 @@
         }
       },
       "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "parliamentary",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌpɑːrləˈmentəri",
+          "phonetic": "par-luh-MEN-tuh-ree"
+        },
+        "american": {
+          "ipa": "ˌpɑːrləˈmentəri",
+          "phonetic": "par-luh-MEN-tuh-ree"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "campus",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkæmpəs",
+          "phonetic": "KAM-puhs"
+        },
+        "american": {
+          "ipa": "ˈkæmpəs",
+          "phonetic": "KAM-puhs"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "growth",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɡrəʊθ",
+          "phonetic": "GROHTH"
+        },
+        "american": {
+          "ipa": "ɡrəʊθ",
+          "phonetic": "GROHTH"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "text",
+      "pronunciation": {
+        "british": {
+          "ipa": "tekst",
+          "phonetic": "TEKST"
+        },
+        "american": {
+          "ipa": "tekst",
+          "phonetic": "TEKST"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "grow",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɡrəʊ",
+          "phonetic": "GROH"
+        },
+        "american": {
+          "ipa": "ɡrəʊ",
+          "phonetic": "GROH"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "considered",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈsɪdərd",
+          "phonetic": "kuhn-SID-urd"
+        },
+        "american": {
+          "ipa": "kənˈsɪdərd",
+          "phonetic": "kuhn-SID-urd"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "astrophysics",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌæstrəʊˈfɪzɪks",
+          "phonetic": "as-troh-FIZ-iks"
+        },
+        "american": {
+          "ipa": "ˌæstrəʊˈfɪzɪks",
+          "phonetic": "as-troh-FIZ-iks"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "ensure",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈʃʊər",
+          "phonetic": "in-SHOOR"
+        },
+        "american": {
+          "ipa": "ɪnˈʃʊər",
+          "phonetic": "in-SHOOR"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "irrelevant",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪˈreləvənt",
+          "phonetic": "ih-REL-uh-vuhnt"
+        },
+        "american": {
+          "ipa": "ɪˈreləvənt",
+          "phonetic": "ih-REL-uh-vuhnt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "borrow",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbɒrəʊ",
+          "phonetic": "BOR-oh"
+        },
+        "american": {
+          "ipa": "ˈbɒrəʊ",
+          "phonetic": "BOR-oh"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "books",
+      "pronunciation": {
+        "british": {
+          "ipa": "bʊks",
+          "phonetic": "BOOKS"
+        },
+        "american": {
+          "ipa": "bʊks",
+          "phonetic": "BOOKS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "click",
+      "pronunciation": {
+        "british": {
+          "ipa": "klɪk",
+          "phonetic": "KLIK"
+        },
+        "american": {
+          "ipa": "klɪk",
+          "phonetic": "KLIK"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "logo",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈləʊɡəʊ",
+          "phonetic": "LOH-goh"
+        },
+        "american": {
+          "ipa": "ˈləʊɡəʊ",
+          "phonetic": "LOH-goh"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "above",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈbʌv",
+          "phonetic": "uh-BUV"
+        },
+        "american": {
+          "ipa": "əˈbʌv",
+          "phonetic": "uh-BUV"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "well",
+      "pronunciation": {
+        "british": {
+          "ipa": "wel",
+          "phonetic": "WEL"
+        },
+        "american": {
+          "ipa": "wel",
+          "phonetic": "WEL"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "findings",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfaɪndɪŋz",
+          "phonetic": "FYN-dingz"
+        },
+        "american": {
+          "ipa": "ˈfaɪndɪŋz",
+          "phonetic": "FYN-dingz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "initial",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪˈnɪʃəl",
+          "phonetic": "ih-NISH-uhl"
+        },
+        "american": {
+          "ipa": "ɪˈnɪʃəl",
+          "phonetic": "ih-NISH-uhl"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "southern",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsʌðərn",
+          "phonetic": "SUH-thurn"
+        },
+        "american": {
+          "ipa": "ˈsʌðərn",
+          "phonetic": "SUH-thurn"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "station",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsteɪʃən",
+          "phonetic": "STAY-shuhn"
+        },
+        "american": {
+          "ipa": "ˈsteɪʃən",
+          "phonetic": "STAY-shuhn"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "engineering",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌendʒɪˈnɪərɪŋ",
+          "phonetic": "en-jih-NEER-ing"
+        },
+        "american": {
+          "ipa": "ˌendʒɪˈnɪərɪŋ",
+          "phonetic": "en-jih-NEER-ing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "under",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈʌndər",
+          "phonetic": "UN-dur"
+        },
+        "american": {
+          "ipa": "ˈʌndər",
+          "phonetic": "UN-dur"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "lunch",
+      "pronunciation": {
+        "british": {
+          "ipa": "lʌntʃ",
+          "phonetic": "LUNCH"
+        },
+        "american": {
+          "ipa": "lʌntʃ",
+          "phonetic": "LUNCH"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-hard-pronunciation-words",
+      "source": "pte-hard-pronunciation-words"
+    },
+    {
+      "english": "noon",
+      "pronunciation": {
+        "british": {
+          "ipa": "nuːn",
+          "phonetic": "NOON"
+        },
+        "american": {
+          "ipa": "nuːn",
+          "phonetic": "NOON"
+        }
+      },
+      "difficulty": "easy",
       "category": "pte-hard-pronunciation-words",
       "source": "pte-hard-pronunciation-words"
     }

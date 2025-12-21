@@ -460,10 +460,15 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                 />
               </Flex>
 
-              {/* Theme (placeholder for future) */}
+              {/* Theme */}
               <Flex direction="column" gap="2">
                 <Text size="3" weight="medium">Theme</Text>
-                <Select.Root defaultValue="light">
+                <Select.Root
+                  value={settings.theme || 'auto'}
+                  onValueChange={(value) =>
+                    updateSetting('theme', value as 'light' | 'dark' | 'auto')
+                  }
+                >
                   <Select.Trigger />
                   <Select.Content>
                     <Select.Item value="light">Light</Select.Item>

@@ -140,6 +140,7 @@ export const useAppStore = create<AppState>()(
             ttsVoice: null,
             vocabRepeatCount: 1, // Default: speak each word once
             difficultyFilter: 'all',
+            theme: 'auto', // Default: follow system preference
             isPanelOpen: false,
             updateSetting: (key, value) => {
               // Track setting changes
@@ -163,6 +164,7 @@ export const useAppStore = create<AppState>()(
                 ttsVoice: null,
                 vocabRepeatCount: 1, // Default: speak each word once
                 difficultyFilter: 'all',
+                theme: 'auto', // Default: follow system preference
                 isPanelOpen: false,
               }
             })),

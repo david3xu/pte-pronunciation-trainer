@@ -314,15 +314,18 @@ export const AppContent: React.FC = () => {
     threshold: 50,
   });
 
+  // Compute the appearance based on theme setting
+  const computedAppearance = settings.theme === 'auto' ? undefined : settings.theme;
+
   return (
     <Theme
-      appearance="dark"
+      appearance={computedAppearance}
       accentColor="indigo"
       grayColor="slate"
       radius="medium"
       scaling="100%"
     >
-      <div className="react-app min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 p-4 sm:p-8" {...handlers}>
+      <div className={`react-app min-h-screen p-4 sm:p-8 ${settings.theme === 'light' ? 'bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100' : 'bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900'}`} {...handlers}>
         <div className="max-w-7xl mx-auto">
       {/* Modals - Render first for proper z-index layering */}
           {/* Header - Minimal like PTE branch */}

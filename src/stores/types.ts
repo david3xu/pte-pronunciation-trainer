@@ -95,6 +95,7 @@ export interface SettingsState {
   difficultyFilter: Difficulty | 'all';
 
   // UI settings
+  theme: 'light' | 'dark' | 'auto';
   isPanelOpen: boolean;
 
   // Actions

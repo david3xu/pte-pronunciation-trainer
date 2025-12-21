@@ -2,7 +2,7 @@
 
 **Category**: PTE Hard Pronunciation
 **Difficulty**: Hard
-**Total**: 253 commonly mispronounced words
+**Total**: 278 commonly mispronounced words
 
 ---
 
@@ -259,3 +259,28 @@
 251. notes | /nəʊts/ — sounds like **NOHTS**
 252. cafeteria | /ˌkæfəˈtɪəriə/ — sounds like **kaf-uh-TEER-ee-uh**
 253. dictionaries | /ˈdɪkʃənəriz/ — sounds like **DIK-shuh-nair-eez**
+254. give | /ɡɪv/ — sounds like **GIV**
+255. earth | /ɜːrθ/ — sounds like **URTH**
+256. day | /deɪ/ — sounds like **DAY**
+257. planting | /ˈplɑːntɪŋ/ — sounds like **PLAN-ting**
+258. bag | /bæɡ/ — sounds like **BAG**
+259. newspapers | /ˈnjuːspeɪpərz/ — sounds like **NYOOS-pay-purz**
+260. world | /wɜːrld/ — sounds like **WURLD**
+261. reported | /rɪˈpɔːrtɪd/ — sounds like **rih-POR-tid**
+262. his | /hɪz/ — sounds like **HIZ**
+263. current | /ˈkʌrənt/ — sounds like **KUR-uhnt**
+264. affairs | /əˈfeərz/ — sounds like **uh-FAIRZ**
+265. require | /rɪˈkwaɪər/ — sounds like **rih-KWY-ur**
+266. know | /nəʊ/ — sounds like **NOH**
+267. things | /θɪŋz/ — sounds like **THINGZ**
+268. rat | /ræt/ — sounds like **RAT**
+269. race | /reɪs/ — sounds like **RAYS**
+270. please | /pliːz/ — sounds like **PLEEZ**
+271. remain | /rɪˈmeɪn/ — sounds like **rih-MAYN**
+272. seated | /ˈsiːtɪd/ — sounds like **SEE-tid**
+273. website | /ˈwebsaɪt/ — sounds like **WEB-syt**
+274. submitted | /səbˈmɪtɪd/ — sounds like **suhb-MIT-id**
+275. prior | /ˈpraɪər/ — sounds like **PRY-ur**
+276. from | /frɒm/ — sounds like **FRAHM**
+277. supposed | /səˈpəʊzd/ — sounds like **suh-POHZD**
+278. assemble | /əˈsembəl/ — sounds like **uh-SEM-buhl**

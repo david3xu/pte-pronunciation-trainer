@@ -130,7 +130,20 @@ const AudioControls: React.FC = () => {
 
         try {
           if (appConfig.get('tts.autoSpeak')) {
-            await ttsEngine.speak(cleanedText, null, settings.ttsRate);
+            // Repeat word based on vocabRepeatCount setting (1, 2, or 3 times)
+            const repeatCount = settings.vocabRepeatCount || 1;
+            for (let i = 0; i < repeatCount; i++) {
+              // Check if still playing before each repeat
+              if (!audio.isAutoPlaying || audio.isPaused || !autoPlayRef.current) {
+                break;
+              }
+              await ttsEngine.speak(cleanedText, null, settings.ttsRate);
+
+              // Small delay between repeats (only if not the last repeat)
+              if (i < repeatCount - 1) {
+                await new Promise(resolve => setTimeout(resolve, appConfig.get('delays.autoPlayBetweenWords') || 600));
+              }
+            }
           }
 
           // After speaking, move to next if auto-play is still active

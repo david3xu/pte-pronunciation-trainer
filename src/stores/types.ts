@@ -89,6 +89,7 @@ export interface SettingsState {
   showPhonetic: boolean;
   ttsRate: number;
   ttsVoice: string | null;
+  vocabRepeatCount: 1 | 2 | 3; // Number of times to repeat each word during practice
 
   // Difficulty filter
   difficultyFilter: Difficulty | 'all';

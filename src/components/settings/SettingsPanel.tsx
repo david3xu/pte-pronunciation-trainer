@@ -398,6 +398,27 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                 />
               </Flex>
 
+              {/* Word Repeat Count */}
+              <Flex direction="column" gap="2">
+                <Text size="3" weight="medium">Word Repeat Count</Text>
+                <Text size="2" color="gray" mb="1">
+                  Number of times to repeat each word during auto-play
+                </Text>
+                <Select.Root
+                  value={String(settings.vocabRepeatCount || 1)}
+                  onValueChange={(value) =>
+                    updateSetting('vocabRepeatCount', Number(value) as 1 | 2 | 3)
+                  }
+                >
+                  <Select.Trigger />
+                  <Select.Content>
+                    <Select.Item value="1">1 time (default)</Select.Item>
+                    <Select.Item value="2">2 times</Select.Item>
+                    <Select.Item value="3">3 times</Select.Item>
+                  </Select.Content>
+                </Select.Root>
+              </Flex>
+
               {/* TTS Voice Selection */}
               <Flex direction="column" gap="2">
                 <Text size="3" weight="medium">TTS Voice</Text>

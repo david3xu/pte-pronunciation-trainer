@@ -138,6 +138,7 @@ export const useAppStore = create<AppState>()(
             showPhonetic: true,
             ttsRate: 1.0,
             ttsVoice: null,
+            vocabRepeatCount: 1, // Default: speak each word once
             difficultyFilter: 'all',
             isPanelOpen: false,
             updateSetting: (key, value) => {
@@ -160,6 +161,7 @@ export const useAppStore = create<AppState>()(
                 showPhonetic: true,
                 ttsRate: 1.0,
                 ttsVoice: null,
+                vocabRepeatCount: 1, // Default: speak each word once
                 difficultyFilter: 'all',
                 isPanelOpen: false,
               }

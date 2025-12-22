@@ -2,7 +2,7 @@
 
 **Category**: PTE WFD Essential Vocabulary
 **Difficulty**: Hard
-**Total**: 90 words for Write From Dictation
+**Total**: 177 words for Write From Dictation
 
 > WFD必备词汇。本单词本收集了真实考试中出现过的 Write From Dictation 难词。要求做到听到单词读音即可马上写出单词的正确拼写。
 
@@ -98,3 +98,90 @@
 88. wildly | /ˈwaɪldli/ — sounds like **WYLD-lee**
 89. genre | /ˈʒɒnrə/ — sounds like **ZHON-ruh**
 90. accessible | /əkˈsesɪbəl/ — sounds like **ak-SES-ih-bul**
+91. neuroscience | /ˈnjʊərəʊsaɪəns/ — sounds like **NYOOR-oh-sy-uns**
+92. pesticides | /ˈpestɪsaɪdz/ — sounds like **PES-tih-sydz**
+93. variation | /ˌveəriˈeɪʃən/ — sounds like **vair-ee-AY-shun**
+94. programmed | /ˈprəʊɡræmd/ — sounds like **PROH-gramd**
+95. explanations | /ˌekspləˈneɪʃənz/ — sounds like **eks-pluh-NAY-shunz**
+96. therapeutic | /ˌθerəˈpjuːtɪk/ — sounds like **ther-uh-PYOO-tik**
+97. intense | /ɪnˈtens/ — sounds like **in-TENS**
+98. urgency | /ˈɜːdʒənsi/ — sounds like **UR-jun-see**
+99. hook | /hʊk/ — sounds like **huk**
+100. neighboring | /ˈneɪbərɪŋ/ — sounds like **NAY-bur-ing**
+101. principles | /ˈprɪnsɪpəlz/ — sounds like **PRIN-sih-pulz**
+102. legislative | /ˈledʒɪslətɪv/ — sounds like **LEJ-is-lay-tiv**
+103. proliferation | /prəˌlɪfəˈreɪʃən/ — sounds like **pruh-lif-uh-RAY-shun**
+104. overridable | /ˌəʊvəˈraɪdəbəl/ — sounds like **oh-vur-RY-duh-bul**
+105. multinationals | /ˌmʌltiˈnæʃənəlz/ — sounds like **mul-tee-NASH-un-ulz**
+106. ancestors | /ˈænsestəz/ — sounds like **AN-ses-turz**
+107. panic | /ˈpænɪk/ — sounds like **PAN-ik**
+108. tempering | /ˈtempərɪŋ/ — sounds like **TEM-pur-ing**
+109. immigrant | /ˈɪmɪɡrənt/ — sounds like **IM-ih-grunt**
+110. objectivism | /əbˈdʒektɪvɪzəm/ — sounds like **ob-JEK-tih-viz-um**
+111. traces | /ˈtreɪsɪz/ — sounds like **TRAY-siz**
+112. symbolic | /sɪmˈbɒlɪk/ — sounds like **sim-BOL-ik**
+113. liberating | /ˈlɪbəreɪtɪŋ/ — sounds like **LIB-ur-ay-ting**
+114. judicial | /dʒuːˈdɪʃəl/ — sounds like **joo-DISH-ul**
+115. conventional | /kənˈvenʃənəl/ — sounds like **kun-VEN-shun-ul**
+116. genes | /dʒiːnz/ — sounds like **jeenz**
+117. symbols | /ˈsɪmbəlz/ — sounds like **SIM-bulz**
+118. appreciation | /əˌpriːʃiˈeɪʃən/ — sounds like **uh-pree-shee-AY-shun**
+119. controversial | /ˌkɒntrəˈvɜːʃəl/ — sounds like **kon-truh-VUR-shul**
+120. guardian | /ˈɡɑːdiən/ — sounds like **GAR-dee-un**
+121. authorities | /ɔːˈθɒrɪtiz/ — sounds like **aw-THOR-ih-teez**
+122. bomb | /bɒm/ — sounds like **bom**
+123. indigenous | /ɪnˈdɪdʒɪnəs/ — sounds like **in-DIJ-ih-nus**
+124. criticizing | /ˈkrɪtɪsaɪzɪŋ/ — sounds like **KRIT-ih-sy-zing**
+125. processors | /ˈprəʊsesəz/ — sounds like **PROH-ses-urz**
+126. moral | /ˈmɒrəl/ — sounds like **MOR-ul**
+127. consistent | /kənˈsɪstənt/ — sounds like **kun-SIS-tunt**
+128. democracy | /dɪˈmɒkrəsi/ — sounds like **dih-MOK-ruh-see**
+129. landscape | /ˈlændskeɪp/ — sounds like **LAND-skayp**
+130. marital | /ˈmærɪtəl/ — sounds like **MAR-ih-tul**
+131. perspectives | /pəˈspektɪvz/ — sounds like **pur-SPEK-tivz**
+132. synthesizing | /ˈsɪnθəsaɪzɪŋ/ — sounds like **SIN-thuh-sy-zing**
+133. provoking | /prəˈvəʊkɪŋ/ — sounds like **pruh-VOH-king**
+134. era | /ˈɪərə/ — sounds like **EER-uh**
+135. legislation | /ˌledʒɪsˈleɪʃən/ — sounds like **lej-is-LAY-shun**
+136. Aboriginal | /ˌæbəˈrɪdʒɪnəl/ — sounds like **ab-uh-RIJ-ih-nul**
+137. campaign | /kæmˈpeɪn/ — sounds like **kam-PAYN**
+138. persuasive | /pəˈsweɪsɪv/ — sounds like **pur-SWAY-siv**
+139. disciplinary | /ˈdɪsɪplɪnəri/ — sounds like **DIS-ih-plin-air-ee**
+140. linguists | /ˈlɪŋɡwɪsts/ — sounds like **LING-gwists**
+141. peasants | /ˈpezənts/ — sounds like **PEZ-unts**
+142. responsibility | /rɪˌspɒnsɪˈbɪlɪti/ — sounds like **rih-spon-sih-BIL-ih-tee**
+143. psychological | /ˌsaɪkəˈlɒdʒɪkəl/ — sounds like **sy-kuh-LOJ-ih-kul**
+144. shrinking | /ˈʃrɪŋkɪŋ/ — sounds like **SHRING-king**
+145. riding | /ˈraɪdɪŋ/ — sounds like **RY-ding**
+146. immigrants | /ˈɪmɪɡrənts/ — sounds like **IM-ih-grunts**
+147. absolutism | /ˈæbsəluːtɪzəm/ — sounds like **AB-suh-loo-tiz-um**
+148. constitution | /ˌkɒnstɪˈtjuːʃən/ — sounds like **kon-stih-TOO-shun**
+149. roller | /ˈrəʊlə/ — sounds like **ROH-lur**
+150. precipitation | /prɪˌsɪpɪˈteɪʃən/ — sounds like **prih-sip-ih-TAY-shun**
+151. pasting | /ˈpeɪstɪŋ/ — sounds like **PAY-sting**
+152. bacterium | /bækˈtɪəriəm/ — sounds like **bak-TEER-ee-um**
+153. exercise | /ˈeksəsaɪz/ — sounds like **EK-sur-syz**
+154. Shakespeare | /ˈʃeɪkspɪə/ — sounds like **SHAYK-speer**
+155. disciplines | /ˈdɪsɪplɪnz/ — sounds like **DIS-ih-plinz**
+156. grabbing | /ˈɡræbɪŋ/ — sounds like **GRAB-ing**
+157. contentment | /kənˈtentmənt/ — sounds like **kun-TENT-munt**
+158. reversed | /rɪˈvɜːst/ — sounds like **rih-VURST**
+159. refrigerators | /rɪˈfrɪdʒəreɪtəz/ — sounds like **rih-FRIJ-uh-ray-turz**
+160. reversing | /rɪˈvɜːsɪŋ/ — sounds like **rih-VUR-sing**
+161. circumscribing | /ˈsɜːkəmskraɪbɪŋ/ — sounds like **SUR-kum-skry-bing**
+162. refugees | /ˌrefjʊˈdʒiːz/ — sounds like **ref-yoo-JEEZ**
+163. hypothetical | /ˌhaɪpəˈθetɪkəl/ — sounds like **hy-puh-THET-ih-kul**
+164. obese | /əʊˈbiːs/ — sounds like **oh-BEES**
+165. senate | /ˈsenɪt/ — sounds like **SEN-it**
+166. consciously | /ˈkɒnʃəsli/ — sounds like **KON-shus-lee**
+167. synthetic | /sɪnˈθetɪk/ — sounds like **sin-THET-ik**
+168. genetic | /dʒəˈnetɪk/ — sounds like **juh-NET-ik**
+169. cellular | /ˈseljʊlə/ — sounds like **SEL-yoo-lur**
+170. dietary | /ˈdaɪətəri/ — sounds like **DY-uh-tair-ee**
+171. pragmatism | /ˈpræɡmətɪzəm/ — sounds like **PRAG-muh-tiz-um**
+172. coaster | /ˈkəʊstə/ — sounds like **KOH-stur**
+173. freezer | /ˈfriːzə/ — sounds like **FREE-zur**
+174. circumscribe | /ˈsɜːkəmskraɪb/ — sounds like **SUR-kum-skryb**
+175. erosion | /ɪˈrəʊʒən/ — sounds like **ih-ROH-zhun**
+176. divisions | /dɪˈvɪʒənz/ — sounds like **dih-VIZH-unz**
+177. advocating | /ˈædvəkeɪtɪŋ/ — sounds like **AD-vuh-kay-ting**

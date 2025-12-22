@@ -58,6 +58,7 @@ export class AppConfig {
               'pte-essay-b1-examples': 'data/processed/pte-essay-b1-examples-vocabulary.json',
               'pte-hard-for-rs': 'data/processed/pte-hard-for-rs.json',
               'pte-hard-fib-listening': 'data/processed/pte-hard-fib-listening.json',
+              'pte-hard-rs-vocabulary': 'data/processed/pte-hard-rs-vocabulary.json',
 
               // Practice modes
               'rs': 'data/processed/pte-repeat-sentence.json',
@@ -93,6 +94,7 @@ export class AppConfig {
           { id: 'pte-essay-b1-examples', name: 'PTE Essay B1 Examples', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-hard-for-rs', name: 'PTE Hard for RS', category: 'vocabulary', difficulty: 'hard' },
           { id: 'pte-hard-fib-listening', name: 'PTE Hard FIB Listening', category: 'vocabulary', difficulty: 'hard' },
+          { id: 'pte-hard-rs-vocabulary', name: 'PTE Hard RS Vocab', category: 'vocabulary', difficulty: 'hard' },
 
           // Practice modes (3 total)
           { id: 'rs', name: 'Repeat Sentence', category: 'practice', description: '620 practice sentences' },

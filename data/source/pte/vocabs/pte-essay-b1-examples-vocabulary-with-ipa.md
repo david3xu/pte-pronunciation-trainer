@@ -1,7 +1,7 @@
 # PTE Essay B1 Examples - Fill-in Terms Vocabulary
 
 **Purpose:** ALL fill-in terms from Template B1 Essay Examples collection
-**Total Terms:** 211 unique terms (ordered by example)
+**Total Terms:** 258 unique terms (ordered by example)
 **Format:** By example order with IPA pronunciation
 **Source:** essay-examples-template-b1.md
 
@@ -288,75 +288,81 @@
 
 ---
 
-## Example 15: Employee Decision Participation
+## Example 15: Employee Decision Making
 
-212. **employee decision participation** | /ɪmˈplɔɪiː dɪˈsɪʒən pɑːˌtɪsɪˈpeɪʃən/ — sounds like **im-PLOY-ee dih-SIZH-un par-tis-ih-PAY-shun**
-213. **employers** | /ɪmˈplɔɪəz/ — sounds like **im-PLOY-urz**
-214. **employees** | /ɪmˈplɔɪiːz/ — sounds like **im-ploy-EEZ**
-215. **employee loyalty and motivation** | /ɪmˈplɔɪiː ˈlɔɪəlti ənd ˌməʊtɪˈveɪʃən/ — sounds like **im-PLOY-ee LOY-ul-tee und moh-tih-VAY-shun**
-216. **engagement and belonging** | /ɪnˈɡeɪdʒmənt ənd bɪˈlɒŋɪŋ/ — sounds like **in-GAYJ-ment und bih-LONG-ing**
-217. **better business ideas and revenue** | /ˈbetə ˈbɪznəs aɪˈdɪəz ənd ˈrevənjuː/ — sounds like **BET-ur BIZ-nus eye-DEE-uhz und REV-uh-nyoo**
-218. **customer satisfaction** | /ˈkʌstəmə ˌsætɪsˈfækʃən/ — sounds like **KUS-tuh-mur sat-is-FAK-shun**
-219. **management research** | /ˈmænɪdʒmənt rɪˈsɜːtʃ/ — sounds like **MAN-ij-ment rih-SURCH**
-220. **stronger work commitment** | /ˈstrɒŋɡə wɜːk kəˈmɪtmənt/ — sounds like **STRONG-ur WURK kuh-MIT-ment**
-221. **conflicts and disagreements** | /ˈkɒnflɪkts ənd ˌdɪsəˈɡriːmənts/ — sounds like **KON-flikts und dis-uh-GREE-ments**
-222. **longer meeting times** | /ˈlɒŋɡə ˈmiːtɪŋ taɪmz/ — sounds like **LONG-ur MEE-ting TYMZ**
-223. **slower work progress** | /ˈsləʊə wɜːk ˈprəʊɡres/ — sounds like **SLOH-ur WURK PROH-gres**
-224. **business experts** | /ˈbɪznəs ˈekspɜːts/ — sounds like **BIZ-nus EK-spurts**
-225. **companies and managers** | /ˈkʌmpəniz ənd ˈmænɪdʒəz/ — sounds like **KUM-puh-neez und MAN-ij-urz**
+212. **employee participation in decision making** | /ɪmˈplɔɪiː pɑːˌtɪsɪˈpeɪʃən ɪn dɪˈsɪʒən ˈmeɪkɪŋ/ — sounds like **im-PLOY-ee par-tis-ih-PAY-shun in dih-SIZH-un MAY-king**
+213. **employees** | /ɪmˈplɔɪiːz/ — sounds like **im-ploy-EEZ**
+214. **companies** | /ˈkʌmpəniz/ — sounds like **KUM-puh-neez**
+215. **higher employee loyalty** | /ˈhaɪə ɪmˈplɔɪiː ˈlɔɪəlti/ — sounds like **HY-ur im-PLOY-ee LOY-ul-tee**
+216. **stronger workplace engagement** | /ˈstrɒŋɡə ˈwɜːkpleɪs ɪnˈɡeɪdʒmənt/ — sounds like **STRONG-ur WURK-plays in-GAYJ-ment**
+217. **better business suggestions** | /ˈbetə ˈbɪznəs səˈdʒestʃənz/ — sounds like **BET-ur BIZ-nus suh-JES-chunz**
+218. **creative ideas** | /kriːˈeɪtɪv aɪˈdɪəz/ — sounds like **kree-AY-tiv eye-DEE-uhz**
+219. **increased company revenue** | /ɪnˈkriːst ˈkʌmpəni ˈrevənjuː/ — sounds like **in-KREEST KUM-puh-nee REV-uh-nyoo**
+220. **improved customer satisfaction** | /ɪmˈpruːvd ˈkʌstəmə ˌsætɪsˈfækʃən/ — sounds like **im-PROOVD KUS-tuh-mur sat-is-FAK-shun**
+221. **business research** | /ˈbɪznəs rɪˈsɜːtʃ/ — sounds like **BIZ-nus rih-SURCH**
+222. **greater motivation** | /ˈɡreɪtə ˌməʊtɪˈveɪʃən/ — sounds like **GRAY-tur moh-tih-VAY-shun**
+223. **a stronger sense of belonging** | /ə ˈstrɒŋɡə sens əv bɪˈlɒŋɪŋ/ — sounds like **uh STRONG-ur SENS uv bih-LONG-ing**
+224. **workplace conflicts** | /ˈwɜːkpleɪs ˈkɒnflɪkts/ — sounds like **WURK-plays KON-flikts**
+225. **disagreements between staff and managers** | /ˌdɪsəˈɡriːmənts bɪˈtwiːn stɑːf ənd ˈmænɪdʒəz/ — sounds like **dis-uh-GREE-ments bih-TWEEN STAHF und MAN-ij-urz**
+226. **slower decision processes** | /ˈsləʊə dɪˈsɪʒən ˈprəʊsesɪz/ — sounds like **SLOH-ur dih-SIZH-un PROH-ses-iz**
+227. **reduced efficiency** | /rɪˈdjuːst ɪˈfɪʃənsi/ — sounds like **rih-DYOOST ih-FISH-un-see**
+228. **management studies** | /ˈmænɪdʒmənt ˈstʌdiz/ — sounds like **MAN-ij-ment STUD-eez**
+229. **communication difficulties** | /kəˌmjuːnɪˈkeɪʃən ˈdɪfɪkəltiz/ — sounds like **kuh-myoo-nih-KAY-shun DIF-ih-kul-teez**
+230. **longer meeting times** | /ˈlɒŋɡə ˈmiːtɪŋ taɪmz/ — sounds like **LONG-ur MEE-ting TYMZ**
+231. **companies and managers** | /ˈkʌmpəniz ənd ˈmænɪdʒəz/ — sounds like **KUM-puh-neez und MAN-ij-urz**
 
 ---
 
 ## Example 16: Climate Change - Company and Individual Actions
 
-226. **corporate climate action** | /ˈkɔːpərət ˈklaɪmət ˈækʃən/ — sounds like **KOR-pur-ut KLY-mut AK-shun**
-227. **big companies** | /bɪɡ ˈkʌmpəniz/ — sounds like **BIG KUM-puh-neez**
-228. **individuals** | /ˌɪndɪˈvɪdʒuəlz/ — sounds like **in-dih-VIJ-oo-ulz**
-229. **sustainable operations** | /səˈsteɪnəbəl ˌɒpəˈreɪʃənz/ — sounds like **suh-STAY-nuh-bul op-uh-RAY-shunz**
-230. **lower pollution** | /ˈləʊə pəˈluːʃən/ — sounds like **LOH-ur puh-LOO-shun**
-231. **green research** | /ɡriːn rɪˈsɜːtʃ/ — sounds like **GREEN rih-SURCH**
-232. **clean energy plans** | /kliːn ˈenədʒi plænz/ — sounds like **KLEEN EN-ur-jee PLANZ**
-233. **corporate responsibility** | /ˈkɔːpərət rɪˌspɒnsəˈbɪləti/ — sounds like **KOR-pur-ut rih-spon-suh-BIL-uh-tee**
-234. **public awareness** | /ˈpʌblɪk əˈweənəs/ — sounds like **PUB-lik uh-WAIR-nus**
-235. **green choices** | /ɡriːn ˈtʃɔɪsɪz/ — sounds like **GREEN CHOY-siz**
-236. **sustainable lifestyle** | /səˈsteɪnəbəl ˈlaɪfstaɪl/ — sounds like **suh-STAY-nuh-bul LYF-styl**
-237. **green energy at home** | /ɡriːn ˈenədʒi ət həʊm/ — sounds like **GREEN EN-ur-jee ut HOHM**
-238. **business studies** | /ˈbɪznəs ˈstʌdiz/ — sounds like **BIZ-nus STUD-eez**
-239. **companies, governments, and individuals** | /ˈkʌmpəniz ˈɡʌvənmənts ənd ˌɪndɪˈvɪdʒuəlz/ — sounds like **KUM-puh-neez GUV-urn-ments und in-dih-VIJ-oo-ulz**
+232. **corporate climate action** | /ˈkɔːpərət ˈklaɪmət ˈækʃən/ — sounds like **KOR-pur-ut KLY-mut AK-shun**
+233. **big companies** | /bɪɡ ˈkʌmpəniz/ — sounds like **BIG KUM-puh-neez**
+234. **individuals** | /ˌɪndɪˈvɪdʒuəlz/ — sounds like **in-dih-VIJ-oo-ulz**
+235. **sustainable operations** | /səˈsteɪnəbəl ˌɒpəˈreɪʃənz/ — sounds like **suh-STAY-nuh-bul op-uh-RAY-shunz**
+236. **lower pollution** | /ˈləʊə pəˈluːʃən/ — sounds like **LOH-ur puh-LOO-shun**
+237. **green research** | /ɡriːn rɪˈsɜːtʃ/ — sounds like **GREEN rih-SURCH**
+238. **clean energy plans** | /kliːn ˈenədʒi plænz/ — sounds like **KLEEN EN-ur-jee PLANZ**
+239. **corporate responsibility** | /ˈkɔːpərət rɪˌspɒnsəˈbɪləti/ — sounds like **KOR-pur-ut rih-spon-suh-BIL-uh-tee**
+240. **public awareness** | /ˈpʌblɪk əˈweənəs/ — sounds like **PUB-lik uh-WAIR-nus**
+241. **green choices** | /ɡriːn ˈtʃɔɪsɪz/ — sounds like **GREEN CHOY-siz**
+242. **sustainable lifestyle** | /səˈsteɪnəbəl ˈlaɪfstaɪl/ — sounds like **suh-STAY-nuh-bul LYF-styl**
+243. **green energy at home** | /ɡriːn ˈenədʒi ət həʊm/ — sounds like **GREEN EN-ur-jee ut HOHM**
+244. **business studies** | /ˈbɪznəs ˈstʌdiz/ — sounds like **BIZ-nus STUD-eez**
+245. **companies, governments, and individuals** | /ˈkʌmpəniz ˈɡʌvənmənts ənd ˌɪndɪˈvɪdʒuəlz/ — sounds like **KUM-puh-neez GUV-urn-ments und in-dih-VIJ-oo-ulz**
 
 ---
 
 ## Expanded Terms: Early Marriage (Alternative Arguments)
 
-240. **partner support** | /ˈpɑːtnə səˈpɔːt/ — sounds like **PART-nur suh-PORT**
-241. **solving problems together** | /ˈsɒlvɪŋ ˈprɒbləmz təˈɡeðə/ — sounds like **SOL-ving PROB-lumz tuh-GETH-ur**
-242. **marriage duties** | /ˈmærɪdʒ ˈdjuːtiz/ — sounds like **MAR-ij DOO-teez**
-243. **extra household costs** | /ˈekstrə ˈhaʊshəʊld kɒsts/ — sounds like **EK-struh HOWS-hohld KOSTS**
-244. **marriage problems** | /ˈmærɪdʒ ˈprɒbləmz/ — sounds like **MAR-ij PROB-lumz**
+246. **partner support** | /ˈpɑːtnə səˈpɔːt/ — sounds like **PART-nur suh-PORT**
+247. **solving problems together** | /ˈsɒlvɪŋ ˈprɒbləmz təˈɡeðə/ — sounds like **SOL-ving PROB-lumz tuh-GETH-ur**
+248. **marriage duties** | /ˈmærɪdʒ ˈdjuːtiz/ — sounds like **MAR-ij DOO-teez**
+249. **extra household costs** | /ˈekstrə ˈhaʊshəʊld kɒsts/ — sounds like **EK-struh HOWS-hohld KOSTS**
+250. **marriage problems** | /ˈmærɪdʒ ˈprɒbləmz/ — sounds like **MAR-ij PROB-lumz**
 
 ---
 
 ## Expanded Terms: Television Functions (Specific Examples)
 
-245. **comedies and talk shows** | /ˈkɒmədiz ənd tɔːk ʃəʊz/ — sounds like **KOM-uh-deez und TAWK SHOHZ**
-246. **funny shows** | /ˈfʌni ʃəʊz/ — sounds like **FUN-ee SHOHZ**
-247. **nature shows** | /ˈneɪtʃə ʃəʊz/ — sounds like **NAY-chur SHOHZ**
-248. **calming music** | /ˈkɑːmɪŋ ˈmjuːzɪk/ — sounds like **KAH-ming MYOO-zik**
+251. **comedies and talk shows** | /ˈkɒmədiz ənd tɔːk ʃəʊz/ — sounds like **KOM-uh-deez und TAWK SHOHZ**
+252. **funny shows** | /ˈfʌni ʃəʊz/ — sounds like **FUN-ee SHOHZ**
+253. **nature shows** | /ˈneɪtʃə ʃəʊz/ — sounds like **NAY-chur SHOHZ**
+254. **calming music** | /ˈkɑːmɪŋ ˈmjuːzɪk/ — sounds like **KAH-ming MYOO-zik**
 
 ---
 
 ## Expanded Terms: Work-Life Balance (Cause Analysis)
 
-249. **workplace competition** | /ˈwɜːkpleɪs ˌkɒmpəˈtɪʃən/ — sounds like **WURK-plays kom-puh-TISH-un**
-250. **extra hours and less rest** | /ˈekstrə ˈaʊəz ənd les rest/ — sounds like **EK-struh OW-urz und LES REST**
-251. **high living costs** | /haɪ ˈlɪvɪŋ kɒsts/ — sounds like **HY LIV-ing KOSTS**
-252. **overtime work** | /ˈəʊvətaɪm wɜːk/ — sounds like **OH-vur-tym WURK**
+255. **workplace competition** | /ˈwɜːkpleɪs ˌkɒmpəˈtɪʃən/ — sounds like **WURK-plays kom-puh-TISH-un**
+256. **extra hours and less rest** | /ˈekstrə ˈaʊəz ənd les rest/ — sounds like **EK-struh OW-urz und LES REST**
+257. **high living costs** | /haɪ ˈlɪvɪŋ kɒsts/ — sounds like **HY LIV-ing KOSTS**
+258. **overtime work** | /ˈəʊvətaɪm wɜːk/ — sounds like **OH-vur-tym WURK**
 
 ---
 
 ## Summary Statistics
 
-- **Total unique terms:** 252 terms
+- **Total unique terms:** 258 terms
 - **Organized by:** 16 essay examples + 3 expansion sections
 - **All terms:** Used in actual Template B1 essays
 - **Strategy:** These are ACTUAL fills used in essay examples

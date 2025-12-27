@@ -46,6 +46,12 @@ export default async function handler(
   req: VercelRequest,
   res: VercelResponse
 ) {
+  // Diagnostic logging for debugging
+  console.log('[Polly API] Handler invoked');
+  console.log('[Polly API] AWS_REGION:', process.env['AWS_REGION']);
+  console.log('[Polly API] AWS_ACCESS_KEY_ID exists:', !!process.env['AWS_ACCESS_KEY_ID']);
+  console.log('[Polly API] AWS_SECRET_ACCESS_KEY exists:', !!process.env['AWS_SECRET_ACCESS_KEY']);
+
   // Set CORS headers
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');

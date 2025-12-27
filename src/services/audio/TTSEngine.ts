@@ -450,7 +450,7 @@ export class TTSEngine {
         body: JSON.stringify({
           text,
           voiceId,
-          engine: 'standard', // Using standard for wider region support
+          engine: 'neural', // Neural Amy is available in ap-southeast-2
           languageCode,
           outputFormat: 'mp3',
         }),

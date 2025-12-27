@@ -319,6 +319,13 @@ export class TTSEngine {
 
     console.log(`[TTSEngine] 🎤 speak() called with: "${text}", lang: ${language}, rate: ${customRate}`);
 
+    // Check if premium voice (AWS Polly) is selected
+    const ttsVoice = useAppStore.getState().settings.ttsVoice;
+    if (ttsVoice === 'premium') {
+      console.log('[TTSEngine] 🎯 Using Premium AWS Polly voice');
+      return this.speakWithPolly(text, language);
+    }
+
     // Initialize AudioContext on first speech attempt (user interaction)
     if (!this.audioContextInitialized) {
       this.enableBackgroundAudio();
@@ -415,6 +422,103 @@ export class TTSEngine {
       };
 
       console.log(`[TTSEngine] 🚀 Calling speechSynthesis.speak() for: "${text}"`);
+      this.synth.speak(utterance);
+    });
+  }
+
+  /**
+   * Speak using AWS Polly Premium TTS
+   */
+  private async speakWithPolly(text: string, lang: string | null = null): Promise<void> {
+    try {
+      // Determine voice and language for Polly
+      const voiceId = lang === 'en-AU' ? 'Russell' :
+                      lang === 'en-GB' ? 'Brian' :
+                      'Brian'; // Default to British male
+
+      const languageCode = lang === 'en-AU' ? 'en-AU' :
+                          lang === 'en-GB' ? 'en-GB' :
+                          'en-GB'; // Default to British English
+
+      console.log(`[TTSEngine] 🌐 Calling Polly API with voice: ${voiceId}, lang: ${languageCode}`);
+
+      const response = await fetch('/api/premium-tts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          text,
+          voiceId,
+          engine: 'neural',
+          languageCode,
+          outputFormat: 'mp3',
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!result.success || result.fallback) {
+        console.warn('[TTSEngine] Polly unavailable, falling back to browser TTS');
+        // Fall back to browser TTS
+        return this.speakWithBrowserTTS(text, lang);
+      }
+
+      // Play the audio
+      const audioData = `data:${result.data.contentType};base64,${result.data.audioBase64}`;
+      const audio = new Audio(audioData);
+
+      return new Promise((resolve) => {
+        audio.onended = () => {
+          console.log(`[TTSEngine] ✅ Polly speech ended for: "${text}"`);
+          resolve();
+        };
+        audio.onerror = () => {
+          console.warn('[TTSEngine] Polly audio error, falling back');
+          this.speakWithBrowserTTS(text, lang).then(resolve);
+        };
+        audio.play().catch(() => {
+          console.warn('[TTSEngine] Polly audio play failed, falling back');
+          this.speakWithBrowserTTS(text, lang).then(resolve);
+        });
+      });
+    } catch (error) {
+      console.error('[TTSEngine] Polly error:', error);
+      // Fall back to browser TTS
+      return this.speakWithBrowserTTS(text, lang);
+    }
+  }
+
+  /**
+   * Browser TTS fallback (extracted from speak method)
+   */
+  private speakWithBrowserTTS(text: string, lang: string | null = null): Promise<void> {
+    const language = lang || this.getConfig()?.get('tts.language.default') || 'en-GB';
+
+    return new Promise((resolve) => {
+      if (!('speechSynthesis' in window)) {
+        this.showTTSFallback(text);
+        resolve();
+        return;
+      }
+
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = language;
+      utterance.rate = this.speechRate || 1.0;
+      utterance.volume = 1.0;
+
+      const voices = this.synth.getVoices();
+      const voice = this.selectVoice(voices, lang) || voices[0];
+      if (voice) {
+        utterance.voice = voice;
+      }
+
+      utterance.onend = () => resolve();
+      utterance.onerror = () => {
+        this.showTTSFallback(text);
+        resolve();
+      };
+
       this.synth.speak(utterance);
     });
   }

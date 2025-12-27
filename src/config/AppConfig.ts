@@ -60,6 +60,7 @@ export class AppConfig {
               'pte-hard-fib-listening': 'data/processed/pte-hard-fib-listening.json',
               'pte-hard-rs-vocabulary': 'data/processed/pte-hard-rs-vocabulary.json',
               'pte-hard-wfd-vocabulary': 'data/processed/pte-hard-wfd-vocabulary.json',
+              'pte-di-natural-template': 'data/processed/pte-di-natural-template-vocab.json',
 
               // Practice modes
               'rs': 'data/processed/pte-repeat-sentence.json',
@@ -97,6 +98,7 @@ export class AppConfig {
           { id: 'pte-hard-fib-listening', name: 'PTE Hard FIB Listening', category: 'vocabulary', difficulty: 'hard' },
           { id: 'pte-hard-rs-vocabulary', name: 'PTE Hard RS Vocab', category: 'vocabulary', difficulty: 'hard' },
           { id: 'pte-hard-wfd-vocabulary', name: 'PTE Hard WFD Vocab', category: 'vocabulary', difficulty: 'hard' },
+          { id: 'pte-di-natural-template', name: 'DI Natural Template', category: 'vocabulary', difficulty: 'normal' },
 
           // Practice modes (3 total)
           { id: 'rs', name: 'Repeat Sentence', category: 'practice', description: '620 practice sentences' },
@@ -347,6 +349,17 @@ export class AppConfig {
             dataType: 'shadowing',
             extractorType: 'NaturalDIExtractor',
             inputSubdir: 'di'
+          },
+          {
+            id: 'pte-di-natural-template',
+            input: 'pte-di-natural-template-vocab.md',
+            output: 'pte-di-natural-template-vocabulary.json',
+            category: 'vocabulary',
+            description: 'DI Natural Template vocabulary with IPA for Template 1 & 2',
+            sourceType: 'pte-di-natural-template-vocab',
+            dataType: 'vocabulary',
+            extractorType: 'PTETermsExtractor',
+            inputSubdir: 'vocabs'
           },
           // ... Add more registry entries as needed during migration
         ],

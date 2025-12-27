@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-12-27T13:16:14.460Z",
-    "totalTerms": 26,
+    "generated": "2025-12-27T13:28:45.539Z",
+    "totalTerms": 25,
     "source": "pte-di-natural-template-vocab",
     "description": "Auto-discovered vocabulary book: pte-di-natural-template-vocab",
     "version": "1.0",
@@ -136,22 +136,6 @@
         }
       },
       "difficulty": "hard",
-      "category": "pte-di-natural-template-vocab",
-      "source": "pte-di-natural-template-vocab"
-    },
-    {
-      "english": "Overall",
-      "pronunciation": {
-        "british": {
-          "ipa": "ˌəʊvərˈɔːl",
-          "phonetic": "oh-vur-AWL"
-        },
-        "american": {
-          "ipa": "ˌəʊvərˈɔːl",
-          "phonetic": "oh-vur-AWL"
-        }
-      },
-      "difficulty": "normal",
       "category": "pte-di-natural-template-vocab",
       "source": "pte-di-natural-template-vocab"
     },

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-12-27T10:38:16.355Z",
-    "totalTerms": 25,
+    "generated": "2025-12-27T13:16:14.460Z",
+    "totalTerms": 26,
     "source": "pte-di-natural-template-vocab",
     "description": "Auto-discovered vocabulary book: pte-di-natural-template-vocab",
     "version": "1.0",
@@ -60,22 +60,6 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "shows information about",
-      "pronunciation": {
-        "british": {
-          "ipa": "ʃəʊz ˌɪnfəˈmeɪʃən əˈbaʊt",
-          "phonetic": "SHOWZ in-fur-MAY-shun uh-BOUT"
-        },
-        "american": {
-          "ipa": "ʃəʊz ˌɪnfəˈmeɪʃən əˈbaʊt",
-          "phonetic": "SHOWZ in-fur-MAY-shun uh-BOUT"
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-di-natural-template-vocab",
-      "source": "pte-di-natural-template-vocab"
-    },
-    {
       "english": "Looking at the data",
       "pronunciation": {
         "british": {
@@ -108,22 +92,6 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "close to",
-      "pronunciation": {
-        "british": {
-          "ipa": "kləʊs tuː",
-          "phonetic": "KLOHSS too"
-        },
-        "american": {
-          "ipa": "kləʊs tuː",
-          "phonetic": "KLOHSS too"
-        }
-      },
-      "difficulty": "normal",
-      "category": "pte-di-natural-template-vocab",
-      "source": "pte-di-natural-template-vocab"
-    },
-    {
       "english": "Following that",
       "pronunciation": {
         "british": {
@@ -140,38 +108,6 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "comes second",
-      "pronunciation": {
-        "british": {
-          "ipa": "kʌmz ˈsekənd",
-          "phonetic": "KUMZ SEK-und"
-        },
-        "american": {
-          "ipa": "kʌmz ˈsekənd",
-          "phonetic": "KUMZ SEK-und"
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-di-natural-template-vocab",
-      "source": "pte-di-natural-template-vocab"
-    },
-    {
-      "english": "with about",
-      "pronunciation": {
-        "british": {
-          "ipa": "wɪð əˈbaʊt",
-          "phonetic": "with uh-BOUT"
-        },
-        "american": {
-          "ipa": "wɪð əˈbaʊt",
-          "phonetic": "with uh-BOUT"
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-di-natural-template-vocab",
-      "source": "pte-di-natural-template-vocab"
-    },
-    {
       "english": "The lowest can be found in",
       "pronunciation": {
         "british": {
@@ -181,38 +117,6 @@
         "american": {
           "ipa": "ðə ˈləʊɪst kæn biː faʊnd ɪn",
           "phonetic": "the LOH-ist kan bee FOWND in"
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-di-natural-template-vocab",
-      "source": "pte-di-natural-template-vocab"
-    },
-    {
-      "english": "at only",
-      "pronunciation": {
-        "british": {
-          "ipa": "æt ˈəʊnli",
-          "phonetic": "at OHN-lee"
-        },
-        "american": {
-          "ipa": "æt ˈəʊnli",
-          "phonetic": "at OHN-lee"
-        }
-      },
-      "difficulty": "normal",
-      "category": "pte-di-natural-template-vocab",
-      "source": "pte-di-natural-template-vocab"
-    },
-    {
-      "english": "also feature in",
-      "pronunciation": {
-        "british": {
-          "ipa": "ˈɔːlsəʊ ˈfiːtʃər ɪn",
-          "phonetic": "AWL-soh FEE-chur in"
-        },
-        "american": {
-          "ipa": "ˈɔːlsəʊ ˈfiːtʃər ɪn",
-          "phonetic": "AWL-soh FEE-chur in"
         }
       },
       "difficulty": "hard",
@@ -252,15 +156,15 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "the data tells us about",
+      "english": "shows information about",
       "pronunciation": {
         "british": {
-          "ipa": "ðə ˈdeɪtə telz ʌs əˈbaʊt",
-          "phonetic": "the DAY-tuh TELZ us uh-BOUT"
+          "ipa": "ʃəʊz ˌɪnfəˈmeɪʃən əˈbaʊt",
+          "phonetic": "SHOWZ in-fur-MAY-shun uh-BOUT"
         },
         "american": {
-          "ipa": "ðə ˈdeɪtə telz ʌs əˈbaʊt",
-          "phonetic": "the DAY-tuh TELZ us uh-BOUT"
+          "ipa": "ʃəʊz ˌɪnfəˈmeɪʃən əˈbaʊt",
+          "phonetic": "SHOWZ in-fur-MAY-shun uh-BOUT"
         }
       },
       "difficulty": "hard",
@@ -284,6 +188,22 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
+      "english": "close to",
+      "pronunciation": {
+        "british": {
+          "ipa": "kləʊs tuː",
+          "phonetic": "KLOHSS too"
+        },
+        "american": {
+          "ipa": "kləʊs tuː",
+          "phonetic": "KLOHSS too"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
       "english": "The lowest number can be found in",
       "pronunciation": {
         "british": {
@@ -300,47 +220,15 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "Moving to",
+      "english": "at only",
       "pronunciation": {
         "british": {
-          "ipa": "ˈmuːvɪŋ tuː",
-          "phonetic": "MOO-ving too"
+          "ipa": "æt ˈəʊnli",
+          "phonetic": "at OHN-lee"
         },
         "american": {
-          "ipa": "ˈmuːvɪŋ tuː",
-          "phonetic": "MOO-ving too"
-        }
-      },
-      "difficulty": "normal",
-      "category": "pte-di-natural-template-vocab",
-      "source": "pte-di-natural-template-vocab"
-    },
-    {
-      "english": "the highest is in",
-      "pronunciation": {
-        "british": {
-          "ipa": "ðə ˈhaɪɪst ɪz ɪn",
-          "phonetic": "the HY-ist IZ in"
-        },
-        "american": {
-          "ipa": "ðə ˈhaɪɪst ɪz ɪn",
-          "phonetic": "the HY-ist IZ in"
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-di-natural-template-vocab",
-      "source": "pte-di-natural-template-vocab"
-    },
-    {
-      "english": "at around",
-      "pronunciation": {
-        "british": {
-          "ipa": "æt əˈraʊnd",
-          "phonetic": "at uh-ROWND"
-        },
-        "american": {
-          "ipa": "æt əˈraʊnd",
-          "phonetic": "at uh-ROWND"
+          "ipa": "æt ˈəʊnli",
+          "phonetic": "at OHN-lee"
         }
       },
       "difficulty": "normal",
@@ -380,6 +268,22 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
+      "english": "the data tells us about",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈdeɪtə telz ʌs əˈbaʊt",
+          "phonetic": "the DAY-tuh TELZ us uh-BOUT"
+        },
+        "american": {
+          "ipa": "ðə ˈdeɪtə telz ʌs əˈbaʊt",
+          "phonetic": "the DAY-tuh TELZ us uh-BOUT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
       "english": "percent",
       "pronunciation": {
         "british": {
@@ -405,6 +309,118 @@
         "american": {
           "ipa": "pəˈsentɪdʒɪz",
           "phonetic": "pur-SEN-ti-jiz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "This picture",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs ˈpɪktʃə",
+          "phonetic": "this PIK-chur"
+        },
+        "american": {
+          "ipa": "ðɪs ˈpɪktʃə",
+          "phonetic": "this PIK-chur"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "On the left side",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɒn ðə left saɪd",
+          "phonetic": "on the LEFT side"
+        },
+        "american": {
+          "ipa": "ɒn ðə left saɪd",
+          "phonetic": "on the LEFT side"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "can be found close to",
+      "pronunciation": {
+        "british": {
+          "ipa": "kæn biː faʊnd kləʊs tuː",
+          "phonetic": "kan bee FOWND KLOHSS too"
+        },
+        "american": {
+          "ipa": "kæn biː faʊnd kləʊs tuː",
+          "phonetic": "kan bee FOWND KLOHSS too"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "On the right side",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɒn ðə raɪt saɪd",
+          "phonetic": "on the RIGHT side"
+        },
+        "american": {
+          "ipa": "ɒn ðə raɪt saɪd",
+          "phonetic": "on the RIGHT side"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "also appears in the picture",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɔːlsəʊ əˈpɪəzɪnðəˈpɪktʃə",
+          "phonetic": "AWL-soh uh-PEERZ in the PIK-chur"
+        },
+        "american": {
+          "ipa": "ˈɔːlsəʊ əˈpɪəzɪnðəˈpɪktʃə",
+          "phonetic": "AWL-soh uh-PEERZ in the PIK-chur"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "can also be seen in the picture",
+      "pronunciation": {
+        "british": {
+          "ipa": "kænˈɔːlsəʊ biː siːn",
+          "phonetic": "kan AWL-soh bee SEEN"
+        },
+        "american": {
+          "ipa": "kænˈɔːlsəʊ biː siːn",
+          "phonetic": "kan AWL-soh bee SEEN"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "the picture tells us about",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈpɪktʃə telzʌs əˈbaʊt",
+          "phonetic": "the PIK-chur TELZ-us uh-BOUT"
+        },
+        "american": {
+          "ipa": "ðə ˈpɪktʃə telzʌs əˈbaʊt",
+          "phonetic": "the PIK-chur TELZ-us uh-BOUT"
         }
       },
       "difficulty": "hard",

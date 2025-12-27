@@ -431,10 +431,10 @@ export class TTSEngine {
    */
   private async speakWithPolly(text: string, lang: string | null = null): Promise<void> {
     try {
-      // Determine voice and language for Polly
-      const voiceId = lang === 'en-AU' ? 'Russell' :
-                      lang === 'en-GB' ? 'Brian' :
-                      'Brian'; // Default to British male
+      // Determine voice and language for Polly - using Female voices
+      const voiceId = lang === 'en-AU' ? 'Nicole' :  // Australian female
+                      lang === 'en-GB' ? 'Amy' :     // British female
+                      'Amy'; // Default to British female
 
       const languageCode = lang === 'en-AU' ? 'en-AU' :
                           lang === 'en-GB' ? 'en-GB' :
@@ -455,6 +455,14 @@ export class TTSEngine {
           outputFormat: 'mp3',
         }),
       });
+
+      // Check if response is ok before trying to parse JSON
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.warn(`[TTSEngine] Polly API error (${response.status}): ${errorText}`);
+        console.warn('[TTSEngine] Falling back to browser TTS');
+        return this.speakWithBrowserTTS(text, lang);
+      }
 
       const result = await response.json();
 

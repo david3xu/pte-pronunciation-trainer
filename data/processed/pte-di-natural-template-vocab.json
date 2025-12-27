@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-12-27T13:28:45.539Z",
-    "totalTerms": 25,
+    "generated": "2025-12-27T21:02:28.441Z",
+    "totalTerms": 31,
     "source": "pte-di-natural-template-vocab",
     "description": "Auto-discovered vocabulary book: pte-di-natural-template-vocab",
     "version": "1.0",
@@ -293,6 +293,102 @@
         "american": {
           "ipa": "pəˈsentɪdʒɪz",
           "phonetic": "pur-SEN-ti-jiz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "This diagram",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs ˈdaɪəɡræm",
+          "phonetic": "this DY-uh-gram"
+        },
+        "american": {
+          "ipa": "ðɪs ˈdaɪəɡræm",
+          "phonetic": "this DY-uh-gram"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "can be seen at",
+      "pronunciation": {
+        "british": {
+          "ipa": "kænbiːsiːnæt",
+          "phonetic": "kan bee SEEN at"
+        },
+        "american": {
+          "ipa": "kænbiːsiːnæt",
+          "phonetic": "kan bee SEEN at"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "After that",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɑːftə ðæt",
+          "phonetic": "AHF-ter THAT"
+        },
+        "american": {
+          "ipa": "ˈɑːftə ðæt",
+          "phonetic": "AHF-ter THAT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "The cycle then returns to",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðəˈsaɪkəl ðen rɪˈtɜːnz tuː",
+          "phonetic": "the SY-kul then ree-TURNZ too"
+        },
+        "american": {
+          "ipa": "ðəˈsaɪkəl ðen rɪˈtɜːnz tuː",
+          "phonetic": "the SY-kul then ree-TURNZ too"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "To conclude",
+      "pronunciation": {
+        "british": {
+          "ipa": "tuː kənˈkluːd",
+          "phonetic": "too kun-KLOOD"
+        },
+        "american": {
+          "ipa": "tuː kənˈkluːd",
+          "phonetic": "too kun-KLOOD"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "this diagram tells us about",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪsˈdaɪəɡræm telzʌs əˈbaʊt",
+          "phonetic": "this DY-uh-gram TELZ-us uh-BOUT"
+        },
+        "american": {
+          "ipa": "ðɪsˈdaɪəɡræm telzʌs əˈbaʊt",
+          "phonetic": "this DY-uh-gram TELZ-us uh-BOUT"
         }
       },
       "difficulty": "hard",

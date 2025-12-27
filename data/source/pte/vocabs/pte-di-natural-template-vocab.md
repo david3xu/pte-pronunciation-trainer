@@ -1,6 +1,6 @@
 # PTE DI Natural Template - Vocabulary with IPA
 
-**Total Terms:** 43
+**Total Terms:** 55
 
 > Practice these phrases in template order for DI speaking
 
@@ -51,21 +51,38 @@
 
 ---
 
+## Template 3 Phrases (In Order)
+
+31. This diagram | /ðɪs ˈdaɪəɡræm/ — sounds like **this DY-uh-gram**
+32. shows the process of | /ʃəʊzðəˈprəʊses ɒv/ — sounds like **SHOWZ the PROH-ses ov** (linked: show**s͜th**e)
+33. At the start | /ætðəstɑːt/ — sounds like **at-the-START** (linked: A**t͜th**e)
+34. can be seen at | /kænbiːsiːnæt/ — sounds like **kan bee SEEN at**
+35. Following that | /ˈfɒləʊɪŋ ðæt/ — sounds like **FOL-oh-wing THAT**
+36. takes place | /teɪkspleɪs/ — sounds like **TAYKS-playss** (linked: take**s͜p**lace)
+37. leading to | /ˈliːdɪŋ tuː/ — sounds like **LEE-ding too** (linked: leadin**g͜t**o)
+38. After that | /ˈɑːftə ðæt/ — sounds like **AHF-ter THAT**
+39. happens at | /ˈhæpənz æt/ — sounds like **HAP-unz at** (linked: happen**s͜a**t)
+40. The cycle then returns to | /ðəˈsaɪkəl ðen rɪˈtɜːnz tuː/ — sounds like **the SY-kul then ree-TURNZ too**
+41. To conclude | /tuː kənˈkluːd/ — sounds like **too kun-KLOOD**
+42. this diagram tells us about | /ðɪsˈdaɪəɡræm telzʌs əˈbaʊt/ — sounds like **this DY-uh-gram TELZ-us uh-BOUT**
+
+---
+
 ## Template 4 Phrases (In Order)
 
-31. This picture | /ðɪs ˈpɪktʃə/ — sounds like **this PIK-chur**
-32. shows information about | /ʃəʊzˌɪnfəˈmeɪʃən əˈbaʊt/ — sounds like **SHOWZ-in-fur-MAY-shun uh-BOUT**
-33. Looking at the image | /ˈlʊkɪŋ ætðɪˈɪmɪdʒ/ — sounds like **LOOK-ing at-the-IM-ij** (linked: at͜the͜image)
-34. is on the top | /ɪzɒnðətɒp/ — sounds like **iz-on-the-TOP** (linked: i**s͜o**n)
-35. and connects to | /ənd kəˈnekts tuː/ — sounds like **and kuh-NEKTS too** (linked: connect**s͜t**o)
-36. On the left side | /ɒn ðə left saɪd/ — sounds like **on the LEFT side**
-37. can be found close to | /kæn biː faʊnd kləʊs tuː/ — sounds like **kan bee FOWND KLOHSS too**
-38. On the right side | /ɒn ðə raɪt saɪd/ — sounds like **on the RIGHT side**
-39. also appears in the picture | /ˈɔːlsəʊ əˈpɪəzɪnðəˈpɪktʃə/ — sounds like **AWL-soh uh-PEERZ in the PIK-chur**
-40. At the bottom | /ætðəˈbɒtəm/ — sounds like **at-the-BOT-um** (linked: a**t͜th**e)
-41. can also be seen in the picture | /kænˈɔːlsəʊ biː siːn/ — sounds like **kan AWL-soh bee SEEN**
-42. To sum up | /tuː sʌm ʌp/ — sounds like **too SUM up** (linked: sum͜up)
-43. the picture tells us about | /ðə ˈpɪktʃə telzʌs əˈbaʊt/ — sounds like **the PIK-chur TELZ-us uh-BOUT**
+43. This picture | /ðɪs ˈpɪktʃə/ — sounds like **this PIK-chur**
+44. shows information about | /ʃəʊzˌɪnfəˈmeɪʃən əˈbaʊt/ — sounds like **SHOWZ-in-fur-MAY-shun uh-BOUT**
+45. Looking at the image | /ˈlʊkɪŋ ætðɪˈɪmɪdʒ/ — sounds like **LOOK-ing at-the-IM-ij** (linked: at͜the͜image)
+46. is on the top | /ɪzɒnðətɒp/ — sounds like **iz-on-the-TOP** (linked: i**s͜o**n)
+47. and connects to | /ənd kəˈnekts tuː/ — sounds like **and kuh-NEKTS too** (linked: connect**s͜t**o)
+48. On the left side | /ɒn ðə left saɪd/ — sounds like **on the LEFT side**
+49. can be found close to | /kæn biː faʊnd kləʊs tuː/ — sounds like **kan bee FOWND KLOHSS too**
+50. On the right side | /ɒn ðə raɪt saɪd/ — sounds like **on the RIGHT side**
+51. also appears in the picture | /ˈɔːlsəʊ əˈpɪəzɪnðəˈpɪktʃə/ — sounds like **AWL-soh uh-PEERZ in the PIK-chur**
+52. At the bottom | /ætðəˈbɒtəm/ — sounds like **at-the-BOT-um** (linked: a**t͜th**e)
+53. can also be seen in the picture | /kænˈɔːlsəʊ biː siːn/ — sounds like **kan AWL-soh bee SEEN**
+54. To sum up | /tuː sʌm ʌp/ — sounds like **too SUM up** (linked: sum͜up)
+55. the picture tells us about | /ðə ˈpɪktʃə telzʌs əˈbaʊt/ — sounds like **the PIK-chur TELZ-us uh-BOUT**
 
 ---
 

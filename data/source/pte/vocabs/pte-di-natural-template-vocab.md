@@ -22,7 +22,7 @@
 12. at only | /ætˈəʊnli/ — sounds like **at-OHN-lee** (linked: a**t͜o**nly)
 13. also feature in | /ˈɔːlsəʊˈfiːtʃərɪn/ — sounds like **AWL-soh-FEE-chur-in** (linked: featur**e͜i**n)
 14. this chart | /ðɪs tʃɑːt/ — sounds like **this CHART**
-15. Overall | /ˌəʊvərˈɔːl/ — sounds like **oh-vur-AWL**
+15. From this | /frɒmðɪs/ — sounds like **from-THIS** (linked: From͜this)
 16. the data tells us about | /ðə ˈdeɪtə telzʌs əˈbaʊt/ — sounds like **the DAY-tuh TELZ-us uh-BOUT** (linked: tell**s͜u**s)
 
 ---

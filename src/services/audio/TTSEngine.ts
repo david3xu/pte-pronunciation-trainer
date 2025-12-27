@@ -450,7 +450,7 @@ export class TTSEngine {
         body: JSON.stringify({
           text,
           voiceId,
-          engine: 'neural',
+          engine: 'standard', // Using standard for wider region support
           languageCode,
           outputFormat: 'mp3',
         }),

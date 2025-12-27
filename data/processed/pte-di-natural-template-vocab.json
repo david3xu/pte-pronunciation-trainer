@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-12-27T21:44:41.034Z",
-    "totalTerms": 59,
+    "generated": "2025-12-27T22:20:15.521Z",
+    "totalTerms": 82,
     "source": "pte-di-natural-template-vocab",
     "description": "Auto-discovered vocabulary book: pte-di-natural-template-vocab",
     "version": "1.0",
@@ -950,6 +950,374 @@
         "american": {
           "ipa": "ɑː bəʊθ ʃəʊn ɪn ðɪs tʃɑːt",
           "phonetic": "ar BOHTH shown in this CHART"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "we can see that",
+      "pronunciation": {
+        "british": {
+          "ipa": "wiː kæn siː ðæt",
+          "phonetic": "wee kan SEE that"
+        },
+        "american": {
+          "ipa": "wiː kæn siː ðæt",
+          "phonetic": "wee kan SEE that"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "which is close to",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪtʃ ɪz kləʊs tuː",
+          "phonetic": "which iz KLOHSS too"
+        },
+        "american": {
+          "ipa": "wɪtʃ ɪz kləʊs tuː",
+          "phonetic": "which iz KLOHSS too"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "On the other hand",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɒn ðiː ˈʌðə hænd",
+          "phonetic": "on thee UH-thur HAND"
+        },
+        "american": {
+          "ipa": "ɒn ðiː ˈʌðə hænd",
+          "phonetic": "on thee UH-thur HAND"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "we can conclude that",
+      "pronunciation": {
+        "british": {
+          "ipa": "wiː kæn kənˈkluːd ðæt",
+          "phonetic": "wee kan kun-KLOOD that"
+        },
+        "american": {
+          "ipa": "wiː kæn kənˈkluːd ðæt",
+          "phonetic": "wee kan kun-KLOOD that"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "comes second in the chart",
+      "pronunciation": {
+        "british": {
+          "ipa": "kʌmz ˈsekənd ɪn ðə tʃɑːt",
+          "phonetic": "KUMZ SEK-und in the CHART"
+        },
+        "american": {
+          "ipa": "kʌmz ˈsekənd ɪn ðə tʃɑːt",
+          "phonetic": "KUMZ SEK-und in the CHART"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "in this context",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ðɪs ˈkɒntekst",
+          "phonetic": "in this KON-tekst"
+        },
+        "american": {
+          "ipa": "ɪn ðɪs ˈkɒntekst",
+          "phonetic": "in this KON-tekst"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "which leads to",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪtʃ liːdz tuː",
+          "phonetic": "which LEEDZ too"
+        },
+        "american": {
+          "ipa": "wɪtʃ liːdz tuː",
+          "phonetic": "which LEEDZ too"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "in the diagram",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ðə ˈdaɪəɡræm",
+          "phonetic": "in the DY-uh-gram"
+        },
+        "american": {
+          "ipa": "ɪn ðə ˈdaɪəɡræm",
+          "phonetic": "in the DY-uh-gram"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "which includes",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪtʃ ɪnˈkluːdz",
+          "phonetic": "which in-KLOODZ"
+        },
+        "american": {
+          "ipa": "wɪtʃ ɪnˈkluːdz",
+          "phonetic": "which in-KLOODZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "The lecture talks about",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈlektʃə tɔːks əˈbaʊt",
+          "phonetic": "the LEK-chur TAWKS uh-BOUT"
+        },
+        "american": {
+          "ipa": "ðə ˈlektʃə tɔːks əˈbaʊt",
+          "phonetic": "the LEK-chur TAWKS uh-BOUT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "and its importance",
+      "pronunciation": {
+        "british": {
+          "ipa": "ənd ɪts ɪmˈpɔːtəns",
+          "phonetic": "and its im-POR-tunss"
+        },
+        "american": {
+          "ipa": "ənd ɪts ɪmˈpɔːtəns",
+          "phonetic": "and its im-POR-tunss"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "The speaker mentions that",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈspiːkə ˈmenʃənz ðæt",
+          "phonetic": "the SPEE-kur MEN-shunz that"
+        },
+        "american": {
+          "ipa": "ðə ˈspiːkə ˈmenʃənz ðæt",
+          "phonetic": "the SPEE-kur MEN-shunz that"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "are related to",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɑː rɪˈleɪtɪd tuː",
+          "phonetic": "ar ree-LAY-tid too"
+        },
+        "american": {
+          "ipa": "ɑː rɪˈleɪtɪd tuː",
+          "phonetic": "ar ree-LAY-tid too"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "According to the speaker",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈkɔːdɪŋ tuː ðə ˈspiːkə",
+          "phonetic": "uh-KOR-ding too the SPEE-kur"
+        },
+        "american": {
+          "ipa": "əˈkɔːdɪŋ tuː ðə ˈspiːkə",
+          "phonetic": "uh-KOR-ding too the SPEE-kur"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "is important in this context",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪz ɪmˈpɔːtənt ɪn ðɪs ˈkɒntekst",
+          "phonetic": "iz im-POR-tunt in this KON-tekst"
+        },
+        "american": {
+          "ipa": "ɪz ɪmˈpɔːtənt ɪn ðɪs ˈkɒntekst",
+          "phonetic": "iz im-POR-tunt in this KON-tekst"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "The lecture also discusses",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈlektʃə ˈɔːlsəʊ dɪˈskʌsɪz",
+          "phonetic": "the LEK-chur AWL-soh dis-KUS-iz"
+        },
+        "american": {
+          "ipa": "ðə ˈlektʃə ˈɔːlsəʊ dɪˈskʌsɪz",
+          "phonetic": "the LEK-chur AWL-soh dis-KUS-iz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "how X and Y play a role",
+      "pronunciation": {
+        "british": {
+          "ipa": "haʊ pleɪ ə rəʊl",
+          "phonetic": "how X and Y PLAY uh ROHL"
+        },
+        "american": {
+          "ipa": "haʊ pleɪ ə rəʊl",
+          "phonetic": "how X and Y PLAY uh ROHL"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "Furthermore",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɜːðəmɔː",
+          "phonetic": "FUR-thur-mor"
+        },
+        "american": {
+          "ipa": "ˈfɜːðəmɔː",
+          "phonetic": "FUR-thur-mor"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "are mentioned as key points",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɑː ˈmenʃənd æz kiː pɔɪnts",
+          "phonetic": "ar MEN-shund az KEE points"
+        },
+        "american": {
+          "ipa": "ɑː ˈmenʃənd æz kiː pɔɪnts",
+          "phonetic": "ar MEN-shund az KEE points"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "Finally",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfaɪnəli",
+          "phonetic": "FY-nuh-lee"
+        },
+        "american": {
+          "ipa": "ˈfaɪnəli",
+          "phonetic": "FY-nuh-lee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "and its connection to",
+      "pronunciation": {
+        "british": {
+          "ipa": "ənd ɪts kəˈnekʃən tuː",
+          "phonetic": "and its kuh-NEK-shun too"
+        },
+        "american": {
+          "ipa": "ənd ɪts kəˈnekʃən tuː",
+          "phonetic": "and its kuh-NEK-shun too"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "In conclusion",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn kənˈkluːʒən",
+          "phonetic": "in kun-KLOO-zhun"
+        },
+        "american": {
+          "ipa": "ɪn kənˈkluːʒən",
+          "phonetic": "in kun-KLOO-zhun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "the lecture is mainly about",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈlektʃə ɪz ˈmeɪnli əˈbaʊt",
+          "phonetic": "the LEK-chur iz MAYN-lee uh-BOUT"
+        },
+        "american": {
+          "ipa": "ðə ˈlektʃə ɪz ˈmeɪnli əˈbaʊt",
+          "phonetic": "the LEK-chur iz MAYN-lee uh-BOUT"
         }
       },
       "difficulty": "hard",

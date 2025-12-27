@@ -1,6 +1,6 @@
 # PTE DI Natural Template - Vocabulary with IPA
 
-**Total Terms:** 59
+**Total Terms:** 82
 
 > Practice these phrases in template order for DI speaking
 
@@ -92,6 +92,39 @@
 57. the main items include | /ðəmeɪn ˈaɪtəmz ɪnˈkluːd/ — sounds like **the MAYN EYE-tumz in-KLOOD** (linked: main͜items)
 58. The other items can be found in | /ðiˈʌðər ˈaɪtəmz kæn biː faʊnd ɪn/ — sounds like **thee UH-thur EYE-tumz kan bee FOWND in**
 59. are both shown in this chart | /ɑː bəʊθ ʃəʊn ɪn ðɪs tʃɑːt/ — sounds like **ar BOHTH shown in this CHART**
+
+---
+
+## Natural Extension Phrases (NEW)
+
+60. we can see that | /wiː kæn siː ðæt/ — sounds like **wee kan SEE that**
+61. which is close to | /wɪtʃ ɪz kləʊs tuː/ — sounds like **which iz KLOHSS too** (linked: which͜is)
+62. On the other hand | /ɒn ðiː ˈʌðə hænd/ — sounds like **on thee UH-thur HAND**
+63. we can conclude that | /wiː kæn kənˈkluːd ðæt/ — sounds like **wee kan kun-KLOOD that**
+64. comes second in the chart | /kʌmz ˈsekənd ɪn ðə tʃɑːt/ — sounds like **KUMZ SEK-und in the CHART**
+65. in this context | /ɪn ðɪs ˈkɒntekst/ — sounds like **in this KON-tekst**
+66. which leads to | /wɪtʃ liːdz tuː/ — sounds like **which LEEDZ too**
+67. in the diagram | /ɪn ðə ˈdaɪəɡræm/ — sounds like **in the DY-uh-gram**
+68. which includes | /wɪtʃ ɪnˈkluːdz/ — sounds like **which in-KLOODZ** (linked: which͜includes)
+
+---
+
+## RL Template Phrases (In Order)
+
+69. The lecture talks about | /ðə ˈlektʃə tɔːks əˈbaʊt/ — sounds like **the LEK-chur TAWKS uh-BOUT**
+70. and its importance | /ənd ɪts ɪmˈpɔːtəns/ — sounds like **and its im-POR-tunss** (linked: and͜its)
+71. The speaker mentions that | /ðə ˈspiːkə ˈmenʃənz ðæt/ — sounds like **the SPEE-kur MEN-shunz that**
+72. are related to | /ɑː rɪˈleɪtɪd tuː/ — sounds like **ar ree-LAY-tid too**
+73. According to the speaker | /əˈkɔːdɪŋ tuː ðə ˈspiːkə/ — sounds like **uh-KOR-ding too the SPEE-kur**
+74. is important in this context | /ɪz ɪmˈpɔːtənt ɪn ðɪs ˈkɒntekst/ — sounds like **iz im-POR-tunt in this KON-tekst**
+75. The lecture also discusses | /ðə ˈlektʃə ˈɔːlsəʊ dɪˈskʌsɪz/ — sounds like **the LEK-chur AWL-soh dis-KUS-iz**
+76. how X and Y play a role | /haʊ pleɪ ə rəʊl/ — sounds like **how X and Y PLAY uh ROHL**
+77. Furthermore | /ˈfɜːðəmɔː/ — sounds like **FUR-thur-mor**
+78. are mentioned as key points | /ɑː ˈmenʃənd æz kiː pɔɪnts/ — sounds like **ar MEN-shund az KEE points**
+79. Finally | /ˈfaɪnəli/ — sounds like **FY-nuh-lee**
+80. and its connection to | /ənd ɪts kəˈnekʃən tuː/ — sounds like **and its kuh-NEK-shun too**
+81. In conclusion | /ɪn kənˈkluːʒən/ — sounds like **in kun-KLOO-zhun**
+82. the lecture is mainly about | /ðə ˈlektʃə ɪz ˈmeɪnli əˈbaʊt/ — sounds like **the LEK-chur iz MAYN-lee uh-BOUT**
 
 ---
 

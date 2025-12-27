@@ -479,11 +479,18 @@ export class TTSEngine {
    */
   showTTSFallback(text: string): void {
     const progressTracker = (window as any).progressTracker;
-    progressTracker.updateStatus(`🔊 Please read aloud: "${text}"`);
 
-    setTimeout(() => {
-      progressTracker.updateStatus('Text-to-speech not available in this browser');
-    }, this.getConfig().get('tts.delays.resetTimeout'));
+    // Check if progressTracker exists before calling methods
+    if (progressTracker && typeof progressTracker.updateStatus === 'function') {
+      progressTracker.updateStatus(`🔊 Please read aloud: "${text}"`);
+
+      setTimeout(() => {
+        progressTracker.updateStatus('Text-to-speech not available in this browser');
+      }, this.getConfig()?.get('tts.delays.resetTimeout') || 5000);
+    } else {
+      // Fallback: log to console if no progress tracker available
+      console.warn(`[TTSEngine] TTS fallback - please read aloud: "${text}"`);
+    }
   }
 
   /**

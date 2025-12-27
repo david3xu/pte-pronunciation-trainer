@@ -46,7 +46,7 @@ cp .env.example .env
 
 ### Google Gemini
 1.  Get an API key from [Google AI Studio](https://makersuite.google.com/app/apikey).
-2.  Ensure the `gemini-2.5-flash` model is enabled for your key.
+2.  The app uses the Gemini API via `@google/genai` package.
 
 ### AWS Polly
 1.  Create an IAM user with `AmazonPollyReadOnlyAccess`.

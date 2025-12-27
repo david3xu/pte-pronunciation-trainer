@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- **Documentation**: Refreshed all docs to match current codebase structure (December 2025)
+  - Updated `docs/ARCHITECTURE.md` with accurate `src/` directory structure
+  - Updated `docs/MODULES.md` mermaid diagrams with all 9 service groups
+  - Updated `docs/DIAGNOSTICS.md` with correct 80% test coverage threshold
+  - Updated `docs/TESTING.md` to reference package.json coverage config
+  - Updated `docs/SETUP.md` with current Gemini API reference
+
 ## [3.0.1] - 2025-11-30
 
 ### Added

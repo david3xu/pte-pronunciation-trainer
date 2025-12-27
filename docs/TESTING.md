@@ -28,7 +28,7 @@ npm test
 
 ## 🧪 Test Coverage
 
-We aim for a minimum of **80%** code coverage for critical paths.
+We aim for a minimum of **80%** code coverage for critical paths (configured in `package.json`).
 
 - **Critical Paths**:
   - `src/services/`: API interactions (Supabase, Gemini, AWS).

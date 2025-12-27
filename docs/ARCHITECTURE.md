@@ -73,22 +73,39 @@ graph TD
 ```
 ccl-pronunciation-trainer/
 ├── .github/                 # CI/CD workflows and templates
+├── api/                     # Vercel serverless functions
 ├── data/                    # Data sources (Markdown) and processed JSON
 │   ├── source/              # Raw content (PTE vocabulary, templates)
 │   └── processed/           # Generated JSON for the app
 ├── docs/                    # Project documentation
 ├── public/                  # Static assets (favicons, manifest)
-├── scripts/                 # Build, validation, and data pipeline scripts
+├── scripts/                 # Build, validation, and data pipeline scripts (11 files)
 ├── src/                     # Source code
-│   ├── components/          # React UI components
-│   │   ├── ui/              # Reusable primitives (buttons, inputs)
-│   │   └── features/        # Feature-specific components
-│   ├── hooks/               # Custom React hooks
-│   ├── services/            # External API integrations (Supabase, AI, AWS)
-│   ├── stores/              # Global state management (Zustand)
-│   ├── styles/              # Global styles and Tailwind configuration
-│   ├── types/               # TypeScript type definitions
-│   └── utils/               # Helper functions
+│   ├── components/          # React UI components (7 feature groups)
+│   │   ├── ai/              # AI features (7 files): AITutorChat, AIRecommendations, etc.
+│   │   ├── audio/           # Audio controls (4 files): AudioControls, VoiceSelector
+│   │   ├── migration/       # Data migration UI (1 file)
+│   │   ├── practice/        # Practice interfaces (12 files): WordCard, RSInterface, WFDInterface, etc.
+│   │   ├── profile/         # User profile UI (1 file)
+│   │   ├── settings/        # Settings UI (2 files)
+│   │   └── shared/          # Shared components (7 files): Skeleton, ErrorBoundary, ToastProvider
+│   ├── config/              # App configuration (AppConfig.ts)
+│   ├── css/                 # Styles (Tailwind + custom CSS)
+│   ├── data/                # Data management (DatasetManager, DataSchema, extractors)
+│   ├── hooks/               # Custom React hooks (5 files): useBreakpoint, useOnboarding, etc.
+│   ├── services/            # Business logic & API clients (9 groups)
+│   │   ├── ai/              # AI services (6 files): interventionEngine, recommendationEngine
+│   │   ├── analytics/       # Analytics (1 file): analyticsService
+│   │   ├── audio/           # Audio/TTS (2 files): TTSEngine, pollyService
+│   │   ├── device/          # Device detection (1 file)
+│   │   ├── migration/       # Data migration (1 file)
+│   │   ├── profile/         # User profiles (1 file): learnerProfileService
+│   │   ├── session/         # Session tracking (1 file): sessionManager
+│   │   ├── supabase/        # Supabase integration (5 files): authService, syncService
+│   │   └── tts/             # TTS caching (1 file)
+│   ├── stores/              # Zustand state management (2 files)
+│   ├── types/               # TypeScript definitions (4 files)
+│   └── utils/               # Helper functions (6 files + validation/)
 ├── supabase/                # Supabase migrations and config
 ├── tests/                   # Test setup and integration tests
 ├── .env.example             # Environment variables template
@@ -98,8 +115,8 @@ ccl-pronunciation-trainer/
 
 ## 📂 Directory Structure Strategy
 
-- **`src/components`**: Pure UI components. Logic should be minimal.
-- **`src/features`**: (Recommended) Feature-based grouping (e.g., `features/chat`, `features/practice`).
-- **`src/services`**: Singleton classes or functions for external API calls.
-- **`src/stores`**: Global state definitions.
-- **`src/hooks`**: Reusable logic (e.g., `useAudio`, `useAuth`).
+- **`src/components`**: Feature-grouped UI components (ai/, audio/, practice/, settings/, shared/).
+- **`src/services`**: Singleton services for external APIs (Supabase, Gemini, AWS Polly).
+- **`src/stores`**: Zustand global state (7 slices: audio, tts, vocabulary, progress, auth, settings, ui).
+- **`src/hooks`**: Reusable React hooks (useBreakpoint, useOnboarding, useMigration, useSwipeGesture).
+- **`src/data`**: Dataset loading and validation logic.

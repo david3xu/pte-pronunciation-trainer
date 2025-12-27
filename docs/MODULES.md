@@ -9,8 +9,12 @@ The application follows a unidirectional data flow pattern, primarily driven by 
 ```mermaid
 graph TD
     subgraph "UI Layer (Components)"
-        Page[Pages (e.g., Practice)]
-        Comp[Components (e.g., WordCard)]
+        Page[Pages]
+        AI[ai/ - AITutorChat, Recommendations]
+        Audio[audio/ - AudioControls, VoiceSelector]
+        Practice[practice/ - WordCard, RSInterface, WFDInterface]
+        Settings[settings/ - SettingsPanel]
+        Shared[shared/ - Skeleton, ToastProvider]
     end
 
     subgraph "State Layer (Zustand)"
@@ -19,14 +23,21 @@ graph TD
         Slice2[Vocabulary Slice]
         Slice3[Auth Slice]
         Slice4[Progress Slice]
+        Slice5[Settings Slice]
+        Slice6[TTS Slice]
+        Slice7[UI Slice]
     end
 
     subgraph "Service Layer"
-        AuthSvc[Auth Service]
-        SessionSvc[Session Manager]
-        TTSSvc[Polly/TTS Service]
-        AISvc[AI Service]
-        SyncSvc[Sync Service]
+        AuthSvc[supabase/authService]
+        SyncSvc[supabase/syncService]
+        SessionSvc[session/sessionManager]
+        TTSSvc[audio/TTSEngine]
+        AISvc[ai/recommendationEngine]
+        AnalyticsSvc[analytics/analyticsService]
+        ProfileSvc[profile/learnerProfileService]
+        MigrationSvc[migration/]
+        DeviceSvc[device/]
     end
 
     subgraph "Data/Infrastructure"
@@ -36,33 +47,37 @@ graph TD
         GeminiAPI[Google Gemini API]
     end
 
-    %% Interactions
-    Page -->|Reads State| Store
-    Comp -->|Dispatches Actions| Store
+    %% Component to Store interactions
+    Page --> Store
+    AI --> Store
+    Practice --> Store
+    Audio --> Store
 
-    Store -->|Updates| Slice1
-    Store -->|Updates| Slice2
-    Store -->|Updates| Slice3
-    Store -->|Updates| Slice4
+    %% Store updates slices
+    Store --> Slice1
+    Store --> Slice2
+    Store --> Slice3
+    Store --> Slice4
+    Store --> Slice5
 
-    Slice3 -->|Calls| AuthSvc
-    Slice3 -->|Calls| SyncSvc
+    %% Service calls
+    Slice3 --> AuthSvc
+    Slice3 --> SyncSvc
+    Practice --> SessionSvc
+    Audio --> TTSSvc
 
-    Comp -->|Direct Call (Optional)| SessionSvc
-    Comp -->|Direct Call (Optional)| TTSSvc
-
-    AuthSvc -->|Auth| Supabase
-    SessionSvc -->|Read/Write| Supabase
-    SessionSvc -->|Offline Backup| LocalStorage
-
-    TTSSvc -->|Synthesize| PollyAPI
-    AISvc -->|Chat| GeminiAPI
+    %% External API calls
+    AuthSvc --> Supabase
+    SyncSvc --> Supabase
+    SessionSvc --> LocalStorage
+    TTSSvc --> PollyAPI
+    AISvc --> GeminiAPI
 ```
 
 ## 🧩 Core Modules
 
 ### 1. State Management (`src/stores`)
-The application uses **Zustand** for global state management. The store is divided into "slices" for better organization:
+The application uses **Zustand** for global state management. The store is divided into 7 "slices" for better organization:
 
 - **`audio`**: Controls playback state (playing, paused, speed, volume).
 - **`tts`**: Manages Text-to-Speech state (current voice, speaking status).
@@ -70,8 +85,9 @@ The application uses **Zustand** for global state management. The store is divid
 - **`progress`**: Tracks user progress within the current session.
 - **`auth`**: Manages user authentication state and user profile.
 - **`settings`**: Persists user preferences (theme, auto-play, etc.).
+- **`ui`**: Manages UI state (modals, notifications, loading states).
 
-**Interaction**: Components use custom hooks (e.g., `useAudioState`, `useVocabulary`) to subscribe to specific slices. This prevents unnecessary re-renders.
+**Interaction**: Components use custom hooks (e.g., `useAudioState`, `useVocabulary`, `useAuth`) to subscribe to specific slices. This prevents unnecessary re-renders.
 
 ### 2. Session Management (`src/services/session`)
 The **SessionManager** is a critical singleton service that handles the practice lifecycle.

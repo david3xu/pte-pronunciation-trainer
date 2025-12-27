@@ -39,12 +39,10 @@ This document records the findings from a comprehensive diagnostic review of the
   - **Recommendation**: Move prompts to a dedicated configuration file or a database table (if dynamic updates are needed).
 
 ### 3. Testing & Quality Assurance
-- **Coverage Threshold**: Global test coverage threshold is set to **60%**.
-  - **Issue**: This is relatively low for a production-grade application.
-  - **Recommendation**: Gradually increase the threshold to **80%** for critical paths (services, utils).
-- **Linting**: The ESLint configuration is minimal (`eslint:recommended`).
-  - **Issue**: May miss common React or TypeScript best practices.
-  - **Recommendation**: Adopt a stricter config like `airbnb-typescript` or `standard-with-typescript`. Add `eslint-plugin-react-hooks` and `eslint-plugin-jsx-a11y`.
+- **Coverage Threshold**: Global test coverage threshold is set to **80%** in `package.json` (branches, functions, lines, statements).
+  - **Status**: Coverage targets are properly configured for production quality.
+- **Linting**: The ESLint configuration uses `eslint:recommended`.
+  - **Recommendation**: Consider adopting stricter rules like `airbnb-typescript` or adding `eslint-plugin-react-hooks` and `eslint-plugin-jsx-a11y`.
 
 ### 4. Scripts & Automation
 - **Custom Scripts**: There are several custom scripts in `scripts/` (`pte-data-pipeline.js`, etc.).

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-12-27T21:02:28.654Z",
-    "totalTerms": 773,
+    "generated": "2025-12-27T21:44:41.205Z",
+    "totalTerms": 777,
     "source": "pte-rs-core-vocabulary",
     "description": "Auto-discovered vocabulary book: pte-rs-core-vocabulary",
     "version": "1.0",
@@ -2220,6 +2220,22 @@
       "source": "pte-rs-core-vocabulary"
     },
     {
+      "english": "prior to",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈwɜːrd",
+          "phonetic": "WORD"
+        },
+        "american": {
+          "ipa": "ˈwɜːrd",
+          "phonetic": "WORD"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rs-core-vocabulary",
+      "source": "pte-rs-core-vocabulary"
+    },
+    {
       "english": "the academic building",
       "pronunciation": {
         "british": {
@@ -3292,6 +3308,22 @@
       "source": "pte-rs-core-vocabulary"
     },
     {
+      "english": "various approaches",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈwɜːrd",
+          "phonetic": "WORD"
+        },
+        "american": {
+          "ipa": "ˈwɜːrd",
+          "phonetic": "WORD"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rs-core-vocabulary",
+      "source": "pte-rs-core-vocabulary"
+    },
+    {
       "english": "economic selective subjects",
       "pronunciation": {
         "british": {
@@ -3557,6 +3589,22 @@
         "american": {
           "ipa": "ˈɡɪvən æz ə pərˈsentɪdʒ əv ˌdʒiːdiːˈpiː",
           "phonetic": "GIV-uhn az uh per-SEN-tij uhv jee-dee-PEE"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rs-core-vocabulary",
+      "source": "pte-rs-core-vocabulary"
+    },
+    {
+      "english": "the student service center",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈwɜːrd",
+          "phonetic": "WORD"
+        },
+        "american": {
+          "ipa": "ˈwɜːrd",
+          "phonetic": "WORD"
         }
       },
       "difficulty": "hard",
@@ -8245,6 +8293,22 @@
         "american": {
           "ipa": "ˈsekənd flɔːr",
           "phonetic": "SEK-uhnd flor"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rs-core-vocabulary",
+      "source": "pte-rs-core-vocabulary"
+    },
+    {
+      "english": "government",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈwɜːrd",
+          "phonetic": "WORD"
+        },
+        "american": {
+          "ipa": "ˈwɜːrd",
+          "phonetic": "WORD"
         }
       },
       "difficulty": "hard",

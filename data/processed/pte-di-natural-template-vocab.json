@@ -1,0 +1,415 @@
+{
+  "metadata": {
+    "generated": "2025-12-27T10:38:16.355Z",
+    "totalTerms": 25,
+    "source": "pte-di-natural-template-vocab",
+    "description": "Auto-discovered vocabulary book: pte-di-natural-template-vocab",
+    "version": "1.0",
+    "categories": [
+      "pte-di-natural-template-vocab"
+    ],
+    "hasIPA": true
+  },
+  "vocabulary": [
+    {
+      "english": "This pie chart",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs paɪ tʃɑːt",
+          "phonetic": "this PIE chart"
+        },
+        "american": {
+          "ipa": "ðɪs paɪ tʃɑːt",
+          "phonetic": "this PIE chart"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "This bar chart",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs bɑː tʃɑːt",
+          "phonetic": "this BAR chart"
+        },
+        "american": {
+          "ipa": "ðɪs bɑː tʃɑːt",
+          "phonetic": "this BAR chart"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "This line graph",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs laɪn ɡrɑːf",
+          "phonetic": "this LINE graf"
+        },
+        "american": {
+          "ipa": "ðɪs laɪn ɡrɑːf",
+          "phonetic": "this LINE graf"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "shows information about",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʃəʊz ˌɪnfəˈmeɪʃən əˈbaʊt",
+          "phonetic": "SHOWZ in-fur-MAY-shun uh-BOUT"
+        },
+        "american": {
+          "ipa": "ʃəʊz ˌɪnfəˈmeɪʃən əˈbaʊt",
+          "phonetic": "SHOWZ in-fur-MAY-shun uh-BOUT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "Looking at the data",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlʊkɪŋ æt ðə ˈdeɪtə",
+          "phonetic": "LOOK-ing at the DAY-tuh"
+        },
+        "american": {
+          "ipa": "ˈlʊkɪŋ æt ðə ˈdeɪtə",
+          "phonetic": "LOOK-ing at the DAY-tuh"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "the highest number appears in",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈhaɪɪst ˈnʌmbə əˈpɪəz ɪn",
+          "phonetic": "the HY-ist NUM-bur uh-PEERZ in"
+        },
+        "american": {
+          "ipa": "ðə ˈhaɪɪst ˈnʌmbə əˈpɪəz ɪn",
+          "phonetic": "the HY-ist NUM-bur uh-PEERZ in"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "close to",
+      "pronunciation": {
+        "british": {
+          "ipa": "kləʊs tuː",
+          "phonetic": "KLOHSS too"
+        },
+        "american": {
+          "ipa": "kləʊs tuː",
+          "phonetic": "KLOHSS too"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "Following that",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɒləʊɪŋ ðæt",
+          "phonetic": "FOL-oh-wing THAT"
+        },
+        "american": {
+          "ipa": "ˈfɒləʊɪŋ ðæt",
+          "phonetic": "FOL-oh-wing THAT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "comes second",
+      "pronunciation": {
+        "british": {
+          "ipa": "kʌmz ˈsekənd",
+          "phonetic": "KUMZ SEK-und"
+        },
+        "american": {
+          "ipa": "kʌmz ˈsekənd",
+          "phonetic": "KUMZ SEK-und"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "with about",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪð əˈbaʊt",
+          "phonetic": "with uh-BOUT"
+        },
+        "american": {
+          "ipa": "wɪð əˈbaʊt",
+          "phonetic": "with uh-BOUT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "The lowest can be found in",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈləʊɪst kæn biː faʊnd ɪn",
+          "phonetic": "the LOH-ist kan bee FOWND in"
+        },
+        "american": {
+          "ipa": "ðə ˈləʊɪst kæn biː faʊnd ɪn",
+          "phonetic": "the LOH-ist kan bee FOWND in"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "at only",
+      "pronunciation": {
+        "british": {
+          "ipa": "æt ˈəʊnli",
+          "phonetic": "at OHN-lee"
+        },
+        "american": {
+          "ipa": "æt ˈəʊnli",
+          "phonetic": "at OHN-lee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "also feature in",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɔːlsəʊ ˈfiːtʃər ɪn",
+          "phonetic": "AWL-soh FEE-chur in"
+        },
+        "american": {
+          "ipa": "ˈɔːlsəʊ ˈfiːtʃər ɪn",
+          "phonetic": "AWL-soh FEE-chur in"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "this chart",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs tʃɑːt",
+          "phonetic": "this CHART"
+        },
+        "american": {
+          "ipa": "ðɪs tʃɑːt",
+          "phonetic": "this CHART"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "Overall",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌəʊvərˈɔːl",
+          "phonetic": "oh-vur-AWL"
+        },
+        "american": {
+          "ipa": "ˌəʊvərˈɔːl",
+          "phonetic": "oh-vur-AWL"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "the data tells us about",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈdeɪtə telz ʌs əˈbaʊt",
+          "phonetic": "the DAY-tuh TELZ us uh-BOUT"
+        },
+        "american": {
+          "ipa": "ðə ˈdeɪtə telz ʌs əˈbaʊt",
+          "phonetic": "the DAY-tuh TELZ us uh-BOUT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "Looking at",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlʊkɪŋ æt",
+          "phonetic": "LOOK-ing at"
+        },
+        "american": {
+          "ipa": "ˈlʊkɪŋ æt",
+          "phonetic": "LOOK-ing at"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "The lowest number can be found in",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈləʊɪst ˈnʌmbə kæn biː faʊnd ɪn",
+          "phonetic": "the LOH-ist NUM-bur kan bee FOWND in"
+        },
+        "american": {
+          "ipa": "ðə ˈləʊɪst ˈnʌmbə kæn biː faʊnd ɪn",
+          "phonetic": "the LOH-ist NUM-bur kan bee FOWND in"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "Moving to",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmuːvɪŋ tuː",
+          "phonetic": "MOO-ving too"
+        },
+        "american": {
+          "ipa": "ˈmuːvɪŋ tuː",
+          "phonetic": "MOO-ving too"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "the highest is in",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈhaɪɪst ɪz ɪn",
+          "phonetic": "the HY-ist IZ in"
+        },
+        "american": {
+          "ipa": "ðə ˈhaɪɪst ɪz ɪn",
+          "phonetic": "the HY-ist IZ in"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "at around",
+      "pronunciation": {
+        "british": {
+          "ipa": "æt əˈraʊnd",
+          "phonetic": "at uh-ROWND"
+        },
+        "american": {
+          "ipa": "æt əˈraʊnd",
+          "phonetic": "at uh-ROWND"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "are both shown in this chart",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɑː bəʊθ ʃəʊn ɪn ðɪs tʃɑːt",
+          "phonetic": "ar BOHTH shown in this CHART"
+        },
+        "american": {
+          "ipa": "ɑː bəʊθ ʃəʊn ɪn ðɪs tʃɑːt",
+          "phonetic": "ar BOHTH shown in this CHART"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "In summary",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ˈsʌməri",
+          "phonetic": "in SUM-uh-ree"
+        },
+        "american": {
+          "ipa": "ɪn ˈsʌməri",
+          "phonetic": "in SUM-uh-ree"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "percent",
+      "pronunciation": {
+        "british": {
+          "ipa": "pəˈsent",
+          "phonetic": "pur-SENT"
+        },
+        "american": {
+          "ipa": "pəˈsent",
+          "phonetic": "pur-SENT"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "percentages",
+      "pronunciation": {
+        "british": {
+          "ipa": "pəˈsentɪdʒɪz",
+          "phonetic": "pur-SEN-ti-jiz"
+        },
+        "american": {
+          "ipa": "pəˈsentɪdʒɪz",
+          "phonetic": "pur-SEN-ti-jiz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    }
+  ]
+}

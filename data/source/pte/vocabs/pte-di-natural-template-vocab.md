@@ -1,6 +1,6 @@
 # PTE DI Natural Template - Vocabulary with IPA
 
-**Total Terms:** 24
+**Total Terms:** 43
 
 > Practice these phrases in template order for DI speaking
 
@@ -48,6 +48,24 @@
 
 29. percent | /pəˈsent/ — sounds like **pur-SENT**
 30. percentages | /pəˈsentɪdʒɪz/ — sounds like **pur-SEN-ti-jiz**
+
+---
+
+## Template 4 Phrases (In Order)
+
+31. This picture | /ðɪs ˈpɪktʃə/ — sounds like **this PIK-chur**
+32. shows information about | /ʃəʊzˌɪnfəˈmeɪʃən əˈbaʊt/ — sounds like **SHOWZ-in-fur-MAY-shun uh-BOUT**
+33. Looking at the image | /ˈlʊkɪŋ ætðɪˈɪmɪdʒ/ — sounds like **LOOK-ing at-the-IM-ij** (linked: at͜the͜image)
+34. is on the top | /ɪzɒnðətɒp/ — sounds like **iz-on-the-TOP** (linked: i**s͜o**n)
+35. and connects to | /ənd kəˈnekts tuː/ — sounds like **and kuh-NEKTS too** (linked: connect**s͜t**o)
+36. On the left side | /ɒn ðə left saɪd/ — sounds like **on the LEFT side**
+37. can be found close to | /kæn biː faʊnd kləʊs tuː/ — sounds like **kan bee FOWND KLOHSS too**
+38. On the right side | /ɒn ðə raɪt saɪd/ — sounds like **on the RIGHT side**
+39. also appears in the picture | /ˈɔːlsəʊ əˈpɪəzɪnðəˈpɪktʃə/ — sounds like **AWL-soh uh-PEERZ in the PIK-chur**
+40. At the bottom | /ætðəˈbɒtəm/ — sounds like **at-the-BOT-um** (linked: a**t͜th**e)
+41. can also be seen in the picture | /kænˈɔːlsəʊ biː siːn/ — sounds like **kan AWL-soh bee SEEN**
+42. To sum up | /tuː sʌm ʌp/ — sounds like **too SUM up** (linked: sum͜up)
+43. the picture tells us about | /ðə ˈpɪktʃə telzʌs əˈbaʊt/ — sounds like **the PIK-chur TELZ-us uh-BOUT**
 
 ---
 

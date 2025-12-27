@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-12-27T21:02:28.515Z",
-    "totalTerms": 398,
+    "generated": "2025-12-27T21:44:41.096Z",
+    "totalTerms": 401,
     "source": "pte-hard-for-rs",
     "description": "Auto-discovered vocabulary book: pte-hard-for-rs",
     "version": "1.0",
@@ -277,6 +277,22 @@
         "american": {
           "ipa": "treɪnz",
           "phonetic": "TRAYNZ"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
+    },
+    {
+      "english": "import",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪmpɔːrt",
+          "phonetic": "IM-port"
+        },
+        "american": {
+          "ipa": "ˈɪmpɔːrt",
+          "phonetic": "IM-port"
         }
       },
       "difficulty": "normal",
@@ -3116,6 +3132,22 @@
       "source": "pte-hard-for-rs"
     },
     {
+      "english": "permits",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpɜːrmɪts",
+          "phonetic": "PUR-mits"
+        },
+        "american": {
+          "ipa": "ˈpɜːrmɪts",
+          "phonetic": "PUR-mits"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
+    },
+    {
       "english": "service",
       "pronunciation": {
         "british": {
@@ -4389,6 +4421,22 @@
         "american": {
           "ipa": "əˈsembəl",
           "phonetic": "uh-SEM-buhl"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-hard-for-rs",
+      "source": "pte-hard-for-rs"
+    },
+    {
+      "english": "permit",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpɜːrmɪt",
+          "phonetic": "PUR-mit"
+        },
+        "american": {
+          "ipa": "ˈpɜːrmɪt",
+          "phonetic": "PUR-mit"
         }
       },
       "difficulty": "normal",

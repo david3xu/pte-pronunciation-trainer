@@ -98,7 +98,7 @@ class PTETermsExtractor {
     // Format: /IPA/ — sounds like **PHONETIC**
     const parsePronunciation = (text) => {
       if (!text) return null;
-      const match = text.match(/^\/(.+?)\/\s*—\s*(?:sounds\s+like\s+)?\*\*(.+?)\*\*$/);
+      const match = text.match(/^\/(.+?)\/\s*—\s*(?:sounds\s+like\s+)?\*\*(.+?)\*\*/);
       if (!match) return null;
       return {
         ipa: match[1].trim(),
@@ -263,18 +263,21 @@ class PTEDataPipeline {
             continue;
           }
 
-          const unique = this.removeDuplicates(terms);
+          // Skip de-duplication for files that need to keep duplicates (like template vocab for practice flow)
+          const keepDuplicates = entry.id.includes('di-natural-template') || entry.keepDuplicates;
+          const processedTerms = keepDuplicates ? terms : this.removeDuplicates(terms);
           const dataset = {
             metadata: {
               generated: new Date().toISOString(),
-              totalTerms: unique.length,
+              totalTerms: processedTerms.length,
               source: entry.sourceType,
               description: entry.description,
               version: '1.0',
               categories: [entry.category],
-              hasIPA: true
+              hasIPA: true,
+              keepDuplicates: keepDuplicates
             },
-            vocabulary: unique
+            vocabulary: processedTerms
           };
 
           this.saveDataset(entry.output, dataset);

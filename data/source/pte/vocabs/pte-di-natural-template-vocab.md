@@ -1,6 +1,6 @@
 # PTE DI Natural Template - Vocabulary with IPA
 
-**Total Terms:** 55
+**Total Terms:** 59
 
 > Practice these phrases in template order for DI speaking
 
@@ -83,6 +83,15 @@
 53. can also be seen in the picture | /kænˈɔːlsəʊ biː siːn/ — sounds like **kan AWL-soh bee SEEN**
 54. To sum up | /tuː sʌm ʌp/ — sounds like **too SUM up** (linked: sum͜up)
 55. the picture tells us about | /ðə ˈpɪktʃə telzʌs əˈbaʊt/ — sounds like **the PIK-chur TELZ-us uh-BOUT**
+
+---
+
+## Template 5 Phrases (In Order)
+
+56. This chart | /ðɪs tʃɑːt/ — sounds like **this CHART**
+57. the main items include | /ðəmeɪn ˈaɪtəmz ɪnˈkluːd/ — sounds like **the MAYN EYE-tumz in-KLOOD** (linked: main͜items)
+58. The other items can be found in | /ðiˈʌðər ˈaɪtəmz kæn biː faʊnd ɪn/ — sounds like **thee UH-thur EYE-tumz kan bee FOWND in**
+59. are both shown in this chart | /ɑː bəʊθ ʃəʊn ɪn ðɪs tʃɑːt/ — sounds like **ar BOHTH shown in this CHART**
 
 ---
 

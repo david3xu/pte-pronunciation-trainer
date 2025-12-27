@@ -833,7 +833,7 @@ export class TTSEngine {
     // Check if user has selected a preferred voice in settings
     const preferredName = useAppStore.getState().settings.ttsVoice;
 
-    if (preferredName) {
+    if (preferredName && preferredName !== 'premium') {
       // Try exact match first
       const exactMatch = voices.find(v => v.name === preferredName);
       if (exactMatch) return exactMatch;
@@ -843,31 +843,34 @@ export class TTSEngine {
       if (partialMatch) return partialMatch;
     }
 
-    // STRICT FILTER: Prioritize Male Australian or UK voices
+    // PRIORITY: British Female voices for natural PTE pronunciation
 
-    // 1. Australian Male
-    // iOS/macOS often uses "Gordon" for AU Male. Chrome uses "Google Australian English" (often female/neutral but sometimes male depending on OS).
-    const auMale = voices.find(v =>
-      (v.lang === 'en-AU' || v.lang === 'en_AU') &&
-      (v.name.toLowerCase().includes('male') || v.name.includes('Russell') || v.name.includes('Gordon'))
-    );
-    if (auMale) return auMale;
-
-    // 2. UK Male
-    // iOS/macOS uses "Daniel" for UK Male.
-    const ukMale = voices.find(v =>
+    // 1. UK Female (Google UK English Female is widely available and high quality)
+    const ukFemale = voices.find(v =>
       (v.lang === 'en-GB' || v.lang === 'en_GB') &&
-      (v.name.toLowerCase().includes('male') || v.name.includes('Brian') || v.name.includes('Arthur') || v.name.includes('Daniel'))
+      (v.name.toLowerCase().includes('female') ||
+       v.name.includes('Google UK English Female') ||
+       v.name.includes('Kate') || // macOS/iOS UK Female
+       v.name.includes('Serena')) // Another UK Female option
     );
-    if (ukMale) return ukMale;
+    if (ukFemale) return ukFemale;
 
-    // 3. Any Australian Voice
-    const auAny = voices.find(v => v.lang === 'en-AU' || v.lang === 'en_AU');
-    if (auAny) return auAny;
+    // 2. Australian Female
+    const auFemale = voices.find(v =>
+      (v.lang === 'en-AU' || v.lang === 'en_AU') &&
+      (v.name.toLowerCase().includes('female') ||
+       v.name.includes('Karen') || // macOS/iOS AU Female
+       v.name.includes('Google Australian English'))
+    );
+    if (auFemale) return auFemale;
 
-    // 4. Any UK Voice
+    // 3. Any UK Voice
     const ukAny = voices.find(v => v.lang === 'en-GB' || v.lang === 'en_GB');
     if (ukAny) return ukAny;
+
+    // 4. Any Australian Voice
+    const auAny = voices.find(v => v.lang === 'en-AU' || v.lang === 'en_AU');
+    if (auAny) return auAny;
 
     // Fallback: Try to match requested language
     if (lang) {

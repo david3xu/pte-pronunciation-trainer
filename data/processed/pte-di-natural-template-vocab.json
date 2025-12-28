@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-12-28T00:04:30.241Z",
-    "totalTerms": 104,
+    "generated": "2025-12-28T01:31:55.569Z",
+    "totalTerms": 107,
     "source": "pte-di-natural-template-vocab",
     "description": "Auto-discovered vocabulary book: pte-di-natural-template-vocab",
     "version": "1.0",
@@ -237,15 +237,15 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "From this",
+      "english": "To sum up",
       "pronunciation": {
         "british": {
-          "ipa": "frɒmðɪs",
-          "phonetic": "from-THIS"
+          "ipa": "tuː sʌm ʌp",
+          "phonetic": "too SUM up"
         },
         "american": {
-          "ipa": "frɒmðɪs",
-          "phonetic": "from-THIS"
+          "ipa": "tuː sʌm ʌp",
+          "phonetic": "too SUM up"
         }
       },
       "difficulty": "normal",
@@ -253,15 +253,15 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "the data tells us about",
+      "english": "this chart tells us about",
       "pronunciation": {
         "british": {
-          "ipa": "ðə ˈdeɪtə telzʌs əˈbaʊt",
-          "phonetic": "the DAY-tuh TELZ-us uh-BOUT"
+          "ipa": "ðɪs tʃɑːt telzʌs əˈbaʊt",
+          "phonetic": "this CHART TELZ-us uh-BOUT"
         },
         "american": {
-          "ipa": "ðə ˈdeɪtə telzʌs əˈbaʊt",
-          "phonetic": "the DAY-tuh TELZ-us uh-BOUT"
+          "ipa": "ðɪs tʃɑːt telzʌs əˈbaʊt",
+          "phonetic": "this CHART TELZ-us uh-BOUT"
         }
       },
       "difficulty": "hard",
@@ -429,31 +429,31 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "In summary",
+      "english": "To sum up",
       "pronunciation": {
         "british": {
-          "ipa": "ɪn ˈsʌməri",
-          "phonetic": "in SUM-uh-ree"
+          "ipa": "tuː sʌm ʌp",
+          "phonetic": "too SUM up"
         },
         "american": {
-          "ipa": "ɪn ˈsʌməri",
-          "phonetic": "in SUM-uh-ree"
+          "ipa": "tuː sʌm ʌp",
+          "phonetic": "too SUM up"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-di-natural-template-vocab",
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "the data tells us about",
+      "english": "this chart tells us about",
       "pronunciation": {
         "british": {
-          "ipa": "ðə ˈdeɪtə telz ʌs əˈbaʊt",
-          "phonetic": "the DAY-tuh TELZ us uh-BOUT"
+          "ipa": "ðɪs tʃɑːt telz ʌs əˈbaʊt",
+          "phonetic": "this CHART TELZ us uh-BOUT"
         },
         "american": {
-          "ipa": "ðə ˈdeɪtə telz ʌs əˈbaʊt",
-          "phonetic": "the DAY-tuh TELZ us uh-BOUT"
+          "ipa": "ðɪs tʃɑːt telz ʌs əˈbaʊt",
+          "phonetic": "this CHART TELZ us uh-BOUT"
         }
       },
       "difficulty": "hard",
@@ -493,15 +493,15 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "This diagram",
+      "english": "This picture",
       "pronunciation": {
         "british": {
-          "ipa": "ðɪs ˈdaɪəɡræm",
-          "phonetic": "this DY-uh-gram"
+          "ipa": "ðɪs ˈpɪktʃə",
+          "phonetic": "this PIK-chur"
         },
         "american": {
-          "ipa": "ðɪs ˈdaɪəɡræm",
-          "phonetic": "this DY-uh-gram"
+          "ipa": "ðɪs ˈpɪktʃə",
+          "phonetic": "this PIK-chur"
         }
       },
       "difficulty": "hard",
@@ -525,15 +525,15 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "At the start",
+      "english": "Looking at the picture",
       "pronunciation": {
         "british": {
-          "ipa": "ætðəstɑːt",
-          "phonetic": "at-the-START"
+          "ipa": "ˈlʊkɪŋ ætðəˈpɪktʃə",
+          "phonetic": "LOOK-ing at the PIK-chur"
         },
         "american": {
-          "ipa": "ætðəstɑːt",
-          "phonetic": "at-the-START"
+          "ipa": "ˈlʊkɪŋ ætðəˈpɪktʃə",
+          "phonetic": "LOOK-ing at the PIK-chur"
         }
       },
       "difficulty": "hard",
@@ -541,15 +541,15 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "can be seen at",
+      "english": "we can see that",
       "pronunciation": {
         "british": {
-          "ipa": "kænbiːsiːnæt",
-          "phonetic": "kan bee SEEN at"
+          "ipa": "wiː kæn siː ðæt",
+          "phonetic": "wee kan SEE that"
         },
         "american": {
-          "ipa": "kænbiːsiːnæt",
-          "phonetic": "kan bee SEEN at"
+          "ipa": "wiː kæn siː ðæt",
+          "phonetic": "wee kan SEE that"
         }
       },
       "difficulty": "hard",
@@ -557,15 +557,31 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "Following that",
+      "english": "appears at",
       "pronunciation": {
         "british": {
-          "ipa": "ˈfɒləʊɪŋ ðæt",
-          "phonetic": "FOL-oh-wing THAT"
+          "ipa": "əˈpɪəz æt",
+          "phonetic": "uh-PEERZ at"
         },
         "american": {
-          "ipa": "ˈfɒləʊɪŋ ðæt",
-          "phonetic": "FOL-oh-wing THAT"
+          "ipa": "əˈpɪəz æt",
+          "phonetic": "uh-PEERZ at"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "As the process continues",
+      "pronunciation": {
+        "british": {
+          "ipa": "æz ðə ˈprəʊses kənˈtɪnjuːz",
+          "phonetic": "az the PROH-ses kun-TIN-yooz"
+        },
+        "american": {
+          "ipa": "æz ðə ˈprəʊses kənˈtɪnjuːz",
+          "phonetic": "az the PROH-ses kun-TIN-yooz"
         }
       },
       "difficulty": "hard",
@@ -589,15 +605,15 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "leading to",
+      "english": "which leads to",
       "pronunciation": {
         "british": {
-          "ipa": "ˈliːdɪŋ tuː",
-          "phonetic": "LEE-ding too"
+          "ipa": "wɪtʃ liːdz tuː",
+          "phonetic": "which LEEDZ too"
         },
         "american": {
-          "ipa": "ˈliːdɪŋ tuː",
-          "phonetic": "LEE-ding too"
+          "ipa": "wɪtʃ liːdz tuː",
+          "phonetic": "which LEEDZ too"
         }
       },
       "difficulty": "hard",
@@ -605,15 +621,15 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "After that",
+      "english": "This is followed by",
       "pronunciation": {
         "british": {
-          "ipa": "ˈɑːftə ðæt",
-          "phonetic": "AHF-ter THAT"
+          "ipa": "ðɪs ɪz ˈfɒləʊd baɪ",
+          "phonetic": "this iz FOL-ohd by"
         },
         "american": {
-          "ipa": "ˈɑːftə ðæt",
-          "phonetic": "AHF-ter THAT"
+          "ipa": "ðɪs ɪz ˈfɒləʊd baɪ",
+          "phonetic": "this iz FOL-ohd by"
         }
       },
       "difficulty": "hard",
@@ -621,15 +637,31 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "happens at",
+      "english": "happening at",
       "pronunciation": {
         "british": {
-          "ipa": "ˈhæpənz æt",
-          "phonetic": "HAP-unz at"
+          "ipa": "ˈhæpənɪŋ æt",
+          "phonetic": "HAP-un-ing at"
         },
         "american": {
-          "ipa": "ˈhæpənz æt",
-          "phonetic": "HAP-unz at"
+          "ipa": "ˈhæpənɪŋ æt",
+          "phonetic": "HAP-un-ing at"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "in the picture",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ðə ˈpɪktʃə",
+          "phonetic": "in the PIK-chur"
+        },
+        "american": {
+          "ipa": "ɪn ðə ˈpɪktʃə",
+          "phonetic": "in the PIK-chur"
         }
       },
       "difficulty": "hard",
@@ -653,31 +685,31 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "To conclude",
+      "english": "To sum up",
       "pronunciation": {
         "british": {
-          "ipa": "tuː kənˈkluːd",
-          "phonetic": "too kun-KLOOD"
+          "ipa": "tuː sʌm ʌp",
+          "phonetic": "too SUM up"
         },
         "american": {
-          "ipa": "tuː kənˈkluːd",
-          "phonetic": "too kun-KLOOD"
+          "ipa": "tuː sʌm ʌp",
+          "phonetic": "too SUM up"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-di-natural-template-vocab",
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "this diagram tells us about",
+      "english": "this picture tells us about",
       "pronunciation": {
         "british": {
-          "ipa": "ðɪsˈdaɪəɡræm telzʌs əˈbaʊt",
-          "phonetic": "this DY-uh-gram TELZ-us uh-BOUT"
+          "ipa": "ðɪsˈpɪktʃə telzʌs əˈbaʊt",
+          "phonetic": "this PIK-chur TELZ-us uh-BOUT"
         },
         "american": {
-          "ipa": "ðɪsˈdaɪəɡræm telzʌs əˈbaʊt",
-          "phonetic": "this DY-uh-gram TELZ-us uh-BOUT"
+          "ipa": "ðɪsˈpɪktʃə telzʌs əˈbaʊt",
+          "phonetic": "this PIK-chur TELZ-us uh-BOUT"
         }
       },
       "difficulty": "hard",
@@ -704,11 +736,11 @@
       "english": "shows information about",
       "pronunciation": {
         "british": {
-          "ipa": "ʃəʊzˌɪnfəˈmeɪʃən əˈbaʊt",
+          "ipa": "ʃəʊzˌinfəˈmeɪʃən əˈbaʊt",
           "phonetic": "SHOWZ-in-fur-MAY-shun uh-BOUT"
         },
         "american": {
-          "ipa": "ʃəʊzˌɪnfəˈmeɪʃən əˈbaʊt",
+          "ipa": "ʃəʊzˌinfəˈmeɪʃən əˈbaʊt",
           "phonetic": "SHOWZ-in-fur-MAY-shun uh-BOUT"
         }
       },
@@ -957,6 +989,38 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
+      "english": "To sum up",
+      "pronunciation": {
+        "british": {
+          "ipa": "tuː sʌm ʌp",
+          "phonetic": "too SUM up"
+        },
+        "american": {
+          "ipa": "tuː sʌm ʌp",
+          "phonetic": "too SUM up"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "this chart tells us about",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs tʃɑːt telz ʌs əˈbaʊt",
+          "phonetic": "this CHART TELZ us uh-BOUT"
+        },
+        "american": {
+          "ipa": "ðɪs tʃɑːt telz ʌs əˈbaʊt",
+          "phonetic": "this CHART TELZ us uh-BOUT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
       "english": "we can see that",
       "pronunciation": {
         "british": {
@@ -998,22 +1062,6 @@
         "american": {
           "ipa": "ɒn ðiː ˈʌðə hænd",
           "phonetic": "on thee UH-thur HAND"
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-di-natural-template-vocab",
-      "source": "pte-di-natural-template-vocab"
-    },
-    {
-      "english": "we can conclude that",
-      "pronunciation": {
-        "british": {
-          "ipa": "wiː kæn kənˈkluːd ðæt",
-          "phonetic": "wee kan kun-KLOOD that"
-        },
-        "american": {
-          "ipa": "wiː kæn kənˈkluːd ðæt",
-          "phonetic": "wee kan kun-KLOOD that"
         }
       },
       "difficulty": "hard",
@@ -1069,15 +1117,15 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "in the diagram",
+      "english": "in the picture",
       "pronunciation": {
         "british": {
-          "ipa": "ɪn ðə ˈdaɪəɡræm",
-          "phonetic": "in the DY-uh-gram"
+          "ipa": "ɪn ðə ˈpɪktʃə",
+          "phonetic": "in the PIK-chur"
         },
         "american": {
-          "ipa": "ɪn ðə ˈdaɪəɡræm",
-          "phonetic": "in the DY-uh-gram"
+          "ipa": "ɪn ðə ˈpɪktʃə",
+          "phonetic": "in the PIK-chur"
         }
       },
       "difficulty": "hard",
@@ -1181,15 +1229,15 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "is important in this context",
+      "english": "are important in this context",
       "pronunciation": {
         "british": {
-          "ipa": "ɪz ɪmˈpɔːtənt ɪn ðɪs ˈkɒntekst",
-          "phonetic": "iz im-POR-tunt in this KON-tekst"
+          "ipa": "ɑː ɪmˈpɔːtənt ɪn ðɪs ˈkɒntekst",
+          "phonetic": "ar im-POR-tunt in this KON-tekst"
         },
         "american": {
-          "ipa": "ɪz ɪmˈpɔːtənt ɪn ðɪs ˈkɒntekst",
-          "phonetic": "iz im-POR-tunt in this KON-tekst"
+          "ipa": "ɑː ɪmˈpɔːtənt ɪn ðɪs ˈkɒntekst",
+          "phonetic": "ar im-POR-tunt in this KON-tekst"
         }
       },
       "difficulty": "hard",
@@ -1245,15 +1293,15 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "are mentioned as key points",
+      "english": "is mentioned as a key point",
       "pronunciation": {
         "british": {
-          "ipa": "ɑː ˈmenʃənd æz kiː pɔɪnts",
-          "phonetic": "ar MEN-shund az KEE points"
+          "ipa": "ɪz ˈmenʃənd æz kiː pɔɪnt",
+          "phonetic": "iz MEN-shund az KEE point"
         },
         "american": {
-          "ipa": "ɑː ˈmenʃənd æz kiː pɔɪnts",
-          "phonetic": "ar MEN-shund az KEE points"
+          "ipa": "ɪz ˈmenʃənd æz kiː pɔɪnt",
+          "phonetic": "iz MEN-shund az KEE point"
         }
       },
       "difficulty": "hard",

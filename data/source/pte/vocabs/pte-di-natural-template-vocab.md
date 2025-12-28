@@ -198,7 +198,6 @@
 
 | Word | Often Misheard As |
 |------|-------------------|
-| "pie chart" | "approach" |
 | "appears in" | "passive" |
 | "Following that" | "for that" |
 | "can be found in" | "keeping funding" |

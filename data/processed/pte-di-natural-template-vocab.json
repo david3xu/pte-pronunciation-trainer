@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-12-28T03:13:41.704Z",
-    "totalTerms": 116,
+    "generated": "2025-12-28T04:02:27.360Z",
+    "totalTerms": 122,
     "source": "pte-di-natural-template-vocab",
     "description": "Auto-discovered vocabulary book: pte-di-natural-template-vocab",
     "version": "1.0",
@@ -13,47 +13,15 @@
   },
   "vocabulary": [
     {
-      "english": "This pie chart",
+      "english": "This picture",
       "pronunciation": {
         "british": {
-          "ipa": "ðɪs paɪ tʃɑːt",
-          "phonetic": "this PIE chart"
+          "ipa": "ðɪs ˈpɪktʃə",
+          "phonetic": "this PIK-chur"
         },
         "american": {
-          "ipa": "ðɪs paɪ tʃɑːt",
-          "phonetic": "this PIE chart"
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-di-natural-template-vocab",
-      "source": "pte-di-natural-template-vocab"
-    },
-    {
-      "english": "This bar chart",
-      "pronunciation": {
-        "british": {
-          "ipa": "ðɪs bɑː tʃɑːt",
-          "phonetic": "this BAR chart"
-        },
-        "american": {
-          "ipa": "ðɪs bɑː tʃɑːt",
-          "phonetic": "this BAR chart"
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-di-natural-template-vocab",
-      "source": "pte-di-natural-template-vocab"
-    },
-    {
-      "english": "This line graph",
-      "pronunciation": {
-        "british": {
-          "ipa": "ðɪs laɪn ɡrɑːf",
-          "phonetic": "this LINE graf"
-        },
-        "american": {
-          "ipa": "ðɪs laɪn ɡrɑːf",
-          "phonetic": "this LINE graf"
+          "ipa": "ðɪs ˈpɪktʃə",
+          "phonetic": "this PIK-chur"
         }
       },
       "difficulty": "hard",
@@ -93,6 +61,22 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
+      "english": "we can see that",
+      "pronunciation": {
+        "british": {
+          "ipa": "wiː kæn siː ðæt",
+          "phonetic": "wee kan SEE that"
+        },
+        "american": {
+          "ipa": "wiː kæn siː ðæt",
+          "phonetic": "wee kan SEE that"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
       "english": "the highest number appears in",
       "pronunciation": {
         "british": {
@@ -109,18 +93,18 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "close to",
+      "english": "which is close to",
       "pronunciation": {
         "british": {
-          "ipa": "kləʊstuː",
-          "phonetic": "KLOHSS-too"
+          "ipa": "wɪtʃ ɪz kləʊs tuː",
+          "phonetic": "which iz KLOHSS too"
         },
         "american": {
-          "ipa": "kləʊstuː",
-          "phonetic": "KLOHSS-too"
+          "ipa": "wɪtʃ ɪz kləʊs tuː",
+          "phonetic": "which iz KLOHSS too"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-di-natural-template-vocab",
       "source": "pte-di-natural-template-vocab"
     },
@@ -141,15 +125,15 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "comes second",
+      "english": "comes second in the picture",
       "pronunciation": {
         "british": {
-          "ipa": "kʌmzˈsekənd",
-          "phonetic": "KUMZ-SEK-und"
+          "ipa": "kʌmz ˈsekənd ɪn ðə ˈpɪktʃə",
+          "phonetic": "KUMZ SEK-und in the PIK-chur"
         },
         "american": {
-          "ipa": "kʌmzˈsekənd",
-          "phonetic": "KUMZ-SEK-und"
+          "ipa": "kʌmz ˈsekənd ɪn ðə ˈpɪktʃə",
+          "phonetic": "KUMZ SEK-und in the PIK-chur"
         }
       },
       "difficulty": "hard",
@@ -173,7 +157,23 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "The lowest can be found in",
+      "english": "On the other hand",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɒn ðiː ˈʌðə hænd",
+          "phonetic": "on thee UH-thur HAND"
+        },
+        "american": {
+          "ipa": "ɒn ðiː ˈʌðə hænd",
+          "phonetic": "on thee UH-thur HAND"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "the lowest can be found in",
       "pronunciation": {
         "british": {
           "ipa": "ðə ˈləʊɪst kæn biː faʊnd ɪn",
@@ -205,31 +205,15 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "also feature in",
+      "english": "also feature in this picture",
       "pronunciation": {
         "british": {
-          "ipa": "ˈɔːlsəʊˈfiːtʃərɪn",
-          "phonetic": "AWL-soh-FEE-chur-in"
+          "ipa": "ˈɔːlsəʊ ˈfiːtʃər ɪn ðɪs ˈpɪktʃə",
+          "phonetic": "AWL-soh FEE-chur in this PIK-chur"
         },
         "american": {
-          "ipa": "ˈɔːlsəʊˈfiːtʃərɪn",
-          "phonetic": "AWL-soh-FEE-chur-in"
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-di-natural-template-vocab",
-      "source": "pte-di-natural-template-vocab"
-    },
-    {
-      "english": "this chart",
-      "pronunciation": {
-        "british": {
-          "ipa": "ðɪs tʃɑːt",
-          "phonetic": "this CHART"
-        },
-        "american": {
-          "ipa": "ðɪs tʃɑːt",
-          "phonetic": "this CHART"
+          "ipa": "ˈɔːlsəʊ ˈfiːtʃər ɪn ðɪs ˈpɪktʃə",
+          "phonetic": "AWL-soh FEE-chur in this PIK-chur"
         }
       },
       "difficulty": "hard",
@@ -256,12 +240,28 @@
       "english": "this picture tells us about",
       "pronunciation": {
         "british": {
-          "ipa": "ðɪs tʃɑːt telzʌs əˈbaʊt",
-          "phonetic": "this CHART TELZ-us uh-BOUT"
+          "ipa": "ðɪs ˈpɪktʃə telz ʌs əˈbaʊt",
+          "phonetic": "this PIK-chur TELZ us uh-BOUT"
         },
         "american": {
-          "ipa": "ðɪs tʃɑːt telzʌs əˈbaʊt",
-          "phonetic": "this CHART TELZ-us uh-BOUT"
+          "ipa": "ðɪs ˈpɪktʃə telz ʌs əˈbaʊt",
+          "phonetic": "this PIK-chur TELZ us uh-BOUT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "This picture",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs ˈpɪktʃə",
+          "phonetic": "this PIK-chur"
+        },
+        "american": {
+          "ipa": "ðɪs ˈpɪktʃə",
+          "phonetic": "this PIK-chur"
         }
       },
       "difficulty": "hard",
@@ -285,15 +285,63 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "Looking at",
+      "english": "There are multiple groups",
       "pronunciation": {
         "british": {
-          "ipa": "ˈlʊkɪŋ æt",
-          "phonetic": "LOOK-ing at"
+          "ipa": "ðeər ɑː ˈmʌltɪpəl ɡruːps",
+          "phonetic": "thair ar MUL-tih-pul GROOPS"
         },
         "american": {
-          "ipa": "ˈlʊkɪŋ æt",
-          "phonetic": "LOOK-ing at"
+          "ipa": "ðeər ɑː ˈmʌltɪpəl ɡruːps",
+          "phonetic": "thair ar MUL-tih-pul GROOPS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "including",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈkluːdɪŋ",
+          "phonetic": "in-KLOO-ding"
+        },
+        "american": {
+          "ipa": "ɪnˈkluːdɪŋ",
+          "phonetic": "in-KLOO-ding"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "Looking at group",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlʊkɪŋ æt ɡruːp",
+          "phonetic": "LOOK-ing at GROOP"
+        },
+        "american": {
+          "ipa": "ˈlʊkɪŋ æt ɡruːp",
+          "phonetic": "LOOK-ing at GROOP"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "we can see that",
+      "pronunciation": {
+        "british": {
+          "ipa": "wiː kæn siː ðæt",
+          "phonetic": "wee kan SEE that"
+        },
+        "american": {
+          "ipa": "wiː kæn siː ðæt",
+          "phonetic": "wee kan SEE that"
         }
       },
       "difficulty": "hard",
@@ -317,23 +365,39 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "close to",
+      "english": "which is close to",
       "pronunciation": {
         "british": {
-          "ipa": "kləʊs tuː",
-          "phonetic": "KLOHSS too"
+          "ipa": "wɪtʃ ɪz kləʊs tuː",
+          "phonetic": "which iz KLOHSS too"
         },
         "american": {
-          "ipa": "kləʊs tuː",
-          "phonetic": "KLOHSS too"
+          "ipa": "wɪtʃ ɪz kləʊs tuː",
+          "phonetic": "which iz KLOHSS too"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-di-natural-template-vocab",
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "The lowest number can be found in",
+      "english": "On the other hand",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɒn ðiː ˈʌðə hænd",
+          "phonetic": "on thee UH-thur HAND"
+        },
+        "american": {
+          "ipa": "ɒn ðiː ˈʌðə hænd",
+          "phonetic": "on thee UH-thur HAND"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "the lowest number can be found in",
       "pronunciation": {
         "british": {
           "ipa": "ðə ˈləʊɪst ˈnʌmbə kæn biː faʊnd ɪn",
@@ -365,31 +429,31 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "Moving to",
+      "english": "Moving to group",
       "pronunciation": {
         "british": {
-          "ipa": "ˈmuːvɪŋtuː",
-          "phonetic": "MOO-ving-too"
+          "ipa": "ˈmuːvɪŋ tuː ɡruːp",
+          "phonetic": "MOO-ving too GROOP"
         },
         "american": {
-          "ipa": "ˈmuːvɪŋtuː",
-          "phonetic": "MOO-ving-too"
+          "ipa": "ˈmuːvɪŋ tuː ɡruːp",
+          "phonetic": "MOO-ving too GROOP"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "hard",
       "category": "pte-di-natural-template-vocab",
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "the highest is in",
+      "english": "the top value is in",
       "pronunciation": {
         "british": {
-          "ipa": "ðə ˈhaɪɪst ɪzɪn",
-          "phonetic": "the HY-ist IZ-in"
+          "ipa": "ðə tɒp ˈvæljuː ɪz ɪn",
+          "phonetic": "the TOP VAL-yoo iz in"
         },
         "american": {
-          "ipa": "ðə ˈhaɪɪst ɪzɪn",
-          "phonetic": "the HY-ist IZ-in"
+          "ipa": "ðə tɒp ˈvæljuː ɪz ɪn",
+          "phonetic": "the TOP VAL-yoo iz in"
         }
       },
       "difficulty": "hard",
@@ -413,22 +477,6 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "are both shown in this chart",
-      "pronunciation": {
-        "british": {
-          "ipa": "ɑː bəʊθ ʃəʊn ɪn ðɪs tʃɑːt",
-          "phonetic": "ar BOHTH shown in this CHART"
-        },
-        "american": {
-          "ipa": "ɑː bəʊθ ʃəʊn ɪn ðɪs tʃɑːt",
-          "phonetic": "ar BOHTH shown in this CHART"
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-di-natural-template-vocab",
-      "source": "pte-di-natural-template-vocab"
-    },
-    {
       "english": "To sum up",
       "pronunciation": {
         "british": {
@@ -448,12 +496,12 @@
       "english": "this picture tells us about",
       "pronunciation": {
         "british": {
-          "ipa": "ðɪs tʃɑːt telz ʌs əˈbaʊt",
-          "phonetic": "this CHART TELZ us uh-BOUT"
+          "ipa": "ðɪs ˈpɪktʃə telz ʌs əˈbaʊt",
+          "phonetic": "this PIK-chur TELZ us uh-BOUT"
         },
         "american": {
-          "ipa": "ðɪs tʃɑːt telz ʌs əˈbaʊt",
-          "phonetic": "this CHART TELZ us uh-BOUT"
+          "ipa": "ðɪs ˈpɪktʃə telz ʌs əˈbaʊt",
+          "phonetic": "this PIK-chur TELZ us uh-BOUT"
         }
       },
       "difficulty": "hard",
@@ -678,6 +726,54 @@
         "american": {
           "ipa": "ðəˈsaɪkəl ðen rɪˈtɜːnz tuː",
           "phonetic": "the SY-kul then ree-TURNZ too"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "On the other hand",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɒn ðiː ˈʌðə hænd",
+          "phonetic": "on thee UH-thur HAND"
+        },
+        "american": {
+          "ipa": "ɒn ðiː ˈʌðə hænd",
+          "phonetic": "on thee UH-thur HAND"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "has a different",
+      "pronunciation": {
+        "british": {
+          "ipa": "hæz ə ˈdɪfrənt",
+          "phonetic": "haz uh DIF-runt"
+        },
+        "american": {
+          "ipa": "hæz ə ˈdɪfrənt",
+          "phonetic": "haz uh DIF-runt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "compared to",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəmˈpeəd tuː",
+          "phonetic": "kum-PAIRED too"
+        },
+        "american": {
+          "ipa": "kəmˈpeəd tuː",
+          "phonetic": "kum-PAIRED too"
         }
       },
       "difficulty": "hard",
@@ -928,12 +1024,12 @@
       "english": "This picture",
       "pronunciation": {
         "british": {
-          "ipa": "ðɪs tʃɑːt",
-          "phonetic": "this CHART"
+          "ipa": "ðɪs ˈpɪktʃə",
+          "phonetic": "this PIK-chur"
         },
         "american": {
-          "ipa": "ðɪs tʃɑːt",
-          "phonetic": "this CHART"
+          "ipa": "ðɪs ˈpɪktʃə",
+          "phonetic": "this PIK-chur"
         }
       },
       "difficulty": "hard",
@@ -973,15 +1069,15 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "are both shown in this chart",
+      "english": "are all shown in this picture",
       "pronunciation": {
         "british": {
-          "ipa": "ɑː bəʊθ ʃəʊn ɪn ðɪs tʃɑːt",
-          "phonetic": "ar BOHTH shown in this CHART"
+          "ipa": "ɑː ɔːl ʃəʊn ɪn ðɪs ˈpɪktʃə",
+          "phonetic": "ar AWL shown in this PIK-chur"
         },
         "american": {
-          "ipa": "ɑː bəʊθ ʃəʊn ɪn ðɪs tʃɑːt",
-          "phonetic": "ar BOHTH shown in this CHART"
+          "ipa": "ɑː ɔːl ʃəʊn ɪn ðɪs ˈpɪktʃə",
+          "phonetic": "ar AWL shown in this PIK-chur"
         }
       },
       "difficulty": "hard",
@@ -1008,12 +1104,12 @@
       "english": "this picture tells us about",
       "pronunciation": {
         "british": {
-          "ipa": "ðɪs tʃɑːt telz ʌs əˈbaʊt",
-          "phonetic": "this CHART TELZ us uh-BOUT"
+          "ipa": "ðɪs ˈpɪktʃə telz ʌs əˈbaʊt",
+          "phonetic": "this PIK-chur TELZ us uh-BOUT"
         },
         "american": {
-          "ipa": "ðɪs tʃɑːt telz ʌs əˈbaʊt",
-          "phonetic": "this CHART TELZ us uh-BOUT"
+          "ipa": "ðɪs ˈpɪktʃə telz ʌs əˈbaʊt",
+          "phonetic": "this PIK-chur TELZ us uh-BOUT"
         }
       },
       "difficulty": "hard",
@@ -1072,12 +1168,12 @@
       "english": "comes second in the picture",
       "pronunciation": {
         "british": {
-          "ipa": "kʌmz ˈsekənd ɪn ðə tʃɑːt",
-          "phonetic": "KUMZ SEK-und in the picture"
+          "ipa": "kʌmz ˈsekənd ɪn ðə ˈpɪktʃə",
+          "phonetic": "KUMZ SEK-und in the PIK-chur"
         },
         "american": {
-          "ipa": "kʌmz ˈsekənd ɪn ðə tʃɑːt",
-          "phonetic": "KUMZ SEK-und in the picture"
+          "ipa": "kʌmz ˈsekənd ɪn ðə ˈpɪktʃə",
+          "phonetic": "KUMZ SEK-und in the PIK-chur"
         }
       },
       "difficulty": "hard",

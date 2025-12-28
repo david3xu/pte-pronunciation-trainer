@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-12-27T22:20:15.521Z",
-    "totalTerms": 82,
+    "generated": "2025-12-28T00:04:30.241Z",
+    "totalTerms": 104,
     "source": "pte-di-natural-template-vocab",
     "description": "Auto-discovered vocabulary book: pte-di-natural-template-vocab",
     "version": "1.0",
@@ -1318,6 +1318,358 @@
         "american": {
           "ipa": "ðə ˈlektʃə ɪz ˈmeɪnli əˈbaʊt",
           "phonetic": "the LEK-chur iz MAYN-lee uh-BOUT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "The discussion is about",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə dɪˈskʌʃən ɪz əˈbaʊt",
+          "phonetic": "the dis-KUH-shun iz uh-BOUT"
+        },
+        "american": {
+          "ipa": "ðə dɪˈskʌʃən ɪz əˈbaʊt",
+          "phonetic": "the dis-KUH-shun iz uh-BOUT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "The first speaker talks about",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə fɜːst ˈspiːkə tɔːks əˈbaʊt",
+          "phonetic": "the FIRST SPEE-kur TAWKS uh-BOUT"
+        },
+        "american": {
+          "ipa": "ðə fɜːst ˈspiːkə tɔːks əˈbaʊt",
+          "phonetic": "the FIRST SPEE-kur TAWKS uh-BOUT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "are related to",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɑː rɪˈleɪtɪd tuː",
+          "phonetic": "ar ree-LAY-tid too"
+        },
+        "american": {
+          "ipa": "ɑː rɪˈleɪtɪd tuː",
+          "phonetic": "ar ree-LAY-tid too"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "are important in this context",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɑː ɪmˈpɔːtənt ɪn ðɪs ˈkɒntekst",
+          "phonetic": "ar im-POR-tunt in this KON-tekst"
+        },
+        "american": {
+          "ipa": "ɑː ɪmˈpɔːtənt ɪn ðɪs ˈkɒntekst",
+          "phonetic": "ar im-POR-tunt in this KON-tekst"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "is also discussed as a challenge",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪz ˈɔːlsəʊ dɪˈskʌst æz ə ˈtʃælɪndʒ",
+          "phonetic": "iz AWL-soh dis-KUST az uh CHAL-inj"
+        },
+        "american": {
+          "ipa": "ɪz ˈɔːlsəʊ dɪˈskʌst æz ə ˈtʃælɪndʒ",
+          "phonetic": "iz AWL-soh dis-KUST az uh CHAL-inj"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "The speaker concludes that",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈspiːkə kənˈkluːdz ðæt",
+          "phonetic": "the SPEE-kur kun-KLOODZ that"
+        },
+        "american": {
+          "ipa": "ðə ˈspiːkə kənˈkluːdz ðæt",
+          "phonetic": "the SPEE-kur kun-KLOODZ that"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "are the key points",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɑː ðə kiː pɔɪnts",
+          "phonetic": "ar the KEE points"
+        },
+        "american": {
+          "ipa": "ɑː ðə kiː pɔɪnts",
+          "phonetic": "ar the KEE points"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "Moving to the second speaker",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmuːvɪŋ tuː ðə ˈsekənd ˈspiːkə",
+          "phonetic": "MOO-ving too the SEK-und SPEE-kur"
+        },
+        "american": {
+          "ipa": "ˈmuːvɪŋ tuː ðə ˈsekənd ˈspiːkə",
+          "phonetic": "MOO-ving too the SEK-und SPEE-kur"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "who discusses",
+      "pronunciation": {
+        "british": {
+          "ipa": "huː dɪˈskʌsɪz",
+          "phonetic": "hoo dis-KUS-iz"
+        },
+        "american": {
+          "ipa": "huː dɪˈskʌsɪz",
+          "phonetic": "hoo dis-KUS-iz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "play a role",
+      "pronunciation": {
+        "british": {
+          "ipa": "pleɪ ə rəʊl",
+          "phonetic": "PLAY uh ROHL"
+        },
+        "american": {
+          "ipa": "pleɪ ə rəʊl",
+          "phonetic": "PLAY uh ROHL"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "is mentioned as a challenge",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪz ˈmenʃənd æz ə ˈtʃælɪndʒ",
+          "phonetic": "iz MEN-shund az uh CHAL-inj"
+        },
+        "american": {
+          "ipa": "ɪz ˈmenʃənd æz ə ˈtʃælɪndʒ",
+          "phonetic": "iz MEN-shund az uh CHAL-inj"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "The speaker suggests that",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈspiːkə səˈdʒests ðæt",
+          "phonetic": "the SPEE-kur sug-JESTS that"
+        },
+        "american": {
+          "ipa": "ðə ˈspiːkə səˈdʒests ðæt",
+          "phonetic": "the SPEE-kur sug-JESTS that"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "could be solutions",
+      "pronunciation": {
+        "british": {
+          "ipa": "kʊd biː səˈluːʃənz",
+          "phonetic": "kood bee suh-LOO-shunz"
+        },
+        "american": {
+          "ipa": "kʊd biː səˈluːʃənz",
+          "phonetic": "kood bee suh-LOO-shunz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "Similarly",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɪmɪləli",
+          "phonetic": "SIM-ih-lur-lee"
+        },
+        "american": {
+          "ipa": "ˈsɪmɪləli",
+          "phonetic": "SIM-ih-lur-lee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "the third speaker talks about",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə θɜːd ˈspiːkə tɔːks əˈbaʊt",
+          "phonetic": "the THIRD SPEE-kur TAWKS uh-BOUT"
+        },
+        "american": {
+          "ipa": "ðə θɜːd ˈspiːkə tɔːks əˈbaʊt",
+          "phonetic": "the THIRD SPEE-kur TAWKS uh-BOUT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "are significant",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɑː sɪɡˈnɪfɪkənt",
+          "phonetic": "ar sig-NIF-ih-kunt"
+        },
+        "american": {
+          "ipa": "ɑː sɪɡˈnɪfɪkənt",
+          "phonetic": "ar sig-NIF-ih-kunt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "as important aspects",
+      "pronunciation": {
+        "british": {
+          "ipa": "æz ɪmˈpɔːtənt ˈæspekts",
+          "phonetic": "az im-POR-tunt AS-pekts"
+        },
+        "american": {
+          "ipa": "æz ɪmˈpɔːtənt ˈæspekts",
+          "phonetic": "az im-POR-tunt AS-pekts"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "needs to be considered",
+      "pronunciation": {
+        "british": {
+          "ipa": "niːdz tuː biː kənˈsɪdəd",
+          "phonetic": "NEEDZ too bee kun-SID-urd"
+        },
+        "american": {
+          "ipa": "niːdz tuː biː kənˈsɪdəd",
+          "phonetic": "NEEDZ too bee kun-SID-urd"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "The speaker believes that",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈspiːkə bɪˈliːvz ðæt",
+          "phonetic": "the SPEE-kur buh-LEEVZ that"
+        },
+        "american": {
+          "ipa": "ðə ˈspiːkə bɪˈliːvz ðæt",
+          "phonetic": "the SPEE-kur buh-LEEVZ that"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "are the way forward",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɑː ðə weɪ ˈfɔːwəd",
+          "phonetic": "ar the WAY FOR-wurd"
+        },
+        "american": {
+          "ipa": "ɑː ðə weɪ ˈfɔːwəd",
+          "phonetic": "ar the WAY FOR-wurd"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "All speakers agree that",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɔːl ˈspiːkəz əˈɡriː ðæt",
+          "phonetic": "AWL SPEE-kurz uh-GREE that"
+        },
+        "american": {
+          "ipa": "ɔːl ˈspiːkəz əˈɡriː ðæt",
+          "phonetic": "AWL SPEE-kurz uh-GREE that"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "the discussion is mainly about",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə dɪˈskʌʃən ɪz ˈmeɪnli əˈbaʊt",
+          "phonetic": "the dis-KUH-shun iz MAYN-lee uh-BOUT"
+        },
+        "american": {
+          "ipa": "ðə dɪˈskʌʃən ɪz ˈmeɪnli əˈbaʊt",
+          "phonetic": "the dis-KUH-shun iz MAYN-lee uh-BOUT"
         }
       },
       "difficulty": "hard",

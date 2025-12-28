@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2025-12-28T02:18:10.736Z",
-    "totalTerms": 107,
+    "generated": "2025-12-28T03:13:41.704Z",
+    "totalTerms": 116,
     "source": "pte-di-natural-template-vocab",
     "description": "Auto-discovered vocabulary book: pte-di-natural-template-vocab",
     "version": "1.0",
@@ -1073,11 +1073,11 @@
       "pronunciation": {
         "british": {
           "ipa": "kʌmz ˈsekənd ɪn ðə tʃɑːt",
-          "phonetic": "KUMZ SEK-und in the CHART"
+          "phonetic": "KUMZ SEK-und in the picture"
         },
         "american": {
           "ipa": "kʌmz ˈsekənd ɪn ðə tʃɑːt",
-          "phonetic": "KUMZ SEK-und in the CHART"
+          "phonetic": "KUMZ SEK-und in the picture"
         }
       },
       "difficulty": "hard",
@@ -1142,6 +1142,150 @@
         "american": {
           "ipa": "wɪtʃ ɪnˈkluːdz",
           "phonetic": "which in-KLOODZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "coastal areas",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkəʊstəl ˈeəriəz",
+          "phonetic": "KOH-stul AIR-ee-uz"
+        },
+        "american": {
+          "ipa": "ˈkəʊstəl ˈeəriəz",
+          "phonetic": "KOH-stul AIR-ee-uz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "central areas",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsentrəl ˈeəriəz",
+          "phonetic": "SEN-trul AIR-ee-uz"
+        },
+        "american": {
+          "ipa": "ˈsentrəl ˈeəriəz",
+          "phonetic": "SEN-trul AIR-ee-uz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "northern",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈnɔːðən",
+          "phonetic": "NOR-thun"
+        },
+        "american": {
+          "ipa": "ˈnɔːðən",
+          "phonetic": "NOR-thun"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "southern",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsʌðən",
+          "phonetic": "SUH-thun"
+        },
+        "american": {
+          "ipa": "ˈsʌðən",
+          "phonetic": "SUH-thun"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "eastern",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈiːstən",
+          "phonetic": "EE-stun"
+        },
+        "american": {
+          "ipa": "ˈiːstən",
+          "phonetic": "EE-stun"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "western",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈwestən",
+          "phonetic": "WES-tun"
+        },
+        "american": {
+          "ipa": "ˈwestən",
+          "phonetic": "WES-tun"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "high density",
+      "pronunciation": {
+        "british": {
+          "ipa": "haɪ ˈdensɪti",
+          "phonetic": "hy DEN-sih-tee"
+        },
+        "american": {
+          "ipa": "haɪ ˈdensɪti",
+          "phonetic": "hy DEN-sih-tee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "low density",
+      "pronunciation": {
+        "british": {
+          "ipa": "ləʊ ˈdensɪti",
+          "phonetic": "loh DEN-sih-tee"
+        },
+        "american": {
+          "ipa": "ləʊ ˈdensɪti",
+          "phonetic": "loh DEN-sih-tee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-natural-template-vocab",
+      "source": "pte-di-natural-template-vocab"
+    },
+    {
+      "english": "per square kilometer",
+      "pronunciation": {
+        "british": {
+          "ipa": "pɜː skweə kɪˈlɒmɪtə",
+          "phonetic": "pur SKWAIR kih-LOM-ih-tur"
+        },
+        "american": {
+          "ipa": "pɜː skweə kɪˈlɒmɪtə",
+          "phonetic": "pur SKWAIR kih-LOM-ih-tur"
         }
       },
       "difficulty": "hard",

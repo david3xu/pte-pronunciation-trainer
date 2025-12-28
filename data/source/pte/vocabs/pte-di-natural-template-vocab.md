@@ -1,6 +1,6 @@
 # PTE DI Natural Template - Vocabulary with IPA
 
-**Total Terms:** 107
+**Total Terms:** 116
 
 > Practice these phrases in template order for DI speaking
 
@@ -104,7 +104,7 @@
 64. we can see that | /wiː kæn siː ðæt/ — sounds like **wee kan SEE that**
 65. which is close to | /wɪtʃ ɪz kləʊs tuː/ — sounds like **which iz KLOHSS too** (linked: which͜is)
 66. On the other hand | /ɒn ðiː ˈʌðə hænd/ — sounds like **on thee UH-thur HAND**
-67. comes second in the picture | /kʌmz ˈsekənd ɪn ðə tʃɑːt/ — sounds like **KUMZ SEK-und in the CHART**
+67. comes second in the picture | /kʌmz ˈsekənd ɪn ðə tʃɑːt/ — sounds like **KUMZ SEK-und in the picture**
 68. in this context | /ɪn ðɪs ˈkɒntekst/ — sounds like **in this KON-tekst**
 69. which leads to | /wɪtʃ liːdz tuː/ — sounds like **which LEEDZ too**
 70. in the picture | /ɪn ðə ˈpɪktʃə/ — sounds like **in the PIK-chur**
@@ -112,49 +112,61 @@
 
 ---
 
+## Map Terms (In Order)
+
+72. coastal areas | /ˈkəʊstəl ˈeəriəz/ — sounds like **KOH-stul AIR-ee-uz**
+73. central areas | /ˈsentrəl ˈeəriəz/ — sounds like **SEN-trul AIR-ee-uz**
+74. northern | /ˈnɔːðən/ — sounds like **NOR-thun**
+75. southern | /ˈsʌðən/ — sounds like **SUH-thun**
+76. eastern | /ˈiːstən/ — sounds like **EE-stun**
+77. western | /ˈwestən/ — sounds like **WES-tun**
+78. high density | /haɪ ˈdensɪti/ — sounds like **hy DEN-sih-tee**
+79. low density | /ləʊ ˈdensɪti/ — sounds like **loh DEN-sih-tee**
+80. per square kilometer | /pɜː skweə kɪˈlɒmɪtə/ — sounds like **pur SKWAIR kih-LOM-ih-tur**
+
 ## RL Template Phrases (In Order)
 
-72. The lecture talks about | /ðə ˈlektʃə tɔːks əˈbaʊt/ — sounds like **the LEK-chur TAWKS uh-BOUT**
-73. and its importance | /ənd ɪts ɪmˈpɔːtəns/ — sounds like **and its im-POR-tunss** (linked: and͜its)
-74. The speaker mentions that | /ðə ˈspiːkə ˈmenʃənz ðæt/ — sounds like **the SPEE-kur MEN-shunz that**
-75. are related to | /ɑː rɪˈleɪtɪd tuː/ — sounds like **ar ree-LAY-tid too**
-76. According to the speaker | /əˈkɔːdɪŋ tuː ðə ˈspiːkə/ — sounds like **uh-KOR-ding too the SPEE-kur**
-77. are important in this context | /ɑː ɪmˈpɔːtənt ɪn ðɪs ˈkɒntekst/ — sounds like **ar im-POR-tunt in this KON-tekst**
-78. The lecture also discusses | /ðə ˈlektʃə ˈɔːlsəʊ dɪˈskʌsɪz/ — sounds like **the LEK-chur AWL-soh dis-KUS-iz**
-79. how X and Y play a role | /haʊ pleɪ ə rəʊl/ — sounds like **how X and Y PLAY uh ROHL**
-80. Furthermore | /ˈfɜːðəmɔː/ — sounds like **FUR-thur-mor**
-81. is mentioned as a key point | /ɪz ˈmenʃənd æz kiː pɔɪnt/ — sounds like **iz MEN-shund az KEE point**
-82. Finally | /ˈfaɪnəli/ — sounds like **FY-nuh-lee**
-83. and its connection to | /ənd ɪts kəˈnekʃən tuː/ — sounds like **and its kuh-NEK-shun too**
-84. In conclusion | /ɪn kənˈkluːʒən/ — sounds like **in kun-KLOO-zhun**
-85. the lecture is mainly about | /ðə ˈlektʃə ɪz ˈmeɪnli əˈbaʊt/ — sounds like **the LEK-chur iz MAYN-lee uh-BOUT**
+81. The lecture talks about | /ðə ˈlektʃə tɔːks əˈbaʊt/ — sounds like **the LEK-chur TAWKS uh-BOUT**
+82. and its importance | /ənd ɪts ɪmˈpɔːtəns/ — sounds like **and its im-POR-tunss** (linked: and͜its)
+83. The speaker mentions that | /ðə ˈspiːkə ˈmenʃənz ðæt/ — sounds like **the SPEE-kur MEN-shunz that**
+84. are related to | /ɑː rɪˈleɪtɪd tuː/ — sounds like **ar ree-LAY-tid too**
+85. According to the speaker | /əˈkɔːdɪŋ tuː ðə ˈspiːkə/ — sounds like **uh-KOR-ding too the SPEE-kur**
+86. are important in this context | /ɑː ɪmˈpɔːtənt ɪn ðɪs ˈkɒntekst/ — sounds like **ar im-POR-tunt in this KON-tekst**
+87. The lecture also discusses | /ðə ˈlektʃə ˈɔːlsəʊ dɪˈskʌsɪz/ — sounds like **the LEK-chur AWL-soh dis-KUS-iz**
+88. how X and Y play a role | /haʊ pleɪ ə rəʊl/ — sounds like **how X and Y PLAY uh ROHL**
+89. Furthermore | /ˈfɜːðəmɔː/ — sounds like **FUR-thur-mor**
+90. is mentioned as a key point | /ɪz ˈmenʃənd æz kiː pɔɪnt/ — sounds like **iz MEN-shund az KEE point**
+91. Finally | /ˈfaɪnəli/ — sounds like **FY-nuh-lee**
+92. and its connection to | /ənd ɪts kəˈnekʃən tuː/ — sounds like **and its kuh-NEK-shun too**
+93. In conclusion | /ɪn kənˈkluːʒən/ — sounds like **in kun-KLOO-zhun**
+94. the lecture is mainly about | /ðə ˈlektʃə ɪz ˈmeɪnli əˈbaʊt/ — sounds like **the LEK-chur iz MAYN-lee uh-BOUT**
 
 ---
 
 ## SGD Template Phrases (In Order)
 
-86. The discussion is about | /ðə dɪˈskʌʃən ɪz əˈbaʊt/ — sounds like **the dis-KUH-shun iz uh-BOUT**
-87. The first speaker talks about | /ðə fɜːst ˈspiːkə tɔːks əˈbaʊt/ — sounds like **the FIRST SPEE-kur TAWKS uh-BOUT**
-88. are related to | /ɑː rɪˈleɪtɪd tuː/ — sounds like **ar ree-LAY-tid too**
-89. are important in this context | /ɑː ɪmˈpɔːtənt ɪn ðɪs ˈkɒntekst/ — sounds like **ar im-POR-tunt in this KON-tekst**
-90. is also discussed as a challenge | /ɪz ˈɔːlsəʊ dɪˈskʌst æz ə ˈtʃælɪndʒ/ — sounds like **iz AWL-soh dis-KUST az uh CHAL-inj**
-91. The speaker concludes that | /ðə ˈspiːkə kənˈkluːdz ðæt/ — sounds like **the SPEE-kur kun-KLOODZ that**
-92. are the key points | /ɑː ðə kiː pɔɪnts/ — sounds like **ar the KEE points**
-93. Moving to the second speaker | /ˈmuːvɪŋ tuː ðə ˈsekənd ˈspiːkə/ — sounds like **MOO-ving too the SEK-und SPEE-kur**
-94. who discusses | /huː dɪˈskʌsɪz/ — sounds like **hoo dis-KUS-iz**
-95. play a role | /pleɪ ə rəʊl/ — sounds like **PLAY uh ROHL**
-96. is mentioned as a challenge | /ɪz ˈmenʃənd æz ə ˈtʃælɪndʒ/ — sounds like **iz MEN-shund az uh CHAL-inj**
-97. The speaker suggests that | /ðə ˈspiːkə səˈdʒests ðæt/ — sounds like **the SPEE-kur sug-JESTS that**
-98. could be solutions | /kʊd biː səˈluːʃənz/ — sounds like **kood bee suh-LOO-shunz**
-99. Similarly | /ˈsɪmɪləli/ — sounds like **SIM-ih-lur-lee**
-100. the third speaker talks about | /ðə θɜːd ˈspiːkə tɔːks əˈbaʊt/ — sounds like **the THIRD SPEE-kur TAWKS uh-BOUT**
-101. are significant | /ɑː sɪɡˈnɪfɪkənt/ — sounds like **ar sig-NIF-ih-kunt**
-102. as important aspects | /æz ɪmˈpɔːtənt ˈæspekts/ — sounds like **az im-POR-tunt AS-pekts**
-103. needs to be considered | /niːdz tuː biː kənˈsɪdəd/ — sounds like **NEEDZ too bee kun-SID-urd**
-104. The speaker believes that | /ðə ˈspiːkə bɪˈliːvz ðæt/ — sounds like **the SPEE-kur buh-LEEVZ that**
-105. are the way forward | /ɑː ðə weɪ ˈfɔːwəd/ — sounds like **ar the WAY FOR-wurd**
-106. All speakers agree that | /ɔːl ˈspiːkəz əˈɡriː ðæt/ — sounds like **AWL SPEE-kurz uh-GREE that**
-107. the discussion is mainly about | /ðə dɪˈskʌʃən ɪz ˈmeɪnli əˈbaʊt/ — sounds like **the dis-KUH-shun iz MAYN-lee uh-BOUT**
+95. The discussion is about | /ðə dɪˈskʌʃən ɪz əˈbaʊt/ — sounds like **the dis-KUH-shun iz uh-BOUT**
+96. The first speaker talks about | /ðə fɜːst ˈspiːkə tɔːks əˈbaʊt/ — sounds like **the FIRST SPEE-kur TAWKS uh-BOUT**
+97. are related to | /ɑː rɪˈleɪtɪd tuː/ — sounds like **ar ree-LAY-tid too**
+98. are important in this context | /ɑː ɪmˈpɔːtənt ɪn ðɪs ˈkɒntekst/ — sounds like **ar im-POR-tunt in this KON-tekst**
+99. is also discussed as a challenge | /ɪz ˈɔːlsəʊ dɪˈskʌst æz ə ˈtʃælɪndʒ/ — sounds like **iz AWL-soh dis-KUST az uh CHAL-inj**
+100. The speaker concludes that | /ðə ˈspiːkə kənˈkluːdz ðæt/ — sounds like **the SPEE-kur kun-KLOODZ that**
+101. are the key points | /ɑː ðə kiː pɔɪnts/ — sounds like **ar the KEE points**
+102. Moving to the second speaker | /ˈmuːvɪŋ tuː ðə ˈsekənd ˈspiːkə/ — sounds like **MOO-ving too the SEK-und SPEE-kur**
+103. who discusses | /huː dɪˈskʌsɪz/ — sounds like **hoo dis-KUS-iz**
+104. play a role | /pleɪ ə rəʊl/ — sounds like **PLAY uh ROHL**
+105. is mentioned as a challenge | /ɪz ˈmenʃənd æz ə ˈtʃælɪndʒ/ — sounds like **iz MEN-shund az uh CHAL-inj**
+106. The speaker suggests that | /ðə ˈspiːkə səˈdʒests ðæt/ — sounds like **the SPEE-kur sug-JESTS that**
+107. could be solutions | /kʊd biː səˈluːʃənz/ — sounds like **kood bee suh-LOO-shunz**
+108. Similarly | /ˈsɪmɪləli/ — sounds like **SIM-ih-lur-lee**
+109. the third speaker talks about | /ðə θɜːd ˈspiːkə tɔːks əˈbaʊt/ — sounds like **the THIRD SPEE-kur TAWKS uh-BOUT**
+110. are significant | /ɑː sɪɡˈnɪfɪkənt/ — sounds like **ar sig-NIF-ih-kunt**
+111. as important aspects | /æz ɪmˈpɔːtənt ˈæspekts/ — sounds like **az im-POR-tunt AS-pekts**
+112. needs to be considered | /niːdz tuː biː kənˈsɪdəd/ — sounds like **NEEDZ too bee kun-SID-urd**
+113. The speaker believes that | /ðə ˈspiːkə bɪˈliːvz ðæt/ — sounds like **the SPEE-kur buh-LEEVZ that**
+114. are the way forward | /ɑː ðə weɪ ˈfɔːwəd/ — sounds like **ar the WAY FOR-wurd**
+115. All speakers agree that | /ɔːl ˈspiːkəz əˈɡriː ðæt/ — sounds like **AWL SPEE-kurz uh-GREE that**
+116. the discussion is mainly about | /ðə dɪˈskʌʃən ɪz ˈmeɪnli əˈbaʊt/ — sounds like **the dis-KUH-shun iz MAYN-lee uh-BOUT**
 
 ---
 

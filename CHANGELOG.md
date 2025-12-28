@@ -15,6 +15,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Updated `docs/TESTING.md` to reference package.json coverage config
   - Updated `docs/SETUP.md` with current Gemini API reference
 
+## [3.0.2] - 2025-12-28
+
+### Changed
+- **DI Templates**: Standardized all templates to use "picture" instead of "chart/graph/diagram"
+- **Template 2**: Added "multiple groups" structure with "Looking at group [X]" and "the top value is in"
+- **Template 3**: Added comparison sentence option with "has a different" and "compared to"
+- **Vocabulary**: Synced vocabulary file with template updates (122 total terms)
+- **Map Terms**: Added 9 map-related terms (coastal/central areas, directions, density)
+- **TTS**: Set Browser Default as default TTS voice
+
 ## [3.0.1] - 2025-11-30
 
 ### Added

@@ -23,7 +23,7 @@
 13. also feature in | /ˈɔːlsəʊˈfiːtʃərɪn/ — sounds like **AWL-soh-FEE-chur-in** (linked: featur**e͜i**n)
 14. this chart | /ðɪs tʃɑːt/ — sounds like **this CHART**
 15. To sum up | /tuː sʌm ʌp/ — sounds like **too SUM up** (linked: sum͜up)
-16. this chart tells us about | /ðɪs tʃɑːt telzʌs əˈbaʊt/ — sounds like **this CHART TELZ-us uh-BOUT** (linked: tell**s͜u**s)
+16. this picture tells us about | /ðɪs tʃɑːt telzʌs əˈbaʊt/ — sounds like **this CHART TELZ-us uh-BOUT** (linked: tell**s͜u**s)
 
 ---
 
@@ -40,7 +40,7 @@
 25. at around | /ætəˈraʊnd/ — sounds like **at-uh-ROWND** (linked: a**t͜a**round)
 26. are both shown in this chart | /ɑː bəʊθ ʃəʊn ɪn ðɪs tʃɑːt/ — sounds like **ar BOHTH shown in this CHART**
 27. To sum up | /tuː sʌm ʌp/ — sounds like **too SUM up**
-28. this chart tells us about | /ðɪs tʃɑːt telz ʌs əˈbaʊt/ — sounds like **this CHART TELZ us uh-BOUT**
+28. this picture tells us about | /ðɪs tʃɑːt telz ʌs əˈbaʊt/ — sounds like **this CHART TELZ us uh-BOUT**
 
 ---
 
@@ -90,12 +90,12 @@
 
 ## Template 5 Phrases (In Order)
 
-58. This chart | /ðɪs tʃɑːt/ — sounds like **this CHART**
+58. This picture | /ðɪs tʃɑːt/ — sounds like **this CHART**
 59. the main items include | /ðəmeɪn ˈaɪtəmz ɪnˈkluːd/ — sounds like **the MAYN EYE-tumz in-KLOOD** (linked: main͜items)
 60. The other items can be found in | /ðiˈʌðər ˈaɪtəmz kæn biː faʊnd ɪn/ — sounds like **thee UH-thur EYE-tumz kan bee FOWND in**
 61. are both shown in this chart | /ɑː bəʊθ ʃəʊn ɪn ðɪs tʃɑːt/ — sounds like **ar BOHTH shown in this CHART**
 62. To sum up | /tuː sʌm ʌp/ — sounds like **too SUM up**
-63. this chart tells us about | /ðɪs tʃɑːt telz ʌs əˈbaʊt/ — sounds like **this CHART TELZ us uh-BOUT**
+63. this picture tells us about | /ðɪs tʃɑːt telz ʌs əˈbaʊt/ — sounds like **this CHART TELZ us uh-BOUT**
 
 ---
 
@@ -104,7 +104,7 @@
 64. we can see that | /wiː kæn siː ðæt/ — sounds like **wee kan SEE that**
 65. which is close to | /wɪtʃ ɪz kləʊs tuː/ — sounds like **which iz KLOHSS too** (linked: which͜is)
 66. On the other hand | /ɒn ðiː ˈʌðə hænd/ — sounds like **on thee UH-thur HAND**
-67. comes second in the chart | /kʌmz ˈsekənd ɪn ðə tʃɑːt/ — sounds like **KUMZ SEK-und in the CHART**
+67. comes second in the picture | /kʌmz ˈsekənd ɪn ðə tʃɑːt/ — sounds like **KUMZ SEK-und in the CHART**
 68. in this context | /ɪn ðɪs ˈkɒntekst/ — sounds like **in this KON-tekst**
 69. which leads to | /wɪtʃ liːdz tuː/ — sounds like **which LEEDZ too**
 70. in the picture | /ɪn ðə ˈpɪktʃə/ — sounds like **in the PIK-chur**

@@ -10,7 +10,7 @@
 
 1. This picture | /ðɪs ˈpɪktʃə/ — sounds like **this PIK-chur**
 2. shows information about | /ʃəʊzˌɪnfəˈmeɪʃən əˈbaʊt/ — sounds like **SHOWZ-in-fur-MAY-shun uh-BOUT** (linked: show**s͜i**nformation)
-3. Looking at the data | /ˈlʊkɪŋ æt ðə ˈdeɪtə/ — sounds like **LOOK-ing at the DAY-tuh**
+3. Looking at the image | /ˈlʊkɪŋ æt ðə ˈdeɪtə/ — sounds like **LOOK-ing at the DAY-tuh**
 4. we can see that | /wiː kæn siː ðæt/ — sounds like **wee kan SEE that**
 5. the highest number appears in | /ðə ˈhaɪɪst ˈnʌmbə əˈpɪəz ɪn/ — sounds like **the HY-ist NUM-bur uh-PEERZ in**
 6. which is close to | /wɪtʃ ɪz kləʊs tuː/ — sounds like **which iz KLOHSS too**

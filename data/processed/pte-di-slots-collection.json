@@ -1,0 +1,783 @@
+{
+  "metadata": {
+    "generated": "2025-12-28T09:14:58.674Z",
+    "totalTerms": 48,
+    "source": "pte-di-slots-collection",
+    "description": "Auto-discovered vocabulary book: pte-di-slots-collection",
+    "version": "1.0",
+    "categories": [
+      "pte-di-slots-collection"
+    ],
+    "hasIPA": true
+  },
+  "vocabulary": [
+    {
+      "english": "This picture shows information about",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs ˈpɪktʃə ʃəʊz ˌɪnfəˈmeɪʃən əˈbaʊt",
+          "phonetic": "this PIK-chur SHOWZ in-fur-MAY-shun uh-BOUT"
+        },
+        "american": {
+          "ipa": "ðɪs ˈpɪktʃə ʃəʊz ˌɪnfəˈmeɪʃən əˈbaʊt",
+          "phonetic": "this PIK-chur SHOWZ in-fur-MAY-shun uh-BOUT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "This image shows",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs ˈɪmɪdʒ ʃəʊz",
+          "phonetic": "this IM-ij SHOWZ"
+        },
+        "american": {
+          "ipa": "ðɪs ˈɪmɪdʒ ʃəʊz",
+          "phonetic": "this IM-ij SHOWZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "This picture shows the process of",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs ˈpɪktʃə ʃəʊz ðə ˈprəʊses ɒv",
+          "phonetic": "this PIK-chur SHOWZ the PROH-ses ov"
+        },
+        "american": {
+          "ipa": "ðɪs ˈpɪktʃə ʃəʊz ðə ˈprəʊses ɒv",
+          "phonetic": "this PIK-chur SHOWZ the PROH-ses ov"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "Looking at the image",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlʊkɪŋ æt ðə ˈɪmɪdʒ",
+          "phonetic": "LOOK-ing at the IM-ij"
+        },
+        "american": {
+          "ipa": "ˈlʊkɪŋ æt ðə ˈɪmɪdʒ",
+          "phonetic": "LOOK-ing at the IM-ij"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "we can see that",
+      "pronunciation": {
+        "british": {
+          "ipa": "wiː kæn siː ðæt",
+          "phonetic": "wee kan SEE that"
+        },
+        "american": {
+          "ipa": "wiː kæn siː ðæt",
+          "phonetic": "wee kan SEE that"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "There are multiple groups",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðeər ɑː ˈmʌltɪpəl ɡruːps",
+          "phonetic": "thair ar MUL-tih-pul GROOPS"
+        },
+        "american": {
+          "ipa": "ðeər ɑː ˈmʌltɪpəl ɡruːps",
+          "phonetic": "thair ar MUL-tih-pul GROOPS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "including",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈkluːdɪŋ",
+          "phonetic": "in-KLOO-ding"
+        },
+        "american": {
+          "ipa": "ɪnˈkluːdɪŋ",
+          "phonetic": "in-KLOO-ding"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "Looking at group",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlʊkɪŋ æt ɡruːp",
+          "phonetic": "LOOK-ing at GROOP"
+        },
+        "american": {
+          "ipa": "ˈlʊkɪŋ æt ɡruːp",
+          "phonetic": "LOOK-ing at GROOP"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "the highest number appears in",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈhaɪɪst ˈnʌmbə əˈpɪəz ɪn",
+          "phonetic": "the HY-ist NUM-bur uh-PEERZ in"
+        },
+        "american": {
+          "ipa": "ðə ˈhaɪɪst ˈnʌmbə əˈpɪəz ɪn",
+          "phonetic": "the HY-ist NUM-bur uh-PEERZ in"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "which is close to",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪtʃ ɪz kləʊs tuː",
+          "phonetic": "which iz KLOHSS too"
+        },
+        "american": {
+          "ipa": "wɪtʃ ɪz kləʊs tuː",
+          "phonetic": "which iz KLOHSS too"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "the lowest can be found in",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈləʊɪst kæn biː faʊnd ɪn",
+          "phonetic": "the LOH-ist kan bee FOWND in"
+        },
+        "american": {
+          "ipa": "ðə ˈləʊɪst kæn biː faʊnd ɪn",
+          "phonetic": "the LOH-ist kan bee FOWND in"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "at only",
+      "pronunciation": {
+        "british": {
+          "ipa": "æt ˈəʊnli",
+          "phonetic": "at OHN-lee"
+        },
+        "american": {
+          "ipa": "æt ˈəʊnli",
+          "phonetic": "at OHN-lee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "at around",
+      "pronunciation": {
+        "british": {
+          "ipa": "æt əˈraʊnd",
+          "phonetic": "at uh-ROWND"
+        },
+        "american": {
+          "ipa": "æt əˈraʊnd",
+          "phonetic": "at uh-ROWND"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "the top value is in",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə tɒp ˈvæljuː ɪz ɪn",
+          "phonetic": "the TOP VAL-yoo iz in"
+        },
+        "american": {
+          "ipa": "ðə tɒp ˈvæljuː ɪz ɪn",
+          "phonetic": "the TOP VAL-yoo iz in"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "the largest portion appears in",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈlɑːdʒɪst ˈpɔːʃən əˈpɪəz ɪn",
+          "phonetic": "the LAR-jist POR-shun uh-PEERZ in"
+        },
+        "american": {
+          "ipa": "ðə ˈlɑːdʒɪst ˈpɔːʃən əˈpɪəz ɪn",
+          "phonetic": "the LAR-jist POR-shun uh-PEERZ in"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "the smallest can be found in",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈsmɔːlɪst kæn biː faʊnd ɪn",
+          "phonetic": "the SMAWL-ist kan bee FOWND in"
+        },
+        "american": {
+          "ipa": "ðə ˈsmɔːlɪst kæn biː faʊnd ɪn",
+          "phonetic": "the SMAWL-ist kan bee FOWND in"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "the main feature is",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə meɪn ˈfiːtʃə ɪz",
+          "phonetic": "the MAYN FEE-chur iz"
+        },
+        "american": {
+          "ipa": "ðə meɪn ˈfiːtʃə ɪz",
+          "phonetic": "the MAYN FEE-chur iz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "is on the top",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪz ɒn ðə tɒp",
+          "phonetic": "iz on the TOP"
+        },
+        "american": {
+          "ipa": "ɪz ɒn ðə tɒp",
+          "phonetic": "iz on the TOP"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "at the bottom",
+      "pronunciation": {
+        "british": {
+          "ipa": "æt ðə ˈbɒtəm",
+          "phonetic": "at the BOT-um"
+        },
+        "american": {
+          "ipa": "æt ðə ˈbɒtəm",
+          "phonetic": "at the BOT-um"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "Following that",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɒləʊɪŋ ðæt",
+          "phonetic": "FOL-oh-wing THAT"
+        },
+        "american": {
+          "ipa": "ˈfɒləʊɪŋ ðæt",
+          "phonetic": "FOL-oh-wing THAT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "comes second in the picture",
+      "pronunciation": {
+        "british": {
+          "ipa": "kʌmz ˈsekənd ɪn ðə ˈpɪktʃə",
+          "phonetic": "KUMZ SEK-und in the PIK-chur"
+        },
+        "american": {
+          "ipa": "kʌmz ˈsekənd ɪn ðə ˈpɪktʃə",
+          "phonetic": "KUMZ SEK-und in the PIK-chur"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "with about",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪð əˈbaʊt",
+          "phonetic": "with uh-BOUT"
+        },
+        "american": {
+          "ipa": "wɪð əˈbaʊt",
+          "phonetic": "with uh-BOUT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "This is followed by",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs ɪz ˈfɒləʊd baɪ",
+          "phonetic": "this iz FOL-ohd by"
+        },
+        "american": {
+          "ipa": "ðɪs ɪz ˈfɒləʊd baɪ",
+          "phonetic": "this iz FOL-ohd by"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "As the process continues",
+      "pronunciation": {
+        "british": {
+          "ipa": "æz ðə ˈprəʊses kənˈtɪnjuːz",
+          "phonetic": "az the PROH-ses kun-TIN-yooz"
+        },
+        "american": {
+          "ipa": "æz ðə ˈprəʊses kənˈtɪnjuːz",
+          "phonetic": "az the PROH-ses kun-TIN-yooz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "Moving to group",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmuːvɪŋ tuː ɡruːp",
+          "phonetic": "MOO-ving too GROOP"
+        },
+        "american": {
+          "ipa": "ˈmuːvɪŋ tuː ɡruːp",
+          "phonetic": "MOO-ving too GROOP"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "and then",
+      "pronunciation": {
+        "british": {
+          "ipa": "ænd ðen",
+          "phonetic": "and THEN"
+        },
+        "american": {
+          "ipa": "ænd ðen",
+          "phonetic": "and THEN"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "which leads to",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪtʃ liːdz tuː",
+          "phonetic": "which LEEDZ too"
+        },
+        "american": {
+          "ipa": "wɪtʃ liːdz tuː",
+          "phonetic": "which LEEDZ too"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "which is connected to",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪtʃ ɪz kəˈnektɪd tuː",
+          "phonetic": "which iz kuh-NEK-tid too"
+        },
+        "american": {
+          "ipa": "wɪtʃ ɪz kəˈnektɪd tuː",
+          "phonetic": "which iz kuh-NEK-tid too"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "results in",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈzʌlts ɪn",
+          "phonetic": "ree-ZULTS in"
+        },
+        "american": {
+          "ipa": "rɪˈzʌlts ɪn",
+          "phonetic": "ree-ZULTS in"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "because of",
+      "pronunciation": {
+        "british": {
+          "ipa": "bɪˈkɒz ɒv",
+          "phonetic": "bih-KOZ ov"
+        },
+        "american": {
+          "ipa": "bɪˈkɒz ɒv",
+          "phonetic": "bih-KOZ ov"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "due to",
+      "pronunciation": {
+        "british": {
+          "ipa": "djuː tuː",
+          "phonetic": "dyoo too"
+        },
+        "american": {
+          "ipa": "djuː tuː",
+          "phonetic": "dyoo too"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "On the other hand",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɒn ðiː ˈʌðə hænd",
+          "phonetic": "on thee UH-thur HAND"
+        },
+        "american": {
+          "ipa": "ɒn ðiː ˈʌðə hænd",
+          "phonetic": "on thee UH-thur HAND"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "compared to",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəmˈpeəd tuː",
+          "phonetic": "kum-PAIRED too"
+        },
+        "american": {
+          "ipa": "kəmˈpeəd tuː",
+          "phonetic": "kum-PAIRED too"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "has a different",
+      "pronunciation": {
+        "british": {
+          "ipa": "hæz ə ˈdɪfrənt",
+          "phonetic": "haz uh DIF-runt"
+        },
+        "american": {
+          "ipa": "hæz ə ˈdɪfrənt",
+          "phonetic": "haz uh DIF-runt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "similar to",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɪmɪlə tuː",
+          "phonetic": "SIM-ih-lur too"
+        },
+        "american": {
+          "ipa": "ˈsɪmɪlə tuː",
+          "phonetic": "SIM-ih-lur too"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "the same as",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə seɪm æz",
+          "phonetic": "the SAYM az"
+        },
+        "american": {
+          "ipa": "ðə seɪm æz",
+          "phonetic": "the SAYM az"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "also feature in this picture",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɔːlsəʊ ˈfiːtʃə ɪn ðɪs ˈpɪktʃə",
+          "phonetic": "AWL-soh FEE-chur in this PIK-chur"
+        },
+        "american": {
+          "ipa": "ˈɔːlsəʊ ˈfiːtʃə ɪn ðɪs ˈpɪktʃə",
+          "phonetic": "AWL-soh FEE-chur in this PIK-chur"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "also appears in the picture",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɔːlsəʊ əˈpɪəz ɪn ðə ˈpɪktʃə",
+          "phonetic": "AWL-soh uh-PEERZ in the PIK-chur"
+        },
+        "american": {
+          "ipa": "ˈɔːlsəʊ əˈpɪəz ɪn ðə ˈpɪktʃə",
+          "phonetic": "AWL-soh uh-PEERZ in the PIK-chur"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "we also have",
+      "pronunciation": {
+        "british": {
+          "ipa": "wiː ˈɔːlsəʊ hæv",
+          "phonetic": "wee AWL-soh hav"
+        },
+        "american": {
+          "ipa": "wiː ˈɔːlsəʊ hæv",
+          "phonetic": "wee AWL-soh hav"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "can also be seen",
+      "pronunciation": {
+        "british": {
+          "ipa": "kæn ˈɔːlsəʊ biː siːn",
+          "phonetic": "kan AWL-soh bee SEEN"
+        },
+        "american": {
+          "ipa": "kæn ˈɔːlsəʊ biː siːn",
+          "phonetic": "kan AWL-soh bee SEEN"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "To sum up",
+      "pronunciation": {
+        "british": {
+          "ipa": "tuː sʌm ʌp",
+          "phonetic": "too SUM up"
+        },
+        "american": {
+          "ipa": "tuː sʌm ʌp",
+          "phonetic": "too SUM up"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "this picture tells us about",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs ˈpɪktʃə telz ʌs əˈbaʊt",
+          "phonetic": "this PIK-chur TELZ us uh-BOUT"
+        },
+        "american": {
+          "ipa": "ðɪs ˈpɪktʃə telz ʌs əˈbaʊt",
+          "phonetic": "this PIK-chur TELZ us uh-BOUT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "In summary",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ˈsʌməri",
+          "phonetic": "in SUM-uh-ree"
+        },
+        "american": {
+          "ipa": "ɪn ˈsʌməri",
+          "phonetic": "in SUM-uh-ree"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "On the left side",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɒn ðə left saɪd",
+          "phonetic": "on the LEFT side"
+        },
+        "american": {
+          "ipa": "ɒn ðə left saɪd",
+          "phonetic": "on the LEFT side"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "On the right side",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɒn ðə raɪt saɪd",
+          "phonetic": "on the RIGHT side"
+        },
+        "american": {
+          "ipa": "ɒn ðə raɪt saɪd",
+          "phonetic": "on the RIGHT side"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "in the middle",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ðə ˈmɪdəl",
+          "phonetic": "in the MID-ul"
+        },
+        "american": {
+          "ipa": "ɪn ðə ˈmɪdəl",
+          "phonetic": "in the MID-ul"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "in central areas",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ˈsentrəl ˈeəriəz",
+          "phonetic": "in SEN-trul AIR-ee-uz"
+        },
+        "american": {
+          "ipa": "ɪn ˈsentrəl ˈeəriəz",
+          "phonetic": "in SEN-trul AIR-ee-uz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    },
+    {
+      "english": "in coastal areas",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ˈkəʊstəl ˈeəriəz",
+          "phonetic": "in KOH-stul AIR-ee-uz"
+        },
+        "american": {
+          "ipa": "ɪn ˈkəʊstəl ˈeəriəz",
+          "phonetic": "in KOH-stul AIR-ee-uz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-slots-collection",
+      "source": "pte-di-slots-collection"
+    }
+  ]
+}

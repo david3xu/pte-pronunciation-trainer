@@ -6,8 +6,8 @@
  */
 
 import {
-    Cross2Icon,
-    GearIcon
+  Cross2Icon,
+  GearIcon
 } from '@radix-ui/react-icons';
 import { Badge, Button, Card, Flex, Select, Slider, Switch, Tabs, Text } from '@radix-ui/themes';
 import React, { useMemo } from 'react';
@@ -423,7 +423,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
               <Flex direction="column" gap="2">
                 <Text size="3" weight="medium">TTS Voice</Text>
                 <Select.Root
-                  value={ttsVoice || 'premium'}
+                  value={ttsVoice || 'default'}
                   onValueChange={(value) =>
                     updateSetting('ttsVoice', value === 'default' ? null : value)
                   }

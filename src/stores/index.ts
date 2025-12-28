@@ -137,7 +137,7 @@ export const useAppStore = create<AppState>()(
             autoSwitchBooks: false, // Default OFF - stays on current book
             showPhonetic: true,
             ttsRate: 1.0,
-            ttsVoice: 'premium', // AWS Polly as default
+            ttsVoice: null, // Browser Default as default
             vocabRepeatCount: 1, // Default: speak each word once
             difficultyFilter: 'all',
             theme: 'auto', // Default: follow system preference
@@ -161,7 +161,7 @@ export const useAppStore = create<AppState>()(
                 autoSwitchBooks: false, // Default OFF
                 showPhonetic: true,
                 ttsRate: 1.0,
-                ttsVoice: 'premium', // AWS Polly as default
+                ttsVoice: null, // Browser Default as default
                 vocabRepeatCount: 1, // Default: speak each word once
                 difficultyFilter: 'all',
                 theme: 'auto', // Default: follow system preference

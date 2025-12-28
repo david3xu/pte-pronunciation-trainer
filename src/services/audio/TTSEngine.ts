@@ -431,10 +431,10 @@ export class TTSEngine {
    */
   private async speakWithPolly(text: string, lang: string | null = null): Promise<void> {
     try {
-      // Determine voice and language for Polly - using Female voices
-      const voiceId = lang === 'en-AU' ? 'Nicole' :  // Australian female
-                      lang === 'en-GB' ? 'Amy' :     // British female
-                      'Amy'; // Default to British female
+      // Determine voice and language for Polly - using Male voices for mobile
+      const voiceId = lang === 'en-AU' ? 'Russell' :  // Australian male
+                      lang === 'en-GB' ? 'Brian' :     // British male
+                      'Brian'; // Default to British male
 
       const languageCode = lang === 'en-AU' ? 'en-AU' :
                           lang === 'en-GB' ? 'en-GB' :

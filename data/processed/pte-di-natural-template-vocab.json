@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-12-28T01:31:55.569Z",
+    "generated": "2025-12-28T02:18:10.736Z",
     "totalTerms": 107,
     "source": "pte-di-natural-template-vocab",
     "description": "Auto-discovered vocabulary book: pte-di-natural-template-vocab",
@@ -253,7 +253,7 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "this chart tells us about",
+      "english": "this picture tells us about",
       "pronunciation": {
         "british": {
           "ipa": "ðɪs tʃɑːt telzʌs əˈbaʊt",
@@ -445,7 +445,7 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "this chart tells us about",
+      "english": "this picture tells us about",
       "pronunciation": {
         "british": {
           "ipa": "ðɪs tʃɑːt telz ʌs əˈbaʊt",
@@ -925,7 +925,7 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "This chart",
+      "english": "This picture",
       "pronunciation": {
         "british": {
           "ipa": "ðɪs tʃɑːt",
@@ -1005,7 +1005,7 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "this chart tells us about",
+      "english": "this picture tells us about",
       "pronunciation": {
         "british": {
           "ipa": "ðɪs tʃɑːt telz ʌs əˈbaʊt",
@@ -1069,7 +1069,7 @@
       "source": "pte-di-natural-template-vocab"
     },
     {
-      "english": "comes second in the chart",
+      "english": "comes second in the picture",
       "pronunciation": {
         "british": {
           "ipa": "kʌmz ˈsekənd ɪn ðə tʃɑːt",

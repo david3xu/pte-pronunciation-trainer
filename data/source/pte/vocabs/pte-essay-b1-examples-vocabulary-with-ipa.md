@@ -1,7 +1,7 @@
 # PTE Essay B1 Examples - Fill-in Terms Vocabulary
 
 **Purpose:** ALL fill-in terms from Template B1 Essay Examples collection
-**Total Terms:** 258 unique terms (ordered by example)
+**Total Terms:** 244 unique terms (ordered by example)
 **Format:** By example order with IPA pronunciation
 **Source:** essay-examples-template-b1.md
 
@@ -312,58 +312,31 @@
 231. **companies and managers** | /ˈkʌmpəniz ənd ˈmænɪdʒəz/ — sounds like **KUM-puh-neez und MAN-ij-urz**
 
 ---
+---
 
-## Example 16: Climate Change - Company and Individual Actions
+## Example 16: Technology and Better World
 
-232. **corporate climate action** | /ˈkɔːpərət ˈklaɪmət ˈækʃən/ — sounds like **KOR-pur-ut KLY-mut AK-shun**
-233. **big companies** | /bɪɡ ˈkʌmpəniz/ — sounds like **BIG KUM-puh-neez**
-234. **individuals** | /ˌɪndɪˈvɪdʒuəlz/ — sounds like **in-dih-VIJ-oo-ulz**
-235. **sustainable operations** | /səˈsteɪnəbəl ˌɒpəˈreɪʃənz/ — sounds like **suh-STAY-nuh-bul op-uh-RAY-shunz**
-236. **lower pollution** | /ˈləʊə pəˈluːʃən/ — sounds like **LOH-ur puh-LOO-shun**
-237. **green research** | /ɡriːn rɪˈsɜːtʃ/ — sounds like **GREEN rih-SURCH**
-238. **clean energy plans** | /kliːn ˈenədʒi plænz/ — sounds like **KLEEN EN-ur-jee PLANZ**
-239. **corporate responsibility** | /ˈkɔːpərət rɪˌspɒnsəˈbɪləti/ — sounds like **KOR-pur-ut rih-spon-suh-BIL-uh-tee**
-240. **public awareness** | /ˈpʌblɪk əˈweənəs/ — sounds like **PUB-lik uh-WAIR-nus**
-241. **green choices** | /ɡriːn ˈtʃɔɪsɪz/ — sounds like **GREEN CHOY-siz**
-242. **sustainable lifestyle** | /səˈsteɪnəbəl ˈlaɪfstaɪl/ — sounds like **suh-STAY-nuh-bul LYF-styl**
-243. **green energy at home** | /ɡriːn ˈenədʒi ət həʊm/ — sounds like **GREEN EN-ur-jee ut HOHM**
-244. **business studies** | /ˈbɪznəs ˈstʌdiz/ — sounds like **BIZ-nus STUD-eez**
-245. **companies, governments, and individuals** | /ˈkʌmpəniz ˈɡʌvənmənts ənd ˌɪndɪˈvɪdʒuəlz/ — sounds like **KUM-puh-neez GUV-urn-ments und in-dih-VIJ-oo-ulz**
+232. **technology** | /tekˈnɒlədʒi/ — sounds like **tek-NOL-uh-jee**
+233. **society** | /səˈsaɪəti/ — sounds like **suh-SY-uh-tee**
+234. **improved communication and global connectivity** | /ɪmˈpruːvd kəˌmjuːnɪˈkeɪʃən ənd ˈɡləʊbəl ˌkɒnekˈtɪvəti/ — sounds like **im-PROOVD kuh-myoo-nih-KAY-shun und GLOH-bul kon-ek-TIV-uh-tee**
+235. **faster information access and better healthcare** | /ˈfɑːstə ˌɪnfəˈmeɪʃən ˈækses ənd ˈbetə ˈhelθkeə/ — sounds like **FAH-stur in-fur-MAY-shun AK-ses und BET-ur HELTH-kair**
+236. **higher living standards and improved quality of life** | /ˈhaɪə ˈlɪvɪŋ ˈstændədz ənd ɪmˈpruːvd ˈkwɒləti əv laɪf/ — sounds like **HY-ur LIV-ing STAN-durdz und im-PROOVD KWOL-uh-tee uv LYF**
+237. **better medical treatment and easier access to education** | /ˈbetə ˈmedɪkəl ˈtriːtmənt ənd ˈiːziə ˈækses tuː ˌedjʊˈkeɪʃən/ — sounds like **BET-ur MED-ih-kul TREET-ment und EE-zee-ur AK-ses too ej-oo-KAY-shun**
+238. **technological advances** | /ˌteknəˈlɒdʒɪkəl ədˈvɑːnsɪz/ — sounds like **tek-nuh-LOJ-ih-kul ud-VAHN-siz**
+239. **privacy concerns and data security issues** | /ˈprɪvəsi kənˈsɜːnz ənd ˈdeɪtə sɪˈkjʊərəti ˈɪʃuːz/ — sounds like **PRIV-uh-see kun-SURNZ und DAY-tuh sih-KYOOR-uh-tee ISH-ooz**
+240. **job losses and social isolation** | /dʒɒb ˈlɒsɪz ənd ˈsəʊʃəl ˌaɪsəˈleɪʃən/ — sounds like **JOB LOS-iz und SOH-shul eye-suh-LAY-shun**
+241. **social studies** | /ˈsəʊʃəl ˈstʌdiz/ — sounds like **SOH-shul STUD-eez**
+242. **digital divide and reduced face-to-face interaction** | /ˈdɪdʒɪtəl dɪˈvaɪd ənd rɪˈdjuːst feɪs tuː feɪs ˌɪntərˈækʃən/ — sounds like **DIJ-ih-tul dih-VYD und rih-DYOOST FAYS too FAYS in-tur-AK-shun**
+243. **overreliance on technology** | /ˌəʊvərɪˈlaɪəns ɒn tekˈnɒlədʒi/ — sounds like **oh-vur-rih-LY-uns on tek-NOL-uh-jee**
+244. **governments and technology companies** | /ˈɡʌvənmənts ənd tekˈnɒlədʒi ˈkʌmpəniz/ — sounds like **GUV-urn-ments und tek-NOL-uh-jee KUM-puh-neez**
 
 ---
 
-## Expanded Terms: Early Marriage (Alternative Arguments)
-
-246. **partner support** | /ˈpɑːtnə səˈpɔːt/ — sounds like **PART-nur suh-PORT**
-247. **solving problems together** | /ˈsɒlvɪŋ ˈprɒbləmz təˈɡeðə/ — sounds like **SOL-ving PROB-lumz tuh-GETH-ur**
-248. **marriage duties** | /ˈmærɪdʒ ˈdjuːtiz/ — sounds like **MAR-ij DOO-teez**
-249. **extra household costs** | /ˈekstrə ˈhaʊshəʊld kɒsts/ — sounds like **EK-struh HOWS-hohld KOSTS**
-250. **marriage problems** | /ˈmærɪdʒ ˈprɒbləmz/ — sounds like **MAR-ij PROB-lumz**
-
----
-
-## Expanded Terms: Television Functions (Specific Examples)
-
-251. **comedies and talk shows** | /ˈkɒmədiz ənd tɔːk ʃəʊz/ — sounds like **KOM-uh-deez und TAWK SHOHZ**
-252. **funny shows** | /ˈfʌni ʃəʊz/ — sounds like **FUN-ee SHOHZ**
-253. **nature shows** | /ˈneɪtʃə ʃəʊz/ — sounds like **NAY-chur SHOHZ**
-254. **calming music** | /ˈkɑːmɪŋ ˈmjuːzɪk/ — sounds like **KAH-ming MYOO-zik**
-
----
-
-## Expanded Terms: Work-Life Balance (Cause Analysis)
-
-255. **workplace competition** | /ˈwɜːkpleɪs ˌkɒmpəˈtɪʃən/ — sounds like **WURK-plays kom-puh-TISH-un**
-256. **extra hours and less rest** | /ˈekstrə ˈaʊəz ənd les rest/ — sounds like **EK-struh OW-urz und LES REST**
-257. **high living costs** | /haɪ ˈlɪvɪŋ kɒsts/ — sounds like **HY LIV-ing KOSTS**
-258. **overtime work** | /ˈəʊvətaɪm wɜːk/ — sounds like **OH-vur-tym WURK**
-
----
 
 ## Summary Statistics
 
-- **Total unique terms:** 258 terms
-- **Organized by:** 16 essay examples + 3 expansion sections
+- **Total unique terms:** 244 terms
+- **Organized by:** 16 essay examples
 - **All terms:** Used in actual Template B1 essays
 - **Strategy:** These are ACTUAL fills used in essay examples
 

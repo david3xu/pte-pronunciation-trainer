@@ -423,7 +423,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
               <Flex direction="column" gap="2">
                 <Text size="3" weight="medium">TTS Voice</Text>
                 <Select.Root
-                  value={ttsVoice || 'default'}
+                  value={ttsVoice || 'premium'}
                   onValueChange={(value) =>
                     updateSetting('ttsVoice', value === 'default' ? null : value)
                   }

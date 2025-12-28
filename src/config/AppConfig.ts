@@ -61,6 +61,7 @@ export class AppConfig {
               'pte-hard-rs-vocabulary': 'data/processed/pte-hard-rs-vocabulary.json',
               'pte-hard-wfd-vocabulary': 'data/processed/pte-hard-wfd-vocabulary.json',
               'pte-di-natural-template': 'data/processed/pte-di-natural-template-vocab.json',
+              'pte-di-slots': 'data/processed/pte-di-slots-collection.json',
 
               // Practice modes
               'rs': 'data/processed/pte-repeat-sentence.json',
@@ -99,6 +100,7 @@ export class AppConfig {
           { id: 'pte-hard-rs-vocabulary', name: 'PTE Hard RS Vocab', category: 'vocabulary', difficulty: 'hard' },
           { id: 'pte-hard-wfd-vocabulary', name: 'PTE Hard WFD Vocab', category: 'vocabulary', difficulty: 'hard' },
           { id: 'pte-di-natural-template', name: 'DI Natural Template', category: 'vocabulary', difficulty: 'normal' },
+          { id: 'pte-di-slots', name: 'DI Slots Collection', category: 'vocabulary', difficulty: 'normal' },
 
           // Practice modes (3 total)
           { id: 'rs', name: 'Repeat Sentence', category: 'practice', description: '620 practice sentences' },

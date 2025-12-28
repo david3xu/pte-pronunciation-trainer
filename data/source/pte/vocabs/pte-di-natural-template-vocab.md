@@ -1,6 +1,6 @@
 # PTE DI Natural Template - Vocabulary with IPA
 
-**Total Terms:** 82
+**Total Terms:** 104
 
 > Practice these phrases in template order for DI speaking
 
@@ -125,6 +125,33 @@
 80. and its connection to | /ənd ɪts kəˈnekʃən tuː/ — sounds like **and its kuh-NEK-shun too**
 81. In conclusion | /ɪn kənˈkluːʒən/ — sounds like **in kun-KLOO-zhun**
 82. the lecture is mainly about | /ðə ˈlektʃə ɪz ˈmeɪnli əˈbaʊt/ — sounds like **the LEK-chur iz MAYN-lee uh-BOUT**
+
+---
+
+## SGD Template Phrases (In Order)
+
+83. The discussion is about | /ðə dɪˈskʌʃən ɪz əˈbaʊt/ — sounds like **the dis-KUH-shun iz uh-BOUT**
+84. The first speaker talks about | /ðə fɜːst ˈspiːkə tɔːks əˈbaʊt/ — sounds like **the FIRST SPEE-kur TAWKS uh-BOUT**
+85. are related to | /ɑː rɪˈleɪtɪd tuː/ — sounds like **ar ree-LAY-tid too**
+86. are important in this context | /ɑː ɪmˈpɔːtənt ɪn ðɪs ˈkɒntekst/ — sounds like **ar im-POR-tunt in this KON-tekst**
+87. is also discussed as a challenge | /ɪz ˈɔːlsəʊ dɪˈskʌst æz ə ˈtʃælɪndʒ/ — sounds like **iz AWL-soh dis-KUST az uh CHAL-inj**
+88. The speaker concludes that | /ðə ˈspiːkə kənˈkluːdz ðæt/ — sounds like **the SPEE-kur kun-KLOODZ that**
+89. are the key points | /ɑː ðə kiː pɔɪnts/ — sounds like **ar the KEE points**
+90. Moving to the second speaker | /ˈmuːvɪŋ tuː ðə ˈsekənd ˈspiːkə/ — sounds like **MOO-ving too the SEK-und SPEE-kur**
+91. who discusses | /huː dɪˈskʌsɪz/ — sounds like **hoo dis-KUS-iz**
+92. play a role | /pleɪ ə rəʊl/ — sounds like **PLAY uh ROHL**
+93. is mentioned as a challenge | /ɪz ˈmenʃənd æz ə ˈtʃælɪndʒ/ — sounds like **iz MEN-shund az uh CHAL-inj**
+94. The speaker suggests that | /ðə ˈspiːkə səˈdʒests ðæt/ — sounds like **the SPEE-kur sug-JESTS that**
+95. could be solutions | /kʊd biː səˈluːʃənz/ — sounds like **kood bee suh-LOO-shunz**
+96. Similarly | /ˈsɪmɪləli/ — sounds like **SIM-ih-lur-lee**
+97. the third speaker talks about | /ðə θɜːd ˈspiːkə tɔːks əˈbaʊt/ — sounds like **the THIRD SPEE-kur TAWKS uh-BOUT**
+98. are significant | /ɑː sɪɡˈnɪfɪkənt/ — sounds like **ar sig-NIF-ih-kunt**
+99. as important aspects | /æz ɪmˈpɔːtənt ˈæspekts/ — sounds like **az im-POR-tunt AS-pekts**
+100. needs to be considered | /niːdz tuː biː kənˈsɪdəd/ — sounds like **NEEDZ too bee kun-SID-urd**
+101. The speaker believes that | /ðə ˈspiːkə bɪˈliːvz ðæt/ — sounds like **the SPEE-kur buh-LEEVZ that**
+102. are the way forward | /ɑː ðə weɪ ˈfɔːwəd/ — sounds like **ar the WAY FOR-wurd**
+103. All speakers agree that | /ɔːl ˈspiːkəz əˈɡriː ðæt/ — sounds like **AWL SPEE-kurz uh-GREE that**
+104. the discussion is mainly about | /ðə dɪˈskʌʃən ɪz ˈmeɪnli əˈbaʊt/ — sounds like **the dis-KUH-shun iz MAYN-lee uh-BOUT**
 
 ---
 

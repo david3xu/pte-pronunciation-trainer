@@ -1,8 +1,8 @@
 # PTE Describe Image Difficult Words with IPA Pronunciation Guides
 
-506/56
+515/58
 
-This collection includes all difficult words from the 56 PTE Describe Image example answers in order of appearance, with IPA pronunciation guides and simplified phonetics using consistent "uh" for schwa sounds.
+This collection includes all difficult words from the 58 PTE Describe Image example answers in order of appearance, with IPA pronunciation guides and simplified phonetics using consistent "uh" for schwa sounds.
 
 
 ### Difficult Words from Describe Image Examples
@@ -576,4 +576,15 @@ This collection includes all difficult words from the 56 PTE Describe Image exam
 504. n. valleys | /ˈvæliz/ — sounds like **VAL-eez**
 505. n. connection | /kəˈnɛkʃən/ — sounds like **kuh-NEK-shuhn**
 506. adj. global | /ˈɡloʊbəl/ — sounds like **GLOH-buhl**
+
+507. n. populations | /ˌpɒpjəˈleɪʃənz/ — sounds like **pop-yuh-LAY-shuhnz**
+508. n. Union | /ˈjuːnjən/ — sounds like **YOON-yuhn**
+509. n. Italy | /ˈɪtəli/ — sounds like **IT-uh-lee**
+510. n. Spain | /speɪn/ — sounds like **spayn**
+511. n. Poland | /ˈpoʊlənd/ — sounds like **POH-luhnd**
+
+512. n. accommodation | /əˌkɒməˈdeɪʃən/ — sounds like **uh-kom-uh-DAY-shuhn**
+513. n. window | /ˈwɪndoʊ/ — sounds like **WIN-doh**
+514. adj. complete | /kəmˈpliːt/ — sounds like **kuhm-PLEET**
+515. prep. including | /ɪnˈkluːdɪŋ/ — sounds like **in-KLOO-ding**
 

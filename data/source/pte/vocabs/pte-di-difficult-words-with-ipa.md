@@ -1,8 +1,9 @@
 # PTE Describe Image Difficult Words with IPA Pronunciation Guides
 
-440/1
+496/54
 
-This collection includes all difficult words from the 44 PTE Describe Image example answers in order of appearance, with IPA pronunciation guides and simplified phonetics using consistent "uh" for schwa sounds.
+This collection includes all difficult words from the 54 PTE Describe Image example answers in order of appearance, with IPA pronunciation guides and simplified phonetics using consistent "uh" for schwa sounds.
+
 
 ### Difficult Words from Describe Image Examples
 
@@ -493,4 +494,74 @@ This collection includes all difficult words from the 44 PTE Describe Image exam
 438. n. categories | /ˈkætəɡɔriz/ — sounds like **KAT-uh-gor-eez**
 439. adv. extremely | /ɪkˈstriːmli/ — sounds like **ik-STREEM-lee**
 440. adj. obese | /oʊˈbiːs/ — sounds like **oh-BEES**
+
+---
+
+### New Words from Additional Example Images (Images 61, 65, 77, 79, 80, 81, 82, 83, 84, 18)
+
+441. n. stationery | /ˈsteɪʃənəri/ — sounds like **STAY-shuh-ner-ee**
+442. adj. colorful | /ˈkʌlərfəl/ — sounds like **KUL-uhr-fuhl**
+443. n. backpack | /ˈbækpæk/ — sounds like **BAK-pak**
+444. n. daughter | /ˈdɔːtər/ — sounds like **DAW-tuhr**
+445. n. expression | /ɪkˈsprɛʃən/ — sounds like **ik-SPRESH-uhn**
+446. n. shelves | /ʃɛlvz/ — sounds like **shelvz**
+447. n. supplies | /səˈplaɪz/ — sounds like **suh-PLYZ**
+448. n. experience | /ɪkˈspɪriəns/ — sounds like **ik-SPEER-ee-uhns**
+
+449. v. compares | /kəmˈpɛrz/ — sounds like **kuhm-PAIRZ**
+450. n. cereals | /ˈsɪriəlz/ — sounds like **SEER-ee-uhlz**
+451. n. proteins | /ˈproʊtiːnz/ — sounds like **PROH-teenz**
+452. n. advice | /ədˈvaɪs/ — sounds like **uhd-VYS**
+453. n. focus | /ˈfoʊkəs/ — sounds like **FOH-kuhs**
+454. adv. rather | /ˈræðər/ — sounds like **RATH-uhr**
+
+455. n. salary | /ˈsæləri/ — sounds like **SAL-uh-ree**
+456. n. gender | /ˈdʒɛndər/ — sounds like **JEN-duhr**
+457. v. earned | /ɜrnd/ — sounds like **urnd**
+458. n. pounds | /paʊndz/ — sounds like **powndz**
+459. adv. consistently | /kənˈsɪstəntli/ — sounds like **kuhn-SIS-tuhnt-lee**
+
+460. n. centimeters | /ˈsɛntɪmiːtərz/ — sounds like **SEN-tuh-mee-tuhrz**
+461. n. babies | /ˈbeɪbiz/ — sounds like **BAY-beez**
+462. adj. teenage | /ˈtiːneɪdʒ/ — sounds like **TEE-nayj**
+463. n. spurt | /spɜrt/ — sounds like **spurt**
+464. n. patterns | /ˈpætərnz/ — sounds like **PAT-uhrnz**
+
+465. n. volunteer | /ˌvɒlənˈtɪər/ — sounds like **vol-uhn-TEER**
+466. n. triangles | /ˈtraɪæŋɡəlz/ — sounds like **TRY-ang-guhlz**
+467. n. squares | /skwɛrz/ — sounds like **skwairz**
+468. adj. middle-aged | /ˈmɪdəleɪdʒd/ — sounds like **MID-uhl-ayjd**
+
+469. n. Ontario | /ɒnˈtɛərioʊ/ — sounds like **on-TAIR-ee-oh**
+470. n. manufacturing | /ˌmænjəˈfæktʃərɪŋ/ — sounds like **man-yuh-FAK-chur-ing**
+471. n. employment | /ɪmˈplɔɪmənt/ — sounds like **im-PLOY-muhnt**
+472. n. exchange | /ɪksˈtʃeɪndʒ/ — sounds like **iks-CHAYNJ**
+473. adj. Canadian | /kəˈneɪdiən/ — sounds like **kuh-NAY-dee-uhn**
+474. n. correlation | /ˌkɒrəˈleɪʃən/ — sounds like **kor-uh-LAY-shuhn**
+
+475. adj. nuclear | /ˈnuːkliər/ — sounds like **NOO-klee-uhr**
+476. adj. eastern | /ˈiːstərn/ — sounds like **EE-stuhrn**
+477. adj. western | /ˈwɛstərn/ — sounds like **WES-tuhrn**
+478. v. located | /ˈloʊkeɪtɪd/ — sounds like **LOH-kay-tid**
+
+479. n. poultry | /ˈpoʊltri/ — sounds like **POHL-tree**
+480. n. plenty | /ˈplɛnti/ — sounds like **PLEN-tee**
+481. n. guides | /ɡaɪdz/ — sounds like **gydz**
+482. n. sweets | /swiːts/ — sounds like **sweets**
+
+483. n. unemployment | /ˌʌnɪmˈplɔɪmənt/ — sounds like **un-im-PLOY-muhnt**
+484. n. attainment | /əˈteɪnmənt/ — sounds like **uh-TAYN-muhnt**
+485. n. earnings | /ˈɜrnɪŋz/ — sounds like **UR-ningz**
+486. adj. doctoral | /ˈdɒktərəl/ — sounds like **DOK-tuh-ruhl**
+487. adj. professional | /prəˈfɛʃənəl/ — sounds like **pruh-FESH-uh-nuhl**
+488. n. diploma | /dɪˈploʊmə/ — sounds like **dih-PLOH-muh**
+489. n. bachelor's | /ˈbætʃələrz/ — sounds like **BACH-uh-luhrz**
+490. n. associate's | /əˈsoʊsiɪts/ — sounds like **uh-SOH-see-its**
+491. n. median | /ˈmiːdiən/ — sounds like **MEE-dee-uhn**
+
+492. adj. ethnic | /ˈɛθnɪk/ — sounds like **ETH-nik**
+493. v. varies | /ˈvɛriz/ — sounds like **VAIR-eez**
+494. n. Caribbean | /ˌkærɪˈbiːən/ — sounds like **kar-uh-BEE-uhn**
+495. adj. African | /ˈæfrɪkən/ — sounds like **AF-ruh-kuhn**
+496. n. statistics | /stəˈtɪstɪks/ — sounds like **stuh-TIS-tiks**
 

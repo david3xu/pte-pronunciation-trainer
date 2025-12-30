@@ -1,8 +1,8 @@
 # PTE Describe Image Difficult Words with IPA Pronunciation Guides
 
-496/54
+506/56
 
-This collection includes all difficult words from the 54 PTE Describe Image example answers in order of appearance, with IPA pronunciation guides and simplified phonetics using consistent "uh" for schwa sounds.
+This collection includes all difficult words from the 56 PTE Describe Image example answers in order of appearance, with IPA pronunciation guides and simplified phonetics using consistent "uh" for schwa sounds.
 
 
 ### Difficult Words from Describe Image Examples
@@ -564,4 +564,16 @@ This collection includes all difficult words from the 54 PTE Describe Image exam
 494. n. Caribbean | /ˌkærɪˈbiːən/ — sounds like **kar-uh-BEE-uhn**
 495. adj. African | /ˈæfrɪkən/ — sounds like **AF-ruh-kuhn**
 496. n. statistics | /stəˈtɪstɪks/ — sounds like **stuh-TIS-tiks**
+
+497. n. articles | /ˈɑrtɪkəlz/ — sounds like **AR-tuh-kuhlz**
+498. v. published | /ˈpʌblɪʃt/ — sounds like **PUB-lisht**
+499. n. professors | /prəˈfɛsərz/ — sounds like **pruh-FES-uhrz**
+500. adj. steady | /ˈstɛdi/ — sounds like **STED-ee**
+
+501. n. carbon | /ˈkɑrbən/ — sounds like **KAR-buhn**
+502. n. dioxide | /daɪˈɒksaɪd/ — sounds like **dye-OK-syde**
+503. v. measured | /ˈmɛʒərd/ — sounds like **MEZH-uhrd**
+504. n. valleys | /ˈvæliz/ — sounds like **VAL-eez**
+505. n. connection | /kəˈnɛkʃən/ — sounds like **kuh-NEK-shuhn**
+506. adj. global | /ˈɡloʊbəl/ — sounds like **GLOH-buhl**
 

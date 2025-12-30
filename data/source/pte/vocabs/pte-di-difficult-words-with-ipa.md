@@ -1,6 +1,6 @@
 # PTE Describe Image Difficult Words with IPA Pronunciation Guides
 
-543/68
+626/68
 
 This collection includes all difficult words from the 68 PTE Describe Image example answers in order of appearance, with IPA pronunciation guides and simplified phonetics using consistent "uh" for schwa sounds.
 
@@ -578,51 +578,134 @@ This collection includes all difficult words from the 68 PTE Describe Image exam
 506. adj. global | /ˈɡloʊbəl/ — sounds like **GLOH-buhl**
 
 507. n. populations | /ˌpɒpjəˈleɪʃənz/ — sounds like **pop-yuh-LAY-shuhnz**
-508. n. Union | /ˈjuːnjən/ — sounds like **YOON-yuhn**
-509. n. Italy | /ˈɪtəli/ — sounds like **IT-uh-lee**
-510. n. Spain | /speɪn/ — sounds like **spayn**
-511. n. Poland | /ˈpoʊlənd/ — sounds like **POH-luhnd**
+508. adj. European | /ˌjʊrəˈpiːən/ — sounds like **yur-uh-PEE-uhn**
+509. n. Union | /ˈjuːnjən/ — sounds like **YOON-yuhn**
+510. n. percentage | /pərˈsɛntɪdʒ/ — sounds like **puhr-SEN-tij**
+511. n. Germany | /ˈdʒɜrməni/ — sounds like **JUR-muh-nee**
+512. n. France | /fræns/ — sounds like **frans**
+513. n. Kingdom | /ˈkɪŋdəm/ — sounds like **KING-duhm**
+514. n. Italy | /ˈɪtəli/ — sounds like **IT-uh-lee**
+515. n. Spain | /speɪn/ — sounds like **spayn**
+516. n. Poland | /ˈpoʊlənd/ — sounds like **POH-luhnd**
 
-512. n. accommodation | /əˌkɒməˈdeɪʃən/ — sounds like **uh-kom-uh-DAY-shuhn**
-513. n. window | /ˈwɪndoʊ/ — sounds like **WIN-doh**
-514. adj. complete | /kəmˈpliːt/ — sounds like **kuhm-PLEET**
-515. prep. including | /ɪnˈkluːdɪŋ/ — sounds like **in-KLOO-ding**
+517. n. accommodation | /əˌkɒməˈdeɪʃən/ — sounds like **uh-kom-uh-DAY-shuhn**
+518. n. diagram | /ˈdaɪəɡræm/ — sounds like **DYE-uh-gram**
+519. n. meters | /ˈmiːtərz/ — sounds like **MEE-tuhrz**
+520. n. bathroom | /ˈbæθruːm/ — sounds like **BATH-room**
+521. n. kitchen | /ˈkɪtʃən/ — sounds like **KICH-uhn**
+522. n. wardrobe | /ˈwɔrdroʊb/ — sounds like **WORD-rohb**
+523. n. window | /ˈwɪndoʊ/ — sounds like **WIN-doh**
+524. adj. compact | /kəmˈpækt/ — sounds like **kuhm-PAKT**
+525. adj. complete | /kəmˈpliːt/ — sounds like **kuhm-PLEET**
+526. prep. including | /ɪnˈkluːdɪŋ/ — sounds like **in-KLOO-ding**
 
-516. adj. arable | /ˈærəbəl/ — sounds like **AIR-uh-buhl**
-517. adj. agricultural | /ˌæɡrɪˈkʌltʃərəl/ — sounds like **ag-ruh-KUL-chuh-ruhl**
-518. n. plantations | /plænˈteɪʃənz/ — sounds like **plan-TAY-shuhnz**
-519. adj. unproductive | /ˌʌnprəˈdʌktɪv/ — sounds like **un-pruh-DUK-tiv**
-520. adj. northeastern | /ˌnɔrθˈiːstərn/ — sounds like **north-EE-stuhrn**
+527. adj. arable | /ˈærəbəl/ — sounds like **AIR-uh-buhl**
+528. adj. agricultural | /ˌæɡrɪˈkʌltʃərəl/ — sounds like **ag-ruh-KUL-chuh-ruhl**
+529. n. plantations | /plænˈteɪʃənz/ — sounds like **plan-TAY-shuhnz**
+530. adj. unproductive | /ˌʌnprəˈdʌktɪv/ — sounds like **un-pruh-DUK-tiv**
+531. adj. northeastern | /ˌnɔrθˈiːstərn/ — sounds like **north-EE-stuhrn**
+532. n. valleys | /ˈvæliz/ — sounds like **VAL-eez**
+533. v. represents | /ˌrɛprɪˈzɛnts/ — sounds like **rep-rih-ZENTS**
+534. n. forests | /ˈfɔrɪsts/ — sounds like **FOR-ists**
+535. n. regions | /ˈriːdʒənz/ — sounds like **REE-juhnz**
+536. n. mountains | /ˈmaʊntənz/ — sounds like **MOWN-tuhnz**
 
-521. n. sunshine | /ˈsʌnʃaɪn/ — sounds like **SUN-shyne**
-522. v. receives | /rɪˈsiːvz/ — sounds like **rih-SEEVZ**
-523. adj. sunniest | /ˈsʌniɪst/ — sounds like **SUN-ee-ist**
+537. n. sunshine | /ˈsʌnʃaɪn/ — sounds like **SUN-shyne**
+538. n. Mediterranean | /ˌmɛdɪtəˈreɪniən/ — sounds like **med-uh-tuh-RAY-nee-uhn**
+539. v. receives | /rɪˈsiːvz/ — sounds like **rih-SEEVZ**
+540. adj. moderate | /ˈmɒdərət/ — sounds like **MOD-uh-ruht**
+541. n. Atlantic | /ətˈlæntɪk/ — sounds like **uht-LAN-tik**
+542. adj. sunniest | /ˈsʌniɪst/ — sounds like **SUN-ee-ist**
+543. adj. annual | /ˈænjuəl/ — sounds like **AN-yoo-uhl**
+544. adj. southern | /ˈsʌðərn/ — sounds like **SUH-thuhrn**
+545. adj. northern | /ˈnɔrðərn/ — sounds like **NOR-thuhrn**
+546. n. coast | /koʊst/ — sounds like **kohst**
 
-524. n. predictions | /prɪˈdɪkʃənz/ — sounds like **prih-DIK-shuhnz**
-525. n. continents | /ˈkɒntɪnənts/ — sounds like **KON-tuh-nuhnts**
-526. adj. Arctic | /ˈɑrktɪk/ — sounds like **ARK-tik**
+547. n. predictions | /prɪˈdɪkʃənz/ — sounds like **prih-DIK-shuhnz**
+548. n. Celsius | /ˈsɛlsiəs/ — sounds like **SEL-see-uhs**
+549. n. continents | /ˈkɒntɪnənts/ — sounds like **KON-tuh-nuhnts**
+550. adj. tropical | /ˈtrɒpɪkəl/ — sounds like **TROP-uh-kuhl**
+551. n. equator | /ɪˈkweɪtər/ — sounds like **ih-KWAY-tuhr**
+552. adj. Arctic | /ˈɑrktɪk/ — sounds like **ARK-tik**
+553. n. warming | /ˈwɔrmɪŋ/ — sounds like **WOR-ming**
+554. n. temperature | /ˈtɛmpərətʃər/ — sounds like **TEM-puhr-uh-chur**
+555. n. degrees | /dɪˈɡriːz/ — sounds like **dih-GREEZ**
+556. n. experience | /ɪkˈspɪriəns/ — sounds like **ik-SPEER-ee-uhns**
 
-527. n. smelting | /ˈsmɛltɪŋ/ — sounds like **SMELT-ing**
-528. n. atmosphere | /ˈætməsfɪr/ — sounds like **AT-muh-sfeer**
+557. n. pollution | /pəˈluːʃən/ — sounds like **puh-LOO-shuhn**
+558. n. industry | /ˈɪndəstri/ — sounds like **IN-duh-stree**
+559. n. transportation | /ˌtrænspɔrˈteɪʃən/ — sounds like **trans-por-TAY-shuhn**
+560. n. smelting | /ˈsmɛltɪŋ/ — sounds like **SMELT-ing**
+561. n. atmosphere | /ˈætməsfɪr/ — sounds like **AT-muh-sfeer**
+562. adj. chemical | /ˈkɛmɪkəl/ — sounds like **KEM-uh-kuhl**
+563. n. generation | /ˌdʒɛnəˈreɪʃən/ — sounds like **jen-uh-RAY-shuhn**
+564. n. nitrogen | /ˈnaɪtrədʒən/ — sounds like **NY-truh-juhn**
+565. n. dioxide | /daɪˈɒksaɪd/ — sounds like **dye-OK-syde**
+566. n. process | /ˈprɒsɛs/ — sounds like **PROSS-es**
 
-529. n. income | /ˈɪnkʌm/ — sounds like **IN-kuhm**
-530. v. decreases | /dɪˈkriːsɪz/ — sounds like **dih-KREE-siz**
-531. n. earners | /ˈɜrnərz/ — sounds like **UR-nuhrz**
+567. adj. effective | /ɪˈfɛktɪv/ — sounds like **ih-FEK-tiv**
+568. n. income | /ˈɪnkʌm/ — sounds like **IN-kuhm**
+569. adj. horizontal | /ˌhɒrɪˈzɒntəl/ — sounds like **hor-uh-ZON-tuhl**
+570. v. decreases | /dɪˈkriːsɪz/ — sounds like **dih-KREE-siz**
+571. n. earners | /ˈɜrnərz/ — sounds like **UR-nuhrz**
+572. v. compared | /kəmˈpɛrd/ — sounds like **kuhm-PAIRD**
+573. adj. vertical | /ˈvɜrtɪkəl/ — sounds like **VUR-tuh-kuhl**
+574. n. percentage | /pərˈsɛntɪdʒ/ — sounds like **puhr-SEN-tij**
+575. n. pattern | /ˈpætərn/ — sounds like **PAT-uhrn**
+576. adj. downward | /ˈdaʊnwərd/ — sounds like **DOWN-wuhrd**
 
-532. n. readership | /ˈriːdərʃɪp/ — sounds like **REE-duhr-ship**
-533. n. decline | /dɪˈklaɪn/ — sounds like **dih-KLYNE**
+577. n. usage | /ˈjuːsɪdʒ/ — sounds like **YOO-sij**
+578. v. covering | /ˈkʌvərɪŋ/ — sounds like **KUV-uh-ring**
+579. adv. fairly | /ˈfɛrli/ — sounds like **FAIR-lee**
+580. n. readership | /ˈriːdərʃɪp/ — sounds like **REE-duhr-ship**
+581. n. decline | /dɪˈklaɪn/ — sounds like **dih-KLYNE**
+582. adv. significantly | /sɪɡˈnɪfɪkəntli/ — sounds like **sig-NIF-ih-kuhnt-lee**
+583. adj. traditional | /trəˈdɪʃənəl/ — sounds like **truh-DISH-uh-nuhl**
+584. n. percentage | /pərˈsɛntɪdʒ/ — sounds like **puhr-SEN-tij**
+585. v. increased | /ɪnˈkriːst/ — sounds like **in-KREEST**
+586. adj. stable | /ˈsteɪbəl/ — sounds like **STAY-buhl**
 
-534. n. Midlands | /ˈmɪdləndz/ — sounds like **MID-luhndz**
+587. v. commuting | /kəˈmjuːtɪŋ/ — sounds like **kuh-MYOO-ting**
+588. n. regions | /ˈriːdʒənz/ — sounds like **REE-juhnz**
+589. n. Britain | /ˈbrɪtən/ — sounds like **BRIT-uhn**
+590. v. measured | /ˈmɛʒərd/ — sounds like **MEZH-uhrd**
+591. n. minutes | /ˈmɪnɪts/ — sounds like **MIN-its**
+592. n. Midlands | /ˈmɪdləndz/ — sounds like **MID-luhndz**
+593. adj. horizontal | /ˌhɒrɪˈzɒntəl/ — sounds like **hor-uh-ZON-tuhl**
+594. adj. longest | /ˈlɔŋɡɪst/ — sounds like **LONG-gist**
+595. adj. shortest | /ˈʃɔrtɪst/ — sounds like **SHOR-tist**
+596. adv. clearly | /ˈklɪrli/ — sounds like **KLEER-lee**
 
-535. n. expense | /ɪkˈspɛns/ — sounds like **ik-SPENS**
-536. n. mortgage | /ˈmɔrɡɪdʒ/ — sounds like **MOR-gij**
-537. n. budget | /ˈbʌdʒɪt/ — sounds like **BUJ-it**
+597. n. household | /ˈhaʊshoʊld/ — sounds like **HOWS-hohld**
+598. n. Ireland | /ˈaɪərlənd/ — sounds like **EYE-uhr-luhnd**
+599. n. expense | /ɪkˈspɛns/ — sounds like **ik-SPENS**
+600. n. mortgage | /ˈmɔrɡɪdʒ/ — sounds like **MOR-gij**
+601. n. categories | /ˈkætəɡɔriz/ — sounds like **KAT-uh-gor-eez**
+602. n. budget | /ˈbʌdʒɪt/ — sounds like **BUJ-it**
+603. n. transport | /ˈtrænspɔrt/ — sounds like **TRANS-port**
+604. adj. medical | /ˈmɛdɪkəl/ — sounds like **MED-uh-kuhl**
+605. n. infographic | /ˌɪnfoʊˈɡræfɪk/ — sounds like **in-foh-GRAF-ik**
+606. n. purchases | /ˈpɜrtʃəsɪz/ — sounds like **PUR-chuh-siz**
 
-538. n. Amazon | /ˈæməzɒn/ — sounds like **AM-uh-zon**
-539. n. basin | /ˈbeɪsən/ — sounds like **BAY-suhn**
+607. n. rainforest | /ˈreɪnˌfɒrɪst/ — sounds like **RAYN-for-ist**
+608. n. distribution | /ˌdɪstrɪˈbjuːʃən/ — sounds like **dis-truh-BYOO-shuhn**
+609. adj. temperate | /ˈtɛmpərət/ — sounds like **TEM-puhr-uht**
+610. n. Amazon | /ˈæməzɒn/ — sounds like **AM-uh-zon**
+611. n. basin | /ˈbeɪsən/ — sounds like **BAY-suhn**
+612. v. concentrated | /ˈkɒnsəntreɪtɪd/ — sounds like **KON-suhn-tray-tid**
+613. adj. tropical | /ˈtrɒpɪkəl/ — sounds like **TROP-uh-kuhl**
+614. n. legend | /ˈlɛdʒənd/ — sounds like **LEJ-uhnd**
+615. n. Pacific | /pəˈsɪfɪk/ — sounds like **puh-SIF-ik**
+616. n. Atlantic | /ətˈlæntɪk/ — sounds like **uht-LAN-tik**
 
-540. n. mosquito | /məˈskiːtoʊ/ — sounds like **muh-SKEE-toh**
-541. n. pupae | /ˈpjuːpiː/ — sounds like **PYOO-pee**
-542. v. emerges | /ɪˈmɜrdʒɪz/ — sounds like **ih-MUR-jiz**
-543. n. stages | /ˈsteɪdʒɪz/ — sounds like **STAY-jiz**
+617. n. mosquito | /məˈskiːtoʊ/ — sounds like **muh-SKEE-toh**
+618. n. lifecycle | /ˈlaɪfˌsʌɪkəl/ — sounds like **LYFE-sy-kuhl**
+619. n. larvae | /ˈlɑrviː/ — sounds like **LAR-vee**
+620. n. pupae | /ˈpjuːpiː/ — sounds like **PYOO-pee**
+621. v. emerges | /ɪˈmɜrdʒɪz/ — sounds like **ih-MUR-jiz**
+622. n. stages | /ˈsteɪdʒɪz/ — sounds like **STAY-jiz**
+623. n. diagram | /ˈdaɪəɡræm/ — sounds like **DYE-uh-gram**
+624. n. cycle | /ˈsaɪkəl/ — sounds like **SY-kuhl**
+625. v. develop | /dɪˈvɛləp/ — sounds like **dih-VEL-uhp**
+626. n. duration | /dʊˈreɪʃən/ — sounds like **doo-RAY-shuhn**
 

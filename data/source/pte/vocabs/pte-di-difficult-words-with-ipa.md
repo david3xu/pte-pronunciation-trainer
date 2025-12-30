@@ -1,8 +1,8 @@
 # PTE Describe Image Difficult Words with IPA Pronunciation Guides
 
-515/58
+543/68
 
-This collection includes all difficult words from the 58 PTE Describe Image example answers in order of appearance, with IPA pronunciation guides and simplified phonetics using consistent "uh" for schwa sounds.
+This collection includes all difficult words from the 68 PTE Describe Image example answers in order of appearance, with IPA pronunciation guides and simplified phonetics using consistent "uh" for schwa sounds.
 
 
 ### Difficult Words from Describe Image Examples
@@ -587,4 +587,42 @@ This collection includes all difficult words from the 58 PTE Describe Image exam
 513. n. window | /ˈwɪndoʊ/ — sounds like **WIN-doh**
 514. adj. complete | /kəmˈpliːt/ — sounds like **kuhm-PLEET**
 515. prep. including | /ɪnˈkluːdɪŋ/ — sounds like **in-KLOO-ding**
+
+516. adj. arable | /ˈærəbəl/ — sounds like **AIR-uh-buhl**
+517. adj. agricultural | /ˌæɡrɪˈkʌltʃərəl/ — sounds like **ag-ruh-KUL-chuh-ruhl**
+518. n. plantations | /plænˈteɪʃənz/ — sounds like **plan-TAY-shuhnz**
+519. adj. unproductive | /ˌʌnprəˈdʌktɪv/ — sounds like **un-pruh-DUK-tiv**
+520. adj. northeastern | /ˌnɔrθˈiːstərn/ — sounds like **north-EE-stuhrn**
+
+521. n. sunshine | /ˈsʌnʃaɪn/ — sounds like **SUN-shyne**
+522. v. receives | /rɪˈsiːvz/ — sounds like **rih-SEEVZ**
+523. adj. sunniest | /ˈsʌniɪst/ — sounds like **SUN-ee-ist**
+
+524. n. predictions | /prɪˈdɪkʃənz/ — sounds like **prih-DIK-shuhnz**
+525. n. continents | /ˈkɒntɪnənts/ — sounds like **KON-tuh-nuhnts**
+526. adj. Arctic | /ˈɑrktɪk/ — sounds like **ARK-tik**
+
+527. n. smelting | /ˈsmɛltɪŋ/ — sounds like **SMELT-ing**
+528. n. atmosphere | /ˈætməsfɪr/ — sounds like **AT-muh-sfeer**
+
+529. n. income | /ˈɪnkʌm/ — sounds like **IN-kuhm**
+530. v. decreases | /dɪˈkriːsɪz/ — sounds like **dih-KREE-siz**
+531. n. earners | /ˈɜrnərz/ — sounds like **UR-nuhrz**
+
+532. n. readership | /ˈriːdərʃɪp/ — sounds like **REE-duhr-ship**
+533. n. decline | /dɪˈklaɪn/ — sounds like **dih-KLYNE**
+
+534. n. Midlands | /ˈmɪdləndz/ — sounds like **MID-luhndz**
+
+535. n. expense | /ɪkˈspɛns/ — sounds like **ik-SPENS**
+536. n. mortgage | /ˈmɔrɡɪdʒ/ — sounds like **MOR-gij**
+537. n. budget | /ˈbʌdʒɪt/ — sounds like **BUJ-it**
+
+538. n. Amazon | /ˈæməzɒn/ — sounds like **AM-uh-zon**
+539. n. basin | /ˈbeɪsən/ — sounds like **BAY-suhn**
+
+540. n. mosquito | /məˈskiːtoʊ/ — sounds like **muh-SKEE-toh**
+541. n. pupae | /ˈpjuːpiː/ — sounds like **PYOO-pee**
+542. v. emerges | /ɪˈmɜrdʒɪz/ — sounds like **ih-MUR-jiz**
+543. n. stages | /ˈsteɪdʒɪz/ — sounds like **STAY-jiz**
 

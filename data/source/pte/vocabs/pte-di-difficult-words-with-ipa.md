@@ -1,8 +1,8 @@
 # PTE Describe Image Difficult Words with IPA Pronunciation Guides
 
-626/68
+806/86
 
-This collection includes all difficult words from the 68 PTE Describe Image example answers in order of appearance, with IPA pronunciation guides and simplified phonetics using consistent "uh" for schwa sounds.
+This collection includes all difficult words from the 86 PTE Describe Image example answers in order of appearance, with IPA pronunciation guides and simplified phonetics using consistent "uh" for schwa sounds.
 
 
 ### Difficult Words from Describe Image Examples
@@ -708,4 +708,202 @@ This collection includes all difficult words from the 68 PTE Describe Image exam
 624. n. cycle | /ˈsaɪkəl/ — sounds like **SY-kuhl**
 625. v. develop | /dɪˈvɛləp/ — sounds like **dih-VEL-uhp**
 626. n. duration | /dʊˈreɪʃən/ — sounds like **doo-RAY-shuhn**
+
+627. adj. horizontal | /ˌhɒrɪˈzɒntəl/ — sounds like **hor-uh-ZON-tuhl**
+628. n. households | /ˈhaʊshoʊldz/ — sounds like **HOWS-hohldz**
+629. v. measured | /ˈmɛʒərd/ — sounds like **MEZH-uhrd**
+630. n. millions | /ˈmɪljənz/ — sounds like **MIL-yuhnz**
+631. adj. popular | /ˈpɒpjələr/ — sounds like **POP-yuh-luhr**
+632. n. freshwater | /ˈfrɛʃwɔtər/ — sounds like **FRESH-waw-tuhr**
+633. n. reptiles | /ˈrɛptaɪlz/ — sounds like **REP-tylz**
+634. n. saltwater | /ˈsɔltwɔtər/ — sounds like **SAWLT-waw-tuhr**
+635. adj. common | /ˈkɒmən/ — sounds like **KOM-uhn**
+636. adj. American | /əˈmɛrɪkən/ — sounds like **uh-MER-uh-kuhn**
+
+637. n. Zealand | /ˈziːlənd/ — sounds like **ZEE-luhnd**
+638. v. compared | /kəmˈpɛrd/ — sounds like **kuhm-PAIRD**
+639. n. average | /ˈævərɪdʒ/ — sounds like **AV-uh-rij**
+640. adj. vertical | /ˈvɜrtɪkəl/ — sounds like **VUR-tuh-kuhl**
+641. n. index | /ˈɪndɛks/ — sounds like **IN-deks**
+642. v. represents | /ˌrɛprɪˈzɛnts/ — sounds like **rep-rih-ZENTS**
+643. adj. stable | /ˈsteɪbəl/ — sounds like **STAY-buhl**
+644. adv. dramatically | /drəˈmætɪkli/ — sounds like **druh-MAT-ik-lee**
+645. adj. developed | /dɪˈvɛləpt/ — sounds like **dih-VEL-uhpt**
+646. n. countries | /ˈkʌntriz/ — sounds like **KUN-treez**
+
+647. adj. inbound | /ˈɪnbaʊnd/ — sounds like **IN-bownd**
+648. n. visitors | /ˈvɪzɪtərz/ — sounds like **VIZ-uh-tuhrz**
+649. n. Australia | /ɒˈstreɪliə/ — sounds like **aw-STRAY-lee-uh**
+650. n. thousands | /ˈθaʊzəndz/ — sounds like **THOW-zuhnds**
+651. n. source | /sɔrs/ — sounds like **sors**
+652. n. decrease | /dɪˈkriːs/ — sounds like **dih-KREES**
+653. adv. relatively | /ˈrɛlətɪvli/ — sounds like **REL-uh-tiv-lee**
+654. adj. stable | /ˈsteɪbəl/ — sounds like **STAY-buhl**
+655. n. tourists | /ˈtʊrɪsts/ — sounds like **TOOR-ists**
+656. n. figures | /ˈfɪɡjərz/ — sounds like **FIG-yuhrz**
+
+657. adj. disadvantaged | /ˌdɪsədˈvæntɪdʒd/ — sounds like **dis-uhd-VAN-tijd**
+658. n. backgrounds | /ˈbækɡraʊndz/ — sounds like **BAK-growndz**
+659. n. percentage | /pərˈsɛntɪdʒ/ — sounds like **puhr-SEN-tij**
+660. n. university | /ˌjuːnɪˈvɜrsəti/ — sounds like **yoo-nuh-VUR-suh-tee**
+661. n. England | /ˈɪŋɡlənd/ — sounds like **ING-gluhnd**
+662. adj. upward | /ˈʌpwərd/ — sounds like **UP-wuhrd**
+663. n. proportion | /prəˈpɔrʃən/ — sounds like **pruh-POR-shuhn**
+664. v. doubled | /ˈdʌbəld/ — sounds like **DUB-uhld**
+665. n. progress | /ˈprɒɡrɛs/ — sounds like **PROG-res**
+666. n. education | /ˌɛdʒuˈkeɪʃən/ — sounds like **ej-oo-KAY-shuhn**
+
+667. adj. economic | /ˌiːkəˈnɒmɪk/ — sounds like **ee-kuh-NOM-ik**
+668. n. consumption | /kənˈsʌmpʃən/ — sounds like **kuhn-SUMP-shuhn**
+669. n. household | /ˈhaʊshoʊld/ — sounds like **HOWS-hohld**
+670. adv. approximately | /əˈprɒksɪmətli/ — sounds like **uh-PROK-suh-muht-lee**
+671. n. values | /ˈvæljuːz/ — sounds like **VAL-yooz**
+672. n. percentage | /pərˈsɛntɪdʒ/ — sounds like **puhr-SEN-tij**
+673. adj. financial | /faɪˈnænʃəl/ — sounds like **fy-NAN-shuhl**
+674. adj. concerning | /kənˈsɜrnɪŋ/ — sounds like **kuhn-SUR-ning**
+675. n. pattern | /ˈpætərn/ — sounds like **PAT-uhrn**
+676. v. increasing | /ɪnˈkriːsɪŋ/ — sounds like **in-KREE-sing**
+
+677. n. profits | /ˈprɒfɪts/ — sounds like **PROF-its**
+678. adj. largest | /ˈlɑrdʒɪst/ — sounds like **LAR-jist**
+679. n. billion | /ˈbɪljən/ — sounds like **BIL-yuhn**
+680. n. dollars | /ˈdɒlərz/ — sounds like **DOL-uhrz**
+681. adj. Western | /ˈwɛstərn/ — sounds like **WES-tuhrn**
+682. n. Europe | /ˈjʊrəp/ — sounds like **YOOR-uhp**
+683. n. Pacific | /pəˈsɪfɪk/ — sounds like **puh-SIF-ik**
+684. adv. slightly | /ˈslaɪtli/ — sounds like **SLYTE-lee**
+685. n. banking | /ˈbæŋkɪŋ/ — sounds like **BANK-ing**
+686. adj. major | /ˈmeɪdʒər/ — sounds like **MAY-juhr**
+
+687. n. households | /ˈhaʊshoʊldz/ — sounds like **HOWS-hohldz**
+688. n. millions | /ˈmɪljənz/ — sounds like **MIL-yuhnz**
+689. v. representing | /ˌrɛprɪˈzɛntɪŋ/ — sounds like **rep-rih-ZEN-ting**
+690. n. freshwater | /ˈfrɛʃwɔtər/ — sounds like **FRESH-waw-tuhr**
+691. v. account | /əˈkaʊnt/ — sounds like **uh-KOWNT**
+692. n. segments | /ˈsɛɡmənts/ — sounds like **SEG-muhnts**
+693. n. reptiles | /ˈrɛptaɪlz/ — sounds like **REP-tylz**
+694. v. dominate | /ˈdɒmɪneɪt/ — sounds like **DOM-uh-nayt**
+695. n. ownership | /ˈoʊnərʃɪp/ — sounds like **OH-nuhr-ship**
+696. v. accounting | /əˈkaʊntɪŋ/ — sounds like **uh-KOWN-ting**
+
+697. n. market | /ˈmɑrkɪt/ — sounds like **MAR-kit**
+698. n. services | /ˈsɜrvɪsɪz/ — sounds like **SUR-vuh-siz**
+699. n. products | /ˈprɒdʌkts/ — sounds like **PROD-ukts**
+700. n. healthcare | /ˈhɛlθkɛr/ — sounds like **HELTH-kair**
+701. n. grooming | /ˈɡruːmɪŋ/ — sounds like **GROO-ming**
+702. adj. remaining | /rɪˈmeɪnɪŋ/ — sounds like **rih-MAY-ning**
+703. n. categories | /ˈkætəɡɔriz/ — sounds like **KAT-uh-gor-eez**
+704. n. industry | /ˈɪndəstri/ — sounds like **IN-duh-stree**
+705. n. spending | /ˈspɛndɪŋ/ — sounds like **SPEN-ding**
+706. adj. basic | /ˈbeɪsɪk/ — sounds like **BAY-sik**
+
+707. n. photograph | /ˈfoʊtəɡræf/ — sounds like **FOH-tuh-graf**
+708. n. chemistry | /ˈkɛmɪstri/ — sounds like **KEM-uh-stree**
+709. n. experiment | /ɪkˈspɛrɪmənt/ — sounds like **ik-SPER-uh-muhnt**
+710. n. laboratory | /ˈlæbrətɔri/ — sounds like **LAB-ruh-tor-ee**
+711. n. scientist | /ˈsaɪəntɪst/ — sounds like **SY-uhn-tist**
+712. n. containers | /kənˈteɪnərz/ — sounds like **kuhn-TAY-nuhrz**
+713. n. beakers | /ˈbiːkərz/ — sounds like **BEE-kuhrz**
+714. n. techniques | /tɛkˈniːks/ — sounds like **tek-NEEKS**
+715. adj. educational | /ˌɛdʒuˈkeɪʃənəl/ — sounds like **ej-oo-KAY-shuh-nuhl**
+716. v. conduct | /ˈkɒndʌkt/ — sounds like **KON-dukt**
+
+717. adj. overseas | /ˌoʊvərˈsiːz/ — sounds like **oh-vuhr-SEEZ**
+718. n. residents | /ˈrɛzɪdənts/ — sounds like **REZ-uh-duhnts**
+719. adv. abroad | /əˈbrɔd/ — sounds like **uh-BRAWD**
+720. v. measured | /ˈmɛʒərd/ — sounds like **MEZH-uhrd**
+721. adv. steadily | /ˈstɛdɪli/ — sounds like **STED-uh-lee**
+722. v. widened | /ˈwaɪdənd/ — sounds like **WY-duhnd**
+723. n. foreigners | /ˈfɔrɪnərz/ — sounds like **FOR-uh-nuhrz**
+724. n. tourism | /ˈtʊrɪzəm/ — sounds like **TOOR-iz-uhm**
+725. n. deficit | /ˈdɛfɪsɪt/ — sounds like **DEF-uh-sit**
+726. v. arriving | /əˈraɪvɪŋ/ — sounds like **uh-RY-ving**
+
+727. n. companies | /ˈkʌmpəniz/ — sounds like **KUM-puh-neez**
+728. n. employees | /ɪmˈplɔɪiːz/ — sounds like **em-PLOY-eez**
+729. adj. medium | /ˈmiːdiəm/ — sounds like **MEE-dee-uhm**
+730. v. account | /əˈkaʊnt/ — sounds like **uh-KOWNT**
+731. v. represent | /ˌrɛprɪˈzɛnt/ — sounds like **rep-rih-ZENT**
+732. n. fraction | /ˈfrækʃən/ — sounds like **FRAK-shuhn**
+733. n. businesses | /ˈbɪznɪsɪz/ — sounds like **BIZ-nuh-siz**
+734. v. dominate | /ˈdɒmɪneɪt/ — sounds like **DOM-uh-nayt**
+735. v. measured | /ˈmɛʒərd/ — sounds like **MEZH-uhrd**
+736. n. thirds | /θɜrdz/ — sounds like **thurdz**
+
+737. adj. inbound | /ˈɪnbaʊnd/ — sounds like **IN-bownd**
+738. n. tourists | /ˈtʊrɪsts/ — sounds like **TOOR-ists**
+739. n. Ecuador | /ˈɛkwədɔr/ — sounds like **EK-wuh-dor**
+740. n. origin | /ˈɒrɪdʒɪn/ — sounds like **OR-uh-jin**
+741. n. Colombia | /kəˈlʌmbiə/ — sounds like **kuh-LUM-bee-uh**
+742. n. arrivals | /əˈraɪvəlz/ — sounds like **uh-RY-vuhlz**
+743. adj. neighboring | /ˈneɪbərɪŋ/ — sounds like **NAY-buhr-ing**
+744. v. provide | /prəˈvaɪd/ — sounds like **pruh-VYDE**
+745. v. account | /əˈkaʊnt/ — sounds like **uh-KOWNT**
+746. v. visiting | /ˈvɪzɪtɪŋ/ — sounds like **VIZ-uh-ting**
+
+747. n. population | /ˌpɒpjəˈleɪʃən/ — sounds like **pop-yuh-LAY-shuhn**
+748. n. increase | /ˈɪnkriːs/ — sounds like **IN-krees**
+749. n. residents | /ˈrɛzɪdənts/ — sounds like **REZ-uh-duhnts**
+750. n. Charlotte | /ˈʃɑrlət/ — sounds like **SHAR-luht**
+751. n. Phoenix | /ˈfiːnɪks/ — sounds like **FEE-niks**
+752. adj. southern | /ˈsʌðərn/ — sounds like **SUH-thuhrn**
+753. adj. western | /ˈwɛstərn/ — sounds like **WES-tuhrn**
+754. n. growth | /ɡroʊθ/ — sounds like **grohth**
+755. adv. especially | /ɪˈspɛʃəli/ — sounds like **ih-SPESH-uh-lee**
+756. adj. complete | /kəmˈpliːt/ — sounds like **kuhm-PLEET**
+
+757. n. Southampton | /saʊθˈæmptən/ — sounds like **sowth-AMP-tuhn**
+758. n. accommodation | /əˌkɒməˈdeɪʃən/ — sounds like **uh-kom-uh-DAY-shuhn**
+759. n. university | /ˌjuːnɪˈvɜrsəti/ — sounds like **yoo-nuh-VUR-suh-tee**
+760. n. measures | /ˈmɛʒərz/ — sounds like **MEZH-uhrz**
+761. v. positioned | /pəˈzɪʃənd/ — sounds like **puh-ZISH-uhnd**
+762. n. bathroom | /ˈbæθruːm/ — sounds like **BATH-room**
+763. n. storage | /ˈstɔrɪdʒ/ — sounds like **STOR-ij**
+764. n. structure | /ˈstrʌktʃər/ — sounds like **STRUK-chur**
+765. adj. functional | /ˈfʌŋkʃənəl/ — sounds like **FUNK-shuh-nuhl**
+766. v. designed | /dɪˈzaɪnd/ — sounds like **dih-ZYNED**
+
+767. n. layers | /ˈleɪərz/ — sounds like **LAY-uhrz**
+768. n. atmosphere | /ˈætməsfɪr/ — sounds like **AT-muh-sfeer**
+769. n. crust | /krʌst/ — sounds like **krust**
+770. adj. oceanic | /ˌoʊʃiˈænɪk/ — sounds like **oh-shee-AN-ik**
+771. adj. continental | /ˌkɒntɪˈnɛntəl/ — sounds like **kon-tuh-NEN-tuhl**
+772. n. mantle | /ˈmæntəl/ — sounds like **MAN-tuhl**
+773. n. core | /kɔr/ — sounds like **kor**
+774. n. boundary | /ˈbaʊndəri/ — sounds like **BOWN-duh-ree**
+775. n. discontinuity | /ˌdɪskɒntɪˈnjuːəti/ — sounds like **dis-kon-tuh-NYOO-uh-tee**
+776. n. surface | /ˈsɜrfɪs/ — sounds like **SUR-fis**
+
+777. n. ratio | /ˈreɪʃioʊ/ — sounds like **RAY-shee-oh**
+778. n. volunteers | /ˌvɒlənˈtɪrz/ — sounds like **vol-uhn-TEERZ**
+779. v. represents | /ˌrɛprɪˈzɛnts/ — sounds like **rep-rih-ZENTS**
+780. adj. similar | /ˈsɪmɪlər/ — sounds like **SIM-uh-luhr**
+781. adj. opposite | /ˈɒpəzɪt/ — sounds like **OP-uh-zit**
+782. n. directions | /dəˈrɛkʃənz/ — sounds like **duh-REK-shuhnz**
+783. adv. gradually | /ˈɡrædʒuəli/ — sounds like **GRAD-joo-uh-lee**
+784. n. gender | /ˈdʒɛndər/ — sounds like **JEN-duhr**
+785. n. balance | /ˈbæləns/ — sounds like **BAL-uhns**
+786. v. shifted | /ʃɪftɪd/ — sounds like **SHIF-tid**
+
+787. n. collapse | /kəˈlæps/ — sounds like **kuh-LAPS**
+788. n. Atlantic | /ətˈlæntɪk/ — sounds like **uht-LAN-tik**
+789. n. Newfoundland | /ˌnjuːfəndˈlænd/ — sounds like **nyoo-fuhnd-LAND**
+790. n. landings | /ˈlændɪŋz/ — sounds like **LAN-dingz**
+791. n. catches | /ˈkætʃɪz/ — sounds like **KACH-iz**
+792. adv. relatively | /ˈrɛlətɪvli/ — sounds like **REL-uh-tiv-lee**
+793. adv. dramatically | /drəˈmætɪkli/ — sounds like **druh-MAT-ik-lee**
+794. v. peaked | /piːkt/ — sounds like **peekt**
+795. v. recovered | /rɪˈkʌvərd/ — sounds like **rih-KUV-uhrd**
+796. n. overfishing | /ˌoʊvərˈfɪʃɪŋ/ — sounds like **oh-vuhr-FISH-ing**
+
+797. n. evacuation | /ɪˌvækjuˈeɪʃən/ — sounds like **ih-vak-yoo-AY-shuhn**
+798. n. route | /ruːt/ — sounds like **root**
+799. n. emergency | /ɪˈmɜrdʒənsi/ — sounds like **ih-MUR-juhn-see**
+800. n. arrows | /ˈæroʊz/ — sounds like **AIR-ohz**
+801. n. entrance | /ˈɛntrəns/ — sounds like **EN-truhns**
+802. n. corridors | /ˈkɒrɪdɔrz/ — sounds like **KOR-uh-dorz**
+803. n. staircase | /ˈstɛrkeɪs/ — sounds like **STAIR-kays**
+804. n. elevator | /ˈɛləveɪtər/ — sounds like **EL-uh-vay-tuhr**
+805. n. diagram | /ˈdaɪəɡræm/ — sounds like **DYE-uh-gram**
+806. adj. quickest | /ˈkwɪkɪst/ — sounds like **KWIK-ist**
 

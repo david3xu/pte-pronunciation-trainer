@@ -56,9 +56,9 @@ describe('Config Validation', () => {
 
   describe('Voice Configuration', () => {
     it('should have voice settings', () => {
-      expect(appConfig.get('voice.defaultVoiceId')).toBe('Joanna');
+      expect(appConfig.get('voice.defaultVoiceId')).toBe('Russell');
       expect(appConfig.get('voice.defaultEngine')).toBe('neural');
-      expect(appConfig.get('voice.defaultLanguage')).toBe('en-US');
+      expect(appConfig.get('voice.defaultLanguage')).toBe('en-AU');
     });
   });
 

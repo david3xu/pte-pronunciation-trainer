@@ -26,8 +26,8 @@ const VoiceSelector: React.FC<VoiceSelectorProps> = ({ onVoiceChange }) => {
   const [voices, setVoices] = useState<VoiceData>({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [selectedLanguage, setSelectedLanguage] = useState('en-US');
-  const [selectedVoice, setSelectedVoice] = useState('Joanna');
+  const [selectedLanguage, setSelectedLanguage] = useState('en-GB');
+  const [selectedVoice, setSelectedVoice] = useState('Brian');
   const [usePremiumTTS, setUsePremiumTTS] = useState(false);
 
   // Fetch available voices on mount
@@ -51,15 +51,15 @@ const VoiceSelector: React.FC<VoiceSelectorProps> = ({ onVoiceChange }) => {
     } catch (err: any) {
       console.error('Error fetching voices:', err);
       setError('⚠️ Failed to load voice list. Check: 1) AWS Polly credentials in Settings > Advanced, 2) Internet connection. Using fallback voices.');
-      // Set default voices on error
+      // Set default voices on error - MALE VOICES ONLY (UK and AU)
       setVoices({
-        'en-US': {
-          'Joanna': 'Female, American English (Neural)',
-          'Matthew': 'Male, American English (Neural)',
-        },
         'en-GB': {
-          'Amy': 'Female, British English (Neural)',
           'Brian': 'Male, British English (Neural)',
+          'Daniel': 'Male, British English',
+        },
+        'en-AU': {
+          'Russell': 'Male, Australian English (Neural)',
+          'Gordon': 'Male, Australian English',
         },
       });
     } finally {

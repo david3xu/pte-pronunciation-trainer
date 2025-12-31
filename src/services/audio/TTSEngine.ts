@@ -851,26 +851,28 @@ export class TTSEngine {
       if (partialMatch) return partialMatch;
     }
 
-    // PRIORITY: British Female voices for natural PTE pronunciation
+    // PRIORITY: British and Australian MALE voices only
 
-    // 1. UK Female (Google UK English Female is widely available and high quality)
-    const ukFemale = voices.find(v =>
+    // 1. UK Male voices (high quality for PTE pronunciation)
+    const ukMale = voices.find(v =>
       (v.lang === 'en-GB' || v.lang === 'en_GB') &&
-      (v.name.toLowerCase().includes('female') ||
-       v.name.includes('Google UK English Female') ||
-       v.name.includes('Kate') || // macOS/iOS UK Female
-       v.name.includes('Serena')) // Another UK Female option
+      (v.name.toLowerCase().includes('male') ||
+       v.name.includes('Google UK English Male') ||
+       v.name.includes('Daniel') || // macOS/iOS UK Male
+       v.name.includes('Brian') ||  // AWS Polly UK Male
+       v.name.includes('Oliver'))   // Another UK Male option
     );
-    if (ukFemale) return ukFemale;
+    if (ukMale) return ukMale;
 
-    // 2. Australian Female
-    const auFemale = voices.find(v =>
+    // 2. Australian Male voices
+    const auMale = voices.find(v =>
       (v.lang === 'en-AU' || v.lang === 'en_AU') &&
-      (v.name.toLowerCase().includes('female') ||
-       v.name.includes('Karen') || // macOS/iOS AU Female
-       v.name.includes('Google Australian English'))
+      (v.name.toLowerCase().includes('male') ||
+       v.name.includes('Gordon') ||  // macOS/iOS AU Male
+       v.name.includes('Russell') || // AWS Polly AU Male
+       v.name.includes('Google Australian English Male'))
     );
-    if (auFemale) return auFemale;
+    if (auMale) return auMale;
 
     // 3. Any UK Voice
     const ukAny = voices.find(v => v.lang === 'en-GB' || v.lang === 'en_GB');

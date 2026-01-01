@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-12-31T00:23:07.414Z",
+    "generated": "2026-01-01T00:58:51.350Z",
     "totalTerms": 636,
     "source": "pte-asq-answers-vocabulary",
     "description": "Auto-discovered vocabulary book: pte-asq-answers-vocabulary",
@@ -8,7 +8,8 @@
     "categories": [
       "pte-asq-answers-vocabulary"
     ],
-    "hasIPA": true
+    "hasIPA": true,
+    "keepDuplicates": false
   },
   "vocabulary": [
     {

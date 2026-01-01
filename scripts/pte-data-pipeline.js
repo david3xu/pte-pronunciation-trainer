@@ -311,6 +311,12 @@ class PTEDataPipeline {
             .replace('-with-ipa.md', '')
             .replace('.md', '');
 
+          // Files that should keep duplicates (e.g., DI vocabulary that matches example images order)
+          const filesWithDuplicates = [
+            'pte-di-difficult-words',
+            'pte-di-easy-phrases'
+          ];
+
           return {
             id: id,
             input: file,
@@ -320,7 +326,8 @@ class PTEDataPipeline {
             sourceType: id,
             dataType: 'vocabulary',
             extractorType: 'PTETermsExtractor',
-            inputSubdir: 'vocabs'
+            inputSubdir: 'vocabs',
+            keepDuplicates: filesWithDuplicates.includes(id)
           };
         });
     } catch (error) {

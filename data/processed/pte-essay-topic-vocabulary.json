@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-12-31T00:23:07.500Z",
+    "generated": "2026-01-01T00:58:51.408Z",
     "totalTerms": 0,
     "source": "pte-essay-topic-vocabulary",
     "description": "Auto-discovered vocabulary book: pte-essay-topic-vocabulary",
@@ -8,7 +8,8 @@
     "categories": [
       "pte-essay-topic-vocabulary"
     ],
-    "hasIPA": true
+    "hasIPA": true,
+    "keepDuplicates": false
   },
   "vocabulary": []
 }

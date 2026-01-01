@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-12-31T00:23:07.555Z",
+    "generated": "2026-01-01T00:58:51.457Z",
     "totalTerms": 747,
     "source": "pte-high-frequency-vocabulary",
     "description": "Auto-discovered vocabulary book: pte-high-frequency-vocabulary",
@@ -8,7 +8,8 @@
     "categories": [
       "pte-high-frequency-vocabulary"
     ],
-    "hasIPA": true
+    "hasIPA": true,
+    "keepDuplicates": false
   },
   "vocabulary": [
     {

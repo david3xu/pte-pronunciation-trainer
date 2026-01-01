@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-12-31T00:23:07.509Z",
+    "generated": "2026-01-01T00:58:51.417Z",
     "totalTerms": 961,
     "source": "pte-fib-listening",
     "description": "Auto-discovered vocabulary book: pte-fib-listening",
@@ -8,7 +8,8 @@
     "categories": [
       "pte-fib-listening"
     ],
-    "hasIPA": true
+    "hasIPA": true,
+    "keepDuplicates": false
   },
   "vocabulary": [
     {

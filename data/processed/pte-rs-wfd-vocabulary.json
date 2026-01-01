@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-12-31T00:23:07.686Z",
+    "generated": "2026-01-01T00:58:51.574Z",
     "totalTerms": 1605,
     "source": "pte-rs-wfd-vocabulary",
     "description": "Auto-discovered vocabulary book: pte-rs-wfd-vocabulary",
@@ -8,7 +8,8 @@
     "categories": [
       "pte-rs-wfd-vocabulary"
     ],
-    "hasIPA": true
+    "hasIPA": true,
+    "keepDuplicates": false
   },
   "vocabulary": [
     {

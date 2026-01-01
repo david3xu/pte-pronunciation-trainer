@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-12-31T00:23:07.478Z",
+    "generated": "2026-01-01T00:58:51.395Z",
     "totalTerms": 244,
     "source": "pte-essay-b1-examples-vocabulary",
     "description": "Auto-discovered vocabulary book: pte-essay-b1-examples-vocabulary",
@@ -8,7 +8,8 @@
     "categories": [
       "pte-essay-b1-examples-vocabulary"
     ],
-    "hasIPA": true
+    "hasIPA": true,
+    "keepDuplicates": false
   },
   "vocabulary": [
     {

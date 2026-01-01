@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2025-12-31T00:23:07.529Z",
+    "generated": "2026-01-01T00:58:51.434Z",
     "totalTerms": 401,
     "source": "pte-hard-for-rs",
     "description": "Auto-discovered vocabulary book: pte-hard-for-rs",
@@ -8,7 +8,8 @@
     "categories": [
       "pte-hard-for-rs"
     ],
-    "hasIPA": true
+    "hasIPA": true,
+    "keepDuplicates": false
   },
   "vocabulary": [
     {

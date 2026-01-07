@@ -112,11 +112,11 @@ export const AppContent: React.FC = () => {
         }
 
         // Transform segment items (RS/WFD segments) to be compatible with WordCard
-        // These have nested structure: { content: { sentence: "..." }, metadata: { difficulty: "..." } }
+        // Use 'english' so they display like vocabulary items (no Play Audio button)
         if (data.items && data.items[0]?.content?.sentence) {
           items = items.map((item: any) => ({
             id: item.id,
-            sentence: item.content.sentence,  // Flatten content.sentence to sentence
+            english: item.content.sentence,  // Use 'english' to display like vocabulary
             ipa: item.content.ipa,
             difficulty: item.metadata?.difficulty || 'normal',
             category: item.metadata?.category || 'general',

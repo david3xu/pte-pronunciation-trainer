@@ -1,9 +1,9 @@
 import {
-  BarChartIcon,
-  ChatBubbleIcon,
-  GearIcon,
-  LightningBoltIcon,
-  SpeakerLoudIcon,
+    BarChartIcon,
+    ChatBubbleIcon,
+    GearIcon,
+    LightningBoltIcon,
+    SpeakerLoudIcon,
 } from '@radix-ui/react-icons';
 import { Button, Flex, Spinner, Theme } from '@radix-ui/themes';
 import React, { lazy, Suspense, useEffect, useState } from 'react';
@@ -24,8 +24,8 @@ import WeakAreasDashboard from './ai/WeakAreasDashboard';
 import AudioControls from './audio/AudioControls';
 import DataMigrationModal from './migration/DataMigrationModal';
 import {
-  ProgressDashboard,
-  WordCard,
+    ProgressDashboard,
+    WordCard,
 } from './practice';
 import LearnerProfileModal from './profile/LearnerProfileModal';
 import SettingsPanel from './settings/SettingsPanel';
@@ -92,7 +92,8 @@ export const AppContent: React.FC = () => {
 
         const data = await response.json();
         // Shadowing modes use 'answers' instead of 'vocabulary'
-        let items = data.vocabulary || data.answers || [];
+        // RS segments and other datasets may use 'items' array
+        let items = data.vocabulary || data.answers || data.items || [];
 
         // Transform shadowing items to be compatible with vocabulary UI
         if (data.answers) {

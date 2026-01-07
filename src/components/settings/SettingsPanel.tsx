@@ -6,8 +6,8 @@
  */
 
 import {
-  Cross2Icon,
-  GearIcon
+    Cross2Icon,
+    GearIcon
 } from '@radix-ui/react-icons';
 import { Badge, Button, Card, Flex, Select, Slider, Switch, Tabs, Text } from '@radix-ui/themes';
 import React, { useMemo } from 'react';
@@ -75,7 +75,8 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
 
       const data = await response.json();
       // Shadowing modes use 'answers' instead of 'vocabulary'
-      let items = data.vocabulary || data.answers || [];
+      // RS/WFD segments and other datasets may use 'items' array
+      let items = data.vocabulary || data.answers || data.items || [];
 
       // Transform shadowing items to be compatible with vocabulary UI
       if (data.answers) {

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-01-01T00:58:51.395Z",
-    "totalTerms": 244,
+    "generated": "2026-01-07T21:49:47.657Z",
+    "totalTerms": 250,
     "source": "pte-essay-b1-examples-vocabulary",
     "description": "Auto-discovered vocabulary book: pte-essay-b1-examples-vocabulary",
     "version": "1.0",
@@ -445,6 +445,22 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
+      "english": "**a valuable component of quality education**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈvæljʊəbəl kəmˈpəʊnənt əv ˈkwɒləti ˌedjʊˈkeɪʃən",
+          "phonetic": "uh VAL-yoo-uh-bul kum-POH-nunt uv KWOL-uh-tee ej-oo-KAY-shun"
+        },
+        "american": {
+          "ipa": "ə ˈvæljʊəbəl kəmˈpəʊnənt əv ˈkwɒləti ˌedjʊˈkeɪʃən",
+          "phonetic": "uh VAL-yoo-uh-bul kum-POH-nunt uv KWOL-uh-tee ej-oo-KAY-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
       "english": "**learners**",
       "pronunciation": {
         "british": {
@@ -493,15 +509,15 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**global perspective and international mindset**",
+      "english": "**global perspective and personal growth**",
       "pronunciation": {
         "british": {
-          "ipa": "ˈɡləʊbəl pəˈspektɪv ənd ˌɪntəˈnæʃənəl ˈmaɪndset",
-          "phonetic": "GLOH-bul per-SPEK-tiv und in-tur-NASH-un-ul MYND-set"
+          "ipa": "ˈɡləʊbəl pəˈspektɪv ənd ˈpɜːsənəl ɡrəʊθ",
+          "phonetic": "GLOH-bul per-SPEK-tiv und PUR-sun-ul GROHTH"
         },
         "american": {
-          "ipa": "ˈɡləʊbəl pəˈspektɪv ənd ˌɪntəˈnæʃənəl ˈmaɪndset",
-          "phonetic": "GLOH-bul per-SPEK-tiv und in-tur-NASH-un-ul MYND-set"
+          "ipa": "ˈɡləʊbəl pəˈspektɪv ənd ˈpɜːsənəl ɡrəʊθ",
+          "phonetic": "GLOH-bul per-SPEK-tiv und PUR-sun-ul GROHTH"
         }
       },
       "difficulty": "hard",
@@ -509,15 +525,15 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**enhanced personal growth and improved critical thinking**",
+      "english": "**enhanced critical thinking and deeper knowledge**",
       "pronunciation": {
         "british": {
-          "ipa": "ɪnˈhɑːnst ˈpɜːsənəl ɡrəʊθ ənd ɪmˈpruːvd ˈkrɪtɪkəl ˈθɪŋkɪŋ",
-          "phonetic": "in-HAHNST PUR-sun-ul GROHTH und im-PROOVD KRIT-ih-kul THINK-ing"
+          "ipa": "ɪnˈhɑːnst ˈkrɪtɪkəl ˈθɪŋkɪŋ ənd ˈdiːpə ˈnɒlɪdʒ",
+          "phonetic": "in-HAHNST KRIT-ih-kul THINK-ing und DEE-pur NOL-ij"
         },
         "american": {
-          "ipa": "ɪnˈhɑːnst ˈpɜːsənəl ɡrəʊθ ənd ɪmˈpruːvd ˈkrɪtɪkəl ˈθɪŋkɪŋ",
-          "phonetic": "in-HAHNST PUR-sun-ul GROHTH und im-PROOVD KRIT-ih-kul THINK-ing"
+          "ipa": "ɪnˈhɑːnst ˈkrɪtɪkəl ˈθɪŋkɪŋ ənd ˈdiːpə ˈnɒlɪdʒ",
+          "phonetic": "in-HAHNST KRIT-ih-kul THINK-ing und DEE-pur NOL-ij"
         }
       },
       "difficulty": "hard",
@@ -525,15 +541,15 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**high costs and significant expenses**",
+      "english": "**local education**",
       "pronunciation": {
         "british": {
-          "ipa": "haɪ kɒsts ənd sɪɡˈnɪfɪkənt ɪkˈspensɪz",
-          "phonetic": "HY KOSTS und sig-NIF-ih-kunt ik-SPEN-siz"
+          "ipa": "ˈləʊkəl ˌedjʊˈkeɪʃən",
+          "phonetic": "LOH-kul ej-oo-KAY-shun"
         },
         "american": {
-          "ipa": "haɪ kɒsts ənd sɪɡˈnɪfɪkənt ɪkˈspensɪz",
-          "phonetic": "HY KOSTS und sig-NIF-ih-kunt ik-SPEN-siz"
+          "ipa": "ˈləʊkəl ˌedjʊˈkeɪʃən",
+          "phonetic": "LOH-kul ej-oo-KAY-shun"
         }
       },
       "difficulty": "hard",
@@ -541,15 +557,15 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**limited access and reduced opportunities for many students**",
+      "english": "**studying locally**",
       "pronunciation": {
         "british": {
-          "ipa": "ˈlɪmɪtɪd ˈækses ənd rɪˈdjuːst ˌɒpəˈtjuːnətiz fɔː ˈmeni ˈstjuːdənts",
-          "phonetic": "LIM-ih-tid AK-ses und rih-DYOOST op-ur-TOO-nih-teez for MEN-ee STOO-dunts"
+          "ipa": "ˈstʌdiɪŋ ˈləʊkəli",
+          "phonetic": "STUD-ee-ing LOH-kul-ee"
         },
         "american": {
-          "ipa": "ˈlɪmɪtɪd ˈækses ənd rɪˈdjuːst ˌɒpəˈtjuːnətiz fɔː ˈmeni ˈstjuːdənts",
-          "phonetic": "LIM-ih-tid AK-ses und rih-DYOOST op-ur-TOO-nih-teez for MEN-ee STOO-dunts"
+          "ipa": "ˈstʌdiɪŋ ˈləʊkəli",
+          "phonetic": "STUD-ee-ing LOH-kul-ee"
         }
       },
       "difficulty": "hard",
@@ -557,15 +573,15 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**economists and education experts**",
+      "english": "**local universities and established institutions**",
       "pronunciation": {
         "british": {
-          "ipa": "ɪˈkɒnəmɪsts ənd ˌedjʊˈkeɪʃən ˈekspɜːts",
-          "phonetic": "ih-KON-uh-mists und ej-oo-KAY-shun EK-spurts"
+          "ipa": "ˈləʊkəl ˌjuːnɪˈvɜːsətiz ənd ɪˈstæblɪʃt ˌɪnstɪˈtjuːʃənz",
+          "phonetic": "LOH-kul yoo-nih-VUR-suh-teez und ih-STAB-lisht in-stih-TOO-shunz"
         },
         "american": {
-          "ipa": "ɪˈkɒnəmɪsts ənd ˌedjʊˈkeɪʃən ˈekspɜːts",
-          "phonetic": "ih-KON-uh-mists und ej-oo-KAY-shun EK-spurts"
+          "ipa": "ˈləʊkəl ˌjuːnɪˈvɜːsətiz ənd ɪˈstæblɪʃt ˌɪnstɪˈtjuːʃənz",
+          "phonetic": "LOH-kul yoo-nih-VUR-suh-teez und ih-STAB-lisht in-stih-TOO-shunz"
         }
       },
       "difficulty": "hard",
@@ -573,15 +589,15 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**financial barriers and time constraints**",
+      "english": "**quality learning in a familiar environment**",
       "pronunciation": {
         "british": {
-          "ipa": "faɪˈnænʃəl ˈbæriəz ənd taɪm kənˈstreɪnts",
-          "phonetic": "fy-NAN-shul BAR-ee-urz und TYM kun-STRAYNTS"
+          "ipa": "ˈkwɒləti ˈlɜːnɪŋ ɪn ə fəˈmɪliə ɪnˈvaɪrənmənt",
+          "phonetic": "KWOL-uh-tee LUR-ning in uh fuh-MIL-ee-ur in-VY-run-ment"
         },
         "american": {
-          "ipa": "faɪˈnænʃəl ˈbæriəz ənd taɪm kənˈstreɪnts",
-          "phonetic": "fy-NAN-shul BAR-ee-urz und TYM kun-STRAYNTS"
+          "ipa": "ˈkwɒləti ˈlɜːnɪŋ ɪn ə fəˈmɪliə ɪnˈvaɪrənmənt",
+          "phonetic": "KWOL-uh-tee LUR-ning in uh fuh-MIL-ee-ur in-VY-run-ment"
         }
       },
       "difficulty": "hard",
@@ -589,15 +605,63 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**schools and universities**",
+      "english": "**learning experts**",
       "pronunciation": {
         "british": {
-          "ipa": "skuːlz ənd ˌjuːnɪˈvɜːsətiz",
-          "phonetic": "SKOOLZ und yoo-nih-VUR-suh-teez"
+          "ipa": "ˈlɜːnɪŋ ˈekspɜːts",
+          "phonetic": "LUR-ning EK-spurts"
         },
         "american": {
-          "ipa": "skuːlz ənd ˌjuːnɪˈvɜːsətiz",
-          "phonetic": "SKOOLZ und yoo-nih-VUR-suh-teez"
+          "ipa": "ˈlɜːnɪŋ ˈekspɜːts",
+          "phonetic": "LUR-ning EK-spurts"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**academic success and scholarly expertise**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌækəˈdemɪk səkˈses ənd ˈskɒləli ˌekspɜːˈtiːz",
+          "phonetic": "ak-uh-DEM-ik suk-SES und SKOL-ur-lee ek-spur-TEEZ"
+        },
+        "american": {
+          "ipa": "ˌækəˈdemɪk səkˈses ənd ˈskɒləli ˌekspɜːˈtiːz",
+          "phonetic": "ak-uh-DEM-ik suk-SES und SKOL-ur-lee ek-spur-TEEZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**local education and dedicated study**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈləʊkəl ˌedjʊˈkeɪʃən ənd ˈdedɪkeɪtɪd ˈstʌdi",
+          "phonetic": "LOH-kul ej-oo-KAY-shun und DED-ih-kay-tid STUD-ee"
+        },
+        "american": {
+          "ipa": "ˈləʊkəl ˌedjʊˈkeɪʃən ənd ˈdedɪkeɪtɪd ˈstʌdi",
+          "phonetic": "LOH-kul ej-oo-KAY-shun und DED-ih-kay-tid STUD-ee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**students and educators**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈstjuːdənts ənd ˈedjʊkeɪtəz",
+          "phonetic": "STOO-dunts und EJ-oo-kay-turz"
+        },
+        "american": {
+          "ipa": "ˈstjuːdənts ənd ˈedjʊkeɪtəz",
+          "phonetic": "STOO-dunts und EJ-oo-kay-turz"
         }
       },
       "difficulty": "hard",
@@ -989,15 +1053,15 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**entertainment and stress relief**",
+      "english": "**relaxation and stress relief**",
       "pronunciation": {
         "british": {
-          "ipa": "ˌentəˈteɪnmənt ənd stres rɪˈliːf",
-          "phonetic": "en-tur-TAYN-ment und STRESS rih-LEEF"
+          "ipa": "ˌriːlækˈseɪʃən ənd stres rɪˈliːf",
+          "phonetic": "ree-lak-SAY-shun und STRESS rih-LEEF"
         },
         "american": {
-          "ipa": "ˌentəˈteɪnmənt ənd stres rɪˈliːf",
-          "phonetic": "en-tur-TAYN-ment und STRESS rih-LEEF"
+          "ipa": "ˌriːlækˈseɪʃən ənd stres rɪˈliːf",
+          "phonetic": "ree-lak-SAY-shun und STRESS rih-LEEF"
         }
       },
       "difficulty": "hard",
@@ -1021,15 +1085,15 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**relaxation and useful knowledge**",
+      "english": "**entertainment and useful knowledge**",
       "pronunciation": {
         "british": {
-          "ipa": "ˌriːlækˈseɪʃən ənd ˈjuːsfʊl ˈnɒlɪdʒ",
-          "phonetic": "ree-lak-SAY-shun und YOOS-ful NOL-ij"
+          "ipa": "ˌentəˈteɪnmənt ənd ˈjuːsfʊl ˈnɒlɪdʒ",
+          "phonetic": "en-tur-TAYN-ment und YOOS-ful NOL-ij"
         },
         "american": {
-          "ipa": "ˌriːlækˈseɪʃən ənd ˈjuːsfʊl ˈnɒlɪdʒ",
-          "phonetic": "ree-lak-SAY-shun und YOOS-ful NOL-ij"
+          "ipa": "ˌentəˈteɪnmənt ənd ˈjuːsfʊl ˈnɒlɪdʒ",
+          "phonetic": "en-tur-TAYN-ment und YOOS-ful NOL-ij"
         }
       },
       "difficulty": "hard",
@@ -1053,15 +1117,15 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**better mood and increased awareness**",
+      "english": "**better mood and a sense of companionship**",
       "pronunciation": {
         "british": {
-          "ipa": "ˈbetə muːd ənd ɪnˈkriːst əˈweənəs",
-          "phonetic": "BET-ur MOOD und in-KREEST uh-WAIR-nus"
+          "ipa": "ˈbetə muːd ənd ə sens əv kəmˈpæniənʃɪp",
+          "phonetic": "BET-ur MOOD und uh SENS uv kum-PAN-yun-ship"
         },
         "american": {
-          "ipa": "ˈbetə muːd ənd ɪnˈkriːst əˈweənəs",
-          "phonetic": "BET-ur MOOD und in-KREEST uh-WAIR-nus"
+          "ipa": "ˈbetə muːd ənd ə sens əv kəmˈpæniənʃɪp",
+          "phonetic": "BET-ur MOOD und uh SENS uv kum-PAN-yun-ship"
         }
       },
       "difficulty": "hard",
@@ -1469,15 +1533,15 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**schools**",
+      "english": "**high school and college students**",
       "pronunciation": {
         "british": {
-          "ipa": "skuːlz",
-          "phonetic": "SKOOLZ"
+          "ipa": "haɪ skuːl ənd ˈkɒlɪdʒ ˈstjuːdənts",
+          "phonetic": "HY SKOOL und KOL-ij STOO-dunts"
         },
         "american": {
-          "ipa": "skuːlz",
-          "phonetic": "SKOOLZ"
+          "ipa": "haɪ skuːl ənd ˈkɒlɪdʒ ˈstjuːdənts",
+          "phonetic": "HY SKOOL und KOL-ij STOO-dunts"
         }
       },
       "difficulty": "hard",
@@ -1517,15 +1581,15 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**real-world knowledge and improved memory**",
+      "english": "**real-world knowledge and higher engagement**",
       "pronunciation": {
         "british": {
-          "ipa": "rɪəl wɜːld ˈnɒlɪdʒ ənd ɪmˈpruːvd ˈmeməri",
-          "phonetic": "REEL WURLD NOL-ij und im-PROOVD MEM-ur-ee"
+          "ipa": "rɪəl wɜːld ˈnɒlɪdʒ ənd ˈhaɪə ɪnˈɡeɪdʒmənt",
+          "phonetic": "REEL WURLD NOL-ij und HY-ur in-GAYJ-ment"
         },
         "american": {
-          "ipa": "rɪəl wɜːld ˈnɒlɪdʒ ənd ɪmˈpruːvd ˈmeməri",
-          "phonetic": "REEL WURLD NOL-ij und im-PROOVD MEM-ur-ee"
+          "ipa": "rɪəl wɜːld ˈnɒlɪdʒ ənd ˈhaɪə ɪnˈɡeɪdʒmənt",
+          "phonetic": "REEL WURLD NOL-ij und HY-ur in-GAYJ-ment"
         }
       },
       "difficulty": "hard",
@@ -1549,15 +1613,15 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**better learning and higher motivation**",
+      "english": "**better learning and stronger motivation**",
       "pronunciation": {
         "british": {
-          "ipa": "ˈbetə ˈlɜːnɪŋ ənd ˈhaɪə ˌməʊtɪˈveɪʃən",
-          "phonetic": "BET-ur LUR-ning und HY-ur moh-tih-VAY-shun"
+          "ipa": "ˈbetə ˈlɜːnɪŋ ənd ˈstrɒŋɡə ˌməʊtɪˈveɪʃən",
+          "phonetic": "BET-ur LUR-ning und STRONG-ur moh-tih-VAY-shun"
         },
         "american": {
-          "ipa": "ˈbetə ˈlɜːnɪŋ ənd ˈhaɪə ˌməʊtɪˈveɪʃən",
-          "phonetic": "BET-ur LUR-ning und HY-ur moh-tih-VAY-shun"
+          "ipa": "ˈbetə ˈlɜːnɪŋ ənd ˈstrɒŋɡə ˌməʊtɪˈveɪʃən",
+          "phonetic": "BET-ur LUR-ning und STRONG-ur moh-tih-VAY-shun"
         }
       },
       "difficulty": "hard",
@@ -1581,15 +1645,15 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**time needed and higher costs**",
+      "english": "**traditional teaching**",
       "pronunciation": {
         "british": {
-          "ipa": "taɪm ˈniːdɪd ənd ˈhaɪə kɒsts",
-          "phonetic": "TYM NEE-did und HY-ur KOSTS"
+          "ipa": "trəˈdɪʃənəl ˈtiːtʃɪŋ",
+          "phonetic": "truh-DISH-un-ul TEECH-ing"
         },
         "american": {
-          "ipa": "taɪm ˈniːdɪd ənd ˈhaɪə kɒsts",
-          "phonetic": "TYM NEE-did und HY-ur KOSTS"
+          "ipa": "trəˈdɪʃənəl ˈtiːtʃɪŋ",
+          "phonetic": "truh-DISH-un-ul TEECH-ing"
         }
       },
       "difficulty": "hard",
@@ -1597,15 +1661,15 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**less content and budget limits**",
+      "english": "**structured content and clear assessment**",
       "pronunciation": {
         "british": {
-          "ipa": "les ˈkɒntent ənd ˈbʌdʒɪt ˈlɪmɪts",
-          "phonetic": "LES KON-tent und BUJ-it LIM-its"
+          "ipa": "ˈstrʌktʃəd ˈkɒntent ənd klɪə əˈsesmənt",
+          "phonetic": "STRUK-churd KON-tent und KLEER uh-SES-ment"
         },
         "american": {
-          "ipa": "les ˈkɒntent ənd ˈbʌdʒɪt ˈlɪmɪts",
-          "phonetic": "LES KON-tent und BUJ-it LIM-its"
+          "ipa": "ˈstrʌktʃəd ˈkɒntent ənd klɪə əˈsesmənt",
+          "phonetic": "STRUK-churd KON-tent und KLEER uh-SES-ment"
         }
       },
       "difficulty": "hard",
@@ -1613,15 +1677,15 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**teaching experts**",
+      "english": "**proven methods and systematic learning**",
       "pronunciation": {
         "british": {
-          "ipa": "ˈtiːtʃɪŋ ˈekspɜːts",
-          "phonetic": "TEECH-ing EK-spurts"
+          "ipa": "ˈpruːvən ˈmeθədz ənd ˌsɪstəˈmætɪk ˈlɜːnɪŋ",
+          "phonetic": "PROO-vun METH-udz und sis-tuh-MAT-ik LUR-ning"
         },
         "american": {
-          "ipa": "ˈtiːtʃɪŋ ˈekspɜːts",
-          "phonetic": "TEECH-ing EK-spurts"
+          "ipa": "ˈpruːvən ˈmeθədz ənd ˌsɪstəˈmætɪk ˈlɜːnɪŋ",
+          "phonetic": "PROO-vun METH-udz und sis-tuh-MAT-ik LUR-ning"
         }
       },
       "difficulty": "hard",
@@ -1629,15 +1693,15 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**budget limits and time issues**",
+      "english": "**teaching researchers**",
       "pronunciation": {
         "british": {
-          "ipa": "ˈbʌdʒɪt ˈlɪmɪts ənd taɪm ˈɪʃuːz",
-          "phonetic": "BUJ-it LIM-its und TYM ISH-ooz"
+          "ipa": "ˈtiːtʃɪŋ rɪˈsɜːtʃəz",
+          "phonetic": "TEECH-ing rih-SUR-churz"
         },
         "american": {
-          "ipa": "ˈbʌdʒɪt ˈlɪmɪts ənd taɪm ˈɪʃuːz",
-          "phonetic": "BUJ-it LIM-its und TYM ISH-ooz"
+          "ipa": "ˈtiːtʃɪŋ rɪˈsɜːtʃəz",
+          "phonetic": "TEECH-ing rih-SUR-churz"
         }
       },
       "difficulty": "hard",
@@ -1645,15 +1709,15 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**implementing experiential learning**",
+      "english": "**organized lessons and formal instruction**",
       "pronunciation": {
         "british": {
-          "ipa": "ˈɪmplɪmentɪŋ ɪkˌspɪəriˈenʃəl ˈlɜːnɪŋ",
-          "phonetic": "IM-plih-men-ting ik-speer-ee-EN-shul LUR-ning"
+          "ipa": "ˈɔːɡənaɪzd ˈlesənz ənd ˈfɔːməl ɪnˈstrʌkʃən",
+          "phonetic": "OR-gun-yzd LES-unz und FOR-mul in-STRUK-shun"
         },
         "american": {
-          "ipa": "ˈɪmplɪmentɪŋ ɪkˌspɪəriˈenʃəl ˈlɜːnɪŋ",
-          "phonetic": "IM-plih-men-ting ik-speer-ee-EN-shul LUR-ning"
+          "ipa": "ˈɔːɡənaɪzd ˈlesənz ənd ˈfɔːməl ɪnˈstrʌkʃən",
+          "phonetic": "OR-gun-yzd LES-unz und FOR-mul in-STRUK-shun"
         }
       },
       "difficulty": "hard",
@@ -1661,15 +1725,47 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**schools and educators**",
+      "english": "**traditional classroom approaches**",
       "pronunciation": {
         "british": {
-          "ipa": "skuːlz ənd ˈedjʊkeɪtəz",
-          "phonetic": "SKOOLZ und EJ-oo-kay-turz"
+          "ipa": "trəˈdɪʃənəl ˈklɑːsruːm əˈprəʊtʃɪz",
+          "phonetic": "truh-DISH-un-ul KLAHS-room uh-PROH-chiz"
         },
         "american": {
-          "ipa": "skuːlz ənd ˈedjʊkeɪtəz",
-          "phonetic": "SKOOLZ und EJ-oo-kay-turz"
+          "ipa": "trəˈdɪʃənəl ˈklɑːsruːm əˈprəʊtʃɪz",
+          "phonetic": "truh-DISH-un-ul KLAHS-room uh-PROH-chiz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**high school and college**",
+      "pronunciation": {
+        "british": {
+          "ipa": "haɪ skuːl ənd ˈkɒlɪdʒ",
+          "phonetic": "HY SKOOL und KOL-ij"
+        },
+        "american": {
+          "ipa": "haɪ skuːl ənd ˈkɒlɪdʒ",
+          "phonetic": "HY SKOOL und KOL-ij"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**high schools and universities**",
+      "pronunciation": {
+        "british": {
+          "ipa": "haɪ skuːlz ənd ˌjuːnɪˈvɜːsətiz",
+          "phonetic": "HY SKOOLZ und yoo-nih-VUR-suh-teez"
+        },
+        "american": {
+          "ipa": "haɪ skuːlz ənd ˌjuːnɪˈvɜːsətiz",
+          "phonetic": "HY SKOOLZ und yoo-nih-VUR-suh-teez"
         }
       },
       "difficulty": "hard",
@@ -2749,15 +2845,15 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**family time and personal relationships**",
+      "english": "**family time and leisure activities**",
       "pronunciation": {
         "british": {
-          "ipa": "ˈfæməli taɪm ənd ˈpɜːsənəl rɪˈleɪʃənʃɪps",
-          "phonetic": "FAM-uh-lee TYM und PUR-sun-ul rih-LAY-shun-ships"
+          "ipa": "ˈfæməli taɪm ənd ˈleʒə ækˈtɪvətiz",
+          "phonetic": "FAM-uh-lee TYM und LEZH-ur ak-TIV-uh-teez"
         },
         "american": {
-          "ipa": "ˈfæməli taɪm ənd ˈpɜːsənəl rɪˈleɪʃənʃɪps",
-          "phonetic": "FAM-uh-lee TYM und PUR-sun-ul rih-LAY-shun-ships"
+          "ipa": "ˈfæməli taɪm ənd ˈleʒə ækˈtɪvətiz",
+          "phonetic": "FAM-uh-lee TYM und LEZH-ur ak-TIV-uh-teez"
         }
       },
       "difficulty": "hard",
@@ -3133,6 +3229,22 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
+      "english": "**preserving beautiful buildings of the past**",
+      "pronunciation": {
+        "british": {
+          "ipa": "prɪˈzɜːvɪŋ ˈbjuːtɪfʊl ˈbɪldɪŋz əv ðə pɑːst",
+          "phonetic": "prih-ZUR-ving BYOO-tih-ful BIL-dingz uv thuh PAHST"
+        },
+        "american": {
+          "ipa": "prɪˈzɜːvɪŋ ˈbjuːtɪfʊl ˈbɪldɪŋz əv ðə pɑːst",
+          "phonetic": "prih-ZUR-ving BYOO-tih-ful BIL-dingz uv thuh PAHST"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
       "english": "**preserving historic buildings**",
       "pronunciation": {
         "british": {
@@ -3142,22 +3254,6 @@
         "american": {
           "ipa": "prɪˈzɜːvɪŋ hɪˈstɒrɪk ˈbɪldɪŋz",
           "phonetic": "prih-ZUR-ving hih-STOR-ik BIL-dingz"
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-b1-examples-vocabulary",
-      "source": "pte-essay-b1-examples-vocabulary"
-    },
-    {
-      "english": "**communities**",
-      "pronunciation": {
-        "british": {
-          "ipa": "kəˈmjuːnətiz",
-          "phonetic": "kuh-MYOO-nuh-teez"
-        },
-        "american": {
-          "ipa": "kəˈmjuːnətiz",
-          "phonetic": "kuh-MYOO-nuh-teez"
         }
       },
       "difficulty": "hard",
@@ -3389,7 +3485,7 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**employee participation in decision making**",
+      "english": "**employee participation in decision-making**",
       "pronunciation": {
         "british": {
           "ipa": "ɪmˈplɔɪiː pɑːˌtɪsɪˈpeɪʃən ɪn dɪˈsɪʒən ˈmeɪkɪŋ",

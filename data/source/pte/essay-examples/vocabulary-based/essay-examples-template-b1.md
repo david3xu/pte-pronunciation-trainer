@@ -37,7 +37,10 @@
 ### Structure Overview:
 1. **Introduction** - State your mostly positive position
 2. **Paragraph 2** - POSITIVE arguments (advantages)
-3. **Paragraph 3** - NEGATIVE arguments (acknowledge challenges)
+3. **Paragraph 3** - Choose ONE:
+   - **Option A:** Negative challenges (standard agree/disagree)
+   - **Option B:** Alternative benefits (when question compares two approaches)
+   - **Option C:** Solutions/recommendations (when question asks for solutions)
 4. **Conclusion** - Reaffirm that advantages remain significant
 
 ---
@@ -58,13 +61,35 @@
 
 ---
 
+### 📊 Paragraph 3 Variations (choose one)
+
+**Option A - Negative Challenges (Standard):**
+> However, it is equally important to acknowledge that **[topic]** may also give rise to certain challenges. This is largely because **[topic]** is likely to generate **[negative outcome 1]**, which may subsequently lead to **[negative outcome 2]**. According to research by **[experts]**, a significant number of **[people]** have been affected by **[impact]** resulting from **[topic]**.
+
+**Option B - Alternative Benefits (for comparison questions):**
+> However, it is equally important to acknowledge that **[alternative]** also provides certain benefits. This is largely because **[alternative]** can offer **[benefit 1]**, which may enable **[benefit 2]**. According to research by **[experts]**, a significant number of **[people]** have achieved **[positive outcome]** through **[alternative]**.
+
+**Option C - Solutions/Recommendations:**
+> However, it is equally important to acknowledge that **[effective solutions]** can address **[topic]**. This is largely because **[action]** is likely to generate **[positive outcome]**. Based on research by **[experts]**, I recommend that **[stakeholders]** should **[recommendation]** to address **[issue]**.
+
+---
+
+### 📋 Fill-in Terms Labels (by Para 3 type)
+
+| Para 3 Option | Fill-in Label to Use |
+|---------------|---------------------|
+| Option A (Challenges) | **Negative Outcomes:** |
+| Option B (Alternative) | **Why [Alternative] Has Value:** |
+| Option C (Solutions) | **Solutions/Recommendations:** |
+
+---
+
 ### 📊 Evidence Phrases (use instead of fake statistics)
 
 **Paragraph 2 (positive):**
 > For instance, evidence from **[source]** shows that many **[people]** experienced **[positive outcome]** as a direct result of **[topic]**.
 
-**Paragraph 3 (negative):**
-> According to research by **[experts]**, a significant number of **[people]** have been affected by **[negative outcome]** resulting from **[topic]**.
+**Paragraph 3 (varies by option - see templates above)**
 
 ---
 
@@ -98,6 +123,29 @@
 14. [Example 14: Preserving Historic Buildings](#example-14-preserving-historic-buildings)
 15. [Example 15: Employee Decision Making](#example-15-employee-decision-making)
 16. [Example 16: Technology and Better World](#example-16-technology-and-better-world)
+
+---
+
+## ✅ Template Compliance Check (All 16 Examples)
+
+| # | Topic | Para 3 Type | Fill-in Labels |
+|---|-------|-------------|----------------|
+| 1 | Early Marriage | Option A (Challenges) | Positive Outcomes / Negative Outcomes |
+| 2 | Written Exams | Option A (Challenges) | Positive Outcomes / Negative Outcomes |
+| 3 | Travel & Education | Option B (Alternative) | Positive Outcomes / Why Local Education Has Value |
+| 4 | Climate Responsibility | Option B (Alternative) | Positive Outcomes / Why Others Can Contribute |
+| 5 | Television | Option A (Challenges) | Positive Outcomes / Negative Outcomes |
+| 6 | Important Invention | Option B (Alternative) | Positive Outcomes / Why Other Inventions Have Value |
+| 7 | Experiential Learning | Option B (Alternative) | Positive Outcomes / Why Traditional Has Value |
+| 8 | Late Penalties | Option C (Solutions) | Positive Outcomes / Recommendations |
+| 9 | Study + Work | Option A (Challenges) | Positive Outcomes / Negative Outcomes |
+| 10 | Global Problem | Option C (Solutions) | Negative Effects (Why Pressing) / Solutions |
+| 11 | Building Design | Option A (Challenges) | Positive Outcomes / Negative Outcomes |
+| 12 | Work-Life Balance | Option A (Challenges) | Positive Outcomes (Why Important) / Negative Outcomes (Why Hard) |
+| 13 | Smartphones | Option A (Challenges) | Positive Outcomes / Negative Outcomes |
+| 14 | Historic Buildings | Option A (Challenges) | Positive Outcomes / Negative Outcomes |
+| 15 | Employee Decisions | Option A (Challenges) | Positive Outcomes / Negative Outcomes |
+| 16 | Technology | Option A (Challenges) | Positive Outcomes / Negative Outcomes |
 
 ---
 
@@ -173,21 +221,21 @@ Taken together, these considerations demonstrate the overall importance of **for
 
 **Positive Outcomes:** cultural awareness, real-world experience, global perspective, personal growth
 
-**Negative Outcomes:** high costs, time constraints, limited access, financial barriers
+**Why Local Education Has Value:** local universities, established institutions, familiar environment, lower costs
 
-**Evidence Sources:** education research, travel studies
+**Evidence Sources:** education research, learning experts
 
-**Conclusion:** schools and universities
+**Conclusion:** students and educators
 
-### Complete Essay (223 words)
+### Complete Essay (225 words)
 
-In recent years, the topic of **educational travel** has emerged as a significant subject of public and academic discussion. I contend that **educational travel** offers substantial benefits for **students** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+In recent years, the topic of **educational travel** has emerged as a significant subject of public and academic discussion. I contend that **educational travel** is a valuable component of quality education for **students** despite alternatives, and the following analysis outlines the primary arguments supporting this viewpoint.
 
-To begin with, one compelling advantage of **educational travel** is its potential to bring about **cultural awareness and cross-cultural understanding**. In particular, **educational travel** can facilitate **real-world experience and practical learning**, ultimately leading to broader outcomes such as **global perspective and international mindset**. For instance, evidence from **education research** shows that many **students** experienced **enhanced personal growth and improved critical thinking** as a direct result of **educational travel**.
+To begin with, one compelling advantage of **educational travel** is its potential to bring about **cultural awareness and cross-cultural understanding**. In particular, **educational travel** can facilitate **real-world experience and practical learning**, ultimately leading to broader outcomes such as **global perspective and personal growth**. For instance, evidence from **education research** shows that many **students** experienced **enhanced critical thinking and deeper knowledge** as a direct result of **educational travel**.
 
-However, it is equally important to acknowledge that **educational travel** may also give rise to certain challenges. This is largely because **educational travel** is likely to generate **high costs and significant expenses**, which may subsequently lead to **limited access and reduced opportunities for many students**. According to research by **economists and education experts**, a significant number of **learners** have been affected by **financial barriers and time constraints** resulting from **educational travel**.
+However, it is equally important to acknowledge that **local education** also provides certain benefits. This is largely because **studying locally** can offer **local universities and established institutions**, which may enable **quality learning in a familiar environment**. According to research by **learning experts**, a significant number of **learners** have achieved **academic success and scholarly expertise** through **local education and dedicated study**.
 
-Taken together, these considerations demonstrate the overall importance of **educational travel**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **schools and universities** to allocate sufficient resources to address these challenges effectively.
+Taken together, these considerations demonstrate that while **local education** can produce excellent scholars, **educational travel** adds unique value that cannot be fully replicated. Thus, it is beneficial for **students and educators** to incorporate **educational travel** when possible, while recognizing that quality education remains achievable through **studying locally**.
 
 ---
 
@@ -203,7 +251,7 @@ Taken together, these considerations demonstrate the overall importance of **edu
 
 **Positive Outcomes (Why governments):** environmental laws, public funding, strong enforcement, climate targets
 
-**Negative Outcomes (Others limited):** limited power, company efforts, individual actions, lifestyle changes
+**Why Others Can Contribute:** company efforts, private actions, public awareness, lifestyle changes
 
 **Evidence Sources:** climate research, environmental experts
 
@@ -231,7 +279,7 @@ Taken together, these considerations demonstrate that **governments** should ass
 
 **Subjects:** viewers, people
 
-**Positive Outcomes:** entertainment, stress relief, educational programs, useful knowledge
+**Positive Outcomes:** relaxation, stress relief, educational programs, companionship
 
 **Negative Outcomes:** too much screen time, health issues, less social contact, inactive lifestyle
 
@@ -243,7 +291,7 @@ Taken together, these considerations demonstrate that **governments** should ass
 
 In recent years, the topic of **television** has emerged as a significant subject of public and academic discussion. I contend that **television** offers substantial benefits for **viewers** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
 
-To begin with, one compelling advantage of **television** is its potential to bring about **entertainment and stress relief**. In particular, **television** can facilitate **educational programs and learning opportunities**, ultimately leading to broader outcomes such as **relaxation and useful knowledge**. For instance, evidence from **media studies** shows that many **viewers** experienced **better mood and increased awareness** as a direct result of **watching television**.
+To begin with, one compelling advantage of **television** is its potential to bring about **relaxation and stress relief**. In particular, **television** can facilitate **educational programs and learning opportunities**, ultimately leading to broader outcomes such as **entertainment and useful knowledge**. For instance, evidence from **media studies** shows that many **viewers** experienced **better mood and a sense of companionship** as a direct result of **watching television**.
 
 However, it is equally important to acknowledge that **television** may also give rise to certain challenges. This is largely because **television** is likely to generate **too much screen time and inactive lifestyle**, which may subsequently lead to **health issues and less social contact**. According to research by **health researchers**, a significant number of **people** have been affected by **poor physical health and isolation** resulting from **excessive television watching**.
 
@@ -263,7 +311,7 @@ Taken together, these considerations demonstrate the overall importance of **tel
 
 **Positive Outcomes (Why internet is best):** global communication, instant information, online learning, business growth
 
-**Negative Outcomes (Others less important):** limited scope, specific benefits, narrow applications, single purpose
+**Why Other Inventions Have Value:** healthcare benefits, travel improvements, medical advances, transport progress
 
 **Evidence Sources:** technology research, digital experts
 
@@ -289,25 +337,25 @@ Taken together, these considerations demonstrate the overall importance of **the
 
 **Main Topic:** experiential learning (repeat 8+ times)
 
-**Subjects:** students, schools
+**Subjects:** high school and college students, learners
 
-**Positive Outcomes:** practical skills, hands-on practice, real-world knowledge, improved memory
+**Positive Outcomes:** practical skills, hands-on practice, real-world knowledge, higher engagement
 
-**Negative Outcomes:** time needed, higher costs, less content, budget limits
+**Why Traditional Has Value:** structured content, clear assessment, proven methods, systematic learning
 
-**Evidence Sources:** education studies, teaching experts
+**Evidence Sources:** education studies, teaching researchers
 
-**Conclusion:** schools and educators
+**Conclusion:** high schools and universities
 
-### Complete Essay (221 words)
+### Complete Essay (225 words)
 
-In recent years, the topic of **experiential learning** has emerged as a significant subject of public and academic discussion. I contend that **experiential learning** offers substantial benefits for **students** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+In recent years, the topic of **experiential learning** has emerged as a significant subject of public and academic discussion. I contend that **experiential learning** offers substantial benefits for **high school and college students** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
 
-To begin with, one compelling advantage of **experiential learning** is its potential to bring about **practical skills and direct application**. In particular, **experiential learning** can facilitate **hands-on practice and active engagement**, ultimately leading to broader outcomes such as **real-world knowledge and improved memory**. For instance, evidence from **education studies** shows that many **students** experienced **better learning and higher motivation** as a direct result of **using experiential learning methods**.
+To begin with, one compelling advantage of **experiential learning** is its potential to bring about **practical skills and direct application**. In particular, **experiential learning** can facilitate **hands-on practice and active engagement**, ultimately leading to broader outcomes such as **real-world knowledge and higher engagement**. For instance, evidence from **education studies** shows that many **high school and college students** experienced **better learning and stronger motivation** as a direct result of **using experiential learning methods**.
 
-However, it is equally important to acknowledge that **experiential learning** may also give rise to certain challenges. This is largely because **experiential learning** is likely to generate **time needed and higher costs**, which may subsequently lead to **less content and budget limits**. According to research by **teaching experts**, a significant number of **schools** have been affected by **budget limits and time issues** resulting from **implementing experiential learning**.
+However, it is equally important to acknowledge that **traditional teaching** also provides certain benefits. This is largely because **traditional teaching** can offer **structured content and clear assessment**, which may lead to **proven methods and systematic learning**. According to research by **teaching researchers**, a significant number of **learners** have benefited from **organized lessons and formal instruction** provided by **traditional classroom approaches**.
 
-Taken together, these considerations demonstrate the overall importance of **experiential learning**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **schools and educators** to allocate sufficient resources to address these challenges effectively.
+Taken together, these considerations demonstrate the overall importance of **experiential learning** in **high school and college**, since its advantages remain significant despite the value of traditional methods. Thus, it is essential for **high schools and universities** to allocate sufficient resources to implement **experiential learning** effectively.
 
 ---
 
@@ -351,9 +399,9 @@ Taken together, these considerations demonstrate the overall importance of **lat
 
 **Subjects:** students, working students
 
-**Why It's Realistic:** flexible hours, remote work, online classes, time savings
+**Positive Outcomes:** flexible hours, remote work, online classes, time savings
 
-**Challenges:** distractions, less focus, time conflicts, schedule pressure
+**Negative Outcomes:** distractions, less focus, time conflicts, schedule pressure
 
 **Evidence Sources:** education research, career experts
 
@@ -381,7 +429,7 @@ Taken together, these considerations demonstrate that **combining study and work
 
 **Subjects:** people, nations
 
-**Why It's Pressing:** rising temperatures, extreme weather, habitat loss, food shortages
+**Negative Effects (Why Pressing):** rising temperatures, extreme weather, habitat loss, food shortages
 
 **Solutions:** clean energy, carbon emissions, policy changes, global action
 
@@ -441,9 +489,9 @@ Taken together, these considerations demonstrate the overall importance of **bui
 
 **Subjects:** people, workers
 
-**Why It's Important:** mental health, family time, personal happiness, reduced stress
+**Positive Outcomes (Why Important):** mental health, family time, leisure activities, reduced stress
 
-**Why It's Hard:** long working hours, job demands, financial pressure, career expectations
+**Negative Outcomes (Why Hard):** long working hours, job demands, financial pressure, career expectations
 
 **Evidence Sources:** workplace research, health studies
 
@@ -453,7 +501,7 @@ Taken together, these considerations demonstrate the overall importance of **bui
 
 In recent years, the topic of **work-life balance** has emerged as a significant subject of public and academic discussion. I contend that **work-life balance** is **highly important** for **people** despite being difficult to achieve, and the following analysis outlines the primary arguments supporting this viewpoint.
 
-To begin with, one compelling advantage of **work-life balance** is its potential to bring about **mental health and emotional stability**. In particular, **work-life balance** can facilitate **family time and personal relationships**, ultimately leading to broader outcomes such as **personal happiness and reduced stress**. For instance, evidence from **workplace research** shows that many **workers** experienced **better health and improved satisfaction** as a direct result of **maintaining work-life balance**.
+To begin with, one compelling advantage of **work-life balance** is its potential to bring about **mental health and emotional stability**. In particular, **work-life balance** can facilitate **family time and leisure activities**, ultimately leading to broader outcomes such as **personal happiness and reduced stress**. For instance, evidence from **workplace research** shows that many **workers** experienced **better health and improved satisfaction** as a direct result of **maintaining work-life balance**.
 
 However, it is equally important to acknowledge that **work-life balance** may also give rise to certain challenges. This is largely because **modern work culture** is likely to generate **long working hours and high job demands**, which may subsequently lead to **financial pressure and career expectations**. According to research by **health studies**, a significant number of **people** have been affected by **time constraints and competing priorities** resulting from **difficulty achieving work-life balance**.
 
@@ -497,7 +545,7 @@ Taken together, these considerations demonstrate the overall importance of **sma
 
 ### Fill-in Terms (13 unique)
 
-**Main Topic:** preserving historic buildings (repeat 8+ times)
+**Main Topic:** preserving beautiful buildings of the past (repeat 8+ times)
 
 **Subjects:** people, communities
 
@@ -511,7 +559,7 @@ Taken together, these considerations demonstrate the overall importance of **sma
 
 ### Complete Essay (221 words)
 
-In recent years, the topic of **preserving historic buildings** has emerged as a significant subject of public and academic discussion. I contend that **preserving historic buildings** offers substantial benefits for **communities** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+In recent years, the topic of **preserving beautiful buildings of the past** has emerged as a significant subject of public and academic discussion. I contend that **preserving historic buildings** offers substantial benefits for **communities** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
 
 To begin with, one compelling advantage of **preserving historic buildings** is their potential to bring about **cultural identity and shared heritage**. In particular, **historic buildings** can facilitate **tourism income and economic benefits**, ultimately leading to broader outcomes such as **local pride and community connection**. For instance, evidence from **heritage studies** shows that many **communities** experienced **increased visitors and stronger cultural awareness** as a direct result of **preserving historic buildings**.
 
@@ -519,6 +567,117 @@ However, it is equally important to acknowledge that **preserving historic build
 
 Taken together, these considerations demonstrate the overall importance of **preserving historic buildings**, since their advantages remain significant despite the issues that accompany them. Thus, it is essential for **governments and local communities** to allocate sufficient resources to address these challenges effectively.
 
+## Example 15: Employee Decision Making
+
+**Question:** In some companies, some employers involve employees in the decision-making process of products and services. What are the advantages and disadvantages of such a policy?
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** employee participation in decision-making (repeat 8+ times)
+
+**Subjects:** employees, companies
+
+**Positive Outcomes:** higher employee loyalty, stronger workplace engagement, better business suggestions, increased company revenue
+
+**Negative Outcomes:** workplace conflicts, slower decision processes, disagreements between staff and managers
+
+**Evidence Sources:** business research, management studies
+
+**Conclusion:** companies and managers
+
+### Complete Essay (228 words)
+
+In recent years, the topic of **employee participation in decision-making** has emerged as a significant subject of public and academic discussion. I contend that **employee participation in decision-making** offers substantial benefits for **companies** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **employee participation in decision-making** is its potential to bring about **higher employee loyalty and stronger workplace engagement**. In particular, **employee participation in decision-making** can facilitate **better business suggestions and creative ideas**, ultimately leading to broader outcomes such as **increased company revenue and improved customer satisfaction**. For instance, evidence from **business research** shows that many **employees** experienced **greater motivation and a stronger sense of belonging** as a direct result of **employee participation in decision-making**.
+
+However, it is equally important to acknowledge that **employee participation in decision-making** may also give rise to certain challenges. This is largely because **employee participation in decision-making** is likely to generate **workplace conflicts and disagreements between staff and managers**, which may subsequently lead to **slower decision processes and reduced efficiency**. According to research by **management studies**, a significant number of **companies** have been affected by **communication difficulties and longer meeting times** resulting from **employee participation in decision-making**.
+
+Taken together, these considerations demonstrate the overall importance of **employee participation in decision-making**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **companies and managers** to allocate sufficient resources to address these challenges effectively.
+
+---
+
+### 📚 Vocabulary List - Example 15
+
+1. employee participation in decision-making
+2. employees
+3. companies
+4. higher employee loyalty
+5. stronger workplace engagement
+6. better business suggestions
+7. creative ideas
+8. increased company revenue
+9. improved customer satisfaction
+10. business research
+11. greater motivation
+12. a stronger sense of belonging
+13. employee participation in decision-making
+14. workplace conflicts
+15. disagreements between staff and managers
+16. slower decision processes
+17. reduced efficiency
+18. management studies
+19. communication difficulties
+20. longer meeting times
+21. employee participation in decision-making
+22. companies and managers
+
+---
+
+## Example 16: Technology and Better World
+
+**Question:** Technology has made the world a better place to live. To what extent do you agree with this statement?
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** technology (repeat 8+ times)
+
+**Subjects:** people, society
+
+**Positive Outcomes:** improved communication, better healthcare, faster information access, higher living standards
+
+**Negative Outcomes:** privacy concerns, job losses, social isolation, digital divide
+
+**Evidence Sources:** technology research, social studies
+
+**Conclusion:** governments and technology companies
+
+### Complete Essay (225 words)
+
+In recent years, the topic of **technology** has emerged as a significant subject of public and academic discussion. I contend that **technology** has made the world a better place for **people** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **technology** is its potential to bring about **improved communication and global connectivity**. In particular, **technology** can facilitate **faster information access and better healthcare**, ultimately leading to broader outcomes such as **higher living standards and improved quality of life**. For instance, evidence from **technology research** shows that many **people** experienced **better medical treatment and easier access to education** as a direct result of **technological advances**.
+
+However, it is equally important to acknowledge that **technology** may also give rise to certain challenges. This is largely because **technology** is likely to generate **privacy concerns and data security issues**, which may subsequently lead to **job losses and social isolation**. According to research by **social studies**, a significant number of **people** have been affected by **digital divide and reduced face-to-face interaction** resulting from **overreliance on technology**.
+
+Taken together, these considerations demonstrate that **technology** has indeed made the world a better place, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **governments and technology companies** to allocate sufficient resources to address these challenges effectively.
+
+---
+
+### 📚 Vocabulary List - Example 16
+
+1. technology
+2. people
+3. society
+4. improved communication
+5. global connectivity
+6. faster information access
+7. better healthcare
+8. higher living standards
+9. improved quality of life
+10. technology research
+11. better medical treatment
+12. easier access to education
+13. technological advances
+14. privacy concerns
+15. data security issues
+16. job losses
+17. social isolation
+18. social studies
+19. digital divide
+20. reduced face-to-face interaction
+21. overreliance on technology
+22. governments and technology companies
 ---
 
 ## 📋 All Filled Terms Summary
@@ -574,26 +733,30 @@ Taken together, these considerations demonstrate the overall importance of **pre
 ### Example 3: Travel and Quality Education
 1. educational travel
 2. educational travel
-3. students
-4. educational travel
-5. cultural awareness and cross-cultural understanding
-6. educational travel
-7. real-world experience and practical learning
-8. global perspective and international mindset
-9. education research
-10. students
-11. enhanced personal growth and improved critical thinking
-12. educational travel
+3. a valuable component of quality education
+4. students
+5. educational travel
+6. cultural awareness and cross-cultural understanding
+7. educational travel
+8. real-world experience and practical learning
+9. global perspective and personal growth
+10. education research
+11. students
+12. enhanced critical thinking and deeper knowledge
 13. educational travel
-14. educational travel
-15. high costs and significant expenses
-16. limited access and reduced opportunities for many students
-17. economists and education experts
-18. learners
-19. financial barriers and time constraints
-20. educational travel
-21. educational travel
-22. schools and universities
+14. local education
+15. studying locally
+16. local universities and established institutions
+17. quality learning in a familiar environment
+18. learning experts
+19. learners
+20. academic success and scholarly expertise
+21. local education and dedicated study
+22. local education
+23. educational travel
+24. students and educators
+25. educational travel
+26. studying locally
 
 ### Example 4: Climate Change Responsibility
 1. climate change responsibility
@@ -626,13 +789,13 @@ Taken together, these considerations demonstrate the overall importance of **pre
 2. television
 3. viewers
 4. television
-5. entertainment and stress relief
+5. relaxation and stress relief
 6. television
 7. educational programs and learning opportunities
-8. relaxation and useful knowledge
+8. entertainment and useful knowledge
 9. media studies
 10. viewers
-11. better mood and increased awareness
+11. better mood and a sense of companionship
 12. watching television
 13. television
 14. television
@@ -672,26 +835,28 @@ Taken together, these considerations demonstrate the overall importance of **pre
 ### Example 7: Experiential Learning
 1. experiential learning
 2. experiential learning
-3. students
+3. high school and college students
 4. experiential learning
 5. practical skills and direct application
 6. experiential learning
 7. hands-on practice and active engagement
-8. real-world knowledge and improved memory
+8. real-world knowledge and higher engagement
 9. education studies
-10. students
-11. better learning and higher motivation
+10. high school and college students
+11. better learning and stronger motivation
 12. using experiential learning methods
-13. experiential learning
-14. experiential learning
-15. time needed and higher costs
-16. less content and budget limits
-17. teaching experts
-18. schools
-19. budget limits and time issues
-20. implementing experiential learning
+13. traditional teaching
+14. traditional teaching
+15. structured content and clear assessment
+16. proven methods and systematic learning
+17. teaching researchers
+18. learners
+19. organized lessons and formal instruction
+20. traditional classroom approaches
 21. experiential learning
-22. schools and educators
+22. high school and college
+23. high schools and universities
+24. experiential learning
 
 ### Example 8: Late Assignment Penalties
 1. late assignment penalties
@@ -802,7 +967,7 @@ Taken together, these considerations demonstrate the overall importance of **pre
 5. work-life balance
 6. mental health and emotional stability
 7. work-life balance
-8. family time and personal relationships
+8. family time and leisure activities
 9. personal happiness and reduced stress
 10. workplace research
 11. workers
@@ -844,7 +1009,7 @@ Taken together, these considerations demonstrate the overall importance of **pre
 22. individuals and technology companies
 
 ### Example 14: Preserving Historic Buildings
-1. preserving historic buildings
+1. preserving beautiful buildings of the past
 2. preserving historic buildings
 3. communities
 4. preserving historic buildings
@@ -869,114 +1034,51 @@ Taken together, these considerations demonstrate the overall importance of **pre
 
 ---
 
-## Example 15: Employee Decision Making
-
-**Question:** In some companies, some employers involve employees in the decision-making process of products and services. What are the advantages and disadvantages of such a policy?
-
-### Fill-in Terms (13 unique)
-
-**Main Topic:** employee participation in decision making (repeat 8+ times)
-
-**Subjects:** employees, companies
-
-**Positive Outcomes:** higher employee loyalty, stronger workplace engagement, better business suggestions, increased company revenue
-
-**Negative Outcomes:** workplace conflicts, slower decision processes, disagreements between staff and managers
-
-**Evidence Sources:** business research, management studies
-
-**Conclusion:** companies and managers
-
-### Complete Essay (228 words)
-
-In recent years, the topic of **employee participation in decision making** has emerged as a significant subject of public and academic discussion. I contend that **employee participation in decision making** offers substantial benefits for **companies** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
-
-To begin with, one compelling advantage of **employee participation in decision making** is its potential to bring about **higher employee loyalty and stronger workplace engagement**. In particular, **employee participation in decision making** can facilitate **better business suggestions and creative ideas**, ultimately leading to broader outcomes such as **increased company revenue and improved customer satisfaction**. For instance, evidence from **business research** shows that many **employees** experienced **greater motivation and a stronger sense of belonging** as a direct result of **employee participation in decision making**.
-
-However, it is equally important to acknowledge that **employee participation in decision making** may also give rise to certain challenges. This is largely because **employee participation in decision making** is likely to generate **workplace conflicts and disagreements between staff and managers**, which may subsequently lead to **slower decision processes and reduced efficiency**. According to research by **management studies**, a significant number of **companies** have been affected by **communication difficulties and longer meeting times** resulting from **employee participation in decision making**.
-
-Taken together, these considerations demonstrate the overall importance of **employee participation in decision making**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **companies and managers** to allocate sufficient resources to address these challenges effectively.
-
----
-
-### 📚 Vocabulary List - Example 15
-
-1. employee participation in decision making
-2. employees
+### Example 15: Employee Decision Making
+1. employee participation in decision-making
+2. employee participation in decision-making
 3. companies
-4. higher employee loyalty
-5. stronger workplace engagement
-6. better business suggestions
-7. creative ideas
-8. increased company revenue
-9. improved customer satisfaction
-10. business research
-11. greater motivation
-12. a stronger sense of belonging
-13. employee participation in decision making
-14. workplace conflicts
-15. disagreements between staff and managers
-16. slower decision processes
-17. reduced efficiency
-18. management studies
-19. communication difficulties
-20. longer meeting times
-21. employee participation in decision making
+4. employee participation in decision-making
+5. higher employee loyalty and stronger workplace engagement
+6. employee participation in decision-making
+7. better business suggestions and creative ideas
+8. increased company revenue and improved customer satisfaction
+9. business research
+10. employees
+11. greater motivation and a stronger sense of belonging
+12. employee participation in decision-making
+13. employee participation in decision-making
+14. employee participation in decision-making
+15. workplace conflicts and disagreements between staff and managers
+16. slower decision processes and reduced efficiency
+17. management studies
+18. companies
+19. communication difficulties and longer meeting times
+20. employee participation in decision-making
+21. employee participation in decision-making
 22. companies and managers
 
----
-
-## Example 16: Technology and Better World
-
-**Question:** Technology has made the world a better place to live. To what extent do you agree with this statement?
-
-### Fill-in Terms (13 unique)
-
-**Main Topic:** technology (repeat 8+ times)
-
-**Subjects:** people, society
-
-**Positive Outcomes:** improved communication, better healthcare, faster information access, higher living standards
-
-**Negative Outcomes:** privacy concerns, job losses, social isolation, digital divide
-
-**Evidence Sources:** technology research, social studies
-
-**Conclusion:** governments and technology companies
-
-### Complete Essay (225 words)
-
-In recent years, the topic of **technology** has emerged as a significant subject of public and academic discussion. I contend that **technology** has made the world a better place for **people** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
-
-To begin with, one compelling advantage of **technology** is its potential to bring about **improved communication and global connectivity**. In particular, **technology** can facilitate **faster information access and better healthcare**, ultimately leading to broader outcomes such as **higher living standards and improved quality of life**. For instance, evidence from **technology research** shows that many **people** experienced **better medical treatment and easier access to education** as a direct result of **technological advances**.
-
-However, it is equally important to acknowledge that **technology** may also give rise to certain challenges. This is largely because **technology** is likely to generate **privacy concerns and data security issues**, which may subsequently lead to **job losses and social isolation**. According to research by **social studies**, a significant number of **people** have been affected by **digital divide and reduced face-to-face interaction** resulting from **overreliance on technology**.
-
-Taken together, these considerations demonstrate that **technology** has indeed made the world a better place, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **governments and technology companies** to allocate sufficient resources to address these challenges effectively.
-
----
-
-### 📚 Vocabulary List - Example 16
-
+### Example 16: Technology and Better World
 1. technology
-2. people
-3. society
-4. improved communication
-5. global connectivity
-6. faster information access
-7. better healthcare
-8. higher living standards
-9. improved quality of life
+2. technology
+3. a better place
+4. people
+5. technology
+6. improved communication and global connectivity
+7. technology
+8. faster information access and better healthcare
+9. higher living standards and improved quality of life
 10. technology research
-11. better medical treatment
-12. easier access to education
+11. people
+12. better medical treatment and easier access to education
 13. technological advances
-14. privacy concerns
-15. data security issues
-16. job losses
-17. social isolation
+14. technology
+15. technology
+16. privacy concerns and data security issues
+17. job losses and social isolation
 18. social studies
-19. digital divide
-20. reduced face-to-face interaction
+19. people
+20. digital divide and reduced face-to-face interaction
 21. overreliance on technology
-22. governments and technology companies
+22. technology
+23. governments and technology companies

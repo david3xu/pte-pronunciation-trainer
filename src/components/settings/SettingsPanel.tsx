@@ -6,8 +6,8 @@
  */
 
 import {
-    Cross2Icon,
-    GearIcon
+  Cross2Icon,
+  GearIcon
 } from '@radix-ui/react-icons';
 import { Badge, Button, Card, Flex, Select, Slider, Switch, Tabs, Text } from '@radix-ui/themes';
 import React, { useMemo } from 'react';
@@ -91,6 +91,21 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
           source: bookId,
           // Keep original shadowing data
           ...answer
+        }));
+      }
+
+      // Transform segment items (RS/WFD segments) to be compatible with WordCard
+      // These have nested structure: { content: { sentence: "..." }, metadata: { difficulty: "..." } }
+      if (data.items && data.items[0]?.content?.sentence) {
+        items = items.map((item: any) => ({
+          id: item.id,
+          sentence: item.content.sentence,  // Flatten content.sentence to sentence
+          ipa: item.content.ipa,
+          difficulty: item.metadata?.difficulty || 'normal',
+          category: item.metadata?.category || 'general',
+          wordCount: item.metadata?.wordCount,
+          type: item.type,
+          source: bookId,
         }));
       }
 

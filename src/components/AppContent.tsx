@@ -1,9 +1,9 @@
 import {
-    BarChartIcon,
-    ChatBubbleIcon,
-    GearIcon,
-    LightningBoltIcon,
-    SpeakerLoudIcon,
+  BarChartIcon,
+  ChatBubbleIcon,
+  GearIcon,
+  LightningBoltIcon,
+  SpeakerLoudIcon,
 } from '@radix-ui/react-icons';
 import { Button, Flex, Spinner, Theme } from '@radix-ui/themes';
 import React, { lazy, Suspense, useEffect, useState } from 'react';
@@ -24,8 +24,8 @@ import WeakAreasDashboard from './ai/WeakAreasDashboard';
 import AudioControls from './audio/AudioControls';
 import DataMigrationModal from './migration/DataMigrationModal';
 import {
-    ProgressDashboard,
-    WordCard,
+  ProgressDashboard,
+  WordCard,
 } from './practice';
 import LearnerProfileModal from './profile/LearnerProfileModal';
 import SettingsPanel from './settings/SettingsPanel';
@@ -108,6 +108,21 @@ export const AppContent: React.FC = () => {
             source: vocabularyBook,
             // Keep original shadowing data
             ...answer
+          }));
+        }
+
+        // Transform segment items (RS/WFD segments) to be compatible with WordCard
+        // These have nested structure: { content: { sentence: "..." }, metadata: { difficulty: "..." } }
+        if (data.items && data.items[0]?.content?.sentence) {
+          items = items.map((item: any) => ({
+            id: item.id,
+            sentence: item.content.sentence,  // Flatten content.sentence to sentence
+            ipa: item.content.ipa,
+            difficulty: item.metadata?.difficulty || 'normal',
+            category: item.metadata?.category || 'general',
+            wordCount: item.metadata?.wordCount,
+            type: item.type,
+            source: vocabularyBook,
           }));
         }
 

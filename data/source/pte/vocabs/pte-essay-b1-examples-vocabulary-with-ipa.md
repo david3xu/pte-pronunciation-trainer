@@ -1,7 +1,7 @@
 # PTE Essay B1 Examples - Fill-in Terms Vocabulary
 
 **Purpose:** ALL fill-in terms from Template B1 Essay Examples collection
-**Total Terms:** 244 unique terms (ordered by example)
+**Total Terms:** 260 unique terms (ordered by example)
 **Format:** By example order with IPA pronunciation
 **Source:** essay-examples-template-b1.md
 
@@ -46,16 +46,22 @@
 ## Example 3: Travel and Quality Education
 
 27. **educational travel** | /ˌedjʊˈkeɪʃənəl ˈtrævəl/ — sounds like **ej-oo-KAY-shun-ul TRAV-ul**
-28. **learners** | /ˈlɜːnəz/ — sounds like **LUR-nurz**
-29. **cultural awareness and cross-cultural understanding** | /ˈkʌltʃərəl əˈweənəs ənd krɒs ˈkʌltʃərəl ˌʌndəˈstændɪŋ/ — sounds like **KUL-chur-ul uh-WAIR-nus und KROSS KUL-chur-ul un-dur-STAN-ding**
-30. **real-world experience and practical learning** | /rɪəl wɜːld ɪkˈspɪəriəns ənd ˈpræktɪkəl ˈlɜːnɪŋ/ — sounds like **REEL WURLD ik-SPEER-ee-uns und PRAK-tih-kul LUR-ning**
-31. **global perspective and international mindset** | /ˈɡləʊbəl pəˈspektɪv ənd ˌɪntəˈnæʃənəl ˈmaɪndset/ — sounds like **GLOH-bul per-SPEK-tiv und in-tur-NASH-un-ul MYND-set**
-32. **enhanced personal growth and improved critical thinking** | /ɪnˈhɑːnst ˈpɜːsənəl ɡrəʊθ ənd ɪmˈpruːvd ˈkrɪtɪkəl ˈθɪŋkɪŋ/ — sounds like **in-HAHNST PUR-sun-ul GROHTH und im-PROOVD KRIT-ih-kul THINK-ing**
-33. **high costs and significant expenses** | /haɪ kɒsts ənd sɪɡˈnɪfɪkənt ɪkˈspensɪz/ — sounds like **HY KOSTS und sig-NIF-ih-kunt ik-SPEN-siz**
-34. **limited access and reduced opportunities for many students** | /ˈlɪmɪtɪd ˈækses ənd rɪˈdjuːst ˌɒpəˈtjuːnətiz fɔː ˈmeni ˈstjuːdənts/ — sounds like **LIM-ih-tid AK-ses und rih-DYOOST op-ur-TOO-nih-teez for MEN-ee STOO-dunts**
-35. **economists and education experts** | /ɪˈkɒnəmɪsts ənd ˌedjʊˈkeɪʃən ˈekspɜːts/ — sounds like **ih-KON-uh-mists und ej-oo-KAY-shun EK-spurts**
-36. **financial barriers and time constraints** | /faɪˈnænʃəl ˈbæriəz ənd taɪm kənˈstreɪnts/ — sounds like **fy-NAN-shul BAR-ee-urz und TYM kun-STRAYNTS**
-37. **schools and universities** | /skuːlz ənd ˌjuːnɪˈvɜːsətiz/ — sounds like **SKOOLZ und yoo-nih-VUR-suh-teez**
+28. **a valuable component of quality education** | /ə ˈvæljʊəbəl kəmˈpəʊnənt əv ˈkwɒləti ˌedjʊˈkeɪʃən/ — sounds like **uh VAL-yoo-uh-bul kum-POH-nunt uv KWOL-uh-tee ej-oo-KAY-shun**
+29. **students** | /ˈstjuːdənts/ — sounds like **STOO-dunts**
+30. **learners** | /ˈlɜːnəz/ — sounds like **LUR-nurz**
+31. **cultural awareness and cross-cultural understanding** | /ˈkʌltʃərəl əˈweənəs ənd krɒs ˈkʌltʃərəl ˌʌndəˈstændɪŋ/ — sounds like **KUL-chur-ul uh-WAIR-nus und KROSS KUL-chur-ul un-dur-STAN-ding**
+32. **real-world experience and practical learning** | /rɪəl wɜːld ɪkˈspɪəriəns ənd ˈpræktɪkəl ˈlɜːnɪŋ/ — sounds like **REEL WURLD ik-SPEER-ee-uns und PRAK-tih-kul LUR-ning**
+33. **global perspective and personal growth** | /ˈɡləʊbəl pəˈspektɪv ənd ˈpɜːsənəl ɡrəʊθ/ — sounds like **GLOH-bul per-SPEK-tiv und PUR-sun-ul GROHTH**
+34. **education research** | /ˌedjʊˈkeɪʃən rɪˈsɜːtʃ/ — sounds like **ej-oo-KAY-shun rih-SURCH**
+35. **enhanced critical thinking and deeper knowledge** | /ɪnˈhɑːnst ˈkrɪtɪkəl ˈθɪŋkɪŋ ənd ˈdiːpə ˈnɒlɪdʒ/ — sounds like **in-HAHNST KRIT-ih-kul THINK-ing und DEE-pur NOL-ij**
+36. **local education** | /ˈləʊkəl ˌedjʊˈkeɪʃən/ — sounds like **LOH-kul ej-oo-KAY-shun**
+37. **studying locally** | /ˈstʌdiɪŋ ˈləʊkəli/ — sounds like **STUD-ee-ing LOH-kul-ee**
+38. **local universities and established institutions** | /ˈləʊkəl ˌjuːnɪˈvɜːsətiz ənd ɪˈstæblɪʃt ˌɪnstɪˈtjuːʃənz/ — sounds like **LOH-kul yoo-nih-VUR-suh-teez und ih-STAB-lisht in-stih-TOO-shunz**
+39. **quality learning in a familiar environment** | /ˈkwɒləti ˈlɜːnɪŋ ɪn ə fəˈmɪliə ɪnˈvaɪrənmənt/ — sounds like **KWOL-uh-tee LUR-ning in uh fuh-MIL-ee-ur in-VY-run-ment**
+40. **learning experts** | /ˈlɜːnɪŋ ˈekspɜːts/ — sounds like **LUR-ning EK-spurts**
+41. **academic success and scholarly expertise** | /ˌækəˈdemɪk səkˈses ənd ˈskɒləli ˌekspɜːˈtiːz/ — sounds like **ak-uh-DEM-ik suk-SES und SKOL-ur-lee ek-spur-TEEZ**
+42. **local education and dedicated study** | /ˈləʊkəl ˌedjʊˈkeɪʃən ənd ˈdedɪkeɪtɪd ˈstʌdi/ — sounds like **LOH-kul ej-oo-KAY-shun und DED-ih-kay-tid STUD-ee**
+43. **students and educators** | /ˈstjuːdənts ənd ˈedjʊkeɪtəz/ — sounds like **STOO-dunts und EJ-oo-kay-turz**
 
 ---
 
@@ -90,18 +96,18 @@
 59. **television** | /ˈtelɪvɪʒən/ — sounds like **TEL-ih-vizh-un**
 60. **viewers** | /ˈvjuːəz/ — sounds like **VYOO-urz**
 61. **people** | /ˈpiːpəl/ — sounds like **PEE-pul**
-62. **entertainment and stress relief** | /ˌentəˈteɪnmənt ənd stres rɪˈliːf/ — sounds like **en-tur-TAYN-ment und STRESS rih-LEEF**
-63. **educational programs and learning opportunities** | /ˌedjʊˈkeɪʃənəl ˈprəʊɡræmz ənd ˈlɜːnɪŋ ˌɒpəˈtjuːnətiz/ — sounds like **ej-oo-KAY-shun-ul PROH-gramz und LUR-ning op-ur-TOO-nih-teez**
-64. **relaxation and useful knowledge** | /ˌriːlækˈseɪʃən ənd ˈjuːsfʊl ˈnɒlɪdʒ/ — sounds like **ree-lak-SAY-shun und YOOS-ful NOL-ij**
-65. **media studies** | /ˈmiːdiə ˈstʌdiz/ — sounds like **MEE-dee-uh STUD-eez**
-66. **better mood and increased awareness** | /ˈbetə muːd ənd ɪnˈkriːst əˈweənəs/ — sounds like **BET-ur MOOD und in-KREEST uh-WAIR-nus**
-67. **watching television** | /ˈwɒtʃɪŋ ˈtelɪvɪʒən/ — sounds like **WOTCH-ing TEL-ih-vizh-un**
-68. **too much screen time and inactive lifestyle** | /tuː mʌtʃ skriːn taɪm ənd ɪnˈæktɪv ˈlaɪfstaɪl/ — sounds like **TOO MUCH SKREEN TYM und in-AK-tiv LYF-styl**
-69. **health issues and less social contact** | /helθ ˈɪʃuːz ənd les ˈsəʊʃəl ˈkɒntækt/ — sounds like **HELTH ISH-ooz und LES SOH-shul KON-takt**
-70. **health researchers** | /helθ rɪˈsɜːtʃəz/ — sounds like **HELTH rih-SUR-churz**
-71. **poor physical health and isolation** | /pɔː ˈfɪzɪkəl helθ ənd ˌaɪsəˈleɪʃən/ — sounds like **POR FIZ-ih-kul HELTH und eye-suh-LAY-shun**
-72. **excessive television watching** | /ɪkˈsesɪv ˈtelɪvɪʒən ˈwɒtʃɪŋ/ — sounds like **ik-SES-iv TEL-ih-vizh-un WOTCH-ing**
-73. **families and viewers** | /ˈfæməliz ənd ˈvjuːəz/ — sounds like **FAM-uh-leez und VYOO-urz**
+65. **relaxation and stress relief** | /ˌriːlækˈseɪʃən ənd stres rɪˈliːf/ — sounds like **ree-lak-SAY-shun und STRESS rih-LEEF**
+66. **educational programs and learning opportunities** | /ˌedjʊˈkeɪʃənəl ˈprəʊɡræmz ənd ˈlɜːnɪŋ ˌɒpəˈtjuːnətiz/ — sounds like **ej-oo-KAY-shun-ul PROH-gramz und LUR-ning op-ur-TOO-nih-teez**
+67. **entertainment and useful knowledge** | /ˌentəˈteɪnmənt ənd ˈjuːsfʊl ˈnɒlɪdʒ/ — sounds like **en-tur-TAYN-ment und YOOS-ful NOL-ij**
+68. **media studies** | /ˈmiːdiə ˈstʌdiz/ — sounds like **MEE-dee-uh STUD-eez**
+69. **better mood and a sense of companionship** | /ˈbetə muːd ənd ə sens əv kəmˈpæniənʃɪp/ — sounds like **BET-ur MOOD und uh SENS uv kum-PAN-yun-ship**
+70. **watching television** | /ˈwɒtʃɪŋ ˈtelɪvɪʒən/ — sounds like **WOTCH-ing TEL-ih-vizh-un**
+71. **too much screen time and inactive lifestyle** | /tuː mʌtʃ skriːn taɪm ənd ɪnˈæktɪv ˈlaɪfstaɪl/ — sounds like **TOO MUCH SKREEN TYM und in-AK-tiv LYF-styl**
+72. **health issues and less social contact** | /helθ ˈɪʃuːz ənd les ˈsəʊʃəl ˈkɒntækt/ — sounds like **HELTH ISH-ooz und LES SOH-shul KON-takt**
+73. **health researchers** | /helθ rɪˈsɜːtʃəz/ — sounds like **HELTH rih-SUR-churz**
+74. **poor physical health and isolation** | /pɔː ˈfɪzɪkəl helθ ənd ˌaɪsəˈleɪʃən/ — sounds like **POR FIZ-ih-kul HELTH und eye-suh-LAY-shun**
+75. **excessive television watching** | /ɪkˈsesɪv ˈtelɪvɪʒən ˈwɒtʃɪŋ/ — sounds like **ik-SES-iv TEL-ih-vizh-un WOTCH-ing**
+76. **families and viewers** | /ˈfæməliz ənd ˈvjuːəz/ — sounds like **FAM-uh-leez und VYOO-urz**
 
 ---
 
@@ -129,20 +135,23 @@
 
 ## Example 7: Experiential Learning
 
-91. **experiential learning** | /ɪkˌspɪəriˈenʃəl ˈlɜːnɪŋ/ — sounds like **ik-speer-ee-EN-shul LUR-ning**
-92. **schools** | /skuːlz/ — sounds like **SKOOLZ**
-93. **practical skills and direct application** | /ˈpræktɪkəl skɪlz ənd dəˈrekt ˌæplɪˈkeɪʃən/ — sounds like **PRAK-tih-kul SKILZ und dih-REKT ap-lih-KAY-shun**
-94. **hands-on practice and active engagement** | /hændz ɒn ˈpræktɪs ənd ˈæktɪv ɪnˈɡeɪdʒmənt/ — sounds like **HANDZ ON PRAK-tis und AK-tiv in-GAYJ-ment**
-95. **real-world knowledge and improved memory** | /rɪəl wɜːld ˈnɒlɪdʒ ənd ɪmˈpruːvd ˈmeməri/ — sounds like **REEL WURLD NOL-ij und im-PROOVD MEM-ur-ee**
-96. **education studies** | /ˌedjʊˈkeɪʃən ˈstʌdiz/ — sounds like **ej-oo-KAY-shun STUD-eez**
-97. **better learning and higher motivation** | /ˈbetə ˈlɜːnɪŋ ənd ˈhaɪə ˌməʊtɪˈveɪʃən/ — sounds like **BET-ur LUR-ning und HY-ur moh-tih-VAY-shun**
-98. **using experiential learning methods** | /ˈjuːzɪŋ ɪkˌspɪəriˈenʃəl ˈlɜːnɪŋ ˈmeθədz/ — sounds like **YOO-zing ik-speer-ee-EN-shul LUR-ning METH-udz**
-99. **time needed and higher costs** | /taɪm ˈniːdɪd ənd ˈhaɪə kɒsts/ — sounds like **TYM NEE-did und HY-ur KOSTS**
-100. **less content and budget limits** | /les ˈkɒntent ənd ˈbʌdʒɪt ˈlɪmɪts/ — sounds like **LES KON-tent und BUJ-it LIM-its**
-101. **teaching experts** | /ˈtiːtʃɪŋ ˈekspɜːts/ — sounds like **TEECH-ing EK-spurts**
-102. **budget limits and time issues** | /ˈbʌdʒɪt ˈlɪmɪts ənd taɪm ˈɪʃuːz/ — sounds like **BUJ-it LIM-its und TYM ISH-ooz**
-103. **implementing experiential learning** | /ˈɪmplɪmentɪŋ ɪkˌspɪəriˈenʃəl ˈlɜːnɪŋ/ — sounds like **IM-plih-men-ting ik-speer-ee-EN-shul LUR-ning**
-104. **schools and educators** | /skuːlz ənd ˈedjʊkeɪtəz/ — sounds like **SKOOLZ und EJ-oo-kay-turz**
+94. **experiential learning** | /ɪkˌspɪəriˈenʃəl ˈlɜːnɪŋ/ — sounds like **ik-speer-ee-EN-shul LUR-ning**
+95. **high school and college students** | /haɪ skuːl ənd ˈkɒlɪdʒ ˈstjuːdənts/ — sounds like **HY SKOOL und KOL-ij STOO-dunts**
+96. **learners** | /ˈlɜːnəz/ — sounds like **LUR-nurz**
+97. **practical skills and direct application** | /ˈpræktɪkəl skɪlz ənd dəˈrekt ˌæplɪˈkeɪʃən/ — sounds like **PRAK-tih-kul SKILZ und dih-REKT ap-lih-KAY-shun**
+98. **hands-on practice and active engagement** | /hændz ɒn ˈpræktɪs ənd ˈæktɪv ɪnˈɡeɪdʒmənt/ — sounds like **HANDZ ON PRAK-tis und AK-tiv in-GAYJ-ment**
+99. **real-world knowledge and higher engagement** | /rɪəl wɜːld ˈnɒlɪdʒ ənd ˈhaɪə ɪnˈɡeɪdʒmənt/ — sounds like **REEL WURLD NOL-ij und HY-ur in-GAYJ-ment**
+100. **education studies** | /ˌedjʊˈkeɪʃən ˈstʌdiz/ — sounds like **ej-oo-KAY-shun STUD-eez**
+101. **better learning and stronger motivation** | /ˈbetə ˈlɜːnɪŋ ənd ˈstrɒŋɡə ˌməʊtɪˈveɪʃən/ — sounds like **BET-ur LUR-ning und STRONG-ur moh-tih-VAY-shun**
+102. **using experiential learning methods** | /ˈjuːzɪŋ ɪkˌspɪəriˈenʃəl ˈlɜːnɪŋ ˈmeθədz/ — sounds like **YOO-zing ik-speer-ee-EN-shul LUR-ning METH-udz**
+103. **traditional teaching** | /trəˈdɪʃənəl ˈtiːtʃɪŋ/ — sounds like **truh-DISH-un-ul TEECH-ing**
+104. **structured content and clear assessment** | /ˈstrʌktʃəd ˈkɒntent ənd klɪə əˈsesmənt/ — sounds like **STRUK-churd KON-tent und KLEER uh-SES-ment**
+105. **proven methods and systematic learning** | /ˈpruːvən ˈmeθədz ənd ˌsɪstəˈmætɪk ˈlɜːnɪŋ/ — sounds like **PROO-vun METH-udz und sis-tuh-MAT-ik LUR-ning**
+106. **teaching researchers** | /ˈtiːtʃɪŋ rɪˈsɜːtʃəz/ — sounds like **TEECH-ing rih-SUR-churz**
+107. **organized lessons and formal instruction** | /ˈɔːɡənaɪzd ˈlesənz ənd ˈfɔːməl ɪnˈstrʌkʃən/ — sounds like **OR-gun-yzd LES-unz und FOR-mul in-STRUK-shun**
+108. **traditional classroom approaches** | /trəˈdɪʃənəl ˈklɑːsruːm əˈprəʊtʃɪz/ — sounds like **truh-DISH-un-ul KLAHS-room uh-PROH-chiz**
+109. **high school and college** | /haɪ skuːl ənd ˈkɒlɪdʒ/ — sounds like **HY SKOOL und KOL-ij**
+110. **high schools and universities** | /haɪ skuːlz ənd ˌjuːnɪˈvɜːsətiz/ — sounds like **HY SKOOLZ und yoo-nih-VUR-suh-teez**
 
 ---
 
@@ -235,7 +244,7 @@
 169. **work-life balance** | /wɜːk laɪf ˈbæləns/ — sounds like **WURK LYF BAL-uns**
 170. **highly important** | /ˈhaɪli ɪmˈpɔːtənt/ — sounds like **HY-lee im-POR-tunt**
 171. **mental health and emotional stability** | /ˈmentəl helθ ənd ɪˈməʊʃənəl stəˈbɪləti/ — sounds like **MEN-tul HELTH und ih-MOH-shun-ul stuh-BIL-uh-tee**
-172. **family time and personal relationships** | /ˈfæməli taɪm ənd ˈpɜːsənəl rɪˈleɪʃənʃɪps/ — sounds like **FAM-uh-lee TYM und PUR-sun-ul rih-LAY-shun-ships**
+172. **family time and leisure activities** | /ˈfæməli taɪm ənd ˈleʒə ækˈtɪvətiz/ — sounds like **FAM-uh-lee TYM und LEZH-ur ak-TIV-uh-teez**
 173. **personal happiness and reduced stress** | /ˈpɜːsənəl ˈhæpɪnəs ənd rɪˈdjuːst stres/ — sounds like **PUR-sun-ul HAP-ih-nus und rih-DYOOST STRESS**
 174. **workplace research** | /ˈwɜːkpleɪs rɪˈsɜːtʃ/ — sounds like **WURK-plays rih-SURCH**
 175. **better health and improved satisfaction** | /ˈbetə helθ ənd ɪmˈpruːvd ˌsætɪsˈfækʃən/ — sounds like **BET-ur HELTH und im-PROOVD sat-is-FAK-shun**
@@ -269,8 +278,8 @@
 
 ## Example 14: Preserving Historic Buildings
 
-196. **preserving historic buildings** | /prɪˈzɜːvɪŋ hɪˈstɒrɪk ˈbɪldɪŋz/ — sounds like **prih-ZUR-ving hih-STOR-ik BIL-dingz**
-197. **communities** | /kəˈmjuːnətiz/ — sounds like **kuh-MYOO-nuh-teez**
+199. **preserving beautiful buildings of the past** | /prɪˈzɜːvɪŋ ˈbjuːtɪfʊl ˈbɪldɪŋz əv ðə pɑːst/ — sounds like **prih-ZUR-ving BYOO-tih-ful BIL-dingz uv thuh PAHST**
+200. **preserving historic buildings** | /prɪˈzɜːvɪŋ hɪˈstɒrɪk ˈbɪldɪŋz/ — sounds like **prih-ZUR-ving hih-STOR-ik BIL-dingz**
 198. **cultural identity and shared heritage** | /ˈkʌltʃərəl aɪˈdentəti ənd ʃeəd ˈherɪtɪdʒ/ — sounds like **KUL-chur-ul eye-DEN-tuh-tee und SHAIRD HER-ih-tij**
 199. **historic buildings** | /hɪˈstɒrɪk ˈbɪldɪŋz/ — sounds like **hih-STOR-ik BIL-dingz**
 200. **tourism income and economic benefits** | /ˈtʊərɪzəm ˈɪnkʌm ənd ˌiːkəˈnɒmɪk ˈbenɪfɪts/ — sounds like **TOOR-iz-um IN-kum und ee-kuh-NOM-ik BEN-ih-fits**
@@ -290,7 +299,7 @@
 
 ## Example 15: Employee Decision Making
 
-212. **employee participation in decision making** | /ɪmˈplɔɪiː pɑːˌtɪsɪˈpeɪʃən ɪn dɪˈsɪʒən ˈmeɪkɪŋ/ — sounds like **im-PLOY-ee par-tis-ih-PAY-shun in dih-SIZH-un MAY-king**
+212. **employee participation in decision-making** | /ɪmˈplɔɪiː pɑːˌtɪsɪˈpeɪʃən ɪn dɪˈsɪʒən ˈmeɪkɪŋ/ — sounds like **im-PLOY-ee par-tis-ih-PAY-shun in dih-SIZH-un MAY-king**
 213. **employees** | /ɪmˈplɔɪiːz/ — sounds like **im-ploy-EEZ**
 214. **companies** | /ˈkʌmpəniz/ — sounds like **KUM-puh-neez**
 215. **higher employee loyalty** | /ˈhaɪə ɪmˈplɔɪiː ˈlɔɪəlti/ — sounds like **HY-ur im-PLOY-ee LOY-ul-tee**

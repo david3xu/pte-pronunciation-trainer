@@ -144,6 +144,12 @@ export const AppContent: React.FC = () => {
           );
           setCurrentSessionId(sessionId);
           console.log('[App] Started practice session:', sessionId);
+
+          // Auto-start playback if autoPlay setting is enabled
+          if (settings.autoPlay && items.length > 0) {
+            console.log('[App] Auto-starting playback on initial load');
+            audio.startAutoPlay();
+          }
         } catch (error) {
           console.error('[App] Failed to start session:', error);
           // Non-blocking: app continues to work even if session tracking fails

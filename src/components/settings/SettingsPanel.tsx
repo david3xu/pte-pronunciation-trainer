@@ -6,8 +6,8 @@
  */
 
 import {
-  Cross2Icon,
-  GearIcon
+    Cross2Icon,
+    GearIcon
 } from '@radix-ui/react-icons';
 import { Badge, Button, Card, Flex, Select, Slider, Switch, Tabs, Text } from '@radix-ui/themes';
 import React, { useMemo } from 'react';
@@ -116,6 +116,12 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
       if (difficultyFilter !== 'all') {
         filterByDifficulty(difficultyFilter);
         console.log(`[SettingsPanel] Applied ${difficultyFilter} filter to ${bookId}`);
+      }
+
+      // Auto-start playback if autoPlay setting is enabled
+      if (autoPlay && items.length > 0) {
+        console.log('[SettingsPanel] Auto-starting playback');
+        audio.startAutoPlay();
       }
 
       setLoading(false);

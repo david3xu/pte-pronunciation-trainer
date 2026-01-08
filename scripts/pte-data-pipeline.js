@@ -151,6 +151,68 @@ class PTETermsExtractor {
   }
 }
 
+/**
+ * PTESegmentsExtractor - Parses PTE segment markdown files (RS, WFD)
+ */
+class PTESegmentsExtractor {
+  static async extract(filePath, fsModule, options = {}) {
+    if (!fsModule.existsSync(filePath)) {
+      throw new Error(`PTE segments file not found: ${filePath}`);
+    }
+
+    const content = fsModule.readFileSync(filePath, 'utf-8');
+    const lines = content.split('\n');
+    const items = [];
+
+    for (const line of lines) {
+      const trimmedLine = line.trim();
+
+      // Skip empty lines or non-content lines
+      if (!trimmedLine || trimmedLine.startsWith('#')) {
+        continue;
+      }
+
+      const segmentData = this.parsePTESegmentLine(trimmedLine);
+      if (segmentData) {
+        items.push(segmentData);
+      }
+    }
+
+    return items;
+  }
+
+  static parsePTESegmentLine(line) {
+    // Match format: Number. Sentence | /IPA/
+    // Example: 1350. I will be in my office | /aɪ wɪl bi ɪn maɪ ˈɒfɪs/
+    const match = line.match(/^\d+\.\s*(.+?)\s*\|\s*(\/.+\/)\s*$/);
+
+    if (!match) {
+      // Fallback for lines without IPA or different formatting
+      const simpleMatch = line.match(/^\d+\.\s*(.+?)$/);
+      if (simpleMatch) {
+        return {
+          content: {
+            sentence: simpleMatch[1].trim()
+          }
+        };
+      }
+      return null;
+    }
+
+    const sentence = match[1].trim();
+    const ipa = match[2].trim();
+
+    return {
+      content: {
+        sentence: sentence,
+        ipa: {
+          british: ipa
+        }
+      }
+    };
+  }
+}
+
 // ==========================================
 // PIPELINE CLASS
 // ==========================================
@@ -229,20 +291,22 @@ class PTEDataPipeline {
 
     // Auto-discover vocabulary books
     const discoveredBooks = await this.discoverVocabularyBooks();
-    console.log(`   🔎 Discovered ${discoveredBooks.length} vocabulary books in source directory`);
+    const segmentFiles = await this.discoverSegmentFiles();
+    console.log(`   🔎 Discovered ${discoveredBooks.length} vocabulary books and ${segmentFiles.length} segment files`);
 
     // Merge discovered books with existing registry (avoiding duplicates by ID)
     const existingIds = new Set((this.config.registry || []).map(r => r.id));
     const registry = [
       ...(this.config.registry || []),
-      ...discoveredBooks.filter(book => !existingIds.has(book.id))
+      ...discoveredBooks.filter(book => !existingIds.has(book.id)),
+      ...segmentFiles
     ].filter(Boolean);
 
     if (registry.length > 0) {
       for (const entry of registry) {
         try {
-          // Only support PTETermsExtractor for now in this simplified build script
-          if (entry.extractorType !== 'PTETermsExtractor') {
+          // Support PTETermsExtractor and PTESegmentsExtractor
+          if (entry.extractorType !== 'PTETermsExtractor' && entry.extractorType !== 'PTESegmentsExtractor') {
             console.log(`   ℹ️ Skipping ${entry.id} (extractor ${entry.extractorType} not supported in build script)`);
             continue;
           }
@@ -254,10 +318,17 @@ class PTEDataPipeline {
 
           let terms = [];
           try {
-            terms = await PTETermsExtractor.extract(inputPath, fs, {
-              category: entry.category,
-              source: entry.sourceType
-            });
+            if (entry.extractorType === 'PTESegmentsExtractor') {
+              terms = await PTESegmentsExtractor.extract(inputPath, fs, {
+                category: entry.category,
+                source: entry.sourceType
+              });
+            } else {
+              terms = await PTETermsExtractor.extract(inputPath, fs, {
+                category: entry.category,
+                source: entry.sourceType
+              });
+            }
           } catch (e) {
             console.warn(`   ⚠️  Failed to extract ${entry.id}: ${e.message}`);
             continue;
@@ -373,6 +444,39 @@ class PTEDataPipeline {
     }
 
     return uniqueTerms;
+  }
+
+  /**
+   * Discover segment files (RS, WFD)
+   */
+  async discoverSegmentFiles() {
+    // Hardcoded segments configuration since they are specific files
+    const segments = [
+      {
+        id: 'pte-repeat-sentence-segments',
+        input: 'pte-repeat-sentence-segments.md',
+        output: 'pte-rs-segments-dataset.json',
+        category: 'pte-rs',
+        description: 'PTE Repeat Sentence Segments',
+        sourceType: 'pte-rs-segments',
+        extractorType: 'PTESegmentsExtractor',
+        inputSubdir: 'rs',
+        keepDuplicates: true
+      },
+      {
+        id: 'pte-wfd-segments',
+        input: 'pte-wfd-segments.md',
+        output: 'pte-wfd-segments-dataset.json',
+        category: 'pte-wfd',
+        description: 'PTE Write From Dictation Segments',
+        sourceType: 'pte-wfd-segments',
+        extractorType: 'PTESegmentsExtractor',
+        inputSubdir: 'wfd',
+        keepDuplicates: true
+      }
+    ];
+
+    return segments;
   }
 
   /**

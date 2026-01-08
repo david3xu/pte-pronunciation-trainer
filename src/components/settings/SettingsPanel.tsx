@@ -65,7 +65,8 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
 
     try {
       const dataPaths = appConfig.get('data.paths.byMode');
-      const dataPath = dataPaths[bookId] || `/data/processed/${bookId}-vocabulary.json`;
+      const basePath = dataPaths[bookId] || `/data/processed/${bookId}-vocabulary.json`;
+      const dataPath = `${basePath}?t=${new Date().getTime()}`;
       console.log('[SettingsPanel] Loading vocabulary book:', bookId, 'from:', dataPath);
 
       const response = await fetch(dataPath);
@@ -96,7 +97,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
 
       // Transform segment items (RS/WFD segments) to be compatible with WordCard
       // Use 'english' so they display like vocabulary items (no Play Audio button)
-      if (data.items && data.items[0]?.content?.sentence) {
+      if (items.length > 0 && items[0]?.content?.sentence) {
         items = items.map((item: any) => ({
           id: item.id,
           english: item.content.sentence,  // Use 'english' to display like vocabulary

@@ -26,7 +26,19 @@ const PIPELINE_CONFIG = {
   outputFiles: {
     report: 'pte-processing-report.json'
   },
-  registry: [] // Registry is now populated via auto-discovery
+  registry: [
+    {
+      id: 'pte-sgd-vocabulary',
+      input: 'pte-sgd-vocabulary.md',
+      output: 'pte-sgd-vocabulary.json',
+      category: 'pte-sgd-vocabulary', // Matches AppConfig category/id
+      description: 'SGD Vocabulary with IPA',
+      sourceType: 'pte-sgd-vocabulary-with-ipa',
+      extractorType: 'PTETermsExtractor',
+      inputSubdir: 'sgd', // Specify the subdirectory
+      keepDuplicates: true // Keep duplicate terms if they appear in different topics
+    }
+  ]
 };
 
 // ==========================================
@@ -95,15 +107,29 @@ class PTETermsExtractor {
     }
 
     // Parse pronunciation data
-    // Format: /IPA/ — sounds like **PHONETIC**
+    // Format: /IPA/ — sounds like **PHONETIC**  OR just /IPA/
     const parsePronunciation = (text) => {
       if (!text) return null;
-      const match = text.match(/^\/(.+?)\/\s*—\s*(?:sounds\s+like\s+)?\*\*(.+?)\*\*/);
-      if (!match) return null;
-      return {
-        ipa: match[1].trim(),
-        phonetic: match[2].trim()
-      };
+
+      // Try full format with phonetic spelling
+      const fullMatch = text.match(/^\/(.+?)\/\s*—\s*(?:sounds\s+like\s+)?\*\*(.+?)\*\*/);
+      if (fullMatch) {
+        return {
+          ipa: fullMatch[1].trim(),
+          phonetic: fullMatch[2].trim()
+        };
+      }
+
+      // Try IPA-only format
+      const ipaMatch = text.match(/^\/(.+?)\/?\s*$/); // Allow optional trailing slash
+      if (ipaMatch) {
+        return {
+          ipa: ipaMatch[1].trim(),
+          phonetic: '' // No phonetic spelling available
+        };
+      }
+
+      return null;
     };
 
     const firstData = parsePronunciation(firstPronunciation);

@@ -65,6 +65,7 @@ export class AppConfig {
               'pte-rs-segments': 'data/processed/pte-rs-segments-dataset.json',
               'pte-wfd-segments': 'data/processed/pte-wfd-segments-dataset.json',
               'pte-sgd-vocabulary': 'data/processed/pte-sgd-vocabulary.json',
+              'pte-rl-vocabulary': 'data/processed/pte-rl-vocabulary.json',
 
               // Practice modes
               'rs': 'data/processed/pte-repeat-sentence.json',
@@ -107,6 +108,7 @@ export class AppConfig {
           { id: 'pte-rs-segments', name: 'RS Segments Shadow', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-wfd-segments', name: 'WFD Segments Shadow', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-sgd-vocabulary', name: 'SGD Vocabulary', category: 'vocabulary', difficulty: 'normal' },
+          { id: 'pte-rl-vocabulary', name: 'RL Vocabulary', category: 'vocabulary', difficulty: 'normal' },
 
           // Practice modes (3 total)
           { id: 'rs', name: 'Repeat Sentence', category: 'practice', description: '620 practice sentences' },
@@ -379,6 +381,17 @@ export class AppConfig {
             dataType: 'vocabulary',
             extractorType: 'PTETermsExtractor',
             inputSubdir: 'sgd'
+          },
+          {
+            id: 'pte-rl-vocabulary',
+            input: 'rl/pte-rl-vocabulary.md',
+            output: 'pte-rl-vocabulary.json',
+            category: 'vocabulary',
+            description: 'RL Vocabulary with IPA',
+            sourceType: 'pte-rl-vocabulary-with-ipa',
+            dataType: 'vocabulary',
+            extractorType: 'PTETermsExtractor',
+            inputSubdir: 'rl'
           },
           // ... Add more registry entries as needed during migration
         ],

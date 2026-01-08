@@ -59,7 +59,7 @@ According to the first speaker, he begin by explaining **super busy** and **orie
 
 Comparing to this, the second speaker begin by explaining **event planning** and **back to the community**. Following this, **pretty boring** and **standing for long periods** were also mentioned. After that, the second speaker highlighted about **library** and **problem solving**. Then, he also agree with **analytical** and **job pursue**.
 
-On the other hand, the third speaker begin by explaining **energy and time** and **interacting with animals**. Following this, **emotionally difficult** and **much better at multitasking** were also mentioned. After that, the third speaker highlighted about **stay calm** and **teamwork**. Then, he also agree with **taking care** and **next semester**.
+On the other hand, the third speaker begin by explaining **energy and time** and **interacting with animals**. Following this, **emotionally difficult** and **much better at multiple tasks** were also mentioned. After that, the third speaker highlighted about **stay calm** and **teamwork**. Then, he also agree with **taking care** and **next semester**.
 
 ### Key Vocabulary Used
 
@@ -89,7 +89,7 @@ On the other hand, the third speaker begin by explaining **energy and time** and
 1.  energy and time
 2.  interacting with animals
 3.  emotionally difficult
-4.  much better at multitasking
+4.  much better at multiple tasks
 5.  stay calm
 6.  teamwork
 7.  taking care

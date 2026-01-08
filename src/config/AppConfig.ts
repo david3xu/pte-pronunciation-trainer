@@ -64,6 +64,7 @@ export class AppConfig {
               'pte-di-slots': 'data/processed/pte-di-slots-collection.json',
               'pte-rs-segments': 'data/processed/pte-rs-segments-dataset.json',
               'pte-wfd-segments': 'data/processed/pte-wfd-segments-dataset.json',
+              'pte-sgd-vocabulary': 'data/processed/pte-sgd-vocabulary.json',
 
               // Practice modes
               'rs': 'data/processed/pte-repeat-sentence.json',
@@ -105,6 +106,7 @@ export class AppConfig {
           { id: 'pte-di-slots', name: 'DI Slots Collection', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-rs-segments', name: 'RS Segments Shadow', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-wfd-segments', name: 'WFD Segments Shadow', category: 'vocabulary', difficulty: 'normal' },
+          { id: 'pte-sgd-vocabulary', name: 'SGD Vocabulary', category: 'vocabulary', difficulty: 'normal' },
 
           // Practice modes (3 total)
           { id: 'rs', name: 'Repeat Sentence', category: 'practice', description: '620 practice sentences' },
@@ -366,6 +368,17 @@ export class AppConfig {
             dataType: 'vocabulary',
             extractorType: 'PTETermsExtractor',
             inputSubdir: 'vocabs'
+          },
+          {
+            id: 'pte-sgd-vocabulary',
+            input: 'sgd/pte-sgd-vocabulary.md',
+            output: 'pte-sgd-vocabulary.json',
+            category: 'vocabulary',
+            description: 'SGD Vocabulary with IPA',
+            sourceType: 'pte-sgd-vocabulary-with-ipa',
+            dataType: 'vocabulary',
+            extractorType: 'PTETermsExtractor',
+            inputSubdir: 'sgd'
           },
           // ... Add more registry entries as needed during migration
         ],

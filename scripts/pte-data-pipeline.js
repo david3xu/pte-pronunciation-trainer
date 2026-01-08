@@ -37,6 +37,17 @@ const PIPELINE_CONFIG = {
       extractorType: 'PTETermsExtractor',
       inputSubdir: 'sgd', // Specify the subdirectory
       keepDuplicates: true // Keep duplicate terms if they appear in different topics
+    },
+    {
+      id: 'pte-rl-vocabulary',
+      input: 'pte-rl-vocabulary.md',
+      output: 'pte-rl-vocabulary.json',
+      category: 'pte-rl-vocabulary',
+      description: 'RL Vocabulary with IPA',
+      sourceType: 'pte-rl-vocabulary-with-ipa',
+      extractorType: 'PTETermsExtractor',
+      inputSubdir: 'rl',
+      keepDuplicates: true
     }
   ]
 };

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-01-08T04:49:56.911Z",
-    "totalTerms": 125,
+    "generated": "2026-01-08T07:42:43.880Z",
+    "totalTerms": 400,
     "source": "pte-sgd-vocabulary-with-ipa",
     "description": "SGD Vocabulary with IPA",
     "version": "1.0",
@@ -2009,6 +2009,4406 @@
         }
       },
       "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "Pros and Cons of Online Classes",
+      "pronunciation": {
+        "british": {
+          "ipa": "prəʊz ənd kɒnz əv ˈɒnˌlaɪn ˈklɑːsɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "prəʊz ənd kɒnz əv ˈɒnˌlaɪn ˈklɑːsɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "can't stand online classes",
+      "pronunciation": {
+        "british": {
+          "ipa": "kɑːnt stænd ˈɒnˌlaɪn ˈklɑːsɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kɑːnt stænd ˈɒnˌlaɪn ˈklɑːsɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "getting distracted",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈgetɪŋ dɪˈstræktɪd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈgetɪŋ dɪˈstræktɪd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "missing content",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmɪsɪŋ ˈkɒntent",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈmɪsɪŋ ˈkɒntent",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "raise my hands",
+      "pronunciation": {
+        "british": {
+          "ipa": "reɪz maɪ hændz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "reɪz maɪ hændz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "group discussion",
+      "pronunciation": {
+        "british": {
+          "ipa": "gruːp dɪˈskʌʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "gruːp dɪˈskʌʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "adding to the discussion",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈædɪŋ tə ðə dɪˈskʌʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈædɪŋ tə ðə dɪˈskʌʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a hybrid system",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈhaɪbrɪd ˈsɪstəm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈhaɪbrɪd ˈsɪstəm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "balance",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbæləns",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbæləns",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "prefer online learning",
+      "pronunciation": {
+        "british": {
+          "ipa": "prɪˈfɜː ˈɒnˌlaɪn ˈlɜːnɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "prɪˈfɜː ˈɒnˌlaɪn ˈlɜːnɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "no spending money",
+      "pronunciation": {
+        "british": {
+          "ipa": "nəʊ ˈspendɪŋ ˈmʌni",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "nəʊ ˈspendɪŋ ˈmʌni",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "taking notes",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈteɪkɪŋ nəʊts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈteɪkɪŋ nəʊts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "recorded lectures",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈkɔːdɪd ˈlektʃəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rɪˈkɔːdɪd ˈlektʃəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "flexibility",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌfleksəˈbɪləti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌfleksəˈbɪləti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "comfortable room",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌmftəbl ruːm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkʌmftəbl ruːm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "social pressure",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsəʊʃl ˈpreʃə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsəʊʃl ˈpreʃə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "two hours of commuting",
+      "pronunciation": {
+        "british": {
+          "ipa": "tuː ˈaʊəz əv kəˈmjuːtɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "tuː ˈaʊəz əv kəˈmjuːtɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "campus experience",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkæmpəs ɪkˈspɪəriəns",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkæmpəs ɪkˈspɪəriəns",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "make friends",
+      "pronunciation": {
+        "british": {
+          "ipa": "meɪk frendz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "meɪk frendz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "moved to topic",
+      "pronunciation": {
+        "british": {
+          "ipa": "muːvd tə ˈtɒpɪk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "muːvd tə ˈtɒpɪk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "face-to-face interactions",
+      "pronunciation": {
+        "british": {
+          "ipa": "feɪs tə feɪs ˌɪntərˈækʃnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "feɪs tə feɪs ˌɪntərˈækʃnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "understand the material",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌʌndəˈstænd ðə məˈtɪəriəl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌʌndəˈstænd ðə məˈtɪəriəl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "learning style",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlɜːnɪŋ staɪl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈlɜːnɪŋ staɪl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "take hybrid",
+      "pronunciation": {
+        "british": {
+          "ipa": "teɪk ˈhaɪbrɪd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "teɪk ˈhaɪbrɪd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "education",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌedʒuˈkeɪʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌedʒuˈkeɪʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "Mathematics Department's Ten-Year Anniversary",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌmæθəˈmætɪks dɪˈpɑːtmənts ten jɪər ˌænɪˈvɜːsəri",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌmæθəˈmætɪks dɪˈpɑːtmənts ten jɪər ˌænɪˈvɜːsəri",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "downtown",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdaʊntaʊn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈdaʊntaʊn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "around the city",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈraʊnd ðə ˈsɪti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈraʊnd ðə ˈsɪti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "atmosphere",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈætməsfɪə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈætməsfɪə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "enjoyable",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈdʒɔɪəbl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪnˈdʒɔɪəbl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a private room",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈpraɪvət ruːm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈpraɪvət ruːm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "mathematics building restaurant",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌmæθəˈmætɪks ˈbɪldɪŋ ˈrestrɒnt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌmæθəˈmætɪks ˈbɪldɪŋ ˈrestrɒnt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "graduated early years",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈgrædʒueɪtɪd ˈɜːli jɪəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈgrædʒueɪtɪd ˈɜːli jɪəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "mathematics community",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌmæθəˈmætɪks kəˈmjuːnəti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌmæθəˈmætɪks kəˈmjuːnəti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "popularity",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌpɒpjəˈlærəti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌpɒpjəˈlærəti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "quite expensive",
+      "pronunciation": {
+        "british": {
+          "ipa": "kwaɪt ɪkˈspensɪv",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kwaɪt ɪkˈspensɪv",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "so far from campus",
+      "pronunciation": {
+        "british": {
+          "ipa": "səʊ fɑː frəm ˈkæmpəs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "səʊ fɑː frəm ˈkæmpəs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "budget-friendly",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbʌdʒɪt ˈfrendli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbʌdʒɪt ˈfrendli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "opportunity",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌɒpəˈtjuːnəti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌɒpəˈtjuːnəti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "time",
+      "pronunciation": {
+        "british": {
+          "ipa": "taɪm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "taɪm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "socialize",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsəʊʃəlaɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsəʊʃəlaɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "faculty members",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfæklti ˈmembəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfæklti ˈmembəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "business building dining room",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbɪznəs ˈbɪldɪŋ ˈdaɪnɪŋ ruːm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbɪznəs ˈbɪldɪŋ ˈdaɪnɪŋ ruːm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a modern style",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈmɒdn staɪl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈmɒdn staɪl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "the natural lighting",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈnætʃrəl ˈlaɪtɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈnætʃrəl ˈlaɪtɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "bring a partner",
+      "pronunciation": {
+        "british": {
+          "ipa": "brɪŋ ə ˈpɑːtnə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "brɪŋ ə ˈpɑːtnə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a clear policy",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə klɪə ˈpɒləsi",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə klɪə ˈpɒləsi",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "room's capacity",
+      "pronunciation": {
+        "british": {
+          "ipa": "ruːmz kəˈpæsəti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ruːmz kəˈpæsəti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "book the dining room",
+      "pronunciation": {
+        "british": {
+          "ipa": "bʊk ðə ˈdaɪnɪŋ ruːm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "bʊk ðə ˈdaɪnɪŋ ruːm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "the guest list",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə gest lɪst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə gest lɪst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "Finding a Job After Graduation",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfaɪndɪŋ ə dʒɒb ˈɑːftə ˌgrædʒuˈeɪʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfaɪndɪŋ ə dʒɒb ˈɑːftə ˌgrædʒuˈeɪʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "job opportunities",
+      "pronunciation": {
+        "british": {
+          "ipa": "dʒɒb ˌɒpəˈtjuːnətiz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "dʒɒb ˌɒpəˈtjuːnətiz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a big company",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə bɪg ˈkʌmpəni",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə bɪg ˈkʌmpəni",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "professional development",
+      "pronunciation": {
+        "british": {
+          "ipa": "prəˈfeʃənl dɪˈveləpmənt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "prəˈfeʃənl dɪˈveləpmənt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "foundation",
+      "pronunciation": {
+        "british": {
+          "ipa": "faʊnˈdeɪʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "faʊnˈdeɪʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "start planning early",
+      "pronunciation": {
+        "british": {
+          "ipa": "stɑːt ˈplænɪŋ ˈɜːli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "stɑːt ˈplænɪŋ ˈɜːli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "what you enjoy",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɒt juː ɪnˈdʒɔɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɒt juː ɪnˈdʒɔɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "what you are good",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɒt juː ɑː gʊd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɒt juː ɑː gʊd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "resources for industry",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈzɔːsɪz fɔː ˈɪndəstri",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rɪˈzɔːsɪz fɔː ˈɪndəstri",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a small charity",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə smɔːl ˈtʃærəti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə smɔːl ˈtʃærəti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "earning a high salary",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɜːnɪŋ ə haɪ ˈsæləri",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɜːnɪŋ ə haɪ ˈsæləri",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "meaningful",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmiːnɪŋfl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈmiːnɪŋfl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "live with my parents",
+      "pronunciation": {
+        "british": {
+          "ipa": "lɪv wɪð maɪ ˈpeərənts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "lɪv wɪð maɪ ˈpeərənts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "keeping open mind",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkiːpɪŋ ˈəʊpən maɪnd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkiːpɪŋ ˈəʊpən maɪnd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "define your future career",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈfaɪn jɔː ˈfjuːtʃə kəˈrɪə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "dɪˈfaɪn jɔː ˈfjuːtʃə kəˈrɪə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "writing cover letter",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈraɪtɪŋ ˈkʌvə ˈletə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈraɪtɪŋ ˈkʌvə ˈletə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "personal story",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpɜːsənl ˈstɔːri",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈpɜːsənl ˈstɔːri",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "clear plans",
+      "pronunciation": {
+        "british": {
+          "ipa": "klɪə plænz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "klɪə plænz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "pursue a postgraduate degree",
+      "pronunciation": {
+        "british": {
+          "ipa": "pəˈsjuː ə ˌpəʊstˈgrædʒuət dɪˈgriː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "pəˈsjuː ə ˌpəʊstˈgrædʒuət dɪˈgriː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "further study",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɜːðə ˈstʌdi",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfɜːðə ˈstʌdi",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "doing research tonight",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈduːɪŋ rɪˈsɜːtʃ təˈnaɪt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈduːɪŋ rɪˈsɜːtʃ təˈnaɪt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "internship",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪntɜːnʃɪp",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɪntɜːnʃɪp",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "figure this alone",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɪgə ðɪs əˈləʊn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfɪgə ðɪs əˈləʊn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a starting point",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈstɑːtɪŋ pɔɪnt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈstɑːtɪŋ pɔɪnt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "ideas",
+      "pronunciation": {
+        "british": {
+          "ipa": "aɪˈdɪəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "aɪˈdɪəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "How to Write Essay",
+      "pronunciation": {
+        "british": {
+          "ipa": "haʊ tə raɪt ˈeseɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "haʊ tə raɪt ˈeseɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "first essay",
+      "pronunciation": {
+        "british": {
+          "ipa": "fɜːst ˈeseɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "fɜːst ˈeseɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "no matter how random",
+      "pronunciation": {
+        "british": {
+          "ipa": "nəʊ ˈmætə haʊ ˈrændəm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "nəʊ ˈmætə haʊ ˈrændəm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "organizing them",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɔːgənaɪzɪŋ ðəm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɔːgənaɪzɪŋ ðəm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "make sense",
+      "pronunciation": {
+        "british": {
+          "ipa": "meɪk sens",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "meɪk sens",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a group session",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə gruːp ˈseʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə gruːp ˈseʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "plan",
+      "pronunciation": {
+        "british": {
+          "ipa": "plæn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "plæn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "shape your points",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʃeɪp jɔː pɔɪnts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ʃeɪp jɔː pɔɪnts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "give you a boost",
+      "pronunciation": {
+        "british": {
+          "ipa": "gɪv juː ə buːst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "gɪv juː ə buːst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "write it at this weekend",
+      "pronunciation": {
+        "british": {
+          "ipa": "raɪt ɪt ət ðɪs ˌwiːkˈend",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "raɪt ɪt ət ðɪs ˌwiːkˈend",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "no problem",
+      "pronunciation": {
+        "british": {
+          "ipa": "nəʊ ˈprɒbləm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "nəʊ ˈprɒbləm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "too much pressure",
+      "pronunciation": {
+        "british": {
+          "ipa": "tuː mʌtʃ ˈpreʃə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "tuː mʌtʃ ˈpreʃə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "relaxing",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈlæksɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rɪˈlæksɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "use paper and pen",
+      "pronunciation": {
+        "british": {
+          "ipa": "juːz ˈpeɪpə ənd pen",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "juːz ˈpeɪpə ənd pen",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "no deadline",
+      "pronunciation": {
+        "british": {
+          "ipa": "nəʊ ˈdedlaɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "nəʊ ˈdedlaɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "the main body",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə meɪn ˈbɒdi",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə meɪn ˈbɒdi",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a much clear idea",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə mʌtʃ klɪə aɪˈdɪə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə mʌtʃ klɪə aɪˈdɪə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "too hard",
+      "pronunciation": {
+        "british": {
+          "ipa": "tuː hɑːd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "tuː hɑːd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "no idea",
+      "pronunciation": {
+        "british": {
+          "ipa": "nəʊ aɪˈdɪə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "nəʊ aɪˈdɪə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "not a single idea",
+      "pronunciation": {
+        "british": {
+          "ipa": "nɒt ə ˈsɪŋgl aɪˈdɪə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "nɒt ə ˈsɪŋgl aɪˈdɪə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a terrible score",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈterəbl skɔː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈterəbl skɔː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a new problem",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə njuː ˈprɒbləm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə njuː ˈprɒbləm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "how to start the intro",
+      "pronunciation": {
+        "british": {
+          "ipa": "haʊ tə stɑːt ði ˈɪntrəʊ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "haʊ tə stɑːt ði ˈɪntrəʊ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "write step by step",
+      "pronunciation": {
+        "british": {
+          "ipa": "raɪt step baɪ step",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "raɪt step baɪ step",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "how to organize my ideas",
+      "pronunciation": {
+        "british": {
+          "ipa": "haʊ tə ˈɔːgənaɪz maɪ aɪˈdɪəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "haʊ tə ˈɔːgənaɪz maɪ aɪˈdɪəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "The Accommodation Options",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði əˌkɒməˈdeɪʃn ˈɒpʃnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ði əˌkɒməˈdeɪʃn ˈɒpʃnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "planning to live",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈplænɪŋ tə lɪv",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈplænɪŋ tə lɪv",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "my options",
+      "pronunciation": {
+        "british": {
+          "ipa": "maɪ ˈɒpʃnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "maɪ ˈɒpʃnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "finding a private flat",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfaɪndɪŋ ə ˈpraɪvət flæt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfaɪndɪŋ ə ˈpraɪvət flæt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "share food",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʃeə fuːd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ʃeə fuːd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "shared kitchen",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʃeəd ˈkɪtʃɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ʃeəd ˈkɪtʃɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "different cultures",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdɪfrənt ˈkʌltʃəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈdɪfrənt ˈkʌltʃəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "traditional dishes",
+      "pronunciation": {
+        "british": {
+          "ipa": "trəˈdɪʃənl ˈdɪʃɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "trəˈdɪʃənl ˈdɪʃɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "great conversations",
+      "pronunciation": {
+        "british": {
+          "ipa": "greɪt ˌkɒnvəˈseɪʃnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "greɪt ˌkɒnvəˈseɪʃnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "convenience",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈviːniəns",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kənˈviːniəns",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a 3 minute walk",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə θriː ˈmɪnɪt wɔːk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə θriː ˈmɪnɪt wɔːk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "study group",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈstʌdi gruːp",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈstʌdi gruːp",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "explain concepts",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪkˈspleɪn ˈkɒnsepts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪkˈspleɪn ˈkɒnsepts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "boost my grades",
+      "pronunciation": {
+        "british": {
+          "ipa": "buːst maɪ greɪdz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "buːst maɪ greɪdz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "academics",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌækəˈdemɪks",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌækəˈdemɪks",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "academic support system",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌækəˈdemɪk səˈpɔːt ˈsɪstəm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌækəˈdemɪk səˈpɔːt ˈsɪstəm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "ideas",
+      "pronunciation": {
+        "british": {
+          "ipa": "aɪˈdɪəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "aɪˈdɪəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "signed a contract",
+      "pronunciation": {
+        "british": {
+          "ipa": "saɪnd ə ˈkɒntrækt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "saɪnd ə ˈkɒntrækt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "apartment",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈpɑːtmənt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈpɑːtmənt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "quiet space",
+      "pronunciation": {
+        "british": {
+          "ipa": "kw aɪət speɪs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kw aɪət speɪs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "load music",
+      "pronunciation": {
+        "british": {
+          "ipa": "ləʊd ˈmjuːzɪk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ləʊd ˈmjuːzɪk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "more expensive",
+      "pronunciation": {
+        "british": {
+          "ipa": "mɔː ɪkˈspensɪv",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "mɔː ɪkˈspensɪv",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "privacy and peace",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈprɪvəsi ənd piːs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈprɪvəsi ənd piːs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "drinking my milk",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdrɪŋkɪŋ maɪ mɪlk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈdrɪŋkɪŋ maɪ mɪlk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "hard to focus",
+      "pronunciation": {
+        "british": {
+          "ipa": "hɑːd tə ˈfəʊkəs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "hɑːd tə ˈfəʊkəs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "A Field Trip",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə fiːld trɪp",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə fiːld trɪp",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "part-time shift conflict",
+      "pronunciation": {
+        "british": {
+          "ipa": "pɑːt taɪm ʃɪft ˈkɒnflɪkt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "pɑːt taɪm ʃɪft ˈkɒnflɪkt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a lot of money",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə lɒt əv ˈmʌni",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə lɒt əv ˈmʌni",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "afford right now",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈfɔːd raɪt naʊ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈfɔːd raɪt naʊ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "an optional one",
+      "pronunciation": {
+        "british": {
+          "ipa": "ən ˈɒpʃənl wʌn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ən ˈɒpʃənl wʌn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a great chance to socialize",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə greɪt tʃɑːns tə ˈsəʊʃəlaɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə greɪt tʃɑːns tə ˈsəʊʃəlaɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "outside my major",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌaʊtˈsaɪd maɪ ˈmeɪdʒə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌaʊtˈsaɪd maɪ ˈmeɪdʒə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "beach",
+      "pronunciation": {
+        "british": {
+          "ipa": "biːtʃ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "biːtʃ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a nice change",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə naɪs tʃeɪndʒ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə naɪs tʃeɪndʒ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "business major",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbɪznəs ˈmeɪdʒə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbɪznəs ˈmeɪdʒə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a hotel by sea",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə həʊˈtel baɪ siː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə həʊˈtel baɪ siː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "beach activity",
+      "pronunciation": {
+        "british": {
+          "ipa": "biːtʃ ækˈtɪvəti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "biːtʃ ækˈtɪvəti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a history major",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈhɪstri ˈmeɪdʒə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈhɪstri ˈmeɪdʒə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a history museum",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈhɪstri mjuːˈziːəm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈhɪstri mjuːˈziːəm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "different management",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdɪfrənt ˈmænɪdʒmənt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈdɪfrənt ˈmænɪdʒmənt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "join us",
+      "pronunciation": {
+        "british": {
+          "ipa": "dʒɔɪn ʌs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "dʒɔɪn ʌs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "sports history section",
+      "pronunciation": {
+        "british": {
+          "ipa": "spɔːts ˈhɪstri ˈsekʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "spɔːts ˈhɪstri ˈsekʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "the business department",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈbɪznəs dɪˈpɑːtmənt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈbɪznəs dɪˈpɑːtmənt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a seashore hotel",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈsiːʃɔː həʊˈtel",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈsiːʃɔː həʊˈtel",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "make any difference",
+      "pronunciation": {
+        "british": {
+          "ipa": "meɪk ˈeni ˈdɪfrəns",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "meɪk ˈeni ˈdɪfrəns",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "football match",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfʊtbɔːl mætʃ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfʊtbɔːl mætʃ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "coach",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəʊtʃ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kəʊtʃ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "how long and how hard",
+      "pronunciation": {
+        "british": {
+          "ipa": "haʊ lɒŋ ənd haʊ hɑːd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "haʊ lɒŋ ənd haʊ hɑːd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "sound interesting",
+      "pronunciation": {
+        "british": {
+          "ipa": "saʊnd ˈɪntrəstɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "saʊnd ˈɪntrəstɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a big deal",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə bɪg diːl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə bɪg diːl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "The Best Ways to Get to University",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə best weɪz tə get tə ˌjuːnɪˈvɜːsəti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə best weɪz tə get tə ˌjuːnɪˈvɜːsəti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "hate taking the train",
+      "pronunciation": {
+        "british": {
+          "ipa": "heɪt ˈteɪkɪŋ ðə treɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "heɪt ˈteɪkɪŋ ðə treɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "late",
+      "pronunciation": {
+        "british": {
+          "ipa": "leɪt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "leɪt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "buying a car",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbwaɪɪŋ ə kɑː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbwaɪɪŋ ə kɑː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "too expensive",
+      "pronunciation": {
+        "british": {
+          "ipa": "tuː ɪkˈspensɪv",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "tuː ɪkˈspensɪv",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "try taking the bus",
+      "pronunciation": {
+        "british": {
+          "ipa": "traɪ ˈteɪkɪŋ ðə bʌs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "traɪ ˈteɪkɪŋ ðə bʌs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "wait for the next one",
+      "pronunciation": {
+        "british": {
+          "ipa": "weɪt fə ðə nekst wʌn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "weɪt fə ðə nekst wʌn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a backup plan",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈbækʌp plæn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈbækʌp plæn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a second-hand bicycle",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈsekənd hænd ˈbaɪsɪkl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈsekənd hænd ˈbaɪsɪkl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "love bus",
+      "pronunciation": {
+        "british": {
+          "ipa": "lʌv bʌs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "lʌv bʌs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "take the first bus",
+      "pronunciation": {
+        "british": {
+          "ipa": "teɪk ðə fɜːst bʌs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "teɪk ðə fɜːst bʌs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "read articles",
+      "pronunciation": {
+        "british": {
+          "ipa": "riːd ˈɑːtɪklz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "riːd ˈɑːtɪklz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "quietness",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkwaɪətnəs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkwaɪətnəs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a busy day",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈbɪzi deɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈbɪzi deɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "pretty empty",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈprɪti ˈempti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈprɪti ˈempti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "leave 10 minutes early",
+      "pronunciation": {
+        "british": {
+          "ipa": "liːv ten ˈmɪnɪts ˈɜːli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "liːv ten ˈmɪnɪts ˈɜːli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a coffee before class",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈkɒfi bɪˈfɔː klɑːs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈkɒfi bɪˈfɔː klɑːs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "parking on campus",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpɑːkɪŋ ɒn ˈkæmpəs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈpɑːkɪŋ ɒn ˈkæmpəs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "close to campus",
+      "pronunciation": {
+        "british": {
+          "ipa": "kləʊs tə ˈkæmpəs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kləʊs tə ˈkæmpəs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "save money",
+      "pronunciation": {
+        "british": {
+          "ipa": "seɪv ˈmʌni",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "seɪv ˈmʌni",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "keep shape",
+      "pronunciation": {
+        "british": {
+          "ipa": "kiːp ʃeɪp",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kiːp ʃeɪp",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "great exercise",
+      "pronunciation": {
+        "british": {
+          "ipa": "greɪt ˈeksəsaɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "greɪt ˈeksəsaɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a backup",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈbækʌp",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈbækʌp",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "on rainy days",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɒn ˈreɪni deɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɒn ˈreɪni deɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "switch to the bus",
+      "pronunciation": {
+        "british": {
+          "ipa": "swɪtʃ tə ðə bʌs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "swɪtʃ tə ðə bʌs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "Smartphone in Class",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsmɑːtfəʊn ɪn klɑːs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsmɑːtfəʊn ɪn klɑːs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "prohibited",
+      "pronunciation": {
+        "british": {
+          "ipa": "prəˈhɪbɪtɪd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "prəˈhɪbɪtɪd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "bother me",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbɒðə miː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbɒðə miː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "switch off their phones",
+      "pronunciation": {
+        "british": {
+          "ipa": "swɪtʃ ɒf ðeə fəʊnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "swɪtʃ ɒf ðeə fəʊnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a fair point",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə feə pɔɪnt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə feə pɔɪnt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "follow the rules",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɒləʊ ðə ruːlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfɒləʊ ðə ruːlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "both teachers and students",
+      "pronunciation": {
+        "british": {
+          "ipa": "bəʊθ ˈtiːtʃəz ənd ˈstjuːdnts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "bəʊθ ˈtiːtʃəz ənd ˈstjuːdnts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "the same rules",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə seɪm ruːlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə seɪm ruːlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "balance is important",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbæləns ɪz ɪmˈpɔːtnt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbæləns ɪz ɪmˈpɔːtnt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "education purpose",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌedʒuˈkeɪʃn ˈpɜːpəs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌedʒuˈkeɪʃn ˈpɜːpəs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "not good at English",
+      "pronunciation": {
+        "british": {
+          "ipa": "nɒt gʊd ət ˈɪŋglɪʃ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "nɒt gʊd ət ˈɪŋglɪʃ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "group discussion",
+      "pronunciation": {
+        "british": {
+          "ipa": "gruːp dɪˈskʌʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "gruːp dɪˈskʌʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "across the board",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈkrɒs ðə bɔːd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈkrɒs ðə bɔːd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "reasonable",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈriːznəbl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈriːznəbl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "flexibility",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌfleksəˈbɪləti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌfleksəˈbɪləti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "at the cost of focus",
+      "pronunciation": {
+        "british": {
+          "ipa": "ət ðə kɒst əv ˈfəʊkəs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ət ðə kɒst əv ˈfəʊkəs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "feedback",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfiːdbæk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfiːdbæk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "get distracted",
+      "pronunciation": {
+        "british": {
+          "ipa": "get dɪˈstræktɪd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "get dɪˈstræktɪd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "tutorial",
+      "pronunciation": {
+        "british": {
+          "ipa": "tjuːˈtɔːriəl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "tjuːˈtɔːriəl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "negative effects",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈnegətɪv ɪˈfekts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈnegətɪv ɪˈfekts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "consistency is key",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈsɪstənsi ɪz kiː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kənˈsɪstənsi ɪz kiː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a clear policy",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə klɪə ˈpɒləsi",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə klɪə ˈpɒləsi",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "the same standards",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə seɪm ˈstændədz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə seɪm ˈstændədz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "fair policy",
+      "pronunciation": {
+        "british": {
+          "ipa": "feə ˈpɒləsi",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "feə ˈpɒləsi",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "meeting",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmiːtɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈmiːtɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "Improve Presentation Skills",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪmˈpruːv ˌpreznˈteɪʃn skɪlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪmˈpruːv ˌpreznˈteɪʃn skɪlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "the ten-minute presentation",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ten ˈmɪnɪt ˌpreznˈteɪʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ten ˈmɪnɪt ˌpreznˈteɪʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "finished the presentation",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɪnɪʃt ðə ˌpreznˈteɪʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfɪnɪʃt ðə ˌpreznˈteɪʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "any suggestion",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈeni səˈdʒestʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈeni səˈdʒestʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "slow down my speaking speed",
+      "pronunciation": {
+        "british": {
+          "ipa": "sləʊ daʊn maɪ ˈspiːkɪŋ spiːd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "sləʊ daʊn maɪ ˈspiːkɪŋ spiːd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "helpful suggestions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhelpfl səˈdʒestʃənz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhelpfl səˈdʒestʃənz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "focus on keywords",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfəʊkəs ɒn ˈkiːwɜːdz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfəʊkəs ɒn ˈkiːwɜːdz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "finding a job",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfaɪndɪŋ ə dʒɒb",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfaɪndɪŋ ə dʒɒb",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "practice more",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpræktɪs mɔː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈpræktɪs mɔː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "need practice",
+      "pronunciation": {
+        "british": {
+          "ipa": "niːd ˈpræktɪs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "niːd ˈpræktɪs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "body language",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbɒdi ˈlæŋgwɪdʒ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbɒdi ˈlæŋgwɪdʒ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "audience",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɔːdiəns",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɔːdiəns",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "read word by word",
+      "pronunciation": {
+        "british": {
+          "ipa": "riːd wɜːd baɪ wɜːd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "riːd wɜːd baɪ wɜːd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "your notes are too long",
+      "pronunciation": {
+        "british": {
+          "ipa": "jɔː nəʊts ɑː tuː lɒŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "jɔː nəʊts ɑː tuː lɒŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "interview",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪntəvjuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɪntəvjuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "under pressure",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈʌndə ˈpreʃə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈʌndə ˈpreʃə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "record each other",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈkɔːd iːtʃ ˈʌðə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rɪˈkɔːd iːtʃ ˈʌðə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "personal points",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpɜːsənl pɔɪnts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈpɜːsənl pɔɪnts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "different color",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdɪfrənt ˈkʌlə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈdɪfrənt ˈkʌlə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "easier to understand",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈiːziə tə ˌʌndəˈstænd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈiːziə tə ˌʌndəˈstænd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "avoid looking eyes",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈvɔɪd ˈlʊkɪŋ aɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈvɔɪd ˈlʊkɪŋ aɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "really work",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈrɪəli wɜːk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈrɪəli wɜːk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a small practice session",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə smɔːl ˈpræktɪs ˈseʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə smɔːl ˈpræktɪs ˈseʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "methods",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmeθədz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈmeθədz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "Feel About a Course",
+      "pronunciation": {
+        "british": {
+          "ipa": "fiːl əˈbaʊt ə kɔːs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "fiːl əˈbaʊt ə kɔːs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "too hard",
+      "pronunciation": {
+        "british": {
+          "ipa": "tuː hɑːd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "tuː hɑːd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "the professor",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə prəˈfesə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə prəˈfesə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "concepts",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkɒnsepts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkɒnsepts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "next week quiz",
+      "pronunciation": {
+        "british": {
+          "ipa": "nekst wiːk kwɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "nekst wiːk kwɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "where to start",
+      "pronunciation": {
+        "british": {
+          "ipa": "weə tə stɑːt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "weə tə stɑːt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "single page",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɪŋgl peɪdʒ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsɪŋgl peɪdʒ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "wasting time",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈweɪstɪŋ taɪm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈweɪstɪŋ taɪm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "find summaries",
+      "pronunciation": {
+        "british": {
+          "ipa": "faɪnd ˈsʌməriz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "faɪnd ˈsʌməriz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "gets easier",
+      "pronunciation": {
+        "british": {
+          "ipa": "gets ˈiːziə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "gets ˈiːziə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "the reading list first",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈriːdɪŋ lɪst fɜːst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈriːdɪŋ lɪst fɜːst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "those books",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðəʊz bʊks",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðəʊz bʊks",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "library",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlaɪbrəri",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈlaɪbrəri",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "reading materials",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈriːdɪŋ məˈtɪəriəlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈriːdɪŋ məˈtɪəriəlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "best friend",
+      "pronunciation": {
+        "british": {
+          "ipa": "best frend",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "best frend",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "trust me",
+      "pronunciation": {
+        "british": {
+          "ipa": "trʌst miː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "trʌst miː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "the course",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə kɔːs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə kɔːs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "pretty easy",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈprɪti ˈiːzi",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈprɪti ˈiːzi",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "the library website",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈlaɪbrəri ˈwebsaɪt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈlaɪbrəri ˈwebsaɪt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "search by title",
+      "pronunciation": {
+        "british": {
+          "ipa": "sɜːtʃ baɪ ˈtaɪtl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "sɜːtʃ baɪ ˈtaɪtl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "super helpful",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsuːpə ˈhelpfl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsuːpə ˈhelpfl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "access it online",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈækses ɪt ˈɒnˌlaɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈækses ɪt ˈɒnˌlaɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "database",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdeɪtəbeɪs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈdeɪtəbeɪs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "in five minutes",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn faɪv ˈmɪnɪts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn faɪv ˈmɪnɪts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "pretty quick",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈprɪti kwɪk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈprɪti kwɪk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "Housing Plan",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhaʊzɪŋ plæn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhaʊzɪŋ plæn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "office",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɒfɪs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɒfɪs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "live on campus",
+      "pronunciation": {
+        "british": {
+          "ipa": "lɪv ɒn ˈkæmpəs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "lɪv ɒn ˈkæmpəs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "by next week",
+      "pronunciation": {
+        "british": {
+          "ipa": "baɪ nekst wiːk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "baɪ nekst wiːk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "coming back",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌmɪŋ bæk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkʌmɪŋ bæk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "made a decision",
+      "pronunciation": {
+        "british": {
+          "ipa": "meɪd ə dɪˈsɪʒn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "meɪd ə dɪˈsɪʒn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "my own space",
+      "pronunciation": {
+        "british": {
+          "ipa": "maɪ əʊn speɪs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "maɪ əʊn speɪs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "sleep better",
+      "pronunciation": {
+        "british": {
+          "ipa": "sliːp ˈbetə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "sliːp ˈbetə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "my housing choice",
+      "pronunciation": {
+        "british": {
+          "ipa": "maɪ ˈhaʊzɪŋ tʃɔɪs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "maɪ ˈhaʊzɪŋ tʃɔɪs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a single room",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈsɪŋgl ruːm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈsɪŋgl ruːm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "a better atmosphere",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈbetə ˈætməsfɪə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈbetə ˈætməsfɪə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "hate commuting",
+      "pronunciation": {
+        "british": {
+          "ipa": "heɪt kəˈmjuːtɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "heɪt kəˈmjuːtɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "library access",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlaɪbrəri ˈækses",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈlaɪbrəri ˈækses",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "submit my form",
+      "pronunciation": {
+        "british": {
+          "ipa": "səbˈmɪt maɪ fɔːm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "səbˈmɪt maɪ fɔːm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "bring some spice",
+      "pronunciation": {
+        "british": {
+          "ipa": "brɪŋ sʌm spaɪs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "brɪŋ sʌm spaɪs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "living outside",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlɪvɪŋ ˌaʊtˈsaɪd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈlɪvɪŋ ˌaʊtˈsaɪd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "independence",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌɪndɪˈpendəns",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌɪndɪˈpendəns",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "pretty close to campus",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈprɪti kləʊs tə ˈkæmpəs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈprɪti kləʊs tə ˈkæmpəs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "make a list",
+      "pronunciation": {
+        "british": {
+          "ipa": "meɪk ə lɪst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "meɪk ə lɪst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "easier",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈiːziə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈiːziə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "travel time",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtrævl taɪm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈtrævl taɪm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "food",
+      "pronunciation": {
+        "british": {
+          "ipa": "fuːd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "fuːd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "kitchen",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkɪtʃɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkɪtʃɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "study group",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈstʌdi gruːp",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈstʌdi gruːp",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "ideas",
+      "pronunciation": {
+        "british": {
+          "ipa": "aɪˈdɪəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "aɪˈdɪəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-sgd-vocabulary",
+      "source": "pte-sgd-vocabulary-with-ipa"
+    },
+    {
+      "english": "feedback",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfiːdbæk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfiːdbæk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
       "category": "pte-sgd-vocabulary",
       "source": "pte-sgd-vocabulary-with-ipa"
     }

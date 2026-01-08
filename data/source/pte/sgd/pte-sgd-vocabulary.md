@@ -21,7 +21,7 @@
 18. energy and time | /ˈenədʒi ənd taɪm/
 19. interacting with animals | /ˌɪntərˈæktɪŋ wɪð ˈænɪmlz/
 20. emotionally difficult | /ɪˈməʊʃənəli ˈdɪfɪkəlt/
-21. much better at multitasking | /mʌtʃ ˈbetər ət ˌmʌltiˈtɑːskɪŋ/
+21. much better at multiple tasks | /mʌtʃ ˈbetər ət ˈmʌltɪpl tɑːsks/
 22. stay calm | /steɪ kɑːm/
 23. teamwork | /ˈtiːmwɜːk/
 24. taking care | /ˈteɪkɪŋ keə/

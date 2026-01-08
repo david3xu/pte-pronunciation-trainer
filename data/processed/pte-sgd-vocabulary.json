@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-01-08T07:42:43.880Z",
+    "generated": "2026-01-08T09:15:19.054Z",
     "totalTerms": 400,
     "source": "pte-sgd-vocabulary-with-ipa",
     "description": "SGD Vocabulary with IPA",
@@ -333,14 +333,14 @@
       "source": "pte-sgd-vocabulary-with-ipa"
     },
     {
-      "english": "much better at multitasking",
+      "english": "much better at multiple tasks",
       "pronunciation": {
         "british": {
-          "ipa": "mʌtʃ ˈbetər ət ˌmʌltiˈtɑːskɪŋ",
+          "ipa": "mʌtʃ ˈbetər ət ˈmʌltɪpl tɑːsks",
           "phonetic": ""
         },
         "american": {
-          "ipa": "mʌtʃ ˈbetər ət ˌmʌltiˈtɑːskɪŋ",
+          "ipa": "mʌtʃ ˈbetər ət ˈmʌltɪpl tɑːsks",
           "phonetic": ""
         }
       },

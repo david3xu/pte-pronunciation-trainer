@@ -82,7 +82,9 @@ export const AppContent: React.FC = () => {
         const dataPathMap = appConfig.get('data.paths.byMode');
         const processedPath = appConfig.get('data.paths.processed');
 
-        const dataPath = dataPathMap[vocabularyBook] || `/${processedPath}/${vocabularyBook}-vocabulary.json`;
+        const timestamp = new Date().getTime();
+        const basePath = dataPathMap[vocabularyBook] || `/${processedPath}/${vocabularyBook}-vocabulary.json`;
+        const dataPath = `${basePath}?t=${timestamp}`;
         console.log('Fetching from:', dataPath);
 
         const response = await fetch(dataPath);
@@ -113,7 +115,7 @@ export const AppContent: React.FC = () => {
 
         // Transform segment items (RS/WFD segments) to be compatible with WordCard
         // Use 'english' so they display like vocabulary items (no Play Audio button)
-        if (data.items && data.items[0]?.content?.sentence) {
+        if (items.length > 0 && items[0]?.content?.sentence) {
           items = items.map((item: any) => ({
             id: item.id,
             english: item.content.sentence,  // Use 'english' to display like vocabulary

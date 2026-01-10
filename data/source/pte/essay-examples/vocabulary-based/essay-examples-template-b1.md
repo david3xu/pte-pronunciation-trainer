@@ -160,6 +160,15 @@
 | 15 | Employee Decisions | Option A (Challenges) | Positive Outcomes / Negative Outcomes |
 | 16 | Technology | Option A (Challenges) | Positive Outcomes / Negative Outcomes |
 
+### 📈 Paragraph 3 Option Utilization Statistics
+
+| Option Type | Count | Examples |
+| :--- | :---: | :--- |
+| **Option A (Challenges)** | **10** | Ex 1, 2, 5, 9, 11, 12, 13, 14, 15, 16 |
+| **Option B (Alternative Benefits)** | **4** | Ex 3 (Travel), Ex 4 (Climate), Ex 6 (Inventions), Ex 7 (Experiential) |
+| **Option C (Solutions)** | **2** | Ex 8 (Late Penalties), Ex 10 (Global Problem) |
+| **Total** | **16** | |
+
 ---
 
 ## Example 1: Early Marriage

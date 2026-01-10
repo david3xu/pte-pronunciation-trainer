@@ -265,7 +265,7 @@
 243. signed a contract | /saɪnd ə ˈkɒntrækt/
 244. apartment | /əˈpɑːtmənt/
 245. quiet space | /kw aɪət speɪs/
-246. load music | /ləʊd ˈmjuːzɪk/
+246. loud music | /laʊd ˈmjuːzɪk/
 247. more expensive | /mɔː ɪkˈspensɪv/
 248. privacy and peace | /ˈprɪvəsi ənd piːs/
 249. drinking my milk | /ˈdrɪŋkɪŋ maɪ mɪlk/

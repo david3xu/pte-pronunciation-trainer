@@ -171,6 +171,27 @@
 
 ---
 
+### 📝 All Essay Questions (Content Only)
+
+1. **Early Marriage:** It is argued that getting married before finishing school or getting a job is foolish. To what extent do you agree or disagree?
+2. **Written Exams:** The formal written examination can be a valid method to assess students' learning. To what extent do you agree or disagree?
+3. **Travel & Education:** "The value of travel has been overrated". It is said that one can be a brilliant scholar without leaving one's home base. Do you think travel is a necessary component of a quality education?
+4. **Climate Responsibility:** Climate change is a concerning global issue. Who should take the responsibilities: governments, big companies or individuals?
+5. **Television:** Television serves many useful functions. It helps people to relax. We can learn from television, and it can also be seen as a companion for the lonely. To what extent do you agree with this?
+6. **Important Invention:** There are many important inventions in the modern world, including antibiotics, airplanes and computers. What do you believe is the most important invention of the past hundred years?
+7. **Experiential Learning:** Some people point out that experiential learning (i.e. learning by doing) can work well in formal education. However, others think a traditional form of teaching is the best. Do you think experiential learning is beneficial in high school or college?
+8. **Late Penalties:** Some universities deduct students' marks if assignments are given late. What is your opinion and give your recommendations?
+9. **Study + Work:** In order to study effectively, it requires comfort, peace and time. So it is impossible for a student to combine learning and employment at the same time, because one distracts the other. Is it realistic to combine them at the same time in our life today?
+10. **Global Problem:** The world's governments and organizations are facing a lot of issues. Which do you think is the most pressing problem for the inhabitants on our planet? And give solutions.
+11. **Building Design:** How does the design of buildings affect, either positively or negatively, where people work and live?
+12. **Work-Life Balance:** Nowadays, it is increasingly more difficult to maintain the right balance between work and other aspects of one's life, such as time with family and leisure needs. How important do you think this balance is? Why do people find it hard to achieve?
+13. **New Invention Impact:** In our technological world, the number of new inventions has been evolving on a daily basis. Please describe a new invention and explain the impact, either beneficial or detrimental, that you feel it has had on society.
+14. **Historic Buildings:** It is important to preserve the beautiful buildings of the past, even if it will be expensive to do so. To what extent do you agree or disagree with it? Please support your opinion with advantages or disadvantages.
+15. **Employee Decisions:** In some companies, some employers involve employees in the decision-making process of products and services. What are the advantages and disadvantages of such a policy?
+16. **Technology:** Technology has made the world a better place to live. To what extent do you agree with this statement?
+
+---
+
 ## Example 1: Early Marriage
 
 **Question:** It is argued that getting married before finishing school or getting a job is foolish. To what extent do you agree or disagree?

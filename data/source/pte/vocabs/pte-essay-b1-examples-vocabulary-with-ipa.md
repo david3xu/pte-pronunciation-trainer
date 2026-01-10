@@ -56,7 +56,7 @@
 35. **enhanced critical thinking and deeper knowledge** | /ɪnˈhɑːnst ˈkrɪtɪkəl ˈθɪŋkɪŋ ənd ˈdiːpə ˈnɒlɪdʒ/ — sounds like **in-HAHNST KRIT-ih-kul THINK-ing und DEE-pur NOL-ij**
 36. **local education** | /ˈləʊkəl ˌedjʊˈkeɪʃən/ — sounds like **LOH-kul ej-oo-KAY-shun**
 37. **studying locally** | /ˈstʌdiɪŋ ˈləʊkəli/ — sounds like **STUD-ee-ing LOH-kul-ee**
-38. **local universities and established institutions** | /ˈləʊkəl ˌjuːnɪˈvɜːsətiz ənd ɪˈstæblɪʃt ˌɪnstɪˈtjuːʃənz/ — sounds like **LOH-kul yoo-nih-VUR-suh-teez und ih-STAB-lisht in-stih-TOO-shunz**
+38. **access to established institutions** | /ˈækses tuː ɪˈstæblɪʃt ˌɪnstɪˈtjuːʃənz/ — sounds like **AK-sess too ih-STAB-lisht in-stih-TOO-shunz**
 39. **quality learning in a familiar environment** | /ˈkwɒləti ˈlɜːnɪŋ ɪn ə fəˈmɪliə ɪnˈvaɪrənmənt/ — sounds like **KWOL-uh-tee LUR-ning in uh fuh-MIL-ee-ur in-VY-run-ment**
 40. **learning experts** | /ˈlɜːnɪŋ ˈekspɜːts/ — sounds like **LUR-ning EK-spurts**
 41. **academic success and scholarly expertise** | /ˌækəˈdemɪk səkˈses ənd ˈskɒləli ˌekspɜːˈtiːz/ — sounds like **ak-uh-DEM-ik suk-SES und SKOL-ur-lee ek-spur-TEEZ**

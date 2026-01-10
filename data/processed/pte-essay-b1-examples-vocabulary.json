@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-01-10T21:17:37.744Z",
-    "totalTerms": 250,
+    "generated": "2026-01-10T21:23:36.737Z",
+    "totalTerms": 252,
     "source": "pte-essay-b1-examples-vocabulary",
     "description": "Auto-discovered vocabulary book: pte-essay-b1-examples-vocabulary",
     "version": "1.0",
@@ -662,6 +662,38 @@
         "american": {
           "ipa": "ˈstjuːdənts ənd ˈedjʊkeɪtəz",
           "phonetic": "STOO-dunts und EJ-oo-kay-turz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**significant financial savings**",
+      "pronunciation": {
+        "british": {
+          "ipa": "sɪɡˈnɪfɪkənt faɪˈnænʃəl ˈseɪvɪŋz",
+          "phonetic": "sig-NIF-ih-kunt fy-NAN-shul SAY-vingz"
+        },
+        "american": {
+          "ipa": "sɪɡˈnɪfɪkənt faɪˈnænʃəl ˈseɪvɪŋz",
+          "phonetic": "sig-NIF-ih-kunt fy-NAN-shul SAY-vingz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**building valuable local networks**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbɪldɪŋ ˈvæljʊəbəl ˈləʊkəl ˈnetwɜːks",
+          "phonetic": "BIL-ding VAL-yoo-uh-bul LOH-kul NET-wurks"
+        },
+        "american": {
+          "ipa": "ˈbɪldɪŋ ˈvæljʊəbəl ˈləʊkəl ˈnetwɜːks",
+          "phonetic": "BIL-ding VAL-yoo-uh-bul LOH-kul NET-wurks"
         }
       },
       "difficulty": "hard",

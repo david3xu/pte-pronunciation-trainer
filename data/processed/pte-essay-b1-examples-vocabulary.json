@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-01-10T22:46:49.169Z",
-    "totalTerms": 252,
+    "generated": "2026-01-10T22:52:23.242Z",
+    "totalTerms": 251,
     "source": "pte-essay-b1-examples-vocabulary",
     "description": "Auto-discovered vocabulary book: pte-essay-b1-examples-vocabulary",
     "version": "1.0",
@@ -4022,22 +4022,6 @@
         "american": {
           "ipa": "ˌəʊvərɪˈlaɪəns ɒn tekˈnɒlədʒi",
           "phonetic": "oh-vur-rih-LY-uns on tek-NOL-uh-jee"
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-b1-examples-vocabulary",
-      "source": "pte-essay-b1-examples-vocabulary"
-    },
-    {
-      "english": "**governments and technology companies**",
-      "pronunciation": {
-        "british": {
-          "ipa": "ˈɡʌvənmənts ənd tekˈnɒlədʒi ˈkʌmpəniz",
-          "phonetic": "GUV-urn-ments und tek-NOL-uh-jee KUM-puh-neez"
-        },
-        "american": {
-          "ipa": "ˈɡʌvənmənts ənd tekˈnɒlədʒi ˈkʌmpəniz",
-          "phonetic": "GUV-urn-ments und tek-NOL-uh-jee KUM-puh-neez"
         }
       },
       "difficulty": "hard",

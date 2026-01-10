@@ -339,7 +339,7 @@
 241. **social studies** | /ˈsəʊʃəl ˈstʌdiz/ — sounds like **SOH-shul STUD-eez**
 242. **loneliness and reduced face-to-face interaction** | /ˈləʊnlɪnəs ənd rɪˈdjuːst feɪs tuː feɪs ˌɪntərˈækʃən/ — sounds like **LOHN-lee-nes und rih-DYOOST FAYS too FAYS in-tur-AK-shun**
 243. **overreliance on technology** | /ˌəʊvərɪˈlaɪəns ɒn tekˈnɒlədʒi/ — sounds like **oh-vur-rih-LY-uns on tek-NOL-uh-jee**
-244. **governments and technology companies** | /ˈɡʌvənmənts ənd tekˈnɒlədʒi ˈkʌmpəniz/ — sounds like **GUV-urn-ments und tek-NOL-uh-jee KUM-puh-neez**
+244. **society and individuals** | /səˈsaɪəti ənd ˌɪndɪˈvɪdʒʊəlz/ — sounds like **suh-SY-uh-tee und in-dih-VIJ-oo-ulz**
 
 ---
 

@@ -683,7 +683,7 @@ Taken together, these considerations demonstrate the overall importance of **emp
 
 **Evidence Sources:** technology research, social studies
 
-**Conclusion:** governments and technology companies
+**Conclusion:** society and individuals
 
 ### Complete Essay (225 words)
 
@@ -693,7 +693,7 @@ To begin with, one compelling advantage of **technology** is its potential to br
 
 However, it is equally important to acknowledge that **technology** may also give rise to certain challenges. This is largely because **technology** is likely to generate **excessive screen time and digital addiction**, which may subsequently lead to **social isolation and health issues**. According to research by **social studies**, a significant number of **people** have been affected by **loneliness and reduced face-to-face interaction** resulting from **overreliance on technology**.
 
-Taken together, these considerations demonstrate that **technology** has indeed made the world a better place, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **governments and technology companies** to allocate sufficient resources to address these challenges effectively.
+Taken together, these considerations demonstrate that **technology** has indeed made the world a better place, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **society and individuals** to allocate sufficient resources to address these challenges effectively.
 
 ---
 
@@ -1126,4 +1126,4 @@ Taken together, these considerations demonstrate that **technology** has indeed 
 20. loneliness and reduced face-to-face interaction
 21. overreliance on technology
 22. technology
-23. governments and technology companies
+23. society and individuals

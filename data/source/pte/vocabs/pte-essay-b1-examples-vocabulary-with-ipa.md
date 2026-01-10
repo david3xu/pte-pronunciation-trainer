@@ -1,7 +1,7 @@
 # PTE Essay B1 Examples - Fill-in Terms Vocabulary
 
 **Purpose:** ALL fill-in terms from Template B1 Essay Examples collection
-**Total Terms:** 260 unique terms (ordered by example)
+**Total Terms:** 262 unique terms (ordered by example)
 **Format:** By example order with IPA pronunciation
 **Source:** essay-examples-template-b1.md
 
@@ -62,6 +62,8 @@
 41. **academic success and scholarly expertise** | /ˌækəˈdemɪk səkˈses ənd ˈskɒləli ˌekspɜːˈtiːz/ — sounds like **ak-uh-DEM-ik suk-SES und SKOL-ur-lee ek-spur-TEEZ**
 42. **local education and dedicated study** | /ˈləʊkəl ˌedjʊˈkeɪʃən ənd ˈdedɪkeɪtɪd ˈstʌdi/ — sounds like **LOH-kul ej-oo-KAY-shun und DED-ih-kay-tid STUD-ee**
 43. **students and educators** | /ˈstjuːdənts ənd ˈedjʊkeɪtəz/ — sounds like **STOO-dunts und EJ-oo-kay-turz**
+44. **significant financial savings** | /sɪɡˈnɪfɪkənt faɪˈnænʃəl ˈseɪvɪŋz/ — sounds like **sig-NIF-ih-kunt fy-NAN-shul SAY-vingz**
+45. **building valuable local networks** | /ˈbɪldɪŋ ˈvæljʊəbəl ˈləʊkəl ˈnetwɜːks/ — sounds like **BIL-ding VAL-yoo-uh-bul LOH-kul NET-wurks**
 
 ---
 

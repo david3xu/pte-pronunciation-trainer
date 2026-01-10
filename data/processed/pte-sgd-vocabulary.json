@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-01-10T22:52:23.115Z",
+    "generated": "2026-01-10T23:54:43.371Z",
     "totalTerms": 400,
     "source": "pte-sgd-vocabulary-with-ipa",
     "description": "SGD Vocabulary with IPA",
@@ -3933,14 +3933,14 @@
       "source": "pte-sgd-vocabulary-with-ipa"
     },
     {
-      "english": "load music",
+      "english": "loud music",
       "pronunciation": {
         "british": {
-          "ipa": "ləʊd ˈmjuːzɪk",
+          "ipa": "laʊd ˈmjuːzɪk",
           "phonetic": ""
         },
         "american": {
-          "ipa": "ləʊd ˈmjuːzɪk",
+          "ipa": "laʊd ˈmjuːzɪk",
           "phonetic": ""
         }
       },

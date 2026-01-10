@@ -183,7 +183,7 @@
 121. **realistic in today's world** | /rɪəˈlɪstɪk ɪn təˈdeɪz wɜːld/ — sounds like **ree-uh-LIS-tik in tuh-DAYZ WURLD**
 122. **working students** | /ˈwɜːkɪŋ ˈstjuːdənts/ — sounds like **WUR-king STOO-dunts**
 123. **flexible hours and remote work** | /ˈfleksəbəl ˈaʊəz ənd rɪˈməʊt wɜːk/ — sounds like **FLEK-suh-bul OW-urz und rih-MOHT WURK**
-124. **online classes and remote work** | /ˈɒnlaɪn ˈklɑːsɪz ənd rɪˈməʊt wɜːk/ — sounds like **ON-lyn KLAH-siz und rih-MOHT WURK**
+124. **online classes and part-time jobs** | /ˈɒnlaɪn ˈklɑːsɪz ənd pɑːt taɪm dʒɒbz/ — sounds like **ON-lyn KLAH-siz und PAHRT tym JOBZ**
 125. **time savings and more freedom** | /taɪm ˈseɪvɪŋz ənd mɔː ˈfriːdəm/ — sounds like **TYM SAY-vingz und MOR FREE-dum**
 126. **study time and better focus** | /ˈstʌdi taɪm ənd ˈbetə ˈfəʊkəs/ — sounds like **STUD-ee TYM und BET-ur FOH-kus**
 127. **maintained academic success** | /meɪnˈteɪnd ˌækəˈdemɪk səkˈses/ — sounds like **mayn-TAYND ak-uh-DEM-ik suk-SES**

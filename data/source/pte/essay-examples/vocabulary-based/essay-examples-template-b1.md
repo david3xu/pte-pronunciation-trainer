@@ -442,7 +442,7 @@ Taken together, these considerations demonstrate the overall importance of **lat
 
 **Subjects:** students, working students
 
-**Positive Outcomes:** flexible hours, remote work, online classes, time savings
+**Positive Outcomes:** flexible hours, remote work, online classes, part-time jobs, time savings
 
 **Negative Outcomes:** distractions, less focus, time conflicts, schedule pressure
 
@@ -454,7 +454,7 @@ Taken together, these considerations demonstrate the overall importance of **lat
 
 In recent years, the topic of **combining study and work** has emerged as a significant subject of public and academic discussion. I contend that **combining study and work** is **realistic in today's world** for **students** despite certain challenges, and the following analysis outlines the primary arguments supporting this viewpoint.
 
-To begin with, one compelling reason why **combining study and work** is achievable is the availability of **flexible hours and remote work**. In particular, **online classes and remote work** can facilitate **time savings and more freedom**, ultimately leading to broader outcomes such as **study time and better focus**. For instance, evidence from **education research** shows that many **working students** have **maintained academic success** as a direct result of **flexible arrangements**.
+To begin with, one compelling reason why **combining study and work** is achievable is the availability of **flexible hours and remote work**. In particular, **online classes and part-time jobs** can facilitate **time savings and more freedom**, ultimately leading to broader outcomes such as **study time and better focus**. For instance, evidence from **education research** shows that many **working students** have **maintained academic success** as a direct result of **flexible arrangements**.
 
 However, it is equally important to acknowledge that **combining study and work** may also give rise to certain challenges. This is largely because **managing both commitments** is likely to generate **distractions and less focus**, which may subsequently lead to **time conflicts and schedule pressure**. According to research by **career experts**, a significant number of **students** have been affected by **stress and reduced study time** resulting from **balancing work and study**.
 
@@ -935,7 +935,7 @@ Taken together, these considerations demonstrate that **technology** has indeed 
 4. students
 5. combining study and work
 6. flexible hours and remote work
-7. online classes and remote work
+7. online classes and part-time jobs
 8. time savings and more freedom
 9. study time and better focus
 10. education research

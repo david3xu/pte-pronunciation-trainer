@@ -334,10 +334,10 @@
 236. **higher living standards and improved quality of life** | /ˈhaɪə ˈlɪvɪŋ ˈstændədz ənd ɪmˈpruːvd ˈkwɒləti əv laɪf/ — sounds like **HY-ur LIV-ing STAN-durdz und im-PROOVD KWOL-uh-tee uv LYF**
 237. **better medical treatment and easier access to education** | /ˈbetə ˈmedɪkəl ˈtriːtmənt ənd ˈiːziə ˈækses tuː ˌedjʊˈkeɪʃən/ — sounds like **BET-ur MED-ih-kul TREET-ment und EE-zee-ur AK-ses too ej-oo-KAY-shun**
 238. **technological advances** | /ˌteknəˈlɒdʒɪkəl ədˈvɑːnsɪz/ — sounds like **tek-nuh-LOJ-ih-kul ud-VAHN-siz**
-239. **privacy concerns and data security issues** | /ˈprɪvəsi kənˈsɜːnz ənd ˈdeɪtə sɪˈkjʊərəti ˈɪʃuːz/ — sounds like **PRIV-uh-see kun-SURNZ und DAY-tuh sih-KYOOR-uh-tee ISH-ooz**
-240. **job losses and social isolation** | /dʒɒb ˈlɒsɪz ənd ˈsəʊʃəl ˌaɪsəˈleɪʃən/ — sounds like **JOB LOS-iz und SOH-shul eye-suh-LAY-shun**
+239. **excessive screen time and digital addiction** | /ɪkˈsesɪv skriːn taɪm ənd ˈdɪdʒɪtəl əˈdɪkʃən/ — sounds like **ik-SES-iv SKREEN TYM und DIJ-ih-tul uh-DIK-shun**
+240. **social isolation and health issues** | /ˈsəʊʃəl ˌaɪsəˈleɪʃən ənd helθ ˈɪʃuːz/ — sounds like **SOH-shul eye-suh-LAY-shun und HELTH ISH-ooz**
 241. **social studies** | /ˈsəʊʃəl ˈstʌdiz/ — sounds like **SOH-shul STUD-eez**
-242. **digital divide and reduced face-to-face interaction** | /ˈdɪdʒɪtəl dɪˈvaɪd ənd rɪˈdjuːst feɪs tuː feɪs ˌɪntərˈækʃən/ — sounds like **DIJ-ih-tul dih-VYD und rih-DYOOST FAYS too FAYS in-tur-AK-shun**
+242. **loneliness and reduced face-to-face interaction** | /ˈləʊnlɪnəs ənd rɪˈdjuːst feɪs tuː feɪs ˌɪntərˈækʃən/ — sounds like **LOHN-lee-nes und rih-DYOOST FAYS too FAYS in-tur-AK-shun**
 243. **overreliance on technology** | /ˌəʊvərɪˈlaɪəns ɒn tekˈnɒlədʒi/ — sounds like **oh-vur-rih-LY-uns on tek-NOL-uh-jee**
 244. **governments and technology companies** | /ˈɡʌvənmənts ənd tekˈnɒlədʒi ˈkʌmpəniz/ — sounds like **GUV-urn-ments und tek-NOL-uh-jee KUM-puh-neez**
 

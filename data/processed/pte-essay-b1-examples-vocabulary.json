@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-01-12T22:12:16.794Z",
-    "totalTerms": 388,
+    "generated": "2026-01-12T22:42:44.064Z",
+    "totalTerms": 453,
     "source": "pte-essay-b1-examples-vocabulary",
     "description": "Auto-discovered vocabulary book: pte-essay-b1-examples-vocabulary",
     "version": "1.0",
@@ -5277,6 +5277,1062 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
+      "english": "**tourism in developing countries**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtʊərɪzəm ɪn dɪˈveləpɪŋ ˈkʌntriz",
+          "phonetic": "TOOR-iz-um in dih-VEL-up-ing KUN-treez"
+        },
+        "american": {
+          "ipa": "ˈtʊərɪzəm ɪn dɪˈveləpɪŋ ˈkʌntriz",
+          "phonetic": "TOOR-iz-um in dih-VEL-up-ing KUN-treez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**local communities**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈləʊkəl kəˈmjuːnɪtiz",
+          "phonetic": "LOH-kul kuh-MYOO-nih-teez"
+        },
+        "american": {
+          "ipa": "ˈləʊkəl kəˈmjuːnɪtiz",
+          "phonetic": "LOH-kul kuh-MYOO-nih-teez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**job opportunities and business growth**",
+      "pronunciation": {
+        "british": {
+          "ipa": "dʒɒb ˌɒpəˈtjuːnətiz ənd ˈbɪznɪs ɡrəʊθ",
+          "phonetic": "JOB op-ur-TOO-nih-teez und BIZ-niss GROHTH"
+        },
+        "american": {
+          "ipa": "dʒɒb ˌɒpəˈtjuːnətiz ənd ˈbɪznɪs ɡrəʊθ",
+          "phonetic": "JOB op-ur-TOO-nih-teez und BIZ-niss GROHTH"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**environmental damage and resource depletion**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˌvaɪrənˈmentəl ˈdæmɪdʒ ənd rɪˈsɔːs dɪˈpliːʃən",
+          "phonetic": "in-vy-run-MEN-tul DAM-ij und rih-SORS dih-PLEE-shun"
+        },
+        "american": {
+          "ipa": "ɪnˌvaɪrənˈmentəl ˈdæmɪdʒ ənd rɪˈsɔːs dɪˈpliːʃən",
+          "phonetic": "in-vy-run-MEN-tul DAM-ij und rih-SORS dih-PLEE-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**cultural erosion and local traditions being lost**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌltʃərəl ɪˈrəʊʒən ənd ˈləʊkəl trəˈdɪʃənz ˈbiːɪŋ lɒst",
+          "phonetic": "KUL-chuh-rul ih-ROH-zhun und LOH-kul truh-DISH-unz BEE-ing LOST"
+        },
+        "american": {
+          "ipa": "ˈkʌltʃərəl ɪˈrəʊʒən ənd ˈləʊkəl trəˈdɪʃənz ˈbiːɪŋ lɒst",
+          "phonetic": "KUL-chuh-rul ih-ROH-zhun und LOH-kul truh-DISH-unz BEE-ing LOST"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**financial pressure and rising prices**",
+      "pronunciation": {
+        "british": {
+          "ipa": "faɪˈnænʃəl ˈpreʃə ənd ˈraɪzɪŋ ˈpraɪsɪz",
+          "phonetic": "fy-NAN-shul PRESH-ur und RY-zing PRY-siz"
+        },
+        "american": {
+          "ipa": "faɪˈnænʃəl ˈpreʃə ənd ˈraɪzɪŋ ˈpraɪsɪz",
+          "phonetic": "fy-NAN-shul PRESH-ur und RY-zing PRY-siz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**tourism experts**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtʊərɪzəm ˈekspɜːts",
+          "phonetic": "TOOR-iz-um EK-spurts"
+        },
+        "american": {
+          "ipa": "ˈtʊərɪzəm ˈekspɜːts",
+          "phonetic": "TOOR-iz-um EK-spurts"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**modern mass communication**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmɒdən mæs kəˌmjuːnɪˈkeɪʃən",
+          "phonetic": "MOD-urn MAS kuh-myoo-nih-KAY-shun"
+        },
+        "american": {
+          "ipa": "ˈmɒdən mæs kəˌmjuːnɪˈkeɪʃən",
+          "phonetic": "MOD-urn MAS kuh-myoo-nih-KAY-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**individuals**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌɪndɪˈvɪdʒuəlz",
+          "phonetic": "in-dih-VIJ-oo-ulz"
+        },
+        "american": {
+          "ipa": "ˌɪndɪˈvɪdʒuəlz",
+          "phonetic": "in-dih-VIJ-oo-ulz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**faster information access and knowledge sharing**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɑːstə ˌɪnfəˈmeɪʃən ˈækses ənd ˈnɒlɪdʒ ˈʃeərɪŋ",
+          "phonetic": "FAH-stur in-fur-MAY-shun AK-ses und NOL-ij SHAIR-ing"
+        },
+        "american": {
+          "ipa": "ˈfɑːstə ˌɪnfəˈmeɪʃən ˈækses ənd ˈnɒlɪdʒ ˈʃeərɪŋ",
+          "phonetic": "FAH-stur in-fur-MAY-shun AK-ses und NOL-ij SHAIR-ing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**online learning and better education**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɒnlaɪn ˈlɜːnɪŋ ənd ˈbetə ˌedʒʊˈkeɪʃən",
+          "phonetic": "ON-lyn LUR-ning und BET-ur ej-oo-KAY-shun"
+        },
+        "american": {
+          "ipa": "ˈɒnlaɪn ˈlɜːnɪŋ ənd ˈbetə ˌedʒʊˈkeɪʃən",
+          "phonetic": "ON-lyn LUR-ning und BET-ur ej-oo-KAY-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**easier access to news and public awareness**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈiːziə ˈækses tuː njuːz ənd ˈpʌblɪk əˈweənəs",
+          "phonetic": "EE-zee-ur AK-ses too NYOOZ und PUB-lik uh-WAIR-nus"
+        },
+        "american": {
+          "ipa": "ˈiːziə ˈækses tuː njuːz ənd ˈpʌblɪk əˈweənəs",
+          "phonetic": "EE-zee-ur AK-ses too NYOOZ und PUB-lik uh-WAIR-nus"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**misinformation and privacy concerns**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌmɪsɪnfəˈmeɪʃən ənd ˈprɪvəsi kənˈsɜːnz",
+          "phonetic": "mis-in-fur-MAY-shun und PRIV-uh-see kun-SURNZ"
+        },
+        "american": {
+          "ipa": "ˌmɪsɪnfəˈmeɪʃən ənd ˈprɪvəsi kənˈsɜːnz",
+          "phonetic": "mis-in-fur-MAY-shun und PRIV-uh-see kun-SURNZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**mass media influence**",
+      "pronunciation": {
+        "british": {
+          "ipa": "mæs ˈmiːdiə ˈɪnfluəns",
+          "phonetic": "MAS MEE-dee-uh IN-floo-uns"
+        },
+        "american": {
+          "ipa": "mæs ˈmiːdiə ˈɪnfluəns",
+          "phonetic": "MAS MEE-dee-uh IN-floo-uns"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**public awareness and informed citizens**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpʌblɪk əˈweənəs ənd ɪnˈfɔːmd ˈsɪtɪzNz",
+          "phonetic": "PUB-lik uh-WAIR-nus und in-FORMD SIT-ih-zuns"
+        },
+        "american": {
+          "ipa": "ˈpʌblɪk əˈweənəs ənd ɪnˈfɔːmd ˈsɪtɪzNz",
+          "phonetic": "PUB-lik uh-WAIR-nus und in-FORMD SIT-ih-zuns"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**educational programs and knowledge sharing**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌedʒʊˈkeɪʃənəl ˈprəʊɡræmz ənd ˈnɒlɪdʒ ˈʃeərɪŋ",
+          "phonetic": "ej-oo-KAY-shun-ul PROH-gramz und NOL-ij SHAIR-ing"
+        },
+        "american": {
+          "ipa": "ˌedʒʊˈkeɪʃənəl ˈprəʊɡræmz ənd ˈnɒlɪdʒ ˈʃeərɪŋ",
+          "phonetic": "ej-oo-KAY-shun-ul PROH-gramz und NOL-ij SHAIR-ing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**cultural understanding and global perspectives**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌltʃərəl ˌʌndəˈstændɪŋ ənd ˈɡləʊbəl pəˈspektɪvz",
+          "phonetic": "KUL-chuh-rul un-dur-STAN-ding und GLOH-bul pur-SPEK-tivz"
+        },
+        "american": {
+          "ipa": "ˈkʌltʃərəl ˌʌndəˈstændɪŋ ənd ˈɡləʊbəl pəˈspektɪvz",
+          "phonetic": "KUL-chuh-rul un-dur-STAN-ding und GLOH-bul pur-SPEK-tivz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**improved communication and social connection**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪmˈpruːvd kəˌmjuːnɪˈkeɪʃən ənd ˈsəʊʃəl kəˈnekʃən",
+          "phonetic": "im-PROOVD kuh-myoo-nih-KAY-shun und SOH-shul kuh-NEK-shun"
+        },
+        "american": {
+          "ipa": "ɪmˈpruːvd kəˌmjuːnɪˈkeɪʃən ənd ˈsəʊʃəl kəˈnekʃən",
+          "phonetic": "im-PROOVD kuh-myoo-nih-KAY-shun und SOH-shul kuh-NEK-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**misinformation and biased reporting**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌmɪsɪnfəˈmeɪʃən ənd ˈbaɪəst rɪˈpɔːtɪŋ",
+          "phonetic": "mis-in-fur-MAY-shun und BY-ust rih-PORT-ing"
+        },
+        "american": {
+          "ipa": "ˌmɪsɪnfəˈmeɪʃən ənd ˈbaɪəst rɪˈpɔːtɪŋ",
+          "phonetic": "mis-in-fur-MAY-shun und BY-ust rih-PORT-ing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**excessive screen time and passive consumption**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪkˈsesɪv skriːn taɪm ənd ˈpæsɪv kənˈsʌmpʃən",
+          "phonetic": "ik-SES-iv SKREEN TYM und PAS-iv kun-SUMP-shun"
+        },
+        "american": {
+          "ipa": "ɪkˈsesɪv skriːn taɪm ənd ˈpæsɪv kənˈsʌmpʃən",
+          "phonetic": "ik-SES-iv SKREEN TYM und PAS-iv kun-SUMP-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**reduced critical thinking and conformity**",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈdjuːst ˈkrɪtɪkəl ˈθɪŋkɪŋ ənd kənˈfɔːməti",
+          "phonetic": "rih-DYOOST KRIT-ih-kul THINK-ing und kun-FOR-muh-tee"
+        },
+        "american": {
+          "ipa": "rɪˈdjuːst ˈkrɪtɪkəl ˈθɪŋkɪŋ ənd kənˈfɔːməti",
+          "phonetic": "rih-DYOOST KRIT-ih-kul THINK-ing und kun-FOR-muh-tee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**company reputation in marketing**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌmpəni ˌrepjʊˈteɪʃən ɪn ˈmɑːkɪtɪŋ",
+          "phonetic": "KUM-puh-nee rep-yoo-TAY-shun in MAR-kit-ing"
+        },
+        "american": {
+          "ipa": "ˈkʌmpəni ˌrepjʊˈteɪʃən ɪn ˈmɑːkɪtɪŋ",
+          "phonetic": "KUM-puh-nee rep-yoo-TAY-shun in MAR-kit-ing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**customer loyalty and trust**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌstəmə ˈlɔɪəlti ənd trʌst",
+          "phonetic": "KUS-tuh-mur LOY-ul-tee und TRUST"
+        },
+        "american": {
+          "ipa": "ˈkʌstəmə ˈlɔɪəlti ənd trʌst",
+          "phonetic": "KUS-tuh-mur LOY-ul-tee und TRUST"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**stronger brand identity and recognition**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈstrɒŋɡə brænd aɪˈdentəti ənd ˌrekəɡˈnɪʃən",
+          "phonetic": "STRONG-ur BRAND eye-DEN-tuh-tee und rek-ug-NISH-un"
+        },
+        "american": {
+          "ipa": "ˈstrɒŋɡə brænd aɪˈdentəti ənd ˌrekəɡˈnɪʃən",
+          "phonetic": "STRONG-ur BRAND eye-DEN-tuh-tee und rek-ug-NISH-un"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**increased company revenue and long-term growth**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈkriːst ˈkʌmpəni ˈrevənjuː ənd lɒŋ tɜːm ɡrəʊθ",
+          "phonetic": "in-KREEST KUM-puh-nee REV-uh-nyoo und LONG TURM GROHTH"
+        },
+        "american": {
+          "ipa": "ɪnˈkriːst ˈkʌmpəni ˈrevənjuː ənd lɒŋ tɜːm ɡrəʊθ",
+          "phonetic": "in-KREEST KUM-puh-nee REV-uh-nyoo und LONG TURM GROHTH"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**improved customer satisfaction and repeat business**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪmˈpruːvd ˈkʌstəmə ˌsætɪsˈfækʃən ənd rɪˈpiːt ˈbɪznɪs",
+          "phonetic": "im-PROOVD KUS-tuh-mur sat-is-FAK-shun und rih-PEET BIZ-niss"
+        },
+        "american": {
+          "ipa": "ɪmˈpruːvd ˈkʌstəmə ˌsætɪsˈfækʃən ənd rɪˈpiːt ˈbɪznɪs",
+          "phonetic": "im-PROOVD KUS-tuh-mur sat-is-FAK-shun und rih-PEET BIZ-niss"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**higher investment and slower returns**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhaɪə ɪnˈvestmənt ənd ˈsləʊə rɪˈtɜːnz",
+          "phonetic": "HY-ur in-VEST-ment und SLOH-ur rih-TURNZ"
+        },
+        "american": {
+          "ipa": "ˈhaɪə ɪnˈvestmənt ənd ˈsləʊə rɪˈtɜːnz",
+          "phonetic": "HY-ur in-VEST-ment und SLOH-ur rih-TURNZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**competitive pressure and price wars**",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəmˈpetɪtɪv ˈpreʃə ənd praɪs wɔːz",
+          "phonetic": "kum-PET-ih-tiv PRESH-ur und PRYS WORZ"
+        },
+        "american": {
+          "ipa": "kəmˈpetɪtɪv ˈpreʃə ənd praɪs wɔːz",
+          "phonetic": "kum-PET-ih-tiv PRESH-ur und PRYS WORZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**lost customers and reduced market share**",
+      "pronunciation": {
+        "british": {
+          "ipa": "lɒst ˈkʌstəməz ənd rɪˈdjuːst ˈmɑːkɪt ʃeə",
+          "phonetic": "LOST KUS-tuh-murz und rih-DYOOST MAR-kit SHAIR"
+        },
+        "american": {
+          "ipa": "lɒst ˈkʌstəməz ənd rɪˈdjuːst ˈmɑːkɪt ʃeə",
+          "phonetic": "LOST KUS-tuh-murz und rih-DYOOST MAR-kit SHAIR"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**marketing experts**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmɑːkɪtɪŋ ˈekspɜːts",
+          "phonetic": "MAR-kit-ing EK-spurts"
+        },
+        "american": {
+          "ipa": "ˈmɑːkɪtɪŋ ˈekspɜːts",
+          "phonetic": "MAR-kit-ing EK-spurts"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**companies and marketing teams**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌmpəniz ənd ˈmɑːkɪtɪŋ tiːmz",
+          "phonetic": "KUM-puh-neez und MAR-kit-ing TEEMS"
+        },
+        "american": {
+          "ipa": "ˈkʌmpəniz ənd ˈmɑːkɪtɪŋ tiːmz",
+          "phonetic": "KUM-puh-neez und MAR-kit-ing TEEMS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**studying classic plays**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈstʌdiɪŋ ˈklæsɪk pleɪz",
+          "phonetic": "STUD-ee-ing KLAS-ik PLAYZ"
+        },
+        "american": {
+          "ipa": "ˈstʌdiɪŋ ˈklæsɪk pleɪz",
+          "phonetic": "STUD-ee-ing KLAS-ik PLAYZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**cultural awareness and historical understanding**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌltʃərəl əˈweənəs ənd hɪˈstɒrɪkəl ˌʌndəˈstændɪŋ",
+          "phonetic": "KUL-chuh-rul uh-WAIR-nus und his-TOR-ih-kul un-dur-STAN-ding"
+        },
+        "american": {
+          "ipa": "ˈkʌltʃərəl əˈweənəs ənd hɪˈstɒrɪkəl ˌʌndəˈstændɪŋ",
+          "phonetic": "KUL-chuh-rul uh-WAIR-nus und his-TOR-ih-kul un-dur-STAN-ding"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**personal growth and creative expression**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpɜːsənəl ɡrəʊθ ənd kriˈeɪtɪv ɪkˈspreʃən",
+          "phonetic": "PUR-sun-ul GROHTH und kree-AY-tiv ik-SPRESH-un"
+        },
+        "american": {
+          "ipa": "ˈpɜːsənəl ɡrəʊθ ənd kriˈeɪtɪv ɪkˈspreʃən",
+          "phonetic": "PUR-sun-ul GROHTH und kree-AY-tiv ik-SPRESH-un"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**language skills and literary appreciation**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlæŋɡwɪdʒ skɪlz ənd ˈlɪtərəri əˌpriːʃiˈeɪʃən",
+          "phonetic": "LANG-gwij SKILZ und LIT-uh-ruh-ree uh-pree-she-AY-shun"
+        },
+        "american": {
+          "ipa": "ˈlæŋɡwɪdʒ skɪlz ənd ˈlɪtərəri əˌpriːʃiˈeɪʃən",
+          "phonetic": "LANG-gwij SKILZ und LIT-uh-ruh-ree uh-pree-she-AY-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**difficult language and outdated themes**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdɪfɪkəlt ˈlæŋɡwɪdʒ ənd aʊtˈdeɪtɪd θiːmz",
+          "phonetic": "DIF-ih-kult LANG-gwij und owt-DAY-tid THEEMZ"
+        },
+        "american": {
+          "ipa": "ˈdɪfɪkəlt ˈlæŋɡwɪdʒ ənd aʊtˈdeɪtɪd θiːmz",
+          "phonetic": "DIF-ih-kult LANG-gwij und owt-DAY-tid THEEMZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**low student interest and boring content**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ləʊ ˈstjuːdənt ˈɪntrəst ənd ˈbɔːrɪŋ ˈkɒntent",
+          "phonetic": "LOH STOO-dunt IN-trust und BOR-ing KON-tent"
+        },
+        "american": {
+          "ipa": "ləʊ ˈstjuːdənt ˈɪntrəst ənd ˈbɔːrɪŋ ˈkɒntent",
+          "phonetic": "LOH STOO-dunt IN-trust und BOR-ing KON-tent"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**limited relevance and modern disconnect**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlɪmɪtɪd ˈreləvəns ənd ˈmɒdən ˌdɪskəˈnekt",
+          "phonetic": "LIM-ih-tid REL-uh-vuns und MOD-urn dis-kuh-NEKT"
+        },
+        "american": {
+          "ipa": "ˈlɪmɪtɪd ˈreləvəns ənd ˈmɒdən ˌdɪskəˈnekt",
+          "phonetic": "LIM-ih-tid REL-uh-vuns und MOD-urn dis-kuh-NEKT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**literature experts**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlɪtərətʃə ˈekspɜːts",
+          "phonetic": "LIT-uh-ruh-chur EK-spurts"
+        },
+        "american": {
+          "ipa": "ˈlɪtərətʃə ˈekspɜːts",
+          "phonetic": "LIT-uh-ruh-chur EK-spurts"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**schools and educators**",
+      "pronunciation": {
+        "british": {
+          "ipa": "skuːlz ənd ˈedʒʊkeɪtəz",
+          "phonetic": "SKOOLZ und EJ-oo-kay-turz"
+        },
+        "american": {
+          "ipa": "skuːlz ənd ˈedʒʊkeɪtəz",
+          "phonetic": "SKOOLZ und EJ-oo-kay-turz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**large shopping malls**",
+      "pronunciation": {
+        "british": {
+          "ipa": "lɑːdʒ ˈʃɒpɪŋ mɔːlz",
+          "phonetic": "LARJ SHOP-ing MOLZ"
+        },
+        "american": {
+          "ipa": "lɑːdʒ ˈʃɒpɪŋ mɔːlz",
+          "phonetic": "LARJ SHOP-ing MOLZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**consumers**",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈsjuːməz",
+          "phonetic": "kun-SOO-murz"
+        },
+        "american": {
+          "ipa": "kənˈsjuːməz",
+          "phonetic": "kun-SOO-murz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**more product choices and lower prices**",
+      "pronunciation": {
+        "british": {
+          "ipa": "mɔː ˈprɒdʌkt ˈtʃɔɪsɪz ənd ˈləʊə ˈpraɪsɪz",
+          "phonetic": "MOR PROD-ukt CHOY-siz und LOH-ur PRY-siz"
+        },
+        "american": {
+          "ipa": "mɔː ˈprɒdʌkt ˈtʃɔɪsɪz ənd ˈləʊə ˈpraɪsɪz",
+          "phonetic": "MOR PROD-ukt CHOY-siz und LOH-ur PRY-siz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**convenient shopping and modern facilities**",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈviːniənt ˈʃɒpɪŋ ənd ˈmɒdən fəˈsɪlətiz",
+          "phonetic": "kun-VEEN-yunt SHOP-ing und MOD-urn fuh-SIL-uh-teez"
+        },
+        "american": {
+          "ipa": "kənˈviːniənt ˈʃɒpɪŋ ənd ˈmɒdən fəˈsɪlətiz",
+          "phonetic": "kun-VEEN-yunt SHOP-ing und MOD-urn fuh-SIL-uh-teez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**economic development and urban improvement**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌiːkəˈnɒmɪk dɪˈveləpmənt ənd ˈɜːbən ɪmˈpruːvmənt",
+          "phonetic": "ee-kuh-NOM-ik dih-VEL-up-ment und UR-bun im-PROOV-ment"
+        },
+        "american": {
+          "ipa": "ˌiːkəˈnɒmɪk dɪˈveləpmənt ənd ˈɜːbən ɪmˈpruːvmənt",
+          "phonetic": "ee-kuh-NOM-ik dih-VEL-up-ment und UR-bun im-PROOV-ment"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**local shop closures and job losses**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈləʊkəl ʃɒp ˈkləʊʒəz ənd dʒɒb ˈlɒsɪz",
+          "phonetic": "LOH-kul SHOP KLOH-zhurz und JOB LOSS-iz"
+        },
+        "american": {
+          "ipa": "ˈləʊkəl ʃɒp ˈkləʊʒəz ənd dʒɒb ˈlɒsɪz",
+          "phonetic": "LOH-kul SHOP KLOH-zhurz und JOB LOSS-iz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**reduced community spirit and personal service**",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈdjuːst kəˈmjuːnəti ˈspɪrɪt ənd ˈpɜːsənəl ˈsɜːvɪs",
+          "phonetic": "rih-DYOOST kuh-MYOO-nuh-tee SPIR-it und PUR-sun-ul SUR-vis"
+        },
+        "american": {
+          "ipa": "rɪˈdjuːst kəˈmjuːnəti ˈspɪrɪt ənd ˈpɜːsənəl ˈsɜːvɪs",
+          "phonetic": "rih-DYOOST kuh-MYOO-nuh-tee SPIR-it und PUR-sun-ul SUR-vis"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**increased traffic and environmental impact**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈkriːst ˈtræfɪk ənd ɪnˌvaɪrənˈmentəl ˈɪmpækt",
+          "phonetic": "in-KREEST TRAF-ik und in-vy-run-MEN-tul IM-pakt"
+        },
+        "american": {
+          "ipa": "ɪnˈkriːst ˈtræfɪk ənd ɪnˌvaɪrənˈmentəl ˈɪmpækt",
+          "phonetic": "in-KREEST TRAF-ik und in-vy-run-MEN-tul IM-pakt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**medical technology**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmedɪkəl tekˈnɒlədʒi",
+          "phonetic": "MED-ih-kul tek-NOL-uh-jee"
+        },
+        "american": {
+          "ipa": "ˈmedɪkəl tekˈnɒlədʒi",
+          "phonetic": "MED-ih-kul tek-NOL-uh-jee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**better healthcare and disease prevention**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbetə ˈhelθkeə ənd dɪˈziːz prɪˈvenʃən",
+          "phonetic": "BET-ur HELTH-kair und dih-ZEEZ prih-VEN-shun"
+        },
+        "american": {
+          "ipa": "ˈbetə ˈhelθkeə ənd dɪˈziːz prɪˈvenʃən",
+          "phonetic": "BET-ur HELTH-kair und dih-ZEEZ prih-VEN-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**longer life and reduced mortality**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlɒŋɡə laɪf ənd rɪˈdjuːst mɔːˈtæləti",
+          "phonetic": "LONG-gur LYF und rih-DYOOST mor-TAL-uh-tee"
+        },
+        "american": {
+          "ipa": "ˈlɒŋɡə laɪf ənd rɪˈdjuːst mɔːˈtæləti",
+          "phonetic": "LONG-gur LYF und rih-DYOOST mor-TAL-uh-tee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**better medical treatment and faster recovery**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbetə ˈmedɪkəl ˈtriːtmənt ənd ˈfɑːstə rɪˈkʌvəri",
+          "phonetic": "BET-ur MED-ih-kul TREET-ment und FAH-stur rih-KUV-uh-ree"
+        },
+        "american": {
+          "ipa": "ˈbetə ˈmedɪkəl ˈtriːtmənt ənd ˈfɑːstə rɪˈkʌvəri",
+          "phonetic": "BET-ur MED-ih-kul TREET-ment und FAH-stur rih-KUV-uh-ree"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**ageing population and healthcare costs**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈeɪdʒɪŋ ˌpɒpjʊˈleɪʃən ənd ˈhelθkeə kɒsts",
+          "phonetic": "AY-jing pop-yoo-LAY-shun und HELTH-kair KOSTS"
+        },
+        "american": {
+          "ipa": "ˈeɪdʒɪŋ ˌpɒpjʊˈleɪʃən ənd ˈhelθkeə kɒsts",
+          "phonetic": "AY-jing pop-yoo-LAY-shun und HELTH-kair KOSTS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**chronic illness and long-term care**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkrɒnɪk ˈɪlnəs ənd lɒŋ tɜːm keə",
+          "phonetic": "KRON-ik IL-nus und LONG TURM KAIR"
+        },
+        "american": {
+          "ipa": "ˈkrɒnɪk ˈɪlnəs ənd lɒŋ tɜːm keə",
+          "phonetic": "KRON-ik IL-nus und LONG TURM KAIR"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**resource pressure and social burden**",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈzɔːs ˈpreʃə ənd ˈsəʊʃəl ˈbɜːdən",
+          "phonetic": "rih-SORS PRESH-ur und SOH-shul BUR-dun"
+        },
+        "american": {
+          "ipa": "rɪˈzɔːs ˈpreʃə ənd ˈsəʊʃəl ˈbɜːdən",
+          "phonetic": "rih-SORS PRESH-ur und SOH-shul BUR-dun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**medical researchers**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmedɪkəl rɪˈsɜːtʃəz",
+          "phonetic": "MED-ih-kul rih-SUR-churz"
+        },
+        "american": {
+          "ipa": "ˈmedɪkəl rɪˈsɜːtʃəz",
+          "phonetic": "MED-ih-kul rih-SUR-churz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**governments and healthcare systems**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɡʌvənmənts ənd ˈhelθkeə ˈsɪstəmz",
+          "phonetic": "GUV-urn-ments und HELTH-kair SIS-tumz"
+        },
+        "american": {
+          "ipa": "ˈɡʌvənmənts ənd ˈhelθkeə ˈsɪstəmz",
+          "phonetic": "GUV-urn-ments und HELTH-kair SIS-tumz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**parental legal responsibility**",
+      "pronunciation": {
+        "british": {
+          "ipa": "pəˈrentəl ˈliːɡəl rɪˌspɒnsəˈbɪləti",
+          "phonetic": "puh-REN-tul LEE-gul rih-spon-suh-BIL-uh-tee"
+        },
+        "american": {
+          "ipa": "pəˈrentəl ˈliːɡəl rɪˌspɒnsəˈbɪləti",
+          "phonetic": "puh-REN-tul LEE-gul rih-spon-suh-BIL-uh-tee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**stronger supervision and better guidance**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈstrɒŋɡə ˌsuːpəˈvɪʒən ənd ˈbetə ˈɡaɪdəns",
+          "phonetic": "STRONG-ur soo-pur-VIZ-zhun und BET-ur GY-duns"
+        },
+        "american": {
+          "ipa": "ˈstrɒŋɡə ˌsuːpəˈvɪʒən ənd ˈbetə ˈɡaɪdəns",
+          "phonetic": "STRONG-ur soo-pur-VIZ-zhun und BET-ur GY-duns"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**personal responsibility and family values**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpɜːsənəl rɪˌspɒnsəˈbɪləti ənd ˈfæməli ˈvæljuːz",
+          "phonetic": "PUR-sun-ul rih-spon-suh-BIL-uh-tee und FAM-uh-lee VAL-yooz"
+        },
+        "american": {
+          "ipa": "ˈpɜːsənəl rɪˌspɒnsəˈbɪləti ənd ˈfæməli ˈvæljuːz",
+          "phonetic": "PUR-sun-ul rih-spon-suh-BIL-uh-tee und FAM-uh-lee VAL-yooz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**reduced youth crime and safer communities**",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈdjuːst juːθ kraɪm ənd ˈsemfə kəˈmjuːnətiz",
+          "phonetic": "rih-DYOOST YOOTH KRYM und SAY-fur kuh-MYOO-nih-teez"
+        },
+        "american": {
+          "ipa": "rɪˈdjuːst juːθ kraɪm ənd ˈsemfə kəˈmjuːnətiz",
+          "phonetic": "rih-DYOOST YOOTH KRYM und SAY-fur kuh-MYOO-nih-teez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**improved behaviour and positive outcomes**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪmˈpruːvd bɪˈheɪvjə ənd ˈpɒzətɪv ˈaʊtkʌmz",
+          "phonetic": "im-PROOVD bih-HAY-vyur und POZ-ih-tiv OWT-kumz"
+        },
+        "american": {
+          "ipa": "ɪmˈpruːvd bɪˈheɪvjə ənd ˈpɒzətɪv ˈaʊtkʌmz",
+          "phonetic": "im-PROOVD bih-HAY-vyur und POZ-ih-tiv OWT-kumz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**unfair burden and financial stress**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʌnˈfeə ˈbɜːdən ənd faɪˈnænʃəl stres",
+          "phonetic": "un-FAIR BUR-dun und fy-NAN-shul STRESS"
+        },
+        "american": {
+          "ipa": "ʌnˈfeə ˈbɜːdən ənd faɪˈnænʃəl stres",
+          "phonetic": "un-FAIR BUR-dun und fy-NAN-shul STRESS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**family conflict and damaged relationships**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfæməli ˈkɒnflɪkt ənd ˈdæmɪdʒd rɪˈleɪʃənʃɪps",
+          "phonetic": "FAM-uh-lee KON-flikt und DAM-ijd rih-LAY-shun-ships"
+        },
+        "american": {
+          "ipa": "ˈfæməli ˈkɒnflɪkt ənd ˈdæmɪdʒd rɪˈleɪʃənʃɪps",
+          "phonetic": "FAM-uh-lee KON-flikt und DAM-ijd rih-LAY-shun-ships"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**limited parental control and external influences**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlɪmɪtɪd pəˈrentəl kənˈtrəʊl ənd ɪkˈstɜːnəl ˈɪnfluənsɪz",
+          "phonetic": "LIM-ih-tid puh-REN-tul kun-TROHL und ik-STUR-nul IN-floo-un-siz"
+        },
+        "american": {
+          "ipa": "ˈlɪmɪtɪd pəˈrentəl kənˈtrəʊl ənd ɪkˈstɜːnəl ˈɪnfluənsɪz",
+          "phonetic": "LIM-ih-tid puh-REN-tul kun-TROHL und ik-STUR-nul IN-floo-un-siz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**legal experts**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈliːɡəl ˈekspɜːts",
+          "phonetic": "LEE-gul EK-spurts"
+        },
+        "american": {
+          "ipa": "ˈliːɡəl ˈekspɜːts",
+          "phonetic": "LEE-gul EK-spurts"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
       "english": "**living in the countryside**",
       "pronunciation": {
         "british": {
@@ -5446,22 +6502,6 @@
         "american": {
           "ipa": "ˈdɪdʒɪtəl ˈmiːdiə ɪn ˌjuːnɪˈvɜːsətiz",
           "phonetic": "DIJ-ih-tul MEE-dee-uh in yoo-nih-VUR-suh-teez"
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-b1-examples-vocabulary",
-      "source": "pte-essay-b1-examples-vocabulary"
-    },
-    {
-      "english": "**faster information access and knowledge sharing**",
-      "pronunciation": {
-        "british": {
-          "ipa": "ˈfɑːstə ˌɪnfəˈmeɪʃən ˈækses ənd ˈnɒlɪdʒ ˈʃeərɪŋ",
-          "phonetic": "FAH-stur in-fur-MAY-shun AK-ses und NOL-ij SHAIR-ing"
-        },
-        "american": {
-          "ipa": "ˈfɑːstə ˌɪnfəˈmeɪʃən ˈækses ənd ˈnɒlɪdʒ ˈʃeərɪŋ",
-          "phonetic": "FAH-stur in-fur-MAY-shun AK-ses und NOL-ij SHAIR-ing"
         }
       },
       "difficulty": "hard",

@@ -50,7 +50,7 @@
 29. **students** | /ˈstjuːdənts/ — sounds like **STOO-dunts**
 30. **learners** | /ˈlɜːnəz/ — sounds like **LUR-nurz**
 31. **cultural awareness and cross-cultural understanding** | /ˈkʌltʃərəl əˈweənəs ənd krɒs ˈkʌltʃərəl ˌʌndəˈstændɪŋ/ — sounds like **KUL-chur-ul uh-WAIR-nus und KROSS KUL-chur-ul un-dur-STAN-ding**
-32. **real-world experience and practical learning** | /rɪəl wɜːld ɪkˈspɪəriəns ənd ˈpræktɪkəl ˈlɜːnɪŋ/ — sounds like **REEL WURLD ik-SPEER-ee-uns und PRAK-tih-kul LUR-ning**
+32. **international exposure and adaptability** | /ˌɪntəˈnæʃənəl ɪkˈspəʊʒə ənd əˌdæptəˈbɪləti/ — sounds like **in-tur-NASH-un-ul ik-SPOH-zhur und uh-dap-tuh-BIL-uh-tee**
 33. **global perspective and personal growth** | /ˈɡləʊbəl pəˈspektɪv ənd ˈpɜːsənəl ɡrəʊθ/ — sounds like **GLOH-bul per-SPEK-tiv und PUR-sun-ul GROHTH**
 34. **education research** | /ˌedjʊˈkeɪʃən rɪˈsɜːtʃ/ — sounds like **ej-oo-KAY-shun rih-SURCH**
 35. **enhanced critical thinking and deeper knowledge** | /ɪnˈhɑːnst ˈkrɪtɪkəl ˈθɪŋkɪŋ ənd ˈdiːpə ˈnɒlɪdʒ/ — sounds like **in-HAHNST KRIT-ih-kul THINK-ing und DEE-pur NOL-ij**

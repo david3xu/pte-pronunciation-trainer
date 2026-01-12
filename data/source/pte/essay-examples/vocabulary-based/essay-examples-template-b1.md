@@ -138,39 +138,37 @@
 15. [Example 15: Employee Decision Making](#example-15-employee-decision-making)
 16. [Example 16: Technology and Better World](#example-16-technology-and-better-world)
 17. [Example 17: Maximum Wage Limits](#example-17-maximum-wage-limits)
+18. [Example 18: Modern Childhood](#example-18-modern-childhood)
+19. [Example 19: Restoration vs Housing](#example-19-restoration-vs-housing)
+20. [Example 20: AI vs Language Learning](#example-20-ai-vs-language-learning)
+21. [Example 21: Working Less Hours](#example-21-working-less-hours)
+22. [Example 22: Age Restrictions for Marriage](#example-22-age-restrictions-for-marriage)
+23. [Example 23: Laws and Human Behavior](#example-23-laws-and-human-behavior)
+24. [Example 24: Tourism in Developing Countries](#example-24-tourism-in-developing-countries)
+25. [Example 25: Mass Communication Impact](#example-25-mass-communication-impact)
+26. [Example 26: Mass Media Influence](#example-26-mass-media-influence)
+27. [Example 27: Marketing Strategy](#example-27-marketing-strategy)
+28. [Example 28: Studying Classic Plays](#example-28-studying-classic-plays)
+29. [Example 29: Shopping Malls vs Local Shops](#example-29-shopping-malls-vs-local-shops)
+30. [Example 30: Medical Technology](#example-30-medical-technology)
+31. [Example 31: Parental Legal Responsibility](#example-31-parental-legal-responsibility)
+32. [Example 32: Countryside vs City Life](#example-32-countryside-vs-city-life)
+33. [Example 33: Digital Media vs Libraries](#example-33-digital-media-vs-university-libraries)
+34. [Example 34: Public Transport vs Roads](#example-34-public-transport-vs-roads)
+35. [Example 35: Time for Personal Life](#example-35-time-for-personal-life)
+36. [Example 36: Shorter Working Week](#example-36-shorter-working-week-for-youth-unemployment)
+37. [Example 37: Celebrity Privacy](#example-37-celebrity-privacy)
 
 ---
-
-## ✅ Template Compliance Check (All 16 Examples)
-
-| # | Topic | Para 3 Type | Fill-in Labels |
-|---|-------|-------------|----------------|
-| 1 | Early Marriage | Option A (Challenges) | Positive Outcomes / Negative Outcomes |
-| 2 | Written Exams | Option A (Challenges) | Positive Outcomes / Negative Outcomes |
-| 3 | Travel & Education | Option B (Alternative) | Positive Outcomes / Why Local Education Has Value |
-| 4 | Climate Responsibility | Option B (Alternative) | Positive Outcomes / Why Others Can Contribute |
-| 5 | Television | Option A (Challenges) | Positive Outcomes / Negative Outcomes |
-| 6 | Important Invention | Option B (Alternative) | Positive Outcomes / Why Other Inventions Have Value |
-| 7 | Experiential Learning | Option B (Alternative) | Positive Outcomes / Why Traditional Has Value |
-| 8 | Late Penalties | Option C (Solutions) | Positive Outcomes / Recommendations |
-| 9 | Study + Work | Option A (Challenges) | Positive Outcomes / Negative Outcomes |
-| 10 | Global Problem | Option C (Solutions) | Negative Effects (Why Pressing) / Solutions |
-| 11 | Building Design | Option A (Challenges) | Positive Outcomes / Negative Outcomes |
-| 12 | Work-Life Balance | Option A (Challenges) | Positive Outcomes (Why Important) / Negative Outcomes (Why Hard) |
-| 13 | Smartphones | Option A (Challenges) | Positive Outcomes / Negative Outcomes |
-| 14 | Historic Buildings | Option A (Challenges) | Positive Outcomes / Negative Outcomes |
-| 15 | Employee Decisions | Option A (Challenges) | Positive Outcomes / Negative Outcomes |
-| 16 | Technology | Option A (Challenges) | Positive Outcomes / Negative Outcomes |
-| 17 | Maximum Wage | Option A (Challenges) | Positive Outcomes / Negative Outcomes |
 
 ### 📈 Paragraph 3 Option Utilization Statistics
 
 | Option Type | Count | Examples |
 | :--- | :---: | :--- |
-| **Option A (Challenges)** | **10** | Ex 1, 2, 5, 9, 11, 12, 13, 14, 15, 16 |
-| **Option B (Alternative Benefits)** | **4** | Ex 3 (Travel), Ex 4 (Climate), Ex 6 (Inventions), Ex 7 (Experiential) |
+| **Option A (Challenges)** | **27** | Ex 1, 2, 5, 9, 11, 12, 13, 14, 15, 16, 17, 18, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 33, 35, 36, 37 |
+| **Option B (Alternative Benefits)** | **8** | Ex 3, 4, 6, 7, 19, 20, 32, 34 |
 | **Option C (Solutions)** | **2** | Ex 8 (Late Penalties), Ex 10 (Global Problem) |
-| **Total** | **17** | |
+| **Total** | **37** | |
 
 ---
 
@@ -318,7 +316,7 @@ Taken together, these considerations demonstrate the overall importance of **gov
 
 ## Example 5: Television's Useful Functions
 
-**Question:** Television serves many useful functions. It helps people to relax. We can learn from television, and it can also be seen as a companion for the lonely. To what extent do you agree with this?
+**Question:** Television serves many useful functions. It helps people to relax. We can learn from television, and it can also be seen as a companion for the lonely. To what extent do you agree with this? Explain why with your own experience.
 
 ### Fill-in Terms (13 unique)
 
@@ -326,19 +324,19 @@ Taken together, these considerations demonstrate the overall importance of **gov
 
 **Subjects:** viewers, people
 
-**Positive Outcomes:** relaxation, stress relief, educational programs, companionship
+**Positive Outcomes:** relaxation and stress relief, educational programs and learning opportunities, entertainment and companionship, better mood and enjoyment
 
-**Negative Outcomes:** too much screen time, health issues, less social contact, inactive lifestyle
+**Negative Outcomes:** too much screen time and inactive lifestyle, health issues and less social contact, poor physical health and isolation
 
 **Evidence Sources:** media studies, health researchers
 
 **Conclusion:** families and viewers
 
-### Complete Essay (220 words)
+### Complete Essay (225 words)
 
 In recent years, the topic of **television** has emerged as a significant subject of public and academic discussion. I contend that **television** offers substantial benefits for **viewers** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
 
-To begin with, one compelling advantage of **television** is its potential to bring about **relaxation and stress relief**. In particular, **television** can facilitate **educational programs and learning opportunities**, ultimately leading to broader outcomes such as **entertainment and useful knowledge**. For instance, evidence from **media studies** shows that many **viewers** experienced **better mood and a sense of companionship** as a direct result of **watching television**.
+To begin with, one compelling advantage of **television** is its potential to bring about **relaxation and stress relief**. In particular, **television** can facilitate **educational programs and learning opportunities**, ultimately leading to broader outcomes such as **entertainment and companionship**. For instance, evidence from **media studies** shows that many **viewers** experienced **better mood and enjoyment** as a direct result of **watching television**. In my own experience, watching documentaries has helped me learn about different cultures while relaxing after work.
 
 However, it is equally important to acknowledge that **television** may also give rise to certain challenges. This is largely because **television** is likely to generate **too much screen time and inactive lifestyle**, which may subsequently lead to **health issues and less social contact**. According to research by **health researchers**, a significant number of **people** have been affected by **poor physical health and isolation** resulting from **excessive television watching**.
 
@@ -446,23 +444,23 @@ Taken together, these considerations demonstrate the overall importance of **lat
 
 **Subjects:** students, working students
 
-**Positive Outcomes:** flexible hours, remote work, online classes, part-time jobs, time savings
+**Positive Outcomes:** flexible hours and remote work, online classes and part-time jobs, time savings and better organization, academic success and practical experience
 
-**Negative Outcomes:** distractions, less focus, time conflicts, schedule pressure
+**Negative Outcomes:** distractions and reduced focus, time conflicts and schedule pressure, stress and lower grades
 
 **Evidence Sources:** education research, career experts
 
 **Conclusion:** students and universities
 
-### Complete Essay (221 words)
+### Complete Essay (226 words)
 
-In recent years, the topic of **combining study and work** has emerged as a significant subject of public and academic discussion. I contend that **combining study and work** is **realistic in today's world** for **students** despite certain challenges, and the following analysis outlines the primary arguments supporting this viewpoint.
+In recent years, the topic of **combining study and work** has emerged as a significant subject of public and academic discussion. I contend that **combining study and work** is realistic in today's world for **students** despite certain challenges, and the following analysis outlines the primary arguments supporting this viewpoint.
 
-To begin with, one compelling reason why **combining study and work** is achievable is the availability of **flexible hours and remote work**. In particular, **online classes and part-time jobs** can facilitate **time savings and more freedom**, ultimately leading to broader outcomes such as **study time and better focus**. For instance, evidence from **education research** shows that many **working students** have **maintained academic success** as a direct result of **flexible arrangements**.
+To begin with, one compelling reason why **combining study and work** is achievable is the availability of **flexible hours and remote work**. In particular, **online classes and part-time jobs** can facilitate **time savings and better organization**, ultimately leading to broader outcomes such as **academic success and practical experience**. For instance, evidence from **education research** shows that many **working students** have maintained good results as a direct result of **combining study and work**. In my own experience, I successfully balanced part-time work with my studies by using weekends effectively.
 
-However, it is equally important to acknowledge that **combining study and work** may also give rise to certain challenges. This is largely because **managing both commitments** is likely to generate **distractions and less focus**, which may subsequently lead to **time conflicts and schedule pressure**. According to research by **career experts**, a significant number of **students** have been affected by **stress and reduced study time** resulting from **balancing work and study**.
+However, it is equally important to acknowledge that **combining study and work** may also give rise to certain challenges. This is largely because **managing both commitments** is likely to generate **distractions and reduced focus**, which may subsequently lead to **time conflicts and schedule pressure**. According to research by **career experts**, a significant number of **students** have been affected by **stress and lower grades** resulting from **combining study and work**.
 
-Taken together, these considerations demonstrate that **combining study and work** is **realistic in modern life**, since many students successfully achieve this balance. Thus, it is essential for **students and universities** to allocate sufficient support to address these challenges effectively.
+Taken together, these considerations demonstrate that **combining study and work** is realistic in modern life, since many students successfully achieve this balance. Thus, it is essential for **students and universities** to allocate sufficient support to address these challenges effectively.
 
 ---
 
@@ -476,9 +474,9 @@ Taken together, these considerations demonstrate that **combining study and work
 
 **Subjects:** people, nations
 
-**Negative Effects (Why Pressing):** rising temperatures, extreme weather, habitat loss, food shortages
+**Negative Effects (Why Pressing):** rising temperatures and extreme weather, environmental damage and habitat loss, sea level rise and food shortages, severe weather and economic harm
 
-**Solutions:** clean energy, carbon emissions, policy changes, global action
+**Solutions:** immediate action and policy changes, clean energy and carbon reduction, lower emissions and stable climate
 
 **Evidence Sources:** environmental studies, climate scientists
 
@@ -711,23 +709,623 @@ Taken together, these considerations demonstrate that **technology** has indeed 
 
 **Subjects:** high earners, society
 
-**Positive Outcomes:** a fairer society, reduced inequality, social fairness and equal opportunities, better public services
+**Positive Outcomes:** social fairness and equal opportunities, reduced poverty and better public services, community spirit and social responsibility, improved infrastructure and shared resources
 
-**Negative Outcomes:** reduced motivation, loss of talent, economic problems, lower productivity
+**Negative Outcomes:** reduced motivation and talent loss, economic problems and lower productivity, recruitment difficulties and higher staff turnover
 
 **Evidence Sources:** economic research, social scientists
 
 **Conclusion:** governments and policymakers
 
-### Complete Essay (225 words)
+### Complete Essay (220 words)
 
 In recent years, the topic of **maximum wage limits** has emerged as a significant subject of public and academic discussion. I contend that **maximum wage limits** offer substantial benefits for **society** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
 
-To begin with, one compelling advantage of **maximum wage limits** is its potential to bring about **a fairer society**. In particular, **maximum wage limits** can facilitate **social fairness and equal opportunities**, ultimately leading to broader outcomes such as **better public services**. For instance, evidence from **economic research** shows that many **high earners** experienced **a stronger sense of community** as a direct result of **maximum wage limits**.
+To begin with, one compelling advantage of **maximum wage limits** is its potential to bring about **social fairness and equal opportunities**. In particular, **maximum wage limits** can facilitate **reduced poverty and better public services**, ultimately leading to broader outcomes such as **community spirit and social responsibility**. For instance, evidence from **economic research** shows that many **citizens** experienced **improved infrastructure and shared resources** as a direct result of **maximum wage limits**.
 
-However, it is equally important to acknowledge that **maximum wage limits** may also give rise to certain challenges. This is largely because **maximum wage limits** are likely to generate **reduced motivation and loss of talent**, which may subsequently lead to **economic problems and lower productivity**. According to research by **social scientists**, a significant number of **companies** have been affected by **recruitment difficulties** resulting from **maximum wage limits**.
+However, it is equally important to acknowledge that **maximum wage limits** may also give rise to certain challenges. This is largely because **maximum wage limits** are likely to generate **reduced motivation and talent loss**, which may subsequently lead to **economic problems and lower productivity**. According to research by **social scientists**, a significant number of **companies** have been affected by **recruitment difficulties and higher staff turnover** resulting from **maximum wage limits**.
 
 Taken together, these considerations demonstrate the overall importance of **maximum wage limits**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **governments and policymakers** to allocate sufficient resources to address these challenges effectively.
+
+---
+
+## Example 18: Modern Childhood
+
+**Question:** "It is getting harder for children to live and grow in the 21st century than in the past." Do you agree or disagree?
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** modern childhood (repeat 8+ times)
+
+**Subjects:** children, parents
+
+**Positive Outcomes:** better medical treatment and improved nutrition, easier access to education and technological advances, higher living standards and safer environments, improved well-being and physical health
+
+**Negative Outcomes:** academic pressure and excessive screen time, social isolation and mental pressure, stress and emotional difficulties
+
+**Evidence Sources:** health studies, education research
+
+**Conclusion:** parents and schools
+
+### Complete Essay (214 words)
+
+In recent years, the topic of **modern childhood** has emerged as a significant subject of public and academic discussion. I contend that **modern childhood** offers sufficient benefits for **children** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **modern childhood** is its potential to bring about **better medical treatment and improved nutrition**. In particular, **modern childhood**, unlike in the past, can facilitate **easier access to education and technological advances**, ultimately leading to broader outcomes such as **higher living standards and safer environments**. For instance, evidence from **health studies** shows that many **children** experienced **improved well-being and physical health** as a direct result of **modern childhood**.
+
+However, it is equally important to acknowledge that **modern childhood** may also give rise to certain challenges. This is largely because **modern childhood** is likely to generate **academic pressure and excessive screen time**, which may subsequently lead to **social isolation and mental pressure**. According to research by **education research**, a significant number of **parents** have been affected by **stress and emotional difficulties** resulting from **modern childhood**.
+
+Taken together, these considerations demonstrate the overall importance of **modern childhood**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **parents and schools** to allocate sufficient resources to address these challenges effectively.
+
+---
+
+## Example 19: Restoration vs Housing
+
+**Question:** "More and more countries spend large amounts of money on the restoration of buildings instead of on modern housing. To what extent do you agree or disagree with this analysis?"
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** spending on building restoration (repeat 8+ times)
+
+**Subjects:** governments, citizens
+
+**Positive Evidence (Why Trend Exists):** cultural identity and historical value, tourism income and economic benefits, political support and public interest, international recognition and heritage status
+
+**Counter-Evidence (Housing Also):** housing programs and new developments, affordable housing and urban growth, government investment and policy changes
+
+**Evidence Sources:** urban planning research, housing experts
+
+**Conclusion:** governments and city planners
+
+### Complete Essay (225 words)
+
+In recent years, the topic of **spending on building restoration** has emerged as a significant subject of public and academic discussion. I agree with this analysis that **governments** are increasingly spending on **building restoration** instead of modern housing, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling reason why this trend exists is the potential for **cultural identity and historical value**. In particular, **spending on building restoration** can generate **tourism income and economic benefits**, ultimately leading to broader outcomes such as **political support and public interest**. For instance, evidence from **urban planning research** shows that many **governments** have prioritized **international recognition and heritage status** as a direct result of **spending on building restoration**.
+
+However, it is equally important to acknowledge that **housing investment** is also increasing in some areas. This is largely because **housing programs and new developments** can provide **affordable housing and urban growth**, which may lead to **government investment and policy changes**. According to research by **housing experts**, a significant number of **citizens** have benefited from **balanced spending on both restoration and housing**.
+
+Taken together, these considerations demonstrate that the analysis about **spending on building restoration** is largely accurate, since many governments do prioritize heritage over housing. Thus, it is essential for **governments and city planners** to balance both priorities effectively.
+
+---
+
+## Example 20: AI vs Language Learning
+
+**Question:** "Advanced technology such as artificial intelligence can translate a foreign language easily. Do you think learning a foreign language is still necessary? Support with your own experience."
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** learning a foreign language (repeat 8+ times)
+
+**Subjects:** students, professionals
+
+**Positive Outcomes:** cultural understanding and human connection, career opportunities and stronger relationships, personal growth and greater confidence
+
+**Negative Outcomes (AI):** translation errors and emotional disconnect, misunderstandings and social distance, basic communication and skill loss
+
+**Evidence Sources:** linguistic research, communication experts
+
+**Conclusion:** schools and individuals
+
+### Complete Essay (225 words)
+
+In recent years, the topic of **learning a foreign language** has emerged as a significant subject of public and academic discussion, especially in the era of artificial intelligence. I contend that **learning a foreign language** offers substantial benefits for **students** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **learning a foreign language** is its potential to bring about **cultural understanding and human connection**. In particular, **learning a foreign language**, unlike AI tools, can facilitate **career opportunities and stronger relationships**, ultimately leading to broader outcomes such as **personal growth and greater confidence**. For instance, evidence from **linguistic research** shows that many **professionals** experienced **personal growth and greater confidence** as a direct result of **learning a foreign language**. In my own experience, speaking a second language has opened doors to meaningful friendships abroad.
+
+However, it is equally important to acknowledge that **relying on AI translation** instead of **learning a foreign language** may give rise to certain challenges. This is largely because **AI tools** are likely to generate **translation errors and emotional disconnect**, which may subsequently lead to **misunderstandings and social distance**. According to research by **communication experts**, a significant number of **users** have been affected by **basic communication and skill loss** resulting from **relying on AI translation**.
+
+Taken together, these considerations demonstrate the overall importance of **learning a foreign language**, which cannot be simply replaced by AI tools, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **schools and individuals** to allocate sufficient resources to address these challenges effectively.
+
+---
+
+## Example 21: Working Less Hours
+
+**Question:** "In the future, people will work less hours at their jobs. To what extent do you agree with it? Please support your opinion with your own experience."
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** working fewer hours (repeat 8+ times)
+
+**Subjects:** employees, workers
+
+**Reasons Why This Will Happen:** technological advances and digital automation, artificial intelligence and improved efficiency, higher productivity and greater flexibility, remote work and significant time savings
+
+**Negative Outcomes:** lower income and financial instability, job insecurity and career uncertainty, financial stress and reduced wages
+
+**Evidence Sources:** workplace research, business experts
+
+**Conclusion:** employers and governments
+
+### Complete Essay (228 words)
+
+In recent years, the prediction regarding **working fewer hours** has emerged as a significant subject of public and academic discussion. I contend that **working fewer hours** is a likely development for **employees** despite certain challenges, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling reason why **working fewer hours** will become reality is its connection to **technological advances and digital automation**. In particular, **working fewer hours** can be facilitated by **artificial intelligence and improved efficiency**, ultimately leading to broader outcomes such as **higher productivity and greater flexibility**. For instance, evidence from **workplace research** shows that many **workers** experienced **remote work and significant time savings** as a direct result of **working fewer hours**. In my own experience, flexible schedules have already reduced commute time significantly.
+
+However, it is equally important to acknowledge that **working fewer hours** may also give rise to certain challenges. This is largely because **working fewer hours** is likely to generate **lower income and financial instability**, which may subsequently lead to **job insecurity and career uncertainty**. According to research by **business experts**, a significant number of **employees** have been affected by **financial stress and reduced wages** resulting from **working fewer hours**.
+
+Taken together, these considerations demonstrate the high probability of **working fewer hours**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **employers and governments** to allocate sufficient resources to manage this transition effectively.
+
+---
+
+## Example 22: Age Restrictions (Marriage)
+
+**Question:** "Age restrictions can be seen everywhere. It is believed that people should not do things until they reach the right age, such as marriage, and driving. Select one activity and state the minimum age that you think. Support with your own experiences."
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** age restrictions for marriage (repeat 8+ times)
+
+**Subjects:** young people, young couples
+
+**Positive Outcomes:** emotional stability and support, personal growth and stable relationships, better education and career opportunities, stronger bonds and greater happiness
+
+**Negative Outcomes:** frustration and limited choices, social pressure and cultural expectations, delayed family planning and personal decisions
+
+**Evidence Sources:** psychological research, social researchers
+
+**Conclusion:** governments and communities
+
+### Complete Essay (225 words)
+
+In recent years, the topic of **age restrictions for marriage** has emerged as a significant subject of public and academic discussion. I contend that the minimum age for marriage should be **21 years old** for **young people** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **age restrictions for marriage** is their potential to bring about **emotional stability and support**. In particular, **age restrictions for marriage** can facilitate **personal growth and stable relationships**, ultimately leading to broader outcomes such as **better education and career opportunities**. For instance, evidence from **psychological research** shows that many **young couples** experienced **stronger bonds and greater happiness** as a direct result of **age restrictions for marriage**. In my own experience, waiting until after university helped me build a more mature partnership.
+
+However, it is equally important to acknowledge that **age restrictions for marriage** may also give rise to certain challenges. This is largely because **strict age limits** are likely to generate **frustration and limited choices**, which may subsequently lead to **social pressure and cultural expectations**. According to research by **social researchers**, a significant number of **young people** have been affected by **delayed family planning and personal decisions** resulting from **age restrictions for marriage**.
+
+Taken together, these considerations demonstrate the overall importance of **age restrictions for marriage**, since their advantages remain significant despite the issues that accompany them. Thus, it is essential for **governments and communities** to allocate sufficient resources to address these challenges effectively.
+
+---
+
+## Example 23: Laws and Human Behavior
+
+**Question:** "Some people think human behaviors can be changed by laws, while others think laws have little effect. What is your opinion."
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** laws changing behavior (repeat 8+ times)
+
+**Subjects:** governments, citizens
+
+**Positive Outcomes:** public safety and social order, strong enforcement and clear penalties, public awareness and lifestyle changes, reduced crime and better compliance
+
+**Negative Outcomes:** limited effectiveness and cultural resistance, personal beliefs and individual values, enforcement difficulties and high costs
+
+**Evidence Sources:** legal research, social scientists
+
+**Conclusion:** governments and policymakers
+
+### Complete Essay (225 words)
+
+In recent years, the topic of **laws changing behavior** has emerged as a significant subject of public and academic discussion. I contend that **laws changing behavior** offers substantial benefits for **citizens** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **laws changing behavior** is its potential to bring about **public safety and social order**. In particular, **laws changing behavior** can facilitate **strong enforcement and clear penalties**, ultimately leading to broader outcomes such as **public awareness and lifestyle changes**. For instance, evidence from **legal research** shows that many **citizens** experienced **reduced crime and better compliance** as a direct result of **laws changing behavior**. In my own experience, traffic laws have significantly improved driving habits in my community.
+
+However, it is equally important to acknowledge that **laws changing behavior** may also give rise to certain challenges. This is largely because **laws changing behavior** is likely to generate **limited effectiveness and cultural resistance**, which may subsequently lead to **personal beliefs and individual values** overriding legal requirements. According to research by **social scientists**, a significant number of **governments** have been affected by **enforcement difficulties and high costs** resulting from **laws changing behavior**.
+
+Taken together, these considerations demonstrate the overall importance of **laws changing behavior**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **governments and policymakers** to allocate sufficient resources to address these challenges effectively.
+
+---
+
+## Example 24: Tourism in Developing Countries
+
+**Question:** "For a less developed country, the disadvantages of tourism are as great as the advantages. Please discuss this statement, and give and explain your opinion."
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** tourism in developing countries (repeat 8+ times)
+
+**Subjects:** local communities, citizens
+
+**Positive Outcomes:** tourism income and economic benefits, local pride and community spirit, job opportunities and business growth, cultural identity and international recognition
+
+**Negative Outcomes:** environmental damage and resource depletion, cultural erosion and local traditions, economic dependency and rising prices
+
+**Evidence Sources:** economic research, tourism experts
+
+**Conclusion:** governments and local communities
+
+### Complete Essay (225 words)
+
+In recent years, the topic of **tourism in developing countries** has emerged as a significant subject of public and academic discussion. I contend that **tourism in developing countries** offers substantial benefits for **local communities** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **tourism in developing countries** is its potential to bring about **tourism income and economic benefits**. In particular, **tourism in developing countries** can facilitate **local pride and community spirit**, ultimately leading to broader outcomes such as **job opportunities and business growth**. For instance, evidence from **economic research** shows that many **citizens** experienced **cultural identity and international recognition** as a direct result of **tourism in developing countries**.
+
+However, it is equally important to acknowledge that **tourism in developing countries** may also give rise to certain challenges. This is largely because **tourism in developing countries** is likely to generate **environmental damage and resource depletion**, which may subsequently lead to **cultural erosion and local traditions** being lost. According to research by **tourism experts**, a significant number of **local communities** have been affected by **economic dependency and rising prices** resulting from **tourism in developing countries**.
+
+Taken together, these considerations demonstrate the overall importance of **tourism in developing countries**, since its advantages remain significant despite the issues that accompany them. Thus, it is essential for **governments and local communities** to allocate sufficient resources to address these challenges effectively.
+
+---
+
+## Example 25: Information Revolution and Mass Communication
+
+**Question:** "The information revolution by modern mass communication has both positive and negative consequences for individuals and for society." To what extent do you agree? Explain with your own experience.
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** modern mass communication (repeat 8+ times)
+
+**Subjects:** individuals, society
+
+**Positive Outcomes:** improved communication and global connectivity, faster information access and knowledge sharing, online learning and better education, easier access to news and public awareness
+
+**Negative Outcomes:** excessive screen time and digital addiction, social isolation and health issues, misinformation and privacy concerns
+
+**Evidence Sources:** technology research, social studies
+
+**Conclusion:** society and individuals
+
+### Complete Essay (226 words)
+
+In recent years, the topic of **modern mass communication** has emerged as a significant subject of public and academic discussion. I contend that **modern mass communication** offers substantial benefits for **individuals** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **modern mass communication** is its potential to bring about **improved communication and global connectivity**. In particular, **modern mass communication** can facilitate **faster information access and knowledge sharing**, ultimately leading to broader outcomes such as **online learning and better education**. For instance, evidence from **technology research** shows that many **individuals** experienced **easier access to news and public awareness** as a direct result of **modern mass communication**. In my own experience, online news platforms have helped me stay informed about global events instantly.
+
+However, it is equally important to acknowledge that **modern mass communication** may also give rise to certain challenges. This is largely because **modern mass communication** is likely to generate **excessive screen time and digital addiction**, which may subsequently lead to **social isolation and health issues**. According to research by **social studies**, a significant number of **individuals** have been affected by **misinformation and privacy concerns** resulting from **modern mass communication**.
+
+Taken together, these considerations demonstrate the overall importance of **modern mass communication**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **society and individuals** to allocate sufficient resources to address these challenges effectively.
+
+---
+
+## Example 26: Mass Media Influence
+
+**Question:** "The mass media, including TV, radio and newspapers, influences our society and shapes our opinions and characters. What is your opinion?"
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** mass media influence (repeat 8+ times)
+
+**Subjects:** individuals, society
+
+**Positive Outcomes:** public awareness and informed citizens, educational programs and knowledge sharing, cultural understanding and global perspectives, improved communication and social connection
+
+**Negative Outcomes:** misinformation and biased reporting, excessive screen time and passive consumption, reduced critical thinking and conformity
+
+**Evidence Sources:** media studies, social researchers
+
+**Conclusion:** society and individuals
+
+### Complete Essay (225 words)
+
+In recent years, the topic of **mass media influence** has emerged as a significant subject of public and academic discussion. I contend that **mass media influence** offers substantial benefits for **society** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **mass media influence** is its potential to bring about **public awareness and informed citizens**. In particular, **mass media influence** can facilitate **educational programs and knowledge sharing**, ultimately leading to broader outcomes such as **cultural understanding and global perspectives**. For instance, evidence from **media studies** shows that many **individuals** experienced **improved communication and social connection** as a direct result of **mass media influence**. In my own experience, news programs have helped me understand complex social issues more clearly.
+
+However, it is equally important to acknowledge that **mass media influence** may also give rise to certain challenges. This is largely because **mass media influence** is likely to generate **misinformation and biased reporting**, which may subsequently lead to **excessive screen time and passive consumption**. According to research by **social researchers**, a significant number of **individuals** have been affected by **reduced critical thinking and conformity** resulting from **mass media influence**.
+
+Taken together, these considerations demonstrate the overall importance of **mass media influence**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **society and individuals** to allocate sufficient resources to address these challenges effectively.
+
+---
+
+## Example 27: Marketing Strategy - Reputation vs Discounts
+
+**Question:** "Should marketing in companies producing consumer goods like food and clothing, place emphasis on the reputation of the company or short-term strategies like discounts and special offers? Why?"
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** company reputation in marketing (repeat 8+ times)
+
+**Subjects:** companies, consumers
+
+**Positive Outcomes:** customer loyalty and trust, stronger brand identity and recognition, increased company revenue and long-term growth, improved customer satisfaction and repeat business
+
+**Negative Outcomes:** higher investment and slower returns, competitive pressure and price wars, lost customers and reduced market share
+
+**Evidence Sources:** business research, marketing experts
+
+**Conclusion:** companies and marketing teams
+
+### Complete Essay (226 words)
+
+In recent years, the topic of **company reputation in marketing** has emerged as a significant subject of public and academic discussion. I contend that **company reputation in marketing** offers substantial benefits for **companies** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **company reputation in marketing** is its potential to bring about **customer loyalty and trust**. In particular, **company reputation in marketing** can facilitate **stronger brand identity and recognition**, ultimately leading to broader outcomes such as **increased company revenue and long-term growth**. For instance, evidence from **business research** shows that many **consumers** experienced **improved customer satisfaction and repeat business** as a direct result of **company reputation in marketing**. In my own experience, I prefer buying from brands I know and trust over unfamiliar ones offering discounts.
+
+However, it is equally important to acknowledge that **company reputation in marketing** may also give rise to certain challenges. This is largely because **company reputation in marketing** is likely to generate **higher investment and slower returns**, which may subsequently lead to **competitive pressure and price wars**. According to research by **marketing experts**, a significant number of **companies** have been affected by **lost customers and reduced market share** resulting from **focusing on reputation over discounts**.
+
+Taken together, these considerations demonstrate the overall importance of **company reputation in marketing**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **companies and marketing teams** to allocate sufficient resources to address these challenges effectively.
+
+---
+
+## Example 28: Studying Classic Plays and Theatre
+
+**Question:** "There are both problems and benefits for high school students to study plays and works of theatres written centuries ago. Discuss and use your own experience."
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** studying classic plays (repeat 8+ times)
+
+**Subjects:** students, teachers
+
+**Positive Outcomes:** cultural awareness and historical understanding, enhanced critical thinking and deeper knowledge, personal growth and creative expression, language skills and literary appreciation
+
+**Negative Outcomes:** difficult language and outdated themes, low student interest and boring content, limited relevance and modern disconnect
+
+**Evidence Sources:** education research, literature experts
+
+**Conclusion:** schools and educators
+
+### Complete Essay (225 words)
+
+In recent years, the topic of **studying classic plays** has emerged as a significant subject of public and academic discussion. I contend that **studying classic plays** offers substantial benefits for **students** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **studying classic plays** is its potential to bring about **cultural awareness and historical understanding**. In particular, **studying classic plays** can facilitate **enhanced critical thinking and deeper knowledge**, ultimately leading to broader outcomes such as **personal growth and creative expression**. For instance, evidence from **education research** shows that many **students** experienced **language skills and literary appreciation** as a direct result of **studying classic plays**. In my own experience, reading Shakespeare helped me understand both historical context and timeless human emotions.
+
+However, it is equally important to acknowledge that **studying classic plays** may also give rise to certain challenges. This is largely because **studying classic plays** is likely to generate **difficult language and outdated themes**, which may subsequently lead to **low student interest and boring content**. According to research by **literature experts**, a significant number of **teachers** have been affected by **limited relevance and modern disconnect** resulting from **studying classic plays**.
+
+Taken together, these considerations demonstrate the overall importance of **studying classic plays**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **schools and educators** to allocate sufficient resources to address these challenges effectively.
+
+---
+
+## Example 29: Shopping Malls vs Local Shops
+
+**Question:** "In many towns and cities, large shopping malls are replacing small local shops. Do you think this is a positive development? Give your reasons and examples."
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** large shopping malls (repeat 8+ times)
+
+**Subjects:** consumers, local communities
+
+**Positive Outcomes:** more product choices and lower prices, job opportunities and business growth, convenient shopping and modern facilities, economic development and urban improvement
+
+**Negative Outcomes:** local shop closures and job losses, reduced community spirit and personal service, increased traffic and environmental impact
+
+**Evidence Sources:** economic research, urban planners
+
+**Conclusion:** governments and local communities
+
+### Complete Essay (225 words)
+
+In recent years, the topic of **large shopping malls** has emerged as a significant subject of public and academic discussion. I contend that **large shopping malls** offer substantial benefits for **consumers** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **large shopping malls** is their potential to bring about **more product choices and lower prices**. In particular, **large shopping malls** can facilitate **job opportunities and business growth**, ultimately leading to broader outcomes such as **convenient shopping and modern facilities**. For instance, evidence from **economic research** shows that many **consumers** experienced **economic development and urban improvement** as a direct result of **large shopping malls**. In my own experience, shopping malls offer everything in one place, saving both time and travel costs.
+
+However, it is equally important to acknowledge that **large shopping malls** may also give rise to certain challenges. This is largely because **large shopping malls** are likely to generate **local shop closures and job losses**, which may subsequently lead to **reduced community spirit and personal service**. According to research by **urban planners**, a significant number of **local communities** have been affected by **increased traffic and environmental impact** resulting from **large shopping malls**.
+
+Taken together, these considerations demonstrate the overall importance of **large shopping malls**, since their advantages remain significant despite the issues that accompany them. Thus, it is essential for **governments and local communities** to allocate sufficient resources to address these challenges effectively.
+
+---
+
+## Example 30: Medical Technology and Life Expectancy
+
+**Question:** "Medical technology is responsible for increasing the average life expectancy. Do you think it is a curse or a blessing?"
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** medical technology (repeat 8+ times)
+
+**Subjects:** people, patients
+
+**Positive Outcomes:** better healthcare and disease prevention, higher living standards and improved quality of life, longer life and reduced mortality, better medical treatment and faster recovery
+
+**Negative Outcomes:** ageing population and healthcare costs, chronic illness and long-term care, resource pressure and social burden
+
+**Evidence Sources:** health studies, medical researchers
+
+**Conclusion:** governments and healthcare systems
+
+### Complete Essay (225 words)
+
+In recent years, the topic of **medical technology** has emerged as a significant subject of public and academic discussion. I contend that **medical technology** offers substantial benefits for **people** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **medical technology** is its potential to bring about **better healthcare and disease prevention**. In particular, **medical technology** can facilitate **higher living standards and improved quality of life**, ultimately leading to broader outcomes such as **longer life and reduced mortality**. For instance, evidence from **health studies** shows that many **patients** experienced **better medical treatment and faster recovery** as a direct result of **medical technology**. In my own experience, advanced treatments have helped family members recover from serious illnesses.
+
+However, it is equally important to acknowledge that **medical technology** may also give rise to certain challenges. This is largely because **medical technology** is likely to generate **ageing population and healthcare costs**, which may subsequently lead to **chronic illness and long-term care**. According to research by **medical researchers**, a significant number of **people** have been affected by **resource pressure and social burden** resulting from **medical technology**.
+
+Taken together, these considerations demonstrate the overall importance of **medical technology**, since its advantages remain significant despite the issues that accompany them. Thus, it is essential for **governments and healthcare systems** to allocate sufficient resources to address these challenges effectively.
+
+---
+
+## Example 31: Parental Legal Responsibility
+
+**Question:** "Should parents be held legally responsible for the actions of their children? Do you agree with this opinion? Support your position with your own study, experience or observations."
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** parental legal responsibility (repeat 8+ times)
+
+**Subjects:** parents, children
+
+**Positive Outcomes:** stronger supervision and better guidance, personal responsibility and family values, reduced youth crime and safer communities, improved behaviour and positive outcomes
+
+**Negative Outcomes:** unfair burden and financial stress, family conflict and damaged relationships, limited parental control and external influences
+
+**Evidence Sources:** psychological research, legal experts
+
+**Conclusion:** parents and schools
+
+### Complete Essay (226 words)
+
+In recent years, the topic of **parental legal responsibility** has emerged as a significant subject of public and academic discussion. I contend that **parental legal responsibility** offers substantial benefits for **children** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **parental legal responsibility** is its potential to bring about **stronger supervision and better guidance**. In particular, **parental legal responsibility** can facilitate **personal responsibility and family values**, ultimately leading to broader outcomes such as **reduced youth crime and safer communities**. For instance, evidence from **psychological research** shows that many **parents** experienced **improved behaviour and positive outcomes** as a direct result of **parental legal responsibility**. In my own experience, knowing parents are accountable encourages families to be more involved in children's activities.
+
+However, it is equally important to acknowledge that **parental legal responsibility** may also give rise to certain challenges. This is largely because **parental legal responsibility** is likely to generate **unfair burden and financial stress**, which may subsequently lead to **family conflict and damaged relationships**. According to research by **legal experts**, a significant number of **parents** have been affected by **limited parental control and external influences** resulting from **parental legal responsibility**.
+
+Taken together, these considerations demonstrate the overall importance of **parental legal responsibility**, since its advantages remain significant despite the issues that accompany them. Thus, it is essential for **parents and schools** to allocate sufficient resources to address these challenges effectively.
+
+---
+
+## Example 32: Countryside vs City Life
+
+**Question:** "Living in the countryside or having a city life, which one do you prefer? Please use examples or your personal experience to support your opinion."
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** living in the countryside (repeat 8+ times)
+
+**Subjects:** people, residents
+
+**Positive Outcomes (Countryside):** clean air and natural environment, peaceful lifestyle and less stress, stronger community and closer neighbors, lower costs and affordable housing
+
+**Alternative Benefits (City):** job opportunities and career growth, better facilities and public transport, entertainment options and social activities
+
+**Evidence Sources:** lifestyle research, urban planners
+
+**Conclusion:** individuals and families
+
+### Complete Essay (225 words)
+
+In recent years, the topic of **living in the countryside** has emerged as a significant subject of public and academic discussion. I prefer **living in the countryside** for **people** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **living in the countryside** is its potential to bring about **clean air and natural environment**. In particular, **living in the countryside** can facilitate **peaceful lifestyle and less stress**, ultimately leading to broader outcomes such as **stronger community and closer neighbors**. For instance, evidence from **lifestyle research** shows that many **residents** experienced **lower costs and affordable housing** as a direct result of **living in the countryside**. In my own experience, growing up in a small town gave me a strong sense of belonging and connection to nature.
+
+However, it is equally important to acknowledge that **city life** also provides certain benefits. This is largely because **city life** can offer **job opportunities and career growth**, which may lead to **better facilities and public transport**. According to research by **urban planners**, a significant number of **people** have benefited from **entertainment options and social activities** provided by **city environments**.
+
+Taken together, these considerations demonstrate the overall importance of **living in the countryside**, since its advantages remain significant despite the value of **city life**. Thus, it is essential for **individuals and families** to consider their priorities when choosing where to live.
+
+---
+
+## Example 33: Digital Media vs University Libraries
+
+**Question:** "With the increase of digital media available online, the role of the library has become obsolete. Universities should only procure new digital media rather than constantly update textbooks. Discuss both the advantages and disadvantages of this position and give your own point of view."
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** digital media in universities (repeat 8+ times)
+
+**Subjects:** students, universities
+
+**Positive Outcomes:** faster information access and knowledge sharing, lower costs and easier updates, online learning and better convenience, wider access and global resources
+
+**Negative Outcomes:** digital divide and technology barriers, reduced focus and excessive screen time, loss of physical resources and study spaces
+
+**Evidence Sources:** education research, library experts
+
+**Conclusion:** students and universities
+
+### Complete Essay (226 words)
+
+In recent years, the topic of **digital media in universities** has emerged as a significant subject of public and academic discussion. I contend that **digital media in universities** offers substantial benefits for **students** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **digital media in universities** is its potential to bring about **faster information access and knowledge sharing**. In particular, **digital media in universities** can facilitate **lower costs and easier updates**, ultimately leading to broader outcomes such as **online learning and better convenience**. For instance, evidence from **education research** shows that many **students** experienced **wider access and global resources** as a direct result of **digital media in universities**. In my own experience, accessing e-books and online journals has made my research much easier than visiting physical libraries.
+
+However, it is equally important to acknowledge that **digital media in universities** may also give rise to certain challenges. This is largely because **digital media in universities** is likely to generate **digital divide and technology barriers**, which may subsequently lead to **reduced focus and excessive screen time**. According to research by **library experts**, a significant number of **universities** have been affected by **loss of physical resources and study spaces** resulting from **digital media in universities**.
+
+Taken together, these considerations demonstrate the overall importance of **digital media in universities**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **students and universities** to allocate sufficient resources to address these challenges effectively.
+
+---
+
+## Example 34: Public Transport vs Roads
+
+**Question:** "As cities are expanding, some people claim governments should look forward to creating better networks of public transport available for everyone rather than building more roads for vehicle owning population. What's your opinion? Give some examples or experience to support."
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** public transport networks (repeat 8+ times)
+
+**Subjects:** governments, citizens
+
+**Positive Outcomes (Public Transport):** reduced traffic and lower pollution, affordable travel and equal access, lower costs and less congestion, environmental benefits and cleaner air
+
+**Alternative Benefits (Roads):** personal convenience and travel flexibility, economic growth and business transport, job creation and infrastructure development
+
+**Evidence Sources:** urban planning research, transport experts
+
+**Conclusion:** governments and city planners
+
+### Complete Essay (225 words)
+
+In recent years, the topic of **public transport networks** has emerged as a significant subject of public and academic discussion. I contend that **public transport networks** offer substantial benefits for **citizens** despite alternatives, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **public transport networks** is their potential to bring about **reduced traffic and lower pollution**. In particular, **public transport networks** can facilitate **affordable travel and equal access**, ultimately leading to broader outcomes such as **lower costs and less congestion**. For instance, evidence from **urban planning research** shows that many **citizens** experienced **environmental benefits and cleaner air** as a direct result of **public transport networks**. In my own experience, using buses and trains has saved me money and reduced my daily commute stress.
+
+However, it is equally important to acknowledge that **building more roads** also provides certain benefits. This is largely because **more roads** can offer **personal convenience and travel flexibility**, which may lead to **economic growth and business transport**. According to research by **transport experts**, a significant number of **governments** have benefited from **job creation and infrastructure development** provided by **road construction projects**.
+
+Taken together, these considerations demonstrate the overall importance of **public transport networks**, since their advantages remain significant despite the value of **building more roads**. Thus, it is essential for **governments and city planners** to prioritise sustainable transport solutions.
+
+---
+
+## Example 35: Time for Personal Life
+
+**Question:** "The time people devote to jobs leaves very little time for personal life. How widespread is the problem? What problem will this shortage of time cause?"
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** shortage of personal time (repeat 8+ times)
+
+**Subjects:** workers, employees
+
+**Positive Outcomes (Why Widespread):** long working hours and job demands, modern work culture and career pressure, global workplace trends and overtime, increasing workloads and fewer breaks
+
+**Negative Outcomes (Problems Caused):** health issues and chronic stress, family problems and relationship difficulties, reduced happiness and lower motivation, tiredness and mental exhaustion
+
+**Evidence Sources:** workplace research, health studies
+
+**Conclusion:** employers and policymakers
+
+### Complete Essay (225 words)
+
+In recent years, the topic of **shortage of personal time** has emerged as a significant subject of public and academic discussion. I contend that **shortage of personal time** is a widespread problem affecting **workers** globally, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling reason why **shortage of personal time** is widespread is the growth of **long working hours and job demands**. In particular, **modern work culture and career pressure** can contribute to **global workplace trends and overtime**, ultimately leading to broader patterns such as **increasing workloads and fewer breaks**. For instance, evidence from **workplace research** shows that many **employees** work over 50 hours weekly as a direct result of **shortage of personal time** becoming the norm.
+
+However, it is equally important to acknowledge the problems that **shortage of personal time** may cause. This is largely because **shortage of personal time** is likely to generate **health issues and chronic stress**, which may subsequently lead to **family problems and relationship difficulties**. According to research by **health studies**, a significant number of **workers** have been affected by **reduced happiness and lower motivation**, ultimately resulting in **tiredness and mental exhaustion**.
+
+Taken together, these considerations demonstrate the overall seriousness of **shortage of personal time**, since its negative effects are widespread and significant. Thus, it is essential for **employers and policymakers** to implement better work-life policies to address these challenges effectively.
+
+---
+
+## Example 36: Shorter Working Week for Youth Unemployment
+
+**Question:** "In modern society, unemployment among young people is a serious problem. One solution is to shorten the working week and put more people to work. Give your opinion of the idea, considering the advantages and disadvantages, whether it can apply to young people or the whole workforce."
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** shorter working week (repeat 8+ times)
+
+**Subjects:** young people, employers
+
+**Positive Outcomes:** more job opportunities and reduced unemployment, better work-life balance and less stress, shared workload and fairer employment, increased productivity and worker satisfaction
+
+**Negative Outcomes:** hiring more staff and training costs, higher expenses and business pressure, lower profits and reduced productivity
+
+**Evidence Sources:** economic research, employment experts
+
+**Conclusion:** governments and businesses
+
+### Complete Essay (225 words)
+
+In recent years, the topic of **shorter working week** has emerged as a significant subject of public and academic discussion. I contend that **shorter working week** offers substantial benefits for **young people** and the whole workforce despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **shorter working week** is its potential to bring about **more job opportunities and reduced unemployment**. In particular, **shorter working week** can facilitate **better work-life balance and less stress**, ultimately leading to broader outcomes such as **shared workload and fairer employment**. For instance, evidence from **economic research** shows that many **young people** experienced **increased productivity and worker satisfaction** as a direct result of **shorter working week**.
+
+However, it is equally important to acknowledge that **shorter working week** may also give rise to certain challenges. This is largely because **shorter working week** is likely to require **hiring more staff and training costs**, which may subsequently lead to **higher expenses and business pressure**. According to research by **employment experts**, a significant number of **employers** have been affected by **lower profits and reduced productivity** resulting from **shorter working week**.
+
+Taken together, these considerations demonstrate the overall importance of **shorter working week**, since its advantages remain significant despite the issues that accompany it. In my view, this solution should apply to the **whole workforce**, not just **young people**, as everyone can benefit from more job sharing. Thus, it is essential for **governments and businesses** to allocate sufficient resources to address these challenges effectively.
+
+---
+
+## Example 37: Celebrity Privacy
+
+**Question:** "People who are famous entertainers or sportspeople should give up the right to privacy because this is the price of fame. To what extent do you agree or disagree with this point of view? Give your opinion with your experiences."
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** celebrity privacy rights (repeat 8+ times)
+
+**Subjects:** celebrities, fans
+
+**Positive Outcomes (Why Privacy Needed):** mental health and personal wellbeing, family protection and safe environment, personal freedom and basic rights, fair treatment and respect
+
+**Negative Outcomes (Why Privacy Lost):** media attention and public interest, social media and constant exposure, fan expectations and public demand
+
+**Evidence Sources:** media research, psychology experts
+
+**Conclusion:** celebrities and media organizations
+
+### Complete Essay (225 words)
+
+In recent years, the topic of **celebrity privacy rights** has emerged as a significant subject of public and academic discussion. I disagree that **celebrities** should give up their privacy, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling reason why **celebrity privacy rights** should be protected is their need for **mental health and personal wellbeing**. In particular, **celebrity privacy rights** can facilitate **family protection and safe environment**, ultimately leading to broader outcomes such as **personal freedom and basic rights**. For instance, evidence from **media research** shows that many **celebrities** experienced **fair treatment and respect** as a direct result of **protecting their privacy**. In my own experience, I believe everyone deserves private moments with family, regardless of their job.
+
+However, it is equally important to acknowledge that **celebrity privacy rights** are often limited in practice. This is largely because fame is likely to generate **media attention and public interest**, which may subsequently lead to **social media and constant exposure**. According to research by **psychology experts**, a significant number of **fans** expect access to celebrity lives due to **fan expectations and public demand**.
+
+Taken together, these considerations demonstrate the overall importance of **celebrity privacy rights**, since their basic rights should be respected despite their public status. Thus, it is essential for **celebrities and media organizations** to establish clear boundaries effectively.
 
 ---
 
@@ -1169,13 +1767,13 @@ Taken together, these considerations demonstrate the overall importance of **max
 2. maximum wage limits
 3. society
 4. maximum wage limits
-5. a fairer society
+5. a fairer society and reduced poverty
 6. maximum wage limits
 7. social fairness and equal opportunities
-8. better public services
+8. better public services and improved infrastructure
 9. economic research
 10. high earners
-11. a stronger sense of community
+11. a stronger sense of community and social responsibility
 12. maximum wage limits
 13. maximum wage limits
 14. maximum wage limits
@@ -1183,7 +1781,113 @@ Taken together, these considerations demonstrate the overall importance of **max
 16. economic problems and lower productivity
 17. social scientists
 18. companies
-19. recruitment difficulties
+19. recruitment difficulties and higher staff turnover
 20. maximum wage limits
 21. maximum wage limits
 22. governments and policymakers
+
+
+
+### Example 18: Modern Childhood
+1. modern childhood
+2. modern childhood
+3. children
+4. modern childhood
+5. better medical treatment and improved nutrition
+6. modern childhood
+7. easier access to education and technological advances
+8. higher living standards and safer environments
+9. health studies
+10. children
+11. improved well-being and physical health
+12. modern childhood
+13. modern childhood
+14. modern childhood
+15. academic pressure and excessive screen time
+16. social isolation and mental pressure
+17. education research
+18. parents
+19. stress and anxiety
+20. modern childhood
+21. modern childhood
+22. parents and schools
+
+
+
+### Example 19: Restoration vs Housing
+1. restoring old buildings
+2. restoring old buildings
+3. governments
+4. restoring old buildings
+5. cultural identity and historical value
+6. restoring old buildings
+7. tourism income and economic growth
+8. local pride and community spirit
+9. urban planning research
+10. citizens
+11. architectural beauty and urban character
+12. restoring old buildings
+13. restoring old buildings
+14. restoring old buildings
+15. housing shortages and rising property prices
+16. financial pressure and limited budget
+17. housing experts
+18. citizens
+19. homelessness and high rents
+20. restoring old buildings
+21. restoring old buildings
+22. governments and city planners
+
+
+
+### Example 20: AI vs Language Learning
+1. learning a foreign language
+2. learning a foreign language
+3. students
+4. learning a foreign language
+5. cultural understanding and human connection
+6. learning a foreign language
+7. career opportunities and real relationships
+8. personal growth and confidence
+9. linguistic research
+10. professionals
+11. personal growth and confidence
+12. relying on AI translation (Negative)
+13. learning a foreign language
+14. AI tools
+15. translation mistakes and no real feeling
+16. confusion and social distance
+17. communication experts
+18. users
+19. poor communication and loss of skills
+20. relying on AI translation
+21. learning a foreign language
+22. schools and individuals
+
+
+
+---
+
+### Example 21: Working Less Hours
+1. working fewer hours
+2. working fewer hours
+3. technological advancements
+4. working fewer hours
+5. technological advancements and automation
+6. working fewer hours
+7. artificial intelligence and efficiency
+8. digital tools and productivity
+9. economic research
+10. business experts
+11. digital tools and productivity
+12. working fewer hours
+13. working fewer hours
+14. working fewer hours
+15. lower income and financial instability
+16. job insecurity and career uncertainty
+17. business experts
+18. employees
+19. financial stress and budget cuts
+20. working fewer hours
+21. technological advancements and automation
+22. employers and governments

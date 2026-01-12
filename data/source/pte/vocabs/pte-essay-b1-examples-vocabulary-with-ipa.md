@@ -427,15 +427,16 @@
 ## Example 21: Working Less Hours
 
 299. **working fewer hours** | /ˈwɜːkɪŋ ˈfjuːə ˈaʊəz/ — sounds like **WUR-king FYOO-ur OW-urz**
-300. **technological advancements and automation** | /ˌteknəˈlɒdʒɪkəl ədˈvɑːnsmənts ənd ˌɔːtəˈmeɪʃən/ — sounds like **tek-nuh-LOJ-ih-kul ad-VARNS-munts und or-tuh-MAY-shun**
-301. **artificial intelligence and efficiency** | /ˌɑːtɪˈfɪʃəl ɪnˈtelɪdʒəns ənd ɪˈfɪʃənsi/ — sounds like **ar-tih-FISH-ul in-TEL-ih-juns und ih-FISH-un-see**
-302. **digital tools and productivity** | /ˈdɪdʒɪtl tuːlz ənd ˌprɒdʌkˈtɪvɪti/ — sounds like **DIJ-ih-tul TOOLZ und prod-uk-TIV-ih-tee**
-303. **lower income and financial instability** | /ˈləʊə ˈɪnkʌm ənd faɪˈnænʃəl ˌɪnstəˈbɪlɪti/ — sounds like **LOH-ur IN-kum und fy-NAN-shul in-stuh-BIL-ih-tee**
-304. **job insecurity and career uncertainty** | /dʒɒb ˌɪnsɪˈkjʊərɪti ənd kəˈrɪə ʌnˈsɜːtənti/ — sounds like **JOB in-sih-KYOOR-ih-tee und kuh-REER un-SUR-tun-tee**
-305. **financial stress and budget cuts** | /faɪˈnænʃəl stres ənd ˈbʌdʒɪt kʌts/ — sounds like **fy-NAN-shul STRESS und BUJ-it KUTS**
-306. **economic research** | /ˌiːkəˈnɒmɪk rɪˈsɜːtʃ/ — sounds like **ee-kuh-NOM-ik rih-SURCH**
-307. **business experts** | /ˈbɪznɪs ˈekspɜːts/ — sounds like **BIZ-niss EK-spurts**
-308. **employers and governments** | /ɪmˈplɔɪəz ənd ˈɡʌvnmənts/ — sounds like **im-PLOY-urz und GUV-un-munts**
+300. **technological advances and digital automation** | /ˌteknəˈlɒdʒɪkəl ədˈvɑːnsɪz ənd ˈdɪdʒɪtəl ˌɔːtəˈmeɪʃən/ — sounds like **tek-nuh-LOJ-ih-kul ud-VAHN-siz und DIJ-ih-tul or-tuh-MAY-shun**
+301. **artificial intelligence and improved efficiency** | /ˌɑːtɪˈfɪʃəl ɪnˈtelɪdʒəns ənd ɪmˈpruːvd ɪˈfɪʃənsi/ — sounds like **ar-tih-FISH-ul in-TEL-ih-juns und im-PROOVD ih-FISH-un-see**
+302. **higher productivity and greater flexibility** | /ˈhaɪə ˌprɒdʌkˈtɪvəti ənd ˈɡreɪtə ˌfleksəˈbɪləti/ — sounds like **HY-ur prod-uk-TIV-uh-tee und GRAY-tur flek-suh-BIL-uh-tee**
+303. **remote work and significant time savings** | /rɪˈməʊt wɜːk ənd sɪɡˈnɪfɪkənt taɪm ˈseɪvɪŋz/ — sounds like **rih-MOHT WURK und sig-NIF-ih-kunt TYM SAY-vingz**
+304. **economic pressure and business competition** | /ˌiːkəˈnɒmɪk ˈpreʃə ənd ˈbɪznəs ˌkɒmpəˈtɪʃən/ — sounds like **ee-kuh-NOM-ik PRESH-ur und BIZ-nus kom-puh-TISH-un**
+305. **employer expectations and workload demands** | /ɪmˈplɔɪə ˌekspekˈteɪʃənz ənd ˈwɜːkləʊd dɪˈmɑːndz/ — sounds like **im-PLOY-ur ek-spek-TAY-shunz und WURK-lohd dih-MAHNDS**
+306. **financial needs and career requirements** | /faɪˈnænʃəl niːdz ənd kəˈrɪə rɪˈkwaɪəmənts/ — sounds like **fy-NAN-shul NEEDZ und kuh-REER rih-KWY-ur-munts**
+307. **workplace research** | /ˈwɜːkpleɪs rɪˈsɜːtʃ/ — sounds like **WURK-plays rih-SURCH**
+308. **business experts** | /ˈbɪznɪs ˈekspɜːts/ — sounds like **BIZ-niss EK-spurts**
+309. **employers and governments** | /ɪmˈplɔɪəz ənd ˈɡʌvnmənts/ — sounds like **im-PLOY-urz und GUV-un-munts**
 
 ---
 

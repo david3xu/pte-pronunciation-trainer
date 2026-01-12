@@ -981,7 +981,7 @@ Taken together, these considerations demonstrate the overall importance of **mod
 
 **Positive Outcomes:** public awareness and informed citizens, educational programs and knowledge sharing, cultural understanding and global perspectives, improved communication and social connection
 
-**Negative Outcomes:** misinformation and biased reporting, excessive screen time and passive consumption, reduced critical thinking and conformity
+**Negative Outcomes:** misinformation and biased reporting, excessive screen time and passive consumption, reduced critical thinking and blind trust
 
 **Evidence Sources:** media studies, social researchers
 
@@ -993,7 +993,7 @@ In recent years, the topic of **mass media influence** has emerged as a signific
 
 To begin with, one compelling advantage of **mass media influence** is its potential to bring about **public awareness and informed citizens**. In particular, **mass media influence** can facilitate **educational programs and knowledge sharing**, ultimately leading to broader outcomes such as **cultural understanding and global perspectives**. For instance, evidence from **media studies** shows that many **individuals** experienced **improved communication and social connection** as a direct result of **mass media influence**. In my own experience, news programs have helped me understand complex social issues more clearly.
 
-However, it is equally important to acknowledge that **mass media influence** may also give rise to certain challenges. This is largely because **mass media influence** is likely to generate **misinformation and biased reporting**, which may subsequently lead to **reduced critical thinking and conformity**. According to research by **social researchers**, a significant number of **individuals** have been affected by **excessive screen time and passive consumption** resulting from **mass media influence**.
+However, it is equally important to acknowledge that **mass media influence** may also give rise to certain challenges. This is largely because **mass media influence** is likely to generate **misinformation and biased reporting**, which may subsequently lead to **reduced critical thinking and blind trust**. According to research by **social researchers**, a significant number of **individuals** have been affected by **excessive screen time and passive consumption** resulting from **mass media influence**.
 
 Taken together, these considerations demonstrate the overall importance of **mass media influence**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **society and individuals** to allocate sufficient resources to address these challenges effectively.
 

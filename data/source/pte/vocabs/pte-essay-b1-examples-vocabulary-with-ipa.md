@@ -516,7 +516,7 @@
 360. **improved communication and social connection** | /ɪmˈpruːvd kəˌmjuːnɪˈkeɪʃən ənd ˈsəʊʃəl kəˈnekʃən/ — sounds like **im-PROOVD kuh-myoo-nih-KAY-shun und SOH-shul kuh-NEK-shun**
 361. **misinformation and biased reporting** | /ˌmɪsɪnfəˈmeɪʃən ənd ˈbaɪəst rɪˈpɔːtɪŋ/ — sounds like **mis-in-fur-MAY-shun und BY-ust rih-PORT-ing**
 362. **excessive screen time and passive consumption** | /ɪkˈsesɪv skriːn taɪm ənd ˈpæsɪv kənˈsʌmpʃən/ — sounds like **ik-SES-iv SKREEN TYM und PAS-iv kun-SUMP-shun**
-363. **reduced critical thinking and conformity** | /rɪˈdjuːst ˈkrɪtɪkəl ˈθɪŋkɪŋ ənd kənˈfɔːməti/ — sounds like **rih-DYOOST KRIT-ih-kul THINK-ing und kun-FOR-muh-tee**
+363. **reduced critical thinking and blind trust** | /rɪˈdjuːst ˈkrɪtɪkəl ˈθɪŋkɪŋ ənd blaɪnd trʌst/ — sounds like **rih-DYOOST KRIT-ih-kul THINK-ing und BLYND TRUST**
 364. **media studies** | /ˈmiːdiə ˈstʌdiz/ — sounds like **MEE-dee-uh STUD-eez**
 365. **social researchers** | /ˈsəʊʃəl rɪˈsɜːtʃəz/ — sounds like **SOH-shul rih-SUR-churz**
 366. **society and individuals** | /səˈsaɪəti ənd ˌɪndɪˈvɪdʒuəlz/ — sounds like **suh-SY-uh-tee und in-dih-VIJ-oo-ulz**

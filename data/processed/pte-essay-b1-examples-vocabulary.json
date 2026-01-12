@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-01-12T01:00:42.335Z",
-    "totalTerms": 251,
+    "generated": "2026-01-12T08:31:46.109Z",
+    "totalTerms": 263,
     "source": "pte-essay-b1-examples-vocabulary",
     "description": "Auto-discovered vocabulary book: pte-essay-b1-examples-vocabulary",
     "version": "1.0",
@@ -4022,6 +4022,198 @@
         "american": {
           "ipa": "ˌəʊvərɪˈlaɪəns ɒn tekˈnɒlədʒi",
           "phonetic": "oh-vur-rih-LY-uns on tek-NOL-uh-jee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**maximum wage limits**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmæksɪməm weɪdʒ ˈlɪmɪts",
+          "phonetic": "MAK-sih-mum WAYJ LIM-its"
+        },
+        "american": {
+          "ipa": "ˈmæksɪməm weɪdʒ ˈlɪmɪts",
+          "phonetic": "MAK-sih-mum WAYJ LIM-its"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**high earners**",
+      "pronunciation": {
+        "british": {
+          "ipa": "haɪ ˈɜːnəz",
+          "phonetic": "HY UR-nurz"
+        },
+        "american": {
+          "ipa": "haɪ ˈɜːnəz",
+          "phonetic": "HY UR-nurz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**reduced income inequality**",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈdjuːst ˈɪnkʌm ˌɪnɪˈkwɒləti",
+          "phonetic": "rih-DYOOST IN-kum in-ih-KWOL-uh-tee"
+        },
+        "american": {
+          "ipa": "rɪˈdjuːst ˈɪnkʌm ˌɪnɪˈkwɒləti",
+          "phonetic": "rih-DYOOST IN-kum in-ih-KWOL-uh-tee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**fair wealth distribution and social harmony**",
+      "pronunciation": {
+        "british": {
+          "ipa": "feə welθ ˌdɪstrɪˈbjuːʃən ənd ˈsəʊʃəl ˈhɑːməni",
+          "phonetic": "FAIR WELTH dis-trih-BYOO-shun und SOH-shul HAR-muh-nee"
+        },
+        "american": {
+          "ipa": "feə welθ ˌdɪstrɪˈbjuːʃən ənd ˈsəʊʃəl ˈhɑːməni",
+          "phonetic": "FAIR WELTH dis-trih-BYOO-shun und SOH-shul HAR-muh-nee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**better public resources**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbetə ˈpʌblɪk rɪˈzɔːsɪz",
+          "phonetic": "BET-ur PUB-lik rih-ZOR-siz"
+        },
+        "american": {
+          "ipa": "ˈbetə ˈpʌblɪk rɪˈzɔːsɪz",
+          "phonetic": "BET-ur PUB-lik rih-ZOR-siz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**economic research**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌekəˈnɒmɪk rɪˈsɜːtʃ",
+          "phonetic": "ek-uh-NOM-ik rih-SURCH"
+        },
+        "american": {
+          "ipa": "ˌekəˈnɒmɪk rɪˈsɜːtʃ",
+          "phonetic": "ek-uh-NOM-ik rih-SURCH"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**a stronger sense of community**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈstrɒŋɡə sens əv kəˈmjuːnəti",
+          "phonetic": "uh STRONG-gur SENS uv kuh-MYOO-nuh-tee"
+        },
+        "american": {
+          "ipa": "ə ˈstrɒŋɡə sens əv kəˈmjuːnəti",
+          "phonetic": "uh STRONG-gur SENS uv kuh-MYOO-nuh-tee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**reduced motivation and loss of talent**",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈdjuːst ˌməʊtɪˈveɪʃən ənd lɒs əv ˈtælənt",
+          "phonetic": "rih-DYOOST moh-tih-VAY-shun und LOSS uv TAL-unt"
+        },
+        "american": {
+          "ipa": "rɪˈdjuːst ˌməʊtɪˈveɪʃən ənd lɒs əv ˈtælənt",
+          "phonetic": "rih-DYOOST moh-tih-VAY-shun und LOSS uv TAL-unt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**economic stagnation and lower productivity**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌekəˈnɒmɪk stæɡˈneɪʃən ənd ˈləʊə ˌprɒdʌkˈtɪvəti",
+          "phonetic": "ek-uh-NOM-ik stag-NAY-shun und LOH-ur prod-uk-TIV-uh-tee"
+        },
+        "american": {
+          "ipa": "ˌekəˈnɒmɪk stæɡˈneɪʃən ənd ˈləʊə ˌprɒdʌkˈtɪvəti",
+          "phonetic": "ek-uh-NOM-ik stag-NAY-shun und LOH-ur prod-uk-TIV-uh-tee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**social scientists**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsəʊʃəl ˈsaɪəntɪsts",
+          "phonetic": "SOH-shul SY-un-tists"
+        },
+        "american": {
+          "ipa": "ˈsəʊʃəl ˈsaɪəntɪsts",
+          "phonetic": "SOH-shul SY-un-tists"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**recruitment difficulties**",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈkruːtmənt ˈdɪfɪkəltiz",
+          "phonetic": "rih-KROOT-ment DIF-ih-kul-teez"
+        },
+        "american": {
+          "ipa": "rɪˈkruːtmənt ˈdɪfɪkəltiz",
+          "phonetic": "rih-KROOT-ment DIF-ih-kul-teez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**governments and policymakers**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɡʌvənmənts ənd ˈpɒləsiˌmeɪkəz",
+          "phonetic": "GUV-urn-ments und POL-uh-see-may-kurz"
+        },
+        "american": {
+          "ipa": "ˈɡʌvənmənts ənd ˈpɒləsiˌmeɪkəz",
+          "phonetic": "GUV-urn-ments und POL-uh-see-may-kurz"
         }
       },
       "difficulty": "hard",

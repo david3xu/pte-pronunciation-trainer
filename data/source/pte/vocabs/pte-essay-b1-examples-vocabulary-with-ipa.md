@@ -375,13 +375,13 @@
 
 245. **maximum wage limits** | /ˈmæksɪməm weɪdʒ ˈlɪmɪts/ — sounds like **MAK-sih-mum WAYJ LIM-its**
 246. **high earners** | /haɪ ˈɜːnəz/ — sounds like **HY UR-nurz**
-247. **reduced income inequality** | /rɪˈdjuːst ˈɪnkʌm ˌɪnɪˈkwɒləti/ — sounds like **rih-DYOOST IN-kum in-ih-KWOL-uh-tee**
-248. **fair wealth distribution and social harmony** | /feə welθ ˌdɪstrɪˈbjuːʃən ənd ˈsəʊʃəl ˈhɑːməni/ — sounds like **FAIR WELTH dis-trih-BYOO-shun und SOH-shul HAR-muh-nee**
-249. **better public resources** | /ˈbetə ˈpʌblɪk rɪˈzɔːsɪz/ — sounds like **BET-ur PUB-lik rih-ZOR-siz**
+247. **a fairer society** | /ə ˈfeərə səˈsaɪəti/ — sounds like **uh FAIR-ur suh-SY-uh-tee**
+248. **social fairness and equal opportunities** | /ˈsəʊʃəl ˈfeənəs ənd ˈiːkwəl ˌɒpəˈtjuːnətiz/ — sounds like **SOH-shul FAIR-nus und EE-kwul op-ur-TOO-nih-teez**
+249. **better public services** | /ˈbetə ˈpʌblɪk ˈsɜːvɪsɪz/ — sounds like **BET-ur PUB-lik SUR-vih-siz**
 250. **economic research** | /ˌekəˈnɒmɪk rɪˈsɜːtʃ/ — sounds like **ek-uh-NOM-ik rih-SURCH**
 251. **a stronger sense of community** | /ə ˈstrɒŋɡə sens əv kəˈmjuːnəti/ — sounds like **uh STRONG-gur SENS uv kuh-MYOO-nuh-tee**
 252. **reduced motivation and loss of talent** | /rɪˈdjuːst ˌməʊtɪˈveɪʃən ənd lɒs əv ˈtælənt/ — sounds like **rih-DYOOST moh-tih-VAY-shun und LOSS uv TAL-unt**
-253. **economic stagnation and lower productivity** | /ˌekəˈnɒmɪk stæɡˈneɪʃən ənd ˈləʊə ˌprɒdʌkˈtɪvəti/ — sounds like **ek-uh-NOM-ik stag-NAY-shun und LOH-ur prod-uk-TIV-uh-tee**
+253. **economic problems and lower productivity** | /ˌekəˈnɒmɪk ˈprɒbləmz ənd ˈləʊə ˌprɒdʌkˈtɪvəti/ — sounds like **ek-uh-NOM-ik PROB-lumz und LOH-ur prod-uk-TIV-uh-tee**
 254. **social scientists** | /ˈsəʊʃəl ˈsaɪəntɪsts/ — sounds like **SOH-shul SY-un-tists**
 255. **companies** | /ˈkʌmpəniz/ — sounds like **KUM-puh-neez**
 256. **recruitment difficulties** | /rɪˈkruːtmənt ˈdɪfɪkəltiz/ — sounds like **rih-KROOT-ment DIF-ih-kul-teez**

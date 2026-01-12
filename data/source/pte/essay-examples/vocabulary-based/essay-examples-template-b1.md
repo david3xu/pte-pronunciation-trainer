@@ -16,6 +16,7 @@
 5. **Easy to remember** - Don't use overly complicated combinations
 6. **Use topic keywords** - Main topic comes directly from the question
 7. **Word count** - Final essay must be 200-300 words (aim for 220-230)
+8. **Reuse existing terms** - Check other examples and reuse exact phrases if suitable to reduce learning load
 
 ### ❌ Avoid:
 - ❌ Long compound phrases (5+ words)
@@ -700,6 +701,36 @@ Taken together, these considerations demonstrate that **technology** has indeed 
 
 ---
 
+## Example 17: Maximum Wage Limits
+
+**Question:** "Should there be a maximum wage for high-paying people." To what extent do you agree with this statement? Please give your reasons and/or arguments.
+
+### Fill-in Terms (13 unique)
+
+**Main Topic:** maximum wage limits (repeat 8+ times)
+
+**Subjects:** high earners, society
+
+**Positive Outcomes:** a fairer society, reduced inequality, social fairness and equal opportunities, better public services
+
+**Negative Outcomes:** reduced motivation, loss of talent, economic problems, lower productivity
+
+**Evidence Sources:** economic research, social scientists
+
+**Conclusion:** governments and policymakers
+
+### Complete Essay (225 words)
+
+In recent years, the topic of **maximum wage limits** has emerged as a significant subject of public and academic discussion. I contend that **maximum wage limits** offer substantial benefits for **society** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **maximum wage limits** is its potential to bring about **a fairer society**. In particular, **maximum wage limits** can facilitate **social fairness and equal opportunities**, ultimately leading to broader outcomes such as **better public services**. For instance, evidence from **economic research** shows that many **high earners** experienced **a stronger sense of community** as a direct result of **maximum wage limits**.
+
+However, it is equally important to acknowledge that **maximum wage limits** may also give rise to certain challenges. This is largely because **maximum wage limits** are likely to generate **reduced motivation and loss of talent**, which may subsequently lead to **economic problems and lower productivity**. According to research by **social scientists**, a significant number of **companies** have been affected by **recruitment difficulties** resulting from **maximum wage limits**.
+
+Taken together, these considerations demonstrate the overall importance of **maximum wage limits**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **governments and policymakers** to allocate sufficient resources to address these challenges effectively.
+
+---
+
 ### 📚 Vocabulary List - Example 16
 
 1. technology
@@ -1131,45 +1162,17 @@ Taken together, these considerations demonstrate that **technology** has indeed 
 22. technology
 23. society and individuals
 
----
 
-## Example 17: Maximum Wage Limits
-
-**Question:** "Should there be a maximum wage for high-paying people." To what extent do you agree with this statement? Please give your reasons and/or arguments.
-
-### Fill-in Terms (13 unique)
-
-**Main Topic:** maximum wage limits (repeat 8+ times)
-
-**Subjects:** high earners, society
-
-**Positive Outcomes:** reduced income inequality, fair wealth distribution, social harmony, better public resources
-
-**Negative Outcomes:** reduced motivation, loss of talent, economic stagnation, lower productivity
-
-**Evidence Sources:** economic research, social scientists
-
-**Conclusion:** governments and policymakers
-
-### Complete Essay (225 words)
-
-In recent years, the topic of **maximum wage limits** has emerged as a significant subject of public and academic discussion. I contend that **maximum wage limits** offer substantial benefits for **society** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
-
-To begin with, one compelling advantage of **maximum wage limits** is its potential to bring about **reduced income inequality**. In particular, **maximum wage limits** can facilitate **fair wealth distribution and social harmony**, ultimately leading to broader outcomes such as **better public resources**. For instance, evidence from **economic research** shows that many **high earners** experienced **a stronger sense of community** as a direct result of **maximum wage limits**.
-
-However, it is equally important to acknowledge that **maximum wage limits** may also give rise to certain challenges. This is largely because **maximum wage limits** are likely to generate **reduced motivation and loss of talent**, which may subsequently lead to **economic stagnation and lower productivity**. According to research by **social scientists**, a significant number of **companies** have been affected by **recruitment difficulties** resulting from **maximum wage limits**.
-
-Taken together, these considerations demonstrate the overall importance of **maximum wage limits**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **governments and policymakers** to allocate sufficient resources to address these challenges effectively.
 
 ### Example 17: Maximum Wage Limits
 1. maximum wage limits
 2. maximum wage limits
 3. society
 4. maximum wage limits
-5. reduced income inequality
+5. a fairer society
 6. maximum wage limits
-7. fair wealth distribution and social harmony
-8. better public resources
+7. social fairness and equal opportunities
+8. better public services
 9. economic research
 10. high earners
 11. a stronger sense of community
@@ -1177,7 +1180,7 @@ Taken together, these considerations demonstrate the overall importance of **max
 13. maximum wage limits
 14. maximum wage limits
 15. reduced motivation and loss of talent
-16. economic stagnation and lower productivity
+16. economic problems and lower productivity
 17. social scientists
 18. companies
 19. recruitment difficulties

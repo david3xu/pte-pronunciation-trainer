@@ -422,7 +422,8 @@ class PTEDataPipeline {
           // Files that should keep duplicates (e.g., DI vocabulary that matches example images order)
           const filesWithDuplicates = [
             'pte-di-difficult-words',
-            'pte-di-easy-phrases'
+            'pte-di-easy-phrases',
+            'pte-essay-b1-examples-vocabulary'
           ];
 
           return {

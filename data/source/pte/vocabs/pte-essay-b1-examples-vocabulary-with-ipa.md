@@ -346,367 +346,398 @@
 ## Example 17: Maximum Wage Limits
 
 245. **maximum wage limits** | /ˈmæksɪməm weɪdʒ ˈlɪmɪts/ — sounds like **MAK-sih-mum WAYJ LIM-its**
-246. **high earners** | /haɪ ˈɜːnəz/ — sounds like **HY UR-nurz**
-247. **a fairer society and reduced poverty** | /ə ˈfeərə səˈsaɪəti ənd rɪˈdjuːst ˈpɒvəti/ — sounds like **uh FAIR-ur suh-SY-uh-tee und rih-DYOOST POV-ur-tee**
+246. **society** | /səˈsaɪəti/ — sounds like **suh-SY-uh-tee**
+247. **citizens** | /ˈsɪtɪzənz/ — sounds like **SIT-ih-zunz**
 248. **social fairness and equal opportunities** | /ˈsəʊʃəl ˈfeənəs ənd ˈiːkwəl ˌɒpəˈtjuːnətiz/ — sounds like **SOH-shul FAIR-nus und EE-kwul op-ur-TOO-nih-teez**
-249. **better public services and improved infrastructure** | /ˈbetə ˈpʌblɪk ˈsɜːvɪsɪz ənd ɪmˈpruːvd ˈɪnfrəˌstrʌktʃə/ — sounds like **BET-ur PUB-lik SUR-vih-siz und im-PROOVD IN-fruh-struk-chur**
-250. **economic research** | /ˌekəˈnɒmɪk rɪˈsɜːtʃ/ — sounds like **ek-uh-NOM-ik rih-SURCH**
-251. **a stronger sense of community and social responsibility** | /ə ˈstrɒŋɡə sens əv kəˈmjuːnəti ənd ˈsəʊʃəl rɪˌspɒnsɪˈbɪləti/ — sounds like **uh STRONG-gur SENS uv kuh-MYOO-nuh-tee und SOH-shul rih-spon-suh-BIL-uh-tee**
-252. **reduced motivation and loss of talent** | /rɪˈdjuːst ˌməʊtɪˈveɪʃən ənd lɒs əv ˈtælənt/ — sounds like **rih-DYOOST moh-tih-VAY-shun und LOSS uv TAL-unt**
-253. **economic problems and lower productivity** | /ˌekəˈnɒmɪk ˈprɒbləmz ənd ˈləʊə ˌprɒdʌkˈtɪvəti/ — sounds like **ek-uh-NOM-ik PROB-lumz und LOH-ur prod-uk-TIV-uh-tee**
-254. **social scientists** | /ˈsəʊʃəl ˈsaɪəntɪsts/ — sounds like **SOH-shul SY-un-tists**
-255. **companies** | /ˈkʌmpəniz/ — sounds like **KUM-puh-neez**
-256. **recruitment difficulties and higher staff turnover** | /rɪˈkruːtmənt ˈdɪfɪkəltiz ənd ˈhaɪə stɑːf ˈtɜːnəʊvə/ — sounds like **rih-KROOT-ment DIF-ih-kul-teez und HY-ur STAHF TURN-oh-vur**
-257. **governments and policymakers** | /ˈɡʌvənmənts ənd ˈpɒləsiˌmeɪkəz/ — sounds like **GUV-urn-ments und POL-uh-see-may-kurz**
+249. **reduced poverty and better public services** | /rɪˈdjuːst ˈpɒvəti ənd ˈbetə ˈpʌblɪk ˈsɜːvɪsɪz/ — sounds like **rih-DYOOST POV-ur-tee und BET-ur PUB-lik SUR-vih-siz**
+250. **community spirit and social responsibility** | /kəˈmjuːnəti ˈspɪrɪt ənd ˈsəʊʃəl rɪˌspɒnsəˈbɪləti/ — sounds like **kuh-MYOO-nuh-tee SPIR-it und SOH-shul rih-spon-suh-BIL-uh-tee**
+251. **economic research** | /ˌiːkəˈnɒmɪk rɪˈsɜːtʃ/ — sounds like **ee-kuh-NOM-ik rih-SURCH**
+252. **improved infrastructure and shared resources** | /ɪmˈpruːvd ˈɪnfrəˌstrʌktʃə ənd ʃeəd rɪˈzɔːsɪz/ — sounds like **im-PROOVD IN-fruh-struk-chur und SHAIRD rih-SOR-siz**
+253. **reduced motivation and talent loss** | /rɪˈdjuːst ˌməʊtɪˈveɪʃən ənd ˈtælənt lɒs/ — sounds like **rih-DYOOST moh-tih-VAY-shun und TAL-unt LOSS**
+254. **economic problems and lower productivity** | /ˌiːkəˈnɒmɪk ˈprɒbləmz ənd ˈləʊə ˌprɒdʌkˈtɪvəti/ — sounds like **ee-kuh-NOM-ik PROB-lumz und LOH-ur prod-uk-TIV-uh-tee**
+255. **social scientists** | /ˈsəʊʃəl ˈsaɪəntɪsts/ — sounds like **SOH-shul SY-un-tists**
+256. **companies** | /ˈkʌmpəniz/ — sounds like **KUM-puh-neez**
+257. **recruitment difficulties and higher staff turnover** | /rɪˈkruːtmənt ˈdɪfɪkəltiz ənd ˈhaɪə stɑːf ˈtɜːnəʊvə/ — sounds like **rih-KROOT-ment DIF-ih-kul-teez und HY-ur STAHF TURN-oh-vur**
+258. **governments and policymakers** | /ˈɡʌvənmənts ənd ˈpɒləsiˌmeɪkəz/ — sounds like **GUV-urn-ments und POL-uh-see-may-kurz**
 
 ---
 
 ## Example 18: Modern Childhood
 
-258. **modern childhood** | /ˈmɒdən ˈtʃaɪldhʊd/ — sounds like **MOD-urn CHYLD-hud**
-259. **children** | /ˈtʃɪldrən/ — sounds like **CHIL-drun**
-260. **parents** | /ˈpeərənts/ — sounds like **PAIR-unts**
-261. **better medical treatment** | /ˈbetə ˈmedɪkəl ˈtriːtmənt/ — sounds like **BET-ur MED-ih-kul TREET-ment**
-262. **easier access to education** | /ˈiːziə ˈækses tuː ˌedjʊˈkeɪʃən/ — sounds like **EE-zee-ur AK-sess too ej-oo-KAY-shun**
-263. **technological advances** | /ˌteknəˈlɒdʒɪkəl ədˈvɑːnsɪz/ — sounds like **tek-nuh-LOJ-ih-kul ud-VAHN-siz**
-264. **higher living standards** | /ˈhaɪə ˈlɪvɪŋ ˈstændədz/ — sounds like **HY-ur LIV-ing STAN-durdz**
-265. **academic pressure** | /ˌækəˈdemɪk ˈpreʃə/ — sounds like **ak-uh-DEM-ik PRESH-ur**
-266. **stress** | /stres/ — sounds like **STRESS**
-267. **health studies** | /helθ ˈstʌdiz/ — sounds like **HELTH STUD-eez**
-268. **improved well-being** | /ɪmˈpruːvd welˈbiːɪŋ/ — sounds like **im-PROOVD wel-BEE-ing**
-269. **excessive screen time** | /ɪkˈsesɪv skriːn taɪm/ — sounds like **ik-SES-iv SKREEN TYM**
-270. **social isolation** | /ˈsəʊʃəl ˌaɪsəˈleɪʃən/ — sounds like **SOH-shul eye-suh-LAY-shun**
-271. **mental pressure** | /ˈmentəl ˈpreʃə/ — sounds like **MEN-tul PRESH-ur**
-272. **education research** | /ˌedjʊˈkeɪʃən rɪˈsɜːtʃ/ — sounds like **ej-oo-KAY-shun rih-SURCH**
-273. **parents and schools** | /ˈpeərənts ənd skuːlz/ — sounds like **PAIR-unts und SKOOLZ**
-
-261. **better medical treatment and improved nutrition** | /ˈbetə ˈmedɪkəl ˈtriːtmənt ənd ɪmˈpruːvd njuːˈtrɪʃən/ — sounds like **BET-ur MED-ih-kul TREET-ment und im-PROOVD nyoo-TRISH-un**
-262. **easier access to education and technological advances** | /ˈiːziə ˈækses tuː ˌedjʊˈkeɪʃən ənd ˌteknəˈlɒdʒɪkəl ədˈvɑːnsɪz/ — sounds like **EE-zee-ur AK-sess too ej-oo-KAY-shun und tek-nuh-LOJ-ih-kul ud-VAHN-siz**
+259. **modern childhood** | /ˈmɒdən ˈtʃaɪldhʊd/ — sounds like **MOD-urn CHYLD-hud**
+260. **children** | /ˈtʃɪldrən/ — sounds like **CHIL-drun**
+261. **parents** | /ˈpeərənts/ — sounds like **PAIR-unts**
+262. **better medical treatment and improved nutrition** | /ˈbetə ˈmedɪkəl ˈtriːtmənt ənd ɪmˈpruːvd njuːˈtrɪʃən/ — sounds like **BET-ur MED-ih-kul TREET-ment und im-PROOVD nyoo-TRISH-un**
+263. **easier access to education and technological advances** | /ˈiːziə ˈækses tuː ˌedjʊˈkeɪʃən ənd ˌteknəˈlɒdʒɪkəl ədˈvɑːnsɪz/ — sounds like **EE-zee-ur AK-sess too ej-oo-KAY-shun und tek-nuh-LOJ-ih-kul ud-VAHN-siz**
 264. **higher living standards and safer environments** | /ˈhaɪə ˈlɪvɪŋ ˈstændədz ənd ˈseɪfə ɪnˈvaɪrənmənts/ — sounds like **HY-ur LIV-ing STAN-durdz und SAY-fur in-VY-run-ments**
-268. **improved well-being and physical health** | /ɪmˈpruːvd welˈbiːɪŋ ənd ˈfɪzɪkəl helθ/ — sounds like **im-PROOVD wel-BEE-ing und FIZ-ih-kul HELTH**
-269. **academic pressure and excessive screen time** | /ˌækəˈdemɪk ˈpreʃə ənd ɪkˈsesɪv skriːn taɪm/ — sounds like **ak-uh-DEM-ik PRESH-ur und ik-SES-iv SKREEN TYM**
-270. **social isolation and mental pressure** | /ˈsəʊʃəl ˌaɪsəˈleɪʃən ənd ˈmentəl ˈpreʃə/ — sounds like **SOH-shul eye-suh-LAY-shun und MEN-tul PRESH-ur**
-271. **stress and anxiety** | /stres ənd æŋˈzaɪəti/ — sounds like **STRESS und ang-ZY-uh-tee**
+265. **health studies** | /helθ ˈstʌdiz/ — sounds like **HELTH STUD-eez**
+266. **improved well-being and physical health** | /ɪmˈpruːvd welˈbiːɪŋ ənd ˈfɪzɪkəl helθ/ — sounds like **im-PROOVD wel-BEE-ing und FIZ-ih-kul HELTH**
+267. **academic pressure and excessive screen time** | /ˌækəˈdemɪk ˈpreʃə ənd ɪkˈsesɪv skriːn taɪm/ — sounds like **ak-uh-DEM-ik PRESH-ur und ik-SES-iv SKREEN TYM**
+268. **social isolation and mental pressure** | /ˈsəʊʃəl ˌaɪsəˈleɪʃən ənd ˈmentəl ˈpreʃə/ — sounds like **SOH-shul eye-suh-LAY-shun und MEN-tul PRESH-ur**
+269. **education research** | /ˌedjʊˈkeɪʃən rɪˈsɜːtʃ/ — sounds like **ej-oo-KAY-shun rih-SURCH**
+270. **stress and emotional difficulties** | /stres ənd ɪˈməʊʃənəl ˈdɪfɪkəltiz/ — sounds like **STRESS und ih-MOH-shun-ul DIF-ih-kul-teez**
+271. **parents and schools** | /ˈpeərənts ənd skuːlz/ — sounds like **PAIR-unts und SKOOLZ**
 
 ---
 
 ## Example 19: Restoration vs Housing
 
-274. **restoring old buildings** | /rɪˈstɔːrɪŋ əʊld ˈbɪldɪŋz/ — sounds like **rih-STOR-ing OLD BIL-dingz**
-275. **cultural identity and historical value** | /ˈkʌltʃərəl aɪˈdentəti ənd hɪˈstɒrɪkəl ˈvæljuː/ — sounds like **KUL-chuh-rul eye-DEN-tuh-tee und his-TOR-ih-kul VAL-yoo**
-276. **tourism income and economic growth** | /ˈtʊərɪzəm ˈɪnkʌm ənd ˌekəˈnɒmɪk ɡrəʊθ/ — sounds like **TOOR-iz-um IN-kum und ek-uh-NOM-ik GROHTH**
-277. **global recognition and more tourists** | /ˈɡləʊbəl ˌrekəɡˈnɪʃən ənd mɔː ˈtʊərɪsts/ — sounds like **GLOH-bul rek-ug-NISH-un und MOR TOOR-ists**
-278. **architectural beauty and urban character** | /ˌɑːkɪˈtektʃərəl ˈbjuːti ənd ˈɜːbən ˈkærɪktə/ — sounds like **ah-kuh-TEK-chuh-rul BYOO-tee und UR-bun KA-rik-tur**
-279. **housing shortages and rising property prices** | /ˈhaʊzɪŋ ˈʃɔːtɪdʒɪz ənd ˈraɪzɪŋ ˈprɒpəti ˈpraɪsɪz/ — sounds like **HOW-zing SHOR-tih-jiz und RY-zing PROP-ur-tee PRY-siz**
-280. **financial pressure and limited budget** | /faɪˈnænʃəl ˈpreʃə ənd ˈlɪmɪtɪd ˈbʌdʒɪt/ — sounds like **fy-NAN-shul PRESH-ur und LIM-it-id BUJ-it**
+274. **spending on building restoration** | /ˈspendɪŋ ɒn ˈbɪldɪŋ ˌrestəˈreɪʃən/ — sounds like **SPEN-ding on BIL-ding res-tuh-RAY-shun**
+275. **governments** | /ˈɡʌvənmənts/ — sounds like **GUV-urn-ments**
+276. **citizens** | /ˈsɪtɪzənz/ — sounds like **SIT-ih-zunz**
+277. **cultural identity and historical value** | /ˈkʌltʃərəl aɪˈdentəti ənd hɪˈstɒrɪkəl ˈvæljuː/ — sounds like **KUL-chuh-rul eye-DEN-tuh-tee und his-TOR-ih-kul VAL-yoo**
+278. **tourism income and economic benefits** | /ˈtʊərɪzəm ˈɪnkʌm ənd ˌiːkəˈnɒmɪk ˈbenɪfɪts/ — sounds like **TOOR-iz-um IN-kum und ee-kuh-NOM-ik BEN-ih-fits**
+279. **political support and public interest** | /pəˈlɪtɪkəl səˈpɔːt ənd ˈpʌblɪk ˈɪntrəst/ — sounds like **puh-LIT-ih-kul suh-PORT und PUB-lik IN-trust**
+280. **global recognition and more tourists** | /ˈɡləʊbəl ˌrekəɡˈnɪʃən ənd mɔː ˈtʊərɪsts/ — sounds like **GLOH-bul rek-ug-NISH-un und MOR TOOR-ists**
 281. **urban planning research** | /ˈɜːbən ˈplænɪŋ rɪˈsɜːtʃ/ — sounds like **UR-bun PLAN-ing rih-SURCH**
-282. **housing experts** | /ˈhaʊzɪŋ ˈekspɜːts/ — sounds like **HOW-zing EK-spurts**
-283. **homelessness and high rents** | /ˈhəʊmləsnəs ənd haɪ rents/ — sounds like **HOHM-less-nuss und HY RENTS**
-284. **governments and city planners** | /ˈɡʌvənmənts ənd ˈsɪti ˈplænəz/ — sounds like **GUV-urn-ments und SIT-ee PLAN-urz**
+282. **housing investment** | /ˈhaʊzɪŋ ɪnˈvestmənt/ — sounds like **HOW-zing in-VEST-ment**
+283. **housing programs and new developments** | /ˈhaʊzɪŋ ˈprəʊɡræmz ənd njuː dɪˈveləpmənts/ — sounds like **HOW-zing PROH-gramz und NYOO dih-VEL-up-ments**
+284. **affordable housing and urban growth** | /əˈfɔːdəbəl ˈhaʊzɪŋ ənd ˈɜːbən ɡrəʊθ/ — sounds like **uh-FOR-duh-bul HOW-zing und UR-bun GROHTH**
+285. **government investment and policy changes** | /ˈɡʌvənmənt ɪnˈvestmənt ənd ˈpɒləsi ˈtʃeɪndʒɪz/ — sounds like **GUV-urn-ment in-VEST-ment und POL-uh-see CHAYN-jiz**
+286. **housing experts** | /ˈhaʊzɪŋ ˈekspɜːts/ — sounds like **HOW-zing EK-spurts**
+287. **balanced spending on both restoration and housing** | /ˈbælənst ˈspendɪŋ ɒn bəʊθ ˌrestəˈreɪʃən ənd ˈhaʊzɪŋ/ — sounds like **BAL-unst SPEN-ding on BOHTH res-tuh-RAY-shun und HOW-zing**
+288. **governments and city planners** | /ˈɡʌvənmənts ənd ˈsɪti ˈplænəz/ — sounds like **GUV-urn-ments und SIT-ee PLAN-urz**
 
 ---
 
 ## Example 20: AI vs Language Learning
 
-285. **learning a foreign language** | /ˈlɜːnɪŋ ə ˈfɒrɪn ˈlæŋɡwɪdʒ/ — sounds like **LUR-ning uh FOR-in LANG-gwij**
-286. **students** | /ˈstjuːdənts/ — sounds like **STYOO-dunts**
-287. **professionals** | /prəˈfeʃənəlz/ — sounds like **pruh-FESH-uh-nulz**
-288. **cultural understanding and human connection** | /ˈkʌltʃərəl ˌʌndəˈstændɪŋ ənd ˈhjuːmən kəˈnekʃən/ — sounds like **KUL-chuh-rul un-dur-STAN-ding und HYOO-mun kuh-NEK-shun**
-289. **career opportunities and real relationships** | /kəˈrɪə ˌɒpəˈtjuːnətiz ənd rɪəl rɪˈleɪʃənʃɪps/ — sounds like **kuh-REER op-ur-TOO-nih-teez und REEL rih-LAY-shun-ships**
-290. **personal growth and confidence** | /ˈpɜːsənəl ɡrəʊθ ənd ˈkɒnfɪdəns/ — sounds like **PUR-sun-ul GROTH und KON-fih-duns**
-292. **relying on AI translation** | /rɪˈlaɪɪŋ ɒn ˌeɪˈaɪ trænsˈleɪʃən/ — sounds like **rih-LY-ing on AY-EYE trans-LAY-shun**
-293. **translation errors and lack of emotion** | /trænsˈleɪʃən ˈerəz ənd læk əv ɪˈməʊʃən/ — sounds like **trans-LAY-shun ER-urz und LAK uv ih-MOH-shun**
-294. **misunderstandings and social distance** | /ˌmɪsʌndəˈstændɪŋz ənd ˈsəʊʃəl ˈdɪstəns/ — sounds like **miss-un-dur-STAN-dingz und SOH-shul DIS-tuns**
-295. **basic communication and loss of skills** | /ˈbeɪsɪk kəˌmjuːnɪˈkeɪʃən ənd lɒs əv skɪlz/ — sounds like **BAY-sik kuh-myoo-nih-KAY-shun und LOSS uv SKILZ**
-296. **communication experts** | /kəˌmjuːnɪˈkeɪʃən ˈekspɜːts/ — sounds like **kuh-myoo-nih-KAY-shun EK-spurts**
-297. **users** | /ˈjuːzəz/ — sounds like **YOO-zurz**
-298. **schools and individuals** | /skuːlz ənd ˌɪndɪˈvɪdʒuəlz/ — sounds like **SKOOLZ und in-dih-VIJ-oo-ulz**
+289. **learning a foreign language** | /ˈlɜːnɪŋ ə ˈfɒrɪn ˈlæŋɡwɪdʒ/ — sounds like **LUR-ning uh FOR-in LANG-gwij**
+290. **students** | /ˈstjuːdənts/ — sounds like **STYOO-dunts**
+291. **cultural understanding and human connection** | /ˈkʌltʃərəl ˌʌndəˈstændɪŋ ənd ˈhjuːmən kəˈnekʃən/ — sounds like **KUL-chuh-rul un-dur-STAN-ding und HYOO-mun kuh-NEK-shun**
+292. **career opportunities and stronger relationships** | /kəˈrɪə ˌɒpəˈtjuːnətiz ənd ˈstrɒŋɡə rɪˈleɪʃənʃɪps/ — sounds like **kuh-REER op-ur-TOO-nih-teez und STRONG-ur rih-LAY-shun-ships**
+293. **personal growth and greater confidence** | /ˈpɜːsənəl ɡrəʊθ ənd ˈɡreɪtə ˈkɒnfɪdəns/ — sounds like **PUR-sun-ul GROHTH und GRAY-tur KON-fih-duns**
+294. **linguistic research** | /lɪŋˈɡwɪstɪk rɪˈsɜːtʃ/ — sounds like **ling-GWIS-tik rih-SURCH**
+295. **relying on AI translation** | /rɪˈlaɪɪŋ ɒn ˌeɪˈaɪ trænsˈleɪʃən/ — sounds like **rih-LY-ing on AY-EYE trans-LAY-shun**
+296. **AI tools** | /ˌeɪˈaɪ tuːlz/ — sounds like **AY-EYE TOOLZ**
+297. **translation errors and emotional disconnect** | /trænsˈleɪʃən ˈerəz ənd ɪˈməʊʃənəl ˌdɪskəˈnekt/ — sounds like **trans-LAY-shun ER-urz und ih-MOH-shun-ul dis-kuh-NEKT**
+298. **misunderstandings and social distance** | /ˌmɪsʌndəˈstændɪŋz ənd ˈsəʊʃəl ˈdɪstəns/ — sounds like **miss-un-dur-STAN-dingz und SOH-shul DIS-tuns**
+299. **communication experts** | /kəˌmjuːnɪˈkeɪʃən ˈekspɜːts/ — sounds like **kuh-myoo-nih-KAY-shun EK-spurts**
+300. **users** | /ˈjuːzəz/ — sounds like **YOO-zurz**
+301. **basic communication and skill loss** | /ˈbeɪsɪk kəˌmjuːnɪˈkeɪʃən ənd skɪl lɒs/ — sounds like **BAY-sik kuh-myoo-nih-KAY-shun und SKIL LOSS**
+302. **schools and individuals** | /skuːlz ənd ˌɪndɪˈvɪdʒuəlz/ — sounds like **SKOOLZ und in-dih-VIJ-oo-ulz**
 
 ---
 
 ## Example 21: Working Less Hours
 
-299. **working fewer hours** | /ˈwɜːkɪŋ ˈfjuːə ˈaʊəz/ — sounds like **WUR-king FYOO-ur OW-urz**
-300. **technological advances and digital automation** | /ˌteknəˈlɒdʒɪkəl ədˈvɑːnsɪz ənd ˈdɪdʒɪtəl ˌɔːtəˈmeɪʃən/ — sounds like **tek-nuh-LOJ-ih-kul ud-VAHN-siz und DIJ-ih-tul or-tuh-MAY-shun**
-301. **artificial intelligence and improved efficiency** | /ˌɑːtɪˈfɪʃəl ɪnˈtelɪdʒəns ənd ɪmˈpruːvd ɪˈfɪʃənsi/ — sounds like **ar-tih-FISH-ul in-TEL-ih-juns und im-PROOVD ih-FISH-un-see**
-302. **higher productivity and greater flexibility** | /ˈhaɪə ˌprɒdʌkˈtɪvəti ənd ˈɡreɪtə ˌfleksəˈbɪləti/ — sounds like **HY-ur prod-uk-TIV-uh-tee und GRAY-tur flek-suh-BIL-uh-tee**
-303. **remote work and significant time savings** | /rɪˈməʊt wɜːk ənd sɪɡˈnɪfɪkənt taɪm ˈseɪvɪŋz/ — sounds like **rih-MOHT WURK und sig-NIF-ih-kunt TYM SAY-vingz**
-304. **economic pressure and business competition** | /ˌiːkəˈnɒmɪk ˈpreʃə ənd ˈbɪznəs ˌkɒmpəˈtɪʃən/ — sounds like **ee-kuh-NOM-ik PRESH-ur und BIZ-nus kom-puh-TISH-un**
-305. **employer expectations and workload demands** | /ɪmˈplɔɪə ˌekspekˈteɪʃənz ənd ˈwɜːkləʊd dɪˈmɑːndz/ — sounds like **im-PLOY-ur ek-spek-TAY-shunz und WURK-lohd dih-MAHNDS**
-306. **financial needs and career requirements** | /faɪˈnænʃəl niːdz ənd kəˈrɪə rɪˈkwaɪəmənts/ — sounds like **fy-NAN-shul NEEDZ und kuh-REER rih-KWY-ur-munts**
-307. **workplace research** | /ˈwɜːkpleɪs rɪˈsɜːtʃ/ — sounds like **WURK-plays rih-SURCH**
-308. **business experts** | /ˈbɪznɪs ˈekspɜːts/ — sounds like **BIZ-niss EK-spurts**
-309. **employers and governments** | /ɪmˈplɔɪəz ənd ˈɡʌvnmənts/ — sounds like **im-PLOY-urz und GUV-un-munts**
+303. **working fewer hours** | /ˈwɜːkɪŋ ˈfjuːə ˈaʊəz/ — sounds like **WUR-king FYOO-ur OW-urz**
+304. **employees** | /ɪmˈplɔɪiːz/ — sounds like **im-PLOY-eez**
+305. **workers** | /ˈwɜːkəz/ — sounds like **WUR-kurz**
+306. **technological advances and digital automation** | /ˌteknəˈlɒdʒɪkəl ədˈvɑːnsɪz ənd ˈdɪdʒɪtəl ˌɔːtəˈmeɪʃən/ — sounds like **tek-nuh-LOJ-ih-kul ud-VAHN-siz und DIJ-ih-tul or-tuh-MAY-shun**
+307. **artificial intelligence and improved efficiency** | /ˌɑːtɪˈfɪʃəl ɪnˈtelɪdʒəns ənd ɪmˈpruːvd ɪˈfɪʃənsi/ — sounds like **ar-tih-FISH-ul in-TEL-ih-juns und im-PROOVD ih-FISH-un-see**
+308. **higher productivity and greater flexibility** | /ˈhaɪə ˌprɒdʌkˈtɪvəti ənd ˈɡreɪtə ˌfleksəˈbɪləti/ — sounds like **HY-ur prod-uk-TIV-uh-tee und GRAY-tur flek-suh-BIL-uh-tee**
+309. **workplace research** | /ˈwɜːkpleɪs rɪˈsɜːtʃ/ — sounds like **WURK-plays rih-SURCH**
+310. **remote work and significant time savings** | /rɪˈməʊt wɜːk ənd sɪɡˈnɪfɪkənt taɪm ˈseɪvɪŋz/ — sounds like **rih-MOHT WURK und sig-NIF-ih-kunt TYM SAY-vingz**
+311. **economic pressure and business competition** | /ˌiːkəˈnɒmɪk ˈpreʃə ənd ˈbɪznəs ˌkɒmpəˈtɪʃən/ — sounds like **ee-kuh-NOM-ik PRESH-ur und BIZ-nus kom-puh-TISH-un**
+312. **employer expectations and workload demands** | /ɪmˈplɔɪə ˌekspekˈteɪʃənz ənd ˈwɜːkləʊd dɪˈmɑːndz/ — sounds like **im-PLOY-ur ek-spek-TAY-shunz und WURK-lohd dih-MAHNDS**
+313. **business experts** | /ˈbɪznɪs ˈekspɜːts/ — sounds like **BIZ-niss EK-spurts**
+314. **financial needs and career requirements** | /faɪˈnænʃəl niːdz ənd kəˈrɪə rɪˈkwaɪəmənts/ — sounds like **fy-NAN-shul NEEDZ und kuh-REER rih-KWY-ur-munts**
+315. **employers and governments** | /ɪmˈplɔɪəz ənd ˈɡʌvənmənts/ — sounds like **im-PLOY-urz und GUV-urn-ments**
 
 ---
 
 ## Example 22: Age Restrictions for Marriage
 
-309. **age restrictions for marriage** | /eɪdʒ rɪˈstrɪkʃənz fɔː ˈmærɪdʒ/ — sounds like **AYJ rih-STRIK-shunz for MAR-ij**
-310. **emotional stability and support** | /ɪˈməʊʃənəl stəˈbɪləti ənd səˈpɔːt/ — sounds like **ih-MOH-shun-ul stuh-BIL-uh-tee und suh-PORT**
-311. **personal growth and stable relationships** | /ˈpɜːsənəl ɡrəʊθ ənd ˈsteɪbəl rɪˈleɪʃənʃɪps/ — sounds like **PUR-sun-ul GROHTH und STAY-bul rih-LAY-shun-ships**
-312. **better education and career opportunities** | /ˈbetə ˌedjʊˈkeɪʃən ənd kəˈrɪə ˌɒpəˈtjuːnətiz/ — sounds like **BET-ur ej-oo-KAY-shun und kuh-REER op-ur-TOO-nih-teez**
-313. **stronger bonds and greater happiness** | /ˈstrɒŋɡə bɒndz ənd ˈɡreɪtə ˈhæpɪnəs/ — sounds like **STRONG-ur BONDZ und GRAY-tur HAP-ih-nus**
-314. **frustration and limited choices** | /frʌˈstreɪʃən ənd ˈlɪmɪtɪd ˈtʃɔɪsɪz/ — sounds like **frus-TRAY-shun und LIM-ih-tid CHOY-siz**
-315. **social pressure and cultural expectations** | /ˈsəʊʃəl ˈpreʃə ənd ˈkʌltʃərəl ˌekspekˈteɪʃənz/ — sounds like **SOH-shul PRESH-ur und KUL-chur-ul ek-spek-TAY-shunz**
-316. **delayed family planning and personal decisions** | /dɪˈleɪd ˈfæməli ˈplænɪŋ ənd ˈpɜːsənəl dɪˈsɪʒənz/ — sounds like **dih-LAYD FAM-uh-lee PLAN-ing und PUR-sun-ul dih-SIZH-unz**
-317. **psychological research** | /ˌsaɪkəˈlɒdʒɪkəl rɪˈsɜːtʃ/ — sounds like **sy-kuh-LOJ-ih-kul rih-SURCH**
-318. **social researchers** | /ˈsəʊʃəl rɪˈsɜːtʃəz/ — sounds like **SOH-shul rih-SUR-churz**
-319. **governments and communities** | /ˈɡʌvənmənts ənd kəˈmjuːnətiz/ — sounds like **GUV-urn-ments und kuh-MYOO-nih-teez**
+316. **age restrictions for marriage** | /eɪdʒ rɪˈstrɪkʃənz fɔː ˈmærɪdʒ/ — sounds like **AYJ rih-STRIK-shunz for MAR-ij**
+317. **21 years old** | /ˌtwentiˈwʌn jɪəz əʊld/ — sounds like **twen-tee-WUN YEERZ OHLD**
+318. **young people** | /jʌŋ ˈpiːpəl/ — sounds like **YUNG PEE-pul**
+319. **young couples** | /jʌŋ ˈkʌpəlz/ — sounds like **YUNG KUP-ulz**
+320. **emotional stability and support** | /ɪˈməʊʃənəl stəˈbɪləti ənd səˈpɔːt/ — sounds like **ih-MOH-shun-ul stuh-BIL-uh-tee und suh-PORT**
+321. **personal growth and stable relationships** | /ˈpɜːsənəl ɡrəʊθ ənd ˈsteɪbəl rɪˈleɪʃənʃɪps/ — sounds like **PUR-sun-ul GROHTH und STAY-bul rih-LAY-shun-ships**
+322. **better education and career opportunities** | /ˈbetə ˌedjʊˈkeɪʃən ənd kəˈrɪə ˌɒpəˈtjuːnətiz/ — sounds like **BET-ur ej-oo-KAY-shun und kuh-REER op-ur-TOO-nih-teez**
+323. **psychological research** | /ˌsaɪkəˈlɒdʒɪkəl rɪˈsɜːtʃ/ — sounds like **sy-kuh-LOJ-ih-kul rih-SURCH**
+324. **stronger bonds and greater happiness** | /ˈstrɒŋɡə bɒndz ənd ˈɡreɪtə ˈhæpɪnəs/ — sounds like **STRONG-ur BONDZ und GRAY-tur HAP-ih-nus**
+325. **strict age limits** | /strɪkt eɪdʒ ˈlɪmɪts/ — sounds like **STRIKT AYJ LIM-its**
+326. **frustration and limited choices** | /frʌˈstreɪʃən ənd ˈlɪmɪtɪd ˈtʃɔɪsɪz/ — sounds like **frus-TRAY-shun und LIM-ih-tid CHOY-siz**
+327. **social pressure and cultural expectations** | /ˈsəʊʃəl ˈpreʃə ənd ˈkʌltʃərəl ˌekspekˈteɪʃənz/ — sounds like **SOH-shul PRESH-ur und KUL-chur-ul ek-spek-TAY-shunz**
+328. **social researchers** | /ˈsəʊʃəl rɪˈsɜːtʃəz/ — sounds like **SOH-shul rih-SUR-churz**
+329. **delayed family planning and personal decisions** | /dɪˈleɪd ˈfæməli ˈplænɪŋ ənd ˈpɜːsənəl dɪˈsɪʒənz/ — sounds like **dih-LAYD FAM-uh-lee PLAN-ing und PUR-sun-ul dih-SIZH-unz**
+330. **governments and communities** | /ˈɡʌvənmənts ənd kəˈmjuːnətiz/ — sounds like **GUV-urn-ments und kuh-MYOO-nih-teez**
 
 ---
 
 ## Example 23: Laws and Human Behavior
 
-320. **laws changing behavior** | /lɔːz ˈtʃeɪndʒɪŋ bɪˈheɪvjə/ — sounds like **LAWZ CHAYN-jing bih-HAY-vyur**
-321. **public safety and social order** | /ˈpʌblɪk ˈseɪfti ənd ˈsəʊʃəl ˈɔːdə/ — sounds like **PUB-lik SAYF-tee und SOH-shul OR-dur**
-322. **strong enforcement and clear penalties** | /strɒŋ ɪnˈfɔːsmənt ənd klɪə ˈpenəltiz/ — sounds like **STRONG in-FORS-ment und KLEER PEN-ul-teez**
-323. **public awareness and lifestyle changes** | /ˈpʌblɪk əˈweənəs ənd ˈlaɪfstaɪl ˈtʃeɪndʒɪz/ — sounds like **PUB-lik uh-WAIR-nus und LYF-styl CHAYN-jiz**
-324. **reduced crime and better compliance** | /rɪˈdjuːst kraɪm ənd ˈbetə kəmˈplaɪəns/ — sounds like **rih-DYOOST KRYM und BET-ur kum-PLY-uns**
-325. **limited effectiveness and cultural resistance** | /ˈlɪmɪtɪd ɪˈfektɪvnəs ənd ˈkʌltʃərəl rɪˈzɪstəns/ — sounds like **LIM-ih-tid ih-FEK-tiv-nus und KUL-chur-ul rih-ZIS-tuns**
-326. **personal beliefs and individual values** | /ˈpɜːsənəl bɪˈliːfs ənd ˌɪndɪˈvɪdʒuəl ˈvæljuːz/ — sounds like **PUR-sun-ul bih-LEEFS und in-dih-VIJ-oo-ul VAL-yooz**
-327. **enforcement difficulties and high costs** | /ɪnˈfɔːsmənt ˈdɪfɪkəltiz ənd haɪ kɒsts/ — sounds like **in-FORS-ment DIF-ih-kul-teez und HY KOSTS**
-328. **legal research** | /ˈliːɡəl rɪˈsɜːtʃ/ — sounds like **LEE-gul rih-SURCH**
-329. **social scientists** | /ˈsəʊʃəl ˈsaɪəntɪsts/ — sounds like **SOH-shul SY-un-tists**
-330. **governments and policymakers** | /ˈɡʌvənmənts ənd ˈpɒləsiˌmeɪkəz/ — sounds like **GUV-urn-ments und POL-uh-see-may-kurz**
+331. **laws changing behavior** | /lɔːz ˈtʃeɪndʒɪŋ bɪˈheɪvjə/ — sounds like **LAWZ CHAYN-jing bih-HAY-vyur**
+332. **citizens** | /ˈsɪtɪzənz/ — sounds like **SIT-ih-zunz**
+333. **governments** | /ˈɡʌvənmənts/ — sounds like **GUV-urn-ments**
+334. **public safety and social order** | /ˈpʌblɪk ˈseɪfti ənd ˈsəʊʃəl ˈɔːdə/ — sounds like **PUB-lik SAYF-tee und SOH-shul OR-dur**
+335. **strong enforcement and clear penalties** | /strɒŋ ɪnˈfɔːsmənt ənd klɪə ˈpenəltiz/ — sounds like **STRONG in-FORS-ment und KLEER PEN-ul-teez**
+336. **public awareness and lifestyle changes** | /ˈpʌblɪk əˈweənəs ənd ˈlaɪfstaɪl ˈtʃeɪndʒɪz/ — sounds like **PUB-lik uh-WAIR-nus und LYF-styl CHAYN-jiz**
+337. **legal research** | /ˈliːɡəl rɪˈsɜːtʃ/ — sounds like **LEE-gul rih-SURCH**
+338. **reduced crime and better compliance** | /rɪˈdjuːst kraɪm ənd ˈbetə kəmˈplaɪəns/ — sounds like **rih-DYOOST KRYM und BET-ur kum-PLY-uns**
+339. **limited effectiveness and cultural resistance** | /ˈlɪmɪtɪd ɪˈfektɪvnəs ənd ˈkʌltʃərəl rɪˈzɪstəns/ — sounds like **LIM-ih-tid ih-FEK-tiv-nus und KUL-chur-ul rih-ZIS-tuns**
+340. **personal beliefs and individual values** | /ˈpɜːsənəl bɪˈliːfs ənd ˌɪndɪˈvɪdʒuəl ˈvæljuːz/ — sounds like **PUR-sun-ul bih-LEEFS und in-dih-VIJ-oo-ul VAL-yooz**
+341. **social scientists** | /ˈsəʊʃəl ˈsaɪəntɪsts/ — sounds like **SOH-shul SY-un-tists**
+342. **enforcement difficulties and high costs** | /ɪnˈfɔːsmənt ˈdɪfɪkəltiz ənd haɪ kɒsts/ — sounds like **in-FORS-ment DIF-ih-kul-teez und HY KOSTS**
+343. **governments and policymakers** | /ˈɡʌvənmənts ənd ˈpɒləsiˌmeɪkəz/ — sounds like **GUV-urn-ments und POL-uh-see-may-kurz**
 
 ---
 
 ## Example 24: Tourism in Developing Countries
 
-331. **tourism in developing countries** | /ˈtʊərɪzəm ɪn dɪˈveləpɪŋ ˈkʌntriz/ — sounds like **TOOR-iz-um in dih-VEL-up-ing KUN-treez**
-332. **local communities** | /ˈləʊkəl kəˈmjuːnɪtiz/ — sounds like **LOH-kul kuh-MYOO-nih-teez**
-333. **tourism income and economic benefits** | /ˈtʊərɪzəm ˈɪnkʌm ənd ˌiːkəˈnɒmɪk ˈbenɪfɪts/ — sounds like **TOOR-iz-um IN-kum und ee-kuh-NOM-ik BEN-ih-fits**
-334. **local pride and community spirit** | /ˈləʊkəl praɪd ənd kəˈmjuːnəti ˈspɪrɪt/ — sounds like **LOH-kul PRYD und kuh-MYOO-nuh-tee SPIR-it**
-335. **job opportunities and business growth** | /dʒɒb ˌɒpəˈtjuːnətiz ənd ˈbɪznɪs ɡrəʊθ/ — sounds like **JOB op-ur-TOO-nih-teez und BIZ-niss GROHTH**
-336. **cultural identity and historical value** | /ˈkʌltʃərəl aɪˈdentəti ənd hɪˈstɒrɪkəl ˈvæljuː/ — sounds like **KUL-chuh-rul eye-DEN-tuh-tee und his-TOR-ih-kul VAL-yoo**
-337. **environmental damage and resource depletion** | /ɪnˌvaɪrənˈmentəl ˈdæmɪdʒ ənd rɪˈsɔːs dɪˈpliːʃən/ — sounds like **in-vy-run-MEN-tul DAM-ij und rih-SORS dih-PLEE-shun**
-338. **cultural erosion and local traditions being lost** | /ˈkʌltʃərəl ɪˈrəʊʒən ənd ˈləʊkəl trəˈdɪʃənz ˈbiːɪŋ lɒst/ — sounds like **KUL-chuh-rul ih-ROH-zhun und LOH-kul truh-DISH-unz BEE-ing LOST**
-339. **financial pressure and rising prices** | /faɪˈnænʃəl ˈpreʃə ənd ˈraɪzɪŋ ˈpraɪsɪz/ — sounds like **fy-NAN-shul PRESH-ur und RY-zing PRY-siz**
-340. **economic research** | /ˌiːkəˈnɒmɪk rɪˈsɜːtʃ/ — sounds like **ee-kuh-NOM-ik rih-SURCH**
-341. **tourism experts** | /ˈtʊərɪzəm ˈekspɜːts/ — sounds like **TOOR-iz-um EK-spurts**
-342. **governments and local communities** | /ˈɡʌvənmənts ənd ˈləʊkəl kəˈmjuːnɪtiz/ — sounds like **GUV-urn-ments und LOH-kul kuh-MYOO-nih-teez**
+344. **tourism in developing countries** | /ˈtʊərɪzəm ɪn dɪˈveləpɪŋ ˈkʌntriz/ — sounds like **TOOR-iz-um in dih-VEL-up-ing KUN-treez**
+345. **local communities** | /ˈləʊkəl kəˈmjuːnɪtiz/ — sounds like **LOH-kul kuh-MYOO-nih-teez**
+346. **citizens** | /ˈsɪtɪzənz/ — sounds like **SIT-ih-zunz**
+347. **tourism income and economic benefits** | /ˈtʊərɪzəm ˈɪnkʌm ənd ˌiːkəˈnɒmɪk ˈbenɪfɪts/ — sounds like **TOOR-iz-um IN-kum und ee-kuh-NOM-ik BEN-ih-fits**
+348. **local pride and community spirit** | /ˈləʊkəl praɪd ənd kəˈmjuːnəti ˈspɪrɪt/ — sounds like **LOH-kul PRYD und kuh-MYOO-nuh-tee SPIR-it**
+349. **job opportunities and business growth** | /dʒɒb ˌɒpəˈtjuːnətiz ənd ˈbɪznɪs ɡrəʊθ/ — sounds like **JOB op-ur-TOO-nih-teez und BIZ-niss GROHTH**
+350. **economic research** | /ˌiːkəˈnɒmɪk rɪˈsɜːtʃ/ — sounds like **ee-kuh-NOM-ik rih-SURCH**
+351. **cultural identity and historical value** | /ˈkʌltʃərəl aɪˈdentəti ənd hɪˈstɒrɪkəl ˈvæljuː/ — sounds like **KUL-chuh-rul eye-DEN-tuh-tee und his-TOR-ih-kul VAL-yoo**
+352. **environmental damage and resource depletion** | /ɪnˌvaɪrənˈmentəl ˈdæmɪdʒ ənd rɪˈsɔːs dɪˈpliːʃən/ — sounds like **in-vy-run-MEN-tul DAM-ij und rih-SORS dih-PLEE-shun**
+353. **cultural erosion and local traditions being lost** | /ˈkʌltʃərəl ɪˈrəʊʒən ənd ˈləʊkəl trəˈdɪʃənz ˈbiːɪŋ lɒst/ — sounds like **KUL-chuh-rul ih-ROH-zhun und LOH-kul truh-DISH-unz BEE-ing LOST**
+354. **tourism experts** | /ˈtʊərɪzəm ˈekspɜːts/ — sounds like **TOOR-iz-um EK-spurts**
+355. **financial pressure and rising prices** | /faɪˈnænʃəl ˈpreʃə ənd ˈraɪzɪŋ ˈpraɪsɪz/ — sounds like **fy-NAN-shul PRESH-ur und RY-zing PRY-siz**
+356. **governments and local communities** | /ˈɡʌvənmənts ənd ˈləʊkəl kəˈmjuːnɪtiz/ — sounds like **GUV-urn-ments und LOH-kul kuh-MYOO-nih-teez**
 
 ---
 
 ## Example 25: Information Revolution and Mass Communication
 
-343. **modern mass communication** | /ˈmɒdən mæs kəˌmjuːnɪˈkeɪʃən/ — sounds like **MOD-urn MAS kuh-myoo-nih-KAY-shun**
-344. **individuals** | /ˌɪndɪˈvɪdʒuəlz/ — sounds like **in-dih-VIJ-oo-ulz**
-345. **improved communication and global connectivity** | /ɪmˈpruːvd kəˌmjuːnɪˈkeɪʃən ənd ˈɡləʊbəl ˌkɒnekˈtɪvəti/ — sounds like **im-PROOVD kuh-myoo-nih-KAY-shun und GLOH-bul kon-ek-TIV-uh-tee**
-346. **faster information access and knowledge sharing** | /ˈfɑːstə ˌɪnfəˈmeɪʃən ˈækses ənd ˈnɒlɪdʒ ˈʃeərɪŋ/ — sounds like **FAH-stur in-fur-MAY-shun AK-ses und NOL-ij SHAIR-ing**
-347. **online learning and better education** | /ˈɒnlaɪn ˈlɜːnɪŋ ənd ˈbetə ˌedʒʊˈkeɪʃən/ — sounds like **ON-lyn LUR-ning und BET-ur ej-oo-KAY-shun**
-348. **easier access to news and public awareness** | /ˈiːziə ˈækses tuː njuːz ənd ˈpʌblɪk əˈweənəs/ — sounds like **EE-zee-ur AK-ses too NYOOZ und PUB-lik uh-WAIR-nus**
-349. **excessive screen time and digital addiction** | /ɪkˈsesɪv skriːn taɪm ənd ˈdɪdʒɪtəl əˈdɪkʃən/ — sounds like **ik-SES-iv SKREEN TYM und DIJ-ih-tul uh-DIK-shun**
-350. **social isolation and health issues** | /ˈsəʊʃəl ˌaɪsəˈleɪʃən ənd helθ ˈɪʃuːz/ — sounds like **SOH-shul eye-suh-LAY-shun und HELTH ISH-ooz**
-351. **misinformation and privacy concerns** | /ˌmɪsɪnfəˈmeɪʃən ənd ˈprɪvəsi kənˈsɜːnz/ — sounds like **mis-in-fur-MAY-shun und PRIV-uh-see kun-SURNZ**
-352. **technology research** | /tekˈnɒlədʒi rɪˈsɜːtʃ/ — sounds like **tek-NOL-uh-jee rih-SURCH**
-353. **social studies** | /ˈsəʊʃəl ˈstʌdiz/ — sounds like **SOH-shul STUD-eez**
-354. **society and individuals** | /səˈsaɪəti ənd ˌɪndɪˈvɪdʒuəlz/ — sounds like **suh-SY-uh-tee und in-dih-VIJ-oo-ulz**
+357. **modern mass communication** | /ˈmɒdən mæs kəˌmjuːnɪˈkeɪʃən/ — sounds like **MOD-urn MAS kuh-myoo-nih-KAY-shun**
+358. **individuals** | /ˌɪndɪˈvɪdʒuəlz/ — sounds like **in-dih-VIJ-oo-ulz**
+359. **improved communication and global connectivity** | /ɪmˈpruːvd kəˌmjuːnɪˈkeɪʃən ənd ˈɡləʊbəl ˌkɒnekˈtɪvəti/ — sounds like **im-PROOVD kuh-myoo-nih-KAY-shun und GLOH-bul kon-ek-TIV-uh-tee**
+360. **faster information access and knowledge sharing** | /ˈfɑːstə ˌɪnfəˈmeɪʃən ˈækses ənd ˈnɒlɪdʒ ˈʃeərɪŋ/ — sounds like **FAH-stur in-fur-MAY-shun AK-ses und NOL-ij SHAIR-ing**
+361. **online learning and better education** | /ˈɒnlaɪn ˈlɜːnɪŋ ənd ˈbetə ˌedʒʊˈkeɪʃən/ — sounds like **ON-lyn LUR-ning und BET-ur ej-oo-KAY-shun**
+362. **technology research** | /tekˈnɒlədʒi rɪˈsɜːtʃ/ — sounds like **tek-NOL-uh-jee rih-SURCH**
+363. **easier access to news and public awareness** | /ˈiːziə ˈækses tuː njuːz ənd ˈpʌblɪk əˈweənəs/ — sounds like **EE-zee-ur AK-ses too NYOOZ und PUB-lik uh-WAIR-nus**
+364. **excessive screen time and digital addiction** | /ɪkˈsesɪv skriːn taɪm ənd ˈdɪdʒɪtəl əˈdɪkʃən/ — sounds like **ik-SES-iv SKREEN TYM und DIJ-ih-tul uh-DIK-shun**
+365. **social isolation and health issues** | /ˈsəʊʃəl ˌaɪsəˈleɪʃən ənd helθ ˈɪʃuːz/ — sounds like **SOH-shul eye-suh-LAY-shun und HELTH ISH-ooz**
+366. **social studies** | /ˈsəʊʃəl ˈstʌdiz/ — sounds like **SOH-shul STUD-eez**
+367. **misinformation and privacy concerns** | /ˌmɪsɪnfəˈmeɪʃən ənd ˈprɪvəsi kənˈsɜːnz/ — sounds like **mis-in-fur-MAY-shun und PRIV-uh-see kun-SURNZ**
+368. **society and individuals** | /səˈsaɪəti ənd ˌɪndɪˈvɪdʒuəlz/ — sounds like **suh-SY-uh-tee und in-dih-VIJ-oo-ulz**
 
 ---
 
 ## Example 26: Mass Media Influence
 
-355. **mass media influence** | /mæs ˈmiːdiə ˈɪnfluəns/ — sounds like **MAS MEE-dee-uh IN-floo-uns**
-356. **society** | /səˈsaɪəti/ — sounds like **suh-SY-uh-tee**
-357. **public awareness and informed citizens** | /ˈpʌblɪk əˈweənəs ənd ɪnˈfɔːmd ˈsɪtɪzNz/ — sounds like **PUB-lik uh-WAIR-nus und in-FORMD SIT-ih-zuns**
-358. **educational programs and knowledge sharing** | /ˌedʒʊˈkeɪʃənəl ˈprəʊɡræmz ənd ˈnɒlɪdʒ ˈʃeərɪŋ/ — sounds like **ej-oo-KAY-shun-ul PROH-gramz und NOL-ij SHAIR-ing**
-359. **cultural understanding and global perspectives** | /ˈkʌltʃərəl ˌʌndəˈstændɪŋ ənd ˈɡləʊbəl pəˈspektɪvz/ — sounds like **KUL-chuh-rul un-dur-STAN-ding und GLOH-bul pur-SPEK-tivz**
-360. **improved communication and social connection** | /ɪmˈpruːvd kəˌmjuːnɪˈkeɪʃən ənd ˈsəʊʃəl kəˈnekʃən/ — sounds like **im-PROOVD kuh-myoo-nih-KAY-shun und SOH-shul kuh-NEK-shun**
-361. **misinformation and biased reporting** | /ˌmɪsɪnfəˈmeɪʃən ənd ˈbaɪəst rɪˈpɔːtɪŋ/ — sounds like **mis-in-fur-MAY-shun und BY-ust rih-PORT-ing**
-362. **excessive screen time and passive consumption** | /ɪkˈsesɪv skriːn taɪm ənd ˈpæsɪv kənˈsʌmpʃən/ — sounds like **ik-SES-iv SKREEN TYM und PAS-iv kun-SUMP-shun**
-363. **reduced critical thinking and blind trust** | /rɪˈdjuːst ˈkrɪtɪkəl ˈθɪŋkɪŋ ənd blaɪnd trʌst/ — sounds like **rih-DYOOST KRIT-ih-kul THINK-ing und BLYND TRUST**
-364. **media studies** | /ˈmiːdiə ˈstʌdiz/ — sounds like **MEE-dee-uh STUD-eez**
-365. **social researchers** | /ˈsəʊʃəl rɪˈsɜːtʃəz/ — sounds like **SOH-shul rih-SUR-churz**
-366. **society and individuals** | /səˈsaɪəti ənd ˌɪndɪˈvɪdʒuəlz/ — sounds like **suh-SY-uh-tee und in-dih-VIJ-oo-ulz**
+369. **mass media influence** | /mæs ˈmiːdiə ˈɪnfluəns/ — sounds like **MAS MEE-dee-uh IN-floo-uns**
+370. **society** | /səˈsaɪəti/ — sounds like **suh-SY-uh-tee**
+371. **individuals** | /ˌɪndɪˈvɪdʒuəlz/ — sounds like **in-dih-VIJ-oo-ulz**
+372. **public awareness and informed citizens** | /ˈpʌblɪk əˈweənəs ənd ɪnˈfɔːmd ˈsɪtɪzənz/ — sounds like **PUB-lik uh-WAIR-nus und in-FORMD SIT-ih-zunz**
+373. **educational programs and knowledge sharing** | /ˌedʒʊˈkeɪʃənəl ˈprəʊɡræmz ənd ˈnɒlɪdʒ ˈʃeərɪŋ/ — sounds like **ej-oo-KAY-shun-ul PROH-gramz und NOL-ij SHAIR-ing**
+374. **cultural understanding and global perspectives** | /ˈkʌltʃərəl ˌʌndəˈstændɪŋ ənd ˈɡləʊbəl pəˈspektɪvz/ — sounds like **KUL-chuh-rul un-dur-STAN-ding und GLOH-bul pur-SPEK-tivz**
+375. **media studies** | /ˈmiːdiə ˈstʌdiz/ — sounds like **MEE-dee-uh STUD-eez**
+376. **improved communication and social connection** | /ɪmˈpruːvd kəˌmjuːnɪˈkeɪʃən ənd ˈsəʊʃəl kəˈnekʃən/ — sounds like **im-PROOVD kuh-myoo-nih-KAY-shun und SOH-shul kuh-NEK-shun**
+377. **misinformation and biased reporting** | /ˌmɪsɪnfəˈmeɪʃən ənd ˈbaɪəst rɪˈpɔːtɪŋ/ — sounds like **mis-in-fur-MAY-shun und BY-ust rih-PORT-ing**
+378. **reduced critical thinking and blind trust** | /rɪˈdjuːst ˈkrɪtɪkəl ˈθɪŋkɪŋ ənd blaɪnd trʌst/ — sounds like **rih-DYOOST KRIT-ih-kul THINK-ing und BLYND TRUST**
+379. **social researchers** | /ˈsəʊʃəl rɪˈsɜːtʃəz/ — sounds like **SOH-shul rih-SUR-churz**
+380. **excessive screen time and passive consumption** | /ɪkˈsesɪv skriːn taɪm ənd ˈpæsɪv kənˈsʌmpʃən/ — sounds like **ik-SES-iv SKREEN TYM und PAS-iv kun-SUMP-shun**
+381. **society and individuals** | /səˈsaɪəti ənd ˌɪndɪˈvɪdʒuəlz/ — sounds like **suh-SY-uh-tee und in-dih-VIJ-oo-ulz**
 
 ---
 
 ## Example 27: Company Reputation vs Discounts
 
-367. **reputation marketing** | /ˌrepjʊˈteɪʃən ˈmɑːkɪtɪŋ/ — sounds like **rep-yoo-TAY-shun MAR-kit-ing**
-368. **companies** | /ˈkʌmpəniz/ — sounds like **KUM-puh-neez**
-369. **customer loyalty and trust** | /ˈkʌstəmə ˈlɔɪəlti ənd trʌst/ — sounds like **KUS-tuh-mur LOY-ul-tee und TRUST**
-370. **stronger brand identity and recognition** | /ˈstrɒŋɡə brænd aɪˈdentəti ənd ˌrekəɡˈnɪʃən/ — sounds like **STRONG-ur BRAND eye-DEN-tuh-tee und rek-ug-NISH-un**
-371. **increased company revenue and long-term growth** | /ɪnˈkriːst ˈkʌmpəni ˈrevənjuː ənd lɒŋ tɜːm ɡrəʊθ/ — sounds like **in-KREEST KUM-puh-nee REV-uh-nyoo und LONG TURM GROHTH**
-372. **improved customer satisfaction and repeat business** | /ɪmˈpruːvd ˈkʌstəmə ˌsætɪsˈfækʃən ənd rɪˈpiːt ˈbɪznɪs/ — sounds like **im-PROOVD KUS-tuh-mur sat-is-FAK-shun und rih-PEET BIZ-niss**
-373. **short-term strategies** | /ʃɔːt tɜːm ˈstrætədʒiz/ — sounds like **SHORT TURM STRAT-uh-jeez**
-374. **immediate sales and quick revenue** | /ɪˈmiːdiət seɪlz ənd kwɪk ˈrevənjuː/ — sounds like **ih-MEE-dee-ut SAYLZ und KWIK REV-uh-nyoo**
-375. **attracting new customers** | /əˈtræktɪŋ njuː ˈkʌstəməz/ — sounds like **uh-TRAK-ting NYOO KUS-tuh-murz**
-376. **short-term financial gains** | /ʃɔːt tɜːm faɪˈnænʃəl ɡeɪnz/ — sounds like **SHORT TURM fy-NAN-shul GAYNZ**
-377. **business research** | /ˈbɪznɪs rɪˈsɜːtʃ/ — sounds like **BIZ-niss rih-SURCH**
-378. **marketing experts** | /ˈmɑːkɪtɪŋ ˈekspɜːts/ — sounds like **MAR-kit-ing EK-spurts**
-379. **companies and marketing teams** | /ˈkʌmpəniz ənd ˈmɑːkɪtɪŋ tiːmz/ — sounds like **KUM-puh-neez und MAR-kit-ing TEEMS**
+382. **reputation marketing** | /ˌrepjʊˈteɪʃən ˈmɑːkɪtɪŋ/ — sounds like **rep-yoo-TAY-shun MAR-kit-ing**
+383. **companies** | /ˈkʌmpəniz/ — sounds like **KUM-puh-neez**
+384. **consumers** | /kənˈsjuːməz/ — sounds like **kun-SOO-murz**
+385. **customer loyalty and trust** | /ˈkʌstəmə ˈlɔɪəlti ənd trʌst/ — sounds like **KUS-tuh-mur LOY-ul-tee und TRUST**
+386. **stronger brand identity and recognition** | /ˈstrɒŋɡə brænd aɪˈdentəti ənd ˌrekəɡˈnɪʃən/ — sounds like **STRONG-ur BRAND eye-DEN-tuh-tee und rek-ug-NISH-un**
+387. **increased company revenue and long-term growth** | /ɪnˈkriːst ˈkʌmpəni ˈrevənjuː ənd lɒŋ tɜːm ɡrəʊθ/ — sounds like **in-KREEST KUM-puh-nee REV-uh-nyoo und LONG TURM GROHTH**
+388. **business research** | /ˈbɪznɪs rɪˈsɜːtʃ/ — sounds like **BIZ-niss rih-SURCH**
+389. **improved customer satisfaction and repeat business** | /ɪmˈpruːvd ˈkʌstəmə ˌsætɪsˈfækʃən ənd rɪˈpiːt ˈbɪznɪs/ — sounds like **im-PROOVD KUS-tuh-mur sat-is-FAK-shun und rih-PEET BIZ-niss**
+390. **short-term strategies** | /ʃɔːt tɜːm ˈstrætədʒiz/ — sounds like **SHORT TURM STRAT-uh-jeez**
+391. **immediate sales and quick revenue** | /ɪˈmiːdiət seɪlz ənd kwɪk ˈrevənjuː/ — sounds like **ih-MEE-dee-ut SAYLZ und KWIK REV-uh-nyoo**
+392. **attracting new customers** | /əˈtræktɪŋ njuː ˈkʌstəməz/ — sounds like **uh-TRAK-ting NYOO KUS-tuh-murz**
+393. **marketing experts** | /ˈmɑːkɪtɪŋ ˈekspɜːts/ — sounds like **MAR-kit-ing EK-spurts**
+394. **short-term financial gains** | /ʃɔːt tɜːm faɪˈnænʃəl ɡeɪnz/ — sounds like **SHORT TURM fy-NAN-shul GAYNZ**
+395. **companies and marketing teams** | /ˈkʌmpəniz ənd ˈmɑːkɪtɪŋ tiːmz/ — sounds like **KUM-puh-neez und MAR-kit-ing TEEMS**
 
 ---
 
 ## Example 28: Studying Classic Plays
 
-380. **studying classic plays** | /ˈstʌdiɪŋ ˈklæsɪk pleɪz/ — sounds like **STUD-ee-ing KLAS-ik PLAYZ**
-381. **students** | /ˈstjuːdənts/ — sounds like **STOO-dunts**
-382. **cultural awareness and historical understanding** | /ˈkʌltʃərəl əˈweənəs ənd hɪˈstɒrɪkəl ˌʌndəˈstændɪŋ/ — sounds like **KUL-chuh-rul uh-WAIR-nus und his-TOR-ih-kul un-dur-STAN-ding**
-383. **enhanced critical thinking and deeper knowledge** | /ɪnˈhɑːnst ˈkrɪtɪkəl ˈθɪŋkɪŋ ənd ˈdiːpə ˈnɒlɪdʒ/ — sounds like **in-HAHNST KRIT-ih-kul THINK-ing und DEEP-ur NOL-ij**
-384. **personal growth and creative expression** | /ˈpɜːsənəl ɡrəʊθ ənd kriˈeɪtɪv ɪkˈspreʃən/ — sounds like **PUR-sun-ul GROHTH und kree-AY-tiv ik-SPRESH-un**
-385. **language skills and literary appreciation** | /ˈlæŋɡwɪdʒ skɪlz ənd ˈlɪtərəri əˌpriːʃiˈeɪʃən/ — sounds like **LANG-gwij SKILZ und LIT-uh-ruh-ree uh-pree-she-AY-shun**
-386. **difficult language and outdated themes** | /ˈdɪfɪkəlt ˈlæŋɡwɪdʒ ənd aʊtˈdeɪtɪd θiːmz/ — sounds like **DIF-ih-kult LANG-gwij und owt-DAY-tid THEEMZ**
-387. **low student interest and boring content** | /ləʊ ˈstjuːdənt ˈɪntrəst ənd ˈbɔːrɪŋ ˈkɒntent/ — sounds like **LOH STOO-dunt IN-trust und BOR-ing KON-tent**
-388. **limited relevance and modern disconnect** | /ˈlɪmɪtɪd ˈreləvəns ənd ˈmɒdən ˌdɪskəˈnekt/ — sounds like **LIM-ih-tid REL-uh-vuns und MOD-urn dis-kuh-NEKT**
-389. **education research** | /ˌedʒʊˈkeɪʃən rɪˈsɜːtʃ/ — sounds like **ej-oo-KAY-shun rih-SURCH**
-390. **literature experts** | /ˈlɪtərətʃə ˈekspɜːts/ — sounds like **LIT-uh-ruh-chur EK-spurts**
-391. **schools and educators** | /skuːlz ənd ˈedʒʊkeɪtəz/ — sounds like **SKOOLZ und EJ-oo-kay-turz**
+396. **studying classic plays** | /ˈstʌdiɪŋ ˈklæsɪk pleɪz/ — sounds like **STUD-ee-ing KLAS-ik PLAYZ**
+397. **students** | /ˈstjuːdənts/ — sounds like **STOO-dunts**
+398. **teachers** | /ˈtiːtʃəz/ — sounds like **TEE-churz**
+399. **cultural awareness and historical understanding** | /ˈkʌltʃərəl əˈweənəs ənd hɪˈstɒrɪkəl ˌʌndəˈstændɪŋ/ — sounds like **KUL-chuh-rul uh-WAIR-nus und his-TOR-ih-kul un-dur-STAN-ding**
+400. **enhanced critical thinking and deeper knowledge** | /ɪnˈhɑːnst ˈkrɪtɪkəl ˈθɪŋkɪŋ ənd ˈdiːpə ˈnɒlɪdʒ/ — sounds like **in-HAHNST KRIT-ih-kul THINK-ing und DEEP-ur NOL-ij**
+401. **personal growth and creative expression** | /ˈpɜːsənəl ɡrəʊθ ənd kriˈeɪtɪv ɪkˈspreʃən/ — sounds like **PUR-sun-ul GROHTH und kree-AY-tiv ik-SPRESH-un**
+402. **education research** | /ˌedʒʊˈkeɪʃən rɪˈsɜːtʃ/ — sounds like **ej-oo-KAY-shun rih-SURCH**
+403. **language skills and literary appreciation** | /ˈlæŋɡwɪdʒ skɪlz ənd ˈlɪtərəri əˌpriːʃiˈeɪʃən/ — sounds like **LANG-gwij SKILZ und LIT-uh-ruh-ree uh-pree-she-AY-shun**
+404. **difficult language and outdated themes** | /ˈdɪfɪkəlt ˈlæŋɡwɪdʒ ənd aʊtˈdeɪtɪd θiːmz/ — sounds like **DIF-ih-kult LANG-gwij und owt-DAY-tid THEEMZ**
+405. **low student interest and boring content** | /ləʊ ˈstjuːdənt ˈɪntrəst ənd ˈbɔːrɪŋ ˈkɒntent/ — sounds like **LOH STOO-dunt IN-trust und BOR-ing KON-tent**
+406. **literature experts** | /ˈlɪtərətʃə ˈekspɜːts/ — sounds like **LIT-uh-ruh-chur EK-spurts**
+407. **limited relevance and modern disconnect** | /ˈlɪmɪtɪd ˈreləvəns ənd ˈmɒdən ˌdɪskəˈnekt/ — sounds like **LIM-ih-tid REL-uh-vuns und MOD-urn dis-kuh-NEKT**
+408. **schools and educators** | /skuːlz ənd ˈedʒʊkeɪtəz/ — sounds like **SKOOLZ und EJ-oo-kay-turz**
 
 ---
 
 ## Example 29: Shopping Malls vs Local Shops
 
-392. **large shopping malls** | /lɑːdʒ ˈʃɒpɪŋ mɔːlz/ — sounds like **LARJ SHOP-ing MOLZ**
-393. **consumers** | /kənˈsjuːməz/ — sounds like **kun-SOO-murz**
-394. **more product choices and lower prices** | /mɔː ˈprɒdʌkt ˈtʃɔɪsɪz ənd ˈləʊə ˈpraɪsɪz/ — sounds like **MOR PROD-ukt CHOY-siz und LOH-ur PRY-siz**
-395. **job opportunities and business growth** | /dʒɒb ˌɒpəˈtjuːnətiz ənd ˈbɪznɪs ɡrəʊθ/ — sounds like **JOB op-ur-TOO-nih-teez und BIZ-niss GROHTH**
-396. **convenient shopping and modern facilities** | /kənˈviːniənt ˈʃɒpɪŋ ənd ˈmɒdən fəˈsɪlətiz/ — sounds like **kun-VEEN-yunt SHOP-ing und MOD-urn fuh-SIL-uh-teez**
-397. **economic development and urban improvement** | /ˌiːkəˈnɒmɪk dɪˈveləpmənt ənd ˈɜːbən ɪmˈpruːvmənt/ — sounds like **ee-kuh-NOM-ik dih-VEL-up-ment und UR-bun im-PROOV-ment**
-398. **local shop closures and job losses** | /ˈləʊkəl ʃɒp ˈkləʊʒəz ənd dʒɒb ˈlɒsɪz/ — sounds like **LOH-kul SHOP KLOH-zhurz und JOB LOSS-iz**
-399. **reduced community spirit and personal service** | /rɪˈdjuːst kəˈmjuːnəti ˈspɪrɪt ənd ˈpɜːsənəl ˈsɜːvɪs/ — sounds like **rih-DYOOST kuh-MYOO-nuh-tee SPIR-it und PUR-sun-ul SUR-vis**
-400. **increased traffic and environmental impact** | /ɪnˈkriːst ˈtræfɪk ənd ɪnˌvaɪrənˈmentəl ˈɪmpækt/ — sounds like **in-KREEST TRAF-ik und in-vy-run-MEN-tul IM-pakt**
-401. **economic research** | /ˌiːkəˈnɒmɪk rɪˈsɜːtʃ/ — sounds like **ee-kuh-NOM-ik rih-SURCH**
-402. **urban planners** | /ˈɜːbən ˈplænəz/ — sounds like **UR-bun PLAN-urz**
-403. **governments and local communities** | /ˈɡʌvənmənts ənd ˈləʊkəl kəˈmjuːnɪtiz/ — sounds like **GUV-urn-ments und LOH-kul kuh-MYOO-nih-teez**
+409. **large shopping malls** | /lɑːdʒ ˈʃɒpɪŋ mɔːlz/ — sounds like **LARJ SHOP-ing MOLZ**
+410. **consumers** | /kənˈsjuːməz/ — sounds like **kun-SOO-murz**
+411. **local communities** | /ˈləʊkəl kəˈmjuːnɪtiz/ — sounds like **LOH-kul kuh-MYOO-nih-teez**
+412. **more product choices and lower prices** | /mɔː ˈprɒdʌkt ˈtʃɔɪsɪz ənd ˈləʊə ˈpraɪsɪz/ — sounds like **MOR PROD-ukt CHOY-siz und LOH-ur PRY-siz**
+413. **job opportunities and business growth** | /dʒɒb ˌɒpəˈtjuːnətiz ənd ˈbɪznɪs ɡrəʊθ/ — sounds like **JOB op-ur-TOO-nih-teez und BIZ-niss GROHTH**
+414. **convenient shopping and modern facilities** | /kənˈviːniənt ˈʃɒpɪŋ ənd ˈmɒdən fəˈsɪlətiz/ — sounds like **kun-VEEN-yunt SHOP-ing und MOD-urn fuh-SIL-uh-teez**
+415. **economic research** | /ˌiːkəˈnɒmɪk rɪˈsɜːtʃ/ — sounds like **ee-kuh-NOM-ik rih-SURCH**
+416. **economic development and urban improvement** | /ˌiːkəˈnɒmɪk dɪˈveləpmənt ənd ˈɜːbən ɪmˈpruːvmənt/ — sounds like **ee-kuh-NOM-ik dih-VEL-up-ment und UR-bun im-PROOV-ment**
+417. **local shop closures and job losses** | /ˈləʊkəl ʃɒp ˈkləʊʒəz ənd dʒɒb ˈlɒsɪz/ — sounds like **LOH-kul SHOP KLOH-zhurz und JOB LOSS-iz**
+418. **reduced community spirit and personal service** | /rɪˈdjuːst kəˈmjuːnəti ˈspɪrɪt ənd ˈpɜːsənəl ˈsɜːvɪs/ — sounds like **rih-DYOOST kuh-MYOO-nuh-tee SPIR-it und PUR-sun-ul SUR-vis**
+419. **urban planners** | /ˈɜːbən ˈplænəz/ — sounds like **UR-bun PLAN-urz**
+420. **increased traffic and environmental impact** | /ɪnˈkriːst ˈtræfɪk ənd ɪnˌvaɪrənˈmentəl ˈɪmpækt/ — sounds like **in-KREEST TRAF-ik und in-vy-run-MEN-tul IM-pakt**
+421. **governments and local communities** | /ˈɡʌvənmənts ənd ˈləʊkəl kəˈmjuːnɪtiz/ — sounds like **GUV-urn-ments und LOH-kul kuh-MYOO-nih-teez**
 
 ---
 
 ## Example 30: Medical Technology and Life Expectancy
 
-404. **medical technology** | /ˈmedɪkəl tekˈnɒlədʒi/ — sounds like **MED-ih-kul tek-NOL-uh-jee**
-405. **people** | /ˈpiːpəl/ — sounds like **PEE-pul**
-406. **better healthcare and disease prevention** | /ˈbetə ˈhelθkeə ənd dɪˈziːz prɪˈvenʃən/ — sounds like **BET-ur HELTH-kair und dih-ZEEZ prih-VEN-shun**
-407. **higher living standards and improved quality of life** | /ˈhaɪə ˈlɪvɪŋ ˈstændədz ənd ɪmˈpruːvd ˈkwɒləti əv laɪf/ — sounds like **HY-ur LIV-ing STAN-durdz und im-PROOVD KWOL-uh-tee uv LYF**
-408. **longer life and reduced mortality** | /ˈlɒŋɡə laɪf ənd rɪˈdjuːst mɔːˈtæləti/ — sounds like **LONG-gur LYF und rih-DYOOST mor-TAL-uh-tee**
-409. **better medical treatment and faster recovery** | /ˈbetə ˈmedɪkəl ˈtriːtmənt ənd ˈfɑːstə rɪˈkʌvəri/ — sounds like **BET-ur MED-ih-kul TREET-ment und FAH-stur rih-KUV-uh-ree**
-410. **ageing population and healthcare costs** | /ˈeɪdʒɪŋ ˌpɒpjʊˈleɪʃən ənd ˈhelθkeə kɒsts/ — sounds like **AY-jing pop-yoo-LAY-shun und HELTH-kair KOSTS**
-411. **chronic illness and long-term care** | /ˈkrɒnɪk ˈɪlnəs ənd lɒŋ tɜːm keə/ — sounds like **KRON-ik IL-nus und LONG TURM KAIR**
-412. **resource pressure and social burden** | /rɪˈzɔːs ˈpreʃə ənd ˈsəʊʃəl ˈbɜːdən/ — sounds like **rih-SORS PRESH-ur und SOH-shul BUR-dun**
-413. **health studies** | /helθ ˈstʌdiz/ — sounds like **HELTH STUD-eez**
-414. **medical researchers** | /ˈmedɪkəl rɪˈsɜːtʃəz/ — sounds like **MED-ih-kul rih-SUR-churz**
-415. **governments and healthcare systems** | /ˈɡʌvənmənts ənd ˈhelθkeə ˈsɪstəmz/ — sounds like **GUV-urn-ments und HELTH-kair SIS-tumz**
+422. **medical technology** | /ˈmedɪkəl tekˈnɒlədʒi/ — sounds like **MED-ih-kul tek-NOL-uh-jee**
+423. **people** | /ˈpiːpəl/ — sounds like **PEE-pul**
+424. **patients** | /ˈpeɪʃənts/ — sounds like **PAY-shunts**
+425. **better healthcare and disease prevention** | /ˈbetə ˈhelθkeə ənd dɪˈziːz prɪˈvenʃən/ — sounds like **BET-ur HELTH-kair und dih-ZEEZ prih-VEN-shun**
+426. **higher living standards and improved quality of life** | /ˈhaɪə ˈlɪvɪŋ ˈstændədz ənd ɪmˈpruːvd ˈkwɒləti əv laɪf/ — sounds like **HY-ur LIV-ing STAN-durdz und im-PROOVD KWOL-uh-tee uv LYF**
+427. **longer life and reduced mortality** | /ˈlɒŋɡə laɪf ənd rɪˈdjuːst mɔːˈtæləti/ — sounds like **LONG-gur LYF und rih-DYOOST mor-TAL-uh-tee**
+428. **health studies** | /helθ ˈstʌdiz/ — sounds like **HELTH STUD-eez**
+429. **better medical treatment and faster recovery** | /ˈbetə ˈmedɪkəl ˈtriːtmənt ənd ˈfɑːstə rɪˈkʌvəri/ — sounds like **BET-ur MED-ih-kul TREET-ment und FAH-stur rih-KUV-uh-ree**
+430. **ageing population and healthcare costs** | /ˈeɪdʒɪŋ ˌpɒpjʊˈleɪʃən ənd ˈhelθkeə kɒsts/ — sounds like **AY-jing pop-yoo-LAY-shun und HELTH-kair KOSTS**
+431. **chronic illness and long-term care** | /ˈkrɒnɪk ˈɪlnəs ənd lɒŋ tɜːm keə/ — sounds like **KRON-ik IL-nus und LONG TURM KAIR**
+432. **medical researchers** | /ˈmedɪkəl rɪˈsɜːtʃəz/ — sounds like **MED-ih-kul rih-SUR-churz**
+433. **resource pressure and social burden** | /rɪˈzɔːs ˈpreʃə ənd ˈsəʊʃəl ˈbɜːdən/ — sounds like **rih-SORS PRESH-ur und SOH-shul BUR-dun**
+434. **governments and healthcare systems** | /ˈɡʌvənmənts ənd ˈhelθkeə ˈsɪstəmz/ — sounds like **GUV-urn-ments und HELTH-kair SIS-tumz**
 
 ---
 
 ## Example 31: Parental Legal Responsibility
 
-416. **parental legal responsibility** | /pəˈrentəl ˈliːɡəl rɪˌspɒnsəˈbɪləti/ — sounds like **puh-REN-tul LEE-gul rih-spon-suh-BIL-uh-tee**
-417. **parents** | /ˈpeərənts/ — sounds like **PAIR-unts**
-418. **stronger supervision and better guidance** | /ˈstrɒŋɡə ˌsuːpəˈvɪʒən ənd ˈbetə ˈɡaɪdəns/ — sounds like **STRONG-ur soo-pur-VIZ-zhun und BET-ur GY-duns**
-419. **personal responsibility and family values** | /ˈpɜːsənəl rɪˌspɒnsəˈbɪləti ənd ˈfæməli ˈvæljuːz/ — sounds like **PUR-sun-ul rih-spon-suh-BIL-uh-tee und FAM-uh-lee VAL-yooz**
-420. **reduced youth crime and safer communities** | /rɪˈdjuːst juːθ kraɪm ənd ˈsemfə kəˈmjuːnətiz/ — sounds like **rih-DYOOST YOOTH KRYM und SAY-fur kuh-MYOO-nih-teez**
-421. **improved behaviour and positive outcomes** | /ɪmˈpruːvd bɪˈheɪvjə ənd ˈpɒzətɪv ˈaʊtkʌmz/ — sounds like **im-PROOVD bih-HAY-vyur und POZ-ih-tiv OWT-kumz**
-422. **unfair burden and financial stress** | /ʌnˈfeə ˈbɜːdən ənd faɪˈnænʃəl stres/ — sounds like **un-FAIR BUR-dun und fy-NAN-shul STRESS**
-423. **family conflict and damaged relationships** | /ˈfæməli ˈkɒnflɪkt ənd ˈdæmɪdʒd rɪˈleɪʃənʃɪps/ — sounds like **FAM-uh-lee KON-flikt und DAM-ijd rih-LAY-shun-ships**
-424. **limited parental control and external influences** | /ˈlɪmɪtɪd pəˈrentəl kənˈtrəʊl ənd ɪkˈstɜːnəl ˈɪnfluənsɪz/ — sounds like **LIM-ih-tid puh-REN-tul kun-TROHL und ik-STUR-nul IN-floo-un-siz**
-425. **psychological research** | /ˌsaɪkəˈlɒdʒɪkəl rɪˈsɜːtʃ/ — sounds like **sy-kuh-LOJ-ih-kul rih-SURCH**
-426. **legal experts** | /ˈliːɡəl ˈekspɜːts/ — sounds like **LEE-gul EK-spurts**
-427. **parents and schools** | /ˈpeərənts ənd skuːlz/ — sounds like **PAIR-unts und SKOOLZ**
+435. **parental legal responsibility** | /pəˈrentəl ˈliːɡəl rɪˌspɒnsəˈbɪləti/ — sounds like **puh-REN-tul LEE-gul rih-spon-suh-BIL-uh-tee**
+436. **parents** | /ˈpeərənts/ — sounds like **PAIR-unts**
+437. **children** | /ˈtʃɪldrən/ — sounds like **CHIL-drun**
+438. **stronger supervision and better guidance** | /ˈstrɒŋɡə ˌsuːpəˈvɪʒən ənd ˈbetə ˈɡaɪdəns/ — sounds like **STRONG-ur soo-pur-VIZ-zhun und BET-ur GY-duns**
+439. **personal responsibility and family values** | /ˈpɜːsənəl rɪˌspɒnsəˈbɪləti ənd ˈfæməli ˈvæljuːz/ — sounds like **PUR-sun-ul rih-spon-suh-BIL-uh-tee und FAM-uh-lee VAL-yooz**
+440. **reduced youth crime and safer communities** | /rɪˈdjuːst juːθ kraɪm ənd ˈseɪfə kəˈmjuːnətiz/ — sounds like **rih-DYOOST YOOTH KRYM und SAY-fur kuh-MYOO-nih-teez**
+441. **psychological research** | /ˌsaɪkəˈlɒdʒɪkəl rɪˈsɜːtʃ/ — sounds like **sy-kuh-LOJ-ih-kul rih-SURCH**
+442. **improved behaviour and positive outcomes** | /ɪmˈpruːvd bɪˈheɪvjə ənd ˈpɒzətɪv ˈaʊtkʌmz/ — sounds like **im-PROOVD bih-HAY-vyur und POZ-ih-tiv OWT-kumz**
+443. **unfair burden and financial stress** | /ʌnˈfeə ˈbɜːdən ənd faɪˈnænʃəl stres/ — sounds like **un-FAIR BUR-dun und fy-NAN-shul STRESS**
+444. **family conflict and damaged relationships** | /ˈfæməli ˈkɒnflɪkt ənd ˈdæmɪdʒd rɪˈleɪʃənʃɪps/ — sounds like **FAM-uh-lee KON-flikt und DAM-ijd rih-LAY-shun-ships**
+445. **legal experts** | /ˈliːɡəl ˈekspɜːts/ — sounds like **LEE-gul EK-spurts**
+446. **limited parental control and external influences** | /ˈlɪmɪtɪd pəˈrentəl kənˈtrəʊl ənd ɪkˈstɜːnəl ˈɪnfluənsɪz/ — sounds like **LIM-ih-tid puh-REN-tul kun-TROHL und ik-STUR-nul IN-floo-un-siz**
+447. **parents and schools** | /ˈpeərənts ənd skuːlz/ — sounds like **PAIR-unts und SKOOLZ**
 
 ---
 
 ## Example 32: Countryside vs City Life
 
-428. **living in the countryside** | /ˈlɪvɪŋ ɪn ðə ˈkʌntrisaɪd/ — sounds like **LIV-ing in thuh KUN-tree-syd**
-429. **clean air and natural environment** | /kliːn eə ənd ˈnætʃərəl ɪnˈvaɪrənmənt/ — sounds like **KLEEN AIR und NATCH-ur-ul in-VY-run-ment**
-430. **peaceful lifestyle and less stress** | /ˈpiːsfʊl ˈlaɪfstaɪl ənd les stres/ — sounds like **PEESS-ful LYF-styl und LES STRESS**
-431. **stronger community and closer neighbors** | /ˈstrɒŋɡə kəˈmjuːnəti ənd ˈkləʊsə ˈneɪbəz/ — sounds like **STRONG-ur kuh-MYOO-nuh-tee und KLOH-sur NAY-burz**
-432. **lower costs and affordable housing** | /ˈləʊə kɒsts ənd əˈfɔːdəbəl ˈhaʊzɪŋ/ — sounds like **LOH-ur KOSTS und uh-FOR-duh-bul HOW-zing**
-433. **job opportunities and career growth** | /dʒɒb ˌɒpəˈtjuːnətiz ənd kəˈrɪə ɡrəʊθ/ — sounds like **JOB op-ur-TOO-nih-teez und kuh-REER GROHTH**
-434. **better facilities and public transport** | /ˈbetə fəˈsɪlətiz ənd ˈpʌblɪk ˈtrænspɔːt/ — sounds like **BET-ur fuh-SIL-uh-teez und PUB-lik TRANS-port**
-435. **entertainment options and social activities** | /ˌentəˈteɪnmənt ˈɒpʃənz ənd ˈsəʊʃəl ækˈtɪvətiz/ — sounds like **en-tur-TAYN-ment OP-shunz und SOH-shul ak-TIV-uh-teez**
-436. **lifestyle research** | /ˈlaɪfstaɪl rɪˈsɜːtʃ/ — sounds like **LYF-styl rih-SURCH**
-437. **urban planners** | /ˈɜːbən ˈplænəz/ — sounds like **UR-bun PLAN-urz**
-438. **individuals and families** | /ˌɪndɪˈvɪdʒuəlz ənd ˈfæməliz/ — sounds like **in-dih-VIJ-oo-ulz und FAM-uh-leez**
+448. **living in the countryside** | /ˈlɪvɪŋ ɪn ðə ˈkʌntrisaɪd/ — sounds like **LIV-ing in thuh KUN-tree-syd**
+449. **people** | /ˈpiːpəl/ — sounds like **PEE-pul**
+450. **residents** | /ˈrezɪdənts/ — sounds like **REZ-ih-dunts**
+451. **clean air and natural environment** | /kliːn eə ənd ˈnætʃərəl ɪnˈvaɪrənmənt/ — sounds like **KLEEN AIR und NATCH-ur-ul in-VY-run-ment**
+452. **peaceful lifestyle and less stress** | /ˈpiːsfʊl ˈlaɪfstaɪl ənd les stres/ — sounds like **PEESS-ful LYF-styl und LES STRESS**
+453. **stronger community and closer neighbors** | /ˈstrɒŋɡə kəˈmjuːnəti ənd ˈkləʊsə ˈneɪbəz/ — sounds like **STRONG-ur kuh-MYOO-nuh-tee und KLOH-sur NAY-burz**
+454. **lifestyle research** | /ˈlaɪfstaɪl rɪˈsɜːtʃ/ — sounds like **LYF-styl rih-SURCH**
+455. **lower costs and affordable housing** | /ˈləʊə kɒsts ənd əˈfɔːdəbəl ˈhaʊzɪŋ/ — sounds like **LOH-ur KOSTS und uh-FOR-duh-bul HOW-zing**
+456. **city life** | /ˈsɪti laɪf/ — sounds like **SIT-ee LYF**
+457. **job opportunities and career growth** | /dʒɒb ˌɒpəˈtjuːnətiz ənd kəˈrɪə ɡrəʊθ/ — sounds like **JOB op-ur-TOO-nih-teez und kuh-REER GROHTH**
+458. **better facilities and public transport** | /ˈbetə fəˈsɪlətiz ənd ˈpʌblɪk ˈtrænspɔːt/ — sounds like **BET-ur fuh-SIL-uh-teez und PUB-lik TRANS-port**
+459. **urban planners** | /ˈɜːbən ˈplænəz/ — sounds like **UR-bun PLAN-urz**
+460. **entertainment options and social activities** | /ˌentəˈteɪnmənt ˈɒpʃənz ənd ˈsəʊʃəl ækˈtɪvətiz/ — sounds like **en-tur-TAYN-ment OP-shunz und SOH-shul ak-TIV-uh-teez**
+461. **city environments** | /ˈsɪti ɪnˈvaɪrənmənts/ — sounds like **SIT-ee in-VY-run-ments**
+462. **individuals and families** | /ˌɪndɪˈvɪdʒuəlz ənd ˈfæməliz/ — sounds like **in-dih-VIJ-oo-ulz und FAM-uh-leez**
 
 ---
 
 ## Example 33: Digital Media vs University Libraries
 
-439. **digital media in universities** | /ˈdɪdʒɪtəl ˈmiːdiə ɪn ˌjuːnɪˈvɜːsətiz/ — sounds like **DIJ-ih-tul MEE-dee-uh in yoo-nih-VUR-suh-teez**
-440. **faster information access and knowledge sharing** | /ˈfɑːstə ˌɪnfəˈmeɪʃən ˈækses ənd ˈnɒlɪdʒ ˈʃeərɪŋ/ — sounds like **FAH-stur in-fur-MAY-shun AK-ses und NOL-ij SHAIR-ing**
-441. **lower costs and easier updates** | /ˈləʊə kɒsts ənd ˈiːziə ˈʌpdeɪts/ — sounds like **LOH-ur KOSTS und EE-zee-ur UP-dayts**
-442. **online learning and better convenience** | /ˈɒnlaɪn ˈlɜːnɪŋ ənd ˈbetə kənˈviːniəns/ — sounds like **ON-lyn LUR-ning und BET-ur kun-VEEN-yuns**
-443. **wider access and global resources** | /ˈwaɪdə ˈækses ənd ˈɡləʊbəl rɪˈsɔːsɪz/ — sounds like **WY-dur AK-ses und GLOH-bul rih-SOR-siz**
-444. **digital divide and technology barriers** | /ˈdɪdʒɪtəl dɪˈvaɪd ənd tekˈnɒlədʒi ˈbæriəz/ — sounds like **DIJ-ih-tul dih-VYD und tek-NOL-uh-jee BAR-ee-urz**
-445. **reduced focus and excessive screen time** | /rɪˈdjuːst ˈfəʊkəs ənd ɪkˈsesɪv skriːn taɪm/ — sounds like **rih-DYOOST FOH-kus und ik-SES-iv SKREEN TYM**
-446. **loss of physical resources and study spaces** | /lɒs əv ˈfɪzɪkəl rɪˈsɔːsɪz ənd ˈstʌdi ˈspeɪsɪz/ — sounds like **LOSS uv FIZ-ih-kul rih-SOR-siz und STUD-ee SPAY-siz**
-447. **library experts** | /ˈlaɪbrəri ˈekspɜːts/ — sounds like **LY-bruh-ree EK-spurts**
-448. **students and universities** | /ˈstjuːdənts ənd ˌjuːnɪˈvɜːsətiz/ — sounds like **STOO-dunts und yoo-nih-VUR-suh-teez**
+463. **digital media in universities** | /ˈdɪdʒɪtəl ˈmiːdiə ɪn ˌjuːnɪˈvɜːsətiz/ — sounds like **DIJ-ih-tul MEE-dee-uh in yoo-nih-VUR-suh-teez**
+464. **students** | /ˈstjuːdənts/ — sounds like **STOO-dunts**
+465. **universities** | /ˌjuːnɪˈvɜːsətiz/ — sounds like **yoo-nih-VUR-suh-teez**
+466. **faster information access and knowledge sharing** | /ˈfɑːstə ˌɪnfəˈmeɪʃən ˈækses ənd ˈnɒlɪdʒ ˈʃeərɪŋ/ — sounds like **FAH-stur in-fur-MAY-shun AK-ses und NOL-ij SHAIR-ing**
+467. **lower costs and easier updates** | /ˈləʊə kɒsts ənd ˈiːziə ˈʌpdeɪts/ — sounds like **LOH-ur KOSTS und EE-zee-ur UP-dayts**
+468. **online learning and better convenience** | /ˈɒnlaɪn ˈlɜːnɪŋ ənd ˈbetə kənˈviːniəns/ — sounds like **ON-lyn LUR-ning und BET-ur kun-VEEN-yuns**
+469. **education research** | /ˌedjʊˈkeɪʃən rɪˈsɜːtʃ/ — sounds like **ej-oo-KAY-shun rih-SURCH**
+470. **wider access and global resources** | /ˈwaɪdə ˈækses ənd ˈɡləʊbəl rɪˈsɔːsɪz/ — sounds like **WY-dur AK-ses und GLOH-bul rih-SOR-siz**
+471. **digital divide and technology barriers** | /ˈdɪdʒɪtəl dɪˈvaɪd ənd tekˈnɒlədʒi ˈbæriəz/ — sounds like **DIJ-ih-tul dih-VYD und tek-NOL-uh-jee BAR-ee-urz**
+472. **reduced focus and excessive screen time** | /rɪˈdjuːst ˈfəʊkəs ənd ɪkˈsesɪv skriːn taɪm/ — sounds like **rih-DYOOST FOH-kus und ik-SES-iv SKREEN TYM**
+473. **library experts** | /ˈlaɪbrəri ˈekspɜːts/ — sounds like **LY-bruh-ree EK-spurts**
+474. **loss of physical resources and study spaces** | /lɒs əv ˈfɪzɪkəl rɪˈsɔːsɪz ənd ˈstʌdi ˈspeɪsɪz/ — sounds like **LOSS uv FIZ-ih-kul rih-SOR-siz und STUD-ee SPAY-siz**
+475. **students and universities** | /ˈstjuːdənts ənd ˌjuːnɪˈvɜːsətiz/ — sounds like **STOO-dunts und yoo-nih-VUR-suh-teez**
 
 ---
 
 ## Example 34: Public Transport vs Roads
 
-449. **public transport networks** | /ˈpʌblɪk ˈtrænspɔːt ˈnetwɜːks/ — sounds like **PUB-lik TRANS-port NET-wurks**
-450. **reduced traffic and lower pollution** | /rɪˈdjuːst ˈtræfɪk ənd ˈləʊə pəˈluːʃən/ — sounds like **rih-DYOOST TRAF-ik und LOH-ur puh-LOO-shun**
-451. **affordable travel and equal access** | /əˈfɔːdəbəl ˈtrævəl ənd ˈiːkwəl ˈækses/ — sounds like **uh-FOR-duh-bul TRAV-ul und EE-kwul AK-ses**
-452. **lower costs and less congestion** | /ˈləʊə kɒsts ənd les kənˈdʒestʃən/ — sounds like **LOH-ur KOSTS und LES kun-JES-chun**
-453. **environmental benefits and cleaner air** | /ɪnˌvaɪrənˈmentəl ˈbenɪfɪts ənd ˈkliːnə eə/ — sounds like **in-vy-run-MEN-tul BEN-ih-fits und KLEE-nur AIR**
-454. **personal convenience and travel flexibility** | /ˈpɜːsənəl kənˈviːniəns ənd ˈtrævəl ˌfleksəˈbɪləti/ — sounds like **PUR-sun-ul kun-VEEN-yuns und TRAV-ul flek-suh-BIL-uh-tee**
-455. **economic growth and business transport** | /ˌiːkəˈnɒmɪk ɡrəʊθ ənd ˈbɪznəs ˈtrænspɔːt/ — sounds like **ee-kuh-NOM-ik GROHTH und BIZ-nus TRANS-port**
-456. **job creation and infrastructure development** | /dʒɒb kriˈeɪʃən ənd ˈɪnfrəstrʌktʃə dɪˈveləpmənt/ — sounds like **JOB kree-AY-shun und IN-fruh-struk-chur dih-VEL-up-ment**
-457. **urban planning research** | /ˈɜːbən ˈplænɪŋ rɪˈsɜːtʃ/ — sounds like **UR-bun PLAN-ing rih-SURCH**
-458. **transport experts** | /ˈtrænspɔːt ˈekspɜːts/ — sounds like **TRANS-port EK-spurts**
-459. **governments and city planners** | /ˈɡʌvənmənts ənd ˈsɪti ˈplænəz/ — sounds like **GUV-urn-ments und SIT-ee PLAN-urz**
+476. **public transport networks** | /ˈpʌblɪk ˈtrænspɔːt ˈnetwɜːks/ — sounds like **PUB-lik TRANS-port NET-wurks**
+477. **citizens** | /ˈsɪtɪzənz/ — sounds like **SIT-ih-zunz**
+478. **governments** | /ˈɡʌvənmənts/ — sounds like **GUV-urn-ments**
+479. **reduced traffic and lower pollution** | /rɪˈdjuːst ˈtræfɪk ənd ˈləʊə pəˈluːʃən/ — sounds like **rih-DYOOST TRAF-ik und LOH-ur puh-LOO-shun**
+480. **affordable travel and equal access** | /əˈfɔːdəbəl ˈtrævəl ənd ˈiːkwəl ˈækses/ — sounds like **uh-FOR-duh-bul TRAV-ul und EE-kwul AK-ses**
+481. **lower costs and less congestion** | /ˈləʊə kɒsts ənd les kənˈdʒestʃən/ — sounds like **LOH-ur KOSTS und LES kun-JES-chun**
+482. **urban planning research** | /ˈɜːbən ˈplænɪŋ rɪˈsɜːtʃ/ — sounds like **UR-bun PLAN-ing rih-SURCH**
+483. **environmental benefits and cleaner air** | /ɪnˌvaɪrənˈmentəl ˈbenɪfɪts ənd ˈkliːnə eə/ — sounds like **in-vy-run-MEN-tul BEN-ih-fits und KLEE-nur AIR**
+484. **building more roads** | /ˈbɪldɪŋ mɔː rəʊdz/ — sounds like **BIL-ding MOR ROHDZ**
+485. **more roads** | /mɔː rəʊdz/ — sounds like **MOR ROHDZ**
+486. **personal convenience and travel flexibility** | /ˈpɜːsənəl kənˈviːniəns ənd ˈtrævəl ˌfleksəˈbɪləti/ — sounds like **PUR-sun-ul kun-VEEN-yuns und TRAV-ul flek-suh-BIL-uh-tee**
+487. **economic growth and business transport** | /ˌiːkəˈnɒmɪk ɡrəʊθ ənd ˈbɪznəs ˈtrænspɔːt/ — sounds like **ee-kuh-NOM-ik GROHTH und BIZ-nus TRANS-port**
+488. **transport experts** | /ˈtrænspɔːt ˈekspɜːts/ — sounds like **TRANS-port EK-spurts**
+489. **job creation and infrastructure development** | /dʒɒb kriˈeɪʃən ənd ˈɪnfrəstrʌktʃə dɪˈveləpmənt/ — sounds like **JOB kree-AY-shun und IN-fruh-struk-chur dih-VEL-up-ment**
+490. **road construction projects** | /rəʊd kənˈstrʌkʃən ˈprɒdʒekts/ — sounds like **ROHD kun-STRUK-shun PROJ-ekts**
+491. **governments and city planners** | /ˈɡʌvənmənts ənd ˈsɪti ˈplænəz/ — sounds like **GUV-urn-ments und SIT-ee PLAN-urz**
 
 ---
 
 ## Example 35: Time for Personal Life
 
-460. **shortage of personal time** | /ˈʃɔːtɪdʒ əv ˈpɜːsənəl taɪm/ — sounds like **SHOR-tij uv PUR-sun-ul TYM**
-461. **long working hours and job demands** | /lɒŋ ˈwɜːkɪŋ ˈaʊəz ənd dʒɒb dɪˈmɑːndz/ — sounds like **LONG WUR-king OW-urz und JOB dih-MAHNDS**
-462. **modern work culture and career pressure** | /ˈmɒdən wɜːk ˈkʌltʃə ənd kəˈrɪə ˈpreʃə/ — sounds like **MOD-urn WURK KUL-chur und kuh-REER PRESH-ur**
-463. **global workplace trends and overtime** | /ˈɡləʊbəl ˈwɜːkpleɪs trendz ənd ˈəʊvətaɪm/ — sounds like **GLOH-bul WURK-plays TRENDZ und OH-vur-tym**
-464. **increasing workloads and fewer breaks** | /ɪnˈkriːsɪŋ ˈwɜːkləʊdz ənd ˈfjuːə breɪks/ — sounds like **in-KREE-sing WURK-lohdz und FYOO-ur BRAYKS**
-465. **health issues and chronic stress** | /helθ ˈɪʃuːz ənd ˈkrɒnɪk stres/ — sounds like **HELTH ISH-ooz und KRON-ik STRESS**
-466. **family problems and relationship difficulties** | /ˈfæməli ˈprɒbləmz ənd rɪˈleɪʃənʃɪp ˈdɪfɪkəltiz/ — sounds like **FAM-uh-lee PROB-lumz und rih-LAY-shun-ship DIF-ih-kul-teez**
-467. **reduced happiness and lower motivation** | /rɪˈdjuːst ˈhæpɪnəs ənd ˈləʊə ˌməʊtɪˈveɪʃən/ — sounds like **rih-DYOOST HAP-ih-nus und LOH-ur moh-tih-VAY-shun**
-468. **tiredness and mental exhaustion** | /ˈtaɪədnəs ənd ˈmentəl ɪɡˈzɔːstʃən/ — sounds like **TY-urd-nus und MEN-tul ig-ZOS-chun**
-469. **workplace research** | /ˈwɜːkpleɪs rɪˈsɜːtʃ/ — sounds like **WURK-plays rih-SURCH**
-470. **health studies** | /helθ ˈstʌdiz/ — sounds like **HELTH STUD-eez**
-471. **employers and policymakers** | /ɪmˈplɔɪəz ənd ˈpɒləsiˌmeɪkəz/ — sounds like **im-PLOY-urz und POL-uh-see-may-kurz**
+492. **shortage of personal time** | /ˈʃɔːtɪdʒ əv ˈpɜːsənəl taɪm/ — sounds like **SHOR-tij uv PUR-sun-ul TYM**
+493. **workers** | /ˈwɜːkəz/ — sounds like **WUR-kurz**
+494. **employees** | /ɪmˈplɔɪiːz/ — sounds like **im-PLOY-eez**
+495. **long working hours and job demands** | /lɒŋ ˈwɜːkɪŋ ˈaʊəz ənd dʒɒb dɪˈmɑːndz/ — sounds like **LONG WUR-king OW-urz und JOB dih-MAHNDS**
+496. **modern work culture and career pressure** | /ˈmɒdən wɜːk ˈkʌltʃə ənd kəˈrɪə ˈpreʃə/ — sounds like **MOD-urn WURK KUL-chur und kuh-REER PRESH-ur**
+497. **global workplace trends and overtime** | /ˈɡləʊbəl ˈwɜːkpleɪs trendz ənd ˈəʊvətaɪm/ — sounds like **GLOH-bul WURK-plays TRENDZ und OH-vur-tym**
+498. **workplace research** | /ˈwɜːkpleɪs rɪˈsɜːtʃ/ — sounds like **WURK-plays rih-SURCH**
+499. **increasing workloads and fewer breaks** | /ɪnˈkriːsɪŋ ˈwɜːkləʊdz ənd ˈfjuːə breɪks/ — sounds like **in-KREE-sing WURK-lohdz und FYOO-ur BRAYKS**
+500. **health issues and chronic stress** | /helθ ˈɪʃuːz ənd ˈkrɒnɪk stres/ — sounds like **HELTH ISH-ooz und KRON-ik STRESS**
+501. **family problems and relationship difficulties** | /ˈfæməli ˈprɒbləmz ənd rɪˈleɪʃənʃɪp ˈdɪfɪkəltiz/ — sounds like **FAM-uh-lee PROB-lumz und rih-LAY-shun-ship DIF-ih-kul-teez**
+502. **health studies** | /helθ ˈstʌdiz/ — sounds like **HELTH STUD-eez**
+503. **reduced happiness and lower motivation** | /rɪˈdjuːst ˈhæpɪnəs ənd ˈləʊə ˌməʊtɪˈveɪʃən/ — sounds like **rih-DYOOST HAP-ih-nus und LOH-ur moh-tih-VAY-shun**
+504. **tiredness and mental exhaustion** | /ˈtaɪədnəs ənd ˈmentəl ɪɡˈzɔːstʃən/ — sounds like **TY-urd-nus und MEN-tul ig-ZOS-chun**
+505. **employers and policymakers** | /ɪmˈplɔɪəz ənd ˈpɒləsiˌmeɪkəz/ — sounds like **im-PLOY-urz und POL-uh-see-may-kurz**
 
 ---
 
 ## Example 36: Shorter Working Week
 
-472. **shorter working week** | /ˈʃɔːtə ˈwɜːkɪŋ wiːk/ — sounds like **SHOR-tur WUR-king WEEK**
-473. **more job opportunities and reduced unemployment** | /mɔː dʒɒb ˌɒpəˈtjuːnətiz ənd rɪˈdjuːst ˌʌnɪmˈplɔɪmənt/ — sounds like **MOR JOB op-ur-TOO-nih-teez und rih-DYOOST un-im-PLOY-ment**
-474. **better work-life balance and less stress** | /ˈbetə wɜːk laɪf ˈbæləns ənd les stres/ — sounds like **BET-ur WURK LYF BAL-uns und LES STRESS**
-475. **shared workload and fairer employment** | /ʃeəd ˈwɜːkləʊd ənd ˈfeərə ɪmˈplɔɪmənt/ — sounds like **SHAIRD WURK-lohd und FAIR-ur im-PLOY-ment**
-476. **increased productivity and worker satisfaction** | /ɪnˈkriːst ˌprɒdʌkˈtɪvəti ənd ˈwɜːkə ˌsætɪsˈfækʃən/ — sounds like **in-KREEST prod-uk-TIV-uh-tee und WUR-kur sat-is-FAK-shun**
-477. **hiring more staff and training costs** | /ˈhaɪərɪŋ mɔː stɑːf ənd ˈtreɪnɪŋ kɒsts/ — sounds like **HY-ur-ing MOR STAHF und TRAY-ning KOSTS**
-478. **higher expenses and business pressure** | /ˈhaɪə ɪkˈspensɪz ənd ˈbɪznəs ˈpreʃə/ — sounds like **HY-ur ik-SPEN-siz und BIZ-nus PRESH-ur**
-479. **lower profits and reduced productivity** | /ˈləʊə ˈprɒfɪts ənd rɪˈdjuːst ˌprɒdʌkˈtɪvəti/ — sounds like **LOH-ur PROF-its und rih-DYOOST prod-uk-TIV-uh-tee**
-480. **employment experts** | /ɪmˈplɔɪmənt ˈekspɜːts/ — sounds like **im-PLOY-ment EK-spurts**
-481. **governments and businesses** | /ˈɡʌvənmənts ənd ˈbɪznəsɪz/ — sounds like **GUV-urn-ments und BIZ-nus-iz**
+506. **shorter working week** | /ˈʃɔːtə ˈwɜːkɪŋ wiːk/ — sounds like **SHOR-tur WUR-king WEEK**
+507. **young people** | /jʌŋ ˈpiːpəl/ — sounds like **YUNG PEE-pul**
+508. **employers** | /ɪmˈplɔɪəz/ — sounds like **im-PLOY-urz**
+509. **more job opportunities and reduced unemployment** | /mɔː dʒɒb ˌɒpəˈtjuːnətiz ənd rɪˈdjuːst ˌʌnɪmˈplɔɪmənt/ — sounds like **MOR JOB op-ur-TOO-nih-teez und rih-DYOOST un-im-PLOY-ment**
+510. **better work-life balance and less stress** | /ˈbetə wɜːk laɪf ˈbæləns ənd les stres/ — sounds like **BET-ur WURK LYF BAL-uns und LES STRESS**
+511. **shared workload and fairer employment** | /ʃeəd ˈwɜːkləʊd ənd ˈfeərə ɪmˈplɔɪmənt/ — sounds like **SHAIRD WURK-lohd und FAIR-ur im-PLOY-ment**
+512. **economic research** | /ˌiːkəˈnɒmɪk rɪˈsɜːtʃ/ — sounds like **ee-kuh-NOM-ik rih-SURCH**
+513. **increased productivity and worker satisfaction** | /ɪnˈkriːst ˌprɒdʌkˈtɪvəti ənd ˈwɜːkə ˌsætɪsˈfækʃən/ — sounds like **in-KREEST prod-uk-TIV-uh-tee und WUR-kur sat-is-FAK-shun**
+514. **hiring more staff and training costs** | /ˈhaɪərɪŋ mɔː stɑːf ənd ˈtreɪnɪŋ kɒsts/ — sounds like **HY-ur-ing MOR STAHF und TRAY-ning KOSTS**
+515. **higher expenses and business pressure** | /ˈhaɪə ɪkˈspensɪz ənd ˈbɪznəs ˈpreʃə/ — sounds like **HY-ur ik-SPEN-siz und BIZ-nus PRESH-ur**
+516. **employment experts** | /ɪmˈplɔɪmənt ˈekspɜːts/ — sounds like **im-PLOY-ment EK-spurts**
+517. **lower profits and reduced productivity** | /ˈləʊə ˈprɒfɪts ənd rɪˈdjuːst ˌprɒdʌkˈtɪvəti/ — sounds like **LOH-ur PROF-its und rih-DYOOST prod-uk-TIV-uh-tee**
+518. **whole workforce** | /həʊl ˈwɜːkfɔːs/ — sounds like **HOHL WURK-fors**
+519. **governments and businesses** | /ˈɡʌvənmənts ənd ˈbɪznəsɪz/ — sounds like **GUV-urn-ments und BIZ-nus-iz**
 
 ---
 
 ## Example 37: Celebrity Privacy
 
-482. **celebrity privacy rights** | /sɪˈlebrəti ˈprɪvəsi raɪts/ — sounds like **suh-LEB-ruh-tee PRIV-uh-see RYTS**
-483. **mental health and personal wellbeing** | /ˈmentəl helθ ənd ˈpɜːsənəl ˌwelˈbiːɪŋ/ — sounds like **MEN-tul HELTH und PUR-sun-ul wel-BEE-ing**
-484. **family protection and safe environment** | /ˈfæməli prəˈtekʃən ənd seɪf ɪnˈvaɪrənmənt/ — sounds like **FAM-uh-lee pruh-TEK-shun und SAYF in-VY-run-ment**
-485. **personal freedom and basic rights** | /ˈpɜːsənəl ˈfriːdəm ənd ˈbeɪsɪk raɪts/ — sounds like **PUR-sun-ul FREE-dum und BAY-sik RYTS**
-486. **fair treatment and respect** | /feə ˈtriːtmənt ənd rɪˈspekt/ — sounds like **FAIR TREET-ment und rih-SPEKT**
-487. **media attention and public interest** | /ˈmiːdiə əˈtenʃən ənd ˈpʌblɪk ˈɪntrəst/ — sounds like **MEE-dee-uh uh-TEN-shun und PUB-lik IN-trust**
-488. **social media and constant exposure** | /ˈsəʊʃəl ˈmiːdiə ənd ˈkɒnstənt ɪkˈspəʊʒə/ — sounds like **SOH-shul MEE-dee-uh und KON-stunt ik-SPOH-zhur**
-489. **fan expectations and public demand** | /fæn ˌekspekˈteɪʃənz ənd ˈpʌblɪk dɪˈmɑːnd/ — sounds like **FAN ek-spek-TAY-shunz und PUB-lik dih-MAHND**
-490. **media research** | /ˈmiːdiə rɪˈsɜːtʃ/ — sounds like **MEE-dee-uh rih-SURCH**
-491. **psychology experts** | /saɪˈkɒlədʒi ˈekspɜːts/ — sounds like **sy-KOL-uh-jee EK-spurts**
-492. **celebrities and media organizations** | /sɪˈlebrətiz ənd ˈmiːdiə ˌɔːɡənaɪˈzeɪʃənz/ — sounds like **suh-LEB-ruh-teez und MEE-dee-uh or-gun-eye-ZAY-shunz**
+520. **celebrity privacy rights** | /sɪˈlebrəti ˈprɪvəsi raɪts/ — sounds like **suh-LEB-ruh-tee PRIV-uh-see RYTS**
+521. **celebrities** | /sɪˈlebrətiz/ — sounds like **suh-LEB-ruh-teez**
+522. **fans** | /fænz/ — sounds like **FANZ**
+523. **mental health and personal wellbeing** | /ˈmentəl helθ ənd ˈpɜːsənəl ˌwelˈbiːɪŋ/ — sounds like **MEN-tul HELTH und PUR-sun-ul wel-BEE-ing**
+524. **family protection and safe environment** | /ˈfæməli prəˈtekʃən ənd seɪf ɪnˈvaɪrənmənt/ — sounds like **FAM-uh-lee pruh-TEK-shun und SAYF in-VY-run-ment**
+525. **personal freedom and basic rights** | /ˈpɜːsənəl ˈfriːdəm ənd ˈbeɪsɪk raɪts/ — sounds like **PUR-sun-ul FREE-dum und BAY-sik RYTS**
+526. **media research** | /ˈmiːdiə rɪˈsɜːtʃ/ — sounds like **MEE-dee-uh rih-SURCH**
+527. **fair treatment and respect** | /feə ˈtriːtmənt ənd rɪˈspekt/ — sounds like **FAIR TREET-ment und rih-SPEKT**
+528. **protecting their privacy** | /prəˈtektɪŋ ðeə ˈprɪvəsi/ — sounds like **pruh-TEK-ting thair PRIV-uh-see**
+529. **media attention and public interest** | /ˈmiːdiə əˈtenʃən ənd ˈpʌblɪk ˈɪntrəst/ — sounds like **MEE-dee-uh uh-TEN-shun und PUB-lik IN-trust**
+530. **social media and constant exposure** | /ˈsəʊʃəl ˈmiːdiə ənd ˈkɒnstənt ɪkˈspəʊʒə/ — sounds like **SOH-shul MEE-dee-uh und KON-stunt ik-SPOH-zhur**
+531. **psychology experts** | /saɪˈkɒlədʒi ˈekspɜːts/ — sounds like **sy-KOL-uh-jee EK-spurts**
+532. **fan expectations and public demand** | /fæn ˌekspekˈteɪʃənz ənd ˈpʌblɪk dɪˈmɑːnd/ — sounds like **FAN ek-spek-TAY-shunz und PUB-lik dih-MAHND**
+533. **celebrities and media organizations** | /sɪˈlebrətiz ənd ˈmiːdiə ˌɔːɡənaɪˈzeɪʃənz/ — sounds like **suh-LEB-ruh-teez und MEE-dee-uh or-gun-eye-ZAY-shunz**
 
 ---
 
 ## Summary Statistics
 
-- **Total unique terms:** 492 terms
+- **Total unique terms:** 533 terms
 - **Organized by:** 37 essay examples
 - **All terms:** Used in actual Template B1 essays
 - **Strategy:** These are ACTUAL fills used in essay examples
@@ -728,3 +759,4 @@
 *All terms extracted from essay-examples-template-b1.md*
 *Organized by 37 examples in document order*
 *Last Updated: January 2026*
+

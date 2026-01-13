@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-01-12T22:47:52.067Z",
-    "totalTerms": 453,
+    "generated": "2026-01-13T00:19:56.466Z",
+    "totalTerms": 454,
     "source": "pte-essay-b1-examples-vocabulary",
     "description": "Auto-discovered vocabulary book: pte-essay-b1-examples-vocabulary",
     "version": "1.0",
@@ -5613,15 +5613,15 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**company reputation in marketing**",
+      "english": "**reputation marketing**",
       "pronunciation": {
         "british": {
-          "ipa": "ˈkʌmpəni ˌrepjʊˈteɪʃən ɪn ˈmɑːkɪtɪŋ",
-          "phonetic": "KUM-puh-nee rep-yoo-TAY-shun in MAR-kit-ing"
+          "ipa": "ˌrepjʊˈteɪʃən ˈmɑːkɪtɪŋ",
+          "phonetic": "rep-yoo-TAY-shun MAR-kit-ing"
         },
         "american": {
-          "ipa": "ˈkʌmpəni ˌrepjʊˈteɪʃən ɪn ˈmɑːkɪtɪŋ",
-          "phonetic": "KUM-puh-nee rep-yoo-TAY-shun in MAR-kit-ing"
+          "ipa": "ˌrepjʊˈteɪʃən ˈmɑːkɪtɪŋ",
+          "phonetic": "rep-yoo-TAY-shun MAR-kit-ing"
         }
       },
       "difficulty": "hard",
@@ -5693,15 +5693,15 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**higher investment and slower returns**",
+      "english": "**short-term strategies**",
       "pronunciation": {
         "british": {
-          "ipa": "ˈhaɪə ɪnˈvestmənt ənd ˈsləʊə rɪˈtɜːnz",
-          "phonetic": "HY-ur in-VEST-ment und SLOH-ur rih-TURNZ"
+          "ipa": "ʃɔːt tɜːm ˈstrætədʒiz",
+          "phonetic": "SHORT TURM STRAT-uh-jeez"
         },
         "american": {
-          "ipa": "ˈhaɪə ɪnˈvestmənt ənd ˈsləʊə rɪˈtɜːnz",
-          "phonetic": "HY-ur in-VEST-ment und SLOH-ur rih-TURNZ"
+          "ipa": "ʃɔːt tɜːm ˈstrætədʒiz",
+          "phonetic": "SHORT TURM STRAT-uh-jeez"
         }
       },
       "difficulty": "hard",
@@ -5709,15 +5709,15 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**competitive pressure and price wars**",
+      "english": "**immediate sales and quick revenue**",
       "pronunciation": {
         "british": {
-          "ipa": "kəmˈpetɪtɪv ˈpreʃə ənd praɪs wɔːz",
-          "phonetic": "kum-PET-ih-tiv PRESH-ur und PRYS WORZ"
+          "ipa": "ɪˈmiːdiət seɪlz ənd kwɪk ˈrevənjuː",
+          "phonetic": "ih-MEE-dee-ut SAYLZ und KWIK REV-uh-nyoo"
         },
         "american": {
-          "ipa": "kəmˈpetɪtɪv ˈpreʃə ənd praɪs wɔːz",
-          "phonetic": "kum-PET-ih-tiv PRESH-ur und PRYS WORZ"
+          "ipa": "ɪˈmiːdiət seɪlz ənd kwɪk ˈrevənjuː",
+          "phonetic": "ih-MEE-dee-ut SAYLZ und KWIK REV-uh-nyoo"
         }
       },
       "difficulty": "hard",
@@ -5725,15 +5725,31 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**lost customers and reduced market share**",
+      "english": "**attracting new customers**",
       "pronunciation": {
         "british": {
-          "ipa": "lɒst ˈkʌstəməz ənd rɪˈdjuːst ˈmɑːkɪt ʃeə",
-          "phonetic": "LOST KUS-tuh-murz und rih-DYOOST MAR-kit SHAIR"
+          "ipa": "əˈtræktɪŋ njuː ˈkʌstəməz",
+          "phonetic": "uh-TRAK-ting NYOO KUS-tuh-murz"
         },
         "american": {
-          "ipa": "lɒst ˈkʌstəməz ənd rɪˈdjuːst ˈmɑːkɪt ʃeə",
-          "phonetic": "LOST KUS-tuh-murz und rih-DYOOST MAR-kit SHAIR"
+          "ipa": "əˈtræktɪŋ njuː ˈkʌstəməz",
+          "phonetic": "uh-TRAK-ting NYOO KUS-tuh-murz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**short-term financial gains**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʃɔːt tɜːm faɪˈnænʃəl ɡeɪnz",
+          "phonetic": "SHORT TURM fy-NAN-shul GAYNZ"
+        },
+        "american": {
+          "ipa": "ʃɔːt tɜːm faɪˈnænʃəl ɡeɪnz",
+          "phonetic": "SHORT TURM fy-NAN-shul GAYNZ"
         }
       },
       "difficulty": "hard",

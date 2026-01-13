@@ -395,7 +395,7 @@
 274. **restoring old buildings** | /rɪˈstɔːrɪŋ əʊld ˈbɪldɪŋz/ — sounds like **rih-STOR-ing OLD BIL-dingz**
 275. **cultural identity and historical value** | /ˈkʌltʃərəl aɪˈdentəti ənd hɪˈstɒrɪkəl ˈvæljuː/ — sounds like **KUL-chuh-rul eye-DEN-tuh-tee und his-TOR-ih-kul VAL-yoo**
 276. **tourism income and economic growth** | /ˈtʊərɪzəm ˈɪnkʌm ənd ˌekəˈnɒmɪk ɡrəʊθ/ — sounds like **TOOR-iz-um IN-kum und ek-uh-NOM-ik GROHTH**
-277. **local pride and community spirit** | /ˈləʊkəl praɪd ənd kəˈmjuːnəti ˈspɪrɪt/ — sounds like **LOH-kul PRYD und kuh-MYOO-nuh-tee SPIR-it**
+277. **global recognition and more tourists** | /ˈɡləʊbəl ˌrekəɡˈnɪʃən ənd mɔː ˈtʊərɪsts/ — sounds like **GLOH-bul rek-ug-NISH-un und MOR TOOR-ists**
 278. **architectural beauty and urban character** | /ˌɑːkɪˈtektʃərəl ˈbjuːti ənd ˈɜːbən ˈkærɪktə/ — sounds like **ah-kuh-TEK-chuh-rul BYOO-tee und UR-bun KA-rik-tur**
 279. **housing shortages and rising property prices** | /ˈhaʊzɪŋ ˈʃɔːtɪdʒɪz ənd ˈraɪzɪŋ ˈprɒpəti ˈpraɪsɪz/ — sounds like **HOW-zing SHOR-tih-jiz und RY-zing PROP-ur-tee PRY-siz**
 280. **financial pressure and limited budget** | /faɪˈnænʃəl ˈpreʃə ənd ˈlɪmɪtɪd ˈbʌdʒɪt/ — sounds like **fy-NAN-shul PRESH-ur und LIM-it-id BUJ-it**

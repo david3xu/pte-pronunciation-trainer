@@ -245,9 +245,9 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
 
       // Next: ArrowRight
       if (e.key === 'ArrowRight') {
-        // Only navigate if next is allowed (submitted) OR overrides (Ctrl)
+        // Only navigate if next is allowed (onNext exists)
         // AND not typing (unless Ctrl)
-        if ((!isInputFocused || e.ctrlKey) && (hasSubmitted || e.ctrlKey)) {
+        if (!isInputFocused || e.ctrlKey) {
           handleNext();
         }
       }
@@ -551,7 +551,7 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
         <Button
           variant="solid"
           onClick={handleNext}
-          disabled={!onNext || !hasSubmitted}
+          disabled={!onNext}
         >
           Next
           <ChevronRightIcon />

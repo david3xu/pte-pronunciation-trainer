@@ -769,7 +769,7 @@ Taken together, these considerations demonstrate the overall importance of **mod
 
 **Subjects:** governments, citizens
 
-**Positive Evidence (Why Trend Exists):** cultural identity and historical value, tourism income and economic benefits, political support and public interest, international recognition and heritage status
+**Positive Evidence (Why Trend Exists):** cultural identity and historical value, tourism income and economic benefits, political support and public interest, global recognition and more tourists
 
 **Counter-Evidence (Housing Also):** housing programs and new developments, affordable housing and urban growth, government investment and policy changes
 
@@ -781,7 +781,7 @@ Taken together, these considerations demonstrate the overall importance of **mod
 
 In recent years, the topic of **spending on building restoration** has emerged as a significant subject of public and academic discussion. I agree with this analysis that **governments** are increasingly spending on **building restoration** instead of modern housing, and the following analysis outlines the primary arguments supporting this viewpoint.
 
-To begin with, one compelling reason why this trend exists is the potential for **cultural identity and historical value**. In particular, **spending on building restoration** can generate **tourism income and economic benefits**, ultimately leading to broader outcomes such as **political support and public interest**. For instance, evidence from **urban planning research** shows that many **governments** have prioritized **international recognition and heritage status** as a direct result of **spending on building restoration**.
+To begin with, one compelling reason why this trend exists is the potential for **cultural identity and historical value**. In particular, **spending on building restoration** can generate **tourism income and economic benefits**, ultimately leading to broader outcomes such as **political support and public interest**. For instance, evidence from **urban planning research** shows that many **governments** have achieved **global recognition and more tourists** as a direct result of **spending on building restoration**.
 
 However, it is equally important to acknowledge that **housing investment** is also increasing in some areas. This is largely because **housing programs and new developments** can provide **affordable housing and urban growth**, which may lead to **government investment and policy changes**. According to research by **housing experts**, a significant number of **citizens** have benefited from **balanced spending on both restoration and housing**.
 

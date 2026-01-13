@@ -649,95 +649,98 @@
 468. **online learning and better convenience** | /ˈɒnlaɪn ˈlɜːnɪŋ ənd ˈbetə kənˈviːniəns/ — sounds like **ON-lyn LUR-ning und BET-ur kun-VEEN-yuns**
 469. **education research** | /ˌedjʊˈkeɪʃən rɪˈsɜːtʃ/ — sounds like **ej-oo-KAY-shun rih-SURCH**
 470. **wider access and global resources** | /ˈwaɪdə ˈækses ənd ˈɡləʊbəl rɪˈsɔːsɪz/ — sounds like **WY-dur AK-ses und GLOH-bul rih-SOR-siz**
-471. **digital divide and technology barriers** | /ˈdɪdʒɪtəl dɪˈvaɪd ənd tekˈnɒlədʒi ˈbæriəz/ — sounds like **DIJ-ih-tul dih-VYD und tek-NOL-uh-jee BAR-ee-urz**
-472. **reduced focus and excessive screen time** | /rɪˈdjuːst ˈfəʊkəs ənd ɪkˈsesɪv skriːn taɪm/ — sounds like **rih-DYOOST FOH-kus und ik-SES-iv SKREEN TYM**
-473. **library experts** | /ˈlaɪbrəri ˈekspɜːts/ — sounds like **LY-bruh-ree EK-spurts**
-474. **loss of physical resources and study spaces** | /lɒs əv ˈfɪzɪkəl rɪˈsɔːsɪz ənd ˈstʌdi ˈspeɪsɪz/ — sounds like **LOSS uv FIZ-ih-kul rih-SOR-siz und STUD-ee SPAY-siz**
-475. **students and universities** | /ˈstjuːdənts ənd ˌjuːnɪˈvɜːsətiz/ — sounds like **STOO-dunts und yoo-nih-VUR-suh-teez**
+471. **traditional libraries** | /trəˈdɪʃənəl ˈlaɪbrəriz/ — sounds like **truh-DISH-un-ul LY-bruh-reez**
+472. **physical libraries** | /ˈfɪzɪkəl ˈlaɪbrəriz/ — sounds like **FIZ-ih-kul LY-bruh-reez**
+473. **quiet study spaces and focused learning** | /ˈkwaɪət ˈstʌdi ˈspeɪsɪz ənd ˈfəʊkəst ˈlɜːnɪŋ/ — sounds like **KWY-ut STUD-ee SPAY-siz und FOH-kust LUR-ning**
+474. **better concentration and deeper understanding** | /ˈbetə ˌkɒnsənˈtreɪʃən ənd ˈdiːpə ˌʌndəˈstændɪŋ/ — sounds like **BET-ur kon-sun-TRAY-shun und DEEP-ur un-dur-STAN-ding**
+475. **library experts** | /ˈlaɪbrəri ˈekspɜːts/ — sounds like **LY-bruh-ree EK-spurts**
+476. **face-to-face guidance and physical book collections** | /feɪs tə feɪs ˈɡaɪdəns ənd ˈfɪzɪkəl bʊk kəˈlekʃənz/ — sounds like **FAYS tuh FAYS GY-duns und FIZ-ih-kul BUK kuh-LEK-shunz**
+477. **traditional university libraries** | /trəˈdɪʃənəl ˌjuːnɪˈvɜːsəti ˈlaɪbrəriz/ — sounds like **truh-DISH-un-ul yoo-nih-VUR-suh-tee LY-bruh-reez**
+478. **students and universities** | /ˈstjuːdənts ənd ˌjuːnɪˈvɜːsətiz/ — sounds like **STOO-dunts und yoo-nih-VUR-suh-teez**
 
 ---
 
 ## Example 34: Public Transport vs Roads
 
-476. **public transport networks** | /ˈpʌblɪk ˈtrænspɔːt ˈnetwɜːks/ — sounds like **PUB-lik TRANS-port NET-wurks**
-477. **citizens** | /ˈsɪtɪzənz/ — sounds like **SIT-ih-zunz**
-478. **governments** | /ˈɡʌvənmənts/ — sounds like **GUV-urn-ments**
-479. **reduced traffic and lower pollution** | /rɪˈdjuːst ˈtræfɪk ənd ˈləʊə pəˈluːʃən/ — sounds like **rih-DYOOST TRAF-ik und LOH-ur puh-LOO-shun**
-480. **affordable travel and equal access** | /əˈfɔːdəbəl ˈtrævəl ənd ˈiːkwəl ˈækses/ — sounds like **uh-FOR-duh-bul TRAV-ul und EE-kwul AK-ses**
-481. **lower costs and less congestion** | /ˈləʊə kɒsts ənd les kənˈdʒestʃən/ — sounds like **LOH-ur KOSTS und LES kun-JES-chun**
-482. **urban planning research** | /ˈɜːbən ˈplænɪŋ rɪˈsɜːtʃ/ — sounds like **UR-bun PLAN-ing rih-SURCH**
-483. **environmental benefits and cleaner air** | /ɪnˌvaɪrənˈmentəl ˈbenɪfɪts ənd ˈkliːnə eə/ — sounds like **in-vy-run-MEN-tul BEN-ih-fits und KLEE-nur AIR**
-484. **building more roads** | /ˈbɪldɪŋ mɔː rəʊdz/ — sounds like **BIL-ding MOR ROHDZ**
-485. **more roads** | /mɔː rəʊdz/ — sounds like **MOR ROHDZ**
-486. **personal convenience and travel flexibility** | /ˈpɜːsənəl kənˈviːniəns ənd ˈtrævəl ˌfleksəˈbɪləti/ — sounds like **PUR-sun-ul kun-VEEN-yuns und TRAV-ul flek-suh-BIL-uh-tee**
-487. **economic growth and business transport** | /ˌiːkəˈnɒmɪk ɡrəʊθ ənd ˈbɪznəs ˈtrænspɔːt/ — sounds like **ee-kuh-NOM-ik GROHTH und BIZ-nus TRANS-port**
-488. **transport experts** | /ˈtrænspɔːt ˈekspɜːts/ — sounds like **TRANS-port EK-spurts**
-489. **job creation and infrastructure development** | /dʒɒb kriˈeɪʃən ənd ˈɪnfrəstrʌktʃə dɪˈveləpmənt/ — sounds like **JOB kree-AY-shun und IN-fruh-struk-chur dih-VEL-up-ment**
-490. **road construction projects** | /rəʊd kənˈstrʌkʃən ˈprɒdʒekts/ — sounds like **ROHD kun-STRUK-shun PROJ-ekts**
-491. **governments and city planners** | /ˈɡʌvənmənts ənd ˈsɪti ˈplænəz/ — sounds like **GUV-urn-ments und SIT-ee PLAN-urz**
+479. **public transport networks** | /ˈpʌblɪk ˈtrænspɔːt ˈnetwɜːks/ — sounds like **PUB-lik TRANS-port NET-wurks**
+480. **citizens** | /ˈsɪtɪzənz/ — sounds like **SIT-ih-zunz**
+481. **governments** | /ˈɡʌvənmənts/ — sounds like **GUV-urn-ments**
+482. **reduced traffic and lower pollution** | /rɪˈdjuːst ˈtræfɪk ənd ˈləʊə pəˈluːʃən/ — sounds like **rih-DYOOST TRAF-ik und LOH-ur puh-LOO-shun**
+483. **affordable travel and equal access** | /əˈfɔːdəbəl ˈtrævəl ənd ˈiːkwəl ˈækses/ — sounds like **uh-FOR-duh-bul TRAV-ul und EE-kwul AK-ses**
+484. **lower costs and less congestion** | /ˈləʊə kɒsts ənd les kənˈdʒestʃən/ — sounds like **LOH-ur KOSTS und LES kun-JES-chun**
+485. **urban planning research** | /ˈɜːbən ˈplænɪŋ rɪˈsɜːtʃ/ — sounds like **UR-bun PLAN-ing rih-SURCH**
+486. **environmental benefits and cleaner air** | /ɪnˌvaɪrənˈmentəl ˈbenɪfɪts ənd ˈkliːnə eə/ — sounds like **in-vy-run-MEN-tul BEN-ih-fits und KLEE-nur AIR**
+487. **building more roads** | /ˈbɪldɪŋ mɔː rəʊdz/ — sounds like **BIL-ding MOR ROHDZ**
+488. **more roads** | /mɔː rəʊdz/ — sounds like **MOR ROHDZ**
+489. **personal convenience and travel flexibility** | /ˈpɜːsənəl kənˈviːniəns ənd ˈtrævəl ˌfleksəˈbɪləti/ — sounds like **PUR-sun-ul kun-VEEN-yuns und TRAV-ul flek-suh-BIL-uh-tee**
+490. **economic growth and business transport** | /ˌiːkəˈnɒmɪk ɡrəʊθ ənd ˈbɪznəs ˈtrænspɔːt/ — sounds like **ee-kuh-NOM-ik GROHTH und BIZ-nus TRANS-port**
+491. **transport experts** | /ˈtrænspɔːt ˈekspɜːts/ — sounds like **TRANS-port EK-spurts**
+492. **job creation and infrastructure development** | /dʒɒb kriˈeɪʃən ənd ˈɪnfrəstrʌktʃə dɪˈveləpmənt/ — sounds like **JOB kree-AY-shun und IN-fruh-struk-chur dih-VEL-up-ment**
+493. **road construction projects** | /rəʊd kənˈstrʌkʃən ˈprɒdʒekts/ — sounds like **ROHD kun-STRUK-shun PROJ-ekts**
+494. **governments and city planners** | /ˈɡʌvənmənts ənd ˈsɪti ˈplænəz/ — sounds like **GUV-urn-ments und SIT-ee PLAN-urz**
 
 ---
 
 ## Example 35: Time for Personal Life
 
-492. **shortage of personal time** | /ˈʃɔːtɪdʒ əv ˈpɜːsənəl taɪm/ — sounds like **SHOR-tij uv PUR-sun-ul TYM**
-493. **workers** | /ˈwɜːkəz/ — sounds like **WUR-kurz**
-494. **employees** | /ɪmˈplɔɪiːz/ — sounds like **im-PLOY-eez**
-495. **long working hours and job demands** | /lɒŋ ˈwɜːkɪŋ ˈaʊəz ənd dʒɒb dɪˈmɑːndz/ — sounds like **LONG WUR-king OW-urz und JOB dih-MAHNDS**
-496. **modern work culture and career pressure** | /ˈmɒdən wɜːk ˈkʌltʃə ənd kəˈrɪə ˈpreʃə/ — sounds like **MOD-urn WURK KUL-chur und kuh-REER PRESH-ur**
-497. **global workplace trends and overtime** | /ˈɡləʊbəl ˈwɜːkpleɪs trendz ənd ˈəʊvətaɪm/ — sounds like **GLOH-bul WURK-plays TRENDZ und OH-vur-tym**
-498. **workplace research** | /ˈwɜːkpleɪs rɪˈsɜːtʃ/ — sounds like **WURK-plays rih-SURCH**
-499. **increasing workloads and fewer breaks** | /ɪnˈkriːsɪŋ ˈwɜːkləʊdz ənd ˈfjuːə breɪks/ — sounds like **in-KREE-sing WURK-lohdz und FYOO-ur BRAYKS**
-500. **health issues and chronic stress** | /helθ ˈɪʃuːz ənd ˈkrɒnɪk stres/ — sounds like **HELTH ISH-ooz und KRON-ik STRESS**
-501. **family problems and relationship difficulties** | /ˈfæməli ˈprɒbləmz ənd rɪˈleɪʃənʃɪp ˈdɪfɪkəltiz/ — sounds like **FAM-uh-lee PROB-lumz und rih-LAY-shun-ship DIF-ih-kul-teez**
-502. **health studies** | /helθ ˈstʌdiz/ — sounds like **HELTH STUD-eez**
-503. **reduced happiness and lower motivation** | /rɪˈdjuːst ˈhæpɪnəs ənd ˈləʊə ˌməʊtɪˈveɪʃən/ — sounds like **rih-DYOOST HAP-ih-nus und LOH-ur moh-tih-VAY-shun**
-504. **tiredness and mental exhaustion** | /ˈtaɪədnəs ənd ˈmentəl ɪɡˈzɔːstʃən/ — sounds like **TY-urd-nus und MEN-tul ig-ZOS-chun**
-505. **employers and policymakers** | /ɪmˈplɔɪəz ənd ˈpɒləsiˌmeɪkəz/ — sounds like **im-PLOY-urz und POL-uh-see-may-kurz**
+495. **shortage of personal time** | /ˈʃɔːtɪdʒ əv ˈpɜːsənəl taɪm/ — sounds like **SHOR-tij uv PUR-sun-ul TYM**
+496. **workers** | /ˈwɜːkəz/ — sounds like **WUR-kurz**
+497. **employees** | /ɪmˈplɔɪiːz/ — sounds like **im-PLOY-eez**
+498. **long working hours and job demands** | /lɒŋ ˈwɜːkɪŋ ˈaʊəz ənd dʒɒb dɪˈmɑːndz/ — sounds like **LONG WUR-king OW-urz und JOB dih-MAHNDS**
+499. **modern work culture and career pressure** | /ˈmɒdən wɜːk ˈkʌltʃə ənd kəˈrɪə ˈpreʃə/ — sounds like **MOD-urn WURK KUL-chur und kuh-REER PRESH-ur**
+500. **global workplace trends and overtime** | /ˈɡləʊbəl ˈwɜːkpleɪs trendz ənd ˈəʊvətaɪm/ — sounds like **GLOH-bul WURK-plays TRENDZ und OH-vur-tym**
+501. **workplace research** | /ˈwɜːkpleɪs rɪˈsɜːtʃ/ — sounds like **WURK-plays rih-SURCH**
+502. **increasing workloads and fewer breaks** | /ɪnˈkriːsɪŋ ˈwɜːkləʊdz ənd ˈfjuːə breɪks/ — sounds like **in-KREE-sing WURK-lohdz und FYOO-ur BRAYKS**
+503. **health issues and chronic stress** | /helθ ˈɪʃuːz ənd ˈkrɒnɪk stres/ — sounds like **HELTH ISH-ooz und KRON-ik STRESS**
+504. **family problems and relationship difficulties** | /ˈfæməli ˈprɒbləmz ənd rɪˈleɪʃənʃɪp ˈdɪfɪkəltiz/ — sounds like **FAM-uh-lee PROB-lumz und rih-LAY-shun-ship DIF-ih-kul-teez**
+505. **health studies** | /helθ ˈstʌdiz/ — sounds like **HELTH STUD-eez**
+506. **reduced happiness and lower motivation** | /rɪˈdjuːst ˈhæpɪnəs ənd ˈləʊə ˌməʊtɪˈveɪʃən/ — sounds like **rih-DYOOST HAP-ih-nus und LOH-ur moh-tih-VAY-shun**
+507. **tiredness and mental exhaustion** | /ˈtaɪədnəs ənd ˈmentəl ɪɡˈzɔːstʃən/ — sounds like **TY-urd-nus und MEN-tul ig-ZOS-chun**
+508. **employers and policymakers** | /ɪmˈplɔɪəz ənd ˈpɒləsiˌmeɪkəz/ — sounds like **im-PLOY-urz und POL-uh-see-may-kurz**
 
 ---
 
 ## Example 36: Shorter Working Week
 
-506. **shorter working week** | /ˈʃɔːtə ˈwɜːkɪŋ wiːk/ — sounds like **SHOR-tur WUR-king WEEK**
-507. **young people** | /jʌŋ ˈpiːpəl/ — sounds like **YUNG PEE-pul**
-508. **employers** | /ɪmˈplɔɪəz/ — sounds like **im-PLOY-urz**
-509. **more job opportunities and reduced unemployment** | /mɔː dʒɒb ˌɒpəˈtjuːnətiz ənd rɪˈdjuːst ˌʌnɪmˈplɔɪmənt/ — sounds like **MOR JOB op-ur-TOO-nih-teez und rih-DYOOST un-im-PLOY-ment**
-510. **better work-life balance and less stress** | /ˈbetə wɜːk laɪf ˈbæləns ənd les stres/ — sounds like **BET-ur WURK LYF BAL-uns und LES STRESS**
-511. **shared workload and fairer employment** | /ʃeəd ˈwɜːkləʊd ənd ˈfeərə ɪmˈplɔɪmənt/ — sounds like **SHAIRD WURK-lohd und FAIR-ur im-PLOY-ment**
-512. **economic research** | /ˌiːkəˈnɒmɪk rɪˈsɜːtʃ/ — sounds like **ee-kuh-NOM-ik rih-SURCH**
-513. **increased productivity and worker satisfaction** | /ɪnˈkriːst ˌprɒdʌkˈtɪvəti ənd ˈwɜːkə ˌsætɪsˈfækʃən/ — sounds like **in-KREEST prod-uk-TIV-uh-tee und WUR-kur sat-is-FAK-shun**
-514. **hiring more staff and training costs** | /ˈhaɪərɪŋ mɔː stɑːf ənd ˈtreɪnɪŋ kɒsts/ — sounds like **HY-ur-ing MOR STAHF und TRAY-ning KOSTS**
-515. **higher expenses and business pressure** | /ˈhaɪə ɪkˈspensɪz ənd ˈbɪznəs ˈpreʃə/ — sounds like **HY-ur ik-SPEN-siz und BIZ-nus PRESH-ur**
-516. **employment experts** | /ɪmˈplɔɪmənt ˈekspɜːts/ — sounds like **im-PLOY-ment EK-spurts**
-517. **lower profits and reduced productivity** | /ˈləʊə ˈprɒfɪts ənd rɪˈdjuːst ˌprɒdʌkˈtɪvəti/ — sounds like **LOH-ur PROF-its und rih-DYOOST prod-uk-TIV-uh-tee**
-518. **whole workforce** | /həʊl ˈwɜːkfɔːs/ — sounds like **HOHL WURK-fors**
-519. **governments and businesses** | /ˈɡʌvənmənts ənd ˈbɪznəsɪz/ — sounds like **GUV-urn-ments und BIZ-nus-iz**
+509. **shorter working week** | /ˈʃɔːtə ˈwɜːkɪŋ wiːk/ — sounds like **SHOR-tur WUR-king WEEK**
+510. **young people** | /jʌŋ ˈpiːpəl/ — sounds like **YUNG PEE-pul**
+511. **employers** | /ɪmˈplɔɪəz/ — sounds like **im-PLOY-urz**
+512. **more job opportunities and reduced unemployment** | /mɔː dʒɒb ˌɒpəˈtjuːnətiz ənd rɪˈdjuːst ˌʌnɪmˈplɔɪmənt/ — sounds like **MOR JOB op-ur-TOO-nih-teez und rih-DYOOST un-im-PLOY-ment**
+513. **better work-life balance and less stress** | /ˈbetə wɜːk laɪf ˈbæləns ənd les stres/ — sounds like **BET-ur WURK LYF BAL-uns und LES STRESS**
+514. **shared workload and fairer employment** | /ʃeəd ˈwɜːkləʊd ənd ˈfeərə ɪmˈplɔɪmənt/ — sounds like **SHAIRD WURK-lohd und FAIR-ur im-PLOY-ment**
+515. **economic research** | /ˌiːkəˈnɒmɪk rɪˈsɜːtʃ/ — sounds like **ee-kuh-NOM-ik rih-SURCH**
+516. **increased productivity and worker satisfaction** | /ɪnˈkriːst ˌprɒdʌkˈtɪvəti ənd ˈwɜːkə ˌsætɪsˈfækʃən/ — sounds like **in-KREEST prod-uk-TIV-uh-tee und WUR-kur sat-is-FAK-shun**
+517. **hiring more staff and training costs** | /ˈhaɪərɪŋ mɔː stɑːf ənd ˈtreɪnɪŋ kɒsts/ — sounds like **HY-ur-ing MOR STAHF und TRAY-ning KOSTS**
+518. **higher expenses and business pressure** | /ˈhaɪə ɪkˈspensɪz ənd ˈbɪznəs ˈpreʃə/ — sounds like **HY-ur ik-SPEN-siz und BIZ-nus PRESH-ur**
+519. **employment experts** | /ɪmˈplɔɪmənt ˈekspɜːts/ — sounds like **im-PLOY-ment EK-spurts**
+520. **lower profits and reduced productivity** | /ˈləʊə ˈprɒfɪts ənd rɪˈdjuːst ˌprɒdʌkˈtɪvəti/ — sounds like **LOH-ur PROF-its und rih-DYOOST prod-uk-TIV-uh-tee**
+521. **whole workforce** | /həʊl ˈwɜːkfɔːs/ — sounds like **HOHL WURK-fors**
+522. **governments and businesses** | /ˈɡʌvənmənts ənd ˈbɪznəsɪz/ — sounds like **GUV-urn-ments und BIZ-nus-iz**
 
 ---
 
 ## Example 37: Celebrity Privacy
 
-520. **celebrity privacy rights** | /sɪˈlebrəti ˈprɪvəsi raɪts/ — sounds like **suh-LEB-ruh-tee PRIV-uh-see RYTS**
-521. **celebrities** | /sɪˈlebrətiz/ — sounds like **suh-LEB-ruh-teez**
-522. **fans** | /fænz/ — sounds like **FANZ**
-523. **mental health and personal wellbeing** | /ˈmentəl helθ ənd ˈpɜːsənəl ˌwelˈbiːɪŋ/ — sounds like **MEN-tul HELTH und PUR-sun-ul wel-BEE-ing**
-524. **family protection and safe environment** | /ˈfæməli prəˈtekʃən ənd seɪf ɪnˈvaɪrənmənt/ — sounds like **FAM-uh-lee pruh-TEK-shun und SAYF in-VY-run-ment**
-525. **personal freedom and basic rights** | /ˈpɜːsənəl ˈfriːdəm ənd ˈbeɪsɪk raɪts/ — sounds like **PUR-sun-ul FREE-dum und BAY-sik RYTS**
-526. **media research** | /ˈmiːdiə rɪˈsɜːtʃ/ — sounds like **MEE-dee-uh rih-SURCH**
-527. **fair treatment and respect** | /feə ˈtriːtmənt ənd rɪˈspekt/ — sounds like **FAIR TREET-ment und rih-SPEKT**
-528. **protecting their privacy** | /prəˈtektɪŋ ðeə ˈprɪvəsi/ — sounds like **pruh-TEK-ting thair PRIV-uh-see**
-529. **media attention and public interest** | /ˈmiːdiə əˈtenʃən ənd ˈpʌblɪk ˈɪntrəst/ — sounds like **MEE-dee-uh uh-TEN-shun und PUB-lik IN-trust**
-530. **social media and constant exposure** | /ˈsəʊʃəl ˈmiːdiə ənd ˈkɒnstənt ɪkˈspəʊʒə/ — sounds like **SOH-shul MEE-dee-uh und KON-stunt ik-SPOH-zhur**
-531. **psychology experts** | /saɪˈkɒlədʒi ˈekspɜːts/ — sounds like **sy-KOL-uh-jee EK-spurts**
-532. **fan expectations and public demand** | /fæn ˌekspekˈteɪʃənz ənd ˈpʌblɪk dɪˈmɑːnd/ — sounds like **FAN ek-spek-TAY-shunz und PUB-lik dih-MAHND**
-533. **celebrities and media organizations** | /sɪˈlebrətiz ənd ˈmiːdiə ˌɔːɡənaɪˈzeɪʃənz/ — sounds like **suh-LEB-ruh-teez und MEE-dee-uh or-gun-eye-ZAY-shunz**
+523. **celebrity privacy rights** | /sɪˈlebrəti ˈprɪvəsi raɪts/ — sounds like **suh-LEB-ruh-tee PRIV-uh-see RYTS**
+524. **celebrities** | /sɪˈlebrətiz/ — sounds like **suh-LEB-ruh-teez**
+525. **fans** | /fænz/ — sounds like **FANZ**
+526. **mental health and personal wellbeing** | /ˈmentəl helθ ənd ˈpɜːsənəl ˌwelˈbiːɪŋ/ — sounds like **MEN-tul HELTH und PUR-sun-ul wel-BEE-ing**
+527. **family protection and safe environment** | /ˈfæməli prəˈtekʃən ənd seɪf ɪnˈvaɪrənmənt/ — sounds like **FAM-uh-lee pruh-TEK-shun und SAYF in-VY-run-ment**
+528. **personal freedom and basic rights** | /ˈpɜːsənəl ˈfriːdəm ənd ˈbeɪsɪk raɪts/ — sounds like **PUR-sun-ul FREE-dum und BAY-sik RYTS**
+529. **media research** | /ˈmiːdiə rɪˈsɜːtʃ/ — sounds like **MEE-dee-uh rih-SURCH**
+530. **fair treatment and respect** | /feə ˈtriːtmənt ənd rɪˈspekt/ — sounds like **FAIR TREET-ment und rih-SPEKT**
+531. **protecting their privacy** | /prəˈtektɪŋ ðeə ˈprɪvəsi/ — sounds like **pruh-TEK-ting thair PRIV-uh-see**
+532. **media attention and public interest** | /ˈmiːdiə əˈtenʃən ənd ˈpʌblɪk ˈɪntrəst/ — sounds like **MEE-dee-uh uh-TEN-shun und PUB-lik IN-trust**
+533. **social media and constant exposure** | /ˈsəʊʃəl ˈmiːdiə ənd ˈkɒnstənt ɪkˈspəʊʒə/ — sounds like **SOH-shul MEE-dee-uh und KON-stunt ik-SPOH-zhur**
+534. **psychology experts** | /saɪˈkɒlədʒi ˈekspɜːts/ — sounds like **sy-KOL-uh-jee EK-spurts**
+535. **fan expectations and public demand** | /fæn ˌekspekˈteɪʃənz ənd ˈpʌblɪk dɪˈmɑːnd/ — sounds like **FAN ek-spek-TAY-shunz und PUB-lik dih-MAHND**
+536. **celebrities and media organizations** | /sɪˈlebrətiz ənd ˈmiːdiə ˌɔːɡənaɪˈzeɪʃənz/ — sounds like **suh-LEB-ruh-teez und MEE-dee-uh or-gun-eye-ZAY-shunz**
 
 ---
 
 ## Summary Statistics
 
-- **Total unique terms:** 533 terms
+- **Total unique terms:** 536 terms
 - **Organized by:** 37 essay examples
 - **All terms:** Used in actual Template B1 essays
 - **Strategy:** These are ACTUAL fills used in essay examples

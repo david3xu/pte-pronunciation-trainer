@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-01-13T09:25:51.012Z",
-    "totalTerms": 542,
+    "generated": "2026-01-13T09:43:33.023Z",
+    "totalTerms": 545,
     "source": "pte-essay-b1-examples-vocabulary",
     "description": "Auto-discovered vocabulary book: pte-essay-b1-examples-vocabulary",
     "version": "1.0",
@@ -7677,15 +7677,15 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**digital divide and technology barriers**",
+      "english": "**traditional libraries**",
       "pronunciation": {
         "british": {
-          "ipa": "ˈdɪdʒɪtəl dɪˈvaɪd ənd tekˈnɒlədʒi ˈbæriəz",
-          "phonetic": "DIJ-ih-tul dih-VYD und tek-NOL-uh-jee BAR-ee-urz"
+          "ipa": "trəˈdɪʃənəl ˈlaɪbrəriz",
+          "phonetic": "truh-DISH-un-ul LY-bruh-reez"
         },
         "american": {
-          "ipa": "ˈdɪdʒɪtəl dɪˈvaɪd ənd tekˈnɒlədʒi ˈbæriəz",
-          "phonetic": "DIJ-ih-tul dih-VYD und tek-NOL-uh-jee BAR-ee-urz"
+          "ipa": "trəˈdɪʃənəl ˈlaɪbrəriz",
+          "phonetic": "truh-DISH-un-ul LY-bruh-reez"
         }
       },
       "difficulty": "hard",
@@ -7693,15 +7693,47 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**reduced focus and excessive screen time**",
+      "english": "**physical libraries**",
       "pronunciation": {
         "british": {
-          "ipa": "rɪˈdjuːst ˈfəʊkəs ənd ɪkˈsesɪv skriːn taɪm",
-          "phonetic": "rih-DYOOST FOH-kus und ik-SES-iv SKREEN TYM"
+          "ipa": "ˈfɪzɪkəl ˈlaɪbrəriz",
+          "phonetic": "FIZ-ih-kul LY-bruh-reez"
         },
         "american": {
-          "ipa": "rɪˈdjuːst ˈfəʊkəs ənd ɪkˈsesɪv skriːn taɪm",
-          "phonetic": "rih-DYOOST FOH-kus und ik-SES-iv SKREEN TYM"
+          "ipa": "ˈfɪzɪkəl ˈlaɪbrəriz",
+          "phonetic": "FIZ-ih-kul LY-bruh-reez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**quiet study spaces and focused learning**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkwaɪət ˈstʌdi ˈspeɪsɪz ənd ˈfəʊkəst ˈlɜːnɪŋ",
+          "phonetic": "KWY-ut STUD-ee SPAY-siz und FOH-kust LUR-ning"
+        },
+        "american": {
+          "ipa": "ˈkwaɪət ˈstʌdi ˈspeɪsɪz ənd ˈfəʊkəst ˈlɜːnɪŋ",
+          "phonetic": "KWY-ut STUD-ee SPAY-siz und FOH-kust LUR-ning"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**better concentration and deeper understanding**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbetə ˌkɒnsənˈtreɪʃən ənd ˈdiːpə ˌʌndəˈstændɪŋ",
+          "phonetic": "BET-ur kon-sun-TRAY-shun und DEEP-ur un-dur-STAN-ding"
+        },
+        "american": {
+          "ipa": "ˈbetə ˌkɒnsənˈtreɪʃən ənd ˈdiːpə ˌʌndəˈstændɪŋ",
+          "phonetic": "BET-ur kon-sun-TRAY-shun und DEEP-ur un-dur-STAN-ding"
         }
       },
       "difficulty": "hard",
@@ -7725,15 +7757,31 @@
       "source": "pte-essay-b1-examples-vocabulary"
     },
     {
-      "english": "**loss of physical resources and study spaces**",
+      "english": "**face-to-face guidance and physical book collections**",
       "pronunciation": {
         "british": {
-          "ipa": "lɒs əv ˈfɪzɪkəl rɪˈsɔːsɪz ənd ˈstʌdi ˈspeɪsɪz",
-          "phonetic": "LOSS uv FIZ-ih-kul rih-SOR-siz und STUD-ee SPAY-siz"
+          "ipa": "feɪs tə feɪs ˈɡaɪdəns ənd ˈfɪzɪkəl bʊk kəˈlekʃənz",
+          "phonetic": "FAYS tuh FAYS GY-duns und FIZ-ih-kul BUK kuh-LEK-shunz"
         },
         "american": {
-          "ipa": "lɒs əv ˈfɪzɪkəl rɪˈsɔːsɪz ənd ˈstʌdi ˈspeɪsɪz",
-          "phonetic": "LOSS uv FIZ-ih-kul rih-SOR-siz und STUD-ee SPAY-siz"
+          "ipa": "feɪs tə feɪs ˈɡaɪdəns ənd ˈfɪzɪkəl bʊk kəˈlekʃənz",
+          "phonetic": "FAYS tuh FAYS GY-duns und FIZ-ih-kul BUK kuh-LEK-shunz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**traditional university libraries**",
+      "pronunciation": {
+        "british": {
+          "ipa": "trəˈdɪʃənəl ˌjuːnɪˈvɜːsəti ˈlaɪbrəriz",
+          "phonetic": "truh-DISH-un-ul yoo-nih-VUR-suh-tee LY-bruh-reez"
+        },
+        "american": {
+          "ipa": "trəˈdɪʃənəl ˌjuːnɪˈvɜːsəti ˈlaɪbrəriz",
+          "phonetic": "truh-DISH-un-ul yoo-nih-VUR-suh-tee LY-bruh-reez"
         }
       },
       "difficulty": "hard",

@@ -1191,7 +1191,7 @@ Taken together, these considerations demonstrate the overall importance of **liv
 
 **Positive Outcomes:** faster information access and knowledge sharing, lower costs and easier updates, online learning and better convenience, wider access and global resources
 
-**Negative Outcomes:** digital divide and technology barriers, reduced focus and excessive screen time, loss of physical resources and study spaces
+**Alternative (Traditional Libraries):** traditional libraries, physical libraries, quiet study spaces and focused learning, better concentration and deeper understanding, face-to-face guidance and physical book collections, traditional university libraries
 
 **Evidence Sources:** education research, library experts
 
@@ -1203,7 +1203,7 @@ In recent years, the topic of **digital media in universities** has emerged as a
 
 To begin with, one compelling advantage of **digital media in universities** is its potential to bring about **faster information access and knowledge sharing**. In particular, **digital media in universities** can facilitate **lower costs and easier updates**, ultimately leading to broader outcomes such as **online learning and better convenience**. For instance, evidence from **education research** shows that many **students** experienced **wider access and global resources** as a direct result of **digital media in universities**. In my own experience, I use e-books and online journals, which makes my research much easier.
 
-However, it is equally important to acknowledge that **digital media in universities** may also give rise to certain challenges. This is largely because **digital media in universities** is likely to generate **digital divide and technology barriers**, which may subsequently lead to **reduced focus and excessive screen time**. According to research by **library experts**, a significant number of **universities** have been affected by **loss of physical resources and study spaces** resulting from **digital media in universities**.
+However, it is equally important to acknowledge that **traditional libraries** also provide certain benefits. This is largely because **physical libraries** can offer **quiet study spaces and focused learning**, which may lead to **better concentration and deeper understanding**. According to research by **library experts**, a significant number of **students** have benefited from **face-to-face guidance and physical book collections** provided by **traditional university libraries**.
 
 Taken together, these considerations demonstrate the overall importance of **digital media in universities**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **students and universities** to allocate sufficient resources to address these challenges effectively.
 

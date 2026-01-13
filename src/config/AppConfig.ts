@@ -66,6 +66,7 @@ export class AppConfig {
               'pte-wfd-segments': 'data/processed/pte-wfd-segments-dataset.json',
               'pte-sgd-vocabulary': 'data/processed/pte-sgd-vocabulary.json',
               'pte-rl-vocabulary': 'data/processed/pte-rl-vocabulary.json',
+              'pte-essay-outcomes-vocabulary': 'data/processed/pte-essay-outcomes-vocabulary-with-ipa.json',
 
               // Practice modes
               'rs': 'data/processed/pte-repeat-sentence.json',
@@ -109,6 +110,7 @@ export class AppConfig {
           { id: 'pte-wfd-segments', name: 'WFD Segments Shadow', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-sgd-vocabulary', name: 'SGD Vocabulary', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-rl-vocabulary', name: 'RL Vocabulary', category: 'vocabulary', difficulty: 'normal' },
+          { id: 'pte-essay-outcomes-vocabulary', name: 'Essay Outcomes Vocab', category: 'vocabulary', difficulty: 'normal' },
 
           // Practice modes (3 total)
           { id: 'rs', name: 'Repeat Sentence', category: 'practice', description: '620 practice sentences' },

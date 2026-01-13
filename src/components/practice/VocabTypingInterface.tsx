@@ -235,16 +235,16 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
     const handleGlobalKeyDown = (e: KeyboardEvent) => {
       const isInputFocused = document.activeElement === inputRef.current;
 
-      // Previous: ArrowLeft
-      if (e.key === 'ArrowLeft') {
+      // Previous: ArrowLeft or < or ,
+      if (e.key === 'ArrowLeft' || e.key === '<' || e.key === ',') {
         // Allow navigation if input is NOT focused, OR if Ctrl is held
         if (!isInputFocused || e.ctrlKey) {
           handlePrevious();
         }
       }
 
-      // Next: ArrowRight
-      if (e.key === 'ArrowRight') {
+      // Next: ArrowRight or > or .
+      if (e.key === 'ArrowRight' || e.key === '>' || e.key === '.') {
         // Only navigate if next is allowed (onNext exists)
         // AND not typing (unless Ctrl)
         if (!isInputFocused || e.ctrlKey) {

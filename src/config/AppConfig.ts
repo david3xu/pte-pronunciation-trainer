@@ -66,7 +66,7 @@ export class AppConfig {
               'pte-wfd-segments': 'data/processed/pte-wfd-segments-dataset.json',
               'pte-sgd-vocabulary': 'data/processed/pte-sgd-vocabulary.json',
               'pte-rl-vocabulary': 'data/processed/pte-rl-vocabulary.json',
-              'pte-essay-outcomes-vocabulary': 'data/processed/pte-essay-outcomes-vocabulary-with-ipa.json',
+              'pte-essay-outcomes-vocabulary': 'data/processed/pte-essay-outcomes-vocabulary.json',
 
               // Practice modes
               'rs': 'data/processed/pte-repeat-sentence.json',

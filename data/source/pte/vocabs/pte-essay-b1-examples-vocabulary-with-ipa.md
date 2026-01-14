@@ -585,19 +585,18 @@
 
 ## Example 30: Medical Technology and Life Expectancy
 
-422. **medical technology** | /ˈmedɪkəl tekˈnɒlədʒi/ — sounds like **MED-ih-kul tek-NOL-uh-jee**
+422. **increased life expectancy** | /ɪnˈkriːst laɪf ɪkˈspektənsi/ — sounds like **in-KREEST LYF ik-SPEK-tun-see**
 423. **people** | /ˈpiːpəl/ — sounds like **PEE-pul**
-424. **patients** | /ˈpeɪʃənts/ — sounds like **PAY-shunts**
-425. **better healthcare and disease prevention** | /ˈbetə ˈhelθkeə ənd dɪˈziːz prɪˈvenʃən/ — sounds like **BET-ur HELTH-kair und dih-ZEEZ prih-VEN-shun**
-426. **higher living standards and improved quality of life** | /ˈhaɪə ˈlɪvɪŋ ˈstændədz ənd ɪmˈpruːvd ˈkwɒləti əv laɪf/ — sounds like **HY-ur LIV-ing STAN-durdz und im-PROOVD KWOL-uh-tee uv LYF**
-427. **longer life and reduced mortality** | /ˈlɒŋɡə laɪf ənd rɪˈdjuːst mɔːˈtæləti/ — sounds like **LONG-gur LYF und rih-DYOOST mor-TAL-uh-tee**
+424. **society** | /səˈsaɪəti/ — sounds like **suh-SY-uh-tee**
+425. **family time and leisure activities** | /ˈfæməli taɪm ənd ˈleʒə ækˈtɪvɪtiz/ — sounds like **FAM-uh-lee TYM und LEZH-ur ak-TIV-uh-teez**
+426. **stronger bonds and greater happiness** | /ˈstrɒŋɡə bɒndz ənd ˈɡreɪtə ˈhæpɪnəs/ — sounds like **STRONG-ur BONDZ und GRAY-tur HAP-ih-nus**
+427. **educational programs and learning opportunities** | /ˌedjʊˈkeɪʃənəl ˈprəʊɡræmz ənd ˈlɜːnɪŋ ˌɒpə ˈtjuːnɪtiz/ — sounds like **ej-oo-KAY-shun-ul PROH-gramz und LUR-ning op-ur-TOO-nih-teez**
 428. **health studies** | /helθ ˈstʌdiz/ — sounds like **HELTH STUD-eez**
-429. **better medical treatment and faster recovery** | /ˈbetə ˈmedɪkəl ˈtriːtmənt ənd ˈfɑːstə rɪˈkʌvəri/ — sounds like **BET-ur MED-ih-kul TREET-ment und FAH-stur rih-KUV-uh-ree**
+429. **chronic illness and long-term care** | /ˈkrɒnɪk ˈɪlnəs ənd lɒŋ tɜːm keə/ — sounds like **KRON-ik IL-nus und LONG TURM KAIR**
 430. **ageing population and healthcare costs** | /ˈeɪdʒɪŋ ˌpɒpjʊˈleɪʃən ənd ˈhelθkeə kɒsts/ — sounds like **AY-jing pop-yoo-LAY-shun und HELTH-kair KOSTS**
-431. **chronic illness and long-term care** | /ˈkrɒnɪk ˈɪlnəs ənd lɒŋ tɜːm keə/ — sounds like **KRON-ik IL-nus und LONG TURM KAIR**
+431. **financial pressure and limited budget** | /faɪˈnænʃəl ˈpreʃə ənd ˈlɪmɪtɪd ˈbʌdʒɪt/ — sounds like **fy-NAN-shul PRESH-ur und LIM-ih-tid BUJ-it**
 432. **medical researchers** | /ˈmedɪkəl rɪˈsɜːtʃəz/ — sounds like **MED-ih-kul rih-SUR-churz**
-433. **resource pressure and social burden** | /rɪˈzɔːs ˈpreʃə ənd ˈsəʊʃəl ˈbɜːdən/ — sounds like **rih-SORS PRESH-ur und SOH-shul BUR-dun**
-434. **governments and healthcare systems** | /ˈɡʌvənmənts ənd ˈhelθkeə ˈsɪstəmz/ — sounds like **GUV-urn-ments und HELTH-kair SIS-tumz**
+433. **governments and healthcare systems** | /ˈɡʌvənmənts ənd ˈhelθkeə ˈsɪstəmz/ — sounds like **GUV-urn-ments und HELTH-kair SIS-tumz**
 
 ---
 

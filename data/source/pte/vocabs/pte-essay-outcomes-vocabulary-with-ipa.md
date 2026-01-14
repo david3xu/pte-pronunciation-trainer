@@ -41,7 +41,7 @@
 27. **reputation marketing** | /ˌrepjʊˈteɪʃən ˈmɑːkɪtɪŋ/ — sounds like **rep-yoo-TAY-shun MAR-kit-ing**
 28. **studying classic plays** | /ˈstʌdiɪŋ ˈklæsɪk pleɪz/ — sounds like **STUD-ee-ing KLAS-ik PLAYZ**
 29. **large shopping malls** | /lɑːdʒ ˈʃɒpɪŋ mɔːlz/ — sounds like **LARJ SHOP-ing MOLZ**
-30. **medical technology** | /ˈmedɪkəl tekˈnɒlədʒi/ — sounds like **MED-ih-kul tek-NOL-uh-jee**
+30. **increased life expectancy** | /ɪnˈkriːst laɪf ɪkˈspektənsi/ — sounds like **in-KREEST LYF ik-SPEK-tun-see**
 31. **parental legal responsibility** | /pəˈrentəl ˈliːɡəl rɪˌspɒnsəˈbɪlɪti/ — sounds like **puh-REN-tul LEE-gul rih-spon-suh-BIL-uh-tee**
 32. **living in the countryside** | /ˈlɪvɪŋ ɪn ðə ˈkʌntrisaɪd/ — sounds like **LIV-ing in thuh KUN-tree-syd**
 33. **digital media in universities** | /ˈdɪdʒɪtəl ˈmiːdiə ɪn ˌjuːnɪˈvɜːsətiz/ — sounds like **DIJ-ih-tul MEE-dee-uh in yoo-nih-VUR-suh-teez**

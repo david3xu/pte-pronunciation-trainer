@@ -1095,27 +1095,27 @@ Taken together, these considerations demonstrate the overall importance of **lar
 
 ### Fill-in Terms (13 unique)
 
-**Main Topic:** medical technology extending life (repeat 8+ times)
+**Main Topic:** medical technology (repeat 8+ times)
 
 **Subjects:** people, society
 
-**Positive Outcomes:** better healthcare and disease prevention, improved quality of life, better medical treatment, longer and healthier lives
+**Positive Outcomes:** better healthcare and disease prevention, improved wellbeing and physical health, personal happiness and reduced stress, better medical treatment
 
-**Negative Outcomes:** ageing population and healthcare costs, chronic illness and long-term care, resource pressure and social burden
+**Negative Outcomes:** ageing population and healthcare costs, financial pressure and limited budget, high costs and maintenance expenses
 
 **Evidence Sources:** health studies, medical researchers
 
 **Conclusion:** governments and healthcare systems
 
-### Complete Essay (227 words)
+### Complete Essay (226 words)
 
-In recent years, the topic of **medical technology extending life** has emerged as a significant subject of public and academic discussion. I contend that **medical technology extending life** offers substantial benefits for **people** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+In recent years, the topic of **medical technology** has emerged as a significant subject of public and academic discussion. I contend that **medical technology** offers substantial benefits for **people** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
 
-To begin with, one compelling advantage of **medical technology extending life** is its potential to bring about **better healthcare and disease prevention**. In particular, **medical technology extending life** can facilitate **improved quality of life**, ultimately leading to broader outcomes such as **longer and healthier lives**. For instance, evidence from **health studies** shows that many **people** experienced **better medical treatment** as a direct result of **medical technology extending life**. In my own experience, I have seen elderly relatives enjoy more active and fulfilling lives in their later years.
+To begin with, one compelling advantage of **medical technology** is its potential to bring about **better healthcare and disease prevention**. In particular, **medical technology** can facilitate **improved wellbeing and physical health**, ultimately leading to broader outcomes such as **personal happiness and reduced stress**. For instance, evidence from **health studies** shows that many **people** experienced **better medical treatment** as a direct result of **medical technology**. In my own experience, I have seen elderly relatives enjoy more active and fulfilling lives thanks to modern treatments.
 
-However, it is equally important to acknowledge that **medical technology extending life** may also give rise to certain challenges. This is largely because **medical technology extending life** is likely to generate **ageing population and healthcare costs**, which may subsequently lead to **chronic illness and long-term care**. According to research by **medical researchers**, **society** has been affected by **resource pressure and social burden** resulting from **medical technology extending life**.
+However, it is equally important to acknowledge that **medical technology** may also give rise to certain challenges. This is largely because **medical technology** is likely to generate **ageing population and healthcare costs**, which may subsequently lead to **financial pressure and limited budget**. According to research by **medical researchers**, **society** has been affected by **high costs and maintenance expenses** resulting from **medical technology**.
 
-Taken together, these considerations demonstrate the overall importance of **medical technology extending life**, since its advantages remain significant despite the issues that accompany them. Thus, it is essential for **governments and healthcare systems** to allocate sufficient resources to address these challenges effectively.
+Taken together, these considerations demonstrate the overall importance of **medical technology**, since its advantages remain significant despite the issues that accompany them. Thus, it is essential for **governments and healthcare systems** to allocate sufficient resources to address these challenges effectively.
 
 ---
 

@@ -588,9 +588,9 @@
 422. **increased life expectancy** | /ɪnˈkriːst laɪf ɪkˈspektənsi/ — sounds like **in-KREEST LYF ik-SPEK-tun-see**
 423. **people** | /ˈpiːpəl/ — sounds like **PEE-pul**
 424. **society** | /səˈsaɪəti/ — sounds like **suh-SY-uh-tee**
-425. **family time and leisure activities** | /ˈfæməli taɪm ənd ˈleʒə ækˈtɪvɪtiz/ — sounds like **FAM-uh-lee TYM und LEZH-ur ak-TIV-uh-teez**
-426. **stronger bonds and greater happiness** | /ˈstrɒŋɡə bɒndz ənd ˈɡreɪtə ˈhæpɪnəs/ — sounds like **STRONG-ur BONDZ und GRAY-tur HAP-ih-nus**
-427. **educational programs and learning opportunities** | /ˌedjʊˈkeɪʃənəl ˈprəʊɡræmz ənd ˈlɜːnɪŋ ˌɒpə ˈtjuːnɪtiz/ — sounds like **ej-oo-KAY-shun-ul PROH-gramz und LUR-ning op-ur-TOO-nih-teez**
+425. **family time and life experience** | /ˈfæməli taɪm ənd laɪf ɪkˈspɪəriəns/ — sounds like **FAM-uh-lee TYM und LYF ik-SPEER-ee-uns**
+426. **social contributions and stronger bonds** | /ˈsəʊʃəl ˌkɒntrɪˈbjuːʃənz ənd ˈstrɒŋɡə bɒndz/ — sounds like **SOH-shul kon-trih-BYOO-shunz und STRONG-ur BONDZ**
+427. **improved quality of life** | /ɪmˈpruːvd ˈkwɒləti əv laɪf/ — sounds like **im-PROOVD KWOL-uh-tee uv LYF**
 428. **health studies** | /helθ ˈstʌdiz/ — sounds like **HELTH STUD-eez**
 429. **chronic illness and long-term care** | /ˈkrɒnɪk ˈɪlnəs ənd lɒŋ tɜːm keə/ — sounds like **KRON-ik IL-nus und LONG TURM KAIR**
 430. **ageing population and healthcare costs** | /ˈeɪdʒɪŋ ˌpɒpjʊˈleɪʃən ənd ˈhelθkeə kɒsts/ — sounds like **AY-jing pop-yoo-LAY-shun und HELTH-kair KOSTS**

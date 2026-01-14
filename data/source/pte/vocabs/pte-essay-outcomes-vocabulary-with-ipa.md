@@ -1,7 +1,7 @@
 # PTE Essay Vocabulary - Complete With IPA
 
 **Purpose:** ALL reusable vocabulary for PTE essays
-**Total Terms:** 211 phrases (37 topics + 174 outcomes)
+**Total Terms:** 212 phrases (38 topics + 174 outcomes)
 **Coverage:** Main topics, Positive/Negative outcomes, Alternative/Comparison, Solutions
 **Format:** Organized by type and theme for systematic study
 **Source:** essay-examples-template-b1.md (all 37 examples)
@@ -49,6 +49,7 @@
 35. **shortage of personal time** | /ˈʃɔːtɪdʒ əv ˈpɜːsənəl taɪm/ — sounds like **SHOR-tij uv PUR-sun-ul TYM**
 36. **shorter working week** | /ˈʃɔːtə ˈwɜːkɪŋ wiːk/ — sounds like **SHOR-tur WUR-king WEEK**
 37. **celebrity privacy rights** | /sɪˈlebrəti ˈprɪvəsi raɪts/ — sounds like **suh-LEB-ruh-tee PRIV-uh-see RYTS**
+38. **extreme weather research** | /ɪkˈstriːm ˈweðə rɪˈsɜːtʃ/ — sounds like **ik-STREEM WETH-ur rih-SURCH**
 
 ---
 

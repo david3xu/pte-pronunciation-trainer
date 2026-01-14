@@ -233,29 +233,23 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
   // Global keyboard navigation
   useEffect(() => {
     const handleGlobalKeyDown = (e: KeyboardEvent) => {
-      const isInputFocused = document.activeElement === inputRef.current;
-
       // Previous: ArrowLeft or < or ,
       if (e.key === 'ArrowLeft' || e.key === '<' || e.key === ',') {
-        // Allow navigation if input is NOT focused, OR if Ctrl is held
-        if (!isInputFocused || e.ctrlKey) {
-          handlePrevious();
-        }
+        e.preventDefault(); // Prevent default behavior
+        handlePrevious();
       }
 
       // Next: ArrowRight or > or .
+      // IMPORTANT: Allow skipping even with empty input - always enabled!
       if (e.key === 'ArrowRight' || e.key === '>' || e.key === '.') {
-        // Only navigate if next is allowed (onNext exists)
-        // AND not typing (unless Ctrl)
-        if (!isInputFocused || e.ctrlKey) {
-          handleNext();
-        }
+        e.preventDefault(); // Prevent default behavior
+        handleNext();
       }
     };
 
     window.addEventListener('keydown', handleGlobalKeyDown);
     return () => window.removeEventListener('keydown', handleGlobalKeyDown);
-  }, [handleNext, handlePrevious, hasSubmitted]);
+  }, [handleNext, handlePrevious]);
 
   // Auto-focus input after first play
   useEffect(() => {

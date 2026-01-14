@@ -1095,11 +1095,11 @@ Taken together, these considerations demonstrate the overall importance of **lar
 
 ### Fill-in Terms (13 unique)
 
-**Main Topic:** increased life expectancy (repeat 8+ times)
+**Main Topic:** medical technology extending life (repeat 8+ times)
 
 **Subjects:** people, society
 
-**Positive Outcomes:** better healthcare and disease prevention, longer life and reduced mortality, better medical treatment and faster recovery, improved quality of life
+**Positive Outcomes:** better healthcare and disease prevention, improved quality of life, better medical treatment, longer and healthier lives
 
 **Negative Outcomes:** ageing population and healthcare costs, chronic illness and long-term care, resource pressure and social burden
 
@@ -1107,15 +1107,15 @@ Taken together, these considerations demonstrate the overall importance of **lar
 
 **Conclusion:** governments and healthcare systems
 
-### Complete Essay (228 words)
+### Complete Essay (227 words)
 
-In recent years, the topic of **increased life expectancy** has emerged as a significant subject of public and academic discussion. I contend that **increased life expectancy** offers substantial benefits for **people** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+In recent years, the topic of **medical technology extending life** has emerged as a significant subject of public and academic discussion. I contend that **medical technology extending life** offers substantial benefits for **people** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
 
-To begin with, one compelling advantage of **increased life expectancy** is its potential to bring about **better healthcare and disease prevention**. In particular, **increased life expectancy** can facilitate **improved quality of life**, ultimately leading to broader outcomes such as **longer life and reduced mortality**. For instance, evidence from **health studies** shows that many **people** experienced **better medical treatment and faster recovery** as a direct result of **increased life expectancy**. In my own experience, I have seen elderly relatives enjoy more active and fulfilling lives in their later years.
+To begin with, one compelling advantage of **medical technology extending life** is its potential to bring about **better healthcare and disease prevention**. In particular, **medical technology extending life** can facilitate **improved quality of life**, ultimately leading to broader outcomes such as **longer and healthier lives**. For instance, evidence from **health studies** shows that many **people** experienced **better medical treatment** as a direct result of **medical technology extending life**. In my own experience, I have seen elderly relatives enjoy more active and fulfilling lives in their later years.
 
-However, it is equally important to acknowledge that **increased life expectancy** may also give rise to certain challenges. This is largely because **increased life expectancy** is likely to generate **ageing population and healthcare costs**, which may subsequently lead to **chronic illness and long-term care**. According to research by **medical researchers**, **society** has been affected by **resource pressure and social burden** resulting from **increased life expectancy**.
+However, it is equally important to acknowledge that **medical technology extending life** may also give rise to certain challenges. This is largely because **medical technology extending life** is likely to generate **ageing population and healthcare costs**, which may subsequently lead to **chronic illness and long-term care**. According to research by **medical researchers**, **society** has been affected by **resource pressure and social burden** resulting from **medical technology extending life**.
 
-Taken together, these considerations demonstrate the overall importance of **increased life expectancy**, since its advantages remain significant despite the issues that accompany them. Thus, it is essential for **governments and healthcare systems** to allocate sufficient resources to address these challenges effectively.
+Taken together, these considerations demonstrate the overall importance of **medical technology extending life**, since its advantages remain significant despite the issues that accompany them. Thus, it is essential for **governments and healthcare systems** to allocate sufficient resources to address these challenges effectively.
 
 ---
 

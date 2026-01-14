@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-01-13T22:39:37.073Z",
+    "generated": "2026-01-14T10:52:03.250Z",
     "totalTerms": 211,
     "source": "pte-essay-outcomes-vocabulary",
     "description": "Auto-discovered vocabulary book: pte-essay-outcomes-vocabulary",
@@ -477,15 +477,15 @@
       "source": "pte-essay-outcomes-vocabulary"
     },
     {
-      "english": "**medical technology**",
+      "english": "**increased life expectancy**",
       "pronunciation": {
         "british": {
-          "ipa": "ˈmedɪkəl tekˈnɒlədʒi",
-          "phonetic": "MED-ih-kul tek-NOL-uh-jee"
+          "ipa": "ɪnˈkriːst laɪf ɪkˈspektənsi",
+          "phonetic": "in-KREEST LYF ik-SPEK-tun-see"
         },
         "american": {
-          "ipa": "ˈmedɪkəl tekˈnɒlədʒi",
-          "phonetic": "MED-ih-kul tek-NOL-uh-jee"
+          "ipa": "ɪnˈkriːst laɪf ɪkˈspektənsi",
+          "phonetic": "in-KREEST LYF ik-SPEK-tun-see"
         }
       },
       "difficulty": "hard",

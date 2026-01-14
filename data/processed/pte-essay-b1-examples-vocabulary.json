@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-01-14T10:52:03.238Z",
-    "totalTerms": 544,
+    "generated": "2026-01-14T20:55:01.945Z",
+    "totalTerms": 557,
     "source": "pte-essay-b1-examples-vocabulary",
     "description": "Auto-discovered vocabulary book: pte-essay-b1-examples-vocabulary",
     "version": "1.0",
@@ -8710,6 +8710,214 @@
         "american": {
           "ipa": "sɪˈlebrətiz ənd ˈmiːdiə ˌɔːɡənaɪˈzeɪʃənz",
           "phonetic": "suh-LEB-ruh-teez und MEE-dee-uh or-gun-eye-ZAY-shunz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**extreme weather research**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪkˈstriːm ˈweðə rɪˈsɜːtʃ",
+          "phonetic": "ik-STREEM WETH-ur rih-SURCH"
+        },
+        "american": {
+          "ipa": "ɪkˈstriːm ˈweðə rɪˈsɜːtʃ",
+          "phonetic": "ik-STREEM WETH-ur rih-SURCH"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**scientists**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsaɪəntɪsts",
+          "phonetic": "SY-un-tists"
+        },
+        "american": {
+          "ipa": "ˈsaɪəntɪsts",
+          "phonetic": "SY-un-tists"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**communities**",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəˈmjuːnətiz",
+          "phonetic": "kuh-MYOO-nih-teez"
+        },
+        "american": {
+          "ipa": "kəˈmjuːnətiz",
+          "phonetic": "kuh-MYOO-nih-teez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**environmental protection and disaster prevention**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˌvaɪrənˈmentəl prəˈtekʃən ənd dɪˈzɑːstə prɪˈvenʃən",
+          "phonetic": "in-vy-run-MEN-tul pruh-TEK-shun und dih-ZAH-stur prih-VEN-shun"
+        },
+        "american": {
+          "ipa": "ɪnˌvaɪrənˈmentəl prəˈtekʃən ənd dɪˈzɑːstə prɪˈvenʃən",
+          "phonetic": "in-vy-run-MEN-tul pruh-TEK-shun und dih-ZAH-stur prih-VEN-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**improved safety and early warning systems**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪmˈpruːvd ˈseɪfti ənd ˈɜːli ˈwɔːnɪŋ ˈsɪstəmz",
+          "phonetic": "im-PROOVD SAYF-tee und UR-lee WOR-ning SIS-tumz"
+        },
+        "american": {
+          "ipa": "ɪmˈpruːvd ˈseɪfti ənd ˈɜːli ˈwɔːnɪŋ ˈsɪstəmz",
+          "phonetic": "im-PROOVD SAYF-tee und UR-lee WOR-ning SIS-tumz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**better knowledge and research findings**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbetə ˈnɒlɪdʒ ənd rɪˈsɜːtʃ ˈfaɪndɪŋz",
+          "phonetic": "BET-ur NOL-ij und rih-SURCH FYN-dingz"
+        },
+        "american": {
+          "ipa": "ˈbetə ˈnɒlɪdʒ ənd rɪˈsɜːtʃ ˈfaɪndɪŋz",
+          "phonetic": "BET-ur NOL-ij und rih-SURCH FYN-dingz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**climate scientists**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈklaɪmət ˈsaɪəntɪsts",
+          "phonetic": "KLY-mut SY-un-tists"
+        },
+        "american": {
+          "ipa": "ˈklaɪmət ˈsaɪəntɪsts",
+          "phonetic": "KLY-mut SY-un-tists"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**rising temperatures and extreme weather events**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈraɪzɪŋ ˈtemprɪtʃəz ənd ɪkˈstriːm ˈweðər ɪˈvents",
+          "phonetic": "RY-zing TEM-pruh-churz und ik-STREEM WETH-ur ih-VENTS"
+        },
+        "american": {
+          "ipa": "ˈraɪzɪŋ ˈtemprɪtʃəz ənd ɪkˈstriːm ˈweðər ɪˈvents",
+          "phonetic": "RY-zing TEM-pruh-churz und ik-STREEM WETH-ur ih-VENTS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**environmental damage and habitat loss**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˌvaɪrənˈmentəl ˈdæmɪdʒ ənd ˈhæbɪtæt lɒs",
+          "phonetic": "in-vy-run-MEN-tul DAM-ij und HAB-ih-tat LOSS"
+        },
+        "american": {
+          "ipa": "ɪnˌvaɪrənˈmentəl ˈdæmɪdʒ ənd ˈhæbɪtæt lɒs",
+          "phonetic": "in-vy-run-MEN-tul DAM-ij und HAB-ih-tat LOSS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**environmental researchers**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˌvaɪrənˈmentəl rɪˈsɜːtʃəz",
+          "phonetic": "in-vy-run-MEN-tul rih-SUR-churz"
+        },
+        "american": {
+          "ipa": "ɪnˌvaɪrənˈmentəl rɪˈsɜːtʃəz",
+          "phonetic": "in-vy-run-MEN-tul rih-SUR-churz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**resource pressure and social burden**",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈsɔːs ˈpreʃə ənd ˈsəʊʃəl ˈbɜːdən",
+          "phonetic": "rih-SORS PRESH-ur und SOH-shul BUR-dun"
+        },
+        "american": {
+          "ipa": "rɪˈsɔːs ˈpreʃə ənd ˈsəʊʃəl ˈbɜːdən",
+          "phonetic": "rih-SORS PRESH-ur und SOH-shul BUR-dun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**extreme weather research findings**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪkˈstriːm ˈweðə rɪˈsɜːtʃ ˈfaɪndɪŋz",
+          "phonetic": "ik-STREEM WETH-ur rih-SURCH FYN-dingz"
+        },
+        "american": {
+          "ipa": "ɪkˈstriːm ˈweðə rɪˈsɜːtʃ ˈfaɪndɪŋz",
+          "phonetic": "ik-STREEM WETH-ur rih-SURCH FYN-dingz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary",
+      "source": "pte-essay-b1-examples-vocabulary"
+    },
+    {
+      "english": "**governments and research institutions**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɡʌvənmənts ənd rɪˈsɜːtʃ ˌɪnstɪˈtjuːʃənz",
+          "phonetic": "GUV-urn-ments und rih-SURCH in-stih-TOO-shunz"
+        },
+        "american": {
+          "ipa": "ˈɡʌvənmənts ənd rɪˈsɜːtʃ ˌɪnstɪˈtjuːʃənz",
+          "phonetic": "GUV-urn-ments und rih-SURCH in-stih-TOO-shunz"
         }
       },
       "difficulty": "hard",

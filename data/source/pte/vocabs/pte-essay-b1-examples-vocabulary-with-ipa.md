@@ -737,10 +737,28 @@
 
 ---
 
+## Example 38: Climate Change Research Area
+
+537. **extreme weather research** | /ɪkˈstriːm ˈweðə rɪˈsɜːtʃ/ — sounds like **ik-STREEM WETH-ur rih-SURCH**
+538. **scientists** | /ˈsaɪəntɪsts/ — sounds like **SY-un-tists**
+539. **communities** | /kəˈmjuːnətiz/ — sounds like **kuh-MYOO-nih-teez**
+540. **environmental protection and disaster prevention** | /ɪnˌvaɪrənˈmentəl prəˈtekʃən ənd dɪˈzɑːstə prɪˈvenʃən/ — sounds like **in-vy-run-MEN-tul pruh-TEK-shun und dih-ZAH-stur prih-VEN-shun**
+541. **improved safety and early warning systems** | /ɪmˈpruːvd ˈseɪfti ənd ˈɜːli ˈwɔːnɪŋ ˈsɪstəmz/ — sounds like **im-PROOVD SAYF-tee und UR-lee WOR-ning SIS-tumz**
+542. **better knowledge and research findings** | /ˈbetə ˈnɒlɪdʒ ənd rɪˈsɜːtʃ ˈfaɪndɪŋz/ — sounds like **BET-ur NOL-ij und rih-SURCH FYN-dingz**
+543. **climate scientists** | /ˈklaɪmət ˈsaɪəntɪsts/ — sounds like **KLY-mut SY-un-tists**
+544. **rising temperatures and extreme weather events** | /ˈraɪzɪŋ ˈtemprɪtʃəz ənd ɪkˈstriːm ˈweðər ɪˈvents/ — sounds like **RY-zing TEM-pruh-churz und ik-STREEM WETH-ur ih-VENTS**
+545. **environmental damage and habitat loss** | /ɪnˌvaɪrənˈmentəl ˈdæmɪdʒ ənd ˈhæbɪtæt lɒs/ — sounds like **in-vy-run-MEN-tul DAM-ij und HAB-ih-tat LOSS**
+546. **environmental researchers** | /ɪnˌvaɪrənˈmentəl rɪˈsɜːtʃəz/ — sounds like **in-vy-run-MEN-tul rih-SUR-churz**
+547. **resource pressure and social burden** | /rɪˈsɔːs ˈpreʃə ənd ˈsəʊʃəl ˈbɜːdən/ — sounds like **rih-SORS PRESH-ur und SOH-shul BUR-dun**
+548. **extreme weather research findings** | /ɪkˈstriːm ˈweðə rɪˈsɜːtʃ ˈfaɪndɪŋz/ — sounds like **ik-STREEM WETH-ur rih-SURCH FYN-dingz**
+549. **governments and research institutions** | /ˈɡʌvənmənts ənd rɪˈsɜːtʃ ˌɪnstɪˈtjuːʃənz/ — sounds like **GUV-urn-ments und rih-SURCH in-stih-TOO-shunz**
+
+---
+
 ## Summary Statistics
 
-- **Total unique terms:** 536 terms
-- **Organized by:** 37 essay examples
+- **Total unique terms:** 549 terms
+- **Organized by:** 38 essay examples
 - **All terms:** Used in actual Template B1 essays
 - **Strategy:** These are ACTUAL fills used in essay examples
 

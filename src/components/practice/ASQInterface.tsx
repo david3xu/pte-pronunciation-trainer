@@ -85,6 +85,12 @@ const ASQInterface: React.FC<ASQInterfaceProps> = ({
     setIsThinking(false);
     setThinkingTime(0);
 
+    // Add timeout to prevent infinite "Playing..." state
+    const timeoutId = setTimeout(() => {
+      console.warn('[ASQInterface] TTS timeout - audio may have failed to play');
+      setIsPlaying(false);
+    }, 10000); // 10 second timeout
+
     try {
       await ttsEngine.speak(question, null, settings.ttsRate); // (text, lang, rate)
 
@@ -112,6 +118,7 @@ const ASQInterface: React.FC<ASQInterfaceProps> = ({
     } catch (error) {
       console.error('[ASQInterface] Playback error:', error);
     } finally {
+      clearTimeout(timeoutId); // Clear timeout if TTS completes normally
       setIsPlaying(false);
     }
   };

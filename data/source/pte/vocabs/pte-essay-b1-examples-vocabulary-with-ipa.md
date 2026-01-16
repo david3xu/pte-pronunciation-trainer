@@ -666,7 +666,7 @@
 481. **governments** | /ˈɡʌvənmənts/ — sounds like **GUV-urn-ments**
 482. **reduced traffic and lower pollution** | /rɪˈdjuːst ˈtræfɪk ənd ˈləʊə pəˈluːʃən/ — sounds like **rih-DYOOST TRAF-ik und LOH-ur puh-LOO-shun**
 483. **affordable travel and equal access** | /əˈfɔːdəbəl ˈtrævəl ənd ˈiːkwəl ˈækses/ — sounds like **uh-FOR-duh-bul TRAV-ul und EE-kwul AK-ses**
-484. **lower costs and less congestion** | /ˈləʊə kɒsts ənd les kənˈdʒestʃən/ — sounds like **LOH-ur KOSTS und LES kun-JES-chun**
+484. **lower costs and less traffic congestion** | /ˈləʊə kɒsts ənd les ˈtræfɪk kənˈdʒestʃən/ — sounds like **LOH-ur KOSTS und LES TRAF-ik kun-JES-chun**
 485. **urban planning research** | /ˈɜːbən ˈplænɪŋ rɪˈsɜːtʃ/ — sounds like **UR-bun PLAN-ing rih-SURCH**
 486. **environmental benefits and cleaner air** | /ɪnˌvaɪrənˈmentəl ˈbenɪfɪts ənd ˈkliːnə eə/ — sounds like **in-vy-run-MEN-tul BEN-ih-fits und KLEE-nur AIR**
 487. **building more roads** | /ˈbɪldɪŋ mɔː rəʊdz/ — sounds like **BIL-ding MOR ROHDZ**

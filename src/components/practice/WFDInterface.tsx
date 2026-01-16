@@ -77,11 +77,18 @@ const WFDInterface: React.FC<WFDInterfaceProps> = ({
     setIsPlaying(true);
     setPlayCount((prev) => prev + 1);
 
+    // Add timeout to prevent infinite "Playing..." state
+    const timeoutId = setTimeout(() => {
+      console.warn('[WFDInterface] TTS timeout - audio may have failed to play');
+      setIsPlaying(false);
+    }, 10000); // 10 second timeout
+
     try {
       await ttsEngine.speak(sentence, null, settings.ttsRate); // (text, lang, rate)
     } catch (error) {
       console.error('[WFDInterface] Playback error:', error);
     } finally {
+      clearTimeout(timeoutId); // Clear timeout if TTS completes normally
       setIsPlaying(false);
     }
   };

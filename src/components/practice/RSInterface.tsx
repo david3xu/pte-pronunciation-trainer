@@ -80,11 +80,19 @@ const RSInterface: React.FC<RSInterfaceProps> = ({
     if (isPlaying) return;
 
     setIsPlaying(true);
+
+    // Add timeout to prevent infinite "Playing..." state
+    const timeoutId = setTimeout(() => {
+      console.warn('[RSInterface] TTS timeout - audio may have failed to play');
+      setIsPlaying(false);
+    }, 10000); // 10 second timeout
+
     try {
       await ttsEngine.speak(sentence, null, settings.ttsRate); // (text, lang, rate)
     } catch (error) {
       console.error('[RSInterface] Playback error:', error);
     } finally {
+      clearTimeout(timeoutId); // Clear timeout if TTS completes normally
       setIsPlaying(false);
     }
   };

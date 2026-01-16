@@ -1227,7 +1227,7 @@ Taken together, these considerations demonstrate the overall importance of **dig
 
 **Subjects:** governments, citizens
 
-**Positive Outcomes (Public Transport):** reduced traffic and lower pollution, affordable travel and equal access, lower costs and less congestion, environmental benefits and cleaner air
+**Positive Outcomes (Public Transport):** reduced traffic and lower pollution, affordable travel and equal access, lower costs and less traffic congestion, environmental benefits and cleaner air
 
 **Alternative Benefits (Roads):** personal convenience and travel flexibility, economic growth and business transport, job creation and infrastructure development
 
@@ -1239,7 +1239,7 @@ Taken together, these considerations demonstrate the overall importance of **dig
 
 In recent years, the topic of **public transport networks** has emerged as a significant subject of public and academic discussion. I contend that **public transport networks** offer substantial benefits for **citizens** despite alternatives, and the following analysis outlines the primary arguments supporting this viewpoint.
 
-To begin with, one compelling advantage of **public transport networks** is their potential to bring about **reduced traffic and lower pollution**. In particular, **public transport networks** can facilitate **affordable travel and equal access**, ultimately leading to broader outcomes such as **lower costs and less congestion**. For instance, evidence from **urban planning research** shows that many **citizens** experienced **environmental benefits and cleaner air** as a direct result of **public transport networks**. In my experience, I take buses and trains to save money and reduce my daily stress.
+To begin with, one compelling advantage of **public transport networks** is their potential to bring about **reduced traffic and lower pollution**. In particular, **public transport networks** can facilitate **affordable travel and equal access**, ultimately leading to broader outcomes such as **lower costs and less traffic congestion**. For instance, evidence from **urban planning research** shows that many **citizens** experienced **environmental benefits and cleaner air** as a direct result of **public transport networks**. In my experience, I take buses and trains to save money and reduce my daily stress.
 
 However, it is equally important to acknowledge that **building more roads** also provides certain benefits. This is largely because **more roads** can offer **personal convenience and travel flexibility**, which may lead to **economic growth and business transport**. According to research by **transport experts**, a significant number of **governments** have benefited from **job creation and infrastructure development** provided by **road construction projects**.
 

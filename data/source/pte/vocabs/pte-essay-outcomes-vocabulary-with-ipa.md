@@ -159,17 +159,17 @@
 ## 💰 Financial & Economic Problems (Negative)
 
 106. **high costs and maintenance expenses** | /haɪ kɒsts ənd ˈmeɪntənəns ɪkˈspensɪz/ — sounds like **HY KOSTS und MAYN-tuh-nuns ik-SPEN-siz**
-107. **limited budgets and resource shortage** | /ˈlɪmɪtɪd ˈbʌdʒɪts ənd rɪˈsɔːs ˈʃɔːtɪdʒ/ — sounds like **LIM-ih-tid BUJ-its und rih-SORS SHOR-tij**
+107. **limited budgets and funding shortages** | /ˈlɪmɪtɪd ˈbʌdʒɪts ənd ˈfʌndɪŋ ˈʃɔːtɪdʒɪz/ — sounds like **LIM-ih-tid BUJ-its und FUN-ding SHOR-tij-iz**
 108. **financial difficulties and less freedom** | /faɪˈnænʃəl ˈdɪfɪkəltiz ənd les ˈfriːdəm/ — sounds like **fy-NAN-shul DIF-ih-kul-teez und LES FREE-dum**
 109. **funding difficulties and competing priorities** | /ˈfʌndɪŋ ˈdɪfɪkəltiz ənd kəmˈpiːtɪŋ praɪˈɒrɪtiz/ — sounds like **FUN-ding DIF-ih-kul-teez und kum-PEE-ting pry-OR-uh-teez**
 110. **hiring more staff and training costs** | /ˈhaɪərɪŋ mɔː stɑːf ənd ˈtreɪnɪŋ kɒsts/ — sounds like **HY-ur-ing MOR STAHF und TRAY-ning KOSTS**
-111. **higher expenses and business pressure** | /ˈhaɪə ɪkˈspensɪz ənd ˈbɪznɪs ˈpreʃə/ — sounds like **HY-ur ik-SPEN-siz und BIZ-nus PRESH-ur**
+111. **higher expenses and financial business pressure** | /ˈhaɪə ɪkˈspensɪz ənd faɪˈnænʃəl ˈbɪznɪs ˈpreʃə/ — sounds like **HY-ur ik-SPEN-siz und fy-NAN-shul BIZ-nus PRESH-ur**
 112. **economic problems and lower productivity** | /ˌiːkəˈnɒmɪk ˈprɒbləmz ənd ˈləʊə ˌprɒdʌkˈtɪvɪti/ — sounds like **ee-kuh-NOM-ik PROB-lumz und LOH-ur prod-uk-TIV-uh-tee**
 113. **economic challenges and limited job growth** | /ˌiːkəˈnɒmɪk ˈtʃælɪndʒɪz ənd ˈlɪmɪtɪd dʒɒb ɡrəʊθ/ — sounds like **ee-kuh-NOM-ik CHAL-in-jiz und LIM-ih-tid JOB GROHTH**
 114. **recruitment difficulties and higher staff turnover** | /rɪˈkruːtmənt ˈdɪfɪkəltiz ənd ˈhaɪə stɑːf ˈtɜːnəʊvə/ — sounds like **rih-KROOT-ment DIF-ih-kul-teez und HY-ur STAHF TURN-oh-vur**
 115. **lower profits and reduced productivity** | /ˈləʊə ˈprɒfɪts ənd rɪˈdjuːst ˌprɒdʌkˈtɪvɪti/ — sounds like **LOH-ur PROF-its und rih-DYOOST prod-uk-TIV-uh-tee**
 116. **housing shortages and rising property prices** | /ˈhaʊzɪŋ ˈʃɔːtɪdʒɪz ənd ˈraɪzɪŋ ˈprɒpəti ˈpraɪsɪz/ — sounds like **HOW-zing SHOR-tij-iz und RY-zing PROP-ur-tee PRY-siz**
-117. **financial pressure and limited budget** | /faɪˈnænʃəl ˈpreʃə ənd ˈlɪmɪtɪd ˈbʌdʒɪt/ — sounds like **fy-NAN-shul PRESH-ur und LIM-ih-tid BUJ-it**
+117. **financial pressure and limited healthcare budget** | /faɪˈnænʃəl ˈpreʃə ənd ˈlɪmɪtɪd ˈhelθkeə ˈbʌdʒɪt/ — sounds like **fy-NAN-shul PRESH-ur und LIM-ih-tid HELTH-kair BUJ-it**
 
 ---
 
@@ -194,7 +194,7 @@
 
 ## 👥 Social & Relationship Problems (Negative)
 
-132. **social isolation and health issues** | /ˈsəʊʃəl ˌaɪsəˈleɪʃən ənd helθ ˈɪʃuːz/ — sounds like **SOH-shul eye-suh-LAY-shun und HELTH ISH-ooz**
+132. **social isolation and physical health issues** | /ˈsəʊʃəl ˌaɪsəˈleɪʃən ənd ˈfɪzɪkəl helθ ˈɪʃuːz/ — sounds like **SOH-shul eye-suh-LAY-shun und FIZ-ih-kul HELTH ISH-ooz**
 133. **social isolation and mental pressure** | /ˈsəʊʃəl ˌaɪsəˈleɪʃən ənd ˈmentəl ˈpreʃə/ — sounds like **SOH-shul eye-suh-LAY-shun und MEN-tul PRESH-ur**
 134. **less face-to-face contact and social isolation** | /les feɪs tə feɪs ˈkɒntækt ənd ˈsəʊʃəl ˌaɪsəˈleɪʃən/ — sounds like **LES FAYS tuh FAYS KON-takt und SOH-shul eye-suh-LAY-shun**
 135. **loneliness and reduced face-to-face interaction** | /ˈləʊnlɪnəs ənd rɪˈdjuːst feɪs tə feɪs ˌɪntərˈækʃən/ — sounds like **LOHN-lee-nes und rih-DYOOST FAYS tuh FAYS in-tur-AK-shun**
@@ -240,7 +240,7 @@
 160. **lower motivation and health problems** | /ˈləʊə ˌməʊtɪˈveɪʃən ənd helθ ˈprɒbləmz/ — sounds like **LOH-ur moh-tih-VAY-shun und HELTH PROB-lumz**
 161. **poor air flow and small spaces** | /pʊə eə fləʊ ənd smɔːl ˈspeɪsɪz/ — sounds like **POR AIR FLOH und SMAWL SPAY-siz**
 162. **stress and discomfort** | /stres ənd dɪsˈkʌmfət/ — sounds like **STRESS und dis-KUM-furt**
-163. **unfair burden and financial stress** | /ˌʌnˈfeə ˈbɜːdən ənd faɪˈnænʃəl stres/ — sounds like **un-FAIR BUR-dun und fy-NAN-shul STRESS**
+163. **unfair legal burden and financial stress** | /ˌʌnˈfeə ˈliːɡəl ˈbɜːdən ənd faɪˈnænʃəl stres/ — sounds like **un-FAIR LEE-gul BUR-dun und fy-NAN-shul STRESS**
 
 ---
 
@@ -250,12 +250,12 @@
 165. **rising temperatures and extreme weather events** | /ˈraɪzɪŋ ˈtemprɪtʃəz ənd ɪkˈstriːm ˈweðər ɪˈvents/ — sounds like **RY-zing TEM-pruh-churz und ik-STREEM WETH-ur ih-VENTS**
 166. **environmental damage and habitat loss** | /ɪnˌvaɪrənˈmentəl ˈdæmɪdʒ ənd ˈhæbɪtæt lɒs/ — sounds like **in-vy-run-MEN-tul DAM-ij und HAB-ih-tat LOSS**
 167. **sea level rise and food shortages** | /siː ˈlevəl raɪz ənd fuːd ˈʃɔːtɪdʒɪz/ — sounds like **SEE LEV-ul RYZ und FOOD SHOR-tij-iz**
-168. **increased traffic and environmental impact** | /ɪnˈkriːst ˈtræfɪk ənd ɪnˌvaɪrənˈmentəl ˈɪmpækt/ — sounds like **in-KREEST TRAF-ik und in-vy-run-MEN-tul IM-pakt**
-169. **health issues and less social contact** | /helθ ˈɪʃuːz ənd les ˈsəʊʃəl ˈkɒntækt/ — sounds like **HELTH ISH-ooz und LES SOH-shul KON-takt**
+168. **increased road traffic and air pollution** | /ɪnˈkriːst rəʊd ˈtræfɪk ənd eə pəˈluːʃən/ — sounds like **in-KREEST ROHD TRAF-ik und AIR puh-LOO-shun**
+169. **physical health issues and less social contact** | /ˈfɪzɪkəl helθ ˈɪʃuːz ənd les ˈsəʊʃəl ˈkɒntækt/ — sounds like **FIZ-ih-kul HELTH ISH-ooz und LES SOH-shul KON-takt**
 170. **poor physical health and isolation** | /pʊə ˈfɪzɪkəl helθ ənd ˌaɪsəˈleɪʃən/ — sounds like **POR FIZ-ih-kul HELTH und eye-suh-LAY-shun**
 171. **chronic illness and long-term care** | /ˈkrɒnɪk ˈɪlnəs ənd lɒŋ tɜːm keə/ — sounds like **KRON-ik IL-nus und LONG TURM KAIR**
 172. **ageing population and healthcare costs** | /ˈeɪdʒɪŋ ˌpɒpjʊˈleɪʃən ənd ˈhelθkeə kɒsts/ — sounds like **AY-jing pop-yoo-LAY-shun und HELTH-kair KOSTS**
-173. **resource pressure and social burden** | /rɪˈsɔːs ˈpreʃə ənd ˈsəʊʃəl ˈbɜːdən/ — sounds like **rih-SORS PRESH-ur und SOH-shul BUR-dun**
+173. **economic resource pressure and community burden** | /ˌiːkəˈnɒmɪk rɪˈsɔːs ˈpreʃə ənd kəˈmjuːnəti ˈbɜːdən/ — sounds like **ee-kuh-NOM-ik rih-SORS PRESH-ur und kuh-MYOO-nih-tee BUR-dun**
 
 ---
 

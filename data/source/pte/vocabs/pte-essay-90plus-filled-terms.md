@@ -1,6 +1,6 @@
 # PTE Essay 90+ Filled Terms
 
-**Total Terms:** 109
+**Total Terms:** 108
 **Description:** High-scoring filled terms for the 90+ Essay Template (Examples: Employee Decision Making, Formal Written Examinations, Travel and Quality Education). These are the EXACT phrases you need to memorize and type.
 **Tags:** essay, 90plus, vocabulary
 
@@ -92,22 +92,22 @@
 
 ## Example 4: Climate Change Responsibility
 80. who should take responsibility for climate change | /huː ʃʊd teɪk rɪˌspɒnsəˈbɪlɪti fɔː ˈklaɪmət tʃeɪndʒ/
-81. government leadership | /ˈɡʌvənmənt ˈliːdəʃɪp/
-82. offers the most effective approach | /ˈɒfəz ðə məʊst ɪˈfektɪv əˈprəʊtʃ/
-83. climate change | /ˈklaɪmət tʃeɪndʒ/
-84. valuable contributions from companies and individuals | /ˈvæljuəbl ˌkɒntrɪˈbjuːʃənz frɒm ˈkʌmpəniz ænd ˌɪndɪˈvɪdʒuəlz/
-85. government leadership in climate action | /ˈɡʌvənmənt ˈliːdəʃɪp ɪn ˈklaɪmət ˈækʃən/
-86. environmental laws and national regulations | /ɪnˌvaɪrənˈmentəl lɔːz ænd ˈnæʃənəl ˌreɡjʊˈleɪʃənz/
-87. governments leading climate initiatives | /ˈɡʌvənmənts ˈliːdɪŋ ˈklaɪmət ɪˈnɪʃətɪvz/
-88. public funding and policy coordination | /ˈpʌblɪk ˈfʌndɪŋ ænd ˈpɒləsi kəʊˌɔːdɪˈneɪʃən/
-89. strong enforcement and ambitious climate targets | /strɒŋ ɪnˈfɔːsmənt ænd æmˈbɪʃəs ˈklaɪmət ˈtɑːɡɪts/
-90. Governments that prioritize climate action | /ˈɡʌvənmənts ðæt praɪˈɒrɪtaɪz ˈklaɪmət ˈækʃən/
-91. strong environmental regulations | /strɒŋ ɪnˌvaɪrənˈmentəl ˌreɡjʊˈleɪʃənz/
-92. nations that implement strict environmental policies | /ˈneɪʃənz ðæt ˈɪmplɪment strɪkt ɪnˌvaɪrənˈmentəl ˈpɒləsiz/
-93. reduced pollution levels and improved air quality | /rɪˈdjuːst pəˈluːʃən ˈlevəlz ænd ɪmˈpruːvd eə ˈkwɒlɪti/
-94. without government action | /wɪˈðaʊt ˈɡʌvənmənt ˈækʃən/
+81. governments should take primary responsibility | /ˈɡʌvənmənts ʃʊd teɪk ˈpraɪməri rɪˌspɒnsəˈbɪlɪti/
+82. climate change | /ˈklaɪmət tʃeɪndʒ/
+83. valuable supporting roles from companies and individuals | /ˈvæljuəbl səˈpɔːtɪŋ rəʊlz frɒm ˈkʌmpəniz ænd ˌɪndɪˈvɪdʒuəlz/
+84. government-led climate action | /ˈɡʌvənmənt led ˈklaɪmət ˈækʃən/
+85. environmental laws and national regulations | /ɪnˌvaɪrənˈmentəl lɔːz ænd ˈnæʃənəl ˌreɡjʊˈleɪʃənz/
+86. governments leading climate initiatives | /ˈɡʌvənmənts ˈliːdɪŋ ˈklaɪmət ɪˈnɪʃətɪvz/
+87. public funding and policy coordination | /ˈpʌblɪk ˈfʌndɪŋ ænd ˈpɒləsi kəʊˌɔːdɪˈneɪʃən/
+88. strong enforcement and ambitious climate targets | /strɒŋ ɪnˈfɔːsmənt ænd æmˈbɪʃəs ˈklaɪmət ˈtɑːɡɪts/
+89. Nations that prioritize climate action | /ˈneɪʃənz ðæt praɪˈɒrɪtaɪz ˈklaɪmət ˈækʃən/
+90. strong environmental regulations | /strɒŋ ɪnˌvaɪrənˈmentəl ˌreɡjʊˈleɪʃənz/
+91. countries with strict environmental policies | /ˈkʌntriz wɪð strɪkt ɪnˌvaɪrənˈmentəl ˈpɒləsiz/
+92. reduced pollution levels and improved air quality | /rɪˈdjuːst pəˈluːʃən ˈlevəlz ænd ɪmˈpruːvd eə ˈkwɒlɪti/
+93. without government action | /wɪˈðaʊt ˈɡʌvənmənt ˈækʃən/
+94. government responsibility | /ˈɡʌvənmənt rɪˌspɒnsəˈbɪlɪti/
 95. companies and individuals | /ˈkʌmpəniz ænd ˌɪndɪˈvɪdʒuəlz/
-96. valuable contributions to climate action | /ˈvæljuəbl ˌkɒntrɪˈbjuːʃənz tu ˈklaɪmət ˈækʃən/
+96. valuable supporting contributions to climate action | /ˈvæljuəbl səˈpɔːtɪŋ ˌkɒntrɪˈbjuːʃənz tu ˈklaɪmət ˈækʃən/
 97. business environmental actions and individual changes | /ˈbɪznɪs ɪnˌvaɪrənˈmentəl ˈækʃənz ænd ˌɪndɪˈvɪdʒuəl ˈtʃeɪndʒɪz/
 98. meaningful environmental improvements | /ˈmiːnɪŋfəl ɪnˌvaɪrənˈmentəl ɪmˈpruːvmənts/
 99. increased public awareness and sustainable behavior | /ɪnˈkriːst ˈpʌblɪk əˈweənəs ænd səˈsteɪnəbl bɪˈheɪvjə/
@@ -116,8 +116,7 @@
 102. broader community engagement | /ˈbrɔːdə kəˈmjuːnɪti ɪnˈɡeɪdʒmənt/
 103. successful climate programs | /səkˈsesfəl ˈklaɪmət ˈprəʊɡræmz/
 104. enhanced effectiveness | /ɪnˈhɑːnst ɪˈfektɪvnəs/
-105. combined action from all groups | /kəmˈbaɪnd ˈækʃən frɒm ɔːl ɡruːps/
-106. climate change responsibility | /ˈklaɪmət tʃeɪndʒ rɪˌspɒnsəˈbɪlɪti/
-107. contributions from companies and individuals | /ˌkɒntrɪˈbjuːʃənz frɒm ˈkʌmpəniz ænd ˌɪndɪˈvɪdʒuəlz/
-108. governments | /ˈɡʌvənmənts/
-109. participation from all groups in society | /pɑːˌtɪsɪˈpeɪʃən frɒm ɔːl ɡruːps ɪn səˈsaɪəti/
+105. collective action from all groups | /kəˈlektɪv ˈækʃən frɒm ɔːl ɡruːps/
+106. private sector and individual contributions | /ˈpraɪvət ˈsektər ænd ˌɪndɪˈvɪdʒuəl ˌkɒntrɪˈbjuːʃənz/
+107. governments | /ˈɡʌvənmənts/
+108. participation from all sectors of society | /pɑːˌtɪsɪˈpeɪʃən frɒm ɔːl ˈsektəz ɒv səˈsaɪəti/

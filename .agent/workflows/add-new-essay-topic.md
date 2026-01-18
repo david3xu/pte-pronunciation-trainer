@@ -27,6 +27,11 @@ This workflow ensures that new essay topics maintain the 90+ standard and the vo
     *   **CRITICAL:** Use the exact B1 vocabulary terms where possible for ease of memorization.
     *   **CRITICAL:** Bold **ONLY** the filled terms (the parts you typed).
     *   **CRITICAL:** Keep standard template phrases (e.g., "in modern") PLAIN.
+    *   **CRITICAL - Avoid High Repetition (8-11 times):**
+        *   ✅ **USE SMART variations:** synonyms ("employee participation" → "this collaborative approach"), different forms ("governments should take" → "government-led"), paraphrases ("involving employees" → "collaborative approach")
+        *   ✅ **Short/long variations OK:** "employee participation in decision-making" (first use) → "employee participation" (later) is acceptable
+        *   ❌ **AVOID dumb variations:** Just appending/removing words ("governments should take responsibility" → "governments should take responsibility for climate action")
+        *   **Goal:** Show vocabulary range while staying B1/B2 (easy and academic)
     *   **CRITICAL - Evidence Pattern (90+ ONLY):**
         *   ✅ **USE:** "[Subject group] who [action] demonstrate [result]"
         *   ✅ **USE:** "[Specific context] that [behavior] create pressure to [action]"

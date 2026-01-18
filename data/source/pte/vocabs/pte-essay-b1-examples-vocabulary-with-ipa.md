@@ -245,15 +245,15 @@
 
 169. **work-life balance** | /wɜːk laɪf ˈbæləns/ — sounds like **WURK LYF BAL-uns**
 170. **highly important** | /ˈhaɪli ɪmˈpɔːtənt/ — sounds like **HY-lee im-POR-tunt**
-171. **mental health and emotional stability** | /ˈmentəl helθ ənd ɪˈməʊʃənəl stəˈbɪləti/ — sounds like **MEN-tul HELTH und ih-MOH-shun-ul stuh-BIL-uh-tee**
+171. **improved mental health and emotional stability** | /ɪmˈpruːvd ˈmentəl helθ ənd ɪˈməʊʃənəl stəˈbɪləti/ — sounds like **im-PROOVD MEN-tul HELTH und ih-MOH-shun-ul stuh-BIL-uh-tee**
 172. **family time and leisure activities** | /ˈfæməli taɪm ənd ˈleʒə ækˈtɪvətiz/ — sounds like **FAM-uh-lee TYM und LEZH-ur ak-TIV-uh-teez**
 173. **personal happiness and reduced stress** | /ˈpɜːsənəl ˈhæpɪnəs ənd rɪˈdjuːst stres/ — sounds like **PUR-sun-ul HAP-ih-nus und rih-DYOOST STRESS**
 174. **workplace research** | /ˈwɜːkpleɪs rɪˈsɜːtʃ/ — sounds like **WURK-plays rih-SURCH**
 175. **better health and improved satisfaction** | /ˈbetə helθ ənd ɪmˈpruːvd ˌsætɪsˈfækʃən/ — sounds like **BET-ur HELTH und im-PROOVD sat-is-FAK-shun**
 176. **maintaining work-life balance** | /meɪnˈteɪnɪŋ wɜːk laɪf ˈbæləns/ — sounds like **mayn-TAY-ning WURK LYF BAL-uns**
 177. **modern work culture** | /ˈmɒdən wɜːk ˈkʌltʃə/ — sounds like **MOD-urn WURK KUL-chur**
-178. **long working hours and high job demands** | /lɒŋ ˈwɜːkɪŋ ˈaʊəz ənd haɪ dʒɒb dɪˈmɑːndz/ — sounds like **LONG WUR-king OW-urz und HY JOB dih-MAHNDS**
-179. **financial pressure and career expectations** | /faɪˈnænʃəl ˈpreʃə ənd kəˈrɪə ˌekspekˈteɪʃənz/ — sounds like **fy-NAN-shul PRESH-ur und kuh-REER ek-spek-TAY-shunz**
+178. **high career expectations and competitive pressure** | /haɪ kəˈrɪə ˌekspekˈteɪʃənz ənd kəmˈpetɪtɪv ˈpreʃə/ — sounds like **HY kuh-REER ek-spek-TAY-shunz und kum-PET-ih-tiv PRESH-ur**
+179. **long working hours and excessive job demands** | /lɒŋ ˈwɜːkɪŋ ˈaʊəz ənd ɪkˈsesɪv dʒɒb dɪˈmɑːndz/ — sounds like **LONG WUR-king OW-urz und ik-SES-iv JOB dih-MAHNDS**
 180. **health studies** | /helθ ˈstʌdiz/ — sounds like **HELTH STUD-eez**
 181. **time constraints and competing priorities** | /taɪm kənˈstreɪnts ənd kəmˈpiːtɪŋ praɪˈɒrətiz/ — sounds like **TYM kun-STRAYNTS und kum-PEE-ting pry-OR-uh-teez**
 182. **difficulty achieving work-life balance** | /ˈdɪfɪkəlti əˈtʃiːvɪŋ wɜːk laɪf ˈbæləns/ — sounds like **DIF-ih-kul-tee uh-CHEEV-ing WURK LYF BAL-uns**

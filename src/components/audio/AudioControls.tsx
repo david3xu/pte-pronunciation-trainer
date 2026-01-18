@@ -36,6 +36,7 @@ const VOCABULARY_BOOKS = [
   'pte-asq-answers',
   'pte-high-frequency',
   'pte-rs-core',
+  'pte-essay-90plus-filled-terms',
 ];
 
 const AudioControls: React.FC = () => {

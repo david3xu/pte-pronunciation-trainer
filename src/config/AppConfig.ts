@@ -67,6 +67,7 @@ export class AppConfig {
               'pte-sgd-vocabulary': 'data/processed/pte-sgd-vocabulary.json',
               'pte-rl-vocabulary': 'data/processed/pte-rl-vocabulary.json',
               'pte-essay-outcomes-vocabulary': 'data/processed/pte-essay-outcomes-vocabulary.json',
+              'pte-essay-90plus-filled-terms': 'data/processed/pte-essay-90plus-filled-terms.json',
 
               // Practice modes
               'rs': 'data/processed/pte-repeat-sentence.json',
@@ -111,6 +112,7 @@ export class AppConfig {
           { id: 'pte-sgd-vocabulary', name: 'SGD Vocabulary', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-rl-vocabulary', name: 'RL Vocabulary', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-essay-outcomes-vocabulary', name: 'Essay Outcomes Vocab', category: 'vocabulary', difficulty: 'normal' },
+          { id: 'pte-essay-90plus-filled-terms', name: 'PTE 90+ Essay Filled Terms', category: 'vocabulary', difficulty: 'normal' },
 
           // Practice modes (3 total)
           { id: 'rs', name: 'Repeat Sentence', category: 'practice', description: '620 practice sentences' },

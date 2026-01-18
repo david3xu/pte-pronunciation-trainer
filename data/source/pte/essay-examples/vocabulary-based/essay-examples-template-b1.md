@@ -1,8 +1,29 @@
 # PTE Essay Examples - Template B1 Collection
 
-**Template Structure:** Positive → Negative (Mostly Agree)
+⚠️ **IMPORTANT: This file contains TWO versions with different scoring targets**
 
-**Target:** 200-300 words | Simple + Academic Terms
+| Version | Score Target | When to Use |
+|---------|--------------|-------------|
+| **Part 1: B1 Templates** | 68-74 | Learning structure, vocabulary reference |
+| **Part 2: 90+ Template** | 90+ | Actual essay writing for 90+ target |
+
+---
+
+## 🟡 Part 1: B1 Templates & Examples (Score Target: 68-74)
+
+⚠️ **WARNING: This section contains B1-level patterns that will limit your score to 68-74**
+
+**Use this section ONLY for:**
+- ✅ Extracting vocabulary terms (subjects, outcomes, evidence topics)
+- ✅ Understanding basic essay structure
+- ✅ Learning topic-specific terminology
+
+**DO NOT use these patterns for 90+ target:**
+- ❌ "According to research by [experts]" - too vague, sounds fake
+- ❌ "evidence from [source] shows" - generic citation
+- ❌ "In recent years, the topic of X has emerged" - too obvious as template
+
+**For 90+ essays, use Part 2 (90+ Template) below.**
 
 ---
 
@@ -542,21 +563,144 @@ Taken together, these considerations demonstrate the overall importance of **bui
 
 **Subjects:** people, workers
 
-**Positive Outcomes (Why Important):** mental health, family time, leisure activities, reduced stress
+**Positive Outcomes (Why Important):** improved mental health and emotional stability, family time and leisure activities, personal happiness and reduced stress
 
-**Negative Outcomes (Why Hard):** long working hours, job demands, financial pressure, career expectations
+**Negative Outcomes (Why Hard):** high career expectations and competitive pressure, long working hours and excessive job demands, time constraints and competing priorities
 
 **Evidence Sources:** workplace research, health studies
 
 **Conclusion:** employers and individuals
 
-### Complete Essay (223 words)
+### Logic Chains (Verification)
 
-In recent years, the topic of **work-life balance** has emerged as a significant subject of public and academic discussion. I contend that **work-life balance** is **highly important** for **people** despite being difficult to achieve, and the following analysis outlines the primary arguments supporting this viewpoint.
+**Para 2 - Why Important (Benefits):**
+```
+CLAIM: Work-life balance → Improved mental health & emotional stability
+                        → Family time & leisure activities
+                        → Personal happiness & reduced stress
 
-To begin with, one compelling advantage of **work-life balance** is its potential to bring about **mental health and emotional stability**. In particular, **work-life balance** can facilitate **family time and leisure activities**, ultimately leading to broader outcomes such as **personal happiness and reduced stress**. For instance, evidence from **workplace research** shows that many **workers** experienced **better health and improved satisfaction** as a direct result of **maintaining work-life balance**.
+EVIDENCE: Workplace research shows workers experienced:
+          - Better health (supports mental health ✓)
+          - Improved satisfaction (supports happiness ✓)
+```
 
-However, it is equally important to acknowledge that **work-life balance** may also give rise to certain challenges. This is largely because **modern work culture** is likely to generate **long working hours and high job demands**, which may subsequently lead to **financial pressure and career expectations**. According to research by **health studies**, a significant number of **people** have been affected by **time constraints and competing priorities** resulting from **difficulty achieving work-life balance**.
+**Para 3 - Why Hard to Achieve (Barriers):**
+```
+CLAIM: Modern work culture → High career expectations & competitive pressure
+                          → Long working hours & excessive job demands
+                          → Time constraints & competing priorities
+                          → Difficulty maintaining balance
+
+EVIDENCE: Health studies show people affected by:
+          - Time constraints & competing priorities (supports direct obstacle ✓)
+```
+
+---
+---
+---
+
+## 🟢 Part 2: 90+ Template & Example (Score Target: 90+)
+
+✅ **Use this section for writing 90+ essays**
+
+**Key Differences from B1 Templates:**
+
+| Aspect | B1 (68-74) | 90+ (90+) |
+|--------|-----------|-----------|
+| **Evidence** | "According to research by [experts]" | "[Subject] who [action] demonstrate [result]" |
+| **Introduction** | "In recent years, the topic of X has emerged" | "The question of X has attracted considerable attention" |
+| **Specificity** | Generic ("many people") | Concrete ("professionals with clear boundaries") |
+| **Citations** | Vague sources | Direct observations (no fake research) |
+
+### 90+ Template Structure
+
+**Introduction:**
+```
+The question of [topic restatement] has attracted considerable attention in modern society.
+I contend that [topic paraphrase 1] is [position statement] for [subject] despite
+[acknowledgment], and the following analysis outlines the primary arguments
+supporting this viewpoint.
+```
+
+**Body Para 2 (Benefits/Importance):**
+```
+To begin with, one compelling advantage of [topic] is its potential to bring about
+[outcome 1]. In particular, [topic paraphrase 2] can facilitate [outcome 2],
+ultimately leading to broader outcomes such as [outcome 3].
+
+[Subject group] who [specific action] demonstrate [concrete results]. For instance,
+[specific subjects] with [specific condition] report significantly [evidence result]
+compared to those who [contrasting behavior].
+```
+
+**Body Para 3 (Challenges/Barriers):**
+```
+However, it is equally important to acknowledge that [topic paraphrase 3] faces
+certain challenges in modern society. This is largely because [root cause] is likely
+to generate [intermediate effect], which may subsequently lead to [direct obstacle].
+
+[Specific context] that [behavior pattern] create pressure to [concrete action example].
+As a result, many [subjects] experience [obstacle manifestation] that make it difficult
+to maintain [topic paraphrase 4].
+```
+
+**Conclusion:**
+```
+Taken together, these considerations demonstrate the overall importance of [topic],
+since its advantages remain significant despite the issues that accompany it. Thus,
+it is essential for [stakeholders] to allocate sufficient resources to address these
+challenges effectively.
+```
+
+```
+
+### Fill-ins for This Example
+
+**Topic Paraphrases (4 variations needed):**
+1. "maintaining this equilibrium" (intro)
+2. "achieving this balance" (para 2)
+3. "achieving this balance" (para 3 start)
+4. "a balanced lifestyle" (para 3 end)
+
+**Introduction Fill-ins:**
+- [topic restatement]: "how to maintain the right balance between work and other aspects of one's life"
+- [topic paraphrase 1]: "maintaining this equilibrium"
+- [position statement]: "highly important"
+- [subject]: "people"
+- [acknowledgment]: "being difficult to achieve"
+
+**Para 2 Fill-ins:**
+- [outcome 1]: "improved mental health and emotional stability"
+- [outcome 2]: "family time and leisure activities"
+- [outcome 3]: "personal happiness and reduced stress"
+- [subject group]: "Employees"
+- [specific action]: "have protected personal time"
+- [concrete results]: "demonstrate stronger family relationships and greater job satisfaction"
+- [specific subjects]: "professionals"
+- [specific condition]: "clear boundaries between work hours and personal life"
+- [evidence result]: "better psychological well-being and emotional stability"
+- [contrasting behavior]: "routinely work late"
+
+**Para 3 Fill-ins:**
+- [root cause]: "modern work culture"
+- [intermediate effect]: "high career expectations and competitive pressure"
+- [direct obstacle]: "long working hours and excessive job demands"
+- [specific context]: "Corporate environments"
+- [behavior pattern]: "reward constant availability"
+- [concrete action example]: "respond to emails after hours and accept overtime to remain competitive for promotion"
+- [subjects]: "employees"
+- [obstacle manifestation]: "time constraints and competing priorities"
+
+**Conclusion Fill-ins:**
+- [stakeholders]: "employers and individuals"
+
+### Complete Essay (232 words)
+
+The question of how to maintain the right balance between work and other aspects of one's life has attracted considerable attention in modern society. I contend that **maintaining this equilibrium** is **highly important** for **people** despite being difficult to achieve, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **work-life balance** is its potential to bring about **improved mental health and emotional stability**. In particular, **achieving this balance** can facilitate **family time and leisure activities**, ultimately leading to broader outcomes such as **personal happiness and reduced stress**. Employees who have protected personal time demonstrate stronger family relationships and greater job satisfaction. For instance, **professionals** with clear boundaries between work hours and personal life report significantly **better psychological well-being and emotional stability** compared to those who routinely work late.
+
+However, it is equally important to acknowledge that **achieving this balance** faces certain challenges in modern society. This is largely because **modern work culture** is likely to generate **high career expectations and competitive pressure**, which may subsequently lead to **long working hours and excessive job demands**. Corporate environments that reward constant availability create pressure to respond to emails after hours and accept overtime to remain competitive for promotion. As a result, many **employees** experience **time constraints and competing priorities** that make it difficult to maintain **a balanced lifestyle**.
 
 Taken together, these considerations demonstrate the overall importance of **work-life balance**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **employers and individuals** to allocate sufficient resources to address these challenges effectively.
 
@@ -1680,7 +1824,7 @@ In conclusion, my preference for **extreme weather research** stems from its pra
 3. highly important
 4. people
 5. work-life balance
-6. mental health and emotional stability
+6. improved mental health and emotional stability
 7. work-life balance
 8. family time and leisure activities
 9. personal happiness and reduced stress
@@ -1690,8 +1834,8 @@ In conclusion, my preference for **extreme weather research** stems from its pra
 13. maintaining work-life balance
 14. work-life balance
 15. modern work culture
-16. long working hours and high job demands
-17. financial pressure and career expectations
+16. high career expectations and competitive pressure
+17. long working hours and excessive job demands
 18. health studies
 19. people
 20. time constraints and competing priorities

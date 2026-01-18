@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-01-18T09:52:21.691Z",
-    "totalTerms": 333,
+    "generated": "2026-01-18T21:44:21.506Z",
+    "totalTerms": 497,
     "source": "pte-essay-90plus-filled-terms",
     "description": "Auto-discovered vocabulary book: pte-essay-90plus-filled-terms",
     "version": "1.0",
@@ -805,6 +805,22 @@
         },
         "american": {
           "ipa": "skuːlz ænd ˈtiːtʃəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "formal written examinations are a valid assessment method",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɔːməl ˈrɪtən ɪɡˌzæmɪˈneɪʃənz ɑːr ə ˈvælɪd əˈsesmənt ˈmeθəd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfɔːməl ˈrɪtən ɪɡˌzæmɪˈneɪʃənz ɑːr ə ˈvælɪd əˈsesmənt ˈmeθəd",
           "phonetic": ""
         }
       },
@@ -5333,6 +5349,2614 @@
         },
         "american": {
           "ipa": "rɪˈspɒnsɪbl ˈsmɑːtfəʊn juːz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "whether laws can change human behavior",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈweðə lɔːz kæn tʃeɪndʒ ˈhjuːmən bɪˈheɪvjə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈweðə lɔːz kæn tʃeɪndʒ ˈhjuːmən bɪˈheɪvjə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "laws can effectively change behavior",
+      "pronunciation": {
+        "british": {
+          "ipa": "lɔːz kæn ɪˈfektɪvli tʃeɪndʒ bɪˈheɪvjə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "lɔːz kæn ɪˈfektɪvli tʃeɪndʒ bɪˈheɪvjə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "laws changing behavior is effective",
+      "pronunciation": {
+        "british": {
+          "ipa": "lɔːz ˈtʃeɪndʒɪŋ bɪˈheɪvjə ɪz ɪˈfektɪv",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "lɔːz ˈtʃeɪndʒɪŋ bɪˈheɪvjə ɪz ɪˈfektɪv",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "public safety and social order",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpʌblɪk ˈseɪfti ænd ˈsəʊʃəl ˈɔːdə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈpʌblɪk ˈseɪfti ænd ˈsəʊʃəl ˈɔːdə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "legal regulations",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈliːɡəl ˌreɡjʊˈleɪʃənz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈliːɡəl ˌreɡjʊˈleɪʃənz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "strong enforcement and clear penalties",
+      "pronunciation": {
+        "british": {
+          "ipa": "strɒŋ ɪnˈfɔːsmənt ænd klɪə ˈpenəltiz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "strɒŋ ɪnˈfɔːsmənt ænd klɪə ˈpenəltiz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "public awareness and lifestyle changes",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpʌblɪk əˈweənəs ænd ˈlaɪfstaɪl ˈtʃeɪndʒɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈpʌblɪk əˈweənəs ænd ˈlaɪfstaɪl ˈtʃeɪndʒɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "Citizens living under strict laws",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɪtɪzənz ˈlɪvɪŋ ˈʌndə strɪkt lɔːz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsɪtɪzənz ˈlɪvɪŋ ˈʌndə strɪkt lɔːz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "reduced crime and better compliance",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈdjuːst kraɪm ænd ˈbetə kəmˈplaɪəns",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rɪˈdjuːst kraɪm ænd ˈbetə kəmˈplaɪəns",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "people in areas with strong traffic laws",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpiːpl ɪn ˈeəriəz wɪð strɒŋ ˈtræfɪk lɔːz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈpiːpl ɪn ˈeəriəz wɪð strɒŋ ˈtræfɪk lɔːz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "safer roads and fewer accidents",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈseɪfə rəʊdz ænd ˈfjuːər ˈæksɪdənts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈseɪfə rəʊdz ænd ˈfjuːər ˈæksɪdənts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "without strict enforcement",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪˈðaʊt strɪkt ɪnˈfɔːsmənt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɪˈðaʊt strɪkt ɪnˈfɔːsmənt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "laws",
+      "pronunciation": {
+        "british": {
+          "ipa": "lɔːz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "lɔːz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "changing deeply rooted behaviors",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtʃeɪndʒɪŋ ˈdiːpli ˈruːtɪd bɪˈheɪvjəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈtʃeɪndʒɪŋ ˈdiːpli ˈruːtɪd bɪˈheɪvjəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "cultural resistance and personal beliefs",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌltʃərəl rɪˈzɪstəns ænd ˈpɜːsənəl bɪˈliːfs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkʌltʃərəl rɪˈzɪstəns ænd ˈpɜːsənəl bɪˈliːfs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "limited law effectiveness",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlɪmɪtɪd lɔː ɪˈfektɪvnəs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈlɪmɪtɪd lɔː ɪˈfektɪvnəs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "individual values to override legal requirements",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌɪndɪˈvɪdʒuəl ˈvæljuːz tuː ˌəʊvəˈraɪd ˈliːɡəl rɪˈkwaɪəmənts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌɪndɪˈvɪdʒuəl ˈvæljuːz tuː ˌəʊvəˈraɪd ˈliːɡəl rɪˈkwaɪəmənts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "Governments implementing behavioral laws",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɡʌvənmənts ˈɪmplɪmentɪŋ bɪˈheɪvjərəl lɔːz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɡʌvənmənts ˈɪmplɪmentɪŋ bɪˈheɪvjərəl lɔːz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "require major lifestyle changes",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈkwaɪə ˈmeɪdʒə ˈlaɪfstaɪl ˈtʃeɪndʒɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rɪˈkwaɪə ˈmeɪdʒə ˈlaɪfstaɪl ˈtʃeɪndʒɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "enforcement difficulties and high costs",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈfɔːsmənt ˈdɪfɪkəltiz ænd haɪ kɒsts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪnˈfɔːsmənt ˈdɪfɪkəltiz ænd haɪ kɒsts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "policymakers",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpɒlɪsiˌmeɪkəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈpɒlɪsiˌmeɪkəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "public resistance and compliance issues",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpʌblɪk rɪˈzɪstəns ænd kəmˈplaɪəns ˈɪʃuːz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈpʌblɪk rɪˈzɪstəns ænd kəmˈplaɪəns ˈɪʃuːz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "complete behavioral transformation",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəmˈpliːt bɪˈheɪvjərəl ˌtrænsfəˈmeɪʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kəmˈpliːt bɪˈheɪvjərəl ˌtrænsfəˈmeɪʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "laws can change behavior in many areas",
+      "pronunciation": {
+        "british": {
+          "ipa": "lɔːz kæn tʃeɪndʒ bɪˈheɪvjə ɪn ˈmeni ˈeəriəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "lɔːz kæn tʃeɪndʒ bɪˈheɪvjə ɪn ˈmeni ˈeəriəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "cultural and personal factors",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌltʃərəl ænd ˈpɜːsənəl ˈfæktəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkʌltʃərəl ænd ˈpɜːsənəl ˈfæktəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "governments and policymakers",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɡʌvənmənts ænd ˈpɒlɪsiˌmeɪkəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɡʌvənmənts ænd ˈpɒlɪsiˌmeɪkəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "legal enforcement with education and public awareness",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈliːɡəl ɪnˈfɔːsmənt wɪð ˌedjʊˈkeɪʃən ænd ˈpʌblɪk əˈweənəs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈliːɡəl ɪnˈfɔːsmənt wɪð ˌedjʊˈkeɪʃən ænd ˈpʌblɪk əˈweənəs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "whether tourism disadvantages equal advantages in developing countries",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈweðə ˈtʊərɪzəm ˌdɪsədˈvɑːntɪdʒɪz ˈiːkwəl ədˈvɑːntɪdʒɪz ɪn dɪˈveləpɪŋ ˈkʌntriz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈweðə ˈtʊərɪzəm ˌdɪsədˈvɑːntɪdʒɪz ˈiːkwəl ədˈvɑːntɪdʒɪz ɪn dɪˈveləpɪŋ ˈkʌntriz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "tourism in developing countries",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtʊərɪzəm ɪn dɪˈveləpɪŋ ˈkʌntriz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈtʊərɪzəm ɪn dɪˈveləpɪŋ ˈkʌntriz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "balance between benefits and problems",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbæləns bɪˈtwiːn ˈbenɪfɪts ænd ˈprɒbləmz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbæləns bɪˈtwiːn ˈbenɪfɪts ænd ˈprɒbləmz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "economic income and job opportunities",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌiːkəˈnɒmɪk ˈɪnkʌm ænd dʒɒb ˌɒpəˈtjuːnɪtiz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌiːkəˈnɒmɪk ˈɪnkʌm ænd dʒɒb ˌɒpəˈtjuːnɪtiz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "tourism development",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtʊərɪzəm dɪˈveləpmənt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈtʊərɪzəm dɪˈveləpmənt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "local business growth and community spirit",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈləʊkəl ˈbɪznəs ɡrəʊθ ænd kəˈmjuːnɪti ˈspɪrɪt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈləʊkəl ˈbɪznəs ɡrəʊθ ænd kəˈmjuːnɪti ˈspɪrɪt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "improved living standards and cultural pride",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪmˈpruːvd ˈlɪvɪŋ ˈstændədz ænd ˈkʌltʃərəl praɪd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪmˈpruːvd ˈlɪvɪŋ ˈstændədz ænd ˈkʌltʃərəl praɪd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "Local communities receiving tourists",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈləʊkəl kəˈmjuːnɪtiz rɪˈsiːvɪŋ ˈtʊərɪsts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈləʊkəl kəˈmjuːnɪtiz rɪˈsiːvɪŋ ˈtʊərɪsts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "increased employment and economic activity",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈkriːst ɪmˈplɔɪmənt ænd ˌiːkəˈnɒmɪk ækˈtɪvɪti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪnˈkriːst ɪmˈplɔɪmənt ænd ˌiːkəˈnɒmɪk ækˈtɪvɪti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "citizens in tourism areas",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɪtɪzənz ɪn ˈtʊərɪzəm ˈeəriəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsɪtɪzənz ɪn ˈtʊərɪzəm ˈeəriəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "better income levels and job security",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbetər ˈɪnkʌm ˈlevəlz ænd dʒɒb sɪˈkjʊərɪti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbetər ˈɪnkʌm ˈlevəlz ænd dʒɒb sɪˈkjʊərɪti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "in areas without tourism",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ˈeəriəz wɪˈðaʊt ˈtʊərɪzəm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn ˈeəriəz wɪˈðaʊt ˈtʊərɪzəm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "tourism",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtʊərɪzəm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈtʊərɪzəm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "developing regions",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈveləpɪŋ ˈriːdʒənz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "dɪˈveləpɪŋ ˈriːdʒənz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "rapid tourism growth",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈræpɪd ˈtʊərɪzəm ɡrəʊθ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈræpɪd ˈtʊərɪzəm ɡrəʊθ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "environmental damage and resource depletion",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˌvaɪrənˈmentəl ˈdæmɪdʒ ænd rɪˈsɔːs dɪˈpliːʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪnˌvaɪrənˈmentəl ˈdæmɪdʒ ænd rɪˈsɔːs dɪˈpliːʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "cultural erosion and traditional lifestyles being lost",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌltʃərəl ɪˈrəʊʒən ænd trəˈdɪʃənəl ˈlaɪfstaɪlz ˈbiːɪŋ lɒst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkʌltʃərəl ɪˈrəʊʒən ænd trəˈdɪʃənəl ˈlaɪfstaɪlz ˈbiːɪŋ lɒst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "Communities with heavy tourism",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəˈmjuːnɪtiz wɪð ˈhevi ˈtʊərɪzəm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kəˈmjuːnɪtiz wɪð ˈhevi ˈtʊərɪzəm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "rising prices and financial stress for locals",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈraɪzɪŋ ˈpraɪsɪz ænd faɪˈnænʃəl stres fɔː ˈləʊkəlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈraɪzɪŋ ˈpraɪsɪz ænd faɪˈnænʃəl stres fɔː ˈləʊkəlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "local residents",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈləʊkəl ˈrezɪdənts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈləʊkəl ˈrezɪdənts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "higher living costs and loss of cultural identity",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhaɪər ˈlɪvɪŋ kɒsts ænd lɒs ɒv ˈkʌltʃərəl aɪˈdentɪti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhaɪər ˈlɪvɪŋ kɒsts ænd lɒs ɒv ˈkʌltʃərəl aɪˈdentɪti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "traditional ways of life",
+      "pronunciation": {
+        "british": {
+          "ipa": "trəˈdɪʃənəl weɪz ɒv laɪf",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "trəˈdɪʃənəl weɪz ɒv laɪf",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "tourism has both major advantages and disadvantages",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtʊərɪzəm hæz bəʊθ ˈmeɪdʒər ədˈvɑːntɪdʒɪz ænd ˌdɪsədˈvɑːntɪdʒɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈtʊərɪzəm hæz bəʊθ ˈmeɪdʒər ədˈvɑːntɪdʒɪz ænd ˌdɪsədˈvɑːntɪdʒɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "balance between economic benefits and social costs",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbæləns bɪˈtwiːn ˌiːkəˈnɒmɪk ˈbenɪfɪts ænd ˈsəʊʃəl kɒsts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbæləns bɪˈtwiːn ˌiːkəˈnɒmɪk ˈbenɪfɪts ænd ˈsəʊʃəl kɒsts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "governments and local communities",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɡʌvənmənts ænd ˈləʊkəl kəˈmjuːnɪtiz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɡʌvənmənts ænd ˈləʊkəl kəˈmjuːnɪtiz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "sustainable tourism practices",
+      "pronunciation": {
+        "british": {
+          "ipa": "səˈsteɪnəbl ˈtʊərɪzəm ˈpræktɪsɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "səˈsteɪnəbl ˈtʊərɪzəm ˈpræktɪsɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "whether mass media has both positive and negative impacts on society",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈweðə mæs ˈmiːdiə hæz bəʊθ ˈpɒzɪtɪv ænd ˈneɡətɪv ˈɪmpækts ɒn səˈsaɪəti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈweðə mæs ˈmiːdiə hæz bəʊθ ˈpɒzɪtɪv ænd ˈneɡətɪv ˈɪmpækts ɒn səˈsaɪəti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "mass media influence",
+      "pronunciation": {
+        "british": {
+          "ipa": "mæs ˈmiːdiə ˈɪnfluəns",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "mæs ˈmiːdiə ˈɪnfluəns",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "individuals and society",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌɪndɪˈvɪdʒuəlz ænd səˈsaɪəti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌɪndɪˈvɪdʒuəlz ænd səˈsaɪəti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "mass media",
+      "pronunciation": {
+        "british": {
+          "ipa": "mæs ˈmiːdiə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "mæs ˈmiːdiə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "faster information access and global connectivity",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɑːstər ˌɪnfəˈmeɪʃən ˈækses ænd ˈɡləʊbəl ˌkɒnekˈtɪvɪti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfɑːstər ˌɪnfəˈmeɪʃən ˈækses ænd ˈɡləʊbəl ˌkɒnekˈtɪvɪti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "mass media platforms",
+      "pronunciation": {
+        "british": {
+          "ipa": "mæs ˈmiːdiə ˈplætfɔːmz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "mæs ˈmiːdiə ˈplætfɔːmz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "educational content and knowledge sharing",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌedjuˈkeɪʃənəl ˈkɒntent ænd ˈnɒlɪdʒ ˈʃeərɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌedjuˈkeɪʃənəl ˈkɒntent ænd ˈnɒlɪdʒ ˈʃeərɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "public awareness and informed decision-making",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpʌblɪk əˈweənəs ænd ɪnˈfɔːmd dɪˈsɪʒən ˈmeɪkɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈpʌblɪk əˈweənəs ænd ɪnˈfɔːmd dɪˈsɪʒən ˈmeɪkɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "People who use mass media regularly",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpiːpəl huː juːz mæs ˈmiːdiə ˈreɡjələli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈpiːpəl huː juːz mæs ˈmiːdiə ˈreɡjələli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "individuals accessing news through multiple media sources",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌɪndɪˈvɪdʒuəlz ˈækseɪŋ njuːz θruː ˈmʌltɪpəl ˈmiːdiə ˈsɔːsɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌɪndɪˈvɪdʒuəlz ˈækseɪŋ njuːz θruː ˈmʌltɪpəl ˈmiːdiə ˈsɔːsɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "improved awareness of social issues",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪmˈpruːvd əˈweənəs ɒv ˈsəʊʃəl ˈɪʃuːz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪmˈpruːvd əˈweənəs ɒv ˈsəʊʃəl ˈɪʃuːz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "without regular media access",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪˈðaʊt ˈreɡjələ ˈmiːdiə ˈækses",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɪˈðaʊt ˈreɡjələ ˈmiːdiə ˈækses",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "heavy media consumption",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhevi ˈmiːdiə kənˈsʌmpʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhevi ˈmiːdiə kənˈsʌmpʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "excessive screen time and digital habits",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪkˈsesɪv skriːn taɪm ænd ˈdɪdʒɪtəl ˈhæbɪts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪkˈsesɪv skriːn taɪm ænd ˈdɪdʒɪtəl ˈhæbɪts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "misinformation spread and privacy concerns",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌmɪsɪnfəˈmeɪʃən spred ænd ˈprɪvəsi kənˈsɜːnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌmɪsɪnfəˈmeɪʃən spred ænd ˈprɪvəsi kənˈsɜːnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "People exposed to constant media",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpiːpəl ɪkˈspəʊzd tuː ˈkɒnstənt ˈmiːdiə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈpiːpəl ɪkˈspəʊzd tuː ˈkɒnstənt ˈmiːdiə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "reduced face-to-face interaction and social isolation",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈdjuːst ˌfeɪs tə ˈfeɪs ˌɪntərˈækʃən ænd ˈsəʊʃəl ˌaɪsəˈleɪʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rɪˈdjuːst ˌfeɪs tə ˈfeɪs ˌɪntərˈækʃən ænd ˈsəʊʃəl ˌaɪsəˈleɪʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "media users",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmiːdiə ˈjuːzəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈmiːdiə ˈjuːzəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "information overload and difficulty distinguishing reliable sources",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌɪnfəˈmeɪʃən ˈəʊvələʊd ænd ˈdɪfɪkəlti dɪˈstɪŋɡwɪʃɪŋ rɪˈlaɪəbəl ˈsɔːsɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌɪnfəˈmeɪʃən ˈəʊvələʊd ænd ˈdɪfɪkəlti dɪˈstɪŋɡwɪʃɪŋ rɪˈlaɪəbəl ˈsɔːsɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "critical thinking skills",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkrɪtɪkəl ˈθɪŋkɪŋ skɪlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkrɪtɪkəl ˈθɪŋkɪŋ skɪlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "mass media has both significant benefits and drawbacks",
+      "pronunciation": {
+        "british": {
+          "ipa": "mæs ˈmiːdiə hæz bəʊθ sɪɡˈnɪfɪkənt ˈbenɪfɪts ænd ˈdrɔːbæks",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "mæs ˈmiːdiə hæz bəʊθ sɪɡˈnɪfɪkənt ˈbenɪfɪts ænd ˈdrɔːbæks",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "balanced media consumption",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbælənst ˈmiːdiə kənˈsʌmpʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbælənst ˈmiːdiə kənˈsʌmpʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "individuals and communities",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌɪndɪˈvɪdʒuəlz ænd kəˈmjuːnɪtiz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌɪndɪˈvɪdʒuəlz ænd kəˈmjuːnɪtiz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "healthy media habits",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhelθi ˈmiːdiə ˈhæbɪts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhelθi ˈmiːdiə ˈhæbɪts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "whether mass media significantly influences the younger generation",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈweðə mæs ˈmiːdiə sɪɡˈnɪfɪkəntli ˈɪnfluənsɪz ðə ˈjʌŋɡər ˌdʒenəˈreɪʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈweðə mæs ˈmiːdiə sɪɡˈnɪfɪkəntli ˈɪnfluənsɪz ðə ˈjʌŋɡər ˌdʒenəˈreɪʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "media influence on young people",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmiːdiə ˈɪnfluəns ɒn jʌŋ ˈpiːpəl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈmiːdiə ˈɪnfluəns ɒn jʌŋ ˈpiːpəl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "students and families",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈstjuːdənts ænd ˈfæməliz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈstjuːdənts ænd ˈfæməliz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "mass media for young people",
+      "pronunciation": {
+        "british": {
+          "ipa": "mæs ˈmiːdiə fɔː jʌŋ ˈpiːpəl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "mæs ˈmiːdiə fɔː jʌŋ ˈpiːpəl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "online learning resources and educational content",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɒnlaɪn ˈlɜːnɪŋ rɪˈsɔːsɪz ænd ˌedjuˈkeɪʃənəl ˈkɒntent",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɒnlaɪn ˈlɜːnɪŋ rɪˈsɔːsɪz ænd ˌedjuˈkeɪʃənəl ˈkɒntent",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "youth media engagement",
+      "pronunciation": {
+        "british": {
+          "ipa": "juːθ ˈmiːdiə ɪnˈɡeɪdʒmənt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "juːθ ˈmiːdiə ɪnˈɡeɪdʒmənt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "social connections and communication skills",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsəʊʃəl kəˈnekʃənz ænd kəˌmjuːnɪˈkeɪʃən skɪlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsəʊʃəl kəˈnekʃənz ænd kəˌmjuːnɪˈkeɪʃən skɪlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "career information and better future planning",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəˈrɪər ˌɪnfəˈmeɪʃən ænd ˈbetər ˈfjuːtʃə ˈplænɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kəˈrɪər ˌɪnfəˈmeɪʃən ænd ˈbetər ˈfjuːtʃə ˈplænɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "Young people who use media for learning",
+      "pronunciation": {
+        "british": {
+          "ipa": "jʌŋ ˈpiːpəl huː juːz ˈmiːdiə fɔː ˈlɜːnɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "jʌŋ ˈpiːpəl huː juːz ˈmiːdiə fɔː ˈlɜːnɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "improved knowledge and digital skills",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪmˈpruːvd ˈnɒlɪdʒ ænd ˈdɪdʒɪtəl skɪlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪmˈpruːvd ˈnɒlɪdʒ ænd ˈdɪdʒɪtəl skɪlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "students accessing educational media content",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈstjuːdənts ˈækseɪŋ ˌedjuˈkeɪʃənəl ˈmiːdiə ˈkɒntent",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈstjuːdənts ˈækseɪŋ ˌedjuˈkeɪʃənəl ˈmiːdiə ˈkɒntent",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "better understanding of school subjects",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbetər ˌʌndəˈstændɪŋ ɒv skuːl ˈsʌbdʒekts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbetər ˌʌndəˈstændɪŋ ɒv skuːl ˈsʌbdʒekts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "without media learning tools",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪˈðaʊt ˈmiːdiə ˈlɜːnɪŋ tuːlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɪˈðaʊt ˈmiːdiə ˈlɜːnɪŋ tuːlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "the younger generation",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈjʌŋɡər ˌdʒenəˈreɪʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈjʌŋɡər ˌdʒenəˈreɪʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "heavy youth media use",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhevi juːθ ˈmiːdiə juːs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhevi juːθ ˈmiːdiə juːs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "screen addiction and reduced study time",
+      "pronunciation": {
+        "british": {
+          "ipa": "skriːn əˈdɪkʃən ænd rɪˈdjuːst ˈstʌdi taɪm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "skriːn əˈdɪkʃən ænd rɪˈdjuːst ˈstʌdi taɪm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "cyberbullying and social pressure online",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsaɪbəˌbʊliɪŋ ænd ˈsəʊʃəl ˈpreʃər ˈɒnlaɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsaɪbəˌbʊliɪŋ ænd ˈsəʊʃəl ˈpreʃər ˈɒnlaɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "Teenagers with excessive social media use",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtiːneɪdʒəz wɪð ɪkˈsesɪv ˈsəʊʃəl ˈmiːdiə juːs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈtiːneɪdʒəz wɪð ɪkˈsesɪv ˈsəʊʃəl ˈmiːdiə juːs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "check their devices constantly",
+      "pronunciation": {
+        "british": {
+          "ipa": "tʃek ðeə dɪˈvaɪsɪz ˈkɒnstəntli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "tʃek ðeə dɪˈvaɪsɪz ˈkɒnstəntli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "unrealistic expectations and mental stress",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌʌnrɪəˈlɪstɪk ˌekspekˈteɪʃənz ænd ˈmentəl stres",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌʌnrɪəˈlɪstɪk ˌekspekˈteɪʃənz ænd ˈmentəl stres",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "young media users",
+      "pronunciation": {
+        "british": {
+          "ipa": "jʌŋ ˈmiːdiə ˈjuːzəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "jʌŋ ˈmiːdiə ˈjuːzəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "sleep problems and academic difficulties",
+      "pronunciation": {
+        "british": {
+          "ipa": "sliːp ˈprɒbləmz ænd ˌækəˈdemɪk ˈdɪfɪkəltiz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "sliːp ˈprɒbləmz ænd ˌækəˈdemɪk ˈdɪfɪkəltiz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "healthy development and wellbeing",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhelθi dɪˈveləpmənt ænd ˌwelˈbiːɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhelθi dɪˈveləpmənt ænd ˌwelˈbiːɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "mass media strongly influences young people",
+      "pronunciation": {
+        "british": {
+          "ipa": "mæs ˈmiːdiə ˈstrɒŋli ˈɪnfluənsɪz jʌŋ ˈpiːpəl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "mæs ˈmiːdiə ˈstrɒŋli ˈɪnfluənsɪz jʌŋ ˈpiːpəl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "parental guidance and media education",
+      "pronunciation": {
+        "british": {
+          "ipa": "pəˈrentəl ˈɡaɪdəns ænd ˈmiːdiə ˌedjuˈkeɪʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "pəˈrentəl ˈɡaɪdəns ænd ˈmiːdiə ˌedjuˈkeɪʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "parents, schools, and young people themselves",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpeərənts skuːlz ænd jʌŋ ˈpiːpəl ðəmˈselvz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈpeərənts skuːlz ænd jʌŋ ˈpiːpəl ðəmˈselvz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "responsible media use",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈspɒnsəbəl ˈmiːdiə juːs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rɪˈspɒnsəbəl ˈmiːdiə juːs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "whether shorter working weeks can effectively address youth unemployment",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈweðə ˈʃɔːtə ˈwɜːkɪŋ wiːks kæn ɪˈfektɪvli əˈdres juːθ ˌʌnɪmˈplɔɪmənt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈweðə ˈʃɔːtə ˈwɜːkɪŋ wiːks kæn ɪˈfektɪvli əˈdres juːθ ˌʌnɪmˈplɔɪmənt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "this policy",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs ˈpɒlɪsi",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðɪs ˈpɒlɪsi",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "both young people and the whole workforce",
+      "pronunciation": {
+        "british": {
+          "ipa": "bəʊθ jʌŋ ˈpiːpəl ænd ðə həʊl ˈwɜːkfɔːs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "bəʊθ jʌŋ ˈpiːpəl ænd ðə həʊl ˈwɜːkfɔːs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "reducing working hours",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈdjuːsɪŋ ˈwɜːkɪŋ ˈaʊəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rɪˈdjuːsɪŋ ˈwɜːkɪŋ ˈaʊəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "more job opportunities and reduced unemployment",
+      "pronunciation": {
+        "british": {
+          "ipa": "mɔː dʒɒb ˌɒpəˈtjuːnɪtiz ænd rɪˈdjuːst ˌʌnɪmˈplɔɪmənt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "mɔː dʒɒb ˌɒpəˈtjuːnɪtiz ænd rɪˈdjuːst ˌʌnɪmˈplɔɪmənt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "shorter schedules",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈʃɔːtə ˈʃedjuːlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈʃɔːtə ˈʃedjuːlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "better work-life balance and less stress",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbetə wɜːk laɪf ˈbæləns ænd les stres",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbetə wɜːk laɪf ˈbæləns ænd les stres",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "shared workload and fairer employment",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʃeəd ˈwɜːkləʊd ænd ˈfeərər ɪmˈplɔɪmənt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ʃeəd ˈwɜːkləʊd ænd ˈfeərər ɪmˈplɔɪmənt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "Young people and workers with reduced hours",
+      "pronunciation": {
+        "british": {
+          "ipa": "jʌŋ ˈpiːpəl ænd ˈwɜːkəz wɪð rɪˈdjuːst ˈaʊəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "jʌŋ ˈpiːpəl ænd ˈwɜːkəz wɪð rɪˈdjuːst ˈaʊəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "increased productivity and worker satisfaction",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈkriːst ˌprɒdʌkˈtɪvɪti ænd ˈwɜːkə ˌsætɪsˈfækʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪnˈkriːst ˌprɒdʌkˈtɪvɪti ænd ˈwɜːkə ˌsætɪsˈfækʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "companies implementing four-day working weeks",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌmpəniz ˈɪmplɪmentɪŋ fɔː deɪ ˈwɜːkɪŋ wiːks",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkʌmpəniz ˈɪmplɪmentɪŋ fɔː deɪ ˈwɜːkɪŋ wiːks",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "more positions available and better employee wellbeing",
+      "pronunciation": {
+        "british": {
+          "ipa": "mɔː pəˈzɪʃənz əˈveɪləbəl ænd ˈbetər ɪmˌplɔɪˈiː ˌwelˈbiːɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "mɔː pəˈzɪʃənz əˈveɪləbəl ænd ˈbetər ɪmˌplɔɪˈiː ˌwelˈbiːɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "maintaining traditional five-day schedules",
+      "pronunciation": {
+        "british": {
+          "ipa": "meɪnˈteɪnɪŋ trəˈdɪʃənəl faɪv deɪ ˈʃedjuːlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "meɪnˈteɪnɪŋ trəˈdɪʃənəl faɪv deɪ ˈʃedjuːlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "this approach",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs əˈprəʊtʃ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðɪs əˈprəʊtʃ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "employers and businesses",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪmˈplɔɪəz ænd ˈbɪznɪsɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪmˈplɔɪəz ænd ˈbɪznɪsɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "hiring more staff and training costs",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhaɪərɪŋ mɔː stɑːf ænd ˈtreɪnɪŋ kɒsts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhaɪərɪŋ mɔː stɑːf ænd ˈtreɪnɪŋ kɒsts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "higher expenses and financial business pressure",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhaɪər ɪkˈspensɪz ænd faɪˈnænʃəl ˈbɪznɪs ˈpreʃə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhaɪər ɪkˈspensɪz ænd faɪˈnænʃəl ˈbɪznɪs ˈpreʃə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "Employers who adopt work-sharing arrangements",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪmˈplɔɪəz huː əˈdɒpt wɜːk ˈʃeərɪŋ əˈreɪndʒmənts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪmˈplɔɪəz huː əˈdɒpt wɜːk ˈʃeərɪŋ əˈreɪndʒmənts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "lower profits and reduced productivity",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈləʊə ˈprɒfɪts ænd rɪˈdjuːst ˌprɒdʌkˈtɪvɪti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈləʊə ˈprɒfɪts ænd rɪˈdjuːst ˌprɒdʌkˈtɪvɪti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "businesses",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbɪznɪsɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbɪznɪsɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "coordination difficulties and management challenges",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəʊˌɔːdɪˈneɪʃən ˈdɪfɪkəltiz ænd ˈmænɪdʒmənt ˈtʃælɪndʒɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kəʊˌɔːdɪˈneɪʃən ˈdɪfɪkəltiz ænd ˈmænɪdʒmənt ˈtʃælɪndʒɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "competitive performance and profit margins",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəmˈpetɪtɪv pəˈfɔːməns ænd ˈprɒfɪt ˈmɑːdʒɪnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kəmˈpetɪtɪv pəˈfɔːməns ænd ˈprɒfɪt ˈmɑːdʒɪnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "reducing working hours has both significant benefits and practical challenges",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈdjuːsɪŋ ˈwɜːkɪŋ ˈaʊəz hæz bəʊθ sɪɡˈnɪfɪkənt ˈbenɪfɪts ænd ˈpræktɪkəl ˈtʃælɪndʒɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rɪˈdjuːsɪŋ ˈwɜːkɪŋ ˈaʊəz hæz bəʊθ sɪɡˈnɪfɪkənt ˈbenɪfɪts ænd ˈpræktɪkəl ˈtʃælɪndʒɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "this solution should apply to the whole workforce",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs səˈluːʃən ʃʊd əˈplaɪ tuː ðə həʊl ˈwɜːkfɔːs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðɪs səˈluːʃən ʃʊd əˈplaɪ tuː ðə həʊl ˈwɜːkfɔːs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "all age groups benefit from better work-life balance",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɔːl eɪdʒ ɡruːps ˈbenɪfɪt frɒm ˈbetə wɜːk laɪf ˈbæləns",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɔːl eɪdʒ ɡruːps ˈbenɪfɪt frɒm ˈbetə wɜːk laɪf ˈbæləns",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "governments and businesses",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɡʌvənmənts ænd ˈbɪznɪsɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɡʌvənmənts ænd ˈbɪznɪsɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "effective policies and financial support",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪˈfektɪv ˈpɒlɪsiz ænd faɪˈnænʃəl səˈpɔːt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪˈfektɪv ˈpɒlɪsiz ænd faɪˈnænʃəl səˈpɔːt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "countries spend large amounts on building restoration instead of modern housing",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌntriz spend lɑːdʒ əˈmaʊnts ɒn ˈbɪldɪŋ ˌrestəˈreɪʃən ɪnˈsted ɒv ˈmɒdən ˈhaʊzɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkʌntriz spend lɑːdʒ əˈmaʊnts ɒn ˈbɪldɪŋ ˌrestəˈreɪʃən ɪnˈsted ɒv ˈmɒdən ˈhaʊzɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "historic building restoration",
+      "pronunciation": {
+        "british": {
+          "ipa": "hɪˈstɒrɪk ˈbɪldɪŋ ˌrestəˈreɪʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "hɪˈstɒrɪk ˈbɪldɪŋ ˌrestəˈreɪʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "modern housing investment",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmɒdən ˈhaʊzɪŋ ɪnˈvestmənt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈmɒdən ˈhaʊzɪŋ ɪnˈvestmənt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "investing in building restoration",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈvestɪŋ ɪn ˈbɪldɪŋ ˌrestəˈreɪʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪnˈvestɪŋ ɪn ˈbɪldɪŋ ˌrestəˈreɪʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "cultural identity and historical value",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌltʃərəl aɪˈdentɪti ænd hɪˈstɒrɪkəl ˈvæljuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkʌltʃərəl aɪˈdentɪti ænd hɪˈstɒrɪkəl ˈvæljuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "heritage preservation",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈherɪtɪdʒ ˌprezəˈveɪʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈherɪtɪdʒ ˌprezəˈveɪʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "tourism income and economic benefits",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtʊərɪzəm ˈɪnkʌm ænd ˌiːkəˈnɒmɪk ˈbenɪfɪts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈtʊərɪzəm ˈɪnkʌm ænd ˌiːkəˈnɒmɪk ˈbenɪfɪts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "political support and public interest",
+      "pronunciation": {
+        "british": {
+          "ipa": "pəˈlɪtɪkəl səˈpɔːt ænd ˈpʌblɪk ˈɪntrəst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "pəˈlɪtɪkəl səˈpɔːt ænd ˈpʌblɪk ˈɪntrəst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "Countries that invest in historic preservation",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌntriz ðæt ɪnˈvest ɪn hɪˈstɒrɪk ˌprezəˈveɪʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkʌntriz ðæt ɪnˈvest ɪn hɪˈstɒrɪk ˌprezəˈveɪʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "increased tourist revenue and global recognition",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈkriːst ˈtʊərɪst ˈrevənjuː ænd ˈɡləʊbəl ˌrekəɡˈnɪʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪnˈkriːst ˈtʊərɪst ˈrevənjuː ænd ˈɡləʊbəl ˌrekəɡˈnɪʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "nations prioritizing architectural restoration",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈneɪʃənz praɪˈɒrɪtaɪzɪŋ ˌɑːkɪˈtektʃərəl ˌrestəˈreɪʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈneɪʃənz praɪˈɒrɪtaɪzɪŋ ˌɑːkɪˈtektʃərəl ˌrestəˈreɪʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "stronger cultural identity and economic growth from tourism",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈstrɒŋɡər ˈkʌltʃərəl aɪˈdentɪti ænd ˌiːkəˈnɒmɪk ɡrəʊθ frɒm ˈtʊərɪzəm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈstrɒŋɡər ˈkʌltʃərəl aɪˈdentɪti ænd ˌiːkəˈnɒmɪk ɡrəʊθ frɒm ˈtʊərɪzəm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "neglecting their architectural heritage",
+      "pronunciation": {
+        "british": {
+          "ipa": "nɪˈɡlektɪŋ ðeər ˌɑːkɪˈtektʃərəl ˈherɪtɪdʒ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "nɪˈɡlektɪŋ ðeər ˌɑːkɪˈtektʃərəl ˈherɪtɪdʒ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "focusing on restoration",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfəʊkəsɪŋ ɒn ˌrestəˈreɪʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfəʊkəsɪŋ ɒn ˌrestəˈreɪʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "citizens and urban development",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɪtɪzənz ænd ˈɜːbən dɪˈveləpmənt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsɪtɪzənz ænd ˈɜːbən dɪˈveləpmənt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "limited housing investment",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlɪmɪtɪd ˈhaʊzɪŋ ɪnˈvestmənt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈlɪmɪtɪd ˈhaʊzɪŋ ɪnˈvestmənt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "housing shortages and rising property costs",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhaʊzɪŋ ˈʃɔːtɪdʒɪz ænd ˈraɪzɪŋ ˈprɒpəti kɒsts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhaʊzɪŋ ˈʃɔːtɪdʒɪz ænd ˈraɪzɪŋ ˈprɒpəti kɒsts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "poor living conditions and affordability problems",
+      "pronunciation": {
+        "british": {
+          "ipa": "pʊə ˈlɪvɪŋ kənˈdɪʃənz ænd əˌfɔːdəˈbɪlɪti ˈprɒbləmz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "pʊə ˈlɪvɪŋ kənˈdɪʃənz ænd əˌfɔːdəˈbɪlɪti ˈprɒbləmz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "Countries that neglect housing programs",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌntriz ðæt nɪˈɡlekt ˈhaʊzɪŋ ˈprəʊɡræmz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkʌntriz ðæt nɪˈɡlekt ˈhaʊzɪŋ ˈprəʊɡræmz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "overcrowding and inadequate housing for citizens",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌəʊvəˈkraʊdɪŋ ænd ɪnˈædɪkwət ˈhaʊzɪŋ fɔː ˈsɪtɪzənz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌəʊvəˈkraʊdɪŋ ænd ɪnˈædɪkwət ˈhaʊzɪŋ fɔː ˈsɪtɪzənz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "urban populations",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɜːbən ˌpɒpjuˈleɪʃənz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɜːbən ˌpɒpjuˈleɪʃənz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "housing insecurity and social inequality",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhaʊzɪŋ ˌɪnsɪˈkjʊərɪti ænd ˈsəʊʃəl ˌɪnɪˈkwɒlɪti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhaʊzɪŋ ˌɪnsɪˈkjʊərɪti ænd ˈsəʊʃəl ˌɪnɪˈkwɒlɪti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "quality of life and sustainable urban growth",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkwɒlɪti ɒv laɪf ænd səˈsteɪnəbəl ˈɜːbən ɡrəʊθ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkwɒlɪti ɒv laɪf ænd səˈsteɪnəbəl ˈɜːbən ɡrəʊθ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "both building restoration and modern housing deserve government investment",
+      "pronunciation": {
+        "british": {
+          "ipa": "bəʊθ ˈbɪldɪŋ ˌrestəˈreɪʃən ænd ˈmɒdən ˈhaʊzɪŋ dɪˈzɜːv ˈɡʌvənmənt ɪnˈvestmənt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "bəʊθ ˈbɪldɪŋ ˌrestəˈreɪʃən ænd ˈmɒdən ˈhaʊzɪŋ dɪˈzɜːv ˈɡʌvənmənt ɪnˈvestmənt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "governments should balance both priorities",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɡʌvənmənts ʃʊd ˈbæləns bəʊθ praɪˈɒrɪtiz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɡʌvənmənts ʃʊd ˈbæləns bəʊθ praɪˈɒrɪtiz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "heritage preservation and adequate housing are equally important",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈherɪtɪdʒ ˌprezəˈveɪʃən ænd ˈædɪkwət ˈhaʊzɪŋ ɑːr ˈiːkwəli ɪmˈpɔːtənt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈherɪtɪdʒ ˌprezəˈveɪʃən ænd ˈædɪkwət ˈhaʊzɪŋ ɑːr ˈiːkwəli ɪmˈpɔːtənt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "governments and city planners",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɡʌvənmənts ænd ˈsɪti ˈplænəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɡʌvənmənts ænd ˈsɪti ˈplænəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "balanced budgets and strategic planning",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbælənst ˈbʌdʒɪts ænd strəˈtiːdʒɪk ˈplænɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbælənst ˈbʌdʒɪts ænd strəˈtiːdʒɪk ˈplænɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "television does serve many useful functions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtelɪvɪʒən dʌz sɜːv ˈmeni ˈjuːsfəl ˈfʌŋkʃənz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈtelɪvɪʒən dʌz sɜːv ˈmeni ˈjuːsfəl ˈfʌŋkʃənz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "laws can change human behavior effectively",
+      "pronunciation": {
+        "british": {
+          "ipa": "lɔːz kæn tʃeɪndʒ ˈhjuːmən bɪˈheɪvjə ɪˈfektɪvli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "lɔːz kæn tʃeɪndʒ ˈhjuːmən bɪˈheɪvjə ɪˈfektɪvli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "mass media does have both positive and negative consequences",
+      "pronunciation": {
+        "british": {
+          "ipa": "mæs ˈmiːdiə dʌz hæv bəʊθ ˈpɒzɪtɪv ænd ˈneɡətɪv ˈkɒnsɪkwənsɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "mæs ˈmiːdiə dʌz hæv bəʊθ ˈpɒzɪtɪv ænd ˈneɡətɪv ˈkɒnsɪkwənsɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "mass media does have significant influence on the younger generation",
+      "pronunciation": {
+        "british": {
+          "ipa": "mæs ˈmiːdiə dʌz hæv sɪɡˈnɪfɪkənt ˈɪnfluəns ɒn ðə ˈjʌŋɡər ˌdʒenəˈreɪʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "mæs ˈmiːdiə dʌz hæv sɪɡˈnɪfɪkənt ˈɪnfluəns ɒn ðə ˈjʌŋɡər ˌdʒenəˈreɪʃən",
           "phonetic": ""
         }
       },

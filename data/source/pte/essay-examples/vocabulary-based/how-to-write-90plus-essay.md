@@ -338,7 +338,7 @@ To begin with, one compelling advantage of **formal written examinations** is th
 
 However, it is equally important to acknowledge that **written assessment** faces certain challenges in **modern educational environments**. This is largely because **reliance on exams** is likely to generate **test stress and student anxiety**, which may subsequently lead to **reduced creativity and limited critical thinking**. **Academic settings** that **focus heavily on exam scores** create pressure to **memorize facts rather than understand concepts**. As a result, many **students** experience **test-related stress** that makes it difficult to maintain **academic progress**.
 
-Taken together, these considerations demonstrate the overall importance of **formal written examinations**, since their advantages remain significant despite the issues that accompany them. Thus, it is essential for **schools and teachers** to allocate sufficient resources to address these challenges effectively.
+Taken together, these considerations demonstrate the overall importance of **formal written examinations**, since their advantages remain significant despite the issues that accompany them. In my view, **formal written examinations are a valid assessment method** when used appropriately. Thus, it is essential for **schools and teachers** to allocate sufficient resources to address these challenges effectively.
 
 ---
 
@@ -566,7 +566,7 @@ To begin with, one compelling reason why **television is useful** lies in its ab
 
 However, it is important to acknowledge that **television viewing** presents certain challenges in **modern lifestyles**. This is largely because **passive screen time and limited physical activity** can generate **health concerns and reduced exercise**, which may enable **decreased fitness and social isolation**. **People who watch excessive television** that **spend long periods sitting** experience pressure to **choose between TV and active hobbies**. As a result, many **regular viewers** face **inactive lifestyle and reduced outdoor time** that make it difficult to maintain **healthy activity levels**.
 
-Taken together, these considerations demonstrate that **television serves useful functions** as a source of **entertainment, education, and companionship**, though **moderation is essential**. Thus, it is essential for **viewers and families** to balance **television time with active pursuits** to maximize benefits while minimizing drawbacks.
+Taken together, these considerations demonstrate that **television serves useful functions** as a source of **entertainment, education, and companionship**, though **moderation is essential**. In my view, **television does serve many useful functions** for individuals and families. Thus, it is essential for **viewers and families** to balance **television time with active pursuits** to maximize benefits while minimizing drawbacks.
 
 ---
 
@@ -782,3 +782,367 @@ To begin with, one compelling reason why **smartphones bring important benefits*
 However, it is important to acknowledge that **smartphones** also create certain challenges in **modern society**. This is largely because **excessive smartphone usage** can generate **screen addiction and constant device checking**, which may enable **less face-to-face contact and social isolation**. **People who overuse smartphones** that **spend long hours on screens** experience pressure that leads to **sleep problems and eye strain**. As a result, many **smartphone users** face **mental health concerns and reduced real-world interaction** that make it difficult to maintain **healthy social relationships**.
 
 Taken together, these considerations demonstrate that **smartphones have had both positive and negative impacts on society**, with **communication benefits** balanced against **health and social challenges**. Thus, it is essential for **individuals and technology companies** to promote **responsible smartphone use** to maximize benefits while minimizing harm.
+
+---
+
+## Example 13: Laws and Human Behavior
+
+### Question
+"Some people think human behaviors can be changed by laws, while others think laws have little effect. What is your opinion."
+
+---
+
+### B1 Vocabulary Reference (Example 23: Laws and Human Behavior)
+
+**B1 Terms Extracted:**
+- **Subjects:** governments, citizens
+- **Positive Outcomes:** public safety and social order, strong enforcement and clear penalties, public awareness and lifestyle changes, reduced crime and better compliance
+- **Negative Outcomes:** limited effectiveness and cultural resistance, personal beliefs and individual values, enforcement difficulties and high costs
+- **Evidence Sources:** legal research, social scientists
+- **Conclusion:** governments and policymakers
+
+**Mapping to this essay:**
+- Kept same topic and vocabulary (laws changing behavior)
+- Added specific examples: "traffic laws", "strict laws"
+- Changed "limited effectiveness" → "limited law effectiveness"
+- Added concrete evidence subjects: "Citizens living under strict laws", "Governments implementing behavioral laws"
+
+---
+
+### Logic Chains
+
+**Para 2 (Laws Can Change Behavior):**
+```
+CLAIM: Laws can change behavior → Public safety & social order
+                                 → Strong enforcement & clear penalties
+                                 → Public awareness & lifestyle changes
+
+EVIDENCE: Citizens experiencing law enforcement demonstrate behavioral changes
+          (Validates that laws can effectively change behavior ✓)
+```
+
+**Para 3 (Laws Have Limitations):**
+```
+CLAIM: Laws face challenges → Cultural resistance & personal beliefs
+                            → Individual values override legal requirements
+                            → Enforcement difficulties & high costs
+
+EVIDENCE: Governments face challenges implementing behavioral laws
+          (Validates that laws have limitations ✓)
+```
+
+---
+
+### Complete Essay (238 words)
+
+The question of **whether laws can change human behavior** has attracted considerable attention in modern society. I contend that **laws can effectively change behavior** in many cases despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling reason why **laws changing behavior is effective** lies in their ability to create **public safety and social order**. In particular, **legal regulations** can facilitate **strong enforcement and clear penalties**, ultimately leading to broader outcomes such as **public awareness and lifestyle changes**. **Citizens living under strict laws** demonstrate **reduced crime and better compliance**. For instance, **people in areas with strong traffic laws** report significantly **safer roads and fewer accidents** compared to those **without strict enforcement**.
+
+However, it is important to acknowledge that **laws** face certain challenges in **changing deeply rooted behaviors**. This is largely because **cultural resistance and personal beliefs** can generate **limited law effectiveness**, which may enable **individual values to override legal requirements**. **Governments implementing behavioral laws** that **require major lifestyle changes** experience pressure that leads to **enforcement difficulties and high costs**. As a result, many **policymakers** face **public resistance and compliance issues** that make it difficult to achieve **complete behavioral transformation**.
+
+Taken together, these considerations demonstrate that **laws can change behavior in many areas**, while **cultural and personal factors** may limit their effectiveness. In my view, **laws can change human behavior effectively** when combined with proper enforcement and education. Thus, it is essential for **governments and policymakers** to combine **legal enforcement with education and public awareness** to maximize behavioral change.
+
+---
+
+## Example 14: Tourism in Developing Countries
+
+### Question
+"For a less developed country, the disadvantages of tourism are as great as the advantages. Please discuss this statement, and give and explain your opinion."
+
+---
+
+### B1 Vocabulary Reference (Example 24: Tourism in Developing Countries)
+
+**B1 Terms Extracted:**
+- **Subjects:** citizens, local communities
+- **Positive Outcomes:** tourism income and economic benefits, local pride and community spirit, job opportunities and business growth, cultural identity and historical value
+- **Negative Outcomes:** environmental damage and resource depletion, cultural erosion and local traditions being lost, financial pressure and rising prices
+- **Evidence Sources:** economic research, tourism experts
+- **Conclusion:** governments and local communities
+
+**Mapping to this essay:**
+- Kept same topic focus (tourism in developing countries)
+- Used balanced structure (equal advantages/disadvantages as question asks)
+- Simplified "tourism in developing countries" → "tourism in developing countries" or just "tourism"
+- Added specific evidence subjects: "Local communities receiving tourists", "Communities with heavy tourism"
+
+---
+
+### Logic Chains
+
+**Para 2 (Advantages of Tourism):**
+```
+CLAIM: Tourism brings benefits → Economic income & job creation
+                                → Local pride & community spirit
+                                → Cultural identity & historical value
+
+EVIDENCE: Local communities with tourism demonstrate economic improvements
+          (Validates that advantages are significant ✓)
+```
+
+**Para 3 (Disadvantages of Tourism):**
+```
+CLAIM: Tourism creates problems → Environmental damage & resource depletion
+                                 → Cultural erosion & traditions being lost
+                                 → Rising prices & financial pressure
+
+EVIDENCE: Communities with heavy tourism face challenges
+          (Validates that disadvantages are also significant ✓)
+```
+
+---
+
+### Complete Essay (241 words)
+
+The question of **whether tourism disadvantages equal advantages in developing countries** has attracted considerable attention in modern society. I contend that **tourism in developing countries** brings both substantial advantages and serious disadvantages, making the **balance between benefits and problems** critical to consider, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **tourism in developing countries** lies in its ability to create **economic income and job opportunities**. In particular, **tourism development** can facilitate **local business growth and community spirit**, ultimately leading to broader outcomes such as **improved living standards and cultural pride**. **Local communities receiving tourists** demonstrate **increased employment and economic activity**. For instance, **citizens in tourism areas** report significantly **better income levels and job security** compared to those **in areas without tourism**.
+
+However, it is important to acknowledge that **tourism** also creates certain challenges in **developing regions**. This is largely because **rapid tourism growth** can generate **environmental damage and resource depletion**, which may enable **cultural erosion and traditional lifestyles being lost**. **Communities with heavy tourism** experience pressure that leads to **rising prices and financial stress for locals**. As a result, many **local residents** face **higher living costs and loss of cultural identity** that make it difficult to maintain **traditional ways of life**.
+
+Taken together, these considerations demonstrate that **tourism has both major advantages and disadvantages** for developing countries, making the **balance between economic benefits and social costs** crucial. Thus, it is essential for **governments and local communities** to implement **sustainable tourism practices** to maximize benefits while minimizing harm.
+
+---
+
+## Example 15: Mass Media Influence (General)
+
+### Questions Covered
+1. "The information revolution by modern mass communication has both positive and negative consequences for individuals and for society." To what extent do you agree?
+2. "The mass media, including TV, radio and newspapers, influences our society and shapes our opinions and characters. What is your opinion?"
+
+---
+
+### B1 Vocabulary Reference (Examples 25 & 26: Information Revolution / Mass Media)
+
+**B1 Terms Extracted:**
+- **Subjects:** individuals, society
+- **Positive Outcomes:** improved communication and global connectivity, faster information access and knowledge sharing, online learning and better education, easier access to news and public awareness, educational programs and knowledge sharing, cultural understanding and global perspectives
+- **Negative Outcomes:** excessive screen time and digital addiction, social isolation and physical health issues, misinformation and privacy concerns, reduced critical thinking and blind trust
+- **Evidence Sources:** technology research, social studies, media studies, social researchers
+- **Conclusion:** society and individuals
+
+**Mapping to this essay:**
+- Combined vocabulary from both B1 Examples 25 & 26
+- Used "mass media" as main topic (simpler than "modern mass communication")
+- Focused on information access + connectivity (most relevant for both questions)
+- Kept balanced positive/negative structure
+
+---
+
+### Logic Chains
+
+**Para 2 (Benefits of Mass Media):**
+```
+CLAIM: Mass media brings benefits → Faster information access & global connectivity
+                                   → Educational content & knowledge sharing
+                                   → Public awareness & informed citizens
+
+EVIDENCE: People using mass media demonstrate better information access
+          (Validates positive influence ✓)
+```
+
+**Para 3 (Drawbacks of Mass Media):**
+```
+CLAIM: Mass media creates problems → Excessive screen time & digital habits
+                                    → Misinformation & privacy concerns
+                                    → Reduced face-to-face interaction
+
+EVIDENCE: Individuals exposed to mass media face challenges
+          (Validates negative consequences ✓)
+```
+
+---
+
+### Complete Essay (236 words)
+
+The question of **whether mass media has both positive and negative impacts on society** has attracted considerable attention in modern society. I contend that **mass media influence** brings substantial benefits for **individuals and society** while also creating certain challenges, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **mass media** lies in its ability to provide **faster information access and global connectivity**. In particular, **mass media platforms** can facilitate **educational content and knowledge sharing**, ultimately leading to broader outcomes such as **public awareness and informed decision-making**. **People who use mass media regularly** demonstrate **better understanding of current events**. For instance, **individuals accessing news through multiple media sources** report significantly **improved awareness of social issues** compared to those **without regular media access**.
+
+However, it is important to acknowledge that **mass media** also creates certain challenges in **modern society**. This is largely because **heavy media consumption** can generate **excessive screen time and digital habits**, which may enable **misinformation spread and privacy concerns**. **People exposed to constant media** who **spend long hours on screens** experience pressure that leads to **reduced face-to-face interaction and social isolation**. As a result, many **media users** face **information overload and difficulty distinguishing reliable sources** that make it difficult to maintain **critical thinking skills**.
+
+Taken together, these considerations demonstrate that **mass media has both significant benefits and drawbacks** for individuals and society, making **balanced media consumption** essential. In my view, **mass media does have both positive and negative consequences** for individuals and society. Thus, it is essential for **individuals and communities** to develop **healthy media habits** to maximize advantages while minimizing negative effects.
+
+---
+
+## Example 16: Mass Media Influence on Younger Generation
+
+### Question Covered
+"Mass media, including TV and newspapers, have a great influence on humans, particularly on the younger generation. It has a pivotal role in shaping people's opinions. Discuss the extent you agree or disagree. Use your own experience or examples."
+
+---
+
+### B1 Vocabulary Reference (Examples 25 & 26: Information Revolution / Mass Media)
+
+**B1 Terms Extracted:** (Same as Example 15)
+- **Subjects:** individuals, society
+- **Positive Outcomes:** online learning and better education, improved communication and global connectivity
+- **Negative Outcomes:** excessive screen time and digital addiction, social isolation and physical health issues, misinformation and privacy concerns
+
+**Mapping to this essay:**
+- **Adapted for youth focus:** Changed "individuals/society" → "young people, students, teenagers"
+- **Youth-specific positives:** Added "career information", "social connections", "digital skills"
+- **Youth-specific negatives:** Added "screen addiction", "cyberbullying", "academic difficulties", "sleep problems"
+- **Structure:** Same balanced approach as Example 15 (easier to memorize together)
+
+---
+
+### Logic Chains
+
+**Para 2 (Benefits for Youth):**
+```
+CLAIM: Mass media benefits young people → Online learning resources & educational content
+                                        → Social connections & communication skills
+                                        → Career information & future planning
+
+EVIDENCE: Young people using media demonstrate learning benefits
+          (Validates positive influence on youth ✓)
+```
+
+**Para 3 (Risks for Youth):**
+```
+CLAIM: Mass media creates youth-specific risks → Screen addiction & reduced study time
+                                                → Cyberbullying & social pressure
+                                                → Unrealistic expectations & mental stress
+
+EVIDENCE: Younger generation with heavy media use faces challenges
+          (Validates concerns about youth impact ✓)
+```
+
+---
+
+### Complete Essay (241 words)
+
+The question of **whether mass media significantly influences the younger generation** has attracted considerable attention in modern society. I contend that **media influence on young people** brings both substantial benefits and serious concerns, making this topic particularly important for **students and families**, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **mass media for young people** lies in its ability to provide **online learning resources and educational content**. In particular, **youth media engagement** can facilitate **social connections and communication skills**, ultimately leading to broader outcomes such as **career information and better future planning**. **Young people who use media for learning** demonstrate **improved knowledge and digital skills**. For instance, **students accessing educational media content** report significantly **better understanding of school subjects** compared to those **without media learning tools**.
+
+However, it is important to acknowledge that **mass media** also creates certain challenges for **the younger generation**. This is largely because **heavy youth media use** can generate **screen addiction and reduced study time**, which may enable **cyberbullying and social pressure online**. **Teenagers with excessive social media use** who **check their devices constantly** experience pressure that leads to **unrealistic expectations and mental stress**. As a result, many **young media users** face **sleep problems and academic difficulties** that make it difficult to maintain **healthy development and wellbeing**.
+
+Taken together, these considerations demonstrate that **mass media strongly influences young people** with both positive and negative effects, making **parental guidance and media education** crucial. In my view, **mass media does have significant influence on the younger generation** with substantial impacts on their opinions and development. Thus, it is essential for **parents, schools, and young people themselves** to promote **responsible media use** to support healthy youth development.
+
+---
+
+## Example 17: Shorter Working Week to Reduce Youth Unemployment
+
+### Question Covered
+"In modern society, unemployment among young people is a serious problem. One solution is to shorten the working week and put more people to work. Give your opinion of the idea, considering the advantages and disadvantages, whether it can apply to young people or the whole workforce."
+
+---
+
+### B1 Vocabulary Reference (Example 36: Shorter Working Week for Youth Unemployment)
+
+**B1 Terms Extracted:**
+- **Subjects:** young people, employers
+- **Positive Outcomes:** more job opportunities and reduced unemployment, better work-life balance and less stress, shared workload and fairer employment, increased productivity and worker satisfaction
+- **Negative Outcomes:** hiring more staff and training costs, higher expenses and financial business pressure, lower profits and reduced productivity
+- **Evidence Sources:** economic research, employment experts
+- **Conclusion:** governments and businesses
+
+**Mapping to this essay:**
+- EXACT same question - use B1 terms directly!
+- Added "whole workforce" since question asks about both young people and whole workforce
+- Added concrete evidence subjects for 90+ pattern
+- Kept all B1 positive/negative outcomes as much as possible
+
+---
+
+### Logic Chains
+
+**Para 2 (Advantages of Shorter Working Week):**
+```
+CLAIM: Shorter working week creates benefits → More job opportunities & reduced unemployment
+                                             → Better work-life balance & less stress
+                                             → Shared workload & fairer employment
+                                             → Increased productivity & worker satisfaction
+
+EVIDENCE: Young people and workers with shorter weeks demonstrate better outcomes
+          (Validates employment benefits ✓)
+```
+
+**Para 3 (Disadvantages of Shorter Working Week):**
+```
+CLAIM: Shorter working week creates challenges → Hiring more staff & training costs
+                                                → Higher expenses & financial business pressure
+                                                → Lower profits & reduced productivity
+                                                → Coordination difficulties & management challenges
+
+EVIDENCE: Employers implementing shorter weeks face financial and operational challenges
+          (Validates practical concerns ✓)
+```
+
+---
+
+### Complete Essay (264 words)
+
+The question of **whether shorter working weeks can effectively address youth unemployment** has attracted considerable attention in modern society. I contend that **this policy** offers substantial benefits for **both young people and the whole workforce** while also presenting certain challenges, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **reducing working hours** lies in its ability to create **more job opportunities and reduced unemployment**. In particular, **shorter schedules** can facilitate **better work-life balance and less stress**, ultimately leading to broader outcomes such as **shared workload and fairer employment**. **Young people and workers with reduced hours** demonstrate **increased productivity and worker satisfaction**. For instance, **companies implementing four-day working weeks** report significantly **more positions available and better employee wellbeing** compared to those **maintaining traditional five-day schedules**.
+
+However, it is important to acknowledge that **this approach** also creates certain challenges for **employers and businesses**. This is largely because **shorter schedules** require **hiring more staff and training costs**, which may subsequently lead to **higher expenses and financial business pressure**. **Employers who adopt work-sharing arrangements** experience pressure that leads to **lower profits and reduced productivity**. As a result, many **businesses** face **coordination difficulties and management challenges** that make it difficult to maintain **competitive performance and profit margins**.
+
+Taken together, these considerations demonstrate that **reducing working hours has both significant benefits and practical challenges** for addressing unemployment. In my view, **this solution should apply to the whole workforce** as **all age groups benefit from better work-life balance**. Thus, **governments and businesses** must develop **effective policies and financial support** for successful implementation.
+
+---
+
+## Example 18: Building Restoration vs. Modern Housing
+
+### Question Covered
+"More and more countries spend large amounts of money on the restoration of buildings instead of on modern housing. To what extent do you agree or disagree with this analysis? Support your writing with its advantages or disadvantages."
+
+---
+
+### B1 Vocabulary Reference (Example 19: Restoration vs Housing)
+
+**B1 Terms Extracted:**
+- **Subjects:** governments, citizens
+- **Positive Evidence (Why Trend Exists):** cultural identity and historical value, tourism income and economic benefits, political support and public interest, global recognition and more tourists
+- **Counter-Evidence (Housing Also):** housing programs and new developments, affordable housing and urban growth, government investment and policy changes
+- **Evidence Sources:** urban planning research, housing experts
+- **Conclusion:** governments and city planners
+
+**Mapping to this essay:**
+- EXACT same question - use B1 terms directly
+- Will take "partially agree" position (restoration important BUT housing also critical)
+- Para 2: Advantages of building restoration (use B1 positive terms)
+- Para 3: Disadvantages of neglecting modern housing (show housing needs)
+- Use smart variations to avoid repetition
+
+---
+
+### Logic Chains
+
+**Para 2 (Advantages of Building Restoration):**
+```
+CLAIM: Building restoration creates benefits → Cultural identity & historical value
+                                             → Tourism income & economic benefits
+                                             → Political support & public interest
+                                             → Global recognition
+
+EVIDENCE: Countries investing in restoration demonstrate tourism and cultural benefits
+          (Validates advantages of restoration ✓)
+```
+
+**Para 3 (Disadvantages of Neglecting Housing):**
+```
+CLAIM: Neglecting housing creates problems → Housing shortages & rising costs
+                                           → Poor living conditions for citizens
+                                           → Social problems & inequality
+                                           → Limited urban growth
+
+EVIDENCE: Countries prioritizing restoration over housing face housing challenges
+          (Validates need for housing investment ✓)
+```
+
+---
+
+### Complete Essay (268 words)
+
+The observation that **countries spend large amounts on building restoration instead of modern housing** has attracted considerable attention in modern society. I partially agree with this analysis, as **historic building restoration** offers substantial cultural benefits while **modern housing investment** remains critically important, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **investing in building restoration** lies in its ability to preserve **cultural identity and historical value**. In particular, **heritage preservation** can facilitate **tourism income and economic benefits**, ultimately leading to broader outcomes such as **political support and public interest**. **Countries that invest in historic preservation** demonstrate **increased tourist revenue and global recognition**. For instance, **nations prioritizing architectural restoration** report significantly **stronger cultural identity and economic growth from tourism** compared to those **neglecting their architectural heritage**.
+
+However, it is important to acknowledge that **focusing on restoration** also creates certain challenges for **citizens and urban development**. This is largely because **limited housing investment** can generate **housing shortages and rising property costs**, which may subsequently lead to **poor living conditions and affordability problems**. **Countries that neglect housing programs** experience pressure that leads to **overcrowding and inadequate housing for citizens**. As a result, many **urban populations** face **housing insecurity and social inequality** that make it difficult to maintain **quality of life and sustainable urban growth**.
+
+Taken together, these considerations demonstrate that **both building restoration and modern housing deserve government investment**. In my view, **governments should balance both priorities** as **heritage preservation and adequate housing are equally important**. Thus, **governments and city planners** must develop **balanced budgets and strategic planning** for successful urban development.

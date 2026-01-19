@@ -92,8 +92,8 @@
 80. essential requirement | /ɪˈsenʃəl rɪˈkwaɪəmənt/
 
 ## Example 4: Climate Change Responsibility
-81. Climate change is a concerning global issue | /ˈklaɪmət tʃeɪndʒ ɪz ə kənˈsɜːnɪŋ ˈɡləʊbəl ˈɪʃuː/
-82. who should take responsibility for climate change | /huː ʃʊd teɪk rɪˌspɒnsəˈbɪlɪti fɔː ˈklaɪmət tʃeɪndʒ/
+81. who should take responsibility for climate change | /huː ʃʊd teɪk rɪˌspɒnsəˈbɪlɪti fɔː ˈklaɪmət tʃeɪndʒ/
+82. climate change represents a concerning global challenge | /ˈklaɪmət tʃeɪndʒ ˌreprɪˈzents ə kənˈsɜːnɪŋ ˈɡləʊbəl ˈtʃælɪndʒ/
 83. governments should take primary responsibility | /ˈɡʌvənmənts ʃʊd teɪk ˈpraɪməri rɪˌspɒnsəˈbɪlɪti/
 84. climate change | /ˈklaɪmət tʃeɪndʒ/
 85. valuable supporting roles from companies and individuals | /ˈvæljuəbl səˈpɔːtɪŋ rəʊlz frɒm ˈkʌmpəniz ænd ˌɪndɪˈvɪdʒuəlz/

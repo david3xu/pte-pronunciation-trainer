@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-01-19T20:48:00.265Z",
+    "generated": "2026-01-19T20:51:19.295Z",
     "totalTerms": 499,
     "source": "pte-essay-90plus-filled-terms",
     "description": "Auto-discovered vocabulary book: pte-essay-90plus-filled-terms",
@@ -1293,22 +1293,6 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "Climate change is a concerning global issue",
-      "pronunciation": {
-        "british": {
-          "ipa": "ˈklaɪmət tʃeɪndʒ ɪz ə kənˈsɜːnɪŋ ˈɡləʊbəl ˈɪʃuː",
-          "phonetic": ""
-        },
-        "american": {
-          "ipa": "ˈklaɪmət tʃeɪndʒ ɪz ə kənˈsɜːnɪŋ ˈɡləʊbəl ˈɪʃuː",
-          "phonetic": ""
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-90plus-filled-terms",
-      "source": "pte-essay-90plus-filled-terms"
-    },
-    {
       "english": "who should take responsibility for climate change",
       "pronunciation": {
         "british": {
@@ -1317,6 +1301,22 @@
         },
         "american": {
           "ipa": "huː ʃʊd teɪk rɪˌspɒnsəˈbɪlɪti fɔː ˈklaɪmət tʃeɪndʒ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "climate change represents a concerning global challenge",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈklaɪmət tʃeɪndʒ ˌreprɪˈzents ə kənˈsɜːnɪŋ ˈɡləʊbəl ˈtʃælɪndʒ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈklaɪmət tʃeɪndʒ ˌreprɪˈzents ə kənˈsɜːnɪŋ ˈɡləʊbəl ˈtʃælɪndʒ",
           "phonetic": ""
         }
       },

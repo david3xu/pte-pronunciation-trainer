@@ -429,7 +429,7 @@ EVIDENCE (Two layers):
 
 ### Complete Essay (235 words)
 
-**Climate change is a concerning global issue** that requires clear responsibility. I contend that **governments should take primary responsibility** for addressing this challenge, with **valuable supporting roles from companies and individuals**, and the following analysis outlines the primary arguments supporting this viewpoint.
+The question of **who should take responsibility for climate change** has attracted considerable attention in modern society. Given that **climate change represents a concerning global challenge** affecting all nations, I contend that **governments should take primary responsibility** for addressing this issue, with **valuable supporting roles from companies and individuals**, and the following analysis outlines the primary arguments supporting this viewpoint.
 
 To begin with, one compelling reason why **government-led climate action** is essential lies in **the scale and urgency of this global challenge**, which requires coordinated efforts that only governments can provide through **environmental laws and national regulations**. In particular, **governments leading climate initiatives** can facilitate **public funding and policy coordination**, ultimately leading to broader outcomes such as **strong enforcement and ambitious climate targets**. **Nations that prioritize climate action** demonstrate **strong environmental regulations**. For instance, **countries with strict environmental policies** report significantly **reduced pollution levels and improved air quality** compared to those **without government action**.
 

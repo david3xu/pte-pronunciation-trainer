@@ -396,13 +396,17 @@ Taken together, these considerations demonstrate that while **educational travel
 
 **Para 2 (Why Governments Should Lead):**
 ```
-CLAIM: Government leadership → Environmental laws & national regulations
-                            → Public funding & policy coordination
-                            → Strong enforcement & climate targets
+CLAIM: Climate change scale & urgency → Requires coordinated action beyond individual/company capacity
+                                      → Only governments can provide:
+                                         - Environmental laws & national regulations
+                                         - Public funding & policy coordination
+                                         - Strong enforcement & climate targets
 
-EVIDENCE: Governments demonstrate:
-          - Significant pollution reduction
-          - Improved air quality
+EVIDENCE (Two layers):
+  Layer 1 (Summary): Nations that prioritize climate action demonstrate strong environmental regulations
+  Layer 2 (Specific): For instance, countries with strict environmental policies show:
+                      - Significant pollution reduction
+                      - Improved air quality
           (Validates that government action produces results ✓)
 ```
 
@@ -413,8 +417,11 @@ CLAIM: While governments lead, companies & individuals contribute
                             → Environmental improvements
                             → Public awareness & lifestyle changes
 
-EVIDENCE: Climate programs show:
-          - Business support & citizen participation
+EVIDENCE (Two layers):
+  Layer 1 (Summary): Climate initiatives combining government policy with business support achieve broader community engagement
+  Layer 2 (Specific): As a result, successful climate programs show:
+                      - Enhanced effectiveness through collective action
+                      - Business support & citizen participation
           (Validates that collective action helps ✓)
 ```
 
@@ -422,9 +429,9 @@ EVIDENCE: Climate programs show:
 
 ### Complete Essay (235 words)
 
-The question of **who should take responsibility for climate change** has attracted considerable attention in modern society. I contend that **governments should take primary responsibility** for addressing **climate change**, with **valuable supporting roles from companies and individuals**, and the following analysis outlines the primary arguments supporting this viewpoint.
+**Climate change is a concerning global issue** that requires clear responsibility. I contend that **governments should take primary responsibility** for addressing this challenge, with **valuable supporting roles from companies and individuals**, and the following analysis outlines the primary arguments supporting this viewpoint.
 
-To begin with, one compelling reason why **government-led climate action** is essential lies in the unique ability to bring about **environmental laws and national regulations**. In particular, **governments leading climate initiatives** can facilitate **public funding and policy coordination**, ultimately leading to broader outcomes such as **strong enforcement and ambitious climate targets**. **Nations that prioritize climate action** demonstrate **strong environmental regulations**. For instance, **countries with strict environmental policies** report significantly **reduced pollution levels and improved air quality** compared to those **without government action**.
+To begin with, one compelling reason why **government-led climate action** is essential lies in **the scale and urgency of this global challenge**, which requires coordinated efforts that only governments can provide through **environmental laws and national regulations**. In particular, **governments leading climate initiatives** can facilitate **public funding and policy coordination**, ultimately leading to broader outcomes such as **strong enforcement and ambitious climate targets**. **Nations that prioritize climate action** demonstrate **strong environmental regulations**. For instance, **countries with strict environmental policies** report significantly **reduced pollution levels and improved air quality** compared to those **without government action**.
 
 However, it is important to acknowledge that while **government responsibility** is essential, **companies and individuals** also provide **valuable supporting contributions to climate action**. This is largely because **business environmental actions and individual changes** can generate **meaningful environmental improvements**, which may enable **increased public awareness and sustainable behavior**. **Climate initiatives** that **combine government policy with business support** achieve **broader community engagement**. As a result, many **successful climate programs** experience **enhanced effectiveness** through **collective action from all groups**.
 
@@ -472,7 +479,7 @@ The question of **whether it is realistic to combine study and employment** has 
 
 To begin with, one compelling reason why **combining study and work is achievable** lies in the availability of **flexible work arrangements and modern learning options**. In particular, **students who balance work and study** can develop **strong time management skills and practical experience**, ultimately leading to broader outcomes such as **financial independence and enhanced career preparation**. **Working students** who **manage both commitments effectively** demonstrate **successful academic performance**. For instance, **students with part-time employment** report significantly **better organizational skills and work readiness** compared to those **without work experience**.
 
-However, it is important to acknowledge that **work-study balance** presents certain challenges in **modern educational environments**. This is largely because **limited study time and work-related stress** can generate **competing demands and reduced focus**, which may enable **academic pressure and decreased energy levels**. **Students managing dual commitments** that **work long hours** experience pressure to **sacrifice sleep and personal time**. As a result, many **working students** face **time constraints and tiredness** that make it difficult to maintain **optimal academic performance**.
+However, it is important to acknowledge that **work-study balance** presents certain challenges in **modern educational environments**. This is largely because **limited study time and work-related stress** can generate **competing demands and reduced focus**, which may subsequently lead to **academic pressure and decreased energy levels**. **Students managing dual commitments** that **work long hours** experience pressure to **sacrifice sleep and personal time**. As a result, many **working students** face **time constraints and tiredness** that make it difficult to maintain **optimal academic performance**.
 
 Taken together, these considerations demonstrate that **combining study and employment** is realistic in modern society, though it requires **strong time management and realistic expectations**. Thus, it is essential for **students and educational institutions** to provide sufficient support to address these challenges effectively.
 

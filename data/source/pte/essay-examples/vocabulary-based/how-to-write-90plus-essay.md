@@ -668,13 +668,13 @@ EVIDENCE: People in poorly designed buildings experience negative effects
 
 ### Complete Essay (241 words)
 
-The question of **how building design affects where people work and live** has attracted considerable attention in modern society. I contend that **well-planned building design offers significant advantages** for **people**, while **poorly designed buildings** create challenges, and the following analysis outlines the primary arguments supporting this viewpoint.
+The question of **how building design affects where people work and live** has attracted considerable attention in modern society. I contend that **architectural design** offers substantial benefits for **people** despite **the risks of poor planning**, and the following analysis outlines the primary arguments supporting this viewpoint.
 
 To begin with, one compelling reason why **good building design is beneficial** lies in its ability to provide **natural light and comfortable spaces**. In particular, **thoughtful architectural design** can facilitate **fresh air and open layouts**, ultimately leading to broader outcomes such as **better productivity and improved mood**. **Workers in well-designed buildings** demonstrate **increased focus and positive attitudes**. For instance, **employees in buildings with natural light** report significantly **better mood and higher energy levels** compared to those **in buildings with poor lighting**.
 
 However, it is important to acknowledge that **poor building design** creates certain challenges in **work and living environments**. This is largely because **poor air flow and limited spaces** can generate **health problems and lower motivation**, which may enable **decreased productivity and increased stress**. **People in poorly designed buildings** who **work in small spaces** experience pressure that leads to **physical discomfort and reduced wellbeing**. As a result, many **workers and residents** face **poor air quality and mental tiredness** that make it difficult to maintain **healthy living and working conditions**.
 
-Taken together, these considerations demonstrate that **building design significantly impacts daily life**, with **good design** creating positive environments while **poor design** causes problems. Thus, it is essential for **architects and developers** to prioritize **quality design that supports health and productivity**.
+Taken together, these considerations demonstrate the overall importance of **architectural design**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **architects and developers** to prioritize **quality design that supports health and productivity**.
 
 ---
 
@@ -713,13 +713,13 @@ EVIDENCE: People overusing smartphones experience negative health effects
 
 ### Complete Essay (239 words)
 
-The question of **what impact new inventions have had on society** has attracted considerable attention in modern society. I contend that **smartphones represent a significant invention** with both beneficial and detrimental effects on **people**, and the following analysis outlines the primary arguments supporting this viewpoint.
+The question of **what impact new inventions have had on society** has attracted considerable attention in modern society. I contend that **smartphones represent a significant technological advancement** that offers substantial benefits for **people** despite **certain limitations**, and the following analysis outlines the primary arguments supporting this viewpoint.
 
 To begin with, one compelling reason why **smartphones bring important benefits** lies in their ability to provide **instant communication and global connectivity**. In particular, **smartphones** can facilitate **easy access to information and online services**, ultimately leading to broader outcomes such as **online learning and improved productivity**. **Users who rely on smartphones** demonstrate **better work efficiency and faster communication**. For instance, **people using smartphones for work** report significantly **enhanced coordination and quicker information access** compared to those **without mobile technology**.
 
 However, it is important to acknowledge that **smartphones** also create certain challenges in **modern society**. This is largely because **excessive smartphone usage** can generate **screen addiction and constant device checking**, which may enable **less face-to-face contact and social isolation**. **People who overuse smartphones** that **spend long hours on screens** experience pressure that leads to **sleep problems and eye strain**. As a result, many **smartphone users** face **mental health concerns and reduced real-world interaction** that make it difficult to maintain **healthy social relationships**.
 
-Taken together, these considerations demonstrate that **smartphones have had both positive and negative impacts on society**, with **communication benefits** balanced against **health and social challenges**. Thus, it is essential for **individuals and technology companies** to promote **responsible smartphone use** to maximize benefits while minimizing harm.
+Taken together, these considerations demonstrate the overall importance of **smartphones**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **individuals and technology companies** to promote **responsible smartphone use** to maximize benefits while minimizing harm.
 
 ---
 
@@ -775,13 +775,13 @@ EVIDENCE: Communities with heavy tourism face challenges
 
 ### Complete Essay (241 words)
 
-The question of **whether tourism disadvantages equal advantages in developing countries** has attracted considerable attention in modern society. I contend that **tourism in developing countries** brings both substantial advantages and serious disadvantages, making the **balance between benefits and problems** critical to consider, and the following analysis outlines the primary arguments supporting this viewpoint.
+The question of **whether tourism disadvantages equal advantages in developing countries** has attracted considerable attention in modern society. I contend that **tourism in developing countries** offers substantial benefits for **local communities** despite **certain limitations**, and the following analysis outlines the primary arguments supporting this viewpoint.
 
 To begin with, one compelling advantage of **tourism in developing countries** lies in its ability to create **economic income and job opportunities**. In particular, **tourism development** can facilitate **local business growth and community spirit**, ultimately leading to broader outcomes such as **improved living standards and cultural pride**. **Local communities receiving tourists** demonstrate **increased employment and economic activity**. For instance, **citizens in tourism areas** report significantly **better income levels and job security** compared to those **in areas without tourism**.
 
 However, it is important to acknowledge that **tourism** also creates certain challenges in **developing regions**. This is largely because **rapid tourism growth** can generate **environmental damage and resource depletion**, which may enable **cultural erosion and traditional lifestyles being lost**. **Communities with heavy tourism** experience pressure that leads to **rising prices and financial stress for locals**. As a result, many **local residents** face **higher living costs and loss of cultural identity** that make it difficult to maintain **traditional ways of life**.
 
-Taken together, these considerations demonstrate that **tourism has both major advantages and disadvantages** for developing countries, making the **balance between economic benefits and social costs** crucial. Thus, it is essential for **governments and local communities** to implement **sustainable tourism practices** to maximize benefits while minimizing harm.
+Taken together, these considerations demonstrate the overall importance of **tourism in developing countries**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **governments and local communities** to implement **sustainable tourism practices** to maximize benefits while minimizing harm.
 
 ---
 

@@ -332,7 +332,7 @@
 303. work in small spaces | /wɜːk ɪn smɔːl ˈspeɪsɪz/
 304. physical discomfort and reduced wellbeing | /ˈfɪzɪkəl dɪsˈkʌmfət ænd rɪˈdjuːst ˌwelˈbiːɪŋ/
 305. workers and residents | /ˈwɜːkəz ænd ˈrezɪdənts/
-306. breathing difficulties and mental tiredness | /ˈbriːðɪŋ ˈdɪfɪkəltiz ænd ˈmentəl ˈtaɪədnəs/
+306. poor air quality and mental tiredness | /pɔː ˈeə ˈkwɒlɪti ænd ˈmentəl ˈtaɪədnəs/
 307. healthy living and working conditions | /ˈhelθi ˈlɪvɪŋ ænd ˈwɜːkɪŋ kənˈdɪʃənz/
 308. building design significantly impacts daily life | /ˈbɪldɪŋ dɪˈzaɪn sɪɡˈnɪfɪkəntli ˈɪmpækts ˈdeɪli laɪf/
 309. good design | /ɡʊd dɪˈzaɪn/

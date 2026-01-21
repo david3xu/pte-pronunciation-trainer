@@ -1,0 +1,816 @@
+{
+  "metadata": {
+    "generated": "2026-01-21T04:03:08.426Z",
+    "totalTerms": 50,
+    "source": "pte-plural-nouns-s-practice",
+    "description": "Auto-discovered vocabulary book: pte-plural-nouns-s-practice",
+    "version": "1.0",
+    "categories": [
+      "pte-plural-nouns-s-practice"
+    ],
+    "hasIPA": true,
+    "keepDuplicates": false
+  },
+  "vocabulary": [
+    {
+      "english": "students",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈstjuːdənts",
+          "phonetic": "STOO-dunts"
+        },
+        "american": {
+          "ipa": "ˈstjuːdənts",
+          "phonetic": "STOO-dunts"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "subjects",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsʌbdʒɪkts",
+          "phonetic": "SUB-jikts"
+        },
+        "american": {
+          "ipa": "ˈsʌbdʒɪkts",
+          "phonetic": "SUB-jikts"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "projects",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈprɒdʒekts",
+          "phonetic": "PROJ-ekts"
+        },
+        "american": {
+          "ipa": "ˈprɒdʒekts",
+          "phonetic": "PROJ-ekts"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "concepts",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkɒnsepts",
+          "phonetic": "KON-septs"
+        },
+        "american": {
+          "ipa": "ˈkɒnsepts",
+          "phonetic": "KON-septs"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "aspects",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈæspekts",
+          "phonetic": "AS-pekts"
+        },
+        "american": {
+          "ipa": "ˈæspekts",
+          "phonetic": "AS-pekts"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "effects",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪˈfekts",
+          "phonetic": "ih-FEKTS"
+        },
+        "american": {
+          "ipa": "ɪˈfekts",
+          "phonetic": "ih-FEKTS"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "facts",
+      "pronunciation": {
+        "british": {
+          "ipa": "fækts",
+          "phonetic": "FAKTS"
+        },
+        "american": {
+          "ipa": "fækts",
+          "phonetic": "FAKTS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "results",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈzʌlts",
+          "phonetic": "ri-ZULTS"
+        },
+        "american": {
+          "ipa": "rɪˈzʌlts",
+          "phonetic": "ri-ZULTS"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "experts",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈekspɜːts",
+          "phonetic": "EK-spurts"
+        },
+        "american": {
+          "ipa": "ˈekspɜːts",
+          "phonetic": "EK-spurts"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "products",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈprɒdʌkts",
+          "phonetic": "PROD-ukts"
+        },
+        "american": {
+          "ipa": "ˈprɒdʌkts",
+          "phonetic": "PROD-ukts"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "scientists",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsaɪəntɪsts",
+          "phonetic": "SY-un-tists"
+        },
+        "american": {
+          "ipa": "ˈsaɪəntɪsts",
+          "phonetic": "SY-un-tists"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "artists",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɑːtɪsts",
+          "phonetic": "AR-tists"
+        },
+        "american": {
+          "ipa": "ˈɑːtɪsts",
+          "phonetic": "AR-tists"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "economists",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪˈkɒnəmɪsts",
+          "phonetic": "i-KON-uh-mists"
+        },
+        "american": {
+          "ipa": "ɪˈkɒnəmɪsts",
+          "phonetic": "i-KON-uh-mists"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "novelists",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈnɒvəlɪsts",
+          "phonetic": "NOV-ul-ists"
+        },
+        "american": {
+          "ipa": "ˈnɒvəlɪsts",
+          "phonetic": "NOV-ul-ists"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "applicants",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈæplɪkənts",
+          "phonetic": "AP-li-kunts"
+        },
+        "american": {
+          "ipa": "ˈæplɪkənts",
+          "phonetic": "AP-li-kunts"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "residents",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈrezɪdənts",
+          "phonetic": "REZ-i-dunts"
+        },
+        "american": {
+          "ipa": "ˈrezɪdənts",
+          "phonetic": "REZ-i-dunts"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "parents",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpeərənts",
+          "phonetic": "PAIR-unts"
+        },
+        "american": {
+          "ipa": "ˈpeərənts",
+          "phonetic": "PAIR-unts"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "patients",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpeɪʃənts",
+          "phonetic": "PAY-shunts"
+        },
+        "american": {
+          "ipa": "ˈpeɪʃənts",
+          "phonetic": "PAY-shunts"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "apartments",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈpɑːtmənts",
+          "phonetic": "uh-PART-munts"
+        },
+        "american": {
+          "ipa": "əˈpɑːtmənts",
+          "phonetic": "uh-PART-munts"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "restaurants",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈrestrɒnts",
+          "phonetic": "REST-ronts"
+        },
+        "american": {
+          "ipa": "ˈrestrɒnts",
+          "phonetic": "REST-ronts"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "airports",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈeəpɔːts",
+          "phonetic": "AIR-ports"
+        },
+        "american": {
+          "ipa": "ˈeəpɔːts",
+          "phonetic": "AIR-ports"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "streets",
+      "pronunciation": {
+        "british": {
+          "ipa": "striːts",
+          "phonetic": "STREETS"
+        },
+        "american": {
+          "ipa": "striːts",
+          "phonetic": "STREETS"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "markets",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmɑːkɪts",
+          "phonetic": "MAR-kits"
+        },
+        "american": {
+          "ipa": "ˈmɑːkɪts",
+          "phonetic": "MAR-kits"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "desks",
+      "pronunciation": {
+        "british": {
+          "ipa": "desks",
+          "phonetic": "DESKS"
+        },
+        "american": {
+          "ipa": "desks",
+          "phonetic": "DESKS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "shops",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʃɒps",
+          "phonetic": "SHOPS"
+        },
+        "american": {
+          "ipa": "ʃɒps",
+          "phonetic": "SHOPS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "books",
+      "pronunciation": {
+        "british": {
+          "ipa": "bʊks",
+          "phonetic": "BOOKS"
+        },
+        "american": {
+          "ipa": "bʊks",
+          "phonetic": "BOOKS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "laptops",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlæptɒps",
+          "phonetic": "LAP-tops"
+        },
+        "american": {
+          "ipa": "ˈlæptɒps",
+          "phonetic": "LAP-tops"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "maps",
+      "pronunciation": {
+        "british": {
+          "ipa": "mæps",
+          "phonetic": "MAPS"
+        },
+        "american": {
+          "ipa": "mæps",
+          "phonetic": "MAPS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "cups",
+      "pronunciation": {
+        "british": {
+          "ipa": "kʌps",
+          "phonetic": "CUPS"
+        },
+        "american": {
+          "ipa": "kʌps",
+          "phonetic": "CUPS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "chips",
+      "pronunciation": {
+        "british": {
+          "ipa": "tʃɪps",
+          "phonetic": "CHIPS"
+        },
+        "american": {
+          "ipa": "tʃɪps",
+          "phonetic": "CHIPS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "snacks",
+      "pronunciation": {
+        "british": {
+          "ipa": "snæks",
+          "phonetic": "SNAKS"
+        },
+        "american": {
+          "ipa": "snæks",
+          "phonetic": "SNAKS"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "tickets",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtɪkɪts",
+          "phonetic": "TIK-its"
+        },
+        "american": {
+          "ipa": "ˈtɪkɪts",
+          "phonetic": "TIK-its"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "jackets",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdʒækɪts",
+          "phonetic": "JAK-its"
+        },
+        "american": {
+          "ipa": "ˈdʒækɪts",
+          "phonetic": "JAK-its"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "cats",
+      "pronunciation": {
+        "british": {
+          "ipa": "kæts",
+          "phonetic": "KATS"
+        },
+        "american": {
+          "ipa": "kæts",
+          "phonetic": "KATS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "pets",
+      "pronunciation": {
+        "british": {
+          "ipa": "pets",
+          "phonetic": "PETS"
+        },
+        "american": {
+          "ipa": "pets",
+          "phonetic": "PETS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "impacts",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪmpækts",
+          "phonetic": "IM-pakts"
+        },
+        "american": {
+          "ipa": "ˈɪmpækts",
+          "phonetic": "IM-pakts"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "events",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪˈvents",
+          "phonetic": "ih-VENTS"
+        },
+        "american": {
+          "ipa": "ɪˈvents",
+          "phonetic": "ih-VENTS"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "sports",
+      "pronunciation": {
+        "british": {
+          "ipa": "spɔːts",
+          "phonetic": "SPORTS"
+        },
+        "american": {
+          "ipa": "spɔːts",
+          "phonetic": "SPORTS"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "instincts",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪnstɪŋkts",
+          "phonetic": "IN-stinkts"
+        },
+        "american": {
+          "ipa": "ˈɪnstɪŋkts",
+          "phonetic": "IN-stinkts"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "developments",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈveləpmənts",
+          "phonetic": "di-VEL-up-munts"
+        },
+        "american": {
+          "ipa": "dɪˈveləpmənts",
+          "phonetic": "di-VEL-up-munts"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "requirements",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈkwaɪəmənts",
+          "phonetic": "ri-KWYR-munts"
+        },
+        "american": {
+          "ipa": "rɪˈkwaɪəmənts",
+          "phonetic": "ri-KWYR-munts"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "assignments",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈsaɪnmənts",
+          "phonetic": "uh-SYN-munts"
+        },
+        "american": {
+          "ipa": "əˈsaɪnmənts",
+          "phonetic": "uh-SYN-munts"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "months",
+      "pronunciation": {
+        "british": {
+          "ipa": "mʌnθs",
+          "phonetic": "MUNTHS"
+        },
+        "american": {
+          "ipa": "mʌnθs",
+          "phonetic": "MUNTHS"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "reports",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈpɔːts",
+          "phonetic": "ri-PORTS"
+        },
+        "american": {
+          "ipa": "rɪˈpɔːts",
+          "phonetic": "ri-PORTS"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "receipts",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈsiːts",
+          "phonetic": "ri-SEETS"
+        },
+        "american": {
+          "ipa": "rɪˈsiːts",
+          "phonetic": "ri-SEETS"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "insects",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪnsekts",
+          "phonetic": "IN-sekts"
+        },
+        "american": {
+          "ipa": "ˈɪnsekts",
+          "phonetic": "IN-sekts"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "plants",
+      "pronunciation": {
+        "british": {
+          "ipa": "plɑːnts",
+          "phonetic": "PLANTS"
+        },
+        "american": {
+          "ipa": "plɑːnts",
+          "phonetic": "PLANTS"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "elephants",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈelɪfənts",
+          "phonetic": "EL-i-funts"
+        },
+        "american": {
+          "ipa": "ˈelɪfənts",
+          "phonetic": "EL-i-funts"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "forests",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɒrɪsts",
+          "phonetic": "FOR-ists"
+        },
+        "american": {
+          "ipa": "ˈfɒrɪsts",
+          "phonetic": "FOR-ists"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "outbreaks",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈaʊtbreɪks",
+          "phonetic": "OWT-brayks"
+        },
+        "american": {
+          "ipa": "ˈaʊtbreɪks",
+          "phonetic": "OWT-brayks"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    }
+  ]
+}

@@ -82,8 +82,8 @@
 70. Learners | /ˈlɜːnəz/
 71. focus on local education and dedicated study | /ˈfəʊkəs ɒn ˈləʊkəl ˌedjʊˈkeɪʃən ænd ˈdedɪkeɪtɪd ˈstʌdi/
 72. academic success and scholarly expertise | /ˌækəˈdemɪk səkˈses ænd ˈskɒləli ˌekspɜːˈtiːz/
-73. brilliant scholar | /ˈbrɪliənt ˈskɒlə/
-74. home base | /həʊm beɪs/
+73. academic expert | /ˌækəˈdemɪk ˈekspɜːt/
+74. local community | /ˈləʊkəl kəˈmjuːnɪti/
 75. excellent academic outcomes | /ˈeksələnt ˌækəˈdemɪk ˈaʊtkʌmz/
 76. local education | /ˈləʊkəl ˌedjʊˈkeɪʃən/
 77. valuable cultural enrichment | /ˈvæljuəbl ˈkʌltʃərəl ɪnˈrɪtʃmənt/
@@ -283,7 +283,7 @@
 ## Example 10: Most Pressing Global Problem
 257. which problem is most pressing for people around the world | /wɪtʃ ˈprɒbləm ɪz məʊst ˈpresɪŋ fɔː ˈpiːpl əˈraʊnd ðə wɜːld/
 258. climate change represents the most urgent challenge | /ˈklaɪmət tʃeɪndʒ ˌreprɪˈzents ðə məʊst ˈɜːdʒənt ˈtʃælɪndʒ/
-259. inhabitants on our planet | /ɪnˈhæbɪtənts ɒn ˈaʊə ˈplænɪt/
+259. people worldwide | /ˈpiːpəl ˌwɜːldˈwaɪd/
 260. climate change is the most critical issue | /ˈklaɪmət tʃeɪndʒ ɪz ðə məʊst ˈkrɪtɪkəl ˈɪʃuː/
 261. rising temperatures and extreme weather events | /ˈraɪzɪŋ ˈtemprətʃəz ænd ɪkˈstriːm ˈweðər ɪˈvents/
 262. environmental damage and habitat loss | /ɪnˌvaɪrənˈmentəl ˈdæmɪdʒ ænd ˈhæbɪtæt lɒs/

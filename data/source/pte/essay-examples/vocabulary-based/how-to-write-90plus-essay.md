@@ -255,6 +255,324 @@ A: NO! State observations as facts. "Employees who X demonstrate Y" is better th
 ---
 ---
 
+## Session 2: Template Variants by Question Type
+
+### Question Type Categories
+
+| Type | Question Pattern | Examples |
+|------|-----------------|----------|
+| **A** | "What are the advantages and disadvantages..." | Ex 1, 11, 12, 14 |
+| **B** | "To what extent do you agree or disagree..." | Ex 2, 7, 15, 16, 18 |
+| **C** | "Do you think... / Is it realistic... / What is your opinion" | Ex 3, 5, 8, 13 |
+| **D** | "Who should take responsibility..." | Ex 4 |
+| **E** | "How important... / Why..." | Ex 6 |
+| **F** | "Give recommendations / solutions" | Ex 9, 10, 17 |
+
+---
+
+### Template A: Advantages & Disadvantages (~240 words)
+
+**Use for:** "What are advantages/disadvantages", "positively or negatively", "beneficial or detrimental"
+
+#### Introduction (~45 words)
+```
+The question of [topic restatement] has attracted considerable attention in modern society.
+I contend that [topic paraphrase] offers substantial benefits for [subject] despite
+certain limitations, and the following analysis outlines the primary arguments
+supporting this viewpoint.
+```
+
+#### Body Paragraph 2 - Advantages (~80 words)
+```
+To begin with, one compelling advantage of [topic] is its potential to bring about
+[outcome 1]. In particular, [topic paraphrase] can facilitate [outcome 2],
+ultimately leading to broader outcomes such as [outcome 3].
+
+[Subject group] who [specific action] demonstrate [concrete results]. For instance,
+[specific subjects] with [specific condition] report significantly [evidence result]
+compared to those [contrasting behavior].
+```
+
+#### Body Paragraph 3 - Disadvantages (~70 words)
+```
+However, it is equally important to acknowledge that [topic paraphrase] faces
+certain challenges in [context]. This is largely because [root cause] is likely
+to generate [intermediate effect], which may subsequently lead to [direct obstacle].
+
+[Specific context] that [behavior pattern] create pressure to [concrete action].
+As a result, many [subjects] experience [obstacle manifestation] that make it
+difficult to maintain [topic paraphrase].
+```
+
+#### Conclusion (~35 words)
+```
+Taken together, these considerations demonstrate the overall importance of [topic],
+since its advantages remain significant despite the issues that accompany it. Thus,
+it is essential for [stakeholders] to allocate sufficient resources to address
+these challenges effectively.
+```
+
+---
+
+### Template B: Agree/Disagree (~245 words)
+
+**Use for:** "To what extent do you agree", "Do you agree or disagree"
+
+#### Introduction (~45 words)
+```
+The question of [topic restatement] has attracted considerable attention in modern society.
+I contend that [topic paraphrase] offers substantial benefits for [subject] despite
+certain limitations, and the following analysis outlines the primary arguments
+supporting this viewpoint.
+```
+
+#### Body Paragraph 2 - Supporting Points (~75 words)
+```
+To begin with, one compelling advantage of [topic] is its potential to bring about
+[outcome 1]. In particular, [topic paraphrase] can facilitate [outcome 2],
+ultimately leading to broader outcomes such as [outcome 3].
+
+[Subject group] who [specific action] demonstrate [concrete results]. For instance,
+[specific subjects] with [specific condition] report significantly [evidence result]
+compared to those [contrasting behavior].
+```
+
+#### Body Paragraph 3 - Counterpoints (~65 words)
+```
+However, it is equally important to acknowledge that [topic paraphrase] faces
+certain challenges in [context]. This is largely because [root cause] is likely
+to generate [intermediate effect], which may subsequently lead to [direct obstacle].
+
+[Specific context] that [behavior pattern] create pressure to [concrete action].
+As a result, many [subjects] experience [obstacle manifestation].
+```
+
+#### Conclusion - With Personal View (~50 words)
+```
+Taken together, these considerations demonstrate the overall importance of [topic],
+since its advantages remain significant despite the issues that accompany it.
+In my view, [direct answer to question]. Thus, it is essential for [stakeholders]
+to allocate sufficient resources to address these challenges effectively.
+```
+
+**Note:** Body paragraphs are ~10 words shorter to accommodate "In my view..." in conclusion.
+
+---
+
+### Template C: Opinion/Do You Think (~240 words)
+
+**Use for:** "Do you think...", "Is it realistic...", "What is your opinion"
+
+#### Introduction (~45 words)
+```
+The question of [topic restatement] has attracted considerable attention in modern society.
+I contend that [topic paraphrase] is [position - realistic/beneficial/important] for
+[subject] despite certain challenges, and the following analysis outlines the primary
+arguments supporting this viewpoint.
+```
+
+#### Body Paragraph 2 - Main Argument (~80 words)
+```
+To begin with, one compelling reason why [position statement] lies in [key factor].
+In particular, [topic paraphrase] can facilitate [outcome 1], ultimately leading
+to broader outcomes such as [outcome 2].
+
+[Subject group] who [specific action] demonstrate [concrete results]. For instance,
+[specific subjects] with [specific condition] report significantly [evidence result]
+compared to those [contrasting behavior].
+```
+
+#### Body Paragraph 3 - Acknowledging Challenges (~70 words)
+```
+However, it is important to acknowledge that [topic paraphrase] presents certain
+challenges in [context]. This is largely because [root cause] can generate
+[intermediate effect], which may subsequently lead to [direct obstacle].
+
+[Specific context] that [behavior pattern] experience pressure to [concrete action].
+As a result, many [subjects] face [obstacle manifestation] that make it difficult
+to maintain [topic paraphrase].
+```
+
+#### Conclusion (~35 words)
+```
+Taken together, these considerations demonstrate that [topic paraphrase] is
+[position] in modern society, though it requires [qualification]. Thus, it is
+essential for [stakeholders] to provide sufficient support to address these
+challenges effectively.
+```
+
+**Question-Specific Adaptations:**
+
+| Question Pattern | Para 3 Adaptation |
+|------------------|-------------------|
+| "Is X **necessary**?" | Show that **alternative also achieves the goal** (proves X is helpful but not strictly necessary) |
+| "X vs Y - which is better?" | Show that **Y also has merits** (balanced view showing both approaches have value) |
+
+---
+
+### Template D: Responsibility/Who Should (~245 words)
+
+**Use for:** "Who should take responsibility", "Who is responsible"
+
+#### Introduction (~50 words)
+```
+The question of [topic restatement] has attracted considerable attention in modern society.
+I contend that [primary stakeholder] should take primary responsibility for [topic],
+with valuable supporting roles from [secondary stakeholders], and the following analysis
+outlines the primary arguments supporting this viewpoint.
+```
+
+#### Body Paragraph 2 - Primary Responsibility (~75 words)
+```
+To begin with, one compelling reason why [primary stakeholder action] is essential
+lies in [key factor requiring this stakeholder]. In particular, [primary stakeholder]
+can facilitate [outcome 1], ultimately leading to broader outcomes such as [outcome 2].
+
+[Primary stakeholder examples] that [specific action] demonstrate [concrete results].
+For instance, [specific examples] report significantly [evidence result] compared to
+those [without this action].
+```
+
+#### Body Paragraph 3 - Supporting Roles (~70 words)
+```
+However, it is important to acknowledge that while [primary stakeholder] is essential,
+[secondary stakeholders] also provide valuable contributions. This is largely because
+[secondary stakeholder actions] can generate [supporting outcomes], which may enable
+[additional benefits].
+
+[Collaborative examples] that [combined actions] achieve [better results]. As a result,
+many [successful cases] experience enhanced effectiveness through collective action.
+```
+
+#### Conclusion (~40 words)
+```
+Taken together, these considerations demonstrate that [primary stakeholder] should take
+primary responsibility for [topic], while [secondary stakeholder contributions] enhance
+overall effectiveness. Thus, it is essential for [primary stakeholder] to take the lead
+while encouraging participation from all groups.
+```
+
+**Note:** Para 3 shows "supporting roles" instead of "challenges" - different structure.
+
+---
+
+### Template E: Importance/Why (~240 words)
+
+**Use for:** "How important do you think...", "Why do people find it hard..."
+
+#### Introduction (~45 words)
+```
+The question of [topic restatement] has attracted considerable attention in modern society.
+I contend that [topic paraphrase] is extremely important for [subject] despite being
+difficult to achieve, and the following analysis outlines the primary arguments
+supporting this viewpoint.
+```
+
+#### Body Paragraph 2 - Why It's Important (~80 words)
+```
+To begin with, one compelling reason why [topic] is essential lies in its impact on
+[key area]. In particular, [topic paraphrase] can facilitate [outcome 1], ultimately
+leading to broader outcomes such as [outcome 2].
+
+[Subject group] with [positive condition] demonstrate [concrete results]. For instance,
+[specific subjects] who [positive action] report significantly [evidence result]
+compared to those [negative condition].
+```
+
+#### Body Paragraph 3 - Why It's Hard (~70 words)
+```
+However, it is important to acknowledge that [achieving topic] presents certain
+challenges in [context]. This is largely because [root cause] can generate
+[intermediate effect], which may subsequently lead to [direct obstacle].
+
+[Specific context] that [behavior pattern] experience pressure to [concrete action].
+As a result, many [subjects] face [obstacle manifestation] that make it difficult
+to achieve [topic paraphrase].
+```
+
+#### Conclusion (~35 words)
+```
+Taken together, these considerations demonstrate that [topic] is critically important
+for [subject], though [context challenges] make it increasingly challenging. Thus,
+it is essential for [stakeholders] to prioritize strategies that support [topic].
+```
+
+---
+
+### Template F: Recommendations/Solutions (~245 words)
+
+**Use for:** "Give your recommendations", "And give solutions", "What should be done"
+
+#### Introduction (~45 words)
+```
+The question of [topic restatement] has attracted considerable attention in modern society.
+I contend that [topic paraphrase] offers substantial benefits despite certain challenges,
+and the following analysis outlines the primary arguments supporting this viewpoint
+along with practical recommendations.
+```
+
+#### Body Paragraph 2 - Benefits/Problem Analysis (~70 words)
+```
+To begin with, one compelling advantage of [topic] lies in its ability to [outcome 1].
+In particular, [topic paraphrase] can facilitate [outcome 2], ultimately leading to
+broader outcomes such as [outcome 3].
+
+[Subject group] who [specific action] demonstrate [concrete results]. For instance,
+[specific subjects] with [specific condition] report significantly [evidence result]
+compared to those [contrasting behavior].
+```
+
+#### Body Paragraph 3 - Challenges (~70 words)
+```
+However, it is important to acknowledge that [topic paraphrase] presents certain
+challenges in [context]. This is largely because [root cause] can generate
+[intermediate effect], which may subsequently lead to [direct obstacle].
+
+[Specific context] that [behavior pattern] create pressure to [concrete action].
+As a result, many [subjects] experience [obstacle manifestation].
+```
+
+#### Conclusion - With Recommendations (~60 words)
+```
+Taken together, these considerations demonstrate that [topic evaluation]. Therefore,
+I recommend that [stakeholders] implement [recommendation 1] with [specific approach].
+Additionally, [secondary recommendation] to [purpose]. Thus, it is essential for
+[stakeholders] to develop [solutions] to address these challenges effectively.
+```
+
+**Note:** Body paragraphs total ~140 words to accommodate recommendations (~60 words) in conclusion.
+
+**Question-Specific Variant: "Identify Problem + Give Solutions"**
+
+For questions like "Which is most pressing? And give solutions":
+
+| Paragraph | Standard F | Variant F (Identify + Solve) |
+|-----------|-----------|-----------------------------|
+| Para 2 | Benefits/Analysis | **Why this problem is most pressing** |
+| Para 3 | Challenges | **Solutions** (dedicated paragraph) |
+| Conclusion | Recommendations | Summary wrap-up |
+
+Use this variant when the question explicitly asks you to **identify something AND provide solutions** as two separate parts.
+
+---
+
+### Word Budget Summary
+
+| Template | Intro | Para 2 | Para 3 | Conclusion | Total |
+|----------|-------|--------|--------|------------|-------|
+| A: Adv/Disadv | 45 | 80 | 70 | 35 | **~230** |
+| B: Agree/Disagree | 45 | 75 | 65 | 50 | **~235** |
+| C: Opinion | 45 | 80 | 70 | 35 | **~230** |
+| D: Responsibility | 50 | 75 | 70 | 40 | **~235** |
+| E: Importance | 45 | 80 | 70 | 35 | **~230** |
+| F: Recommendations | 45 | 70 | 70 | 60 | **~245** |
+
+All templates target **230-240 words** to leave buffer room.
+
+---
+---
+---
+
 ## Example 1: Employee Decision-Making
 
 ### Question
@@ -289,7 +607,7 @@ EVIDENCE: Corporate settings show:
 
 ---
 
-### Complete Essay (238 words)
+### Complete Essay (254 words)
 
 The question of **whether organizations should involve employees in the decision-making process** has attracted considerable attention in modern society. I contend that **this collaborative approach** **offers substantial benefits** for **companies** despite **certain limitations**, and the following analysis outlines the primary arguments supporting this viewpoint.
 
@@ -330,7 +648,7 @@ EVIDENCE: Academic settings show:
           (Validates that high-stakes exams cause anxiety/surface learning ✓)
 ```
 
-### Complete Essay
+### Complete Essay (263 words)
 
 The question of **whether formal written examinations are a valid method to assess students** has attracted considerable attention in modern society. I contend that **this assessment method** **offers substantial benefits** for **students** despite **certain limitations**, and the following analysis outlines the primary arguments supporting this viewpoint.
 
@@ -379,7 +697,7 @@ The question of **whether travel is a necessary component of a quality education
 
 To begin with, one compelling advantage of **educational travel** is its potential to bring about **cultural awareness and cross-cultural understanding**. In particular, **experiencing new cultures** can facilitate **international exposure and adaptability**, ultimately leading to broader outcomes such as **global perspective and personal growth**. **Students who study abroad** demonstrate **enhanced critical thinking**. For instance, **universities that encourage exchange programs for students** report significantly **deeper knowledge and greater adaptability** compared to those **with local-only curriculums**.
 
-However, it is equally important to acknowledge that **high-quality education** can be achieved without travel through **dedicated local education**. This is largely because **studying locally** provides **access to established institutions** and **full academic resources**, which enable **quality learning in a familiar environment**. **Learners** who **focus on local education and dedicated study** achieve **academic success and scholarly expertise**, demonstrating that one can indeed become a **brilliant scholar** without leaving one's **home base**. As a result, many **students** experience **excellent academic outcomes** through **local education**.
+However, it is equally important to acknowledge that **high-quality education** can be achieved without travel through **dedicated local education**. This is largely because **studying locally** provides **access to established institutions** and **full academic resources**, which enable **quality learning in a familiar environment**. **Learners** who **focus on local education and dedicated study** achieve **academic success and scholarly expertise**, demonstrating that one can indeed become an **academic expert** without leaving one's **local community**. As a result, many **students** experience **excellent academic outcomes** through **local education**.
 
 Taken together, these considerations demonstrate that while **educational travel** offers **valuable cultural enrichment**, it is not strictly necessary for **academic excellence**, since **local education** can also produce **scholarly success**. Thus, **students** should view travel as an **enriching option** rather than an **essential requirement**.
 
@@ -427,7 +745,7 @@ EVIDENCE (Two layers):
 
 ---
 
-### Complete Essay (235 words)
+### Complete Essay (276 words)
 
 The question of **who should take responsibility for climate change** has attracted considerable attention in modern society. Given that **climate change represents a concerning global challenge** affecting all nations, I contend that **governments should take primary responsibility** for addressing this issue, with **valuable supporting roles from companies and individuals**, and the following analysis outlines the primary arguments supporting this viewpoint.
 
@@ -696,7 +1014,7 @@ EVIDENCE: Countries implementing solutions achieve positive environmental outcom
 
 ### Complete Essay (246 words)
 
-The question of **which problem is most pressing for people around the world** has attracted considerable attention in modern society. I contend that **climate change represents the most urgent challenge** facing **inhabitants on our planet**, and the following analysis outlines the primary arguments supporting this viewpoint along with practical solutions.
+The question of **which problem is most pressing for people around the world** has attracted considerable attention in modern society. I contend that **climate change represents the most urgent challenge** facing **people worldwide**, and the following analysis outlines the primary arguments supporting this viewpoint along with practical solutions.
 
 To begin with, one compelling reason why **climate change is the most critical issue** lies in its potential to cause **rising temperatures and extreme weather events**. In particular, **climate change** can generate **environmental damage and habitat loss**, ultimately leading to broader outcomes such as **sea level rise and food shortages**. **Nations experiencing climate impacts** demonstrate **severe weather damage and economic harm**. For instance, **countries facing climate change effects** report significantly **worse environmental conditions** compared to those **with stable climate patterns**.
 

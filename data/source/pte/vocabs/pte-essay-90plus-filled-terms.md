@@ -312,7 +312,7 @@
 283. how building design affects where people work and live | /haʊ ˈbɪldɪŋ dɪˈzaɪn əˈfekts weər ˈpiːpl wɜːk ænd lɪv/
 284. architectural design offers substantial benefits | /ˌɑːkɪˈtektʃərəl dɪˈzaɪn ˈɒfəz səbˈstænʃəl ˈbenɪfɪts/
 285. people | /ˈpiːpl/
-286. poorly designed buildings | /ˈpʊəli dɪˈzaɪnd ˈbɪldɪŋz/
+286. the risks of poor planning | /ðə rɪsks ɒv pʊə ˈplænɪŋ/
 287. good building design is beneficial | /ɡʊd ˈbɪldɪŋ dɪˈzaɪn ɪz ˌbenɪˈfɪʃəl/
 288. natural light and comfortable spaces | /ˈnætʃrəl laɪt ænd ˈkʌmftəbl ˈspeɪsɪz/
 289. thoughtful architectural design | /ˈθɔːtfəl ˌɑːkɪˈtektʃərəl dɪˈzaɪn/

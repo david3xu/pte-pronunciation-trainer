@@ -312,6 +312,18 @@ it is essential for [stakeholders] to allocate sufficient resources to address
 these challenges effectively.
 ```
 
+**Question-Specific Adaptation: Balanced Questions**
+
+For questions requiring **equal weighting** (not favoring advantages):
+- "positively **or** negatively"
+- "beneficial **or** detrimental"
+- "disadvantages **as great as** advantages"
+
+| Section | Standard A | Balanced Variant |
+|---------|-----------|------------------|
+| **Intro** | "offers substantial benefits...despite limitations" | "brings both substantial advantages and serious disadvantages" |
+| **Conclusion** | "advantages remain significant despite issues" | "has both major advantages and disadvantages" |
+
 ---
 
 ### Template B: Agree/Disagree (~245 words)

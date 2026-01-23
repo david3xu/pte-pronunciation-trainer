@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-01-23T22:17:01.661Z",
+    "generated": "2026-01-23T22:50:03.555Z",
     "totalTerms": 972,
     "source": "pte-essay-90plus-filled-terms",
     "description": "Auto-discovered vocabulary book: pte-essay-90plus-filled-terms",
@@ -3565,6 +3565,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "this crisis",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "rising temperatures and extreme weather events",
       "pronunciation": {
         "british": {
@@ -3629,7 +3645,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "severe economic and social disruption",
+      "english": "severe weather damage",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -3661,7 +3677,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "greater resource strain and population displacement",
+      "english": "worse economic harm",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -3693,7 +3709,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "effective solutions can address",
+      "english": "this problem",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -3709,7 +3725,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "immediate policy changes and clean energy investment",
+      "english": "immediate action and policy changes",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -3725,7 +3741,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "reduced carbon emissions",
+      "english": "lower carbon emissions",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -3741,7 +3757,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "climate stabilization and environmental recovery",
+      "english": "stable climate",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -3757,7 +3773,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "international cooperation on climate targets",
+      "english": "clean energy and carbon reduction",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -3773,7 +3789,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "coordinated global action",
+      "english": "positive environmental outcomes",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -3789,7 +3805,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "binding agreements and shared technology",
+      "english": "renewable energy investment",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -3821,7 +3837,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "implement aggressive renewable energy policies",
+      "english": "invest in clean energy and reduce carbon emissions",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -3837,7 +3853,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "establish binding international climate commitments",
+      "english": "these urgent concerns",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -3853,7 +3869,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "Countries adopting comprehensive climate strategies",
+      "english": "Countries with climate action",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -3869,7 +3885,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "can turn the tide on emissions growth",
+      "english": "turn the tide",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -3885,55 +3901,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "measurable environmental improvements",
-      "pronunciation": {
-        "british": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        },
-        "american": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-90plus-filled-terms",
-      "source": "pte-essay-90plus-filled-terms"
-    },
-    {
-      "english": "global leaders",
-      "pronunciation": {
-        "british": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        },
-        "american": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-90plus-filled-terms",
-      "source": "pte-essay-90plus-filled-terms"
-    },
-    {
-      "english": "achieve meaningful climate stabilization",
-      "pronunciation": {
-        "british": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        },
-        "american": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-90plus-filled-terms",
-      "source": "pte-essay-90plus-filled-terms"
-    },
-    {
-      "english": "coordinated policy action and clean energy transition",
+      "english": "significant pollution reduction",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -3965,7 +3933,39 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "how architectural planning influences work and living environments",
+      "english": "achieve stable climate",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "climate change",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "how building design affects work and living environments",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -4077,7 +4077,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "better productivity and improved mood",
+      "english": "fresh air and open layouts",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -4093,7 +4093,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "fresh air circulation and open layouts",
+      "english": "better productivity and improved mood",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -4157,7 +4157,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "improved well-being and focus",
+      "english": "better mood and increased focus",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -4221,7 +4221,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "inadequate architectural choices",
+      "english": "poor building design",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -4237,7 +4237,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "insufficient ventilation and limited space",
+      "english": "poor air flow and small spaces",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -4253,7 +4253,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "health problems and lower motivation",
+      "english": "breathing problems and lower motivation",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -4269,7 +4269,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "Buildings with cramped quarters",
+      "english": "Many workplaces with cramped quarters",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -4285,7 +4285,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "workers to cope with poor conditions",
+      "english": "workers to cope with uncomfortable conditions throughout the day",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -4301,7 +4301,23 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "residents and workers",
+      "english": "people",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "stress and discomfort",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -4317,23 +4333,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "difficulty maintaining health and efficiency",
-      "pronunciation": {
-        "british": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        },
-        "american": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-90plus-filled-terms",
-      "source": "pte-essay-90plus-filled-terms"
-    },
-    {
-      "english": "function effectively in poorly designed spaces",
+      "english": "function effectively in poorly designed buildings",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",

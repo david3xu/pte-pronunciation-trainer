@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-01-23T21:37:05.579Z",
-    "totalTerms": 967,
+    "generated": "2026-01-23T21:57:49.647Z",
+    "totalTerms": 968,
     "source": "pte-essay-90plus-filled-terms",
     "description": "Auto-discovered vocabulary book: pte-essay-90plus-filled-terms",
     "version": "1.0",
@@ -2974,6 +2974,22 @@
     },
     {
       "english": "moderate daily deductions of five to ten percent",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "automatic failure",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",

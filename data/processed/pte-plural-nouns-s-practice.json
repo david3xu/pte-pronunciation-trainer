@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-01-23T08:30:26.094Z",
-    "totalTerms": 60,
+    "generated": "2026-01-23T08:32:51.552Z",
+    "totalTerms": 82,
     "source": "pte-plural-nouns-s-practice",
     "description": "Auto-discovered vocabulary book: pte-plural-nouns-s-practice",
     "version": "1.0",
@@ -969,6 +969,358 @@
         }
       },
       "difficulty": "hard",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "While",
+      "pronunciation": {
+        "british": {
+          "ipa": "waɪl",
+          "phonetic": "WYL"
+        },
+        "american": {
+          "ipa": "waɪl",
+          "phonetic": "WYL"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "Male",
+      "pronunciation": {
+        "british": {
+          "ipa": "meɪl",
+          "phonetic": "MAYL"
+        },
+        "american": {
+          "ipa": "meɪl",
+          "phonetic": "MAYL"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "Female",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfiːmeɪl",
+          "phonetic": "FEE-mayl"
+        },
+        "american": {
+          "ipa": "ˈfiːmeɪl",
+          "phonetic": "FEE-mayl"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "Sale",
+      "pronunciation": {
+        "british": {
+          "ipa": "seɪl",
+          "phonetic": "SAYL"
+        },
+        "american": {
+          "ipa": "seɪl",
+          "phonetic": "SAYL"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "Strange",
+      "pronunciation": {
+        "british": {
+          "ipa": "streɪndʒ",
+          "phonetic": "STRAYNJ"
+        },
+        "american": {
+          "ipa": "streɪndʒ",
+          "phonetic": "STRAYNJ"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "Change",
+      "pronunciation": {
+        "british": {
+          "ipa": "tʃeɪndʒ",
+          "phonetic": "CHAYNJ"
+        },
+        "american": {
+          "ipa": "tʃeɪndʒ",
+          "phonetic": "CHAYNJ"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "Finding",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfaɪndɪŋ",
+          "phonetic": "FY-ding"
+        },
+        "american": {
+          "ipa": "ˈfaɪndɪŋ",
+          "phonetic": "FY-ding"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "Skill",
+      "pronunciation": {
+        "british": {
+          "ipa": "skɪl",
+          "phonetic": "SKIL"
+        },
+        "american": {
+          "ipa": "skɪl",
+          "phonetic": "SKIL"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "Scale",
+      "pronunciation": {
+        "british": {
+          "ipa": "skeɪl",
+          "phonetic": "SKAYL"
+        },
+        "american": {
+          "ipa": "skeɪl",
+          "phonetic": "SKAYL"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "Manage",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmænɪdʒ",
+          "phonetic": "MAN-ij"
+        },
+        "american": {
+          "ipa": "ˈmænɪdʒ",
+          "phonetic": "MAN-ij"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "Where",
+      "pronunciation": {
+        "british": {
+          "ipa": "weə",
+          "phonetic": "WAIR"
+        },
+        "american": {
+          "ipa": "weə",
+          "phonetic": "WAIR"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "Prepare",
+      "pronunciation": {
+        "british": {
+          "ipa": "prɪˈpeə",
+          "phonetic": "pri-PAIR"
+        },
+        "american": {
+          "ipa": "prɪˈpeə",
+          "phonetic": "pri-PAIR"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "Noisy",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈnɔɪzi",
+          "phonetic": "NOI-zee"
+        },
+        "american": {
+          "ipa": "ˈnɔɪzi",
+          "phonetic": "NOI-zee"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "Really",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈrɪəli",
+          "phonetic": "REE-uh-lee"
+        },
+        "american": {
+          "ipa": "ˈrɪəli",
+          "phonetic": "REE-uh-lee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "Mom",
+      "pronunciation": {
+        "british": {
+          "ipa": "mɒm",
+          "phonetic": "MOM"
+        },
+        "american": {
+          "ipa": "mɒm",
+          "phonetic": "MOM"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "Absorb",
+      "pronunciation": {
+        "british": {
+          "ipa": "əbˈsɔːb",
+          "phonetic": "ub-SORB"
+        },
+        "american": {
+          "ipa": "əbˈsɔːb",
+          "phonetic": "ub-SORB"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "Job",
+      "pronunciation": {
+        "british": {
+          "ipa": "dʒɒb",
+          "phonetic": "JOB"
+        },
+        "american": {
+          "ipa": "dʒɒb",
+          "phonetic": "JOB"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "Laptop",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlæptɒp",
+          "phonetic": "LAP-top"
+        },
+        "american": {
+          "ipa": "ˈlæptɒp",
+          "phonetic": "LAP-top"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "After",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɑːftə",
+          "phonetic": "AF-tuh"
+        },
+        "american": {
+          "ipa": "ˈɑːftə",
+          "phonetic": "AF-tuh"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "Graduation",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌɡrædʒuˈeɪʃən",
+          "phonetic": "grad-yoo-AY-shun"
+        },
+        "american": {
+          "ipa": "ˌɡrædʒuˈeɪʃən",
+          "phonetic": "grad-yoo-AY-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "Education",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌedʒuˈkeɪʃən",
+          "phonetic": "ed-yoo-KAY-shun"
+        },
+        "american": {
+          "ipa": "ˌedʒuˈkeɪʃən",
+          "phonetic": "ed-yoo-KAY-shun"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "Situation",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌsɪtʃuˈeɪʃən",
+          "phonetic": "sit-yoo-AY-shun"
+        },
+        "american": {
+          "ipa": "ˌsɪtʃuˈeɪʃən",
+          "phonetic": "sit-yoo-AY-shun"
+        }
+      },
+      "difficulty": "normal",
       "category": "pte-plural-nouns-s-practice",
       "source": "pte-plural-nouns-s-practice"
     }

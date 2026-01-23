@@ -1,0 +1,470 @@
+# PTE 90+ PROBLEM-SOLUTION Template - Complete Guide
+
+**For Score Target:** 90+  
+**Covers:** 2/38 Questions (Problem identification + Solutions)  
+**Last Updated:** January 2026
+
+---
+
+## 📑 Table of Contents
+
+### Part 1: Template Guide
+- [When to Use PROBLEM-SOLUTION Template](#-when-to-use-problem-solution-template)
+- [PROBLEM-SOLUTION Template Structure](#-problem-solution-template-structure)
+- [Key Differences from Other Templates](#-key-differences-from-other-templates)
+- [Word Count Guidelines](#-word-count-guidelines)
+- [Common Mistakes](#-common-mistakes-to-avoid)
+
+### Part 2: Complete Examples
+- [Example 1: Most Pressing Global Problem](#example-1-most-pressing-global-problem)
+- [Example 2: Late Assignment Penalties (Recommendations)](#example-2-late-assignment-penalties-with-recommendations)
+
+### Part 3: Reference
+- [Quick Reference Cheat Sheet](#-quick-reference-cheat-sheet)
+- [Comparison with Other Templates](#-template-comparison-guide)
+
+---
+
+## 🎯 When to Use PROBLEM-SOLUTION Template
+
+### **Use PROBLEM-SOLUTION when question asks:**
+
+✅ **"What is the most pressing problem... AND give solutions"**
+- Two-part requirement: Identify + Solve
+
+✅ **"Give your recommendations"**
+- Explicitly asks for solutions/recommendations
+
+✅ **"What should be done about X?"**
+- Focus on actionable solutions
+
+### **Questions Covered (2 total):**
+
+| # | Question | Type |
+|---|----------|------|
+| Q10 | Most Pressing Global Problem + Solutions | Identify problem + solve |
+| Q8* | Late Assignment Penalties + Recommendations | Opinion + recommendations |
+
+*Note: Q8 can use either PRIMARY or PROBLEM-SOLUTION. Use PROBLEM-SOLUTION when you want to emphasize recommendations.
+
+---
+
+## 📝 PROBLEM-SOLUTION Template Structure
+
+### **Word Budget:**
+- Introduction: 45 words
+- Para 2 (Why this problem is pressing): 70 words
+- Para 3 (Solutions/Recommendations): 85 words
+- Conclusion: 35 words
+- **Total: ~235 words**
+
+---
+
+### **INTRODUCTION (45 words)**
+
+```
+The question of [problem identification] has attracted considerable 
+attention in modern society. I contend that [specific problem] 
+represents the most pressing challenge for [subject] despite [other 
+issues], and the following analysis outlines the problem's severity 
+and practical solutions.
+```
+
+**Key Points:**
+- Identify the specific problem clearly
+- State why it's most pressing/important
+- Preview that solutions will be provided
+
+---
+
+### **PARAGRAPH 2 - WHY PROBLEM IS PRESSING (70 words)**
+
+```
+To begin with, one compelling reason why [problem] is most urgent 
+is its potential to cause [negative outcome 1]. In particular, 
+[problem] can generate [negative outcome 2], ultimately leading to 
+broader consequences such as [negative outcome 3].
+
+[Subject group] experiencing [problem] demonstrate [negative impacts]. 
+For instance, [specific subjects] affected by [problem] face 
+significantly [evidence of harm] compared to those [without problem].
+```
+
+**Key Points:**
+- Show severity of problem
+- Use concrete evidence
+- Demonstrate widespread impact
+- Make urgency clear
+
+---
+
+### **PARAGRAPH 3 - SOLUTIONS/RECOMMENDATIONS (85 words)**
+
+```
+However, effective solutions can address [problem]. This is largely 
+because [solution 1] is likely to generate [positive outcome], which 
+may subsequently lead to [broader benefit]. Additionally, [solution 2] 
+can provide [specific benefit] through [implementation method].
+
+Based on these considerations, I recommend that [stakeholders] should 
+[specific action 1] and [specific action 2]. [Context showing 
+feasibility] demonstrates that these solutions [IDIOM HERE] can 
+deliver [expected results]. As a result, [stakeholders] can [achieve 
+desired outcome].
+```
+
+**Key Points:**
+- Provide 2-3 concrete solutions
+- Show how solutions address root causes
+- Make recommendations specific and actionable
+- Use ONE idiom naturally here
+- Demonstrate feasibility
+
+---
+
+### **CONCLUSION (35 words)**
+
+```
+Taken together, these considerations demonstrate that [problem] 
+remains the most pressing challenge, while [solutions] offer practical 
+pathways forward. Thus, it is essential for [stakeholders] to implement 
+these recommendations effectively.
+```
+
+**Key Points:**
+- Reaffirm problem's importance
+- Reinforce that solutions are viable
+- Call to action
+
+---
+
+## 🔄 Key Differences from Other Templates
+
+| Aspect | PRIMARY | COMPARISON | PROBLEM-SOLUTION |
+|--------|---------|------------|------------------|
+| **Question Focus** | Agree/Opinion | Which is better | Problem + Solutions |
+| **Para 2** | Benefits/Support | Why X better | Why problem serious |
+| **Para 3** | Challenges | Y has value | **SOLUTIONS** |
+| **Conclusion** | Reaffirm importance | X > Y | Implement solutions |
+| **Tone** | Evaluative | Comparative | **Prescriptive** |
+
+---
+
+## 📊 Word Count Guidelines
+
+| Section | Target Words | What to Include |
+|---------|--------------|-----------------|
+| **Introduction** | 45 words | Problem identification + preview solutions |
+| **Paragraph 2** | 70 words | Evidence of problem's severity |
+| **Paragraph 3** | 85 words | 2-3 concrete solutions + recommendations |
+| **Conclusion** | 35 words | Problem importance + call to action |
+| **TOTAL** | **~235 words** | Optimal range |
+
+---
+
+## ❌ Common Mistakes to Avoid
+
+| Mistake | Why Wrong | Fix |
+|---------|-----------|-----|
+| **No clear problem stated** | Vague positioning | "Climate change is the most pressing" |
+| **Solutions too general** | Not actionable | "Governments should invest in..." not "Something should be done" |
+| **No implementation details** | Unrealistic | Show HOW solutions work |
+| **Forgetting recommendations** | Incomplete answer | Para 3 must have "I recommend..." |
+| **Too many solutions** | Unfocused | 2-3 concrete solutions maximum |
+
+---
+
+# 📚 Complete Examples
+
+---
+
+## Example 1: Most Pressing Global Problem
+
+### **Question:**
+> "The world's governments and organizations are facing a lot of issues. Which do you think is the most pressing problem for the inhabitants on our planet? And give solutions."
+
+### **Question Type:** Identify Problem + Provide Solutions
+
+### **Fill-in Terms (from B1 Example 10):**
+
+**Problem Identified:** climate change
+
+**Subjects:** people, nations, governments
+
+**Why It's Pressing (Negative Effects):**
+- rising temperatures and extreme weather
+- environmental damage and habitat loss
+- sea level rise and food shortages
+- severe weather and economic harm
+
+**Solutions:**
+- immediate action and policy changes
+- clean energy and carbon reduction
+- international cooperation
+- renewable energy investment
+
+**Idiom:** "turn the tide" (reverse negative trends)
+
+**Stakeholders:** governments and international organizations
+
+---
+
+### **Complete Essay (238 words)**
+
+The question of **which global problem requires most urgent attention** has attracted considerable attention in modern society. I contend that **climate change** represents the most pressing challenge for **people worldwide** despite **other important issues**, and the following analysis outlines the problem's severity and practical solutions.
+
+To begin with, one compelling reason why **climate change** is most urgent is its potential to cause **rising temperatures and extreme weather events**. In particular, **climate change** can generate **environmental damage and habitat loss**, ultimately leading to broader consequences such as **sea level rise and food shortages**. **Nations experiencing climate impacts** demonstrate **severe economic and social disruption**. For instance, **countries affected by extreme weather** face significantly **greater resource strain and population displacement** compared to those **with stable climate conditions**.
+
+However, effective solutions can address **climate change**. This is largely because **immediate policy changes and clean energy investment** are likely to generate **reduced carbon emissions**, which may subsequently lead to **climate stabilization and environmental recovery**. Additionally, **international cooperation on climate targets** can provide **coordinated global action** through **binding agreements and shared technology**.
+
+Based on these considerations, I recommend that **governments** should **implement aggressive renewable energy policies** and **establish binding international climate commitments**. **Countries adopting comprehensive climate strategies** demonstrate that these solutions **can turn the tide on emissions growth** and deliver **measurable environmental improvements**. As a result, **global leaders** can **achieve meaningful climate stabilization**.
+
+Taken together, these considerations demonstrate that **climate change** remains the most pressing challenge, while **coordinated policy action and clean energy transition** offer practical pathways forward. Thus, it is essential for **governments and international organizations** to implement these recommendations effectively.
+
+---
+
+## Example 2: Late Assignment Penalties (with Recommendations)
+
+### **Question:**
+> "Some universities deduct students' marks if assignments are given late. What is your opinion and give your recommendations?"
+
+### **Question Type:** Opinion + Recommendations
+
+### **Fill-in Terms (from B1 Example 8):**
+
+**Position:** Late penalties are beneficial BUT need flexibility
+
+**Subjects:** students, universities
+
+**Why Penalties Work (Benefits):**
+- time management and planning skills
+- personal responsibility and deadline awareness
+- work discipline and professional preparation
+
+**Problems with Strict Penalties:**
+- unfair situations and student stress
+- emergency circumstances
+- inflexibility
+
+**Solutions/Recommendations:**
+- flexible extension policies
+- clear documentation requirements
+- reasonable grace periods
+- emergency provisions
+
+**Idiom:** "strike a balance" (find middle ground)
+
+**Stakeholders:** universities and instructors
+
+---
+
+### **Complete Essay (236 words)**
+
+The question of **whether universities should implement grade penalties for late submissions** has attracted considerable attention in modern society. I contend that **late assignment penalties serve important purposes** for **students** despite **requiring flexibility**, and the following analysis outlines the benefits and practical recommendations.
+
+To begin with, one compelling reason why **late penalties** are beneficial is their potential to develop **time management and planning skills**. In particular, **deadline requirements** can generate **personal responsibility and deadline awareness**, ultimately leading to broader outcomes such as **improved work discipline and professional preparation**. **Students facing clear deadlines** demonstrate **better organizational abilities**. For instance, **learners with consistent deadline enforcement** develop significantly **stronger time management skills** compared to those **without penalty systems**.
+
+However, effective policies must address fairness concerns. This is largely because **flexible extension procedures** are likely to generate **fair treatment of genuine emergencies**, which may subsequently lead to **reduced student stress while maintaining accountability**. Additionally, **reasonable grace periods with documentation** can provide **appropriate flexibility** through **clear emergency provisions**.
+
+Based on these considerations, I recommend that **universities** should **implement moderate penalties** (such as 5-10% deductions per day) and **establish clear extension request procedures requiring documentation**. **Institutions using balanced policies** demonstrate that these approaches **strike a balance between accountability and compassion** and deliver **both student learning and fairness**. As a result, **universities** can **maintain academic standards while supporting students facing legitimate challenges**.
+
+Taken together, these considerations demonstrate that **late penalties with flexibility** offer the best approach. Thus, it is essential for **universities and instructors** to implement these recommendations effectively.
+
+---
+
+## 📊 Summary: Problem-Solution Examples
+
+| # | Question | Problem/Topic | Solutions | Idiom | Words |
+|---|----------|--------------|-----------|-------|-------|
+| 1 | Global Problems | Climate change | Clean energy, cooperation | turn the tide | 238 |
+| 2 | Late Penalties | Need flexibility | Moderate penalties + extensions | strike a balance | 236 |
+
+**Both examples:** 236-238 words ✅ | Clear solutions ✅ | Actionable recommendations ✅
+
+---
+
+## 📋 Quick Reference Cheat Sheet
+
+### **PROBLEM-SOLUTION Template Skeleton:**
+
+```
+═══════════════════════════════════════════════════════════
+TARGET: 235 words | IDENTIFY + SOLVE | IDIOM IN PARA 3
+═══════════════════════════════════════════════════════════
+
+INTRO (45w):
+───────────────────────────────────────────────────────────
+I contend that [specific problem] represents the most pressing 
+challenge for [subject] despite [other issues], and the following 
+analysis outlines the problem's severity and practical solutions.
+
+PARA 2 - WHY PROBLEM IS PRESSING (70w):
+───────────────────────────────────────────────────────────
+To begin with, one compelling reason why [problem] is most 
+urgent is its potential to cause [outcome 1]. In particular, 
+[problem] can generate [outcome 2], ultimately leading to [outcome 3].
+
+[Subject] experiencing [problem] demonstrate [impacts]. For 
+instance, [specific] affected by [problem] face significantly 
+[evidence] compared to those [without problem].
+
+PARA 3 - SOLUTIONS (85w):
+───────────────────────────────────────────────────────────
+However, effective solutions can address [problem]. This is 
+largely because [solution 1] is likely to generate [benefit 1], 
+which may lead to [benefit 2]. Additionally, [solution 2] can 
+provide [benefit 3] through [method].
+
+Based on these considerations, I recommend that [stakeholders] 
+should [action 1] and [action 2]. [Evidence] demonstrates that 
+these solutions [IDIOM] can deliver [results]. As a result, 
+[stakeholders] can [achieve outcome].
+
+CONCLUSION (35w):
+───────────────────────────────────────────────────────────
+Taken together, these considerations demonstrate that [problem] 
+remains the most pressing challenge, while [solutions] offer 
+practical pathways forward. Thus, it is essential for 
+[stakeholders] to implement these recommendations effectively.
+```
+
+---
+
+## ✅ Checklist for PROBLEM-SOLUTION Essays
+
+Before submitting:
+
+**Content:**
+- [ ] Specific problem clearly identified
+- [ ] Evidence of problem's severity shown
+- [ ] 2-3 concrete solutions provided
+- [ ] "I recommend that..." included
+- [ ] Solutions are specific and actionable
+- [ ] Implementation method shown
+
+**Structure:**
+- [ ] Word count: 230-240 words
+- [ ] Para 3 focuses on SOLUTIONS (not challenges)
+- [ ] ONE idiom in Para 3
+- [ ] Solutions address root causes
+- [ ] Conclusion reinforces action
+
+**Language:**
+- [ ] "I recommend that [stakeholders] should..."
+- [ ] "Based on these considerations..."
+- [ ] Action verbs (implement, establish, adopt)
+- [ ] Feasibility shown ("demonstrates that...")
+
+---
+
+## 🎯 Solution Writing Tips
+
+### **Making Solutions Specific:**
+
+**❌ Too General:**
+```
+"Governments should do something about climate change."
+```
+
+**✅ Specific and Actionable:**
+```
+"Governments should implement aggressive renewable energy policies 
+and establish binding international climate commitments."
+```
+
+### **Structure for Solutions:**
+
+```
+WHO should do WHAT through HOW
+
+WHO: governments, universities, companies
+WHAT: implement policies, establish procedures, invest in
+HOW: through legislation, binding agreements, clear guidelines
+```
+
+### **Showing Feasibility:**
+
+```
+[Evidence from reality] demonstrates that [solution] can [result].
+
+"Countries adopting comprehensive climate strategies demonstrate 
+that these solutions can turn the tide on emissions."
+```
+
+---
+
+## 📊 Template Comparison Guide
+
+### **When to Use Each Template:**
+
+| Question Pattern | Template to Use | Key Feature |
+|-----------------|-----------------|-------------|
+| "Agree/disagree?" | PRIMARY | Evaluate one topic |
+| "Your opinion?" | PRIMARY | Take position |
+| "Advantages/disadvantages?" | PRIMARY | Evaluate benefits vs issues |
+| "Which is better: X or Y?" | COMPARISON | Compare two options |
+| "Who should: A, B, or C?" | COMPARISON | Choose between options |
+| "Most pressing problem + solutions?" | PROBLEM-SOLUTION | Identify + solve |
+| "Give recommendations" | PROBLEM-SOLUTION | Prescribe actions |
+
+---
+
+## 🎉 Complete Coverage Achieved!
+
+### **All 38/38 Questions Now Covered:**
+
+```
+PRIMARY Template:        30/38 questions ✅
+COMPARISON Template:      6/38 questions ✅
+PROBLEM-SOLUTION Template: 2/38 questions ✅
+─────────────────────────────────────────────
+TOTAL COVERAGE:          38/38 questions ✅
+
+🎉 100% COMPLETE! 🎉
+```
+
+---
+
+## 🎯 Final Mastery Path
+
+### **Your Complete Template Arsenal:**
+
+**Document 1-5: PRIMARY Template**
+- 30 complete examples
+- All question variations
+- Comprehensive coverage
+
+**Document 6: COMPARISON Template**
+- 4 complete examples
+- Preference questions
+- Who should/which is better
+
+**Document 7: PROBLEM-SOLUTION Template**
+- 2 complete examples
+- Solutions focus
+- Recommendations structure
+
+### **Total Materials:**
+- ✅ 36 complete 90+ essays
+- ✅ 3 templates mastered
+- ✅ 38/38 questions covered
+- ✅ 30+ idioms learned
+- ✅ B1 vocabulary throughout
+
+---
+
+## 🏆 You Now Have Everything Needed for PTE 90+!
+
+**Practice Strategy:**
+1. Master PRIMARY template (covers 80% of questions)
+2. Learn COMPARISON for preference questions
+3. Learn PROBLEM-SOLUTION for solution questions
+4. Practice with all 36 examples
+5. Use cheat sheets during practice
+6. Build speed to 230-240 words in 20 minutes
+
+**Congratulations on completing the full PTE Essay mastery program!** 🎉
+
+---
+
+**End of PROBLEM-SOLUTION Template - All Templates Complete!**

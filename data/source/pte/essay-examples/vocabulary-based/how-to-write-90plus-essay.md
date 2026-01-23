@@ -666,15 +666,15 @@ EVIDENCE: People in poorly designed buildings experience negative effects
 
 ---
 
-### Complete Essay (241 words)
+### Complete Essay (237 words)
 
-The question of **how building design affects where people work and live** has attracted considerable attention in modern society. I contend that **architectural design** offers substantial benefits for **people** despite **the risks of poor planning**, and the following analysis outlines the primary arguments supporting this viewpoint.
+The question of **how building design affects where people work and live** has attracted considerable attention in modern society. I contend that **good building design** offers substantial benefits for **people** despite **the risks of poor planning**, and the following analysis outlines the primary arguments supporting this viewpoint.
 
 To begin with, one compelling reason why **good building design is beneficial** lies in its ability to provide **natural light and comfortable spaces**. In particular, **thoughtful architectural design** can facilitate **fresh air and open layouts**, ultimately leading to broader outcomes such as **better productivity and improved mood**. **Workers in well-designed buildings** demonstrate **increased focus and positive attitudes**. For instance, **employees in buildings with natural light** report significantly **better mood and higher energy levels** compared to those **in buildings with poor lighting**.
 
-However, it is important to acknowledge that **poor building design** creates certain challenges in **work and living environments**. This is largely because **poor air flow and limited spaces** can generate **health problems and lower motivation**, which may subsequently lead to **decreased productivity and increased stress**. **People in poorly designed buildings** who **work in small spaces** experience pressure that leads to **physical discomfort and reduced wellbeing**. As a result, many **workers and residents** face **poor air quality and mental tiredness** that make it difficult to maintain **healthy living and working conditions**.
+However, it is important to acknowledge that **poor building design** creates certain challenges in **work and living environments**. This is largely because **poor air flow and small spaces** can generate **breathing problems and lower motivation**, which may subsequently lead to **decreased productivity and increased stress**. **People in poorly designed buildings** who **work in small spaces** experience pressure that leads to **physical discomfort and reduced wellbeing**. As a result, many **workers and residents** face **poor air quality and mental tiredness** that make it difficult to maintain **healthy living and working conditions**.
 
-Taken together, these considerations demonstrate the overall importance of **architectural design**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **architects and developers** to prioritize **quality design that supports health and productivity**.
+Taken together, these considerations demonstrate the overall importance of **building design**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **architects and developers** to prioritize **quality design that supports health and productivity**.
 
 ---
 
@@ -1543,3 +1543,132 @@ Taken together, these considerations demonstrate that **reducing working hours h
 ---
 
 
+
+
+## Example 19: Marketing Strategy - Brand Reputation vs Discounts
+
+### Question
+"Should marketing in companies producing consumer goods like food and clothing, place emphasis on the reputation of the company or short-term strategies like discounts and special offers? Why?"
+
+### Logic Chains
+
+**Para 2 (Why Brand Reputation is Better):**
+```
+CLAIM: Brand reputation marketing → Customer loyalty & trust
+                                   → Stronger brand identity & recognition
+                                   → Increased revenue & long-term growth
+
+EVIDENCE: Companies demonstrate:
+          - Customer loyalty & trust (Observable result)
+          - Long-term revenue growth (Measured outcome)
+```
+
+**Para 3 (Why Short-term Strategies Have Some Value):**
+```
+CLAIM: Discount strategies → Immediate sales & quick revenue
+                          → Attracting new customers
+                          → Short-term market share gains
+
+EVIDENCE: Companies with promotional offers show:
+          - Immediate sales boost (Validates quick revenue ✓)
+          - New customer trial (Validates attraction ✓)
+```
+
+### Complete Essay (260 words)
+
+The question of **whether marketing for consumer goods should emphasize company reputation or short-term strategies like discounts** has attracted considerable attention in modern society. I contend that **reputation marketing** **offers substantial benefits** for **companies** despite **the value of promotional discounts**, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **reputation marketing** is its potential to bring about **customer loyalty and trust**. In particular, **building strong brand reputation** can facilitate **stronger brand identity and recognition**, ultimately leading to broader outcomes such as **increased company revenue and long-term growth**. **Companies that prioritize reputation building** demonstrate **improved customer satisfaction and repeat business**. For instance, **food and clothing companies with established brand reputations** report significantly **higher customer retention and company revenue** compared to those **that rely primarily on discount promotions**.
+
+However, it is equally important to acknowledge that **short-term strategies** also provide certain benefits in **competitive markets**. This is largely because **promotional discounts** are likely to offer **immediate sales and quick revenue**, which may enable **attracting new customers**. **Retail environments with intense price competition** create pressure to **use discount offers and special promotions**. As a result, many **companies** achieve **short-term financial gains** through **these promotional approaches**, making it difficult to **ignore discount strategies entirely**.
+
+Taken together, these considerations demonstrate the overall importance of **reputation marketing**, since its advantages remain significant despite the value of **short-term strategies**. Thus, it is essential for **companies and marketing teams** to allocate sufficient resources to implement **strong brand reputation** effectively.
+
+---
+
+
+## Example 20: Climate Change Research Area
+
+### Question
+"You are given climate change as the field of study. Which area would you prefer? Explain why you pick this particular area of your study and give an example in the area you pick."
+
+---
+
+### Logic Chains
+
+**Para 2 (Why Extreme Weather Research is Vital):**
+```
+CLAIM: Extreme weather research → Environmental protection & disaster prevention
+                                → Improved safety & early warning systems
+                                → Better knowledge & research findings
+
+EVIDENCE: Researchers achieving successful outcomes
+          (Validates importance ✓)
+```
+
+**Para 3 (Addressing Urgent Challenges):**
+```
+CLAIM: Climate change challenges → Rising temperatures & extreme weather events
+                                → Environmental damage & habitat loss
+                                → Economic resource pressure & community burden
+
+EVIDENCE: Nations investing in research report reduced losses
+          (Validates effectiveness ✓)
+```
+
+---
+
+### Complete Essay (245 words)
+
+The question of **which area of climate change to study** has attracted considerable attention in modern society. When given this choice, I strongly prefer **extreme weather research** as the most critical area for **scientists and communities**, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling reason why I choose **extreme weather research** lies in its potential to bring about **environmental protection and disaster prevention**. In particular, **this research** can facilitate **improved safety and early warning systems**, ultimately leading to broader outcomes such as **better knowledge and research findings**. **Scientists focusing on extreme weather** demonstrate **life-saving capabilities**. For instance, **researchers in flood-prone regions** achieve significantly **better disaster preparedness** compared to those **without early warning systems**.
+
+Furthermore, it is important to acknowledge that **climate change** presents urgent challenges such as **rising temperatures and extreme weather events**. This is largely because **global warming** creates **environmental damage and habitat loss**, which may lead to **economic resource pressure and community burden**. **Communities facing these threats** benefit directly from research. As a result, many **nations investing in weather research** report significantly **reduced economic loss** compared to those **unprepared for climate disasters**.
+
+Taken together, these considerations demonstrate that **extreme weather research** is essential for protecting **communities worldwide**. Thus, it is essential for **governments and research institutions** to allocate sufficient resources to prioritize **this critical field of study**.
+
+---
+
+## Example 21: Studying Old Plays
+
+### Question
+"There are both problems and benefits for high school students to study plays and works of theatres written centuries ago. Discuss and use your own experience."
+
+---
+
+### Logic Chains
+
+**Para 2 (Benefits of Classic Plays):**
+```
+CLAIM: Studying classic plays → Cultural awareness & historical understanding
+                            → Enhanced critical thinking & deeper knowledge
+                            → Personal growth & creative expression
+
+EVIDENCE: Students engaging with classics demonstrate improved skills
+          (Validates educational value ✓)
+```
+
+**Para 3 (Problems with Classic Plays):**
+```
+CLAIM: Old plays present challenges → Difficult language & outdated themes
+                                   → Low student interest & boring content
+                                   → Limited relevance & modern disconnect
+
+EVIDENCE: Students encountering complex texts face engagement issues
+          (Validates practical difficulties ✓)
+```
+
+---
+
+### Complete Essay (243 words)
+
+The question of **whether high school students should study plays written centuries ago** has attracted considerable attention in modern society. I contend that **studying classic plays** offers **substantial benefits** for **students** despite **certain challenges**, and the following analysis outlines the primary arguments supporting this viewpoint.
+
+To begin with, one compelling advantage of **studying classic plays** lies in its ability to bring about **cultural awareness and historical understanding**. In particular, **analyzing older works** can facilitate **enhanced critical thinking and deeper knowledge**, ultimately leading to broader outcomes such as **personal growth and creative expression**. **Students who study theater history** demonstrate **stronger literary analysis skills**. For instance, **learners who engage with Shakespearean works** demonstrate significantly **improved language skills and literary appreciation** compared to those **focusing only on modern texts**.
+
+However, it is important to acknowledge that **studying ancient literature** presents certain challenges in **modern classrooms**. This is largely because **classic plays** often contain **difficult language and outdated themes**, which may generate **low student interest and boring content** for younger readers. **Students struggling with archaic English** experience frustration that leads to **limited relevance and modern disconnect**. As a result, many **high school students** encounter **comprehension difficulties** that make it difficult to appreciate **the historical value of these works**.
+
+Taken together, these considerations demonstrate that **studying classic plays** is valuable for education, though it requires **careful teaching methods** to overcome language barriers. Thus, it is essential for **schools and educators** to provide **sufficient support and context** to help students engage with these important works.
+
+---

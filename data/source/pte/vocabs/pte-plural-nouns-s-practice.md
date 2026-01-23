@@ -77,6 +77,54 @@
 
 ---
 
+## Additional 'S' Sound Pronunciation Notes
+
+### Words with 'S' Sounds
+
+51. **Sydney** | /ˈsɪdni/ — sounds like **SID-nee**
+52. **city** | /ˈsɪti/ — sounds like **SIT-ee**
+53. **farmers** | /ˈfɑːməz/ — sounds like **FAR-muhz**
+54. **almost** | /ˈɔːlməʊst/ — sounds like **AWL-mohst**
+55. **five** | /faɪv/ — sounds like **FYV**
+56. **fifty** | /ˈfɪfti/ — sounds like **FIF-tee**
+57. **hundred** | /ˈhʌndrəd/ — sounds like **HUN-drud**
+58. **six** | /sɪks/ — sounds like **SIKS**
+59. **allocated** | /ˈæləkeɪtɪd/ — sounds like **AL-uh-kay-tid**
+60. **object** | /ˈɒbdʒɪkt/ — sounds like **OB-jikt**
+
+### Special Pronunciation Notes
+
+- **While** | /waɪl/ — sounds like **WYL**
+- **Male** | /meɪl/ — sounds like **MAYL**
+- **Female** | /ˈfiːmeɪl/ — sounds like **FEE-mayl**
+- **Sale** | /seɪl/ — sounds like **SAYL** (say + yo)
+- **Strange** | /streɪndʒ/ — sounds like **STRAYNJ** (s + strain + ge)
+- **Change** | /tʃeɪndʒ/ — sounds like **CHAYNJ** (chA + in + ge)
+- **Finding** | /ˈfaɪndɪŋ/ — sounds like **FY-ding** (fai + in + ding)
+- **Skill** | /skɪl/ — sounds like **SKIL** (s + gi + yo)
+- **Scale** | /skeɪl/ — sounds like **SKAYL** (s + gei + yo)
+- **Manage** | /ˈmænɪdʒ/ — sounds like **MAN-ij** (note: /æ/ sound)
+- **Where** | /weə/ — sounds like **WAIR** (w sound + mouth spread)
+- **Prepare** | /prɪˈpeə/ — sounds like **pri-PAIR** (short pri + long peə)
+- **Noisy** | /ˈnɔɪzi/ — sounds like **NOI-zee** (long noi + short zi)
+- **Really** | /ˈrɪəli/ — sounds like **REE-uh-lee** (ri + uh + li)
+
+### Words Ending with Consonants (m, b, p) - Close Lips
+
+- **Mom** | /mɒm/ — sounds like **MOM** (close lips at end)
+- **Absorb** | /əbˈsɔːb/ — sounds like **ub-SORB** (close lips at end)
+- **Job** | /dʒɒb/ — sounds like **JOB** (close lips at end)
+- **Laptop** | /ˈlæptɒp/ — sounds like **LAP-top** (close lips at end)
+- **After** | /ˈɑːftə/ — sounds like **AF-tuh**
+
+### Words with -tion/-ation (du, tu) - Don't Swallow the Sound
+
+- **Graduation** | /ˌɡrædʒuˈeɪʃən/ — sounds like **grad-yoo-AY-shun** (clear 'du' sound)
+- **Education** | /ˌedʒuˈkeɪʃən/ — sounds like **ed-yoo-KAY-shun** (clear 'du' sound)
+- **Situation** | /ˌsɪtʃuˈeɪʃən/ — sounds like **sit-yoo-AY-shun** (clear 'tu' sound)
+
+---
+
 ## Practice Tips
 
 | Ending | Sound | Examples |

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-01-23T07:32:06.345Z",
-    "totalTerms": 50,
+    "generated": "2026-01-23T08:28:17.732Z",
+    "totalTerms": 60,
     "source": "pte-plural-nouns-s-practice",
     "description": "Auto-discovered vocabulary book: pte-plural-nouns-s-practice",
     "version": "1.0",
@@ -809,6 +809,166 @@
         }
       },
       "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "**Sydney**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɪdni",
+          "phonetic": "SID-nee"
+        },
+        "american": {
+          "ipa": "ˈsɪdni",
+          "phonetic": "SID-nee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "**city**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɪti",
+          "phonetic": "SIT-ee"
+        },
+        "american": {
+          "ipa": "ˈsɪti",
+          "phonetic": "SIT-ee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "**farmers**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɑːməz",
+          "phonetic": "FAR-muhz"
+        },
+        "american": {
+          "ipa": "ˈfɑːməz",
+          "phonetic": "FAR-muhz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "**almost**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɔːlməʊst",
+          "phonetic": "AWL-mohst"
+        },
+        "american": {
+          "ipa": "ˈɔːlməʊst",
+          "phonetic": "AWL-mohst"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "**five**",
+      "pronunciation": {
+        "british": {
+          "ipa": "faɪv",
+          "phonetic": "FYV"
+        },
+        "american": {
+          "ipa": "faɪv",
+          "phonetic": "FYV"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "**fifty**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɪfti",
+          "phonetic": "FIF-tee"
+        },
+        "american": {
+          "ipa": "ˈfɪfti",
+          "phonetic": "FIF-tee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "**hundred**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhʌndrəd",
+          "phonetic": "HUN-drud"
+        },
+        "american": {
+          "ipa": "ˈhʌndrəd",
+          "phonetic": "HUN-drud"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "**six**",
+      "pronunciation": {
+        "british": {
+          "ipa": "sɪks",
+          "phonetic": "SIKS"
+        },
+        "american": {
+          "ipa": "sɪks",
+          "phonetic": "SIKS"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "**allocated**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈæləkeɪtɪd",
+          "phonetic": "AL-uh-kay-tid"
+        },
+        "american": {
+          "ipa": "ˈæləkeɪtɪd",
+          "phonetic": "AL-uh-kay-tid"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-plural-nouns-s-practice",
+      "source": "pte-plural-nouns-s-practice"
+    },
+    {
+      "english": "**object**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɒbdʒɪkt",
+          "phonetic": "OB-jikt"
+        },
+        "american": {
+          "ipa": "ˈɒbdʒɪkt",
+          "phonetic": "OB-jikt"
+        }
+      },
+      "difficulty": "hard",
       "category": "pte-plural-nouns-s-practice",
       "source": "pte-plural-nouns-s-practice"
     }

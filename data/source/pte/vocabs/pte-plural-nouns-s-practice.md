@@ -2,7 +2,7 @@
 
 ### Vocabulary for 's' Sound Practice
 
-**Mastered**: 0/60
+**Mastered**: 0/82
 
 **Key Rule**: Final -s after voiceless consonants (/p/, /t/, /k/, /f/, /θ/) = breath, no voice. Vocal cords should NOT vibrate.
 
@@ -94,34 +94,34 @@
 
 ### Special Pronunciation Notes
 
-- **While** | /waɪl/ — sounds like **WYL**
-- **Male** | /meɪl/ — sounds like **MAYL**
-- **Female** | /ˈfiːmeɪl/ — sounds like **FEE-mayl**
-- **Sale** | /seɪl/ — sounds like **SAYL** (say + yo)
-- **Strange** | /streɪndʒ/ — sounds like **STRAYNJ** (s + strain + ge)
-- **Change** | /tʃeɪndʒ/ — sounds like **CHAYNJ** (chA + in + ge)
-- **Finding** | /ˈfaɪndɪŋ/ — sounds like **FY-ding** (fai + in + ding)
-- **Skill** | /skɪl/ — sounds like **SKIL** (s + gi + yo)
-- **Scale** | /skeɪl/ — sounds like **SKAYL** (s + gei + yo)
-- **Manage** | /ˈmænɪdʒ/ — sounds like **MAN-ij** (note: /æ/ sound)
-- **Where** | /weə/ — sounds like **WAIR** (w sound + mouth spread)
-- **Prepare** | /prɪˈpeə/ — sounds like **pri-PAIR** (short pri + long peə)
-- **Noisy** | /ˈnɔɪzi/ — sounds like **NOI-zee** (long noi + short zi)
-- **Really** | /ˈrɪəli/ — sounds like **REE-uh-lee** (ri + uh + li)
+61. While | /waɪl/ — sounds like **WYL**
+62. Male | /meɪl/ — sounds like **MAYL**
+63. Female | /ˈfiːmeɪl/ — sounds like **FEE-mayl**
+64. Sale | /seɪl/ — sounds like **SAYL** (say + yo)
+65. Strange | /streɪndʒ/ — sounds like **STRAYNJ** (s + strain + ge)
+66. Change | /tʃeɪndʒ/ — sounds like **CHAYNJ** (chA + in + ge)
+67. Finding | /ˈfaɪndɪŋ/ — sounds like **FY-ding** (fai + in + ding)
+68. Skill | /skɪl/ — sounds like **SKIL** (s + gi + yo)
+69. Scale | /skeɪl/ — sounds like **SKAYL** (s + gei + yo)
+70. Manage | /ˈmænɪdʒ/ — sounds like **MAN-ij** (note: /æ/ sound)
+71. Where | /weə/ — sounds like **WAIR** (w sound + mouth spread)
+72. Prepare | /prɪˈpeə/ — sounds like **pri-PAIR** (short pri + long peə)
+73. Noisy | /ˈnɔɪzi/ — sounds like **NOI-zee** (long noi + short zi)
+74. Really | /ˈrɪəli/ — sounds like **REE-uh-lee** (ri + uh + li)
 
 ### Words Ending with Consonants (m, b, p) - Close Lips
 
-- **Mom** | /mɒm/ — sounds like **MOM** (close lips at end)
-- **Absorb** | /əbˈsɔːb/ — sounds like **ub-SORB** (close lips at end)
-- **Job** | /dʒɒb/ — sounds like **JOB** (close lips at end)
-- **Laptop** | /ˈlæptɒp/ — sounds like **LAP-top** (close lips at end)
-- **After** | /ˈɑːftə/ — sounds like **AF-tuh**
+75. Mom | /mɒm/ — sounds like **MOM** (close lips at end)
+76. Absorb | /əbˈsɔːb/ — sounds like **ub-SORB** (close lips at end)
+77. Job | /dʒɒb/ — sounds like **JOB** (close lips at end)
+78. Laptop | /ˈlæptɒp/ — sounds like **LAP-top** (close lips at end)
+79. After | /ˈɑːftə/ — sounds like **AF-tuh**
 
 ### Words with -tion/-ation (du, tu) - Don't Swallow the Sound
 
-- **Graduation** | /ˌɡrædʒuˈeɪʃən/ — sounds like **grad-yoo-AY-shun** (clear 'du' sound)
-- **Education** | /ˌedʒuˈkeɪʃən/ — sounds like **ed-yoo-KAY-shun** (clear 'du' sound)
-- **Situation** | /ˌsɪtʃuˈeɪʃən/ — sounds like **sit-yoo-AY-shun** (clear 'tu' sound)
+80. Graduation | /ˌɡrædʒuˈeɪʃən/ — sounds like **grad-yoo-AY-shun** (clear 'du' sound)
+81. Education | /ˌedʒuˈkeɪʃən/ — sounds like **ed-yoo-KAY-shun** (clear 'du' sound)
+82. Situation | /ˌsɪtʃuˈeɪʃən/ — sounds like **sit-yoo-AY-shun** (clear 'tu' sound)
 
 ---
 

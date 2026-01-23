@@ -1,8 +1,8 @@
 # PTE Plural Nouns - Final /s/ Practice
 
-### 50 Common Noun Plurals for voiceless /s/ ending practice
+### Vocabulary for 's' Sound Practice
 
-**Mastered**: 0/50
+**Mastered**: 0/60
 
 **Key Rule**: Final -s after voiceless consonants (/p/, /t/, /k/, /f/, /θ/) = breath, no voice. Vocal cords should NOT vibrate.
 

@@ -26,7 +26,7 @@
 6. ✅ **Experiential Learning** - "Some people point out that experiential learning (i.e. learning by doing) can work well in formal education. However, others think a traditional form of teaching is the best. Do you think experiential learning is beneficial in high school or college?"
 7. ✅ **Late Assignment Penalties** - "Some universities deduct students' marks if assignments are given late. What is your opinion and give your recommendations?"
 8. ✅ **Combining Study and Work** - "In order to study effectively, it requires comfort, peace and time. So it is impossible for a student to combine learning and employment at the same time, because one distracts the other. Is it realistic to combine them at the same time in our life today?"
-9. ✅ **Government's Serious Problems** - "What is the most serious problem that governments in developing countries face today?"
+9. ✅ **Most Pressing Global Problem** - "The world's governments and organizations are facing a lot of issues. Which do you think is the most pressing problem for the inhabitants on our planet? And give solutions."
 10. ✅ **Building Design Impact** - "How does the design of buildings affect, either positively or negatively, where people work and live?"
 11. ✅ **Work-Life Balance** - "Nowadays, it is increasingly more difficult to maintain the right balance between work and other aspects of one's life, such as time with family and leisure needs. How important do you think this balance is? Why do people find it hard to achieve?"
 12. ✅ **New Invention Impact** - "In our technological world, the number of new inventions has been evolving on a daily basis. Please describe a new invention and explain the impact, either beneficial or detrimental, that you feel it has had on society."

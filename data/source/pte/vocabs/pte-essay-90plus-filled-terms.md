@@ -342,7 +342,7 @@
 312. users who rely on mobile devices | /PLACEHOLDER/
 313. improved ability to stay connected with family and colleagues | /PLACEHOLDER/
 314. without smartphone access | /PLACEHOLDER/
-315. smartphone technology | /PLACEHOLDER/
+315. smartphone use | /PLACEHOLDER/
 316. modern society | /PLACEHOLDER/
 317. constant device availability | /PLACEHOLDER/
 318. screen addiction and excessive usage | /PLACEHOLDER/

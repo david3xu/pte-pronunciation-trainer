@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-01-23T13:33:39.892Z",
-    "totalTerms": 876,
+    "generated": "2026-01-23T20:33:38.535Z",
+    "totalTerms": 962,
     "source": "pte-essay-90plus-filled-terms",
     "description": "Auto-discovered vocabulary book: pte-essay-90plus-filled-terms",
     "version": "1.0",
@@ -9,7 +9,7 @@
       "pte-essay-90plus-filled-terms"
     ],
     "hasIPA": true,
-    "keepDuplicates": false
+    "keepDuplicates": true
   },
   "vocabulary": [
     {
@@ -461,6 +461,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "certain limitations",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "formal written examinations",
       "pronunciation": {
         "british": {
@@ -857,6 +873,22 @@
         }
       },
       "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "students",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
       "category": "pte-essay-90plus-filled-terms",
       "source": "pte-essay-90plus-filled-terms"
     },
@@ -1709,6 +1741,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "certain limitations",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "television",
       "pronunciation": {
         "british": {
@@ -2109,6 +2157,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "students",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "the value of traditional teaching",
       "pronunciation": {
         "british": {
@@ -2489,6 +2553,22 @@
         }
       },
       "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "students",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
       "category": "pte-essay-90plus-filled-terms",
       "source": "pte-essay-90plus-filled-terms"
     },
@@ -2925,6 +3005,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "students",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "certain challenges",
       "pronunciation": {
         "british": {
@@ -3181,6 +3277,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "Students",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "juggle work and study demands",
       "pronunciation": {
         "british": {
@@ -3293,7 +3405,87 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "experiential learning offers substantial benefits",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "high school and college students",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "certain limitations",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "experiential learning",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "practical skills and direct application",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "learning by doing",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -3326,6 +3518,22 @@
     },
     {
       "english": "better retention and career readiness",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "Students who participate in practical projects",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -3421,6 +3629,70 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "educational institutions",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "implementing practical programs",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "higher resource requirements and preparation time",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "budget constraints and staffing limitations",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "Schools",
       "pronunciation": {
         "british": {
@@ -3449,6 +3721,38 @@
         }
       },
       "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "educators to balance practical activities with required curriculum coverage",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "teachers",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
       "category": "pte-essay-90plus-filled-terms",
       "source": "pte-essay-90plus-filled-terms"
     },
@@ -3485,6 +3789,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "high schools and universities",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "how architectural planning influences work and living environments",
       "pronunciation": {
         "british": {
@@ -3502,6 +3822,38 @@
     },
     {
       "english": "building design offers substantial benefits",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "people",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "certain limitations",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -3897,6 +4249,22 @@
         }
       },
       "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "people",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
       "category": "pte-essay-90plus-filled-terms",
       "source": "pte-essay-90plus-filled-terms"
     },
@@ -4317,6 +4685,38 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "people",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "certain limitations",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "smartphones",
       "pronunciation": {
         "british": {
@@ -4557,6 +4957,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "People",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "spend many hours daily on their phones",
       "pronunciation": {
         "british": {
@@ -4713,6 +5129,22 @@
         }
       },
       "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "certain limitations",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
       "category": "pte-essay-90plus-filled-terms",
       "source": "pte-essay-90plus-filled-terms"
     },
@@ -5117,6 +5549,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "certain limitations",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "tourism in developing countries",
       "pronunciation": {
         "british": {
@@ -5501,6 +5949,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "certain limitations",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "modern mass communication",
       "pronunciation": {
         "british": {
@@ -5741,6 +6205,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "Individuals",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "experience continuous digital communication demands",
       "pronunciation": {
         "british": {
@@ -5769,6 +6249,22 @@
         }
       },
       "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "people",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
       "category": "pte-essay-90plus-filled-terms",
       "source": "pte-essay-90plus-filled-terms"
     },
@@ -5838,6 +6334,38 @@
     },
     {
       "english": "mass media influence offers substantial benefits",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "society",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "certain limitations",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -6141,6 +6669,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "individuals",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "reduced critical thinking",
       "pronunciation": {
         "british": {
@@ -6158,6 +6702,22 @@
     },
     {
       "english": "evaluate information quality",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "society and individuals",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -6217,6 +6777,38 @@
         }
       },
       "difficulty": "easy",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "certain limitations",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "mass communication",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
       "category": "pte-essay-90plus-filled-terms",
       "source": "pte-essay-90plus-filled-terms"
     },
@@ -6617,6 +7209,22 @@
         }
       },
       "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "companies",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
       "category": "pte-essay-90plus-filled-terms",
       "source": "pte-essay-90plus-filled-terms"
     },
@@ -7373,6 +7981,38 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "students",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "certain limitations",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "studying classic plays",
       "pronunciation": {
         "british": {
@@ -7613,6 +8253,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "Students",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "find classic works behind the times",
       "pronunciation": {
         "british": {
@@ -7753,6 +8409,22 @@
         }
       },
       "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "certain limitations",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
       "category": "pte-essay-90plus-filled-terms",
       "source": "pte-essay-90plus-filled-terms"
     },
@@ -7933,6 +8605,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "local communities",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "mall expansion",
       "pronunciation": {
         "british": {
@@ -8061,6 +8749,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "governments and local communities",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "whether medical technology extending lifespans is beneficial or harmful",
       "pronunciation": {
         "british": {
@@ -8078,6 +8782,38 @@
     },
     {
       "english": "increased life expectancy represents a blessing",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "people",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "certain challenges",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -8365,6 +9101,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "governments",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "difficulty providing adequate care for all citizens",
       "pronunciation": {
         "british": {
@@ -8430,6 +9182,38 @@
     },
     {
       "english": "parental legal responsibility offers substantial benefits",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "society",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "certain limitations",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -8797,6 +9581,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "parents and schools",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "whether countryside or city living offers better quality of life",
       "pronunciation": {
         "british": {
@@ -8857,6 +9657,22 @@
         }
       },
       "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "people",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
       "category": "pte-essay-90plus-filled-terms",
       "source": "pte-essay-90plus-filled-terms"
     },
@@ -9181,6 +9997,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "people",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "the value of formal education",
       "pronunciation": {
         "british": {
@@ -9437,6 +10269,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "Learners",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "learn the hard way through trial and error only",
       "pronunciation": {
         "british": {
@@ -9561,6 +10409,22 @@
         }
       },
       "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "students",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
       "category": "pte-essay-90plus-filled-terms",
       "source": "pte-essay-90plus-filled-terms"
     },
@@ -9821,6 +10685,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "Students",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "need quiet spaces for serious study",
       "pronunciation": {
         "british": {
@@ -9849,6 +10729,22 @@
         }
       },
       "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "learners",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
       "category": "pte-essay-90plus-filled-terms",
       "source": "pte-essay-90plus-filled-terms"
     },
@@ -9902,6 +10798,22 @@
     },
     {
       "english": "physical libraries",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "universities",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -9993,6 +10905,22 @@
         }
       },
       "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "cities",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
       "category": "pte-essay-90plus-filled-terms",
       "source": "pte-essay-90plus-filled-terms"
     },
@@ -10621,6 +11549,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "Employees",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "feel constantly pressed for time",
       "pronunciation": {
         "british": {
@@ -10734,6 +11678,22 @@
     },
     {
       "english": "the whole workforce, not just young people",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "certain limitations",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -11549,6 +12509,38 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "employees",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "certain challenges",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "working fewer hours",
       "pronunciation": {
         "british": {
@@ -11789,6 +12781,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "Companies",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "must keep pace with international competitors",
       "pronunciation": {
         "british": {
@@ -11817,6 +12825,22 @@
         }
       },
       "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "workers",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
       "category": "pte-essay-90plus-filled-terms",
       "source": "pte-essay-90plus-filled-terms"
     },
@@ -11902,6 +12926,38 @@
     },
     {
       "english": "age restrictions of 21 years offer substantial benefits",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "young people",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "certain limitations",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -12205,6 +13261,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "individuals",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "difficulty accepting one-size-fits-all age limits",
       "pronunciation": {
         "british": {
@@ -12270,6 +13342,38 @@
     },
     {
       "english": "compulsory foreign language education offers substantial benefits",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "students",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "certain limitations",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -12525,6 +13629,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "Schools",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "must fit language requirements into packed schedules",
       "pronunciation": {
         "british": {
@@ -12637,6 +13757,38 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "communities",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "certain limitations",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "preserving historic buildings",
       "pronunciation": {
         "british": {
@@ -12670,6 +13822,22 @@
     },
     {
       "english": "building preservation",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "tourism income and economic benefits",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -12909,6 +14077,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "cities",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "difficulty maintaining both heritage sites and modern infrastructure",
       "pronunciation": {
         "british": {
@@ -12926,6 +14110,22 @@
     },
     {
       "english": "sustain these preservation efforts long-term",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "governments and local communities",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -12985,6 +14185,22 @@
         }
       },
       "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "certain limitations",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
       "category": "pte-essay-90plus-filled-terms",
       "source": "pte-essay-90plus-filled-terms"
     },
@@ -13165,6 +14381,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "modern society",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "current educational systems",
       "pronunciation": {
         "british": {
@@ -13213,6 +14445,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "Children",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "must cope with demanding school schedules and constant testing",
       "pronunciation": {
         "british": {
@@ -13241,6 +14489,22 @@
         }
       },
       "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "families",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
       "category": "pte-essay-90plus-filled-terms",
       "source": "pte-essay-90plus-filled-terms"
     },
@@ -13277,6 +14541,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "parents and schools",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "whether there should be income restrictions for high earners",
       "pronunciation": {
         "british": {
@@ -13294,6 +14574,38 @@
     },
     {
       "english": "maximum wage limits offer substantial benefits",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "society",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "certain limitations",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -13549,6 +14861,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "Companies",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "strict wage caps",
       "pronunciation": {
         "british": {
@@ -13629,6 +14957,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "governments and policymakers",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "whether language learning remains necessary with AI translation available",
       "pronunciation": {
         "british": {
@@ -13657,6 +15001,22 @@
         }
       },
       "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "people",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
       "category": "pte-essay-90plus-filled-terms",
       "source": "pte-essay-90plus-filled-terms"
     },
@@ -13913,6 +15273,22 @@
         }
       },
       "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "People",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
       "category": "pte-essay-90plus-filled-terms",
       "source": "pte-essay-90plus-filled-terms"
     },

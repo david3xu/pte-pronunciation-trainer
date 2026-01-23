@@ -423,7 +423,8 @@ class PTEDataPipeline {
           const filesWithDuplicates = [
             'pte-di-difficult-words',
             'pte-di-easy-phrases',
-            'pte-essay-b1-examples-vocabulary'
+            'pte-essay-b1-examples-vocabulary',
+            'pte-essay-90plus-filled-terms'
           ];
 
           return {

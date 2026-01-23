@@ -235,22 +235,22 @@ Taken together, these considerations demonstrate that **combining study and work
 
 ---
 
-## Example 9: Experiential Learning ✅
-
-**Note:** This appears as #6 in the question list but presented here as Example 9 for clarity.
+## Example 9: Most Pressing Global Problem ✅
 
 ### Question
-**"Some people point out that experiential learning (i.e. learning by doing) can work well in formal education. However, others think a traditional form of teaching is the best. Do you think experiential learning is beneficial in high school or college?"**
+**"The world's governments and organizations are facing a lot of issues. Which do you think is the most pressing problem for the inhabitants on our planet? And give solutions."**
 
-### Complete Essay (235 words)
+### Complete Essay (238 words)
 
-The question of **whether practical learning methods benefit students in formal education** has attracted considerable attention in modern society. I contend that **experiential learning offers substantial benefits** for **high school and college students** despite **certain limitations**, and the following analysis outlines the primary arguments supporting this viewpoint.
+The question of **which global problem requires most urgent attention** has attracted considerable attention in modern society. I contend that **climate change** represents the most pressing challenge for **people worldwide** despite **other important issues**, and the following analysis outlines the problem's severity and practical solutions.
 
-To begin with, one compelling advantage of **experiential learning** is its potential to bring about **practical skills and direct application**. In particular, **learning by doing** can facilitate **real-world knowledge and higher student engagement**, ultimately leading to broader outcomes such as **better retention and career readiness**. **Students who participate in practical projects** demonstrate **stronger understanding and problem-solving abilities**. For instance, **learners who engage in hands-on activities** report significantly **improved skill development and confidence** compared to those **who study only from textbooks**.
+To begin with, one compelling reason why **climate change** is most urgent is its potential to cause **rising temperatures and extreme weather events**. In particular, **climate change** can generate **environmental damage and habitat loss**, ultimately leading to broader consequences such as **sea level rise and food shortages**. **Nations experiencing climate impacts** demonstrate **severe economic and social disruption**. For instance, **countries affected by extreme weather** face significantly **greater resource strain and population displacement** compared to those **with stable climate conditions**.
 
-However, it is important to acknowledge that **active learning methods** face certain challenges in **educational institutions**. This is largely because **implementing practical programs** creates **higher resource requirements and preparation time**, which may subsequently lead to **budget constraints and staffing limitations**. **Schools** that **offer hands-on learning opportunities** put pressure on **educators to balance practical activities with required curriculum coverage**. As a result, many **teachers** have **difficulty scaling experiential programs** that make it difficult to **offer these learning experience consistently**.
+However, effective solutions can address **climate change**. This is largely because **immediate policy changes and clean energy investment** are likely to generate **reduced carbon emissions**, which may subsequently lead to **climate stabilization and environmental recovery**. Additionally, **international cooperation on climate targets** can provide **coordinated global action** through **binding agreements and shared technology**.
 
-Taken together, these considerations demonstrate the overall importance of **experiential learning**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **high schools and universities** to provide sufficient support to address these challenges effectively.
+Based on these considerations, I recommend that **governments** should **implement aggressive renewable energy policies** and **establish binding international climate commitments**. **Countries adopting comprehensive climate strategies** demonstrate that these solutions **can turn the tide on emissions growth** and deliver **measurable environmental improvements**. As a result, **global leaders** can **achieve meaningful climate stabilization**.
+
+Taken together, these considerations demonstrate that **climate change** remains the most pressing challenge, while **coordinated policy action and clean energy transition** offer practical pathways forward. Thus, it is essential for **governments and international organizations** to implement these recommendations effectively.
 
 ---
 

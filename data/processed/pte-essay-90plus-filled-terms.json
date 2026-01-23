@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-01-23T23:40:34.508Z",
+    "generated": "2026-01-23T23:46:37.145Z",
     "totalTerms": 972,
     "source": "pte-essay-90plus-filled-terms",
     "description": "Auto-discovered vocabulary book: pte-essay-90plus-filled-terms",
@@ -5245,7 +5245,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "whether legal regulations can effectively modify human conduct",
+      "english": "whether laws can change human behavior",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -5261,7 +5261,23 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "laws changing behavior offers substantial benefits",
+      "english": "laws have little effect",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "this approach offers significant benefits",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -5309,39 +5325,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "laws changing behavior",
-      "pronunciation": {
-        "british": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        },
-        "american": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-90plus-filled-terms",
-      "source": "pte-essay-90plus-filled-terms"
-    },
-    {
-      "english": "public safety and social order",
-      "pronunciation": {
-        "british": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        },
-        "american": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-90plus-filled-terms",
-      "source": "pte-essay-90plus-filled-terms"
-    },
-    {
-      "english": "legal regulations",
+      "english": "legal regulations can influence behavior",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -5373,6 +5357,22 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "laws",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "public awareness and lifestyle changes",
       "pronunciation": {
         "british": {
@@ -5389,7 +5389,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "Societies with strong legal frameworks",
+      "english": "public safety and social order",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -5405,7 +5405,23 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "lower crime rates and greater civic responsibility",
+      "english": "Societies with strong legal rules",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "reduced crime and better compliance",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -5469,7 +5485,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "behavior modification through law",
+      "english": "legal rules are not effective",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -5485,7 +5501,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "diverse societies",
+      "english": "personal beliefs and individual values",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -5501,7 +5517,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "deeply held personal beliefs",
+      "english": "cultural resistance",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -5517,23 +5533,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "cultural resistance and value conflicts",
-      "pronunciation": {
-        "british": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        },
-        "american": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-90plus-filled-terms",
-      "source": "pte-essay-90plus-filled-terms"
-    },
-    {
-      "english": "limited law effectiveness and compliance issues",
+      "english": "limited effectiveness and enforcement difficulties",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -5581,7 +5581,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "citizens to fall in line with regulations despite personal convictions",
+      "english": "citizens to follow regulations despite personal beliefs",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -5613,7 +5613,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "difficulty achieving complete behavioral change through legislation alone",
+      "english": "difficulty changing all behaviors through legal rules alone",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -5629,7 +5629,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "implement legal reforms successfully",
+      "english": "legal regulations for changing behavior",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",

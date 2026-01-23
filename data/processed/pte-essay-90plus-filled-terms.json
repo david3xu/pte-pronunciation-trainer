@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-01-23T20:33:38.535Z",
-    "totalTerms": 962,
+    "generated": "2026-01-23T21:37:05.579Z",
+    "totalTerms": 967,
     "source": "pte-essay-90plus-filled-terms",
     "description": "Auto-discovered vocabulary book: pte-essay-90plus-filled-terms",
     "version": "1.0",
@@ -1277,7 +1277,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "corporate initiatives",
+      "english": "company efforts",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -1293,7 +1293,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "individual efforts",
+      "english": "individual actions",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -1373,7 +1373,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "comprehensive environmental laws and national regulations",
+      "english": "environmental laws and national regulations",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -1405,7 +1405,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "public funding and coordinated policy implementation",
+      "english": "public funding and policy coordination",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -1421,7 +1421,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "strong enforcement mechanisms and binding climate targets",
+      "english": "strong enforcement and climate targets",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -1437,7 +1437,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "mandatory compliance and systematic change",
+      "english": "government action",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -1453,7 +1453,23 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "individual or corporate efforts alone",
+      "english": "legal power and widespread change",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "individual or company efforts alone",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -1485,7 +1501,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "measurable emissions reductions",
+      "english": "significant pollution reduction",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -1565,7 +1581,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "corporate innovation and personal lifestyle changes",
+      "english": "climate action",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -1581,7 +1597,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "practical solutions and grassroots momentum",
+      "english": "company efforts and private actions",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -1597,7 +1613,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "technology development and public awareness",
+      "english": "practical solutions and public awareness",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -1613,7 +1629,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "only governments possess regulatory authority and resources for systemic change",
+      "english": "business innovation and lifestyle changes",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -1629,7 +1645,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "effective climate action",
+      "english": "government responsibility",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -1645,7 +1661,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "coordinated national responses",
+      "english": "only governments possess policy authority and public resources for national action",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -1661,7 +1677,71 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "corporate or individual action alone",
+      "english": "effective climate programs",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "government leadership",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "coordinated responses",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "government responsibility",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "company or individual action alone",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",

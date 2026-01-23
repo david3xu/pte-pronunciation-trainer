@@ -1,6 +1,6 @@
 # PTE Essay 90+ Filled Terms
 
-**Total Terms:** 894 unique terms (972 total entries, 78 duplicates) from 37 examples
+**Total Terms:** 903 unique terms (972 total entries, 69 duplicates) from 37 examples
 **Description:** High-scoring filled terms extracted from all 37 complete essay examples. These are the EXACT phrases used in the PRIMARY and COMPARISON templates, ready for memorization and typing practice.
 **Tags:** essay, 90plus, vocabulary, filled-terms
 
@@ -245,56 +245,56 @@
 220. climate change | /PLACEHOLDER/
 221. people worldwide | /PLACEHOLDER/
 222. other important issues | /PLACEHOLDER/
-223. rising temperatures and extreme weather events | /PLACEHOLDER/
-224. environmental damage and habitat loss | /PLACEHOLDER/
-225. sea level rise and food shortages | /PLACEHOLDER/
-226. Nations experiencing climate impacts | /PLACEHOLDER/
-227. severe economic and social disruption | /PLACEHOLDER/
-228. countries affected by extreme weather | /PLACEHOLDER/
-229. greater resource strain and population displacement | /PLACEHOLDER/
-230. with stable climate conditions | /PLACEHOLDER/
-231. effective solutions can address | /PLACEHOLDER/
-232. immediate policy changes and clean energy investment | /PLACEHOLDER/
-233. reduced carbon emissions | /PLACEHOLDER/
-234. climate stabilization and environmental recovery | /PLACEHOLDER/
-235. international cooperation on climate targets | /PLACEHOLDER/
-236. coordinated global action | /PLACEHOLDER/
-237. binding agreements and shared technology | /PLACEHOLDER/
-238. governments | /PLACEHOLDER/
-239. implement aggressive renewable energy policies | /PLACEHOLDER/
-240. establish binding international climate commitments | /PLACEHOLDER/
-241. Countries adopting comprehensive climate strategies | /PLACEHOLDER/
-242. can turn the tide on emissions growth | /PLACEHOLDER/
-243. measurable environmental improvements | /PLACEHOLDER/
-244. global leaders | /PLACEHOLDER/
-245. achieve meaningful climate stabilization | /PLACEHOLDER/
-246. coordinated policy action and clean energy transition | /PLACEHOLDER/
-247. governments and international organizations | /PLACEHOLDER/
+223. this crisis | /PLACEHOLDER/
+224. rising temperatures and extreme weather events | /PLACEHOLDER/
+225. environmental damage and habitat loss | /PLACEHOLDER/
+226. sea level rise and food shortages | /PLACEHOLDER/
+227. Nations experiencing climate impacts | /PLACEHOLDER/
+228. severe weather damage | /PLACEHOLDER/
+229. countries affected by extreme weather | /PLACEHOLDER/
+230. worse economic harm | /PLACEHOLDER/
+231. with stable climate conditions | /PLACEHOLDER/
+232. this problem | /PLACEHOLDER/
+233. immediate action and policy changes | /PLACEHOLDER/
+234. lower carbon emissions | /PLACEHOLDER/
+235. stable climate | /PLACEHOLDER/
+236. clean energy and carbon reduction | /PLACEHOLDER/
+237. positive environmental outcomes | /PLACEHOLDER/
+238. renewable energy investment | /PLACEHOLDER/
+239. governments | /PLACEHOLDER/
+240. invest in clean energy and reduce carbon emissions | /PLACEHOLDER/
+241. these urgent concerns | /PLACEHOLDER/
+242. Countries with climate action | /PLACEHOLDER/
+243. turn the tide | /PLACEHOLDER/
+244. significant pollution reduction | /PLACEHOLDER/
+245. governments and international organizations | /PLACEHOLDER/
+246. achieve stable climate | /PLACEHOLDER/
+247. climate change | /PLACEHOLDER/
 ## Example 10: Building Design Impact
-248. how architectural planning influences work and living environments | /PLACEHOLDER/
+248. how building design affects work and living environments | /PLACEHOLDER/
 249. building design offers substantial benefits | /PLACEHOLDER/
 250. people | /PLACEHOLDER/
 251. certain limitations | /PLACEHOLDER/
 252. good building design | /PLACEHOLDER/
 253. natural light and comfortable spaces | /PLACEHOLDER/
 254. architectural planning | /PLACEHOLDER/
-255. better productivity and improved mood | /PLACEHOLDER/
-256. fresh air circulation and open layouts | /PLACEHOLDER/
+255. fresh air and open layouts | /PLACEHOLDER/
+256. better productivity and improved mood | /PLACEHOLDER/
 257. Workers in well-designed buildings | /PLACEHOLDER/
 258. higher satisfaction and better performance | /PLACEHOLDER/
 259. employees in buildings with natural lighting and open spaces | /PLACEHOLDER/
-260. improved well-being and focus | /PLACEHOLDER/
+260. better mood and increased focus | /PLACEHOLDER/
 261. in poorly designed facilities | /PLACEHOLDER/
 262. building design | /PLACEHOLDER/
 263. planning is poor | /PLACEHOLDER/
-264. inadequate architectural choices | /PLACEHOLDER/
-265. insufficient ventilation and limited space | /PLACEHOLDER/
-266. health problems and lower motivation | /PLACEHOLDER/
-267. Buildings with cramped quarters | /PLACEHOLDER/
-268. workers to cope with poor conditions | /PLACEHOLDER/
-269. residents and workers | /PLACEHOLDER/
-270. difficulty maintaining health and efficiency | /PLACEHOLDER/
-271. function effectively in poorly designed spaces | /PLACEHOLDER/
+264. poor building design | /PLACEHOLDER/
+265. poor air flow and small spaces | /PLACEHOLDER/
+266. breathing problems and lower motivation | /PLACEHOLDER/
+267. Many workplaces with cramped quarters | /PLACEHOLDER/
+268. workers to cope with uncomfortable conditions throughout the day | /PLACEHOLDER/
+269. people | /PLACEHOLDER/
+270. stress and discomfort | /PLACEHOLDER/
+271. function effectively in poorly designed buildings | /PLACEHOLDER/
 272. architects and developers | /PLACEHOLDER/
 
 ## Example 11: Work-Life Balance

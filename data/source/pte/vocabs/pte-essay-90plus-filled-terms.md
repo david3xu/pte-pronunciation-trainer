@@ -1,6 +1,6 @@
 # PTE Essay 90+ Filled Terms
 
-**Total Terms:** 962 terms from 37 examples
+**Total Terms:** 876 unique terms (962 total entries, 86 duplicates) from 37 examples
 **Description:** High-scoring filled terms extracted from all 37 complete essay examples. These are the EXACT phrases used in the PRIMARY and COMPARISON templates, ready for memorization and typing practice.
 **Tags:** essay, 90plus, vocabulary, filled-terms
 

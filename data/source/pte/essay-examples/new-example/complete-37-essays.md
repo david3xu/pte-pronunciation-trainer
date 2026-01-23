@@ -229,7 +229,7 @@ To begin with, one compelling reason why **balancing work and study** is achieva
 
 However, it is important to acknowledge that **managing both commitments** presents certain challenges in **modern educational settings**. This is largely because **dual responsibilities** can generate **distractions and reduced focus**, which may subsequently lead to **time conflicts and schedule pressure**. **Students** who **juggle work and study demands** experience pressure to **sacrifice sleep and personal time to meet all responsibilities**. As a result, many **working students** face **stress and fatigue** that make it difficult to maintain **strong academic performance**.
 
-Taken together, these considerations demonstrate that **combining study and work** is realistic in modern life, though it requires strong time management and realistic expectations. Thus, it is essential for **students and universities** to provide sufficient support to address these challenges effectively.
+Taken together, these considerations demonstrate that **combining study and work** is realistic in modern life, though it requires **strong time management and realistic expectations**. Thus, it is essential for **students and universities** to provide sufficient support to address these challenges effectively.
 
 ---
 

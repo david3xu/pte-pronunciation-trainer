@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-01-23T21:57:49.647Z",
-    "totalTerms": 968,
+    "generated": "2026-01-23T22:05:40.314Z",
+    "totalTerms": 969,
     "source": "pte-essay-90plus-filled-terms",
     "description": "Auto-discovered vocabulary book: pte-essay-90plus-filled-terms",
     "version": "1.0",
@@ -3454,6 +3454,22 @@
     },
     {
       "english": "strong academic performance",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "strong time management and realistic expectations",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",

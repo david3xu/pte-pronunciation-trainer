@@ -357,31 +357,31 @@
 327. balanced smartphone use | /PLACEHOLDER/
 
 ## Example 13: Laws and Human Behavior
-328. whether legal regulations can effectively modify human conduct | /PLACEHOLDER/
-329. laws changing behavior offers substantial benefits | /PLACEHOLDER/
-330. society | /PLACEHOLDER/
-331. certain limitations | /PLACEHOLDER/
-332. laws changing behavior | /PLACEHOLDER/
-333. public safety and social order | /PLACEHOLDER/
-334. legal regulations | /PLACEHOLDER/
-335. strong enforcement and clear penalties | /PLACEHOLDER/
+328. whether laws can change human behavior | /PLACEHOLDER/
+329. laws have little effect | /PLACEHOLDER/
+330. this approach offers significant benefits | /PLACEHOLDER/
+331. society | /PLACEHOLDER/
+332. certain limitations | /PLACEHOLDER/
+333. legal regulations can influence behavior | /PLACEHOLDER/
+334. strong enforcement and clear penalties | /PLACEHOLDER/
+335. laws | /PLACEHOLDER/
 336. public awareness and lifestyle changes | /PLACEHOLDER/
-337. Societies with strong legal frameworks | /PLACEHOLDER/
-338. lower crime rates and greater civic responsibility | /PLACEHOLDER/
-339. countries with strict traffic laws | /PLACEHOLDER/
-340. fewer accidents and better road safety | /PLACEHOLDER/
-341. with weak legal enforcement | /PLACEHOLDER/
-342. behavior modification through law | /PLACEHOLDER/
-343. diverse societies | /PLACEHOLDER/
-344. deeply held personal beliefs | /PLACEHOLDER/
-345. cultural resistance and value conflicts | /PLACEHOLDER/
-346. limited law effectiveness and compliance issues | /PLACEHOLDER/
+337. public safety and social order | /PLACEHOLDER/
+338. Societies with strong legal rules | /PLACEHOLDER/
+339. reduced crime and better compliance | /PLACEHOLDER/
+340. countries with strict traffic laws | /PLACEHOLDER/
+341. fewer accidents and better road safety | /PLACEHOLDER/
+342. with weak legal enforcement | /PLACEHOLDER/
+343. legal rules are not effective | /PLACEHOLDER/
+344. personal beliefs and individual values | /PLACEHOLDER/
+345. cultural resistance | /PLACEHOLDER/
+346. limited effectiveness and enforcement difficulties | /PLACEHOLDER/
 347. Communities | /PLACEHOLDER/
 348. laws conflict with traditional values | /PLACEHOLDER/
-349. citizens to fall in line with regulations despite personal convictions | /PLACEHOLDER/
+349. citizens to follow regulations despite personal beliefs | /PLACEHOLDER/
 350. governments | /PLACEHOLDER/
-351. difficulty achieving complete behavioral change through legislation alone | /PLACEHOLDER/
-352. implement legal reforms successfully | /PLACEHOLDER/
+351. difficulty changing all behaviors through legal rules alone | /PLACEHOLDER/
+352. legal regulations for changing behavior | /PLACEHOLDER/
 353. governments and policymakers | /PLACEHOLDER/
 
 ## Example 14: Tourism in Developing Countries

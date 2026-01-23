@@ -1,546 +1,1044 @@
 # PTE Essay 90+ Filled Terms
 
-**Total Terms:** 499 (493 unique after deduplication)
-**Description:** High-scoring filled terms for the 90+ Essay Template (Examples: Employee Decision Making, Formal Written Examinations, Travel and Quality Education). These are the EXACT phrases you need to memorize and type.
-**Tags:** essay, 90plus, vocabulary
+**Total Terms:** 962 terms from 37 examples
+**Description:** High-scoring filled terms extracted from all 37 complete essay examples. These are the EXACT phrases used in the PRIMARY and COMPARISON templates, ready for memorization and typing practice.
+**Tags:** essay, 90plus, vocabulary, filled-terms
 
+**Note:** IPA pronunciations will be added during data processing.
 
 ## Example 1: Employee Decision Making
-1. whether organizations should involve employees in the decision-making process | /ˈweðər ˌɔːɡənaɪˈzeɪʃənz ʃʊd ɪnˈvɒlv ɪmˈplɔɪiːz ɪn ðə dɪˈsɪʒən ˌmeɪkɪŋ ˈprəʊses/
-2. this collaborative approach | /ðɪs kəˈlæbərətɪv əˈprəʊtʃ/
-3. offers substantial benefits | /ˈɒfəz səbˈstænʃəl ˈbenɪfɪts/
-4. companies | /ˈkʌmpəniz/
-5. certain limitations | /ˈsɜːtn ˌlɪmɪˈteɪʃənz/
-6. employee participation in decision-making | /ɪmˈplɔɪiː pɑːˌtɪsɪˈpeɪʃən ɪn dɪˈsɪʒən ˌmeɪkɪŋ/
-7. higher employee loyalty and stronger workplace engagement | /ˈhaɪər ɪmˈplɔɪiː ˈlɔɪəlti ænd ˈstrɒŋɡə ˈwɜːkpleɪs ɪnˈɡeɪdʒmənt/
-8. involving employees in decisions | /ɪnˈvɒlvɪŋ ɪmˈplɔɪiːz ɪn dɪˈsɪʒənz/
-9. better business suggestions and creative ideas | /ˈbetə ˈbɪznɪs səˈdʒestʃənz ænd kriˈeɪtɪv aɪˈdɪəz/
-10. increased company revenue and improved customer satisfaction | /ɪnˈkriːst ˈkʌmpəni ˈrevənjuː ænd ɪmˈpruːvd ˈkʌstəmə ˌsætɪsˈfækʃən/
-11. Companies that involve employees in decision-making | /ˈkʌmpəniz ðæt ɪnˈvɒlv ɪmˈplɔɪiːz ɪn dɪˈsɪʒən ˌmeɪkɪŋ/
-12. greater motivation and a stronger sense of belonging | /ˈɡreɪtə ˌməʊtɪˈveɪʃən ænd ə ˈstrɒŋɡə sens ɒv bɪˈlɒŋɪŋ/
-13. companies that implement regular feedback sessions with staff | /ˈkʌmpəniz ðæt ˈɪmplɪment ˈreɡjələ ˈfiːdbæk ˈseʃənz wɪð stɑːf/
-14. better business suggestions and higher revenue | /ˈbetə ˈbɪznɪs səˈdʒestʃənz ænd ˈhaɪə ˈrevənjuː/
-15. with top-down decision structures | /wɪð tɒp daʊn dɪˈsɪʒən ˈstrʌktʃəz/
-16. employee participation | /ɪmˌplɔɪiː pɑːˌtɪsɪˈpeɪʃən/
-17. modern business environments | /ˈmɒdən ˈbɪznɪs ɪnˈvaɪrənmənts/
-18. extensive consultation | /ɪkˈstensɪv ˌkɒnsʌlˈteɪʃən/
-19. workplace conflicts and disagreements between staff and managers | /ˈwɜːkpleɪs ˈkɒnflɪkts ænd ˌdɪsəˈɡriːmənts bɪˈtwiːn stɑːf ænd ˈmænɪdʒəz/
-20. slower decision processes and reduced efficiency | /ˈsləʊə dɪˈsɪʒən ˈprəʊsesɪz ænd rɪˈdjuːst ɪˈfɪʃənsi/
-21. Corporate settings | /ˈkɔːpərət ˈsetɪŋz/
-22. require consensus from multiple departments | /rɪˈkwaɪə kənˈsensəs frɒm ˈmʌltɪpl dɪˈpɑːtmənts/
-23. hold longer meetings | /həʊld ˈlɒŋɡə ˈmiːtɪŋz/
-24. communication difficulties | /kəˌmjuːnɪˈkeɪʃən ˈdɪfɪkəltiz/
-25. quick business responses | /kwɪk ˈbɪznɪs rɪˈspɒnsɪz/
-26. companies and managers | /ˈkʌmpəniz ænd ˈmænɪdʒəz/
+1. whether organizations should involve employees in the decision-making process | /PLACEHOLDER/
+2. this collaborative approach offers substantial benefits | /PLACEHOLDER/
+3. companies | /PLACEHOLDER/
+4. certain limitations | /PLACEHOLDER/
+5. employee participation in decision-making | /PLACEHOLDER/
+6. higher employee loyalty and stronger workplace engagement | /PLACEHOLDER/
+7. involving employees in decisions | /PLACEHOLDER/
+8. better business suggestions and creative ideas | /PLACEHOLDER/
+9. increased company revenue and improved customer satisfaction | /PLACEHOLDER/
+10. Companies that involve employees in decision-making | /PLACEHOLDER/
+11. greater motivation and a stronger sense of belonging | /PLACEHOLDER/
+12. organizations that implement regular feedback sessions with staff | /PLACEHOLDER/
+13. better business suggestions and higher revenue | /PLACEHOLDER/
+14. with top-down decision structures | /PLACEHOLDER/
+15. employee participation | /PLACEHOLDER/
+16. modern business environments | /PLACEHOLDER/
+17. extensive consultation processes | /PLACEHOLDER/
+18. workplace conflicts and disagreements between staff and managers | /PLACEHOLDER/
+19. slower decision processes and reduced efficiency | /PLACEHOLDER/
+20. Corporate settings | /PLACEHOLDER/
+21. require consensus from multiple departments | /PLACEHOLDER/
+22. longer meeting times and delayed decisions | /PLACEHOLDER/
+23. communication difficulties | /PLACEHOLDER/
+24. maintain quick business responses | /PLACEHOLDER/
+25. companies and managers | /PLACEHOLDER/
 
 ## Example 2: Formal Written Examinations
-27. whether formal written examinations are a valid method to assess students | /ˈweðər ˈfɔːməl ˈrɪtn ɪɡˌzæmɪˈneɪʃənz ɑːr ə ˈvælɪd ˈmeθəd tu əˈses ˈstjuːdənts/
-28. this assessment method | /ðɪs əˈsesmənt ˈmeθəd/
-29. students | /ˈstjuːdənts/
-30. formal written examinations | /ˈfɔːməl ˈrɪtn ɪɡˌzæmɪˈneɪʃənz/
-31. fair assessment and equal opportunities for all students | /feər əˈsesmənt ænd ˈiːkwəl ˌɒpəˈtjuːnɪtiz fɔːr ɔːl ˈstjuːdənts/
-32. using written exams | /ˈjuːzɪŋ ˈrɪtn ɪɡˈzæmz/
-33. clear standards and consistent grading | /klɪə ˈstændədz ænd kənˈsɪstənt ˈɡreɪdɪŋ/
-34. accurate knowledge testing and reliable academic measurement | /ˈækjərət ˈnɒlɪdʒ ˈtestɪŋ ænd rɪˈlaɪəbl ˌækəˈdemɪk ˈmeʒəmənt/
-35. Educational institutions that prioritize written exams | /ˌedjʊˈkeɪʃənəl ˌɪnstɪˈtjuːʃənz ðæt praɪˈɒrɪtaɪz ˈrɪtn ɪɡˈzæmz/
-36. improved student performance evaluation | /ɪmˈpruːvd ˈstjuːdənt pəˈfɔːməns ɪˌvæljʊˈeɪʃən/
-37. schools that conduct regular formal examinations with students | /skuːlz ðæt kənˈdʌkt ˈreɡjələ ˈfɔːməl ɪɡˌzæmɪˈneɪʃənz wɪð ˈstjuːdənts/
-38. better learning outcomes and fair grading | /ˈbetə ˈlɜːnɪŋ ˈaʊtkʌmz ænd feər ˈɡreɪdɪŋ/
-39. with subjective assessment methods | /wɪð səbˈdʒektɪv əˈsesmənt ˈmeθədz/
-40. written assessment | /ˈrɪtn əˈsesmənt/
-41. modern educational environments | /ˈmɒdən ˌedjʊˈkeɪʃənəl ɪnˈvaɪrənmənts/
-42. reliance on exams | /rɪˈlaɪəns ɒn ɪɡˈzæmz/
-43. test stress and student anxiety | /test stres ænd ˈstjuːdənt æŋˈzaɪəti/
-44. reduced creativity and limited critical thinking | /rɪˈdjuːst ˌkriːeɪˈtɪvɪti ænd ˈlɪmɪtɪd ˈkrɪtɪkəl ˈθɪŋkɪŋ/
-45. Academic settings | /ˌækəˈdemɪk ˈsetɪŋz/
-46. focus heavily on exam scores | /ˈfəʊkəs ˈhevɪli ɒn ɪɡˈzæm skɔːz/
-47. memorize facts rather than understand concepts | /ˈmeməraɪz fækts ˈrɑːðə ðæn ˌʌndəˈstænd ˈkɒnsepts/
-48. test-related stress | /test rɪˈleɪtɪd stres/
-49. academic progress | /ˌækəˈdemɪk ˈprəʊɡres/
-50. schools and teachers | /skuːlz ænd ˈtiːtʃəz/
-51. formal written examinations are a valid assessment method | /ˈfɔːməl ˈrɪtən ɪɡˌzæmɪˈneɪʃənz ɑːr ə ˈvælɪd əˈsesmənt ˈmeθəd/
+26. whether formal written examinations effectively assess student learning | /PLACEHOLDER/
+27. this assessment method offers substantial benefits | /PLACEHOLDER/
+28. students | /PLACEHOLDER/
+29. certain limitations | /PLACEHOLDER/
+30. formal written examinations | /PLACEHOLDER/
+31. fair assessment and equal opportunities for all students | /PLACEHOLDER/
+32. written exams | /PLACEHOLDER/
+33. clear standards and consistent grading | /PLACEHOLDER/
+34. accurate knowledge testing and reliable academic measurement | /PLACEHOLDER/
+35. Students taking standardized tests | /PLACEHOLDER/
+36. measurable learning outcomes | /PLACEHOLDER/
+37. learners assessed through formal examinations | /PLACEHOLDER/
+38. better preparation and clear performance expectations | /PLACEHOLDER/
+39. evaluated through subjective methods | /PLACEHOLDER/
+40. formal exams | /PLACEHOLDER/
+41. modern educational environments | /PLACEHOLDER/
+42. high-stakes testing | /PLACEHOLDER/
+43. test stress and student anxiety | /PLACEHOLDER/
+44. reduced creativity and limited critical thinking | /PLACEHOLDER/
+45. Educational systems | /PLACEHOLDER/
+46. heavily emphasize exam performance | /PLACEHOLDER/
+47. students to memorize facts rather than understand concepts deeply | /PLACEHOLDER/
+48. learners | /PLACEHOLDER/
+49. exam-related stress | /PLACEHOLDER/
+50. balanced learning approaches | /PLACEHOLDER/
+51. schools and teachers | /PLACEHOLDER/
+52. balanced assessment strategies | /PLACEHOLDER/
 
-## Example 3: Travel and Quality Education
-52. whether travel is a necessary component of a quality education | /ˈweðər ˈtrævl ɪz ə ˈnesəsəri kəmˈpəʊnənt ɒv ə ˈkwɒlɪti ˌedjʊˈkeɪʃən/
-53. educational travel | /ˌedjʊˈkeɪʃənəl ˈtrævl/
-54. academic excellence | /ˌækəˈdemɪk ˈeksələns/
-55. cultural awareness and cross-cultural understanding | /ˈkʌltʃərəl əˈweənəs ænd ˈkrɒs ˈkʌltʃərəl ˌʌndəˈstændɪŋ/
-56. experiencing new cultures | /ɪkˈspɪərɪənsɪŋ njuː ˈkʌltʃəz/
-57. international exposure and adaptability | /ˌɪntəˈnæʃənəl ɪkˈspəʊʒər ænd əˌdæptəˈbɪlɪti/
-58. global perspective and personal growth | /ˈɡləʊbəl pəˈspektɪv ænd ˈpɜːsənəl ɡrəʊθ/
-59. Students who study abroad | /ˈstjuːdənts huː ˈstʌdi əˈbrɔːd/
-60. enhanced critical thinking | /ɪnˈhɑːnst ˈkrɪtɪkəl ˈθɪŋkɪŋ/
-61. universities that encourage exchange programs for students | /ˌjuːnɪˈvɜːsɪtiz ðæt ɪnˈkʌrɪdʒ ɪksˈtʃeɪndʒ ˈprəʊɡræmz fɔː ˈstjuːdənts/
-62. deeper knowledge and greater adaptability | /ˈdiːpə ˈnɒlɪdʒ ænd ˈɡreɪtər əˌdæptəˈbɪlɪti/
-63. with local-only curriculums | /wɪð ˈləʊkəl ˈəʊnli kəˈrɪkjʊləmz/
-64. high-quality education | /haɪ ˈkwɒlɪti ˌedjʊˈkeɪʃən/
-65. dedicated local education | /ˈdedɪkeɪtɪd ˈləʊkəl ˌedjʊˈkeɪʃən/
-66. studying locally | /ˈstʌdiɪŋ ˈləʊkəli/
-67. access to established institutions | /ˈækses tu ɪˈstæblɪʃt ˌɪnstɪˈtjuːʃənz/
-68. full academic resources | /fʊl ˌækəˈdemɪk rɪˈsɔːsɪz/
-69. quality learning in a familiar environment | /ˈkwɒlɪti ˈlɜːnɪŋ ɪn ə fəˈmɪliər ɪnˈvaɪrənmənt/
-70. Learners | /ˈlɜːnəz/
-71. focus on local education and dedicated study | /ˈfəʊkəs ɒn ˈləʊkəl ˌedjʊˈkeɪʃən ænd ˈdedɪkeɪtɪd ˈstʌdi/
-72. academic success and scholarly expertise | /ˌækəˈdemɪk səkˈses ænd ˈskɒləli ˌekspɜːˈtiːz/
-73. academic expert | /ˌækəˈdemɪk ˈekspɜːt/
-74. local community | /ˈləʊkəl kəˈmjuːnɪti/
-75. excellent academic outcomes | /ˈeksələnt ˌækəˈdemɪk ˈaʊtkʌmz/
-76. local education | /ˈləʊkəl ˌedjʊˈkeɪʃən/
-77. valuable cultural enrichment | /ˈvæljuəbl ˈkʌltʃərəl ɪnˈrɪtʃmənt/
-78. scholarly success | /ˈskɒləli səkˈses/
-79. enriching option | /ɪnˈrɪtʃɪŋ ˈɒpʃən/
-80. essential requirement | /ɪˈsenʃəl rɪˈkwaɪəmənt/
+## Example 3: Travel and Education
+53. whether travel is essential for quality education | /PLACEHOLDER/
+54. educational travel offers substantial benefits | /PLACEHOLDER/
+55. students | /PLACEHOLDER/
+56. not being strictly necessary | /PLACEHOLDER/
+57. educational travel | /PLACEHOLDER/
+58. cultural awareness and cross-cultural understanding | /PLACEHOLDER/
+59. travel for learning | /PLACEHOLDER/
+60. international exposure and adaptability | /PLACEHOLDER/
+61. global perspective and personal growth | /PLACEHOLDER/
+62. Students who travel for education | /PLACEHOLDER/
+63. enhanced worldviews and cultural sensitivity | /PLACEHOLDER/
+64. learners who study abroad or travel internationally | /PLACEHOLDER/
+65. stronger ability to broaden horizons and understand diverse perspectives | /PLACEHOLDER/
+66. who study only locally | /PLACEHOLDER/
+67. quality education | /PLACEHOLDER/
+68. excellent local institutions | /PLACEHOLDER/
+69. established local universities | /PLACEHOLDER/
+70. comprehensive resources and familiar learning environments | /PLACEHOLDER/
+71. successful academic outcomes and scholarly achievement | /PLACEHOLDER/
+72. Many brilliant scholars | /PLACEHOLDER/
+73. excellence can be achieved through dedicated local study | /PLACEHOLDER/
+74. develop deep expertise in their fields | /PLACEHOLDER/
+75. local education | /PLACEHOLDER/
+76. students and educators | /PLACEHOLDER/
+77. travel as valuable but optional | /PLACEHOLDER/
 
 ## Example 4: Climate Change Responsibility
-81. who should take responsibility for climate change | /huː ʃʊd teɪk rɪˌspɒnsəˈbɪlɪti fɔː ˈklaɪmət tʃeɪndʒ/
-82. climate change represents a concerning global challenge | /ˈklaɪmət tʃeɪndʒ ˌreprɪˈzents ə kənˈsɜːnɪŋ ˈɡləʊbəl ˈtʃælɪndʒ/
-83. governments should take primary responsibility | /ˈɡʌvənmənts ʃʊd teɪk ˈpraɪməri rɪˌspɒnsəˈbɪlɪti/
-84. climate change | /ˈklaɪmət tʃeɪndʒ/
-85. valuable supporting roles from companies and individuals | /ˈvæljuəbl səˈpɔːtɪŋ rəʊlz frɒm ˈkʌmpəniz ænd ˌɪndɪˈvɪdʒuəlz/
-86. government-led climate action | /ˈɡʌvənmənt led ˈklaɪmət ˈækʃən/
-87. the scale and urgency of this global challenge | /ðə skeɪl ænd ˈɜːdʒənsi ɒv ðɪs ˈɡləʊbəl ˈtʃælɪndʒ/
-88. environmental laws and national regulations | /ɪnˌvaɪrənˈmentəl lɔːz ænd ˈnæʃənəl ˌreɡjʊˈleɪʃənz/
-89. governments leading climate initiatives | /ˈɡʌvənmənts ˈliːdɪŋ ˈklaɪmət ɪˈnɪʃətɪvz/
-90. public funding and policy coordination | /ˈpʌblɪk ˈfʌndɪŋ ænd ˈpɒləsi kəʊˌɔːdɪˈneɪʃən/
-91. strong enforcement and ambitious climate targets | /strɒŋ ɪnˈfɔːsmənt ænd æmˈbɪʃəs ˈklaɪmət ˈtɑːɡɪts/
-92. Nations that prioritize climate action | /ˈneɪʃənz ðæt praɪˈɒrɪtaɪz ˈklaɪmət ˈækʃən/
-93. strong environmental regulations | /strɒŋ ɪnˌvaɪrənˈmentəl ˌreɡjʊˈleɪʃənz/
-94. countries with strict environmental policies | /ˈkʌntriz wɪð strɪkt ɪnˌvaɪrənˈmentəl ˈpɒləsiz/
-95. reduced pollution levels and improved air quality | /rɪˈdjuːst pəˈluːʃən ˈlevəlz ænd ɪmˈpruːvd eə ˈkwɒlɪti/
-96. without government action | /wɪˈðaʊt ˈɡʌvənmənt ˈækʃən/
-97. government responsibility | /ˈɡʌvənmənt rɪˌspɒnsəˈbɪlɪti/
-98. companies and individuals | /ˈkʌmpəniz ænd ˌɪndɪˈvɪdʒuəlz/
-99. valuable supporting contributions to climate action | /ˈvæljuəbl səˈpɔːtɪŋ ˌkɒntrɪˈbjuːʃənz tu ˈklaɪmət ˈækʃən/
-100. business environmental actions and individual changes | /ˈbɪznɪs ɪnˌvaɪrənˈmentəl ˈækʃənz ænd ˌɪndɪˈvɪdʒuəl ˈtʃeɪndʒɪz/
-101. meaningful environmental improvements | /ˈmiːnɪŋfəl ɪnˌvaɪrənˈmentəl ɪmˈpruːvmənts/
-102. increased public awareness and sustainable behavior | /ɪnˈkriːst ˈpʌblɪk əˈweənəs ænd səˈsteɪnəbl bɪˈheɪvjə/
-103. Climate initiatives | /ˈklaɪmət ɪˈnɪʃətɪvz/
-104. combine government policy with business support | /kəmˈbaɪn ˈɡʌvənmənt ˈpɒləsi wɪð ˈbɪznɪs səˈpɔːt/
-105. broader community engagement | /ˈbrɔːdə kəˈmjuːnɪti ɪnˈɡeɪdʒmənt/
-106. successful climate programs | /səkˈsesfəl ˈklaɪmət ˈprəʊɡræmz/
-107. enhanced effectiveness | /ɪnˈhɑːnst ɪˈfektɪvnəs/
-108. collective action from all groups | /kəˈlektɪv ˈækʃən frɒm ɔːl ɡruːps/
-109. private sector and individual contributions | /ˈpraɪvət ˈsektər ænd ˌɪndɪˈvɪdʒuəl ˌkɒntrɪˈbjuːʃənz/
-110. governments | /ˈɡʌvənmənts/
-111. participation from all sectors of society | /pɑːˌtɪsɪˈpeɪʃən frɒm ɔːl ˈsektəz ɒv səˈsaɪəti/
+78. who should bear primary responsibility for addressing climate change | /PLACEHOLDER/
+79. government action | /PLACEHOLDER/
+80. corporate initiatives | /PLACEHOLDER/
+81. individual efforts | /PLACEHOLDER/
+82. governments should take the lead | /PLACEHOLDER/
+83. climate action | /PLACEHOLDER/
+84. the value of other contributions | /PLACEHOLDER/
+85. government responsibility | /PLACEHOLDER/
+86. comprehensive environmental laws and national regulations | /PLACEHOLDER/
+87. government leadership | /PLACEHOLDER/
+88. public funding and coordinated policy implementation | /PLACEHOLDER/
+89. strong enforcement mechanisms and binding climate targets | /PLACEHOLDER/
+90. mandatory compliance and systematic change | /PLACEHOLDER/
+91. individual or corporate efforts alone | /PLACEHOLDER/
+92. Nations with strong government climate policies | /PLACEHOLDER/
+93. measurable emissions reductions | /PLACEHOLDER/
+94. countries where governments take the lead on climate action | /PLACEHOLDER/
+95. better progress toward climate goals | /PLACEHOLDER/
+96. relying primarily on voluntary business or individual actions | /PLACEHOLDER/
+97. companies and individuals | /PLACEHOLDER/
+98. corporate innovation and personal lifestyle changes | /PLACEHOLDER/
+99. practical solutions and grassroots momentum | /PLACEHOLDER/
+100. technology development and public awareness | /PLACEHOLDER/
+101. only governments possess regulatory authority and resources for systemic change | /PLACEHOLDER/
+102. effective climate action | /PLACEHOLDER/
+103. coordinated national responses | /PLACEHOLDER/
+104. corporate or individual action alone | /PLACEHOLDER/
+105. government climate leadership | /PLACEHOLDER/
 
-## Example 5: Combining Study and Work
-112. whether it is realistic to combine study and employment | /ˈweðər ɪt ɪz ˌriːəˈlɪstɪk tu kəmˈbaɪn ˈstʌdi ænd ɪmˈplɔɪmənt/
-113. combining learning and work | /kəmˈbaɪnɪŋ ˈlɜːnɪŋ ænd wɜːk/
-114. realistic for many students | /ˌriːəˈlɪstɪk fɔː ˈmeni ˈstjuːdənts/
-115. certain challenges | /ˈsɜːtn ˈtʃælɪndʒɪz/
-116. combining study and work is achievable | /kəmˈbaɪnɪŋ ˈstʌdi ænd wɜːk ɪz əˈtʃiːvəbl/
-117. flexible work arrangements and modern learning options | /ˈfleksəbl wɜːk əˈreɪndʒmənts ænd ˈmɒdən ˈlɜːnɪŋ ˈɒpʃənz/
-118. students who balance work and study | /ˈstjuːdənts huː ˈbæləns wɜːk ænd ˈstʌdi/
-119. strong time management skills and practical experience | /strɒŋ taɪm ˈmænɪdʒmənt skɪlz ænd ˈpræktɪkəl ɪkˈspɪəriəns/
-120. financial independence and enhanced career preparation | /faɪˈnænʃəl ˌɪndɪˈpendəns ænd ɪnˈhɑːnst kəˈrɪə ˌprepəˈreɪʃən/
-121. Working students | /ˈwɜːkɪŋ ˈstjuːdənts/
-122. manage both commitments effectively | /ˈmænɪdʒ bəʊθ kəˈmɪtmənts ɪˈfektɪvli/
-123. successful academic performance | /səkˈsesfəl ˌækəˈdemɪk pəˈfɔːməns/
-124. students with part-time employment | /ˈstjuːdənts wɪð pɑːt taɪm ɪmˈplɔɪmənt/
-125. better organizational skills and work readiness | /ˈbetər ˌɔːɡənaɪˈzeɪʃənəl skɪlz ænd wɜːk ˈredɪnəs/
-126. without work experience | /wɪˈðaʊt wɜːk ɪkˈspɪəriəns/
-127. work-study balance | /wɜːk ˈstʌdi ˈbæləns/
-128. limited study time and work-related stress | /ˈlɪmɪtɪd ˈstʌdi taɪm ænd wɜːk rɪˈleɪtɪd stres/
-129. competing demands and reduced focus | /kəmˈpiːtɪŋ dɪˈmɑːndz ænd rɪˈdjuːst ˈfəʊkəs/
-130. academic pressure and decreased energy levels | /ˌækəˈdemɪk ˈpreʃər ænd dɪˈkriːst ˈenədʒi ˈlevəlz/
-131. Students managing dual commitments | /ˈstjuːdənts ˈmænɪdʒɪŋ ˈdjuːəl kəˈmɪtmənts/
-132. work long hours | /wɜːk lɒŋ ˈaʊəz/
-133. sacrifice sleep and personal time | /ˈsækrɪfaɪs sliːp ænd ˈpɜːsənəl taɪm/
-134. time constraints and tiredness | /taɪm kənˈstreɪnts ænd ˈtaɪədnəs/
-135. optimal academic performance | /ˈɒptɪməl ˌækəˈdemɪk pəˈfɔːməns/
-136. strong time management and realistic expectations | /strɒŋ taɪm ˈmænɪdʒmənt ænd ˌriːəˈlɪstɪk ˌekspekˈteɪʃənz/
-137. students and educational institutions | /ˈstjuːdənts ænd ˌedjʊˈkeɪʃənəl ˌɪnstɪˈtjuːʃənz/
+## Example 5: Television's Useful Functions
+106. whether television serves multiple useful functions in modern life | /PLACEHOLDER/
+107. television offers substantial benefits | /PLACEHOLDER/
+108. viewers | /PLACEHOLDER/
+109. certain limitations | /PLACEHOLDER/
+110. television | /PLACEHOLDER/
+111. relaxation and stress relief | /PLACEHOLDER/
+112. watching television | /PLACEHOLDER/
+113. educational programs and learning opportunities | /PLACEHOLDER/
+114. entertainment and companionship for isolated individuals | /PLACEHOLDER/
+115. Viewers who watch quality programs | /PLACEHOLDER/
+116. improved knowledge and reduced stress levels | /PLACEHOLDER/
+117. people who regularly watch educational documentaries | /PLACEHOLDER/
+118. better understanding of current events and cultural awareness | /PLACEHOLDER/
+119. without regular television access | /PLACEHOLDER/
+120. television viewing | /PLACEHOLDER/
+121. modern lifestyles | /PLACEHOLDER/
+122. heavy television consumption | /PLACEHOLDER/
+123. excessive screen time and inactive lifestyle | /PLACEHOLDER/
+124. physical health issues and less social contact | /PLACEHOLDER/
+125. People | /PLACEHOLDER/
+126. use television to wind down after work | /PLACEHOLDER/
+127. spending long hours sitting inactive rather than exercising | /PLACEHOLDER/
+128. regular viewers | /PLACEHOLDER/
+129. poor physical health and social isolation | /PLACEHOLDER/
+130. active lifestyles and meaningful connections | /PLACEHOLDER/
+131. families and viewers | /PLACEHOLDER/
+132. balanced viewing habits | /PLACEHOLDER/
 
-## Example 6: Work-Life Balance
-138. how important work-life balance is | /haʊ ɪmˈpɔːtənt wɜːk laɪf ˈbæləns ɪz/
-139. maintaining balance between work and personal life | /meɪnˈteɪnɪŋ ˈbæləns bɪˈtwiːn wɜːk ænd ˈpɜːsənəl laɪf/
-140. extremely important for wellbeing | /ɪkˈstriːmli ɪmˈpɔːtənt fɔː ˌwelˈbiːɪŋ/
-141. difficult to achieve | /ˈdɪfɪkəlt tu əˈtʃiːv/
-142. work-life balance is essential | /wɜːk laɪf ˈbæləns ɪz ɪˈsenʃəl/
-143. mental health and physical wellbeing | /ˈmentəl helθ ænd ˈfɪzɪkəl ˌwelˈbiːɪŋ/
-144. achieving work-life balance | /əˈtʃiːvɪŋ wɜːk laɪf ˈbæləns/
-145. strong family relationships and personal happiness | /strɒŋ ˈfæməli rɪˈleɪʃənʃɪps ænd ˈpɜːsənəl ˈhæpɪnəs/
-146. increased productivity and job satisfaction | /ɪnˈkriːst ˌprɒdʌkˈtɪvɪti ænd dʒɒb ˌsætɪsˈfækʃən/
-147. Employees with healthy work-life balance | /ɪmˈplɔɪiːz wɪð ˈhelθi wɜːk laɪf ˈbæləns/
-148. better stress management | /ˈbetə stres ˈmænɪdʒmənt/
-149. workers who maintain regular schedules | /ˈwɜːkəz huː meɪnˈteɪn ˈreɡjələ ˈskedʒuːlz/
-150. improved mental health and family relationships | /ɪmˈpruːvd ˈmentəl helθ ænd ˈfæməli rɪˈleɪʃənʃɪps/
-151. with excessive work demands | /wɪð ɪkˈsesɪv wɜːk dɪˈmɑːndz/
-152. achieving this balance | /əˈtʃiːvɪŋ ðɪs ˈbæləns/
-153. modern work environments | /ˈmɒdən wɜːk ɪnˈvaɪrənmənts/
-154. competitive work culture and financial obligations | /kəmˈpetɪtɪv wɜːk ˈkʌltʃər ænd faɪˈnænʃəl ˌɒblɪˈɡeɪʃənz/
-155. long working hours and constant connectivity | /lɒŋ ˈwɜːkɪŋ ˈaʊəz ænd ˈkɒnstənt ˌkɒnekˈtɪvɪti/
-156. reduced personal time and increased family stress | /rɪˈdjuːst ˈpɜːsənəl taɪm ænd ɪnˈkriːst ˈfæməli stres/
-157. Workers in demanding jobs | /ˈwɜːkəz ɪn dɪˈmɑːndɪŋ dʒɒbz/
-158. work long hours | /wɜːk lɒŋ ˈaʊəz/
-159. check work emails after hours | /tʃek wɜːk ˈiːmeɪlz ˈɑːftər ˈaʊəz/
-160. working professionals | /ˈwɜːkɪŋ prəˈfeʃənəlz/
-161. work-related stress and difficulty maintaining boundaries | /wɜːk rɪˈleɪtɪd stres ænd ˈdɪfɪkəlti meɪnˈteɪnɪŋ ˈbaʊndəriz/
-162. healthy work-life separation | /ˈhelθi wɜːk laɪf ˌsepəˈreɪʃən/
-163. work-life balance | /wɜːk laɪf ˈbæləns/
-164. modern work demands | /ˈmɒdən wɜːk dɪˈmɑːndz/
-165. employers and employees | /ɪmˈplɔɪəz ænd ɪmˈplɔɪiːz/
-166. better balance and healthier work practices | /ˈbetə ˈbæləns ænd ˈhelθiə wɜːk ˈpræktɪsɪz/
+## Example 6: Experiential Learning
+133. whether practical learning methods benefit high school and college students | /PLACEHOLDER/
+134. experiential learning offers substantial benefits | /PLACEHOLDER/
+135. students | /PLACEHOLDER/
+136. the value of traditional teaching | /PLACEHOLDER/
+137. experiential learning | /PLACEHOLDER/
+138. practical skills and direct application | /PLACEHOLDER/
+139. learning by doing | /PLACEHOLDER/
+140. real-world knowledge and higher engagement | /PLACEHOLDER/
+141. better learning and stronger motivation | /PLACEHOLDER/
+142. Students who participate in practical projects | /PLACEHOLDER/
+143. improved problem-solving abilities | /PLACEHOLDER/
+144. learners engaged in hands-on activities | /PLACEHOLDER/
+145. better skill development and deeper understanding | /PLACEHOLDER/
+146. studying only from textbooks | /PLACEHOLDER/
+147. hands-on learning | /PLACEHOLDER/
+148. educational institutions | /PLACEHOLDER/
+149. implementing practical programs | /PLACEHOLDER/
+150. higher resource requirements and preparation time | /PLACEHOLDER/
+151. budget constraints and staffing limitations | /PLACEHOLDER/
+152. Schools that offer hands-on learning | /PLACEHOLDER/
+153. educators to balance practical activities with required curriculum coverage | /PLACEHOLDER/
+154. teachers | /PLACEHOLDER/
+155. implementation difficulties | /PLACEHOLDER/
+156. provide experiential programs consistently | /PLACEHOLDER/
+157. high schools and universities | /PLACEHOLDER/
 
-## Example 7: Television's Useful Functions
-167. whether television serves many useful functions | /ˈweðə ˈtelɪvɪʒən sɜːvz ˈmeni ˈjuːsfəl ˈfʌŋkʃənz/
-168. television offers substantial benefits | /ˈtelɪvɪʒən ˈɒfəz səbˈstænʃəl ˈbenɪfɪts/
-169. viewers | /ˈvjuːəz/
-170. television | /ˈtelɪvɪʒən/
-171. entertainment and relaxation | /ˌentəˈteɪnmənt ænd ˌriːlækˈseɪʃən/
-172. watching television | /ˈwɒtʃɪŋ ˈtelɪvɪʒən/
-173. stress relief and mental rest | /stres rɪˈliːf ænd ˈmentəl rest/
-174. better mood and reduced anxiety | /ˈbetə muːd ænd rɪˈdjuːst æŋˈzaɪəti/
-175. television offers learning opportunities and social awareness | /ˈtelɪvɪʒən ˈɒfəz ˈlɜːnɪŋ ˌɒpəˈtjuːnɪtiz ænd ˈsəʊʃəl əˈweənəs/
-176. People who watch educational programs | /ˈpiːpl huː wɒtʃ ˌedjʊˈkeɪʃənəl ˈprəʊɡræmz/
-177. improved knowledge | /ɪmˈpruːvd ˈnɒlɪdʒ/
-178. viewers who watch news and documentaries | /ˈvjuːəz huː wɒtʃ njuːz ænd ˌdɒkjʊˈmentəriz/
-179. better understanding of current events | /ˈbetər ˌʌndəˈstændɪŋ ɒv ˈkʌrənt ɪˈvents/
-180. without regular TV access | /wɪˈðaʊt ˈreɡjələ ˌtiːˈviː ˈækses/
-181. television viewing | /ˈtelɪvɪʒən ˈvjuːɪŋ/
-182. modern lifestyles | /ˈmɒdən ˈlaɪfstaɪlz/
-183. passive screen time and limited physical activity | /ˈpæsɪv skriːn taɪm ænd ˈlɪmɪtɪd ˈfɪzɪkəl ækˈtɪvɪti/
-184. health concerns and reduced exercise | /helθ kənˈsɜːnz ænd rɪˈdjuːst ˈeksəsaɪz/
-185. decreased fitness and social isolation | /dɪˈkriːst ˈfɪtnəs ænd ˈsəʊʃəl ˌaɪsəˈleɪʃən/
-186. People who watch excessive television | /ˈpiːpl huː wɒtʃ ɪkˈsesɪv ˈtelɪvɪʒən/
-187. spend long periods sitting | /spend lɒŋ ˈpɪəriədz ˈsɪtɪŋ/
-188. choose between TV and active hobbies | /tʃuːz bɪˈtwiːn ˌtiːˈviː ænd ˈæktɪv ˈhɒbiz/
-189. regular viewers | /ˈreɡjələ ˈvjuːəz/
-190. inactive lifestyle and reduced outdoor time | /ɪnˈæktɪv ˈlaɪfstaɪl ænd rɪˈdjuːst ˈaʊtdɔː taɪm/
-191. overall importance of television | /ˌəʊvərˈɔːl ɪmˈpɔːtəns ɒv ˈtelɪvɪʒən/
-192. viewers and families | /ˈvjuːəz ænd ˈfæməliz/
-193. television time with active pursuits | /ˈtelɪvɪʒən taɪm wɪð ˈæktɪv pəˈsjuːts/
+## Example 7: Late Assignment Penalties
+158. whether universities should implement grade deductions for late submissions | /PLACEHOLDER/
+159. late assignment penalties offer substantial benefits | /PLACEHOLDER/
+160. students | /PLACEHOLDER/
+161. needing some flexibility | /PLACEHOLDER/
+162. late assignment penalties | /PLACEHOLDER/
+163. time management and planning skills | /PLACEHOLDER/
+164. grade deductions for late work | /PLACEHOLDER/
+165. personal responsibility and deadline awareness | /PLACEHOLDER/
+166. meeting deadlines and work discipline | /PLACEHOLDER/
+167. Students facing clear deadline requirements | /PLACEHOLDER/
+168. better organization skills | /PLACEHOLDER/
+169. learners who must submit work on time to make the grade | /PLACEHOLDER/
+170. improved time management and better planning | /PLACEHOLDER/
+171. without penalty systems | /PLACEHOLDER/
+172. penalty systems | /PLACEHOLDER/
+173. academic environments | /PLACEHOLDER/
+174. strict deadlines | /PLACEHOLDER/
+175. unfair situations | /PLACEHOLDER/
+176. difficulties for students facing genuine emergencies | /PLACEHOLDER/
+177. Universities with strict policies | /PLACEHOLDER/
+178. students to submit work even during personal crises | /PLACEHOLDER/
+179. making the grade | /PLACEHOLDER/
+180. universities | /PLACEHOLDER/
+181. moderate daily deductions of five to ten percent | /PLACEHOLDER/
+182. establish clear extension procedures for documented emergencies | /PLACEHOLDER/
+183. responsibility and student support | /PLACEHOLDER/
+184. universities and instructors | /PLACEHOLDER/
+185. these balanced recommendations | /PLACEHOLDER/
 
-194. television does serve many useful functions | /ˈtelɪvɪʒən dʌz sɜːv ˈmeni ˈjuːsfəl ˈfʌŋkʃənz/
+## Example 8: Combining Study and Work
+186. whether students can realistically balance work and study simultaneously | /PLACEHOLDER/
+187. combining study and work is realistic | /PLACEHOLDER/
+188. students | /PLACEHOLDER/
+189. certain challenges | /PLACEHOLDER/
+190. balancing work and study | /PLACEHOLDER/
+191. flexible hours and remote work options | /PLACEHOLDER/
+192. combining study and work | /PLACEHOLDER/
+193. online classes and part-time jobs | /PLACEHOLDER/
+194. time savings and better organization | /PLACEHOLDER/
+195. Students who manage both commitments | /PLACEHOLDER/
+196. strong time management skills | /PLACEHOLDER/
+197. working students with flexible schedules | /PLACEHOLDER/
+198. academic success and valuable practical experience | /PLACEHOLDER/
+199. without work experience | /PLACEHOLDER/
+200. managing both commitments | /PLACEHOLDER/
+201. modern educational settings | /PLACEHOLDER/
+202. dual responsibilities | /PLACEHOLDER/
+203. distractions and reduced focus | /PLACEHOLDER/
+204. time conflicts and schedule pressure | /PLACEHOLDER/
+205. Students | /PLACEHOLDER/
+206. juggle work and study demands | /PLACEHOLDER/
+207. sacrifice sleep and personal time to meet all responsibilities | /PLACEHOLDER/
+208. working students | /PLACEHOLDER/
+209. stress and fatigue | /PLACEHOLDER/
+210. strong academic performance | /PLACEHOLDER/
+211. students and universities | /PLACEHOLDER/
 
-## Example 8: Experiential Learning in Education
-195. whether experiential learning is beneficial in high school or college | /ˈweðər ɪkˌspɪəriˈenʃəl ˈlɜːnɪŋ ɪz ˌbenɪˈfɪʃəl ɪn haɪ skuːl ɔː ˈkɒlɪdʒ/
-196. learning by doing offers significant advantages | /ˈlɜːnɪŋ baɪ ˈduːɪŋ ˈɒfəz sɪɡˈnɪfɪkənt ədˈvɑːntɪdʒɪz/
-197. the value of traditional teaching methods | /ðə ˈvæljuː ɒv trəˈdɪʃənəl ˈtiːtʃɪŋ ˈmeθədz/
-198. hands-on learning is beneficial | /hændz ɒn ˈlɜːnɪŋ ɪz ˌbenɪˈfɪʃəl/
-199. practical skills and real-world experience | /ˈpræktɪkəl skɪlz ænd ˈrɪəl wɜːld ɪkˈspɪəriəns/
-200. experiential learning | /ɪkˌspɪəriˈenʃəl ˈlɜːnɪŋ/
-201. better understanding through practice | /ˈbetər ˌʌndəˈstændɪŋ θruː ˈpræktɪs/
-202. increased student engagement and better memory | /ɪnˈkriːst ˈstjuːdənt ɪnˈɡeɪdʒmənt ænd ˈbetə ˈmeməri/
-203. Students who participate in hands-on activities | /ˈstjuːdənts huː pɑːˈtɪsɪpeɪt ɪn hændz ɒn ækˈtɪvɪtiz/
-204. strong practical skills | /strɒŋ ˈpræktɪkəl skɪlz/
-205. learners who complete practical projects | /ˈlɜːnəz huː kəmˈpliːt ˈpræktɪkəl ˈprɒdʒekts/
-206. better skill development and deeper understanding | /ˈbetə skɪl dɪˈveləpmənt ænd ˈdiːpər ˌʌndəˈstændɪŋ/
-207. relying only on textbook learning | /rɪˈlaɪɪŋ ˈəʊnli ɒn ˈtekstbʊk ˈlɜːnɪŋ/
-208. traditional teaching approaches | /trəˈdɪʃənəl ˈtiːtʃɪŋ əˈprəʊtʃɪz/
-209. formal education settings | /ˈfɔːməl ˌedjʊˈkeɪʃən ˈsetɪŋz/
-210. structured lectures and theoretical instruction | /ˈstrʌktʃəd ˈlektʃəz ænd ˌθɪəˈretɪkəl ɪnˈstrʌkʃən/
-211. strong knowledge foundation and clear learning objectives | /strɒŋ ˈnɒlɪdʒ faʊnˈdeɪʃən ænd klɪər ˈlɜːnɪŋ əbˈdʒektɪvz/
-212. efficient content coverage and systematic understanding | /ɪˈfɪʃənt ˈkɒntent ˈkʌvərɪdʒ ænd ˌsɪstəˈmætɪk ˌʌndəˈstændɪŋ/
-213. Educational programs | /ˌedjʊˈkeɪʃənəl ˈprəʊɡræmz/
-214. combine experiential and traditional methods | /kəmˈbaɪn ɪkˌspɪəriˈenʃəl ænd trəˈdɪʃənəl ˈmeθədz/
-215. balanced learning outcomes | /ˈbælənst ˈlɜːnɪŋ ˈaʊtkʌmz/
-216. successful schools | /səkˈsesfəl skuːlz/
-217. enhanced student performance | /ɪnˈhɑːnst ˈstjuːdənt pəˈfɔːməns/
-218. integrated teaching approaches that use both methods | /ˈɪntɪɡreɪtɪd ˈtiːtʃɪŋ əˈprəʊtʃɪz ðæt juːz bəʊθ ˈmeθədz/
-219. experiential learning brings important benefits | /ɪkˌspɪəriˈenʃəl ˈlɜːnɪŋ brɪŋz ɪmˈpɔːtənt ˈbenɪfɪts/
-220. high school and college education | /haɪ skuːl ænd ˈkɒlɪdʒ ˌedjʊˈkeɪʃən/
-221. traditional methods | /trəˈdɪʃənəl ˈmeθədz/
-222. essential theoretical foundation | /ɪˈsenʃəl ˌθɪəˈretɪkəl faʊnˈdeɪʃən/
-223. educators and schools | /ˈedjʊkeɪtəz ænd skuːlz/
-224. balanced approaches that combine both learning styles | /ˈbælənst əˈprəʊtʃɪz ðæt kəmˈbaɪn bəʊθ ˈlɜːnɪŋ staɪlz/
+## Example 9: Experiential Learning
+212. whether practical learning methods benefit students in formal education | /PLACEHOLDER/
+213. experiential learning offers substantial benefits | /PLACEHOLDER/
+214. high school and college students | /PLACEHOLDER/
+215. certain limitations | /PLACEHOLDER/
+216. experiential learning | /PLACEHOLDER/
+217. practical skills and direct application | /PLACEHOLDER/
+218. learning by doing | /PLACEHOLDER/
+219. real-world knowledge and higher student engagement | /PLACEHOLDER/
+220. better retention and career readiness | /PLACEHOLDER/
+221. Students who participate in practical projects | /PLACEHOLDER/
+222. stronger understanding and problem-solving abilities | /PLACEHOLDER/
+223. learners who engage in hands-on activities | /PLACEHOLDER/
+224. improved skill development and confidence | /PLACEHOLDER/
+225. who study only from textbooks | /PLACEHOLDER/
+226. active learning methods | /PLACEHOLDER/
+227. educational institutions | /PLACEHOLDER/
+228. implementing practical programs | /PLACEHOLDER/
+229. higher resource requirements and preparation time | /PLACEHOLDER/
+230. budget constraints and staffing limitations | /PLACEHOLDER/
+231. Schools | /PLACEHOLDER/
+232. offer hands-on learning opportunities | /PLACEHOLDER/
+233. educators to balance practical activities with required curriculum coverage | /PLACEHOLDER/
+234. teachers | /PLACEHOLDER/
+235. difficulty scaling experiential programs | /PLACEHOLDER/
+236. offer these learning experience consistently | /PLACEHOLDER/
+237. high schools and universities | /PLACEHOLDER/
 
-## Example 9: Late Assignment Penalties
-225. whether universities should deduct marks for late assignments | /ˈweðə ˌjuːnɪˈvɜːsɪtiz ʃʊd dɪˈdʌkt mɑːks fɔː leɪt əˈsaɪnmənts/
-226. grade penalties for late submission are generally reasonable | /ɡreɪd ˈpenəltiz fɔː leɪt səbˈmɪʃən ɑː ˈdʒenrəli ˈriːznəbl/
-227. the need for some flexibility | /ðə niːd fɔː sʌm ˌfleksɪˈbɪləti/
-228. deducting marks for late work is appropriate | /dɪˈdʌktɪŋ mɑːks fɔː leɪt wɜːk ɪz əˈprəʊpriət/
-229. important time management skills and personal responsibility | /ɪmˈpɔːtənt taɪm ˈmænɪdʒmənt skɪlz ænd ˈpɜːsənəl rɪˌspɒnsɪˈbɪləti/
-230. enforcing assignment deadlines | /ɪnˈfɔːsɪŋ əˈsaɪnmənt ˈdedlaɪnz/
-231. better planning habits and work discipline | /ˈbetə ˈplænɪŋ ˈhæbɪts ænd wɜːk ˈdɪsɪplɪn/
-232. improved organizational skills and career readiness | /ɪmˈpruːvd ˌɔːɡənaɪˈzeɪʃənəl skɪlz ænd kəˈrɪər ˈredɪnəs/
-233. Students who meet deadlines consistently | /ˈstjuːdənts huː miːt ˈdedlaɪnz kənˈsɪstəntli/
-234. strong time management abilities | /strɒŋ taɪm ˈmænɪdʒmənt əˈbɪlɪtiz/
-235. learners who submit work on time | /ˈlɜːnəz huː səbˈmɪt wɜːk ɒn taɪm/
-236. better preparation for workplace expectations | /ˈbetə ˌprepəˈreɪʃən fɔː ˈwɜːkpleɪs ˌekspekˈteɪʃənz/
-237. without deadline experience | /wɪˈðaʊt ˈdedlaɪn ɪkˈspɪəriəns/
-238. strict deadline policies | /strɪkt ˈdedlaɪn ˈpɒlɪsiz/
-239. academic settings | /ˌækəˈdemɪk ˈsetɪŋz/
-240. unexpected personal emergencies and real health issues | /ˌʌnɪkˈspektɪd ˈpɜːsənəl ɪˈmɜːdʒənsiz ænd rɪəl helθ ˈɪʃuːz/
-241. valid reasons for delays | /ˈvælɪd ˈriːzənz fɔː dɪˈleɪz/
-242. unfair grade penalties and increased student stress | /ʌnˈfeər ɡreɪd ˈpenəltiz ænd ɪnˈkriːst ˈstjuːdənt stres/
-243. Universities | /ˌjuːnɪˈvɜːsɪtiz/
-244. offer reasonable extensions for valid circumstances | /ˈɒfə ˈriːznəbl ɪkˈstenʃənz fɔː ˈvælɪd ˈsɜːkəmstɑːnsɪz/
-245. balanced outcomes | /ˈbælənst ˈaʊtkʌmz/
-246. effective institutions | /ɪˈfektɪv ˌɪnstɪˈtjuːʃənz/
-247. flexible policies with proper documentation requirements | /ˈfleksɪbl ˈpɒlɪsiz wɪð ˈprɒpə ˌdɒkjʊmenˈteɪʃən rɪˈkwaɪəmənts/
-248. late penalties serve important educational purposes | /leɪt ˈpenəltiz sɜːv ɪmˈpɔːtənt ˌedjʊˈkeɪʃənəl ˈpɜːpəsɪz/
-249. reasonable flexibility | /ˈriːznəbl ˌfleksɪˈbɪləti/
-250. valid student needs | /ˈvælɪd ˈstjuːdənt niːdz/
-251. universities implement clear deadline policies | /ˌjuːnɪˈvɜːsɪtiz ˈɪmplɪment klɪər ˈdedlaɪn ˈpɒlɪsiz/
-252. moderate grade deductions | /ˈmɒdərət ɡreɪd dɪˈdʌkʃənz/
-253. institutions should provide fair extension procedures | /ˌɪnstɪˈtjuːʃənz ʃʊd prəˈvaɪd feər ɪkˈstenʃən prəˈsiːdʒəz/
-254. documented emergencies | /ˌdɒkjʊˈmentɪd ɪˈmɜːdʒənsiz/
+## Example 10: Building Design Impact
+238. how architectural planning influences work and living environments | /PLACEHOLDER/
+239. building design offers substantial benefits | /PLACEHOLDER/
+240. people | /PLACEHOLDER/
+241. certain limitations | /PLACEHOLDER/
+242. good building design | /PLACEHOLDER/
+243. natural light and comfortable spaces | /PLACEHOLDER/
+244. architectural planning | /PLACEHOLDER/
+245. better productivity and improved mood | /PLACEHOLDER/
+246. fresh air circulation and open layouts | /PLACEHOLDER/
+247. Workers in well-designed buildings | /PLACEHOLDER/
+248. higher satisfaction and better performance | /PLACEHOLDER/
+249. employees in buildings with natural lighting and open spaces | /PLACEHOLDER/
+250. improved well-being and focus | /PLACEHOLDER/
+251. in poorly designed facilities | /PLACEHOLDER/
+252. building design | /PLACEHOLDER/
+253. planning is poor | /PLACEHOLDER/
+254. inadequate architectural choices | /PLACEHOLDER/
+255. insufficient ventilation and limited space | /PLACEHOLDER/
+256. health problems and lower motivation | /PLACEHOLDER/
+257. Buildings with cramped quarters | /PLACEHOLDER/
+258. workers to cope with poor conditions | /PLACEHOLDER/
+259. residents and workers | /PLACEHOLDER/
+260. difficulty maintaining health and efficiency | /PLACEHOLDER/
+261. function effectively in poorly designed spaces | /PLACEHOLDER/
+262. architects and developers | /PLACEHOLDER/
 
-## Example 10: Most Pressing Global Problem
-255. which problem is most pressing for people around the world | /wɪtʃ ˈprɒbləm ɪz məʊst ˈpresɪŋ fɔː ˈpiːpl əˈraʊnd ðə wɜːld/
-256. climate change represents the most urgent challenge | /ˈklaɪmət tʃeɪndʒ ˌreprɪˈzents ðə məʊst ˈɜːdʒənt ˈtʃælɪndʒ/
-257. people worldwide | /ˈpiːpəl ˌwɜːldˈwaɪd/
-258. climate change is the most critical issue | /ˈklaɪmət tʃeɪndʒ ɪz ðə məʊst ˈkrɪtɪkəl ˈɪʃuː/
-259. rising temperatures and extreme weather events | /ˈraɪzɪŋ ˈtemprətʃəz ænd ɪkˈstriːm ˈweðər ɪˈvents/
-260. environmental damage and habitat loss | /ɪnˌvaɪrənˈmentəl ˈdæmɪdʒ ænd ˈhæbɪtæt lɒs/
-261. sea level rise and food shortages | /siː ˈlevəl raɪz ænd fuːd ˈʃɔːtɪdʒɪz/
-262. Nations experiencing climate impacts | /ˈneɪʃənz ɪkˈspɪəriənsɪŋ ˈklaɪmət ˈɪmpækts/
-263. severe weather damage and economic harm | /sɪˈvɪər ˈweðə ˈdæmɪdʒ ænd ˌiːkəˈnɒmɪk hɑːm/
-264. countries facing climate change effects | /ˈkʌntriz ˈfeɪsɪŋ ˈklaɪmət tʃeɪndʒ ɪˈfekts/
-265. worse environmental conditions | /wɜːs ɪnˌvaɪrənˈmentəl kənˈdɪʃənz/
-266. with stable climate patterns | /wɪð ˈsteɪbl ˈklaɪmət ˈpætənz/
-267. several key solutions | /ˈsevrəl kiː səˈluːʃənz/
-268. governments and international organizations | /ˈɡʌvənmənts ænd ˌɪntəˈnæʃənəl ˌɔːɡənaɪˈzeɪʃənz/
-269. immediate action and policy changes | /ɪˈmiːdiət ˈækʃən ænd ˈpɒlɪsi ˈtʃeɪndʒɪz/
-270. investing in clean energy and carbon reduction | /ɪnˈvestɪŋ ɪn kliːn ˈenədʒi ænd ˈkɑːbən rɪˈdʌkʃən/
-271. lower emissions and stable climate | /ˈləʊər ɪˈmɪʃənz ænd ˈsteɪbl ˈklaɪmət/
-272. improved environmental conditions | /ɪmˈpruːvd ɪnˌvaɪrənˈmentəl kənˈdɪʃənz/
-273. countries that adopt environmental protection measures | /ˈkʌntriz ðæt əˈdɒpt ɪnˌvaɪrənˈmentəl prəˈtekʃən ˈmeʒəz/
-274. positive long-term results | /ˈpɒzɪtɪv lɒŋ tɜːm rɪˈzʌlts/
-275. nations implementing climate solutions | /ˈneɪʃənz ˈɪmplɪmentɪŋ ˈklaɪmət səˈluːʃənz/
-276. better environmental outcomes | /ˈbetər ɪnˌvaɪrənˈmentəl ˈaʊtkʌmz/
-277. coordinated international efforts | /kəʊˈɔːdɪneɪtɪd ˌɪntəˈnæʃənəl ˈefəts/
-278. without strong climate policies | /wɪˈðaʊt strɒŋ ˈklaɪmət ˈpɒlɪsiz/
-279. climate change remains the most pressing global problem | /ˈklaɪmət tʃeɪndʒ rɪˈmeɪnz ðə məʊst ˈpresɪŋ ˈɡləʊbəl ˈprɒbləm/
-280. comprehensive solutions through policy changes, clean energy, and international cooperation | /ˌkɒmprɪˈhensɪv səˈluːʃənz θruː ˈpɒlɪsi ˈtʃeɪndʒɪz kliːn ˈenədʒi ænd ˌɪntəˈnæʃənəl kəʊˌɒpəˈreɪʃən/
+## Example 11: Work-Life Balance
+263. how important it is to balance work with personal life | /PLACEHOLDER/
+264. maintaining this equilibrium | /PLACEHOLDER/
+265. critically important | /PLACEHOLDER/
+266. people | /PLACEHOLDER/
+267. being difficult to achieve | /PLACEHOLDER/
+268. work-life balance | /PLACEHOLDER/
+269. improved mental health and emotional stability | /PLACEHOLDER/
+270. achieving this balance | /PLACEHOLDER/
+271. family time and leisure activities | /PLACEHOLDER/
+272. personal happiness and reduced stress | /PLACEHOLDER/
+273. Employees who protect personal boundaries | /PLACEHOLDER/
+274. better psychological well-being | /PLACEHOLDER/
+275. workers who maintain clear separation between work and home | /PLACEHOLDER/
+276. improved mental health and stronger family relationships | /PLACEHOLDER/
+277. without clear work-life boundaries | /PLACEHOLDER/
+278. modern work environments | /PLACEHOLDER/
+279. competitive work culture | /PLACEHOLDER/
+280. high career expectations and constant pressure | /PLACEHOLDER/
+281. long working hours and excessive job demands | /PLACEHOLDER/
+282. Many workplaces | /PLACEHOLDER/
+283. around-the-clock availability | /PLACEHOLDER/
+284. respond to emails after hours and accept overtime | /PLACEHOLDER/
+285. employees | /PLACEHOLDER/
+286. time constraints and competing priorities | /PLACEHOLDER/
+287. a balanced lifestyle | /PLACEHOLDER/
+288. modern work demands | /PLACEHOLDER/
+289. employers and individuals | /PLACEHOLDER/
+290. healthy work-life boundaries | /PLACEHOLDER/
 
-## Example 11: Building Design Impact
-281. how building design affects where people work and live | /haʊ ˈbɪldɪŋ dɪˈzaɪn əˈfekts weər ˈpiːpl wɜːk ænd lɪv/
-282. architectural design offers substantial benefits | /ˌɑːkɪˈtektʃərəl dɪˈzaɪn ˈɒfəz səbˈstænʃəl ˈbenɪfɪts/
-283. people | /ˈpiːpl/
-284. the risks of poor planning | /ðə rɪsks ɒv pʊə ˈplænɪŋ/
-285. good building design is beneficial | /ɡʊd ˈbɪldɪŋ dɪˈzaɪn ɪz ˌbenɪˈfɪʃəl/
-286. natural light and comfortable spaces | /ˈnætʃrəl laɪt ænd ˈkʌmftəbl ˈspeɪsɪz/
-287. thoughtful architectural design | /ˈθɔːtfəl ˌɑːkɪˈtektʃərəl dɪˈzaɪn/
-288. fresh air and open layouts | /freʃ eər ænd ˈəʊpən ˈleɪaʊts/
-289. better productivity and improved mood | /ˈbetə ˌprɒdʌkˈtɪvɪti ænd ɪmˈpruːvd muːd/
-290. Workers in well-designed buildings | /ˈwɜːkəz ɪn wel dɪˈzaɪnd ˈbɪldɪŋz/
-291. increased focus and positive attitudes | /ɪnˈkriːst ˈfəʊkəs ænd ˈpɒzɪtɪv ˈætɪtjuːdz/
-292. employees in buildings with natural light | /ˌemplɔɪˈiːz ɪn ˈbɪldɪŋz wɪð ˈnætʃrəl laɪt/
-293. better mood and higher energy levels | /ˈbetə muːd ænd ˈhaɪər ˈenədʒi ˈlevəlz/
-294. in buildings with poor lighting | /ɪn ˈbɪldɪŋz wɪð pʊə ˈlaɪtɪŋ/
-295. poor building design | /pʊə ˈbɪldɪŋ dɪˈzaɪn/
-296. work and living environments | /wɜːk ænd ˈlɪvɪŋ ɪnˈvaɪrənmənts/
-297. poor air flow and limited spaces | /pʊə eə fləʊ ænd ˈlɪmɪtɪd ˈspeɪsɪz/
-298. health problems and lower motivation | /helθ ˈprɒbləmz ænd ˈləʊə ˌməʊtɪˈveɪʃən/
-299. decreased productivity and increased stress | /dɪˈkriːst ˌprɒdʌkˈtɪvɪti ænd ɪnˈkriːst stres/
-300. People in poorly designed buildings | /ˈpiːpl ɪn ˈpʊəli dɪˈzaɪnd ˈbɪldɪŋz/
-301. work in small spaces | /wɜːk ɪn smɔːl ˈspeɪsɪz/
-302. physical discomfort and reduced wellbeing | /ˈfɪzɪkəl dɪsˈkʌmfət ænd rɪˈdjuːst ˌwelˈbiːɪŋ/
-303. workers and residents | /ˈwɜːkəz ænd ˈrezɪdənts/
-304. poor air quality and mental tiredness | /pɔː ˈeə ˈkwɒlɪti ænd ˈmentəl ˈtaɪədnəs/
-305. healthy living and working conditions | /ˈhelθi ˈlɪvɪŋ ænd ˈwɜːkɪŋ kənˈdɪʃənz/
-306. overall importance of architectural design | /ˌəʊvərˈɔːl ɪmˈpɔːtəns ɒv ˌɑːkɪˈtektʃərəl dɪˈzaɪn/
-307. good design | /ɡʊd dɪˈzaɪn/
-308. poor design | /pʊə dɪˈzaɪn/
-309. architects and developers | /ˈɑːkɪtekts ænd dɪˈveləpəz/
-310. quality design that supports health and productivity | /ˈkwɒlɪti dɪˈzaɪn ðæt səˈpɔːts helθ ænd ˌprɒdʌkˈtɪvɪti/
-
-## Example 12: New Invention Impact
-311. what impact new inventions have had on society | /wɒt ˈɪmpækt njuː ɪnˈvenʃənz hæv hæd ɒn səˈsaɪəti/
-312. smartphones represent a significant technological advancement that offers substantial benefits | /smɑːtfəʊnz ˌreprɪˈzent ə sɪɡˈnɪfɪkənt ˌteknəˈlɒdʒɪkəl ədˈvɑːnsmənt ðæt ˈɒfəz səbˈstænʃəl ˈbenɪfɪts/
-313. smartphones bring important benefits | /ˈsmɑːtfəʊnz brɪŋ ɪmˈpɔːtənt ˈbenɪfɪts/
-314. instant communication and global connectivity | /ˈɪnstənt kəˌmjuːnɪˈkeɪʃən ænd ˈɡləʊbəl ˌkɒnekˈtɪvɪti/
-315. smartphones | /ˈsmɑːtfəʊnz/
-316. easy access to information and online services | /ˈiːzi ˈækses tuː ˌɪnfəˈmeɪʃən ænd ˈɒnlaɪn ˈsɜːvɪsɪz/
-317. online learning and improved productivity | /ˈɒnlaɪn ˈlɜːnɪŋ ænd ɪmˈpruːvd ˌprɒdʌkˈtɪvɪti/
-318. Users who rely on smartphones | /ˈjuːzəz huː rɪˈlaɪ ɒn ˈsmɑːtfəʊnz/
-319. better work efficiency and faster communication | /ˈbetə wɜːk ɪˈfɪʃənsi ænd ˈfɑːstə kəˌmjuːnɪˈkeɪʃən/
-320. people using smartphones for work | /ˈpiːpl ˈjuːzɪŋ ˈsmɑːtfəʊnz fɔː wɜːk/
-321. enhanced coordination and quicker information access | /ɪnˈhɑːnst kəʊˌɔːdɪˈneɪʃən ænd ˈkwɪkər ˌɪnfəˈmeɪʃən ˈækses/
-322. without mobile technology | /wɪˈðaʊt ˈməʊbaɪl tekˈnɒlədʒi/
-323. modern society | /ˈmɒdən səˈsaɪəti/
-324. excessive smartphone usage | /ɪkˈsesɪv ˈsmɑːtfəʊn ˈjuːsɪdʒ/
-325. screen addiction and constant device checking | /skriːn əˈdɪkʃən ænd ˈkɒnstənt dɪˈvaɪs ˈtʃekɪŋ/
-326. less face-to-face contact and social isolation | /les feɪs tuː feɪs ˈkɒntækt ænd ˈsəʊʃəl ˌaɪsəˈleɪʃən/
-327. People who overuse smartphones | /ˈpiːpl huː ˌəʊvəˈjuːz ˈsmɑːtfəʊnz/
-328. spend long hours on screens | /spend lɒŋ ˈaʊəz ɒn skriːnz/
-329. sleep problems and eye strain | /sliːp ˈprɒbləmz ænd aɪ streɪn/
-330. smartphone users | /ˈsmɑːtfəʊn ˈjuːzəz/
-331. mental health concerns and reduced real-world interaction | /ˈmentəl helθ kənˈsɜːnz ænd rɪˈdjuːst ˈrɪəl wɜːld ˌɪntərˈækʃən/
-332. healthy social relationships | /ˈhelθi ˈsəʊʃəl rɪˈleɪʃənʃɪps/
-333. overall importance of smartphones | /ˌəʊvərˈɔːl ɪmˈpɔːtəns ɒv ˈsmɑːtfəʊnz/
-334. individuals and technology companies | /ˌɪndɪˈvɪdʒuəlz ænd tekˈnɒlədʒi ˈkʌmpəniz/
-335. responsible smartphone use | /rɪˈspɒnsɪbl ˈsmɑːtfəʊn juːz/
+## Example 12: New Invention Impact (Smartphones)
+291. what impact a new invention has had on society | /PLACEHOLDER/
+292. smartphones offer substantial benefits | /PLACEHOLDER/
+293. people | /PLACEHOLDER/
+294. certain limitations | /PLACEHOLDER/
+295. smartphones | /PLACEHOLDER/
+296. instant communication and global connectivity | /PLACEHOLDER/
+297. mobile phones | /PLACEHOLDER/
+298. easy access to information and online services | /PLACEHOLDER/
+299. online learning and improved productivity | /PLACEHOLDER/
+300. People who use smartphones regularly | /PLACEHOLDER/
+301. better work efficiency and faster communication | /PLACEHOLDER/
+302. users who rely on mobile devices | /PLACEHOLDER/
+303. improved ability to stay connected with family and colleagues | /PLACEHOLDER/
+304. without smartphone access | /PLACEHOLDER/
+305. smartphone technology | /PLACEHOLDER/
+306. modern society | /PLACEHOLDER/
+307. constant device availability | /PLACEHOLDER/
+308. screen addiction and excessive usage | /PLACEHOLDER/
+309. less face-to-face contact and social isolation | /PLACEHOLDER/
+310. People | /PLACEHOLDER/
+311. spend many hours daily on their phones | /PLACEHOLDER/
+312. check messages and social media constantly rather than engaging in direct conversation | /PLACEHOLDER/
+313. individuals | /PLACEHOLDER/
+314. sleep problems and mental health concerns | /PLACEHOLDER/
+315. maintain healthy social habits | /PLACEHOLDER/
+316. individuals and technology companies | /PLACEHOLDER/
+317. balanced smartphone use | /PLACEHOLDER/
 
 ## Example 13: Laws and Human Behavior
-336. whether laws can change human behavior | /ˈweðə lɔːz kæn tʃeɪndʒ ˈhjuːmən bɪˈheɪvjə/
-337. laws can effectively change behavior | /lɔːz kæn ɪˈfektɪvli tʃeɪndʒ bɪˈheɪvjə/
-338. laws changing behavior is effective | /lɔːz ˈtʃeɪndʒɪŋ bɪˈheɪvjə ɪz ɪˈfektɪv/
-339. public safety and social order | /ˈpʌblɪk ˈseɪfti ænd ˈsəʊʃəl ˈɔːdə/
-340. legal regulations | /ˈliːɡəl ˌreɡjʊˈleɪʃənz/
-341. strong enforcement and clear penalties | /strɒŋ ɪnˈfɔːsmənt ænd klɪə ˈpenəltiz/
-342. public awareness and lifestyle changes | /ˈpʌblɪk əˈweənəs ænd ˈlaɪfstaɪl ˈtʃeɪndʒɪz/
-343. Citizens living under strict laws | /ˈsɪtɪzənz ˈlɪvɪŋ ˈʌndə strɪkt lɔːz/
-344. reduced crime and better compliance | /rɪˈdjuːst kraɪm ænd ˈbetə kəmˈplaɪəns/
-345. people in areas with strong traffic laws | /ˈpiːpl ɪn ˈeəriəz wɪð strɒŋ ˈtræfɪk lɔːz/
-346. safer roads and fewer accidents | /ˈseɪfə rəʊdz ænd ˈfjuːər ˈæksɪdənts/
-347. without strict enforcement | /wɪˈðaʊt strɪkt ɪnˈfɔːsmənt/
-348. laws | /lɔːz/
-349. changing deeply rooted behaviors | /ˈtʃeɪndʒɪŋ ˈdiːpli ˈruːtɪd bɪˈheɪvjəz/
-350. cultural resistance and personal beliefs | /ˈkʌltʃərəl rɪˈzɪstəns ænd ˈpɜːsənəl bɪˈliːfs/
-351. limited law effectiveness | /ˈlɪmɪtɪd lɔː ɪˈfektɪvnəs/
-352. individual values to override legal requirements | /ˌɪndɪˈvɪdʒuəl ˈvæljuːz tuː ˌəʊvəˈraɪd ˈliːɡəl rɪˈkwaɪəmənts/
-353. Governments implementing behavioral laws | /ˈɡʌvənmənts ˈɪmplɪmentɪŋ bɪˈheɪvjərəl lɔːz/
-354. require major lifestyle changes | /rɪˈkwaɪə ˈmeɪdʒə ˈlaɪfstaɪl ˈtʃeɪndʒɪz/
-355. enforcement difficulties and high costs | /ɪnˈfɔːsmənt ˈdɪfɪkəltiz ænd haɪ kɒsts/
-356. policymakers | /ˈpɒlɪsiˌmeɪkəz/
-357. public resistance and compliance issues | /ˈpʌblɪk rɪˈzɪstəns ænd kəmˈplaɪəns ˈɪʃuːz/
-358. complete behavioral transformation | /kəmˈpliːt bɪˈheɪvjərəl ˌtrænsfəˈmeɪʃən/
-359. laws can change behavior in many areas | /lɔːz kæn tʃeɪndʒ bɪˈheɪvjə ɪn ˈmeni ˈeəriəz/
-360. cultural and personal factors | /ˈkʌltʃərəl ænd ˈpɜːsənəl ˈfæktəz/
-361. governments and policymakers | /ˈɡʌvənmənts ænd ˈpɒlɪsiˌmeɪkəz/
-362. legal enforcement with education and public awareness | /ˈliːɡəl ɪnˈfɔːsmənt wɪð ˌedjʊˈkeɪʃən ænd ˈpʌblɪk əˈweənəs/
-
-363. laws can change human behavior effectively | /lɔːz kæn tʃeɪndʒ ˈhjuːmən bɪˈheɪvjə ɪˈfektɪvli/
+318. whether legal regulations can effectively modify human conduct | /PLACEHOLDER/
+319. laws changing behavior offers substantial benefits | /PLACEHOLDER/
+320. society | /PLACEHOLDER/
+321. certain limitations | /PLACEHOLDER/
+322. laws changing behavior | /PLACEHOLDER/
+323. public safety and social order | /PLACEHOLDER/
+324. legal regulations | /PLACEHOLDER/
+325. strong enforcement and clear penalties | /PLACEHOLDER/
+326. public awareness and lifestyle changes | /PLACEHOLDER/
+327. Societies with strong legal frameworks | /PLACEHOLDER/
+328. lower crime rates and greater civic responsibility | /PLACEHOLDER/
+329. countries with strict traffic laws | /PLACEHOLDER/
+330. fewer accidents and better road safety | /PLACEHOLDER/
+331. with weak legal enforcement | /PLACEHOLDER/
+332. behavior modification through law | /PLACEHOLDER/
+333. diverse societies | /PLACEHOLDER/
+334. deeply held personal beliefs | /PLACEHOLDER/
+335. cultural resistance and value conflicts | /PLACEHOLDER/
+336. limited law effectiveness and compliance issues | /PLACEHOLDER/
+337. Communities | /PLACEHOLDER/
+338. laws conflict with traditional values | /PLACEHOLDER/
+339. citizens to fall in line with regulations despite personal convictions | /PLACEHOLDER/
+340. governments | /PLACEHOLDER/
+341. difficulty achieving complete behavioral change through legislation alone | /PLACEHOLDER/
+342. implement legal reforms successfully | /PLACEHOLDER/
+343. governments and policymakers | /PLACEHOLDER/
 
 ## Example 14: Tourism in Developing Countries
-364. whether tourism disadvantages equal advantages in developing countries | /ˈweðə ˈtʊərɪzəm ˌdɪsədˈvɑːntɪdʒɪz ˈiːkwəl ədˈvɑːntɪdʒɪz ɪn dɪˈveləpɪŋ ˈkʌntriz/
-365. tourism in developing countries | /ˈtʊərɪzəm ɪn dɪˈveləpɪŋ ˈkʌntriz/
-366. offers substantial benefits | /ˈɒfəz səbˈstænʃəl ˈbenɪfɪts/
-367. economic income and job opportunities | /ˌiːkəˈnɒmɪk ˈɪnkʌm ænd dʒɒb ˌɒpəˈtjuːnɪtiz/
-368. tourism development | /ˈtʊərɪzəm dɪˈveləpmənt/
-369. local business growth and community spirit | /ˈləʊkəl ˈbɪznəs ɡrəʊθ ænd kəˈmjuːnɪti ˈspɪrɪt/
-370. improved living standards and cultural pride | /ɪmˈpruːvd ˈlɪvɪŋ ˈstændədz ænd ˈkʌltʃərəl praɪd/
-371. Local communities receiving tourists | /ˈləʊkəl kəˈmjuːnɪtiz rɪˈsiːvɪŋ ˈtʊərɪsts/
-372. increased employment and economic activity | /ɪnˈkriːst ɪmˈplɔɪmənt ænd ˌiːkəˈnɒmɪk ækˈtɪvɪti/
-373. citizens in tourism areas | /ˈsɪtɪzənz ɪn ˈtʊərɪzəm ˈeəriəz/
-374. better income levels and job security | /ˈbetər ˈɪnkʌm ˈlevəlz ænd dʒɒb sɪˈkjʊərɪti/
-375. in areas without tourism | /ɪn ˈeəriəz wɪˈðaʊt ˈtʊərɪzəm/
-376. tourism | /ˈtʊərɪzəm/
-377. developing regions | /dɪˈveləpɪŋ ˈriːdʒənz/
-378. rapid tourism growth | /ˈræpɪd ˈtʊərɪzəm ɡrəʊθ/
-379. environmental damage and resource depletion | /ɪnˌvaɪrənˈmentəl ˈdæmɪdʒ ænd rɪˈsɔːs dɪˈpliːʃən/
-380. cultural erosion and traditional lifestyles being lost | /ˈkʌltʃərəl ɪˈrəʊʒən ænd trəˈdɪʃənəl ˈlaɪfstaɪlz ˈbiːɪŋ lɒst/
-381. Communities with heavy tourism | /kəˈmjuːnɪtiz wɪð ˈhevi ˈtʊərɪzəm/
-382. rising prices and financial stress for locals | /ˈraɪzɪŋ ˈpraɪsɪz ænd faɪˈnænʃəl stres fɔː ˈləʊkəlz/
-383. local residents | /ˈləʊkəl ˈrezɪdənts/
-384. higher living costs and loss of cultural identity | /ˈhaɪər ˈlɪvɪŋ kɒsts ænd lɒs ɒv ˈkʌltʃərəl aɪˈdentɪti/
-385. traditional ways of life | /trəˈdɪʃənəl weɪz ɒv laɪf/
-386. overall importance of tourism in developing countries | /ˌəʊvərˈɔːl ɪmˈpɔːtəns ɒv ˈtʊərɪzəm ɪn dɪˈveləpɪŋ ˈkʌntriz/
-387. governments and local communities | /ˈɡʌvənmənts ænd ˈləʊkəl kəˈmjuːnɪtiz/
-388. sustainable tourism practices | /səˈsteɪnəbl ˈtʊərɪzəm ˈpræktɪsɪz/
+344. whether tourism benefits or harms developing nations | /PLACEHOLDER/
+345. tourism in developing countries offers substantial benefits | /PLACEHOLDER/
+346. local communities | /PLACEHOLDER/
+347. certain limitations | /PLACEHOLDER/
+348. tourism in developing countries | /PLACEHOLDER/
+349. tourism income and economic benefits | /PLACEHOLDER/
+350. tourism development | /PLACEHOLDER/
+351. job opportunities and business growth | /PLACEHOLDER/
+352. cultural identity and preservation of historical value | /PLACEHOLDER/
+353. Communities with tourism industries | /PLACEHOLDER/
+354. improved living standards and economic opportunities | /PLACEHOLDER/
+355. regions that develop tourism | /PLACEHOLDER/
+356. better local employment and infrastructure improvements | /PLACEHOLDER/
+357. without tourism sectors | /PLACEHOLDER/
+358. tourism growth | /PLACEHOLDER/
+359. developing nations | /PLACEHOLDER/
+360. rapid tourism expansion | /PLACEHOLDER/
+361. environmental damage and resource depletion | /PLACEHOLDER/
+362. cultural erosion and loss of local traditions | /PLACEHOLDER/
+363. Developing countries | /PLACEHOLDER/
+364. try to cash in on tourism quickly | /PLACEHOLDER/
+365. build hotels and attractions without proper planning | /PLACEHOLDER/
+366. financial pressure from rising prices | /PLACEHOLDER/
+367. maintain authentic cultural practices | /PLACEHOLDER/
+368. governments and local communities | /PLACEHOLDER/
 
-## Example 15: Mass Media Influence (General)
-389. whether mass media has both positive and negative impacts on society | /ˈweðə mæs ˈmiːdiə hæz bəʊθ ˈpɒzɪtɪv ænd ˈneɡətɪv ˈɪmpækts ɒn səˈsaɪəti/
-390. mass media influence | /mæs ˈmiːdiə ˈɪnfluəns/
-391. individuals and society | /ˌɪndɪˈvɪdʒuəlz ænd səˈsaɪəti/
-392. mass media | /mæs ˈmiːdiə/
-393. faster information access and global connectivity | /ˈfɑːstər ˌɪnfəˈmeɪʃən ˈækses ænd ˈɡləʊbəl ˌkɒnekˈtɪvɪti/
-394. mass media platforms | /mæs ˈmiːdiə ˈplætfɔːmz/
-395. educational content and knowledge sharing | /ˌedjuˈkeɪʃənəl ˈkɒntent ænd ˈnɒlɪdʒ ˈʃeərɪŋ/
-396. public awareness and informed decision-making | /ˈpʌblɪk əˈweənəs ænd ɪnˈfɔːmd dɪˈsɪʒən ˈmeɪkɪŋ/
-397. People who use mass media regularly | /ˈpiːpəl huː juːz mæs ˈmiːdiə ˈreɡjələli/
-398. better understanding of current events | /ˈbetər ˌʌndəˈstændɪŋ ɒv ˈkʌrənt ɪˈvents/
-399. individuals accessing news through multiple media sources | /ˌɪndɪˈvɪdʒuəlz ˈækseɪŋ njuːz θruː ˈmʌltɪpəl ˈmiːdiə ˈsɔːsɪz/
-400. improved awareness of social issues | /ɪmˈpruːvd əˈweənəs ɒv ˈsəʊʃəl ˈɪʃuːz/
-401. without regular media access | /wɪˈðaʊt ˈreɡjələ ˈmiːdiə ˈækses/
-402. modern society | /ˈmɒdən səˈsaɪəti/
-403. heavy media consumption | /ˈhevi ˈmiːdiə kənˈsʌmpʃən/
-404. excessive screen time and digital habits | /ɪkˈsesɪv skriːn taɪm ænd ˈdɪdʒɪtəl ˈhæbɪts/
-405. misinformation spread and privacy concerns | /ˌmɪsɪnfəˈmeɪʃən spred ænd ˈprɪvəsi kənˈsɜːnz/
-406. People exposed to constant media | /ˈpiːpəl ɪkˈspəʊzd tuː ˈkɒnstənt ˈmiːdiə/
-407. spend long hours on screens | /spend lɒŋ ˈaʊəz ɒn skriːnz/
-408. reduced face-to-face interaction and social isolation | /rɪˈdjuːst ˌfeɪs tə ˈfeɪs ˌɪntərˈækʃən ænd ˈsəʊʃəl ˌaɪsəˈleɪʃən/
-409. media users | /ˈmiːdiə ˈjuːzəz/
-410. information overload and difficulty distinguishing reliable sources | /ˌɪnfəˈmeɪʃən ˈəʊvələʊd ænd ˈdɪfɪkəlti dɪˈstɪŋɡwɪʃɪŋ rɪˈlaɪəbəl ˈsɔːsɪz/
-411. critical thinking skills | /ˈkrɪtɪkəl ˈθɪŋkɪŋ skɪlz/
-412. mass media has both significant benefits and drawbacks | /mæs ˈmiːdiə hæz bəʊθ sɪɡˈnɪfɪkənt ˈbenɪfɪts ænd ˈdrɔːbæks/
-413. balanced media consumption | /ˈbælənst ˈmiːdiə kənˈsʌmpʃən/
-414. individuals and communities | /ˌɪndɪˈvɪdʒuəlz ænd kəˈmjuːnɪtiz/
-415. healthy media habits | /ˈhelθi ˈmiːdiə ˈhæbɪts/
+## Example 15: Mass Communication Information Revolution
+369. whether the information revolution brings both benefits and drawbacks | /PLACEHOLDER/
+370. modern mass communication offers substantial benefits | /PLACEHOLDER/
+371. individuals and society | /PLACEHOLDER/
+372. certain limitations | /PLACEHOLDER/
+373. modern mass communication | /PLACEHOLDER/
+374. improved global connectivity and instant communication | /PLACEHOLDER/
+375. mass communication revolution | /PLACEHOLDER/
+376. faster information access and widespread knowledge sharing | /PLACEHOLDER/
+377. online learning opportunities and better education access | /PLACEHOLDER/
+378. People using modern communication tools | /PLACEHOLDER/
+379. better information access and social connections | /PLACEHOLDER/
+380. individuals who use digital platforms to keep in touch | /PLACEHOLDER/
+381. improved ability to maintain relationships across distances | /PLACEHOLDER/
+382. relying only on traditional communication methods | /PLACEHOLDER/
+383. information revolution | /PLACEHOLDER/
+384. digital societies | /PLACEHOLDER/
+385. constant connectivity | /PLACEHOLDER/
+386. excessive screen time and digital addiction | /PLACEHOLDER/
+387. social isolation and declining physical health | /PLACEHOLDER/
+388. Individuals | /PLACEHOLDER/
+389. experience continuous digital communication demands | /PLACEHOLDER/
+390. respond to messages immediately and stay connected constantly | /PLACEHOLDER/
+391. people | /PLACEHOLDER/
+392. difficulty managing information overload and maintaining healthy digital habits | /PLACEHOLDER/
+393. balance online and offline life | /PLACEHOLDER/
+394. society and individuals | /PLACEHOLDER/
 
-416. mass media does have both positive and negative consequences | /mæs ˈmiːdiə dʌz hæv bəʊθ ˈpɒzɪtɪv ænd ˈneɡətɪv ˈkɒnsɪkwənsɪz/
+## Example 16: Mass Media Influence
+395. whether mass media's influence is predominantly positive or negative | /PLACEHOLDER/
+396. mass media influence offers substantial benefits | /PLACEHOLDER/
+397. society | /PLACEHOLDER/
+398. certain limitations | /PLACEHOLDER/
+399. mass media influence | /PLACEHOLDER/
+400. public awareness and informed citizens | /PLACEHOLDER/
+401. media impact | /PLACEHOLDER/
+402. educational programs and knowledge sharing | /PLACEHOLDER/
+403. cultural understanding and global perspectives | /PLACEHOLDER/
+404. Individuals who engage with quality media | /PLACEHOLDER/
+405. improved communication and social connection | /PLACEHOLDER/
+406. people who access diverse news sources | /PLACEHOLDER/
+407. better understanding of social issues | /PLACEHOLDER/
+408. without regular media access | /PLACEHOLDER/
+409. mass communication | /PLACEHOLDER/
+410. modern information environments | /PLACEHOLDER/
+411. media saturation | /PLACEHOLDER/
+412. misinformation and biased reporting | /PLACEHOLDER/
+413. excessive screen time and passive consumption | /PLACEHOLDER/
+414. Audiences | /PLACEHOLDER/
+415. consume media constantly | /PLACEHOLDER/
+416. accept information at face value rather than take it with a grain of salt | /PLACEHOLDER/
+417. individuals | /PLACEHOLDER/
+418. reduced critical thinking | /PLACEHOLDER/
+419. evaluate information quality | /PLACEHOLDER/
+420. society and individuals | /PLACEHOLDER/
 
-## Example 16: Mass Media Influence on Younger Generation
-417. whether mass media significantly influences the younger generation | /ˈweðə mæs ˈmiːdiə sɪɡˈnɪfɪkəntli ˈɪnfluənsɪz ðə ˈjʌŋɡər ˌdʒenəˈreɪʃən/
-418. media influence on young people | /ˈmiːdiə ˈɪnfluəns ɒn jʌŋ ˈpiːpəl/
-419. students and families | /ˈstjuːdənts ænd ˈfæməliz/
-420. mass media for young people | /mæs ˈmiːdiə fɔː jʌŋ ˈpiːpəl/
-421. online learning resources and educational content | /ˈɒnlaɪn ˈlɜːnɪŋ rɪˈsɔːsɪz ænd ˌedjuˈkeɪʃənəl ˈkɒntent/
-422. youth media engagement | /juːθ ˈmiːdiə ɪnˈɡeɪdʒmənt/
-423. social connections and communication skills | /ˈsəʊʃəl kəˈnekʃənz ænd kəˌmjuːnɪˈkeɪʃən skɪlz/
-424. career information and better future planning | /kəˈrɪər ˌɪnfəˈmeɪʃən ænd ˈbetər ˈfjuːtʃə ˈplænɪŋ/
-425. Young people who use media for learning | /jʌŋ ˈpiːpəl huː juːz ˈmiːdiə fɔː ˈlɜːnɪŋ/
-426. improved knowledge and digital skills | /ɪmˈpruːvd ˈnɒlɪdʒ ænd ˈdɪdʒɪtəl skɪlz/
-427. students accessing educational media content | /ˈstjuːdənts ˈækseɪŋ ˌedjuˈkeɪʃənəl ˈmiːdiə ˈkɒntent/
-428. better understanding of school subjects | /ˈbetər ˌʌndəˈstændɪŋ ɒv skuːl ˈsʌbdʒekts/
-429. without media learning tools | /wɪˈðaʊt ˈmiːdiə ˈlɜːnɪŋ tuːlz/
-430. the younger generation | /ðə ˈjʌŋɡər ˌdʒenəˈreɪʃən/
-431. heavy youth media use | /ˈhevi juːθ ˈmiːdiə juːs/
-432. screen addiction and reduced study time | /skriːn əˈdɪkʃən ænd rɪˈdjuːst ˈstʌdi taɪm/
-433. cyberbullying and social pressure online | /ˈsaɪbəˌbʊliɪŋ ænd ˈsəʊʃəl ˈpreʃər ˈɒnlaɪn/
-434. Teenagers with excessive social media use | /ˈtiːneɪdʒəz wɪð ɪkˈsesɪv ˈsəʊʃəl ˈmiːdiə juːs/
-435. check their devices constantly | /tʃek ðeə dɪˈvaɪsɪz ˈkɒnstəntli/
-436. unrealistic expectations and mental stress | /ˌʌnrɪəˈlɪstɪk ˌekspekˈteɪʃənz ænd ˈmentəl stres/
-437. young media users | /jʌŋ ˈmiːdiə ˈjuːzəz/
-438. sleep problems and academic difficulties | /sliːp ˈprɒbləmz ænd ˌækəˈdemɪk ˈdɪfɪkəltiz/
-439. healthy development and wellbeing | /ˈhelθi dɪˈveləpmənt ænd ˌwelˈbiːɪŋ/
-440. mass media strongly influences young people | /mæs ˈmiːdiə ˈstrɒŋli ˈɪnfluənsɪz jʌŋ ˈpiːpəl/
-441. parental guidance and media education | /pəˈrentəl ˈɡaɪdəns ænd ˈmiːdiə ˌedjuˈkeɪʃən/
-442. parents, schools, and young people themselves | /ˈpeərənts skuːlz ænd jʌŋ ˈpiːpəl ðəmˈselvz/
-443. responsible media use | /rɪˈspɒnsəbəl ˈmiːdiə juːs/
+## Example 17: Mass Media Impact on Youth
+421. how mass communication affects young people | /PLACEHOLDER/
+422. mass communication impact on young people offers substantial benefits | /PLACEHOLDER/
+423. youth | /PLACEHOLDER/
+424. certain limitations | /PLACEHOLDER/
+425. mass communication | /PLACEHOLDER/
+426. access to information and learning opportunities | /PLACEHOLDER/
+427. media influence on youth | /PLACEHOLDER/
+428. social connections and global awareness | /PLACEHOLDER/
+429. broader perspectives and cultural understanding | /PLACEHOLDER/
+430. Young people who use media wisely | /PLACEHOLDER/
+431. better knowledge and social awareness | /PLACEHOLDER/
+432. teenagers who access educational content online | /PLACEHOLDER/
+433. improved understanding of world events | /PLACEHOLDER/
+434. without digital media access | /PLACEHOLDER/
+435. media exposure | /PLACEHOLDER/
+436. developing youth | /PLACEHOLDER/
+437. constant media presence | /PLACEHOLDER/
+438. unrealistic expectations and peer pressure | /PLACEHOLDER/
+439. excessive screen time and social media addiction | /PLACEHOLDER/
+440. Young people | /PLACEHOLDER/
+441. glued to screens all day | /PLACEHOLDER/
+442. match idealized images and compete for social validation online | /PLACEHOLDER/
+443. teenagers | /PLACEHOLDER/
+444. cyberbullying and mental health issues | /PLACEHOLDER/
+445. develop healthy self-esteem | /PLACEHOLDER/
+446. parents and schools | /PLACEHOLDER/
 
-444. mass media does have significant influence on the younger generation | /mæs ˈmiːdiə dʌz hæv sɪɡˈnɪfɪkənt ˈɪnfluəns ɒn ðə ˈjʌŋɡər ˌdʒenəˈreɪʃən/
+## Example 18: Consumer Goods Marketing
+447. whether companies should emphasize brand reputation or low prices in marketing | /PLACEHOLDER/
+448. reputation marketing | /PLACEHOLDER/
+449. discount-focused strategies | /PLACEHOLDER/
+450. brand emphasis is more important | /PLACEHOLDER/
+451. companies | /PLACEHOLDER/
+452. the appeal of price competition | /PLACEHOLDER/
+453. customer loyalty and lasting trust | /PLACEHOLDER/
+454. brand emphasis | /PLACEHOLDER/
+455. stronger brand identity and recognition | /PLACEHOLDER/
+456. long-term revenue growth and repeat business | /PLACEHOLDER/
+457. sustainable competitive advantage and premium pricing power | /PLACEHOLDER/
+458. discount strategies | /PLACEHOLDER/
+459. Companies that build a name for quality | /PLACEHOLDER/
+460. stable customer bases | /PLACEHOLDER/
+461. businesses emphasizing reputation over price | /PLACEHOLDER/
+462. better customer retention and profitability | /PLACEHOLDER/
+463. competing primarily on discounts | /PLACEHOLDER/
+464. price-focused strategies | /PLACEHOLDER/
+465. discounts and special offers | /PLACEHOLDER/
+466. immediate sales increases and new customer acquisition | /PLACEHOLDER/
+467. quick revenue boosts and market penetration | /PLACEHOLDER/
+468. brand value creates lasting competitive advantage while price wars erode margins | /PLACEHOLDER/
+469. successful companies | /PLACEHOLDER/
+470. brand building | /PLACEHOLDER/
+471. sustainable business growth | /PLACEHOLDER/
+472. price competition | /PLACEHOLDER/
+473. brand development | /PLACEHOLDER/
 
-## Example 17: Shorter Working Week to Reduce Youth Unemployment
-445. whether shorter working weeks can effectively address youth unemployment | /ˈweðə ˈʃɔːtə ˈwɜːkɪŋ wiːks kæn ɪˈfektɪvli əˈdres juːθ ˌʌnɪmˈplɔɪmənt/
-446. this policy | /ðɪs ˈpɒlɪsi/
-447. both young people and the whole workforce | /bəʊθ jʌŋ ˈpiːpəl ænd ðə həʊl ˈwɜːkfɔːs/
-448. reducing working hours | /rɪˈdjuːsɪŋ ˈwɜːkɪŋ ˈaʊəz/
-449. more job opportunities and reduced unemployment | /mɔː dʒɒb ˌɒpəˈtjuːnɪtiz ænd rɪˈdjuːst ˌʌnɪmˈplɔɪmənt/
-450. shorter schedules | /ˈʃɔːtə ˈʃedjuːlz/
-451. better work-life balance and less stress | /ˈbetə wɜːk laɪf ˈbæləns ænd les stres/
-452. shared workload and fairer employment | /ʃeəd ˈwɜːkləʊd ænd ˈfeərər ɪmˈplɔɪmənt/
-453. Young people and workers with reduced hours | /jʌŋ ˈpiːpəl ænd ˈwɜːkəz wɪð rɪˈdjuːst ˈaʊəz/
-454. increased productivity and worker satisfaction | /ɪnˈkriːst ˌprɒdʌkˈtɪvɪti ænd ˈwɜːkə ˌsætɪsˈfækʃən/
-455. companies implementing four-day working weeks | /ˈkʌmpəniz ˈɪmplɪmentɪŋ fɔː deɪ ˈwɜːkɪŋ wiːks/
-456. more positions available and better employee wellbeing | /mɔː pəˈzɪʃənz əˈveɪləbəl ænd ˈbetər ɪmˌplɔɪˈiː ˌwelˈbiːɪŋ/
-457. maintaining traditional five-day schedules | /meɪnˈteɪnɪŋ trəˈdɪʃənəl faɪv deɪ ˈʃedjuːlz/
-458. this approach | /ðɪs əˈprəʊtʃ/
-459. employers and businesses | /ɪmˈplɔɪəz ænd ˈbɪznɪsɪz/
-460. hiring more staff and training costs | /ˈhaɪərɪŋ mɔː stɑːf ænd ˈtreɪnɪŋ kɒsts/
-461. higher expenses and financial business pressure | /ˈhaɪər ɪkˈspensɪz ænd faɪˈnænʃəl ˈbɪznɪs ˈpreʃə/
-462. Employers who adopt work-sharing arrangements | /ɪmˈplɔɪəz huː əˈdɒpt wɜːk ˈʃeərɪŋ əˈreɪndʒmənts/
-463. lower profits and reduced productivity | /ˈləʊə ˈprɒfɪts ænd rɪˈdjuːst ˌprɒdʌkˈtɪvɪti/
-464. businesses | /ˈbɪznɪsɪz/
-465. coordination difficulties and management challenges | /kəʊˌɔːdɪˈneɪʃən ˈdɪfɪkəltiz ænd ˈmænɪdʒmənt ˈtʃælɪndʒɪz/
-466. competitive performance and profit margins | /kəmˈpetɪtɪv pəˈfɔːməns ænd ˈprɒfɪt ˈmɑːdʒɪnz/
-467. reducing working hours has both significant benefits and practical challenges | /rɪˈdjuːsɪŋ ˈwɜːkɪŋ ˈaʊəz hæz bəʊθ sɪɡˈnɪfɪkənt ˈbenɪfɪts ænd ˈpræktɪkəl ˈtʃælɪndʒɪz/
-468. this solution should apply to the whole workforce | /ðɪs səˈluːʃən ʃʊd əˈplaɪ tuː ðə həʊl ˈwɜːkfɔːs/
-469. all age groups benefit from better work-life balance | /ɔːl eɪdʒ ɡruːps ˈbenɪfɪt frɒm ˈbetə wɜːk laɪf ˈbæləns/
-470. governments and businesses | /ˈɡʌvənmənts ænd ˈbɪznɪsɪz/
-471. effective policies and financial support | /ɪˈfektɪv ˈpɒlɪsiz ænd faɪˈnænʃəl səˈpɔːt/
+## Example 19: Climate Change Research
+474. which area of climate change research is most valuable | /PLACEHOLDER/
+475. extreme weather research | /PLACEHOLDER/
+476. other climate research areas | /PLACEHOLDER/
+477. extreme weather research is most important | /PLACEHOLDER/
+478. scientists and communities | /PLACEHOLDER/
+479. the value of other approaches | /PLACEHOLDER/
+480. environmental protection and disaster prevention | /PLACEHOLDER/
+481. improved safety systems and early warning capabilities | /PLACEHOLDER/
+482. better knowledge and research findings that save lives | /PLACEHOLDER/
+483. immediate practical applications | /PLACEHOLDER/
+484. other climate areas | /PLACEHOLDER/
+485. Communities on the front lines of climate impacts | /PLACEHOLDER/
+486. urgent need for weather predictions | /PLACEHOLDER/
+487. regions using extreme weather research | /PLACEHOLDER/
+488. reduced casualties and property damage from storms | /PLACEHOLDER/
+489. without advanced warning systems | /PLACEHOLDER/
+490. renewable energy research and ocean studies | /PLACEHOLDER/
+491. long-term solutions and fundamental understanding | /PLACEHOLDER/
+492. broad climate mitigation strategies | /PLACEHOLDER/
+493. protecting people from immediate climate threats takes priority | /PLACEHOLDER/
+494. climate research priorities | /PLACEHOLDER/
+495. extreme weather work | /PLACEHOLDER/
+496. direct life-saving benefits | /PLACEHOLDER/
 
-## Example 18: Building Restoration vs. Modern Housing
-472. countries spend large amounts on building restoration instead of modern housing | /ˈkʌntriz spend lɑːdʒ əˈmaʊnts ɒn ˈbɪldɪŋ ˌrestəˈreɪʃən ɪnˈsted ɒv ˈmɒdən ˈhaʊzɪŋ/
-473. historic building restoration | /hɪˈstɒrɪk ˈbɪldɪŋ ˌrestəˈreɪʃən/
-474. modern housing investment | /ˈmɒdən ˈhaʊzɪŋ ɪnˈvestmənt/
-475. investing in building restoration | /ɪnˈvestɪŋ ɪn ˈbɪldɪŋ ˌrestəˈreɪʃən/
-476. cultural identity and historical value | /ˈkʌltʃərəl aɪˈdentɪti ænd hɪˈstɒrɪkəl ˈvæljuː/
-477. heritage preservation | /ˈherɪtɪdʒ ˌprezəˈveɪʃən/
-478. tourism income and economic benefits | /ˈtʊərɪzəm ˈɪnkʌm ænd ˌiːkəˈnɒmɪk ˈbenɪfɪts/
-479. political support and public interest | /pəˈlɪtɪkəl səˈpɔːt ænd ˈpʌblɪk ˈɪntrəst/
-480. Countries that invest in historic preservation | /ˈkʌntriz ðæt ɪnˈvest ɪn hɪˈstɒrɪk ˌprezəˈveɪʃən/
-481. increased tourist revenue and global recognition | /ɪnˈkriːst ˈtʊərɪst ˈrevənjuː ænd ˈɡləʊbəl ˌrekəɡˈnɪʃən/
-482. nations prioritizing architectural restoration | /ˈneɪʃənz praɪˈɒrɪtaɪzɪŋ ˌɑːkɪˈtektʃərəl ˌrestəˈreɪʃən/
-483. stronger cultural identity and economic growth from tourism | /ˈstrɒŋɡər ˈkʌltʃərəl aɪˈdentɪti ænd ˌiːkəˈnɒmɪk ɡrəʊθ frɒm ˈtʊərɪzəm/
-484. neglecting their architectural heritage | /nɪˈɡlektɪŋ ðeər ˌɑːkɪˈtektʃərəl ˈherɪtɪdʒ/
-485. focusing on restoration | /ˈfəʊkəsɪŋ ɒn ˌrestəˈreɪʃən/
-486. citizens and urban development | /ˈsɪtɪzənz ænd ˈɜːbən dɪˈveləpmənt/
-487. limited housing investment | /ˈlɪmɪtɪd ˈhaʊzɪŋ ɪnˈvestmənt/
-488. housing shortages and rising property costs | /ˈhaʊzɪŋ ˈʃɔːtɪdʒɪz ænd ˈraɪzɪŋ ˈprɒpəti kɒsts/
-489. poor living conditions and affordability problems | /pʊə ˈlɪvɪŋ kənˈdɪʃənz ænd əˌfɔːdəˈbɪlɪti ˈprɒbləmz/
-490. Countries that neglect housing programs | /ˈkʌntriz ðæt nɪˈɡlekt ˈhaʊzɪŋ ˈprəʊɡræmz/
-491. overcrowding and inadequate housing for citizens | /ˌəʊvəˈkraʊdɪŋ ænd ɪnˈædɪkwət ˈhaʊzɪŋ fɔː ˈsɪtɪzənz/
-492. urban populations | /ˈɜːbən ˌpɒpjuˈleɪʃənz/
-493. housing insecurity and social inequality | /ˈhaʊzɪŋ ˌɪnsɪˈkjʊərɪti ænd ˈsəʊʃəl ˌɪnɪˈkwɒlɪti/
-494. quality of life and sustainable urban growth | /ˈkwɒlɪti ɒv laɪf ænd səˈsteɪnəbəl ˈɜːbən ɡrəʊθ/
-495. both building restoration and modern housing deserve government investment | /bəʊθ ˈbɪldɪŋ ˌrestəˈreɪʃən ænd ˈmɒdən ˈhaʊzɪŋ dɪˈzɜːv ˈɡʌvənmənt ɪnˈvestmənt/
-496. governments should balance both priorities | /ˈɡʌvənmənts ʃʊd ˈbæləns bəʊθ praɪˈɒrɪtiz/
-497. heritage preservation and adequate housing are equally important | /ˈherɪtɪdʒ ˌprezəˈveɪʃən ænd ˈædɪkwət ˈhaʊzɪŋ ɑːr ˈiːkwəli ɪmˈpɔːtənt/
-498. governments and city planners | /ˈɡʌvənmənts ænd ˈsɪti ˈplænəz/
-499. balanced budgets and strategic planning | /ˈbælənst ˈbʌdʒɪts ænd strəˈtiːdʒɪk ˈplænɪŋ/
+## Example 20: Studying Classic Plays
+497. whether high school students benefit from learning classical drama | /PLACEHOLDER/
+498. studying classic plays offers substantial benefits | /PLACEHOLDER/
+499. students | /PLACEHOLDER/
+500. certain limitations | /PLACEHOLDER/
+501. studying classic plays | /PLACEHOLDER/
+502. cultural awareness and historical understanding | /PLACEHOLDER/
+503. learning classical drama | /PLACEHOLDER/
+504. enhanced critical thinking and deeper literary knowledge | /PLACEHOLDER/
+505. improved language skills and literary appreciation | /PLACEHOLDER/
+506. Students who engage with classic theater | /PLACEHOLDER/
+507. stronger analytical abilities and cultural literacy | /PLACEHOLDER/
+508. learners who study Shakespeare and classical works | /PLACEHOLDER/
+509. improved understanding of human nature and literary techniques | /PLACEHOLDER/
+510. who study only contemporary literature | /PLACEHOLDER/
+511. reading old plays | /PLACEHOLDER/
+512. modern classrooms | /PLACEHOLDER/
+513. archaic language and historical context | /PLACEHOLDER/
+514. difficult comprehension and low initial interest | /PLACEHOLDER/
+515. student disengagement and limited perceived relevance | /PLACEHOLDER/
+516. Students | /PLACEHOLDER/
+517. find classic works behind the times | /PLACEHOLDER/
+518. teachers to engage with unfamiliar language while struggling to see modern connections | /PLACEHOLDER/
+519. young learners | /PLACEHOLDER/
+520. difficulty connecting with classical themes | /PLACEHOLDER/
+521. appreciate the lasting value of these works | /PLACEHOLDER/
+522. schools and educators | /PLACEHOLDER/
+
+## Example 21: Shopping Malls vs Local Shops
+523. whether modern retail complexes replacing small stores is beneficial | /PLACEHOLDER/
+524. large shopping malls offer substantial benefits | /PLACEHOLDER/
+525. consumers | /PLACEHOLDER/
+526. certain limitations | /PLACEHOLDER/
+527. large shopping malls | /PLACEHOLDER/
+528. more product choices and competitive prices | /PLACEHOLDER/
+529. shopping centers | /PLACEHOLDER/
+530. job opportunities and economic growth | /PLACEHOLDER/
+531. convenient shopping and modern facilities | /PLACEHOLDER/
+532. Consumers who shop at malls | /PLACEHOLDER/
+533. greater satisfaction with variety and convenience | /PLACEHOLDER/
+534. people who access mall shopping | /PLACEHOLDER/
+535. better product selection and time savings | /PLACEHOLDER/
+536. who rely only on small local stores | /PLACEHOLDER/
+537. modern retail complexes | /PLACEHOLDER/
+538. local communities | /PLACEHOLDER/
+539. mall expansion | /PLACEHOLDER/
+540. local shop closures and small business losses | /PLACEHOLDER/
+541. reduced community spirit and loss of personal service | /PLACEHOLDER/
+542. The shift toward one-stop shopping at large malls | /PLACEHOLDER/
+543. small business owners to compete with lower prices and wider selection | /PLACEHOLDER/
+544. traditional shops | /PLACEHOLDER/
+545. closure and loss of local character | /PLACEHOLDER/
+546. maintain distinctive community shopping areas | /PLACEHOLDER/
+547. governments and local communities | /PLACEHOLDER/
+
+## Example 22: Medical Technology and Life Expectancy
+548. whether medical technology extending lifespans is beneficial or harmful | /PLACEHOLDER/
+549. increased life expectancy represents a blessing | /PLACEHOLDER/
+550. people | /PLACEHOLDER/
+551. certain challenges | /PLACEHOLDER/
+552. increased life expectancy | /PLACEHOLDER/
+553. extended family time and valuable life experience | /PLACEHOLDER/
+554. longer lifespans | /PLACEHOLDER/
+555. continued social contributions and stronger family bonds | /PLACEHOLDER/
+556. improved quality of life and intergenerational wisdom sharing | /PLACEHOLDER/
+557. People who live longer | /PLACEHOLDER/
+558. greater life satisfaction and family connection | /PLACEHOLDER/
+559. individuals enjoying their golden years | /PLACEHOLDER/
+560. richer family relationships and continued purpose | /PLACEHOLDER/
+561. previous generations with shorter lifespans | /PLACEHOLDER/
+562. extended life | /PLACEHOLDER/
+563. modern healthcare systems | /PLACEHOLDER/
+564. increased chronic illness and extended care needs | /PLACEHOLDER/
+565. ageing populations and rising healthcare costs | /PLACEHOLDER/
+566. Societies | /PLACEHOLDER/
+567. rapidly growing elderly populations | /PLACEHOLDER/
+568. fund healthcare and pension programs while maintaining quality care | /PLACEHOLDER/
+569. governments | /PLACEHOLDER/
+570. difficulty providing adequate care for all citizens | /PLACEHOLDER/
+571. sustain quality healthcare systems long-term | /PLACEHOLDER/
+572. governments and healthcare systems | /PLACEHOLDER/
+
+## Example 23: Parental Legal Responsibility
+573. whether parents should be held legally accountable for their children's actions | /PLACEHOLDER/
+574. parental legal responsibility offers substantial benefits | /PLACEHOLDER/
+575. society | /PLACEHOLDER/
+576. certain limitations | /PLACEHOLDER/
+577. holding parents accountable | /PLACEHOLDER/
+578. stronger supervision and better guidance | /PLACEHOLDER/
+579. parental accountability | /PLACEHOLDER/
+580. personal responsibility and family values | /PLACEHOLDER/
+581. reduced youth crime and safer communities | /PLACEHOLDER/
+582. Parents with legal obligations | /PLACEHOLDER/
+583. more active involvement in children's lives | /PLACEHOLDER/
+584. families where parents accept responsibility | /PLACEHOLDER/
+585. better youth behavior and reduced delinquency | /PLACEHOLDER/
+586. without parental accountability measures | /PLACEHOLDER/
+587. parents' legal obligations | /PLACEHOLDER/
+588. complex social environments | /PLACEHOLDER/
+589. external influences and peer pressure | /PLACEHOLDER/
+590. situations beyond parental control | /PLACEHOLDER/
+591. unfair legal burden and family stress | /PLACEHOLDER/
+592. Parents | /PLACEHOLDER/
+593. struggle to keep tabs on their children's activities constantly | /PLACEHOLDER/
+594. monitor all behaviors despite having limited control over external influences | /PLACEHOLDER/
+595. families | /PLACEHOLDER/
+596. strained relationships due to legal pressure | /PLACEHOLDER/
+597. maintain supportive family dynamics | /PLACEHOLDER/
+598. parental legal responsibility | /PLACEHOLDER/
+599. parents and schools | /PLACEHOLDER/
+
+## Example 24: City vs Rural Life
+600. whether countryside or city living offers better quality of life | /PLACEHOLDER/
+601. living in the countryside | /PLACEHOLDER/
+602. city life | /PLACEHOLDER/
+603. countryside living is preferable | /PLACEHOLDER/
+604. people | /PLACEHOLDER/
+605. the conveniences cities offer | /PLACEHOLDER/
+606. clean air and natural surroundings | /PLACEHOLDER/
+607. countryside living | /PLACEHOLDER/
+608. peaceful lifestyle and reduced stress levels | /PLACEHOLDER/
+609. stronger community bonds and closer neighbor relationships | /PLACEHOLDER/
+610. lower living costs and affordable housing | /PLACEHOLDER/
+611. Residents in rural areas | /PLACEHOLDER/
+612. better mental health and life satisfaction | /PLACEHOLDER/
+613. families who escape the rat race of city life | /PLACEHOLDER/
+614. improved wellbeing and stronger community connections | /PLACEHOLDER/
+615. in urban environments | /PLACEHOLDER/
+616. cities | /PLACEHOLDER/
+617. job opportunities and career advancement | /PLACEHOLDER/
+618. access to better facilities, public transport, and diverse entertainment | /PLACEHOLDER/
+619. quality of life and mental health outweigh career convenience | /PLACEHOLDER/
+620. people seeking balanced lifestyles | /PLACEHOLDER/
+621. rural living | /PLACEHOLDER/
+622. better overall life satisfaction | /PLACEHOLDER/
+
+## Example 25: Life Experience vs Formal Education
+623. whether practical experience provides better education than formal learning | /PLACEHOLDER/
+624. life experience as education offers substantial benefits | /PLACEHOLDER/
+625. people | /PLACEHOLDER/
+626. the value of formal education | /PLACEHOLDER/
+627. life experience | /PLACEHOLDER/
+628. practical skills and real understanding | /PLACEHOLDER/
+629. practical experience | /PLACEHOLDER/
+630. problem-solving abilities and adaptability | /PLACEHOLDER/
+631. emotional growth and personal maturity | /PLACEHOLDER/
+632. People who learn from experience | /PLACEHOLDER/
+633. better real-world competence | /PLACEHOLDER/
+634. individuals who gain hands-on experience in their fields | /PLACEHOLDER/
+635. stronger practical abilities and confidence | /PLACEHOLDER/
+636. who rely only on textbooks | /PLACEHOLDER/
+637. learning from experience | /PLACEHOLDER/
+638. formal education support | /PLACEHOLDER/
+639. experience alone | /PLACEHOLDER/
+640. limited scope and knowledge gaps | /PLACEHOLDER/
+641. lack of theoretical foundation | /PLACEHOLDER/
+642. Learners | /PLACEHOLDER/
+643. learn the hard way through trial and error only | /PLACEHOLDER/
+644. spend excessive time discovering principles already documented in educational resources | /PLACEHOLDER/
+645. costly mistakes and inefficient learning | /PLACEHOLDER/
+646. achieve systematic understanding | /PLACEHOLDER/
+647. individuals and educators | /PLACEHOLDER/
+648. experience and formal learning | /PLACEHOLDER/
+
+## Example 26: Digital Media vs Physical Books
+649. whether digital materials should replace physical library resources | /PLACEHOLDER/
+650. digital media in universities offers substantial benefits | /PLACEHOLDER/
+651. students | /PLACEHOLDER/
+652. the continued value of traditional libraries | /PLACEHOLDER/
+653. digital media in universities | /PLACEHOLDER/
+654. faster information access and convenient knowledge sharing | /PLACEHOLDER/
+655. online resources | /PLACEHOLDER/
+656. lower costs and easier content updates | /PLACEHOLDER/
+657. enhanced online learning and research efficiency | /PLACEHOLDER/
+658. Students using digital platforms | /PLACEHOLDER/
+659. better research capabilities and flexibility | /PLACEHOLDER/
+660. learners with information at their fingertips through digital systems | /PLACEHOLDER/
+661. improved research speed and access to current materials | /PLACEHOLDER/
+662. relying only on printed textbooks | /PLACEHOLDER/
+663. digital learning resources | /PLACEHOLDER/
+664. physical libraries are eliminated | /PLACEHOLDER/
+665. traditional library spaces | /PLACEHOLDER/
+666. quiet study environments and focused learning opportunities | /PLACEHOLDER/
+667. better concentration and deeper understanding | /PLACEHOLDER/
+668. Students | /PLACEHOLDER/
+669. need quiet spaces for serious study | /PLACEHOLDER/
+670. physical libraries that offer distraction-free environments | /PLACEHOLDER/
+671. learners | /PLACEHOLDER/
+672. difficulty concentrating in purely digital environments | /PLACEHOLDER/
+673. achieve deep focus on complex materials | /PLACEHOLDER/
+674. digital media | /PLACEHOLDER/
+675. physical libraries | /PLACEHOLDER/
+676. universities | /PLACEHOLDER/
+677. balanced resources combining both approaches | /PLACEHOLDER/
+
+## Example 27: Public Transport vs Roads
+678. whether governments should prioritize public transport or road construction | /PLACEHOLDER/
+679. public transport investment | /PLACEHOLDER/
+680. road building | /PLACEHOLDER/
+681. public transport networks are more important | /PLACEHOLDER/
+682. cities | /PLACEHOLDER/
+683. the value of roads | /PLACEHOLDER/
+684. public transport networks | /PLACEHOLDER/
+685. reduced traffic congestion and lower pollution | /PLACEHOLDER/
+686. affordable travel and equal access for all citizens | /PLACEHOLDER/
+687. environmental benefits and cleaner air quality | /PLACEHOLDER/
+688. public transport | /PLACEHOLDER/
+689. sustainable urban mobility and reduced car dependency | /PLACEHOLDER/
+690. more roads | /PLACEHOLDER/
+691. Cities investing in public transport | /PLACEHOLDER/
+692. better air quality and mobility | /PLACEHOLDER/
+693. governments that foot the bill for comprehensive public transport | /PLACEHOLDER/
+694. less congestion and pollution | /PLACEHOLDER/
+695. building primarily more roads | /PLACEHOLDER/
+696. road construction | /PLACEHOLDER/
+697. personal convenience and travel flexibility | /PLACEHOLDER/
+698. economic growth and business transport efficiency | /PLACEHOLDER/
+699. environmental sustainability and equal access outweigh individual convenience | /PLACEHOLDER/
+700. successful cities | /PLACEHOLDER/
+701. better long-term urban development | /PLACEHOLDER/
+
+## Example 28: Time for Personal Life
+702. how widespread the problem of limited personal time is and what issues it creates | /PLACEHOLDER/
+703. shortage of personal time | /PLACEHOLDER/
+704. extremely widespread globally | /PLACEHOLDER/
+705. serious problems | /PLACEHOLDER/
+706. workers | /PLACEHOLDER/
+707. limited personal time | /PLACEHOLDER/
+708. long working hours and increasing job demands | /PLACEHOLDER/
+709. modern work culture | /PLACEHOLDER/
+710. career pressure and expectation of constant availability | /PLACEHOLDER/
+711. global workplace trends toward longer hours | /PLACEHOLDER/
+712. Employees across industries | /PLACEHOLDER/
+713. significantly reduced personal time | /PLACEHOLDER/
+714. workers in competitive sectors | /PLACEHOLDER/
+715. substantially less free time | /PLACEHOLDER/
+716. previous generations with clearer work-life boundaries | /PLACEHOLDER/
+717. insufficient personal time | /PLACEHOLDER/
+718. modern life | /PLACEHOLDER/
+719. lack of free time | /PLACEHOLDER/
+720. chronic stress and health issues | /PLACEHOLDER/
+721. family problems and relationship difficulties | /PLACEHOLDER/
+722. Employees | /PLACEHOLDER/
+723. feel constantly pressed for time | /PLACEHOLDER/
+724. choose between work commitments and family obligations | /PLACEHOLDER/
+725. mental exhaustion and deteriorating personal relationships | /PLACEHOLDER/
+726. maintain overall wellbeing and life satisfaction | /PLACEHOLDER/
+727. employers and policymakers | /PLACEHOLDER/
+
+## Example 29: Reducing Work Hours
+728. whether reducing work hours can address youth unemployment | /PLACEHOLDER/
+729. shorter working week offers substantial benefits | /PLACEHOLDER/
+730. the whole workforce, not just young people | /PLACEHOLDER/
+731. certain limitations | /PLACEHOLDER/
+732. shorter working week | /PLACEHOLDER/
+733. more job opportunities and reduced unemployment | /PLACEHOLDER/
+734. reduced working hours | /PLACEHOLDER/
+735. better work-life balance and reduced stress | /PLACEHOLDER/
+736. fairer employment distribution and improved wellbeing | /PLACEHOLDER/
+737. Companies implementing shorter schedules | /PLACEHOLDER/
+738. increased employee satisfaction and maintained productivity | /PLACEHOLDER/
+739. organizations with four-day work weeks | /PLACEHOLDER/
+740. better worker retention and comparable output | /PLACEHOLDER/
+741. maintaining traditional five-day schedules | /PLACEHOLDER/
+742. work hour reduction | /PLACEHOLDER/
+743. competitive business environments | /PLACEHOLDER/
+744. shorter schedules | /PLACEHOLDER/
+745. needs for additional hiring and training | /PLACEHOLDER/
+746. higher business costs and financial pressure | /PLACEHOLDER/
+747. Businesses | /PLACEHOLDER/
+748. must work around budget constraints | /PLACEHOLDER/
+749. balance cost increases with potential productivity and recruitment benefits | /PLACEHOLDER/
+750. employers | /PLACEHOLDER/
+751. difficulty justifying the transition costs | /PLACEHOLDER/
+752. adopt shorter working weeks without government support | /PLACEHOLDER/
+753. governments and businesses | /PLACEHOLDER/
+
+## Example 30: Celebrity Privacy
+754. whether famous people should sacrifice privacy as a cost of fame | /PLACEHOLDER/
+755. celebrity privacy rights deserve protection | /PLACEHOLDER/
+756. celebrities | /PLACEHOLDER/
+757. their public status | /PLACEHOLDER/
+758. privacy for famous people | /PLACEHOLDER/
+759. mental health and personal wellbeing | /PLACEHOLDER/
+760. celebrity privacy | /PLACEHOLDER/
+761. family protection and safe environments | /PLACEHOLDER/
+762. personal freedom and basic human rights | /PLACEHOLDER/
+763. Celebrities who maintain privacy boundaries | /PLACEHOLDER/
+764. better mental health and family stability | /PLACEHOLDER/
+765. famous individuals who protect their private lives | /PLACEHOLDER/
+766. reduced stress and better relationships | /PLACEHOLDER/
+767. who face constant media intrusion | /PLACEHOLDER/
+768. privacy rights of celebrities | /PLACEHOLDER/
+769. media-driven societies | /PLACEHOLDER/
+770. fame and public status | /PLACEHOLDER/
+771. intense media attention and public interest | /PLACEHOLDER/
+772. constant social media exposure and fan demands | /PLACEHOLDER/
+773. Famous people | /PLACEHOLDER/
+774. constantly in the spotlight | /PLACEHOLDER/
+775. share personal details and respond to public curiosity | /PLACEHOLDER/
+776. difficulty protecting their families and maintaining normal private lives | /PLACEHOLDER/
+777. separate public and personal spheres | /PLACEHOLDER/
+778. celebrity privacy rights | /PLACEHOLDER/
+779. celebrities and media organizations | /PLACEHOLDER/
+
+## Example 31: Future Work Hours
+780. whether people will work fewer hours in the future | /PLACEHOLDER/
+781. working fewer hours is likely | /PLACEHOLDER/
+782. employees | /PLACEHOLDER/
+783. certain challenges | /PLACEHOLDER/
+784. working fewer hours | /PLACEHOLDER/
+785. technological advances and increasing automation | /PLACEHOLDER/
+786. reduced work hours | /PLACEHOLDER/
+787. artificial intelligence and improved efficiency | /PLACEHOLDER/
+788. remote work options and greater flexibility | /PLACEHOLDER/
+789. Workers in automated industries | /PLACEHOLDER/
+790. maintained productivity with shorter schedules | /PLACEHOLDER/
+791. employees benefiting from automation | /PLACEHOLDER/
+792. better work-life balance while meeting job requirements | /PLACEHOLDER/
+793. in traditional work structures | /PLACEHOLDER/
+794. shorter working weeks | /PLACEHOLDER/
+795. competitive economies | /PLACEHOLDER/
+796. global competition | /PLACEHOLDER/
+797. economic pressure and business demands | /PLACEHOLDER/
+798. employer expectations for longer availability | /PLACEHOLDER/
+799. Companies | /PLACEHOLDER/
+800. must keep pace with international competitors | /PLACEHOLDER/
+801. maintain traditional hours despite technological efficiency gains | /PLACEHOLDER/
+802. workers | /PLACEHOLDER/
+803. continued long hours due to competitive pressure | /PLACEHOLDER/
+804. reduce actual working time | /PLACEHOLDER/
+805. economic factors | /PLACEHOLDER/
+806. employers and governments | /PLACEHOLDER/
+
+## Example 32: Age Restrictions
+807. what minimum age requirements should apply to major life activities | /PLACEHOLDER/
+808. age restrictions of 21 years offer substantial benefits | /PLACEHOLDER/
+809. young people | /PLACEHOLDER/
+810. certain limitations | /PLACEHOLDER/
+811. minimum age requirements for marriage | /PLACEHOLDER/
+812. emotional maturity and better life readiness | /PLACEHOLDER/
+813. age restrictions | /PLACEHOLDER/
+814. financial stability and career establishment | /PLACEHOLDER/
+815. improved decision-making and valuable life experience | /PLACEHOLDER/
+816. Individuals who marry after proper maturity | /PLACEHOLDER/
+817. stronger relationships and better outcomes | /PLACEHOLDER/
+818. people who marry after they come of age at 21 | /PLACEHOLDER/
+819. more stable marriages and better preparedness | /PLACEHOLDER/
+820. who marry in their teens | /PLACEHOLDER/
+821. age limits | /PLACEHOLDER/
+822. diverse cultural contexts | /PLACEHOLDER/
+823. strict age requirements | /PLACEHOLDER/
+824. delays in personal choice and family planning | /PLACEHOLDER/
+825. conflicts with cultural traditions and individual circumstances | /PLACEHOLDER/
+826. Different societies | /PLACEHOLDER/
+827. have varying maturity markers and readiness indicators | /PLACEHOLDER/
+828. universal age thresholds conflict with local customs and individual circumstances | /PLACEHOLDER/
+829. individuals | /PLACEHOLDER/
+830. difficulty accepting one-size-fits-all age limits | /PLACEHOLDER/
+831. accommodate personal and cultural variation | /PLACEHOLDER/
+832. governments and society | /PLACEHOLDER/
+
+## Example 33: Foreign Language as Required Course
+833. whether schools should require foreign language classes for all students | /PLACEHOLDER/
+834. compulsory foreign language education offers substantial benefits | /PLACEHOLDER/
+835. students | /PLACEHOLDER/
+836. certain limitations | /PLACEHOLDER/
+837. compulsory foreign language education | /PLACEHOLDER/
+838. cultural understanding and global communication abilities | /PLACEHOLDER/
+839. required language classes | /PLACEHOLDER/
+840. career opportunities and international connections | /PLACEHOLDER/
+841. cognitive benefits and mental flexibility | /PLACEHOLDER/
+842. Students who learn foreign languages | /PLACEHOLDER/
+843. improved cultural awareness and communication skills | /PLACEHOLDER/
+844. learners with language training | /PLACEHOLDER/
+845. better ability to broaden horizons and understand diverse perspectives | /PLACEHOLDER/
+846. without language education | /PLACEHOLDER/
+847. mandatory language learning | /PLACEHOLDER/
+848. diverse school settings | /PLACEHOLDER/
+849. required courses | /PLACEHOLDER/
+850. time pressure and curriculum overload | /PLACEHOLDER/
+851. low motivation among uninterested students | /PLACEHOLDER/
+852. Schools | /PLACEHOLDER/
+853. must fit language requirements into packed schedules | /PLACEHOLDER/
+854. reduce time for other subjects while teaching languages to reluctant learners | /PLACEHOLDER/
+855. resentment toward forced language study | /PLACEHOLDER/
+856. achieve genuine learning outcomes | /PLACEHOLDER/
+857. schools and education departments | /PLACEHOLDER/
+
+## Example 34: Historic Buildings Preservation
+858. whether we should preserve old buildings despite high costs | /PLACEHOLDER/
+859. preserving historic buildings offers substantial benefits | /PLACEHOLDER/
+860. communities | /PLACEHOLDER/
+861. certain limitations | /PLACEHOLDER/
+862. preserving historic buildings | /PLACEHOLDER/
+863. cultural identity and shared heritage | /PLACEHOLDER/
+864. building preservation | /PLACEHOLDER/
+865. tourism income and economic benefits | /PLACEHOLDER/
+866. local pride and community connection | /PLACEHOLDER/
+867. Communities that protect historic structures | /PLACEHOLDER/
+868. stronger cultural awareness and civic engagement | /PLACEHOLDER/
+869. cities that invest in heritage preservation | /PLACEHOLDER/
+870. increased tourist revenue and cultural appreciation | /PLACEHOLDER/
+871. that demolish old buildings | /PLACEHOLDER/
+872. maintaining heritage structures | /PLACEHOLDER/
+873. modern urban development | /PLACEHOLDER/
+874. preservation projects | /PLACEHOLDER/
+875. high costs and maintenance expenses | /PLACEHOLDER/
+876. limited budgets and funding shortages | /PLACEHOLDER/
+877. Local governments | /PLACEHOLDER/
+878. foot the bill for expensive restoration | /PLACEHOLDER/
+879. city planners to balance preservation spending with other essential services like schools and hospitals | /PLACEHOLDER/
+880. cities | /PLACEHOLDER/
+881. difficulty maintaining both heritage sites and modern infrastructure | /PLACEHOLDER/
+882. sustain these preservation efforts long-term | /PLACEHOLDER/
+883. governments and local communities | /PLACEHOLDER/
+
+## Example 35: Modern Childhood
+884. whether childhood today is more difficult than in the past | /PLACEHOLDER/
+885. modern childhood offers substantial benefits | /PLACEHOLDER/
+886. children | /PLACEHOLDER/
+887. certain limitations | /PLACEHOLDER/
+888. modern childhood | /PLACEHOLDER/
+889. better medical treatment and improved nutrition | /PLACEHOLDER/
+890. growing up in modern times | /PLACEHOLDER/
+891. easier access to education and technological advances | /PLACEHOLDER/
+892. higher living standards and safer environments | /PLACEHOLDER/
+893. Children today | /PLACEHOLDER/
+894. improved physical health and better educational opportunities | /PLACEHOLDER/
+895. young people in the 21st century | /PLACEHOLDER/
+896. better well-being and access to resources | /PLACEHOLDER/
+897. in previous generations | /PLACEHOLDER/
+898. contemporary childhood | /PLACEHOLDER/
+899. modern society | /PLACEHOLDER/
+900. current educational systems | /PLACEHOLDER/
+901. academic pressure and excessive screen time | /PLACEHOLDER/
+902. social isolation and mental pressure | /PLACEHOLDER/
+903. Children | /PLACEHOLDER/
+904. must cope with demanding school schedules and constant testing | /PLACEHOLDER/
+905. perform well academically while managing digital distractions | /PLACEHOLDER/
+906. families | /PLACEHOLDER/
+907. academic stress and emotional difficulties | /PLACEHOLDER/
+908. maintain balanced childhood development | /PLACEHOLDER/
+909. parents and schools | /PLACEHOLDER/
+
+## Example 36: Maximum Wage Limits
+910. whether there should be income restrictions for high earners | /PLACEHOLDER/
+911. maximum wage limits offer substantial benefits | /PLACEHOLDER/
+912. society | /PLACEHOLDER/
+913. certain limitations | /PLACEHOLDER/
+914. maximum wage limits | /PLACEHOLDER/
+915. social fairness and equal opportunities | /PLACEHOLDER/
+916. wage caps | /PLACEHOLDER/
+917. reduced poverty and better public services | /PLACEHOLDER/
+918. community spirit and social responsibility | /PLACEHOLDER/
+919. Societies that implement salary limits | /PLACEHOLDER/
+920. improved infrastructure and shared resources | /PLACEHOLDER/
+921. countries with wage restrictions | /PLACEHOLDER/
+922. better public services and ability to level the playing field for all citizens | /PLACEHOLDER/
+923. without income limits | /PLACEHOLDER/
+924. wage restrictions | /PLACEHOLDER/
+925. competitive markets | /PLACEHOLDER/
+926. limiting high salaries | /PLACEHOLDER/
+927. reduced motivation and talent loss | /PLACEHOLDER/
+928. economic problems and lower productivity | /PLACEHOLDER/
+929. Companies | /PLACEHOLDER/
+930. strict wage caps | /PLACEHOLDER/
+931. attract and retain talented workers despite salary restrictions | /PLACEHOLDER/
+932. organizations | /PLACEHOLDER/
+933. recruitment difficulties and higher staff turnover | /PLACEHOLDER/
+934. maintain competitive business performance | /PLACEHOLDER/
+935. governments and policymakers | /PLACEHOLDER/
+
+## Example 37: AI Translation vs Learning Languages
+936. whether language learning remains necessary with AI translation available | /PLACEHOLDER/
+937. learning foreign languages despite AI offers substantial benefits | /PLACEHOLDER/
+938. people | /PLACEHOLDER/
+939. the convenience of technology | /PLACEHOLDER/
+940. learning foreign languages | /PLACEHOLDER/
+941. cultural understanding and genuine human connection | /PLACEHOLDER/
+942. language learning | /PLACEHOLDER/
+943. career opportunities and stronger personal relationships | /PLACEHOLDER/
+944. personal growth and greater confidence | /PLACEHOLDER/
+945. People who learn languages themselves | /PLACEHOLDER/
+946. deeper cultural appreciation | /PLACEHOLDER/
+947. individuals with language skills | /PLACEHOLDER/
+948. better ability to bridge the gap between cultures | /PLACEHOLDER/
+949. who rely only on AI translation | /PLACEHOLDER/
+950. relying on AI translation | /PLACEHOLDER/
+951. real communication situations | /PLACEHOLDER/
+952. AI tools | /PLACEHOLDER/
+953. translation errors and lack of cultural nuance | /PLACEHOLDER/
+954. superficial communication and missed meanings | /PLACEHOLDER/
+955. People | /PLACEHOLDER/
+956. depend entirely on technology for translation | /PLACEHOLDER/
+957. accept imperfect translations without understanding cultural context | /PLACEHOLDER/
+958. users | /PLACEHOLDER/
+959. misunderstandings and inability to form deep connections | /PLACEHOLDER/
+960. truly communicate across languages | /PLACEHOLDER/
+961. schools and individuals | /PLACEHOLDER/
+962. language education | /PLACEHOLDER/
 

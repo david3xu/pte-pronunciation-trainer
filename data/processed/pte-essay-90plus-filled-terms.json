@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-01-24T08:51:38.424Z",
-    "totalTerms": 974,
+    "generated": "2026-01-24T08:57:05.779Z",
+    "totalTerms": 979,
     "source": "pte-essay-90plus-filled-terms",
     "description": "Auto-discovered vocabulary book: pte-essay-90plus-filled-terms",
     "version": "1.0",
@@ -525,7 +525,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "fair assessment and equal opportunities for all students",
+      "english": "fair assessment and equal opportunities",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -573,7 +573,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "accurate knowledge testing and reliable academic measurement",
+      "english": "accurate knowledge testing and reliable results",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -605,7 +605,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "measurable learning outcomes",
+      "english": "measurable results",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -637,7 +637,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "better preparation and clear performance expectations",
+      "english": "better preparation and clear expectations",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -733,7 +733,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "reduced creativity and limited critical thinking",
+      "english": "less creativity and limited critical thinking",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -782,6 +782,86 @@
     },
     {
       "english": "students to memorize facts rather than understand concepts deeply",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "learners",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "exam-related stress",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "maintain balanced learning methods",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "formal written examinations",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "schools and teachers",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",

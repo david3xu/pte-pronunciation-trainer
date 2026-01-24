@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-01-23T23:46:37.145Z",
+    "generated": "2026-01-24T08:17:57.571Z",
     "totalTerms": 972,
     "source": "pte-essay-90plus-filled-terms",
     "description": "Auto-discovered vocabulary book: pte-essay-90plus-filled-terms",
@@ -13,7 +13,7 @@
   },
   "vocabulary": [
     {
-      "english": "whether organizations should involve employees in the decision-making process",
+      "english": "whether companies should involve employees in business decisions",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -29,7 +29,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "this collaborative approach offers substantial benefits",
+      "english": "this approach offers significant benefits",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -77,7 +77,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "employee participation in decision-making",
+      "english": "employee participation in decisions",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -125,7 +125,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "better business suggestions and creative ideas",
+      "english": "better business ideas and creative suggestions",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -157,7 +157,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "Companies that involve employees in decision-making",
+      "english": "Employees who participate in decision-making",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -189,39 +189,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "organizations that implement regular feedback sessions with staff",
-      "pronunciation": {
-        "british": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        },
-        "american": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-90plus-filled-terms",
-      "source": "pte-essay-90plus-filled-terms"
-    },
-    {
-      "english": "better business suggestions and higher revenue",
-      "pronunciation": {
-        "british": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        },
-        "american": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-90plus-filled-terms",
-      "source": "pte-essay-90plus-filled-terms"
-    },
-    {
-      "english": "with top-down decision structures",
+      "english": "companies with employee feedback report better ideas and higher revenue than those without",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -269,7 +237,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "extensive consultation processes",
+      "english": "lengthy discussion processes",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -301,7 +269,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "slower decision processes and reduced efficiency",
+      "english": "slower decisions and reduced efficiency",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -317,7 +285,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "Corporate settings",
+      "english": "Companies",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -328,12 +296,12 @@
           "phonetic": ""
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-essay-90plus-filled-terms",
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "require consensus from multiple departments",
+      "english": "require agreement from multiple departments",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -365,7 +333,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "communication difficulties",
+      "english": "organizations",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -381,7 +349,39 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "maintain quick business responses",
+      "english": "communication problems",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "respond quickly to business needs",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "employee participation in decisions",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",

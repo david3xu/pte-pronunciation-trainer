@@ -7,30 +7,30 @@
 **Note:** IPA pronunciations will be added during data processing.
 
 ## Example 1: Employee Decision Making
-1. whether organizations should involve employees in the decision-making process | /PLACEHOLDER/
-2. this collaborative approach offers substantial benefits | /PLACEHOLDER/
+1. whether companies should involve employees in business decisions | /PLACEHOLDER/
+2. this approach offers significant benefits | /PLACEHOLDER/
 3. companies | /PLACEHOLDER/
 4. certain limitations | /PLACEHOLDER/
-5. employee participation in decision-making | /PLACEHOLDER/
+5. employee participation in decisions | /PLACEHOLDER/
 6. higher employee loyalty and stronger workplace engagement | /PLACEHOLDER/
 7. involving employees in decisions | /PLACEHOLDER/
-8. better business suggestions and creative ideas | /PLACEHOLDER/
+8. better business ideas and creative suggestions | /PLACEHOLDER/
 9. increased company revenue and improved customer satisfaction | /PLACEHOLDER/
-10. Companies that involve employees in decision-making | /PLACEHOLDER/
+10. Employees who participate in decision-making | /PLACEHOLDER/
 11. greater motivation and a stronger sense of belonging | /PLACEHOLDER/
-12. organizations that implement regular feedback sessions with staff | /PLACEHOLDER/
-13. better business suggestions and higher revenue | /PLACEHOLDER/
-14. with top-down decision structures | /PLACEHOLDER/
-15. employee participation | /PLACEHOLDER/
-16. modern business environments | /PLACEHOLDER/
-17. extensive consultation processes | /PLACEHOLDER/
-18. workplace conflicts and disagreements between staff and managers | /PLACEHOLDER/
-19. slower decision processes and reduced efficiency | /PLACEHOLDER/
-20. Corporate settings | /PLACEHOLDER/
-21. require consensus from multiple departments | /PLACEHOLDER/
-22. longer meeting times and delayed decisions | /PLACEHOLDER/
-23. communication difficulties | /PLACEHOLDER/
-24. maintain quick business responses | /PLACEHOLDER/
+12. companies with employee feedback report better ideas and higher revenue than those without | /PLACEHOLDER/
+13. employee participation | /PLACEHOLDER/
+14. modern business environments | /PLACEHOLDER/
+15. lengthy discussion processes | /PLACEHOLDER/
+16. workplace conflicts and disagreements between staff and managers | /PLACEHOLDER/
+17. slower decisions and reduced efficiency | /PLACEHOLDER/
+18. Companies | /PLACEHOLDER/
+19. require agreement from multiple departments | /PLACEHOLDER/
+20. longer meeting times and delayed decisions | /PLACEHOLDER/
+21. organizations | /PLACEHOLDER/
+22. communication problems | /PLACEHOLDER/
+23. respond quickly to business needs | /PLACEHOLDER/
+24. employee participation in decisions | /PLACEHOLDER/
 25. companies and managers | /PLACEHOLDER/
 
 ## Example 2: Formal Written Examinations

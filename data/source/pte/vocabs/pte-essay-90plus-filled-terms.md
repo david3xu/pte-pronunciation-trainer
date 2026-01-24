@@ -7,15 +7,15 @@
 **Note:** IPA pronunciations will be added during data processing.
 
 ## Example 1: Employee Decision Making
-1. whether companies should involve employees in business decisions | /PLACEHOLDER/
+1. whether companies should involve employees in decision-making about products and services | /PLACEHOLDER/
 2. this approach offers significant benefits | /PLACEHOLDER/
 3. companies | /PLACEHOLDER/
 4. certain limitations | /PLACEHOLDER/
-5. employee participation in decisions | /PLACEHOLDER/
-6. higher employee loyalty and stronger workplace engagement | /PLACEHOLDER/
-7. involving employees in decisions | /PLACEHOLDER/
+5. employee participation | /PLACEHOLDER/
+6. higher employee loyalty and stronger engagement | /PLACEHOLDER/
+7. involving employees | /PLACEHOLDER/
 8. better business ideas and creative suggestions | /PLACEHOLDER/
-9. increased company revenue and improved customer satisfaction | /PLACEHOLDER/
+9. increased revenue and improved customer satisfaction | /PLACEHOLDER/
 10. Employees who participate in decision-making | /PLACEHOLDER/
 11. greater motivation and a stronger sense of belonging | /PLACEHOLDER/
 12. companies with employee feedback | /PLACEHOLDER/
@@ -23,8 +23,8 @@
 14. without employee participation | /PLACEHOLDER/
 15. employee participation | /PLACEHOLDER/
 16. modern business environments | /PLACEHOLDER/
-17. lengthy discussion processes | /PLACEHOLDER/
-18. workplace conflicts and disagreements between staff and managers | /PLACEHOLDER/
+17. lengthy discussions | /PLACEHOLDER/
+18. workplace conflicts and disagreements | /PLACEHOLDER/
 19. slower decisions and reduced efficiency | /PLACEHOLDER/
 20. Companies | /PLACEHOLDER/
 21. require agreement from multiple departments | /PLACEHOLDER/
@@ -32,7 +32,7 @@
 23. organizations | /PLACEHOLDER/
 24. communication problems | /PLACEHOLDER/
 25. respond quickly to business needs | /PLACEHOLDER/
-26. employee participation in decisions | /PLACEHOLDER/
+26. employee participation | /PLACEHOLDER/
 27. companies and managers | /PLACEHOLDER/
 
 ## Example 2: Formal Written Examinations

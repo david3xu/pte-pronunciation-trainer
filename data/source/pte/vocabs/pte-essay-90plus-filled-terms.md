@@ -63,6 +63,8 @@
 52. maintain balanced learning methods | /PLACEHOLDER/
 53. formal written examinations | /PLACEHOLDER/
 54. schools and teachers | /PLACEHOLDER/
+
+## Example 3: Travel and Education
 55. whether travel is essential for quality education | /PLACEHOLDER/
 56. educational travel offers significant benefits | /PLACEHOLDER/
 57. students | /PLACEHOLDER/

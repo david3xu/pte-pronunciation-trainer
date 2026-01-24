@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-01-24T08:17:57.571Z",
-    "totalTerms": 972,
+    "generated": "2026-01-24T08:51:38.424Z",
+    "totalTerms": 974,
     "source": "pte-essay-90plus-filled-terms",
     "description": "Auto-discovered vocabulary book: pte-essay-90plus-filled-terms",
     "version": "1.0",
@@ -189,7 +189,39 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "companies with employee feedback report better ideas and higher revenue than those without",
+      "english": "companies with employee feedback",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "better ideas and higher revenue",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "without employee participation",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",

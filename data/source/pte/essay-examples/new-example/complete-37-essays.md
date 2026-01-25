@@ -19,42 +19,42 @@
 ### All 37 Questions
 
 1. ✅ **Employee Decision Making** - "In some companies, some employers involve employees in the decision-making process of products and services. What are the advantages and disadvantages of such a policy?"
-2. ✅ **Formal Written Examinations** - "The formal written examination can be a valid method to assess students' learning. To what extent do you agree or disagree?"
-3. ✅ **Travel and Education** - "Travel to study is over rated, we have brilliant scholars who studied locally. To what extent do you agree or disagree?"
-4. ✅ **Climate Change Responsibility** - "Who should be responsible for climate change: governments, individuals, or businesses?"
-5. ✅ **Television's Functions** - "Television serves many useful functions. It helps people to relax. We can learn from television, and it can also be seen as a companion for the lonely. To what extent do you agree with this?"
+2. ✅ **Formal Written Examinations** - "The formal written examination can be a valid method to assess students' learning. To what extent do you agree or disagree? Use your own experience."
+3. ✅ **Travel and Education** - "“The value of travel has been overrated”. It is said that one can be a brilliant scholar without leaving one's home base. Do you think travel is a necessary component of a quality education?"
+4. ✅ **Climate Change Responsibility** - "Climate change is a concerning global issue. Who should take the responsibilities: governments, big companies or individuals?"
+5. ✅ **Television's Functions** - "Television serves many useful functions. It helps people to relax. We can learn from television, and it can also be seen as a companion for the lonely. To what extent do you agree with this? Explain why with your own experience."
 6. ✅ **Experiential Learning** - "Some people point out that experiential learning (i.e. learning by doing) can work well in formal education. However, others think a traditional form of teaching is the best. Do you think experiential learning is beneficial in high school or college?"
 7. ✅ **Late Assignment Penalties** - "Some universities deduct students' marks if assignments are given late. What is your opinion and give your recommendations?"
-8. ✅ **Combining Study and Work** - "In order to study effectively, it requires comfort, peace and time. So it is impossible for a student to combine learning and employment at the same time, because one distracts the other. Is it realistic to combine them at the same time in our life today?"
-9. ✅ **Most Pressing Global Problem** - "The world's governments and organizations are facing a lot of issues. Which do you think is the most pressing problem for the inhabitants on our planet? And give solutions."
+8. ✅ **Combining Study and Work** - "In order to study effectively, it requires comfort, peace and time. So it is impossible for a student to combine learning and employment at the same time, because one distracts the other. Is it realistic to combine them at the same time in our life today? Support your opinion with examples."
+9. ✅ **Most Pressing Global Problem** - "The world’s governments and organizations are facing a lot of issues. Which do you think is the most pressing problem for the inhabitants on our planet? And give solutions."
 10. ✅ **Building Design Impact** - "How does the design of buildings affect, either positively or negatively, where people work and live?"
-11. ✅ **Work-Life Balance** - "Nowadays, it is increasingly more difficult to maintain the right balance between work and other aspects of one's life, such as time with family and leisure needs. How important do you think this balance is? Why do people find it hard to achieve?"
+11. ✅ **Work-Life Balance** - "Nowadays, it is increasingly more difficult to maintain the right balance between work and other aspects of one’s life, such as time with family and leisure needs. How important do you think this balance is? Why do people find it hard to achieve?"
 12. ✅ **New Invention Impact** - "In our technological world, the number of new inventions has been evolving on a daily basis. Please describe a new invention and explain the impact, either beneficial or detrimental, that you feel it has had on society."
-13. ✅ **Laws and Human Behavior** - "Some people think human behaviors can be changed by laws, while others think laws have little effect. What is your opinion?"
-14. ✅ **Tourism in Developing Countries** - "Tourism brings advantages and disadvantages to developing countries. Discuss both views."
-15. ✅ **Mass Communication Information Revolution** - "Mass communication and transport continue to grow in societies, leading to an information revolution. What are the advantages and disadvantages of this development?"
-16. ✅ **Mass Media Influence** - "Mass media has a great influence on our society and individuals. To what extent do you think this is positive or negative?"
-17. ✅ **Mass Media Impact on Youth** - "How does mass communication influence young people? Give your opinion and examples."
-18. ✅ **Consumer Goods Marketing** - "In marketing consumer goods, companies should emphasize brand name or low price. Discuss both views and give your opinion?"
-19. ✅ **Climate Change Research** - "Describe one aspect of climate change research that you find particularly interesting and explain why."
+13. ✅ **Laws and Human Behavior** - "Some people think human behaviors can be changed by laws, while others think laws have little effect. What is your opinion."
+14. ✅ **Tourism in Developing Countries** - "For a less developed country, the disadvantages of tourism are as great as the advantages. Please discuss this statement, and give and explain your opinion."
+15. ✅ **Mass Communication Information Revolution** - "“The information revolution by modern mass communication has both positive and negative consequences for individuals and for society.” To what extent do you agree? Explain with your own experience."
+16. ✅ **Mass Media Influence** - "The mass media, including TV, radio and newspapers, influences our society and shapes our opinions and characters. What is your opinion?"
+17. ✅ **Mass Media Impact on Youth** - "Mass media, including TV and newspapers, have a great influence on humans, particularly on the younger generation. It has a pivotal role in shaping people's opinions. Discuss the extent you agree or disagree. Use your own experience or examples."
+18. ✅ **Consumer Goods Marketing** - "Should marketing in companies producing consumer goods like food and clothing, place emphasis on the reputation of the company or short-term strategies like discounts and special offers? Why?"
+19. ✅ **Climate Change Research** - "You are given climate change as the field of study. Which area would you prefer? Explain why you pick this particular area of your study and give an example in the area you pick."
 20. ✅ **Studying Classic Plays** - "There are both problems and benefits for high school students to study plays and works of theatres written centuries ago. Discuss and use your own experience."
-21. ✅ **Shopping Malls vs Local Shops** - "In many towns and cities, large shopping malls are replacing small local shops. Do you think this is a positive development? Give your reasons and examples?"
+21. ✅ **Shopping Malls vs Local Shops** - "In many towns and cities, large shopping malls are replacing small local shops. Do you think this is a positive development? Give your reasons and examples."
 22. ✅ **Medical Technology and Life Expectancy** - "Medical technology is responsible for increasing the average life expectancy. Do you think it is a curse or a blessing?"
-23. ✅ **Parental Legal Responsibility** - "Should parents be held legally responsible for the actions of their children? Do you agree with this opinion?"
-24. ✅ **City vs Rural Life** - "Some people prefer to live in the countryside while others prefer city life. Which do you prefer? Why?"
-25. ✅ **Life Experience vs Formal Education** - "Compared with books and formal education, experience is a better teacher. To what extent do you agree or disagree?"
-26. ✅ **Digital Media vs Physical Books** - "Universities should purchase more digital media materials instead of physical books. Discuss the advantages and disadvantages."
-27. ✅ **Public Transport vs Roads** - "Should governments spend more money on improving public transportation or on building more roads? Give your opinion."
+23. ✅ **Parental Legal Responsibility** - "Should parents be held legally responsible for the actions of their children? Do you agree with this opinion? Support your position with your own study, experience or observations."
+24. ✅ **City vs Rural Life** - "Living in the countryside or having a city life, which one do you prefer? Please use examples or your personal experience to support your opinion."
+25. ✅ **Life Experience vs Formal Education** - "Some people argue that experience is the best teacher. Life experiences can teach more effectively than books or formal school education. How far do you agree with this idea? Support your opinion with reasons and/or your personal experience."
+26. ✅ **Digital Media vs Physical Books** - "With the increase of digital media available online, the role of the library has become obsolete. Universities should only procure new digital media rather than constantly update textbooks. Discuss both the advantages and disadvantages of this position and give your own point of view."
+27. ✅ **Public Transport vs Roads** - "As cities are expanding, some people claim governments should look forward to creating better networks of public transport available for everyone rather than building more roads for vehicle owning population. What’s your opinion? Give some examples or experience to support."
 28. ✅ **Work-Life Balance (Prevalence & Consequences)** - "The time people devote to jobs leaves very little time for personal life. How widespread is the problem? What problem will this shortage of time cause?"
-29. ✅ **Reducing Work Hours** - "One way to reduce unemployment is to reduce working hours. To what extent do you agree or disagree?"
-30. ✅ **Celebrity Privacy** - "People who are famous entertainers or sportspeople should give up the right to privacy because this is the price of fame. To what extent do you agree or disagree with this point of view?"
-31. ✅ **Future Work Hours** - "Do you think people will work fewer hours in the future? Why or why not?"
-32. ✅ **Age Restrictions** - "Some companies have age restrictions for employees. Discuss the advantages and disadvantages of this policy."
-33. ✅ **Foreign Language as Required Course** - "Should foreign languages be a compulsory subject in school curriculum? Discuss both views."
-34. ✅ **Historic Buildings Preservation** - "It is important to preserve the beautiful buildings of the past, even if it will be expensive to do so. To what extent do you agree or disagree with it?"
+29. ✅ **Reducing Work Hours** - "In modern society, unemployment among young people is a serious problem. One solution is to shorten the working week and put more people to work. Give your opinion of the idea, considering the advantages and disadvantages, whether it can apply to young people or the whole workforce."
+30. ✅ **Celebrity Privacy** - "People who are famous entertainers or sportspeople should give up the right to privacy because this is the price of fame. To what extent do you agree or disagree with this point of view? Give your opinion with your experiences."
+31. ✅ **Future Work Hours** - "“In the future, people will work less hours at their jobs.” To what extent do you agree with it? Please support your opinion with your own experience."
+32. ✅ **Age Restrictions** - "Age restrictions can be seen everywhere. It is believed that people should not do things until they reach the right age, such as marriage, and driving. Select one activity and state the minimum age that you think. Support with your own experiences."
+33. ✅ **Foreign Language as Required Course** - "Should schools make learning a foreign language compulsory?"
+34. ✅ **Historic Buildings Preservation** - "More and more countries spend large amounts of money on the restoration of buildings instead of on modern housing. To what extent do you agree or disagree with this analysis? Support your writing with its advantages or disadvantages."
 35. ✅ **Modern Childhood** - "It is getting harder for children to live and grow in the 21st century than in the past. Do you agree or disagree?"
-36. ✅ **Maximum Wage Limits** - "Should there be a maximum wage for high-paying people? To what extent do you agree with this statement?"
-37. ✅ **AI Translation vs Learning Languages** - "With the development of AI translation tools, is it still necessary to learn foreign languages? Give your opinion."
+36. ✅ **Maximum Wage Limits** - "“Should there be a maximum wage for high-paying people.” To what extent do you agree with this statement? Please give your reasons and/or arguments."
+37. ✅ **AI Translation vs Learning Languages** - "Advanced technology such as artificial intelligence can translate a foreign language easily. Do you think learning a foreign language is still necessary? Support with your own experience."
 
 ---
 
@@ -75,13 +75,13 @@ Advantages/Disadvantages
 
 ### Complete Essay (236 words)
 
-The question of **whether companies should involve employees in decision-making about products and services** has attracted considerable attention in modern society. I contend that **this approach offers significant benefits** for **companies** despite **certain limitations**. The following analysis outlines the primary arguments supporting this viewpoint.
+The question of **whether companies should involve employees in decision-making about products and services** has attracted considerable attention in modern society. I contend that **employee participation in decision-making** offers significant benefits for **companies** despite certain limitations, and the following analysis outlines the primary arguments supporting this viewpoint.
 
-To begin with, one compelling advantage of **employee participation** is its potential to bring about **higher employee loyalty and stronger engagement**. In particular, **involving employees** can facilitate **better business ideas and creative suggestions**, leading to **increased revenue and improved customer satisfaction**. **Employees who participate in decision-making** demonstrate **greater motivation and a stronger sense of belonging**. For instance, **companies with employee feedback** report significantly **better ideas and higher revenue** compared to those **without employee participation**.
+To begin with, one compelling advantage of **employee participation in decision-making** is its potential to bring about **higher employee loyalty and stronger engagement**. In particular, **involving employees in decision-making** can facilitate **better business ideas and creative suggestions**, ultimately leading to **increased revenue and improved customer satisfaction**. **Employees** who **participate in decisions** demonstrate **greater motivation and a stronger sense of belonging**. For instance, **companies** that **involve employees in decision-making** report significantly **better ideas and higher revenue** compared to those **without such participation**.
 
-However, it is important to acknowledge that **employee participation** faces certain challenges in **modern business environments**. This is largely because **lengthy discussions** can create **workplace conflicts and disagreements**, which then lead to **slower decisions and reduced efficiency**. **Companies** that **require agreement from multiple departments** often experience **longer meeting times and delayed decisions**. As a result, many **organizations** face **communication problems** that make it hard to **respond quickly to business needs**.
+However, it is important to acknowledge that **employee participation** faces certain challenges in **modern business environments**. This is largely because **lengthy discussions** can create **workplace conflicts and disagreements**, which then lead to **slower decisions and reduced efficiency**. **Companies** that **require agreement from multiple departments** experience pressure to **make fast decisions while including everyone**. As a result, many **organizations** face **communication problems** that make it difficult to **respond quickly to business needs**.
 
-Taken together, these considerations demonstrate the overall importance of **employee participation**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **companies and managers** to allocate sufficient resources to address these challenges effectively.
+Taken together, these considerations demonstrate the overall importance of **employee participation in decision-making**, since its advantages remain significant despite the issues that accompany it. Thus, it is essential for **companies and managers** to allocate sufficient resources to address these challenges effectively.
 
 ---
 
@@ -90,20 +90,20 @@ Taken together, these considerations demonstrate the overall importance of **emp
 ## Example 2: Formal Written Examinations ✅
 
 ### Question
-**"The formal written examination can be a valid method to assess students' learning. To what extent do you agree or disagree?"**
+**"The formal written examination can be a valid method to assess students' learning. To what extent do you agree or disagree? Use your own experience."**
 
 ### Question Type
-Agree/Disagree
+Agree/Disagree (with personal experience required)
 
-### Complete Essay (232 words)
+### Complete Essay (237 words)
 
-The question of **whether formal written examinations effectively assess student learning** has attracted considerable attention in modern society. I contend that **this assessment method offers significant benefits** for **students** despite **certain limitations**, and the following analysis outlines the primary arguments supporting this viewpoint.
+The question of **whether formal written examinations are a valid method to assess students' learning** has attracted considerable attention in modern society. I contend that **formal written examinations** are a valid assessment method for **students** despite certain limitations. The following analysis outlines the primary arguments supporting this viewpoint.
 
-To begin with, one compelling advantage of **formal written examinations** is their potential to bring about **fair assessment and equal opportunities**. In particular, **written exams** can facilitate **clear standards and consistent grading**, ultimately leading to **accurate knowledge testing and reliable results**. **Students taking standardized tests** demonstrate **measurable results**. For instance, **learners assessed through formal examinations** report significantly **better preparation and clear expectations** compared to those **evaluated through subjective methods**.
+To begin with, one compelling advantage of **formal written examinations** is their potential to bring about **fair assessment and equal opportunities**. In particular, **written exams as assessment methods** can facilitate **clear standards and consistent grading**, leading to **accurate knowledge measurement and reliable evaluation**. **Students** who **take written exams** demonstrate **measurable learning outcomes and clear performance levels**. For instance, **learners with exam experience** report significantly **better study habits and preparation skills** compared to those **without such assessment**. In my experience, **formal examinations** during university helped me develop **strong study discipline and time management**.
 
-However, it is important to acknowledge that **formal exams** face certain challenges in **modern educational environments**. This is largely because **high-stakes testing** can create **test stress and student anxiety**, which then lead to **less creativity and limited critical thinking**. **Educational systems** that **heavily emphasize exam performance** create pressure for **students to memorize facts rather than understand concepts deeply**. As a result, many **learners** experience **exam-related stress** that makes it difficult to **maintain balanced learning methods**.
+However, it is important to acknowledge that **written exams** face certain challenges in **modern educational settings**. This is largely because **frequent testing** can create **test stress and student anxiety**, which then lead to **reduced creativity and limited critical thinking**. **Students** who **face heavy exam pressure** experience pressure to **memorize facts rather than understand concepts**. As a result, many **learners** face **mental pressure and exam-related stress** that make it difficult to **maintain healthy learning approaches**.
 
-Taken together, these considerations demonstrate that **formal written examinations** serve as valid assessment tools, since their advantages remain significant despite the issues that accompany them. Thus, it is essential for **schools and teachers** to allocate sufficient resources to address these challenges effectively.
+Taken together, these considerations demonstrate the overall importance of **formal written examinations as valid assessment methods**, since their advantages remain significant despite the issues that accompany them. Thus, it is essential for **schools and teachers** to allocate sufficient resources to address these challenges effectively.
 
 ---
 
@@ -112,17 +112,17 @@ Taken together, these considerations demonstrate that **formal written examinati
 ## Example 3: Travel and Education ✅
 
 ### Question
-**"Travel to study is over rated, we have brilliant scholars who studied locally. To what extent do you agree or disagree?"**
+**"“The value of travel has been overrated”. It is said that one can be a brilliant scholar without leaving one's home base. Do you think travel is a necessary component of a quality education?"**
 
 ### Complete Essay (235 words)
 
-The question of **whether travel is essential for quality education** has attracted considerable attention in modern society. I contend that **educational travel offers significant benefits** for **students** despite **certain limitations**, and the following analysis outlines the primary arguments supporting this viewpoint.
+The question of **whether travel is a necessary component of quality education** has attracted considerable attention in modern society. I contend that **travel** is NOT necessary for quality education despite **its significant benefits**. The following analysis outlines the primary arguments supporting this viewpoint.
 
-To begin with, one compelling advantage of **educational travel** is its potential to bring about **cultural awareness and cultural understanding**. In particular, **travel for learning** can facilitate **international exposure and adaptability**, ultimately leading to **global perspective and personal growth**. **Students who travel for education** demonstrate **stronger cultural understanding and sensitivity**. For instance, **learners who study abroad** report significantly **stronger ability to understand diverse perspectives** compared to those **who study only locally**.
+To begin with, one compelling advantage of **educational travel** is its potential to bring about **cultural awareness and cross-cultural understanding**. In particular, **travel for learning** can facilitate **international exposure and adaptability**, leading to **global perspectives and personal growth**. **Students** who **travel for education** demonstrate **better worldviews and cultural understanding**. For instance, **learners** who **study abroad or travel internationally** report significantly **stronger ability to understand diverse perspectives** compared to those **who study only locally**.
 
-However, it is important to acknowledge that **educational travel** faces certain challenges in **modern society**. This is largely because **travel costs and time requirements** can create **financial pressure and schedule difficulties**, which then lead to **limited access for many students**. **Many students** who **want to study abroad** experience pressure to **balance travel expenses with limited budgets**. As a result, many **learners** face **financial barriers** that make it difficult to **pursue international education opportunities**.
+However, it is important to acknowledge that **local education** also provides **quality learning opportunities**. This is largely because **studying locally** offers **access to established institutions and familiar environments**, which can enable **academic success and deep knowledge**. **Many brilliant scholars** throughout history demonstrate that **excellence can be achieved through dedicated local study**. Nevertheless, **educational travel** remains **valuable** because **direct cultural experience provides unique benefits**. As a result, while **local education** has value, **educational travel** delivers **additional perspectives** that make it a valuable addition.
 
-Taken together, these considerations demonstrate the overall importance of **educational travel**, since its advantages remain significant despite the issues that accompany them. Thus, it is essential for **students and educators** to allocate sufficient resources to address these challenges effectively.
+Taken together, these considerations demonstrate that **educational travel** is not strictly necessary for **quality education**, since **local education** also works well. Thus, it is essential for **students and educators** to support both approaches effectively.
 
 ---
 
@@ -150,7 +150,7 @@ Taken together, these considerations demonstrate that **government responsibilit
 ## Example 5: Television's Useful Functions ✅
 
 ### Question
-**"Television serves many useful functions. It helps people to relax. We can learn from television, and it can also be seen as a companion for the lonely. To what extent do you agree with this?"**
+**"Television serves many useful functions. It helps people to relax. We can learn from television, and it can also be seen as a companion for the lonely. To what extent do you agree with this? Explain why with your own experience."**
 
 ### Question Type
 Agree/Disagree
@@ -216,7 +216,7 @@ Taken together, these considerations demonstrate that **late assignment penaltie
 ## Example 8: Combining Study and Work ✅
 
 ### Question
-**"In order to study effectively, it requires comfort, peace and time. So it is impossible for a student to combine learning and employment at the same time, because one distracts the other. Is it realistic to combine them at the same time in our life today?"**
+**"In order to study effectively, it requires comfort, peace and time. So it is impossible for a student to combine learning and employment at the same time, because one distracts the other. Is it realistic to combine them at the same time in our life today? Support your opinion with examples."**
 
 ### Question Type
 Opinion / Is it Realistic?
@@ -238,7 +238,7 @@ Taken together, these considerations demonstrate that **combining study and work
 ## Example 9: Most Pressing Global Problem ✅
 
 ### Question
-**"The world's governments and organizations are facing a lot of issues. Which do you think is the most pressing problem for the inhabitants on our planet? And give solutions."**
+**"The world’s governments and organizations are facing a lot of issues. Which do you think is the most pressing problem for the inhabitants on our planet? And give solutions."**
 
 ### Complete Essay (232 words)
 
@@ -276,7 +276,7 @@ Taken together, these considerations demonstrate the overall importance of **bui
 ## Example 11: Work-Life Balance ✅
 
 ### Question
-**"Nowadays, it is increasingly more difficult to maintain the right balance between work and other aspects of one's life, such as time with family and leisure needs. How important do you think this balance is? Why do people find it hard to achieve?"**
+**"Nowadays, it is increasingly more difficult to maintain the right balance between work and other aspects of one’s life, such as time with family and leisure needs. How important do you think this balance is? Why do people find it hard to achieve?"**
 
 ### Question Type
 How Important / Why Hard (Two-part question)
@@ -323,7 +323,7 @@ Taken together, these considerations demonstrate the overall importance of **sma
 ## Example 13: Laws and Human Behavior ✅
 
 ### Question
-**"Some people think human behaviors can be changed by laws, while others think laws have little effect. What is your opinion?"**
+**"Some people think human behaviors can be changed by laws, while others think laws have little effect. What is your opinion."**
 
 ### Complete Essay (234 words)
 
@@ -342,7 +342,7 @@ Taken together, these points show the overall importance of **legal regulations 
 ## Example 14: Tourism in Developing Countries ✅
 
 ### Question
-**"Tourism brings advantages and disadvantages to developing countries. Discuss both views."**
+**"For a less developed country, the disadvantages of tourism are as great as the advantages. Please discuss this statement, and give and explain your opinion."**
 
 ### Complete Essay (234 words)
 
@@ -361,7 +361,7 @@ Taken together, these considerations demonstrate the overall importance of **tou
 ## Example 15: Mass Communication Information Revolution ✅
 
 ### Question
-**"Mass communication and transport continue to grow in societies, leading to an information revolution. What are the advantages and disadvantages of this development?"**
+**"“The information revolution by modern mass communication has both positive and negative consequences for individuals and for society.” To what extent do you agree? Explain with your own experience."**
 
 ### Complete Essay (238 words)
 
@@ -380,7 +380,7 @@ Taken together, these considerations demonstrate that **modern mass communicatio
 ## Example 16: Mass Media Influence ✅
 
 ### Question
-**"Mass media has a great influence on our society and individuals. To what extent do you think this is positive or negative?"**
+**"The mass media, including TV, radio and newspapers, influences our society and shapes our opinions and characters. What is your opinion?"**
 
 ### Complete Essay (235 words)
 
@@ -399,7 +399,7 @@ Taken together, these considerations demonstrate that **mass media influence** i
 ## Example 17: Mass Media Impact on Youth ✅
 
 ### Question
-**"How does mass communication influence young people? Give your opinion and examples."**
+**"Mass media, including TV and newspapers, have a great influence on humans, particularly on the younger generation. It has a pivotal role in shaping people's opinions. Discuss the extent you agree or disagree. Use your own experience or examples."**
 
 ### Complete Essay (236 words)
 
@@ -418,7 +418,7 @@ Taken together, these considerations demonstrate the overall importance of **mas
 ## Example 18: Consumer Goods Marketing ✅
 
 ### Question
-**"In marketing consumer goods, companies should emphasize brand name or low price. Discuss both views and give your opinion?"**
+**"Should marketing in companies producing consumer goods like food and clothing, place emphasis on the reputation of the company or short-term strategies like discounts and special offers? Why?"**
 
 ### Complete Essay (235 words)
 
@@ -513,7 +513,7 @@ Taken together, these considerations demonstrate that **increased life expectanc
 ## Example 23: Parental Legal Responsibility ✅
 
 ### Question
-**"Should parents be held legally responsible for the actions of their children? Do you agree with this opinion?"**
+**"Should parents be held legally responsible for the actions of their children? Do you agree with this opinion? Support your position with your own study, experience or observations."**
 
 ### Complete Essay (236 words)
 
@@ -532,7 +532,7 @@ Taken together, these considerations demonstrate the overall importance of **par
 ## Example 24: City vs Rural Life ✅
 
 ### Question
-**"Some people prefer to live in the countryside while others prefer city life. Which do you prefer? Why?"**
+**"Living in the countryside or having a city life, which one do you prefer? Please use examples or your personal experience to support your opinion."**
 
 ### Complete Essay (236 words)
 
@@ -551,7 +551,7 @@ Taken together, these considerations demonstrate that **countryside living** is 
 ## Example 25: Life Experience vs Formal Education ✅
 
 ### Question
-**"Compared with books and formal education, experience is a better teacher. To what extent do you agree or disagree?"**
+**"Some people argue that experience is the best teacher. Life experiences can teach more effectively than books or formal school education. How far do you agree with this idea? Support your opinion with reasons and/or your personal experience."**
 
 ### Complete Essay (235 words)
 
@@ -570,7 +570,7 @@ Taken together, these considerations demonstrate that **life experience** is val
 ## Example 26: Digital Media vs Physical Books ✅
 
 ### Question
-**"Universities should purchase more digital media materials instead of physical books. Discuss the advantages and disadvantages."**
+**"With the increase of digital media available online, the role of the library has become obsolete. Universities should only procure new digital media rather than constantly update textbooks. Discuss both the advantages and disadvantages of this position and give your own point of view."**
 
 ### Complete Essay (237 words)
 
@@ -589,7 +589,7 @@ Taken together, these considerations demonstrate that **digital media** offers i
 ## Example 27: Public Transport vs Roads ✅
 
 ### Question
-**"Should governments spend more money on improving public transportation or on building more roads? Give your opinion."**
+**"As cities are expanding, some people claim governments should look forward to creating better networks of public transport available for everyone rather than building more roads for vehicle owning population. What’s your opinion? Give some examples or experience to support."**
 
 ### Complete Essay (233 words)
 
@@ -627,7 +627,7 @@ Taken together, these considerations demonstrate that **shortage of personal tim
 ## Example 29: Reducing Work Hours ✅
 
 ### Question
-**"One way to reduce unemployment is to reduce working hours. To what extent do you agree or disagree?"**
+**"In modern society, unemployment among young people is a serious problem. One solution is to shorten the working week and put more people to work. Give your opinion of the idea, considering the advantages and disadvantages, whether it can apply to young people or the whole workforce."**
 
 ### Complete Essay (236 words)
 
@@ -646,7 +646,7 @@ Taken together, these considerations demonstrate the overall importance of **sho
 ## Example 30: Celebrity Privacy ✅
 
 ### Question
-**"People who are famous entertainers or sportspeople should give up the right to privacy because this is the price of fame. To what extent do you agree or disagree with this point of view?"**
+**"People who are famous entertainers or sportspeople should give up the right to privacy because this is the price of fame. To what extent do you agree or disagree with this point of view? Give your opinion with your experiences."**
 
 ### Complete Essay (235 words)
 
@@ -665,7 +665,7 @@ Taken together, these considerations demonstrate that **celebrity privacy rights
 ## Example 31: Future Work Hours ✅
 
 ### Question
-**"Do you think people will work fewer hours in the future? Why or why not?"**
+**"“In the future, people will work less hours at their jobs.” To what extent do you agree with it? Please support your opinion with your own experience."**
 
 ### Complete Essay (237 words)
 
@@ -684,7 +684,7 @@ Taken together, these considerations demonstrate that **working fewer hours** is
 ## Example 32: Age Restrictions ✅
 
 ### Question
-**"Some companies have age restrictions for employees. Discuss the advantages and disadvantages of this policy."**
+**"Age restrictions can be seen everywhere. It is believed that people should not do things until they reach the right age, such as marriage, and driving. Select one activity and state the minimum age that you think. Support with your own experiences."**
 
 ### Complete Essay (237 words)
 
@@ -703,7 +703,7 @@ Taken together, these considerations demonstrate the overall importance of **age
 ## Example 33: Foreign Language as Required Course ✅
 
 ### Question
-**"Should foreign languages be a compulsory subject in school curriculum? Discuss both views."**
+**"Should schools make learning a foreign language compulsory?"**
 
 ### Complete Essay (236 words)
 
@@ -722,7 +722,7 @@ Taken together, these considerations demonstrate the overall importance of **com
 ## Example 34: Historic Buildings Preservation ✅
 
 ### Question
-**"It is important to preserve the beautiful buildings of the past, even if it will be expensive to do so. To what extent do you agree or disagree with it?"**
+**"More and more countries spend large amounts of money on the restoration of buildings instead of on modern housing. To what extent do you agree or disagree with this analysis? Support your writing with its advantages or disadvantages."**
 
 ### Complete Essay (234 words)
 
@@ -760,7 +760,7 @@ Taken together, these considerations demonstrate that **modern childhood** is no
 ## Example 36: Maximum Wage Limits ✅
 
 ### Question
-**"Should there be a maximum wage for high-paying people? To what extent do you agree with this statement?"**
+**"“Should there be a maximum wage for high-paying people.” To what extent do you agree with this statement? Please give your reasons and/or arguments."**
 
 ### Complete Essay (234 words)
 
@@ -779,7 +779,7 @@ Taken together, these considerations demonstrate the overall importance of **max
 ## Example 37: AI Translation vs Learning Languages ✅
 
 ### Question
-**"With the development of AI translation tools, is it still necessary to learn foreign languages? Give your opinion."**
+**"Advanced technology such as artificial intelligence can translate a foreign language easily. Do you think learning a foreign language is still necessary? Support with your own experience."**
 
 ### Complete Essay (237 words)
 

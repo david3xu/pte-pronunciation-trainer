@@ -184,11 +184,10 @@
 
 | Option Type | Count | Examples |
 | :--- | :---: | :--- |
-| **Option A (Challenges)** | **27** | Ex 1, 2, 5, 9, 11, 12, 13, 14, 15, 16, 17, 18, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 33, 35, 36, 37 |
-| **Option B (Alternative Benefits)** | **8** | Ex 3, 4, 6, 7, 19, 20, 32, 34 |
-| **Option C (Solutions)** | **2** | Ex 8 (Late Penalties), Ex 10 (Global Problem) |
-| **Option D (Preference/Examples)** | **1** | Ex 38 (Climate Research Area) |
-| **Total** | **38** | |
+| **Option A (Challenges)** | **27** | Ex 1, 2, 5, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 19, 20, 21, 22, 23, 26, 28, 29, 30, 31, 32, 33, 35, 36 |
+| **Option B (Alternative Benefits)** | **9** | Ex 3, 4, 6, 18, 24, 25, 27, 34, 37 |
+| **Option C (Solutions)** | **1** | Ex 9 (Global Problem) |
+| **Total** | **37** | |
 
 ---
 

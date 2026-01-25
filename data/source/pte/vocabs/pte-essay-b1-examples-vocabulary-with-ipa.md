@@ -1030,8 +1030,8 @@
 
 ## Summary Statistics
 
-- **Total unique terms:** 549 terms
-- **Organized by:** 38 essay examples
+- **Total unique terms:** 631 terms
+- **Organized by:** 37 essay examples
 - **All terms:** Used in actual Template B1 essays
 - **Strategy:** These are ACTUAL fills used in essay examples
 

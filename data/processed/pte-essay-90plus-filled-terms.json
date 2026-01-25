@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-01-24T11:53:48.082Z",
-    "totalTerms": 975,
+    "generated": "2026-01-25T05:03:07.101Z",
+    "totalTerms": 983,
     "source": "pte-essay-90plus-filled-terms",
     "description": "Auto-discovered vocabulary book: pte-essay-90plus-filled-terms",
     "version": "1.0",
@@ -29,7 +29,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "this approach offers significant benefits",
+      "english": "employee participation in decision-making",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -61,23 +61,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "certain limitations",
-      "pronunciation": {
-        "british": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        },
-        "american": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-90plus-filled-terms",
-      "source": "pte-essay-90plus-filled-terms"
-    },
-    {
-      "english": "employee participation",
+      "english": "employee participation in decision-making",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -109,7 +93,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "involving employees",
+      "english": "involving employees in decision-making",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -157,7 +141,23 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "Employees who participate in decision-making",
+      "english": "Employees",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "participate in decisions",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -189,7 +189,23 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "companies with employee feedback",
+      "english": "companies",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "involve employees in decision-making",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -221,7 +237,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "without employee participation",
+      "english": "without such participation",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -349,7 +365,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "longer meeting times and delayed decisions",
+      "english": "make fast decisions while including everyone",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -413,7 +429,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "employee participation",
+      "english": "employee participation in decision-making",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -445,7 +461,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "whether formal written examinations effectively assess student learning",
+      "english": "whether formal written examinations are a valid method to assess students' learning",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -461,7 +477,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "this assessment method offers substantial benefits",
+      "english": "formal written examinations",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -489,22 +505,6 @@
         }
       },
       "difficulty": "normal",
-      "category": "pte-essay-90plus-filled-terms",
-      "source": "pte-essay-90plus-filled-terms"
-    },
-    {
-      "english": "certain limitations",
-      "pronunciation": {
-        "british": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        },
-        "american": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        }
-      },
-      "difficulty": "hard",
       "category": "pte-essay-90plus-filled-terms",
       "source": "pte-essay-90plus-filled-terms"
     },
@@ -541,7 +541,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "written exams",
+      "english": "written exams as assessment methods",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -573,7 +573,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "accurate knowledge testing and reliable results",
+      "english": "accurate knowledge measurement and reliable evaluation",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -589,7 +589,23 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "Students taking standardized tests",
+      "english": "Students",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "take written exams",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -605,7 +621,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "measurable results",
+      "english": "measurable learning outcomes and clear performance levels",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -621,7 +637,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "learners assessed through formal examinations",
+      "english": "learners with exam experience",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -637,7 +653,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "better preparation and clear expectations",
+      "english": "better study habits and preparation skills",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -653,7 +669,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "evaluated through subjective methods",
+      "english": "without such assessment",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -669,7 +685,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "formal exams",
+      "english": "formal examinations",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -685,7 +701,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "modern educational environments",
+      "english": "strong study discipline and time management",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -701,7 +717,39 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "high-stakes testing",
+      "english": "written exams",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "modern educational settings",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "frequent testing",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -733,7 +781,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "less creativity and limited critical thinking",
+      "english": "reduced creativity and limited critical thinking",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -749,7 +797,23 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "Educational systems",
+      "english": "Students",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "face heavy exam pressure",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -765,23 +829,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "heavily emphasize exam performance",
-      "pronunciation": {
-        "british": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        },
-        "american": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-90plus-filled-terms",
-      "source": "pte-essay-90plus-filled-terms"
-    },
-    {
-      "english": "students to memorize facts rather than understand concepts deeply",
+      "english": "memorize facts rather than understand concepts",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -813,7 +861,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "exam-related stress",
+      "english": "mental pressure and exam-related stress",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -829,7 +877,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "maintain balanced learning methods",
+      "english": "maintain healthy learning approaches",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -845,7 +893,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "formal written examinations",
+      "english": "formal written examinations as valid assessment methods",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -877,7 +925,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "whether travel is essential for quality education",
+      "english": "whether travel is a necessary component of quality education",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -893,23 +941,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "educational travel offers significant benefits",
-      "pronunciation": {
-        "british": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        },
-        "american": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-90plus-filled-terms",
-      "source": "pte-essay-90plus-filled-terms"
-    },
-    {
-      "english": "students",
+      "english": "travel",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -925,7 +957,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "certain limitations",
+      "english": "its significant benefits",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -957,7 +989,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "cultural awareness and cultural understanding",
+      "english": "cultural awareness and cross-cultural understanding",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -1005,7 +1037,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "global perspective and personal growth",
+      "english": "global perspectives and personal growth",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -1021,7 +1053,23 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "Students who travel for education",
+      "english": "Students",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "travel for education",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -1037,7 +1085,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "stronger cultural understanding and sensitivity",
+      "english": "better worldviews and cultural understanding",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -1053,7 +1101,23 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "learners who study abroad",
+      "english": "learners",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "study abroad or travel internationally",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -1101,6 +1165,118 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
+      "english": "local education",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "quality learning opportunities",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "studying locally",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "access to established institutions and familiar environments",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "academic success and deep knowledge",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "Many brilliant scholars",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "excellence can be achieved through dedicated local study",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
       "english": "educational travel",
       "pronunciation": {
         "british": {
@@ -1117,119 +1293,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "modern society",
-      "pronunciation": {
-        "british": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        },
-        "american": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-90plus-filled-terms",
-      "source": "pte-essay-90plus-filled-terms"
-    },
-    {
-      "english": "travel costs and time requirements",
-      "pronunciation": {
-        "british": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        },
-        "american": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-90plus-filled-terms",
-      "source": "pte-essay-90plus-filled-terms"
-    },
-    {
-      "english": "financial pressure and schedule difficulties",
-      "pronunciation": {
-        "british": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        },
-        "american": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-90plus-filled-terms",
-      "source": "pte-essay-90plus-filled-terms"
-    },
-    {
-      "english": "limited access for many students",
-      "pronunciation": {
-        "british": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        },
-        "american": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-90plus-filled-terms",
-      "source": "pte-essay-90plus-filled-terms"
-    },
-    {
-      "english": "Many students",
-      "pronunciation": {
-        "british": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        },
-        "american": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-90plus-filled-terms",
-      "source": "pte-essay-90plus-filled-terms"
-    },
-    {
-      "english": "want to study abroad",
-      "pronunciation": {
-        "british": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        },
-        "american": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-90plus-filled-terms",
-      "source": "pte-essay-90plus-filled-terms"
-    },
-    {
-      "english": "balance travel expenses with limited budgets",
-      "pronunciation": {
-        "british": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        },
-        "american": {
-          "ipa": "PLACEHOLDER",
-          "phonetic": ""
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-90plus-filled-terms",
-      "source": "pte-essay-90plus-filled-terms"
-    },
-    {
-      "english": "learners",
+      "english": "valuable",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -1245,7 +1309,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "financial barriers",
+      "english": "direct cultural experience provides unique benefits",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -1261,7 +1325,7 @@
       "source": "pte-essay-90plus-filled-terms"
     },
     {
-      "english": "pursue international education opportunities",
+      "english": "local education",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",
@@ -1278,6 +1342,70 @@
     },
     {
       "english": "educational travel",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "additional perspectives",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "educational travel",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "quality education",
+      "pronunciation": {
+        "british": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "PLACEHOLDER",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-90plus-filled-terms",
+      "source": "pte-essay-90plus-filled-terms"
+    },
+    {
+      "english": "local education",
       "pronunciation": {
         "british": {
           "ipa": "PLACEHOLDER",

@@ -1,7 +1,7 @@
 import re
 import os
 
-file_path = './data/source/pte/vocabs/pte-essay-90plus-filled-terms.md'
+file_path = './data/source/pte/vocabs/pte-essay-b1-examples-vocabulary-with-ipa.md'
 
 with open(file_path, 'r', encoding='utf-8') as f:
     lines = f.readlines()

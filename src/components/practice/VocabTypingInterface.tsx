@@ -119,7 +119,8 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
     const correctNormalized = normalize(correctText);
 
     // Check for exact match
-    const isExactMatch = userNormalized === correctNormalized;
+    // STRICT MATCH: Compare original strings (trimmed) to ensure 100% match including case and punctuation
+    const isExactMatch = userText.trim() === correctText.trim();
 
     const userWords = userNormalized.split(' ').filter((w) => w);
     const correctWords = correctNormalized.split(' ').filter((w) => w);
@@ -507,6 +508,10 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
                 {feedback.isExactMatch ? (
                   <li>
                     <Text>Excellent! Perfect spelling. Keep it up! 🎉</Text>
+                  </li>
+                ) : feedback.accuracy === 100 ? (
+                   <li>
+                    <Text>Almost there! Check for capitalization and punctuation differences.</Text>
                   </li>
                 ) : feedback.accuracy >= 80 ? (
                   <>

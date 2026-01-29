@@ -70,6 +70,7 @@ export class AppConfig {
               'pte-essay-90plus-filled-terms': 'data/processed/pte-essay-90plus-filled-terms.json',
               'pte-plural-nouns-s-practice': 'data/processed/pte-plural-nouns-s-practice.json',
               'pte-template-practice': 'data/processed/pte-template-practice-vocabulary.json',
+              'pte-essay-topic-paraphrase': 'data/processed/pte-essay-topic-paraphrase-vocabulary.json',
 
               // Practice modes
               'rs': 'data/processed/pte-repeat-sentence.json',
@@ -117,6 +118,7 @@ export class AppConfig {
           { id: 'pte-essay-90plus-filled-terms', name: 'PTE 90+ Essay Filled Terms', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-plural-nouns-s-practice', name: 'Plural Nouns /s/ Practice', category: 'vocabulary', difficulty: 'easy' },
           { id: 'pte-template-practice', name: 'Template Practice', category: 'vocabulary', difficulty: 'normal' },
+          { id: 'pte-essay-topic-paraphrase', name: 'Essay Topic & Paraphrase', category: 'vocabulary', difficulty: 'normal' },
 
           // Practice modes (3 total)
           { id: 'rs', name: 'Repeat Sentence', category: 'practice', description: '620 practice sentences' },
@@ -408,6 +410,17 @@ export class AppConfig {
             category: 'vocabulary',
             description: 'Vocabulary from DI, SGD, and RL templates',
             sourceType: 'pte-template-practice-vocabulary-with-ipa',
+            dataType: 'vocabulary',
+            extractorType: 'PTETermsExtractor',
+            inputSubdir: 'vocabs'
+          },
+          {
+            id: 'pte-essay-topic-paraphrase',
+            input: 'pte-essay-topic-paraphrase-vocabulary-with-ipa.md',
+            output: 'pte-essay-topic-paraphrase-vocabulary.json',
+            category: 'vocabulary',
+            description: 'Essay Topics and Paraphrases (3 per question)',
+            sourceType: 'pte-essay-topic-paraphrase-vocabulary-with-ipa',
             dataType: 'vocabulary',
             extractorType: 'PTETermsExtractor',
             inputSubdir: 'vocabs'

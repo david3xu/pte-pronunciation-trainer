@@ -1,6 +1,6 @@
 # PTE Essay Topics & Paraphrases - Vocabulary with IPA
 
-**Total Terms:** 266
+**Total Terms:** 245
 
 ---
 
@@ -370,30 +370,3 @@
 243. communication barriers | /kəˌmjuːnɪˈkeɪʃən ˈbæriəz/ — sounds like **kuh-myoo-nih-KAY-shun BAR-ee-urz**
 244. maintenance costs | /ˈmeɪntənəns kɒsts/ — sounds like **MAYN-tuh-nuns KOSTS**
 245. adaptation difficulties | /ˌædæpˈteɪʃən ˈdɪfɪkəltiz/ — sounds like **ad-ap-TAY-shun DIF-ih-kul-teez**
-
-## 60. Cross-Topic Universal Terms - Evidence
-246. research studies | /rɪˈsɜːtʃ ˈstʌdiz/ — sounds like **rih-SURCH STUD-eez**
-247. expert analysis | /ˈekspɜːt əˈnælɪsɪs/ — sounds like **EK-spurt uh-NAL-ih-sis**
-248. scientific evidence | /ˌsaɪənˈtɪfɪk ˈevɪdəns/ — sounds like **sy-un-TIF-ik EV-ih-duns**
-249. survey data | /ˈsɜːveɪ ˈdeɪtə/ — sounds like **SUR-vay DAY-tuh**
-250. statistical findings | /stəˈtɪstɪkəl ˈfaɪndɪŋz/ — sounds like **stuh-TIS-tih-kul FYN-dings**
-251. professional research | /prəˈfeʃənəl rɪˈsɜːtʃ/ — sounds like **pruh-FESH-un-ul rih-SURCH**
-252. academic studies | /ˌækəˈdemɪk ˈstʌdiz/ — sounds like **ak-uh-DEM-ik STUD-eez**
-253. field experts | /fiːld ˈekspɜːts/ — sounds like **FEELD EK-spurts**
-
-## 61. Cross-Topic Universal Terms - Subjects
-254. people | /ˈpiːpəl/ — sounds like **PEE-pul**
-255. individuals | /ˌɪndɪˈvɪdʒuəlz/ — sounds like **in-dih-VIJ-oo-ulz**
-256. students | /ˈstjuːdənts/ — sounds like **STYOO-dunts**
-257. workers | /ˈwɜːkəz/ — sounds like **WUR-kurz**
-258. employees | /ɪmˈplɔɪiːz/ — sounds like **im-PLOY-eez**
-259. citizens | /ˈsɪtɪzənz/ — sounds like **SIT-ih-zunz**
-260. communities | /kəˈmjuːnɪtiz/ — sounds like **kuh-MYOO-nih-teez**
-261. residents | /ˈrezɪdənts/ — sounds like **REZ-ih-dunts**
-262. families | /ˈfæmɪliz/ — sounds like **FAM-ih-leez**
-263. society | /səˈsaɪəti/ — sounds like **suh-SY-uh-tee**
-
-## 62. Cross-Topic Universal Terms - Stakeholders
-264. policymakers | /ˈpɒləsiˌmeɪkəz/ — sounds like **POL-uh-see-may-kurz**
-265. educators | /ˈedjʊkeɪtəz/ — sounds like **ed-yoo-KAY-turz**
-266. organizations | /ˌɔːɡənaɪˈzeɪʃənz/ — sounds like **or-guh-ny-ZAY-shunz**

@@ -1,0 +1,1648 @@
+{
+  "metadata": {
+    "generated": "2026-01-29T06:55:53.643Z",
+    "totalTerms": 102,
+    "source": "pte-template-practice-vocabulary",
+    "description": "Auto-discovered vocabulary book: pte-template-practice-vocabulary",
+    "version": "1.0",
+    "categories": [
+      "pte-template-practice-vocabulary"
+    ],
+    "hasIPA": true,
+    "keepDuplicates": false
+  },
+  "vocabulary": [
+    {
+      "english": "this",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs",
+          "phonetic": "THIS"
+        },
+        "american": {
+          "ipa": "ðɪs",
+          "phonetic": "THIS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "picture",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpɪktʃə",
+          "phonetic": "PIK-chur"
+        },
+        "american": {
+          "ipa": "ˈpɪktʃə",
+          "phonetic": "PIK-chur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "shows",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʃəʊz",
+          "phonetic": "SHOWZ"
+        },
+        "american": {
+          "ipa": "ʃəʊz",
+          "phonetic": "SHOWZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "information",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌɪnfəˈmeɪʃən",
+          "phonetic": "in-fur-MAY-shun"
+        },
+        "american": {
+          "ipa": "ˌɪnfəˈmeɪʃən",
+          "phonetic": "in-fur-MAY-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "about",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈbaʊt",
+          "phonetic": "uh-BOUT"
+        },
+        "american": {
+          "ipa": "əˈbaʊt",
+          "phonetic": "uh-BOUT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "if",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪf",
+          "phonetic": "IF"
+        },
+        "american": {
+          "ipa": "ɪf",
+          "phonetic": "IF"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "we",
+      "pronunciation": {
+        "british": {
+          "ipa": "wiː",
+          "phonetic": "WEE"
+        },
+        "american": {
+          "ipa": "wiː",
+          "phonetic": "WEE"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "look",
+      "pronunciation": {
+        "british": {
+          "ipa": "lʊk",
+          "phonetic": "LOOK"
+        },
+        "american": {
+          "ipa": "lʊk",
+          "phonetic": "LOOK"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "at",
+      "pronunciation": {
+        "british": {
+          "ipa": "æt",
+          "phonetic": "AT"
+        },
+        "american": {
+          "ipa": "æt",
+          "phonetic": "AT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "can",
+      "pronunciation": {
+        "british": {
+          "ipa": "kæn",
+          "phonetic": "KAN"
+        },
+        "american": {
+          "ipa": "kæn",
+          "phonetic": "KAN"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "see",
+      "pronunciation": {
+        "british": {
+          "ipa": "siː",
+          "phonetic": "SEE"
+        },
+        "american": {
+          "ipa": "siː",
+          "phonetic": "SEE"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "that",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðæt",
+          "phonetic": "THAT"
+        },
+        "american": {
+          "ipa": "ðæt",
+          "phonetic": "THAT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "the",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə",
+          "phonetic": "dthuh"
+        },
+        "american": {
+          "ipa": "ðə",
+          "phonetic": "dthuh"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "highest",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhaɪɪst",
+          "phonetic": "HY-ist"
+        },
+        "american": {
+          "ipa": "ˈhaɪɪst",
+          "phonetic": "HY-ist"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "value",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈvæljuː",
+          "phonetic": "VAL-yoo"
+        },
+        "american": {
+          "ipa": "ˈvæljuː",
+          "phonetic": "VAL-yoo"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "appears",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈpɪəz",
+          "phonetic": "uh-PEERZ"
+        },
+        "american": {
+          "ipa": "əˈpɪəz",
+          "phonetic": "uh-PEERZ"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "in",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn",
+          "phonetic": "IN"
+        },
+        "american": {
+          "ipa": "ɪn",
+          "phonetic": "IN"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "which",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪtʃ",
+          "phonetic": "WHICH"
+        },
+        "american": {
+          "ipa": "wɪtʃ",
+          "phonetic": "WHICH"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "is",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪz",
+          "phonetic": "IZ"
+        },
+        "american": {
+          "ipa": "ɪz",
+          "phonetic": "IZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "close",
+      "pronunciation": {
+        "british": {
+          "ipa": "kləʊs",
+          "phonetic": "KLOHSS"
+        },
+        "american": {
+          "ipa": "kləʊs",
+          "phonetic": "KLOHSS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "to",
+      "pronunciation": {
+        "british": {
+          "ipa": "tuː",
+          "phonetic": "TOO"
+        },
+        "american": {
+          "ipa": "tuː",
+          "phonetic": "TOO"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "on",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɒn",
+          "phonetic": "ON"
+        },
+        "american": {
+          "ipa": "ɒn",
+          "phonetic": "ON"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "other",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈʌðə",
+          "phonetic": "UH-thur"
+        },
+        "american": {
+          "ipa": "ˈʌðə",
+          "phonetic": "UH-thur"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "hand",
+      "pronunciation": {
+        "british": {
+          "ipa": "hænd",
+          "phonetic": "HAND"
+        },
+        "american": {
+          "ipa": "hænd",
+          "phonetic": "HAND"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "lowest",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈləʊɪst",
+          "phonetic": "LOW-ist"
+        },
+        "american": {
+          "ipa": "ˈləʊɪst",
+          "phonetic": "LOW-ist"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "be",
+      "pronunciation": {
+        "british": {
+          "ipa": "biː",
+          "phonetic": "BEE"
+        },
+        "american": {
+          "ipa": "biː",
+          "phonetic": "BEE"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "found",
+      "pronunciation": {
+        "british": {
+          "ipa": "faʊnd",
+          "phonetic": "FOUND"
+        },
+        "american": {
+          "ipa": "faʊnd",
+          "phonetic": "FOUND"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "only",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈəʊnli",
+          "phonetic": "OH-nlee"
+        },
+        "american": {
+          "ipa": "ˈəʊnli",
+          "phonetic": "OH-nlee"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "also",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɔːlsəʊ",
+          "phonetic": "AWL-so"
+        },
+        "american": {
+          "ipa": "ˈɔːlsəʊ",
+          "phonetic": "AWL-so"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "notice",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈnəʊtɪs",
+          "phonetic": "NOH-tis"
+        },
+        "american": {
+          "ipa": "ˈnəʊtɪs",
+          "phonetic": "NOH-tis"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "pretty",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈprɪti",
+          "phonetic": "PRIT-ee"
+        },
+        "american": {
+          "ipa": "ˈprɪti",
+          "phonetic": "PRIT-ee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "high",
+      "pronunciation": {
+        "british": {
+          "ipa": "haɪ",
+          "phonetic": "HY"
+        },
+        "american": {
+          "ipa": "haɪ",
+          "phonetic": "HY"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "as",
+      "pronunciation": {
+        "british": {
+          "ipa": "æz",
+          "phonetic": "AZ"
+        },
+        "american": {
+          "ipa": "æz",
+          "phonetic": "AZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "well",
+      "pronunciation": {
+        "british": {
+          "ipa": "wel",
+          "phonetic": "WELL"
+        },
+        "american": {
+          "ipa": "wel",
+          "phonetic": "WELL"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "addition",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈdɪʃən",
+          "phonetic": "uh-DISH-un"
+        },
+        "american": {
+          "ipa": "əˈdɪʃən",
+          "phonetic": "uh-DISH-un"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "and",
+      "pronunciation": {
+        "british": {
+          "ipa": "ænd",
+          "phonetic": "AND"
+        },
+        "american": {
+          "ipa": "ænd",
+          "phonetic": "AND"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "are",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɑː",
+          "phonetic": "AR"
+        },
+        "american": {
+          "ipa": "ɑː",
+          "phonetic": "AR"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "sum",
+      "pronunciation": {
+        "british": {
+          "ipa": "sʌm",
+          "phonetic": "SUM"
+        },
+        "american": {
+          "ipa": "sʌm",
+          "phonetic": "SUM"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "up",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʌp",
+          "phonetic": "UP"
+        },
+        "american": {
+          "ipa": "ʌp",
+          "phonetic": "UP"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "tells",
+      "pronunciation": {
+        "british": {
+          "ipa": "telz",
+          "phonetic": "TELZ"
+        },
+        "american": {
+          "ipa": "telz",
+          "phonetic": "TELZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "us",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʌs",
+          "phonetic": "US"
+        },
+        "american": {
+          "ipa": "ʌs",
+          "phonetic": "US"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "eight",
+      "pronunciation": {
+        "british": {
+          "ipa": "eɪt",
+          "phonetic": "AYT"
+        },
+        "american": {
+          "ipa": "eɪt",
+          "phonetic": "AYT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "hundred",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhʌndrəd",
+          "phonetic": "HUN-dred"
+        },
+        "american": {
+          "ipa": "ˈhʌndrəd",
+          "phonetic": "HUN-dred"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "thousand",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈθaʊzənd",
+          "phonetic": "THOW-zund"
+        },
+        "american": {
+          "ipa": "ˈθaʊzənd",
+          "phonetic": "THOW-zund"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "point",
+      "pronunciation": {
+        "british": {
+          "ipa": "pɔɪnt",
+          "phonetic": "POINT"
+        },
+        "american": {
+          "ipa": "pɔɪnt",
+          "phonetic": "POINT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "percent",
+      "pronunciation": {
+        "british": {
+          "ipa": "pəˈsent",
+          "phonetic": "pur-SENT"
+        },
+        "american": {
+          "ipa": "pəˈsent",
+          "phonetic": "pur-SENT"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "one",
+      "pronunciation": {
+        "british": {
+          "ipa": "wʌn",
+          "phonetic": "WUN"
+        },
+        "american": {
+          "ipa": "wʌn",
+          "phonetic": "WUN"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "two",
+      "pronunciation": {
+        "british": {
+          "ipa": "tuː",
+          "phonetic": "TOO"
+        },
+        "american": {
+          "ipa": "tuː",
+          "phonetic": "TOO"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "three",
+      "pronunciation": {
+        "british": {
+          "ipa": "θriː",
+          "phonetic": "THREE"
+        },
+        "american": {
+          "ipa": "θriː",
+          "phonetic": "THREE"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "four",
+      "pronunciation": {
+        "british": {
+          "ipa": "fɔː",
+          "phonetic": "FOR"
+        },
+        "american": {
+          "ipa": "fɔː",
+          "phonetic": "FOR"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "five",
+      "pronunciation": {
+        "british": {
+          "ipa": "faɪv",
+          "phonetic": "FYVE"
+        },
+        "american": {
+          "ipa": "faɪv",
+          "phonetic": "FYVE"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "six",
+      "pronunciation": {
+        "british": {
+          "ipa": "sɪks",
+          "phonetic": "SIX"
+        },
+        "american": {
+          "ipa": "sɪks",
+          "phonetic": "SIX"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "seven",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsevən",
+          "phonetic": "SEV-un"
+        },
+        "american": {
+          "ipa": "ˈsevən",
+          "phonetic": "SEV-un"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "nine",
+      "pronunciation": {
+        "british": {
+          "ipa": "naɪn",
+          "phonetic": "NINE"
+        },
+        "american": {
+          "ipa": "naɪn",
+          "phonetic": "NINE"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "topic",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtɒpɪk",
+          "phonetic": "TOP-ik"
+        },
+        "american": {
+          "ipa": "ˈtɒpɪk",
+          "phonetic": "TOP-ik"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "looking",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlʊkɪŋ",
+          "phonetic": "LOOK-ing"
+        },
+        "american": {
+          "ipa": "ˈlʊkɪŋ",
+          "phonetic": "LOOK-ing"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "image",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪmɪdʒ",
+          "phonetic": "IM-ij"
+        },
+        "american": {
+          "ipa": "ˈɪmɪdʒ",
+          "phonetic": "IM-ij"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "top",
+      "pronunciation": {
+        "british": {
+          "ipa": "tɒp",
+          "phonetic": "TOP"
+        },
+        "american": {
+          "ipa": "tɒp",
+          "phonetic": "TOP"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "connects",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəˈnekts",
+          "phonetic": "kuh-NEKTS"
+        },
+        "american": {
+          "ipa": "kəˈnekts",
+          "phonetic": "kuh-NEKTS"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "left",
+      "pronunciation": {
+        "british": {
+          "ipa": "left",
+          "phonetic": "LEFT"
+        },
+        "american": {
+          "ipa": "left",
+          "phonetic": "LEFT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "side",
+      "pronunciation": {
+        "british": {
+          "ipa": "saɪd",
+          "phonetic": "SIDE"
+        },
+        "american": {
+          "ipa": "saɪd",
+          "phonetic": "SIDE"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "right",
+      "pronunciation": {
+        "british": {
+          "ipa": "raɪt",
+          "phonetic": "RIGHT"
+        },
+        "american": {
+          "ipa": "raɪt",
+          "phonetic": "RIGHT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "bottom",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbɒtəm",
+          "phonetic": "BOT-um"
+        },
+        "american": {
+          "ipa": "ˈbɒtəm",
+          "phonetic": "BOT-um"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "next",
+      "pronunciation": {
+        "british": {
+          "ipa": "nekst",
+          "phonetic": "NEXT"
+        },
+        "american": {
+          "ipa": "nekst",
+          "phonetic": "NEXT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "each",
+      "pronunciation": {
+        "british": {
+          "ipa": "iːtʃ",
+          "phonetic": "EECH"
+        },
+        "american": {
+          "ipa": "iːtʃ",
+          "phonetic": "EECH"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "seen",
+      "pronunciation": {
+        "british": {
+          "ipa": "siːn",
+          "phonetic": "SEEN"
+        },
+        "american": {
+          "ipa": "siːn",
+          "phonetic": "SEEN"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "process",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈprəʊses",
+          "phonetic": "PROH-ses"
+        },
+        "american": {
+          "ipa": "ˈprəʊses",
+          "phonetic": "PROH-ses"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "first",
+      "pronunciation": {
+        "british": {
+          "ipa": "fɜːst",
+          "phonetic": "FIRST"
+        },
+        "american": {
+          "ipa": "fɜːst",
+          "phonetic": "FIRST"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "step",
+      "pronunciation": {
+        "british": {
+          "ipa": "step",
+          "phonetic": "STEP"
+        },
+        "american": {
+          "ipa": "step",
+          "phonetic": "STEP"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "continues",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈtɪnjuːz",
+          "phonetic": "kun-TIN-yooz"
+        },
+        "american": {
+          "ipa": "kənˈtɪnjuːz",
+          "phonetic": "kun-TIN-yooz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "takes",
+      "pronunciation": {
+        "british": {
+          "ipa": "teɪks",
+          "phonetic": "TAYKS"
+        },
+        "american": {
+          "ipa": "teɪks",
+          "phonetic": "TAYKS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "place",
+      "pronunciation": {
+        "british": {
+          "ipa": "pleɪs",
+          "phonetic": "PLAYS"
+        },
+        "american": {
+          "ipa": "pleɪs",
+          "phonetic": "PLAYS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "leads",
+      "pronunciation": {
+        "british": {
+          "ipa": "liːdz",
+          "phonetic": "LEEDZ"
+        },
+        "american": {
+          "ipa": "liːdz",
+          "phonetic": "LEEDZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "after",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɑːftə",
+          "phonetic": "AF-tur"
+        },
+        "american": {
+          "ipa": "ˈɑːftə",
+          "phonetic": "AF-tur"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "happens",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhæpənz",
+          "phonetic": "HAP-unz"
+        },
+        "american": {
+          "ipa": "ˈhæpənz",
+          "phonetic": "HAP-unz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "finally",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfaɪnəli",
+          "phonetic": "FY-nuh-lee"
+        },
+        "american": {
+          "ipa": "ˈfaɪnəli",
+          "phonetic": "FY-nuh-lee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "ends",
+      "pronunciation": {
+        "british": {
+          "ipa": "endz",
+          "phonetic": "ENDZ"
+        },
+        "american": {
+          "ipa": "endz",
+          "phonetic": "ENDZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "with",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪð",
+          "phonetic": "WITH"
+        },
+        "american": {
+          "ipa": "wɪð",
+          "phonetic": "WITH"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "final",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfaɪnəl",
+          "phonetic": "FY-nul"
+        },
+        "american": {
+          "ipa": "ˈfaɪnəl",
+          "phonetic": "FY-nul"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "students",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈstjuːdənts",
+          "phonetic": "STYOO-dunts"
+        },
+        "american": {
+          "ipa": "ˈstjuːdənts",
+          "phonetic": "STYOO-dunts"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "talking",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtɔːkɪŋ",
+          "phonetic": "TAWK-ing"
+        },
+        "american": {
+          "ipa": "ˈtɔːkɪŋ",
+          "phonetic": "TAWK-ing"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "beginning",
+      "pronunciation": {
+        "british": {
+          "ipa": "bɪˈɡɪnɪŋ",
+          "phonetic": "bih-GIN-ing"
+        },
+        "american": {
+          "ipa": "bɪˈɡɪnɪŋ",
+          "phonetic": "bih-GIN-ing"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "speaker",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈspiːkə",
+          "phonetic": "SPEE-kur"
+        },
+        "american": {
+          "ipa": "ˈspiːkə",
+          "phonetic": "SPEE-kur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "said",
+      "pronunciation": {
+        "british": {
+          "ipa": "sed",
+          "phonetic": "SED"
+        },
+        "american": {
+          "ipa": "sed",
+          "phonetic": "SED"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "noticed",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈnəʊtɪst",
+          "phonetic": "NOH-tist"
+        },
+        "american": {
+          "ipa": "ˈnəʊtɪst",
+          "phonetic": "NOH-tist"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "very",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈveri",
+          "phonetic": "VER-ee"
+        },
+        "american": {
+          "ipa": "ˈveri",
+          "phonetic": "VER-ee"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "important",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪmˈpɔːtənt",
+          "phonetic": "im-POR-tunt"
+        },
+        "american": {
+          "ipa": "ɪmˈpɔːtənt",
+          "phonetic": "im-POR-tunt"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "for",
+      "pronunciation": {
+        "british": {
+          "ipa": "fɔː",
+          "phonetic": "FOR"
+        },
+        "american": {
+          "ipa": "fɔː",
+          "phonetic": "FOR"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "explained",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪkˈspleɪnd",
+          "phonetic": "ik-SPLAYND"
+        },
+        "american": {
+          "ipa": "ɪkˈspleɪnd",
+          "phonetic": "ik-SPLAYND"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "related",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈleɪtɪd",
+          "phonetic": "rih-LAY-tid"
+        },
+        "american": {
+          "ipa": "rɪˈleɪtɪd",
+          "phonetic": "rih-LAY-tid"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "third",
+      "pronunciation": {
+        "british": {
+          "ipa": "θɜːd",
+          "phonetic": "THIRD"
+        },
+        "american": {
+          "ipa": "θɜːd",
+          "phonetic": "THIRD"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "agree",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈɡriː",
+          "phonetic": "uh-GREE"
+        },
+        "american": {
+          "ipa": "əˈɡriː",
+          "phonetic": "uh-GREE"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "disagree",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌdɪsəˈɡriː",
+          "phonetic": "dis-uh-GREE"
+        },
+        "american": {
+          "ipa": "ˌdɪsəˈɡriː",
+          "phonetic": "dis-uh-GREE"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "speakers",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈspiːkəz",
+          "phonetic": "SPEE-kurz"
+        },
+        "american": {
+          "ipa": "ˈspiːkəz",
+          "phonetic": "SPEE-kurz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "pointed",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpɔɪntɪd",
+          "phonetic": "POIN-tid"
+        },
+        "american": {
+          "ipa": "ˈpɔɪntɪd",
+          "phonetic": "POIN-tid"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "valuable",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈvæljuəbəl",
+          "phonetic": "VAL-yoo-uh-bul"
+        },
+        "american": {
+          "ipa": "ˈvæljuəbəl",
+          "phonetic": "VAL-yoo-uh-bul"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "suggested",
+      "pronunciation": {
+        "british": {
+          "ipa": "səˈdʒestɪd",
+          "phonetic": "suh-JES-tid"
+        },
+        "american": {
+          "ipa": "səˈdʒestɪd",
+          "phonetic": "suh-JES-tid"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "discussion",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈskʌʃən",
+          "phonetic": "dih-SKUSH-un"
+        },
+        "american": {
+          "ipa": "dɪˈskʌʃən",
+          "phonetic": "dih-SKUSH-un"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "interesting",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪntrəstɪŋ",
+          "phonetic": "IN-trus-ting"
+        },
+        "american": {
+          "ipa": "ˈɪntrəstɪŋ",
+          "phonetic": "IN-trus-ting"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "informative",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈfɔːmətɪv",
+          "phonetic": "in-FOR-muh-tiv"
+        },
+        "american": {
+          "ipa": "ɪnˈfɔːmətɪv",
+          "phonetic": "in-FOR-muh-tiv"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "lecture",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlektʃə",
+          "phonetic": "LEK-chur"
+        },
+        "american": {
+          "ipa": "ˈlektʃə",
+          "phonetic": "LEK-chur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    },
+    {
+      "english": "talks",
+      "pronunciation": {
+        "british": {
+          "ipa": "tɔːks",
+          "phonetic": "TAWKS"
+        },
+        "american": {
+          "ipa": "tɔːks",
+          "phonetic": "TAWKS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-template-practice-vocabulary",
+      "source": "pte-template-practice-vocabulary"
+    }
+  ]
+}

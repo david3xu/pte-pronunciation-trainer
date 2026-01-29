@@ -1,0 +1,1792 @@
+{
+  "metadata": {
+    "generated": "2026-01-29T07:24:21.917Z",
+    "totalTerms": 111,
+    "source": "pte-essay-topic-paraphrase-vocabulary",
+    "description": "Auto-discovered vocabulary book: pte-essay-topic-paraphrase-vocabulary",
+    "version": "1.0",
+    "categories": [
+      "pte-essay-topic-paraphrase-vocabulary"
+    ],
+    "hasIPA": true,
+    "keepDuplicates": false
+  },
+  "vocabulary": [
+    {
+      "english": "decision-making process",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈsɪʒən ˌmeɪkɪŋ ˈprəʊses",
+          "phonetic": "dih-SIZH-un MAY-king PROH-ses"
+        },
+        "american": {
+          "ipa": "dɪˈsɪʒən ˌmeɪkɪŋ ˈprəʊses",
+          "phonetic": "dih-SIZH-un MAY-king PROH-ses"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "employee participation",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪmˈplɔɪiː pɑːˌtɪsɪˈpeɪʃən",
+          "phonetic": "im-PLOI-ee par-tiss-ih-PAY-shun"
+        },
+        "american": {
+          "ipa": "ɪmˈplɔɪiː pɑːˌtɪsɪˈpeɪʃən",
+          "phonetic": "im-PLOI-ee par-tiss-ih-PAY-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "involving employees",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈvɒlvɪŋ ɪmˈplɔɪiːz",
+          "phonetic": "in-VOLV-ing im-PLOI-eez"
+        },
+        "american": {
+          "ipa": "ɪnˈvɒlvɪŋ ɪmˈplɔɪiːz",
+          "phonetic": "in-VOLV-ing im-PLOI-eez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "formal written examinations",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɔːməl ˈrɪtən ɪɡˌzæmɪˈneɪʃənz",
+          "phonetic": "FOR-mul RIT-un ig-zam-ih-NAY-shunz"
+        },
+        "american": {
+          "ipa": "ˈfɔːməl ˈrɪtən ɪɡˌzæmɪˈneɪʃənz",
+          "phonetic": "FOR-mul RIT-un ig-zam-ih-NAY-shunz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "assessment method",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈsesmənt ˈmeθəd",
+          "phonetic": "uh-SES-munt METH-ud"
+        },
+        "american": {
+          "ipa": "əˈsesmənt ˈmeθəd",
+          "phonetic": "uh-SES-munt METH-ud"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "written exams",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈrɪtən ɪɡˈzæmz",
+          "phonetic": "RIT-un ig-ZAMZ"
+        },
+        "american": {
+          "ipa": "ˈrɪtən ɪɡˈzæmz",
+          "phonetic": "RIT-un ig-ZAMZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "educational travel",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌedjʊˈkeɪʃənəl ˈtrævəl",
+          "phonetic": "ed-yoo-KAY-shun-ul TRAV-ul"
+        },
+        "american": {
+          "ipa": "ˌedjʊˈkeɪʃənəl ˈtrævəl",
+          "phonetic": "ed-yoo-KAY-shun-ul TRAV-ul"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "necessary component",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈnesəsəri kəmˈpəʊnənt",
+          "phonetic": "NES-uh-sree kum-POH-nunt"
+        },
+        "american": {
+          "ipa": "ˈnesəsəri kəmˈpəʊnənt",
+          "phonetic": "NES-uh-sree kum-POH-nunt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "studying locally",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈstʌdiɪŋ ˈləʊkəli",
+          "phonetic": "STUD-ee-ing LOH-kuh-lee"
+        },
+        "american": {
+          "ipa": "ˈstʌdiɪŋ ˈləʊkəli",
+          "phonetic": "STUD-ee-ing LOH-kuh-lee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "climate change",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈklaɪmət tʃeɪndʒ",
+          "phonetic": "KLY-mut CHAYNJ"
+        },
+        "american": {
+          "ipa": "ˈklaɪmət tʃeɪndʒ",
+          "phonetic": "KLY-mut CHAYNJ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "government responsibility",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɡʌvənmənt rɪˌspɒnsɪˈbɪlɪti",
+          "phonetic": "GUV-un-munt rih-spon-sih-BIL-ih-tee"
+        },
+        "american": {
+          "ipa": "ˈɡʌvənmənt rɪˌspɒnsɪˈbɪlɪti",
+          "phonetic": "GUV-un-munt rih-spon-sih-BIL-ih-tee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "private efforts",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpraɪvət ˈefəts",
+          "phonetic": "PRY-vut EF-urts"
+        },
+        "american": {
+          "ipa": "ˈpraɪvət ˈefəts",
+          "phonetic": "PRY-vut EF-urts"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "television",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtelɪˌvɪʒən",
+          "phonetic": "TEL-ih-vizh-un"
+        },
+        "american": {
+          "ipa": "ˈtelɪˌvɪʒən",
+          "phonetic": "TEL-ih-vizh-un"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "useful functions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈjuːsfəl ˈfʌŋkʃənz",
+          "phonetic": "YOOS-ful FUNK-shunz"
+        },
+        "american": {
+          "ipa": "ˈjuːsfəl ˈfʌŋkʃənz",
+          "phonetic": "YOOS-ful FUNK-shunz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "watching television",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈwɒtʃɪŋ ˈtelɪˌvɪʒən",
+          "phonetic": "WOTCH-ing TEL-ih-vizh-un"
+        },
+        "american": {
+          "ipa": "ˈwɒtʃɪŋ ˈtelɪˌvɪʒən",
+          "phonetic": "WOTCH-ing TEL-ih-vizh-un"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "experiential learning",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪkˌspɪəriˈenʃəl ˈlɜːnɪŋ",
+          "phonetic": "ik-speer-ee-EN-shul LURN-ing"
+        },
+        "american": {
+          "ipa": "ɪkˌspɪəriˈenʃəl ˈlɜːnɪŋ",
+          "phonetic": "ik-speer-ee-EN-shul LURN-ing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "learning by doing",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlɜːnɪŋ baɪ ˈduːɪŋ",
+          "phonetic": "LURN-ing by DOO-ing"
+        },
+        "american": {
+          "ipa": "ˈlɜːnɪŋ baɪ ˈduːɪŋ",
+          "phonetic": "LURN-ing by DOO-ing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "practical learning",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpræktɪkəl ˈlɜːnɪŋ",
+          "phonetic": "PRAK-tih-kul LURN-ing"
+        },
+        "american": {
+          "ipa": "ˈpræktɪkəl ˈlɜːnɪŋ",
+          "phonetic": "PRAK-tih-kul LURN-ing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "late assignment penalties",
+      "pronunciation": {
+        "british": {
+          "ipa": "leɪt əˈsaɪnmənt ˈpenəltiz",
+          "phonetic": "LAYT uh-SYNE-munt PEN-ul-teez"
+        },
+        "american": {
+          "ipa": "leɪt əˈsaɪnmənt ˈpenəltiz",
+          "phonetic": "LAYT uh-SYNE-munt PEN-ul-teez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "grade deductions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɡreɪd dɪˈdʌkʃənz",
+          "phonetic": "GRAYD dih-DUK-shunz"
+        },
+        "american": {
+          "ipa": "ɡreɪd dɪˈdʌkʃənz",
+          "phonetic": "GRAYD dih-DUK-shunz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "penalty systems",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpenəlti ˈsɪstəmz",
+          "phonetic": "PEN-ul-tee SIS-tumz"
+        },
+        "american": {
+          "ipa": "ˈpenəlti ˈsɪstəmz",
+          "phonetic": "PEN-ul-tee SIS-tumz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "combining study and work",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəmˈbaɪnɪŋ ˈstʌdi ænd wɜːk",
+          "phonetic": "kum-BYNE-ing STUD-ee and WURK"
+        },
+        "american": {
+          "ipa": "kəmˈbaɪnɪŋ ˈstʌdi ænd wɜːk",
+          "phonetic": "kum-BYNE-ing STUD-ee and WURK"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "balancing work and study",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbælənsɪŋ wɜːk ænd ˈstʌdi",
+          "phonetic": "BAL-uns-ing WURK and STUD-ee"
+        },
+        "american": {
+          "ipa": "ˈbælənsɪŋ wɜːk ænd ˈstʌdi",
+          "phonetic": "BAL-uns-ing WURK and STUD-ee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "dual responsibilities",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdjuːəl rɪˌspɒnsɪˈbɪlɪtiz",
+          "phonetic": "DYOO-ul rih-spon-sih-BIL-ih-teez"
+        },
+        "american": {
+          "ipa": "ˈdjuːəl rɪˌspɒnsɪˈbɪlɪtiz",
+          "phonetic": "DYOO-ul rih-spon-sih-BIL-ih-teez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "most pressing problem",
+      "pronunciation": {
+        "british": {
+          "ipa": "məʊst ˈpresɪŋ ˈprɒbləm",
+          "phonetic": "MOHST PRES-ing PROB-lum"
+        },
+        "american": {
+          "ipa": "məʊst ˈpresɪŋ ˈprɒbləm",
+          "phonetic": "MOHST PRES-ing PROB-lum"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "urgent attention",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɜːdʒənt əˈtenʃən",
+          "phonetic": "UR-junt uh-TEN-shun"
+        },
+        "american": {
+          "ipa": "ˈɜːdʒənt əˈtenʃən",
+          "phonetic": "UR-junt uh-TEN-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "extreme weather",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪkˈstriːm ˈweðə",
+          "phonetic": "ik-STREEM WETH-ur"
+        },
+        "american": {
+          "ipa": "ɪkˈstriːm ˈweðə",
+          "phonetic": "ik-STREEM WETH-ur"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "building design",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbɪldɪŋ dɪˈzaɪn",
+          "phonetic": "BIL-ding dih-ZYNE"
+        },
+        "american": {
+          "ipa": "ˈbɪldɪŋ dɪˈzaɪn",
+          "phonetic": "BIL-ding dih-ZYNE"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "architectural planning",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌɑːkɪˈtektʃərəl ˈplænɪŋ",
+          "phonetic": "ar-kih-TEK-chur-ul PLAN-ing"
+        },
+        "american": {
+          "ipa": "ˌɑːkɪˈtektʃərəl ˈplænɪŋ",
+          "phonetic": "ar-kih-TEK-chur-ul PLAN-ing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "work and living environments",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɜːk ænd ˈlɪvɪŋ ɪnˈvaɪrənmənts",
+          "phonetic": "WURK and LIV-ing in-VY-run-munts"
+        },
+        "american": {
+          "ipa": "wɜːk ænd ˈlɪvɪŋ ɪnˈvaɪrənmənts",
+          "phonetic": "WURK and LIV-ing in-VY-run-munts"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "work-life balance",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɜːk laɪf ˈbæləns",
+          "phonetic": "WURK LYFE BAL-uns"
+        },
+        "american": {
+          "ipa": "wɜːk laɪf ˈbæləns",
+          "phonetic": "WURK LYFE BAL-uns"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "maintaining equilibrium",
+      "pronunciation": {
+        "british": {
+          "ipa": "meɪnˈteɪnɪŋ ˌiːkwɪˈlɪbriəm",
+          "phonetic": "meyn-TAY-ning ee-kwih-LIB-ree-um"
+        },
+        "american": {
+          "ipa": "meɪnˈteɪnɪŋ ˌiːkwɪˈlɪbriəm",
+          "phonetic": "meyn-TAY-ning ee-kwih-LIB-ree-um"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "personal life",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpɜːsənəl laɪf",
+          "phonetic": "PUR-sun-ul LYFE"
+        },
+        "american": {
+          "ipa": "ˈpɜːsənəl laɪf",
+          "phonetic": "PUR-sun-ul LYFE"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "new invention",
+      "pronunciation": {
+        "british": {
+          "ipa": "njuː ɪnˈvenʃən",
+          "phonetic": "NYOO in-VEN-shun"
+        },
+        "american": {
+          "ipa": "njuː ɪnˈvenʃən",
+          "phonetic": "NYOO in-VEN-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "smartphones",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsmɑːtfəʊnz",
+          "phonetic": "SMART-fohnz"
+        },
+        "american": {
+          "ipa": "ˈsmɑːtfəʊnz",
+          "phonetic": "SMART-fohnz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "mobile devices",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈməʊbaɪl dɪˈvaɪsɪz",
+          "phonetic": "MOH-byle dih-VY-siz"
+        },
+        "american": {
+          "ipa": "ˈməʊbaɪl dɪˈvaɪsɪz",
+          "phonetic": "MOH-byle dih-VY-siz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "laws changing behavior",
+      "pronunciation": {
+        "british": {
+          "ipa": "lɔːz ˈtʃeɪndʒɪŋ bɪˈheɪvjə",
+          "phonetic": "LAWZ CHAYNJ-ing bih-HAYV-yur"
+        },
+        "american": {
+          "ipa": "lɔːz ˈtʃeɪndʒɪŋ bɪˈheɪvjə",
+          "phonetic": "LAWZ CHAYNJ-ing bih-HAYV-yur"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "legal regulations",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈliːɡəl ˌreɡjʊˈleɪʃənz",
+          "phonetic": "LEE-gul reg-yoo-LAY-shunz"
+        },
+        "american": {
+          "ipa": "ˈliːɡəl ˌreɡjʊˈleɪʃənz",
+          "phonetic": "LEE-gul reg-yoo-LAY-shunz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "changing human behaviors",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtʃeɪndʒɪŋ ˈhjuːmən bɪˈheɪvjəz",
+          "phonetic": "CHAYNJ-ing HYOO-mun bih-HAYV-yurz"
+        },
+        "american": {
+          "ipa": "ˈtʃeɪndʒɪŋ ˈhjuːmən bɪˈheɪvjəz",
+          "phonetic": "CHAYNJ-ing HYOO-mun bih-HAYV-yurz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "tourism in developing countries",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtʊərɪzəm ɪn dɪˈveləpɪŋ ˈkʌntriz",
+          "phonetic": "TOOR-iz-um in dih-VEL-up-ing KUN-treez"
+        },
+        "american": {
+          "ipa": "ˈtʊərɪzəm ɪn dɪˈveləpɪŋ ˈkʌntriz",
+          "phonetic": "TOOR-iz-um in dih-VEL-up-ing KUN-treez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "tourism benefits",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtʊərɪzəm ˈbenɪfɪts",
+          "phonetic": "TOOR-iz-um BEN-ih-fits"
+        },
+        "american": {
+          "ipa": "ˈtʊərɪzəm ˈbenɪfɪts",
+          "phonetic": "TOOR-iz-um BEN-ih-fits"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "local communities",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈləʊkəl kəˈmjuːnɪtiz",
+          "phonetic": "LOH-kul kuh-MYOO-nih-teez"
+        },
+        "american": {
+          "ipa": "ˈləʊkəl kəˈmjuːnɪtiz",
+          "phonetic": "LOH-kul kuh-MYOO-nih-teez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "mass communication",
+      "pronunciation": {
+        "british": {
+          "ipa": "mæs kəˌmjuːnɪˈkeɪʃən",
+          "phonetic": "MAS kuh-myoo-nih-KAY-shun"
+        },
+        "american": {
+          "ipa": "mæs kəˌmjuːnɪˈkeɪʃən",
+          "phonetic": "MAS kuh-myoo-nih-KAY-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "information revolution",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌɪnfəˈmeɪʃən ˌrevəˈluːʃən",
+          "phonetic": "in-fur-MAY-shun rev-uh-LOO-shun"
+        },
+        "american": {
+          "ipa": "ˌɪnfəˈmeɪʃən ˌrevəˈluːʃən",
+          "phonetic": "in-fur-MAY-shun rev-uh-LOO-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "modern communication",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmɒdən kəˌmjuːnɪˈkeɪʃən",
+          "phonetic": "MOD-urn kuh-myoo-nih-KAY-shun"
+        },
+        "american": {
+          "ipa": "ˈmɒdən kəˌmjuːnɪˈkeɪʃən",
+          "phonetic": "MOD-urn kuh-myoo-nih-KAY-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "mass media influence",
+      "pronunciation": {
+        "british": {
+          "ipa": "mæs ˈmiːdiə ˈɪnfluəns",
+          "phonetic": "MAS MEE-dee-uh IN-floo-uns"
+        },
+        "american": {
+          "ipa": "mæs ˈmiːdiə ˈɪnfluəns",
+          "phonetic": "MAS MEE-dee-uh IN-floo-uns"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "media impact",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmiːdiə ˈɪmpækt",
+          "phonetic": "MEE-dee-uh IM-pakt"
+        },
+        "american": {
+          "ipa": "ˈmiːdiə ˈɪmpækt",
+          "phonetic": "MEE-dee-uh IM-pakt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "shapes our opinions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʃeɪps ˈaʊər əˈpɪnjənz",
+          "phonetic": "SHAYPS OW-ur uh-PIN-yunz"
+        },
+        "american": {
+          "ipa": "ʃeɪps ˈaʊər əˈpɪnjənz",
+          "phonetic": "SHAYPS OW-ur uh-PIN-yunz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "influence on youth",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪnfluəns ɒn juːθ",
+          "phonetic": "IN-floo-uns on YOOTH"
+        },
+        "american": {
+          "ipa": "ˈɪnfluəns ɒn juːθ",
+          "phonetic": "IN-floo-uns on YOOTH"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "impact on young people",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪmpækt ɒn jʌŋ ˈpiːpəl",
+          "phonetic": "IM-pakt on YUNG PEE-pul"
+        },
+        "american": {
+          "ipa": "ˈɪmpækt ɒn jʌŋ ˈpiːpəl",
+          "phonetic": "IM-pakt on YUNG PEE-pul"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "younger generation",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈjʌŋɡə ˌdʒenəˈreɪʃən",
+          "phonetic": "YUNG-gur jen-uh-RAY-shun"
+        },
+        "american": {
+          "ipa": "ˈjʌŋɡə ˌdʒenəˈreɪʃən",
+          "phonetic": "YUNG-gur jen-uh-RAY-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "consumer goods marketing",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈsjuːmə ɡʊdz ˈmɑːkɪtɪŋ",
+          "phonetic": "kun-SYOO-mur GOODZ MAR-kih-ting"
+        },
+        "american": {
+          "ipa": "kənˈsjuːmə ɡʊdz ˈmɑːkɪtɪŋ",
+          "phonetic": "kun-SYOO-mur GOODZ MAR-kih-ting"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "reputation marketing",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌrepjʊˈteɪʃən ˈmɑːkɪtɪŋ",
+          "phonetic": "rep-yoo-TAY-shun MAR-kih-ting"
+        },
+        "american": {
+          "ipa": "ˌrepjʊˈteɪʃən ˈmɑːkɪtɪŋ",
+          "phonetic": "rep-yoo-TAY-shun MAR-kih-ting"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "brand emphasis",
+      "pronunciation": {
+        "british": {
+          "ipa": "brænd ˈemfəsɪs",
+          "phonetic": "BRAND EM-fuh-sis"
+        },
+        "american": {
+          "ipa": "brænd ˈemfəsɪs",
+          "phonetic": "BRAND EM-fuh-sis"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "climate change research",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈklaɪmət tʃeɪndʒ rɪˈsɜːtʃ",
+          "phonetic": "KLY-mut CHAYNJ rih-SURCH"
+        },
+        "american": {
+          "ipa": "ˈklaɪmət tʃeɪndʒ rɪˈsɜːtʃ",
+          "phonetic": "KLY-mut CHAYNJ rih-SURCH"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "extreme weather research",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪkˈstriːm ˈweðə rɪˈsɜːtʃ",
+          "phonetic": "ik-STREEM WETH-ur rih-SURCH"
+        },
+        "american": {
+          "ipa": "ɪkˈstriːm ˈweðə rɪˈsɜːtʃ",
+          "phonetic": "ik-STREEM WETH-ur rih-SURCH"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "environmental protection",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˌvaɪrənˈmentəl prəˈtekʃən",
+          "phonetic": "in-vy-run-MEN-tul pruh-TEK-shun"
+        },
+        "american": {
+          "ipa": "ɪnˌvaɪrənˈmentəl prəˈtekʃən",
+          "phonetic": "in-vy-run-MEN-tul pruh-TEK-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "studying classic plays",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈstʌdiɪŋ ˈklæsɪk pleɪz",
+          "phonetic": "STUD-ee-ing KLAS-ik PLAYZ"
+        },
+        "american": {
+          "ipa": "ˈstʌdiɪŋ ˈklæsɪk pleɪz",
+          "phonetic": "STUD-ee-ing KLAS-ik PLAYZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "classical drama",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈklæsɪkəl ˈdrɑːmə",
+          "phonetic": "KLAS-ih-kul DRAH-muh"
+        },
+        "american": {
+          "ipa": "ˈklæsɪkəl ˈdrɑːmə",
+          "phonetic": "KLAS-ih-kul DRAH-muh"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "historical understanding",
+      "pronunciation": {
+        "british": {
+          "ipa": "hɪˈstɒrɪkəl ˌʌndəˈstændɪŋ",
+          "phonetic": "hiss-TOR-ih-kul un-dur-STAN-ding"
+        },
+        "american": {
+          "ipa": "hɪˈstɒrɪkəl ˌʌndəˈstændɪŋ",
+          "phonetic": "hiss-TOR-ih-kul un-dur-STAN-ding"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "shopping malls",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈʃɒpɪŋ mɔːlz",
+          "phonetic": "SHOP-ing MAWLZ"
+        },
+        "american": {
+          "ipa": "ˈʃɒpɪŋ mɔːlz",
+          "phonetic": "SHOP-ing MAWLZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "local shops",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈləʊkəl ʃɒps",
+          "phonetic": "LOH-kul SHOPS"
+        },
+        "american": {
+          "ipa": "ˈləʊkəl ʃɒps",
+          "phonetic": "LOH-kul SHOPS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "retail complexes",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈriːteɪl ˈkɒmpleksɪz",
+          "phonetic": "REE-tayl KOM-pleks-iz"
+        },
+        "american": {
+          "ipa": "ˈriːteɪl ˈkɒmpleksɪz",
+          "phonetic": "REE-tayl KOM-pleks-iz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "medical technology",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmedɪkəl tekˈnɒlədʒi",
+          "phonetic": "MED-ih-kul tek-NOL-uh-jee"
+        },
+        "american": {
+          "ipa": "ˈmedɪkəl tekˈnɒlədʒi",
+          "phonetic": "MED-ih-kul tek-NOL-uh-jee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "life expectancy",
+      "pronunciation": {
+        "british": {
+          "ipa": "laɪf ɪkˈspektənsi",
+          "phonetic": "LYFE ik-SPEK-tun-see"
+        },
+        "american": {
+          "ipa": "laɪf ɪkˈspektənsi",
+          "phonetic": "LYFE ik-SPEK-tun-see"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "increasing lifespans",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈkriːsɪŋ ˈlaɪfspænz",
+          "phonetic": "in-KREES-ing LYFE-spanz"
+        },
+        "american": {
+          "ipa": "ɪnˈkriːsɪŋ ˈlaɪfspænz",
+          "phonetic": "in-KREES-ing LYFE-spanz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "parental legal responsibility",
+      "pronunciation": {
+        "british": {
+          "ipa": "pəˈrentəl ˈliːɡəl rɪˌspɒnsɪˈbɪlɪti",
+          "phonetic": "puh-REN-tul LEE-gul rih-spon-sih-BIL-ih-tee"
+        },
+        "american": {
+          "ipa": "pəˈrentəl ˈliːɡəl rɪˌspɒnsɪˈbɪlɪti",
+          "phonetic": "puh-REN-tul LEE-gul rih-spon-sih-BIL-ih-tee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "holding parents accountable",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhəʊldɪŋ ˈpeərənts əˈkaʊntəbəl",
+          "phonetic": "HOHL-ding PAIR-unts uh-KOWN-tuh-bul"
+        },
+        "american": {
+          "ipa": "ˈhəʊldɪŋ ˈpeərənts əˈkaʊntəbəl",
+          "phonetic": "HOHL-ding PAIR-unts uh-KOWN-tuh-bul"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "parents' actions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpeərənts ˈækʃənz",
+          "phonetic": "PAIR-unts AK-shunz"
+        },
+        "american": {
+          "ipa": "ˈpeərənts ˈækʃənz",
+          "phonetic": "PAIR-unts AK-shunz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "city vs rural life",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɪti ˈvɜːsəs ˈrʊərəl laɪf",
+          "phonetic": "SIT-ee VUR-sus ROOR-ul LYFE"
+        },
+        "american": {
+          "ipa": "ˈsɪti ˈvɜːsəs ˈrʊərəl laɪf",
+          "phonetic": "SIT-ee VUR-sus ROOR-ul LYFE"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "countryside living",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌntriˌsaɪd ˈlɪvɪŋ",
+          "phonetic": "KUN-tree-side LIV-ing"
+        },
+        "american": {
+          "ipa": "ˈkʌntriˌsaɪd ˈlɪvɪŋ",
+          "phonetic": "KUN-tree-side LIV-ing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "city life",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɪti laɪf",
+          "phonetic": "SIT-ee LYFE"
+        },
+        "american": {
+          "ipa": "ˈsɪti laɪf",
+          "phonetic": "SIT-ee LYFE"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "life experience",
+      "pronunciation": {
+        "british": {
+          "ipa": "laɪf ɪkˈspɪəriəns",
+          "phonetic": "LYFE ik-SPEER-ee-uns"
+        },
+        "american": {
+          "ipa": "laɪf ɪkˈspɪəriəns",
+          "phonetic": "LYFE ik-SPEER-ee-uns"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "formal education",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɔːməl ˌedjʊˈkeɪʃən",
+          "phonetic": "FOR-mul ed-yoo-KAY-shun"
+        },
+        "american": {
+          "ipa": "ˈfɔːməl ˌedjʊˈkeɪʃən",
+          "phonetic": "FOR-mul ed-yoo-KAY-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "learning from experience",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlɜːnɪŋ frɒm ɪkˈspɪəriəns",
+          "phonetic": "LURN-ing from ik-SPEER-ee-uns"
+        },
+        "american": {
+          "ipa": "ˈlɜːnɪŋ frɒm ɪkˈspɪəriəns",
+          "phonetic": "LURN-ing from ik-SPEER-ee-uns"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "digital media",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdɪdʒɪtəl ˈmiːdiə",
+          "phonetic": "DIJ-ih-tul MEE-dee-uh"
+        },
+        "american": {
+          "ipa": "ˈdɪdʒɪtəl ˈmiːdiə",
+          "phonetic": "DIJ-ih-tul MEE-dee-uh"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "physical libraries",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɪzɪkəl ˈlaɪbrəriz",
+          "phonetic": "FIZ-ih-kul LY-bruh-reez"
+        },
+        "american": {
+          "ipa": "ˈfɪzɪkəl ˈlaɪbrəriz",
+          "phonetic": "FIZ-ih-kul LY-bruh-reez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "online resources",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɒnˌlaɪn rɪˈzɔːsɪz",
+          "phonetic": "ON-lyne rih-ZOR-siz"
+        },
+        "american": {
+          "ipa": "ˈɒnˌlaɪn rɪˈzɔːsɪz",
+          "phonetic": "ON-lyne rih-ZOR-siz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "public transport",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpʌblɪk ˈtrænspɔːt",
+          "phonetic": "PUB-lik TRAN-sport"
+        },
+        "american": {
+          "ipa": "ˈpʌblɪk ˈtrænspɔːt",
+          "phonetic": "PUB-lik TRAN-sport"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "road construction",
+      "pronunciation": {
+        "british": {
+          "ipa": "rəʊd kənˈstrʌkʃən",
+          "phonetic": "ROHD kun-STRUK-shun"
+        },
+        "american": {
+          "ipa": "rəʊd kənˈstrʌkʃən",
+          "phonetic": "ROHD kun-STRUK-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "transport networks",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtrænspɔːt ˈnetwɜːks",
+          "phonetic": "TRAN-sport NET-wurks"
+        },
+        "american": {
+          "ipa": "ˈtrænspɔːt ˈnetwɜːks",
+          "phonetic": "TRAN-sport NET-wurks"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "shortage of time",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈʃɔːtɪdʒ ɒv taɪm",
+          "phonetic": "SHOR-tij ov TME"
+        },
+        "american": {
+          "ipa": "ˈʃɔːtɪdʒ ɒv taɪm",
+          "phonetic": "SHOR-tij ov TME"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "limited personal time",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlɪmɪtɪd ˈpɜːsənəl taɪm",
+          "phonetic": "LIM-ih-tid PUR-sun-ul TIME"
+        },
+        "american": {
+          "ipa": "ˈlɪmɪtɪd ˈpɜːsənəl taɪm",
+          "phonetic": "LIM-ih-tid PUR-sun-ul TIME"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "work demands",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɜːk dɪˈmɑːndz",
+          "phonetic": "WURK dih-MANDZ"
+        },
+        "american": {
+          "ipa": "wɜːk dɪˈmɑːndz",
+          "phonetic": "WURK dih-MANDZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "reducing work hours",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈdjuːsɪŋ wɜːk ˈaʊəz",
+          "phonetic": "rih-DYOOS-ing WURK OW-urz"
+        },
+        "american": {
+          "ipa": "rɪˈdjuːsɪŋ wɜːk ˈaʊəz",
+          "phonetic": "rih-DYOOS-ing WURK OW-urz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "shorter working week",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈʃɔːtə ˈwɜːkɪŋ wiːk",
+          "phonetic": "SHOR-tur WURK-ing WEEK"
+        },
+        "american": {
+          "ipa": "ˈʃɔːtə ˈwɜːkɪŋ wiːk",
+          "phonetic": "SHOR-tur WURK-ing WEEK"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "work hour reduction",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɜːk ˈaʊə rɪˈdʌkʃən",
+          "phonetic": "WURK OW-ur rih-DUK-shun"
+        },
+        "american": {
+          "ipa": "wɜːk ˈaʊə rɪˈdʌkʃən",
+          "phonetic": "WURK OW-ur rih-DUK-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "celebrity privacy",
+      "pronunciation": {
+        "british": {
+          "ipa": "səˈlebrɪti ˈprɪvəsi",
+          "phonetic": "suh-LEB-rih-tee PRIV-uh-see"
+        },
+        "american": {
+          "ipa": "səˈlebrɪti ˈprɪvəsi",
+          "phonetic": "suh-LEB-rih-tee PRIV-uh-see"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "right to privacy",
+      "pronunciation": {
+        "british": {
+          "ipa": "raɪt tuː ˈprɪvəsi",
+          "phonetic": "RYTE too PRIV-uh-see"
+        },
+        "american": {
+          "ipa": "raɪt tuː ˈprɪvəsi",
+          "phonetic": "RYTE too PRIV-uh-see"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "privacy rights",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈprɪvəsi raɪts",
+          "phonetic": "PRIV-uh-see RYTES"
+        },
+        "american": {
+          "ipa": "ˈprɪvəsi raɪts",
+          "phonetic": "PRIV-uh-see RYTES"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "future work hours",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfjuːtʃə wɜːk ˈaʊəz",
+          "phonetic": "FYOO-chur WURK OW-urz"
+        },
+        "american": {
+          "ipa": "ˈfjuːtʃə wɜːk ˈaʊəz",
+          "phonetic": "FYOO-chur WURK OW-urz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "working less",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈwɜːkɪŋ les",
+          "phonetic": "WURK-ing LESS"
+        },
+        "american": {
+          "ipa": "ˈwɜːkɪŋ les",
+          "phonetic": "WURK-ing LESS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "fewer hours",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfjuːər ˈaʊəz",
+          "phonetic": "FYOO-ur OW-urz"
+        },
+        "american": {
+          "ipa": "ˈfjuːər ˈaʊəz",
+          "phonetic": "FYOO-ur OW-urz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "age restrictions",
+      "pronunciation": {
+        "british": {
+          "ipa": "eɪdʒ rɪˈstrɪkʃənz",
+          "phonetic": "AYJ rih-STRIK-shunz"
+        },
+        "american": {
+          "ipa": "eɪdʒ rɪˈstrɪkʃənz",
+          "phonetic": "AYJ rih-STRIK-shunz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "minimum age",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmɪnɪməm eɪdʒ",
+          "phonetic": "MIN-ih-mum AYJ"
+        },
+        "american": {
+          "ipa": "ˈmɪnɪməm eɪdʒ",
+          "phonetic": "MIN-ih-mum AYJ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "age requirements",
+      "pronunciation": {
+        "british": {
+          "ipa": "eɪdʒ rɪˈkwaɪəmənts",
+          "phonetic": "AYJ rih-KWY-ur-munts"
+        },
+        "american": {
+          "ipa": "eɪdʒ rɪˈkwaɪəmənts",
+          "phonetic": "AYJ rih-KWY-ur-munts"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "foreign language",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɒrɪn ˈlæŋɡwɪdʒ",
+          "phonetic": "FOR-in LANG-gwij"
+        },
+        "american": {
+          "ipa": "ˈfɒrɪn ˈlæŋɡwɪdʒ",
+          "phonetic": "FOR-in LANG-gwij"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "compulsory education",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəmˈpʌlsəri ˌedjʊˈkeɪʃən",
+          "phonetic": "kum-PUL-suh-ree ed-yoo-KAY-shun"
+        },
+        "american": {
+          "ipa": "kəmˈpʌlsəri ˌedjʊˈkeɪʃən",
+          "phonetic": "kum-PUL-suh-ree ed-yoo-KAY-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "language learning",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlæŋɡwɪdʒ ˈlɜːnɪŋ",
+          "phonetic": "LANG-gwij LURN-ing"
+        },
+        "american": {
+          "ipa": "ˈlæŋɡwɪdʒ ˈlɜːnɪŋ",
+          "phonetic": "LANG-gwij LURN-ing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "historic buildings",
+      "pronunciation": {
+        "british": {
+          "ipa": "hɪˈstɒrɪk ˈbɪldɪŋz",
+          "phonetic": "hiss-TOR-ik BIL-dingz"
+        },
+        "american": {
+          "ipa": "hɪˈstɒrɪk ˈbɪldɪŋz",
+          "phonetic": "hiss-TOR-ik BIL-dingz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "building preservation",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbɪldɪŋ ˌprezəˈveɪʃən",
+          "phonetic": "BIL-ding prez-uh-VAY-shun"
+        },
+        "american": {
+          "ipa": "ˈbɪldɪŋ ˌprezəˈveɪʃən",
+          "phonetic": "BIL-ding prez-uh-VAY-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "restoration of buildings",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌrestəˈreɪʃən ɒv ˈbɪldɪŋz",
+          "phonetic": "rest-uh-RAY-shun ov BIL-dingz"
+        },
+        "american": {
+          "ipa": "ˌrestəˈreɪʃən ɒv ˈbɪldɪŋz",
+          "phonetic": "rest-uh-RAY-shun ov BIL-dingz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "modern childhood",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmɒdən ˈtʃaɪldhʊd",
+          "phonetic": "MOD-urn CHYLD-hood"
+        },
+        "american": {
+          "ipa": "ˈmɒdən ˈtʃaɪldhʊd",
+          "phonetic": "MOD-urn CHYLD-hood"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "childhood today",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtʃaɪldhʊd təˈdeɪ",
+          "phonetic": "CHYLD-hood tuh-DAY"
+        },
+        "american": {
+          "ipa": "ˈtʃaɪldhʊd təˈdeɪ",
+          "phonetic": "CHYLD-hood tuh-DAY"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "contemporary childhood",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈtempərəri ˈtʃaɪldhʊd",
+          "phonetic": "kun-TEM-puh-ruh-ree CHYLD-hood"
+        },
+        "american": {
+          "ipa": "kənˈtempərəri ˈtʃaɪldhʊd",
+          "phonetic": "kun-TEM-puh-ruh-ree CHYLD-hood"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "maximum wage limits",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmæksɪməm weɪdʒ ˈlɪmɪts",
+          "phonetic": "MAK-sih-mum WAYJ LIM-its"
+        },
+        "american": {
+          "ipa": "ˈmæksɪməm weɪdʒ ˈlɪmɪts",
+          "phonetic": "MAK-sih-mum WAYJ LIM-its"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "wage caps",
+      "pronunciation": {
+        "british": {
+          "ipa": "weɪdʒ kæps",
+          "phonetic": "WAYJ KAPS"
+        },
+        "american": {
+          "ipa": "weɪdʒ kæps",
+          "phonetic": "WAYJ KAPS"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "income restrictions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪnkʌm rɪˈstrɪkʃənz",
+          "phonetic": "IN-kum rih-STRIK-shunz"
+        },
+        "american": {
+          "ipa": "ˈɪnkʌm rɪˈstrɪkʃənz",
+          "phonetic": "IN-kum rih-STRIK-shunz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "AI translation",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌeɪˈaɪ trænsˈleɪʃən",
+          "phonetic": "AY-EYE trans-LAY-shun"
+        },
+        "american": {
+          "ipa": "ˌeɪˈaɪ trænsˈleɪʃən",
+          "phonetic": "AY-EYE trans-LAY-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "learning languages",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlɜːnɪŋ ˈlæŋɡwɪdʒɪz",
+          "phonetic": "LURN-ing LANG-gwij-iz"
+        },
+        "american": {
+          "ipa": "ˈlɜːnɪŋ ˈlæŋɡwɪdʒɪz",
+          "phonetic": "LURN-ing LANG-gwij-iz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "artificial intelligence",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌɑːtɪˈfɪʃəl ɪnˈtelɪdʒəns",
+          "phonetic": "ar-tih-FISH-ul in-TEL-ih-juns"
+        },
+        "american": {
+          "ipa": "ˌɑːtɪˈfɪʃəl ɪnˈtelɪdʒəns",
+          "phonetic": "ar-tih-FISH-ul in-TEL-ih-juns"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    }
+  ]
+}

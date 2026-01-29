@@ -69,6 +69,7 @@ export class AppConfig {
               'pte-essay-outcomes-vocabulary': 'data/processed/pte-essay-outcomes-vocabulary.json',
               'pte-essay-90plus-filled-terms': 'data/processed/pte-essay-90plus-filled-terms.json',
               'pte-plural-nouns-s-practice': 'data/processed/pte-plural-nouns-s-practice.json',
+              'pte-template-practice': 'data/processed/pte-template-practice-vocabulary.json',
 
               // Practice modes
               'rs': 'data/processed/pte-repeat-sentence.json',
@@ -115,6 +116,7 @@ export class AppConfig {
           { id: 'pte-essay-outcomes-vocabulary', name: 'Essay Outcomes Vocab', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-essay-90plus-filled-terms', name: 'PTE 90+ Essay Filled Terms', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-plural-nouns-s-practice', name: 'Plural Nouns /s/ Practice', category: 'vocabulary', difficulty: 'easy' },
+          { id: 'pte-template-practice', name: 'Template Practice', category: 'vocabulary', difficulty: 'normal' },
 
           // Practice modes (3 total)
           { id: 'rs', name: 'Repeat Sentence', category: 'practice', description: '620 practice sentences' },
@@ -398,6 +400,17 @@ export class AppConfig {
             dataType: 'vocabulary',
             extractorType: 'PTETermsExtractor',
             inputSubdir: 'rl'
+          },
+          {
+            id: 'pte-template-practice',
+            input: 'pte-template-practice-vocabulary-with-ipa.md',
+            output: 'pte-template-practice-vocabulary.json',
+            category: 'vocabulary',
+            description: 'Vocabulary from DI, SGD, and RL templates',
+            sourceType: 'pte-template-practice-vocabulary-with-ipa',
+            dataType: 'vocabulary',
+            extractorType: 'PTETermsExtractor',
+            inputSubdir: 'vocabs'
           },
           // ... Add more registry entries as needed during migration
         ],

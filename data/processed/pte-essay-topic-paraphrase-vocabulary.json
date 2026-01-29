@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-01-29T08:01:43.299Z",
-    "totalTerms": 245,
+    "generated": "2026-01-29T08:15:10.456Z",
+    "totalTerms": 246,
     "source": "pte-essay-topic-paraphrase-vocabulary",
     "description": "Auto-discovered vocabulary book: pte-essay-topic-paraphrase-vocabulary",
     "version": "1.0",
@@ -9,7 +9,7 @@
       "pte-essay-topic-paraphrase-vocabulary"
     ],
     "hasIPA": true,
-    "keepDuplicates": false
+    "keepDuplicates": true
   },
   "vocabulary": [
     {
@@ -3014,6 +3014,22 @@
         "american": {
           "ipa": "skriːn əˈdɪkʃən",
           "phonetic": "SKREEN uh-DIK-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-topic-paraphrase-vocabulary",
+      "source": "pte-essay-topic-paraphrase-vocabulary"
+    },
+    {
+      "english": "social isolation",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsəʊʃəl ˌaɪsəˈleɪʃən",
+          "phonetic": "SOH-shul eye-suh-LAY-shun"
+        },
+        "american": {
+          "ipa": "ˈsəʊʃəl ˌaɪsəˈleɪʃən",
+          "phonetic": "SOH-shul eye-suh-LAY-shun"
         }
       },
       "difficulty": "hard",

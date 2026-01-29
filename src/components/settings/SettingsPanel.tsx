@@ -6,8 +6,8 @@
  */
 
 import {
-  Cross2Icon,
-  GearIcon
+    Cross2Icon,
+    GearIcon
 } from '@radix-ui/react-icons';
 import { Badge, Button, Card, Flex, Select, Slider, Switch, Tabs, Text } from '@radix-ui/themes';
 import React, { useMemo } from 'react';
@@ -430,14 +430,14 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                 <Select.Root
                   value={String(settings.vocabRepeatCount || 1)}
                   onValueChange={(value) =>
-                    updateSetting('vocabRepeatCount', Number(value) as 1 | 2 | 3)
+                    updateSetting('vocabRepeatCount', Number(value) as 1 | 3 | 5)
                   }
                 >
                   <Select.Trigger />
                   <Select.Content>
                     <Select.Item value="1">1 time (default)</Select.Item>
-                    <Select.Item value="2">2 times</Select.Item>
                     <Select.Item value="3">3 times</Select.Item>
+                    <Select.Item value="5">5 times</Select.Item>
                   </Select.Content>
                 </Select.Root>
               </Flex>

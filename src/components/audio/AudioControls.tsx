@@ -131,7 +131,7 @@ const AudioControls: React.FC = () => {
 
         try {
           if (appConfig.get('tts.autoSpeak')) {
-            // Repeat word based on vocabRepeatCount setting (1, 2, or 3 times)
+            // Repeat word based on vocabRepeatCount setting (1, 3, or 5 times)
             const repeatCount = settings.vocabRepeatCount || 1;
             for (let i = 0; i < repeatCount; i++) {
               // Check if still playing before each repeat

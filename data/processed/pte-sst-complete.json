@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-02-02T04:34:45.882Z",
-    "totalTerms": 140,
+    "generated": "2026-02-02T22:54:34.628Z",
+    "totalTerms": 344,
     "source": "pte-sst-complete",
     "description": "Auto-discovered vocabulary book: pte-sst-complete",
     "version": "1.0",
@@ -109,6 +109,38 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "doing less exercise consciously or unconsciously",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈduɪŋ lɛs ˈɛksərˌsaɪz ˈkɑnʃəsli ɔr ʌnˈkɑnʃəsli",
+          "phonetic": "DOO-ing LES EK-sur-syz KAHN-shuhs-lee or un-KAHN-shuhs-lee"
+        },
+        "american": {
+          "ipa": "ˈduɪŋ lɛs ˈɛksərˌsaɪz ˈkɑnʃəsli ɔr ʌnˈkɑnʃəsli",
+          "phonetic": "DOO-ing LES EK-sur-syz KAHN-shuhs-lee or un-KAHN-shuhs-lee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "psychological reasons",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌsaɪkəˈlɑdʒɪkəl ˈrizənz",
+          "phonetic": "sy-kuh-LAH-jih-kuhl REE-zuhnz"
+        },
+        "american": {
+          "ipa": "ˌsaɪkəˈlɑdʒɪkəl ˈrizənz",
+          "phonetic": "sy-kuh-LAH-jih-kuhl REE-zuhnz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "abstraction",
       "pronunciation": {
         "british": {
@@ -150,6 +182,22 @@
         "american": {
           "ipa": "saɪn ˈlæŋɡwɪdʒ",
           "phonetic": "SYN LANG-gwij"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "strangling a rhinoceros",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈstræŋɡəlɪŋ ə raɪˈnɑsərəs",
+          "phonetic": "STRANG-guh-ling uh ry-NAH-sur-uhs"
+        },
+        "american": {
+          "ipa": "ˈstræŋɡəlɪŋ ə raɪˈnɑsərəs",
+          "phonetic": "STRANG-guh-ling uh ry-NAH-sur-uhs"
         }
       },
       "difficulty": "hard",
@@ -237,6 +285,70 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "the Industrial Revolution",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði ɪnˈdʌstriəl ˌrɛvəˈluʃən",
+          "phonetic": "thee in-DUS-tree-uhl rev-uh-LOO-shuhn"
+        },
+        "american": {
+          "ipa": "ði ɪnˈdʌstriəl ˌrɛvəˈluʃən",
+          "phonetic": "thee in-DUS-tree-uhl rev-uh-LOO-shuhn"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "circumscribing the worst behaviors",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌsɜrkəmˈskraɪbɪŋ ðə wɜrst bɪˈheɪvjərz",
+          "phonetic": "sur-kuhm-SKRY-bing thuh WURST bih-HAYV-yurz"
+        },
+        "american": {
+          "ipa": "ˌsɜrkəmˈskraɪbɪŋ ðə wɜrst bɪˈheɪvjərz",
+          "phonetic": "sur-kuhm-SKRY-bing thuh WURST bih-HAYV-yurz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "reversing some damage",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈvɜrsɪŋ sʌm ˈdæmədʒ",
+          "phonetic": "rih-VUR-sing sum DAM-ij"
+        },
+        "american": {
+          "ipa": "rɪˈvɜrsɪŋ sʌm ˈdæmədʒ",
+          "phonetic": "rih-VUR-sing sum DAM-ij"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "widespread sharing",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈwaɪdˌsprɛd ˈʃɛrɪŋ",
+          "phonetic": "WYD-SPRED SHAIR-ing"
+        },
+        "american": {
+          "ipa": "ˈwaɪdˌsprɛd ˈʃɛrɪŋ",
+          "phonetic": "WYD-SPRED SHAIR-ing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "what makes people happy",
       "pronunciation": {
         "british": {
@@ -269,6 +381,102 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "a consistent pattern",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə kənˈsɪstənt ˈpætərn",
+          "phonetic": "uh kuhn-SIS-tuhnt PAT-urn"
+        },
+        "american": {
+          "ipa": "ə kənˈsɪstənt ˈpætərn",
+          "phonetic": "uh kuhn-SIS-tuhnt PAT-urn"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "determining people's well-being",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈtɜrmənɪŋ ˈpipəlz ˈwɛlˈbiɪŋ",
+          "phonetic": "dih-TUR-muh-ning PEE-puhlz WEL-BEE-ing"
+        },
+        "american": {
+          "ipa": "dɪˈtɜrmənɪŋ ˈpipəlz ˈwɛlˈbiɪŋ",
+          "phonetic": "dih-TUR-muh-ning PEE-puhlz WEL-BEE-ing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "marital status",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmɛrətəl ˈsteɪtəs",
+          "phonetic": "MAIR-uh-tuhl STAY-tuhs"
+        },
+        "american": {
+          "ipa": "ˈmɛrətəl ˈsteɪtəs",
+          "phonetic": "MAIR-uh-tuhl STAY-tuhs"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "employment status",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɛmˈplɔɪmənt ˈsteɪtəs",
+          "phonetic": "em-PLOY-muhnt STAY-tuhs"
+        },
+        "american": {
+          "ipa": "ɛmˈplɔɪmənt ˈsteɪtəs",
+          "phonetic": "em-PLOY-muhnt STAY-tuhs"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "equality",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪˈkwɑləti",
+          "phonetic": "ih-KWAH-luh-tee"
+        },
+        "american": {
+          "ipa": "ɪˈkwɑləti",
+          "phonetic": "ih-KWAH-luh-tee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the nature of original living",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈneɪtʃər əv əˈrɪdʒənəl ˈlɪvɪŋ",
+          "phonetic": "thuh NAY-chur uhv uh-RIH-juh-nuhl LIV-ing"
+        },
+        "american": {
+          "ipa": "ðə ˈneɪtʃər əv əˈrɪdʒənəl ˈlɪvɪŋ",
+          "phonetic": "thuh NAY-chur uhv uh-RIH-juh-nuhl LIV-ing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "the reality of global climate change",
       "pronunciation": {
         "british": {
@@ -278,6 +486,54 @@
         "american": {
           "ipa": "ðə riˈæləti əv ˈɡloʊbəl ˈklaɪmət tʃeɪndʒ",
           "phonetic": "thuh ree-AL-uh-tee uhv GLOH-buhl KLY-muht CHAYNJ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "panic",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpænɪk",
+          "phonetic": "PAN-ik"
+        },
+        "american": {
+          "ipa": "ˈpænɪk",
+          "phonetic": "PAN-ik"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "criticizing the prediction of the population bomb",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkrɪtɪˌsaɪzɪŋ ðə prɪˈdɪkʃən əv ðə ˌpɑpjəˈleɪʃən bɑm",
+          "phonetic": "KRIH-tih-sy-zing thuh prih-DIK-shuhn uhv thuh pah-pyuh-LAY-shuhn BAHM"
+        },
+        "american": {
+          "ipa": "ˈkrɪtɪˌsaɪzɪŋ ðə prɪˈdɪkʃən əv ðə ˌpɑpjəˈleɪʃən bɑm",
+          "phonetic": "KRIH-tih-sy-zing thuh prih-DIK-shuhn uhv thuh pah-pyuh-LAY-shuhn BAHM"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "major precipitation changes",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmeɪdʒər prɪˌsɪpɪˈteɪʃən ˈtʃeɪndʒəz",
+          "phonetic": "MAY-jur prih-sip-uh-TAY-shuhn CHAYN-juhz"
+        },
+        "american": {
+          "ipa": "ˈmeɪdʒər prɪˌsɪpɪˈteɪʃən ˈtʃeɪndʒəz",
+          "phonetic": "MAY-jur prih-sip-uh-TAY-shuhn CHAYN-juhz"
         }
       },
       "difficulty": "hard",
@@ -342,6 +598,118 @@
         "american": {
           "ipa": "ðə dʒuˈdɪʃəl əˈθɔrətiz",
           "phonetic": "thuh joo-DISH-uhl uh-THOR-uh-teez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the checks and balances",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə tʃɛks ænd ˈbælənsəz",
+          "phonetic": "thuh CHEKS and BAL-uhn-suhz"
+        },
+        "american": {
+          "ipa": "ðə tʃɛks ænd ˈbælənsəz",
+          "phonetic": "thuh CHEKS and BAL-uhn-suhz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the Constitution",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˌkɑnstəˈtuʃən",
+          "phonetic": "thuh kahn-stuh-TOO-shuhn"
+        },
+        "american": {
+          "ipa": "ðə ˌkɑnstəˈtuʃən",
+          "phonetic": "thuh kahn-stuh-TOO-shuhn"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "making the law",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmeɪkɪŋ ðə lɔ",
+          "phonetic": "MAY-king thuh LAW"
+        },
+        "american": {
+          "ipa": "ˈmeɪkɪŋ ðə lɔ",
+          "phonetic": "MAY-king thuh LAW"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the Senate",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈsɛnət",
+          "phonetic": "thuh SEN-uht"
+        },
+        "american": {
+          "ipa": "ðə ˈsɛnət",
+          "phonetic": "thuh SEN-uht"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "carrying out the law",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkæriɪŋ aʊt ðə lɔ",
+          "phonetic": "KAIR-ee-ing OWT thuh LAW"
+        },
+        "american": {
+          "ipa": "ˈkæriɪŋ aʊt ðə lɔ",
+          "phonetic": "KAIR-ee-ing OWT thuh LAW"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "interpreting the law",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈtɜrprətɪŋ ðə lɔ",
+          "phonetic": "in-TUR-pruh-ting thuh LAW"
+        },
+        "american": {
+          "ipa": "ɪnˈtɜrprətɪŋ ðə lɔ",
+          "phonetic": "in-TUR-pruh-ting thuh LAW"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a blurry line between the legislative and executive roles",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈblɜri laɪn bɪˈtwin ðə ˈlɛdʒəsˌleɪtɪv ænd ɪɡˈzɛkjətɪv roʊlz",
+          "phonetic": "uh BLUR-ee LYN bih-TWEEN thuh LEJ-uhs-lay-tiv and ig-ZEK-yuh-tiv ROHLZ"
+        },
+        "american": {
+          "ipa": "ə ˈblɜri laɪn bɪˈtwin ðə ˈlɛdʒəsˌleɪtɪv ænd ɪɡˈzɛkjətɪv roʊlz",
+          "phonetic": "uh BLUR-ee LYN bih-TWEEN thuh LEJ-uhs-lay-tiv and ig-ZEK-yuh-tiv ROHLZ"
         }
       },
       "difficulty": "hard",
@@ -429,6 +797,102 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "busy managers",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbɪzi ˈmænədʒərz",
+          "phonetic": "BIZ-ee MAN-uh-jurz"
+        },
+        "american": {
+          "ipa": "ˈbɪzi ˈmænədʒərz",
+          "phonetic": "BIZ-ee MAN-uh-jurz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "reading more books",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈridɪŋ mɔr bʊks",
+          "phonetic": "REE-ding MOR BOOKS"
+        },
+        "american": {
+          "ipa": "ˈridɪŋ mɔr bʊks",
+          "phonetic": "REE-ding MOR BOOKS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "self-improvement",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌsɛlf ɪmˈpruvmənt",
+          "phonetic": "SELF im-PROOV-muhnt"
+        },
+        "american": {
+          "ipa": "ˌsɛlf ɪmˈpruvmənt",
+          "phonetic": "SELF im-PROOV-muhnt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a professor of management",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə prəˈfɛsər əv ˈmænədʒmənt",
+          "phonetic": "uh pruh-FES-ur uhv MAN-ij-muhnt"
+        },
+        "american": {
+          "ipa": "ə prəˈfɛsər əv ˈmænədʒmənt",
+          "phonetic": "uh pruh-FES-ur uhv MAN-ij-muhnt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "broad perspectives",
+      "pronunciation": {
+        "british": {
+          "ipa": "brɔd pərˈspɛktɪvz",
+          "phonetic": "BRAWD pur-SPEK-tivz"
+        },
+        "american": {
+          "ipa": "brɔd pərˈspɛktɪvz",
+          "phonetic": "BRAWD pur-SPEK-tivz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a highlighted point",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈhaɪˌlaɪtəd pɔɪnt",
+          "phonetic": "uh HY-ly-tid POYNT"
+        },
+        "american": {
+          "ipa": "ə ˈhaɪˌlaɪtəd pɔɪnt",
+          "phonetic": "uh HY-ly-tid POYNT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "moral objectivism",
       "pronunciation": {
         "british": {
@@ -438,6 +902,54 @@
         "american": {
           "ipa": "ˈmɔrəl əbˈdʒɛktɪˌvɪzəm",
           "phonetic": "MOR-uhl uhb-JEK-tih-viz-uhm"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "universal moral principles",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌjunəˈvɜrsəl ˈmɔrəl ˈprɪnsəpəlz",
+          "phonetic": "yoo-nuh-VUR-suhl MOR-uhl PRIN-suh-puhlz"
+        },
+        "american": {
+          "ipa": "ˌjunəˈvɜrsəl ˈmɔrəl ˈprɪnsəpəlz",
+          "phonetic": "yoo-nuh-VUR-suhl MOR-uhl PRIN-suh-puhlz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "being valid for all people",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbiɪŋ ˈvæləd fɔr ɔl ˈpipəl",
+          "phonetic": "BEE-ing VAL-uhd for AWL PEE-puhl"
+        },
+        "american": {
+          "ipa": "ˈbiɪŋ ˈvæləd fɔr ɔl ˈpipəl",
+          "phonetic": "BEE-ing VAL-uhd for AWL PEE-puhl"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a firm and absolute boundary between right and wrong",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə fɜrm ænd ˈæbsəˌlut ˈbaʊndəri bɪˈtwin raɪt ænd rɔŋ",
+          "phonetic": "uh FURM and AB-suh-loot BOWN-duh-ree bih-TWEEN RYT and RAWNG"
+        },
+        "american": {
+          "ipa": "ə fɜrm ænd ˈæbsəˌlut ˈbaʊndəri bɪˈtwin raɪt ænd rɔŋ",
+          "phonetic": "uh FURM and AB-suh-loot BOWN-duh-ree bih-TWEEN RYT and RAWNG"
         }
       },
       "difficulty": "hard",
@@ -461,6 +973,54 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "non-overridable principles",
+      "pronunciation": {
+        "british": {
+          "ipa": "nɑn ˌoʊvəˈraɪdəbəl ˈprɪnsəpəlz",
+          "phonetic": "NAHN oh-vuh-RY-duh-buhl PRIN-suh-puhlz"
+        },
+        "american": {
+          "ipa": "nɑn ˌoʊvəˈraɪdəbəl ˈprɪnsəpəlz",
+          "phonetic": "NAHN oh-vuh-RY-duh-buhl PRIN-suh-puhlz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "following principles",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɑloʊɪŋ ˈprɪnsəpəlz",
+          "phonetic": "FAH-loh-ing PRIN-suh-puhlz"
+        },
+        "american": {
+          "ipa": "ˈfɑloʊɪŋ ˈprɪnsəpəlz",
+          "phonetic": "FAH-loh-ing PRIN-suh-puhlz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "never violating principles",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈnɛvər ˈvaɪəˌleɪtɪŋ ˈprɪnsəpəlz",
+          "phonetic": "NEV-ur VY-uh-lay-ting PRIN-suh-puhlz"
+        },
+        "american": {
+          "ipa": "ˈnɛvər ˈvaɪəˌleɪtɪŋ ˈprɪnsəpəlz",
+          "phonetic": "NEV-ur VY-uh-lay-ting PRIN-suh-puhlz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "canned food",
       "pronunciation": {
         "british": {
@@ -470,6 +1030,22 @@
         "american": {
           "ipa": "kænd fud",
           "phonetic": "KAND FOOD"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "entering the market",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɛntərɪŋ ðə ˈmɑrkət",
+          "phonetic": "EN-tur-ing thuh MAR-kut"
+        },
+        "american": {
+          "ipa": "ˈɛntərɪŋ ðə ˈmɑrkət",
+          "phonetic": "EN-tur-ing thuh MAR-kut"
         }
       },
       "difficulty": "hard",
@@ -493,6 +1069,102 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "refrigerators",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈfrɪdʒəˌreɪtərz",
+          "phonetic": "rih-FRIJ-uh-ray-turz"
+        },
+        "american": {
+          "ipa": "rɪˈfrɪdʒəˌreɪtərz",
+          "phonetic": "rih-FRIJ-uh-ray-turz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "high popularity",
+      "pronunciation": {
+        "british": {
+          "ipa": "haɪ ˌpɑpjəˈlɛrəti",
+          "phonetic": "HY pah-pyuh-LAIR-uh-tee"
+        },
+        "american": {
+          "ipa": "haɪ ˌpɑpjəˈlɛrəti",
+          "phonetic": "HY pah-pyuh-LAIR-uh-tee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "cities and rural areas",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɪtiz ænd ˈrʊrəl ˈɛriəz",
+          "phonetic": "SIT-eez and RUR-uhl AIR-ee-uhz"
+        },
+        "american": {
+          "ipa": "ˈsɪtiz ænd ˈrʊrəl ˈɛriəz",
+          "phonetic": "SIT-eez and RUR-uhl AIR-ee-uhz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "purchasing appliances",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpɜrtʃəsɪŋ əˈplaɪənsəz",
+          "phonetic": "PUR-chuh-sing uh-PLY-uhn-suhz"
+        },
+        "american": {
+          "ipa": "ˈpɜrtʃəsɪŋ əˈplaɪənsəz",
+          "phonetic": "PUR-chuh-sing uh-PLY-uhn-suhz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the rise of frozen foods",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə raɪz əv ˈfroʊzən fudz",
+          "phonetic": "thuh RYZ uhv FROH-zuhn FOODZ"
+        },
+        "american": {
+          "ipa": "ðə raɪz əv ˈfroʊzən fudz",
+          "phonetic": "thuh RYZ uhv FROH-zuhn FOODZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "freezer cases",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfrizər ˈkeɪsəz",
+          "phonetic": "FREE-zur KAY-suhz"
+        },
+        "american": {
+          "ipa": "ˈfrizər ˈkeɪsəz",
+          "phonetic": "FREE-zur KAY-suhz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "synthetic biology",
       "pronunciation": {
         "british": {
@@ -502,6 +1174,102 @@
         "american": {
           "ipa": "sɪnˈθɛtɪk baɪˈɑlədʒi",
           "phonetic": "sin-THET-ik by-AH-luh-jee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the biological system",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˌbaɪəˈlɑdʒɪkəl ˈsɪstəm",
+          "phonetic": "thuh by-uh-LAH-jih-kuhl SIS-tuhm"
+        },
+        "american": {
+          "ipa": "ðə ˌbaɪəˈlɑdʒɪkəl ˈsɪstəm",
+          "phonetic": "thuh by-uh-LAH-jih-kuhl SIS-tuhm"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the next level of genetic engineering",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə nɛkst ˈlɛvəl əv dʒəˈnɛtɪk ˌɛndʒəˈnɪrɪŋ",
+          "phonetic": "thuh NEKST LEV-uhl uhv juh-NET-ik en-juh-NEER-ing"
+        },
+        "american": {
+          "ipa": "ðə nɛkst ˈlɛvəl əv dʒəˈnɛtɪk ˌɛndʒəˈnɪrɪŋ",
+          "phonetic": "thuh NEKST LEV-uhl uhv juh-NET-ik en-juh-NEER-ing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "synthesizing DNA",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɪnθəˌsaɪzɪŋ di ɛn eɪ",
+          "phonetic": "SIN-thuh-sy-zing DEE EN AY"
+        },
+        "american": {
+          "ipa": "ˈsɪnθəˌsaɪzɪŋ di ɛn eɪ",
+          "phonetic": "SIN-thuh-sy-zing DEE EN AY"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "creating new organisms",
+      "pronunciation": {
+        "british": {
+          "ipa": "kriˈeɪtɪŋ nu ˈɔrɡəˌnɪzəmz",
+          "phonetic": "kree-AY-ting NOO OR-guh-niz-uhmz"
+        },
+        "american": {
+          "ipa": "kriˈeɪtɪŋ nu ˈɔrɡəˌnɪzəmz",
+          "phonetic": "kree-AY-ting NOO OR-guh-niz-uhmz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "building a cellular factory",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbɪldɪŋ ə ˈsɛljələr ˈfæktəri",
+          "phonetic": "BIL-ding uh SEL-yuh-lur FAK-tuh-ree"
+        },
+        "american": {
+          "ipa": "ˈbɪldɪŋ ə ˈsɛljələr ˈfæktəri",
+          "phonetic": "BIL-ding uh SEL-yuh-lur FAK-tuh-ree"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "getting billions of bacteria from one bacterium",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɡɛtɪŋ ˈbɪljənz əv bækˈtɪriə frʌm wʌn bækˈtɪriəm",
+          "phonetic": "GET-ing BIL-yuhnz uhv bak-TEER-ee-uh fruhm WUN bak-TEER-ee-uhm"
+        },
+        "american": {
+          "ipa": "ˈɡɛtɪŋ ˈbɪljənz əv bækˈtɪriə frʌm wʌn bækˈtɪriəm",
+          "phonetic": "GET-ing BIL-yuhnz uhv bak-TEER-ee-uh fruhm WUN bak-TEER-ee-uhm"
         }
       },
       "difficulty": "hard",
@@ -525,6 +1293,22 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "a neighboring planet",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈneɪbərɪŋ ˈplænət",
+          "phonetic": "uh NAY-bur-ing PLAN-uht"
+        },
+        "american": {
+          "ipa": "ə ˈneɪbərɪŋ ˈplænət",
+          "phonetic": "uh NAY-bur-ing PLAN-uht"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "Earth",
       "pronunciation": {
         "british": {
@@ -537,6 +1321,118 @@
         }
       },
       "difficulty": "easy",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a similar geological surface and landscape",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈsɪmələr ˌdʒiəˈlɑdʒɪkəl ˈsɜrfəs ænd ˈlændˌskeɪp",
+          "phonetic": "uh SIM-uh-lur jee-uh-LAH-jih-kuhl SUR-fuhs and LAND-skayp"
+        },
+        "american": {
+          "ipa": "ə ˈsɪmələr ˌdʒiəˈlɑdʒɪkəl ˈsɜrfəs ænd ˈlændˌskeɪp",
+          "phonetic": "uh SIM-uh-lur jee-uh-LAH-jih-kuhl SUR-fuhs and LAND-skayp"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "desert",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdɛzərt",
+          "phonetic": "DEZ-urt"
+        },
+        "american": {
+          "ipa": "ˈdɛzərt",
+          "phonetic": "DEZ-urt"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "evidence for the existence of water",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɛvədəns fɔr ði ɛɡˈzɪstəns əv ˈwɔtər",
+          "phonetic": "EV-uh-duhns for thee eg-ZIS-tuhns uhv WAW-tur"
+        },
+        "american": {
+          "ipa": "ˈɛvədəns fɔr ði ɛɡˈzɪstəns əv ˈwɔtər",
+          "phonetic": "EV-uh-duhns for thee eg-ZIS-tuhns uhv WAW-tur"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "traces of heavy gases",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtreɪsəz əv ˈhɛvi ˈɡæsəz",
+          "phonetic": "TRAY-suhz uhv HEV-ee GAS-uhz"
+        },
+        "american": {
+          "ipa": "ˈtreɪsəz əv ˈhɛvi ˈɡæsəz",
+          "phonetic": "TRAY-suhz uhv HEV-ee GAS-uhz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the low gravity on Mars",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə loʊ ˈɡrævəti ɑn mɑrz",
+          "phonetic": "thuh LOH GRAV-uh-tee ahn MARZ"
+        },
+        "american": {
+          "ipa": "ðə loʊ ˈɡrævəti ɑn mɑrz",
+          "phonetic": "thuh LOH GRAV-uh-tee ahn MARZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a thin layer of atmosphere",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə θɪn ˈleɪər əv ˈætməsˌfɪr",
+          "phonetic": "uh THIN LAY-ur uhv AT-muhs-feer"
+        },
+        "american": {
+          "ipa": "ə θɪn ˈleɪər əv ˈætməsˌfɪr",
+          "phonetic": "uh THIN LAY-ur uhv AT-muhs-feer"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the ideal destination",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði aɪˈdil ˌdɛstəˈneɪʃən",
+          "phonetic": "thee eye-DEEL des-tuh-NAY-shuhn"
+        },
+        "american": {
+          "ipa": "ði aɪˈdil ˌdɛstəˈneɪʃən",
+          "phonetic": "thee eye-DEEL des-tuh-NAY-shuhn"
+        }
+      },
+      "difficulty": "hard",
       "category": "pte-sst-complete",
       "source": "pte-sst-complete"
     },
@@ -573,6 +1469,102 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "a pure language",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə pjʊr ˈlæŋɡwɪdʒ",
+          "phonetic": "uh PYOOR LANG-gwij"
+        },
+        "american": {
+          "ipa": "ə pjʊr ˈlæŋɡwɪdʒ",
+          "phonetic": "uh PYOOR LANG-gwij"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a variety of many languages",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə vəˈraɪəti əv ˈmɛni ˈlæŋɡwɪdʒəz",
+          "phonetic": "uh vuh-RY-uh-tee uhv MEN-ee LANG-gwij-uhz"
+        },
+        "american": {
+          "ipa": "ə vəˈraɪəti əv ˈmɛni ˈlæŋɡwɪdʒəz",
+          "phonetic": "uh vuh-RY-uh-tee uhv MEN-ee LANG-gwij-uhz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "borrowing words from 350 other languages",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbɑroʊɪŋ wɜrdz frʌm θri ˈhʌndrəd ˈfɪfti ˈʌðər ˈlæŋɡwɪdʒəz",
+          "phonetic": "BAH-roh-ing WURDZ fruhm THREE HUN-druhd FIF-tee UH-thur LANG-gwij-uhz"
+        },
+        "american": {
+          "ipa": "ˈbɑroʊɪŋ wɜrdz frʌm θri ˈhʌndrəd ˈfɪfti ˈʌðər ˈlæŋɡwɪdʒəz",
+          "phonetic": "BAH-roh-ing WURDZ fruhm THREE HUN-druhd FIF-tee UH-thur LANG-gwij-uhz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "Shakespeare's period",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈʃeɪkspɪrz ˈpɪriəd",
+          "phonetic": "SHAYK-speerz PEER-ee-uhd"
+        },
+        "american": {
+          "ipa": "ˈʃeɪkspɪrz ˈpɪriəd",
+          "phonetic": "SHAYK-speerz PEER-ee-uhd"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the hate of borrowed words",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə heɪt əv ˈbɑroʊd wɜrdz",
+          "phonetic": "thuh HAYT uhv BAH-rohd WURDZ"
+        },
+        "american": {
+          "ipa": "ðə heɪt əv ˈbɑroʊd wɜrdz",
+          "phonetic": "thuh HAYT uhv BAH-rohd WURDZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "original English",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈrɪdʒənəl ˈɪŋɡlɪʃ",
+          "phonetic": "uh-RIH-juh-nuhl ING-glish"
+        },
+        "american": {
+          "ipa": "əˈrɪdʒənəl ˈɪŋɡlɪʃ",
+          "phonetic": "uh-RIH-juh-nuhl ING-glish"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "organization studies",
       "pronunciation": {
         "british": {
@@ -582,6 +1574,102 @@
         "american": {
           "ipa": "ˌɔrɡənəˈzeɪʃən ˈstʌdiz",
           "phonetic": "or-guh-nuh-ZAY-shuhn STUD-eez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a whole family of disciplines",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə hoʊl ˈfæməli əv ˈdɪsəplɪnz",
+          "phonetic": "uh HOHL FAM-uh-lee uhv DIS-ih-plinz"
+        },
+        "american": {
+          "ipa": "ə hoʊl ˈfæməli əv ˈdɪsəplɪnz",
+          "phonetic": "uh HOHL FAM-uh-lee uhv DIS-ih-plinz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "sociology",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌsoʊsiˈɑlədʒi",
+          "phonetic": "soh-see-AH-luh-jee"
+        },
+        "american": {
+          "ipa": "ˌsoʊsiˈɑlədʒi",
+          "phonetic": "soh-see-AH-luh-jee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "cultural studies",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌltʃərəl ˈstʌdiz",
+          "phonetic": "KUL-chur-uhl STUD-eez"
+        },
+        "american": {
+          "ipa": "ˈkʌltʃərəl ˈstʌdiz",
+          "phonetic": "KUL-chur-uhl STUD-eez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "enjoying doing organization studies",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɛnˈdʒɔɪɪŋ ˈduɪŋ ˌɔrɡənəˈzeɪʃən ˈstʌdiz",
+          "phonetic": "en-JOY-ing DOO-ing or-guh-nuh-ZAY-shuhn STUD-eez"
+        },
+        "american": {
+          "ipa": "ɛnˈdʒɔɪɪŋ ˈduɪŋ ˌɔrɡənəˈzeɪʃən ˈstʌdiz",
+          "phonetic": "en-JOY-ing DOO-ing or-guh-nuh-ZAY-shuhn STUD-eez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "broad range and breadth",
+      "pronunciation": {
+        "british": {
+          "ipa": "brɔd reɪndʒ ænd brɛdθ",
+          "phonetic": "BRAWD RAYNJ and BREDTH"
+        },
+        "american": {
+          "ipa": "brɔd reɪndʒ ænd brɛdθ",
+          "phonetic": "BRAWD RAYNJ and BREDTH"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "liberating ideas without disciplinary divisions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlɪbəˌreɪtɪŋ aɪˈdiəz wɪˈðaʊt ˈdɪsəpləˌnɛri dɪˈvɪʒənz",
+          "phonetic": "LIB-uh-ray-ting eye-DEE-uhz wih-THOWT dis-ih-pluh-NAIR-ee dih-VIH-zhuhnz"
+        },
+        "american": {
+          "ipa": "ˈlɪbəˌreɪtɪŋ aɪˈdiəz wɪˈðaʊt ˈdɪsəpləˌnɛri dɪˈvɪʒənz",
+          "phonetic": "LIB-uh-ray-ting eye-DEE-uhz wih-THOWT dis-ih-pluh-NAIR-ee dih-VIH-zhuhnz"
         }
       },
       "difficulty": "hard",
@@ -717,6 +1805,70 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "no dietary need",
+      "pronunciation": {
+        "british": {
+          "ipa": "noʊ ˈdaɪəˌtɛri nid",
+          "phonetic": "NOH dy-uh-TAIR-ee NEED"
+        },
+        "american": {
+          "ipa": "noʊ ˈdaɪəˌtɛri nid",
+          "phonetic": "NOH dy-uh-TAIR-ee NEED"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "tropical climates",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtrɑpɪkəl ˈklaɪməts",
+          "phonetic": "TRAH-pih-kuhl KLY-muhts"
+        },
+        "american": {
+          "ipa": "ˈtrɑpɪkəl ˈklaɪməts",
+          "phonetic": "TRAH-pih-kuhl KLY-muhts"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a prohormone",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə proʊˈhɔrˌmoʊn",
+          "phonetic": "uh proh-HOR-mohn"
+        },
+        "american": {
+          "ipa": "ə proʊˈhɔrˌmoʊn",
+          "phonetic": "uh proh-HOR-mohn"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "equatorial regions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌikwəˈtɔriəl ˈridʒənz",
+          "phonetic": "ee-kwuh-TOR-ee-uhl REE-juhnz"
+        },
+        "american": {
+          "ipa": "ˌikwəˈtɔriəl ˈridʒənz",
+          "phonetic": "ee-kwuh-TOR-ee-uhl REE-juhnz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "the world",
       "pronunciation": {
         "british": {
@@ -806,6 +1958,22 @@
         "american": {
           "ipa": "ˈɛdwɪn ˈhʌbəl",
           "phonetic": "ED-win HUB-uhl"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "an astronomer",
+      "pronunciation": {
+        "british": {
+          "ipa": "æn əˈstrɑnəmər",
+          "phonetic": "an uh-STRAH-nuh-mur"
+        },
+        "american": {
+          "ipa": "æn əˈstrɑnəmər",
+          "phonetic": "an uh-STRAH-nuh-mur"
         }
       },
       "difficulty": "hard",
@@ -957,6 +2125,22 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "cosmology",
+      "pronunciation": {
+        "british": {
+          "ipa": "kɑzˈmɑlədʒi",
+          "phonetic": "kahz-MAH-luh-jee"
+        },
+        "american": {
+          "ipa": "kɑzˈmɑlədʒi",
+          "phonetic": "kahz-MAH-luh-jee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "the Big Bang",
       "pronunciation": {
         "british": {
@@ -973,6 +2157,22 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "the law of physics",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə lɔ əv ˈfɪzɪks",
+          "phonetic": "thuh LAW uhv FIZ-iks"
+        },
+        "american": {
+          "ipa": "ðə lɔ əv ˈfɪzɪks",
+          "phonetic": "thuh LAW uhv FIZ-iks"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "the decline of bees",
       "pronunciation": {
         "british": {
@@ -982,6 +2182,86 @@
         "american": {
           "ipa": "ðə dɪˈklaɪn əv biz",
           "phonetic": "thuh dih-KLYN uhv BEEZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a well-documented conclusion",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə wɛl ˈdɑkjəmɛntəd kənˈkluʒən",
+          "phonetic": "uh WEL dah-kyuh-MEN-tid kuhn-KLOO-zhuhn"
+        },
+        "american": {
+          "ipa": "ə wɛl ˈdɑkjəmɛntəd kənˈkluʒən",
+          "phonetic": "uh WEL dah-kyuh-MEN-tid kuhn-KLOO-zhuhn"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "variation across species",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌvɛriˈeɪʃən əˈkrɔs ˈspiʃiz",
+          "phonetic": "vair-ee-AY-shuhn uh-KRAWS SPEE-sheez"
+        },
+        "american": {
+          "ipa": "ˌvɛriˈeɪʃən əˈkrɔs ˈspiʃiz",
+          "phonetic": "vair-ee-AY-shuhn uh-KRAWS SPEE-sheez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "pollinator loss",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpɑləˌneɪtər lɔs",
+          "phonetic": "PAH-luh-nay-tur LAWS"
+        },
+        "american": {
+          "ipa": "ˈpɑləˌneɪtər lɔs",
+          "phonetic": "PAH-luh-nay-tur LAWS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a catastrophe",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə kəˈtæstrəfi",
+          "phonetic": "uh kuh-TAS-truh-fee"
+        },
+        "american": {
+          "ipa": "ə kəˈtæstrəfi",
+          "phonetic": "uh kuh-TAS-truh-fee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "fixing the recognized problems",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɪksɪŋ ðə ˈrɛkəɡˌnaɪzd ˈprɑbləmz",
+          "phonetic": "FIK-sing thuh REK-uhg-nyzd PRAH-bluhmz"
+        },
+        "american": {
+          "ipa": "ˈfɪksɪŋ ðə ˈrɛkəɡˌnaɪzd ˈprɑbləmz",
+          "phonetic": "FIK-sing thuh REK-uhg-nyzd PRAH-bluhmz"
         }
       },
       "difficulty": "hard",
@@ -1085,6 +2365,150 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "being accidentally taken by children",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbiɪŋ ˌæksəˈdɛntəli ˈteɪkən baɪ ˈtʃɪldrən",
+          "phonetic": "BEE-ing ak-suh-DEN-tuh-lee TAY-kuhn by CHIL-druhn"
+        },
+        "american": {
+          "ipa": "ˈbiɪŋ ˌæksəˈdɛntəli ˈteɪkən baɪ ˈtʃɪldrən",
+          "phonetic": "BEE-ing ak-suh-DEN-tuh-lee TAY-kuhn by CHIL-druhn"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the expiration date",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði ˌɛkspəˈreɪʃən deɪt",
+          "phonetic": "thee ek-spuh-RAY-shuhn DAYT"
+        },
+        "american": {
+          "ipa": "ði ˌɛkspəˈreɪʃən deɪt",
+          "phonetic": "thee ek-spuh-RAY-shuhn DAYT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "taking the leftover drugs",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈteɪkɪŋ ðə ˈlɛftˌoʊvər drʌɡz",
+          "phonetic": "TAY-king thuh LEFT-oh-vur DRUGZ"
+        },
+        "american": {
+          "ipa": "ˈteɪkɪŋ ðə ˈlɛftˌoʊvər drʌɡz",
+          "phonetic": "TAY-king thuh LEFT-oh-vur DRUGZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "an allergy",
+      "pronunciation": {
+        "british": {
+          "ipa": "æn ˈælərdʒi",
+          "phonetic": "an AL-ur-jee"
+        },
+        "american": {
+          "ipa": "æn ˈælərdʒi",
+          "phonetic": "an AL-ur-jee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "giving appropriate prescriptions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɡɪvɪŋ əˈproʊpriət prəˈskrɪpʃənz",
+          "phonetic": "GIV-ing uh-PROH-pree-uht pruh-SKRIP-shuhnz"
+        },
+        "american": {
+          "ipa": "ˈɡɪvɪŋ əˈproʊpriət prəˈskrɪpʃənz",
+          "phonetic": "GIV-ing uh-PROH-pree-uht pruh-SKRIP-shuhnz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the wrong indications",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə rɔŋ ˌɪndəˈkeɪʃənz",
+          "phonetic": "thuh RAWNG in-duh-KAY-shuhnz"
+        },
+        "american": {
+          "ipa": "ðə rɔŋ ˌɪndəˈkeɪʃənz",
+          "phonetic": "thuh RAWNG in-duh-KAY-shuhnz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "prevention",
+      "pronunciation": {
+        "british": {
+          "ipa": "prɪˈvɛnʃən",
+          "phonetic": "prih-VEN-shuhn"
+        },
+        "american": {
+          "ipa": "prɪˈvɛnʃən",
+          "phonetic": "prih-VEN-shuhn"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "physicians",
+      "pronunciation": {
+        "british": {
+          "ipa": "fəˈzɪʃənz",
+          "phonetic": "fuh-ZISH-uhnz"
+        },
+        "american": {
+          "ipa": "fəˈzɪʃənz",
+          "phonetic": "fuh-ZISH-uhnz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "completing the full course",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəmˈplitɪŋ ðə fʊl kɔrs",
+          "phonetic": "kuhm-PLEE-ting thuh FOOL KORS"
+        },
+        "american": {
+          "ipa": "kəmˈplitɪŋ ðə fʊl kɔrs",
+          "phonetic": "kuhm-PLEE-ting thuh FOOL KORS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "interactions between babies and their mothers",
       "pronunciation": {
         "british": {
@@ -1165,6 +2589,86 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "shrinking",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈʃrɪŋkɪŋ",
+          "phonetic": "SHRING-king"
+        },
+        "american": {
+          "ipa": "ˈʃrɪŋkɪŋ",
+          "phonetic": "SHRING-king"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "newspaper publisher's red cash flow",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈnuzˌpeɪpər ˈpʌblɪʃərz rɛd kæʃ floʊ",
+          "phonetic": "thuh NOOZ-pay-pur PUB-lish-urz RED KASH FLOH"
+        },
+        "american": {
+          "ipa": "ðə ˈnuzˌpeɪpər ˈpʌblɪʃərz rɛd kæʃ floʊ",
+          "phonetic": "thuh NOOZ-pay-pur PUB-lish-urz RED KASH FLOH"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the breakeven point",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˌbreɪkˈivən pɔɪnt",
+          "phonetic": "thuh brayk-EE-vuhn POYNT"
+        },
+        "american": {
+          "ipa": "ðə ˌbreɪkˈivən pɔɪnt",
+          "phonetic": "thuh brayk-EE-vuhn POYNT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the decreasing number of advertising and buyers",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə dɪˈkrisɪŋ ˈnʌmbər əv ˈædvərˌtaɪzɪŋ ænd ˈbaɪərz",
+          "phonetic": "thuh dih-KREE-sing NUM-bur uhv AD-vur-ty-zing and BY-urz"
+        },
+        "american": {
+          "ipa": "ðə dɪˈkrisɪŋ ˈnʌmbər əv ˈædvərˌtaɪzɪŋ ænd ˈbaɪərz",
+          "phonetic": "thuh dih-KREE-sing NUM-bur uhv AD-vur-ty-zing and BY-urz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "being online only",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbiɪŋ ˈɔnˌlaɪn ˈoʊnli",
+          "phonetic": "BEE-ing AWN-lyn OHN-lee"
+        },
+        "american": {
+          "ipa": "ˈbiɪŋ ˈɔnˌlaɪn ˈoʊnli",
+          "phonetic": "BEE-ing AWN-lyn OHN-lee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "automation technology in vehicles",
       "pronunciation": {
         "british": {
@@ -1174,6 +2678,86 @@
         "american": {
           "ipa": "ˌɔtəˈmeɪʃən tɛkˈnɑlədʒi ɪn ˈviɪkəlz",
           "phonetic": "aw-tuh-MAY-shuhn tek-NAH-luh-jee in VEE-ih-kuhlz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a hot topic",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə hɑt ˈtɑpɪk",
+          "phonetic": "uh HAHT TAH-pik"
+        },
+        "american": {
+          "ipa": "ə hɑt ˈtɑpɪk",
+          "phonetic": "uh HAHT TAH-pik"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "fuel-efficient technology",
+      "pronunciation": {
+        "british": {
+          "ipa": "fjul ɪˈfɪʃənt tɛkˈnɑlədʒi",
+          "phonetic": "FYOOL ih-FISH-uhnt tek-NAH-luh-jee"
+        },
+        "american": {
+          "ipa": "fjul ɪˈfɪʃənt tɛkˈnɑlədʒi",
+          "phonetic": "FYOOL ih-FISH-uhnt tek-NAH-luh-jee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "being completely under vehicle control",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbiɪŋ kəmˈplitli ˈʌndər ˈviɪkəl kənˈtroʊl",
+          "phonetic": "BEE-ing kuhm-PLEET-lee UN-dur VEE-ih-kuhl kuhn-TROHL"
+        },
+        "american": {
+          "ipa": "ˈbiɪŋ kəmˈplitli ˈʌndər ˈviɪkəl kənˈtroʊl",
+          "phonetic": "BEE-ing kuhm-PLEET-lee UN-dur VEE-ih-kuhl kuhn-TROHL"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "conditional automation",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈdɪʃənəl ˌɔtəˈmeɪʃən",
+          "phonetic": "kuhn-DISH-uh-nuhl aw-tuh-MAY-shuhn"
+        },
+        "american": {
+          "ipa": "kənˈdɪʃənəl ˌɔtəˈmeɪʃən",
+          "phonetic": "kuhn-DISH-uh-nuhl aw-tuh-MAY-shuhn"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "intervening under circumstances",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌɪntərˈvinɪŋ ˈʌndər ˈsɜrkəmˌstænsəz",
+          "phonetic": "in-tur-VEE-ning UN-dur SUR-kuhm-stan-suhz"
+        },
+        "american": {
+          "ipa": "ˌɪntərˈvinɪŋ ˈʌndər ˈsɜrkəmˌstænsəz",
+          "phonetic": "in-tur-VEE-ning UN-dur SUR-kuhm-stan-suhz"
         }
       },
       "difficulty": "hard",
@@ -1213,6 +2797,38 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "a message offering benefits",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈmɛsədʒ ˈɔfərɪŋ ˈbɛnəfɪts",
+          "phonetic": "uh MES-ij AW-fur-ing BEN-uh-fits"
+        },
+        "american": {
+          "ipa": "ə ˈmɛsədʒ ˈɔfərɪŋ ˈbɛnəfɪts",
+          "phonetic": "uh MES-ij AW-fur-ing BEN-uh-fits"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a message implying a penalty",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈmɛsədʒ ɪmˈplaɪɪŋ ə ˈpɛnəlti",
+          "phonetic": "uh MES-ij im-PLY-ing uh PEN-uhl-tee"
+        },
+        "american": {
+          "ipa": "ə ˈmɛsədʒ ɪmˈplaɪɪŋ ə ˈpɛnəlti",
+          "phonetic": "uh MES-ij im-PLY-ing uh PEN-uhl-tee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "the benefits",
       "pronunciation": {
         "british": {
@@ -1245,6 +2861,22 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "a motivation",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˌmoʊtəˈveɪʃən",
+          "phonetic": "uh moh-tuh-VAY-shuhn"
+        },
+        "american": {
+          "ipa": "ə ˌmoʊtəˈveɪʃən",
+          "phonetic": "uh moh-tuh-VAY-shuhn"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "the history of the software and IT industry",
       "pronunciation": {
         "british": {
@@ -1254,6 +2886,38 @@
         "american": {
           "ipa": "ðə ˈhɪstəri əv ðə ˈsɔftˌwɛr ænd aɪ ti ˈɪndəstri",
           "phonetic": "thuh HIS-tuh-ree uhv thuh SAWFT-wair and EYE TEE IN-duh-stree"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a new industry",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə nu ˈɪndəstri",
+          "phonetic": "uh NOO IN-duh-stree"
+        },
+        "american": {
+          "ipa": "ə nu ˈɪndəstri",
+          "phonetic": "uh NOO IN-duh-stree"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a short time",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ʃɔrt taɪm",
+          "phonetic": "uh SHORT TYM"
+        },
+        "american": {
+          "ipa": "ə ʃɔrt taɪm",
+          "phonetic": "uh SHORT TYM"
         }
       },
       "difficulty": "hard",
@@ -1277,6 +2941,118 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "the rapid expansion",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈræpəd ɪkˈspænʃən",
+          "phonetic": "thuh RAP-uhd ik-SPAN-shuhn"
+        },
+        "american": {
+          "ipa": "ðə ˈræpəd ɪkˈspænʃən",
+          "phonetic": "thuh RAP-uhd ik-SPAN-shuhn"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "storage costs",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈstɔrədʒ kɑsts",
+          "phonetic": "STOR-ij KAHSTS"
+        },
+        "american": {
+          "ipa": "ˈstɔrədʒ kɑsts",
+          "phonetic": "STOR-ij KAHSTS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the rapid fall",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈræpəd fɔl",
+          "phonetic": "thuh RAP-uhd FAWL"
+        },
+        "american": {
+          "ipa": "ðə ˈræpəd fɔl",
+          "phonetic": "thuh RAP-uhd FAWL"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "all areas of life",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɔl ˈɛriəz əv laɪf",
+          "phonetic": "AWL AIR-ee-uhz uhv LYF"
+        },
+        "american": {
+          "ipa": "ɔl ˈɛriəz əv laɪf",
+          "phonetic": "AWL AIR-ee-uhz uhv LYF"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "Moore's Law",
+      "pronunciation": {
+        "british": {
+          "ipa": "mɔrz lɔ",
+          "phonetic": "MORZ LAW"
+        },
+        "american": {
+          "ipa": "mɔrz lɔ",
+          "phonetic": "MORZ LAW"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a stampede",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə stæmˈpid",
+          "phonetic": "uh stam-PEED"
+        },
+        "american": {
+          "ipa": "ə stæmˈpid",
+          "phonetic": "uh stam-PEED"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "guiding the development in the future",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɡaɪdɪŋ ðə dɪˈvɛləpmənt ɪn ðə ˈfjutʃər",
+          "phonetic": "GY-ding thuh dih-VEL-uhp-muhnt in thuh FYOO-chur"
+        },
+        "american": {
+          "ipa": "ˈɡaɪdɪŋ ðə dɪˈvɛləpmənt ɪn ðə ˈfjutʃər",
+          "phonetic": "GY-ding thuh dih-VEL-uhp-muhnt in thuh FYOO-chur"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "Rome",
       "pronunciation": {
         "british": {
@@ -1293,6 +3069,22 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "growing over time",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɡroʊɪŋ ˈoʊvər taɪm",
+          "phonetic": "GROH-ing OH-vur TYM"
+        },
+        "american": {
+          "ipa": "ˈɡroʊɪŋ ˈoʊvər taɪm",
+          "phonetic": "GROH-ing OH-vur TYM"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "Romans",
       "pronunciation": {
         "british": {
@@ -1302,6 +3094,118 @@
         "american": {
           "ipa": "ˈroʊmənz",
           "phonetic": "ROH-muhnz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "their cities' structure",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɛr ˈsɪtiz ˈstrʌktʃər",
+          "phonetic": "thair SIT-eez STRUK-chur"
+        },
+        "american": {
+          "ipa": "ðɛr ˈsɪtiz ˈstrʌktʃər",
+          "phonetic": "thair SIT-eez STRUK-chur"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a very methodical way",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈvɛri məˈθɑdɪkəl weɪ",
+          "phonetic": "uh VAIR-ee muh-THAH-dih-kuhl WAY"
+        },
+        "american": {
+          "ipa": "ə ˈvɛri məˈθɑdɪkəl weɪ",
+          "phonetic": "uh VAIR-ee muh-THAH-dih-kuhl WAY"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "military strategy and planning",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmɪləˌtɛri ˈstrætədʒi ænd ˈplænɪŋ",
+          "phonetic": "MIL-uh-tair-ee STRAT-uh-jee and PLAN-ing"
+        },
+        "american": {
+          "ipa": "ˈmɪləˌtɛri ˈstrætədʒi ænd ˈplænɪŋ",
+          "phonetic": "MIL-uh-tair-ee STRAT-uh-jee and PLAN-ing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "camps",
+      "pronunciation": {
+        "british": {
+          "ipa": "kæmps",
+          "phonetic": "KAMPS"
+        },
+        "american": {
+          "ipa": "kæmps",
+          "phonetic": "KAMPS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a geometric plan",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˌdʒiəˈmɛtrɪk plæn",
+          "phonetic": "uh jee-uh-MET-rik PLAN"
+        },
+        "american": {
+          "ipa": "ə ˌdʒiəˈmɛtrɪk plæn",
+          "phonetic": "uh jee-uh-MET-rik PLAN"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "square",
+      "pronunciation": {
+        "british": {
+          "ipa": "skwɛr",
+          "phonetic": "SKWAIR"
+        },
+        "american": {
+          "ipa": "skwɛr",
+          "phonetic": "SKWAIR"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "rectangle",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈrɛkˌtæŋɡəl",
+          "phonetic": "REK-tang-guhl"
+        },
+        "american": {
+          "ipa": "ˈrɛkˌtæŋɡəl",
+          "phonetic": "REK-tang-guhl"
         }
       },
       "difficulty": "normal",
@@ -1341,6 +3245,38 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "the rapid growth of the Internet",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈræpəd ɡroʊθ əv ði ˈɪntərˌnɛt",
+          "phonetic": "thuh RAP-uhd GROHTH uhv thee IN-tur-net"
+        },
+        "american": {
+          "ipa": "ðə ˈræpəd ɡroʊθ əv ði ˈɪntərˌnɛt",
+          "phonetic": "thuh RAP-uhd GROHTH uhv thee IN-tur-net"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "quality and quantity",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkwɑləti ænd ˈkwɑntəti",
+          "phonetic": "KWAH-luh-tee and KWAHN-tuh-tee"
+        },
+        "american": {
+          "ipa": "ˈkwɑləti ænd ˈkwɑntəti",
+          "phonetic": "KWAH-luh-tee and KWAHN-tuh-tee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "online research",
       "pronunciation": {
         "british": {
@@ -1350,6 +3286,102 @@
         "american": {
           "ipa": "ˈɔnˌlaɪn rɪˈsɜrtʃ",
           "phonetic": "AWN-lyn rih-SURCH"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "being quick",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbiɪŋ kwɪk",
+          "phonetic": "BEE-ing KWIK"
+        },
+        "american": {
+          "ipa": "ˈbiɪŋ kwɪk",
+          "phonetic": "BEE-ing KWIK"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "less expense",
+      "pronunciation": {
+        "british": {
+          "ipa": "lɛs ɪkˈspɛns",
+          "phonetic": "LES ik-SPENS"
+        },
+        "american": {
+          "ipa": "lɛs ɪkˈspɛns",
+          "phonetic": "LES ik-SPENS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the access to hard-to-reach groups",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði ˈæksɛs tu hɑrd tu ritʃ ɡrups",
+          "phonetic": "thee AK-ses too HARD too REECH GROOPS"
+        },
+        "american": {
+          "ipa": "ði ˈæksɛs tu hɑrd tu ritʃ ɡrups",
+          "phonetic": "thee AK-ses too HARD too REECH GROOPS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "drawbacks",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdrɔˌbæks",
+          "phonetic": "DRAW-baks"
+        },
+        "american": {
+          "ipa": "ˈdrɔˌbæks",
+          "phonetic": "DRAW-baks"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "no face-to-face communication or body language",
+      "pronunciation": {
+        "british": {
+          "ipa": "noʊ feɪs tu feɪs kəmˌjunəˈkeɪʃən ɔr ˈbɑdi ˈlæŋɡwɪdʒ",
+          "phonetic": "NOH FAYS too FAYS kuhm-yoo-nuh-KAY-shuhn or BAH-dee LANG-gwij"
+        },
+        "american": {
+          "ipa": "noʊ feɪs tu feɪs kəmˌjunəˈkeɪʃən ɔr ˈbɑdi ˈlæŋɡwɪdʒ",
+          "phonetic": "NOH FAYS too FAYS kuhm-yoo-nuh-KAY-shuhn or BAH-dee LANG-gwij"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "not knowing who they are",
+      "pronunciation": {
+        "british": {
+          "ipa": "nɑt ˈnoʊɪŋ hu ðeɪ ɑr",
+          "phonetic": "NAHT NOH-ing HOO thay AR"
+        },
+        "american": {
+          "ipa": "nɑt ˈnoʊɪŋ hu ðeɪ ɑr",
+          "phonetic": "NAHT NOH-ing HOO thay AR"
         }
       },
       "difficulty": "hard",
@@ -1373,6 +3405,22 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "the built environment",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə bɪlt ɪnˈvaɪrənmənt",
+          "phonetic": "thuh BILT in-VY-ruhn-muhnt"
+        },
+        "american": {
+          "ipa": "ðə bɪlt ɪnˈvaɪrənmənt",
+          "phonetic": "thuh BILT in-VY-ruhn-muhnt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "a part of our culture",
       "pronunciation": {
         "british": {
@@ -1389,6 +3437,118 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "the 20th century",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈtwɛntiəθ ˈsɛntʃəri",
+          "phonetic": "thuh TWEN-tee-uhth SEN-chuh-ree"
+        },
+        "american": {
+          "ipa": "ðə ˈtwɛntiəθ ˈsɛntʃəri",
+          "phonetic": "thuh TWEN-tee-uhth SEN-chuh-ree"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "old buildings with design flaws",
+      "pronunciation": {
+        "british": {
+          "ipa": "oʊld ˈbɪldɪŋz wɪð dɪˈzaɪn flɔz",
+          "phonetic": "OHLD BIL-dingz with dih-ZYN FLAHZ"
+        },
+        "american": {
+          "ipa": "oʊld ˈbɪldɪŋz wɪð dɪˈzaɪn flɔz",
+          "phonetic": "OHLD BIL-dingz with dih-ZYN FLAHZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "being demolished",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbiɪŋ dɪˈmɑlɪʃt",
+          "phonetic": "BEE-ing dih-MAH-lisht"
+        },
+        "american": {
+          "ipa": "ˈbiɪŋ dɪˈmɑlɪʃt",
+          "phonetic": "BEE-ing dih-MAH-lisht"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "being modified",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbiɪŋ ˈmɑdəˌfaɪd",
+          "phonetic": "BEE-ing MAH-duh-fyd"
+        },
+        "american": {
+          "ipa": "ˈbiɪŋ ˈmɑdəˌfaɪd",
+          "phonetic": "BEE-ing MAH-duh-fyd"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "an application of Darwin's theory of natural selection",
+      "pronunciation": {
+        "british": {
+          "ipa": "æn ˌæpləˈkeɪʃən əv ˈdɑrwɪnz ˈθɪri əv ˈnætʃərəl səˈlɛkʃən",
+          "phonetic": "an ap-luh-KAY-shuhn uhv DAR-winz THEE-ree uhv NA-chur-uhl suh-LEK-shuhn"
+        },
+        "american": {
+          "ipa": "æn ˌæpləˈkeɪʃən əv ˈdɑrwɪnz ˈθɪri əv ˈnætʃərəl səˈlɛkʃən",
+          "phonetic": "an ap-luh-KAY-shuhn uhv DAR-winz THEE-ree uhv NA-chur-uhl suh-LEK-shuhn"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "adaptation",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌædæpˈteɪʃən",
+          "phonetic": "a-dap-TAY-shuhn"
+        },
+        "american": {
+          "ipa": "ˌædæpˈteɪʃən",
+          "phonetic": "a-dap-TAY-shuhn"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "survival",
+      "pronunciation": {
+        "british": {
+          "ipa": "sərˈvaɪvəl",
+          "phonetic": "sur-VY-vuhl"
+        },
+        "american": {
+          "ipa": "sərˈvaɪvəl",
+          "phonetic": "sur-VY-vuhl"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "criticizing the demolition",
       "pronunciation": {
         "british": {
@@ -1398,6 +3558,22 @@
         "american": {
           "ipa": "ˈkrɪtɪˌsaɪzɪŋ ðə ˌdɛməˈlɪʃən",
           "phonetic": "KRIH-tih-sy-zing thuh dem-uh-LISH-uhn"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "honoring the cultural nuances",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɑnərɪŋ ðə ˈkʌltʃərəl ˈnuɑnsəz",
+          "phonetic": "AH-nur-ing thuh KUL-chur-uhl NOO-ahn-suhz"
+        },
+        "american": {
+          "ipa": "ˈɑnərɪŋ ðə ˈkʌltʃərəl ˈnuɑnsəz",
+          "phonetic": "AH-nur-ing thuh KUL-chur-uhl NOO-ahn-suhz"
         }
       },
       "difficulty": "hard",
@@ -1469,6 +3645,38 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "the process of generating water",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈprɑˌsɛs əv ˈdʒɛnəˌreɪtɪŋ ˈwɔtər",
+          "phonetic": "thuh PRAH-ses uhv JEN-uh-ray-ting WAW-tur"
+        },
+        "american": {
+          "ipa": "ðə ˈprɑˌsɛs əv ˈdʒɛnəˌreɪtɪŋ ˈwɔtər",
+          "phonetic": "thuh PRAH-ses uhv JEN-uh-ray-ting WAW-tur"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a difficult process",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈdɪfəkəlt ˈprɑˌsɛs",
+          "phonetic": "uh DIF-uh-kult PRAH-ses"
+        },
+        "american": {
+          "ipa": "ə ˈdɪfəkəlt ˈprɑˌsɛs",
+          "phonetic": "uh DIF-uh-kult PRAH-ses"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "water recycling",
       "pronunciation": {
         "british": {
@@ -1478,6 +3686,70 @@
         "american": {
           "ipa": "ˈwɔtər riˈsaɪklɪŋ",
           "phonetic": "WAW-tur ree-SY-kling"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "water recycling for industrial use",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈwɔtər riˈsaɪklɪŋ fɔr ɪnˈdʌstriəl jus",
+          "phonetic": "WAW-tur ree-SY-kling for in-DUS-tree-uhl YOOS"
+        },
+        "american": {
+          "ipa": "ˈwɔtər riˈsaɪklɪŋ fɔr ɪnˈdʌstriəl jus",
+          "phonetic": "WAW-tur ree-SY-kling for in-DUS-tree-uhl YOOS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "little water recycling technology in the home",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlɪtəl ˈwɔtər riˈsaɪklɪŋ tɛkˈnɑlədʒi ɪn ðə hoʊm",
+          "phonetic": "LIT-uhl WAW-tur ree-SY-kling tek-NAH-luh-jee in thuh HOHM"
+        },
+        "american": {
+          "ipa": "ˈlɪtəl ˈwɔtər riˈsaɪklɪŋ tɛkˈnɑlədʒi ɪn ðə hoʊm",
+          "phonetic": "LIT-uhl WAW-tur ree-SY-kling tek-NAH-luh-jee in thuh HOHM"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a modern home",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈmɑdərn hoʊm",
+          "phonetic": "uh MAH-durn HOHM"
+        },
+        "american": {
+          "ipa": "ə ˈmɑdərn hoʊm",
+          "phonetic": "uh MAH-durn HOHM"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a lack of thought about recycling water",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə læk əv θɔt əˈbaʊt riˈsaɪklɪŋ ˈwɔtər",
+          "phonetic": "uh LAK uhv THAWT uh-BOWT ree-SY-kling WAW-tur"
+        },
+        "american": {
+          "ipa": "ə læk əv θɔt əˈbaʊt riˈsaɪklɪŋ ˈwɔtər",
+          "phonetic": "uh LAK uhv THAWT uh-BOWT ree-SY-kling WAW-tur"
         }
       },
       "difficulty": "hard",
@@ -1581,6 +3853,70 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "vocational plans",
+      "pronunciation": {
+        "british": {
+          "ipa": "voʊˈkeɪʃənəl plænz",
+          "phonetic": "voh-KAY-shuh-nuhl PLANZ"
+        },
+        "american": {
+          "ipa": "voʊˈkeɪʃənəl plænz",
+          "phonetic": "voh-KAY-shuh-nuhl PLANZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "driving away things that are negative",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdraɪvɪŋ əˈweɪ θɪŋz ðæt ɑr ˈnɛɡətɪv",
+          "phonetic": "DRY-ving uh-WAY THINGZ that ar NEG-uh-tiv"
+        },
+        "american": {
+          "ipa": "ˈdraɪvɪŋ əˈweɪ θɪŋz ðæt ɑr ˈnɛɡətɪv",
+          "phonetic": "DRY-ving uh-WAY THINGZ that ar NEG-uh-tiv"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the reduction of anxiety",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə rɪˈdʌkʃən əv æŋˈzaɪəti",
+          "phonetic": "thuh rih-DUK-shuhn uhv ang-ZY-uh-tee"
+        },
+        "american": {
+          "ipa": "ðə rɪˈdʌkʃən əv æŋˈzaɪəti",
+          "phonetic": "thuh rih-DUK-shuhn uhv ang-ZY-uh-tee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "intense motivation",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈtɛns ˌmoʊtəˈveɪʃən",
+          "phonetic": "in-TENS moh-tuh-VAY-shuhn"
+        },
+        "american": {
+          "ipa": "ɪnˈtɛns ˌmoʊtəˈveɪʃən",
+          "phonetic": "in-TENS moh-tuh-VAY-shuhn"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "the stock market",
       "pronunciation": {
         "british": {
@@ -1622,6 +3958,86 @@
         "american": {
           "ipa": "wʌt meɪks ə ˈlʌɡʒəri brænd",
           "phonetic": "WUHT MAYKS uh LUG-zhuh-ree BRAND"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "how we distinguish it",
+      "pronunciation": {
+        "british": {
+          "ipa": "haʊ wi dɪˈstɪŋɡwɪʃ ɪt",
+          "phonetic": "HOW wee dih-STING-gwish it"
+        },
+        "american": {
+          "ipa": "haʊ wi dɪˈstɪŋɡwɪʃ ɪt",
+          "phonetic": "HOW wee dih-STING-gwish it"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the standard business response",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈstændərd ˈbɪznəs rɪˈspɑns",
+          "phonetic": "thuh STAN-durd BIZ-nuhs rih-SPAHNS"
+        },
+        "american": {
+          "ipa": "ðə ˈstændərd ˈbɪznəs rɪˈspɑns",
+          "phonetic": "thuh STAN-durd BIZ-nuhs rih-SPAHNS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "exclusivity",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌɛkskluˈsɪvɪti",
+          "phonetic": "eks-kloo-SIV-ih-tee"
+        },
+        "american": {
+          "ipa": "ˌɛkskluˈsɪvɪti",
+          "phonetic": "eks-kloo-SIV-ih-tee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "reality",
+      "pronunciation": {
+        "british": {
+          "ipa": "riˈæləti",
+          "phonetic": "ree-AL-uh-tee"
+        },
+        "american": {
+          "ipa": "riˈæləti",
+          "phonetic": "ree-AL-uh-tee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the dependence on whom you talk to",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə dɪˈpɛndəns ɑn hum ju tɔk tu",
+          "phonetic": "thuh dih-PEN-duhns ahn HOOM yoo TAWK too"
+        },
+        "american": {
+          "ipa": "ðə dɪˈpɛndəns ɑn hum ju tɔk tu",
+          "phonetic": "thuh dih-PEN-duhns ahn HOOM yoo TAWK too"
         }
       },
       "difficulty": "hard",
@@ -1709,6 +4125,134 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "particular risks",
+      "pronunciation": {
+        "british": {
+          "ipa": "pərˈtɪkjələr rɪsks",
+          "phonetic": "pur-TIK-yuh-lur RISKS"
+        },
+        "american": {
+          "ipa": "pərˈtɪkjələr rɪsks",
+          "phonetic": "pur-TIK-yuh-lur RISKS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "an experiment in a high school",
+      "pronunciation": {
+        "british": {
+          "ipa": "æn ɪkˈspɛrəmənt ɪn ə haɪ skul",
+          "phonetic": "an ik-SPER-uh-muhnt in uh HY SKOOL"
+        },
+        "american": {
+          "ipa": "æn ɪkˈspɛrəmənt ɪn ə haɪ skul",
+          "phonetic": "an ik-SPER-uh-muhnt in uh HY SKOOL"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a movie director",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈmuvi dəˈrɛktər",
+          "phonetic": "uh MOO-vee duh-REK-tur"
+        },
+        "american": {
+          "ipa": "ə ˈmuvi dəˈrɛktər",
+          "phonetic": "uh MOO-vee duh-REK-tur"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "their choice of story structure",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɛr tʃɔɪs əv ˈstɔri ˈstrʌktʃər",
+          "phonetic": "thair CHOYS uhv STOR-ee STRUK-chur"
+        },
+        "american": {
+          "ipa": "ðɛr tʃɔɪs əv ˈstɔri ˈstrʌktʃər",
+          "phonetic": "thair CHOYS uhv STOR-ee STRUK-chur"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the involvement of lots of different skills",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði ɪnˈvɑlvmənt əv lɑts əv ˈdɪfərənt skɪlz",
+          "phonetic": "thee in-VAHLV-muhnt uhv LAHTS uhv DIF-ur-uhnt SKILZ"
+        },
+        "american": {
+          "ipa": "ði ɪnˈvɑlvmənt əv lɑts əv ˈdɪfərənt skɪlz",
+          "phonetic": "thee in-VAHLV-muhnt uhv LAHTS uhv DIF-ur-uhnt SKILZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the cool movies they had made",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə kul ˈmuviz ðeɪ hæd meɪd",
+          "phonetic": "thuh KOOL MOO-veez thay had MAYD"
+        },
+        "american": {
+          "ipa": "ðə kul ˈmuviz ðeɪ hæd meɪd",
+          "phonetic": "thuh KOOL MOO-veez thay had MAYD"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the intervention effect",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði ˌɪntərˈvɛnʃən ɪˈfɛkt",
+          "phonetic": "thee in-tur-VEN-shuhn ih-FEKT"
+        },
+        "american": {
+          "ipa": "ði ˌɪntərˈvɛnʃən ɪˈfɛkt",
+          "phonetic": "thee in-tur-VEN-shuhn ih-FEKT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the improvement of their self-regulation and critical thinking skills",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði ɪmˈpruvmənt əv ðɛr sɛlf ˌrɛɡjəˈleɪʃən ænd ˈkrɪtɪkəl ˈθɪŋkɪŋ skɪlz",
+          "phonetic": "thee im-PROOV-muhnt uhv thair SELF reg-yuh-LAY-shuhn and KRIH-tih-kuhl THING-king SKILZ"
+        },
+        "american": {
+          "ipa": "ði ɪmˈpruvmənt əv ðɛr sɛlf ˌrɛɡjəˈleɪʃən ænd ˈkrɪtɪkəl ˈθɪŋkɪŋ skɪlz",
+          "phonetic": "thee im-PROOV-muhnt uhv thair SELF reg-yuh-LAY-shuhn and KRIH-tih-kuhl THING-king SKILZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "advice on paper rejection and publishing",
       "pronunciation": {
         "british": {
@@ -1734,6 +4278,70 @@
         "american": {
           "ipa": "jʌŋ ˈsaɪəntɪsts",
           "phonetic": "YUNG SY-uhn-tists"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the chance of getting a paper published",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə tʃæns əv ˈɡɛtɪŋ ə ˈpeɪpər ˈpʌblɪʃt",
+          "phonetic": "thuh CHANS uhv GET-ing uh PAY-pur PUB-lisht"
+        },
+        "american": {
+          "ipa": "ðə tʃæns əv ˈɡɛtɪŋ ə ˈpeɪpər ˈpʌblɪʃt",
+          "phonetic": "thuh CHANS uhv GET-ing uh PAY-pur PUB-lisht"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a smaller and smaller chance",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈsmɔlər ænd ˈsmɔlər tʃæns",
+          "phonetic": "uh SMAW-lur and SMAW-lur CHANS"
+        },
+        "american": {
+          "ipa": "ə ˈsmɔlər ænd ˈsmɔlər tʃæns",
+          "phonetic": "uh SMAW-lur and SMAW-lur CHANS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the positive impact on the career path",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈpɑzətɪv ˈɪmpækt ɑn ðə kəˈrɪr pæθ",
+          "phonetic": "thuh PAH-zuh-tiv IM-pakt ahn thuh kuh-REER PATH"
+        },
+        "american": {
+          "ipa": "ðə ˈpɑzətɪv ˈɪmpækt ɑn ðə kəˈrɪr pæθ",
+          "phonetic": "thuh PAH-zuh-tiv IM-pakt ahn thuh kuh-REER PATH"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "attracting and engaging young researchers",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈtræktɪŋ ænd ɛnˈɡeɪdʒɪŋ jʌŋ riˈsɜrtʃərz",
+          "phonetic": "uh-TRAK-ting and en-GAY-jing YUNG ree-SUR-churz"
+        },
+        "american": {
+          "ipa": "əˈtræktɪŋ ænd ɛnˈɡeɪdʒɪŋ jʌŋ riˈsɜrtʃərz",
+          "phonetic": "uh-TRAK-ting and en-GAY-jing YUNG ree-SUR-churz"
         }
       },
       "difficulty": "hard",
@@ -1789,6 +4397,118 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "the increasing advancement",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði ɪnˈkrisɪŋ ədˈvænsmənt",
+          "phonetic": "thee in-KREE-sing uhd-VANS-muhnt"
+        },
+        "american": {
+          "ipa": "ði ɪnˈkrisɪŋ ədˈvænsmənt",
+          "phonetic": "thee in-KREE-sing uhd-VANS-muhnt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "face recognition",
+      "pronunciation": {
+        "british": {
+          "ipa": "feɪs ˌrɛkəɡˈnɪʃən",
+          "phonetic": "FAYS rek-uhg-NISH-uhn"
+        },
+        "american": {
+          "ipa": "feɪs ˌrɛkəɡˈnɪʃən",
+          "phonetic": "FAYS rek-uhg-NISH-uhn"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "language processing",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlæŋɡwɪdʒ ˈprɑsɛsɪŋ",
+          "phonetic": "LANG-gwij PRAH-ses-ing"
+        },
+        "american": {
+          "ipa": "ˈlæŋɡwɪdʒ ˈprɑsɛsɪŋ",
+          "phonetic": "LANG-gwij PRAH-ses-ing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "high dependence on machines",
+      "pronunciation": {
+        "british": {
+          "ipa": "haɪ dɪˈpɛndəns ɑn məˈʃinz",
+          "phonetic": "HY dih-PEN-duhns ahn muh-SHEENZ"
+        },
+        "american": {
+          "ipa": "haɪ dɪˈpɛndəns ɑn məˈʃinz",
+          "phonetic": "HY dih-PEN-duhns ahn muh-SHEENZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "making a profit",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmeɪkɪŋ ə ˈprɑfɪt",
+          "phonetic": "MAY-king uh PRAH-fit"
+        },
+        "american": {
+          "ipa": "ˈmeɪkɪŋ ə ˈprɑfɪt",
+          "phonetic": "MAY-king uh PRAH-fit"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the increase in the unemployment rate",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði ˈɪnˌkris ɪn ði ˌʌnɪmˈplɔɪmənt reɪt",
+          "phonetic": "thee IN-krees in thee un-im-PLOY-muhnt RAYT"
+        },
+        "american": {
+          "ipa": "ði ˈɪnˌkris ɪn ði ˌʌnɪmˈplɔɪmənt reɪt",
+          "phonetic": "thee IN-krees in thee un-im-PLOY-muhnt RAYT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the creation of more jobs",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə kriˈeɪʃən əv mɔr dʒɑbz",
+          "phonetic": "thuh kree-AY-shuhn uhv MOR JAHBZ"
+        },
+        "american": {
+          "ipa": "ðə kriˈeɪʃən əv mɔr dʒɑbz",
+          "phonetic": "thuh kree-AY-shuhn uhv MOR JAHBZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "the historical objects in museums",
       "pronunciation": {
         "british": {
@@ -1814,6 +4534,102 @@
         "american": {
           "ipa": "ˌmæθəˈmætɪkəl sɪɡˈnɪfɪkəns",
           "phonetic": "math-uh-MAT-ih-kuhl sig-NIF-ih-kuhns"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the stones discovered in Scotland",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə stoʊnz dɪˈskʌvərd ɪn ˈskɑtlənd",
+          "phonetic": "thuh STOHNZ dih-SKUV-urd in SKAHT-luhnd"
+        },
+        "american": {
+          "ipa": "ðə stoʊnz dɪˈskʌvərd ɪn ˈskɑtlənd",
+          "phonetic": "thuh STOHNZ dih-SKUV-urd in SKAHT-luhnd"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the first examples of humans exploring the concept of symmetry",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə fɜrst ɪɡˈzæmpəlz əv ˈhjumənz ɪkˈsplɔrɪŋ ðə ˈkɑnsɛpt əv ˈsɪmətri",
+          "phonetic": "thuh FURST ig-ZAM-puhlz uhv HYOO-muhnz ik-SPLOR-ing thuh KAHN-sept uhv SIM-uh-tree"
+        },
+        "american": {
+          "ipa": "ðə fɜrst ɪɡˈzæmpəlz əv ˈhjumənz ɪkˈsplɔrɪŋ ðə ˈkɑnsɛpt əv ˈsɪmətri",
+          "phonetic": "thuh FURST ig-ZAM-puhlz uhv HYOO-muhnz ik-SPLOR-ing thuh KAHN-sept uhv SIM-uh-tree"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "what symmetry is in nature",
+      "pronunciation": {
+        "british": {
+          "ipa": "wʌt ˈsɪmətri ɪz ɪn ˈneɪtʃər",
+          "phonetic": "WUHT SIM-uh-tree IZ in NAY-chur"
+        },
+        "american": {
+          "ipa": "wʌt ˈsɪmətri ɪz ɪn ˈneɪtʃər",
+          "phonetic": "WUHT SIM-uh-tree IZ in NAY-chur"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "what these stones are for",
+      "pronunciation": {
+        "british": {
+          "ipa": "wʌt ðiz stoʊnz ɑr fɔr",
+          "phonetic": "WUHT THEEZ STOHNZ AR FOR"
+        },
+        "american": {
+          "ipa": "wʌt ðiz stoʊnz ɑr fɔr",
+          "phonetic": "WUHT THEEZ STOHNZ AR FOR"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "mathematicians",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌmæθəməˈtɪʃənz",
+          "phonetic": "math-uh-muh-TISH-uhnz"
+        },
+        "american": {
+          "ipa": "ˌmæθəməˈtɪʃənz",
+          "phonetic": "math-uh-muh-TISH-uhnz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "mathematical objects for joy and beauty",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌmæθəˈmætɪkəl ˈɑbdʒɛkts fɔr dʒɔɪ ænd ˈbjuti",
+          "phonetic": "math-uh-MAT-ih-kuhl AHB-jekts for JOY and BYOO-tee"
+        },
+        "american": {
+          "ipa": "ˌmæθəˈmætɪkəl ˈɑbdʒɛkts fɔr dʒɔɪ ænd ˈbjuti",
+          "phonetic": "math-uh-MAT-ih-kuhl AHB-jekts for JOY and BYOO-tee"
         }
       },
       "difficulty": "hard",
@@ -1885,6 +4701,118 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "communication system",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəˌmjunəˈkeɪʃən ˈsɪstəm",
+          "phonetic": "kuh-myoo-nuh-KAY-shuhn SIS-tuhm"
+        },
+        "american": {
+          "ipa": "kəˌmjunəˈkeɪʃən ˈsɪstəm",
+          "phonetic": "kuh-myoo-nuh-KAY-shuhn SIS-tuhm"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a good food source",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ɡʊd fud sɔrs",
+          "phonetic": "uh GOOD FOOD SORS"
+        },
+        "american": {
+          "ipa": "ə ɡʊd fud sɔrs",
+          "phonetic": "uh GOOD FOOD SORS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "telling other bees",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtɛlɪŋ ˈʌðər biz",
+          "phonetic": "TEL-ing UH-thur BEEZ"
+        },
+        "american": {
+          "ipa": "ˈtɛlɪŋ ˈʌðər biz",
+          "phonetic": "TEL-ing UH-thur BEEZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a behavior study",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə bɪˈheɪvjər ˈstʌdi",
+          "phonetic": "uh bih-HAYV-yur STUD-ee"
+        },
+        "american": {
+          "ipa": "ə bɪˈheɪvjər ˈstʌdi",
+          "phonetic": "uh bih-HAYV-yur STUD-ee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "bees' dancing behaviors",
+      "pronunciation": {
+        "british": {
+          "ipa": "biz ˈdænsɪŋ bɪˈheɪvjərz",
+          "phonetic": "BEEZ DAN-sing bih-HAYV-yurz"
+        },
+        "american": {
+          "ipa": "biz ˈdænsɪŋ bɪˈheɪvjərz",
+          "phonetic": "BEEZ DAN-sing bih-HAYV-yurz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the dance and the sounds",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə dæns ænd ðə saʊndz",
+          "phonetic": "thuh DANS and thuh SOWNDZ"
+        },
+        "american": {
+          "ipa": "ðə dæns ænd ðə saʊndz",
+          "phonetic": "thuh DANS and thuh SOWNDZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "different flowers and the environment",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdɪfərənt ˈflaʊərz ænd ði ɪnˈvaɪrənmənt",
+          "phonetic": "DIF-ur-uhnt FLOW-urz and thee in-VY-ruhn-muhnt"
+        },
+        "american": {
+          "ipa": "ˈdɪfərənt ˈflaʊərz ænd ði ɪnˈvaɪrənmənt",
+          "phonetic": "DIF-ur-uhnt FLOW-urz and thee in-VY-ruhn-muhnt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "Darwin's The origin of Species",
       "pronunciation": {
         "british": {
@@ -1926,6 +4854,150 @@
         "american": {
           "ipa": "ˈmɑdərn ˈpoʊətri",
           "phonetic": "MAH-durn POH-uh-tree"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the literature of a period",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈlɪtərəˌtʃʊr əv ə ˈpɪriəd",
+          "phonetic": "thuh LIT-ur-uh-chur uhv uh PEER-ee-uhd"
+        },
+        "american": {
+          "ipa": "ðə ˈlɪtərəˌtʃʊr əv ə ˈpɪriəd",
+          "phonetic": "thuh LIT-ur-uh-chur uhv uh PEER-ee-uhd"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "several poets",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɛvrəl ˈpoʊəts",
+          "phonetic": "SEV-ruhl POH-uhts"
+        },
+        "american": {
+          "ipa": "ˈsɛvrəl ˈpoʊəts",
+          "phonetic": "SEV-ruhl POH-uhts"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "close reading",
+      "pronunciation": {
+        "british": {
+          "ipa": "kloʊs ˈridɪŋ",
+          "phonetic": "KLOHS REE-ding"
+        },
+        "american": {
+          "ipa": "kloʊs ˈridɪŋ",
+          "phonetic": "KLOHS REE-ding"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a sense of modernism",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə sɛns əv ˈmɑdərˌnɪzəm",
+          "phonetic": "uh SENS uhv MAH-dur-niz-uhm"
+        },
+        "american": {
+          "ipa": "ə sɛns əv ˈmɑdərˌnɪzəm",
+          "phonetic": "uh SENS uhv MAH-dur-niz-uhm"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "one of the richest fields",
+      "pronunciation": {
+        "british": {
+          "ipa": "wʌn əv ðə ˈrɪtʃəst fildz",
+          "phonetic": "WUN uhv thuh RICH-uhst FEELDZ"
+        },
+        "american": {
+          "ipa": "wʌn əv ðə ˈrɪtʃəst fildz",
+          "phonetic": "WUN uhv thuh RICH-uhst FEELDZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "English language writing",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪŋɡlɪʃ ˈlæŋɡwɪdʒ ˈraɪtɪŋ",
+          "phonetic": "ING-glish LANG-gwij RY-ting"
+        },
+        "american": {
+          "ipa": "ˈɪŋɡlɪʃ ˈlæŋɡwɪdʒ ˈraɪtɪŋ",
+          "phonetic": "ING-glish LANG-gwij RY-ting"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "enjoying poems",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɛnˈdʒɔɪɪŋ ˈpoʊəmz",
+          "phonetic": "en-JOY-ing POH-uhmz"
+        },
+        "american": {
+          "ipa": "ɛnˈdʒɔɪɪŋ ˈpoʊəmz",
+          "phonetic": "en-JOY-ing POH-uhmz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "being puzzled by poems",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbiɪŋ ˈpʌzəld baɪ ˈpoʊəmz",
+          "phonetic": "BEE-ing PUZ-uhld by POH-uhmz"
+        },
+        "american": {
+          "ipa": "ˈbiɪŋ ˈpʌzəld baɪ ˈpoʊəmz",
+          "phonetic": "BEE-ing PUZ-uhld by POH-uhmz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "learning from poems",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlɜrnɪŋ frʌm ˈpoʊəmz",
+          "phonetic": "LUR-ning fruhm POH-uhmz"
+        },
+        "american": {
+          "ipa": "ˈlɜrnɪŋ frʌm ˈpoʊəmz",
+          "phonetic": "LUR-ning fruhm POH-uhmz"
         }
       },
       "difficulty": "hard",
@@ -2221,6 +5293,54 @@
       "source": "pte-sst-complete"
     },
     {
+      "english": "the most comparable words",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə moʊst kəmˈpærəbəl wɜrdz",
+          "phonetic": "thuh MOHST kuhm-PAIR-uh-buhl WURDZ"
+        },
+        "american": {
+          "ipa": "ðə moʊst kəmˈpærəbəl wɜrdz",
+          "phonetic": "thuh MOHST kuhm-PAIR-uh-buhl WURDZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the most universal notions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə moʊst ˌjunəˈvɜrsəl ˈnoʊʃənz",
+          "phonetic": "thuh MOHST yoo-nuh-VUR-suhl NOH-shuhnz"
+        },
+        "american": {
+          "ipa": "ðə moʊst ˌjunəˈvɜrsəl ˈnoʊʃənz",
+          "phonetic": "thuh MOHST yoo-nuh-VUR-suhl NOH-shuhnz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "words with similar sounds",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɜrdz wɪð ˈsɪmələr saʊndz",
+          "phonetic": "WURDZ with SIM-uh-lur SOWNDZ"
+        },
+        "american": {
+          "ipa": "wɜrdz wɪð ˈsɪmələr saʊndz",
+          "phonetic": "WURDZ with SIM-uh-lur SOWNDZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
       "english": "the United States",
       "pronunciation": {
         "british": {
@@ -2246,6 +5366,150 @@
         "american": {
           "ipa": "ðə ˈbɪɡəst fud weɪst ˈkʌntri",
           "phonetic": "thuh BIG-uhst FOOD WAYST KUN-tree"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a successful entrepreneur",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə səkˈsɛsfəl ˌɑntrəprəˈnɜr",
+          "phonetic": "uh suhk-SES-fuhl ahn-truh-pruh-NUR"
+        },
+        "american": {
+          "ipa": "ə səkˈsɛsfəl ˌɑntrəprəˈnɜr",
+          "phonetic": "uh suhk-SES-fuhl ahn-truh-pruh-NUR"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "good ideas",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɡʊd aɪˈdiəz",
+          "phonetic": "GOOD eye-DEE-uhz"
+        },
+        "american": {
+          "ipa": "ɡʊd aɪˈdiəz",
+          "phonetic": "GOOD eye-DEE-uhz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a great idea",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ɡreɪt aɪˈdiə",
+          "phonetic": "uh GRAYT eye-DEE-uh"
+        },
+        "american": {
+          "ipa": "ə ɡreɪt aɪˈdiə",
+          "phonetic": "uh GRAYT eye-DEE-uh"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the definition",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˌdɛfəˈnɪʃən",
+          "phonetic": "thuh def-uh-NISH-uhn"
+        },
+        "american": {
+          "ipa": "ðə ˌdɛfəˈnɪʃən",
+          "phonetic": "thuh def-uh-NISH-uhn"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "varying definitions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈvɛriɪŋ ˌdɛfəˈnɪʃənz",
+          "phonetic": "VAIR-ee-ing def-uh-NISH-uhnz"
+        },
+        "american": {
+          "ipa": "ˈvɛriɪŋ ˌdɛfəˈnɪʃənz",
+          "phonetic": "VAIR-ee-ing def-uh-NISH-uhnz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "novel and unique ideas",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈnɑvəl ænd juˈnik aɪˈdiəz",
+          "phonetic": "NAH-vuhl and yoo-NEEK eye-DEE-uhz"
+        },
+        "american": {
+          "ipa": "ˈnɑvəl ænd juˈnik aɪˈdiəz",
+          "phonetic": "NAH-vuhl and yoo-NEEK eye-DEE-uhz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "no one having thought about it before",
+      "pronunciation": {
+        "british": {
+          "ipa": "noʊ wʌn ˈhævɪŋ θɔt əˈbaʊt ɪt bɪˈfɔr",
+          "phonetic": "NOH WUN HAV-ing THAWT uh-BOWT it bih-FOR"
+        },
+        "american": {
+          "ipa": "noʊ wʌn ˈhævɪŋ θɔt əˈbaʊt ɪt bɪˈfɔr",
+          "phonetic": "NOH WUN HAV-ing THAWT uh-BOWT it bih-FOR"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "productive ideas",
+      "pronunciation": {
+        "british": {
+          "ipa": "prəˈdʌktɪv aɪˈdiəz",
+          "phonetic": "pruh-DUK-tiv eye-DEE-uhz"
+        },
+        "american": {
+          "ipa": "prəˈdʌktɪv aɪˈdiəz",
+          "phonetic": "pruh-DUK-tiv eye-DEE-uhz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "transformative ideas",
+      "pronunciation": {
+        "british": {
+          "ipa": "trænsˈfɔrmətɪv aɪˈdiəz",
+          "phonetic": "trans-FOR-muh-tiv eye-DEE-uhz"
+        },
+        "american": {
+          "ipa": "trænsˈfɔrmətɪv aɪˈdiəz",
+          "phonetic": "trans-FOR-muh-tiv eye-DEE-uhz"
         }
       },
       "difficulty": "hard",

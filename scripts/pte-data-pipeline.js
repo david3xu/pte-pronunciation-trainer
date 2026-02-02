@@ -424,6 +424,7 @@ class PTEDataPipeline {
             'pte-di-difficult-words',
             'pte-di-easy-phrases',
             'pte-essay-b1-examples-vocabulary',
+            'pte-essay-b1-examples-vocabulary-24',
             'pte-essay-90plus-filled-terms',
             'pte-essay-topic-paraphrase-vocabulary'
           ];

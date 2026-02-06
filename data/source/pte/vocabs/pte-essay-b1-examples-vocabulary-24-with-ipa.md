@@ -13,25 +13,25 @@
 
 
 1. **laws changing behavior** | /lɔːz ˈtʃeɪndʒɪŋ bɪˈheɪvjə/ — sounds like **LAWZ CHAYN-jing bih-HAY-vyur**
-2. **citizens** | /ˈsɪtɪzənz/ — sounds like **SIT-ih-zunz**
-3. **legal measures changing behavior** | /ˈliːɡəl ˈmeʒəz ˈtʃeɪndʒɪŋ bɪˈheɪvjə/ — sounds like **LEE-gul MEZH-urz CHAYN-jing bih-HAY-vyur**
-4. **public safety and social order** | /ˈpʌblɪk ˈseɪfti ənd ˈsəʊʃəl ˈɔːdə/ — sounds like **PUB-lik SAYF-tee und SOH-shul OR-dur**
-5. **this approach** | /ðɪs əˈprəʊtʃ/ — sounds like **THIS uh-PROHCH**
-6. **strong enforcement and clear penalties** | /strɒŋ ɪnˈfɔːsmənt ənd klɪə ˈpenəltiz/ — sounds like **STRONG in-FORS-ment und KLEER PEN-ul-teez**
-7. **public awareness and lifestyle changes** | /ˈpʌblɪk əˈweənəs ənd ˈlaɪfstaɪl ˈtʃeɪndʒɪz/ — sounds like **PUB-lik uh-WAIR-nus und LYF-styl CHAYN-jiz**
-8. **legal research** | /ˈliːɡəl rɪˈsɜːtʃ/ — sounds like **LEE-gul rih-SURCH**
-9. **reduced crime and better compliance** | /rɪˈdjuːst kraɪm ənd ˈbetə kəmˈplaɪəns/ — sounds like **rih-DYOOST KRYM und BET-ur kum-PLY-uns**
+2. **reason why legal measures can change behavior** | /ˈriːzn waɪ ˈliːɡəl ˈmɛʒəz kæn tʃeɪndʒ bɪˈheɪvjə/ — sounds like **REE-zun WY LEE-gul MEZH-urz kan CHAYNJ bih-HAY-vyur**
+3. **public safety and social order** | /ˈpʌblɪk ˈseɪfti ənd ˈsəʊʃəl ˈɔːdə/ — sounds like **PUB-lik SAYF-tee und SOH-shul OR-dur**
+4. **this approach** | /ðɪs əˈprəʊtʃ/ — sounds like **THIS uh-PROHCH**
+5. **public awareness and lifestyle changes** | /ˈpʌblɪk əˈwɛənɪs ənd ˈlaɪfstaɪl ˈtʃeɪndʒɪz/ — sounds like **PUB-lik uh-WAIR-nis und LYF-styl CHAYN-jiz**
+6. **reduced crime and better compliance** | /rɪˈdjuːst kraɪm ənd ˈbɛtə kəmˈplaɪəns/ — sounds like **rih-DYOOST KRYM und BET-ur kum-PLY-uns**
+7. **legal research** | /ˈliːɡəl rɪˈsɜːtʃ/ — sounds like **LEE-gul rih-SURCH**
+8. **citizens** | /ˈsɪtɪznz/ — sounds like **SIT-ih-zunz**
+9. **conduct improvements and social responsibility** | /ˈkɒndʌkt ɪmˈpruːvmənts ənd ˈsəʊʃəl rɪˌspɒnsɪˈbɪlɪti/ — sounds like **KON-dukt im-PROOV-munts und SOH-shul rih-spon-suh-BIL-ih-tee**
 10. **traffic laws** | /ˈtræfɪk lɔːz/ — sounds like **TRAF-ik LAWZ**
 11. **driving habits** | /ˈdraɪvɪŋ ˈhæbɪts/ — sounds like **DRY-ving HAB-its**
 12. **my community** | /maɪ kəˈmjuːnɪti/ — sounds like **MY kuh-MYOO-nih-tee**
-13. **legislation changing behavior** | /ˌledʒɪsˈleɪʃən ˈtʃeɪndʒɪŋ bɪˈheɪvjə/ — sounds like **lej-is-LAY-shun CHAYN-jing bih-HAY-vyur**
-14. **these measures** | /ðiːz ˈmeʒəz/ — sounds like **THEEZ MEZH-urz**
-15. **cultural resistance and individual opposition** | /ˈkʌltʃərəl rɪˈzɪstəns ənd ˌɪndɪˈvɪdʒuəl ˌɒpəˈzɪʃən/ — sounds like **KUL-chur-ul rih-ZIS-tuns und in-dih-VIJ-oo-ul op-uh-ZISH-un**
-16. **limited effectiveness and enforcement difficulties** | /ˈlɪmɪtɪd ɪˈfektɪvnəs ənd ɪnˈfɔːsmənt ˈdɪfɪkəltiz/ — sounds like **LIM-ih-tid ih-FEK-tiv-nus und in-FORS-ment DIF-ih-kul-teez**
+13. **legislation changing behavior** | /ˌlɛdʒɪsˈleɪʃən ˈtʃeɪndʒɪŋ bɪˈheɪvjə/ — sounds like **lej-is-LAY-shun CHAYN-jing bih-HAY-vyur**
+14. **these measures** | /ðiːz ˈmɛʒəz/ — sounds like **THEEZ MEZH-urz**
+15. **cultural resistance and individual opposition** | /ˈkʌltʃərəl rɪˈzɪstəns ənd ˌɪndɪˈvɪdʒʊəl ˌɒpəˈzɪʃən/ — sounds like **KUL-chuh-rul rih-ZIS-tuns und in-dih-VIJ-oo-ul op-uh-ZISH-un**
+16. **limited effectiveness and enforcement difficulties** | /ˈlɪmɪtɪd ɪˈfɛktɪvnɪs ənd ɪnˈfɔːsmənt ˈdɪfɪkəltiz/ — sounds like **LIM-ih-tid ih-FEK-tiv-nis und in-FORS-ment DIF-ih-kul-teez**
 17. **social scientists** | /ˈsəʊʃəl ˈsaɪəntɪsts/ — sounds like **SOH-shul SY-un-tists**
-18. **governments** | /ˈɡʌvənmənts/ — sounds like **GUV-urn-ments**
-19. **high implementation costs** | /haɪ ˌɪmplɪmenˈteɪʃən kɒsts/ — sounds like **HY im-plih-men-TAY-shun KOSTS**
-20. **governments and policymakers** | /ˈɡʌvənmənts ənd ˈpɒləsiˌmeɪkəz/ — sounds like **GUV-urn-ments und POL-uh-see-may-kurz**
+18. **governments** | /ˈɡʌvnmənts/ — sounds like **GUV-urn-ments**
+19. **high implementation costs** | /haɪ ˌɪmplɪmɛnˈteɪʃən kɒsts/ — sounds like **HY im-plih-men-TAY-shun KOSTS**
+20. **governments and policymakers** | /ˈɡʌvnmənts ənd ˈpɒlɪsiˌmeɪkəz/ — sounds like **GUV-urn-ments und POL-ih-see-may-kurz**
 
 ---
 

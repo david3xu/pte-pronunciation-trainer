@@ -1,7 +1,7 @@
 # PTE Essay B1 Examples - Fill-in Terms Vocabulary
 
 **Purpose:** ALL fill-in terms from Template B1 Essay Examples collection
-**Total Terms:** 723 (631 unique after deduplication)
+**Total Terms:** 722 (630 unique after deduplication)
 **Format:** By example order with IPA pronunciation
 **Source:** essay-examples-template-b1.md
 
@@ -358,25 +358,25 @@
 ## Example 13: Laws and Human Behavior
 
 249. **laws changing behavior** | /lɔːz ˈtʃeɪndʒɪŋ bɪˈheɪvjə/ — sounds like **LAWZ CHAYN-jing bih-HAY-vyur**
-250. **citizens** | /ˈsɪtɪzənz/ — sounds like **SIT-ih-zunz**
-251. **legal measures changing behavior** | /ˈliːɡəl ˈmeʒəz ˈtʃeɪndʒɪŋ bɪˈheɪvjə/ — sounds like **LEE-gul MEZH-urz CHAYN-jing bih-HAY-vyur**
-252. **public safety and social order** | /ˈpʌblɪk ˈseɪfti ənd ˈsəʊʃəl ˈɔːdə/ — sounds like **PUB-lik SAYF-tee und SOH-shul OR-dur**
-253. **this approach** | /ðɪs əˈprəʊtʃ/ — sounds like **THIS uh-PROHCH**
-254. **strong enforcement and clear penalties** | /strɒŋ ɪnˈfɔːsmənt ənd klɪə ˈpenəltiz/ — sounds like **STRONG in-FORS-ment und KLEER PEN-ul-teez**
-255. **public awareness and lifestyle changes** | /ˈpʌblɪk əˈweənəs ənd ˈlaɪfstaɪl ˈtʃeɪndʒɪz/ — sounds like **PUB-lik uh-WAIR-nus und LYF-styl CHAYN-jiz**
-256. **legal research** | /ˈliːɡəl rɪˈsɜːtʃ/ — sounds like **LEE-gul rih-SURCH**
-257. **reduced crime and better compliance** | /rɪˈdjuːst kraɪm ənd ˈbetə kəmˈplaɪəns/ — sounds like **rih-DYOOST KRYM und BET-ur kum-PLY-uns**
+250. **reason why legal measures can change behavior** | /ˈriːzn waɪ ˈliːɡəl ˈmɛʒəz kæn tʃeɪndʒ bɪˈheɪvjə/ — sounds like **REE-zun WY LEE-gul MEZH-urz kan CHAYNJ bih-HAY-vyur**
+251. **public safety and social order** | /ˈpʌblɪk ˈseɪfti ənd ˈsəʊʃəl ˈɔːdə/ — sounds like **PUB-lik SAYF-tee und SOH-shul OR-dur**
+252. **this approach** | /ðɪs əˈprəʊtʃ/ — sounds like **THIS uh-PROHCH**
+253. **public awareness and lifestyle changes** | /ˈpʌblɪk əˈwɛənɪs ənd ˈlaɪfstaɪl ˈtʃeɪndʒɪz/ — sounds like **PUB-lik uh-WAIR-nis und LYF-styl CHAYN-jiz**
+254. **reduced crime and better compliance** | /rɪˈdjuːst kraɪm ənd ˈbɛtə kəmˈplaɪəns/ — sounds like **rih-DYOOST KRYM und BET-ur kum-PLY-uns**
+255. **legal research** | /ˈliːɡəl rɪˈsɜːtʃ/ — sounds like **LEE-gul rih-SURCH**
+256. **citizens** | /ˈsɪtɪznz/ — sounds like **SIT-ih-zunz**
+257. **conduct improvements and social responsibility** | /ˈkɒndʌkt ɪmˈpruːvmənts ənd ˈsəʊʃəl rɪˌspɒnsɪˈbɪlɪti/ — sounds like **KON-dukt im-PROOV-munts und SOH-shul rih-spon-suh-BIL-ih-tee**
 258. **traffic laws** | /ˈtræfɪk lɔːz/ — sounds like **TRAF-ik LAWZ**
 259. **driving habits** | /ˈdraɪvɪŋ ˈhæbɪts/ — sounds like **DRY-ving HAB-its**
 260. **my community** | /maɪ kəˈmjuːnɪti/ — sounds like **MY kuh-MYOO-nih-tee**
-261. **legislation changing behavior** | /ˌledʒɪsˈleɪʃən ˈtʃeɪndʒɪŋ bɪˈheɪvjə/ — sounds like **lej-is-LAY-shun CHAYN-jing bih-HAY-vyur**
-262. **these measures** | /ðiːz ˈmeʒəz/ — sounds like **THEEZ MEZH-urz**
-263. **cultural resistance and individual opposition** | /ˈkʌltʃərəl rɪˈzɪstəns ənd ˌɪndɪˈvɪdʒuəl ˌɒpəˈzɪʃən/ — sounds like **KUL-chur-ul rih-ZIS-tuns und in-dih-VIJ-oo-ul op-uh-ZISH-un**
-264. **limited effectiveness and enforcement difficulties** | /ˈlɪmɪtɪd ɪˈfektɪvnəs ənd ɪnˈfɔːsmənt ˈdɪfɪkəltiz/ — sounds like **LIM-ih-tid ih-FEK-tiv-nus und in-FORS-ment DIF-ih-kul-teez**
+261. **legislation changing behavior** | /ˌlɛdʒɪsˈleɪʃən ˈtʃeɪndʒɪŋ bɪˈheɪvjə/ — sounds like **lej-is-LAY-shun CHAYN-jing bih-HAY-vyur**
+262. **these measures** | /ðiːz ˈmɛʒəz/ — sounds like **THEEZ MEZH-urz**
+263. **cultural resistance and individual opposition** | /ˈkʌltʃərəl rɪˈzɪstəns ənd ˌɪndɪˈvɪdʒʊəl ˌɒpəˈzɪʃən/ — sounds like **KUL-chuh-rul rih-ZIS-tuns und in-dih-VIJ-oo-ul op-uh-ZISH-un**
+264. **limited effectiveness and enforcement difficulties** | /ˈlɪmɪtɪd ɪˈfɛktɪvnɪs ənd ɪnˈfɔːsmənt ˈdɪfɪkəltiz/ — sounds like **LIM-ih-tid ih-FEK-tiv-nis und in-FORS-ment DIF-ih-kul-teez**
 265. **social scientists** | /ˈsəʊʃəl ˈsaɪəntɪsts/ — sounds like **SOH-shul SY-un-tists**
-266. **governments** | /ˈɡʌvənmənts/ — sounds like **GUV-urn-ments**
-267. **high implementation costs** | /haɪ ˌɪmplɪmenˈteɪʃən kɒsts/ — sounds like **HY im-plih-men-TAY-shun KOSTS**
-268. **governments and policymakers** | /ˈɡʌvənmənts ənd ˈpɒləsiˌmeɪkəz/ — sounds like **GUV-urn-ments und POL-uh-see-may-kurz**
+266. **governments** | /ˈɡʌvnmənts/ — sounds like **GUV-urn-ments**
+267. **high implementation costs** | /haɪ ˌɪmplɪmɛnˈteɪʃən kɒsts/ — sounds like **HY im-plih-men-TAY-shun KOSTS**
+268. **governments and policymakers** | /ˈɡʌvnmənts ənd ˈpɒlɪsiˌmeɪkəz/ — sounds like **GUV-urn-ments und POL-ih-see-may-kurz**
 
 ---
 

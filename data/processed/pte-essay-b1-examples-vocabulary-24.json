@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-02-02T22:54:34.337Z",
+    "generated": "2026-02-06T07:10:34.156Z",
     "totalTerms": 465,
     "source": "pte-essay-b1-examples-vocabulary-24",
     "description": "Auto-discovered vocabulary book: pte-essay-b1-examples-vocabulary-24",
@@ -29,31 +29,15 @@
       "source": "pte-essay-b1-examples-vocabulary-24"
     },
     {
-      "english": "**citizens**",
+      "english": "**reason why legal measures can change behavior**",
       "pronunciation": {
         "british": {
-          "ipa": "ˈsɪtɪzənz",
-          "phonetic": "SIT-ih-zunz"
+          "ipa": "ˈriːzn waɪ ˈliːɡəl ˈmɛʒəz kæn tʃeɪndʒ bɪˈheɪvjə",
+          "phonetic": "REE-zun WY LEE-gul MEZH-urz kan CHAYNJ bih-HAY-vyur"
         },
         "american": {
-          "ipa": "ˈsɪtɪzənz",
-          "phonetic": "SIT-ih-zunz"
-        }
-      },
-      "difficulty": "hard",
-      "category": "pte-essay-b1-examples-vocabulary-24",
-      "source": "pte-essay-b1-examples-vocabulary-24"
-    },
-    {
-      "english": "**legal measures changing behavior**",
-      "pronunciation": {
-        "british": {
-          "ipa": "ˈliːɡəl ˈmeʒəz ˈtʃeɪndʒɪŋ bɪˈheɪvjə",
-          "phonetic": "LEE-gul MEZH-urz CHAYN-jing bih-HAY-vyur"
-        },
-        "american": {
-          "ipa": "ˈliːɡəl ˈmeʒəz ˈtʃeɪndʒɪŋ bɪˈheɪvjə",
-          "phonetic": "LEE-gul MEZH-urz CHAYN-jing bih-HAY-vyur"
+          "ipa": "ˈriːzn waɪ ˈliːɡəl ˈmɛʒəz kæn tʃeɪndʒ bɪˈheɪvjə",
+          "phonetic": "REE-zun WY LEE-gul MEZH-urz kan CHAYNJ bih-HAY-vyur"
         }
       },
       "difficulty": "hard",
@@ -93,15 +77,15 @@
       "source": "pte-essay-b1-examples-vocabulary-24"
     },
     {
-      "english": "**strong enforcement and clear penalties**",
+      "english": "**public awareness and lifestyle changes**",
       "pronunciation": {
         "british": {
-          "ipa": "strɒŋ ɪnˈfɔːsmənt ənd klɪə ˈpenəltiz",
-          "phonetic": "STRONG in-FORS-ment und KLEER PEN-ul-teez"
+          "ipa": "ˈpʌblɪk əˈwɛənɪs ənd ˈlaɪfstaɪl ˈtʃeɪndʒɪz",
+          "phonetic": "PUB-lik uh-WAIR-nis und LYF-styl CHAYN-jiz"
         },
         "american": {
-          "ipa": "strɒŋ ɪnˈfɔːsmənt ənd klɪə ˈpenəltiz",
-          "phonetic": "STRONG in-FORS-ment und KLEER PEN-ul-teez"
+          "ipa": "ˈpʌblɪk əˈwɛənɪs ənd ˈlaɪfstaɪl ˈtʃeɪndʒɪz",
+          "phonetic": "PUB-lik uh-WAIR-nis und LYF-styl CHAYN-jiz"
         }
       },
       "difficulty": "hard",
@@ -109,15 +93,15 @@
       "source": "pte-essay-b1-examples-vocabulary-24"
     },
     {
-      "english": "**public awareness and lifestyle changes**",
+      "english": "**reduced crime and better compliance**",
       "pronunciation": {
         "british": {
-          "ipa": "ˈpʌblɪk əˈweənəs ənd ˈlaɪfstaɪl ˈtʃeɪndʒɪz",
-          "phonetic": "PUB-lik uh-WAIR-nus und LYF-styl CHAYN-jiz"
+          "ipa": "rɪˈdjuːst kraɪm ənd ˈbɛtə kəmˈplaɪəns",
+          "phonetic": "rih-DYOOST KRYM und BET-ur kum-PLY-uns"
         },
         "american": {
-          "ipa": "ˈpʌblɪk əˈweənəs ənd ˈlaɪfstaɪl ˈtʃeɪndʒɪz",
-          "phonetic": "PUB-lik uh-WAIR-nus und LYF-styl CHAYN-jiz"
+          "ipa": "rɪˈdjuːst kraɪm ənd ˈbɛtə kəmˈplaɪəns",
+          "phonetic": "rih-DYOOST KRYM und BET-ur kum-PLY-uns"
         }
       },
       "difficulty": "hard",
@@ -141,15 +125,31 @@
       "source": "pte-essay-b1-examples-vocabulary-24"
     },
     {
-      "english": "**reduced crime and better compliance**",
+      "english": "**citizens**",
       "pronunciation": {
         "british": {
-          "ipa": "rɪˈdjuːst kraɪm ənd ˈbetə kəmˈplaɪəns",
-          "phonetic": "rih-DYOOST KRYM und BET-ur kum-PLY-uns"
+          "ipa": "ˈsɪtɪznz",
+          "phonetic": "SIT-ih-zunz"
         },
         "american": {
-          "ipa": "rɪˈdjuːst kraɪm ənd ˈbetə kəmˈplaɪəns",
-          "phonetic": "rih-DYOOST KRYM und BET-ur kum-PLY-uns"
+          "ipa": "ˈsɪtɪznz",
+          "phonetic": "SIT-ih-zunz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-essay-b1-examples-vocabulary-24",
+      "source": "pte-essay-b1-examples-vocabulary-24"
+    },
+    {
+      "english": "**conduct improvements and social responsibility**",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkɒndʌkt ɪmˈpruːvmənts ənd ˈsəʊʃəl rɪˌspɒnsɪˈbɪlɪti",
+          "phonetic": "KON-dukt im-PROOV-munts und SOH-shul rih-spon-suh-BIL-ih-tee"
+        },
+        "american": {
+          "ipa": "ˈkɒndʌkt ɪmˈpruːvmənts ənd ˈsəʊʃəl rɪˌspɒnsɪˈbɪlɪti",
+          "phonetic": "KON-dukt im-PROOV-munts und SOH-shul rih-spon-suh-BIL-ih-tee"
         }
       },
       "difficulty": "hard",
@@ -208,11 +208,11 @@
       "english": "**legislation changing behavior**",
       "pronunciation": {
         "british": {
-          "ipa": "ˌledʒɪsˈleɪʃən ˈtʃeɪndʒɪŋ bɪˈheɪvjə",
+          "ipa": "ˌlɛdʒɪsˈleɪʃən ˈtʃeɪndʒɪŋ bɪˈheɪvjə",
           "phonetic": "lej-is-LAY-shun CHAYN-jing bih-HAY-vyur"
         },
         "american": {
-          "ipa": "ˌledʒɪsˈleɪʃən ˈtʃeɪndʒɪŋ bɪˈheɪvjə",
+          "ipa": "ˌlɛdʒɪsˈleɪʃən ˈtʃeɪndʒɪŋ bɪˈheɪvjə",
           "phonetic": "lej-is-LAY-shun CHAYN-jing bih-HAY-vyur"
         }
       },
@@ -224,11 +224,11 @@
       "english": "**these measures**",
       "pronunciation": {
         "british": {
-          "ipa": "ðiːz ˈmeʒəz",
+          "ipa": "ðiːz ˈmɛʒəz",
           "phonetic": "THEEZ MEZH-urz"
         },
         "american": {
-          "ipa": "ðiːz ˈmeʒəz",
+          "ipa": "ðiːz ˈmɛʒəz",
           "phonetic": "THEEZ MEZH-urz"
         }
       },
@@ -240,12 +240,12 @@
       "english": "**cultural resistance and individual opposition**",
       "pronunciation": {
         "british": {
-          "ipa": "ˈkʌltʃərəl rɪˈzɪstəns ənd ˌɪndɪˈvɪdʒuəl ˌɒpəˈzɪʃən",
-          "phonetic": "KUL-chur-ul rih-ZIS-tuns und in-dih-VIJ-oo-ul op-uh-ZISH-un"
+          "ipa": "ˈkʌltʃərəl rɪˈzɪstəns ənd ˌɪndɪˈvɪdʒʊəl ˌɒpəˈzɪʃən",
+          "phonetic": "KUL-chuh-rul rih-ZIS-tuns und in-dih-VIJ-oo-ul op-uh-ZISH-un"
         },
         "american": {
-          "ipa": "ˈkʌltʃərəl rɪˈzɪstəns ənd ˌɪndɪˈvɪdʒuəl ˌɒpəˈzɪʃən",
-          "phonetic": "KUL-chur-ul rih-ZIS-tuns und in-dih-VIJ-oo-ul op-uh-ZISH-un"
+          "ipa": "ˈkʌltʃərəl rɪˈzɪstəns ənd ˌɪndɪˈvɪdʒʊəl ˌɒpəˈzɪʃən",
+          "phonetic": "KUL-chuh-rul rih-ZIS-tuns und in-dih-VIJ-oo-ul op-uh-ZISH-un"
         }
       },
       "difficulty": "hard",
@@ -256,12 +256,12 @@
       "english": "**limited effectiveness and enforcement difficulties**",
       "pronunciation": {
         "british": {
-          "ipa": "ˈlɪmɪtɪd ɪˈfektɪvnəs ənd ɪnˈfɔːsmənt ˈdɪfɪkəltiz",
-          "phonetic": "LIM-ih-tid ih-FEK-tiv-nus und in-FORS-ment DIF-ih-kul-teez"
+          "ipa": "ˈlɪmɪtɪd ɪˈfɛktɪvnɪs ənd ɪnˈfɔːsmənt ˈdɪfɪkəltiz",
+          "phonetic": "LIM-ih-tid ih-FEK-tiv-nis und in-FORS-ment DIF-ih-kul-teez"
         },
         "american": {
-          "ipa": "ˈlɪmɪtɪd ɪˈfektɪvnəs ənd ɪnˈfɔːsmənt ˈdɪfɪkəltiz",
-          "phonetic": "LIM-ih-tid ih-FEK-tiv-nus und in-FORS-ment DIF-ih-kul-teez"
+          "ipa": "ˈlɪmɪtɪd ɪˈfɛktɪvnɪs ənd ɪnˈfɔːsmənt ˈdɪfɪkəltiz",
+          "phonetic": "LIM-ih-tid ih-FEK-tiv-nis und in-FORS-ment DIF-ih-kul-teez"
         }
       },
       "difficulty": "hard",
@@ -288,11 +288,11 @@
       "english": "**governments**",
       "pronunciation": {
         "british": {
-          "ipa": "ˈɡʌvənmənts",
+          "ipa": "ˈɡʌvnmənts",
           "phonetic": "GUV-urn-ments"
         },
         "american": {
-          "ipa": "ˈɡʌvənmənts",
+          "ipa": "ˈɡʌvnmənts",
           "phonetic": "GUV-urn-ments"
         }
       },
@@ -304,11 +304,11 @@
       "english": "**high implementation costs**",
       "pronunciation": {
         "british": {
-          "ipa": "haɪ ˌɪmplɪmenˈteɪʃən kɒsts",
+          "ipa": "haɪ ˌɪmplɪmɛnˈteɪʃən kɒsts",
           "phonetic": "HY im-plih-men-TAY-shun KOSTS"
         },
         "american": {
-          "ipa": "haɪ ˌɪmplɪmenˈteɪʃən kɒsts",
+          "ipa": "haɪ ˌɪmplɪmɛnˈteɪʃən kɒsts",
           "phonetic": "HY im-plih-men-TAY-shun KOSTS"
         }
       },
@@ -320,12 +320,12 @@
       "english": "**governments and policymakers**",
       "pronunciation": {
         "british": {
-          "ipa": "ˈɡʌvənmənts ənd ˈpɒləsiˌmeɪkəz",
-          "phonetic": "GUV-urn-ments und POL-uh-see-may-kurz"
+          "ipa": "ˈɡʌvnmənts ənd ˈpɒlɪsiˌmeɪkəz",
+          "phonetic": "GUV-urn-ments und POL-ih-see-may-kurz"
         },
         "american": {
-          "ipa": "ˈɡʌvənmənts ənd ˈpɒləsiˌmeɪkəz",
-          "phonetic": "GUV-urn-ments und POL-uh-see-may-kurz"
+          "ipa": "ˈɡʌvnmənts ənd ˈpɒlɪsiˌmeɪkəz",
+          "phonetic": "GUV-urn-ments und POL-ih-see-may-kurz"
         }
       },
       "difficulty": "hard",

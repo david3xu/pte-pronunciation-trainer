@@ -2,7 +2,7 @@
 
 **Category**: PTE SST Complete
 **Difficulty**: Intermediate
-**Total**: 334 terms and phrases from 68 SST topics
+**Total**: 454 terms and phrases from 68 SST topics
 
 ---
 
@@ -17,6 +17,11 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 1. the definition of globalization | /ðə ˌdɛfəˈnɪʃən əv ˌɡloʊbələˈzeɪʃən/ — sounds like **thuh def-uh-NISH-uhn uhv GLOH-buh-lih-ZAY-shuhn**
 2. the proliferation of international trade | /ðə prəˌlɪfəˈreɪʃən əv ˌɪntərˈnæʃənəl treɪd/ — sounds like **thuh pruh-lif-uh-RAY-shuhn uhv in-ter-NASH-uh-nuhl TRAYD**
 3. more international communities | /mɔr ˌɪntərˈnæʃənəl kəˈmjunətiz/ — sounds like **MOR in-ter-NASH-uh-nuhl kuh-MYOO-nuh-teez**
+4. multinationals | /ˌmʌltiˈnæʃənəlz/ — sounds like **mul-tee-NASH-uh-nuhlz**
+5. an integrated economic system | /æn ˈɪntəˌɡreɪtəd ˌɛkəˈnɑmɪk ˈsɪstəm/ — sounds like **an IN-tuh-gray-tid ek-uh-NAH-mik SIS-tuhm**
+6. a new era | /ə nu ˈɪrə/ — sounds like **uh NOO EER-uh**
+7. the global post-industrial economy | /ðə ˈɡloʊbəl poʊst ɪnˈdʌstriəl ɪˈkɑnəmi/ — sounds like **thuh GLOH-buhl POHST in-DUS-tree-uhl ih-KAH-nuh-mee**
+8. nations' economy | /ˈneɪʃənz ɪˈkɑnəmi/ — sounds like **NAY-shuhnz ih-KAH-nuh-mee**
 
 ## Topic 2: Thirty-One Obese Women
 
@@ -25,6 +30,11 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 6. testing changes in body fat | /ˈtɛstɪŋ ˈtʃeɪndʒəz ɪn ˈbɑdi fæt/ — sounds like **TES-ting CHAYN-juhz in BAH-dee FAT**
 7. doing less exercise consciously or unconsciously | /ˈduɪŋ lɛs ˈɛksərˌsaɪz ˈkɑnʃəsli ɔr ʌnˈkɑnʃəsli/ — sounds like **DOO-ing LES EK-sur-syz KAHN-shuhs-lee or un-KAHN-shuhs-lee**
 8. psychological reasons | /ˌsaɪkəˈlɑdʒɪkəl ˈrizənz/ — sounds like **sy-kuh-LAH-jih-kuhl REE-zuhnz**
+9. strict daily dietary requirements | /strɪkt ˈdeɪli ˈdaɪəˌtɛri rɪˈkwaɪrmənts/ — sounds like **STRIKT DAY-lee dy-uh-TAIR-ee rih-KWYR-muhnts**
+10. doing exercise as instructed | /ˈduɪŋ ˈɛksərˌsaɪz æz ɪnˈstrʌktəd/ — sounds like **DOO-ing EK-sur-syz az in-STRUK-tuhd**
+11. weight loss | /weɪt lɔs/ — sounds like **WAYT LAWS**
+12. staying the same | /ˈsteɪɪŋ ðə seɪm/ — sounds like **STAY-ing thuh SAYM**
+13. weight gain | /weɪt ɡeɪn/ — sounds like **WAYT GAYN**
 
 ## Topic 3: Abstraction
 
@@ -32,21 +42,34 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 10. the origin of symbolic systems | /ði ˈɔrədʒən əv sɪmˈbɑlɪk ˈsɪstəmz/ — sounds like **thee OR-uh-juhn uhv sim-BAH-lik SIS-tuhmz**
 11. sign language | /saɪn ˈlæŋɡwɪdʒ/ — sounds like **SYN LANG-gwij**
 12. strangling a rhinoceros | /ˈstræŋɡəlɪŋ ə raɪˈnɑsərəs/ — sounds like **STRANG-guh-ling uh ry-NAH-sur-uhs**
+13. words and language | /wɜrdz ænd ˈlæŋɡwɪdʒ/ — sounds like **WURDZ and LANG-gwij**
+14. communicating while doing things | /kəˈmjunəˌkeɪtɪŋ waɪl ˈduɪŋ θɪŋz/ — sounds like **kuh-MYOO-nuh-kay-ting WYL DOO-ing THINGZ**
 
 ## Topic 4: Genes
 
-13. genes | /dʒinz/ — sounds like **JEENZ**
-14. people's physical structure | /ˈpipəlz ˈfɪzɪkəl ˈstrʌktʃər/ — sounds like **PEE-puhlz FIZ-ih-kuhl STRUK-chur**
-15. physical and psychological behaviors | /ˈfɪzɪkəl ænd ˌsaɪkəˈlɑdʒɪkəl bɪˈheɪvjərz/ — sounds like **FIZ-ih-kuhl and sy-kuh-LAH-jih-kuhl bih-HAYV-yurz**
+13. the discovery of the DNA structure | /ðə dɪˈskʌvəri əv ðə di ɛn eɪ ˈstrʌktʃər/ — sounds like **thuh dih-SKUV-uh-ree uhv thuh DEE EN AY STRUK-chur**
+14. genes | /dʒinz/ — sounds like **JEENZ**
+15. people's physical structure | /ˈpipəlz ˈfɪzɪkəl ˈstrʌktʃər/ — sounds like **PEE-puhlz FIZ-ih-kuhl STRUK-chur**
+16. the study of mapping genes | /ðə ˈstʌdi əv ˈmæpɪŋ dʒinz/ — sounds like **thuh STUD-ee uhv MAP-ing JEENZ**
+17. physical and psychological behaviors | /ˈfɪzɪkəl ænd ˌsaɪkəˈlɑdʒɪkəl bɪˈheɪvjərz/ — sounds like **FIZ-ih-kuhl and sy-kuh-LAH-jih-kuhl bih-HAYV-yurz**
+18. changing the way we understand our behavior | /ˈtʃeɪndʒɪŋ ðə weɪ wi ˌʌndərˈstænd aʊər bɪˈheɪvjər/ — sounds like **CHAYN-jing thuh WAY wee un-dur-STAND OW-ur bih-HAYV-yur**
+19. the research on genes | /ðə rɪˈsɜrtʃ ɑn dʒinz/ — sounds like **thuh rih-SURCH ahn JEENZ**
+20. integrated information | /ˈɪntəˌɡreɪtəd ˌɪnfərˈmeɪʃən/ — sounds like **IN-tuh-gray-tid in-fur-MAY-shuhn**
+21. biology | /baɪˈɑlədʒi/ — sounds like **by-AH-luh-jee**
+22. psychology | /saɪˈkɑlədʒi/ — sounds like **sy-KAH-luh-jee**
+23. neuroscience | /ˌnʊroʊˈsaɪəns/ — sounds like **noor-oh-SY-uhns**
 
 ## Topic 5: The Notions of Pragmatism and Democracy
 
 16. the notions of pragmatism and democracy | /ðə ˈnoʊʃənz əv ˈpræɡməˌtɪzəm ænd dɪˈmɑkrəsi/ — sounds like **thuh NOH-shuhnz uhv PRAG-muh-tiz-uhm and dih-MAH-kruh-see**
 17. tempering the market economy | /ˈtɛmpərɪŋ ðə ˈmɑrkət ɪˈkɑnəmi/ — sounds like **TEM-pur-ing thuh MAR-kut ih-KAH-nuh-mee**
 18. the Industrial Revolution | /ði ɪnˈdʌstriəl ˌrɛvəˈluʃən/ — sounds like **thee in-DUS-tree-uhl rev-uh-LOO-shuhn**
-19. circumscribing the worst behaviors | /ˌsɜrkəmˈskraɪbɪŋ ðə wɜrst bɪˈheɪvjərz/ — sounds like **sur-kuhm-SKRY-bing thuh WURST bih-HAYV-yurz**
-20. reversing some damage | /rɪˈvɜrsɪŋ sʌm ˈdæmədʒ/ — sounds like **rih-VUR-sing sum DAM-ij**
-21. widespread sharing | /ˈwaɪdˌsprɛd ˈʃɛrɪŋ/ — sounds like **WYD-SPRED SHAIR-ing**
+19. the working class | /ðə ˈwɜrkɪŋ klæs/ — sounds like **thuh WUR-king KLAS**
+20. negative effects on the living standards | /ˈnɛɡətɪv ɪˈfɛkts ɑn ðə ˈlɪvɪŋ ˈstændərdz/ — sounds like **NEG-uh-tiv ih-FEKTS ahn thuh LIV-ing STAN-durdz**
+21. circumscribing the worst behaviors | /ˌsɜrkəmˈskraɪbɪŋ ðə wɜrst bɪˈheɪvjərz/ — sounds like **sur-kuhm-SKRY-bing thuh WURST bih-HAYV-yurz**
+22. legislation about working conditions | /ˌlɛdʒəsˈleɪʃən əˈbaʊt ˈwɜrkɪŋ kənˈdɪʃənz/ — sounds like **lej-uhs-LAY-shuhn uh-BOWT WUR-king kuhn-DISH-uhnz**
+23. reversing some damage | /rɪˈvɜrsɪŋ sʌm ˈdæmədʒ/ — sounds like **rih-VUR-sing sum DAM-ij**
+24. widespread sharing | /ˈwaɪdˌsprɛd ˈʃɛrɪŋ/ — sounds like **WYD-SPRED SHAIR-ing**
 
 ## Topic 6: What Makes People Happy
 
@@ -64,7 +87,9 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 30. the reality of global climate change | /ðə riˈæləti əv ˈɡloʊbəl ˈklaɪmət tʃeɪndʒ/ — sounds like **thuh ree-AL-uh-tee uhv GLOH-buhl KLY-muht CHAYNJ**
 31. panic | /ˈpænɪk/ — sounds like **PAN-ik**
 32. criticizing the prediction of the population bomb | /ˈkrɪtɪˌsaɪzɪŋ ðə prɪˈdɪkʃən əv ðə ˌpɑpjəˈleɪʃən bɑm/ — sounds like **KRIH-tih-sy-zing thuh prih-DIK-shuhn uhv thuh pah-pyuh-LAY-shuhn BAHM**
-33. major precipitation changes | /ˈmeɪdʒər prɪˌsɪpɪˈteɪʃən ˈtʃeɪndʒəz/ — sounds like **MAY-jur prih-sip-uh-TAY-shuhn CHAYN-juhz**
+33. being unable to take the risk | /ˈbiɪŋ ʌnˈeɪbəl tə teɪk ðə rɪsk/ — sounds like **BEE-ing un-AY-buhl tuh TAYK thuh RISK**
+34. wrong predictions | /rɔŋ prɪˈdɪkʃənz/ — sounds like **RAWNG prih-DIK-shuhnz**
+35. major precipitation changes | /ˈmeɪdʒər prɪˌsɪpɪˈteɪʃən ˈtʃeɪndʒəz/ — sounds like **MAY-jur prih-sip-uh-TAY-shuhn CHAYN-juhz**
 
 ## Topic 8: The Separation of Powers
 
@@ -83,12 +108,24 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 ## Topic 9: Using and Interpreting the Word 'Need'
 
 45. using and interpreting the word 'need' | /ˈjuzɪŋ ænd ɪnˈtɜrprətɪŋ ðə wɜrd nid/ — sounds like **YOO-zing and in-TUR-pruh-ting thuh WURD NEED**
+46. an expression of a strong desire | /æn ɪkˈsprɛʃən əv ə strɔŋ dɪˈzaɪər/ — sounds like **an ik-SPRESH-uhn uhv uh STRAWNG dih-ZYR**
+47. a basic need | /ə ˈbeɪsɪk nid/ — sounds like **uh BAY-sik NEED**
+48. an objective statement | /æn əbˈdʒɛktɪv ˈsteɪtmənt/ — sounds like **an uhb-JEK-tiv STAYT-muhnt**
+49. an essential need | /æn ɪˈsɛnʃəl nid/ — sounds like **an ih-SEN-shuhl NEED**
+50. a psychological use | /ə ˌsaɪkəˈlɑdʒɪkəl jus/ — sounds like **uh sy-kuh-LAH-jih-kuhl YOOS**
+51. lack of something | /læk əv ˈsʌmθɪŋ/ — sounds like **LAK uhv SUM-thing**
 
 ## Topic 10: The Internet
 
-46. the internet | /ði ˈɪntərˌnɛt/ — sounds like **thee IN-tur-net**
-47. globalization | /ˌɡloʊbələˈzeɪʃən/ — sounds like **GLOH-buh-lih-ZAY-shuhn**
-48. detraditionalization | /diˌtrædɪʃənəlaɪˈzeɪʃən/ — sounds like **dee-trad-ih-shuhn-uhl-eye-ZAY-shuhn**
+46. a global village | /ə ˈɡloʊbəl ˈvɪlədʒ/ — sounds like **uh GLOH-buhl VIL-ij**
+47. instant communications | /ˈɪnstənt kəˌmjunəˈkeɪʃənz/ — sounds like **IN-stuhnt kuh-myoo-nuh-KAY-shuhnz**
+48. the internet | /ði ˈɪntərˌnɛt/ — sounds like **thee IN-tur-net**
+49. a shrinking world | /ə ˈʃrɪŋkɪŋ wɜrld/ — sounds like **uh SHRING-king WURLD**
+50. globalization | /ˌɡloʊbələˈzeɪʃən/ — sounds like **GLOH-buh-lih-ZAY-shuhn**
+51. detraditionalization | /diˌtrædɪʃənəlaɪˈzeɪʃən/ — sounds like **dee-trad-ih-shuhn-uhl-eye-ZAY-shuhn**
+52. the erosion of traditional culture and conventional ways of doing things | /ði ɪˈroʊʒən əv trəˈdɪʃənəl ˈkʌltʃər ænd kənˈvɛnʃənəl weɪz əv ˈduɪŋ θɪŋz/ — sounds like **thee ih-ROH-zhuhn uhv truh-DISH-uh-nuhl KUL-chur and kuhn-VEN-shuh-nuhl WAYZ uhv DOO-ing THINGZ**
+53. rejecting their own culture | /rɪˈdʒɛktɪŋ ðɛr oʊn ˈkʌltʃər/ — sounds like **rih-JEK-ting thair OHN KUL-chur**
+54. imitating the Hollywood models | /ˈɪməˌteɪtɪŋ ðə ˈhɑliˌwʊd ˈmɑdəlz/ — sounds like **IM-uh-tay-ting thuh HAH-lee-wood MAH-duhlz**
 
 ## Topic 11: The Best Manager
 
@@ -122,6 +159,8 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 70. purchasing appliances | /ˈpɜrtʃəsɪŋ əˈplaɪənsəz/ — sounds like **PUR-chuh-sing uh-PLY-uhn-suhz**
 71. the rise of frozen foods | /ðə raɪz əv ˈfroʊzən fudz/ — sounds like **thuh RYZ uhv FROH-zuhn FOODZ**
 72. freezer cases | /ˈfrizər ˈkeɪsəz/ — sounds like **FREE-zur KAY-suhz**
+73. supermarkets | /ˈsupərˌmɑrkəts/ — sounds like **SOO-pur-mar-kuts**
+74. the beginning of modern food technology | /ðə bɪˈɡɪnɪŋ əv ˈmɑdərn fud tɛkˈnɑlədʒi/ — sounds like **thuh bih-GIN-ing uhv MAH-durn FOOD tek-NAH-luh-jee**
 
 ## Topic 14: Synthetic Biology
 
@@ -169,24 +208,59 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 
 ## Topic 18: Australia
 
-105. Australia | /ɔˈstreɪljə/ — sounds like **aw-STRAYL-yuh**
-106. the immigrant population | /ði ˈɪməɡrənt ˌpɑpjəˈleɪʃən/ — sounds like **thee IM-uh-gruhnt pah-pyuh-LAY-shuhn**
+105. the first inhabitants | /ðə fɜrst ɪnˈhæbətənts/ — sounds like **thuh FURST in-HAB-uh-tuhnts**
+106. Australia | /ɔˈstreɪljə/ — sounds like **aw-STRAYL-yuh**
+107. the Aboriginal community | /ði ˌæbəˈrɪdʒənəl kəˈmjunəti/ — sounds like **thee ab-uh-RIJ-uh-nuhl kuh-MYOO-nuh-tee**
+108. the 1970s and 1980s | /ðə ˈnaɪnˌtin ˈsɛvəntiz ænd ˈeɪtiz/ — sounds like **thuh NYN-teen SEV-uhn-teez and AY-teez**
+109. refugees | /ˌrɛfjəˈdʒiz/ — sounds like **ref-yuh-JEEZ**
+110. the multiculturalism policy | /ðə ˌmʌltiˈkʌltʃərəˌlɪzəm ˈpɑləsi/ — sounds like **thuh mul-tee-KUL-chur-uhl-iz-uhm PAH-luh-see**
+111. new settlers | /nu ˈsɛtlərz/ — sounds like **NOO SET-lurz**
+112. the immigrant population | /ði ˈɪməɡrənt ˌpɑpjəˈleɪʃən/ — sounds like **thee IM-uh-gruhnt pah-pyuh-LAY-shuhn**
+113. Asia | /ˈeɪʒə/ — sounds like **AY-zhuh**
+114. Sydney | /ˈsɪdni/ — sounds like **SID-nee**
 
 ## Topic 19: The Stability of Mood
 
 107. the stability of mood | /ðə stəˈbɪləti əv mud/ — sounds like **thuh stuh-BIL-uh-tee uhv MOOD**
+108. variation among different people | /ˌvɛriˈeɪʃən əˈmʌŋ ˈdɪfərənt ˈpipəl/ — sounds like **vair-ee-AY-shuhn uh-MUNG DIF-ur-uhnt PEE-puhl**
+109. getting intense easily | /ˈɡɛtɪŋ ɪnˈtɛns ˈizəli/ — sounds like **GET-ing in-TENS EE-zuh-lee**
+110. riding a roller coaster | /ˈraɪdɪŋ ə ˈroʊlər ˈkoʊstər/ — sounds like **RY-ding uh ROH-lur KOH-stur**
+111. loose emotions | /lus ɪˈmoʊʃənz/ — sounds like **LOOS ih-MOH-shuhnz**
+112. the secret of happiness | /ðə ˈsikrət əv ˈhæpinəs/ — sounds like **thuh SEE-krut uhv HAP-ee-nuhs**
+113. mild contentment | /maɪld kənˈtɛntmənt/ — sounds like **MYLD kuhn-TENT-muhnt**
+114. a balance between intense and loose emotions | /ə ˈbæləns bɪˈtwin ɪnˈtɛns ænd lus ɪˈmoʊʃənz/ — sounds like **uh BAL-uhns bih-TWEEN in-TENS and LOOS ih-MOH-shuhnz**
 
 ## Topic 20: A Hook
 
 108. a hook | /ə hʊk/ — sounds like **uh HOOK**
+109. writing a persuasive essay | /ˈraɪtɪŋ ə pərˈsweɪsɪv ˈɛseɪ/ — sounds like **RY-ting uh pur-SWAY-siv ES-ay**
+110. grabbing the reader's attention | /ˈɡræbɪŋ ðə ˈridərz əˈtɛnʃən/ — sounds like **GRAB-ing thuh REE-durz uh-TEN-shuhn**
+111. the controversial issue | /ðə ˌkɑntrəˈvɜrʃəl ˈɪʃu/ — sounds like **thuh kahn-truh-VUR-shuhl ISH-oo**
+112. provoking emotional interest | /prəˈvoʊkɪŋ ɪˈmoʊʃənəl ˈɪntərəst/ — sounds like **pruh-VOH-king ih-MOH-shuh-nuhl IN-tur-uhst**
+113. using statistics and facts | /ˈjuzɪŋ stəˈtɪstɪks ænd fækts/ — sounds like **YOO-zing stuh-TIS-tiks and FAKTS**
+114. using strong wording | /ˈjuzɪŋ strɔŋ ˈwɜrdɪŋ/ — sounds like **YOO-zing STRAWNG WUR-ding**
+115. the urgency of the addressed topic | /ði ˈɜrdʒənsi əv ði əˈdrɛst ˈtɑpɪk/ — sounds like **thee UR-juhn-see uhv thee uh-DREST TAH-pik**
+116. presenting hypothetical or worst-case scenarios | /prɪˈzɛntɪŋ ˌhaɪpəˈθɛtɪkəl ɔr wɜrst keɪs səˈnɛrioʊz/ — sounds like **prih-ZEN-ting hy-puh-THET-ih-kuhl or WURST KAYS suh-NAIR-ee-ohz**
 
 ## Topic 21: Population Growth
 
 109. population growth | /ˌpɑpjəˈleɪʃən ɡroʊθ/ — sounds like **pah-pyuh-LAY-shuhn GROHTH**
+110. the limited resources | /ðə ˈlɪmətəd rɪˈsɔrsəz/ — sounds like **thuh LIM-uh-tuhd rih-SOR-suhz**
+111. the water crisis | /ðə ˈwɔtər ˈkraɪsəs/ — sounds like **thuh WAW-tur KRY-suhs**
+112. the food crisis | /ðə fud ˈkraɪsəs/ — sounds like **thuh FOOD KRY-suhs**
+113. unequal distribution | /ʌnˈikwəl ˌdɪstrəˈbjuʃən/ — sounds like **un-EE-kwuhl dis-truh-BYOO-shuhn**
+114. changing the balance of power | /ˈtʃeɪndʒɪŋ ðə ˈbæləns əv ˈpaʊər/ — sounds like **CHAYN-jing thuh BAL-uhns uhv POW-ur**
+115. exceeding 20 million people | /ɪkˈsidɪŋ ˈtwɛnti ˈmɪljən ˈpipəl/ — sounds like **ik-SEE-ding TWEN-tee MIL-yuhn PEE-puhl**
 
 ## Topic 22: Tree Rings
 
 110. tree rings | /tri rɪŋz/ — sounds like **TREE RINGS**
+111. hidden information | /ˈhɪdən ˌɪnfərˈmeɪʃən/ — sounds like **HID-uhn in-fur-MAY-shuhn**
+112. a Morse code | /ə mɔrs koʊd/ — sounds like **uh MORS KOHD**
+113. the width of tree rings | /ðə wɪdθ əv tri rɪŋz/ — sounds like **thuh WIDTH uhv TREE RINGS**
+114. rain and drought | /reɪn ænd draʊt/ — sounds like **RAYN and DROWT**
+115. counting the tree rings inward | /ˈkaʊntɪŋ ðə tri rɪŋz ˈɪnwərd/ — sounds like **KOWN-ting thuh TREE RINGS IN-wurd**
+116. reconstructing the climate | /ˌrikənˈstrʌktɪŋ ðə ˈklaɪmət/ — sounds like **ree-kuhn-STRUK-ting thuh KLY-muht**
 
 ## Topic 23: Vitamin D
 
@@ -195,17 +269,20 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 113. no dietary need | /noʊ ˈdaɪəˌtɛri nid/ — sounds like **NOH dy-uh-TAIR-ee NEED**
 114. tropical climates | /ˈtrɑpɪkəl ˈklaɪməts/ — sounds like **TRAH-pih-kuhl KLY-muhts**
 115. a prohormone | /ə proʊˈhɔrˌmoʊn/ — sounds like **uh proh-HOR-mohn**
-116. equatorial regions | /ˌikwəˈtɔriəl ˈridʒənz/ — sounds like **ee-kwuh-TOR-ee-uhl REE-juhnz**
+116. migration away from equatorial regions | /maɪˈɡreɪʃən əˈweɪ frʌm ˌikwəˈtɔriəl ˈridʒənz/ — sounds like **my-GRAY-shuhn uh-WAY fruhm ee-kwuh-TOR-ee-uhl REE-juhnz**
+117. sufficient skill exposure to sunlight | /səˈfɪʃənt skɪl ɪkˈspoʊʒər tə ˈsʌnˌlaɪt/ — sounds like **suh-FISH-uhnt SKIL ik-SPOH-zhur tuh SUN-lyt**
 
 ## Topic 24: The World
 
 117. the world | /ðə wɜrld/ — sounds like **thuh WURLD**
 118. a flat floor | /ə flæt flɔr/ — sounds like **uh FLAT FLOR**
 119. the universe | /ðə ˈjunəˌvɜrs/ — sounds like **thuh YOO-nuh-vurs**
-120. Einstein | /ˈaɪnstaɪn/ — sounds like **YN-styn**
-121. continuous dynamic change | /kənˈtɪnjuəs daɪˈnæmɪk tʃeɪndʒ/ — sounds like **kuhn-TIN-yoo-uhs dy-NAM-ik CHAYNJ**
-122. Edwin Hubble | /ˈɛdwɪn ˈhʌbəl/ — sounds like **ED-win HUB-uhl**
-123. an astronomer | /æn əˈstrɑnəmər/ — sounds like **an uh-STRAH-nuh-mur**
+120. the absolutely fixed and unchangeable universe | /ði ˌæbsəˈlutli fɪkst ænd ʌnˈtʃeɪndʒəbəl ˈjunəˌvɜrs/ — sounds like **thee ab-suh-LOOT-lee FIKST and un-CHAYN-juh-buhl YOO-nuh-vurs**
+121. Einstein | /ˈaɪnstaɪn/ — sounds like **YN-styn**
+122. continuous dynamic change | /kənˈtɪnjuəs daɪˈnæmɪk tʃeɪndʒ/ — sounds like **kuhn-TIN-yoo-uhs dy-NAM-ik CHAYNJ**
+123. the honor of discovering this theory | /ði ˈɑnər əv dɪˈskʌvərɪŋ ðɪs ˈθɪri/ — sounds like **thee AH-nur uhv dih-SKUV-ur-ing this THEE-ree**
+124. Edwin Hubble | /ˈɛdwɪn ˈhʌbəl/ — sounds like **ED-win HUB-uhl**
+125. an astronomer | /æn əˈstrɑnəmər/ — sounds like **an uh-STRAH-nuh-mur**
 
 ## Topic 25: The Three Most Favorite Drinks in England
 
@@ -213,17 +290,32 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 125. chocolate | /ˈtʃɑklət/ — sounds like **CHAH-kluht**
 126. coffee | /ˈkɔfi/ — sounds like **KAW-fee**
 127. tea | /ti/ — sounds like **TEE**
+128. being ordered by men in public | /ˈbiɪŋ ˈɔrdərd baɪ mɛn ɪn ˈpʌblɪk/ — sounds like **BEE-ing OR-durd by MEN in PUB-lik**
+129. enjoying social freedom | /ɛnˈdʒɔɪɪŋ ˈsoʊʃəl ˈfridəm/ — sounds like **en-JOY-ing SOH-shuhl FREE-duhm**
+130. making trades | /ˈmeɪkɪŋ treɪdz/ — sounds like **MAY-king TRAYDZ**
 
 ## Topic 26: Risk Analysis
 
 128. risk analysis | /rɪsk əˈnæləsəs/ — sounds like **RISK uh-NAL-uh-suhs**
 129. the definition of risk and safety | /ðə ˌdɛfəˈnɪʃən əv rɪsk ænd ˈseɪfti/ — sounds like **thuh def-uh-NISH-uhn uhv RISK and SAYF-tee**
+130. two literal definitions | /tu ˈlɪtərəl ˌdɛfəˈnɪʃənz/ — sounds like **TOO LIT-ur-uhl def-uh-NISH-uhnz**
+131. the possibility of loss or injury | /ðə ˌpɑsəˈbɪləti əv lɔs ɔr ˈɪndʒəri/ — sounds like **thuh pah-suh-BIL-uh-tee uhv LAWS or IN-juh-ree**
+132. the consequences of some kinds of danger | /ðə ˈkɑnsəˌkwɛnsəz əv sʌm kaɪndz əv ˈdeɪndʒər/ — sounds like **thuh KAHN-suh-kwen-suhz uhv SUM KYNDZ uhv DAYN-jur**
+133. being free from harm | /ˈbiɪŋ fri frʌm hɑrm/ — sounds like **BEE-ing FREE fruhm HARM**
+134. a simple notion | /ə ˈsɪmpəl ˈnoʊʃən/ — sounds like **uh SIM-puhl NOH-shuhn**
 
 ## Topic 27: Wildlife
 
 130. wildlife | /ˈwaɪldˌlaɪf/ — sounds like **WYLD-lyf**
 131. livelihood | /ˈlaɪvliˌhʊd/ — sounds like **LYV-lee-hood**
-132. a source of food and income | /ə sɔrs əv fud ænd ˈɪnˌkʌm/ — sounds like **uh SORS uhv FOOD and IN-kum**
+132. an important role | /æn ɪmˈpɔrtənt roʊl/ — sounds like **an im-POR-tuhnt ROHL**
+133. East and West Africa | /ist ænd wɛst ˈæfrɪkə/ — sounds like **EEST and WEST AF-rih-kuh**
+134. a source of food and income | /ə sɔrs əv fud ænd ˈɪnˌkʌm/ — sounds like **uh SORS uhv FOOD and IN-kum**
+135. poverty | /ˈpɑvərti/ — sounds like **PAH-vur-tee**
+136. animal protein | /ˈænəməl ˈproʊˌtin/ — sounds like **AN-uh-muhl PROH-teen**
+137. the management of fish resources | /ðə ˈmænədʒmənt əv fɪʃ rɪˈsɔrsəz/ — sounds like **thuh MAN-ij-muhnt uhv FISH rih-SOR-suhz**
+138. wildlife tourism | /ˈwaɪldˌlaɪf ˈtʊrˌɪzəm/ — sounds like **WYLD-lyf TUR-iz-uhm**
+139. the top source of income | /ðə tɑp sɔrs əv ˈɪnˌkʌm/ — sounds like **thuh TAHP SORS uhv IN-kum**
 
 ## Topic 28: Cosmology
 
@@ -231,6 +323,12 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 134. the Big Bang | /ðə bɪɡ bæŋ/ — sounds like **thuh BIG BANG**
 135. the universe | /ðə ˈjunəˌvɜrs/ — sounds like **thuh YOO-nuh-vurs**
 136. the law of physics | /ðə lɔ əv ˈfɪzɪks/ — sounds like **thuh LAW uhv FIZ-iks**
+137. starting in a Big Bang | /ˈstɑrtɪŋ ɪn ə bɪɡ bæŋ/ — sounds like **STAR-ting in uh BIG BANG**
+138. explaining how the stars work | /ɪkˈspleɪnɪŋ haʊ ðə stɑrz wɜrk/ — sounds like **ik-SPLAY-ning HOW thuh STARZ WURK**
+139. fitting well | /ˈfɪtɪŋ wɛl/ — sounds like **FIT-ing WEL**
+140. the universe being older that the oldest star | /ðə ˈjunəˌvɜrs ˈbiɪŋ ˈoʊldər ðæt ði ˈoʊldəst stɑr/ — sounds like **thuh YOO-nuh-vurs BEE-ing OHL-dur that thee OHL-duhst STAR**
+141. how the universe began | /haʊ ðə ˈjunəˌvɜrs bɪˈɡæn/ — sounds like **HOW thuh YOO-nuh-vurs bih-GAN**
+142. what will happen in the future | /wʌt wɪl ˈhæpən ɪn ðə ˈfjutʃər/ — sounds like **WUHT wil HAP-uhn in thuh FYOO-chur**
 
 ## Topic 29: The Decline of Bees
 
@@ -240,13 +338,17 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 140. pollinator loss | /ˈpɑləˌneɪtər lɔs/ — sounds like **PAH-luh-nay-tur LAWS**
 141. a catastrophe | /ə kəˈtæstrəfi/ — sounds like **uh kuh-TAS-truh-fee**
 142. fixing the recognized problems | /ˈfɪksɪŋ ðə ˈrɛkəɡˌnaɪzd ˈprɑbləmz/ — sounds like **FIK-sing thuh REK-uhg-nyzd PRAH-bluhmz**
+143. awareness of the problem | /əˈwɛrnəs əv ðə ˈprɑbləm/ — sounds like **uh-WAIR-nuhs uhv thuh PRAH-bluhm**
+144. being supported by good, strong scientific evidence | /ˈbiɪŋ səˈpɔrtəd baɪ ɡʊd strɔŋ ˌsaɪənˈtɪfɪk ˈɛvədəns/ — sounds like **BEE-ing suh-POR-tuhd by GOOD STRAWNG sy-uhn-TIF-ik EV-uh-duhns**
 
 ## Topic 30: A Brand
 
 143. a brand | /ə brænd/ — sounds like **uh BRAND**
 144. smart consumers | /smɑrt kənˈsumərz/ — sounds like **SMART kuhn-SOO-murz**
-145. the Second Moment of Truth | /ðə ˈsɛkənd ˈmoʊmənt əv truθ/ — sounds like **thuh SEK-uhnd MOH-muhnt uhv TROOTH**
-146. fundamental engineering contradictions | /ˌfʌndəˈmɛntəl ˌɛndʒəˈnɪrɪŋ ˌkɑntrəˈdɪkʃənz/ — sounds like **fun-duh-MEN-tuhl en-juh-NEER-ing kahn-truh-DIK-shuhnz**
+145. paying more for a better brand | /ˈpeɪɪŋ mɔr fɔr ə ˈbɛtər brænd/ — sounds like **PAY-ing MOR for uh BET-ur BRAND**
+146. the Second Moment of Truth | /ðə ˈsɛkənd ˈmoʊmənt əv truθ/ — sounds like **thuh SEK-uhnd MOH-muhnt uhv TROOTH**
+147. fundamental engineering contradictions | /ˌfʌndəˈmɛntəl ˌɛndʒəˈnɪrɪŋ ˌkɑntrəˈdɪkʃənz/ — sounds like **fun-duh-MEN-tuhl en-juh-NEER-ing kahn-truh-DIK-shuhnz**
+148. strong and soft products | /strɔŋ ænd sɔft ˈprɑdəkts/ — sounds like **STRAWNG and SAWFT PRAH-dukts**
 
 ## Topic 31: Keeping Drugs at Home
 
@@ -266,6 +368,10 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 
 158. interactions between babies and their mothers | /ˌɪntərˈækʃənz bɪˈtwin ˈbeɪbiz ænd ðɛr ˈmʌðərz/ — sounds like **in-tur-AK-shuhnz bih-TWEEN BAY-beez and thair MUH-thurz**
 159. babies' smiles | /ˈbeɪbiz smaɪlz/ — sounds like **BAY-beez SMYLZ**
+160. strategic smiles | /strəˈtidʒɪk smaɪlz/ — sounds like **struh-TEE-jik SMYLZ**
+161. not spontaneous smiles | /nɑt spɑnˈteɪniəs smaɪlz/ — sounds like **NAHT spahn-TAY-nee-uhs SMYLZ**
+162. a manner of sophisticated timing | /ə ˈmænər əv səˈfɪstɪˌkeɪtəd ˈtaɪmɪŋ/ — sounds like **uh MAN-ur uhv suh-FIS-tih-kay-tuhd TY-ming**
+163. wanting to be smiled at | /ˈwɑntɪŋ tə bi smaɪld æt/ — sounds like **WAHN-ting tuh bee SMYLD at**
 
 ## Topic 33: The Economic Models of Newspapers
 
@@ -284,9 +390,11 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 168. automation technology in vehicles | /ˌɔtəˈmeɪʃən tɛkˈnɑlədʒi ɪn ˈviɪkəlz/ — sounds like **aw-tuh-MAY-shuhn tek-NAH-luh-jee in VEE-ih-kuhlz**
 169. a hot topic | /ə hɑt ˈtɑpɪk/ — sounds like **uh HAHT TAH-pik**
 170. fuel-efficient technology | /fjul ɪˈfɪʃənt tɛkˈnɑlədʒi/ — sounds like **FYOOL ih-FISH-uhnt tek-NAH-luh-jee**
-171. being completely under vehicle control | /ˈbiɪŋ kəmˈplitli ˈʌndər ˈviɪkəl kənˈtroʊl/ — sounds like **BEE-ing kuhm-PLEET-lee UN-dur VEE-ih-kuhl kuhn-TROHL**
-172. conditional automation | /kənˈdɪʃənəl ˌɔtəˈmeɪʃən/ — sounds like **kuhn-DISH-uh-nuhl aw-tuh-MAY-shuhn**
-173. intervening under circumstances | /ˌɪntərˈvinɪŋ ˈʌndər ˈsɜrkəmˌstænsəz/ — sounds like **in-tur-VEE-ning UN-dur SUR-kuhm-stan-suhz**
+171. different levels of automation | /ˈdɪfərənt ˈlɛvəlz əv ˌɔtəˈmeɪʃən/ — sounds like **DIF-ur-uhnt LEV-uhlz uhv aw-tuh-MAY-shuhn**
+172. being completely under vehicle control | /ˈbiɪŋ kəmˈplitli ˈʌndər ˈviɪkəl kənˈtroʊl/ — sounds like **BEE-ing kuhm-PLEET-lee UN-dur VEE-ih-kuhl kuhn-TROHL**
+173. conditional automation | /kənˈdɪʃənəl ˌɔtəˈmeɪʃən/ — sounds like **kuhn-DISH-uh-nuhl aw-tuh-MAY-shuhn**
+174. intervening under circumstances | /ˌɪntərˈvinɪŋ ˈʌndər ˈsɜrkəmˌstænsəz/ — sounds like **in-tur-VEE-ning UN-dur SUR-kuhm-stan-suhz**
+175. more acceptable technology to most of the public | /mɔr əkˈsɛptəbəl tɛkˈnɑlədʒi tə moʊst əv ðə ˈpʌblɪk/ — sounds like **MOR ak-SEP-tuh-buhl tek-NAH-luh-jee tuh MOHST uhv thuh PUB-lik**
 
 ## Topic 35: An Experiment on Customers Behaviors
 
@@ -359,6 +467,9 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 225. negativity bias | /ˌnɛɡəˈtɪvəti ˈbaɪəs/ — sounds like **neg-uh-TIV-uh-tee BY-uhs**
 226. paying more attention to negative emotions | /ˈpeɪɪŋ mɔr əˈtɛnʃən tə ˈnɛɡətɪv ɪˈmoʊʃənz/ — sounds like **PAY-ing MOR uh-TEN-shuhn tuh NEG-uh-tiv ih-MOH-shuhnz**
 227. positive emotions | /ˈpɑzətɪv ɪˈmoʊʃənz/ — sounds like **PAH-zuh-tiv ih-MOH-shuhnz**
+228. content and pleasant feelings | /ˈkɑntɛnt ænd ˈplɛzənt ˈfilɪŋz/ — sounds like **KAHN-tent and PLEZ-uhnt FEE-lingz**
+229. survival in the face of life-threatening issues | /sərˈvaɪvəl ɪn ðə feɪs əv laɪf ˈθrɛtnɪŋ ˈɪʃuz/ — sounds like **sur-VY-vuhl in thuh FAYS uhv LYF THRET-ning ISH-ooz**
+230. the evaluation of the environment | /ði ɪˌvæljuˈeɪʃən əv ði ɪnˈvaɪrənmənt/ — sounds like **thee ih-val-yoo-AY-shuhn uhv thee in-VY-ruhn-muhnt**
 
 ## Topic 41: The Lack of Generation of Much New Water
 
@@ -373,12 +484,21 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 
 ## Topic 42: Prosperous Children
 
-236. prosperous children | /ˈprɑspərəs ˈtʃɪldrən/ — sounds like **PRAH-spur-uhs CHIL-druhn**
-237. obvious ways to address the deep-rooted inequality | /ˈɑbviəs weɪz tə əˈdrɛs ðə dip ˈrutəd ˌɪnɪˈkwɑləti/ — sounds like **AHB-vee-uhs WAYZ tuh uh-DRESS thuh DEEP ROO-tid in-ih-KWAH-luh-tee**
+236. the professor's sociology research | /ðə prəˈfɛsərz ˌsoʊsiˈɑlədʒi rɪˈsɜrtʃ/ — sounds like **thuh pruh-FES-urz soh-see-AH-luh-jee rih-SURCH**
+237. the capacity of well-educated parents | /ðə kəˈpæsəti əv wɛl ˈɛdʒəˌkeɪtəd ˈpɛrənts/ — sounds like **thuh kuh-PAS-uh-tee uhv WEL EJ-uh-kay-tuhd PAIR-uhnts**
+238. prosperous children | /ˈprɑspərəs ˈtʃɪldrən/ — sounds like **PRAH-spur-uhs CHIL-druhn**
+239. a very compelling and disturbing fact | /ə ˈvɛri kəmˈpɛlɪŋ ænd dɪˈstɜrbɪŋ fækt/ — sounds like **uh VAIR-ee kuhm-PEL-ing and dih-STUR-bing FAKT**
+240. obvious ways to address the deep-rooted inequality | /ˈɑbviəs weɪz tə əˈdrɛs ðə dip ˈrutəd ˌɪnɪˈkwɑləti/ — sounds like **AHB-vee-uhs WAYZ tuh uh-DRESS thuh DEEP ROO-tid in-ih-KWAH-luh-tee**
 
 ## Topic 43: The Republic
 
 238. the Republic | /ðə rɪˈpʌblɪk/ — sounds like **thuh rih-PUB-lik**
+239. a readable book | /ə ˈridəbəl bʊk/ — sounds like **uh REE-duh-buhl BOOK**
+240. the genius Plato | /ðə ˈdʒinjəs ˈpleɪtoʊ/ — sounds like **thuh JEEN-yuhs PLAY-toh**
+241. a living conversation | /ə ˈlɪvɪŋ ˌkɑnvərˈseɪʃən/ — sounds like **uh LIV-ing kahn-vur-SAY-shuhn**
+242. the fundamental question | /ðə ˌfʌndəˈmɛntəl ˈkwɛstʃən/ — sounds like **thuh fun-duh-MEN-tuhl KWES-chuhn**
+243. "why we should bother to be good" | /waɪ wi ʃʊd ˈbɑðər tə bi ɡʊd/ — sounds like **WY wee SHOOD BAH-thur tuh bee GOOD**
+244. a world where crime and injustice tread down good people | /ə wɜrld wɛr kraɪm ænd ɪnˈdʒʌstəs trɛd daʊn ɡʊd ˈpipəl/ — sounds like **uh WURLD wair KRYM and in-JUS-tuhs TRED DOWN GOOD PEE-puhl**
 
 ## Topic 44: Two Types of Motivation
 
@@ -393,7 +513,12 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 ## Topic 45: The Stock Market
 
 246. the stock market | /ðə stɑk ˈmɑrkət/ — sounds like **thuh STAHK MAR-kut**
-247. the differential use of stocks | /ðə ˌdɪfəˈrɛnʃəl jus əv stɑks/ — sounds like **thuh dif-uh-REN-shuhl YOOS uhv STAHKS**
+247. manufacturing companies | /ˌmænjəˈfæktʃərɪŋ ˈkʌmpəniz/ — sounds like **man-yuh-FAK-chur-ing KUM-puh-neez**
+248. the differential use of stocks | /ðə ˌdɪfəˈrɛnʃəl jus əv stɑks/ — sounds like **thuh dif-uh-REN-shuhl YOOS uhv STAHKS**
+249. fundraising | /ˈfʌndˌreɪzɪŋ/ — sounds like **FUND-ray-zing**
+250. the input of money into companies | /ði ˈɪnˌpʊt əv ˈmʌni ˈɪntu ˈkʌmpəniz/ — sounds like **thee IN-poot uhv MUN-ee IN-too KUM-puh-neez**
+251. the output of money | /ði ˈaʊtˌpʊt əv ˈmʌni/ — sounds like **thee OWT-poot uhv MUN-ee**
+252. traditional companies | /trəˈdɪʃənəl ˈkʌmpəniz/ — sounds like **truh-DISH-uh-nuhl KUM-puh-neez**
 
 ## Topic 46: What Makes a Luxury Brand
 
@@ -407,11 +532,20 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 ## Topic 47: Women's Leadership
 
 254. women's leadership | /ˈwɪmɪnz ˈlidərˌʃɪp/ — sounds like **WIH-minz LEE-dur-ship**
+255. men's being out in front | /mɛnz ˈbiɪŋ aʊt ɪn frʌnt/ — sounds like **MENZ BEE-ing OWT in FRUNT**
+256. women's being behind the scenes | /ˈwɪmɪnz ˈbiɪŋ bɪˈhaɪnd ðə sinz/ — sounds like **WIH-minz BEE-ing bih-HYND thuh SEENZ**
+257. women's beginning to come out in front | /ˈwɪmɪnz bɪˈɡɪnɪŋ tə kʌm aʊt ɪn frʌnt/ — sounds like **WIH-minz bih-GIN-ing tuh KUM OWT in FRUNT**
 
 ## Topic 48: A Waggle Dance
 
 255. a waggle dance | /ə ˈwæɡəl dæns/ — sounds like **uh WAG-uhl DANS**
-256. honeybees | /ˈhʌniˌbiz/ — sounds like **HUN-ee-beez**
+256. a method for honeybees to lead other bees to the nectar | /ə ˈmɛθəd fɔr ˈhʌniˌbiz tə lid ˈʌðər biz tə ðə ˈnɛktər/ — sounds like **uh METH-uhd for HUN-ee-beez tuh LEED UH-thur BEEZ tuh thuh NEK-tur**
+257. the stopping of the dance | /ðə ˈstɑpɪŋ əv ðə dæns/ — sounds like **thuh STAH-ping uhv thuh DANS**
+258. a warning signal | /ə ˈwɔrnɪŋ ˈsɪɡnəl/ — sounds like **uh WOR-ning SIG-nuhl**
+259. the danger of nectar | /ðə ˈdeɪndʒər əv ˈnɛktər/ — sounds like **thuh DAYN-jur uhv NEK-tur**
+260. the return to the hive | /ðə rɪˈtɜrn tə ðə haɪv/ — sounds like **thuh rih-TURN tuh thuh HYV**
+261. the stopping of other bees' dancing | /ðə ˈstɑpɪŋ əv ˈʌðər biz ˈdænsɪŋ/ — sounds like **thuh STAH-ping uhv UH-thur BEEZ DAN-sing**
+262. the warning to other bees of dangerous nectar | /ðə ˈwɔrnɪŋ tə ˈʌðər biz əv ˈdeɪndʒərəs ˈnɛktər/ — sounds like **thuh WOR-ning tuh UH-thur BEEZ uhv DAYN-jur-uhs NEK-tur**
 
 ## Topic 49: Children
 
@@ -445,11 +579,12 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 275. the development of machines | /ðə dɪˈvɛləpmənt əv məˈʃinz/ — sounds like **thuh dih-VEL-uhp-muhnt uhv muh-SHEENZ**
 276. the increasing advancement | /ði ɪnˈkrisɪŋ ədˈvænsmənt/ — sounds like **thee in-KREE-sing uhd-VANS-muhnt**
 277. face recognition | /feɪs ˌrɛkəɡˈnɪʃən/ — sounds like **FAYS rek-uhg-NISH-uhn**
-278. language processing | /ˈlæŋɡwɪdʒ ˈprɑsɛsɪŋ/ — sounds like **LANG-gwij PRAH-ses-ing**
+278. language processing techniques | /ˈlæŋɡwɪdʒ ˈprɑsɛsɪŋ tɛkˈniks/ — sounds like **LANG-gwij PRAH-ses-ing tek-NEEKS**
 279. high dependence on machines | /haɪ dɪˈpɛndəns ɑn məˈʃinz/ — sounds like **HY dih-PEN-duhns ahn muh-SHEENZ**
 280. making a profit | /ˈmeɪkɪŋ ə ˈprɑfɪt/ — sounds like **MAY-king uh PRAH-fit**
-281. the increase in the unemployment rate | /ði ˈɪnˌkris ɪn ði ˌʌnɪmˈplɔɪmənt reɪt/ — sounds like **thee IN-krees in thee un-im-PLOY-muhnt RAYT**
-282. the creation of more jobs | /ðə kriˈeɪʃən əv mɔr dʒɑbz/ — sounds like **thuh kree-AY-shuhn uhv MOR JAHBZ**
+281. increased unemployment rate | /ɪnˈkrist ˌʌnɪmˈplɔɪmənt reɪt/ — sounds like **in-KREEST un-im-PLOY-muhnt RAYT**
+282. rising unemployment and redundancies | /ˈraɪzɪŋ ˌʌnɪmˈplɔɪmənt ænd rɪˈdʌndənsiz/ — sounds like **RY-zing un-im-PLOY-muhnt and rih-DUN-duhn-seez**
+283. the creation of more jobs | /ðə kriˈeɪʃən əv mɔr dʒɑbz/ — sounds like **thuh kree-AY-shuhn uhv MOR JAHBZ**
 
 ## Topic 53: The Historical Objects in Museums
 
@@ -465,11 +600,19 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 ## Topic 54: Multiculturalism in Society
 
 291. multiculturalism in society | /ˌmʌltiˈkʌltʃərəˌlɪzəm ɪn səˈsaɪəti/ — sounds like **mul-tee-KUL-chur-uhl-iz-uhm in suh-SY-uh-tee**
+292. a diverse society | /ə dɪˈvɜrs səˈsaɪəti/ — sounds like **uh dih-VURS suh-SY-uh-tee**
+293. the interaction of many cultures | /ði ˌɪntərˈækʃən əv ˈmɛni ˈkʌltʃərz/ — sounds like **thee in-tur-AK-shuhn uhv MEN-ee KUL-churz**
+294. many factors | /ˈmɛni ˈfæktərz/ — sounds like **MEN-ee FAK-turz**
+295. no point in counting how many cultures there are in society | /noʊ pɔɪnt ɪn ˈkaʊntɪŋ haʊ ˈmɛni ˈkʌltʃərz ðɛr ɑr ɪn səˈsaɪəti/ — sounds like **NOH POYNT in KOWN-ting HOW MEN-ee KUL-churz thair AR in suh-SY-uh-tee**
 
 ## Topic 55: Fewer Women in Companies Than Men
 
 292. fewer women in companies than men | /ˈfjuər ˈwɪmɪn ɪn ˈkʌmpəniz ðæn mɛn/ — sounds like **FYOO-ur WIH-min in KUM-puh-neez than MEN**
-293. the glass ceiling | /ðə ɡlæs ˈsilɪŋ/ — sounds like **thuh GLAS SEE-ling**
+293. senior positions | /ˈsinjər pəˈzɪʃənz/ — sounds like **SEEN-yur puh-ZISH-uhnz**
+294. the glass ceiling | /ðə ɡlæs ˈsilɪŋ/ — sounds like **thuh GLAS SEE-ling**
+295. the barriers that stop women from getting higher positions | /ðə ˈbæriərz ðæt stɑp ˈwɪmɪn frʌm ˈɡɛtɪŋ ˈhaɪər pəˈzɪʃənz/ — sounds like **thuh BAIR-ee-urz that STAHP WIH-min fruhm GET-ing HY-ur puh-ZISH-uhnz**
+296. a shift in this question | /ə ʃɪft ɪn ðɪs ˈkwɛstʃən/ — sounds like **uh SHIFT in this KWES-chuhn**
+297. the reasons why women are choosing not to consider getting into top positions | /ðə ˈrizənz waɪ ˈwɪmɪn ɑr ˈtʃuzɪŋ nɑt tə kənˈsɪdər ˈɡɛtɪŋ ˈɪntu tɑp pəˈzɪʃənz/ — sounds like **thuh REE-zuhnz WY WIH-min ar CHOO-zing NAHT tuh kuhn-SID-ur GET-ing IN-too TAHP puh-ZISH-uhnz**
 
 ## Topic 56: Bees
 
@@ -486,7 +629,12 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 ## Topic 57: Darwin's The Origin of Species
 
 303. Darwin's The origin of Species | /ˈdɑrwɪnz ði ˈɔrədʒən əv ˈspiʃiz/ — sounds like **DAR-winz thee OR-uh-juhn uhv SPEE-sheez**
-304. Mendel's research on pea plants | /ˈmɛndəlz rɪˈsɜrtʃ ɑn pi plænts/ — sounds like **MEN-duhlz rih-SURCH ahn PEE PLANTS**
+304. the evolution of life | /ði ˌɛvəˈluʃən əv laɪf/ — sounds like **thee ev-uh-LOO-shuhn uhv LYF**
+305. natural selection | /ˈnætʃərəl səˈlɛkʃən/ — sounds like **NA-chur-uhl suh-LEK-shuhn**
+306. how traits are passed to offspring | /haʊ treɪts ɑr pæst tə ˈɔfˌsprɪŋ/ — sounds like **HOW TRAYTS ar PAST tuh AWF-spring**
+307. Mendel's research on pea plants | /ˈmɛndəlz rɪˈsɜrtʃ ɑn pi plænts/ — sounds like **MEN-duhlz rih-SURCH ahn PEE PLANTS**
+308. inheritance | /ɪnˈhɛrətəns/ — sounds like **in-HAIR-uh-tuhns**
+309. genetic differences | /dʒəˈnɛtɪk ˈdɪfərənsəz/ — sounds like **juh-NET-ik DIF-ur-uhn-suhz**
 
 ## Topic 58: Modern Poetry
 

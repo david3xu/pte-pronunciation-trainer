@@ -432,3 +432,167 @@
 398. study group | /ˈstʌdi gruːp/
 399. ideas | /aɪˈdɪəz/
 400. feedback | /ˈfiːdbæk/
+
+## The University Bookshop
+401. The University Bookshop | /ðə ˌjuːnɪˈvɜːsəti ˈbʊkʃɒp/
+402. close down | /kləʊz daʊn/
+403. heartbroken | /ˈhɑːtbrəʊkən/
+404. stop by it regularly | /stɒp baɪ ɪt ˈregjələli/
+405. a friendly little spot on campus | /ə ˈfrendli ˈlɪtl spɒt ɒn ˈkæmpəs/
+406. eyes easily get tired | /aɪz ˈiːzɪli get ˈtaɪəd/
+407. a narrow focus | /ə ˈnærəʊ ˈfəʊkəs/
+408. connect with students more | /kəˈnekt wɪð ˈstjuːdnts mɔː/
+409. sad news | /sæd njuːz/
+410. a nice place for my free time | /ə naɪs pleɪs fə maɪ friː taɪm/
+411. physical books are losing their place | /ˈfɪzɪkl bʊks ə ˈluːzɪŋ ðeə pleɪs/
+412. the sense of focus | /ðə sens əv ˈfəʊkəs/
+413. the staff are so kind | /ðə stɑːf ə səʊ kaɪnd/
+414. a wasted opportunity for them | /ə ˈweɪstɪd ˌɒpəˈtjuːnəti fə ðem/
+415. a few small changes | /ə fjuː smɔːl ˈtʃeɪndʒɪz/
+416. disappointing | /ˌdɪsəˈpɔɪntɪŋ/
+417. e-books are suit for reading habits of students | /ˈiːbʊks ə suːt fə ˈriːdɪŋ ˈhæbɪts əv ˈstjuːdnts/
+418. physical books for deep reading sessions | /ˈfɪzɪkl bʊks fə diːp ˈriːdɪŋ ˈseʃnz/
+419. how nice the staff were | /haʊ naɪs ðə stɑːf wɜː/
+420. one-stop spot to support students | /wʌn stɒp spɒt tə səˈpɔːt ˈstjuːdnts/
+
+## A Gap Year After Graduation
+421. A Gap Year After Graduation | /ə gæp jɪə ˈɑːftə ˌgrædʒuˈeɪʃn/
+422. looking into taking a gap year | /ˈlʊkɪŋ ˈɪntə ˈteɪkɪŋ ə gæp jɪə/
+423. a great chance to gain real-world experience | /ə greɪt tʃɑːns tə geɪn rɪəl wɜːld ɪkˈspɪəriəns/
+424. learning a language | /ˈlɜːnɪŋ ə ˈlæŋgwɪdʒ/
+425. all about planning | /ɔːl əˈbaʊt ˈplænɪŋ/
+426. building skills | /ˈbɪldɪŋ skɪlz/
+427. with proper planning and a clear goal | /wɪð ˈprɒpə ˈplænɪŋ ənd ə klɪə gəʊl/
+428. investment in your future | /ɪnˈvestmənt ɪn jɔː ˈfjuːtʃə/
+429. a time to grow and explore things outside the classroom | /ə taɪm tə grəʊ ənd ɪkˈsplɔː θɪŋz ˌaʊtˈsaɪd ðə ˈklɑːsruːm/
+430. it doesn't mean stopping completely | /ɪt ˈdʌznt miːn ˈstɒpɪŋ kəmˈpliːtli/
+431. return move focused and motivated | /rɪˈtɜːn mɔː ˈfəʊkəst ənd ˈməʊtɪveɪtɪd/
+432. value such experiences | /ˈvæljuː sʌtʃ ɪkˈspɪəriənsɪz/
+433. I'm not sure | /aɪm nɒt ʃɔː/
+434. make it harder to get back into studying | /meɪk ɪt ˈhɑːdə tə get bæk ˈɪntə ˈstʌdiɪŋ/
+435. keep move forward once you graduate | /kiːp ˈmuːvɪŋ ˈfɔːwəd wʌns juː ˈgrædʒueɪt/
+436. end up wasting time | /end ʌp ˈweɪstɪŋ taɪm/
+437. it's easy to lose a whole year | /ɪts ˈiːzi tə luːz ə həʊl jɪə/
+438. it's not for me | /ɪts nɒt fə miː/
+439. understand why some people choose it | /ˌʌndəˈstænd waɪ sʌm ˈpiːpl tʃuːz ɪt/
+
+## Social Media Does More Harm Than Good
+440. Social Media Does More Harm Than Good | /ˈsəʊʃl ˈmiːdiə dʌz mɔː hɑːm ðən gʊd/
+441. a real problem | /ə rɪəl ˈprɒbləm/
+442. keeps people from having real conversations | /kiːps ˈpiːpl frəm ˈhævɪŋ rɪəl ˌkɒnvəˈseɪʃnz/
+443. start with good intentions | /stɑːt wɪð gʊd ɪnˈtenʃnz/
+444. privacy issues or misinformation | /ˈprɪvəsi ˈɪʃuːz ɔː ˌmɪsɪnfəˈmeɪʃn/
+445. without proper education | /wɪˈðaʊt ˈprɒpə ˌedʒuˈkeɪʃn/
+446. makes them anxious or unhappy | /meɪks ðəm ˈæŋkʃəs ɔː ʌnˈhæpi/
+447. lost three hours watching random videos | /lɒst θriː ˈaʊəz ˈwɒtʃɪŋ ˈrændəm ˈvɪdiəʊz/
+448. replace face-to-face interaction | /rɪˈpleɪs feɪs tə feɪs ˌɪntərˈækʃn/
+449. losing the ability to read body language | /ˈluːzɪŋ ði əˈbɪləti tə riːd ˈbɒdi ˈlæŋgwɪdʒ/
+450. balance and self-control are key | /ˈbæləns ənd self kənˈtrəʊl ə kiː/
+451. time management | /taɪm ˈmænɪdʒmənt/
+452. find academic opportunities | /faɪnd ˌækəˈdemɪk ˌɒpəˈtjuːnətiz/
+453. not just a distraction | /nɒt dʒʌst ə dɪˈstrækʃn/
+454. teaching people how to use these platforms | /ˈtiːtʃɪŋ ˈpiːpl haʊ tə juːz ðiːz ˈplætfɔːmz/
+455. a positive online experience | /ə ˈpɒzətɪv ˈɒnˌlaɪn ɪkˈspɪəriəns/
+456. guidance is better than restriction | /ˈgaɪdns ɪz ˈbetə ðən rɪˈstrɪkʃn/
+
+## Join Student Clubs Next Semester
+457. Join Student Clubs Next Semester | /dʒɔɪn ˈstjuːdnt klʌbz nekst sɪˈmestə/
+458. considering signing up for a couple | /kənˈsɪdərɪŋ ˈsaɪnɪŋ ʌp fər ə ˈkʌpl/
+459. meet people outside my major | /miːt ˈpiːpl ˌaʊtˈsaɪd maɪ ˈmeɪdʒə/
+460. how to communicate better and work in a group | /haʊ tə kəˈmjuːnɪkeɪt ˈbetə ənd wɜːk ɪn ə gruːp/
+461. my best memories | /maɪ best ˈmemriz/
+462. social and personal growth | /ˈsəʊʃl ənd ˈpɜːsənl grəʊθ/
+463. being part of a community | /ˈbiːɪŋ pɑːt əv ə kəˈmjuːnəti/
+464. decided not to join any clubs this year | /dɪˈsaɪdɪd nɒt tə dʒɔɪn ˈeni klʌbz ðɪs jɪə/
+465. focus on my studies | /ˈfəʊkəs ɒn maɪ ˈstʌdiz/
+466. a lot of time was wasted in meetings | /ə lɒt əv taɪm wəz ˈweɪstɪd ɪn ˈmiːtɪŋz/
+467. I'm happy with my decision | /aɪm ˈhæpi wɪð maɪ dɪˈsɪʒn/
+468. the best way to protect your mental health | /ðə best weɪ tə prəˈtekt jɔː ˈmentl helθ/
+469. joining at least one club | /ˈdʒɔɪnɪŋ ət liːst wʌn klʌb/
+470. project management and teamwork | /ˈprɒdʒekt ˈmænɪdʒmənt ənd ˈtiːmwɜːk/
+471. a real sense of achievement | /ə rɪəl sens əv əˈtʃiːvmənt/
+472. gain more than just academic knowledge | /geɪn mɔː ðən dʒʌst ˌækəˈdemɪk ˈnɒlɪdʒ/
+473. open doors to new interests | /ˈəʊpən dɔːz tə njuː ˈɪntrəsts/
+
+## The Value of Traditional Books Versus Digital Materials
+474. The Value of Traditional Books Versus Digital Materials | /ðə ˈvæljuː əv trəˈdɪʃənl bʊks ˈvɜːsəs ˈdɪdʒɪtl məˈtɪəriəlz/
+475. prefer physical textbooks | /prɪˈfɜː ˈfɪzɪkl ˈtekstbʊks/
+476. highlight properly | /ˈhaɪlaɪt ˈprɒpəli/
+477. reducing screen time | /rɪˈdjuːsɪŋ skriːn taɪm/
+478. using paper books gives my eyes a break | /ˈjuːzɪŋ ˈpeɪpə bʊks gɪvz maɪ aɪz ə breɪk/
+479. a mixed approach would work | /ə mɪkst əˈprəʊtʃ wʊd wɜːk/
+480. digital resources way more efficient | /ˈdɪdʒɪtl rɪˈzɔːsɪz weɪ mɔː ɪˈfɪʃnt/
+481. find a keyword in seconds | /faɪnd ə ˈkiːwɜːd ɪn ˈsekəndz/
+482. digital is just more practical | /ˈdɪdʒɪtl ɪz dʒʌst mɔː ˈpræktɪkl/
+483. never lose my notes | /ˈnevə luːz maɪ nəʊts/
+484. I guess that's reasonable | /aɪ ges ðæts ˈriːznəbl/
+485. it's not the same experience | /ɪts nɒt ðə seɪm ɪkˈspɪəriəns/
+486. it helps me focus | /ɪt helps miː ˈfəʊkəs/
+487. it doesn't work for everyone | /ɪt ˈdʌznt wɜːk fər ˈevriwʌn/
+488. end up on social media instead of studying | /end ʌp ɒn ˈsəʊʃl ˈmiːdiə ɪnˈsted əv ˈstʌdiɪŋ/
+489. okay with mixing | /ˌəʊˈkeɪ wɪð ˈmɪksɪŋ/
+
+## The Value of Mandatory Group Projects
+490. The Value of Mandatory Group Projects | /ðə ˈvæljuː əv ˈmændətri gruːp ˈprɒdʒekts/
+491. finish our presentation | /ˈfɪnɪʃ ˈaʊə ˌpreznˈteɪʃn/
+492. it's so unfair | /ɪts səʊ ʌnˈfeə/
+493. great in theory | /greɪt ɪn ˈθɪəri/
+494. end up doing other people's work | /end ʌp ˈduːɪŋ ˈʌðə ˈpiːplz wɜːk/
+495. not everyone learns the same way | /nɒt ˈevriwʌn lɜːnz ðə seɪm weɪ/
+496. I feel the same | /aɪ fiːl ðə seɪm/
+497. four students who have different part-time jobs | /fɔː ˈstjuːdnts huː həv ˈdɪfrənt pɑːt taɪm dʒɒbz/
+498. graded on my own effort | /ˈgreɪdɪd ɒn maɪ əʊn ˈefət/
+499. create unnecessary tension | /kriˈeɪt ʌnˈnesəsri ˈtenʃn/
+500. encourage positive relationships | /ɪnˈkʌrɪdʒ ˈpɒzətɪv rɪˈleɪʃnʃɪps/
+501. optional would be perfect | /ˈɒpʃənl wʊd bi ˈpɜːfɪkt/
+502. still get that experience | /stɪl get ðæt ɪkˈspɪəriəns/
+503. group projects are really valuable | /gruːp ˈprɒdʒekts ə ˈrɪəli ˈvæljuəbl/
+504. how to delegate tasks and communicate clearly | /haʊ tə ˈdelɪgeɪt tɑːsks ənd kəˈmjuːnɪkeɪt ˈklɪəli/
+505. it was tough but I felt proud afterward | /ɪt wəz tʌf bət aɪ felt praʊd ˈɑːftəwəd/
+506. I guess that's fair | /aɪ ges ðæts feə/
+507. clear guidelines | /klɪə ˈgaɪdlaɪnz/
+
+## Dealing with Noisy Neighbors
+508. Dealing with Noisy Neighbors | /ˈdiːlɪŋ wɪð ˈnɔɪzi ˈneɪbəz/
+509. playing loud music | /ˈpleɪɪŋ laʊd ˈmjuːzɪk/
+510. hard for me to focus | /hɑːd fə miː tə ˈfəʊkəs/
+511. not really sleeping well | /nɒt ˈrɪəli ˈsliːpɪŋ wel/
+512. why should I have to leave my own room | /waɪ ʃʊd aɪ həv tə liːv maɪ əʊn ruːm/
+513. feels unfair | /fiːlz ʌnˈfeə/
+514. the one who has to change | /ðə wʌn huː həz tə tʃeɪndʒ/
+515. think about it if nothing else gets better | /θɪŋk əˈbaʊt ɪt ɪf ˈnʌθɪŋ els gets ˈbetə/
+516. talking to them directly | /ˈtɔːkɪŋ tə ðəm dɪˈrektli/
+517. a similar problem last semester | /ə ˈsɪmɪlə ˈprɒbləm lɑːst sɪˈmestə/
+518. going to the RA is an option | /ˈgəʊɪŋ tə ðə ˌɑːr ˈeɪ ɪz ən ˈɒpʃən/
+519. nothing happens | /ˈnʌθɪŋ ˈhæpənz/
+520. go to the library | /gəʊ tə ðə ˈlaɪbrəri/
+521. affecting your studies this much | /əˈfektɪŋ jɔː ˈstʌdiz ðɪs mʌtʃ/
+522. asking for a room change | /ˈɑːskɪŋ fər ə ruːm tʃeɪndʒ/
+523. talking to them is the first thing to try | /ˈtɔːkɪŋ tə ðəm ɪz ðə fɜːst θɪŋ tə traɪ/
+524. talk to your resident advisor | /tɔːk tə jɔː ˈrezɪdənt ədˈvaɪzə/
+525. not fair to expect you to keep moving | /nɒt feə tə ɪkˈspekt juː tə kiːp ˈmuːvɪŋ/
+526. need to take it higher | /niːd tə teɪk ɪt ˈhaɪə/
+527. complain about ongoing problems | /kəmˈpleɪn əˈbaʊt ˈɒngəʊɪŋ ˈprɒbləmz/
+528. a group complaint often matters more | /ə gruːp kəmˈpleɪnt ˈɒfn ˈmætəz mɔː/
+
+## How Different Lecturers Teach at University
+529. How Different Lecturers Teach at University | /haʊ ˈdɪfrənt ˈlektʃərəz tiːtʃ ət ˌjuːnɪˈvɜːsəti/
+530. lecturers who make their classes interactive | /ˈlektʃərəz huː meɪk ðeə ˈklɑːsɪz ˌɪntərˈæktɪv/
+531. reading from slides | /ˈriːdɪŋ frəm slaɪdz/
+532. make things more lively | /meɪk θɪŋz mɔː ˈlaɪvli/
+533. a great way to check | /ə greɪt weɪ tə tʃek/
+534. quick feedback on assignments | /kwɪk ˈfiːdbæk ɒn əˈsaɪnmənts/
+535. make a huge difference | /meɪk ə hjuːdʒ ˈdɪfrəns/
+536. balance giving you the main information with discussion | /ˈbæləns ˈgɪvɪŋ juː ðə meɪn ˌɪnfəˈmeɪʃn wɪð dɪˈskʌʃn/
+537. learn best from information | /lɜːn best frəm ˌɪnfəˈmeɪʃn/
+538. more practical | /mɔː ˈpræktɪkl/
+539. more on critical thinking | /mɔː ɒn ˈkrɪtɪkl ˈθɪŋkɪŋ/
+540. a different teaching style | /ə ˈdɪfrənt ˈtiːtʃɪŋ staɪl/
+541. how much technology can help | /haʊ mʌtʃ tekˈnɒlədʒi kən help/
+542. research work | /rɪˈsɜːtʃ wɜːk/
+543. equal access to the tools | /ˈiːkwəl ˈækses tə ðə tuːlz/
+544. connect the theory to real-world examples | /kəˈnekt ðə ˈθɪəri tə rɪəl wɜːld ɪgˈzɑːmplz/
+545. examples from industry | /ɪgˈzɑːmplz frəm ˈɪndəstri/
+546. using online learning platforms | /ˈjuːzɪŋ ˈɒnˌlaɪn ˈlɜːnɪŋ ˈplætfɔːmz/
+547. get into the material | /get ˈɪntə ðə məˈtɪəriəl/
+548. finding a balance that works for different learning styles | /ˈfaɪndɪŋ ə ˈbæləns ðət wɜːks fə ˈdɪfrənt ˈlɜːnɪŋ staɪlz/

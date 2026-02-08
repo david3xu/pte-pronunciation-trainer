@@ -270,7 +270,7 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 188. tropical climates | /ˈtrɑpɪkəl ˈklaɪməts/ — sounds like **TRAH-pih-kuhl KLY-muhts**
 189. a prohormone | /ə proʊˈhɔrˌmoʊn/ — sounds like **uh proh-HOR-mohn**
 190. migration away from equatorial regions | /maɪˈɡreɪʃən əˈweɪ frʌm ˌikwəˈtɔriəl ˈridʒənz/ — sounds like **my-GRAY-shuhn uh-WAY fruhm ee-kwuh-TOR-ee-uhl REE-juhnz**
-191. sufficient skill exposure to sunlight | /səˈfɪʃənt skɪl ɪkˈspoʊʒər tə ˈsʌnˌlaɪt/ — sounds like **suh-FISH-uhnt SKIL ik-SPOH-zhur tuh SUN-lyt**
+191. sufficient skin exposure to sunlight | /səˈfɪʃənt skɪn ɪkˈspoʊʒər tə ˈsʌnˌlaɪt/ — sounds like **suh-FISH-uhnt SKIN ik-SPOH-zhur tuh SUN-lyt**
 
 ## Topic 24: The World
 
@@ -326,7 +326,7 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 229. starting in a Big Bang | /ˈstɑrtɪŋ ɪn ə bɪɡ bæŋ/ — sounds like **STAR-ting in uh BIG BANG**
 230. explaining how the stars work | /ɪkˈspleɪnɪŋ haʊ ðə stɑrz wɜrk/ — sounds like **ik-SPLAY-ning HOW thuh STARZ WURK**
 231. fitting well | /ˈfɪtɪŋ wɛl/ — sounds like **FIT-ing WEL**
-232. the universe being older that the oldest star | /ðə ˈjunəˌvɜrs ˈbiɪŋ ˈoʊldər ðæt ði ˈoʊldəst stɑr/ — sounds like **thuh YOO-nuh-vurs BEE-ing OHL-dur that thee OHL-duhst STAR**
+232. the universe being older than the oldest star | /ðə ˈjunəˌvɜrs ˈbiɪŋ ˈoʊldər ðæn ði ˈoʊldəst stɑr/ — sounds like **thuh YOO-nuh-vurs BEE-ing OHL-dur than thee OHL-duhst STAR**
 233. how the universe began | /haʊ ðə ˈjunəˌvɜrs bɪˈɡæn/ — sounds like **HOW thuh YOO-nuh-vurs bih-GAN**
 234. what will happen in the future | /wʌt wɪl ˈhæpən ɪn ðə ˈfjutʃər/ — sounds like **WUHT wil HAP-uhn in thuh FYOO-chur**
 

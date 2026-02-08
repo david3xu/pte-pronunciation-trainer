@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-02-08T22:14:16.829Z",
+    "generated": "2026-02-08T22:35:07.131Z",
     "totalTerms": 492,
     "source": "pte-sst-complete",
     "description": "Auto-discovered vocabulary book: pte-sst-complete",
@@ -4493,7 +4493,7 @@
       "source": "pte-sst-complete"
     },
     {
-      "english": "an experiment on customers behaviors",
+      "english": "an experiment on customers' behaviors",
       "pronunciation": {
         "british": {
           "ipa": "æn ɪkˈspɛrəmənt ɑn ˈkʌstəmərz bɪˈheɪvjərz",

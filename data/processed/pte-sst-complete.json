@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-02-08T07:49:23.073Z",
+    "generated": "2026-02-08T22:14:16.829Z",
     "totalTerms": 492,
     "source": "pte-sst-complete",
     "description": "Auto-discovered vocabulary book: pte-sst-complete",
@@ -3053,15 +3053,15 @@
       "source": "pte-sst-complete"
     },
     {
-      "english": "sufficient skill exposure to sunlight",
+      "english": "sufficient skin exposure to sunlight",
       "pronunciation": {
         "british": {
-          "ipa": "səˈfɪʃənt skɪl ɪkˈspoʊʒər tə ˈsʌnˌlaɪt",
-          "phonetic": "suh-FISH-uhnt SKIL ik-SPOH-zhur tuh SUN-lyt"
+          "ipa": "səˈfɪʃənt skɪn ɪkˈspoʊʒər tə ˈsʌnˌlaɪt",
+          "phonetic": "suh-FISH-uhnt SKIN ik-SPOH-zhur tuh SUN-lyt"
         },
         "american": {
-          "ipa": "səˈfɪʃənt skɪl ɪkˈspoʊʒər tə ˈsʌnˌlaɪt",
-          "phonetic": "suh-FISH-uhnt SKIL ik-SPOH-zhur tuh SUN-lyt"
+          "ipa": "səˈfɪʃənt skɪn ɪkˈspoʊʒər tə ˈsʌnˌlaɪt",
+          "phonetic": "suh-FISH-uhnt SKIN ik-SPOH-zhur tuh SUN-lyt"
         }
       },
       "difficulty": "hard",
@@ -3693,15 +3693,15 @@
       "source": "pte-sst-complete"
     },
     {
-      "english": "the universe being older that the oldest star",
+      "english": "the universe being older than the oldest star",
       "pronunciation": {
         "british": {
-          "ipa": "ðə ˈjunəˌvɜrs ˈbiɪŋ ˈoʊldər ðæt ði ˈoʊldəst stɑr",
-          "phonetic": "thuh YOO-nuh-vurs BEE-ing OHL-dur that thee OHL-duhst STAR"
+          "ipa": "ðə ˈjunəˌvɜrs ˈbiɪŋ ˈoʊldər ðæn ði ˈoʊldəst stɑr",
+          "phonetic": "thuh YOO-nuh-vurs BEE-ing OHL-dur than thee OHL-duhst STAR"
         },
         "american": {
-          "ipa": "ðə ˈjunəˌvɜrs ˈbiɪŋ ˈoʊldər ðæt ði ˈoʊldəst stɑr",
-          "phonetic": "thuh YOO-nuh-vurs BEE-ing OHL-dur that thee OHL-duhst STAR"
+          "ipa": "ðə ˈjunəˌvɜrs ˈbiɪŋ ˈoʊldər ðæn ði ˈoʊldəst stɑr",
+          "phonetic": "thuh YOO-nuh-vurs BEE-ing OHL-dur than thee OHL-duhst STAR"
         }
       },
       "difficulty": "hard",

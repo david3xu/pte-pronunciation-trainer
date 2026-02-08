@@ -396,9 +396,9 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 280. intervening under circumstances | /ˌɪntərˈvinɪŋ ˈʌndər ˈsɜrkəmˌstænsəz/ — sounds like **in-tur-VEE-ning UN-dur SUR-kuhm-stan-suhz**
 281. more acceptable technology to most of the public | /mɔr əkˈsɛptəbəl tɛkˈnɑlədʒi tə moʊst əv ðə ˈpʌblɪk/ — sounds like **MOR ak-SEP-tuh-buhl tek-NAH-luh-jee tuh MOHST uhv thuh PUB-lik**
 
-## Topic 35: An Experiment on Customers Behaviors
+## Topic 35: An Experiment on Customers' Behaviors
 
-282. an experiment on customers behaviors | /æn ɪkˈspɛrəmənt ɑn ˈkʌstəmərz bɪˈheɪvjərz/ — sounds like **an ik-SPER-uh-muhnt ahn KUS-tuh-murz bih-HAYV-yurz**
+282. an experiment on customers' behaviors | /æn ɪkˈspɛrəmənt ɑn ˈkʌstəmərz bɪˈheɪvjərz/ — sounds like **an ik-SPER-uh-muhnt ahn KUS-tuh-murz bih-HAYV-yurz**
 283. inactive credit card users | /ɪnˈæktɪv ˈkrɛdət kɑrd ˈjuzərz/ — sounds like **in-AK-tiv KRED-it KARD YOO-zurz**
 284. a message offering benefits | /ə ˈmɛsədʒ ˈɔfərɪŋ ˈbɛnəfɪts/ — sounds like **uh MES-ij AW-fur-ing BEN-uh-fits**
 285. a message implying a penalty | /ə ˈmɛsədʒ ɪmˈplaɪɪŋ ə ˈpɛnəlti/ — sounds like **uh MES-ij im-PLY-ing uh PEN-uhl-tee**

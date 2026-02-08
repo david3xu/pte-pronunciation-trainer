@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-02-08T05:33:20.929Z",
-    "totalTerms": 0,
+    "generated": "2026-02-08T07:49:22.979Z",
+    "totalTerms": 296,
     "source": "pte-di-easy-phrases",
     "description": "Auto-discovered vocabulary book: pte-di-easy-phrases",
     "version": "1.0",
@@ -11,5 +11,4742 @@
     "hasIPA": true,
     "keepDuplicates": true
   },
-  "vocabulary": []
+  "vocabulary": [
+    {
+      "english": "rises sharply",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈraɪzɪz ˈʃɑːpli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈraɪzɪz ˈʃɑːpli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "rose sharply",
+      "pronunciation": {
+        "british": {
+          "ipa": "rəʊz ˈʃɑːpli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rəʊz ˈʃɑːpli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "goes up slowly",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɡəʊz ʌp ˈsləʊli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɡəʊz ʌp ˈsləʊli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "goes up",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɡəʊz ʌp",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɡəʊz ʌp",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "increases",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈkriːsɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪnˈkriːsɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "increased",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈkriːst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪnˈkriːst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "increase sharply",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈkriːs ˈʃɑːpli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪnˈkriːs ˈʃɑːpli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "increase steadily",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈkriːs ˈstedɪli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪnˈkriːs ˈstedɪli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "keeps rising steadily",
+      "pronunciation": {
+        "british": {
+          "ipa": "kiːps ˈraɪzɪŋ ˈstedɪli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kiːps ˈraɪzɪŋ ˈstedɪli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "increasing slightly from... to...",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈkriːsɪŋ ˈslaɪtli frɒm... tuː...",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪnˈkriːsɪŋ ˈslaɪtli frɒm... tuː...",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "grew very rapidly",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɡruː ˈveri ˈræpɪdli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɡruː ˈveri ˈræpɪdli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "continues to rise",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈtɪnjuːz tə raɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kənˈtɪnjuːz tə raɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "reaching its peak",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈriːtʃɪŋ ɪts piːk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈriːtʃɪŋ ɪts piːk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "to reach a peak",
+      "pronunciation": {
+        "british": {
+          "ipa": "tə riːtʃ ə piːk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "tə riːtʃ ə piːk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "rises much more quickly",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈraɪzɪz mʌtʃ mɔː ˈkwɪkli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈraɪzɪz mʌtʃ mɔː ˈkwɪkli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "starts to go up",
+      "pronunciation": {
+        "british": {
+          "ipa": "stɑːts tə ɡəʊ ʌp",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "stɑːts tə ɡəʊ ʌp",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "go back up",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɡəʊ bæk ʌp",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɡəʊ bæk ʌp",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "also rises but only reaches",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɔːlsəʊ ˈraɪzɪz bət ˈəʊnli ˈriːtʃɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɔːlsəʊ ˈraɪzɪz bət ˈəʊnli ˈriːtʃɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "drops down",
+      "pronunciation": {
+        "british": {
+          "ipa": "drɒps daʊn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "drɒps daʊn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "drops to",
+      "pronunciation": {
+        "british": {
+          "ipa": "drɒps tuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "drɒps tuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "drops dramatically",
+      "pronunciation": {
+        "british": {
+          "ipa": "drɒps drəˈmætɪkli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "drɒps drəˈmætɪkli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "falls",
+      "pronunciation": {
+        "british": {
+          "ipa": "fɔːlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "fɔːlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "gradually falls",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɡrædʒuəli fɔːlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɡrædʒuəli fɔːlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "decreases",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈkriːsɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "dɪˈkriːsɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "decrease slightly",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈkriːs ˈslaɪtli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "dɪˈkriːs ˈslaɪtli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "continues to fall",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈtɪnjuːz tə fɔːl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kənˈtɪnjuːz tə fɔːl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "keeps getting smaller",
+      "pronunciation": {
+        "british": {
+          "ipa": "kiːps ˈɡetɪŋ ˈsmɔːlə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kiːps ˈɡetɪŋ ˈsmɔːlə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "recover slightly",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈkʌvə ˈslaɪtli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rɪˈkʌvə ˈslaɪtli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "stays fairly flat",
+      "pronunciation": {
+        "british": {
+          "ipa": "steɪz ˈfeəli flæt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "steɪz ˈfeəli flæt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "stays around that level",
+      "pronunciation": {
+        "british": {
+          "ipa": "steɪz əˈraʊnd ðæt ˈlevəl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "steɪz əˈraʊnd ðæt ˈlevəl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "stays the highest",
+      "pronunciation": {
+        "british": {
+          "ipa": "steɪz ðə ˈhaɪɪst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "steɪz ðə ˈhaɪɪst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "staying fairly constant",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsteɪɪŋ ˈfeəli ˈkɒnstənt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsteɪɪŋ ˈfeəli ˈkɒnstənt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "all stay very low",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɔːl steɪ ˈveri ləʊ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɔːl steɪ ˈveri ləʊ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "remains stable",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈmeɪnz ˈsteɪbəl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rɪˈmeɪnz ˈsteɪbəl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "relatively stable",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈrelətɪvli ˈsteɪbəl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈrelətɪvli ˈsteɪbəl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "fairly steady",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfeəli ˈstedi",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfeəli ˈstedi",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "settled at",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsetəld æt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsetəld æt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "starts at about",
+      "pronunciation": {
+        "british": {
+          "ipa": "stɑːts æt əˈbaʊt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "stɑːts æt əˈbaʊt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "starts very high",
+      "pronunciation": {
+        "british": {
+          "ipa": "stɑːts ˈveri haɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "stɑːts ˈveri haɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "start at roughly",
+      "pronunciation": {
+        "british": {
+          "ipa": "stɑːt æt ˈrʌfli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "stɑːt æt ˈrʌfli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "started at about",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈstɑːtɪd æt əˈbaʊt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈstɑːtɪd æt əˈbaʊt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "which was the highest",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪtʃ wɒz ðə ˈhaɪɪst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɪtʃ wɒz ðə ˈhaɪɪst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "both started much lower",
+      "pronunciation": {
+        "british": {
+          "ipa": "bəʊθ ˈstɑːtɪd mʌtʃ ˈləʊə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "bəʊθ ˈstɑːtɪd mʌtʃ ˈləʊə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "Both types start at",
+      "pronunciation": {
+        "british": {
+          "ipa": "bəʊθ taɪps stɑːt æt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "bəʊθ taɪps stɑːt æt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "Both lines start",
+      "pronunciation": {
+        "british": {
+          "ipa": "bəʊθ laɪnz stɑːt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "bəʊθ laɪnz stɑːt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "relatively low levels",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈrelətɪvli ləʊ ˈlevəlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈrelətɪvli ləʊ ˈlevəlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "very low at [time]",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈveri ləʊ æt [time]",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈveri ləʊ æt [time]",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "ending at around",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈendɪŋ æt əˈraʊnd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈendɪŋ æt əˈraʊnd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "ends at",
+      "pronunciation": {
+        "british": {
+          "ipa": "endz æt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "endz æt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "highest point",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhaɪɪst pɔɪnt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhaɪɪst pɔɪnt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the highest",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈhaɪɪst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈhaɪɪst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "lowest point",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈləʊɪst pɔɪnt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈləʊɪst pɔɪnt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the lowest",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈləʊɪst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈləʊɪst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "largest",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlɑːdʒɪst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈlɑːdʒɪst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "second largest",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsekənd ˈlɑːdʒɪst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsekənd ˈlɑːdʒɪst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the second largest group",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈsekənd ˈlɑːdʒɪst ɡruːp",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈsekənd ˈlɑːdʒɪst ɡruːp",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "smallest",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsmɔːlɪst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsmɔːlɪst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the smallest category",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈsmɔːlɪst ˈkætəɡəri",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈsmɔːlɪst ˈkætəɡəri",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "peak",
+      "pronunciation": {
+        "british": {
+          "ipa": "piːk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "piːk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "smaller peak",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsmɔːlə piːk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsmɔːlə piːk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "by far the largest",
+      "pronunciation": {
+        "british": {
+          "ipa": "baɪ fɑː ðə ˈlɑːdʒɪst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "baɪ fɑː ðə ˈlɑːdʒɪst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "comes in second",
+      "pronunciation": {
+        "british": {
+          "ipa": "kʌmz ɪn ˈsekənd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kʌmz ɪn ˈsekənd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "is third",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪz θɜːd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪz θɜːd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "about [number]",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈbaʊt [number]",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈbaʊt [number]",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "around [number]",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈraʊnd [number]",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈraʊnd [number]",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "at about",
+      "pronunciation": {
+        "british": {
+          "ipa": "æt əˈbaʊt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "æt əˈbaʊt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "at around",
+      "pronunciation": {
+        "british": {
+          "ipa": "æt əˈraʊnd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "æt əˈraʊnd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "reaching about",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈriːtʃɪŋ əˈbaʊt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈriːtʃɪŋ əˈbaʊt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "growing to around",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɡrəʊɪŋ tuː əˈraʊnd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɡrəʊɪŋ tuː əˈraʊnd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "over [number]",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈəʊvə [number]",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈəʊvə [number]",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "less than [number]",
+      "pronunciation": {
+        "british": {
+          "ipa": "les ðæn [number]",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "les ðæn [number]",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "close to",
+      "pronunciation": {
+        "british": {
+          "ipa": "kləʊs tuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kləʊs tuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "just [number]",
+      "pronunciation": {
+        "british": {
+          "ipa": "dʒʌst [number]",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "dʒʌst [number]",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "roughly",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈrʌfli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈrʌfli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "both have around [X] to [Y]",
+      "pronunciation": {
+        "british": {
+          "ipa": "bəʊθ hæv əˈraʊnd [X] tuː [Y]",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "bəʊθ hæv əˈraʊnd [X] tuː [Y]",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "are all between [X] and [Y]",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɑːr ɔːl bɪˈtwiːn [X] ænd [Y]",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɑːr ɔːl bɪˈtwiːn [X] ænd [Y]",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "makes up [X] percent",
+      "pronunciation": {
+        "british": {
+          "ipa": "meɪks ʌp [X] pəˈsent",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "meɪks ʌp [X] pəˈsent",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "make up the largest portion",
+      "pronunciation": {
+        "british": {
+          "ipa": "meɪk ʌp ðə ˈlɑːdʒɪst ˈpɔːʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "meɪk ʌp ðə ˈlɑːdʒɪst ˈpɔːʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "make up a small portion",
+      "pronunciation": {
+        "british": {
+          "ipa": "meɪk ʌp ə smɔːl ˈpɔːʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "meɪk ʌp ə smɔːl ˈpɔːʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "takes up [X] percent",
+      "pronunciation": {
+        "british": {
+          "ipa": "teɪks ʌp [X] pəˈsent",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "teɪks ʌp [X] pəˈsent",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "accounts for",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈkaʊnts fɔː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈkaʊnts fɔː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "which is only",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪtʃ ɪz ˈəʊnli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɪtʃ ɪz ˈəʊnli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "at [X] percent",
+      "pronunciation": {
+        "british": {
+          "ipa": "æt [X] pəˈsent",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "æt [X] pəˈsent",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "went up and down",
+      "pronunciation": {
+        "british": {
+          "ipa": "went ʌp ænd daʊn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "went ʌp ænd daʊn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "ups and downs",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʌps ænd daʊnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ʌps ænd daʊnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "unstable",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʌnˈsteɪbəl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ʌnˈsteɪbəl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "quite a lot",
+      "pronunciation": {
+        "british": {
+          "ipa": "kwaɪt ə lɒt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kwaɪt ə lɒt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "sharp spike",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʃɑːp spaɪk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ʃɑːp spaɪk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the closer to... the [more/less]",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈkləʊsə tuː... ðə [more/less]",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈkləʊsə tuː... ðə [more/less]",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "pattern is opposite",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpætən ɪz ˈɒpəzɪt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈpætən ɪz ˈɒpəzɪt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "at similar levels",
+      "pronunciation": {
+        "british": {
+          "ipa": "æt ˈsɪmɪlə ˈlevəlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "æt ˈsɪmɪlə ˈlevəlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "much faster/slower than",
+      "pronunciation": {
+        "british": {
+          "ipa": "mʌtʃ ˈfɑːstə/ˈsləʊə ðæn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "mʌtʃ ˈfɑːstə/ˈsləʊə ðæn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "grows much larger than",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɡrəʊz mʌtʃ ˈlɑːdʒə ðæn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɡrəʊz mʌtʃ ˈlɑːdʒə ðæn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "in contrast",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ˈkɒntrɑːst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn ˈkɒntrɑːst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "while [comparison]",
+      "pronunciation": {
+        "british": {
+          "ipa": "waɪl [comparison]",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "waɪl [comparison]",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "rather than",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈrɑːðə ðæn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈrɑːðə ðæn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "more than",
+      "pronunciation": {
+        "british": {
+          "ipa": "mɔː ðæn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "mɔː ðæn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "higher for... than",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhaɪə fɔː... ðæn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhaɪə fɔː... ðæn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "only [number]",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈəʊnli [number]",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈəʊnli [number]",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "in the middle",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ðə ˈmɪdəl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn ðə ˈmɪdəl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "versus",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈvɜːsəs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈvɜːsəs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "vs",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈviː es",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈviː es",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "follow a similar pattern",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɒləʊ ə ˈsɪmɪlə ˈpætən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfɒləʊ ə ˈsɪmɪlə ˈpætən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "move together",
+      "pronunciation": {
+        "british": {
+          "ipa": "muːv təˈɡeðə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "muːv təˈɡeðə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "closely connected",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkləʊsli kəˈnektɪd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkləʊsli kəˈnektɪd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "close together",
+      "pronunciation": {
+        "british": {
+          "ipa": "kləʊs təˈɡeðə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kləʊs təˈɡeðə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "do more... than",
+      "pronunciation": {
+        "british": {
+          "ipa": "duː mɔː... ðæn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "duː mɔː... ðæn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "shows the fastest growth",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʃəʊz ðə ˈfɑːstɪst ɡrəʊθ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ʃəʊz ðə ˈfɑːstɪst ɡrəʊθ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "has the highest",
+      "pronunciation": {
+        "british": {
+          "ipa": "hæz ðə ˈhaɪɪst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "hæz ðə ˈhaɪɪst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "drop significantly",
+      "pronunciation": {
+        "british": {
+          "ipa": "drɒp sɪɡˈnɪfɪkəntli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "drɒp sɪɡˈnɪfɪkəntli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "much larger... than all other",
+      "pronunciation": {
+        "british": {
+          "ipa": "mʌtʃ ˈlɑːdʒə... ðæn ɔːl ˈʌðə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "mʌtʃ ˈlɑːdʒə... ðæn ɔːl ˈʌðə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "are either... or...",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɑːr ˈaɪðə... ɔː...",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɑːr ˈaɪðə... ɔː...",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "for the first [X] years",
+      "pronunciation": {
+        "british": {
+          "ipa": "fɔː ðə fɜːst [X] jɪəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "fɔː ðə fɜːst [X] jɪəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "throughout the rest of",
+      "pronunciation": {
+        "british": {
+          "ipa": "θruːˈaʊt ðə rest ɒv",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "θruːˈaʊt ðə rest ɒv",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "throughout the period",
+      "pronunciation": {
+        "british": {
+          "ipa": "θruːˈaʊt ðə ˈpɪəriəd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "θruːˈaʊt ðə ˈpɪəriəd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "for most of",
+      "pronunciation": {
+        "british": {
+          "ipa": "fɔː məʊst ɒv",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "fɔː məʊst ɒv",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "over this [X]-year period",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈəʊvə ðɪs [X]-jɪə ˈpɪəriəd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈəʊvə ðɪs [X]-jɪə ˈpɪəriəd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "during this period",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdjʊərɪŋ ðɪs ˈpɪəriəd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈdjʊərɪŋ ðɪs ˈpɪəriəd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "Over the years",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈəʊvə ðə jɪəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈəʊvə ðə jɪəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "by [year]",
+      "pronunciation": {
+        "british": {
+          "ipa": "baɪ [year]",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "baɪ [year]",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "from [year] to [year]",
+      "pronunciation": {
+        "british": {
+          "ipa": "frɒm [year] tuː [year]",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "frɒm [year] tuː [year]",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "after [year]",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɑːftə [year]",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɑːftə [year]",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "After that",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɑːftə ðæt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɑːftə ðæt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "by hour of day",
+      "pronunciation": {
+        "british": {
+          "ipa": "baɪ aʊər ɒv deɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "baɪ aʊər ɒv deɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "on weekdays",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɒn ˈwiːkdeɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɒn ˈwiːkdeɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "across all ages",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈkrɒs ɔːl ˈeɪdʒɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈkrɒs ɔːl ˈeɪdʒɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "in younger groups",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ˈjʌŋɡə ɡruːps",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn ˈjʌŋɡə ɡruːps",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "broken down by",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbrəʊkən daʊn baɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbrəʊkən daʊn baɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "this number",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs ˈnʌmbə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðɪs ˈnʌmbə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "very few",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈveri fjuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈveri fjuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "both [groups]",
+      "pronunciation": {
+        "british": {
+          "ipa": "bəʊθ [groups]",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "bəʊθ [groups]",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the chart covers",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə tʃɑːt ˈkʌvəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə tʃɑːt ˈkʌvəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "shown in the legend",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʃəʊn ɪn ðə ˈledʒənd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ʃəʊn ɪn ðə ˈledʒənd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the [color] area represents",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə [color] ˈeəriə reprɪˈzents",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə [color] ˈeəriə reprɪˈzents",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the [color] line represents",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə [color] laɪn reprɪˈzents",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə [color] laɪn reprɪˈzents",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the [color] zone represents",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə [color] zəʊn reprɪˈzents",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə [color] zəʊn reprɪˈzents",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "There are three lines shown in the legend",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðeər ɑː θriː laɪnz ʃəʊn ɪn ðə ˈledʒənd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðeər ɑː θriː laɪnz ʃəʊn ɪn ðə ˈledʒənd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "There are four categories shown in the legend",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðeər ɑː fɔː ˈkætəɡəriz ʃəʊn ɪn ðə ˈledʒənd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðeər ɑː fɔː ˈkætəɡəriz ʃəʊn ɪn ðə ˈledʒənd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "There are six lines shown in the legend",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðeər ɑː sɪks laɪnz ʃəʊn ɪn ðə ˈledʒənd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðeər ɑː sɪks laɪnz ʃəʊn ɪn ðə ˈledʒənd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "The other three countries",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈʌðə θriː ˈkʌntriz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈʌðə θriː ˈkʌntriz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "The remaining countries",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə rɪˈmeɪnɪŋ ˈkʌntriz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə rɪˈmeɪnɪŋ ˈkʌntriz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "The remaining three cities",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə rɪˈmeɪnɪŋ θriː ˈsɪtiz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə rɪˈmeɪnɪŋ θriː ˈsɪtiz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "with the total at",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪð ðə ˈtəʊtəl æt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɪð ðə ˈtəʊtəl æt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the total reaches",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈtəʊtəl ˈriːtʃɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈtəʊtəl ˈriːtʃɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "with most growth coming from",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪð məʊst ɡrəʊθ ˈkʌmɪŋ frɒm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɪð məʊst ɡrəʊθ ˈkʌmɪŋ frɒm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the left side shows... and the right side shows...",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə left saɪd ʃəʊz... ænd ðə raɪt saɪd ʃəʊz...",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə left saɪd ʃəʊz... ænd ðə raɪt saɪd ʃəʊz...",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "There are two vertical lines",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðeər ɑː tuː ˈvɜːtɪkəl laɪnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðeər ɑː tuː ˈvɜːtɪkəl laɪnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "became the most popular",
+      "pronunciation": {
+        "british": {
+          "ipa": "bɪˈkeɪm ðə məʊst ˈpɒpjələ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "bɪˈkeɪm ðə məʊst ˈpɒpjələ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "across different countries",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈkrɒs ˈdɪfrənt ˈkʌntriz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈkrɒs ˈdɪfrənt ˈkʌntriz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "all have less than",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɔːl hæv les ðæn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɔːl hæv les ðæn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "horizontal bar chart",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌhɒrɪˈzɒntəl bɑː tʃɑːt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌhɒrɪˈzɒntəl bɑː tʃɑːt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "stacked bar chart",
+      "pronunciation": {
+        "british": {
+          "ipa": "stækt bɑː tʃɑːt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "stækt bɑː tʃɑːt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "is divided into different colored zones",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪz dɪˈvaɪdɪd ˈɪntuː ˈdɪfrənt ˈkʌləd zəʊnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪz dɪˈvaɪdɪd ˈɪntuː ˈdɪfrənt ˈkʌləd zəʊnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "representing [category]",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌreprɪˈzentɪŋ [category]",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌreprɪˈzentɪŋ [category]",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "in the top left corner",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ðə tɒp left ˈkɔːnə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn ðə tɒp left ˈkɔːnə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "in the middle",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ðə ˈmɪdəl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn ðə ˈmɪdəl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "in the bottom right corner",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ðə ˈbɒtəm raɪt ˈkɔːnə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn ðə ˈbɒtəm raɪt ˈkɔːnə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "Below that",
+      "pronunciation": {
+        "british": {
+          "ipa": "bɪˈləʊ ðæt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "bɪˈləʊ ðæt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "helps people find",
+      "pronunciation": {
+        "british": {
+          "ipa": "helps ˈpiːpəl faɪnd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "helps ˈpiːpəl faɪnd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "by looking at where... meet",
+      "pronunciation": {
+        "british": {
+          "ipa": "baɪ ˈlʊkɪŋ æt weə... miːt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "baɪ ˈlʊkɪŋ æt weə... miːt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "a useful tool for",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈjuːsfəl tuːl fɔː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈjuːsfəl tuːl fɔː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "starts with",
+      "pronunciation": {
+        "british": {
+          "ipa": "stɑːts wɪð",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "stɑːts wɪð",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "begins with",
+      "pronunciation": {
+        "british": {
+          "ipa": "bɪˈɡɪnz wɪð",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "bɪˈɡɪnz wɪð",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the process starts when",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈprəʊses stɑːts wen",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈprəʊses stɑːts wen",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "driven by",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdrɪvən baɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈdrɪvən baɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "then",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðen",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðen",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "next",
+      "pronunciation": {
+        "british": {
+          "ipa": "nekst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "nekst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "after that",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɑːftə ðæt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɑːftə ðæt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "goes through",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɡəʊz θruː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɡəʊz θruː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "moves to",
+      "pronunciation": {
+        "british": {
+          "ipa": "muːvz tuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "muːvz tuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "goes up into",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɡəʊz ʌp ˈɪntuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɡəʊz ʌp ˈɪntuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "falls back down",
+      "pronunciation": {
+        "british": {
+          "ipa": "fɔːlz bæk daʊn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "fɔːlz bæk daʊn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "becomes",
+      "pronunciation": {
+        "british": {
+          "ipa": "bɪˈkʌmz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "bɪˈkʌmz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "turns into",
+      "pronunciation": {
+        "british": {
+          "ipa": "tɜːnz ˈɪntuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "tɜːnz ˈɪntuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "creates",
+      "pronunciation": {
+        "british": {
+          "ipa": "kriˈeɪts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kriˈeɪts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "produces",
+      "pronunciation": {
+        "british": {
+          "ipa": "prəˈdjuːsɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "prəˈdjuːsɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "is processed",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪz ˈprəʊsest",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪz ˈprəʊsest",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "goes in",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɡəʊz ɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɡəʊz ɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "comes out as",
+      "pronunciation": {
+        "british": {
+          "ipa": "kʌmz aʊt æz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kʌmz aʊt æz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the cycle continues",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈsaɪkəl kənˈtɪnjuːz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈsaɪkəl kənˈtɪnjuːz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "returns to",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈtɜːnz tuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rɪˈtɜːnz tuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "goes back to",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɡəʊz bæk tuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɡəʊz bæk tuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "repeats",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈpiːts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rɪˈpiːts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "causes",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkɔːzɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkɔːzɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "leads to",
+      "pronunciation": {
+        "british": {
+          "ipa": "liːdz tuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "liːdz tuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "results in",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈzʌlts ɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rɪˈzʌlts ɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "this creates",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs kriˈeɪts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðɪs kriˈeɪts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "which happens when",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪtʃ ˈhæpənz wen",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɪtʃ ˈhæpənz wen",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "in the first stage",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ðə fɜːst steɪdʒ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn ðə fɜːst steɪdʒ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "during this phase",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdjʊərɪŋ ðɪs feɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈdjʊərɪŋ ðɪs feɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "at this point",
+      "pronunciation": {
+        "british": {
+          "ipa": "æt ðɪs pɔɪnt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "æt ðɪs pɔɪnt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "in the final stage",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ðə ˈfaɪnəl steɪdʒ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn ðə ˈfaɪnəl steɪdʒ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "located in",
+      "pronunciation": {
+        "british": {
+          "ipa": "ləʊˈkeɪtɪd ɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ləʊˈkeɪtɪd ɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "found in",
+      "pronunciation": {
+        "british": {
+          "ipa": "faʊnd ɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "faʊnd ɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "in the northern part",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ðə ˈnɔːðən pɑːt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn ðə ˈnɔːðən pɑːt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "in the southern part",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ðə ˈsʌðən pɑːt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn ðə ˈsʌðən pɑːt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "in the eastern part",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ðə ˈiːstən pɑːt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn ðə ˈiːstən pɑːt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "in the western part",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ðə ˈwestən pɑːt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn ðə ˈwestən pɑːt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "along the coast",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈlɒŋ ðə kəʊst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈlɒŋ ðə kəʊst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "inland",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪnlənd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɪnlənd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "near the equator",
+      "pronunciation": {
+        "british": {
+          "ipa": "nɪə ði ɪˈkweɪtə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "nɪə ði ɪˈkweɪtə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "around",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈraʊnd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈraʊnd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "spread across",
+      "pronunciation": {
+        "british": {
+          "ipa": "spred əˈkrɒs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "spred əˈkrɒs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "scattered throughout",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈskætəd θruːˈaʊt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈskætəd θruːˈaʊt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "concentrated in",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkɒnsəntreɪtɪd ɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkɒnsəntreɪtɪd ɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "found mainly in",
+      "pronunciation": {
+        "british": {
+          "ipa": "faʊnd ˈmeɪnli ɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "faʊnd ˈmeɪnli ɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "covers",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌvəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkʌvəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "divided into zones",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈvaɪdɪd ˈɪntuː zəʊnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "dɪˈvaɪdɪd ˈɪntuː zəʊnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "split into regions",
+      "pronunciation": {
+        "british": {
+          "ipa": "splɪt ˈɪntuː ˈriːdʒənz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "splɪt ˈɪntuː ˈriːdʒənz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the map shows three main areas",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə mæp ʃəʊz θriː meɪn ˈeəriəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə mæp ʃəʊz θriː meɪn ˈeəriəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "northern region",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈnɔːðən ˈriːdʒən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈnɔːðən ˈriːdʒən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "southern region",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsʌðən ˈriːdʒən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsʌðən ˈriːdʒən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "central region",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsentrəl ˈriːdʒən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsentrəl ˈriːdʒən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "coastal areas",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkəʊstəl ˈeəriəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkəʊstəl ˈeəriəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "densely populated",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdensli ˈpɒpjəleɪtɪd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈdensli ˈpɒpjəleɪtɪd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "sparsely populated",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈspɑːsli ˈpɒpjəleɪtɪd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈspɑːsli ˈpɒpjəleɪtɪd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "heavily concentrated",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhevɪli ˈkɒnsəntreɪtɪd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhevɪli ˈkɒnsəntreɪtɪd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "thinly spread",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈθɪnli spred",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈθɪnli spred",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "high concentration",
+      "pronunciation": {
+        "british": {
+          "ipa": "haɪ ˌkɒnsənˈtreɪʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "haɪ ˌkɒnsənˈtreɪʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "low concentration",
+      "pronunciation": {
+        "british": {
+          "ipa": "ləʊ ˌkɒnsənˈtreɪʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ləʊ ˌkɒnsənˈtreɪʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "shown in [color]",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʃəʊn ɪn [color]",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ʃəʊn ɪn [color]",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "marked in [color]",
+      "pronunciation": {
+        "british": {
+          "ipa": "mɑːkt ɪn [color]",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "mɑːkt ɪn [color]",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the darker areas show",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈdɑːkər ˈeəriəz ʃəʊ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈdɑːkər ˈeəriəz ʃəʊ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the lighter areas show",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈlaɪtər ˈeəriəz ʃəʊ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈlaɪtər ˈeəriəz ʃəʊ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "color-coded",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌlə ˈkəʊdɪd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkʌlə ˈkəʊdɪd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "arrows show",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈærəʊz ʃəʊ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈærəʊz ʃəʊ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "flows from... to...",
+      "pronunciation": {
+        "british": {
+          "ipa": "fləʊz frɒm... tuː...",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "fləʊz frɒm... tuː...",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "moves from... to...",
+      "pronunciation": {
+        "british": {
+          "ipa": "muːvz frɒm... tuː...",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "muːvz frɒm... tuː...",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "exported to",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪkˈspɔːtɪd tuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪkˈspɔːtɪd tuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "imported from",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪmˈpɔːtɪd frɒm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪmˈpɔːtɪd frɒm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "tropical climate",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtrɒpɪkəl ˈklaɪmət",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈtrɒpɪkəl ˈklaɪmət",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "temperate climate",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtempərət ˈklaɪmət",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈtempərət ˈklaɪmət",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "arid climate",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈærɪd ˈklaɪmət",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈærɪd ˈklaɪmət",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "humid areas",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhjuːmɪd ˈeəriəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhjuːmɪd ˈeəriəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "rainfall levels",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈreɪnfɔːl ˈlevəlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈreɪnfɔːl ˈlevəlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "temperature zones",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtemprətʃə zəʊnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈtemprətʃə zəʊnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "at the top",
+      "pronunciation": {
+        "british": {
+          "ipa": "æt ðə tɒp",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "æt ðə tɒp",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "at the bottom",
+      "pronunciation": {
+        "british": {
+          "ipa": "æt ðə ˈbɒtəm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "æt ðə ˈbɒtəm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "on the left side",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɒn ðə left saɪd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɒn ðə left saɪd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "on the right side",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɒn ðə raɪt saɪd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɒn ðə raɪt saɪd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "in the center",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ðə ˈsentə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn ðə ˈsentə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "in the middle",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ðə ˈmɪdəl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn ðə ˈmɪdəl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "in the corner",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ðə ˈkɔːnə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn ðə ˈkɔːnə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "in the top left corner",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ðə tɒp left ˈkɔːnə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn ðə tɒp left ˈkɔːnə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "in the bottom right corner",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn ðə ˈbɒtəm raɪt ˈkɔːnə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn ðə ˈbɒtəm raɪt ˈkɔːnə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "next to",
+      "pronunciation": {
+        "british": {
+          "ipa": "nekst tuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "nekst tuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "beside",
+      "pronunciation": {
+        "british": {
+          "ipa": "bɪˈsaɪd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "bɪˈsaɪd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "above",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈbʌv",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈbʌv",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "below",
+      "pronunciation": {
+        "british": {
+          "ipa": "bɪˈləʊ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "bɪˈləʊ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "between",
+      "pronunciation": {
+        "british": {
+          "ipa": "bɪˈtwiːn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "bɪˈtwiːn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "opposite",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɒpəzɪt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɒpəzɪt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "facing",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfeɪsɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfeɪsɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "adjacent to",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈdʒeɪsənt tuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈdʒeɪsənt tuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "runs across",
+      "pronunciation": {
+        "british": {
+          "ipa": "rʌnz əˈkrɒs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rʌnz əˈkrɒs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "runs along",
+      "pronunciation": {
+        "british": {
+          "ipa": "rʌnz əˈlɒŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rʌnz əˈlɒŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "triangular shape",
+      "pronunciation": {
+        "british": {
+          "ipa": "traɪˈæŋɡjələ ʃeɪp",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "traɪˈæŋɡjələ ʃeɪp",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "rectangular",
+      "pronunciation": {
+        "british": {
+          "ipa": "rekˈtæŋɡjələ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rekˈtæŋɡjələ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "circular",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɜːkjələ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsɜːkjələ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "square",
+      "pronunciation": {
+        "british": {
+          "ipa": "skweə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "skweə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "L-shaped",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈel ʃeɪpt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈel ʃeɪpt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "curved",
+      "pronunciation": {
+        "british": {
+          "ipa": "kɜːvd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kɜːvd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "consists of",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈsɪsts ɒv",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kənˈsɪsts ɒv",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "made up of",
+      "pronunciation": {
+        "british": {
+          "ipa": "meɪd ʌp ɒv",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "meɪd ʌp ɒv",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "composed of",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəmˈpəʊzd ɒv",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kəmˈpəʊzd ɒv",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "contains",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈteɪnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kənˈteɪnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "includes",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈkluːdz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪnˈkluːdz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "has [number] parts",
+      "pronunciation": {
+        "british": {
+          "ipa": "hæz [number] pɑːts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "hæz [number] pɑːts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "labeled as",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈleɪbəld æz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈleɪbəld æz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "marked as",
+      "pronunciation": {
+        "british": {
+          "ipa": "mɑːkt æz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "mɑːkt æz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "called",
+      "pronunciation": {
+        "british": {
+          "ipa": "kɔːld",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kɔːld",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "named",
+      "pronunciation": {
+        "british": {
+          "ipa": "neɪmd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "neɪmd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "shows",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʃəʊz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ʃəʊz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "large",
+      "pronunciation": {
+        "british": {
+          "ipa": "lɑːdʒ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "lɑːdʒ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "small",
+      "pronunciation": {
+        "british": {
+          "ipa": "smɔːl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "smɔːl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "spacious",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈspeɪʃəs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈspeɪʃəs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "compact",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəmˈpækt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kəmˈpækt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "narrow",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈnærəʊ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈnærəʊ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "wide",
+      "pronunciation": {
+        "british": {
+          "ipa": "waɪd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "waɪd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "open space",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈəʊpən speɪs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈəʊpən speɪs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "takes up most of",
+      "pronunciation": {
+        "british": {
+          "ipa": "teɪks ʌp məʊst ɒv",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "teɪks ʌp məʊst ɒv",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "arranged in",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈreɪndʒd ɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈreɪndʒd ɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "organized into",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɔːɡənaɪzd ˈɪntuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɔːɡənaɪzd ˈɪntuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "stacked",
+      "pronunciation": {
+        "british": {
+          "ipa": "stækt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "stækt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "lined up",
+      "pronunciation": {
+        "british": {
+          "ipa": "laɪnd ʌp",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "laɪnd ʌp",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "placed",
+      "pronunciation": {
+        "british": {
+          "ipa": "pleɪst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "pleɪst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "positioned",
+      "pronunciation": {
+        "british": {
+          "ipa": "pəˈzɪʃənd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "pəˈzɪʃənd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "connected to",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəˈnektɪd tuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kəˈnektɪd tuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "linked to",
+      "pronunciation": {
+        "british": {
+          "ipa": "lɪŋkt tuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "lɪŋkt tuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "attached to",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈtætʃt tuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈtætʃt tuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "joins",
+      "pronunciation": {
+        "british": {
+          "ipa": "dʒɔɪnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "dʒɔɪnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "separates",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsepəreɪts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsepəreɪts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "used for",
+      "pronunciation": {
+        "british": {
+          "ipa": "juːzd fɔː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "juːzd fɔː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "designed for",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈzaɪnd fɔː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "dɪˈzaɪnd fɔː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "serves as",
+      "pronunciation": {
+        "british": {
+          "ipa": "sɜːvz æz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "sɜːvz æz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "functions as",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfʌŋkʃənz æz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfʌŋkʃənz æz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "provides",
+      "pronunciation": {
+        "british": {
+          "ipa": "prəˈvaɪdz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "prəˈvaɪdz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    }
+  ]
 }

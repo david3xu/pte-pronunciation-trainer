@@ -10,329 +10,329 @@ This collection includes all natural, easy-to-speak phrases used across the 44 P
 
 **全部**
 
-1. rises sharply | sounds like **RYE-ziz SHARP-lee**
-2. rose sharply | sounds like **rohz SHARP-lee**
-3. goes up slowly | sounds like **gohz up SLOH-lee**
-4. goes up | sounds like **gohz up**
-5. increases | sounds like **in-KREE-siz**
-6. increased | sounds like **in-KREEST**
-7. increase sharply | sounds like **in-KREESS SHARP-lee**
-8. increase steadily | sounds like **in-KREESS STED-uh-lee**
-9. keeps rising steadily | sounds like **keeps RYE-zing STED-uh-lee**
-10. increasing slightly from... to... | sounds like **in-KREE-sing SLYTE-lee from... to...**
+1. rises sharply | /ˈraɪzɪz ˈʃɑːpli/
+2. rose sharply | /rəʊz ˈʃɑːpli/
+3. goes up slowly | /ɡəʊz ʌp ˈsləʊli/
+4. goes up | /ɡəʊz ʌp/
+5. increases | /ɪnˈkriːsɪz/
+6. increased | /ɪnˈkriːst/
+7. increase sharply | /ɪnˈkriːs ˈʃɑːpli/
+8. increase steadily | /ɪnˈkriːs ˈstedɪli/
+9. keeps rising steadily | /kiːps ˈraɪzɪŋ ˈstedɪli/
+10. increasing slightly from... to... | /ɪnˈkriːsɪŋ ˈslaɪtli frɒm... tuː.../
 
-11. grew very rapidly | sounds like **groo VER-ee RAP-id-lee**
-12. continues to rise | sounds like **kuhn-TIN-yooz to ryze**
-13. reaching its peak | sounds like **REE-ching its peek**
-14. to reach a peak | sounds like **to reech uh peek**
-15. rises much more quickly | sounds like **RYE-ziz much more KWIK-lee**
-16. starts to go up | sounds like **starts to goh up**
-17. go back up | sounds like **goh bak up**
-18. also rises but only reaches | sounds like **AWL-soh RYE-ziz but OH N-lee REE-chiz**
-19. drops down | sounds like **drops down**
-20. drops to | sounds like **drops to**
+11. grew very rapidly | /ɡruː ˈveri ˈræpɪdli/
+12. continues to rise | /kənˈtɪnjuːz tə raɪz/
+13. reaching its peak | /ˈriːtʃɪŋ ɪts piːk/
+14. to reach a peak | /tə riːtʃ ə piːk/
+15. rises much more quickly | /ˈraɪzɪz mʌtʃ mɔː ˈkwɪkli/
+16. starts to go up | /stɑːts tə ɡəʊ ʌp/
+17. go back up | /ɡəʊ bæk ʌp/
+18. also rises but only reaches | /ˈɔːlsəʊ ˈraɪzɪz bət ˈəʊnli ˈriːtʃɪz/
+19. drops down | /drɒps daʊn/
+20. drops to | /drɒps tuː/
 
-21. drops dramatically | sounds like **drops druh-MAT-uh-klee**
-22. falls | sounds like **fawlz**
-23. gradually falls | sounds like **GRAD-joo-uh-lee fawlz**
-24. decreases | sounds like **dih-KREE-siz**
-25. decrease slightly | sounds like **dih-KREESS SLYTE-lee**
-26. continues to fall | sounds like **kuhn-TIN-yooz to fall**
-27. keeps getting smaller | sounds like **keeps GET-ing SMAW-luhr**
-28. recover slightly | sounds like **rih-KUV-uhr SLYTE-lee**
-29. stays fairly flat | sounds like **stayz FAIR-lee flat**
-30. stays around that level | sounds like **stayz uh-ROWND that LEV-uhl**
+21. drops dramatically | /drɒps drəˈmætɪkli/
+22. falls | /fɔːlz/
+23. gradually falls | /ˈɡrædʒuəli fɔːlz/
+24. decreases | /dɪˈkriːsɪz/
+25. decrease slightly | /dɪˈkriːs ˈslaɪtli/
+26. continues to fall | /kənˈtɪnjuːz tə fɔːl/
+27. keeps getting smaller | /kiːps ˈɡetɪŋ ˈsmɔːlə/
+28. recover slightly | /rɪˈkʌvə ˈslaɪtli/
+29. stays fairly flat | /steɪz ˈfeəli flæt/
+30. stays around that level | /steɪz əˈraʊnd ðæt ˈlevəl/
 
-31. stays the highest | sounds like **stayz the HYE-ist**
-32. staying fairly constant | sounds like **STAY-ing FAIR-lee KON-stuhnt**
-33. all stay very low | sounds like **awl stay VER-ee loh**
-34. remains stable | sounds like **rih-MAYNZ STAY-buhl**
-35. relatively stable | sounds like **REL-uh-tiv-lee STAY-buhl**
-36. fairly steady | sounds like **FAIR-lee STED-ee**
-37. settled at | sounds like **SET-uhld at**
-38. starts at about | sounds like **starts at uh-BOWT**
-39. starts very high | sounds like **starts VER-ee hye**
-40. start at roughly | sounds like **start at RUF-lee**
+31. stays the highest | /steɪz ðə ˈhaɪɪst/
+32. staying fairly constant | /ˈsteɪɪŋ ˈfeəli ˈkɒnstənt/
+33. all stay very low | /ɔːl steɪ ˈveri ləʊ/
+34. remains stable | /rɪˈmeɪnz ˈsteɪbəl/
+35. relatively stable | /ˈrelətɪvli ˈsteɪbəl/
+36. fairly steady | /ˈfeəli ˈstedi/
+37. settled at | /ˈsetəld æt/
+38. starts at about | /stɑːts æt əˈbaʊt/
+39. starts very high | /stɑːts ˈveri haɪ/
+40. start at roughly | /stɑːt æt ˈrʌfli/
 
-41. started at about | sounds like **STAR-tid at uh-BOWT**
-42. which was the highest | sounds like **which wuhz the HYE-ist**
-43. both started much lower | sounds like **bohth STAR-tid much LOH-uhr**
-44. Both types start at | sounds like **bohth types start at**
-45. Both lines start | sounds like **bohth lynez start**
-46. relatively low levels | sounds like **REL-uh-tiv-lee loh LEV-uhlz**
-47. very low at [time] | sounds like **VER-ee loh at [time]**
-48. ending at around | sounds like **EN-ding at uh-ROWND**
-49. ends at | sounds like **endz at**
-50. highest point | sounds like **HYE-ist poynt**
+41. started at about | /ˈstɑːtɪd æt əˈbaʊt/
+42. which was the highest | /wɪtʃ wɒz ðə ˈhaɪɪst/
+43. both started much lower | /bəʊθ ˈstɑːtɪd mʌtʃ ˈləʊə/
+44. Both types start at | /bəʊθ taɪps stɑːt æt/
+45. Both lines start | /bəʊθ laɪnz stɑːt/
+46. relatively low levels | /ˈrelətɪvli ləʊ ˈlevəlz/
+47. very low at [time] | /ˈveri ləʊ æt [time]/
+48. ending at around | /ˈendɪŋ æt əˈraʊnd/
+49. ends at | /endz æt/
+50. highest point | /ˈhaɪɪst pɔɪnt/
 
-51. the highest | sounds like **the HYE-ist**
-52. lowest point | sounds like **LOH-ist poynt**
-53. the lowest | sounds like **the LOH-ist**
-54. largest | sounds like **LAR-jist**
-55. second largest | sounds like **SEK-uhnd LAR-jist**
-56. the second largest group | sounds like **the SEK-uhnd LAR-jist groop**
-57. smallest | sounds like **SMAW-list**
-58. the smallest category | sounds like **the SMAW-list KAT-uh-gor-ee**
-59. peak | sounds like **peek**
-60. smaller peak | sounds like **SMAW-luhr peek**
+51. the highest | /ðə ˈhaɪɪst/
+52. lowest point | /ˈləʊɪst pɔɪnt/
+53. the lowest | /ðə ˈləʊɪst/
+54. largest | /ˈlɑːdʒɪst/
+55. second largest | /ˈsekənd ˈlɑːdʒɪst/
+56. the second largest group | /ðə ˈsekənd ˈlɑːdʒɪst ɡruːp/
+57. smallest | /ˈsmɔːlɪst/
+58. the smallest category | /ðə ˈsmɔːlɪst ˈkætəɡəri/
+59. peak | /piːk/
+60. smaller peak | /ˈsmɔːlə piːk/
 
-61. by far the largest | sounds like **by far the LAR-jist**
-62. comes in second | sounds like **kuhmz in SEK-uhnd**
-63. is third | sounds like **iz thurd**
-64. about [number] | sounds like **uh-BOWT [number]**
-65. around [number] | sounds like **uh-ROWND [number]**
-66. at about | sounds like **at uh-BOWT**
-67. at around | sounds like **at uh-ROWND**
-68. reaching about | sounds like **REE-ching uh-BOWT**
-69. growing to around | sounds like **GROH-ing to uh-ROWND**
-70. over [number] | sounds like **OH-vuhr [number]**
+61. by far the largest | /baɪ fɑː ðə ˈlɑːdʒɪst/
+62. comes in second | /kʌmz ɪn ˈsekənd/
+63. is third | /ɪz θɜːd/
+64. about [number] | /əˈbaʊt [number]/
+65. around [number] | /əˈraʊnd [number]/
+66. at about | /æt əˈbaʊt/
+67. at around | /æt əˈraʊnd/
+68. reaching about | /ˈriːtʃɪŋ əˈbaʊt/
+69. growing to around | /ˈɡrəʊɪŋ tuː əˈraʊnd/
+70. over [number] | /ˈəʊvə [number]/
 
-71. less than [number] | sounds like **less than [number]**
-72. close to | sounds like **klohs to**
-73. just [number] | sounds like **just [number]**
-74. roughly | sounds like **RUF-lee**
-75. both have around [X] to [Y] | sounds like **bohth hav uh-ROWND [X] to [Y]**
-76. are all between [X] and [Y] | sounds like **ar awl bih-TWEEN [X] and [Y]**
-77. makes up [X] percent | sounds like **mayks up [X] puhr-SENT**
-78. make up the largest portion | sounds like **mayk up the LAR-jist POR-shuhn**
-79. make up a small portion | sounds like **mayk up uh smawl POR-shuhn**
-80. takes up [X] percent | sounds like **tayks up [X] puhr-SENT**
+71. less than [number] | /les ðæn [number]/
+72. close to | /kləʊs tuː/
+73. just [number] | /dʒʌst [number]/
+74. roughly | /ˈrʌfli/
+75. both have around [X] to [Y] | /bəʊθ hæv əˈraʊnd [X] tuː [Y]/
+76. are all between [X] and [Y] | /ɑːr ɔːl bɪˈtwiːn [X] ænd [Y]/
+77. makes up [X] percent | /meɪks ʌp [X] pəˈsent/
+78. make up the largest portion | /meɪk ʌp ðə ˈlɑːdʒɪst ˈpɔːʃən/
+79. make up a small portion | /meɪk ʌp ə smɔːl ˈpɔːʃən/
+80. takes up [X] percent | /teɪks ʌp [X] pəˈsent/
 
-81. accounts for | sounds like **uh-KOWNTS for**
-82. which is only | sounds like **which iz OH N-lee**
-83. at [X] percent | sounds like **at [X] puhr-SENT**
-84. went up and down | sounds like **went up and down**
-85. ups and downs | sounds like **ups and downz**
-86. unstable | sounds like **uhn-STAY-buhl**
-87. quite a lot | sounds like **kwyte uh lot**
-88. sharp spike | sounds like **sharp spyk**
-89. the closer to... the [more/less] | sounds like **the KLOH-suhr to... the [more/less]**
-90. pattern is opposite | sounds like **PAT-uhrn iz OP-uh-zit**
+81. accounts for | /əˈkaʊnts fɔː/
+82. which is only | /wɪtʃ ɪz ˈəʊnli/
+83. at [X] percent | /æt [X] pəˈsent/
+84. went up and down | /went ʌp ænd daʊn/
+85. ups and downs | /ʌps ænd daʊnz/
+86. unstable | /ʌnˈsteɪbəl/
+87. quite a lot | /kwaɪt ə lɒt/
+88. sharp spike | /ʃɑːp spaɪk/
+89. the closer to... the [more/less] | /ðə ˈkləʊsə tuː... ðə [more/less]/
+90. pattern is opposite | /ˈpætən ɪz ˈɒpəzɪt/
 
-91. at similar levels | sounds like **at SIM-uh-luhr LEV-uhlz**
-92. much faster/slower than | sounds like **much FAS-tuhr/SLOH-uhr than**
-93. grows much larger than | sounds like **grohz much LAR-juhr than**
-94. in contrast | sounds like **in KON-trast**
-95. while [comparison] | sounds like **wyle [comparison]**
-96. rather than | sounds like **RA-thuhr than**
-97. more than | sounds like **mor than**
-98. higher for... than | sounds like **HYE-uhr for... than**
-99. only [number] | sounds like **OH N-lee [number]**
-100. in the middle | sounds like **in the MID-uhl**
+91. at similar levels | /æt ˈsɪmɪlə ˈlevəlz/
+92. much faster/slower than | /mʌtʃ ˈfɑːstə/ˈsləʊə ðæn/
+93. grows much larger than | /ɡrəʊz mʌtʃ ˈlɑːdʒə ðæn/
+94. in contrast | /ɪn ˈkɒntrɑːst/
+95. while [comparison] | /waɪl [comparison]/
+96. rather than | /ˈrɑːðə ðæn/
+97. more than | /mɔː ðæn/
+98. higher for... than | /ˈhaɪə fɔː... ðæn/
+99. only [number] | /ˈəʊnli [number]/
+100. in the middle | /ɪn ðə ˈmɪdəl/
 
-101. versus | sounds like **VUR-suhs**
-102. vs | sounds like **vee-ess**
-103. follow a similar pattern | sounds like **FAH-loh uh SIM-uh-luhr PAT-uhrn**
-104. move together | sounds like **moov tuh-GETH-uhr**
-105. closely connected | sounds like **KLOHS-lee kuh-NEK-tid**
-106. close together | sounds like **klohs tuh-GETH-uhr**
-107. do more... than | sounds like **doo mor... than**
-108. shows the fastest growth | sounds like **shohz the FAS-tist grohth**
-109. has the highest | sounds like **haz the HYE-ist**
-110. drop significantly | sounds like **drop sig-NIF-uh-kuhnt-lee**
+101. versus | /ˈvɜːsəs/
+102. vs | /ˈviː es/
+103. follow a similar pattern | /ˈfɒləʊ ə ˈsɪmɪlə ˈpætən/
+104. move together | /muːv təˈɡeðə/
+105. closely connected | /ˈkləʊsli kəˈnektɪd/
+106. close together | /kləʊs təˈɡeðə/
+107. do more... than | /duː mɔː... ðæn/
+108. shows the fastest growth | /ʃəʊz ðə ˈfɑːstɪst ɡrəʊθ/
+109. has the highest | /hæz ðə ˈhaɪɪst/
+110. drop significantly | /drɒp sɪɡˈnɪfɪkəntli/
 
-111. much larger... than all other | sounds like **much LAR-juhr... than awl UH-thuhr**
-112. are either... or... | sounds like **ar EYE-thuhr... or...**
-113. for the first [X] years | sounds like **for the first [X] yeerz**
-114. throughout the rest of | sounds like **throo-OWT the rest uhv**
-115. throughout the period | sounds like **throo-OWT the PEER-ee-uhd**
-116. for most of | sounds like **for mohst uhv**
-117. over this [X]-year period | sounds like **OH-vuhr this [X]-yeer PEER-ee-uhd**
-118. during this period | sounds like **DYUR-ing this PEER-ee-uhd**
-119. Over the years | sounds like **OH-vuhr the yeerz**
-120. by [year] | sounds like **by [year]**
+111. much larger... than all other | /mʌtʃ ˈlɑːdʒə... ðæn ɔːl ˈʌðə/
+112. are either... or... | /ɑːr ˈaɪðə... ɔː.../
+113. for the first [X] years | /fɔː ðə fɜːst [X] jɪəz/
+114. throughout the rest of | /θruːˈaʊt ðə rest ɒv/
+115. throughout the period | /θruːˈaʊt ðə ˈpɪəriəd/
+116. for most of | /fɔː məʊst ɒv/
+117. over this [X]-year period | /ˈəʊvə ðɪs [X]-jɪə ˈpɪəriəd/
+118. during this period | /ˈdjʊərɪŋ ðɪs ˈpɪəriəd/
+119. Over the years | /ˈəʊvə ðə jɪəz/
+120. by [year] | /baɪ [year]/
 
-121. from [year] to [year] | sounds like **from [year] to [year]**
-122. after [year] | sounds like **AF-tuhr [year]**
-123. After that | sounds like **AF-tuhr that**
-124. by hour of day | sounds like **by owr uhv day**
-125. on weekdays | sounds like **on WEEK-dayz**
-126. across all ages | sounds like **uh-KROSS awl AY-jiz**
-127. in younger groups | sounds like **in YUNG-guhr groops**
-128. broken down by | sounds like **BROH-kuhn down by**
-129. this number | sounds like **this NUM-buhr**
-130. very few | sounds like **VER-ee fyoo**
+121. from [year] to [year] | /frɒm [year] tuː [year]/
+122. after [year] | /ˈɑːftə [year]/
+123. After that | /ˈɑːftə ðæt/
+124. by hour of day | /baɪ aʊər ɒv deɪ/
+125. on weekdays | /ɒn ˈwiːkdeɪz/
+126. across all ages | /əˈkrɒs ɔːl ˈeɪdʒɪz/
+127. in younger groups | /ɪn ˈjʌŋɡə ɡruːps/
+128. broken down by | /ˈbrəʊkən daʊn baɪ/
+129. this number | /ðɪs ˈnʌmbə/
+130. very few | /ˈveri fjuː/
 
-131. both [groups] | sounds like **bohth [groups]**
-132. the chart covers | sounds like **the chart KUV-uhrz**
-133. shown in the legend | sounds like **shohn in the LEJ-uhnd**
-134. the [color] area represents | sounds like **the [color] AIR-ee-uh rep-rih-ZENTS**
-135. the [color] line represents | sounds like **the [color] lyne rep-rih-ZENTS**
-136. the [color] zone represents | sounds like **the [color] zohn rep-rih-ZENTS**
-137. There are three lines shown in the legend | sounds like **thair ar three lynez shohn in the LEJ-uhnd**
-138. There are four categories shown in the legend | sounds like **thair ar for KAT-uh-gor-eez shohn in the LEJ-uhnd**
-139. There are six lines shown in the legend | sounds like **thair ar siks lynez shohn in the LEJ-uhnd**
-140. The other three countries | sounds like **the UH-thuhr three KUN-treez**
+131. both [groups] | /bəʊθ [groups]/
+132. the chart covers | /ðə tʃɑːt ˈkʌvəz/
+133. shown in the legend | /ʃəʊn ɪn ðə ˈledʒənd/
+134. the [color] area represents | /ðə [color] ˈeəriə reprɪˈzents/
+135. the [color] line represents | /ðə [color] laɪn reprɪˈzents/
+136. the [color] zone represents | /ðə [color] zəʊn reprɪˈzents/
+137. There are three lines shown in the legend | /ðeər ɑː θriː laɪnz ʃəʊn ɪn ðə ˈledʒənd/
+138. There are four categories shown in the legend | /ðeər ɑː fɔː ˈkætəɡəriz ʃəʊn ɪn ðə ˈledʒənd/
+139. There are six lines shown in the legend | /ðeər ɑː sɪks laɪnz ʃəʊn ɪn ðə ˈledʒənd/
+140. The other three countries | /ðə ˈʌðə θriː ˈkʌntriz/
 
-141. The remaining countries | sounds like **the rih-MAY-ning KUN-treez**
-142. The remaining three cities | sounds like **the rih-MAY-ning three SIT-eez**
-143. with the total at | sounds like **with the TOH-tuhl at**
-144. the total reaches | sounds like **the TOH-tuhl REE-chiz**
-145. with most growth coming from | sounds like **with mohst grohth KUM-ing from**
-146. the left side shows... and the right side shows... | sounds like **the left syde shohz... and the ryte syde shohz...**
-147. There are two vertical lines | sounds like **thair ar too VUR-tuh-kuhl lynez**
-148. became the most popular | sounds like **bih-KAYM the MOHST POP-yuh-luhr**
-149. across different countries | sounds like **uh-KROSS DIF-ruhnt KUN-treez**
-150. all have less than | sounds like **awl hav less than**
+141. The remaining countries | /ðə rɪˈmeɪnɪŋ ˈkʌntriz/
+142. The remaining three cities | /ðə rɪˈmeɪnɪŋ θriː ˈsɪtiz/
+143. with the total at | /wɪð ðə ˈtəʊtəl æt/
+144. the total reaches | /ðə ˈtəʊtəl ˈriːtʃɪz/
+145. with most growth coming from | /wɪð məʊst ɡrəʊθ ˈkʌmɪŋ frɒm/
+146. the left side shows... and the right side shows... | /ðə left saɪd ʃəʊz... ænd ðə raɪt saɪd ʃəʊz.../
+147. There are two vertical lines | /ðeər ɑː tuː ˈvɜːtɪkəl laɪnz/
+148. became the most popular | /bɪˈkeɪm ðə məʊst ˈpɒpjələ/
+149. across different countries | /əˈkrɒs ˈdɪfrənt ˈkʌntriz/
+150. all have less than | /ɔːl hæv les ðæn/
 
-151. horizontal bar chart | sounds like **hor-uh-ZON-tuhl bar chart**
-152. stacked bar chart | sounds like **stakt bar chart**
-153. is divided into different colored zones | sounds like **iz dih-VYE-did IN-too DIF-ruhnt KUL-uhrd zohnz**
-154. representing [category] | sounds like **rep-rih-ZEN-ting [category]**
-155. in the top left corner | sounds like **in the top left KOR-nuhr**
-156. in the middle | sounds like **in the MID-uhl**
-157. in the bottom right corner | sounds like **in the BOT-uhm ryte KOR-nuhr**
-158. Below that | sounds like **bih-LOH that**
-159. helps people find | sounds like **helps PEE-puhl fynd**
-160. by looking at where... meet | sounds like **by LUK-ing at wair... meet**
+151. horizontal bar chart | /ˌhɒrɪˈzɒntəl bɑː tʃɑːt/
+152. stacked bar chart | /stækt bɑː tʃɑːt/
+153. is divided into different colored zones | /ɪz dɪˈvaɪdɪd ˈɪntuː ˈdɪfrənt ˈkʌləd zəʊnz/
+154. representing [category] | /ˌreprɪˈzentɪŋ [category]/
+155. in the top left corner | /ɪn ðə tɒp left ˈkɔːnə/
+156. in the middle | /ɪn ðə ˈmɪdəl/
+157. in the bottom right corner | /ɪn ðə ˈbɒtəm raɪt ˈkɔːnə/
+158. Below that | /bɪˈləʊ ðæt/
+159. helps people find | /helps ˈpiːpəl faɪnd/
+160. by looking at where... meet | /baɪ ˈlʊkɪŋ æt weə... miːt/
 
-161. a useful tool for | sounds like **uh YOOS-fuhl tool for**
-162. starts with | sounds like **starts with**
-163. begins with | sounds like **bih-GINZ with**
-164. the process starts when | sounds like **the PROS-es starts when**
-165. driven by | sounds like **DRIV-uhn by**
-166. then | sounds like **then**
-167. next | sounds like **nekst**
-168. after that | sounds like **AF-tuhr that**
-169. goes through | sounds like **gohz throo**
-170. moves to | sounds like **moovz to**
+161. a useful tool for | /ə ˈjuːsfəl tuːl fɔː/
+162. starts with | /stɑːts wɪð/
+163. begins with | /bɪˈɡɪnz wɪð/
+164. the process starts when | /ðə ˈprəʊses stɑːts wen/
+165. driven by | /ˈdrɪvən baɪ/
+166. then | /ðen/
+167. next | /nekst/
+168. after that | /ˈɑːftə ðæt/
+169. goes through | /ɡəʊz θruː/
+170. moves to | /muːvz tuː/
 
-171. goes up into | sounds like **gohz up IN-too**
-172. falls back down | sounds like **fawlz bak down**
-173. becomes | sounds like **bih-KUHMZ**
-174. turns into | sounds like **turnz IN-too**
-175. creates | sounds like **kree-AYTS**
-176. produces | sounds like **pruh-DOO-siz**
-177. is processed | sounds like **iz PROS-est**
-178. goes in | sounds like **gohz in**
-179. comes out as | sounds like **kuhmz owt az**
-180. the cycle continues | sounds like **the SY-kuhl kuhn-TIN-yooz**
+171. goes up into | /ɡəʊz ʌp ˈɪntuː/
+172. falls back down | /fɔːlz bæk daʊn/
+173. becomes | /bɪˈkʌmz/
+174. turns into | /tɜːnz ˈɪntuː/
+175. creates | /kriˈeɪts/
+176. produces | /prəˈdjuːsɪz/
+177. is processed | /ɪz ˈprəʊsest/
+178. goes in | /ɡəʊz ɪn/
+179. comes out as | /kʌmz aʊt æz/
+180. the cycle continues | /ðə ˈsaɪkəl kənˈtɪnjuːz/
 
-181. returns to | sounds like **rih-TURNZ to**
-182. goes back to | sounds like **gohz bak to**
-183. repeats | sounds like **rih-PEE TS**
-184. causes | sounds like **KAW-ziz**
-185. leads to | sounds like **leedz to**
-186. results in | sounds like **rih-ZULTS in**
-187. this creates | sounds like **this kree-AYTS**
-188. which happens when | sounds like **which HAP-uhnz when**
-189. in the first stage | sounds like **in the first stayj**
-190. during this phase | sounds like **DYUR-ing this fayz**
+181. returns to | /rɪˈtɜːnz tuː/
+182. goes back to | /ɡəʊz bæk tuː/
+183. repeats | /rɪˈpiːts/
+184. causes | /ˈkɔːzɪz/
+185. leads to | /liːdz tuː/
+186. results in | /rɪˈzʌlts ɪn/
+187. this creates | /ðɪs kriˈeɪts/
+188. which happens when | /wɪtʃ ˈhæpənz wen/
+189. in the first stage | /ɪn ðə fɜːst steɪdʒ/
+190. during this phase | /ˈdjʊərɪŋ ðɪs feɪz/
 
-191. at this point | sounds like **at this poynt**
-192. in the final stage | sounds like **in the FYE-nuhl stayj**
-193. located in | sounds like **LOH-kay-tid in**
-194. found in | sounds like **fownd in**
-195. in the northern part | sounds like **in the NOR-thuhrn part**
-196. in the southern part | sounds like **in the SUH-thuhrn part**
-197. in the eastern part | sounds like **in the EE-stuhrn part**
-198. in the western part | sounds like **in the WES-tuhrn part**
-199. along the coast | sounds like **uh-LONG the kohst**
-200. inland | sounds like **IN-luhnd**
+191. at this point | /æt ðɪs pɔɪnt/
+192. in the final stage | /ɪn ðə ˈfaɪnəl steɪdʒ/
+193. located in | /ləʊˈkeɪtɪd ɪn/
+194. found in | /faʊnd ɪn/
+195. in the northern part | /ɪn ðə ˈnɔːðən pɑːt/
+196. in the southern part | /ɪn ðə ˈsʌðən pɑːt/
+197. in the eastern part | /ɪn ðə ˈiːstən pɑːt/
+198. in the western part | /ɪn ðə ˈwestən pɑːt/
+199. along the coast | /əˈlɒŋ ðə kəʊst/
+200. inland | /ˈɪnlənd/
 
-201. near the equator | sounds like **neer the ih-KWAY-tuhr**
-202. around | sounds like **uh-ROWND**
-203. spread across | sounds like **spred uh-KROSS**
-204. scattered throughout | sounds like **SKAT-uhrd throo-OWT**
-205. concentrated in | sounds like **KON-suhn-tray-tid in**
-206. found mainly in | sounds like **fownd MAYN-lee in**
-207. covers | sounds like **KUV-uhrz**
-208. divided into zones | sounds like **dih-VYE-did IN-too zohnz**
-209. split into regions | sounds like **split IN-too REE-juhnz**
-210. the map shows three main areas | sounds like **the map shohz three mayn AIR-ee-uhz**
+201. near the equator | /nɪə ði ɪˈkweɪtə/
+202. around | /əˈraʊnd/
+203. spread across | /spred əˈkrɒs/
+204. scattered throughout | /ˈskætəd θruːˈaʊt/
+205. concentrated in | /ˈkɒnsəntreɪtɪd ɪn/
+206. found mainly in | /faʊnd ˈmeɪnli ɪn/
+207. covers | /ˈkʌvəz/
+208. divided into zones | /dɪˈvaɪdɪd ˈɪntuː zəʊnz/
+209. split into regions | /splɪt ˈɪntuː ˈriːdʒənz/
+210. the map shows three main areas | /ðə mæp ʃəʊz θriː meɪn ˈeəriəz/
 
-211. northern region | sounds like **NOR-thuhrn REE-juhn**
-212. southern region | sounds like **SUH-thuhrn REE-juhn**
-213. central region | sounds like **SEN-truhl REE-juhn**
-214. coastal areas | sounds like **KOH-stuhl AIR-ee-uhz**
-215. densely populated | sounds like **DENS-lee POP-yuh-lay-tid**
-216. sparsely populated | sounds like **SPARS-lee POP-yuh-lay-tid**
-217. heavily concentrated | sounds like **HEV-uh-lee KON-suhn-tray-tid**
-218. thinly spread | sounds like **THIN-lee spred**
-219. high concentration | sounds like **hye kon-suhn-TRAY-shuhn**
-220. low concentration | sounds like **loh kon-suhn-TRAY-shuhn**
+211. northern region | /ˈnɔːðən ˈriːdʒən/
+212. southern region | /ˈsʌðən ˈriːdʒən/
+213. central region | /ˈsentrəl ˈriːdʒən/
+214. coastal areas | /ˈkəʊstəl ˈeəriəz/
+215. densely populated | /ˈdensli ˈpɒpjəleɪtɪd/
+216. sparsely populated | /ˈspɑːsli ˈpɒpjəleɪtɪd/
+217. heavily concentrated | /ˈhevɪli ˈkɒnsəntreɪtɪd/
+218. thinly spread | /ˈθɪnli spred/
+219. high concentration | /haɪ ˌkɒnsənˈtreɪʃən/
+220. low concentration | /ləʊ ˌkɒnsənˈtreɪʃən/
 
-221. shown in [color] | sounds like **shohn in [color]**
-222. marked in [color] | sounds like **markt in [color]**
-223. the darker areas show | sounds like **the DAR-kuhr AIR-ee-uhz shoh**
-224. the lighter areas show | sounds like **the LYE-tuhr AIR-ee-uhz shoh**
-225. color-coded | sounds like **KUL-uhr-KOH-did**
-226. arrows show | sounds like **AIR-ohz shoh**
-227. flows from... to... | sounds like **flohz from... to...**
-228. moves from... to... | sounds like **moovz from... to...**
-229. exported to | sounds like **ek-SPOR-tid to**
-230. imported from | sounds like **im-POR-tid from**
+221. shown in [color] | /ʃəʊn ɪn [color]/
+222. marked in [color] | /mɑːkt ɪn [color]/
+223. the darker areas show | /ðə ˈdɑːkər ˈeəriəz ʃəʊ/
+224. the lighter areas show | /ðə ˈlaɪtər ˈeəriəz ʃəʊ/
+225. color-coded | /ˈkʌlə ˈkəʊdɪd/
+226. arrows show | /ˈærəʊz ʃəʊ/
+227. flows from... to... | /fləʊz frɒm... tuː.../
+228. moves from... to... | /muːvz frɒm... tuː.../
+229. exported to | /ɪkˈspɔːtɪd tuː/
+230. imported from | /ɪmˈpɔːtɪd frɒm/
 
-231. tropical climate | sounds like **TROP-uh-kuhl KLY-muht**
-232. temperate climate | sounds like **TEM-puhr-uht KLY-muht**
-233. arid climate | sounds like **AIR-id KLY-muht**
-234. humid areas | sounds like **HYOO-mid AIR-ee-uhz**
-235. rainfall levels | sounds like **RAYN-fawl LEV-uhlz**
-236. temperature zones | sounds like **TEM-puhr-uh-chur zohnz**
-237. at the top | sounds like **at the top**
-238. at the bottom | sounds like **at the BOT-uhm**
-239. on the left side | sounds like **on the left syde**
-240. on the right side | sounds like **on the ryte syde**
+231. tropical climate | /ˈtrɒpɪkəl ˈklaɪmət/
+232. temperate climate | /ˈtempərət ˈklaɪmət/
+233. arid climate | /ˈærɪd ˈklaɪmət/
+234. humid areas | /ˈhjuːmɪd ˈeəriəz/
+235. rainfall levels | /ˈreɪnfɔːl ˈlevəlz/
+236. temperature zones | /ˈtemprətʃə zəʊnz/
+237. at the top | /æt ðə tɒp/
+238. at the bottom | /æt ðə ˈbɒtəm/
+239. on the left side | /ɒn ðə left saɪd/
+240. on the right side | /ɒn ðə raɪt saɪd/
 
-241. in the center | sounds like **in the SEN-tuhr**
-242. in the middle | sounds like **in the MID-uhl**
-243. in the corner | sounds like **in the KOR-nuhr**
-244. in the top left corner | sounds like **in the top left KOR-nuhr**
-245. in the bottom right corner | sounds like **in the BOT-uhm ryte KOR-nuhr**
-246. next to | sounds like **nekst to**
-247. beside | sounds like **bih-SYDE**
-248. above | sounds like **uh-BUHV**
-249. below | sounds like **bih-LOH**
-250. between | sounds like **bih-TWEEN**
+241. in the center | /ɪn ðə ˈsentə/
+242. in the middle | /ɪn ðə ˈmɪdəl/
+243. in the corner | /ɪn ðə ˈkɔːnə/
+244. in the top left corner | /ɪn ðə tɒp left ˈkɔːnə/
+245. in the bottom right corner | /ɪn ðə ˈbɒtəm raɪt ˈkɔːnə/
+246. next to | /nekst tuː/
+247. beside | /bɪˈsaɪd/
+248. above | /əˈbʌv/
+249. below | /bɪˈləʊ/
+250. between | /bɪˈtwiːn/
 
-251. opposite | sounds like **OP-uh-zit**
-252. facing | sounds like **FAY-sing**
-253. adjacent to | sounds like **uh-JAY-suhnt to**
-254. runs across | sounds like **runz uh-KROSS**
-255. runs along | sounds like **runz uh-LONG**
-256. triangular shape | sounds like **try-ANG-gyuh-luhr shayp**
-257. rectangular | sounds like **rek-TANG-gyuh-luhr**
-258. circular | sounds like **SUR-kyuh-luhr**
-259. square | sounds like **skwair**
-260. L-shaped | sounds like **EL-shaypt**
+251. opposite | /ˈɒpəzɪt/
+252. facing | /ˈfeɪsɪŋ/
+253. adjacent to | /əˈdʒeɪsənt tuː/
+254. runs across | /rʌnz əˈkrɒs/
+255. runs along | /rʌnz əˈlɒŋ/
+256. triangular shape | /traɪˈæŋɡjələ ʃeɪp/
+257. rectangular | /rekˈtæŋɡjələ/
+258. circular | /ˈsɜːkjələ/
+259. square | /skweə/
+260. L-shaped | /ˈel ʃeɪpt/
 
-261. curved | sounds like **kurvd**
-262. consists of | sounds like **kuhn-SISTS uhv**
-263. made up of | sounds like **mayd up uhv**
-264. composed of | sounds like **kuhm-POHZD uhv**
-265. contains | sounds like **kuhn-TAYNZ**
-266. includes | sounds like **in-KLOODZ**
-267. has [number] parts | sounds like **haz [number] parts**
-268. labeled as | sounds like **LAY-buhld az**
-269. marked as | sounds like **markt az**
-270. called | sounds like **kawld**
+261. curved | /kɜːvd/
+262. consists of | /kənˈsɪsts ɒv/
+263. made up of | /meɪd ʌp ɒv/
+264. composed of | /kəmˈpəʊzd ɒv/
+265. contains | /kənˈteɪnz/
+266. includes | /ɪnˈkluːdz/
+267. has [number] parts | /hæz [number] pɑːts/
+268. labeled as | /ˈleɪbəld æz/
+269. marked as | /mɑːkt æz/
+270. called | /kɔːld/
 
-271. named | sounds like **naymd**
-272. shows | sounds like **shohz**
-273. large | sounds like **larj**
-274. small | sounds like **smawl**
-275. spacious | sounds like **SPAY-shuhs**
-276. compact | sounds like **kuhm-PAKT**
-277. narrow | sounds like **NAIR-oh**
-278. wide | sounds like **wyde**
-279. open space | sounds like **OH-puhn spays**
-280. takes up most of | sounds like **tayks up mohst uhv**
+271. named | /neɪmd/
+272. shows | /ʃəʊz/
+273. large | /lɑːdʒ/
+274. small | /smɔːl/
+275. spacious | /ˈspeɪʃəs/
+276. compact | /kəmˈpækt/
+277. narrow | /ˈnærəʊ/
+278. wide | /waɪd/
+279. open space | /ˈəʊpən speɪs/
+280. takes up most of | /teɪks ʌp məʊst ɒv/
 
-281. arranged in | sounds like **uh-RAYN JD in**
-282. organized into | sounds like **OR-guh-nyzd IN-too**
-283. stacked | sounds like **stakt**
-284. lined up | sounds like **lynd up**
-285. placed | sounds like **playst**
-286. positioned | sounds like **puh-ZISH-uhnd**
-287. connected to | sounds like **kuh-NEK-tid to**
-288. linked to | sounds like **linkt to**
-289. attached to | sounds like **uh-TACHT to**
-290. joins | sounds like **joynz**
+281. arranged in | /əˈreɪndʒd ɪn/
+282. organized into | /ˈɔːɡənaɪzd ˈɪntuː/
+283. stacked | /stækt/
+284. lined up | /laɪnd ʌp/
+285. placed | /pleɪst/
+286. positioned | /pəˈzɪʃənd/
+287. connected to | /kəˈnektɪd tuː/
+288. linked to | /lɪŋkt tuː/
+289. attached to | /əˈtætʃt tuː/
+290. joins | /dʒɔɪnz/
 
-291. separates | sounds like **SEP-uh-rayts**
-292. used for | sounds like **yoozd for**
-293. designed for | sounds like **dih-ZYND for**
-294. serves as | sounds like **survz az**
-295. functions as | sounds like **FUNG K-shuhnz az**
-296. provides | sounds like **pruh-VYDEZ**
+291. separates | /ˈsepəreɪts/
+292. used for | /juːzd fɔː/
+293. designed for | /dɪˈzaɪnd fɔː/
+294. serves as | /sɜːvz æz/
+295. functions as | /ˈfʌŋkʃənz æz/
+296. provides | /prəˈvaɪdz/
 

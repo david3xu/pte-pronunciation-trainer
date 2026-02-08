@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-02-07T06:14:38.694Z",
-    "totalTerms": 60,
+    "generated": "2026-02-08T05:33:20.816Z",
+    "totalTerms": 466,
     "source": "pte-rl-vocabulary-with-ipa",
     "description": "RL Vocabulary with IPA",
     "version": "1.0",
@@ -21,6 +21,1270 @@
         },
         "american": {
           "ipa": "ɒˈstreɪliən ˈekspɔːt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "Flipping a Coin",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈflɪpɪŋ ə kɔɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈflɪpɪŋ ə kɔɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "settle disputes",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsetl dɪˈspjuːts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsetl dɪˈspjuːts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the outcome",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði ˈaʊtkʌm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ði ˈaʊtkʌm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a matter of chance",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈmætər əv tʃɑːns",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈmætər əv tʃɑːns",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a mechanical coin flipper",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə mɪˈkænɪkl kɔɪn ˈflɪpə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə mɪˈkænɪkl kɔɪn ˈflɪpə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "launched and lands the same way",
+      "pronunciation": {
+        "british": {
+          "ipa": "lɔːntʃt ənd lændz ðə seɪm weɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "lɔːntʃt ənd lændz ðə seɪm weɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "sloppy humans",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈslɒpi ˈhjuːmənz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈslɒpi ˈhjuːmənz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "giving different outcomes",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈgɪvɪŋ ˈdɪfrənt ˈaʊtkʌmz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈgɪvɪŋ ˈdɪfrənt ˈaʊtkʌmz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "still a bias built in",
+      "pronunciation": {
+        "british": {
+          "ipa": "stɪl ə ˈbaɪəs bɪlt ɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "stɪl ə ˈbaɪəs bɪlt ɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "Civilization and Art",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌsɪvəlaɪˈzeɪʃn ənd ɑːt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌsɪvəlaɪˈzeɪʃn ənd ɑːt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "great production of culture and art",
+      "pronunciation": {
+        "british": {
+          "ipa": "greɪt prəˈdʌkʃn əv ˈkʌltʃər ənd ɑːt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "greɪt prəˈdʌkʃn əv ˈkʌltʃər ənd ɑːt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "their ability to look at themselves",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðeər əˈbɪləti tə lʊk ət ðəmˈselvz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðeər əˈbɪləti tə lʊk ət ðəmˈselvz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the core of the society",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə kɔː əv ðə səˈsaɪəti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə kɔː əv ðə səˈsaɪəti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "thinking of themselves",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈθɪŋkɪŋ əv ðəmˈselvz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈθɪŋkɪŋ əv ðəmˈselvz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "social structure",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsəʊʃl ˈstrʌktʃə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsəʊʃl ˈstrʌktʃə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "art is the vehicle",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɑːt ɪz ðə ˈviːəkl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɑːt ɪz ðə ˈviːəkl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "understand what was going on in Paris",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌʌndəˈstænd wɒt wəz ˈgəʊɪŋ ɒn ɪn ˈpærɪs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌʌndəˈstænd wɒt wəz ˈgəʊɪŋ ɒn ɪn ˈpærɪs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "see in a completely different way",
+      "pronunciation": {
+        "british": {
+          "ipa": "siː ɪn ə kəmˈpliːtli ˈdɪfrənt weɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "siː ɪn ə kəmˈpliːtli ˈdɪfrənt weɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "considered as radical",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈsɪdəd əz ˈrædɪkl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kənˈsɪdəd əz ˈrædɪkl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "Inventions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈvenʃnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪnˈvenʃnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "my research",
+      "pronunciation": {
+        "british": {
+          "ipa": "maɪ rɪˈsɜːtʃ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "maɪ rɪˈsɜːtʃ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "their need to learn",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðeə niːd tə lɜːn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðeə niːd tə lɜːn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "along the way and the result",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈlɒŋ ðə weɪ ənd ðə rɪˈzʌlt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈlɒŋ ðə weɪ ənd ðə rɪˈzʌlt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "byproducts of the learning process",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbaɪprɒdʌkts əv ðə ˈlɜːnɪŋ ˈprəʊses",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbaɪprɒdʌkts əv ðə ˈlɜːnɪŋ ˈprəʊses",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "help us in teaching the subject",
+      "pronunciation": {
+        "british": {
+          "ipa": "help ʌs ɪn ˈtiːtʃɪŋ ðə ˈsʌbdʒɪkt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "help ʌs ɪn ˈtiːtʃɪŋ ðə ˈsʌbdʒɪkt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the vehicle for the teaching",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈviːəkl fə ðə ˈtiːtʃɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈviːəkl fə ðə ˈtiːtʃɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the most stimulating and motivating to students",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə məʊst ˈstɪmjuleɪtɪŋ ənd ˈməʊtɪveɪtɪŋ tə ˈstjuːdnts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə məʊst ˈstɪmjuleɪtɪŋ ənd ˈməʊtɪveɪtɪŋ tə ˈstjuːdnts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "teaching assumption",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtiːtʃɪŋ əˈsʌmpʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈtiːtʃɪŋ əˈsʌmpʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "close connection and the benefits",
+      "pronunciation": {
+        "british": {
+          "ipa": "kləʊs kəˈnekʃn ənd ðə ˈbenɪfɪts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kləʊs kəˈnekʃn ənd ðə ˈbenɪfɪts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "Melatonin",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌmeləˈtəʊnɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌmeləˈtəʊnɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "hormone",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhɔːməʊn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhɔːməʊn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "synthesis",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɪnθəsɪs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsɪnθəsɪs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "very small",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈveri smɔːl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈveri smɔːl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the size of a pea in your brain",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə saɪz əv ə piː ɪn jɔː breɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə saɪz əv ə piː ɪn jɔː breɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "where melatonin is made",
+      "pronunciation": {
+        "british": {
+          "ipa": "weə ˌmeləˈtəʊnɪn ɪz meɪd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "weə ˌmeləˈtəʊnɪn ɪz meɪd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "it peaks at night",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪt piːks ət naɪt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪt piːks ət naɪt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "darkness hormone",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdɑːknəs ˈhɔːməʊn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈdɑːknəs ˈhɔːməʊn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "occurs at night",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈkɜːz ət naɪt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈkɜːz ət naɪt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "prepares you for the things",
+      "pronunciation": {
+        "british": {
+          "ipa": "prɪˈpeəz juː fə ðə θɪŋz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "prɪˈpeəz juː fə ðə θɪŋz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "sleep and awake",
+      "pronunciation": {
+        "british": {
+          "ipa": "sliːp ənd əˈweɪk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "sliːp ənd əˈweɪk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "darkness behavior",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdɑːknəs bɪˈheɪvjə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈdɑːknəs bɪˈheɪvjə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "Animal Behavior",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈænɪml bɪˈheɪvjə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈænɪml bɪˈheɪvjə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "2 fundamental questions",
+      "pronunciation": {
+        "british": {
+          "ipa": "tuː ˌfʌndəˈmentl ˈkwestʃənz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "tuː ˌfʌndəˈmentl ˈkwestʃənz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "proximate questions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈprɒksɪmət ˈkwestʃənz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈprɒksɪmət ˈkwestʃənz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "mechanisms",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmekənɪzəmz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈmekənɪzəmz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "ultimate questions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈʌltɪmət ˈkwestʃənz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈʌltɪmət ˈkwestʃənz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the evolution of behavior",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði ˌiːvəˈluːʃn əv bɪˈheɪvjə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ði ˌiːvəˈluːʃn əv bɪˈheɪvjə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "how does behavior develop",
+      "pronunciation": {
+        "british": {
+          "ipa": "haʊ dʌz bɪˈheɪvjə dɪˈveləp",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "haʊ dʌz bɪˈheɪvjə dɪˈveləp",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "what causes the behavior",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɒt ˈkɔːzɪz ðə bɪˈheɪvjə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɒt ˈkɔːzɪz ðə bɪˈheɪvjə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the adaptive of significance of behavior",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði əˈdæptɪv əv sɪgˈnɪfɪkəns əv bɪˈheɪvjə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ði əˈdæptɪv əv sɪgˈnɪfɪkəns əv bɪˈheɪvjə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the founding fathers",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈfaʊndɪŋ ˈfɑːðəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈfaʊndɪŋ ˈfɑːðəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "different ways of studying animal behaviors",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdɪfrənt weɪz əv ˈstʌdiɪŋ ˈænɪml bɪˈheɪvjəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈdɪfrənt weɪz əv ˈstʌdiɪŋ ˈænɪml bɪˈheɪvjəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the whole of biology",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə həʊl əv baɪˈɒlədʒi",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə həʊl əv baɪˈɒlədʒi",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "Venus",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈviːnəs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈviːnəs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "before the space age",
+      "pronunciation": {
+        "british": {
+          "ipa": "bɪˈfɔː ðə speɪs eɪdʒ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "bɪˈfɔː ðə speɪs eɪdʒ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "surface looking at the planet Venus",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɜːfɪs ˈlʊkɪŋ ət ðə ˈplænɪt ˈviːnəs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsɜːfɪs ˈlʊkɪŋ ət ðə ˈplænɪt ˈviːnəs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "it wasn't completely disproved",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪt ˈwɒznt kəmˈpliːtli ˌdɪsˈpruːvd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪt ˈwɒznt kəmˈpliːtli ˌdɪsˈpruːvd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the first measurements in detail",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə fɜːst ˈmeʒəmənts ɪn ˈdiːteɪl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə fɜːst ˈmeʒəmənts ɪn ˈdiːteɪl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the feeling from an earlier space mission",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈfiːlɪŋ frəm ən ˈɜːliə speɪs ˈmɪʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈfiːlɪŋ frəm ən ˈɜːliə speɪs ˈmɪʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "extremely hot",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪkˈstriːmli hɒt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪkˈstriːmli hɒt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "not a nice water cycle",
+      "pronunciation": {
+        "british": {
+          "ipa": "nɒt ə naɪs ˈwɔːtə ˈsaɪkl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "nɒt ə naɪs ˈwɔːtə ˈsaɪkl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "measurements by space craft",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmeʒəmənts baɪ speɪs krɑːft",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈmeʒəmənts baɪ speɪs krɑːft",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "not to be quite as Earth",
+      "pronunciation": {
+        "british": {
+          "ipa": "nɒt tə bi kwaɪt əz ɜːθ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "nɒt tə bi kwaɪt əz ɜːθ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "The Option of Having One Marshmallow",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði ˈɒpʃn əv ˈhævɪŋ wʌn ˌmɑːʃˈmæləʊ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ði ˈɒpʃn əv ˈhævɪŋ wʌn ˌmɑːʃˈmæləʊ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "this experiment",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs ɪkˈsperɪmənt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðɪs ɪkˈsperɪmənt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a very simple and direct way of measuring a competence",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈveri ˈsɪmpl ənd dɪˈrekt weɪ əv ˈmeʒərɪŋ ə ˈkɒmpɪtəns",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈveri ˈsɪmpl ənd dɪˈrekt weɪ əv ˈmeʒərɪŋ ə ˈkɒmpɪtəns",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "without eating the marshmallows",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪˈðaʊt ˈiːtɪŋ ðə ˌmɑːʃˈmæləʊz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɪˈðaʊt ˈiːtɪŋ ðə ˌmɑːʃˈmæləʊz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "wait longer",
+      "pronunciation": {
+        "british": {
+          "ipa": "weɪt ˈlɒŋgə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "weɪt ˈlɒŋgə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "powerful implications",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpaʊəfl ˌɪmplɪˈkeɪʃnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈpaʊəfl ˌɪmplɪˈkeɪʃnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "more discipline and more self-control",
+      "pronunciation": {
+        "british": {
+          "ipa": "mɔː ˈdɪsəplɪn ənd mɔː self kənˈtrəʊl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "mɔː ˈdɪsəplɪn ənd mɔː self kənˈtrəʊl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "achieve their life goals",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈtʃiːv ðeə laɪf gəʊlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈtʃiːv ðeə laɪf gəʊlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "better relationships",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbetə rɪˈleɪʃnʃɪps",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbetə rɪˈleɪʃnʃɪps",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "pursue your goals",
+      "pronunciation": {
+        "british": {
+          "ipa": "pəˈsjuː jɔː gəʊlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "pəˈsjuː jɔː gəʊlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a very important skill",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈveri ɪmˈpɔːtnt skɪl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈveri ɪmˈpɔːtnt skɪl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "Chest X-Ray",
+      "pronunciation": {
+        "british": {
+          "ipa": "tʃest ˈeks reɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "tʃest ˈeks reɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "biomedical engineering",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌbaɪəʊˈmedɪkl ˌendʒɪˈnɪərɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌbaɪəʊˈmedɪkl ˌendʒɪˈnɪərɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a physical principle",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈfɪzɪkl ˈprɪnsəpl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈfɪzɪkl ˈprɪnsəpl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "interact with the tissues of your body",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌɪntərˈækt wɪð ðə ˈtɪʃuːz əv jɔː ˈbɒdi",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌɪntərˈækt wɪð ðə ˈtɪʃuːz əv jɔː ˈbɒdi",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "develop a picture",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈveləp ə ˈpɪktʃə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "dɪˈveləp ə ˈpɪktʃə",
           "phonetic": ""
         }
       },
@@ -61,6 +1325,198 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
+      "english": "dark in space",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɑːk ɪn speɪs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "dɑːk ɪn speɪs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "no as simple as it may sound",
+      "pronunciation": {
+        "british": {
+          "ipa": "nəʊ əz ˈsɪmpl əz ɪt meɪ saʊnd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "nəʊ əz ˈsɪmpl əz ɪt meɪ saʊnd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "our side of Earth faces away from the Sun",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈaʊə saɪd əv ɜːθ ˈfeɪsɪz əˈweɪ frəm ðə sʌn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈaʊə saɪd əv ɜːθ ˈfeɪsɪz əˈweɪ frəm ðə sʌn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "stars in the night sky",
+      "pronunciation": {
+        "british": {
+          "ipa": "stɑːz ɪn ðə naɪt skaɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "stɑːz ɪn ðə naɪt skaɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "entire universe",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈtaɪə ˈjuːnɪvɜːs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪnˈtaɪə ˈjuːnɪvɜːs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "galaxies",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈgæləksiz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈgæləksiz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "possible to count all the starts",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpɒsəbl tə kaʊnt ɔːl ðə stɑːts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈpɒsəbl tə kaʊnt ɔːl ðə stɑːts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the universe was infinite",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈjuːnɪvɜːs wəz ˈɪnfɪnət",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈjuːnɪvɜːs wəz ˈɪnfɪnət",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "stars should overlap each other",
+      "pronunciation": {
+        "british": {
+          "ipa": "stɑːz ʃʊd ˌəʊvəˈlæp iːtʃ ˈʌðə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "stɑːz ʃʊd ˌəʊvəˈlæp iːtʃ ˈʌðə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a paradox is a statement",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈpærədɒks ɪz ə ˈsteɪtmənt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈpærədɒks ɪz ə ˈsteɪtmənt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "dust clouds absorb energy",
+      "pronunciation": {
+        "british": {
+          "ipa": "dʌst klaʊdz əbˈzɔːb ˈenədʒi",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "dʌst klaʊdz əbˈzɔːb ˈenədʒi",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the universe is not infinite",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈjuːnɪvɜːs ɪz nɒt ˈɪnfɪnət",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈjuːnɪvɜːs ɪz nɒt ˈɪnfɪnət",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
       "english": "Bomb Calorimeter",
       "pronunciation": {
         "british": {
@@ -77,7 +1533,119 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
-      "english": "Pavlov’s Conditioning Experiment",
+      "english": "calculate the energy content",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkælkjuleɪt ði ˈenədʒi ˈkɒntent",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkælkjuleɪt ði ˈenədʒi ˈkɒntent",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "calculate the amount of energy",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkælkjuleɪt ði əˈmaʊnt əv ˈenədʒi",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkælkjuleɪt ði əˈmaʊnt əv ˈenədʒi",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "how is the energy collected",
+      "pronunciation": {
+        "british": {
+          "ipa": "haʊ ɪz ði ˈenədʒi kəˈlektɪd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "haʊ ɪz ði ˈenədʒi kəˈlektɪd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a closed system",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə kləʊzd ˈsɪstəm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə kləʊzd ˈsɪstəm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "warm the water",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɔːm ðə ˈwɔːtə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɔːm ðə ˈwɔːtə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "measure the change in temperature",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmeʒə ðə tʃeɪndʒ ɪn ˈtemprətʃə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈmeʒə ðə tʃeɪndʒ ɪn ˈtemprətʃə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "make a combustion reaction",
+      "pronunciation": {
+        "british": {
+          "ipa": "meɪk ə kəmˈbʌstʃən riˈækʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "meɪk ə kəmˈbʌstʃən riˈækʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "Pavlov's Conditioning Experiment",
       "pronunciation": {
         "british": {
           "ipa": "ˈpævlɒvz kənˈdɪʃənɪŋ ɪkˈsperɪmənt",
@@ -93,14 +1661,14 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
-      "english": "Wages, Consumption and Household Debt",
+      "english": "the phenomenon",
       "pronunciation": {
         "british": {
-          "ipa": "ˈweɪdʒɪz kənˈsʌmpʃn ənd ˈhaʊshəʊld det",
+          "ipa": "ðə fəˈnɒmɪnən",
           "phonetic": ""
         },
         "american": {
-          "ipa": "ˈweɪdʒɪz kənˈsʌmpʃn ənd ˈhaʊshəʊld det",
+          "ipa": "ðə fəˈnɒmɪnən",
           "phonetic": ""
         }
       },
@@ -109,14 +1677,510 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
-      "english": "Air Pollution",
+      "english": "emotion",
       "pronunciation": {
         "british": {
-          "ipa": "eə pəˈluːʃn",
+          "ipa": "ɪˈməʊʃn",
           "phonetic": ""
         },
         "american": {
-          "ipa": "eə pəˈluːʃn",
+          "ipa": "ɪˈməʊʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "some very old questions",
+      "pronunciation": {
+        "british": {
+          "ipa": "sʌm ˈveri əʊld ˈkwestʃənz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "sʌm ˈveri əʊld ˈkwestʃənz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "how does motivation and emotion work",
+      "pronunciation": {
+        "british": {
+          "ipa": "haʊ dʌz ˌməʊtɪˈveɪʃn ənd ɪˈməʊʃn wɜːk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "haʊ dʌz ˌməʊtɪˈveɪʃn ənd ɪˈməʊʃn wɜːk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "Pavlov's study",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpævlɒvz ˈstʌdi",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈpævlɒvz ˈstʌdi",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "trying to capture",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtraɪɪŋ tə ˈkæptʃə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈtraɪɪŋ tə ˈkæptʃə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "competitive state",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəmˈpetətɪv steɪt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kəmˈpetətɪv steɪt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "Wages Growth, Consumption and Household Debt",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈweɪdʒɪz grəʊθ kənˈsʌmpʃn ənd ˈhaʊshəʊld det",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈweɪdʒɪz grəʊθ kənˈsʌmpʃn ənd ˈhaʊshəʊld det",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the wage growth",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə weɪdʒ grəʊθ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə weɪdʒ grəʊθ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "very weak",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈveri wiːk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈveri wiːk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "consumption growth seems decent",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈsʌmpʃn grəʊθ siːmz ˈdiːsnt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kənˈsʌmpʃn grəʊθ siːmz ˈdiːsnt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "housing debt increase is unusual",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhaʊzɪŋ det ɪnˈkriːs ɪz ʌnˈjuːʒuəl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhaʊzɪŋ det ɪnˈkriːs ɪz ʌnˈjuːʒuəl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "understandable",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌʌndəˈstændəbl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌʌndəˈstændəbl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "far from sufficient to cover",
+      "pronunciation": {
+        "british": {
+          "ipa": "fɑː frəm səˈfɪʃnt tə ˈkʌvə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "fɑː frəm səˈfɪʃnt tə ˈkʌvə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "people are borrowing more money to buy homes",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpiːpl ɑː ˈbɒrəʊɪŋ mɔː ˈmʌni tə baɪ həʊmz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈpiːpl ɑː ˈbɒrəʊɪŋ mɔː ˈmʌni tə baɪ həʊmz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "Reducing Black Carbon",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈdjuːsɪŋ blæk ˈkɑːbən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rɪˈdjuːsɪŋ blæk ˈkɑːbən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "soot",
+      "pronunciation": {
+        "british": {
+          "ipa": "sʊt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "sʊt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "black carbon",
+      "pronunciation": {
+        "british": {
+          "ipa": "blæk ˈkɑːbən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "blæk ˈkɑːbən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "illnesses like lung cancer",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪlnəsɪz laɪk lʌŋ ˈkænsə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɪlnəsɪz laɪk lʌŋ ˈkænsə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "global sea levels rise",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈgləʊbl siː ˈlevlz raɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈgləʊbl siː ˈlevlz raɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "climate change",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈklaɪmət tʃeɪndʒ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈklaɪmət tʃeɪndʒ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "carbon dioxide",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkɑːbən daɪˈɒksaɪd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkɑːbən daɪˈɒksaɪd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the impact of this tiny particle",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði ˈɪmpækt əv ðɪs ˈtaɪni ˈpɑːtɪkl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ði ˈɪmpækt əv ðɪs ˈtaɪni ˈpɑːtɪkl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "produce results immediately",
+      "pronunciation": {
+        "british": {
+          "ipa": "prəˈdjuːs rɪˈzʌlts ɪˈmiːdiətli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "prəˈdjuːs rɪˈzʌlts ɪˈmiːdiətli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "tighten our standards at home",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtaɪtn ˈaʊə ˈstændədz ət həʊm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈtaɪtn ˈaʊə ˈstændədz ət həʊm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "Soot",
+      "pronunciation": {
+        "british": {
+          "ipa": "sʊt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "sʊt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "combustion",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəmˈbʌstʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kəmˈbʌstʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a strong absorber",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə strɒŋ əbˈzɔːbə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə strɒŋ əbˈzɔːbə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "second only to CO2",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsekənd ˈəʊnli tə ˌsiː əʊ ˈtuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsekənd ˈəʊnli tə ˌsiː əʊ ˈtuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "their lifetimes are so much shorter",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðeə ˈlaɪftaɪmz ɑː səʊ mʌtʃ ˈʃɔːtə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðeə ˈlaɪftaɪmz ɑː səʊ mʌtʃ ˈʃɔːtə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "reduce soot",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈdjuːs sʊt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rɪˈdjuːs sʊt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "reduce the greenhouse gases",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈdjuːs ðə ˈgriːnhaʊs ˈgæsɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rɪˈdjuːs ðə ˈgriːnhaʊs ˈgæsɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "buy us some time",
+      "pronunciation": {
+        "british": {
+          "ipa": "baɪ ʌs sʌm taɪm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "baɪ ʌs sʌm taɪm",
           "phonetic": ""
         }
       },
@@ -141,6 +2205,134 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
+      "english": "the claim",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə kleɪm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə kleɪm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "time long enough you will get life",
+      "pronunciation": {
+        "british": {
+          "ipa": "taɪm lɒŋ ɪˈnʌf juː wɪl get laɪf",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "taɪm lɒŋ ɪˈnʌf juː wɪl get laɪf",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "produces the complete work of Shakespeare",
+      "pronunciation": {
+        "british": {
+          "ipa": "prəˈdjuːsɪz ðə kəmˈpliːt wɜːk əv ˈʃeɪkspɪə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "prəˈdjuːsɪz ðə kəmˈpliːt wɜːk əv ˈʃeɪkspɪə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "run the numbers",
+      "pronunciation": {
+        "british": {
+          "ipa": "rʌn ðə ˈnʌmbəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rʌn ðə ˈnʌmbəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "to be or not to be that is the question",
+      "pronunciation": {
+        "british": {
+          "ipa": "tə biː ɔː nɒt tə biː ðæt ɪz ðə ˈkwestʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "tə biː ɔː nɒt tə biː ðæt ɪz ðə ˈkwestʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "how long it takes my monkey friend",
+      "pronunciation": {
+        "british": {
+          "ipa": "haʊ lɒŋ ɪt teɪks maɪ ˈmʌŋki frend",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "haʊ lɒŋ ɪt teɪks maɪ ˈmʌŋki frend",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "complexity",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəmˈpleksəti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kəmˈpleksəti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "mathematically possible",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌmæθəˈmætɪkli ˈpɒsəbl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌmæθəˈmætɪkli ˈpɒsəbl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
       "english": "Open Border",
       "pronunciation": {
         "british": {
@@ -149,6 +2341,182 @@
         },
         "american": {
           "ipa": "ˈəʊpən ˈbɔːdə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "borders open",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbɔːdəz ˈəʊpən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbɔːdəz ˈəʊpən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "developing countries",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈveləpɪŋ ˈkʌntriz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "dɪˈveləpɪŋ ˈkʌntriz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "completely open",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəmˈpliːtli ˈəʊpən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kəmˈpliːtli ˈəʊpən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "free migration",
+      "pronunciation": {
+        "british": {
+          "ipa": "friː maɪˈgreɪʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "friː maɪˈgreɪʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "freedom",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfriːdəm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfriːdəm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "injustice",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈdʒʌstɪs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪnˈdʒʌstɪs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "an economic case",
+      "pronunciation": {
+        "british": {
+          "ipa": "ən ˌiːkəˈnɒmɪk keɪs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ən ˌiːkəˈnɒmɪk keɪs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "everyone's interest",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈevriwʌnz ˈɪntrəst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈevriwʌnz ˈɪntrəst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "human rights",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhjuːmən raɪts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhjuːmən raɪts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "opening our borders",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈəʊpənɪŋ ˈaʊə ˈbɔːdəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈəʊpənɪŋ ˈaʊə ˈbɔːdəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "move freely",
+      "pronunciation": {
+        "british": {
+          "ipa": "muːv ˈfriːli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "muːv ˈfriːli",
           "phonetic": ""
         }
       },
@@ -189,14 +2557,142 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
-      "english": "Edmund Wilson",
+      "english": "Wilson",
       "pronunciation": {
         "british": {
-          "ipa": "ˈedmənd ˈwɪlsən",
+          "ipa": "ˈwɪlsən",
           "phonetic": ""
         },
         "american": {
-          "ipa": "ˈedmənd ˈwɪlsən",
+          "ipa": "ˈwɪlsən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a different world",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈdɪfrənt wɜːld",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈdɪfrənt wɜːld",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "American culture",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈmerɪkən ˈkʌltʃə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈmerɪkən ˈkʌltʃə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "modern literature",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmɒdn ˈlɪtrətʃə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈmɒdn ˈlɪtrətʃə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "read by ordinary people",
+      "pronunciation": {
+        "british": {
+          "ipa": "riːd baɪ ˈɔːdnri ˈpiːpl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "riːd baɪ ˈɔːdnri ˈpiːpl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a major player in his generation",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈmeɪdʒə ˈpleɪə ɪn hɪz ˌdʒenəˈreɪʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈmeɪdʒə ˈpleɪə ɪn hɪz ˌdʒenəˈreɪʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "American life",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈmerɪkən laɪf",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈmerɪkən laɪf",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a product of a narrow American studies",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈprɒdʌkt əv ə ˈnærəʊ əˈmerɪkən ˈstʌdiz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈprɒdʌkt əv ə ˈnærəʊ əˈmerɪkən ˈstʌdiz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a very various man",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈveri ˈveəriəs mæn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈveri ˈveəriəs mæn",
           "phonetic": ""
         }
       },
@@ -221,14 +2717,270 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
-      "english": "Children Obesity",
+      "english": "suffering from multiple personality disorder",
       "pronunciation": {
         "british": {
-          "ipa": "ˈtʃaɪldrən əʊˈbiːsəti",
+          "ipa": "ˈsʌfərɪŋ frəm ˈmʌltɪpl ˌpɜːsəˈnæləti dɪsˈɔːdə",
           "phonetic": ""
         },
         "american": {
-          "ipa": "ˈtʃaɪldrən əʊˈbiːsəti",
+          "ipa": "ˈsʌfərɪŋ frəm ˈmʌltɪpl ˌpɜːsəˈnæləti dɪsˈɔːdə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "hidden memory",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhɪdn ˈmeməri",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhɪdn ˈmeməri",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "strongest personality",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈstrɒŋgɪst ˌpɜːsəˈnæləti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈstrɒŋgɪst ˌpɜːsəˈnæləti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "take over the others",
+      "pronunciation": {
+        "british": {
+          "ipa": "teɪk ˈəʊvə ði ˈʌðəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "teɪk ˈəʊvə ði ˈʌðəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "main personality",
+      "pronunciation": {
+        "british": {
+          "ipa": "meɪn ˌpɜːsəˈnæləti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "meɪn ˌpɜːsəˈnæləti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "crime investigation",
+      "pronunciation": {
+        "british": {
+          "ipa": "kraɪm ɪnˌvestɪˈgeɪʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kraɪm ɪnˌvestɪˈgeɪʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "Children Obesity",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtʃɪldrən əʊˈbiːsəti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈtʃɪldrən əʊˈbiːsəti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the growing issue",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈgrəʊɪŋ ˈɪʃuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈgrəʊɪŋ ˈɪʃuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a serious health crisis",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈsɪəriəs helθ ˈkraɪsɪs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈsɪəriəs helθ ˈkraɪsɪs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "heart disease",
+      "pronunciation": {
+        "british": {
+          "ipa": "hɑːt dɪˈziːz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "hɑːt dɪˈziːz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a stark departure",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə stɑːk dɪˈpɑːtʃə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə stɑːk dɪˈpɑːtʃə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "health problems earlier and earlier",
+      "pronunciation": {
+        "british": {
+          "ipa": "helθ ˈprɒbləmz ˈɜːliə ənd ˈɜːliə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "helθ ˈprɒbləmz ˈɜːliə ənd ˈɜːliə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "uncommon to common",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʌnˈkɒmən tə ˈkɒmən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ʌnˈkɒmən tə ˈkɒmən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "this normalization is dangerous",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs ˌnɔːməlaɪˈzeɪʃn ɪz ˈdeɪndʒərəs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðɪs ˌnɔːməlaɪˈzeɪʃn ɪz ˈdeɪndʒərəs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "less urgent in our response",
+      "pronunciation": {
+        "british": {
+          "ipa": "les ˈɜːdʒənt ɪn ˈaʊə rɪˈspɒns",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "les ˈɜːdʒənt ɪn ˈaʊə rɪˈspɒns",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "need for action",
+      "pronunciation": {
+        "british": {
+          "ipa": "niːd fər ˈækʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "niːd fər ˈækʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "overweight problem",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌəʊvəˈweɪt ˈprɒbləm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌəʊvəˈweɪt ˈprɒbləm",
           "phonetic": ""
         }
       },
@@ -253,6 +3005,166 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
+      "english": "traffic light colors",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtræfɪk laɪt ˈkʌləz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈtræfɪk laɪt ˈkʌləz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "food's nutritional value",
+      "pronunciation": {
+        "british": {
+          "ipa": "fuːdz njuːˈtrɪʃənl ˈvæljuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "fuːdz njuːˈtrɪʃənl ˈvæljuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "healthy standard",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhelθi ˈstændəd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhelθi ˈstændəd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "food types",
+      "pronunciation": {
+        "british": {
+          "ipa": "fuːd taɪps",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "fuːd taɪps",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "determine",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈtɜːmɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "dɪˈtɜːmɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "certain types of nutrient",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɜːtn taɪps əv ˈnjuːtriənt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsɜːtn taɪps əv ˈnjuːtriənt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "responsibility",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˌspɒnsəˈbɪləti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rɪˌspɒnsəˈbɪləti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "label food properly",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈleɪbl fuːd ˈprɒpəli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈleɪbl fuːd ˈprɒpəli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "be aware of food",
+      "pronunciation": {
+        "british": {
+          "ipa": "bi əˈweə əv fuːd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "bi əˈweə əv fuːd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "make decisions",
+      "pronunciation": {
+        "british": {
+          "ipa": "meɪk dɪˈsɪʒnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "meɪk dɪˈsɪʒnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
       "english": "Civilization",
       "pronunciation": {
         "british": {
@@ -269,14 +3181,270 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
-      "english": "Library Tour",
+      "english": "the abilities of her crew",
       "pronunciation": {
         "british": {
-          "ipa": "ˈlaɪbrəri tʊə",
+          "ipa": "ði əˈbɪlətiz əv hɜː kruː",
           "phonetic": ""
         },
         "american": {
-          "ipa": "ˈlaɪbrəri tʊə",
+          "ipa": "ði əˈbɪlətiz əv hɜː kruː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "too many shipwrecks",
+      "pronunciation": {
+        "british": {
+          "ipa": "tuː ˈmeni ˈʃɪpre",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "tuː ˈmeni ˈʃɪpre",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the future of everything",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈfjuːtʃər əv ˈevriθɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈfjuːtʃər əv ˈevriθɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the wisdom of our actions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈwɪzdəm əv ˈaʊər ˈækʃnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈwɪzdəm əv ˈaʊər ˈækʃnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "by trial and error",
+      "pronunciation": {
+        "british": {
+          "ipa": "baɪ ˈtraɪəl ənd ˈerə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "baɪ ˈtraɪəl ənd ˈerə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "no longer afford",
+      "pronunciation": {
+        "british": {
+          "ipa": "nəʊ ˈlɒŋgər əˈfɔːd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "nəʊ ˈlɒŋgər əˈfɔːd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "forgive us any big mistakes",
+      "pronunciation": {
+        "british": {
+          "ipa": "fəˈgɪv ʌs ˈeni bɪg mɪˈsteɪks",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "fəˈgɪv ʌs ˈeni bɪg mɪˈsteɪks",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "Library Introduction",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlaɪbrəri ˌɪntrəˈdʌkʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈlaɪbrəri ˌɪntrəˈdʌkʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "functional areas and services",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfʌŋkʃənl ˈeəriəz ənd ˈsɜːvɪsɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfʌŋkʃənl ˈeəriəz ənd ˈsɜːvɪsɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the service desk",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈsɜːvɪs desk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈsɜːvɪs desk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "computers with special software",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəmˈpjuːtəz wɪð ˈspeʃl ˈsɒftweə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kəmˈpjuːtəz wɪð ˈspeʃl ˈsɒftweə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "access to internet",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈækses tə ˈɪntənet",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈækses tə ˈɪntənet",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "printers",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈprɪntəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈprɪntəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "instructions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈstrʌkʃnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪnˈstrʌkʃnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "student cards",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈstjuːdnt kɑːdz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈstjuːdnt kɑːdz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "charge your card",
+      "pronunciation": {
+        "british": {
+          "ipa": "tʃɑːdʒ jɔː kɑːd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "tʃɑːdʒ jɔː kɑːd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "at the front desk",
+      "pronunciation": {
+        "british": {
+          "ipa": "ət ðə frʌnt desk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ət ðə frʌnt desk",
           "phonetic": ""
         }
       },
@@ -317,14 +3485,158 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
-      "english": "Freedom of Speech in Britain",
+      "english": "Britain Experience",
       "pronunciation": {
         "british": {
-          "ipa": "ˈfriːdəm əv spiːtʃ ɪn ˈbrɪtn",
+          "ipa": "ˈbrɪtn ɪkˈspɪəriəns",
           "phonetic": ""
         },
         "american": {
-          "ipa": "ˈfriːdəm əv spiːtʃ ɪn ˈbrɪtn",
+          "ipa": "ˈbrɪtn ɪkˈspɪəriəns",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the development of a free and vibrant press",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə dɪˈveləpmənt əv ə friː ənd ˈvaɪbrənt pres",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə dɪˈveləpmənt əv ə friː ənd ˈvaɪbrənt pres",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the British press",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈbrɪtɪʃ pres",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈbrɪtɪʃ pres",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "its origins",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪts ˈɒrɪdʒɪnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪts ˈɒrɪdʒɪnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "freedom of speech",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfriːdəm əv spiːtʃ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfriːdəm əv spiːtʃ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "British policy",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbrɪtɪʃ ˈpɒləsi",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbrɪtɪʃ ˈpɒləsi",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a new culture of public debate and information sharing",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə njuː ˈkʌltʃər əv ˈpʌblɪk dɪˈbeɪt ənd ˌɪnfəˈmeɪʃn ˈʃeərɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə njuː ˈkʌltʃər əv ˈpʌblɪk dɪˈbeɪt ənd ˌɪnfəˈmeɪʃn ˈʃeərɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "government policies",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈgʌvnmənt ˈpɒləsiz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈgʌvnmənt ˈpɒləsiz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "revolutionary",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌrevəˈluːʃənri",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌrevəˈluːʃənri",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a great sign of public freedom",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə greɪt saɪn əv ˈpʌblɪk ˈfriːdəm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə greɪt saɪn əv ˈpʌblɪk ˈfriːdəm",
           "phonetic": ""
         }
       },
@@ -349,6 +3661,134 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
+      "english": "remarkable creatures",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈmɑːkəbl ˈkriːtʃəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rɪˈmɑːkəbl ˈkriːtʃəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "short necks",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʃɔːt neks",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ʃɔːt neks",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "life cycle is migration",
+      "pronunciation": {
+        "british": {
+          "ipa": "laɪf ˈsaɪkl ɪz maɪˈgreɪʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "laɪf ˈsaɪkl ɪz maɪˈgreɪʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "an important study",
+      "pronunciation": {
+        "british": {
+          "ipa": "ən ɪmˈpɔːtnt ˈstʌdi",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ən ɪmˈpɔːtnt ˈstʌdi",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "monitor and locate its migration route",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmɒnɪtə ənd ləʊˈkeɪt ɪts maɪˈgreɪʃn ruːt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈmɒnɪtə ənd ləʊˈkeɪt ɪts maɪˈgreɪʃn ruːt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "travel to different locations",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtrævl tə ˈdɪfrənt ləʊˈkeɪʃnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈtrævl tə ˈdɪfrənt ləʊˈkeɪʃnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the entire migration spanned three months",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði ɪnˈtaɪə maɪˈgreɪʃn spænd θriː mʌnθs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ði ɪnˈtaɪə maɪˈgreɪʃn spænd θriː mʌnθs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "migration abilities",
+      "pronunciation": {
+        "british": {
+          "ipa": "maɪˈgreɪʃn əˈbɪlətiz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "maɪˈgreɪʃn əˈbɪlətiz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
       "english": "Government Blogging",
       "pronunciation": {
         "british": {
@@ -357,6 +3797,198 @@
         },
         "american": {
           "ipa": "ˈgʌvnmənt ˈblɒgɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "blogging",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈblɒgɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈblɒgɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a two-way interaction",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə tuː weɪ ˌɪntərˈækʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə tuː weɪ ˌɪntərˈækʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "content",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkɒntent",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkɒntent",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "readers",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈriːdəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈriːdəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "challenge the author",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtʃælɪndʒ ði ˈɔːθə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈtʃælɪndʒ ði ˈɔːθə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "governments",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈgʌvnmənts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈgʌvnmənts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "White House",
+      "pronunciation": {
+        "british": {
+          "ipa": "waɪt haʊs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "waɪt haʊs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "comment areas",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkɒment ˈeəriəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkɒment ˈeəriəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the comments",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈkɒments",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈkɒments",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "citizens",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɪtɪzənz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsɪtɪzənz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "what should be said",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɒt ʃʊd bi sed",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɒt ʃʊd bi sed",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "what should be shown",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɒt ʃʊd bi ʃəʊn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɒt ʃʊd bi ʃəʊn",
           "phonetic": ""
         }
       },
@@ -413,14 +4045,110 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
-      "english": "US Economy",
+      "english": "linguistic training",
       "pronunciation": {
         "british": {
-          "ipa": "ju ː es iˈkɒnəmi",
+          "ipa": "lɪŋˈgwɪstɪk ˈtreɪnɪŋ",
           "phonetic": ""
         },
         "american": {
-          "ipa": "ju ː es iˈkɒnəmi",
+          "ipa": "lɪŋˈgwɪstɪk ˈtreɪnɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "authority on your chosen subject",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɔːˈθɒrəti ɒn jɔː ˈtʃəʊzn ˈsʌbdʒɪkt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɔːˈθɒrəti ɒn jɔː ˈtʃəʊzn ˈsʌbdʒɪkt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a career woman expressed this very nicely",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə kəˈrɪə ˈwʊmən ɪkˈsprest ðɪs ˈveri ˈnaɪsli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə kəˈrɪə ˈwʊmən ɪkˈsprest ðɪs ˈveri ˈnaɪsli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "very narrow areas of language",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈveri ˈnærəʊ ˈeəriəz əv ˈlæŋgwɪdʒ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈveri ˈnærəʊ ˈeəriəz əv ˈlæŋgwɪdʒ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "knowledge that community produces",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈnɒlɪdʒ ðæt kəˈmjuːnəti prəˈdjuːsɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈnɒlɪdʒ ðæt kəˈmjuːnəti prəˈdjuːsɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "languages are lost in the first place",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlæŋgwɪdʒɪz ɑː lɒst ɪn ðə fɜːst pleɪs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈlæŋgwɪdʒɪz ɑː lɒst ɪn ðə fɜːst pleɪs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "US Economy",
+      "pronunciation": {
+        "british": {
+          "ipa": "juː es iˈkɒnəmi",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "juː es iˈkɒnəmi",
           "phonetic": ""
         }
       },
@@ -445,14 +4173,222 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
-      "english": "Survey on Media",
+      "english": "a human essence",
       "pronunciation": {
         "british": {
-          "ipa": "ˈsɜːveɪ ɒn ˈmiːdiə",
+          "ipa": "ə ˈhjuːmən ˈesns",
           "phonetic": ""
         },
         "american": {
-          "ipa": "ˈsɜːveɪ ɒn ˈmiːdiə",
+          "ipa": "ə ˈhjuːmən ˈesns",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "children's disability to produce speech",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtʃɪldrənz ˌdɪsəˈbɪləti tə prəˈdjuːs spiːtʃ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈtʃɪldrənz ˌdɪsəˈbɪləti tə prəˈdjuːs spiːtʃ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "this problem seriously",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs ˈprɒbləm ˈsɪəriəsli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðɪs ˈprɒbləm ˈsɪəriəsli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "should be dealt with separately",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʃʊd bi delt wɪð ˈseprətli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ʃʊd bi delt wɪð ˈseprətli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a psychological issue",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˌsaɪkəˈlɒdʒɪkl ˈɪʃuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˌsaɪkəˈlɒdʒɪkl ˈɪʃuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a logic issue",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈlɒdʒɪk ˈɪʃuː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈlɒdʒɪk ˈɪʃuː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "solve this problem",
+      "pronunciation": {
+        "british": {
+          "ipa": "sɒlv ðɪs ˈprɒbləm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "sɒlv ðɪs ˈprɒbləm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "how language is learned",
+      "pronunciation": {
+        "british": {
+          "ipa": "haʊ ˈlæŋgwɪdʒ ɪz lɜːnd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "haʊ ˈlæŋgwɪdʒ ɪz lɜːnd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "New Media Survey",
+      "pronunciation": {
+        "british": {
+          "ipa": "njuː ˈmiːdiə ˈsɜːveɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "njuː ˈmiːdiə ˈsɜːveɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "which source do you use to get information",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪtʃ sɔːs duː juː juːz tə get ˌɪnfəˈmeɪʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɪtʃ sɔːs duː juː juːz tə get ˌɪnfəˈmeɪʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the survey shows people chose internet",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈsɜːveɪ ʃəʊz ˈpiːpl tʃəʊz ˈɪntənet",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈsɜːveɪ ʃəʊz ˈpiːpl tʃəʊz ˈɪntənet",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the survey is conducted on the website",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈsɜːveɪ ɪz kənˈdʌktɪd ɒn ðə ˈwebsaɪt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈsɜːveɪ ɪz kənˈdʌktɪd ɒn ðə ˈwebsaɪt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "frequent users of internet",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfriːkwənt ˈjuːzəz əv ˈɪntənet",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfriːkwənt ˈjuːzəz əv ˈɪntənet",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a biased sample",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈbaɪəst ˈsɑːmpl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈbaɪəst ˈsɑːmpl",
           "phonetic": ""
         }
       },
@@ -477,14 +4413,334 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
-      "english": "Underwater Antares Detectors for Fish",
+      "english": "what forms those clouds",
       "pronunciation": {
         "british": {
-          "ipa": "ˌʌndəˈwɔːtə ænˈtɑːriːz dɪˈtektəz fə fɪʃ",
+          "ipa": "wɒt fɔːmz ðəʊz klaʊdz",
           "phonetic": ""
         },
         "american": {
-          "ipa": "ˌʌndəˈwɔːtə ænˈtɑːriːz dɪˈtektəz fə fɪʃ",
+          "ipa": "wɒt fɔːmz ðəʊz klaʊdz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a particle",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈpɑːtɪkl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈpɑːtɪkl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "grow a cloud drop",
+      "pronunciation": {
+        "british": {
+          "ipa": "grəʊ ə klaʊd drɒp",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "grəʊ ə klaʊd drɒp",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the key questions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə kiː ˈkwestʃənz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə kiː ˈkwestʃənz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "ocean",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈəʊʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈəʊʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "sea salt",
+      "pronunciation": {
+        "british": {
+          "ipa": "siː sɔːlt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "siː sɔːlt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a really good chance",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈrɪəli gʊd tʃɑːns",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈrɪəli gʊd tʃɑːns",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "pollution come from all kinds of sources",
+      "pronunciation": {
+        "british": {
+          "ipa": "pəˈluːʃn kʌm frəm ɔːl kaɪndz əv ˈsɔːsɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "pəˈluːʃn kʌm frəm ɔːl kaɪndz əv ˈsɔːsɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "contributing to the clouds",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈtrɪbjuːtɪŋ tə ðə klaʊdz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kənˈtrɪbjuːtɪŋ tə ðə klaʊdz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "important players in climate change",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪmˈpɔːtnt ˈpleɪəz ɪn ˈklaɪmət tʃeɪndʒ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪmˈpɔːtnt ˈpleɪəz ɪn ˈklaɪmət tʃeɪndʒ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "keeping things much cooler",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkiːpɪŋ θɪŋz mʌtʃ ˈkuːlə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkiːpɪŋ θɪŋz mʌtʃ ˈkuːlə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a huge role in regional weather",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə hjuːdʒ rəʊl ɪn ˈriːdʒənl ˈweðə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə hjuːdʒ rəʊl ɪn ˈriːdʒənl ˈweðə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "affecting weather patterns",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈfektɪŋ ˈweðə ˈpætnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈfektɪŋ ˈweðə ˈpætnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the amount of precipitation",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði əˈmaʊnt əv prɪˌsɪpɪˈteɪʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ði əˈmaʊnt əv prɪˌsɪpɪˈteɪʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "Underwater Remote Detector",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌʌndəˈwɔːtə rɪˈməʊt dɪˈtektə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌʌndəˈwɔːtə rɪˈməʊt dɪˈtektə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "Antares",
+      "pronunciation": {
+        "british": {
+          "ipa": "ænˈtɑːriːz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ænˈtɑːriːz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "camera",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkæmərə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkæmərə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "fish monitoring",
+      "pronunciation": {
+        "british": {
+          "ipa": "fɪʃ ˈmɒnɪtərɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "fɪʃ ˈmɒnɪtərɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "an advanced system of remote technology",
+      "pronunciation": {
+        "british": {
+          "ipa": "ən ədˈvɑːnst ˈsɪstəm əv rɪˈməʊt tekˈnɒlədʒi",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ən ədˈvɑːnst ˈsɪstəm əv rɪˈməʊt tekˈnɒlədʒi",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "detect surrounding environments as well as fish",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈtekt səˈraʊndɪŋ ɪnˈvaɪərənmənts əz wel əz fɪʃ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "dɪˈtekt səˈraʊndɪŋ ɪnˈvaɪərənmənts əz wel əz fɪʃ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "stop feeding",
+      "pronunciation": {
+        "british": {
+          "ipa": "stɒp ˈfiːdɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "stɒp ˈfiːdɪŋ",
           "phonetic": ""
         }
       },
@@ -525,14 +4781,14 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
-      "english": "Practice and Performance",
+      "english": "only one country",
       "pronunciation": {
         "british": {
-          "ipa": "ˈpræktɪs ənd pəˈfɔːməns",
+          "ipa": "ˈəʊnli wʌn ˈkʌntri",
           "phonetic": ""
         },
         "american": {
-          "ipa": "ˈpræktɪs ənd pəˈfɔːməns",
+          "ipa": "ˈəʊnli wʌn ˈkʌntri",
           "phonetic": ""
         }
       },
@@ -541,14 +4797,366 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
-      "english": "The Arctic and the Antarctic",
+      "english": "China",
       "pronunciation": {
         "british": {
-          "ipa": "ði ˈɑːktɪk ənd ði ænˈtɑːktɪk",
+          "ipa": "ˈtʃaɪnə",
           "phonetic": ""
         },
         "american": {
-          "ipa": "ði ˈɑːktɪk ənd ði ænˈtɑːktɪk",
+          "ipa": "ˈtʃaɪnə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "happiness",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhæpinəs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhæpinəs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "index of government policy",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪndeks əv ˈgʌvnmənt ˈpɒləsi",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɪndeks əv ˈgʌvnmənt ˈpɒləsi",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "economic growth",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌiːkəˈnɒmɪk grəʊθ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌiːkəˈnɒmɪk grəʊθ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the effects of different policies on people's happiness",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði ɪˈfekts əv ˈdɪfrənt ˈpɒləsiz ɒn ˈpiːplz ˈhæpinəs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ði ɪˈfekts əv ˈdɪfrənt ˈpɒləsiz ɒn ˈpiːplz ˈhæpinəs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "happiness research",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhæpinəs rɪˈsɜːtʃ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhæpinəs rɪˈsɜːtʃ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "Australia",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɒˈstreɪliə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɒˈstreɪliə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "publishing regular statistics",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpʌblɪʃɪŋ ˈregjələ stəˈtɪstɪks",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈpʌblɪʃɪŋ ˈregjələ stəˈtɪstɪks",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "Deliberate Practice and Performance",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈlɪbərət ˈpræktɪs ənd pəˈfɔːməns",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "dɪˈlɪbərət ˈpræktɪs ənd pəˈfɔːməns",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "find and solve problems",
+      "pronunciation": {
+        "british": {
+          "ipa": "faɪnd ənd sɒlv ˈprɒbləmz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "faɪnd ənd sɒlv ˈprɒbləmz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a high performance",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə haɪ pəˈfɔːməns",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə haɪ pəˈfɔːməns",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "identify your weakness",
+      "pronunciation": {
+        "british": {
+          "ipa": "aɪˈdentɪfaɪ jɔː ˈwiːknəs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "aɪˈdentɪfaɪ jɔː ˈwiːknəs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "focus on it",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfəʊkəs ɒn ɪt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfəʊkəs ɒn ɪt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "carry out further deliberate practice",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkæri aʊt ˈfɜːðə dɪˈlɪbərət ˈpræktɪs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkæri aʊt ˈfɜːðə dɪˈlɪbərət ˈpræktɪs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "talents",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtælənt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈtælənt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "achieve the high international level of recognition",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈtʃiːv ðə haɪ ˌɪntəˈnæʃənl ˈlevl əv ˌrekəgˈnɪʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈtʃiːv ðə haɪ ˌɪntəˈnæʃənl ˈlevl əv ˌrekəgˈnɪʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "Arctic and Antarctic",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɑːktɪk ənd ænˈtɑːktɪk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɑːktɪk ənd ænˈtɑːktɪk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the polar regions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈpəʊlə ˈriːdʒənz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈpəʊlə ˈriːdʒənz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the Arctic at the top and the Antarctic at the bottom",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði ˈɑːktɪk ət ðə tɒp ənd ði ænˈtɑːktɪk ət ðə ˈbɒtəm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ði ˈɑːktɪk ət ðə tɒp ənd ði ænˈtɑːktɪk ət ðə ˈbɒtəm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "can be seen in the sky",
+      "pronunciation": {
+        "british": {
+          "ipa": "kən bi siːn ɪn ðə skaɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kən bi siːn ɪn ðə skaɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "discovered until much later on",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈskʌvəd ʌnˈtɪl mʌtʃ ˈleɪtər ɒn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "dɪˈskʌvəd ʌnˈtɪl mʌtʃ ˈleɪtər ɒn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "these regions are opposite in many ways",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðiːz ˈriːdʒənz ɑː ˈɒpəzɪt ɪn ˈmeni weɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðiːz ˈriːdʒənz ɑː ˈɒpəzɪt ɪn ˈmeni weɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a bit of land cover in our ice",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə bɪt əv lænd ˈkʌvə ɪn ˈaʊər aɪs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə bɪt əv lænd ˈkʌvə ɪn ˈaʊər aɪs",
           "phonetic": ""
         }
       },
@@ -589,14 +5197,270 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
-      "english": "Absolute Zero",
+      "english": "communicate and educate",
       "pronunciation": {
         "british": {
-          "ipa": "ˌæbsəluːt ˈzɪərəʊ",
+          "ipa": "kəˈmjuːnɪkeɪt ənd ˈedʒukeɪt",
           "phonetic": ""
         },
         "american": {
-          "ipa": "ˌæbsəluːt ˈzɪərəʊ",
+          "ipa": "kəˈmjuːnɪkeɪt ənd ˈedʒukeɪt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "two languages",
+      "pronunciation": {
+        "british": {
+          "ipa": "tuː ˈlæŋgwɪdʒɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "tuː ˈlæŋgwɪdʒɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "benefit their children's language learning",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbenɪfɪt ðeə ˈtʃɪldrənz ˈlæŋgwɪdʒ ˈlɜːnɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbenɪfɪt ðeə ˈtʃɪldrənz ˈlæŋgwɪdʒ ˈlɜːnɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "get confused",
+      "pronunciation": {
+        "british": {
+          "ipa": "get kənˈfjuːzd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "get kənˈfjuːzd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "use different languages to describe the same object",
+      "pronunciation": {
+        "british": {
+          "ipa": "juːz ˈdɪfrənt ˈlæŋgwɪdʒɪz tə dɪˈskraɪb ðə seɪm ˈɒbdʒɪkt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "juːz ˈdɪfrənt ˈlæŋgwɪdʒɪz tə dɪˈskraɪb ðə seɪm ˈɒbdʒɪkt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "Never Get to Absolute Zero",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈnevə get tə ˌæbsəluːt ˈzɪərəʊ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈnevə get tə ˌæbsəluːt ˈzɪərəʊ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a law of physics",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə lɔː əv ˈfɪzɪks",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə lɔː əv ˈfɪzɪks",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "third law",
+      "pronunciation": {
+        "british": {
+          "ipa": "θɜːd lɔː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "θɜːd lɔː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "we don't really know it's true",
+      "pronunciation": {
+        "british": {
+          "ipa": "wi dəʊnt ˈrɪəli nəʊ ɪts truː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wi dəʊnt ˈrɪəli nəʊ ɪts truː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the following reason",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈfɒləʊɪŋ ˈriːzn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈfɒləʊɪŋ ˈriːzn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "get energy out",
+      "pronunciation": {
+        "british": {
+          "ipa": "get ˈenədʒi aʊt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "get ˈenədʒi aʊt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "putting the energy in",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpʊtɪŋ ði ˈenədʒi ɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈpʊtɪŋ ði ˈenədʒi ɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "can't completely stop the energy from going in",
+      "pronunciation": {
+        "british": {
+          "ipa": "kɑːnt kəmˈpliːtli stɒp ði ˈenədʒi frəm ˈgəʊɪŋ ɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kɑːnt kəmˈpliːtli stɒp ði ˈenədʒi frəm ˈgəʊɪŋ ɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "keep it going down",
+      "pronunciation": {
+        "british": {
+          "ipa": "kiːp ɪt ˈgəʊɪŋ daʊn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kiːp ɪt ˈgəʊɪŋ daʊn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "10 times colder",
+      "pronunciation": {
+        "british": {
+          "ipa": "ten taɪmz ˈkəʊldə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ten taɪmz ˈkəʊldə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "not a zero",
+      "pronunciation": {
+        "british": {
+          "ipa": "nɒt ə ˈzɪərəʊ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "nɒt ə ˈzɪərəʊ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "get closer and closer",
+      "pronunciation": {
+        "british": {
+          "ipa": "get ˈkləʊsər ənd ˈkləʊsə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "get ˈkləʊsər ənd ˈkləʊsə",
           "phonetic": ""
         }
       },
@@ -637,6 +5501,150 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
+      "english": "climate change",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈklaɪmət tʃeɪndʒ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈklaɪmət tʃeɪndʒ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "agricultural productions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌægrɪˈkʌltʃərəl prəˈdʌkʃnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌægrɪˈkʌltʃərəl prəˈdʌkʃnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "facing hunger in Africa",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfeɪsɪŋ ˈhʌŋgər ɪn ˈæfrɪkə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfeɪsɪŋ ˈhʌŋgər ɪn ˈæfrɪkə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "less production and less food",
+      "pronunciation": {
+        "british": {
+          "ipa": "les prəˈdʌkʃn ənd les fuːd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "les prəˈdʌkʃn ənd les fuːd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "difficult to deal with climate change",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdɪfɪkəlt tə diːl wɪð ˈklaɪmət tʃeɪndʒ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈdɪfɪkəlt tə diːl wɪð ˈklaɪmət tʃeɪndʒ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "effects on world economy",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪˈfekts ɒn wɜːld iˈkɒnəmi",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪˈfekts ɒn wɜːld iˈkɒnəmi",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "not suitable for food production",
+      "pronunciation": {
+        "british": {
+          "ipa": "nɒt ˈsuːtəbl fə fuːd prəˈdʌkʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "nɒt ˈsuːtəbl fə fuːd prəˈdʌkʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "extreme weather conditions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪkˈstriːm ˈweðə kənˈdɪʃnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪkˈstriːm ˈweðə kənˈdɪʃnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a continuous decline in food supply",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə kənˈtɪnjuəs dɪˈklaɪn ɪn fuːd səˈplaɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə kənˈtɪnjuəs dɪˈklaɪn ɪn fuːd səˈplaɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
       "english": "Social Identity",
       "pronunciation": {
         "british": {
@@ -653,30 +5661,302 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
-      "english": "Aging",
+      "english": "Aging Population",
       "pronunciation": {
         "british": {
-          "ipa": "ˈeɪdʒɪŋ",
+          "ipa": "ˈeɪdʒɪŋ ˌpɒpjuˈleɪʃn",
           "phonetic": ""
         },
         "american": {
-          "ipa": "ˈeɪdʒɪŋ",
+          "ipa": "ˈeɪdʒɪŋ ˌpɒpjuˈleɪʃn",
           "phonetic": ""
         }
       },
-      "difficulty": "easy",
+      "difficulty": "hard",
       "category": "pte-rl-vocabulary",
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
-      "english": "Cracking Sound of Knee",
+      "english": "not just a future concern",
       "pronunciation": {
         "british": {
-          "ipa": "ˈkrækɪŋ saʊnd əv niː",
+          "ipa": "nɒt dʒʌst ə ˈfjuːtʃə kənˈsɜːn",
           "phonetic": ""
         },
         "american": {
-          "ipa": "ˈkrækɪŋ saʊnd əv niː",
+          "ipa": "nɒt dʒʌst ə ˈfjuːtʃə kənˈsɜːn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "happening right now",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhæpənɪŋ raɪt naʊ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhæpənɪŋ raɪt naʊ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the situation is more severe in Japan",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˌsɪtʃuˈeɪʃn ɪz mɔː sɪˈvɪə ɪn dʒəˈpæn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˌsɪtʃuˈeɪʃn ɪz mɔː sɪˈvɪə ɪn dʒəˈpæn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "these figures reveal a clear trend",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðiːz ˈfɪgəz rɪˈviːl ə klɪə trend",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðiːz ˈfɪgəz rɪˈviːl ə klɪə trend",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the ageing problem",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði ˈeɪdʒɪŋ ˈprɒbləm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ði ˈeɪdʒɪŋ ˈprɒbləm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "industrialized societies",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈdʌstriəlaɪzd səˈsaɪətiz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪnˈdʌstriəlaɪzd səˈsaɪətiz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "live longer",
+      "pronunciation": {
+        "british": {
+          "ipa": "lɪv ˈlɒŋgə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "lɪv ˈlɒŋgə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "birth rates often decline",
+      "pronunciation": {
+        "british": {
+          "ipa": "bɜːθ reɪts ˈɒfn dɪˈklaɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "bɜːθ reɪts ˈɒfn dɪˈklaɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "The Sound of a Cracking Knee",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə saʊnd əv ə ˈkrækɪŋ niː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə saʊnd əv ə ˈkrækɪŋ niː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "makes me excited",
+      "pronunciation": {
+        "british": {
+          "ipa": "meɪks miː ɪkˈsaɪtɪd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "meɪks miː ɪkˈsaɪtɪd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "some real information in them",
+      "pronunciation": {
+        "british": {
+          "ipa": "sʌm rɪəl ˌɪnfəˈmeɪʃn ɪn ðem",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "sʌm rɪəl ˌɪnfəˈmeɪʃn ɪn ðem",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "experience with cracking knees",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪkˈspɪəriəns wɪð ˈkrækɪŋ niːz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪkˈspɪəriəns wɪð ˈkrækɪŋ niːz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "better tech for knee injuries",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbetə tek fə niː ˈɪndʒəriz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbetə tek fə niː ˈɪndʒəriz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the surfaces inside the knee",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈsɜːfɪsɪz ɪnˈsaɪd ðə niː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈsɜːfɪsɪz ɪnˈsaɪd ðə niː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "built a prototype",
+      "pronunciation": {
+        "british": {
+          "ipa": "bɪlt ə ˈprəʊtətaɪp",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "bɪlt ə ˈprəʊtətaɪp",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "sounds the device picks up",
+      "pronunciation": {
+        "british": {
+          "ipa": "saʊndz ðə dɪˈvaɪs pɪks ʌp",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "saʊndz ðə dɪˈvaɪs pɪks ʌp",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "track healing after surgery",
+      "pronunciation": {
+        "british": {
+          "ipa": "træk ˈhiːlɪŋ ˈɑːftə ˈsɜːdʒəri",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "træk ˈhiːlɪŋ ˈɑːftə ˈsɜːdʒəri",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "give people a decision aid",
+      "pronunciation": {
+        "british": {
+          "ipa": "gɪv ˈpiːpl ə dɪˈsɪʒn eɪd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "gɪv ˈpiːpl ə dɪˈsɪʒn eɪd",
           "phonetic": ""
         }
       },
@@ -717,6 +5997,118 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
+      "english": "science is all about evidence",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsaɪəns ɪz ɔːl əˈbaʊt ˈevɪdəns",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsaɪəns ɪz ɔːl əˈbaʊt ˈevɪdəns",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "scientists find what is true",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsaɪəntɪsts faɪnd wɒt ɪz truː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsaɪəntɪsts faɪnd wɒt ɪz truː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "interesting situations",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪntrəstɪŋ ˌsɪtʃuˈeɪʃnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈɪntrəstɪŋ ˌsɪtʃuˈeɪʃnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "hard for general readers to understand",
+      "pronunciation": {
+        "british": {
+          "ipa": "hɑːd fə ˈdʒenrəl ˈriːdəz tə ˌʌndəˈstænd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "hɑːd fə ˈdʒenrəl ˈriːdəz tə ˌʌndəˈstænd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "not strictly scientific",
+      "pronunciation": {
+        "british": {
+          "ipa": "nɒt ˈstrɪktli ˌsaɪənˈtɪfɪk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "nɒt ˈstrɪktli ˌsaɪənˈtɪfɪk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "understand a science fiction",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌʌndəˈstænd ə ˈsaɪəns ˈfɪkʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌʌndəˈstænd ə ˈsaɪəns ˈfɪkʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "question the situation about why they have failed",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkwestʃən ðə ˌsɪtʃuˈeɪʃn əˈbaʊt waɪ ðeɪ həv feɪld",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkwestʃən ðə ˌsɪtʃuˈeɪʃn əˈbaʊt waɪ ðeɪ həv feɪld",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
       "english": "Overfishing",
       "pronunciation": {
         "british": {
@@ -733,6 +6125,118 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
+      "english": "aquaculture",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈækwəkʌltʃə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈækwəkʌltʃə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the farming of fish",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈfɑːmɪŋ əv fɪʃ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈfɑːmɪŋ əv fɪʃ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the sources of human protein",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈsɔːsɪz əv ˈhjuːmən ˈprəʊtiːn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈsɔːsɪz əv ˈhjuːmən ˈprəʊtiːn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "growth in aquaculture production",
+      "pronunciation": {
+        "british": {
+          "ipa": "grəʊθ ɪn ˈækwəkʌltʃə prəˈdʌkʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "grəʊθ ɪn ˈækwəkʌltʃə prəˈdʌkʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "modern food supply",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmɒdn fuːd səˈplaɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈmɒdn fuːd səˈplaɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "food production activity",
+      "pronunciation": {
+        "british": {
+          "ipa": "fuːd prəˈdʌkʃn ækˈtɪvəti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "fuːd prəˈdʌkʃn ækˈtɪvəti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "contributions to human diet",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌkɒntrɪˈbjuːʃnz tə ˈhjuːmən ˈdaɪət",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌkɒntrɪˈbjuːʃnz tə ˈhjuːmən ˈdaɪət",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
       "english": "Happiness & Social Relations",
       "pronunciation": {
         "british": {
@@ -741,6 +6245,134 @@
         },
         "american": {
           "ipa": "ˈhæpinəs ənd ˌsəʊʃl rɪˈleɪʃnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "frequency and quality of social relation",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfriːkwənsi ənd ˈkwɒləti əv ˈsəʊʃl rɪˈleɪʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfriːkwənsi ənd ˈkwɒləti əv ˈsəʊʃl rɪˈleɪʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "more happiness relations with friends and family",
+      "pronunciation": {
+        "british": {
+          "ipa": "mɔː ˈhæpinəs rɪˈleɪʃnz wɪð frendz ənd ˈfæməli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "mɔː ˈhæpinəs rɪˈleɪʃnz wɪð frendz ənd ˈfæməli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "evidence people feel more satisfied",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈevɪdəns ˈpiːpl fiːl mɔː ˈsætɪsfaɪd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈevɪdəns ˈpiːpl fiːl mɔː ˈsætɪsfaɪd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "feel happier",
+      "pronunciation": {
+        "british": {
+          "ipa": "fiːl ˈhæpiə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "fiːl ˈhæpiə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "social more with friends",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsəʊʃl mɔː wɪð frendz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsəʊʃl mɔː wɪð frendz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "more interaction",
+      "pronunciation": {
+        "british": {
+          "ipa": "mɔː ˌɪntərˈækʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "mɔː ˌɪntərˈækʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "social activities",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsəʊʃl ækˈtɪvətiz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsəʊʃl ækˈtɪvətiz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "happy personalities",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhæpi ˌpɜːsəˈnælətiz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈhæpi ˌpɜːsəˈnælətiz",
           "phonetic": ""
         }
       },
@@ -797,6 +6429,182 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
+      "english": "recognize objects",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈrekəgnaɪz ˈɒbdʒɪkts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈrekəgnaɪz ˈɒbdʒɪkts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "how difficult the problem is",
+      "pronunciation": {
+        "british": {
+          "ipa": "haʊ ˈdɪfɪkəlt ðə ˈprɒbləm ɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "haʊ ˈdɪfɪkəlt ðə ˈprɒbləm ɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "extract that information",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪkˈstrækt ðæt ˌɪnfəˈmeɪʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪkˈstrækt ðæt ˌɪnfəˈmeɪʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "take the visual stuff",
+      "pronunciation": {
+        "british": {
+          "ipa": "teɪk ðə ˈvɪʒuəl stʌf",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "teɪk ðə ˈvɪʒuəl stʌf",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "different things in our environment",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdɪfrənt θɪŋz ɪn ˈaʊər ɪnˈvaɪərənmənt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈdɪfrənt θɪŋz ɪn ˈaʊər ɪnˈvaɪərənmənt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a special class of objects",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈspeʃl klɑːs əv ˈɒbdʒɪkts",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈspeʃl klɑːs əv ˈɒbdʒɪkts",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the human face",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈhjuːmən feɪs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈhjuːmən feɪs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "recognizing faces",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈrekəgnaɪzɪŋ ˈfeɪsɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈrekəgnaɪzɪŋ ˈfeɪsɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "take the visual information",
+      "pronunciation": {
+        "british": {
+          "ipa": "teɪk ðə ˈvɪʒuəl ˌɪnfəˈmeɪʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "teɪk ðə ˈvɪʒuəl ˌɪnfəˈmeɪʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "put a name to a face",
+      "pronunciation": {
+        "british": {
+          "ipa": "pʊt ə neɪm tə ə feɪs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "pʊt ə neɪm tə ə feɪs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a hard problem",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə hɑːd ˈprɒbləm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə hɑːd ˈprɒbləm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
       "english": "A New Weapon",
       "pronunciation": {
         "british": {
@@ -829,6 +6637,134 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
+      "english": "biotech engineering",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbaɪəʊtek ˌendʒɪˈnɪərɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈbaɪəʊtek ˌendʒɪˈnɪərɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "simple machines",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɪmpl məˈʃiːnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈsɪmpl məˈʃiːnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "understand ourselves",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌʌndəˈstænd ˌaʊəˈselvz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌʌndəˈstænd ˌaʊəˈselvz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "make complicated devices",
+      "pronunciation": {
+        "british": {
+          "ipa": "meɪk ˈkɒmplɪkeɪtɪd dɪˈvaɪsɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "meɪk ˈkɒmplɪkeɪtɪd dɪˈvaɪsɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "more complicated machines",
+      "pronunciation": {
+        "british": {
+          "ipa": "mɔː ˈkɒmplɪkeɪtɪd məˈʃiːnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "mɔː ˈkɒmplɪkeɪtɪd məˈʃiːnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "show the human brain's functions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʃəʊ ðə ˈhjuːmən breɪnz ˈfʌŋkʃnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ʃəʊ ðə ˈhjuːmən breɪnz ˈfʌŋkʃnz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "X-ray picture",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈeks reɪ ˈpɪktʃə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈeks reɪ ˈpɪktʃə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "health problems",
+      "pronunciation": {
+        "british": {
+          "ipa": "helθ ˈprɒbləmz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "helθ ˈprɒbləmz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
       "english": "London Taxi Service",
       "pronunciation": {
         "british": {
@@ -845,14 +6781,174 @@
       "source": "pte-rl-vocabulary-with-ipa"
     },
     {
-      "english": "Win-win Solutions",
+      "english": "Win-win Solution",
       "pronunciation": {
         "british": {
-          "ipa": "wɪn wɪn səˈluːʃnz",
+          "ipa": "wɪn wɪn səˈluːʃn",
           "phonetic": ""
         },
         "american": {
-          "ipa": "wɪn wɪn səˈluːʃnz",
+          "ipa": "wɪn wɪn səˈluːʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "economic growth",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌiːkəˈnɒmɪk grəʊθ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌiːkəˈnɒmɪk grəʊθ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "cut poverty",
+      "pronunciation": {
+        "british": {
+          "ipa": "kʌt ˈpɒvəti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kʌt ˈpɒvəti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "damaging the biodiversity",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdæmɪdʒɪŋ ðə ˌbaɪəʊdaɪˈvɜːsəti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈdæmɪdʒɪŋ ðə ˌbaɪəʊdaɪˈvɜːsəti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "protest biodiversity",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈprəʊtest ˌbaɪəʊdaɪˈvɜːsəti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈprəʊtest ˌbaɪəʊdaɪˈvɜːsəti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the risk of hurting the poor",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə rɪsk əv ˈhɜːtɪŋ ðə pʊə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə rɪsk əv ˈhɜːtɪŋ ðə pʊə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "run the risk",
+      "pronunciation": {
+        "british": {
+          "ipa": "rʌn ðə rɪsk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rʌn ðə rɪsk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "reducing the economic growth",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈdjuːsɪŋ ði ˌiːkəˈnɒmɪk grəʊθ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rɪˈdjuːsɪŋ ði ˌiːkəˈnɒmɪk grəʊθ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "wildlife conservation society",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈwaɪldlaɪf ˌkɒnsəˈveɪʃn səˈsaɪəti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈwaɪldlaɪf ˌkɒnsəˈveɪʃn səˈsaɪəti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "wilderness refuge",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈwɪldənəs ˈrefjuːdʒ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈwɪldənəs ˈrefjuːdʒ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "developing world",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈveləpɪŋ wɜːld",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "dɪˈveləpɪŋ wɜːld",
           "phonetic": ""
         }
       },
@@ -869,6 +6965,182 @@
         },
         "american": {
           "ipa": "ˈliːdəʃɪp ənd ˈmænɪdʒmənt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a leader can define goals",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈliːdə kən dɪˈfaɪn gəʊlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈliːdə kən dɪˈfaɪn gəʊlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "mobilize people's energies",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈməʊbəlaɪz ˈpiːplz ˈenədʒiz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈməʊbəlaɪz ˈpiːplz ˈenədʒiz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "use of deadly force",
+      "pronunciation": {
+        "british": {
+          "ipa": "juːz əv ˈdedli fɔːs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "juːz əv ˈdedli fɔːs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the power of example",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈpaʊər əv ɪgˈzɑːmpl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈpaʊər əv ɪgˈzɑːmpl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "leadership as a spectrum",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈliːdəʃɪp əz ə ˈspektrəm",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈliːdəʃɪp əz ə ˈspektrəm",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the most visible",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə məʊst ˈvɪzəbl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə məʊst ˈvɪzəbl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "casual and low-key leadership",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkæʒuəl ənd ləʊ kiː ˈliːdəʃɪp",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈkæʒuəl ənd ləʊ kiː ˈliːdəʃɪp",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "make a significant difference to the individuals",
+      "pronunciation": {
+        "british": {
+          "ipa": "meɪk ə sɪgˈnɪfɪkənt ˈdɪfrəns tə ði ˌɪndɪˈvɪdʒuəlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "meɪk ə sɪgˈnɪfɪkənt ˈdɪfrəns tə ði ˌɪndɪˈvɪdʒuəlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "men leading from behind",
+      "pronunciation": {
+        "british": {
+          "ipa": "men ˈliːdɪŋ frəm bɪˈhaɪnd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "men ˈliːdɪŋ frəm bɪˈhaɪnd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "top leaders",
+      "pronunciation": {
+        "british": {
+          "ipa": "tɒp ˈliːdəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "tɒp ˈliːdəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "women behind the scenes",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈwɪmɪn bɪˈhaɪnd ðə siːnz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈwɪmɪn bɪˈhaɪnd ðə siːnz",
           "phonetic": ""
         }
       },
@@ -965,6 +7237,230 @@
         },
         "american": {
           "ipa": "ˈmjuːzɪk ənd ˌwel ˈbiːɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "Prices of Semiconductors",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpraɪsɪz əv ˌsemikənˈdʌktəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈpraɪsɪz əv ˌsemikənˈdʌktəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "economic growth",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌiːkəˈnɒmɪk grəʊθ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌiːkəˈnɒmɪk grəʊθ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "flash chips",
+      "pronunciation": {
+        "british": {
+          "ipa": "flæʃ tʃɪps",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "flæʃ tʃɪps",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "store data",
+      "pronunciation": {
+        "british": {
+          "ipa": "stɔː ˈdeɪtə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "stɔː ˈdeɪtə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "home prices",
+      "pronunciation": {
+        "british": {
+          "ipa": "həʊm ˈpraɪsɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "həʊm ˈpraɪsɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "oversupply",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌəʊvəsəˈplaɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌəʊvəsəˈplaɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "shrinking demand",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈʃrɪŋkɪŋ dɪˈmɑːnd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈʃrɪŋkɪŋ dɪˈmɑːnd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a gloomy economic outlook",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈgluːmi ˌiːkəˈnɒmɪk ˈaʊtlʊk",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈgluːmi ˌiːkəˈnɒmɪk ˈaʊtlʊk",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "factors behind this price fall",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfæktəz bɪˈhaɪnd ðɪs praɪs fɔːl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfæktəz bɪˈhaɪnd ðɪs praɪs fɔːl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "the average price",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði ˈævərɪdʒ praɪs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ði ˈævərɪdʒ praɪs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "chip makers",
+      "pronunciation": {
+        "british": {
+          "ipa": "tʃɪp ˈmeɪkəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "tʃɪp ˈmeɪkəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "chip production",
+      "pronunciation": {
+        "british": {
+          "ipa": "tʃɪp prəˈdʌkʃn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "tʃɪp prəˈdʌkʃn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "price could rise",
+      "pronunciation": {
+        "british": {
+          "ipa": "praɪs kʊd raɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "praɪs kʊd raɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-rl-vocabulary",
+      "source": "pte-rl-vocabulary-with-ipa"
+    },
+    {
+      "english": "a growing demand",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˈgrəʊɪŋ dɪˈmɑːnd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ə ˈgrəʊɪŋ dɪˈmɑːnd",
           "phonetic": ""
         }
       },

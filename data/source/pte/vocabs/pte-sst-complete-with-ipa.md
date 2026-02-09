@@ -379,7 +379,7 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 267. crumbling | /ˈkrʌmbəlɪŋ/ — sounds like **KRUM-buh-ling**
 268. the newspaper industry | /ðə ˈnuzˌpeɪpər ˈɪndəstri/ — sounds like **thuh NOOZ-pay-pur IN-duh-stree**
 269. shrinking | /ˈʃrɪŋkɪŋ/ — sounds like **SHRING-king**
-270. newspaper publisher's red cash flow | /ðə ˈnuzˌpeɪpər ˈpʌblɪʃərz rɛd kæʃ floʊ/ — sounds like **thuh NOOZ-pay-pur PUB-lish-urz RED KASH FLOH**
+270. newspaper publishers' red cash flow | /ðə ˈnuzˌpeɪpər ˈpʌblɪʃərz rɛd kæʃ floʊ/ — sounds like **thuh NOOZ-pay-pur PUB-lish-urz RED KASH FLOH**
 271. the breakeven point | /ðə ˌbreɪkˈivən pɔɪnt/ — sounds like **thuh brayk-EE-vuhn POYNT**
 272. the decreasing number of advertising and buyers | /ðə dɪˈkrisɪŋ ˈnʌmbər əv ˈædvərˌtaɪzɪŋ ænd ˈbaɪərz/ — sounds like **thuh dih-KREE-sing NUM-bur uhv AD-vur-ty-zing and BY-urz**
 273. being online only | /ˈbiɪŋ ˈɔnˌlaɪn ˈoʊnli/ — sounds like **BEE-ing AWN-lyn OHN-lee**

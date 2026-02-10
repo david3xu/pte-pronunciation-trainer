@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-02-10T11:17:33.533Z",
-    "totalTerms": 0,
+    "generated": "2026-02-10T11:47:45.564Z",
+    "totalTerms": 49,
     "source": "pte-di-easy-phrases",
     "description": "Auto-discovered vocabulary book: pte-di-easy-phrases",
     "version": "1.0",
@@ -11,5 +11,790 @@
     "hasIPA": true,
     "keepDuplicates": true
   },
-  "vocabulary": []
+  "vocabulary": [
+    {
+      "english": "compared to just",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəmˈpeəd tə dʒʌst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kəmˈpeəd tə dʒʌst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "compared with",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəmˈpeəd wɪð",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kəmˈpeəd wɪð",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "decreased from 80% to 70%",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈkriːst frɒm ˈeɪti pəˈsent tə ˈsevənti pəˈsent",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "dɪˈkriːst frɒm ˈeɪti pəˈsent tə ˈsevənti pəˈsent",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "an increasing percentage from 2017 to 2019",
+      "pronunciation": {
+        "british": {
+          "ipa": "ən ɪnˈkriːsɪŋ pəˈsentɪdʒ frɒm ˈtwenti ˈsevənˈtiːn tə ˈtwenti naɪnˈtiːn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ən ɪnˈkriːsɪŋ pəˈsentɪdʒ frɒm ˈtwenti ˈsevənˈtiːn tə ˈtwenti naɪnˈtiːn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "at around 30%",
+      "pronunciation": {
+        "british": {
+          "ipa": "æt əˈraʊnd ˈθɜːti pəˈsent",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "æt əˈraʊnd ˈθɜːti pəˈsent",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "with around 15%",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪð əˈraʊnd fɪfˈtiːn pəˈsent",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɪð əˈraʊnd fɪfˈtiːn pəˈsent",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "there are more zebra than any other animals",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðeər ɑː mɔː ˈziːbrə ðæn ˈeni ˈʌðər ˈænɪməlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðeər ɑː mɔː ˈziːbrə ðæn ˈeni ˈʌðər ˈænɪməlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "more men went cycling than women",
+      "pronunciation": {
+        "british": {
+          "ipa": "mɔː men went ˈsaɪklɪŋ ðæn ˈwɪmɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "mɔː men went ˈsaɪklɪŋ ðæn ˈwɪmɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "A decreased from 80% to 70% while B increased from 60% to 70%",
+      "pronunciation": {
+        "british": {
+          "ipa": "eɪ dɪˈkriːst frɒm ˈeɪti pəˈsent tə ˈsevənti pəˈsent waɪl biː ɪnˈkriːst frɒm ˈsɪksti pəˈsent tə ˈsevənti pəˈsent",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "eɪ dɪˈkriːst frɒm ˈeɪti pəˈsent tə ˈsevənti pəˈsent waɪl biː ɪnˈkriːst frɒm ˈsɪksti pəˈsent tə ˈsevənti pəˈsent",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "However",
+      "pronunciation": {
+        "british": {
+          "ipa": "haʊˈevə",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "haʊˈevə",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "there was a decrease",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðeə wɒz ə dɪˈkriːs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðeə wɒz ə dɪˈkriːs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "at similar level",
+      "pronunciation": {
+        "british": {
+          "ipa": "æt ˈsɪmɪlə ˈlevəl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "æt ˈsɪmɪlə ˈlevəl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "by contrast",
+      "pronunciation": {
+        "british": {
+          "ipa": "baɪ ˈkɒntrɑːst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "baɪ ˈkɒntrɑːst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the most popular",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə məʊst ˈpɒpjələ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə məʊst ˈpɒpjələ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the two most popular",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə tuː məʊst ˈpɒpjələ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə tuː məʊst ˈpɒpjələ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "accounts for just",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈkaʊnts fɔː dʒʌst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈkaʊnts fɔː dʒʌst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "which accounted for",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪtʃ əˈkaʊntɪd fɔː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɪtʃ əˈkaʊntɪd fɔː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "it is interesting to note",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪt ɪz ˈɪntrəstɪŋ tə nəʊt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪt ɪz ˈɪntrəstɪŋ tə nəʊt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "there was a peak in 2014",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðeə wɒz ə piːk ɪn ˈtwenti fɔːˈtiːn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðeə wɒz ə piːk ɪn ˈtwenti fɔːˈtiːn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "where they went up to 600 million",
+      "pronunciation": {
+        "british": {
+          "ipa": "weə ðeɪ went ʌp tə sɪks ˈhʌndrəd ˈmɪljən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "weə ðeɪ went ʌp tə sɪks ˈhʌndrəd ˈmɪljən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "for both males and females",
+      "pronunciation": {
+        "british": {
+          "ipa": "fɔː bəʊθ meɪlz ænd ˈfiːmeɪlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "fɔː bəʊθ meɪlz ænd ˈfiːmeɪlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the majority",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə məˈdʒɒrəti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə məˈdʒɒrəti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "and this is followed by",
+      "pronunciation": {
+        "british": {
+          "ipa": "ænd ðɪs ɪz ˈfɒləʊd baɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ænd ðɪs ɪz ˈfɒləʊd baɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "more than any other country",
+      "pronunciation": {
+        "british": {
+          "ipa": "mɔː ðæn ˈeni ˈʌðə ˈkʌntri",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "mɔː ðæn ˈeni ˈʌðə ˈkʌntri",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "this was followed by",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs wɒz ˈfɒləʊd baɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðɪs wɒz ˈfɒləʊd baɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "sharply increased",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈʃɑːpli ɪnˈkriːst",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈʃɑːpli ɪnˈkriːst",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "perhaps most significantly was in 2020",
+      "pronunciation": {
+        "british": {
+          "ipa": "pəˈhæps məʊst sɪɡˈnɪfɪkəntli wɒz ɪn ˈtwenti ˈtwenti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "pəˈhæps məʊst sɪɡˈnɪfɪkəntli wɒz ɪn ˈtwenti ˈtwenti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the space of three years",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə speɪs ɒv θriː jɪəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə speɪs ɒv θriː jɪəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "for example",
+      "pronunciation": {
+        "british": {
+          "ipa": "fɔːr ɪɡˈzɑːmpəl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "fɔːr ɪɡˈzɑːmpəl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "but this drop to about 4500 in 2020",
+      "pronunciation": {
+        "british": {
+          "ipa": "bət ðɪs drɒp tə əˈbaʊt fɔː ˈθaʊzənd faɪv ˈhʌndrəd ɪn ˈtwenti ˈtwenti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "bət ðɪs drɒp tə əˈbaʊt fɔː ˈθaʊzənd faɪv ˈhʌndrəd ɪn ˈtwenti ˈtwenti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "with the exception of the 31 to 40 age group",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪð ði ɪkˈsepʃən ɒv ðə ˈθɜːti wʌn tə ˈfɔːti eɪdʒ ɡruːp",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɪð ði ɪkˈsepʃən ɒv ðə ˈθɜːti wʌn tə ˈfɔːti eɪdʒ ɡruːp",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "where there was a slight drop in 2019",
+      "pronunciation": {
+        "british": {
+          "ipa": "weə ðeə wɒz ə slaɪt drɒp ɪn ˈtwenti naɪnˈtiːn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "weə ðeə wɒz ə slaɪt drɒp ɪn ˈtwenti naɪnˈtiːn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "an increasing percentage of people",
+      "pronunciation": {
+        "british": {
+          "ipa": "ən ɪnˈkriːsɪŋ pəˈsentɪdʒ ɒv ˈpiːpəl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ən ɪnˈkriːsɪŋ pəˈsentɪdʒ ɒv ˈpiːpəl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "with over half the people",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪð ˈəʊvə hɑːf ðə ˈpiːpəl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɪð ˈəʊvə hɑːf ðə ˈpiːpəl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "over half of boys",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈəʊvə hɑːf ɒv bɔɪz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈəʊvə hɑːf ɒv bɔɪz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the majority",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə məˈdʒɒrəti",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə məˈdʒɒrəti",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "it seems that",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪt siːmz ðæt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪt siːmz ðæt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "it went up by 300 million",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪt went ʌp baɪ θriː ˈhʌndrəd ˈmɪljən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪt went ʌp baɪ θriː ˈhʌndrəd ˈmɪljən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "they went up to 600 million",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðeɪ went ʌp tə sɪks ˈhʌndrəd ˈmɪljən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðeɪ went ʌp tə sɪks ˈhʌndrəd ˈmɪljən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "rose from 60 to 65% over the two years",
+      "pronunciation": {
+        "british": {
+          "ipa": "rəʊz frɒm ˈsɪksti tə ˈsɪksti faɪv pəˈsent ˈəʊvə ðə tuː jɪəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rəʊz frɒm ˈsɪksti tə ˈsɪksti faɪv pəˈsent ˈəʊvə ðə tuː jɪəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "rose steeply in the following decades",
+      "pronunciation": {
+        "british": {
+          "ipa": "rəʊz ˈstiːpli ɪn ðə ˈfɒləʊɪŋ ˈdekeɪdz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "rəʊz ˈstiːpli ɪn ðə ˈfɒləʊɪŋ ˈdekeɪdz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "fell from 200 million to 150 million",
+      "pronunciation": {
+        "british": {
+          "ipa": "fel frɒm tuː ˈhʌndrəd ˈmɪljən tə wʌn ˈhʌndrəd ˈfɪfti ˈmɪljən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "fel frɒm tuː ˈhʌndrəd ˈmɪljən tə wʌn ˈhʌndrəd ˈfɪfti ˈmɪljən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "it fell sharply",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪt fel ˈʃɑːpli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪt fel ˈʃɑːpli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "was slightly higher in 2020 than in 1991",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɒz ˈslaɪtli ˈhaɪər ɪn ˈtwenti ˈtwenti ðæn ɪn ˈnaɪnˈtiːn ˈnaɪnti wʌn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɒz ˈslaɪtli ˈhaɪər ɪn ˈtwenti ˈtwenti ðæn ɪn ˈnaɪnˈtiːn ˈnaɪnti wʌn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "there was slightly more",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðeə wɒz ˈslaɪtli mɔː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðeə wɒz ˈslaɪtli mɔː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the most dramatic rise was in",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə məʊst drəˈmætɪk raɪz wɒz ɪn",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə məʊst drəˈmætɪk raɪz wɒz ɪn",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the biggest jump",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈbɪɡɪst dʒʌmp",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈbɪɡɪst dʒʌmp",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "generally speaking",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdʒenərəli ˈspiːkɪŋ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈdʒenərəli ˈspiːkɪŋ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "by far the highest percentage of",
+      "pronunciation": {
+        "british": {
+          "ipa": "baɪ fɑː ðə ˈhaɪɪst pəˈsentɪdʒ ɒv",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "baɪ fɑː ðə ˈhaɪɪst pəˈsentɪdʒ ɒv",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    }
+  ]
 }

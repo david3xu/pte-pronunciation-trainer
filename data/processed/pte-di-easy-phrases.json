@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-02-10T11:47:45.564Z",
-    "totalTerms": 49,
+    "generated": "2026-02-11T22:54:17.049Z",
+    "totalTerms": 119,
     "source": "pte-di-easy-phrases",
     "description": "Auto-discovered vocabulary book: pte-di-easy-phrases",
     "version": "1.0",
@@ -12,6 +12,1126 @@
     "keepDuplicates": true
   },
   "vocabulary": [
+    {
+      "english": "this bar chart",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs bɑː tʃɑːt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðɪs bɑː tʃɑːt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "shows information",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʃəʊz ˌɪnfəˈmeɪʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ʃəʊz ˌɪnfəˈmeɪʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "about A",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈbaʊt eɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈbaʊt eɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "looking at the image",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlʊkɪŋ æt ði ˈɪmɪdʒ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈlʊkɪŋ æt ði ˈɪmɪdʒ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the highest value appears in A",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈhaɪɪst ˈvæljuː əˈpɪəz ɪn eɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈhaɪɪst ˈvæljuː əˈpɪəz ɪn eɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "which is close to A",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪtʃ ɪz kləʊs tə eɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɪtʃ ɪz kləʊs tə eɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "on the other hand",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɒn ði ˈʌðə hænd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɒn ði ˈʌðə hænd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the lowest figure can be found in A",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈləʊɪst ˈfɪɡə kæn biː faʊnd ɪn eɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈləʊɪst ˈfɪɡə kæn biː faʊnd ɪn eɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "accounting for only A",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈkaʊntɪŋ fɔːr ˈəʊnli eɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈkaʊntɪŋ fɔːr ˈəʊnli eɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "we can also notice that",
+      "pronunciation": {
+        "british": {
+          "ipa": "wiː kæn ˈɔːlsəʊ ˈnəʊtɪs ðæt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wiː kæn ˈɔːlsəʊ ˈnəʊtɪs ðæt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the number in A",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈnʌmbər ɪn eɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈnʌmbər ɪn eɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "is pretty low as well",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪz ˈprɪti ləʊ æz wel",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪz ˈprɪti ləʊ æz wel",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "is pretty high as well",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪz ˈprɪti haɪ æz wel",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪz ˈprɪti haɪ æz wel",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "at about A",
+      "pronunciation": {
+        "british": {
+          "ipa": "æt əˈbaʊt eɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "æt əˈbaʊt eɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "in addition",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn əˈdɪʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn əˈdɪʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "A and A",
+      "pronunciation": {
+        "british": {
+          "ipa": "eɪ ænd eɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "eɪ ænd eɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "represent moderate levels",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌreprɪˈzent ˈmɒdərət ˈlevəlz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌreprɪˈzent ˈmɒdərət ˈlevəlz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "to sum up",
+      "pronunciation": {
+        "british": {
+          "ipa": "tə sʌm ʌp",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "tə sʌm ʌp",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "this bar chart tells us about A",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs bɑː tʃɑːt telz ʌs əˈbaʊt eɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðɪs bɑː tʃɑːt telz ʌs əˈbaʊt eɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "including A and B",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈkluːdɪŋ eɪ ænd biː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪnˈkluːdɪŋ eɪ ænd biː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "both groups",
+      "pronunciation": {
+        "british": {
+          "ipa": "bəʊθ ɡruːps",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "bəʊθ ɡruːps",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "follow a similar distribution patterns",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɒləʊ ə ˈsɪmɪlə ˌdɪstrɪˈbjuːʃən ˈpætənz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfɒləʊ ə ˈsɪmɪlə ˌdɪstrɪˈbjuːʃən ˈpætənz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "follow an opposite distribution patterns",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɒləʊ ən ˈɒpəzɪt ˌdɪstrɪˈbjuːʃən ˈpætənz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfɒləʊ ən ˈɒpəzɪt ˌdɪstrɪˈbjuːʃən ˈpætənz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "follow a different distribution patterns",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɒləʊ ə ˈdɪfrənt ˌdɪstrɪˈbjuːʃən ˈpætənz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈfɒləʊ ə ˈdɪfrənt ˌdɪstrɪˈbjuːʃən ˈpætənz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "across all categories",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈkrɒs ɔːl ˈkætəɡəriz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈkrɒs ɔːl ˈkætəɡəriz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "for A",
+      "pronunciation": {
+        "british": {
+          "ipa": "fɔːr eɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "fɔːr eɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the highest value is A at around A",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈhaɪɪst ˈvæljuː ɪz eɪ æt əˈraʊnd eɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈhaɪɪst ˈvæljuː ɪz eɪ æt əˈraʊnd eɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "while for B",
+      "pronunciation": {
+        "british": {
+          "ipa": "waɪl fɔː biː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "waɪl fɔː biː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "A is the highest at A",
+      "pronunciation": {
+        "british": {
+          "ipa": "eɪ ɪz ðə ˈhaɪɪst æt eɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "eɪ ɪz ðə ˈhaɪɪst æt eɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "In comparison",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn kəmˈpærɪsən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn kəmˈpærɪsən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "A represents the smallest percentage",
+      "pronunciation": {
+        "british": {
+          "ipa": "eɪ ˌreprɪˈzents ðə ˈsmɔːlɪst pəˈsentɪdʒ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "eɪ ˌreprɪˈzents ðə ˈsmɔːlɪst pəˈsentɪdʒ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "for A with A",
+      "pronunciation": {
+        "british": {
+          "ipa": "fɔːr eɪ wɪð eɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "fɔːr eɪ wɪð eɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "it is interesting to note that",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪt ɪz ˈɪntrəstɪŋ tə nəʊt ðæt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪt ɪz ˈɪntrəstɪŋ tə nəʊt ðæt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "A and A",
+      "pronunciation": {
+        "british": {
+          "ipa": "eɪ ænd eɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "eɪ ænd eɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "have nearly identical number for B",
+      "pronunciation": {
+        "british": {
+          "ipa": "hæv ˈnɪəli aɪˈdentɪkəl ˈnʌmbə fɔː biː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "hæv ˈnɪəli aɪˈdentɪkəl ˈnʌmbə fɔː biː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "have very different number for B",
+      "pronunciation": {
+        "british": {
+          "ipa": "hæv ˈveri ˈdɪfrənt ˈnʌmbə fɔː biː",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "hæv ˈveri ˈdɪfrənt ˈnʌmbə fɔː biː",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "This line graph",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs laɪn ɡrɑːf",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðɪs laɪn ɡrɑːf",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "shows information",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʃəʊz ˌɪnfəˈmeɪʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ʃəʊz ˌɪnfəˈmeɪʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "about A",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈbaʊt eɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈbaʊt eɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "it mainly displays an increasing trend",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪt ˈmeɪnli dɪˈspleɪz ən ɪnˈkriːsɪŋ trend",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪt ˈmeɪnli dɪˈspleɪz ən ɪnˈkriːsɪŋ trend",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "it mainly displays a decreasing trend",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪt ˈmeɪnli dɪˈspleɪz ə dɪˈkriːsɪŋ trend",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪt ˈmeɪnli dɪˈspleɪz ə dɪˈkriːsɪŋ trend",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "it follows a fluctuating pattern",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪt ˈfɒləʊz ə ˈflʌktʃueɪtɪŋ ˈpætən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪt ˈfɒləʊz ə ˈflʌktʃueɪtɪŋ ˈpætən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "it remains relatively stable",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪt rɪˈmeɪnz ˈrelətɪvli ˈsteɪbəl",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪt rɪˈmeɪnz ˈrelətɪvli ˈsteɪbəl",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "during the time period",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdjʊərɪŋ ðə taɪm ˈpɪəriəd",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˈdjʊərɪŋ ðə taɪm ˈpɪəriəd",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "then",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðen",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðen",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the highest point",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈhaɪɪst pɔɪnt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈhaɪɪst pɔɪnt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "compare to this",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəmˈpeə tə ðɪs",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "kəmˈpeə tə ðɪs",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "A records the lowest point",
+      "pronunciation": {
+        "british": {
+          "ipa": "eɪ rɪˈkɔːdz ðə ˈləʊɪst pɔɪnt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "eɪ rɪˈkɔːdz ðə ˈləʊɪst pɔɪnt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "accounting for only",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈkaʊntɪŋ fɔːr ˈəʊnli",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "əˈkaʊntɪŋ fɔːr ˈəʊnli",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "we can also notice that",
+      "pronunciation": {
+        "british": {
+          "ipa": "wiː kæn ˈɔːlsəʊ ˈnəʊtɪs ðæt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wiː kæn ˈɔːlsəʊ ˈnəʊtɪs ðæt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the value in A",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈvæljuː ɪn eɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈvæljuː ɪn eɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "is pretty high as well",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪz ˈprɪti haɪ æz wel",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪz ˈprɪti haɪ æz wel",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "is extremely low as well",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪz ɪkˈstriːmli ləʊ æz wel",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪz ɪkˈstriːmli ləʊ æz wel",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "at about",
+      "pronunciation": {
+        "british": {
+          "ipa": "æt əˈbaʊt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "æt əˈbaʊt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "to sum up",
+      "pronunciation": {
+        "british": {
+          "ipa": "tə sʌm ʌp",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "tə sʌm ʌp",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "this line graph tells us about",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs laɪn ɡrɑːf telz ʌs əˈbaʊt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðɪs laɪn ɡrɑːf telz ʌs əˈbaʊt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "and the highest point is A",
+      "pronunciation": {
+        "british": {
+          "ipa": "ænd ðə ˈhaɪɪst pɔɪnt ɪz eɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ænd ðə ˈhaɪɪst pɔɪnt ɪz eɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the lowest value is only A",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈləʊɪst ˈvæljuː ɪz ˈəʊnli eɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈləʊɪst ˈvæljuː ɪz ˈəʊnli eɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "which can be found in A",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɪtʃ kæn biː faʊnd ɪn eɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "wɪtʃ kæn biː faʊnd ɪn eɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "in comparison",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn kəmˈpærɪsən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn kəmˈpærɪsən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "and the largest value is A",
+      "pronunciation": {
+        "british": {
+          "ipa": "ænd ðə ˈlɑːdʒɪst ˈvæljuː ɪz eɪ",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ænd ðə ˈlɑːdʒɪst ˈvæljuː ɪz eɪ",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "in addition",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪn əˈdɪʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪn əˈdɪʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "these two lines have similar patterns",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðiːz tuː laɪnz hæv ˈsɪmɪlə ˈpætənz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðiːz tuː laɪnz hæv ˈsɪmɪlə ˈpætənz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "these two lines have different patterns",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðiːz tuː laɪnz hæv ˈdɪfrənt ˈpætənz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðiːz tuː laɪnz hæv ˈdɪfrənt ˈpætənz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "these two lines have opposite patterns",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðiːz tuː laɪnz hæv ˈɒpəzɪt ˈpætənz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðiːz tuː laɪnz hæv ˈɒpəzɪt ˈpætənz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "this pie chart",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðɪs paɪ tʃɑːt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðɪs paɪ tʃɑːt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "if we look at the chart",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪf wiː lʊk æt ðə tʃɑːt",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ɪf wiː lʊk æt ðə tʃɑːt",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "the largest portion",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈlɑːdʒɪst ˈpɔːʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ðə ˈlɑːdʒɪst ˈpɔːʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "A makes up the smallest section",
+      "pronunciation": {
+        "british": {
+          "ipa": "eɪ meɪks ʌp ðə ˈsmɔːlɪst ˈsekʃən",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "eɪ meɪks ʌp ðə ˈsmɔːlɪst ˈsekʃən",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
+    {
+      "english": "represent moderate shares",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌreprɪˈzent ˈmɒdərət ʃeəz",
+          "phonetic": ""
+        },
+        "american": {
+          "ipa": "ˌreprɪˈzent ˈmɒdərət ʃeəz",
+          "phonetic": ""
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-di-easy-phrases",
+      "source": "pte-di-easy-phrases"
+    },
     {
       "english": "compared to just",
       "pronunciation": {

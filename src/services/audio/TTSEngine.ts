@@ -398,15 +398,39 @@ export class TTSEngine {
         }
       }
 
+      let hasResolved = false;
+      const safeResolve = () => {
+        if (!hasResolved) {
+          hasResolved = true;
+          resolve();
+        }
+      };
+
+      // Safety timeout - auto-resolve after 8 seconds if onend doesn't fire
+      // (Common issue with Web Speech API in some browsers)
+      const safetyTimeout = setTimeout(() => {
+        if (!hasResolved) {
+          console.log(`[TTSEngine] ⏱️ Safety timeout - auto-completing for: "${text}"`);
+          safeResolve();
+        }
+      }, 8000);
+
+      utterance.onstart = () => {
+        console.log(`[TTSEngine] 🎙️ Speech started for: "${text}"`);
+      };
+
       utterance.onend = () => {
+        clearTimeout(safetyTimeout);
         console.log(`[TTSEngine] ✅ Speech ended for: "${text}"`);
-        resolve();
+        safeResolve();
       };
 
       utterance.onerror = (error: SpeechSynthesisErrorEvent) => {
+        clearTimeout(safetyTimeout);
+        
         // 'interrupted' is normal when user clicks rapidly or auto-advances
         if (error.error === 'interrupted') {
-          resolve();
+          safeResolve();
           return;
         }
 
@@ -417,7 +441,7 @@ export class TTSEngine {
           this.synth.speak(utterance);
         } else {
           this.showTTSFallback(text);
-          resolve();
+          safeResolve();
         }
       };
 

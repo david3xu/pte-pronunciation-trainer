@@ -98,10 +98,11 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
     setPlayCount((prev) => prev + 1);
 
     // Add timeout to prevent infinite "Playing..." state
+    // Set to 12 seconds (TTSEngine has 8s safety timeout)
     const timeoutId = setTimeout(() => {
       console.warn('[VocabTypingInterface] TTS timeout - audio may have failed to play');
       setIsPlaying(false);
-    }, 10000); // 10 second timeout
+    }, 12000); // 12 second timeout (gives TTSEngine safety timeout time to work)
 
     try {
       await ttsEngine.speak(english, null, settings.ttsRate);

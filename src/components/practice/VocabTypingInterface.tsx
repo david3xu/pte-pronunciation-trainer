@@ -61,7 +61,10 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
   const [userInput, setUserInput] = useState('');
   const [feedback, setFeedback] = useState<FeedbackData | null>(null);
   const [hasSubmitted, setHasSubmitted] = useState(false);
+  const [hasUserInteracted, setHasUserInteracted] = useState(false); // Track user interaction
 
+  // Use ref for initial mount (doesn't trigger re-renders)
+  const isInitialMountRef = useRef(true);
   const inputRef = useRef<HTMLInputElement>(null);
 
   // Get vocabulary data - handle markdown bold markers, supporting both data formats
@@ -85,6 +88,11 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
   // Handle audio playback
   const handlePlay = async () => {
     if (isPlaying || playCount >= MAX_PLAYS) return;
+
+    // Mark that user has interacted (allows future auto-plays)
+    if (!hasUserInteracted) {
+      setHasUserInteracted(true);
+    }
 
     setIsPlaying(true);
     setPlayCount((prev) => prev + 1);
@@ -196,6 +204,11 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
 
   // Handle retry
   const handleRetry = () => {
+    // Mark user interaction (allows future auto-plays)
+    if (!hasUserInteracted) {
+      setHasUserInteracted(true);
+    }
+
     setUserInput('');
     setFeedback(null);
     setHasSubmitted(false);
@@ -216,6 +229,11 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
 
   // Handle next/previous
   const handleNext = () => {
+    // Mark user interaction (allows future auto-plays)
+    if (!hasUserInteracted) {
+      setHasUserInteracted(true);
+    }
+
     setUserInput('');
     setFeedback(null);
     setHasSubmitted(false);
@@ -224,6 +242,11 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
   };
 
   const handlePrevious = () => {
+    // Mark user interaction (allows future auto-plays)
+    if (!hasUserInteracted) {
+      setHasUserInteracted(true);
+    }
+
     setUserInput('');
     setFeedback(null);
     setHasSubmitted(false);
@@ -268,6 +291,27 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
     }
   }, [playCount, isPlaying]);
 
+  // Global interaction detector - enables auto-play after any user action
+  useEffect(() => {
+    const handleInteraction = () => {
+      if (!hasUserInteracted) {
+        setHasUserInteracted(true);
+        console.log('[VocabTypingInterface] User interaction detected - auto-play enabled');
+      }
+    };
+
+    // Listen for ANY user interaction (click, touch, keyboard)
+    window.addEventListener('click', handleInteraction, { once: true });
+    window.addEventListener('touchstart', handleInteraction, { once: true });
+    window.addEventListener('keydown', handleInteraction, { once: true });
+
+    return () => {
+      window.removeEventListener('click', handleInteraction);
+      window.removeEventListener('touchstart', handleInteraction);
+      window.removeEventListener('keydown', handleInteraction);
+    };
+  }, [hasUserInteracted]);
+
   // Reset state and auto-play when item changes
   useEffect(() => {
     setUserInput('');
@@ -275,8 +319,17 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
     setHasSubmitted(false);
     setPlayCount(0);
 
+    // Skip auto-play on initial mount (browser blocks it)
+    if (isInitialMountRef.current) {
+      isInitialMountRef.current = false;
+      console.log('[VocabTypingInterface] Initial mount - auto-play disabled');
+      return undefined;
+    }
+
     // Auto-play with a small delay to allow state reset and natural transition
-    if (settings.autoPlay) {
+    // Only auto-play if user has interacted before (browser requirement)
+    if (settings.autoPlay && hasUserInteracted) {
+      console.log('[VocabTypingInterface] Auto-playing next item');
       const timer = setTimeout(() => {
         if (!isPlaying) {
           setIsPlaying(true);
@@ -290,7 +343,7 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
       return () => clearTimeout(timer);
     }
     return undefined;
-  }, [item, settings.autoPlay]);
+  }, [item, settings.autoPlay, hasUserInteracted]);
 
   return (
     <Flex direction="column" gap="4" style={{ width: '100%' }}>

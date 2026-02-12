@@ -130,7 +130,22 @@ export const AppContent: React.FC = () => {
 
         console.log(`Loaded ${items.length} items (${data.vocabulary ? 'vocabulary' : 'shadowing'})`);
         vocabulary.setDataset(items, vocabularyBook); // Atomically sets currentItem and resets index
-        progress.updateProgress(0, items.length); // Sync progress index to 0 to match dataset reset
+        
+        // Preserve persisted progress index after refresh (if within bounds)
+        const persistedIndex = progress.currentIndex;
+        const validPersistedIndex = persistedIndex > 0 && persistedIndex < items.length;
+        const startIndex = validPersistedIndex ? persistedIndex : 0;
+        
+        progress.updateProgress(startIndex, items.length); // Restore or reset progress
+        
+        // If we have a persisted index, set the correct current item
+        if (validPersistedIndex && items[startIndex]) {
+          vocabulary.setCurrentItem(items[startIndex]);
+          audio.setCurrentIndex(startIndex); // Sync audio index
+          console.log(`[App] Restored progress to item ${startIndex + 1}/${items.length}`);
+        } else {
+          console.log(`[App] Starting fresh at item 1/${items.length}`);
+        }
 
         // Start practice session for tracking
         try {
@@ -147,11 +162,9 @@ export const AppContent: React.FC = () => {
           setCurrentSessionId(sessionId);
           console.log('[App] Started practice session:', sessionId);
 
-          // Auto-start playback if autoPlay setting is enabled
-          if (settings.autoPlay && items.length > 0) {
-            console.log('[App] Auto-starting playback on initial load');
-            audio.startAutoPlay();
-          }
+          // Don't auto-start on initial load - browser blocks audio without user interaction
+          // User must click Play button first to enable audio
+          // Future navigations will auto-play if settings.autoPlay is enabled
         } catch (error) {
           console.error('[App] Failed to start session:', error);
           // Non-blocking: app continues to work even if session tracking fails

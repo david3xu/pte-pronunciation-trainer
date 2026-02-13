@@ -360,6 +360,13 @@ export class TTSEngine {
         return;
       }
 
+      // CRITICAL FIX: Resume speech synthesis if paused
+      // Chrome/Edge sometimes pause the speech synthesis queue
+      if (this.synth.paused) {
+        console.log('[TTSEngine] ▶️ Resuming paused speech synthesis');
+        this.synth.resume();
+      }
+
       this.startSpeech(text, language, customRate, resolve);
     });
   }
@@ -464,7 +471,36 @@ export class TTSEngine {
     };
 
     console.log(`[TTSEngine] 🚀 Calling speechSynthesis.speak() for: "${text}"`);
+    console.log(`[TTSEngine] 📊 Synth state: speaking=${this.synth.speaking}, pending=${this.synth.pending}, paused=${this.synth.paused}`);
+    
     this.synth.speak(utterance);
+    
+    // WORKAROUND: Chrome/Edge sometimes need a nudge to start speaking
+    // Check after 100ms if speaking started, if not try resume()
+    setTimeout(() => {
+      if (!this.synth.speaking && !hasResolved) {
+        console.log('[TTSEngine] ⚠️ Speech not started after 100ms, attempting resume...');
+        this.synth.resume();
+        
+        // If still not speaking after another 500ms, cancel and retry with a simple utterance first
+        setTimeout(() => {
+          if (!this.synth.speaking && !hasResolved) {
+            console.log('[TTSEngine] ⚠️ Speech still not started, trying workaround...');
+            // Cancel everything
+            this.synth.cancel();
+            // Speak a tiny utterance to "wake up" the speech synthesis
+            const wakeUpUtterance = new SpeechSynthesisUtterance(' ');
+            wakeUpUtterance.volume = 0.01; // Almost silent
+            wakeUpUtterance.onend = () => {
+              console.log('[TTSEngine] 🔄 Wake-up utterance completed, retrying original...');
+              // Now retry the original utterance
+              this.synth.speak(utterance);
+            };
+            this.synth.speak(wakeUpUtterance);
+          }
+        }, 500);
+      }
+    }, 100);
   }
 
   /**

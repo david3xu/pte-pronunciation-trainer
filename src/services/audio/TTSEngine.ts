@@ -424,6 +424,7 @@ export class TTSEngine {
     }
 
     let hasResolved = false;
+    let utteranceStarted = false;
     const safeResolve = () => {
       if (!hasResolved) {
         hasResolved = true;
@@ -431,16 +432,18 @@ export class TTSEngine {
       }
     };
 
-    // Safety timeout - auto-resolve after 8 seconds if onend doesn't fire
-    // (Common issue with Web Speech API in some browsers)
+    // Safety timeout - auto-resolve after 3 seconds if onend doesn't fire
+    // Reduced from 8s because browser TTS is often completely broken
     const safetyTimeout = setTimeout(() => {
       if (!hasResolved) {
-        console.log(`[TTSEngine] ⏱️ Safety timeout - auto-completing for: "${text}"`);
+        console.warn(`[TTSEngine] ⏱️ Safety timeout (3s) - Web Speech API failed to play: "${text}"`);
+        console.warn('[TTSEngine] 💡 Consider using Premium Voice (Settings → AWS Polly) for reliable audio');
         safeResolve();
       }
-    }, 8000);
+    }, 3000);
 
     utterance.onstart = () => {
+      utteranceStarted = true;
       console.log(`[TTSEngine] 🎙️ Speech started for: "${text}"`);
     };
 
@@ -475,32 +478,34 @@ export class TTSEngine {
     
     this.synth.speak(utterance);
     
-    // WORKAROUND: Chrome/Edge sometimes need a nudge to start speaking
-    // Check after 100ms if speaking started, if not try resume()
+    // CRITICAL: Force resolution if onstart doesn't fire within 200ms
+    // This indicates the Web Speech API is completely broken
     setTimeout(() => {
-      if (!this.synth.speaking && !hasResolved) {
-        console.log('[TTSEngine] ⚠️ Speech not started after 100ms, attempting resume...');
+      if (!utteranceStarted && !hasResolved) {
+        console.error('[TTSEngine] ❌ CRITICAL: onstart did not fire - Web Speech API is broken');
+        console.log('[TTSEngine] 🔄 Attempting emergency resume...');
         this.synth.resume();
         
-        // If still not speaking after another 500ms, cancel and retry with a simple utterance first
+        // Last ditch effort: if still nothing after 300ms more, just give up
         setTimeout(() => {
-          if (!this.synth.speaking && !hasResolved) {
-            console.log('[TTSEngine] ⚠️ Speech still not started, trying workaround...');
-            // Cancel everything
-            this.synth.cancel();
-            // Speak a tiny utterance to "wake up" the speech synthesis
-            const wakeUpUtterance = new SpeechSynthesisUtterance(' ');
-            wakeUpUtterance.volume = 0.01; // Almost silent
-            wakeUpUtterance.onend = () => {
-              console.log('[TTSEngine] 🔄 Wake-up utterance completed, retrying original...');
-              // Now retry the original utterance
-              this.synth.speak(utterance);
-            };
-            this.synth.speak(wakeUpUtterance);
+          if (!utteranceStarted && !hasResolved) {
+            console.error('[TTSEngine] ❌ Web Speech API completely unresponsive');
+            console.error('[TTSEngine] 💡 SOLUTION: Click the speaker icon in Chrome\'s address bar to enable sound');
+            console.error('[TTSEngine] 💡 OR: Use Premium Voice (Settings → Premium TTS) for reliable audio');
+            
+            // Show user-facing notification
+            const store = useAppStore.getState();
+            store.ui.showNotification(
+              'Browser audio blocked. Click the 🔊 icon in address bar to enable sound, or use Premium Voice in Settings.',
+              'warning'
+            );
+            
+            // Force complete to prevent blocking
+            safeResolve();
           }
-        }, 500);
+        }, 300);
       }
-    }, 100);
+    }, 200);
   }
 
   /**

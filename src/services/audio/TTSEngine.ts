@@ -350,104 +350,121 @@ export class TTSEngine {
         return;
       }
 
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = language;
-      // Ensure rate is always a valid number (default to 1.0 if all else fails)
-      const configRate = this.getConfig()?.get('tts.speeds.normal') || 1.0;
-      utterance.rate = customRate !== null ? customRate : (this.speechRate || configRate);
-      utterance.volume = 1.0;
-      utterance.pitch = 1.0;
-
-      // Try to find the best voice match
-      if (!this.cachedVoice || this.synth.getVoices().length > 0) {
-        const voices = this.synth.getVoices();
-        if (voices.length > 0) {
-          this.cachedVoice = this.selectVoice(voices, lang);
-          if (this.cachedVoice) {
-            console.log(`[TTSEngine] Selected voice: ${this.cachedVoice.name}`);
-          }
-        }
+      // CRITICAL FIX: Cancel any pending utterances to prevent queue blockage
+      // This is a common issue with Web Speech API where old utterances block new ones
+      if (this.synth.speaking || this.synth.pending) {
+        console.log('[TTSEngine] 🧹 Canceling pending utterances...');
+        this.synth.cancel();
+        // Small delay to ensure cancellation completes
+        setTimeout(() => this.startSpeech(text, language, customRate, resolve), 100);
+        return;
       }
 
-      const voice = this.cachedVoice;
-      if (voice) {
-        utterance.voice = voice;
-      } else {
-        console.warn('[TTSEngine] ⚠️ No cached voice, trying fallback...');
-        const voices = this.synth.getVoices();
-        console.log(`[TTSEngine] Fallback check - voices available: ${voices.length}`);
-
-        if (voices.length > 0) {
-          const fallbackVoice = this.selectVoice(voices, lang) || voices[0];
-
-          if (fallbackVoice) {
-            console.warn('[TTSEngine] Using fallback voice:', fallbackVoice.name);
-            utterance.voice = fallbackVoice;
-            this.cachedVoice = fallbackVoice;
-          } else {
-            console.error('No voice available for text-to-speech');
-            this.showTTSFallback(text);
-            resolve();
-            return;
-          }
-        } else {
-          console.error('No voices loaded yet - speech synthesis unavailable');
-          this.showTTSFallback(text);
-          resolve();
-          return;
-        }
-      }
-
-      let hasResolved = false;
-      const safeResolve = () => {
-        if (!hasResolved) {
-          hasResolved = true;
-          resolve();
-        }
-      };
-
-      // Safety timeout - auto-resolve after 8 seconds if onend doesn't fire
-      // (Common issue with Web Speech API in some browsers)
-      const safetyTimeout = setTimeout(() => {
-        if (!hasResolved) {
-          console.log(`[TTSEngine] ⏱️ Safety timeout - auto-completing for: "${text}"`);
-          safeResolve();
-        }
-      }, 8000);
-
-      utterance.onstart = () => {
-        console.log(`[TTSEngine] 🎙️ Speech started for: "${text}"`);
-      };
-
-      utterance.onend = () => {
-        clearTimeout(safetyTimeout);
-        console.log(`[TTSEngine] ✅ Speech ended for: "${text}"`);
-        safeResolve();
-      };
-
-      utterance.onerror = (error: SpeechSynthesisErrorEvent) => {
-        clearTimeout(safetyTimeout);
-        
-        // 'interrupted' is normal when user clicks rapidly or auto-advances
-        if (error.error === 'interrupted') {
-          safeResolve();
-          return;
-        }
-
-        console.warn('TTS Error:', error.error);
-        // Try fallback without voice for other errors
-        if (voice && utterance.voice && error.error !== 'not-allowed') {
-          utterance.voice = null;
-          this.synth.speak(utterance);
-        } else {
-          this.showTTSFallback(text);
-          safeResolve();
-        }
-      };
-
-      console.log(`[TTSEngine] 🚀 Calling speechSynthesis.speak() for: "${text}"`);
-      this.synth.speak(utterance);
+      this.startSpeech(text, language, customRate, resolve);
     });
+  }
+
+  /**
+   * Internal method to start speech synthesis
+   */
+  private startSpeech(text: string, language: string, customRate: number | null, resolve: () => void): void {
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = language;
+    // Ensure rate is always a valid number (default to 1.0 if all else fails)
+    const configRate = this.getConfig()?.get('tts.speeds.normal') || 1.0;
+    utterance.rate = customRate !== null ? customRate : (this.speechRate || configRate);
+    utterance.volume = 1.0;
+    utterance.pitch = 1.0;
+
+    // Try to find the best voice match
+    if (!this.cachedVoice || this.synth.getVoices().length > 0) {
+      const voices = this.synth.getVoices();
+      if (voices.length > 0) {
+        this.cachedVoice = this.selectVoice(voices, language);
+        if (this.cachedVoice) {
+          console.log(`[TTSEngine] Selected voice: ${this.cachedVoice.name}`);
+        }
+      }
+    }
+
+    const voice = this.cachedVoice;
+    if (voice) {
+      utterance.voice = voice;
+    } else {
+      console.warn('[TTSEngine] ⚠️ No cached voice, trying fallback...');
+      const voices = this.synth.getVoices();
+      console.log(`[TTSEngine] Fallback check - voices available: ${voices.length}`);
+
+      if (voices.length > 0) {
+        const fallbackVoice = this.selectVoice(voices, language) || voices[0];
+
+        if (fallbackVoice) {
+          console.warn('[TTSEngine] Using fallback voice:', fallbackVoice.name);
+          utterance.voice = fallbackVoice;
+          this.cachedVoice = fallbackVoice;
+        } else {
+          console.error('No voice available for text-to-speech');
+          this.showTTSFallback(text);
+          resolve();
+          return;
+        }
+      } else {
+        console.error('No voices loaded yet - speech synthesis unavailable');
+        this.showTTSFallback(text);
+        resolve();
+        return;
+      }
+    }
+
+    let hasResolved = false;
+    const safeResolve = () => {
+      if (!hasResolved) {
+        hasResolved = true;
+        resolve();
+      }
+    };
+
+    // Safety timeout - auto-resolve after 8 seconds if onend doesn't fire
+    // (Common issue with Web Speech API in some browsers)
+    const safetyTimeout = setTimeout(() => {
+      if (!hasResolved) {
+        console.log(`[TTSEngine] ⏱️ Safety timeout - auto-completing for: "${text}"`);
+        safeResolve();
+      }
+    }, 8000);
+
+    utterance.onstart = () => {
+      console.log(`[TTSEngine] 🎙️ Speech started for: "${text}"`);
+    };
+
+    utterance.onend = () => {
+      clearTimeout(safetyTimeout);
+      console.log(`[TTSEngine] ✅ Speech ended for: "${text}"`);
+      safeResolve();
+    };
+
+    utterance.onerror = (error: SpeechSynthesisErrorEvent) => {
+      clearTimeout(safetyTimeout);
+      
+      // 'interrupted' is normal when user clicks rapidly or auto-advances
+      if (error.error === 'interrupted') {
+        safeResolve();
+        return;
+      }
+
+      console.warn('TTS Error:', error.error);
+      // Try fallback without voice for other errors
+      if (voice && utterance.voice && error.error !== 'not-allowed') {
+        utterance.voice = null;
+        this.synth.speak(utterance);
+      } else {
+        this.showTTSFallback(text);
+        safeResolve();
+      }
+    };
+
+    console.log(`[TTSEngine] 🚀 Calling speechSynthesis.speak() for: "${text}"`);
+    this.synth.speak(utterance);
   }
 
   /**

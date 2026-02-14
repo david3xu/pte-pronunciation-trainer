@@ -280,6 +280,9 @@ const AudioControls: React.FC = () => {
 
   // Handle next button
   const handleNext = () => {
+    // Stop any currently playing TTS before navigating
+    ttsEngine.stopSpeaking();
+    
     // Use filtered dataset if filter is active
     const dataset = difficultyFilter !== 'all'
       ? vocabulary.filteredDataset
@@ -298,6 +301,9 @@ const AudioControls: React.FC = () => {
 
   // Handle previous button
   const handlePrev = () => {
+    // Stop any currently playing TTS before navigating
+    ttsEngine.stopSpeaking();
+    
     // Use filtered dataset if filter is active
     const dataset = difficultyFilter !== 'all'
       ? vocabulary.filteredDataset

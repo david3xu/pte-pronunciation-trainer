@@ -70,6 +70,9 @@ export const AppContent: React.FC = () => {
   useEffect(() => {
     console.log('React App mounted');
 
+    // AbortController for fetch cancellation on unmount
+    const abortController = new AbortController();
+
     // Load vocabulary data on startup
     const loadInitialVocabulary = async () => {
       const { vocabularyBook } = settings;
@@ -87,7 +90,7 @@ export const AppContent: React.FC = () => {
         const dataPath = `${basePath}?t=${timestamp}`;
         console.log('Fetching from:', dataPath);
 
-        const response = await fetch(dataPath);
+        const response = await fetch(dataPath, { signal: abortController.signal });
         if (!response.ok) {
           throw new Error(`Failed to load vocabulary: ${response.statusText}`);
         }
@@ -172,6 +175,11 @@ export const AppContent: React.FC = () => {
       } catch (error) {
         console.error('Error loading vocabulary:', error);
         vocabulary.setLoading(false);
+        // Don't show error if aborted (component unmounted)
+        if ((error as Error).name === 'AbortError') {
+          console.log('[App] Vocabulary loading cancelled');
+          return;
+        }
         const errorMessage = error instanceof Error ? error.message : 'Unknown error';
         alert(`Failed to load vocabulary. Please refresh the page.\n\nError: ${errorMessage}`);
       }
@@ -186,8 +194,11 @@ export const AppContent: React.FC = () => {
       }
     });
 
-    // Cleanup: complete session and release wake lock when app unmounts
+    // Cleanup: complete session, release wake lock, abort fetch
     return () => {
+      // Abort any pending fetch requests
+      abortController.abort();
+      
       if (currentSessionId) {
         console.log('[App] Completing session on unmount:', currentSessionId);
         sessionManager.completeSession().catch((err: any) => {

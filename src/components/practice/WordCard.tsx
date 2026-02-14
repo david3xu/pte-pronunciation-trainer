@@ -171,17 +171,26 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
       const audioUrl = URL.createObjectURL(audioBlob);
       const audio = new Audio(audioUrl);
 
-      audio.addEventListener('ended', () => {
+      const handleEnded = () => {
         setIsPlayingPremium(false);
         URL.revokeObjectURL(audioUrl);
-      });
+      };
 
-      audio.addEventListener('error', () => {
+      const handleError = () => {
         setIsPlayingPremium(false);
         URL.revokeObjectURL(audioUrl);
-      });
+      };
 
-      await audio.play();
+      audio.addEventListener('ended', handleEnded);
+      audio.addEventListener('error', handleError);
+
+      try {
+        await audio.play();
+      } finally {
+        // Clean up event listeners after play completes or fails
+        audio.removeEventListener('ended', handleEnded);
+        audio.removeEventListener('error', handleError);
+      }
     } catch (error) {
       console.error('Premium TTS playback failed:', error);
       setIsPlayingPremium(false);

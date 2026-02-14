@@ -58,6 +58,10 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
       return;
     }
 
+    // Stop any currently playing TTS before switching books
+    const { ttsEngine } = await import('../../services/audio/TTSEngine');
+    ttsEngine.stopSpeaking();
+
     updateSetting('vocabularyBook', bookId);
 
     // Reload vocabulary data
@@ -142,6 +146,10 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
       console.error('[SettingsPanel] updateSetting is not a function!', updateSetting);
       return;
     }
+
+    // Stop any currently playing TTS before switching modes
+    const { ttsEngine } = await import('../../services/audio/TTSEngine');
+    ttsEngine.stopSpeaking();
 
     updateSetting('practiceMode', mode);
 

@@ -74,6 +74,9 @@ export class TTSEngine {
     // Subscribe to Zustand store changes (replaces EventBus listeners)
     this._setupStoreSubscriptions();
 
+    // CRITICAL FIX: Preload voices immediately to prevent first-click delays
+    this._preloadVoices();
+
     // We'll initialize AudioContext on first user interaction
   }
 
@@ -85,6 +88,26 @@ export class TTSEngine {
       this.config = (window as any).appConfig;
     }
     return this.config;
+  }
+
+  /**
+   * Preload voices to avoid first-click delay
+   * Chrome/Edge require waiting for 'voiceschanged' event
+   */
+  private _preloadVoices(): void {
+    // Try immediate load (works on Firefox)
+    const voices = this.synth.getVoices();
+    if (voices.length > 0) {
+      console.log(`[TTSEngine] ✅ ${voices.length} voices preloaded immediately`);
+      return;
+    }
+
+    // Chrome/Edge pattern: wait for voiceschanged event
+    console.log('[TTSEngine] ⏳ Waiting for voices to load...');
+    this.synth.addEventListener('voiceschanged', () => {
+      const loadedVoices = this.synth.getVoices();
+      console.log(`[TTSEngine] ✅ ${loadedVoices.length} voices loaded after event`);
+    }, { once: true });
   }
 
   /**

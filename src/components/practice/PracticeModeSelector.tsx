@@ -46,7 +46,11 @@ const PracticeModeSelector: React.FC = () => {
     },
   ];
 
-  const handleModeSelect = (type: 'vocabulary' | 'practice', mode?: 'practice-repeat-sentence' | 'practice-answer-short-question' | 'practice-write-from-dictation') => {
+  const handleModeSelect = async (type: 'vocabulary' | 'practice', mode?: 'practice-repeat-sentence' | 'practice-answer-short-question' | 'practice-write-from-dictation') => {
+    // Stop any currently playing TTS before switching modes
+    const { ttsEngine } = await import('../../services/audio/TTSEngine');
+    ttsEngine.stopSpeaking();
+    
     settings.updateSetting('practiceType', type);
     if (mode) {
       settings.updateSetting('practiceMode', mode);

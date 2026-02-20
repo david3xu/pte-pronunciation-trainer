@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-02-14T21:13:49.375Z",
-    "totalTerms": 492,
+    "generated": "2026-02-20T21:07:58.980Z",
+    "totalTerms": 514,
     "source": "pte-sst-complete",
     "description": "Auto-discovered vocabulary book: pte-sst-complete",
     "version": "1.0",
@@ -7878,6 +7878,358 @@
         "american": {
           "ipa": "trænsˈfɔrmətɪv aɪˈdiəz",
           "phonetic": "trans-FOR-muh-tiv eye-DEE-uhz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the Nonhuman Rights Project",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˌnɑnˈhjumən raɪts ˈprɑdʒɛkt",
+          "phonetic": "thuh NAHN-HYOO-muhn RYTS PRAH-jekt"
+        },
+        "american": {
+          "ipa": "ðə ˌnɑnˈhjumən raɪts ˈprɑdʒɛkt",
+          "phonetic": "thuh NAHN-HYOO-muhn RYTS PRAH-jekt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "animals",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈænɪməlz",
+          "phonetic": "AN-uh-muhlz"
+        },
+        "american": {
+          "ipa": "ˈænɪməlz",
+          "phonetic": "AN-uh-muhlz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "legal rights",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈliɡəl raɪts",
+          "phonetic": "LEE-guhl RYTS"
+        },
+        "american": {
+          "ipa": "ˈliɡəl raɪts",
+          "phonetic": "LEE-guhl RYTS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "an organization",
+      "pronunciation": {
+        "british": {
+          "ipa": "æn ˌɔrɡənəˈzeɪʃən",
+          "phonetic": "an or-guh-nuh-ZAY-shuhn"
+        },
+        "american": {
+          "ipa": "æn ˌɔrɡənəˈzeɪʃən",
+          "phonetic": "an or-guh-nuh-ZAY-shuhn"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the plaintiff",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈpleɪntɪf",
+          "phonetic": "thuh PLAYN-tif"
+        },
+        "american": {
+          "ipa": "ðə ˈpleɪntɪf",
+          "phonetic": "thuh PLAYN-tif"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "Tommy",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtɑmi",
+          "phonetic": "TAH-mee"
+        },
+        "american": {
+          "ipa": "ˈtɑmi",
+          "phonetic": "TAH-mee"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the New York Court",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə nu jɔrk kɔrt",
+          "phonetic": "thuh NOO YORK KORT"
+        },
+        "american": {
+          "ipa": "ðə nu jɔrk kɔrt",
+          "phonetic": "thuh NOO YORK KORT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "releasing him",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈlisɪŋ hɪm",
+          "phonetic": "rih-LEE-sing HIM"
+        },
+        "american": {
+          "ipa": "rɪˈlisɪŋ hɪm",
+          "phonetic": "rih-LEE-sing HIM"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "being locked in a cage for research purposes",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbiɪŋ lɑkt ɪn ə keɪdʒ fɔr rɪˈsɜrtʃ ˈpɜrpəsəz",
+          "phonetic": "BEE-ing LAHKT in uh KAYJ for rih-SURCH PUR-puh-suhz"
+        },
+        "american": {
+          "ipa": "ˈbiɪŋ lɑkt ɪn ə keɪdʒ fɔr rɪˈsɜrtʃ ˈpɜrpəsəz",
+          "phonetic": "BEE-ing LAHKT in uh KAYJ for rih-SURCH PUR-puh-suhz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "chimpanzees",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌtʃɪmpænˈziz",
+          "phonetic": "chim-pan-ZEEZ"
+        },
+        "american": {
+          "ipa": "ˌtʃɪmpænˈziz",
+          "phonetic": "chim-pan-ZEEZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "cognitive capacities",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkɑɡnətɪv kəˈpæsətiz",
+          "phonetic": "KAH-gnuh-tiv kuh-PAS-uh-teez"
+        },
+        "american": {
+          "ipa": "ˈkɑɡnətɪv kəˈpæsətiz",
+          "phonetic": "KAH-gnuh-tiv kuh-PAS-uh-teez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "not approving the appeal",
+      "pronunciation": {
+        "british": {
+          "ipa": "nɑt əˈpruvɪŋ ði əˈpil",
+          "phonetic": "NAHT uh-PROO-ving thee uh-PEEL"
+        },
+        "american": {
+          "ipa": "nɑt əˈpruvɪŋ ði əˈpil",
+          "phonetic": "NAHT uh-PROO-ving thee uh-PEEL"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "cognitive skills",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkɑɡnətɪv skɪlz",
+          "phonetic": "KAH-gnuh-tiv SKILZ"
+        },
+        "american": {
+          "ipa": "ˈkɑɡnətɪv skɪlz",
+          "phonetic": "KAH-gnuh-tiv SKILZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the idea of the Industrial Revolution",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði aɪˈdiə əv ði ɪnˈdʌstriəl ˌrɛvəˈluʃən",
+          "phonetic": "thee eye-DEE-uh uhv thee in-DUS-tree-uhl rev-uh-LOO-shuhn"
+        },
+        "american": {
+          "ipa": "ði aɪˈdiə əv ði ɪnˈdʌstriəl ˌrɛvəˈluʃən",
+          "phonetic": "thee eye-DEE-uh uhv thee in-DUS-tree-uhl rev-uh-LOO-shuhn"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the creation of machines",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə kriˈeɪʃən əv məˈʃinz",
+          "phonetic": "thuh kree-AY-shuhn uhv muh-SHEENZ"
+        },
+        "american": {
+          "ipa": "ðə kriˈeɪʃən əv məˈʃinz",
+          "phonetic": "thuh kree-AY-shuhn uhv muh-SHEENZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the textile and mining industries",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈtɛkstaɪl ænd ˈmaɪnɪŋ ˈɪndəstriz",
+          "phonetic": "thuh TEKS-tyl and MY-ning IN-duh-streez"
+        },
+        "american": {
+          "ipa": "ðə ˈtɛkstaɪl ænd ˈmaɪnɪŋ ˈɪndəstriz",
+          "phonetic": "thuh TEKS-tyl and MY-ning IN-duh-streez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "industrialization",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˌdʌstriələˈzeɪʃən",
+          "phonetic": "in-DUS-tree-uh-luh-ZAY-shuhn"
+        },
+        "american": {
+          "ipa": "ɪnˌdʌstriələˈzeɪʃən",
+          "phonetic": "in-DUS-tree-uh-luh-ZAY-shuhn"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "a situation of winners and losers",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə ˌsɪtʃuˈeɪʃən əv ˈwɪnərz ænd ˈluzərz",
+          "phonetic": "uh sit-choo-AY-shuhn uhv WIN-urz and LOO-zurz"
+        },
+        "american": {
+          "ipa": "ə ˌsɪtʃuˈeɪʃən əv ˈwɪnərz ænd ˈluzərz",
+          "phonetic": "uh sit-choo-AY-shuhn uhv WIN-urz and LOO-zurz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the rejection of the idea",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə rɪˈdʒɛkʃən əv ði aɪˈdiə",
+          "phonetic": "thuh rih-JEK-shuhn uhv thee eye-DEE-uh"
+        },
+        "american": {
+          "ipa": "ðə rɪˈdʒɛkʃən əv ði aɪˈdiə",
+          "phonetic": "thuh rih-JEK-shuhn uhv thee eye-DEE-uh"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the intensification of forms of production that were already there",
+      "pronunciation": {
+        "british": {
+          "ipa": "ði ɪnˌtɛnsəfəˈkeɪʃən əv fɔrmz əv prəˈdʌkʃən ðæt wɜr ɔlˈrɛdi ðɛr",
+          "phonetic": "thee in-ten-suh-fuh-KAY-shuhn uhv FORMZ uhv pruh-DUK-shuhn that wur awl-RED-ee THAIR"
+        },
+        "american": {
+          "ipa": "ði ɪnˌtɛnsəfəˈkeɪʃən əv fɔrmz əv prəˈdʌkʃən ðæt wɜr ɔlˈrɛdi ðɛr",
+          "phonetic": "thee in-ten-suh-fuh-KAY-shuhn uhv FORMZ uhv pruh-DUK-shuhn that wur awl-RED-ee THAIR"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "the rapid rise",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə ˈræpəd raɪz",
+          "phonetic": "thuh RAP-uhd RYZ"
+        },
+        "american": {
+          "ipa": "ðə ˈræpəd raɪz",
+          "phonetic": "thuh RAP-uhd RYZ"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-sst-complete",
+      "source": "pte-sst-complete"
+    },
+    {
+      "english": "traditional forms of production",
+      "pronunciation": {
+        "british": {
+          "ipa": "trəˈdɪʃənəl fɔrmz əv prəˈdʌkʃən",
+          "phonetic": "truh-DISH-uh-nuhl FORMZ uhv pruh-DUK-shuhn"
+        },
+        "american": {
+          "ipa": "trəˈdɪʃənəl fɔrmz əv prəˈdʌkʃən",
+          "phonetic": "truh-DISH-uh-nuhl FORMZ uhv pruh-DUK-shuhn"
         }
       },
       "difficulty": "hard",

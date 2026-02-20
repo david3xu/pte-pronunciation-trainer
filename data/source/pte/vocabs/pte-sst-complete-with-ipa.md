@@ -2,7 +2,7 @@
 
 **Category**: PTE SST Complete
 **Difficulty**: Intermediate
-**Total**: 495 terms and phrases from 68 SST topics
+**Total**: 517 terms and phrases from 70 SST topics
 
 ---
 
@@ -711,3 +711,31 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 493. no one having thought about it before | /noʊ wʌn ˈhævɪŋ θɔt əˈbaʊt ɪt bɪˈfɔr/ — sounds like **NOH WUN HAV-ing THAWT uh-BOWT it bih-FOR**
 494. productive ideas | /prəˈdʌktɪv aɪˈdiəz/ — sounds like **pruh-DUK-tiv eye-DEE-uhz**
 495. transformative ideas | /trænsˈfɔrmətɪv aɪˈdiəz/ — sounds like **trans-FOR-muh-tiv eye-DEE-uhz**
+
+## Topic 69: The Nonhuman Rights Project
+
+496. the Nonhuman Rights Project | /ðə ˌnɑnˈhjumən raɪts ˈprɑdʒɛkt/ — sounds like **thuh NAHN-HYOO-muhn RYTS PRAH-jekt**
+497. animals | /ˈænɪməlz/ — sounds like **AN-uh-muhlz**
+498. legal rights | /ˈliɡəl raɪts/ — sounds like **LEE-guhl RYTS**
+499. an organization | /æn ˌɔrɡənəˈzeɪʃən/ — sounds like **an or-guh-nuh-ZAY-shuhn**
+500. the plaintiff | /ðə ˈpleɪntɪf/ — sounds like **thuh PLAYN-tif**
+501. Tommy | /ˈtɑmi/ — sounds like **TAH-mee**
+502. the New York Court | /ðə nu jɔrk kɔrt/ — sounds like **thuh NOO YORK KORT**
+503. releasing him | /rɪˈlisɪŋ hɪm/ — sounds like **rih-LEE-sing HIM**
+504. being locked in a cage for research purposes | /ˈbiɪŋ lɑkt ɪn ə keɪdʒ fɔr rɪˈsɜrtʃ ˈpɜrpəsəz/ — sounds like **BEE-ing LAHKT in uh KAYJ for rih-SURCH PUR-puh-suhz**
+505. chimpanzees | /ˌtʃɪmpænˈziz/ — sounds like **chim-pan-ZEEZ**
+506. cognitive capacities | /ˈkɑɡnətɪv kəˈpæsətiz/ — sounds like **KAH-gnuh-tiv kuh-PAS-uh-teez**
+507. not approving the appeal | /nɑt əˈpruvɪŋ ði əˈpil/ — sounds like **NAHT uh-PROO-ving thee uh-PEEL**
+508. cognitive skills | /ˈkɑɡnətɪv skɪlz/ — sounds like **KAH-gnuh-tiv SKILZ**
+
+## Topic 70: The Industrial Revolution
+
+509. the idea of the Industrial Revolution | /ði aɪˈdiə əv ði ɪnˈdʌstriəl ˌrɛvəˈluʃən/ — sounds like **thee eye-DEE-uh uhv thee in-DUS-tree-uhl rev-uh-LOO-shuhn**
+510. the creation of machines | /ðə kriˈeɪʃən əv məˈʃinz/ — sounds like **thuh kree-AY-shuhn uhv muh-SHEENZ**
+511. the textile and mining industries | /ðə ˈtɛkstaɪl ænd ˈmaɪnɪŋ ˈɪndəstriz/ — sounds like **thuh TEKS-tyl and MY-ning IN-duh-streez**
+512. industrialization | /ɪnˌdʌstriələˈzeɪʃən/ — sounds like **in-DUS-tree-uh-luh-ZAY-shuhn**
+513. a situation of winners and losers | /ə ˌsɪtʃuˈeɪʃən əv ˈwɪnərz ænd ˈluzərz/ — sounds like **uh sit-choo-AY-shuhn uhv WIN-urz and LOO-zurz**
+514. the rejection of the idea | /ðə rɪˈdʒɛkʃən əv ði aɪˈdiə/ — sounds like **thuh rih-JEK-shuhn uhv thee eye-DEE-uh**
+515. the intensification of forms of production that were already there | /ði ɪnˌtɛnsəfəˈkeɪʃən əv fɔrmz əv prəˈdʌkʃən ðæt wɜr ɔlˈrɛdi ðɛr/ — sounds like **thee in-ten-suh-fuh-KAY-shuhn uhv FORMZ uhv pruh-DUK-shuhn that wur awl-RED-ee THAIR**
+516. the rapid rise | /ðə ˈræpəd raɪz/ — sounds like **thuh RAP-uhd RYZ**
+517. traditional forms of production | /trəˈdɪʃənəl fɔrmz əv prəˈdʌkʃən/ — sounds like **truh-DISH-uh-nuhl FORMZ uhv pruh-DUK-shuhn**

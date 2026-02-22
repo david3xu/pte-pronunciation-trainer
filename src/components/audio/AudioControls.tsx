@@ -111,6 +111,10 @@ const AudioControls: React.FC = () => {
 
       autoPlayRef.current = true;
 
+      // CRITICAL FIX: Add small delay to ensure previous TTS is fully stopped
+      // This prevents race condition where new speech starts before old speech stops
+      await new Promise(resolve => setTimeout(resolve, 150));
+
       // Get the word/text to speak
       // For shadowing items, use fullText for natural continuous speech
       const isShadowingItem = !!(currentItem as any).fullText;

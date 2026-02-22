@@ -60,6 +60,9 @@ export class TTSEngine {
   private synth: SpeechSynthesis;
   private isSpeaking: boolean = false;
   private cachedVoice: SpeechSynthesisVoice | null = null;
+  // Track current utterance for proper cancellation (used for state tracking)
+  // @ts-ignore - Tracked for future cancellation improvements
+  private currentUtterance: SpeechSynthesisUtterance | null = null;
 
   // Audio context for iOS background audio
   private audioContext?: AudioContext;
@@ -342,6 +345,20 @@ export class TTSEngine {
 
     console.log(`[TTSEngine] 🎤 speak() called with: "${text}", lang: ${language}, rate: ${customRate}`);
 
+    // CRITICAL FIX: Check if already speaking, wait for it to finish
+    if (this.isSpeaking) {
+      console.warn('[TTSEngine] ⚠️ Already speaking, stopping previous speech...');
+      this.stopSpeaking();
+      // Add small delay to ensure cancellation completes
+      return new Promise(resolve => {
+        setTimeout(() => {
+          this.speak(text, lang, customRate).then(resolve);
+        }, 100);
+      });
+    }
+
+    this.isSpeaking = true;
+
     // Check if premium voice (AWS Polly) is selected
     const ttsVoice = useAppStore.getState().settings.ttsVoice;
     if (ttsVoice === 'premium') {
@@ -406,6 +423,9 @@ export class TTSEngine {
     utterance.volume = 1.0;
     utterance.pitch = 1.0;
 
+    // Track current utterance for cancellation
+    this.currentUtterance = utterance;
+
     // Try to find the best voice match
     if (!this.cachedVoice || this.synth.getVoices().length > 0) {
       const voices = this.synth.getVoices();
@@ -451,6 +471,8 @@ export class TTSEngine {
     const safeResolve = () => {
       if (!hasResolved) {
         hasResolved = true;
+        this.isSpeaking = false;
+        this.currentUtterance = null;
         resolve();
       }
     };
@@ -473,11 +495,17 @@ export class TTSEngine {
     utterance.onend = () => {
       clearTimeout(safetyTimeout);
       console.log(`[TTSEngine] ✅ Speech ended for: "${text}"`);
+      this.isSpeaking = false;
+      this.currentUtterance = null;
       safeResolve();
     };
 
     utterance.onerror = (error: SpeechSynthesisErrorEvent) => {
       clearTimeout(safetyTimeout);
+      
+      // Clear flags
+      this.isSpeaking = false;
+      this.currentUtterance = null;
       
       // 'interrupted' is normal when user clicks rapidly or auto-advances
       if (error.error === 'interrupted') {
@@ -500,6 +528,7 @@ export class TTSEngine {
     console.log(`[TTSEngine] 📊 Synth state: speaking=${this.synth.speaking}, pending=${this.synth.pending}, paused=${this.synth.paused}`);
     
     this.synth.speak(utterance);
+    this.isSpeaking = true; // Ensure flag is set after calling speak()
     
     // CRITICAL: Force resolution if onstart doesn't fire within 200ms
     // This indicates the Web Speech API is completely broken
@@ -529,6 +558,15 @@ export class TTSEngine {
         }, 300);
       }
     }, 200);
+    
+    // CRITICAL FIX: Also force resolution if speak didn't start after safety timeout
+    // This ensures we don't block indefinitely
+    setTimeout(() => {
+      if (!hasResolved && !utteranceStarted) {
+        console.error('[TTSEngine] ❌ Forcing resolution - Web Speech API completely unresponsive');
+        safeResolve();
+      }
+    }, 3500); // Slightly longer than main safety timeout
   }
 
   /**
@@ -898,7 +936,13 @@ export class TTSEngine {
    * Stop all speech
    */
   stopSpeaking(): void {
+    console.log('[TTSEngine] 🛑 stopSpeaking() called');
+    
+    // Clear current utterance reference
+    this.currentUtterance = null;
+    
     if ('speechSynthesis' in window) {
+      // Cancel all pending and current utterances
       this.synth.cancel();
     }
 

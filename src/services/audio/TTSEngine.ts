@@ -63,6 +63,9 @@ export class TTSEngine {
   // Track current utterance for proper cancellation (used for state tracking)
   // @ts-ignore - Tracked for future cancellation improvements
   private currentUtterance: SpeechSynthesisUtterance | null = null;
+  // Debug: Track last spoken text to detect overlaps
+  private lastSpokenText: string = '';
+  private speakCallCount: number = 0;
 
   // Audio context for iOS background audio
   private audioContext?: AudioContext;
@@ -343,19 +346,28 @@ export class TTSEngine {
     // Use configured language if not specified
     const language = lang || this.getConfig().get('tts.language.default');
 
-    console.log(`[TTSEngine] 🎤 speak() called with: "${text}", lang: ${language}, rate: ${customRate}`);
+    this.speakCallCount++;
+    const callId = this.speakCallCount;
+    console.log(`[TTSEngine #${callId}] 🎤 speak() called with: "${text.substring(0, 30)}...", lang: ${language}, rate: ${customRate}`);
+    console.log(`[TTSEngine #${callId}] 📊 Current state: isSpeaking=${this.isSpeaking}, lastSpoken="${this.lastSpokenText.substring(0, 20)}..."`);
+    console.log(`[TTSEngine #${callId}] 📊 Synth state: speaking=${this.synth.speaking}, pending=${this.synth.pending}, paused=${this.synth.paused}`);
 
     // CRITICAL FIX: Check if already speaking, wait for it to finish
     if (this.isSpeaking) {
-      console.warn('[TTSEngine] ⚠️ Already speaking, stopping previous speech...');
+      console.warn(`[TTSEngine #${callId}] ⚠️ Already speaking, stopping previous speech...`);
+      console.warn(`[TTSEngine #${callId}] ⚠️ Overlap detected! Previous: "${this.lastSpokenText.substring(0, 30)}", New: "${text.substring(0, 30)}"`);
       await this.stopSpeaking();
       // Add small delay to ensure cancellation completes
+      console.log(`[TTSEngine #${callId}] ⏳ Waiting 100ms after stop...`);
       await new Promise(resolve => setTimeout(resolve, 100));
       // Now retry the speak call
+      console.log(`[TTSEngine #${callId}] 🔄 Retrying speak after stop...`);
       return this.speak(text, lang, customRate);
     }
 
     this.isSpeaking = true;
+    this.lastSpokenText = text;
+    console.log(`[TTSEngine #${callId}] ✅ Setting isSpeaking=true, starting speech...`);
 
     // Check if premium voice (AWS Polly) is selected
     const ttsVoice = useAppStore.getState().settings.ttsVoice;
@@ -487,14 +499,17 @@ export class TTSEngine {
 
     utterance.onstart = () => {
       utteranceStarted = true;
-      console.log(`[TTSEngine] 🎙️ Speech started for: "${text}"`);
+      console.log(`[TTSEngine] 🎙️ Speech STARTED for: "${text.substring(0, 30)}..."`);
+      console.log(`[TTSEngine] 📊 Synth state at start: speaking=${this.synth.speaking}, pending=${this.synth.pending}`);
     };
 
     utterance.onend = () => {
       clearTimeout(safetyTimeout);
-      console.log(`[TTSEngine] ✅ Speech ended for: "${text}"`);
+      console.log(`[TTSEngine] ✅ Speech ENDED for: "${text.substring(0, 30)}..."`);
       this.isSpeaking = false;
       this.currentUtterance = null;
+      this.lastSpokenText = '';
+      console.log(`[TTSEngine] 📊 State after end: isSpeaking=${this.isSpeaking}`);
       safeResolve();
     };
 
@@ -507,11 +522,12 @@ export class TTSEngine {
       
       // 'interrupted' is normal when user clicks rapidly or auto-advances
       if (error.error === 'interrupted') {
+        console.log(`[TTSEngine] ℹ️ Speech interrupted (normal): "${text.substring(0, 30)}..."`);
         safeResolve();
         return;
       }
 
-      console.warn('TTS Error:', error.error);
+      console.warn(`[TTSEngine] ❌ TTS Error: ${error.error} for "${text.substring(0, 30)}..."`);
       // Try fallback without voice for other errors
       if (voice && utterance.voice && error.error !== 'not-allowed') {
         utterance.voice = null;
@@ -934,17 +950,23 @@ export class TTSEngine {
    * Stop all speech
    */
   stopSpeaking(): Promise<void> {
-    console.log('[TTSEngine] 🛑 stopSpeaking() called');
+    const timestamp = Date.now();
+    console.log(`[TTSEngine @${timestamp}] 🛑 stopSpeaking() called`);
+    console.log(`[TTSEngine @${timestamp}] 📊 State before stop: isSpeaking=${this.isSpeaking}, lastSpoken="${this.lastSpokenText.substring(0, 30)}..."`);
+    console.log(`[TTSEngine @${timestamp}] 📊 Synth state: speaking=${this.synth.speaking}, pending=${this.synth.pending}, paused=${this.synth.paused}`);
     
     // Clear current utterance reference
     this.currentUtterance = null;
     
     if ('speechSynthesis' in window) {
       // Cancel all pending and current utterances
+      console.log(`[TTSEngine @${timestamp}] 🧹 Calling synth.cancel()...`);
       this.synth.cancel();
     }
 
     this.isSpeaking = false;
+    this.lastSpokenText = '';
+    console.log(`[TTSEngine @${timestamp}] ✅ isSpeaking set to false`);
 
     // Remove visual feedback
     const englishWordElement = document.getElementById('englishWord');
@@ -957,7 +979,13 @@ export class TTSEngine {
     
     // CRITICAL FIX: Return a Promise that resolves after a short delay
     // This ensures the Web Speech API has time to fully process the cancel
-    return new Promise(resolve => setTimeout(resolve, 100));
+    console.log(`[TTSEngine @${timestamp}] ⏳ Waiting 100ms for cancellation to complete...`);
+    return new Promise(resolve => {
+      setTimeout(() => {
+        console.log(`[TTSEngine @${timestamp}] ✅ stopSpeaking() complete`);
+        resolve();
+      }, 100);
+    });
   }
 
   /**

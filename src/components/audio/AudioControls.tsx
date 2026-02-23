@@ -111,9 +111,10 @@ const AudioControls: React.FC = () => {
 
       autoPlayRef.current = true;
 
-      // CRITICAL FIX: Add small delay to ensure previous TTS is fully stopped
+      // CRITICAL FIX: Add delay to ensure previous TTS is fully stopped
       // This prevents race condition where new speech starts before old speech stops
-      await new Promise(resolve => setTimeout(resolve, 150));
+      // Even though handleNext/handlePrev now await stopSpeaking(), we add extra safety
+      await new Promise(resolve => setTimeout(resolve, 200));
 
       // Get the word/text to speak
       // For shadowing items, use fullText for natural continuous speech
@@ -278,14 +279,14 @@ const AudioControls: React.FC = () => {
   // Handle pause button click
   const handlePause = () => {
     audio.pauseAutoPlay();
-    // Stop any currently playing TTS
+    // Stop any currently playing TTS (fire-and-forget since this is pause)
     ttsEngine.stopSpeaking();
   };
 
   // Handle next button
-  const handleNext = () => {
-    // Stop any currently playing TTS before navigating
-    ttsEngine.stopSpeaking();
+  const handleNext = async () => {
+    // CRITICAL FIX: Await stopSpeaking to ensure speech fully stops
+    await ttsEngine.stopSpeaking();
     
     // Use filtered dataset if filter is active
     const dataset = difficultyFilter !== 'all'
@@ -304,9 +305,9 @@ const AudioControls: React.FC = () => {
   };
 
   // Handle previous button
-  const handlePrev = () => {
-    // Stop any currently playing TTS before navigating
-    ttsEngine.stopSpeaking();
+  const handlePrev = async () => {
+    // CRITICAL FIX: Await stopSpeaking to ensure speech fully stops
+    await ttsEngine.stopSpeaking();
     
     // Use filtered dataset if filter is active
     const dataset = difficultyFilter !== 'all'

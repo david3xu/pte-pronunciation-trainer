@@ -339,7 +339,7 @@ export class TTSEngine {
   /**
    * Core speak method - uses Web Speech API
    */
-  speak(text: string, lang: string | null = null, customRate: number | null = null): Promise<void> {
+  async speak(text: string, lang: string | null = null, customRate: number | null = null): Promise<void> {
     // Use configured language if not specified
     const language = lang || this.getConfig().get('tts.language.default');
 
@@ -348,13 +348,11 @@ export class TTSEngine {
     // CRITICAL FIX: Check if already speaking, wait for it to finish
     if (this.isSpeaking) {
       console.warn('[TTSEngine] ⚠️ Already speaking, stopping previous speech...');
-      this.stopSpeaking();
+      await this.stopSpeaking();
       // Add small delay to ensure cancellation completes
-      return new Promise(resolve => {
-        setTimeout(() => {
-          this.speak(text, lang, customRate).then(resolve);
-        }, 100);
-      });
+      await new Promise(resolve => setTimeout(resolve, 100));
+      // Now retry the speak call
+      return this.speak(text, lang, customRate);
     }
 
     this.isSpeaking = true;
@@ -935,7 +933,7 @@ export class TTSEngine {
   /**
    * Stop all speech
    */
-  stopSpeaking(): void {
+  stopSpeaking(): Promise<void> {
     console.log('[TTSEngine] 🛑 stopSpeaking() called');
     
     // Clear current utterance reference
@@ -956,6 +954,10 @@ export class TTSEngine {
 
     // Update Zustand TTS store (replaces EventBus emission)
     useAppStore.getState().tts.stopSpeaking();
+    
+    // CRITICAL FIX: Return a Promise that resolves after a short delay
+    // This ensures the Web Speech API has time to fully process the cancel
+    return new Promise(resolve => setTimeout(resolve, 100));
   }
 
   /**

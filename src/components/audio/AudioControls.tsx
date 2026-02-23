@@ -46,6 +46,7 @@ const AudioControls: React.FC = () => {
   const settings = useSettings();
   const { difficultyFilter } = settings;
   const autoPlayRef = useRef<boolean>(false);
+  const currentEffectIdRef = useRef<number>(0); // Track current effect to cancel old ones
 
   // Helper function to load next vocabulary book
   const loadNextBook = async (bookId: string) => {
@@ -99,9 +100,20 @@ const AudioControls: React.FC = () => {
 
   // Auto-play loop effect
   useEffect(() => {
+    const effectId = Date.now();
+    currentEffectIdRef.current = effectId; // Mark this as the current effect
+    
+    console.log(`[AudioControls #${effectId}] 🔄 useEffect TRIGGERED`);
+    console.log(`[AudioControls #${effectId}] 📊 Dependencies:`, {
+      isAutoPlaying: audio.isAutoPlaying,
+      isPaused: audio.isPaused,
+      currentItem: currentItem ? `"${(currentItem as any).word || (currentItem as any).sentence || (currentItem as any).question || 'unknown'}".substring(0, 30)` : null,
+      currentIndex: audio.currentIndex
+    });
+    
     const runAutoPlay = async () => {
       if (!audio.isAutoPlaying || audio.isPaused || !currentItem) {
-        console.log('[AudioControls] Skipping auto-play:', {
+        console.log(`[AudioControls #${effectId}] ⏭️ Skipping auto-play:`, {
           isAutoPlaying: audio.isAutoPlaying,
           isPaused: audio.isPaused,
           hasCurrentItem: !!currentItem
@@ -114,7 +126,16 @@ const AudioControls: React.FC = () => {
       // CRITICAL FIX: Add delay to ensure previous TTS is fully stopped
       // This prevents race condition where new speech starts before old speech stops
       // Even though handleNext/handlePrev now await stopSpeaking(), we add extra safety
+      console.log(`[AudioControls #${effectId}] ⏳ Waiting 200ms before speaking...`);
       await new Promise(resolve => setTimeout(resolve, 200));
+      
+      // Check if this effect is still the current one (not superseded by a new effect)
+      if (currentEffectIdRef.current !== effectId) {
+        console.log(`[AudioControls #${effectId}] ❌ CANCELLED - newer effect #${currentEffectIdRef.current} has taken over`);
+        return;
+      }
+      
+      console.log(`[AudioControls #${effectId}] ✅ 200ms delay complete, proceeding...`);
 
       // Get the word/text to speak
       // For shadowing items, use fullText for natural continuous speech
@@ -132,7 +153,7 @@ const AudioControls: React.FC = () => {
 
         // Strip markdown syntax (**, __, etc.) before speaking
         const cleanedText = cleanText(textToSpeak);
-        console.log('[AudioControls] Auto-playing:', cleanedText, `(${audio.currentIndex + 1}/${dataset?.length || 0})`);
+        console.log(`[AudioControls #${effectId}] 🎤 Preparing to speak:`, cleanedText.substring(0, 30), `(${audio.currentIndex + 1}/${dataset?.length || 0})`);
 
         try {
           if (appConfig.get('tts.autoSpeak')) {
@@ -141,9 +162,19 @@ const AudioControls: React.FC = () => {
             for (let i = 0; i < repeatCount; i++) {
               // Check if still playing before each repeat
               if (!audio.isAutoPlaying || audio.isPaused || !autoPlayRef.current) {
+                console.log(`[AudioControls #${effectId}] ⏹️ Stopped during repeat ${i + 1}/${repeatCount}`);
                 break;
               }
+              
+              // Check if this effect is still current
+              if (currentEffectIdRef.current !== effectId) {
+                console.log(`[AudioControls #${effectId}] ❌ CANCELLED during repeat ${i + 1}/${repeatCount} - superseded by effect #${currentEffectIdRef.current}`);
+                break;
+              }
+              
+              console.log(`[AudioControls #${effectId}] 🔊 Speaking repeat ${i + 1}/${repeatCount}...`);
               await ttsEngine.speak(cleanedText, null, settings.ttsRate);
+              console.log(`[AudioControls #${effectId}] ✅ Speak complete for repeat ${i + 1}/${repeatCount}`);
 
               // Small delay between repeats (only if not the last repeat)
               if (i < repeatCount - 1) {
@@ -153,8 +184,9 @@ const AudioControls: React.FC = () => {
           }
 
           // After speaking, move to next if auto-play is still active
-          if (audio.isAutoPlaying && !audio.isPaused && autoPlayRef.current) {
+          if (audio.isAutoPlaying && !audio.isPaused && autoPlayRef.current && currentEffectIdRef.current === effectId) {
             const nextIndex = audio.currentIndex + 1;
+            console.log(`[AudioControls #${effectId}] 🔄 Checking if should move to next (current: ${audio.currentIndex}, next: ${nextIndex})`);
 
             if (dataset && nextIndex < dataset.length) {
               const nextItem = dataset[nextIndex];
@@ -162,13 +194,15 @@ const AudioControls: React.FC = () => {
                 // Small delay between words (from config)
                 await new Promise(resolve => setTimeout(resolve, appConfig.get('delays.autoPlayBetweenWords')));
 
-                if (audio.isAutoPlaying && !audio.isPaused && autoPlayRef.current) {
-                  console.log('[AudioControls] Moving to next item:', nextIndex + 1);
+                if (audio.isAutoPlaying && !audio.isPaused && autoPlayRef.current && currentEffectIdRef.current === effectId) {
+                  console.log(`[AudioControls #${effectId}] ⏩ AUTO-NAVIGATING to next item:`, nextIndex + 1);
                   audio.navigateNext();
                   vocabulary.setCurrentItem(nextItem);
+                } else {
+                  console.log(`[AudioControls #${effectId}] ⏹️ Auto-play stopped or superseded, not navigating`);
                 }
               } else {
-                console.warn('[AudioControls] Next item is null at index:', nextIndex);
+                console.warn(`[AudioControls #${effectId}] ❌ Next item is null at index:`, nextIndex);
                 audio.stopAutoPlay();
               }
             } else {
@@ -278,6 +312,7 @@ const AudioControls: React.FC = () => {
 
   // Handle pause button click
   const handlePause = () => {
+    console.log('[AudioControls] ⏸️ handlePause() called');
     audio.pauseAutoPlay();
     // Stop any currently playing TTS (fire-and-forget since this is pause)
     ttsEngine.stopSpeaking();
@@ -285,8 +320,14 @@ const AudioControls: React.FC = () => {
 
   // Handle next button
   const handleNext = async () => {
+    const timestamp = Date.now();
+    console.log(`[AudioControls @${timestamp}] ⏩ handleNext() called`);
+    console.log(`[AudioControls @${timestamp}] 📊 Current state: index=${audio.currentIndex}, isAutoPlaying=${audio.isAutoPlaying}`);
+    
     // CRITICAL FIX: Await stopSpeaking to ensure speech fully stops
+    console.log(`[AudioControls @${timestamp}] 🛑 Calling stopSpeaking()...`);
     await ttsEngine.stopSpeaking();
+    console.log(`[AudioControls @${timestamp}] ✅ stopSpeaking() complete`);
     
     // Use filtered dataset if filter is active
     const dataset = difficultyFilter !== 'all'
@@ -297,8 +338,10 @@ const AudioControls: React.FC = () => {
       if (nextIndex < dataset.length) {
         const nextItem = dataset[nextIndex];
         if (nextItem) {
+          console.log(`[AudioControls @${timestamp}] 📝 Updating to index ${nextIndex}: "${(nextItem as any).word || (nextItem as any).sentence || 'unknown'}".substring(0, 30)`);
           audio.navigateNext();
           vocabulary.setCurrentItem(nextItem);
+          console.log(`[AudioControls @${timestamp}] ✅ State updated, useEffect should trigger now`);
         }
       }
     }
@@ -306,8 +349,14 @@ const AudioControls: React.FC = () => {
 
   // Handle previous button
   const handlePrev = async () => {
+    const timestamp = Date.now();
+    console.log(`[AudioControls @${timestamp}] ⏪ handlePrev() called`);
+    console.log(`[AudioControls @${timestamp}] 📊 Current state: index=${audio.currentIndex}, isAutoPlaying=${audio.isAutoPlaying}`);
+    
     // CRITICAL FIX: Await stopSpeaking to ensure speech fully stops
+    console.log(`[AudioControls @${timestamp}] 🛑 Calling stopSpeaking()...`);
     await ttsEngine.stopSpeaking();
+    console.log(`[AudioControls @${timestamp}] ✅ stopSpeaking() complete`);
     
     // Use filtered dataset if filter is active
     const dataset = difficultyFilter !== 'all'

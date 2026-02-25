@@ -487,15 +487,30 @@ export class TTSEngine {
       }
     };
 
-    // Safety timeout - auto-resolve after 3 seconds if onend doesn't fire
-    // Reduced from 8s because browser TTS is often completely broken
+    // Safety timeout - auto-resolve after 4 seconds if onend doesn't fire
+    // Extended from 3s to accommodate slower systems and mobile devices
     const safetyTimeout = setTimeout(() => {
       if (!hasResolved) {
-        console.warn(`[TTSEngine] ⏱️ Safety timeout (3s) - Web Speech API failed to play: "${text}"`);
-        console.warn('[TTSEngine] 💡 Consider using Premium Voice (Settings → AWS Polly) for reliable audio');
+        console.warn(`[TTSEngine] ⏱️ Safety timeout (4s) - Web Speech API failed to complete: "${text}"`);
+        
+        if (!utteranceStarted) {
+          console.error('[TTSEngine] ❌ Speech never started - Web Speech API is blocked or broken');
+          console.error('[TTSEngine] 💡 SOLUTION: Click the 🔊 icon in Chrome address bar to enable sound');
+          console.error('[TTSEngine] 💡 OR: Use Premium Voice (Settings → Premium TTS) for reliable audio');
+          
+          // Show user-facing notification (only if speech never started)
+          const store = useAppStore.getState();
+          store.ui.showNotification(
+            'Browser audio blocked. Click the 🔊 icon in address bar to enable sound, or use Premium Voice in Settings.',
+            'warning'
+          );
+        } else {
+          console.warn('[TTSEngine] Speech started but did not complete - this is unusual');
+        }
+        
         safeResolve();
       }
-    }, 3000);
+    }, 4000);
 
     utterance.onstart = () => {
       utteranceStarted = true;
@@ -544,34 +559,17 @@ export class TTSEngine {
     this.synth.speak(utterance);
     this.isSpeaking = true; // Ensure flag is set after calling speak()
     
-    // CRITICAL: Force resolution if onstart doesn't fire within 200ms
-    // This indicates the Web Speech API is completely broken
+    // WARNING: Give Web Speech API more time before considering it broken
+    // Some browsers (especially mobile) need 500-800ms for onstart to fire
     setTimeout(() => {
       if (!utteranceStarted && !hasResolved) {
-        console.error('[TTSEngine] ❌ CRITICAL: onstart did not fire - Web Speech API is broken');
-        console.log('[TTSEngine] 🔄 Attempting emergency resume...');
+        console.warn('[TTSEngine] ⚠️ onstart delayed - attempting emergency resume...');
         this.synth.resume();
         
-        // Last ditch effort: if still nothing after 300ms more, just give up
-        setTimeout(() => {
-          if (!utteranceStarted && !hasResolved) {
-            console.error('[TTSEngine] ❌ Web Speech API completely unresponsive');
-            console.error('[TTSEngine] 💡 SOLUTION: Click the speaker icon in Chrome\'s address bar to enable sound');
-            console.error('[TTSEngine] 💡 OR: Use Premium Voice (Settings → Premium TTS) for reliable audio');
-            
-            // Show user-facing notification
-            const store = useAppStore.getState();
-            store.ui.showNotification(
-              'Browser audio blocked. Click the 🔊 icon in address bar to enable sound, or use Premium Voice in Settings.',
-              'warning'
-            );
-            
-            // Force complete to prevent blocking
-            safeResolve();
-          }
-        }, 300);
+        // Only show error and force-complete after full safety timeout (managed above)
+        // This gives the API time to initialize properly
       }
-    }, 200);
+    }, 800);
     
     // CRITICAL FIX: Also force resolution if speak didn't start after safety timeout
     // This ensures we don't block indefinitely

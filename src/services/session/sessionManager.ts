@@ -105,16 +105,6 @@ export class SessionManager {
     }
   }
 
-  /**
-   * Cleanup resources (call on app unmount or session manager disposal)
-   */
-  destroy(): void {
-    if (this.autoSaveTimer) {
-      clearInterval(this.autoSaveTimer);
-      this.autoSaveTimer = null;
-    }
-  }
-
   // ============================================================================
   // Session Lifecycle
   // ============================================================================

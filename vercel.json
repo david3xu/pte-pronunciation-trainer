@@ -1,7 +1,6 @@
 {
   "buildCommand": "npm run vercel-build",
   "outputDirectory": "dist",
-  "public": true,
   "headers": [
     {
       "source": "/manifest.json",

@@ -666,6 +666,7 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 479. sleep in humans | /slip ɪn ˈhjumənz/ — sounds like **SLEEP in HYOO-muhnz**
 480. darkness behaviour | /ˈdɑrknəs bɪˈheɪvjər/ — sounds like **DARK-nuhs bih-HAYV-yur**
 
+<!--
 ## Topic 59: Sign Language 手语
 
 481. abstraction | /æbˈstrækʃən/ — sounds like **ab-STRAK-shuhn**
@@ -705,6 +706,7 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 506. non-overridable principles | /nɑn ˌoʊvəˈraɪdəbəl ˈprɪnsəpəlz/ — sounds like **NAHN oh-vuh-RY-duh-buhl PRIN-suh-puhlz**
 507. following principles | /ˈfɑloʊɪŋ ˈprɪnsəpəlz/ — sounds like **FAH-loh-ing PRIN-suh-puhlz**
 508. never violating principles | /ˈnɛvər ˈvaɪəˌleɪtɪŋ ˈprɪnsəpəlz/ — sounds like **NEV-ur VY-uh-lay-ting PRIN-suh-puhlz**
+-->
 
 ## Topic 63: Why Should We Read The Republic? 为什么要读《理想国》
 
@@ -716,6 +718,7 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 514. "why we should bother to be good" | /waɪ wi ʃʊd ˈbɑðər tə bi ɡʊd/ — sounds like **WY wee SHOOD BAH-thur tuh bee GOOD**
 515. a world where crime and injustice tread down good people | /ə wɜrld wɛr kraɪm ænd ɪnˈdʒʌstəs trɛd daʊn ɡʊd ˈpipəl/ — sounds like **uh WURLD wair KRYM and in-JUS-tuhs TRED DOWN GOOD PEE-puhl**
 
+<!--
 ## Topic 64: Two Types of Motivation 两类动机
 
 516. two types of motivation | /tu taɪps əv ˌmoʊtəˈveɪʃən/ — sounds like **TOO TYPS uhv moh-tuh-VAY-shuhn**
@@ -748,3 +751,4 @@ The lecture primarily discusses [topic]. The speaker began by explaining [noun] 
 537. bees' dancing behaviors | /biz ˈdænsɪŋ bɪˈheɪvjərz/ — sounds like **BEEZ DAN-sing bih-HAYV-yurz**
 538. the dance and the sounds | /ðə dæns ænd ðə saʊndz/ — sounds like **thuh DANS and thuh SOWNDZ**
 539. different flowers and the environment | /ˈdɪfərənt ˈflaʊərz ænd ði ɪnˈvaɪrənmənt/ — sounds like **DIF-ur-uhnt FLOW-urz and thee in-VY-ruhn-muhnt**
+-->

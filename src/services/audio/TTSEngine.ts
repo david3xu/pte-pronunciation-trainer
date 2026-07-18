@@ -572,17 +572,11 @@ export class TTSEngine {
       }
 
       console.warn(`[TTSEngine] ❌ TTS Error: ${error.error} for "${text.substring(0, 30)}..."`);
-      // Try fallback without voice for other errors
-      if (voice && utterance.voice && error.error !== 'not-allowed') {
-        utterance.voice = null;
-        this.synth.speak(utterance);
-      } else {
-        if (error.error === 'not-allowed') {
-          useAppStore.getState().audio.stopAutoPlay();
-        }
-        this.showTTSFallback(text);
-        safeResolve();
+      if (error.error === 'not-allowed') {
+        useAppStore.getState().audio.stopAutoPlay();
       }
+      this.showTTSFallback(text);
+      safeResolve();
     };
 
     console.log(`[TTSEngine] 🚀 Calling speechSynthesis.speak() for: "${text}"`);

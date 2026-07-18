@@ -17,6 +17,7 @@ import { Badge, Button, Card, Flex, Text } from '@radix-ui/themes';
 import React, { useEffect, useRef, useState } from 'react';
 import { appConfig } from '../../config/AppConfig';
 import { getPronunciationScore } from '../../services/ai';
+import { ttsEngine } from '../../services/audio/TTSEngine';
 import { useVocabulary } from '../../stores';
 
 interface PronunciationScoringProps {
@@ -351,8 +352,7 @@ const PronunciationScoring: React.FC<PronunciationScoringProps> = ({ isOpen = tr
               {currentItem && (
                 <Button
                   onClick={() => {
-                    const utterance = new SpeechSynthesisUtterance(targetText);
-                    window.speechSynthesis.speak(utterance);
+                    void ttsEngine.speak(targetText, null, null);
                   }}
                   variant="soft"
                   style={{ flex: 1 }}

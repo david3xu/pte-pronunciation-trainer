@@ -17,6 +17,10 @@
  */
 
 import { useAppStore, type AppState } from '../../stores';
+import { BrowserSpeechService } from './browserSpeechService';
+import { IOSBackgroundAudio } from './iosBackgroundAudio';
+import { speakWithPolly } from './pollySpeechService';
+import { selectVoice } from './voiceSelector';
 
 /**
  * Vocabulary word structure
@@ -50,7 +54,6 @@ interface SpeakingEventData {
 export class TTSEngine {
   private config: any;
   private currentRepeatCount: number = 0;
-  private backgroundAudioEnabled: boolean = false;
   private unsubscribers: Array<() => void> = [];
 
   // Initialize properties (will be set by Zustand store subscriptions)
@@ -67,10 +70,9 @@ export class TTSEngine {
   private lastSpokenText: string = '';
   private speakCallCount: number = 0;
 
-  // Audio context for iOS background audio
-  private audioContext?: AudioContext;
   private audioContextInitialized: boolean = false;
-  private backgroundAudioElement?: HTMLAudioElement;
+  private browserSpeechService: BrowserSpeechService;
+  private iosBackgroundAudio: IOSBackgroundAudio;
 
   constructor() {
     // Load configuration from centralized config (lazily loaded)
@@ -86,6 +88,27 @@ export class TTSEngine {
       resume: () => {},
       speak: () => {},
     } as unknown as SpeechSynthesis);
+    this.iosBackgroundAudio = new IOSBackgroundAudio();
+    this.browserSpeechService = new BrowserSpeechService({
+      synth: this.synth,
+      getConfig: () => this.getConfig(),
+      getSpeechRate: () => this.speechRate,
+      getCachedVoice: () => this.cachedVoice,
+      setCachedVoice: (voice) => {
+        this.cachedVoice = voice;
+      },
+      selectVoice,
+      showFallback: (text) => this.showTTSFallback(text),
+      stopAutoPlay: () => useAppStore.getState().audio.stopAutoPlay(),
+      setCurrentUtterance: (utterance) => {
+        this.currentUtterance = utterance;
+      },
+      markSpeechSettled: () => {
+        this.isSpeaking = false;
+        this.currentUtterance = null;
+        this.lastSpokenText = '';
+      },
+    });
 
     // Subscribe to Zustand store changes (replaces EventBus listeners)
     this._setupStoreSubscriptions();
@@ -113,6 +136,10 @@ export class TTSEngine {
     return this.getConfig()?.get('tts.defaultVoice.lang') || 
            this.getConfig()?.get('voice.defaultLanguage') || 
            'en-GB';
+  }
+
+  private getPreferredVoiceName(): string | null {
+    return useAppStore.getState().settings.ttsVoice;
   }
 
   /**
@@ -182,8 +209,7 @@ export class TTSEngine {
       (state: AppState) => state.settings.ttsVoice,
       (ttsVoice: string | null, prevTtsVoice: string | null) => {
         if (ttsVoice !== prevTtsVoice) {
-          this.resetVoiceCache(); // Original line
-          // this.selectVoice(ttsVoice); // This was in the provided snippet, but resetVoiceCache was original
+          this.resetVoiceCache();
           console.log(`[TTSEngine] Voice preference changed to ${ttsVoice}`);
         }
       }
@@ -375,7 +401,11 @@ export class TTSEngine {
     const ttsVoice = useAppStore.getState().settings.ttsVoice;
     if (ttsVoice === 'premium') {
       console.log('[TTSEngine] 🎯 Using Premium AWS Polly voice');
-      return this.speakWithPolly(text, language);
+      return speakWithPolly({
+        text,
+        language,
+        fallback: (fallbackText, fallbackLanguage) => this.speakWithBrowserTTS(fallbackText, fallbackLanguage),
+      });
     }
 
     // Initialize AudioContext on first speech attempt (user interaction)
@@ -406,273 +436,19 @@ export class TTSEngine {
     this.lastSpokenText = text;
     console.log(`[TTSEngine #${callId}] ✅ Setting isSpeaking=true, starting speech...`);
 
-    return new Promise((resolve) => {
-      // Check if we're on iOS and should use HTML5 Audio fallback
-      const app = (window as any).app;
-      const isIOS = app && app.isMobileDevice && /iPad|iPhone|iPod/.test(navigator.userAgent);
+    const app = (window as any).app;
+    const isIOS = app && app.isMobileDevice && /iPad|iPhone|iPod/.test(navigator.userAgent);
+    if (isIOS && this.shouldUseHTML5Audio()) {
+      console.log('[TTSEngine] Using HTML5 Audio fallback for iOS');
+      return this.speakWithHTML5Audio(text, language, customRate);
+    }
 
-      if (isIOS && this.shouldUseHTML5Audio()) {
-        console.log('[TTSEngine] Using HTML5 Audio fallback for iOS');
-        this.speakWithHTML5Audio(text, language, customRate).then(resolve).catch(resolve);
-        return;
-      }
-
-      if (!('speechSynthesis' in window)) {
-        console.error('[TTSEngine] ❌ speechSynthesis not available in browser');
-        this.showTTSFallback(text);
-        resolve();
-        return;
-      }
-
-      // CRITICAL FIX: Resume speech synthesis if paused
-      // Chrome/Edge sometimes pause the speech synthesis queue
-      if (this.synth.paused) {
-        console.log('[TTSEngine] ▶️ Resuming paused speech synthesis');
-        this.synth.resume();
-      }
-
-      this.startSpeech(text, language, customRate, resolve);
+    return this.browserSpeechService.speak({
+      text,
+      language,
+      customRate,
+      preferredVoiceName: this.getPreferredVoiceName(),
     });
-  }
-
-  /**
-   * Internal method to start speech synthesis
-   */
-  /**
-   * Internal method to start speech synthesis
-   */
-  private startSpeech(text: string, language: string, customRate: number | null, resolve: () => void): void {
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = language;
-    // Ensure rate is always a valid number (default to 1.0 if all else fails)
-    const configRate = this.getConfig()?.get('tts.speeds.normal') || 1.0;
-    utterance.rate = customRate !== null ? customRate : (this.speechRate || configRate);
-    utterance.volume = 1.0;
-    utterance.pitch = 1.0;
-
-    // Track current utterance for cancellation
-    this.currentUtterance = utterance;
-
-    // CRITICAL WORKAROUND: Keep reference in global window object to prevent Chrome GC mid-speech
-    if (typeof window !== 'undefined') {
-      (window as any)._activeUtterances = (window as any)._activeUtterances || [];
-      (window as any)._activeUtterances.push(utterance);
-    }
-
-    // Try to find the best voice match
-    let voice: SpeechSynthesisVoice | null = null;
-    const voices = this.synth.getVoices();
-    if (voices.length > 0) {
-      voice = this.selectVoice(voices, language);
-      if (voice) {
-        console.log(`[TTSEngine] Selected voice: ${voice.name} for lang: ${language}`);
-      }
-    }
-
-    if (voice) {
-      utterance.voice = voice;
-      this.cachedVoice = voice; // Update cachedVoice for helper methods
-    } else {
-      console.warn('[TTSEngine] ⚠️ No voice matched, trying fallback...');
-      console.log(`[TTSEngine] Fallback check - voices available: ${voices.length}`);
-
-      if (voices.length > 0) {
-        const fallbackVoice = this.selectVoice(voices, language) || voices[0];
-
-        if (fallbackVoice) {
-          console.warn('[TTSEngine] Using fallback voice:', fallbackVoice.name);
-          utterance.voice = fallbackVoice;
-          this.cachedVoice = fallbackVoice;
-        } else {
-          console.error('No voice available for text-to-speech');
-          this.showTTSFallback(text);
-          resolve();
-          return;
-        }
-      } else {
-        console.warn('[TTSEngine] ⚠️ No voices reported; using browser default speech voice');
-      }
-    }
-
-    let hasResolved = false;
-    let utteranceStarted = false;
-    const safeResolve = () => {
-      if (!hasResolved) {
-        hasResolved = true;
-        
-        // Remove from global reference to allow GC now
-        if (typeof window !== 'undefined' && (window as any)._activeUtterances) {
-          const idx = (window as any)._activeUtterances.indexOf(utterance);
-          if (idx !== -1) {
-            (window as any)._activeUtterances.splice(idx, 1);
-          }
-        }
-
-        this.isSpeaking = false;
-        this.currentUtterance = null;
-        this.lastSpokenText = '';
-        resolve();
-      }
-    };
-
-    // Safety timeout - dynamically scaled based on text length to prevent long hangs on stuck events
-    // For single words (length ~10), timeout is 2 seconds instead of 4 seconds.
-    const calculatedTimeout = Math.min(10000, Math.max(2000, (text.length / 8) * 1000 + 1000));
-
-    const safetyTimeout = setTimeout(() => {
-      if (!hasResolved) {
-        console.warn(`[TTSEngine] ⏱️ Safety timeout (${calculatedTimeout}ms) - Web Speech API failed to complete: "${text}"`);
-        
-        if (!utteranceStarted) {
-          console.error('[TTSEngine] ❌ Speech never started - Web Speech API is blocked or broken');
-          
-          // Show user-facing notification (only if speech never started)
-          const store = useAppStore.getState();
-          store.ui.showNotification(
-            'Browser audio blocked. Click the 🔊 icon in address bar to enable sound, or use Premium Voice in Settings.',
-            'warning'
-          );
-          store.audio.stopAutoPlay();
-        } else {
-          console.warn('[TTSEngine] Speech started but did not complete - this is unusual');
-        }
-        
-        safeResolve();
-      }
-    }, calculatedTimeout);
-
-    utterance.onstart = () => {
-      utteranceStarted = true;
-      console.log(`[TTSEngine] 🎙️ Speech STARTED for: "${text.substring(0, 30)}..."`);
-      console.log(`[TTSEngine] 📊 Synth state at start: speaking=${this.synth.speaking}, pending=${this.synth.pending}`);
-    };
-
-    utterance.onend = () => {
-      clearTimeout(safetyTimeout);
-      console.log(`[TTSEngine] ✅ Speech ENDED for: "${text.substring(0, 30)}..."`);
-      this.isSpeaking = false;
-      this.currentUtterance = null;
-      this.lastSpokenText = '';
-      console.log(`[TTSEngine] 📊 State after end: isSpeaking=${this.isSpeaking}`);
-      safeResolve();
-    };
-
-    utterance.onerror = (error: SpeechSynthesisErrorEvent) => {
-      clearTimeout(safetyTimeout);
-      
-      // Clear flags
-      this.isSpeaking = false;
-      this.currentUtterance = null;
-      
-      // 'interrupted' is normal when user clicks rapidly or auto-advances
-      if (error.error === 'interrupted') {
-        console.log(`[TTSEngine] ℹ️ Speech interrupted (normal): "${text.substring(0, 30)}..."`);
-        safeResolve();
-        return;
-      }
-
-      console.warn(`[TTSEngine] ❌ TTS Error: ${error.error} for "${text.substring(0, 30)}..."`);
-      if (error.error === 'not-allowed') {
-        useAppStore.getState().audio.stopAutoPlay();
-      }
-      this.showTTSFallback(text);
-      safeResolve();
-    };
-
-    console.log(`[TTSEngine] 🚀 Calling speechSynthesis.speak() for: "${text}"`);
-    console.log(`[TTSEngine] 📊 Synth state: speaking=${this.synth.speaking}, pending=${this.synth.pending}, paused=${this.synth.paused}`);
-    
-    this.synth.speak(utterance);
-    this.isSpeaking = true; // Ensure flag is set after calling speak()
-    
-    // WARNING: Give Web Speech API more time before considering it broken
-    // Some browsers (especially mobile) need 500-800ms for onstart to fire
-    setTimeout(() => {
-      if (!utteranceStarted && !hasResolved) {
-        console.warn('[TTSEngine] ⚠️ onstart delayed - attempting emergency resume...');
-        this.synth.resume();
-      }
-    }, 800);
-    
-    // CRITICAL FIX: Also force resolution if speak didn't start after safety timeout
-    // This ensures we don't block indefinitely
-    setTimeout(() => {
-      if (!hasResolved && !utteranceStarted) {
-        console.error('[TTSEngine] ❌ Forcing resolution - Web Speech API completely unresponsive');
-        safeResolve();
-      }
-    }, calculatedTimeout - 200);
-  }
-
-  /**
-   * Speak using AWS Polly Premium TTS
-   */
-  private async speakWithPolly(text: string, lang: string | null = null): Promise<void> {
-    try {
-      // Determine voice and language for Polly - using Male voices for mobile
-      const voiceId = lang === 'en-AU' ? 'Russell' :  // Australian male
-                      lang === 'en-GB' ? 'Brian' :     // British male
-                      'Brian'; // Default to British male
-
-      const languageCode = lang === 'en-AU' ? 'en-AU' :
-                          lang === 'en-GB' ? 'en-GB' :
-                          'en-GB'; // Default to British English
-
-      console.log(`[TTSEngine] 🌐 Calling Polly API with voice: ${voiceId}, lang: ${languageCode}`);
-
-      const response = await fetch('/api/premium-tts', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          text,
-          voiceId,
-          engine: 'neural', // Neural Amy is available in ap-southeast-2
-          languageCode,
-          outputFormat: 'mp3',
-        }),
-      });
-
-      // Check if response is ok before trying to parse JSON
-      if (!response.ok) {
-        const errorText = await response.text();
-        console.warn(`[TTSEngine] Polly API error (${response.status}): ${errorText}`);
-        console.warn('[TTSEngine] Falling back to browser TTS');
-        return this.speakWithBrowserTTS(text, lang);
-      }
-
-      const result = await response.json();
-
-      if (!result.success || result.fallback) {
-        console.warn('[TTSEngine] Polly unavailable, falling back to browser TTS');
-        // Fall back to browser TTS
-        return this.speakWithBrowserTTS(text, lang);
-      }
-
-      // Play the audio
-      const audioData = `data:${result.data.contentType};base64,${result.data.audioBase64}`;
-      const audio = new Audio(audioData);
-
-      return new Promise((resolve) => {
-        audio.onended = () => {
-          console.log(`[TTSEngine] ✅ Polly speech ended for: "${text}"`);
-          resolve();
-        };
-        audio.onerror = () => {
-          console.warn('[TTSEngine] Polly audio error, falling back');
-          this.speakWithBrowserTTS(text, lang).then(resolve);
-        };
-        audio.play().catch(() => {
-          console.warn('[TTSEngine] Polly audio play failed, falling back');
-          this.speakWithBrowserTTS(text, lang).then(resolve);
-        });
-      });
-    } catch (error) {
-      console.error('[TTSEngine] Polly error:', error);
-      // Fall back to browser TTS
-      return this.speakWithBrowserTTS(text, lang);
-    }
   }
 
   /**
@@ -680,33 +456,7 @@ export class TTSEngine {
    */
   private speakWithBrowserTTS(text: string, lang: string | null = null): Promise<void> {
     const language = lang || this.getDefaultLanguage();
-
-    return new Promise((resolve) => {
-      if (!('speechSynthesis' in window)) {
-        this.showTTSFallback(text);
-        resolve();
-        return;
-      }
-
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = language;
-      utterance.rate = this.speechRate || 1.0;
-      utterance.volume = 1.0;
-
-      const voices = this.synth.getVoices();
-      const voice = this.selectVoice(voices, lang) || voices[0];
-      if (voice) {
-        utterance.voice = voice;
-      }
-
-      utterance.onend = () => resolve();
-      utterance.onerror = () => {
-        this.showTTSFallback(text);
-        resolve();
-      };
-
-      this.synth.speak(utterance);
-    });
+    return this.browserSpeechService.speakSimple(text, language, this.getPreferredVoiceName());
   }
 
   /**
@@ -724,43 +474,13 @@ export class TTSEngine {
    */
   speakWithHTML5Audio(text: string, lang: string | null = null, customRate: number | null = null): Promise<void> {
     const language = lang || this.getDefaultLanguage();
-
-    return new Promise((resolve) => {
-      if ('speechSynthesis' in window) {
-        const utterance = new SpeechSynthesisUtterance(text);
-        utterance.lang = language;
-        const configRate = this.getConfig()?.get('tts.speeds.normal') || 1.0;
-        utterance.rate = customRate !== null ? customRate : (this.speechRate || configRate);
-        utterance.volume = 1.0;
-        utterance.pitch = 1.0;
-
-        // Try to find voice
-        if (!this.cachedVoice || this.synth.getVoices().length > 0) {
-          const voices = this.synth.getVoices();
-          if (voices.length > 0) {
-            this.cachedVoice = this.selectVoice(voices, lang);
-          }
-        }
-
-        const voice = this.cachedVoice;
-        if (voice) {
-          utterance.voice = voice;
-        }
-
-        utterance.onend = () => {
-          if (this.backgroundAudioElement) {
-            this.startBackgroundAudio();
-          }
-          resolve();
-        };
-
-        utterance.onerror = () => resolve();
-
-        this.synth.speak(utterance);
-      } else {
-        this.showTTSFallback(text);
-        resolve();
-      }
+    return this.browserSpeechService.speakWithBackgroundAudio({
+      text,
+      language,
+      customRate,
+      preferredVoiceName: this.getPreferredVoiceName(),
+    }, () => {
+      this.iosBackgroundAudio.start();
     });
   }
 
@@ -793,117 +513,21 @@ export class TTSEngine {
    * Enable background audio for iOS
    */
   enableBackgroundAudio(): void {
-    // Only register sync once
-    if (!this.backgroundAudioEnabled) {
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.ready.then(registration => {
-          if ((registration as any).sync) {
-            (registration as any).sync.register('audio-playback');
-          }
-        });
-      }
-      this.backgroundAudioEnabled = true;
-    }
-
-    // Set up background audio context for iOS
-    if (typeof AudioContext !== 'undefined' || typeof (window as any).webkitAudioContext !== 'undefined') {
-      const AudioContextClass = AudioContext || (window as any).webkitAudioContext;
-      if (!this.audioContext) {
-        this.audioContext = new AudioContextClass();
-      }
-
-      // Resume audio context if suspended (iOS requirement)
-      if (this.audioContext.state === 'suspended') {
-        this.audioContext.resume();
-      }
-    }
-
-    // iOS-specific background audio setup
-    this.setupIOSBackgroundAudio();
+    this.iosBackgroundAudio.enable();
   }
 
   /**
    * Setup iOS background audio with silent audio element
    */
   setupIOSBackgroundAudio(): void {
-    // Create a silent audio element to keep audio session active
-    if (!this.backgroundAudioElement) {
-      this.backgroundAudioElement = document.createElement('audio');
-      this.backgroundAudioElement.loop = true;
-      this.backgroundAudioElement.volume = 0.05;
-      this.backgroundAudioElement.preload = 'auto';
-      this.backgroundAudioElement.muted = false;
-      this.backgroundAudioElement.autoplay = false;
-
-      // Create a very short silent audio data URL (200ms of silence)
-      const silentAudioData = 'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=';
-      this.backgroundAudioElement.src = silentAudioData;
-
-      // Add to DOM (hidden)
-      this.backgroundAudioElement.style.cssText = 'position:absolute;left:-9999px;width:1px;height:1px;';
-      this.backgroundAudioElement.setAttribute('playsinline', '');
-      this.backgroundAudioElement.setAttribute('webkit-playsinline', '');
-
-      // Ensure DOM is ready before appending
-      if (document.body) {
-        document.body.appendChild(this.backgroundAudioElement);
-      } else {
-        document.addEventListener('DOMContentLoaded', () => {
-          if (this.backgroundAudioElement) {
-            document.body.appendChild(this.backgroundAudioElement);
-            this.startBackgroundAudio();
-          }
-        });
-        return;
-      }
-    }
-
-    // Start playing silent audio
-    this.startBackgroundAudio();
-
-    // Set up audio session for iOS
-    if (navigator.mediaSession) {
-      navigator.mediaSession.metadata = new MediaMetadata({
-        title: 'PTE Pronunciation Trainer',
-        artist: 'Learning Mode',
-        album: 'Background Audio'
-      });
-    }
+    this.iosBackgroundAudio.enable();
   }
 
   /**
    * Start background audio with proper error handling
    */
   startBackgroundAudio(): void {
-    if (!this.backgroundAudioElement) return;
-
-    const playPromise = this.backgroundAudioElement.play();
-
-    if (playPromise !== undefined) {
-      playPromise
-        .then(() => {
-          console.log('[TTSEngine] ✅ Background audio started successfully');
-        })
-        .catch((error: Error) => {
-          console.warn('[TTSEngine] ⚠️ Background audio failed to start:', error.message);
-
-          // Retry after user interaction
-          const retryPlay = () => {
-            this.backgroundAudioElement!.play()
-              .then(() => {
-                console.log('[TTSEngine] ✅ Background audio started on retry');
-                document.removeEventListener('click', retryPlay);
-                document.removeEventListener('touchstart', retryPlay);
-              })
-              .catch(() => {
-                // Silent fail on retry
-              });
-          };
-
-          document.addEventListener('click', retryPlay, { once: true });
-          document.addEventListener('touchstart', retryPlay, { once: true });
-        });
-    }
+    this.iosBackgroundAudio.start();
   }
 
   /**
@@ -1034,153 +658,6 @@ export class TTSEngine {
    */
   resetVoiceCache(): void {
     this.cachedVoice = null;
-  }
-
-  /**
-   * Select best voice match from available voices
-   */
-  /**
-   * Select best voice match from available voices
-   * Respects requested lang parameter and prioritizes Male voices of that language
-   * Prioritizes local service voices to prevent network latency delays
-   */
-  private selectVoice(voices: SpeechSynthesisVoice[], lang: string | null): SpeechSynthesisVoice | null {
-    // Check if user has selected a preferred voice in settings
-    const preferredName = useAppStore.getState().settings.ttsVoice;
-
-    if (preferredName && preferredName !== 'premium') {
-      // Try exact match first
-      const exactMatch = voices.find(v => v.name === preferredName);
-      if (exactMatch) return exactMatch;
-
-      // Try partial match
-      const partialMatch = voices.find(v => v.name.includes(preferredName));
-      if (partialMatch) return partialMatch;
-    }
-
-    // Normalized language target (e.g., 'en-us' or 'en-gb')
-    const targetLang = lang ? lang.toLowerCase().replace('_', '-') : null;
-
-    if (targetLang) {
-      // If language is requested, filter list by matching language first
-      const matchingVoices = voices.filter(v => {
-        const voiceLang = v.lang.toLowerCase().replace('_', '-');
-        return voiceLang === targetLang || voiceLang.startsWith(targetLang);
-      });
-
-      if (matchingVoices.length > 0) {
-        // Step 1: Prioritize LOCAL male voices of the requested language to prevent network delay
-        const localMale = matchingVoices.find(v =>
-          v.localService &&
-          (v.name.toLowerCase().includes('male') ||
-           v.name.includes('Daniel') ||
-           v.name.includes('Brian') ||
-           v.name.includes('Gordon') ||
-           v.name.includes('Russell') ||
-           v.name.includes('Matthew') ||
-           v.name.includes('Joey'))
-        );
-        if (localMale) return localMale;
-
-        // Step 2: Fallback to ANY local voice of the requested language
-        const localAny = matchingVoices.find(v => v.localService);
-        if (localAny) return localAny;
-
-        // Step 3: Fallback to remote male voice
-        const remoteMale = matchingVoices.find(v =>
-          v.name.toLowerCase().includes('male') ||
-          v.name.includes('Google') ||
-          v.name.includes('Daniel') ||
-          v.name.includes('Brian') ||
-          v.name.includes('Gordon') ||
-          v.name.includes('Russell') ||
-          v.name.includes('Matthew') ||
-          v.name.includes('Joey')
-        );
-        if (remoteMale) return remoteMale;
-
-        // Fallback to any voice of the requested language
-        return matchingVoices[0] || null;
-      }
-    }
-
-    // If no language requested, or no voices found for requested language:
-    // PRIORITY: British and Australian MALE voices only (fallback behavior)
-
-    // 1. UK Male local voices
-    const ukMaleLocal = voices.find(v => {
-      const voiceLang = v.lang.toLowerCase().replace('_', '-');
-      return (voiceLang === 'en-gb') && v.localService &&
-        (v.name.toLowerCase().includes('male') ||
-         v.name.includes('Daniel') ||
-         v.name.includes('Brian') ||
-         v.name.includes('Oliver'));
-    });
-    if (ukMaleLocal) return ukMaleLocal;
-
-    // 2. UK Male remote voices
-    const ukMaleRemote = voices.find(v => {
-      const voiceLang = v.lang.toLowerCase().replace('_', '-');
-      return (voiceLang === 'en-gb') &&
-        (v.name.toLowerCase().includes('male') ||
-         v.name.includes('Google UK English Male') ||
-         v.name.includes('Daniel') ||
-         v.name.includes('Brian') ||
-         v.name.includes('Oliver'));
-    });
-    if (ukMaleRemote) return ukMaleRemote;
-
-    // 3. Australian Male local voices
-    const auMaleLocal = voices.find(v => {
-      const voiceLang = v.lang.toLowerCase().replace('_', '-');
-      return (voiceLang === 'en-au') && v.localService &&
-        (v.name.toLowerCase().includes('male') ||
-         v.name.includes('Gordon') ||
-         v.name.includes('Russell'));
-    });
-    if (auMaleLocal) return auMaleLocal;
-
-    // 4. Australian Male remote voices
-    const auMaleRemote = voices.find(v => {
-      const voiceLang = v.lang.toLowerCase().replace('_', '-');
-      return (voiceLang === 'en-au') &&
-        (v.name.toLowerCase().includes('male') ||
-         v.name.includes('Gordon') ||
-         v.name.includes('Russell') ||
-         v.name.includes('Google Australian English Male'));
-    });
-    if (auMaleRemote) return auMaleRemote;
-
-    // 5. Any UK local voice
-    const ukLocalAny = voices.find(v => {
-      const voiceLang = v.lang.toLowerCase().replace('_', '-');
-      return voiceLang === 'en-gb' && v.localService;
-    });
-    if (ukLocalAny) return ukLocalAny;
-
-    // 6. Any UK remote voice
-    const ukRemoteAny = voices.find(v => {
-      const voiceLang = v.lang.toLowerCase().replace('_', '-');
-      return voiceLang === 'en-gb';
-    });
-    if (ukRemoteAny) return ukRemoteAny;
-
-    // 7. Any Australian local voice
-    const auLocalAny = voices.find(v => {
-      const voiceLang = v.lang.toLowerCase().replace('_', '-');
-      return voiceLang === 'en-au' && v.localService;
-    });
-    if (auLocalAny) return auLocalAny;
-
-    // 8. Any Australian remote voice
-    const auRemoteAny = voices.find(v => {
-      const voiceLang = v.lang.toLowerCase().replace('_', '-');
-      return voiceLang === 'en-au';
-    });
-    if (auRemoteAny) return auRemoteAny;
-
-    // Final fallback: First available voice
-    return voices[0] || null;
   }
 }
 

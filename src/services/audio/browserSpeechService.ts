@@ -1,0 +1,239 @@
+import type { VoiceSelectionOptions } from './voiceSelector';
+
+interface ConfigAccessor {
+  get: (path: string) => unknown;
+}
+
+export interface BrowserSpeechServiceOptions {
+  synth: SpeechSynthesis;
+  getConfig: () => ConfigAccessor | null;
+  getSpeechRate: () => number | null;
+  getCachedVoice: () => SpeechSynthesisVoice | null;
+  setCachedVoice: (voice: SpeechSynthesisVoice | null) => void;
+  selectVoice: (voices: SpeechSynthesisVoice[], options?: VoiceSelectionOptions) => SpeechSynthesisVoice | null;
+  showFallback: (text: string) => void;
+  stopAutoPlay: () => void;
+  setCurrentUtterance: (utterance: SpeechSynthesisUtterance | null) => void;
+  markSpeechSettled: () => void;
+}
+
+export interface SpeakOptions {
+  text: string;
+  language: string;
+  customRate: number | null;
+  preferredVoiceName?: string | null;
+}
+
+export class BrowserSpeechService {
+  private activeUtterances: SpeechSynthesisUtterance[] = [];
+
+  constructor(private readonly options: BrowserSpeechServiceOptions) {}
+
+  speak({ text, language, customRate, preferredVoiceName }: SpeakOptions): Promise<void> {
+    return new Promise((resolve) => {
+      if (!('speechSynthesis' in window)) {
+        this.options.showFallback(text);
+        resolve();
+        return;
+      }
+
+      if (this.options.synth.paused) {
+        console.log('[BrowserSpeechService] ▶️ Resuming paused speech synthesis');
+        this.options.synth.resume();
+      }
+
+      this.startSpeech({ text, language, customRate, preferredVoiceName }, resolve);
+    });
+  }
+
+  speakSimple(text: string, language: string, preferredVoiceName?: string | null): Promise<void> {
+    return new Promise((resolve) => {
+      if (!('speechSynthesis' in window)) {
+        this.options.showFallback(text);
+        resolve();
+        return;
+      }
+
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = language;
+      utterance.rate = this.options.getSpeechRate() || 1.0;
+      utterance.volume = 1.0;
+
+      const voices = this.options.synth.getVoices();
+      const voice = this.options.selectVoice(voices, { language, preferredName: preferredVoiceName }) || voices[0];
+      if (voice) {
+        utterance.voice = voice;
+      }
+
+      utterance.onend = () => resolve();
+      utterance.onerror = () => {
+        this.options.showFallback(text);
+        resolve();
+      };
+
+      this.options.synth.speak(utterance);
+    });
+  }
+
+  speakWithBackgroundAudio(
+    { text, language, customRate, preferredVoiceName }: SpeakOptions,
+    onEnd: () => void
+  ): Promise<void> {
+    return new Promise((resolve) => {
+      if (!('speechSynthesis' in window)) {
+        this.options.showFallback(text);
+        resolve();
+        return;
+      }
+
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = language;
+      const configRate = this.getNormalRate();
+      utterance.rate = customRate !== null ? customRate : (this.options.getSpeechRate() || configRate);
+      utterance.volume = 1.0;
+      utterance.pitch = 1.0;
+
+      if (!this.options.getCachedVoice() || this.options.synth.getVoices().length > 0) {
+        const voices = this.options.synth.getVoices();
+        if (voices.length > 0) {
+          this.options.setCachedVoice(this.options.selectVoice(voices, { language, preferredName: preferredVoiceName }));
+        }
+      }
+
+      const voice = this.options.getCachedVoice();
+      if (voice) {
+        utterance.voice = voice;
+      }
+
+      utterance.onend = () => {
+        onEnd();
+        resolve();
+      };
+
+      utterance.onerror = () => resolve();
+
+      this.options.synth.speak(utterance);
+    });
+  }
+
+  private startSpeech(options: SpeakOptions, resolve: () => void): void {
+    const { text, language, customRate, preferredVoiceName } = options;
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = language;
+    const configRate = this.getNormalRate();
+    utterance.rate = customRate !== null ? customRate : (this.options.getSpeechRate() || configRate);
+    utterance.volume = 1.0;
+    utterance.pitch = 1.0;
+
+    this.options.setCurrentUtterance(utterance);
+    this.retainUtterance(utterance);
+
+    const voices = this.options.synth.getVoices();
+    const voice = voices.length > 0
+      ? this.options.selectVoice(voices, { language, preferredName: preferredVoiceName })
+      : null;
+
+    if (voice) {
+      console.log(`[BrowserSpeechService] Selected voice: ${voice.name} for lang: ${language}`);
+      utterance.voice = voice;
+      this.options.setCachedVoice(voice);
+    } else if (voices.length > 0) {
+      const fallbackVoice = this.options.selectVoice(voices, { language, preferredName: preferredVoiceName }) || voices[0];
+      if (fallbackVoice) {
+        console.warn('[BrowserSpeechService] Using fallback voice:', fallbackVoice.name);
+        utterance.voice = fallbackVoice;
+        this.options.setCachedVoice(fallbackVoice);
+      } else {
+        this.options.showFallback(text);
+        resolve();
+        return;
+      }
+    } else {
+      console.warn('[BrowserSpeechService] ⚠️ No voices reported; using browser default speech voice');
+    }
+
+    let hasResolved = false;
+    let utteranceStarted = false;
+    const calculatedTimeout = Math.min(10000, Math.max(2000, (text.length / 8) * 1000 + 1000));
+
+    const safeResolve = () => {
+      if (hasResolved) return;
+      hasResolved = true;
+      this.releaseUtterance(utterance);
+      this.options.markSpeechSettled();
+      resolve();
+    };
+
+    const safetyTimeout = window.setTimeout(() => {
+      if (hasResolved) return;
+      console.warn(`[BrowserSpeechService] ⏱️ Safety timeout (${calculatedTimeout}ms): "${text}"`);
+
+      if (!utteranceStarted) {
+        this.options.stopAutoPlay();
+        this.options.showFallback(text);
+      }
+
+      safeResolve();
+    }, calculatedTimeout);
+
+    utterance.onstart = () => {
+      utteranceStarted = true;
+      console.log(`[BrowserSpeechService] 🎙️ Speech STARTED for: "${text.substring(0, 30)}..."`);
+    };
+
+    utterance.onend = () => {
+      window.clearTimeout(safetyTimeout);
+      console.log(`[BrowserSpeechService] ✅ Speech ENDED for: "${text.substring(0, 30)}..."`);
+      safeResolve();
+    };
+
+    utterance.onerror = (error: SpeechSynthesisErrorEvent) => {
+      window.clearTimeout(safetyTimeout);
+      if (error.error === 'interrupted') {
+        console.log(`[BrowserSpeechService] ℹ️ Speech interrupted: "${text.substring(0, 30)}..."`);
+        safeResolve();
+        return;
+      }
+
+      console.warn(`[BrowserSpeechService] ❌ TTS Error: ${error.error} for "${text.substring(0, 30)}..."`);
+      if (error.error === 'not-allowed') {
+        this.options.stopAutoPlay();
+      }
+      this.options.showFallback(text);
+      safeResolve();
+    };
+
+    console.log(`[BrowserSpeechService] 🚀 Calling speechSynthesis.speak() for: "${text}"`);
+    this.options.synth.speak(utterance);
+
+    window.setTimeout(() => {
+      if (!utteranceStarted && !hasResolved) {
+        console.warn('[BrowserSpeechService] ⚠️ onstart delayed - attempting emergency resume...');
+        this.options.synth.resume();
+      }
+    }, 800);
+
+    window.setTimeout(() => {
+      if (!hasResolved && !utteranceStarted) {
+        console.error('[BrowserSpeechService] ❌ Forcing resolution - Web Speech API unresponsive');
+        safeResolve();
+      }
+    }, calculatedTimeout - 200);
+  }
+
+  private retainUtterance(utterance: SpeechSynthesisUtterance): void {
+    this.activeUtterances.push(utterance);
+  }
+
+  private releaseUtterance(utterance: SpeechSynthesisUtterance): void {
+    const index = this.activeUtterances.indexOf(utterance);
+    if (index !== -1) {
+      this.activeUtterances.splice(index, 1);
+    }
+  }
+
+  private getNormalRate(): number {
+    const configuredRate = this.options.getConfig()?.get('tts.speeds.normal');
+    return typeof configuredRate === 'number' ? configuredRate : 1.0;
+  }
+}

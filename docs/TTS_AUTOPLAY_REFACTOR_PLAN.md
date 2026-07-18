@@ -46,6 +46,8 @@ src/stores/slices/
 
 ## Phase 1: Safety harness
 
+- Status: Partially complete. Existing TypeScript/lint validation is in place; focused unit coverage should be added before deeper behavior changes.
+
 - Add focused tests for the autoplay controller behavior:
   - TTS success advances to the next item.
   - TTS timeout stops autoplay.
@@ -59,11 +61,15 @@ src/stores/slices/
 
 ## Phase 2: Extract voice selection
 
+- Status: Complete. Voice matching now lives in `src/services/audio/voiceSelector.ts`.
+
 - Move `selectVoice()` and related matching helpers from `TTSEngine.ts` to `voiceSelector.ts`.
 - Keep preferred voice lookup explicit and typed.
 - Replace duplicated fallback selection in browser/iOS paths with the shared helper.
 
 ## Phase 3: Extract browser speech lifecycle
+
+- Status: Complete. Web Speech utterance creation, event settlement, timeout handling, and active utterance retention now live in `src/services/audio/browserSpeechService.ts`.
 
 - Move `SpeechSynthesisUtterance` creation, event handling, timeout handling, cancellation, and active utterance retention to `browserSpeechService.ts`.
 - Return a normalized result type such as `spoken`, `cancelled`, `timeout`, or `error`.
@@ -72,11 +78,15 @@ src/stores/slices/
 
 ## Phase 4: Extract Polly and iOS support
 
+- Status: Complete. Polly request/playback fallback lives in `src/services/audio/pollySpeechService.ts`; background audio setup lives in `src/services/audio/iosBackgroundAudio.ts`.
+
 - Move AWS Polly request/playback to `pollySpeechService.ts`.
 - Move background audio setup to `iosBackgroundAudio.ts`.
 - Keep browser fallback explicit instead of hidden inside multiple nested paths.
 
 ## Phase 5: Extract autoplay controller
+
+- Status: Complete. Autoplay orchestration now lives in `src/components/audio/hooks/useAutoPlayController.ts`; `AudioControls.tsx` is UI-only.
 
 - Move the autoplay loop from `AudioControls.tsx` into `useAutoPlayController()`.
 - Keep `AudioControls.tsx` responsible for rendering controls and dispatching user actions only.
@@ -84,6 +94,8 @@ src/stores/slices/
 - Make controller transitions explicit: idle, playing, paused, stopping, failed.
 
 ## Phase 6: Split Zustand slices
+
+- Status: Deferred. Store splitting should be a separate commit because it touches persisted state structure and is lower-risk after the audio/autoplay boundaries are stable.
 
 - Extract each inline slice from `src/stores/index.ts` into `src/stores/slices/*`.
 - Preserve persisted state shape and migration behavior.

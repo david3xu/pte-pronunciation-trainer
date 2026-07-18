@@ -149,6 +149,7 @@ export class BrowserSpeechService {
 
     let hasResolved = false;
     let utteranceStarted = false;
+    let defaultVoiceRetryStarted = false;
     const calculatedTimeout = Math.min(10000, Math.max(2000, (text.length / 8) * 1000 + 1000));
 
     const safeResolve = () => {
@@ -159,11 +160,57 @@ export class BrowserSpeechService {
       resolve();
     };
 
+    const retryWithBrowserDefault = () => {
+      if (hasResolved || utteranceStarted || defaultVoiceRetryStarted) return;
+
+      defaultVoiceRetryStarted = true;
+      console.warn('[BrowserSpeechService] 🔁 Retrying with browser default voice');
+
+      this.options.synth.cancel();
+
+      const retryUtterance = new SpeechSynthesisUtterance(text);
+      retryUtterance.rate = utterance.rate;
+      retryUtterance.volume = 1.0;
+      retryUtterance.pitch = 1.0;
+      retryUtterance.lang = this.getSafeLanguage(language);
+
+      this.options.setCurrentUtterance(retryUtterance);
+      this.retainUtterance(retryUtterance);
+
+      retryUtterance.onstart = () => {
+        utteranceStarted = true;
+        console.log(`[BrowserSpeechService] 🎙️ Default voice retry STARTED for: "${text.substring(0, 30)}..."`);
+      };
+
+      retryUtterance.onend = () => {
+        window.clearTimeout(safetyTimeout);
+        console.log(`[BrowserSpeechService] ✅ Default voice retry ENDED for: "${text.substring(0, 30)}..."`);
+        this.releaseUtterance(retryUtterance);
+        safeResolve();
+      };
+
+      retryUtterance.onerror = (error: SpeechSynthesisErrorEvent) => {
+        window.clearTimeout(safetyTimeout);
+        console.warn(`[BrowserSpeechService] ❌ Default voice retry error: ${error.error}`);
+        this.releaseUtterance(retryUtterance);
+        this.options.showFallback(text);
+        safeResolve();
+      };
+
+      this.options.synth.resume();
+      this.options.synth.speak(retryUtterance);
+    };
+
     const safetyTimeout = window.setTimeout(() => {
       if (hasResolved) return;
       console.warn(`[BrowserSpeechService] ⏱️ Safety timeout (${calculatedTimeout}ms): "${text}"`);
 
       if (!utteranceStarted) {
+        if (!defaultVoiceRetryStarted) {
+          retryWithBrowserDefault();
+          return;
+        }
+
         this.options.stopAutoPlay();
         this.options.showFallback(text);
       }
@@ -184,6 +231,11 @@ export class BrowserSpeechService {
 
     utterance.onerror = (error: SpeechSynthesisErrorEvent) => {
       window.clearTimeout(safetyTimeout);
+      if (error.error === 'interrupted' && defaultVoiceRetryStarted) {
+        this.releaseUtterance(utterance);
+        return;
+      }
+
       if (error.error === 'interrupted') {
         console.log(`[BrowserSpeechService] ℹ️ Speech interrupted: "${text.substring(0, 30)}..."`);
         safeResolve();
@@ -210,8 +262,7 @@ export class BrowserSpeechService {
 
     window.setTimeout(() => {
       if (!hasResolved && !utteranceStarted) {
-        console.error('[BrowserSpeechService] ❌ Forcing resolution - Web Speech API unresponsive');
-        safeResolve();
+        retryWithBrowserDefault();
       }
     }, calculatedTimeout - 200);
   }

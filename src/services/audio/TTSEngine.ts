@@ -107,6 +107,15 @@ export class TTSEngine {
   }
 
   /**
+   * Get default language from config or safe fallback
+   */
+  private getDefaultLanguage(): string {
+    return this.getConfig()?.get('tts.defaultVoice.lang') || 
+           this.getConfig()?.get('voice.defaultLanguage') || 
+           'en-GB';
+  }
+
+  /**
    * Preload voices to avoid first-click delay
    * Chrome/Edge require waiting for 'voiceschanged' event
    */
@@ -317,7 +326,7 @@ export class TTSEngine {
 
       console.log(`[TTSEngine] 🔊 Calling speak() for: "${cleanText}"`);
       // Speak the term first
-      await this.speak(cleanText, this.getConfig().get('tts.language.default'), pronunciationRate);
+      await this.speak(cleanText, this.getDefaultLanguage(), pronunciationRate);
       console.log(`[TTSEngine] ✅ speak() completed for: "${cleanText}"`);
 
       // For vocabulary with examples, optionally speak the example sentence
@@ -348,7 +357,7 @@ export class TTSEngine {
         if (rawExample) {
           const cleanExample = this.cleanExampleSentenceForTTS(rawExample!);
           const configRate = this.getConfig()?.get('tts.speeds.normal') || 1.0;
-          await this.speak(cleanExample, this.getConfig().get('tts.language.default'), this.speechRate || configRate);
+          await this.speak(cleanExample, this.getDefaultLanguage(), this.speechRate || configRate);
         }
 
         // Remove example highlighting
@@ -378,7 +387,7 @@ export class TTSEngine {
    */
   async speak(text: string, lang: string | null = null, customRate: number | null = null): Promise<void> {
     // Use configured language if not specified
-    const language = lang || this.getConfig().get('tts.language.default');
+    const language = lang || this.getDefaultLanguage();
 
     this.speakCallCount++;
     const callId = this.speakCallCount;
@@ -510,10 +519,7 @@ export class TTSEngine {
           return;
         }
       } else {
-        console.error('No voices loaded yet - speech synthesis unavailable');
-        this.showTTSFallback(text);
-        resolve();
-        return;
+        console.warn('[TTSEngine] ⚠️ No voices reported; using browser default speech voice');
       }
     }
 
@@ -747,7 +753,7 @@ export class TTSEngine {
    * Speak with HTML5 Audio (iOS background fallback)
    */
   speakWithHTML5Audio(text: string, lang: string | null = null, customRate: number | null = null): Promise<void> {
-    const language = lang || this.getConfig().get('tts.language.default');
+    const language = lang || this.getDefaultLanguage();
 
     return new Promise((resolve) => {
       if ('speechSynthesis' in window) {
@@ -792,6 +798,7 @@ export class TTSEngine {
    * Show TTS fallback message
    */
   showTTSFallback(text: string): void {
+    const store = useAppStore.getState();
     const progressTracker = (window as any).progressTracker;
 
     // Check if progressTracker exists before calling methods
@@ -805,6 +812,11 @@ export class TTSEngine {
       // Fallback: log to console if no progress tracker available
       console.warn(`[TTSEngine] TTS fallback - please read aloud: "${text}"`);
     }
+
+    store.ui.showNotification(
+      'Browser text-to-speech did not start. Check Chrome site sound settings, or choose another voice in Settings.',
+      'warning'
+    );
   }
 
   /**

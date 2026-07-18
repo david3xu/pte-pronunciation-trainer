@@ -8,6 +8,7 @@
 import { SpeakerLoudIcon, UpdateIcon } from '@radix-ui/react-icons';
 import { Badge, Button, Card, Flex, Select, Switch, Text } from '@radix-ui/themes';
 import React, { useEffect, useState } from 'react';
+import { ttsEngine } from '../../services/audio/TTSEngine';
 
 
 
@@ -100,9 +101,7 @@ const VoiceSelector: React.FC<VoiceSelectorProps> = ({ onVoiceChange }) => {
   // Test voice
   const handleTestVoice = () => {
     if (!usePremiumTTS) {
-      // Use Web Speech API for testing
-      const utterance = new SpeechSynthesisUtterance('Hello, this is a test of the selected voice.');
-      window.speechSynthesis.speak(utterance);
+      void ttsEngine.speak('Hello, this is a test of the selected voice.', selectedLanguage, null);
     } else {
       // Use premium TTS API
       testPremiumVoice();

@@ -366,7 +366,8 @@ export class TTSEngine {
     }
 
     // CRITICAL FIX: Check if already speaking or pending, cancel it
-    if (this.isSpeaking || this.synth.speaking || this.synth.pending) {
+    const isActivelySpeaking = this.synth.speaking || this.synth.pending;
+    if (isActivelySpeaking) {
       console.warn(`[TTSEngine #${callId}] ⚠️ Already speaking or pending, cancelling previous speech...`);
       this.synth.cancel();
       this.isSpeaking = false;
@@ -375,6 +376,11 @@ export class TTSEngine {
       
       // Wait 100ms once for the browser's TTS engine to clear
       await new Promise(resolve => setTimeout(resolve, 100));
+    } else {
+      // Clear state variables instantly without delay when no audio is playing
+      this.isSpeaking = false;
+      this.currentUtterance = null;
+      this.lastSpokenText = '';
     }
 
     this.isSpeaking = true;
@@ -1000,6 +1006,7 @@ export class TTSEngine {
   /**
    * Select best voice match from available voices
    * Respects requested lang parameter and prioritizes Male voices of that language
+   * Prioritizes local service voices to prevent network latency delays
    */
   private selectVoice(voices: SpeechSynthesisVoice[], lang: string | null): SpeechSynthesisVoice | null {
     // Check if user has selected a preferred voice in settings
@@ -1026,18 +1033,35 @@ export class TTSEngine {
       });
 
       if (matchingVoices.length > 0) {
-        // Within matching language voices, prioritize Male voices
-        const maleVoice = matchingVoices.find(v =>
+        // Step 1: Prioritize LOCAL male voices of the requested language to prevent network delay
+        const localMale = matchingVoices.find(v =>
+          v.localService &&
+          (v.name.toLowerCase().includes('male') ||
+           v.name.includes('Daniel') ||
+           v.name.includes('Brian') ||
+           v.name.includes('Gordon') ||
+           v.name.includes('Russell') ||
+           v.name.includes('Matthew') ||
+           v.name.includes('Joey'))
+        );
+        if (localMale) return localMale;
+
+        // Step 2: Fallback to ANY local voice of the requested language
+        const localAny = matchingVoices.find(v => v.localService);
+        if (localAny) return localAny;
+
+        // Step 3: Fallback to remote male voice
+        const remoteMale = matchingVoices.find(v =>
           v.name.toLowerCase().includes('male') ||
           v.name.includes('Google') ||
-          v.name.includes('Daniel') || // UK Male
-          v.name.includes('Brian') ||  // UK Male
-          v.name.includes('Gordon') || // AU Male
-          v.name.includes('Russell') || // AU Male
-          v.name.includes('Matthew') || // US Male
-          v.name.includes('Joey')       // US Male
+          v.name.includes('Daniel') ||
+          v.name.includes('Brian') ||
+          v.name.includes('Gordon') ||
+          v.name.includes('Russell') ||
+          v.name.includes('Matthew') ||
+          v.name.includes('Joey')
         );
-        if (maleVoice) return maleVoice;
+        if (remoteMale) return remoteMale;
 
         // Fallback to any voice of the requested language
         return matchingVoices[0] || null;
@@ -1047,8 +1071,19 @@ export class TTSEngine {
     // If no language requested, or no voices found for requested language:
     // PRIORITY: British and Australian MALE voices only (fallback behavior)
 
-    // 1. UK Male voices (high quality for PTE pronunciation)
-    const ukMale = voices.find(v => {
+    // 1. UK Male local voices
+    const ukMaleLocal = voices.find(v => {
+      const voiceLang = v.lang.toLowerCase().replace('_', '-');
+      return (voiceLang === 'en-gb') && v.localService &&
+        (v.name.toLowerCase().includes('male') ||
+         v.name.includes('Daniel') ||
+         v.name.includes('Brian') ||
+         v.name.includes('Oliver'));
+    });
+    if (ukMaleLocal) return ukMaleLocal;
+
+    // 2. UK Male remote voices
+    const ukMaleRemote = voices.find(v => {
       const voiceLang = v.lang.toLowerCase().replace('_', '-');
       return (voiceLang === 'en-gb') &&
         (v.name.toLowerCase().includes('male') ||
@@ -1057,10 +1092,20 @@ export class TTSEngine {
          v.name.includes('Brian') ||
          v.name.includes('Oliver'));
     });
-    if (ukMale) return ukMale;
+    if (ukMaleRemote) return ukMaleRemote;
 
-    // 2. Australian Male voices
-    const auMale = voices.find(v => {
+    // 3. Australian Male local voices
+    const auMaleLocal = voices.find(v => {
+      const voiceLang = v.lang.toLowerCase().replace('_', '-');
+      return (voiceLang === 'en-au') && v.localService &&
+        (v.name.toLowerCase().includes('male') ||
+         v.name.includes('Gordon') ||
+         v.name.includes('Russell'));
+    });
+    if (auMaleLocal) return auMaleLocal;
+
+    // 4. Australian Male remote voices
+    const auMaleRemote = voices.find(v => {
       const voiceLang = v.lang.toLowerCase().replace('_', '-');
       return (voiceLang === 'en-au') &&
         (v.name.toLowerCase().includes('male') ||
@@ -1068,21 +1113,35 @@ export class TTSEngine {
          v.name.includes('Russell') ||
          v.name.includes('Google Australian English Male'));
     });
-    if (auMale) return auMale;
+    if (auMaleRemote) return auMaleRemote;
 
-    // 3. Any UK Voice
-    const ukAny = voices.find(v => {
+    // 5. Any UK local voice
+    const ukLocalAny = voices.find(v => {
+      const voiceLang = v.lang.toLowerCase().replace('_', '-');
+      return voiceLang === 'en-gb' && v.localService;
+    });
+    if (ukLocalAny) return ukLocalAny;
+
+    // 6. Any UK remote voice
+    const ukRemoteAny = voices.find(v => {
       const voiceLang = v.lang.toLowerCase().replace('_', '-');
       return voiceLang === 'en-gb';
     });
-    if (ukAny) return ukAny;
+    if (ukRemoteAny) return ukRemoteAny;
 
-    // 4. Any Australian Voice
-    const auAny = voices.find(v => {
+    // 7. Any Australian local voice
+    const auLocalAny = voices.find(v => {
+      const voiceLang = v.lang.toLowerCase().replace('_', '-');
+      return voiceLang === 'en-au' && v.localService;
+    });
+    if (auLocalAny) return auLocalAny;
+
+    // 8. Any Australian remote voice
+    const auRemoteAny = voices.find(v => {
       const voiceLang = v.lang.toLowerCase().replace('_', '-');
       return voiceLang === 'en-au';
     });
-    if (auAny) return auAny;
+    if (auRemoteAny) return auRemoteAny;
 
     // Final fallback: First available voice
     return voices[0] || null;

@@ -14,6 +14,7 @@
     "build:ts": "tsc --noEmit",
     "compile:ts": "tsc",
     "test": "vitest run --passWithNoTests --silent || exit 0",
+    "test:e2e": "playwright test",
     "test:watch": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
@@ -50,6 +51,7 @@
   "devDependencies": {
     "@babel/core": "^7.28.5",
     "@babel/preset-env": "^7.28.5",
+    "@playwright/test": "^1.61.1",
     "@radix-ui/react-icons": "^1.3.2",
     "@tailwindcss/postcss": "^4.1.17",
     "@testing-library/dom": "^10.4.1",

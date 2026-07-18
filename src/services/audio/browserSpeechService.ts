@@ -152,6 +152,7 @@ export class BrowserSpeechService {
     let defaultVoiceRetryStarted = false;
     let retryTimeout: number | null = null;
     const calculatedTimeout = Math.min(10000, Math.max(2000, (text.length / 8) * 1000 + 1000));
+    const isSynthBusy = () => this.options.synth.speaking || this.options.synth.pending;
 
     const safeResolve = () => {
       if (hasResolved) return;
@@ -166,6 +167,10 @@ export class BrowserSpeechService {
 
     const retryWithBrowserDefault = () => {
       if (hasResolved || utteranceStarted || defaultVoiceRetryStarted) return;
+      if (isSynthBusy()) {
+        console.warn('[BrowserSpeechService] Speech synthesis is active without onstart; keeping current utterance');
+        return;
+      }
 
       defaultVoiceRetryStarted = true;
       console.warn('[BrowserSpeechService] 🔁 Retrying with browser default voice');
@@ -206,6 +211,10 @@ export class BrowserSpeechService {
 
       retryTimeout = window.setTimeout(() => {
         if (hasResolved || utteranceStarted) return;
+        if (isSynthBusy()) {
+          console.warn('[BrowserSpeechService] Default voice retry appears active without onstart');
+          return;
+        }
 
         console.error('[BrowserSpeechService] ❌ Browser default voice retry did not start');
         this.options.synth.cancel();
@@ -221,6 +230,12 @@ export class BrowserSpeechService {
       console.warn(`[BrowserSpeechService] ⏱️ Safety timeout (${calculatedTimeout}ms): "${text}"`);
 
       if (!utteranceStarted) {
+        if (isSynthBusy()) {
+          console.warn('[BrowserSpeechService] Speech appears active but emitted no events; advancing after timeout');
+          safeResolve();
+          return;
+        }
+
         if (!defaultVoiceRetryStarted) {
           retryWithBrowserDefault();
           return;
@@ -276,7 +291,7 @@ export class BrowserSpeechService {
     }, 800);
 
     window.setTimeout(() => {
-      if (!hasResolved && !utteranceStarted) {
+      if (!hasResolved && !utteranceStarted && !isSynthBusy()) {
         retryWithBrowserDefault();
       }
     }, calculatedTimeout - 200);

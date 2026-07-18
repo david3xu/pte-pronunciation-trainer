@@ -13,7 +13,7 @@ test.beforeEach(async ({ page }) => {
       voice?: string | null;
       rate?: number;
     };
-    type SpeechMode = 'normal' | 'silent';
+    type SpeechMode = 'normal' | 'no-events-active' | 'silent-idle';
 
     const events: TtsEvent[] = [];
     const listeners = new Map<string, Set<() => void>>();
@@ -83,7 +83,12 @@ test.beforeEach(async ({ page }) => {
           });
 
           const mode = (window as unknown as { __ttsMode?: SpeechMode }).__ttsMode;
-          if (mode === 'silent') {
+          if (mode === 'no-events-active') {
+            return;
+          }
+
+          if (mode === 'silent-idle') {
+            this.speaking = false;
             return;
           }
 
@@ -139,9 +144,9 @@ test('clicking vocabulary audio invokes browser speech synthesis', async ({ page
   });
 });
 
-test('autoplay stops instead of hanging when browser speech never starts', async ({ page }) => {
+test('autoplay continues when browser speech is active but emits no events', async ({ page }) => {
   await page.addInitScript(() => {
-    (window as unknown as { __ttsMode?: string }).__ttsMode = 'silent';
+    (window as unknown as { __ttsMode?: string }).__ttsMode = 'no-events-active';
   });
 
   await page.goto('/');
@@ -152,12 +157,33 @@ test('autoplay stops instead of hanging when browser speech never starts', async
   await audioControls.getByRole('button', { name: /play/i }).click();
   await expect(audioControls.getByRole('button', { name: /pause/i })).toBeVisible();
 
-  await expect(audioControls.getByRole('button', { name: /play/i })).toBeVisible({ timeout: 6_000 });
+  await expect(audioControls.getByText(/Item 2/i)).toBeVisible({ timeout: 6_000 });
+  await expect(audioControls.getByRole('button', { name: /pause/i })).toBeVisible();
 
   const speakEvents = await page.evaluate(() => {
     const events = (window as unknown as { __ttsEvents: Array<{ type: string }> }).__ttsEvents;
     return events.filter((event) => event.type === 'speak').length;
   });
 
-  expect(speakEvents).toBeGreaterThanOrEqual(2);
+  expect(speakEvents).toBeGreaterThanOrEqual(1);
+});
+
+test('autoplay stops instead of hanging when browser speech never starts', async ({ page }) => {
+  await page.addInitScript(() => {
+    (window as unknown as { __ttsMode?: string }).__ttsMode = 'silent-idle';
+  });
+
+  await page.goto('/');
+
+  const audioControls = page.locator('.audio-controls');
+  await expect(audioControls).toBeVisible();
+
+  await audioControls.getByRole('button', { name: /play/i }).click();
+
+  await expect.poll(async () => page.evaluate(() => {
+    const events = (window as unknown as { __ttsEvents: Array<{ type: string }> }).__ttsEvents;
+    return events.filter((event) => event.type === 'speak').length;
+  }), { timeout: 6_000 }).toBeGreaterThanOrEqual(2);
+
+  await expect(audioControls.getByRole('button', { name: /play/i })).toBeVisible();
 });

@@ -151,8 +151,25 @@ export class BrowserSpeechService {
     let utteranceStarted = false;
     let defaultVoiceRetryStarted = false;
     let retryTimeout: number | null = null;
+    let idlePollInterval: number | null = null;
+    let idlePollTimeout: number | null = null;
+    let synthBecameBusy = false;
     const calculatedTimeout = Math.min(10000, Math.max(2000, (text.length / 8) * 1000 + 1000));
     const isSynthBusy = () => this.options.synth.speaking || this.options.synth.pending;
+    const markSynthBusy = () => {
+      synthBecameBusy = synthBecameBusy || isSynthBusy();
+    };
+
+    const clearIdleWatch = () => {
+      if (idlePollInterval !== null) {
+        window.clearInterval(idlePollInterval);
+        idlePollInterval = null;
+      }
+      if (idlePollTimeout !== null) {
+        window.clearTimeout(idlePollTimeout);
+        idlePollTimeout = null;
+      }
+    };
 
     const safeResolve = () => {
       if (hasResolved) return;
@@ -160,15 +177,34 @@ export class BrowserSpeechService {
       if (retryTimeout !== null) {
         window.clearTimeout(retryTimeout);
       }
+      clearIdleWatch();
       this.releaseUtterance(utterance);
       this.options.markSpeechSettled();
       resolve();
     };
 
+    const resolveWhenSynthIdleOrLimit = (reason: string) => {
+      if (idlePollInterval !== null || hasResolved) return;
+
+      console.warn(`[BrowserSpeechService] ${reason}; waiting for speech synthesis to become idle`);
+      idlePollInterval = window.setInterval(() => {
+        markSynthBusy();
+        if (!isSynthBusy()) {
+          console.warn('[BrowserSpeechService] Speech synthesis became idle without events; continuing');
+          safeResolve();
+        }
+      }, 100);
+
+      idlePollTimeout = window.setTimeout(() => {
+        console.warn('[BrowserSpeechService] Speech synthesis stayed busy without events; continuing after guard timeout');
+        safeResolve();
+      }, Math.min(5000, Math.max(2000, calculatedTimeout)));
+    };
+
     const retryWithBrowserDefault = () => {
       if (hasResolved || utteranceStarted || defaultVoiceRetryStarted) return;
       if (isSynthBusy()) {
-        console.warn('[BrowserSpeechService] Speech synthesis is active without onstart; keeping current utterance');
+        resolveWhenSynthIdleOrLimit('Speech synthesis is active without onstart');
         return;
       }
 
@@ -208,11 +244,18 @@ export class BrowserSpeechService {
 
       this.options.synth.resume();
       this.options.synth.speak(retryUtterance);
+      markSynthBusy();
 
       retryTimeout = window.setTimeout(() => {
         if (hasResolved || utteranceStarted) return;
         if (isSynthBusy()) {
-          console.warn('[BrowserSpeechService] Default voice retry appears active without onstart');
+          resolveWhenSynthIdleOrLimit('Default voice retry appears active without onstart');
+          return;
+        }
+
+        if (synthBecameBusy) {
+          console.warn('[BrowserSpeechService] Default voice retry completed without events; continuing');
+          safeResolve();
           return;
         }
 
@@ -231,7 +274,12 @@ export class BrowserSpeechService {
 
       if (!utteranceStarted) {
         if (isSynthBusy()) {
-          console.warn('[BrowserSpeechService] Speech appears active but emitted no events; advancing after timeout');
+          resolveWhenSynthIdleOrLimit('Speech appears active but emitted no events');
+          return;
+        }
+
+        if (synthBecameBusy) {
+          console.warn('[BrowserSpeechService] Speech completed without events; continuing');
           safeResolve();
           return;
         }
@@ -282,8 +330,10 @@ export class BrowserSpeechService {
 
     console.log(`[BrowserSpeechService] 🚀 Calling speechSynthesis.speak() for: "${text}"`);
     this.options.synth.speak(utterance);
+    markSynthBusy();
 
     window.setTimeout(() => {
+      markSynthBusy();
       if (!utteranceStarted && !hasResolved) {
         console.warn('[BrowserSpeechService] ⚠️ onstart delayed - attempting emergency resume...');
         this.options.synth.resume();
@@ -292,6 +342,12 @@ export class BrowserSpeechService {
 
     window.setTimeout(() => {
       if (!hasResolved && !utteranceStarted && !isSynthBusy()) {
+        if (synthBecameBusy) {
+          console.warn('[BrowserSpeechService] Speech completed before start event; continuing without retry');
+          safeResolve();
+          return;
+        }
+
         retryWithBrowserDefault();
       }
     }, calculatedTimeout - 200);

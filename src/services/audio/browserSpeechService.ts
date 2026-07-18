@@ -55,15 +55,12 @@ export class BrowserSpeechService {
       }
 
       const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = language;
       utterance.rate = this.options.getSpeechRate() || 1.0;
       utterance.volume = 1.0;
 
       const voices = this.options.synth.getVoices();
       const voice = this.options.selectVoice(voices, { language, preferredName: preferredVoiceName }) || voices[0];
-      if (voice) {
-        utterance.voice = voice;
-      }
+      this.applyVoiceAndLanguage(utterance, voice || null, language);
 
       utterance.onend = () => resolve();
       utterance.onerror = () => {
@@ -87,7 +84,6 @@ export class BrowserSpeechService {
       }
 
       const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = language;
       const configRate = this.getNormalRate();
       utterance.rate = customRate !== null ? customRate : (this.options.getSpeechRate() || configRate);
       utterance.volume = 1.0;
@@ -101,9 +97,7 @@ export class BrowserSpeechService {
       }
 
       const voice = this.options.getCachedVoice();
-      if (voice) {
-        utterance.voice = voice;
-      }
+      this.applyVoiceAndLanguage(utterance, voice, language);
 
       utterance.onend = () => {
         onEnd();
@@ -119,7 +113,6 @@ export class BrowserSpeechService {
   private startSpeech(options: SpeakOptions, resolve: () => void): void {
     const { text, language, customRate, preferredVoiceName } = options;
     const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = language;
     const configRate = this.getNormalRate();
     utterance.rate = customRate !== null ? customRate : (this.options.getSpeechRate() || configRate);
     utterance.volume = 1.0;
@@ -135,21 +128,23 @@ export class BrowserSpeechService {
 
     if (voice) {
       console.log(`[BrowserSpeechService] Selected voice: ${voice.name} for lang: ${language}`);
-      utterance.voice = voice;
+      this.applyVoiceAndLanguage(utterance, voice, language);
       this.options.setCachedVoice(voice);
     } else if (voices.length > 0) {
       const fallbackVoice = this.options.selectVoice(voices, { language, preferredName: preferredVoiceName }) || voices[0];
       if (fallbackVoice) {
         console.warn('[BrowserSpeechService] Using fallback voice:', fallbackVoice.name);
-        utterance.voice = fallbackVoice;
+        this.applyVoiceAndLanguage(utterance, fallbackVoice, language);
         this.options.setCachedVoice(fallbackVoice);
       } else {
+        utterance.lang = this.getSafeLanguage(language);
         this.options.showFallback(text);
         resolve();
         return;
       }
     } else {
       console.warn('[BrowserSpeechService] ⚠️ No voices reported; using browser default speech voice');
+      utterance.lang = this.getSafeLanguage(language);
     }
 
     let hasResolved = false;
@@ -235,5 +230,28 @@ export class BrowserSpeechService {
   private getNormalRate(): number {
     const configuredRate = this.options.getConfig()?.get('tts.speeds.normal');
     return typeof configuredRate === 'number' ? configuredRate : 1.0;
+  }
+
+  private applyVoiceAndLanguage(
+    utterance: SpeechSynthesisUtterance,
+    voice: SpeechSynthesisVoice | null,
+    requestedLanguage: string
+  ): void {
+    if (voice) {
+      utterance.voice = voice;
+      utterance.lang = voice.lang || this.getSafeLanguage(requestedLanguage);
+      return;
+    }
+
+    utterance.lang = this.getSafeLanguage(requestedLanguage);
+  }
+
+  private getSafeLanguage(requestedLanguage: string): string {
+    const browserLanguage = navigator.language;
+    if (browserLanguage?.toLowerCase().startsWith('en')) {
+      return browserLanguage;
+    }
+
+    return requestedLanguage || 'en-US';
   }
 }

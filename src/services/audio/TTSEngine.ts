@@ -419,6 +419,9 @@ export class TTSEngine {
   /**
    * Internal method to start speech synthesis
    */
+  /**
+   * Internal method to start speech synthesis
+   */
   private startSpeech(text: string, language: string, customRate: number | null, resolve: () => void): void {
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = language;
@@ -430,6 +433,12 @@ export class TTSEngine {
 
     // Track current utterance for cancellation
     this.currentUtterance = utterance;
+
+    // CRITICAL WORKAROUND: Keep reference in global window object to prevent Chrome GC mid-speech
+    if (typeof window !== 'undefined') {
+      (window as any)._activeUtterances = (window as any)._activeUtterances || [];
+      (window as any)._activeUtterances.push(utterance);
+    }
 
     // Try to find the best voice match
     let voice: SpeechSynthesisVoice | null = null;
@@ -474,22 +483,31 @@ export class TTSEngine {
     const safeResolve = () => {
       if (!hasResolved) {
         hasResolved = true;
+        
+        // Remove from global reference to allow GC now
+        if (typeof window !== 'undefined' && (window as any)._activeUtterances) {
+          const idx = (window as any)._activeUtterances.indexOf(utterance);
+          if (idx !== -1) {
+            (window as any)._activeUtterances.splice(idx, 1);
+          }
+        }
+
         this.isSpeaking = false;
         this.currentUtterance = null;
         resolve();
       }
     };
 
-    // Safety timeout - auto-resolve after 4 seconds if onend doesn't fire
-    // Extended from 3s to accommodate slower systems and mobile devices
+    // Safety timeout - dynamically scaled based on text length to prevent long hangs on stuck events
+    // For single words (length ~10), timeout is 2 seconds instead of 4 seconds.
+    const calculatedTimeout = Math.min(10000, Math.max(2000, (text.length / 8) * 1000 + 1000));
+
     const safetyTimeout = setTimeout(() => {
       if (!hasResolved) {
-        console.warn(`[TTSEngine] ⏱️ Safety timeout (4s) - Web Speech API failed to complete: "${text}"`);
+        console.warn(`[TTSEngine] ⏱️ Safety timeout (${calculatedTimeout}ms) - Web Speech API failed to complete: "${text}"`);
         
         if (!utteranceStarted) {
           console.error('[TTSEngine] ❌ Speech never started - Web Speech API is blocked or broken');
-          console.error('[TTSEngine] 💡 SOLUTION: Click the 🔊 icon in Chrome address bar to enable sound');
-          console.error('[TTSEngine] 💡 OR: Use Premium Voice (Settings → Premium TTS) for reliable audio');
           
           // Show user-facing notification (only if speech never started)
           const store = useAppStore.getState();
@@ -503,7 +521,7 @@ export class TTSEngine {
         
         safeResolve();
       }
-    }, 4000);
+    }, calculatedTimeout);
 
     utterance.onstart = () => {
       utteranceStarted = true;
@@ -549,6 +567,9 @@ export class TTSEngine {
     console.log(`[TTSEngine] 🚀 Calling speechSynthesis.speak() for: "${text}"`);
     console.log(`[TTSEngine] 📊 Synth state: speaking=${this.synth.speaking}, pending=${this.synth.pending}, paused=${this.synth.paused}`);
     
+    // CRITICAL: Pre-emptively cancel to clear queue and prevent stuck state
+    this.synth.cancel();
+    
     this.synth.speak(utterance);
     this.isSpeaking = true; // Ensure flag is set after calling speak()
     
@@ -558,9 +579,6 @@ export class TTSEngine {
       if (!utteranceStarted && !hasResolved) {
         console.warn('[TTSEngine] ⚠️ onstart delayed - attempting emergency resume...');
         this.synth.resume();
-        
-        // Only show error and force-complete after full safety timeout (managed above)
-        // This gives the API time to initialize properly
       }
     }, 800);
     
@@ -571,7 +589,7 @@ export class TTSEngine {
         console.error('[TTSEngine] ❌ Forcing resolution - Web Speech API completely unresponsive');
         safeResolve();
       }
-    }, 3500); // Slightly longer than main safety timeout
+    }, calculatedTimeout - 200);
   }
 
   /**

@@ -1,169 +1,63 @@
 # Copilot Instructions - PTE Pronunciation Trainer
 
-**Project**: AI-powered pronunciation training app for PTE exam prep  
-**Stack**: React 19 + TypeScript 5.9 + Zustand + Supabase + Vite  
-**Version**: 3.0.2 (Nov 2025)
+This is a React 19 + TypeScript 5.9 pronunciation trainer for PTE exam prep. It combines local generated JSON datasets for vocabulary/practice content with Supabase for user auth, progress, settings, and analytics. AI features use Google Gemini, browser TTS, and AWS Polly.
 
-## Architecture Overview
+## Commands
 
-**Hybrid Data Strategy**: Local JSON (vocabulary/practice data) + Supabase (user progress/settings)
-- Vocabulary loads from `data/processed/*.json` (13K+ words, 10-20ms)
-- User data syncs via Supabase (auth, progress, settings)
-- AI services: Google Gemini (FREE chat/recommendations), AWS Polly (premium TTS)
-
-**Component Structure** (`src/components/`): Feature-grouped architecture
-- `ai/` - Gemini chat, AI recommendations, pronunciation scoring
-- `audio/` - TTS controls, voice selectors (browser + AWS Polly)
-- `practice/` - WordCard, RS/ASQ/WFD interfaces, progress tracking
-- `settings/`, `shared/`, `migration/`, `profile/`
-
-**State Management**: Zustand store (`src/stores/index.ts`) with 7 slices
-```typescript
-// Usage in React components
-const currentItem = useAppStore((state) => state.vocabulary.currentItem);
-const { startAutoPlay } = useAppStore((state) => state.audio);
-
-// Subscribe to changes
-useAppStore.subscribe(
-  (state) => state.audio.isPlaying,
-  (isPlaying) => console.log('Playing:', isPlaying)
-);
-```
-
-## Critical Workflows
-
-**Development**:
 ```bash
-npm run data:pte       # Process markdown → JSON (REQUIRED before first run)
-npm run dev            # Start Vite dev server (port 3001)
-npm run build          # TypeScript compile + Vite build
-npm run deploy         # Full pipeline: data:pte + build + validate
+npm run start          # Run data pipeline, then start Vite dev server on port 3001
+npm run dev            # Start Vite only; requires existing data/processed files
+npm run data:pte       # Convert data/source/pte markdown into data/processed JSON
+npm run build          # tsc emit to dist/compiled, then vite build to dist/
+npm run build:ts       # Type-check only with tsc --noEmit
+npm run lint           # Alias for TypeScript type-checking
+npm run lint:css       # Stylelint src/css/**/*.css
+npm run validate       # Validate generated datasets
+npm run validate:all   # Validate docs, structure, and datasets
+npm run deploy         # data:pte + build + validate:all
 ```
 
-**Data Pipeline** (`scripts/pte-data-pipeline.js`):
-1. Reads markdown from `data/source/pte/` (vocabs, practices, essays)
-2. Uses 5 extractors: `PTETermsExtractor` (dual IPA), `SingleIPATermsExtractor`, `PTESentenceExtractor`, `PTEQuestionExtractor`, `DIAnswerExtractor`
-3. Outputs JSON to `data/processed/` (auto-copied to `dist/data/` on build)
-4. **Must run** before dev server starts (included in `npm run start`)
+Tests use Vitest with `happy-dom` and `src/test/setup.ts`.
 
-**Adding New Vocabulary Book**:
-1. Create markdown in `data/source/pte/vocabs/` (format: `word | /IPA/ — sounds like **PHONETIC**`)
-2. Register in `scripts/pte-data-pipeline.js` → `PIPELINE_CONFIG.registry[]`
-3. Add path mapping in `src/config/AppConfig.ts` → `data.paths.byMode`
-4. Update UI selector in `src/components/settings/SettingsPanel.tsx`
-5. Run `npm run data:pte` to generate JSON
-
-## Project-Specific Conventions
-
-**IPA Pronunciation Formats**:
-- **Dual IPA** (PTETermsExtractor): `word | /brɪtɪʃ/ — **BRIT-ish** | /əˈmerɪkən/ — **uh-MER-uh-kin**`
-- **Single IPA** (SingleIPATermsExtractor): `word | /aɪˈpiːeɪ/ — sounds like **eye-PEE-ay**`
-
-**Data Schema Differences** (critical for type safety):
-- **Vocabulary items**: Direct properties (`word`, `difficulty`, `category`)
-- **Practice items** (RS/ASQ/WFD): Nested in `metadata` field (`sentence`, `metadata.difficulty`, `metadata.category`)
-
-**TTS Architecture**:
-- Browser TTS (free): `src/services/audio/TTSEngine.ts` (Web Speech API)
-- Premium TTS (paid): `src/services/audio/pollyService.ts` (AWS Polly 18 neural voices)
-- Unified controls in `src/components/audio/AudioControls.tsx`
-- Speed control applies universally (0.5x - 2.0x)
-- **Critical**: Always call `ttsEngine.stopSpeaking()` before navigation/mode switches
-- **Voice loading**: Voices preload on startup via `voiceschanged` event (Chrome pattern)
-
-**Caching Strategy** (5 layers):
-- Service Worker cache (30-day data files via PWA)
-- Voice cache (TTS engine - reuses selected voices)
-- Profile cache (localStorage - learner profiles)
-- Audio cache config (100 items, 1-hour TTL)
-- AWS Polly cache (Supabase Storage - 80-90% cost reduction)
-
-**Component Patterns**:
-- **Feature-first**: Group by domain (`ai/`, `audio/`) not type (`buttons/`, `modals/`)
-- **Radix UI + Tailwind**: Use Radix primitives with Tailwind utility classes
-- **Type-safe props**: All components use TypeScript interfaces
-
-## Integration Points
-
-**Supabase** (`src/services/supabase/`):
-- `supabaseClient.ts` - Client initialization (`VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`)
-- `authService.ts` - Sign up/in/out
-- `syncService.ts` - Progress/settings sync
-- Tables: `learner_profiles`, `practice_progress`, `user_settings`, `study_analytics`
-
-**Google Gemini AI** (`src/services/ai/`):
-- **FREE** 1,500 req/day (API key: `VITE_GEMINI_API_KEY`)
-- `geminiService.ts` - Chat interface
-- `recommendationEngine.ts` - Personalized learning paths
-- `interventionEngine.ts` - Proactive study suggestions
-
-**AWS Polly** (`src/services/audio/pollyService.ts`):
-- 18 neural voices (US/UK/AU/IN English)
-- SSML control (speed, pitch, pauses)
-- Audio caching via Supabase Storage (80-90% cost reduction)
-
-## Common Pitfalls
-
-❌ **Don't** hardcode data paths in components  
-✅ **Do** use `AppConfig.ts` and update 4 locations (Config.ts, pipeline, AppContent.tsx, SettingsPanel.tsx)
-
-❌ **Don't** mutate Zustand state directly  
-✅ **Do** use store action functions (`setPlaying()`, `startAutoPlay()`)
-
-❌ **Don't** import from `archive/vanilla-js-legacy/`  
-✅ **Do** use `src/services/`, `src/components/`, `src/stores/`
-
-❌ **Don't** skip `npm run data:pte` before first run  
-✅ **Do** run data pipeline (auto-included in `npm run start`)
-
-❌ **Don't** navigate or switch modes without stopping TTS  
-✅ **Do** call `ttsEngine.stopSpeaking()` before navigation (Next/Prev) and mode switches
-
-❌ **Don't** call `synth.getVoices()` synchronously without checking if voices loaded  
-✅ **Do** use `voiceschanged` event listener or check `cachedVoice` before speaking
-
-❌ **Don't** forget to cleanup timers, intervals, and event listeners  
-✅ **Do** return cleanup functions from useEffect and call `destroy()` on services
-
-❌ **Don't** make fetch() calls without AbortController for long-lived components  
-✅ **Do** use AbortController and cancel on unmount to prevent memory leaks
-
-## Key Files
-
-- **`CLAUDE.md`** - Comprehensive AI assistant guide (2,200+ lines, **read first**)
-- **`src/App.tsx`** - Root React component (vocabulary loading, interface routing)
-- **`src/stores/index.ts`** - Main Zustand store (7 slices: audio, tts, settings, vocabulary, progress, ui, auth)
-- **`src/config/AppConfig.ts`** - Type-safe configuration (17 vocab books, practice modes, data paths)
-- **`scripts/pte-data-pipeline.js`** - Markdown → JSON processor (build-time data generation)
-- **`src/components/practice/WordCard.tsx`** - Primary vocabulary display component
-
-## Documentation
-
-- **Start**: `CLAUDE.md` (AI guide), `README.md` (user guide)
-- **Architecture**: `docs/architecture/ARCHITECTURE.md` (2,230 lines), `docs/architecture/GUIDELINES.md`
-- **Setup**: `docs/setup/SUPABASE-SETUP-GUIDE.md`, `docs/setup/GEMINI-SETUP.md`, `docs/setup/AWS-POLLY-SETUP.md`
-- **API**: `docs/api/API-REFERENCE.md`
-
-## Quick Reference
-
-**Essential Commands**:
-- `npm run start` → Process data + start dev server (port 3001)
-- `npm run build` → TypeScript compile + Vite production build
-- `npm test` → Run Vitest tests
-- `npm run validate:all` → Validate docs, structure, datasets
-
-**Path Aliases** (vite.config.ts):
-```typescript
-import { useAppStore } from '@stores';           // src/stores/
-import { AudioControls } from '@components/audio'; // src/components/audio/
-import type { VocabularyTerm } from '@types';    // src/types/
-```
-
-**Environment Variables** (.env):
 ```bash
-VITE_SUPABASE_URL=           # Supabase project URL
-VITE_SUPABASE_ANON_KEY=      # Supabase anonymous key
-VITE_GEMINI_API_KEY=         # Google Gemini API (FREE)
-VITE_AWS_ACCESS_KEY_ID=      # AWS Polly credentials
-VITE_AWS_SECRET_ACCESS_KEY=  # AWS Polly credentials
+npm test                                      # Full suite via package script
+npx vitest run src/config/AppConfig.test.ts  # Single test file
+npx vitest run -t "renders vocabulary word"  # Single test by name
+npm run test:watch                           # Watch mode
+npm run test:coverage                        # Coverage report
 ```
+
+Note: the `npm test` script currently ends with `|| exit 0`; use direct `npx vitest run ...` commands when a failing exit code matters.
+
+## Architecture
+
+- `src/App.tsx` only wraps providers and delegates application behavior to `src/components/AppContent.tsx`.
+- `AppContent` coordinates startup data loading, session tracking, wake lock, global modals, AI panels, audio controls, and chooses the active practice interface.
+- UI is feature-grouped under `src/components/`: `practice/`, `audio/`, `ai/`, `settings/`, `shared/`, `migration/`, and `profile/`.
+- Global state lives in `src/stores/index.ts` as a single Zustand store with slices for `audio`, `tts`, `settings`, `vocabulary`, `progress`, `ui`, and `auth`; selector hooks are exported from the same store module.
+- Configuration is centralized in `src/config/AppConfig.ts`. Runtime data paths, learning modes, API endpoints, AI settings, voice defaults, and UI defaults should come from this config instead of being duplicated in components.
+- Data is build-time generated: `scripts/pte-data-pipeline.js` reads markdown from `data/source/pte/` and writes JSON under `data/processed/`. Vite/PWA then serves and caches those JSON files.
+- Practice data has several shapes. Vocabulary datasets commonly expose `vocabulary`, DI/shadowing exposes `answers`, and segment/practice datasets may expose `items`, `sentences`, or `questions`; `AppContent` and `SettingsPanel` normalize these before storing them.
+- Services under `src/services/` handle external concerns: `audio/TTSEngine.ts` for Web Speech API, `audio/pollyService.ts` for AWS Polly, `ai/` for recommendations/interventions/chat behavior, `supabase/` for auth/sync, and `session/` for practice session tracking.
+- Vite includes custom dev middleware from `scripts/ai-chat-middleware.ts` for `/api/ai/chat`; production builds are otherwise static output in `dist/`.
+
+## Project conventions
+
+- Use Zustand actions/selectors rather than mutating state or introducing EventBus-style flows. EventBus utilities are legacy interop, not the default pattern for new React code.
+- Stop speech before navigation, dataset changes, and mode switches with `ttsEngine.stopSpeaking()`; several components rely on this to prevent overlapping Web Speech utterances.
+- Long-lived components that fetch data should use `AbortController` and cancel on unmount, following `AppContent`.
+- Vocabulary-like items may use either the typed shape (`word`, `ipa`, `phonetic`) or the generated runtime shape (`english`, `pronunciation`). Use existing guards/normalization patterns before assuming fields.
+- Practice items store task details differently: RS/WFD use `sentence`; ASQ uses `question` and `answer`; metadata such as difficulty/category is nested under `metadata`.
+- Add or rename a vocabulary/practice dataset in all relevant places: source markdown under `data/source/pte/`, `PIPELINE_CONFIG.registry` in `scripts/pte-data-pipeline.js`, `data.paths.byMode` and `data.learningModes` in `src/config/AppConfig.ts`, and any selector/UI logic in `src/components/settings/SettingsPanel.tsx`.
+- IPA source formats are parser-sensitive. Dual-pronunciation lines use `term | /british/ - sounds like **BRIT-ish** | /american/ - sounds like **uh-MER-uh-kin**`; single-pronunciation lines use `term | /ipa/ - sounds like **PHONETIC**`.
+- Prefer existing feature directories for new components and keep service/API logic out of UI components.
+- Use Radix UI primitives with Tailwind utilities for new UI. Legacy CSS remains in `src/css/` for shared layout and compatibility.
+- Browser voices load asynchronously. Do not assume `speechSynthesis.getVoices()` is populated synchronously; follow the `voiceschanged` preload pattern in `TTSEngine`.
+- Environment variables exposed to client code must use the `VITE_` prefix, e.g. `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`, `VITE_GEMINI_API_KEY`, `VITE_AWS_ACCESS_KEY_ID`, and `VITE_AWS_SECRET_ACCESS_KEY`.
+
+## Important references
+
+- `CLAUDE.md` is the most detailed existing assistant guide; keep this file aligned with it when architecture changes.
+- `README.md` is the user-facing feature overview.
+- `docs/architecture/ARCHITECTURE.md` and `docs/architecture/GUIDELINES.md` contain deeper design context.
+- `docs/setup/` contains Supabase, Gemini, and AWS Polly setup details.

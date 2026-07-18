@@ -12,7 +12,6 @@ import {
 import { Badge, Button, Card, Flex, Select, Slider, Switch, Tabs, Text } from '@radix-ui/themes';
 import React, { useEffect, useMemo } from 'react';
 import { appConfig } from '../../config/AppConfig';
-import { isPremiumTTSAvailable } from '../../services/audio/pollyService';
 import { useAudioState, useSettings, useVocabulary } from '../../stores';
 
 interface SettingsPanelProps {
@@ -42,13 +41,12 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
 
   const vocabulary = useVocabulary();
   const { setLoading, setDataset, filterByDifficulty } = vocabulary;
-  const premiumTTSAvailable = isPremiumTTSAvailable();
 
   useEffect(() => {
-    if (ttsVoice === 'premium' && !premiumTTSAvailable) {
+    if (ttsVoice === 'premium') {
       updateSetting('ttsVoice', null);
     }
-  }, [premiumTTSAvailable, ttsVoice, updateSetting]);
+  }, [ttsVoice, updateSetting]);
 
   // Get vocabulary books from config dynamically
   const vocabularyBooks = useMemo(() => {
@@ -462,7 +460,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
               <Flex direction="column" gap="2">
                 <Text size="3" weight="medium">TTS Voice</Text>
                 <Select.Root
-                  value={ttsVoice === 'premium' && !premiumTTSAvailable ? 'default' : (ttsVoice || 'default')}
+                  value="default"
                   onValueChange={(value) =>
                     updateSetting('ttsVoice', value === 'default' ? null : value)
                   }
@@ -470,13 +468,10 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                   <Select.Trigger />
                   <Select.Content>
                     <Select.Item value="default">Browser Default</Select.Item>
-                    <Select.Item value="premium" disabled={!premiumTTSAvailable}>Premium Voice (AWS Polly)</Select.Item>
                   </Select.Content>
                 </Select.Root>
                 <Text size="1" color="gray">
-                  {premiumTTSAvailable
-                    ? 'Premium voices require AWS Polly credentials (Region, Access Key, Secret Key).'
-                    : 'Premium voice is disabled in this build; browser voice will be used.'}
+                  Browser voice is used for all playback.
                 </Text>
               </Flex>
             </Flex>

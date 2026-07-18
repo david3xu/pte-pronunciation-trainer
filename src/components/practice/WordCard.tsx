@@ -3,15 +3,13 @@
  *
  * Displays vocabulary word/sentence with pronunciation information.
  * Replaces the vanilla JS word card UI.
- * Supports both free browser TTS and premium AWS Polly neural voices.
  * Includes template color coding for DI shadowing practice.
  */
 
-import { LockClosedIcon, PlayIcon, SpeakerLoudIcon } from '@radix-ui/react-icons';
-import { Badge, Button, Card, Checkbox, Flex, Select, Text } from '@radix-ui/themes';
+import { PlayIcon, SpeakerLoudIcon } from '@radix-ui/react-icons';
+import { Badge, Button, Card, Checkbox, Flex, Text } from '@radix-ui/themes';
 import React, { useState } from 'react';
 import '../../css/shadowing.css'; // Import shadowing styles
-import { isPremiumTTSAvailable } from '../../services/audio/pollyService';
 import { ttsEngine } from '../../services/audio/TTSEngine';
 import type { SessionManager } from '../../services/session/sessionManager';
 import { useTTSState } from '../../stores';
@@ -28,15 +26,9 @@ interface WordCardProps {
 
 const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplete }) => {
   const ttsState = useTTSState();
-  const [usePremiumTTS, setUsePremiumTTS] = useState(false);
-  const [premiumVoiceId, setPremiumVoiceId] = useState('Joanna');
-  const [isPlayingPremium, setIsPlayingPremium] = useState(false);
-  const [showAdvancedOptions, setShowAdvancedOptions] = useState(false);
   const [playCount, setPlayCount] = useState(0);
   const [startTime] = useState(Date.now());
   const [showTemplateColors, setShowTemplateColors] = useState(true);
-
-  const premiumAvailable = isPremiumTTSAvailable();
 
   // Determine if this is a vocabulary term or practice item
   // Handle both 'word' and 'english' field names for backwards compatibility
@@ -84,27 +76,20 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
 
   // Handle TTS playback
   const handleSpeak = async (_mode: 'word' | 'sentence' | 'question' = 'word', accent?: 'british' | 'american') => {
-    console.log('[WordCard] handleSpeak called:', { displayText, accent, usePremiumTTS, premiumAvailable });
+    console.log('[WordCard] handleSpeak called:', { displayText, accent });
 
     // Track play count for session
     const newPlayCount = playCount + 1;
     setPlayCount(newPlayCount);
 
-    if (usePremiumTTS && premiumAvailable) {
-      // Use premium AWS Polly
-      await handlePremiumSpeak(accent);
-    } else {
-      // Use free browser TTS via TTSEngine
-      // Strip markdown syntax before speaking
-      const cleanedText = cleanText(displayText);
-      const langCode = accent === 'british' ? 'en-GB' : accent === 'american' ? 'en-US' : 'en-US';
-      console.log(`[WordCard] Calling ttsEngine.pronounceText with: "${cleanedText}" in ${langCode}`);
-      try {
-        await ttsEngine.pronounceText(cleanedText, langCode, null);
-        console.log('[WordCard] ttsEngine.pronounceText completed');
-      } catch (error) {
-        console.error('[WordCard] TTS error:', error);
-      }
+    const cleanedText = cleanText(displayText);
+    const langCode = accent === 'british' ? 'en-GB' : accent === 'american' ? 'en-US' : 'en-US';
+    console.log(`[WordCard] Calling ttsEngine.pronounceText with: "${cleanedText}" in ${langCode}`);
+    try {
+      await ttsEngine.pronounceText(cleanedText, langCode, null);
+      console.log('[WordCard] ttsEngine.pronounceText completed');
+    } catch (error) {
+      console.error('[WordCard] TTS error:', error);
     }
 
     // Record item interaction in session
@@ -132,76 +117,6 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
     }
   };
 
-  // Handle premium TTS playback via API
-  const handlePremiumSpeak = async (accent?: 'british' | 'american') => {
-    setIsPlayingPremium(true);
-
-    try {
-      // Determine voice based on accent
-      let voiceId = premiumVoiceId;
-      if (accent === 'british' && !['Amy', 'Emma', 'Brian', 'Arthur'].includes(premiumVoiceId)) {
-        voiceId = 'Amy'; // Default British voice
-      } else if (accent === 'american' && !['Joanna', 'Matthew', 'Kendra', 'Joey'].includes(premiumVoiceId)) {
-        voiceId = 'Joanna'; // Default US voice
-      }
-
-      // Strip markdown syntax before speaking
-      const cleanedText = cleanText(displayText);
-
-      // Call API endpoint
-      const response = await fetch('/api/audio/generate', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          text: cleanedText,
-          voiceId: voiceId,
-          speed: '100%',
-          emphasis: 'moderate',
-          useCache: true
-        })
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to generate premium audio');
-      }
-
-      // Play audio
-      const audioBlob = await response.blob();
-      const audioUrl = URL.createObjectURL(audioBlob);
-      const audio = new Audio(audioUrl);
-
-      const handleEnded = () => {
-        setIsPlayingPremium(false);
-        URL.revokeObjectURL(audioUrl);
-      };
-
-      const handleError = () => {
-        setIsPlayingPremium(false);
-        URL.revokeObjectURL(audioUrl);
-      };
-
-      audio.addEventListener('ended', handleEnded);
-      audio.addEventListener('error', handleError);
-
-      try {
-        await audio.play();
-      } finally {
-        // Clean up event listeners after play completes or fails
-        audio.removeEventListener('ended', handleEnded);
-        audio.removeEventListener('error', handleError);
-      }
-    } catch (error) {
-      console.error('Premium TTS playback failed:', error);
-      setIsPlayingPremium(false);
-      // Fallback to browser TTS (cleanText)
-      const cleanedText = cleanText(displayText);
-      const langCode = accent === 'british' ? 'en-GB' : accent === 'american' ? 'en-US' : 'en-US';
-      await ttsEngine.pronounceText(cleanedText, langCode, null);
-    }
-  };
-
   // Difficulty color mapping
   const difficultyColor = {
     easy: 'green',
@@ -209,7 +124,7 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
     hard: 'red',
   }[difficulty as string] || 'gray';
 
-  const isSpeaking = usePremiumTTS ? isPlayingPremium : ttsState.isSpeaking;
+  const isSpeaking = ttsState.isSpeaking;
 
   return (
     <Card size="4" className="word-card animate-in">
@@ -226,85 +141,7 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
           )}
         </Flex>
 
-        {/* Advanced Options Toggle - Only show if Premium TTS is available */}
-        {premiumAvailable && (
-          <Button
-            variant="ghost"
-            size="1"
-            onClick={() => setShowAdvancedOptions(!showAdvancedOptions)}
-            title="Show voice and TTS options"
-          >
-            {showAdvancedOptions ? '▲ Hide Options' : '▼ Voice Options'}
-          </Button>
-        )}
       </Flex>
-
-      {/* Advanced TTS Options (Collapsible) */}
-      {showAdvancedOptions && (
-        <Flex
-          direction="column"
-          gap="3"
-          p="3"
-          mb="4"
-          style={{
-            backgroundColor: 'var(--gray-a2)',
-            borderRadius: 'var(--radius-3)',
-            border: '1px solid var(--gray-a5)',
-          }}
-        >
-          <Text size="2" weight="medium">Voice Settings</Text>
-
-          <Flex gap="2" align="center" wrap="wrap">
-            <Select.Root
-              value={usePremiumTTS ? 'premium' : 'free'}
-              onValueChange={(value) => setUsePremiumTTS(value === 'premium')}
-              disabled={!premiumAvailable}
-            >
-              <Select.Trigger />
-              <Select.Content>
-                <Select.Item value="free">
-                  🔊 Browser TTS (Free)
-                </Select.Item>
-                <Select.Item value="premium">
-                  <Flex align="center" gap="1">
-                    {premiumAvailable ? '⭐ Premium Neural' : <><LockClosedIcon /> Premium (Locked)</>}
-                  </Flex>
-                </Select.Item>
-              </Select.Content>
-            </Select.Root>
-
-            {usePremiumTTS && premiumAvailable && (
-              <Select.Root
-                value={premiumVoiceId}
-                onValueChange={setPremiumVoiceId}
-              >
-                <Select.Trigger />
-                <Select.Content>
-                  <Select.Group>
-                    <Select.Label>US English</Select.Label>
-                    <Select.Item value="Joanna">Joanna (F)</Select.Item>
-                    <Select.Item value="Matthew">Matthew (M)</Select.Item>
-                    <Select.Item value="Kendra">Kendra (F)</Select.Item>
-                    <Select.Item value="Joey">Joey (M)</Select.Item>
-                  </Select.Group>
-                  <Select.Group>
-                    <Select.Label>British English</Select.Label>
-                    <Select.Item value="Amy">Amy (F)</Select.Item>
-                    <Select.Item value="Brian">Brian (M)</Select.Item>
-                    <Select.Item value="Emma">Emma (F)</Select.Item>
-                  </Select.Group>
-                </Select.Content>
-              </Select.Root>
-            )}
-          </Flex>
-
-          {!premiumAvailable && (
-            <Text size="1" color="gray">
-              💡 Premium voices require AWS Polly API keys. Add them in Settings.
-            </Text>
-          )}
-        </Flex>
-      )}
 
       {/* Main content - Word/Sentence/Question */}
       <Flex direction="column" gap="4">
@@ -332,7 +169,6 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
                     disabled={isSpeaking}
                   >
                     <SpeakerLoudIcon />
-                    {usePremiumTTS && '⭐'}
                   </Button>
                 </Flex>
                 {phonetic?.british && (
@@ -360,7 +196,6 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
                     disabled={isSpeaking}
                   >
                     <SpeakerLoudIcon />
-                    {usePremiumTTS && '⭐'}
                   </Button>
                 </Flex>
                 {phonetic?.american && (
@@ -388,7 +223,6 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
                     disabled={isSpeaking}
                   >
                     <SpeakerLoudIcon />
-                    {usePremiumTTS && '⭐'}
                   </Button>
                 </Flex>
                 {phonetic?.single && (
@@ -411,7 +245,6 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
           >
             <PlayIcon width="16" height="16" />
             {isSpeaking ? 'Speaking...' : 'Play Audio'}
-            {usePremiumTTS && premiumAvailable && ' ⭐'}
           </Button>
         )}
 

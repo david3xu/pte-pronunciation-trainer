@@ -20,8 +20,6 @@ import { useAppStore, type AppState } from '../../stores';
 import { appConfig } from '../../config/AppConfig';
 import { BrowserSpeechService } from './browserSpeechService';
 import { IOSBackgroundAudio } from './iosBackgroundAudio';
-import { isPremiumTTSAvailable } from './pollyService';
-import { speakWithPolly } from './pollySpeechService';
 import { selectVoice } from './voiceSelector';
 
 /**
@@ -404,23 +402,11 @@ export class TTSEngine {
     console.log(`[TTSEngine #${callId}] 📊 Current state: isSpeaking=${this.isSpeaking}, lastSpoken="${this.lastSpokenText.substring(0, 20)}..."`);
     console.log(`[TTSEngine #${callId}] 📊 Synth state: speaking=${this.synth.speaking}, pending=${this.synth.pending}, paused=${this.synth.paused}`);
 
-    // Check if premium voice (AWS Polly) is selected
+    // Premium TTS is currently unavailable; always use browser TTS.
     const ttsVoice = useAppStore.getState().settings.ttsVoice;
     if (ttsVoice === 'premium') {
-      if (!isPremiumTTSAvailable()) {
-        console.warn('[TTSEngine] Premium TTS is selected but unavailable; using browser TTS immediately');
-        useAppStore.getState().settings.updateSetting('ttsVoice', null);
-      } else {
-        console.log('[TTSEngine] 🎯 Using Premium AWS Polly voice');
-        return speakWithPolly({
-          text,
-          language,
-          fallback: (fallbackText, fallbackLanguage) => {
-            useAppStore.getState().settings.updateSetting('ttsVoice', null);
-            return this.speakWithBrowserTTS(fallbackText, fallbackLanguage);
-          },
-        });
-      }
+      console.warn('[TTSEngine] Premium TTS is unavailable; resetting to browser TTS');
+      useAppStore.getState().settings.updateSetting('ttsVoice', null);
     }
 
     // Initialize AudioContext on first speech attempt (user interaction)
@@ -467,14 +453,6 @@ export class TTSEngine {
       customRate,
       preferredVoiceName: this.getPreferredVoiceName(),
     });
-  }
-
-  /**
-   * Browser TTS fallback (extracted from speak method)
-   */
-  private speakWithBrowserTTS(text: string, lang: string | null = null): Promise<void> {
-    const language = lang || this.getDefaultLanguage();
-    return this.browserSpeechService.speakSimple(text, language, this.getPreferredVoiceName());
   }
 
   /**

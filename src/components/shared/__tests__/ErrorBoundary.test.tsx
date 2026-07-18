@@ -148,16 +148,16 @@ describe('ErrorBoundary Component', () => {
     // Error UI should be visible
     expect(screen.getByText(/Oops! Something went wrong/i)).toBeInTheDocument();
 
-    // Click Try Again button
-    const tryAgainButton = screen.getByRole('button', { name: /Try Again/i });
-    fireEvent.click(tryAgainButton);
-
-    // Rerender with non-throwing child
+    // Update child props before retrying so reset renders a healthy subtree.
     rerender(
       <ErrorBoundary>
         <ThrowError shouldThrow={false} />
       </ErrorBoundary>
     );
+
+    // Click Try Again button
+    const tryAgainButton = screen.getByRole('button', { name: /Try Again/i });
+    fireEvent.click(tryAgainButton);
 
     // Child content should be visible again
     expect(screen.getByText('No error')).toBeInTheDocument();

@@ -150,11 +150,15 @@ export class BrowserSpeechService {
     let hasResolved = false;
     let utteranceStarted = false;
     let defaultVoiceRetryStarted = false;
+    let retryTimeout: number | null = null;
     const calculatedTimeout = Math.min(10000, Math.max(2000, (text.length / 8) * 1000 + 1000));
 
     const safeResolve = () => {
       if (hasResolved) return;
       hasResolved = true;
+      if (retryTimeout !== null) {
+        window.clearTimeout(retryTimeout);
+      }
       this.releaseUtterance(utterance);
       this.options.markSpeechSettled();
       resolve();
@@ -199,6 +203,17 @@ export class BrowserSpeechService {
 
       this.options.synth.resume();
       this.options.synth.speak(retryUtterance);
+
+      retryTimeout = window.setTimeout(() => {
+        if (hasResolved || utteranceStarted) return;
+
+        console.error('[BrowserSpeechService] ❌ Browser default voice retry did not start');
+        this.options.synth.cancel();
+        this.options.stopAutoPlay();
+        this.options.showFallback(text);
+        this.releaseUtterance(retryUtterance);
+        safeResolve();
+      }, 1200);
     };
 
     const safetyTimeout = window.setTimeout(() => {
@@ -230,12 +245,12 @@ export class BrowserSpeechService {
     };
 
     utterance.onerror = (error: SpeechSynthesisErrorEvent) => {
-      window.clearTimeout(safetyTimeout);
       if (error.error === 'interrupted' && defaultVoiceRetryStarted) {
         this.releaseUtterance(utterance);
         return;
       }
 
+      window.clearTimeout(safetyTimeout);
       if (error.error === 'interrupted') {
         console.log(`[BrowserSpeechService] ℹ️ Speech interrupted: "${text.substring(0, 30)}..."`);
         safeResolve();

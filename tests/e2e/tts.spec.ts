@@ -13,6 +13,7 @@ test.beforeEach(async ({ page }) => {
       voice?: string | null;
       rate?: number;
     };
+    type SpeechMode = 'normal' | 'silent';
 
     const events: TtsEvent[] = [];
     const listeners = new Map<string, Set<() => void>>();
@@ -80,6 +81,12 @@ test.beforeEach(async ({ page }) => {
             voice: utterance.voice?.name ?? null,
             rate: utterance.rate,
           });
+
+          const mode = (window as unknown as { __ttsMode?: SpeechMode }).__ttsMode;
+          if (mode === 'silent') {
+            return;
+          }
+
           window.setTimeout(() => {
             utterance.onstart?.(new Event('start'));
             window.setTimeout(() => {
@@ -130,4 +137,27 @@ test('clicking vocabulary audio invokes browser speech synthesis', async ({ page
     voice: 'Google UK English Male',
     rate: 1.2,
   });
+});
+
+test('autoplay stops instead of hanging when browser speech never starts', async ({ page }) => {
+  await page.addInitScript(() => {
+    (window as unknown as { __ttsMode?: string }).__ttsMode = 'silent';
+  });
+
+  await page.goto('/');
+
+  const audioControls = page.locator('.audio-controls');
+  await expect(audioControls).toBeVisible();
+
+  await audioControls.getByRole('button', { name: /play/i }).click();
+  await expect(audioControls.getByRole('button', { name: /pause/i })).toBeVisible();
+
+  await expect(audioControls.getByRole('button', { name: /play/i })).toBeVisible({ timeout: 6_000 });
+
+  const speakEvents = await page.evaluate(() => {
+    const events = (window as unknown as { __ttsEvents: Array<{ type: string }> }).__ttsEvents;
+    return events.filter((event) => event.type === 'speak').length;
+  });
+
+  expect(speakEvents).toBeGreaterThanOrEqual(2);
 });

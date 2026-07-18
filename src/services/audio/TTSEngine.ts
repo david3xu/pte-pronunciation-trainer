@@ -352,23 +352,6 @@ export class TTSEngine {
     console.log(`[TTSEngine #${callId}] 📊 Current state: isSpeaking=${this.isSpeaking}, lastSpoken="${this.lastSpokenText.substring(0, 20)}..."`);
     console.log(`[TTSEngine #${callId}] 📊 Synth state: speaking=${this.synth.speaking}, pending=${this.synth.pending}, paused=${this.synth.paused}`);
 
-    // CRITICAL FIX: Check if already speaking, wait for it to finish
-    if (this.isSpeaking) {
-      console.warn(`[TTSEngine #${callId}] ⚠️ Already speaking, stopping previous speech...`);
-      console.warn(`[TTSEngine #${callId}] ⚠️ Overlap detected! Previous: "${this.lastSpokenText.substring(0, 30)}", New: "${text.substring(0, 30)}"`);
-      await this.stopSpeaking();
-      // Add small delay to ensure cancellation completes
-      console.log(`[TTSEngine #${callId}] ⏳ Waiting 100ms after stop...`);
-      await new Promise(resolve => setTimeout(resolve, 100));
-      // Now retry the speak call
-      console.log(`[TTSEngine #${callId}] 🔄 Retrying speak after stop...`);
-      return this.speak(text, lang, customRate);
-    }
-
-    this.isSpeaking = true;
-    this.lastSpokenText = text;
-    console.log(`[TTSEngine #${callId}] ✅ Setting isSpeaking=true, starting speech...`);
-
     // Check if premium voice (AWS Polly) is selected
     const ttsVoice = useAppStore.getState().settings.ttsVoice;
     if (ttsVoice === 'premium') {
@@ -381,6 +364,22 @@ export class TTSEngine {
       this.enableBackgroundAudio();
       this.audioContextInitialized = true;
     }
+
+    // CRITICAL FIX: Check if already speaking or pending, cancel it
+    if (this.isSpeaking || this.synth.speaking || this.synth.pending) {
+      console.warn(`[TTSEngine #${callId}] ⚠️ Already speaking or pending, cancelling previous speech...`);
+      this.synth.cancel();
+      this.isSpeaking = false;
+      this.currentUtterance = null;
+      this.lastSpokenText = '';
+      
+      // Wait 100ms once for the browser's TTS engine to clear
+      await new Promise(resolve => setTimeout(resolve, 100));
+    }
+
+    this.isSpeaking = true;
+    this.lastSpokenText = text;
+    console.log(`[TTSEngine #${callId}] ✅ Setting isSpeaking=true, starting speech...`);
 
     return new Promise((resolve) => {
       // Check if we're on iOS and should use HTML5 Audio fallback
@@ -397,16 +396,6 @@ export class TTSEngine {
         console.error('[TTSEngine] ❌ speechSynthesis not available in browser');
         this.showTTSFallback(text);
         resolve();
-        return;
-      }
-
-      // CRITICAL FIX: Cancel any pending utterances to prevent queue blockage
-      // This is a common issue with Web Speech API where old utterances block new ones
-      if (this.synth.speaking || this.synth.pending) {
-        console.log('[TTSEngine] 🧹 Canceling pending utterances...');
-        this.synth.cancel();
-        // Small delay to ensure cancellation completes
-        setTimeout(() => this.startSpeech(text, language, customRate, resolve), 100);
         return;
       }
 
@@ -437,22 +426,20 @@ export class TTSEngine {
     this.currentUtterance = utterance;
 
     // Try to find the best voice match
-    if (!this.cachedVoice || this.synth.getVoices().length > 0) {
-      const voices = this.synth.getVoices();
-      if (voices.length > 0) {
-        this.cachedVoice = this.selectVoice(voices, language);
-        if (this.cachedVoice) {
-          console.log(`[TTSEngine] Selected voice: ${this.cachedVoice.name}`);
-        }
+    let voice: SpeechSynthesisVoice | null = null;
+    const voices = this.synth.getVoices();
+    if (voices.length > 0) {
+      voice = this.selectVoice(voices, language);
+      if (voice) {
+        console.log(`[TTSEngine] Selected voice: ${voice.name} for lang: ${language}`);
       }
     }
 
-    const voice = this.cachedVoice;
     if (voice) {
       utterance.voice = voice;
+      this.cachedVoice = voice; // Update cachedVoice for helper methods
     } else {
-      console.warn('[TTSEngine] ⚠️ No cached voice, trying fallback...');
-      const voices = this.synth.getVoices();
+      console.warn('[TTSEngine] ⚠️ No voice matched, trying fallback...');
       console.log(`[TTSEngine] Fallback check - voices available: ${voices.length}`);
 
       if (voices.length > 0) {
@@ -1012,7 +999,7 @@ export class TTSEngine {
    */
   /**
    * Select best voice match from available voices
-   * STRICTLY prioritizes Male AU/UK voices as per user request
+   * Respects requested lang parameter and prioritizes Male voices of that language
    */
   private selectVoice(voices: SpeechSynthesisVoice[], lang: string | null): SpeechSynthesisVoice | null {
     // Check if user has selected a preferred voice in settings
@@ -1028,42 +1015,74 @@ export class TTSEngine {
       if (partialMatch) return partialMatch;
     }
 
-    // PRIORITY: British and Australian MALE voices only
+    // Normalized language target (e.g., 'en-us' or 'en-gb')
+    const targetLang = lang ? lang.toLowerCase().replace('_', '-') : null;
+
+    if (targetLang) {
+      // If language is requested, filter list by matching language first
+      const matchingVoices = voices.filter(v => {
+        const voiceLang = v.lang.toLowerCase().replace('_', '-');
+        return voiceLang === targetLang || voiceLang.startsWith(targetLang);
+      });
+
+      if (matchingVoices.length > 0) {
+        // Within matching language voices, prioritize Male voices
+        const maleVoice = matchingVoices.find(v =>
+          v.name.toLowerCase().includes('male') ||
+          v.name.includes('Google') ||
+          v.name.includes('Daniel') || // UK Male
+          v.name.includes('Brian') ||  // UK Male
+          v.name.includes('Gordon') || // AU Male
+          v.name.includes('Russell') || // AU Male
+          v.name.includes('Matthew') || // US Male
+          v.name.includes('Joey')       // US Male
+        );
+        if (maleVoice) return maleVoice;
+
+        // Fallback to any voice of the requested language
+        return matchingVoices[0] || null;
+      }
+    }
+
+    // If no language requested, or no voices found for requested language:
+    // PRIORITY: British and Australian MALE voices only (fallback behavior)
 
     // 1. UK Male voices (high quality for PTE pronunciation)
-    const ukMale = voices.find(v =>
-      (v.lang === 'en-GB' || v.lang === 'en_GB') &&
-      (v.name.toLowerCase().includes('male') ||
-       v.name.includes('Google UK English Male') ||
-       v.name.includes('Daniel') || // macOS/iOS UK Male
-       v.name.includes('Brian') ||  // AWS Polly UK Male
-       v.name.includes('Oliver'))   // Another UK Male option
-    );
+    const ukMale = voices.find(v => {
+      const voiceLang = v.lang.toLowerCase().replace('_', '-');
+      return (voiceLang === 'en-gb') &&
+        (v.name.toLowerCase().includes('male') ||
+         v.name.includes('Google UK English Male') ||
+         v.name.includes('Daniel') ||
+         v.name.includes('Brian') ||
+         v.name.includes('Oliver'));
+    });
     if (ukMale) return ukMale;
 
     // 2. Australian Male voices
-    const auMale = voices.find(v =>
-      (v.lang === 'en-AU' || v.lang === 'en_AU') &&
-      (v.name.toLowerCase().includes('male') ||
-       v.name.includes('Gordon') ||  // macOS/iOS AU Male
-       v.name.includes('Russell') || // AWS Polly AU Male
-       v.name.includes('Google Australian English Male'))
-    );
+    const auMale = voices.find(v => {
+      const voiceLang = v.lang.toLowerCase().replace('_', '-');
+      return (voiceLang === 'en-au') &&
+        (v.name.toLowerCase().includes('male') ||
+         v.name.includes('Gordon') ||
+         v.name.includes('Russell') ||
+         v.name.includes('Google Australian English Male'));
+    });
     if (auMale) return auMale;
 
     // 3. Any UK Voice
-    const ukAny = voices.find(v => v.lang === 'en-GB' || v.lang === 'en_GB');
+    const ukAny = voices.find(v => {
+      const voiceLang = v.lang.toLowerCase().replace('_', '-');
+      return voiceLang === 'en-gb';
+    });
     if (ukAny) return ukAny;
 
     // 4. Any Australian Voice
-    const auAny = voices.find(v => v.lang === 'en-AU' || v.lang === 'en_AU');
+    const auAny = voices.find(v => {
+      const voiceLang = v.lang.toLowerCase().replace('_', '-');
+      return voiceLang === 'en-au';
+    });
     if (auAny) return auAny;
-
-    // Fallback: Try to match requested language
-    if (lang) {
-      const langMatch = voices.find(v => v.lang === lang || v.lang.startsWith(lang));
-      if (langMatch) return langMatch;
-    }
 
     // Final fallback: First available voice
     return voices[0] || null;

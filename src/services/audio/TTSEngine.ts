@@ -92,7 +92,7 @@ export class TTSEngine {
     this.browserSpeechService = new BrowserSpeechService({
       synth: this.synth,
       getConfig: () => this.getConfig(),
-      getSpeechRate: () => this.speechRate,
+      getSpeechRate: () => this.getCurrentSpeechRate(),
       getCachedVoice: () => this.cachedVoice,
       setCachedVoice: (voice) => {
         this.cachedVoice = voice;
@@ -140,6 +140,13 @@ export class TTSEngine {
 
   private getPreferredVoiceName(): string | null {
     return useAppStore.getState().settings.ttsVoice;
+  }
+
+  private getCurrentSpeechRate(): number {
+    return this.speechRate ||
+      useAppStore.getState().settings.ttsRate ||
+      this.getConfig()?.get('tts.speeds.normal') ||
+      1.0;
   }
 
   /**
@@ -267,8 +274,7 @@ export class TTSEngine {
     try {
       const cleanText = this.cleanTextForTTS(text);
       // Use custom rate if provided, otherwise use user's speed setting, fallback to normal
-      const configRate = this.getConfig()?.get('tts.speeds.normal') || 1.0;
-      const speechRate = rate || this.speechRate || configRate;
+      const speechRate = rate || this.getCurrentSpeechRate();
 
       // Add visual feedback to main display element
       const element = this._addSpeakingFeedback('englishWord', {
@@ -313,8 +319,7 @@ export class TTSEngine {
 
       // Clean text for TTS
       const cleanText = this.cleanTextForTTS(word.english);
-      const configRate = this.getConfig()?.get('tts.speeds.normal') || 1.0;
-      const pronunciationRate = this.speechRate || configRate;
+      const pronunciationRate = this.getCurrentSpeechRate();
 
       // Add visual feedback during speech
       const englishWordElement = document.getElementById('englishWord');
@@ -363,8 +368,7 @@ export class TTSEngine {
 
         if (rawExample) {
           const cleanExample = this.cleanExampleSentenceForTTS(rawExample!);
-          const configRate = this.getConfig()?.get('tts.speeds.normal') || 1.0;
-          await this.speak(cleanExample, this.getDefaultLanguage(), this.speechRate || configRate);
+          await this.speak(cleanExample, this.getDefaultLanguage(), this.getCurrentSpeechRate());
         }
 
         // Remove example highlighting

@@ -47,7 +47,7 @@ const getDelay = (path: string, fallback: number): number => {
 };
 
 const speakWithTimeout = async (text: string, rate: number): Promise<void> => {
-  const ttsTimeoutMs = Math.min(12000, Math.max(3000, (text.length / 8) * 1000 + 2000));
+  const ttsTimeoutMs = Math.min(15000, Math.max(8000, (text.length / 8) * 1000 + 5000));
   let timeoutId: number | null = null;
 
   await Promise.race([
@@ -73,6 +73,7 @@ export const useAutoPlayController = () => {
   const { difficultyFilter } = settings;
   const autoPlayRef = useRef(false);
   const currentEffectIdRef = useRef(0);
+  const nextEffectIdRef = useRef(0);
 
   const getActiveDataset = () => (
     difficultyFilter !== 'all'
@@ -125,7 +126,7 @@ export const useAutoPlayController = () => {
   };
 
   useEffect(() => {
-    const effectId = Date.now();
+    const effectId = ++nextEffectIdRef.current;
     currentEffectIdRef.current = effectId;
 
     console.log(`[useAutoPlayController #${effectId}] 🔄 useEffect TRIGGERED`);

@@ -84,6 +84,9 @@ test.beforeEach(async ({ page }) => {
 
           const mode = (window as unknown as { __ttsMode?: SpeechMode }).__ttsMode;
           if (mode === 'no-events-active') {
+            window.setTimeout(() => {
+              this.speaking = false;
+            }, 600);
             return;
           }
 
@@ -165,7 +168,13 @@ test('autoplay continues when browser speech is active but emits no events', asy
     return events.filter((event) => event.type === 'speak').length;
   });
 
+  const cancelEvents = await page.evaluate(() => {
+    const events = (window as unknown as { __ttsEvents: Array<{ type: string }> }).__ttsEvents;
+    return events.filter((event) => event.type === 'cancel').length;
+  });
+
   expect(speakEvents).toBeGreaterThanOrEqual(1);
+  expect(cancelEvents).toBe(0);
 });
 
 test('autoplay stops instead of hanging when browser speech never starts', async ({ page }) => {

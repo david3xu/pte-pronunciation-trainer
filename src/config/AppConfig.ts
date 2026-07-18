@@ -90,7 +90,7 @@ export class AppConfig {
           // { id: 'pte-intermediate', name: 'PTE Intermediate', category: 'vocabulary', difficulty: 'normal' },
           // { id: 'pte-advanced', name: 'PTE Advanced', category: 'vocabulary', difficulty: 'hard' },
           // { id: 'pte-ra', name: 'PTE Read Aloud', category: 'vocabulary', difficulty: 'normal' },
-          // { id: 'pte-rs-vocabulary', name: 'PTE RS Vocab', category: 'vocabulary', difficulty: 'normal' },
+          { id: 'pte-rs-vocabulary', name: 'PTE RS Vocab', category: 'vocabulary', difficulty: 'normal' },
           // { id: 'pte-must-know', name: 'PTE Must-Know', category: 'vocabulary', difficulty: 'normal' },
           // { id: 'pte-wfd-vocabulary', name: 'PTE WFD Vocab', category: 'vocabulary', difficulty: 'normal' },
           // { id: 'pte-rs-wfd-vocabulary', name: 'PTE RS-WFD Vocab', category: 'vocabulary', difficulty: 'normal' },

@@ -136,30 +136,6 @@ export class TTSEngine {
   }
 
   /**
-   * Chrome/Edge may return an empty voice list until voiceschanged fires.
-   * Wait briefly instead of treating the first empty list as no TTS support.
-   */
-  private waitForVoices(timeoutMs: number = 1500): Promise<SpeechSynthesisVoice[]> {
-    const voices = this.synth.getVoices();
-    if (voices.length > 0) {
-      return Promise.resolve(voices);
-    }
-
-    return new Promise((resolve) => {
-      let settled = false;
-      const finish = () => {
-        if (settled) return;
-        settled = true;
-        this.synth.removeEventListener('voiceschanged', finish);
-        resolve(this.synth.getVoices());
-      };
-
-      this.synth.addEventListener('voiceschanged', finish, { once: true });
-      window.setTimeout(finish, timeoutMs);
-    });
-  }
-
-  /**
    * Cleanup subscriptions
    */
   destroy(): void {
@@ -455,12 +431,7 @@ export class TTSEngine {
         this.synth.resume();
       }
 
-      void this.waitForVoices()
-        .then(() => this.startSpeech(text, language, customRate, resolve))
-        .catch(() => {
-          this.showTTSFallback(text);
-          resolve();
-        });
+      this.startSpeech(text, language, customRate, resolve);
     });
   }
 
@@ -539,6 +510,7 @@ export class TTSEngine {
 
         this.isSpeaking = false;
         this.currentUtterance = null;
+        this.lastSpokenText = '';
         resolve();
       }
     };
@@ -560,6 +532,7 @@ export class TTSEngine {
             'Browser audio blocked. Click the 🔊 icon in address bar to enable sound, or use Premium Voice in Settings.',
             'warning'
           );
+          store.audio.stopAutoPlay();
         } else {
           console.warn('[TTSEngine] Speech started but did not complete - this is unusual');
         }
@@ -604,6 +577,9 @@ export class TTSEngine {
         utterance.voice = null;
         this.synth.speak(utterance);
       } else {
+        if (error.error === 'not-allowed') {
+          useAppStore.getState().audio.stopAutoPlay();
+        }
         this.showTTSFallback(text);
         safeResolve();
       }
@@ -709,7 +685,7 @@ export class TTSEngine {
    * Browser TTS fallback (extracted from speak method)
    */
   private speakWithBrowserTTS(text: string, lang: string | null = null): Promise<void> {
-    const language = lang || this.getConfig()?.get('tts.language.default') || 'en-GB';
+    const language = lang || this.getDefaultLanguage();
 
     return new Promise((resolve) => {
       if (!('speechSynthesis' in window)) {

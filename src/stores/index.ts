@@ -70,7 +70,7 @@ export const useAppStore = create<AppState>()(
             isPaused: false,
             currentIndex: 0,
             repeatMode: true, // Default ON - loops back to start after reaching end
-            playbackSpeed: 1.3,
+            playbackSpeed: 1.2,
             volume: 1.0,
             setPlaying: (isPlaying: boolean) => set((state) => ({ audio: { ...state.audio, isPlaying } })),
             setAutoPlay: (autoPlayEnabled: boolean) => set((state) => ({ audio: { ...state.audio, autoPlayEnabled } })),
@@ -136,7 +136,7 @@ export const useAppStore = create<AppState>()(
             autoPlay: true, // Default ON - automatically plays audio when vocabulary loads
             autoSwitchBooks: false, // Default OFF - stays on current book
             showPhonetic: true,
-            ttsRate: 1.3,
+            ttsRate: 1.2,
             ttsVoice: null, // Browser Default as default
             vocabRepeatCount: 1, // Default: speak each word once
             difficultyFilter: 'all',
@@ -160,7 +160,7 @@ export const useAppStore = create<AppState>()(
                 autoPlay: true, // Default ON
                 autoSwitchBooks: false, // Default OFF
                 showPhonetic: true,
-                ttsRate: 1.3,
+                ttsRate: 1.2,
                 ttsVoice: null, // Browser Default as default
                 vocabRepeatCount: 1, // Default: speak each word once
                 difficultyFilter: 'all',

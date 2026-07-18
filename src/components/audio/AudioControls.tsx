@@ -123,19 +123,20 @@ const AudioControls: React.FC = () => {
 
       autoPlayRef.current = true;
 
-      // CRITICAL FIX: Add delay to ensure previous TTS is fully stopped
-      // This prevents race condition where new speech starts before old speech stops
-      // Even though handleNext/handlePrev now await stopSpeaking(), we add extra safety
-      console.log(`[AudioControls #${effectId}] ⏳ Waiting 200ms before speaking...`);
-      await new Promise(resolve => setTimeout(resolve, 200));
+      // CRITICAL FIX: Only add delay if previous TTS is actively speaking
+      const isSpeaking = typeof window !== 'undefined' && window.speechSynthesis && window.speechSynthesis.speaking;
+      if (isSpeaking) {
+        console.log(`[AudioControls #${effectId}] ⏳ Waiting 200ms for previous speech to stop...`);
+        await new Promise(resolve => setTimeout(resolve, 200));
+      } else {
+        console.log(`[AudioControls #${effectId}] ⚡ No active speech, proceeding instantly...`);
+      }
       
       // Check if this effect is still the current one (not superseded by a new effect)
       if (currentEffectIdRef.current !== effectId) {
         console.log(`[AudioControls #${effectId}] ❌ CANCELLED - newer effect #${currentEffectIdRef.current} has taken over`);
         return;
       }
-      
-      console.log(`[AudioControls #${effectId}] ✅ 200ms delay complete, proceeding...`);
 
       // Get the word/text to speak
       // For shadowing items, use fullText for natural continuous speech

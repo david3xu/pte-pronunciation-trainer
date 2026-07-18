@@ -97,9 +97,10 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
       // Use free browser TTS via TTSEngine
       // Strip markdown syntax before speaking
       const cleanedText = cleanText(displayText);
-      console.log('[WordCard] Calling ttsEngine.pronounceText with:', cleanedText);
+      const langCode = accent === 'british' ? 'en-GB' : accent === 'american' ? 'en-US' : 'en-US';
+      console.log(`[WordCard] Calling ttsEngine.pronounceText with: "${cleanedText}" in ${langCode}`);
       try {
-        await ttsEngine.pronounceText(cleanedText, 'en-US', null);
+        await ttsEngine.pronounceText(cleanedText, langCode, null);
         console.log('[WordCard] ttsEngine.pronounceText completed');
       } catch (error) {
         console.error('[WordCard] TTS error:', error);
@@ -196,7 +197,8 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
       setIsPlayingPremium(false);
       // Fallback to browser TTS (cleanText)
       const cleanedText = cleanText(displayText);
-      await ttsEngine.pronounceText(cleanedText, 'en-US', null);
+      const langCode = accent === 'british' ? 'en-GB' : accent === 'american' ? 'en-US' : 'en-US';
+      await ttsEngine.pronounceText(cleanedText, langCode, null);
     }
   };
 

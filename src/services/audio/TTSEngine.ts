@@ -17,6 +17,7 @@
  */
 
 import { useAppStore, type AppState } from '../../stores';
+import { appConfig } from '../../config/AppConfig';
 import { BrowserSpeechService } from './browserSpeechService';
 import { IOSBackgroundAudio } from './iosBackgroundAudio';
 import { speakWithPolly } from './pollySpeechService';
@@ -124,7 +125,7 @@ export class TTSEngine {
    */
   private getConfig(): any {
     if (!this.config) {
-      this.config = (window as any).appConfig;
+      this.config = (window as any).appConfig || appConfig;
     }
     return this.config;
   }
@@ -176,9 +177,14 @@ export class TTSEngine {
   getPracticeMode(): string {
     const settingsModule = (window as any).settingsModule;
     if (settingsModule && typeof settingsModule.get === 'function') {
-      return settingsModule.get('practiceMode') || this.getConfig().get('data.defaults.practiceMode');
+      return settingsModule.get('practiceMode') || this.getConfig()?.get('data.defaults.practiceMode') || 'vocabulary';
     }
-    return this.getConfig().get('data.defaults.practiceMode');
+    return this.getConfig()?.get('data.defaults.practiceMode') || 'vocabulary';
+  }
+
+  private hasTransientUserActivation(): boolean {
+    const userActivation = navigator.userActivation;
+    return Boolean(userActivation?.isActive);
   }
 
   /**
@@ -422,9 +428,12 @@ export class TTSEngine {
       this.isSpeaking = false;
       this.currentUtterance = null;
       this.lastSpokenText = '';
-      
-      // Wait 100ms once for the browser's TTS engine to clear
-      await new Promise(resolve => setTimeout(resolve, 100));
+
+      // Desktop Chrome can require speak() to happen inside the same click
+      // activation. Do not await after cancel while activation is still live.
+      if (!this.hasTransientUserActivation()) {
+        await new Promise(resolve => setTimeout(resolve, 100));
+      }
     } else {
       // Clear state variables instantly without delay when no audio is playing
       this.isSpeaking = false;

@@ -17,7 +17,7 @@ import { Button, Card, Flex, Slider, Switch, Text } from '@radix-ui/themes';
 import React, { useEffect, useRef } from 'react';
 import { appConfig } from '../../config/AppConfig';
 import { ttsEngine } from '../../services/audio/TTSEngine';
-import { useAudioState, useSettings, useVocabulary } from '../../stores';
+import { useAppStore, useAudioState, useSettings, useVocabulary } from '../../stores';
 import { cleanText } from '../../utils/textUtils';
 
 // Vocabulary books in order for auto-switch feature
@@ -122,6 +122,13 @@ const AudioControls: React.FC = () => {
       }
 
       autoPlayRef.current = true;
+      const isPlaybackActive = () => {
+        const latestAudio = useAppStore.getState().audio;
+        return latestAudio.isAutoPlaying &&
+          !latestAudio.isPaused &&
+          autoPlayRef.current &&
+          currentEffectIdRef.current === effectId;
+      };
 
       // CRITICAL FIX: Only add delay if previous TTS is actively speaking
       const isSpeaking = typeof window !== 'undefined' && window.speechSynthesis && window.speechSynthesis.speaking;
@@ -162,7 +169,7 @@ const AudioControls: React.FC = () => {
             const repeatCount = settings.vocabRepeatCount || 1;
             for (let i = 0; i < repeatCount; i++) {
               // Check if still playing before each repeat
-              if (!audio.isAutoPlaying || audio.isPaused || !autoPlayRef.current) {
+              if (!isPlaybackActive()) {
                 console.log(`[AudioControls #${effectId}] ⏹️ Stopped during repeat ${i + 1}/${repeatCount}`);
                 break;
               }
@@ -185,9 +192,10 @@ const AudioControls: React.FC = () => {
           }
 
           // After speaking, move to next if auto-play is still active
-          if (audio.isAutoPlaying && !audio.isPaused && autoPlayRef.current && currentEffectIdRef.current === effectId) {
-            const nextIndex = audio.currentIndex + 1;
-            console.log(`[AudioControls #${effectId}] 🔄 Checking if should move to next (current: ${audio.currentIndex}, next: ${nextIndex})`);
+          if (isPlaybackActive()) {
+            const latestAudio = useAppStore.getState().audio;
+            const nextIndex = latestAudio.currentIndex + 1;
+            console.log(`[AudioControls #${effectId}] 🔄 Checking if should move to next (current: ${latestAudio.currentIndex}, next: ${nextIndex})`);
 
             if (dataset && nextIndex < dataset.length) {
               const nextItem = dataset[nextIndex];
@@ -195,7 +203,7 @@ const AudioControls: React.FC = () => {
                 // Small delay between words (from config)
                 await new Promise(resolve => setTimeout(resolve, appConfig.get('delays.autoPlayBetweenWords')));
 
-                if (audio.isAutoPlaying && !audio.isPaused && autoPlayRef.current && currentEffectIdRef.current === effectId) {
+                if (isPlaybackActive()) {
                   console.log(`[AudioControls #${effectId}] ⏩ AUTO-NAVIGATING to next item:`, nextIndex + 1);
                   audio.navigateNext();
                   vocabulary.setCurrentItem(nextItem);
@@ -228,7 +236,7 @@ const AudioControls: React.FC = () => {
                       // Pause before switching
                       await new Promise(resolve => setTimeout(resolve, appConfig.get('delays.autoPlayRestartPause')));
 
-                      if (audio.isAutoPlaying && !audio.isPaused && autoPlayRef.current) {
+                      if (isPlaybackActive()) {
                         // Load next book using the same logic as Settings panel
                         await loadNextBook(nextBookId);
                       }
@@ -243,7 +251,7 @@ const AudioControls: React.FC = () => {
                       if (firstBookId) {
                         await new Promise(resolve => setTimeout(resolve, appConfig.get('delays.autoPlayRestartPause')));
 
-                        if (audio.isAutoPlaying && !audio.isPaused && autoPlayRef.current) {
+                        if (isPlaybackActive()) {
                           await loadNextBook(firstBookId);
                         }
                       }
@@ -264,7 +272,7 @@ const AudioControls: React.FC = () => {
                 if (firstItem && dataset) {
                   // Pause before restarting (from config)
                   await new Promise(resolve => setTimeout(resolve, appConfig.get('delays.autoPlayRestartPause')));
-                  if (audio.isAutoPlaying && !audio.isPaused && autoPlayRef.current) {
+                  if (isPlaybackActive()) {
                     audio.setCurrentIndex(0);
                     vocabulary.setCurrentItem(firstItem);
                     console.log('[AudioControls] Restarted from beginning (item 1/' + dataset.length + ')');

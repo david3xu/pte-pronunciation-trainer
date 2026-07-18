@@ -75,7 +75,17 @@ export class TTSEngine {
   constructor() {
     // Load configuration from centralized config (lazily loaded)
     this.config = null;
-    this.synth = window.speechSynthesis;
+    this.synth = window.speechSynthesis || ({
+      speaking: false,
+      pending: false,
+      paused: false,
+      getVoices: () => [],
+      addEventListener: () => {},
+      removeEventListener: () => {},
+      cancel: () => {},
+      resume: () => {},
+      speak: () => {},
+    } as unknown as SpeechSynthesis);
 
     // Subscribe to Zustand store changes (replaces EventBus listeners)
     this._setupStoreSubscriptions();
@@ -114,6 +124,30 @@ export class TTSEngine {
       const loadedVoices = this.synth.getVoices();
       console.log(`[TTSEngine] ✅ ${loadedVoices.length} voices loaded after event`);
     }, { once: true });
+  }
+
+  /**
+   * Chrome/Edge may return an empty voice list until voiceschanged fires.
+   * Wait briefly instead of treating the first empty list as no TTS support.
+   */
+  private waitForVoices(timeoutMs: number = 1500): Promise<SpeechSynthesisVoice[]> {
+    const voices = this.synth.getVoices();
+    if (voices.length > 0) {
+      return Promise.resolve(voices);
+    }
+
+    return new Promise((resolve) => {
+      let settled = false;
+      const finish = () => {
+        if (settled) return;
+        settled = true;
+        this.synth.removeEventListener('voiceschanged', finish);
+        resolve(this.synth.getVoices());
+      };
+
+      this.synth.addEventListener('voiceschanged', finish, { once: true });
+      window.setTimeout(finish, timeoutMs);
+    });
   }
 
   /**
@@ -412,7 +446,12 @@ export class TTSEngine {
         this.synth.resume();
       }
 
-      this.startSpeech(text, language, customRate, resolve);
+      void this.waitForVoices()
+        .then(() => this.startSpeech(text, language, customRate, resolve))
+        .catch(() => {
+          this.showTTSFallback(text);
+          resolve();
+        });
     });
   }
 

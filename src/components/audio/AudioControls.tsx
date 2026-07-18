@@ -181,7 +181,21 @@ const AudioControls: React.FC = () => {
               }
               
               console.log(`[AudioControls #${effectId}] 🔊 Speaking repeat ${i + 1}/${repeatCount}...`);
-              await ttsEngine.speak(cleanedText, null, settings.ttsRate);
+              const ttsTimeoutMs = Math.min(12000, Math.max(3000, (cleanedText.length / 8) * 1000 + 2000));
+              let timeoutId: number | null = null;
+              await Promise.race([
+                ttsEngine.speak(cleanedText, null, settings.ttsRate),
+                new Promise<never>((_, reject) => {
+                  timeoutId = window.setTimeout(() => {
+                    void ttsEngine.stopSpeaking();
+                    reject(new Error(`TTS timed out after ${ttsTimeoutMs}ms`));
+                  }, ttsTimeoutMs);
+                }),
+              ]).finally(() => {
+                if (timeoutId) {
+                  window.clearTimeout(timeoutId);
+                }
+              });
               console.log(`[AudioControls #${effectId}] ✅ Speak complete for repeat ${i + 1}/${repeatCount}`);
 
               // Small delay between repeats (only if not the last repeat)

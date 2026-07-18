@@ -567,9 +567,6 @@ export class TTSEngine {
     console.log(`[TTSEngine] 🚀 Calling speechSynthesis.speak() for: "${text}"`);
     console.log(`[TTSEngine] 📊 Synth state: speaking=${this.synth.speaking}, pending=${this.synth.pending}, paused=${this.synth.paused}`);
     
-    // CRITICAL: Pre-emptively cancel to clear queue and prevent stuck state
-    this.synth.cancel();
-    
     this.synth.speak(utterance);
     this.isSpeaking = true; // Ensure flag is set after calling speak()
     

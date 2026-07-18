@@ -49,7 +49,7 @@ Note: the `npm test` script currently ends with `|| exit 0`; use direct `npx vit
 - Vocabulary-like items may use either the typed shape (`word`, `ipa`, `phonetic`) or the generated runtime shape (`english`, `pronunciation`). Use existing guards/normalization patterns before assuming fields.
 - Practice items store task details differently: RS/WFD use `sentence`; ASQ uses `question` and `answer`; metadata such as difficulty/category is nested under `metadata`.
 - Add or rename a vocabulary/practice dataset in all relevant places: source markdown under `data/source/pte/`, `PIPELINE_CONFIG.registry` in `scripts/pte-data-pipeline.js`, `data.paths.byMode` and `data.learningModes` in `src/config/AppConfig.ts`, and any selector/UI logic in `src/components/settings/SettingsPanel.tsx`.
-- IPA source formats are parser-sensitive. Dual-pronunciation lines use `term | /british/ - sounds like **BRIT-ish** | /american/ - sounds like **uh-MER-uh-kin**`; single-pronunciation lines use `term | /ipa/ - sounds like **PHONETIC**`.
+- IPA source formats are parser-sensitive. Dual-pronunciation lines use `term | /british/ — sounds like **BRIT-ish** | /american/ — sounds like **uh-MER-uh-kin**`; single-pronunciation lines use `term | /ipa/ — sounds like **PHONETIC**`.
 - Prefer existing feature directories for new components and keep service/API logic out of UI components.
 - Use Radix UI primitives with Tailwind utilities for new UI. Legacy CSS remains in `src/css/` for shared layout and compatibility.
 - Browser voices load asynchronously. Do not assume `speechSynthesis.getVoices()` is populated synchronously; follow the `voiceschanged` preload pattern in `TTSEngine`.

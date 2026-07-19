@@ -1,22 +1,29 @@
 /**
- * AI Recommendation Service using Google Gemini API
+ * AI Recommendation Service
  *
  * Provides personalized learning recommendations based on user progress.
- * Uses Gemini 1.5 Flash (free tier) for intelligent analysis.
+ * All AI (Gemini) access is server-side only: this module calls the
+ * /api/ai-recommendations serverless function and never reads an API key in
+ * the browser. When there is no authenticated user, or the request fails, it
+ * falls back to local rule-based recommendations.
  */
 
-import { GoogleGenAI } from '@google/genai';
+import { appConfig } from '../../config/AppConfig';
+import { useAppStore } from '../../stores';
 
-// Initialize Gemini API
-const getGeminiClient = () => {
-  const apiKey = import.meta.env['VITE_GEMINI_API_KEY'];
+/** Shape returned by the /api/ai-recommendations serverless function. */
+interface ServerRecommendation {
+  word: string;
+  reason: string;
+  difficulty: 'easy' | 'normal' | 'hard';
+  category: string;
+}
 
-  if (!apiKey) {
-    console.warn('⚠️ VITE_GEMINI_API_KEY not set. AI recommendations will be disabled.');
-    return null;
-  }
-
-  return new GoogleGenAI({ apiKey });
+/** Maps a server difficulty to the client recommendation priority. */
+const PRIORITY_BY_DIFFICULTY: Record<ServerRecommendation['difficulty'], Recommendation['priority']> = {
+  hard: 'high',
+  normal: 'medium',
+  easy: 'low',
 };
 
 export interface UserProgress {
@@ -48,124 +55,65 @@ export interface Recommendation {
 }
 
 /**
- * Generate personalized recommendations using Gemini AI
+ * Generate personalized recommendations.
+ *
+ * Delegates to the server-side /api/ai-recommendations endpoint (which holds
+ * the Gemini key). Falls back to rule-based recommendations for guests or on
+ * any error, so the UI always receives a usable result.
  */
 export async function generateRecommendations(
   userProgress: UserProgress
 ): Promise<Recommendation[]> {
-  const genAI = getGeminiClient();
+  const state = useAppStore.getState();
+  const userId = state.auth.user?.id;
 
-  if (!genAI) {
-    // Return fallback recommendations if API key not configured
+  // Server scopes recommendations to a user; without one, use local fallback.
+  if (!userId) {
     return getFallbackRecommendations(userProgress);
   }
 
   try {
-    const prompt = buildRecommendationPrompt(userProgress);
+    const baseUrl = appConfig.get<string>('api.baseUrl');
+    const endpoint = appConfig.get<string>('api.endpoints.aiRecommendations');
 
-    const response = await genAI.models.generateContent({
-      model: 'gemini-2.5-flash',
-      contents: prompt,
+    const response = await fetch(`${baseUrl}${endpoint}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        userId,
+        currentAccuracy: userProgress.accuracy,
+        completedCount: userProgress.completedItems,
+        totalItems: userProgress.totalItems,
+        currentMode: state.settings.practiceType,
+      }),
     });
-    const text = response.text || '';
 
-    // Parse AI response into structured recommendations
-    const recommendations = parseAIResponse(text);
+    if (!response.ok) {
+      throw new Error(`AI recommendations request failed with status ${response.status}`);
+    }
 
-    return recommendations;
+    const payload = (await response.json()) as { data?: ServerRecommendation[] };
+    const serverItems = payload.data ?? [];
+
+    if (serverItems.length === 0) {
+      return getFallbackRecommendations(userProgress);
+    }
+
+    return serverItems.map((item) => ({
+      type: 'vocabulary',
+      priority: PRIORITY_BY_DIFFICULTY[item.difficulty],
+      category: item.category,
+      reason: item.reason,
+      specificItems: [item.word],
+    }));
   } catch (error) {
-    console.error('❌ Error generating AI recommendations:', error);
-    // Fallback to rule-based recommendations
+    console.error('Error fetching server AI recommendations:', error);
     return getFallbackRecommendations(userProgress);
   }
 }
 
 /**
- * Build prompt for Gemini AI
- */
-function buildRecommendationPrompt(userProgress: UserProgress): string {
-  const { completedItems, totalItems, accuracy, weakAreas, recentActivity } = userProgress;
-
-  const weakAreasText = weakAreas.length > 0
-    ? weakAreas.map(area =>
-        `- "${area.word}" (${area.difficulty}): ${area.correctAttempts}/${area.attempts} correct (${Math.round(area.correctAttempts / area.attempts * 100)}%)`
-      ).join('\n')
-    : 'No weak areas identified yet.';
-
-  const recentActivityText = recentActivity.length > 0
-    ? recentActivity.map(activity =>
-        `- ${activity.practiceMode}: ${activity.itemsCompleted} items (${activity.date})`
-      ).join('\n')
-    : 'No recent activity.';
-
-  return `You are an expert English pronunciation tutor for PTE (Pearson Test of English) exam preparation.
-
-Analyze this student's progress and provide 3-5 personalized learning recommendations:
-
-**Student Progress:**
-- Completed: ${completedItems}/${totalItems} items (${Math.round(completedItems / totalItems * 100)}%)
-- Overall Accuracy: ${Math.round(accuracy * 100)}%
-
-**Weak Areas (words with low accuracy):**
-${weakAreasText}
-
-**Recent Activity:**
-${recentActivityText}
-
-**Available Practice Modes:**
-1. Vocabulary Books (13 books: Beginner, Intermediate, Advanced, FIB Listening, etc.)
-2. Repeat Sentence (RS) - Listen and repeat sentences
-3. Answer Short Question (ASQ) - Quick factual questions
-4. Write From Dictation (WFD) - Listen and type sentences
-
-**Instructions:**
-1. Prioritize the student's weak areas
-2. Suggest specific vocabulary books or practice modes
-3. Balance difficulty - don't overwhelm with only hard content
-4. Consider their recent activity to provide variety
-5. Each recommendation should be actionable and specific
-
-**Output Format (JSON array):**
-[
-  {
-    "type": "vocabulary" | "practice",
-    "priority": "high" | "medium" | "low",
-    "category": "pte-beginner" | "pte-advanced" | "pte-rs" | etc.,
-    "practiceMode": "rs" | "asq" | "wfd" (only for practice type),
-    "reason": "Clear explanation why this is recommended",
-    "specificItems": ["word1", "word2"] (optional, for targeted practice),
-    "estimatedTime": "5-10 minutes" (optional)
-  }
-]
-
-Respond with ONLY the JSON array, no additional text.`;
-}
-
-/**
- * Parse AI response into structured recommendations
- */
-function parseAIResponse(aiResponse: string): Recommendation[] {
-  try {
-    // Extract JSON from response (AI might wrap it in markdown code blocks)
-    const jsonMatch = aiResponse.match(/```json\n([\s\S]*?)\n```/) || aiResponse.match(/\[([\s\S]*?)\]/);
-    const jsonText = jsonMatch ? (jsonMatch[1] || jsonMatch[0]) : aiResponse;
-
-    const recommendations = JSON.parse(jsonText) as Recommendation[];
-
-    // Validate and sanitize
-    return recommendations.filter(rec =>
-      rec.type && rec.priority && rec.category && rec.reason
-    ).slice(0, 5); // Max 5 recommendations
-
-  } catch (error) {
-    console.error('❌ Error parsing AI response:', error);
-    console.log('Raw AI response:', aiResponse);
-    throw error;
-  }
-}
-
-/**
- * Fallback recommendations if AI fails or is unavailable
+ * Fallback recommendations if the server is unavailable or the user is a guest
  */
 function getFallbackRecommendations(userProgress: UserProgress): Recommendation[] {
   const { accuracy, weakAreas, completedItems, totalItems } = userProgress;
@@ -173,7 +121,7 @@ function getFallbackRecommendations(userProgress: UserProgress): Recommendation[
   const recommendations: Recommendation[] = [];
 
   // If accuracy is low, suggest beginner content
-  if (accuracy < 0.6) {
+  if (accuracy < 60) {
     recommendations.push({
       type: 'vocabulary',
       priority: 'high',
@@ -221,5 +169,3 @@ function getFallbackRecommendations(userProgress: UserProgress): Recommendation[
 
   return recommendations.slice(0, 5);
 }
-
-

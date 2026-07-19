@@ -107,6 +107,7 @@ export class TTSEngine {
         this.isSpeaking = false;
         this.currentUtterance = null;
         this.lastSpokenText = '';
+        useAppStore.getState().tts.stopSpeaking();
       },
     });
 
@@ -145,8 +146,7 @@ export class TTSEngine {
   private getCurrentSpeechRate(): number {
     return this.speechRate ||
       useAppStore.getState().settings.ttsRate ||
-      this.getConfig()?.get('tts.speeds.normal') ||
-      1.0;
+      this.getConfig()?.get('tts.rate');
   }
 
   /**
@@ -183,9 +183,9 @@ export class TTSEngine {
   getPracticeMode(): string {
     const settingsModule = (window as any).settingsModule;
     if (settingsModule && typeof settingsModule.get === 'function') {
-      return settingsModule.get('practiceMode') || this.getConfig()?.get('data.defaults.practiceMode') || 'vocabulary';
+      return settingsModule.get('practiceMode') || this.getConfig()?.get('settings.defaults.practiceMode') || 'vocabulary';
     }
-    return this.getConfig()?.get('data.defaults.practiceMode') || 'vocabulary';
+    return this.getConfig()?.get('settings.defaults.practiceMode') || 'vocabulary';
   }
 
   private hasTransientUserActivation(): boolean {
@@ -267,9 +267,15 @@ export class TTSEngine {
   async pronounceText(text: string, lang: string | null = null, rate: number | null = null): Promise<void> {
     if (!text) {
       const progressTracker = (window as any).progressTracker;
-      progressTracker.showError('No text to pronounce');
+      if (progressTracker && typeof progressTracker.showError === 'function') {
+        progressTracker.showError('No text to pronounce');
+      } else {
+        console.warn('[TTSEngine] pronounceText called with empty text');
+      }
       return;
     }
+
+    let element: HTMLElement | null = null;
 
     try {
       const cleanText = this.cleanTextForTTS(text);
@@ -277,7 +283,7 @@ export class TTSEngine {
       const speechRate = rate || this.getCurrentSpeechRate();
 
       // Add visual feedback to main display element
-      const element = this._addSpeakingFeedback('englishWord', {
+      element = this._addSpeakingFeedback('englishWord', {
         text: text,
         mode: this.getPracticeMode(),
         rate: speechRate
@@ -285,16 +291,15 @@ export class TTSEngine {
 
       // Speak the text
       await this.speak(cleanText, lang, speechRate);
-
-      // Remove visual feedback
+    } catch (error) {
+      console.warn('Speech error:', error);
+      this.showTTSFallback(text);
+    } finally {
       this._removeSpeakingFeedback(element, {
         text: text,
         mode: this.getPracticeMode()
       });
-
-    } catch (error) {
-      console.warn('Speech error:', error);
-      this.showTTSFallback(text);
+      this.isSpeaking = false;
     }
   }
 
@@ -313,6 +318,9 @@ export class TTSEngine {
       return;
     }
 
+    let englishWordElement: HTMLElement | null = null;
+    let exampleElement: HTMLElement | null = null;
+
     try {
       this.isSpeaking = true;
       this.currentRepeatCount = repeatIndex;
@@ -322,8 +330,8 @@ export class TTSEngine {
       const pronunciationRate = this.getCurrentSpeechRate();
 
       // Add visual feedback during speech
-      const englishWordElement = document.getElementById('englishWord');
-      const exampleElement = document.getElementById('exampleSentence');
+      englishWordElement = document.getElementById('englishWord');
+      exampleElement = document.getElementById('exampleSentence');
 
       if (englishWordElement) {
         englishWordElement.classList.add('speaking');
@@ -377,18 +385,17 @@ export class TTSEngine {
         }
       }
 
-      // Remove visual feedback
-      if (englishWordElement) {
-        englishWordElement.classList.remove('speaking');
-      }
-
-      // Update Zustand TTS store (replaces EventBus emission)
-      useAppStore.getState().tts.stopSpeaking();
-
     } catch (error) {
       console.warn('Speech error:', error);
       this.showTTSFallback(word.english);
     } finally {
+      if (englishWordElement) {
+        englishWordElement.classList.remove('speaking');
+      }
+      if (exampleElement) {
+        exampleElement.classList.remove('speaking');
+      }
+      useAppStore.getState().tts.stopSpeaking();
       this.isSpeaking = false;
     }
   }
@@ -427,6 +434,7 @@ export class TTSEngine {
       this.isSpeaking = false;
       this.currentUtterance = null;
       this.lastSpokenText = '';
+      useAppStore.getState().tts.stopSpeaking();
 
       // Desktop Chrome can require speak() to happen inside the same click
       // activation. Do not await after cancel while activation is still live.
@@ -497,7 +505,7 @@ export class TTSEngine {
 
       setTimeout(() => {
         progressTracker.updateStatus('Text-to-speech not available in this browser');
-      }, this.getConfig()?.get('tts.delays.resetTimeout') || 5000);
+      }, this.getConfig()?.get('delays.notificationTimeout'));
     } else {
       // Fallback: log to console if no progress tracker available
       console.warn(`[TTSEngine] TTS fallback - please read aloud: "${text}"`);

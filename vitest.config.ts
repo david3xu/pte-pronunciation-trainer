@@ -2,6 +2,17 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import { defineConfig } from 'vitest/config';
 
+// React ships an alias-free `act` only in its development build; the production
+// build leaves `React.act` undefined, which makes @testing-library/react throw
+// "React.act is not a function". Some shells export NODE_ENV=production globally,
+// which would make Vite resolve React's production build during the test run.
+// Force a non-production value for the test process so a bare `npx vitest run`
+// behaves correctly regardless of the ambient environment. An explicit
+// `development` value is preserved.
+if (process.env.NODE_ENV === 'production' || !process.env.NODE_ENV) {
+  process.env.NODE_ENV = 'test';
+}
+
 export default defineConfig({
   plugins: [react()],
   test: {

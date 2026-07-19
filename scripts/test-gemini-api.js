@@ -10,10 +10,10 @@ import { config } from 'dotenv';
 
 config();
 
-const apiKey = process.env.GEMINI_API || process.env.VITE_GEMINI_API_KEY;
+const apiKey = process.env.GEMINI_API_KEY;
 
 if (!apiKey) {
-  console.error('❌ No API key found. Set GEMINI_API or VITE_GEMINI_API_KEY in .env');
+  console.error('❌ No API key found. Set GEMINI_API_KEY in .env');
   process.exit(1);
 }
 

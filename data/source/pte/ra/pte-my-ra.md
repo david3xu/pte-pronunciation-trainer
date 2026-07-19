@@ -421,3 +421,13 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 415. adv. similarly | /ˈsɪmələli/ — sounds like **SIM-uh-luh-lee** | /ˈsɪmələrli/ — sounds like **SIM-uh-ler-lee**
 416. n. aspects | /ˈæspekts/ — sounds like **AS-pekts** | /ˈæspekts/ — sounds like **AS-pekts**
 417. n. lessons | /ˈlesənz/ — sounds like **LES-unz** | /ˈlesənz/ — sounds like **LES-unz**
+418. n. aquaculture | /ˈækwəkʌltʃə/ — sounds like **AK-wuh-kul-chuh** | /ˈɑːkwəkʌltʃər/ — sounds like **AH-kwuh-kul-chur**
+419. n. aquafarming | /ˈækwəˌfɑːmɪŋ/ — sounds like **AK-wuh-far-ming** | /ˈɑːkwəˌfɑːrmɪŋ/ — sounds like **AH-kwuh-far-ming**
+420. adj. aquatic | /əˈkwætɪk/ — sounds like **uh-KWAT-ik** | /əˈkwɑːtɪk/ — sounds like **uh-KWAH-tik**
+421. n. organisms | /ˈɔːɡənɪzəmz/ — sounds like **OR-guh-niz-umz** | /ˈɔːrɡənɪzəmz/ — sounds like **OR-guh-niz-umz**
+422. n. crustaceans | /krʌˈsteɪʃənz/ — sounds like **krus-TAY-shunz** | /krʌˈsteɪʃənz/ — sounds like **krus-TAY-shunz**
+423. n. molluscs | /ˈmɒləsks/ — sounds like **MOL-usks** | /ˈmɑːləsks/ — sounds like **MAH-lusks**
+424. v. involves | /ɪnˈvɒlvz/ — sounds like **in-VOLVZ** | /ɪnˈvɑːlvz/ — sounds like **in-VAHLVZ**
+425. v. cultivating | /ˈkʌltɪveɪtɪŋ/ — sounds like **KUL-ti-vay-ting** | /ˈkʌltəveɪtɪŋ/ — sounds like **KUL-tuh-vay-ting**
+426. n. populations | /ˌpɒpjʊˈleɪʃənz/ — sounds like **pop-yoo-LAY-shunz** | /ˌpɑːpjəˈleɪʃənz/ — sounds like **pah-pyuh-LAY-shunz**
+427. n. controlled conditions | /kənˈtrəʊld kənˈdɪʃənz/ — sounds like **kun-TROHLD kun-DISH-unz** | /kənˈtroʊld kənˈdɪʃənz/ — sounds like **kun-TROHLD kun-DISH-unz**

@@ -134,6 +134,7 @@ export const useAppStore = create<AppState>()(
             vocabularyBook: 'pte-fib-listening',
             datasetId: 'pte-fib-listening',
             autoPlay: true, // Default ON - automatically plays audio when vocabulary loads
+            backgroundAudioMode: false, // Default OFF - opt-in real-audio playback for locked-screen / backgrounded practice
             autoSwitchBooks: false, // Default OFF - stays on current book
             showPhonetic: true,
             ttsRate: 1.2,
@@ -158,6 +159,7 @@ export const useAppStore = create<AppState>()(
                 vocabularyBook: 'pte-fib-listening',
                 datasetId: 'pte-fib-listening',
                 autoPlay: true, // Default ON
+                backgroundAudioMode: false, // Default OFF
                 autoSwitchBooks: false, // Default OFF
                 showPhonetic: true,
                 ttsRate: 1.2,

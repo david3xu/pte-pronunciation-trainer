@@ -392,6 +392,11 @@ export interface BuildConfig {
  * Main application configuration
  * This mirrors the structure of Config.ts
  */
+export interface BackgroundAudioConfig {
+  outputFormat: 'mp3' | 'ogg_vorbis' | 'pcm';
+  mediaSessionArtist: string;
+}
+
 export interface AppConfig {
   app: {
     name: string;
@@ -405,6 +410,7 @@ export interface AppConfig {
   limits: LimitsConfig;
   tts: TTSConfig;
   voice: VoiceConfig;
+  backgroundAudio: BackgroundAudioConfig;
   ui: UIConfig;
   settings: {
     defaults: SettingsDefaults;

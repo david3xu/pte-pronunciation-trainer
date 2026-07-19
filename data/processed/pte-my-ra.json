@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-07-19T07:30:44.903Z",
-    "totalTerms": 379,
+    "generated": "2026-07-19T07:31:48.909Z",
+    "totalTerms": 386,
     "source": "pte-my-ra",
     "description": "My PTE Read Aloud word list",
     "version": "1.0",
@@ -6454,6 +6454,125 @@
       "category": "pte-my-ra",
       "source": "pte-my-ra",
       "wordType": "adj."
+    },
+    {
+      "english": "widespread",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈwaɪdspred",
+          "phonetic": "WYDE-spred"
+        },
+        "american": {
+          "ipa": "ˈwaɪdspred",
+          "phonetic": "WYDE-spred"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "adj."
+    },
+    {
+      "english": "assist",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈsɪst",
+          "phonetic": "uh-SIST"
+        },
+        "american": {
+          "ipa": "əˈsɪst",
+          "phonetic": "uh-SIST"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "v."
+    },
+    {
+      "english": "connect",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəˈnekt",
+          "phonetic": "kuh-NEKT"
+        },
+        "american": {
+          "ipa": "kəˈnekt",
+          "phonetic": "kuh-NEKT"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "v."
+    },
+    {
+      "english": "telephone",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtelɪfəʊn",
+          "phonetic": "TEL-i-fohn"
+        },
+        "american": {
+          "ipa": "ˈtelɪfoʊn",
+          "phonetic": "TEL-i-fohn"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "networks",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈnetwɜːks",
+          "phonetic": "NET-wurks"
+        },
+        "american": {
+          "ipa": "ˈnetwɜːrks",
+          "phonetic": "NET-wurks"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "messaging",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmesɪdʒɪŋ",
+          "phonetic": "MES-ij-ing"
+        },
+        "american": {
+          "ipa": "ˈmesɪdʒɪŋ",
+          "phonetic": "MES-ij-ing"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "telecommunication",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌtelɪkəˌmjuːnɪˈkeɪʃən",
+          "phonetic": "tel-i-kuh-myoo-ni-KAY-shun"
+        },
+        "american": {
+          "ipa": "ˌtelɪkəˌmjuːnəˈkeɪʃən",
+          "phonetic": "tel-i-kuh-myoo-nuh-KAY-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
     }
   ]
 }

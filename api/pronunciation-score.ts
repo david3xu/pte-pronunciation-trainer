@@ -187,9 +187,13 @@ function calculateSimpleScore(target: string, transcribed: string): number {
   const maxLength = Math.max(targetWords.length, transcribedWords.length);
 
   for (let i = 0; i < targetWords.length; i++) {
-    if (transcribedWords[i] === targetWords[i]) {
+    const targetWord = targetWords[i];
+    if (targetWord === undefined) {
+      continue;
+    }
+    if (transcribedWords[i] === targetWord) {
       matchCount++;
-    } else if (transcribedWords.includes(targetWords[i])) {
+    } else if (transcribedWords.includes(targetWord)) {
       matchCount += 0.5; // Partial credit for word appearing elsewhere
     }
   }

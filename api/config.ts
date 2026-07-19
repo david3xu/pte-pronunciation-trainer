@@ -107,7 +107,7 @@ export function getVoiceLanguageCode(voiceId: string): string {
  * Get Gemini API key from environment
  */
 export function getGeminiApiKey(): string | null {
-  return process.env['GEMINI_API_KEY'] || process.env['VITE_GEMINI_API_KEY'] || null;
+  return process.env['GEMINI_API_KEY'] || null;
 }
 
 /**

@@ -145,8 +145,7 @@ export class TTSEngine {
   private getCurrentSpeechRate(): number {
     return this.speechRate ||
       useAppStore.getState().settings.ttsRate ||
-      this.getConfig()?.get('tts.speeds.normal') ||
-      1.0;
+      this.getConfig()?.get('tts.rate');
   }
 
   /**
@@ -183,9 +182,9 @@ export class TTSEngine {
   getPracticeMode(): string {
     const settingsModule = (window as any).settingsModule;
     if (settingsModule && typeof settingsModule.get === 'function') {
-      return settingsModule.get('practiceMode') || this.getConfig()?.get('data.defaults.practiceMode') || 'vocabulary';
+      return settingsModule.get('practiceMode') || this.getConfig()?.get('settings.defaults.practiceMode') || 'vocabulary';
     }
-    return this.getConfig()?.get('data.defaults.practiceMode') || 'vocabulary';
+    return this.getConfig()?.get('settings.defaults.practiceMode') || 'vocabulary';
   }
 
   private hasTransientUserActivation(): boolean {
@@ -267,7 +266,11 @@ export class TTSEngine {
   async pronounceText(text: string, lang: string | null = null, rate: number | null = null): Promise<void> {
     if (!text) {
       const progressTracker = (window as any).progressTracker;
-      progressTracker.showError('No text to pronounce');
+      if (progressTracker && typeof progressTracker.showError === 'function') {
+        progressTracker.showError('No text to pronounce');
+      } else {
+        console.warn('[TTSEngine] pronounceText called with empty text');
+      }
       return;
     }
 
@@ -497,7 +500,7 @@ export class TTSEngine {
 
       setTimeout(() => {
         progressTracker.updateStatus('Text-to-speech not available in this browser');
-      }, this.getConfig()?.get('tts.delays.resetTimeout') || 5000);
+      }, this.getConfig()?.get('delays.notificationTimeout'));
     } else {
       // Fallback: log to console if no progress tracker available
       console.warn(`[TTSEngine] TTS fallback - please read aloud: "${text}"`);

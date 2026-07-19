@@ -177,7 +177,7 @@ async function handleAIChatRequest(req, res) {
     }
 
     // Check API key
-    const apiKey = process.env.GEMINI_API || process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY;
+    const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) {
       res.status(500).json({ success: false, error: 'AI Tutor is not configured. Please contact support.' });
       return;
@@ -312,8 +312,7 @@ server.listen(PORT, () => {
   console.log('   Open http://localhost:3000 in your browser');
   console.log('   Click "AI Tutor" button and start chatting\n');
   console.log('Environment:');
-  console.log(`   GEMINI_API: ${process.env.GEMINI_API ? '✓ Set' : '✗ Not set'}`);
-  console.log(`   VITE_GEMINI_API_KEY: ${process.env.VITE_GEMINI_API_KEY ? '✓ Set' : '✗ Not set'}`);
+  console.log(`   GEMINI_API_KEY: ${process.env.GEMINI_API_KEY ? '✓ Set' : '✗ Not set'}`);
   console.log('\nPress Ctrl+C to stop\n');
 });
 

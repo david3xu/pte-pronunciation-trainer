@@ -36,7 +36,7 @@
  * }
  *
  * Environment variables required:
- * - GEMINI_API (recommended for Vercel)
+ * - GEMINI_API_KEY (required, server-side only)
  * - SUPABASE_URL (for Phase 2 context)
  * - SUPABASE_SERVICE_ROLE_KEY (for Phase 2 context)
  */
@@ -76,14 +76,6 @@ interface ChatRequest {
     attempts?: number;
   };
   useEnhancedContext?: boolean; // Flag to use Phase 2 context building
-}
-
-interface ChatResponse {
-  success: boolean;
-  data?: {
-    answer: string;
-  };
-  error?: string;
 }
 
 // ============================================
@@ -610,8 +602,8 @@ export default async function handler(
     // ============================================
     if (useEnhancedContext && taskType && userId) {
       // Get learner profile goal score
-      const supabaseUrl = process.env.SUPABASE_URL;
-      const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+      const supabaseUrl = process.env['SUPABASE_URL'];
+      const supabaseKey = process.env['SUPABASE_SERVICE_ROLE_KEY'];
       let goalScore: number | undefined;
 
       if (supabaseUrl && supabaseKey) {

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-07-19T05:12:59.848Z",
-    "totalTerms": 338,
+    "generated": "2026-07-19T07:24:09.264Z",
+    "totalTerms": 347,
     "source": "pte-my-ra",
     "description": "My PTE Read Aloud word list",
     "version": "1.0",
@@ -5754,6 +5754,159 @@
         }
       },
       "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "adj."
+    },
+    {
+      "english": "companies",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌmpəniz",
+          "phonetic": "KUM-puh-neez"
+        },
+        "american": {
+          "ipa": "ˈkʌmpəniz",
+          "phonetic": "KUM-puh-neez"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "financial",
+      "pronunciation": {
+        "british": {
+          "ipa": "faɪˈnænʃəl",
+          "phonetic": "fye-NAN-shul"
+        },
+        "american": {
+          "ipa": "faɪˈnænʃəl",
+          "phonetic": "fye-NAN-shul"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "adj."
+    },
+    {
+      "english": "results",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈzʌlts",
+          "phonetic": "ri-ZULTS"
+        },
+        "american": {
+          "ipa": "rɪˈzʌlts",
+          "phonetic": "ri-ZULTS"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "society",
+      "pronunciation": {
+        "british": {
+          "ipa": "səˈsaɪəti",
+          "phonetic": "suh-SY-uh-tee"
+        },
+        "american": {
+          "ipa": "səˈsaɪəti",
+          "phonetic": "suh-SY-uh-tee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "ensuring",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈʃʊərɪŋ",
+          "phonetic": "in-SHOOR-ing"
+        },
+        "american": {
+          "ipa": "ɪnˈʃʊrɪŋ",
+          "phonetic": "in-SHOOR-ing"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "v."
+    },
+    {
+      "english": "positively",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpɒzətɪvli",
+          "phonetic": "POZ-uh-tiv-lee"
+        },
+        "american": {
+          "ipa": "ˈpɑːzətɪvli",
+          "phonetic": "PAH-zuh-tiv-lee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "adv."
+    },
+    {
+      "english": "operating",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɒpəreɪtɪŋ",
+          "phonetic": "OP-uh-ray-ting"
+        },
+        "american": {
+          "ipa": "ˈɑːpəreɪtɪŋ",
+          "phonetic": "AH-puh-ray-ting"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "adj."
+    },
+    {
+      "english": "Net-neutral",
+      "pronunciation": {
+        "british": {
+          "ipa": "net ˈnjuːtrəl",
+          "phonetic": "NET NYOO-trul"
+        },
+        "american": {
+          "ipa": "net ˈnuːtrəl",
+          "phonetic": "NET NOO-trul"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "adj."
+    },
+    {
+      "english": "third",
+      "pronunciation": {
+        "british": {
+          "ipa": "θɜːd",
+          "phonetic": "THURD"
+        },
+        "american": {
+          "ipa": "θɜːrd",
+          "phonetic": "THURD"
+        }
+      },
+      "difficulty": "easy",
       "category": "pte-my-ra",
       "source": "pte-my-ra",
       "wordType": "adj."

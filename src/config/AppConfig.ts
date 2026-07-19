@@ -86,6 +86,7 @@ export class AppConfig {
 
         learningModes: [
           // Vocabulary books (13 total)
+          { id: 'pte-my-ra', name: 'My RA PTE Words', category: 'vocabulary', difficulty: 'normal' },
           // { id: 'pte-fib-listening', name: 'PTE FIB Listening', category: 'vocabulary', difficulty: 'normal' },
           // { id: 'pte-beginner', name: 'PTE Beginner', category: 'vocabulary', difficulty: 'easy' },
           // { id: 'pte-intermediate', name: 'PTE Intermediate', category: 'vocabulary', difficulty: 'normal' },
@@ -111,7 +112,6 @@ export class AppConfig {
           { id: 'pte-hard-rs-vocabulary', name: 'PTE Hard RS Vocab', category: 'vocabulary', difficulty: 'hard' },
           { id: 'pte-hard-wfd-vocabulary', name: 'PTE Hard WFD Vocab', category: 'vocabulary', difficulty: 'hard' },
           { id: 'pte-ra-vocabulary', name: 'PTE RA Vocabulary', category: 'vocabulary', difficulty: 'hard' },
-          { id: 'pte-my-ra', name: 'My RA PTE Words', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-di-natural-template', name: 'DI Natural Template', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-di-slots', name: 'DI Slots Collection', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-rs-segments', name: 'RS Segments Shadow', category: 'vocabulary', difficulty: 'normal' },

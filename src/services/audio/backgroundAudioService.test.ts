@@ -2,14 +2,16 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { BackgroundAudioService } from './backgroundAudioService';
 
 /**
- * These tests focus on mode-selection, failure behavior, and pause/resume vs
- * restart. The service must (a) reject on failure rather than pretending to
- * play, and (b) resume a paused clip in place instead of refetching/restarting.
- * True lock-screen playback is verified on-device, not here.
+ * These tests focus on mode-selection, failure behavior, pause/resume vs
+ * restart, and playback rate. The service must (a) reject on failure rather
+ * than pretending to play, (b) resume a paused clip in place instead of
+ * refetching/restarting, and (c) apply the configured playback rate. True
+ * lock-screen playback is verified on-device, not here.
  */
 
 const playSpy = vi.fn();
 const pauseSpy = vi.fn();
+let lastFakeAudio: FakeAudio | null = null;
 
 // Minimal controllable stand-in for HTMLAudioElement.
 class FakeAudio {
@@ -17,6 +19,8 @@ class FakeAudio {
   preload = '';
   paused = true;
   ended = false;
+  playbackRate = 1;
+  constructor() { lastFakeAudio = this; }
   play() { playSpy(); this.paused = false; return Promise.resolve(); }
   pause() { pauseSpy(); this.paused = true; }
   load() { /* noop */ }
@@ -41,6 +45,7 @@ describe('BackgroundAudioService', () => {
   beforeEach(() => {
     playSpy.mockClear();
     pauseSpy.mockClear();
+    lastFakeAudio = null;
     vi.stubGlobal('Audio', FakeAudio);
     originalCreateObjectURL = URL.createObjectURL;
     originalRevokeObjectURL = URL.revokeObjectURL;
@@ -121,7 +126,28 @@ describe('BackgroundAudioService', () => {
     service.pause();
     expect(service.canResume()).toBe(true);
     expect(service.getLoadedText()).toBe('first item');
-    // The controller only resumes when the loaded text matches the current item.
     expect(service.getLoadedText()).not.toBe('second item');
+  });
+
+  // ---- playback rate ----
+
+  it('applies the requested playback rate in playText', async () => {
+    const service = new BackgroundAudioService();
+    vi.stubGlobal('fetch', successFetch());
+
+    await service.playText('hello world', { rate: 1.5 });
+    expect(lastFakeAudio?.playbackRate).toBe(1.5);
+  });
+
+  it('applies the current rate on resume', async () => {
+    const service = new BackgroundAudioService();
+    vi.stubGlobal('fetch', successFetch());
+
+    await service.playText('hello world', { rate: 1.25 });
+    expect(lastFakeAudio?.playbackRate).toBe(1.25);
+
+    service.pause();
+    await service.resume(1.75);
+    expect(lastFakeAudio?.playbackRate).toBe(1.75);
   });
 });

@@ -150,4 +150,47 @@ describe('BackgroundAudioService', () => {
     await service.resume(1.75);
     expect(lastFakeAudio?.playbackRate).toBe(1.75);
   });
+
+  // ---- priming safety ----
+
+  it('clears previous real-clip state when priming for a user gesture', async () => {
+    const service = new BackgroundAudioService();
+    vi.stubGlobal('fetch', successFetch());
+
+    await service.playText('real clip');
+    service.pause();
+    expect(service.canResume()).toBe(true);
+    expect(service.getLoadedText()).toBe('real clip');
+
+    service.primeForUserGesture();
+    // The silent priming clip must not look like a resumable real clip.
+    expect(service.canResume()).toBe(false);
+    expect(service.getLoadedText()).toBeNull();
+  });
+
+  it('does not pause a later real clip when a priming promise resolves late', async () => {
+    const service = new BackgroundAudioService();
+    vi.stubGlobal('fetch', successFetch());
+
+    // Force the priming play() to resolve on demand, so it can resolve AFTER the
+    // real clip has started (the dangerous race).
+    let resolvePrime: () => void = () => { /* noop */ };
+    const primePromise = new Promise<void>((res) => { resolvePrime = res; });
+    const playSpyOnce = vi.spyOn(FakeAudio.prototype, 'play').mockImplementationOnce(() => {
+      if (lastFakeAudio) lastFakeAudio.paused = false;
+      return primePromise;
+    });
+
+    service.primeForUserGesture();        // priming play() -> controlled primePromise
+    await service.playText('real clip');  // real clip swaps in a Blob URL and plays
+    expect(lastFakeAudio?.paused).toBe(false);
+
+    resolvePrime();                        // priming resolves LATE
+    await primePromise;
+    await Promise.resolve();
+
+    // The late priming resolution must not have paused the real clip.
+    expect(lastFakeAudio?.paused).toBe(false);
+    playSpyOnce.mockRestore();
+  });
 });

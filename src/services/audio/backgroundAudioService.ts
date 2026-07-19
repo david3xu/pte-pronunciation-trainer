@@ -16,6 +16,12 @@
 
 import { appConfig } from '../../config/AppConfig';
 
+// A short, effectively silent WAV. Played then paused synchronously inside a
+// user gesture to "bless" the reusable audio element, so a later play() (after
+// the async premium-TTS fetch) is permitted by mobile autoplay policy.
+const SILENT_AUDIO_DATA_URI =
+  'data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAgD4AAIA+AAABAAgAZGF0YQAAAAA=';
+
 export interface BackgroundAudioHandlers {
   onEnded?: () => void;
   onError?: (error: Error) => void;
@@ -30,6 +36,7 @@ export interface PlayTextOptions {
   voiceId?: string;
   engine?: 'standard' | 'neural';
   languageCode?: string;
+  rate?: number;
 }
 
 interface PremiumTtsResponse {
@@ -46,6 +53,7 @@ export class BackgroundAudioService {
   private audio: HTMLAudioElement | null = null;
   private objectUrl: string | null = null;
   private currentText: string | null = null;
+  private currentRate: number | null = null;
   private handlers: BackgroundAudioHandlers = {};
   private fetchController: AbortController | null = null;
   private mediaSessionBound = false;
@@ -73,6 +81,30 @@ export class BackgroundAudioService {
   /** The text of the currently loaded clip, or null when nothing is loaded. */
   getLoadedText(): string | null {
     return this.currentText;
+  }
+
+  /**
+   * Prepare the reusable audio element inside a user gesture so a later,
+   * post-fetch play() is not blocked by mobile autoplay policy. Best-effort:
+   * if the browser still blocks it, the real play() in playText rejects and the
+   * caller surfaces a clear error, so background mode is never faked.
+   */
+  primeForUserGesture(): void {
+    if (!this.isSupported()) return;
+    const audio = this.ensureAudioElement();
+    try {
+      audio.src = SILENT_AUDIO_DATA_URI;
+      const played = audio.play();
+      if (played && typeof played.then === 'function') {
+        played
+          .then(() => audio.pause())
+          .catch(() => {
+            /* policy blocked priming; the real play() will fail loud */
+          });
+      }
+    } catch {
+      /* ignore priming errors; a real play() will surface any problem */
+    }
   }
 
   setHandlers(handlers: BackgroundAudioHandlers): void {
@@ -107,6 +139,13 @@ export class BackgroundAudioService {
     this.currentText = text;
     audio.src = blobUrl;
 
+    if (typeof options.rate === 'number') {
+      this.currentRate = options.rate;
+    }
+    if (this.currentRate !== null) {
+      audio.playbackRate = this.currentRate;
+    }
+
     this.setMediaMetadata(text);
 
     try {
@@ -122,8 +161,14 @@ export class BackgroundAudioService {
     this.setPlaybackState('paused');
   }
 
-  async resume(): Promise<void> {
+  async resume(rate?: number): Promise<void> {
     if (!this.audio) return;
+    if (typeof rate === 'number') {
+      this.currentRate = rate;
+    }
+    if (this.currentRate !== null) {
+      this.audio.playbackRate = this.currentRate;
+    }
     await this.audio.play();
     this.setPlaybackState('playing');
   }

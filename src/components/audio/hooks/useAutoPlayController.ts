@@ -86,7 +86,7 @@ export const useAutoPlayController = () => {
    * rather than a timer. Rejects if the audio cannot be fetched or played so
    * the caller can surface a clear error instead of silently pretending.
    */
-  const playBackgroundAndWaitForEnd = (text: string): Promise<void> => {
+  const playBackgroundAndWaitForEnd = (text: string, rate: number): Promise<void> => {
     return new Promise<void>((resolve, reject) => {
       backgroundAudioService.setHandlers({
         onEnded: () => resolve(),
@@ -100,10 +100,11 @@ export const useAutoPlayController = () => {
       // Resume the current clip mid-playback when the same item is still loaded
       // and paused; otherwise fetch and play the item from the start. Only
       // playText refetches, so pause/resume of the same item does not restart it.
+      // The configured playback rate is applied to both paths.
       if (backgroundAudioService.canResume() && backgroundAudioService.getLoadedText() === text) {
-        backgroundAudioService.resume().catch((error) => reject(error));
+        backgroundAudioService.resume(rate).catch((error) => reject(error));
       } else {
-        backgroundAudioService.playText(text).catch((error) => reject(error));
+        backgroundAudioService.playText(text, { rate }).catch((error) => reject(error));
       }
     });
   };
@@ -232,7 +233,7 @@ export const useAutoPlayController = () => {
               // Background Audio Mode: play real audio (Polly) and advance on the
               // element's `ended` event. Do not silently fall back to browser TTS.
               try {
-                await playBackgroundAndWaitForEnd(cleanedText);
+                await playBackgroundAndWaitForEnd(cleanedText, settings.ttsRate);
               } catch (bgError) {
                 console.error('[useAutoPlayController] Background audio failed:', bgError);
                 backgroundAudioService.stop();
@@ -360,6 +361,13 @@ export const useAutoPlayController = () => {
     if (!currentItem) {
       console.warn('[useAutoPlayController] No current item to play');
       return;
+    }
+
+    // Prime the audio element synchronously within this user gesture so
+    // background playback is allowed after the async premium-TTS fetch
+    // (mobile autoplay policy requires the play to originate from a gesture).
+    if (useAppStore.getState().settings.backgroundAudioMode) {
+      backgroundAudioService.primeForUserGesture();
     }
 
     audio.startAutoPlay();

@@ -342,3 +342,14 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 336. n. fertility | /fəˈtɪləti/ — sounds like **fuh-TIL-uh-tee** | /fərˈtɪləti/ — sounds like **fur-TIL-uh-tee**
 337. adj. mental | /ˈmentəl/ — sounds like **MEN-tul** | /ˈmentəl/ — sounds like **MEN-tul**
 338. adj. bankrupt | /ˈbæŋkrʌpt/ — sounds like **BANK-rupt** | /ˈbæŋkrʌpt/ — sounds like **BANK-rupt**
+339. n. companies | /ˈkʌmpəniz/ — sounds like **KUM-puh-neez** | /ˈkʌmpəniz/ — sounds like **KUM-puh-neez**
+340. adj. known | /nəʊn/ — sounds like **NOHN** | /noʊn/ — sounds like **NOHN**
+341. adj. financial | /faɪˈnænʃəl/ — sounds like **fye-NAN-shul** | /faɪˈnænʃəl/ — sounds like **fye-NAN-shul**
+342. n. results | /rɪˈzʌlts/ — sounds like **ri-ZULTS** | /rɪˈzʌlts/ — sounds like **ri-ZULTS**
+343. n. society | /səˈsaɪəti/ — sounds like **suh-SY-uh-tee** | /səˈsaɪəti/ — sounds like **suh-SY-uh-tee**
+344. adj. first | /fɜːst/ — sounds like **FURST** | /fɜːrst/ — sounds like **FURST**
+345. v. ensuring | /ɪnˈʃʊərɪŋ/ — sounds like **in-SHOOR-ing** | /ɪnˈʃʊrɪŋ/ — sounds like **in-SHOOR-ing**
+346. adv. positively | /ˈpɒzətɪvli/ — sounds like **POZ-uh-tiv-lee** | /ˈpɑːzətɪvli/ — sounds like **PAH-zuh-tiv-lee**
+347. adj. operating | /ˈɒpəreɪtɪŋ/ — sounds like **OP-uh-ray-ting** | /ˈɑːpəreɪtɪŋ/ — sounds like **AH-puh-ray-ting**
+348. adj. Net-neutral | /net ˈnjuːtrəl/ — sounds like **NET NYOO-trul** | /net ˈnuːtrəl/ — sounds like **NET NOO-trul**
+349. adj. third | /θɜːd/ — sounds like **THURD** | /θɜːrd/ — sounds like **THURD**

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-07-19T07:25:49.577Z",
-    "totalTerms": 352,
+    "generated": "2026-07-19T07:27:21.639Z",
+    "totalTerms": 362,
     "source": "pte-my-ra",
     "description": "My PTE Read Aloud word list",
     "version": "1.0",
@@ -5992,6 +5992,176 @@
         }
       },
       "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "Australia",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɒˈstreɪliə",
+          "phonetic": "os-TRAY-lee-uh"
+        },
+        "american": {
+          "ipa": "ɔːˈstreɪliə",
+          "phonetic": "aw-STRAY-lee-uh"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "world",
+      "pronunciation": {
+        "british": {
+          "ipa": "wɜːld",
+          "phonetic": "WURLD"
+        },
+        "american": {
+          "ipa": "wɜːrld",
+          "phonetic": "WURLD"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "swans",
+      "pronunciation": {
+        "british": {
+          "ipa": "swɒnz",
+          "phonetic": "SWONZ"
+        },
+        "american": {
+          "ipa": "swɑːnz",
+          "phonetic": "SWAHNZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "confirmed",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈfɜːmd",
+          "phonetic": "kun-FURMD"
+        },
+        "american": {
+          "ipa": "kənˈfɜːrmd",
+          "phonetic": "kun-FURMD"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "v."
+    },
+    {
+      "english": "empirical",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪmˈpɪrɪkəl",
+          "phonetic": "im-PEER-i-kul"
+        },
+        "american": {
+          "ipa": "ɪmˈpɪrɪkəl",
+          "phonetic": "im-PEER-i-kul"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "adj."
+    },
+    {
+      "english": "evidence",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈevɪdəns",
+          "phonetic": "EV-i-duns"
+        },
+        "american": {
+          "ipa": "ˈevɪdəns",
+          "phonetic": "EV-i-duns"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "interesting",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪntrəstɪŋ",
+          "phonetic": "IN-truh-sting"
+        },
+        "american": {
+          "ipa": "ˈɪntrəstɪŋ",
+          "phonetic": "IN-truh-sting"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "adj."
+    },
+    {
+      "english": "surprise",
+      "pronunciation": {
+        "british": {
+          "ipa": "səˈpraɪz",
+          "phonetic": "suh-PRYZ"
+        },
+        "american": {
+          "ipa": "sərˈpraɪz",
+          "phonetic": "ser-PRYZ"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "scientists",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsaɪəntɪsts",
+          "phonetic": "SY-un-tists"
+        },
+        "american": {
+          "ipa": "ˈsaɪəntɪsts",
+          "phonetic": "SY-un-tists"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "significance",
+      "pronunciation": {
+        "british": {
+          "ipa": "sɪɡˈnɪfɪkəns",
+          "phonetic": "sig-NIF-i-kuns"
+        },
+        "american": {
+          "ipa": "sɪɡˈnɪfɪkəns",
+          "phonetic": "sig-NIF-i-kuns"
+        }
+      },
+      "difficulty": "hard",
       "category": "pte-my-ra",
       "source": "pte-my-ra",
       "wordType": "n."

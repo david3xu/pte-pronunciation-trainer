@@ -358,3 +358,14 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 352. n. houses | /ˈhaʊzɪz/ — sounds like **HOW-ziz** | /ˈhaʊzɪz/ — sounds like **HOW-ziz**
 353. n. neighbours | /ˈneɪbəz/ — sounds like **NAY-buhz** | /ˈneɪbərz/ — sounds like **NAY-berz**
 354. n. gardens | /ˈɡɑːdənz/ — sounds like **GAR-dunz** | /ˈɡɑːrdənz/ — sounds like **GAR-dunz**
+355. n. Australia | /ɒˈstreɪliə/ — sounds like **os-TRAY-lee-uh** | /ɔːˈstreɪliə/ — sounds like **aw-STRAY-lee-uh**
+356. n. world | /wɜːld/ — sounds like **WURLD** | /wɜːrld/ — sounds like **WURLD**
+357. adj. convinced | /kənˈvɪnst/ — sounds like **kun-VINST** | /kənˈvɪnst/ — sounds like **kun-VINST**
+358. n. swans | /swɒnz/ — sounds like **SWONZ** | /swɑːnz/ — sounds like **SWAHNZ**
+359. v. confirmed | /kənˈfɜːmd/ — sounds like **kun-FURMD** | /kənˈfɜːrmd/ — sounds like **kun-FURMD**
+360. adj. empirical | /ɪmˈpɪrɪkəl/ — sounds like **im-PEER-i-kul** | /ɪmˈpɪrɪkəl/ — sounds like **im-PEER-i-kul**
+361. n. evidence | /ˈevɪdəns/ — sounds like **EV-i-duns** | /ˈevɪdəns/ — sounds like **EV-i-duns**
+362. adj. interesting | /ˈɪntrəstɪŋ/ — sounds like **IN-truh-sting** | /ˈɪntrəstɪŋ/ — sounds like **IN-truh-sting**
+363. n. surprise | /səˈpraɪz/ — sounds like **suh-PRYZ** | /sərˈpraɪz/ — sounds like **ser-PRYZ**
+364. n. scientists | /ˈsaɪəntɪsts/ — sounds like **SY-un-tists** | /ˈsaɪəntɪsts/ — sounds like **SY-un-tists**
+365. n. significance | /sɪɡˈnɪfɪkəns/ — sounds like **sig-NIF-i-kuns** | /sɪɡˈnɪfɪkəns/ — sounds like **sig-NIF-i-kuns**

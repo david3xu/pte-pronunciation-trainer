@@ -85,6 +85,27 @@ describe('Config Validation', () => {
     });
   });
 
+  describe('Vocabulary Book Configuration', () => {
+    it('should include the custom RA vocabulary book', () => {
+      const learningModes = appConfig.get('data.learningModes');
+      const vocabularyModes = learningModes.filter((mode: any) => mode.category === 'vocabulary');
+
+      expect(learningModes).toContainEqual(
+        expect.objectContaining({
+          id: 'pte-my-ra',
+          name: 'My RA PTE Words',
+          category: 'vocabulary',
+        })
+      );
+      expect(vocabularyModes[0]).toEqual(
+        expect.objectContaining({
+          id: 'pte-my-ra',
+        })
+      );
+      expect(appConfig.get('data.paths.byMode.pte-my-ra')).toBe('data/processed/pte-my-ra.json');
+    });
+  });
+
   describe('No Hardcoded Values Validation', () => {
     it('should not have magic number delays in config', () => {
       // Ensure delays are configured, not hardcoded

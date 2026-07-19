@@ -20,8 +20,8 @@ export function aiChatMiddleware(req: IncomingMessage, res: ServerResponse, next
       // Dynamic import to avoid build issues if package is missing
       const { GoogleGenAI } = await import('@google/genai');
 
-      // Get API key from env object passed from loadEnv
-      const apiKey = env['GEMINI_API'] || env['GEMINI_API_KEY'] || env['VITE_GEMINI_API_KEY'];
+      // Get API key from env object passed from loadEnv (server-side only)
+      const apiKey = env['GEMINI_API_KEY'];
 
       if (!apiKey) {
         res.statusCode = 500;

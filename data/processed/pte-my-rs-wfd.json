@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "generated": "2026-07-19T09:28:26.305Z",
+    "totalTerms": 0,
+    "source": "pte-my-rs-wfd",
+    "description": "My PTE RS and WFD word list",
+    "version": "1.0",
+    "categories": [
+      "pte-my-rs-wfd"
+    ],
+    "hasIPA": true,
+    "keepDuplicates": false
+  },
+  "vocabulary": []
+}

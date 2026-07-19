@@ -104,6 +104,19 @@ describe('Config Validation', () => {
       );
       expect(appConfig.get('data.paths.byMode.pte-my-ra')).toBe('data/processed/pte-my-ra.json');
     });
+
+    it('should include the custom RS/WFD vocabulary book', () => {
+      const learningModes = appConfig.get('data.learningModes');
+
+      expect(learningModes).toContainEqual(
+        expect.objectContaining({
+          id: 'pte-my-rs-wfd',
+          name: 'My RS & WFD PTE Words',
+          category: 'vocabulary',
+        })
+      );
+      expect(appConfig.get('data.paths.byMode.pte-my-rs-wfd')).toBe('data/processed/pte-my-rs-wfd.json');
+    });
   });
 
   describe('No Hardcoded Values Validation', () => {

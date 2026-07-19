@@ -59,6 +59,17 @@ const PIPELINE_CONFIG = {
       extractorType: 'PTETermsExtractor',
       inputSubdir: 'ra',
       keepDuplicates: false
+    },
+    {
+      id: 'pte-my-rs-wfd',
+      input: 'pte-my-rs-wfd.md',
+      output: 'pte-my-rs-wfd.json',
+      category: 'pte-my-rs-wfd',
+      description: 'My PTE RS and WFD word list',
+      sourceType: 'pte-my-rs-wfd',
+      extractorType: 'PTETermsExtractor',
+      inputSubdir: 'rs-wfd',
+      keepDuplicates: false
     }
   ]
 };

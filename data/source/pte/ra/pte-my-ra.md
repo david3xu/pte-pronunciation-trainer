@@ -415,3 +415,9 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 409. adj. sensitive | /ˈsensɪtɪv/ — sounds like **SEN-si-tiv** | /ˈsensətɪv/ — sounds like **SEN-suh-tiv**
 410. n. samples | /ˈsɑːmpəlz/ — sounds like **SAHM-pulz** | /ˈsæmpəlz/ — sounds like **SAM-pulz**
 411. n. x-ray laser | /ˈeks reɪ ˈleɪzə/ — sounds like **EKS RAY LAY-zuh** | /ˈeks reɪ ˈleɪzər/ — sounds like **EKS RAY LAY-zer**
+412. pron. everything | /ˈevriθɪŋ/ — sounds like **EV-ree-thing** | /ˈevriθɪŋ/ — sounds like **EV-ree-thing**
+413. n. historians | /hɪˈstɔːriənz/ — sounds like **hi-STOR-ee-unz** | /hɪˈstɔːriənz/ — sounds like **hi-STOR-ee-unz**
+414. n. choices | /ˈtʃɔɪsɪz/ — sounds like **CHOY-siz** | /ˈtʃɔɪsɪz/ — sounds like **CHOY-siz**
+415. adv. similarly | /ˈsɪmələli/ — sounds like **SIM-uh-luh-lee** | /ˈsɪmələrli/ — sounds like **SIM-uh-ler-lee**
+416. n. aspects | /ˈæspekts/ — sounds like **AS-pekts** | /ˈæspekts/ — sounds like **AS-pekts**
+417. n. lessons | /ˈlesənz/ — sounds like **LES-unz** | /ˈlesənz/ — sounds like **LES-unz**

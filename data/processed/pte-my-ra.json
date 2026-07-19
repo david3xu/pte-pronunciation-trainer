@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-07-19T07:38:34.983Z",
-    "totalTerms": 403,
+    "generated": "2026-07-19T07:39:40.243Z",
+    "totalTerms": 409,
     "source": "pte-my-ra",
     "description": "My PTE Read Aloud word list",
     "version": "1.0",
@@ -6859,6 +6859,108 @@
         }
       },
       "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "everything",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈevriθɪŋ",
+          "phonetic": "EV-ree-thing"
+        },
+        "american": {
+          "ipa": "ˈevriθɪŋ",
+          "phonetic": "EV-ree-thing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "pron."
+    },
+    {
+      "english": "historians",
+      "pronunciation": {
+        "british": {
+          "ipa": "hɪˈstɔːriənz",
+          "phonetic": "hi-STOR-ee-unz"
+        },
+        "american": {
+          "ipa": "hɪˈstɔːriənz",
+          "phonetic": "hi-STOR-ee-unz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "choices",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtʃɔɪsɪz",
+          "phonetic": "CHOY-siz"
+        },
+        "american": {
+          "ipa": "ˈtʃɔɪsɪz",
+          "phonetic": "CHOY-siz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "similarly",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɪmələli",
+          "phonetic": "SIM-uh-luh-lee"
+        },
+        "american": {
+          "ipa": "ˈsɪmələrli",
+          "phonetic": "SIM-uh-ler-lee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "adv."
+    },
+    {
+      "english": "aspects",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈæspekts",
+          "phonetic": "AS-pekts"
+        },
+        "american": {
+          "ipa": "ˈæspekts",
+          "phonetic": "AS-pekts"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "lessons",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlesənz",
+          "phonetic": "LES-unz"
+        },
+        "american": {
+          "ipa": "ˈlesənz",
+          "phonetic": "LES-unz"
+        }
+      },
+      "difficulty": "normal",
       "category": "pte-my-ra",
       "source": "pte-my-ra",
       "wordType": "n."

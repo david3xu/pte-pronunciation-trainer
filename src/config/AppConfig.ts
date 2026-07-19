@@ -62,6 +62,7 @@ export class AppConfig {
               'pte-hard-wfd-vocabulary': 'data/processed/pte-hard-wfd-vocabulary.json',
               'pte-ra-vocabulary': 'data/processed/pte-ra-vocabulary.json',
               'pte-my-ra': 'data/processed/pte-my-ra.json',
+              'pte-my-rs-wfd': 'data/processed/pte-my-rs-wfd.json',
               'pte-di-natural-template': 'data/processed/pte-di-natural-template-vocab.json',
               'pte-di-slots': 'data/processed/pte-di-slots-collection.json',
               'pte-rs-segments': 'data/processed/pte-rs-segments-dataset.json',
@@ -87,6 +88,7 @@ export class AppConfig {
         learningModes: [
           // Vocabulary books (13 total)
           { id: 'pte-my-ra', name: 'My RA PTE Words', category: 'vocabulary', difficulty: 'normal' },
+          { id: 'pte-my-rs-wfd', name: 'My RS & WFD PTE Words', category: 'vocabulary', difficulty: 'normal' },
           // { id: 'pte-fib-listening', name: 'PTE FIB Listening', category: 'vocabulary', difficulty: 'normal' },
           // { id: 'pte-beginner', name: 'PTE Beginner', category: 'vocabulary', difficulty: 'easy' },
           // { id: 'pte-intermediate', name: 'PTE Intermediate', category: 'vocabulary', difficulty: 'normal' },

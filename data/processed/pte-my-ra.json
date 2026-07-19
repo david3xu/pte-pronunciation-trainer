@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-07-19T07:31:48.909Z",
-    "totalTerms": 386,
+    "generated": "2026-07-19T07:33:04.163Z",
+    "totalTerms": 391,
     "source": "pte-my-ra",
     "description": "My PTE Read Aloud word list",
     "version": "1.0",
@@ -6570,6 +6570,91 @@
         }
       },
       "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "royal",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈrɔɪəl",
+          "phonetic": "ROY-ul"
+        },
+        "american": {
+          "ipa": "ˈrɔɪəl",
+          "phonetic": "ROY-ul"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "adj."
+    },
+    {
+      "english": "themselves",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðəmˈselvz",
+          "phonetic": "thum-SELVS"
+        },
+        "american": {
+          "ipa": "ðəmˈselvz",
+          "phonetic": "thum-SELVS"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "pron."
+    },
+    {
+      "english": "discoveries",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈskʌvəriz",
+          "phonetic": "di-SKUV-uh-reez"
+        },
+        "american": {
+          "ipa": "dɪˈskʌvəriz",
+          "phonetic": "di-SKUV-uh-reez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "electricity",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪˌlekˈtrɪsəti",
+          "phonetic": "i-lek-TRIS-uh-tee"
+        },
+        "american": {
+          "ipa": "ɪˌlekˈtrɪsəti",
+          "phonetic": "i-lek-TRIS-uh-tee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "consoles",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈsəʊlz",
+          "phonetic": "kun-SOHLZ"
+        },
+        "american": {
+          "ipa": "kənˈsoʊlz",
+          "phonetic": "kun-SOHLZ"
+        }
+      },
+      "difficulty": "normal",
       "category": "pte-my-ra",
       "source": "pte-my-ra",
       "wordType": "n."

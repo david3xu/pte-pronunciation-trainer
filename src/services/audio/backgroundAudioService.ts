@@ -54,6 +54,7 @@ export class BackgroundAudioService {
   private objectUrl: string | null = null;
   private currentText: string | null = null;
   private currentRate: number | null = null;
+  private primeGeneration = 0;
   private handlers: BackgroundAudioHandlers = {};
   private fetchController: AbortController | null = null;
   private mediaSessionBound = false;
@@ -92,12 +93,34 @@ export class BackgroundAudioService {
   primeForUserGesture(): void {
     if (!this.isSupported()) return;
     const audio = this.ensureAudioElement();
+
+    // Priming must not leave the service believing a real clip is loaded. Clear
+    // the previous clip state first so canResume() is false and getLoadedText()
+    // is null while the element points at the silent priming source.
+    this.releaseObjectUrl();
+    this.currentText = null;
+
+    // Tag this priming attempt. A later playText()/stop() bumps the generation,
+    // which disarms this attempt's deferred pause so it can never pause a real
+    // clip that has since replaced the silent source.
+    const generation = ++this.primeGeneration;
+
     try {
       audio.src = SILENT_AUDIO_DATA_URI;
       const played = audio.play();
       if (played && typeof played.then === 'function') {
         played
-          .then(() => audio.pause())
+          .then(() => {
+            // Only pause if this priming is still current AND the element still
+            // holds the silent source (not a Blob URL swapped in by playText).
+            if (
+              this.primeGeneration === generation &&
+              this.audio &&
+              this.audio.src === SILENT_AUDIO_DATA_URI
+            ) {
+              this.audio.pause();
+            }
+          })
           .catch(() => {
             /* policy blocked priming; the real play() will fail loud */
           });
@@ -124,6 +147,10 @@ export class BackgroundAudioService {
     if (!text || !text.trim()) {
       throw new Error('Cannot play empty text in background audio mode');
     }
+
+    // A real playback supersedes any in-flight priming, so a deferred priming
+    // pause will not fire against this clip.
+    this.primeGeneration++;
 
     // Cancel any in-flight fetch so dataset changes and rapid advances cannot race.
     this.abortPendingFetch();
@@ -175,6 +202,8 @@ export class BackgroundAudioService {
 
   stop(): void {
     this.abortPendingFetch();
+    // Disarm any in-flight priming pause so it cannot fire after a reset.
+    this.primeGeneration++;
     if (this.audio) {
       this.audio.pause();
       this.audio.removeAttribute('src');

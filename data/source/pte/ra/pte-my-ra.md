@@ -377,3 +377,13 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 371. adj. straightforward | /ˌstreɪtˈfɔːwəd/ — sounds like **strayt-FOR-wud** | /ˌstreɪtˈfɔːrwərd/ — sounds like **strayt-FOR-wurd**
 372. n. sectors | /ˈsektəz/ — sounds like **SEK-tuhz** | /ˈsektərz/ — sounds like **SEK-terz**
 373. n. revenues | /ˈrevənjuːz/ — sounds like **REV-uh-nyooz** | /ˈrevənuːz/ — sounds like **REV-uh-nooz**
+374. adv. spectacularly | /spekˈtækjʊləli/ — sounds like **spek-TAK-yuh-luh-lee** | /spekˈtækjələrli/ — sounds like **spek-TAK-yuh-ler-lee**
+375. n. quality | /ˈkwɒləti/ — sounds like **KWOL-uh-tee** | /ˈkwɑːləti/ — sounds like **KWAH-luh-tee**
+376. n. majority | /məˈdʒɒrəti/ — sounds like **muh-JOR-uh-tee** | /məˈdʒɔːrəti/ — sounds like **muh-JOR-uh-tee**
+377. n. inhabitants | /ɪnˈhæbɪtənts/ — sounds like **in-HAB-i-tunts** | /ɪnˈhæbɪtənts/ — sounds like **in-HAB-i-tunts**
+378. adj. obsessed | /əbˈsest/ — sounds like **ub-SEST** | /əbˈsest/ — sounds like **ub-SEST**
+379. adj. economic | /ˌiːkəˈnɒmɪk/ — sounds like **ee-kuh-NOM-ik** | /ˌekəˈnɑːmɪk/ — sounds like **ek-uh-NAH-mik**
+380. n. growth rate | /ˈɡrəʊθ reɪt/ — sounds like **GROHTH RAYT** | /ˈɡroʊθ reɪt/ — sounds like **GROHTH RAYT**
+381. n. unemployment | /ˌʌnɪmˈplɔɪmənt/ — sounds like **un-im-PLOY-munt** | /ˌʌnɪmˈplɔɪmənt/ — sounds like **un-im-PLOY-munt**
+382. adj. reinforced | /ˌriːɪnˈfɔːst/ — sounds like **ree-in-FORST** | /ˌriːɪnˈfɔːrst/ — sounds like **ree-in-FORST**
+383. adj. unhappy | /ʌnˈhæpi/ — sounds like **un-HAP-ee** | /ʌnˈhæpi/ — sounds like **un-HAP-ee**

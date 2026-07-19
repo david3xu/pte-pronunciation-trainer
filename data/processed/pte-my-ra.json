@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-07-19T07:29:08.529Z",
-    "totalTerms": 370,
+    "generated": "2026-07-19T07:30:44.903Z",
+    "totalTerms": 379,
     "source": "pte-my-ra",
     "description": "My PTE Read Aloud word list",
     "version": "1.0",
@@ -6301,6 +6301,159 @@
       "category": "pte-my-ra",
       "source": "pte-my-ra",
       "wordType": "n."
+    },
+    {
+      "english": "spectacularly",
+      "pronunciation": {
+        "british": {
+          "ipa": "spekˈtækjʊləli",
+          "phonetic": "spek-TAK-yuh-luh-lee"
+        },
+        "american": {
+          "ipa": "spekˈtækjələrli",
+          "phonetic": "spek-TAK-yuh-ler-lee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "adv."
+    },
+    {
+      "english": "majority",
+      "pronunciation": {
+        "british": {
+          "ipa": "məˈdʒɒrəti",
+          "phonetic": "muh-JOR-uh-tee"
+        },
+        "american": {
+          "ipa": "məˈdʒɔːrəti",
+          "phonetic": "muh-JOR-uh-tee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "inhabitants",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈhæbɪtənts",
+          "phonetic": "in-HAB-i-tunts"
+        },
+        "american": {
+          "ipa": "ɪnˈhæbɪtənts",
+          "phonetic": "in-HAB-i-tunts"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "obsessed",
+      "pronunciation": {
+        "british": {
+          "ipa": "əbˈsest",
+          "phonetic": "ub-SEST"
+        },
+        "american": {
+          "ipa": "əbˈsest",
+          "phonetic": "ub-SEST"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "adj."
+    },
+    {
+      "english": "economic",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌiːkəˈnɒmɪk",
+          "phonetic": "ee-kuh-NOM-ik"
+        },
+        "american": {
+          "ipa": "ˌekəˈnɑːmɪk",
+          "phonetic": "ek-uh-NAH-mik"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "adj."
+    },
+    {
+      "english": "growth rate",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɡrəʊθ reɪt",
+          "phonetic": "GROHTH RAYT"
+        },
+        "american": {
+          "ipa": "ˈɡroʊθ reɪt",
+          "phonetic": "GROHTH RAYT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "unemployment",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌʌnɪmˈplɔɪmənt",
+          "phonetic": "un-im-PLOY-munt"
+        },
+        "american": {
+          "ipa": "ˌʌnɪmˈplɔɪmənt",
+          "phonetic": "un-im-PLOY-munt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "reinforced",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌriːɪnˈfɔːst",
+          "phonetic": "ree-in-FORST"
+        },
+        "american": {
+          "ipa": "ˌriːɪnˈfɔːrst",
+          "phonetic": "ree-in-FORST"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "adj."
+    },
+    {
+      "english": "unhappy",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʌnˈhæpi",
+          "phonetic": "un-HAP-ee"
+        },
+        "american": {
+          "ipa": "ʌnˈhæpi",
+          "phonetic": "un-HAP-ee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "adj."
     }
   ]
 }

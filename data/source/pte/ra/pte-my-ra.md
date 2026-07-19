@@ -402,3 +402,16 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 396. n. discoveries | /dɪˈskʌvəriz/ — sounds like **di-SKUV-uh-reez** | /dɪˈskʌvəriz/ — sounds like **di-SKUV-uh-reez**
 397. n. electricity | /ɪˌlekˈtrɪsəti/ — sounds like **i-lek-TRIS-uh-tee** | /ɪˌlekˈtrɪsəti/ — sounds like **i-lek-TRIS-uh-tee**
 398. n. consoles | /kənˈsəʊlz/ — sounds like **kun-SOHLZ** | /kənˈsoʊlz/ — sounds like **kun-SOHLZ**
+399. n. research | /rɪˈsɜːtʃ/ — sounds like **ri-SURCH** | /ˈriːsɜːrtʃ/ — sounds like **REE-surch**
+400. n. conditions | /kənˈdɪʃənz/ — sounds like **kun-DISH-unz** | /kənˈdɪʃənz/ — sounds like **kun-DISH-unz**
+401. v. observe | /əbˈzɜːv/ — sounds like **ub-ZURV** | /əbˈzɜːrv/ — sounds like **ub-ZURV**
+402. n. temperatures | /ˈtemprətʃəz/ — sounds like **TEM-pruh-chuz** | /ˈtemprətʃərz/ — sounds like **TEM-pruh-churz**
+403. n. celsius | /ˈselsiəs/ — sounds like **SEL-see-us** | /ˈselsiəs/ — sounds like **SEL-see-us**
+404. n. investigation | /ɪnˌvestɪˈɡeɪʃən/ — sounds like **in-ves-ti-GAY-shun** | /ɪnˌvestəˈɡeɪʃən/ — sounds like **in-ves-tuh-GAY-shun**
+405. adj. anomalous | /əˈnɒmələs/ — sounds like **uh-NOM-uh-lus** | /əˈnɑːmələs/ — sounds like **uh-NAH-muh-lus**
+406. adj. dynamic | /daɪˈnæmɪk/ — sounds like **dy-NAM-ik** | /daɪˈnæmɪk/ — sounds like **dy-NAM-ik**
+407. n. behavior | /bɪˈheɪvjə/ — sounds like **bi-HAY-vyuh** | /bɪˈheɪvjər/ — sounds like **bi-HAY-vyer**
+408. n. importance | /ɪmˈpɔːtəns/ — sounds like **im-POR-tuns** | /ɪmˈpɔːrtəns/ — sounds like **im-POR-tuns**
+409. adj. sensitive | /ˈsensɪtɪv/ — sounds like **SEN-si-tiv** | /ˈsensətɪv/ — sounds like **SEN-suh-tiv**
+410. n. samples | /ˈsɑːmpəlz/ — sounds like **SAHM-pulz** | /ˈsæmpəlz/ — sounds like **SAM-pulz**
+411. n. x-ray laser | /ˈeks reɪ ˈleɪzə/ — sounds like **EKS RAY LAY-zuh** | /ˈeks reɪ ˈleɪzər/ — sounds like **EKS RAY LAY-zer**

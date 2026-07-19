@@ -675,3 +675,34 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 669. n. Ontario | /ɒnˈteəriəʊ/ — sounds like **on-TAIR-ee-oh** | /ɑːnˈterioʊ/ — sounds like **ahn-TAIR-ee-oh**
 670. n. Quebec | /kwɪˈbek/ — sounds like **kwi-BEK** | /kwɪˈbek/ — sounds like **kwi-BEK**
 671. n. region | /ˈriːdʒən/ — sounds like **REE-jun** | /ˈriːdʒən/ — sounds like **REE-jun**
+672. adv. unwittingly | /ʌnˈwɪtɪŋli/ — sounds like **un-WIT-ing-lee** | /ʌnˈwɪtɪŋli/ — sounds like **un-WIT-ing-lee**
+673. v. contributed | /kənˈtrɪbjuːtɪd/ — sounds like **kun-TRIB-yoo-tid** | /kənˈtrɪbjuːtɪd/ — sounds like **kun-TRIB-yoo-tid**
+674. n. colleagues | /ˈkɒliːɡz/ — sounds like **KOL-eegz** | /ˈkɑːliːɡz/ — sounds like **KAH-leegz**
+675. n. students | /ˈstjuːdənts/ — sounds like **STYOO-dunts** | /ˈstuːdənts/ — sounds like **STOO-dunts**
+676. n. practitioners | /prækˈtɪʃənəz/ — sounds like **prak-TISH-uh-nuz** | /prækˈtɪʃənərz/ — sounds like **prak-TISH-uh-nerz**
+677. n. residents | /ˈrezɪdənts/ — sounds like **REZ-i-dunts** | /ˈrezɪdənts/ — sounds like **REZ-i-dunts**
+678. adj. possible | /ˈpɒsəbəl/ — sounds like **POS-uh-bul** | /ˈpɑːsəbəl/ — sounds like **PAH-suh-bul**
+679. n. contributions | /ˌkɒntrɪˈbjuːʃənz/ — sounds like **kon-tri-BYOO-shunz** | /ˌkɑːntrəˈbjuːʃənz/ — sounds like **kahn-truh-BYOO-shunz**
+680. n. college | /ˈkɒlɪdʒ/ — sounds like **KOL-ij** | /ˈkɑːlɪdʒ/ — sounds like **KAH-lij**
+681. n. equality | /ɪˈkwɒləti/ — sounds like **i-KWOL-uh-tee** | /ɪˈkwɑːləti/ — sounds like **i-KWAH-luh-tee**
+682. n. diversity | /daɪˈvɜːsəti/ — sounds like **dy-VUR-suh-tee** | /daɪˈvɜːrsəti/ — sounds like **dy-VUR-suh-tee**
+683. n. provider | /prəˈvaɪdə/ — sounds like **pruh-VY-duh** | /prəˈvaɪdər/ — sounds like **pruh-VY-der**
+684. n. employer | /ɪmˈplɔɪə/ — sounds like **im-PLOY-uh** | /ɪmˈplɔɪər/ — sounds like **im-PLOY-er**
+685. n. higher education | /ˌhaɪər ˌedjʊˈkeɪʃən/ — sounds like **HY-er ej-yoo-KAY-shun** | /ˌhaɪər ˌedʒəˈkeɪʃən/ — sounds like **HY-er ej-uh-KAY-shun**
+686. v. equipping | /ɪˈkwɪpɪŋ/ — sounds like **i-KWIP-ing** | /ɪˈkwɪpɪŋ/ — sounds like **i-KWIP-ing**
+687. n. function | /ˈfʌŋkʃən/ — sounds like **FUNK-shun** | /ˈfʌŋkʃən/ — sounds like **FUNK-shun**
+688. adj. immune | /ɪˈmjuːn/ — sounds like **i-MYOON** | /ɪˈmjuːn/ — sounds like **i-MYOON**
+689. n. response | /rɪˈspɒns/ — sounds like **ri-SPONS** | /rɪˈspɑːns/ — sounds like **ri-SPAHNS**
+690. n. meditation | /ˌmedɪˈteɪʃən/ — sounds like **med-i-TAY-shun** | /ˌmedəˈteɪʃən/ — sounds like **med-uh-TAY-shun**
+691. adj. associated | /əˈsəʊsieɪtɪd/ — sounds like **uh-SOH-see-ay-tid** | /əˈsoʊsieɪtɪd/ — sounds like **uh-SOH-see-ay-tid**
+692. n. feelings | /ˈfiːlɪŋz/ — sounds like **FEE-lingz** | /ˈfiːlɪŋz/ — sounds like **FEE-lingz**
+693. n. empathy | /ˈempəθi/ — sounds like **EM-puh-thee** | /ˈempəθi/ — sounds like **EM-puh-thee**
+694. n. practice | /ˈpræktɪs/ — sounds like **PRAK-tis** | /ˈpræktɪs/ — sounds like **PRAK-tis**
+695. n. individuals | /ˌɪndɪˈvɪdʒuəlz/ — sounds like **in-di-VIJ-oo-ulz** | /ˌɪndəˈvɪdʒuəlz/ — sounds like **in-duh-VIJ-oo-ulz**
+696. n. health | /helθ/ — sounds like **HELTH** | /helθ/ — sounds like **HELTH**
+697. n. well-being | /ˌwel ˈbiːɪŋ/ — sounds like **wel BEE-ing** | /ˌwel ˈbiːɪŋ/ — sounds like **wel BEE-ing**
+698. n. interviews | /ˈɪntəvjuːz/ — sounds like **IN-tuh-vyooz** | /ˈɪntərvjuːz/ — sounds like **IN-ter-vyooz**
+699. adv. effectively | /ɪˈfektɪvli/ — sounds like **i-FEK-tiv-lee** | /ɪˈfektɪvli/ — sounds like **i-FEK-tiv-lee**
+700. n. tutors | /ˈtjuːtəz/ — sounds like **TYOO-tuz** | /ˈtuːtərz/ — sounds like **TOO-terz**
+701. adj. excellent | /ˈeksələnt/ — sounds like **EK-suh-lunt** | /ˈeksələnt/ — sounds like **EK-suh-lunt**
+702. n. record | /ˈrekɔːd/ — sounds like **REK-awd** | /ˈrekərd/ — sounds like **REK-erd**

@@ -115,7 +115,7 @@ const FORBIDDEN_PATTERNS = [
   /\.env$/,  // Should not be committed
   /node_modules/,  // Should be in .gitignore
   /\.idea/,  // IDE configs
-  /\.vscode\/(?!extensions\.json$)/  // Allow extensions.json only
+  /\.vscode\/(?!(extensions|mcp)\.json$)/  // Allow shared VS Code recommendations and MCP config
 ];
 
 // Allowed temporary directories

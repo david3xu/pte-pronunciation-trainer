@@ -61,6 +61,7 @@ export class AppConfig {
               'pte-hard-fib-listening': 'data/processed/pte-hard-fib-listening.json',
               'pte-hard-wfd-vocabulary': 'data/processed/pte-hard-wfd-vocabulary.json',
               'pte-ra-vocabulary': 'data/processed/pte-ra-vocabulary.json',
+              'pte-my-ra': 'data/processed/pte-my-ra.json',
               'pte-di-natural-template': 'data/processed/pte-di-natural-template-vocab.json',
               'pte-di-slots': 'data/processed/pte-di-slots-collection.json',
               'pte-rs-segments': 'data/processed/pte-rs-segments-dataset.json',
@@ -74,9 +75,9 @@ export class AppConfig {
               'pte-essay-topic-paraphrase': 'data/processed/pte-essay-topic-paraphrase-vocabulary.json',
 
               // Practice modes
-              'rs': 'data/processed/pte-repeat-sentence.json',
-              'asq': 'data/processed/pte-answer-short-question.json',
-              'wfd': 'data/processed/pte-write-from-dictation.json',
+              'rs': 'data/processed/pte-repeat-sentence-dataset.json',
+              'asq': 'data/processed/pte-answer-short-question-dataset.json',
+              'wfd': 'data/processed/pte-write-from-dictation-dataset.json',
 
               // Shadowing modes
               'di-shadowing': 'data/processed/di-shadowing-natural.json'
@@ -85,6 +86,7 @@ export class AppConfig {
 
         learningModes: [
           // Vocabulary books (13 total)
+          { id: 'pte-my-ra', name: 'My RA PTE Words', category: 'vocabulary', difficulty: 'normal' },
           // { id: 'pte-fib-listening', name: 'PTE FIB Listening', category: 'vocabulary', difficulty: 'normal' },
           // { id: 'pte-beginner', name: 'PTE Beginner', category: 'vocabulary', difficulty: 'easy' },
           // { id: 'pte-intermediate', name: 'PTE Intermediate', category: 'vocabulary', difficulty: 'normal' },
@@ -131,7 +133,7 @@ export class AppConfig {
           { id: 'di-shadowing', name: 'DI Natural Shadowing', category: 'shadowing', description: '43 natural DI answers for pronunciation practice with human-like chunking' }
         ],
 
-        defaultMode: 'pte-beginner'
+        defaultMode: 'pte-fib-listening'
       },
 
       // ===== AI CONFIGURATION =====
@@ -249,10 +251,14 @@ export class AppConfig {
       },
 
       // ===== SETTINGS CONFIGURATION =====
+      // NOTE: The Zustand store (src/stores/index.ts) is the runtime source of
+      // truth for user-settings defaults. These values mirror the store's
+      // initial state so the documented defaults stay honest; they are not read
+      // during store initialization.
       settings: {
         defaults: {
-          autoPlayNext: false,
-          repeatMode: 'off',
+          autoPlayNext: true,
+          repeatMode: 'all',
           showPhonetic: true,
           ttsRate: 1.2,
           ttsVolume: 1.0,

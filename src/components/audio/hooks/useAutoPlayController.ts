@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { appConfig } from '../../../config/AppConfig';
 import { ttsEngine } from '../../../services/audio/TTSEngine';
+import { backgroundAudioService } from '../../../services/audio/backgroundAudioService';
 import { useAppStore, useAudioState, useSettings, useVocabulary } from '../../../stores';
 import type { PracticeItem, VocabularyItem } from '../../../types/dataset.types';
 import { cleanText } from '../../../utils/textUtils';
@@ -64,6 +65,49 @@ export const useAutoPlayController = () => {
   const currentEffectIdRef = useRef(0);
   const nextEffectIdRef = useRef(0);
 
+  // Media-session handlers are registered once but must always dispatch to the
+  // latest callbacks, so they are routed through refs updated on each render.
+  const bgPlayRef = useRef<() => void>(() => {});
+  const bgPauseRef = useRef<() => void>(() => {});
+  const bgNextRef = useRef<() => void>(() => {});
+  const bgPrevRef = useRef<() => void>(() => {});
+
+  // Stop background audio (and abort any pending fetch / revoke Blob URLs) when
+  // the controller unmounts, e.g. on navigation.
+  useEffect(() => {
+    return () => {
+      backgroundAudioService.stop();
+    };
+  }, []);
+
+  /**
+   * Play the current text as real audio and resolve when the audio element's
+   * `ended` event fires, so autoplay progression is driven by playback ending
+   * rather than a timer. Rejects if the audio cannot be fetched or played so
+   * the caller can surface a clear error instead of silently pretending.
+   */
+  const playBackgroundAndWaitForEnd = (text: string): Promise<void> => {
+    return new Promise<void>((resolve, reject) => {
+      backgroundAudioService.setHandlers({
+        onEnded: () => resolve(),
+        onError: (error) => reject(error),
+        onPlay: () => bgPlayRef.current(),
+        onPause: () => bgPauseRef.current(),
+        onStop: () => bgPauseRef.current(),
+        onNext: () => bgNextRef.current(),
+        onPrevious: () => bgPrevRef.current(),
+      });
+      // Resume the current clip mid-playback when the same item is still loaded
+      // and paused; otherwise fetch and play the item from the start. Only
+      // playText refetches, so pause/resume of the same item does not restart it.
+      if (backgroundAudioService.canResume() && backgroundAudioService.getLoadedText() === text) {
+        backgroundAudioService.resume().catch((error) => reject(error));
+      } else {
+        backgroundAudioService.playText(text).catch((error) => reject(error));
+      }
+    });
+  };
+
   const getActiveDataset = () => (
     difficultyFilter !== 'all'
       ? vocabulary.filteredDataset
@@ -72,6 +116,7 @@ export const useAutoPlayController = () => {
 
   const loadNextBook = async (bookId: string) => {
     console.log('[useAutoPlayController] Loading next book:', bookId);
+    backgroundAudioService.stop(); // stop/abort current background audio before switching books
     vocabulary.setLoading(true);
 
     try {
@@ -183,7 +228,24 @@ export const useAutoPlayController = () => {
             }
 
             console.log(`[useAutoPlayController #${effectId}] 🔊 Speaking repeat ${i + 1}/${repeatCount}...`);
-            await speakWithTimeout(cleanedText, settings.ttsRate);
+            if (useAppStore.getState().settings.backgroundAudioMode) {
+              // Background Audio Mode: play real audio (Polly) and advance on the
+              // element's `ended` event. Do not silently fall back to browser TTS.
+              try {
+                await playBackgroundAndWaitForEnd(cleanedText);
+              } catch (bgError) {
+                console.error('[useAutoPlayController] Background audio failed:', bgError);
+                backgroundAudioService.stop();
+                useAppStore.getState().ui.showNotification(
+                  'Background Audio Mode cannot play right now. Premium audio (AWS Polly) may be unavailable. Turn off Background Audio Mode in Settings to use standard playback.',
+                  'error'
+                );
+                audio.stopAutoPlay();
+                return;
+              }
+            } else {
+              await speakWithTimeout(cleanedText, settings.ttsRate);
+            }
             console.log(`[useAutoPlayController #${effectId}] ✅ Speak complete for repeat ${i + 1}/${repeatCount}`);
 
             if (i < repeatCount - 1) {
@@ -307,11 +369,13 @@ export const useAutoPlayController = () => {
     console.log('[useAutoPlayController] ⏸️ handlePause() called');
     audio.pauseAutoPlay();
     void ttsEngine.stopSpeaking();
+    backgroundAudioService.pause();
   };
 
   const handleNext = async () => {
     const timestamp = Date.now();
     console.log(`[useAutoPlayController @${timestamp}] ⏩ handleNext() called`);
+    backgroundAudioService.stop();
     console.log(`[useAutoPlayController @${timestamp}] 📊 Current state: index=${audio.currentIndex}, isAutoPlaying=${audio.isAutoPlaying}`);
 
     console.log(`[useAutoPlayController @${timestamp}] 🛑 Calling stopSpeaking()...`);
@@ -336,6 +400,7 @@ export const useAutoPlayController = () => {
   const handlePrev = async () => {
     const timestamp = Date.now();
     console.log(`[useAutoPlayController @${timestamp}] ⏪ handlePrev() called`);
+    backgroundAudioService.stop();
     console.log(`[useAutoPlayController @${timestamp}] 📊 Current state: index=${audio.currentIndex}, isAutoPlaying=${audio.isAutoPlaying}`);
 
     console.log(`[useAutoPlayController @${timestamp}] 🛑 Calling stopSpeaking()...`);
@@ -352,6 +417,12 @@ export const useAutoPlayController = () => {
       }
     }
   };
+
+  // Point the background-audio media-session handlers at the current callbacks.
+  bgPlayRef.current = handlePlay;
+  bgPauseRef.current = handlePause;
+  bgNextRef.current = () => { void handleNext(); };
+  bgPrevRef.current = () => { void handlePrev(); };
 
   return {
     handlePlay,

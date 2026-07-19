@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-07-19T07:33:04.163Z",
-    "totalTerms": 391,
+    "generated": "2026-07-19T07:38:34.983Z",
+    "totalTerms": 403,
     "source": "pte-my-ra",
     "description": "My PTE Read Aloud word list",
     "version": "1.0",
@@ -6655,6 +6655,210 @@
         }
       },
       "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "research",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈsɜːtʃ",
+          "phonetic": "ri-SURCH"
+        },
+        "american": {
+          "ipa": "ˈriːsɜːrtʃ",
+          "phonetic": "REE-surch"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "conditions",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈdɪʃənz",
+          "phonetic": "kun-DISH-unz"
+        },
+        "american": {
+          "ipa": "kənˈdɪʃənz",
+          "phonetic": "kun-DISH-unz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "observe",
+      "pronunciation": {
+        "british": {
+          "ipa": "əbˈzɜːv",
+          "phonetic": "ub-ZURV"
+        },
+        "american": {
+          "ipa": "əbˈzɜːrv",
+          "phonetic": "ub-ZURV"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "v."
+    },
+    {
+      "english": "temperatures",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtemprətʃəz",
+          "phonetic": "TEM-pruh-chuz"
+        },
+        "american": {
+          "ipa": "ˈtemprətʃərz",
+          "phonetic": "TEM-pruh-churz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "celsius",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈselsiəs",
+          "phonetic": "SEL-see-us"
+        },
+        "american": {
+          "ipa": "ˈselsiəs",
+          "phonetic": "SEL-see-us"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "investigation",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˌvestɪˈɡeɪʃən",
+          "phonetic": "in-ves-ti-GAY-shun"
+        },
+        "american": {
+          "ipa": "ɪnˌvestəˈɡeɪʃən",
+          "phonetic": "in-ves-tuh-GAY-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "dynamic",
+      "pronunciation": {
+        "british": {
+          "ipa": "daɪˈnæmɪk",
+          "phonetic": "dy-NAM-ik"
+        },
+        "american": {
+          "ipa": "daɪˈnæmɪk",
+          "phonetic": "dy-NAM-ik"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "adj."
+    },
+    {
+      "english": "behavior",
+      "pronunciation": {
+        "british": {
+          "ipa": "bɪˈheɪvjə",
+          "phonetic": "bi-HAY-vyuh"
+        },
+        "american": {
+          "ipa": "bɪˈheɪvjər",
+          "phonetic": "bi-HAY-vyer"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "importance",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪmˈpɔːtəns",
+          "phonetic": "im-POR-tuns"
+        },
+        "american": {
+          "ipa": "ɪmˈpɔːrtəns",
+          "phonetic": "im-POR-tuns"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "sensitive",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsensɪtɪv",
+          "phonetic": "SEN-si-tiv"
+        },
+        "american": {
+          "ipa": "ˈsensətɪv",
+          "phonetic": "SEN-suh-tiv"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "adj."
+    },
+    {
+      "english": "samples",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɑːmpəlz",
+          "phonetic": "SAHM-pulz"
+        },
+        "american": {
+          "ipa": "ˈsæmpəlz",
+          "phonetic": "SAM-pulz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "x-ray laser",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈeks reɪ ˈleɪzə",
+          "phonetic": "EKS RAY LAY-zuh"
+        },
+        "american": {
+          "ipa": "ˈeks reɪ ˈleɪzər",
+          "phonetic": "EKS RAY LAY-zer"
+        }
+      },
+      "difficulty": "hard",
       "category": "pte-my-ra",
       "source": "pte-my-ra",
       "wordType": "n."

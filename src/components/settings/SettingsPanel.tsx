@@ -51,7 +51,13 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
   // Get vocabulary books from config dynamically
   const vocabularyBooks = useMemo(() => {
     const learningModes = appConfig.get('data.learningModes') || [];
-    return learningModes.filter((mode: any) => mode.category === 'vocabulary');
+    return learningModes
+      .filter((mode: any) => mode.category === 'vocabulary')
+      .sort((a: any, b: any) => {
+        if (a.id === 'pte-my-ra') return -1;
+        if (b.id === 'pte-my-ra') return 1;
+        return 0;
+      });
   }, []);
 
   // Handle vocabulary book change

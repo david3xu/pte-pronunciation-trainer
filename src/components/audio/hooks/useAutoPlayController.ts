@@ -5,24 +5,6 @@ import { useAppStore, useAudioState, useSettings, useVocabulary } from '../../..
 import type { PracticeItem, VocabularyItem } from '../../../types/dataset.types';
 import { cleanText } from '../../../utils/textUtils';
 
-const VOCABULARY_BOOKS = [
-  'pte-fib-listening',
-  'pte-beginner',
-  'pte-intermediate',
-  'pte-advanced',
-  'pte-ra',
-  'pte-rs-vocab',
-  'pte-must-know',
-  'pte-wfd-vocab',
-  'pte-rs-wfd-vocab',
-  'pte-reading-fib',
-  'pte-reading-fib-drag',
-  'pte-asq-answers',
-  'pte-high-frequency',
-  'pte-rs-core',
-  'pte-essay-90plus-filled-terms',
-];
-
 type LearningItem = (VocabularyItem | PracticeItem) & Partial<{
   english: string;
   fullText: string;
@@ -44,6 +26,13 @@ const getItemLabel = (item: LearningItem): string => getItemText(item)?.substrin
 const getDelay = (path: string, fallback: number): number => {
   const configuredDelay = appConfig.get(path);
   return typeof configuredDelay === 'number' ? configuredDelay : fallback;
+};
+
+const getVocabularyBookIds = (): string[] => {
+  const learningModes = appConfig.get('data.learningModes') || [];
+  return learningModes
+    .filter((mode: any) => mode.category === 'vocabulary')
+    .map((mode: any) => mode.id);
 };
 
 const speakWithTimeout = async (text: string, rate: number): Promise<void> => {
@@ -233,8 +222,9 @@ export const useAutoPlayController = () => {
 
         const shouldAutoSwitch = settings.practiceType === 'vocabulary' && settings.autoSwitchBooks;
         if (shouldAutoSwitch) {
+          const vocabularyBooks = getVocabularyBookIds();
           const currentBookId = settings.vocabularyBook;
-          const currentBookIndex = VOCABULARY_BOOKS.indexOf(currentBookId);
+          const currentBookIndex = vocabularyBooks.indexOf(currentBookId);
 
           if (currentBookIndex === -1) {
             console.error('[useAutoPlayController] Current book not found in book list:', currentBookId);
@@ -243,8 +233,8 @@ export const useAutoPlayController = () => {
           }
 
           const nextBookIndex = currentBookIndex + 1;
-          if (nextBookIndex < VOCABULARY_BOOKS.length) {
-            const nextBookId = VOCABULARY_BOOKS[nextBookIndex];
+          if (nextBookIndex < vocabularyBooks.length) {
+            const nextBookId = vocabularyBooks[nextBookIndex];
             if (nextBookId) {
               console.log(`[useAutoPlayController] Auto-switching from ${currentBookId} to ${nextBookId}`);
               await sleep(getDelay('delays.autoPlayRestartPause', 1000));
@@ -256,7 +246,7 @@ export const useAutoPlayController = () => {
           }
 
           if (audio.repeatMode) {
-            const firstBookId = VOCABULARY_BOOKS[0];
+            const firstBookId = vocabularyBooks[0];
             if (firstBookId) {
               console.log('[useAutoPlayController] Reached last book - looping back to first book');
               await sleep(getDelay('delays.autoPlayRestartPause', 1000));

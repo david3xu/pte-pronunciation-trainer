@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-07-19T07:27:21.639Z",
-    "totalTerms": 362,
+    "generated": "2026-07-19T07:29:08.529Z",
+    "totalTerms": 370,
     "source": "pte-my-ra",
     "description": "My PTE Read Aloud word list",
     "version": "1.0",
@@ -6162,6 +6162,142 @@
         }
       },
       "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "tourism",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtʊərɪzəm",
+          "phonetic": "TOOR-iz-um"
+        },
+        "american": {
+          "ipa": "ˈtʊrɪzəm",
+          "phonetic": "TOOR-iz-um"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "challenging",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtʃælɪndʒɪŋ",
+          "phonetic": "CHAL-in-jing"
+        },
+        "american": {
+          "ipa": "ˈtʃælɪndʒɪŋ",
+          "phonetic": "CHAL-in-jing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "adj."
+    },
+    {
+      "english": "businesses",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbɪznɪsɪz",
+          "phonetic": "BIZ-nis-iz"
+        },
+        "american": {
+          "ipa": "ˈbɪznəsɪz",
+          "phonetic": "BIZ-nuh-siz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "tourists",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtʊərɪsts",
+          "phonetic": "TOOR-ists"
+        },
+        "american": {
+          "ipa": "ˈtʊrɪsts",
+          "phonetic": "TOOR-ists"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "therefore",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈðeəfɔː",
+          "phonetic": "THAIR-for"
+        },
+        "american": {
+          "ipa": "ˈðerfɔːr",
+          "phonetic": "THAIR-for"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "adv."
+    },
+    {
+      "english": "straightforward",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌstreɪtˈfɔːwəd",
+          "phonetic": "strayt-FOR-wud"
+        },
+        "american": {
+          "ipa": "ˌstreɪtˈfɔːrwərd",
+          "phonetic": "strayt-FOR-wurd"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "adj."
+    },
+    {
+      "english": "sectors",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsektəz",
+          "phonetic": "SEK-tuhz"
+        },
+        "american": {
+          "ipa": "ˈsektərz",
+          "phonetic": "SEK-terz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "revenues",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈrevənjuːz",
+          "phonetic": "REV-uh-nyooz"
+        },
+        "american": {
+          "ipa": "ˈrevənuːz",
+          "phonetic": "REV-uh-nooz"
+        }
+      },
+      "difficulty": "normal",
       "category": "pte-my-ra",
       "source": "pte-my-ra",
       "wordType": "n."

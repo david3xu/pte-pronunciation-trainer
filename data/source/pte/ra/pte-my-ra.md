@@ -369,3 +369,11 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 363. n. surprise | /səˈpraɪz/ — sounds like **suh-PRYZ** | /sərˈpraɪz/ — sounds like **ser-PRYZ**
 364. n. scientists | /ˈsaɪəntɪsts/ — sounds like **SY-un-tists** | /ˈsaɪəntɪsts/ — sounds like **SY-un-tists**
 365. n. significance | /sɪɡˈnɪfɪkəns/ — sounds like **sig-NIF-i-kuns** | /sɪɡˈnɪfɪkəns/ — sounds like **sig-NIF-i-kuns**
+366. n. tourism | /ˈtʊərɪzəm/ — sounds like **TOOR-iz-um** | /ˈtʊrɪzəm/ — sounds like **TOOR-iz-um**
+367. adj. challenging | /ˈtʃælɪndʒɪŋ/ — sounds like **CHAL-in-jing** | /ˈtʃælɪndʒɪŋ/ — sounds like **CHAL-in-jing**
+368. n. businesses | /ˈbɪznɪsɪz/ — sounds like **BIZ-nis-iz** | /ˈbɪznəsɪz/ — sounds like **BIZ-nuh-siz**
+369. n. tourists | /ˈtʊərɪsts/ — sounds like **TOOR-ists** | /ˈtʊrɪsts/ — sounds like **TOOR-ists**
+370. adv. therefore | /ˈðeəfɔː/ — sounds like **THAIR-for** | /ˈðerfɔːr/ — sounds like **THAIR-for**
+371. adj. straightforward | /ˌstreɪtˈfɔːwəd/ — sounds like **strayt-FOR-wud** | /ˌstreɪtˈfɔːrwərd/ — sounds like **strayt-FOR-wurd**
+372. n. sectors | /ˈsektəz/ — sounds like **SEK-tuhz** | /ˈsektərz/ — sounds like **SEK-terz**
+373. n. revenues | /ˈrevənjuːz/ — sounds like **REV-uh-nyooz** | /ˈrevənuːz/ — sounds like **REV-uh-nooz**

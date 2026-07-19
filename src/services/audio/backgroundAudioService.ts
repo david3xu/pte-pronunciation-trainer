@@ -45,6 +45,7 @@ interface PremiumTtsResponse {
 export class BackgroundAudioService {
   private audio: HTMLAudioElement | null = null;
   private objectUrl: string | null = null;
+  private currentText: string | null = null;
   private handlers: BackgroundAudioHandlers = {};
   private fetchController: AbortController | null = null;
   private mediaSessionBound = false;
@@ -57,6 +58,21 @@ export class BackgroundAudioService {
       typeof URL !== 'undefined' &&
       typeof URL.createObjectURL === 'function'
     );
+  }
+
+  /** True when a clip is loaded and paused mid-playback, so it can be resumed. */
+  canResume(): boolean {
+    return (
+      !!this.audio &&
+      this.objectUrl !== null &&
+      this.audio.paused &&
+      !this.audio.ended
+    );
+  }
+
+  /** The text of the currently loaded clip, or null when nothing is loaded. */
+  getLoadedText(): string | null {
+    return this.currentText;
   }
 
   setHandlers(handlers: BackgroundAudioHandlers): void {
@@ -88,6 +104,7 @@ export class BackgroundAudioService {
     const audio = this.ensureAudioElement();
     this.releaseObjectUrl(); // revoke the previous clip before swapping src
     this.objectUrl = blobUrl;
+    this.currentText = text;
     audio.src = blobUrl;
 
     this.setMediaMetadata(text);
@@ -119,6 +136,7 @@ export class BackgroundAudioService {
       this.audio.load();
     }
     this.releaseObjectUrl();
+    this.currentText = null;
     this.setPlaybackState('none');
   }
 

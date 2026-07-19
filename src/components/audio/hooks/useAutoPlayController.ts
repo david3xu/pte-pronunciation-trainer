@@ -97,7 +97,14 @@ export const useAutoPlayController = () => {
         onNext: () => bgNextRef.current(),
         onPrevious: () => bgPrevRef.current(),
       });
-      backgroundAudioService.playText(text).catch((error) => reject(error));
+      // Resume the current clip mid-playback when the same item is still loaded
+      // and paused; otherwise fetch and play the item from the start. Only
+      // playText refetches, so pause/resume of the same item does not restart it.
+      if (backgroundAudioService.canResume() && backgroundAudioService.getLoadedText() === text) {
+        backgroundAudioService.resume().catch((error) => reject(error));
+      } else {
+        backgroundAudioService.playText(text).catch((error) => reject(error));
+      }
     });
   };
 

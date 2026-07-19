@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-07-19T07:39:40.243Z",
-    "totalTerms": 409,
+    "generated": "2026-07-19T07:41:16.761Z",
+    "totalTerms": 416,
     "source": "pte-my-ra",
     "description": "My PTE Read Aloud word list",
     "version": "1.0",
@@ -6961,6 +6961,125 @@
         }
       },
       "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "organisms",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɔːɡənɪzəmz",
+          "phonetic": "OR-guh-niz-umz"
+        },
+        "american": {
+          "ipa": "ˈɔːrɡənɪzəmz",
+          "phonetic": "OR-guh-niz-umz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "crustaceans",
+      "pronunciation": {
+        "british": {
+          "ipa": "krʌˈsteɪʃənz",
+          "phonetic": "krus-TAY-shunz"
+        },
+        "american": {
+          "ipa": "krʌˈsteɪʃənz",
+          "phonetic": "krus-TAY-shunz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "molluscs",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmɒləsks",
+          "phonetic": "MOL-usks"
+        },
+        "american": {
+          "ipa": "ˈmɑːləsks",
+          "phonetic": "MAH-lusks"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "involves",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈvɒlvz",
+          "phonetic": "in-VOLVZ"
+        },
+        "american": {
+          "ipa": "ɪnˈvɑːlvz",
+          "phonetic": "in-VAHLVZ"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "v."
+    },
+    {
+      "english": "cultivating",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌltɪveɪtɪŋ",
+          "phonetic": "KUL-ti-vay-ting"
+        },
+        "american": {
+          "ipa": "ˈkʌltəveɪtɪŋ",
+          "phonetic": "KUL-tuh-vay-ting"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "v."
+    },
+    {
+      "english": "populations",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌpɒpjʊˈleɪʃənz",
+          "phonetic": "pop-yoo-LAY-shunz"
+        },
+        "american": {
+          "ipa": "ˌpɑːpjəˈleɪʃənz",
+          "phonetic": "pah-pyuh-LAY-shunz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "controlled conditions",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈtrəʊld kənˈdɪʃənz",
+          "phonetic": "kun-TROHLD kun-DISH-unz"
+        },
+        "american": {
+          "ipa": "kənˈtroʊld kənˈdɪʃənz",
+          "phonetic": "kun-TROHLD kun-DISH-unz"
+        }
+      },
+      "difficulty": "hard",
       "category": "pte-my-ra",
       "source": "pte-my-ra",
       "wordType": "n."

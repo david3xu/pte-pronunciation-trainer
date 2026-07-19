@@ -30,7 +30,9 @@ validation-report.json
 .env.production.local
 
 # IDE and editor files
-.vscode/
+.vscode/*
+!.vscode/
+!.vscode/mcp.json
 .idea/
 *.swp
 *.swo

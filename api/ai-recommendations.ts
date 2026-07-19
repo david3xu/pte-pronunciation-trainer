@@ -26,7 +26,8 @@ const getGeminiClient = () => {
 interface RequestBody {
   userId: string;
   currentAccuracy: number;
-  completedItems: string[];
+  completedCount: number;
+  totalItems: number;
   currentMode: string;
 }
 
@@ -50,7 +51,7 @@ export default async function handler(
   }
 
   try {
-    const { userId, currentAccuracy, completedItems, currentMode }: RequestBody = req.body;
+    const { userId, currentAccuracy, completedCount, totalItems, currentMode }: RequestBody = req.body;
 
     // Validate request
     if (!userId) {
@@ -75,9 +76,8 @@ export default async function handler(
 
 User Progress:
 - Current Accuracy: ${currentAccuracy}%
-- Completed Items: ${completedItems.length} words
+- Completed Items: ${completedCount} of ${totalItems} items
 - Current Mode: ${currentMode}
-- Recent Practice: ${completedItems.slice(-10).join(', ') || 'None'}
 
 Based on this progress:
 1. Identify weak areas (low accuracy suggests need for easier words)
@@ -108,33 +108,13 @@ Return only valid JSON array, no additional text.`;
     if (!responseText) {
       console.error('Empty response from Gemini API');
       res.status(200).json({
-        recommendations: getMockRecommendations(currentAccuracy),
+        success: true,
+        data: getMockRecommendations(currentAccuracy),
       });
       return;
     }
 
-    // Parse Gemini response
-    let recommendations: Recommendation[];
-
-    try {
-      // Extract JSON from response (might be wrapped in markdown code blocks)
-      const jsonMatch = responseText.match(/```json\n([\s\S]*?)\n```/) || responseText.match(/\[([\s\S]*?)\]/);
-      const jsonText = jsonMatch ? (jsonMatch[1] || jsonMatch[0]) : responseText;
-
-      // Try to parse as direct array
-      recommendations = JSON.parse(jsonText);
-    } catch (parseError) {
-      // Try to extract array from object response
-      try {
-        const jsonMatch = responseText.match(/```json\n([\s\S]*?)\n```/) || responseText.match(/\[([\s\S]*?)\]/);
-        const jsonText = jsonMatch ? (jsonMatch[1] || jsonMatch[0]) : responseText;
-        const parsed = JSON.parse(jsonText);
-        recommendations = Array.isArray(parsed) ? parsed : (parsed.recommendations || parsed.data || []);
-      } catch {
-        console.error('Failed to parse Gemini response:', responseText);
-        recommendations = getMockRecommendations(currentAccuracy);
-      }
-    }
+    let recommendations = parseRecommendationsResponse(responseText) ?? getMockRecommendations(currentAccuracy);
 
     // Ensure we have valid recommendations
     if (!Array.isArray(recommendations) || recommendations.length === 0) {
@@ -158,6 +138,63 @@ Return only valid JSON array, no additional text.`;
       warning: 'Using fallback recommendations due to API error',
     });
   }
+}
+
+function parseRecommendationsResponse(responseText: string): Recommendation[] | null {
+  const fencedMatch = responseText.match(/```(?:json)?\s*([\s\S]*?)\s*```/i);
+  const jsonText = (fencedMatch?.[1] ?? responseText).trim();
+
+  try {
+    return extractRecommendations(JSON.parse(jsonText));
+  } catch {
+    const arrayMatch = jsonText.match(/\[[\s\S]*\]/);
+    if (!arrayMatch) {
+      console.error('Failed to parse Gemini response:', responseText);
+      return null;
+    }
+
+    try {
+      return extractRecommendations(JSON.parse(arrayMatch[0]));
+    } catch {
+      console.error('Failed to parse Gemini response:', responseText);
+      return null;
+    }
+  }
+}
+
+function extractRecommendations(parsed: unknown): Recommendation[] | null {
+  if (Array.isArray(parsed)) {
+    return parsed.filter(isRecommendation);
+  }
+
+  if (parsed && typeof parsed === 'object') {
+    const wrapper = parsed as { recommendations?: unknown; data?: unknown };
+    const wrappedRecommendations = Array.isArray(wrapper.recommendations)
+      ? wrapper.recommendations
+      : Array.isArray(wrapper.data)
+        ? wrapper.data
+        : null;
+
+    return wrappedRecommendations ? wrappedRecommendations.filter(isRecommendation) : null;
+  }
+
+  return null;
+}
+
+function isRecommendation(item: unknown): item is Recommendation {
+  if (!item || typeof item !== 'object') {
+    return false;
+  }
+
+  const candidate = item as Partial<Recommendation>;
+  return (
+    typeof candidate.word === 'string' &&
+    typeof candidate.reason === 'string' &&
+    typeof candidate.category === 'string' &&
+    (candidate.difficulty === 'easy' ||
+      candidate.difficulty === 'normal' ||
+      candidate.difficulty === 'hard')
+  );
 }
 
 /**

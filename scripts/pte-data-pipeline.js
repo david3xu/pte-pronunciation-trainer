@@ -48,6 +48,17 @@ const PIPELINE_CONFIG = {
       extractorType: 'PTETermsExtractor',
       inputSubdir: 'rl',
       keepDuplicates: true
+    },
+    {
+      id: 'pte-my-ra',
+      input: 'pte-my-ra.md',
+      output: 'pte-my-ra.json',
+      category: 'pte-my-ra',
+      description: 'My PTE Read Aloud word list',
+      sourceType: 'pte-my-ra',
+      extractorType: 'PTETermsExtractor',
+      inputSubdir: 'ra',
+      keepDuplicates: false
     }
   ]
 };

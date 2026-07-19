@@ -243,6 +243,16 @@ export class AppConfig {
           : 'us-east-1'
       },
 
+      // ===== BACKGROUND AUDIO MODE =====
+      // Real-audio (Polly) playback used when settings.backgroundAudioMode is on,
+      // so practice keeps playing while the screen is locked or the app is
+      // backgrounded. Voice/engine/language are sourced from the `voice` block
+      // above (single source of truth).
+      backgroundAudio: {
+        outputFormat: 'mp3', // Most broadly supported container for <audio> on mobile
+        mediaSessionArtist: 'PTE Pronunciation Trainer'
+      },
+
       // ===== UI CONFIGURATION =====
       ui: {
         theme: 'auto',

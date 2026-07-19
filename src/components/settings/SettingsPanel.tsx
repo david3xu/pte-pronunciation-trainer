@@ -13,6 +13,7 @@ import { Badge, Button, Card, Flex, Select, Slider, Switch, Tabs, Text } from '@
 import React, { useEffect, useMemo } from 'react';
 import { appConfig } from '../../config/AppConfig';
 import { useAudioState, useSettings, useVocabulary } from '../../stores';
+import { backgroundAudioService } from '../../services/audio/backgroundAudioService';
 
 interface SettingsPanelProps {
   isOpen: boolean;
@@ -67,6 +68,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
     // Stop any currently playing TTS before switching books
     const { ttsEngine } = await import('../../services/audio/TTSEngine');
     ttsEngine.stopSpeaking();
+    backgroundAudioService.stop();
 
     updateSetting('vocabularyBook', bookId);
 
@@ -156,6 +158,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
     // Stop any currently playing TTS before switching modes
     const { ttsEngine } = await import('../../services/audio/TTSEngine');
     ttsEngine.stopSpeaking();
+    backgroundAudioService.stop();
 
     updateSetting('practiceMode', mode);
 
@@ -473,6 +476,29 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                 <Text size="1" color="gray">
                   Browser voice is used for all playback.
                 </Text>
+              </Flex>
+
+              {/* Background Audio Mode */}
+              <Flex direction="column" gap="2">
+                <Flex justify="between" align="center">
+                  <Flex direction="column" gap="1">
+                    <Text size="3">Background Audio Mode</Text>
+                    <Text size="1" color="gray">
+                      Play real audio (premium voice) so practice keeps going when the screen locks or the app is in the background. Still needs one tap on Play to start.
+                    </Text>
+                  </Flex>
+                  <Switch
+                    checked={settings.backgroundAudioMode}
+                    onCheckedChange={(checked) =>
+                      updateSetting('backgroundAudioMode', checked)
+                    }
+                  />
+                </Flex>
+                {settings.backgroundAudioMode && (
+                  <Text size="1" color="blue">
+                    ℹ️ Uses premium audio. If premium audio is unavailable, you will see a clear error instead of silent playback.
+                  </Text>
+                )}
               </Flex>
             </Flex>
           </Tabs.Content>

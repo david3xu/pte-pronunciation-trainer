@@ -353,3 +353,8 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 347. adj. operating | /ˈɒpəreɪtɪŋ/ — sounds like **OP-uh-ray-ting** | /ˈɑːpəreɪtɪŋ/ — sounds like **AH-puh-ray-ting**
 348. adj. Net-neutral | /net ˈnjuːtrəl/ — sounds like **NET NYOO-trul** | /net ˈnuːtrəl/ — sounds like **NET NOO-trul**
 349. adj. third | /θɜːd/ — sounds like **THURD** | /θɜːrd/ — sounds like **THURD**
+350. v. imagine | /ɪˈmædʒɪn/ — sounds like **i-MAJ-in** | /ɪˈmædʒɪn/ — sounds like **i-MAJ-in**
+351. n. family | /ˈfæməli/ — sounds like **FAM-uh-lee** | /ˈfæməli/ — sounds like **FAM-uh-lee**
+352. n. houses | /ˈhaʊzɪz/ — sounds like **HOW-ziz** | /ˈhaʊzɪz/ — sounds like **HOW-ziz**
+353. n. neighbours | /ˈneɪbəz/ — sounds like **NAY-buhz** | /ˈneɪbərz/ — sounds like **NAY-berz**
+354. n. gardens | /ˈɡɑːdənz/ — sounds like **GAR-dunz** | /ˈɡɑːrdənz/ — sounds like **GAR-dunz**

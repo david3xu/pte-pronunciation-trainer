@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-07-19T07:24:09.264Z",
-    "totalTerms": 347,
+    "generated": "2026-07-19T07:25:49.577Z",
+    "totalTerms": 352,
     "source": "pte-my-ra",
     "description": "My PTE Read Aloud word list",
     "version": "1.0",
@@ -5910,6 +5910,91 @@
       "category": "pte-my-ra",
       "source": "pte-my-ra",
       "wordType": "adj."
+    },
+    {
+      "english": "imagine",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪˈmædʒɪn",
+          "phonetic": "i-MAJ-in"
+        },
+        "american": {
+          "ipa": "ɪˈmædʒɪn",
+          "phonetic": "i-MAJ-in"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "v."
+    },
+    {
+      "english": "family",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfæməli",
+          "phonetic": "FAM-uh-lee"
+        },
+        "american": {
+          "ipa": "ˈfæməli",
+          "phonetic": "FAM-uh-lee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "houses",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhaʊzɪz",
+          "phonetic": "HOW-ziz"
+        },
+        "american": {
+          "ipa": "ˈhaʊzɪz",
+          "phonetic": "HOW-ziz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "neighbours",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈneɪbəz",
+          "phonetic": "NAY-buhz"
+        },
+        "american": {
+          "ipa": "ˈneɪbərz",
+          "phonetic": "NAY-berz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
+    },
+    {
+      "english": "gardens",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɡɑːdənz",
+          "phonetic": "GAR-dunz"
+        },
+        "american": {
+          "ipa": "ˈɡɑːrdənz",
+          "phonetic": "GAR-dunz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-ra",
+      "source": "pte-my-ra",
+      "wordType": "n."
     }
   ]
 }

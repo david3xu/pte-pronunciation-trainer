@@ -387,3 +387,11 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 381. n. unemployment | /ˌʌnɪmˈplɔɪmənt/ — sounds like **un-im-PLOY-munt** | /ˌʌnɪmˈplɔɪmənt/ — sounds like **un-im-PLOY-munt**
 382. adj. reinforced | /ˌriːɪnˈfɔːst/ — sounds like **ree-in-FORST** | /ˌriːɪnˈfɔːrst/ — sounds like **ree-in-FORST**
 383. adj. unhappy | /ʌnˈhæpi/ — sounds like **un-HAP-ee** | /ʌnˈhæpi/ — sounds like **un-HAP-ee**
+384. adj. widespread | /ˈwaɪdspred/ — sounds like **WYDE-spred** | /ˈwaɪdspred/ — sounds like **WYDE-spred**
+385. v. assist | /əˈsɪst/ — sounds like **uh-SIST** | /əˈsɪst/ — sounds like **uh-SIST**
+386. n. world | /wɜːld/ — sounds like **WURLD** | /wɜːrld/ — sounds like **WURLD**
+387. v. connect | /kəˈnekt/ — sounds like **kuh-NEKT** | /kəˈnekt/ — sounds like **kuh-NEKT**
+388. n. telephone | /ˈtelɪfəʊn/ — sounds like **TEL-i-fohn** | /ˈtelɪfoʊn/ — sounds like **TEL-i-fohn**
+389. n. networks | /ˈnetwɜːks/ — sounds like **NET-wurks** | /ˈnetwɜːrks/ — sounds like **NET-wurks**
+390. n. messaging | /ˈmesɪdʒɪŋ/ — sounds like **MES-ij-ing** | /ˈmesɪdʒɪŋ/ — sounds like **MES-ij-ing**
+391. n. telecommunication | /ˌtelɪkəˌmjuːnɪˈkeɪʃən/ — sounds like **tel-i-kuh-myoo-ni-KAY-shun** | /ˌtelɪkəˌmjuːnəˈkeɪʃən/ — sounds like **tel-i-kuh-myoo-nuh-KAY-shun**

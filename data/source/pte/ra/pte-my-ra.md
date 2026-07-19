@@ -395,3 +395,10 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 389. n. networks | /ˈnetwɜːks/ — sounds like **NET-wurks** | /ˈnetwɜːrks/ — sounds like **NET-wurks**
 390. n. messaging | /ˈmesɪdʒɪŋ/ — sounds like **MES-ij-ing** | /ˈmesɪdʒɪŋ/ — sounds like **MES-ij-ing**
 391. n. telecommunication | /ˌtelɪkəˌmjuːnɪˈkeɪʃən/ — sounds like **tel-i-kuh-myoo-ni-KAY-shun** | /ˌtelɪkəˌmjuːnəˈkeɪʃən/ — sounds like **tel-i-kuh-myoo-nuh-KAY-shun**
+392. adj. royal | /ˈrɔɪəl/ — sounds like **ROY-ul** | /ˈrɔɪəl/ — sounds like **ROY-ul**
+393. pron. themselves | /ðəmˈselvz/ — sounds like **thum-SELVS** | /ðəmˈselvz/ — sounds like **thum-SELVS**
+394. prep. including | /ɪnˈkluːdɪŋ/ — sounds like **in-KLOO-ding** | /ɪnˈkluːdɪŋ/ — sounds like **in-KLOO-ding**
+395. n. Michael | /ˈmaɪkəl/ — sounds like **MY-kul** | /ˈmaɪkəl/ — sounds like **MY-kul**
+396. n. discoveries | /dɪˈskʌvəriz/ — sounds like **di-SKUV-uh-reez** | /dɪˈskʌvəriz/ — sounds like **di-SKUV-uh-reez**
+397. n. electricity | /ɪˌlekˈtrɪsəti/ — sounds like **i-lek-TRIS-uh-tee** | /ɪˌlekˈtrɪsəti/ — sounds like **i-lek-TRIS-uh-tee**
+398. n. consoles | /kənˈsəʊlz/ — sounds like **kun-SOHLZ** | /kənˈsoʊlz/ — sounds like **kun-SOHLZ**

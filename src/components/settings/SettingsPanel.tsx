@@ -14,6 +14,7 @@ import React, { useEffect, useMemo } from 'react';
 import { appConfig } from '../../config/AppConfig';
 import { useAudioState, useSettings, useVocabulary } from '../../stores';
 import { backgroundAudioService } from '../../services/audio/backgroundAudioService';
+import { loadDataset } from '../../services/dataset/datasetLoader';
 
 interface SettingsPanelProps {
   isOpen: boolean;
@@ -76,53 +77,8 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
     setLoading(true);
 
     try {
-      const dataPaths = appConfig.get('data.paths.byMode');
-      const basePath = dataPaths[bookId] || `/data/processed/${bookId}-vocabulary.json`;
-      const dataPath = `${basePath}?t=${new Date().getTime()}`;
-      console.log('[SettingsPanel] Loading vocabulary book:', bookId, 'from:', dataPath);
-
-      const response = await fetch(dataPath);
-      if (!response.ok) {
-        throw new Error(`Failed to load vocabulary: ${response.statusText}`);
-      }
-
-      const data = await response.json();
-      // Shadowing modes use 'answers' instead of 'vocabulary'
-      // RS/WFD segments and other datasets may use 'items' array
-      let items = data.vocabulary || data.answers || data.items || [];
-
-      // Transform shadowing items to be compatible with vocabulary UI
-      if (data.answers) {
-        items = items.map((answer: any) => ({
-          english: answer.title || answer.fullText?.substring(0, 50),
-          pronunciation: {
-            british: { ipa: '', phonetic: 'DI Answer' },
-            american: { ipa: '', phonetic: 'DI Answer' }
-          },
-          difficulty: 'normal',
-          category: bookId,
-          source: bookId,
-          // Keep original shadowing data
-          ...answer
-        }));
-      }
-
-      // Transform segment items (RS/WFD segments) to be compatible with WordCard
-      // Use 'english' so they display like vocabulary items (no Play Audio button)
-      if (items.length > 0 && items[0]?.content?.sentence) {
-        items = items.map((item: any) => ({
-          id: item.id,
-          english: item.content.sentence,  // Use 'english' to display like vocabulary
-          ipa: item.content.ipa,
-          difficulty: item.metadata?.difficulty || 'normal',
-          category: item.metadata?.category || 'general',
-          wordCount: item.metadata?.wordCount,
-          type: item.type,
-          source: bookId,
-        }));
-      }
-
-      console.log(`[SettingsPanel] Loaded ${items.length} items (${data.vocabulary ? 'vocabulary' : 'shadowing'})`);
+      const { items } = await loadDataset(bookId);
+      console.log(`[SettingsPanel] Loaded ${items.length} items`);
       setDataset(items, bookId); // Now atomically sets currentItem and resets index
 
       // Reapply difficulty filter to new book
@@ -168,30 +124,8 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
     setLoading(true);
 
     try {
-      const practiceDataPathMap: Record<string, string> = {
-        'practice-repeat-sentence': '/data/processed/pte-repeat-sentence-dataset.json',
-        'practice-answer-short-question': '/data/processed/pte-answer-short-question-dataset.json',
-        'practice-write-from-dictation': '/data/processed/pte-write-from-dictation-dataset.json',
-      };
-
-      const dataPath = practiceDataPathMap[mode];
-      if (!dataPath) {
-        throw new Error(`Unknown practice mode: ${mode}`);
-      }
-
-      console.log('[SettingsPanel] Loading practice dataset:', mode, 'from:', dataPath);
-
-      const response = await fetch(dataPath);
-      if (!response.ok) {
-        throw new Error(`Failed to load practice dataset: ${response.statusText}`);
-      }
-
-      const data = await response.json();
-      // Practice datasets have different structures - try both 'items' and 'sentences'
-      const items = data.items || data.sentences || data.questions || [];
-
+      const { items } = await loadDataset(mode);
       console.log(`[SettingsPanel] Loaded ${items.length} practice items`);
-      console.log('[SettingsPanel] First item:', items[0]);
       setDataset(items, mode); // Now atomically sets currentItem and resets index
 
       // Reapply difficulty filter to practice dataset

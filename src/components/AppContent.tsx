@@ -93,12 +93,9 @@ export const AppContent: React.FC = () => {
         const validPersistedIndex = persistedIndex > 0 && persistedIndex < items.length;
         const startIndex = validPersistedIndex ? persistedIndex : 0;
         
-        progress.updateProgress(startIndex, items.length); // Restore or reset progress
-        
-        // If we have a persisted index, set the correct current item
-        if (validPersistedIndex && items[startIndex]) {
-          vocabulary.setCurrentItem(items[startIndex]);
-          audio.setCurrentIndex(startIndex); // Sync audio index
+        vocabulary.goToItem(startIndex);
+
+        if (validPersistedIndex) {
           console.log(`[App] Restored progress to item ${startIndex + 1}/${items.length}`);
         } else {
           console.log(`[App] Starting fresh at item 1/${items.length}`);
@@ -269,43 +266,24 @@ export const AppContent: React.FC = () => {
   const handleNext = () => {
     // Determine next index based on current progress
     const nextIndex = progress.currentIndex + 1;
-    const { filteredDataset, setCurrentItem } = vocabulary;
+    const { filteredDataset } = vocabulary;
 
     // Check bounds
     if (nextIndex < filteredDataset.length) {
-      // Sync all states
-      progress.updateProgress(nextIndex, filteredDataset.length);
-      audio.setCurrentIndex(nextIndex); // Explicitly sync audio index
-
-      const nextItem = filteredDataset[nextIndex];
-      if (nextItem) {
-        setCurrentItem(nextItem);
-      }
+      vocabulary.goToItem(nextIndex);
     } else {
       // Potentially handle end of list (loop or stop)
       if (audio.repeatMode && filteredDataset.length > 0) {
-        progress.updateProgress(0, filteredDataset.length);
-        audio.setCurrentIndex(0);
-        const firstItem = filteredDataset[0];
-        if (firstItem) {
-          setCurrentItem(firstItem);
-        }
+        vocabulary.goToItem(0);
       }
     }
   };
 
   const handlePrevious = () => {
     const prevIndex = progress.currentIndex - 1;
-    const { filteredDataset, setCurrentItem } = vocabulary;
 
     if (prevIndex >= 0) {
-      progress.updateProgress(prevIndex, filteredDataset.length);
-      audio.setCurrentIndex(prevIndex);
-
-      const prevItem = filteredDataset[prevIndex];
-      if (prevItem) {
-        setCurrentItem(prevItem);
-      }
+      vocabulary.goToItem(prevIndex);
     }
   };
 

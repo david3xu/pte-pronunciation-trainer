@@ -38,6 +38,23 @@ import type {
     VocabularyState,
 } from './types';
 
+const trackVocabularyPractice = (
+  item: VocabularyTerm | PracticeItem,
+  mode: string
+) => {
+  if (!(window as any).analyticsService) return;
+
+  const word = (item as any).word || (item as any).sentence || (item as any).question || 'unknown';
+  const difficulty = (item as any).difficulty || (item as any).metadata?.difficulty || 'normal';
+  const category = (item as any).category || (item as any).metadata?.category || mode;
+
+  (window as any).analyticsService.trackWordPractice(word, {
+    difficulty,
+    category,
+    mode,
+  });
+};
+
 // Combined store type
 export interface AppState {
   audio: AudioState;
@@ -209,24 +226,46 @@ export const useAppStore = create<AppState>()(
                 audio: {
                   ...state.audio,
                   currentIndex: 0,
-                }
+                },
+                progress: {
+                  ...state.progress,
+                  currentIndex: 0,
+                  totalItems: dataset.length,
+                },
               }));
             },
             setCurrentItem: (item) => {
               // Track vocabulary word practice
-              if (item && (window as any).analyticsService) {
-                const word = (item as any).word || (item as any).sentence || (item as any).question || 'unknown';
-                const difficulty = (item as any).difficulty || (item as any).metadata?.difficulty || 'normal';
-                const category = (item as any).category || (item as any).metadata?.category || get().vocabulary.mode;
-
-                (window as any).analyticsService.trackWordPractice(word, {
-                  difficulty,
-                  category,
-                  mode: get().vocabulary.mode,
-                });
-              }
+              trackVocabularyPractice(item, get().vocabulary.mode);
 
               set((state) => ({ vocabulary: { ...state.vocabulary, currentItem: item } }));
+            },
+            goToItem: (index) => {
+              const targetIndex = Math.max(0, index);
+              const { filteredDataset, mode } = get().vocabulary;
+              const item = filteredDataset[targetIndex];
+
+              if (!item) return false;
+
+              trackVocabularyPractice(item, mode);
+
+              set((state) => ({
+                vocabulary: {
+                  ...state.vocabulary,
+                  currentItem: item,
+                },
+                audio: {
+                  ...state.audio,
+                  currentIndex: targetIndex,
+                },
+                progress: {
+                  ...state.progress,
+                  currentIndex: targetIndex,
+                  totalItems: filteredDataset.length,
+                },
+              }));
+
+              return true;
             },
             filterByDifficulty: (difficulty) => {
               const currentDataset = get().vocabulary.currentDataset;

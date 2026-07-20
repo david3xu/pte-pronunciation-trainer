@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { appConfig } from '../../../config/AppConfig';
 import { ttsEngine } from '../../../services/audio/TTSEngine';
 import { backgroundAudioService } from '../../../services/audio/backgroundAudioService';
+import { loadDataset } from '../../../services/dataset/datasetLoader';
 import { useAppStore, useAudioState, useSettings, useVocabulary } from '../../../stores';
 import type { PracticeItem, VocabularyItem } from '../../../types/dataset.types';
 import { cleanText } from '../../../utils/textUtils';
@@ -121,16 +122,7 @@ export const useAutoPlayController = () => {
     vocabulary.setLoading(true);
 
     try {
-      const dataPaths = appConfig.get('data.paths.byMode') as Record<string, string>;
-      const dataPath = dataPaths[bookId] || `/data/processed/${bookId}-vocabulary.json`;
-      const response = await fetch(dataPath);
-
-      if (!response.ok) {
-        throw new Error(`Failed to load vocabulary: ${response.statusText}`);
-      }
-
-      const data = await response.json() as { vocabulary?: (VocabularyItem | PracticeItem)[] };
-      const items = data.vocabulary || [];
+      const { items } = await loadDataset(bookId);
 
       settings.updateSetting('vocabularyBook', bookId);
       vocabulary.setDataset(items, bookId);

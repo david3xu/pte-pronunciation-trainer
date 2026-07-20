@@ -8,6 +8,7 @@ import {
 import { Button, Flex, Spinner, Theme } from '@radix-ui/themes';
 import React, { lazy, Suspense, useEffect, useState } from 'react';
 import { appConfig } from '../config/AppConfig';
+import { loadDataset } from '../services/dataset/datasetLoader';
 import { useMigration } from '../hooks/useMigration';
 import { useOnboarding } from '../hooks/useOnboarding';
 import { useSwipeGesture } from '../hooks/useSwipeGesture';
@@ -81,57 +82,10 @@ export const AppContent: React.FC = () => {
       vocabulary.setLoading(true);
 
       try {
-        // Get data paths from centralized config
-        const dataPathMap = appConfig.get('data.paths.byMode');
-        const processedPath = appConfig.get('data.paths.processed');
+        // Single centralized load + normalize path (services/dataset/datasetLoader).
+        const { items } = await loadDataset(vocabularyBook, { signal: abortController.signal });
 
-        const timestamp = new Date().getTime();
-        const basePath = dataPathMap[vocabularyBook] || `/${processedPath}/${vocabularyBook}-vocabulary.json`;
-        const dataPath = `${basePath}?t=${timestamp}`;
-        console.log('Fetching from:', dataPath);
-
-        const response = await fetch(dataPath, { signal: abortController.signal });
-        if (!response.ok) {
-          throw new Error(`Failed to load vocabulary: ${response.statusText}`);
-        }
-
-        const data = await response.json();
-        // Shadowing modes use 'answers' instead of 'vocabulary'
-        // RS segments and other datasets may use 'items' array
-        let items = data.vocabulary || data.answers || data.items || [];
-
-        // Transform shadowing items to be compatible with vocabulary UI
-        if (data.answers) {
-          items = items.map((answer: any) => ({
-            english: answer.title || answer.fullText?.substring(0, 50),
-            pronunciation: {
-              british: { ipa: '', phonetic: 'DI Answer' },
-              american: { ipa: '', phonetic: 'DI Answer' }
-            },
-            difficulty: 'normal',
-            category: vocabularyBook,
-            source: vocabularyBook,
-            // Keep original shadowing data
-            ...answer
-          }));
-        }
-
-        // Transform segment items (RS/WFD segments) to be compatible with WordCard
-        // Use 'english' so they display like vocabulary items (no Play Audio button)
-        if (items.length > 0 && items[0]?.content?.sentence) {
-          items = items.map((item: any) => ({
-            id: item.id,
-            english: item.content.sentence,  // Use 'english' to display like vocabulary
-            ipa: item.content.ipa,
-            difficulty: item.metadata?.difficulty || 'normal',
-            category: item.metadata?.category || 'general',
-            wordCount: item.metadata?.wordCount,
-            type: item.type,
-            source: vocabularyBook,
-          }));
-        }
-
-        console.log(`Loaded ${items.length} items (${data.vocabulary ? 'vocabulary' : 'shadowing'})`);
+        console.log(`Loaded ${items.length} items`);
         vocabulary.setDataset(items, vocabularyBook); // Atomically sets currentItem and resets index
         
         // Preserve persisted progress index after refresh (if within bounds)

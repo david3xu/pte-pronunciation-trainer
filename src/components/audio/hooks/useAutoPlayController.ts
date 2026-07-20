@@ -130,14 +130,10 @@ export const useAutoPlayController = () => {
         vocabulary.filterByDifficulty(settings.difficultyFilter);
       }
 
-      const filteredDataset = settings.difficultyFilter === 'all'
-        ? items
-        : vocabulary.filteredDataset;
+      const filteredDataset = useAppStore.getState().vocabulary.filteredDataset;
 
-      const firstItem = filteredDataset[0];
-      if (firstItem) {
-        audio.setCurrentIndex(0);
-        vocabulary.setCurrentItem(firstItem);
+      if (filteredDataset.length > 0) {
+        vocabulary.goToItem(0);
         console.log(`[useAutoPlayController] Loaded ${filteredDataset.length} items from ${bookId}`);
       } else {
         console.warn(`[useAutoPlayController] No items in ${bookId} after filtering`);
@@ -267,8 +263,7 @@ export const useAutoPlayController = () => {
           await sleep(getDelay('delays.autoPlayBetweenWords', 600));
           if (isPlaybackActive()) {
             console.log(`[useAutoPlayController #${effectId}] ⏩ AUTO-NAVIGATING to next item:`, nextIndex + 1);
-            audio.navigateNext();
-            vocabulary.setCurrentItem(nextItem);
+            vocabulary.goToItem(nextIndex);
           } else {
             console.log(`[useAutoPlayController #${effectId}] ⏹️ Auto-play stopped or superseded, not navigating`);
           }
@@ -322,8 +317,7 @@ export const useAutoPlayController = () => {
           if (firstItem && dataset) {
             await sleep(getDelay('delays.autoPlayRestartPause', 1000));
             if (isPlaybackActive()) {
-              audio.setCurrentIndex(0);
-              vocabulary.setCurrentItem(firstItem);
+              vocabulary.goToItem(0);
               console.log('[useAutoPlayController] Restarted from beginning (item 1/' + dataset.length + ')');
             }
           } else {
@@ -389,8 +383,7 @@ export const useAutoPlayController = () => {
         const nextItem = dataset[nextIndex];
         if (nextItem) {
           console.log(`[useAutoPlayController @${timestamp}] 📝 Updating to index ${nextIndex}: "${getItemLabel(nextItem as LearningItem)}"`);
-          audio.navigateNext();
-          vocabulary.setCurrentItem(nextItem);
+          vocabulary.goToItem(nextIndex);
           console.log(`[useAutoPlayController @${timestamp}] ✅ State updated, useEffect should trigger now`);
         }
       }
@@ -412,8 +405,7 @@ export const useAutoPlayController = () => {
       const prevIndex = audio.currentIndex - 1;
       const prevItem = dataset[prevIndex];
       if (prevItem) {
-        audio.navigatePrev();
-        vocabulary.setCurrentItem(prevItem);
+        vocabulary.goToItem(prevIndex);
       }
     }
   };

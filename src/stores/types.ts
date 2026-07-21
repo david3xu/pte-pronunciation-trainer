@@ -148,6 +148,9 @@ export interface VocabularyState {
 export interface ProgressState {
   // Progress tracking
   completedItems: Set<string>;
+  // Completed item ids kept per dataset so completion state does not leak
+  // between books. completedItems mirrors the active dataset's entry.
+  completedItemsByDataset: Record<string, string[]>;
   currentIndex: number;
   totalItems: number;
   accuracy: number;
@@ -165,6 +168,7 @@ export interface ProgressState {
 
   // Actions
   markItemCompleted: (itemId: string, isCorrect: boolean) => void;
+  markCurrentItemCompleted: (isCorrect: boolean) => boolean;
   updateProgress: (currentIndex: number, totalItems: number) => void;
   startSession: () => void;
   endSession: () => void;

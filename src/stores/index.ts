@@ -206,7 +206,14 @@ export const useAppStore = create<AppState>()(
             setDataset: (dataset, mode) => {
               const itemsPerPage = 50;
               const displayedItems = dataset.slice(0, itemsPerPage);
-              const firstItem = (displayedItems[0] ?? null) as VocabularyTerm | PracticeItem | null;
+
+              // Restore this dataset's saved position, or start at the first item.
+              const savedIndex = get().progress.indexByDataset[mode];
+              const restoredIndex =
+                typeof savedIndex === 'number' && savedIndex >= 0 && savedIndex < dataset.length
+                  ? savedIndex
+                  : 0;
+              const restoredItem = (dataset[restoredIndex] ?? null) as VocabularyTerm | PracticeItem | null;
 
               set((state) => ({
                 vocabulary: {
@@ -214,7 +221,7 @@ export const useAppStore = create<AppState>()(
                   currentDataset: dataset,
                   filteredDataset: dataset,
                   displayedItems,
-                  currentItem: firstItem,
+                  currentItem: restoredItem,
                   mode,
                   totalCount: dataset.length,
                   currentPage: 1,
@@ -225,12 +232,17 @@ export const useAppStore = create<AppState>()(
                 },
                 audio: {
                   ...state.audio,
-                  currentIndex: 0,
+                  currentIndex: restoredIndex,
                 },
                 progress: {
                   ...state.progress,
-                  currentIndex: 0,
+                  activeDatasetId: mode,
+                  currentIndex: restoredIndex,
                   totalItems: dataset.length,
+                  indexByDataset: {
+                    ...state.progress.indexByDataset,
+                    [mode]: restoredIndex,
+                  },
                 },
               }));
             },
@@ -262,6 +274,10 @@ export const useAppStore = create<AppState>()(
                   ...state.progress,
                   currentIndex: targetIndex,
                   totalItems: filteredDataset.length,
+                  indexByDataset: {
+                    ...state.progress.indexByDataset,
+                    [mode]: targetIndex,
+                  },
                 },
               }));
 
@@ -270,38 +286,44 @@ export const useAppStore = create<AppState>()(
             filterByDifficulty: (difficulty) => {
               const currentDataset = get().vocabulary.currentDataset;
               const itemsPerPage = get().vocabulary.itemsPerPage;
+              const activeDatasetId = get().progress.activeDatasetId;
 
-              if (difficulty === 'all') {
-                const displayedItems = currentDataset.slice(0, itemsPerPage);
-                set((state) => ({
-                  vocabulary: {
-                    ...state.vocabulary,
-                    filteredDataset: currentDataset,
-                    displayedItems,
-                    totalCount: currentDataset.length,
-                    currentPage: 1,
-                    hasMore: currentDataset.length > itemsPerPage,
-                  }
-                }));
-                return;
-              }
+              const nextDataset =
+                difficulty === 'all'
+                  ? currentDataset
+                  : currentDataset.filter((item) => {
+                      if ('difficulty' in item && item.difficulty) return item.difficulty === difficulty;
+                      if ('metadata' in item && item.metadata?.difficulty) return item.metadata.difficulty === difficulty;
+                      return false;
+                    });
 
-              const filtered = currentDataset.filter((item) => {
-                if ('difficulty' in item && item.difficulty) return item.difficulty === difficulty;
-                if ('metadata' in item && item.metadata?.difficulty) return item.metadata.difficulty === difficulty;
-                return false;
-              });
+              const displayedItems = nextDataset.slice(0, itemsPerPage);
+              // Changing the visible set resets to its first item so the index,
+              // current item, and visible total stay consistent.
+              const firstItem = (nextDataset[0] ?? null) as VocabularyTerm | PracticeItem | null;
 
-              const displayedItems = filtered.slice(0, itemsPerPage);
               set((state) => ({
                 vocabulary: {
                   ...state.vocabulary,
-                  filteredDataset: filtered,
+                  filteredDataset: nextDataset,
                   displayedItems,
-                  totalCount: filtered.length,
+                  currentItem: firstItem,
+                  totalCount: nextDataset.length,
                   currentPage: 1,
-                  hasMore: filtered.length > itemsPerPage,
-                }
+                  hasMore: nextDataset.length > itemsPerPage,
+                },
+                audio: {
+                  ...state.audio,
+                  currentIndex: 0,
+                },
+                progress: {
+                  ...state.progress,
+                  currentIndex: 0,
+                  totalItems: nextDataset.length,
+                  indexByDataset: activeDatasetId
+                    ? { ...state.progress.indexByDataset, [activeDatasetId]: 0 }
+                    : state.progress.indexByDataset,
+                },
               }));
             },
             loadMore: () => {
@@ -346,6 +368,8 @@ export const useAppStore = create<AppState>()(
             currentIndex: 0,
             totalItems: 0,
             accuracy: 0,
+            activeDatasetId: null,
+            indexByDataset: {},
             sessionStartTime: null,
             sessionDuration: 0,
             itemsCompleted: 0,
@@ -577,9 +601,10 @@ export const useAppStore = create<AppState>()(
             },
             progress: {
               completedItems: Array.from(state.progress.completedItems), // Convert Set to Array
-              currentIndex: state.progress.currentIndex,
-              totalItems: state.progress.totalItems,
               accuracy: state.progress.accuracy,
+              // Per dataset positions replace the old single global index, so
+              // progress no longer leaks across vocabulary books on reload.
+              indexByDataset: state.progress.indexByDataset,
             },
           }),
           // Properly merge persisted state with initial state (preserves methods)

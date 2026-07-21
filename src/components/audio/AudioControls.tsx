@@ -15,11 +15,12 @@ import {
 } from '@radix-ui/react-icons';
 import { Button, Card, Flex, Slider, Switch, Text } from '@radix-ui/themes';
 import React from 'react';
-import { useAudioState, useSettings } from '../../stores';
+import { useAudioState, useProgress, useSettings } from '../../stores';
 import { useAutoPlayController } from './hooks/useAutoPlayController';
 
 const AudioControls: React.FC = () => {
   const audio = useAudioState();
+  const progress = useProgress();
   const settings = useSettings();
   const { handlePlay, handlePause, handleNext, handlePrev } = useAutoPlayController();
 
@@ -94,14 +95,15 @@ const AudioControls: React.FC = () => {
         {/* Progress indicator */}
         <Flex direction="column" gap="2">
           <Text size="2" color="gray">
-            Item {audio.currentIndex + 1}
+            Item {progress.currentIndex + 1}
+            {progress.totalItems > 0 ? ` / ${progress.totalItems}` : ''}
           </Text>
           <Flex align="center" gap="2">
             <div className="w-full h-2 bg-app-border rounded-full overflow-hidden">
               <div
                 className="h-full bg-primary transition-all"
                 style={{
-                  width: `${audio.currentIndex > 0 ? (audio.currentIndex / 10) * 100 : 0}%`,
+                  width: `${progress.totalItems > 0 ? Math.min(100, ((progress.currentIndex + 1) / progress.totalItems) * 100) : 0}%`,
                 }}
               />
             </div>

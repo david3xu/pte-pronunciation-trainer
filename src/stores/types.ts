@@ -152,6 +152,11 @@ export interface ProgressState {
   totalItems: number;
   accuracy: number;
 
+  // Per dataset navigation position: id of the active dataset, plus the last
+  // index visited for each dataset so switching books restores the right place.
+  activeDatasetId: string | null;
+  indexByDataset: Record<string, number>;
+
   // Session stats
   sessionStartTime: number | null;
   sessionDuration: number;

@@ -86,20 +86,9 @@ export const AppContent: React.FC = () => {
         const { items } = await loadDataset(vocabularyBook, { signal: abortController.signal });
 
         console.log(`Loaded ${items.length} items`);
-        vocabulary.setDataset(items, vocabularyBook); // Atomically sets currentItem and resets index
-        
-        // Preserve persisted progress index after refresh (if within bounds)
-        const persistedIndex = progress.currentIndex;
-        const validPersistedIndex = persistedIndex > 0 && persistedIndex < items.length;
-        const startIndex = validPersistedIndex ? persistedIndex : 0;
-        
-        vocabulary.goToItem(startIndex);
-
-        if (validPersistedIndex) {
-          console.log(`[App] Restored progress to item ${startIndex + 1}/${items.length}`);
-        } else {
-          console.log(`[App] Starting fresh at item 1/${items.length}`);
-        }
+        // setDataset restores this dataset's saved index (or starts at the first
+        // item), so progress no longer leaks across vocabulary books.
+        vocabulary.setDataset(items, vocabularyBook);
 
         // Start practice session for tracking
         try {

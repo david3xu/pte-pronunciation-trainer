@@ -85,9 +85,11 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
     const cleanedText = cleanText(displayText);
     const langCode = accent === 'british' ? 'en-GB' : accent === 'american' ? 'en-US' : 'en-US';
     console.log(`[WordCard] Calling ttsEngine.pronounceText with: "${cleanedText}" in ${langCode}`);
+    let playbackSucceeded = false;
     try {
       await ttsEngine.pronounceText(cleanedText, langCode, null);
       console.log('[WordCard] ttsEngine.pronounceText completed');
+      playbackSucceeded = true;
     } catch (error) {
       console.error('[WordCard] TTS error:', error);
     }
@@ -111,11 +113,11 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
       }
     }
 
-    // Mark the current item completed after playback, independent of the best
-    // effort session recording above (which is absent in guest mode and may
-    // fail). Passive playback has no correctness signal, so it counts as
-    // completed and correct.
-    if (onItemComplete) {
+    // Mark the current item completed only on successful playback, independent
+    // of the best effort session recording above (absent in guest mode and may
+    // fail). A failed TTS attempt does not count. Passive playback has no
+    // correctness signal, so a successful play counts as completed and correct.
+    if (playbackSucceeded && onItemComplete) {
       onItemComplete(true);
     }
   };

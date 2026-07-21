@@ -33,7 +33,7 @@ interface RSInterfaceProps {
   sessionManager?: SessionManager;
   onNext?: () => void;
   onPrevious?: () => void;
-  onComplete?: () => void;
+  onComplete?: (isCorrect?: boolean) => void;
 }
 
 interface FeedbackData {
@@ -189,6 +189,8 @@ const RSInterface: React.FC<RSInterfaceProps> = ({
 
     setFeedback(mockFeedback);
 
+    const isCorrect = mockFeedback.score >= 70;
+
     // Record session data to database (Phase 2)
     if (sessionManager) {
       try {
@@ -199,7 +201,7 @@ const RSInterface: React.FC<RSInterfaceProps> = ({
           item_text: sentence,
           user_response: '', // TODO: Add actual transcription when available
           score: mockFeedback.score,
-          is_correct: mockFeedback.score >= 70,
+          is_correct: isCorrect,
           attempts: 1,
           time_spent_sec: recordingTime,
         });
@@ -212,7 +214,7 @@ const RSInterface: React.FC<RSInterfaceProps> = ({
 
     // Notify parent component
     if (onComplete) {
-      onComplete();
+      onComplete(isCorrect);
     }
   };
 

@@ -133,6 +133,7 @@ export interface VocabularyState {
   // Actions
   setDataset: (dataset: (VocabularyItem | PracticeItem)[], mode: string) => void;
   setCurrentItem: (item: VocabularyItem | PracticeItem) => void;
+  goToItem: (index: number) => boolean;
   filterByDifficulty: (difficulty: Difficulty | 'all') => void;
   setLoading: (isLoading: boolean) => void;
   setError: (error: string | null) => void;

@@ -106,15 +106,17 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
           time_spent_sec: timeSpent,
         });
         console.log('[WordCard] Recorded item interaction');
-
-        // Notify parent that the item was completed. Passive vocabulary playback
-        // has no correctness signal, so it counts as completed and correct.
-        if (onItemComplete) {
-          onItemComplete(true);
-        }
       } catch (error) {
         console.error('[WordCard] Failed to record item:', error);
       }
+    }
+
+    // Mark the current item completed after playback, independent of the best
+    // effort session recording above (which is absent in guest mode and may
+    // fail). Passive playback has no correctness signal, so it counts as
+    // completed and correct.
+    if (onItemComplete) {
+      onItemComplete(true);
     }
   };
 

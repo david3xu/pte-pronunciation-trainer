@@ -95,6 +95,19 @@ function normalizePracticeDataset(data: any): DatasetItem[] {
 /* eslint-enable @typescript-eslint/no-explicit-any */
 
 /**
+ * Assign a stable, deterministic id to every item that lacks one. The id is
+ * derived from the dataset id and the item's source order index, so it never
+ * depends on display text and duplicate content items stay distinct. Existing
+ * explicit ids are preserved. No timestamps or randomness are used.
+ */
+function withStableIds(items: DatasetItem[], datasetId: string): DatasetItem[] {
+  return items.map((item, index) => {
+    if (item.id) return item;
+    return { ...item, id: `${datasetId}#${index}` } as DatasetItem;
+  });
+}
+
+/**
  * Fetch and normalize a dataset by id. Rejects on network/HTTP failure or abort
  * so callers can surface errors; it never returns partially-normalized data.
  */
@@ -110,9 +123,10 @@ export async function loadDataset(
   }
 
   const data = await response.json();
-  const items = isPracticeMode(datasetId)
+  const normalized = isPracticeMode(datasetId)
     ? normalizePracticeDataset(data)
     : normalizeVocabularyDataset(data, datasetId);
+  const items = withStableIds(normalized, datasetId);
 
   return { mode: datasetId, items };
 }

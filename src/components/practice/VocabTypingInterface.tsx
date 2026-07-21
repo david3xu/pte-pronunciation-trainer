@@ -25,6 +25,7 @@ import type { SessionManager } from '../../services/session/sessionManager';
 import { useSettings } from '../../stores';
 import type { ItemType } from '../../types/database';
 import type { VocabularyTerm } from '../../types/dataset.types';
+import { cleanText } from '../../utils/textUtils';
 
 interface VocabTypingInterfaceProps {
   item: VocabularyTerm;
@@ -86,6 +87,11 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
   const MAX_PLAYS = 5;
 
   // Handle audio playback
+  const playCurrentItem = () => {
+    const cleanedText = cleanText(english);
+    return ttsEngine.pronounceText(cleanedText, 'en-US', settings.ttsRate);
+  };
+
   const handlePlay = async () => {
     if (isPlaying || playCount >= MAX_PLAYS) return;
 
@@ -105,7 +111,7 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
     }, 12000); // 12 second timeout (gives TTSEngine safety timeout time to work)
 
     try {
-      await ttsEngine.speak(english, null, settings.ttsRate);
+      await playCurrentItem();
     } catch (error) {
       console.error('[VocabTypingInterface] Playback error:', error);
     } finally {
@@ -221,7 +227,7 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
       if (!isPlaying) {
         setIsPlaying(true);
         setPlayCount(1);
-        ttsEngine.speak(english, null, settings.ttsRate)
+        playCurrentItem()
           .catch(err => console.error('[VocabTyping] Retry playback error:', err))
           .finally(() => setIsPlaying(false));
       }
@@ -336,7 +342,7 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
           setIsPlaying(true);
           setPlayCount(1); // Set to 1 as this is the first play
           // Use the computed English text
-          ttsEngine.speak(english, null, settings.ttsRate)
+          playCurrentItem()
             .catch(err => console.error('[VocabTyping] Auto-play error:', err))
             .finally(() => setIsPlaying(false));
         }

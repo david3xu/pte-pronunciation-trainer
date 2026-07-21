@@ -128,12 +128,12 @@ class PTETermsExtractor {
 
     let [, termPart, firstPronunciation, secondPronunciation] = match;
 
-    // Extract word type (n., v., adj., adv., num., abbr., etc.) if present
+    // Extract word type (n., v., adj., phr., etc.) if present
     let wordType = null;
     let term = termPart.trim();
 
     // Match word type patterns
-    const wordTypeMatch = term.match(/^(n\.|v\.|adj\.|adv\.|num\.|abbr\.|prep\.|conj\.|pron\.|interj\.)\s+(.+)$/i);
+    const wordTypeMatch = term.match(/^(n\.|v\.|adj\.|adv\.|num\.|abbr\.|prep\.|conj\.|pron\.|interj\.|phr\.)\s+(.+)$/i);
     if (wordTypeMatch) {
       wordType = wordTypeMatch[1].toLowerCase();
       term = wordTypeMatch[2].trim();

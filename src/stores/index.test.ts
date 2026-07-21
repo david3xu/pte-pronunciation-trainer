@@ -31,9 +31,15 @@ beforeEach(() => {
   const store = useAppStore.getState();
   store.progress.resetProgress();
   store.vocabulary.clearDataset();
-  // Clear per dataset navigation memory so each test starts isolated.
+  // Clear per dataset navigation and completion memory so tests stay isolated.
   useAppStore.setState((state) => ({
-    progress: { ...state.progress, activeDatasetId: null, indexByDataset: {} },
+    progress: {
+      ...state.progress,
+      activeDatasetId: null,
+      indexByDataset: {},
+      completedItems: new Set<string>(),
+      completedItemsByDataset: {},
+    },
   }));
 });
 
@@ -175,5 +181,100 @@ describe('store navigation', () => {
     expect(state.progress.currentIndex).toBe(3);
     expect(state.progress.totalItems).toBe(dataset.length);
     expect(state.progress.indexByDataset).toEqual({});
+  });
+
+  it('marks completed items per dataset without leaking to other datasets', () => {
+    const store = useAppStore.getState();
+
+    store.vocabulary.setDataset(dataset, 'book-a');
+    store.progress.markItemCompleted('alpha', true);
+    store.progress.markItemCompleted('bravo', true);
+
+    let state = useAppStore.getState();
+    expect(state.progress.completedItems.size).toBe(2);
+    expect(state.progress.completedItemsByDataset['book-a']).toEqual(['alpha', 'bravo']);
+
+    store.vocabulary.setDataset(dataset, 'book-b');
+    state = useAppStore.getState();
+    expect(state.progress.completedItems.size).toBe(0);
+    expect(state.progress.completedItemsByDataset['book-b']).toBeUndefined();
+
+    store.progress.markItemCompleted('charlie', false);
+    state = useAppStore.getState();
+    expect(state.progress.completedItems.has('charlie')).toBe(true);
+    expect(state.progress.completedItems.has('alpha')).toBe(false);
+    expect(state.progress.completedItemsByDataset['book-a']).toEqual(['alpha', 'bravo']);
+    expect(state.progress.completedItemsByDataset['book-b']).toEqual(['charlie']);
+  });
+
+  it('restores the completed set and count when switching between datasets', () => {
+    const store = useAppStore.getState();
+
+    store.vocabulary.setDataset(dataset, 'book-a');
+    store.progress.markItemCompleted('alpha', true);
+
+    store.vocabulary.setDataset(dataset, 'book-b');
+    store.progress.markItemCompleted('bravo', true);
+    store.progress.markItemCompleted('charlie', true);
+    expect(useAppStore.getState().progress.completedItems.size).toBe(2);
+
+    store.vocabulary.setDataset(dataset, 'book-a');
+    let state = useAppStore.getState();
+    expect(state.progress.completedItems.size).toBe(1);
+    expect(state.progress.completedItems.has('alpha')).toBe(true);
+
+    store.vocabulary.setDataset(dataset, 'book-b');
+    state = useAppStore.getState();
+    expect(state.progress.completedItems.size).toBe(2);
+    expect(state.progress.completedItems.has('bravo')).toBe(true);
+    expect(state.progress.completedItems.has('charlie')).toBe(true);
+  });
+
+  it('markCurrentItemCompleted marks the active item by its stable id', () => {
+    const store = useAppStore.getState();
+
+    store.vocabulary.setDataset(dataset, 'book-a');
+    store.vocabulary.goToItem(1);
+
+    const marked = store.progress.markCurrentItemCompleted(true);
+    const state = useAppStore.getState();
+    expect(marked).toBe(true);
+    expect(state.progress.completedItems.has('bravo')).toBe(true);
+    expect(state.progress.completedItemsByDataset['book-a']).toEqual(['bravo']);
+  });
+
+  it('markCurrentItemCompleted returns false when there is no current item', () => {
+    const store = useAppStore.getState();
+
+    const marked = store.progress.markCurrentItemCompleted(true);
+
+    expect(marked).toBe(false);
+    expect(useAppStore.getState().progress.completedItems.size).toBe(0);
+  });
+
+  it('stores completed ids in a persistence safe shape', () => {
+    const store = useAppStore.getState();
+
+    store.vocabulary.setDataset(dataset, 'book-a');
+    store.progress.markItemCompleted('alpha', true);
+
+    const map = useAppStore.getState().progress.completedItemsByDataset;
+    const bookA = map['book-a'] ?? [];
+    expect(Array.isArray(map['book-a'])).toBe(true);
+    expect(bookA.every((id) => typeof id === 'string')).toBe(true);
+    expect(JSON.parse(JSON.stringify(map))).toEqual(map);
+  });
+
+  it('resetProgress clears the per dataset completed map', () => {
+    const store = useAppStore.getState();
+
+    store.vocabulary.setDataset(dataset, 'book-a');
+    store.progress.markItemCompleted('alpha', true);
+    expect(useAppStore.getState().progress.completedItemsByDataset['book-a']).toEqual(['alpha']);
+
+    store.progress.resetProgress();
+    const state = useAppStore.getState();
+    expect(state.progress.completedItemsByDataset).toEqual({});
+    expect(state.progress.completedItems.size).toBe(0);
   });
 });

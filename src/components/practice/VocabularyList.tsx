@@ -7,7 +7,7 @@
 import { Cross2Icon, MagnifyingGlassIcon } from '@radix-ui/react-icons';
 import { Badge, Button, Card, Flex, ScrollArea, Text, TextField } from '@radix-ui/themes';
 import React, { useState } from 'react';
-import { useProgress, useVocabulary } from '../../stores';
+import { getDatasetItemId, useProgress, useVocabulary } from '../../stores';
 import type { PracticeItem, VocabularyTerm } from '../../types/dataset.types';
 import { cleanText } from '../../utils/textUtils';
 import { VocabularyListSkeleton } from '../shared/Skeleton';
@@ -23,13 +23,14 @@ const VocabularyList: React.FC = () => {
     if (!searchQuery) return true;
 
     const searchLower = searchQuery.toLowerCase();
-    const word = item.word || item.sentence || item.question || '';
+    const word = item.word || item.english || item.sentence || item.question || '';
     return word.toLowerCase().includes(searchLower);
   });
 
-  // Check if item is completed
-  const isCompleted = (index: number) => {
-    return progress.completedItems.has(index.toString());
+  // Check if an item is completed, keyed by stable item id (not list index).
+  const isCompleted = (item: VocabularyTerm | PracticeItem) => {
+    const id = getDatasetItemId(item);
+    return id !== null && progress.completedItems.has(id);
   };
 
   // Handle item click
@@ -93,10 +94,10 @@ const VocabularyList: React.FC = () => {
                 </Flex>
               ) : (
               filteredItems.map((item: any, index: number) => {
-                const displayText = item.word || item.sentence || item.question;
+                const displayText = item.word || item.english || item.sentence || item.question;
                 const difficulty = item.difficulty || item.metadata?.difficulty || 'normal';
                 const isCurrentItem = vocabulary.currentItem === item;
-                const completed = isCompleted(index);
+                const completed = isCompleted(item);
 
                 return (
                   <Button
@@ -155,7 +156,9 @@ const VocabularyList: React.FC = () => {
             {progress.completedItems.size} completed
           </Text>
           <Text size="1" color="gray">
-            {Math.round((progress.completedItems.size / vocabulary.currentDataset.length) * 100)}% done
+            {vocabulary.currentDataset.length > 0
+              ? Math.round((progress.completedItems.size / vocabulary.currentDataset.length) * 100)
+              : 0}% done
           </Text>
         </Flex>
       </Flex>

@@ -38,6 +38,34 @@ import type {
     VocabularyState,
 } from './types';
 
+/**
+ * Identity fields checked in priority order when deriving a completion id.
+ * Normalized vocabulary items expose english (or an explicit id from schema
+ * standardization); legacy vocabulary uses word; practice items use sentence
+ * or question.
+ */
+const ITEM_ID_FIELDS = ['id', 'word', 'english', 'sentence', 'question'] as const;
+
+/**
+ * Stable identity for a dataset item, used for completion tracking.
+ * Reads the first available identity field (see ITEM_ID_FIELDS) and returns
+ * null when none is present, so callers never fall back to a list index.
+ * Known limitation: these ids are content based, so a dataset that repeats the
+ * same phrase shares one completion entry. Generating a stable per item id
+ * upstream would remove that edge case if it becomes a problem.
+ */
+export const getDatasetItemId = (
+  item: VocabularyTerm | PracticeItem | null | undefined
+): string | null => {
+  if (!item) return null;
+  const record = item as unknown as Record<string, unknown>;
+  for (const field of ITEM_ID_FIELDS) {
+    const value = record[field];
+    if (typeof value === 'string' && value.length > 0) return value;
+  }
+  return null;
+};
+
 const trackVocabularyPractice = (
   item: VocabularyTerm | PracticeItem,
   mode: string
@@ -239,6 +267,7 @@ export const useAppStore = create<AppState>()(
                   activeDatasetId: mode,
                   currentIndex: restoredIndex,
                   totalItems: dataset.length,
+                  completedItems: new Set(state.progress.completedItemsByDataset[mode] ?? []),
                   indexByDataset: {
                     ...state.progress.indexByDataset,
                     [mode]: restoredIndex,
@@ -365,6 +394,7 @@ export const useAppStore = create<AppState>()(
           // Progress slice - inline implementation
           progress: {
             completedItems: new Set<string>(),
+            completedItemsByDataset: {},
             currentIndex: 0,
             totalItems: 0,
             accuracy: 0,
@@ -376,6 +406,7 @@ export const useAppStore = create<AppState>()(
             itemsCorrect: 0,
             markItemCompleted: (itemId, isCorrect) => {
               const state = get().progress;
+              const activeDatasetId = state.activeDatasetId;
               const newCompleted = new Set(state.completedItems);
               newCompleted.add(itemId);
               const newItemsCompleted = state.itemsCompleted + 1;
@@ -385,11 +416,20 @@ export const useAppStore = create<AppState>()(
                 progress: {
                   ...s.progress,
                   completedItems: newCompleted,
+                  completedItemsByDataset: activeDatasetId
+                    ? { ...s.progress.completedItemsByDataset, [activeDatasetId]: Array.from(newCompleted) }
+                    : s.progress.completedItemsByDataset,
                   itemsCompleted: newItemsCompleted,
                   itemsCorrect: newItemsCorrect,
                   accuracy,
                 }
               }));
+            },
+            markCurrentItemCompleted: (isCorrect) => {
+              const itemId = getDatasetItemId(get().vocabulary.currentItem);
+              if (itemId === null) return false;
+              get().progress.markItemCompleted(itemId, isCorrect);
+              return true;
             },
             updateProgress: (currentIndex, totalItems) => set((state) => ({
               progress: {
@@ -409,7 +449,6 @@ export const useAppStore = create<AppState>()(
                 sessionDuration: 0,
                 itemsCompleted: 0,
                 itemsCorrect: 0,
-                completedItems: new Set(),
               }
             })),
             endSession: () => {
@@ -446,6 +485,7 @@ export const useAppStore = create<AppState>()(
               progress: {
                 ...state.progress,
                 completedItems: new Set(),
+                completedItemsByDataset: {},
                 currentIndex: 0,
                 totalItems: 0,
                 accuracy: 0,
@@ -610,11 +650,11 @@ export const useAppStore = create<AppState>()(
               volume: state.audio.volume,
             },
             progress: {
-              completedItems: Array.from(state.progress.completedItems), // Convert Set to Array
               accuracy: state.progress.accuracy,
-              // Per dataset positions replace the old single global index, so the
-              // navigation position no longer leaks across vocabulary books on reload.
+              // Per dataset positions and completed item ids replace the old single
+              // global values, so neither leaks across vocabulary books on reload.
               indexByDataset: state.progress.indexByDataset,
+              completedItemsByDataset: state.progress.completedItemsByDataset,
             },
           }),
           // Properly merge persisted state with initial state (preserves methods)
@@ -636,12 +676,21 @@ export const useAppStore = create<AppState>()(
               },
             };
           },
-          // Rehydrate Set from persisted Array
           onRehydrateStorage: () => (state) => {
-            if (state?.progress?.completedItems) {
-              state.progress.completedItems = new Set(
-                state.progress.completedItems as unknown as string[]
-              );
+            if (!state) return;
+
+            // completedItems is a derived view of the active dataset; the durable
+            // source is completedItemsByDataset, rebuilt by setDataset on load.
+            // Older builds persisted a single global (index based) completedItems
+            // array, which is intentionally not migrated into the per dataset map.
+            if (state.progress) {
+              if (
+                !state.progress.completedItemsByDataset ||
+                typeof state.progress.completedItemsByDataset !== 'object'
+              ) {
+                state.progress.completedItemsByDataset = {};
+              }
+              state.progress.completedItems = new Set<string>();
             }
 
             // Migrate old DI shadowing datasets to new combined dataset

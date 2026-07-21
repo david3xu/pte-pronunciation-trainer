@@ -392,7 +392,15 @@ export const useAppStore = create<AppState>()(
               }));
             },
             updateProgress: (currentIndex, totalItems) => set((state) => ({
-              progress: { ...state.progress, currentIndex, totalItems }
+              progress: {
+                ...state.progress,
+                currentIndex,
+                totalItems,
+                // Keep the active dataset's saved position in sync with direct updates.
+                indexByDataset: state.progress.activeDatasetId
+                  ? { ...state.progress.indexByDataset, [state.progress.activeDatasetId]: currentIndex }
+                  : state.progress.indexByDataset,
+              }
             })),
             startSession: () => set((state) => ({
               progress: {
@@ -441,6 +449,8 @@ export const useAppStore = create<AppState>()(
                 currentIndex: 0,
                 totalItems: 0,
                 accuracy: 0,
+                activeDatasetId: null,
+                indexByDataset: {},
                 sessionStartTime: null,
                 sessionDuration: 0,
                 itemsCompleted: 0,
@@ -602,8 +612,8 @@ export const useAppStore = create<AppState>()(
             progress: {
               completedItems: Array.from(state.progress.completedItems), // Convert Set to Array
               accuracy: state.progress.accuracy,
-              // Per dataset positions replace the old single global index, so
-              // progress no longer leaks across vocabulary books on reload.
+              // Per dataset positions replace the old single global index, so the
+              // navigation position no longer leaks across vocabulary books on reload.
               indexByDataset: state.progress.indexByDataset,
             },
           }),

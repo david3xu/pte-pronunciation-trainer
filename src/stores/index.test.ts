@@ -138,4 +138,42 @@ describe('store navigation', () => {
     expect(state.progress.currentIndex).toBe(0);
     expect(state.vocabulary.currentItem).toBe(dataset[0]);
   });
+
+  it('resetProgress clears the active dataset id and per dataset index memory', () => {
+    const store = useAppStore.getState();
+
+    store.vocabulary.setDataset(dataset, 'book-a');
+    store.vocabulary.goToItem(2);
+    expect(useAppStore.getState().progress.indexByDataset['book-a']).toBe(2);
+    expect(useAppStore.getState().progress.activeDatasetId).toBe('book-a');
+
+    store.progress.resetProgress();
+
+    const state = useAppStore.getState();
+    expect(state.progress.activeDatasetId).toBe(null);
+    expect(state.progress.indexByDataset).toEqual({});
+  });
+
+  it('updateProgress records the index under the active dataset', () => {
+    const store = useAppStore.getState();
+
+    store.vocabulary.setDataset(dataset, 'book-a');
+    store.progress.updateProgress(1, dataset.length);
+
+    const state = useAppStore.getState();
+    expect(state.progress.currentIndex).toBe(1);
+    expect(state.progress.totalItems).toBe(dataset.length);
+    expect(state.progress.indexByDataset['book-a']).toBe(1);
+  });
+
+  it('updateProgress leaves the per dataset memory untouched when no dataset is active', () => {
+    const store = useAppStore.getState();
+
+    store.progress.updateProgress(3, dataset.length);
+
+    const state = useAppStore.getState();
+    expect(state.progress.currentIndex).toBe(3);
+    expect(state.progress.totalItems).toBe(dataset.length);
+    expect(state.progress.indexByDataset).toEqual({});
+  });
 });

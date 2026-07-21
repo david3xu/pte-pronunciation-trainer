@@ -277,4 +277,37 @@ describe('store navigation', () => {
     expect(state.progress.completedItemsByDataset).toEqual({});
     expect(state.progress.completedItems.size).toBe(0);
   });
+
+  it('derives completion ids for normalized items that use english', () => {
+    const store = useAppStore.getState();
+    const englishDataset = [
+      { english: 'obscure' },
+      { english: 'clusters' },
+    ] as unknown as VocabularyTerm[];
+
+    store.vocabulary.setDataset(englishDataset, 'book-english');
+    store.vocabulary.goToItem(1);
+
+    const marked = store.progress.markCurrentItemCompleted(true);
+    const state = useAppStore.getState();
+    expect(marked).toBe(true);
+    expect(state.progress.completedItems.has('clusters')).toBe(true);
+    expect(state.progress.completedItemsByDataset['book-english']).toEqual(['clusters']);
+  });
+
+  it('prefers an explicit id over content fields when one is present', () => {
+    const store = useAppStore.getState();
+    const idDataset = [
+      { id: 'term-1', english: 'obscure' },
+    ] as unknown as VocabularyTerm[];
+
+    store.vocabulary.setDataset(idDataset, 'book-id');
+    store.vocabulary.goToItem(0);
+
+    const marked = store.progress.markCurrentItemCompleted(true);
+    const state = useAppStore.getState();
+    expect(marked).toBe(true);
+    expect(state.progress.completedItems.has('term-1')).toBe(true);
+    expect(state.progress.completedItems.has('obscure')).toBe(false);
+  });
 });

@@ -23,7 +23,7 @@ const VocabularyList: React.FC = () => {
     if (!searchQuery) return true;
 
     const searchLower = searchQuery.toLowerCase();
-    const word = item.word || item.sentence || item.question || '';
+    const word = item.word || item.english || item.sentence || item.question || '';
     return word.toLowerCase().includes(searchLower);
   });
 
@@ -94,7 +94,7 @@ const VocabularyList: React.FC = () => {
                 </Flex>
               ) : (
               filteredItems.map((item: any, index: number) => {
-                const displayText = item.word || item.sentence || item.question;
+                const displayText = item.word || item.english || item.sentence || item.question;
                 const difficulty = item.difficulty || item.metadata?.difficulty || 'normal';
                 const isCurrentItem = vocabulary.currentItem === item;
                 const completed = isCompleted(item);

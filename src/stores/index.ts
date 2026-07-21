@@ -39,17 +39,30 @@ import type {
 } from './types';
 
 /**
+ * Identity fields checked in priority order when deriving a completion id.
+ * Normalized vocabulary items expose english (or an explicit id from schema
+ * standardization); legacy vocabulary uses word; practice items use sentence
+ * or question.
+ */
+const ITEM_ID_FIELDS = ['id', 'word', 'english', 'sentence', 'question'] as const;
+
+/**
  * Stable identity for a dataset item, used for completion tracking.
- * Uses the item's content key (word, sentence, or question). Returns null when
- * no stable key is available so callers avoid falling back to list indexes.
+ * Reads the first available identity field (see ITEM_ID_FIELDS) and returns
+ * null when none is present, so callers never fall back to a list index.
+ * Known limitation: these ids are content based, so a dataset that repeats the
+ * same phrase shares one completion entry. Generating a stable per item id
+ * upstream would remove that edge case if it becomes a problem.
  */
 export const getDatasetItemId = (
   item: VocabularyTerm | PracticeItem | null | undefined
 ): string | null => {
   if (!item) return null;
-  if ('word' in item && item.word) return item.word;
-  if ('sentence' in item && item.sentence) return item.sentence;
-  if ('question' in item && item.question) return item.question;
+  const record = item as unknown as Record<string, unknown>;
+  for (const field of ITEM_ID_FIELDS) {
+    const value = record[field];
+    if (typeof value === 'string' && value.length > 0) return value;
+  }
   return null;
 };
 

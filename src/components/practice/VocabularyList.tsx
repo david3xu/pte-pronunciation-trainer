@@ -34,7 +34,10 @@ const VocabularyList: React.FC = () => {
 
   // Handle item click
   const handleItemClick = (item: VocabularyTerm | PracticeItem) => {
-    vocabulary.setCurrentItem(item);
+    const index = vocabulary.filteredDataset.indexOf(item);
+    if (index >= 0) {
+      vocabulary.goToItem(index);
+    }
   };
 
   return (

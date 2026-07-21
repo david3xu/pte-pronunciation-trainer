@@ -34,7 +34,7 @@ interface ASQInterfaceProps {
   sessionManager?: SessionManager;
   onNext?: () => void;
   onPrevious?: () => void;
-  onComplete?: () => void;
+  onComplete?: (isCorrect?: boolean) => void;
 }
 
 interface FeedbackData {
@@ -172,7 +172,7 @@ const ASQInterface: React.FC<ASQInterfaceProps> = ({
 
     // Notify parent component
     if (onComplete) {
-      onComplete();
+      onComplete(isCorrect);
     }
   };
 

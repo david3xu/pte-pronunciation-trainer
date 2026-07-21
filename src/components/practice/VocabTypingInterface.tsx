@@ -31,7 +31,7 @@ interface VocabTypingInterfaceProps {
   sessionManager?: SessionManager;
   onNext?: () => void;
   onPrevious?: () => void;
-  onComplete?: () => void;
+  onComplete?: (isCorrect?: boolean) => void;
   currentIndex?: number;
   totalItems?: number;
 }
@@ -199,7 +199,7 @@ const VocabTypingInterface: React.FC<VocabTypingInterfaceProps> = ({
     }
 
     if (onComplete) {
-      onComplete();
+      onComplete(feedbackData.isExactMatch);
     }
   };
 

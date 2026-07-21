@@ -222,8 +222,11 @@ export const AppContent: React.FC = () => {
     setCurrentIntervention(null);
   };
 
-  // Track item completion for intervention monitoring
-  const handleItemComplete = () => {
+  // Track item completion: mark the active dataset item completed in the store
+  // (so VocabularyList indicators, counts, and percentages reflect real usage),
+  // then keep the existing session counter for intervention monitoring.
+  const handleItemComplete = (isCorrect?: boolean) => {
+    progress.markCurrentItemCompleted(isCorrect ?? true);
     setItemsCompletedInSession((prev) => prev + 1);
   };
 

@@ -9,32 +9,32 @@ PTE Pronunciation Trainer is a React 19 + TypeScript 5 app for pronunciation pra
 ## Common commands
 
 ```bash
-npm install
-npm run start             # Generate PTE data, then start Vite on port 3001
-npm run dev               # Start Vite only; requires existing data/processed files
-npm run dev:proxy         # Start the local dev proxy script
-npm run preview           # Preview production build on port 3002
+pnpm install
+pnpm run start            # Generate PTE data, then start Vite on port 3001
+pnpm run dev              # Start Vite only; requires existing data/processed files
+pnpm run dev:proxy        # Start the local dev proxy script
+pnpm run preview          # Preview production build on port 3002
 
-npm run data:pte          # Convert data/source/pte markdown into generated JSON
-npm run validate          # Validate generated datasets
-npm run validate:all      # Validate docs, structure, and datasets
+pnpm run data:pte         # Convert data/source/pte markdown into generated JSON
+pnpm run validate         # Validate generated datasets
+pnpm run validate:all     # Validate docs, structure, and datasets
 
-npm run build             # compile:ts + API typecheck + vite build
-npm run build:ts          # Type-check app and API configs without emitting
-npm run lint              # Alias for TypeScript type-checking
-npm run lint:css          # Stylelint src/css/**/*.css
+pnpm run build            # compile:ts + API typecheck + vite build
+pnpm run build:ts         # Type-check app and API configs without emitting
+pnpm run lint             # Alias for TypeScript type-checking
+pnpm run lint:css         # Stylelint src/css/**/*.css
 
-npm test                  # Full Vitest suite
-npm run test:watch        # Vitest watch mode
-npm run test:coverage     # Coverage report
+pnpm test                 # Full Vitest suite
+pnpm run test:watch       # Vitest watch mode
+pnpm run test:coverage    # Coverage report
 npx vitest run src/config/AppConfig.test.ts
 npx vitest run -t "renders vocabulary word"
 
-npm run test:e2e
+pnpm run test:e2e
 npx playwright test tests/e2e/tts.spec.ts
 
-npm run deploy            # data:pte + build + validate:all
-npm run vercel-build      # data:pte + vite build + copy processed data to dist/
+pnpm run deploy           # data:pte + build + validate:all
+pnpm run vercel-build     # data:pte + vite build + copy processed data to dist/
 ```
 
 ## Architecture

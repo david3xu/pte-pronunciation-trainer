@@ -21,7 +21,7 @@ We welcome contributions to the PTE Pronunciation Trainer! Please follow these g
 ## 🎨 Code Style
 
 - **TypeScript**: We use TypeScript for type safety. Avoid `any` whenever possible.
-- **Formatting**: Code is formatted using Prettier. Run `npm run lint` to check for issues.
+- **Formatting**: Code is formatted using Prettier. Run `pnpm run lint` to check for issues.
 - **Naming**:
   - Components: PascalCase (e.g., `AudioPlayer.tsx`)
   - Functions/Variables: camelCase (e.g., `playAudio`)
@@ -32,7 +32,7 @@ We welcome contributions to the PTE Pronunciation Trainer! Please follow these g
 - Write unit tests for new logic using Vitest.
 - Ensure all tests pass before submitting a PR.
 ```bash
-npm test
+pnpm test
 ```
 
 ## 📁 File Structure Conventions

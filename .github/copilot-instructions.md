@@ -5,31 +5,31 @@ This is a React 19 + TypeScript 5 PTE pronunciation trainer. The app is mostly c
 ## Commands
 
 ```bash
-npm install            # Install dependencies; packageManager is npm@10.9.4
-npm run start          # Generate PTE data, then start Vite on port 3001
-npm run dev            # Start Vite only; requires existing data/processed files
-npm run dev:proxy      # Start the dev proxy script
-npm run preview        # Preview the production build on port 3002
-npm run data:pte       # Convert data/source/pte markdown into generated JSON
-npm run build          # compile:ts + API typecheck + vite build
-npm run build:ts       # Type-check app and API configs without emitting
-npm run typecheck:api  # Type-check Vercel/serverless API config only
-npm run lint           # Alias for TypeScript type-checking
-npm run lint:css       # Stylelint src/css/**/*.css
-npm run validate       # Validate generated datasets
-npm run validate:all   # Validate docs, structure, and datasets
+pnpm install           # Install dependencies; packageManager is pnpm@10.32.1
+pnpm run start         # Generate PTE data, then start Vite on port 3001
+pnpm run dev           # Start Vite only; requires existing data/processed files
+pnpm run dev:proxy     # Start the dev proxy script
+pnpm run preview       # Preview the production build on port 3002
+pnpm run data:pte      # Convert data/source/pte markdown into generated JSON
+pnpm run build         # compile:ts + API typecheck + vite build
+pnpm run build:ts      # Type-check app and API configs without emitting
+pnpm run typecheck:api # Type-check Vercel/serverless API config only
+pnpm run lint          # Alias for TypeScript type-checking
+pnpm run lint:css      # Stylelint src/css/**/*.css
+pnpm run validate      # Validate generated datasets
+pnpm run validate:all  # Validate docs, structure, and datasets
 ```
 
 Tests use Vitest with `happy-dom` and `src/test/setup.ts`.
 
 ```bash
-npm test                                             # Full Vitest suite
+pnpm test                                            # Full Vitest suite
 npx vitest run src/config/AppConfig.test.ts         # Single test file
 npx vitest run src/components/practice/WordCard.test.tsx
 npx vitest run -t "renders vocabulary word"         # Single test by name
-npm run test:watch                                  # Watch mode
-npm run test:coverage                               # Coverage report
-npm run test:e2e                                    # Playwright E2E suite
+pnpm run test:watch                                 # Watch mode
+pnpm run test:coverage                              # Coverage report
+pnpm run test:e2e                                   # Playwright E2E suite
 npx playwright test tests/e2e/tts.spec.ts           # Single E2E spec
 npx playwright test -g "tts"                        # Single E2E test by title
 ```
@@ -63,7 +63,7 @@ npx playwright test -g "tts"                        # Single E2E test by title
 - Client-exposed environment variables must use the `VITE_` prefix. Keep server-only secrets out of client code; `GEMINI_API_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, and AWS credentials remain server-side.
 - The TypeScript config is strict (`noImplicitAny`, `strictNullChecks`, `noUncheckedIndexedAccess`, `noUnusedLocals`, etc.). Avoid broad casts and keep changes type-safe.
 - `docs/CONTRIBUTING.md` asks for conventional commit prefixes (`feat:`, `fix:`, `docs:`, `refactor:`) when creating commits.
-- Vitest uses `happy-dom` with `src/test/setup.ts`; Playwright E2E starts `npm run data:pte && npm run dev -- --host 127.0.0.1` on port 3001.
+- Vitest uses `happy-dom` with `src/test/setup.ts`; Playwright E2E starts `pnpm run data:pte && pnpm run dev -- --host 127.0.0.1` on port 3001.
 
 ## MCP servers
 

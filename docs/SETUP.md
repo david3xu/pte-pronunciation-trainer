@@ -13,7 +13,7 @@ node -v
 ### 2. Installation
 Install project dependencies:
 ```bash
-npm install
+pnpm install
 ```
 
 ## 🔑 Configuration
@@ -58,19 +58,19 @@ cp .env.example .env
 ### Development
 Starts the Vite development server with HMR.
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ### Production Build
 Builds the app for production.
 ```bash
-npm run build
+pnpm run build
 ```
 
 ### Preview
 Preview the production build locally.
 ```bash
-npm run preview
+pnpm run preview
 ```
 
 ## 🔄 Reproducibility & Environment
@@ -85,7 +85,7 @@ We strictly recommend using the Node.js version specified in `.nvmrc` (if presen
 If you encounter issues, perform a clean install to reset dependencies:
 ```bash
 rm -rf node_modules package-lock.json
-npm install
+pnpm install
 ```
 
 ### 3. Database Schema
@@ -96,5 +96,5 @@ To reproduce the backend environment, ensure your Supabase project matches the s
 The application relies on processed data in `data/processed/`.
 - **Regenerate Data**: Run the data pipeline to ensure your local JSON files match the source Markdown.
   ```bash
-  npm run data:pte
+  pnpm run data:pte
   ```

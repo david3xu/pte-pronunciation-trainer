@@ -8,10 +8,10 @@
     "dev": "vite",
     "dev:proxy": "node scripts/dev-proxy.js",
     "preview": "vite preview",
-    "data": "npm run data:pte",
+    "data": "pnpm run data:pte",
     "data:pte": "node scripts/pte-data-pipeline.js",
-    "build": "npm run compile:ts && npm run typecheck:api && vite build",
-    "build:ts": "tsc --noEmit && npm run typecheck:api",
+    "build": "pnpm run compile:ts && pnpm run typecheck:api && vite build",
+    "build:ts": "tsc --noEmit && pnpm run typecheck:api",
     "typecheck:api": "tsc --noEmit -p tsconfig.api.json",
     "compile:ts": "tsc",
     "test": "vitest run",
@@ -19,8 +19,8 @@
     "test:watch": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
-    "test:ts": "npm run build:ts && npm test",
-    "lint": "npm run lint:ts",
+    "test:ts": "pnpm run build:ts && pnpm test",
+    "lint": "pnpm run lint:ts",
     "lint:ts": "tsc --noEmit",
     "lint:css": "stylelint src/css/**/*.css",
     "typecheck": "tsc --noEmit",
@@ -28,14 +28,14 @@
     "validate:docs": "node scripts/validate-docs.js",
     "validate:structure": "node scripts/validate-structure.js",
     "validate:supabase": "node scripts/verify-supabase-setup.js",
-    "validate:all": "npm run validate:docs && npm run validate:structure && npm run validate",
+    "validate:all": "pnpm run validate:docs && pnpm run validate:structure && pnpm run validate",
     "clean": "rm -rf dist/",
-    "start": "npm run data:pte && npm run dev",
-    "start:pte": "npm run data:pte && npm run dev",
-    "deploy": "npm run deploy:pte",
-    "deploy:pte": "npm run data:pte && npm run build && npm run validate:all",
-    "vercel-build": "npm run vercel-build:pte",
-    "vercel-build:pte": "npm run data:pte && vite build && mkdir -p dist/data && cp -r data/processed dist/data/",
+    "start": "pnpm run data:pte && pnpm run dev",
+    "start:pte": "pnpm run data:pte && pnpm run dev",
+    "deploy": "pnpm run deploy:pte",
+    "deploy:pte": "pnpm run data:pte && pnpm run build && pnpm run validate:all",
+    "vercel-build": "pnpm run vercel-build:pte",
+    "vercel-build:pte": "pnpm run data:pte && vite build && mkdir -p dist/data && cp -r data/processed dist/data/",
     "prepare": "husky install"
   },
   "keywords": [
@@ -94,7 +94,7 @@
   "homepage": "https://github.com/your-username/ccl-pronunciation-trainer#readme",
   "engines": {
     "node": ">=16.0.0",
-    "npm": ">=8.0.0"
+    "pnpm": ">=10.0.0"
   },
   "browserslist": [
     "Chrome >= 90",
@@ -159,5 +159,5 @@
     "zod": "^4.1.13",
     "zustand": "^5.0.8"
   },
-  "packageManager": "npm@10.9.4"
+  "packageManager": "pnpm@10.32.1"
 }

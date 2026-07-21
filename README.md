@@ -16,21 +16,21 @@ The app is built around generated local datasets for vocabulary and practice con
 ### Requirements
 
 - Node.js 16+
-- npm 8+
+- pnpm 10+
 
 ### Install and run
 
 ```bash
-npm install
-npm run start
+pnpm install
+pnpm run start
 ```
 
-`npm run start` regenerates PTE data and then starts the Vite dev server on port 3001.
+`pnpm run start` regenerates PTE data and then starts the Vite dev server on port 3001.
 
 If you already have current generated data, you can run the dev server directly:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 Open `http://localhost:3001`.
@@ -61,27 +61,27 @@ Important distinction:
 ## Common scripts
 
 ```bash
-npm run start             # Generate PTE data, then start Vite on port 3001
-npm run dev               # Start Vite only
-npm run dev:proxy         # Start local dev proxy script
-npm run preview           # Preview production build on port 3002
+pnpm run start            # Generate PTE data, then start Vite on port 3001
+pnpm run dev              # Start Vite only
+pnpm run dev:proxy        # Start local dev proxy script
+pnpm run preview          # Preview production build on port 3002
 
-npm run data:pte          # Convert markdown in data/source/pte to JSON in data/processed
-npm run validate          # Validate generated datasets
-npm run validate:all      # Validate docs, structure, and datasets
+pnpm run data:pte         # Convert markdown in data/source/pte to JSON in data/processed
+pnpm run validate         # Validate generated datasets
+pnpm run validate:all     # Validate docs, structure, and datasets
 
-npm run build             # compile:ts + API typecheck + vite build
-npm run build:ts          # Type-check app and API configs without emitting
-npm run lint              # Alias for TypeScript type-checking
-npm run lint:css          # Stylelint src/css/**/*.css
+pnpm run build            # compile:ts + API typecheck + vite build
+pnpm run build:ts         # Type-check app and API configs without emitting
+pnpm run lint             # Alias for TypeScript type-checking
+pnpm run lint:css         # Stylelint src/css/**/*.css
 
-npm test                  # Run Vitest
-npm run test:watch        # Vitest watch mode
-npm run test:coverage     # Coverage report
-npm run test:e2e          # Playwright E2E suite
+pnpm test                 # Run Vitest
+pnpm run test:watch       # Vitest watch mode
+pnpm run test:coverage    # Coverage report
+pnpm run test:e2e         # Playwright E2E suite
 
-npm run deploy            # data:pte + build + validate:all
-npm run vercel-build      # data:pte + vite build + copy processed data to dist/
+pnpm run deploy           # data:pte + build + validate:all
+pnpm run vercel-build     # data:pte + vite build + copy processed data to dist/
 ```
 
 Examples for focused test runs:
@@ -110,7 +110,7 @@ npx playwright test tests/e2e/tts.spec.ts
 
 - Source content lives in `data/source/pte/`.
 - `scripts/pte-data-pipeline.js` converts source markdown into generated JSON under `data/processed/`.
-- The app reads those generated files at runtime; if source content changes, rerun `npm run data:pte`.
+- The app reads those generated files at runtime; if source content changes, rerun `pnpm run data:pte`.
 
 ### Integrations
 
@@ -141,14 +141,14 @@ When adding or renaming a dataset, update all relevant surfaces together:
 For a production-style local build:
 
 ```bash
-npm run build
-npm run preview
+pnpm run build
+pnpm run preview
 ```
 
 For the Vercel build pipeline:
 
 ```bash
-npm run vercel-build
+pnpm run vercel-build
 ```
 
 The production build outputs to `dist/`, including generated datasets copied under `dist/data/processed/` for static serving.

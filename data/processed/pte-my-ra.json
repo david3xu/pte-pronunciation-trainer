@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-07-19T09:12:35.027Z",
+    "generated": "2026-07-21T00:47:34.814Z",
     "totalTerms": 702,
     "source": "pte-my-ra",
     "description": "My PTE Read Aloud word list",
@@ -7153,7 +7153,7 @@
       "wordType": "v."
     },
     {
-      "english": "phr. come across",
+      "english": "come across",
       "pronunciation": {
         "british": {
           "ipa": "kʌm əˈkrɒs",
@@ -7166,7 +7166,8 @@
       },
       "difficulty": "hard",
       "category": "pte-my-ra",
-      "source": "pte-my-ra"
+      "source": "pte-my-ra",
+      "wordType": "phr."
     },
     {
       "english": "websites",
@@ -7985,7 +7986,7 @@
       "wordType": "n."
     },
     {
-      "english": "phr. make sense",
+      "english": "make sense",
       "pronunciation": {
         "british": {
           "ipa": "meɪk sens",
@@ -7998,7 +7999,8 @@
       },
       "difficulty": "hard",
       "category": "pte-my-ra",
-      "source": "pte-my-ra"
+      "source": "pte-my-ra",
+      "wordType": "phr."
     },
     {
       "english": "legible",
@@ -8035,7 +8037,7 @@
       "wordType": "n."
     },
     {
-      "english": "phr. going back",
+      "english": "going back",
       "pronunciation": {
         "british": {
           "ipa": "ˈɡəʊɪŋ bæk",
@@ -8048,7 +8050,8 @@
       },
       "difficulty": "hard",
       "category": "pte-my-ra",
-      "source": "pte-my-ra"
+      "source": "pte-my-ra",
+      "wordType": "phr."
     },
     {
       "english": "highlight",
@@ -8595,7 +8598,7 @@
       "wordType": "n."
     },
     {
-      "english": "phr. goes wrong",
+      "english": "goes wrong",
       "pronunciation": {
         "british": {
           "ipa": "ɡəʊz rɒŋ",
@@ -8608,7 +8611,8 @@
       },
       "difficulty": "hard",
       "category": "pte-my-ra",
-      "source": "pte-my-ra"
+      "source": "pte-my-ra",
+      "wordType": "phr."
     },
     {
       "english": "acknowledge",
@@ -10294,7 +10298,7 @@
       "wordType": "adj."
     },
     {
-      "english": "phr. how much",
+      "english": "how much",
       "pronunciation": {
         "british": {
           "ipa": "haʊ mʌtʃ",
@@ -10305,9 +10309,10 @@
           "phonetic": "HOW MUCH"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-my-ra",
-      "source": "pte-my-ra"
+      "source": "pte-my-ra",
+      "wordType": "phr."
     },
     {
       "english": "engineers",
@@ -10378,7 +10383,7 @@
       "wordType": "n."
     },
     {
-      "english": "phr. remained strong",
+      "english": "remained strong",
       "pronunciation": {
         "british": {
           "ipa": "rɪˈmeɪnd strɒŋ",
@@ -10391,7 +10396,8 @@
       },
       "difficulty": "hard",
       "category": "pte-my-ra",
-      "source": "pte-my-ra"
+      "source": "pte-my-ra",
+      "wordType": "phr."
     },
     {
       "english": "reflecting",
@@ -11108,7 +11114,7 @@
       "wordType": "n."
     },
     {
-      "english": "phr. engaging in",
+      "english": "engaging in",
       "pronunciation": {
         "british": {
           "ipa": "ɪnˈɡeɪdʒɪŋ ɪn",
@@ -11121,7 +11127,8 @@
       },
       "difficulty": "hard",
       "category": "pte-my-ra",
-      "source": "pte-my-ra"
+      "source": "pte-my-ra",
+      "wordType": "phr."
     },
     {
       "english": "visit",

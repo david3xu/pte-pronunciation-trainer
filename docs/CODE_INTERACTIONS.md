@@ -85,12 +85,6 @@ These are the core building blocks of the application.
 | :--- | :--- | :--- |
 | `appConfig` | 63 | 🔥 Heavy |
 
-### 📁 `src/data`
-
-| Function | Usages | Status |
-| :--- | :--- | :--- |
-| `datasetManager` | 4 | ⚠️ Low |
-
 ### 📁 `src/hooks`
 
 | Function | Usages | Status |

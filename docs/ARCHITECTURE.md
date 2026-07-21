@@ -91,7 +91,6 @@ ccl-pronunciation-trainer/
 │   │   └── shared/          # Shared components (7 files): Skeleton, ErrorBoundary, ToastProvider
 │   ├── config/              # App configuration (AppConfig.ts)
 │   ├── css/                 # Styles (Tailwind + custom CSS)
-│   ├── data/                # Data management (DatasetManager, DataSchema, extractors)
 │   ├── hooks/               # Custom React hooks (5 files): useBreakpoint, useOnboarding, etc.
 │   ├── services/            # Business logic & API clients (9 groups)
 │   │   ├── ai/              # AI services (6 files): interventionEngine, recommendationEngine
@@ -119,4 +118,3 @@ ccl-pronunciation-trainer/
 - **`src/services`**: Singleton services for external APIs (Supabase, Gemini, AWS Polly).
 - **`src/stores`**: Zustand global state (7 slices: audio, tts, vocabulary, progress, auth, settings, ui).
 - **`src/hooks`**: Reusable React hooks (useBreakpoint, useOnboarding, useMigration, useSwipeGesture).
-- **`src/data`**: Dataset loading and validation logic.

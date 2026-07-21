@@ -12,7 +12,7 @@ This document outlines the testing strategy for the PTE Pronunciation Trainer to
 
 ```bash
 # Run unit tests
-npm test
+pnpm test
 ```
 
 ### 2. Integration Testing
@@ -37,7 +37,7 @@ We aim for a minimum of **80%** code coverage for critical paths (configured in 
 
 ```bash
 # Check coverage
-npm run test:coverage
+pnpm run test:coverage
 ```
 
 ## 🔍 Manual Verification

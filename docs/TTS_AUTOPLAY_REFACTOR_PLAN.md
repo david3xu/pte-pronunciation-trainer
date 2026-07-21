@@ -103,7 +103,7 @@ src/stores/slices/
 
 ## Validation plan
 
-- Run `npm run build:ts` after each phase.
+- Run `pnpm run build:ts` after each phase.
 - Run focused tests for changed modules after each phase.
 - Run full pre-commit validation before merging.
 - Manual browser checks:

@@ -7,7 +7,7 @@ This guide describes the build and deployment process for the PTE Pronunciation 
 The application is built using Vite, which bundles the React application and optimizes assets.
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 **Artifacts**:
@@ -25,7 +25,7 @@ We recommend setting up GitHub Actions for automated testing and deployment.
 2.  **Jobs**:
     - `lint`: Run ESLint.
     - `test`: Run Vitest.
-    - `build`: Run `npm run build`.
+    - `build`: Run `pnpm run build`.
 
 ### Vercel Deployment
 The project is optimized for deployment on Vercel.
@@ -33,7 +33,7 @@ The project is optimized for deployment on Vercel.
 1.  **Connect Repository**: Link your GitHub repo to Vercel.
 2.  **Build Settings**:
     - Framework Preset: Vite
-    - Build Command: `npm run vercel-build` (or `npm run build`)
+    - Build Command: `pnpm run vercel-build` (or `pnpm run build`)
     - Output Directory: `dist`
 3.  **Environment Variables**:
     - Add all variables from `.env` to Vercel Project Settings.

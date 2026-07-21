@@ -33,7 +33,7 @@ interface WFDInterfaceProps {
   sessionManager?: SessionManager;
   onNext?: () => void;
   onPrevious?: () => void;
-  onComplete?: () => void;
+  onComplete?: (isCorrect?: boolean) => void;
 }
 
 interface FeedbackData {
@@ -152,6 +152,8 @@ const WFDInterface: React.FC<WFDInterfaceProps> = ({
     setFeedback(feedbackData);
     setHasSubmitted(true);
 
+    const isCorrect = feedbackData.accuracy >= 70;
+
     // Record session data to database (Phase 2)
     if (sessionManager) {
       try {
@@ -162,7 +164,7 @@ const WFDInterface: React.FC<WFDInterfaceProps> = ({
           item_text: sentence,
           user_response: userInput.trim(),
           score: feedbackData.accuracy,
-          is_correct: feedbackData.accuracy >= 70,
+          is_correct: isCorrect,
           attempts: 1,
           time_spent_sec: playCount * 3, // Rough estimate based on play count
         });
@@ -175,7 +177,7 @@ const WFDInterface: React.FC<WFDInterfaceProps> = ({
 
     // Notify parent component
     if (onComplete) {
-      onComplete();
+      onComplete(isCorrect);
     }
   };
 

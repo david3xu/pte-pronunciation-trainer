@@ -21,7 +21,7 @@ import { cleanText } from '../../utils/textUtils';
 interface WordCardProps {
   item: VocabularyTerm | PracticeItem;
   sessionManager?: SessionManager;
-  onItemComplete?: () => void;
+  onItemComplete?: (isCorrect?: boolean) => void;
 }
 
 const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplete }) => {
@@ -107,9 +107,10 @@ const WordCard: React.FC<WordCardProps> = ({ item, sessionManager, onItemComplet
         });
         console.log('[WordCard] Recorded item interaction');
 
-        // Notify parent component that item was completed (for intervention monitoring)
+        // Notify parent that the item was completed. Passive vocabulary playback
+        // has no correctness signal, so it counts as completed and correct.
         if (onItemComplete) {
-          onItemComplete();
+          onItemComplete(true);
         }
       } catch (error) {
         console.error('[WordCard] Failed to record item:', error);

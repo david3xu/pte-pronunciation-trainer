@@ -82,4 +82,36 @@ describe('datasetLoader', () => {
     expect(isPracticeMode('practice-repeat-sentence')).toBe(true);
     expect(isPracticeMode('pte-fib-listening')).toBe(false);
   });
+
+  it('assigns deterministic stable ids to items without an id', async () => {
+    mockFetch({ vocabulary: [{ english: 'alpha' }, { english: 'bravo' }] });
+
+    const first = await loadDataset('pte-fib-listening');
+    expect((first.items[0] as any).id).toBe('pte-fib-listening#0');
+    expect((first.items[1] as any).id).toBe('pte-fib-listening#1');
+
+    // Loading the same dataset again yields the same ids (no timestamps or randomness).
+    mockFetch({ vocabulary: [{ english: 'alpha' }, { english: 'bravo' }] });
+    const second = await loadDataset('pte-fib-listening');
+    expect((second.items[0] as any).id).toBe('pte-fib-listening#0');
+    expect((second.items[1] as any).id).toBe('pte-fib-listening#1');
+  });
+
+  it('gives duplicate content items distinct ids', async () => {
+    mockFetch({ vocabulary: [{ english: 'same' }, { english: 'same' }] });
+
+    const { items } = await loadDataset('pte-fib-listening');
+
+    expect((items[0] as any).id).not.toBe((items[1] as any).id);
+  });
+
+  it('preserves an explicit id already present on an item', async () => {
+    mockFetch({ vocabulary: [{ english: 'x', id: 'explicit-1' }, { english: 'y' }] });
+
+    const { items } = await loadDataset('pte-fib-listening');
+
+    expect((items[0] as any).id).toBe('explicit-1');
+    // The item without an id still receives a generated one at its source index.
+    expect((items[1] as any).id).toBe('pte-fib-listening#1');
+  });
 });

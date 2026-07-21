@@ -310,4 +310,23 @@ describe('store navigation', () => {
     expect(state.progress.completedItems.has('term-1')).toBe(true);
     expect(state.progress.completedItems.has('obscure')).toBe(false);
   });
+
+  it('tracks completion by a generated loader style id, not shared content text', () => {
+    const store = useAppStore.getState();
+    // Two items with duplicate english text but distinct loader generated ids.
+    const loaderShaped = [
+      { id: 'pte-fib-listening#0', english: 'alpha' },
+      { id: 'pte-fib-listening#1', english: 'alpha' },
+    ] as unknown as VocabularyTerm[];
+
+    store.vocabulary.setDataset(loaderShaped, 'pte-fib-listening');
+    store.vocabulary.goToItem(1);
+    const marked = store.progress.markCurrentItemCompleted(true);
+
+    const state = useAppStore.getState();
+    expect(marked).toBe(true);
+    expect(state.progress.completedItems.has('pte-fib-listening#1')).toBe(true);
+    expect(state.progress.completedItems.has('pte-fib-listening#0')).toBe(false);
+    expect(state.progress.completedItems.has('alpha')).toBe(false);
+  });
 });

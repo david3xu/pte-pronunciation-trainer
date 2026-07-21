@@ -91,6 +91,8 @@ export type VocabularyBookId =
  * Vocabulary term with IPA pronunciation
  */
 export interface VocabularyTerm {
+  /** Stable per item id assigned during dataset loading; content fields are a fallback. */
+  id?: string;
   /** The word itself */
   word: string;
   /** IPA pronunciation notation */
@@ -151,6 +153,8 @@ export interface PracticeMetadata {
  * Repeat Sentence (RS) item
  */
 export interface RepeatSentenceItem {
+  /** Stable per item id assigned during dataset loading; content fields are a fallback. */
+  id?: string;
   /** The sentence to repeat */
   sentence: string;
   /** Metadata */
@@ -165,6 +169,8 @@ export interface RepeatSentenceItem {
  * Answer Short Question (ASQ) item
  */
 export interface AnswerShortQuestionItem {
+  /** Stable per item id assigned during dataset loading; content fields are a fallback. */
+  id?: string;
   /** The question */
   question: string;
   /** The correct answer */
@@ -179,6 +185,8 @@ export interface AnswerShortQuestionItem {
  * Write From Dictation (WFD) item
  */
 export interface WriteFromDictationItem {
+  /** Stable per item id assigned during dataset loading; content fields are a fallback. */
+  id?: string;
   /** The sentence to write */
   sentence: string;
   /** Metadata */

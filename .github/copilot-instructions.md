@@ -5,6 +5,7 @@ This is a React 19 + TypeScript 5 PTE pronunciation trainer. The app is mostly c
 ## Commands
 
 ```bash
+npm install            # Install dependencies; packageManager is npm@10.9.4
 npm run start          # Generate PTE data, then start Vite on port 3001
 npm run dev            # Start Vite only; requires existing data/processed files
 npm run dev:proxy      # Start the dev proxy script
@@ -12,6 +13,7 @@ npm run preview        # Preview the production build on port 3002
 npm run data:pte       # Convert data/source/pte markdown into generated JSON
 npm run build          # compile:ts + API typecheck + vite build
 npm run build:ts       # Type-check app and API configs without emitting
+npm run typecheck:api  # Type-check Vercel/serverless API config only
 npm run lint           # Alias for TypeScript type-checking
 npm run lint:css       # Stylelint src/css/**/*.css
 npm run validate       # Validate generated datasets
@@ -23,17 +25,20 @@ Tests use Vitest with `happy-dom` and `src/test/setup.ts`.
 ```bash
 npm test                                             # Full Vitest suite
 npx vitest run src/config/AppConfig.test.ts         # Single test file
+npx vitest run src/components/practice/WordCard.test.tsx
 npx vitest run -t "renders vocabulary word"         # Single test by name
 npm run test:watch                                  # Watch mode
 npm run test:coverage                               # Coverage report
 npm run test:e2e                                    # Playwright E2E suite
 npx playwright test tests/e2e/tts.spec.ts           # Single E2E spec
+npx playwright test -g "tts"                        # Single E2E test by title
 ```
 
 ## Architecture
 
 - `src/App.tsx` is intentionally thin: it imports global Tailwind CSS, wraps the app in `ToastProvider`, and delegates behavior to `src/components/AppContent.tsx`.
 - `AppContent` is the runtime coordinator. It loads the selected dataset from `appConfig`, normalizes vocabulary/shadowing/segment shapes through `src/services/dataset/datasetLoader.ts`, restores progress, starts session tracking, requests wake lock, mounts global modals/panels, and lazy-loads RS/ASQ/WFD/typing practice interfaces.
+- Practice routing has two related mode layers: `settings.practiceType` selects the broad UI family (`vocabulary`, `vocab-typing`, `practice`, `shadowing`), while `vocabulary.mode` selects the specific interface in `AppContent`.
 - UI is feature-grouped under `src/components/`: `practice/`, `audio/`, `ai/`, `settings/`, `shared/`, `migration/`, and `profile`. Put new UI in the closest existing feature folder.
 - Global state lives in `src/stores/index.ts` as one Zustand store with slices for `audio`, `tts`, `settings`, `vocabulary`, `progress`, `ui`, and `auth`. Use exported selector hooks such as `useSettings`, `useAudioState`, `useVocabulary`, `useProgress`, and `useAuth` instead of reaching into unrelated component state.
 - Configuration is centralized in `src/config/AppConfig.ts`. Runtime data paths, learning modes, API endpoints, Gemini defaults, TTS defaults, delays, and limits should come from this config rather than being duplicated in components.
@@ -57,6 +62,8 @@ npx playwright test tests/e2e/tts.spec.ts           # Single E2E spec
 - Browser voices load asynchronously. Do not assume `speechSynthesis.getVoices()` is populated synchronously; follow the `voiceschanged` preload pattern in `src/services/audio/TTSEngine.ts`.
 - Client-exposed environment variables must use the `VITE_` prefix. Keep server-only secrets out of client code; `GEMINI_API_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, and AWS credentials remain server-side.
 - The TypeScript config is strict (`noImplicitAny`, `strictNullChecks`, `noUncheckedIndexedAccess`, `noUnusedLocals`, etc.). Avoid broad casts and keep changes type-safe.
+- `docs/CONTRIBUTING.md` asks for conventional commit prefixes (`feat:`, `fix:`, `docs:`, `refactor:`) when creating commits.
+- Vitest uses `happy-dom` with `src/test/setup.ts`; Playwright E2E starts `npm run data:pte && npm run dev -- --host 127.0.0.1` on port 3001.
 
 ## MCP servers
 

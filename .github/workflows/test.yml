@@ -30,10 +30,6 @@ jobs:
     - name: Compile TypeScript
       run: npm run compile:ts
 
-    - name: Run linter
-      run: npm run lint:js
-      continue-on-error: true  # Don't fail on linting warnings
-
     - name: Run tests
       run: npm test
 
@@ -67,10 +63,6 @@ jobs:
 
     - name: Run TypeScript type checking
       run: npm run lint:ts
-
-    - name: Run JavaScript linting
-      run: npm run lint:js
-      continue-on-error: true
 
   build:
     runs-on: ubuntu-latest

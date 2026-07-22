@@ -1546,3 +1546,29 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1539. adj. next | /nekst/ — sounds like **NEKST** | /nekst/ — sounds like **NEKST**
 1540. n. generation | /ˌdʒenəˈreɪʃən/ — sounds like **jen-uh-RAY-shun** | /ˌdʒenəˈreɪʃən/ — sounds like **jen-uh-RAY-shun**
 1541. v. shape | /ʃeɪp/ — sounds like **SHAYP** | /ʃeɪp/ — sounds like **SHAYP**
+1542. n. Summerhill | /ˈsʌməhɪl/ — sounds like **SUM-uh-hil** | /ˈsʌmərhɪl/ — sounds like **SUM-uhr-hil**
+1543. v. regarded | /rɪˈɡɑːdɪd/ — sounds like **ri-GAH-did** | /rɪˈɡɑːrdɪd/ — sounds like **ri-GAR-did**
+1544. adj. considerable | /kənˈsɪdərəbəl/ — sounds like **kun-SID-uh-ruh-bul** | /kənˈsɪdərəbəl/ — sounds like **kun-SID-uh-ruh-bul**
+1545. n. suspicion | /səˈspɪʃən/ — sounds like **suh-SPISH-un** | /səˈspɪʃən/ — sounds like **suh-SPISH-un**
+1546. n. establishment | /ɪˈstæblɪʃmənt/ — sounds like **i-STAB-lish-munt** | /ɪˈstæblɪʃmənt/ — sounds like **i-STAB-lish-munt**
+1547. adj. optional | /ˈɒpʃənəl/ — sounds like **OP-shun-ul** | /ˈɑːpʃənəl/ — sounds like **AHP-shun-ul**
+1548. n. pupils | /ˈpjuːpəlz/ — sounds like **PYOO-pulz** | /ˈpjuːpəlz/ — sounds like **PYOO-pulz**
+1549. n. council | /ˈkaʊnsəl/ — sounds like **KOWN-sul** | /ˈkaʊnsəl/ — sounds like **KOWN-sul**
+1550. n. staff | /stɑːf/ — sounds like **STAHF** | /stæf/ — sounds like **STAF**
+1551. n. members | /ˈmembəz/ — sounds like **MEM-buhz** | /ˈmembərz/ — sounds like **MEM-buhrz**
+1552. pron. everyone | /ˈevriwʌn/ — sounds like **EV-ree-wun** | /ˈevriwʌn/ — sounds like **EV-ree-wun**
+1553. v. having | /ˈhævɪŋ/ — sounds like **HAV-ing** | /ˈhævɪŋ/ — sounds like **HAV-ing**
+1554. adj. equal | /ˈiːkwəl/ — sounds like **EE-kwul** | /ˈiːkwəl/ — sounds like **EE-kwul**
+1555. n. voting | /ˈvəʊtɪŋ/ — sounds like **VOH-ting** | /ˈvoʊtɪŋ/ — sounds like **VOH-ting**
+1556. n. rights | /raɪts/ — sounds like **RYTS** | /raɪts/ — sounds like **RYTS**
+1557. n. sector | /ˈsektə/ — sounds like **SEK-tuh** | /ˈsektər/ — sounds like **SEK-tuhr**
+1558. v. divides | /dɪˈvaɪdz/ — sounds like **di-VYDZ** | /dɪˈvaɪdz/ — sounds like **di-VYDZ**
+1559. n. statistics | /stəˈtɪstɪks/ — sounds like **stuh-TIS-tiks** | /stəˈtɪstɪks/ — sounds like **stuh-TIS-tiks**
+1560. conj. since | /sɪns/ — sounds like **SINS** | /sɪns/ — sounds like **SINS**
+1561. v. serve | /sɜːv/ — sounds like **SURV** | /sɝːv/ — sounds like **SURV**
+1562. adj. local | /ˈləʊkəl/ — sounds like **LOH-kul** | /ˈloʊkəl/ — sounds like **LOH-kul**
+1563. v. estimate | /ˈestɪmeɪt/ — sounds like **ES-ti-mayt** | /ˈestəmeɪt/ — sounds like **ES-tuh-mayt**
+1564. phr. how many | /haʊ ˈmeni/ — sounds like **HOW MEN-ee** | /haʊ ˈmeni/ — sounds like **HOW MEN-ee**
+1565. n. jobs | /dʒɒbz/ — sounds like **JOBZ** | /dʒɑːbz/ — sounds like **JAHBZ**
+1566. phr. due to | /djuː tuː/ — sounds like **DYOO too** | /duː tu/ — sounds like **DOO too**
+1567. n. expenditures | /ɪkˈspendɪtʃəz/ — sounds like **ik-SPEN-di-chuz** | /ɪkˈspendətʃərz/ — sounds like **ik-SPEN-duh-churz**

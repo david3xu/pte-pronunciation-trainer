@@ -44,7 +44,7 @@
 import { GoogleGenAI } from '@google/genai';
 import { createClient } from '@supabase/supabase-js';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { getGeminiApiKey } from '../config';
+import { getGeminiApiKey } from '../config.js';
 
 // ============================================
 // Types

@@ -1,4 +1,4 @@
-import { getAzureSpeechConfig, getVoiceLanguageCode, resolveAzureVoiceName } from './config';
+import { getAzureSpeechConfig, getVoiceLanguageCode, resolveAzureVoiceName } from './config.js';
 
 export interface SynthesizeSpeechOptions {
   text: string;

@@ -8,7 +8,7 @@
  */
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { PREMIUM_VOICES } from './config';
+import { PREMIUM_VOICES } from './config.js';
 
 export default async function handler(
   req: VercelRequest,

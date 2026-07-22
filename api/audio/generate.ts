@@ -29,8 +29,8 @@
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { createClient } from '@supabase/supabase-js';
-import { synthesizeSpeech } from '../azureSpeech';
-import { resolveAzureVoiceName } from '../config';
+import { synthesizeSpeech } from '../azureSpeech.js';
+import { resolveAzureVoiceName } from '../config.js';
 
 // ============================================
 // Types

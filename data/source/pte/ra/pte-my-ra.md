@@ -1719,7 +1719,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1712. n. brains | /breɪnz/ — sounds like **BRAYNZ** | /breɪnz/ — sounds like **BRAYNZ**
 1713. adj. active | /ˈæktɪv/ — sounds like **AK-tiv** | /ˈæktɪv/ — sounds like **AK-tiv**
 1714. v. moving | /ˈmuːvɪŋ/ — sounds like **MOO-ving** | /ˈmuːvɪŋ/ — sounds like **MOO-ving**
-1715. det. another | /əˈnʌðə/ — sounds like **uh-NUHTH-uh** | /əˈnʌðər/ — sounds like **uh-NUHTH-ur**
+1715. adj. another | /əˈnʌðə/ — sounds like **uh-NUHTH-uh** | /əˈnʌðər/ — sounds like **uh-NUHTH-ur**
 1716. phr. as soon as | /əz suːn əz/ — sounds like **uz SOON uz** | /əz suːn əz/ — sounds like **uz SOON uz**
 1717. v. reach | /riːtʃ/ — sounds like **REECH** | /riːtʃ/ — sounds like **REECH**
 1718. n. mastery | /ˈmɑːstəri/ — sounds like **MAH-stuh-ree** | /ˈmæstəri/ — sounds like **MAS-tuh-ree**
@@ -1846,7 +1846,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1839. n. messages | /ˈmesɪdʒɪz/ — sounds like **MES-i-jiz** | /ˈmesɪdʒɪz/ — sounds like **MES-i-jiz**
 1840. v. flashed | /flæʃt/ — sounds like **FLASHT** | /flæʃt/ — sounds like **FLASHT**
 1841. v. proved | /pruːvd/ — sounds like **PROOVD** | /pruːvd/ — sounds like **PROOVD**
-1842. det. several | /ˈsevərəl/ — sounds like **SEV-uh-rul** | /ˈsevərəl/ — sounds like **SEV-uh-rul**
+1842. adj. several | /ˈsevərəl/ — sounds like **SEV-uh-rul** | /ˈsevərəl/ — sounds like **SEV-uh-rul**
 1843. n. smoking | /ˈsməʊkɪŋ/ — sounds like **SMOH-king** | /ˈsmoʊkɪŋ/ — sounds like **SMOH-king**
 1844. n. ban | /bæn/ — sounds like **BAN** | /bæn/ — sounds like **BAN**
 1845. n. policy | /ˈpɒləsi/ — sounds like **POL-uh-see** | /ˈpɑːləsi/ — sounds like **PAH-luh-see**
@@ -1892,7 +1892,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1885. adj. likely | /ˈlaɪkli/ — sounds like **LYK-lee** | /ˈlaɪkli/ — sounds like **LYK-lee**
 1886. n. failure | /ˈfeɪljə/ — sounds like **FAYL-yuh** | /ˈfeɪljər/ — sounds like **FAYL-yur**
 1887. adj. established | /ɪˈstæblɪʃt/ — sounds like **i-STAB-lisht** | /ɪˈstæblɪʃt/ — sounds like **i-STAB-lisht**
-1888. det. little | /ˈlɪtəl/ — sounds like **LIT-ul** | /ˈlɪtəl/ — sounds like **LIT-ul**
+1888. adj. little | /ˈlɪtəl/ — sounds like **LIT-ul** | /ˈlɪtəl/ — sounds like **LIT-ul**
 1889. n. customer | /ˈkʌstəmə/ — sounds like **KUHS-tuh-muh** | /ˈkʌstəmər/ — sounds like **KUHS-tuh-mur**
 1890. n. access | /ˈækses/ — sounds like **AK-ses** | /ˈækses/ — sounds like **AK-ses**
 1891. n. restaurateurs | /ˌrestərəˈtɜːz/ — sounds like **res-tuh-ruh-TURZ** | /ˌrestərəˈtɜːrz/ — sounds like **res-tuh-ruh-TURZ**

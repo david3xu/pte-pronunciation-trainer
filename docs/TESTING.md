@@ -31,7 +31,7 @@ pnpm test
 We aim for a minimum of **80%** code coverage for critical paths (configured in `package.json`).
 
 - **Critical Paths**:
-  - `src/services/`: API interactions (Supabase, Gemini, AWS).
+  - `src/services/`: API interactions (Supabase, Gemini, Azure Speech).
   - `src/utils/`: Core logic and helpers.
   - `src/stores/`: State management.
 
@@ -44,7 +44,7 @@ pnpm run test:coverage
 
 Before merging PRs, perform the following manual checks:
 
-1.  **Audio Playback**: Verify AWS Polly audio plays correctly.
+1.  **Audio Playback**: Verify Azure Speech audio plays correctly, with browser speech fallback when unavailable.
 2.  **Recording**: specific browser permissions for microphone are handled.
 3.  **AI Chat**: Test a conversation flow with the AI Tutor.
 4.  **Offline Mode**: Test PWA functionality by going offline.
@@ -53,5 +53,5 @@ Before merging PRs, perform the following manual checks:
 ## 🛠️ Mocks & Stubs
 
 - **Supabase**: Mocked in `tests/__mocks__/supabaseServices.js`.
-- **AWS Polly**: Mocked to prevent actual API calls during tests.
+- **Azure Speech**: Mocked to prevent actual API calls during tests.
 - **Gemini AI**: Mocked to simulate AI responses.

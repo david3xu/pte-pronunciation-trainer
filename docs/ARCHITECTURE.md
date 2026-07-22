@@ -13,7 +13,7 @@ graph TD
     User[User] -->|Interacts| Client[React Client (Vite)]
     Client -->|Auth & Data| Supabase[Supabase (Auth & DB)]
     Client -->|AI Chat| Gemini[Google Gemini AI]
-    Client -->|TTS| Polly[AWS Polly]
+    Client -->|TTS| AzureSpeech[Azure AI Speech]
     Client -->|Analytics| PostHog[PostHog]
 
     subgraph "Frontend Layer"
@@ -45,9 +45,9 @@ graph TD
 - **Google Gemini AI**:
   - Acts as the "AI Tutor".
   - Accessed via a proxy/middleware to protect API keys and manage context.
-- **AWS Polly**:
+- **Azure AI Speech**:
   - Provides high-quality Neural Text-to-Speech.
-  - Audio is fetched and cached locally to reduce API costs.
+  - Audio is fetched through serverless API routes and falls back to browser speech if unavailable.
 
 ### Data Pipeline
 - **Source**: Markdown files in `data/source/pte`.
@@ -58,7 +58,7 @@ graph TD
 
 ### 1. Pronunciation Practice
 1.  User selects a word/sentence.
-2.  App plays reference audio (AWS Polly).
+2.  App plays reference audio (Azure AI Speech or browser fallback).
 3.  User records audio (Browser MediaRecorder API).
 4.  App analyzes audio (SpeechRecognition API or AI) and gives feedback.
 
@@ -95,7 +95,7 @@ ccl-pronunciation-trainer/
 │   ├── services/            # Business logic & API clients (9 groups)
 │   │   ├── ai/              # AI services (6 files): interventionEngine, recommendationEngine
 │   │   ├── analytics/       # Analytics (1 file): analyticsService
-│   │   ├── audio/           # Audio/TTS (2 files): TTSEngine, pollyService
+│   │   ├── audio/           # Audio/TTS: TTSEngine, background audio, voice selection
 │   │   ├── device/          # Device detection (1 file)
 │   │   ├── migration/       # Data migration (1 file)
 │   │   ├── profile/         # User profiles (1 file): learnerProfileService
@@ -115,6 +115,6 @@ ccl-pronunciation-trainer/
 ## 📂 Directory Structure Strategy
 
 - **`src/components`**: Feature-grouped UI components (ai/, audio/, practice/, settings/, shared/).
-- **`src/services`**: Singleton services for external APIs (Supabase, Gemini, AWS Polly).
+- **`src/services`**: Singleton services for external APIs (Supabase, Gemini, Azure Speech).
 - **`src/stores`**: Zustand global state (7 slices: audio, tts, vocabulary, progress, auth, settings, ui).
 - **`src/hooks`**: Reusable React hooks (useBreakpoint, useOnboarding, useMigration, useSwipeGesture).

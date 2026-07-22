@@ -6,7 +6,7 @@ The app is built around generated local datasets for vocabulary and practice con
 
 - local JSON datasets for fast vocabulary and practice loading
 - React 19 + TypeScript 5 UI with Zustand state management
-- AWS Polly-backed real audio playback
+- Azure AI Speech-backed real audio playback
 - Supabase auth, sync, and progress tracking
 - Google Gemini-backed AI tutor and recommendation features
 - Vite + PWA setup for local development and static deployment
@@ -50,13 +50,13 @@ Common variables:
 - `VITE_POSTHOG_API_KEY`
 - `VITE_POSTHOG_HOST`
 - `GEMINI_API_KEY` for server-side AI routes
-- `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION` for server-side Polly routes
+- `AZURE_SPEECH_KEY`, `AZURE_SPEECH_REGION` for server-side Azure Speech TTS routes
 - `VITE_PREMIUM_TTS_ENABLED` to expose premium TTS UI locally
 
 Important distinction:
 
 - `VITE_*` values are exposed to client code
-- Gemini, AWS, and Supabase service-role secrets must stay server-side
+- Gemini, Azure Speech, and Supabase service-role secrets must stay server-side
 
 ## Common scripts
 
@@ -115,7 +115,7 @@ npx playwright test tests/e2e/tts.spec.ts
 ### Integrations
 
 - `src/services/supabase/` handles auth and sync.
-- `src/services/audio/` handles Polly-backed real audio playback, media-session controls, and voice settings.
+- `src/services/audio/` handles Azure-backed real audio playback, browser fallback, media-session controls, and voice settings.
 - `src/services/ai/` handles tutor, recommendations, and intervention logic.
 - `api/` contains Vercel-style serverless routes for AI and TTS features.
 - `supabase/migrations/` contains database schema history.

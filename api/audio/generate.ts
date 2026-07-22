@@ -1,7 +1,7 @@
 /**
- * Vercel Serverless Function: Audio Generation with AWS Polly
+ * Vercel Serverless Function: Audio Generation with Azure AI Speech
  *
- * This endpoint generates high-quality audio using AWS Polly neural voices.
+ * This endpoint generates high-quality audio using Azure neural voices.
  * It handles SSML formatting, audio generation, and optional caching in Supabase Storage.
  *
  * POST /api/audio/generate
@@ -9,7 +9,7 @@
  * Request body:
  * {
  *   text: string;           // Text to synthesize
- *   voiceId?: string;       // Voice ID (default: 'Joanna')
+ *   voiceId?: string;       // Voice ID (default: configured Azure voice)
  *   speed?: string;         // Speed (default: '100%')
  *   pitch?: string;         // Pitch (default: 'medium')
  *   emphasis?: string;      // Emphasis level (default: 'moderate')
@@ -21,25 +21,16 @@
  * - Error: Returns JSON with error message
  *
  * Environment variables required:
- * - AWS_ACCESS_KEY_ID
- * - AWS_SECRET_ACCESS_KEY
- * - AWS_REGION (optional, default: 'us-east-1')
+ * - AZURE_SPEECH_KEY
+ * - AZURE_SPEECH_REGION
  * - SUPABASE_URL (for caching)
  * - SUPABASE_SERVICE_ROLE_KEY (for caching)
  */
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import {
-  PollyClient,
-  SynthesizeSpeechCommand,
-  SynthesizeSpeechCommandInput,
-  Engine,
-  OutputFormat,
-  VoiceId,
-  LanguageCode
-} from '@aws-sdk/client-polly';
 import { createClient } from '@supabase/supabase-js';
-import { getVoiceLanguageCode } from '../config';
+import { synthesizeSpeech } from '../azureSpeech';
+import { resolveAzureVoiceName } from '../config';
 
 // ============================================
 // Types
@@ -57,28 +48,6 @@ interface AudioRequest {
 // ============================================
 // Helpers
 // ============================================
-
-/**
- * Build SSML markup for text synthesis
- */
-function buildSSML(
-  text: string,
-  speed: string = '100%',
-  pitch: string = 'medium',
-  emphasis: string = 'moderate'
-): string {
-  const emphasizedText = emphasis !== 'none'
-    ? `<emphasis level="${emphasis}">${text}</emphasis>`
-    : text;
-
-  return `
-    <speak>
-      <prosody rate="${speed}" pitch="${pitch}">
-        ${emphasizedText}
-      </prosody>
-    </speak>
-  `.trim();
-}
 
 /**
  * Generate cache key for audio
@@ -155,19 +124,6 @@ async function saveToCache(cacheKey: string, audioBuffer: Buffer): Promise<void>
   }
 }
 
-/**
- * Convert stream to buffer
- */
-async function streamToBuffer(stream: any): Promise<Buffer> {
-  const chunks: Uint8Array[] = [];
-
-  for await (const chunk of stream) {
-    chunks.push(chunk);
-  }
-
-  return Buffer.concat(chunks);
-}
-
 // ============================================
 // Main Handler
 // ============================================
@@ -192,7 +148,7 @@ export default async function handler(
     // Parse request body
     const {
       text,
-      voiceId = 'Joanna',
+      voiceId,
       speed = '100%',
       pitch = 'medium',
       emphasis = 'moderate',
@@ -211,22 +167,11 @@ export default async function handler(
       return;
     }
 
-    // Check AWS credentials
-    const accessKeyId = process.env['AWS_ACCESS_KEY_ID'];
-    const secretAccessKey = process.env['AWS_SECRET_ACCESS_KEY'];
-    const region = process.env['AWS_REGION'] || 'us-east-1';
-
-    if (!accessKeyId || !secretAccessKey) {
-      res.status(500).json({
-        error: 'AWS credentials not configured',
-        message: 'Premium TTS is not available. Please contact support.'
-      });
-      return;
-    }
+    const resolvedVoiceId = resolveAzureVoiceName(voiceId);
 
     // Check cache if enabled
     if (useCache) {
-      const cacheKey = getCacheKey(text, voiceId, speed);
+      const cacheKey = getCacheKey(text, resolvedVoiceId, speed);
       const cachedUrl = await checkCache(cacheKey);
 
       if (cachedUrl) {
@@ -237,54 +182,28 @@ export default async function handler(
       }
     }
 
-    // Initialize Polly client
-    const polly = new PollyClient({
-      region,
-      credentials: {
-        accessKeyId,
-        secretAccessKey
-      }
+    const result = await synthesizeSpeech({
+      text,
+      voiceId: resolvedVoiceId,
+      speed,
+      pitch,
+      emphasis,
     });
-
-    // Build SSML
-    const ssml = buildSSML(text, speed, pitch, emphasis);
-
-    // Prepare synthesis parameters
-    const params: SynthesizeSpeechCommandInput = {
-      Text: ssml,
-      TextType: 'ssml',
-      OutputFormat: 'mp3' as OutputFormat,
-      VoiceId: voiceId as VoiceId,
-      Engine: 'neural' as Engine,
-      LanguageCode: getVoiceLanguageCode(voiceId) as LanguageCode
-    };
-
-    // Generate audio
-    const command = new SynthesizeSpeechCommand(params);
-    const response = await polly.send(command);
-
-    if (!response.AudioStream) {
-      res.status(500).json({ error: 'Failed to generate audio' });
-      return;
-    }
-
-    // Convert stream to buffer
-    const audioBuffer = await streamToBuffer(response.AudioStream);
 
     // Save to cache in background (don't wait)
     if (useCache) {
-      const cacheKey = getCacheKey(text, voiceId, speed);
-      saveToCache(cacheKey, audioBuffer).catch(err =>
+      const cacheKey = getCacheKey(text, result.voiceId, speed);
+      saveToCache(cacheKey, result.audioBuffer).catch(err =>
         console.error('Background cache save failed:', err)
       );
     }
 
     // Return audio
-    res.setHeader('Content-Type', 'audio/mpeg');
+    res.setHeader('Content-Type', result.contentType);
     res.setHeader('X-Cache-Status', 'MISS');
     res.setHeader('X-Character-Count', text.length.toString());
-    res.setHeader('X-Voice-Id', voiceId);
-    res.status(200).send(audioBuffer);
+    res.setHeader('X-Voice-Id', result.voiceId);
+    res.status(200).send(result.audioBuffer);
   } catch (error) {
     console.error('Audio generation error:', error);
     res.status(500).json({

@@ -1,7 +1,7 @@
 /**
  * Voice List API Route (Vercel Serverless Function)
  *
- * Returns available premium voices for AWS Polly TTS.
+ * Returns available premium voices for Azure AI Speech TTS.
  *
  * Endpoint: /api/voices
  * Method: GET

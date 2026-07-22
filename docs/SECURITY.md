@@ -26,7 +26,7 @@ We will acknowledge your report within 48 hours and provide an estimated timelin
 - Use secure secret storage in production (e.g., Vercel Environment Variables).
 
 ### Data Privacy
-- This application uses Google Gemini and AWS Polly.
+- This application uses Google Gemini and Azure AI Speech.
 - User audio is processed but not permanently stored unless explicitly saved.
 - Review the [Privacy Policy](PRIVACY.md) for more details.
 

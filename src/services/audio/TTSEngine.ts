@@ -362,7 +362,8 @@ export class TTSEngine {
     console.log(`[TTSEngine #${callId}] 📊 Current state: isSpeaking=${this.isSpeaking}, lastSpoken="${this.lastSpokenText.substring(0, 20)}..."`);
     console.log(`[TTSEngine #${callId}] 📊 Synth state: speaking=${this.synth.speaking}, pending=${this.synth.pending}, paused=${this.synth.paused}`);
 
-    // Premium TTS is currently unavailable; always use browser TTS.
+    // Premium TTS is optional. If the real-audio endpoint is unavailable, the
+    // engine falls back to browser speech synthesis below.
     const ttsVoice = useAppStore.getState().settings.ttsVoice;
     if (ttsVoice === 'premium') {
       console.warn('[TTSEngine] Premium TTS is unavailable; resetting to browser TTS');
@@ -403,7 +404,18 @@ export class TTSEngine {
     this.lastSpokenText = text;
     console.log(`[TTSEngine #${callId}] ✅ Setting isSpeaking=true, starting speech...`);
 
-    return this.speakWithRealAudio(text, language, customRate);
+    try {
+      await this.speakWithRealAudio(text, language, customRate);
+    } catch (error) {
+      if (!this.shouldFallbackToBrowserTts(error)) {
+        throw error;
+      }
+
+      console.warn('[TTSEngine] Real audio unavailable; falling back to browser speech synthesis:', error);
+      this.isSpeaking = true;
+      this.lastSpokenText = text;
+      await this.speakWithBrowserTts(text, language, customRate);
+    }
   }
 
   private speakWithRealAudio(text: string, language: string, customRate: number | null): Promise<void> {
@@ -443,6 +455,56 @@ export class TTSEngine {
         .catch((error) => {
           settle(error instanceof Error ? error : new Error('Real audio playback failed'));
         });
+    });
+  }
+
+  private shouldFallbackToBrowserTts(error: unknown): boolean {
+    if (error instanceof DOMException && error.name === 'AbortError') {
+      return false;
+    }
+    if (error instanceof Error && error.name === 'AbortError') {
+      return false;
+    }
+    return true;
+  }
+
+  private speakWithBrowserTts(text: string, language: string, customRate: number | null): Promise<void> {
+    if (typeof SpeechSynthesisUtterance === 'undefined') {
+      throw new Error('Browser speech synthesis is not available');
+    }
+
+    return new Promise<void>((resolve, reject) => {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = language;
+      utterance.rate = customRate ?? this.getCurrentSpeechRate();
+      utterance.volume = useAppStore.getState().audio.volume;
+
+      const settle = (error?: Error) => {
+        if (this.currentUtterance !== utterance) return;
+        this.currentUtterance = null;
+        this.isSpeaking = false;
+        this.lastSpokenText = '';
+        useAppStore.getState().tts.stopSpeaking();
+        if (error) {
+          reject(error);
+          return;
+        }
+        resolve();
+      };
+
+      utterance.onend = () => settle();
+      utterance.onerror = (event) => {
+        const errorName = typeof event.error === 'string' ? event.error : 'unknown';
+        settle(new Error(`Browser speech synthesis failed: ${errorName}`));
+      };
+
+      this.currentUtterance = utterance;
+
+      try {
+        this.synth.speak(utterance);
+      } catch (error) {
+        settle(error instanceof Error ? error : new Error('Browser speech synthesis failed'));
+      }
     });
   }
 

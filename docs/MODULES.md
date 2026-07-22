@@ -43,7 +43,7 @@ graph TD
     subgraph "Data/Infrastructure"
         Supabase[(Supabase DB)]
         LocalStorage[(LocalStorage)]
-        PollyAPI[AWS Polly API]
+        AzureSpeechAPI[Azure AI Speech API]
         GeminiAPI[Google Gemini API]
     end
 
@@ -70,7 +70,7 @@ graph TD
     AuthSvc --> Supabase
     SyncSvc --> Supabase
     SessionSvc --> LocalStorage
-    TTSSvc --> PollyAPI
+    TTSSvc --> AzureSpeechAPI
     AISvc --> GeminiAPI
 ```
 
@@ -106,8 +106,8 @@ The **SessionManager** is a critical singleton service that handles the practice
 The audio module handles pronunciation playback.
 
 - **Strategy**: Hybrid (Premium vs. Browser).
-- **Premium**: Uses AWS Polly (requires API keys). Audio is fetched as a blob and played.
-- **Fallback**: Uses the browser's native `SpeechSynthesis` API if Polly is unconfigured or fails.
+- **Premium**: Uses Azure AI Speech (requires server-side API keys). Audio is fetched as a blob and played.
+- **Fallback**: Uses the browser's native `SpeechSynthesis` API if Azure Speech is unconfigured or fails.
 
 ### 4. AI Tutor (`src/services/ai`)
 Provides personalized feedback and chat functionality.
@@ -121,7 +121,7 @@ Provides personalized feedback and chat functionality.
 1.  **User** clicks "Play" on a Word Card.
 2.  **Component** calls `audio.play()`.
 3.  **Store** updates `audio.isPlaying` to `true`.
-4.  **Audio Service** fetches audio (Polly) or speaks (Browser).
+4.  **Audio Service** fetches audio (Azure Speech) or speaks (Browser).
 5.  **User** records pronunciation.
 6.  **Component** calls `SessionManager.recordItem()` with the result.
 7.  **SessionManager** saves the result locally and queues it for sync.

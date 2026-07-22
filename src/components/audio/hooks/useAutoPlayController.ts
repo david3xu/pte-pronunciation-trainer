@@ -358,6 +358,12 @@ export const useAutoPlayController = () => {
         volume: useAppStore.getState().audio.volume,
       }).catch((error) => {
         console.error('[useAutoPlayController] Play gesture audio start failed:', error);
+        backgroundAudioService.stop();
+        useAppStore.getState().ui.showNotification(
+          'Audio playback cannot start right now. Premium audio may be unavailable.',
+          'error'
+        );
+        audio.stopAutoPlay();
       });
     } else {
       backgroundAudioService.primeForUserGesture();

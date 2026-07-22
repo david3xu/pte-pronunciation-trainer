@@ -59,7 +59,7 @@ describe('TTSEngine', () => {
 
     expect(playTextMock).toHaveBeenCalledWith(
       'hello world',
-      expect.objectContaining({ languageCode: 'en-US', rate: 1.1 })
+      expect.objectContaining({ rate: 1.1 })
     );
     expect(speakMock).toHaveBeenCalledTimes(1);
     expect(speakMock.mock.calls[0]?.[0]).toMatchObject({

@@ -1,6 +1,7 @@
 import { Cross2Icon } from '@radix-ui/react-icons';
 import * as Toast from '@radix-ui/react-toast';
-import React, { createContext, useCallback, useContext, useState } from 'react';
+import React, { createContext, useCallback, useContext, useEffect, useState } from 'react';
+import { useAppStore, useNotification } from '../../stores';
 
 export type ToastType = 'success' | 'error' | 'info' | 'warning';
 
@@ -33,6 +34,7 @@ export const useToast = () => {
 
 export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [toasts, setToasts] = useState<ToastMessage[]>([]);
+  const notification = useNotification();
 
   const showToast = useCallback((props: Omit<ToastMessage, 'id'>) => {
     const id = crypto.randomUUID();
@@ -42,6 +44,16 @@ export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const dismissToast = useCallback((id: string) => {
     setToasts((prev) => prev.filter((t) => t.id !== id));
   }, []);
+
+  useEffect(() => {
+    if (!notification?.isVisible) return;
+
+    showToast({
+      title: notification.message,
+      type: notification.type,
+    });
+    useAppStore.getState().ui.hideNotification();
+  }, [notification, showToast]);
 
   return (
     <ToastContext.Provider value={{ showToast, dismissToast }}>

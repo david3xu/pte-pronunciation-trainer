@@ -30,7 +30,7 @@ describe('Config Validation', () => {
 
   describe('Delays & Timeouts', () => {
     it('should have all delays defined', () => {
-      expect(appConfig.get('delays.autoPlayBetweenWords')).toBe(500);
+      expect(appConfig.get('delays.autoPlayBetweenWords')).toBe(300);
       expect(appConfig.get('delays.autoPlayRestartPause')).toBe(1000);
       expect(appConfig.get('delays.recordingTimeout')).toBe(10000);
       expect(appConfig.get('delays.onboardingDelay')).toBe(500);

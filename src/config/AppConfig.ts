@@ -178,7 +178,7 @@ export class AppConfig {
       // ===== DELAYS & TIMEOUTS =====
       delays: {
         // Audio playback
-        autoPlayBetweenWords: 500,
+        autoPlayBetweenWords: 300,
         autoPlayRestartPause: 1000,
 
         // Recording

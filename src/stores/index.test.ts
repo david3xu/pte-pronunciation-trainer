@@ -45,22 +45,22 @@ beforeEach(() => {
 });
 
 describe('store audio settings', () => {
-  it('uses settings.ttsRate as the single playback speed source with a 1.2x default', () => {
+  it('uses settings.ttsRate as the single playback speed source with a 1.0x default', () => {
     const state = useAppStore.getState();
 
-    expect(state.settings.ttsRate).toBe(1.2);
+    expect(state.settings.ttsRate).toBe(1.0);
     expect('playbackSpeed' in state.audio).toBe(false);
     expect('setSpeed' in state.audio).toBe(false);
   });
 
-  it('resets the authoritative speech rate to 1.2x', () => {
+  it('resets the authoritative speech rate to 1.0x', () => {
     const store = useAppStore.getState();
 
     store.settings.updateSetting('ttsRate', 0.8);
     expect(useAppStore.getState().settings.ttsRate).toBe(0.8);
 
     store.settings.resetSettings();
-    expect(useAppStore.getState().settings.ttsRate).toBe(1.2);
+    expect(useAppStore.getState().settings.ttsRate).toBe(1.0);
   });
 });
 

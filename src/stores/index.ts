@@ -44,7 +44,8 @@ import type {
  * learningModes so the store never hardcodes a book id (single source of truth).
  */
 const DEFAULT_VOCABULARY_BOOK = appConfig.getDefaultVocabularyBookId();
-const DEFAULT_TTS_RATE = 1.2;
+const DEFAULT_TTS_RATE = 1.0;
+const PREVIOUS_DEFAULT_TTS_RATE = 1.2;
 
 /**
  * Identity fields checked in priority order when deriving a completion id.
@@ -666,12 +667,17 @@ export const useAppStore = create<AppState>()(
           merge: (persistedState, currentState) => {
             const persisted = persistedState as Partial<AppState>;
             const persistedAudio = persisted.audio;
+            const persistedSettings = persisted.settings;
+            const migratedSettings = {
+              ...currentState.settings,
+              ...(persistedSettings || {}),
+              ttsRate: persistedSettings?.ttsRate === PREVIOUS_DEFAULT_TTS_RATE
+                ? DEFAULT_TTS_RATE
+                : persistedSettings?.ttsRate ?? currentState.settings.ttsRate,
+            };
             return {
               ...currentState,
-              settings: {
-                ...currentState.settings, // Keep all methods
-                ...(persisted.settings || {}), // Override with persisted preferences
-              },
+              settings: migratedSettings,
               audio: {
                 ...currentState.audio, // Keep all methods and runtime state
                 autoPlayEnabled: persistedAudio?.autoPlayEnabled ?? currentState.audio.autoPlayEnabled,

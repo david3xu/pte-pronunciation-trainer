@@ -223,7 +223,7 @@ export class AppConfig {
           { lang: 'en-AU', name: 'Russell' },
           { lang: 'en-GB', name: 'Brian' }
         ],
-        rate: 1.2,
+        rate: 1.0,
         pitch: 1.0,
         volume: 1.0,
         autoSpeak: true
@@ -268,7 +268,7 @@ export class AppConfig {
           autoPlayNext: true,
           repeatMode: 'all',
           showPhonetic: true,
-          ttsRate: 1.2,
+          ttsRate: 1.0,
           ttsVolume: 1.0,
           practiceMode: null,
           difficultyFilter: 'all',

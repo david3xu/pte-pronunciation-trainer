@@ -143,7 +143,7 @@ test('clicking vocabulary audio invokes browser speech synthesis', async ({ page
     type: 'speak',
     lang: 'en-GB',
     voice: 'Google UK English Male',
-    rate: 1.2,
+    rate: 1.0,
   });
 });
 

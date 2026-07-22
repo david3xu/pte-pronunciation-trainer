@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-07-22T09:35:24.307Z",
+    "generated": "2026-07-22T09:50:55.800Z",
     "totalTerms": 1904,
     "source": "pte-my-ra",
     "description": "My PTE Read Aloud word list",
@@ -29105,7 +29105,7 @@
       "wordType": "v."
     },
     {
-      "english": "det. another",
+      "english": "another",
       "pronunciation": {
         "british": {
           "ipa": "əˈnʌðə",
@@ -29116,9 +29116,10 @@
           "phonetic": "uh-NUHTH-ur"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-my-ra",
-      "source": "pte-my-ra"
+      "source": "pte-my-ra",
+      "wordType": "adj."
     },
     {
       "english": "as soon as",
@@ -31263,7 +31264,7 @@
       "wordType": "v."
     },
     {
-      "english": "det. several",
+      "english": "several",
       "pronunciation": {
         "british": {
           "ipa": "ˈsevərəl",
@@ -31274,9 +31275,10 @@
           "phonetic": "SEV-uh-rul"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-my-ra",
-      "source": "pte-my-ra"
+      "source": "pte-my-ra",
+      "wordType": "adj."
     },
     {
       "english": "smoking",
@@ -32044,7 +32046,7 @@
       "wordType": "adj."
     },
     {
-      "english": "det. little",
+      "english": "little",
       "pronunciation": {
         "british": {
           "ipa": "ˈlɪtəl",
@@ -32055,9 +32057,10 @@
           "phonetic": "LIT-ul"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-my-ra",
-      "source": "pte-my-ra"
+      "source": "pte-my-ra",
+      "wordType": "adj."
     },
     {
       "english": "customer",

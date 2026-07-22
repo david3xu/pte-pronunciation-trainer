@@ -30,32 +30,6 @@ const getDelay = (path: string, fallback: number): number => {
   return typeof configuredDelay === 'number' ? configuredDelay : fallback;
 };
 
-const getVocabularyBookIds = (): string[] => {
-  const learningModes = appConfig.get('data.learningModes') || [];
-  return learningModes
-    .filter((mode: any) => mode.category === 'vocabulary')
-    .map((mode: any) => mode.id);
-};
-
-const speakWithTimeout = async (text: string, rate: number): Promise<void> => {
-  const ttsTimeoutMs = Math.min(15000, Math.max(8000, (text.length / 8) * 1000 + 5000));
-  let timeoutId: number | null = null;
-
-  await Promise.race([
-    ttsEngine.speak(text, null, rate),
-    new Promise<never>((_, reject) => {
-      timeoutId = window.setTimeout(() => {
-        void ttsEngine.stopSpeaking();
-        reject(new Error(`TTS timed out after ${ttsTimeoutMs}ms`));
-      }, ttsTimeoutMs);
-    }),
-  ]).finally(() => {
-    if (timeoutId) {
-      window.clearTimeout(timeoutId);
-    }
-  });
-};
-
 export const useAutoPlayController = () => {
   const audio = useAudioState();
   const vocabulary = useVocabulary();
@@ -81,31 +55,43 @@ export const useAutoPlayController = () => {
     };
   }, []);
 
+  // Keep the background-audio element's output volume in sync with the store, so
+  // a volume change applies to the current clip and every future clip. The store
+  // is the single source of truth and clamps the value to [0, 1].
+  useEffect(() => {
+    backgroundAudioService.setVolume(useAppStore.getState().audio.volume);
+    const unsubscribe = useAppStore.subscribe(
+      (state) => state.audio.volume,
+      (volume) => backgroundAudioService.setVolume(volume)
+    );
+    return unsubscribe;
+  }, []);
+
   /**
    * Play the current text as real audio and resolve when the audio element's
    * `ended` event fires, so autoplay progression is driven by playback ending
    * rather than a timer. Rejects if the audio cannot be fetched or played so
    * the caller can surface a clear error instead of silently pretending.
    */
-  const playBackgroundAndWaitForEnd = (text: string, rate: number): Promise<void> => {
+  const playBackgroundAndWaitForEnd = (text: string, rate: number, volume: number): Promise<void> => {
     return new Promise<void>((resolve, reject) => {
       backgroundAudioService.setHandlers({
         onEnded: () => resolve(),
         onError: (error) => reject(error),
         onPlay: () => bgPlayRef.current(),
         onPause: () => bgPauseRef.current(),
-        onStop: () => bgPauseRef.current(),
+        onStop: () => resolve(),
         onNext: () => bgNextRef.current(),
         onPrevious: () => bgPrevRef.current(),
       });
       // Resume the current clip mid-playback when the same item is still loaded
       // and paused; otherwise fetch and play the item from the start. Only
       // playText refetches, so pause/resume of the same item does not restart it.
-      // The configured playback rate is applied to both paths.
+      // The configured playback rate and volume are applied to both paths.
       if (backgroundAudioService.canResume() && backgroundAudioService.getLoadedText() === text) {
-        backgroundAudioService.resume(rate).catch((error) => reject(error));
+        backgroundAudioService.resume(rate, volume).catch((error) => reject(error));
       } else {
-        backgroundAudioService.playText(text, { rate }).catch((error) => reject(error));
+        backgroundAudioService.playText(text, { rate, volume }).catch((error) => reject(error));
       }
     });
   };
@@ -179,13 +165,7 @@ export const useAutoPlayController = () => {
           currentEffectIdRef.current === effectId;
       };
 
-      const isSpeaking = typeof window !== 'undefined' && window.speechSynthesis && window.speechSynthesis.speaking;
-      if (isSpeaking) {
-        console.log(`[useAutoPlayController #${effectId}] ⏳ Waiting 200ms for previous speech to stop...`);
-        await sleep(200);
-      } else {
-        console.log(`[useAutoPlayController #${effectId}] ⚡ No active speech, proceeding instantly...`);
-      }
+      console.log(`[useAutoPlayController #${effectId}] ⚡ Preparing real-audio playback...`);
 
       if (currentEffectIdRef.current !== effectId) {
         console.log(`[useAutoPlayController #${effectId}] ❌ CANCELLED - newer effect #${currentEffectIdRef.current} has taken over`);
@@ -217,23 +197,28 @@ export const useAutoPlayController = () => {
             }
 
             console.log(`[useAutoPlayController #${effectId}] 🔊 Speaking repeat ${i + 1}/${repeatCount}...`);
-            if (useAppStore.getState().settings.backgroundAudioMode) {
-              // Background Audio Mode: play real audio (Polly) and advance on the
-              // element's `ended` event. Do not silently fall back to browser TTS.
-              try {
-                await playBackgroundAndWaitForEnd(cleanedText, settings.ttsRate);
-              } catch (bgError) {
-                console.error('[useAutoPlayController] Background audio failed:', bgError);
-                backgroundAudioService.stop();
-                useAppStore.getState().ui.showNotification(
-                  'Background Audio Mode cannot play right now. Premium audio (AWS Polly) may be unavailable. Turn off Background Audio Mode in Settings to use standard playback.',
-                  'error'
-                );
-                audio.stopAutoPlay();
+            try {
+              await playBackgroundAndWaitForEnd(cleanedText, settings.ttsRate, useAppStore.getState().audio.volume);
+            } catch (audioError) {
+              // Intentional aborts (a newer item/effect superseding this one, or
+              // an explicit stop) are not real failures. Only surface an error
+              // when this effect is still the active playback and the request
+              // genuinely failed, so a list-item click during autoplay does not
+              // flash a false "premium audio unavailable" message.
+              const wasAborted = (audioError as { name?: string })?.name === 'AbortError';
+              const superseded = currentEffectIdRef.current !== effectId || !isPlaybackActive();
+              if (wasAborted || superseded) {
+                console.log(`[useAutoPlayController #${effectId}] ⏹️ Playback aborted or superseded; not surfacing an error`);
                 return;
               }
-            } else {
-              await speakWithTimeout(cleanedText, settings.ttsRate);
+              console.error('[useAutoPlayController] Audio playback failed:', audioError);
+              backgroundAudioService.stop();
+              useAppStore.getState().ui.showNotification(
+                'Audio playback cannot start right now. Premium audio (AWS Polly) may be unavailable.',
+                'error'
+              );
+              audio.stopAutoPlay();
+              return;
             }
             console.log(`[useAutoPlayController #${effectId}] ✅ Speak complete for repeat ${i + 1}/${repeatCount}`);
 
@@ -272,14 +257,15 @@ export const useAutoPlayController = () => {
 
         const shouldAutoSwitch = settings.practiceType === 'vocabulary' && settings.autoSwitchBooks;
         if (shouldAutoSwitch) {
-          const vocabularyBooks = getVocabularyBookIds();
+          const vocabularyBooks = appConfig.getVocabularyBookIds();
           const currentBookId = settings.vocabularyBook;
           const currentBookIndex = vocabularyBooks.indexOf(currentBookId);
 
+          // A current book that is not in the enabled list (for example a legacy
+          // persisted default) advances into the cycle at the first enabled book
+          // instead of stopping playback.
           if (currentBookIndex === -1) {
-            console.error('[useAutoPlayController] Current book not found in book list:', currentBookId);
-            audio.stopAutoPlay();
-            return;
+            console.log('[useAutoPlayController] Current book not in enabled list; starting cycle at first book:', currentBookId);
           }
 
           const nextBookIndex = currentBookIndex + 1;
@@ -349,12 +335,9 @@ export const useAutoPlayController = () => {
       return;
     }
 
-    // Prime the audio element synchronously within this user gesture so
-    // background playback is allowed after the async premium-TTS fetch
-    // (mobile autoplay policy requires the play to originate from a gesture).
-    if (useAppStore.getState().settings.backgroundAudioMode) {
-      backgroundAudioService.primeForUserGesture();
-    }
+    // Prime the audio element synchronously within this user gesture so the
+    // post-fetch real audio play() is allowed by browser autoplay policy.
+    backgroundAudioService.primeForUserGesture();
 
     audio.startAutoPlay();
   };
@@ -369,6 +352,7 @@ export const useAutoPlayController = () => {
   const handleNext = async () => {
     const timestamp = Date.now();
     console.log(`[useAutoPlayController @${timestamp}] ⏩ handleNext() called`);
+    currentEffectIdRef.current = ++nextEffectIdRef.current;
     backgroundAudioService.stop();
     console.log(`[useAutoPlayController @${timestamp}] 📊 Current state: index=${audio.currentIndex}, isAutoPlaying=${audio.isAutoPlaying}`);
 
@@ -393,6 +377,7 @@ export const useAutoPlayController = () => {
   const handlePrev = async () => {
     const timestamp = Date.now();
     console.log(`[useAutoPlayController @${timestamp}] ⏪ handlePrev() called`);
+    currentEffectIdRef.current = ++nextEffectIdRef.current;
     backgroundAudioService.stop();
     console.log(`[useAutoPlayController @${timestamp}] 📊 Current state: index=${audio.currentIndex}, isAutoPlaying=${audio.isAutoPlaying}`);
 

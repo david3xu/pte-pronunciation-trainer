@@ -20,6 +20,7 @@ class FakeAudio {
   paused = true;
   ended = false;
   playbackRate = 1;
+  volume = 1;
   constructor() { lastFakeAudio = this; }
   play() { playSpy(); this.paused = false; return Promise.resolve(); }
   pause() { pauseSpy(); this.paused = true; }
@@ -149,6 +150,53 @@ describe('BackgroundAudioService', () => {
     service.pause();
     await service.resume(1.75);
     expect(lastFakeAudio?.playbackRate).toBe(1.75);
+  });
+
+  // ---- volume ----
+
+  it('applies the requested volume in playText', async () => {
+    const service = new BackgroundAudioService();
+    vi.stubGlobal('fetch', successFetch());
+
+    await service.playText('hello world', { volume: 0.5 });
+    expect(lastFakeAudio?.volume).toBe(0.5);
+  });
+
+  it('applies the current volume on resume', async () => {
+    const service = new BackgroundAudioService();
+    vi.stubGlobal('fetch', successFetch());
+
+    await service.playText('hello world', { rate: 1, volume: 0.6 });
+    expect(lastFakeAudio?.volume).toBe(0.6);
+
+    service.pause();
+    await service.resume(1, 0.2);
+    expect(lastFakeAudio?.volume).toBe(0.2);
+  });
+
+  it('setVolume updates the live element and is remembered for the next clip', async () => {
+    const service = new BackgroundAudioService();
+    vi.stubGlobal('fetch', successFetch());
+
+    await service.playText('hello world', { volume: 0.8 });
+    expect(lastFakeAudio?.volume).toBe(0.8);
+
+    // Live change (e.g. the store volume slider moved mid-playback).
+    service.setVolume(0.3);
+    expect(lastFakeAudio?.volume).toBe(0.3);
+
+    // A later clip without an explicit volume keeps the last known volume.
+    await service.playText('next item');
+    expect(lastFakeAudio?.volume).toBe(0.3);
+  });
+
+  it('setVolume before any clip is loaded applies on the next play', async () => {
+    const service = new BackgroundAudioService();
+    vi.stubGlobal('fetch', successFetch());
+
+    service.setVolume(0.4); // no audio element exists yet
+    await service.playText('hello world');
+    expect(lastFakeAudio?.volume).toBe(0.4);
   });
 
   // ---- priming safety ----

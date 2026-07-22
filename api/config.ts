@@ -53,7 +53,7 @@ export const LIMITS = {
 
 // Voice Configuration
 export const VOICE_CONFIG = {
-  defaultVoiceId: 'en-AU-NatashaNeural',
+  defaultVoiceId: 'en-AU-WilliamNeural',
   defaultEngine: 'neural',
   defaultLanguage: 'en-AU',
   azureRegion: process.env['AZURE_SPEECH_REGION'] || null,

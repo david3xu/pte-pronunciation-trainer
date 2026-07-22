@@ -210,6 +210,17 @@ export class BackgroundAudioService {
   }
 
   /**
+   * Set the playback rate for the current and future clips. This makes the
+   * global speed slider apply immediately while a real-audio clip is playing.
+   */
+  setRate(rate: number): void {
+    this.currentRate = rate;
+    if (this.audio) {
+      this.audio.playbackRate = rate;
+    }
+  }
+
+  /**
    * Set the output volume for the current and future clips. Applied live to the
    * loaded element so a store volume change takes effect mid-playback. The
    * caller (store) is the single source of truth and clamps to [0, 1].

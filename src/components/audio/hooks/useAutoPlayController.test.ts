@@ -11,6 +11,7 @@ vi.mock('../../../services/audio/backgroundAudioService', () => ({
     pause: vi.fn(),
     stop: vi.fn(),
     setHandlers: vi.fn(),
+    setRate: vi.fn(),
     setVolume: vi.fn(),
     canResume: vi.fn(() => false),
     getLoadedText: vi.fn(() => null),

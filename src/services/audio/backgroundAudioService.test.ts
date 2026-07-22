@@ -154,6 +154,20 @@ describe('BackgroundAudioService', () => {
     expect(lastFakeAudio?.playbackRate).toBe(1.75);
   });
 
+  it('setRate updates the live element and is remembered for the next clip', async () => {
+    const service = new BackgroundAudioService();
+    vi.stubGlobal('fetch', successFetch());
+
+    await service.playText('hello world', { rate: 1.2 });
+    expect(lastFakeAudio?.playbackRate).toBe(1.2);
+
+    service.setRate(0.8);
+    expect(lastFakeAudio?.playbackRate).toBe(0.8);
+
+    await service.playText('next item');
+    expect(lastFakeAudio?.playbackRate).toBe(0.8);
+  });
+
   // ---- volume ----
 
   it('applies the requested volume in playText', async () => {

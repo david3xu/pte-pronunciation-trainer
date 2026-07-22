@@ -26,6 +26,7 @@ import { devtools, persist, subscribeWithSelector } from 'zustand/middleware';
 
 import { authService } from '../services/supabase/authService';
 import { syncService } from '../services/supabase/syncService';
+import { appConfig } from '../config/AppConfig';
 
 import { type PracticeItem, type VocabularyTerm } from '../types/dataset.types';
 import type {
@@ -37,6 +38,12 @@ import type {
     UIState,
     VocabularyState,
 } from './types';
+
+/**
+ * The default vocabulary book, derived once from AppConfig's enabled
+ * learningModes so the store never hardcodes a book id (single source of truth).
+ */
+const DEFAULT_VOCABULARY_BOOK = appConfig.getDefaultVocabularyBookId();
 
 /**
  * Identity fields checked in priority order when deriving a completion id.
@@ -176,10 +183,10 @@ export const useAppStore = create<AppState>()(
           settings: {
             practiceType: 'vocabulary',
             practiceMode: null,
-            vocabularyBook: 'pte-fib-listening',
-            datasetId: 'pte-fib-listening',
+            vocabularyBook: DEFAULT_VOCABULARY_BOOK,
+            datasetId: DEFAULT_VOCABULARY_BOOK,
             autoPlay: true, // Default ON - automatically plays audio when vocabulary loads
-            backgroundAudioMode: false, // Default OFF - opt-in real-audio playback for locked-screen / backgrounded practice
+            backgroundAudioMode: true, // Real-audio playback is the default for all practice modes
             autoSwitchBooks: false, // Default OFF - stays on current book
             showPhonetic: true,
             ttsRate: 1.2,
@@ -201,10 +208,10 @@ export const useAppStore = create<AppState>()(
                 ...state.settings,
                 practiceType: 'vocabulary',
                 practiceMode: null,
-                vocabularyBook: 'pte-fib-listening',
-                datasetId: 'pte-fib-listening',
+                vocabularyBook: DEFAULT_VOCABULARY_BOOK,
+                datasetId: DEFAULT_VOCABULARY_BOOK,
                 autoPlay: true, // Default ON
-                backgroundAudioMode: false, // Default OFF
+                backgroundAudioMode: true, // Real-audio playback is the default
                 autoSwitchBooks: false, // Default OFF
                 showPhonetic: true,
                 ttsRate: 1.2,
@@ -707,7 +714,7 @@ export const useAppStore = create<AppState>()(
       ),
       {
         name: 'PTE App Store',
-        enabled: typeof process !== 'undefined' && process.env?.['NODE_ENV'] === 'development',
+        enabled: import.meta.env.DEV,
       }
     )
   )

@@ -85,7 +85,7 @@ export interface SettingsState {
 
   // Audio settings
   autoPlay: boolean;
-  backgroundAudioMode: boolean; // Use real audio (Polly) instead of speechSynthesis so practice keeps playing when the screen locks or the app is backgrounded
+  backgroundAudioMode: boolean; // Legacy persisted flag; real audio is now used for all practice playback
   autoSwitchBooks: boolean;
   showPhonetic: boolean;
   ttsRate: number;

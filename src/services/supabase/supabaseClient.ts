@@ -13,15 +13,11 @@ import { createClient, SupabaseClient } from '@supabase/supabase-js';
  * Falls back to empty strings if not configured (app will work without auth)
  */
 const getEnvVar = (key: string): string => {
-  // Try Vite-style env vars (if using Vite)
+  // Client bundle only: Vite exposes VITE_ env vars via import.meta.env. An empty
+  // string means unconfigured, and the app degrades to guest mode without auth.
   if (typeof import.meta !== 'undefined' && import.meta.env) {
     return (import.meta.env as any)[key] || '';
   }
-  // Try process.env (if in Node.js context)
-  if (typeof process !== 'undefined' && process.env) {
-    return (process.env as any)[key] || '';
-  }
-  // Fallback to empty string
   return '';
 };
 

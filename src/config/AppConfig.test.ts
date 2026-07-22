@@ -119,6 +119,26 @@ describe('Config Validation', () => {
     });
   });
 
+  describe('Default Vocabulary Book (single source of truth)', () => {
+    it('derives vocabulary book ids from learningModes', () => {
+      const ids = appConfig.getVocabularyBookIds();
+      const expected = (appConfig.get('data.learningModes') as Array<{ id: string; category: string }>)
+        .filter((mode) => mode.category === 'vocabulary')
+        .map((mode) => mode.id);
+      expect(ids).toEqual(expected);
+      expect(ids.length).toBeGreaterThan(0);
+    });
+
+    it('returns the first enabled vocabulary book as the default', () => {
+      const defaultId = appConfig.getDefaultVocabularyBookId();
+      const ids = appConfig.getVocabularyBookIds();
+      expect(defaultId).toBe(ids[0]);
+      // The default must be a member of the enabled list so auto-switch (indexOf)
+      // never fails on a fresh install (the H3 regression this guards against).
+      expect(ids).toContain(defaultId);
+    });
+  });
+
   describe('No Hardcoded Values Validation', () => {
     it('should not have magic number delays in config', () => {
       // Ensure delays are configured, not hardcoded

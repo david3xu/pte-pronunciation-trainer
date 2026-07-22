@@ -6,7 +6,7 @@ The app is built around generated local datasets for vocabulary and practice con
 
 - local JSON datasets for fast vocabulary and practice loading
 - React 19 + TypeScript 5 UI with Zustand state management
-- browser speech plus optional AWS Polly premium TTS
+- AWS Polly-backed real audio playback
 - Supabase auth, sync, and progress tracking
 - Google Gemini-backed AI tutor and recommendation features
 - Vite + PWA setup for local development and static deployment
@@ -115,7 +115,7 @@ npx playwright test tests/e2e/tts.spec.ts
 ### Integrations
 
 - `src/services/supabase/` handles auth and sync.
-- `src/services/audio/` handles browser speech, Polly, background audio, and voice selection.
+- `src/services/audio/` handles Polly-backed real audio playback, media-session controls, and voice settings.
 - `src/services/ai/` handles tutor, recommendations, and intervention logic.
 - `api/` contains Vercel-style serverless routes for AI and TTS features.
 - `supabase/migrations/` contains database schema history.
@@ -134,7 +134,7 @@ When adding or renaming a dataset, update all relevant surfaces together:
 
 - Unit and integration tests use Vitest with `happy-dom` and setup from `src/test/setup.ts`.
 - E2E tests use Playwright via `playwright.config.ts`, which starts a local server and regenerates data before running.
-- Audio, browser speech, PWA behavior, and cloud-backed flows still benefit from manual verification in a browser.
+- Audio playback, PWA behavior, and cloud-backed flows still benefit from manual verification in a browser.
 
 ## Deployment
 

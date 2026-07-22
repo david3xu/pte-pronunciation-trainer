@@ -108,6 +108,20 @@ describe('BackgroundAudioService', () => {
     expect(service.canResume()).toBe(false); // playing again
   });
 
+  it('resumes a direct-url clip without requiring a Blob URL', async () => {
+    const service = new BackgroundAudioService();
+
+    await service.playTextFromUserGesture('hello world');
+    expect(service.getLoadedText()).toBe('hello world');
+    expect(service.isPlayingLoadedText('hello world')).toBe(true);
+
+    service.pause();
+    expect(service.canResume()).toBe(true);
+
+    await service.resume();
+    expect(playSpy).toHaveBeenCalledTimes(2);
+  });
+
   it('fully clears resumable state on stop', async () => {
     const service = new BackgroundAudioService();
     vi.stubGlobal('fetch', successFetch());
@@ -166,6 +180,19 @@ describe('BackgroundAudioService', () => {
 
     await service.playText('next item');
     expect(lastFakeAudio?.playbackRate).toBe(0.8);
+  });
+
+  it('starts direct audio from the premium TTS URL for mobile user gestures', async () => {
+    const service = new BackgroundAudioService();
+
+    await service.playTextFromUserGesture('mobile play', { rate: 1.2, volume: 0.7 });
+
+    expect(playSpy).toHaveBeenCalledTimes(1);
+    expect(lastFakeAudio?.src).toContain('/api/premium-tts?');
+    expect(lastFakeAudio?.src).toContain('format=audio');
+    expect(lastFakeAudio?.src).toContain('text=mobile+play');
+    expect(lastFakeAudio?.playbackRate).toBe(1.2);
+    expect(lastFakeAudio?.volume).toBe(0.7);
   });
 
   // ---- volume ----

@@ -75,7 +75,7 @@ export class BackgroundAudioService {
   canResume(): boolean {
     return (
       !!this.audio &&
-      this.objectUrl !== null &&
+      this.currentText !== null &&
       this.audio.paused &&
       !this.audio.ended
     );
@@ -184,6 +184,64 @@ export class BackgroundAudioService {
     } catch (error) {
       throw error instanceof Error ? error : new Error('Background audio playback failed');
     }
+  }
+
+  /**
+   * Start real audio directly from the API URL inside the user's tap/click.
+   * Mobile Safari/PWA mode is stricter than desktop: a later play() after an
+   * async fetch can be blocked even if a silent clip was primed. Assigning the
+   * real MP3 URL and calling play() synchronously keeps the activation attached
+   * to the actual media element.
+   */
+  playTextFromUserGesture(text: string, options: PlayTextOptions = {}): Promise<void> {
+    if (!this.isSupported()) {
+      return Promise.reject(new Error('Background audio is not supported in this environment'));
+    }
+    if (!text || !text.trim()) {
+      return Promise.reject(new Error('Cannot play empty text in background audio mode'));
+    }
+
+    this.primeGeneration++;
+    this.abortPendingFetch();
+
+    const audio = this.ensureAudioElement();
+    this.releaseObjectUrl();
+    this.currentText = text;
+    audio.loop = false;
+    audio.muted = false;
+    audio.src = this.buildDirectAudioUrl(text, options);
+
+    if (typeof options.rate === 'number') {
+      this.currentRate = options.rate;
+    }
+    if (this.currentRate !== null) {
+      audio.playbackRate = this.currentRate;
+    }
+
+    if (typeof options.volume === 'number') {
+      this.currentVolume = options.volume;
+    }
+    if (this.currentVolume !== null) {
+      audio.volume = this.currentVolume;
+    }
+
+    this.setMediaMetadata(text);
+
+    try {
+      const played = audio.play();
+      this.setPlaybackState('playing');
+      return played;
+    } catch (error) {
+      return Promise.reject(error instanceof Error ? error : new Error('Background audio playback failed'));
+    }
+  }
+
+  /** True when the requested text is already loaded and actively playing. */
+  isPlayingLoadedText(text: string): boolean {
+    return !!this.audio &&
+      this.currentText === text &&
+      !this.audio.paused &&
+      !this.audio.ended;
   }
 
   pause(): void {
@@ -297,6 +355,20 @@ export class BackgroundAudioService {
     }
 
     return { audioBase64: payload.data.audioBase64, contentType: payload.data.contentType };
+  }
+
+  private buildDirectAudioUrl(text: string, options: PlayTextOptions): string {
+    const baseUrl = appConfig.get<string>('api.baseUrl');
+    const endpoint = appConfig.get<string>('api.endpoints.premiumTts');
+    const voiceId = options.voiceId ?? appConfig.get<string>('voice.defaultVoiceId');
+    const languageCode = options.languageCode ?? appConfig.get<string>('voice.defaultLanguage');
+    const params = new URLSearchParams({
+      format: 'audio',
+      text,
+      voiceId,
+      languageCode,
+    });
+    return `${baseUrl}${endpoint}?${params.toString()}`;
   }
 
   private base64ToBlob(base64: string, contentType: string): Blob {

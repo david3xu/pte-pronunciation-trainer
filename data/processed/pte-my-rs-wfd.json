@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-07-22T11:03:52.740Z",
+    "generated": "2026-07-22T11:18:55.127Z",
     "totalTerms": 2465,
     "source": "pte-my-rs-wfd",
     "description": "My PTE RS and WFD word list",
@@ -13,20 +13,21 @@
   },
   "vocabulary": [
     {
-      "english": "art. a",
+      "english": "a",
       "pronunciation": {
         "british": {
           "ipa": "ə",
-          "phonetic": "UH"
+          "phonetic": "uh"
         },
         "american": {
           "ipa": "ə",
-          "phonetic": "UH"
+          "phonetic": "uh"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-my-rs-wfd",
-      "source": "pte-my-rs-wfd"
+      "source": "pte-my-rs-wfd",
+      "wordType": "art."
     },
     {
       "english": "absolutely",
@@ -182,20 +183,21 @@
       "wordType": "adj."
     },
     {
-      "english": "art. an",
+      "english": "an",
       "pronunciation": {
         "british": {
           "ipa": "ən",
-          "phonetic": "UHN"
+          "phonetic": "uhn"
         },
         "american": {
           "ipa": "ən",
-          "phonetic": "UHN"
+          "phonetic": "uhn"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-my-rs-wfd",
-      "source": "pte-my-rs-wfd"
+      "source": "pte-my-rs-wfd",
+      "wordType": "art."
     },
     {
       "english": "anatomy",
@@ -491,11 +493,11 @@
       "pronunciation": {
         "british": {
           "ipa": "blʌd",
-          "phonetic": "BLUD"
+          "phonetic": "BLUHD"
         },
         "american": {
           "ipa": "blʌd",
-          "phonetic": "BLUD"
+          "phonetic": "BLUHD"
         }
       },
       "difficulty": "easy",
@@ -725,7 +727,7 @@
       "wordType": "n."
     },
     {
-      "english": "aux. can",
+      "english": "can",
       "pronunciation": {
         "british": {
           "ipa": "kæn",
@@ -736,9 +738,10 @@
           "phonetic": "KAN"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-my-rs-wfd",
-      "source": "pte-my-rs-wfd"
+      "source": "pte-my-rs-wfd",
+      "wordType": "aux."
     },
     {
       "english": "canceled",
@@ -1289,11 +1292,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈkʌntrisaɪd",
-          "phonetic": "KUN-tree-syd"
+          "phonetic": "KUHN-tree-syd"
         },
         "american": {
           "ipa": "ˈkʌntrisaɪd",
-          "phonetic": "KUN-tree-syd"
+          "phonetic": "KUHN-tree-syd"
         }
       },
       "difficulty": "hard",
@@ -1340,11 +1343,11 @@
       "pronunciation": {
         "british": {
           "ipa": "kʌt",
-          "phonetic": "KUT"
+          "phonetic": "KUHT"
         },
         "american": {
           "ipa": "kʌt",
-          "phonetic": "KUT"
+          "phonetic": "KUHT"
         }
       },
       "difficulty": "easy",
@@ -1476,11 +1479,11 @@
       "pronunciation": {
         "british": {
           "ipa": "dɪˈdʌktɪd",
-          "phonetic": "di-DUK-tid"
+          "phonetic": "di-DUHK-tid"
         },
         "american": {
           "ipa": "dɪˈdʌktɪd",
-          "phonetic": "di-DUK-tid"
+          "phonetic": "di-DUHK-tid"
         }
       },
       "difficulty": "normal",
@@ -1574,7 +1577,7 @@
       "wordType": "v."
     },
     {
-      "english": "aux. didn't",
+      "english": "didn't",
       "pronunciation": {
         "british": {
           "ipa": "ˈdɪdənt",
@@ -1585,9 +1588,10 @@
           "phonetic": "DID-unt"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-my-rs-wfd",
-      "source": "pte-my-rs-wfd"
+      "source": "pte-my-rs-wfd",
+      "wordType": "aux."
     },
     {
       "english": "diploma",
@@ -1645,11 +1649,11 @@
       "pronunciation": {
         "british": {
           "ipa": "dɪˈskʌsɪŋ",
-          "phonetic": "di-SKUS-ing"
+          "phonetic": "di-SKUHS-ing"
         },
         "american": {
           "ipa": "dɪˈskʌsɪŋ",
-          "phonetic": "di-SKUS-ing"
+          "phonetic": "di-SKUHS-ing"
         }
       },
       "difficulty": "hard",
@@ -1662,11 +1666,11 @@
       "pronunciation": {
         "british": {
           "ipa": "dɪˈskʌʃən",
-          "phonetic": "di-SKUSH-un"
+          "phonetic": "di-SKUHSH-uhn"
         },
         "american": {
           "ipa": "dɪˈskʌʃən",
-          "phonetic": "di-SKUSH-un"
+          "phonetic": "di-SKUHSH-uhn"
         }
       },
       "difficulty": "hard",
@@ -1726,7 +1730,7 @@
       "wordType": "v."
     },
     {
-      "english": "aux. do",
+      "english": "do",
       "pronunciation": {
         "british": {
           "ipa": "duː",
@@ -1737,12 +1741,13 @@
           "phonetic": "DOO"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-my-rs-wfd",
-      "source": "pte-my-rs-wfd"
+      "source": "pte-my-rs-wfd",
+      "wordType": "aux."
     },
     {
-      "english": "aux. don't",
+      "english": "don't",
       "pronunciation": {
         "british": {
           "ipa": "dəʊnt",
@@ -1753,20 +1758,21 @@
           "phonetic": "DOHNT"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "easy",
       "category": "pte-my-rs-wfd",
-      "source": "pte-my-rs-wfd"
+      "source": "pte-my-rs-wfd",
+      "wordType": "aux."
     },
     {
       "english": "double",
       "pronunciation": {
         "british": {
           "ipa": "ˈdʌbəl",
-          "phonetic": "DUB-ul"
+          "phonetic": "DUHB-uhl"
         },
         "american": {
           "ipa": "ˈdʌbəl",
-          "phonetic": "DUB-ul"
+          "phonetic": "DUHB-uhl"
         }
       },
       "difficulty": "normal",
@@ -1860,7 +1866,7 @@
       "wordType": "adj."
     },
     {
-      "english": "det. each",
+      "english": "each",
       "pronunciation": {
         "british": {
           "ipa": "iːtʃ",
@@ -1871,9 +1877,10 @@
           "phonetic": "EECH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-my-rs-wfd",
-      "source": "pte-my-rs-wfd"
+      "source": "pte-my-rs-wfd",
+      "wordType": "det."
     },
     {
       "english": "earn",
@@ -2033,7 +2040,7 @@
       "pronunciation": {
         "british": {
           "ipa": "ɪnˈkʌrɪdʒd",
-          "phonetic": "in-KUR-ijd"
+          "phonetic": "in-KUHR-ijd"
         },
         "american": {
           "ipa": "ɪnˈkɜːrɪdʒd",
@@ -2390,7 +2397,7 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈflʌrɪʃ",
-          "phonetic": "FLUR-ish"
+          "phonetic": "FLUHR-ish"
         },
         "american": {
           "ipa": "ˈflɜːrɪʃ",
@@ -2526,11 +2533,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈfʌŋɡaɪ",
-          "phonetic": "FUN-gy"
+          "phonetic": "FUHN-guy"
         },
         "american": {
           "ipa": "ˈfʌndʒaɪ",
-          "phonetic": "FUN-jy"
+          "phonetic": "FUHN-jy"
         }
       },
       "difficulty": "easy",
@@ -2760,7 +2767,7 @@
       "wordType": "n."
     },
     {
-      "english": "aux. has",
+      "english": "has",
       "pronunciation": {
         "british": {
           "ipa": "hæz",
@@ -2771,9 +2778,10 @@
           "phonetic": "HAZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-my-rs-wfd",
-      "source": "pte-my-rs-wfd"
+      "source": "pte-my-rs-wfd",
+      "wordType": "aux."
     },
     {
       "english": "hesitate",
@@ -2882,11 +2890,11 @@
       "pronunciation": {
         "british": {
           "ipa": "hʌnt",
-          "phonetic": "HUNT"
+          "phonetic": "HUHNT"
         },
         "american": {
           "ipa": "hʌnt",
-          "phonetic": "HUNT"
+          "phonetic": "HUHNT"
         }
       },
       "difficulty": "easy",
@@ -3035,11 +3043,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ɪnˈdʌkʃən",
-          "phonetic": "in-DUK-shun"
+          "phonetic": "in-DUHK-shuhn"
         },
         "american": {
           "ipa": "ɪnˈdʌkʃən",
-          "phonetic": "in-DUK-shun"
+          "phonetic": "in-DUHK-shuhn"
         }
       },
       "difficulty": "normal",
@@ -3460,11 +3468,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈlʌndən",
-          "phonetic": "LUN-dun"
+          "phonetic": "LUHN-duhn"
         },
         "american": {
           "ipa": "ˈlʌndən",
-          "phonetic": "LUN-dun"
+          "phonetic": "LUHN-duhn"
         }
       },
       "difficulty": "normal",
@@ -3732,11 +3740,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈmʌndeɪ",
-          "phonetic": "MUN-day"
+          "phonetic": "MUHN-day"
         },
         "american": {
           "ipa": "ˈmʌndeɪ",
-          "phonetic": "MUN-day"
+          "phonetic": "MUHN-day"
         }
       },
       "difficulty": "normal",
@@ -3749,11 +3757,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈmʌndeɪz",
-          "phonetic": "MUN-dayz"
+          "phonetic": "MUHN-dayz"
         },
         "american": {
           "ipa": "ˈmʌndeɪz",
-          "phonetic": "MUN-dayz"
+          "phonetic": "MUHN-dayz"
         }
       },
       "difficulty": "normal",
@@ -3779,7 +3787,7 @@
       "wordType": "adj."
     },
     {
-      "english": "det. my",
+      "english": "my",
       "pronunciation": {
         "british": {
           "ipa": "maɪ",
@@ -3790,9 +3798,10 @@
           "phonetic": "MY"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-my-rs-wfd",
-      "source": "pte-my-rs-wfd"
+      "source": "pte-my-rs-wfd",
+      "wordType": "det."
     },
     {
       "english": "national",
@@ -3897,7 +3906,7 @@
       "wordType": "num."
     },
     {
-      "english": "det. no",
+      "english": "no",
       "pronunciation": {
         "british": {
           "ipa": "nəʊ",
@@ -3908,9 +3917,10 @@
           "phonetic": "NOH"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-my-rs-wfd",
-      "source": "pte-my-rs-wfd"
+      "source": "pte-my-rs-wfd",
+      "wordType": "det."
     },
     {
       "english": "nuclear",
@@ -4903,11 +4913,11 @@
       "pronunciation": {
         "british": {
           "ipa": "rʌf",
-          "phonetic": "RUF"
+          "phonetic": "RUHF"
         },
         "american": {
           "ipa": "rʌf",
-          "phonetic": "RUF"
+          "phonetic": "RUHF"
         }
       },
       "difficulty": "easy",
@@ -4920,11 +4930,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈrʌɡbi",
-          "phonetic": "RUG-bee"
+          "phonetic": "RUHG-bee"
         },
         "american": {
           "ipa": "ˈrʌɡbi",
-          "phonetic": "RUG-bee"
+          "phonetic": "RUHG-bee"
         }
       },
       "difficulty": "easy",
@@ -4937,11 +4947,11 @@
       "pronunciation": {
         "british": {
           "ipa": "rʌn",
-          "phonetic": "RUN"
+          "phonetic": "RUHN"
         },
         "american": {
           "ipa": "rʌn",
-          "phonetic": "RUN"
+          "phonetic": "RUHN"
         }
       },
       "difficulty": "easy",
@@ -5362,11 +5372,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈstrʌktʃəz",
-          "phonetic": "STRUK-chuz"
+          "phonetic": "STRUHK-chuhz"
         },
         "american": {
           "ipa": "ˈstrʌktʃərz",
-          "phonetic": "STRUK-churz"
+          "phonetic": "STRUHK-churz"
         }
       },
       "difficulty": "hard",
@@ -5579,20 +5589,21 @@
       "wordType": "conj."
     },
     {
-      "english": "art. the",
+      "english": "the",
       "pronunciation": {
         "british": {
           "ipa": "ðə",
-          "phonetic": "THUH"
+          "phonetic": "thuh"
         },
         "american": {
           "ipa": "ðə",
-          "phonetic": "THUH"
+          "phonetic": "thuh"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-my-rs-wfd",
-      "source": "pte-my-rs-wfd"
+      "source": "pte-my-rs-wfd",
+      "wordType": "art."
     },
     {
       "english": "theatre",
@@ -5803,11 +5814,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈtrʌbəl",
-          "phonetic": "TRUB-ul"
+          "phonetic": "TRUHB-uhl"
         },
         "american": {
           "ipa": "ˈtrʌbəl",
-          "phonetic": "TRUB-ul"
+          "phonetic": "TRUHB-uhl"
         }
       },
       "difficulty": "normal",
@@ -5973,11 +5984,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈʌpkʌmɪŋ",
-          "phonetic": "UP-kum-ing"
+          "phonetic": "UHP-kuhm-ing"
         },
         "american": {
           "ipa": "ˈʌpkʌmɪŋ",
-          "phonetic": "UP-kum-ing"
+          "phonetic": "UHP-kuhm-ing"
         }
       },
       "difficulty": "normal",
@@ -6173,7 +6184,7 @@
       "wordType": "v."
     },
     {
-      "english": "aux. we've",
+      "english": "we've",
       "pronunciation": {
         "british": {
           "ipa": "wiːv",
@@ -6184,9 +6195,10 @@
           "phonetic": "WEEV"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "easy",
       "category": "pte-my-rs-wfd",
-      "source": "pte-my-rs-wfd"
+      "source": "pte-my-rs-wfd",
+      "wordType": "aux."
     },
     {
       "english": "week",
@@ -6308,7 +6320,7 @@
       "wordType": "n."
     },
     {
-      "english": "aux. would",
+      "english": "would",
       "pronunciation": {
         "british": {
           "ipa": "wʊd",
@@ -6319,9 +6331,10 @@
           "phonetic": "WUUD"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "easy",
       "category": "pte-my-rs-wfd",
-      "source": "pte-my-rs-wfd"
+      "source": "pte-my-rs-wfd",
+      "wordType": "aux."
     },
     {
       "english": "yes",
@@ -6389,18 +6402,18 @@
       "difficulty": "normal",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "abstract",
       "pronunciation": {
         "british": {
-          "ipa": "æbˈstrækt",
-          "phonetic": "ab-STRAKT"
+          "ipa": "ˈæbstrækt",
+          "phonetic": "AB-strakt"
         },
         "american": {
-          "ipa": "æbˈstrækt",
-          "phonetic": "ab-STRAKT"
+          "ipa": "ˈæbstrækt",
+          "phonetic": "AB-strakt"
         }
       },
       "difficulty": "normal",
@@ -6429,18 +6442,18 @@
       "english": "accent",
       "pronunciation": {
         "british": {
-          "ipa": "əkˈsent",
-          "phonetic": "uhk-SENT"
+          "ipa": "ˈæksent",
+          "phonetic": "AK-sent"
         },
         "american": {
-          "ipa": "əkˈsent",
-          "phonetic": "uhk-SENT"
+          "ipa": "ˈæksent",
+          "phonetic": "AK-sent"
         }
       },
       "difficulty": "normal",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "adj."
+      "wordType": "n."
     },
     {
       "english": "acceptable",
@@ -6491,7 +6504,7 @@
       "difficulty": "normal",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "accident",
@@ -7718,7 +7731,7 @@
       "wordType": "n."
     },
     {
-      "english": "aux. am",
+      "english": "am",
       "pronunciation": {
         "british": {
           "ipa": "ˈæm",
@@ -7729,9 +7742,10 @@
           "phonetic": "AM"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-my-rs-wfd",
-      "source": "pte-my-rs-wfd"
+      "source": "pte-my-rs-wfd",
+      "wordType": "aux."
     },
     {
       "english": "America",
@@ -12814,7 +12828,7 @@
       "difficulty": "normal",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "v."
+      "wordType": "adj."
     },
     {
       "english": "conclusion",
@@ -12871,12 +12885,12 @@
       "english": "conduct",
       "pronunciation": {
         "british": {
-          "ipa": "kɑːnˈdʌkt",
-          "phonetic": "kahn-DUHKT"
+          "ipa": "kənˈdʌkt",
+          "phonetic": "kuhn-DUHKT"
         },
         "american": {
-          "ipa": "kɑːnˈdʌkt",
-          "phonetic": "kahn-DUHKT"
+          "ipa": "kənˈdʌkt",
+          "phonetic": "kuhn-DUHKT"
         }
       },
       "difficulty": "normal",
@@ -12906,11 +12920,11 @@
       "pronunciation": {
         "british": {
           "ipa": "kənˈdʌktə",
-          "phonetic": "kuhn-DUHK-ter"
+          "phonetic": "kuhn-DUHK-tuh"
         },
         "american": {
           "ipa": "kənˈdʌktɜr",
-          "phonetic": "kuhn-DUHK-ter"
+          "phonetic": "kuhn-DUHK-tur"
         }
       },
       "difficulty": "normal",
@@ -13205,7 +13219,7 @@
       "difficulty": "normal",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "consistently",
@@ -13256,7 +13270,7 @@
       "difficulty": "hard",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "construction",
@@ -13392,7 +13406,7 @@
       "difficulty": "normal",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "containers",
@@ -13443,7 +13457,7 @@
       "difficulty": "normal",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "content",
@@ -13579,7 +13593,7 @@
       "difficulty": "hard",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "contribution",
@@ -14004,7 +14018,7 @@
       "difficulty": "normal",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "cramped",
@@ -14463,7 +14477,7 @@
       "difficulty": "easy",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "cycle",
@@ -15262,7 +15276,7 @@
       "difficulty": "normal",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "desk",
@@ -15418,7 +15432,7 @@
       "wordType": "v."
     },
     {
-      "english": "aux. did",
+      "english": "did",
       "pronunciation": {
         "british": {
           "ipa": "ˈdɪd",
@@ -15429,9 +15443,10 @@
           "phonetic": "DID"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-my-rs-wfd",
-      "source": "pte-my-rs-wfd"
+      "source": "pte-my-rs-wfd",
+      "wordType": "aux."
     },
     {
       "english": "die",
@@ -15448,7 +15463,7 @@
       "difficulty": "easy",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "difference",
@@ -15533,7 +15548,7 @@
       "difficulty": "normal",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "dining",
@@ -15658,12 +15673,12 @@
       "english": "discounts",
       "pronunciation": {
         "british": {
-          "ipa": "dɪˈskaʊnts",
-          "phonetic": "di-SKOWNTS"
+          "ipa": "ˈdɪskaʊnts",
+          "phonetic": "DI-skownts"
         },
         "american": {
-          "ipa": "dɪˈskaʊnts",
-          "phonetic": "di-SKOWNTS"
+          "ipa": "ˈdɪskaʊnts",
+          "phonetic": "DI-skownts"
         }
       },
       "difficulty": "normal",
@@ -15686,7 +15701,7 @@
       "difficulty": "hard",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "discourse",
@@ -15805,7 +15820,7 @@
       "difficulty": "normal",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "dismissed",
@@ -16029,7 +16044,7 @@
       "wordType": "n."
     },
     {
-      "english": "aux. does",
+      "english": "does",
       "pronunciation": {
         "british": {
           "ipa": "ˈdʌz",
@@ -16040,9 +16055,10 @@
           "phonetic": "DUHZ"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-my-rs-wfd",
-      "source": "pte-my-rs-wfd"
+      "source": "pte-my-rs-wfd",
+      "wordType": "aux."
     },
     {
       "english": "doesn't",
@@ -16861,7 +16877,7 @@
       "wordType": "n."
     },
     {
-      "english": "det. either",
+      "english": "either",
       "pronunciation": {
         "british": {
           "ipa": "ˈiːðə",
@@ -16872,9 +16888,10 @@
           "phonetic": "EETH-er"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "normal",
       "category": "pte-my-rs-wfd",
-      "source": "pte-my-rs-wfd"
+      "source": "pte-my-rs-wfd",
+      "wordType": "det."
     },
     {
       "english": "elaborated",
@@ -21399,7 +21416,7 @@
       "wordType": "n."
     },
     {
-      "english": "aux. had",
+      "english": "had",
       "pronunciation": {
         "british": {
           "ipa": "ˈhæd",
@@ -21410,9 +21427,10 @@
           "phonetic": "HAD"
         }
       },
-      "difficulty": "normal",
+      "difficulty": "easy",
       "category": "pte-my-rs-wfd",
-      "source": "pte-my-rs-wfd"
+      "source": "pte-my-rs-wfd",
+      "wordType": "aux."
     },
     {
       "english": "hands",
@@ -22931,18 +22949,18 @@
       "english": "influences",
       "pronunciation": {
         "british": {
-          "ipa": "ˈɪnˌfluːənsɪz",
+          "ipa": "ˈɪnfluənsɪz",
           "phonetic": "IN-floo-uhn-siz"
         },
         "american": {
-          "ipa": "ˈɪnˌfluːənsɪz",
+          "ipa": "ˈɪnfluənsɪz",
           "phonetic": "IN-floo-uhn-siz"
         }
       },
       "difficulty": "hard",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "informed",
@@ -24529,18 +24547,18 @@
       "english": "lead",
       "pronunciation": {
         "british": {
-          "ipa": "ˈled",
-          "phonetic": "LED"
+          "ipa": "ˈliːd",
+          "phonetic": "LEED"
         },
         "american": {
-          "ipa": "ˈled",
-          "phonetic": "LED"
+          "ipa": "ˈliːd",
+          "phonetic": "LEED"
         }
       },
       "difficulty": "easy",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "leaders",
@@ -24608,7 +24626,7 @@
       "difficulty": "easy",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "learners",
@@ -25492,7 +25510,7 @@
       "difficulty": "easy",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "male",
@@ -27566,7 +27584,7 @@
       "difficulty": "easy",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "objection",
@@ -27773,7 +27791,7 @@
       "wordType": "v."
     },
     {
-      "english": "Ocean",
+      "english": "ocean",
       "pronunciation": {
         "british": {
           "ipa": "ˈəʊʃən",
@@ -28049,17 +28067,17 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈɔːdə",
-          "phonetic": "AWR-der"
+          "phonetic": "AWR-duh"
         },
         "american": {
           "ipa": "ˈɔːrdɜr",
-          "phonetic": "AWR-der"
+          "phonetic": "AWR-dur"
         }
       },
       "difficulty": "easy",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "organ",
@@ -29017,12 +29035,12 @@
       "english": "permits",
       "pronunciation": {
         "british": {
-          "ipa": "pəˈmɪts",
-          "phonetic": "per-MITS"
+          "ipa": "ˈpɜːmɪts",
+          "phonetic": "PUR-mits"
         },
         "american": {
-          "ipa": "pɜrˈmɪts",
-          "phonetic": "per-MITS"
+          "ipa": "ˈpɜrmɪts",
+          "phonetic": "PUR-mits"
         }
       },
       "difficulty": "normal",
@@ -34488,7 +34506,7 @@
       "wordType": "v."
     },
     {
-      "english": "aux. shall",
+      "english": "shall",
       "pronunciation": {
         "british": {
           "ipa": "ˈʃæl",
@@ -34499,9 +34517,10 @@
           "phonetic": "SHAL"
         }
       },
-      "difficulty": "hard",
+      "difficulty": "easy",
       "category": "pte-my-rs-wfd",
-      "source": "pte-my-rs-wfd"
+      "source": "pte-my-rs-wfd",
+      "wordType": "aux."
     },
     {
       "english": "shapes",
@@ -34892,7 +34911,7 @@
       "difficulty": "easy",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "sick",
@@ -39896,18 +39915,18 @@
       "english": "uses",
       "pronunciation": {
         "british": {
-          "ipa": "ˈjuːsəz",
-          "phonetic": "YOOS-uhz"
+          "ipa": "ˈjuːzɪz",
+          "phonetic": "YOO-ziz"
         },
         "american": {
-          "ipa": "ˈjuːsəz",
-          "phonetic": "YOOS-uhz"
+          "ipa": "ˈjuːzɪz",
+          "phonetic": "YOO-ziz"
         }
       },
       "difficulty": "easy",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "usually",
@@ -41267,7 +41286,7 @@
       "difficulty": "easy",
       "category": "pte-my-rs-wfd",
       "source": "pte-my-rs-wfd",
-      "wordType": "n."
+      "wordType": "v."
     },
     {
       "english": "yesterday",
@@ -41444,11 +41463,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈbʌnsən",
-          "phonetic": "BUN-sun"
+          "phonetic": "BUHN-suhn"
         },
         "american": {
           "ipa": "ˈbʌnsən",
-          "phonetic": "BUN-sun"
+          "phonetic": "BUHN-suhn"
         }
       },
       "difficulty": "normal",
@@ -41682,7 +41701,7 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌɒf ˈkæmpəs",
-          "phonetic": "of KAM-pus"
+          "phonetic": "off KAM-pus"
         },
         "american": {
           "ipa": "ˌɑːf ˈkæmpəs",
@@ -41869,11 +41888,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈsʌnreɪ",
-          "phonetic": "SUN-ray"
+          "phonetic": "SUHN-ray"
         },
         "american": {
           "ipa": "ˈsʌnreɪ",
-          "phonetic": "SUN-ray"
+          "phonetic": "SUHN-ray"
         }
       },
       "difficulty": "normal",

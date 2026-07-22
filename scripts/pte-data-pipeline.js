@@ -133,7 +133,7 @@ class PTETermsExtractor {
     let term = termPart.trim();
 
     // Match word type patterns
-    const wordTypeMatch = term.match(/^(n\.|v\.|adj\.|adv\.|num\.|abbr\.|prep\.|conj\.|pron\.|interj\.|phr\.)\s+(.+)$/i);
+    const wordTypeMatch = term.match(/^(n\.|v\.|adj\.|adv\.|num\.|abbr\.|prep\.|conj\.|pron\.|interj\.|phr\.|art\.|aux\.|det\.)\s+(.+)$/i);
     if (wordTypeMatch) {
       wordType = wordTypeMatch[1].toLowerCase();
       term = wordTypeMatch[2].trim();

@@ -3,7 +3,7 @@
 Personal Repeat Sentence and Write From Dictation word list.
 
 ---
-1. art. a | /ə/ — sounds like **UH** | /ə/ — sounds like **UH**
+1. art. a | /ə/ — sounds like **uh** | /ə/ — sounds like **uh**
 2. adv. absolutely | /ˈæbsəluːtli/ — sounds like **AB-suh-loot-lee** | /ˈæbsəluːtli/ — sounds like **AB-suh-loot-lee**
 3. adj. academic | /ˌækəˈdemɪk/ — sounds like **ak-uh-DEM-ik** | /ˌækəˈdemɪk/ — sounds like **ak-uh-DEM-ik**
 4. v. accept | /əkˈsept/ — sounds like **uk-SEPT** | /əkˈsept/ — sounds like **uk-SEPT**
@@ -13,7 +13,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 8. adj. agricultural | /ˌæɡrɪˈkʌltʃərəl/ — sounds like **ag-ri-KUL-chuh-rul** | /ˌæɡrɪˈkʌltʃərəl/ — sounds like **ag-ri-KUL-chuh-rul**
 9. n. allergy | /ˈælədʒi/ — sounds like **AL-uh-jee** | /ˈælərdʒi/ — sounds like **AL-ur-jee**
 10. adj. alternative | /ɒlˈtɜːnətɪv/ — sounds like **ol-TUR-nuh-tiv** | /ɑːlˈtɜːrnətɪv/ — sounds like **ahl-TUR-nuh-tiv**
-11. art. an | /ən/ — sounds like **UHN** | /ən/ — sounds like **UHN**
+11. art. an | /ən/ — sounds like **uhn** | /ən/ — sounds like **uhn**
 12. n. anatomy | /əˈnætəmi/ — sounds like **uh-NAT-uh-mee** | /əˈnætəmi/ — sounds like **uh-NAT-uh-mee**
 13. n. animal | /ˈænɪməl/ — sounds like **AN-i-mul** | /ˈænɪməl/ — sounds like **AN-i-mul**
 14. n. animals | /ˈænɪməlz/ — sounds like **AN-i-mulz** | /ˈænɪməlz/ — sounds like **AN-i-mulz**
@@ -31,7 +31,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 26. n. beakers | /ˈbiːkəz/ — sounds like **BEE-kuz** | /ˈbiːkərz/ — sounds like **BEE-kurz**
 27. adj. beneficial | /ˌbenɪˈfɪʃəl/ — sounds like **ben-i-FISH-ul** | /ˌbenɪˈfɪʃəl/ — sounds like **ben-i-FISH-ul**
 28. n. bibliography | /ˌbɪbliˈɒɡrəfi/ — sounds like **bib-lee-OG-ruh-fee** | /ˌbɪbliˈɑːɡrəfi/ — sounds like **bib-lee-AH-gruh-fee**
-29. n. blood | /blʌd/ — sounds like **BLUD** | /blʌd/ — sounds like **BLUD**
+29. n. blood | /blʌd/ — sounds like **BLUHD** | /blʌd/ — sounds like **BLUHD**
 30. n. bodies | /ˈbɒdiz/ — sounds like **BOD-eez** | /ˈbɑːdiz/ — sounds like **BAH-deez**
 31. n. bookstore | /ˈbʊkstɔː/ — sounds like **BUUK-stor** | /ˈbʊkstɔːr/ — sounds like **BUUK-stor**
 32. v. borrow | /ˈbɒrəʊ/ — sounds like **BOR-oh** | /ˈbɑːroʊ/ — sounds like **BAH-roh**
@@ -78,10 +78,10 @@ Personal Repeat Sentence and Write From Dictation word list.
 73. n. contest | /ˈkɒntest/ — sounds like **KON-test** | /ˈkɑːntest/ — sounds like **KAHN-test**
 74. adj. convincing | /kənˈvɪnsɪŋ/ — sounds like **kun-VIN-sing** | /kənˈvɪnsɪŋ/ — sounds like **kun-VIN-sing**
 75. n. costs | /kɒsts/ — sounds like **KOSTS** | /kɔːsts/ — sounds like **KAWSTS**
-76. n. countryside | /ˈkʌntrisaɪd/ — sounds like **KUN-tree-syd** | /ˈkʌntrisaɪd/ — sounds like **KUN-tree-syd**
+76. n. countryside | /ˈkʌntrisaɪd/ — sounds like **KUHN-tree-syd** | /ˈkʌntrisaɪd/ — sounds like **KUHN-tree-syd**
 77. n. credit | /ˈkredɪt/ — sounds like **KRED-it** | /ˈkredɪt/ — sounds like **KRED-it**
 78. n. credits | /ˈkredɪts/ — sounds like **KRED-its** | /ˈkredɪts/ — sounds like **KRED-its**
-79. n. cut | /kʌt/ — sounds like **KUT** | /kʌt/ — sounds like **KUT**
+79. n. cut | /kʌt/ — sounds like **KUHT** | /kʌt/ — sounds like **KUHT**
 80. adj. daily | /ˈdeɪli/ — sounds like **DAY-lee** | /ˈdeɪli/ — sounds like **DAY-lee**
 81. n. damage | /ˈdæmɪdʒ/ — sounds like **DAM-ij** | /ˈdæmɪdʒ/ — sounds like **DAM-ij**
 82. n. date | /deɪt/ — sounds like **DAYT** | /deɪt/ — sounds like **DAYT**
@@ -89,7 +89,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 84. n. decay | /dɪˈkeɪ/ — sounds like **di-KAY** | /dɪˈkeɪ/ — sounds like **di-KAY**
 85. v. decided | /dɪˈsaɪdɪd/ — sounds like **di-SY-did** | /dɪˈsaɪdɪd/ — sounds like **di-SY-did**
 86. v. decomposes | /ˌdiːkəmˈpəʊzɪz/ — sounds like **dee-kum-POH-ziz** | /ˌdiːkəmˈpoʊzɪz/ — sounds like **dee-kum-POH-ziz**
-87. v. deducted | /dɪˈdʌktɪd/ — sounds like **di-DUK-tid** | /dɪˈdʌktɪd/ — sounds like **di-DUK-tid**
+87. v. deducted | /dɪˈdʌktɪd/ — sounds like **di-DUHK-tid** | /dɪˈdʌktɪd/ — sounds like **di-DUHK-tid**
 88. adj. delighted | /dɪˈlaɪtɪd/ — sounds like **di-LY-tid** | /dɪˈlaɪtɪd/ — sounds like **di-LY-tid**
 89. n. democracy | /dɪˈmɒkrəsi/ — sounds like **di-MOK-ruh-see** | /dɪˈmɑːkrəsi/ — sounds like **di-MAH-kruh-see**
 90. v. destroyed | /dɪˈstrɔɪd/ — sounds like **di-STROYD** | /dɪˈstrɔɪd/ — sounds like **di-STROYD**
@@ -99,14 +99,14 @@ Personal Repeat Sentence and Write From Dictation word list.
 94. n. diploma | /dɪˈpləʊmə/ — sounds like **di-PLOH-muh** | /dɪˈploʊmə/ — sounds like **di-PLOH-muh**
 95. adv. directly | /dəˈrektli/ — sounds like **duh-REKT-lee** | /dəˈrektli/ — sounds like **duh-REKT-lee**
 96. n. disarmament | /dɪsˈɑːməmənt/ — sounds like **dis-AH-muh-munt** | /dɪsˈɑːrməmənt/ — sounds like **dis-AR-muh-munt**
-97. v. discussing | /dɪˈskʌsɪŋ/ — sounds like **di-SKUS-ing** | /dɪˈskʌsɪŋ/ — sounds like **di-SKUS-ing**
-98. n. discussion | /dɪˈskʌʃən/ — sounds like **di-SKUSH-un** | /dɪˈskʌʃən/ — sounds like **di-SKUSH-un**
+97. v. discussing | /dɪˈskʌsɪŋ/ — sounds like **di-SKUHS-ing** | /dɪˈskʌsɪŋ/ — sounds like **di-SKUHS-ing**
+98. n. discussion | /dɪˈskʌʃən/ — sounds like **di-SKUHSH-uhn** | /dɪˈskʌʃən/ — sounds like **di-SKUHSH-uhn**
 99. v. disputed | /dɪˈspjuːtɪd/ — sounds like **di-SPYOO-tid** | /dɪˈspjuːtɪd/ — sounds like **di-SPYOO-tid**
 100. n. distinction | /dɪˈstɪŋkʃən/ — sounds like **di-STINK-shun** | /dɪˈstɪŋkʃən/ — sounds like **di-STINK-shun**
 101. v. distinguishes | /dɪˈstɪŋɡwɪʃɪz/ — sounds like **di-STING-gwish-iz** | /dɪˈstɪŋɡwɪʃɪz/ — sounds like **di-STING-gwish-iz**
 102. aux. do | /duː/ — sounds like **DOO** | /duː/ — sounds like **DOO**
 103. aux. don't | /dəʊnt/ — sounds like **DOHNT** | /doʊnt/ — sounds like **DOHNT**
-104. adj. double | /ˈdʌbəl/ — sounds like **DUB-ul** | /ˈdʌbəl/ — sounds like **DUB-ul**
+104. adj. double | /ˈdʌbəl/ — sounds like **DUHB-uhl** | /ˈdʌbəl/ — sounds like **DUHB-uhl**
 105. adj. downloadable | /ˌdaʊnˈləʊdəbəl/ — sounds like **down-LOH-duh-bul** | /ˌdaʊnˈloʊdəbəl/ — sounds like **down-LOH-duh-bul**
 106. abbr. Dr | /ˈdɒktə/ — sounds like **DOK-tuh** | /ˈdɑːktər/ — sounds like **DAHK-tur**
 107. n. draft | /drɑːft/ — sounds like **DRAHFT** | /dræft/ — sounds like **DRAFT**
@@ -122,7 +122,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 117. n. email | /ˈiːmeɪl/ — sounds like **EE-mayl** | /ˈiːmeɪl/ — sounds like **EE-mayl**
 118. v. emailed | /ˈiːmeɪld/ — sounds like **EE-mayld** | /ˈiːmeɪld/ — sounds like **EE-mayld**
 119. n. emissions | /ɪˈmɪʃənz/ — sounds like **i-MISH-unz** | /ɪˈmɪʃənz/ — sounds like **i-MISH-unz**
-120. v. encouraged | /ɪnˈkʌrɪdʒd/ — sounds like **in-KUR-ijd** | /ɪnˈkɜːrɪdʒd/ — sounds like **in-KUR-ijd**
+120. v. encouraged | /ɪnˈkʌrɪdʒd/ — sounds like **in-KUHR-ijd** | /ɪnˈkɜːrɪdʒd/ — sounds like **in-KUR-ijd**
 121. v. enhances | /ɪnˈhɑːnsɪz/ — sounds like **in-HAHN-siz** | /ɪnˈhænsɪz/ — sounds like **in-HAN-siz**
 122. n. enrollment | /ɪnˈrəʊlmənt/ — sounds like **in-ROHL-munt** | /ɪnˈroʊlmənt/ — sounds like **in-ROHL-munt**
 123. n. era | /ˈɪərə/ — sounds like **EER-uh** | /ˈɪrə/ — sounds like **EER-uh**
@@ -143,7 +143,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 138. n. files | /faɪlz/ — sounds like **FYLZ** | /faɪlz/ — sounds like **FYLZ**
 139. n. fitness | /ˈfɪtnəs/ — sounds like **FIT-nus** | /ˈfɪtnəs/ — sounds like **FIT-nus**
 140. n. floor | /flɔː/ — sounds like **FLOR** | /flɔːr/ — sounds like **FLOR**
-141. v. flourish | /ˈflʌrɪʃ/ — sounds like **FLUR-ish** | /ˈflɜːrɪʃ/ — sounds like **FLUR-ish**
+141. v. flourish | /ˈflʌrɪʃ/ — sounds like **FLUHR-ish** | /ˈflɜːrɪʃ/ — sounds like **FLUR-ish**
 142. prep. for | /fɔː/ — sounds like **FOR** | /fɔːr/ — sounds like **FOR**
 143. n. forests | /ˈfɒrɪsts/ — sounds like **FOR-ists** | /ˈfɔːrɪsts/ — sounds like **FOR-ists**
 144. n. format | /ˈfɔːmæt/ — sounds like **FOR-mat** | /ˈfɔːrmæt/ — sounds like **FOR-mat**
@@ -151,7 +151,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 146. n. framework | /ˈfreɪmwɜːk/ — sounds like **FRAYM-wurk** | /ˈfreɪmwɜːrk/ — sounds like **FRAYM-wurk**
 147. n. freshman | /ˈfreʃmən/ — sounds like **FRESH-mun** | /ˈfreʃmən/ — sounds like **FRESH-mun**
 148. n. Friday | /ˈfraɪdeɪ/ — sounds like **FRY-day** | /ˈfraɪdeɪ/ — sounds like **FRY-day**
-149. n. fungi | /ˈfʌŋɡaɪ/ — sounds like **FUN-gy** | /ˈfʌndʒaɪ/ — sounds like **FUN-jy**
+149. n. fungi | /ˈfʌŋɡaɪ/ — sounds like **FUHN-guy** | /ˈfʌndʒaɪ/ — sounds like **FUHN-jy**
 150. v. garnered | /ˈɡɑːnəd/ — sounds like **GAH-nud** | /ˈɡɑːrnərd/ — sounds like **GAR-nurd**
 151. n. gender | /ˈdʒendə/ — sounds like **JEN-duh** | /ˈdʒendər/ — sounds like **JEN-dur**
 152. n. geology | /dʒiˈɒlədʒi/ — sounds like **jee-OL-uh-jee** | /dʒiˈɑːlədʒi/ — sounds like **jee-AH-luh-jee**
@@ -172,7 +172,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 167. n. holes | /həʊlz/ — sounds like **HOHLZ** | /hoʊlz/ — sounds like **HOHLZ**
 168. n. holidays | /ˈhɒlədeɪz/ — sounds like **HOL-uh-dayz** | /ˈhɑːlədeɪz/ — sounds like **HAH-luh-dayz**
 169. n. hours | /ˈaʊəz/ — sounds like **OW-uz** | /ˈaʊərz/ — sounds like **OW-urz**
-170. v. hunt | /hʌnt/ — sounds like **HUNT** | /hʌnt/ — sounds like **HUNT**
+170. v. hunt | /hʌnt/ — sounds like **HUHNT** | /hʌnt/ — sounds like **HUHNT**
 171. n. hypothesis | /haɪˈpɒθəsɪs/ — sounds like **hy-POTH-uh-sis** | /haɪˈpɑːθəsɪs/ — sounds like **hy-PAH-thuh-sis**
 172. adv. hypothetically | /ˌhaɪpəˈθetɪkəli/ — sounds like **hy-puh-THET-i-kuh-lee** | /ˌhaɪpəˈθetɪkəli/ — sounds like **hy-puh-THET-i-kuh-lee**
 173. pron. I | /aɪ/ — sounds like **EYE** | /aɪ/ — sounds like **EYE**
@@ -181,7 +181,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 176. adj. impossible | /ɪmˈpɒsəbəl/ — sounds like **im-POS-uh-bul** | /ɪmˈpɑːsəbəl/ — sounds like **im-PAH-suh-bul**
 177. adv. increasingly | /ɪnˈkriːsɪŋli/ — sounds like **in-KREE-sing-lee** | /ɪnˈkriːsɪŋli/ — sounds like **in-KREE-sing-lee**
 178. adj. Indian | /ˈɪndiən/ — sounds like **IN-dee-un** | /ˈɪndiən/ — sounds like **IN-dee-un**
-179. n. induction | /ɪnˈdʌkʃən/ — sounds like **in-DUK-shun** | /ɪnˈdʌkʃən/ — sounds like **in-DUK-shun**
+179. n. induction | /ɪnˈdʌkʃən/ — sounds like **in-DUHK-shuhn** | /ɪnˈdʌkʃən/ — sounds like **in-DUHK-shuhn**
 180. n. industries | /ˈɪndəstriz/ — sounds like **IN-duh-streez** | /ˈɪndəstriz/ — sounds like **IN-duh-streez**
 181. adj. infinite | /ˈɪnfɪnət/ — sounds like **IN-fi-nut** | /ˈɪnfɪnət/ — sounds like **IN-fi-nut**
 182. n. ingredients | /ɪnˈɡriːdiənts/ — sounds like **in-GREE-dee-unts** | /ɪnˈɡriːdiənts/ — sounds like **in-GREE-dee-unts**
@@ -206,7 +206,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 201. n. library | /ˈlaɪbrəri/ — sounds like **LY-bruh-ree** | /ˈlaɪbreri/ — sounds like **LY-brer-ee**
 202. v. located | /ˈləʊkeɪtɪd/ — sounds like **LOH-kay-tid** | /ˈloʊkeɪtɪd/ — sounds like **LOH-kay-tid**
 203. v. logging | /ˈlɒɡɪŋ/ — sounds like **LOG-ing** | /ˈlɑːɡɪŋ/ — sounds like **LAH-ging**
-204. n. London | /ˈlʌndən/ — sounds like **LUN-dun** | /ˈlʌndən/ — sounds like **LUN-dun**
+204. n. London | /ˈlʌndən/ — sounds like **LUHN-duhn** | /ˈlʌndən/ — sounds like **LUHN-duhn**
 205. v. look | /lʊk/ — sounds like **LUUK** | /lʊk/ — sounds like **LUUK**
 206. n. lot | /lɒt/ — sounds like **LOT** | /lɑːt/ — sounds like **LAHT**
 207. adj. lower | /ˈləʊə/ — sounds like **LOH-uh** | /ˈloʊər/ — sounds like **LOH-ur**
@@ -222,8 +222,8 @@ Personal Repeat Sentence and Write From Dictation word list.
 217. adj. minimal | /ˈmɪnɪməl/ — sounds like **MIN-i-mul** | /ˈmɪnɪməl/ — sounds like **MIN-i-mul**
 218. adj. missing | /ˈmɪsɪŋ/ — sounds like **MIS-ing** | /ˈmɪsɪŋ/ — sounds like **MIS-ing**
 219. n. monarchy | /ˈmɒnəki/ — sounds like **MON-uh-kee** | /ˈmɑːnərki/ — sounds like **MAH-nur-kee**
-220. n. Monday | /ˈmʌndeɪ/ — sounds like **MUN-day** | /ˈmʌndeɪ/ — sounds like **MUN-day**
-221. n. Mondays | /ˈmʌndeɪz/ — sounds like **MUN-dayz** | /ˈmʌndeɪz/ — sounds like **MUN-dayz**
+220. n. Monday | /ˈmʌndeɪ/ — sounds like **MUHN-day** | /ˈmʌndeɪ/ — sounds like **MUHN-day**
+221. n. Mondays | /ˈmʌndeɪz/ — sounds like **MUHN-dayz** | /ˈmʌndeɪz/ — sounds like **MUHN-dayz**
 222. adj. moot | /muːt/ — sounds like **MOOT** | /muːt/ — sounds like **MOOT**
 223. det. my | /maɪ/ — sounds like **MY** | /maɪ/ — sounds like **MY**
 224. adj. national | /ˈnæʃənəl/ — sounds like **NASH-uh-nul** | /ˈnæʃənəl/ — sounds like **NASH-uh-nul**
@@ -291,9 +291,9 @@ Personal Repeat Sentence and Write From Dictation word list.
 286. v. returns | /rɪˈtɜːnz/ — sounds like **ri-TURNZ** | /rɪˈtɜːrnz/ — sounds like **ri-TURNZ**
 287. n. risks | /rɪsks/ — sounds like **RISKS** | /rɪsks/ — sounds like **RISKS**
 288. n. Robert | /ˈrɒbət/ — sounds like **ROB-ut** | /ˈrɑːbərt/ — sounds like **RAH-burt**
-289. adj. rough | /rʌf/ — sounds like **RUF** | /rʌf/ — sounds like **RUF**
-290. n. rugby | /ˈrʌɡbi/ — sounds like **RUG-bee** | /ˈrʌɡbi/ — sounds like **RUG-bee**
-291. v. run | /rʌn/ — sounds like **RUN** | /rʌn/ — sounds like **RUN**
+289. adj. rough | /rʌf/ — sounds like **RUHF** | /rʌf/ — sounds like **RUHF**
+290. n. rugby | /ˈrʌɡbi/ — sounds like **RUHG-bee** | /ˈrʌɡbi/ — sounds like **RUHG-bee**
+291. v. run | /rʌn/ — sounds like **RUHN** | /rʌn/ — sounds like **RUHN**
 292. v. said | /sed/ — sounds like **SED** | /sed/ — sounds like **SED**
 293. n. sandwich | /ˈsænwɪdʒ/ — sounds like **SAN-wij** | /ˈsænwɪtʃ/ — sounds like **SAN-wich**
 294. adj. sanitary | /ˈsænɪtəri/ — sounds like **SAN-i-tuh-ree** | /ˈsænəteri/ — sounds like **SAN-uh-ter-ee**
@@ -318,7 +318,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 313. n. States | /steɪts/ — sounds like **STAYTS** | /steɪts/ — sounds like **STAYTS**
 314. v. stay | /steɪ/ — sounds like **STAY** | /steɪ/ — sounds like **STAY**
 315. adj. stronger | /ˈstrɒŋɡə/ — sounds like **STRONG-guh** | /ˈstrɔːŋɡər/ — sounds like **STRAWNG-gur**
-316. n. structures | /ˈstrʌktʃəz/ — sounds like **STRUK-chuz** | /ˈstrʌktʃərz/ — sounds like **STRUK-churz**
+316. n. structures | /ˈstrʌktʃəz/ — sounds like **STRUHK-chuhz** | /ˈstrʌktʃərz/ — sounds like **STRUHK-churz**
 317. v. submit | /səbˈmɪt/ — sounds like **sub-MIT** | /səbˈmɪt/ — sounds like **sub-MIT**
 318. v. submitted | /səbˈmɪtɪd/ — sounds like **sub-MIT-id** | /səbˈmɪtɪd/ — sounds like **sub-MIT-id**
 319. adj. successful | /səkˈsesfəl/ — sounds like **suk-SES-ful** | /səkˈsesfəl/ — sounds like **suk-SES-ful**
@@ -331,7 +331,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 326. n. tennis | /ˈtenɪs/ — sounds like **TEN-is** | /ˈtenɪs/ — sounds like **TEN-is**
 327. v. tested | /ˈtestɪd/ — sounds like **TES-tid** | /ˈtestɪd/ — sounds like **TES-tid**
 328. conj. that | /ðæt/ — sounds like **THAT** | /ðæt/ — sounds like **THAT**
-329. art. the | /ðə/ — sounds like **THUH** | /ðə/ — sounds like **THUH**
+329. art. the | /ðə/ — sounds like **thuh** | /ðə/ — sounds like **thuh**
 330. n. theatre | /ˈθɪətə/ — sounds like **THEE-uh-tuh** | /ˈθiːətər/ — sounds like **THEE-uh-tur**
 331. n. theory | /ˈθɪəri/ — sounds like **THEER-ee** | /ˈθiːəri/ — sounds like **THEER-ee**
 332. prep. throughout | /θruːˈaʊt/ — sounds like **throo-OWT** | /θruːˈaʊt/ — sounds like **throo-OWT**
@@ -344,7 +344,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 339. adj. traditional | /trəˈdɪʃənəl/ — sounds like **truh-DISH-uh-nul** | /trəˈdɪʃənəl/ — sounds like **truh-DISH-uh-nul**
 340. n. transmission | /trænzˈmɪʃən/ — sounds like **tranz-MISH-un** | /trænzˈmɪʃən/ — sounds like **tranz-MISH-un**
 341. adj. traumatic | /trɔːˈmætɪk/ — sounds like **traw-MAT-ik** | /trəˈmætɪk/ — sounds like **truh-MAT-ik**
-342. n. trouble | /ˈtrʌbəl/ — sounds like **TRUB-ul** | /ˈtrʌbəl/ — sounds like **TRUB-ul**
+342. n. trouble | /ˈtrʌbəl/ — sounds like **TRUHB-uhl** | /ˈtrʌbəl/ — sounds like **TRUHB-uhl**
 343. v. try | /traɪ/ — sounds like **TRY** | /traɪ/ — sounds like **TRY**
 344. n. Tuesdays | /ˈtjuːzdeɪz/ — sounds like **TYOOZ-dayz** | /ˈtuːzdeɪz/ — sounds like **TOOZ-dayz**
 345. n. tutorials | /tjuːˈtɔːriəlz/ — sounds like **tyoo-TOR-ee-ulz** | /tuːˈtɔːriəlz/ — sounds like **too-TOR-ee-ulz**
@@ -354,7 +354,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 349. v. typed | /taɪpt/ — sounds like **TYPT** | /taɪpt/ — sounds like **TYPT**
 350. n. undergraduate | /ˌʌndəˈɡrædʒʊət/ — sounds like **un-duh-GRAJ-oo-ut** | /ˌʌndərˈɡrædʒuət/ — sounds like **un-dur-GRAJ-oo-ut**
 351. adj. United | /juːˈnaɪtɪd/ — sounds like **yoo-NY-tid** | /juːˈnaɪtɪd/ — sounds like **yoo-NY-tid**
-352. adj. upcoming | /ˈʌpkʌmɪŋ/ — sounds like **UP-kum-ing** | /ˈʌpkʌmɪŋ/ — sounds like **UP-kum-ing**
+352. adj. upcoming | /ˈʌpkʌmɪŋ/ — sounds like **UHP-kuhm-ing** | /ˈʌpkʌmɪŋ/ — sounds like **UHP-kuhm-ing**
 353. n. urbanization | /ˌɜːbənaɪˈzeɪʃən/ — sounds like **ur-buh-ny-ZAY-shun** | /ˌɜːrbənəˈzeɪʃən/ — sounds like **ur-buh-nuh-ZAY-shun**
 354. v. used | /juːzd/ — sounds like **YOOZD** | /juːzd/ — sounds like **YOOZD**
 355. n. vacation | /vəˈkeɪʃən/ — sounds like **vuh-KAY-shun** | /veɪˈkeɪʃən/ — sounds like **vay-KAY-shun**
@@ -378,13 +378,13 @@ Personal Repeat Sentence and Write From Dictation word list.
 373. interj. yes | /jes/ — sounds like **YES** | /jes/ — sounds like **YES**
 374. prep. above | /əˈbʌv/ — sounds like **uh-BUHV** | /əˈbʌv/ — sounds like **uh-BUHV**
 375. adj. absent | /ˈæbsənt/ — sounds like **AB-suhnt** | /ˈæbsənt/ — sounds like **AB-suhnt**
-376. n. absorb | /əbˈzɔːrb/ — sounds like **uhb-ZAWRB** | /əbˈzɔːrb/ — sounds like **uhb-ZAWRB**
-377. n. abstract | /æbˈstrækt/ — sounds like **ab-STRAKT** | /æbˈstrækt/ — sounds like **ab-STRAKT**
+376. v. absorb | /əbˈzɔːrb/ — sounds like **uhb-ZAWRB** | /əbˈzɔːrb/ — sounds like **uhb-ZAWRB**
+377. n. abstract | /ˈæbstrækt/ — sounds like **AB-strakt** | /ˈæbstrækt/ — sounds like **AB-strakt**
 378. v. accelerate | /ækˈseləˌeɪt/ — sounds like **ak-SEL-er-ayt** | /ækˈselɜrˌeɪt/ — sounds like **ak-SEL-er-ayt**
-379. adj. accent | /əkˈsent/ — sounds like **uhk-SENT** | /əkˈsent/ — sounds like **uhk-SENT**
+379. n. accent | /ˈæksent/ — sounds like **AK-sent** | /ˈæksent/ — sounds like **AK-sent**
 380. adj. acceptable | /ækˈseptəbəl/ — sounds like **ak-SEP-tuh-buhl** | /ækˈseptəbəl/ — sounds like **ak-SEP-tuh-buhl**
 381. v. accepted | /ækˈseptɪd/ — sounds like **ak-SEP-tid** | /ækˈseptɪd/ — sounds like **ak-SEP-tid**
-382. n. accepts | /ækˈsepts/ — sounds like **ak-SEPTS** | /ækˈsepts/ — sounds like **ak-SEPTS**
+382. v. accepts | /ækˈsepts/ — sounds like **ak-SEPTS** | /ækˈsepts/ — sounds like **ak-SEPTS**
 383. adj. accident | /ˈæksədənt/ — sounds like **AK-suh-duhnt** | /ˈæksədənt/ — sounds like **AK-suh-duhnt**
 384. n. accidents | /ˈæksədənts/ — sounds like **AK-suh-duhnts** | /ˈæksədənts/ — sounds like **AK-suh-duhnts**
 385. v. acclaimed | /əˈkleɪmd/ — sounds like **uh-KLAYMD** | /əˈkleɪmd/ — sounds like **uh-KLAYMD**
@@ -756,13 +756,13 @@ Personal Repeat Sentence and Write From Dictation word list.
 751. v. concerned | /kənˈsɜːnd/ — sounds like **kuhn-SURND** | /kənˈsɜrnd/ — sounds like **kuhn-SURND**
 752. n. concert | /ˈkɑːnsət/ — sounds like **KAHN-sert** | /ˈkɑːnsɜrt/ — sounds like **KAHN-sert**
 753. n. concession | /kənˈseʃən/ — sounds like **kuhn-SESH-uhn** | /kənˈseʃən/ — sounds like **kuhn-SESH-uhn**
-754. v. concise | /kənˈsaɪs/ — sounds like **kuhn-SYS** | /kənˈsaɪs/ — sounds like **kuhn-SYS**
+754. adj. concise | /kənˈsaɪs/ — sounds like **kuhn-SYS** | /kənˈsaɪs/ — sounds like **kuhn-SYS**
 755. n. conclusion | /kənˈkluːʒən/ — sounds like **kuhn-KLOOZH-uhn** | /kənˈkluːʒən/ — sounds like **kuhn-KLOOZH-uhn**
 756. n. conclusions | /kənˈkluːʒənz/ — sounds like **kuhn-KLOOZH-uhnz** | /kənˈkluːʒənz/ — sounds like **kuhn-KLOOZH-uhnz**
 757. n. condition | /kənˈdɪʃən/ — sounds like **kuhn-DISH-uhn** | /kənˈdɪʃən/ — sounds like **kuhn-DISH-uhn**
-758. v. conduct | /kɑːnˈdʌkt/ — sounds like **kahn-DUHKT** | /kɑːnˈdʌkt/ — sounds like **kahn-DUHKT**
+758. v. conduct | /kənˈdʌkt/ — sounds like **kuhn-DUHKT** | /kənˈdʌkt/ — sounds like **kuhn-DUHKT**
 759. v. conducted | /kənˈdʌktəd/ — sounds like **kuhn-DUHK-tuhd** | /kənˈdʌktəd/ — sounds like **kuhn-DUHK-tuhd**
-760. n. conductor | /kənˈdʌktə/ — sounds like **kuhn-DUHK-ter** | /kənˈdʌktɜr/ — sounds like **kuhn-DUHK-ter**
+760. n. conductor | /kənˈdʌktə/ — sounds like **kuhn-DUHK-tuh** | /kənˈdʌktɜr/ — sounds like **kuhn-DUHK-tur**
 761. n. conference | /ˈkɑːnfəəns/ — sounds like **KAHN-fer-uhns** | /ˈkɑːnfɜrəns/ — sounds like **KAHN-fer-uhns**
 762. n. confidence | /ˈkɑːnfədəns/ — sounds like **KAHN-fuh-duhns** | /ˈkɑːnfədəns/ — sounds like **KAHN-fuh-duhns**
 763. n. configuration | /kənˌfɪɡjəˈeɪʃən/ — sounds like **kuhn-fig-yer-AYSH-uhn** | /kənˌfɪɡjɜrˈeɪʃən/ — sounds like **kuhn-fig-yer-AYSH-uhn**
@@ -779,10 +779,10 @@ Personal Repeat Sentence and Write From Dictation word list.
 774. adv. considerably | /kənˈsɪdəəbliː/ — sounds like **kuhn-SID-er-uh-blee** | /kənˈsɪdɜrəbliː/ — sounds like **kuhn-SID-er-uh-blee**
 775. n. considerations | /kənˌsɪdəˈeɪʃənz/ — sounds like **kuhn-si-der-AYSH-uhnz** | /kənˌsɪdɜrˈeɪʃənz/ — sounds like **kuhn-si-der-AYSH-uhnz**
 776. n. considers | /kənˈsɪdəz/ — sounds like **kuhn-SID-erz** | /kənˈsɪdɜrz/ — sounds like **kuhn-SID-erz**
-777. n. consist | /kənˈsɪst/ — sounds like **kuhn-SIST** | /kənˈsɪst/ — sounds like **kuhn-SIST**
+777. v. consist | /kənˈsɪst/ — sounds like **kuhn-SIST** | /kənˈsɪst/ — sounds like **kuhn-SIST**
 778. adv. consistently | /kənˈsɪstəntliː/ — sounds like **kuhn-SI-stuhnt-lee** | /kənˈsɪstəntliː/ — sounds like **kuhn-SI-stuhnt-lee**
 779. adv. constantly | /ˈkɑːnstəntliː/ — sounds like **KAHN-stuhnt-lee** | /ˈkɑːnstəntliː/ — sounds like **KAHN-stuhnt-lee**
-780. n. constitute | /ˈkɑːnstəˌtuːt/ — sounds like **KAHN-stuh-toot** | /ˈkɑːnstəˌtuːt/ — sounds like **KAHN-stuh-toot**
+780. v. constitute | /ˈkɑːnstəˌtuːt/ — sounds like **KAHN-stuh-toot** | /ˈkɑːnstəˌtuːt/ — sounds like **KAHN-stuh-toot**
 781. n. construction | /kənˈstrʌkʃən/ — sounds like **kuhn-STRUHK-shuhn** | /kənˈstrʌkʃən/ — sounds like **kuhn-STRUHK-shuhn**
 782. adj. constructive | /kənˈstrʌktɪv/ — sounds like **kuhn-STRUHK-tiv** | /kənˈstrʌktɪv/ — sounds like **kuhn-STRUHK-tiv**
 783. v. consult | /kənˈsʌlt/ — sounds like **kuhn-SUHLT** | /kənˈsʌlt/ — sounds like **kuhn-SUHLT**
@@ -790,10 +790,10 @@ Personal Repeat Sentence and Write From Dictation word list.
 785. n. consumers | /kənˈsuːməz/ — sounds like **kuhn-SOOM-erz** | /kənˈsuːmɜrz/ — sounds like **kuhn-SOOM-erz**
 786. n. consumption | /kənˈsʌmpʃən/ — sounds like **kuhn-SUHMP-shuhn** | /kənˈsʌmpʃən/ — sounds like **kuhn-SUHMP-shuhn**
 787. n. contact | /ˈkɑːnˌtækt/ — sounds like **KAHN-takt** | /ˈkɑːnˌtækt/ — sounds like **KAHN-takt**
-788. n. contain | /kənˈteɪn/ — sounds like **kuhn-TAYN** | /kənˈteɪn/ — sounds like **kuhn-TAYN**
+788. v. contain | /kənˈteɪn/ — sounds like **kuhn-TAYN** | /kənˈteɪn/ — sounds like **kuhn-TAYN**
 789. n. containers | /kənˈteɪnəz/ — sounds like **kuhn-TAYN-erz** | /kənˈteɪnɜrz/ — sounds like **kuhn-TAYN-erz**
 790. v. containing | /kənˈteɪnɪŋ/ — sounds like **kuhn-TAYN-ing** | /kənˈteɪnɪŋ/ — sounds like **kuhn-TAYN-ing**
-791. n. contains | /kənˈteɪnz/ — sounds like **kuhn-TAYNZ** | /kənˈteɪnz/ — sounds like **kuhn-TAYNZ**
+791. v. contains | /kənˈteɪnz/ — sounds like **kuhn-TAYNZ** | /kənˈteɪnz/ — sounds like **kuhn-TAYNZ**
 792. n. content | /ˈkɑːntent/ — sounds like **KAHN-tent** | /ˈkɑːntent/ — sounds like **KAHN-tent**
 793. n. contentions | /kənˈtenʃənz/ — sounds like **kuhn-TEN-shuhnz** | /kənˈtenʃənz/ — sounds like **kuhn-TEN-shuhnz**
 794. v. continuing | /kənˈtɪnjuːɪŋ/ — sounds like **kuhn-TIN-yoo-ing** | /kənˈtɪnjuːɪŋ/ — sounds like **kuhn-TIN-yoo-ing**
@@ -801,7 +801,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 796. adv. continuously | /kənˈtɪnjuːəsliː/ — sounds like **kuhn-TIN-yoo-uh-slee** | /kənˈtɪnjuːəsliː/ — sounds like **kuhn-TIN-yoo-uh-slee**
 797. n. contract | /ˈkɑːnˌtrækt/ — sounds like **KAHN-trakt** | /ˈkɑːnˌtrækt/ — sounds like **KAHN-trakt**
 798. n. contracts | /ˈkɑːnˌtrækts/ — sounds like **KAHN-trakts** | /ˈkɑːnˌtrækts/ — sounds like **KAHN-trakts**
-799. n. contradict | /ˌkɑːntrəˈdɪkt/ — sounds like **kahn-truh-DIKT** | /ˌkɑːntrəˈdɪkt/ — sounds like **kahn-truh-DIKT**
+799. v. contradict | /ˌkɑːntrəˈdɪkt/ — sounds like **kahn-truh-DIKT** | /ˌkɑːntrəˈdɪkt/ — sounds like **kahn-truh-DIKT**
 800. n. contribution | /ˌkɑːntrəbˈjuːʃən/ — sounds like **kahn-truhb-YOOSH-uhn** | /ˌkɑːntrəbˈjuːʃən/ — sounds like **kahn-truhb-YOOSH-uhn**
 801. n. controls | /kənˈtrəʊlz/ — sounds like **kuhn-TROHLZ** | /kənˈtroʊlz/ — sounds like **kuhn-TROHLZ**
 802. n. controversy | /ˈkɑːntrəˌvɜːsiː/ — sounds like **KAHN-truh-vur-see** | /ˈkɑːntrəˌvɜrsiː/ — sounds like **KAHN-truh-vur-see**
@@ -826,7 +826,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 821. n. coverage | /ˈkʌvəədʒ/ — sounds like **KUHV-er-uhj** | /ˈkʌvɜrədʒ/ — sounds like **KUHV-er-uhj**
 822. v. covered | /ˈkʌvəd/ — sounds like **KUHV-erd** | /ˈkʌvɜrd/ — sounds like **KUHV-erd**
 823. v. covering | /ˈkʌvəɪŋ/ — sounds like **KUHV-er-ing** | /ˈkʌvɜrɪŋ/ — sounds like **KUHV-er-ing**
-824. n. covers | /ˈkʌvəz/ — sounds like **KUHV-erz** | /ˈkʌvɜrz/ — sounds like **KUHV-erz**
+824. v. covers | /ˈkʌvəz/ — sounds like **KUHV-erz** | /ˈkʌvɜrz/ — sounds like **KUHV-erz**
 825. v. cramped | /ˈkræmpt/ — sounds like **KRAMPT** | /ˈkræmpt/ — sounds like **KRAMPT**
 826. n. crash | /ˈkræʃ/ — sounds like **KRASH** | /ˈkræʃ/ — sounds like **KRASH**
 827. v. crashed | /ˈkræʃt/ — sounds like **KRASHT** | /ˈkræʃt/ — sounds like **KRASHT**
@@ -853,7 +853,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 848. adv. currently | /ˈkɜːəntliː/ — sounds like **KUR-uhnt-lee** | /ˈkɜrəntliː/ — sounds like **KUR-uhnt-lee**
 849. n. curriculum | /kəˈɪkjələm/ — sounds like **ker-IK-yuh-luhm** | /kɜrˈɪkjələm/ — sounds like **ker-IK-yuh-luhm**
 850. n. customers | /ˈkʌstəməz/ — sounds like **KUH-stuh-merz** | /ˈkʌstəmɜrz/ — sounds like **KUH-stuh-merz**
-851. n. cuts | /ˈkʌts/ — sounds like **KUHTS** | /ˈkʌts/ — sounds like **KUHTS**
+851. v. cuts | /ˈkʌts/ — sounds like **KUHTS** | /ˈkʌts/ — sounds like **KUHTS**
 852. n. cycle | /ˈsaɪkəl/ — sounds like **SYK-uhl** | /ˈsaɪkəl/ — sounds like **SYK-uhl**
 853. v. cycling | /ˈsaɪkəlɪŋ/ — sounds like **SYK-uh-ling** | /ˈsaɪkəlɪŋ/ — sounds like **SYK-uh-ling**
 854. n. cyclone | /sɪˈkləʊn/ — sounds like **si-KLOHN** | /sɪˈkloʊn/ — sounds like **si-KLOHN**
@@ -900,7 +900,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 895. n. description | /dɪˈskrɪpʃən/ — sounds like **di-SKRIP-shuhn** | /dɪˈskrɪpʃən/ — sounds like **di-SKRIP-shuhn**
 896. n. designers | /dɪˈzaɪnəz/ — sounds like **di-ZYN-erz** | /dɪˈzaɪnɜrz/ — sounds like **di-ZYN-erz**
 897. v. designing | /dɪˈzaɪnɪŋ/ — sounds like **di-ZYN-ing** | /dɪˈzaɪnɪŋ/ — sounds like **di-ZYN-ing**
-898. n. designs | /dɪˈzaɪnz/ — sounds like **di-ZYNZ** | /dɪˈzaɪnz/ — sounds like **di-ZYNZ**
+898. v. designs | /dɪˈzaɪnz/ — sounds like **di-ZYNZ** | /dɪˈzaɪnz/ — sounds like **di-ZYNZ**
 899. n. desk | /ˈdesk/ — sounds like **DESK** | /ˈdesk/ — sounds like **DESK**
 900. n. desks | /ˈdesks/ — sounds like **DESKS** | /ˈdesks/ — sounds like **DESKS**
 901. n. details | /dɪˈteɪlz/ — sounds like **di-TAYLZ** | /dɪˈteɪlz/ — sounds like **di-TAYLZ**
@@ -911,12 +911,12 @@ Personal Repeat Sentence and Write From Dictation word list.
 906. n. devolution | /ˌdevəˈluːʃən/ — sounds like **de-vuh-LOOSH-uhn** | /ˌdevəˈluːʃən/ — sounds like **de-vuh-LOOSH-uhn**
 907. v. devoted | /dɪˈvəʊtɪd/ — sounds like **di-VOHT-id** | /dɪˈvoʊtɪd/ — sounds like **di-VOHT-id**
 908. aux. did | /ˈdɪd/ — sounds like **DID** | /ˈdɪd/ — sounds like **DID**
-909. n. die | /ˈdaɪ/ — sounds like **DY** | /ˈdaɪ/ — sounds like **DY**
+909. v. die | /ˈdaɪ/ — sounds like **DY** | /ˈdaɪ/ — sounds like **DY**
 910. n. difference | /ˈdɪfəəns/ — sounds like **DIF-er-uhns** | /ˈdɪfɜrəns/ — sounds like **DIF-er-uhns**
 911. n. differences | /ˈdɪfəənsɪz/ — sounds like **DIF-er-uhn-siz** | /ˈdɪfɜrənsɪz/ — sounds like **DIF-er-uhn-siz**
 912. adv. differently | /ˈdɪfrəntliː/ — sounds like **DI-fruhnt-lee** | /ˈdɪfrəntliː/ — sounds like **DI-fruhnt-lee**
 913. n. dilemmas | /dəˈleməz/ — sounds like **duh-LEM-uhz** | /dəˈleməz/ — sounds like **duh-LEM-uhz**
-914. n. dilute | /daɪˈluːt/ — sounds like **dy-LOOT** | /daɪˈluːt/ — sounds like **dy-LOOT**
+914. adj. dilute | /daɪˈluːt/ — sounds like **dy-LOOT** | /daɪˈluːt/ — sounds like **dy-LOOT**
 915. v. dining | /ˈdaɪnɪŋ/ — sounds like **DYN-ing** | /ˈdaɪnɪŋ/ — sounds like **DYN-ing**
 916. n. Director | /dəˈektə/ — sounds like **der-EK-ter** | /dɜrˈektɜr/ — sounds like **der-EK-ter**
 917. v. disagreed | /dɪsəˈɡriːd/ — sounds like **di-suh-GREED** | /dɪsəˈɡriːd/ — sounds like **di-suh-GREED**
@@ -924,15 +924,15 @@ Personal Repeat Sentence and Write From Dictation word list.
 919. n. disasters | /dɪˈzæstəz/ — sounds like **di-ZA-sterz** | /dɪˈzæstɜrz/ — sounds like **di-ZA-sterz**
 920. n. disciplines | /ˈdɪsəplənz/ — sounds like **DIS-uh-pluhnz** | /ˈdɪsəplənz/ — sounds like **DIS-uh-pluhnz**
 921. n. discount | /ˈdɪskaʊnt/ — sounds like **DI-skownt** | /ˈdɪskaʊnt/ — sounds like **DI-skownt**
-922. n. discounts | /dɪˈskaʊnts/ — sounds like **di-SKOWNTS** | /dɪˈskaʊnts/ — sounds like **di-SKOWNTS**
-923. n. discourage | /dɪˈskɜːɪdʒ/ — sounds like **di-SKUR-ij** | /dɪˈskɜrɪdʒ/ — sounds like **di-SKUR-ij**
+922. n. discounts | /ˈdɪskaʊnts/ — sounds like **DI-skownts** | /ˈdɪskaʊnts/ — sounds like **DI-skownts**
+923. v. discourage | /dɪˈskɜːɪdʒ/ — sounds like **di-SKUR-ij** | /dɪˈskɜrɪdʒ/ — sounds like **di-SKUR-ij**
 924. n. discourse | /ˈdɪskɔːrs/ — sounds like **DI-skawrs** | /ˈdɪskɔːrs/ — sounds like **DI-skawrs**
 925. v. discuss | /dɪˈskʌs/ — sounds like **di-SKUHS** | /dɪˈskʌs/ — sounds like **di-SKUHS**
 926. v. discussed | /dɪˈskʌst/ — sounds like **di-SKUHST** | /dɪˈskʌst/ — sounds like **di-SKUHST**
 927. n. discussions | /dɪˈskʌʃənz/ — sounds like **di-SKUHSH-uhnz** | /dɪˈskʌʃənz/ — sounds like **di-SKUHSH-uhnz**
 928. n. diseases | /dɪˈziːzəz/ — sounds like **di-ZEEZ-uhz** | /dɪˈziːzəz/ — sounds like **di-ZEEZ-uhz**
 929. n. dishes | /ˈdɪʃəz/ — sounds like **DISH-uhz** | /ˈdɪʃəz/ — sounds like **DISH-uhz**
-930. n. dislike | /dɪˈslaɪk/ — sounds like **di-SLYK** | /dɪˈslaɪk/ — sounds like **di-SLYK**
+930. v. dislike | /dɪˈslaɪk/ — sounds like **di-SLYK** | /dɪˈslaɪk/ — sounds like **di-SLYK**
 931. v. dismissed | /dɪˈsmɪst/ — sounds like **di-SMIST** | /dɪˈsmɪst/ — sounds like **di-SMIST**
 932. adj. disposable | /dɪˈspəʊzəbəl/ — sounds like **di-SPOHZ-uh-buhl** | /dɪˈspoʊzəbəl/ — sounds like **di-SPOHZ-uh-buhl**
 933. n. dissertation | /ˌdɪsəˈteɪʃən/ — sounds like **di-ser-TAYSH-uhn** | /ˌdɪsɜrˈteɪʃən/ — sounds like **di-ser-TAYSH-uhn**
@@ -1352,7 +1352,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 1347. n. infers | /ˌɪnˈfɜːz/ — sounds like **in-FURZ** | /ˌɪnˈfɜrz/ — sounds like **in-FURZ**
 1348. n. inflation | /ˌɪnˈfleɪʃən/ — sounds like **in-FLAYSH-uhn** | /ˌɪnˈfleɪʃən/ — sounds like **in-FLAYSH-uhn**
 1349. v. influence | /ˈɪnfluːəns/ — sounds like **IN-floo-uhns** | /ˈɪnfluːəns/ — sounds like **IN-floo-uhns**
-1350. n. influences | /ˈɪnˌfluːənsɪz/ — sounds like **IN-floo-uhn-siz** | /ˈɪnˌfluːənsɪz/ — sounds like **IN-floo-uhn-siz**
+1350. v. influences | /ˈɪnfluənsɪz/ — sounds like **IN-floo-uhn-siz** | /ˈɪnfluənsɪz/ — sounds like **IN-floo-uhn-siz**
 1351. v. informed | /ˌɪnˈfɔːrmd/ — sounds like **in-FAWRMD** | /ˌɪnˈfɔːrmd/ — sounds like **in-FAWRMD**
 1352. n. infrastructure | /ˌɪnfrəˈstrʌktʃə/ — sounds like **in-fruh-STRUHK-cher** | /ˌɪnfrəˈstrʌktʃɜr/ — sounds like **in-fruh-STRUHK-cher**
 1353. adj. inherent | /ɪnˈhɪrənt/ — sounds like **in-HIR-uhnt** | /ɪnˈhɪrənt/ — sounds like **in-HIR-uhnt**
@@ -1446,11 +1446,11 @@ Personal Repeat Sentence and Write From Dictation word list.
 1441. n. laundry | /ˈlɔːndriː/ — sounds like **LAWN-dree** | /ˈlɔːndriː/ — sounds like **LAWN-dree**
 1442. n. law | /ˈlɔː/ — sounds like **LAW** | /ˈlɔː/ — sounds like **LAW**
 1443. n. layout | /ˈleɪˌaʊt/ — sounds like **LAY-owt** | /ˈleɪˌaʊt/ — sounds like **LAY-owt**
-1444. n. lead | /ˈled/ — sounds like **LED** | /ˈled/ — sounds like **LED**
+1444. v. lead | /ˈliːd/ — sounds like **LEED** | /ˈliːd/ — sounds like **LEED**
 1445. n. leaders | /ˈliːdəz/ — sounds like **LEED-erz** | /ˈliːdɜrz/ — sounds like **LEED-erz**
 1446. n. leadership | /ˈliːdəˌʃɪp/ — sounds like **LEED-er-ship** | /ˈliːdɜrˌʃɪp/ — sounds like **LEED-er-ship**
 1447. v. leading | /ˈliːdɪŋ/ — sounds like **LEED-ing** | /ˈliːdɪŋ/ — sounds like **LEED-ing**
-1448. n. leads | /ˈliːdz/ — sounds like **LEEDZ** | /ˈliːdz/ — sounds like **LEEDZ**
+1448. v. leads | /ˈliːdz/ — sounds like **LEEDZ** | /ˈliːdz/ — sounds like **LEEDZ**
 1449. n. learners | /ˈlɜːnəz/ — sounds like **LURN-erz** | /ˈlɜrnɜrz/ — sounds like **LURN-erz**
 1450. n. leather | /ˈleðə/ — sounds like **LETH-er** | /ˈleðɜr/ — sounds like **LETH-er**
 1451. n. lecturer | /ˈlektʃəə/ — sounds like **LEK-cher-er** | /ˈlektʃɜrɜr/ — sounds like **LEK-cher-er**
@@ -1502,7 +1502,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 1497. n. magazine | /ˈmæɡəˌziːn/ — sounds like **MAG-uh-zeen** | /ˈmæɡəˌziːn/ — sounds like **MAG-uh-zeen**
 1498. n. magazines | /ˈmæɡəˌziːnz/ — sounds like **MAG-uh-zeenz** | /ˈmæɡəˌziːnz/ — sounds like **MAG-uh-zeenz**
 1499. adv. mainly | /ˈmeɪnliː/ — sounds like **MAYN-lee** | /ˈmeɪnliː/ — sounds like **MAYN-lee**
-1500. n. makes | /ˈmeɪks/ — sounds like **MAYKS** | /ˈmeɪks/ — sounds like **MAYKS**
+1500. v. makes | /ˈmeɪks/ — sounds like **MAYKS** | /ˈmeɪks/ — sounds like **MAYKS**
 1501. n. male | /ˈmeɪl/ — sounds like **MAYL** | /ˈmeɪl/ — sounds like **MAYL**
 1502. n. males | /ˈmeɪlz/ — sounds like **MAYLZ** | /ˈmeɪlz/ — sounds like **MAYLZ**
 1503. n. management | /ˈmænədʒmənt/ — sounds like **MAN-uhj-muhnt** | /ˈmænədʒmənt/ — sounds like **MAN-uhj-muhnt**
@@ -1624,7 +1624,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 1619. v. nursing | /ˈnɜːsɪŋ/ — sounds like **NURS-ing** | /ˈnɜrsɪŋ/ — sounds like **NURS-ing**
 1620. adj. nutritional | /nuːˈtrɪʃənəl/ — sounds like **noo-TRISH-uh-nuhl** | /nuːˈtrɪʃənəl/ — sounds like **noo-TRISH-uh-nuhl**
 1621. adj. nutritious | /nuːˈtrɪʃəs/ — sounds like **noo-TRISH-uhs** | /nuːˈtrɪʃəs/ — sounds like **noo-TRISH-uhs**
-1622. n. obey | /əʊˈbeɪ/ — sounds like **oh-BAY** | /oʊˈbeɪ/ — sounds like **oh-BAY**
+1622. v. obey | /əʊˈbeɪ/ — sounds like **oh-BAY** | /oʊˈbeɪ/ — sounds like **oh-BAY**
 1623. n. objection | /əbˈdʒekʃən/ — sounds like **uhb-JEK-shuhn** | /əbˈdʒekʃən/ — sounds like **uhb-JEK-shuhn**
 1624. n. objectives | /əbˈdʒektɪvz/ — sounds like **uhb-JEK-tivz** | /əbˈdʒektɪvz/ — sounds like **uhb-JEK-tivz**
 1625. n. obligatory | /əˈblɪɡəˌtɔːriː/ — sounds like **uh-BLIG-uh-taw-ree** | /əˈblɪɡəˌtɔːriː/ — sounds like **uh-BLIG-uh-taw-ree**
@@ -1637,7 +1637,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 1632. v. occurred | /əˈkɜːd/ — sounds like **uh-KURD** | /əˈkɜrd/ — sounds like **uh-KURD**
 1633. n. occurrence | /əˈkɜːəns/ — sounds like **uh-KUR-uhns** | /əˈkɜrəns/ — sounds like **uh-KUR-uhns**
 1634. v. occurring | /əˈkɜːɪŋ/ — sounds like **uh-KUR-ing** | /əˈkɜrɪŋ/ — sounds like **uh-KUR-ing**
-1635. n. Ocean | /ˈəʊʃən/ — sounds like **OHSH-uhn** | /ˈoʊʃən/ — sounds like **OHSH-uhn**
+1635. n. ocean | /ˈəʊʃən/ — sounds like **OHSH-uhn** | /ˈoʊʃən/ — sounds like **OHSH-uhn**
 1636. v. offered | /ˈɔːfəd/ — sounds like **AWF-erd** | /ˈɔːfɜrd/ — sounds like **AWF-erd**
 1637. v. offering | /ˈɔːfəɪŋ/ — sounds like **AWF-er-ing** | /ˈɔːfɜrɪŋ/ — sounds like **AWF-er-ing**
 1638. n. oil | /ˈɔɪl/ — sounds like **OYL** | /ˈɔɪl/ — sounds like **OYL**
@@ -1653,7 +1653,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 1648. n. opposite | /ˈɑːpəzət/ — sounds like **AHP-uh-zuht** | /ˈɑːpəzət/ — sounds like **AHP-uh-zuht**
 1649. n. opposition | /ˌɑːpəˈzɪʃən/ — sounds like **ah-puh-ZISH-uhn** | /ˌɑːpəˈzɪʃən/ — sounds like **ah-puh-ZISH-uhn**
 1650. n. orchestra | /ˈɔːkəstrə/ — sounds like **AWR-kuh-struh** | /ˈɔːrkəstrə/ — sounds like **AWR-kuh-struh**
-1651. n. order | /ˈɔːdə/ — sounds like **AWR-der** | /ˈɔːrdɜr/ — sounds like **AWR-der**
+1651. v. order | /ˈɔːdə/ — sounds like **AWR-duh** | /ˈɔːrdɜr/ — sounds like **AWR-dur**
 1652. n. organ | /ˈɔːɡən/ — sounds like **AWR-guhn** | /ˈɔːrɡən/ — sounds like **AWR-guhn**
 1653. adj. organic | /ɔːˈɡænɪk/ — sounds like **awr-GAN-ik** | /ɔːrˈɡænɪk/ — sounds like **awr-GAN-ik**
 1654. adj. organizational | /ˌɔːɡənəˈzeɪʃənəl/ — sounds like **awr-guh-nuh-ZAYSH-uh-nuhl** | /ˌɔːrɡənəˈzeɪʃənəl/ — sounds like **awr-guh-nuh-ZAYSH-uh-nuhl**
@@ -1710,7 +1710,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 1705. v. performing | /pəˈfɔːmɪŋ/ — sounds like **per-FAWR-ming** | /pɜrˈfɔːrmɪŋ/ — sounds like **per-FAWR-ming**
 1706. n. periodicals | /ˌpɪriːˈɑːdɪkəlz/ — sounds like **pi-ree-AHD-i-kuhlz** | /ˌpɪriːˈɑːdɪkəlz/ — sounds like **pi-ree-AHD-i-kuhlz**
 1707. n. periods | /ˈpɪriːədz/ — sounds like **PIR-ee-uhdz** | /ˈpɪriːədz/ — sounds like **PIR-ee-uhdz**
-1708. n. permits | /pəˈmɪts/ — sounds like **per-MITS** | /pɜrˈmɪts/ — sounds like **per-MITS**
+1708. n. permits | /ˈpɜːmɪts/ — sounds like **PUR-mits** | /ˈpɜrmɪts/ — sounds like **PUR-mits**
 1709. v. permitted | /pəˈmɪtɪd/ — sounds like **per-MIT-id** | /pɜrˈmɪtɪd/ — sounds like **per-MIT-id**
 1710. n. personality | /ˌpɜːsəˈnælɪtiː/ — sounds like **pur-suh-NAL-i-tee** | /ˌpɜrsəˈnælɪtiː/ — sounds like **pur-suh-NAL-i-tee**
 1711. n. personnel | /ˌpɜːsəˈnel/ — sounds like **pur-suh-NEL** | /ˌpɜrsəˈnel/ — sounds like **pur-suh-NEL**
@@ -2055,7 +2055,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 2050. n. shower | /ˈʃaʊə/ — sounds like **SHOW-er** | /ˈʃaʊɜr/ — sounds like **SHOW-er**
 2051. v. showing | /ˈʃəʊɪŋ/ — sounds like **SHOH-ing** | /ˈʃoʊɪŋ/ — sounds like **SHOH-ing**
 2052. n. shown | /ˈʃəʊn/ — sounds like **SHOHN** | /ˈʃoʊn/ — sounds like **SHOHN**
-2053. n. shows | /ˈʃəʊz/ — sounds like **SHOHZ** | /ˈʃoʊz/ — sounds like **SHOHZ**
+2053. v. shows | /ˈʃəʊz/ — sounds like **SHOHZ** | /ˈʃoʊz/ — sounds like **SHOHZ**
 2054. n. sick | /ˈsɪk/ — sounds like **SIK** | /ˈsɪk/ — sounds like **SIK**
 2055. n. sides | /ˈsaɪdz/ — sounds like **SYDZ** | /ˈsaɪdz/ — sounds like **SYDZ**
 2056. n. sign | /ˈsaɪn/ — sounds like **SYN** | /ˈsaɪn/ — sounds like **SYN**
@@ -2350,7 +2350,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 2345. v. upgraded | /əpˈɡreɪdɪd/ — sounds like **uhp-GRAYD-id** | /əpˈɡreɪdɪd/ — sounds like **uhp-GRAYD-id**
 2346. v. upgrading | /əpˈɡreɪdɪŋ/ — sounds like **uhp-GRAYD-ing** | /əpˈɡreɪdɪŋ/ — sounds like **uhp-GRAYD-ing**
 2347. n. upload | /ˈʌˌpləʊd/ — sounds like **UH-plohd** | /ˈʌˌploʊd/ — sounds like **UH-plohd**
-2348. n. uses | /ˈjuːsəz/ — sounds like **YOOS-uhz** | /ˈjuːsəz/ — sounds like **YOOS-uhz**
+2348. v. uses | /ˈjuːzɪz/ — sounds like **YOO-ziz** | /ˈjuːzɪz/ — sounds like **YOO-ziz**
 2349. adv. usually | /ˈjuːʒəwəliː/ — sounds like **YOOZH-uh-wuh-lee** | /ˈjuːʒəwəliː/ — sounds like **YOOZH-uh-wuh-lee**
 2350. v. utilizing | /ˈjuːtəˌlaɪzɪŋ/ — sounds like **YOOT-uh-ly-zing** | /ˈjuːtəˌlaɪzɪŋ/ — sounds like **YOOT-uh-ly-zing**
 2351. n. utmost | /ˈʌtˌməʊst/ — sounds like **UHT-mohst** | /ˈʌtˌmoʊst/ — sounds like **UHT-mohst**
@@ -2430,7 +2430,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 2425. n. worth | /ˈwɜːθ/ — sounds like **WURTH** | /ˈwɜrθ/ — sounds like **WURTH**
 2426. v. wrecked | /ˈrekt/ — sounds like **REKT** | /ˈrekt/ — sounds like **REKT**
 2427. n. writings | /ˈraɪtɪŋz/ — sounds like **RYT-ingz** | /ˈraɪtɪŋz/ — sounds like **RYT-ingz**
-2428. n. wrote | /ˈrəʊt/ — sounds like **ROHT** | /ˈroʊt/ — sounds like **ROHT**
+2428. v. wrote | /ˈrəʊt/ — sounds like **ROHT** | /ˈroʊt/ — sounds like **ROHT**
 2429. n. yesterday | /ˈjestəˌdeɪ/ — sounds like **YE-ster-day** | /ˈjestɜrˌdeɪ/ — sounds like **YE-ster-day**
 2430. n. yesterday's | /ˈjestəˌdeɪz/ — sounds like **YE-ster-dayz** | /ˈjestɜrˌdeɪz/ — sounds like **YE-ster-dayz**
 2431. v. yielded | /ˈjiːldɪd/ — sounds like **YEEL-did** | /ˈjiːldɪd/ — sounds like **YEEL-did**
@@ -2441,7 +2441,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 2436. n. archeologist's | /ˌɑːkiˈɒlədʒɪsts/ — sounds like **ar-kee-OL-uh-jists** | /ˌɑːrkiˈɑːlədʒɪsts/ — sounds like **ar-kee-AH-luh-jists**
 2437. n. archeologists | /ˌɑːkiˈɒlədʒɪsts/ — sounds like **ar-kee-OL-uh-jists** | /ˌɑːrkiˈɑːlədʒɪsts/ — sounds like **ar-kee-AH-luh-jists**
 2438. n. astrophysicists | /ˌæstrəʊˈfɪzɪsɪsts/ — sounds like **as-troh-FIZ-i-sists** | /ˌæstroʊˈfɪzɪsɪsts/ — sounds like **as-troh-FIZ-i-sists**
-2439. n. Bunsen | /ˈbʌnsən/ — sounds like **BUN-sun** | /ˈbʌnsən/ — sounds like **BUN-sun**
+2439. n. Bunsen | /ˈbʌnsən/ — sounds like **BUHN-suhn** | /ˈbʌnsən/ — sounds like **BUHN-suhn**
 2440. n. bursaries | /ˈbɜːsəriz/ — sounds like **BUR-suh-reez** | /ˈbɜːrsəriz/ — sounds like **BUR-suh-reez**
 2441. v. camouflages | /ˈkæməflɑːʒɪz/ — sounds like **KAM-uh-flah-ziz** | /ˈkæməflɑːʒɪz/ — sounds like **KAM-uh-flah-ziz**
 2442. n. coursework | /ˈkɔːswɜːk/ — sounds like **KORS-wurk** | /ˈkɔːrswɜːrk/ — sounds like **KORS-wurk**
@@ -2455,7 +2455,7 @@ Personal Repeat Sentence and Write From Dictation word list.
 2450. n. individualities | /ˌɪndɪˌvɪdʒuˈælətiz/ — sounds like **in-di-vij-oo-AL-uh-teez** | /ˌɪndɪˌvɪdʒuˈælətiz/ — sounds like **in-di-vij-oo-AL-uh-teez**
 2451. n. maths | /mæθs/ — sounds like **MATHS** | /mæθs/ — sounds like **MATHS**
 2452. adj. mid-term | /ˈmɪdtɜːm/ — sounds like **MID-turm** | /ˈmɪdtɜːrm/ — sounds like **MID-turm**
-2453. adj. off-campus | /ˌɒf ˈkæmpəs/ — sounds like **of KAM-pus** | /ˌɑːf ˈkæmpəs/ — sounds like **ahf KAM-pus**
+2453. adj. off-campus | /ˌɒf ˈkæmpəs/ — sounds like **off KAM-pus** | /ˌɑːf ˈkæmpəs/ — sounds like **ahf KAM-pus**
 2454. adj. on-going | /ˌɒn ˈɡəʊɪŋ/ — sounds like **on GOH-ing** | /ˌɑːn ˈɡoʊɪŋ/ — sounds like **ahn GOH-ing**
 2455. n. over-consumption | /ˌəʊvə kənˈsʌmpʃən/ — sounds like **oh-vuh kun-SUMP-shun** | /ˌoʊvər kənˈsʌmpʃən/ — sounds like **oh-ver kun-SUMP-shun**
 2456. adv. partway | /ˈpɑːtweɪ/ — sounds like **PAHT-way** | /ˈpɑːrtweɪ/ — sounds like **PART-way**
@@ -2466,5 +2466,5 @@ Personal Repeat Sentence and Write From Dictation word list.
 2461. n. refectory | /rɪˈfektəri/ — sounds like **ri-FEK-tuh-ree** | /rɪˈfektəri/ — sounds like **ri-FEK-tuh-ree**
 2462. adj. referential | /ˌrefəˈrenʃəl/ — sounds like **ref-uh-REN-shul** | /ˌrefəˈrenʃəl/ — sounds like **ref-uh-REN-shul**
 2463. n. respondence | /rɪˈspɒndəns/ — sounds like **ri-SPON-duns** | /rɪˈspɑːndəns/ — sounds like **ri-SPAHN-duns**
-2464. n. sunray | /ˈsʌnreɪ/ — sounds like **SUN-ray** | /ˈsʌnreɪ/ — sounds like **SUN-ray**
+2464. n. sunray | /ˈsʌnreɪ/ — sounds like **SUHN-ray** | /ˈsʌnreɪ/ — sounds like **SUHN-ray**
 2465. adj. world-renowned | /ˈwɜːld rɪˈnaʊnd/ — sounds like **WURLD ri-NOWND** | /ˈwɜːrld rɪˈnaʊnd/ — sounds like **WURLD ri-NOWND**

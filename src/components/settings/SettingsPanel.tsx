@@ -348,7 +348,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
               {/* TTS Rate */}
               <Flex direction="column" gap="2">
                 <Flex justify="between">
-                  <Text size="3" weight="medium">Speech Rate</Text>
+                  <Text size="3" weight="medium">Playback speed</Text>
                   <Badge>{ttsRate.toFixed(1)}x</Badge>
                 </Flex>
                 <Slider

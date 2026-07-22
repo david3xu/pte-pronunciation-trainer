@@ -44,6 +44,7 @@ import type {
  * learningModes so the store never hardcodes a book id (single source of truth).
  */
 const DEFAULT_VOCABULARY_BOOK = appConfig.getDefaultVocabularyBookId();
+const DEFAULT_TTS_RATE = 1.2;
 
 /**
  * Identity fields checked in priority order when deriving a completion id.
@@ -122,7 +123,6 @@ export const useAppStore = create<AppState>()(
             isPaused: false,
             currentIndex: 0,
             repeatMode: true, // Default ON - loops back to start after reaching end
-            playbackSpeed: 1.2,
             volume: 1.0,
             setPlaying: (isPlaying: boolean) => set((state) => ({ audio: { ...state.audio, isPlaying } })),
             setAutoPlay: (autoPlayEnabled: boolean) => set((state) => ({ audio: { ...state.audio, autoPlayEnabled } })),
@@ -133,7 +133,6 @@ export const useAppStore = create<AppState>()(
             navigateNext: () => set((state) => ({ audio: { ...state.audio, currentIndex: state.audio.currentIndex + 1 } })),
             navigatePrev: () => set((state) => ({ audio: { ...state.audio, currentIndex: Math.max(0, state.audio.currentIndex - 1) } })),
             toggleRepeat: () => set((state) => ({ audio: { ...state.audio, repeatMode: !state.audio.repeatMode } })),
-            setSpeed: (speed) => set((state) => ({ audio: { ...state.audio, playbackSpeed: speed } })),
             setVolume: (volume) => set((state) => ({ audio: { ...state.audio, volume: Math.max(0, Math.min(1, volume)) } })),
             setCurrentIndex: (index) => set((state) => ({ audio: { ...state.audio, currentIndex: Math.max(0, index) } })),
           },
@@ -189,7 +188,7 @@ export const useAppStore = create<AppState>()(
             backgroundAudioMode: true, // Real-audio playback is the default for all practice modes
             autoSwitchBooks: false, // Default OFF - stays on current book
             showPhonetic: true,
-            ttsRate: 1.2,
+            ttsRate: DEFAULT_TTS_RATE,
             ttsVoice: null, // Browser Default as default
             vocabRepeatCount: 1, // Default: speak each word once
             difficultyFilter: 'all',
@@ -214,7 +213,7 @@ export const useAppStore = create<AppState>()(
                 backgroundAudioMode: true, // Real-audio playback is the default
                 autoSwitchBooks: false, // Default OFF
                 showPhonetic: true,
-                ttsRate: 1.2,
+                ttsRate: DEFAULT_TTS_RATE,
                 ttsVoice: null, // Browser Default as default
                 vocabRepeatCount: 1, // Default: speak each word once
                 difficultyFilter: 'all',
@@ -653,7 +652,6 @@ export const useAppStore = create<AppState>()(
               // Persist user preferences, not runtime state
               autoPlayEnabled: state.audio.autoPlayEnabled,
               repeatMode: state.audio.repeatMode,
-              playbackSpeed: state.audio.playbackSpeed,
               volume: state.audio.volume,
             },
             progress: {
@@ -667,6 +665,7 @@ export const useAppStore = create<AppState>()(
           // Properly merge persisted state with initial state (preserves methods)
           merge: (persistedState, currentState) => {
             const persisted = persistedState as Partial<AppState>;
+            const persistedAudio = persisted.audio;
             return {
               ...currentState,
               settings: {
@@ -675,7 +674,9 @@ export const useAppStore = create<AppState>()(
               },
               audio: {
                 ...currentState.audio, // Keep all methods and runtime state
-                ...(persisted.audio || {}), // Override with persisted preferences
+                autoPlayEnabled: persistedAudio?.autoPlayEnabled ?? currentState.audio.autoPlayEnabled,
+                repeatMode: persistedAudio?.repeatMode ?? currentState.audio.repeatMode,
+                volume: persistedAudio?.volume ?? currentState.audio.volume,
               },
               progress: {
                 ...currentState.progress,

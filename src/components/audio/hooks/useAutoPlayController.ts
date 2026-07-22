@@ -67,6 +67,17 @@ export const useAutoPlayController = () => {
     return unsubscribe;
   }, []);
 
+  // Keep the real-audio element's playback rate in sync with the single
+  // authoritative speed setting.
+  useEffect(() => {
+    backgroundAudioService.setRate(useAppStore.getState().settings.ttsRate);
+    const unsubscribe = useAppStore.subscribe(
+      (state) => state.settings.ttsRate,
+      (ttsRate) => backgroundAudioService.setRate(ttsRate)
+    );
+    return unsubscribe;
+  }, []);
+
   /**
    * Play the current text as real audio and resolve when the audio element's
    * `ended` event fires, so autoplay progression is driven by playback ending

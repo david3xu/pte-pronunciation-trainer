@@ -153,13 +153,9 @@ export class TTSEngine {
       (state: AppState) => state.settings.ttsRate,
       (ttsRate: number, prevTtsRate: number) => {
         if (ttsRate !== prevTtsRate) {
-          this.speechRate = ttsRate; // Original line
+          this.speechRate = ttsRate;
+          backgroundAudioService.setRate(ttsRate);
           console.log(`[TTSEngine] Speed changed to ${this.speechRate}`);
-          // If speaking, restart with new rate (assuming pause/resume methods exist or are intended)
-          // if (this.isSpeaking) {
-          //   this.pause(); // Placeholder for actual pause logic
-          //   this.resume(); // Placeholder for actual resume logic
-          // }
         }
       }
     );

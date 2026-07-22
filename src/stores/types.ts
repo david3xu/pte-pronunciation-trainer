@@ -28,7 +28,6 @@ export interface AudioState {
 
   // Audio settings
   repeatMode: boolean;
-  playbackSpeed: number;
   volume: number;
 
   // Actions
@@ -41,7 +40,6 @@ export interface AudioState {
   navigateNext: () => void;
   navigatePrev: () => void;
   toggleRepeat: () => void;
-  setSpeed: (speed: number) => void;
   setVolume: (volume: number) => void;
   setCurrentIndex: (index: number) => void;
 }

@@ -159,9 +159,8 @@ export class AppConfig {
 
       // ===== API ENDPOINTS =====
       api: {
-        baseUrl: typeof process !== 'undefined' && process.env?.['VITE_API_BASE_URL']
-          ? process.env['VITE_API_BASE_URL']
-          : '',
+        // Optional override; empty string means same-origin (relative) API paths.
+        baseUrl: import.meta.env['VITE_API_BASE_URL'] || '',
         endpoints: {
           // AI endpoints
           aiRecommendations: '/api/ai-recommendations',
@@ -237,17 +236,14 @@ export class AppConfig {
         defaultEngine: 'neural',
         defaultLanguage: 'en-AU',
 
-        // AWS settings
-        awsRegion: typeof process !== 'undefined' && process.env?.['AWS_REGION']
-          ? process.env['AWS_REGION']
-          : 'us-east-1'
+        // AWS settings. The authoritative region is server-side (api/); this
+        // client-side value is informational and only overridable via a VITE var.
+        awsRegion: import.meta.env['VITE_AWS_REGION'] || 'us-east-1'
       },
 
-      // ===== BACKGROUND AUDIO MODE =====
-      // Real-audio (Polly) playback used when settings.backgroundAudioMode is on,
-      // so practice keeps playing while the screen is locked or the app is
-      // backgrounded. Voice/engine/language are sourced from the `voice` block
-      // above (single source of truth).
+      // ===== REAL AUDIO PLAYBACK =====
+      // Real-audio (Polly) playback used by all practice modes. Voice, engine,
+      // and language are sourced from the `voice` block above.
       backgroundAudio: {
         outputFormat: 'mp3', // Most broadly supported container for <audio> on mobile
         mediaSessionArtist: 'PTE Pronunciation Trainer'
@@ -465,10 +461,8 @@ export class AppConfig {
         // Production
         chunkSizeWarningLimit: 1000, // KB
 
-        // Environment
-        nodeEnv: typeof process !== 'undefined' && process.env?.['NODE_ENV']
-          ? process.env['NODE_ENV']
-          : 'development',
+        // Environment (Vite mode: 'development' | 'production' | 'test')
+        nodeEnv: import.meta.env.MODE,
 
         // Legacy build files (vanilla JS - archived)
         cssFiles: [
@@ -535,6 +529,32 @@ export class AppConfig {
    */
   merge(newConfig: Partial<AppConfigType>): void {
     this.config = this.deepMerge(this.config, newConfig);
+  }
+
+  /**
+   * Enabled vocabulary book ids, in declaration order, sourced from
+   * `data.learningModes` (the single source of truth for available books).
+   */
+  getVocabularyBookIds(): string[] {
+    const learningModes = this.get<Array<{ id: string; category: string }>>('data.learningModes') || [];
+    return learningModes
+      .filter((mode) => mode.category === 'vocabulary')
+      .map((mode) => mode.id);
+  }
+
+  /**
+   * The default vocabulary book: the first enabled vocabulary book in
+   * `data.learningModes`. Fails loudly when none is enabled, so a missing
+   * configuration surfaces instead of silently falling back to a magic string.
+   */
+  getDefaultVocabularyBookId(): string {
+    const [firstVocabularyBookId] = this.getVocabularyBookIds();
+    if (!firstVocabularyBookId) {
+      throw new Error(
+        'AppConfig: no vocabulary books are enabled in data.learningModes; cannot determine a default vocabulary book'
+      );
+    }
+    return firstVocabularyBookId;
   }
 
   /**

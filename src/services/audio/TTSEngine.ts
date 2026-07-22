@@ -6,21 +6,19 @@
  * - Updates tts store (isSpeaking, currentWord, etc.) instead of emitting events
  * - Direct state updates for speaking start/complete/stop
  *
- * Type-safe TTS engine with Web Speech API integration
+ * Type-safe TTS engine with real-audio playback
  * Features:
  * - Zustand-driven initialization (settings from store)
- * - iOS background audio support
- * - HTML5 Audio fallback
- * - Voice selection and caching
+ * - Shared HTMLAudioElement playback
+ * - Premium generated audio support
  * - Repeat modes for learning
  * - Text cleaning and normalization
  */
 
 import { useAppStore, type AppState } from '../../stores';
 import { appConfig } from '../../config/AppConfig';
-import { BrowserSpeechService } from './browserSpeechService';
+import { backgroundAudioService } from './backgroundAudioService';
 import { IOSBackgroundAudio } from './iosBackgroundAudio';
-import { selectVoice } from './voiceSelector';
 
 /**
  * Vocabulary word structure
@@ -62,16 +60,15 @@ export class TTSEngine {
 
   private synth: SpeechSynthesis;
   private isSpeaking: boolean = false;
-  private cachedVoice: SpeechSynthesisVoice | null = null;
   // Track current utterance for proper cancellation (used for state tracking)
   // @ts-ignore - Tracked for future cancellation improvements
   private currentUtterance: SpeechSynthesisUtterance | null = null;
   // Debug: Track last spoken text to detect overlaps
   private lastSpokenText: string = '';
   private speakCallCount: number = 0;
+  private settleRealAudio: ((error?: Error) => void) | null = null;
 
   private audioContextInitialized: boolean = false;
-  private browserSpeechService: BrowserSpeechService;
   private iosBackgroundAudio: IOSBackgroundAudio;
 
   constructor() {
@@ -89,33 +86,9 @@ export class TTSEngine {
       speak: () => {},
     } as unknown as SpeechSynthesis);
     this.iosBackgroundAudio = new IOSBackgroundAudio();
-    this.browserSpeechService = new BrowserSpeechService({
-      synth: this.synth,
-      getConfig: () => this.getConfig(),
-      getSpeechRate: () => this.getCurrentSpeechRate(),
-      getCachedVoice: () => this.cachedVoice,
-      setCachedVoice: (voice) => {
-        this.cachedVoice = voice;
-      },
-      selectVoice,
-      showFallback: (text) => this.showTTSFallback(text),
-      stopAutoPlay: () => useAppStore.getState().audio.stopAutoPlay(),
-      setCurrentUtterance: (utterance) => {
-        this.currentUtterance = utterance;
-      },
-      markSpeechSettled: () => {
-        this.isSpeaking = false;
-        this.currentUtterance = null;
-        this.lastSpokenText = '';
-        useAppStore.getState().tts.stopSpeaking();
-      },
-    });
 
     // Subscribe to Zustand store changes (replaces EventBus listeners)
     this._setupStoreSubscriptions();
-
-    // CRITICAL FIX: Preload voices immediately to prevent first-click delays
-    this._preloadVoices();
 
     // We'll initialize AudioContext on first user interaction
   }
@@ -139,34 +112,10 @@ export class TTSEngine {
            'en-GB';
   }
 
-  private getPreferredVoiceName(): string | null {
-    return useAppStore.getState().settings.ttsVoice;
-  }
-
   private getCurrentSpeechRate(): number {
     return this.speechRate ||
       useAppStore.getState().settings.ttsRate ||
       this.getConfig()?.get('tts.rate');
-  }
-
-  /**
-   * Preload voices to avoid first-click delay
-   * Chrome/Edge require waiting for 'voiceschanged' event
-   */
-  private _preloadVoices(): void {
-    // Try immediate load (works on Firefox)
-    const voices = this.synth.getVoices();
-    if (voices.length > 0) {
-      console.log(`[TTSEngine] ✅ ${voices.length} voices preloaded immediately`);
-      return;
-    }
-
-    // Chrome/Edge pattern: wait for voiceschanged event
-    console.log('[TTSEngine] ⏳ Waiting for voices to load...');
-    this.synth.addEventListener('voiceschanged', () => {
-      const loadedVoices = this.synth.getVoices();
-      console.log(`[TTSEngine] ✅ ${loadedVoices.length} voices loaded after event`);
-    }, { once: true });
   }
 
   /**
@@ -427,10 +376,12 @@ export class TTSEngine {
     }
 
     // CRITICAL FIX: Check if already speaking or pending, cancel it
-    const isActivelySpeaking = this.synth.speaking || this.synth.pending;
+    const isActivelySpeaking = this.isSpeaking || this.synth.speaking || this.synth.pending;
     if (isActivelySpeaking) {
       console.warn(`[TTSEngine #${callId}] ⚠️ Already speaking or pending, cancelling previous speech...`);
       this.synth.cancel();
+      backgroundAudioService.stop();
+      this.settleRealAudio?.();
       this.isSpeaking = false;
       this.currentUtterance = null;
       this.lastSpokenText = '';
@@ -452,43 +403,46 @@ export class TTSEngine {
     this.lastSpokenText = text;
     console.log(`[TTSEngine #${callId}] ✅ Setting isSpeaking=true, starting speech...`);
 
-    const app = (window as any).app;
-    const isIOS = app && app.isMobileDevice && /iPad|iPhone|iPod/.test(navigator.userAgent);
-    if (isIOS && this.shouldUseHTML5Audio()) {
-      console.log('[TTSEngine] Using HTML5 Audio fallback for iOS');
-      return this.speakWithHTML5Audio(text, language, customRate);
-    }
-
-    return this.browserSpeechService.speak({
-      text,
-      language,
-      customRate,
-      preferredVoiceName: this.getPreferredVoiceName(),
-    });
+    return this.speakWithRealAudio(text, language, customRate);
   }
 
-  /**
-   * Check if should use HTML5 Audio fallback
-   */
-  shouldUseHTML5Audio(): boolean {
-    return document.hidden ||
-      document.visibilityState === 'hidden' ||
-      !('speechSynthesis' in window) ||
-      this.synth.speaking === false;
-  }
+  private speakWithRealAudio(text: string, language: string, customRate: number | null): Promise<void> {
+    return new Promise<void>((resolve, reject) => {
+      let settled = false;
+      const settle = (error?: Error) => {
+        if (settled) return;
+        settled = true;
+        this.settleRealAudio = null;
+        this.isSpeaking = false;
+        this.currentUtterance = null;
+        this.lastSpokenText = '';
+        useAppStore.getState().tts.stopSpeaking();
+        if (error) {
+          reject(error);
+          return;
+        }
+        resolve();
+      };
 
-  /**
-   * Speak with HTML5 Audio (iOS background fallback)
-   */
-  speakWithHTML5Audio(text: string, lang: string | null = null, customRate: number | null = null): Promise<void> {
-    const language = lang || this.getDefaultLanguage();
-    return this.browserSpeechService.speakWithBackgroundAudio({
-      text,
-      language,
-      customRate,
-      preferredVoiceName: this.getPreferredVoiceName(),
-    }, () => {
-      this.iosBackgroundAudio.start();
+      this.settleRealAudio = settle;
+
+      backgroundAudioService.setHandlers({
+        onEnded: () => settle(),
+        onError: (error) => settle(error),
+      });
+
+      // Prime synchronously when speak() is triggered by a user gesture. This
+      // lets the later post-fetch audio.play() use the same blessed element.
+      backgroundAudioService.primeForUserGesture();
+      backgroundAudioService
+        .playText(text, {
+          languageCode: language,
+          rate: customRate ?? this.getCurrentSpeechRate(),
+          volume: useAppStore.getState().audio.volume,
+        })
+        .catch((error) => {
+          settle(error instanceof Error ? error : new Error('Real audio playback failed'));
+        });
     });
   }
 
@@ -504,7 +458,7 @@ export class TTSEngine {
       progressTracker.updateStatus(`🔊 Please read aloud: "${text}"`);
 
       setTimeout(() => {
-        progressTracker.updateStatus('Text-to-speech not available in this browser');
+        progressTracker.updateStatus('Premium audio is not available right now');
       }, this.getConfig()?.get('delays.notificationTimeout'));
     } else {
       // Fallback: log to console if no progress tracker available
@@ -512,7 +466,7 @@ export class TTSEngine {
     }
 
     store.ui.showNotification(
-      'Browser text-to-speech did not start. Check Chrome site sound settings, or choose another voice in Settings.',
+      'Audio playback did not start. Check the premium TTS service and browser site sound settings.',
       'warning'
     );
   }
@@ -622,6 +576,8 @@ export class TTSEngine {
       console.log(`[TTSEngine @${timestamp}] 🧹 Calling synth.cancel()...`);
       this.synth.cancel();
     }
+    backgroundAudioService.stop();
+    this.settleRealAudio?.();
 
     this.isSpeaking = false;
     this.lastSpokenText = '';
@@ -662,10 +618,10 @@ export class TTSEngine {
   }
 
   /**
-   * Reset voice cache (force re-selection)
+   * Legacy settings hook kept for compatibility with persisted voice settings.
    */
   resetVoiceCache(): void {
-    this.cachedVoice = null;
+    // Real-audio playback uses the configured premium voice, not browser voices.
   }
 }
 

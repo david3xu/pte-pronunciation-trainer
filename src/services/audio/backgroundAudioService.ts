@@ -1,11 +1,9 @@
 /**
  * BackgroundAudioService
  *
- * Best-effort background audio for mobile. Browser speechSynthesis is paused
- * and throttled by mobile browsers when the screen locks or the tab is
- * backgrounded, so this service instead plays REAL audio through a single
- * reusable HTMLAudioElement, which keeps playing in the background where the
- * platform allows it.
+ * Real-audio playback for practice modes. This service plays generated audio
+ * through a single reusable HTMLAudioElement instead of browser speech
+ * synthesis, which is less reliable and can be throttled by browsers.
  *
  * Audio is fetched from the existing premium TTS (AWS Polly) endpoint and
  * played as a Blob URL. Voice, engine, language and output format come from
@@ -37,6 +35,8 @@ export interface PlayTextOptions {
   engine?: 'standard' | 'neural';
   languageCode?: string;
   rate?: number;
+  /** Output volume in the range [0, 1]. Callers pass the store's audio volume. */
+  volume?: number;
 }
 
 interface PremiumTtsResponse {
@@ -54,6 +54,7 @@ export class BackgroundAudioService {
   private objectUrl: string | null = null;
   private currentText: string | null = null;
   private currentRate: number | null = null;
+  private currentVolume: number | null = null;
   private primeGeneration = 0;
   private handlers: BackgroundAudioHandlers = {};
   private fetchController: AbortController | null = null;
@@ -173,6 +174,13 @@ export class BackgroundAudioService {
       audio.playbackRate = this.currentRate;
     }
 
+    if (typeof options.volume === 'number') {
+      this.currentVolume = options.volume;
+    }
+    if (this.currentVolume !== null) {
+      audio.volume = this.currentVolume;
+    }
+
     this.setMediaMetadata(text);
 
     try {
@@ -188,7 +196,7 @@ export class BackgroundAudioService {
     this.setPlaybackState('paused');
   }
 
-  async resume(rate?: number): Promise<void> {
+  async resume(rate?: number, volume?: number): Promise<void> {
     if (!this.audio) return;
     if (typeof rate === 'number') {
       this.currentRate = rate;
@@ -196,8 +204,26 @@ export class BackgroundAudioService {
     if (this.currentRate !== null) {
       this.audio.playbackRate = this.currentRate;
     }
+    if (typeof volume === 'number') {
+      this.currentVolume = volume;
+    }
+    if (this.currentVolume !== null) {
+      this.audio.volume = this.currentVolume;
+    }
     await this.audio.play();
     this.setPlaybackState('playing');
+  }
+
+  /**
+   * Set the output volume for the current and future clips. Applied live to the
+   * loaded element so a store volume change takes effect mid-playback. The
+   * caller (store) is the single source of truth and clamps to [0, 1].
+   */
+  setVolume(volume: number): void {
+    this.currentVolume = volume;
+    if (this.audio) {
+      this.audio.volume = volume;
+    }
   }
 
   stop(): void {
@@ -212,6 +238,7 @@ export class BackgroundAudioService {
     this.releaseObjectUrl();
     this.currentText = null;
     this.setPlaybackState('none');
+    this.handlers.onStop?.();
   }
 
   // ---- internals ----

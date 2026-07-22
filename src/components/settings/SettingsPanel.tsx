@@ -14,6 +14,7 @@ import React, { useEffect, useMemo } from 'react';
 import { appConfig } from '../../config/AppConfig';
 import { useAudioState, useSettings, useVocabulary } from '../../stores';
 import { backgroundAudioService } from '../../services/audio/backgroundAudioService';
+import { ttsEngine } from '../../services/audio/TTSEngine';
 import { loadDataset } from '../../services/dataset/datasetLoader';
 
 interface SettingsPanelProps {
@@ -66,10 +67,13 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
       return;
     }
 
-    // Stop any currently playing TTS before switching books
-    const { ttsEngine } = await import('../../services/audio/TTSEngine');
+    // Stop all in-flight audio first (stopSpeaking cancels speech synthesis and
+    // also stops background audio synchronously), THEN prime the reusable element
+    // last so nothing cancels the priming. Priming stays synchronous inside this
+    // user gesture (no await before it) so the later auto-start play() is allowed
+    // by mobile autoplay policy.
     ttsEngine.stopSpeaking();
-    backgroundAudioService.stop();
+    backgroundAudioService.primeForUserGesture();
 
     updateSetting('vocabularyBook', bookId);
 
@@ -111,10 +115,9 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
       return;
     }
 
-    // Stop any currently playing TTS before switching modes
-    const { ttsEngine } = await import('../../services/audio/TTSEngine');
+    // Stop any in-flight audio before switching modes (stopSpeaking cancels
+    // speech synthesis and stops background audio synchronously).
     ttsEngine.stopSpeaking();
-    backgroundAudioService.stop();
 
     updateSetting('practiceMode', mode);
 
@@ -194,7 +197,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
 
                     // Set default vocabulary book when switching to vocabulary or vocab-typing
                     if ((value === 'vocabulary' || value === 'vocab-typing') && (vocabularyBook.startsWith('di-shadowing') || vocabularyBook.startsWith('practice-'))) {
-                      handleVocabularyBookChange('pte-fib-listening');
+                      handleVocabularyBookChange(appConfig.getDefaultVocabularyBookId());
                     }
                   }}
                 >
@@ -404,35 +407,23 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                 >
                   <Select.Trigger />
                   <Select.Content>
-                    <Select.Item value="default">Browser Default</Select.Item>
+                    <Select.Item value="default">Default Premium Voice</Select.Item>
                   </Select.Content>
                 </Select.Root>
                 <Text size="1" color="gray">
-                  Browser voice is used for all playback.
+                  Real audio is used for all playback.
                 </Text>
               </Flex>
 
-              {/* Background Audio Mode */}
+              {/* Real Audio Playback */}
               <Flex direction="column" gap="2">
-                <Flex justify="between" align="center">
-                  <Flex direction="column" gap="1">
-                    <Text size="3">Background Audio Mode</Text>
-                    <Text size="1" color="gray">
-                      Play real audio (premium voice) so practice keeps going when the screen locks or the app is in the background. Still needs one tap on Play to start.
-                    </Text>
-                  </Flex>
-                  <Switch
-                    checked={settings.backgroundAudioMode}
-                    onCheckedChange={(checked) =>
-                      updateSetting('backgroundAudioMode', checked)
-                    }
-                  />
-                </Flex>
-                {settings.backgroundAudioMode && (
-                  <Text size="1" color="blue">
-                    ℹ️ Uses premium audio. If premium audio is unavailable, you will see a clear error instead of silent playback.
-                  </Text>
-                )}
+                <Text size="3">Real Audio Playback</Text>
+                <Text size="1" color="gray">
+                  All practice modes use premium generated audio instead of browser speech synthesis. Tap Play once to allow playback.
+                </Text>
+                <Text size="1" color="blue">
+                  ℹ️ If premium audio is unavailable, you will see a clear error instead of silent playback.
+                </Text>
               </Flex>
             </Flex>
           </Tabs.Content>

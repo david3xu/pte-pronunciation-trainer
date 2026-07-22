@@ -353,7 +353,11 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                 </Flex>
                 <Slider
                   value={[ttsRate]}
-                  onValueChange={([rate]) => updateSetting('ttsRate', rate ?? 1.0)}
+                  onValueChange={([rate]) => {
+                    const nextRate = rate ?? 1.0;
+                    updateSetting('ttsRate', nextRate);
+                    backgroundAudioService.setRate(nextRate);
+                  }}
                   min={0.5}
                   max={2.0}
                   step={0.1}

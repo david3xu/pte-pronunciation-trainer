@@ -1,6 +1,6 @@
 # Copilot Instructions - PTE Pronunciation Trainer
 
-This is a React 19 + TypeScript 5 PTE pronunciation trainer. The app is mostly client-side: generated local JSON powers vocabulary and practice content, while Supabase handles auth/progress/settings, Google Gemini powers AI tutor/recommendations, browser speech and AWS Polly provide TTS, and PostHog records analytics.
+This is a React 19 + TypeScript 5 PTE pronunciation trainer. The app is mostly client-side: generated local JSON powers vocabulary and practice content, while Supabase handles auth/progress/settings, Google Gemini powers AI tutor/recommendations, AWS Polly provides real-audio TTS, and PostHog records analytics.
 
 ## Commands
 
@@ -59,7 +59,7 @@ npx playwright test -g "tts"                        # Single E2E test by title
 - Practice task fields vary: RS/WFD use `sentence`; ASQ uses `question` and `answer`; difficulty/category often live under `metadata`.
 - Add or rename datasets in every relevant surface: source markdown under `data/source/pte/`, `PIPELINE_CONFIG.registry` in `scripts/pte-data-pipeline.js`, `data.paths.byMode` and `data.learningModes` in `src/config/AppConfig.ts`, and selector/UI logic in `src/components/settings/SettingsPanel.tsx`.
 - Use Radix UI primitives with Tailwind utilities for new UI. Legacy shared styles remain in `src/css/` for compatibility.
-- Browser voices load asynchronously. Do not assume `speechSynthesis.getVoices()` is populated synchronously; follow the `voiceschanged` preload pattern in `src/services/audio/TTSEngine.ts`.
+- Practice playback uses generated real audio through the shared audio service; keep server-only AWS credentials out of client code.
 - Client-exposed environment variables must use the `VITE_` prefix. Keep server-only secrets out of client code; `GEMINI_API_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, and AWS credentials remain server-side.
 - The TypeScript config is strict (`noImplicitAny`, `strictNullChecks`, `noUncheckedIndexedAccess`, `noUnusedLocals`, etc.). Avoid broad casts and keep changes type-safe.
 - `docs/CONTRIBUTING.md` asks for conventional commit prefixes (`feat:`, `fix:`, `docs:`, `refactor:`) when creating commits.

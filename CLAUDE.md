@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project summary
 
-PTE Pronunciation Trainer is a React 19 + TypeScript 5 app for pronunciation practice. The app is mostly client-side: generated local JSON powers vocabulary and practice content, while Supabase handles auth/progress/settings, Google Gemini powers AI tutor features, AWS Polly and browser speech provide TTS, and PostHog records analytics.
+PTE Pronunciation Trainer is a React 19 + TypeScript 5 app for pronunciation practice. The app is mostly client-side: generated local JSON powers vocabulary and practice content, while Supabase handles auth/progress/settings, Google Gemini powers AI tutor features, AWS Polly provides real-audio TTS, and PostHog records analytics.
 
 ## Common commands
 
@@ -72,7 +72,7 @@ pnpm run vercel-build     # data:pte + vite build + copy processed data to dist/
 
 ### Service boundaries
 
-- `src/services/audio/` owns browser speech, AWS Polly, background audio, voice selection, and autoplay behavior.
+- `src/services/audio/` owns AWS Polly-backed real audio, media-session/background playback, voice settings, and autoplay behavior.
 - `src/services/ai/` owns recommendation/intervention/tutor logic.
 - `src/services/supabase/` owns auth, sync, and cloud persistence.
 - `src/services/session/` owns practice session lifecycle and tracking.
@@ -91,7 +91,7 @@ pnpm run vercel-build     # data:pte + vite build + copy processed data to dist/
 - New UI should usually go in the nearest existing feature folder under `src/components/` and use Radix UI primitives with Tailwind utilities.
 - Long-lived components that fetch data should use `AbortController` and cancel on unmount, matching `AppContent`.
 - Stop active speech before navigation, dataset changes, and mode switches by following the existing TTS/audio service patterns.
-- Browser voices load asynchronously; do not assume `speechSynthesis.getVoices()` is ready synchronously. Follow the `voiceschanged` preload pattern in `src/services/audio/TTSEngine.ts`.
+- Practice playback uses generated real audio through the shared audio service; keep server-only AWS credentials out of client code.
 - Tests use Vitest with `happy-dom` and `src/test/setup.ts`. Playwright E2E uses `playwright.config.ts`, which starts a dev server and regenerates data before running.
 
 ## When adding or changing datasets

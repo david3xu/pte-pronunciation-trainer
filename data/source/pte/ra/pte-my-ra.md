@@ -1764,3 +1764,119 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1757. v. make | /meɪk/ — sounds like **MAYK** | /meɪk/ — sounds like **MAYK**
 1758. adj. scenic | /ˈsiːnɪk/ — sounds like **SEE-nik** | /ˈsiːnɪk/ — sounds like **SEE-nik**
 1759. v. heats up | /hiːts ʌp/ — sounds like **HEETS UP** | /hiːts ʌp/ — sounds like **HEETS UP**
+1760. adj. enjoyable | /ɪnˈdʒɔɪəbəl/ — sounds like **in-JOY-uh-bul** | /ɪnˈdʒɔɪəbəl/ — sounds like **in-JOY-uh-bul**
+1761. n. travel | /ˈtrævəl/ — sounds like **TRAV-ul** | /ˈtrævəl/ — sounds like **TRAV-ul**
+1762. n. guides | /ɡaɪdz/ — sounds like **GYDZ** | /ɡaɪdz/ — sounds like **GYDZ**
+1763. n. October | /ɒkˈtəʊbə/ — sounds like **ok-TOH-buh** | /ɑːkˈtoʊbər/ — sounds like **ahk-TOH-bur**
+1764. n. peak | /piːk/ — sounds like **PEEK** | /piːk/ — sounds like **PEEK**
+1765. n. season | /ˈsiːzən/ — sounds like **SEE-zun** | /ˈsiːzən/ — sounds like **SEE-zun**
+1766. n. regions | /ˈriːdʒənz/ — sounds like **REE-junz** | /ˈriːdʒənz/ — sounds like **REE-junz**
+1767. adj. scented | /ˈsentɪd/ — sounds like **SEN-tid** | /ˈsentɪd/ — sounds like **SEN-tid**
+1768. adj. labor-intensive | /ˈleɪbə ɪnˈtensɪv/ — sounds like **LAY-buh in-TEN-siv** | /ˈleɪbər ɪnˈtensɪv/ — sounds like **LAY-bur in-TEN-siv**
+1769. n. life cycle | /laɪf ˈsaɪkəl/ — sounds like **LYF SY-kul** | /laɪf ˈsaɪkəl/ — sounds like **LYF SY-kul**
+1770. v. mean | /miːn/ — sounds like **MEEN** | /miːn/ — sounds like **MEEN**
+1771. adv. perhaps | /pəˈhæps/ — sounds like **puh-HAPS** | /pərˈhæps/ — sounds like **pur-HAPS**
+1772. v. looking | /ˈlʊkɪŋ/ — sounds like **LUUK-ing** | /ˈlʊkɪŋ/ — sounds like **LUUK-ing**
+1773. n. furniture | /ˈfɜːnɪtʃə/ — sounds like **FUR-ni-chuh** | /ˈfɜːrnɪtʃər/ — sounds like **FUR-ni-chur**
+1774. adv. purely | /ˈpjʊəli/ — sounds like **PYOOR-lee** | /ˈpjʊrli/ — sounds like **PYOOR-lee**
+1775. adj. functional | /ˈfʌŋkʃənəl/ — sounds like **FUNK-shuh-nul** | /ˈfʌŋkʃənəl/ — sounds like **FUNK-shuh-nul**
+1776. n. aesthetics | /iːsˈθetɪks/ — sounds like **ees-THET-iks** | /esˈθetɪks/ — sounds like **es-THET-iks**
+1777. pron. others | /ˈʌðəz/ — sounds like **UTH-uhz** | /ˈʌðərz/ — sounds like **UTH-urz**
+1778. adj. civilized | /ˈsɪvəlaɪzd/ — sounds like **SIV-uh-lyzd** | /ˈsɪvəlaɪzd/ — sounds like **SIV-uh-lyzd**
+1779. n. concern | /kənˈsɜːn/ — sounds like **kun-SURN** | /kənˈsɜːrn/ — sounds like **kun-SURN**
+1780. v. combined | /kəmˈbaɪnd/ — sounds like **kum-BYND** | /kəmˈbaɪnd/ — sounds like **kum-BYND**
+1781. n. border | /ˈbɔːdə/ — sounds like **BOR-duh** | /ˈbɔːrdər/ — sounds like **BOR-dur**
+1782. n. Mexico | /ˈmeksɪkəʊ/ — sounds like **MEK-si-koh** | /ˈmeksɪkoʊ/ — sounds like **MEK-si-koh**
+1783. adj. fraught | /frɔːt/ — sounds like **FRAWT** | /frɔːt/ — sounds like **FRAWT**
+1784. phr. a mix of | /ə mɪks əv/ — sounds like **uh MIKS uv** | /ə mɪks əv/ — sounds like **uh MIKS uv**
+1785. adj. urban | /ˈɜːbən/ — sounds like **UR-bun** | /ˈɜːrbən/ — sounds like **UR-bun**
+1786. n. desert | /ˈdezət/ — sounds like **DEZ-ut** | /ˈdezərt/ — sounds like **DEZ-urt**
+1787. n. terrain | /təˈreɪn/ — sounds like **tuh-RAYN** | /təˈreɪn/ — sounds like **tuh-RAYN**
+1788. v. spans | /spænz/ — sounds like **SPANZ** | /spænz/ — sounds like **SPANZ**
+1789. adj. uninhabited | /ˌʌnɪnˈhæbɪtɪd/ — sounds like **un-in-HAB-i-tid** | /ˌʌnɪnˈhæbɪtɪd/ — sounds like **un-in-HAB-i-tid**
+1790. n. drug | /drʌɡ/ — sounds like **DRUG** | /drʌɡ/ — sounds like **DRUG**
+1791. n. trafficking | /ˈtræfɪkɪŋ/ — sounds like **TRAF-i-king** | /ˈtræfɪkɪŋ/ — sounds like **TRAF-i-king**
+1792. adj. illegal | /ɪˈliːɡəl/ — sounds like **i-LEE-gul** | /ɪˈliːɡəl/ — sounds like **i-LEE-gul**
+1793. n. crossings | /ˈkrɒsɪŋz/ — sounds like **KROS-ingz** | /ˈkrɔːsɪŋz/ — sounds like **KRAW-singz**
+1794. phr. take place | /teɪk pleɪs/ — sounds like **TAYK PLAYS** | /teɪk pleɪs/ — sounds like **TAYK PLAYS**
+1795. n. crime | /kraɪm/ — sounds like **KRYM** | /kraɪm/ — sounds like **KRYM**
+1796. adj. prevalent | /ˈprevələnt/ — sounds like **PREV-uh-lunt** | /ˈprevələnt/ — sounds like **PREV-uh-lunt**
+1797. n. Texas | /ˈteksəs/ — sounds like **TEK-sus** | /ˈteksəs/ — sounds like **TEK-sus**
+1798. n. San Diego | /sæn diˈeɪɡəʊ/ — sounds like **san dee-AY-goh** | /sæn diˈeɪɡoʊ/ — sounds like **san dee-AY-goh**
+1799. n. California | /ˌkælɪˈfɔːniə/ — sounds like **kal-i-FOR-nee-uh** | /ˌkælɪˈfɔːrniə/ — sounds like **kal-i-FOR-nee-uh**
+1800. n. El Paso | /el ˈpæsəʊ/ — sounds like **el PA-soh** | /el ˈpæsoʊ/ — sounds like **el PA-soh**
+1801. n. Reiss | /raɪs/ — sounds like **RYCE** | /raɪs/ — sounds like **RYCE**
+1802. v. took | /tʊk/ — sounds like **TUUK** | /tʊk/ — sounds like **TUUK**
+1803. v. settling | /ˈsetlɪŋ/ — sounds like **SET-ling** | /ˈsetlɪŋ/ — sounds like **SET-ling**
+1804. n. argument | /ˈɑːɡjumənt/ — sounds like **AH-gyoo-munt** | /ˈɑːrɡjəmənt/ — sounds like **AR-gyuh-munt**
+1805. n. meta-analysis | /ˌmetəəˈnæləsɪs/ — sounds like **met-uh-uh-NAL-uh-sis** | /ˌmetəəˈnæləsɪs/ — sounds like **met-uh-uh-NAL-uh-sis**
+1806. conj. whether | /ˈweðə/ — sounds like **WETH-uh** | /ˈweðər/ — sounds like **WETH-ur**
+1807. adv. really | /ˈrɪəli/ — sounds like **REE-uh-lee** | /ˈriːəli/ — sounds like **REE-uh-lee**
+1808. adj. better | /ˈbetə/ — sounds like **BET-uh** | /ˈbetər/ — sounds like **BET-ur**
+1809. adj. CD-quality | /ˌsiːˈdiː ˈkwɒləti/ — sounds like **see-DEE KWOL-uh-tee** | /ˌsiːˈdiː ˈkwɑːləti/ — sounds like **see-DEE KWAH-luh-tee**
+1810. num. thirteen | /ˌθɜːˈtiːn/ — sounds like **thur-TEEN** | /ˌθɜːrˈtiːn/ — sounds like **thur-TEEN**
+1811. n. tests | /tests/ — sounds like **TESTS** | /tests/ — sounds like **TESTS**
+1812. n. purposes | /ˈpɜːpəsɪz/ — sounds like **PUR-puh-siz** | /ˈpɜːrpəsɪz/ — sounds like **PUR-puh-siz**
+1813. adj. divided | /dɪˈvaɪdɪd/ — sounds like **di-VY-did** | /dɪˈvaɪdɪd/ — sounds like **di-VY-did**
+1814. adj. non-material | /nɒn məˈtɪəriəl/ — sounds like **non muh-TEER-ee-ul** | /nɑːn məˈtɪriəl/ — sounds like **nahn muh-TEER-ee-ul**
+1815. n. aim | /eɪm/ — sounds like **AYM** | /eɪm/ — sounds like **AYM**
+1816. v. show | /ʃəʊ/ — sounds like **SHOH** | /ʃoʊ/ — sounds like **SHOH**
+1817. v. affect | /əˈfekt/ — sounds like **uh-FEKT** | /əˈfekt/ — sounds like **uh-FEKT**
+1818. pron. each other | /iːtʃ ˈʌðə/ — sounds like **EECH UTH-uh** | /iːtʃ ˈʌðər/ — sounds like **EECH UTH-ur**
+1819. n. developments | /dɪˈveləpmənts/ — sounds like **di-VEL-up-munts** | /dɪˈveləpmənts/ — sounds like **di-VEL-up-munts**
+1820. n. customs | /ˈkʌstəmz/ — sounds like **KUS-tumz** | /ˈkʌstəmz/ — sounds like **KUS-tumz**
+1821. n. beliefs | /bɪˈliːfs/ — sounds like **bi-LEEFS** | /bɪˈliːfs/ — sounds like **bi-LEEFS**
+1822. n. genetics | /dʒəˈnetɪks/ — sounds like **juh-NET-iks** | /dʒəˈnetɪks/ — sounds like **juh-NET-iks**
+1823. n. example | /ɪɡˈzɑːmpəl/ — sounds like **ig-ZAHM-pul** | /ɪɡˈzæmpəl/ — sounds like **ig-ZAM-pul**
+1824. abbr. IT | /aɪ tiː/ — sounds like **EYE-TEE** | /aɪ tiː/ — sounds like **EYE-TEE**
+1825. n. commerce | /ˈkɒmɜːs/ — sounds like **KOM-urs** | /ˈkɑːmɜːrs/ — sounds like **KAHM-urs**
+1826. adj. handheld | /ˈhændheld/ — sounds like **HAND-held** | /ˈhændheld/ — sounds like **HAND-held**
+1827. n. device | /dɪˈvaɪs/ — sounds like **di-VYSE** | /dɪˈvaɪs/ — sounds like **di-VYSE**
+1828. adj. digital | /ˈdɪdʒɪtəl/ — sounds like **DIJ-i-tul** | /ˈdɪdʒɪtəl/ — sounds like **DIJ-i-tul**
+1829. n. assistant | /əˈsɪstənt/ — sounds like **uh-SIS-tunt** | /əˈsɪstənt/ — sounds like **uh-SIS-tunt**
+1830. adv. soon | /suːn/ — sounds like **SOON** | /suːn/ — sounds like **SOON**
+1831. n. phones | /fəʊnz/ — sounds like **FOHNZ** | /foʊnz/ — sounds like **FOHNZ**
+1832. adj. location-based | /ləʊˈkeɪʃən beɪst/ — sounds like **loh-KAY-shun BAYST** | /loʊˈkeɪʃən beɪst/ — sounds like **loh-KAY-shun BAYST**
+1833. n. host | /həʊst/ — sounds like **HOHST** | /hoʊst/ — sounds like **HOHST**
+1834. n. restaurants | /ˈrestrɒnts/ — sounds like **RES-tronts** | /ˈrestrɑːnts/ — sounds like **RES-trahnts**
+1835. n. car | /kɑː/ — sounds like **KAH** | /kɑːr/ — sounds like **KAR**
+1836. adj. rental | /ˈrentəl/ — sounds like **REN-tul** | /ˈrentəl/ — sounds like **REN-tul**
+1837. phr. and so on | /ənd səʊ ɒn/ — sounds like **un soh ON** | /ənd soʊ ɑːn/ — sounds like **un soh AHN**
+1838. n. zone | /zəʊn/ — sounds like **ZOHN** | /zoʊn/ — sounds like **ZOHN**
+1839. n. messages | /ˈmesɪdʒɪz/ — sounds like **MES-i-jiz** | /ˈmesɪdʒɪz/ — sounds like **MES-i-jiz**
+1840. v. flashed | /flæʃt/ — sounds like **FLASHT** | /flæʃt/ — sounds like **FLASHT**
+1841. v. proved | /pruːvd/ — sounds like **PROOVD** | /pruːvd/ — sounds like **PROOVD**
+1842. det. several | /ˈsevərəl/ — sounds like **SEV-uh-rul** | /ˈsevərəl/ — sounds like **SEV-uh-rul**
+1843. n. smoking | /ˈsməʊkɪŋ/ — sounds like **SMOH-king** | /ˈsmoʊkɪŋ/ — sounds like **SMOH-king**
+1844. n. ban | /bæn/ — sounds like **BAN** | /bæn/ — sounds like **BAN**
+1845. n. policy | /ˈpɒləsi/ — sounds like **POL-uh-see** | /ˈpɑːləsi/ — sounds like **PAH-luh-see**
+1846. v. includes | /ɪnˈkluːdz/ — sounds like **in-KLOODZ** | /ɪnˈkluːdz/ — sounds like **in-KLOODZ**
+1847. adj. criminal | /ˈkrɪmɪnəl/ — sounds like **KRIM-i-nul** | /ˈkrɪmɪnəl/ — sounds like **KRIM-i-nul**
+1848. n. laws | /lɔːz/ — sounds like **LAWZ** | /lɔːz/ — sounds like **LAWZ**
+1849. v. prohibit | /prəˈhɪbɪt/ — sounds like **pruh-HIB-it** | /proʊˈhɪbɪt/ — sounds like **proh-HIB-it**
+1850. n. workplaces | /ˈwɜːkpleɪsɪz/ — sounds like **WURK-play-siz** | /ˈwɜːrkpleɪsɪz/ — sounds like **WURK-play-siz**
+1851. adj. varying | /ˈveəriɪŋ/ — sounds like **VAIR-ee-ing** | /ˈveriɪŋ/ — sounds like **VAIR-ee-ing**
+1852. n. definitions | /ˌdefɪˈnɪʃənz/ — sounds like **def-i-NISH-unz** | /ˌdefɪˈnɪʃənz/ — sounds like **def-i-NISH-unz**
+1853. v. employed | /ɪmˈplɔɪd/ — sounds like **im-PLOYD** | /ɪmˈplɔɪd/ — sounds like **im-PLOYD**
+1854. n. legislation | /ˌledʒɪsˈleɪʃən/ — sounds like **lej-is-LAY-shun** | /ˌledʒɪsˈleɪʃən/ — sounds like **lej-is-LAY-shun**
+1855. adj. strictest | /ˈstrɪktɪst/ — sounds like **STRIK-tist** | /ˈstrɪktɪst/ — sounds like **STRIK-tist**
+1856. v. define | /dɪˈfaɪn/ — sounds like **di-FYN** | /dɪˈfaɪn/ — sounds like **di-FYN**
+1857. n. inhalation | /ˌɪnhəˈleɪʃən/ — sounds like **in-huh-LAY-shun** | /ˌɪnhəˈleɪʃən/ — sounds like **in-huh-LAY-shun**
+1858. n. substance | /ˈsʌbstəns/ — sounds like **SUB-stunss** | /ˈsʌbstəns/ — sounds like **SUB-stunss**
+1859. adj. loosest | /ˈluːsɪst/ — sounds like **LOO-sist** | /ˈluːsɪst/ — sounds like **LOO-sist**
+1860. v. possessing | /pəˈzesɪŋ/ — sounds like **puh-ZES-ing** | /pəˈzesɪŋ/ — sounds like **puh-ZES-ing**
+1861. adj. lit | /lɪt/ — sounds like **LIT** | /lɪt/ — sounds like **LIT**
+1862. adj. legal | /ˈliːɡəl/ — sounds like **LEE-gul** | /ˈliːɡəl/ — sounds like **LEE-gul**
+1863. adj. discursive | /dɪˈskɜːsɪv/ — sounds like **di-SKUR-siv** | /dɪˈskɜːrsɪv/ — sounds like **di-SKUR-siv**
+1864. n. humanities | /hjuːˈmænɪtiz/ — sounds like **hyoo-MAN-i-teez** | /hjuːˈmænətiz/ — sounds like **hyoo-MAN-i-teez**
+1865. n. subjects | /ˈsʌbdʒɪkts/ — sounds like **SUB-jikts** | /ˈsʌbdʒɪkts/ — sounds like **SUB-jikts**
+1866. n. precision | /prɪˈsɪʒən/ — sounds like **pri-SIZH-un** | /prɪˈsɪʒən/ — sounds like **pri-SIZH-un**
+1867. n. variety | /vəˈraɪəti/ — sounds like **vuh-RY-uh-tee** | /vəˈraɪəti/ — sounds like **vuh-RY-uh-tee**
+1868. n. sentence | /ˈsentəns/ — sounds like **SEN-tunss** | /ˈsentəns/ — sounds like **SEN-tunss**
+1869. adv. too | /tuː/ — sounds like **TOO** | /tuː/ — sounds like **TOO**
+1870. adj. complex | /ˈkɒmpleks/ — sounds like **KOM-pleks** | /ˈkɑːmpleks/ — sounds like **KAHM-pleks**
+1871. adj. extensive | /ɪkˈstensɪv/ — sounds like **ik-STEN-siv** | /ɪkˈstensɪv/ — sounds like **ik-STEN-siv**
+1872. n. adjectives | /ˈædʒɪktɪvz/ — sounds like **AJ-ik-tivz** | /ˈædʒɪktɪvz/ — sounds like **AJ-ik-tivz**
+1873. n. adverbs | /ˈædvɜːbz/ — sounds like **AD-vurbz** | /ˈædvɜːrbz/ — sounds like **AD-vurbz**
+1874. n. consistency | /kənˈsɪstənsi/ — sounds like **kun-SIS-tun-see** | /kənˈsɪstənsi/ — sounds like **kun-SIS-tun-see**
+1875. adj. required | /rɪˈkwaɪəd/ — sounds like **ri-KWYUD** | /rɪˈkwaɪərd/ — sounds like **ri-KWYERD**

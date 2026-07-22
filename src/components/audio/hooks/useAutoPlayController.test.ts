@@ -2,10 +2,12 @@ import { act, renderHook } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 // Mock the audio services so the Play gesture can be tested without real audio
-// or network. Only the priming call is asserted here.
+// or network. The direct real-audio start must happen inside the Play gesture
+// for mobile/PWA browser policy.
 vi.mock('../../../services/audio/backgroundAudioService', () => ({
   backgroundAudioService: {
     primeForUserGesture: vi.fn(),
+    playTextFromUserGesture: vi.fn().mockResolvedValue(undefined),
     playText: vi.fn().mockResolvedValue(undefined),
     resume: vi.fn().mockResolvedValue(undefined),
     pause: vi.fn(),
@@ -15,6 +17,7 @@ vi.mock('../../../services/audio/backgroundAudioService', () => ({
     setVolume: vi.fn(),
     canResume: vi.fn(() => false),
     getLoadedText: vi.fn(() => null),
+    isPlayingLoadedText: vi.fn(() => false),
   },
 }));
 
@@ -36,7 +39,7 @@ const seedCurrentItem = () => {
   );
 };
 
-describe('useAutoPlayController - Play gesture priming', () => {
+describe('useAutoPlayController - Play gesture audio start', () => {
   beforeEach(() => {
     vi.clearAllMocks();
     useAppStore.getState().audio.stopAutoPlay();
@@ -47,7 +50,7 @@ describe('useAutoPlayController - Play gesture priming', () => {
     useAppStore.getState().audio.stopAutoPlay();
   });
 
-  it('primes the audio element on Play', () => {
+  it('starts the current real-audio clip directly inside the Play gesture', () => {
     useAppStore.getState().settings.updateSetting('backgroundAudioMode', true);
 
     const { result } = renderHook(() => useAutoPlayController());
@@ -55,10 +58,14 @@ describe('useAutoPlayController - Play gesture priming', () => {
       result.current.handlePlay();
     });
 
-    expect(backgroundAudioService.primeForUserGesture).toHaveBeenCalledTimes(1);
+    expect(backgroundAudioService.playTextFromUserGesture).toHaveBeenCalledWith(
+      'hello',
+      expect.objectContaining({ rate: expect.any(Number), volume: expect.any(Number) })
+    );
+    expect(backgroundAudioService.primeForUserGesture).not.toHaveBeenCalled();
   });
 
-  it('still primes on Play when the legacy Background Audio Mode setting is off', () => {
+  it('still starts real audio directly when the legacy Background Audio Mode setting is off', () => {
     useAppStore.getState().settings.updateSetting('backgroundAudioMode', false);
 
     const { result } = renderHook(() => useAutoPlayController());
@@ -66,7 +73,10 @@ describe('useAutoPlayController - Play gesture priming', () => {
       result.current.handlePlay();
     });
 
-    expect(backgroundAudioService.primeForUserGesture).toHaveBeenCalledTimes(1);
+    expect(backgroundAudioService.playTextFromUserGesture).toHaveBeenCalledWith(
+      'hello',
+      expect.objectContaining({ rate: expect.any(Number), volume: expect.any(Number) })
+    );
   });
 });
 

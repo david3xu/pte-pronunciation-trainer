@@ -99,6 +99,9 @@ export const useAutoPlayController = () => {
       // and paused; otherwise fetch and play the item from the start. Only
       // playText refetches, so pause/resume of the same item does not restart it.
       // The configured playback rate and volume are applied to both paths.
+      if (backgroundAudioService.isPlayingLoadedText(text)) {
+        return;
+      }
       if (backgroundAudioService.canResume() && backgroundAudioService.getLoadedText() === text) {
         backgroundAudioService.resume(rate, volume).catch((error) => reject(error));
       } else {
@@ -347,8 +350,18 @@ export const useAutoPlayController = () => {
     }
 
     // Prime the audio element synchronously within this user gesture so the
-    // post-fetch real audio play() is allowed by browser autoplay policy.
-    backgroundAudioService.primeForUserGesture();
+    // real MP3 source is allowed by mobile/PWA autoplay policy.
+    const textToSpeak = getItemText(currentItem as LearningItem);
+    if (textToSpeak) {
+      void backgroundAudioService.playTextFromUserGesture(cleanText(textToSpeak), {
+        rate: settings.ttsRate,
+        volume: useAppStore.getState().audio.volume,
+      }).catch((error) => {
+        console.error('[useAutoPlayController] Play gesture audio start failed:', error);
+      });
+    } else {
+      backgroundAudioService.primeForUserGesture();
+    }
 
     audio.startAutoPlay();
   };

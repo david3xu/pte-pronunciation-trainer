@@ -177,7 +177,7 @@ const findAudioEvent = async (
   return events.find(predicate);
 };
 
-test('clicking vocabulary audio uses real premium TTS at the default 1.0x speed', async ({ page }) => {
+test('clicking vocabulary audio uses real premium TTS at the default 0.7x speed', async ({ page }) => {
   const { requests } = await setupRealAudioMocks(page);
   await page.goto('/');
 
@@ -203,7 +203,7 @@ test('clicking vocabulary audio uses real premium TTS at the default 1.0x speed'
 
   expect(playEvent).toMatchObject({
     type: 'play',
-    playbackRate: 1.0,
+    playbackRate: 0.7,
     volume: 1,
   });
 
@@ -240,7 +240,7 @@ test('autoplay Play starts the real MP3 URL from the tap and advances to the nex
 
   expect(directPlayEvent).toMatchObject({
     type: 'play',
-    playbackRate: 1.0,
+    playbackRate: 0.7,
   });
 
   await expect(audioControls.getByText(/Item 2/i)).toBeVisible({ timeout: 6_000 });
@@ -257,9 +257,9 @@ test('playback speed slider changes the real-audio rate before and during playba
   await expect(audioControls).toBeVisible();
 
   const speedSlider = audioControls.getByRole('slider').first();
-  await expect(speedSlider).toHaveAttribute('aria-valuenow', '1');
+  await expect(speedSlider).toHaveAttribute('aria-valuenow', '0.7');
   await speedSlider.focus();
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 8; i++) {
     await page.keyboard.press('ArrowRight');
   }
   await expect(speedSlider).toHaveAttribute('aria-valuenow', '1.5');

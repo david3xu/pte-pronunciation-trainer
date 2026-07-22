@@ -366,7 +366,7 @@ export class BrowserSpeechService {
 
   private getNormalRate(): number {
     const configuredRate = this.options.getConfig()?.get('tts.rate');
-    return typeof configuredRate === 'number' ? configuredRate : 1.0;
+    return typeof configuredRate === 'number' ? configuredRate : 0.7;
   }
 
   private applyVoiceAndLanguage(

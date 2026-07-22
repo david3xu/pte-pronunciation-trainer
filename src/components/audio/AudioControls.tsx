@@ -133,7 +133,7 @@ const AudioControls: React.FC = () => {
             <Slider
               value={[settings.ttsRate]}
               onValueChange={([speed]) => {
-                const nextRate = speed ?? 1.0;
+                const nextRate = speed ?? 0.7;
                 settings.updateSetting('ttsRate', nextRate);
                 backgroundAudioService.setRate(nextRate);
               }}

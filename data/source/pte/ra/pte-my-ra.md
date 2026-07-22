@@ -35,7 +35,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 29. n. Shakespeare | /ˈʃeɪkspɪə/ — sounds like **SHAYK-speer** | /ˈʃeɪkspɪr/ — sounds like **SHAYK-speer**
 30. adj. powerful | /ˈpaʊəfəl/ — sounds like **POW-uh-ful** | /ˈpaʊərfəl/ — sounds like **POW-uhr-ful**
 31. v. weaken | /ˈwiːkən/ — sounds like **WEE-kun** | /ˈwiːkən/ — sounds like **WEE-kun**
-32. adj. justifiable | /ˈdʒʌstɪfaɪəbəl/ — sounds like **JUS-ti-fye-uh-bul** | /ˈdʒʌstɪfaɪəbəl/ — sounds like **JUS-ti-fye-uh-bul**
+32. adj. justifiable | /ˈdʒʌstɪfaɪəbəl/ — sounds like **JUHS-ti-fye-uh-buhl** | /ˈdʒʌstɪfaɪəbəl/ — sounds like **JUHS-ti-fye-uh-buhl**
 33. n. effort | /ˈɛfət/ — sounds like **EF-ut** | /ˈɛfɚt/ — sounds like **EF-urt**
 34. v. strengthen | /ˈstreŋθən/ — sounds like **STRENG-thun** | /ˈstreŋθən/ — sounds like **STRENG-thun**
 35. v. convince | /kənˈvɪns/ — sounds like **kun-VINS** | /kənˈvɪns/ — sounds like **kun-VINS**
@@ -51,13 +51,13 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 45. adj. certain | /ˈsɜːtən/ — sounds like **SUR-tun** | /ˈsɝːtən/ — sounds like **SUR-tun**
 46. n. term | /tɜːm/ — sounds like **TURM** | /tɝːm/ — sounds like **TURM**
 47. n. saltwater | /ˈsɔːltwɔːtə/ — sounds like **SAWLT-waw-tuh** | /ˈsɔːltwɔːtər/ — sounds like **SAWLT-waw-tuhr**
-48. v. cultivate | /ˈkʌltɪveɪt/ — sounds like **KUL-ti-vayt** | /ˈkʌltɪveɪt/ — sounds like **KUL-ti-vayt**
+48. v. cultivate | /ˈkʌltɪveɪt/ — sounds like **KUHL-ti-vayt** | /ˈkʌltɪveɪt/ — sounds like **KUHL-ti-vayt**
 49. n. organism | /ˈɔːɡənɪzəm/ — sounds like **AWR-guh-ni-zum** | /ˈɔːrɡənɪzəm/ — sounds like **AWR-guh-ni-zum**
 50. adj. aquatic | /əˈkwætɪk/ — sounds like **uh-KWAT-ik** | /əˈkwætɪk/ — sounds like **uh-KWAT-ik**
 51. n. farm | /fɑːm/ — sounds like **FAHM** | /fɑːrm/ — sounds like **FARM**
 52. v. know | /nəʊ/ — sounds like **NOH** | /noʊ/ — sounds like **NOH**
 53. n. aquafarming | /ˈækwəˌfɑːmɪŋ/ — sounds like **AK-wuh-fah-ming** | /ˈækwəˌfɑːrmɪŋ/ — sounds like **AK-wuh-far-ming**
-54. n. aquaculture | /ˈækwəkʌltʃə/ — sounds like **AK-wuh-kul-chuh** | /ˈækwəkʌltʃər/ — sounds like **AK-wuh-kul-chuhr**
+54. n. aquaculture | /ˈækwəkʌltʃə/ — sounds like **AK-wuh-kuhl-chuh** | /ˈækwəkʌltʃər/ — sounds like **AK-wuh-kuhl-chuhr**
 55. n. Michael | /ˈmaɪkəl/ — sounds like **MY-kul** | /ˈmaɪkəl/ — sounds like **MY-kul**
 56. v. console | /kənˈsəʊl/ — sounds like **kun-SOHL** | /kənˈsoʊl/ — sounds like **kun-SOHL**
 57. n. tourist | /ˈtʊərɪst/ — sounds like **TOOR-ist** | /ˈtʊrɪst/ — sounds like **TOOR-ist**
@@ -85,7 +85,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 79. n. Victoria | /vɪkˈtɔːriə/ — sounds like **vik-TOR-ee-uh** | /vɪkˈtɔːriə/ — sounds like **vik-TOR-ee-uh**
 80. n. station | /ˈsteɪʃən/ — sounds like **STAY-shun** | /ˈsteɪʃən/ — sounds like **STAY-shun**
 81. n. dioxide | /daɪˈɒksaɪd/ — sounds like **dy-OK-syd** | /daɪˈɑːksaɪd/ — sounds like **dy-AHK-syd**
-82. n. country | /ˈkʌntri/ — sounds like **KUN-tree** | /ˈkʌntri/ — sounds like **KUN-tree**
+82. n. country | /ˈkʌntri/ — sounds like **KUHN-tree** | /ˈkʌntri/ — sounds like **KUHN-tree**
 83. adj. temperamental | /ˌtempərəˈmentəl/ — sounds like **tem-puh-ruh-MEN-tul** | /ˌtempərəˈmentəl/ — sounds like **tem-puh-ruh-MEN-tul**
 84. n. propagation | /ˌprɒpəˈɡeɪʃən/ — sounds like **prop-uh-GAY-shun** | /ˌprɑːpəˈɡeɪʃən/ — sounds like **prahp-uh-GAY-shun**
 85. n. palate | /ˈpælət/ — sounds like **PAL-ut** | /ˈpælət/ — sounds like **PAL-ut**
@@ -109,12 +109,12 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 103. n. fuel | /ˈfjuːəl/ — sounds like **FYOO-ul** | /ˈfjuːəl/ — sounds like **FYOO-ul**
 104. n. fossil | /ˈfɒsəl/ — sounds like **FOS-ul** | /ˈfɑːsəl/ — sounds like **FAHS-ul**
 105. n. predator | /ˈpredətə/ — sounds like **PRED-uh-tuh** | /ˈpredətər/ — sounds like **PRED-uh-tuhr**
-106. adj. unemployed | /ˌʌnɪmˈplɔɪd/ — sounds like **un-im-PLOYD** | /ˌʌnɪmˈplɔɪd/ — sounds like **un-im-PLOYD**
+106. adj. unemployed | /ˌʌnɪmˈplɔɪd/ — sounds like **uhn-im-PLOYD** | /ˌʌnɪmˈplɔɪd/ — sounds like **uhn-im-PLOYD**
 107. n. expert | /ˈekspɜːt/ — sounds like **EK-spurt** | /ˈekspɝːt/ — sounds like **EK-spurt**
 108. n. rib | /rɪb/ — sounds like **RIB** | /rɪb/ — sounds like **RIB**
 109. n. tortoise | /ˈtɔːtəs/ — sounds like **TAW-tus** | /ˈtɔːrtəs/ — sounds like **TAWR-tus**
-110. adj. unaware | /ˌʌnəˈweə/ — sounds like **un-uh-WAIR** | /ˌʌnəˈwer/ — sounds like **un-uh-WAIR**
-111. adj. subtle | /ˈsʌtəl/ — sounds like **SUT-ul** | /ˈsʌtəl/ — sounds like **SUT-ul**
+110. adj. unaware | /ˌʌnəˈweə/ — sounds like **uhn-uh-WAIR** | /ˌʌnəˈwer/ — sounds like **uhn-uh-WAIR**
+111. adj. subtle | /ˈsʌtəl/ — sounds like **SUHT-uhl** | /ˈsʌtəl/ — sounds like **SUHT-uhl**
 112. v. elongate | /ˈiːlɒŋɡeɪt/ — sounds like **EE-long-gayt** | /ɪˈlɔːŋɡeɪt/ — sounds like **i-LAWNG-gayt**
 113. v. alter | /ˈɔːltə/ — sounds like **AWL-tuh** | /ˈɔːltər/ — sounds like **AWL-tuhr**
 114. n. evolution | /ˌiːvəˈluːʃən/ — sounds like **ee-vuh-LOO-shun** | /ˌevəˈluːʃən/ — sounds like **ev-uh-LOO-shun**
@@ -182,7 +182,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 176. n. location | /ləʊˈkeɪʃən/ — sounds like **loh-KAY-shun** | /loʊˈkeɪʃən/ — sounds like **loh-KAY-shun**
 177. n. services | /ˈsɜːvɪsɪz/ — sounds like **SUR-vis-iz** | /ˈsɝːvɪsɪz/ — sounds like **SUR-vis-iz**
 178. n. providers | /prəˈvaɪdəz/ — sounds like **pruh-VYE-duhz** | /prəˈvaɪdərz/ — sounds like **pruh-VYE-duhrz**
-179. v. tie up | /taɪ ʌp/ — sounds like **TYE UP** | /taɪ ʌp/ — sounds like **TYE UP**
+179. v. tie up | /taɪ ʌp/ — sounds like **TYE UHP** | /taɪ ʌp/ — sounds like **TYE UHP**
 180. adj. other | /ˈʌðə/ — sounds like **UH-thuh** | /ˈʌðər/ — sounds like **UH-thuhr**
 181. n. players | /ˈpleɪəz/ — sounds like **PLAY-uhz** | /ˈpleɪərz/ — sounds like **PLAY-uhrz**
 182. v. stab | /stæb/ — sounds like **STAB** | /stæb/ — sounds like **STAB**
@@ -208,12 +208,12 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 202. n. coastline | /ˈkəʊstlaɪn/ — sounds like **KOHST-line** | /ˈkoʊstlaɪn/ — sounds like **KOHST-line**
 203. pron. their | /ðeə/ — sounds like **THAIR** | /ðer/ — sounds like **THAIR**
 204. adj. intrigued | /ɪnˈtriːɡd/ — sounds like **in-TREEGD** | /ɪnˈtriːɡd/ — sounds like **in-TREEGD**
-205. adj. discovered | /dɪˈskʌvəd/ — sounds like **di-SKUV-ud** | /dɪˈskʌvərd/ — sounds like **di-SKUV-urd**
+205. adj. discovered | /dɪˈskʌvəd/ — sounds like **di-SKUHV-uhd** | /dɪˈskʌvərd/ — sounds like **di-SKUHV-urd**
 206. n. tools | /tuːlz/ — sounds like **TOOLZ** | /tuːlz/ — sounds like **TOOLZ**
 207. n. problem | /ˈprɒbləm/ — sounds like **PROB-lum** | /ˈprɑːbləm/ — sounds like **PRAH-blum**
 208. adj. immense | /ɪˈmens/ — sounds like **i-MENS** | /ɪˈmens/ — sounds like **i-MENS**
 209. n. disparity | /dɪˈspærəti/ — sounds like **di-SPAR-uh-tee** | /dɪˈsperəti/ — sounds like **di-SPAIR-uh-tee**
-210. adj. productive | /prəˈdʌktɪv/ — sounds like **pruh-DUK-tiv** | /prəˈdʌktɪv/ — sounds like **pruh-DUK-tiv**
+210. adj. productive | /prəˈdʌktɪv/ — sounds like **pruh-DUHK-tiv** | /prəˈdʌktɪv/ — sounds like **pruh-DUHK-tiv**
 211. n. ability | /əˈbɪləti/ — sounds like **uh-BIL-uh-tee** | /əˈbɪləti/ — sounds like **uh-BIL-uh-tee**
 212. n. innovations | /ˌɪnəˈveɪʃənz/ — sounds like **in-uh-VAY-shunz** | /ˌɪnəˈveɪʃənz/ — sounds like **in-uh-VAY-shunz**
 213. n. techniques | /tekˈniːks/ — sounds like **tek-NEEKS** | /tekˈniːks/ — sounds like **tek-NEEKS**
@@ -246,36 +246,36 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 240. adj. competitive | /kəmˈpetɪtɪv/ — sounds like **kum-PET-i-tiv** | /kəmˈpetɪtɪv/ — sounds like **kum-PET-i-tiv**
 241. n. city | /ˈsɪti/ — sounds like **SIT-ee** | /ˈsɪti/ — sounds like **SIT-ee**
 242. adj. known | /nəʊn/ — sounds like **NOHN** | /noʊn/ — sounds like **NOHN**
-243. adv. once | /wʌns/ — sounds like **WUNS** | /wʌns/ — sounds like **WUNS**
+243. adv. once | /wʌns/ — sounds like **WUHNS** | /wʌns/ — sounds like **WUHNS**
 244. n. premises | /ˈpremɪsɪz/ — sounds like **PREM-i-siz** | /ˈpremɪsɪz/ — sounds like **PREM-i-siz**
 245. v. improve | /ɪmˈpruːv/ — sounds like **im-PROOV** | /ɪmˈpruːv/ — sounds like **im-PROOV**
 246. adv. uniquely | /juːˈniːkli/ — sounds like **yoo-NEEK-lee** | /juˈnikli/ — sounds like **yoo-NEEK-lee**
 247. n. flavor | /ˈfleɪvə/ — sounds like **FLAY-vuh** | /ˈfleɪvər/ — sounds like **FLAY-vuhr**
 248. n. vanilla | /vəˈnɪlə/ — sounds like **vuh-NIL-uh** | /vəˈnɪlə/ — sounds like **vuh-NIL-uh**
 249. n. chocolate | /ˈtʃɒklət/ — sounds like **CHOK-lut** | /ˈtʃɔːklət/ — sounds like **CHAWK-lut**
-250. n. popularity | /ˌpɒpjʊˈlærəti/ — sounds like **POP-yoo-LAR-uh-tee** | /ˌpɑpjəˈlærəti/ — sounds like **PAH-pjə-LAR-uh-tee**
+250. n. popularity | /ˌpɒpjʊˈlærəti/ — sounds like **POP-yoo-LAR-uh-tee** | /ˌpɑpjəˈlærəti/ — sounds like **PAH-pjuh-LAR-uh-tee**
 251. adj. expensive | /ɪkˈspensɪv/ — sounds like **ik-SPEN-siv** | /ɪkˈspensɪv/ — sounds like **ik-SPEN-siv**
 252. n. spice | /spaɪs/ — sounds like **SPYS** | /spaɪs/ — sounds like **SPYS**
 253. n. saffron | /ˈsæfrən/ — sounds like **SAF-run** | /ˈsæfrən/ — sounds like **SAF-run**
 254. adj. intensive | /ɪnˈtensɪv/ — sounds like **in-TEN-siv** | /ɪnˈtensɪv/ — sounds like **in-TEN-siv**
-255. n. cultivation | /ˌkʌltɪˈveɪʃən/ — sounds like **kul-ti-VAY-shun** | /ˌkʌltɪˈveɪʃən/ — sounds like **kul-ti-VAY-shun**
+255. n. cultivation | /ˌkʌltɪˈveɪʃən/ — sounds like **kuhl-ti-VAY-shuhn** | /ˌkʌltɪˈveɪʃən/ — sounds like **kuhl-ti-VAY-shuhn**
 256. n. methods | /ˈmeθədz/ — sounds like **METH-uhdz** | /ˈmeθədz/ — sounds like **METH-uhdz**
 257. n. plant | /plɑːnt/ — sounds like **PLAANT** | /plænt/ — sounds like **PLANT**
-258. n. production | /prəˈdʌkʃən/ — sounds like **pruh-DUK-shun** | /prəˈdʌkʃən/ — sounds like **pruh-DUK-shun**
+258. n. production | /prəˈdʌkʃən/ — sounds like **pruh-DUHK-shuhn** | /prəˈdʌkʃən/ — sounds like **pruh-DUHK-shuhn**
 259. n. scale | /skeɪl/ — sounds like **SKAYL** | /skeɪl/ — sounds like **SKAYL**
-260. adj. struggling | /ˈstrʌɡəlɪŋ/ — sounds like **STRUG-uh-ling** | /ˈstrʌɡəlɪŋ/ — sounds like **STRUG-uh-ling**
+260. adj. struggling | /ˈstrʌɡəlɪŋ/ — sounds like **STRUHG-uh-ling** | /ˈstrʌɡəlɪŋ/ — sounds like **STRUHG-uh-ling**
 261. adj. increasing | /ɪnˈkriːsɪŋ/ — sounds like **in-KREE-sing** | /ɪnˈkriːsɪŋ/ — sounds like **in-KREE-sing**
 262. v. assess | /əˈses/ — sounds like **uh-SES** | /əˈses/ — sounds like **uh-SES**
-263. v. count up | /kaʊnt ʌp/ — sounds like **KOWNT UP** | /kaʊnt ʌp/ — sounds like **KOWNT UP**
+263. v. count up | /kaʊnt ʌp/ — sounds like **KOWNT UHP** | /kaʊnt ʌp/ — sounds like **KOWNT UHP**
 264. n. power stations | /ˈpaʊə ˈsteɪʃənz/ — sounds like **POW-uh STAY-shunz** | /ˈpaʊər ˈsteɪʃənz/ — sounds like **POW-er STAY-shunz**
 265. n. bush fires | /bʊʃ ˈfaɪəz/ — sounds like **BUSH FY-uhz** | /bʊʃ ˈfaɪərz/ — sounds like **BUSH FY-erz**
 266. adv. presumably | /prɪˈzjuːməbli/ — sounds like **pri-ZYOO-muh-blee** | /prɪˈzuːməbli/ — sounds like **pri-ZOO-muh-blee**
 267. conj. because | /bɪˈkɒz/ — sounds like **bi-KOZ** | /bɪˈkɔːz/ — sounds like **bi-KAWZ**
 268. n. events | /ɪˈvents/ — sounds like **ih-VENTS** | /ɪˈvents/ — sounds like **ih-VENTS**
 269. n. hectares | /ˈhektɑːz/ — sounds like **HEK-tahz** | /ˈhektɑːrz/ — sounds like **HEK-tarz**
-270. n. summer | /ˈsʌmə/ — sounds like **SUM-uh** | /ˈsʌmər/ — sounds like **SUM-er**
+270. n. summer | /ˈsʌmə/ — sounds like **SUHM-uh** | /ˈsʌmər/ — sounds like **SUHM-er**
 271. prep. over | /ˈəʊvə/ — sounds like **OH-vuh** | /ˈoʊvər/ — sounds like **OH-ver**
-272. adj. worrying | /ˈwʌriɪŋ/ — sounds like **WUR-ee-ing** | /ˈwɝːiɪŋ/ — sounds like **WUR-ee-ing**
+272. adj. worrying | /ˈwʌriɪŋ/ — sounds like **WUHR-ee-ing** | /ˈwɝːiɪŋ/ — sounds like **WUHR-ee-ing**
 273. n. jeans | /dʒiːnz/ — sounds like **JEENZ** | /dʒiːnz/ — sounds like **JEENZ**
 274. adj. kind | /kaɪnd/ — sounds like **KYND** | /kaɪnd/ — sounds like **KYND**
 275. adj. western | /ˈwestən/ — sounds like **WES-tun** | /ˈwestərn/ — sounds like **WES-turn**
@@ -283,14 +283,14 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 277. v. participating | /pɑːˈtɪsɪpeɪtɪŋ/ — sounds like **pah-TIS-i-pay-ting** | /pɑːrˈtɪsəpeɪtɪŋ/ — sounds like **par-TIS-uh-pay-ting**
 278. n. development | /dɪˈveləpmənt/ — sounds like **di-VEL-up-munt** | /dɪˈveləpmənt/ — sounds like **di-VEL-up-munt**
 279. n. reformation | /ˌrefəˈmeɪʃən/ — sounds like **ref-uh-MAY-shun** | /ˌrefərˈmeɪʃən/ — sounds like **ref-uhr-MAY-shun**
-280. n. Russians | /ˈrʌʃənz/ — sounds like **RUSH-unz** | /ˈrʌʃənz/ — sounds like **RUSH-unz**
+280. n. Russians | /ˈrʌʃənz/ — sounds like **RUHSH-uhnz** | /ˈrʌʃənz/ — sounds like **RUHSH-uhnz**
 281. v. taking | /ˈteɪkɪŋ/ — sounds like **TAY-king** | /ˈteɪkɪŋ/ — sounds like **TAY-king**
 282. adj. dubious | /ˈdjuːbiəs/ — sounds like **DYOO-bee-uhs** | /ˈduːbiəs/ — sounds like **DOO-bee-uhs**
-283. n. result | /rɪˈzʌlt/ — sounds like **ri-ZULT** | /rɪˈzʌlt/ — sounds like **ri-ZULT**
-284. adj. unusual | /ʌnˈjuːʒuəl/ — sounds like **un-YOO-zhoo-ul** | /ʌnˈjuːʒuəl/ — sounds like **un-YOO-zhoo-ul**
+283. n. result | /rɪˈzʌlt/ — sounds like **ri-ZUHLT** | /rɪˈzʌlt/ — sounds like **ri-ZUHLT**
+284. adj. unusual | /ʌnˈjuːʒuəl/ — sounds like **uhn-YOO-zhoo-uhl** | /ʌnˈjuːʒuəl/ — sounds like **uhn-YOO-zhoo-uhl**
 285. adj. European | /ˌjʊərəˈpiːən/ — sounds like **YOOR-uh-PEE-uhn** | /ˌjʊrəˈpiːən/ — sounds like **YOOR-uh-PEE-uhn**
 286. n. question | /ˈkwestʃən/ — sounds like **KWES-chun** | /ˈkwestʃən/ — sounds like **KWES-chun**
-287. n. hundreds | /ˈhʌndrədz/ — sounds like **HUN-druhdz** | /ˈhʌndrədz/ — sounds like **HUN-druhdz**
+287. n. hundreds | /ˈhʌndrədz/ — sounds like **HUHN-druhdz** | /ˈhʌndrədz/ — sounds like **HUHN-druhdz**
 288. n. millions | /ˈmɪljənz/ — sounds like **MIL-yunz** | /ˈmɪljənz/ — sounds like **MIL-yunz**
 289. adv. every day | /ˈevri deɪ/ — sounds like **EV-ree DAY** | /ˈevri deɪ/ — sounds like **EV-ree DAY**
 290. n. thought | /θɔːt/ — sounds like **THAWT** | /θɔːt/ — sounds like **THAWT**
@@ -299,7 +299,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 293. n. tray | /treɪ/ — sounds like **TRAY** | /treɪ/ — sounds like **TRAY**
 294. n. counter | /ˈkaʊntə/ — sounds like **KOWN-tuh** | /ˈkaʊntər/ — sounds like **KOWN-ter**
 295. v. find | /faɪnd/ — sounds like **FYND** | /faɪnd/ — sounds like **FYND**
-296. v. unwrap | /ʌnˈræp/ — sounds like **un-RAP** | /ʌnˈræp/ — sounds like **un-RAP**
+296. v. unwrap | /ʌnˈræp/ — sounds like **uhn-RAP** | /ʌnˈræp/ — sounds like **uhn-RAP**
 297. n. paper | /ˈpeɪpə/ — sounds like **PAY-puh** | /ˈpeɪpər/ — sounds like **PAY-per**
 298. adj. transitory | /ˈtrænsɪtəri/ — sounds like **TRAN-si-tuh-ree** | /ˈtrænsɪtɔːri/ — sounds like **TRAN-si-taw-ree**
 299. adj. forgotten | /fəˈɡɒtən/ — sounds like **fuh-GOT-un** | /fərˈɡɑːtən/ — sounds like **fur-GAH-tun**
@@ -309,7 +309,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 303. v. asked about | /ɑːskt əˈbaʊt/ — sounds like **AASKT uh-BOWT** | /æskt əˈbaʊt/ — sounds like **ASKT uh-BOWT**
 304. adv. reportedly | /rɪˈpɔːtɪdli/ — sounds like **ri-PAW-tid-lee** | /rɪˈpɔːrtədli/ — sounds like **ri-PORT-ud-lee**
 305. v. replied | /rɪˈplaɪd/ — sounds like **ri-PLYD** | /rɪˈplaɪd/ — sounds like **ri-PLYD**
-306. v. understand | /ˌʌndəˈstænd/ — sounds like **un-duh-STAND** | /ˌʌndərˈstænd/ — sounds like **un-der-STAND**
+306. v. understand | /ˌʌndəˈstænd/ — sounds like **uhn-duh-STAND** | /ˌʌndərˈstænd/ — sounds like **uhn-der-STAND**
 307. n. arch-rivals | /ˌɑːtʃ ˈraɪvəlz/ — sounds like **ARCH RY-vulz** | /ˌɑːrtʃ ˈraɪvəlz/ — sounds like **ARCH RY-vulz**
 308. n. elephant | /ˈelɪfənt/ — sounds like **EL-i-funt** | /ˈelɪfənt/ — sounds like **EL-i-funt**
 309. adj. largest | /ˈlɑːdʒɪst/ — sounds like **LAA-jist** | /ˈlɑːrdʒɪst/ — sounds like **LAR-jist**
@@ -320,8 +320,8 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 314. n. weight | /weɪt/ — sounds like **WAYT** | /weɪt/ — sounds like **WAYT**
 315. n. grinding | /ˈɡraɪndɪŋ/ — sounds like **GRYND-ing** | /ˈɡraɪndɪŋ/ — sounds like **GRYND-ing**
 316. n. cheek teeth | /tʃiːk tiːθ/ — sounds like **CHEEK TEETH** | /tʃiːk tiːθ/ — sounds like **CHEEK TEETH**
-317. n. tusk | /tʌsk/ — sounds like **TUSK** | /tʌsk/ — sounds like **TUSK**
-318. n. bulk | /bʌlk/ — sounds like **BULK** | /bʌlk/ — sounds like **BULK**
+317. n. tusk | /tʌsk/ — sounds like **TUHSK** | /tʌsk/ — sounds like **TUHSK**
+318. n. bulk | /bʌlk/ — sounds like **BUHLK** | /bʌlk/ — sounds like **BUHLK**
 319. adj. huge | /hjuːdʒ/ — sounds like **HYOOJ** | /hjuːdʒ/ — sounds like **HYOOJ**
 320. n. process | /ˈprəʊses/ — sounds like **PROH-ses** | /ˈprɑːses/ — sounds like **PRAH-ses**
 321. v. requires | /rɪˈkwaɪəz/ — sounds like **ri-KWY-uhz** | /rɪˈkwaɪərz/ — sounds like **ri-KWY-erz**
@@ -341,10 +341,10 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 335. n. diet | /ˈdaɪət/ — sounds like **DY-ut** | /ˈdaɪət/ — sounds like **DY-ut**
 336. n. fertility | /fəˈtɪləti/ — sounds like **fuh-TIL-uh-tee** | /fərˈtɪləti/ — sounds like **fur-TIL-uh-tee**
 337. adj. mental | /ˈmentəl/ — sounds like **MEN-tul** | /ˈmentəl/ — sounds like **MEN-tul**
-338. adj. bankrupt | /ˈbæŋkrʌpt/ — sounds like **BANK-rupt** | /ˈbæŋkrʌpt/ — sounds like **BANK-rupt**
-339. n. companies | /ˈkʌmpəniz/ — sounds like **KUM-puh-neez** | /ˈkʌmpəniz/ — sounds like **KUM-puh-neez**
+338. adj. bankrupt | /ˈbæŋkrʌpt/ — sounds like **BANK-ruhpt** | /ˈbæŋkrʌpt/ — sounds like **BANK-ruhpt**
+339. n. companies | /ˈkʌmpəniz/ — sounds like **KUHM-puh-neez** | /ˈkʌmpəniz/ — sounds like **KUHM-puh-neez**
 340. adj. financial | /faɪˈnænʃəl/ — sounds like **fye-NAN-shul** | /faɪˈnænʃəl/ — sounds like **fye-NAN-shul**
-341. n. results | /rɪˈzʌlts/ — sounds like **ri-ZULTS** | /rɪˈzʌlts/ — sounds like **ri-ZULTS**
+341. n. results | /rɪˈzʌlts/ — sounds like **ri-ZUHLTS** | /rɪˈzʌlts/ — sounds like **ri-ZUHLTS**
 342. n. society | /səˈsaɪəti/ — sounds like **suh-SY-uh-tee** | /səˈsaɪəti/ — sounds like **suh-SY-uh-tee**
 343. v. ensuring | /ɪnˈʃʊərɪŋ/ — sounds like **in-SHOOR-ing** | /ɪnˈʃʊrɪŋ/ — sounds like **in-SHOOR-ing**
 344. adv. positively | /ˈpɒzətɪvli/ — sounds like **POZ-uh-tiv-lee** | /ˈpɑːzətɪvli/ — sounds like **PAH-zuh-tiv-lee**
@@ -380,9 +380,9 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 374. adj. obsessed | /əbˈsest/ — sounds like **ub-SEST** | /əbˈsest/ — sounds like **ub-SEST**
 375. adj. economic | /ˌiːkəˈnɒmɪk/ — sounds like **ee-kuh-NOM-ik** | /ˌekəˈnɑːmɪk/ — sounds like **ek-uh-NAH-mik**
 376. n. growth rate | /ˈɡrəʊθ reɪt/ — sounds like **GROHTH RAYT** | /ˈɡroʊθ reɪt/ — sounds like **GROHTH RAYT**
-377. n. unemployment | /ˌʌnɪmˈplɔɪmənt/ — sounds like **un-im-PLOY-munt** | /ˌʌnɪmˈplɔɪmənt/ — sounds like **un-im-PLOY-munt**
+377. n. unemployment | /ˌʌnɪmˈplɔɪmənt/ — sounds like **uhn-im-PLOY-muhnt** | /ˌʌnɪmˈplɔɪmənt/ — sounds like **uhn-im-PLOY-muhnt**
 378. adj. reinforced | /ˌriːɪnˈfɔːst/ — sounds like **ree-in-FORST** | /ˌriːɪnˈfɔːrst/ — sounds like **ree-in-FORST**
-379. adj. unhappy | /ʌnˈhæpi/ — sounds like **un-HAP-ee** | /ʌnˈhæpi/ — sounds like **un-HAP-ee**
+379. adj. unhappy | /ʌnˈhæpi/ — sounds like **uhn-HAP-ee** | /ʌnˈhæpi/ — sounds like **uhn-HAP-ee**
 380. adj. widespread | /ˈwaɪdspred/ — sounds like **WYDE-spred** | /ˈwaɪdspred/ — sounds like **WYDE-spred**
 381. v. assist | /əˈsɪst/ — sounds like **uh-SIST** | /əˈsɪst/ — sounds like **uh-SIST**
 382. v. connect | /kəˈnekt/ — sounds like **kuh-NEKT** | /kəˈnekt/ — sounds like **kuh-NEKT**
@@ -392,7 +392,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 386. n. telecommunication | /ˌtelɪkəˌmjuːnɪˈkeɪʃən/ — sounds like **tel-i-kuh-myoo-ni-KAY-shun** | /ˌtelɪkəˌmjuːnəˈkeɪʃən/ — sounds like **tel-i-kuh-myoo-nuh-KAY-shun**
 387. adj. royal | /ˈrɔɪəl/ — sounds like **ROY-ul** | /ˈrɔɪəl/ — sounds like **ROY-ul**
 388. pron. themselves | /ðəmˈselvz/ — sounds like **thum-SELVS** | /ðəmˈselvz/ — sounds like **thum-SELVS**
-389. n. discoveries | /dɪˈskʌvəriz/ — sounds like **di-SKUV-uh-reez** | /dɪˈskʌvəriz/ — sounds like **di-SKUV-uh-reez**
+389. n. discoveries | /dɪˈskʌvəriz/ — sounds like **di-SKUHV-uh-reez** | /dɪˈskʌvəriz/ — sounds like **di-SKUHV-uh-reez**
 390. n. electricity | /ɪˌlekˈtrɪsəti/ — sounds like **i-lek-TRIS-uh-tee** | /ɪˌlekˈtrɪsəti/ — sounds like **i-lek-TRIS-uh-tee**
 391. n. consoles | /kənˈsəʊlz/ — sounds like **kun-SOHLZ** | /kənˈsoʊlz/ — sounds like **kun-SOHLZ**
 392. n. research | /rɪˈsɜːtʃ/ — sounds like **ri-SURCH** | /ˈriːsɜːrtʃ/ — sounds like **REE-surch**
@@ -414,17 +414,17 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 408. n. aspects | /ˈæspekts/ — sounds like **AS-pekts** | /ˈæspekts/ — sounds like **AS-pekts**
 409. n. lessons | /ˈlesənz/ — sounds like **LES-unz** | /ˈlesənz/ — sounds like **LES-unz**
 410. n. organisms | /ˈɔːɡənɪzəmz/ — sounds like **OR-guh-niz-umz** | /ˈɔːrɡənɪzəmz/ — sounds like **OR-guh-niz-umz**
-411. n. crustaceans | /krʌˈsteɪʃənz/ — sounds like **krus-TAY-shunz** | /krʌˈsteɪʃənz/ — sounds like **krus-TAY-shunz**
+411. n. crustaceans | /krʌˈsteɪʃənz/ — sounds like **kruhs-TAY-shuhnz** | /krʌˈsteɪʃənz/ — sounds like **kruhs-TAY-shuhnz**
 412. n. molluscs | /ˈmɒləsks/ — sounds like **MOL-usks** | /ˈmɑːləsks/ — sounds like **MAH-lusks**
 413. v. involves | /ɪnˈvɒlvz/ — sounds like **in-VOLVZ** | /ɪnˈvɑːlvz/ — sounds like **in-VAHLVZ**
-414. v. cultivating | /ˈkʌltɪveɪtɪŋ/ — sounds like **KUL-ti-vay-ting** | /ˈkʌltəveɪtɪŋ/ — sounds like **KUL-tuh-vay-ting**
+414. v. cultivating | /ˈkʌltɪveɪtɪŋ/ — sounds like **KUHL-ti-vay-ting** | /ˈkʌltəveɪtɪŋ/ — sounds like **KUHL-tuh-vay-ting**
 415. n. populations | /ˌpɒpjʊˈleɪʃənz/ — sounds like **pop-yoo-LAY-shunz** | /ˌpɑːpjəˈleɪʃənz/ — sounds like **pah-pyuh-LAY-shunz**
 416. n. controlled conditions | /kənˈtrəʊld kənˈdɪʃənz/ — sounds like **kun-TROHLD kun-DISH-unz** | /kənˈtroʊld kənˈdɪʃənz/ — sounds like **kun-TROHLD kun-DISH-unz**
 417. n. workplace | /ˈwɜːkpleɪs/ — sounds like **WURK-plays** | /ˈwɜːrkpleɪs/ — sounds like **WURK-plays**
 418. n. terms | /tɜːmz/ — sounds like **TURMZ** | /tɜːrmz/ — sounds like **TURMZ**
 419. n. items | /ˈaɪtəmz/ — sounds like **EYE-tumz** | /ˈaɪtəmz/ — sounds like **EYE-tumz**
 420. v. attempted | /əˈtemptɪd/ — sounds like **uh-TEMP-tid** | /əˈtemptɪd/ — sounds like **uh-TEMP-tid**
-421. phr. come across | /kʌm əˈkrɒs/ — sounds like **kum uh-KROSS** | /kʌm əˈkrɔːs/ — sounds like **kum uh-KRAWS**
+421. phr. come across | /kʌm əˈkrɒs/ — sounds like **kuhm uh-KROSS** | /kʌm əˈkrɔːs/ — sounds like **kuhm uh-KRAWS**
 422. n. websites | /ˈwebsaɪts/ — sounds like **WEB-syts** | /ˈwebsaɪts/ — sounds like **WEB-syts**
 423. adj. specific | /spəˈsɪfɪk/ — sounds like **spuh-SIF-ik** | /spəˈsɪfɪk/ — sounds like **spuh-SIF-ik**
 424. n. pigments | /ˈpɪɡmənts/ — sounds like **PIG-munts** | /ˈpɪɡmənts/ — sounds like **PIG-munts**
@@ -437,7 +437,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 431. n. windows | /ˈwɪndəʊz/ — sounds like **WIN-dohz** | /ˈwɪndoʊz/ — sounds like **WIN-dohz**
 432. n. design | /dɪˈzaɪn/ — sounds like **di-ZYNE** | /dɪˈzaɪn/ — sounds like **di-ZYNE**
 433. n. portraits | /ˈpɔːtrɪts/ — sounds like **POR-trits** | /ˈpɔːrtrəts/ — sounds like **POR-truhts**
-434. n. flood control | /ˈflʌd kənˌtrəʊl/ — sounds like **FLUD kun-TROHL** | /ˈflʌd kənˌtroʊl/ — sounds like **FLUD kun-TROHL**
+434. n. flood control | /ˈflʌd kənˌtrəʊl/ — sounds like **FLUHD kuhn-TROHL** | /ˈflʌd kənˌtroʊl/ — sounds like **FLUHD kuhn-TROHL**
 435. n. billions | /ˈbɪljənz/ — sounds like **BIL-yunz** | /ˈbɪljənz/ — sounds like **BIL-yunz**
 436. n. dams | /dæmz/ — sounds like **DAMZ** | /dæmz/ — sounds like **DAMZ**
 437. n. levees | /ˈleviz/ — sounds like **LEV-eez** | /ˈleviz/ — sounds like **LEV-eez**
@@ -445,7 +445,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 439. adj. various | /ˈveəriəs/ — sounds like **VAIR-ee-us** | /ˈveriəs/ — sounds like **VAIR-ee-us**
 440. n. explanations | /ˌekspləˈneɪʃənz/ — sounds like **ek-spluh-NAY-shunz** | /ˌekspləˈneɪʃənz/ — sounds like **ek-spluh-NAY-shunz**
 441. n. volcano behavior | /vɒlˈkeɪnəʊ bɪˈheɪvjə/ — sounds like **vol-KAY-noh bi-HAY-vyuh** | /vɑːlˈkeɪnoʊ bɪˈheɪvjər/ — sounds like **vahl-KAY-noh bi-HAY-vyer**
-442. n. structure | /ˈstrʌktʃə/ — sounds like **STRUK-chuh** | /ˈstrʌktʃər/ — sounds like **STRUK-chur**
+442. n. structure | /ˈstrʌktʃə/ — sounds like **STRUHK-chuh** | /ˈstrʌktʃər/ — sounds like **STRUHK-chur**
 443. n. earth mantle | /ˈɜːθ ˈmæntəl/ — sounds like **URTH MAN-tul** | /ˈɜːrθ ˈmæntəl/ — sounds like **URTH MAN-tul**
 444. adj. semisolid | /ˌsemiˈsɒlɪd/ — sounds like **sem-ee-SOL-id** | /ˌsemiˈsɑːlɪd/ — sounds like **sem-ee-SAH-lid**
 445. n. material | /məˈtɪəriəl/ — sounds like **muh-TEER-ee-ul** | /məˈtɪriəl/ — sounds like **muh-TEER-ee-ul**
@@ -460,14 +460,14 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 454. n. classical music | /ˈklæsɪkəl ˈmjuːzɪk/ — sounds like **KLAS-i-kul MYOO-zik** | /ˈklæsɪkəl ˈmjuːzɪk/ — sounds like **KLAS-i-kul MYOO-zik**
 455. n. pregnant bellies | /ˈpreɡnənt ˈbeliz/ — sounds like **PREG-nunt BEL-eez** | /ˈpreɡnənt ˈbeliz/ — sounds like **PREG-nunt BEL-eez**
 456. n. infants | /ˈɪnfənts/ — sounds like **IN-funts** | /ˈɪnfənts/ — sounds like **IN-funts**
-457. n. adult | /ˈædʌlt/ — sounds like **AD-ult** | /əˈdʌlt/ — sounds like **uh-DULT**
+457. n. adult | /ˈædʌlt/ — sounds like **AD-uhlt** | /əˈdʌlt/ — sounds like **uh-DUHLT**
 458. n. speech | /spiːtʃ/ — sounds like **SPEECH** | /spiːtʃ/ — sounds like **SPEECH**
-459. n. native tongue | /ˈneɪtɪv tʌŋ/ — sounds like **NAY-tiv TUNG** | /ˈneɪtɪv tʌŋ/ — sounds like **NAY-tiv TUNG**
+459. n. native tongue | /ˈneɪtɪv tʌŋ/ — sounds like **NAY-tiv TUHNG** | /ˈneɪtɪv tʌŋ/ — sounds like **NAY-tiv TUHNG**
 460. n. Latin | /ˈlætɪn/ — sounds like **LAT-in** | /ˈlætɪn/ — sounds like **LAT-in**
 461. n. word | /wɜːd/ — sounds like **WURD** | /wɜːrd/ — sounds like **WURD**
-462. pron. anyone | /ˈeniwʌn/ — sounds like **EN-ee-wun** | /ˈeniwʌn/ — sounds like **EN-ee-wun**
+462. pron. anyone | /ˈeniwʌn/ — sounds like **EN-ee-wuhn** | /ˈeniwʌn/ — sounds like **EN-ee-wuhn**
 463. n. advocates | /ˈædvəkəts/ — sounds like **AD-vuh-kuts** | /ˈædvəkəts/ — sounds like **AD-vuh-kuts**
-464. n. fundamental change | /ˌfʌndəˈmentəl tʃeɪndʒ/ — sounds like **fun-duh-MEN-tul CHAYNJ** | /ˌfʌndəˈmentəl tʃeɪndʒ/ — sounds like **fun-duh-MEN-tul CHAYNJ**
+464. n. fundamental change | /ˌfʌndəˈmentəl tʃeɪndʒ/ — sounds like **fuhn-duh-MEN-tuhl CHAYNJ** | /ˌfʌndəˈmentəl tʃeɪndʒ/ — sounds like **fuhn-duh-MEN-tuhl CHAYNJ**
 465. n. political system | /pəˈlɪtɪkəl ˈsɪstəm/ — sounds like **puh-LIT-i-kul SIS-tum** | /pəˈlɪtɪkəl ˈsɪstəm/ — sounds like **puh-LIT-i-kul SIS-tum**
 466. adv. literally | /ˈlɪtərəli/ — sounds like **LIT-uh-ruh-lee** | /ˈlɪtərəli/ — sounds like **LIT-uh-ruh-lee**
 467. n. social problems | /ˈsəʊʃəl ˈprɒbləmz/ — sounds like **SOH-shul PROB-lumz** | /ˈsoʊʃəl ˈprɑːbləmz/ — sounds like **SOH-shul PRAHB-lumz**
@@ -483,13 +483,13 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 477. adj. further | /ˈfɜːðə/ — sounds like **FUR-thuh** | /ˈfɜːrðər/ — sounds like **FUR-ther**
 478. n. centuries | /ˈsentʃəriz/ — sounds like **SEN-chuh-reez** | /ˈsentʃəriz/ — sounds like **SEN-chur-eez**
 479. adj. French | /frentʃ/ — sounds like **FRENCH** | /frentʃ/ — sounds like **FRENCH**
-480. adj. Dutch | /dʌtʃ/ — sounds like **DUTCH** | /dʌtʃ/ — sounds like **DUTCH**
+480. adj. Dutch | /dʌtʃ/ — sounds like **DUHTCH** | /dʌtʃ/ — sounds like **DUHTCH**
 481. n. emigrants | /ˈemɪɡrənts/ — sounds like **EM-i-grunts** | /ˈemɪɡrənts/ — sounds like **EM-i-grunts**
 482. n. North America | /ˌnɔːθ əˈmerɪkə/ — sounds like **NORTH uh-MER-i-kuh** | /ˌnɔːrθ əˈmerɪkə/ — sounds like **NORTH uh-MER-i-kuh**
 483. n. gold and silver | /ɡəʊld ænd ˈsɪlvə/ — sounds like **GOHLD and SIL-vuh** | /ɡoʊld ænd ˈsɪlvər/ — sounds like **GOHLD and SIL-ver**
 484. n. crops | /krɒps/ — sounds like **KROPS** | /krɑːps/ — sounds like **KRAHPS**
 485. n. attendance | /əˈtendəns/ — sounds like **uh-TEN-duns** | /əˈtendəns/ — sounds like **uh-TEN-duns**
-486. n. cultural venues | /ˈkʌltʃərəl ˈvenjuːz/ — sounds like **KUL-chur-ul VEN-yooz** | /ˈkʌltʃərəl ˈvenjuːz/ — sounds like **KUL-chur-ul VEN-yooz**
+486. n. cultural venues | /ˈkʌltʃərəl ˈvenjuːz/ — sounds like **KUHL-chur-uhl VEN-yooz** | /ˈkʌltʃərəl ˈvenjuːz/ — sounds like **KUHL-chur-uhl VEN-yooz**
 487. v. influenced | /ˈɪnfluənst/ — sounds like **IN-floo-unst** | /ˈɪnfluənst/ — sounds like **IN-floo-unst**
 488. n. person | /ˈpɜːsən/ — sounds like **PUR-sun** | /ˈpɜːrsən/ — sounds like **PUR-sun**
 489. n. composition | /ˌkɒmpəˈzɪʃən/ — sounds like **kom-puh-ZISH-un** | /ˌkɑːmpəˈzɪʃən/ — sounds like **kahm-puh-ZISH-un**
@@ -508,13 +508,13 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 502. n. coaches | /ˈkəʊtʃɪz/ — sounds like **KOH-chiz** | /ˈkoʊtʃɪz/ — sounds like **KOH-chiz**
 503. adj. recent | /ˈriːsənt/ — sounds like **REE-sunt** | /ˈriːsənt/ — sounds like **REE-sunt**
 504. n. silent returns | /ˈsaɪlənt rɪˈtɜːnz/ — sounds like **SY-lunt ri-TURNZ** | /ˈsaɪlənt rɪˈtɜːrnz/ — sounds like **SY-lunt ri-TURNZ**
-505. n. unreported defects | /ˌʌnrɪˈpɔːtɪd ˈdiːfekts/ — sounds like **un-ri-POR-tid DEE-fekts** | /ˌʌnrɪˈpɔːrtɪd ˈdiːfekts/ — sounds like **un-ri-POR-tid DEE-fekts**
+505. n. unreported defects | /ˌʌnrɪˈpɔːtɪd ˈdiːfekts/ — sounds like **uhn-ri-POR-tid DEE-fekts** | /ˌʌnrɪˈpɔːrtɪd ˈdiːfekts/ — sounds like **uhn-ri-POR-tid DEE-fekts**
 506. phr. goes wrong | /ɡəʊz rɒŋ/ — sounds like **GOHZ RONG** | /ɡoʊz rɔːŋ/ — sounds like **GOHZ RAWNG**
 507. v. acknowledge | /əkˈnɒlɪdʒ/ — sounds like **ak-NOL-ij** | /əkˈnɑːlɪdʒ/ — sounds like **ak-NAH-lij**
 508. n. Toronto | /təˈrɒntəʊ/ — sounds like **tuh-RON-toh** | /təˈrɑːntoʊ/ — sounds like **tuh-RAHN-toh**
 509. n. apology | /əˈpɒlədʒi/ — sounds like **uh-POL-uh-jee** | /əˈpɑːlədʒi/ — sounds like **uh-PAH-luh-jee**
 510. v. prevents | /prɪˈvents/ — sounds like **pri-VENTS** | /prɪˈvents/ — sounds like **pri-VENTS**
-511. n. misunderstanding | /ˌmɪsʌndəˈstændɪŋ/ — sounds like **mis-un-duh-STAN-ding** | /ˌmɪsʌndərˈstændɪŋ/ — sounds like **mis-un-der-STAN-ding**
+511. n. misunderstanding | /ˌmɪsʌndəˈstændɪŋ/ — sounds like **mis-uhn-duh-STAN-ding** | /ˌmɪsʌndərˈstændɪŋ/ — sounds like **mis-uhn-der-STAN-ding**
 512. n. guidance | /ˈɡaɪdəns/ — sounds like **GY-duns** | /ˈɡaɪdəns/ — sounds like **GY-duns**
 513. n. support | /səˈpɔːt/ — sounds like **suh-PORT** | /səˈpɔːrt/ — sounds like **suh-PORT**
 514. n. course | /kɔːs/ — sounds like **KORS** | /kɔːrs/ — sounds like **KORS**
@@ -523,7 +523,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 517. prep. between | /bɪˈtwiːn/ — sounds like **bi-TWEEN** | /bɪˈtwiːn/ — sounds like **bi-TWEEN**
 518. n. widening | /ˈwaɪdənɪŋ/ — sounds like **WY-dun-ing** | /ˈwaɪdənɪŋ/ — sounds like **WY-dun-ing**
 519. adj. positive | /ˈpɒzətɪv/ — sounds like **POZ-uh-tiv** | /ˈpɑːzətɪv/ — sounds like **PAH-zuh-tiv**
-520. n. hundred | /ˈhʌndrəd/ — sounds like **HUN-drud** | /ˈhʌndrəd/ — sounds like **HUN-drud**
+520. n. hundred | /ˈhʌndrəd/ — sounds like **HUHN-druhd** | /ˈhʌndrəd/ — sounds like **HUHN-druhd**
 521. n. William | /ˈwɪliəm/ — sounds like **WIL-ee-um** | /ˈwɪliəm/ — sounds like **WIL-ee-um**
 522. adj. central | /ˈsentrəl/ — sounds like **SEN-trul** | /ˈsentrəl/ — sounds like **SEN-trul**
 523. n. author | /ˈɔːθə/ — sounds like **AW-thuh** | /ˈɔːθər/ — sounds like **AW-ther**
@@ -536,21 +536,21 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 530. n. rivals | /ˈraɪvəlz/ — sounds like **RY-vulz** | /ˈraɪvəlz/ — sounds like **RY-vulz**
 531. adj. difficult | /ˈdɪfɪkəlt/ — sounds like **DIF-i-kult** | /ˈdɪfɪkəlt/ — sounds like **DIF-i-kult**
 532. n. entrant | /ˈentrənt/ — sounds like **EN-trunt** | /ˈentrənt/ — sounds like **EN-trunt**
-533. v. overcome | /ˌəʊvəˈkʌm/ — sounds like **oh-vuh-KUM** | /ˌoʊvərˈkʌm/ — sounds like **oh-ver-KUM**
+533. v. overcome | /ˌəʊvəˈkʌm/ — sounds like **oh-vuh-KUHM** | /ˌoʊvərˈkʌm/ — sounds like **oh-ver-KUHM**
 
 534. adj. blue | /bluː/ — sounds like **BLOO** | /blu/ — sounds like **BLOO**
 535. adv. most | /məʊst/ — sounds like **MOHST** | /moʊst/ — sounds like **MOHST**
-536. n. color | /ˈkʌlə/ — sounds like **KUL-uh** | /ˈkʌlər/ — sounds like **KUL-ur**
+536. n. color | /ˈkʌlə/ — sounds like **KUHL-uh** | /ˈkʌlər/ — sounds like **KUHL-ur**
 537. adj. appetizing | /ˈæpɪtaɪzɪŋ/ — sounds like **AP-i-tye-zing** | /ˈæpɪtaɪzɪŋ/ — sounds like **AP-i-tye-zing**
 538. n. food | /fuːd/ — sounds like **FOOD** | /fuːd/ — sounds like **FOOD**
 539. n. researchers | /rɪˈsɜːtʃəz/ — sounds like **rih-SUR-chuhz** | /rɪˈsɝːtʃərz/ — sounds like **rih-SER-churz**
 540. adj. learned | /ˈlɜːnɪd/ — sounds like **LUR-nid** | /ˈlɜːrnɪd/ — sounds like **LUR-nid**
 541. n. objects | /ˈɒbdʒekts/ — sounds like **OB-jekts** | /ˈɑbdʒekts/ — sounds like **AHB-jekts**
 542. n. appetite | /ˈæpɪtaɪt/ — sounds like **AP-i-tyet** | /ˈæpɪtaɪt/ — sounds like **AP-i-tyet**
-543. adj. annual | /ˈænjʊəl/ — sounds like **AN-yoo-uhl** | /ˈænjuəl/ — sounds like **AN-yoo-əl**
+543. adj. annual | /ˈænjʊəl/ — sounds like **AN-yoo-uhl** | /ˈænjuəl/ — sounds like **AN-yoo-uhl**
 544. n. Tesla | /ˈteslə/ — sounds like **TES-luh** | /ˈteslə/ — sounds like **TES-luh**
-545. n. Edison | /ˈedɪsən/ — sounds like **ED-i-sun** | /ˈɛdɪsən/ — sounds like **ED-i-sən**
-546. v. undertake | /ˌʌndəˈteɪk/ — sounds like **UN-duh-TAYK** | /ˌʌndərˈteɪk/ — sounds like **UN-der-TAYK**
+545. n. Edison | /ˈedɪsən/ — sounds like **ED-i-sun** | /ˈɛdɪsən/ — sounds like **ED-i-suhn**
+546. v. undertake | /ˌʌndəˈteɪk/ — sounds like **UHN-duh-TAYK** | /ˌʌndərˈteɪk/ — sounds like **UHN-der-TAYK**
 547. n. generator | /ˈdʒenəreɪtə/ — sounds like **JEN-uh-ray-tuh** | /ˈdʒɛnəˌreɪtər/ — sounds like **JEN-uh-RAY-tur**
 548. n. improvement | /ɪmˈpruːvmənt/ — sounds like **im-PROOV-ment** | /ɪmˈpruvmənt/ — sounds like **im-PROOV-ment**
 549. adj. ethical | /ˈeθɪkəl/ — sounds like **ETH-i-kul** | /ˈeθɪkəl/ — sounds like **ETH-i-kul**
@@ -561,7 +561,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 554. n. morning | /ˈmɔːnɪŋ/ — sounds like **MAW-ning** | /ˈmɔrnɪŋ/ — sounds like **MOR-ning**
 555. n. father | /ˈfɑːðə/ — sounds like **FAAH-thuh** | /ˈfɑðər/ — sounds like **FAH-ther**
 556. n. breakfast | /ˈbrekfəst/ — sounds like **BREK-fust** | /ˈbrekfəst/ — sounds like **BREK-fust**
-557. n. mother | /ˈmʌðə/ — sounds like **MUTH-uh** | /ˈmʌðɚ/ — sounds like **MUTH-er**
+557. n. mother | /ˈmʌðə/ — sounds like **MUHTH-uh** | /ˈmʌðɚ/ — sounds like **MUHTH-er**
 558. v. realized | /ˈrɪəlaɪzd/ — sounds like **REE-uh-lyzd** | /ˈriːəlaɪzd/ — sounds like **REE-uh-lyzd**
 559. conj. although | /ɔːlˈðəʊ/ — sounds like **awl-THOH** | /ɔlˈðoʊ/ — sounds like **awl-THOH**
 560. adj. remote | /rɪˈməʊt/ — sounds like **ri-MOHT** | /rɪˈmoʊt/ — sounds like **ri-MOHT**
@@ -584,10 +584,10 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 577. n. pests | /pests/ — sounds like **PESTS** | /pests/ — sounds like **PESTS**
 578. v. grows | /ɡrəʊz/ — sounds like **GROHZ** | /ɡroʊz/ — sounds like **GROHZ**
 579. v. reproduces | /ˌriːprəˈdjuːsɪz/ — sounds like **ree-pruh-DYOOS-iz** | /ˌriːprəˈduːsɪz/ — sounds like **ree-pruh-DOOS-iz**
-580. adj. unhindered | /ʌnˈhɪndəd/ — sounds like **un-HIN-duhd** | /ʌnˈhɪndərd/ — sounds like **un-HIN-duhrd**
+580. adj. unhindered | /ʌnˈhɪndəd/ — sounds like **uhn-HIN-duhd** | /ʌnˈhɪndərd/ — sounds like **uhn-HIN-duhrd**
 581. n. Pluto | /ˈpluːtəʊ/ — sounds like **PLOO-toh** | /ˈpluːtoʊ/ — sounds like **PLOO-toh**
 582. adj. official | /əˈfɪʃəl/ — sounds like **uh-FISH-ul** | /əˈfɪʃəl/ — sounds like **uh-FISH-ul**
-583. n. status | /ˈsteɪtəs/ — sounds like **STAY-tus** | /ˈsteɪtəs/ — sounds like **STAY-təs**
+583. n. status | /ˈsteɪtəs/ — sounds like **STAY-tus** | /ˈsteɪtəs/ — sounds like **STAY-tuhs**
 584. adj. international | /ˌɪntəˈnæʃənəl/ — sounds like **in-tuh-NASH-uh-nul** | /ˌɪntərˈnæʃənəl/ — sounds like **in-tuhr-NASH-uh-nul**
 585. adj. astronomical | /ˌæstrəˈnɒmɪkəl/ — sounds like **as-truh-NOM-i-kul** | /ˌæstrəˈnɑːmɪkəl/ — sounds like **as-truh-NAHM-i-kul**
 586. n. union | /ˈjuːniən/ — sounds like **YOO-nee-un** | /ˈjuːniən/ — sounds like **YOO-nee-un**
@@ -602,7 +602,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 595. n. Prague | /prɑːɡ/ — sounds like **PRAHG** | /prɑːɡ/ — sounds like **PRAHG**
 596. n. definition | /ˌdɛfɪˈnɪʃən/ — sounds like **def-i-NISH-un** | /ˌdɛfəˈnɪʃən/ — sounds like **def-uh-NISH-un**
 597. n. specifications | /ˌspesɪfɪˈkeɪʃənz/ — sounds like **spes-ih-fih-KAY-shuhnz** | /ˌspesəfəˈkeɪʃənz/ — sounds like **spess-uh-fuh-KAY-shuhnz**
-598. n. audience | /ˈɔːdiəns/ — sounds like **AW-dee-uhns** | /ˈɔdiəns/ — sounds like **AH-dee-əns**
+598. n. audience | /ˈɔːdiəns/ — sounds like **AW-dee-uhns** | /ˈɔdiəns/ — sounds like **AH-dee-uhns**
 599. v. greeted | /ˈɡriːtɪd/ — sounds like **GREE-tid** | /ˈɡriːtɪd/ — sounds like **GREE-tid**
 600. n. decision | /dɪˈsɪʒən/ — sounds like **di-SIZH-un** | /dɪˈsɪʒən/ — sounds like **di-SIZH-un**
 601. v. exclude | /ɪkˈskluːd/ — sounds like **ik-SKLOOD** | /ɪkˈsklud/ — sounds like **ik-SKLOOD**
@@ -614,12 +614,12 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 607. n. account | /əˈkaʊnt/ — sounds like **uh-KOWNT** | /əˈkaʊnt/ — sounds like **uh-KOWNT**
 608. n. accordance | /əˈkɔːdəns/ — sounds like **uh-KAW-duhns** | /əˈkɔːrdəns/ — sounds like **uh-KOR-duhns**
 609. n. object | /ˈɒbdʒekt/ — sounds like **OB-jekt** | /ˈɑbdʒɛkt/ — sounds like **AHB-jekt**
-610. n. expenditure | /ɪkˈspendɪtʃə/ — sounds like **ik-SPEN-dih-chə** | /ɪkˈspɛndətʃɚ/ — sounds like **ik-SPEN-də-chər**
+610. n. expenditure | /ɪkˈspendɪtʃə/ — sounds like **ik-SPEN-dih-chuh** | /ɪkˈspɛndətʃɚ/ — sounds like **ik-SPEN-duh-chur**
 611. n. managers | /ˈmænɪdʒəz/ — sounds like **MAN-i-jurz** | /ˈmænədʒərz/ — sounds like **MAN-uh-jurz**
-612. adj. responsible | /rɪˈspɒnsəbəl/ — sounds like **ri-SPON-suh-bul** | /rɪˈspɑnsəbəl/ — sounds like **ri-SPAHN-sə-bəl**
-613. adj. adequate | /ˈædɪkwət/ — sounds like **AD-i-kwut** | /ˈædəkwət/ — sounds like **AD-ə-kwət**
+612. adj. responsible | /rɪˈspɒnsəbəl/ — sounds like **ri-SPON-suh-bul** | /rɪˈspɑnsəbəl/ — sounds like **ri-SPAHN-suh-buhl**
+613. adj. adequate | /ˈædɪkwət/ — sounds like **AD-i-kwut** | /ˈædəkwət/ — sounds like **AD-uh-kwuht**
 614. adj. available | /əˈveɪləbl/ — sounds like **uh-VAY-luh-bul** | /əˈveɪləbəl/ — sounds like **uh-VAY-luh-bul**
-615. adj. appropriate | /əˈprəʊpriət/ — sounds like **uh-PROH-pree-ut** | /əˈproʊpriət/ — sounds like **ə-PROH-pree-ət**
+615. adj. appropriate | /əˈprəʊpriət/ — sounds like **uh-PROH-pree-ut** | /əˈproʊpriət/ — sounds like **uh-PROH-pree-uht**
 616. before | /bɪˈfɔːr/ — sounds like **bih-FOR** | /bɪˈfɔːr/ — sounds like **bih-FOR**
 617. v. initiating | /ɪˈnɪʃieɪtɪŋ/ — sounds like **ih-NISH-ee-ay-ting** | /ɪˈnɪʃieɪtɪŋ/ — sounds like **ih-NISH-ee-ay-ting**
 618. n. transactions | /trænˈzækʃənz/ — sounds like **tranz-AK-shuhnz** | /trænˈzækʃənz/ — sounds like **tranz-AK-shuhnz**
@@ -629,26 +629,26 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 622. v. measure | /ˈmeʒə/ — sounds like **MEZH-uh** | /ˈmeʒər/ — sounds like **MEZH-ur**
 623. pron. any | /ˈeni/ — sounds like **EN-ee** | /ˈeni/ — sounds like **EN-ee**
 624. adj. military | /ˈmɪlɪtəri/ — sounds like **MIL-i-tuh-ree** | /ˈmɪlɪˌtɛri/ — sounds like **MIL-i-terr-ee**
-625. adj. young | /jʌŋ/ — sounds like **YUNG** | /jʌŋ/ — sounds like **YUNG**
+625. adj. young | /jʌŋ/ — sounds like **YUHNG** | /jʌŋ/ — sounds like **YUHNG**
 626. adj. small | /smɔːl/ — sounds like **SMAWL** | /smɔl/ — sounds like **SMAWL**
-627. adj. independent | /ˌɪndɪˈpendənt/ — sounds like **IN-dih-PEN-dunt** | /ˌɪndəˈpɛndənt/ — sounds like **IN-də-PEN-dənt**
+627. adj. independent | /ˌɪndɪˈpendənt/ — sounds like **IN-dih-PEN-dunt** | /ˌɪndəˈpɛndənt/ — sounds like **IN-duh-PEN-duhnt**
 628. n. connections | /kəˈnekʃənz/ — sounds like **kuh-NEK-shuhnz** | /kəˈnekʃənz/ — sounds like **kuh-NEK-shuhnz**
 629. adv. remarkably | /rɪˈmɑːkəbli/ — sounds like **ri-MAHR-kuh-blee** | /rɪˈmɑːrkəbli/ — sounds like **ri-MAHR-kuh-blee**
 630. adj. short | /ʃɔːt/ — sounds like **SHAWT** | /ʃɔrt/ — sounds like **SHORT**
 631. n. time | /taɪm/ — sounds like **TYME** | /taɪm/ — sounds like **TYME**
-632. v. becomes | /bɪˈkʌmz/ — sounds like **bih-KUMZ** | /bɪˈkʌmz/ — sounds like **bih-KUMZ**
-633. adv. alone | /əˈləʊn/ — sounds like **ə-LOHN** | /əˈloʊn/ — sounds like **ə-LOHN**
+632. v. becomes | /bɪˈkʌmz/ — sounds like **bih-KUHMZ** | /bɪˈkʌmz/ — sounds like **bih-KUHMZ**
+633. adv. alone | /əˈləʊn/ — sounds like **uh-LOHN** | /əˈloʊn/ — sounds like **uh-LOHN**
 634. adj. akimbo | /əˈkɪmbəʊ/ — sounds like **uh-KIM-boh** | /əˈkɪmboʊ/ — sounds like **uh-KIM-boh**
 635. adj. odder-looking | /ˌɒdə ˈlʊkɪŋ/ — sounds like **OD-uh LUUK-ing** | /ˌɑːdər ˈlʊkɪŋ/ — sounds like **AH-der LUUK-ing**
-636. n. puzzles | /ˈpʌzəlz/ — sounds like **PUZ-uhlz** | /ˈpʌzəlz/ — sounds like **PUZ-uhlz**
+636. n. puzzles | /ˈpʌzəlz/ — sounds like **PUHZ-uhlz** | /ˈpʌzəlz/ — sounds like **PUHZ-uhlz**
 637. n. relatives | /ˈrelətɪvz/ — sounds like **REL-uh-tivz** | /ˈrelətəvz/ — sounds like **REL-uh-tuvz**
-638. adv. virtually | /ˈvɜːtʃuəli/ — sounds like **VUR-choo-uh-lee** | /ˈvɝːtʃuəli/ — sounds like **VUR-choo-ə-lee**
-639. prep. until | /ənˈtɪl/ — sounds like **un-TIL** | /ənˈtɪl/ — sounds like **ən-TIL**
+638. adv. virtually | /ˈvɜːtʃuəli/ — sounds like **VUR-choo-uh-lee** | /ˈvɝːtʃuəli/ — sounds like **VUR-choo-uh-lee**
+639. prep. until | /ənˈtɪl/ — sounds like **un-TIL** | /ənˈtɪl/ — sounds like **uhn-TIL**
 640. adv. recently | /ˈriːsəntli/ — sounds like **REE-sunt-lee** | /ˈrisəntli/ — sounds like **REE-sunt-lee**
 641. adv. almost | /ˈɔːlməʊst/ — sounds like **AWL-mohst** | /ˈɔlmoʊst/ — sounds like **AWL-mohst**
 642. adv. invariably | /ɪnˈveəriəbli/ — sounds like **in-VAIR-ee-uh-blee** | /ɪnˈveriəbli/ — sounds like **in-VAIR-ee-uh-blee**
 643. n. arms | /ɑːmz/ — sounds like **AHMZ** | /ɑːrmz/ — sounds like **AHRMZ**
-644. n. posture | /ˈpɒstʃə/ — sounds like **POS-chuh** | /ˈpɑstʃər/ — sounds like **PAHS-chər**
+644. n. posture | /ˈpɒstʃə/ — sounds like **POS-chuh** | /ˈpɑstʃər/ — sounds like **PAHS-chur**
 645. v. stands | /stændz/ — sounds like **STANDZ** | /stændz/ — sounds like **STANDZ**
 646. n. hips | /hɪps/ — sounds like **HIPS** | /hɪps/ — sounds like **HIPS**
 647. n. elbows | /ˈelbəʊz/ — sounds like **EL-bohz** | /ˈelboʊz/ — sounds like **EL-bohz**
@@ -674,21 +674,21 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 667. n. cheek | /tʃiːk/ — sounds like **CHEEK** | /tʃiːk/ — sounds like **CHEEK**
 668. n. teeth | /tiːθ/ — sounds like **TEETH** | /tiːθ/ — sounds like **TEETH**
 669. adj. elongated | /ˈiːlɒŋɡeɪtɪd/ — sounds like **EE-long-gay-tid** | /ɪˈlɔːŋɡeɪtɪd/ — sounds like **i-LAWNG-gay-tid**
-670. n. skull | /skʌl/ — sounds like **SKUL** | /skʌl/ — sounds like **SKUL**
+670. n. skull | /skʌl/ — sounds like **SKUHL** | /skʌl/ — sounds like **SKUHL**
 671. adj. massive | /ˈmæsɪv/ — sounds like **MAS-iv** | /ˈmæsəv/ — sounds like **MAS-uv**
 672. n. body | /ˈbɒdi/ — sounds like **BOD-ee** | /ˈbɑdi/ — sounds like **BAH-dee**
-673. adj. unimaginable | /ˌʌnɪˈmædʒɪnəbəl/ — sounds like **un-i-MAJ-i-nuh-bul** | /ˌʌnɪˈmædʒɪnəbəl/ — sounds like **un-i-MAJ-i-nuh-bul**
+673. adj. unimaginable | /ˌʌnɪˈmædʒɪnəbəl/ — sounds like **uhn-i-MAJ-i-nuh-buhl** | /ˌʌnɪˈmædʒɪnəbəl/ — sounds like **uhn-i-MAJ-i-nuh-buhl**
 674. n. tulip | /ˈtjuːlɪp/ — sounds like **TYOO-lip** | /ˈtuːlɪp/ — sounds like **TOO-lip**
-675. adv. immediately | /ɪˈmiːdiətli/ — sounds like **i-MEE-dee-ut-lee** | /ɪˈmidiətli/ — sounds like **i-MID-ee-ət-lee**
+675. adv. immediately | /ɪˈmiːdiətli/ — sounds like **i-MEE-dee-ut-lee** | /ɪˈmidiətli/ — sounds like **i-MID-ee-uht-lee**
 676. n. forms | /fɔːmz/ — sounds like **FAWMZ** | /fɔːrmz/ — sounds like **FORMZ**
 677. n. concept | /ˈkɒnsept/ — sounds like **KON-sept** | /ˈkɑːnsept/ — sounds like **KAHN-sept**
 678. n. square | /skweə/ — sounds like **SKWAIR** | /skwer/ — sounds like **SKWAIR**
 679. n. root | /ruːt/ — sounds like **ROOT** | /rut/ — sounds like **ROOT**
 680. adj. negative | /ˈneɡətɪv/ — sounds like **NEG-uh-tiv** | /ˈneɡətɪv/ — sounds like **NEG-uh-tiv**
-681. number | /ˈnʌmbə/ — sounds like **NUM-bur** | /ˈnʌmbə/ — sounds like **NUM-bur**
+681. number | /ˈnʌmbə/ — sounds like **NUHM-bur** | /ˈnʌmbə/ — sounds like **NUHM-bur**
 682. few | /fjuː/ — sounds like **FYOO** | /fjuː/ — sounds like **FYOO**
 683. v. produce | /prəˈdjuːs/ — sounds like **pruh-DYOOS** | /prəˈdus/ — sounds like **pruh-DOOS**
-684. such | /sʌtʃ/ — sounds like **SUCH** | /sʌtʃ/ — sounds like **SUCH**
+684. such | /sʌtʃ/ — sounds like **SUHCH** | /sʌtʃ/ — sounds like **SUHCH**
 685. n. amazement | /əˈmeɪzmənt/ — sounds like **uh-MAYZ-munt** | /əˈmeɪzmənt/ — sounds like **uh-MAYZ-munt**
 686. n. glimpse | /ɡlɪmps/ — sounds like **GLIMPS** | /ɡlɪmps/ — sounds like **GLIMPS**
 687. adj. Grand | /ɡrænd/ — sounds like **GRAND** | /ɡrænd/ — sounds like **GRAND**
@@ -696,7 +696,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 689. n. nature | /ˈneɪtʃə/ — sounds like **NAY-chuh** | /ˈneɪtʃɚ/ — sounds like **NAY-chur**
 690. n. billion | /ˈbɪljən/ — sounds like **BIL-yun** | /ˈbɪljən/ — sounds like **BIL-yun**
 691. adj. vast | /vɑːst/ — sounds like **VAAST** | /væst/ — sounds like **VAST**
-692. v. wonder | /ˈwʌndə/ — sounds like **WUN-duh** | /ˈwʌndər/ — sounds like **WUN-dər**
+692. v. wonder | /ˈwʌndə/ — sounds like **WUHN-duh** | /ˈwʌndər/ — sounds like **WUHN-dur**
 693. n. places | /ˈpleɪsɪz/ — sounds like **PLAY-siz** | /ˈpleɪsɪz/ — sounds like **PLAY-siz**
 694. n. miles | /maɪlz/ — sounds like **MYLZ** | /maɪlz/ — sounds like **MYLZ**
 695. adj. wide | /waɪd/ — sounds like **WYDE** | /waɪd/ — sounds like **WYDE**
@@ -704,21 +704,21 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 697. adj. relentless | /rɪˈlentləs/ — sounds like **ri-LENT-luhs** | /rɪˈlentləs/ — sounds like **ri-LENT-luhs**
 698. n. force | /fɔːs/ — sounds like **FORS** | /fɔrs/ — sounds like **FORS**
 699. n. Colorado | /ˌkɒləˈrɑːdəʊ/ — sounds like **kol-uh-RAH-doh** | /ˌkɑːləˈrædoʊ/ — sounds like **kah-luh-RA-doh**
-700. n. river | /ˈrɪvə/ — sounds like **RIV-ə** | /ˈrɪvɚ/ — sounds like **RIV-ər**
+700. n. river | /ˈrɪvə/ — sounds like **RIV-uh** | /ˈrɪvɚ/ — sounds like **RIV-ur**
 701. which | /wɪtʃ/ — sounds like **WHICH** | /wɪtʃ/ — sounds like **WHICH**
-702. v. runs | /rʌnz/ — sounds like **RUNZ** | /rʌnz/ — sounds like **RUNZ**
+702. v. runs | /rʌnz/ — sounds like **RUHNZ** | /rʌnz/ — sounds like **RUHNZ**
 703. adv. along | /əˈlɒŋ/ — sounds like **uh-LONG** | /əˈlɔŋ/ — sounds like **uh-LAWNG**
 704. n. length | /leŋθ/ — sounds like **LENGTH** | /lɛŋθ/ — sounds like **LENGTH**
 705. n. beneath | /bɪˈniːθ/ — sounds like **bi-NEETH** | /bəˈniθ/ — sounds like **buh-NEETH**
 706. adj. towering | /ˈtaʊərɪŋ/ — sounds like **TOW-uh-ring** | /ˈtaʊərɪŋ/ — sounds like **TOW-uh-ring**
 707. n. rims | /rɪmz/ — sounds like **RIMZ** | /rɪmz/ — sounds like **RIMZ**
-708. n. papers | /ˈpeɪpəz/ — sounds like **PAY-puhz** | /ˈpeɪpərz/ — sounds like **PAY-pərz**
+708. n. papers | /ˈpeɪpəz/ — sounds like **PAY-puhz** | /ˈpeɪpərz/ — sounds like **PAY-purz**
 709. adj. many | /ˈmeni/ — sounds like **MEN-ee** | /ˈmeni/ — sounds like **MEN-ee**
 710. v. write | /raɪt/ — sounds like **RYT** | /raɪt/ — sounds like **RYT**
 711. v. require | /rɪˈkwaɪə/ — sounds like **ri-KWY-uh** | /rɪˈkwaɪɚ/ — sounds like **ri-KWY-er**
 712. n. include | /ɪnˈkluːd/ — sounds like **in-KLOOD** | /ɪnˈklud/ — sounds like **in-KLOOD**
 713. from | /frɒm/ — sounds like **FRAHM** | /frɒm/ — sounds like **FRAHM**
-714. n. even | /ˈiːvən/ — sounds like **EE-vuhn** | /ˈivən/ — sounds like **EE-vən**
+714. n. even | /ˈiːvən/ — sounds like **EE-vuhn** | /ˈivən/ — sounds like **EE-vuhn**
 715. v. integrating | /ˈɪntɪɡreɪtɪŋ/ — sounds like **IN-tih-gray-ting** | /ˈɪntəɡreɪtɪŋ/ — sounds like **IN-tuh-gray-ting**
 716. n. quotes | /kwəʊts/ — sounds like **KWOHTZ** | /kwoʊts/ — sounds like **KWOHTS**
 717. n. writing | /ˈraɪtɪŋ/ — sounds like **RY-ting** | /ˈraɪtɪŋ/ — sounds like **RY-ting**
@@ -730,8 +730,8 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 723. n. key | /kiː/ — sounds like **KEE** | /ki/ — sounds like **KEE**
 724. n. point | /pɔɪnt/ — sounds like **POINT** | /pɔɪnt/ — sounds like **POINT**
 725. v. trying | /ˈtraɪɪŋ/ — sounds like **TRY-ing** | /ˈtraɪɪŋ/ — sounds like **TRY-ing**
-726. prep. rather than | /ˈrɑːðə ðæn/ — sounds like **RAA-thuh than** | /ˈræðər ðæn/ — sounds like **RATH-ər than**
-727. adv. just | /dʒʌst/ — sounds like **JUST** | /dʒʌst/ — sounds like **JUST**
+726. prep. rather than | /ˈrɑːðə ðæn/ — sounds like **RAA-thuh than** | /ˈræðər ðæn/ — sounds like **RATH-ur than**
+727. adv. just | /dʒʌst/ — sounds like **JUHST** | /dʒʌst/ — sounds like **JUHST**
 728. v. fill | /fɪl/ — sounds like **FIL** | /fɪl/ — sounds like **FIL**
 729. n. space | /speɪs/ — sounds like **SPAYS** | /speɪs/ — sounds like **SPAYS**
 730. adj. global | /ˈɡləʊbəl/ — sounds like **GLOH-bul** | /ˈɡloʊbəl/ — sounds like **GLOH-bul**
@@ -740,15 +740,15 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 733. v. increase | /ɪnˈkriːs/ — sounds like **in-KREES** | /ɪnˈkriːs/ — sounds like **in-KREES**
 734. n. temperature | /ˈtɛmprɪtʃə/ — sounds like **TEM-pri-chuh** | /ˈtɛmprətʃər/ — sounds like **TEM-pruh-chur**
 735. n. earth | /ɜːθ/ — sounds like **URTH** | /ɜːrθ/ — sounds like **URTH**
-736. n. atmosphere | /ˈætməsfɪə/ — sounds like **AT-muh-sfeer** | /ˈætməˌsfɪr/ — sounds like **AT-mə-sfeer**
+736. n. atmosphere | /ˈætməsfɪə/ — sounds like **AT-muh-sfeer** | /ˈætməˌsfɪr/ — sounds like **AT-muh-sfeer**
 737. v. began | /bɪˈɡæn/ — sounds like **bih-GAN** | /bɪˈɡæn/ — sounds like **bih-GAN**
-738. adj. middle | /ˈmɪdəl/ — sounds like **MID-uhl** | /ˈmɪdəl/ — sounds like **MID-əl**
+738. adj. middle | /ˈmɪdəl/ — sounds like **MID-uhl** | /ˈmɪdəl/ — sounds like **MID-uhl**
 739. num. 20th | /ˈtwentiəθ/ — sounds like **TWEN-tee-uhth** | /ˈtwentiəθ/ — sounds like **TWEN-tee-uhth**
 740. n. century | /ˈsentʃəri/ — sounds like **SEN-chuh-ree** | /ˈsentʃəri/ — sounds like **SEN-chuh-ree**
 741. adj. major | /ˈmeɪdʒə/ — sounds like **MAY-juh** | /ˈmeɪdʒɚ/ — sounds like **MAY-jur**
 742. n. concerns | /kənˈsɜːnz/ — sounds like **kuhn-SURNZ** | /kənˈsɝːnz/ — sounds like **kuhn-SERNZ**
-743. adj. governmental | /ˌɡʌvənˈmentl/ — sounds like **GUV-un-MEN-tul** | /ˌɡʌvərnˈmɛntl/ — sounds like **GUV-urn-MENT-ul**
-744. n. officials | /əˈfɪʃəlz/ — sounds like **uh-FISH-uhlz** | /əˈfɪʃəlz/ — sounds like **ə-FISH-əlz**
+743. adj. governmental | /ˌɡʌvənˈmentl/ — sounds like **GUHV-uhn-MEN-tuhl** | /ˌɡʌvərnˈmɛntl/ — sounds like **GUHV-urn-MENT-uhl**
+744. n. officials | /əˈfɪʃəlz/ — sounds like **uh-FISH-uhlz** | /əˈfɪʃəlz/ — sounds like **uh-FISH-uhlz**
 745. adv. worldwide | /ˈwɜːldwaɪd/ — sounds like **WURLD-wyd** | /ˈwɝːldˌwaɪd/ — sounds like **WURLD-wyd**
 746. adv. mostly | /ˈməʊstli/ — sounds like **MOHST-lee** | /ˈmoʊstli/ — sounds like **MOHST-lee**
 747. n. effect | /ɪˈfekt/ — sounds like **i-FEKT** | /ɪˈfɛkt/ — sounds like **i-FEKT**
@@ -756,18 +756,18 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 749. n. concentrations | /ˌkɒnsənˈtreɪʃənz/ — sounds like **kon-suhn-TRAY-shuhnz** | /ˌkɑːnsənˈtreɪʃənz/ — sounds like **kahn-suhn-TRAY-shuhnz**
 750. n. greenhouse | /ˈɡriːnhaʊs/ — sounds like **GREEN-hows** | /ˈɡrinˌhaʊs/ — sounds like **GREEN-hows**
 751. n. gasses | /ˈɡæsɪz/ — sounds like **GAS-iz** | /ˈɡæsɪz/ — sounds like **GAS-iz**
-752. adj. interested | /ˈɪntrəstɪd/ — sounds like **IN-truh-stid** | /ˈɪntrəstəd/ — sounds like **IN-trə-stəd**
+752. adj. interested | /ˈɪntrəstɪd/ — sounds like **IN-truh-stid** | /ˈɪntrəstəd/ — sounds like **IN-truh-stuhd**
 753. adj. ancient | /ˈeɪnʃənt/ — sounds like **AYN-shunt** | /ˈeɪnʃənt/ — sounds like **AYN-shunt**
-754. n. connection | /kəˈnekʃən/ — sounds like **kuh-NEK-shun** | /kəˈnɛkʃən/ — sounds like **kə-NEK-shən**
+754. n. connection | /kəˈnekʃən/ — sounds like **kuh-NEK-shun** | /kəˈnɛkʃən/ — sounds like **kuh-NEK-shuhn**
 755. n. sea | /siː/ — sounds like **SEE** | /si/ — sounds like **SEE**
 756. n. child | /tʃaɪld/ — sounds like **CHYLD** | /tʃaɪld/ — sounds like **CHYLD**
 757. adj. spent | /spent/ — sounds like **SPENT** | /spent/ — sounds like **SPENT**
 758. v. exploring | /ɪkˈsplɔːrɪŋ/ — sounds like **ik-SPLOR-ing** | /ɪkˈsplɔrɪŋ/ — sounds like **ik-SPLOR-ing**
 759. v. collecting | /kəˈlektɪŋ/ — sounds like **kuh-LEK-ting** | /kəˈlektɪŋ/ — sounds like **kuh-LEK-ting**
-760. study | /ˈstʌdi/ — sounds like **STUD-ee** | /ˈstʌdi/ — sounds like **STUD-ee**
+760. study | /ˈstʌdi/ — sounds like **STUHD-ee** | /ˈstʌdi/ — sounds like **STUHD-ee**
 761. n. information | /ˌɪnfəˈmeɪʃən/ — sounds like **in-fuh-MAY-shun** | /ˌɪnfərˈmeɪʃən/ — sounds like **in-fuhr-MAY-shun**
-762. adj. hunted | /ˈhʌntɪd/ — sounds like **HUN-tid** | /ˈhʌntɪd/ — sounds like **HUN-tid**
-763. n. climate | /ˈklaɪmət/ — sounds like **KLY-mut** | /ˈklaɪmət/ — sounds like **KLY-mət**
+762. adj. hunted | /ˈhʌntɪd/ — sounds like **HUHN-tid** | /ˈhʌntɪd/ — sounds like **HUHN-tid**
+763. n. climate | /ˈklaɪmət/ — sounds like **KLY-mut** | /ˈklaɪmət/ — sounds like **KLY-muht**
 764. v. doing | /ˈduːɪŋ/ — sounds like **DOO-ing** | /ˈduːɪŋ/ — sounds like **DOO-ing**
 765. n. business | /ˈbɪznəs/ — sounds like **BIZ-nuhs** | /ˈbɪznəs/ — sounds like **BIZ-nuhs**
 766. v. improved | /ɪmˈpruːvd/ — sounds like **im-PROOVD** | /ɪmˈpruːvd/ — sounds like **im-PROOVD**
@@ -778,7 +778,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 771. according | /əˈkɔːrdɪŋ/ — sounds like **uh-KOR-ding** | /əˈkɔːrdɪŋ/ — sounds like **uh-KOR-ding**
 772. v. revealed | /rɪˈviːld/ — sounds like **rih-VEELD** | /rɪˈviːld/ — sounds like **rih-VEELD**
 773. n. wave | /weɪv/ — sounds like **WAYV** | /weɪv/ — sounds like **WAYV**
-774. adj. Company-oriented | /ˈkʌmpəni ˌɔːrientɪd/ — sounds like **KUM-puh-nee AW-ree-en-tid** | /ˈkʌmpəni ˌɔːriəntɪd/ — sounds like **KUM-puh-nee OR-ee-en-tid**
+774. adj. Company-oriented | /ˈkʌmpəni ˌɔːrientɪd/ — sounds like **KUHM-puh-nee AW-ree-en-tid** | /ˈkʌmpəni ˌɔːriəntɪd/ — sounds like **KUHM-puh-nee OR-ee-en-tid**
 775. n. reforms | /rɪˈfɔːmz/ — sounds like **rih-FAWMZ** | /rɪˈfɔːrmz/ — sounds like **rih-FORMZ**
 776. phr. the Middle East | /ðə ˌmɪdəl ˈiːst/ — sounds like **thuh MID-uhl EEST** | /ðə ˌmɪdəl ˈiːst/ — sounds like **thuh MID-uhl EEST**
 777. phr. the World Bank | /ðə ˌwɜːld ˈbæŋk/ — sounds like **thuh WURLD bangk** | /ðə ˌwɝːld ˈbæŋk/ — sounds like **thuh WERLD bangk**
@@ -791,35 +791,35 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 784. n. East Asia | /ˌiːst ˈeɪʒə/ — sounds like **EEST AY-zhuh** | /ˌiːst ˈeɪʒə/ — sounds like **EEST AY-zhuh**
 785. adj. modern | /ˈmɒdən/ — sounds like **MOD-un** | /ˈmɑdɚn/ — sounds like **MAH-durn**
 786. buildings | /ˈbɪldɪŋz/ — sounds like **BIL-dingz** | /ˈbɪldɪŋz/ — sounds like **BIL-dingz**
-787. n. performance | /pəˈfɔːməns/ — sounds like **puh-FAWM-uhns** | /pərˈfɔrməns/ — sounds like **pər-FORM-əns**
+787. n. performance | /pəˈfɔːməns/ — sounds like **puh-FAWM-uhns** | /pərˈfɔrməns/ — sounds like **pur-FORM-uhns**
 788. requirements | /rɪˈkwaɪəmənts/ — sounds like **ri-KWYR-munts** | /rɪˈkwaɪəmənts/ — sounds like **ri-KWYR-munts**
 789. adv. at least | /æt liːst/ — sounds like **at LEEST** | /æt list/ — sounds like **at LEEST**
 790. v. satisfy | /ˈsætɪsfaɪ/ — sounds like **SAT-iss-fye** | /ˈsætɪsfaɪ/ — sounds like **SAT-iss-fye**
 791. pron. those | /ðəʊz/ — sounds like **THOHZ** | /ðoʊz/ — sounds like **THOHZ**
 792. n. codes | /kəʊdz/ — sounds like **KOHDZ** | /koʊdz/ — sounds like **KOHDZ**
-793. v. provide | /prəˈvaɪd/ — sounds like **pruh-VYD** | /prəˈvaɪd/ — sounds like **prə-VYD**
+793. v. provide | /prəˈvaɪd/ — sounds like **pruh-VYD** | /prəˈvaɪd/ — sounds like **pruh-VYD**
 794. adj. safe | /seɪf/ — sounds like **SAYF** | /seɪf/ — sounds like **SAYF**
 795. adj. healthy | /ˈhelθi/ — sounds like **HEL-thee** | /ˈhɛlθi/ — sounds like **HEL-thee**
-796. adj. comfortable | /ˈkʌmftəbəl/ — sounds like **KUMF-tuh-bul** | /ˈkʌmftəbəl/ — sounds like **KUMF-tə-bəl**
+796. adj. comfortable | /ˈkʌmftəbəl/ — sounds like **KUHMF-tuh-buhl** | /ˈkʌmftəbəl/ — sounds like **KUHMF-tuh-buhl**
 797. adj. conditioned | /kənˈdɪʃənd/ — sounds like **kun-DISH-und** | /kənˈdɪʃənd/ — sounds like **kun-DISH-und**
 798. n. environments | /ɪnˈvaɪrənmənts/ — sounds like **in-VY-ruhn-muhnts** | /ɪnˈvaɪrənmənts/ — sounds like **in-VY-ruhn-muhnts**
 799. n. energy | /ˈenədʒi/ — sounds like **EN-uh-jee** | /ˈenərdʒi/ — sounds like **EN-uhr-jee**
 800. n. materials | /məˈtɪəriəlz/ — sounds like **muh-TEER-ee-ulz** | /məˈtɪriəlz/ — sounds like **muh-TEER-ee-ulz**
 801. both | /bəʊθ/ — sounds like **BOHTH** | /bəʊθ/ — sounds like **BOHTH**
-802. adj. limited | /ˈlɪmɪtɪd/ — sounds like **LIM-ih-tid** | /ˈlɪmətəd/ — sounds like **LIM-ə-təd**
+802. adj. limited | /ˈlɪmɪtɪd/ — sounds like **LIM-ih-tid** | /ˈlɪmətəd/ — sounds like **LIM-uh-tuhd**
 803. v. supply | /səˈplaɪ/ — sounds like **suh-PLY** | /səˈplaɪ/ — sounds like **suh-PLY**
 804. v. build | /bɪld/ — sounds like **BILD** | /bɪld/ — sounds like **BILD**
-805. v. operate | /ˈɒpəreɪt/ — sounds like **OP-ə-rayt** | /ˈɑpəˌreɪt/ — sounds like **AH-pə-rayt**
+805. v. operate | /ˈɒpəreɪt/ — sounds like **OP-uh-rayt** | /ˈɑpəˌreɪt/ — sounds like **AH-puh-rayt**
 806. how | /haʊ/ — sounds like **HOW** | /haʊ/ — sounds like **HOW**
-807. n. transportation | /ˌtrænspɔːˈteɪʃən/ — sounds like **TRANS-paw-TAY-shun** | /ˌtrænspərˈteɪʃən/ — sounds like **TRANS-pər-TAY-shən**
+807. n. transportation | /ˌtrænspɔːˈteɪʃən/ — sounds like **TRANS-paw-TAY-shun** | /ˌtrænspərˈteɪʃən/ — sounds like **TRANS-pur-TAY-shuhn**
 808. goods | /ɡʊdz/ — sounds like **GOODZ** | /ɡʊdz/ — sounds like **GOODZ**
 809. n. water | /ˈwɔːtə/ — sounds like **WAW-tuh** | /ˈwɔːtɚ/ — sounds like **WAW-ter**
 810. n. cargo | /ˈkɑːɡəʊ/ — sounds like **KAHR-goh** | /ˈkɑːrɡoʊ/ — sounds like **KAHR-goh**
 811. n. boats | /bəʊts/ — sounds like **BOHTS** | /boʊts/ — sounds like **BOHTS**
 812. v. being | /ˈbiːɪŋ/ — sounds like **BEE-ing** | /ˈbiɪŋ/ — sounds like **BEE-ing**
-813. adj. some | /sʌm/ — sounds like **SUM** | /sʌm/ — sounds like **SUM**
+813. adj. some | /sʌm/ — sounds like **SUHM** | /sʌm/ — sounds like **SUHM**
 814. parts | /pɑːrts/ — sounds like **PARTS** | /pɑːrts/ — sounds like **PARTS**
-815. up | /ʌp/ — sounds like **UP** | /ʌp/ — sounds like **UP**
+815. up | /ʌp/ — sounds like **UHP** | /ʌp/ — sounds like **UHP**
 816. adv. ago | /əˈɡəʊ/ — sounds like **uh-GOH** | /əˈɡoʊ/ — sounds like **uh-GOH**
 817. v. trade | /treɪd/ — sounds like **TRAYD** | /treɪd/ — sounds like **TRAYD**
 818. v. sailing | /ˈseɪlɪŋ/ — sounds like **SAY-ling** | /ˈseɪlɪŋ/ — sounds like **SAY-ling**
@@ -829,18 +829,18 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 822. n. spices | /spaɪsɪz/ — sounds like **SPY-siz** | /spaɪsəz/ — sounds like **SPY-suz**
 823. n. perfumes | /ˈpɜːfjuːmz/ — sounds like **PUR-fyoomz** | /ˈpɝːfjuːmz/ — sounds like **PER-fyoomz**
 824. n. hand | /hænd/ — sounds like **HAND** | /hænd/ — sounds like **HAND**
-825. v. studying | /ˈstʌdiɪŋ/ — sounds like **STUD-ee-ing** | /ˈstʌdiɪŋ/ — sounds like **STUD-ee-ing**
-826. adv. abroad | /əˈbrɔːd/ — sounds like **ə-BRAWD** | /əˈbrɔd/ — sounds like **ə-BRAWD**
+825. v. studying | /ˈstʌdiɪŋ/ — sounds like **STUHD-ee-ing** | /ˈstʌdiɪŋ/ — sounds like **STUHD-ee-ing**
+826. adv. abroad | /əˈbrɔːd/ — sounds like **uh-BRAWD** | /əˈbrɔd/ — sounds like **uh-BRAWD**
 827. very | /ˈveri/ — sounds like **VER-ee** | /ˈveri/ — sounds like **VER-ee**
 828. n. option | /ˈɒpʃən/ — sounds like **OP-shun** | /ˈɑːpʃən/ — sounds like **AHP-shun**
-829. v. come | /kʌm/ — sounds like **KUM** | /kʌm/ — sounds like **KUM**
+829. v. come | /kʌm/ — sounds like **KUHM** | /kʌm/ — sounds like **KUHM**
 830. adj. wealthy | /ˈwelθi/ — sounds like **WEL-thee** | /ˈwelθi/ — sounds like **WEL-thee**
 831. v. believe | /bɪˈliːv/ — sounds like **bi-LEEV** | /bɪˈliv/ — sounds like **bi-LEEV**
 832. adv. overseas | /ˌəʊvəˈsiːz/ — sounds like **OH-vuh-SEEZ** | /ˌoʊvərˈsiz/ — sounds like **OH-vur-SEEZ**
 833. n. provides | /prəˈvaɪdz/ — sounds like **pruh-VYDZ** | /prəˈvaɪdz/ — sounds like **pruh-VYDZ**
 834. adj. deeper | /ˈdiːpə/ — sounds like **DEE-puh** | /ˈdiːpər/ — sounds like **DEE-per**
-835. n. understanding | /ˌʌndəˈstændɪŋ/ — sounds like **UN-duh-STAN-ding** | /ˌʌndərˈstændɪŋ/ — sounds like **UN-dur-STAN-ding**
-836. n. cultures | /ˈkʌltʃəz/ — sounds like **KUL-chuhz** | /ˈkʌltʃərz/ — sounds like **KUL-churz**
+835. n. understanding | /ˌʌndəˈstændɪŋ/ — sounds like **UHN-duh-STAN-ding** | /ˌʌndərˈstændɪŋ/ — sounds like **UHN-dur-STAN-ding**
+836. n. cultures | /ˈkʌltʃəz/ — sounds like **KUHL-chuhz** | /ˈkʌltʃərz/ — sounds like **KUHL-churz**
 837. v. develops | /dɪˈveləps/ — sounds like **dih-VEL-ups** | /dɪˈveləps/ — sounds like **dih-VEL-ups**
 838. n. communication | /kəˌmjuːnɪˈkeɪʃən/ — sounds like **kuh-MYOO-ni-KAY-shun** | /kəˌmjunəˈkeɪʃən/ — sounds like **kuh-MYOO-nuh-KAY-shun**
 839. n. skills | /skɪlz/ — sounds like **SKILZ** | /skɪlz/ — sounds like **SKILZ**
@@ -855,20 +855,20 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 848. n. value | /ˈvæljuː/ — sounds like **VAL-yoo** | /ˈvælju/ — sounds like **VAL-yoo**
 849. adj. interpersonal | /ˌɪntəˈpɜːsənəl/ — sounds like **in-tuh-PUR-suh-nul** | /ˌɪntərˈpɜːrsənəl/ — sounds like **in-tuhr-PUR-suh-nul**
 850. n. knowledge | /ˈnɒlɪdʒ/ — sounds like **NOL-ij** | /ˈnɑlɪdʒ/ — sounds like **NAH-lij**
-851. adj. cultural | /ˈkʌltʃərəl/ — sounds like **KUL-chuh-rul** | /ˈkʌltʃərəl/ — sounds like **KUL-chur-ul**
+851. adj. cultural | /ˈkʌltʃərəl/ — sounds like **KUHL-chuh-ruhl** | /ˈkʌltʃərəl/ — sounds like **KUHL-chur-uhl**
 852. n. background | /ˈbækɡraʊnd/ — sounds like **BACK-grownd** | /ˈbækˌɡraʊnd/ — sounds like **BACK-grownd**
 853. n. need | /niːd/ — sounds like **NEED** | /niːd/ — sounds like **NEED**
-854. prep. in order to | /ɪn ˈɔːdə tuː/ — sounds like **in AWR-duh too** | /ɪn ˈɔrdər tu/ — sounds like **in OR-dər too**
+854. prep. in order to | /ɪn ˈɔːdə tuː/ — sounds like **in AWR-duh too** | /ɪn ˈɔrdər tu/ — sounds like **in OR-dur too**
 855. v. exist | /ɪɡˈzɪst/ — sounds like **ig-ZIST** | /ɪɡˈzɪst/ — sounds like **ig-ZIST**
-856. adj. unsurprising | /ˌʌnsəˈpraɪzɪŋ/ — sounds like **un-suh-PRYE-zing** | /ˌʌnsərˈpraɪzɪŋ/ — sounds like **un-suhr-PRYE-zing**
+856. adj. unsurprising | /ˌʌnsəˈpraɪzɪŋ/ — sounds like **uhn-suh-PRYE-zing** | /ˌʌnsərˈpraɪzɪŋ/ — sounds like **uhn-suhr-PRYE-zing**
 857. v. producing | /prəˈdjuːsɪŋ/ — sounds like **pruh-DYOOS-ing** | /prəˈduːsɪŋ/ — sounds like **pruh-DOOS-ing**
-858. adj. current | /ˈkʌrənt/ — sounds like **KUR-unt** | /ˈkɝːənt/ — sounds like **KUR-unt**
+858. adj. current | /ˈkʌrənt/ — sounds like **KUR-uhnt** | /ˈkɝːənt/ — sounds like **KUR-unt**
 859. adj. environmental | /ɪnˌvaɪrənˈmentəl/ — sounds like **in-VY-run-MEN-tul** | /ɪnˌvaɪrənˈmɛntəl/ — sounds like **in-VY-run-MEN-tul**
 860. n. problems | /ˈprɒbləmz/ — sounds like **PROB-lumz** | /ˈprɑbləmz/ — sounds like **PRAH-blumz**
 861. n. pollution | /pəˈluːʃən/ — sounds like **puh-LOO-shun** | /pəˈluːʃən/ — sounds like **puh-LOO-shun**
 862. concerning | /kənˈsɜrnɪŋ/ — sounds like **kuhn-SUR-ning** | /kənˈsɜrnɪŋ/ — sounds like **kuhn-SUR-ning**
 863. n. impact | /ˈɪmpækt/ — sounds like **IM-pakt** | /ˈɪmpækt/ — sounds like **IM-pakt**
-864. n. combustion | /kəmˈbʌstʃən/ — sounds like **kum-BUS-chun** | /kəmˈbʌstʃən/ — sounds like **kum-BUS-chun**
+864. n. combustion | /kəmˈbʌstʃən/ — sounds like **kuhm-BUHS-chuhn** | /kəmˈbʌstʃən/ — sounds like **kuhm-BUHS-chuhn**
 865. n. fuels | /ˈfjuːəlz/ — sounds like **FYOO-uhlz** | /ˈfjuːəlz/ — sounds like **FYOO-uhlz**
 866. n. stations | /ˈsteɪʃənz/ — sounds like **STAY-shuhnz** | /ˈsteɪʃənz/ — sounds like **STAY-shuhnz**
 867. give | /ɡɪv/ — sounds like **GIV** | /ɡɪv/ — sounds like **GIV**
@@ -880,7 +880,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 873. adj. medical | /ˈmedɪkəl/ — sounds like **MED-i-kul** | /ˈmedɪkəl/ — sounds like **MED-i-kul**
 874. n. faculty | /ˈfækəlti/ — sounds like **FAK-ul-tee** | /ˈfækəlti/ — sounds like **FAK-ul-tee**
 875. traveled | /ˈtrævəld/ — sounds like **TRAV-uhld** | /ˈtrævəld/ — sounds like **TRAV-uhld**
-876. n. month | /mʌnθ/ — sounds like **MUNTH** | /mʌnθ/ — sounds like **MUNTH**
+876. n. month | /mʌnθ/ — sounds like **MUHNTH** | /mʌnθ/ — sounds like **MUHNTH**
 877. n. Ingeborg | /ˈɪŋɡəbɔːɡ/ — sounds like **ING-guh-bawrg** | /ˈɪŋɡərbɔːrɡ/ — sounds like **ING-guhr-bawrg**
 878. v. sitting | /ˈsɪtɪŋ/ — sounds like **SIT-ing** | /ˈsɪtɪŋ/ — sounds like **SIT-ing**
 879. n. room | /ruːm/ — sounds like **ROOM** | /rum/ — sounds like **ROOM**
@@ -891,22 +891,22 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 884. n. Germany | /ˈdʒɜːməni/ — sounds like **JUR-muh-nee** | /ˈdʒɜːrməni/ — sounds like **JUR-muh-nee**
 885. v. impressed | /ɪmˈprest/ — sounds like **im-PREST** | /ɪmˈprest/ — sounds like **im-PREST**
 886. adj. special | /ˈspeʃəl/ — sounds like **SPESH-ul** | /ˈspeʃəl/ — sounds like **SPESH-ul**
-887. n. ceremony | /ˈserəməni/ — sounds like **SER-uh-muh-nee** | /ˈsɛrəˌmoʊni/ — sounds like **SER-ə-moh-nee**
+887. n. ceremony | /ˈserəməni/ — sounds like **SER-uh-muh-nee** | /ˈsɛrəˌmoʊni/ — sounds like **SER-uh-moh-nee**
 888. phr. took place | /ˌtʊk ˈpleɪs/ — sounds like **tuuk PLAYS** | /ˌtʊk ˈpleɪs/ — sounds like **tuuk PLAYS**
-889. n. centre | /ˈsentə/ — sounds like **SEN-tə** | /ˈsɛntɚ/ — sounds like **SEN-ter**
+889. n. centre | /ˈsentə/ — sounds like **SEN-tuh** | /ˈsɛntɚ/ — sounds like **SEN-ter**
 890. n. Tuesday | /ˈtjuːzdeɪ/ — sounds like **TYOOZ-day** | /ˈtuːzdeɪ/ — sounds like **TOOZ-day**
-891. adv. finally | /ˈfaɪnəli/ — sounds like **FY-nə-lee** | /ˈfaɪnəli/ — sounds like **FY-nə-lee**
+891. adv. finally | /ˈfaɪnəli/ — sounds like **FY-nuh-lee** | /ˈfaɪnəli/ — sounds like **FY-nuh-lee**
 892. v. received | /rɪˈsiːvd/ — sounds like **rih-SEEVD** | /rɪˈsiːvd/ — sounds like **rih-SEEVD**
 893. n. Ph.D. | /ˌpiːeɪtʃˈdiː/ — sounds like **PEE-AYCH-DEE** | /ˌpiːeɪtʃˈdiː/ — sounds like **PEE-AYCH-DEE**
 894. n. nazis | /ˈnɑːtsiz/ — sounds like **NAHT-seez** | /ˈnɑːtsiz/ — sounds like **NAHT-seez**
 895. n. stole | /stəʊl/ — sounds like **STOHL** | /stoʊl/ — sounds like **STOHL**
 896. v. think | /θɪŋk/ — sounds like **THINGK** | /θɪŋk/ — sounds like **THINGK**
-897. adj. long-distance | /ˌlɒŋ ˈdɪstəns/ — sounds like **LONG DIS-tuns** | /ˌlɔŋ ˈdɪstəns/ — sounds like **LAWNG DIS-təns**
+897. adj. long-distance | /ˌlɒŋ ˈdɪstəns/ — sounds like **LONG DIS-tuns** | /ˌlɔŋ ˈdɪstəns/ — sounds like **LAWNG DIS-tuhns**
 898. n. fliers | /ˈflaɪəz/ — sounds like **FLY-uhz** | /ˈflaɪərz/ — sounds like **FLY-urz**
-899. n. Golden-plover | /ˌɡəʊldən ˈplʌvə/ — sounds like **GOHL-duhn PLUV-uh** | /ˌɡoʊldən ˈplʌvər/ — sounds like **GOHL-duhn PLUV-er**
-900. adj. White-rumped | /ˌwaɪt ˈrʌmpt/ — sounds like **wyt RUMPT** | /ˌwaɪt ˈrʌmpt/ — sounds like **wyt RUMPT**
+899. n. Golden-plover | /ˌɡəʊldən ˈplʌvə/ — sounds like **GOHL-duhn PLUHV-uh** | /ˌɡoʊldən ˈplʌvər/ — sounds like **GOHL-duhn PLUHV-er**
+900. adj. White-rumped | /ˌwaɪt ˈrʌmpt/ — sounds like **wyt RUHMPT** | /ˌwaɪt ˈrʌmpt/ — sounds like **wyt RUHMPT**
 901. n. sandpiper | /ˈsændpaɪpə/ — sounds like **SAND-pye-puh** | /ˈsændpaɪpər/ — sounds like **SAND-pye-puhr**
-902. phr. picked up | /ˌpɪkt ˈʌp/ — sounds like **PIKT up** | /ˌpɪkt ˈʌp/ — sounds like **PIKT up**
+902. phr. picked up | /ˌpɪkt ˈʌp/ — sounds like **PIKT uhp** | /ˌpɪkt ˈʌp/ — sounds like **PIKT uhp**
 903. n. spores | /spɔːz/ — sounds like **SPAWZ** | /spɔːrz/ — sounds like **SPORZ**
 904. v. lining | /ˈlaɪnɪŋ/ — sounds like **LY-ning** | /ˈlaɪnɪŋ/ — sounds like **LY-ning**
 905. n. nests | /nests/ — sounds like **NESTS** | /nests/ — sounds like **NESTS**
@@ -930,24 +930,24 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 923. adj. processed | /ˈprəʊsest/ — sounds like **PROH-sest** | /ˈproʊsest/ — sounds like **PROH-sest**
 924. v. influencing | /ˈɪnfluənsɪŋ/ — sounds like **IN-floo-uhn-sing** | /ˈɪnfluənsɪŋ/ — sounds like **IN-floo-uhn-sing**
 925. n. extent | /ɪkˈstent/ — sounds like **ik-STENT** | /ɪkˈstɛnt/ — sounds like **ik-STENT**
-926. n. judges | /ˈdʒʌdʒɪz/ — sounds like **JUJ-iz** | /ˈdʒʌdʒɪz/ — sounds like **JUJ-iz**
+926. n. judges | /ˈdʒʌdʒɪz/ — sounds like **JUHJ-iz** | /ˈdʒʌdʒɪz/ — sounds like **JUHJ-iz**
 927. v. rely | /rɪˈlaɪ/ — sounds like **ri-LYE** | /rɪˈlaɪ/ — sounds like **ri-LYE**
 928. adj. pre-existing | /ˌpriːɪɡˈzɪstɪŋ/ — sounds like **pree-ig-ZIS-ting** | /ˌpriːɪɡˈzɪstɪŋ/ — sounds like **pree-ig-ZIS-ting**
 929. adj. internal | /ɪnˈtɜːnəl/ — sounds like **in-TUR-nul** | /ɪnˈtɜːrnəl/ — sounds like **in-TUR-nul**
-930. v. focus on | /ˈfəʊkəs ɒn/ — sounds like **FOH-kuhs on** | /ˈfoʊkəs ɑn/ — sounds like **FOH-kəs ahn**
+930. v. focus on | /ˈfəʊkəs ɒn/ — sounds like **FOH-kuhs on** | /ˈfoʊkəs ɑn/ — sounds like **FOH-kuhs ahn**
 931. adj. external | /ɪkˈstɜːnəl/ — sounds like **ik-STUR-nul** | /ɪkˈstɜːrnəl/ — sounds like **ik-STUR-nul**
 932. adj. holistic | /həʊˈlɪstɪk/ — sounds like **hoh-LIS-tik** | /hoʊˈlɪstɪk/ — sounds like **hoh-LIS-tik**
 933. adj. top-down | /ˈtɒpdaʊn/ — sounds like **TOP-DOWN** | /ˈtɑːpdaʊn/ — sounds like **TAHP-DOWN**
 934. v. processing | /ˈprəʊsesɪŋ/ — sounds like **PROH-sess-ing** | /ˈprɑˌsɛsɪŋ/ — sounds like **PRAH-sess-ing**
 935. v. recruit | /rɪˈkruːt/ — sounds like **ri-KROOT** | /rɪˈkruːt/ — sounds like **ri-KROOT**
 936. adj. stimulus-driven | /ˈstɪmjələs ˌdrɪvən/ — sounds like **STIM-yuh-luhs DRIV-uhn** | /ˈstɪmjələs ˌdrɪvən/ — sounds like **STIM-yuh-luhs DRIV-uhn**
-937. adj. Bottom-up | /ˌbɒtəm ˈʌp/ — sounds like **BOT-uhm UP** | /ˌbɑːtəm ˈʌp/ — sounds like **BAH-tuhm UP**
-938. adj. Roman | /ˈrəʊmən/ — sounds like **ROH-mun** | /ˈroʊmən/ — sounds like **ROH-mən**
+937. adj. Bottom-up | /ˌbɒtəm ˈʌp/ — sounds like **BOT-uhm UHP** | /ˌbɑːtəm ˈʌp/ — sounds like **BAH-tuhm UHP**
+938. adj. Roman | /ˈrəʊmən/ — sounds like **ROH-mun** | /ˈroʊmən/ — sounds like **ROH-muhn**
 939. n. writers | /ˈraɪtəz/ — sounds like **RY-tuhz** | /ˈraɪtərz/ — sounds like **RY-turz**
 940. n. orators | /ˈɒrətəz/ — sounds like **OR-uh-tuhz** | /ˈɔːrəterz/ — sounds like **OR-uh-terz**
 941. v. expand | /ɪkˈspænd/ — sounds like **ik-SPAND** | /ɪkˈspænd/ — sounds like **ik-SPAND**
 942. adj. imaginative | /ɪˈmædʒɪnətɪv/ — sounds like **i-MAJ-i-nuh-tiv** | /ɪˈmædʒɪnətɪv/ — sounds like **i-MAJ-i-nuh-tiv**
-943. adj. intellectual | /ˌɪntəˈlektʃʊəl/ — sounds like **IN-tə-LEK-choo-uhl** | /ˌɪntəˈlɛktʃuəl/ — sounds like **IN-tə-LEK-choo-əl**
+943. adj. intellectual | /ˌɪntəˈlektʃʊəl/ — sounds like **IN-tuh-LEK-choo-uhl** | /ˌɪntəˈlɛktʃuəl/ — sounds like **IN-tuh-LEK-choo-uhl**
 944. n. horizons | /həˈraɪzənz/ — sounds like **huh-RY-zuhnz** | /həˈraɪzənz/ — sounds like **huh-RY-zuhnz**
 945. v. refine | /rɪˈfaɪn/ — sounds like **ri-FYN** | /rɪˈfaɪn/ — sounds like **ri-FYN**
 946. adj. Greek | /ɡriːk/ — sounds like **GREEK** | /ɡrik/ — sounds like **GREEK**
@@ -955,31 +955,31 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 948. n. early | /ˈɜːli/ — sounds like **UR-lee** | /ˈɝːli/ — sounds like **UR-lee**
 949. n. kinds | /kaɪndz/ — sounds like **KYNDZ** | /kaɪndz/ — sounds like **KYNDZ**
 950. n. recording | /rɪˈkɔːdɪŋ/ — sounds like **ri-KAWR-ding** | /rɪˈkɔːrdɪŋ/ — sounds like **ri-KAWR-ding**
-951. n. examination | /ɪɡˌzæmɪˈneɪʃən/ — sounds like **ig-ZAM-ih-NAY-shun** | /ɪɡˌzæməˈneɪʃən/ — sounds like **ig-ZAM-ə-NAY-shən**
-952. adj. public | /ˈpʌblɪk/ — sounds like **PUB-lik** | /ˈpʌblɪk/ — sounds like **PUB-lik**
+951. n. examination | /ɪɡˌzæmɪˈneɪʃən/ — sounds like **ig-ZAM-ih-NAY-shun** | /ɪɡˌzæməˈneɪʃən/ — sounds like **ig-ZAM-uh-NAY-shuhn**
+952. adj. public | /ˈpʌblɪk/ — sounds like **PUHB-lik** | /ˈpʌblɪk/ — sounds like **PUHB-lik**
 953. behaviour | /bɪˈheɪvjə/ — sounds like **bih-HAYV-yur** | /bɪˈheɪvjə/ — sounds like **bih-HAYV-yur**
 954. adj. famous | /ˈfeɪməs/ — sounds like **FAY-muhs** | /ˈfeɪməs/ — sounds like **FAY-muhs**
 955. n. men | /men/ — sounds like **MEN** | /mɛn/ — sounds like **MEN**
 956. n. art | /ɑːt/ — sounds like **AHT** | /ɑrt/ — sounds like **ART**
 957. adj. satirical | /səˈtɪrɪkəl/ — sounds like **suh-TIR-i-kul** | /səˈtɪrɪkəl/ — sounds like **suh-TIR-i-kul**
-958. n. comedy | /ˈkɒmədi/ — sounds like **KOM-uh-dee** | /ˈkɑmədi/ — sounds like **KAH-mə-dee**
+958. n. comedy | /ˈkɒmədi/ — sounds like **KOM-uh-dee** | /ˈkɑmədi/ — sounds like **KAH-muh-dee**
 959. n. drama | /ˈdrɑːmə/ — sounds like **DRAH-muh** | /ˈdrɑːmə/ — sounds like **DRAH-muh**
-960. adj. understandable | /ˌʌndəˈstændəbəl/ — sounds like **UN-duh-STAN-duh-bul** | /ˌʌndərˈstændəbəl/ — sounds like **UN-dər-STAN-də-bəl**
+960. adj. understandable | /ˌʌndəˈstændəbəl/ — sounds like **UHN-duh-STAN-duh-buhl** | /ˌʌndərˈstændəbəl/ — sounds like **UHN-dur-STAN-duh-buhl**
 961. n. cases | /ˈkeɪsɪz/ — sounds like **KAY-siz** | /ˈkeɪsɪz/ — sounds like **KAY-siz**
 962. n. spite | /spaɪt/ — sounds like **SPYTE** | /spaɪt/ — sounds like **SPYTE**
 963. high | /haɪ/ — sounds like **HY** | /haɪ/ — sounds like **HY**
 964. n. token | /ˈtəʊkən/ — sounds like **TOH-kun** | /ˈtoʊkən/ — sounds like **TOH-kun**
-965. adj. poor | /pʊə/ — sounds like **POO-ə** | /pʊr/ — sounds like **POOR**
-966. adj. sustainable | /səˈsteɪnəbəl/ — sounds like **suh-STAY-nuh-bul** | /səˈsteɪnəbəl/ — sounds like **sə-STAY-nə-bəl**
-967. n. numbers | /ˈnəmbəz/ — sounds like **NUHMBUHZ** | /ˈnəmbərz/ — sounds like **NUHMBURZ**
-968. pron. us | /ʌs/ — sounds like **USS** | /ʌs/ — sounds like **USS**
+965. adj. poor | /pʊə/ — sounds like **POO-uh** | /pʊr/ — sounds like **POOR**
+966. adj. sustainable | /səˈsteɪnəbəl/ — sounds like **suh-STAY-nuh-bul** | /səˈsteɪnəbəl/ — sounds like **suh-STAY-nuh-buhl**
+967. n. numbers | /ˈnʌmbəz/ — sounds like **NUHM-buhz** | /ˈnʌmbərz/ — sounds like **NUHM-burz**
+968. pron. us | /ʌs/ — sounds like **UHSS** | /ʌs/ — sounds like **UHSS**
 969. phr. after all | /ˈæftə ɔl/ — sounds like **AHF-tuh AWL** | /ˈæftər ɔl/ — sounds like **AF-tur AWL**
 970. adj. staggering | /ˈstæɡərɪŋ/ — sounds like **STAG-uh-ring** | /ˈstæɡərɪŋ/ — sounds like **STAG-uh-ring**
 971. n. fifteen | /ˌfɪfˈtiːn/ — sounds like **FIF-TEEN** | /ˌfɪfˈtin/ — sounds like **FIF-TEEN**
 972. v. pay | /peɪ/ — sounds like **PAY** | /peɪ/ — sounds like **PAY**
 973. n. workforce | /ˈwɜːkfɔːs/ — sounds like **WURK-fawss** | /ˈwɝːkfɔrs/ — sounds like **WURK-forss**
-974. n. dollars | /ˈdɒləz/ — sounds like **DOL-uhz** | /ˈdɑlərz/ — sounds like **DAH-lərz**
-975. n. one | /wʌn/ — sounds like **WUN** | /wʌn/ — sounds like **WUN**
+974. n. dollars | /ˈdɒləz/ — sounds like **DOL-uhz** | /ˈdɑlərz/ — sounds like **DAH-lurz**
+975. n. one | /wʌn/ — sounds like **WUHN** | /wʌn/ — sounds like **WUHN**
 976. phr. for instance | /fɔːr ˈɪnstəns/ — sounds like **faw IN-stuhns** | /fɔːr ˈɪnstəns/ — sounds like **for IN-stuhns**
 977. n. nation | /ˈneɪʃən/ — sounds like **NAY-shun** | /ˈneɪʃən/ — sounds like **NAY-shun**
 978. n. photo | /ˈfəʊtəʊ/ — sounds like **FOH-toh** | /ˈfoʊtoʊ/ — sounds like **FOH-toh**
@@ -999,7 +999,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 992. n. legs | /leɡz/ — sounds like **LEGZ** | /leɡz/ — sounds like **LEGZ**
 993. appears | /əˈpɪəz/ — sounds like **uh-PEERZ** | /əˈpɪəz/ — sounds like **uh-PEERZ**
 994. v. forcing | /ˈfɔrsɪŋ/ — sounds like **FOR-sing** | /ˈfɔrsɪŋ/ — sounds like **FOR-sing**
-995. n. muzzle | /ˈmʌzəl/ — sounds like **MUZ-ul** | /ˈmʌzəl/ — sounds like **MUZ-ul**
+995. n. muzzle | /ˈmʌzəl/ — sounds like **MUHZ-uhl** | /ˈmʌzəl/ — sounds like **MUHZ-uhl**
 996. n. back | /bæk/ — sounds like **BAK** | /bæk/ — sounds like **BAK**
 997. n. window | /ˈwɪndəʊ/ — sounds like **WIN-doh** | /ˈwɪndoʊ/ — sounds like **WIN-doh**
 998. n. Atlantis | /ətˈlæntɪs/ — sounds like **ut-LAN-tis** | /ətˈlæntɪs/ — sounds like **ut-LAN-tis**
@@ -1007,7 +1007,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1000. adj. tantalizing | /ˈtæntəlaɪzɪŋ/ — sounds like **TAN-tuh-lye-zing** | /ˈtæntəlaɪzɪŋ/ — sounds like **TAN-tuh-lye-zing**
 1001. n. blend | /blend/ — sounds like **BLEND** | /blend/ — sounds like **BLEND**
 1002. n. fantasy | /ˈfæntəsi/ — sounds like **FAN-tuh-see** | /ˈfæntəsi/ — sounds like **FAN-tuh-see**
-1003. n. mystery | /ˈmɪstəri/ — sounds like **MIS-tuh-ree** | /ˈmɪstəri/ — sounds like **MIS-tər-ee**
+1003. n. mystery | /ˈmɪstəri/ — sounds like **MIS-tuh-ree** | /ˈmɪstəri/ — sounds like **MIS-tur-ee**
 1004. v. tell | /tel/ — sounds like **TEL** | /tɛl/ — sounds like **TEL**
 1005. adj. rich | /rɪtʃ/ — sounds like **RICH** | /rɪtʃ/ — sounds like **RICH**
 1006. adj. glorious | /ˈɡlɔːriəs/ — sounds like **GLAWR-ee-uhs** | /ˈɡlɔːriəs/ — sounds like **GLAWR-ee-uhs**
@@ -1026,49 +1026,49 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1019. adj. white-tailed | /ˈwaɪt teɪld/ — sounds like **WYTE-tayld** | /ˈwaɪt teɪld/ — sounds like **WYTE-tayld**
 1020. n. deer | /dɪə/ — sounds like **DEER** | /dɪr/ — sounds like **DEER**
 1021. n. grey | /greɪ/ — sounds like **GRAY** | /greɪ/ — sounds like **GRAY**
-1022. n. squirrels | /skwəəlz/ — sounds like **SKWUHUHLZ** | /skwərəlz/ — sounds like **SKWURUHLZ**
+1022. n. squirrels | /ˈskwɪrəlz/ — sounds like **SKWIR-uhlz** | /ˈskwɝːəlz/ — sounds like **SKWUR-uhlz**
 1023. n. raccoons | /ræˈkunz/ — sounds like **RAKUNZ** | /ræˈkunz/ — sounds like **RAKUNZ**
 1024. v. photographed | /ˈfəʊtəˌgræft/ — sounds like **FOH-tuh-graft** | /ˈfoʊtəˌgræft/ — sounds like **FOH-tuh-graft**
-1025. adv. somewhat | /ˈsʌmwɒt/ — sounds like **SUM-wot** | /ˈsʌmˌwɑt/ — sounds like **SUM-waht**
+1025. adv. somewhat | /ˈsʌmwɒt/ — sounds like **SUHM-wot** | /ˈsʌmˌwɑt/ — sounds like **SUHM-waht**
 1026. adj. less | /lɛs/ — sounds like **LESS** | /lɛs/ — sounds like **LESS**
 1027. n. coyotes | /kaɪˈəʊtiːz/ — sounds like **ky-OH-teez** | /kaɪˈoʊtiːz/ — sounds like **ky-OH-teez**
 1028. n. hiking | /ˈhaɪkɪŋ/ — sounds like **HYE-king** | /ˈhaɪkɪŋ/ — sounds like **HYE-king**
 1029. n. trails | /treɪlz/ — sounds like **TRAYLZ** | /treɪlz/ — sounds like **TRAYLZ**
-1030. n. predators | /ˈprɛdətəz/ — sounds like **PREDUHTUHZ** | /ˈprɛdətərz/ — sounds like **PREDUHTURZ**
+1030. n. predators | /ˈprɛdətəz/ — sounds like **PRED-uh-tuhz** | /ˈprɛdətərz/ — sounds like **PRED-uh-turz**
 1031. adv. actually | /ˈæktʃuəli/ — sounds like **AK-choo-uh-lee** | /ˈæktʃuəli/ — sounds like **AK-choo-uh-lee**
-1032. v. preferred | /prɪˈfəd/ — sounds like **PRIFUHD** | /prɪˈfərd/ — sounds like **PRIFURD**
+1032. v. preferred | /prɪˈfɜːd/ — sounds like **pri-FURD** | /prɪˈfɝːd/ — sounds like **pri-FURD**
 1033. v. reading | /ˈriːdɪŋ/ — sounds like **REE-ding** | /ˈridɪŋ/ — sounds like **REE-ding**
 1034. n. own | /əʊn/ — sounds like **OHN** | /oʊn/ — sounds like **OHN**
-1035. n. subject | /ˈsʌbdʒɪkt/ — sounds like **SUB-jikt** | /ˈsʌbdʒɪkt/ — sounds like **SUB-jikt**
+1035. n. subject | /ˈsʌbdʒɪkt/ — sounds like **SUHB-jikt** | /ˈsʌbdʒɪkt/ — sounds like **SUHB-jikt**
 1036. phr. slows down | /ˌsləʊz ˈdaʊn/ — sounds like **slohz DOWN** | /ˌsloʊz ˈdaʊn/ — sounds like **slohz DOWN**
 1037. n. comprehension | /ˌkɒmprɪˈhenʃən/ — sounds like **kom-pri-HEN-shun** | /ˌkɑːmprɪˈhenʃən/ — sounds like **kahm-pri-HEN-shun**
-1038. adj. secure | /sɪˈkjʊə/ — sounds like **si-KYOOR** | /səˈkjʊr/ — sounds like **sə-KYOOR**
+1038. adj. secure | /sɪˈkjʊə/ — sounds like **si-KYOOR** | /səˈkjʊr/ — sounds like **suh-KYOOR**
 1039. expresses | /ɪkˈspresɪz/ — sounds like **ik-SPRES-iz** | /ɪkˈspresɪz/ — sounds like **ik-SPRES-iz**
 1040. pron. himself | /hɪmˈsɛlf/ — sounds like **him-SELF** | /hɪmˈsɛlf/ — sounds like **him-SELF**
 1041. adv. slowly | /ˈsləʊli/ — sounds like **SLOH-lee** | /ˈsloʊli/ — sounds like **SLOH-lee**
 1042. v. fails | /feɪlz/ — sounds like **FAYLZ** | /feɪlz/ — sounds like **FAYLZ**
-1043. v. convey | /kənˈveɪ/ — sounds like **kun-VAY** | /kənˈveɪ/ — sounds like **kən-VAY**
+1043. v. convey | /kənˈveɪ/ — sounds like **kun-VAY** | /kənˈveɪ/ — sounds like **kuhn-VAY**
 1044. n. ideas | /aɪˈdɪəz/ — sounds like **eye-DEERZ** | /aɪˈdiz/ — sounds like **eye-DEEZ**
-1045. adj. disappointed | /ˌdɪsəˈpɔɪntɪd/ — sounds like **DIS-uh-POYN-tid** | /ˌdɪsəˈpɔɪntəd/ — sounds like **DIS-ə-POYN-təd**
-1046. under | /ˈʌndər/ — sounds like **UN-dur** | /ˈʌndər/ — sounds like **UN-dur**
+1045. adj. disappointed | /ˌdɪsəˈpɔɪntɪd/ — sounds like **DIS-uh-POYN-tid** | /ˌdɪsəˈpɔɪntəd/ — sounds like **DIS-uh-POYN-tuhd**
+1046. under | /ˈʌndər/ — sounds like **UHN-dur** | /ˈʌndər/ — sounds like **UHN-dur**
 1047. n. pressure | /ˈpreʃə/ — sounds like **PRESH-uh** | /ˈpreʃər/ — sounds like **PRESH-uhr**
-1048. adj. unnecessary | /ʌnˈnesəsəri/ — sounds like **un-NES-uh-suh-ree** | /ʌnˈnɛsəˌsɛri/ — sounds like **un-NES-ə-ser-ee**
+1048. adj. unnecessary | /ʌnˈnesəsəri/ — sounds like **uhn-NES-uh-suh-ree** | /ʌnˈnɛsəˌsɛri/ — sounds like **uhn-NES-uh-ser-ee**
 1049. n. mistakes | /mɪˈsteɪks/ — sounds like **MISTAYKS** | /mɪˈsteɪks/ — sounds like **MISTAYKS**
 1050. n. knows | /nəʊz/ — sounds like **NOHZ** | /noʊz/ — sounds like **NOHZ**
 1051. adj. correct | /kəˈrekt/ — sounds like **kuh-REKT** | /kəˈrekt/ — sounds like **kuh-REKT**
 1052. adj. social | /ˈsəʊʃəl/ — sounds like **SOH-shul** | /ˈsoʊʃəl/ — sounds like **SOH-shul**
-1053. n. relations | /riˈleɪʃənz/ — sounds like **RILAYSHUHNZ** | /riˈleɪʃənz/ — sounds like **RILAYSHUHNZ**
+1053. n. relations | /riˈleɪʃənz/ — sounds like **ri-LAY-shuhnz** | /riˈleɪʃənz/ — sounds like **ri-LAY-shuhnz**
 1054. n. cannot | /ˈkænɑt/ — sounds like **KANT** | /ˈkænɑt/ — sounds like **KANT**
 1055. adj. right | /raɪt/ — sounds like **RYT** | /raɪt/ — sounds like **RYT**
 1056. n. phase | /feɪz/ — sounds like **FAYZ** | /feɪz/ — sounds like **FAYZ**
-1057. adj. enough | /ɪˈnʌf/ — sounds like **i-NUF** | /ɪˈnʌf/ — sounds like **i-NUF**
+1057. adj. enough | /ɪˈnʌf/ — sounds like **i-NUHF** | /ɪˈnʌf/ — sounds like **i-NUHF**
 1058. v. keep | /kiːp/ — sounds like **KEEP** | /kip/ — sounds like **KEEP**
 1059. n. conversation | /ˌkɒnvəˈseɪʃən/ — sounds like **KON-vuh-SAY-shun** | /ˌkɑnvərˈseɪʃən/ — sounds like **KAHN-vur-SAY-shun**
 1060. v. going | /gəʊɪŋ/ — sounds like **GOHING** | /goʊɪŋ/ — sounds like **GOHING**
 1061. n. betrays | /bɪˈtreɪz/ — sounds like **BITRAYZ** | /bɪˈtreɪz/ — sounds like **BITRAYZ**
-1062. n. dullness | /ˈdʌlnəs/ — sounds like **DUL-nuhs** | /ˈdʌlnəs/ — sounds like **DUL-nuhs**
-1063. n. coldness | /ˈkəʊldnəs/ — sounds like **KOHLDNUHS** | /ˈkoʊldnəs/ — sounds like **KOHLDNUHS**
-1064. n. worst | /wəst/ — sounds like **WUHST** | /wərst/ — sounds like **WURST**
+1062. n. dullness | /ˈdʌlnəs/ — sounds like **DUHL-nuhs** | /ˈdʌlnəs/ — sounds like **DUHL-nuhs**
+1063. n. coldness | /ˈkəʊldnəs/ — sounds like **KOHLD-nuhs** | /ˈkoʊldnəs/ — sounds like **KOHLD-nuhs**
+1064. n. worst | /wɜːst/ — sounds like **WURST** | /wɝːst/ — sounds like **WURST**
 1065. n. rudeness | /ˈruːdnəs/ — sounds like **ROOD-nuhs** | /ˈruːdnəs/ — sounds like **ROOD-nuhs**
 1066. adv. instead | /ɪnˈsted/ — sounds like **in-STED** | /ɪnˈstɛd/ — sounds like **in-STED**
 1067. n. seems | /simz/ — sounds like **SIMZ** | /simz/ — sounds like **SIMZ**
@@ -1078,42 +1078,42 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1071. v. continue | /kənˈtɪnjuː/ — sounds like **kun-TIN-yoo** | /kənˈtɪnjuː/ — sounds like **kun-TIN-yoo**
 1072. v. defy | /dɪˈfaɪ/ — sounds like **di-FYE** | /dɪˈfaɪ/ — sounds like **di-FYE**
 1073. adj. cosmic | /ˈkɒzmɪk/ — sounds like **KOZ-mik** | /ˈkɑzmɪk/ — sounds like **KAHZ-mik**
-1074. n. chirps | /ʧəps/ — sounds like **UHPS** | /ʧərps/ — sounds like **URPS**
-1075. n. thousandth | /ˈθaʊzəndθ/ — sounds like **THOW-zuhndth** | /ˈθaʊzəndθ/ — sounds like **THOW-zəndth**
-1076. n. characteristics | /ˌkærəktəˈrɪstɪks/ — sounds like **KAR-uk-tuh-RIS-tiks** | /ˌkærəktəˈrɪstɪks/ — sounds like **KAR-ək-tə-RIS-tiks**
-1077. n. pulses | /ˈpəlsɪz/ — sounds like **PUHLSIZ** | /ˈpəlsɪz/ — sounds like **PUHLSIZ**
+1074. n. chirps | /tʃɜːps/ — sounds like **CHURPS** | /tʃɝːps/ — sounds like **CHURPS**
+1075. n. thousandth | /ˈθaʊzəndθ/ — sounds like **THOW-zuhndth** | /ˈθaʊzəndθ/ — sounds like **THOW-zuhndth**
+1076. n. characteristics | /ˌkærəktəˈrɪstɪks/ — sounds like **KAR-uk-tuh-RIS-tiks** | /ˌkærəktəˈrɪstɪks/ — sounds like **KAR-uhk-tuh-RIS-tiks**
+1077. n. pulses | /ˈpʌlsɪz/ — sounds like **PUHLS-iz** | /ˈpʌlsɪz/ — sounds like **PUHLS-iz**
 1078. suggested | /səˈdʒestɪd/ — sounds like **suh-JES-tid** | /səˈdʒestɪd/ — sounds like **suh-JES-tid**
 1079. n. galaxies | /ˈɡæləksiz/ — sounds like **GAL-uhk-seez** | /ˈɡæləksiz/ — sounds like **GAL-uhk-seez**
 1080. n. Light-years | /ˈlaɪˌtjɪrz/ — sounds like **LEYETYIRZ** | /ˈlaɪˌtjɪrz/ — sounds like **LEYETYIRZ**
 1081. adv. away | /əˈweɪ/ — sounds like **uh-WAY** | /əˈweɪ/ — sounds like **uh-WAY**
 1082. works | /wɜːks/ — sounds like **WURKS** | /wɜːks/ — sounds like **WURKS**
-1083. adv. much | /mʌtʃ/ — sounds like **MUCH** | /mʌtʃ/ — sounds like **MUCH**
-1084. adj. closer | /ˈkləʊzə/ — sounds like **KLOH-zə** | /ˈkloʊzər/ — sounds like **KLOH-zer**
+1083. adv. much | /mʌtʃ/ — sounds like **MUHCH** | /mʌtʃ/ — sounds like **MUHCH**
+1084. adj. closer | /ˈkləʊzə/ — sounds like **KLOH-zuh** | /ˈkloʊzər/ — sounds like **KLOH-zer**
 1085. n. origin-flaring | /origin-flaring/ — sounds like **ORIGIN-FLARING** | /origin-flaring/ — sounds like **ORIGIN-FLARING**
 1086. n. Star | /stɑː/ — sounds like **STAR** | /stɑːr/ — sounds like **STAR**
 1087. prep. within | /wɪˈðɪn/ — sounds like **wi-THIN** | /wɪˈðɪn/ — sounds like **wi-THIN**
 1088. n. own galaxy | /əʊn ˈgæləksi/ — sounds like **OHN GAL-uhk-see** | /oʊn ˈgæləksi/ — sounds like **OHN GAL-uhk-see**
 1089. n. population | /ˌpɒpjʊˈleɪʃən/ — sounds like **pop-yuh-LAY-shun** | /ˌpɑːpjəˈleɪʃən/ — sounds like **pahp-yuh-LAY-shun**
-1090. n. United States | /juˈnaɪtɪd steɪts/ — sounds like **yoo-NY-tid stayts** | /juˈnaɪtəd steɪts/ — sounds like **yoo-NY-təd stayts**
-1091. adj. developed | /dɪˈveləpt/ — sounds like **di-VEL-upt** | /dɪˈvɛləpt/ — sounds like **di-VEL-əpt**
-1092. n. countries | /ˈkʌntriz/ — sounds like **KUN-triz** | /ˈkʌntriz/ — sounds like **KUN-triz**
+1090. n. United States | /juˈnaɪtɪd steɪts/ — sounds like **yoo-NY-tid stayts** | /juˈnaɪtəd steɪts/ — sounds like **yoo-NY-tuhd stayts**
+1091. adj. developed | /dɪˈveləpt/ — sounds like **di-VEL-upt** | /dɪˈvɛləpt/ — sounds like **di-VEL-uhpt**
+1092. n. countries | /ˈkʌntriz/ — sounds like **KUHN-triz** | /ˈkʌntriz/ — sounds like **KUHN-triz**
 1093. n. rate | /reɪt/ — sounds like **RAYT** | /reɪt/ — sounds like **RAYT**
 1094. adj. slow | /sləʊ/ — sounds like **SLOH** | /sloʊ/ — sounds like **SLOH**
 1095. adj. developing | /dɪˈveləpɪŋ/ — sounds like **di-VEL-uh-ping** | /dɪˈvɛləpɪŋ/ — sounds like **di-VEL-uh-ping**
-1096. adj. bustling | /ˈbʌslɪŋ/ — sounds like **BUS-ling** | /ˈbʌslɪŋ/ — sounds like **BUS-ling**
+1096. adj. bustling | /ˈbʌslɪŋ/ — sounds like **BUHS-ling** | /ˈbʌslɪŋ/ — sounds like **BUHS-ling**
 1097. well | /wel/ — sounds like **WEL** | /wel/ — sounds like **WEL**
 1098. n. way | /weɪ/ — sounds like **WAY** | /weɪ/ — sounds like **WAY**
 1099. reaching | /ˈriːtʃɪŋ/ — sounds like **REE-ching** | /ˈriːtʃɪŋ/ — sounds like **REE-ching**
 1100. phr. within lifetime | /wɪˈθɪn ˈlaɪfˌtaɪm/ — sounds like **wi-THIN LYF-tym** | /wɪˈθɪn ˈlaɪfˌtaɪm/ — sounds like **wi-THIN LYF-tym**
 1101. adj. long | /lɒŋ/ — sounds like **LONG** | /lɔŋ/ — sounds like **LONG**
-1102. adj. isolated | /ˈaɪsəleɪtɪd/ — sounds like **EYE-suh-lay-tid** | /ˈaɪsəˌleɪtəd/ — sounds like **EYE-sə-lay-təd**
-1103. n. Russia | /ˈrʌʃə/ — sounds like **RUSH-uh** | /ˈrʌʃə/ — sounds like **RUSH-uh**
-1104. n. grew up | /gru əp/ — sounds like **gru UHP** | /gru əp/ — sounds like **gru UHP**
-1105. n. Europeans | /ˌjʊrəˈpiənz/ — sounds like **YUURUHPIUHNZ** | /ˌjʊrəˈpiənz/ — sounds like **YUURUHPIUHNZ**
+1102. adj. isolated | /ˈaɪsəleɪtɪd/ — sounds like **EYE-suh-lay-tid** | /ˈaɪsəˌleɪtəd/ — sounds like **EYE-suh-lay-tuhd**
+1103. n. Russia | /ˈrʌʃə/ — sounds like **RUHSH-uh** | /ˈrʌʃə/ — sounds like **RUHSH-uh**
+1104. n. grew up | /ɡruː ʌp/ — sounds like **groo UHP** | /ɡruː ʌp/ — sounds like **groo UHP**
+1105. n. Europeans | /ˌjʊərəˈpiːənz/ — sounds like **YOOR-uh-PEE-uhnz** | /ˌjʊrəˈpiːənz/ — sounds like **YOOR-uh-PEE-uhnz**
 1106. n. pride | /praɪd/ — sounds like **PRYD** | /praɪd/ — sounds like **PRYD**
 1107. adj. unique | /juːˈniːk/ — sounds like **yoo-NEEK** | /juˈnik/ — sounds like **yoo-NEEK**
-1108. n. culture | /ˈkʌltʃə/ — sounds like **KUL-chuh** | /ˈkʌltʃɚ/ — sounds like **KUL-chur**
-1109. n. member | /ˈmembə/ — sounds like **MEM-bə** | /ˈmɛmbər/ — sounds like **MEM-ber**
+1108. n. culture | /ˈkʌltʃə/ — sounds like **KUHL-chuh** | /ˈkʌltʃɚ/ — sounds like **KUHL-chur**
+1109. n. member | /ˈmembə/ — sounds like **MEM-buh** | /ˈmɛmbər/ — sounds like **MEM-ber**
 1110. adv. indeed | /ɪnˈdiːd/ — sounds like **in-DEED** | /ɪnˈdid/ — sounds like **in-DEED**
 1111. adj. open | /ˈəʊpən/ — sounds like **OH-pun** | /ˈoʊpən/ — sounds like **OH-pun**
 1112. v. eat | /iːt/ — sounds like **EET** | /it/ — sounds like **EET**
@@ -1124,7 +1124,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1117. phr. dig in | /ˌdɪɡ ˈɪn/ — sounds like **dig IN** | /ˌdɪɡ ˈɪn/ — sounds like **dig IN**
 1118. n. hour | /ˈaʊə/ — sounds like **OW-uh** | /ˈaʊɚ/ — sounds like **OW-er**
 1119. adv. later | /ˈleɪtə/ — sounds like **LAY-tuh** | /ˈleɪtər/ — sounds like **LAY-ter**
-1120. n. burger | /ˈbɜːɡə/ — sounds like **BUR-gə** | /ˈbɝːɡɚ/ — sounds like **BUR-ger**
+1120. n. burger | /ˈbɜːɡə/ — sounds like **BUR-guh** | /ˈbɝːɡɚ/ — sounds like **BUR-ger**
 1121. n. gone | /gɔn/ — sounds like **GN** | /gɔn/ — sounds like **GN**
 1122. n. wrapper | /ˈræpə/ — sounds like **RAP-uh** | /ˈræpər/ — sounds like **RAP-er**
 1123. v. tossed | /tɒst/ — sounds like **TOST** | /tɔːst/ — sounds like **TAWST**
@@ -1138,11 +1138,11 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1131. v. means | /miːnz/ — sounds like **MEENZ** | /miːnz/ — sounds like **MEENZ**
 1132. n. progress | /ˈprəʊɡres/ — sounds like **PROH-gres** | /ˈprɑːɡres/ — sounds like **PRAH-gres**
 1133. v. added | /ˈædɪd/ — sounds like **AD-id** | /ˈædəd/ — sounds like **AD-ud**
-1134. n. government | /ˈɡʌvənmənt/ — sounds like **GUV-urn-munt** | /ˈɡʌvərnmənt/ — sounds like **GUV-uhrn-munt**
+1134. n. government | /ˈɡʌvənmənt/ — sounds like **GUHV-urn-muhnt** | /ˈɡʌvərnmənt/ — sounds like **GUHV-uhrn-muhnt**
 1135. continues | /kənˈtɪnjuːz/ — sounds like **kun-TIN-yooz** | /kənˈtɪnjuːz/ — sounds like **kun-TIN-yooz**
-1136. v. update | /ʌpˈdeɪt/ — sounds like **up-DAYT** | /ʌpˈdeɪt/ — sounds like **up-DAYT**
+1136. v. update | /ʌpˈdeɪt/ — sounds like **uhp-DAYT** | /ʌpˈdeɪt/ — sounds like **uhp-DAYT**
 1137. adj. qualified | /ˈkwɒlɪfaɪd/ — sounds like **KWOL-i-fyed** | /ˈkwɑːlɪfaɪd/ — sounds like **KWAHL-i-fyed**
-1138. adj. competent | /ˈkɒmpɪtənt/ — sounds like **KOM-pih-tunt** | /ˈkɑmpətənt/ — sounds like **KAHM-pə-tənt**
+1138. adj. competent | /ˈkɒmpɪtənt/ — sounds like **KOM-pih-tunt** | /ˈkɑmpətənt/ — sounds like **KAHM-puh-tuhnt**
 1139. adj. patented | /ˈpeɪtəntɪd/ — sounds like **PAY-tun-tid** | /ˈpætəntɪd/ — sounds like **PAT-un-tid**
 1140. adv. legally | /ˈliːɡəli/ — sounds like **LEE-guh-lee** | /ˈliːɡəli/ — sounds like **LEE-guh-lee**
 1141. v. protected | /prəˈtektɪd/ — sounds like **pruh-TEK-tid** | /prəˈtektɪd/ — sounds like **pruh-TEK-tid**
@@ -1150,7 +1150,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1143. n. genre | /ˈʒɒnrə/ — sounds like **ZHAHN-ruh** | /ˈʒɑːnrə/ — sounds like **ZHAHN-ruh**
 1144. adv. onwards | /ˈɒnwədz/ — sounds like **ON-wudz** | /ˈɑːnwərdz/ — sounds like **AHN-wurdz**
 1145. n. literacy | /ˈlɪtərəsi/ — sounds like **LIT-uh-ruh-see** | /ˈlɪtərəsi/ — sounds like **LIT-uh-ruh-see**
-1146. n. subgenre | /ˈsʌbˌʒɒnrə/ — sounds like **SUB-ZHAHN-ruh** | /ˈsʌbˌʒɑːnrə/ — sounds like **SUB-ZHAHN-ruh**
+1146. n. subgenre | /ˈsʌbˌʒɒnrə/ — sounds like **SUHB-ZHAHN-ruh** | /ˈsʌbˌʒɑːnrə/ — sounds like **SUHB-ZHAHN-ruh**
 1147. v. exploited | /ɪkˈsplɔɪtɪd/ — sounds like **ik-SPLOY-tid** | /ɪkˈsplɔɪtɪd/ — sounds like **ik-SPLOY-tid**
 1148. adj. fullest | /ˈfʊlɪst/ — sounds like **FULL-ist** | /ˈfʊlɪst/ — sounds like **FULL-ist**
 1149. n. changes | /ˈtʃeɪndʒɪz/ — sounds like **CHAYN-jiz** | /ˈtʃeɪndʒɪz/ — sounds like **CHAYN-jiz**
@@ -1160,7 +1160,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1153. n. strandings | /ˈstrændɪŋz/ — sounds like **STRAN-dingz** | /ˈstrændɪŋz/ — sounds like **STRAN-dingz**
 1154. n. whales | /weɪlz/ — sounds like **WAYLZ** | /weɪlz/ — sounds like **WAYLZ**
 1155. adj. recurring | /rɪˈkɜːrɪŋ/ — sounds like **ri-KUR-ing** | /rɪˈkɜːrɪŋ/ — sounds like **ri-KUR-ing**
-1156. adj. multiple | /ˈmʌltɪpəl/ — sounds like **MUL-ti-pul** | /ˈmʌltəpəl/ — sounds like **MUL-tuh-pul**
+1156. adj. multiple | /ˈmʌltɪpəl/ — sounds like **MUHL-ti-puhl** | /ˈmʌltəpəl/ — sounds like **MUHL-tuh-puhl**
 1157. v. highlighted | /ˈhaɪlaɪtɪd/ — sounds like **HY-ly-tid** | /ˈhaɪlaɪtɪd/ — sounds like **HY-ly-tid**
 1158. n. severity | /sɪˈverəti/ — sounds like **si-VAIR-uh-tee** | /səˈverəti/ — sounds like **suh-VAIR-uh-tee**
 1159. n. April | /ˈeɪprəl/ — sounds like **AY-prul** | /ˈeɪprəl/ — sounds like **AY-prul**
@@ -1189,7 +1189,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1182. n. community | /kəˈmjuːnəti/ — sounds like **kuh-MYOO-nuh-tee** | /kəˈmjuːnəti/ — sounds like **kuh-MYOO-nuh-tee**
 1183. n. association | /əˌsəʊsiˈeɪʃən/ — sounds like **uh-soh-see-AY-shun** | /əˌsoʊsiˈeɪʃən/ — sounds like **uh-soh-see-AY-shun**
 1184. n. networking | /ˈnetwɜːkɪŋ/ — sounds like **NET-wur-king** | /ˈnetwɜːrkɪŋ/ — sounds like **NET-wur-king**
-1185. prep. among | /əˈmʌŋ/ — sounds like **uh-MUNG** | /əˈmʌŋ/ — sounds like **uh-MUNG**
+1185. prep. among | /əˈmʌŋ/ — sounds like **uh-MUHNG** | /əˈmʌŋ/ — sounds like **uh-MUHNG**
 1186. v. share | /ʃeə/ — sounds like **SHAIR** | /ʃer/ — sounds like **SHAIR**
 1187. n. experience | /ɪkˈspɪəriəns/ — sounds like **ik-SPEER-ee-uns** | /ɪkˈspɪriəns/ — sounds like **ik-SPEER-ee-uns**
 1188. n. practices | /ˈpræktɪsɪz/ — sounds like **PRAK-ti-siz** | /ˈpræktɪsɪz/ — sounds like **PRAK-ti-siz**
@@ -1198,13 +1198,13 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1191. adj. regional | /ˈriːdʒənəl/ — sounds like **REE-juh-nul** | /ˈriːdʒənəl/ — sounds like **REE-juh-nul**
 1192. n. workshops | /ˈwɜːkʃɒps/ — sounds like **WURK-shops** | /ˈwɜːrkʃɑːps/ — sounds like **WURK-shahps**
 1193. n. webinars | /ˈwebɪnɑːz/ — sounds like **WEB-i-narz** | /ˈwebɪnɑːrz/ — sounds like **WEB-i-narz**
-1194. n. publications | /ˌpʌblɪˈkeɪʃənz/ — sounds like **pub-li-KAY-shunz** | /ˌpʌbləˈkeɪʃənz/ — sounds like **pub-luh-KAY-shunz**
+1194. n. publications | /ˌpʌblɪˈkeɪʃənz/ — sounds like **puhb-li-KAY-shuhnz** | /ˌpʌbləˈkeɪʃənz/ — sounds like **puhb-luh-KAY-shuhnz**
 1195. n. online resources | /ˌɒnlaɪn rɪˈsɔːsɪz/ — sounds like **ON-lyn ri-SOR-siz** | /ˌɑːnlaɪn ˈriːsɔːrsɪz/ — sounds like **AHN-lyn REE-sor-siz**
 1196. v. represents | /ˌreprɪˈzents/ — sounds like **rep-ri-ZENTS** | /ˌreprɪˈzents/ — sounds like **rep-ri-ZENTS**
 1197. n. aspect | /ˈæspekt/ — sounds like **AS-pekt** | /ˈæspekt/ — sounds like **AS-pekt**
 1198. n. sustainability | /səˌsteɪnəˈbɪləti/ — sounds like **suh-stay-nuh-BIL-uh-tee** | /səˌsteɪnəˈbɪləti/ — sounds like **suh-stay-nuh-BIL-uh-tee**
 1199. conj. while | /waɪl/ — sounds like **WYLE** | /waɪl/ — sounds like **WYLE**
-1200. n. colors | /ˈkʌləz/ — sounds like **KUL-uz** | /ˈkʌlərz/ — sounds like **KUL-erz**
+1200. n. colors | /ˈkʌləz/ — sounds like **KUHL-uhz** | /ˈkʌlərz/ — sounds like **KUHL-erz**
 1201. adj. least | /liːst/ — sounds like **LEEST** | /liːst/ — sounds like **LEEST**
 1202. n. humans | /ˈhjuːmənz/ — sounds like **HYOO-munz** | /ˈhjuːmənz/ — sounds like **HYOO-munz**
 1203. v. searched | /sɜːtʃt/ — sounds like **SURCHT** | /sɜːrtʃt/ — sounds like **SURCHT**
@@ -1215,7 +1215,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1208. v. dyed | /daɪd/ — sounds like **DYD** | /daɪd/ — sounds like **DYD**
 1209. v. served | /sɜːvd/ — sounds like **SURVD** | /sɜːrvd/ — sounds like **SURVD**
 1210. adj. pictured | /ˈpɪktʃəd/ — sounds like **PIK-chud** | /ˈpɪktʃərd/ — sounds like **PIK-churd**
-1211. phr. how much | /haʊ mʌtʃ/ — sounds like **HOW MUCH** | /haʊ mʌtʃ/ — sounds like **HOW MUCH**
+1211. phr. how much | /haʊ mʌtʃ/ — sounds like **HOW MUHCH** | /haʊ mʌtʃ/ — sounds like **HOW MUHCH**
 1212. n. engineers | /ˌendʒɪˈnɪəz/ — sounds like **en-ji-NEERZ** | /ˌendʒəˈnɪrz/ — sounds like **en-juh-NEERZ**
 1213. n. street lights | /striːt laɪts/ — sounds like **STREET LYTS** | /striːt laɪts/ — sounds like **STREET LYTS**
 1214. n. house lights | /haʊs laɪts/ — sounds like **HOWS LYTS** | /haʊs laɪts/ — sounds like **HOWS LYTS**
@@ -1229,14 +1229,14 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1222. n. three | /θriː/ — sounds like **THREE** | /θriː/ — sounds like **THREE**
 1223. n. years | /jɪəz/ — sounds like **YEERZ** | /jɪrz/ — sounds like **YEERZ**
 1224. adj. second | /ˈsekənd/ — sounds like **SEK-und** | /ˈsekənd/ — sounds like **SEK-und**
-1225. n. months | /mʌnθs/ — sounds like **MUNTHS** | /mʌnθs/ — sounds like **MUNTHS**
+1225. n. months | /mʌnθs/ — sounds like **MUHNTHS** | /mʌnθs/ — sounds like **MUHNTHS**
 1226. adv. however | /haʊˈevə/ — sounds like **how-EV-uh** | /haʊˈevər/ — sounds like **how-EV-er**
 1227. conj. unless | /ənˈles/ — sounds like **un-LES** | /ənˈles/ — sounds like **un-LES**
 1228. n. book | /bʊk/ — sounds like **BOOK** | /bʊk/ — sounds like **BOOK**
 1229. n. reprint | /ˈriːprɪnt/ — sounds like **REE-print** | /ˈriːprɪnt/ — sounds like **REE-print**
 1230. adj. precious | /ˈpreʃəs/ — sounds like **PRESH-us** | /ˈpreʃəs/ — sounds like **PRESH-us**
 1231. v. found | /faʊnd/ — sounds like **FOWND** | /faʊnd/ — sounds like **FOWND**
-1232. v. funded | /ˈfʌndɪd/ — sounds like **FUN-did** | /ˈfʌndɪd/ — sounds like **FUN-did**
+1232. v. funded | /ˈfʌndɪd/ — sounds like **FUHN-did** | /ˈfʌndɪd/ — sounds like **FUHN-did**
 1233. n. soft drinks | /ˌsɒft ˈdrɪŋks/ — sounds like **soft DRINKS** | /ˌsɔːft ˈdrɪŋks/ — sounds like **sawft DRINKS**
 1234. adj. different | /ˈdɪfrənt/ — sounds like **DIF-ruhnt** | /ˈdɪfrənt/ — sounds like **DIF-ruhnt**
 1235. v. suggest | /səˈdʒest/ — sounds like **suh-JEST** | /səˈdʒest/ — sounds like **suh-JEST**
@@ -1266,7 +1266,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1259. phr. engaging in | /ɪnˈɡeɪdʒɪŋ ɪn/ — sounds like **in-GAY-jing in** | /ɪnˈɡeɪdʒɪŋ ɪn/ — sounds like **in-GAY-jing in**
 1260. v. visit | /ˈvɪzɪt/ — sounds like **VIZ-it** | /ˈvɪzɪt/ — sounds like **VIZ-it**
 1261. n. Canada | /ˈkænədə/ — sounds like **KAN-uh-duh** | /ˈkænədə/ — sounds like **KAN-uh-duh**
-1262. n. fall months | /fɔːl mʌnθs/ — sounds like **FAWL MUNTHS** | /fɔːl mʌnθs/ — sounds like **FAWL MUNTHS**
+1262. n. fall months | /fɔːl mʌnθs/ — sounds like **FAWL MUHNTHS** | /fɔːl mʌnθs/ — sounds like **FAWL MUHNTHS**
 1263. adj. mild | /maɪld/ — sounds like **MYLD** | /maɪld/ — sounds like **MYLD**
 1264. adj. vibrant | /ˈvaɪbrənt/ — sounds like **VY-brunt** | /ˈvaɪbrənt/ — sounds like **VY-brunt**
 1265. n. foliage | /ˈfəʊliɪdʒ/ — sounds like **FOH-lee-ij** | /ˈfoʊliɪdʒ/ — sounds like **FOH-lee-ij**
@@ -1281,7 +1281,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1274. n. Ontario | /ɒnˈteəriəʊ/ — sounds like **on-TAIR-ee-oh** | /ɑːnˈterioʊ/ — sounds like **ahn-TAIR-ee-oh**
 1275. n. Quebec | /kwɪˈbek/ — sounds like **kwi-BEK** | /kwɪˈbek/ — sounds like **kwi-BEK**
 1276. n. region | /ˈriːdʒən/ — sounds like **REE-jun** | /ˈriːdʒən/ — sounds like **REE-jun**
-1277. adv. unwittingly | /ʌnˈwɪtɪŋli/ — sounds like **un-WIT-ing-lee** | /ʌnˈwɪtɪŋli/ — sounds like **un-WIT-ing-lee**
+1277. adv. unwittingly | /ʌnˈwɪtɪŋli/ — sounds like **uhn-WIT-ing-lee** | /ʌnˈwɪtɪŋli/ — sounds like **uhn-WIT-ing-lee**
 1278. v. contributed | /kənˈtrɪbjuːtɪd/ — sounds like **kun-TRIB-yoo-tid** | /kənˈtrɪbjuːtɪd/ — sounds like **kun-TRIB-yoo-tid**
 1279. n. colleagues | /ˈkɒliːɡz/ — sounds like **KOL-eegz** | /ˈkɑːliːɡz/ — sounds like **KAH-leegz**
 1280. n. students | /ˈstjuːdənts/ — sounds like **STYOO-dunts** | /ˈstuːdənts/ — sounds like **STOO-dunts**
@@ -1296,7 +1296,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1289. n. employer | /ɪmˈplɔɪə/ — sounds like **im-PLOY-uh** | /ɪmˈplɔɪər/ — sounds like **im-PLOY-er**
 1290. n. higher education | /ˌhaɪər ˌedjʊˈkeɪʃən/ — sounds like **HY-er ej-yoo-KAY-shun** | /ˌhaɪər ˌedʒəˈkeɪʃən/ — sounds like **HY-er ej-uh-KAY-shun**
 1291. v. equipping | /ɪˈkwɪpɪŋ/ — sounds like **i-KWIP-ing** | /ɪˈkwɪpɪŋ/ — sounds like **i-KWIP-ing**
-1292. n. function | /ˈfʌŋkʃən/ — sounds like **FUNK-shun** | /ˈfʌŋkʃən/ — sounds like **FUNK-shun**
+1292. n. function | /ˈfʌŋkʃən/ — sounds like **FUHNK-shuhn** | /ˈfʌŋkʃən/ — sounds like **FUHNK-shuhn**
 1293. adj. immune | /ɪˈmjuːn/ — sounds like **i-MYOON** | /ɪˈmjuːn/ — sounds like **i-MYOON**
 1294. n. response | /rɪˈspɒns/ — sounds like **ri-SPONS** | /rɪˈspɑːns/ — sounds like **ri-SPAHNS**
 1295. n. meditation | /ˌmedɪˈteɪʃən/ — sounds like **med-i-TAY-shun** | /ˌmedəˈteɪʃən/ — sounds like **med-uh-TAY-shun**
@@ -1312,7 +1312,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1305. n. tutors | /ˈtjuːtəz/ — sounds like **TYOO-tuz** | /ˈtuːtərz/ — sounds like **TOO-terz**
 1306. adj. excellent | /ˈeksələnt/ — sounds like **EK-suh-lunt** | /ˈeksələnt/ — sounds like **EK-suh-lunt**
 1307. n. record | /ˈrekɔːd/ — sounds like **REK-awd** | /ˈrekərd/ — sounds like **REK-erd**
-1308. n. characteristic | /ˌkærəktəˈrɪstɪk/ — sounds like **KA-ruhk-tuh-RIS-tik** | /ˌkærəktəˈrɪstɪk/ — sounds like **KA-rək-tə-RIS-tik**
+1308. n. characteristic | /ˌkærəktəˈrɪstɪk/ — sounds like **KA-ruhk-tuh-RIS-tik** | /ˌkærəktəˈrɪstɪk/ — sounds like **KA-ruhk-tuh-RIS-tik**
 1309. adj. online | /ˌɒnˈlaɪn/ — sounds like **on-LINE** | /ˌɑnˈlaɪn/ — sounds like **on-LINE**
 1310. v. shopping | /ˈʃɒpɪŋ/ — sounds like **SHOP-ing** | /ˈʃɑpɪŋ/ — sounds like **SHAHP-ing**
 1311. v. allow | /əˈlaʊ/ — sounds like **uh-LOW** | /əˈlaʊ/ — sounds like **uh-LOW**
@@ -1323,24 +1323,24 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1316. adv. highly | /ˈhaɪli/ — sounds like **HY-lee** | /ˈhaɪli/ — sounds like **HY-lee**
 1317. adj. interactive | /ˌɪntərˈæktɪv/ — sounds like **IN-tur-AK-tiv** | /ˌɪntərˈæktɪv/ — sounds like **IN-tur-AK-tiv**
 1318. n. features | /ˈfiːtʃəz/ — sounds like **FEE-churz** | /ˈfiːtʃəz/ — sounds like **FEE-churz**
-1319. adj. desirable | /dɪˈzaɪərəbəl/ — sounds like **di-ZY-uh-ruh-bul** | /dɪˈzaɪərəbəl/ — sounds like **di-ZY-ər-ə-bəl**
+1319. adj. desirable | /dɪˈzaɪərəbəl/ — sounds like **di-ZY-uh-ruh-bul** | /dɪˈzaɪərəbəl/ — sounds like **di-ZY-ur-uh-buhl**
 1320. n. form | /fɔːm/ — sounds like **FAWM** | /fɔrm/ — sounds like **FORM**
 1321. n. interactivity | /ˌɪntərækˈtɪvəti/ — sounds like **in-tuh-rak-TIV-uh-tee** | /ˌɪntərækˈtɪvəti/ — sounds like **in-tuh-rak-TIV-uh-tee**
-1322. n. consumer | /kənˈsjuːmə/ — sounds like **kun-SYOO-muh** | /kənˈsumər/ — sounds like **kən-SOO-mər**
+1322. n. consumer | /kənˈsjuːmə/ — sounds like **kun-SYOO-muh** | /kənˈsumər/ — sounds like **kuhn-SOO-mur**
 1323. n. perspective | /pəˈspektɪv/ — sounds like **puh-SPEK-tiv** | /pərˈspektɪv/ — sounds like **puhr-SPEK-tiv**
-1324. n. implementation | /ˌɪmplɪmenˈteɪʃən/ — sounds like **IM-plih-men-TAY-shun** | /ˌɪmpləmɛnˈteɪʃən/ — sounds like **IM-plə-men-TAY-shən**
-1325. adj. sophisticated | /səˈfɪstɪkeɪtɪd/ — sounds like **suh-FIS-tih-kay-tid** | /səˈfɪstəˌkeɪtəd/ — sounds like **suh-FIS-tə-kay-təd**
+1324. n. implementation | /ˌɪmplɪmenˈteɪʃən/ — sounds like **IM-plih-men-TAY-shun** | /ˌɪmpləmɛnˈteɪʃən/ — sounds like **IM-pluh-men-TAY-shuhn**
+1325. adj. sophisticated | /səˈfɪstɪkeɪtɪd/ — sounds like **suh-FIS-tih-kay-tid** | /səˈfɪstəˌkeɪtəd/ — sounds like **suh-FIS-tuh-kay-tuhd**
 1326. n. shoppers | /ˈʃɑpərz/ — sounds like **SHPURZ** | /ˈʃɑpərz/ — sounds like **SHPURZ**
-1327. n. decisions | /dɪˈsɪʒənz/ — sounds like **DISIZHUHNZ** | /dɪˈsɪʒənz/ — sounds like **DISIZHUHNZ**
-1328. v. customizing | /ˈkəstəˌmaɪzɪŋ/ — sounds like **KUHSTUHMEYEZING** | /ˈkəstəˌmaɪzɪŋ/ — sounds like **KUHSTUHMEYEZING**
+1327. n. decisions | /dɪˈsɪʒənz/ — sounds like **di-SIZH-uhnz** | /dɪˈsɪʒənz/ — sounds like **di-SIZH-uhnz**
+1328. v. customizing | /ˈkʌstəˌmaɪzɪŋ/ — sounds like **KUHS-tuh-my-zing** | /ˈkʌstəˌmaɪzɪŋ/ — sounds like **KUHS-tuh-my-zing**
 1329. adj. electronic | /ɪˌlekˈtrɒnɪk/ — sounds like **i-lek-TRON-ik** | /ɪˌlɛkˈtrɑnɪk/ — sounds like **i-lek-TRAHN-ik**
 1330. adj. individual | /ˌɪndɪˈvɪdʒuəl/ — sounds like **in-di-VIJ-oo-uhl** | /ˌɪndəˈvɪdʒuəl/ — sounds like **in-duh-VIJ-oo-uhl**
-1331. n. preferences | /ˈprɛfərənsɪz/ — sounds like **PREFURUHNSIZ** | /ˈprɛfərənsɪz/ — sounds like **PREFURUHNSIZ**
+1331. n. preferences | /ˈprɛfərənsɪz/ — sounds like **PREF-ur-uhn-siz** | /ˈprɛfərənsɪz/ — sounds like **PREF-ur-uhn-siz**
 1332. n. street | /striːt/ — sounds like **STREET** | /striːt/ — sounds like **STREET**
 1333. adv. then | /ðen/ — sounds like **THEN** | /ðen/ — sounds like **THEN**
-1334. adj. front | /frʌnt/ — sounds like **FRUNT** | /frʌnt/ — sounds like **FRUNT**
+1334. adj. front | /frʌnt/ — sounds like **FRUHNT** | /frʌnt/ — sounds like **FRUHNT**
 1335. n. door | /dɔː/ — sounds like **DAW** | /dɔr/ — sounds like **DOR**
-1336. v. discover | /dɪˈskʌvə/ — sounds like **di-SKUV-uh** | /dɪˈskʌvər/ — sounds like **di-SKUV-uhr**
+1336. v. discover | /dɪˈskʌvə/ — sounds like **di-SKUHV-uh** | /dɪˈskʌvər/ — sounds like **di-SKUHV-uhr**
 1337. prep. around | /əˈraʊnd/ — sounds like **uh-ROWND** | /əˈraʊnd/ — sounds like **uh-ROWND**
 1338. pron. you | /juː/ — sounds like **YOO** | /juː/ — sounds like **YOO**
 1339. v. see | /siː/ — sounds like **SEE** | /siː/ — sounds like **SEE**
@@ -1349,7 +1349,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1342. n. children | /ˈtʃɪldrən/ — sounds like **CHIL-drun** | /ˈtʃɪldrən/ — sounds like **CHIL-drun**
 1343. v. walking | /ˈwɔːkɪŋ/ — sounds like **WAW-king** | /ˈwɔkɪŋ/ — sounds like **WAW-king**
 1344. n. school | /skuːl/ — sounds like **SKOOL** | /skuːl/ — sounds like **SKOOL**
-1345. pron. what | /wɒt/ — sounds like **WOT** | /wʌt/ — sounds like **WUT**
+1345. pron. what | /wɒt/ — sounds like **WOT** | /wʌt/ — sounds like **WUHT**
 1346. conj. if | /ɪf/ — sounds like **IF** | /ɪf/ — sounds like **IF**
 1347. n. answer | /ˈɑːnsə/ — sounds like **AHN-suh** | /ˈænsər/ — sounds like **AN-suhr**
 1348. phr. turned out | /ˌtɜːnd ˈaʊt/ — sounds like **TURND OWT** | /ˌtɝːnd ˈaʊt/ — sounds like **TURND OWT**
@@ -1357,10 +1357,10 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1350. v. been | /biːn/ — sounds like **BEEN** | /bɪn/ — sounds like **BIN**
 1351. adv. there | /ðeə/ — sounds like **THAIR** | /ðer/ — sounds like **THAIR**
 1352. v. hadn’t | /ˈhædnt/ — sounds like **HADNT** | /ˈhædnt/ — sounds like **HADNT**
-1353. n. discovery | /dɪˈskʌvəri/ — sounds like **di-SKUV-uh-ree** | /dɪˈskʌvəri/ — sounds like **di-SKUV-uh-ree**
+1353. n. discovery | /dɪˈskʌvəri/ — sounds like **di-SKUHV-uh-ree** | /dɪˈskʌvəri/ — sounds like **di-SKUHV-uh-ree**
 1354. adj. old | /əʊld/ — sounds like **OHLD** | /oʊld/ — sounds like **OHLD**
 1355. v. were | /wɜː/ — sounds like **WUR** | /wɝː/ — sounds like **WUR**
-1356. adj. unassailable | /ˌʌnəˈseɪləbəl/ — sounds like **un-uh-SAY-luh-bul** | /ˌʌnəˈseɪləbəl/ — sounds like **un-uh-SAY-luh-bul**
+1356. adj. unassailable | /ˌʌnəˈseɪləbəl/ — sounds like **uhn-uh-SAY-luh-buhl** | /ˌʌnəˈseɪləbəl/ — sounds like **uhn-uh-SAY-luh-buhl**
 1357. n. belief | /bɪˈliːf/ — sounds like **bi-LEEF** | /bɪˈliːf/ — sounds like **bi-LEEF**
 1358. v. seemed | /siːmd/ — sounds like **SEEMD** | /siːmd/ — sounds like **SEEMD**
 1359. adv. completely | /kəmˈpliːtli/ — sounds like **kum-PLEET-lee** | /kəmˈpliːtli/ — sounds like **kum-PLEET-lee**
@@ -1380,9 +1380,9 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1373. abbr. TV | /ˌtiː ˈviː/ — sounds like **TEE VEE** | /ˌtiː ˈviː/ — sounds like **TEE VEE**
 1374. n. computer | /kəmˈpjuːtə/ — sounds like **kum-PYOO-tuh** | /kəmˈpjuːtər/ — sounds like **kum-PYOO-tuhr**
 1375. n. displays | /dɪˈspleɪz/ — sounds like **di-SPLAYZ** | /dɪˈspleɪz/ — sounds like **di-SPLAYZ**
-1376. v. recycle | /ˌriːˈsaɪkəl/ — sounds like **REE-SY-kul** | /ˌriˈsaɪkəl/ — sounds like **REE-SY-kəl**
+1376. v. recycle | /ˌriːˈsaɪkəl/ — sounds like **REE-SY-kul** | /ˌriˈsaɪkəl/ — sounds like **REE-SY-kuhl**
 1377. v. converted | /kənˈvɜːtɪd/ — sounds like **kun-VUR-tid** | /kənˈvɝːtɪd/ — sounds like **kun-VUR-tid**
-1378. n. products | /ˈprɒdʌkts/ — sounds like **PROD-ukts** | /ˈprɑːdʌkts/ — sounds like **PRAH-duhkts**
+1378. n. products | /ˈprɒdʌkts/ — sounds like **PROD-uhkts** | /ˈprɑːdʌkts/ — sounds like **PRAH-duhkts**
 1379. v. reducing | /rɪˈdjuːsɪŋ/ — sounds like **ri-DYOO-sing** | /rɪˈduːsɪŋ/ — sounds like **ri-DOO-sing**
 1380. v. consume | /kənˈsjuːm/ — sounds like **kun-SYOOM** | /kənˈsuːm/ — sounds like **kun-SOOM**
 1381. adj. natural | /ˈnætʃərəl/ — sounds like **NACH-uh-rul** | /ˈnætʃərəl/ — sounds like **NACH-uh-rul**
@@ -1394,10 +1394,10 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1387. n. recycling | /riːˈsaɪklɪŋ/ — sounds like **ree-SYE-kling** | /riːˈsaɪklɪŋ/ — sounds like **ree-SYE-kling**
 1388. v. helps | /hɛlps/ — sounds like **HELPS** | /hɛlps/ — sounds like **HELPS**
 1389. v. conserve | /kənˈsɜːv/ — sounds like **kun-SURV** | /kənˈsɝːv/ — sounds like **kun-SURV**
-1390. v. protects | /prəˈtɛkts/ — sounds like **PRUHTEKTS** | /prəˈtɛkts/ — sounds like **PRUHTEKTS**
+1390. v. protects | /prəˈtɛkts/ — sounds like **pruh-TEKTS** | /prəˈtɛkts/ — sounds like **pruh-TEKTS**
 1391. n. habitats | /ˈhæbɪtæts/ — sounds like **HAB-ih-tats** | /ˈhæbɪtæts/ — sounds like **HAB-ih-tats**
 1392. n. future | /ˈfjuːtʃə/ — sounds like **FYOO-chuh** | /ˈfjutʃɚ/ — sounds like **FYOO-chur**
-1393. adv. thus | /ðʌs/ — sounds like **THUS** | /ðʌs/ — sounds like **THUS**
+1393. adv. thus | /ðʌs/ — sounds like **THUHS** | /ðʌs/ — sounds like **THUHS**
 1394. v. might | /maɪt/ — sounds like **MYT** | /maɪt/ — sounds like **MYT**
 1395. v. possess | /pəˈzes/ — sounds like **puh-ZES** | /pəˈzes/ — sounds like **puh-ZES**
 1396. adj. sizeable | /ˈsaɪzəbəl/ — sounds like **SY-zuh-bul** | /ˈsaɪzəbəl/ — sounds like **SY-zuh-bul**
@@ -1406,15 +1406,15 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1399. n. voters | /ˈvəʊtəz/ — sounds like **VOH-tuhz** | /ˈvoʊtərz/ — sounds like **VOH-tuhrz**
 1400. adv. predominantly | /prɪˈdɒmɪnəntli/ — sounds like **pri-DOM-in-unt-lee** | /prɪˈdɑːmənəntli/ — sounds like **pri-DAH-muh-nunt-lee**
 1401. phr. related to | /rɪˈleɪtɪd tuː/ — sounds like **ri-LAY-tid too** | /rɪˈleɪtɪd tu/ — sounds like **ri-LAY-tid too**
-1402. n. incomes | /ˈɪnkʌmz/ — sounds like **IN-kumz** | /ˈɪnkʌmz/ — sounds like **IN-kumz**
+1402. n. incomes | /ˈɪnkʌmz/ — sounds like **IN-kuhmz** | /ˈɪnkʌmz/ — sounds like **IN-kuhmz**
 1403. n. occupations | /ˌɒkjʊˈpeɪʃənz/ — sounds like **ok-yoo-PAY-shunz** | /ˌɑːkjəˈpeɪʃənz/ — sounds like **ah-kyuh-PAY-shunz**
 1404. adj. political | /pəˈlɪtɪkəl/ — sounds like **puh-LIT-ih-kul** | /pəˈlɪtɪkəl/ — sounds like **puh-LIT-ih-kul**
-1405. adj. unlikely | /ʌnˈlaɪkli/ — sounds like **un-LYK-lee** | /ʌnˈlaɪkli/ — sounds like **un-LYK-lee**
+1405. adj. unlikely | /ʌnˈlaɪkli/ — sounds like **uhn-LYK-lee** | /ʌnˈlaɪkli/ — sounds like **uhn-LYK-lee**
 1406. adj. agrarian | /əˈɡreəriən/ — sounds like **uh-GRAIR-ee-un** | /əˈɡreriən/ — sounds like **uh-GRAIR-ee-un**
 1407. n. party | /ˈpɑːti/ — sounds like **PAH-tee** | /ˈpɑːrti/ — sounds like **PAR-tee**
 1408. n. training | /ˈtreɪnɪŋ/ — sounds like **TRAY-ning** | /ˈtreɪnɪŋ/ — sounds like **TRAY-ning**
 1409. n. actor | /ˈæktə/ — sounds like **AK-tuh** | /ˈæktər/ — sounds like **AK-tuhr**
-1410. n. courage | /ˈkʌrɪdʒ/ — sounds like **KUR-ij** | /ˈkɝːɪdʒ/ — sounds like **KUR-ij**
+1410. n. courage | /ˈkʌrɪdʒ/ — sounds like **KUHR-ij** | /ˈkɝːɪdʒ/ — sounds like **KUR-ij**
 1411. v. prepare | /prɪˈpeə/ — sounds like **pri-PAIR** | /prɪˈper/ — sounds like **pri-PAIR**
 1412. n. processes | /ˈprəʊsesɪz/ — sounds like **PROH-ses-iz** | /ˈprɑːsesɪz/ — sounds like **PRAH-ses-iz**
 1413. v. inform | /ɪnˈfɔːm/ — sounds like **in-FAWM** | /ɪnˈfɔːrm/ — sounds like **in-FORM**
@@ -1431,13 +1431,13 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1424. n. heart | /hɑːt/ — sounds like **HAHT** | /hɑːrt/ — sounds like **HART**
 1425. n. disease | /dɪˈziːz/ — sounds like **di-ZEEZ** | /dɪˈziːz/ — sounds like **di-ZEEZ**
 1426. n. illness | /ˈɪlnəs/ — sounds like **IL-nus** | /ˈɪlnəs/ — sounds like **IL-nus**
-1427. v. becoming | /bɪˈkʌmɪŋ/ — sounds like **bi-KUM-ing** | /bɪˈkʌmɪŋ/ — sounds like **bi-KUM-ing**
+1427. v. becoming | /bɪˈkʌmɪŋ/ — sounds like **bi-KUHM-ing** | /bɪˈkʌmɪŋ/ — sounds like **bi-KUHM-ing**
 1428. adj. clear | /klɪə/ — sounds like **KLEER** | /klɪr/ — sounds like **KLEER**
 1429. adv. yet | /jet/ — sounds like **YET** | /jet/ — sounds like **YET**
 1430. adv. nutritionally | /njuːˈtrɪʃənəli/ — sounds like **nyoo-TRISH-un-uh-lee** | /nuːˈtrɪʃənəli/ — sounds like **noo-TRISH-un-uh-lee**
 1431. v. want | /wɒnt/ — sounds like **WONT** | /wɑːnt/ — sounds like **WAHNT**
 1432. v. generate | /ˈdʒenəreɪt/ — sounds like **JEN-uh-rayt** | /ˈdʒenəreɪt/ — sounds like **JEN-uh-rayt**
-1433. conj. but | /bʌt/ — sounds like **BUT** | /bʌt/ — sounds like **BUT**
+1433. conj. but | /bʌt/ — sounds like **BUHT** | /bʌt/ — sounds like **BUHT**
 1434. adv. equally | /ˈiːkwəli/ — sounds like **EE-kwuh-lee** | /ˈiːkwəli/ — sounds like **EE-kwuh-lee**
 1435. n. imprint | /ˈɪmprɪnt/ — sounds like **IM-print** | /ˈɪmprɪnt/ — sounds like **IM-print**
 1436. v. leave | /liːv/ — sounds like **LEEV** | /liːv/ — sounds like **LEEV**
@@ -1449,9 +1449,9 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1442. n. title | /ˈtaɪtəl/ — sounds like **TY-tul** | /ˈtaɪtəl/ — sounds like **TY-tul**
 1443. v. sell | /sel/ — sounds like **SEL** | /sel/ — sounds like **SEL**
 1444. adv. out | /aʊt/ — sounds like **OWT** | /aʊt/ — sounds like **OWT**
-1445. n. publication | /ˌpʌblɪˈkeɪʃən/ — sounds like **pub-li-KAY-shun** | /ˌpʌblɪˈkeɪʃən/ — sounds like **pub-li-KAY-shun**
-1446. v. was | /wɒz/ — sounds like **WOZ** | /wʌz/ — sounds like **WUZ**
-1447. adv. unusually | /ʌnˈjuːʒuəli/ — sounds like **un-YOO-zhoo-uh-lee** | /ʌnˈjuːʒuəli/ — sounds like **un-YOO-zhoo-uh-lee**
+1445. n. publication | /ˌpʌblɪˈkeɪʃən/ — sounds like **puhb-li-KAY-shuhn** | /ˌpʌblɪˈkeɪʃən/ — sounds like **puhb-li-KAY-shuhn**
+1446. v. was | /wɒz/ — sounds like **WOZ** | /wʌz/ — sounds like **WUHZ**
+1447. adv. unusually | /ʌnˈjuːʒuəli/ — sounds like **uhn-YOO-zhoo-uh-lee** | /ʌnˈjuːʒuəli/ — sounds like **uhn-YOO-zhoo-uh-lee**
 1448. adv. rarely | /ˈreəli/ — sounds like **RAIR-lee** | /ˈrerli/ — sounds like **RAIR-lee**
 1449. adj. able | /ˈeɪbəl/ — sounds like **AY-bul** | /ˈeɪbəl/ — sounds like **AY-bul**
 1450. n. stock | /stɒk/ — sounds like **STOK** | /stɑːk/ — sounds like **STAHK**
@@ -1467,7 +1467,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1460. n. array | /əˈreɪ/ — sounds like **uh-RAY** | /əˈreɪ/ — sounds like **uh-RAY**
 1461. n. cable | /ˈkeɪbəl/ — sounds like **KAY-bul** | /ˈkeɪbəl/ — sounds like **KAY-bul**
 1462. phr. the Internet | /ði ˈɪntənet/ — sounds like **thee IN-tuh-net** | /ði ˈɪntərnet/ — sounds like **thee IN-tuhr-net**
-1463. phr. such as | /sʌtʃ æz/ — sounds like **SUCH az** | /sʌtʃ æz/ — sounds like **SUCH az**
+1463. phr. such as | /sʌtʃ æz/ — sounds like **SUHCH az** | /sʌtʃ æz/ — sounds like **SUHCH az**
 1464. n. e-mail | /ˈiːmeɪl/ — sounds like **EE-mayl** | /ˈiːmeɪl/ — sounds like **EE-mayl**
 1465. adj. instant | /ˈɪnstənt/ — sounds like **IN-stunt** | /ˈɪnstənt/ — sounds like **IN-stunt**
 1466. n. examples | /ɪɡˈzɑːmpəlz/ — sounds like **ig-ZAHM-pulz** | /ɪɡˈzæmpəlz/ — sounds like **ig-ZAM-pulz**
@@ -1485,7 +1485,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1478. v. map | /mæp/ — sounds like **MAP** | /mæp/ — sounds like **MAP**
 1479. n. planet | /ˈplænɪt/ — sounds like **PLAN-it** | /ˈplænɪt/ — sounds like **PLAN-it**
 1480. v. remains | /rɪˈmeɪnz/ — sounds like **ri-MAYNZ** | /rɪˈmeɪnz/ — sounds like **ri-MAYNZ**
-1481. adj. undegraded | /ˌʌndɪˈɡreɪdɪd/ — sounds like **un-di-GRAY-did** | /ˌʌndɪˈɡreɪdɪd/ — sounds like **un-di-GRAY-did**
+1481. adj. undegraded | /ˌʌndɪˈɡreɪdɪd/ — sounds like **uhn-di-GRAY-did** | /ˌʌndɪˈɡreɪdɪd/ — sounds like **uhn-di-GRAY-did**
 1482. adj. previous | /ˈpriːviəs/ — sounds like **PREE-vee-us** | /ˈpriːviəs/ — sounds like **PREE-vee-us**
 1483. n. estimates | /ˈestɪməts/ — sounds like **ES-ti-muts** | /ˈestəməts/ — sounds like **ES-tuh-muts**
 1484. n. satellite | /ˈsætəlaɪt/ — sounds like **SAT-uh-lyt** | /ˈsætəlaɪt/ — sounds like **SAT-uh-lyt**
@@ -1516,14 +1516,14 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1509. adj. moderate | /ˈmɒdərət/ — sounds like **MOD-uh-rut** | /ˈmɑːdərət/ — sounds like **MAH-duh-rut**
 1510. v. allows | /əˈlaʊz/ — sounds like **uh-LOWZ** | /əˈlaʊz/ — sounds like **uh-LOWZ**
 1511. adj. gradual | /ˈɡrædʒuəl/ — sounds like **GRAJ-oo-ul** | /ˈɡrædʒuəl/ — sounds like **GRAJ-oo-ul**
-1512. n. adjustment | /əˈdʒʌstmənt/ — sounds like **uh-JUST-munt** | /əˈdʒʌstmənt/ — sounds like **uh-JUST-munt**
+1512. n. adjustment | /əˈdʒʌstmənt/ — sounds like **uh-JUHST-muhnt** | /əˈdʒʌstmənt/ — sounds like **uh-JUHST-muhnt**
 1513. n. economy | /ɪˈkɒnəmi/ — sounds like **i-KON-uh-mee** | /ɪˈkɑːnəmi/ — sounds like **i-KAHN-uh-mee**
 1514. n. policies | /ˈpɒləsiz/ — sounds like **POL-uh-seez** | /ˈpɑːləsiz/ — sounds like **PAH-luh-seez**
 1515. v. changing | /ˈtʃeɪndʒɪŋ/ — sounds like **CHAYN-jing** | /ˈtʃeɪndʒɪŋ/ — sounds like **CHAYN-jing**
 1516. adj. rapid | /ˈræpɪd/ — sounds like **RAP-id** | /ˈræpɪd/ — sounds like **RAP-id**
 1517. v. manage | /ˈmænɪdʒ/ — sounds like **MAN-ij** | /ˈmænɪdʒ/ — sounds like **MAN-ij**
-1518. phr. as a result | /æz ə rɪˈzʌlt/ — sounds like **az uh ri-ZULT** | /æz ə rɪˈzʌlt/ — sounds like **az uh ri-ZULT**
-1519. n. governments | /ˈɡʌvənmənts/ — sounds like **GUV-un-munts** | /ˈɡʌvərnmənts/ — sounds like **GUV-urn-munts**
+1518. phr. as a result | /æz ə rɪˈzʌlt/ — sounds like **az uh ri-ZUHLT** | /æz ə rɪˈzʌlt/ — sounds like **az uh ri-ZUHLT**
+1519. n. governments | /ˈɡʌvənmənts/ — sounds like **GUHV-uhn-muhnts** | /ˈɡʌvərnmənts/ — sounds like **GUHV-urn-muhnts**
 1520. phr. as a whole | /æz ə həʊl/ — sounds like **az uh HOHL** | /æz ə hoʊl/ — sounds like **az uh HOHL**
 1521. phr. take actions | /teɪk ˈækʃənz/ — sounds like **TAYK AK-shunz** | /teɪk ˈækʃənz/ — sounds like **TAYK AK-shunz**
 1522. v. address | /əˈdres/ — sounds like **uh-DRES** | /əˈdres/ — sounds like **uh-DRES**
@@ -1535,18 +1535,18 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1528. n. history | /ˈhɪstəri/ — sounds like **HIS-tuh-ree** | /ˈhɪstəri/ — sounds like **HIS-tuh-ree**
 1529. adj. selective | /sɪˈlektɪv/ — sounds like **si-LEK-tiv** | /sɪˈlektɪv/ — sounds like **si-LEK-tiv**
 1530. n. books | /bʊks/ — sounds like **BUUKS** | /bʊks/ — sounds like **BUUKS**
-1531. phr. tell us | /tel ʌs/ — sounds like **TEL us** | /tel ʌs/ — sounds like **TEL us**
+1531. phr. tell us | /tel ʌs/ — sounds like **TEL uhs** | /tel ʌs/ — sounds like **TEL uhs**
 1532. n. past | /pɑːst/ — sounds like **PAHST** | /pæst/ — sounds like **PAST**
 1533. v. happened | /ˈhæpənd/ — sounds like **HAP-und** | /ˈhæpənd/ — sounds like **HAP-und**
 1534. v. selected | /sɪˈlektɪd/ — sounds like **si-LEK-tid** | /sɪˈlektɪd/ — sounds like **si-LEK-tid**
-1535. v. must | /mʌst/ — sounds like **MUST** | /mʌst/ — sounds like **MUST**
+1535. v. must | /mʌst/ — sounds like **MUHST** | /mʌst/ — sounds like **MUHST**
 1536. v. should | /ʃʊd/ — sounds like **SHUUD** | /ʃʊd/ — sounds like **SHUUD**
 1537. adv. formally | /ˈfɔːməli/ — sounds like **FAW-muh-lee** | /ˈfɔːrməli/ — sounds like **FOR-muh-lee**
 1538. v. taught | /tɔːt/ — sounds like **TAWT** | /tɔːt/ — sounds like **TAWT**
 1539. adj. next | /nekst/ — sounds like **NEKST** | /nekst/ — sounds like **NEKST**
 1540. n. generation | /ˌdʒenəˈreɪʃən/ — sounds like **jen-uh-RAY-shun** | /ˌdʒenəˈreɪʃən/ — sounds like **jen-uh-RAY-shun**
 1541. v. shape | /ʃeɪp/ — sounds like **SHAYP** | /ʃeɪp/ — sounds like **SHAYP**
-1542. n. Summerhill | /ˈsʌməhɪl/ — sounds like **SUM-uh-hil** | /ˈsʌmərhɪl/ — sounds like **SUM-uhr-hil**
+1542. n. Summerhill | /ˈsʌməhɪl/ — sounds like **SUHM-uh-hil** | /ˈsʌmərhɪl/ — sounds like **SUHM-uhr-hil**
 1543. v. regarded | /rɪˈɡɑːdɪd/ — sounds like **ri-GAH-did** | /rɪˈɡɑːrdɪd/ — sounds like **ri-GAR-did**
 1544. adj. considerable | /kənˈsɪdərəbəl/ — sounds like **kun-SID-uh-ruh-bul** | /kənˈsɪdərəbəl/ — sounds like **kun-SID-uh-ruh-bul**
 1545. n. suspicion | /səˈspɪʃən/ — sounds like **suh-SPISH-un** | /səˈspɪʃən/ — sounds like **suh-SPISH-un**
@@ -1556,7 +1556,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1549. n. council | /ˈkaʊnsəl/ — sounds like **KOWN-sul** | /ˈkaʊnsəl/ — sounds like **KOWN-sul**
 1550. n. staff | /stɑːf/ — sounds like **STAHF** | /stæf/ — sounds like **STAF**
 1551. n. members | /ˈmembəz/ — sounds like **MEM-buhz** | /ˈmembərz/ — sounds like **MEM-buhrz**
-1552. pron. everyone | /ˈevriwʌn/ — sounds like **EV-ree-wun** | /ˈevriwʌn/ — sounds like **EV-ree-wun**
+1552. pron. everyone | /ˈevriwʌn/ — sounds like **EV-ree-wuhn** | /ˈevriwʌn/ — sounds like **EV-ree-wuhn**
 1553. v. having | /ˈhævɪŋ/ — sounds like **HAV-ing** | /ˈhævɪŋ/ — sounds like **HAV-ing**
 1554. adj. equal | /ˈiːkwəl/ — sounds like **EE-kwul** | /ˈiːkwəl/ — sounds like **EE-kwul**
 1555. n. voting | /ˈvəʊtɪŋ/ — sounds like **VOH-ting** | /ˈvoʊtɪŋ/ — sounds like **VOH-ting**
@@ -1577,19 +1577,19 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1570. n. effects | /ɪˈfekts/ — sounds like **i-FEKTS** | /ɪˈfekts/ — sounds like **i-FEKTS**
 1571. v. defines | /dɪˈfaɪnz/ — sounds like **di-FYNZ** | /dɪˈfaɪnz/ — sounds like **di-FYNZ**
 1572. adj. historical | /hɪˈstɒrɪkəl/ — sounds like **hi-STOR-i-kul** | /hɪˈstɔːrɪkəl/ — sounds like **hi-STOR-i-kul**
-1573. n. money | /ˈmʌni/ — sounds like **MUN-ee** | /ˈmʌni/ — sounds like **MUN-ee**
-1574. n. flood | /flʌd/ — sounds like **FLUD** | /flʌd/ — sounds like **FLUD**
+1573. n. money | /ˈmʌni/ — sounds like **MUHN-ee** | /ˈmʌni/ — sounds like **MUHN-ee**
+1574. n. flood | /flʌd/ — sounds like **FLUHD** | /flʌd/ — sounds like **FLUHD**
 1575. v. hold | /həʊld/ — sounds like **HOHLD** | /hoʊld/ — sounds like **HOHLD**
 1576. n. waters | /ˈwɔːtəz/ — sounds like **WAW-tuhz** | /ˈwɔːtərz/ — sounds like **WAW-turz**
 1577. adv. off | /ɒf/ — sounds like **OF** | /ɔːf/ — sounds like **AWF**
-1578. pron. ones | /wʌnz/ — sounds like **WUNZ** | /wʌnz/ — sounds like **WUNZ**
+1578. pron. ones | /wʌnz/ — sounds like **WUHNZ** | /wʌnz/ — sounds like **WUHNZ**
 1579. v. started | /ˈstɑːtɪd/ — sounds like **STAH-tid** | /ˈstɑːrtɪd/ — sounds like **STAR-tid**
 1580. n. painting | /ˈpeɪntɪŋ/ — sounds like **PAYN-ting** | /ˈpeɪntɪŋ/ — sounds like **PAYN-ting**
 1581. v. painted | /ˈpeɪntɪd/ — sounds like **PAYN-tid** | /ˈpeɪntɪd/ — sounds like **PAYN-tid**
 1582. v. left | /left/ — sounds like **LEFT** | /left/ — sounds like **LEFT**
 1583. n. portrait | /ˈpɔːtrɪt/ — sounds like **POR-trit** | /ˈpɔːrtrət/ — sounds like **POR-trut**
 1584. adj. initial | /ɪˈnɪʃəl/ — sounds like **i-NISH-ul** | /ɪˈnɪʃəl/ — sounds like **i-NISH-ul**
-1585. v. updated | /ˌʌpˈdeɪtɪd/ — sounds like **up-DAY-tid** | /ˈʌpdeɪtɪd/ — sounds like **UP-day-tid**
+1585. v. updated | /ˌʌpˈdeɪtɪd/ — sounds like **uhp-DAY-tid** | /ˈʌpdeɪtɪd/ — sounds like **UHP-day-tid**
 1586. v. reflect | /rɪˈflekt/ — sounds like **ri-FLEKT** | /rɪˈflekt/ — sounds like **ri-FLEKT**
 1587. n. shifts | /ʃɪfts/ — sounds like **SHIFTS** | /ʃɪfts/ — sounds like **SHIFTS**
 1588. v. making | /ˈmeɪkɪŋ/ — sounds like **MAY-king** | /ˈmeɪkɪŋ/ — sounds like **MAY-king**
@@ -1611,14 +1611,14 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1604. adj. basic | /ˈbeɪsɪk/ — sounds like **BAY-sik** | /ˈbeɪsɪk/ — sounds like **BAY-sik**
 1605. n. blocks | /blɒks/ — sounds like **BLOKS** | /blɑːks/ — sounds like **BLAHKS**
 1606. adj. native | /ˈneɪtɪv/ — sounds like **NAY-tiv** | /ˈneɪtɪv/ — sounds like **NAY-tiv**
-1607. n. tongue | /tʌŋ/ — sounds like **TUNG** | /tʌŋ/ — sounds like **TUNG**
+1607. n. tongue | /tʌŋ/ — sounds like **TUHNG** | /tʌŋ/ — sounds like **TUHNG**
 1608. n. notes | /nəʊts/ — sounds like **NOHTS** | /noʊts/ — sounds like **NOHTS**
 1609. v. aid | /eɪd/ — sounds like **AYD** | /eɪd/ — sounds like **AYD**
 1610. n. learning | /ˈlɜːnɪŋ/ — sounds like **LUR-ning** | /ˈlɜːrnɪŋ/ — sounds like **LUR-ning**
 1611. phr. make sure | /meɪk ʃɔː/ — sounds like **MAYK SHOR** | /meɪk ʃʊr/ — sounds like **MAYK SHOOR**
 1612. n. roots | /ruːts/ — sounds like **ROOTS** | /ruːts/ — sounds like **ROOTS**
 1613. pron. who | /huː/ — sounds like **HOO** | /huː/ — sounds like **HOO**
-1614. adj. fundamental | /ˌfʌndəˈmentəl/ — sounds like **fun-duh-MEN-tul** | /ˌfʌndəˈmentəl/ — sounds like **fun-duh-MEN-tul**
+1614. adj. fundamental | /ˌfʌndəˈmentəl/ — sounds like **fuhn-duh-MEN-tuhl** | /ˌfʌndəˈmentəl/ — sounds like **fuhn-duh-MEN-tuhl**
 1615. v. proposes | /prəˈpəʊzɪz/ — sounds like **pruh-POH-ziz** | /prəˈpoʊzɪz/ — sounds like **pruh-POH-ziz**
 1616. v. attack | /əˈtæk/ — sounds like **uh-TAK** | /əˈtæk/ — sounds like **uh-TAK**
 1617. adj. deep | /diːp/ — sounds like **DEEP** | /diːp/ — sounds like **DEEP**
@@ -1629,9 +1629,9 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1622. adj. engaging | /ɪnˈɡeɪdʒɪŋ/ — sounds like **in-GAY-jing** | /ɪnˈɡeɪdʒɪŋ/ — sounds like **in-GAY-jing**
 1623. n. textbook | /ˈtekstbʊk/ — sounds like **TEKST-buuk** | /ˈtekstbʊk/ — sounds like **TEKST-buuk**
 1624. n. academics | /ˌækəˈdemɪks/ — sounds like **ak-uh-DEM-iks** | /ˌækəˈdemɪks/ — sounds like **ak-uh-DEM-iks**
-1625. n. consultants | /kənˈsʌltənts/ — sounds like **kun-SUL-tunts** | /kənˈsʌltənts/ — sounds like **kun-SUL-tunts**
+1625. n. consultants | /kənˈsʌltənts/ — sounds like **kuhn-SUHL-tuhnts** | /kənˈsʌltənts/ — sounds like **kuhn-SUHL-tuhnts**
 1626. n. organizations | /ˌɔːɡənaɪˈzeɪʃənz/ — sounds like **or-guh-ny-ZAY-shunz** | /ˌɔːrɡənəˈzeɪʃənz/ — sounds like **or-guh-nuh-ZAY-shunz**
-1627. v. undergoing | /ˌʌndəˈɡəʊɪŋ/ — sounds like **un-duh-GOH-ing** | /ˌʌndərˈɡoʊɪŋ/ — sounds like **un-dur-GOH-ing**
+1627. v. undergoing | /ˌʌndəˈɡəʊɪŋ/ — sounds like **uhn-duh-GOH-ing** | /ˌʌndərˈɡoʊɪŋ/ — sounds like **uhn-dur-GOH-ing**
 1628. v. offers | /ˈɒfəz/ — sounds like **OF-uhz** | /ˈɔːfərz/ — sounds like **AW-furz**
 1629. n. combination | /ˌkɒmbɪˈneɪʃən/ — sounds like **kom-bi-NAY-shun** | /ˌkɑːmbɪˈneɪʃən/ — sounds like **kahm-bi-NAY-shun**
 1630. adj. rigorous | /ˈrɪɡərəs/ — sounds like **RIG-uh-rus** | /ˈrɪɡərəs/ — sounds like **RIG-ur-us**
@@ -1702,10 +1702,10 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1695. adj. valued | /ˈvæljuːd/ — sounds like **VAL-yood** | /ˈvæljuːd/ — sounds like **VAL-yood**
 1696. adj. happy | /ˈhæpi/ — sounds like **HAP-ee** | /ˈhæpi/ — sounds like **HAP-ee**
 1697. n. tutor | /ˈtjuːtə/ — sounds like **TYOO-tuh** | /ˈtuːtər/ — sounds like **TOO-tur**
-1698. v. encourage | /ɪnˈkʌrɪdʒ/ — sounds like **in-KUR-ij** | /ɪnˈkɜːrɪdʒ/ — sounds like **in-KUR-ij**
+1698. v. encourage | /ɪnˈkʌrɪdʒ/ — sounds like **in-KUHR-ij** | /ɪnˈkɜːrɪdʒ/ — sounds like **in-KUR-ij**
 1699. v. will | /wɪl/ — sounds like **WIL** | /wɪl/ — sounds like **WIL**
 1700. n. goals | /ɡəʊlz/ — sounds like **GOHLZ** | /ɡoʊlz/ — sounds like **GOHLZ**
-1701. n. product | /ˈprɒdʌkt/ — sounds like **PROD-ukt** | /ˈprɑːdʌkt/ — sounds like **PRAH-dukt**
+1701. n. product | /ˈprɒdʌkt/ — sounds like **PROD-uhkt** | /ˈprɑːdʌkt/ — sounds like **PRAH-duhkt**
 1702. n. firm | /fɜːm/ — sounds like **FURM** | /fɜːrm/ — sounds like **FURM**
 1703. n. head | /hed/ — sounds like **HED** | /hed/ — sounds like **HED**
 1704. pron. its | /ɪts/ — sounds like **ITS** | /ɪts/ — sounds like **ITS**
@@ -1715,11 +1715,11 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1708. v. copy | /ˈkɒpi/ — sounds like **KOP-ee** | /ˈkɑːpi/ — sounds like **KAH-pee**
 1709. n. friend | /frend/ — sounds like **FREND** | /frend/ — sounds like **FREND**
 1710. conj. when | /wen/ — sounds like **WEN** | /wen/ — sounds like **WEN**
-1711. v. comes | /kʌmz/ — sounds like **KUMZ** | /kʌmz/ — sounds like **KUMZ**
+1711. v. comes | /kʌmz/ — sounds like **KUHMZ** | /kʌmz/ — sounds like **KUHMZ**
 1712. n. brains | /breɪnz/ — sounds like **BRAYNZ** | /breɪnz/ — sounds like **BRAYNZ**
 1713. adj. active | /ˈæktɪv/ — sounds like **AK-tiv** | /ˈæktɪv/ — sounds like **AK-tiv**
 1714. v. moving | /ˈmuːvɪŋ/ — sounds like **MOO-ving** | /ˈmuːvɪŋ/ — sounds like **MOO-ving**
-1715. det. another | /əˈnʌðə/ — sounds like **uh-NUTH-uh** | /əˈnʌðər/ — sounds like **uh-NUTH-ur**
+1715. det. another | /əˈnʌðə/ — sounds like **uh-NUHTH-uh** | /əˈnʌðər/ — sounds like **uh-NUHTH-ur**
 1716. phr. as soon as | /əz suːn əz/ — sounds like **uz SOON uz** | /əz suːn əz/ — sounds like **uz SOON uz**
 1717. v. reach | /riːtʃ/ — sounds like **REECH** | /riːtʃ/ — sounds like **REECH**
 1718. n. mastery | /ˈmɑːstəri/ — sounds like **MAH-stuh-ree** | /ˈmæstəri/ — sounds like **MAS-tuh-ree**
@@ -1752,18 +1752,18 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1745. adj. relative | /ˈrelətɪv/ — sounds like **REL-uh-tiv** | /ˈrelətɪv/ — sounds like **REL-uh-tiv**
 1746. n. decline | /dɪˈklaɪn/ — sounds like **di-KLYN** | /dɪˈklaɪn/ — sounds like **di-KLYN**
 1747. n. impression | /ɪmˈpreʃən/ — sounds like **im-PRESH-un** | /ɪmˈpreʃən/ — sounds like **im-PRESH-un**
-1748. adj. unsure | /ˌʌnˈʃɔː/ — sounds like **un-SHOR** | /ˌʌnˈʃʊr/ — sounds like **un-SHOOR**
+1748. adj. unsure | /ˌʌnˈʃɔː/ — sounds like **uhn-SHOR** | /ˌʌnˈʃʊr/ — sounds like **uhn-SHOOR**
 1749. n. tomorrow | /təˈmɒrəʊ/ — sounds like **tuh-MOR-oh** | /təˈmɑːroʊ/ — sounds like **tuh-MAH-roh**
 1750. v. may | /meɪ/ — sounds like **MAY** | /meɪ/ — sounds like **MAY**
 1751. adj. biased | /ˈbaɪəst/ — sounds like **BY-ust** | /ˈbaɪəst/ — sounds like **BY-ust**
 1752. v. ensure | /ɪnˈʃɔː/ — sounds like **in-SHOR** | /ɪnˈʃʊr/ — sounds like **in-SHOOR**
 1753. adv. not | /nɒt/ — sounds like **NOT** | /nɑːt/ — sounds like **NAHT**
 1754. n. source | /sɔːs/ — sounds like **SORS** | /sɔːrs/ — sounds like **SORS**
-1755. n. funding | /ˈfʌndɪŋ/ — sounds like **FUN-ding** | /ˈfʌndɪŋ/ — sounds like **FUN-ding**
+1755. n. funding | /ˈfʌndɪŋ/ — sounds like **FUHN-ding** | /ˈfʌndɪŋ/ — sounds like **FUHN-ding**
 1756. n. fall | /fɔːl/ — sounds like **FAWL** | /fɔːl/ — sounds like **FAWL**
 1757. v. make | /meɪk/ — sounds like **MAYK** | /meɪk/ — sounds like **MAYK**
 1758. adj. scenic | /ˈsiːnɪk/ — sounds like **SEE-nik** | /ˈsiːnɪk/ — sounds like **SEE-nik**
-1759. v. heats up | /hiːts ʌp/ — sounds like **HEETS UP** | /hiːts ʌp/ — sounds like **HEETS UP**
+1759. v. heats up | /hiːts ʌp/ — sounds like **HEETS UHP** | /hiːts ʌp/ — sounds like **HEETS UHP**
 1760. adj. enjoyable | /ɪnˈdʒɔɪəbəl/ — sounds like **in-JOY-uh-bul** | /ɪnˈdʒɔɪəbəl/ — sounds like **in-JOY-uh-bul**
 1761. n. travel | /ˈtrævəl/ — sounds like **TRAV-ul** | /ˈtrævəl/ — sounds like **TRAV-ul**
 1762. n. guides | /ɡaɪdz/ — sounds like **GYDZ** | /ɡaɪdz/ — sounds like **GYDZ**
@@ -1779,9 +1779,9 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1772. v. looking | /ˈlʊkɪŋ/ — sounds like **LUUK-ing** | /ˈlʊkɪŋ/ — sounds like **LUUK-ing**
 1773. n. furniture | /ˈfɜːnɪtʃə/ — sounds like **FUR-ni-chuh** | /ˈfɜːrnɪtʃər/ — sounds like **FUR-ni-chur**
 1774. adv. purely | /ˈpjʊəli/ — sounds like **PYOOR-lee** | /ˈpjʊrli/ — sounds like **PYOOR-lee**
-1775. adj. functional | /ˈfʌŋkʃənəl/ — sounds like **FUNK-shuh-nul** | /ˈfʌŋkʃənəl/ — sounds like **FUNK-shuh-nul**
+1775. adj. functional | /ˈfʌŋkʃənəl/ — sounds like **FUHNK-shuh-nuhl** | /ˈfʌŋkʃənəl/ — sounds like **FUHNK-shuh-nuhl**
 1776. n. aesthetics | /iːsˈθetɪks/ — sounds like **ees-THET-iks** | /esˈθetɪks/ — sounds like **es-THET-iks**
-1777. pron. others | /ˈʌðəz/ — sounds like **UTH-uhz** | /ˈʌðərz/ — sounds like **UTH-urz**
+1777. pron. others | /ˈʌðəz/ — sounds like **UHTH-uhz** | /ˈʌðərz/ — sounds like **UHTH-urz**
 1778. adj. civilized | /ˈsɪvəlaɪzd/ — sounds like **SIV-uh-lyzd** | /ˈsɪvəlaɪzd/ — sounds like **SIV-uh-lyzd**
 1779. n. concern | /kənˈsɜːn/ — sounds like **kun-SURN** | /kənˈsɜːrn/ — sounds like **kun-SURN**
 1780. v. combined | /kəmˈbaɪnd/ — sounds like **kum-BYND** | /kəmˈbaɪnd/ — sounds like **kum-BYND**
@@ -1793,8 +1793,8 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1786. n. desert | /ˈdezət/ — sounds like **DEZ-ut** | /ˈdezərt/ — sounds like **DEZ-urt**
 1787. n. terrain | /təˈreɪn/ — sounds like **tuh-RAYN** | /təˈreɪn/ — sounds like **tuh-RAYN**
 1788. v. spans | /spænz/ — sounds like **SPANZ** | /spænz/ — sounds like **SPANZ**
-1789. adj. uninhabited | /ˌʌnɪnˈhæbɪtɪd/ — sounds like **un-in-HAB-i-tid** | /ˌʌnɪnˈhæbɪtɪd/ — sounds like **un-in-HAB-i-tid**
-1790. n. drug | /drʌɡ/ — sounds like **DRUG** | /drʌɡ/ — sounds like **DRUG**
+1789. adj. uninhabited | /ˌʌnɪnˈhæbɪtɪd/ — sounds like **uhn-in-HAB-i-tid** | /ˌʌnɪnˈhæbɪtɪd/ — sounds like **uhn-in-HAB-i-tid**
+1790. n. drug | /drʌɡ/ — sounds like **DRUHG** | /drʌɡ/ — sounds like **DRUHG**
 1791. n. trafficking | /ˈtræfɪkɪŋ/ — sounds like **TRAF-i-king** | /ˈtræfɪkɪŋ/ — sounds like **TRAF-i-king**
 1792. adj. illegal | /ɪˈliːɡəl/ — sounds like **i-LEE-gul** | /ɪˈliːɡəl/ — sounds like **i-LEE-gul**
 1793. n. crossings | /ˈkrɒsɪŋz/ — sounds like **KROS-ingz** | /ˈkrɔːsɪŋz/ — sounds like **KRAW-singz**
@@ -1822,9 +1822,9 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1815. n. aim | /eɪm/ — sounds like **AYM** | /eɪm/ — sounds like **AYM**
 1816. v. show | /ʃəʊ/ — sounds like **SHOH** | /ʃoʊ/ — sounds like **SHOH**
 1817. v. affect | /əˈfekt/ — sounds like **uh-FEKT** | /əˈfekt/ — sounds like **uh-FEKT**
-1818. pron. each other | /iːtʃ ˈʌðə/ — sounds like **EECH UTH-uh** | /iːtʃ ˈʌðər/ — sounds like **EECH UTH-ur**
+1818. pron. each other | /iːtʃ ˈʌðə/ — sounds like **EECH UHTH-uh** | /iːtʃ ˈʌðər/ — sounds like **EECH UHTH-ur**
 1819. n. developments | /dɪˈveləpmənts/ — sounds like **di-VEL-up-munts** | /dɪˈveləpmənts/ — sounds like **di-VEL-up-munts**
-1820. n. customs | /ˈkʌstəmz/ — sounds like **KUS-tumz** | /ˈkʌstəmz/ — sounds like **KUS-tumz**
+1820. n. customs | /ˈkʌstəmz/ — sounds like **KUHS-tuhmz** | /ˈkʌstəmz/ — sounds like **KUHS-tuhmz**
 1821. n. beliefs | /bɪˈliːfs/ — sounds like **bi-LEEFS** | /bɪˈliːfs/ — sounds like **bi-LEEFS**
 1822. n. genetics | /dʒəˈnetɪks/ — sounds like **juh-NET-iks** | /dʒəˈnetɪks/ — sounds like **juh-NET-iks**
 1823. n. example | /ɪɡˈzɑːmpəl/ — sounds like **ig-ZAHM-pul** | /ɪɡˈzæmpəl/ — sounds like **ig-ZAM-pul**
@@ -1862,14 +1862,14 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1855. adj. strictest | /ˈstrɪktɪst/ — sounds like **STRIK-tist** | /ˈstrɪktɪst/ — sounds like **STRIK-tist**
 1856. v. define | /dɪˈfaɪn/ — sounds like **di-FYN** | /dɪˈfaɪn/ — sounds like **di-FYN**
 1857. n. inhalation | /ˌɪnhəˈleɪʃən/ — sounds like **in-huh-LAY-shun** | /ˌɪnhəˈleɪʃən/ — sounds like **in-huh-LAY-shun**
-1858. n. substance | /ˈsʌbstəns/ — sounds like **SUB-stunss** | /ˈsʌbstəns/ — sounds like **SUB-stunss**
+1858. n. substance | /ˈsʌbstəns/ — sounds like **SUHB-stuhnss** | /ˈsʌbstəns/ — sounds like **SUHB-stuhnss**
 1859. adj. loosest | /ˈluːsɪst/ — sounds like **LOO-sist** | /ˈluːsɪst/ — sounds like **LOO-sist**
 1860. v. possessing | /pəˈzesɪŋ/ — sounds like **puh-ZES-ing** | /pəˈzesɪŋ/ — sounds like **puh-ZES-ing**
 1861. adj. lit | /lɪt/ — sounds like **LIT** | /lɪt/ — sounds like **LIT**
 1862. adj. legal | /ˈliːɡəl/ — sounds like **LEE-gul** | /ˈliːɡəl/ — sounds like **LEE-gul**
 1863. adj. discursive | /dɪˈskɜːsɪv/ — sounds like **di-SKUR-siv** | /dɪˈskɜːrsɪv/ — sounds like **di-SKUR-siv**
 1864. n. humanities | /hjuːˈmænɪtiz/ — sounds like **hyoo-MAN-i-teez** | /hjuːˈmænətiz/ — sounds like **hyoo-MAN-i-teez**
-1865. n. subjects | /ˈsʌbdʒɪkts/ — sounds like **SUB-jikts** | /ˈsʌbdʒɪkts/ — sounds like **SUB-jikts**
+1865. n. subjects | /ˈsʌbdʒɪkts/ — sounds like **SUHB-jikts** | /ˈsʌbdʒɪkts/ — sounds like **SUHB-jikts**
 1866. n. precision | /prɪˈsɪʒən/ — sounds like **pri-SIZH-un** | /prɪˈsɪʒən/ — sounds like **pri-SIZH-un**
 1867. n. variety | /vəˈraɪəti/ — sounds like **vuh-RY-uh-tee** | /vəˈraɪəti/ — sounds like **vuh-RY-uh-tee**
 1868. n. sentence | /ˈsentəns/ — sounds like **SEN-tunss** | /ˈsentəns/ — sounds like **SEN-tunss**
@@ -1893,7 +1893,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1886. n. failure | /ˈfeɪljə/ — sounds like **FAYL-yuh** | /ˈfeɪljər/ — sounds like **FAYL-yur**
 1887. adj. established | /ɪˈstæblɪʃt/ — sounds like **i-STAB-lisht** | /ɪˈstæblɪʃt/ — sounds like **i-STAB-lisht**
 1888. det. little | /ˈlɪtəl/ — sounds like **LIT-ul** | /ˈlɪtəl/ — sounds like **LIT-ul**
-1889. n. customer | /ˈkʌstəmə/ — sounds like **KUS-tuh-muh** | /ˈkʌstəmər/ — sounds like **KUS-tuh-mur**
+1889. n. customer | /ˈkʌstəmə/ — sounds like **KUHS-tuh-muh** | /ˈkʌstəmər/ — sounds like **KUHS-tuh-mur**
 1890. n. access | /ˈækses/ — sounds like **AK-ses** | /ˈækses/ — sounds like **AK-ses**
 1891. n. restaurateurs | /ˌrestərəˈtɜːz/ — sounds like **res-tuh-ruh-TURZ** | /ˌrestərəˈtɜːrz/ — sounds like **res-tuh-ruh-TURZ**
 1892. n. battles | /ˈbætəlz/ — sounds like **BAT-ulz** | /ˈbætəlz/ — sounds like **BAT-ulz**

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-07-22T09:19:03.985Z",
+    "generated": "2026-07-22T09:35:24.307Z",
     "totalTerms": 1904,
     "source": "pte-my-ra",
     "description": "My PTE Read Aloud word list",
@@ -544,11 +544,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈdʒʌstɪfaɪəbəl",
-          "phonetic": "JUS-ti-fye-uh-bul"
+          "phonetic": "JUHS-ti-fye-uh-buhl"
         },
         "american": {
           "ipa": "ˈdʒʌstɪfaɪəbəl",
-          "phonetic": "JUS-ti-fye-uh-bul"
+          "phonetic": "JUHS-ti-fye-uh-buhl"
         }
       },
       "difficulty": "hard",
@@ -816,11 +816,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈkʌltɪveɪt",
-          "phonetic": "KUL-ti-vayt"
+          "phonetic": "KUHL-ti-vayt"
         },
         "american": {
           "ipa": "ˈkʌltɪveɪt",
-          "phonetic": "KUL-ti-vayt"
+          "phonetic": "KUHL-ti-vayt"
         }
       },
       "difficulty": "normal",
@@ -918,11 +918,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈækwəkʌltʃə",
-          "phonetic": "AK-wuh-kul-chuh"
+          "phonetic": "AK-wuh-kuhl-chuh"
         },
         "american": {
           "ipa": "ˈækwəkʌltʃər",
-          "phonetic": "AK-wuh-kul-chuhr"
+          "phonetic": "AK-wuh-kuhl-chuhr"
         }
       },
       "difficulty": "hard",
@@ -1394,11 +1394,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈkʌntri",
-          "phonetic": "KUN-tree"
+          "phonetic": "KUHN-tree"
         },
         "american": {
           "ipa": "ˈkʌntri",
-          "phonetic": "KUN-tree"
+          "phonetic": "KUHN-tree"
         }
       },
       "difficulty": "normal",
@@ -1802,11 +1802,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌʌnɪmˈplɔɪd",
-          "phonetic": "un-im-PLOYD"
+          "phonetic": "uhn-im-PLOYD"
         },
         "american": {
           "ipa": "ˌʌnɪmˈplɔɪd",
-          "phonetic": "un-im-PLOYD"
+          "phonetic": "uhn-im-PLOYD"
         }
       },
       "difficulty": "hard",
@@ -1870,11 +1870,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌʌnəˈweə",
-          "phonetic": "un-uh-WAIR"
+          "phonetic": "uhn-uh-WAIR"
         },
         "american": {
           "ipa": "ˌʌnəˈwer",
-          "phonetic": "un-uh-WAIR"
+          "phonetic": "uhn-uh-WAIR"
         }
       },
       "difficulty": "normal",
@@ -1887,11 +1887,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈsʌtəl",
-          "phonetic": "SUT-ul"
+          "phonetic": "SUHT-uhl"
         },
         "american": {
           "ipa": "ˈsʌtəl",
-          "phonetic": "SUT-ul"
+          "phonetic": "SUHT-uhl"
         }
       },
       "difficulty": "normal",
@@ -3043,11 +3043,11 @@
       "pronunciation": {
         "british": {
           "ipa": "taɪ ʌp",
-          "phonetic": "TYE UP"
+          "phonetic": "TYE UHP"
         },
         "american": {
           "ipa": "taɪ ʌp",
-          "phonetic": "TYE UP"
+          "phonetic": "TYE UHP"
         }
       },
       "difficulty": "normal",
@@ -3485,11 +3485,11 @@
       "pronunciation": {
         "british": {
           "ipa": "dɪˈskʌvəd",
-          "phonetic": "di-SKUV-ud"
+          "phonetic": "di-SKUHV-uhd"
         },
         "american": {
           "ipa": "dɪˈskʌvərd",
-          "phonetic": "di-SKUV-urd"
+          "phonetic": "di-SKUHV-urd"
         }
       },
       "difficulty": "hard",
@@ -3570,11 +3570,11 @@
       "pronunciation": {
         "british": {
           "ipa": "prəˈdʌktɪv",
-          "phonetic": "pruh-DUK-tiv"
+          "phonetic": "pruh-DUHK-tiv"
         },
         "american": {
           "ipa": "prəˈdʌktɪv",
-          "phonetic": "pruh-DUK-tiv"
+          "phonetic": "pruh-DUHK-tiv"
         }
       },
       "difficulty": "hard",
@@ -4131,11 +4131,11 @@
       "pronunciation": {
         "british": {
           "ipa": "wʌns",
-          "phonetic": "WUNS"
+          "phonetic": "WUHNS"
         },
         "american": {
           "ipa": "wʌns",
-          "phonetic": "WUNS"
+          "phonetic": "WUHNS"
         }
       },
       "difficulty": "easy",
@@ -4254,7 +4254,7 @@
         },
         "american": {
           "ipa": "ˌpɑpjəˈlærəti",
-          "phonetic": "PAH-pjə-LAR-uh-tee"
+          "phonetic": "PAH-pjuh-LAR-uh-tee"
         }
       },
       "difficulty": "hard",
@@ -4335,11 +4335,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌkʌltɪˈveɪʃən",
-          "phonetic": "kul-ti-VAY-shun"
+          "phonetic": "kuhl-ti-VAY-shuhn"
         },
         "american": {
           "ipa": "ˌkʌltɪˈveɪʃən",
-          "phonetic": "kul-ti-VAY-shun"
+          "phonetic": "kuhl-ti-VAY-shuhn"
         }
       },
       "difficulty": "hard",
@@ -4386,11 +4386,11 @@
       "pronunciation": {
         "british": {
           "ipa": "prəˈdʌkʃən",
-          "phonetic": "pruh-DUK-shun"
+          "phonetic": "pruh-DUHK-shuhn"
         },
         "american": {
           "ipa": "prəˈdʌkʃən",
-          "phonetic": "pruh-DUK-shun"
+          "phonetic": "pruh-DUHK-shuhn"
         }
       },
       "difficulty": "hard",
@@ -4420,11 +4420,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈstrʌɡəlɪŋ",
-          "phonetic": "STRUG-uh-ling"
+          "phonetic": "STRUHG-uh-ling"
         },
         "american": {
           "ipa": "ˈstrʌɡəlɪŋ",
-          "phonetic": "STRUG-uh-ling"
+          "phonetic": "STRUHG-uh-ling"
         }
       },
       "difficulty": "hard",
@@ -4471,11 +4471,11 @@
       "pronunciation": {
         "british": {
           "ipa": "kaʊnt ʌp",
-          "phonetic": "KOWNT UP"
+          "phonetic": "KOWNT UHP"
         },
         "american": {
           "ipa": "kaʊnt ʌp",
-          "phonetic": "KOWNT UP"
+          "phonetic": "KOWNT UHP"
         }
       },
       "difficulty": "normal",
@@ -4590,11 +4590,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈsʌmə",
-          "phonetic": "SUM-uh"
+          "phonetic": "SUHM-uh"
         },
         "american": {
           "ipa": "ˈsʌmər",
-          "phonetic": "SUM-er"
+          "phonetic": "SUHM-er"
         }
       },
       "difficulty": "normal",
@@ -4624,11 +4624,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈwʌriɪŋ",
-          "phonetic": "WUR-ee-ing"
+          "phonetic": "WUHR-ee-ing"
         },
         "american": {
           "ipa": "ˈwɝːiɪŋ",
-          "phonetic": "WUR-ee-ing"
+          "phonetic": "WUHR-ee-ing"
         }
       },
       "difficulty": "normal",
@@ -4760,11 +4760,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈrʌʃənz",
-          "phonetic": "RUSH-unz"
+          "phonetic": "RUHSH-uhnz"
         },
         "american": {
           "ipa": "ˈrʌʃənz",
-          "phonetic": "RUSH-unz"
+          "phonetic": "RUHSH-uhnz"
         }
       },
       "difficulty": "normal",
@@ -4811,11 +4811,11 @@
       "pronunciation": {
         "british": {
           "ipa": "rɪˈzʌlt",
-          "phonetic": "ri-ZULT"
+          "phonetic": "ri-ZUHLT"
         },
         "american": {
           "ipa": "rɪˈzʌlt",
-          "phonetic": "ri-ZULT"
+          "phonetic": "ri-ZUHLT"
         }
       },
       "difficulty": "normal",
@@ -4828,11 +4828,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ʌnˈjuːʒuəl",
-          "phonetic": "un-YOO-zhoo-ul"
+          "phonetic": "uhn-YOO-zhoo-uhl"
         },
         "american": {
           "ipa": "ʌnˈjuːʒuəl",
-          "phonetic": "un-YOO-zhoo-ul"
+          "phonetic": "uhn-YOO-zhoo-uhl"
         }
       },
       "difficulty": "normal",
@@ -4879,11 +4879,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈhʌndrədz",
-          "phonetic": "HUN-druhdz"
+          "phonetic": "HUHN-druhdz"
         },
         "american": {
           "ipa": "ˈhʌndrədz",
-          "phonetic": "HUN-druhdz"
+          "phonetic": "HUHN-druhdz"
         }
       },
       "difficulty": "normal",
@@ -5032,11 +5032,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ʌnˈræp",
-          "phonetic": "un-RAP"
+          "phonetic": "uhn-RAP"
         },
         "american": {
           "ipa": "ʌnˈræp",
-          "phonetic": "un-RAP"
+          "phonetic": "uhn-RAP"
         }
       },
       "difficulty": "normal",
@@ -5202,11 +5202,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌʌndəˈstænd",
-          "phonetic": "un-duh-STAND"
+          "phonetic": "uhn-duh-STAND"
         },
         "american": {
           "ipa": "ˌʌndərˈstænd",
-          "phonetic": "un-der-STAND"
+          "phonetic": "uhn-der-STAND"
         }
       },
       "difficulty": "hard",
@@ -5389,11 +5389,11 @@
       "pronunciation": {
         "british": {
           "ipa": "tʌsk",
-          "phonetic": "TUSK"
+          "phonetic": "TUHSK"
         },
         "american": {
           "ipa": "tʌsk",
-          "phonetic": "TUSK"
+          "phonetic": "TUHSK"
         }
       },
       "difficulty": "easy",
@@ -5406,11 +5406,11 @@
       "pronunciation": {
         "british": {
           "ipa": "bʌlk",
-          "phonetic": "BULK"
+          "phonetic": "BUHLK"
         },
         "american": {
           "ipa": "bʌlk",
-          "phonetic": "BULK"
+          "phonetic": "BUHLK"
         }
       },
       "difficulty": "easy",
@@ -5746,11 +5746,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈbæŋkrʌpt",
-          "phonetic": "BANK-rupt"
+          "phonetic": "BANK-ruhpt"
         },
         "american": {
           "ipa": "ˈbæŋkrʌpt",
-          "phonetic": "BANK-rupt"
+          "phonetic": "BANK-ruhpt"
         }
       },
       "difficulty": "normal",
@@ -5763,11 +5763,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈkʌmpəniz",
-          "phonetic": "KUM-puh-neez"
+          "phonetic": "KUHM-puh-neez"
         },
         "american": {
           "ipa": "ˈkʌmpəniz",
-          "phonetic": "KUM-puh-neez"
+          "phonetic": "KUHM-puh-neez"
         }
       },
       "difficulty": "normal",
@@ -5797,11 +5797,11 @@
       "pronunciation": {
         "british": {
           "ipa": "rɪˈzʌlts",
-          "phonetic": "ri-ZULTS"
+          "phonetic": "ri-ZUHLTS"
         },
         "american": {
           "ipa": "rɪˈzʌlts",
-          "phonetic": "ri-ZULTS"
+          "phonetic": "ri-ZUHLTS"
         }
       },
       "difficulty": "normal",
@@ -6409,11 +6409,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌʌnɪmˈplɔɪmənt",
-          "phonetic": "un-im-PLOY-munt"
+          "phonetic": "uhn-im-PLOY-muhnt"
         },
         "american": {
           "ipa": "ˌʌnɪmˈplɔɪmənt",
-          "phonetic": "un-im-PLOY-munt"
+          "phonetic": "uhn-im-PLOY-muhnt"
         }
       },
       "difficulty": "hard",
@@ -6443,11 +6443,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ʌnˈhæpi",
-          "phonetic": "un-HAP-ee"
+          "phonetic": "uhn-HAP-ee"
         },
         "american": {
           "ipa": "ʌnˈhæpi",
-          "phonetic": "un-HAP-ee"
+          "phonetic": "uhn-HAP-ee"
         }
       },
       "difficulty": "normal",
@@ -6613,11 +6613,11 @@
       "pronunciation": {
         "british": {
           "ipa": "dɪˈskʌvəriz",
-          "phonetic": "di-SKUV-uh-reez"
+          "phonetic": "di-SKUHV-uh-reez"
         },
         "american": {
           "ipa": "dɪˈskʌvəriz",
-          "phonetic": "di-SKUV-uh-reez"
+          "phonetic": "di-SKUHV-uh-reez"
         }
       },
       "difficulty": "hard",
@@ -6987,11 +6987,11 @@
       "pronunciation": {
         "british": {
           "ipa": "krʌˈsteɪʃənz",
-          "phonetic": "krus-TAY-shunz"
+          "phonetic": "kruhs-TAY-shuhnz"
         },
         "american": {
           "ipa": "krʌˈsteɪʃənz",
-          "phonetic": "krus-TAY-shunz"
+          "phonetic": "kruhs-TAY-shuhnz"
         }
       },
       "difficulty": "hard",
@@ -7038,11 +7038,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈkʌltɪveɪtɪŋ",
-          "phonetic": "KUL-ti-vay-ting"
+          "phonetic": "KUHL-ti-vay-ting"
         },
         "american": {
           "ipa": "ˈkʌltəveɪtɪŋ",
-          "phonetic": "KUL-tuh-vay-ting"
+          "phonetic": "KUHL-tuh-vay-ting"
         }
       },
       "difficulty": "hard",
@@ -7157,11 +7157,11 @@
       "pronunciation": {
         "british": {
           "ipa": "kʌm əˈkrɒs",
-          "phonetic": "kum uh-KROSS"
+          "phonetic": "kuhm uh-KROSS"
         },
         "american": {
           "ipa": "kʌm əˈkrɔːs",
-          "phonetic": "kum uh-KRAWS"
+          "phonetic": "kuhm uh-KRAWS"
         }
       },
       "difficulty": "hard",
@@ -7378,11 +7378,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈflʌd kənˌtrəʊl",
-          "phonetic": "FLUD kun-TROHL"
+          "phonetic": "FLUHD kuhn-TROHL"
         },
         "american": {
           "ipa": "ˈflʌd kənˌtroʊl",
-          "phonetic": "FLUD kun-TROHL"
+          "phonetic": "FLUHD kuhn-TROHL"
         }
       },
       "difficulty": "hard",
@@ -7514,11 +7514,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈstrʌktʃə",
-          "phonetic": "STRUK-chuh"
+          "phonetic": "STRUHK-chuh"
         },
         "american": {
           "ipa": "ˈstrʌktʃər",
-          "phonetic": "STRUK-chur"
+          "phonetic": "STRUHK-chur"
         }
       },
       "difficulty": "normal",
@@ -7769,11 +7769,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈædʌlt",
-          "phonetic": "AD-ult"
+          "phonetic": "AD-uhlt"
         },
         "american": {
           "ipa": "əˈdʌlt",
-          "phonetic": "uh-DULT"
+          "phonetic": "uh-DUHLT"
         }
       },
       "difficulty": "easy",
@@ -7803,11 +7803,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈneɪtɪv tʌŋ",
-          "phonetic": "NAY-tiv TUNG"
+          "phonetic": "NAY-tiv TUHNG"
         },
         "american": {
           "ipa": "ˈneɪtɪv tʌŋ",
-          "phonetic": "NAY-tiv TUNG"
+          "phonetic": "NAY-tiv TUHNG"
         }
       },
       "difficulty": "hard",
@@ -7854,11 +7854,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈeniwʌn",
-          "phonetic": "EN-ee-wun"
+          "phonetic": "EN-ee-wuhn"
         },
         "american": {
           "ipa": "ˈeniwʌn",
-          "phonetic": "EN-ee-wun"
+          "phonetic": "EN-ee-wuhn"
         }
       },
       "difficulty": "normal",
@@ -7888,11 +7888,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌfʌndəˈmentəl tʃeɪndʒ",
-          "phonetic": "fun-duh-MEN-tul CHAYNJ"
+          "phonetic": "fuhn-duh-MEN-tuhl CHAYNJ"
         },
         "american": {
           "ipa": "ˌfʌndəˈmentəl tʃeɪndʒ",
-          "phonetic": "fun-duh-MEN-tul CHAYNJ"
+          "phonetic": "fuhn-duh-MEN-tuhl CHAYNJ"
         }
       },
       "difficulty": "hard",
@@ -8160,11 +8160,11 @@
       "pronunciation": {
         "british": {
           "ipa": "dʌtʃ",
-          "phonetic": "DUTCH"
+          "phonetic": "DUHTCH"
         },
         "american": {
           "ipa": "dʌtʃ",
-          "phonetic": "DUTCH"
+          "phonetic": "DUHTCH"
         }
       },
       "difficulty": "easy",
@@ -8262,11 +8262,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈkʌltʃərəl ˈvenjuːz",
-          "phonetic": "KUL-chur-ul VEN-yooz"
+          "phonetic": "KUHL-chur-uhl VEN-yooz"
         },
         "american": {
           "ipa": "ˈkʌltʃərəl ˈvenjuːz",
-          "phonetic": "KUL-chur-ul VEN-yooz"
+          "phonetic": "KUHL-chur-uhl VEN-yooz"
         }
       },
       "difficulty": "hard",
@@ -8585,11 +8585,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌʌnrɪˈpɔːtɪd ˈdiːfekts",
-          "phonetic": "un-ri-POR-tid DEE-fekts"
+          "phonetic": "uhn-ri-POR-tid DEE-fekts"
         },
         "american": {
           "ipa": "ˌʌnrɪˈpɔːrtɪd ˈdiːfekts",
-          "phonetic": "un-ri-POR-tid DEE-fekts"
+          "phonetic": "uhn-ri-POR-tid DEE-fekts"
         }
       },
       "difficulty": "hard",
@@ -8687,11 +8687,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌmɪsʌndəˈstændɪŋ",
-          "phonetic": "mis-un-duh-STAN-ding"
+          "phonetic": "mis-uhn-duh-STAN-ding"
         },
         "american": {
           "ipa": "ˌmɪsʌndərˈstændɪŋ",
-          "phonetic": "mis-un-der-STAN-ding"
+          "phonetic": "mis-uhn-der-STAN-ding"
         }
       },
       "difficulty": "hard",
@@ -8840,11 +8840,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈhʌndrəd",
-          "phonetic": "HUN-drud"
+          "phonetic": "HUHN-druhd"
         },
         "american": {
           "ipa": "ˈhʌndrəd",
-          "phonetic": "HUN-drud"
+          "phonetic": "HUHN-druhd"
         }
       },
       "difficulty": "normal",
@@ -9061,11 +9061,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌəʊvəˈkʌm",
-          "phonetic": "oh-vuh-KUM"
+          "phonetic": "oh-vuh-KUHM"
         },
         "american": {
           "ipa": "ˌoʊvərˈkʌm",
-          "phonetic": "oh-ver-KUM"
+          "phonetic": "oh-ver-KUHM"
         }
       },
       "difficulty": "normal",
@@ -9112,11 +9112,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈkʌlə",
-          "phonetic": "KUL-uh"
+          "phonetic": "KUHL-uh"
         },
         "american": {
           "ipa": "ˈkʌlər",
-          "phonetic": "KUL-ur"
+          "phonetic": "KUHL-ur"
         }
       },
       "difficulty": "easy",
@@ -9235,7 +9235,7 @@
         },
         "american": {
           "ipa": "ˈænjuəl",
-          "phonetic": "AN-yoo-əl"
+          "phonetic": "AN-yoo-uhl"
         }
       },
       "difficulty": "normal",
@@ -9269,7 +9269,7 @@
         },
         "american": {
           "ipa": "ˈɛdɪsən",
-          "phonetic": "ED-i-sən"
+          "phonetic": "ED-i-suhn"
         }
       },
       "difficulty": "normal",
@@ -9282,11 +9282,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌʌndəˈteɪk",
-          "phonetic": "UN-duh-TAYK"
+          "phonetic": "UHN-duh-TAYK"
         },
         "american": {
           "ipa": "ˌʌndərˈteɪk",
-          "phonetic": "UN-der-TAYK"
+          "phonetic": "UHN-der-TAYK"
         }
       },
       "difficulty": "normal",
@@ -9468,11 +9468,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈmʌðə",
-          "phonetic": "MUTH-uh"
+          "phonetic": "MUHTH-uh"
         },
         "american": {
           "ipa": "ˈmʌðɚ",
-          "phonetic": "MUTH-er"
+          "phonetic": "MUHTH-er"
         }
       },
       "difficulty": "normal",
@@ -9858,11 +9858,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ʌnˈhɪndəd",
-          "phonetic": "un-HIN-duhd"
+          "phonetic": "uhn-HIN-duhd"
         },
         "american": {
           "ipa": "ʌnˈhɪndərd",
-          "phonetic": "un-HIN-duhrd"
+          "phonetic": "uhn-HIN-duhrd"
         }
       },
       "difficulty": "hard",
@@ -9913,7 +9913,7 @@
         },
         "american": {
           "ipa": "ˈsteɪtəs",
-          "phonetic": "STAY-təs"
+          "phonetic": "STAY-tuhs"
         }
       },
       "difficulty": "normal",
@@ -10168,7 +10168,7 @@
         },
         "american": {
           "ipa": "ˈɔdiəns",
-          "phonetic": "AH-dee-əns"
+          "phonetic": "AH-dee-uhns"
         }
       },
       "difficulty": "normal",
@@ -10368,11 +10368,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ɪkˈspendɪtʃə",
-          "phonetic": "ik-SPEN-dih-chə"
+          "phonetic": "ik-SPEN-dih-chuh"
         },
         "american": {
           "ipa": "ɪkˈspɛndətʃɚ",
-          "phonetic": "ik-SPEN-də-chər"
+          "phonetic": "ik-SPEN-duh-chur"
         }
       },
       "difficulty": "hard",
@@ -10406,7 +10406,7 @@
         },
         "american": {
           "ipa": "rɪˈspɑnsəbəl",
-          "phonetic": "ri-SPAHN-sə-bəl"
+          "phonetic": "ri-SPAHN-suh-buhl"
         }
       },
       "difficulty": "hard",
@@ -10423,7 +10423,7 @@
         },
         "american": {
           "ipa": "ˈædəkwət",
-          "phonetic": "AD-ə-kwət"
+          "phonetic": "AD-uh-kwuht"
         }
       },
       "difficulty": "normal",
@@ -10457,7 +10457,7 @@
         },
         "american": {
           "ipa": "əˈproʊpriət",
-          "phonetic": "ə-PROH-pree-ət"
+          "phonetic": "uh-PROH-pree-uht"
         }
       },
       "difficulty": "hard",
@@ -10622,11 +10622,11 @@
       "pronunciation": {
         "british": {
           "ipa": "jʌŋ",
-          "phonetic": "YUNG"
+          "phonetic": "YUHNG"
         },
         "american": {
           "ipa": "jʌŋ",
-          "phonetic": "YUNG"
+          "phonetic": "YUHNG"
         }
       },
       "difficulty": "easy",
@@ -10660,7 +10660,7 @@
         },
         "american": {
           "ipa": "ˌɪndəˈpɛndənt",
-          "phonetic": "IN-də-PEN-dənt"
+          "phonetic": "IN-duh-PEN-duhnt"
         }
       },
       "difficulty": "hard",
@@ -10741,11 +10741,11 @@
       "pronunciation": {
         "british": {
           "ipa": "bɪˈkʌmz",
-          "phonetic": "bih-KUMZ"
+          "phonetic": "bih-KUHMZ"
         },
         "american": {
           "ipa": "bɪˈkʌmz",
-          "phonetic": "bih-KUMZ"
+          "phonetic": "bih-KUHMZ"
         }
       },
       "difficulty": "normal",
@@ -10758,11 +10758,11 @@
       "pronunciation": {
         "british": {
           "ipa": "əˈləʊn",
-          "phonetic": "ə-LOHN"
+          "phonetic": "uh-LOHN"
         },
         "american": {
           "ipa": "əˈloʊn",
-          "phonetic": "ə-LOHN"
+          "phonetic": "uh-LOHN"
         }
       },
       "difficulty": "easy",
@@ -10809,11 +10809,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈpʌzəlz",
-          "phonetic": "PUZ-uhlz"
+          "phonetic": "PUHZ-uhlz"
         },
         "american": {
           "ipa": "ˈpʌzəlz",
-          "phonetic": "PUZ-uhlz"
+          "phonetic": "PUHZ-uhlz"
         }
       },
       "difficulty": "normal",
@@ -10847,7 +10847,7 @@
         },
         "american": {
           "ipa": "ˈvɝːtʃuəli",
-          "phonetic": "VUR-choo-ə-lee"
+          "phonetic": "VUR-choo-uh-lee"
         }
       },
       "difficulty": "normal",
@@ -10864,7 +10864,7 @@
         },
         "american": {
           "ipa": "ənˈtɪl",
-          "phonetic": "ən-TIL"
+          "phonetic": "uhn-TIL"
         }
       },
       "difficulty": "easy",
@@ -10949,7 +10949,7 @@
         },
         "american": {
           "ipa": "ˈpɑstʃər",
-          "phonetic": "PAHS-chər"
+          "phonetic": "PAHS-chur"
         }
       },
       "difficulty": "normal",
@@ -11383,11 +11383,11 @@
       "pronunciation": {
         "british": {
           "ipa": "skʌl",
-          "phonetic": "SKUL"
+          "phonetic": "SKUHL"
         },
         "american": {
           "ipa": "skʌl",
-          "phonetic": "SKUL"
+          "phonetic": "SKUHL"
         }
       },
       "difficulty": "easy",
@@ -11434,11 +11434,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌʌnɪˈmædʒɪnəbəl",
-          "phonetic": "un-i-MAJ-i-nuh-bul"
+          "phonetic": "uhn-i-MAJ-i-nuh-buhl"
         },
         "american": {
           "ipa": "ˌʌnɪˈmædʒɪnəbəl",
-          "phonetic": "un-i-MAJ-i-nuh-bul"
+          "phonetic": "uhn-i-MAJ-i-nuh-buhl"
         }
       },
       "difficulty": "hard",
@@ -11472,7 +11472,7 @@
         },
         "american": {
           "ipa": "ɪˈmidiətli",
-          "phonetic": "i-MID-ee-ət-lee"
+          "phonetic": "i-MID-ee-uht-lee"
         }
       },
       "difficulty": "hard",
@@ -11570,11 +11570,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈnʌmbə",
-          "phonetic": "NUM-bur"
+          "phonetic": "NUHM-bur"
         },
         "american": {
           "ipa": "ˈnʌmbə",
-          "phonetic": "NUM-bur"
+          "phonetic": "NUHM-bur"
         }
       },
       "difficulty": "normal",
@@ -11619,11 +11619,11 @@
       "pronunciation": {
         "british": {
           "ipa": "sʌtʃ",
-          "phonetic": "SUCH"
+          "phonetic": "SUHCH"
         },
         "american": {
           "ipa": "sʌtʃ",
-          "phonetic": "SUCH"
+          "phonetic": "SUHCH"
         }
       },
       "difficulty": "easy",
@@ -11754,11 +11754,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈwʌndə",
-          "phonetic": "WUN-duh"
+          "phonetic": "WUHN-duh"
         },
         "american": {
           "ipa": "ˈwʌndər",
-          "phonetic": "WUN-dər"
+          "phonetic": "WUHN-dur"
         }
       },
       "difficulty": "normal",
@@ -11890,11 +11890,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈrɪvə",
-          "phonetic": "RIV-ə"
+          "phonetic": "RIV-uh"
         },
         "american": {
           "ipa": "ˈrɪvɚ",
-          "phonetic": "RIV-ər"
+          "phonetic": "RIV-ur"
         }
       },
       "difficulty": "easy",
@@ -11923,11 +11923,11 @@
       "pronunciation": {
         "british": {
           "ipa": "rʌnz",
-          "phonetic": "RUNZ"
+          "phonetic": "RUHNZ"
         },
         "american": {
           "ipa": "rʌnz",
-          "phonetic": "RUNZ"
+          "phonetic": "RUHNZ"
         }
       },
       "difficulty": "easy",
@@ -12029,7 +12029,7 @@
         },
         "american": {
           "ipa": "ˈpeɪpərz",
-          "phonetic": "PAY-pərz"
+          "phonetic": "PAY-purz"
         }
       },
       "difficulty": "normal",
@@ -12130,7 +12130,7 @@
         },
         "american": {
           "ipa": "ˈivən",
-          "phonetic": "EE-vən"
+          "phonetic": "EE-vuhn"
         }
       },
       "difficulty": "easy",
@@ -12333,7 +12333,7 @@
         },
         "american": {
           "ipa": "ˈræðər ðæn",
-          "phonetic": "RATH-ər than"
+          "phonetic": "RATH-ur than"
         }
       },
       "difficulty": "hard",
@@ -12346,11 +12346,11 @@
       "pronunciation": {
         "british": {
           "ipa": "dʒʌst",
-          "phonetic": "JUST"
+          "phonetic": "JUHST"
         },
         "american": {
           "ipa": "dʒʌst",
-          "phonetic": "JUST"
+          "phonetic": "JUHST"
         }
       },
       "difficulty": "easy",
@@ -12502,7 +12502,7 @@
         },
         "american": {
           "ipa": "ˈætməˌsfɪr",
-          "phonetic": "AT-mə-sfeer"
+          "phonetic": "AT-muh-sfeer"
         }
       },
       "difficulty": "hard",
@@ -12536,7 +12536,7 @@
         },
         "american": {
           "ipa": "ˈmɪdəl",
-          "phonetic": "MID-əl"
+          "phonetic": "MID-uhl"
         }
       },
       "difficulty": "normal",
@@ -12617,11 +12617,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌɡʌvənˈmentl",
-          "phonetic": "GUV-un-MEN-tul"
+          "phonetic": "GUHV-uhn-MEN-tuhl"
         },
         "american": {
           "ipa": "ˌɡʌvərnˈmɛntl",
-          "phonetic": "GUV-urn-MENT-ul"
+          "phonetic": "GUHV-urn-MENT-uhl"
         }
       },
       "difficulty": "hard",
@@ -12638,7 +12638,7 @@
         },
         "american": {
           "ipa": "əˈfɪʃəlz",
-          "phonetic": "ə-FISH-əlz"
+          "phonetic": "uh-FISH-uhlz"
         }
       },
       "difficulty": "normal",
@@ -12774,7 +12774,7 @@
         },
         "american": {
           "ipa": "ˈɪntrəstəd",
-          "phonetic": "IN-trə-stəd"
+          "phonetic": "IN-truh-stuhd"
         }
       },
       "difficulty": "hard",
@@ -12808,7 +12808,7 @@
         },
         "american": {
           "ipa": "kəˈnɛkʃən",
-          "phonetic": "kə-NEK-shən"
+          "phonetic": "kuh-NEK-shuhn"
         }
       },
       "difficulty": "hard",
@@ -12906,11 +12906,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈstʌdi",
-          "phonetic": "STUD-ee"
+          "phonetic": "STUHD-ee"
         },
         "american": {
           "ipa": "ˈstʌdi",
-          "phonetic": "STUD-ee"
+          "phonetic": "STUHD-ee"
         }
       },
       "difficulty": "easy",
@@ -12939,11 +12939,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈhʌntɪd",
-          "phonetic": "HUN-tid"
+          "phonetic": "HUHN-tid"
         },
         "american": {
           "ipa": "ˈhʌntɪd",
-          "phonetic": "HUN-tid"
+          "phonetic": "HUHN-tid"
         }
       },
       "difficulty": "normal",
@@ -12960,7 +12960,7 @@
         },
         "american": {
           "ipa": "ˈklaɪmət",
-          "phonetic": "KLY-mət"
+          "phonetic": "KLY-muht"
         }
       },
       "difficulty": "normal",
@@ -13141,11 +13141,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈkʌmpəni ˌɔːrientɪd",
-          "phonetic": "KUM-puh-nee AW-ree-en-tid"
+          "phonetic": "KUHM-puh-nee AW-ree-en-tid"
         },
         "american": {
           "ipa": "ˈkʌmpəni ˌɔːriəntɪd",
-          "phonetic": "KUM-puh-nee OR-ee-en-tid"
+          "phonetic": "KUHM-puh-nee OR-ee-en-tid"
         }
       },
       "difficulty": "hard",
@@ -13365,7 +13365,7 @@
         },
         "american": {
           "ipa": "pərˈfɔrməns",
-          "phonetic": "pər-FORM-əns"
+          "phonetic": "pur-FORM-uhns"
         }
       },
       "difficulty": "hard",
@@ -13466,7 +13466,7 @@
         },
         "american": {
           "ipa": "prəˈvaɪd",
-          "phonetic": "prə-VYD"
+          "phonetic": "pruh-VYD"
         }
       },
       "difficulty": "normal",
@@ -13513,11 +13513,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈkʌmftəbəl",
-          "phonetic": "KUMF-tuh-bul"
+          "phonetic": "KUHMF-tuh-buhl"
         },
         "american": {
           "ipa": "ˈkʌmftəbəl",
-          "phonetic": "KUMF-tə-bəl"
+          "phonetic": "KUHMF-tuh-buhl"
         }
       },
       "difficulty": "hard",
@@ -13618,7 +13618,7 @@
         },
         "american": {
           "ipa": "ˈlɪmətəd",
-          "phonetic": "LIM-ə-təd"
+          "phonetic": "LIM-uh-tuhd"
         }
       },
       "difficulty": "normal",
@@ -13665,11 +13665,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈɒpəreɪt",
-          "phonetic": "OP-ə-rayt"
+          "phonetic": "OP-uh-rayt"
         },
         "american": {
           "ipa": "ˈɑpəˌreɪt",
-          "phonetic": "AH-pə-rayt"
+          "phonetic": "AH-puh-rayt"
         }
       },
       "difficulty": "normal",
@@ -13702,7 +13702,7 @@
         },
         "american": {
           "ipa": "ˌtrænspərˈteɪʃən",
-          "phonetic": "TRANS-pər-TAY-shən"
+          "phonetic": "TRANS-pur-TAY-shuhn"
         }
       },
       "difficulty": "hard",
@@ -13799,11 +13799,11 @@
       "pronunciation": {
         "british": {
           "ipa": "sʌm",
-          "phonetic": "SUM"
+          "phonetic": "SUHM"
         },
         "american": {
           "ipa": "sʌm",
-          "phonetic": "SUM"
+          "phonetic": "SUHM"
         }
       },
       "difficulty": "easy",
@@ -13832,11 +13832,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ʌp",
-          "phonetic": "UP"
+          "phonetic": "UHP"
         },
         "american": {
           "ipa": "ʌp",
-          "phonetic": "UP"
+          "phonetic": "UHP"
         }
       },
       "difficulty": "easy",
@@ -14001,11 +14001,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈstʌdiɪŋ",
-          "phonetic": "STUD-ee-ing"
+          "phonetic": "STUHD-ee-ing"
         },
         "american": {
           "ipa": "ˈstʌdiɪŋ",
-          "phonetic": "STUD-ee-ing"
+          "phonetic": "STUHD-ee-ing"
         }
       },
       "difficulty": "normal",
@@ -14018,11 +14018,11 @@
       "pronunciation": {
         "british": {
           "ipa": "əˈbrɔːd",
-          "phonetic": "ə-BRAWD"
+          "phonetic": "uh-BRAWD"
         },
         "american": {
           "ipa": "əˈbrɔd",
-          "phonetic": "ə-BRAWD"
+          "phonetic": "uh-BRAWD"
         }
       },
       "difficulty": "normal",
@@ -14068,11 +14068,11 @@
       "pronunciation": {
         "british": {
           "ipa": "kʌm",
-          "phonetic": "KUM"
+          "phonetic": "KUHM"
         },
         "american": {
           "ipa": "kʌm",
-          "phonetic": "KUM"
+          "phonetic": "KUHM"
         }
       },
       "difficulty": "easy",
@@ -14170,11 +14170,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌʌndəˈstændɪŋ",
-          "phonetic": "UN-duh-STAN-ding"
+          "phonetic": "UHN-duh-STAN-ding"
         },
         "american": {
           "ipa": "ˌʌndərˈstændɪŋ",
-          "phonetic": "UN-dur-STAN-ding"
+          "phonetic": "UHN-dur-STAN-ding"
         }
       },
       "difficulty": "hard",
@@ -14187,11 +14187,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈkʌltʃəz",
-          "phonetic": "KUL-chuhz"
+          "phonetic": "KUHL-chuhz"
         },
         "american": {
           "ipa": "ˈkʌltʃərz",
-          "phonetic": "KUL-churz"
+          "phonetic": "KUHL-churz"
         }
       },
       "difficulty": "normal",
@@ -14441,11 +14441,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈkʌltʃərəl",
-          "phonetic": "KUL-chuh-rul"
+          "phonetic": "KUHL-chuh-ruhl"
         },
         "american": {
           "ipa": "ˈkʌltʃərəl",
-          "phonetic": "KUL-chur-ul"
+          "phonetic": "KUHL-chur-uhl"
         }
       },
       "difficulty": "normal",
@@ -14496,7 +14496,7 @@
         },
         "american": {
           "ipa": "ɪn ˈɔrdər tu",
-          "phonetic": "in OR-dər too"
+          "phonetic": "in OR-dur too"
         }
       },
       "difficulty": "hard",
@@ -14526,11 +14526,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌʌnsəˈpraɪzɪŋ",
-          "phonetic": "un-suh-PRYE-zing"
+          "phonetic": "uhn-suh-PRYE-zing"
         },
         "american": {
           "ipa": "ˌʌnsərˈpraɪzɪŋ",
-          "phonetic": "un-suhr-PRYE-zing"
+          "phonetic": "uhn-suhr-PRYE-zing"
         }
       },
       "difficulty": "hard",
@@ -14560,7 +14560,7 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈkʌrənt",
-          "phonetic": "KUR-unt"
+          "phonetic": "KUR-uhnt"
         },
         "american": {
           "ipa": "ˈkɝːənt",
@@ -14661,11 +14661,11 @@
       "pronunciation": {
         "british": {
           "ipa": "kəmˈbʌstʃən",
-          "phonetic": "kum-BUS-chun"
+          "phonetic": "kuhm-BUHS-chuhn"
         },
         "american": {
           "ipa": "kəmˈbʌstʃən",
-          "phonetic": "kum-BUS-chun"
+          "phonetic": "kuhm-BUHS-chuhn"
         }
       },
       "difficulty": "hard",
@@ -14862,11 +14862,11 @@
       "pronunciation": {
         "british": {
           "ipa": "mʌnθ",
-          "phonetic": "MUNTH"
+          "phonetic": "MUHNTH"
         },
         "american": {
           "ipa": "mʌnθ",
-          "phonetic": "MUNTH"
+          "phonetic": "MUHNTH"
         }
       },
       "difficulty": "easy",
@@ -15053,7 +15053,7 @@
         },
         "american": {
           "ipa": "ˈsɛrəˌmoʊni",
-          "phonetic": "SER-ə-moh-nee"
+          "phonetic": "SER-uh-moh-nee"
         }
       },
       "difficulty": "normal",
@@ -15083,7 +15083,7 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈsentə",
-          "phonetic": "SEN-tə"
+          "phonetic": "SEN-tuh"
         },
         "american": {
           "ipa": "ˈsɛntɚ",
@@ -15117,11 +15117,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈfaɪnəli",
-          "phonetic": "FY-nə-lee"
+          "phonetic": "FY-nuh-lee"
         },
         "american": {
           "ipa": "ˈfaɪnəli",
-          "phonetic": "FY-nə-lee"
+          "phonetic": "FY-nuh-lee"
         }
       },
       "difficulty": "normal",
@@ -15223,7 +15223,7 @@
         },
         "american": {
           "ipa": "ˌlɔŋ ˈdɪstəns",
-          "phonetic": "LAWNG DIS-təns"
+          "phonetic": "LAWNG DIS-tuhns"
         }
       },
       "difficulty": "hard",
@@ -15253,11 +15253,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌɡəʊldən ˈplʌvə",
-          "phonetic": "GOHL-duhn PLUV-uh"
+          "phonetic": "GOHL-duhn PLUHV-uh"
         },
         "american": {
           "ipa": "ˌɡoʊldən ˈplʌvər",
-          "phonetic": "GOHL-duhn PLUV-er"
+          "phonetic": "GOHL-duhn PLUHV-er"
         }
       },
       "difficulty": "hard",
@@ -15270,11 +15270,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌwaɪt ˈrʌmpt",
-          "phonetic": "wyt RUMPT"
+          "phonetic": "wyt RUHMPT"
         },
         "american": {
           "ipa": "ˌwaɪt ˈrʌmpt",
-          "phonetic": "wyt RUMPT"
+          "phonetic": "wyt RUHMPT"
         }
       },
       "difficulty": "hard",
@@ -15304,11 +15304,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌpɪkt ˈʌp",
-          "phonetic": "PIKT up"
+          "phonetic": "PIKT uhp"
         },
         "american": {
           "ipa": "ˌpɪkt ˈʌp",
-          "phonetic": "PIKT up"
+          "phonetic": "PIKT uhp"
         }
       },
       "difficulty": "normal",
@@ -15709,11 +15709,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈdʒʌdʒɪz",
-          "phonetic": "JUJ-iz"
+          "phonetic": "JUHJ-iz"
         },
         "american": {
           "ipa": "ˈdʒʌdʒɪz",
-          "phonetic": "JUJ-iz"
+          "phonetic": "JUHJ-iz"
         }
       },
       "difficulty": "normal",
@@ -15781,7 +15781,7 @@
         },
         "american": {
           "ipa": "ˈfoʊkəs ɑn",
-          "phonetic": "FOH-kəs ahn"
+          "phonetic": "FOH-kuhs ahn"
         }
       },
       "difficulty": "normal",
@@ -15896,11 +15896,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌbɒtəm ˈʌp",
-          "phonetic": "BOT-uhm UP"
+          "phonetic": "BOT-uhm UHP"
         },
         "american": {
           "ipa": "ˌbɑːtəm ˈʌp",
-          "phonetic": "BAH-tuhm UP"
+          "phonetic": "BAH-tuhm UHP"
         }
       },
       "difficulty": "normal",
@@ -15917,7 +15917,7 @@
         },
         "american": {
           "ipa": "ˈroʊmən",
-          "phonetic": "ROH-mən"
+          "phonetic": "ROH-muhn"
         }
       },
       "difficulty": "easy",
@@ -15998,11 +15998,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌɪntəˈlektʃʊəl",
-          "phonetic": "IN-tə-LEK-choo-uhl"
+          "phonetic": "IN-tuh-LEK-choo-uhl"
         },
         "american": {
           "ipa": "ˌɪntəˈlɛktʃuəl",
-          "phonetic": "IN-tə-LEK-choo-əl"
+          "phonetic": "IN-tuh-LEK-choo-uhl"
         }
       },
       "difficulty": "hard",
@@ -16138,7 +16138,7 @@
         },
         "american": {
           "ipa": "ɪɡˌzæməˈneɪʃən",
-          "phonetic": "ig-ZAM-ə-NAY-shən"
+          "phonetic": "ig-ZAM-uh-NAY-shuhn"
         }
       },
       "difficulty": "hard",
@@ -16151,11 +16151,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈpʌblɪk",
-          "phonetic": "PUB-lik"
+          "phonetic": "PUHB-lik"
         },
         "american": {
           "ipa": "ˈpʌblɪk",
-          "phonetic": "PUB-lik"
+          "phonetic": "PUHB-lik"
         }
       },
       "difficulty": "normal",
@@ -16256,7 +16256,7 @@
         },
         "american": {
           "ipa": "ˈkɑmədi",
-          "phonetic": "KAH-mə-dee"
+          "phonetic": "KAH-muh-dee"
         }
       },
       "difficulty": "normal",
@@ -16286,11 +16286,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌʌndəˈstændəbəl",
-          "phonetic": "UN-duh-STAN-duh-bul"
+          "phonetic": "UHN-duh-STAN-duh-buhl"
         },
         "american": {
           "ipa": "ˌʌndərˈstændəbəl",
-          "phonetic": "UN-dər-STAN-də-bəl"
+          "phonetic": "UHN-dur-STAN-duh-buhl"
         }
       },
       "difficulty": "hard",
@@ -16370,7 +16370,7 @@
       "pronunciation": {
         "british": {
           "ipa": "pʊə",
-          "phonetic": "POO-ə"
+          "phonetic": "POO-uh"
         },
         "american": {
           "ipa": "pʊr",
@@ -16391,7 +16391,7 @@
         },
         "american": {
           "ipa": "səˈsteɪnəbəl",
-          "phonetic": "sə-STAY-nə-bəl"
+          "phonetic": "suh-STAY-nuh-buhl"
         }
       },
       "difficulty": "hard",
@@ -16403,12 +16403,12 @@
       "english": "numbers",
       "pronunciation": {
         "british": {
-          "ipa": "ˈnəmbəz",
-          "phonetic": "NUHMBUHZ"
+          "ipa": "ˈnʌmbəz",
+          "phonetic": "NUHM-buhz"
         },
         "american": {
-          "ipa": "ˈnəmbərz",
-          "phonetic": "NUHMBURZ"
+          "ipa": "ˈnʌmbərz",
+          "phonetic": "NUHM-burz"
         }
       },
       "difficulty": "normal",
@@ -16421,11 +16421,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ʌs",
-          "phonetic": "USS"
+          "phonetic": "UHSS"
         },
         "american": {
           "ipa": "ʌs",
-          "phonetic": "USS"
+          "phonetic": "UHSS"
         }
       },
       "difficulty": "easy",
@@ -16527,7 +16527,7 @@
         },
         "american": {
           "ipa": "ˈdɑlərz",
-          "phonetic": "DAH-lərz"
+          "phonetic": "DAH-lurz"
         }
       },
       "difficulty": "normal",
@@ -16540,11 +16540,11 @@
       "pronunciation": {
         "british": {
           "ipa": "wʌn",
-          "phonetic": "WUN"
+          "phonetic": "WUHN"
         },
         "american": {
           "ipa": "wʌn",
-          "phonetic": "WUN"
+          "phonetic": "WUHN"
         }
       },
       "difficulty": "easy",
@@ -16879,11 +16879,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈmʌzəl",
-          "phonetic": "MUZ-ul"
+          "phonetic": "MUHZ-uhl"
         },
         "american": {
           "ipa": "ˈmʌzəl",
-          "phonetic": "MUZ-ul"
+          "phonetic": "MUHZ-uhl"
         }
       },
       "difficulty": "normal",
@@ -17019,7 +17019,7 @@
         },
         "american": {
           "ipa": "ˈmɪstəri",
-          "phonetic": "MIS-tər-ee"
+          "phonetic": "MIS-tur-ee"
         }
       },
       "difficulty": "normal",
@@ -17336,12 +17336,12 @@
       "english": "squirrels",
       "pronunciation": {
         "british": {
-          "ipa": "skwəəlz",
-          "phonetic": "SKWUHUHLZ"
+          "ipa": "ˈskwɪrəlz",
+          "phonetic": "SKWIR-uhlz"
         },
         "american": {
-          "ipa": "skwərəlz",
-          "phonetic": "SKWURUHLZ"
+          "ipa": "ˈskwɝːəlz",
+          "phonetic": "SKWUR-uhlz"
         }
       },
       "difficulty": "normal",
@@ -17388,11 +17388,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈsʌmwɒt",
-          "phonetic": "SUM-wot"
+          "phonetic": "SUHM-wot"
         },
         "american": {
           "ipa": "ˈsʌmˌwɑt",
-          "phonetic": "SUM-waht"
+          "phonetic": "SUHM-waht"
         }
       },
       "difficulty": "normal",
@@ -17473,11 +17473,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈprɛdətəz",
-          "phonetic": "PREDUHTUHZ"
+          "phonetic": "PRED-uh-tuhz"
         },
         "american": {
           "ipa": "ˈprɛdətərz",
-          "phonetic": "PREDUHTURZ"
+          "phonetic": "PRED-uh-turz"
         }
       },
       "difficulty": "normal",
@@ -17506,12 +17506,12 @@
       "english": "preferred",
       "pronunciation": {
         "british": {
-          "ipa": "prɪˈfəd",
-          "phonetic": "PRIFUHD"
+          "ipa": "prɪˈfɜːd",
+          "phonetic": "pri-FURD"
         },
         "american": {
-          "ipa": "prɪˈfərd",
-          "phonetic": "PRIFURD"
+          "ipa": "prɪˈfɝːd",
+          "phonetic": "pri-FURD"
         }
       },
       "difficulty": "normal",
@@ -17558,11 +17558,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈsʌbdʒɪkt",
-          "phonetic": "SUB-jikt"
+          "phonetic": "SUHB-jikt"
         },
         "american": {
           "ipa": "ˈsʌbdʒɪkt",
-          "phonetic": "SUB-jikt"
+          "phonetic": "SUHB-jikt"
         }
       },
       "difficulty": "normal",
@@ -17613,7 +17613,7 @@
         },
         "american": {
           "ipa": "səˈkjʊr",
-          "phonetic": "sə-KYOOR"
+          "phonetic": "suh-KYOOR"
         }
       },
       "difficulty": "normal",
@@ -17697,7 +17697,7 @@
         },
         "american": {
           "ipa": "kənˈveɪ",
-          "phonetic": "kən-VAY"
+          "phonetic": "kuhn-VAY"
         }
       },
       "difficulty": "normal",
@@ -17731,7 +17731,7 @@
         },
         "american": {
           "ipa": "ˌdɪsəˈpɔɪntəd",
-          "phonetic": "DIS-ə-POYN-təd"
+          "phonetic": "DIS-uh-POYN-tuhd"
         }
       },
       "difficulty": "hard",
@@ -17744,11 +17744,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈʌndər",
-          "phonetic": "UN-dur"
+          "phonetic": "UHN-dur"
         },
         "american": {
           "ipa": "ˈʌndər",
-          "phonetic": "UN-dur"
+          "phonetic": "UHN-dur"
         }
       },
       "difficulty": "easy",
@@ -17777,11 +17777,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ʌnˈnesəsəri",
-          "phonetic": "un-NES-uh-suh-ree"
+          "phonetic": "uhn-NES-uh-suh-ree"
         },
         "american": {
           "ipa": "ʌnˈnɛsəˌsɛri",
-          "phonetic": "un-NES-ə-ser-ee"
+          "phonetic": "uhn-NES-uh-ser-ee"
         }
       },
       "difficulty": "hard",
@@ -17862,11 +17862,11 @@
       "pronunciation": {
         "british": {
           "ipa": "riˈleɪʃənz",
-          "phonetic": "RILAYSHUHNZ"
+          "phonetic": "ri-LAY-shuhnz"
         },
         "american": {
           "ipa": "riˈleɪʃənz",
-          "phonetic": "RILAYSHUHNZ"
+          "phonetic": "ri-LAY-shuhnz"
         }
       },
       "difficulty": "normal",
@@ -17930,11 +17930,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ɪˈnʌf",
-          "phonetic": "i-NUF"
+          "phonetic": "i-NUHF"
         },
         "american": {
           "ipa": "ɪˈnʌf",
-          "phonetic": "i-NUF"
+          "phonetic": "i-NUHF"
         }
       },
       "difficulty": "normal",
@@ -18015,11 +18015,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈdʌlnəs",
-          "phonetic": "DUL-nuhs"
+          "phonetic": "DUHL-nuhs"
         },
         "american": {
           "ipa": "ˈdʌlnəs",
-          "phonetic": "DUL-nuhs"
+          "phonetic": "DUHL-nuhs"
         }
       },
       "difficulty": "normal",
@@ -18032,11 +18032,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈkəʊldnəs",
-          "phonetic": "KOHLDNUHS"
+          "phonetic": "KOHLD-nuhs"
         },
         "american": {
           "ipa": "ˈkoʊldnəs",
-          "phonetic": "KOHLDNUHS"
+          "phonetic": "KOHLD-nuhs"
         }
       },
       "difficulty": "normal",
@@ -18048,11 +18048,11 @@
       "english": "worst",
       "pronunciation": {
         "british": {
-          "ipa": "wəst",
-          "phonetic": "WUHST"
+          "ipa": "wɜːst",
+          "phonetic": "WURST"
         },
         "american": {
-          "ipa": "wərst",
+          "ipa": "wɝːst",
           "phonetic": "WURST"
         }
       },
@@ -18218,12 +18218,12 @@
       "english": "chirps",
       "pronunciation": {
         "british": {
-          "ipa": "ʧəps",
-          "phonetic": "UHPS"
+          "ipa": "tʃɜːps",
+          "phonetic": "CHURPS"
         },
         "american": {
-          "ipa": "ʧərps",
-          "phonetic": "URPS"
+          "ipa": "tʃɝːps",
+          "phonetic": "CHURPS"
         }
       },
       "difficulty": "normal",
@@ -18240,7 +18240,7 @@
         },
         "american": {
           "ipa": "ˈθaʊzəndθ",
-          "phonetic": "THOW-zəndth"
+          "phonetic": "THOW-zuhndth"
         }
       },
       "difficulty": "hard",
@@ -18257,7 +18257,7 @@
         },
         "american": {
           "ipa": "ˌkærəktəˈrɪstɪks",
-          "phonetic": "KAR-ək-tə-RIS-tiks"
+          "phonetic": "KAR-uhk-tuh-RIS-tiks"
         }
       },
       "difficulty": "hard",
@@ -18269,12 +18269,12 @@
       "english": "pulses",
       "pronunciation": {
         "british": {
-          "ipa": "ˈpəlsɪz",
-          "phonetic": "PUHLSIZ"
+          "ipa": "ˈpʌlsɪz",
+          "phonetic": "PUHLS-iz"
         },
         "american": {
-          "ipa": "ˈpəlsɪz",
-          "phonetic": "PUHLSIZ"
+          "ipa": "ˈpʌlsɪz",
+          "phonetic": "PUHLS-iz"
         }
       },
       "difficulty": "normal",
@@ -18370,11 +18370,11 @@
       "pronunciation": {
         "british": {
           "ipa": "mʌtʃ",
-          "phonetic": "MUCH"
+          "phonetic": "MUHCH"
         },
         "american": {
           "ipa": "mʌtʃ",
-          "phonetic": "MUCH"
+          "phonetic": "MUHCH"
         }
       },
       "difficulty": "easy",
@@ -18387,7 +18387,7 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈkləʊzə",
-          "phonetic": "KLOH-zə"
+          "phonetic": "KLOH-zuh"
         },
         "american": {
           "ipa": "ˈkloʊzər",
@@ -18493,7 +18493,7 @@
         },
         "american": {
           "ipa": "juˈnaɪtəd steɪts",
-          "phonetic": "yoo-NY-təd stayts"
+          "phonetic": "yoo-NY-tuhd stayts"
         }
       },
       "difficulty": "hard",
@@ -18510,7 +18510,7 @@
         },
         "american": {
           "ipa": "dɪˈvɛləpt",
-          "phonetic": "di-VEL-əpt"
+          "phonetic": "di-VEL-uhpt"
         }
       },
       "difficulty": "normal",
@@ -18523,11 +18523,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈkʌntriz",
-          "phonetic": "KUN-triz"
+          "phonetic": "KUHN-triz"
         },
         "american": {
           "ipa": "ˈkʌntriz",
-          "phonetic": "KUN-triz"
+          "phonetic": "KUHN-triz"
         }
       },
       "difficulty": "normal",
@@ -18591,11 +18591,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈbʌslɪŋ",
-          "phonetic": "BUS-ling"
+          "phonetic": "BUHS-ling"
         },
         "american": {
           "ipa": "ˈbʌslɪŋ",
-          "phonetic": "BUS-ling"
+          "phonetic": "BUHS-ling"
         }
       },
       "difficulty": "normal",
@@ -18695,7 +18695,7 @@
         },
         "american": {
           "ipa": "ˈaɪsəˌleɪtəd",
-          "phonetic": "EYE-sə-lay-təd"
+          "phonetic": "EYE-suh-lay-tuhd"
         }
       },
       "difficulty": "normal",
@@ -18708,11 +18708,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈrʌʃə",
-          "phonetic": "RUSH-uh"
+          "phonetic": "RUHSH-uh"
         },
         "american": {
           "ipa": "ˈrʌʃə",
-          "phonetic": "RUSH-uh"
+          "phonetic": "RUHSH-uh"
         }
       },
       "difficulty": "normal",
@@ -18724,12 +18724,12 @@
       "english": "grew up",
       "pronunciation": {
         "british": {
-          "ipa": "gru əp",
-          "phonetic": "gru UHP"
+          "ipa": "ɡruː ʌp",
+          "phonetic": "groo UHP"
         },
         "american": {
-          "ipa": "gru əp",
-          "phonetic": "gru UHP"
+          "ipa": "ɡruː ʌp",
+          "phonetic": "groo UHP"
         }
       },
       "difficulty": "normal",
@@ -18741,12 +18741,12 @@
       "english": "Europeans",
       "pronunciation": {
         "british": {
-          "ipa": "ˌjʊrəˈpiənz",
-          "phonetic": "YUURUHPIUHNZ"
+          "ipa": "ˌjʊərəˈpiːənz",
+          "phonetic": "YOOR-uh-PEE-uhnz"
         },
         "american": {
-          "ipa": "ˌjʊrəˈpiənz",
-          "phonetic": "YUURUHPIUHNZ"
+          "ipa": "ˌjʊrəˈpiːənz",
+          "phonetic": "YOOR-uh-PEE-uhnz"
         }
       },
       "difficulty": "normal",
@@ -18793,11 +18793,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈkʌltʃə",
-          "phonetic": "KUL-chuh"
+          "phonetic": "KUHL-chuh"
         },
         "american": {
           "ipa": "ˈkʌltʃɚ",
-          "phonetic": "KUL-chur"
+          "phonetic": "KUHL-chur"
         }
       },
       "difficulty": "normal",
@@ -18810,7 +18810,7 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈmembə",
-          "phonetic": "MEM-bə"
+          "phonetic": "MEM-buh"
         },
         "american": {
           "ipa": "ˈmɛmbər",
@@ -18995,7 +18995,7 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈbɜːɡə",
-          "phonetic": "BUR-gə"
+          "phonetic": "BUR-guh"
         },
         "american": {
           "ipa": "ˈbɝːɡɚ",
@@ -19233,11 +19233,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈɡʌvənmənt",
-          "phonetic": "GUV-urn-munt"
+          "phonetic": "GUHV-urn-muhnt"
         },
         "american": {
           "ipa": "ˈɡʌvərnmənt",
-          "phonetic": "GUV-uhrn-munt"
+          "phonetic": "GUHV-uhrn-muhnt"
         }
       },
       "difficulty": "hard",
@@ -19266,11 +19266,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ʌpˈdeɪt",
-          "phonetic": "up-DAYT"
+          "phonetic": "uhp-DAYT"
         },
         "american": {
           "ipa": "ʌpˈdeɪt",
-          "phonetic": "up-DAYT"
+          "phonetic": "uhp-DAYT"
         }
       },
       "difficulty": "normal",
@@ -19304,7 +19304,7 @@
         },
         "american": {
           "ipa": "ˈkɑmpətənt",
-          "phonetic": "KAHM-pə-tənt"
+          "phonetic": "KAHM-puh-tuhnt"
         }
       },
       "difficulty": "normal",
@@ -19436,11 +19436,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈsʌbˌʒɒnrə",
-          "phonetic": "SUB-ZHAHN-ruh"
+          "phonetic": "SUHB-ZHAHN-ruh"
         },
         "american": {
           "ipa": "ˈsʌbˌʒɑːnrə",
-          "phonetic": "SUB-ZHAHN-ruh"
+          "phonetic": "SUHB-ZHAHN-ruh"
         }
       },
       "difficulty": "normal",
@@ -19606,11 +19606,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈmʌltɪpəl",
-          "phonetic": "MUL-ti-pul"
+          "phonetic": "MUHL-ti-puhl"
         },
         "american": {
           "ipa": "ˈmʌltəpəl",
-          "phonetic": "MUL-tuh-pul"
+          "phonetic": "MUHL-tuh-puhl"
         }
       },
       "difficulty": "normal",
@@ -20099,11 +20099,11 @@
       "pronunciation": {
         "british": {
           "ipa": "əˈmʌŋ",
-          "phonetic": "uh-MUNG"
+          "phonetic": "uh-MUHNG"
         },
         "american": {
           "ipa": "əˈmʌŋ",
-          "phonetic": "uh-MUNG"
+          "phonetic": "uh-MUHNG"
         }
       },
       "difficulty": "easy",
@@ -20252,11 +20252,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌpʌblɪˈkeɪʃənz",
-          "phonetic": "pub-li-KAY-shunz"
+          "phonetic": "puhb-li-KAY-shuhnz"
         },
         "american": {
           "ipa": "ˌpʌbləˈkeɪʃənz",
-          "phonetic": "pub-luh-KAY-shunz"
+          "phonetic": "puhb-luh-KAY-shuhnz"
         }
       },
       "difficulty": "hard",
@@ -20354,11 +20354,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈkʌləz",
-          "phonetic": "KUL-uz"
+          "phonetic": "KUHL-uhz"
         },
         "american": {
           "ipa": "ˈkʌlərz",
-          "phonetic": "KUL-erz"
+          "phonetic": "KUHL-erz"
         }
       },
       "difficulty": "normal",
@@ -20541,11 +20541,11 @@
       "pronunciation": {
         "british": {
           "ipa": "haʊ mʌtʃ",
-          "phonetic": "HOW MUCH"
+          "phonetic": "HOW MUHCH"
         },
         "american": {
           "ipa": "haʊ mʌtʃ",
-          "phonetic": "HOW MUCH"
+          "phonetic": "HOW MUHCH"
         }
       },
       "difficulty": "normal",
@@ -20779,11 +20779,11 @@
       "pronunciation": {
         "british": {
           "ipa": "mʌnθs",
-          "phonetic": "MUNTHS"
+          "phonetic": "MUHNTHS"
         },
         "american": {
           "ipa": "mʌnθs",
-          "phonetic": "MUNTHS"
+          "phonetic": "MUHNTHS"
         }
       },
       "difficulty": "normal",
@@ -20898,11 +20898,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈfʌndɪd",
-          "phonetic": "FUN-did"
+          "phonetic": "FUHN-did"
         },
         "american": {
           "ipa": "ˈfʌndɪd",
-          "phonetic": "FUN-did"
+          "phonetic": "FUHN-did"
         }
       },
       "difficulty": "normal",
@@ -21408,11 +21408,11 @@
       "pronunciation": {
         "british": {
           "ipa": "fɔːl mʌnθs",
-          "phonetic": "FAWL MUNTHS"
+          "phonetic": "FAWL MUHNTHS"
         },
         "american": {
           "ipa": "fɔːl mʌnθs",
-          "phonetic": "FAWL MUNTHS"
+          "phonetic": "FAWL MUHNTHS"
         }
       },
       "difficulty": "hard",
@@ -21663,11 +21663,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ʌnˈwɪtɪŋli",
-          "phonetic": "un-WIT-ing-lee"
+          "phonetic": "uhn-WIT-ing-lee"
         },
         "american": {
           "ipa": "ʌnˈwɪtɪŋli",
-          "phonetic": "un-WIT-ing-lee"
+          "phonetic": "uhn-WIT-ing-lee"
         }
       },
       "difficulty": "hard",
@@ -21918,11 +21918,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈfʌŋkʃən",
-          "phonetic": "FUNK-shun"
+          "phonetic": "FUHNK-shuhn"
         },
         "american": {
           "ipa": "ˈfʌŋkʃən",
-          "phonetic": "FUNK-shun"
+          "phonetic": "FUHNK-shuhn"
         }
       },
       "difficulty": "normal",
@@ -22194,7 +22194,7 @@
         },
         "american": {
           "ipa": "ˌkærəktəˈrɪstɪk",
-          "phonetic": "KA-rək-tə-RIS-tik"
+          "phonetic": "KA-ruhk-tuh-RIS-tik"
         }
       },
       "difficulty": "hard",
@@ -22381,7 +22381,7 @@
         },
         "american": {
           "ipa": "dɪˈzaɪərəbəl",
-          "phonetic": "di-ZY-ər-ə-bəl"
+          "phonetic": "di-ZY-ur-uh-buhl"
         }
       },
       "difficulty": "normal",
@@ -22432,7 +22432,7 @@
         },
         "american": {
           "ipa": "kənˈsumər",
-          "phonetic": "kən-SOO-mər"
+          "phonetic": "kuhn-SOO-mur"
         }
       },
       "difficulty": "normal",
@@ -22466,7 +22466,7 @@
         },
         "american": {
           "ipa": "ˌɪmpləmɛnˈteɪʃən",
-          "phonetic": "IM-plə-men-TAY-shən"
+          "phonetic": "IM-pluh-men-TAY-shuhn"
         }
       },
       "difficulty": "hard",
@@ -22483,7 +22483,7 @@
         },
         "american": {
           "ipa": "səˈfɪstəˌkeɪtəd",
-          "phonetic": "suh-FIS-tə-kay-təd"
+          "phonetic": "suh-FIS-tuh-kay-tuhd"
         }
       },
       "difficulty": "hard",
@@ -22513,11 +22513,11 @@
       "pronunciation": {
         "british": {
           "ipa": "dɪˈsɪʒənz",
-          "phonetic": "DISIZHUHNZ"
+          "phonetic": "di-SIZH-uhnz"
         },
         "american": {
           "ipa": "dɪˈsɪʒənz",
-          "phonetic": "DISIZHUHNZ"
+          "phonetic": "di-SIZH-uhnz"
         }
       },
       "difficulty": "normal",
@@ -22529,12 +22529,12 @@
       "english": "customizing",
       "pronunciation": {
         "british": {
-          "ipa": "ˈkəstəˌmaɪzɪŋ",
-          "phonetic": "KUHSTUHMEYEZING"
+          "ipa": "ˈkʌstəˌmaɪzɪŋ",
+          "phonetic": "KUHS-tuh-my-zing"
         },
         "american": {
-          "ipa": "ˈkəstəˌmaɪzɪŋ",
-          "phonetic": "KUHSTUHMEYEZING"
+          "ipa": "ˈkʌstəˌmaɪzɪŋ",
+          "phonetic": "KUHS-tuh-my-zing"
         }
       },
       "difficulty": "hard",
@@ -22581,11 +22581,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈprɛfərənsɪz",
-          "phonetic": "PREFURUHNSIZ"
+          "phonetic": "PREF-ur-uhn-siz"
         },
         "american": {
           "ipa": "ˈprɛfərənsɪz",
-          "phonetic": "PREFURUHNSIZ"
+          "phonetic": "PREF-ur-uhn-siz"
         }
       },
       "difficulty": "hard",
@@ -22632,11 +22632,11 @@
       "pronunciation": {
         "british": {
           "ipa": "frʌnt",
-          "phonetic": "FRUNT"
+          "phonetic": "FRUHNT"
         },
         "american": {
           "ipa": "frʌnt",
-          "phonetic": "FRUNT"
+          "phonetic": "FRUHNT"
         }
       },
       "difficulty": "easy",
@@ -22666,11 +22666,11 @@
       "pronunciation": {
         "british": {
           "ipa": "dɪˈskʌvə",
-          "phonetic": "di-SKUV-uh"
+          "phonetic": "di-SKUHV-uh"
         },
         "american": {
           "ipa": "dɪˈskʌvər",
-          "phonetic": "di-SKUV-uhr"
+          "phonetic": "di-SKUHV-uhr"
         }
       },
       "difficulty": "normal",
@@ -22823,7 +22823,7 @@
         },
         "american": {
           "ipa": "wʌt",
-          "phonetic": "WUT"
+          "phonetic": "WUHT"
         }
       },
       "difficulty": "easy",
@@ -22955,11 +22955,11 @@
       "pronunciation": {
         "british": {
           "ipa": "dɪˈskʌvəri",
-          "phonetic": "di-SKUV-uh-ree"
+          "phonetic": "di-SKUHV-uh-ree"
         },
         "american": {
           "ipa": "dɪˈskʌvəri",
-          "phonetic": "di-SKUV-uh-ree"
+          "phonetic": "di-SKUHV-uh-ree"
         }
       },
       "difficulty": "normal",
@@ -23006,11 +23006,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌʌnəˈseɪləbəl",
-          "phonetic": "un-uh-SAY-luh-bul"
+          "phonetic": "uhn-uh-SAY-luh-buhl"
         },
         "american": {
           "ipa": "ˌʌnəˈseɪləbəl",
-          "phonetic": "un-uh-SAY-luh-bul"
+          "phonetic": "uhn-uh-SAY-luh-buhl"
         }
       },
       "difficulty": "hard",
@@ -23350,7 +23350,7 @@
         },
         "american": {
           "ipa": "ˌriˈsaɪkəl",
-          "phonetic": "REE-SY-kəl"
+          "phonetic": "REE-SY-kuhl"
         }
       },
       "difficulty": "normal",
@@ -23380,7 +23380,7 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈprɒdʌkts",
-          "phonetic": "PROD-ukts"
+          "phonetic": "PROD-uhkts"
         },
         "american": {
           "ipa": "ˈprɑːdʌkts",
@@ -23584,11 +23584,11 @@
       "pronunciation": {
         "british": {
           "ipa": "prəˈtɛkts",
-          "phonetic": "PRUHTEKTS"
+          "phonetic": "pruh-TEKTS"
         },
         "american": {
           "ipa": "prəˈtɛkts",
-          "phonetic": "PRUHTEKTS"
+          "phonetic": "pruh-TEKTS"
         }
       },
       "difficulty": "normal",
@@ -23635,11 +23635,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ðʌs",
-          "phonetic": "THUS"
+          "phonetic": "THUHS"
         },
         "american": {
           "ipa": "ðʌs",
-          "phonetic": "THUS"
+          "phonetic": "THUHS"
         }
       },
       "difficulty": "easy",
@@ -23788,11 +23788,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈɪnkʌmz",
-          "phonetic": "IN-kumz"
+          "phonetic": "IN-kuhmz"
         },
         "american": {
           "ipa": "ˈɪnkʌmz",
-          "phonetic": "IN-kumz"
+          "phonetic": "IN-kuhmz"
         }
       },
       "difficulty": "normal",
@@ -23839,11 +23839,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ʌnˈlaɪkli",
-          "phonetic": "un-LYK-lee"
+          "phonetic": "uhn-LYK-lee"
         },
         "american": {
           "ipa": "ʌnˈlaɪkli",
-          "phonetic": "un-LYK-lee"
+          "phonetic": "uhn-LYK-lee"
         }
       },
       "difficulty": "normal",
@@ -23924,7 +23924,7 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈkʌrɪdʒ",
-          "phonetic": "KUR-ij"
+          "phonetic": "KUHR-ij"
         },
         "american": {
           "ipa": "ˈkɝːɪdʒ",
@@ -24213,11 +24213,11 @@
       "pronunciation": {
         "british": {
           "ipa": "bɪˈkʌmɪŋ",
-          "phonetic": "bi-KUM-ing"
+          "phonetic": "bi-KUHM-ing"
         },
         "american": {
           "ipa": "bɪˈkʌmɪŋ",
-          "phonetic": "bi-KUM-ing"
+          "phonetic": "bi-KUHM-ing"
         }
       },
       "difficulty": "normal",
@@ -24315,11 +24315,11 @@
       "pronunciation": {
         "british": {
           "ipa": "bʌt",
-          "phonetic": "BUT"
+          "phonetic": "BUHT"
         },
         "american": {
           "ipa": "bʌt",
-          "phonetic": "BUT"
+          "phonetic": "BUHT"
         }
       },
       "difficulty": "easy",
@@ -24519,11 +24519,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌpʌblɪˈkeɪʃən",
-          "phonetic": "pub-li-KAY-shun"
+          "phonetic": "puhb-li-KAY-shuhn"
         },
         "american": {
           "ipa": "ˌpʌblɪˈkeɪʃən",
-          "phonetic": "pub-li-KAY-shun"
+          "phonetic": "puhb-li-KAY-shuhn"
         }
       },
       "difficulty": "hard",
@@ -24540,7 +24540,7 @@
         },
         "american": {
           "ipa": "wʌz",
-          "phonetic": "WUZ"
+          "phonetic": "WUHZ"
         }
       },
       "difficulty": "easy",
@@ -24553,11 +24553,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ʌnˈjuːʒuəli",
-          "phonetic": "un-YOO-zhoo-uh-lee"
+          "phonetic": "uhn-YOO-zhoo-uh-lee"
         },
         "american": {
           "ipa": "ʌnˈjuːʒuəli",
-          "phonetic": "un-YOO-zhoo-uh-lee"
+          "phonetic": "uhn-YOO-zhoo-uh-lee"
         }
       },
       "difficulty": "normal",
@@ -24825,11 +24825,11 @@
       "pronunciation": {
         "british": {
           "ipa": "sʌtʃ æz",
-          "phonetic": "SUCH az"
+          "phonetic": "SUHCH az"
         },
         "american": {
           "ipa": "sʌtʃ æz",
-          "phonetic": "SUCH az"
+          "phonetic": "SUHCH az"
         }
       },
       "difficulty": "normal",
@@ -25131,11 +25131,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌʌndɪˈɡreɪdɪd",
-          "phonetic": "un-di-GRAY-did"
+          "phonetic": "uhn-di-GRAY-did"
         },
         "american": {
           "ipa": "ˌʌndɪˈɡreɪdɪd",
-          "phonetic": "un-di-GRAY-did"
+          "phonetic": "uhn-di-GRAY-did"
         }
       },
       "difficulty": "hard",
@@ -25658,11 +25658,11 @@
       "pronunciation": {
         "british": {
           "ipa": "əˈdʒʌstmənt",
-          "phonetic": "uh-JUST-munt"
+          "phonetic": "uh-JUHST-muhnt"
         },
         "american": {
           "ipa": "əˈdʒʌstmənt",
-          "phonetic": "uh-JUST-munt"
+          "phonetic": "uh-JUHST-muhnt"
         }
       },
       "difficulty": "hard",
@@ -25760,11 +25760,11 @@
       "pronunciation": {
         "british": {
           "ipa": "æz ə rɪˈzʌlt",
-          "phonetic": "az uh ri-ZULT"
+          "phonetic": "az uh ri-ZUHLT"
         },
         "american": {
           "ipa": "æz ə rɪˈzʌlt",
-          "phonetic": "az uh ri-ZULT"
+          "phonetic": "az uh ri-ZUHLT"
         }
       },
       "difficulty": "hard",
@@ -25777,11 +25777,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈɡʌvənmənts",
-          "phonetic": "GUV-un-munts"
+          "phonetic": "GUHV-uhn-muhnts"
         },
         "american": {
           "ipa": "ˈɡʌvərnmənts",
-          "phonetic": "GUV-urn-munts"
+          "phonetic": "GUHV-urn-muhnts"
         }
       },
       "difficulty": "hard",
@@ -25981,11 +25981,11 @@
       "pronunciation": {
         "british": {
           "ipa": "tel ʌs",
-          "phonetic": "TEL us"
+          "phonetic": "TEL uhs"
         },
         "american": {
           "ipa": "tel ʌs",
-          "phonetic": "TEL us"
+          "phonetic": "TEL uhs"
         }
       },
       "difficulty": "normal",
@@ -26049,11 +26049,11 @@
       "pronunciation": {
         "british": {
           "ipa": "mʌst",
-          "phonetic": "MUST"
+          "phonetic": "MUHST"
         },
         "american": {
           "ipa": "mʌst",
-          "phonetic": "MUST"
+          "phonetic": "MUHST"
         }
       },
       "difficulty": "easy",
@@ -26168,11 +26168,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈsʌməhɪl",
-          "phonetic": "SUM-uh-hil"
+          "phonetic": "SUHM-uh-hil"
         },
         "american": {
           "ipa": "ˈsʌmərhɪl",
-          "phonetic": "SUM-uhr-hil"
+          "phonetic": "SUHM-uhr-hil"
         }
       },
       "difficulty": "hard",
@@ -26338,11 +26338,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈevriwʌn",
-          "phonetic": "EV-ree-wun"
+          "phonetic": "EV-ree-wuhn"
         },
         "american": {
           "ipa": "ˈevriwʌn",
-          "phonetic": "EV-ree-wun"
+          "phonetic": "EV-ree-wuhn"
         }
       },
       "difficulty": "normal",
@@ -26695,11 +26695,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈmʌni",
-          "phonetic": "MUN-ee"
+          "phonetic": "MUHN-ee"
         },
         "american": {
           "ipa": "ˈmʌni",
-          "phonetic": "MUN-ee"
+          "phonetic": "MUHN-ee"
         }
       },
       "difficulty": "easy",
@@ -26712,11 +26712,11 @@
       "pronunciation": {
         "british": {
           "ipa": "flʌd",
-          "phonetic": "FLUD"
+          "phonetic": "FLUHD"
         },
         "american": {
           "ipa": "flʌd",
-          "phonetic": "FLUD"
+          "phonetic": "FLUHD"
         }
       },
       "difficulty": "easy",
@@ -26780,11 +26780,11 @@
       "pronunciation": {
         "british": {
           "ipa": "wʌnz",
-          "phonetic": "WUNZ"
+          "phonetic": "WUHNZ"
         },
         "american": {
           "ipa": "wʌnz",
-          "phonetic": "WUNZ"
+          "phonetic": "WUHNZ"
         }
       },
       "difficulty": "easy",
@@ -26899,11 +26899,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌʌpˈdeɪtɪd",
-          "phonetic": "up-DAY-tid"
+          "phonetic": "uhp-DAY-tid"
         },
         "american": {
           "ipa": "ˈʌpdeɪtɪd",
-          "phonetic": "UP-day-tid"
+          "phonetic": "UHP-day-tid"
         }
       },
       "difficulty": "normal",
@@ -27273,11 +27273,11 @@
       "pronunciation": {
         "british": {
           "ipa": "tʌŋ",
-          "phonetic": "TUNG"
+          "phonetic": "TUHNG"
         },
         "american": {
           "ipa": "tʌŋ",
-          "phonetic": "TUNG"
+          "phonetic": "TUHNG"
         }
       },
       "difficulty": "normal",
@@ -27392,11 +27392,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌfʌndəˈmentəl",
-          "phonetic": "fun-duh-MEN-tul"
+          "phonetic": "fuhn-duh-MEN-tuhl"
         },
         "american": {
           "ipa": "ˌfʌndəˈmentəl",
-          "phonetic": "fun-duh-MEN-tul"
+          "phonetic": "fuhn-duh-MEN-tuhl"
         }
       },
       "difficulty": "hard",
@@ -27579,11 +27579,11 @@
       "pronunciation": {
         "british": {
           "ipa": "kənˈsʌltənts",
-          "phonetic": "kun-SUL-tunts"
+          "phonetic": "kuhn-SUHL-tuhnts"
         },
         "american": {
           "ipa": "kənˈsʌltənts",
-          "phonetic": "kun-SUL-tunts"
+          "phonetic": "kuhn-SUHL-tuhnts"
         }
       },
       "difficulty": "hard",
@@ -27613,11 +27613,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌʌndəˈɡəʊɪŋ",
-          "phonetic": "un-duh-GOH-ing"
+          "phonetic": "uhn-duh-GOH-ing"
         },
         "american": {
           "ipa": "ˌʌndərˈɡoʊɪŋ",
-          "phonetic": "un-dur-GOH-ing"
+          "phonetic": "uhn-dur-GOH-ing"
         }
       },
       "difficulty": "hard",
@@ -28820,7 +28820,7 @@
       "pronunciation": {
         "british": {
           "ipa": "ɪnˈkʌrɪdʒ",
-          "phonetic": "in-KUR-ij"
+          "phonetic": "in-KUHR-ij"
         },
         "american": {
           "ipa": "ɪnˈkɜːrɪdʒ",
@@ -28871,11 +28871,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈprɒdʌkt",
-          "phonetic": "PROD-ukt"
+          "phonetic": "PROD-uhkt"
         },
         "american": {
           "ipa": "ˈprɑːdʌkt",
-          "phonetic": "PRAH-dukt"
+          "phonetic": "PRAH-duhkt"
         }
       },
       "difficulty": "normal",
@@ -29041,11 +29041,11 @@
       "pronunciation": {
         "british": {
           "ipa": "kʌmz",
-          "phonetic": "KUMZ"
+          "phonetic": "KUHMZ"
         },
         "american": {
           "ipa": "kʌmz",
-          "phonetic": "KUMZ"
+          "phonetic": "KUHMZ"
         }
       },
       "difficulty": "easy",
@@ -29109,11 +29109,11 @@
       "pronunciation": {
         "british": {
           "ipa": "əˈnʌðə",
-          "phonetic": "uh-NUTH-uh"
+          "phonetic": "uh-NUHTH-uh"
         },
         "american": {
           "ipa": "əˈnʌðər",
-          "phonetic": "uh-NUTH-ur"
+          "phonetic": "uh-NUHTH-ur"
         }
       },
       "difficulty": "hard",
@@ -29669,11 +29669,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌʌnˈʃɔː",
-          "phonetic": "un-SHOR"
+          "phonetic": "uhn-SHOR"
         },
         "american": {
           "ipa": "ˌʌnˈʃʊr",
-          "phonetic": "un-SHOOR"
+          "phonetic": "uhn-SHOOR"
         }
       },
       "difficulty": "normal",
@@ -29788,11 +29788,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈfʌndɪŋ",
-          "phonetic": "FUN-ding"
+          "phonetic": "FUHN-ding"
         },
         "american": {
           "ipa": "ˈfʌndɪŋ",
-          "phonetic": "FUN-ding"
+          "phonetic": "FUHN-ding"
         }
       },
       "difficulty": "normal",
@@ -29856,11 +29856,11 @@
       "pronunciation": {
         "british": {
           "ipa": "hiːts ʌp",
-          "phonetic": "HEETS UP"
+          "phonetic": "HEETS UHP"
         },
         "american": {
           "ipa": "hiːts ʌp",
-          "phonetic": "HEETS UP"
+          "phonetic": "HEETS UHP"
         }
       },
       "difficulty": "normal",
@@ -30128,11 +30128,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈfʌŋkʃənəl",
-          "phonetic": "FUNK-shuh-nul"
+          "phonetic": "FUHNK-shuh-nuhl"
         },
         "american": {
           "ipa": "ˈfʌŋkʃənəl",
-          "phonetic": "FUNK-shuh-nul"
+          "phonetic": "FUHNK-shuh-nuhl"
         }
       },
       "difficulty": "hard",
@@ -30162,11 +30162,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈʌðəz",
-          "phonetic": "UTH-uhz"
+          "phonetic": "UHTH-uhz"
         },
         "american": {
           "ipa": "ˈʌðərz",
-          "phonetic": "UTH-urz"
+          "phonetic": "UHTH-urz"
         }
       },
       "difficulty": "normal",
@@ -30366,11 +30366,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˌʌnɪnˈhæbɪtɪd",
-          "phonetic": "un-in-HAB-i-tid"
+          "phonetic": "uhn-in-HAB-i-tid"
         },
         "american": {
           "ipa": "ˌʌnɪnˈhæbɪtɪd",
-          "phonetic": "un-in-HAB-i-tid"
+          "phonetic": "uhn-in-HAB-i-tid"
         }
       },
       "difficulty": "hard",
@@ -30383,11 +30383,11 @@
       "pronunciation": {
         "british": {
           "ipa": "drʌɡ",
-          "phonetic": "DRUG"
+          "phonetic": "DRUHG"
         },
         "american": {
           "ipa": "drʌɡ",
-          "phonetic": "DRUG"
+          "phonetic": "DRUHG"
         }
       },
       "difficulty": "easy",
@@ -30859,11 +30859,11 @@
       "pronunciation": {
         "british": {
           "ipa": "iːtʃ ˈʌðə",
-          "phonetic": "EECH UTH-uh"
+          "phonetic": "EECH UHTH-uh"
         },
         "american": {
           "ipa": "iːtʃ ˈʌðər",
-          "phonetic": "EECH UTH-ur"
+          "phonetic": "EECH UHTH-ur"
         }
       },
       "difficulty": "hard",
@@ -30893,11 +30893,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈkʌstəmz",
-          "phonetic": "KUS-tumz"
+          "phonetic": "KUHS-tuhmz"
         },
         "american": {
           "ipa": "ˈkʌstəmz",
-          "phonetic": "KUS-tumz"
+          "phonetic": "KUHS-tuhmz"
         }
       },
       "difficulty": "normal",
@@ -31538,11 +31538,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈsʌbstəns",
-          "phonetic": "SUB-stunss"
+          "phonetic": "SUHB-stuhnss"
         },
         "american": {
           "ipa": "ˈsʌbstəns",
-          "phonetic": "SUB-stunss"
+          "phonetic": "SUHB-stuhnss"
         }
       },
       "difficulty": "normal",
@@ -31657,11 +31657,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈsʌbdʒɪkts",
-          "phonetic": "SUB-jikts"
+          "phonetic": "SUHB-jikts"
         },
         "american": {
           "ipa": "ˈsʌbdʒɪkts",
-          "phonetic": "SUB-jikts"
+          "phonetic": "SUHB-jikts"
         }
       },
       "difficulty": "normal",
@@ -32064,11 +32064,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈkʌstəmə",
-          "phonetic": "KUS-tuh-muh"
+          "phonetic": "KUHS-tuh-muh"
         },
         "american": {
           "ipa": "ˈkʌstəmər",
-          "phonetic": "KUS-tuh-mur"
+          "phonetic": "KUHS-tuh-mur"
         }
       },
       "difficulty": "normal",

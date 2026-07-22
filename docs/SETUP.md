@@ -49,9 +49,31 @@ cp .env.example .env
 2.  The app uses the Gemini API via `@google/genai` package.
 
 ### Azure AI Speech
-1.  Create an Azure AI Speech resource in the Azure Portal.
-2.  Copy one resource key and the resource region.
-3.  Add `AZURE_SPEECH_KEY` and `AZURE_SPEECH_REGION` to `.env` or Vercel project settings.
+Use the Bicep-based setup instead of creating resources manually:
+
+```bash
+az login --use-device-code
+pnpm run infra:azure:speech:deploy
+```
+
+Defaults:
+
+- Resource group: `ccl-pronunciation-trainer-rg`
+- Region: `australiaeast`
+- Speech resource: `ccl-pronunciation-speech-david`
+- SKU: `F0`
+
+Override with environment variables when needed:
+
+```bash
+AZURE_LOCATION=southeastasia \
+AZURE_RESOURCE_GROUP=my-rg \
+AZURE_SPEECH_ACCOUNT_NAME=my-unique-speech-name \
+AZURE_SPEECH_SKU=S0 \
+pnpm run infra:azure:speech:deploy
+```
+
+The script deploys `infra/azure/main.bicep`, writes the Speech key and region to Vercel production, and redeploys the app. It does not print the Speech key.
 
 ## 🏃 Running the App
 

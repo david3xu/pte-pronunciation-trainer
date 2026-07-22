@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-07-22T06:02:57.423Z",
-    "totalTerms": 0,
+    "generated": "2026-07-22T10:11:54.740Z",
+    "totalTerms": 373,
     "source": "pte-my-rs-wfd",
     "description": "My PTE RS and WFD word list",
     "version": "1.0",
@@ -11,5 +11,6334 @@
     "hasIPA": true,
     "keepDuplicates": false
   },
-  "vocabulary": []
+  "vocabulary": [
+    {
+      "english": "art. a",
+      "pronunciation": {
+        "british": {
+          "ipa": "ə",
+          "phonetic": "UH"
+        },
+        "american": {
+          "ipa": "ə",
+          "phonetic": "UH"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd"
+    },
+    {
+      "english": "absolutely",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈæbsəluːtli",
+          "phonetic": "AB-suh-loot-lee"
+        },
+        "american": {
+          "ipa": "ˈæbsəluːtli",
+          "phonetic": "AB-suh-loot-lee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adv."
+    },
+    {
+      "english": "academic",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌækəˈdemɪk",
+          "phonetic": "ak-uh-DEM-ik"
+        },
+        "american": {
+          "ipa": "ˌækəˈdemɪk",
+          "phonetic": "ak-uh-DEM-ik"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "accept",
+      "pronunciation": {
+        "british": {
+          "ipa": "əkˈsept",
+          "phonetic": "uk-SEPT"
+        },
+        "american": {
+          "ipa": "əkˈsept",
+          "phonetic": "uk-SEPT"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "acupuncture",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈækjʊpʌŋktʃə",
+          "phonetic": "AK-yoo-punk-chuh"
+        },
+        "american": {
+          "ipa": "ˈækjəpʌŋktʃər",
+          "phonetic": "AK-yuh-punk-chur"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "African",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈæfrɪkən",
+          "phonetic": "AF-ri-kun"
+        },
+        "american": {
+          "ipa": "ˈæfrɪkən",
+          "phonetic": "AF-ri-kun"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "agree",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈɡriː",
+          "phonetic": "uh-GREE"
+        },
+        "american": {
+          "ipa": "əˈɡriː",
+          "phonetic": "uh-GREE"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "agricultural",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌæɡrɪˈkʌltʃərəl",
+          "phonetic": "ag-ri-KUL-chuh-rul"
+        },
+        "american": {
+          "ipa": "ˌæɡrɪˈkʌltʃərəl",
+          "phonetic": "ag-ri-KUL-chuh-rul"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "allergy",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈælədʒi",
+          "phonetic": "AL-uh-jee"
+        },
+        "american": {
+          "ipa": "ˈælərdʒi",
+          "phonetic": "AL-ur-jee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "alternative",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɒlˈtɜːnətɪv",
+          "phonetic": "ol-TUR-nuh-tiv"
+        },
+        "american": {
+          "ipa": "ɑːlˈtɜːrnətɪv",
+          "phonetic": "ahl-TUR-nuh-tiv"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "art. an",
+      "pronunciation": {
+        "british": {
+          "ipa": "ən",
+          "phonetic": "UHN"
+        },
+        "american": {
+          "ipa": "ən",
+          "phonetic": "UHN"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd"
+    },
+    {
+      "english": "anatomy",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈnætəmi",
+          "phonetic": "uh-NAT-uh-mee"
+        },
+        "american": {
+          "ipa": "əˈnætəmi",
+          "phonetic": "uh-NAT-uh-mee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "animal",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈænɪməl",
+          "phonetic": "AN-i-mul"
+        },
+        "american": {
+          "ipa": "ˈænɪməl",
+          "phonetic": "AN-i-mul"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "animals",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈænɪməlz",
+          "phonetic": "AN-i-mulz"
+        },
+        "american": {
+          "ipa": "ˈænɪməlz",
+          "phonetic": "AN-i-mulz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "appreciate",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈpriːʃieɪt",
+          "phonetic": "uh-PREE-shee-ayt"
+        },
+        "american": {
+          "ipa": "əˈpriːʃieɪt",
+          "phonetic": "uh-PREE-shee-ayt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "arteries",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɑːtəriz",
+          "phonetic": "AH-tuh-reez"
+        },
+        "american": {
+          "ipa": "ˈɑːrtəriz",
+          "phonetic": "AR-tuh-reez"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "article",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɑːtɪkəl",
+          "phonetic": "AH-ti-kul"
+        },
+        "american": {
+          "ipa": "ˈɑːrtɪkəl",
+          "phonetic": "AR-ti-kul"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "assignment",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈsaɪnmənt",
+          "phonetic": "uh-SYN-munt"
+        },
+        "american": {
+          "ipa": "əˈsaɪnmənt",
+          "phonetic": "uh-SYN-munt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "assignments",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈsaɪnmənts",
+          "phonetic": "uh-SYN-munts"
+        },
+        "american": {
+          "ipa": "əˈsaɪnmənts",
+          "phonetic": "uh-SYN-munts"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "assistance",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈsɪstəns",
+          "phonetic": "uh-SIS-tuns"
+        },
+        "american": {
+          "ipa": "əˈsɪstəns",
+          "phonetic": "uh-SIS-tuns"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "astrophysics",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌæstrəʊˈfɪzɪks",
+          "phonetic": "as-troh-FIZ-iks"
+        },
+        "american": {
+          "ipa": "ˌæstroʊˈfɪzɪks",
+          "phonetic": "as-troh-FIZ-iks"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "at",
+      "pronunciation": {
+        "british": {
+          "ipa": "æt",
+          "phonetic": "AT"
+        },
+        "american": {
+          "ipa": "æt",
+          "phonetic": "AT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "prep."
+    },
+    {
+      "english": "attention",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈtenʃən",
+          "phonetic": "uh-TEN-shun"
+        },
+        "american": {
+          "ipa": "əˈtenʃən",
+          "phonetic": "uh-TEN-shun"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "awarded",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈwɔːdɪd",
+          "phonetic": "uh-WOR-did"
+        },
+        "american": {
+          "ipa": "əˈwɔːrdɪd",
+          "phonetic": "uh-WOR-did"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "be",
+      "pronunciation": {
+        "british": {
+          "ipa": "biː",
+          "phonetic": "BEE"
+        },
+        "american": {
+          "ipa": "biː",
+          "phonetic": "BEE"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "beakers",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbiːkəz",
+          "phonetic": "BEE-kuz"
+        },
+        "american": {
+          "ipa": "ˈbiːkərz",
+          "phonetic": "BEE-kurz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "beneficial",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌbenɪˈfɪʃəl",
+          "phonetic": "ben-i-FISH-ul"
+        },
+        "american": {
+          "ipa": "ˌbenɪˈfɪʃəl",
+          "phonetic": "ben-i-FISH-ul"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "bibliography",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌbɪbliˈɒɡrəfi",
+          "phonetic": "bib-lee-OG-ruh-fee"
+        },
+        "american": {
+          "ipa": "ˌbɪbliˈɑːɡrəfi",
+          "phonetic": "bib-lee-AH-gruh-fee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "blood",
+      "pronunciation": {
+        "british": {
+          "ipa": "blʌd",
+          "phonetic": "BLUD"
+        },
+        "american": {
+          "ipa": "blʌd",
+          "phonetic": "BLUD"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "bodies",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbɒdiz",
+          "phonetic": "BOD-eez"
+        },
+        "american": {
+          "ipa": "ˈbɑːdiz",
+          "phonetic": "BAH-deez"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "bookstore",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbʊkstɔː",
+          "phonetic": "BUUK-stor"
+        },
+        "american": {
+          "ipa": "ˈbʊkstɔːr",
+          "phonetic": "BUUK-stor"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "borrow",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbɒrəʊ",
+          "phonetic": "BOR-oh"
+        },
+        "american": {
+          "ipa": "ˈbɑːroʊ",
+          "phonetic": "BAH-roh"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "borrowed",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈbɒrəʊd",
+          "phonetic": "BOR-ohd"
+        },
+        "american": {
+          "ipa": "ˈbɑːroʊd",
+          "phonetic": "BAH-rohd"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "brain",
+      "pronunciation": {
+        "british": {
+          "ipa": "breɪn",
+          "phonetic": "BRAYN"
+        },
+        "american": {
+          "ipa": "breɪn",
+          "phonetic": "BRAYN"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "bread",
+      "pronunciation": {
+        "british": {
+          "ipa": "bred",
+          "phonetic": "BRED"
+        },
+        "american": {
+          "ipa": "bred",
+          "phonetic": "BRED"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "break",
+      "pronunciation": {
+        "british": {
+          "ipa": "breɪk",
+          "phonetic": "BRAYK"
+        },
+        "american": {
+          "ipa": "breɪk",
+          "phonetic": "BRAYK"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "brief",
+      "pronunciation": {
+        "british": {
+          "ipa": "briːf",
+          "phonetic": "BREEF"
+        },
+        "american": {
+          "ipa": "briːf",
+          "phonetic": "BREEF"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "by",
+      "pronunciation": {
+        "british": {
+          "ipa": "baɪ",
+          "phonetic": "BY"
+        },
+        "american": {
+          "ipa": "baɪ",
+          "phonetic": "BY"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "prep."
+    },
+    {
+      "english": "cafeteria",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌkæfəˈtɪəriə",
+          "phonetic": "kaf-uh-TEER-ee-uh"
+        },
+        "american": {
+          "ipa": "ˌkæfəˈtɪriə",
+          "phonetic": "kaf-uh-TEER-ee-uh"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "called",
+      "pronunciation": {
+        "british": {
+          "ipa": "kɔːld",
+          "phonetic": "KAWLD"
+        },
+        "american": {
+          "ipa": "kɔːld",
+          "phonetic": "KAWLD"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "came",
+      "pronunciation": {
+        "british": {
+          "ipa": "keɪm",
+          "phonetic": "KAYM"
+        },
+        "american": {
+          "ipa": "keɪm",
+          "phonetic": "KAYM"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "campus",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkæmpəs",
+          "phonetic": "KAM-pus"
+        },
+        "american": {
+          "ipa": "ˈkæmpəs",
+          "phonetic": "KAM-pus"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "aux. can",
+      "pronunciation": {
+        "british": {
+          "ipa": "kæn",
+          "phonetic": "KAN"
+        },
+        "american": {
+          "ipa": "kæn",
+          "phonetic": "KAN"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd"
+    },
+    {
+      "english": "canceled",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkænsəld",
+          "phonetic": "KAN-suld"
+        },
+        "american": {
+          "ipa": "ˈkænsəld",
+          "phonetic": "KAN-suld"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "cancelled",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkænsəld",
+          "phonetic": "KAN-suld"
+        },
+        "american": {
+          "ipa": "ˈkænsəld",
+          "phonetic": "KAN-suld"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "capture",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkæptʃə",
+          "phonetic": "KAP-chuh"
+        },
+        "american": {
+          "ipa": "ˈkæptʃər",
+          "phonetic": "KAP-chur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "carbon",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkɑːbən",
+          "phonetic": "KAH-bun"
+        },
+        "american": {
+          "ipa": "ˈkɑːrbən",
+          "phonetic": "KAR-bun"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "card",
+      "pronunciation": {
+        "british": {
+          "ipa": "kɑːd",
+          "phonetic": "KAHD"
+        },
+        "american": {
+          "ipa": "kɑːrd",
+          "phonetic": "KARD"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "carry",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkæri",
+          "phonetic": "KA-ree"
+        },
+        "american": {
+          "ipa": "ˈkæri",
+          "phonetic": "KA-ree"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "cash",
+      "pronunciation": {
+        "british": {
+          "ipa": "kæʃ",
+          "phonetic": "KASH"
+        },
+        "american": {
+          "ipa": "kæʃ",
+          "phonetic": "KASH"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "center",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsentə",
+          "phonetic": "SEN-tuh"
+        },
+        "american": {
+          "ipa": "ˈsentər",
+          "phonetic": "SEN-tur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "certificate",
+      "pronunciation": {
+        "british": {
+          "ipa": "səˈtɪfɪkət",
+          "phonetic": "suh-TIF-i-kut"
+        },
+        "american": {
+          "ipa": "sərˈtɪfɪkət",
+          "phonetic": "sur-TIF-i-kut"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "challenge",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtʃælɪndʒ",
+          "phonetic": "CHAL-inj"
+        },
+        "american": {
+          "ipa": "ˈtʃælɪndʒ",
+          "phonetic": "CHAL-inj"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "Chinese",
+      "pronunciation": {
+        "british": {
+          "ipa": "tʃaɪˈniːz",
+          "phonetic": "chy-NEEZ"
+        },
+        "american": {
+          "ipa": "tʃaɪˈniːz",
+          "phonetic": "chy-NEEZ"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "choose",
+      "pronunciation": {
+        "british": {
+          "ipa": "tʃuːz",
+          "phonetic": "CHOOZ"
+        },
+        "american": {
+          "ipa": "tʃuːz",
+          "phonetic": "CHOOZ"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "circumstances",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɜːkəmstənsɪz",
+          "phonetic": "SUR-kum-stun-siz"
+        },
+        "american": {
+          "ipa": "ˈsɜːrkəmstænsɪz",
+          "phonetic": "SUR-kum-stan-siz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "citation",
+      "pronunciation": {
+        "british": {
+          "ipa": "saɪˈteɪʃən",
+          "phonetic": "sy-TAY-shun"
+        },
+        "american": {
+          "ipa": "saɪˈteɪʃən",
+          "phonetic": "sy-TAY-shun"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "class",
+      "pronunciation": {
+        "british": {
+          "ipa": "klɑːs",
+          "phonetic": "KLAHS"
+        },
+        "american": {
+          "ipa": "klæs",
+          "phonetic": "KLAS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "clock",
+      "pronunciation": {
+        "british": {
+          "ipa": "klɒk",
+          "phonetic": "KLOK"
+        },
+        "american": {
+          "ipa": "klɑːk",
+          "phonetic": "KLAHK"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "closed",
+      "pronunciation": {
+        "british": {
+          "ipa": "kləʊzd",
+          "phonetic": "KLOHZD"
+        },
+        "american": {
+          "ipa": "kloʊzd",
+          "phonetic": "KLOHZD"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "closes",
+      "pronunciation": {
+        "british": {
+          "ipa": "kləʊzɪz",
+          "phonetic": "KLOH-ziz"
+        },
+        "american": {
+          "ipa": "kloʊzɪz",
+          "phonetic": "KLOH-ziz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "closing",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkləʊzɪŋ",
+          "phonetic": "KLOH-zing"
+        },
+        "american": {
+          "ipa": "ˈkloʊzɪŋ",
+          "phonetic": "KLOH-zing"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "collaboration",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəˌlæbəˈreɪʃən",
+          "phonetic": "kuh-lab-uh-RAY-shun"
+        },
+        "american": {
+          "ipa": "kəˌlæbəˈreɪʃən",
+          "phonetic": "kuh-lab-uh-RAY-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "collaborative",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəˈlæbərətɪv",
+          "phonetic": "kuh-LAB-uh-ruh-tiv"
+        },
+        "american": {
+          "ipa": "kəˈlæbəreɪtɪv",
+          "phonetic": "kuh-LAB-uh-ray-tiv"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "collection",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəˈlekʃən",
+          "phonetic": "kuh-LEK-shun"
+        },
+        "american": {
+          "ipa": "kəˈlekʃən",
+          "phonetic": "kuh-LEK-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "colonial",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəˈləʊniəl",
+          "phonetic": "kuh-LOH-nee-ul"
+        },
+        "american": {
+          "ipa": "kəˈloʊniəl",
+          "phonetic": "kuh-LOH-nee-ul"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "company",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌmpəni",
+          "phonetic": "KUM-puh-nee"
+        },
+        "american": {
+          "ipa": "ˈkʌmpəni",
+          "phonetic": "KUM-puh-nee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "compiling",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəmˈpaɪlɪŋ",
+          "phonetic": "kum-PY-ling"
+        },
+        "american": {
+          "ipa": "kəmˈpaɪlɪŋ",
+          "phonetic": "kum-PY-ling"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "comprises",
+      "pronunciation": {
+        "british": {
+          "ipa": "kəmˈpraɪzɪz",
+          "phonetic": "kum-PRY-ziz"
+        },
+        "american": {
+          "ipa": "kəmˈpraɪzɪz",
+          "phonetic": "kum-PRY-ziz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "considering",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈsɪdərɪŋ",
+          "phonetic": "kun-SID-uh-ring"
+        },
+        "american": {
+          "ipa": "kənˈsɪdərɪŋ",
+          "phonetic": "kun-SID-uh-ring"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "constitutional",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌkɒnstɪˈtjuːʃənəl",
+          "phonetic": "kon-sti-TYOO-shuh-nul"
+        },
+        "american": {
+          "ipa": "ˌkɑːnstɪˈtuːʃənəl",
+          "phonetic": "kahn-sti-TOO-shuh-nul"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "consuming",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈsjuːmɪŋ",
+          "phonetic": "kun-SYOO-ming"
+        },
+        "american": {
+          "ipa": "kənˈsuːmɪŋ",
+          "phonetic": "kun-SOO-ming"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "contest",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkɒntest",
+          "phonetic": "KON-test"
+        },
+        "american": {
+          "ipa": "ˈkɑːntest",
+          "phonetic": "KAHN-test"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "convincing",
+      "pronunciation": {
+        "british": {
+          "ipa": "kənˈvɪnsɪŋ",
+          "phonetic": "kun-VIN-sing"
+        },
+        "american": {
+          "ipa": "kənˈvɪnsɪŋ",
+          "phonetic": "kun-VIN-sing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "costs",
+      "pronunciation": {
+        "british": {
+          "ipa": "kɒsts",
+          "phonetic": "KOSTS"
+        },
+        "american": {
+          "ipa": "kɔːsts",
+          "phonetic": "KAWSTS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "countryside",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkʌntrisaɪd",
+          "phonetic": "KUN-tree-syd"
+        },
+        "american": {
+          "ipa": "ˈkʌntrisaɪd",
+          "phonetic": "KUN-tree-syd"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "credit",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkredɪt",
+          "phonetic": "KRED-it"
+        },
+        "american": {
+          "ipa": "ˈkredɪt",
+          "phonetic": "KRED-it"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "credits",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkredɪts",
+          "phonetic": "KRED-its"
+        },
+        "american": {
+          "ipa": "ˈkredɪts",
+          "phonetic": "KRED-its"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "cut",
+      "pronunciation": {
+        "british": {
+          "ipa": "kʌt",
+          "phonetic": "KUT"
+        },
+        "american": {
+          "ipa": "kʌt",
+          "phonetic": "KUT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "daily",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdeɪli",
+          "phonetic": "DAY-lee"
+        },
+        "american": {
+          "ipa": "ˈdeɪli",
+          "phonetic": "DAY-lee"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "damage",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdæmɪdʒ",
+          "phonetic": "DAM-ij"
+        },
+        "american": {
+          "ipa": "ˈdæmɪdʒ",
+          "phonetic": "DAM-ij"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "date",
+      "pronunciation": {
+        "british": {
+          "ipa": "deɪt",
+          "phonetic": "DAYT"
+        },
+        "american": {
+          "ipa": "deɪt",
+          "phonetic": "DAYT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "debris",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdebriː",
+          "phonetic": "DEB-ree"
+        },
+        "american": {
+          "ipa": "dəˈbriː",
+          "phonetic": "duh-BREE"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "decay",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈkeɪ",
+          "phonetic": "di-KAY"
+        },
+        "american": {
+          "ipa": "dɪˈkeɪ",
+          "phonetic": "di-KAY"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "decided",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈsaɪdɪd",
+          "phonetic": "di-SY-did"
+        },
+        "american": {
+          "ipa": "dɪˈsaɪdɪd",
+          "phonetic": "di-SY-did"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "decomposes",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌdiːkəmˈpəʊzɪz",
+          "phonetic": "dee-kum-POH-ziz"
+        },
+        "american": {
+          "ipa": "ˌdiːkəmˈpoʊzɪz",
+          "phonetic": "dee-kum-POH-ziz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "deducted",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈdʌktɪd",
+          "phonetic": "di-DUK-tid"
+        },
+        "american": {
+          "ipa": "dɪˈdʌktɪd",
+          "phonetic": "di-DUK-tid"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "delighted",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈlaɪtɪd",
+          "phonetic": "di-LY-tid"
+        },
+        "american": {
+          "ipa": "dɪˈlaɪtɪd",
+          "phonetic": "di-LY-tid"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "democracy",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈmɒkrəsi",
+          "phonetic": "di-MOK-ruh-see"
+        },
+        "american": {
+          "ipa": "dɪˈmɑːkrəsi",
+          "phonetic": "di-MAH-kruh-see"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "destroyed",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈstrɔɪd",
+          "phonetic": "di-STROYD"
+        },
+        "american": {
+          "ipa": "dɪˈstrɔɪd",
+          "phonetic": "di-STROYD"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "detailed",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdiːteɪld",
+          "phonetic": "DEE-tayld"
+        },
+        "american": {
+          "ipa": "dɪˈteɪld",
+          "phonetic": "di-TAYLD"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "determine",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈtɜːmɪn",
+          "phonetic": "di-TUR-min"
+        },
+        "american": {
+          "ipa": "dɪˈtɜːrmɪn",
+          "phonetic": "di-TUR-min"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "aux. didn't",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdɪdənt",
+          "phonetic": "DID-unt"
+        },
+        "american": {
+          "ipa": "ˈdɪdənt",
+          "phonetic": "DID-unt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd"
+    },
+    {
+      "english": "diploma",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈpləʊmə",
+          "phonetic": "di-PLOH-muh"
+        },
+        "american": {
+          "ipa": "dɪˈploʊmə",
+          "phonetic": "di-PLOH-muh"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "directly",
+      "pronunciation": {
+        "british": {
+          "ipa": "dəˈrektli",
+          "phonetic": "duh-REKT-lee"
+        },
+        "american": {
+          "ipa": "dəˈrektli",
+          "phonetic": "duh-REKT-lee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adv."
+    },
+    {
+      "english": "disarmament",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪsˈɑːməmənt",
+          "phonetic": "dis-AH-muh-munt"
+        },
+        "american": {
+          "ipa": "dɪsˈɑːrməmənt",
+          "phonetic": "dis-AR-muh-munt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "discussing",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈskʌsɪŋ",
+          "phonetic": "di-SKUS-ing"
+        },
+        "american": {
+          "ipa": "dɪˈskʌsɪŋ",
+          "phonetic": "di-SKUS-ing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "discussion",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈskʌʃən",
+          "phonetic": "di-SKUSH-un"
+        },
+        "american": {
+          "ipa": "dɪˈskʌʃən",
+          "phonetic": "di-SKUSH-un"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "disputed",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈspjuːtɪd",
+          "phonetic": "di-SPYOO-tid"
+        },
+        "american": {
+          "ipa": "dɪˈspjuːtɪd",
+          "phonetic": "di-SPYOO-tid"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "distinction",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈstɪŋkʃən",
+          "phonetic": "di-STINK-shun"
+        },
+        "american": {
+          "ipa": "dɪˈstɪŋkʃən",
+          "phonetic": "di-STINK-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "distinguishes",
+      "pronunciation": {
+        "british": {
+          "ipa": "dɪˈstɪŋɡwɪʃɪz",
+          "phonetic": "di-STING-gwish-iz"
+        },
+        "american": {
+          "ipa": "dɪˈstɪŋɡwɪʃɪz",
+          "phonetic": "di-STING-gwish-iz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "aux. do",
+      "pronunciation": {
+        "british": {
+          "ipa": "duː",
+          "phonetic": "DOO"
+        },
+        "american": {
+          "ipa": "duː",
+          "phonetic": "DOO"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd"
+    },
+    {
+      "english": "aux. don't",
+      "pronunciation": {
+        "british": {
+          "ipa": "dəʊnt",
+          "phonetic": "DOHNT"
+        },
+        "american": {
+          "ipa": "doʊnt",
+          "phonetic": "DOHNT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd"
+    },
+    {
+      "english": "double",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdʌbəl",
+          "phonetic": "DUB-ul"
+        },
+        "american": {
+          "ipa": "ˈdʌbəl",
+          "phonetic": "DUB-ul"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "downloadable",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌdaʊnˈləʊdəbəl",
+          "phonetic": "down-LOH-duh-bul"
+        },
+        "american": {
+          "ipa": "ˌdaʊnˈloʊdəbəl",
+          "phonetic": "down-LOH-duh-bul"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "Dr",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdɒktə",
+          "phonetic": "DOK-tuh"
+        },
+        "american": {
+          "ipa": "ˈdɑːktər",
+          "phonetic": "DAHK-tur"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "abbr."
+    },
+    {
+      "english": "draft",
+      "pronunciation": {
+        "british": {
+          "ipa": "drɑːft",
+          "phonetic": "DRAHFT"
+        },
+        "american": {
+          "ipa": "dræft",
+          "phonetic": "DRAFT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "dramatic",
+      "pronunciation": {
+        "british": {
+          "ipa": "drəˈmætɪk",
+          "phonetic": "druh-MAT-ik"
+        },
+        "american": {
+          "ipa": "drəˈmætɪk",
+          "phonetic": "druh-MAT-ik"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "due",
+      "pronunciation": {
+        "british": {
+          "ipa": "djuː",
+          "phonetic": "DYOO"
+        },
+        "american": {
+          "ipa": "duː",
+          "phonetic": "DOO"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "det. each",
+      "pronunciation": {
+        "british": {
+          "ipa": "iːtʃ",
+          "phonetic": "EECH"
+        },
+        "american": {
+          "ipa": "iːtʃ",
+          "phonetic": "EECH"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd"
+    },
+    {
+      "english": "earn",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɜːn",
+          "phonetic": "URN"
+        },
+        "american": {
+          "ipa": "ɜːrn",
+          "phonetic": "URN"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "east",
+      "pronunciation": {
+        "british": {
+          "ipa": "iːst",
+          "phonetic": "EEST"
+        },
+        "american": {
+          "ipa": "iːst",
+          "phonetic": "EEST"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "efficient",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪˈfɪʃənt",
+          "phonetic": "i-FISH-unt"
+        },
+        "american": {
+          "ipa": "ɪˈfɪʃənt",
+          "phonetic": "i-FISH-unt"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "egg",
+      "pronunciation": {
+        "british": {
+          "ipa": "eɡ",
+          "phonetic": "EG"
+        },
+        "american": {
+          "ipa": "eɡ",
+          "phonetic": "EG"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "eighteenth",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌeɪˈtiːnθ",
+          "phonetic": "ay-TEENTH"
+        },
+        "american": {
+          "ipa": "ˌeɪˈtiːnθ",
+          "phonetic": "ay-TEENTH"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "elections",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪˈlekʃənz",
+          "phonetic": "i-LEK-shunz"
+        },
+        "american": {
+          "ipa": "ɪˈlekʃənz",
+          "phonetic": "i-LEK-shunz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "email",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈiːmeɪl",
+          "phonetic": "EE-mayl"
+        },
+        "american": {
+          "ipa": "ˈiːmeɪl",
+          "phonetic": "EE-mayl"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "emailed",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈiːmeɪld",
+          "phonetic": "EE-mayld"
+        },
+        "american": {
+          "ipa": "ˈiːmeɪld",
+          "phonetic": "EE-mayld"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "emissions",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪˈmɪʃənz",
+          "phonetic": "i-MISH-unz"
+        },
+        "american": {
+          "ipa": "ɪˈmɪʃənz",
+          "phonetic": "i-MISH-unz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "encouraged",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈkʌrɪdʒd",
+          "phonetic": "in-KUR-ijd"
+        },
+        "american": {
+          "ipa": "ɪnˈkɜːrɪdʒd",
+          "phonetic": "in-KUR-ijd"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "enhances",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈhɑːnsɪz",
+          "phonetic": "in-HAHN-siz"
+        },
+        "american": {
+          "ipa": "ɪnˈhænsɪz",
+          "phonetic": "in-HAN-siz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "enrollment",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈrəʊlmənt",
+          "phonetic": "in-ROHL-munt"
+        },
+        "american": {
+          "ipa": "ɪnˈroʊlmənt",
+          "phonetic": "in-ROHL-munt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "era",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪərə",
+          "phonetic": "EER-uh"
+        },
+        "american": {
+          "ipa": "ˈɪrə",
+          "phonetic": "EER-uh"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "essay",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈeseɪ",
+          "phonetic": "ES-ay"
+        },
+        "american": {
+          "ipa": "ˈeseɪ",
+          "phonetic": "ES-ay"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "essays",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈeseɪz",
+          "phonetic": "ES-ayz"
+        },
+        "american": {
+          "ipa": "ˈeseɪz",
+          "phonetic": "ES-ayz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "evening",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈiːvnɪŋ",
+          "phonetic": "EEV-ning"
+        },
+        "american": {
+          "ipa": "ˈiːvnɪŋ",
+          "phonetic": "EEV-ning"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "everywhere",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈevriweə",
+          "phonetic": "EV-ree-wair"
+        },
+        "american": {
+          "ipa": "ˈevriwer",
+          "phonetic": "EV-ree-wair"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adv."
+    },
+    {
+      "english": "exam",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪɡˈzæm",
+          "phonetic": "ig-ZAM"
+        },
+        "american": {
+          "ipa": "ɪɡˈzæm",
+          "phonetic": "ig-ZAM"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "exercise",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈeksəsaɪz",
+          "phonetic": "EK-suh-syz"
+        },
+        "american": {
+          "ipa": "ˈeksərsaɪz",
+          "phonetic": "EK-sur-syz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "explosion",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪkˈspləʊʒən",
+          "phonetic": "ik-SPLOH-zhun"
+        },
+        "american": {
+          "ipa": "ɪkˈsploʊʒən",
+          "phonetic": "ik-SPLOH-zhun"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "facilities",
+      "pronunciation": {
+        "british": {
+          "ipa": "fəˈsɪlətiz",
+          "phonetic": "fuh-SIL-uh-teez"
+        },
+        "american": {
+          "ipa": "fəˈsɪlətiz",
+          "phonetic": "fuh-SIL-uh-teez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "fail",
+      "pronunciation": {
+        "british": {
+          "ipa": "feɪl",
+          "phonetic": "FAYL"
+        },
+        "american": {
+          "ipa": "feɪl",
+          "phonetic": "FAYL"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "familiar",
+      "pronunciation": {
+        "british": {
+          "ipa": "fəˈmɪljə",
+          "phonetic": "fuh-MIL-yuh"
+        },
+        "american": {
+          "ipa": "fəˈmɪljər",
+          "phonetic": "fuh-MIL-yur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "feature",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfiːtʃə",
+          "phonetic": "FEE-chuh"
+        },
+        "american": {
+          "ipa": "ˈfiːtʃər",
+          "phonetic": "FEE-chur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "fees",
+      "pronunciation": {
+        "british": {
+          "ipa": "fiːz",
+          "phonetic": "FEEZ"
+        },
+        "american": {
+          "ipa": "fiːz",
+          "phonetic": "FEEZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "field",
+      "pronunciation": {
+        "british": {
+          "ipa": "fiːld",
+          "phonetic": "FEELD"
+        },
+        "american": {
+          "ipa": "fiːld",
+          "phonetic": "FEELD"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "figures",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɪɡəz",
+          "phonetic": "FIG-uz"
+        },
+        "american": {
+          "ipa": "ˈfɪɡjərz",
+          "phonetic": "FIG-yurz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "files",
+      "pronunciation": {
+        "british": {
+          "ipa": "faɪlz",
+          "phonetic": "FYLZ"
+        },
+        "american": {
+          "ipa": "faɪlz",
+          "phonetic": "FYLZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "fitness",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɪtnəs",
+          "phonetic": "FIT-nus"
+        },
+        "american": {
+          "ipa": "ˈfɪtnəs",
+          "phonetic": "FIT-nus"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "floor",
+      "pronunciation": {
+        "british": {
+          "ipa": "flɔː",
+          "phonetic": "FLOR"
+        },
+        "american": {
+          "ipa": "flɔːr",
+          "phonetic": "FLOR"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "flourish",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈflʌrɪʃ",
+          "phonetic": "FLUR-ish"
+        },
+        "american": {
+          "ipa": "ˈflɜːrɪʃ",
+          "phonetic": "FLUR-ish"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "for",
+      "pronunciation": {
+        "british": {
+          "ipa": "fɔː",
+          "phonetic": "FOR"
+        },
+        "american": {
+          "ipa": "fɔːr",
+          "phonetic": "FOR"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "prep."
+    },
+    {
+      "english": "forests",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɒrɪsts",
+          "phonetic": "FOR-ists"
+        },
+        "american": {
+          "ipa": "ˈfɔːrɪsts",
+          "phonetic": "FOR-ists"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "format",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfɔːmæt",
+          "phonetic": "FOR-mat"
+        },
+        "american": {
+          "ipa": "ˈfɔːrmæt",
+          "phonetic": "FOR-mat"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "four",
+      "pronunciation": {
+        "british": {
+          "ipa": "fɔː",
+          "phonetic": "FOR"
+        },
+        "american": {
+          "ipa": "fɔːr",
+          "phonetic": "FOR"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "num."
+    },
+    {
+      "english": "framework",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfreɪmwɜːk",
+          "phonetic": "FRAYM-wurk"
+        },
+        "american": {
+          "ipa": "ˈfreɪmwɜːrk",
+          "phonetic": "FRAYM-wurk"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "freshman",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfreʃmən",
+          "phonetic": "FRESH-mun"
+        },
+        "american": {
+          "ipa": "ˈfreʃmən",
+          "phonetic": "FRESH-mun"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "Friday",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfraɪdeɪ",
+          "phonetic": "FRY-day"
+        },
+        "american": {
+          "ipa": "ˈfraɪdeɪ",
+          "phonetic": "FRY-day"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "fungi",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈfʌŋɡaɪ",
+          "phonetic": "FUN-gy"
+        },
+        "american": {
+          "ipa": "ˈfʌndʒaɪ",
+          "phonetic": "FUN-jy"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "garnered",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɡɑːnəd",
+          "phonetic": "GAH-nud"
+        },
+        "american": {
+          "ipa": "ˈɡɑːrnərd",
+          "phonetic": "GAR-nurd"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "gender",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdʒendə",
+          "phonetic": "JEN-duh"
+        },
+        "american": {
+          "ipa": "ˈdʒendər",
+          "phonetic": "JEN-dur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "geology",
+      "pronunciation": {
+        "british": {
+          "ipa": "dʒiˈɒlədʒi",
+          "phonetic": "jee-OL-uh-jee"
+        },
+        "american": {
+          "ipa": "dʒiˈɑːlədʒi",
+          "phonetic": "jee-AH-luh-jee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "get",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɡet",
+          "phonetic": "GET"
+        },
+        "american": {
+          "ipa": "ɡet",
+          "phonetic": "GET"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "given",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɡɪvən",
+          "phonetic": "GIV-un"
+        },
+        "american": {
+          "ipa": "ˈɡɪvən",
+          "phonetic": "GIV-un"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "Green",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɡriːn",
+          "phonetic": "GREEN"
+        },
+        "american": {
+          "ipa": "ɡriːn",
+          "phonetic": "GREEN"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "ground",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɡraʊnd",
+          "phonetic": "GROWND"
+        },
+        "american": {
+          "ipa": "ɡraʊnd",
+          "phonetic": "GROWND"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "group",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɡruːp",
+          "phonetic": "GROOP"
+        },
+        "american": {
+          "ipa": "ɡruːp",
+          "phonetic": "GROOP"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "grow",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɡrəʊ",
+          "phonetic": "GROH"
+        },
+        "american": {
+          "ipa": "ɡroʊ",
+          "phonetic": "GROH"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "half",
+      "pronunciation": {
+        "british": {
+          "ipa": "hɑːf",
+          "phonetic": "HAHF"
+        },
+        "american": {
+          "ipa": "hæf",
+          "phonetic": "HAF"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "hall",
+      "pronunciation": {
+        "british": {
+          "ipa": "hɔːl",
+          "phonetic": "HAWL"
+        },
+        "american": {
+          "ipa": "hɔːl",
+          "phonetic": "HAWL"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "handed",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhændɪd",
+          "phonetic": "HAN-did"
+        },
+        "american": {
+          "ipa": "ˈhændɪd",
+          "phonetic": "HAN-did"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "handouts",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhændaʊts",
+          "phonetic": "HAND-owts"
+        },
+        "american": {
+          "ipa": "ˈhændaʊts",
+          "phonetic": "HAND-owts"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "aux. has",
+      "pronunciation": {
+        "british": {
+          "ipa": "hæz",
+          "phonetic": "HAZ"
+        },
+        "american": {
+          "ipa": "hæz",
+          "phonetic": "HAZ"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd"
+    },
+    {
+      "english": "hesitate",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhezɪteɪt",
+          "phonetic": "HEZ-i-tayt"
+        },
+        "american": {
+          "ipa": "ˈhezɪteɪt",
+          "phonetic": "HEZ-i-tayt"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "him",
+      "pronunciation": {
+        "british": {
+          "ipa": "hɪm",
+          "phonetic": "HIM"
+        },
+        "american": {
+          "ipa": "hɪm",
+          "phonetic": "HIM"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "pron."
+    },
+    {
+      "english": "hole",
+      "pronunciation": {
+        "british": {
+          "ipa": "həʊl",
+          "phonetic": "HOHL"
+        },
+        "american": {
+          "ipa": "hoʊl",
+          "phonetic": "HOHL"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "holes",
+      "pronunciation": {
+        "british": {
+          "ipa": "həʊlz",
+          "phonetic": "HOHLZ"
+        },
+        "american": {
+          "ipa": "hoʊlz",
+          "phonetic": "HOHLZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "holidays",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈhɒlədeɪz",
+          "phonetic": "HOL-uh-dayz"
+        },
+        "american": {
+          "ipa": "ˈhɑːlədeɪz",
+          "phonetic": "HAH-luh-dayz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "hours",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈaʊəz",
+          "phonetic": "OW-uz"
+        },
+        "american": {
+          "ipa": "ˈaʊərz",
+          "phonetic": "OW-urz"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "hunt",
+      "pronunciation": {
+        "british": {
+          "ipa": "hʌnt",
+          "phonetic": "HUNT"
+        },
+        "american": {
+          "ipa": "hʌnt",
+          "phonetic": "HUNT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "hypothesis",
+      "pronunciation": {
+        "british": {
+          "ipa": "haɪˈpɒθəsɪs",
+          "phonetic": "hy-POTH-uh-sis"
+        },
+        "american": {
+          "ipa": "haɪˈpɑːθəsɪs",
+          "phonetic": "hy-PAH-thuh-sis"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "hypothetically",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌhaɪpəˈθetɪkəli",
+          "phonetic": "hy-puh-THET-i-kuh-lee"
+        },
+        "american": {
+          "ipa": "ˌhaɪpəˈθetɪkəli",
+          "phonetic": "hy-puh-THET-i-kuh-lee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adv."
+    },
+    {
+      "english": "I",
+      "pronunciation": {
+        "british": {
+          "ipa": "aɪ",
+          "phonetic": "EYE"
+        },
+        "american": {
+          "ipa": "aɪ",
+          "phonetic": "EYE"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "pron."
+    },
+    {
+      "english": "ideally",
+      "pronunciation": {
+        "british": {
+          "ipa": "aɪˈdɪəli",
+          "phonetic": "eye-DEE-uh-lee"
+        },
+        "american": {
+          "ipa": "aɪˈdiːəli",
+          "phonetic": "eye-DEE-uh-lee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adv."
+    },
+    {
+      "english": "identification",
+      "pronunciation": {
+        "british": {
+          "ipa": "aɪˌdentɪfɪˈkeɪʃən",
+          "phonetic": "eye-den-ti-fi-KAY-shun"
+        },
+        "american": {
+          "ipa": "aɪˌdentɪfɪˈkeɪʃən",
+          "phonetic": "eye-den-ti-fi-KAY-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "impossible",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪmˈpɒsəbəl",
+          "phonetic": "im-POS-uh-bul"
+        },
+        "american": {
+          "ipa": "ɪmˈpɑːsəbəl",
+          "phonetic": "im-PAH-suh-bul"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "increasingly",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈkriːsɪŋli",
+          "phonetic": "in-KREE-sing-lee"
+        },
+        "american": {
+          "ipa": "ɪnˈkriːsɪŋli",
+          "phonetic": "in-KREE-sing-lee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adv."
+    },
+    {
+      "english": "Indian",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪndiən",
+          "phonetic": "IN-dee-un"
+        },
+        "american": {
+          "ipa": "ˈɪndiən",
+          "phonetic": "IN-dee-un"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "induction",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈdʌkʃən",
+          "phonetic": "in-DUK-shun"
+        },
+        "american": {
+          "ipa": "ɪnˈdʌkʃən",
+          "phonetic": "in-DUK-shun"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "industries",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪndəstriz",
+          "phonetic": "IN-duh-streez"
+        },
+        "american": {
+          "ipa": "ˈɪndəstriz",
+          "phonetic": "IN-duh-streez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "infinite",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪnfɪnət",
+          "phonetic": "IN-fi-nut"
+        },
+        "american": {
+          "ipa": "ˈɪnfɪnət",
+          "phonetic": "IN-fi-nut"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "ingredients",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈɡriːdiənts",
+          "phonetic": "in-GREE-dee-unts"
+        },
+        "american": {
+          "ipa": "ɪnˈɡriːdiənts",
+          "phonetic": "in-GREE-dee-unts"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "insufficient",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌɪnsəˈfɪʃənt",
+          "phonetic": "in-suh-FISH-unt"
+        },
+        "american": {
+          "ipa": "ˌɪnsəˈfɪʃənt",
+          "phonetic": "in-suh-FISH-unt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "intelligence",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈtelɪdʒəns",
+          "phonetic": "in-TEL-i-junss"
+        },
+        "american": {
+          "ipa": "ɪnˈtelɪdʒəns",
+          "phonetic": "in-TEL-i-junss"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "internet",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪntənet",
+          "phonetic": "IN-tuh-net"
+        },
+        "american": {
+          "ipa": "ˈɪntərnet",
+          "phonetic": "IN-tur-net"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "into",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪntuː",
+          "phonetic": "IN-too"
+        },
+        "american": {
+          "ipa": "ˈɪntuː",
+          "phonetic": "IN-too"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "prep."
+    },
+    {
+      "english": "invention",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈvenʃən",
+          "phonetic": "in-VEN-shun"
+        },
+        "american": {
+          "ipa": "ɪnˈvenʃən",
+          "phonetic": "in-VEN-shun"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "involved",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪnˈvɒlvd",
+          "phonetic": "in-VOLVD"
+        },
+        "american": {
+          "ipa": "ɪnˈvɑːlvd",
+          "phonetic": "in-VAHLVD"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "is",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɪz",
+          "phonetic": "IZ"
+        },
+        "american": {
+          "ipa": "ɪz",
+          "phonetic": "IZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "islands",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈaɪləndz",
+          "phonetic": "EYE-lundz"
+        },
+        "american": {
+          "ipa": "ˈaɪləndz",
+          "phonetic": "EYE-lundz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "issued",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɪʃuːd",
+          "phonetic": "ISH-ood"
+        },
+        "american": {
+          "ipa": "ˈɪʃuːd",
+          "phonetic": "ISH-ood"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "join",
+      "pronunciation": {
+        "british": {
+          "ipa": "dʒɔɪn",
+          "phonetic": "JOYN"
+        },
+        "american": {
+          "ipa": "dʒɔɪn",
+          "phonetic": "JOYN"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "journalism",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdʒɜːnəlɪzəm",
+          "phonetic": "JUR-nuh-liz-um"
+        },
+        "american": {
+          "ipa": "ˈdʒɜːrnəlɪzəm",
+          "phonetic": "JUR-nuh-liz-um"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "jury",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈdʒʊəri",
+          "phonetic": "JOOR-ee"
+        },
+        "american": {
+          "ipa": "ˈdʒʊri",
+          "phonetic": "JOOR-ee"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "keeping",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkiːpɪŋ",
+          "phonetic": "KEE-ping"
+        },
+        "american": {
+          "ipa": "ˈkiːpɪŋ",
+          "phonetic": "KEE-ping"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "Kingdom",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈkɪŋdəm",
+          "phonetic": "KING-dum"
+        },
+        "american": {
+          "ipa": "ˈkɪŋdəm",
+          "phonetic": "KING-dum"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "lab",
+      "pronunciation": {
+        "british": {
+          "ipa": "læb",
+          "phonetic": "LAB"
+        },
+        "american": {
+          "ipa": "læb",
+          "phonetic": "LAB"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "lack",
+      "pronunciation": {
+        "british": {
+          "ipa": "læk",
+          "phonetic": "LAK"
+        },
+        "american": {
+          "ipa": "læk",
+          "phonetic": "LAK"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "larger",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlɑːdʒə",
+          "phonetic": "LAH-juh"
+        },
+        "american": {
+          "ipa": "ˈlɑːrdʒər",
+          "phonetic": "LAR-jur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "lectures",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlektʃəz",
+          "phonetic": "LEK-chuz"
+        },
+        "american": {
+          "ipa": "ˈlektʃərz",
+          "phonetic": "LEK-churz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "library",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlaɪbrəri",
+          "phonetic": "LY-bruh-ree"
+        },
+        "american": {
+          "ipa": "ˈlaɪbreri",
+          "phonetic": "LY-brer-ee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "located",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈləʊkeɪtɪd",
+          "phonetic": "LOH-kay-tid"
+        },
+        "american": {
+          "ipa": "ˈloʊkeɪtɪd",
+          "phonetic": "LOH-kay-tid"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "logging",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlɒɡɪŋ",
+          "phonetic": "LOG-ing"
+        },
+        "american": {
+          "ipa": "ˈlɑːɡɪŋ",
+          "phonetic": "LAH-ging"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "London",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈlʌndən",
+          "phonetic": "LUN-dun"
+        },
+        "american": {
+          "ipa": "ˈlʌndən",
+          "phonetic": "LUN-dun"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "look",
+      "pronunciation": {
+        "british": {
+          "ipa": "lʊk",
+          "phonetic": "LUUK"
+        },
+        "american": {
+          "ipa": "lʊk",
+          "phonetic": "LUUK"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "lot",
+      "pronunciation": {
+        "british": {
+          "ipa": "lɒt",
+          "phonetic": "LOT"
+        },
+        "american": {
+          "ipa": "lɑːt",
+          "phonetic": "LAHT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "lower",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈləʊə",
+          "phonetic": "LOH-uh"
+        },
+        "american": {
+          "ipa": "ˈloʊər",
+          "phonetic": "LOH-ur"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "machines",
+      "pronunciation": {
+        "british": {
+          "ipa": "məˈʃiːnz",
+          "phonetic": "muh-SHEENZ"
+        },
+        "american": {
+          "ipa": "məˈʃiːnz",
+          "phonetic": "muh-SHEENZ"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "main",
+      "pronunciation": {
+        "british": {
+          "ipa": "meɪn",
+          "phonetic": "MAYN"
+        },
+        "american": {
+          "ipa": "meɪn",
+          "phonetic": "MAYN"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "manufacturing",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌmænjʊˈfæktʃərɪŋ",
+          "phonetic": "man-yoo-FAK-chuh-ring"
+        },
+        "american": {
+          "ipa": "ˌmænjəˈfæktʃərɪŋ",
+          "phonetic": "man-yuh-FAK-chur-ing"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "mark",
+      "pronunciation": {
+        "british": {
+          "ipa": "mɑːk",
+          "phonetic": "MAHK"
+        },
+        "american": {
+          "ipa": "mɑːrk",
+          "phonetic": "MARK"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "marks",
+      "pronunciation": {
+        "british": {
+          "ipa": "mɑːks",
+          "phonetic": "MAHKS"
+        },
+        "american": {
+          "ipa": "mɑːrks",
+          "phonetic": "MARKS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "master",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmɑːstə",
+          "phonetic": "MAH-stuh"
+        },
+        "american": {
+          "ipa": "ˈmæstər",
+          "phonetic": "MAS-tur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "me",
+      "pronunciation": {
+        "british": {
+          "ipa": "miː",
+          "phonetic": "MEE"
+        },
+        "american": {
+          "ipa": "miː",
+          "phonetic": "MEE"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "pron."
+    },
+    {
+      "english": "medicine",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmedsɪn",
+          "phonetic": "MED-sin"
+        },
+        "american": {
+          "ipa": "ˈmedəsən",
+          "phonetic": "MED-uh-sun"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "meteorology",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌmiːtiəˈrɒlədʒi",
+          "phonetic": "mee-tee-uh-ROL-uh-jee"
+        },
+        "american": {
+          "ipa": "ˌmiːtiəˈrɑːlədʒi",
+          "phonetic": "mee-tee-uh-RAH-luh-jee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "minimal",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmɪnɪməl",
+          "phonetic": "MIN-i-mul"
+        },
+        "american": {
+          "ipa": "ˈmɪnɪməl",
+          "phonetic": "MIN-i-mul"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "missing",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmɪsɪŋ",
+          "phonetic": "MIS-ing"
+        },
+        "american": {
+          "ipa": "ˈmɪsɪŋ",
+          "phonetic": "MIS-ing"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "monarchy",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmɒnəki",
+          "phonetic": "MON-uh-kee"
+        },
+        "american": {
+          "ipa": "ˈmɑːnərki",
+          "phonetic": "MAH-nur-kee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "Monday",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmʌndeɪ",
+          "phonetic": "MUN-day"
+        },
+        "american": {
+          "ipa": "ˈmʌndeɪ",
+          "phonetic": "MUN-day"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "Mondays",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈmʌndeɪz",
+          "phonetic": "MUN-dayz"
+        },
+        "american": {
+          "ipa": "ˈmʌndeɪz",
+          "phonetic": "MUN-dayz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "moot",
+      "pronunciation": {
+        "british": {
+          "ipa": "muːt",
+          "phonetic": "MOOT"
+        },
+        "american": {
+          "ipa": "muːt",
+          "phonetic": "MOOT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "det. my",
+      "pronunciation": {
+        "british": {
+          "ipa": "maɪ",
+          "phonetic": "MY"
+        },
+        "american": {
+          "ipa": "maɪ",
+          "phonetic": "MY"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd"
+    },
+    {
+      "english": "national",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈnæʃənəl",
+          "phonetic": "NASH-uh-nul"
+        },
+        "american": {
+          "ipa": "ˈnæʃənəl",
+          "phonetic": "NASH-uh-nul"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "necessary",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈnesəsəri",
+          "phonetic": "NES-uh-suh-ree"
+        },
+        "american": {
+          "ipa": "ˈnesəseri",
+          "phonetic": "NES-uh-ser-ee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "news",
+      "pronunciation": {
+        "british": {
+          "ipa": "njuːz",
+          "phonetic": "NYOOZ"
+        },
+        "american": {
+          "ipa": "nuːz",
+          "phonetic": "NOOZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "newspapers",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈnjuːzpeɪpəz",
+          "phonetic": "NYOOZ-pay-puz"
+        },
+        "american": {
+          "ipa": "ˈnuːzpeɪpərz",
+          "phonetic": "NOOZ-pay-purz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "night",
+      "pronunciation": {
+        "british": {
+          "ipa": "naɪt",
+          "phonetic": "NYT"
+        },
+        "american": {
+          "ipa": "naɪt",
+          "phonetic": "NYT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "nine",
+      "pronunciation": {
+        "british": {
+          "ipa": "naɪn",
+          "phonetic": "NYN"
+        },
+        "american": {
+          "ipa": "naɪn",
+          "phonetic": "NYN"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "num."
+    },
+    {
+      "english": "det. no",
+      "pronunciation": {
+        "british": {
+          "ipa": "nəʊ",
+          "phonetic": "NOH"
+        },
+        "american": {
+          "ipa": "noʊ",
+          "phonetic": "NOH"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd"
+    },
+    {
+      "english": "nuclear",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈnjuːkliə",
+          "phonetic": "NYOO-klee-uh"
+        },
+        "american": {
+          "ipa": "ˈnuːkliər",
+          "phonetic": "NOO-klee-ur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "o'clock",
+      "pronunciation": {
+        "british": {
+          "ipa": "əˈklɒk",
+          "phonetic": "uh-KLOK"
+        },
+        "american": {
+          "ipa": "əˈklɑːk",
+          "phonetic": "uh-KLAHK"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adv."
+    },
+    {
+      "english": "of",
+      "pronunciation": {
+        "british": {
+          "ipa": "əv",
+          "phonetic": "UV"
+        },
+        "american": {
+          "ipa": "əv",
+          "phonetic": "UV"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "prep."
+    },
+    {
+      "english": "officer",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɒfɪsə",
+          "phonetic": "OF-i-suh"
+        },
+        "american": {
+          "ipa": "ˈɔːfɪsər",
+          "phonetic": "AW-fi-sur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "on",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɒn",
+          "phonetic": "ON"
+        },
+        "american": {
+          "ipa": "ɑːn",
+          "phonetic": "AHN"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "prep."
+    },
+    {
+      "english": "opens",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈəʊpənz",
+          "phonetic": "OH-punz"
+        },
+        "american": {
+          "ipa": "ˈoʊpənz",
+          "phonetic": "OH-punz"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "opportunities",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌɒpəˈtjuːnətiz",
+          "phonetic": "op-uh-TYOO-nuh-teez"
+        },
+        "american": {
+          "ipa": "ˌɑːpərˈtuːnətiz",
+          "phonetic": "ah-pur-TOO-nuh-teez"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "options",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɒpʃənz",
+          "phonetic": "OP-shunz"
+        },
+        "american": {
+          "ipa": "ˈɑːpʃənz",
+          "phonetic": "AHP-shunz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "or",
+      "pronunciation": {
+        "british": {
+          "ipa": "ɔː",
+          "phonetic": "OR"
+        },
+        "american": {
+          "ipa": "ɔːr",
+          "phonetic": "OR"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "conj."
+    },
+    {
+      "english": "orange",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɒrɪndʒ",
+          "phonetic": "OR-inj"
+        },
+        "american": {
+          "ipa": "ˈɔːrɪndʒ",
+          "phonetic": "OR-inj"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "organized",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɔːɡənaɪzd",
+          "phonetic": "OR-guh-nyzd"
+        },
+        "american": {
+          "ipa": "ˈɔːrɡənaɪzd",
+          "phonetic": "OR-guh-nyzd"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "outline",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈaʊtlaɪn",
+          "phonetic": "OWT-lyn"
+        },
+        "american": {
+          "ipa": "ˈaʊtlaɪn",
+          "phonetic": "OWT-lyn"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "outputs",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈaʊtpʊts",
+          "phonetic": "OWT-puuts"
+        },
+        "american": {
+          "ipa": "ˈaʊtpʊts",
+          "phonetic": "OWT-puuts"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "outstripped",
+      "pronunciation": {
+        "british": {
+          "ipa": "aʊtˈstrɪpt",
+          "phonetic": "owt-STRIPT"
+        },
+        "american": {
+          "ipa": "aʊtˈstrɪpt",
+          "phonetic": "owt-STRIPT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "overcrowding",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌəʊvəˈkraʊdɪŋ",
+          "phonetic": "oh-vuh-KROW-ding"
+        },
+        "american": {
+          "ipa": "ˌoʊvərˈkraʊdɪŋ",
+          "phonetic": "oh-vur-KROW-ding"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "overwhelming",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌəʊvəˈwelmɪŋ",
+          "phonetic": "oh-vuh-WEL-ming"
+        },
+        "american": {
+          "ipa": "ˌoʊvərˈwelmɪŋ",
+          "phonetic": "oh-vur-WEL-ming"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "oxygenated",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈɒksɪdʒəneɪtɪd",
+          "phonetic": "OK-si-juh-nay-tid"
+        },
+        "american": {
+          "ipa": "ˈɑːksɪdʒəneɪtɪd",
+          "phonetic": "AHK-si-juh-nay-tid"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "pack",
+      "pronunciation": {
+        "british": {
+          "ipa": "pæk",
+          "phonetic": "PAK"
+        },
+        "american": {
+          "ipa": "pæk",
+          "phonetic": "PAK"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "panel",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpænəl",
+          "phonetic": "PAN-ul"
+        },
+        "american": {
+          "ipa": "ˈpænəl",
+          "phonetic": "PAN-ul"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "parliamentary",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌpɑːləˈmentəri",
+          "phonetic": "pah-luh-MEN-tuh-ree"
+        },
+        "american": {
+          "ipa": "ˌpɑːrləˈmenteri",
+          "phonetic": "par-luh-MEN-ter-ee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "part",
+      "pronunciation": {
+        "british": {
+          "ipa": "pɑːt",
+          "phonetic": "PAHT"
+        },
+        "american": {
+          "ipa": "pɑːrt",
+          "phonetic": "PART"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "participate",
+      "pronunciation": {
+        "british": {
+          "ipa": "pɑːˈtɪsɪpeɪt",
+          "phonetic": "pah-TIS-i-payt"
+        },
+        "american": {
+          "ipa": "pɑːrˈtɪsɪpeɪt",
+          "phonetic": "par-TIS-i-payt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "partners",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpɑːtnəz",
+          "phonetic": "PAHT-nuz"
+        },
+        "american": {
+          "ipa": "ˈpɑːrtnərz",
+          "phonetic": "PART-nurz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "partnerships",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpɑːtnəʃɪps",
+          "phonetic": "PAHT-nuh-ships"
+        },
+        "american": {
+          "ipa": "ˈpɑːrtnərʃɪps",
+          "phonetic": "PART-nur-ships"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "pass",
+      "pronunciation": {
+        "british": {
+          "ipa": "pɑːs",
+          "phonetic": "PAHS"
+        },
+        "american": {
+          "ipa": "pæs",
+          "phonetic": "PAS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "per",
+      "pronunciation": {
+        "british": {
+          "ipa": "pɜː",
+          "phonetic": "PUR"
+        },
+        "american": {
+          "ipa": "pɜːr",
+          "phonetic": "PUR"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "prep."
+    },
+    {
+      "english": "periodical",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌpɪəriˈɒdɪkəl",
+          "phonetic": "peer-ee-OD-i-kul"
+        },
+        "american": {
+          "ipa": "ˌpɪriˈɑːdɪkəl",
+          "phonetic": "peer-ee-AH-di-kul"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "permit",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpɜːmɪt",
+          "phonetic": "PUR-mit"
+        },
+        "american": {
+          "ipa": "ˈpɜːrmɪt",
+          "phonetic": "PUR-mit"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "phenomenon",
+      "pronunciation": {
+        "british": {
+          "ipa": "fəˈnɒmɪnən",
+          "phonetic": "fuh-NOM-i-nun"
+        },
+        "american": {
+          "ipa": "fəˈnɑːmɪnɑːn",
+          "phonetic": "fuh-NAH-muh-nahn"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "photography",
+      "pronunciation": {
+        "british": {
+          "ipa": "fəˈtɒɡrəfi",
+          "phonetic": "fuh-TOG-ruh-fee"
+        },
+        "american": {
+          "ipa": "fəˈtɑːɡrəfi",
+          "phonetic": "fuh-TAH-gruh-fee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "pinch",
+      "pronunciation": {
+        "british": {
+          "ipa": "pɪntʃ",
+          "phonetic": "PINCH"
+        },
+        "american": {
+          "ipa": "pɪntʃ",
+          "phonetic": "PINCH"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "plagiarism",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpleɪdʒərɪzəm",
+          "phonetic": "PLAY-juh-riz-um"
+        },
+        "american": {
+          "ipa": "ˈpleɪdʒərɪzəm",
+          "phonetic": "PLAY-juh-riz-um"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "pose",
+      "pronunciation": {
+        "british": {
+          "ipa": "pəʊz",
+          "phonetic": "POHZ"
+        },
+        "american": {
+          "ipa": "poʊz",
+          "phonetic": "POHZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "postgraduate",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌpəʊstˈɡrædʒʊət",
+          "phonetic": "pohst-GRAJ-oo-ut"
+        },
+        "american": {
+          "ipa": "ˌpoʊstˈɡrædʒuət",
+          "phonetic": "pohst-GRAJ-oo-ut"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "preliminary",
+      "pronunciation": {
+        "british": {
+          "ipa": "prɪˈlɪmɪnəri",
+          "phonetic": "pri-LIM-i-nuh-ree"
+        },
+        "american": {
+          "ipa": "prɪˈlɪmɪneri",
+          "phonetic": "pri-LIM-i-ner-ee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "present",
+      "pronunciation": {
+        "british": {
+          "ipa": "prɪˈzent",
+          "phonetic": "pri-ZENT"
+        },
+        "american": {
+          "ipa": "prɪˈzent",
+          "phonetic": "pri-ZENT"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "president",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈprezɪdənt",
+          "phonetic": "PREZ-i-dunt"
+        },
+        "american": {
+          "ipa": "ˈprezɪdənt",
+          "phonetic": "PREZ-i-dunt"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "price",
+      "pronunciation": {
+        "british": {
+          "ipa": "praɪs",
+          "phonetic": "PRYSE"
+        },
+        "american": {
+          "ipa": "praɪs",
+          "phonetic": "PRYSE"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "printers",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈprɪntəz",
+          "phonetic": "PRIN-tuz"
+        },
+        "american": {
+          "ipa": "ˈprɪntərz",
+          "phonetic": "PRIN-turz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "prior",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈpraɪə",
+          "phonetic": "PRY-uh"
+        },
+        "american": {
+          "ipa": "ˈpraɪər",
+          "phonetic": "PRY-ur"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "professor",
+      "pronunciation": {
+        "british": {
+          "ipa": "prəˈfesə",
+          "phonetic": "pruh-FES-uh"
+        },
+        "american": {
+          "ipa": "prəˈfesər",
+          "phonetic": "pruh-FES-ur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "programs",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈprəʊɡræmz",
+          "phonetic": "PROH-gramz"
+        },
+        "american": {
+          "ipa": "ˈproʊɡræmz",
+          "phonetic": "PROH-gramz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "project",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈprɒdʒekt",
+          "phonetic": "PROJ-ekt"
+        },
+        "american": {
+          "ipa": "ˈprɑːdʒekt",
+          "phonetic": "PRAH-jekt"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "provided",
+      "pronunciation": {
+        "british": {
+          "ipa": "prəˈvaɪdɪd",
+          "phonetic": "pruh-VY-did"
+        },
+        "american": {
+          "ipa": "prəˈvaɪdɪd",
+          "phonetic": "pruh-VY-did"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "put",
+      "pronunciation": {
+        "british": {
+          "ipa": "pʊt",
+          "phonetic": "PUUT"
+        },
+        "american": {
+          "ipa": "pʊt",
+          "phonetic": "PUUT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "receive",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈsiːv",
+          "phonetic": "ri-SEEV"
+        },
+        "american": {
+          "ipa": "rɪˈsiːv",
+          "phonetic": "ri-SEEV"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "regarding",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈɡɑːdɪŋ",
+          "phonetic": "ri-GAH-ding"
+        },
+        "american": {
+          "ipa": "rɪˈɡɑːrdɪŋ",
+          "phonetic": "ri-GAR-ding"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "prep."
+    },
+    {
+      "english": "relationships",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈleɪʃənʃɪps",
+          "phonetic": "ri-LAY-shun-ships"
+        },
+        "american": {
+          "ipa": "rɪˈleɪʃənʃɪps",
+          "phonetic": "ri-LAY-shun-ships"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "rendered",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈrendəd",
+          "phonetic": "REN-dud"
+        },
+        "american": {
+          "ipa": "ˈrendərd",
+          "phonetic": "REN-durd"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "renewable",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈnjuːəbəl",
+          "phonetic": "ri-NYOO-uh-bul"
+        },
+        "american": {
+          "ipa": "rɪˈnuːəbəl",
+          "phonetic": "ri-NOO-uh-bul"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "replacement",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈpleɪsmənt",
+          "phonetic": "ri-PLAYS-munt"
+        },
+        "american": {
+          "ipa": "rɪˈpleɪsmənt",
+          "phonetic": "ri-PLAYS-munt"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "reporting",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈpɔːtɪŋ",
+          "phonetic": "ri-POR-ting"
+        },
+        "american": {
+          "ipa": "rɪˈpɔːrtɪŋ",
+          "phonetic": "ri-POR-ting"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "reserve",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈzɜːv",
+          "phonetic": "ri-ZURV"
+        },
+        "american": {
+          "ipa": "rɪˈzɜːrv",
+          "phonetic": "ri-ZURV"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "residence",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈrezɪdəns",
+          "phonetic": "REZ-i-duns"
+        },
+        "american": {
+          "ipa": "ˈrezɪdəns",
+          "phonetic": "REZ-i-duns"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "respond",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈspɒnd",
+          "phonetic": "ri-SPOND"
+        },
+        "american": {
+          "ipa": "rɪˈspɑːnd",
+          "phonetic": "ri-SPAHND"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "returns",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪˈtɜːnz",
+          "phonetic": "ri-TURNZ"
+        },
+        "american": {
+          "ipa": "rɪˈtɜːrnz",
+          "phonetic": "ri-TURNZ"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "risks",
+      "pronunciation": {
+        "british": {
+          "ipa": "rɪsks",
+          "phonetic": "RISKS"
+        },
+        "american": {
+          "ipa": "rɪsks",
+          "phonetic": "RISKS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "Robert",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈrɒbət",
+          "phonetic": "ROB-ut"
+        },
+        "american": {
+          "ipa": "ˈrɑːbərt",
+          "phonetic": "RAH-burt"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "rough",
+      "pronunciation": {
+        "british": {
+          "ipa": "rʌf",
+          "phonetic": "RUF"
+        },
+        "american": {
+          "ipa": "rʌf",
+          "phonetic": "RUF"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "rugby",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈrʌɡbi",
+          "phonetic": "RUG-bee"
+        },
+        "american": {
+          "ipa": "ˈrʌɡbi",
+          "phonetic": "RUG-bee"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "run",
+      "pronunciation": {
+        "british": {
+          "ipa": "rʌn",
+          "phonetic": "RUN"
+        },
+        "american": {
+          "ipa": "rʌn",
+          "phonetic": "RUN"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "said",
+      "pronunciation": {
+        "british": {
+          "ipa": "sed",
+          "phonetic": "SED"
+        },
+        "american": {
+          "ipa": "sed",
+          "phonetic": "SED"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "sandwich",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsænwɪdʒ",
+          "phonetic": "SAN-wij"
+        },
+        "american": {
+          "ipa": "ˈsænwɪtʃ",
+          "phonetic": "SAN-wich"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "sanitary",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsænɪtəri",
+          "phonetic": "SAN-i-tuh-ree"
+        },
+        "american": {
+          "ipa": "ˈsænəteri",
+          "phonetic": "SAN-uh-ter-ee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "scanners",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈskænəz",
+          "phonetic": "SKAN-uz"
+        },
+        "american": {
+          "ipa": "ˈskænərz",
+          "phonetic": "SKAN-urz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "semester",
+      "pronunciation": {
+        "british": {
+          "ipa": "sɪˈmestə",
+          "phonetic": "si-MES-tuh"
+        },
+        "american": {
+          "ipa": "sɪˈmestər",
+          "phonetic": "si-MES-tur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "seminar",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsemɪnɑː",
+          "phonetic": "SEM-i-nah"
+        },
+        "american": {
+          "ipa": "ˈsemɪnɑːr",
+          "phonetic": "SEM-i-nar"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "seminars",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsemɪnɑːz",
+          "phonetic": "SEM-i-nahz"
+        },
+        "american": {
+          "ipa": "ˈsemɪnɑːrz",
+          "phonetic": "SEM-i-narz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "sentences",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsentənsɪz",
+          "phonetic": "SEN-tun-siz"
+        },
+        "american": {
+          "ipa": "ˈsentənsɪz",
+          "phonetic": "SEN-tun-siz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "she",
+      "pronunciation": {
+        "british": {
+          "ipa": "ʃiː",
+          "phonetic": "SHEE"
+        },
+        "american": {
+          "ipa": "ʃiː",
+          "phonetic": "SHEE"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "pron."
+    },
+    {
+      "english": "simple",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɪmpəl",
+          "phonetic": "SIM-pul"
+        },
+        "american": {
+          "ipa": "ˈsɪmpəl",
+          "phonetic": "SIM-pul"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "skill",
+      "pronunciation": {
+        "british": {
+          "ipa": "skɪl",
+          "phonetic": "SKIL"
+        },
+        "american": {
+          "ipa": "skɪl",
+          "phonetic": "SKIL"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "slows",
+      "pronunciation": {
+        "british": {
+          "ipa": "sləʊz",
+          "phonetic": "SLOHZ"
+        },
+        "american": {
+          "ipa": "sloʊz",
+          "phonetic": "SLOHZ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "snack",
+      "pronunciation": {
+        "british": {
+          "ipa": "snæk",
+          "phonetic": "SNAK"
+        },
+        "american": {
+          "ipa": "snæk",
+          "phonetic": "SNAK"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "snowy",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsnəʊi",
+          "phonetic": "SNOH-ee"
+        },
+        "american": {
+          "ipa": "ˈsnoʊi",
+          "phonetic": "SNOH-ee"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "soccer",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsɒkə",
+          "phonetic": "SOK-uh"
+        },
+        "american": {
+          "ipa": "ˈsɑːkər",
+          "phonetic": "SAH-kur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "soil",
+      "pronunciation": {
+        "british": {
+          "ipa": "sɔɪl",
+          "phonetic": "SOYL"
+        },
+        "american": {
+          "ipa": "sɔɪl",
+          "phonetic": "SOYL"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "Soviet",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈsəʊviət",
+          "phonetic": "SOH-vee-ut"
+        },
+        "american": {
+          "ipa": "ˈsoʊviət",
+          "phonetic": "SOH-vee-ut"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "sport",
+      "pronunciation": {
+        "british": {
+          "ipa": "spɔːt",
+          "phonetic": "SPORT"
+        },
+        "american": {
+          "ipa": "spɔːrt",
+          "phonetic": "SPORT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "sports",
+      "pronunciation": {
+        "british": {
+          "ipa": "spɔːts",
+          "phonetic": "SPORTS"
+        },
+        "american": {
+          "ipa": "spɔːrts",
+          "phonetic": "SPORTS"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "spot",
+      "pronunciation": {
+        "british": {
+          "ipa": "spɒt",
+          "phonetic": "SPOT"
+        },
+        "american": {
+          "ipa": "spɑːt",
+          "phonetic": "SPAHT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "spring",
+      "pronunciation": {
+        "british": {
+          "ipa": "sprɪŋ",
+          "phonetic": "SPRING"
+        },
+        "american": {
+          "ipa": "sprɪŋ",
+          "phonetic": "SPRING"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "States",
+      "pronunciation": {
+        "british": {
+          "ipa": "steɪts",
+          "phonetic": "STAYTS"
+        },
+        "american": {
+          "ipa": "steɪts",
+          "phonetic": "STAYTS"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "stay",
+      "pronunciation": {
+        "british": {
+          "ipa": "steɪ",
+          "phonetic": "STAY"
+        },
+        "american": {
+          "ipa": "steɪ",
+          "phonetic": "STAY"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "stronger",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈstrɒŋɡə",
+          "phonetic": "STRONG-guh"
+        },
+        "american": {
+          "ipa": "ˈstrɔːŋɡər",
+          "phonetic": "STRAWNG-gur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "structures",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈstrʌktʃəz",
+          "phonetic": "STRUK-chuz"
+        },
+        "american": {
+          "ipa": "ˈstrʌktʃərz",
+          "phonetic": "STRUK-churz"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "submit",
+      "pronunciation": {
+        "british": {
+          "ipa": "səbˈmɪt",
+          "phonetic": "sub-MIT"
+        },
+        "american": {
+          "ipa": "səbˈmɪt",
+          "phonetic": "sub-MIT"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "submitted",
+      "pronunciation": {
+        "british": {
+          "ipa": "səbˈmɪtɪd",
+          "phonetic": "sub-MIT-id"
+        },
+        "american": {
+          "ipa": "səbˈmɪtɪd",
+          "phonetic": "sub-MIT-id"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "successful",
+      "pronunciation": {
+        "british": {
+          "ipa": "səkˈsesfəl",
+          "phonetic": "suk-SES-ful"
+        },
+        "american": {
+          "ipa": "səkˈsesfəl",
+          "phonetic": "suk-SES-ful"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "systematically",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌsɪstəˈmætɪkəli",
+          "phonetic": "sis-tuh-MAT-i-kuh-lee"
+        },
+        "american": {
+          "ipa": "ˌsɪstəˈmætɪkəli",
+          "phonetic": "sis-tuh-MAT-i-kuh-lee"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adv."
+    },
+    {
+      "english": "table",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈteɪbəl",
+          "phonetic": "TAY-bul"
+        },
+        "american": {
+          "ipa": "ˈteɪbəl",
+          "phonetic": "TAY-bul"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "takes",
+      "pronunciation": {
+        "british": {
+          "ipa": "teɪks",
+          "phonetic": "TAYKS"
+        },
+        "american": {
+          "ipa": "teɪks",
+          "phonetic": "TAYKS"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "teaching",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtiːtʃɪŋ",
+          "phonetic": "TEE-ching"
+        },
+        "american": {
+          "ipa": "ˈtiːtʃɪŋ",
+          "phonetic": "TEE-ching"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "technique",
+      "pronunciation": {
+        "british": {
+          "ipa": "tekˈniːk",
+          "phonetic": "tek-NEEK"
+        },
+        "american": {
+          "ipa": "tekˈniːk",
+          "phonetic": "tek-NEEK"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "television",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtelɪvɪʒən",
+          "phonetic": "TEL-i-vizh-un"
+        },
+        "american": {
+          "ipa": "ˈtelɪvɪʒən",
+          "phonetic": "TEL-i-vizh-un"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "tennis",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtenɪs",
+          "phonetic": "TEN-is"
+        },
+        "american": {
+          "ipa": "ˈtenɪs",
+          "phonetic": "TEN-is"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "tested",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtestɪd",
+          "phonetic": "TES-tid"
+        },
+        "american": {
+          "ipa": "ˈtestɪd",
+          "phonetic": "TES-tid"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "that",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðæt",
+          "phonetic": "THAT"
+        },
+        "american": {
+          "ipa": "ðæt",
+          "phonetic": "THAT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "conj."
+    },
+    {
+      "english": "art. the",
+      "pronunciation": {
+        "british": {
+          "ipa": "ðə",
+          "phonetic": "THUH"
+        },
+        "american": {
+          "ipa": "ðə",
+          "phonetic": "THUH"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd"
+    },
+    {
+      "english": "theatre",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈθɪətə",
+          "phonetic": "THEE-uh-tuh"
+        },
+        "american": {
+          "ipa": "ˈθiːətər",
+          "phonetic": "THEE-uh-tur"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "theory",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈθɪəri",
+          "phonetic": "THEER-ee"
+        },
+        "american": {
+          "ipa": "ˈθiːəri",
+          "phonetic": "THEER-ee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "throughout",
+      "pronunciation": {
+        "british": {
+          "ipa": "θruːˈaʊt",
+          "phonetic": "throo-OWT"
+        },
+        "american": {
+          "ipa": "θruːˈaʊt",
+          "phonetic": "throo-OWT"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "prep."
+    },
+    {
+      "english": "Thursdays",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈθɜːzdeɪz",
+          "phonetic": "THURZ-dayz"
+        },
+        "american": {
+          "ipa": "ˈθɜːrzdeɪz",
+          "phonetic": "THURZ-dayz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "to",
+      "pronunciation": {
+        "british": {
+          "ipa": "tuː",
+          "phonetic": "TOO"
+        },
+        "american": {
+          "ipa": "tuː",
+          "phonetic": "TOO"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "prep."
+    },
+    {
+      "english": "tomatoes",
+      "pronunciation": {
+        "british": {
+          "ipa": "təˈmɑːtəʊz",
+          "phonetic": "tuh-MAH-tohz"
+        },
+        "american": {
+          "ipa": "təˈmeɪtoʊz",
+          "phonetic": "tuh-MAY-tohz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "topic",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtɒpɪk",
+          "phonetic": "TOP-ik"
+        },
+        "american": {
+          "ipa": "ˈtɑːpɪk",
+          "phonetic": "TAH-pik"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "tour",
+      "pronunciation": {
+        "british": {
+          "ipa": "tʊə",
+          "phonetic": "TOOR"
+        },
+        "american": {
+          "ipa": "tʊr",
+          "phonetic": "TOOR"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "trading",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtreɪdɪŋ",
+          "phonetic": "TRAY-ding"
+        },
+        "american": {
+          "ipa": "ˈtreɪdɪŋ",
+          "phonetic": "TRAY-ding"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "traditional",
+      "pronunciation": {
+        "british": {
+          "ipa": "trəˈdɪʃənəl",
+          "phonetic": "truh-DISH-uh-nul"
+        },
+        "american": {
+          "ipa": "trəˈdɪʃənəl",
+          "phonetic": "truh-DISH-uh-nul"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "transmission",
+      "pronunciation": {
+        "british": {
+          "ipa": "trænzˈmɪʃən",
+          "phonetic": "tranz-MISH-un"
+        },
+        "american": {
+          "ipa": "trænzˈmɪʃən",
+          "phonetic": "tranz-MISH-un"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "traumatic",
+      "pronunciation": {
+        "british": {
+          "ipa": "trɔːˈmætɪk",
+          "phonetic": "traw-MAT-ik"
+        },
+        "american": {
+          "ipa": "trəˈmætɪk",
+          "phonetic": "truh-MAT-ik"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "trouble",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtrʌbəl",
+          "phonetic": "TRUB-ul"
+        },
+        "american": {
+          "ipa": "ˈtrʌbəl",
+          "phonetic": "TRUB-ul"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "try",
+      "pronunciation": {
+        "british": {
+          "ipa": "traɪ",
+          "phonetic": "TRY"
+        },
+        "american": {
+          "ipa": "traɪ",
+          "phonetic": "TRY"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "Tuesdays",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtjuːzdeɪz",
+          "phonetic": "TYOOZ-dayz"
+        },
+        "american": {
+          "ipa": "ˈtuːzdeɪz",
+          "phonetic": "TOOZ-dayz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "tutorials",
+      "pronunciation": {
+        "british": {
+          "ipa": "tjuːˈtɔːriəlz",
+          "phonetic": "tyoo-TOR-ee-ulz"
+        },
+        "american": {
+          "ipa": "tuːˈtɔːriəlz",
+          "phonetic": "too-TOR-ee-ulz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "twentieth",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtwentiəθ",
+          "phonetic": "TWEN-tee-uth"
+        },
+        "american": {
+          "ipa": "ˈtwentiəθ",
+          "phonetic": "TWEN-tee-uth"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "twenty",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈtwenti",
+          "phonetic": "TWEN-tee"
+        },
+        "american": {
+          "ipa": "ˈtwenti",
+          "phonetic": "TWEN-tee"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "num."
+    },
+    {
+      "english": "twenty-eighth",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌtwenti ˈeɪtθ",
+          "phonetic": "twen-tee AYTTH"
+        },
+        "american": {
+          "ipa": "ˌtwenti ˈeɪtθ",
+          "phonetic": "twen-tee AYTTH"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "typed",
+      "pronunciation": {
+        "british": {
+          "ipa": "taɪpt",
+          "phonetic": "TYPT"
+        },
+        "american": {
+          "ipa": "taɪpt",
+          "phonetic": "TYPT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "undergraduate",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌʌndəˈɡrædʒʊət",
+          "phonetic": "un-duh-GRAJ-oo-ut"
+        },
+        "american": {
+          "ipa": "ˌʌndərˈɡrædʒuət",
+          "phonetic": "un-dur-GRAJ-oo-ut"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "United",
+      "pronunciation": {
+        "british": {
+          "ipa": "juːˈnaɪtɪd",
+          "phonetic": "yoo-NY-tid"
+        },
+        "american": {
+          "ipa": "juːˈnaɪtɪd",
+          "phonetic": "yoo-NY-tid"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "upcoming",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈʌpkʌmɪŋ",
+          "phonetic": "UP-kum-ing"
+        },
+        "american": {
+          "ipa": "ˈʌpkʌmɪŋ",
+          "phonetic": "UP-kum-ing"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "urbanization",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˌɜːbənaɪˈzeɪʃən",
+          "phonetic": "ur-buh-ny-ZAY-shun"
+        },
+        "american": {
+          "ipa": "ˌɜːrbənəˈzeɪʃən",
+          "phonetic": "ur-buh-nuh-ZAY-shun"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "used",
+      "pronunciation": {
+        "british": {
+          "ipa": "juːzd",
+          "phonetic": "YOOZD"
+        },
+        "american": {
+          "ipa": "juːzd",
+          "phonetic": "YOOZD"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "vacation",
+      "pronunciation": {
+        "british": {
+          "ipa": "vəˈkeɪʃən",
+          "phonetic": "vuh-KAY-shun"
+        },
+        "american": {
+          "ipa": "veɪˈkeɪʃən",
+          "phonetic": "vay-KAY-shun"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "valleys",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈvæliz",
+          "phonetic": "VAL-eez"
+        },
+        "american": {
+          "ipa": "ˈvæliz",
+          "phonetic": "VAL-eez"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "vary",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈveəri",
+          "phonetic": "VAIR-ee"
+        },
+        "american": {
+          "ipa": "ˈveri",
+          "phonetic": "VAIR-ee"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "vegan",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈviːɡən",
+          "phonetic": "VEE-gun"
+        },
+        "american": {
+          "ipa": "ˈviːɡən",
+          "phonetic": "VEE-gun"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "verdict",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈvɜːdɪkt",
+          "phonetic": "VUR-dikt"
+        },
+        "american": {
+          "ipa": "ˈvɜːrdɪkt",
+          "phonetic": "VUR-dikt"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "view",
+      "pronunciation": {
+        "british": {
+          "ipa": "vjuː",
+          "phonetic": "VYOO"
+        },
+        "american": {
+          "ipa": "vjuː",
+          "phonetic": "VYOO"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "virus",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈvaɪərəs",
+          "phonetic": "VY-russ"
+        },
+        "american": {
+          "ipa": "ˈvaɪrəs",
+          "phonetic": "VY-russ"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "visiting",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈvɪzɪtɪŋ",
+          "phonetic": "VIZ-i-ting"
+        },
+        "american": {
+          "ipa": "ˈvɪzɪtɪŋ",
+          "phonetic": "VIZ-i-ting"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "vote",
+      "pronunciation": {
+        "british": {
+          "ipa": "vəʊt",
+          "phonetic": "VOHT"
+        },
+        "american": {
+          "ipa": "voʊt",
+          "phonetic": "VOHT"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "aux. we've",
+      "pronunciation": {
+        "british": {
+          "ipa": "wiːv",
+          "phonetic": "WEEV"
+        },
+        "american": {
+          "ipa": "wiːv",
+          "phonetic": "WEEV"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd"
+    },
+    {
+      "english": "week",
+      "pronunciation": {
+        "british": {
+          "ipa": "wiːk",
+          "phonetic": "WEEK"
+        },
+        "american": {
+          "ipa": "wiːk",
+          "phonetic": "WEEK"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "welcomes",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈwelkəmz",
+          "phonetic": "WEL-kumz"
+        },
+        "american": {
+          "ipa": "ˈwelkəmz",
+          "phonetic": "WEL-kumz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "v."
+    },
+    {
+      "english": "welcoming",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈwelkəmɪŋ",
+          "phonetic": "WEL-kum-ing"
+        },
+        "american": {
+          "ipa": "ˈwelkəmɪŋ",
+          "phonetic": "WEL-kum-ing"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adj."
+    },
+    {
+      "english": "welfare",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈwelfeə",
+          "phonetic": "WEL-fair"
+        },
+        "american": {
+          "ipa": "ˈwelfer",
+          "phonetic": "WEL-fair"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "why",
+      "pronunciation": {
+        "british": {
+          "ipa": "waɪ",
+          "phonetic": "WY"
+        },
+        "american": {
+          "ipa": "waɪ",
+          "phonetic": "WY"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "adv."
+    },
+    {
+      "english": "woman",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈwʊmən",
+          "phonetic": "WUUM-un"
+        },
+        "american": {
+          "ipa": "ˈwʊmən",
+          "phonetic": "WUUM-un"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "workers",
+      "pronunciation": {
+        "british": {
+          "ipa": "ˈwɜːkəz",
+          "phonetic": "WUR-kuz"
+        },
+        "american": {
+          "ipa": "ˈwɜːrkərz",
+          "phonetic": "WUR-kurz"
+        }
+      },
+      "difficulty": "normal",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "n."
+    },
+    {
+      "english": "aux. would",
+      "pronunciation": {
+        "british": {
+          "ipa": "wʊd",
+          "phonetic": "WUUD"
+        },
+        "american": {
+          "ipa": "wʊd",
+          "phonetic": "WUUD"
+        }
+      },
+      "difficulty": "hard",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd"
+    },
+    {
+      "english": "yes",
+      "pronunciation": {
+        "british": {
+          "ipa": "jes",
+          "phonetic": "YES"
+        },
+        "american": {
+          "ipa": "jes",
+          "phonetic": "YES"
+        }
+      },
+      "difficulty": "easy",
+      "category": "pte-my-rs-wfd",
+      "source": "pte-my-rs-wfd",
+      "wordType": "interj."
+    }
+  ]
 }

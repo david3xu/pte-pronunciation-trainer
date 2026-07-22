@@ -232,7 +232,7 @@ export class AppConfig {
       // ===== VOICE & LANGUAGE SETTINGS =====
       voice: {
         // Default voice settings for Azure AI Speech.
-        defaultVoiceId: 'en-AU-NatashaNeural',
+        defaultVoiceId: 'en-AU-WilliamNeural',
         defaultEngine: 'neural',
         defaultLanguage: 'en-AU',
 

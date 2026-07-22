@@ -293,13 +293,13 @@ export interface TTSConfig {
    ============================================ */
 
 /**
- * Voice and language settings for AWS Polly
+ * Voice and language settings for Azure AI Speech
  */
 export interface VoiceConfig {
   defaultVoiceId: string;
   defaultEngine: string;
   defaultLanguage: string;
-  awsRegion: string;
+  azureRegion: string;
 }
 
 /* ============================================

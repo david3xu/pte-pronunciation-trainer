@@ -231,18 +231,18 @@ export class AppConfig {
 
       // ===== VOICE & LANGUAGE SETTINGS =====
       voice: {
-        // Default voice settings for AWS Polly
-        defaultVoiceId: 'Russell',
+        // Default voice settings for Azure AI Speech.
+        defaultVoiceId: 'en-AU-NatashaNeural',
         defaultEngine: 'neural',
         defaultLanguage: 'en-AU',
 
-        // AWS settings. The authoritative region is server-side (api/); this
+        // The authoritative Azure Speech region is server-side (api/); this
         // client-side value is informational and only overridable via a VITE var.
-        awsRegion: import.meta.env['VITE_AWS_REGION'] || 'us-east-1'
+        azureRegion: import.meta.env['VITE_AZURE_SPEECH_REGION'] || ''
       },
 
       // ===== REAL AUDIO PLAYBACK =====
-      // Real-audio (Polly) playback used by all practice modes. Voice, engine,
+      // Real-audio playback used by all practice modes. Voice, engine,
       // and language are sourced from the `voice` block above.
       backgroundAudio: {
         outputFormat: 'mp3', // Most broadly supported container for <audio> on mobile

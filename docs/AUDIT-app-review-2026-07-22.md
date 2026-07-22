@@ -57,14 +57,14 @@ The controller builds its book list from `learningModes`, so `indexOf('pte-fib-l
 
 ### H4 — `AppConfig` reads `process.env` in the browser bundle
 **Files:** `src/config/AppConfig.ts` L162-163, L241-242, L467-468; `src/stores/index.ts:710` (devtools `enabled`).
-Vite does not define `process` in the client. The codebase already knows the correct pattern elsewhere: `pollyService.ts:80` and `supabaseClient.ts:17` use `import.meta.env`. Also violates the no-hardcoded-defaults rule (`|| 'us-east-1'`, `: ''`, `: 'development'`).
+Vite does not define `process` in the client. The codebase already knows the correct pattern elsewhere: `supabaseClient.ts:17` uses `import.meta.env`. Also violates the no-hardcoded-defaults rule (`: ''`, `: 'development'`).
 **Impact:** `VITE_API_BASE_URL` override is dead; any client gate on `build.nodeEnv === 'production'` never fires; devtools disabled even in dev.
 **Fix:** Route all client env access through one `getEnvVar()` helper (the `supabaseClient` pattern), `import.meta.env` first, fail loudly if a required var is missing.
 
 ### H5 — Book switch with auto-play enabled fails on iOS (no priming inside the gesture)
 **File:** `src/components/settings/SettingsPanel.tsx` `handleVocabularyBookChange`.
 Calls `audio.startAutoPlay()` after `await loadDataset(...)` but never `backgroundAudioService.primeForUserGesture()`. The Play button path (`useAutoPlayController.handlePlay`) does prime. So the first post-fetch `play()` after a book switch has neither an active user gesture nor a primed element.
-**Impact (mobile):** Switching book with auto-play on surfaces the "Premium audio (AWS Polly) may be unavailable" error and stops autoplay.
+**Impact (mobile):** Switching book with auto-play on surfaces the "Premium audio may be unavailable" error and stops autoplay.
 **Fix:** Call `primeForUserGesture()` synchronously inside the select handler before the await, or do not auto-start without priming.
 
 ### H6 — Practice mode (RS/ASQ/WFD) is silently lost on reload
@@ -154,12 +154,12 @@ Sets `vocabularyBook` back to default but nothing reloads; the displayed dataset
 
 ## LOW (correctness / hygiene / engineering-rule violations)
 
-- **TTSEngine stale comments + vestigial browser-synthesis path.** `src/services/audio/TTSEngine.ts` L353 comment ("uses Web Speech API") and ~L365 ("Premium TTS is currently unavailable; always use browser TTS") both contradict the code, which routes everything through `backgroundAudioService` (Polly). `this.synth` is only ever used for `cancel()` in the "already speaking" guard; `synth.speak()` is never called. Also, when `ttsVoice === 'premium'` the code resets it to `null` (~L366) then uses premium audio anyway, an actively misleading setting. Hardcoded `100`ms settle delay (~L390) violates the no-magic-numbers rule. Remove the dead synth path, fix the comments, and either honour or remove the `ttsVoice` setting.
+- **TTSEngine stale comments + vestigial browser-synthesis path.** `src/services/audio/TTSEngine.ts` L353 comment ("uses Web Speech API") and ~L365 ("Premium TTS is currently unavailable; always use browser TTS") both contradict the code, which routes everything through `backgroundAudioService`. `this.synth` is only ever used for `cancel()` in the "already speaking" guard; `synth.speak()` is never called. Also, when `ttsVoice === 'premium'` the code resets it to `null` (~L366) then uses premium audio anyway, an actively misleading setting. Hardcoded `100`ms settle delay (~L390) violates the no-magic-numbers rule. Remove the dead synth path, fix the comments, and either honour or remove the `ttsVoice` setting.
 - **Committed AI-agent scratch comment in source.** `AppContent.tsx` ~L135-142 contains an editing note referencing `replace_file_content` / `multi_replace` / line numbers. Remove.
 - **Version drift / multiple sources of truth.** `AppConfig.app.version = '3.0.1'` vs `package.json` `3.0.2`; footer shows the stale AppConfig value; `__APP_VERSION__` (defined from `npm_package_version`) is unused. Pick one source.
 - **Dead state actions.** `audio.navigateNext` / `navigatePrev` (`stores/index.ts` L126-127, `types.ts` L41-42) and `setCurrentIndex` update only `audio.currentIndex` and have no call sites; `navigateNext` also has no upper bound. Remove (they would desync `progress`/`currentItem` if wired).
 - **Dead component.** `PracticeModeSelector` is exported (`practice/index.ts:5`) but never rendered; it only sets settings without loading data (broken if used). Remove or fix.
-- **Duplicated hardcoded region.** `'us-east-1'` default in `api/config.ts:59`, `api/premium-tts.ts:26`, `api/audio/generate.ts:217`. Centralise; fail loudly if `AWS_REGION` is unset.
+- **Duplicated hardcoded region.** Region defaults in API/config routes should be centralised and fail clearly when the TTS provider region is unset.
 - **Verbose production logging.** `useAutoPlayController` logs on every effect run and playback step (no `import.meta.env.DEV` guard); `AppConfig`, `TTSEngine`, `SettingsPanel`, `backgroundAudioService` log heavily. `no-console` is only a warning. Gate on DEV.
 - **`playbackRate` set before media load** in `backgroundAudioService.playText` (some mobile browsers reset it on new media). Consider setting on `loadedmetadata`.
 - **Stale/broken Vite aliases** `@ts`, `@stores`, `@utils`, etc. point to `src/ts/...`, which does not exist.

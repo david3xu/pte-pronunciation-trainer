@@ -8,7 +8,7 @@ The **PTE Pronunciation Trainer** is a sophisticated, modern Progressive Web App
 
 **Key Strengths**:
 - **Architecture**: Robust offline support using `localForage` and background synchronization with Supabase.
-- **Features**: Advanced integration of AI (Gemini) and Cloud TTS (AWS Polly) provides a premium user experience.
+- **Features**: Advanced integration of AI (Gemini) and Cloud TTS (Azure AI Speech) provides a premium user experience.
 - **Performance**: Vite 7 and efficient state management ensure a snappy, responsive UI.
 
 **Primary Risks**:
@@ -50,7 +50,7 @@ This document records the findings from a comprehensive diagnostic review of the
   - **Recommendation**: Ensure these scripts are fully documented and have their own unit tests, as they control the app's content.
 
 ### 5. Security
-- **API Keys**: The project relies on `env` variables for API keys (Gemini, AWS).
+- **API Keys**: The project relies on `env` variables for API keys (Gemini, Azure Speech).
   - **Recommendation**: Ensure `.env` is strictly git-ignored (it is). Consider using a secrets manager for production deployments.
 - **Proxying**: The `dev-proxy.js` and Vite middleware handle API requests.
   - **Recommendation**: Ensure proper rate limiting and validation are in place to prevent abuse of the AI and TTS APIs.

@@ -5,7 +5,7 @@
  * through a single reusable HTMLAudioElement instead of browser speech
  * synthesis, which is less reliable and can be throttled by browsers.
  *
- * Audio is fetched from the existing premium TTS (AWS Polly) endpoint and
+ * Audio is fetched from the existing premium TTS endpoint and
  * played as a Blob URL. Voice, engine, language and output format come from
  * AppConfig, so nothing is hardcoded here. If audio cannot be fetched or
  * played, playText rejects so the caller can surface an error or fall back

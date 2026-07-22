@@ -214,7 +214,7 @@ export const useAutoPlayController = () => {
               console.error('[useAutoPlayController] Audio playback failed:', audioError);
               backgroundAudioService.stop();
               useAppStore.getState().ui.showNotification(
-                'Audio playback cannot start right now. Premium audio (AWS Polly) may be unavailable.',
+                'Audio playback cannot start right now. Premium audio may be unavailable.',
                 'error'
               );
               audio.stopAutoPlay();

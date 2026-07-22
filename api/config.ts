@@ -53,54 +53,82 @@ export const LIMITS = {
 
 // Voice Configuration
 export const VOICE_CONFIG = {
-  defaultVoiceId: 'Joanna',
+  defaultVoiceId: 'en-AU-NatashaNeural',
   defaultEngine: 'neural',
-  defaultLanguage: 'en-US',
-  awsRegion: process.env['AWS_REGION'] || 'us-east-1',
+  defaultLanguage: 'en-AU',
+  azureRegion: process.env['AZURE_SPEECH_REGION'] || null,
 } as const;
 
-// Premium Voices List (AWS Polly Neural Voices)
+// Premium Voices List (Azure AI Speech Neural Voices)
 export const PREMIUM_VOICES = {
   'en-US': {
-    'Joanna': 'Female, American English (Neural)',
-    'Matthew': 'Male, American English (Neural)',
-    'Ruth': 'Female, American English (Neural)',
-    'Stephen': 'Male, American English (Neural)',
-    'Ivy': 'Female, American English (Child, Neural)',
-    'Kendra': 'Female, American English (Neural)',
-    'Kimberly': 'Female, American English (Neural)',
-    'Salli': 'Female, American English (Neural)',
-    'Joey': 'Male, American English (Neural)',
-    'Justin': 'Male, American English (Child, Neural)',
-    'Kevin': 'Male, American English (Child, Neural)',
+    'en-US-JennyNeural': 'Female, American English (Neural)',
+    'en-US-GuyNeural': 'Male, American English (Neural)',
+    'en-US-AriaNeural': 'Female, American English (Neural)',
+    'en-US-DavisNeural': 'Male, American English (Neural)',
   },
   'en-GB': {
-    'Amy': 'Female, British English (Neural)',
-    'Emma': 'Female, British English (Neural)',
-    'Brian': 'Male, British English (Neural)',
-    'Arthur': 'Male, British English (Neural)',
+    'en-GB-SoniaNeural': 'Female, British English (Neural)',
+    'en-GB-RyanNeural': 'Male, British English (Neural)',
+    'en-GB-LibbyNeural': 'Female, British English (Neural)',
   },
   'en-AU': {
-    'Olivia': 'Female, Australian English (Neural)',
-    'Nicole': 'Female, Australian English (Neural)',
-    'Russell': 'Male, Australian English (Neural)',
+    'en-AU-NatashaNeural': 'Female, Australian English (Neural)',
+    'en-AU-WilliamNeural': 'Male, Australian English (Neural)',
   },
   'en-IN': {
-    'Aditi': 'Female, Indian English (Neural)',
-    'Raveena': 'Female, Indian English (Neural)',
+    'en-IN-NeerjaNeural': 'Female, Indian English (Neural)',
+    'en-IN-PrabhatNeural': 'Male, Indian English (Neural)',
   },
 } as const;
+
+const LEGACY_VOICE_ALIASES: Record<string, string> = {
+  Joanna: 'en-US-JennyNeural',
+  Matthew: 'en-US-GuyNeural',
+  Brian: 'en-GB-RyanNeural',
+  Amy: 'en-GB-SoniaNeural',
+  Emma: 'en-GB-LibbyNeural',
+  Russell: 'en-AU-WilliamNeural',
+  Olivia: 'en-AU-NatashaNeural',
+  Nicole: 'en-AU-NatashaNeural',
+};
 
 /**
  * Get language code for a voice ID
  */
 export function getVoiceLanguageCode(voiceId: string): string {
+  const resolvedVoiceId = resolveAzureVoiceName(voiceId);
   for (const [lang, voices] of Object.entries(PREMIUM_VOICES)) {
-    if (voiceId in voices) {
+    if (resolvedVoiceId in voices) {
       return lang;
     }
   }
-  return 'en-US'; // Default fallback
+  return VOICE_CONFIG.defaultLanguage;
+}
+
+/**
+ * Resolve either an Azure voice name or a legacy voice alias to an Azure voice.
+ */
+export function resolveAzureVoiceName(voiceId: string | undefined, languageCode?: string): string {
+  if (voiceId && voiceId in LEGACY_VOICE_ALIASES) {
+    return LEGACY_VOICE_ALIASES[voiceId]!;
+  }
+
+  if (voiceId && Object.values(PREMIUM_VOICES).some((voices) => voiceId in voices)) {
+    return voiceId;
+  }
+
+  switch (languageCode) {
+    case 'en-US':
+      return 'en-US-JennyNeural';
+    case 'en-GB':
+      return 'en-GB-SoniaNeural';
+    case 'en-IN':
+      return 'en-IN-NeerjaNeural';
+    case 'en-AU':
+    default:
+      return VOICE_CONFIG.defaultVoiceId;
+  }
 }
 
 /**
@@ -111,13 +139,12 @@ export function getGeminiApiKey(): string | null {
 }
 
 /**
- * Get AWS credentials from environment
+ * Get Azure Speech configuration from environment.
  */
-export function getAWSCredentials() {
+export function getAzureSpeechConfig() {
   return {
-    accessKeyId: process.env['AWS_ACCESS_KEY_ID'] || null,
-    secretAccessKey: process.env['AWS_SECRET_ACCESS_KEY'] || null,
-    region: VOICE_CONFIG.awsRegion,
+    key: process.env['AZURE_SPEECH_KEY'] || null,
+    region: VOICE_CONFIG.azureRegion,
   };
 }
 

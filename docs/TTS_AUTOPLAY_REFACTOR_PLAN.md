@@ -6,7 +6,7 @@ Stabilize browser speech playback and make the TTS/autoplay implementation easie
 
 ## Current problems
 
-- `src/services/audio/TTSEngine.ts` is too large and mixes browser Web Speech, AWS Polly, voice selection, iOS background audio, fallback UI, logging, retry behavior, and store side effects.
+- `src/services/audio/TTSEngine.ts` is too large and mixes browser Web Speech, premium generated audio, voice selection, iOS background audio, fallback UI, logging, retry behavior, and store side effects.
 - `src/components/audio/AudioControls.tsx` mixes presentation with autoplay orchestration, repeat handling, dataset navigation, book switching, and TTS timeout logic.
 - `src/stores/index.ts` contains all store slices inline, making audio/settings/TTS state harder to reason about independently.
 - TTS and autoplay failures can create misleading UI states if promises hang or browser speech events do not fire reliably.
@@ -25,7 +25,7 @@ Stabilize browser speech playback and make the TTS/autoplay implementation easie
 src/services/audio/
 ├── TTSEngine.ts                 # Thin facade for existing imports
 ├── browserSpeechService.ts      # Web Speech API lifecycle and timeouts
-├── pollySpeechService.ts        # AWS Polly request/playback fallback
+├── generatedSpeechService.ts    # Premium generated-audio request/playback fallback
 ├── voiceSelector.ts             # Voice matching and preference logic
 ├── iosBackgroundAudio.ts        # iOS/background audio support
 └── audioTypes.ts                # Shared audio service types
@@ -76,11 +76,11 @@ src/stores/slices/
 - Ensure every request settles exactly once.
 - Keep `TTSEngine.speak()` as a compatibility facade.
 
-## Phase 4: Extract Polly and iOS support
+## Phase 4: Extract premium audio and iOS support
 
-- Status: Complete. Polly request/playback fallback lives in `src/services/audio/pollySpeechService.ts`; background audio setup lives in `src/services/audio/iosBackgroundAudio.ts`.
+- Status: Complete. Premium request/playback fallback lives in `src/services/audio/backgroundAudioService.ts`; background audio setup lives in `src/services/audio/iosBackgroundAudio.ts`.
 
-- Move AWS Polly request/playback to `pollySpeechService.ts`.
+- Move premium generated-audio request/playback to a focused service.
 - Move background audio setup to `iosBackgroundAudio.ts`.
 - Keep browser fallback explicit instead of hidden inside multiple nested paths.
 

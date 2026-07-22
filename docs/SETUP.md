@@ -30,10 +30,10 @@ cp .env.example .env
 |----------|-------------|--------|
 | `VITE_SUPABASE_URL` | Supabase Project URL | Supabase Dashboard |
 | `VITE_SUPABASE_ANON_KEY` | Supabase Anonymous Key | Supabase Dashboard |
-| `VITE_GEMINI_API_KEY` | Google Gemini API Key | Google AI Studio |
-| `VITE_AWS_REGION` | AWS Region (e.g., us-east-1) | AWS Console |
-| `VITE_AWS_ACCESS_KEY_ID` | AWS Access Key | AWS IAM |
-| `VITE_AWS_SECRET_ACCESS_KEY` | AWS Secret Key | AWS IAM |
+| `GEMINI_API_KEY` | Server-side Google Gemini API Key | Google AI Studio |
+| `AZURE_SPEECH_KEY` | Server-side Azure AI Speech key | Azure Portal |
+| `AZURE_SPEECH_REGION` | Azure AI Speech resource region | Azure Portal |
+| `VITE_PREMIUM_TTS_ENABLED` | Enables premium TTS UI | Local/Vercel env |
 
 > **Security Note**: Never commit your `.env` file to version control.
 
@@ -48,10 +48,10 @@ cp .env.example .env
 1.  Get an API key from [Google AI Studio](https://makersuite.google.com/app/apikey).
 2.  The app uses the Gemini API via `@google/genai` package.
 
-### AWS Polly
-1.  Create an IAM user with `AmazonPollyReadOnlyAccess`.
-2.  Generate Access Keys for this user.
-3.  Add these keys to your `.env`.
+### Azure AI Speech
+1.  Create an Azure AI Speech resource in the Azure Portal.
+2.  Copy one resource key and the resource region.
+3.  Add `AZURE_SPEECH_KEY` and `AZURE_SPEECH_REGION` to `.env` or Vercel project settings.
 
 ## 🏃 Running the App
 

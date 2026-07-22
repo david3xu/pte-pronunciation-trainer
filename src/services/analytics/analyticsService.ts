@@ -27,7 +27,7 @@ export interface AnalyticsEventProperties {
   duration_seconds?: number;
 
   // Audio/TTS events
-  tts_engine?: 'browser' | 'polly';
+  tts_engine?: 'browser' | 'azure';
   voice?: string;
   rate?: number;
   pitch?: number;

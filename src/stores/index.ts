@@ -44,8 +44,8 @@ import type {
  * learningModes so the store never hardcodes a book id (single source of truth).
  */
 const DEFAULT_VOCABULARY_BOOK = appConfig.getDefaultVocabularyBookId();
-const DEFAULT_TTS_RATE = 1.0;
-const PREVIOUS_DEFAULT_TTS_RATE = 1.2;
+const DEFAULT_TTS_RATE = 0.7;
+const PREVIOUS_DEFAULT_TTS_RATES = new Set([1.0, 1.2]);
 
 /**
  * Identity fields checked in priority order when deriving a completion id.
@@ -671,7 +671,7 @@ export const useAppStore = create<AppState>()(
             const migratedSettings = {
               ...currentState.settings,
               ...(persistedSettings || {}),
-              ttsRate: persistedSettings?.ttsRate === PREVIOUS_DEFAULT_TTS_RATE
+              ttsRate: persistedSettings?.ttsRate !== undefined && PREVIOUS_DEFAULT_TTS_RATES.has(persistedSettings.ttsRate)
                 ? DEFAULT_TTS_RATE
                 : persistedSettings?.ttsRate ?? currentState.settings.ttsRate,
             };

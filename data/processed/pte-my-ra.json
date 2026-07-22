@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-07-22T09:11:37.164Z",
+    "generated": "2026-07-22T09:19:03.985Z",
     "totalTerms": 1904,
     "source": "pte-my-ra",
     "description": "My PTE Read Aloud word list",
@@ -3434,11 +3434,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈkəʊstlaɪn",
-          "phonetic": "KOHST-lyen"
+          "phonetic": "KOHST-line"
         },
         "american": {
           "ipa": "ˈkoʊstlaɪn",
-          "phonetic": "KOHST-lyen"
+          "phonetic": "KOHST-line"
         }
       },
       "difficulty": "normal",
@@ -11345,7 +11345,7 @@
       "wordType": "n."
     },
     {
-      "english": "Teeth",
+      "english": "teeth",
       "pronunciation": {
         "british": {
           "ipa": "tiːθ",
@@ -11953,15 +11953,15 @@
       "wordType": "adv."
     },
     {
-      "english": "Length",
+      "english": "length",
       "pronunciation": {
         "british": {
           "ipa": "leŋθ",
-          "phonetic": "LENGKTH"
+          "phonetic": "LENGTH"
         },
         "american": {
-          "ipa": "lɛŋkθ",
-          "phonetic": "LENGKTH"
+          "ipa": "lɛŋθ",
+          "phonetic": "LENGTH"
         }
       },
       "difficulty": "normal",
@@ -13727,7 +13727,7 @@
       "source": "pte-my-ra"
     },
     {
-      "english": "Water",
+      "english": "water",
       "pronunciation": {
         "british": {
           "ipa": "ˈwɔːtə",
@@ -15553,7 +15553,7 @@
       "source": "pte-my-ra"
     },
     {
-      "english": "Two",
+      "english": "two",
       "pronunciation": {
         "british": {
           "ipa": "tuː",
@@ -16320,11 +16320,11 @@
       "pronunciation": {
         "british": {
           "ipa": "spaɪt",
-          "phonetic": "SPEYET"
+          "phonetic": "SPYTE"
         },
         "american": {
           "ipa": "spaɪt",
-          "phonetic": "SPEYET"
+          "phonetic": "SPYTE"
         }
       },
       "difficulty": "easy",
@@ -16642,11 +16642,11 @@
       "pronunciation": {
         "british": {
           "ipa": "pɔz",
-          "phonetic": "PZ"
+          "phonetic": "PAWZ"
         },
         "american": {
           "ipa": "pɔz",
-          "phonetic": "PZ"
+          "phonetic": "PAWZ"
         }
       },
       "difficulty": "easy",
@@ -16693,11 +16693,11 @@
       "pronunciation": {
         "british": {
           "ipa": "saɪd",
-          "phonetic": "SEYED"
+          "phonetic": "SYDE"
         },
         "american": {
           "ipa": "saɪd",
-          "phonetic": "SEYED"
+          "phonetic": "SYDE"
         }
       },
       "difficulty": "easy",
@@ -16744,11 +16744,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ʤip",
-          "phonetic": "IP"
+          "phonetic": "JEEP"
         },
         "american": {
           "ipa": "ʤip",
-          "phonetic": "IP"
+          "phonetic": "JEEP"
         }
       },
       "difficulty": "easy",
@@ -16761,11 +16761,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈʧæpəl",
-          "phonetic": "APUHL"
+          "phonetic": "CHAP-uhl"
         },
         "american": {
           "ipa": "ˈʧæpəl",
-          "phonetic": "APUHL"
+          "phonetic": "CHAP-uhl"
         }
       },
       "difficulty": "normal",
@@ -16862,11 +16862,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈfɔrsɪŋ",
-          "phonetic": "FRSING"
+          "phonetic": "FOR-sing"
         },
         "american": {
           "ipa": "ˈfɔrsɪŋ",
-          "phonetic": "FRSING"
+          "phonetic": "FOR-sing"
         }
       },
       "difficulty": "normal",
@@ -16947,11 +16947,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈlɛʤəndz",
-          "phonetic": "LEUHNDZ"
+          "phonetic": "LEJ-uhndz"
         },
         "american": {
           "ipa": "ˈlɛʤəndz",
-          "phonetic": "LEUHNDZ"
+          "phonetic": "LEJ-uhndz"
         }
       },
       "difficulty": "normal",
@@ -17198,7 +17198,7 @@
       "wordType": "v."
     },
     {
-      "english": "Human",
+      "english": "human",
       "pronunciation": {
         "british": {
           "ipa": "ˈhjuːmən",
@@ -17218,18 +17218,17 @@
       "english": "didn’t",
       "pronunciation": {
         "british": {
-          "ipa": "didn’t",
-          "phonetic": "DIDNT"
+          "ipa": "ˈdɪdnt",
+          "phonetic": "DID-uhnt"
         },
         "american": {
-          "ipa": "didn’t",
-          "phonetic": "DIDNT"
+          "ipa": "ˈdɪdənt",
+          "phonetic": "DID-uhnt"
         }
       },
       "difficulty": "normal",
       "category": "pte-my-ra",
-      "source": "pte-my-ra",
-      "wordType": "n."
+      "source": "pte-my-ra"
     },
     {
       "english": "of course",
@@ -17283,21 +17282,21 @@
       "wordType": "n."
     },
     {
-      "english": "White-tailed",
+      "english": "white-tailed",
       "pronunciation": {
         "british": {
-          "ipa": "white-tailed",
-          "phonetic": "WHITE-TAILED"
+          "ipa": "ˈwaɪt teɪld",
+          "phonetic": "WYTE-tayld"
         },
         "american": {
-          "ipa": "white-tailed",
-          "phonetic": "WHITE-TAILED"
+          "ipa": "ˈwaɪt teɪld",
+          "phonetic": "WYTE-tayld"
         }
       },
       "difficulty": "hard",
       "category": "pte-my-ra",
       "source": "pte-my-ra",
-      "wordType": "n."
+      "wordType": "adj."
     },
     {
       "english": "deer",
@@ -17372,11 +17371,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈfəʊtəˌgræft",
-          "phonetic": "FOHTUHGRAFT"
+          "phonetic": "FOH-tuh-graft"
         },
         "american": {
           "ipa": "ˈfoʊtəˌgræft",
-          "phonetic": "FOHTUHGRAFT"
+          "phonetic": "FOH-tuh-graft"
         }
       },
       "difficulty": "hard",
@@ -17639,21 +17638,21 @@
       "source": "pte-my-ra"
     },
     {
-      "english": "Himself",
+      "english": "himself",
       "pronunciation": {
         "british": {
           "ipa": "hɪmˈsɛlf",
-          "phonetic": "HIMSELF"
+          "phonetic": "him-SELF"
         },
         "american": {
           "ipa": "hɪmˈsɛlf",
-          "phonetic": "HIMSELF"
+          "phonetic": "him-SELF"
         }
       },
       "difficulty": "normal",
       "category": "pte-my-ra",
       "source": "pte-my-ra",
-      "wordType": "n."
+      "wordType": "pron."
     },
     {
       "english": "slowly",
@@ -19471,11 +19470,11 @@
       "pronunciation": {
         "british": {
           "ipa": "ˈfʊlɪst",
-          "phonetic": "FOOL-ist"
+          "phonetic": "FULL-ist"
         },
         "american": {
           "ipa": "ˈfʊlɪst",
-          "phonetic": "FOOL-ist"
+          "phonetic": "FULL-ist"
         }
       },
       "difficulty": "normal",
@@ -20045,7 +20044,7 @@
       "wordType": "n."
     },
     {
-      "english": "Community",
+      "english": "community",
       "pronunciation": {
         "british": {
           "ipa": "kəˈmjuːnəti",
@@ -20062,7 +20061,7 @@
       "wordType": "n."
     },
     {
-      "english": "Association",
+      "english": "association",
       "pronunciation": {
         "british": {
           "ipa": "əˌsəʊsiˈeɪʃən",

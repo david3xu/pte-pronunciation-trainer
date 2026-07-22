@@ -205,7 +205,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 199. n. speaker | /ˈspiːkə/ — sounds like **SPEE-kuh** | /ˈspiːkər/ — sounds like **SPEE-kuhr**
 200. adj. marine | /məˈriːn/ — sounds like **muh-REEN** | /məˈriːn/ — sounds like **muh-REEN**
 201. n. biologist | /baɪˈɒlədʒɪst/ — sounds like **by-OL-uh-jist** | /baɪˈɑːlədʒɪst/ — sounds like **by-AHL-uh-jist**
-202. n. coastline | /ˈkəʊstlaɪn/ — sounds like **KOHST-lyen** | /ˈkoʊstlaɪn/ — sounds like **KOHST-lyen**
+202. n. coastline | /ˈkəʊstlaɪn/ — sounds like **KOHST-line** | /ˈkoʊstlaɪn/ — sounds like **KOHST-line**
 203. pron. their | /ðeə/ — sounds like **THAIR** | /ðer/ — sounds like **THAIR**
 204. adj. intrigued | /ɪnˈtriːɡd/ — sounds like **in-TREEGD** | /ɪnˈtriːɡd/ — sounds like **in-TREEGD**
 205. adj. discovered | /dɪˈskʌvəd/ — sounds like **di-SKUV-ud** | /dɪˈskʌvərd/ — sounds like **di-SKUV-urd**
@@ -672,7 +672,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 665. v. cope with | /kəʊp wɪð/ — sounds like **KOHP with** | /koʊp wɪθ/ — sounds like **KOHP with**
 666. adj. great | /ɡreɪt/ — sounds like **GRAYT** | /ɡreɪt/ — sounds like **GRAYT**
 667. n. cheek | /tʃiːk/ — sounds like **CHEEK** | /tʃiːk/ — sounds like **CHEEK**
-668. n. Teeth | /tiːθ/ — sounds like **TEETH** | /tiːθ/ — sounds like **TEETH**
+668. n. teeth | /tiːθ/ — sounds like **TEETH** | /tiːθ/ — sounds like **TEETH**
 669. adj. elongated | /ˈiːlɒŋɡeɪtɪd/ — sounds like **EE-long-gay-tid** | /ɪˈlɔːŋɡeɪtɪd/ — sounds like **i-LAWNG-gay-tid**
 670. n. skull | /skʌl/ — sounds like **SKUL** | /skʌl/ — sounds like **SKUL**
 671. adj. massive | /ˈmæsɪv/ — sounds like **MAS-iv** | /ˈmæsəv/ — sounds like **MAS-uv**
@@ -708,7 +708,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 701. which | /wɪtʃ/ — sounds like **WHICH** | /wɪtʃ/ — sounds like **WHICH**
 702. v. runs | /rʌnz/ — sounds like **RUNZ** | /rʌnz/ — sounds like **RUNZ**
 703. adv. along | /əˈlɒŋ/ — sounds like **uh-LONG** | /əˈlɔŋ/ — sounds like **uh-LAWNG**
-704. n. Length | /leŋθ/ — sounds like **LENGKTH** | /lɛŋkθ/ — sounds like **LENGKTH**
+704. n. length | /leŋθ/ — sounds like **LENGTH** | /lɛŋθ/ — sounds like **LENGTH**
 705. n. beneath | /bɪˈniːθ/ — sounds like **bi-NEETH** | /bəˈniθ/ — sounds like **buh-NEETH**
 706. adj. towering | /ˈtaʊərɪŋ/ — sounds like **TOW-uh-ring** | /ˈtaʊərɪŋ/ — sounds like **TOW-uh-ring**
 707. n. rims | /rɪmz/ — sounds like **RIMZ** | /rɪmz/ — sounds like **RIMZ**
@@ -813,7 +813,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 806. how | /haʊ/ — sounds like **HOW** | /haʊ/ — sounds like **HOW**
 807. n. transportation | /ˌtrænspɔːˈteɪʃən/ — sounds like **TRANS-paw-TAY-shun** | /ˌtrænspərˈteɪʃən/ — sounds like **TRANS-pər-TAY-shən**
 808. goods | /ɡʊdz/ — sounds like **GOODZ** | /ɡʊdz/ — sounds like **GOODZ**
-809. n. Water | /ˈwɔːtə/ — sounds like **WAW-tuh** | /ˈwɔːtɚ/ — sounds like **WAW-ter**
+809. n. water | /ˈwɔːtə/ — sounds like **WAW-tuh** | /ˈwɔːtɚ/ — sounds like **WAW-ter**
 810. n. cargo | /ˈkɑːɡəʊ/ — sounds like **KAHR-goh** | /ˈkɑːrɡoʊ/ — sounds like **KAHR-goh**
 811. n. boats | /bəʊts/ — sounds like **BOHTS** | /boʊts/ — sounds like **BOHTS**
 812. v. being | /ˈbiːɪŋ/ — sounds like **BEE-ing** | /ˈbiɪŋ/ — sounds like **BEE-ing**
@@ -921,7 +921,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 914. adv. again | /əˈɡen/ — sounds like **uh-GEN** | /əˈɡen/ — sounds like **uh-GEN**
 915. n. end | /ɛnd/ — sounds like **END** | /ɛnd/ — sounds like **END**
 916. with | /wɪð/ — sounds like **WITH** | /wɪð/ — sounds like **WITH**
-917. n. Two | /tuː/ — sounds like **TOO** | /tuː/ — sounds like **TOO**
+917. n. two | /tuː/ — sounds like **TOO** | /tuː/ — sounds like **TOO**
 918. v. sharing | /ˈʃeərɪŋ/ — sounds like **SHAIR-ing** | /ˈʃerɪŋ/ — sounds like **SHAIR-ing**
 919. adj. same | /seɪm/ — sounds like **SAYM** | /seɪm/ — sounds like **SAYM**
 920. like | /laɪk/ — sounds like **LIKE** | /laɪk/ — sounds like **LIKE**
@@ -966,7 +966,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 959. n. drama | /ˈdrɑːmə/ — sounds like **DRAH-muh** | /ˈdrɑːmə/ — sounds like **DRAH-muh**
 960. adj. understandable | /ˌʌndəˈstændəbəl/ — sounds like **UN-duh-STAN-duh-bul** | /ˌʌndərˈstændəbəl/ — sounds like **UN-dər-STAN-də-bəl**
 961. n. cases | /ˈkeɪsɪz/ — sounds like **KAY-siz** | /ˈkeɪsɪz/ — sounds like **KAY-siz**
-962. n. spite | /spaɪt/ — sounds like **SPEYET** | /spaɪt/ — sounds like **SPEYET**
+962. n. spite | /spaɪt/ — sounds like **SPYTE** | /spaɪt/ — sounds like **SPYTE**
 963. high | /haɪ/ — sounds like **HY** | /haɪ/ — sounds like **HY**
 964. n. token | /ˈtəʊkən/ — sounds like **TOH-kun** | /ˈtoʊkən/ — sounds like **TOH-kun**
 965. adj. poor | /pʊə/ — sounds like **POO-ə** | /pʊr/ — sounds like **POOR**
@@ -985,25 +985,25 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 978. n. photo | /ˈfəʊtəʊ/ — sounds like **FOH-toh** | /ˈfoʊtoʊ/ — sounds like **FOH-toh**
 979. adj. wild | /waɪld/ — sounds like **WYLD** | /waɪld/ — sounds like **WYLD**
 980. n. cat | /kæt/ — sounds like **KAT** | /kæt/ — sounds like **KAT**
-981. n. paws | /pɔz/ — sounds like **PZ** | /pɔz/ — sounds like **PZ**
+981. n. paws | /pɔz/ — sounds like **PAWZ** | /pɔz/ — sounds like **PAWZ**
 982. v. clamped | /klæmpt/ — sounds like **KLAMPT** | /klæmpt/ — sounds like **KLAMPT**
 983. prep. onto | /ˈɒntuː/ — sounds like **ON-too** | /ˈɑntu/ — sounds like **AHN-too**
-984. n. side | /saɪd/ — sounds like **SEYED** | /saɪd/ — sounds like **SEYED**
+984. n. side | /saɪd/ — sounds like **SYDE** | /saɪd/ — sounds like **SYDE**
 985. adj. white | /waɪt/ — sounds like **WYT** | /waɪt/ — sounds like **WYT**
 986. n. safari | /səˈfɑːri/ — sounds like **suh-FAHR-ee** | /səˈfɑːri/ — sounds like **suh-FAHR-ee**
-987. n. jeep | /ʤip/ — sounds like **IP** | /ʤip/ — sounds like **IP**
-988. n. Chappell | /ˈʧæpəl/ — sounds like **APUHL** | /ˈʧæpəl/ — sounds like **APUHL**
+987. n. jeep | /ʤip/ — sounds like **JEEP** | /ʤip/ — sounds like **JEEP**
+988. n. Chappell | /ˈʧæpəl/ — sounds like **CHAP-uhl** | /ˈʧæpəl/ — sounds like **CHAP-uhl**
 989. n. passenger | /ˈpæsɪndʒə/ — sounds like **PAS-in-juh** | /ˈpæsəndʒər/ — sounds like **PAS-un-jur**
 990. adj. tall | /tɔːl/ — sounds like **TAWL** | /tɔl/ — sounds like **TAWL**
 991. adj. hind | /haɪnd/ — sounds like **HYEND** | /haɪnd/ — sounds like **HYEND**
 992. n. legs | /leɡz/ — sounds like **LEGZ** | /leɡz/ — sounds like **LEGZ**
 993. appears | /əˈpɪəz/ — sounds like **uh-PEERZ** | /əˈpɪəz/ — sounds like **uh-PEERZ**
-994. v. forcing | /ˈfɔrsɪŋ/ — sounds like **FRSING** | /ˈfɔrsɪŋ/ — sounds like **FRSING**
+994. v. forcing | /ˈfɔrsɪŋ/ — sounds like **FOR-sing** | /ˈfɔrsɪŋ/ — sounds like **FOR-sing**
 995. n. muzzle | /ˈmʌzəl/ — sounds like **MUZ-ul** | /ˈmʌzəl/ — sounds like **MUZ-ul**
 996. n. back | /bæk/ — sounds like **BAK** | /bæk/ — sounds like **BAK**
 997. n. window | /ˈwɪndəʊ/ — sounds like **WIN-doh** | /ˈwɪndoʊ/ — sounds like **WIN-doh**
 998. n. Atlantis | /ətˈlæntɪs/ — sounds like **ut-LAN-tis** | /ətˈlæntɪs/ — sounds like **ut-LAN-tis**
-999. n. legends | /ˈlɛʤəndz/ — sounds like **LEUHNDZ** | /ˈlɛʤəndz/ — sounds like **LEUHNDZ**
+999. n. legends | /ˈlɛʤəndz/ — sounds like **LEJ-uhndz** | /ˈlɛʤəndz/ — sounds like **LEJ-uhndz**
 1000. adj. tantalizing | /ˈtæntəlaɪzɪŋ/ — sounds like **TAN-tuh-lye-zing** | /ˈtæntəlaɪzɪŋ/ — sounds like **TAN-tuh-lye-zing**
 1001. n. blend | /blend/ — sounds like **BLEND** | /blend/ — sounds like **BLEND**
 1002. n. fantasy | /ˈfæntəsi/ — sounds like **FAN-tuh-see** | /ˈfæntəsi/ — sounds like **FAN-tuh-see**
@@ -1018,17 +1018,17 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1011. adv. still | /stɪl/ — sounds like **STIL** | /stɪl/ — sounds like **STIL**
 1012. v. lie | /laɪ/ — sounds like **LYE** | /laɪ/ — sounds like **LYE**
 1013. v. waiting | /ˈweɪtɪŋ/ — sounds like **WAYTING** | /ˈweɪtɪŋ/ — sounds like **WAYTING**
-1014. n. Human | /ˈhjuːmən/ — sounds like **HYOO-mun** | /ˈhjuːmən/ — sounds like **HYOO-mun**
-1015. n. didn’t | /didn’t/ — sounds like **DIDNT** | /didn’t/ — sounds like **DIDNT**
+1014. n. human | /ˈhjuːmən/ — sounds like **HYOO-mun** | /ˈhjuːmən/ — sounds like **HYOO-mun**
+1015. didn’t | /ˈdɪdnt/ — sounds like **DID-uhnt** | /ˈdɪdənt/ — sounds like **DID-uhnt**
 1016. phr. of course | /əv kɔrs/ — sounds like **uhv KORS** | /əv kɔrs/ — sounds like **uhv KORS**
 1017. adv. heavily | /ˈhevəli/ — sounds like **HEV-uh-lee** | /ˈhevəli/ — sounds like **HEV-uh-lee**
 1018. n. species | /ˈspiːʃiːz/ — sounds like **SPEE-sheez** | /ˈspiːʃiːz/ — sounds like **SPEE-sheez**
-1019. n. White-tailed | /white-tailed/ — sounds like **WHITE-TAILED** | /white-tailed/ — sounds like **WHITE-TAILED**
+1019. adj. white-tailed | /ˈwaɪt teɪld/ — sounds like **WYTE-tayld** | /ˈwaɪt teɪld/ — sounds like **WYTE-tayld**
 1020. n. deer | /dɪə/ — sounds like **DEER** | /dɪr/ — sounds like **DEER**
 1021. n. grey | /greɪ/ — sounds like **GRAY** | /greɪ/ — sounds like **GRAY**
 1022. n. squirrels | /skwəəlz/ — sounds like **SKWUHUHLZ** | /skwərəlz/ — sounds like **SKWURUHLZ**
 1023. n. raccoons | /ræˈkunz/ — sounds like **RAKUNZ** | /ræˈkunz/ — sounds like **RAKUNZ**
-1024. v. photographed | /ˈfəʊtəˌgræft/ — sounds like **FOHTUHGRAFT** | /ˈfoʊtəˌgræft/ — sounds like **FOHTUHGRAFT**
+1024. v. photographed | /ˈfəʊtəˌgræft/ — sounds like **FOH-tuh-graft** | /ˈfoʊtəˌgræft/ — sounds like **FOH-tuh-graft**
 1025. adv. somewhat | /ˈsʌmwɒt/ — sounds like **SUM-wot** | /ˈsʌmˌwɑt/ — sounds like **SUM-waht**
 1026. adj. less | /lɛs/ — sounds like **LESS** | /lɛs/ — sounds like **LESS**
 1027. n. coyotes | /kaɪˈəʊtiːz/ — sounds like **ky-OH-teez** | /kaɪˈoʊtiːz/ — sounds like **ky-OH-teez**
@@ -1044,7 +1044,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1037. n. comprehension | /ˌkɒmprɪˈhenʃən/ — sounds like **kom-pri-HEN-shun** | /ˌkɑːmprɪˈhenʃən/ — sounds like **kahm-pri-HEN-shun**
 1038. adj. secure | /sɪˈkjʊə/ — sounds like **si-KYOOR** | /səˈkjʊr/ — sounds like **sə-KYOOR**
 1039. expresses | /ɪkˈspresɪz/ — sounds like **ik-SPRES-iz** | /ɪkˈspresɪz/ — sounds like **ik-SPRES-iz**
-1040. n. Himself | /hɪmˈsɛlf/ — sounds like **HIMSELF** | /hɪmˈsɛlf/ — sounds like **HIMSELF**
+1040. pron. himself | /hɪmˈsɛlf/ — sounds like **him-SELF** | /hɪmˈsɛlf/ — sounds like **him-SELF**
 1041. adv. slowly | /ˈsləʊli/ — sounds like **SLOH-lee** | /ˈsloʊli/ — sounds like **SLOH-lee**
 1042. v. fails | /feɪlz/ — sounds like **FAYLZ** | /feɪlz/ — sounds like **FAYLZ**
 1043. v. convey | /kənˈveɪ/ — sounds like **kun-VAY** | /kənˈveɪ/ — sounds like **kən-VAY**
@@ -1152,7 +1152,7 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1145. n. literacy | /ˈlɪtərəsi/ — sounds like **LIT-uh-ruh-see** | /ˈlɪtərəsi/ — sounds like **LIT-uh-ruh-see**
 1146. n. subgenre | /ˈsʌbˌʒɒnrə/ — sounds like **SUB-ZHAHN-ruh** | /ˈsʌbˌʒɑːnrə/ — sounds like **SUB-ZHAHN-ruh**
 1147. v. exploited | /ɪkˈsplɔɪtɪd/ — sounds like **ik-SPLOY-tid** | /ɪkˈsplɔɪtɪd/ — sounds like **ik-SPLOY-tid**
-1148. adj. fullest | /ˈfʊlɪst/ — sounds like **FOOL-ist** | /ˈfʊlɪst/ — sounds like **FOOL-ist**
+1148. adj. fullest | /ˈfʊlɪst/ — sounds like **FULL-ist** | /ˈfʊlɪst/ — sounds like **FULL-ist**
 1149. n. changes | /ˈtʃeɪndʒɪz/ — sounds like **CHAYN-jiz** | /ˈtʃeɪndʒɪz/ — sounds like **CHAYN-jiz**
 1150. v. constrained | /kənˈstreɪnd/ — sounds like **kun-STRAYND** | /kənˈstreɪnd/ — sounds like **kun-STRAYND**
 1151. n. stories | /ˈstɔːriz/ — sounds like **STOR-eez** | /ˈstɔːriz/ — sounds like **STOR-eez**
@@ -1186,8 +1186,8 @@ Personal Read Aloud word list. This file currently contains the revised words fr
 1179. n. resources | /rɪˈsɔːsɪz/ — sounds like **ri-SOR-siz** | /ˈriːsɔːrsɪz/ — sounds like **REE-sor-siz**
 1180. n. benefit | /ˈbenɪfɪt/ — sounds like **BEN-i-fit** | /ˈbenɪfɪt/ — sounds like **BEN-i-fit**
 1181. n. lives | /laɪvz/ — sounds like **LYVZ** | /laɪvz/ — sounds like **LYVZ**
-1182. n. Community | /kəˈmjuːnəti/ — sounds like **kuh-MYOO-nuh-tee** | /kəˈmjuːnəti/ — sounds like **kuh-MYOO-nuh-tee**
-1183. n. Association | /əˌsəʊsiˈeɪʃən/ — sounds like **uh-soh-see-AY-shun** | /əˌsoʊsiˈeɪʃən/ — sounds like **uh-soh-see-AY-shun**
+1182. n. community | /kəˈmjuːnəti/ — sounds like **kuh-MYOO-nuh-tee** | /kəˈmjuːnəti/ — sounds like **kuh-MYOO-nuh-tee**
+1183. n. association | /əˌsəʊsiˈeɪʃən/ — sounds like **uh-soh-see-AY-shun** | /əˌsoʊsiˈeɪʃən/ — sounds like **uh-soh-see-AY-shun**
 1184. n. networking | /ˈnetwɜːkɪŋ/ — sounds like **NET-wur-king** | /ˈnetwɜːrkɪŋ/ — sounds like **NET-wur-king**
 1185. prep. among | /əˈmʌŋ/ — sounds like **uh-MUNG** | /əˈmʌŋ/ — sounds like **uh-MUNG**
 1186. v. share | /ʃeə/ — sounds like **SHAIR** | /ʃer/ — sounds like **SHAIR**

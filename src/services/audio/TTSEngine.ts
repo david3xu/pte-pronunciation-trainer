@@ -401,7 +401,7 @@ export class TTSEngine {
     console.log(`[TTSEngine #${callId}] ✅ Setting isSpeaking=true, starting speech...`);
 
     try {
-      await this.speakWithRealAudio(text, language, customRate);
+      await this.speakWithRealAudio(text, customRate);
     } catch (error) {
       if (!this.shouldFallbackToBrowserTts(error)) {
         throw error;
@@ -414,7 +414,7 @@ export class TTSEngine {
     }
   }
 
-  private speakWithRealAudio(text: string, language: string, customRate: number | null): Promise<void> {
+  private speakWithRealAudio(text: string, customRate: number | null): Promise<void> {
     return new Promise<void>((resolve, reject) => {
       let settled = false;
       const settle = (error?: Error) => {
@@ -444,7 +444,6 @@ export class TTSEngine {
       backgroundAudioService.primeForUserGesture();
       backgroundAudioService
         .playText(text, {
-          languageCode: language,
           rate: customRate ?? this.getCurrentSpeechRate(),
           volume: useAppStore.getState().audio.volume,
         })

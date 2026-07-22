@@ -78,6 +78,28 @@ describe('useAutoPlayController - Play gesture audio start', () => {
       expect.objectContaining({ rate: expect.any(Number), volume: expect.any(Number) })
     );
   });
+
+  it('surfaces an error when direct mobile audio start is rejected', async () => {
+    const playError = new Error('mobile playback rejected');
+    (backgroundAudioService.playTextFromUserGesture as unknown as ReturnType<typeof vi.fn>)
+      .mockRejectedValueOnce(playError);
+
+    const notifySpy = vi
+      .spyOn(useAppStore.getState().ui, 'showNotification')
+      .mockImplementation(() => {});
+
+    const { result } = renderHook(() => useAutoPlayController());
+    await act(async () => {
+      result.current.handlePlay();
+      await Promise.resolve();
+    });
+
+    expect(backgroundAudioService.stop).toHaveBeenCalled();
+    expect(notifySpy).toHaveBeenCalledWith(expect.stringContaining('Premium audio'), 'error');
+    expect(useAppStore.getState().audio.isAutoPlaying).toBe(false);
+
+    notifySpy.mockRestore();
+  });
 });
 
 describe('useAutoPlayController - playback error handling', () => {

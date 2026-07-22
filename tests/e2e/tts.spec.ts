@@ -72,9 +72,23 @@ const setupRealAudioMocks = async (page: Page): Promise<{ requests: PremiumTtsRe
       ended = false;
       loop = false;
       muted = false;
-      playbackRate = 1;
       volume = 1;
+      private internalPlaybackRate = 1;
       private listeners = new Map<string, Set<EventListenerOrEventListenerObject>>();
+
+      get playbackRate(): number {
+        return this.internalPlaybackRate;
+      }
+
+      set playbackRate(rate: number) {
+        this.internalPlaybackRate = rate;
+        events.push({
+          type: 'ratechange',
+          src: this.src,
+          playbackRate: this.internalPlaybackRate,
+          volume: this.volume,
+        });
+      }
 
       play(): Promise<void> {
         this.paused = false;
@@ -232,9 +246,12 @@ test('autoplay Play starts the real MP3 URL from the tap and advances to the nex
   await expect(audioControls.getByText(/Item 2/i)).toBeVisible({ timeout: 6_000 });
 });
 
-test('playback speed slider changes the active real-audio rate', async ({ page }) => {
+test('playback speed slider changes the real-audio rate before and during playback', async ({ page }) => {
   await setupRealAudioMocks(page);
   await page.goto('/');
+  await page.evaluate(() => {
+    (window as unknown as { __mockAudioEndDelayMs?: number }).__mockAudioEndDelayMs = 5_000;
+  });
 
   const audioControls = page.locator('.audio-controls');
   await expect(audioControls).toBeVisible();
@@ -254,6 +271,21 @@ test('playback speed slider changes the active real-audio rate', async ({ page }
       audioEvent.type === 'play' &&
       !!audioEvent.src?.includes('/api/premium-tts?format=audio') &&
       audioEvent.playbackRate === 1.5
+    ));
+    return Boolean(event);
+  }).toBe(true);
+
+  await speedSlider.focus();
+  for (let i = 0; i < 3; i++) {
+    await page.keyboard.press('ArrowLeft');
+  }
+  await expect(speedSlider).toHaveAttribute('aria-valuenow', '1.2');
+
+  await expect.poll(async () => {
+    const event = await findAudioEvent(page, (audioEvent) => (
+      audioEvent.type === 'ratechange' &&
+      !!audioEvent.src?.includes('/api/premium-tts?format=audio') &&
+      audioEvent.playbackRate === 1.2
     ));
     return Boolean(event);
   }).toBe(true);

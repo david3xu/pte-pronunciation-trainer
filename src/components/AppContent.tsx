@@ -5,8 +5,8 @@ import {
   LightningBoltIcon,
   SpeakerLoudIcon,
 } from '@radix-ui/react-icons';
-import { Button, Flex, Spinner, Theme } from '@radix-ui/themes';
-import React, { lazy, Suspense, useEffect, useState } from 'react';
+import { Button, Flex, Theme } from '@radix-ui/themes';
+import React, { lazy, Suspense, useEffect, useRef, useState } from 'react';
 import { appConfig } from '../config/AppConfig';
 import { loadDataset } from '../services/dataset/datasetLoader';
 import { useMigration } from '../hooks/useMigration';
@@ -62,6 +62,10 @@ export const AppContent: React.FC = () => {
   // Session tracking
   const [sessionManager] = useState(() => getSessionManager());
   const [currentSessionId, setCurrentSessionId] = useState<string | null>(null);
+  // Mirror the session id into a ref so the mount effect's cleanup (which has an
+  // empty dependency array) completes the real session instead of the stale null
+  // captured at mount time.
+  const currentSessionIdRef = useRef<string | null>(null);
 
   // Intervention system (Phase 4)
   const [currentIntervention, setCurrentIntervention] = useState<Intervention | null>(null);
@@ -76,26 +80,41 @@ export const AppContent: React.FC = () => {
 
     // Load vocabulary data on startup
     const loadInitialVocabulary = async () => {
-      const { vocabularyBook } = settings;
-      console.log('Loading vocabulary book:', vocabularyBook);
+      const { practiceType, practiceMode, vocabularyBook } = settings;
+      // Restore the dataset the user was actually on. Practice modes load their
+      // practice dataset so the RS/ASQ/WFD interface is restored on reload;
+      // vocabulary, vocab-typing and shadowing load the selected book.
+      const datasetToLoad =
+        practiceType === 'practice' && practiceMode ? practiceMode : vocabularyBook;
+      console.log('Loading dataset on startup:', datasetToLoad);
 
       vocabulary.setLoading(true);
 
       try {
         // Single centralized load + normalize path (services/dataset/datasetLoader).
-        const { items } = await loadDataset(vocabularyBook, { signal: abortController.signal });
+        const { items } = await loadDataset(datasetToLoad, { signal: abortController.signal });
 
         console.log(`Loaded ${items.length} items`);
         // setDataset restores this dataset's saved index (or starts at the first
-        // item), so progress no longer leaks across vocabulary books.
-        vocabulary.setDataset(items, vocabularyBook);
+        // item), so progress no longer leaks across datasets.
+        vocabulary.setDataset(items, datasetToLoad);
 
         // Start practice session for tracking
         try {
-          const taskType: TaskType = 'vocabulary'; // Default to vocabulary
+          // Track the session under the task the user is actually practicing so
+          // RS/ASQ/WFD analytics are attributed correctly, not always vocabulary.
+          let taskType: TaskType = 'vocabulary';
+          if (practiceType === 'practice' && practiceMode) {
+            taskType =
+              practiceMode === 'practice-repeat-sentence'
+                ? 'rs'
+                : practiceMode === 'practice-answer-short-question'
+                  ? 'asq'
+                  : 'wfd';
+          }
           const sessionId = await sessionManager.startSession(
             taskType,
-            vocabularyBook,
+            datasetToLoad,
             'practice',
             {
               autoPlay: settings.autoPlay,
@@ -103,6 +122,7 @@ export const AppContent: React.FC = () => {
             }
           );
           setCurrentSessionId(sessionId);
+          currentSessionIdRef.current = sessionId;
           console.log('[App] Started practice session:', sessionId);
 
           // Don't auto-start on initial load - browser blocks audio without user interaction
@@ -139,8 +159,9 @@ export const AppContent: React.FC = () => {
       // Abort any pending fetch requests
       abortController.abort();
       
-      if (currentSessionId) {
-        console.log('[App] Completing session on unmount:', currentSessionId);
+      const sessionId = currentSessionIdRef.current;
+      if (sessionId) {
+        console.log('[App] Completing session on unmount:', sessionId);
         sessionManager.completeSession().catch((err: any) => {
           console.error('[App] Failed to complete session:', err);
         });
@@ -150,12 +171,6 @@ export const AppContent: React.FC = () => {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Dependencies intentionally omitted - only run on mount
-
-  // ... (rest of component)
-  // (Assuming handleNext/Previous are further down, I will use a separate replace call if they are far apart,
-  // checking line numbers: 115-150 vs 250-274. They are far. I should use multi_replace or two replace calls.
-  // I will use replace_file_content for the FIRST block (loadInitialVocabulary) now, then another tool call for handlers.)
-
 
   // Phase 4: Monitor session for proactive interventions
   useEffect(() => {
@@ -494,8 +509,16 @@ export const AppContent: React.FC = () => {
                     minHeight: '400px',
                   }}
                 >
-                  <Spinner size="3" />
-                  <p className="text-slate-300">Loading vocabulary...</p>
+                  <p className="text-slate-200 text-lg font-semibold">
+                    {settings.difficultyFilter !== 'all'
+                      ? 'No items match this difficulty'
+                      : 'No items to show'}
+                  </p>
+                  <p className="text-slate-400 text-sm">
+                    {settings.difficultyFilter !== 'all'
+                      ? 'Try another difficulty in Settings, or switch back to All.'
+                      : 'Pick a different book or mode in Settings.'}
+                  </p>
                 </Flex>
               )}
             </div>

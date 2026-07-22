@@ -38,11 +38,10 @@ console.log('✅ React app mounted successfully');
 import { registerSW } from 'virtual:pwa-register';
 
 const updateSW = registerSW({
+  immediate: true,
   onNeedRefresh() {
-    console.log('🔄 New content available, click on reload button to update.');
-    if (confirm('🎉 New version available! Reload to update?')) {
-      updateSW(true);
-    }
+    console.log('🔄 New content available, reloading to apply update.');
+    updateSW(true);
   },
   onOfflineReady() {
     console.log('✅ App ready to work offline');

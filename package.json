@@ -29,6 +29,8 @@
     "validate:structure": "node scripts/validate-structure.js",
     "validate:supabase": "node scripts/verify-supabase-setup.js",
     "validate:all": "pnpm run validate:docs && pnpm run validate:structure && pnpm run validate",
+    "infra:azure:speech": "bash scripts/deploy-azure-speech.sh",
+    "infra:azure:speech:deploy": "DEPLOY_VERCEL=true bash scripts/deploy-azure-speech.sh",
     "clean": "rm -rf dist/",
     "start": "pnpm run data:pte && pnpm run dev",
     "start:pte": "pnpm run data:pte && pnpm run dev",

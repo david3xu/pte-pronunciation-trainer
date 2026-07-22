@@ -45,9 +45,10 @@ function resolveDatasetPath(datasetId: string): string {
   const byMode = appConfig.get<Record<string, string>>('data.paths.byMode');
   const processedPath = appConfig.get<string>('data.paths.processed');
   const registryKey = PRACTICE_MODE_TO_REGISTRY_KEY[datasetId] ?? datasetId;
-  const basePath = byMode?.[registryKey] || `/${processedPath}/${datasetId}-vocabulary.json`;
-  // Cache-busting query preserved from the previous per-component loaders.
-  return `${basePath}?t=${Date.now()}`;
+  // Stable path, no cache-busting query: a stable URL is required for Workbox
+  // data-cache hits and offline loads; the service worker (StaleWhileRevalidate)
+  // and the HTTP cache handle freshness, and dataset content is versioned per deploy.
+  return byMode?.[registryKey] || `/${processedPath}/${datasetId}-vocabulary.json`;
 }
 
 /* eslint-disable @typescript-eslint/no-explicit-any -- raw JSON payloads are untyped by nature */

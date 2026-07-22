@@ -8,8 +8,8 @@
  */
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { PREMIUM_VOICES } from './config';
-import { synthesizeSpeech } from './azureSpeech';
+import { PREMIUM_VOICES } from './config.js';
+import { synthesizeSpeech } from './azureSpeech.js';
 
 interface RequestBody {
   text: string;

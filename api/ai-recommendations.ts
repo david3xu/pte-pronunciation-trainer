@@ -10,7 +10,7 @@
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { GoogleGenAI } from '@google/genai';
-import { AI_CONFIG, LIMITS, getGeminiApiKey } from './config';
+import { AI_CONFIG, LIMITS, getGeminiApiKey } from './config.js';
 
 // Initialize Gemini client using centralized config
 const getGeminiClient = () => {

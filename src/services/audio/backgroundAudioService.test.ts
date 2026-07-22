@@ -19,6 +19,8 @@ class FakeAudio {
   preload = '';
   paused = true;
   ended = false;
+  loop = false;
+  muted = false;
   playbackRate = 1;
   volume = 1;
   constructor() { lastFakeAudio = this; }
@@ -212,6 +214,19 @@ describe('BackgroundAudioService', () => {
 
     service.primeForUserGesture();
     // The silent priming clip must not look like a resumable real clip.
+    expect(service.canResume()).toBe(false);
+    expect(service.getLoadedText()).toBeNull();
+  });
+
+  it('keeps the priming audio playing muted so mobile can swap in real audio after fetch', () => {
+    const service = new BackgroundAudioService();
+
+    service.primeForUserGesture();
+
+    expect(playSpy).toHaveBeenCalledTimes(1);
+    expect(lastFakeAudio?.paused).toBe(false);
+    expect(lastFakeAudio?.loop).toBe(true);
+    expect(lastFakeAudio?.muted).toBe(true);
     expect(service.canResume()).toBe(false);
     expect(service.getLoadedText()).toBeNull();
   });

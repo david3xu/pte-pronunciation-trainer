@@ -14,11 +14,12 @@
 
 import { appConfig } from '../../config/AppConfig';
 
-// A short, effectively silent WAV. Played then paused synchronously inside a
-// user gesture to "bless" the reusable audio element, so a later play() (after
-// the async premium-TTS fetch) is permitted by mobile autoplay policy.
+// A short silent WAV loop. It is started synchronously inside a user gesture and
+// kept muted until the real Azure MP3 is ready. Mobile browsers, especially iOS
+// Safari/PWA mode, can still reject a later play() if the primed element was
+// paused before the async fetch completed.
 const SILENT_AUDIO_DATA_URI =
-  'data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAgD4AAIA+AAABAAgAZGF0YQAAAAA=';
+  'data:audio/wav;base64,UklGRrQBAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YZABAACAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA';
 
 export interface BackgroundAudioHandlers {
   onEnded?: () => void;
@@ -101,30 +102,22 @@ export class BackgroundAudioService {
     this.releaseObjectUrl();
     this.currentText = null;
 
-    // Tag this priming attempt. A later playText()/stop() bumps the generation,
-    // which disarms this attempt's deferred pause so it can never pause a real
-    // clip that has since replaced the silent source.
+    // Tag this priming attempt. A later playText()/stop() bumps the generation.
     const generation = ++this.primeGeneration;
 
     try {
+      audio.loop = true;
+      audio.muted = true;
       audio.src = SILENT_AUDIO_DATA_URI;
       const played = audio.play();
       if (played && typeof played.then === 'function') {
-        played
-          .then(() => {
-            // Only pause if this priming is still current AND the element still
-            // holds the silent source (not a Blob URL swapped in by playText).
-            if (
-              this.primeGeneration === generation &&
-              this.audio &&
-              this.audio.src === SILENT_AUDIO_DATA_URI
-            ) {
-              this.audio.pause();
-            }
-          })
-          .catch(() => {
-            /* policy blocked priming; the real play() will fail loud */
-          });
+        played.catch(() => {
+          if (this.primeGeneration === generation && this.audio?.src === SILENT_AUDIO_DATA_URI) {
+            this.audio.loop = false;
+            this.audio.muted = false;
+          }
+          /* policy blocked priming; the real play() will fail loud */
+        });
       }
     } catch {
       /* ignore priming errors; a real play() will surface any problem */
@@ -165,6 +158,8 @@ export class BackgroundAudioService {
     this.releaseObjectUrl(); // revoke the previous clip before swapping src
     this.objectUrl = blobUrl;
     this.currentText = text;
+    audio.loop = false;
+    audio.muted = false;
     audio.src = blobUrl;
 
     if (typeof options.rate === 'number') {
@@ -232,6 +227,8 @@ export class BackgroundAudioService {
     this.primeGeneration++;
     if (this.audio) {
       this.audio.pause();
+      this.audio.loop = false;
+      this.audio.muted = false;
       this.audio.removeAttribute('src');
       this.audio.load();
     }

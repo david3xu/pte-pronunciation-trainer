@@ -44,7 +44,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
   const { volume: audioVolume, setVolume } = audio;
 
   const vocabulary = useVocabulary();
-  const { setLoading, setDataset, filterByDifficulty } = vocabulary;
+  const { setLoading, setDataset } = vocabulary;
 
   useEffect(() => {
     if (ttsVoice === 'premium') {
@@ -84,13 +84,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
     try {
       const { items } = await loadDataset(bookId);
       console.log(`[SettingsPanel] Loaded ${items.length} items`);
-      setDataset(items, bookId); // Now atomically sets currentItem and resets index
-
-      // Reapply difficulty filter to new book
-      if (difficultyFilter !== 'all') {
-        filterByDifficulty(difficultyFilter);
-        console.log(`[SettingsPanel] Applied ${difficultyFilter} filter to ${bookId}`);
-      }
+      setDataset(items, bookId); // Applies settings.difficultyFilter atomically
 
       // Auto-start playback if autoPlay setting is enabled. SWT is a pure
       // reading/writing task with no audio at all, so never auto-start
@@ -132,13 +126,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
     try {
       const { items } = await loadDataset(mode);
       console.log(`[SettingsPanel] Loaded ${items.length} practice items`);
-      setDataset(items, mode); // Now atomically sets currentItem and resets index
-
-      // Reapply difficulty filter to practice dataset
-      if (difficultyFilter !== 'all') {
-        filterByDifficulty(difficultyFilter);
-        console.log(`[SettingsPanel] Applied ${difficultyFilter} filter to ${mode}`);
-      }
+      setDataset(items, mode); // Applies settings.difficultyFilter atomically
 
       setLoading(false);
     } catch (error) {
@@ -176,13 +164,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
     try {
       const { items } = await loadDataset(mode);
       console.log(`[SettingsPanel] Loaded ${items.length} writing task items`);
-      setDataset(items, mode); // Now atomically sets currentItem and resets index
-
-      // Reapply difficulty filter to the writing dataset
-      if (difficultyFilter !== 'all') {
-        filterByDifficulty(difficultyFilter);
-        console.log(`[SettingsPanel] Applied ${difficultyFilter} filter to ${mode}`);
-      }
+      setDataset(items, mode); // Applies settings.difficultyFilter atomically
 
       setLoading(false);
     } catch (error) {
@@ -384,8 +366,6 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                   onValueChange={(value) => {
                     const difficulty = value as 'easy' | 'normal' | 'hard' | 'all';
                     updateSetting('difficultyFilter', difficulty);
-                    // Apply the filter to current vocabulary
-                    filterByDifficulty(difficulty);
                   }}
                 >
                   <Select.Trigger />

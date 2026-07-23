@@ -159,9 +159,6 @@ export const useAutoPlayController = () => {
 
       settings.updateSetting('vocabularyBook', bookId);
       vocabulary.setDataset(items, bookId);
-      if (settings.difficultyFilter !== 'all') {
-        vocabulary.filterByDifficulty(settings.difficultyFilter);
-      }
 
       const filteredDataset = useAppStore.getState().vocabulary.filteredDataset;
 

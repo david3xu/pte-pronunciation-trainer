@@ -38,6 +38,10 @@ export interface PlayTextOptions {
   rate?: number;
   /** Output volume in the range [0, 1]. Callers pass the store's audio volume. */
   volume?: number;
+  /** Optional lock-screen/title-row text. Defaults to the spoken text. */
+  mediaTitle?: string;
+  /** Optional lock-screen second-row text. Defaults to the configured app name. */
+  mediaArtist?: string;
 }
 
 interface PremiumTtsResponse {
@@ -176,7 +180,7 @@ export class BackgroundAudioService {
       audio.volume = this.currentVolume;
     }
 
-    this.setMediaMetadata(text);
+    this.setMediaMetadata(text, options);
 
     try {
       await audio.play();
@@ -225,7 +229,7 @@ export class BackgroundAudioService {
       audio.volume = this.currentVolume;
     }
 
-    this.setMediaMetadata(text);
+    this.setMediaMetadata(text, options);
 
     try {
       const played = audio.play();
@@ -406,11 +410,12 @@ export class BackgroundAudioService {
     }
   }
 
-  private setMediaMetadata(text: string): void {
+  private setMediaMetadata(text: string, options: PlayTextOptions = {}): void {
     if (!this.hasMediaSession() || typeof MediaMetadata === 'undefined') return;
     navigator.mediaSession.metadata = new MediaMetadata({
-      title: text,
-      artist: appConfig.get<string>('backgroundAudio.mediaSessionArtist'),
+      title: options.mediaTitle || text,
+      artist: options.mediaArtist || appConfig.get<string>('backgroundAudio.mediaSessionArtist'),
+      artwork: [],
     });
   }
 

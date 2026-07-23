@@ -65,6 +65,30 @@ describe('useAutoPlayController - Play gesture audio start', () => {
     expect(backgroundAudioService.primeForUserGesture).not.toHaveBeenCalled();
   });
 
+  it('passes British sounds-like text as the second media-session row', () => {
+    const store = useAppStore.getState();
+    store.vocabulary.setCurrentItem(
+      {
+        english: 'consoles',
+        id: 'metadata-test',
+        phonetic: { british: 'KON-solz' },
+      } as unknown as Parameters<typeof store.vocabulary.setCurrentItem>[0]
+    );
+
+    const { result } = renderHook(() => useAutoPlayController());
+    act(() => {
+      result.current.handlePlay();
+    });
+
+    expect(backgroundAudioService.playTextFromUserGesture).toHaveBeenCalledWith(
+      'consoles',
+      expect.objectContaining({
+        mediaTitle: 'consoles',
+        mediaArtist: 'KON-solz',
+      })
+    );
+  });
+
   it('still starts real audio directly when the legacy Background Audio Mode setting is off', () => {
     useAppStore.getState().settings.updateSetting('backgroundAudioMode', false);
 

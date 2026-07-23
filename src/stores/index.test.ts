@@ -155,15 +155,64 @@ describe('store navigation', () => {
 
     store.vocabulary.filterByDifficulty('hard');
     let state = useAppStore.getState();
+    expect(state.settings.difficultyFilter).toBe('hard');
     expect(state.progress.totalItems).toBe(1);
     expect(state.progress.currentIndex).toBe(0);
     expect(state.vocabulary.currentItem).toBe(dataset[2]);
 
     store.vocabulary.filterByDifficulty('all');
     state = useAppStore.getState();
+    expect(state.settings.difficultyFilter).toBe('all');
     expect(state.progress.totalItems).toBe(dataset.length);
     expect(state.progress.currentIndex).toBe(0);
     expect(state.vocabulary.currentItem).toBe(dataset[0]);
+  });
+
+  it('applies the persisted difficulty setting when loading a dataset', () => {
+    const store = useAppStore.getState();
+
+    store.settings.updateSetting('difficultyFilter', 'hard');
+    store.vocabulary.setDataset(dataset, 'book-a');
+
+    const state = useAppStore.getState();
+    expect(state.settings.difficultyFilter).toBe('hard');
+    expect(state.vocabulary.currentDataset).toEqual(dataset);
+    expect(state.vocabulary.filteredDataset).toEqual([dataset[2]]);
+    expect(state.vocabulary.currentItem).toBe(dataset[2]);
+    expect(state.progress.totalItems).toBe(1);
+  });
+
+  it('uses settings.difficultyFilter as the source of truth when the setting changes', () => {
+    const store = useAppStore.getState();
+
+    store.vocabulary.setDataset(dataset, 'book-a');
+    store.settings.updateSetting('difficultyFilter', 'normal');
+
+    let state = useAppStore.getState();
+    expect(state.vocabulary.filteredDataset).toEqual([dataset[1]]);
+    expect(state.vocabulary.currentItem).toBe(dataset[1]);
+    expect(state.progress.totalItems).toBe(1);
+
+    store.settings.updateSetting('difficultyFilter', 'all');
+    state = useAppStore.getState();
+    expect(state.vocabulary.filteredDataset).toEqual(dataset);
+    expect(state.vocabulary.currentItem).toBe(dataset[0]);
+    expect(state.progress.totalItems).toBe(dataset.length);
+  });
+
+  it('resetSettings restores the full dataset after a difficulty filter was active', () => {
+    const store = useAppStore.getState();
+
+    store.vocabulary.setDataset(dataset, 'book-a');
+    store.settings.updateSetting('difficultyFilter', 'easy');
+    expect(useAppStore.getState().vocabulary.filteredDataset).toEqual([dataset[0]]);
+
+    store.settings.resetSettings();
+
+    const state = useAppStore.getState();
+    expect(state.settings.difficultyFilter).toBe('all');
+    expect(state.vocabulary.filteredDataset).toEqual(dataset);
+    expect(state.progress.totalItems).toBe(dataset.length);
   });
 
   it('resetProgress clears the active dataset id and per dataset index memory', () => {

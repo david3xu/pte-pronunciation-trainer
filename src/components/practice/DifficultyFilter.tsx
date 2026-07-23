@@ -23,8 +23,6 @@ const DifficultyFilter: React.FC = () => {
 
   const handleDifficultyChange = (difficulty: Difficulty) => {
     settings.updateSetting('difficultyFilter', difficulty);
-    // Also filter the vocabulary
-    vocabulary.filterByDifficulty(difficulty);
   };
 
   // Count items for each difficulty

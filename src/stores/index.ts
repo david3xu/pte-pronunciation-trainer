@@ -28,7 +28,7 @@ import { authService } from '../services/supabase/authService';
 import { syncService } from '../services/supabase/syncService';
 import { appConfig } from '../config/AppConfig';
 
-import { type PracticeItem, type VocabularyTerm } from '../types/dataset.types';
+import { type Difficulty, type PracticeItem, type VocabularyTerm } from '../types/dataset.types';
 import type {
     AudioState,
     AuthState,
@@ -91,6 +91,21 @@ const trackVocabularyPractice = (
     mode,
   });
 };
+
+const getItemDifficulty = (item: VocabularyTerm | PracticeItem): Difficulty | undefined => {
+  if ('difficulty' in item && item.difficulty) return item.difficulty;
+  if ('metadata' in item && item.metadata?.difficulty) return item.metadata.difficulty;
+  return undefined;
+};
+
+const filterDatasetByDifficulty = (
+  dataset: (VocabularyTerm | PracticeItem)[],
+  difficulty: Difficulty | 'all'
+): (VocabularyTerm | PracticeItem)[] => (
+  difficulty === 'all'
+    ? dataset
+    : dataset.filter((item) => getItemDifficulty(item) === difficulty)
+);
 
 // Combined store type
 export interface AppState {
@@ -202,28 +217,97 @@ export const useAppStore = create<AppState>()(
                 (window as any).analyticsService.trackSettingChanged(key, value);
               }
 
-              set((state) => ({ settings: { ...state.settings, [key]: value } }));
+              set((state) => {
+                const nextSettings = { ...state.settings, [key]: value };
+
+                if (key !== 'difficultyFilter') {
+                  return { settings: nextSettings };
+                }
+
+                const difficulty = value as Difficulty | 'all';
+                const itemsPerPage = state.vocabulary.itemsPerPage;
+                const filteredDataset = filterDatasetByDifficulty(
+                  state.vocabulary.currentDataset,
+                  difficulty
+                );
+                const displayedItems = filteredDataset.slice(0, itemsPerPage);
+                const currentItem = (filteredDataset[0] ?? null) as VocabularyTerm | PracticeItem | null;
+                const activeDatasetId = state.progress.activeDatasetId;
+
+                return {
+                  settings: nextSettings,
+                  vocabulary: {
+                    ...state.vocabulary,
+                    filteredDataset,
+                    displayedItems,
+                    currentItem,
+                    totalCount: filteredDataset.length,
+                    currentPage: 1,
+                    hasMore: filteredDataset.length > itemsPerPage,
+                  },
+                  audio: {
+                    ...state.audio,
+                    currentIndex: 0,
+                  },
+                  progress: {
+                    ...state.progress,
+                    currentIndex: 0,
+                    totalItems: filteredDataset.length,
+                    indexByDataset: activeDatasetId
+                      ? { ...state.progress.indexByDataset, [activeDatasetId]: 0 }
+                      : state.progress.indexByDataset,
+                  },
+                };
+              });
             },
-            resetSettings: () => set((state) => ({
-              settings: {
-                ...state.settings,
-                practiceType: 'vocabulary',
-                practiceMode: null,
-                writingMode: null,
-                vocabularyBook: DEFAULT_VOCABULARY_BOOK,
-                datasetId: DEFAULT_VOCABULARY_BOOK,
-                autoPlay: true, // Default ON
-                backgroundAudioMode: true, // Real-audio playback is the default
-                autoSwitchBooks: false, // Default OFF
-                showPhonetic: true,
-                ttsRate: DEFAULT_TTS_RATE,
-                ttsVoice: null, // Browser Default as default
-                vocabRepeatCount: 1, // Default: speak each word once
-                difficultyFilter: 'all',
-                theme: 'auto', // Default: follow system preference
-                isPanelOpen: false,
-              }
-            })),
+            resetSettings: () => set((state) => {
+              const itemsPerPage = state.vocabulary.itemsPerPage;
+              const displayedItems = state.vocabulary.currentDataset.slice(0, itemsPerPage);
+              const currentItem = (state.vocabulary.currentDataset[0] ?? null) as VocabularyTerm | PracticeItem | null;
+              const activeDatasetId = state.progress.activeDatasetId;
+
+              return {
+                settings: {
+                  ...state.settings,
+                  practiceType: 'vocabulary',
+                  practiceMode: null,
+                  writingMode: null,
+                  vocabularyBook: DEFAULT_VOCABULARY_BOOK,
+                  datasetId: DEFAULT_VOCABULARY_BOOK,
+                  autoPlay: true, // Default ON
+                  backgroundAudioMode: true, // Real-audio playback is the default
+                  autoSwitchBooks: false, // Default OFF
+                  showPhonetic: true,
+                  ttsRate: DEFAULT_TTS_RATE,
+                  ttsVoice: null, // Browser Default as default
+                  vocabRepeatCount: 1, // Default: speak each word once
+                  difficultyFilter: 'all',
+                  theme: 'auto', // Default: follow system preference
+                  isPanelOpen: false,
+                },
+                vocabulary: {
+                  ...state.vocabulary,
+                  filteredDataset: state.vocabulary.currentDataset,
+                  displayedItems,
+                  currentItem,
+                  totalCount: state.vocabulary.currentDataset.length,
+                  currentPage: 1,
+                  hasMore: state.vocabulary.currentDataset.length > itemsPerPage,
+                },
+                audio: {
+                  ...state.audio,
+                  currentIndex: 0,
+                },
+                progress: {
+                  ...state.progress,
+                  currentIndex: 0,
+                  totalItems: state.vocabulary.currentDataset.length,
+                  indexByDataset: activeDatasetId
+                    ? { ...state.progress.indexByDataset, [activeDatasetId]: 0 }
+                    : state.progress.indexByDataset,
+                },
+              };
+            }),
             togglePanel: () => set((state) => ({ settings: { ...state.settings, isPanelOpen: !state.settings.isPanelOpen } })),
           },
 
@@ -242,28 +326,29 @@ export const useAppStore = create<AppState>()(
             hasMore: false,
             setDataset: (dataset, mode) => {
               const itemsPerPage = 50;
-              const displayedItems = dataset.slice(0, itemsPerPage);
+              const filteredDataset = filterDatasetByDifficulty(dataset, get().settings.difficultyFilter);
+              const displayedItems = filteredDataset.slice(0, itemsPerPage);
 
               // Restore this dataset's saved position, or start at the first item.
               const savedIndex = get().progress.indexByDataset[mode];
               const restoredIndex =
-                typeof savedIndex === 'number' && savedIndex >= 0 && savedIndex < dataset.length
+                typeof savedIndex === 'number' && savedIndex >= 0 && savedIndex < filteredDataset.length
                   ? savedIndex
                   : 0;
-              const restoredItem = (dataset[restoredIndex] ?? null) as VocabularyTerm | PracticeItem | null;
+              const restoredItem = (filteredDataset[restoredIndex] ?? null) as VocabularyTerm | PracticeItem | null;
 
               set((state) => ({
                 vocabulary: {
                   ...state.vocabulary,
                   currentDataset: dataset,
-                  filteredDataset: dataset,
+                  filteredDataset,
                   displayedItems,
                   currentItem: restoredItem,
                   mode,
-                  totalCount: dataset.length,
+                  totalCount: filteredDataset.length,
                   currentPage: 1,
                   itemsPerPage,
-                  hasMore: dataset.length > itemsPerPage,
+                  hasMore: filteredDataset.length > itemsPerPage,
                   isLoading: false,
                   error: null,
                 },
@@ -275,7 +360,7 @@ export const useAppStore = create<AppState>()(
                   ...state.progress,
                   activeDatasetId: mode,
                   currentIndex: restoredIndex,
-                  totalItems: dataset.length,
+                  totalItems: filteredDataset.length,
                   completedItems: new Set(state.progress.completedItemsByDataset[mode] ?? []),
                   indexByDataset: {
                     ...state.progress.indexByDataset,
@@ -326,14 +411,7 @@ export const useAppStore = create<AppState>()(
               const itemsPerPage = get().vocabulary.itemsPerPage;
               const activeDatasetId = get().progress.activeDatasetId;
 
-              const nextDataset =
-                difficulty === 'all'
-                  ? currentDataset
-                  : currentDataset.filter((item) => {
-                      if ('difficulty' in item && item.difficulty) return item.difficulty === difficulty;
-                      if ('metadata' in item && item.metadata?.difficulty) return item.metadata.difficulty === difficulty;
-                      return false;
-                    });
+              const nextDataset = filterDatasetByDifficulty(currentDataset, difficulty);
 
               const displayedItems = nextDataset.slice(0, itemsPerPage);
               // Changing the visible set resets to its first item so the index,
@@ -341,6 +419,10 @@ export const useAppStore = create<AppState>()(
               const firstItem = (nextDataset[0] ?? null) as VocabularyTerm | PracticeItem | null;
 
               set((state) => ({
+                settings: {
+                  ...state.settings,
+                  difficultyFilter: difficulty,
+                },
                 vocabulary: {
                   ...state.vocabulary,
                   filteredDataset: nextDataset,

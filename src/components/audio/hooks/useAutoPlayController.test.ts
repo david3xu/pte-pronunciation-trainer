@@ -65,7 +65,7 @@ describe('useAutoPlayController - Play gesture audio start', () => {
     expect(backgroundAudioService.primeForUserGesture).not.toHaveBeenCalled();
   });
 
-  it('passes British sounds-like text as the second media-session row', () => {
+  it('uses British sounds-like text as the bright media-session title row', () => {
     const store = useAppStore.getState();
     store.vocabulary.setCurrentItem(
       {
@@ -83,8 +83,8 @@ describe('useAutoPlayController - Play gesture audio start', () => {
     expect(backgroundAudioService.playTextFromUserGesture).toHaveBeenCalledWith(
       'consoles',
       expect.objectContaining({
-        mediaTitle: 'consoles',
-        mediaArtist: 'KON-solz',
+        mediaTitle: 'KON-solz',
+        mediaArtist: 'consoles',
       })
     );
   });
@@ -187,5 +187,27 @@ describe('useAutoPlayController - playback error handling', () => {
     expect(useAppStore.getState().audio.isAutoPlaying).toBe(false);
 
     notifySpy.mockRestore();
+  });
+
+  it('uses British sounds-like text as the bright media-session title row during autoplay', async () => {
+    const store = useAppStore.getState();
+    store.vocabulary.setCurrentItem(
+      {
+        english: 'availability',
+        id: 'autoplay-metadata-test',
+        phonetic: { british: 'uh-vay-luh-BIL-uh-tee' },
+      } as unknown as Parameters<typeof store.vocabulary.setCurrentItem>[0]
+    );
+
+    renderHook(() => useAutoPlayController());
+    await flushAutoPlay();
+
+    expect(backgroundAudioService.playText).toHaveBeenCalledWith(
+      'availability',
+      expect.objectContaining({
+        mediaTitle: 'uh-vay-luh-BIL-uh-tee',
+        mediaArtist: 'availability',
+      })
+    );
   });
 });

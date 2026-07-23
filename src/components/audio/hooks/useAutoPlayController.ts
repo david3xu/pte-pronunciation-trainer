@@ -39,6 +39,16 @@ const getBritishSoundsLike = (item: LearningItem): string | undefined => {
     || item.pronunciation?.single?.phonetic;
 };
 
+const getLockScreenMetadata = (
+  text: string,
+  item: LearningItem
+): { mediaTitle: string; mediaArtist: string } => {
+  const soundsLike = getBritishSoundsLike(item);
+  return soundsLike
+    ? { mediaTitle: soundsLike, mediaArtist: text }
+    : { mediaTitle: text, mediaArtist: '' };
+};
+
 const getDelay = (path: string, fallback: number): number => {
   const configuredDelay = appConfig.get(path);
   return typeof configuredDelay === 'number' ? configuredDelay : fallback;
@@ -102,7 +112,7 @@ export const useAutoPlayController = () => {
     text: string,
     rate: number,
     volume: number,
-    mediaArtist?: string
+    metadata: { mediaTitle: string; mediaArtist: string }
   ): Promise<void> => {
     return new Promise<void>((resolve, reject) => {
       backgroundAudioService.setHandlers({
@@ -127,8 +137,7 @@ export const useAutoPlayController = () => {
         backgroundAudioService.playText(text, {
           rate,
           volume,
-          mediaTitle: text,
-          mediaArtist,
+          ...metadata,
         }).catch((error) => reject(error));
       }
     });
@@ -218,7 +227,7 @@ export const useAutoPlayController = () => {
 
       const dataset = getActiveDataset();
       const cleanedText = cleanText(textToSpeak);
-      const britishSoundsLike = getBritishSoundsLike(currentItem as LearningItem) ?? '';
+      const lockScreenMetadata = getLockScreenMetadata(cleanedText, currentItem as LearningItem);
       console.log(`[useAutoPlayController #${effectId}] 🎤 Preparing to speak:`, cleanedText.substring(0, 30), `(${audio.currentIndex + 1}/${dataset?.length || 0})`);
 
       try {
@@ -241,7 +250,7 @@ export const useAutoPlayController = () => {
                 cleanedText,
                 settings.ttsRate,
                 useAppStore.getState().audio.volume,
-                britishSoundsLike
+                lockScreenMetadata
               );
             } catch (audioError) {
               // Intentional aborts (a newer item/effect superseding this one, or
@@ -387,8 +396,7 @@ export const useAutoPlayController = () => {
       void backgroundAudioService.playTextFromUserGesture(cleanedText, {
         rate: settings.ttsRate,
         volume: useAppStore.getState().audio.volume,
-        mediaTitle: cleanedText,
-        mediaArtist: getBritishSoundsLike(currentItem as LearningItem) ?? '',
+        ...getLockScreenMetadata(cleanedText, currentItem as LearningItem),
       }).catch((error) => {
         console.error('[useAutoPlayController] Play gesture audio start failed:', error);
         backgroundAudioService.stop();

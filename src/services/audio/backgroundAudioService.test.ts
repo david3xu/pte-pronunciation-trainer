@@ -195,6 +195,44 @@ describe('BackgroundAudioService', () => {
     expect(lastFakeAudio?.volume).toBe(0.7);
   });
 
+  it('sets compact media metadata with no artwork', async () => {
+    const service = new BackgroundAudioService();
+    let capturedMetadata: MediaMetadataInit | null = null;
+    const originalMediaSession = Object.getOwnPropertyDescriptor(navigator, 'mediaSession');
+
+    Object.defineProperty(navigator, 'mediaSession', {
+      configurable: true,
+      value: {
+        playbackState: 'none',
+        setActionHandler: vi.fn(),
+      },
+    });
+    vi.stubGlobal('MediaMetadata', class {
+      constructor(metadata: MediaMetadataInit) {
+        capturedMetadata = metadata;
+      }
+    });
+
+    try {
+      await service.playTextFromUserGesture('consoles', {
+        mediaTitle: 'consoles',
+        mediaArtist: 'KON-solz',
+      });
+
+      expect(capturedMetadata).toEqual({
+        title: 'consoles',
+        artist: 'KON-solz',
+        artwork: [],
+      });
+    } finally {
+      if (originalMediaSession) {
+        Object.defineProperty(navigator, 'mediaSession', originalMediaSession);
+      } else {
+        delete (navigator as { mediaSession?: MediaSession }).mediaSession;
+      }
+    }
+  });
+
   // ---- volume ----
 
   it('applies the requested volume in playText', async () => {

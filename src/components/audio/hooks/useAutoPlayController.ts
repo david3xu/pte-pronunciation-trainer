@@ -10,6 +10,11 @@ import { cleanText } from '../../../utils/textUtils';
 type LearningItem = (VocabularyItem | PracticeItem) & Partial<{
   english: string;
   fullText: string;
+  pronunciation: {
+    british?: { phonetic?: string };
+    phonetic?: string;
+    single?: { phonetic?: string };
+  };
 }>;
 
 const sleep = (ms: number): Promise<void> => new Promise((resolve) => window.setTimeout(resolve, ms));
@@ -24,6 +29,15 @@ const getItemText = (item: LearningItem): string | undefined => {
 };
 
 const getItemLabel = (item: LearningItem): string => getItemText(item)?.substring(0, 30) || 'unknown';
+
+const getBritishSoundsLike = (item: LearningItem): string | undefined => {
+  if ('phonetic' in item) {
+    return item.phonetic.british || item.phonetic.single;
+  }
+  return item.pronunciation?.british?.phonetic
+    || item.pronunciation?.phonetic
+    || item.pronunciation?.single?.phonetic;
+};
 
 const getDelay = (path: string, fallback: number): number => {
   const configuredDelay = appConfig.get(path);
@@ -84,7 +98,12 @@ export const useAutoPlayController = () => {
    * rather than a timer. Rejects if the audio cannot be fetched or played so
    * the caller can surface a clear error instead of silently pretending.
    */
-  const playBackgroundAndWaitForEnd = (text: string, rate: number, volume: number): Promise<void> => {
+  const playBackgroundAndWaitForEnd = (
+    text: string,
+    rate: number,
+    volume: number,
+    mediaArtist?: string
+  ): Promise<void> => {
     return new Promise<void>((resolve, reject) => {
       backgroundAudioService.setHandlers({
         onEnded: () => resolve(),
@@ -105,7 +124,12 @@ export const useAutoPlayController = () => {
       if (backgroundAudioService.canResume() && backgroundAudioService.getLoadedText() === text) {
         backgroundAudioService.resume(rate, volume).catch((error) => reject(error));
       } else {
-        backgroundAudioService.playText(text, { rate, volume }).catch((error) => reject(error));
+        backgroundAudioService.playText(text, {
+          rate,
+          volume,
+          mediaTitle: text,
+          mediaArtist,
+        }).catch((error) => reject(error));
       }
     });
   };
@@ -194,6 +218,7 @@ export const useAutoPlayController = () => {
 
       const dataset = getActiveDataset();
       const cleanedText = cleanText(textToSpeak);
+      const britishSoundsLike = getBritishSoundsLike(currentItem as LearningItem);
       console.log(`[useAutoPlayController #${effectId}] 🎤 Preparing to speak:`, cleanedText.substring(0, 30), `(${audio.currentIndex + 1}/${dataset?.length || 0})`);
 
       try {
@@ -212,7 +237,12 @@ export const useAutoPlayController = () => {
 
             console.log(`[useAutoPlayController #${effectId}] 🔊 Speaking repeat ${i + 1}/${repeatCount}...`);
             try {
-              await playBackgroundAndWaitForEnd(cleanedText, settings.ttsRate, useAppStore.getState().audio.volume);
+              await playBackgroundAndWaitForEnd(
+                cleanedText,
+                settings.ttsRate,
+                useAppStore.getState().audio.volume,
+                britishSoundsLike
+              );
             } catch (audioError) {
               // Intentional aborts (a newer item/effect superseding this one, or
               // an explicit stop) are not real failures. Only surface an error
@@ -353,9 +383,12 @@ export const useAutoPlayController = () => {
     // real MP3 source is allowed by mobile/PWA autoplay policy.
     const textToSpeak = getItemText(currentItem as LearningItem);
     if (textToSpeak) {
-      void backgroundAudioService.playTextFromUserGesture(cleanText(textToSpeak), {
+      const cleanedText = cleanText(textToSpeak);
+      void backgroundAudioService.playTextFromUserGesture(cleanedText, {
         rate: settings.ttsRate,
         volume: useAppStore.getState().audio.volume,
+        mediaTitle: cleanedText,
+        mediaArtist: getBritishSoundsLike(currentItem as LearningItem),
       }).catch((error) => {
         console.error('[useAutoPlayController] Play gesture audio start failed:', error);
         backgroundAudioService.stop();

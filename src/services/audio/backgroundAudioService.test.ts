@@ -224,6 +224,17 @@ describe('BackgroundAudioService', () => {
         artist: 'KON-solz',
         artwork: [],
       });
+
+      await service.playTextFromUserGesture('unknown word', {
+        mediaTitle: 'unknown word',
+        mediaArtist: '',
+      });
+
+      expect(capturedMetadata).toEqual({
+        title: 'unknown word',
+        artist: '',
+        artwork: [],
+      });
     } finally {
       if (originalMediaSession) {
         Object.defineProperty(navigator, 'mediaSession', originalMediaSession);

@@ -28,6 +28,15 @@ interface SWTInterfaceProps {
 
 const task = TYPING_TASKS.swt;
 
+const monkeytypeColors = {
+  background: '#323437',
+  border: '#2c2e31',
+  correct: '#d1d0c5',
+  wrong: '#ca4754',
+  current: '#e2b714',
+  untyped: '#646669',
+};
+
 const SWTInterface: React.FC<SWTInterfaceProps> = ({
   item,
   sessionManager,
@@ -245,22 +254,28 @@ const SWTInterface: React.FC<SWTInterfaceProps> = ({
               visual UI; the textarea above only captures keystrokes. */}
           <div
             data-testid="typing-target"
-            className="mb-6 min-h-[9rem] cursor-text select-none whitespace-pre-wrap break-words rounded-md border border-app-border bg-app-bg-secondary p-4 font-mono text-xl leading-relaxed tracking-wide"
+            className="mb-6 min-h-[9rem] cursor-text select-none whitespace-pre-wrap break-words rounded-md border p-4 font-mono text-xl leading-relaxed tracking-wide"
             onClick={() => inputRef.current?.focus()}
+            style={{ backgroundColor: monkeytypeColors.background, borderColor: monkeytypeColors.border }}
           >
             {targetText.split('').map((char, index) => {
               const isTyped = index < typed.length;
               const isCurrent = index === typed.length;
               const isCorrectChar = isTyped && typed[index] === char;
               const isWrongChar = isTyped && typed[index] !== char;
-              const colorClass = isCorrectChar
-                ? 'text-app-text-primary'
-                : isWrongChar
-                  ? 'text-red-400 underline'
-                  : 'text-app-text-muted';
-              const caretClass = isCurrent ? 'border-l-2 border-yellow-400' : '';
               return (
-                <span key={index} className={`${colorClass} ${caretClass}`}>
+                <span
+                  key={index}
+                  className={isWrongChar ? 'underline' : undefined}
+                  style={{
+                    color: isCorrectChar
+                      ? monkeytypeColors.correct
+                      : isWrongChar
+                        ? monkeytypeColors.wrong
+                        : monkeytypeColors.untyped,
+                    borderLeft: isCurrent ? `2px solid ${monkeytypeColors.current}` : undefined,
+                  }}
+                >
                   {char}
                 </span>
               );

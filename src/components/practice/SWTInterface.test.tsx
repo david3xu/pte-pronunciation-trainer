@@ -78,6 +78,20 @@ describe('SWTInterface', () => {
     expect(getTypingInput()).toBeInTheDocument(); // still in the typing view, not finished
   });
 
+  it('uses distinct Monkeytype-style colors for wrong, correct, current, and untyped characters', async () => {
+    const user = userEvent.setup();
+    /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
+    render(<SWTInterface item={sampleItem as any} />);
+
+    await user.type(getTypingInput(), 'Xy');
+
+    const chars = Array.from(screen.getByTestId('typing-target').querySelectorAll('span'));
+    expect(chars[0]).toHaveStyle({ color: '#ca4754' }); // wrong
+    expect(chars[1]).toHaveStyle({ color: '#d1d0c5' }); // correct
+    expect(chars[2]).toHaveStyle({ color: '#646669', borderLeft: '2px solid #e2b714' }); // current
+    expect(chars[3]).toHaveStyle({ color: '#646669' }); // untyped
+  });
+
   it('shows no PTE validity language anywhere: no words/sentences bounds, no Valid/Invalid', async () => {
     const user = userEvent.setup();
     /* eslint-disable-next-line @typescript-eslint/no-explicit-any */

@@ -50,6 +50,7 @@ const SWTInterface: React.FC<SWTInterfaceProps> = ({
   const targetText: string = swtItem?.answer || '';
   const difficulty: string = swtItem?.metadata?.difficulty || 'normal';
   /* eslint-enable @typescript-eslint/no-explicit-any */
+  const hasReferencePassage = passage.trim().length > 0;
 
   const [typed, setTyped] = useState('');
   const [startedAt, setStartedAt] = useState<number | null>(null);
@@ -286,9 +287,11 @@ const SWTInterface: React.FC<SWTInterfaceProps> = ({
             <button type="button" onClick={handleRestart} className={navButtonClass}>
               Restart
             </button>
-            <button type="button" onClick={() => setShowPassage((prev) => !prev)} className={navButtonClass}>
-              {showPassage ? 'Hide reference passage' : 'Show reference passage'}
-            </button>
+            {hasReferencePassage && (
+              <button type="button" onClick={() => setShowPassage((prev) => !prev)} className={navButtonClass}>
+                {showPassage ? 'Hide reference passage' : 'Show reference passage'}
+              </button>
+            )}
             <button
               type="button"
               onClick={handleFinishEarly}
@@ -309,7 +312,7 @@ const SWTInterface: React.FC<SWTInterfaceProps> = ({
 
           {/* Kept small and collapsed by default: the passage is reference
               material, never the typing target. */}
-          {showPassage && (
+          {hasReferencePassage && showPassage && (
             <div className="mt-4">
               <p className="mb-1 text-xs uppercase tracking-wide text-app-text-muted">Reference passage</p>
               <p className="break-words text-sm leading-relaxed text-app-text-secondary">{passage}</p>

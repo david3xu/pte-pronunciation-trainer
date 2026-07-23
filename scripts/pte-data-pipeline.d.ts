@@ -23,7 +23,11 @@ export class SWTMarkdownExtractor {
   static extract(filePath: string, fsModule: MinimalFsModule, sourceSet: string): ParsedSWTItem[];
 }
 
-export const SWT_SOURCE_FILES: string[];
+export class SWTAnswerTypingMarkdownExtractor {
+  static extract(filePath: string, fsModule: MinimalFsModule, sourceSet: string): ParsedSWTItem[];
+}
+
+export const SWT_ANSWER_TYPING_SOURCE_FILE: string;
 
 export class PTEDataPipeline {
   constructor(config?: Record<string, unknown>);

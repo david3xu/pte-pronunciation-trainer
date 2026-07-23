@@ -16,12 +16,12 @@ const sampleItem = {
   passage: 'This is the original reference passage that should never be the typing target.',
   answer: 'Type this exact model answer for practice.',
   wordCount: 4,
-  sourceSet: 'PTE_SWT_Practice_Examples',
+  sourceSet: 'swt-answer-typing',
   metadata: {
     difficulty: 'easy' as const,
     category: 'pte-swt' as const,
     source: 'pte-swt',
-    tags: ['swt', 'summarize-written-text'],
+    tags: ['swt', 'answer-typing', 'monkeytype'],
   },
 };
 
@@ -43,6 +43,12 @@ describe('SWTInterface', () => {
     render(<SWTInterface item={sampleItem as any} />);
     expect(screen.queryByText(sampleItem.passage)).not.toBeInTheDocument();
     expect(screen.getByRole('button', { name: /show reference passage/i })).toBeInTheDocument();
+  });
+
+  it('does not show a reference passage control for answer-only source data', () => {
+    /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
+    render(<SWTInterface item={{ ...sampleItem, passage: '' } as any} />);
+    expect(screen.queryByRole('button', { name: /show reference passage/i })).not.toBeInTheDocument();
   });
 
   it('reveals the passage only as a small reference when explicitly toggled', async () => {

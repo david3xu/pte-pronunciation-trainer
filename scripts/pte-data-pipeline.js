@@ -210,15 +210,7 @@ class PTETermsExtractor {
   }
 }
 
-// SWT (Summarize Written Text) source files live under data/source/pte/swt/.
-// See docs/SWT_MONKEYTYPE_DESIGN.md for the source format and dataset shape
-// this extractor must produce.
-const SWT_SOURCE_FILES = [
-  'PTE_SWT_Practice_Examples.md',
-  'PTE_SWT_Practice_Examples_Set2.md',
-  'PTE_SWT_Practice_Examples_Set3.md',
-  'PTE_SWT_Practice_Examples_Set4.md',
-];
+const SWT_ANSWER_TYPING_SOURCE_FILE = 'swt-answer-typing.md';
 
 /**
  * SWTMarkdownExtractor - Parses PTE Summarize Written Text markdown files.
@@ -392,6 +384,49 @@ class SWTMarkdownExtractor {
 }
 
 /**
+ * Parses the clean SWT Monkeytype source used by the app.
+ *
+ * Source format:
+ *   1. Exact target answer text
+ *   2. Another exact target answer text
+ *
+ * The app is practicing typing the SWT model answer, not simulating the real
+ * PTE SWT task, so this app-facing source deliberately contains answers only.
+ */
+class SWTAnswerTypingMarkdownExtractor {
+  static extract(filePath, fsModule, sourceSet) {
+    if (!fsModule.existsSync(filePath)) {
+      throw new Error(`SWT answer typing source file not found: ${filePath}`);
+    }
+
+    const content = fsModule.readFileSync(filePath, 'utf-8');
+    const items = [];
+
+    for (const line of content.split('\n')) {
+      const trimmedLine = line.trim();
+      if (!trimmedLine || trimmedLine.startsWith('#') || trimmedLine.startsWith('<!--')) continue;
+
+      const match = trimmedLine.match(/^\d+\.\s+(.+)$/);
+      if (!match) continue;
+
+      const answer = SWTMarkdownExtractor.cleanInline(match[1]);
+      if (!answer) continue;
+
+      items.push({
+        title: `Answer ${items.length + 1}`,
+        passage: '',
+        answer,
+        wordCount: answer.split(/\s+/).filter(Boolean).length,
+        sourceSet,
+        difficulty: 'normal',
+      });
+    }
+
+    return items;
+  }
+}
+
+/**
  * PTESegmentsExtractor - Parses PTE segment markdown files (RS, WFD)
  */
 class PTESegmentsExtractor {
@@ -526,31 +561,23 @@ class PTEDataPipeline {
   }
 
   /**
-   * Generate the combined SWT (Summarize Written Text) dataset from the four
-   * source markdown files in data/source/pte/swt/. See
-   * docs/SWT_MONKEYTYPE_DESIGN.md for the source format and target shape.
+   * Generate SWT Answer Typing dataset from one clean answer-only markdown
+   * source. The older full SWT example files may remain as raw references,
+   * but they are not app-facing source data for Monkeytype mode.
    */
   async generateSWTDataset() {
     console.log('\n📝 STAGE 2.6: Generating SWT Dataset');
 
     const swtDir = path.join(this.config.inputDir, 'swt');
-    const parsedItems = [];
+    const filePath = path.join(swtDir, SWT_ANSWER_TYPING_SOURCE_FILE);
+    const sourceSet = SWT_ANSWER_TYPING_SOURCE_FILE.replace(/\.md$/, '');
+    let parsedItems = [];
 
-    for (const fileName of SWT_SOURCE_FILES) {
-      const filePath = path.join(swtDir, fileName);
-      if (!fs.existsSync(filePath)) {
-        console.warn(`   ⚠️ SWT source file not found, skipping: ${filePath}`);
-        continue;
-      }
-
-      const sourceSet = fileName.replace(/\.md$/, '');
-      try {
-        const parsed = SWTMarkdownExtractor.extract(filePath, fs, sourceSet);
-        console.log(`   🔄 Parsed ${parsed.length} SWT examples from ${fileName}`);
-        parsedItems.push(...parsed);
-      } catch (e) {
-        console.warn(`   ⚠️  Failed to parse ${fileName}: ${e.message}`);
-      }
+    try {
+      parsedItems = SWTAnswerTypingMarkdownExtractor.extract(filePath, fs, sourceSet);
+      console.log(`   🔄 Parsed ${parsedItems.length} SWT answer targets from ${SWT_ANSWER_TYPING_SOURCE_FILE}`);
+    } catch (e) {
+      console.warn(`   ⚠️  Failed to parse ${SWT_ANSWER_TYPING_SOURCE_FILE}: ${e.message}`);
     }
 
     const items = parsedItems.map((item, index) => ({
@@ -564,7 +591,7 @@ class PTEDataPipeline {
         difficulty: item.difficulty,
         category: 'pte-swt',
         source: 'pte-swt',
-        tags: ['swt', 'summarize-written-text'],
+        tags: ['swt', 'answer-typing', 'monkeytype'],
       },
     }));
 
@@ -572,7 +599,7 @@ class PTEDataPipeline {
       metadata: {
         generated: new Date().toISOString(),
         source: 'pte-swt',
-        description: 'PTE Summarize Written Text practice passages',
+        description: 'SWT answer typing practice targets',
         totalTerms: items.length,
         version: '1.0',
       },
@@ -812,5 +839,10 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   });
 }
 
-export { PTEDataPipeline, SWTMarkdownExtractor, SWT_SOURCE_FILES };
+export {
+  PTEDataPipeline,
+  SWTMarkdownExtractor,
+  SWTAnswerTypingMarkdownExtractor,
+  SWT_ANSWER_TYPING_SOURCE_FILE,
+};
 export default PTEDataPipeline;

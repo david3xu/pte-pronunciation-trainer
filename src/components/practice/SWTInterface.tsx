@@ -1,24 +1,22 @@
 /**
- * SWT (Summarize Written Text) Interface Component
+ * SWT Answer Typing Interface Component
  *
- * A minimal, Monkeytype inspired practice page for PTE Summarize Written
- * Text. Unlike WFD, SWT has no single exact target text, so red never means
- * "different from the model answer" here. Red only ever means a PTE form
- * problem: empty, too short, too long, or more than the allowed sentences.
- *
- * Kept to four parts: Header, compact status bar (folds in what the design
- * doc called Test options plus live stats), Typing area, Results. The task
- * rules (word/sentence bounds, time limit, placeholder) all come from
- * WRITING_TASKS.swt, and the counting/validation logic is task-neutral, so
- * a future writing task like SST can reuse this same pattern.
+ * Monkeytype-style exact-text typing practice using a real PTE Summarize
+ * Written Text model answer as the target text. This is deliberately not a
+ * real PTE SWT test: there is no free-form summary writing and no PTE form
+ * validation (word count bounds, sentence count) here. The user types the
+ * exact target answer, the same way Monkeytype has one exact target text,
+ * and is scored on typing accuracy and speed instead. The original passage
+ * is kept only as a small, collapsed reference, never the typing target.
  */
 
 import React, { useEffect, useRef, useState } from 'react';
-import { WRITING_TASKS } from '../../config/writingTasks';
+import { TYPING_TASKS } from '../../config/typingTasks';
 import type { SessionManager } from '../../services/session/sessionManager';
 import type { ItemType } from '../../types/database';
 import type { PracticeItem } from '../../types/dataset.types';
-import { countSentences, countWords, formatTimer, getFormStatus } from '../../utils/writingTaskValidation';
+import { getTypingProgress, getWordsPerMinute, type TypingProgress } from '../../utils/typingPracticeMetrics';
+import { formatTimer } from '../../utils/writingTaskValidation';
 
 interface SWTInterfaceProps {
   item: PracticeItem;
@@ -28,7 +26,7 @@ interface SWTInterfaceProps {
   onComplete?: (isCorrect?: boolean) => void;
 }
 
-const task = WRITING_TASKS.swt;
+const task = TYPING_TASKS.swt;
 
 const SWTInterface: React.FC<SWTInterfaceProps> = ({
   item,
@@ -40,31 +38,31 @@ const SWTInterface: React.FC<SWTInterfaceProps> = ({
   /* eslint-disable @typescript-eslint/no-explicit-any -- raw dataset item is a union; fields are read defensively */
   const swtItem = item as any;
   const passage: string = swtItem?.passage || '';
-  const modelAnswer: string = swtItem?.answer || '';
+  const targetText: string = swtItem?.answer || '';
   const difficulty: string = swtItem?.metadata?.difficulty || 'normal';
   /* eslint-enable @typescript-eslint/no-explicit-any */
 
-  const [answer, setAnswer] = useState('');
+  const [typed, setTyped] = useState('');
   const [startedAt, setStartedAt] = useState<number | null>(null);
-  const [remainingSeconds, setRemainingSeconds] = useState(task.timeLimitSeconds);
-  const [submitted, setSubmitted] = useState(false);
-  const [showModelAnswer, setShowModelAnswer] = useState(false);
+  const [elapsedSeconds, setElapsedSeconds] = useState(0);
+  const [finished, setFinished] = useState(false);
+  const [showPassage, setShowPassage] = useState(false);
+  const hasRecordedRef = useRef(false);
 
-  const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const inputRef = useRef<HTMLTextAreaElement>(null);
 
-  const wordCount = countWords(answer);
-  const sentenceCount = countSentences(answer);
-  const formStatus = getFormStatus(answer, wordCount, sentenceCount, task);
-  const elapsedSeconds = task.timeLimitSeconds - remainingSeconds;
+  const progress = getTypingProgress(targetText, typed);
+  const wpm = getWordsPerMinute(progress.typedLength, elapsedSeconds);
 
   // Resets local practice state. Called on Restart, on Next/Previous, and on
   // any item change regardless of which navigation path triggered it.
   const resetLocalState = () => {
-    setAnswer('');
+    setTyped('');
     setStartedAt(null);
-    setRemainingSeconds(task.timeLimitSeconds);
-    setSubmitted(false);
-    setShowModelAnswer(false);
+    setElapsedSeconds(0);
+    setFinished(false);
+    setShowPassage(false);
+    hasRecordedRef.current = false;
   };
 
   useEffect(() => {
@@ -72,113 +70,128 @@ const SWTInterface: React.FC<SWTInterfaceProps> = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [item]);
 
-  // Auto-focus the typing area on load and whenever a new item arrives.
+  // Auto-focus the typing capture input on load and whenever a new item arrives.
   useEffect(() => {
     const focusTimer = setTimeout(() => {
-      textareaRef.current?.focus();
+      inputRef.current?.focus();
     }, 100);
     return () => clearTimeout(focusTimer);
   }, [item]);
 
-  // Countdown ticks once started, and stops at zero or once submitted. One
-  // interval per start, self clearing at zero rather than recreated each tick.
+  // Elapsed stopwatch, not a countdown: this is typing practice, not a timed
+  // exam, so it ticks up from zero and stops once typing is finished. Ticks
+  // are computed fresh from Date.now() rather than incremented, so WPM stays
+  // accurate regardless of setInterval drift.
   useEffect(() => {
-    if (startedAt === null || submitted) return undefined;
-
+    if (startedAt === null || finished) return undefined;
     const interval = setInterval(() => {
-      setRemainingSeconds((prev) => {
-        if (prev <= 1) {
-          clearInterval(interval);
-          return 0;
-        }
-        return prev - 1;
-      });
+      setElapsedSeconds(Math.floor((Date.now() - startedAt) / 1000));
     }, 1000);
     return () => clearInterval(interval);
-  }, [startedAt, submitted]);
+  }, [startedAt, finished]);
 
-  const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    if (submitted) return;
-    if (startedAt === null) {
-      setStartedAt(Date.now());
-    }
-    setAnswer(e.target.value);
-  };
+  /**
+   * Records one attempt to the session, complete or not, so abandoned
+   * attempts show up in analytics too. onComplete (which feeds the app's
+   * broader progress tracking) is a separate concern, only fired for a
+   * genuine completion, not from here.
+   */
+  const recordSessionAttempt = (
+    finalTyped: string,
+    finalElapsedSeconds: number,
+    finalProgress: TypingProgress,
+    completed: boolean
+  ) => {
+    if (hasRecordedRef.current || !sessionManager || finalTyped.length === 0) return;
+    hasRecordedRef.current = true;
 
-  const handleSubmit = async () => {
-    if (!answer.trim() || submitted) return;
+    const finalWpm = getWordsPerMinute(finalProgress.typedLength, finalElapsedSeconds);
+    const isCorrect = completed && finalProgress.accuracyPercent >= task.accuracyThresholdPercent;
+    /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
+    const itemId = (item as any)?.id || `${task.id}-${Date.now()}`;
 
-    setSubmitted(true);
-    setShowModelAnswer(true);
-
-    if (sessionManager) {
-      try {
-        /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
-        const itemId = (item as any)?.id || `${task.id}-${Date.now()}`;
-        await sessionManager.recordItem({
-          item_id: itemId,
-          item_type: 'passage' as ItemType,
-          item_text: passage,
-          user_response: answer.trim(),
-          is_correct: formStatus.valid,
-          attempts: 1,
-          time_spent_sec: elapsedSeconds,
-          // session_items has no dedicated word/sentence count columns, so
-          // this is the one field built for a short human-readable note.
-          // task_type itself is recorded once at the session level, not
-          // per item (see AppContent's startSession call).
-          feedback: `${wordCount} word${wordCount === 1 ? '' : 's'}, ${sentenceCount} sentence${sentenceCount === 1 ? '' : 's'}, ${formStatus.label}`,
-        });
-      } catch (error) {
+    sessionManager
+      .recordItem({
+        item_id: itemId,
+        item_type: 'passage' as ItemType,
+        item_text: targetText,
+        user_response: finalTyped,
+        score: finalProgress.accuracyPercent,
+        is_correct: isCorrect,
+        attempts: 1,
+        time_spent_sec: finalElapsedSeconds,
+        feedback: `${finalWpm} WPM, ${finalProgress.accuracyPercent}% accuracy, ${finalProgress.errorChars} error${finalProgress.errorChars === 1 ? '' : 's'}${completed ? '' : ', incomplete'}`,
+      })
+      .catch((error) => {
         console.error('[SWTInterface] Failed to record session:', error);
         // Non-blocking: results still render even if session tracking fails.
-      }
-    }
+      });
+  };
 
-    if (onComplete) {
-      onComplete(formStatus.valid);
+  const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    if (finished) return;
+    const nextTyped = e.target.value.slice(0, targetText.length);
+    const now = Date.now();
+    const effectiveStartedAt = startedAt ?? now;
+    if (startedAt === null) {
+      setStartedAt(now);
+    }
+    setTyped(nextTyped);
+
+    if (targetText.length > 0 && nextTyped.length >= targetText.length) {
+      const finalElapsedSeconds = Math.floor((now - effectiveStartedAt) / 1000);
+      const finalProgress = getTypingProgress(targetText, nextTyped);
+      setElapsedSeconds(finalElapsedSeconds);
+      setFinished(true);
+      recordSessionAttempt(nextTyped, finalElapsedSeconds, finalProgress, true);
+      if (onComplete) {
+        onComplete(finalProgress.accuracyPercent >= task.accuracyThresholdPercent);
+      }
     }
   };
 
   const handleRestart = () => {
     resetLocalState();
-    setTimeout(() => textareaRef.current?.focus(), 100);
+    setTimeout(() => inputRef.current?.focus(), 100);
+  };
+
+  /**
+   * Ends the attempt early without navigating away, so an incomplete
+   * attempt has a real, visible Results state (matching "completed" the
+   * same view can show), not just a silent background recording.
+   */
+  const handleFinishEarly = () => {
+    if (finished || typed.length === 0) return;
+    const preciseElapsed = startedAt !== null ? Math.floor((Date.now() - startedAt) / 1000) : elapsedSeconds;
+    const finalProgress = getTypingProgress(targetText, typed);
+    setElapsedSeconds(preciseElapsed);
+    setFinished(true);
+    recordSessionAttempt(typed, preciseElapsed, finalProgress, finalProgress.completed);
   };
 
   const handleNext = () => {
+    if (!finished && typed.length > 0) {
+      const preciseElapsed = startedAt !== null ? Math.floor((Date.now() - startedAt) / 1000) : elapsedSeconds;
+      recordSessionAttempt(typed, preciseElapsed, getTypingProgress(targetText, typed), false);
+    }
     resetLocalState();
     if (onNext) onNext();
   };
 
   const handlePrevious = () => {
+    if (!finished && typed.length > 0) {
+      const preciseElapsed = startedAt !== null ? Math.floor((Date.now() - startedAt) / 1000) : elapsedSeconds;
+      recordSessionAttempt(typed, preciseElapsed, getTypingProgress(targetText, typed), false);
+    }
     resetLocalState();
     if (onPrevious) onPrevious();
   };
 
-  const statusColorClass = formStatus.valid ? 'text-yellow-400' : 'text-red-400';
-  const liveStatusLabel = startedAt === null ? 'Start typing' : formStatus.label;
-  const liveStatusClass = startedAt === null ? 'text-app-text-muted' : statusColorClass;
   const navButtonClass =
     'rounded border border-app-border px-4 py-2.5 text-app-text-secondary transition-colors hover:border-app-border-light hover:text-app-text-primary';
 
-  // Shared by the live typing view and the frozen results view, so the
-  // timer/word/sentence/status line only has one implementation.
-  const renderStatusBar = (label: string, labelColorClass: string, timerColorClass: string) => (
-    <div className="mb-4 flex flex-wrap items-center justify-center gap-x-5 gap-y-1 text-sm" aria-live="polite">
-      <span className={`font-mono text-xl ${timerColorClass}`}>{formatTimer(remainingSeconds)}</span>
-      <span className="text-app-text-secondary">
-        <span className="text-app-text-primary">{wordCount}</span>/{task.maxWords} words
-      </span>
-      <span className="text-app-text-secondary">
-        <span className="text-app-text-primary">{sentenceCount}</span> sentence{sentenceCount === 1 ? '' : 's'}
-      </span>
-      <span className={labelColorClass}>{label}</span>
-    </div>
-  );
-
   return (
     <div className="mx-auto w-full max-w-3xl rounded-lg bg-app-bg-primary p-4 pb-10 text-app-text-primary sm:p-8 sm:pb-10">
-      {/* Header: minimal, matches the Monkeytype-style wordmark, nothing else competes for attention here. */}
       <div className="mb-6 flex items-center justify-between">
         <span className="text-lg font-semibold lowercase text-yellow-400">{task.shortName.toLowerCase()}.</span>
         <span className="rounded bg-app-bg-card px-2 py-1 text-xs uppercase tracking-wide text-app-text-secondary">
@@ -186,38 +199,88 @@ const SWTInterface: React.FC<SWTInterfaceProps> = ({
         </span>
       </div>
 
-      {/* Passage and typing area are the center of the page; everything else is compact. */}
-      <p className="mb-2 text-xs uppercase tracking-wide text-app-text-muted">Original passage</p>
-      <p className="mb-6 break-words leading-relaxed text-app-text-secondary">{passage}</p>
-
-      {!submitted && (
+      {!finished && (
         <>
-          {renderStatusBar(liveStatusLabel, liveStatusClass, 'text-yellow-400')}
+          {/* Compact metrics bar: timer, WPM, accuracy, progress, errors. No
+              PTE validity status here; this is typing accuracy/speed practice.
+              Only shown while typing: Results below has its own complete set. */}
+          <div className="mb-6 flex flex-wrap items-center justify-center gap-x-5 gap-y-1 text-sm" aria-live="polite">
+            <span className="font-mono text-xl text-yellow-400">{formatTimer(elapsedSeconds)}</span>
+            <span className="text-app-text-secondary">
+              <span className="text-app-text-primary">{wpm}</span> wpm
+            </span>
+            <span className="text-app-text-secondary">
+              <span className="text-app-text-primary">{progress.accuracyPercent}%</span> accuracy
+            </span>
+            <span className="text-app-text-secondary">
+              <span className="text-app-text-primary" data-testid="typing-progress-percent">
+                {progress.progressPercent}%
+              </span>{' '}
+              done
+            </span>
+            <span className="text-app-text-secondary">
+              <span className="text-app-text-primary" data-testid="typing-error-count">
+                {progress.errorChars}
+              </span>{' '}
+              error{progress.errorChars === 1 ? '' : 's'}
+            </span>
+          </div>
 
-          <label htmlFor="swt-answer" className="sr-only">
-            Your one sentence summary
+          <label htmlFor="swt-typing-input" className="sr-only">
+            Type the target text
           </label>
           <textarea
-            id="swt-answer"
-            ref={textareaRef}
-            value={answer}
+            id="swt-typing-input"
+            ref={inputRef}
+            value={typed}
             onChange={handleChange}
-            placeholder={task.placeholder}
-            rows={5}
-            className="w-full min-h-[9rem] resize-y break-words rounded-md border border-app-border bg-app-bg-secondary p-4 text-xl leading-relaxed text-app-text-primary placeholder-app-text-muted focus:border-yellow-400 focus:outline-none"
+            className="sr-only"
+            autoComplete="off"
+            autoCorrect="off"
+            autoCapitalize="off"
+            spellCheck={false}
           />
 
-          <div className="mt-6 flex flex-wrap gap-3">
-            <button
-              type="button"
-              onClick={handleSubmit}
-              disabled={!answer.trim()}
-              className="rounded bg-yellow-400 px-4 py-2.5 font-semibold text-app-text-inverse transition-opacity disabled:cursor-not-allowed disabled:opacity-40"
-            >
-              Submit
-            </button>
+          {/* The target text with per-character highlighting is the main
+              visual UI; the textarea above only captures keystrokes. */}
+          <div
+            data-testid="typing-target"
+            className="mb-6 min-h-[9rem] cursor-text select-none whitespace-pre-wrap break-words rounded-md border border-app-border bg-app-bg-secondary p-4 font-mono text-xl leading-relaxed tracking-wide"
+            onClick={() => inputRef.current?.focus()}
+          >
+            {targetText.split('').map((char, index) => {
+              const isTyped = index < typed.length;
+              const isCurrent = index === typed.length;
+              const isCorrectChar = isTyped && typed[index] === char;
+              const isWrongChar = isTyped && typed[index] !== char;
+              const colorClass = isCorrectChar
+                ? 'text-app-text-primary'
+                : isWrongChar
+                  ? 'text-red-400 underline'
+                  : 'text-app-text-muted';
+              const caretClass = isCurrent ? 'border-l-2 border-yellow-400' : '';
+              return (
+                <span key={index} className={`${colorClass} ${caretClass}`}>
+                  {char}
+                </span>
+              );
+            })}
+          </div>
+
+          <div className="flex flex-wrap gap-3">
             <button type="button" onClick={handleRestart} className={navButtonClass}>
               Restart
+            </button>
+            <button type="button" onClick={() => setShowPassage((prev) => !prev)} className={navButtonClass}>
+              {showPassage ? 'Hide reference passage' : 'Show reference passage'}
+            </button>
+            <button
+              type="button"
+              onClick={handleFinishEarly}
+              disabled={typed.length === 0}
+              className={`${navButtonClass} disabled:cursor-not-allowed disabled:opacity-40`}
+            >
+              Finish early
             </button>
             <div className="ml-auto flex gap-2">
               <button type="button" onClick={handlePrevious} className={navButtonClass}>
@@ -228,29 +291,44 @@ const SWTInterface: React.FC<SWTInterfaceProps> = ({
               </button>
             </div>
           </div>
+
+          {/* Kept small and collapsed by default: the passage is reference
+              material, never the typing target. */}
+          {showPassage && (
+            <div className="mt-4">
+              <p className="mb-1 text-xs uppercase tracking-wide text-app-text-muted">Reference passage</p>
+              <p className="break-words text-sm leading-relaxed text-app-text-secondary">{passage}</p>
+            </div>
+          )}
         </>
       )}
 
-
-      {submitted && (
+      {finished && (
         <div>
           <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-yellow-400">Results</p>
 
-          {renderStatusBar(formStatus.label, statusColorClass, 'text-app-text-muted')}
+          <div className="mb-6 flex flex-wrap items-center gap-4 text-sm" aria-live="polite">
+            <span className="text-app-text-secondary">
+              <span className="text-app-text-primary">{wpm}</span> wpm
+            </span>
+            <span className="text-app-text-secondary">
+              <span className="text-app-text-primary">{progress.accuracyPercent}%</span> accuracy
+            </span>
+            <span className="text-app-text-secondary">
+              <span className="text-app-text-primary">{progress.errorChars}</span> error{progress.errorChars === 1 ? '' : 's'}
+            </span>
+            <span className="text-app-text-secondary">
+              <span className="text-app-text-primary">{formatTimer(elapsedSeconds)}</span> time
+            </span>
+            <span className={progress.completed ? 'text-yellow-400' : 'text-app-text-muted'}>
+              {progress.completed ? 'Completed' : 'Incomplete'}
+            </span>
+          </div>
 
-          <p className="mb-1 text-xs uppercase tracking-wide text-app-text-muted">Your summary</p>
-          <p className="mb-6 break-words rounded-md border border-app-border bg-app-bg-secondary p-4 text-app-text-primary">
-            {answer.trim() || '(empty)'}
+          <p className="mb-1 text-xs uppercase tracking-wide text-app-text-muted">Target text</p>
+          <p className="mb-6 break-words rounded-md border border-app-border bg-app-bg-secondary p-4 text-app-text-secondary">
+            {targetText}
           </p>
-
-          {showModelAnswer && (
-            <>
-              <p className="mb-1 text-xs uppercase tracking-wide text-app-text-muted">Model answer</p>
-              <p className="mb-6 break-words rounded-md border border-app-border bg-app-bg-secondary p-4 text-app-text-secondary">
-                {modelAnswer}
-              </p>
-            </>
-          )}
 
           <div className="flex flex-wrap gap-3">
             <button type="button" onClick={handleRestart} className={navButtonClass}>

@@ -19,6 +19,7 @@ export type TaskType =
   | 'rs'          // Repeat Sentence
   | 'asq'         // Answer Short Question
   | 'wfd'         // Write From Dictation
+  | 'swt'         // Summarize Written Text
   | 'ra'          // Read Aloud
   | 'di'          // Describe Image
   | 'rl'          // Retell Lecture

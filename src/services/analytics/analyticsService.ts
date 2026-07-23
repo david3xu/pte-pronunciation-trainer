@@ -20,7 +20,7 @@ export interface AnalyticsEventProperties {
 
   // Practice events
   mode?: 'vocabulary' | 'practice';
-  practice_type?: 'rs' | 'asq' | 'wfd';
+  practice_type?: 'rs' | 'asq' | 'wfd' | 'swt';
   items_completed?: number;
   items_correct?: number;
   accuracy?: number;

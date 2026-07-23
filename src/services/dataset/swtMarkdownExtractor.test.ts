@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { SWTMarkdownExtractor } from '../../../scripts/pte-data-pipeline.js';
+import { SWTAnswerTypingMarkdownExtractor, SWTMarkdownExtractor } from '../../../scripts/pte-data-pipeline.js';
 import type { ParsedSWTItem } from '../../../scripts/pte-data-pipeline.js';
 
 // Deliberately includes a wrong "Word count" annotation, a Key Changes /
@@ -94,6 +94,31 @@ function extractFixtureFirstTwo(): [ParsedSWTItem, ParsedSWTItem] {
 describe('SWTMarkdownExtractor', () => {
   it('parses each Example section into one item', () => {
     expect(extractFixtureItems()).toHaveLength(2);
+  });
+
+  describe('SWTAnswerTypingMarkdownExtractor', () => {
+    it('parses clean answer-only markdown into typing targets', () => {
+      const fixture = `# SWT Answer Typing Source
+
+  <!-- comment ignored -->
+
+  1. First exact model answer target.
+  2. **Second exact model answer target with markdown.**
+  `;
+
+      const items = SWTAnswerTypingMarkdownExtractor.extract('/fake/answers.md', fakeFs(fixture), 'swt-answer-typing');
+
+      expect(items).toHaveLength(2);
+      expect(items[0]).toEqual({
+        title: 'Answer 1',
+        passage: '',
+        answer: 'First exact model answer target.',
+        wordCount: 5,
+        sourceSet: 'swt-answer-typing',
+        difficulty: 'normal',
+      });
+      expect(items[1]?.answer).toBe('Second exact model answer target with markdown.');
+    });
   });
 
   it('extracts title and difficulty from the header line', () => {

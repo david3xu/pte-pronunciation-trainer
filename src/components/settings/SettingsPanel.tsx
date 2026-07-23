@@ -285,7 +285,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                 <Flex direction="column" gap="2">
                   <Text size="3" weight="medium">Writing Task</Text>
                   <Text size="2" color="gray" mb="1">
-                    Choose a PTE writing task
+                    Practice typing a PTE writing task's model answer
                   </Text>
                   <Select.Root
                     value={writingMode || ''}
@@ -294,7 +294,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                     <Select.Trigger placeholder="Select a writing task..." />
                     <Select.Content>
                       <Select.Item value="swt">
-                        📝 Summarize Written Text (SWT) - 58 passages
+                        📝 SWT Answer Typing - 58 answers
                       </Select.Item>
                     </Select.Content>
                   </Select.Root>

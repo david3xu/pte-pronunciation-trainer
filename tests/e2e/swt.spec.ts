@@ -35,45 +35,41 @@ const selectWritingTask = async (page: Page, optionName: RegExp | string) => {
   await page.getByRole('option', { name: optionName }).click();
 };
 
-const swtTextarea = (page: Page) => page.getByPlaceholder('Type your one sentence summary here...');
 const wfdTextarea = (page: Page) => page.getByPlaceholder('Type the sentence here...');
-const swtPassageText = (page: Page) => page.locator('p:has-text("Original passage") + p').textContent();
+// The typing capture input is intentionally visually hidden (sr-only): the
+// rendered, per-character highlighted target text is the main visual UI.
+const typingInput = (page: Page) => page.getByLabel('Type the target text');
+const typingTarget = (page: Page) => page.getByTestId('typing-target');
 
 /**
- * SWT lives under the reusable Writing Practice study type (not its own
- * top level type), so this covers picking Writing Practice then the SWT
- * writing task from Settings and completing one full attempt: passage +
- * timer/options render, a valid one sentence summary can be typed, and
- * submitting shows a result.
+ * SWT Answer Typing lives under the reusable Writing Practice study type.
+ * This is Monkeytype-style exact-text typing practice using a real SWT
+ * model answer as the target, not a real PTE SWT test: no word/sentence
+ * bounds, no Valid/Invalid PTE status, scored on typing accuracy and speed.
  */
-test('selecting Writing Practice then SWT from Settings loads the SWT page and accepts a valid submission', async ({ page }) => {
+test('selecting Writing Practice then SWT Answer Typing loads the typing page and completing it shows typing results', async ({ page }) => {
   await page.goto('/');
 
   await openSettings(page);
   await selectStudyType(page, /Writing Practice/i);
-  await selectWritingTask(page, /Summarize Written Text/i);
+  await selectWritingTask(page, /SWT Answer Typing/i);
   await closeSettings(page);
 
-  // Dataset load is async; the passage label only renders once it resolves.
-  await expect(page.getByText('Original passage')).toBeVisible();
+  // Dataset load is async; the target only renders once it resolves.
+  await expect(typingTarget(page)).toBeVisible();
+  const targetText = (await typingTarget(page).textContent()) ?? '';
+  expect(targetText.length).toBeGreaterThan(0);
 
-  const textarea = swtTextarea(page);
-  await expect(textarea).toBeVisible();
-  // Compact status bar: timer, "X/75 words", "X sentence(s)", live status.
-  await expect(page.getByText(/\d+\/75 words/)).toBeVisible();
-  await expect(page.getByText(/\d+ sentences?/)).toBeVisible();
-  // Timer starts at 10:00 and only counts down once typing begins.
-  await expect(page.getByText('10:00')).toBeVisible();
+  // No PTE exam framing anywhere on this page.
+  await expect(page.getByText(/valid/i)).not.toBeVisible();
+  await expect(page.getByText(/\bwords\b/i)).not.toBeVisible();
 
-  await textarea.fill(
-    'This passage explains an important concept relevant to the topic discussed in detail throughout the text.'
-  );
-
-  await page.getByRole('button', { name: 'Submit' }).click();
+  await typingInput(page).fill(targetText);
 
   await expect(page.getByText('Results')).toBeVisible();
-  await expect(page.getByText('Model answer')).toBeVisible();
-  await expect(page.getByText('Valid')).toBeVisible();
+  await expect(page.getByText(/wpm/i)).toBeVisible();
+  await expect(page.getByText('100%')).toBeVisible(); // typed exactly, full accuracy
+  await expect(page.getByText('Completed')).toBeVisible();
 });
 
 /**
@@ -95,17 +91,17 @@ test('switching WFD then Writing/SWT then back to Practice renders WFD, not a le
 
   await openSettings(page);
   await selectStudyType(page, /Writing Practice/i);
-  await selectWritingTask(page, /Summarize Written Text/i);
+  await selectWritingTask(page, /SWT Answer Typing/i);
   await closeSettings(page);
 
-  await expect(swtTextarea(page)).toBeVisible();
+  await expect(typingTarget(page)).toBeVisible();
 
   await openSettings(page);
   await selectStudyType(page, /Task Practice/i);
   await closeSettings(page);
 
   // The regression: this used to still show the SWT page here.
-  await expect(swtTextarea(page)).not.toBeVisible();
+  await expect(typingTarget(page)).not.toBeVisible();
   await expect(page.getByText('✍️ Write From Dictation')).toBeVisible();
   await expect(wfdTextarea(page)).toBeVisible();
 });
@@ -121,10 +117,10 @@ test('switching to Writing/SWT reliably loads it even on a second visit after Pr
 
   await openSettings(page);
   await selectStudyType(page, /Writing Practice/i);
-  await selectWritingTask(page, /Summarize Written Text/i);
+  await selectWritingTask(page, /SWT Answer Typing/i);
   await closeSettings(page);
 
-  await expect(swtTextarea(page)).toBeVisible();
+  await expect(typingTarget(page)).toBeVisible();
 
   await openSettings(page);
   await selectStudyType(page, /Task Practice/i);
@@ -138,22 +134,21 @@ test('switching to Writing/SWT reliably loads it even on a second visit after Pr
   await closeSettings(page);
 
   // The regression: practiceType correctly becomes 'writing' either way (it
-  // is set unconditionally), so the SWT shell renders even when the reload
-  // was wrongly skipped. The tell is the passage paragraph itself: with a
-  // stale RS item underneath, SWTInterface has no .passage field to read
-  // and renders it empty, so checking the label alone is not enough.
+  // is set unconditionally), so the SWT shell would render even when the
+  // reload was wrongly skipped. The tell is the target text content itself:
+  // with a stale RS item underneath, there is no .answer field to read.
   await expect(page.getByText('🎧 Repeat Sentence')).not.toBeVisible();
-  await expect(swtTextarea(page)).toBeVisible();
-  const passageText = await swtPassageText(page);
-  expect((passageText ?? '').trim().length).toBeGreaterThan(20);
+  await expect(typingTarget(page)).toBeVisible();
+  const targetText = await typingTarget(page).textContent();
+  expect((targetText ?? '').trim().length).toBeGreaterThan(20);
 });
 
 /**
  * Covers the actual migration code in stores/index.ts, not just the live
  * switching logic: a browser that still has the flat practiceType 'swt'
  * persisted (from before Writing Practice existed as a reusable page) must
- * land on Writing Practice with a real, non-empty SWT passage after reload,
- * not a raw 'swt' value the current Study Type options no longer have.
+ * land on Writing Practice with a real, non-empty target text after
+ * reload, not a raw 'swt' value the current Study Type options no longer have.
  */
 test('old persisted flat swt practiceType migrates to Writing Practice on load', async ({ page }) => {
   await page.addInitScript(() => {
@@ -170,9 +165,9 @@ test('old persisted flat swt practiceType migrates to Writing Practice on load',
 
   await page.goto('/');
 
-  await expect(page.getByText('Original passage')).toBeVisible();
-  const passageText = await swtPassageText(page);
-  expect((passageText ?? '').trim().length).toBeGreaterThan(20);
+  await expect(typingTarget(page)).toBeVisible();
+  const targetText = await typingTarget(page).textContent();
+  expect((targetText ?? '').trim().length).toBeGreaterThan(0);
 
   await openSettings(page);
   await expect(page.getByRole('combobox').first()).toContainText(/Writing Practice/i);
@@ -198,9 +193,9 @@ test('old persisted practice-summarize-written-text practiceMode migrates to Wri
 
   await page.goto('/');
 
-  await expect(page.getByText('Original passage')).toBeVisible();
-  const passageText = await swtPassageText(page);
-  expect((passageText ?? '').trim().length).toBeGreaterThan(20);
+  await expect(typingTarget(page)).toBeVisible();
+  const targetText = await typingTarget(page).textContent();
+  expect((targetText ?? '').trim().length).toBeGreaterThan(0);
 
   await openSettings(page);
   await expect(page.getByRole('combobox').first()).toContainText(/Writing Practice/i);

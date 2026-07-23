@@ -3,16 +3,19 @@ import userEvent from '@testing-library/user-event';
 import { describe, expect, it, vi } from 'vitest';
 import SWTInterface from './SWTInterface';
 
-// Pure word/sentence counting and form validation logic is task-neutral and
-// tested on its own in src/utils/writingTaskValidation.test.ts. These tests
-// cover the component itself: rendering, submitting, and session recording.
+// Pure typing metrics logic is task-neutral and tested on its own in
+// src/utils/typingPracticeMetrics.test.ts. These tests cover the component:
+// rendering the target text, live progress while typing, and completion.
 
+// Deliberately avoids the words "sentence" and "words" in the target text
+// itself, so a test asserting those PTE-validation words are absent cannot
+// collide with the target content being displayed.
 const sampleItem = {
   id: 'swt-1',
   title: 'Sample Passage',
-  passage: 'This is the original passage text.',
-  answer: 'This is the model answer sentence.',
-  wordCount: 6,
+  passage: 'This is the original reference passage that should never be the typing target.',
+  answer: 'Type this exact model answer for practice.',
+  wordCount: 4,
   sourceSet: 'PTE_SWT_Practice_Examples',
   metadata: {
     difficulty: 'easy' as const,
@@ -22,59 +25,140 @@ const sampleItem = {
   },
 };
 
+const getTypingInput = () => screen.getByLabelText(/type the target text/i);
+
 describe('SWTInterface', () => {
-  it('renders the passage and a textarea, with no model answer visible before submitting', () => {
+  it('uses item.answer as the typing target, not item.passage', () => {
     /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
     render(<SWTInterface item={sampleItem as any} />);
+    // The target is rendered one character per span, so it cannot be found
+    // as a single text node; check the concatenated text of its container.
+    expect(
+      screen.getByText((_, element) => element?.tagName === 'DIV' && element.textContent === sampleItem.answer)
+    ).toBeInTheDocument();
+  });
+
+  it('keeps the passage collapsed and not visible as the central target by default', () => {
+    /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
+    render(<SWTInterface item={sampleItem as any} />);
+    expect(screen.queryByText(sampleItem.passage)).not.toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /show reference passage/i })).toBeInTheDocument();
+  });
+
+  it('reveals the passage only as a small reference when explicitly toggled', async () => {
+    const user = userEvent.setup();
+    /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
+    render(<SWTInterface item={sampleItem as any} />);
+    await user.click(screen.getByRole('button', { name: /show reference passage/i }));
     expect(screen.getByText(sampleItem.passage)).toBeInTheDocument();
-    expect(screen.getByPlaceholderText(/type your one sentence summary/i)).toBeInTheDocument();
-    expect(screen.queryByText(sampleItem.answer)).not.toBeInTheDocument();
   });
 
-  it('shows the model answer only after submitting a valid answer', async () => {
+  it('typing correct characters advances progress and does not increase the error count', async () => {
     const user = userEvent.setup();
     /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
     render(<SWTInterface item={sampleItem as any} />);
 
-    const textarea = screen.getByPlaceholderText(/type your one sentence summary/i);
-    await user.type(textarea, 'one two three four five six seven.');
-    await user.click(screen.getByRole('button', { name: /submit/i }));
+    await user.type(getTypingInput(), 'Type this');
 
-    expect(screen.getByText(sampleItem.answer)).toBeInTheDocument();
-  });
-
-  it('records the session item with is_correct set from the form status, not left unset', async () => {
-    // Regression: recordItem was previously called without is_correct at
-    // all, so valid SWT attempts were saved but never counted as correct
-    // in session accuracy (sessionManager filters on is_correct === true).
-    const recordItem = vi.fn().mockResolvedValue(undefined);
-    const user = userEvent.setup();
-    /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
-    render(<SWTInterface item={sampleItem as any} sessionManager={{ recordItem } as any} />);
-
-    const textarea = screen.getByPlaceholderText(/type your one sentence summary/i);
-    await user.type(textarea, 'one two three four five six seven.');
-    await user.click(screen.getByRole('button', { name: /submit/i }));
-
-    expect(recordItem).toHaveBeenCalledWith(
-      expect.objectContaining({ is_correct: true, item_type: 'passage' })
+    expect(screen.getByTestId('typing-error-count')).toHaveTextContent('0');
+    // "Type this" is 9 of 44 characters in the target.
+    expect(screen.getByTestId('typing-progress-percent')).toHaveTextContent(
+      `${Math.round((9 / sampleItem.answer.length) * 100)}%`
     );
   });
 
-  it('records a human-readable feedback note with the word and sentence count', async () => {
-    // session_items has no dedicated word/sentence count columns; feedback
-    // is the field built for a short note, so this is where that lives.
+  it('wrong characters count as errors without ending the attempt', async () => {
+    const user = userEvent.setup();
+    /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
+    render(<SWTInterface item={sampleItem as any} />);
+
+    await user.type(getTypingInput(), 'Xype');
+
+    expect(screen.getByTestId('typing-error-count')).toHaveTextContent('1');
+    expect(getTypingInput()).toBeInTheDocument(); // still in the typing view, not finished
+  });
+
+  it('shows no PTE validity language anywhere: no words/sentences bounds, no Valid/Invalid', async () => {
+    const user = userEvent.setup();
+    /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
+    render(<SWTInterface item={sampleItem as any} />);
+    await user.type(getTypingInput(), sampleItem.answer);
+
+    expect(screen.queryByText(/valid/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/invalid/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/sentence/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/\bwords\b/i)).not.toBeInTheDocument();
+  });
+
+  it('renders WPM, accuracy, errors, time, and Completed status in results once the target is fully typed', async () => {
+    const user = userEvent.setup();
+    /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
+    render(<SWTInterface item={sampleItem as any} />);
+
+    await user.type(getTypingInput(), sampleItem.answer);
+
+    expect(screen.getByText('Results')).toBeInTheDocument();
+    expect(screen.getByText(/wpm/i)).toBeInTheDocument();
+    expect(screen.getByText('100%')).toBeInTheDocument(); // fully correct, 100% accuracy
+    expect(screen.getByText(/accuracy/i)).toBeInTheDocument();
+    expect(screen.getByText(/time/i)).toBeInTheDocument();
+    expect(screen.getByText('Completed')).toBeInTheDocument();
+  });
+
+  it('reaches a real Incomplete results state via Finish early, not just a silent recording', async () => {
+    const user = userEvent.setup();
+    /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
+    render(<SWTInterface item={sampleItem as any} />);
+
+    await user.type(getTypingInput(), 'Type this');
+    await user.click(screen.getByRole('button', { name: /finish early/i }));
+
+    expect(screen.getByText('Results')).toBeInTheDocument();
+    expect(screen.getByText('Incomplete')).toBeInTheDocument();
+    expect(screen.queryByText('Completed')).not.toBeInTheDocument();
+  });
+
+  it('records the completed session item with the answer as item_text, the typed input as user_response, accuracy as score, and typing stats in feedback', async () => {
     const recordItem = vi.fn().mockResolvedValue(undefined);
     const user = userEvent.setup();
     /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
     render(<SWTInterface item={sampleItem as any} sessionManager={{ recordItem } as any} />);
 
-    const textarea = screen.getByPlaceholderText(/type your one sentence summary/i);
-    await user.type(textarea, 'one two three four five six seven.');
-    await user.click(screen.getByRole('button', { name: /submit/i }));
+    await user.type(getTypingInput(), sampleItem.answer);
 
     expect(recordItem).toHaveBeenCalledWith(
-      expect.objectContaining({ feedback: expect.stringContaining('7 words') })
+      expect.objectContaining({
+        item_text: sampleItem.answer,
+        user_response: sampleItem.answer,
+        score: 100,
+        is_correct: true,
+        item_type: 'passage',
+        feedback: expect.stringMatching(/wpm.*100% accuracy.*0 errors/i),
+      })
+    );
+  });
+
+  it('records an incomplete attempt with is_correct false when navigating away mid-typing', async () => {
+    const recordItem = vi.fn().mockResolvedValue(undefined);
+    const user = userEvent.setup();
+    /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
+    render(
+      <SWTInterface
+        item={sampleItem as any}
+        sessionManager={{ recordItem } as any}
+        onNext={() => {}}
+      />
+    );
+
+    await user.type(getTypingInput(), 'Type this');
+    await user.click(screen.getByRole('button', { name: /^next$/i }));
+
+    expect(recordItem).toHaveBeenCalledWith(
+      expect.objectContaining({
+        user_response: 'Type this',
+        is_correct: false,
+        feedback: expect.stringContaining('incomplete'),
+      })
     );
   });
 });

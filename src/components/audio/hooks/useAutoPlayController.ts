@@ -218,7 +218,7 @@ export const useAutoPlayController = () => {
 
       const dataset = getActiveDataset();
       const cleanedText = cleanText(textToSpeak);
-      const britishSoundsLike = getBritishSoundsLike(currentItem as LearningItem);
+      const britishSoundsLike = getBritishSoundsLike(currentItem as LearningItem) ?? '';
       console.log(`[useAutoPlayController #${effectId}] 🎤 Preparing to speak:`, cleanedText.substring(0, 30), `(${audio.currentIndex + 1}/${dataset?.length || 0})`);
 
       try {
@@ -388,7 +388,7 @@ export const useAutoPlayController = () => {
         rate: settings.ttsRate,
         volume: useAppStore.getState().audio.volume,
         mediaTitle: cleanedText,
-        mediaArtist: getBritishSoundsLike(currentItem as LearningItem),
+        mediaArtist: getBritishSoundsLike(currentItem as LearningItem) ?? '',
       }).catch((error) => {
         console.error('[useAutoPlayController] Play gesture audio start failed:', error);
         backgroundAudioService.stop();

@@ -413,8 +413,8 @@ export class BackgroundAudioService {
   private setMediaMetadata(text: string, options: PlayTextOptions = {}): void {
     if (!this.hasMediaSession() || typeof MediaMetadata === 'undefined') return;
     navigator.mediaSession.metadata = new MediaMetadata({
-      title: options.mediaTitle || text,
-      artist: options.mediaArtist || appConfig.get<string>('backgroundAudio.mediaSessionArtist'),
+      title: options.mediaTitle ?? text,
+      artist: options.mediaArtist ?? appConfig.get<string>('backgroundAudio.mediaSessionArtist'),
       artwork: [],
     });
   }

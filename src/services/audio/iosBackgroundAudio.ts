@@ -100,12 +100,8 @@ export class IOSBackgroundAudio {
 
     this.start();
 
-    if (navigator.mediaSession) {
-      navigator.mediaSession.metadata = new MediaMetadata({
-        title: 'PTE Pronunciation Trainer',
-        artist: 'Learning Mode',
-        album: 'Background Audio',
-      });
-    }
+    // This silent iOS priming element must not publish lock-screen metadata.
+    // Real vocabulary playback owns Media Session rows so the lock screen can
+    // show only the word and its British sounds-like hint.
   }
 }

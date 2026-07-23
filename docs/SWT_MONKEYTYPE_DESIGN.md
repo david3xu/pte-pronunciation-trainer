@@ -24,6 +24,11 @@ The generated runtime dataset is:
 
 - `data/processed/pte-swt-dataset.json`
 
+The original full SWT markdown files may remain in the same folder as raw
+reference/source material. They are intentionally not parsed by the app
+pipeline for this Monkeytype mode; only `swt-answer-typing.md` is used to
+generate the runtime dataset.
+
 The generated items keep compatibility fields, but the app only needs `answer`
 as the typing target:
 

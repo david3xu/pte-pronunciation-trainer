@@ -174,7 +174,7 @@ export interface DataPathsConfig {
 export interface LearningMode {
   id: VocabularyCategory | PracticeMode | string;
   name: string;
-  category: 'vocabulary' | 'practice' | 'shadowing';
+  category: 'vocabulary' | 'practice' | 'writing' | 'shadowing';
   difficulty?: Difficulty;
   description?: string;
 }

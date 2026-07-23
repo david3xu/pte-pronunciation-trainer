@@ -210,6 +210,187 @@ class PTETermsExtractor {
   }
 }
 
+// SWT (Summarize Written Text) source files live under data/source/pte/swt/.
+// See docs/SWT_MONKEYTYPE_DESIGN.md for the source format and dataset shape
+// this extractor must produce.
+const SWT_SOURCE_FILES = [
+  'PTE_SWT_Practice_Examples.md',
+  'PTE_SWT_Practice_Examples_Set2.md',
+  'PTE_SWT_Practice_Examples_Set3.md',
+  'PTE_SWT_Practice_Examples_Set4.md',
+];
+
+/**
+ * SWTMarkdownExtractor - Parses PTE Summarize Written Text markdown files.
+ *
+ * Source format:
+ *   ## Example N: Title (Difficulty)          (also "## Bonus Example N: ...")
+ *   ### Original Passage
+ *   <one or more paragraphs, may contain **bold** emphasis>
+ *   ### SWT Answer
+ *   **<one sentence model answer>**
+ *   **Word count:** NN words \u2713
+ *   ### Key Changes Made
+ *   ...ignored...
+ *   ---
+ *
+ * Only the passage and the answer sentence are extracted; the key-changes
+ * and linking-words commentary are teaching content, not dataset fields.
+ */
+class SWTMarkdownExtractor {
+  static extract(filePath, fsModule, sourceSet) {
+    if (!fsModule.existsSync(filePath)) {
+      throw new Error(`SWT source file not found: ${filePath}`);
+    }
+
+    const content = fsModule.readFileSync(filePath, 'utf-8');
+    const blocks = this.splitIntoBlocks(content);
+
+    const items = [];
+    for (const block of blocks) {
+      const item = this.parseBlock(block, sourceSet);
+      if (item) items.push(item);
+    }
+    return items;
+  }
+
+  /**
+   * Slice the file into per-example blocks. Each block starts at a line
+   * matching "## Example N: ..." (optionally "## Bonus Example N: ...") and
+   * runs until the next level-2 heading or end of file, so trailing sections
+   * like "## Practice Tips" and the copyright line are excluded naturally.
+   */
+  static splitIntoBlocks(content) {
+    // Some source files wrap the entire header line in bold, e.g.
+    // "## **Example 4: Natural Language (Medium)**" instead of the plain
+    // "## Example 4: Natural Language (Medium)" used elsewhere. The optional
+    // \*{0,2} on both ends tolerates that without changing anything for the
+    // plain, unwrapped form.
+    const headerRe = /^##\s+\*{0,2}(?:Bonus\s+)?Example\s+\d+:\s*(.+?)\s*\(([^)]+)\)\*{0,2}\s*$/;
+    const lines = content.split('\n');
+
+    const blocks = [];
+    let current = null;
+
+    for (const line of lines) {
+      const headerMatch = line.match(headerRe);
+      if (headerMatch) {
+        if (current) blocks.push(current);
+        current = {
+          title: headerMatch[1].replace(/\*\*/g, '').trim(),
+          rawDifficulty: headerMatch[2].replace(/\*\*/g, '').trim(),
+          lines: [],
+        };
+        continue;
+      }
+
+      if (current && /^##\s+/.test(line)) {
+        // A different level-2 heading (e.g. "## Practice Tips") ends the block.
+        blocks.push(current);
+        current = null;
+        continue;
+      }
+
+      if (current) current.lines.push(line);
+    }
+
+    if (current) blocks.push(current);
+    return blocks;
+  }
+
+  static parseBlock(block, sourceSet) {
+    const blockText = block.lines.join('\n');
+    const passageSection = this.extractSection(blockText, 'Original Passage');
+    const answerSection = this.extractSwtAnswerSection(blockText);
+
+    if (!passageSection || !answerSection) {
+      console.warn(`   \u26a0\ufe0f SWT example "${block.title}" is missing a passage or answer section, skipping`);
+      return null;
+    }
+
+    const passage = this.cleanParagraphs(passageSection);
+    const answer = this.cleanInline(this.firstParagraph(answerSection));
+
+    if (!passage || !answer) {
+      console.warn(`   \u26a0\ufe0f SWT example "${block.title}" had an empty passage or answer after cleaning, skipping`);
+      return null;
+    }
+
+    return {
+      title: block.title,
+      passage,
+      answer,
+      wordCount: answer.split(/\s+/).filter(Boolean).length,
+      sourceSet,
+      difficulty: this.mapDifficulty(block.rawDifficulty),
+    };
+  }
+
+  /**
+   * Most examples have a plain "### SWT Answer" heading. A few in Set 3 are
+   * authored as multiple draft attempts instead (First Attempt, Second
+   * Attempt, ...) with no "SWT Answer" heading at all. For those, fall back
+   * to the last heading the author themselves marked with a check mark as
+   * the accepted final draft, e.g. "### \u2705 Final Answer (SUCCESS)".
+   */
+  static extractSwtAnswerSection(blockText) {
+    const plain = this.extractSection(blockText, 'SWT Answer');
+    if (plain) return plain;
+
+    const headingRe = /^###\s+(.+)$/gm;
+    let match;
+    let lastCheckmarkHeading = null;
+    while ((match = headingRe.exec(blockText)) !== null) {
+      if (match[1].trim().startsWith('\u2705')) {
+        lastCheckmarkHeading = match[1].trim();
+      }
+    }
+    return lastCheckmarkHeading ? this.extractSection(blockText, lastCheckmarkHeading) : null;
+  }
+
+  /** Text between "### <heading>" and the next "### " heading, or null if the heading is absent. */
+  static extractSection(blockText, heading) {
+    const escapedHeading = heading.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const headingRe = new RegExp(`^###\\s+${escapedHeading}\\s*$`, 'm');
+    const match = headingRe.exec(blockText);
+    if (!match) return null;
+
+    const rest = blockText.slice(match.index + match[0].length);
+    const nextHeadingIndex = rest.search(/^###\s+/m);
+    const section = nextHeadingIndex === -1 ? rest : rest.slice(0, nextHeadingIndex);
+    return section.trim();
+  }
+
+  static firstParagraph(sectionText) {
+    const [first] = sectionText.split(/\n\s*\n/);
+    return (first || '').trim();
+  }
+
+  /** Strip markdown bold markers and collapse internal whitespace to single spaces. */
+  static cleanInline(text) {
+    return text.replace(/\*\*/g, '').replace(/\s+/g, ' ').trim();
+  }
+
+  /** Clean each paragraph individually while keeping paragraph breaks. */
+  static cleanParagraphs(sectionText) {
+    return sectionText
+      .split(/\n\s*\n/)
+      .map((paragraph) => this.cleanInline(paragraph))
+      .filter(Boolean)
+      .join('\n\n');
+  }
+
+  /** Normalize source difficulty labels ("Easy", "Medium", "Hard", "Medium - Complex", ...) to the app's scale. */
+  static mapDifficulty(rawLabel) {
+    const normalized = rawLabel.toLowerCase();
+    if (normalized.includes('hard') || normalized.includes('complex')) return 'hard';
+    if (normalized.includes('medium')) return 'normal';
+    if (normalized.includes('easy')) return 'easy';
+    console.warn(`   \u26a0\ufe0f Unrecognized SWT difficulty label "${rawLabel}", defaulting to normal`);
+    return 'normal';
+  }
+}
+
 /**
  * PTESegmentsExtractor - Parses PTE segment markdown files (RS, WFD)
  */
@@ -307,6 +488,9 @@ class PTEDataPipeline {
       // Stage 2: Generate DI Shadowing data
       await this.generateDIShadowingData();
 
+      // Stage 2.6: Generate SWT (Summarize Written Text) dataset
+      await this.generateSWTDataset();
+
       // Stage 3: Report
       this.generateReport();
 
@@ -341,6 +525,63 @@ class PTEDataPipeline {
     }
   }
 
+  /**
+   * Generate the combined SWT (Summarize Written Text) dataset from the four
+   * source markdown files in data/source/pte/swt/. See
+   * docs/SWT_MONKEYTYPE_DESIGN.md for the source format and target shape.
+   */
+  async generateSWTDataset() {
+    console.log('\n📝 STAGE 2.6: Generating SWT Dataset');
+
+    const swtDir = path.join(this.config.inputDir, 'swt');
+    const parsedItems = [];
+
+    for (const fileName of SWT_SOURCE_FILES) {
+      const filePath = path.join(swtDir, fileName);
+      if (!fs.existsSync(filePath)) {
+        console.warn(`   ⚠️ SWT source file not found, skipping: ${filePath}`);
+        continue;
+      }
+
+      const sourceSet = fileName.replace(/\.md$/, '');
+      try {
+        const parsed = SWTMarkdownExtractor.extract(filePath, fs, sourceSet);
+        console.log(`   🔄 Parsed ${parsed.length} SWT examples from ${fileName}`);
+        parsedItems.push(...parsed);
+      } catch (e) {
+        console.warn(`   ⚠️  Failed to parse ${fileName}: ${e.message}`);
+      }
+    }
+
+    const items = parsedItems.map((item, index) => ({
+      id: `swt-${index + 1}`,
+      title: item.title,
+      passage: item.passage,
+      answer: item.answer,
+      wordCount: item.wordCount,
+      sourceSet: item.sourceSet,
+      metadata: {
+        difficulty: item.difficulty,
+        category: 'pte-swt',
+        source: 'pte-swt',
+        tags: ['swt', 'summarize-written-text'],
+      },
+    }));
+
+    const dataset = {
+      metadata: {
+        generated: new Date().toISOString(),
+        source: 'pte-swt',
+        description: 'PTE Summarize Written Text practice passages',
+        totalTerms: items.length,
+        version: '1.0',
+      },
+      items,
+    };
+
+    this.saveDataset('pte-swt-dataset.json', dataset);
+    console.log(`\n📊 Stage 2.6 Summary: Generated ${items.length} SWT items\n`);
+  }
 
   /**
    * Generate PTE datasets
@@ -484,7 +725,7 @@ class PTEDataPipeline {
 
     fs.writeFileSync(outputPath, JSON.stringify(dataset, null, 2));
 
-    const count = dataset.vocabulary ? dataset.vocabulary.length : 0;
+    const count = dataset.vocabulary ? dataset.vocabulary.length : (dataset.items ? dataset.items.length : 0);
     this.stats.totalProcessed += count;
     console.log(`   ✅ Saved ${count} items to ${filename}`);
   }
@@ -571,5 +812,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   });
 }
 
-export { PTEDataPipeline };
+export { PTEDataPipeline, SWTMarkdownExtractor, SWT_SOURCE_FILES };
 export default PTEDataPipeline;

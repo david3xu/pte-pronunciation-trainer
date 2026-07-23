@@ -24,7 +24,7 @@ interface EnhancedAITutorOptions {
   conversationHistory?: Array<{ role: 'user' | 'assistant'; content: string }>;
   // Phase 2 parameters
   userId?: string;
-  taskType?: 'rs' | 'asq' | 'wfd' | 'ra' | 'di' | 'rl' | 'fib_r' | 'fib_l' | 'vocabulary';
+  taskType?: 'rs' | 'asq' | 'wfd' | 'swt' | 'ra' | 'di' | 'rl' | 'fib_r' | 'fib_l' | 'vocabulary';
   sessionId?: string;
   currentItem?: {
     text: string;

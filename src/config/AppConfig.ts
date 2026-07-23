@@ -79,6 +79,7 @@ export class AppConfig {
               'rs': 'data/processed/pte-repeat-sentence-dataset.json',
               'asq': 'data/processed/pte-answer-short-question-dataset.json',
               'wfd': 'data/processed/pte-write-from-dictation-dataset.json',
+              'swt': 'data/processed/pte-swt-dataset.json',
 
               // Shadowing modes
               'di-shadowing': 'data/processed/di-shadowing-natural.json'
@@ -126,10 +127,15 @@ export class AppConfig {
           { id: 'pte-template-practice', name: 'Template Practice', category: 'vocabulary', difficulty: 'normal' },
           // { id: 'pte-essay-topic-paraphrase', name: 'Essay Topic & Paraphrase', category: 'vocabulary', difficulty: 'normal' },
 
-          // Practice modes (3 total)
+          // Practice modes, nested under the 'practice' study type (3 total)
           { id: 'rs', name: 'Repeat Sentence', category: 'practice', description: '620 practice sentences' },
           { id: 'asq', name: 'Answer Short Question', category: 'practice', description: '692 practice questions' },
           { id: 'wfd', name: 'Write From Dictation', category: 'practice', description: '1,195 practice sentences' },
+
+          // Writing modes, nested under the reusable 'writing' study type
+          // (1 total today; a second writing task like SST can be added here
+          // later without another routing/settings refactor).
+          { id: 'swt', name: 'Summarize Written Text', category: 'writing', description: '58 practice passages' },
 
           // Shadowing modes (1 total)
           { id: 'di-shadowing', name: 'DI Natural Shadowing', category: 'shadowing', description: '43 natural DI answers for pronunciation practice with human-like chunking' }

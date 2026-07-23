@@ -183,6 +183,7 @@ export const useAppStore = create<AppState>()(
           settings: {
             practiceType: 'vocabulary',
             practiceMode: null,
+            writingMode: null,
             vocabularyBook: DEFAULT_VOCABULARY_BOOK,
             datasetId: DEFAULT_VOCABULARY_BOOK,
             autoPlay: true, // Default ON - automatically plays audio when vocabulary loads
@@ -208,6 +209,7 @@ export const useAppStore = create<AppState>()(
                 ...state.settings,
                 practiceType: 'vocabulary',
                 practiceMode: null,
+                writingMode: null,
                 vocabularyBook: DEFAULT_VOCABULARY_BOOK,
                 datasetId: DEFAULT_VOCABULARY_BOOK,
                 autoPlay: true, // Default ON
@@ -715,6 +717,36 @@ export const useAppStore = create<AppState>()(
                 state.settings.vocabularyBook = 'di-shadowing';
                 state.settings.datasetId = 'di-shadowing';
               }
+            }
+
+            // Migrate SWT from a practice-* sub-mode straight to the reusable
+            // Writing Practice study type. This is the oldest shape, from
+            // before SWT was even its own practiceType at all: nested under
+            // 'practice' the same way as RS/ASQ/WFD.
+            if (
+              state?.settings?.practiceType === 'practice' &&
+              (state.settings.practiceMode as string) === 'practice-summarize-written-text'
+            ) {
+              console.log('[Migration] Converting SWT from a practice-* sub-mode to Writing Practice');
+              state.settings.practiceType = 'writing';
+              state.settings.practiceMode = null;
+              state.settings.writingMode = 'swt';
+              state.settings.datasetId = 'swt';
+            }
+
+            // Migrate SWT from a flat, one-off top level practiceType to the
+            // reusable Writing Practice study type + writingMode. This is the
+            // intermediate shape (SWT briefly was practiceType 'swt' directly)
+            // before Writing Practice existed as a reusable page a second
+            // writing task could be added under later.
+            if ((state?.settings?.practiceType as string) === 'swt') {
+              console.log('[Migration] Converting SWT from a flat practiceType to Writing Practice');
+              state.settings.practiceType = 'writing';
+              state.settings.writingMode = 'swt';
+              if (state.settings.vocabularyBook === 'swt') {
+                state.settings.vocabularyBook = appConfig.getDefaultVocabularyBookId();
+              }
+              state.settings.datasetId = 'swt';
             }
           },
         }

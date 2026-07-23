@@ -29,7 +29,7 @@ interface Message {
 interface AITutorChatProps {
   isOpen: boolean;
   onClose: () => void;
-  taskType?: 'rs' | 'asq' | 'wfd' | 'ra' | 'di' | 'rl' | 'fib_r' | 'fib_l' | 'vocabulary';
+  taskType?: 'rs' | 'asq' | 'wfd' | 'swt' | 'ra' | 'di' | 'rl' | 'fib_r' | 'fib_l' | 'vocabulary';
   sessionId?: string;
   useEnhancedContext?: boolean;
 }
@@ -422,6 +422,7 @@ function getTaskTypeName(taskType: string): string {
     rs: 'Repeat Sentence',
     asq: 'Answer Short Question',
     wfd: 'Write From Dictation',
+    swt: 'Summarize Written Text',
     ra: 'Read Aloud',
     di: 'Describe Image',
     rl: 'Retell Lecture',
@@ -451,6 +452,12 @@ function getTaskSpecificQuestions(taskType: string): string[] {
       'Grammar tips for dictation?',
       'How to catch all words?',
       'Article usage rules?',
+    ],
+    swt: [
+      'How do I fit the summary in one sentence?',
+      'How to pick the key points?',
+      'Linking word ideas?',
+      'How to stay under 75 words?',
     ],
     ra: [
       'How to read more naturally?',

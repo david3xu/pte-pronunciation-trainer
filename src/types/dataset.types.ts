@@ -123,12 +123,12 @@ export type VocabularyItem = VocabularyTerm;
 /**
  * Practice mode types
  */
-export type PracticeMode = 'rs' | 'asq' | 'wfd';
+export type PracticeMode = 'rs' | 'asq' | 'wfd' | 'swt';
 
 /**
  * Practice category (mode identifier)
  */
-export type PracticeCategory = 'pte-rs' | 'pte-asq' | 'pte-wfd';
+export type PracticeCategory = 'pte-rs' | 'pte-asq' | 'pte-wfd' | 'pte-swt';
 
 /**
  * Shadowing category (shadowing practice modes)
@@ -198,12 +198,33 @@ export interface WriteFromDictationItem {
 }
 
 /**
+ * Summarize Written Text (SWT) item
+ */
+export interface SummarizeWrittenTextItem {
+  /** Stable per item id assigned during dataset loading; content fields are a fallback. */
+  id?: string;
+  /** Display title for the passage */
+  title: string;
+  /** The original passage to read and summarize */
+  passage: string;
+  /** The model one-sentence summary answer */
+  answer: string;
+  /** Metadata */
+  metadata: PracticeMetadata;
+  /** Word count of the model answer */
+  wordCount?: number;
+  /** Which source markdown file this item came from */
+  sourceSet?: string;
+}
+
+/**
  * Union type for all practice items
  */
 export type PracticeItem =
   | RepeatSentenceItem
   | AnswerShortQuestionItem
-  | WriteFromDictationItem;
+  | WriteFromDictationItem
+  | SummarizeWrittenTextItem;
 
 /* ============================================
    DATASET TYPES

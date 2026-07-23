@@ -37,6 +37,7 @@ import { WordCardSkeleton } from './shared/Skeleton';
 const RSInterface = lazy(() => import('./practice/RSInterface'));
 const ASQInterface = lazy(() => import('./practice/ASQInterface'));
 const WFDInterface = lazy(() => import('./practice/WFDInterface'));
+const SWTInterface = lazy(() => import('./practice/SWTInterface'));
 const VocabTypingInterface = lazy(() => import('./practice/VocabTypingInterface'));
 
 export const AppContent: React.FC = () => {
@@ -80,12 +81,18 @@ export const AppContent: React.FC = () => {
 
     // Load vocabulary data on startup
     const loadInitialVocabulary = async () => {
-      const { practiceType, practiceMode, vocabularyBook } = settings;
-      // Restore the dataset the user was actually on. Practice modes load their
-      // practice dataset so the RS/ASQ/WFD interface is restored on reload;
-      // vocabulary, vocab-typing and shadowing load the selected book.
+      const { practiceType, practiceMode, writingMode, vocabularyBook } = settings;
+      // Restore the dataset the user was actually on. Writing Practice loads
+      // its selected writing task (currently only SWT, more can be added
+      // later); practice modes load their practice dataset so the RS/ASQ/WFD
+      // interface is restored on reload; vocabulary, vocab-typing and
+      // shadowing load the selected book.
       const datasetToLoad =
-        practiceType === 'practice' && practiceMode ? practiceMode : vocabularyBook;
+        practiceType === 'writing' && writingMode
+          ? writingMode
+          : practiceType === 'practice' && practiceMode
+            ? practiceMode
+            : vocabularyBook;
       console.log('Loading dataset on startup:', datasetToLoad);
 
       vocabulary.setLoading(true);
@@ -102,7 +109,7 @@ export const AppContent: React.FC = () => {
         // Start practice session for tracking
         try {
           // Track the session under the task the user is actually practicing so
-          // RS/ASQ/WFD analytics are attributed correctly, not always vocabulary.
+          // RS/ASQ/WFD/SWT analytics are attributed correctly, not always vocabulary.
           let taskType: TaskType = 'vocabulary';
           if (practiceType === 'practice' && practiceMode) {
             taskType =
@@ -111,6 +118,8 @@ export const AppContent: React.FC = () => {
                 : practiceMode === 'practice-answer-short-question'
                   ? 'asq'
                   : 'wfd';
+          } else if (practiceType === 'writing' && writingMode) {
+            taskType = writingMode;
           }
           const sessionId = await sessionManager.startSession(
             taskType,
@@ -245,11 +254,17 @@ export const AppContent: React.FC = () => {
     setItemsCompletedInSession((prev) => prev + 1);
   };
 
-  // Determine which interface to render based on vocabulary mode
-  const getPracticeInterfaceType = (): 'vocabulary' | 'vocab-typing' | 'rs' | 'asq' | 'wfd' => {
-    // Check for vocab-typing mode
+  // Determine which interface to render. vocab-typing and writing tasks are
+  // checked directly against settings, not vocabulary.mode, since they are
+  // not practice-* mode strings nested under 'practice'. Writing checks
+  // writingMode explicitly (not just practiceType === 'writing') so adding a
+  // second writing task later is a new branch here, not a redesign.
+  const getPracticeInterfaceType = (): 'vocabulary' | 'vocab-typing' | 'rs' | 'asq' | 'wfd' | 'swt' => {
     if (settings.practiceType === 'vocab-typing') {
       return 'vocab-typing';
+    }
+    if (settings.practiceType === 'writing' && settings.writingMode === 'swt') {
+      return 'swt';
     }
 
     const mode = vocabulary.mode.toLowerCase();
@@ -469,6 +484,15 @@ export const AppContent: React.FC = () => {
                     )}
                     {interfaceType === 'wfd' && (
                       <WFDInterface
+                        item={currentItem as any}
+                        sessionManager={sessionManager}
+                        onNext={handleNext}
+                        onPrevious={handlePrevious}
+                        onComplete={handleItemComplete}
+                      />
+                    )}
+                    {interfaceType === 'swt' && (
+                      <SWTInterface
                         item={currentItem as any}
                         sessionManager={sessionManager}
                         onNext={handleNext}

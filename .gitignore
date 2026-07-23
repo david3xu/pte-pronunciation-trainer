@@ -17,6 +17,7 @@ vocabulary-data.js
 *.d.ts
 !src/env.d.ts
 !src/vite-env.d.ts
+!scripts/pte-data-pipeline.d.ts
 
 # Reports
 data/reports/

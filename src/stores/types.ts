@@ -6,6 +6,7 @@
  */
 
 import type { Difficulty, PracticeItem, VocabularyItem } from '../types/dataset.types';
+import type { WritingMode } from '../config/writingTasks';
 
 // Type alias for backward compatibility
 // VocabularyItem is now imported directly from dataset.types
@@ -76,8 +77,13 @@ export interface TTSState {
 
 export interface SettingsState {
   // Practice settings
-  practiceType: 'vocabulary' | 'vocab-typing' | 'practice' | 'shadowing';
+  practiceType: 'vocabulary' | 'vocab-typing' | 'practice' | 'writing' | 'shadowing';
   practiceMode: 'practice-repeat-sentence' | 'practice-answer-short-question' | 'practice-write-from-dictation' | null;
+  // Writing task, nested under practiceType 'writing' the same way practiceMode
+  // is nested under 'practice'. Only 'swt' exists today; a second writing task
+  // (e.g. SST) is meant to be added as another union member here, not another
+  // top level practiceType.
+  writingMode: WritingMode | null;
   vocabularyBook: string;
   datasetId: string;
 

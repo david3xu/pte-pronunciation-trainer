@@ -15,9 +15,11 @@
  * - Text cleaning and normalization
  */
 
+import { Capacitor } from '@capacitor/core';
 import { useAppStore, type AppState } from '../../stores';
 import { appConfig } from '../../config/AppConfig';
 import { backgroundAudioService } from './backgroundAudioService';
+import { audioServiceForPlatform } from './audioServiceForPlatform';
 import { IOSBackgroundAudio } from './iosBackgroundAudio';
 
 /**
@@ -154,7 +156,7 @@ export class TTSEngine {
       (ttsRate: number, prevTtsRate: number) => {
         if (ttsRate !== prevTtsRate) {
           this.speechRate = ttsRate;
-          backgroundAudioService.setRate(ttsRate);
+          audioServiceForPlatform.setRate(ttsRate);
           console.log(`[TTSEngine] Speed changed to ${this.speechRate}`);
         }
       }
@@ -377,7 +379,7 @@ export class TTSEngine {
     if (isActivelySpeaking) {
       console.warn(`[TTSEngine #${callId}] ⚠️ Already speaking or pending, cancelling previous speech...`);
       this.synth.cancel();
-      backgroundAudioService.stop();
+      audioServiceForPlatform.stop();
       this.settleRealAudio?.();
       this.isSpeaking = false;
       this.currentUtterance = null;
@@ -434,7 +436,7 @@ export class TTSEngine {
 
       this.settleRealAudio = settle;
 
-      backgroundAudioService.setHandlers({
+      audioServiceForPlatform.setHandlers({
         onEnded: () => settle(),
         onError: (error) => settle(error),
         // If the queue (or anything else) takes the shared element back
@@ -447,8 +449,13 @@ export class TTSEngine {
 
       // Prime synchronously when speak() is triggered by a user gesture. This
       // lets the later post-fetch audio.play() use the same blessed element.
-      backgroundAudioService.primeForUserGesture();
-      backgroundAudioService
+      // Web-only: AVAudioSession has no equivalent "must play silent audio
+      // inside the gesture first" browser autoplay policy requirement, so
+      // nativeAudioService does not implement this method at all.
+      if (!Capacitor.isNativePlatform()) {
+        backgroundAudioService.primeForUserGesture();
+      }
+      audioServiceForPlatform
         .playText(text, {
           rate: customRate ?? this.getCurrentSpeechRate(),
           volume: useAppStore.getState().audio.volume,
@@ -639,7 +646,7 @@ export class TTSEngine {
       console.log(`[TTSEngine @${timestamp}] 🧹 Calling synth.cancel()...`);
       this.synth.cancel();
     }
-    backgroundAudioService.stop();
+    audioServiceForPlatform.stop();
     this.settleRealAudio?.();
 
     this.isSpeaking = false;

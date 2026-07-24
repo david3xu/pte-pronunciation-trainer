@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { appConfig } from '../../../config/AppConfig';
 import { AudioQueueEngine, type QueueItem } from '../../../services/audio/audioQueueEngine';
-import { backgroundAudioService } from '../../../services/audio/backgroundAudioService';
+import { audioServiceForPlatform } from '../../../services/audio/audioServiceForPlatform';
 import { loadDataset } from '../../../services/dataset/datasetLoader';
 import { useAppStore, useAudioState, useSettings, useVocabulary } from '../../../stores';
 import type { Difficulty, PracticeItem, VocabularyItem } from '../../../types/dataset.types';
@@ -107,7 +107,7 @@ const toQueueItem = (
 /**
  * Long-lived queue engine instance, created once and reused across renders.
  */
-export const queueEngine = new AudioQueueEngine();
+export const queueEngine = new AudioQueueEngine(audioServiceForPlatform);
 
 export const useAutoPlayController = () => {
   const audio = useAudioState();
@@ -180,7 +180,7 @@ export const useAutoPlayController = () => {
   // Clean up audio on unmount
   useEffect(() => {
     return () => {
-      backgroundAudioService.stop();
+      audioServiceForPlatform.stop();
     };
   }, []);
 
@@ -219,7 +219,7 @@ export const useAutoPlayController = () => {
       },
       onPlaybackFailed: ({ error }) => {
         console.error('[useAutoPlayController] Playback failed:', error);
-        backgroundAudioService.stop();
+        audioServiceForPlatform.stop();
         useAppStore.getState().ui.showNotification(
           'Audio playback cannot start right now. Premium audio may be unavailable.',
           'error'

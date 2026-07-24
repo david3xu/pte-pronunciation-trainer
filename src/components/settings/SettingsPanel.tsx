@@ -11,9 +11,11 @@ import {
 } from '@radix-ui/react-icons';
 import { Badge, Button, Card, Flex, Select, Slider, Switch, Tabs, Text } from '@radix-ui/themes';
 import React, { useEffect, useMemo } from 'react';
+import { Capacitor } from '@capacitor/core';
 import { appConfig } from '../../config/AppConfig';
 import { useAudioState, useSettings, useVocabulary } from '../../stores';
 import { backgroundAudioService } from '../../services/audio/backgroundAudioService';
+import { audioServiceForPlatform } from '../../services/audio/audioServiceForPlatform';
 import { ttsEngine } from '../../services/audio/TTSEngine';
 import { loadDataset } from '../../services/dataset/datasetLoader';
 
@@ -80,7 +82,12 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
     // user gesture (no await before it) so the later auto-start play() is allowed
     // by mobile autoplay policy.
     ttsEngine.stopSpeaking();
-    backgroundAudioService.primeForUserGesture();
+    // Web-only: AVAudioSession has no equivalent "must play silent audio
+    // inside the gesture first" browser autoplay policy requirement, so
+    // nativeAudioService does not implement this method at all.
+    if (!Capacitor.isNativePlatform()) {
+      backgroundAudioService.primeForUserGesture();
+    }
 
     updateSetting('vocabularyBook', bookId);
 
@@ -436,7 +443,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                   onValueChange={([rate]) => {
                     const nextRate = rate ?? 0.7;
                     updateSetting('ttsRate', nextRate);
-                    backgroundAudioService.setRate(nextRate);
+                    audioServiceForPlatform.setRate(nextRate);
                   }}
                   min={0.5}
                   max={2.0}

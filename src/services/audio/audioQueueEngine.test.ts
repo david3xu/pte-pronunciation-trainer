@@ -8,6 +8,7 @@ type TestAudioHandlers = {
   onStop?: () => void;
   onNext?: () => void;
   onPrevious?: () => void;
+  onSuspended?: () => void;
 };
 
 const audioMocks = vi.hoisted(() => ({
@@ -428,5 +429,82 @@ describe('AudioQueueEngine', () => {
 
     expect(realisticCache.getOrFetch).toHaveBeenCalledTimes(2);
     expect(audioMocks.backgroundAudioService.fetchAudioBlob).toHaveBeenCalledTimes(1);
+  });
+
+  it('a user pause stays a plain pause, never needs-user-resume', async () => {
+    const onResumeRequired = vi.fn();
+    const engine = new AudioQueueEngine();
+    engine.setListeners({ onResumeRequired });
+    engine.load(createItems());
+    await engine.start();
+
+    engine.pause();
+
+    expect(engine.getPlaybackState()).toBe('paused');
+    expect(onResumeRequired).not.toHaveBeenCalled();
+  });
+
+  it('a browser/OS suspension moves to the suspended state and recovers silently when resume succeeds', async () => {
+    const onResumeRequired = vi.fn();
+    const engine = new AudioQueueEngine();
+    engine.setListeners({ onResumeRequired });
+    engine.load(createItems());
+    await engine.start();
+
+    getHandlers().onSuspended?.();
+    await flushQueueWork();
+
+    expect(audioMocks.backgroundAudioService.resume).toHaveBeenCalled();
+    expect(engine.getPlaybackState()).toBe('playing');
+    expect(onResumeRequired).not.toHaveBeenCalled();
+  });
+
+  it('escalates to needs-user-resume and emits onResumeRequired when the silent resume is rejected', async () => {
+    const onResumeRequired = vi.fn();
+    const engine = new AudioQueueEngine();
+    engine.setListeners({ onResumeRequired });
+    engine.load(createItems());
+    await engine.start();
+
+    const blockedError = Object.assign(new Error('play() rejected'), { name: 'NotAllowedError' });
+    audioMocks.backgroundAudioService.resume.mockRejectedValueOnce(blockedError);
+
+    getHandlers().onSuspended?.();
+    await flushQueueWork();
+
+    expect(engine.getPlaybackState()).toBe('needs-user-resume');
+    expect(onResumeRequired).toHaveBeenCalledWith(expect.objectContaining({
+      reason: 'suspended',
+      item: expect.objectContaining({ id: 'first' }),
+    }));
+  });
+
+  it('does not run two recovery attempts concurrently, including one triggered by a page lifecycle signal', async () => {
+    const engine = new AudioQueueEngine();
+    engine.load(createItems());
+    await engine.start();
+
+    const deferredResume = createDeferred<void>();
+    audioMocks.backgroundAudioService.resume.mockReturnValueOnce(deferredResume.promise);
+
+    getHandlers().onSuspended?.();
+    await flushQueueWork();
+
+    expect(engine.getPlaybackState()).toBe('suspended');
+    expect(audioMocks.backgroundAudioService.resume).toHaveBeenCalledTimes(1);
+
+    // A visibility/pageshow signal arriving while the first attempt is still
+    // pending (checkForRecovery is what those listeners call) must not start
+    // a second, overlapping resume() call.
+    engine.checkForRecovery();
+    engine.checkForRecovery();
+    await flushQueueWork();
+
+    expect(audioMocks.backgroundAudioService.resume).toHaveBeenCalledTimes(1);
+
+    deferredResume.resolve();
+    await flushQueueWork();
+
+    expect(engine.getPlaybackState()).toBe('playing');
   });
 });

@@ -29,6 +29,11 @@ export interface BackgroundAudioHandlers {
   onStop?: () => void;
   onNext?: () => void;
   onPrevious?: () => void;
+  /** Fires when the element pauses, stalls, or starts waiting for data
+   * without this service itself having called pause() or stop(): a browser
+   * or OS level interruption (backgrounding, Low Power Mode, a dropped
+   * connection mid-buffer), not a user or app initiated pause. */
+  onSuspended?: () => void;
 }
 
 export interface PlayTextOptions {
@@ -64,6 +69,11 @@ export class BackgroundAudioService {
   private handlers: BackgroundAudioHandlers = {};
   private fetchController: AbortController | null = null;
   private mediaSessionBound = false;
+  /** Set immediately before this service itself calls audio.pause(), and
+   * consumed by the native 'pause' listener below. Left false, a native
+   * pause event means the browser or OS paused the element out from under
+   * us, not something we asked for. */
+  private expectingPause = false;
 
   /** True when this environment can support real-audio background playback. */
   isSupported(): boolean {
@@ -292,6 +302,7 @@ export class BackgroundAudioService {
   }
 
   pause(): void {
+    this.expectingPause = true;
     this.audio?.pause();
     this.setPlaybackState('paused');
   }
@@ -342,6 +353,7 @@ export class BackgroundAudioService {
     // Disarm any in-flight priming pause so it cannot fire after a reset.
     this.primeGeneration++;
     if (this.audio) {
+      this.expectingPause = true;
       this.audio.pause();
       this.audio.loop = false;
       this.audio.muted = false;
@@ -367,10 +379,29 @@ export class BackgroundAudioService {
     audio.addEventListener('error', () => {
       this.handlers.onError?.(new Error('Background audio element reported an error'));
     });
+    audio.addEventListener('pause', this.handleNativePause);
+    audio.addEventListener('waiting', this.handleStalled);
+    audio.addEventListener('stalled', this.handleStalled);
 
     this.audio = audio;
     return audio;
   }
+
+  /** The element paused; expectingPause tells us whether pause()/stop() asked
+   * for it. If neither did, the browser or OS paused it out from under us. */
+  private handleNativePause = (): void => {
+    const wasExpected = this.expectingPause;
+    this.expectingPause = false;
+    if (wasExpected) return;
+    this.handlers.onSuspended?.();
+  };
+
+  /** 'waiting' and 'stalled' both mean playback is stuck buffering, which is
+   * the same recoverable situation as an unexpected pause from the caller's
+   * point of view; neither is something pause()/stop() would cause. */
+  private handleStalled = (): void => {
+    this.handlers.onSuspended?.();
+  };
 
   private async fetchAudioBase64(
     text: string,

@@ -31,6 +31,12 @@ export interface AudioState {
   repeatMode: boolean;
   volume: number;
 
+  // Recovery state: true when playback was interrupted by the browser/OS or
+  // blocked by autoplay policy and needs an explicit tap to resume. A UI can
+  // show a "Tap to resume practice audio" prompt while this is true.
+  needsResume: boolean;
+  resumeReason: 'autoplay-blocked' | 'suspended' | null;
+
   // Actions
   setPlaying: (isPlaying: boolean) => void;
   setAutoPlay: (autoPlayEnabled: boolean) => void;
@@ -43,6 +49,7 @@ export interface AudioState {
   toggleRepeat: () => void;
   setVolume: (volume: number) => void;
   setCurrentIndex: (index: number) => void;
+  setNeedsResume: (needsResume: boolean, reason?: 'autoplay-blocked' | 'suspended' | null) => void;
 }
 
 // ============================================

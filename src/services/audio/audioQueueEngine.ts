@@ -132,6 +132,7 @@ export class AudioQueueEngine {
   private lastError: { message: string; at: number } | undefined;
   private prefetchGeneration = 0;
   private prefetchInFlight = false;
+  private recoveryInFlight = false;
 
   constructor(
     audioService: QueueAudioService = backgroundAudioService,
@@ -354,10 +355,26 @@ export class AudioQueueEngine {
     };
   }
 
+  /**
+   * Retries recovery if the engine is currently suspended. Intended to be
+   * called from page lifecycle listeners (visibilitychange, pageshow) owned
+   * by external code, not by this class itself, so this class stays free of
+   * direct document/window coupling and the listener cleanup that would
+   * require. Deliberately does nothing from needs-user-resume: that state
+   * already means a silent attempt failed once, and repeating it from a
+   * lifecycle event (not a user gesture) would just fail again.
+   */
+  checkForRecovery(): void {
+    if (this.playbackState === 'suspended') {
+      this.attemptRecovery();
+    }
+  }
+
   private createAudioHandlers(): BackgroundAudioHandlers {
     return {
       onEnded: () => this.handleClipEnded(),
       onError: (error) => this.handleAudioError(error),
+      onSuspended: () => this.handleSuspended(),
       onPlay: () => {
         void this.resume().catch(() => {
           // Queue events already report genuine failures.
@@ -586,6 +603,60 @@ export class AudioQueueEngine {
     const item = this.getCurrentItem();
     if (!item || !this.playbackIntent || this.isAbortError(error)) return;
     this.handlePlaybackFailure(error, item);
+  }
+
+  /** A native pause/waiting/stalled signal from backgroundAudioService, not
+   * something this engine's own pause()/stop() caused (those never reach
+   * here; backgroundAudioService only calls onSuspended when it did not
+   * expect the pause itself). Only a playback attempt actually in progress
+   * can be suspended; an idle, paused, or already-erroring queue ignores a
+   * stray signal rather than surfacing a false error. */
+  private handleSuspended(): void {
+    const item = this.getCurrentItem();
+    if (
+      !item ||
+      !this.playbackIntent ||
+      (this.playbackState !== 'playing' && this.playbackState !== 'buffering')
+    ) {
+      return;
+    }
+    this.setState('suspended');
+    this.attemptRecovery();
+  }
+
+  /**
+   * Attempts a silent resume after a suspension. Guarded so only one resume()
+   * call is ever in flight at a time: a native pause/stall event and a
+   * visibilitychange/pageshow signal (see checkForRecovery) can both fire for
+   * the same interruption, and this must not turn into two overlapping
+   * resume attempts. A rejection escalates to needs-user-resume, since a
+   * resume() call made outside a fresh gesture is exactly what mobile
+   * autoplay policy blocks; only an explicit tap can recover from there.
+   */
+  private attemptRecovery(): void {
+    const item = this.getCurrentItem();
+    if (!item || this.recoveryInFlight) return;
+
+    this.recoveryInFlight = true;
+    const operation = ++this.playbackOperation;
+
+    this.audioService
+      .resume(this.playbackOptions.rate, this.playbackOptions.volume)
+      .then(() => {
+        this.recoveryInFlight = false;
+        if (!this.isCurrentOperation(operation) || this.playbackState !== 'suspended') return;
+        this.setState('playing');
+      })
+      .catch(() => {
+        this.recoveryInFlight = false;
+        if (!this.isCurrentOperation(operation) || this.playbackState !== 'suspended') return;
+        this.setState('needs-user-resume');
+        this.listeners.onResumeRequired?.({
+          item,
+          index: this.currentIndex,
+          reason: 'suspended',
+        });
+      });
   }
 
   private handleAudioServiceStop(): void {

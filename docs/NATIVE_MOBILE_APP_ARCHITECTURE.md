@@ -648,4 +648,3 @@ whether each is still open was out of scope for this architecture round.
   cache and broke offline dataset loads; the current `resolveDatasetPath`
   comment states this is fixed (stable URL, no cache-busting query), so this
   one is not treated as open above.
-

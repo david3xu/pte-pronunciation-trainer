@@ -435,7 +435,7 @@ export class BackgroundAudioService {
     const wasExpected = this.expectingPause;
     this.expectingPause = false;
     this.expectedPauseToken += 1;
-    if (wasExpected || this.suppressSuspensionEvents) return;
+    if (wasExpected || this.suppressSuspensionEvents || this.audio?.ended) return;
     this.handlers.onSuspended?.();
   };
 

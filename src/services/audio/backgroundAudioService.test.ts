@@ -156,6 +156,25 @@ describe('BackgroundAudioService', () => {
     expect(onSuspended).toHaveBeenCalledTimes(1);
   });
 
+  it('does not report suspension for the normal pause event at clip end', async () => {
+    const service = new BackgroundAudioService();
+    const onEnded = vi.fn();
+    const onSuspended = vi.fn();
+    service.setHandlers({ onEnded, onSuspended });
+
+    await service.playTextFromUserGesture('short word');
+
+    if (lastFakeAudio) {
+      lastFakeAudio.ended = true;
+      lastFakeAudio.paused = true;
+      lastFakeAudio.emit('pause');
+      lastFakeAudio.emit('ended');
+    }
+
+    expect(onSuspended).not.toHaveBeenCalled();
+    expect(onEnded).toHaveBeenCalledTimes(1);
+  });
+
   it('does not report suspension for normal waiting events while a new clip is loading', async () => {
     const service = new BackgroundAudioService();
     const onSuspended = vi.fn();

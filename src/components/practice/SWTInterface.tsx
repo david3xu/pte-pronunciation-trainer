@@ -29,12 +29,12 @@ interface SWTInterfaceProps {
 const task = TYPING_TASKS.swt;
 
 const monkeytypeColors = {
-  background: '#323437',
-  border: '#2c2e31',
-  correct: '#d1d0c5',
-  wrong: '#ca4754',
-  current: '#e2b714',
-  untyped: '#646669',
+  background: '#1e293b',
+  border: '#334155',
+  correct: '#e2e8f0',
+  wrong: '#f87171',
+  current: '#f59e0b',
+  untyped: '#94a3b8',
 };
 
 const SWTInterface: React.FC<SWTInterfaceProps> = ({
@@ -201,8 +201,8 @@ const SWTInterface: React.FC<SWTInterfaceProps> = ({
     'rounded border border-app-border px-4 py-2.5 text-app-text-secondary transition-colors hover:border-app-border-light hover:text-app-text-primary';
 
   return (
-    <div className="mx-auto w-full max-w-3xl rounded-lg bg-app-bg-primary p-4 pb-10 text-app-text-primary sm:p-8 sm:pb-10">
-      <div className="mb-6 flex items-center justify-between">
+    <div className="mx-auto flex min-h-[calc(100vh-10rem)] w-full max-w-7xl flex-col rounded-lg bg-app-bg-primary px-4 py-6 text-app-text-primary sm:px-8 sm:py-8 lg:px-10">
+      <div className="mb-8 flex items-center justify-between">
         <span className="text-lg font-semibold lowercase text-yellow-400">{task.shortName.toLowerCase()}.</span>
         <span className="rounded bg-app-bg-card px-2 py-1 text-xs uppercase tracking-wide text-app-text-secondary">
           {difficulty}
@@ -214,7 +214,7 @@ const SWTInterface: React.FC<SWTInterfaceProps> = ({
           {/* Compact metrics bar: timer, WPM, accuracy, progress, errors. No
               PTE validity status here; this is typing accuracy/speed practice.
               Only shown while typing: Results below has its own complete set. */}
-          <div className="mb-6 flex flex-wrap items-center justify-center gap-x-5 gap-y-1 text-sm" aria-live="polite">
+          <div className="mb-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-base" aria-live="polite">
             <span className="font-mono text-xl text-yellow-400">{formatTimer(elapsedSeconds)}</span>
             <span className="text-app-text-secondary">
               <span className="text-app-text-primary">{wpm}</span> wpm
@@ -255,7 +255,7 @@ const SWTInterface: React.FC<SWTInterfaceProps> = ({
               visual UI; the textarea above only captures keystrokes. */}
           <div
             data-testid="typing-target"
-            className="mb-6 min-h-[9rem] cursor-text select-none whitespace-pre-wrap break-words rounded-md border p-4 font-mono text-xl leading-relaxed tracking-wide"
+            className="mb-8 min-h-[22rem] cursor-text select-none whitespace-pre-wrap break-words rounded-lg border p-5 font-mono text-2xl leading-loose tracking-wide sm:p-6 md:text-3xl md:leading-loose xl:min-h-[28rem]"
             onClick={() => inputRef.current?.focus()}
             style={{ backgroundColor: monkeytypeColors.background, borderColor: monkeytypeColors.border }}
           >
@@ -283,7 +283,7 @@ const SWTInterface: React.FC<SWTInterfaceProps> = ({
             })}
           </div>
 
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-3 pt-1">
             <button type="button" onClick={handleRestart} className={navButtonClass}>
               Restart
             </button>
@@ -313,7 +313,7 @@ const SWTInterface: React.FC<SWTInterfaceProps> = ({
           {/* Kept small and collapsed by default: the passage is reference
               material, never the typing target. */}
           {hasReferencePassage && showPassage && (
-            <div className="mt-4">
+            <div className="mt-6">
               <p className="mb-1 text-xs uppercase tracking-wide text-app-text-muted">Reference passage</p>
               <p className="break-words text-sm leading-relaxed text-app-text-secondary">{passage}</p>
             </div>
@@ -325,7 +325,7 @@ const SWTInterface: React.FC<SWTInterfaceProps> = ({
         <div>
           <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-yellow-400">Results</p>
 
-          <div className="mb-6 flex flex-wrap items-center gap-4 text-sm" aria-live="polite">
+          <div className="mb-8 flex flex-wrap items-center gap-5 text-base" aria-live="polite">
             <span className="text-app-text-secondary">
               <span className="text-app-text-primary">{wpm}</span> wpm
             </span>
@@ -344,7 +344,7 @@ const SWTInterface: React.FC<SWTInterfaceProps> = ({
           </div>
 
           <p className="mb-1 text-xs uppercase tracking-wide text-app-text-muted">Target text</p>
-          <p className="mb-6 break-words rounded-md border border-app-border bg-app-bg-secondary p-4 text-app-text-secondary">
+          <p className="mb-8 break-words rounded-lg border border-app-border bg-app-bg-secondary p-5 text-xl leading-loose text-app-text-secondary sm:p-6">
             {targetText}
           </p>
 

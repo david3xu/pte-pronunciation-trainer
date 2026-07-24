@@ -119,7 +119,7 @@ describe('SettingsPanel reset actions', () => {
   it('clears local data, resets progress, and reloads the default dataset', async () => {
     const user = await openAdvancedTab();
 
-    await user.click(screen.getByRole('button', { name: 'Clear All Data' }));
+    await user.click(screen.getByRole('button', { name: 'Clear Local Data' }));
 
     await waitFor(() => {
       expect(clearLocalAppDataMock).toHaveBeenCalledTimes(1);

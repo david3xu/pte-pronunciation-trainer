@@ -16,7 +16,7 @@ import {
 import { Button, Card, Flex, Slider, Switch, Text } from '@radix-ui/themes';
 import React from 'react';
 import { useAudioState, useProgress, useSettings } from '../../stores';
-import { backgroundAudioService } from '../../services/audio/backgroundAudioService';
+import { audioServiceForPlatform } from '../../services/audio/audioServiceForPlatform';
 import { useAutoPlayController } from './hooks/useAutoPlayController';
 
 const AudioControls: React.FC = () => {
@@ -135,7 +135,7 @@ const AudioControls: React.FC = () => {
               onValueChange={([speed]) => {
                 const nextRate = speed ?? 0.7;
                 settings.updateSetting('ttsRate', nextRate);
-                backgroundAudioService.setRate(nextRate);
+                audioServiceForPlatform.setRate(nextRate);
               }}
               min={0.5}
               max={2.0}

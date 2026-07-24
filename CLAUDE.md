@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project summary
 
-PTE Pronunciation Trainer is a React 19 + TypeScript 5 app for pronunciation practice. The app is mostly client-side: generated local JSON powers vocabulary and practice content, while Supabase handles auth/progress/settings, Google Gemini powers AI tutor features, AWS Polly provides real-audio TTS, and PostHog records analytics.
+PTE Pronunciation Trainer is a React 19 + TypeScript 5 app for pronunciation practice. The app is mostly client-side: generated local JSON powers vocabulary and practice content, while Supabase handles auth/progress/settings, Google Gemini powers AI tutor features, Azure AI Speech provides premium real-audio TTS through `/api/premium-tts`, and PostHog records analytics.
 
 ## Common commands
 
@@ -72,7 +72,7 @@ pnpm run vercel-build     # data:pte + vite build + copy processed data to dist/
 
 ### Service boundaries
 
-- `src/services/audio/` owns AWS Polly-backed real audio, media-session/background playback, voice settings, and autoplay behavior.
+- `src/services/audio/` owns browser TTS, premium real-audio integration, media-session/background playback, voice settings, and autoplay behavior. The server-side Azure Speech implementation lives in `api/azureSpeech.ts`.
 - `src/services/ai/` owns recommendation/intervention/tutor logic.
 - `src/services/supabase/` owns auth, sync, and cloud persistence.
 - `src/services/session/` owns practice session lifecycle and tracking.
@@ -110,7 +110,7 @@ Update all relevant surfaces together:
 - Client-exposed variables must use the `VITE_` prefix.
 - Server-only secrets must stay server-side. In particular:
   - `GEMINI_API_KEY` is server-only
-  - `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_REGION` are used by serverless TTS routes
+  - `AZURE_SPEECH_KEY` and `AZURE_SPEECH_REGION` are used by serverless TTS routes
   - `SUPABASE_SERVICE_ROLE_KEY` is server-only
 - Client Supabase config uses `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`.
 - Premium TTS UI is gated by `VITE_PREMIUM_TTS_ENABLED`.

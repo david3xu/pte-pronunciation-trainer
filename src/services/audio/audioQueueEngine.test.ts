@@ -578,4 +578,35 @@ describe('AudioQueueEngine', () => {
     await flushQueueWork();
     expect(engine.getCurrentIndex()).toBe(1);
   });
+
+  it('recovery (onSuspended) reaches the queue again after a manual word tap and reclaim (handler-conflict-audit-instructions)', async () => {
+    const onResumeRequired = vi.fn();
+    const engine = new AudioQueueEngine();
+    engine.setListeners({ onResumeRequired });
+    engine.load(createItems());
+    await engine.start();
+    const queueHandlers = getHandlers();
+
+    // Manual word tap displaces the queue; the queue is then resumed,
+    // reclaiming ownership.
+    audioMocks.backgroundAudioService.setHandlers({ onEnded: vi.fn() });
+    queueHandlers.onOwnershipLost?.();
+    expect(engine.getPlaybackState()).toBe('paused');
+
+    await engine.resume();
+    expect(engine.getPlaybackState()).toBe('playing');
+
+    // A browser/OS suspension signal now must reach the reclaimed queue's
+    // own recovery handling, not a handler set that silently drops it (the
+    // manual tap's minimal {onEnded} set above does not even implement
+    // onSuspended, which is exactly the failure mode this closes off: before
+    // the fix, a suspension arriving while displaced, or arriving after a
+    // botched reclaim, would vanish with no recoverable state at all).
+    queueHandlers.onSuspended?.();
+    await flushQueueWork();
+
+    expect(audioMocks.backgroundAudioService.resume).toHaveBeenCalled();
+    expect(engine.getPlaybackState()).toBe('playing');
+    expect(onResumeRequired).not.toHaveBeenCalled(); // silent resume succeeded
+  });
 });

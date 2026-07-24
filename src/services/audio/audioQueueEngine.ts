@@ -4,6 +4,12 @@ import {
   type BackgroundAudioService,
   type PlayTextOptions,
 } from './backgroundAudioService';
+import { audioCache, buildAudioCacheKey, type AudioCache } from './audioCache';
+
+/** Only the method the engine actually calls. Pick<AudioCache, ...> alone
+ * would require matching AudioCache's private fields too; a fake cache used
+ * in tests only needs to satisfy this narrower, public-only shape. */
+export type QueueAudioCache = Pick<AudioCache, 'getOrFetch'>;
 
 export type PlaybackState =
   | 'idle'
@@ -86,8 +92,10 @@ export interface QueueCommandResult {
 export type QueueAudioService = Pick<
   BackgroundAudioService,
   | 'canResume'
+  | 'fetchAudioBlob'
   | 'getLoadedText'
   | 'pause'
+  | 'playBlob'
   | 'playText'
   | 'playTextFromUserGesture'
   | 'resume'
@@ -97,6 +105,9 @@ export type QueueAudioService = Pick<
   | 'stop'
 >;
 
+/** Prefetch stays deliberately small: the next 1-2 clips only. */
+const PREFETCH_WINDOW = 2;
+
 /**
  * Queue/state-machine layer over the shared background audio service.
  *
@@ -105,6 +116,7 @@ export type QueueAudioService = Pick<
  */
 export class AudioQueueEngine {
   private readonly audioService: QueueAudioService;
+  private readonly cache: QueueAudioCache;
   private items: QueueItem[] = [];
   private currentIndex = 0;
   private playbackState: PlaybackState = 'idle';
@@ -118,9 +130,15 @@ export class AudioQueueEngine {
   private isStoppingAudioService = false;
   private updatedAt = Date.now();
   private lastError: { message: string; at: number } | undefined;
+  private prefetchGeneration = 0;
+  private prefetchInFlight = false;
 
-  constructor(audioService: QueueAudioService = backgroundAudioService) {
+  constructor(
+    audioService: QueueAudioService = backgroundAudioService,
+    cache: QueueAudioCache = audioCache
+  ) {
     this.audioService = audioService;
+    this.cache = cache;
     this.audioService.setHandlers(this.createAudioHandlers());
   }
 
@@ -145,6 +163,7 @@ export class AudioQueueEngine {
       });
     }
 
+    this.triggerPrefetch();
     return this.commandResult(false);
   }
 
@@ -383,6 +402,8 @@ export class AudioQueueEngine {
       });
     }
 
+    this.triggerPrefetch();
+
     if (!shouldContinuePlayback || !item) {
       return Promise.resolve(this.commandResult(true));
     }
@@ -403,15 +424,78 @@ export class AudioQueueEngine {
     this.setState('buffering');
     this.listeners.onBufferingStarted?.({ item, index: this.currentIndex });
 
-    let playback: Promise<void>;
-    try {
-      playback = this.audioService.playText(item.text, this.getAudioOptions(item));
-    } catch (error) {
-      return this.handleSynchronousPlaybackFailure(error, operation, item)
-        .then(() => undefined);
-    }
+    const options = this.getAudioOptions(item);
+    const playback = this.cache
+      .getOrFetch(
+        this.buildCacheKeyForItem(item),
+        () => this.audioService.fetchAudioBlob(item.text, options),
+        { itemId: item.id, datasetId: item.datasetId }
+      )
+      .then(({ blob }) => this.audioService.playBlob(item.text, blob, options));
 
     return this.settlePlayback(playback, operation, item);
+  }
+
+  private buildCacheKeyForItem(item: QueueItem): string {
+    const { rate, voiceId, languageCode, engine } = this.playbackOptions as PlayTextOptions;
+    return buildAudioCacheKey({
+      text: item.text,
+      voiceId,
+      languageCode,
+      rate,
+      engine,
+    });
+  }
+
+  /** Recomputes and (re)starts prefetching the next PREFETCH_WINDOW items.
+   * Bumping the generation here is what lets a running loop notice the queue
+   * or index has moved on and stop chasing now-stale targets. */
+  private triggerPrefetch(): void {
+    this.prefetchGeneration += 1;
+    if (this.prefetchInFlight) return; // the running loop will pick up the new generation itself
+    void this.runPrefetchLoop();
+  }
+
+  private async runPrefetchLoop(): Promise<void> {
+    this.prefetchInFlight = true;
+    try {
+      for (;;) {
+        const generation = this.prefetchGeneration;
+        const targets = this.getPrefetchTargets();
+
+        for (const item of targets) {
+          if (this.prefetchGeneration !== generation) break; // stale; recompute from the top
+
+          const options = this.getAudioOptions(item);
+          try {
+            await this.cache.getOrFetch(
+              this.buildCacheKeyForItem(item),
+              () => this.audioService.fetchAudioBlob(item.text, options),
+              { itemId: item.id, datasetId: item.datasetId }
+            );
+          } catch {
+            // Prefetch failures are silent; real playback retries normally
+            // through playCurrentInBackground when this item is actually needed.
+          }
+        }
+
+        if (this.prefetchGeneration === generation) return; // finished cleanly, nothing newer queued
+        // else: the queue/index moved while we worked; loop again with the latest state.
+      }
+    } finally {
+      this.prefetchInFlight = false;
+    }
+  }
+
+  /** The next PREFETCH_WINDOW items after the current index, skipping past
+   * the end of the loaded queue rather than wrapping. */
+  private getPrefetchTargets(): QueueItem[] {
+    const targets: QueueItem[] = [];
+    for (let offset = 1; offset <= PREFETCH_WINDOW; offset += 1) {
+      const item = this.items[this.currentIndex + offset];
+      if (item) targets.push(item);
+    }
+    return targets;
   }
 
   private settlePlayback(

@@ -134,11 +134,32 @@ export class BackgroundAudioService {
   }
 
   /**
-   * Fetch audio for `text` and start playback on the reusable element.
-   * Resolves once playback has started. Rejects if the audio cannot be fetched
-   * or played, so the caller can fall back to browser TTS explicitly.
+   * Fetches and decodes audio for `text` without touching the shared audio
+   * element or Media Session. Exposed so callers such as the audio cache can
+   * obtain a blob to store, independent of playText()'s side effects. Does
+   * not manage its own AbortController; pass a signal to make a given call
+   * cancellable, or omit one for a fire and forget prefetch.
    */
-  async playText(text: string, options: PlayTextOptions = {}): Promise<void> {
+  async fetchAudioBlob(
+    text: string,
+    options: PlayTextOptions = {},
+    signal?: AbortSignal
+  ): Promise<{ blob: Blob; contentType: string }> {
+    if (!text || !text.trim()) {
+      throw new Error('Cannot play empty text in background audio mode');
+    }
+    const { audioBase64, contentType } = await this.fetchAudioBase64(text, options, signal);
+    return { blob: this.base64ToBlob(audioBase64, contentType), contentType };
+  }
+
+  /**
+   * Plays an already obtained blob (from the audio cache, or a prior
+   * fetchAudioBlob() call) through the shared reusable element. Fetches
+   * nothing itself; playText() below is the fetch-then-play composition of
+   * fetchAudioBlob() and this method, and callers with their own blob (a
+   * cache hit) can call this directly to skip the network entirely.
+   */
+  async playBlob(text: string, blob: Blob, options: PlayTextOptions = {}): Promise<void> {
     if (!this.isSupported()) {
       throw new Error('Background audio is not supported in this environment');
     }
@@ -146,18 +167,12 @@ export class BackgroundAudioService {
       throw new Error('Cannot play empty text in background audio mode');
     }
 
-    // A real playback supersedes any in-flight priming, so a deferred priming
-    // pause will not fire against this clip.
+    // A real playback supersedes any in-flight priming or fetch, the same as
+    // playText's existing guarantee.
     this.primeGeneration++;
-
-    // Cancel any in-flight fetch so dataset changes and rapid advances cannot race.
     this.abortPendingFetch();
-    const controller = new AbortController();
-    this.fetchController = controller;
 
-    const { audioBase64, contentType } = await this.fetchAudioBase64(text, options, controller.signal);
-    const blobUrl = URL.createObjectURL(this.base64ToBlob(audioBase64, contentType));
-
+    const blobUrl = URL.createObjectURL(blob);
     const audio = this.ensureAudioElement();
     this.releaseObjectUrl(); // revoke the previous clip before swapping src
     this.objectUrl = blobUrl;
@@ -188,6 +203,34 @@ export class BackgroundAudioService {
     } catch (error) {
       throw error instanceof Error ? error : new Error('Background audio playback failed');
     }
+  }
+
+  /**
+   * Fetch audio for `text` and start playback on the reusable element.
+   * Resolves once playback has started. Rejects if the audio cannot be fetched
+   * or played, so the caller can fall back to browser TTS explicitly.
+   */
+  async playText(text: string, options: PlayTextOptions = {}): Promise<void> {
+    if (!this.isSupported()) {
+      throw new Error('Background audio is not supported in this environment');
+    }
+    if (!text || !text.trim()) {
+      throw new Error('Cannot play empty text in background audio mode');
+    }
+
+    // Disarm priming and any earlier fetch immediately, before this attempt's
+    // own async work starts, so a deferred priming pause cannot fire against
+    // this clip while the fetch below is in flight.
+    this.primeGeneration++;
+    this.abortPendingFetch();
+    const controller = new AbortController();
+    this.fetchController = controller;
+
+    const { blob } = await this.fetchAudioBlob(text, options, controller.signal);
+    if (this.fetchController === controller) {
+      this.fetchController = null;
+    }
+    await this.playBlob(text, blob, options);
   }
 
   /**
@@ -332,7 +375,7 @@ export class BackgroundAudioService {
   private async fetchAudioBase64(
     text: string,
     options: PlayTextOptions,
-    signal: AbortSignal
+    signal?: AbortSignal
   ): Promise<{ audioBase64: string; contentType: string }> {
     const baseUrl = appConfig.get<string>('api.baseUrl');
     const endpoint = appConfig.get<string>('api.endpoints.premiumTts');

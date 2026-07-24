@@ -14,8 +14,10 @@ const audioMocks = vi.hoisted(() => ({
   BackgroundAudioService: vi.fn(),
   backgroundAudioService: {
     canResume: vi.fn(() => false),
+    fetchAudioBlob: vi.fn(() => Promise.resolve({ blob: new Blob(['audio']), contentType: 'audio/mpeg' })),
     getLoadedText: vi.fn<() => string | null>(() => null),
     pause: vi.fn(),
+    playBlob: vi.fn(() => Promise.resolve()),
     playText: vi.fn(() => Promise.resolve()),
     playTextFromUserGesture: vi.fn(() => Promise.resolve()),
     resume: vi.fn(() => Promise.resolve()),
@@ -31,7 +33,29 @@ vi.mock('./backgroundAudioService', () => ({
   backgroundAudioService: audioMocks.backgroundAudioService,
 }));
 
-import { AudioQueueEngine, type QueueItem } from './audioQueueEngine';
+// The engine's cache parameter defaults to the real audioCache singleton,
+// which is backed by IndexedDB. Mocking it here keeps these engine tests
+// focused on sequencing, not cache behavior (covered separately in
+// audioCache.test.ts); getOrFetch is a transparent pass-through to whatever
+// fetcher the engine provides, so it behaves like an always-miss cache.
+const cacheMocks = vi.hoisted(() => ({
+  audioCache: {
+    getOrFetch: vi.fn(
+      (
+        _key: string,
+        fetcher: () => Promise<{ blob: Blob; contentType: string }>
+      ) => fetcher().then((result) => ({ ...result, fromCache: false }))
+    ),
+  },
+  buildAudioCacheKey: vi.fn((input: { text: string }) => `key:${input.text}`),
+}));
+
+vi.mock('./audioCache', () => ({
+  audioCache: cacheMocks.audioCache,
+  buildAudioCacheKey: cacheMocks.buildAudioCacheKey,
+}));
+
+import { AudioQueueEngine, type QueueAudioCache, type QueueItem } from './audioQueueEngine';
 
 const createItems = (): QueueItem[] => [
   {
@@ -61,14 +85,13 @@ const getHandlers = (): TestAudioHandlers => {
 };
 
 const flushQueueWork = async (): Promise<void> => {
-  await Promise.resolve();
-  await Promise.resolve();
+  await new Promise((resolve) => setTimeout(resolve, 0));
 };
 
-const createDeferred = () => {
-  let resolvePromise: () => void = () => {};
+const createDeferred = <T = void>() => {
+  let resolvePromise: (value: T) => void = () => {};
   let rejectPromise: (reason?: unknown) => void = () => {};
-  const promise = new Promise<void>((resolve, reject) => {
+  const promise = new Promise<T>((resolve, reject) => {
     resolvePromise = resolve;
     rejectPromise = reject;
   });
@@ -84,6 +107,11 @@ describe('AudioQueueEngine', () => {
     audioMocks.backgroundAudioService.playText.mockResolvedValue(undefined);
     audioMocks.backgroundAudioService.playTextFromUserGesture.mockResolvedValue(undefined);
     audioMocks.backgroundAudioService.resume.mockResolvedValue(undefined);
+    audioMocks.backgroundAudioService.fetchAudioBlob.mockResolvedValue({
+      blob: new Blob(['audio']),
+      contentType: 'audio/mpeg',
+    });
+    audioMocks.backgroundAudioService.playBlob.mockResolvedValue(undefined);
   });
 
   it('loads and starts through the shared background audio service without creating another service', async () => {
@@ -116,8 +144,13 @@ describe('AudioQueueEngine', () => {
 
     await engine.startAutomatic();
 
-    expect(audioMocks.backgroundAudioService.playText).toHaveBeenCalledWith(
+    expect(audioMocks.backgroundAudioService.fetchAudioBlob).toHaveBeenCalledWith(
       'First clip',
+      expect.objectContaining({ mediaTitle: 'FIRST clip' })
+    );
+    expect(audioMocks.backgroundAudioService.playBlob).toHaveBeenCalledWith(
+      'First clip',
+      expect.anything(),
       expect.objectContaining({ mediaTitle: 'FIRST clip' })
     );
     expect(audioMocks.backgroundAudioService.playTextFromUserGesture).not.toHaveBeenCalled();
@@ -187,8 +220,13 @@ describe('AudioQueueEngine', () => {
       repeatCount: 2,
     }));
     expect(engine.getCurrentIndex()).toBe(0);
-    expect(audioMocks.backgroundAudioService.playText).toHaveBeenCalledWith(
+    expect(audioMocks.backgroundAudioService.fetchAudioBlob).toHaveBeenCalledWith(
       'First clip',
+      expect.objectContaining({ mediaTitle: 'FIRST clip' })
+    );
+    expect(audioMocks.backgroundAudioService.playBlob).toHaveBeenCalledWith(
+      'First clip',
+      expect.anything(),
       expect.objectContaining({ mediaTitle: 'FIRST clip' })
     );
 
@@ -196,8 +234,9 @@ describe('AudioQueueEngine', () => {
     await flushQueueWork();
 
     expect(engine.getCurrentIndex()).toBe(1);
-    expect(audioMocks.backgroundAudioService.playText).toHaveBeenLastCalledWith(
+    expect(audioMocks.backgroundAudioService.playBlob).toHaveBeenLastCalledWith(
       'Second clip',
+      expect.anything(),
       expect.objectContaining({ mediaTitle: 'SECOND clip' })
     );
   });
@@ -213,8 +252,9 @@ describe('AudioQueueEngine', () => {
     await flushQueueWork();
 
     expect(engine.getCurrentIndex()).toBe(0);
-    expect(audioMocks.backgroundAudioService.playText).toHaveBeenLastCalledWith(
+    expect(audioMocks.backgroundAudioService.playBlob).toHaveBeenLastCalledWith(
       'First clip',
+      expect.anything(),
       expect.any(Object)
     );
   });
@@ -239,14 +279,14 @@ describe('AudioQueueEngine', () => {
   });
 
   it('cancels a buffering request when paused without emitting a failure', async () => {
-    const deferredPlayback = createDeferred();
+    const deferredPlayback = createDeferred<{ blob: Blob; contentType: string }>();
     const abortError = Object.assign(new Error('request aborted'), { name: 'AbortError' });
     const onPlaybackFailed = vi.fn();
     const engine = new AudioQueueEngine();
     engine.setListeners({ onPlaybackFailed });
     engine.load(createItems());
     await engine.start();
-    audioMocks.backgroundAudioService.playText.mockReturnValueOnce(deferredPlayback.promise);
+    audioMocks.backgroundAudioService.fetchAudioBlob.mockReturnValueOnce(deferredPlayback.promise);
 
     const moving = engine.next();
     expect(engine.getPlaybackState()).toBe('buffering');
@@ -303,5 +343,90 @@ describe('AudioQueueEngine', () => {
 
     handlers.onStop?.();
     expect(engine.getPlaybackState()).toBe('idle');
+  });
+
+  it('never runs two prefetch fetches concurrently', async () => {
+    const items: QueueItem[] = [
+      { id: 'a', datasetId: 'concurrency-test', index: 0, text: 'A clip', mediaTitle: 'A', mediaArtist: '', itemType: 'vocabulary' },
+      { id: 'b', datasetId: 'concurrency-test', index: 1, text: 'B clip', mediaTitle: 'B', mediaArtist: '', itemType: 'vocabulary' },
+      { id: 'c', datasetId: 'concurrency-test', index: 2, text: 'C clip', mediaTitle: 'C', mediaArtist: '', itemType: 'vocabulary' },
+    ];
+    const deferredB = createDeferred<{ blob: Blob; contentType: string }>();
+    audioMocks.backgroundAudioService.fetchAudioBlob.mockReturnValueOnce(deferredB.promise);
+
+    const engine = new AudioQueueEngine();
+    engine.load(items); // prefetch targets B, C; the fetch for B hangs
+    await flushQueueWork();
+
+    expect(audioMocks.backgroundAudioService.fetchAudioBlob).toHaveBeenCalledTimes(1);
+
+    // Re-triggering prefetch repeatedly while the first attempt is still
+    // stuck must never start a second, overlapping attempt.
+    await engine.next();
+    await engine.previous();
+    await flushQueueWork();
+
+    expect(audioMocks.backgroundAudioService.fetchAudioBlob).toHaveBeenCalledTimes(1);
+
+    deferredB.resolve({ blob: new Blob(['b']), contentType: 'audio/mpeg' });
+    await flushQueueWork();
+  });
+
+  it('cancels stale prefetch targets when the queue is replaced mid-flight', async () => {
+    const originalItems: QueueItem[] = [
+      { id: 'a', datasetId: 'book-a', index: 0, text: 'A clip', mediaTitle: 'A', mediaArtist: '', itemType: 'vocabulary' },
+      { id: 'stale', datasetId: 'book-a', index: 1, text: 'Stale clip', mediaTitle: 'Stale', mediaArtist: '', itemType: 'vocabulary' },
+    ];
+    const replacementItems: QueueItem[] = [
+      { id: 'x', datasetId: 'book-b', index: 0, text: 'X clip', mediaTitle: 'X', mediaArtist: '', itemType: 'vocabulary' },
+      { id: 'fresh', datasetId: 'book-b', index: 1, text: 'Fresh clip', mediaTitle: 'Fresh', mediaArtist: '', itemType: 'vocabulary' },
+    ];
+
+    const deferredStale = createDeferred<{ blob: Blob; contentType: string }>();
+    audioMocks.backgroundAudioService.fetchAudioBlob.mockReturnValueOnce(deferredStale.promise);
+
+    const engine = new AudioQueueEngine();
+    engine.load(originalItems); // prefetch target: 'Stale clip'; hangs
+    await flushQueueWork();
+
+    expect(audioMocks.backgroundAudioService.fetchAudioBlob).toHaveBeenCalledWith('Stale clip', expect.any(Object));
+
+    // A book switch (or any queue replacement) while that fetch is still in
+    // flight must not let it be retried, and the loop should move on to the
+    // replacement queue's own targets once it clears.
+    engine.load(replacementItems);
+    deferredStale.resolve({ blob: new Blob(['stale']), contentType: 'audio/mpeg' });
+    await flushQueueWork();
+
+    expect(audioMocks.backgroundAudioService.fetchAudioBlob).toHaveBeenCalledWith('Fresh clip', expect.any(Object));
+    expect(audioMocks.backgroundAudioService.fetchAudioBlob).toHaveBeenCalledTimes(2);
+  });
+
+  it('does not fetch the same audio twice when duplicate queued items share a cache key', async () => {
+    const stored = new Map<string, { blob: Blob; contentType: string }>();
+    const realisticCache: QueueAudioCache = {
+      getOrFetch: vi.fn(
+        async (key: string, fetcher: () => Promise<{ blob: Blob; contentType: string }>) => {
+          const existing = stored.get(key);
+          if (existing) return { ...existing, fromCache: true };
+          const result = await fetcher();
+          stored.set(key, result);
+          return { ...result, fromCache: false };
+        }
+      ),
+    };
+
+    const items: QueueItem[] = [
+      { id: 'anchor', datasetId: 'dup-test', index: 0, text: 'Anchor clip', mediaTitle: 'Anchor', mediaArtist: '', itemType: 'vocabulary' },
+      { id: 'first-dup', datasetId: 'dup-test', index: 1, text: 'Repeated clip', mediaTitle: 'Repeated', mediaArtist: '', itemType: 'vocabulary' },
+      { id: 'second-dup', datasetId: 'dup-test', index: 2, text: 'Repeated clip', mediaTitle: 'Repeated', mediaArtist: '', itemType: 'vocabulary' },
+    ];
+
+    const engine = new AudioQueueEngine(audioMocks.backgroundAudioService, realisticCache);
+    engine.load(items); // prefetch targets: index 1 and 2, both 'Repeated clip'
+    await flushQueueWork();
+
+    expect(realisticCache.getOrFetch).toHaveBeenCalledTimes(2);
+    expect(audioMocks.backgroundAudioService.fetchAudioBlob).toHaveBeenCalledTimes(1);
   });
 });

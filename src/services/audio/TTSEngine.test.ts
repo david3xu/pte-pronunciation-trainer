@@ -1,12 +1,13 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 const playTextMock = vi.fn();
+const setHandlersMock = vi.fn();
 
 vi.mock('./backgroundAudioService', () => ({
   backgroundAudioService: {
     primeForUserGesture: vi.fn(),
     playText: playTextMock,
-    setHandlers: vi.fn(),
+    setHandlers: setHandlersMock,
     stop: vi.fn(),
   },
 }));
@@ -67,5 +68,40 @@ describe('TTSEngine', () => {
       lang: 'en-US',
       rate: 1.1,
     });
+  });
+
+  it('settles cleanly instead of hanging when the queue reclaims ownership mid-word (fix-tts-engine-handler-conflict)', async () => {
+    type CapturedHandlers = {
+      onEnded?: () => void;
+      onError?: (error: Error) => void;
+      onOwnershipLost?: () => void;
+    };
+    let capturedHandlers: CapturedHandlers | undefined;
+    setHandlersMock.mockImplementation((handlers: CapturedHandlers) => {
+      capturedHandlers = handlers;
+    });
+
+    // Real audio's own play never settles on its own here: this simulates
+    // the queue taking the shared element back while this word's fetch/play
+    // is still in flight, before playText itself would ever resolve or
+    // reject.
+    playTextMock.mockReturnValueOnce(new Promise<void>(() => {}));
+
+    const { TTSEngine } = await import('./TTSEngine');
+    const engine = new TTSEngine();
+
+    const speakPromise = engine.speak('hello world', 'en-US', 1.1);
+
+    // Let speak() reach its setHandlers() registration before the takeover.
+    await Promise.resolve();
+    await Promise.resolve();
+    expect(capturedHandlers?.onOwnershipLost).toBeInstanceOf(Function);
+
+    capturedHandlers?.onOwnershipLost?.();
+
+    // Must resolve, not hang forever and not reject as though this were a
+    // genuine playback failure; matches the existing "cancelled previous
+    // speech" path, which also resolves with no error on supersession.
+    await expect(speakPromise).resolves.toBeUndefined();
   });
 });

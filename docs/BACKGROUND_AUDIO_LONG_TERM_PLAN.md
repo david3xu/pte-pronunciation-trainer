@@ -12,11 +12,32 @@ Background practice is not fully stable because the app currently behaves like m
 
 This is fragile in browsers and PWAs, especially in Low Power Mode. The OS can throttle JavaScript timers, pause network requests, revoke wake locks, or suspend the page during gaps between clips.
 
-Native audio apps are more reliable because they run a continuous background audio session or playlist with OS-level background privileges. A web app cannot fully guarantee that behavior, but the design can be made much more robust.
+Native audio apps are more reliable because they run a continuous background audio session or playlist with OS-level background privileges. A web app cannot fully guarantee Spotify-like behavior, especially after iOS or Android suspends the browser. The web/PWA design below is still valuable because it is the shared playback core, but the product target for true Spotify-class background playback requires a native mobile track.
 
 ## Long term direction
 
 Build practice playback like a podcast or music playlist, not repeated one-off audio buttons.
+
+## Full mobile app target
+
+The target is no longer only a better mobile browser/PWA. The product target is a
+**full iOS and Android mobile app** with native-app-level background audio,
+comparable to Spotify or podcast apps:
+
+- audio continues when the screen is locked
+- lock-screen controls remain available and synchronized
+- playback survives normal app backgrounding
+- queue position is retained across interruptions
+- the app can recover predictably after OS suspension, network failure, or route changes
+- learners can run long listening/pronunciation drills without keeping the browser foregrounded
+- the app can be built, signed, installed, and tested as real iOS and Android apps
+
+This target cannot be guaranteed by a browser-only PWA. Browser and PWA policies can pause JavaScript, revoke wake locks, require a fresh user gesture, suspend network requests, or unload the page. Therefore the plan has two layers:
+
+1. **Shared web playback core:** queue engine, cache, prefetch, recovery states, and mobile E2E coverage. This remains necessary because it defines sequencing, generated-audio caching, and foreground behavior.
+2. **Native mobile app:** iOS/Android shell, background audio session, remote command center/media controls, persistent queue storage, native lifecycle handling, device testing, and release packaging. This is required before claiming Spotify-like support.
+
+Do not close the overall background-audio initiative as "Spotify-like" or "fully mobile" until the native mobile app has shipped and passed device-level background tests.
 
 ## Phase 1: Queue state machine on top of the existing audio service
 
@@ -544,9 +565,9 @@ Implementation notes:
 - Return per-item success/error results so one failed synthesis does not fail the entire queue warmup.
 - Consider server-side cache integration before increasing the client prefetch window.
 
-## Phase 7: Native wrapper if required
+## Phase 7: Native mobile app foundation
 
-For Spotify or podcast level reliability, a native app or native wrapper is the strongest solution.
+For Spotify or podcast level reliability, a native mobile app is required, not optional. The current React/Vite app can remain the main UI, but native code must own the mobile background audio session and OS integration.
 
 Options:
 
@@ -554,7 +575,54 @@ Options:
 - React Native
 - fully native iOS and Android
 
+Recommended direction: start with **Capacitor** unless there is a strong reason to rewrite in React Native or fully native code. Capacitor preserves the existing React app and lets the project add native plugins for audio session, media controls, persistence, and lifecycle behavior.
+
+Foundation requirements:
+
+- Add Capacitor project configuration and mobile build scripts.
+- Generate and commit `ios/` and `android/` projects once the shell configuration is stable.
+- Define mobile environment handling so server-only secrets remain server-only and client-exposed values still use `VITE_` prefixes.
+- Ensure generated PTE data is available in mobile builds, either bundled in the app or fetched through a versioned update path.
+- Confirm Supabase, PostHog, Gemini proxy/API routes, and Azure Speech routes work from the mobile app deployment model.
+- Add mobile-specific app metadata, deep-link scheme if needed, app icons/splash assets, permissions, and privacy strings.
+- Keep web and mobile using the same React source where practical; fork only native behavior that genuinely requires platform APIs.
+
+Native requirements:
+
+- iOS: enable the Audio background mode, configure `AVAudioSession` for playback, integrate lock-screen metadata and remote commands with `MPNowPlayingInfoCenter` / `MPRemoteCommandCenter`.
+- Android: implement a foreground media playback service with a persistent notification, audio focus handling, media session controls, and lock-screen metadata.
+- Maintain one logical queue model shared with the web queue engine: current item, next item, repeat state, playback state, and cache key metadata must serialize cleanly across the web/native boundary.
+- Let native code own the actual background playback session while reusing the same generated audio cache/prefetch rules where possible.
+- Sync native playback events back to the React store so visible UI, lock-screen controls, and queue state stay consistent.
+- Store queue position and cache metadata durably enough to recover after app backgrounding, process death, or network interruption.
+- Add device-level E2E/manual test scripts for locked screen, app switcher, Bluetooth/earbud controls, and long-session playback.
+
 Native apps can request real background audio privileges. A PWA cannot fully guarantee continuous background execution, especially in Low Power Mode.
+
+## Phase 8: Native background audio plugin
+
+After the mobile shell exists, add a native audio bridge instead of trying to
+force the browser `HTMLAudioElement` to behave like a native media service in
+the background.
+
+Responsibilities:
+
+- Accept the same queue items and generated audio cache metadata used by the web queue engine.
+- Play cached/generated audio through native media APIs while the app is backgrounded.
+- Expose native events for play, pause, resume, ended, next, previous, interruption, route change, audio focus loss/gain, and failure.
+- Keep the React store synchronized with native playback state.
+- Preserve the gesture-safe web path for browser builds and foreground fallback.
+- Avoid two active playback owners at the same time: web audio owns browser playback; native audio owns mobile-background playback.
+
+## Phase 9: Mobile release hardening
+
+Before calling the app fully mobile, complete release hardening:
+
+- iOS and Android build scripts documented and reproducible.
+- Real-device test matrix covering iPhone, iPad if supported, Android phone, locked screen, Bluetooth/earbuds, app switcher, Low Power Mode/battery saver, and poor network.
+- Store/privacy review for microphone, speech/audio, analytics, and cloud sync behavior.
+- Crash/error telemetry for native audio interruptions and resume failures.
+- Upgrade/migration path for existing web users' progress/settings where possible.
 
 ## Recommended roadmap
 
@@ -566,7 +634,10 @@ Native apps can request real background audio privileges. A PWA cannot fully gua
 6. Add suspension detection and tap-to-resume UX.
 7. Add Background Practice Mode using the same queue engine.
 8. Add batch TTS generation if prefetch warmup still creates too many requests or gaps.
-9. Consider a native wrapper only if web/PWA reliability is still not enough.
+9. Add mobile E2E tests for the web/PWA recovery path.
+10. Build the Capacitor mobile app foundation.
+11. Add the native background audio plugin/bridge.
+12. Add native-device background playback tests and release hardening before claiming Spotify-like support.
 
 ## Success criteria
 
@@ -580,3 +651,8 @@ Native apps can request real background audio privileges. A PWA cannot fully gua
 - Cache hit rate improves across repeated practice sessions.
 - Playback failures, autoplay-blocked events, and resume outcomes are logged so reliability can be measured.
 - Next/previous lock-screen controls stay in sync with the queue and visible item.
+- Native mobile builds continue playback with the screen locked on iOS and Android.
+- Native lock-screen / notification controls can pause, resume, next, previous, and stop without desynchronizing the React queue.
+- Native playback survives normal app backgrounding and can recover after process or network interruption.
+- iOS and Android apps can be built from documented commands and installed on real devices.
+- Mobile app packaging keeps server-only Azure/Supabase/Gemini secrets out of client bundles.

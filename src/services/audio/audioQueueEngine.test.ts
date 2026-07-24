@@ -9,6 +9,7 @@ type TestAudioHandlers = {
   onNext?: () => void;
   onPrevious?: () => void;
   onSuspended?: () => void;
+  onOwnershipLost?: () => void;
 };
 
 const audioMocks = vi.hoisted(() => ({
@@ -133,7 +134,12 @@ describe('AudioQueueEngine', () => {
     expect(audioMocks.backgroundAudioService.setRate).toHaveBeenCalledWith(1.2);
     expect(audioMocks.backgroundAudioService.setVolume).toHaveBeenCalledWith(0.6);
     expect(audioMocks.BackgroundAudioService).not.toHaveBeenCalled();
-    expect(audioMocks.backgroundAudioService.setHandlers).toHaveBeenCalledTimes(1);
+    // Once at construction, and once more as start()'s ownership reclaim
+    // (see fix-tts-engine-handler-conflict): both calls pass this engine's
+    // own stable handlers object, so backgroundAudioService's real
+    // implementation would treat the second as a no-op rather than a
+    // takeover; this mock just records that both calls happened.
+    expect(audioMocks.backgroundAudioService.setHandlers).toHaveBeenCalledTimes(2);
 
     await start;
     expect(engine.getPlaybackState()).toBe('playing');
@@ -506,5 +512,70 @@ describe('AudioQueueEngine', () => {
     await flushQueueWork();
 
     expect(engine.getPlaybackState()).toBe('playing');
+  });
+
+  it('reclaims its handlers after a manual word tap displaces them, and clip-end events reach it again afterward (fix-tts-engine-handler-conflict)', async () => {
+    const onClipEnded = vi.fn();
+    const engine = new AudioQueueEngine();
+    engine.setListeners({ onClipEnded });
+    engine.load(createItems());
+    await engine.start();
+
+    expect(engine.getPlaybackState()).toBe('playing');
+    const queueHandlers = getHandlers();
+
+    // A manual word tap through TTSEngine calls backgroundAudioService's
+    // real setHandlers() with its own, different object. The real service
+    // fires onOwnershipLost on whatever was previously registered before
+    // replacing it; this mock records the call but does not implement that
+    // notification itself, so invoke it directly here to exercise the
+    // engine's own reaction, exactly as backgroundAudioService.ts does.
+    const manualTapHandlers: TestAudioHandlers = { onEnded: vi.fn(), onError: vi.fn() };
+    audioMocks.backgroundAudioService.setHandlers(manualTapHandlers);
+    queueHandlers.onOwnershipLost?.();
+
+    // The queue no longer controls the shared element, so it settles to
+    // paused instead of staying stuck showing 'playing' for audio that is
+    // no longer actually its own.
+    expect(engine.getPlaybackState()).toBe('paused');
+
+    // The manual tap's own clip finishing reaches its own handlers, not the
+    // queue's, since the queue was displaced.
+    manualTapHandlers.onEnded?.();
+    await flushQueueWork();
+    expect(onClipEnded).not.toHaveBeenCalled();
+
+    // Resuming the queue must reclaim ownership rather than staying detached.
+    await engine.resume();
+    expect(audioMocks.backgroundAudioService.setHandlers).toHaveBeenLastCalledWith(queueHandlers);
+    expect(engine.getPlaybackState()).toBe('playing');
+
+    // With ownership reclaimed, a clip ending reaches the queue again,
+    // proving the earlier takeover did not permanently detach it.
+    queueHandlers.onEnded?.();
+    await flushQueueWork();
+    expect(onClipEnded).toHaveBeenCalledTimes(1);
+  });
+
+  it('Media Session button presses reach the queue again after a manual word tap and resume (fix-tts-engine-handler-conflict)', async () => {
+    const engine = new AudioQueueEngine();
+    engine.load(createItems());
+    await engine.start();
+    const queueHandlers = getHandlers();
+
+    audioMocks.backgroundAudioService.setHandlers({ onEnded: vi.fn() });
+    queueHandlers.onOwnershipLost?.();
+    expect(engine.getPlaybackState()).toBe('paused');
+
+    await engine.resume();
+    expect(engine.getPlaybackState()).toBe('playing');
+
+    // backgroundAudioService's real Media Session action handlers dispatch
+    // dynamically to whichever handlers object is currently registered
+    // (see bindMediaSession()), so a button press after reclaiming ownership
+    // must reach the queue's onNext, not silently do nothing.
+    queueHandlers.onNext?.();
+    await flushQueueWork();
+    expect(engine.getCurrentIndex()).toBe(1);
   });
 });

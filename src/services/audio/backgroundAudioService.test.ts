@@ -346,4 +346,31 @@ describe('BackgroundAudioService', () => {
     expect(lastFakeAudio?.paused).toBe(false);
     playSpyOnce.mockRestore();
   });
+
+  // ---- handler ownership (fix-tts-engine-handler-conflict) ----
+
+  it('notifies the previous handlers of onOwnershipLost when a different caller takes over', () => {
+    const service = new BackgroundAudioService();
+    const onOwnershipLost = vi.fn();
+    const queueHandlers = { onEnded: vi.fn(), onOwnershipLost };
+    const manualTapHandlers = { onEnded: vi.fn() };
+
+    service.setHandlers(queueHandlers);
+    expect(onOwnershipLost).not.toHaveBeenCalled();
+
+    service.setHandlers(manualTapHandlers);
+    expect(onOwnershipLost).toHaveBeenCalledTimes(1);
+  });
+
+  it('does not fire onOwnershipLost when a caller re-registers its own handlers object', () => {
+    const service = new BackgroundAudioService();
+    const onOwnershipLost = vi.fn();
+    const handlers = { onEnded: vi.fn(), onOwnershipLost };
+
+    service.setHandlers(handlers);
+    service.setHandlers(handlers); // same reference: reasserting its own ownership
+    service.setHandlers(handlers);
+
+    expect(onOwnershipLost).not.toHaveBeenCalled();
+  });
 });

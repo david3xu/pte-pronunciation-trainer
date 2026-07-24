@@ -437,6 +437,12 @@ export class TTSEngine {
       backgroundAudioService.setHandlers({
         onEnded: () => settle(),
         onError: (error) => settle(error),
+        // If the queue (or anything else) takes the shared element back
+        // while this word is still playing, settle cleanly rather than
+        // leaving this promise pending forever. Matches the existing
+        // "cancelled previous speech" path above, which also resolves with
+        // no error rather than treating a supersession as a failure.
+        onOwnershipLost: () => settle(),
       });
 
       // Prime synchronously when speak() is triggered by a user gesture. This

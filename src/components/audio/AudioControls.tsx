@@ -52,7 +52,7 @@ const AudioControls: React.FC = () => {
             onClick={() => {
               if (audio.isAutoPlaying) {
                 if (audio.isPaused) {
-                  audio.resumeAutoPlay();
+                  handlePlay();
                 } else {
                   handlePause();
                 }

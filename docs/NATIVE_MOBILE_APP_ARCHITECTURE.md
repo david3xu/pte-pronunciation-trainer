@@ -93,7 +93,8 @@ export default config;
 │       │   ├── AppDelegate.swift
 │       │   ├── Info.plist            # UIBackgroundModes: audio; privacy strings (§8)
 │       │   └── capacitor.config.json
-│       └── Podfile
+│       └── CapApp-SPM/
+│           └── Package.swift         # Capacitor 8 Swift Package Manager integration; no Podfile
 ├── android/                          # DEFERRED: generated in the Android parity track, not iOS stage
 │   └── app/
 │       ├── build.gradle
@@ -143,12 +144,14 @@ To add to `package.json` in the iOS foundation round (not this architecture roun
 
 `cap sync ios` copies the fresh `vite build` output into `ios/App/App/public`,
 then updates native iOS dependencies from `capacitor.config.ts`'s plugin list.
-`cap open ios` launches Xcode for anything that needs the native IDE (signing,
-capability toggles, Info.plist edits, running on a real device). `cap run ios`
-builds and launches on a connected device or simulator directly from the CLI,
-useful for quick iteration once the shell exists. Android scripts should be
-added later with the Android parity track, not in the current iOS foundation
-round.
+With Capacitor 8.4.x, the generated iOS project uses Swift Package Manager via
+`ios/App/CapApp-SPM/Package.swift`; there is no CocoaPods `Podfile` in the
+generated shell. `cap open ios` launches Xcode for anything that needs the
+native IDE (signing, capability toggles, Info.plist edits, running on a real
+device). `cap run ios` builds and launches on a connected device or simulator
+directly from the CLI, useful for quick iteration once the shell exists.
+Android scripts should be added later with the Android parity track, not in the
+current iOS foundation round.
 
 ---
 

@@ -8,12 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@capacitor/android':
-        specifier: ^8.4.2
-        version: 8.4.2(@capacitor/core@8.4.2)
-      '@capacitor/cli':
-        specifier: ^8.4.2
-        version: 8.4.2
       '@capacitor/core':
         specifier: ^8.4.2
         version: 8.4.2
@@ -90,6 +84,9 @@ importers:
         specifier: ^5.0.8
         version: 5.0.14(@types/react@19.2.17)(immer@10.2.0)(react@19.2.0)
     devDependencies:
+      '@capacitor/cli':
+        specifier: ^8.4.2
+        version: 8.4.2
       '@playwright/test':
         specifier: ^1.61.1
         version: 1.61.1
@@ -802,11 +799,6 @@ packages:
 
   '@cacheable/utils@2.5.0':
     resolution: {integrity: sha512-buipgOVDkkPXNR5+xBpDw7Zk2n1EvU7qBJCNUcL7rhQ//kfpOXPAvQ511Os0vpLYJ1pZnvudNytkQt2hst3wqA==}
-
-  '@capacitor/android@8.4.2':
-    resolution: {integrity: sha512-bzf8XZ9C+ePgOQ+e+T0fnhHGH4aCNY494vvSQIF5w4AY07RwEmkFqZs1678DDSMH0hLSQpxEwXGFNUVcXO6bBA==}
-    peerDependencies:
-      '@capacitor/core': ^8.4.0
 
   '@capacitor/cli@8.4.2':
     resolution: {integrity: sha512-hE4HmpMdr5T8eQ++kGa1BKkdG2JLEvo1y1cj1kmFK78VB9dBp538oe1EZvzwupNGOl0ZueALotzL5wcXRD9w1Q==}
@@ -6688,10 +6680,6 @@ snapshots:
     dependencies:
       hashery: 1.5.1
       keyv: 5.6.0
-
-  '@capacitor/android@8.4.2(@capacitor/core@8.4.2)':
-    dependencies:
-      '@capacitor/core': 8.4.2
 
   '@capacitor/cli@8.4.2':
     dependencies:

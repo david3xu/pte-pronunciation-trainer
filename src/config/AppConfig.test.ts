@@ -85,6 +85,17 @@ describe('Config Validation', () => {
     });
   });
 
+  describe('Repeat Count Defaults (single source of truth)', () => {
+    it('defines fallback and difficulty-based word repeat defaults', () => {
+      expect(appConfig.get('settings.defaults.vocabRepeatCount')).toBe(3);
+      expect(appConfig.get('settings.defaults.wordRepeatCount')).toEqual({
+        easy: 1,
+        normal: 3,
+        hard: 5,
+      });
+    });
+  });
+
   describe('Vocabulary Book Configuration', () => {
     it('should include the custom RA vocabulary book', () => {
       const learningModes = appConfig.get('data.learningModes');

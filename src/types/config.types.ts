@@ -330,6 +330,8 @@ export interface SettingsDefaults {
   showPhonetic: boolean;
   ttsRate: number;
   ttsVolume: number;
+  vocabRepeatCount: 1 | 3 | 5;
+  wordRepeatCount: Record<Difficulty, 1 | 3 | 5>;
   practiceMode: PracticeMode | null;
   difficultyFilter: Difficulty | 'all';
   theme: 'light' | 'dark' | 'auto';

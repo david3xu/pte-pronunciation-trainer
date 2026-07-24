@@ -44,7 +44,8 @@ import type {
  * learningModes so the store never hardcodes a book id (single source of truth).
  */
 const DEFAULT_VOCABULARY_BOOK = appConfig.getDefaultVocabularyBookId();
-const DEFAULT_TTS_RATE = 0.7;
+const DEFAULT_TTS_RATE = appConfig.get<number>('settings.defaults.ttsRate', 0.7);
+const DEFAULT_VOCAB_REPEAT_COUNT = appConfig.get<1 | 3 | 5>('settings.defaults.vocabRepeatCount', 3);
 const PREVIOUS_DEFAULT_TTS_RATES = new Set([1.0, 1.2]);
 
 /**
@@ -212,7 +213,7 @@ export const useAppStore = create<AppState>()(
             showPhonetic: true,
             ttsRate: DEFAULT_TTS_RATE,
             ttsVoice: null, // Browser Default as default
-            vocabRepeatCount: 3, // Fallback default; vocabulary items override by difficulty
+            vocabRepeatCount: DEFAULT_VOCAB_REPEAT_COUNT,
             difficultyFilter: 'all',
             theme: 'auto', // Default: follow system preference
             isPanelOpen: false,
@@ -285,7 +286,7 @@ export const useAppStore = create<AppState>()(
                   showPhonetic: true,
                   ttsRate: DEFAULT_TTS_RATE,
                   ttsVoice: null, // Browser Default as default
-                  vocabRepeatCount: 3, // Fallback default; vocabulary items override by difficulty
+                  vocabRepeatCount: DEFAULT_VOCAB_REPEAT_COUNT,
                   difficultyFilter: 'all',
                   theme: 'auto', // Default: follow system preference
                   isPanelOpen: false,

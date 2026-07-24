@@ -89,7 +89,18 @@ public class BackgroundAudioPlugin: CAPPlugin, CAPBridgedPlugin {
             }
 
             newPlayer.prepareToPlay()
-            newPlayer.play()
+            print("[BackgroundAudioPlugin] Prepared native audio: bytes=\(audioData.count), contentType=\(contentType), duration=\(newPlayer.duration)")
+            let didStart = newPlayer.play()
+            if !didStart {
+                try? FileManager.default.removeItem(at: tempURL)
+                throw NSError(
+                    domain: "BackgroundAudioPlugin",
+                    code: 1,
+                    userInfo: [
+                        NSLocalizedDescriptionKey: "AVAudioPlayer.play() returned false (bytes: \(audioData.count), duration: \(newPlayer.duration))"
+                    ]
+                )
+            }
 
             cleanupTempFile()
             player = newPlayer
@@ -103,8 +114,9 @@ public class BackgroundAudioPlugin: CAPPlugin, CAPBridgedPlugin {
             )
             configureRemoteCommandsIfNeeded()
 
-            call.resolve()
+            call.resolve(["duration": newPlayer.duration])
         } catch {
+            print("[BackgroundAudioPlugin] play() failed: \(error.localizedDescription)")
             call.reject("play() failed: \(error.localizedDescription)")
         }
     }
@@ -306,6 +318,7 @@ public class BackgroundAudioPlugin: CAPPlugin, CAPBridgedPlugin {
 extension BackgroundAudioPlugin: AVAudioPlayerDelegate {
     public func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         hasFinished = true
+        print("[BackgroundAudioPlugin] Finished native audio successfully=\(flag)")
         if flag {
             notifyListeners("ended", data: nil)
         } else {
@@ -314,6 +327,7 @@ extension BackgroundAudioPlugin: AVAudioPlayerDelegate {
     }
 
     public func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?) {
+        print("[BackgroundAudioPlugin] Decode error: \(error?.localizedDescription ?? "Audio decode error")")
         notifyListeners("error", data: ["message": error?.localizedDescription ?? "Audio decode error"])
     }
 }

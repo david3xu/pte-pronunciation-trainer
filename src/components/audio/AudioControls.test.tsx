@@ -28,12 +28,14 @@ describe('AudioControls', () => {
     act(() => {
       useAppStore.getState().audio.stopAutoPlay();
       useAppStore.getState().audio.setCurrentIndex(0);
+      useAppStore.getState().settings.updateSetting('autoPlay', true);
     });
   });
 
   afterEach(() => {
     act(() => {
       useAppStore.getState().audio.stopAutoPlay();
+      useAppStore.getState().settings.updateSetting('autoPlay', true);
     });
   });
 
@@ -50,5 +52,39 @@ describe('AudioControls', () => {
 
     expect(controllerMocks.handlePlay).toHaveBeenCalledTimes(1);
     expect(controllerMocks.handlePause).not.toHaveBeenCalled();
+  });
+
+  it('keeps the auto-play switch tied to the setting, not transient playback state', async () => {
+    const user = userEvent.setup();
+    act(() => {
+      useAppStore.getState().settings.updateSetting('autoPlay', false);
+      useAppStore.getState().audio.startAutoPlay();
+    });
+
+    render(<AudioControls />);
+
+    const [autoPlaySwitch] = screen.getAllByRole('switch');
+    expect(autoPlaySwitch).toHaveAttribute('aria-checked', 'false');
+
+    await user.click(screen.getByRole('button', { name: /^Pause$/ }));
+
+    expect(controllerMocks.handlePause).toHaveBeenCalledTimes(1);
+    expect(autoPlaySwitch).toHaveAttribute('aria-checked', 'false');
+  });
+
+  it('keeps the main button on Pause after a Play tap even if store playback flags reset transiently', async () => {
+    const user = userEvent.setup();
+    render(<AudioControls />);
+
+    await user.click(screen.getByRole('button', { name: /^Play$/ }));
+
+    expect(controllerMocks.handlePlay).toHaveBeenCalledTimes(1);
+    expect(screen.getByRole('button', { name: /^Pause$/ })).toBeInTheDocument();
+
+    act(() => {
+      useAppStore.getState().audio.stopAutoPlay();
+    });
+
+    expect(screen.getByRole('button', { name: /^Pause$/ })).toBeInTheDocument();
   });
 });

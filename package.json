@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "vite",
     "cap:sync:ios": "vite build && npx cap sync ios",
+    "cap:sync:ios:prod": "VITE_API_BASE_URL=https://ccl-pronunciation-trainer.vercel.app vite build && npx cap sync ios",
     "cap:open:ios": "npx cap open ios",
     "cap:run:ios": "npx cap run ios",
     "dev:proxy": "node scripts/dev-proxy.js",

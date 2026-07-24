@@ -22,6 +22,7 @@ const audioMocks = vi.hoisted(() => ({
     playBlob: vi.fn(() => Promise.resolve()),
     playText: vi.fn(() => Promise.resolve()),
     playTextFromUserGesture: vi.fn(() => Promise.resolve()),
+    prefersDirectQueuePlayback: vi.fn(() => false),
     resume: vi.fn(() => Promise.resolve()),
     setHandlers: vi.fn(),
     setRate: vi.fn(),
@@ -108,6 +109,7 @@ describe('AudioQueueEngine', () => {
     audioMocks.backgroundAudioService.getLoadedText.mockReturnValue(null);
     audioMocks.backgroundAudioService.playText.mockResolvedValue(undefined);
     audioMocks.backgroundAudioService.playTextFromUserGesture.mockResolvedValue(undefined);
+    audioMocks.backgroundAudioService.prefersDirectQueuePlayback.mockReturnValue(false);
     audioMocks.backgroundAudioService.resume.mockResolvedValue(undefined);
     audioMocks.backgroundAudioService.fetchAudioBlob.mockResolvedValue({
       blob: new Blob(['audio']),
@@ -245,6 +247,56 @@ describe('AudioQueueEngine', () => {
       'Second clip',
       expect.anything(),
       expect.objectContaining({ mediaTitle: 'SECOND clip' })
+    );
+  });
+
+  it('still advances when a false suspension signal arrives immediately before ended', async () => {
+    const onClipEnded = vi.fn();
+    const engine = new AudioQueueEngine();
+    engine.setListeners({ onClipEnded });
+    engine.load(createItems());
+    await engine.start();
+
+    getHandlers().onSuspended?.();
+    getHandlers().onEnded?.();
+    await flushQueueWork();
+
+    expect(onClipEnded).toHaveBeenCalledTimes(1);
+    expect(engine.getCurrentIndex()).toBe(1);
+    expect(audioMocks.backgroundAudioService.playBlob).toHaveBeenLastCalledWith(
+      'Second clip',
+      expect.anything(),
+      expect.objectContaining({ mediaTitle: 'SECOND clip' })
+    );
+  });
+
+  it('uses direct playText continuation when the platform service opts out of blob cache playback', async () => {
+    audioMocks.backgroundAudioService.prefersDirectQueuePlayback.mockReturnValue(true);
+    const engine = new AudioQueueEngine();
+    engine.load(createItems());
+    await engine.start();
+    await flushQueueWork();
+    cacheMocks.audioCache.getOrFetch.mockClear();
+    audioMocks.backgroundAudioService.playText.mockClear();
+    audioMocks.backgroundAudioService.playBlob.mockClear();
+
+    getHandlers().onEnded?.();
+    await flushQueueWork();
+
+    expect(engine.getCurrentIndex()).toBe(1);
+    expect(audioMocks.backgroundAudioService.playText).toHaveBeenLastCalledWith(
+      'Second clip',
+      expect.objectContaining({ mediaTitle: 'SECOND clip' })
+    );
+    expect(cacheMocks.audioCache.getOrFetch).not.toHaveBeenCalledWith(
+      'key:Second clip',
+      expect.any(Function),
+      expect.anything()
+    );
+    expect(audioMocks.backgroundAudioService.playBlob).not.toHaveBeenCalledWith(
+      'Second clip',
+      expect.anything(),
+      expect.anything()
     );
   });
 

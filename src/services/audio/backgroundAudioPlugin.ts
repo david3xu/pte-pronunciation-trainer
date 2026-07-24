@@ -46,7 +46,7 @@ export interface BackgroundAudioPlugin {
     volume?: number;
     mediaTitle?: string;
     mediaArtist?: string;
-  }): Promise<void>;
+  }): Promise<{ duration?: number } | void>;
 
   pause(): Promise<void>;
   resume(options: { rate?: number; volume?: number }): Promise<void>;

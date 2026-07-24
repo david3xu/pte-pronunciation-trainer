@@ -221,7 +221,7 @@ export const useAutoPlayController = () => {
         console.error('[useAutoPlayController] Playback failed:', error);
         audioServiceForPlatform.stop();
         useAppStore.getState().ui.showNotification(
-          'Audio playback cannot start right now. Premium audio may be unavailable.',
+          `Audio playback cannot start: ${error.message}`,
           'error'
         );
         useAppStore.getState().audio.stopAutoPlay();
@@ -230,9 +230,10 @@ export const useAutoPlayController = () => {
         useAppStore.getState().audio.setNeedsResume(true, reason);
       },
       onStateChanged: ({ state }) => {
-        // needs-user-resume is cleared by whichever state comes after it
-        // (playing on a successful tap, paused/idle if the user does
-        // something else instead), not set here; this only clears it.
+        // Queue state must not write playback intent back into the app store:
+        // doing so creates a feedback loop with the effect below on mobile
+        // transition states. The UI intent remains owned by explicit user
+        // actions; queue state only clears a previously shown resume prompt.
         if (state !== 'needs-user-resume') {
           useAppStore.getState().audio.setNeedsResume(false);
         }

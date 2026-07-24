@@ -7,6 +7,19 @@
 
 import { AppConfig as AppConfigType, ConfigPath } from '../types';
 
+const NATIVE_API_BASE_URL = 'https://ccl-pronunciation-trainer.vercel.app';
+
+const getApiBaseUrl = (): string => {
+  const configuredBaseUrl = import.meta.env['VITE_API_BASE_URL'];
+  if (configuredBaseUrl) return configuredBaseUrl;
+
+  if (typeof window !== 'undefined' && window.location.protocol === 'capacitor:') {
+    return NATIVE_API_BASE_URL;
+  }
+
+  return '';
+};
+
 /**
  * Application Configuration Class
  * Provides type-safe access to all application settings
@@ -166,7 +179,9 @@ export class AppConfig {
       // ===== API ENDPOINTS =====
       api: {
         // Optional override; empty string means same-origin (relative) API paths.
-        baseUrl: import.meta.env['VITE_API_BASE_URL'] || '',
+        // Native Capacitor builds run from capacitor://localhost, so they need
+        // an absolute production API origin even if the env var was omitted.
+        baseUrl: getApiBaseUrl(),
         endpoints: {
           // AI endpoints
           aiRecommendations: '/api/ai-recommendations',

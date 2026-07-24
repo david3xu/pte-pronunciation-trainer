@@ -32,6 +32,8 @@ export class NativeAudioService {
   private currentRate: number | null = null;
   private currentVolume: number | null = null;
   private isPaused = false;
+  private endFallbackTimer: ReturnType<typeof setTimeout> | null = null;
+  private playbackToken = 0;
 
   isSupported(): boolean {
     return true;
@@ -43,6 +45,10 @@ export class NativeAudioService {
 
   getLoadedText(): string | null {
     return this.currentText;
+  }
+
+  prefersDirectQueuePlayback(): boolean {
+    return true;
   }
 
   async fetchAudioBlob(
@@ -58,27 +64,12 @@ export class NativeAudioService {
       throw new Error('Cannot play empty text in native audio mode');
     }
     const base64Audio = await blobToBase64(blob);
-
-    if (typeof options.rate === 'number') this.currentRate = options.rate;
-    if (typeof options.volume === 'number') this.currentVolume = options.volume;
-
-    await BackgroundAudio.play({
-      base64Audio,
-      contentType: blob.type || 'audio/mpeg',
-      text,
-      rate: this.currentRate ?? undefined,
-      volume: this.currentVolume ?? undefined,
-      mediaTitle: options.mediaTitle ?? text,
-      mediaArtist: options.mediaArtist,
-    });
-
-    this.currentText = text;
-    this.isPaused = false;
+    await this.playBase64(text, base64Audio, blob.type || 'audio/mpeg', options);
   }
 
   async playText(text: string, options: PlayTextOptions = {}): Promise<void> {
-    const { blob } = await this.fetchAudioBlob(text, options);
-    await this.playBlob(text, blob, options);
+    const { audioBase64, contentType } = await backgroundAudioService.fetchAudioBase64(text, options);
+    await this.playBase64(text, audioBase64, contentType, options);
   }
 
   playTextFromUserGesture(text: string, options: PlayTextOptions = {}): Promise<void> {
@@ -89,8 +80,42 @@ export class NativeAudioService {
     return this.playText(text, options);
   }
 
+  private async playBase64(
+    text: string,
+    base64Audio: string,
+    contentType: string,
+    options: PlayTextOptions = {}
+  ): Promise<void> {
+    if (typeof options.rate === 'number') this.currentRate = options.rate;
+    if (typeof options.volume === 'number') this.currentVolume = options.volume;
+
+    console.info('[NativeAudioService] Starting native playback', {
+      textLength: text.length,
+      contentType,
+      audioBytesApprox: Math.floor((base64Audio.length * 3) / 4),
+    });
+
+    const token = ++this.playbackToken;
+    this.clearEndFallbackTimer();
+
+    const result = await BackgroundAudio.play({
+      base64Audio,
+      contentType,
+      text,
+      rate: this.currentRate ?? undefined,
+      volume: this.currentVolume ?? undefined,
+      mediaTitle: options.mediaTitle ?? text,
+      mediaArtist: options.mediaArtist,
+    });
+
+    this.currentText = text;
+    this.isPaused = false;
+    this.scheduleEndFallback(result?.duration, token);
+  }
+
   pause(): void {
     this.isPaused = true;
+    this.clearEndFallbackTimer();
     void BackgroundAudio.pause();
   }
 
@@ -115,6 +140,8 @@ export class NativeAudioService {
   }
 
   stop(): void {
+    this.playbackToken += 1;
+    this.clearEndFallbackTimer();
     this.currentText = null;
     this.isPaused = false;
     void BackgroundAudio.stop();
@@ -143,11 +170,15 @@ export class NativeAudioService {
     this.listenersBound = true;
 
     void BackgroundAudio.addListener('ended', () => {
+      this.clearEndFallbackTimer();
       this.currentText = null;
       this.isPaused = false;
       this.handlers.onEnded?.();
     });
     void BackgroundAudio.addListener('error', (data) => {
+      this.clearEndFallbackTimer();
+      this.currentText = null;
+      this.isPaused = false;
       this.handlers.onError?.(new Error(data?.message || 'Native background audio reported an error'));
     });
     void BackgroundAudio.addListener('interrupted', () => {
@@ -171,10 +202,32 @@ export class NativeAudioService {
     void BackgroundAudio.addListener('remoteNext', () => this.handlers.onNext?.());
     void BackgroundAudio.addListener('remotePrevious', () => this.handlers.onPrevious?.());
     void BackgroundAudio.addListener('remoteStop', () => {
+      this.playbackToken += 1;
+      this.clearEndFallbackTimer();
       this.currentText = null;
       this.isPaused = false;
       this.handlers.onStop?.();
     });
+  }
+
+  private scheduleEndFallback(duration: number | undefined, token: number): void {
+    if (!Number.isFinite(duration) || !duration || duration <= 0) return;
+
+    const rate = this.currentRate && this.currentRate > 0 ? this.currentRate : 1;
+    const timeoutMs = Math.max(250, (duration / rate) * 1000 + 250);
+    this.endFallbackTimer = setTimeout(() => {
+      if (this.playbackToken !== token || this.isPaused || !this.currentText) return;
+      this.currentText = null;
+      this.isPaused = false;
+      this.handlers.onEnded?.();
+    }, timeoutMs);
+  }
+
+  private clearEndFallbackTimer(): void {
+    if (this.endFallbackTimer) {
+      clearTimeout(this.endFallbackTimer);
+      this.endFallbackTimer = null;
+    }
   }
 }
 

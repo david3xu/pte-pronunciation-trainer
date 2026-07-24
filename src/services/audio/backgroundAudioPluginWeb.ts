@@ -16,7 +16,7 @@ export class BackgroundAudioWeb extends WebPlugin implements BackgroundAudioPlug
     );
   }
 
-  async play(): Promise<void> {
+  async play(): Promise<{ duration?: number } | void> {
     this.unreachable('play');
   }
 

@@ -6,6 +6,9 @@
   "main": "index.html",
   "scripts": {
     "dev": "vite",
+    "cap:sync:ios": "vite build && npx cap sync ios",
+    "cap:open:ios": "npx cap open ios",
+    "cap:run:ios": "npx cap run ios",
     "dev:proxy": "node scripts/dev-proxy.js",
     "preview": "vite preview",
     "data": "pnpm run data:pte",

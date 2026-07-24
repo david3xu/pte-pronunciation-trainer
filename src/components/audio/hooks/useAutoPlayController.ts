@@ -70,6 +70,18 @@ const getItemDifficultyAndCategory = (
   return { difficulty: item.difficulty, category: item.category };
 };
 
+const getDefaultRepeatCountForDifficulty = (difficulty?: Difficulty): 1 | 3 | 5 => {
+  switch (difficulty) {
+    case 'easy':
+      return 1;
+    case 'hard':
+      return 5;
+    case 'normal':
+    default:
+      return 3;
+  }
+};
+
 const toQueueItem = (
   item: LearningItem,
   index: number,
@@ -93,6 +105,7 @@ const toQueueItem = (
     soundsLike,
     difficulty,
     category,
+    repeatCount: getDefaultRepeatCountForDifficulty(difficulty),
   };
 };
 /**
@@ -144,7 +157,7 @@ export const useAutoPlayController = () => {
 
   // Keep repeat settings in sync with engine
   useEffect(() => {
-    queueEngine.setDefaultRepeatCount(settings.vocabRepeatCount || 1);
+    queueEngine.setDefaultRepeatCount(settings.vocabRepeatCount || 3);
   }, [settings.vocabRepeatCount]);
 
   useEffect(() => {

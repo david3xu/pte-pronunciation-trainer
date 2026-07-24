@@ -212,7 +212,7 @@ export const useAppStore = create<AppState>()(
             showPhonetic: true,
             ttsRate: DEFAULT_TTS_RATE,
             ttsVoice: null, // Browser Default as default
-            vocabRepeatCount: 1, // Default: speak each word once
+            vocabRepeatCount: 3, // Fallback default; vocabulary items override by difficulty
             difficultyFilter: 'all',
             theme: 'auto', // Default: follow system preference
             isPanelOpen: false,
@@ -285,7 +285,7 @@ export const useAppStore = create<AppState>()(
                   showPhonetic: true,
                   ttsRate: DEFAULT_TTS_RATE,
                   ttsVoice: null, // Browser Default as default
-                  vocabRepeatCount: 1, // Default: speak each word once
+                  vocabRepeatCount: 3, // Fallback default; vocabulary items override by difficulty
                   difficultyFilter: 'all',
                   theme: 'auto', // Default: follow system preference
                   isPanelOpen: false,

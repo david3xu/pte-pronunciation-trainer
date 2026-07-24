@@ -24,14 +24,7 @@ const AudioControls: React.FC = () => {
   const progress = useProgress();
   const settings = useSettings();
   const { handlePlay, handlePause, handleNext, handlePrev } = useAutoPlayController();
-  const [playRequested, setPlayRequested] = React.useState(false);
-  const showPause = playRequested || (audio.isAutoPlaying && !audio.isPaused);
-
-  React.useEffect(() => {
-    if (audio.needsResume) {
-      setPlayRequested(false);
-    }
-  }, [audio.needsResume]);
+  const showPause = audio.isAutoPlaying && !audio.isPaused;
 
   return (
     <Card size="3" className="audio-controls">
@@ -60,10 +53,8 @@ const AudioControls: React.FC = () => {
             variant="solid"
             onClick={() => {
               if (showPause) {
-                setPlayRequested(false);
                 handlePause();
               } else {
-                setPlayRequested(true);
                 handlePlay();
               }
             }}

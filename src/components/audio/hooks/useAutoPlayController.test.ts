@@ -265,6 +265,37 @@ describe('useAutoPlayController - queue engine delegation', () => {
     expect(useAppStore.getState().audio.isPaused).toBe(true);
   });
 
+  it('mirrors native/media pause state into the autoplay store', async () => {
+    renderHook(() => useAutoPlayController());
+    await flush();
+
+    act(() => {
+      useAppStore.getState().audio.startAutoPlay();
+    });
+
+    act(() => {
+      latestListeners().onStateChanged?.({ state: 'paused', previousState: 'playing', itemId: 'x', at: Date.now() });
+    });
+
+    expect(useAppStore.getState().audio.isAutoPlaying).toBe(true);
+    expect(useAppStore.getState().audio.isPaused).toBe(true);
+  });
+
+  it('clears autoplay intent when the final non-repeating clip ends', async () => {
+    setRepeatMode(false);
+    renderHook(() => useAutoPlayController());
+    await flush();
+    engineMock.getItems.mockReturnValue([{ id: 'last' }]);
+
+    act(() => {
+      useAppStore.getState().audio.startAutoPlay();
+      latestListeners().onClipEnded?.({ index: 0, repeatIndex: 1, repeatCount: 1 });
+    });
+
+    expect(useAppStore.getState().audio.isAutoPlaying).toBe(false);
+    expect(useAppStore.getState().audio.isPaused).toBe(false);
+  });
+
   it('delegates next and previous to the queue engine', async () => {
     const { result } = renderHook(() => useAutoPlayController());
 

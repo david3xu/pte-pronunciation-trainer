@@ -72,19 +72,18 @@ describe('AudioControls', () => {
     expect(autoPlaySwitch).toHaveAttribute('aria-checked', 'false');
   });
 
-  it('keeps the main button on Pause after a Play tap even if store playback flags reset transiently', async () => {
-    const user = userEvent.setup();
+  it('returns the main button to Play when autoplay stops', () => {
     render(<AudioControls />);
 
-    await user.click(screen.getByRole('button', { name: /^Play$/ }));
-
-    expect(controllerMocks.handlePlay).toHaveBeenCalledTimes(1);
+    act(() => {
+      useAppStore.getState().audio.startAutoPlay();
+    });
     expect(screen.getByRole('button', { name: /^Pause$/ })).toBeInTheDocument();
 
     act(() => {
       useAppStore.getState().audio.stopAutoPlay();
     });
 
-    expect(screen.getByRole('button', { name: /^Pause$/ })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /^Play$/ })).toBeInTheDocument();
   });
 });

@@ -233,7 +233,14 @@ export const useAutoPlayController = () => {
         // Queue state must not write playback intent back into the app store:
         // doing so creates a feedback loop with the effect below on mobile
         // transition states. The UI intent remains owned by explicit user
-        // actions; queue state only clears a previously shown resume prompt.
+        // actions; queue state only clears a previously shown resume prompt
+        // and mirrors real paused state from native/media controls.
+        if (state === 'paused') {
+          const storeAudio = useAppStore.getState().audio;
+          if (storeAudio.isAutoPlaying && !storeAudio.isPaused) {
+            storeAudio.pauseAutoPlay();
+          }
+        }
         if (state !== 'needs-user-resume') {
           useAppStore.getState().audio.setNeedsResume(false);
         }
@@ -248,6 +255,12 @@ export const useAutoPlayController = () => {
           store.settings.autoSwitchBooks
         ) {
           void handleAutoSwitchBooks();
+        } else if (
+          index === items.length - 1 &&
+          repeatIndex === repeatCount &&
+          !store.audio.repeatMode
+        ) {
+          store.audio.stopAutoPlay();
         }
       },
     });

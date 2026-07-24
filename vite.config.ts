@@ -1,4 +1,5 @@
 import react from '@vitejs/plugin-react';
+import fs from 'fs';
 import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
@@ -85,6 +86,27 @@ export default defineConfig(({ mode }) => {
         name: 'ai-chat-middleware',
         configureServer(server) {
           server.middlewares.use((req, res, next) => aiChatMiddleware(req, res, next, env));
+        }
+      },
+      {
+        // data/processed/*.json is served on web via a Vercel rewrite, not
+        // through Vite's own build output (see docs/NATIVE_MOBILE_APP_ARCHITECTURE.md
+        // section 4: confirmed there is no Vercel in front of a native app on
+        // a phone). Copying it into the build output here means Capacitor's
+        // webDir (which only bundles what this build actually emits) gets it
+        // too, with no effect on the existing web deployment, which keeps
+        // serving data/processed/ via the Vercel rewrite exactly as before.
+        name: 'copy-mobile-data',
+        closeBundle() {
+          const sourceDir = path.resolve(process.cwd(), 'data/processed');
+          const destDir = path.resolve(process.cwd(), 'dist/data/processed');
+          if (!fs.existsSync(sourceDir)) return;
+          fs.mkdirSync(destDir, { recursive: true });
+          for (const file of fs.readdirSync(sourceDir)) {
+            if (file.endsWith('.json')) {
+              fs.copyFileSync(path.join(sourceDir, file), path.join(destDir, file));
+            }
+          }
         }
       }
     ],

@@ -4,6 +4,8 @@ import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
+const DEFAULT_API_PROXY_TARGET = 'https://ccl-pronunciation-trainer.vercel.app';
+
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   // Load env file based on `mode` in the current working directory.
@@ -182,8 +184,14 @@ export default defineConfig(({ mode }) => {
       },
       // Proxy API requests to avoid CORS and 404s
       proxy: {
-        // If we had a separate backend, we'd proxy here.
-        // Instead, we're handling /api/ai/chat directly in configureServer below.
+        // Vite dev does not run Vercel serverless functions. Proxy premium
+        // TTS to the deployed API so local web audio uses the same endpoint
+        // shape as production instead of 404ing on localhost:3001.
+        '/api/premium-tts': {
+          target: env['VITE_API_BASE_URL'] || DEFAULT_API_PROXY_TARGET,
+          changeOrigin: true,
+          secure: true,
+        },
       }
     },
 

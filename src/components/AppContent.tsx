@@ -142,13 +142,14 @@ export const AppContent: React.FC = () => {
           // Non-blocking: app continues to work even if session tracking fails
         }
       } catch (error) {
-        console.error('Error loading vocabulary:', error);
-        vocabulary.setLoading(false);
         // Don't show error if aborted (component unmounted)
         if ((error as Error).name === 'AbortError') {
           console.log('[App] Vocabulary loading cancelled');
           return;
         }
+
+        console.error('Error loading vocabulary:', error);
+        vocabulary.setLoading(false);
         const errorMessage = error instanceof Error ? error.message : 'Unknown error';
         alert(`Failed to load vocabulary. Please refresh the page.\n\nError: ${errorMessage}`);
       }

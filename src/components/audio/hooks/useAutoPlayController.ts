@@ -174,6 +174,30 @@ export const useAutoPlayController = () => {
     };
   }, []);
 
+  // Retry recovery when the tab/page becomes visible again. checkForRecovery
+  // is a no-op unless the engine is actually in the suspended state, so this
+  // cannot duplicate playback by firing alongside the audio element's own
+  // pause/waiting/stalled driven recovery path; both funnel into the same
+  // single-in-flight guard inside the engine.
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        queueEngine.checkForRecovery();
+      }
+    };
+    const handlePageShow = () => {
+      queueEngine.checkForRecovery();
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    window.addEventListener('pageshow', handlePageShow);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      window.removeEventListener('pageshow', handlePageShow);
+    };
+  }, []);
+
   // Configure engine listeners
   useEffect(() => {
     queueEngine.setListeners({
@@ -191,6 +215,17 @@ export const useAutoPlayController = () => {
           'error'
         );
         useAppStore.getState().audio.stopAutoPlay();
+      },
+      onResumeRequired: ({ reason }) => {
+        useAppStore.getState().audio.setNeedsResume(true, reason);
+      },
+      onStateChanged: ({ state }) => {
+        // needs-user-resume is cleared by whichever state comes after it
+        // (playing on a successful tap, paused/idle if the user does
+        // something else instead), not set here; this only clears it.
+        if (state !== 'needs-user-resume') {
+          useAppStore.getState().audio.setNeedsResume(false);
+        }
       },
       onClipEnded: ({ index, repeatIndex, repeatCount }) => {
         const store = useAppStore.getState();
@@ -326,6 +361,22 @@ export const useAutoPlayController = () => {
     queueEngine.pause();
   };
 
+  /**
+   * The gesture-safe path a "Tap to resume practice audio" UI calls when
+   * needsResume is true. queueEngine.resume() already falls back to a fresh
+   * start() internally if the loaded item no longer matches, so this one
+   * call covers both the resume and start cases the tap needs to handle.
+   */
+  const handleResumeTap = () => {
+    const opts = {
+      rate: settings.ttsRate,
+      volume: useAppStore.getState().audio.volume,
+    };
+    void queueEngine.resume(opts).catch((error) => {
+      console.error('[useAutoPlayController] Resume tap failed:', error);
+    });
+  };
+
   const handleNext = async () => {
     await queueEngine.next();
   };
@@ -339,5 +390,6 @@ export const useAutoPlayController = () => {
     handlePause,
     handleNext,
     handlePrev,
+    handleResumeTap,
   };
 };

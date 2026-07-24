@@ -140,17 +140,22 @@ export const useAppStore = create<AppState>()(
             currentIndex: 0,
             repeatMode: true, // Default ON - loops back to start after reaching end
             volume: 1.0,
+            needsResume: false,
+            resumeReason: null,
             setPlaying: (isPlaying: boolean) => set((state) => ({ audio: { ...state.audio, isPlaying } })),
             setAutoPlay: (autoPlayEnabled: boolean) => set((state) => ({ audio: { ...state.audio, autoPlayEnabled } })),
             startAutoPlay: () => set((state) => ({ audio: { ...state.audio, isAutoPlaying: true, autoPlayEnabled: true, isPaused: false } })),
             pauseAutoPlay: () => set((state) => ({ audio: { ...state.audio, isPaused: true } })),
             resumeAutoPlay: () => set((state) => ({ audio: { ...state.audio, isPaused: false } })),
-            stopAutoPlay: () => set((state) => ({ audio: { ...state.audio, isAutoPlaying: false, autoPlayEnabled: false, isPaused: false } })),
+            stopAutoPlay: () => set((state) => ({ audio: { ...state.audio, isAutoPlaying: false, autoPlayEnabled: false, isPaused: false, needsResume: false, resumeReason: null } })),
             navigateNext: () => set((state) => ({ audio: { ...state.audio, currentIndex: state.audio.currentIndex + 1 } })),
             navigatePrev: () => set((state) => ({ audio: { ...state.audio, currentIndex: Math.max(0, state.audio.currentIndex - 1) } })),
             toggleRepeat: () => set((state) => ({ audio: { ...state.audio, repeatMode: !state.audio.repeatMode } })),
             setVolume: (volume) => set((state) => ({ audio: { ...state.audio, volume: Math.max(0, Math.min(1, volume)) } })),
             setCurrentIndex: (index) => set((state) => ({ audio: { ...state.audio, currentIndex: Math.max(0, index) } })),
+            setNeedsResume: (needsResume, reason = null) => set((state) => ({
+              audio: { ...state.audio, needsResume, resumeReason: needsResume ? reason : null },
+            })),
           },
 
           // TTS slice - inline implementation

@@ -31,6 +31,7 @@ const engineMock = vi.hoisted(() => {
     getCurrentIndex: vi.fn(() => 0),
     getItems: vi.fn(() => [] as unknown[]),
     getPersistedPosition: vi.fn(() => null as unknown),
+    checkForRecovery: vi.fn(),
   };
   // A real engine's getItems() reflects whatever load() last stored. Mirroring
   // that here means the hook's own sync effect (which compares getItems()
@@ -264,6 +265,67 @@ describe('useAutoPlayController - queue engine delegation', () => {
     expect(useAppStore.getState().audio.isAutoPlaying).toBe(false);
 
     notifySpy.mockRestore();
+  });
+
+  it('handleResumeTap calls the gesture-safe queue resume path', async () => {
+    const { result } = renderHook(() => useAutoPlayController());
+    await flush();
+
+    act(() => {
+      result.current.handleResumeTap();
+    });
+    await flush();
+
+    expect(engineMock.resume).toHaveBeenCalledTimes(1);
+  });
+
+  it('shows resume-required state in the store when the engine reports it, and clears it once resumed', async () => {
+    renderHook(() => useAutoPlayController());
+    await flush();
+
+    const listeners = latestListeners();
+    act(() => {
+      listeners.onResumeRequired?.({
+        item: { id: 'x', datasetId: 'd', index: 0, text: 'x', mediaTitle: 'x', mediaArtist: '', itemType: 'vocabulary' },
+        index: 0,
+        reason: 'suspended',
+      });
+    });
+
+    expect(useAppStore.getState().audio.needsResume).toBe(true);
+    expect(useAppStore.getState().audio.resumeReason).toBe('suspended');
+
+    act(() => {
+      listeners.onStateChanged?.({ state: 'playing', previousState: 'needs-user-resume', itemId: 'x', at: Date.now() });
+    });
+
+    expect(useAppStore.getState().audio.needsResume).toBe(false);
+    expect(useAppStore.getState().audio.resumeReason).toBe(null);
+  });
+
+  it('wires visibility and pageshow lifecycle events to checkForRecovery, and removes the listeners on unmount', async () => {
+    const { unmount } = renderHook(() => useAutoPlayController());
+    await flush();
+
+    Object.defineProperty(document, 'visibilityState', { value: 'visible', configurable: true });
+    act(() => {
+      document.dispatchEvent(new Event('visibilitychange'));
+      window.dispatchEvent(new Event('pageshow'));
+    });
+
+    expect(engineMock.checkForRecovery).toHaveBeenCalledTimes(2);
+
+    unmount();
+
+    act(() => {
+      document.dispatchEvent(new Event('visibilitychange'));
+      window.dispatchEvent(new Event('pageshow'));
+    });
+
+    // The effect's cleanup already removed these listeners on unmount, so
+    // the call count stays the same rather than growing; a stray listener
+    // left behind would double-count here.
+    expect(engineMock.checkForRecovery).toHaveBeenCalledTimes(2);
   });
 });
 describe('useAutoPlayController - autoSwitchBooks and repeatMode', () => {

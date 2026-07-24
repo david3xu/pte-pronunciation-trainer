@@ -92,10 +92,14 @@ describe('SWTInterface', () => {
     await user.type(getTypingInput(), 'Xy');
 
     const chars = Array.from(screen.getByTestId('typing-target').querySelectorAll('span'));
-    expect(chars[0]).toHaveStyle({ color: '#ca4754' }); // wrong
-    expect(chars[1]).toHaveStyle({ color: '#d1d0c5' }); // correct
-    expect(chars[2]).toHaveStyle({ color: '#646669', borderLeft: '2px solid #e2b714' }); // current
-    expect(chars[3]).toHaveStyle({ color: '#646669' }); // untyped
+    expect(screen.getByTestId('typing-target')).toHaveStyle({
+      backgroundColor: '#1e293b',
+      borderColor: '#334155',
+    });
+    expect(chars[0]).toHaveStyle({ color: '#f87171' }); // wrong
+    expect(chars[1]).toHaveStyle({ color: '#e2e8f0' }); // correct
+    expect(chars[2]).toHaveStyle({ color: '#94a3b8', borderLeft: '2px solid #f59e0b' }); // current
+    expect(chars[3]).toHaveStyle({ color: '#94a3b8' }); // untyped
   });
 
   it('shows no PTE validity language anywhere: no words/sentences bounds, no Valid/Invalid', async () => {

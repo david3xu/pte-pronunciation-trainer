@@ -133,6 +133,12 @@ export class AudioQueueEngine {
   private prefetchGeneration = 0;
   private prefetchInFlight = false;
   private recoveryInFlight = false;
+  /** Created once and reused for every setHandlers() call this engine ever
+   * makes (construction and every ownership reclaim below), so
+   * backgroundAudioService's reference check correctly treats the engine
+   * re-asserting its own ownership as a no-op, and only a genuinely
+   * different handlers object (TTSEngine's, for example) as a takeover. */
+  private readonly audioHandlers: BackgroundAudioHandlers;
 
   constructor(
     audioService: QueueAudioService = backgroundAudioService,
@@ -140,7 +146,8 @@ export class AudioQueueEngine {
   ) {
     this.audioService = audioService;
     this.cache = cache;
-    this.audioService.setHandlers(this.createAudioHandlers());
+    this.audioHandlers = this.createAudioHandlers();
+    this.audioService.setHandlers(this.audioHandlers);
   }
 
   load(items: QueueItem[], startIndex = 0): QueueCommandResult {
@@ -184,6 +191,13 @@ export class AudioQueueEngine {
 
     const operation = ++this.playbackOperation;
     let playback: Promise<void>;
+
+    // Reclaim ownership of the shared handlers before touching the audio
+    // element, in case a manual word tap displaced them since this engine
+    // last had them. setHandlers() is synchronous and a no-op against this
+    // engine's own already-active handlers, so it does not disturb the
+    // gesture-timing guarantee on the play() call directly below.
+    this.audioService.setHandlers(this.audioHandlers);
 
     try {
       // This call intentionally happens before any await or promise hop so the
@@ -261,6 +275,10 @@ export class AudioQueueEngine {
 
       const operation = ++this.playbackOperation;
       let playback: Promise<void>;
+
+      // Same reclaim as start(): synchronous, and a no-op against this
+      // engine's own already-active handlers.
+      this.audioService.setHandlers(this.audioHandlers);
 
       try {
         // resume() calls mediaElement.play() synchronously before its promise
@@ -375,6 +393,7 @@ export class AudioQueueEngine {
       onEnded: () => this.handleClipEnded(),
       onError: (error) => this.handleAudioError(error),
       onSuspended: () => this.handleSuspended(),
+      onOwnershipLost: () => this.handleOwnershipLost(),
       onPlay: () => {
         void this.resume().catch(() => {
           // Queue events already report genuine failures.
@@ -432,6 +451,10 @@ export class AudioQueueEngine {
   private playCurrentInBackground(): Promise<void> {
     const item = this.requireCurrentItem();
     if (!item) return Promise.reject(new Error('Cannot play an empty audio queue'));
+
+    // Same reclaim as start()/resume(): synchronous, and a no-op against
+    // this engine's own already-active handlers.
+    this.audioService.setHandlers(this.audioHandlers);
 
     this.playbackIntent = true;
     this.lastError = undefined;
@@ -657,6 +680,31 @@ export class AudioQueueEngine {
           reason: 'suspended',
         });
       });
+  }
+
+  /**
+   * The shared audio element has exactly one active handler set at a time;
+   * this fires when a different caller (a manual word tap through TTSEngine,
+   * for example) takes it over. Any state that assumed this engine still
+   * controlled the element (playing, buffering, suspended, or waiting on a
+   * user tap to resume) no longer matches reality once someone else's clip
+   * is loaded, so it settles to paused instead of going stale. This never
+   * calls into audioService itself (no pause(), no stop()): this engine no
+   * longer owns the element, and touching it here could interrupt whatever
+   * the new owner is doing. Ownership is reclaimed later, when this engine
+   * next actually starts or resumes playback (see start()/resume()/
+   * playCurrentInBackground()), not by re-registering here defensively.
+   */
+  private handleOwnershipLost(): void {
+    if (
+      this.playbackState === 'playing' ||
+      this.playbackState === 'buffering' ||
+      this.playbackState === 'suspended' ||
+      this.playbackState === 'needs-user-resume'
+    ) {
+      this.invalidatePlayback();
+      this.setState('paused');
+    }
   }
 
   private handleAudioServiceStop(): void {

@@ -1,6 +1,23 @@
 import { act, renderHook } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
+// KNOWN ISSUE, ACCEPTED (audio-review-checkpoint, 2026-07-24): every test in
+// this file logs "An update to TestComponent inside a test was not wrapped
+// in act(...)" even for interactions that are already wrapped in act(), and
+// even for a bare render with zero interaction. Investigated across two
+// prior rounds: a setTimeout based flush matching this codebase's own
+// pre-adapter pattern, wrapping the render itself in act(), an explicit
+// act-wrapped cleanup() in afterEach, and adding the IS_REACT_ACT_ENVIRONMENT
+// global React 19 checks for (src/test/setup.ts) all left it unchanged. The
+// full suite is otherwise completely clean, including other files that use
+// full component renders (App.test.tsx), which rules out a project-wide
+// environment problem; it is isolated specifically to renderHook against
+// this hook under this React 19/RTL/Vitest combination. It does not affect
+// correctness: every assertion in this file is genuinely exercising real
+// logic, not being masked by the warning. Treated as test-harness noise
+// rather than a blocker; do not spend further time rediscovering this unless
+// a dependency upgrade changes the underlying behavior.
+
 // The hook still calls backgroundAudioService.stop() directly on unmount and
 // in its onPlaybackFailed listener, so that surface is mocked here. Every
 // other playback call now goes through AudioQueueEngine (mocked below), not

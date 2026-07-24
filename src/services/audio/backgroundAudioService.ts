@@ -34,6 +34,15 @@ export interface BackgroundAudioHandlers {
    * or OS level interruption (backgrounding, Low Power Mode, a dropped
    * connection mid-buffer), not a user or app initiated pause. */
   onSuspended?: () => void;
+  /** Fires on the PREVIOUSLY registered handlers when a different caller
+   * calls setHandlers(), taking over the shared element. There is exactly
+   * one audio element and exactly one active handler set at a time, so a
+   * caller that starts its own playback (a manual word tap, for example)
+   * necessarily displaces whoever was listening before (a running autoplay
+   * queue, for example). This lets the displaced caller react correctly
+   * (settle a pending promise, pause its own state) instead of silently
+   * going stale with no way to tell its handlers stopped receiving events. */
+  onOwnershipLost?: () => void;
 }
 
 export interface PlayTextOptions {
@@ -138,7 +147,23 @@ export class BackgroundAudioService {
     }
   }
 
+  /**
+   * Registers the active handler set, taking over from whoever previously
+   * called setHandlers(). There is only ever one active set: this service
+   * does not track callers by identity, since the audio element itself can
+   * only play one thing at a time, so only one caller's lifecycle events
+   * (onEnded, onSuspended, and so on) are ever meaningful at once. If a
+   * different handlers object was previously registered, its
+   * onOwnershipLost fires first, so that caller can react (settle a pending
+   * promise, pause its own state) rather than silently losing its handlers
+   * with no signal. A caller re-registering the exact same object (rare;
+   * none of today's callers do this) does not trigger it against itself.
+   */
   setHandlers(handlers: BackgroundAudioHandlers): void {
+    const previous = this.handlers;
+    if (previous !== handlers) {
+      previous.onOwnershipLost?.();
+    }
     this.handlers = handlers;
     this.bindMediaSession();
   }
